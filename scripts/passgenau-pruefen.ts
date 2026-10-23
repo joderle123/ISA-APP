@@ -164,7 +164,11 @@ regel(15, 'sprache.fr ohne französischen Text', 'fehler', [
           }
           liste('vorbereitung', 6, 120)
           liste('beobachten', 4, 180)
-          for (const k2 of ['haken', 'aufbau', 'leichter', 'schwerer', 'gruppe', 'warum']) if (h[k2] !== undefined && (typeof h[k2] !== 'string' || (h[k2] as string).length > 400)) f.push(`${id}: hilfen.${sp}.${k2} (Text ≤ 400 Zeichen)`)
+          // der Spickzettel (aufbau) ist seit 23.10.2026 die Startseite der Mappe: Minutenplan, Muss/Kann und Blatt – bis 600 Zeichen
+          for (const k2 of ['haken', 'aufbau', 'leichter', 'schwerer', 'gruppe', 'warum']) {
+            const max = k2 === 'aufbau' ? 600 : 400
+            if (h[k2] !== undefined && (typeof h[k2] !== 'string' || (h[k2] as string).length > max)) f.push(`${id}: hilfen.${sp}.${k2} (Text ≤ ${max} Zeichen)`)
+          }
           for (const kt of (h.karten as { titel?: string; karten?: string[] }[] | undefined) ?? []) if (!kt.titel || !Array.isArray(kt.karten) || !kt.karten.length || kt.karten.length > 24 || kt.karten.some((t) => typeof t !== 'string' || t.length > 160)) f.push(`${id}: hilfen.${sp}.karten „${kt.titel ?? '?'}“ (1–24 Karten, je ≤ 160 Zeichen)`)
           for (const l of (h.links as { titel?: string; url?: string }[] | undefined) ?? []) if (!l.titel || !/^https:\/\/[^\s]+$/.test(l.url ?? '')) f.push(`${id}: hilfen.${sp}.links „${l.titel ?? '?'}“ (nur https)`)
         }
