@@ -410,6 +410,7 @@ Machbarkeit beim Pilot wieder auf 5. Darum je Sitzung **hart**:
   - Kanner-Jugendtelefon 116 111
   - BEE SECURE Helpline 8002 1234
   - OKAJU 28 37 36 35
+  - Helpline Gewalt 2060 1060: seit 1.5.2026 rund um die Uhr, für Betroffene, Zeugen und Menschen, die sich um ihr eigenes Verhalten sorgen (die Zeiten 12–20 Uhr sind veraltet)
   - Schulpflicht bis 18 seit 2026/27 (Gesetz vom 20.7.2023)
 - **Fachlich:**
   - Studien nur mit dem, was drinsteht.
