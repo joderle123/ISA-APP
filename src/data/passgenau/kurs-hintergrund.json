@@ -6800,7 +6800,18 @@
           "Woche 4: Not-Stopp! – Spuren vom Donnerstag ordnen, Ursachen finden, Karussell-Stand, Sätze für jetzt und später.",
           "Woche 5: Zu zweit im Wagen – Spiel und Freundschaft auf der Positionslinie, Eminas Sätze, Mini-Fouer-Stände ohne Bildschirm. Auftrag (freiwillig): einen Stand ausprobieren.",
           "Woche 6: Die Mini-Fouer – Ehrenrunde, das Kind trainiert Nilton und entscheidet das Ende, Hebel-Diplom."
-        ]
+        ],
+        "helfen": [
+          "Das Kind das Ende selbst ansagen lassen: „Noch eine Runde, dann ziehe ich meinen Hebel.“ – nicht der Erwachsene sagt es.",
+          "Ärger beim Aufhören ist normal: kurz benennen („Das Ende nervt“), nicht diskutieren, an den Hebel erinnern: ansagen – ausrollen – ausmachen – aussteigen.",
+          "Zuhören, wenn das Kind von Spielen erzählt, statt zu bewerten; in Pausen ein Spiel ohne Bildschirm von der Mini-Fouer anbieten."
+        ],
+        "beobachten": [
+          "sagt ein Ende selbst an, bevor es aufhört",
+          "benennt einen Trick, mit dem ein Spiel zum Weiterspielen drängt",
+          "beruhigt sich nach dem Aufhören oder holt sich Hilfe, statt zu explodieren"
+        ],
+        "nicht": "Machen Sie Spiele nicht schlecht, vergleichen Sie keine Bildschirmzeiten vor der Klasse, und gehen Sie nicht davon aus, dass jedes Kind zu Hause Geräte hat."
       },
       "fr": {
         "ziel": "L’enfant reconnaît les trucs par lesquels les jeux poussent à continuer (surprise, compte à rebours, « presque gagné », série, pitié) et sait arrêter lui-même avec le levier du manège : annoncer, finir le tour, éteindre, descendre. Il a un plan pour la colère quand le jeu s’arrête d’un coup, trouve des solutions qui vont avec les copains et connaît des jeux sans écran et sans argent.",
@@ -6812,7 +6823,18 @@
           "Semaine 4 : Arrêt d’urgence ! – ordonner les traces de jeudi, trouver les causes, posture du manège, phrases pour maintenant et plus tard.",
           "Semaine 5 : À deux dans le wagon – jeu et amitié sur la ligne, phrases d’Emina, stands sans écran pour la mini-Fouer. Libre : essayer un stand.",
           "Semaine 6 : La mini-Fouer – tour d’honneur, l’enfant entraîne Nilton et décide de la fin, diplôme du levier."
-        ]
+        ],
+        "helfen": [
+          "Laisser l’enfant annoncer lui-même la fin : « Encore un tour, puis je tire mon levier. » – ce n’est pas l’adulte qui le dit.",
+          "La colère à l’arrêt est normale : la nommer brièvement (« La fin, ça énerve »), ne pas discuter, rappeler le levier : annoncer – finir le tour – éteindre – descendre.",
+          "Écouter quand l’enfant parle de jeux, sans juger ; à la récré, proposer un jeu sans écran de la mini-foire."
+        ],
+        "beobachten": [
+          "annonce lui-même la fin avant d’arrêter",
+          "nomme un truc par lequel un jeu pousse à continuer",
+          "se calme après l’arrêt ou demande de l’aide au lieu d’exploser"
+        ],
+        "nicht": "Ne dénigrez pas les jeux, ne comparez pas les temps d’écran devant la classe et ne partez pas du principe que chaque enfant a des appareils à la maison."
       }
     },
     "welt": {
@@ -6975,7 +6997,18 @@
           "Woche 4: Dren zieht um – packen und den Karton als Schnecke tragen: Mein Mitnehm-Ding und mein Lied kommen überall mit.",
           "Woche 5: Dren sagt nichts – das Hörgerät entdecken, Bitte-Bilder, Winken bei der großen Schnecke: zeigen, was ich brauche. Ein Bitte-Bild für sich ist freiwillig.",
           "Woche 6: Lilos Schneckenfest – Wollspirale mit fünf Schätzen und Bewegungen; das Ende der Geschichte und Lilos Urkunde."
-        ]
+        ],
+        "helfen": [
+          "Zeigt das Kind ein Bitte-Bild oder winkt es: hingehen und kurz antworten („Ich sehe dich. Was brauchst du?“), ohne nach dem Grund zu fragen.",
+          "Das Mitnehm-Ding erlauben (Kuscheltier, Foto in der Tasche) und gleiche Abläufe halten, besonders an Wechsel- und Umzugstagen.",
+          "Erzählt das Kind von zu Hause: kurz danken, nicht vertiefen, nie vor anderen Kindern; Hinweise auf Gewalt oder große Angst noch am selben Tag an die Leitung."
+        ],
+        "beobachten": [
+          "benennt ein Gefühl und weiß, dass es wieder geht",
+          "zeigt einem vertrauten Erwachsenen mit Bild, Zeichen oder Satz, was es braucht",
+          "beruhigt sich mit seinem Mitnehm-Ding oder einem gewohnten Ablauf"
+        ],
+        "nicht": "Fragen Sie nicht nach Streit zu Hause oder wen das Kind lieber hat, werten Sie keine Familie, und versprechen Sie nicht, dass alles wieder wie früher wird."
       },
       "fr": {
         "ziel": "En six rencontres, l’enfant découvre ce qui aide les enfants quand quelque chose change dans la famille – un bébé arrive, les parents vivent séparés, un déménagement, deux maisons : les émotions vont et viennent et ont toutes leur place, le lourd est pour les grands (pas ma faute), le cœur a de la place pour tous, un doudou et des routines qui restent pareilles rassurent, et il peut montrer à un grand de confiance ce dont il a besoin. Tout passe par l’escargot Lilo et trois enfants – l’enfant ne raconte rien sur sa propre famille, sauf s’il le veut.",
@@ -6987,7 +7020,18 @@
           "Semaine 4 : Dren déménage – faire le carton et le porter comme un escargot : mon doudou et ma berceuse viennent partout.",
           "Semaine 5 : Dren ne dit rien – découvrir l’appareil auditif, images-demandes, coucou au grand escargot : montrer ce dont j’ai besoin. Une image pour soi est libre.",
           "Semaine 6 : la fête des escargots de Lilo – spirale de laine avec cinq trésors et leurs gestes ; la fin de l’histoire et le diplôme de Lilo."
-        ]
+        ],
+        "helfen": [
+          "Si l’enfant montre une image-demande ou fait coucou : aller vers lui et répondre brièvement (« Je te vois. De quoi as-tu besoin ? »), sans demander pourquoi.",
+          "Autoriser le doudou voyageur (peluche, photo dans le cartable) et garder les mêmes routines, surtout les jours de changement de maison ou de déménagement.",
+          "Si l’enfant parle de la maison : remercier brièvement, ne pas approfondir, jamais devant d’autres enfants ; tout signe de violence ou de grande peur, le jour même à la direction."
+        ],
+        "beobachten": [
+          "nomme une émotion et sait qu’elle repart",
+          "montre à un adulte de confiance, par une image, un geste ou une phrase, ce dont il a besoin",
+          "se calme avec son doudou voyageur ou une routine connue"
+        ],
+        "nicht": "Ne posez pas de questions sur les disputes à la maison ni sur qui l’enfant préfère, ne jugez aucune famille et ne promettez pas que tout redeviendra comme avant."
       }
     },
     "welt": {

@@ -400,13 +400,21 @@ regel(23, 'Altersband ohne Überschneidung mit den Stufen', 'fehler', alle.filte
 // 28 Einzelkurse: Hintergrund für die Fachkraft (warum es wirkt, Achtung, Quellen; DE und FR) – steht auf dem Deckblatt der
 // Kurs-Mappe (Referenzmessung 16.10.: „Hintergrund, Quellen und Achtung-Hinweise fehlen“)
 {
-  const H = JSON.parse(readFileSync(join(ROOT, 'src/data/passgenau/kurs-hintergrund.json'), 'utf8')) as Record<string, { de?: { warum?: string; achtung?: string[] }; fr?: { warum?: string; achtung?: string[] }; quellen?: string[] }>
+  type Karte = { ziel?: string; stichwort?: string; sitzungen?: string[]; helfen?: string[]; beobachten?: string[]; nicht?: string }
+  const H = JSON.parse(readFileSync(join(ROOT, 'src/data/passgenau/kurs-hintergrund.json'), 'utf8')) as Record<string, { de?: { warum?: string; achtung?: string[] }; fr?: { warum?: string; achtung?: string[] }; quellen?: string[]; klasse?: { de?: Karte; fr?: Karte } }>
   const t: string[] = []
   for (const l of new Set(schritte.filter((e) => e.linie?.id.startsWith('kurs-')).map((e) => e.linie!.id))) {
     const h = H[l]
     if (!h) { t.push(`${l}: kein Hintergrund`); continue }
     for (const sp of ['de', 'fr'] as const) if (!h[sp]?.warum || !(h[sp]?.achtung ?? []).length) t.push(`${l}: Hintergrund ${sp} unvollständig`)
     if (!(h.quellen ?? []).length) t.push(`${l}: keine Quelle`)
+    // Klassenkarte: der Typ KlassenKarte (druck.ts) verlangt alle Felder, sonst bricht der Build
+    for (const sp of ['de', 'fr'] as const) {
+      const k = h.klasse?.[sp]
+      if (!k) continue
+      const fehlt: string[] = [...(['ziel', 'stichwort', 'nicht'] as const).filter((f) => !k[f]), ...(['sitzungen', 'helfen', 'beobachten'] as const).filter((f) => !(k[f] ?? []).length)]
+      if (fehlt.length) t.push(`${l}: Klassenkarte ${sp} ohne ${fehlt.join(', ')}`)
+    }
   }
   regel(28, 'Einzelkurs ohne Hintergrund (src/data/passgenau/kurs-hintergrund.json)', 'fehler', t)
 }
