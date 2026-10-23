@@ -547,6 +547,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt Stärken-Turm, heute das Fundament – „Eine Stärke trägt, wenn du einen Beweis hast.“\n2′ Beide prüfen Janas Sätze: Behauptung oder Beweis?\n4′ Fachkraft macht es mit eigener Stärke vor\n5′ Kind wählt zwei Stärken aus dem Wortspeicher, sucht je einen Beweis\nMuss: Behauptung oder Beweis, zwei eigene Beweise. Kann: Vorbild der Fachkraft. Wird es knapp: eine Stärke."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre la tour des forces, aujourd’hui les fondations – « Un point fort est solide quand tu as une preuve. »\n2′ Ensemble : les phrases de Jana, affirmation ou preuve ?\n4′ L’adulte donne l’exemple avec un point fort à lui\n5′ L’enfant choisit deux points forts dans la boîte à mots, cherche une preuve pour chacun\nIndispensable : affirmation ou preuve, deux preuves à soi. Option : exemple de l’adulte. Serré : un seul point fort."
+      }
     }
   },
   {
@@ -1873,6 +1881,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt zwei Lobsätze: Welcher kommt an?\n1′ Beide halten die Formel fest – „Ich habe gesehen, dass du … Das zeigt, dass du … bist.“\n3′ Kind sagt den Satz zu zwei Szenen vom Blatt\n5′ Fachkraft spielt Ben (Plakat fertig), Kind antwortet mit der Formel\n7′ Tausch: Fachkraft sagt Kind einen echten Satz, Kind sagt nur „Danke“\nMuss: Formel, Ben, „Danke“ üben. Kann: zweite Szene. Wird es knapp: Lobsätze nur kurz vergleichen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre deux compliments : lequel fait de l’effet ?\n1′ Ensemble, ils fixent la formule – « J’ai vu que tu … Ça montre que tu as … »\n3′ L’enfant dit la phrase pour deux scènes de la fiche\n5′ L’adulte joue Ben (affiche terminée), l’enfant répond avec la formule\n7′ On échange : l’adulte dit une vraie phrase, l’enfant répond seulement « Merci »\nIndispensable : formule, Ben, « Merci » seul. Option : deuxième scène. Serré : comparer vite les deux compliments."
+      }
     }
   },
   {
@@ -3127,6 +3143,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt Janas Diagramm: 3 Treffer von 10, heute 8 – „Ich vergleiche mich mit mir von früher.“\n2′ Kind sucht drei Dinge, bei denen es besser wurde\n4′ Kind trägt je ein: vorher, heute, was geholfen hat\n6′ Fachkraft fragt je Fortschritt: Woran siehst du das?\nMuss: vorher – heute, nur mit sich vergleichen. Kann: zählen (Treffer, Minuten, Seiten, Level). Wird es knapp: zwei Dinge statt drei."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre le diagramme de Jana : 3 buts sur 10, aujourd’hui 8 – « Je me compare à moi d’avant. »\n2′ L’enfant cherche trois choses où il s’est amélioré\n4′ L’enfant note pour chacune : avant, aujourd’hui, ce qui a aidé\n6′ L’adulte demande pour chaque progrès : à quoi tu le vois ?\nIndispensable : avant – aujourd’hui, se comparer à soi. Option : compter (buts, minutes, pages, niveaux). Serré : deux choses au lieu de trois."
+      }
     }
   },
   {
@@ -4425,6 +4449,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft sagt: Nach Fehlern klingt die innere Stimme oft hart\n1′ Ben verschießt Elfmeter: beide prüfen mit zwei Tests – „Würdest du das einem guten Freund sagen?“\n4′ Kind schreibt mit der Stimmen-Ampel eine faire Stimme für Ben\n6′ Fachkraft spricht Bens harte Sätze (nie übers Kind), Kind antwortet fair\n8′ Rollen tauschen\nMuss: zwei Tests, faire Stimme, Rollenspiel. Kann: Tausch. Wird es knapp: faire Stimme nur mündlich. Eigene Beispiele freiwillig."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte dit : après une erreur, la voix intérieure est souvent dure\n1′ Ben rate un penalty : deux tests – « Le dirais-tu à un bon ami ? »\n4′ Avec le feu tricolore, l’enfant écrit une voix juste pour Ben\n6′ L’adulte dit les phrases dures de Ben (jamais sur l’enfant), l’enfant répond juste\n8′ On échange les rôles\nIndispensable : deux tests, voix juste, jeu de rôle. Option : échange. Serré : voix juste à l’oral. Exemples personnels libres."
+      }
     }
   },
   {
@@ -6117,6 +6149,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt an Noah: Rückschlag ist ein Zwischenstopp – „Ich bin noch nicht da.“\n2′ Kind wählt schwierige Situation dieser Woche (erfunden erlaubt)\n3′ Beide planen: wer, wann, wo, welcher Satz hilft\n6′ Fachkraft spielt Gegenüber freundlich, Kind sagt Satz, „Stopp“ jederzeit\n9′ Fachkraft fragt: Was hat geholfen?\nMuss: Plan mit Satz, einmal durchspielen. Kann: faire Stimme als Satz. Wird es knapp: Noah in einem Satz."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre avec Noah : un échec est une étape – « Je n’y suis pas encore. »\n2′ L’enfant choisit une situation difficile de la semaine (inventée permis)\n3′ Ensemble : qui, quand, où, quelle phrase aide\n6′ L’adulte joue l’autre aimablement, l’enfant dit sa phrase, « Stop » à tout moment\n9′ L’adulte demande : qu’est-ce qui a aidé ?\nIndispensable : plan avec phrase, jouer une fois. Option : la voix juste comme phrase. Serré : Noah en une phrase."
+      }
     }
   },
   {
@@ -7903,6 +7943,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft spielt Gast, der den Turm zum ersten Mal sieht\n1′ Kind führt durch die fünf Stockwerke, je ein Satz – „Ein Beispiel genügt.“\n5′ Rückblick: Was steht fest, was wackelt, was stützt?\n7′ Fachkraft fragt, wer hilft, wenn die harte Stimme laut wird\n8′ Kind füllt Turm-Karte und Urkunde aus\nMuss: Turm-Führung, Hilfe nennen. Kann: Stütze im Alltag. Wird es knapp: nicht jedes Stockwerk."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte joue quelqu’un qui découvre la tour\n1′ L’enfant guide à travers les cinq étages, une phrase chacun – « Un exemple suffit. »\n5′ Retour : quel étage tient, lequel vacille, qu’est-ce qui le soutient ?\n7′ L’adulte demande qui aide quand la voix dure revient\n8′ L’enfant remplit sa carte de la tour et son diplôme\nIndispensable : visite de la tour, qui aide. Option : soutien au quotidien. Serré : pas tous les étages."
+      }
     }
   },
   {

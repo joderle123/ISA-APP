@@ -501,6 +501,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt Selbstbild-Fenster, heute die ersten zwei Felder – „Beide stimmen ein Stück.“\n1′ Podcast: Fachkraft interviewt Jugendliche/n als Jana\n5′ Jugendliche/r antwortet als Ben: was er an Jana sieht\n8′ Tausch: Jugendliche/r fragt, fasst die Unterschiede zusammen\nMuss: beide Sichten auf Jana. Kann: Rollentausch. Wird es knapp: Ben kürzer. Eigene Beispiele nur, wenn sie von selbst kommen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre la fenêtre sur moi, aujourd’hui les deux premiers champs – « Les deux sont en partie justes. »\n1′ Podcast : l’adulte interviewe le/la jeune dans le rôle de Jana\n5′ Le/la jeune répond en Ben : ce qu’il voit en Jana\n8′ On échange : le/la jeune pose les questions, résume les différences\nIndispensable : les deux regards sur Jana. Option : échange. Serré : Ben plus court. Exemples personnels seulement s’ils viennent d’eux-mêmes."
+      }
     }
   },
   {
@@ -1694,6 +1702,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt Stärke – Beleg – Wirkung an Tiago (Bälle seit September)\n2′ Fachkraft spielt skeptische Praktikumsleiterin – „Woran sieht man das?“\n3′ Jugendliche/r antwortet als Tiago, dann freiwillig für sich, mit Situation\n7′ Tausch: Jugendliche/r fragt nach, Fachkraft belegt eigene Stärke\nMuss: Belegen mit einer Situation. Kann: eigene Stärke, Tausch. Wird es knapp: nur als Tiago."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre force – preuve – effet avec Tiago (les ballons depuis septembre)\n2′ L’adulte joue une responsable de stage sceptique – « À quoi le voit-on ? »\n3′ Le/la jeune répond en Tiago, puis pour soi s’il/elle veut, avec une situation\n7′ On échange : le/la jeune creuse, l’adulte prouve une de ses forces\nIndispensable : prouver avec une situation. Option : force personnelle, échange. Serré : seulement en Tiago."
+      }
     }
   },
   {
@@ -2889,7 +2905,15 @@
       "schreiben": 2,
       "bild": 1
     },
-    "vorbereitung": "Die zwölf Werte vom Blatt vorab auf Papierstreifen schreiben (ein Wert pro Streifen) und Stifte bereithalten."
+    "vorbereitung": "Die zwölf Werte vom Blatt vorab auf Papierstreifen schreiben (ein Wert pro Streifen) und Stifte bereithalten.",
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft legt zwölf Werte-Streifen im Raum aus\n1′ Jugendliche/r sortiert: sehr wichtig (höchstens drei), wichtig, weniger wichtig\n4′ Jugendliche/r stellt sich zur Karte, die heute am meisten zählt\n5′ Fachkraft spielt Freund, der Hausaufgaben abschreiben will; Antwort nach wichtigstem Wert\n8′ Tausch: Fachkraft antwortet nach anderem Wert\nMuss: sortieren mit höchstens drei, Rollenspiel. Kann: Tausch. Wird es knapp: ohne Stellen zur Karte. Eigenes freiwillig."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte étale les douze bandes de valeurs dans la pièce\n1′ Le/la jeune trie : très important (trois au plus), important, moins important\n4′ Le/la jeune va vers la carte qui compte le plus aujourd’hui\n5′ L’adulte joue un ami qui veut copier les devoirs ; réponse selon la valeur principale\n8′ On échange : l’adulte répond selon une autre valeur\nIndispensable : trier avec trois au plus, jeu de rôle. Option : échange. Serré : sans aller vers la carte. Le personnel reste facultatif."
+      }
+    }
   },
   {
     "id": "ki:kurs-selbstwert-13-16-s3-b",
@@ -4062,6 +4086,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Zwei Runden Quadrat-Atmen, je vier Zähler\n2′ Fachkraft unterscheidet inneren Kritiker und fairen Blick\n4′ Fachkraft liest Kritiker zu Tiagos Elfmeter, Jugendliche/r antwortet fair – „Was würde ich einem guten Freund sagen?“\n7′ Tausch, dann sagt Jugendliche/r, welche Antwort half\nMuss: Kritiker gegen fairen Blick im Rollenspiel. Kann: Tausch. Wird es knapp: eine Runde Atmen."
+      },
+      "fr": {
+        "aufbau": "0′ Deux tours de respiration en carré, quatre temps\n2′ L’adulte distingue critique intérieur et regard juste\n4′ L’adulte lit le critique sur le penalty de Tiago, le/la jeune répond juste – « Que dirais-je à un bon ami ? »\n7′ On échange, puis le/la jeune dit quelle réponse a aidé\nIndispensable : critique contre regard juste en jeu de rôle. Option : échange. Serré : un seul tour de respiration."
+      }
     }
   },
   {
@@ -5672,6 +5704,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt WOOP kurz an Tiago\n1′ WOOP mündlich zu kleiner Situation dieser Woche (oder erfunden): wer, wann, wo, erster Satz\n6′ Rollenspiel, zwei Durchgänge, Fachkraft ruhig und nicht gemein – „Du kannst jederzeit Stopp sagen.“\n8′ Nach jedem: Fachkraft nennt Gelungenes, Jugendliche/r was er/sie ändert\nMuss: WOOP, zwei Durchgänge. Kann: dritter Durchgang mit Tausch. Wird es knapp: Tiago in einem Satz."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre WOOP brièvement avec Tiago\n1′ WOOP à l’oral pour une petite situation de la semaine (ou inventée) : qui, quand, où, première phrase\n6′ Jeu de rôle en deux tours, l’adulte calme et pas méchant – « Tu peux dire stop à tout moment. »\n8′ Après chaque tour : l’adulte dit ce qui a réussi, le/la jeune ce qu’il/elle change\nIndispensable : WOOP, deux tours. Option : troisième tour, rôles échangés. Serré : Tiago en une phrase."
+      }
     }
   },
   {
@@ -6848,6 +6888,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft legt die Blätter der Fenster-Mappe aus\n1′ Jugendliche/r zeigt je Feld, was geblieben ist\n5′ 60-Sekunden-Porträt: vier Sätze, wie neu im Praktikum\n7′ Fachkraft sagt, was hängen geblieben ist\n8′ Tausch: Fachkraft stellt sich vor, Jugendliche/r gibt Rückmeldung\nMuss: Rückblick, Porträt. Kann: Tausch. Wird es knapp: je Feld ein Stichwort."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte étale les fiches du dossier de la fenêtre\n1′ Le/la jeune montre pour chaque champ ce qui lui est resté\n5′ Portrait en 60 secondes : quatre phrases, comme en arrivant en stage\n7′ L’adulte dit ce qui lui est resté\n8′ On échange : l’adulte se présente, le/la jeune donne son retour\nIndispensable : retour sur la fenêtre, portrait. Option : échange. Serré : un mot-clé par champ."
+      }
     }
   },
   {

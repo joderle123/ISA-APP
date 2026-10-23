@@ -578,6 +578,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft stellt Erzähl-Hand vor: fünf Finger, fünf Fragen – „Jeder Finger ist eine Frage.“\n1′ Fachkraft erzählt Mias Ballgeschichte, tippt je Teil einen Finger; Kind tippt mit\n4′ Beim zweiten Mal fehlt ein Teil, Kind sagt welcher\n5′ Daumen: Kind wählt zwei Figuren für eine eigene Geschichte\n6′ Fachkraft beginnt „Eines Tages …“, Kind erzählt einen Satz weiter\n8′ Tausch: Fachkraft nennt zwei Figuren, Kind beginnt\nMuss: Ballgeschichte mit Fingern, zwei Figuren. Kann: Tausch. Wird es knapp: ohne Lücken-Runde."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte présente la main des histoires : cinq doigts, cinq questions – « Chaque doigt est une question. »\n1′ L’adulte raconte le ballon de Mia en touchant un doigt par partie ; l’enfant touche aussi\n4′ La deuxième fois, une partie manque, l’enfant dit laquelle\n5′ Pouce : l’enfant choisit deux personnages pour son histoire\n6′ L’adulte commence « Un jour … », l’enfant ajoute une phrase\n8′ On échange : l’adulte nomme deux personnages, l’enfant commence\nIndispensable : histoire du ballon avec les doigts, deux personnages. Option : échange. Serré : sans le tour à trou."
+      }
     }
   },
   {
@@ -1800,6 +1808,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft erzählt von ihrer Pause, Kind hört erst schlecht, dann gut zu\n2′ Fachkraft sagt, wie sich beides anfühlte – „Augen schauen, Ohren hören, Mund wartet.“\n3′ „Tom hat etwas Tolles gefunden!“: Kind fragt nach, je Antwort Finger tippen\n7′ Tausch: Kind erzählt zwei Sätze mit Wer und Wo, Fachkraft fragt einmal nach\nMuss: gut zuhören, nachfragen. Kann: Tausch. Wird es knapp: schlechtes Zuhören nur kurz."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte raconte sa récré, l’enfant écoute d’abord mal, puis bien\n2′ L’adulte dit ce que chaque façon lui a fait – « Les yeux regardent, les oreilles écoutent, la bouche attend. »\n3′ « Tom a trouvé quelque chose de génial ! » : l’enfant pose des questions, un doigt par réponse\n7′ On échange : l’enfant dit deux phrases avec qui et où, l’adulte pose une question\nIndispensable : bien écouter, poser des questions. Option : échange. Serré : mal écouter, en bref."
+      }
     }
   },
   {
@@ -3014,6 +3030,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft erzählt Mias Ballgeschichte durcheinander, Kind sagt, was nicht stimmt\n2′ Fachkraft erzählt der Reihe nach, je Wort tippen beide einen Finger\n4′ Kind legt drei Strichbilder in Reihenfolge, erzählt „Erst …, dann …, zum Schluss …“\n7′ Tausch: Kind erzählt eigene Geschichte in drei Schritten, Fachkraft zählt mit\nMuss: Bilder ordnen und erzählen. Kann: „danach“ einschieben. Wird es knapp: Durcheinander-Version kurz."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte raconte le ballon de Mia dans le désordre, l’enfant dit ce qui cloche\n2′ L’adulte raconte dans l’ordre, un doigt par mot\n4′ L’enfant range trois dessins et raconte « D’abord …, ensuite …, à la fin … »\n7′ On échange : l’enfant raconte son histoire en trois étapes, l’adulte compte sur ses doigts\nIndispensable : ranger les dessins et raconter. Option : glisser un « après ». Serré : version en désordre, en bref."
+      }
     }
   },
   {
@@ -4333,6 +4357,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft erzählt Ballgeschichte flach, ohne Gefühl\n1′ Dann mit Gefühl; Kind sagt, was anders ist\n3′ Sechs Gefühlskarten: Kind wählt für drei Momente Mias Gefühl – „Mia war …, weil …“\n7′ Tausch: Kind erzählt freiwillig einen Moment mit „Ich war …, weil …“; Fachkraft fragt nach\nMuss: ohne/mit Gefühl, Karten für Mia. Kann: eigener Moment. Wird es knapp: zwei Momente."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte raconte le ballon d’une voix plate, sans émotion\n1′ Puis avec émotion ; l’enfant dit ce qui change\n3′ Six cartes d’émotions : l’enfant choisit pour trois moments – « Mia était …, parce que … »\n7′ On échange : l’enfant raconte, s’il veut, un moment avec « J’étais …, parce que … » ; l’adulte demande\nIndispensable : sans/avec émotion, cartes pour Mia. Option : moment personnel. Serré : deux moments."
+      }
     }
   },
   {
@@ -5522,6 +5554,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt an Mias Geschichte: Ende gut, offen oder überraschend\n1′ Kind wählt Erlebnis dieser Woche (erfunden erlaubt)\n2′ Kind plant: wer hört zu, wann, wo, erster Satz\n4′ Fachkraft hat erst keine Zeit, Kind fragt nach anderer Zeit – „Jetzt nicht – was sagst du dann?“\n6′ Fachkraft hört zu, Kind erzählt mit ganzer Hand, eine Nachfrage\n8′ Kind sagt ersten Satz noch einmal laut\nMuss: Plan, Erzählen mit ganzer Hand. Kann: Tausch, wenn Zeit bleibt. Wird es knapp: „Jetzt nicht“ nur kurz."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre avec Mia : une fin bonne, ouverte ou surprenante\n1′ L’enfant choisit un événement de la semaine (inventé permis)\n2′ L’enfant prévoit : qui écoute, quand, où, première phrase\n4′ L’adulte n’a d’abord pas le temps, l’enfant demande un autre moment – « Pas maintenant – que dis-tu alors ? »\n6′ L’adulte écoute, l’enfant raconte avec toute la main, une question\n8′ L’enfant redit sa première phrase\nIndispensable : plan, raconter avec la main. Option : échange s’il reste du temps. Serré : « Pas maintenant » en bref."
+      }
     }
   },
   {
@@ -7398,6 +7438,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Blätter der Erzähl-Mappe nebeneinander: Kind tippt je Finger, sagt Gelerntes\n3′ Kind erzählt ganze Geschichte mit fünf Fingern – „Heute gibt es kein Richtig oder Falsch.“\n6′ Tausch: Fachkraft erzählt mit fehlendem Finger, Kind merkt es, fragt nach\n8′ Kind nennt leichtesten Finger, Übe-Finger und wer hilft, wenn Worte fehlen\nMuss: ganze Geschichte, Hilfe nennen. Kann: Tausch. Wird es knapp: Rückblick nur zwei Finger."
+      },
+      "fr": {
+        "aufbau": "0′ Les fiches côte à côte : l’enfant touche chaque doigt, dit ce qu’il a appris\n3′ L’enfant raconte toute une histoire avec les cinq doigts – « Il n’y a ni bonne ni mauvaise façon. »\n6′ On échange : l’adulte raconte avec un doigt manquant, l’enfant le remarque et demande\n8′ L’enfant dit le doigt le plus facile, celui à travailler, et qui aide quand les mots manquent\nIndispensable : histoire entière, qui aide. Option : échange. Serré : retour sur deux doigts."
+      }
     }
   },
   {

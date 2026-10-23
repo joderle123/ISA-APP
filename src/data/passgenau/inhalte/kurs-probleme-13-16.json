@@ -693,6 +693,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt Werkzeug-Kiste: fünf Teile, heute noch zu\n1′ Fachkraft liest Janas Chat-Szene vor (Antwort bis 18 Uhr)\n2′ Jugendliche/r sagt: Was sagen Bauch, Kopf, die anderen?\n5′ Dieselbe Szene „kalt“: ein Tag Zeit, kein Chat\n7′ Zwei Szenen als heiß oder kalt einordnen – „Beides kommt vor, und keins ist falsch.“\nMuss: Bauch, Kopf, andere; heiß und kalt. Kann: zwei weitere Szenen. Wird es knapp: eine Szene. Eigene Beispiele nur, wenn sie von selbst kommen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre la boîte à outils : cinq pièces, fermée aujourd’hui\n1′ L’adulte lit la scène du chat de Jana (réponse avant 18 h)\n2′ Le/la jeune dit : que disent l’intuition, la tête, les autres ?\n5′ Même scène « à froid » : un jour de recul, sans chat\n7′ Classer deux autres scènes en chaud ou froid – « Les deux existent, et aucun n’est faux. »\nIndispensable : intuition, tête, autres ; chaud et froid. Option : deux autres scènes. Serré : une seule. Exemples personnels seulement s’ils viennent d’eux-mêmes."
+      }
     }
   },
   {
@@ -1921,6 +1929,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft erzählt: Yusuf wählt bis Freitag, Schule oder Ausbildung – „Sind das wirklich alle Wege?“\n2′ Sprint 3 Min.: Jugendliche/r schreibt Ideen an die Äste, Fachkraft stoppt, kommentiert nichts\n5′ Beide sortieren nach Trick: kombinieren, ausprobieren, andere fragen, Bedingung ändern\n8′ Dritter Weg für eigene Zwei-Wege-Entscheidung (erfunden oder echt)\nMuss: Sprint, vier Tricks. Kann: eigene Entscheidung. Wird es knapp: Tricks nur an zwei Ideen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte raconte : Yusuf doit choisir d’ici vendredi, école ou apprentissage – « Est-ce que ce sont vraiment tous les chemins ? »\n2′ Sprint de 3 min : le/la jeune note ses idées sur la carte mentale, l’adulte chronomètre sans commenter\n5′ Trier par astuce : combiner, essayer, demander aux autres, changer une condition\n8′ Un troisième chemin pour une décision à soi (inventée ou réelle)\nIndispensable : sprint, quatre astuces. Option : décision personnelle. Serré : astuces sur deux idées."
+      }
     }
   },
   {
@@ -3092,6 +3108,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft legt Streifen hin: 10 Minuten, 10 Wochen, 10 Monate\n1′ Linas Lage: 120 €, Kopfhörer 110 €, Konzert 65 €\n2′ Jugendliche/r trägt Folgen für „kaufen“ und „sparen“ ein\n6′ Beide vergleichen, was am schwersten wiegt, auch für andere\n8′ Eigene kleine Entscheidung in Stichworten (erfunden oder echt)\nMuss: Tabelle für Lina, vergleichen. Kann: eigene Entscheidung. Wird es knapp: „sparen“ nur mündlich."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte pose une bande : 10 minutes, 10 semaines, 10 mois\n1′ La situation de Lina : 120 €, écouteurs 110 €, concert 65 €\n2′ Le/la jeune note les conséquences d’« acheter » et d’« économiser »\n6′ Comparer ensemble ce qui pèse le plus, aussi pour les autres\n8′ Une petite décision à soi en mots-clés (inventée ou réelle)\nIndispensable : tableau de Lina, comparer. Option : décision personnelle. Serré : « économiser » à l’oral."
+      }
     }
   },
   {
@@ -4318,6 +4342,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft erzählt Bens Mutprobe: über die Mauer am Bach balancieren\n1′ Risiko-Check: wahrscheinlich? schlimm? rückgängig? Jugendliche/r gibt 0–10\n5′ Jugendliche/r nennt zwei Werte, die gegeneinander stehen\n7′ Fachkraft spielt Tiago ruhig, Jugendliche/r probiert Nein und Gegenvorschlag – „Du kannst jederzeit Stopp sagen.“\nMuss: Risiko-Check, Rollenspiel. Kann: Rollentausch. Wird es knapp: nur das klare Nein."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte raconte le défi de Ben : le mur au bord du ruisseau\n1′ Contrôle du risque : probabilité ? gravité ? réversible ? Note de 0 à 10\n5′ Le/la jeune nomme deux valeurs qui s’opposent\n7′ L’adulte joue Tiago calmement, le/la jeune essaie un non et une contre-proposition – « Tu peux dire stop à tout moment. »\nIndispensable : contrôle du risque, jeu de rôle. Option : échanger les rôles. Serré : seulement le non net."
+      }
     }
   },
   {
@@ -6072,6 +6104,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Jugendliche/r wählt anstehende Entscheidung (erfunden ist genauso gut)\n1′ Werkzeug in 5 Min.: drei Optionen, Folgen, Risiko-Check, zwei Werte\n6′ Jugendliche/r wählt und baut Plan B: wer, wann, wo, welcher Satz\n8′ Fachkraft spielt Gegenüber ruhig, nennt zuerst Gelungenes – „Du kannst jederzeit Stopp sagen.“\nMuss: Werkzeug durchgehen, Plan B. Kann: Durchgang mit Gegenüber. Wird es knapp: Risiko und Werte nur in Stichworten."
+      },
+      "fr": {
+        "aufbau": "0′ Le/la jeune choisit une décision de la semaine (inventée, c’est aussi bien)\n1′ L’outil en 5 min : trois options, conséquences, risque, deux valeurs\n6′ Choisir et construire le plan B : qui, quand, où, quelle phrase\n8′ L’adulte joue l’autre calmement, dit d’abord ce qui a marché – « Tu peux dire stop à tout moment. »\nIndispensable : parcourir l’outil, plan B. Option : jeu de rôle. Serré : risque et valeurs en mots-clés."
+      }
     }
   },
   {
@@ -7713,6 +7753,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Beide blättern durch die Mappe mit den fünf Blättern\n2′ Jugendliche/r zeigt bestes und schwächstes Teil, sagt woran – „Sag es ehrlich, nicht freundlich.“\n5′ Fachkraft ergänzt ein Beispiel, etwa Yusufs dritten Weg\n6′ Fachkraft erklärt in zwei Sätzen: aus heiß wird „kalt“\n8′ Jugendliche/r nennt Hilfe: Freunde, Vertrauensperson, Schulberatung\nMuss: Rückblick auf die Teile, Hilfe nennen. Kann: Beispiel der Fachkraft. Wird es knapp: nur das beste Teil."
+      },
+      "fr": {
+        "aufbau": "0′ Feuilleter ensemble le dossier aux cinq fiches\n2′ Le/la jeune montre la pièce la plus utile et la moins utile – « Dis-le honnêtement, pas poliment. »\n5′ L’adulte ajoute un exemple, comme le troisième chemin de Yusuf\n6′ L’adulte explique en deux phrases : rendre « froide » une décision « chaude »\n8′ Le/la jeune nomme qui l’aide : amis, adulte de confiance, conseil de l’école\nIndispensable : retour sur les pièces, qui m’aide. Option : exemple de l’adulte. Serré : seulement la pièce la plus utile."
+      }
     }
   },
   {

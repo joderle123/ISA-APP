@@ -565,6 +565,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt Schlüsselbund, heute Schlüssel 1: genau beschreiben\n1′ Drei Satzpaare: Kind trennt Fakt und Vorwurf – „Was davon könnte eine Kamera aufnehmen?“\n4′ Kind macht aus zwei Vorwürfen Fakten: wer, was, wo, wann\n7′ Kind bearbeitet den Chat der 6b schriftlich mit W-Fragen\nMuss: Fakt oder Vorwurf, Vorwürfe umbauen. Kann: Chat der 6b. Wird es knapp: nur ein Vorwurf."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre le trousseau, aujourd’hui la clé 1 : bien décrire\n1′ Trois paires de phrases : l’enfant sépare fait et reproche – « Qu’est-ce qu’une caméra pourrait filmer ? »\n4′ L’enfant transforme deux reproches en faits : qui, quoi, où, quand\n7′ L’enfant traite par écrit le chat de la 6b\nIndispensable : fait ou reproche, reformuler les reproches. Option : chat de la 6b. Serré : un seul reproche."
+      }
     }
   },
   {
@@ -1742,6 +1750,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft erzählt: Finn sagt Ben eine Stunde vorher ab\n1′ Beide halten zwei Fakten fest\n2′ Kind nennt vier mögliche Gründe, Fachkraft ergänzt einen\n5′ Fachkraft spielt Finn, Kind stellt ihm drei Fragen\n8′ Kind sucht Bens Frage, bevor er etwas annimmt – „Nachfragen zeigt, was stimmt.“\nMuss: vier Gründe, Finn befragen. Kann: Bens Frage. Wird es knapp: drei Gründe."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte raconte : Finn annule le rendez-vous avec Ben une heure avant\n1′ Les deux notent deux faits\n2′ L’enfant cherche quatre raisons, l’adulte en ajoute une\n5′ L’adulte joue Finn, l’enfant lui pose trois questions\n8′ L’enfant cherche la question que Ben pourrait poser – « Poser la question montre ce qui est vrai. »\nIndispensable : quatre raisons, interroger Finn. Option : question de Ben. Serré : trois raisons."
+      }
     }
   },
   {
@@ -2862,6 +2878,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft nennt vier Ideen-Regeln – „Hier zählt nur eins: viele.“\n1′ Jana vergisst Mathe-Hausaufgabe: 2 Min. Ideen, Sanduhr, Fachkraft notiert\n3′ Beide sortieren Zettel: allein, Hilfe holen, anders einrichten\n6′ Kind baut verrückteste Idee mit „Ja, und …“ um\nMuss: 2 Min. sammeln, bei Bremssatz „Schere!“. Kann: „Ja, und …“. Wird es knapp: ohne Sortieren."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte annonce quatre règles – « Ici, une seule chose compte : en avoir beaucoup. »\n1′ Jana oublie ses devoirs de maths : 2 min d’idées, sablier, l’adulte note\n3′ Trier les papiers : seul, demander de l’aide, s’organiser autrement\n6′ L’enfant transforme l’idée la plus folle avec « Oui, et … »\nIndispensable : 2 min d’idées, « Filtre ! » si ça freine. Option : « Oui, et … ». Serré : sans trier."
+      }
     }
   },
   {
@@ -4114,6 +4138,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft erzählt: Yusuf wird im Training kaum angespielt\n1′ Drei Ideen als Karten: Trainer sagen, aufhören, nichts sagen\n2′ Erste Idee gemeinsam: Vorteile links, Nachteile rechts\n5′ Zwei Fragen: gleich oder in einem Monat? Für Yusuf oder andere?\n7′ Kind prüft zweite Idee allein, rät Yusuf – „Welcher Nachteil ist für dich okay?“\nMuss: Papier mit Strich, eine Idee gemeinsam. Kann: zwei Ideen verbinden. Wird es knapp: zweite Idee mündlich."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte raconte : Yusuf reçoit à peine le ballon à l’entraînement\n1′ Trois cartes : prévenir l’entraîneur, arrêter, ne rien dire\n2′ Première idée ensemble : avantages à gauche, inconvénients à droite\n5′ Deux questions : tout de suite ou dans un mois ? Pour Yusuf ou les autres ?\n7′ L’enfant examine la deuxième idée seul et conseille Yusuf\nIndispensable : feuille avec trait, une idée ensemble. Option : combiner deux idées. Serré : deuxième idée à l’oral."
+      }
     }
   },
   {
@@ -5353,6 +5385,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Kind wählt kleines Problem und eine Idee (nichts erfragen)\n3′ Kind schreibt Plan nach Bens Muster: wer, wann, wo, Satz, Wenn-dann\n7′ Fachkraft spielt Gegenüber: freundlich, zurückhaltend, abweisend, nie verletzend\n8′ Je Durchgang: Kind nennt Gelungenes, Fachkraft ein Plus, höchstens ein Tipp\n12′ Beide legen die zwei Auswerte-Fragen fest\nMuss: Plan, Durchspielen, bei „Stopp“ sofort aufhören. Kann: abweisender Durchgang. Wird es knapp: zwei Durchgänge."
+      },
+      "fr": {
+        "aufbau": "0′ L’enfant choisit un petit problème et une idée (aucune question)\n3′ L’enfant écrit son plan d’après Ben : qui, quand, où, phrase, si … alors\n7′ L’adulte joue l’autre : aimable, réservé, fermé, jamais blessant\n8′ Après chaque tour : l’enfant d’abord, puis un point positif et au plus un conseil\n12′ Fixer les deux questions du bilan\nIndispensable : plan, scène, arrêt immédiat à « Stop ». Option : tour fermé. Serré : deux tours."
+      }
     }
   },
   {
@@ -7003,6 +7043,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fünf Blätter nebeneinander: Kind sagt je Schlüssel einen Satz\n4′ Neuer Fall Gruppenprojekt: Kind geht alle fünf Schlüssel kurz durch\n8′ Kind wählt Schlüssel für die nächsten zwei Wochen und einen Helfer\n12′ Kind bekommt die Problem-Knacker-Urkunde am Blatt\nMuss: Rückblick, eigener Plan mit Helfer. Kann: neuer Fall. Wird es knapp: Rückblick nur hilfreichster und wackliger Schlüssel."
+      },
+      "fr": {
+        "aufbau": "0′ Les cinq fiches côte à côte : l’enfant dit une phrase par clé\n4′ Nouveau cas du travail de groupe : l’enfant passe vite les cinq clés\n8′ L’enfant choisit une clé pour deux semaines et qui peut l’aider\n12′ L’enfant reçoit le diplôme du trousseau sur la fiche\nIndispensable : rétrospective, plan avec aide. Option : nouveau cas. Serré : seulement la clé la plus utile et la plus fragile."
+      }
     }
   },
   {

@@ -357,6 +357,14 @@
         "Ton prénom est à toi. On le frappe ensemble dans les mains, autant de fois que tu veux."
       ],
       "wennEsKippt": "Si l’enfant ne veut pas se regarder dans le miroir, l’adulte s’y regarde seul et l’enfant montre le visage sur la fiche. S’il dit quelque chose de dévalorisant sur lui, l’adulte le prend au sérieux (« Ça a l’air triste ») et l’oriente vers tout ce que les yeux, les mains et la voix savent faire – sans discuter. Deux tours de reflet et le prénom suffisent."
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt den Ich-Spiegel – „Er zeigt dir, wer da ist: du!“\n1′ Fachkraft zeigt Augen, Nase, Mund, Ohren; Kind zeigt seine im Spiegel\n3′ Spiegelbild: Fachkraft macht langsam vor, Kind macht nach\n4′ Tausch: Kind führt, Fachkraft spiegelt\n5′ Fachkraft sagt den Namen laut, leise, flüsternd; beide klatschen Silben\n7′ Fachkraft sagt: Jedes Blatt wird eine Seite im Ich-Buch\nMuss: Spiegel, Namen klatschen. Kann: Tausch beim Spiegelbild. Wird es knapp: Spiegelbild nur in eine Richtung."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre le miroir – « Il te montre qui est là : toi ! »\n1′ L’adulte montre ses yeux, son nez, sa bouche, ses oreilles ; l’enfant les siens dans le miroir\n3′ Jeu du reflet : l’adulte bouge lentement, l’enfant imite\n4′ On échange : l’enfant mène, l’adulte reflète\n5′ L’adulte dit le prénom fort, doucement, en chuchotant ; on frappe les syllabes\n7′ L’adulte annonce : chaque fiche sera une page du livre sur moi\nIndispensable : miroir, frapper le prénom. Option : échange au reflet. Serré : reflet dans un seul sens."
+      }
     }
   },
   {
@@ -927,6 +935,14 @@
         "Dis-moi trois choses que tu aimes bien. Elles font toutes partie de toi."
       ],
       "wennEsKippt": "Si l’enfant ne trouve rien, l’adulte montre des objets dans la pièce (« Tu aimes les cubes ? Tu aimes ce livre ? ») ou les images de la fiche. Si l’enfant ne veut pas sauter, il montre du doigt le cœur ou le cœur barré. Une seule phrase « j’aime… » suffit."
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft legt Herz und durchgestrichenes Herz auf den Boden\n1′ Fachkraft nennt Dinge, Kind springt aufs passende Herz\n2′ Fachkraft springt mit, steht manchmal woanders – „Du darfst woanders stehen als ich.“\n4′ Fachkraft fragt, ob beide immer dasselbe mochten – „Was du magst, gehört zu dir.“\n6′ Fachkraft sagt „Ich mag Pfützen“, Kind erfindet bis zu drei\nMuss: Herz-Springen, anders mögen dürfen. Kann: drei eigene Sätze. Wird es knapp: ein eigener Ich-mag-Satz."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte pose par terre un cœur et un cœur barré\n1′ L’adulte nomme des choses, l’enfant saute sur le bon cœur\n2′ L’adulte saute aussi, parfois ailleurs – « Tu as le droit d’être ailleurs que moi. »\n4′ L’adulte demande si on a toujours aimé la même chose – « Ce que tu aimes fait partie de toi. »\n6′ L’adulte dit « J’aime les flaques », l’enfant en invente jusqu’à trois\nIndispensable : sauter sur les cœurs, aimer autre chose. Option : trois phrases. Serré : une seule phrase."
+      }
     }
   },
   {
@@ -1496,6 +1512,14 @@
         "Ça, tu sais déjà le faire ! Et ce que tu apprends encore, tu le sauras bientôt aussi."
       ],
       "wennEsKippt": "Si une consigne ne réussit pas, l’adulte dit : « Ça n’a pas encore tout à fait marché – tu t’entraînes. Et ça, tu sais déjà le faire », et laisse l’enfant en choisir une plus facile. Si l’enfant ne trouve rien qu’il sache faire, l’adulte nomme quelque chose qu’il vient de voir. Trois consignes suffisent."
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft ruft leichte Aufträge: klatschen, hüpfen, Namen klatschen\n2′ Ein, zwei schwerere: rückwärts gehen, Turm aus fünf Steinen – „Das kannst du schon!“\n4′ Tausch: Kind gibt Aufträge, Fachkraft schafft einen nicht gleich\n6′ Kind zeigt der Fachkraft, wie es geht\n7′ Wer mag, nennt etwas, das es noch übt\nMuss: Aufträge, danach genau sagen, was du gesehen hast. Kann: Übe-Sache. Wird es knapp: nur ein schwerer Auftrag."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte lance des consignes faciles : taper, sauter, frapper son prénom\n2′ Une ou deux plus difficiles : reculer, tour de cinq cubes – « Ça, tu sais déjà le faire ! »\n4′ On échange : l’enfant donne les consignes, l’adulte en rate une\n6′ L’enfant lui montre comment faire\n7′ S’il veut, l’enfant nomme une chose qu’il apprend encore\nIndispensable : consignes, puis dire précisément ce qu’on a vu. Option : chose à apprendre. Serré : une seule consigne difficile."
+      }
     }
   },
   {
@@ -2061,6 +2085,14 @@
         "Maintenant, c’est toi qui me fais un compliment. … Merci ! Ça me fait très plaisir."
       ],
       "wennEsKippt": "Si l’enfant balaie le compliment (« C’est pas bien »), l’adulte dit gentiment : « Moi, je le vois, et ça me fait plaisir. Tu n’as rien à dire, tu peux juste le regarder. » Un sourire ou un signe de tête suffit pour accueillir. Si l’enfant ne veut pas faire de pose, l’adulte la montre et l’enfant montre seulement l’image sur la fiche."
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Kind baut mit Bausteinen oder malt, 2–3 Minuten\n3′ Fachkraft sagt genau, was sie sieht, statt nur „toll“\n4′ Kind übt Lob annehmen: lächeln, „Danke!“, Siegerarme – „Ich bin stolz!“\n6′ Tausch: Kind lobt Fachkraft, sie nimmt es fröhlich an\n7′ Kind wählt seine Stolz-Pose\nMuss: genaues Lob, Annehmen üben. Kann: Tausch. Wird es knapp: 2 Minuten bauen."
+      },
+      "fr": {
+        "aufbau": "0′ L’enfant construit avec des cubes ou dessine, 2–3 min\n3′ L’adulte dit précisément ce qu’il voit, pas juste « super »\n4′ L’enfant s’exerce à accueillir : sourire, « Merci ! », bras levés – « Je suis fier ! »\n6′ On échange : l’enfant complimente l’adulte, qui accueille avec joie\n7′ L’enfant choisit sa pose de fierté\nIndispensable : compliment précis, s’exercer à l’accueillir. Option : échange. Serré : 2 min de construction."
+      }
     }
   },
   {
@@ -2663,6 +2695,14 @@
         "Tu comptes pour nous, simplement parce que tu es toi. Et quand tu aides, quelqu’un est content."
       ],
       "wennEsKippt": "Si l’enfant ne trouve pas de situation, il en choisit une parmi les images, ou l’adulte propose quelque chose qu’il voit dans la pièce (ranger les cubes dans la caisse). Si l’enfant est déçu par le « Non merci », l’adulte dit : « C’est bien – parfois on n’a pas besoin d’aide. Tu as demandé gentiment. » Si le temps presse, l’exercice 1 et la phrase suffisent."
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Kind kreist auf dem Blatt ein, wem es diese Woche hilft – „Wem könntest du diese Woche helfen?“\n2′ Fachkraft schreibt Ort, Zeit und Satz in die Felder\n3′ Fachkraft trägt Schweres und seufzt, Kind fragt „Soll ich dir helfen?“\n5′ Noch einmal: Fachkraft sagt „Nein danke“, Kind sagt „Okay“\n7′ Bleibt Zeit: Rollen tauschen\nMuss: Plan, beide Szenen. Kann: Rollentausch. Wird es knapp: Plan nur wem und welcher Satz."
+      },
+      "fr": {
+        "aufbau": "0′ L’enfant entoure sur la fiche à qui il donnera un coup de main – « À qui pourrais-tu donner un coup de main cette semaine ? »\n2′ L’adulte écrit le lieu, le moment et la phrase\n3′ L’adulte porte du lourd et soupire, l’enfant dit « Je peux t’aider ? »\n5′ Deuxième fois : l’adulte dit « Non merci », l’enfant dit « D’accord »\n7′ S’il reste du temps : on échange les rôles\nIndispensable : plan, les deux scènes. Option : échange. Serré : plan avec qui et quelle phrase seulement."
+      }
     }
   },
   {
@@ -3203,6 +3243,14 @@
         "Qu’est-ce que tu as découvert sur toi pendant ces séances ? Tu peux aussi juste montrer."
       ],
       "wennEsKippt": "Si l’enfant ne veut pas raconter, l’adulte feuillette seul et dit pour chaque page ce qu’il avait vu ; l’enfant montre seulement sa page préférée. S’il manque une fiche, l’enfant la redessine vite, ou la page reste une page « pas encore ». Deux ou trois pages suffisent."
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft legt Blätter 1–5 der Reihe nach hin\n1′ Je Seite: Kind sagt einen Satz, Fachkraft nennt ihren Beleg\n4′ Kind wählt Lieblingsseite, erzählt, wenn es mag\n6′ Fachkraft fragt, was das Kind über sich herausgefunden hat – „Du darfst auch nur zeigen.“\nMuss: Rückblick mit Belegen, Lieblingsseite. Kann: Erzählen zur Lieblingsseite. Wird es knapp: Deckblatt, Urkunde und Binden aufs Blatt."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte pose les fiches 1 à 5 dans l’ordre\n1′ Pour chaque page : l’enfant dit une phrase, l’adulte redit sa preuve\n4′ L’enfant choisit sa page préférée, raconte s’il veut\n6′ L’adulte demande ce que l’enfant a découvert sur lui – « Tu peux aussi juste montrer. »\nIndispensable : retour avec les preuves, page préférée. Option : raconter. Serré : couverture, diplôme et reliure sur la fiche."
+      }
     }
   },
   {

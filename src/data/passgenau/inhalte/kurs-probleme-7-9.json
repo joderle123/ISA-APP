@@ -624,6 +624,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt Ideen-Rakete, heute Stufe 5 – „Was ist das Problem?“\n2′ Fachkraft spielt Tom, ruft Vorwurf in den Raum (nicht zum Kind)\n3′ Kind findet „immer“, „nie“, „gemein“ und was wirklich los ist\n5′ Beide bauen Problem-Satz: Tom und Sami, nur ein Ball\n7′ Kind sagt Problem-Satz zu Leas und Amiras Plakat, bei Vorwurf „Alarm!“\nMuss: Vorwurf erkennen, Problem-Satz. Kann: zweiter Fall. Wird es knapp: zweiter Fall ohne Alarm-Runde."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte présente la fusée à idées, aujourd’hui l’étape 5 – « Quel est le problème ? »\n2′ L’adulte joue Tom et crie un reproche dans le vide (pas à l’enfant)\n3′ L’enfant repère « toujours », « jamais », « méchant » et ce qui se passe vraiment\n5′ Ensemble : phrase du problème, Tom et Sami, un seul ballon\n7′ L’enfant fait la phrase pour l’affiche de Léa et Amira ; reproche = « Alerte ! »\nIndispensable : repérer le reproche, phrase du problème. Option : deuxième cas. Serré : deuxième cas sans alerte."
+      }
     }
   },
   {
@@ -1812,6 +1820,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zündet Stufe 4: Was will ich erreichen?\n1′ Fachkraft spielt Tom, der Sami weghaben will – „Kann Tom das selbst erreichen?“\n3′ Kind baut Toms Ziel-Satz mit „Ich will …“ um\n5′ Dasselbe für Sami\n7′ Kind prüft Leas und Amiras Ziele: passen sie zusammen?\nMuss: Toms Ziel mit „Ich will …“. Kann: Lea und Amira. Wird es knapp: Sami weglassen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte allume l’étape 4 : qu’est-ce que je veux atteindre ?\n1′ L’adulte joue Tom, qui veut que Sami parte – « Est-ce que Tom peut l’atteindre lui-même ? »\n3′ L’enfant reformule le but de Tom avec « Je veux … »\n5′ Pareil pour Sami\n7′ L’enfant regarde si les buts de Léa et Amira vont ensemble\nIndispensable : but de Tom avec « Je veux … ». Option : Léa et Amira. Serré : sauter Sami."
+      }
     }
   },
   {
@@ -2939,6 +2955,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft nennt die vier Feuerwerks-Regeln – „Je mehr Ideen, desto besser.“\n1′ Abwechselnd Ideen zu Toms Ziel, Kind schreibt je einen Streifen\n2′ Fachkraft bewertet absichtlich, Kind ruft „Feuerwerk-Stopp!“\n4′ Kind zählt die Streifen\n5′ Dasselbe mit Leas und Amiras Plakat\nMuss: Regeln, Streifen, nichts bewerten. Kann: Plakat-Fall. Wird es knapp: Plakat-Fall nur kurz."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte annonce les quatre règles du feu d’artifice – « Plus il y a d’idées, mieux c’est. »\n1′ Idées à tour de rôle pour le but de Tom, une bande par idée\n2′ L’adulte juge exprès, l’enfant crie « Stop au feu d’artifice ! »\n4′ L’enfant compte les bandes\n5′ Pareil avec l’affiche de Léa et Amira\nIndispensable : règles, bandes, ne rien juger. Option : l’affiche. Serré : l’affiche en bref."
+      }
     }
   },
   {
@@ -4146,6 +4170,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft nennt drei Fragen: sicher? fair? klappt es?\n1′ Fachkraft legt vier Ideen-Karten für Tom und Sami hin\n2′ Je Karte: Kind zeigt Daumen und sagt warum\n3′ Fachkraft spielt Sami, Kind sagt „Wenn Tom …, dann …“\n8′ Kind wählt die Idee mit drei Daumen hoch – „Die darf starten.“\nMuss: drei Fragen, Daumen je Karte. Kann: Sami-Rolle. Wird es knapp: zwei Karten."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte annonce trois questions : sûr ? juste ? ça marche ?\n1′ L’adulte pose quatre cartes d’idées pour Tom et Sami\n2′ Pour chaque carte, l’enfant lève ou baisse le pouce et dit pourquoi\n3′ L’adulte joue Sami, l’enfant dit « Si Tom …, alors … »\n8′ L’enfant choisit l’idée aux trois pouces en haut – « Celle-là peut partir. »\nIndispensable : trois questions, pouces pour chaque carte. Option : rôle de Sami. Serré : deux cartes."
+      }
     }
   },
   {
@@ -5380,6 +5412,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Kind wählt kleines Problem der Woche (erfunden ok, nichts aus der Familie)\n2′ Stufen abfliegen: Problem-Satz, Ziel, zwei Ideen, Start-Check\n5′ Kind plant Start: wer, wann, wo, welcher Satz\n7′ Fachkraft spielt Gegenüber, erst freundlich, dann „Nein“ – „Welche Idee nimmst du als Nächste?“\nMuss: Problem-Satz, Start-Plan, Rollenspiel. Kann: Runde mit „Nein“. Wird es knapp: eine Idee statt zwei."
+      },
+      "fr": {
+        "aufbau": "0′ L’enfant choisit un petit problème de la semaine (inventé permis, rien sur la famille)\n2′ Parcourir les étapes : problème, but, deux idées, contrôle\n5′ L’enfant prépare le départ : qui, quand, où, quelle phrase\n7′ L’adulte joue l’autre, d’abord gentil, puis « Non » – « Quelle idée prends-tu ensuite ? »\nIndispensable : phrase du problème, plan de départ, jeu de rôle. Option : tour avec « Non ». Serré : une idée au lieu de deux."
+      }
     }
   },
   {
@@ -7067,6 +7107,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft erzählt: Sami und Noah wollen beide Torwart sein – „Durchfallen gibt es nicht.“\n1′ Kind fliegt alle Stufen ab: Problem, Ziel, drei Ideen, Check, Start\n4′ Tausch: Kind führt Fachkraft durch „nur ein Tisch zum Malen“\n7′ Rückblick mit der Raketen-Mappe: leicht, üben, was bleibt\n9′ Kind nennt, wer hilft, wenn ein Problem zu groß ist\nMuss: alle Stufen, Hilfe holen. Kann: Tausch. Wird es knapp: zwei Ideen statt drei."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte raconte : Sami et Noah veulent être gardien – « On ne rate pas. »\n1′ L’enfant parcourt les étapes : problème, but, trois idées, contrôle, départ\n4′ On échange : l’enfant guide l’adulte (« une seule table pour dessiner »)\n7′ Retour avec les fiches : facile, à entraîner, ce qui reste\n9′ L’enfant dit qui l’aide quand un problème est trop grand\nIndispensable : toutes les étapes, chercher de l’aide. Option : échange. Serré : deux idées au lieu de trois."
+      }
     }
   },
   {

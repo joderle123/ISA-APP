@@ -465,6 +465,14 @@
         "Les deux veulent la même voiture. C’est un problème."
       ],
       "wennEsKippt": "Si raconter est difficile, l’enfant montre seulement les figurines et l’adulte dit la phrase. S’il ne veut pas sauter, il montre « c’est » avec le pouce en haut et « ce n’est pas » avec le pouce en bas. Deux tours suffisent."
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft stellt Affe Momo mit Ideen-Glühbirne vor – „Das ist Momo.“\n1′ Spiel „ist / ist nicht“: Kind hüpft oder hockt sich hin\n3′ Fachkraft stellt Mia, Tom und ein Spielzeugauto hin – „Was ist los?“\n5′ Kind erzählt, Fachkraft sagt es in zwei Sätzen\n6′ Tausch: Kind lässt zwei Figuren etwas wollen\nMuss: Auto-Szene, „Was ist los?“. Kann: Tausch. Wird es knapp: nur zwei „ist / ist nicht“-Sätze."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte présente Momo le singe et son ampoule à idées – « Voici Momo. »\n1′ Jeu « c’est / ce n’est pas » : l’enfant saute ou s’accroupit\n3′ L’adulte pose Mia, Tom et une petite voiture – « Que se passe-t-il ? »\n5′ L’enfant raconte, l’adulte redit en deux phrases\n6′ On échange : l’enfant fait vouloir quelque chose à deux figurines\nIndispensable : scène de la voiture, « Que se passe-t-il ? ». Option : échange. Serré : deux phrases « c’est / ce n’est pas » seulement."
+      }
     }
   },
   {
@@ -978,6 +986,14 @@
         "Chacun peut ressentir autre chose. Momo regarde toujours ça."
       ],
       "wennEsKippt": "Si l’enfant ne trouve pas d’émotion, l’adulte montre deux visages au choix (triste ou en colère) et demande : « Lequel va mieux ? » S’il n’aime pas imiter, il montre seulement les visages. Une scène suffit ; une émotion par personnage suffit."
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft macht vier Gefühlsgesichter vor, Kind macht nach\n2′ Tom hat das Auto, Mia schaut zu – „Wie fühlt sich Mia?“\n4′ Kind macht Mias und Toms Gesicht, sagt woran\n5′ Gleich oder anders? Kind zeigt es mit den Händen\n6′ Zwei Szenen: Amiras Turm fällt, Sami darf nicht mitspielen\n7′ Tausch: Fachkraft zeigt ein Gesicht, Kind rät\nMuss: Mia und Tom, gleich oder anders. Kann: Tausch. Wird es knapp: nur eine Szene."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte fait quatre visages, l’enfant les imite\n2′ Tom a la voiture, Mia regarde – « Comment se sent Mia ? »\n4′ L’enfant fait le visage de Mia, puis de Tom, et dit à quoi il le voit\n5′ Pareil ou différent ? L’enfant le montre avec les mains\n6′ Deux scènes : la tour d’Amira tombe, Sami ne peut pas jouer\n7′ On échange : l’adulte montre un visage, l’enfant devine\nIndispensable : Mia et Tom, pareil ou différent. Option : échange. Serré : une seule scène."
+      }
     }
   },
   {
@@ -1489,7 +1505,15 @@
       "wennEsKippt": "Si l’enfant n’a pas d’idée, l’adulte montre Momo : « Momo en a déjà une – tu veux deviner laquelle ? », ou l’enfant choisit une carte-idée sur la fiche. Une seule idée suffit : le premier rayon brille. Si une idée comme « taper » arrive, l’adulte dit calmement : « C’est une idée, on la pose là. On regardera plus tard ce qui se passe ensuite. »",
       "vorbereitung": "Découper une grande ampoule en papier jaune et préparer dix fils de laine jaune (environ 20 cm chacun)."
     },
-    "vorbereitung": "Eine große Glühbirne aus gelbem Papier ausschneiden und zehn gelbe Wollfäden (je etwa 20 cm) bereitlegen."
+    "vorbereitung": "Eine große Glühbirne aus gelbem Papier ausschneiden und zehn gelbe Wollfäden (je etwa 20 cm) bereitlegen.",
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft legt Papier-Glühbirne in die Mitte – „Was können sie tun?“\n1′ Mia und Tom wollen das Auto: Kind sagt Ideen\n2′ Je Idee legt Kind einen gelben Wollfaden als Strahl\n5′ Fachkraft fragt nach, jede Idee zählt – „Noch eine Idee!“\n7′ Fachkraft spielt Tom, Kind sagt ihm seine Ideen\nMuss: Strahlen legen, nichts bewerten. Kann: Tom-Rolle. Wird es knapp: Tom nur eine Idee sagen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte pose une grande ampoule en papier au milieu – « Que peuvent-ils faire ? »\n1′ Mia et Tom veulent la voiture : l’enfant dit des idées\n2′ Pour chaque idée, l’enfant pose un rayon de laine jaune\n5′ L’adulte relance, toute idée compte – « Encore une idée ! »\n7′ L’adulte joue Tom, l’enfant lui dit ses idées\nIndispensable : poser les rayons, ne rien juger. Option : rôle de Tom. Serré : une seule idée pour Tom."
+      }
+    }
   },
   {
     "id": "ki:kurs-probleme-4-6-s3-t1",
@@ -2007,6 +2031,14 @@
         "Si les deux sont contents, Momo lève le pouce. Sinon, il cherche encore une idée."
       ],
       "wennEsKippt": "Si l’enfant n’aime pas sauter, il montre « avant » et « après » avec le doigt sur les deux papiers. S’il ne trouve pas la suite, l’adulte montre deux visages au choix (triste ou content). Deux idées suffisent, une suite par idée suffit."
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft legt Zettel „vorher“ und „nachher“ auf den Boden\n1′ Fachkraft spielt vor: wegnehmen, fragen, abwechselnd spielen\n2′ Kind springt zu „nachher“, zeigt Mias und Toms Gesicht – „Was passiert dann?“\n5′ Momo gibt Daumen hoch oder sucht noch eine Idee\n6′ Tausch: Kind spielt eine Idee, Fachkraft zeigt Folgen\nMuss: drei Ideen mit Sprung. Kann: Tausch. Wird es knapp: zwei Ideen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte pose « avant » et « après » par terre\n1′ L’adulte joue : prendre, demander, jouer chacun son tour\n2′ L’enfant saute sur « après », montre les visages de Mia et Tom – « Et ensuite ? »\n5′ Momo lève le pouce ou cherche encore une idée\n6′ On échange : l’enfant joue une idée, l’adulte montre les suites\nIndispensable : trois idées avec le saut. Option : échange. Serré : deux idées."
+      }
     }
   },
   {
@@ -2544,6 +2576,14 @@
         "Maintenant, Noah dit non. Alors Momo a besoin d’encore une idée !"
       ],
       "wennEsKippt": "Si l’enfant ne veut pas parler d’une situation à lui, on reste avec Léa – c’est suffisant. S’il ne trouve pas de phrase, les deux répètent la phrase d’une carte de la fiche (« Je peux jouer avec vous ? »). Deux étapes du plan suffisent : qui et quelle phrase."
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft erzählt Leas Fall, oder Kind wählt eigenen; nichts erfragen\n2′ Beide gehen Momos vier Schritte durch\n4′ Kind plant Leas Idee: wer, wo, wann, welcher Satz\n5′ Figuren: Kind ist Lea, Fachkraft Noah; beim 2. Mal sagt Noah „Nein“ – „Noch eine Idee!“\n7′ Kind sagt, wo es seine Idee ausprobiert\nMuss: vier Schritte, Szene mit „Nein“. Kann: eigene Situation. Wird es knapp: Szene nur einmal, mit „Nein“."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte raconte l’histoire de Léa, ou l’enfant choisit la sienne ; aucune question\n2′ Les deux parcourent les quatre étapes de Momo\n4′ L’enfant planifie l’idée de Léa : qui, où, quand, quelle phrase\n5′ Figurines : l’enfant joue Léa, l’adulte Noah ; la 2e fois, Noah dit « Non » – « Encore une idée ! »\n7′ L’enfant dit où il essaiera son idée\nIndispensable : quatre étapes, scène avec « Non ». Option : situation de l’enfant. Serré : scène une fois, avec « Non »."
+      }
     }
   },
   {
@@ -3432,6 +3472,14 @@
         "Encore une idée… et ensuite ? Et qui t’aide quand ça ne marche pas tout seul ?"
       ],
       "wennEsKippt": "Si se souvenir est difficile, l’enfant montre seulement les images des fiches et l’adulte dit la question qui va avec. S’il ne veut pas faire de gestes, il montre les quatre images du chemin de Momo. Deux étapes avec la marionnette suffisent."
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft legt die fünf Blätter aus, Kind wählt sein liebstes\n2′ Fachkraft spielt Puppe im Streit um den roten Stift\n3′ Kind hilft mit Gesten: Lupe, Herz, Faust auf, Sprung\n6′ Puppe findet Ideen, wählt eine, bei der beide froh sind\n7′ Kind sagt, wer hilft, wenn es allein nicht klappt\nMuss: Streit mit Gesten, Helfer nennen. Kann: Rückblick. Wird es knapp: nur das liebste Blatt zeigen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte pose les cinq fiches, l’enfant choisit sa préférée\n2′ L’adulte joue une marionnette qui se dispute pour le crayon rouge\n3′ L’enfant aide avec les gestes : loupe, cœur, poing qui s’ouvre, saut\n6′ La marionnette trouve des idées, choisit celle qui rend les deux contents\n7′ L’enfant dit qui l’aide quand ça ne marche pas tout seul\nIndispensable : dispute avec les gestes, qui m’aide. Option : retour sur les fiches. Serré : seulement la fiche préférée."
+      }
     }
   },
   {

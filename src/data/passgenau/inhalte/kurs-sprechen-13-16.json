@@ -620,6 +620,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt Megafon: fünf Teile, heute die Meinung\n1′ Zettel mit drei Prüffragen: nachprüfbar? verschieden denkbar? was macht es mit mir?\n2′ Drei Aussagen zur Handy-Pause: Jugendliche/r ordnet Fakt, Meinung, Gefühl\n5′ Tausch: Jugendliche/r nennt Fakt, Meinung, Gefühl zu eigenem Thema\n7′ Fachkraft lässt gespielt eine Meinung als Fakt durch, Jugendliche/r hält an – „Wie könnten wir es prüfen?“\nMuss: drei Aussagen einordnen. Kann: absichtlicher Fehler. Wird es knapp: zwei Aussagen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre le mégaphone : cinq parties, aujourd’hui l’opinion\n1′ Papier avec trois questions : vérifiable ? on peut penser autrement ? ça me fait quoi ?\n2′ Trois phrases sur les portables à la récré : le/la jeune classe fait, opinion, émotion\n5′ On échange : le/la jeune donne fait, opinion, émotion sur un sujet choisi\n7′ L’adulte laisse passer exprès une opinion comme fait, le/la jeune l’arrête – « Comment pourrait-on le vérifier ? »\nIndispensable : classer les trois phrases. Option : erreur exprès. Serré : deux phrases."
+      }
     }
   },
   {
@@ -1939,6 +1947,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft legt drei Zettel: Behauptung – Grund – Beispiel\n1′ Fachkraft als Ben sagt nur „Schule erst um 9“; Jugendliche/r fragt Warum? Woran sieht man das?\n4′ Umgedreht: Jugendliche/r legt eigene Behauptung mit Grund und Beispiel, Fachkraft fragt nach\n7′ Beide prüfen einen schwachen Grund – „Oder sagt er nur dasselbe noch einmal?“\nMuss: Ben befragen, eigene drei Zettel. Kann: schwacher Grund. Wird es knapp: Ben kurz."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte pose trois papiers : affirmation – raison – exemple\n1′ L’adulte en Ben dit seulement « cours à 9 h » ; le/la jeune demande pourquoi, à quoi on le voit\n4′ On renverse : le/la jeune pose sa propre affirmation, raison et exemple, l’adulte questionne\n7′ Ensemble, examiner une raison faible – « Ou est-ce qu’elle redit seulement la même chose ? »\nIndispensable : questionner Ben, ses trois papiers. Option : raison faible. Serré : Ben en bref."
+      }
     }
   },
   {
@@ -3183,6 +3199,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft als Yusuf will Kletterhalle, Jugendliche/r als Lina will Hallenbad\n1′ Runde 1 absichtlich schlecht: Lina unterbricht\n3′ Runde 2: Lina fasst zusammen, dann „Ich sehe das anders, weil …“\n6′ Runde 3 mit getauschten Rollen\n8′ Beide suchen einen Punkt, in dem sie recht geben\nMuss: Runde 2 mit Zusammenfassen. Kann: Rollentausch. Wird es knapp: Runde 1 kurz."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte en Yusuf veut l’escalade, le/la jeune en Lina veut la piscine\n1′ Tour 1 raté exprès : Lina interrompt\n3′ Tour 2 : Lina reformule, puis « Moi, je vois ça autrement, parce que … »\n6′ Tour 3, rôles échangés\n8′ Chacun cherche un point où il donne raison à l’autre\nIndispensable : tour 2 avec reformulation. Option : échange des rôles. Serré : tour 1 en bref."
+      }
     }
   },
   {
@@ -4365,6 +4389,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt Finns zwei Druck-Nachrichten an Chloe\n1′ Jugendliche/r zeigt, was Druck ist und was ein Grund wäre\n3′ Jugendliche/r überzeugt Chloe mit Grund, Beispiel, Angebot; Chloe sagt erst nein – „Ein Nein ist keine Niederlage.“\n7′ Tausch: Fachkraft macht gespielt Druck, Jugendliche/r sagt Stopp\nMuss: Druck erkennen, überzeugen mit Angebot. Kann: Tausch mit Stopp. Wird es knapp: nur eine Druck-Nachricht."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre les deux messages de pression de Finn à Chloe\n1′ Le/la jeune montre ce qui est pression et ce qui serait une raison\n3′ Le/la jeune convainc Chloe : raison, exemple, proposition ; Chloe dit d’abord non – « Un non n’est pas une défaite. »\n7′ On échange : l’adulte met la pression pour de faux, le/la jeune dit stop\nIndispensable : repérer la pression, convaincre avec une proposition. Option : échange avec stop. Serré : un seul message."
+      }
     }
   },
   {
@@ -5554,6 +5586,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft nennt kurz Artikel 12 der UN-Kinderrechtskonvention\n1′ Jugendliche/r wählt kleines Anliegen (erfunden geht, z. B. Neles ruhiger Raum)\n2′ Plan: wer, wann, wo, Satz (Behauptung, Grund, Beispiel, Bitte), Plan B\n6′ Fachkraft spielt Gegenüber, erst freundlich, dann „Keine Zeit“ – „Du kannst jederzeit Stopp sagen.“\n8′ Fachkraft nennt Gelungenes, Jugendliche/r was er/sie ändert\nMuss: Plan mit Plan B, Rollenspiel. Kann: Artikel 12. Wird es knapp: Satz ohne Beispiel."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte rappelle brièvement l’article 12 de la Convention de l’ONU\n1′ Le/la jeune choisit une petite demande (inventée possible, p. ex. la salle calme de Nele)\n2′ Plan : qui, quand, où, phrase (affirmation, raison, exemple, demande), plan B\n6′ L’adulte joue l’autre, aimable puis « Pas le temps » – « Tu peux dire stop à tout moment. »\n8′ L’adulte dit ce qui a marché, le/la jeune ce qu’il/elle change\nIndispensable : plan avec plan B, jeu de rôle. Option : article 12. Serré : phrase sans exemple."
+      }
     }
   },
   {
@@ -7048,6 +7088,14 @@
       "lesen": 2,
       "schreiben": 2,
       "bild": 1
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Beide blättern durch die Megafon-Mappe\n1′ Jugendliche/r zeigt hilfreichstes und schwächstes Blatt, sagt woran – „Mal ehrlich aus, nicht freundlich.“\n4′ Fachkraft ergänzt ein Beispiel: Janas Nachricht, Bens Stufen, Neles Plan\n6′ Fachkraft erklärt in zwei Sätzen die Reihenfolge der Teile\n8′ Jugendliche/r nennt Hilfe: Klassenlehrkraft, Schülervertretung, Vertrauensperson, Beratung\nMuss: Rückblick, Hilfe nennen. Kann: Beispiel der Fachkraft. Wird es knapp: nur das hilfreichste Blatt."
+      },
+      "fr": {
+        "aufbau": "0′ Les deux feuillettent le dossier du mégaphone\n1′ Le/la jeune montre la fiche la plus utile et la moins utile, et à quoi il/elle le voit – « Colorie honnêtement, pas poliment. »\n4′ L’adulte ajoute un exemple : message de Jana, niveaux de Ben, plan de Nele\n6′ L’adulte explique en deux phrases l’ordre des parties\n8′ Le/la jeune nomme qui aide : titulaire, comité des élèves, personne de confiance, conseil\nIndispensable : retour, qui aide. Option : exemple de l’adulte. Serré : seulement la fiche la plus utile."
+      }
     }
   },
   {

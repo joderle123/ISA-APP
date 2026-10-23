@@ -515,6 +515,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt Schatzkiste: sechs Steine, heute der Stärken-Stein\n1′ Fachkraft spielt Stärken ohne Worte, Kind rät, sucht das Wort\n4′ Tausch: Kind spielt, Fachkraft rät\n6′ Kind nennt zwei, drei passende Stärken („ein bisschen“ zählt) – „Es geht nicht darum, der Beste zu sein.“\n8′ Fachkraft nennt eine Stärke, die sie heute sah, mit Beispiel\nMuss: Pantomime, eigene Stärken, Stärke mit Beispiel. Kann: Tausch. Wird es knapp: Einkreisen später aufs Blatt."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte présente le coffre : six pierres, aujourd’hui la pierre des forces\n1′ L’adulte mime une force sans parler, l’enfant devine et cherche le mot\n4′ On échange : l’enfant mime, l’adulte devine\n6′ L’enfant dit deux ou trois forces à lui (« un peu » compte) – « Il ne s’agit pas d’être le meilleur. »\n8′ L’adulte nomme une force vue chez l’enfant, avec un exemple\nIndispensable : mime, forces de l’enfant, force avec exemple. Option : échange. Serré : entourer plus tard sur la fiche."
+      }
     }
   },
   {
@@ -1796,6 +1804,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft zeigt einen Beweis an sich: ruhig beim Bus-Warten\n2′ Fachkraft nennt Stärke, Kind nennt Beweis für Sami oder Mia; beide klatschen\n5′ Dann Beweise für sich selbst, wenn es mag – „Ein Beweis darf klein sein.“\n8′ Kind hört zwei Sätze: Welcher behauptet, welcher beweist?\nMuss: Beweis-Spiel mit Figuren. Kann: eigene Beweise. Wird es knapp: Figuren-Runde kürzer."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte montre une preuve sur lui-même : calme en attendant le bus\n2′ L’adulte nomme une force, l’enfant donne une preuve pour Sami ou Mia ; on applaudit\n5′ Puis pour lui-même, s’il veut – « Une preuve peut être petite. »\n8′ L’enfant écoute deux phrases : laquelle affirme, laquelle prouve ?\nIndispensable : jeu de la preuve avec les personnages. Option : preuves personnelles. Serré : tour des personnages plus court."
+      }
     }
   },
   {
@@ -2856,6 +2872,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft erklärt: Ein Kompliment ist echt und nennt etwas Bestimmtes\n2′ Kind lobt Figur und Fachkraft, sie sagt „Danke, das freut mich.“\n5′ Fachkraft sagt dem Kind zwei, drei echte Komplimente, schreibt sie auf Kärtchen\n8′ Kind antwortet „Danke“, wählt Karte für die Schatzmappe\nMuss: geben und annehmen; Verhalten, nicht Aussehen. Kann: Figur vom Blatt. Wird es knapp: zwei Komplimente."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte explique : un compliment est vrai et dit quelque chose de précis\n2′ L’enfant complimente un personnage et l’adulte, qui répond « Merci, ça me fait plaisir. »\n5′ L’adulte fait à l’enfant deux ou trois vrais compliments, les écrit sur des cartes\n8′ L’enfant répond « Merci », choisit la carte pour la chemise du trésor\nIndispensable : faire et recevoir ; le comportement, pas l’apparence. Option : personnage de la fiche. Serré : deux compliments."
+      }
     }
   },
   {
@@ -3963,6 +3987,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft baut einhändig Becher-Pyramide, scheitert – „Das klappt noch nicht.“\n2′ Fachkraft probiert neue Ideen, beim dritten Versuch klappt es fast\n3′ Kind baut drei Becher, nach Umfallen „Noch nicht – ich probiere …“\n6′ Kind macht aus drei Sätzen „noch nicht“-Sätze\n9′ Fachkraft sagt: Nicht alles muss man können\nMuss: Becher-Spiel mit „noch nicht“. Kann: alle drei Sätze. Wird es knapp: nur ein Satz."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte fait une pyramide de gobelets d’une main, échoue – « Ça ne marche pas encore. »\n2′ L’adulte essaie autrement ; au 3e essai, ça marche presque\n3′ L’enfant monte trois gobelets ; après chaque chute : « Pas encore – j’essaie … »\n6′ L’enfant transforme trois phrases en phrases « pas encore »\n9′ L’adulte dit : on n’a pas besoin de tout savoir faire\nIndispensable : gobelets avec « pas encore ». Option : les trois phrases. Serré : une seule phrase."
+      }
     }
   },
   {
@@ -5146,6 +5178,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft sagt Stolz- und Angeber-Satz, Kind sagt, wie sie klingen\n2′ Kind sucht, wofür es sich angestrengt hat (erfunden erlaubt)\n3′ Kind sagt „Ich bin stolz, weil ich …“ – „Das ist kein Angeben.“\n5′ Kind plant Situation dieser Woche: wer, wann, wo, welcher Satz\n7′ Fachkraft spielt die andere Person freundlich, fragt: „Wie war das für dich?“\nMuss: Stolz statt Angeben, Stolz-Satz. Kann: zweiter Durchgang. Wird es knapp: nur den Satz planen."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte dit une phrase de fierté et une de vantardise, l’enfant dit comment elles sonnent\n2′ L’enfant cherche pour quoi il s’est donné du mal (inventé permis)\n3′ Il dit « Je suis fier/fière parce que … » – « Ce n’est pas se vanter. »\n5′ L’enfant prépare une situation de la semaine : qui, quand, où, quelle phrase\n7′ L’adulte joue l’autre avec bienveillance, puis demande « Comment c’était pour toi ? »\nIndispensable : fierté, pas vantardise. Option : rejouer. Serré : préparer seulement la phrase."
+      }
     }
   },
   {
@@ -6842,6 +6882,14 @@
       "lesen": 1,
       "schreiben": 1,
       "bild": 2
+    },
+    "hilfen": {
+      "de": {
+        "aufbau": "0′ Fachkraft öffnet mit dem Kind die Schatzmappe, fünf Blätter nebeneinander\n1′ Kind sagt je Stein, was er gebracht hat; leichtester, schwerster\n5′ Kind hält eine Stärke mit Beweis fest, liest sie vor\n7′ Fachkraft sagt ein letztes echtes Kompliment\n8′ Kind nennt, wer es erinnern kann – „Eine Person genügt.“\nMuss: Stärke mit Beweis, Erinnerungs-Person. Kann: alle fünf Steine. Wird es knapp: nur leichtester und schwerster Stein."
+      },
+      "fr": {
+        "aufbau": "0′ L’adulte ouvre la chemise du trésor avec l’enfant, cinq fiches côte à côte\n1′ Pour chaque pierre, l’enfant dit ce qu’elle a apporté ; la plus facile, la plus difficile\n5′ L’enfant note une force avec sa preuve, la lit à l’adulte\n7′ L’adulte fait un dernier vrai compliment\n8′ L’enfant dit qui peut le lui rappeler – « Une personne suffit. »\nIndispensable : force avec preuve, une personne. Option : les cinq pierres. Serré : pierre la plus facile et la plus difficile."
+      }
     }
   },
   {
