@@ -242,6 +242,9 @@ function pruefeBasis(e: KatalogEintrag, c: Kontext, o: Pruefung): string | null 
   if (c.sprache === 'fr' && e.typ === 'schritt' && !e.fr && !e.id.startsWith('pg:') && locker < 4) return 'nur auf Deutsch'
   // setzt eine frühere Kursstunde voraus („der Umschlag aus der letzten Stunde“, „nach der Wochen-Mission fragen“)
   if (e.typ === 'schritt' && intern(c.k).vorlauf.has(e.id)) return 'braucht eine Stunde davor'
+  // bis 5 Jahre plant Weg 2 ohne Blatt – eine Kurs-Sitzung trägt ihr Material aber oft auf dem Blatt (Bildkarten zum
+  // Ausschneiden), also nicht als Einzelstunde ohne Blatt (Welle 3b, 23.10.2026: Achtsamkeit 4–6 kam ohne seine Karten)
+  if (o.rolle === 'kern' && e.typ === 'schritt' && !!e.linie?.id.startsWith('kurs-') && c.weg === 'schnell' && c.alter <= 5 && c.a.blatt !== 'mit') return 'Kurs-Sitzung ohne ihr Blatt'
   // Textmerkmale (Blind-Bewertung 9.10., einzel.ts): was gedruckt wird, muss in eine Einzelstunde für dieses Kind passen
   const tm = merkmaleVon(c.k, e)
   if (tm.size) {
