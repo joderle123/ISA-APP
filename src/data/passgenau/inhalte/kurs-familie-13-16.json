@@ -235,7 +235,7 @@
        "art": "bild",
        "bild": "figur:yusuf:verwirrt:nachdenken",
        "groesse": "s",
-       "text": "Arjun, 13, 6C",
+       "text": "Arjun, 13",
        "ausrichtung": "mitte"
       }
      ]
@@ -302,7 +302,7 @@
        "art": "bild",
        "bild": "figur:yusuf:verwirrt:nachdenken",
        "groesse": "s",
-       "text": "Arjun, 13, 6C",
+       "text": "Arjun, 13",
        "ausrichtung": "mitte"
       }
      ]
@@ -401,7 +401,7 @@
       "karten": [
        "Arjun: eigenes Zimmer in Junglinster – zum ersten Mal.",
        "Arjun: sein Cricket-Schläger hängt an der Tür, wie in Kirchberg.",
-       "Arjun: neue Klasse 6C. Kann schon „Moien, wéi geet et?“",
+       "Arjun: neue Klasse, Unterricht auf Englisch. Kann schon „Moien, wéi geet et?“",
        "Spiel-Statistik: letztes Duo Arjun + Dev vor 6 Wochen. Davor fast immer abends.",
        "Arjuns Handy-Notiz: „Dev hat sich für Papa entschieden. Okay.“",
        "Gilles: zwei Zimmer, zwei Zahnbürsten – eine Woche Junglinster, eine Woche Grevenmacher.",
@@ -430,7 +430,7 @@
      {
       "titel": "Nur für dich: Lösung und Regie",
       "karten": [
-       "Neu: Zimmer, 6C, letztes Duo, Notiz, Gilles’ zwei Zimmer, Martas Schreibtisch · Bleibt: Schläger, Kumpels, Polnisch. Jeder Platz mit Grund zählt.",
+       "Neu: Zimmer, Klasse, letztes Duo, Notiz, Gilles’ zwei Zimmer, Martas Schreibtisch · Bleibt: Schläger, Kumpels, Polnisch. Jeder Platz mit Grund zählt.",
        "Arjun: „all good“ passt nicht zu Statistik und Notiz. Zum Beispiel: „froh über sein Zimmer und gleichzeitig einsam ohne Dev.“",
        "Wissen: Die meisten Jugendlichen kommen nach einer Trennung der Eltern mit der Zeit gut zurecht (Kelly & Emery, 2003).",
        "Hocke freiwillig, Knie nicht über die Zehen; Alternative Einbeinstand. Nicht kommentieren, wie lange jemand hält.",
@@ -489,7 +489,7 @@
       "karten": [
        "Arjun : sa propre chambre à Junglinster – pour la première fois.",
        "Arjun : sa batte de cricket est accrochée à la porte, comme à Kirchberg.",
-       "Arjun : nouvelle classe, 6C. Il sait déjà dire « Moien, wéi geet et? »",
+       "Arjun : nouvelle classe, cours en anglais. Il sait déjà dire « Moien, wéi geet et? »",
        "Stats du jeu : dernier duo Arjun + Dev il y a 6 semaines. Avant, presque tous les soirs.",
        "Note dans le téléphone d’Arjun : « Dev a choisi papa. Ok. »",
        "Gilles : deux chambres, deux brosses à dents – une semaine Junglinster, une semaine Grevenmacher.",
@@ -518,7 +518,7 @@
      {
       "titel": "Pour l’adulte : solution et mise en scène",
       "karten": [
-       "Nouveau : chambre, 6C, dernier duo, note, deux chambres de Gilles, bureau de Marta · Reste : batte, potes, polonais. Chaque place avec une raison compte.",
+       "Nouveau : chambre, classe, dernier duo, note, deux chambres de Gilles, bureau de Marta · Reste : batte, potes, polonais. Chaque place avec une raison compte.",
        "Arjun : « all good » ne colle pas avec les stats et la note. Par ex. : « content de sa chambre et en même temps seul sans Dev ».",
        "À savoir : la plupart des jeunes s’adaptent bien, avec le temps, à la séparation de leurs parents (Kelly & Emery, 2003).",
        "Position accroupie facultative, genoux pas au-delà des orteils ; sinon sur une jambe. Ne pas commenter la durée tenue.",
@@ -678,7 +678,7 @@
        "art": "bild",
        "bild": "figur:yusuf:verwirrt:nachdenken",
        "groesse": "s",
-       "text": "Arjun, 13, 6C",
+       "text": "Arjun, 13",
        "ausrichtung": "mitte"
       }
      ]
@@ -756,7 +756,7 @@
        "art": "bild",
        "bild": "figur:yusuf:verwirrt:nachdenken",
        "groesse": "s",
-       "text": "Arjun, 13, 6C",
+       "text": "Arjun, 13",
        "ausrichtung": "mitte"
       }
      ]
@@ -866,7 +866,7 @@
       "karten": [
        "Arjun: eigenes Zimmer in Junglinster – zum ersten Mal.",
        "Arjun: sein Cricket-Schläger hängt an der Tür, wie in Kirchberg.",
-       "Arjun: neue Klasse 6C. Kann schon „Moien, wéi geet et?“",
+       "Arjun: neue Klasse, Unterricht auf Englisch. Kann schon „Moien, wéi geet et?“",
        "Spiel-Statistik: letztes Duo Arjun + Dev vor 6 Wochen. Davor fast immer abends.",
        "Arjuns Handy-Notiz: „Dev hat sich für Papa entschieden. Okay.“",
        "Gilles: zwei Zimmer, zwei Zahnbürsten – eine Woche Junglinster, eine Woche Grevenmacher.",
@@ -895,7 +895,7 @@
      {
       "titel": "Nur für dich: Lösung und Regie",
       "karten": [
-       "Neu: Zimmer, 6C, letztes Duo, Notiz, Gilles’ zwei Zimmer, Martas Schreibtisch · Bleibt: Schläger, Kumpels, Polnisch. Jeder Platz mit Grund zählt.",
+       "Neu: Zimmer, Klasse, letztes Duo, Notiz, Gilles’ zwei Zimmer, Martas Schreibtisch · Bleibt: Schläger, Kumpels, Polnisch. Jeder Platz mit Grund zählt.",
        "Arjun: „all good“ passt nicht zu Statistik und Notiz. Zum Beispiel: „froh über sein Zimmer und gleichzeitig einsam ohne Dev.“",
        "Wissen: Die meisten Jugendlichen kommen nach einer Trennung der Eltern mit der Zeit gut zurecht (Kelly & Emery, 2003).",
        "Hocke freiwillig, Knie nicht über die Zehen; Alternative Einbeinstand. Nicht kommentieren, wie lange jemand hält.",
@@ -954,7 +954,7 @@
       "karten": [
        "Arjun : sa propre chambre à Junglinster – pour la première fois.",
        "Arjun : sa batte de cricket est accrochée à la porte, comme à Kirchberg.",
-       "Arjun : nouvelle classe, 6C. Il sait déjà dire « Moien, wéi geet et? »",
+       "Arjun : nouvelle classe, cours en anglais. Il sait déjà dire « Moien, wéi geet et? »",
        "Stats du jeu : dernier duo Arjun + Dev il y a 6 semaines. Avant, presque tous les soirs.",
        "Note dans le téléphone d’Arjun : « Dev a choisi papa. Ok. »",
        "Gilles : deux chambres, deux brosses à dents – une semaine Junglinster, une semaine Grevenmacher.",
@@ -983,7 +983,7 @@
      {
       "titel": "Pour l’adulte : solution et mise en scène",
       "karten": [
-       "Nouveau : chambre, 6C, dernier duo, note, deux chambres de Gilles, bureau de Marta · Reste : batte, potes, polonais. Chaque place avec une raison compte.",
+       "Nouveau : chambre, classe, dernier duo, note, deux chambres de Gilles, bureau de Marta · Reste : batte, potes, polonais. Chaque place avec une raison compte.",
        "Arjun : « all good » ne colle pas avec les stats et la note. Par ex. : « content de sa chambre et en même temps seul sans Dev ».",
        "À savoir : la plupart des jeunes s’adaptent bien, avec le temps, à la séparation de leurs parents (Kelly & Emery, 2003).",
        "Position accroupie facultative, genoux pas au-delà des orteils ; sinon sur une jambe. Ne pas commenter la durée tenue.",
@@ -1147,7 +1147,7 @@
       "karten": [
        "Arjun: eigenes Zimmer in Junglinster – zum ersten Mal.",
        "Arjun: sein Cricket-Schläger hängt an der Tür, wie in Kirchberg.",
-       "Arjun: neue Klasse 6C. Kann schon „Moien, wéi geet et?“",
+       "Arjun: neue Klasse, Unterricht auf Englisch. Kann schon „Moien, wéi geet et?“",
        "Spiel-Statistik: letztes Duo Arjun + Dev vor 6 Wochen. Davor fast immer abends.",
        "Arjuns Handy-Notiz: „Dev hat sich für Papa entschieden. Okay.“"
       ]
@@ -1209,7 +1209,7 @@
       "karten": [
        "Arjun : sa propre chambre à Junglinster – pour la première fois.",
        "Arjun : sa batte de cricket est accrochée à la porte, comme à Kirchberg.",
-       "Arjun : nouvelle classe, 6C. Il sait déjà dire « Moien, wéi geet et? »",
+       "Arjun : nouvelle classe, cours en anglais. Il sait déjà dire « Moien, wéi geet et? »",
        "Stats du jeu : dernier duo Arjun + Dev il y a 6 semaines. Avant, presque tous les soirs.",
        "Note dans le téléphone d’Arjun : « Dev a choisi papa. Ok. »"
       ]
@@ -1379,7 +1379,7 @@
       "karten": [
        "Arjun: eigenes Zimmer in Junglinster – zum ersten Mal.",
        "Arjun: sein Cricket-Schläger hängt an der Tür, wie in Kirchberg.",
-       "Arjun: neue Klasse 6C. Kann schon „Moien, wéi geet et?“",
+       "Arjun: neue Klasse, Unterricht auf Englisch. Kann schon „Moien, wéi geet et?“",
        "Spiel-Statistik: letztes Duo Arjun + Dev vor 6 Wochen. Davor fast immer abends.",
        "Arjuns Handy-Notiz: „Dev hat sich für Papa entschieden. Okay.“"
       ]
@@ -1457,7 +1457,7 @@
       "karten": [
        "Arjun : sa propre chambre à Junglinster – pour la première fois.",
        "Arjun : sa batte de cricket est accrochée à la porte, comme à Kirchberg.",
-       "Arjun : nouvelle classe, 6C. Il sait déjà dire « Moien, wéi geet et? »",
+       "Arjun : nouvelle classe, cours en anglais. Il sait déjà dire « Moien, wéi geet et? »",
        "Stats du jeu : dernier duo Arjun + Dev il y a 6 semaines. Avant, presque tous les soirs.",
        "Note dans le téléphone d’Arjun : « Dev a choisi papa. Ok. »"
       ]
@@ -3194,10 +3194,10 @@
       "karten": [
        "15:41 Mama: „Sag deinem Vater, die Zahnarzt-Rechnung ist noch offen.“",
        "15:52 Papa: „Und? Wer war am Wochenende alles bei euch?“",
-       "16:03 Mama: „Findest du nicht auch, dass Papa sich nie an Absprachen hält?“",
+       "16:03 Mama: „Papa hält sich nie an Absprachen, oder?“",
        "16:27 Papa an der Haltestelle: „Was hat deine Mutter über mich gesagt?“",
        "16:30 Papa: „Sag ihr, dass ich Samstag nicht tausche.“",
-       "16:40 Mama: „Du bist alt genug. Du entscheidest, wo du Samstag bist.“"
+       "16:40 Mama: „Du bist alt genug. Samstag entscheidest du.“"
       ]
      },
      {
@@ -3212,7 +3212,7 @@
       "titel": "Raus-Satz in drei Teilen",
       "karten": [
        "1 Beziehung: „Ich hab dich gern.“ / „Ich bin gern bei dir.“",
-       "2 Zurückgeben: „Das klärst du bitte direkt mit ihr.“ / „Dazu sag ich nichts.“",
+       "2 Zurückgeben: „Klär das bitte direkt mit ihr.“ / „Dazu sag ich nichts.“",
        "3 Umlenken: „Erzähl mal von deiner Woche.“ / „Wollen wir los?“"
       ]
      },
@@ -3275,12 +3275,12 @@
      {
       "titel": "Les messages de Gilles dans le bus",
       "karten": [
-       "15 h 41 maman : « Dis à ton père que la facture du dentiste n’est pas payée. »",
-       "15 h 52 papa : « Alors ? Qui est passé chez vous ce week-end ? »",
-       "16 h 03 maman : « Tu ne trouves pas que papa ne respecte jamais ce qu’on a décidé ? »",
+       "15 h 41 maman : « Dis à ton père que le dentiste n’est pas payé. »",
+       "15 h 52 papa : « Alors ? Qui était chez vous ce week-end ? »",
+       "16 h 03 maman : « Ton père ne tient jamais parole, non ? »",
        "16 h 27 papa, à l’arrêt : « Qu’est-ce que ta mère a dit sur moi ? »",
        "16 h 30 papa : « Dis-lui que je n’échange pas samedi. »",
-       "16 h 40 maman : « Tu es assez grand. C’est toi qui décides où tu es samedi. »"
+       "16 h 40 maman : « Tu es assez grand. Samedi, c’est toi qui décides. »"
       ]
      },
      {
@@ -3295,7 +3295,7 @@
       "titel": "La phrase en trois morceaux",
       "karten": [
        "1 Le lien : « Je t’aime. » / « J’aime être avec toi. »",
-       "2 Rendre : « Ça, tu le règles directement avec elle. » / « Je ne dis rien là-dessus. »",
+       "2 Rendre : « Règle ça directement avec elle. » / « Je ne dis rien là-dessus. »",
        "3 Changer de sujet : « Raconte-moi ta semaine. » / « On y va ? »"
       ]
      },
@@ -3659,10 +3659,10 @@
       "karten": [
        "15:41 Mama: „Sag deinem Vater, die Zahnarzt-Rechnung ist noch offen.“",
        "15:52 Papa: „Und? Wer war am Wochenende alles bei euch?“",
-       "16:03 Mama: „Findest du nicht auch, dass Papa sich nie an Absprachen hält?“",
+       "16:03 Mama: „Papa hält sich nie an Absprachen, oder?“",
        "16:27 Papa an der Haltestelle: „Was hat deine Mutter über mich gesagt?“",
        "16:30 Papa: „Sag ihr, dass ich Samstag nicht tausche.“",
-       "16:40 Mama: „Du bist alt genug. Du entscheidest, wo du Samstag bist.“"
+       "16:40 Mama: „Du bist alt genug. Samstag entscheidest du.“"
       ]
      },
      {
@@ -3677,7 +3677,7 @@
       "titel": "Raus-Satz in drei Teilen",
       "karten": [
        "1 Beziehung: „Ich hab dich gern.“ / „Ich bin gern bei dir.“",
-       "2 Zurückgeben: „Das klärst du bitte direkt mit ihr.“ / „Dazu sag ich nichts.“",
+       "2 Zurückgeben: „Klär das bitte direkt mit ihr.“ / „Dazu sag ich nichts.“",
        "3 Umlenken: „Erzähl mal von deiner Woche.“ / „Wollen wir los?“"
       ]
      },
@@ -3740,12 +3740,12 @@
      {
       "titel": "Les messages de Gilles dans le bus",
       "karten": [
-       "15 h 41 maman : « Dis à ton père que la facture du dentiste n’est pas payée. »",
-       "15 h 52 papa : « Alors ? Qui est passé chez vous ce week-end ? »",
-       "16 h 03 maman : « Tu ne trouves pas que papa ne respecte jamais ce qu’on a décidé ? »",
+       "15 h 41 maman : « Dis à ton père que le dentiste n’est pas payé. »",
+       "15 h 52 papa : « Alors ? Qui était chez vous ce week-end ? »",
+       "16 h 03 maman : « Ton père ne tient jamais parole, non ? »",
        "16 h 27 papa, à l’arrêt : « Qu’est-ce que ta mère a dit sur moi ? »",
        "16 h 30 papa : « Dis-lui que je n’échange pas samedi. »",
-       "16 h 40 maman : « Tu es assez grand. C’est toi qui décides où tu es samedi. »"
+       "16 h 40 maman : « Tu es assez grand. Samedi, c’est toi qui décides. »"
       ]
      },
      {
@@ -3760,7 +3760,7 @@
       "titel": "La phrase en trois morceaux",
       "karten": [
        "1 Le lien : « Je t’aime. » / « J’aime être avec toi. »",
-       "2 Rendre : « Ça, tu le règles directement avec elle. » / « Je ne dis rien là-dessus. »",
+       "2 Rendre : « Règle ça directement avec elle. » / « Je ne dis rien là-dessus. »",
        "3 Changer de sujet : « Raconte-moi ta semaine. » / « On y va ? »"
       ]
      },
@@ -3934,10 +3934,10 @@
       "karten": [
        "15:41 Mama: „Sag deinem Vater, die Zahnarzt-Rechnung ist noch offen.“",
        "15:52 Papa: „Und? Wer war am Wochenende alles bei euch?“",
-       "16:03 Mama: „Findest du nicht auch, dass Papa sich nie an Absprachen hält?“",
+       "16:03 Mama: „Papa hält sich nie an Absprachen, oder?“",
        "16:27 Papa an der Haltestelle: „Was hat deine Mutter über mich gesagt?“",
        "16:30 Papa: „Sag ihr, dass ich Samstag nicht tausche.“",
-       "16:40 Mama: „Du bist alt genug. Du entscheidest, wo du Samstag bist.“"
+       "16:40 Mama: „Du bist alt genug. Samstag entscheidest du.“"
       ]
      },
      {
@@ -4003,12 +4003,12 @@
      {
       "titel": "Les messages de Gilles dans le bus",
       "karten": [
-       "15 h 41 maman : « Dis à ton père que la facture du dentiste n’est pas payée. »",
-       "15 h 52 papa : « Alors ? Qui est passé chez vous ce week-end ? »",
-       "16 h 03 maman : « Tu ne trouves pas que papa ne respecte jamais ce qu’on a décidé ? »",
+       "15 h 41 maman : « Dis à ton père que le dentiste n’est pas payé. »",
+       "15 h 52 papa : « Alors ? Qui était chez vous ce week-end ? »",
+       "16 h 03 maman : « Ton père ne tient jamais parole, non ? »",
        "16 h 27 papa, à l’arrêt : « Qu’est-ce que ta mère a dit sur moi ? »",
        "16 h 30 papa : « Dis-lui que je n’échange pas samedi. »",
-       "16 h 40 maman : « Tu es assez grand. C’est toi qui décides où tu es samedi. »"
+       "16 h 40 maman : « Tu es assez grand. Samedi, c’est toi qui décides. »"
       ]
      },
      {
@@ -4189,10 +4189,10 @@
       "karten": [
        "15:41 Mama: „Sag deinem Vater, die Zahnarzt-Rechnung ist noch offen.“",
        "15:52 Papa: „Und? Wer war am Wochenende alles bei euch?“",
-       "16:03 Mama: „Findest du nicht auch, dass Papa sich nie an Absprachen hält?“",
+       "16:03 Mama: „Papa hält sich nie an Absprachen, oder?“",
        "16:27 Papa an der Haltestelle: „Was hat deine Mutter über mich gesagt?“",
        "16:30 Papa: „Sag ihr, dass ich Samstag nicht tausche.“",
-       "16:40 Mama: „Du bist alt genug. Du entscheidest, wo du Samstag bist.“"
+       "16:40 Mama: „Du bist alt genug. Samstag entscheidest du.“"
       ]
      },
      {
@@ -4207,7 +4207,7 @@
       "titel": "Raus-Satz in drei Teilen",
       "karten": [
        "1 Beziehung: „Ich hab dich gern.“ / „Ich bin gern bei dir.“",
-       "2 Zurückgeben: „Das klärst du bitte direkt mit ihr.“ / „Dazu sag ich nichts.“",
+       "2 Zurückgeben: „Klär das bitte direkt mit ihr.“ / „Dazu sag ich nichts.“",
        "3 Umlenken: „Erzähl mal von deiner Woche.“ / „Wollen wir los?“"
       ]
      },
@@ -4265,12 +4265,12 @@
      {
       "titel": "Les messages de Gilles dans le bus",
       "karten": [
-       "15 h 41 maman : « Dis à ton père que la facture du dentiste n’est pas payée. »",
-       "15 h 52 papa : « Alors ? Qui est passé chez vous ce week-end ? »",
-       "16 h 03 maman : « Tu ne trouves pas que papa ne respecte jamais ce qu’on a décidé ? »",
+       "15 h 41 maman : « Dis à ton père que le dentiste n’est pas payé. »",
+       "15 h 52 papa : « Alors ? Qui était chez vous ce week-end ? »",
+       "16 h 03 maman : « Ton père ne tient jamais parole, non ? »",
        "16 h 27 papa, à l’arrêt : « Qu’est-ce que ta mère a dit sur moi ? »",
        "16 h 30 papa : « Dis-lui que je n’échange pas samedi. »",
-       "16 h 40 maman : « Tu es assez grand. C’est toi qui décides où tu es samedi. »"
+       "16 h 40 maman : « Tu es assez grand. Samedi, c’est toi qui décides. »"
       ]
      },
      {
@@ -4285,7 +4285,7 @@
       "titel": "La phrase en trois morceaux",
       "karten": [
        "1 Le lien : « Je t’aime. » / « J’aime être avec toi. »",
-       "2 Rendre : « Ça, tu le règles directement avec elle. » / « Je ne dis rien là-dessus. »",
+       "2 Rendre : « Règle ça directement avec elle. » / « Je ne dis rien là-dessus. »",
        "3 Changer de sujet : « Raconte-moi ta semaine. » / « On y va ? »"
       ]
      },
@@ -4623,8 +4623,8 @@
        "Marta an Gilles: „Sonntag wieder Brunch. Net schonn erëm.“",
        "Altes Foto, hinten drauf: „Sonntag, 9 Uhr – Mama + ich – Bäckerei.“",
        "Mama an Marta: „Raphaël meint es gut. Gib ihm eine Chance.“",
-       "Martas Notiz: „Mein Schreibtisch steht im Flur. Bastien schläft, wo er stand.“",
-       "Bastien, 10, an Marta: „Zeigst du mir, wie man einen Stuhl schleift?“",
+       "Martas Notiz: „Schreibtisch im Flur. Bastien schläft, wo er stand.“",
+       "Bastien (10): „Zeigst du mir, wie man einen Stuhl schleift?“",
        "Raphaël an Marta: „Ich will nicht dein Vater sein. Ich wüsste nur gern, was du magst.“"
       ]
      },
@@ -4644,7 +4644,7 @@
        "„Ja, machen wir.“",
        "„Ja, aber nicht jeden Sonntag.“",
        "„Gegenvorschlag: Samstagmorgen?“",
-       "„Erklär mir genauer, was du meinst.“",
+       "„Wie meinst du das?“",
        "„Reden wir mit Raphaël darüber.“",
        "„Ich brauche Bedenkzeit bis morgen.“"
       ]
@@ -4675,7 +4675,7 @@
      "sagt einen Wunsch mit Angebot, ohne Vorwurf",
      "bleibt bei einem „Ja, aber …“ im Gespräch"
     ],
-    "warum": "Stiefbeziehungen entwickeln sich sehr verschieden; günstig ist, wenn der neue Partner über gemeinsame Interessen Nähe sucht statt über Strenge (Ganong, Coleman & Jamison, 2011). Ein Wunsch mit Angebot hält das Gespräch offen; geübt wird mit Rückmeldung (Durlak et al., 2011).",
+    "warum": "Stiefbeziehungen entwickeln sich sehr verschieden; wo sie gelangen, suchte der Stiefelternteil oft über gemeinsame Aktivitäten Nähe zum Kind (Ganong, Coleman & Jamison, 2011). Ein Wunsch mit Angebot hält das Gespräch offen; geübt wird mit Rückmeldung (Durlak et al., 2011).",
     "links": [
      {
       "titel": "Kanner-Jugendtelefon 116 111 (kostenlos, anonym; Telefon Mo–Sa, Chat dienstags 18–21 Uhr) – für Eltern: Elterentelefon 8002 4444",
@@ -4711,9 +4711,9 @@
       "karten": [
        "Marta à Gilles : « Dimanche, encore brunch. Net schonn erëm. »",
        "Vieille photo, au dos : « Dimanche, 9 h – maman + moi – boulangerie. »",
-       "Maman à Marta : « Raphaël est plein de bonne volonté. Laisse-lui une chance. »",
-       "Note de Marta : « Mon bureau est dans le couloir. Bastien dort là où il était. »",
-       "Bastien, 10 ans, à Marta : « Tu me montres comment on ponce une chaise ? »",
+       "Maman à Marta : « Raphaël veut bien faire. Laisse-lui une chance. »",
+       "Note de Marta : « Bureau dans le couloir. Bastien dort à sa place. »",
+       "Bastien (10 ans) : « Tu me montres comment poncer une chaise ? »",
        "Raphaël à Marta : « Je ne veux pas être ton père. J’aimerais juste savoir ce que tu aimes. »"
       ]
      },
@@ -4733,9 +4733,9 @@
        "« Oui, on fait ça. »",
        "« Oui, mais pas tous les dimanches. »",
        "« Contre-proposition : samedi matin ? »",
-       "« Explique-moi mieux ce que tu veux dire. »",
+       "« C’est-à-dire ? »",
        "« On en parle avec Raphaël ? »",
-       "« J’ai besoin d’y réfléchir jusqu’à demain. »"
+       "« Laisse-moi réfléchir jusqu’à demain. »"
       ]
      },
      {
@@ -4764,7 +4764,7 @@
      "dit un souhait avec une offre, sans reproche",
      "reste dans la discussion face à un « oui, mais… »"
     ],
-    "warum": "Les liens dans les familles recomposées se construisent très différemment ; cela aide quand le beau-parent cherche la proximité par des intérêts communs plutôt que par la sévérité (Ganong, Coleman & Jamison, 2011). Un souhait avec une offre garde la discussion ouverte ; on s’exerce avec un retour (Durlak et al., 2011).",
+    "warum": "Les liens dans les familles recomposées se construisent très différemment ; là où ils ont réussi, le beau-parent cherchait souvent la proximité par des activités communes (Ganong, Coleman & Jamison, 2011). Un souhait avec une offre garde la discussion ouverte ; on s’exerce avec un retour (Durlak et al., 2011).",
     "links": [
      {
       "titel": "Kanner-Jugendtelefon 116 111 (gratuit, anonyme ; téléphone lun.–sam., chat le mardi 18–21 h) – pour les parents : Elterentelefon 8002 4444",
@@ -5087,8 +5087,8 @@
        "Marta an Gilles: „Sonntag wieder Brunch. Net schonn erëm.“",
        "Altes Foto, hinten drauf: „Sonntag, 9 Uhr – Mama + ich – Bäckerei.“",
        "Mama an Marta: „Raphaël meint es gut. Gib ihm eine Chance.“",
-       "Martas Notiz: „Mein Schreibtisch steht im Flur. Bastien schläft, wo er stand.“",
-       "Bastien, 10, an Marta: „Zeigst du mir, wie man einen Stuhl schleift?“",
+       "Martas Notiz: „Schreibtisch im Flur. Bastien schläft, wo er stand.“",
+       "Bastien (10): „Zeigst du mir, wie man einen Stuhl schleift?“",
        "Raphaël an Marta: „Ich will nicht dein Vater sein. Ich wüsste nur gern, was du magst.“"
       ]
      },
@@ -5108,7 +5108,7 @@
        "„Ja, machen wir.“",
        "„Ja, aber nicht jeden Sonntag.“",
        "„Gegenvorschlag: Samstagmorgen?“",
-       "„Erklär mir genauer, was du meinst.“",
+       "„Wie meinst du das?“",
        "„Reden wir mit Raphaël darüber.“",
        "„Ich brauche Bedenkzeit bis morgen.“"
       ]
@@ -5139,7 +5139,7 @@
      "sagt einen Wunsch mit Angebot, ohne Vorwurf",
      "bleibt bei einem „Ja, aber …“ im Gespräch"
     ],
-    "warum": "Stiefbeziehungen entwickeln sich sehr verschieden; günstig ist, wenn der neue Partner über gemeinsame Interessen Nähe sucht statt über Strenge (Ganong, Coleman & Jamison, 2011). Ein Wunsch mit Angebot hält das Gespräch offen; geübt wird mit Rückmeldung (Durlak et al., 2011).",
+    "warum": "Stiefbeziehungen entwickeln sich sehr verschieden; wo sie gelangen, suchte der Stiefelternteil oft über gemeinsame Aktivitäten Nähe zum Kind (Ganong, Coleman & Jamison, 2011). Ein Wunsch mit Angebot hält das Gespräch offen; geübt wird mit Rückmeldung (Durlak et al., 2011).",
     "links": [
      {
       "titel": "Kanner-Jugendtelefon 116 111 (kostenlos, anonym; Telefon Mo–Sa, Chat dienstags 18–21 Uhr) – für Eltern: Elterentelefon 8002 4444",
@@ -5175,9 +5175,9 @@
       "karten": [
        "Marta à Gilles : « Dimanche, encore brunch. Net schonn erëm. »",
        "Vieille photo, au dos : « Dimanche, 9 h – maman + moi – boulangerie. »",
-       "Maman à Marta : « Raphaël est plein de bonne volonté. Laisse-lui une chance. »",
-       "Note de Marta : « Mon bureau est dans le couloir. Bastien dort là où il était. »",
-       "Bastien, 10 ans, à Marta : « Tu me montres comment on ponce une chaise ? »",
+       "Maman à Marta : « Raphaël veut bien faire. Laisse-lui une chance. »",
+       "Note de Marta : « Bureau dans le couloir. Bastien dort à sa place. »",
+       "Bastien (10 ans) : « Tu me montres comment poncer une chaise ? »",
        "Raphaël à Marta : « Je ne veux pas être ton père. J’aimerais juste savoir ce que tu aimes. »"
       ]
      },
@@ -5197,9 +5197,9 @@
        "« Oui, on fait ça. »",
        "« Oui, mais pas tous les dimanches. »",
        "« Contre-proposition : samedi matin ? »",
-       "« Explique-moi mieux ce que tu veux dire. »",
+       "« C’est-à-dire ? »",
        "« On en parle avec Raphaël ? »",
-       "« J’ai besoin d’y réfléchir jusqu’à demain. »"
+       "« Laisse-moi réfléchir jusqu’à demain. »"
       ]
      },
      {
@@ -5228,7 +5228,7 @@
      "dit un souhait avec une offre, sans reproche",
      "reste dans la discussion face à un « oui, mais… »"
     ],
-    "warum": "Les liens dans les familles recomposées se construisent très différemment ; cela aide quand le beau-parent cherche la proximité par des intérêts communs plutôt que par la sévérité (Ganong, Coleman & Jamison, 2011). Un souhait avec une offre garde la discussion ouverte ; on s’exerce avec un retour (Durlak et al., 2011).",
+    "warum": "Les liens dans les familles recomposées se construisent très différemment ; là où ils ont réussi, le beau-parent cherchait souvent la proximité par des activités communes (Ganong, Coleman & Jamison, 2011). Un souhait avec une offre garde la discussion ouverte ; on s’exerce avec un retour (Durlak et al., 2011).",
     "links": [
      {
       "titel": "Kanner-Jugendtelefon 116 111 (gratuit, anonyme ; téléphone lun.–sam., chat le mardi 18–21 h) – pour les parents : Elterentelefon 8002 4444",
@@ -5373,8 +5373,8 @@
        "Marta an Gilles: „Sonntag wieder Brunch. Net schonn erëm.“",
        "Altes Foto, hinten drauf: „Sonntag, 9 Uhr – Mama + ich – Bäckerei.“",
        "Mama an Marta: „Raphaël meint es gut. Gib ihm eine Chance.“",
-       "Martas Notiz: „Mein Schreibtisch steht im Flur. Bastien schläft, wo er stand.“",
-       "Bastien, 10, an Marta: „Zeigst du mir, wie man einen Stuhl schleift?“",
+       "Martas Notiz: „Schreibtisch im Flur. Bastien schläft, wo er stand.“",
+       "Bastien (10): „Zeigst du mir, wie man einen Stuhl schleift?“",
        "Raphaël an Marta: „Ich will nicht dein Vater sein. Ich wüsste nur gern, was du magst.“"
       ]
      },
@@ -5412,7 +5412,7 @@
      "sagt einen Wunsch mit Angebot, ohne Vorwurf",
      "bleibt bei einem „Ja, aber …“ im Gespräch"
     ],
-    "warum": "Stiefbeziehungen entwickeln sich sehr verschieden; günstig ist, wenn der neue Partner über gemeinsame Interessen Nähe sucht statt über Strenge (Ganong, Coleman & Jamison, 2011). Ein Wunsch mit Angebot hält das Gespräch offen; geübt wird mit Rückmeldung (Durlak et al., 2011).",
+    "warum": "Stiefbeziehungen entwickeln sich sehr verschieden; wo sie gelangen, suchte der Stiefelternteil oft über gemeinsame Aktivitäten Nähe zum Kind (Ganong, Coleman & Jamison, 2011). Ein Wunsch mit Angebot hält das Gespräch offen; geübt wird mit Rückmeldung (Durlak et al., 2011).",
     "links": [
      {
       "titel": "Kanner-Jugendtelefon 116 111 (kostenlos, anonym; Telefon Mo–Sa, Chat dienstags 18–21 Uhr) – für Eltern: Elterentelefon 8002 4444",
@@ -5445,9 +5445,9 @@
       "karten": [
        "Marta à Gilles : « Dimanche, encore brunch. Net schonn erëm. »",
        "Vieille photo, au dos : « Dimanche, 9 h – maman + moi – boulangerie. »",
-       "Maman à Marta : « Raphaël est plein de bonne volonté. Laisse-lui une chance. »",
-       "Note de Marta : « Mon bureau est dans le couloir. Bastien dort là où il était. »",
-       "Bastien, 10 ans, à Marta : « Tu me montres comment on ponce une chaise ? »",
+       "Maman à Marta : « Raphaël veut bien faire. Laisse-lui une chance. »",
+       "Note de Marta : « Bureau dans le couloir. Bastien dort à sa place. »",
+       "Bastien (10 ans) : « Tu me montres comment poncer une chaise ? »",
        "Raphaël à Marta : « Je ne veux pas être ton père. J’aimerais juste savoir ce que tu aimes. »"
       ]
      },
@@ -5485,7 +5485,7 @@
      "dit un souhait avec une offre, sans reproche",
      "reste dans la discussion face à un « oui, mais… »"
     ],
-    "warum": "Les liens dans les familles recomposées se construisent très différemment ; cela aide quand le beau-parent cherche la proximité par des intérêts communs plutôt que par la sévérité (Ganong, Coleman & Jamison, 2011). Un souhait avec une offre garde la discussion ouverte ; on s’exerce avec un retour (Durlak et al., 2011).",
+    "warum": "Les liens dans les familles recomposées se construisent très différemment ; là où ils ont réussi, le beau-parent cherchait souvent la proximité par des activités communes (Ganong, Coleman & Jamison, 2011). Un souhait avec une offre garde la discussion ouverte ; on s’exerce avec un retour (Durlak et al., 2011).",
     "links": [
      {
       "titel": "Kanner-Jugendtelefon 116 111 (gratuit, anonyme ; téléphone lun.–sam., chat le mardi 18–21 h) – pour les parents : Elterentelefon 8002 4444",
@@ -5639,8 +5639,8 @@
        "Marta an Gilles: „Sonntag wieder Brunch. Net schonn erëm.“",
        "Altes Foto, hinten drauf: „Sonntag, 9 Uhr – Mama + ich – Bäckerei.“",
        "Mama an Marta: „Raphaël meint es gut. Gib ihm eine Chance.“",
-       "Martas Notiz: „Mein Schreibtisch steht im Flur. Bastien schläft, wo er stand.“",
-       "Bastien, 10, an Marta: „Zeigst du mir, wie man einen Stuhl schleift?“",
+       "Martas Notiz: „Schreibtisch im Flur. Bastien schläft, wo er stand.“",
+       "Bastien (10): „Zeigst du mir, wie man einen Stuhl schleift?“",
        "Raphaël an Marta: „Ich will nicht dein Vater sein. Ich wüsste nur gern, was du magst.“"
       ]
      },
@@ -5668,7 +5668,7 @@
      "sagt einen Wunsch mit Angebot, ohne Vorwurf",
      "bleibt bei einem „Ja, aber …“ im Gespräch"
     ],
-    "warum": "Stiefbeziehungen entwickeln sich sehr verschieden; günstig ist, wenn der neue Partner über gemeinsame Interessen Nähe sucht statt über Strenge (Ganong, Coleman & Jamison, 2011). Ein Wunsch mit Angebot hält das Gespräch offen; geübt wird mit Rückmeldung (Durlak et al., 2011).",
+    "warum": "Stiefbeziehungen entwickeln sich sehr verschieden; wo sie gelangen, suchte der Stiefelternteil oft über gemeinsame Aktivitäten Nähe zum Kind (Ganong, Coleman & Jamison, 2011). Ein Wunsch mit Angebot hält das Gespräch offen; geübt wird mit Rückmeldung (Durlak et al., 2011).",
     "links": [
      {
       "titel": "Kanner-Jugendtelefon 116 111 (kostenlos, anonym; Telefon Mo–Sa, Chat dienstags 18–21 Uhr) – für Eltern: Elterentelefon 8002 4444",
@@ -5710,9 +5710,9 @@
       "karten": [
        "Marta à Gilles : « Dimanche, encore brunch. Net schonn erëm. »",
        "Vieille photo, au dos : « Dimanche, 9 h – maman + moi – boulangerie. »",
-       "Maman à Marta : « Raphaël est plein de bonne volonté. Laisse-lui une chance. »",
-       "Note de Marta : « Mon bureau est dans le couloir. Bastien dort là où il était. »",
-       "Bastien, 10 ans, à Marta : « Tu me montres comment on ponce une chaise ? »",
+       "Maman à Marta : « Raphaël veut bien faire. Laisse-lui une chance. »",
+       "Note de Marta : « Bureau dans le couloir. Bastien dort à sa place. »",
+       "Bastien (10 ans) : « Tu me montres comment poncer une chaise ? »",
        "Raphaël à Marta : « Je ne veux pas être ton père. J’aimerais juste savoir ce que tu aimes. »"
       ]
      },
@@ -5740,7 +5740,7 @@
      "dit un souhait avec une offre, sans reproche",
      "reste dans la discussion face à un « oui, mais… »"
     ],
-    "warum": "Les liens dans les familles recomposées se construisent très différemment ; cela aide quand le beau-parent cherche la proximité par des intérêts communs plutôt que par la sévérité (Ganong, Coleman & Jamison, 2011). Un souhait avec une offre garde la discussion ouverte ; on s’exerce avec un retour (Durlak et al., 2011).",
+    "warum": "Les liens dans les familles recomposées se construisent très différemment ; là où ils ont réussi, le beau-parent cherchait souvent la proximité par des activités communes (Ganong, Coleman & Jamison, 2011). Un souhait avec une offre garde la discussion ouverte ; on s’exerce avec un retour (Durlak et al., 2011).",
     "links": [
      {
       "titel": "Kanner-Jugendtelefon 116 111 (gratuit, anonyme ; téléphone lun.–sam., chat le mardi 18–21 h) – pour les parents : Elterentelefon 8002 4444",
@@ -6088,7 +6088,7 @@
     ],
     "leichter": "Nur Arjuns Plan und drei Uhrzeiten (11:00, 15:00, 18:00); die Fachkraft macht den ersten Wenn-dann-Satz vor.",
     "schwerer": "Die Person plant für zwei Figuren und prüft, ob sich die Pläne in die Quere kommen (Dev um 15:00, Gilles’ Stuhl um 16:30).",
-    "gruppe": "4–6: Zeitstrahl in der Mitte; jede Person wählt eine Figur oder einen eigenen Moment (freiwillig). Nacheinander gehen alle den Strahl ab und bleiben an ihrem Moment stehen; die anderen sagen „Wenn …“, die Person ergänzt „dann …“. Ende: Jede Person legt ihren Plan B als Stichwort an den Strahl.",
+    "gruppe": "4–6: Zeitstrahl in der Mitte; jede Person wählt eine Figur oder einen eigenen Moment (freiwillig). Nacheinander gehen alle den Strahl ab und bleiben an ihrem Moment stehen; nur wer dort steht, spricht: „Wenn …, dann …“. Zu einem eigenen Moment sagen die anderen nichts. Ende: Jede Person legt ihren Plan B als Stichwort an den Strahl.",
     "beobachten": [
      "plant einen konkreten Satz für einen bestimmten Moment (wer, wann, wo)",
      "hat einen Plan B, falls es nicht klappt",
@@ -6170,7 +6170,7 @@
     ],
     "leichter": "Seulement le plan d’Arjun et trois horaires (11 h, 15 h, 18 h) ; l’adulte montre la première phrase si-alors.",
     "schwerer": "La personne planifie pour deux personnages et vérifie si les plans se gênent (Dev à 15 h, la chaise de Gilles à 16 h 30).",
-    "gruppe": "4–6 : la ligne au milieu ; chacun choisit un personnage ou un moment à soi (facultatif). L’un après l’autre, on parcourt la ligne et on s’arrête à son moment ; les autres disent « Si… », la personne complète « alors… ». Fin : chacun pose son plan B en un mot à côté de la ligne.",
+    "gruppe": "4–6 : la ligne au milieu ; chacun choisit un personnage ou un moment à soi (facultatif). L’un après l’autre, on parcourt la ligne et on s’arrête à son moment ; seule la personne qui s’y arrête parle : « Si…, alors… ». Sur le moment de quelqu’un d’autre, les autres ne disent rien. Fin : chacun pose son plan B en un mot à côté de la ligne.",
     "beobachten": [
      "prévoit une phrase concrète pour un moment précis (qui, quand, où)",
      "a un plan B si ça ne marche pas",
@@ -6534,7 +6534,7 @@
     ],
     "leichter": "Nur Arjuns Plan und drei Uhrzeiten (11:00, 15:00, 18:00); die Fachkraft macht den ersten Wenn-dann-Satz vor.",
     "schwerer": "Die Person plant für zwei Figuren und prüft, ob sich die Pläne in die Quere kommen (Dev um 15:00, Gilles’ Stuhl um 16:30).",
-    "gruppe": "4–6: Zeitstrahl in der Mitte; jede Person wählt eine Figur oder einen eigenen Moment (freiwillig). Nacheinander gehen alle den Strahl ab und bleiben an ihrem Moment stehen; die anderen sagen „Wenn …“, die Person ergänzt „dann …“. Ende: Jede Person legt ihren Plan B als Stichwort an den Strahl.",
+    "gruppe": "4–6: Zeitstrahl in der Mitte; jede Person wählt eine Figur oder einen eigenen Moment (freiwillig). Nacheinander gehen alle den Strahl ab und bleiben an ihrem Moment stehen; nur wer dort steht, spricht: „Wenn …, dann …“. Zu einem eigenen Moment sagen die anderen nichts. Ende: Jede Person legt ihren Plan B als Stichwort an den Strahl.",
     "beobachten": [
      "plant einen konkreten Satz für einen bestimmten Moment (wer, wann, wo)",
      "hat einen Plan B, falls es nicht klappt",
@@ -6616,7 +6616,7 @@
     ],
     "leichter": "Seulement le plan d’Arjun et trois horaires (11 h, 15 h, 18 h) ; l’adulte montre la première phrase si-alors.",
     "schwerer": "La personne planifie pour deux personnages et vérifie si les plans se gênent (Dev à 15 h, la chaise de Gilles à 16 h 30).",
-    "gruppe": "4–6 : la ligne au milieu ; chacun choisit un personnage ou un moment à soi (facultatif). L’un après l’autre, on parcourt la ligne et on s’arrête à son moment ; les autres disent « Si… », la personne complète « alors… ». Fin : chacun pose son plan B en un mot à côté de la ligne.",
+    "gruppe": "4–6 : la ligne au milieu ; chacun choisit un personnage ou un moment à soi (facultatif). L’un après l’autre, on parcourt la ligne et on s’arrête à son moment ; seule la personne qui s’y arrête parle : « Si…, alors… ». Sur le moment de quelqu’un d’autre, les autres ne disent rien. Fin : chacun pose son plan B en un mot à côté de la ligne.",
     "beobachten": [
      "prévoit une phrase concrète pour un moment précis (qui, quand, où)",
      "a un plan B si ça ne marche pas",
@@ -7469,7 +7469,7 @@
       "titel": "Nur für dich: Lösung und Recht",
       "karten": [
        "Gilles: Bein 3 und Sitz (Raus-Satz, Plan) · Marta: Bein 4 (Platz-Satz) · Arjun: Bein 1 und Sitz. Wackelt noch: Gilles’ Eltern reden kaum, Martas Brunch.",
-       "Recht: Urteilsfähige Kinder können in Verfahren, die sie betreffen, vom Gericht angehört werden; auf eigenen Wunsch von Rechts wegen (Code civil, Art. 388-1).",
+       "Recht: Urteilsfähige Kinder können in Verfahren, die sie betreffen, vom Gericht angehört werden; auf eigenen Wunsch von Rechts wegen (nach geltendem Recht).",
        "Angehört werden heißt nicht entscheiden: Das Gericht entscheidet. Das entlastet – niemand muss „wählen“. Fragen: OKAJU 28 37 36 35.",
        "Für Eltern, nicht für die Person: Elterentelefon 8002 4444, Familienmediation bei Pro Familia.",
        "Gilles, Marta und Arjun stehen nie für die Person im Raum. Nie: „Bei dir ist es ja auch so.“ Eigenes nur, wenn es von selbst kommt.",
@@ -7491,7 +7491,7 @@
      "nennt mindestens eine Person und eine Nummer, die stützen",
      "sagt, welches Teil sie mitnimmt"
     ],
-    "warum": "Zum Abschluss ruft die Person das ganze Modell selbst ab – Abrufen festigt Gelerntes (Roediger & Karpicke, 2006). Ansprechpersonen und das Recht, gehört zu werden, ohne entscheiden zu müssen, stärken die Lehne (Code civil, Art. 388-1; UN-Kinderrechtskonvention, Art. 12).",
+    "warum": "Zum Abschluss ruft die Person das ganze Modell selbst ab – Abrufen festigt Gelerntes (Roediger & Karpicke, 2006). Ansprechpersonen und das Recht, gehört zu werden, ohne entscheiden zu müssen, stärken die Lehne (nach geltendem Recht; UN-Kinderrechtskonvention, Art. 12).",
     "links": [
      {
       "titel": "Kanner-Jugendtelefon 116 111 (kostenlos, anonym; Telefon Mo–Sa, Chat dienstags 18–21 Uhr) – für Eltern: Elterentelefon 8002 4444",
@@ -7546,7 +7546,7 @@
       "titel": "Pour l’adulte : solution et droits",
       "karten": [
        "Gilles : pied 3 et assise · Marta : pied 4 · Arjun : pied 1 et assise. Vacille encore : les parents de Gilles se parlent peu ; le brunch de Marta.",
-       "Droit : l’enfant capable de discernement peut être entendu par le juge s’il est concerné ; c’est de droit s’il le demande (Code civil, art. 388-1).",
+       "Droit : l’enfant capable de discernement peut être entendu par le juge s’il est concerné ; c’est de droit s’il le demande (selon le droit en vigueur).",
        "Être entendu, ce n’est pas décider : c’est le juge qui décide. Ça soulage – personne n’a à « choisir ». Questions : OKAJU 28 37 36 35.",
        "Pour les parents, pas pour la personne : Elterentelefon 8002 4444, médiation familiale chez Pro Familia.",
        "Gilles, Marta et Arjun ne représentent jamais la personne présente. Jamais : « Chez toi, c’est pareil. » Le vécu personnel seulement s’il vient d’elle.",
@@ -7568,7 +7568,7 @@
      "cite au moins une personne et un numéro qui soutiennent",
      "dit quelle pièce elle garde"
     ],
-    "warum": "Pour finir, la personne retrouve elle-même tout le modèle – se rappeler consolide l’apprentissage (Roediger & Karpicke, 2006). Des personnes-ressources et le droit d’être entendu sans devoir décider renforcent le dossier (Code civil, art. 388-1 ; Convention relative aux droits de l’enfant, art. 12).",
+    "warum": "Pour finir, la personne retrouve elle-même tout le modèle – se rappeler consolide l’apprentissage (Roediger & Karpicke, 2006). Des personnes-ressources et le droit d’être entendu sans devoir décider renforcent le dossier (selon le droit en vigueur ; Convention relative aux droits de l’enfant, art. 12).",
     "links": [
      {
       "titel": "Kanner-Jugendtelefon 116 111 (gratuit, anonyme ; téléphone lun.–sam., chat le mardi 18–21 h) – pour les parents : Elterentelefon 8002 4444",
@@ -7928,7 +7928,7 @@
       "titel": "Nur für dich: Lösung und Recht",
       "karten": [
        "Gilles: Bein 3 und Sitz (Raus-Satz, Plan) · Marta: Bein 4 (Platz-Satz) · Arjun: Bein 1 und Sitz. Wackelt noch: Gilles’ Eltern reden kaum, Martas Brunch.",
-       "Recht: Urteilsfähige Kinder können in Verfahren, die sie betreffen, vom Gericht angehört werden; auf eigenen Wunsch von Rechts wegen (Code civil, Art. 388-1).",
+       "Recht: Urteilsfähige Kinder können in Verfahren, die sie betreffen, vom Gericht angehört werden; auf eigenen Wunsch von Rechts wegen (nach geltendem Recht).",
        "Angehört werden heißt nicht entscheiden: Das Gericht entscheidet. Das entlastet – niemand muss „wählen“. Fragen: OKAJU 28 37 36 35.",
        "Für Eltern, nicht für die Person: Elterentelefon 8002 4444, Familienmediation bei Pro Familia.",
        "Gilles, Marta und Arjun stehen nie für die Person im Raum. Nie: „Bei dir ist es ja auch so.“ Eigenes nur, wenn es von selbst kommt.",
@@ -7950,7 +7950,7 @@
      "nennt mindestens eine Person und eine Nummer, die stützen",
      "sagt, welches Teil sie mitnimmt"
     ],
-    "warum": "Zum Abschluss ruft die Person das ganze Modell selbst ab – Abrufen festigt Gelerntes (Roediger & Karpicke, 2006). Ansprechpersonen und das Recht, gehört zu werden, ohne entscheiden zu müssen, stärken die Lehne (Code civil, Art. 388-1; UN-Kinderrechtskonvention, Art. 12).",
+    "warum": "Zum Abschluss ruft die Person das ganze Modell selbst ab – Abrufen festigt Gelerntes (Roediger & Karpicke, 2006). Ansprechpersonen und das Recht, gehört zu werden, ohne entscheiden zu müssen, stärken die Lehne (nach geltendem Recht; UN-Kinderrechtskonvention, Art. 12).",
     "links": [
      {
       "titel": "Kanner-Jugendtelefon 116 111 (kostenlos, anonym; Telefon Mo–Sa, Chat dienstags 18–21 Uhr) – für Eltern: Elterentelefon 8002 4444",
@@ -8005,7 +8005,7 @@
       "titel": "Pour l’adulte : solution et droits",
       "karten": [
        "Gilles : pied 3 et assise · Marta : pied 4 · Arjun : pied 1 et assise. Vacille encore : les parents de Gilles se parlent peu ; le brunch de Marta.",
-       "Droit : l’enfant capable de discernement peut être entendu par le juge s’il est concerné ; c’est de droit s’il le demande (Code civil, art. 388-1).",
+       "Droit : l’enfant capable de discernement peut être entendu par le juge s’il est concerné ; c’est de droit s’il le demande (selon le droit en vigueur).",
        "Être entendu, ce n’est pas décider : c’est le juge qui décide. Ça soulage – personne n’a à « choisir ». Questions : OKAJU 28 37 36 35.",
        "Pour les parents, pas pour la personne : Elterentelefon 8002 4444, médiation familiale chez Pro Familia.",
        "Gilles, Marta et Arjun ne représentent jamais la personne présente. Jamais : « Chez toi, c’est pareil. » Le vécu personnel seulement s’il vient d’elle.",
@@ -8027,7 +8027,7 @@
      "cite au moins une personne et un numéro qui soutiennent",
      "dit quelle pièce elle garde"
     ],
-    "warum": "Pour finir, la personne retrouve elle-même tout le modèle – se rappeler consolide l’apprentissage (Roediger & Karpicke, 2006). Des personnes-ressources et le droit d’être entendu sans devoir décider renforcent le dossier (Code civil, art. 388-1 ; Convention relative aux droits de l’enfant, art. 12).",
+    "warum": "Pour finir, la personne retrouve elle-même tout le modèle – se rappeler consolide l’apprentissage (Roediger & Karpicke, 2006). Des personnes-ressources et le droit d’être entendu sans devoir décider renforcent le dossier (selon le droit en vigueur ; Convention relative aux droits de l’enfant, art. 12).",
     "links": [
      {
       "titel": "Kanner-Jugendtelefon 116 111 (gratuit, anonyme ; téléphone lun.–sam., chat le mardi 18–21 h) – pour les parents : Elterentelefon 8002 4444",
@@ -8192,7 +8192,7 @@
       "titel": "Nur für dich: Auflösung",
       "karten": [
        "Stimmt: 1, 3, 5, 8 · Stimmt nicht: 2, 4, 6, 7.",
-       "4: Du kannst angehört werden, entscheiden muss das Gericht (Code civil, Art. 388-1). 6: Erzählen schützt – Helpline 20 60 10 60.",
+       "4: Du kannst angehört werden, entscheiden muss das Gericht (nach geltendem Recht). 6: Erzählen schützt – Helpline 20 60 10 60.",
        "Kein Punktezählen, kein Tempo. Jede Antwort mit Grund wird gewürdigt, auch wenn sie danebenliegt.",
        "Gilles, Marta und Arjun stehen nie für die Person im Raum. Nie: „Bei dir ist es ja auch so.“ Eigenes nur, wenn es von selbst kommt.",
        "WENN ES ECHT WIRD: ruhig bleiben, zuhören, nicht ausfragen, nichts versprechen. „Gut, dass du es mir sagst.“",
@@ -8213,7 +8213,7 @@
      "nennt mindestens eine Person und eine Nummer, die stützen",
      "sagt, welches Teil sie mitnimmt"
     ],
-    "warum": "Zum Abschluss ruft die Person das ganze Modell selbst ab – Abrufen festigt Gelerntes (Roediger & Karpicke, 2006). Ansprechpersonen und das Recht, gehört zu werden, ohne entscheiden zu müssen, stärken die Lehne (Code civil, Art. 388-1; UN-Kinderrechtskonvention, Art. 12).",
+    "warum": "Zum Abschluss ruft die Person das ganze Modell selbst ab – Abrufen festigt Gelerntes (Roediger & Karpicke, 2006). Ansprechpersonen und das Recht, gehört zu werden, ohne entscheiden zu müssen, stärken die Lehne (nach geltendem Recht; UN-Kinderrechtskonvention, Art. 12).",
     "links": [
      {
       "titel": "Kanner-Jugendtelefon 116 111 (kostenlos, anonym; Telefon Mo–Sa, Chat dienstags 18–21 Uhr) – für Eltern: Elterentelefon 8002 4444",
@@ -8266,7 +8266,7 @@
       "titel": "Pour l’adulte : réponses",
       "karten": [
        "Vrai : 1, 3, 5, 8 · Pas vrai : 2, 4, 6, 7.",
-       "4 : tu peux être entendu·e, c’est le juge qui décide (Code civil, art. 388-1). 6 : en parler protège – Helpline 20 60 10 60.",
+       "4 : tu peux être entendu·e, c’est le juge qui décide (selon le droit en vigueur). 6 : en parler protège – Helpline 20 60 10 60.",
        "Pas de points, pas de vitesse. Chaque réponse avec une raison est valorisée, même si elle est à côté.",
        "Gilles, Marta et Arjun ne représentent jamais la personne présente. Jamais : « Chez toi, c’est pareil. » Le vécu personnel seulement s’il vient d’elle.",
        "SI ÇA DEVIENT SÉRIEUX : rester calme, écouter, ne pas questionner, ne rien promettre. « C’est bien que tu me le dises. »",
@@ -8287,7 +8287,7 @@
      "cite au moins une personne et un numéro qui soutiennent",
      "dit quelle pièce elle garde"
     ],
-    "warum": "Pour finir, la personne retrouve elle-même tout le modèle – se rappeler consolide l’apprentissage (Roediger & Karpicke, 2006). Des personnes-ressources et le droit d’être entendu sans devoir décider renforcent le dossier (Code civil, art. 388-1 ; Convention relative aux droits de l’enfant, art. 12).",
+    "warum": "Pour finir, la personne retrouve elle-même tout le modèle – se rappeler consolide l’apprentissage (Roediger & Karpicke, 2006). Des personnes-ressources et le droit d’être entendu sans devoir décider renforcent le dossier (selon le droit en vigueur ; Convention relative aux droits de l’enfant, art. 12).",
     "links": [
      {
       "titel": "Kanner-Jugendtelefon 116 111 (gratuit, anonyme ; téléphone lun.–sam., chat le mardi 18–21 h) – pour les parents : Elterentelefon 8002 4444",
@@ -8472,7 +8472,7 @@
      "nennt mindestens eine Person und eine Nummer, die stützen",
      "sagt, welches Teil sie mitnimmt"
     ],
-    "warum": "Zum Abschluss ruft die Person das ganze Modell selbst ab – Abrufen festigt Gelerntes (Roediger & Karpicke, 2006). Ansprechpersonen und das Recht, gehört zu werden, ohne entscheiden zu müssen, stärken die Lehne (Code civil, Art. 388-1; UN-Kinderrechtskonvention, Art. 12).",
+    "warum": "Zum Abschluss ruft die Person das ganze Modell selbst ab – Abrufen festigt Gelerntes (Roediger & Karpicke, 2006). Ansprechpersonen und das Recht, gehört zu werden, ohne entscheiden zu müssen, stärken die Lehne (nach geltendem Recht; UN-Kinderrechtskonvention, Art. 12).",
     "links": [
      {
       "titel": "Kanner-Jugendtelefon 116 111 (kostenlos, anonym; Telefon Mo–Sa, Chat dienstags 18–21 Uhr) – für Eltern: Elterentelefon 8002 4444",
@@ -8544,7 +8544,7 @@
      "cite au moins une personne et un numéro qui soutiennent",
      "dit quelle pièce elle garde"
     ],
-    "warum": "Pour finir, la personne retrouve elle-même tout le modèle – se rappeler consolide l’apprentissage (Roediger & Karpicke, 2006). Des personnes-ressources et le droit d’être entendu sans devoir décider renforcent le dossier (Code civil, art. 388-1 ; Convention relative aux droits de l’enfant, art. 12).",
+    "warum": "Pour finir, la personne retrouve elle-même tout le modèle – se rappeler consolide l’apprentissage (Roediger & Karpicke, 2006). Des personnes-ressources et le droit d’être entendu sans devoir décider renforcent le dossier (selon le droit en vigueur ; Convention relative aux droits de l’enfant, art. 12).",
     "links": [
      {
       "titel": "Kanner-Jugendtelefon 116 111 (gratuit, anonyme ; téléphone lun.–sam., chat le mardi 18–21 h) – pour les parents : Elterentelefon 8002 4444",

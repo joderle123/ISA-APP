@@ -1642,7 +1642,7 @@
        "Moien! Ich bin Luca, 8. Mama und Papa wohnen nicht mehr zusammen.",
        "Papa – ich sage Pai – ist nach Clervaux gezogen. Freitags packe ich meinen roten Koffer. Sonntags sagt Pai: „Até sexta!“ – bis Freitag.",
        "Bei Pai vermisse ich Mama. Bei Mama vermisse ich Pai.",
-       "Früher haben die zwei oft gestritten, auch über mich: Ich bin laut und spiele im Flur Fußball. Ist das wegen mir? – Luca"
+       "Früher haben die zwei oft gestritten, auch über mich: Ich spiele im Flur Fußball. Ist das wegen mir? – Luca"
       ]
      },
      {
@@ -1655,7 +1655,7 @@
        "Den roten Koffer packen",
        "Mama oder Pai vermissen dürfen",
        "Sagen, was ich mir wünsche",
-       "Mit Freunden Fußball spielen",
+       "Fußball spielen",
        "Knoten-Karte: Sie haben auch über mich gestritten.",
        "Bogen 2 (orange): Große-Leute-Sachen sind nicht meine Schuld."
       ]
@@ -1712,7 +1712,7 @@
        "Moien ! Je suis Luca, 8 ans. Maman et papa ne vivent plus ensemble.",
        "Papa – je dis Pai – habite à Clervaux. Le vendredi, je fais ma valise rouge. Le dimanche, Pai dit : « Até sexta ! » – à vendredi.",
        "Chez Pai, maman me manque. Chez maman, Pai me manque.",
-       "Avant, ils se disputaient souvent, aussi à mon sujet : je suis bruyant, je joue au foot dans le couloir. C’est ma faute ? – Luca"
+       "Avant, ils se disputaient souvent, aussi à mon sujet : je joue au foot dans le couloir. C’est ma faute ? – Luca"
       ]
      },
      {
@@ -1720,20 +1720,20 @@
       "karten": [
        "Où habitent maman et papa",
        "Si les parents restent ensemble",
-       "Comment les grands se disputent",
+       "Les disputes des grands",
        "Remettre maman et papa ensemble",
        "Faire sa valise rouge",
        "Maman ou Pai me manque : c’est permis",
-       "Dire ce que je souhaite",
-       "Jouer au foot avec les copains",
-       "Carte-nœud : ils se sont aussi disputés à mon sujet.",
+       "Dire mon souhait",
+       "Jouer au foot",
+       "Carte-nœud : ils se disputaient aussi à mon sujet.",
        "Arc 2 (orange) : Les histoires de grands, ce n’est pas ma faute."
       ]
      },
      {
       "titel": "Pour l’adulte : solution et mise en scène",
       "karten": [
-       "En haut : habiter, rester ensemble, comment les grands se disputent, remettre ensemble · En bas : valise, le manque, dire son souhait, foot.",
+       "En haut : habiter, rester ensemble, les disputes des grands, remettre ensemble · En bas : valise, le manque, dire son souhait, foot.",
        "Nœud : même si les grands se disputent au sujet d’un enfant, la dispute est leur histoire. Un enfant ne crée pas une séparation – et ne peut pas l’effacer.",
        "Si l’enfant dit « Ils doivent se remettre ensemble ! » : ne rien promettre, ne pas contredire – « Beaucoup d’enfants le souhaitent. Les grands décident. »",
        "Que l’autre parent manque, c’est l’émotion la plus fréquente avec deux chez-soi. Pas besoin de solution – juste : « Ça a le droit d’être là. »",
@@ -2009,7 +2009,7 @@
        "Moien! Ich bin Luca, 8. Mama und Papa wohnen nicht mehr zusammen.",
        "Papa – ich sage Pai – ist nach Clervaux gezogen. Freitags packe ich meinen roten Koffer. Sonntags sagt Pai: „Até sexta!“ – bis Freitag.",
        "Bei Pai vermisse ich Mama. Bei Mama vermisse ich Pai.",
-       "Früher haben die zwei oft gestritten, auch über mich: Ich bin laut und spiele im Flur Fußball. Ist das wegen mir? – Luca"
+       "Früher haben die zwei oft gestritten, auch über mich: Ich spiele im Flur Fußball. Ist das wegen mir? – Luca"
       ]
      },
      {
@@ -2022,7 +2022,7 @@
        "Den roten Koffer packen",
        "Mama oder Pai vermissen dürfen",
        "Sagen, was ich mir wünsche",
-       "Mit Freunden Fußball spielen",
+       "Fußball spielen",
        "Knoten-Karte: Sie haben auch über mich gestritten.",
        "Bogen 2 (orange): Große-Leute-Sachen sind nicht meine Schuld."
       ]
@@ -2079,7 +2079,7 @@
        "Moien ! Je suis Luca, 8 ans. Maman et papa ne vivent plus ensemble.",
        "Papa – je dis Pai – habite à Clervaux. Le vendredi, je fais ma valise rouge. Le dimanche, Pai dit : « Até sexta ! » – à vendredi.",
        "Chez Pai, maman me manque. Chez maman, Pai me manque.",
-       "Avant, ils se disputaient souvent, aussi à mon sujet : je suis bruyant, je joue au foot dans le couloir. C’est ma faute ? – Luca"
+       "Avant, ils se disputaient souvent, aussi à mon sujet : je joue au foot dans le couloir. C’est ma faute ? – Luca"
       ]
      },
      {
@@ -2087,20 +2087,20 @@
       "karten": [
        "Où habitent maman et papa",
        "Si les parents restent ensemble",
-       "Comment les grands se disputent",
+       "Les disputes des grands",
        "Remettre maman et papa ensemble",
        "Faire sa valise rouge",
        "Maman ou Pai me manque : c’est permis",
-       "Dire ce que je souhaite",
-       "Jouer au foot avec les copains",
-       "Carte-nœud : ils se sont aussi disputés à mon sujet.",
+       "Dire mon souhait",
+       "Jouer au foot",
+       "Carte-nœud : ils se disputaient aussi à mon sujet.",
        "Arc 2 (orange) : Les histoires de grands, ce n’est pas ma faute."
       ]
      },
      {
       "titel": "Pour l’adulte : solution et mise en scène",
       "karten": [
-       "En haut : habiter, rester ensemble, comment les grands se disputent, remettre ensemble · En bas : valise, le manque, dire son souhait, foot.",
+       "En haut : habiter, rester ensemble, les disputes des grands, remettre ensemble · En bas : valise, le manque, dire son souhait, foot.",
        "Nœud : même si les grands se disputent au sujet d’un enfant, la dispute est leur histoire. Un enfant ne crée pas une séparation – et ne peut pas l’effacer.",
        "Si l’enfant dit « Ils doivent se remettre ensemble ! » : ne rien promettre, ne pas contredire – « Beaucoup d’enfants le souhaitent. Les grands décident. »",
        "Que l’autre parent manque, c’est l’émotion la plus fréquente avec deux chez-soi. Pas besoin de solution – juste : « Ça a le droit d’être là. »",
@@ -2259,7 +2259,7 @@
        "Moien! Ich bin Luca, 8. Mama und Papa wohnen nicht mehr zusammen.",
        "Papa – ich sage Pai – ist nach Clervaux gezogen. Freitags packe ich meinen roten Koffer. Sonntags sagt Pai: „Até sexta!“ – bis Freitag.",
        "Bei Pai vermisse ich Mama. Bei Mama vermisse ich Pai.",
-       "Früher haben die zwei oft gestritten, auch über mich: Ich bin laut und spiele im Flur Fußball. Ist das wegen mir? – Luca"
+       "Früher haben die zwei oft gestritten, auch über mich: Ich spiele im Flur Fußball. Ist das wegen mir? – Luca"
       ]
      },
      {
@@ -2272,7 +2272,7 @@
        "Den roten Koffer packen",
        "Mama oder Pai vermissen dürfen",
        "Sagen, was ich mir wünsche",
-       "Mit Freunden Fußball spielen",
+       "Fußball spielen",
        "Knoten-Karte: Sie haben auch über mich gestritten.",
        "Bogen 2 (orange): Große-Leute-Sachen sind nicht meine Schuld."
       ]
@@ -2326,7 +2326,7 @@
        "Moien ! Je suis Luca, 8 ans. Maman et papa ne vivent plus ensemble.",
        "Papa – je dis Pai – habite à Clervaux. Le vendredi, je fais ma valise rouge. Le dimanche, Pai dit : « Até sexta ! » – à vendredi.",
        "Chez Pai, maman me manque. Chez maman, Pai me manque.",
-       "Avant, ils se disputaient souvent, aussi à mon sujet : je suis bruyant, je joue au foot dans le couloir. C’est ma faute ? – Luca"
+       "Avant, ils se disputaient souvent, aussi à mon sujet : je joue au foot dans le couloir. C’est ma faute ? – Luca"
       ]
      },
      {
@@ -2334,20 +2334,20 @@
       "karten": [
        "Où habitent maman et papa",
        "Si les parents restent ensemble",
-       "Comment les grands se disputent",
+       "Les disputes des grands",
        "Remettre maman et papa ensemble",
        "Faire sa valise rouge",
        "Maman ou Pai me manque : c’est permis",
-       "Dire ce que je souhaite",
-       "Jouer au foot avec les copains",
-       "Carte-nœud : ils se sont aussi disputés à mon sujet.",
+       "Dire mon souhait",
+       "Jouer au foot",
+       "Carte-nœud : ils se disputaient aussi à mon sujet.",
        "Arc 2 (orange) : Les histoires de grands, ce n’est pas ma faute."
       ]
      },
      {
       "titel": "Pour l’adulte : solution et mise en scène",
       "karten": [
-       "En haut : habiter, rester ensemble, comment les grands se disputent, remettre ensemble · En bas : valise, le manque, dire son souhait, foot.",
+       "En haut : habiter, rester ensemble, les disputes des grands, remettre ensemble · En bas : valise, le manque, dire son souhait, foot.",
        "Nœud : même si les grands se disputent au sujet d’un enfant, la dispute est leur histoire. Un enfant ne crée pas une séparation – et ne peut pas l’effacer.",
        "Si l’enfant dit « Ils doivent se remettre ensemble ! » : ne rien promettre, ne pas contredire – « Beaucoup d’enfants le souhaitent. Les grands décident. »",
        "Que l’autre parent manque, c’est l’émotion la plus fréquente avec deux chez-soi. Pas besoin de solution – juste : « Ça a le droit d’être là. »",
@@ -2505,7 +2505,7 @@
        "Moien! Ich bin Luca, 8. Mama und Papa wohnen nicht mehr zusammen.",
        "Papa – ich sage Pai – ist nach Clervaux gezogen. Freitags packe ich meinen roten Koffer. Sonntags sagt Pai: „Até sexta!“ – bis Freitag.",
        "Bei Pai vermisse ich Mama. Bei Mama vermisse ich Pai.",
-       "Früher haben die zwei oft gestritten, auch über mich: Ich bin laut und spiele im Flur Fußball. Ist das wegen mir? – Luca"
+       "Früher haben die zwei oft gestritten, auch über mich: Ich spiele im Flur Fußball. Ist das wegen mir? – Luca"
       ]
      },
      {
@@ -2518,7 +2518,7 @@
        "Den roten Koffer packen",
        "Mama oder Pai vermissen dürfen",
        "Sagen, was ich mir wünsche",
-       "Mit Freunden Fußball spielen",
+       "Fußball spielen",
        "Knoten-Karte: Sie haben auch über mich gestritten.",
        "Bogen 2 (orange): Große-Leute-Sachen sind nicht meine Schuld."
       ]
@@ -2571,7 +2571,7 @@
        "Moien ! Je suis Luca, 8 ans. Maman et papa ne vivent plus ensemble.",
        "Papa – je dis Pai – habite à Clervaux. Le vendredi, je fais ma valise rouge. Le dimanche, Pai dit : « Até sexta ! » – à vendredi.",
        "Chez Pai, maman me manque. Chez maman, Pai me manque.",
-       "Avant, ils se disputaient souvent, aussi à mon sujet : je suis bruyant, je joue au foot dans le couloir. C’est ma faute ? – Luca"
+       "Avant, ils se disputaient souvent, aussi à mon sujet : je joue au foot dans le couloir. C’est ma faute ? – Luca"
       ]
      },
      {
@@ -2579,20 +2579,20 @@
       "karten": [
        "Où habitent maman et papa",
        "Si les parents restent ensemble",
-       "Comment les grands se disputent",
+       "Les disputes des grands",
        "Remettre maman et papa ensemble",
        "Faire sa valise rouge",
        "Maman ou Pai me manque : c’est permis",
-       "Dire ce que je souhaite",
-       "Jouer au foot avec les copains",
-       "Carte-nœud : ils se sont aussi disputés à mon sujet.",
+       "Dire mon souhait",
+       "Jouer au foot",
+       "Carte-nœud : ils se disputaient aussi à mon sujet.",
        "Arc 2 (orange) : Les histoires de grands, ce n’est pas ma faute."
       ]
      },
      {
       "titel": "Pour l’adulte : version douce",
       "karten": [
-       "En haut : habiter, rester ensemble, comment les grands se disputent, remettre ensemble · En bas : valise, le manque, dire son souhait, foot.",
+       "En haut : habiter, rester ensemble, les disputes des grands, remettre ensemble · En bas : valise, le manque, dire son souhait, foot.",
        "Nœud : même si les grands se disputent au sujet d’un enfant, la dispute est leur histoire. Un enfant ne crée pas une séparation – et ne peut pas l’effacer.",
        "Que l’autre parent manque, c’est l’émotion la plus fréquente avec deux chez-soi. Pas besoin de solution – juste : « Ça a le droit d’être là. »",
        "Version douce : seulement le personnage, rien de personnel. Si quelque chose vient de l’enfant : « Merci de me le dire. » – sans approfondir.",
@@ -4363,7 +4363,7 @@
       "titel": "Zoés Brief – Satz für Satz",
       "karten": [
        "Moien! Ich bin Zoé, 8. Seit dem Sommer wohne ich im Foyer, bei Jil und Pedro. Beim Essen sagen wir „Gudden Appetit!“",
-       "Mama sehe ich jeden zweiten Samstag. Jetzt fahre ich mit einem neuen Bus in eine neue Schule.",
+       "Mama sehe ich jeden zweiten Samstag. Neue Schule, neuer Bus!",
        "Ein Junge hat gefragt: „Warum wohnst du nicht bei deinen Eltern?“ Muss ich das sagen?",
        "Und: Kann ein Foyer ein Zuhause sein? – Zoé"
       ]
@@ -4374,8 +4374,8 @@
        "Sagen: „Das ist privat.“",
        "Ein Kuscheltier mitnehmen",
        "Jil sagen, was sie braucht",
-       "In der Pause fragen: „Spielst du mit?“",
-       "Für Mama ein Bild malen – für Samstag",
+       "In der Pause: „Spielst du mit?“",
+       "Für Mama ein Bild malen",
        "Entscheiden, wo Zoé wohnt",
        "Bogen 4 (grün): Meine Kinder-Sachen nehme ich in die Hand."
       ]
@@ -4384,7 +4384,7 @@
       "titel": "Familien-Karten (Kann)",
       "karten": [
        "Mama, Papa, Ella und Jo",
-       "Luca: Mama in Diekirch, Pai in Clervaux",
+       "Luca: zwei Zuhause",
        "Zwei Papas und Nico",
        "Bomi, Bopa und Tim",
        "Pflegeeltern und Kim"
@@ -4441,7 +4441,7 @@
       "titel": "La lettre de Zoé – phrase par phrase",
       "karten": [
        "Moien ! Je suis Zoé, 8 ans. Depuis l’été, je vis au foyer, avec Jil et Pedro. À table, on dit « Gudden Appetit ! »",
-       "Je vois maman un samedi sur deux. Je prends un nouveau bus pour une nouvelle école.",
+       "Je vois maman un samedi sur deux. Nouvelle école, nouveau bus !",
        "Un garçon m’a demandé : « Pourquoi tu n’habites pas avec tes parents ? » Je dois le dire ?",
        "Et : un foyer, ça peut être un chez-soi ? – Zoé"
       ]
@@ -4450,10 +4450,10 @@
       "titel": "Cartes « à moi de jouer » pour Zoé (avec la carte de l’arc)",
       "karten": [
        "Dire : « C’est privé. »",
-       "Garder sa peluche avec elle",
+       "Garder sa peluche",
        "Dire à Jil ce dont elle a besoin",
-       "À la récré, demander : « Tu joues avec moi ? »",
-       "Faire un dessin pour maman – pour samedi",
+       "À la récré : « Tu joues avec moi ? »",
+       "Faire un dessin pour maman",
        "Décider où Zoé habite",
        "Arc 4 (vert) : À moi de jouer – pas à pas."
       ]
@@ -4462,7 +4462,7 @@
       "titel": "Cartes familles (en option)",
       "karten": [
        "Maman, papa, Ella et Jo",
-       "Luca : maman à Diekirch, Pai à Clervaux",
+       "Luca : deux chez-soi",
        "Deux papas et Nico",
        "Bomi, Bopa et Tim",
        "Les parents d’accueil de Kim"
@@ -4746,7 +4746,7 @@
       "titel": "Zoés Brief – Satz für Satz",
       "karten": [
        "Moien! Ich bin Zoé, 8. Seit dem Sommer wohne ich im Foyer, bei Jil und Pedro. Beim Essen sagen wir „Gudden Appetit!“",
-       "Mama sehe ich jeden zweiten Samstag. Jetzt fahre ich mit einem neuen Bus in eine neue Schule.",
+       "Mama sehe ich jeden zweiten Samstag. Neue Schule, neuer Bus!",
        "Ein Junge hat gefragt: „Warum wohnst du nicht bei deinen Eltern?“ Muss ich das sagen?",
        "Und: Kann ein Foyer ein Zuhause sein? – Zoé"
       ]
@@ -4757,8 +4757,8 @@
        "Sagen: „Das ist privat.“",
        "Ein Kuscheltier mitnehmen",
        "Jil sagen, was sie braucht",
-       "In der Pause fragen: „Spielst du mit?“",
-       "Für Mama ein Bild malen – für Samstag",
+       "In der Pause: „Spielst du mit?“",
+       "Für Mama ein Bild malen",
        "Entscheiden, wo Zoé wohnt",
        "Bogen 4 (grün): Meine Kinder-Sachen nehme ich in die Hand."
       ]
@@ -4767,7 +4767,7 @@
       "titel": "Familien-Karten (Kann)",
       "karten": [
        "Mama, Papa, Ella und Jo",
-       "Luca: Mama in Diekirch, Pai in Clervaux",
+       "Luca: zwei Zuhause",
        "Zwei Papas und Nico",
        "Bomi, Bopa und Tim",
        "Pflegeeltern und Kim"
@@ -4824,7 +4824,7 @@
       "titel": "La lettre de Zoé – phrase par phrase",
       "karten": [
        "Moien ! Je suis Zoé, 8 ans. Depuis l’été, je vis au foyer, avec Jil et Pedro. À table, on dit « Gudden Appetit ! »",
-       "Je vois maman un samedi sur deux. Je prends un nouveau bus pour une nouvelle école.",
+       "Je vois maman un samedi sur deux. Nouvelle école, nouveau bus !",
        "Un garçon m’a demandé : « Pourquoi tu n’habites pas avec tes parents ? » Je dois le dire ?",
        "Et : un foyer, ça peut être un chez-soi ? – Zoé"
       ]
@@ -4833,10 +4833,10 @@
       "titel": "Cartes « à moi de jouer » pour Zoé (avec la carte de l’arc)",
       "karten": [
        "Dire : « C’est privé. »",
-       "Garder sa peluche avec elle",
+       "Garder sa peluche",
        "Dire à Jil ce dont elle a besoin",
-       "À la récré, demander : « Tu joues avec moi ? »",
-       "Faire un dessin pour maman – pour samedi",
+       "À la récré : « Tu joues avec moi ? »",
+       "Faire un dessin pour maman",
        "Décider où Zoé habite",
        "Arc 4 (vert) : À moi de jouer – pas à pas."
       ]
@@ -4845,7 +4845,7 @@
       "titel": "Cartes familles (en option)",
       "karten": [
        "Maman, papa, Ella et Jo",
-       "Luca : maman à Diekirch, Pai à Clervaux",
+       "Luca : deux chez-soi",
        "Deux papas et Nico",
        "Bomi, Bopa et Tim",
        "Les parents d’accueil de Kim"
@@ -5011,7 +5011,7 @@
       "titel": "Zoés Brief – Satz für Satz",
       "karten": [
        "Moien! Ich bin Zoé, 8. Seit dem Sommer wohne ich im Foyer, bei Jil und Pedro. Beim Essen sagen wir „Gudden Appetit!“",
-       "Mama sehe ich jeden zweiten Samstag. Jetzt fahre ich mit einem neuen Bus in eine neue Schule.",
+       "Mama sehe ich jeden zweiten Samstag. Neue Schule, neuer Bus!",
        "Ein Junge hat gefragt: „Warum wohnst du nicht bei deinen Eltern?“ Muss ich das sagen?",
        "Und: Kann ein Foyer ein Zuhause sein? – Zoé"
       ]
@@ -5022,8 +5022,8 @@
        "Sagen: „Das ist privat.“",
        "Ein Kuscheltier mitnehmen",
        "Jil sagen, was sie braucht",
-       "In der Pause fragen: „Spielst du mit?“",
-       "Für Mama ein Bild malen – für Samstag",
+       "In der Pause: „Spielst du mit?“",
+       "Für Mama ein Bild malen",
        "Entscheiden, wo Zoé wohnt",
        "Bogen 4 (grün): Meine Kinder-Sachen nehme ich in die Hand."
       ]
@@ -5076,7 +5076,7 @@
       "titel": "La lettre de Zoé – phrase par phrase",
       "karten": [
        "Moien ! Je suis Zoé, 8 ans. Depuis l’été, je vis au foyer, avec Jil et Pedro. À table, on dit « Gudden Appetit ! »",
-       "Je vois maman un samedi sur deux. Je prends un nouveau bus pour une nouvelle école.",
+       "Je vois maman un samedi sur deux. Nouvelle école, nouveau bus !",
        "Un garçon m’a demandé : « Pourquoi tu n’habites pas avec tes parents ? » Je dois le dire ?",
        "Et : un foyer, ça peut être un chez-soi ? – Zoé"
       ]
@@ -5085,10 +5085,10 @@
       "titel": "Cartes « à moi de jouer » pour Zoé (avec la carte de l’arc)",
       "karten": [
        "Dire : « C’est privé. »",
-       "Garder sa peluche avec elle",
+       "Garder sa peluche",
        "Dire à Jil ce dont elle a besoin",
-       "À la récré, demander : « Tu joues avec moi ? »",
-       "Faire un dessin pour maman – pour samedi",
+       "À la récré : « Tu joues avec moi ? »",
+       "Faire un dessin pour maman",
        "Décider où Zoé habite",
        "Arc 4 (vert) : À moi de jouer – pas à pas."
       ]
@@ -5251,7 +5251,7 @@
       "titel": "Zoés Brief – Satz für Satz",
       "karten": [
        "Moien! Ich bin Zoé, 8. Seit dem Sommer wohne ich im Foyer, bei Jil und Pedro. Beim Essen sagen wir „Gudden Appetit!“",
-       "Mama sehe ich jeden zweiten Samstag. Jetzt fahre ich mit einem neuen Bus in eine neue Schule.",
+       "Mama sehe ich jeden zweiten Samstag. Neue Schule, neuer Bus!",
        "Ein Junge hat gefragt: „Warum wohnst du nicht bei deinen Eltern?“ Muss ich das sagen?",
        "Und: Kann ein Foyer ein Zuhause sein? – Zoé"
       ]
@@ -5262,8 +5262,8 @@
        "Sagen: „Das ist privat.“",
        "Ein Kuscheltier mitnehmen",
        "Jil sagen, was sie braucht",
-       "In der Pause fragen: „Spielst du mit?“",
-       "Für Mama ein Bild malen – für Samstag",
+       "In der Pause: „Spielst du mit?“",
+       "Für Mama ein Bild malen",
        "Entscheiden, wo Zoé wohnt",
        "Bogen 4 (grün): Meine Kinder-Sachen nehme ich in die Hand."
       ]
@@ -5314,7 +5314,7 @@
       "titel": "La lettre de Zoé – phrase par phrase",
       "karten": [
        "Moien ! Je suis Zoé, 8 ans. Depuis l’été, je vis au foyer, avec Jil et Pedro. À table, on dit « Gudden Appetit ! »",
-       "Je vois maman un samedi sur deux. Je prends un nouveau bus pour une nouvelle école.",
+       "Je vois maman un samedi sur deux. Nouvelle école, nouveau bus !",
        "Un garçon m’a demandé : « Pourquoi tu n’habites pas avec tes parents ? » Je dois le dire ?",
        "Et : un foyer, ça peut être un chez-soi ? – Zoé"
       ]
@@ -5323,10 +5323,10 @@
       "titel": "Cartes « à moi de jouer » pour Zoé (avec la carte de l’arc)",
       "karten": [
        "Dire : « C’est privé. »",
-       "Garder sa peluche avec elle",
+       "Garder sa peluche",
        "Dire à Jil ce dont elle a besoin",
-       "À la récré, demander : « Tu joues avec moi ? »",
-       "Faire un dessin pour maman – pour samedi",
+       "À la récré : « Tu joues avec moi ? »",
+       "Faire un dessin pour maman",
        "Décider où Zoé habite",
        "Arc 4 (vert) : À moi de jouer – pas à pas."
       ]
@@ -7306,9 +7306,9 @@
       "titel": "Fest-Post",
       "karten": [
        "Joëlle: Danke, Regenbogen-Profi! Das Fest hieß „……“, auf dem Plakat stand: „……“.",
-       "Luca: Mama kam zum Fest. Pai hat ihn danach abgeholt und sein Bild angeschaut. Luca hat bei beiden gelacht.",
-       "Amira: Mama, Marc und Léo waren da. Zehn Minuten nur mit Mama am Kuchentisch. Froh – und ein bisschen neidisch.",
-       "Zoé: Sie kam mit Jil. Für Mama hat sie eine Karte gemalt. Ein Junge fragte wieder – Zoé sagte: „Das ist privat. Spielst du mit?“"
+       "Luca: Mama kam. Pai hat ihn abgeholt und sein Bild angeschaut. Luca hat bei beiden gelacht.",
+       "Amira: Mama, Marc und Léo waren da. Zehn Minuten nur mit Mama. Froh – und ein bisschen neidisch.",
+       "Zoé: Sie kam mit Jil – und mit einem Bild für Mama. Ein Junge fragte wieder – Zoé: „Das ist privat. Spielst du mit?“"
       ]
      },
      {
@@ -7371,9 +7371,9 @@
       "titel": "Courrier de la fête",
       "karten": [
        "Joëlle : Merci, pro de l’arc-en-ciel ! La fête s’appelait « …… », sur l’affiche : « …… ».",
-       "Luca : maman est venue à la fête. Pai est venu le chercher et a regardé son dessin. Luca a ri avec les deux.",
-       "Amira : maman, Marc et Léo étaient là. Dix minutes seule avec maman à la table des gâteaux. Contente – et un peu jalouse.",
-       "Zoé : elle est venue avec Jil et a dessiné une carte pour maman. Un garçon a reposé la question – Zoé : « C’est privé. Tu joues ? »"
+       "Luca : maman est venue. Pai est venu le chercher et a regardé son dessin. Luca a ri avec les deux.",
+       "Amira : maman, Marc et Léo étaient là. Dix minutes rien qu’avec maman. Contente – et un peu jalouse.",
+       "Zoé est venue avec Jil – et avec un dessin pour maman. Un garçon a redemandé – Zoé : « C’est privé. Tu joues ? »"
       ]
      },
      {
@@ -7725,9 +7725,9 @@
       "titel": "Fest-Post",
       "karten": [
        "Joëlle: Danke, Regenbogen-Profi! Das Fest hieß „……“, auf dem Plakat stand: „……“.",
-       "Luca: Mama kam zum Fest. Pai hat ihn danach abgeholt und sein Bild angeschaut. Luca hat bei beiden gelacht.",
-       "Amira: Mama, Marc und Léo waren da. Zehn Minuten nur mit Mama am Kuchentisch. Froh – und ein bisschen neidisch.",
-       "Zoé: Sie kam mit Jil. Für Mama hat sie eine Karte gemalt. Ein Junge fragte wieder – Zoé sagte: „Das ist privat. Spielst du mit?“"
+       "Luca: Mama kam. Pai hat ihn abgeholt und sein Bild angeschaut. Luca hat bei beiden gelacht.",
+       "Amira: Mama, Marc und Léo waren da. Zehn Minuten nur mit Mama. Froh – und ein bisschen neidisch.",
+       "Zoé: Sie kam mit Jil – und mit einem Bild für Mama. Ein Junge fragte wieder – Zoé: „Das ist privat. Spielst du mit?“"
       ]
      },
      {
@@ -7790,9 +7790,9 @@
       "titel": "Courrier de la fête",
       "karten": [
        "Joëlle : Merci, pro de l’arc-en-ciel ! La fête s’appelait « …… », sur l’affiche : « …… ».",
-       "Luca : maman est venue à la fête. Pai est venu le chercher et a regardé son dessin. Luca a ri avec les deux.",
-       "Amira : maman, Marc et Léo étaient là. Dix minutes seule avec maman à la table des gâteaux. Contente – et un peu jalouse.",
-       "Zoé : elle est venue avec Jil et a dessiné une carte pour maman. Un garçon a reposé la question – Zoé : « C’est privé. Tu joues ? »"
+       "Luca : maman est venue. Pai est venu le chercher et a regardé son dessin. Luca a ri avec les deux.",
+       "Amira : maman, Marc et Léo étaient là. Dix minutes rien qu’avec maman. Contente – et un peu jalouse.",
+       "Zoé est venue avec Jil – et avec un dessin pour maman. Un garçon a redemandé – Zoé : « C’est privé. Tu joues ? »"
       ]
      },
      {
@@ -8198,9 +8198,9 @@
       "titel": "Fest-Post",
       "karten": [
        "Joëlle: Danke, Regenbogen-Profi! Das Fest hieß „……“, auf dem Plakat stand: „……“.",
-       "Luca: Mama kam zum Fest. Pai hat ihn danach abgeholt und sein Bild angeschaut. Luca hat bei beiden gelacht.",
-       "Amira: Mama, Marc und Léo waren da. Zehn Minuten nur mit Mama am Kuchentisch. Froh – und ein bisschen neidisch.",
-       "Zoé: Sie kam mit Jil. Für Mama hat sie eine Karte gemalt. Ein Junge fragte wieder – Zoé sagte: „Das ist privat. Spielst du mit?“"
+       "Luca: Mama kam. Pai hat ihn abgeholt und sein Bild angeschaut. Luca hat bei beiden gelacht.",
+       "Amira: Mama, Marc und Léo waren da. Zehn Minuten nur mit Mama. Froh – und ein bisschen neidisch.",
+       "Zoé: Sie kam mit Jil – und mit einem Bild für Mama. Ein Junge fragte wieder – Zoé: „Das ist privat. Spielst du mit?“"
       ]
      },
      {
@@ -8258,9 +8258,9 @@
       "titel": "Courrier de la fête",
       "karten": [
        "Joëlle : Merci, pro de l’arc-en-ciel ! La fête s’appelait « …… », sur l’affiche : « …… ».",
-       "Luca : maman est venue à la fête. Pai est venu le chercher et a regardé son dessin. Luca a ri avec les deux.",
-       "Amira : maman, Marc et Léo étaient là. Dix minutes seule avec maman à la table des gâteaux. Contente – et un peu jalouse.",
-       "Zoé : elle est venue avec Jil et a dessiné une carte pour maman. Un garçon a reposé la question – Zoé : « C’est privé. Tu joues ? »"
+       "Luca : maman est venue. Pai est venu le chercher et a regardé son dessin. Luca a ri avec les deux.",
+       "Amira : maman, Marc et Léo étaient là. Dix minutes rien qu’avec maman. Contente – et un peu jalouse.",
+       "Zoé est venue avec Jil – et avec un dessin pour maman. Un garçon a redemandé – Zoé : « C’est privé. Tu joues ? »"
       ]
      },
      {

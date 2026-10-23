@@ -4094,7 +4094,7 @@
      "art": "info",
      "symbol": "wissen",
      "titel": "Gut zu wissen",
-     "text": "Ein Stich sagt etwas über den, der sticht – nicht über dich. Wird jemand wegen Hautfarbe, Herkunft, Sprache, Name oder Religion kleingemacht, ist das Rassismus – auch beim ersten Mal und auch als „Witz“. Erwachsene müssen dann helfen."
+     "text": "Ein Stich sagt etwas über den, der sticht – nicht über dich. Kleinmachen wegen Hautfarbe, Herkunft, Sprache, Name oder Religion ist Rassismus – auch einmalig, auch als „Witz“. Erwachsene müssen dann helfen."
     },
     {
      "art": "aufgabe",
@@ -4190,7 +4190,7 @@
      "art": "info",
      "symbol": "wissen",
      "titel": "Bon à savoir",
-     "text": "Une piqûre en dit plus sur celui qui pique que sur toi. Rabaisser quelqu’un pour sa couleur de peau, son origine, sa langue, son nom ou sa religion, c’est du racisme – même la première fois, même « pour rire ». Les adultes doivent alors aider."
+     "text": "Une piqûre en dit plus sur celui qui pique que sur toi. Rabaisser quelqu’un pour sa couleur de peau, son origine, sa langue, son nom ou sa religion, c’est du racisme – même une fois, même « pour rire ». Les adultes doivent alors aider."
     },
     {
      "art": "aufgabe",
@@ -4267,7 +4267,7 @@
      "Antwort-Karten mit Abstand auf den Boden, die Pause-Karte zum Kind",
      "Karte „Nur für dich“ vorher lesen; Stich-Sätze flach vorlesen üben"
     ],
-    "aufbau": "0′ Zettel 4 – „Was meint der Schreiber?“\n2′ Vormachen – Fachkraft führt Jonas’ Karte durch Pause – spüren – wählen\n5′ Üben – Kind wählt Person und Satz, führt Regie\n8′ Danebenstehen – „Was tust du?“\n10′ Merksatz, Spur 4\n12–20′ Blatt: Antworten, Hilfe-Liste\nMuss: eine Regie-Runde, Danebenstehen, Hilfe-Liste. Knapp: eine Runde.",
+    "aufbau": "0′ Zettel 4 – „Was meint der Schreiber?“\n1′ Vormachen – Fachkraft führt Jonas’ Karte durch Pause – spüren – wählen\n3′ Üben – Kind wählt Person und Satz, führt Regie\n8′ Danebenstehen – „Was tust du?“\n10′ Merksatz, Spur 4\n12–20′ Blatt: Antworten, Hilfe-Liste\nMuss: eine Regie-Runde, Hilfe-Liste. Kann: Danebenstehen als zweite Runde. Wird es knapp: Danebenstehen nur als Frage beim Merksatz.",
     "karten": [
      {
       "titel": "Stich-Sätze (offen nach Person legen; das Kind wählt, die Fachkraft liest flach vor)",
@@ -4284,7 +4284,7 @@
       "titel": "Antwort-Karten (auf den Boden) und Pause-Karte",
       "karten": [
        "Nachfragen: „Wéi mengs du dat?“ – Wie meinst du das?",
-       "Klarstellen: „Ech si vun hei.“ · „Ech wunnen hei.“ · „Mäin Numm ass …“ · „Schwätz normal mat mir – a kuck mech un.“ · „Nicht anfassen.“",
+       "Klarstellen: „Ech si vun hei.“ · „Ech wunnen hei.“ · „Mäin Numm ass …“ · „Schwätz normal mat mir – a kuck mech un.“ · „Net upaken.“",
        "Weggehen und sagen: einer erwachsenen Person, der ich vertraue – oder 116 111.",
        "Danebenstehen: zu der Person gehen – „Komm, wir gehen.“ – und eine Erwachsene holen.",
        "PAUSE"
@@ -4294,15 +4294,14 @@
       "titel": "Nur für dich: Regie, Schutz, Hilfewege",
       "karten": [
        "Vorlesen flach, ohne Akzent. Das Kind führt Regie mit der Stimmen-Karte; es spricht nie in Ich-Form als Gestochene und spielt nie, wer sticht.",
-       "Abwertung wegen Hautfarbe, Herkunft, Sprache, Name oder Religion ist Rassismus – auch einmalig, auch als „Witz“. Benennen, ernst nehmen.",
-       "Hören oder sehen Sie es selbst: sofort ruhig einschreiten („Stopp. So reden wir hier nicht über Menschen.“) und es der Leitung sagen.",
+       "Hören oder sehen Sie es selbst: sofort ruhig einschreiten („Stopp. So reden wir hier nicht über Menschen.“), es benennen und der Leitung sagen.",
        "Das Einverständnis des Kindes betrifft, was mit seiner Geschichte passiert – nicht, ob die Einrichtung handelt.",
        "Eigenes Erlebnis: „Danke, dass du es sagst. Das war nicht okay, und es ist nicht deine Schuld.“ Nicht ausfragen.",
        "„Was du erzählst, bleibt bei mir – außer jemand ist in Gefahr. Dann hole ich Hilfe und sage es dir vorher.“",
        "Sticht ein betroffenes Kind zurück: erst „Das hat dich verletzt. Das war nicht okay.“, dann „Was würde dich nächstes Mal schützen?“",
        "Was Jonas hilft: deutlich sprechen, Gesicht sichtbar – nicht lauter. Haare: nur vorlesen, nie anfassen oder nachspielen.",
-       "Erwachsene: Centre pour l’égalité de traitement, Tel. 26 48 30 33, info@cet.lu · OKAJU 28 37 36 35 · Elterentelefon 8002 4444.",
-       "Mit Eltern in ihrer Sprache: interkulturelle Mediation des Bildungsministeriums, Anfrage über die Schule. Kind: 116 111 · Gefahr 112/113."
+       "Erwachsene: CET (Gleichbehandlung) 26 48 30 33 · OKAJU 28 37 36 35 · Elterentelefon 8002 4444. Kind: 116 111 · Gefahr 112/113.",
+       "Mit Eltern in ihrer Sprache: kostenlose interkulturelle Mediation des Bildungsministeriums (SIA) – Anfrage durch Eltern oder über die Schule."
       ]
      }
     ],
@@ -4338,7 +4337,7 @@
      "Cartes-réponses au sol, espacées ; la carte pause près de l’enfant",
      "Lire d’abord « Pour l’adulte » ; s’entraîner à lire les phrases d’une voix neutre"
     ],
-    "aufbau": "0′ Petit mot 4 – « Que veut dire celui qui écrit ? »\n2′ Montrer – l’adulte mène la carte de Jonas : pause – sentir – choisir\n5′ S’entraîner – l’enfant choisit personne et phrase, fait la mise en scène\n8′ Être à côté – « Que fais-tu ? »\n10′ Phrase-clé, trace 4\n12–20′ Fiche : réponses, liste d’aide\nIndispensable : un tour, être à côté, liste d’aide. Serré : un tour.",
+    "aufbau": "0′ Petit mot 4 – « Que veut dire celui qui écrit ? »\n1′ Montrer – l’adulte mène la carte de Jonas : pause – sentir – choisir\n3′ S’entraîner – l’enfant choisit personne et phrase, fait la mise en scène\n8′ Être à côté – « Que fais-tu ? »\n10′ Phrase-clé, trace 4\n12–20′ Fiche : réponses, liste d’aide\nIndispensable : un tour de mise en scène, liste d’aide. Possible : être à côté, en deuxième tour. Si c’est serré : être à côté seulement en question, avec la phrase-clé.",
     "karten": [
      {
       "titel": "Phrases qui piquent (face visible, triées par personne ; l’enfant choisit, l’adulte lit d’une voix neutre)",
@@ -4355,7 +4354,7 @@
       "titel": "Cartes-réponses (au sol) et carte pause",
       "karten": [
        "Demander : « Wéi mengs du dat? » – Comment ça ?",
-       "Mettre au clair : « Ech si vun hei. » · « Ech wunnen hei. » · « Mäin Numm ass … » · « Schwätz normal mat mir – a kuck mech un. » · « Ne touche pas. »",
+       "Mettre au clair : « Ech si vun hei. » · « Ech wunnen hei. » · « Mäin Numm ass … » · « Schwätz normal mat mir – a kuck mech un. » · « Net upaken. »",
        "Partir et le dire : à un adulte de confiance – ou au 116 111.",
        "Être à côté : aller vers la personne – « Viens, on s’en va. » – et chercher un adulte.",
        "PAUSE"
@@ -4365,15 +4364,14 @@
       "titel": "Pour l’adulte : mise en scène, protection, aides",
       "karten": [
        "Voix neutre, sans accent. L’enfant fait la mise en scène avec la carte-voix ; jamais au « je » comme la personne piquée, jamais celle qui pique.",
-       "Rabaisser quelqu’un pour sa couleur de peau, son origine, sa langue, son nom ou sa religion, c’est du racisme – même une fois, même « pour rire ». Le nommer.",
-       "Si vous l’entendez vous-même : intervenir tout de suite, calmement (« Stop. Ici, on ne parle pas des gens comme ça. ») et le signaler à la direction.",
+       "Si vous l’entendez vous-même : intervenir tout de suite, calmement (« Stop. Ici, on ne parle pas des gens comme ça. »), le nommer, le dire à la direction.",
        "L’accord de l’enfant porte sur ce qui arrive à son histoire – pas sur le fait que la structure agisse ou non.",
        "Vécu de l’enfant : « Merci de me le dire. Ce n’était pas correct, et ce n’est pas ta faute. » Ne pas questionner.",
        "« Ce que tu racontes reste entre nous – sauf si quelqu’un est en danger. Alors je cherche de l’aide et je te le dis avant. »",
        "Si un enfant concerné pique en retour : d’abord « Ça t’a blessé. Ce n’était pas correct. », puis « Qu’est-ce qui te protégerait la prochaine fois ? »",
        "Ce qui aide Jonas : parler clairement, visage visible – pas plus fort. Cheveux : seulement lire, ne jamais toucher ni rejouer.",
-       "Adultes : Centre pour l’égalité de traitement, tél. 26 48 30 33, info@cet.lu · OKAJU 28 37 36 35 · Elterentelefon 8002 4444.",
-       "Parler aux parents dans leur langue : médiation interculturelle du ministère, demande via l’école. Enfant : 116 111 · danger 112/113."
+       "Adultes : CET (égalité de traitement) 26 48 30 33 · OKAJU 28 37 36 35 · Elterentelefon 8002 4444. Enfant : 116 111 · danger 112/113.",
+       "Parler aux parents dans leur langue : médiation interculturelle gratuite du ministère (SIA) – demande par les parents ou via l’école."
       ]
      }
     ],
@@ -4564,7 +4562,7 @@
      "art": "info",
      "symbol": "wissen",
      "titel": "Gut zu wissen",
-     "text": "Ein Stich sagt etwas über den, der sticht – nicht über dich. Wird jemand wegen Hautfarbe, Herkunft, Sprache, Name oder Religion kleingemacht, ist das Rassismus – auch beim ersten Mal und auch als „Witz“. Erwachsene müssen dann helfen."
+     "text": "Ein Stich sagt etwas über den, der sticht – nicht über dich. Kleinmachen wegen Hautfarbe, Herkunft, Sprache, Name oder Religion ist Rassismus – auch einmalig, auch als „Witz“. Erwachsene müssen dann helfen."
     },
     {
      "art": "aufgabe",
@@ -4667,7 +4665,7 @@
      "art": "info",
      "symbol": "wissen",
      "titel": "Bon à savoir",
-     "text": "Une piqûre en dit plus sur celui qui pique que sur toi. Rabaisser quelqu’un pour sa couleur de peau, son origine, sa langue, son nom ou sa religion, c’est du racisme – même la première fois, même « pour rire ». Les adultes doivent alors aider."
+     "text": "Une piqûre en dit plus sur celui qui pique que sur toi. Rabaisser quelqu’un pour sa couleur de peau, son origine, sa langue, son nom ou sa religion, c’est du racisme – même une fois, même « pour rire ». Les adultes doivent alors aider."
     },
     {
      "art": "aufgabe",
@@ -4751,7 +4749,7 @@
      "Antwort-Karten mit Abstand auf den Boden, die Pause-Karte zum Kind",
      "Karte „Nur für dich“ vorher lesen; Stich-Sätze flach vorlesen üben"
     ],
-    "aufbau": "0′ Zettel 4 – „Was meint der Schreiber?“\n2′ Vormachen – Fachkraft führt Jonas’ Karte durch Pause – spüren – wählen\n5′ Üben – Kind wählt Person und Satz, führt Regie\n8′ Danebenstehen – „Was tust du?“\n10′ Merksatz, Spur 4\n12–20′ Blatt: Antworten, Hilfe-Liste\nMuss: eine Regie-Runde, Danebenstehen, Hilfe-Liste. Knapp: eine Runde.",
+    "aufbau": "0′ Zettel 4 – „Was meint der Schreiber?“\n1′ Vormachen – Fachkraft führt Jonas’ Karte durch Pause – spüren – wählen\n3′ Üben – Kind wählt Person und Satz, führt Regie\n8′ Danebenstehen – „Was tust du?“\n10′ Merksatz, Spur 4\n12–20′ Blatt: Antworten, Hilfe-Liste\nMuss: eine Regie-Runde, Hilfe-Liste. Kann: Danebenstehen als zweite Runde. Wird es knapp: Danebenstehen nur als Frage beim Merksatz.",
     "karten": [
      {
       "titel": "Stich-Sätze (offen nach Person legen; das Kind wählt, die Fachkraft liest flach vor)",
@@ -4768,7 +4766,7 @@
       "titel": "Antwort-Karten (auf den Boden) und Pause-Karte",
       "karten": [
        "Nachfragen: „Wéi mengs du dat?“ – Wie meinst du das?",
-       "Klarstellen: „Ech si vun hei.“ · „Ech wunnen hei.“ · „Mäin Numm ass …“ · „Schwätz normal mat mir – a kuck mech un.“ · „Nicht anfassen.“",
+       "Klarstellen: „Ech si vun hei.“ · „Ech wunnen hei.“ · „Mäin Numm ass …“ · „Schwätz normal mat mir – a kuck mech un.“ · „Net upaken.“",
        "Weggehen und sagen: einer erwachsenen Person, der ich vertraue – oder 116 111.",
        "Danebenstehen: zu der Person gehen – „Komm, wir gehen.“ – und eine Erwachsene holen.",
        "PAUSE"
@@ -4778,15 +4776,14 @@
       "titel": "Nur für dich: Regie, Schutz, Hilfewege",
       "karten": [
        "Vorlesen flach, ohne Akzent. Das Kind führt Regie mit der Stimmen-Karte; es spricht nie in Ich-Form als Gestochene und spielt nie, wer sticht.",
-       "Abwertung wegen Hautfarbe, Herkunft, Sprache, Name oder Religion ist Rassismus – auch einmalig, auch als „Witz“. Benennen, ernst nehmen.",
-       "Hören oder sehen Sie es selbst: sofort ruhig einschreiten („Stopp. So reden wir hier nicht über Menschen.“) und es der Leitung sagen.",
+       "Hören oder sehen Sie es selbst: sofort ruhig einschreiten („Stopp. So reden wir hier nicht über Menschen.“), es benennen und der Leitung sagen.",
        "Das Einverständnis des Kindes betrifft, was mit seiner Geschichte passiert – nicht, ob die Einrichtung handelt.",
        "Eigenes Erlebnis: „Danke, dass du es sagst. Das war nicht okay, und es ist nicht deine Schuld.“ Nicht ausfragen.",
        "„Was du erzählst, bleibt bei mir – außer jemand ist in Gefahr. Dann hole ich Hilfe und sage es dir vorher.“",
        "Sticht ein betroffenes Kind zurück: erst „Das hat dich verletzt. Das war nicht okay.“, dann „Was würde dich nächstes Mal schützen?“",
        "Was Jonas hilft: deutlich sprechen, Gesicht sichtbar – nicht lauter. Haare: nur vorlesen, nie anfassen oder nachspielen.",
-       "Erwachsene: Centre pour l’égalité de traitement, Tel. 26 48 30 33, info@cet.lu · OKAJU 28 37 36 35 · Elterentelefon 8002 4444.",
-       "Mit Eltern in ihrer Sprache: interkulturelle Mediation des Bildungsministeriums, Anfrage über die Schule. Kind: 116 111 · Gefahr 112/113."
+       "Erwachsene: CET (Gleichbehandlung) 26 48 30 33 · OKAJU 28 37 36 35 · Elterentelefon 8002 4444. Kind: 116 111 · Gefahr 112/113.",
+       "Mit Eltern in ihrer Sprache: kostenlose interkulturelle Mediation des Bildungsministeriums (SIA) – Anfrage durch Eltern oder über die Schule."
       ]
      }
     ],
@@ -4822,7 +4819,7 @@
      "Cartes-réponses au sol, espacées ; la carte pause près de l’enfant",
      "Lire d’abord « Pour l’adulte » ; s’entraîner à lire les phrases d’une voix neutre"
     ],
-    "aufbau": "0′ Petit mot 4 – « Que veut dire celui qui écrit ? »\n2′ Montrer – l’adulte mène la carte de Jonas : pause – sentir – choisir\n5′ S’entraîner – l’enfant choisit personne et phrase, fait la mise en scène\n8′ Être à côté – « Que fais-tu ? »\n10′ Phrase-clé, trace 4\n12–20′ Fiche : réponses, liste d’aide\nIndispensable : un tour, être à côté, liste d’aide. Serré : un tour.",
+    "aufbau": "0′ Petit mot 4 – « Que veut dire celui qui écrit ? »\n1′ Montrer – l’adulte mène la carte de Jonas : pause – sentir – choisir\n3′ S’entraîner – l’enfant choisit personne et phrase, fait la mise en scène\n8′ Être à côté – « Que fais-tu ? »\n10′ Phrase-clé, trace 4\n12–20′ Fiche : réponses, liste d’aide\nIndispensable : un tour de mise en scène, liste d’aide. Possible : être à côté, en deuxième tour. Si c’est serré : être à côté seulement en question, avec la phrase-clé.",
     "karten": [
      {
       "titel": "Phrases qui piquent (face visible, triées par personne ; l’enfant choisit, l’adulte lit d’une voix neutre)",
@@ -4839,7 +4836,7 @@
       "titel": "Cartes-réponses (au sol) et carte pause",
       "karten": [
        "Demander : « Wéi mengs du dat? » – Comment ça ?",
-       "Mettre au clair : « Ech si vun hei. » · « Ech wunnen hei. » · « Mäin Numm ass … » · « Schwätz normal mat mir – a kuck mech un. » · « Ne touche pas. »",
+       "Mettre au clair : « Ech si vun hei. » · « Ech wunnen hei. » · « Mäin Numm ass … » · « Schwätz normal mat mir – a kuck mech un. » · « Net upaken. »",
        "Partir et le dire : à un adulte de confiance – ou au 116 111.",
        "Être à côté : aller vers la personne – « Viens, on s’en va. » – et chercher un adulte.",
        "PAUSE"
@@ -4849,15 +4846,14 @@
       "titel": "Pour l’adulte : mise en scène, protection, aides",
       "karten": [
        "Voix neutre, sans accent. L’enfant fait la mise en scène avec la carte-voix ; jamais au « je » comme la personne piquée, jamais celle qui pique.",
-       "Rabaisser quelqu’un pour sa couleur de peau, son origine, sa langue, son nom ou sa religion, c’est du racisme – même une fois, même « pour rire ». Le nommer.",
-       "Si vous l’entendez vous-même : intervenir tout de suite, calmement (« Stop. Ici, on ne parle pas des gens comme ça. ») et le signaler à la direction.",
+       "Si vous l’entendez vous-même : intervenir tout de suite, calmement (« Stop. Ici, on ne parle pas des gens comme ça. »), le nommer, le dire à la direction.",
        "L’accord de l’enfant porte sur ce qui arrive à son histoire – pas sur le fait que la structure agisse ou non.",
        "Vécu de l’enfant : « Merci de me le dire. Ce n’était pas correct, et ce n’est pas ta faute. » Ne pas questionner.",
        "« Ce que tu racontes reste entre nous – sauf si quelqu’un est en danger. Alors je cherche de l’aide et je te le dis avant. »",
        "Si un enfant concerné pique en retour : d’abord « Ça t’a blessé. Ce n’était pas correct. », puis « Qu’est-ce qui te protégerait la prochaine fois ? »",
        "Ce qui aide Jonas : parler clairement, visage visible – pas plus fort. Cheveux : seulement lire, ne jamais toucher ni rejouer.",
-       "Adultes : Centre pour l’égalité de traitement, tél. 26 48 30 33, info@cet.lu · OKAJU 28 37 36 35 · Elterentelefon 8002 4444.",
-       "Parler aux parents dans leur langue : médiation interculturelle du ministère, demande via l’école. Enfant : 116 111 · danger 112/113."
+       "Adultes : CET (égalité de traitement) 26 48 30 33 · OKAJU 28 37 36 35 · Elterentelefon 8002 4444. Enfant : 116 111 · danger 112/113.",
+       "Parler aux parents dans leur langue : médiation interculturelle gratuite du ministère (SIA) – demande par les parents ou via l’école."
       ]
      }
     ],
