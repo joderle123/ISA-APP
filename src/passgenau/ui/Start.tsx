@@ -10,6 +10,7 @@ import { useRueckmeldung } from './Nachher'
 import { dauerVorgabe } from './Wege'
 import { quoteText } from './Praxis'
 import { KursHinweis } from './Kurse'
+import { pdfOeffnen } from './anzeige'
 
 function Weg({ titel, farbe, icon, text, punkte, onClick }: { titel: string; farbe: [string, string]; icon: Zeichen; text: string; punkte: string[]; onClick: () => void }) {
   return (
@@ -227,7 +228,66 @@ export function Start() {
           </div>
         )}
       </div>
+      {!ohne && <RahmenplanKarte />}
     </>
+  )
+}
+
+/** Rahmenplan-Nachweis (23.10.2026): welche Handlungsfelder die gehaltenen Stunden berühren – als PDF ohne Namen fürs
+ *  Journal de bord des Dienstes (Nachweis der Umsetzung des Concept d'action général) */
+function RahmenplanKarte() {
+  const pg = usePg()
+  const plaene = useMemo(() => [...(pg.plan ? [pg.plan] : []), ...pg.verlauf.plaene.filter((x) => x.id !== pg.plan?.id)], [pg.plan, pg.verlauf.plaene])
+  const n = useMemo(() => (pg.katalog ? K.rahmenplanNachweis(pg.katalog, plaene, { sprache: 'de' }) : null), [pg.katalog, plaene])
+  const [laeuft, setLaeuft] = useState(false)
+  if (!n || !n.zeilen.length || !pg.katalog) return null
+  const max = Math.max(1, ...n.jeFeld.map((f) => f.n))
+  const drucken = async (sprache: Sprache) => {
+    setLaeuft(true)
+    pg.hinweisZeigen('PDF wird erstellt …', 'info')
+    try {
+      const vorname = pg.druck.vorname ? pg.profil?.vorname : undefined
+      const blob = await K.pdfNachweis(pg.katalog!, plaene, { sprache, ...(vorname ? { vorname } : {}) })
+      const datei = sprache === 'fr' ? 'Passgenau-Releve-cadre-de-reference.pdf' : 'Passgenau-Rahmenplan-Nachweis.pdf'
+      const pdf = pdfOeffnen(blob, datei)
+      pg.hinweisZeigen(pdf.geoeffnet ? 'Die PDF ist fertig.' : 'Die PDF ist fertig – der Browser hat sie heruntergeladen.', 'ok', { label: 'PDF öffnen', aktion: () => void pdf.nochmal() }, 12000, datei)
+    } catch {
+      pg.hinweisZeigen('Die PDF ließ sich nicht erstellen.', 'warn')
+    } finally {
+      setLaeuft(false)
+    }
+  }
+  return (
+    <div className="pg-card pg-nachweis">
+      <h2>
+        Rahmenplan-Nachweis <Pill>{n.zeilen.length} {n.zeilen.length === 1 ? 'Stunde' : 'Stunden'}</Pill>
+      </h2>
+      <p className="pg-leise">Welche Handlungsfelder des Nationalen Rahmenplans die gehaltenen Stunden berühren – als Liste ohne Namen und Ziel-Codes, zum Ablegen im Journal de bord.</p>
+      <div className="pg-nw-felder">
+        {n.jeFeld.map((f) => {
+          const x = K.FELDER.find((y) => y.id === f.id)!
+          return (
+            <div key={f.id} className="pg-nw-zeile" title={`${x.de} · ${x.fr}`}>
+              <span>{x.kurz}</span>
+              <span className="pg-nw-balken">
+                <i style={{ width: `${(100 * f.n) / max}%`, background: x.farbe[0] }} />
+              </span>
+              <b>{f.n}</b>
+            </div>
+          )
+        })}
+      </div>
+      <div className="pg-btnrow">
+        <button type="button" className="pg-btn klein" disabled={laeuft} onClick={() => void drucken('de')}>
+          <Ic n="drucken" />
+          Nachweis als PDF
+        </button>
+        <button type="button" className="pg-btn klein" disabled={laeuft} onClick={() => void drucken('fr')}>
+          <Ic n="drucken" />
+          Relevé en français
+        </button>
+      </div>
+    </div>
   )
 }
 

@@ -5410,3 +5410,41 @@ p.pg-kb-tausch {
   color: var(--ink-2, #4a5263);
   font-size: var(--fs-sm, 14px);
 }
+
+/* Rahmenplan-Nachweis auf dem Start (Journal de bord) */
+.pg-nachweis .pg-nw-felder {
+  display: grid;
+  gap: 5px;
+  margin: 10px 0 12px;
+}
+.pg-nw-zeile {
+  display: grid;
+  grid-template-columns: minmax(0, 190px) minmax(0, 1fr) 28px;
+  gap: 10px;
+  align-items: center;
+  font-size: var(--fs-sm, 14px);
+}
+.pg-nw-zeile span:first-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.pg-nw-balken {
+  height: 10px;
+  border-radius: 5px;
+  background: var(--surface-2);
+  overflow: hidden;
+}
+.pg-nw-balken i {
+  display: block;
+  height: 100%;
+  border-radius: 5px;
+}
+.pg-nw-zeile b {
+  text-align: right;
+}
+@media (max-width: 520px) {
+  .pg-nw-zeile {
+    grid-template-columns: minmax(0, 130px) minmax(0, 1fr) 24px;
+  }
+}

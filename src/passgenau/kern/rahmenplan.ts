@@ -1,7 +1,8 @@
 // Luxemburger Standard (22.10.2026): Bezug jeder Stunde zu den Handlungsfeldern des Nationalen Rahmenplans zur
 // non-formalen Bildung (Cadre de référence national, für staatlich geförderte Dienste verbindlich; RGD vom 17. Juni 2024).
 // Zugeordnet wird aus Format, Kompetenz und Thema der Schritte – ein Hinweis für Nachweis und Planung, keine Bewertung.
-import type { KatalogEintrag } from '../typen'
+import type { KatalogEintrag, Plan, Sprache } from '../typen'
+import { textVon, type Katalog } from './katalog'
 import type { FeldId } from './formen'
 import { formVon } from './formen'
 
@@ -50,4 +51,78 @@ export function felderStunde(eintraege: (KatalogEintrag | undefined)[], form?: s
   for (const e of eintraege) for (const [i, x] of felderVon(e).entries()) n.set(x, (n.get(x) ?? 0) + (i === 0 ? 2 : 1))
   for (const x of formVon(form)?.felder ?? []) n.set(x, (n.get(x) ?? 0) + 2)
   return [...n.entries()].sort((a, b) => b[1] - a[1]).map(([x]) => x)
+}
+
+// ---------------------------------------------------------------------------------------------------------------------
+// Nachweis (23.10.2026): Dienste der non-formalen Bildung führen ein Journal de bord, das die Umsetzung ihres
+// Concept d'action général belegt (Kontrolle durch die Regionalagent·innen des SNJ). Aus den gehaltenen Stunden entsteht
+// eine Liste ohne Namen: Datum, Aktivität, Minuten, Sozialform, Handlungsfelder – und je Feld die Zahl der Stunden.
+
+export interface NachweisZeile {
+  datum: string
+  aktivitaet: string
+  min: number
+  sozialform: string
+  felder: FeldId[]
+}
+export interface DruckNachweis {
+  sprache: Sprache
+  titel: string
+  /** Vorname nur, wenn „Vorname einsetzen“ an ist */
+  vorname?: string
+  von: string | null
+  bis: string | null
+  zeilen: NachweisZeile[]
+  /** je Handlungsfeld die Zahl der Stunden, die es berühren (erstes Feld einer Stunde zählt voll, weitere auch) */
+  jeFeld: { id: FeldId; name: string; n: number; farbe: [string, string] }[]
+  minuten: number
+  datei: string
+}
+
+const SOZIAL: Record<string, { de: string; fr: string }> = {
+  einzeln: { de: 'Einzel', fr: 'individuel' },
+  'zu-zweit': { de: 'zu zweit', fr: 'à deux' },
+  kleingruppe: { de: 'Kleingruppe', fr: 'petit groupe' },
+}
+
+/** Gehaltene Stunden aller Pläne (ohne Doppel), nach Datum */
+export function rahmenplanNachweis(k: Katalog, plaene: Plan[], opt: { sprache: Sprache; vorname?: string }): DruckNachweis {
+  const sp = opt.sprache
+  const gesehen = new Set<string>()
+  const zeilen: NachweisZeile[] = []
+  for (const plan of plaene) {
+    for (const s of plan.sitzungen) {
+      if (s.status !== 'gehalten' || !s.datum) continue
+      const schluessel = `${plan.id}|${s.nr}`
+      if (gesehen.has(schluessel)) continue
+      gesehen.add(schluessel)
+      const schritte = s.schritte.filter((x) => x.rolle !== 'ankommen' && x.rolle !== 'abschluss')
+      const kern = s.schritte.find((x) => x.rolle === 'kern')
+      const ke = kern ? k.eintraege.get(kern.ref) : undefined
+      const eigen = kern?.ueber ? (sp === 'fr' ? kern.ueber['fr.titel'] : undefined) ?? kern.ueber.titel : undefined
+      const kernTitel = (eigen ?? (ke ? textVon(ke, sp).titel : kern?.t ?? '')).trim()
+      // ohne Plan-Titel: er nennt oft das Förderziel des Kindes („Ich kann …“) und steht in der Sprache der Planung
+      const aktivitaet = (kernTitel || (sp === 'fr' ? 'Séance' : 'Stunde')) + (plan.n > 1 ? ` (${sp === 'fr' ? 'séance' : 'Sitzung'} ${s.nr}/${plan.n})` : '')
+      zeilen.push({
+        datum: s.datum.slice(0, 10),
+        aktivitaet,
+        min: s.schritte.reduce((n, x) => n + x.min, 0),
+        sozialform: SOZIAL[plan.auftrag?.sozialform ?? 'einzeln']?.[sp] ?? '',
+        felder: felderStunde(schritte.map((x) => k.eintraege.get(x.ref)), plan.auftrag?.form, plan.ziele).slice(0, 3),
+      })
+    }
+  }
+  zeilen.sort((a, b) => a.datum.localeCompare(b.datum))
+  const jeFeld = FELDER.map((f) => ({ id: f.id, name: sp === 'fr' ? f.fr : f.de, n: zeilen.filter((z) => z.felder.includes(f.id)).length, farbe: f.farbe }))
+  return {
+    sprache: sp,
+    titel: sp === 'fr' ? 'Relevé des séances – cadre de référence national' : 'Nachweis der Stunden – Nationaler Rahmenplan',
+    ...(opt.vorname ? { vorname: opt.vorname } : {}),
+    von: zeilen[0]?.datum ?? null,
+    bis: zeilen[zeilen.length - 1]?.datum ?? null,
+    zeilen,
+    jeFeld,
+    minuten: zeilen.reduce((n, z) => n + z.min, 0),
+    datei: sp === 'fr' ? 'Passgenau-Releve-cadre-de-reference.pdf' : 'Passgenau-Rahmenplan-Nachweis.pdf',
+  }
 }

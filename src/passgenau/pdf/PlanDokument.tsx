@@ -20,6 +20,7 @@ import { NEUTRAL, palette } from '../../blatt/zeichnung'
 import { urheberschaft } from '../../lib/urheber'
 import { CDSE_LOGO, CDSE_LOGO_SEITEN } from '../../lib/cdse-logo'
 import type { DruckFolge, DruckSchritt, DruckSitzung } from '../kern/druck'
+import type { DruckNachweis } from '../kern/rahmenplan'
 
 /** App-Akzent (index.css --accent), sein Rand und sein zarter Grund */
 const P = palette({ tief: '#2E3A9C', mittel: '#C8CDF0', zart: '#ECEEFA' })
@@ -878,3 +879,72 @@ export function teilPositionen(layout: unknown): TeilPosition[] {
 }
 
 export { BREITE }
+
+/** Rahmenplan-Nachweis (23.10.2026): gehaltene Stunden mit Handlungsfeldern – für das Journal de bord des Dienstes. Ohne
+ *  Ziel-Codes, ohne Notizen; der Vorname nur, wenn „Vorname einsetzen“ an ist. */
+export function NachweisDokument({ n }: { n: DruckNachweis }) {
+  const sp = n.sprache
+  const fr = sp === 'fr'
+  const datum = (d: string | null) => (d ? d.split('-').reverse().join('.') : '–')
+  const max = Math.max(1, ...n.jeFeld.map((f) => f.n))
+  const kopf = { fontFamily: SCHRIFT.titel, fontWeight: 800 as const, fontSize: 7.2, letterSpacing: 0.5, color: SCHWACH }
+  const kurz = (id: string) => n.jeFeld.find((f) => f.id === id)!
+  return (
+    <Document title={`Passgenau – ${n.titel}`} author={urheberschaft(undefined).name} creator="CDSE Toolbox" producer="CDSE Toolbox" language={sp}>
+      <Page size="A4" style={{ paddingHorizontal: SEITE.rand, paddingTop: SEITE.oben, paddingBottom: SEITE.unten + 6 }}>
+        <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 12 }}>
+          <View style={{ backgroundColor: P.tief, borderRadius: 4, paddingHorizontal: 6, paddingVertical: 2.2 }}>
+            <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 7, letterSpacing: 0.9, color: '#FFFFFF' }}>{'JOURNAL DE BORD'}</Text>
+          </View>
+          <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 7.4, color: SCHWACH, letterSpacing: 0.3, marginLeft: 8 }}>{fr ? 'Cadre de référence national de l’éducation non formelle' : 'Nationaler Rahmenplan zur non-formalen Bildung'}</Text>
+        </View>
+        <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 19, color: NEUTRAL.text, marginBottom: 4 }}>{n.titel}</Text>
+        <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 9.4, color: SCHWACH, marginBottom: 12 }}>
+          {`${n.vorname ? `${fr ? 'Pour' : 'Für'} ${n.vorname}  ·  ` : ''}${datum(n.von)} – ${datum(n.bis)}  ·  ${n.zeilen.length} ${fr ? 'séances' : 'Stunden'}  ·  ${n.minuten} min`}
+        </Text>
+        {/* je Handlungsfeld: Zahl der Stunden als Balken */}
+        <View style={{ backgroundColor: P.zart, borderRadius: 9, padding: 10, marginBottom: 14 }}>
+          <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 8.4, color: P.tief, marginBottom: 6 }}>{fr ? 'Champs d’action touchés (nombre de séances)' : 'Berührte Handlungsfelder (Zahl der Stunden)'}</Text>
+          {n.jeFeld.map((f) => (
+            <View key={f.id} style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 3 }}>
+              <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 8.8, color: NEUTRAL.text, width: 230 }}>{f.name}</Text>
+              <View style={{ flex: 1, height: 9, backgroundColor: '#FFFFFF', borderRadius: 3 }}>
+                <View style={{ width: `${(100 * f.n) / max}%`, height: 9, backgroundColor: f.farbe[0], borderRadius: 3 }} />
+              </View>
+              <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 9, color: NEUTRAL.text, width: 26, textAlign: 'right' }}>{String(f.n)}</Text>
+            </View>
+          ))}
+        </View>
+        <View style={{ flexDirection: 'row', paddingBottom: 3, borderBottomWidth: 0.6, borderBottomColor: NEUTRAL.haarlinie }} fixed>
+          <Text style={{ ...kopf, width: 58 }}>{fr ? 'DATE' : 'DATUM'}</Text>
+          <Text style={{ ...kopf, flex: 1 }}>{fr ? 'ACTIVITÉ' : 'AKTIVITÄT'}</Text>
+          <Text style={{ ...kopf, width: 30, textAlign: 'right' }}>MIN.</Text>
+          <Text style={{ ...kopf, width: 70, paddingLeft: 8 }}>{fr ? 'FORME' : 'SOZIALFORM'}</Text>
+          <Text style={{ ...kopf, width: 150 }}>{fr ? 'CHAMPS D’ACTION' : 'HANDLUNGSFELDER'}</Text>
+        </View>
+        {n.zeilen.map((z, i) => (
+          <View key={i} wrap={false} style={{ flexDirection: 'row', paddingVertical: 5, borderBottomWidth: 0.6, borderBottomColor: NEUTRAL.haarlinie }}>
+            <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 8.8, color: NEUTRAL.text, width: 58 }}>{datum(z.datum)}</Text>
+            <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 8.8, color: NEUTRAL.text, flex: 1, paddingRight: 6 }}>{ty(z.aktivitaet, sp)}</Text>
+            <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 8.8, color: NEUTRAL.text, width: 30, textAlign: 'right' }}>{String(z.min)}</Text>
+            <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 8.8, color: NEUTRAL.text, width: 70, paddingLeft: 8 }}>{z.sozialform}</Text>
+            <View style={{ width: 150, flexDirection: 'row', flexWrap: 'wrap' }}>
+              {z.felder.map((id) => (
+                <View key={id} style={{ backgroundColor: kurz(id).farbe[1], borderRadius: 3, paddingHorizontal: 3, paddingVertical: 1, marginRight: 3, marginBottom: 2 }}>
+                  <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 7.4, color: kurz(id).farbe[0] }}>{kurz(id).name.split(/,| et | und /)[0]}</Text>
+                </View>
+              ))}
+            </View>
+          </View>
+        ))}
+        {!n.zeilen.length ? <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 9.4, color: SCHWACH, marginTop: 8 }}>{fr ? 'Pas encore de séance marquée « séance tenue ».' : 'Noch keine Stunde als „gehalten“ markiert.'}</Text> : null}
+        <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 7.8, lineHeight: 1.4, color: SCHWACH, marginTop: 12 }}>
+          {fr
+            ? 'Attribution automatique à partir du format, du thème et de la compétence des activités : une indication pour le journal de bord et la planification, pas une évaluation. Sans codes d’objectifs ni notes. À compléter par l’équipe (contexte, observations du groupe).'
+            : 'Zuordnung automatisch aus Format, Thema und Kompetenz der Übungen: ein Hinweis für Journal de bord und Planung, keine Bewertung. Ohne Ziel-Codes und Notizen. Vom Team zu ergänzen (Rahmen, Beobachtungen in der Gruppe).'}
+        </Text>
+        <Fuss sprache={sp} spielschule={false} />
+      </Page>
+    </Document>
+  )
+}

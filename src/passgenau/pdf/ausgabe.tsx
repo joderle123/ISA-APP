@@ -8,7 +8,8 @@ import interSemiBold from '../../assets/fonts/pdf/Inter-SemiBold.ttf?url'
 import manropeBold from '../../assets/fonts/pdf/Manrope-Bold.ttf?url'
 import manropeExtraBold from '../../assets/fonts/pdf/Manrope-ExtraBold.ttf?url'
 import type { DruckFolge, DruckSitzung } from '../kern/druck'
-import { FolgeDokument, SitzungDokument, teilPositionen, type TeilPosition } from './PlanDokument'
+import type { DruckNachweis } from '../kern/rahmenplan'
+import { FolgeDokument, NachweisDokument, SitzungDokument, teilPositionen, type TeilPosition } from './PlanDokument'
 
 const SCHRIFTEN: Record<string, string> = {
   'Kinderschrift-Regular.ttf': kinderRegular,
@@ -22,6 +23,8 @@ const SCHRIFTEN: Record<string, string> = {
 export interface PassgenauDruck {
   sitzung?: DruckSitzung
   folge?: DruckFolge
+  /** Rahmenplan-Nachweis (Journal de bord) */
+  nachweis?: DruckNachweis
 }
 
 /** PDF einer Sitzung oder einer Folge; dazu die Lage der Teile (Plan-Zeilen, Blatt-Teile) für die antippbare Vorschau. */
@@ -32,7 +35,7 @@ export async function passgenauPdf(daten: PassgenauDruck): Promise<{ blob: Blob;
     const l = (x as { _INTERNAL__LAYOUT__DATA_?: unknown })?._INTERNAL__LAYOUT__DATA_
     if (l) teile = teilPositionen(l)
   }
-  const doc = daten.folge ? <FolgeDokument f={daten.folge} /> : <SitzungDokument d={daten.sitzung!} onRender={merke} />
+  const doc = daten.nachweis ? <NachweisDokument n={daten.nachweis} /> : daten.folge ? <FolgeDokument f={daten.folge} /> : <SitzungDokument d={daten.sitzung!} onRender={merke} />
   const blob = await pdf(doc).toBlob()
   return { blob, teile }
 }

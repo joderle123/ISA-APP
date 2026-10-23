@@ -4,6 +4,7 @@
 import type { Plan, Profil, Sprache } from '../typen'
 import type { Katalog } from './katalog'
 import { druckFolge, druckSitzung } from './druck'
+import { rahmenplanNachweis } from './rahmenplan'
 import { loadPdfModule } from '../../lib/loadPdf'
 
 export type { Katalog } from './katalog'
@@ -43,6 +44,11 @@ export async function pdfFolge(k: Katalog, p: Profil, plan: Plan, opt: { sprache
   const m = await loadPdfModule()
   return (await m.passgenauPdf({ folge: daten })).blob
 }
+/** Rahmenplan-Nachweis für das Journal de bord (23.10.2026): gehaltene Stunden aller Pläne mit Handlungsfeldern */
+export async function pdfNachweis(k: Katalog, plaene: Plan[], opt: { sprache: Sprache; vorname?: string }): Promise<Blob> {
+  const m = await loadPdfModule()
+  return (await m.passgenauPdf({ nachweis: rahmenplanNachweis(k, plaene, opt) })).blob
+}
 /** Kurs-Bibliothek (22.10.2026) */
 export { kursListe, kursThema, KURS_THEMEN } from './kurse'
 export type { KursInfo, KursSitzung } from './kurse'
@@ -50,4 +56,5 @@ export type { KursInfo, KursSitzung } from './kurse'
 export { FORMEN, formVon, formSlots } from './formen'
 export type { Unterrichtsform, FormId } from './formen'
 /** Rahmenplan (Luxemburg, 22.10.2026) */
-export { FELDER, felderVon, felderStunde } from './rahmenplan'
+export { FELDER, felderVon, felderStunde, rahmenplanNachweis } from './rahmenplan'
+export type { DruckNachweis } from './rahmenplan'
