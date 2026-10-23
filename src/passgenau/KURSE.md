@@ -386,6 +386,41 @@ Machbarkeit beim Pilot wieder auf 5. Darum je Sitzung **hart**:
   mehr Text;
 - Vorbereitung realistisch in **≤ 10 Minuten**.
 
+### 9d. Lehren aus den ersten acht Kursen der Welle 3 (24 Kritiken, 23.10.2026)
+
+- **Blatt:**
+  - Das Blatt ist Werkzeug der Kernaktivität **oder** ein kurzer Nachklang. Es wiederholt die Aktivität nie schriftlich.
+  - Lesestoff fürs Kind höchstens: 13–16 ~150 Wörter, 10–12 ~100, 7–9 ~60, 4–6 fast nur Bild.
+  - Das Blatt steht im Minutenplan, und die Minuten gehen auf.
+- **Kerntext** höchstens ~130 Wörter; Details stehen in `hilfen`. Der Schnellstart passt zur Mechanik: keine „ungeschnittenen Bögen“, wenn Karten am Boden liegen.
+- **Rätsel:**
+  - Keine Lösung vorab: nicht in Spurentexten, nicht auf dem Blatt, nicht im Minutenplan der Fachkraft, nicht in der Brücke.
+  - Die Kinder benennen die Lösung selbst.
+  - Zeitlinie, Wochentage, Uhrzeiten und Beträge sind überall gleich und gehen rechnerisch auf.
+- **Hand-Modelle:** Kein einzeln gestreckter Mittelfinger. Die Hand liegt auf dem Tisch, Finger werden angetippt.
+- **Einzelstunde:** Das Kind handelt selbst (stimmt ab, wählt, spielt). Die Fachkraft spricht höchstens zwei Stimmen.
+- **Luxemburg:**
+  - SePAS gibt es nur im Secondaire. Im Fondamental sind es Lehrkraft, Schulkomitee/Präsident·in, I-EBS, ESEB (Direction de région) und Maison relais.
+  - Lëtzebuergesch nur fehlerfrei (Eifeler Regel), sonst weglassen.
+  - Mehrsprachigkeit zeigen (2–3 echte Wörter je Sitzung), nicht behaupten.
+  - Ein Inklusionsmerkmal (Hörgerät, Rollstuhl) hat eine Rolle in der Handlung.
+  - Alter und Klasse passen zusammen (12 Jahre in der Maison relais: Cycle 4.2, nicht 7e).
+- **Geprüfte Angaben:**
+  - Elterentelefon 8002 4444 (seit 2023)
+  - Kanner-Jugendtelefon 116 111
+  - BEE SECURE Helpline 8002 1234
+  - OKAJU 28 37 36 35
+  - Schulpflicht bis 18 seit 2026/27 (Gesetz vom 20.7.2023)
+- **Fachlich:**
+  - Studien nur mit dem, was drinsteht.
+  - Keine Wirkversprechen („Angst sinkt in 10 Minuten“, „Stopp sagen hilft“).
+  - Betroffene nie mit Tipps belasten, die Schuld nahelegen.
+- **Abgrenzung:**
+  - Vor dem Schreiben die Kurse desselben Themas und Altersbands lesen (Name, Welt, Werkzeuge im Hintergrund).
+  - Keine gleichen Werkzeuge, Orte oder Figurenprofile.
+  - Die Hauptziele (ELDiB, Gewicht 1) sind nie identisch mit denen eines Kurses im selben Altersband.
+- **Armut und Familie:** Keine Vergleiche (Taschengeld, Urlaub, Handy). Es gibt Sätze für „Ich kann nicht“ / „Wir haben das nicht“.
+
 ## 10. Katalog Welle 3 (neue Themen, Arbeitstitel)
 
 ELDiB-Codes wählt die Kursarchitektur aus `src/data/passgenau/eldib.json` (2 Hauptziele mit Gewicht 1, 1–2 weitere mit 0.5),
