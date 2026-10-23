@@ -7732,5 +7732,99 @@
         "nicht": "Ne jamais utiliser la pleine conscience comme sanction, pour calmer de force ou comme obligation, ne pas exiger les yeux fermés et ne rien promettre que les études ne tiennent pas."
       }
     }
+  },
+  "kurs-stress-4-6": {
+    "name": {
+      "de": "Lumo und das Lampion-Fest",
+      "fr": "Lumo et la fête des lampions"
+    },
+    "welt": {
+      "de": "Bascharage im Südwesten Luxemburgs: Im großen Papier-Lampion am Fenster der Spillschoul (Zyklus 1 mit Précoce, Maison relais nebenan) wohnt Lumo, ein kleines Glühwürmchen. Beim Lampion-Fest an Liichtmëssdag (2. Februar), wenn die Kinder mit Lichtern singend von Tür zu Tür ziehen, soll sie vorne leuchten – doch immer, wenn ihr Bauch kribbelt, flackert ihr Licht. Drei Kinder der Spillschoul kennen das Kribbeln auch: Madalena (5; Portugiesisch und Lëtzebuergesch) weint morgens an der Tür, wenn sie Tschüss sagen muss; Ettore (6; Italienisch und Französisch, lernt Lëtzebuergesch) ist neu, rennt aus dem Klo, wenn dort das Licht von selbst ausgeht, und schaut der Bauecke nur zu; Jempi (4; Lëtzebuergesch und Deutsch) flieht mit nassen Händen vor dem brüllenden Händetrockner. Das Kind ist Lumos Helfer: Treffen für Treffen findet es mit ihr heraus, wie man das Kribbeln merkt, sich beim großen Licht – einem vertrauten Großen – Trost holt und ruhig atmet und dann ein Schrittchen wagt; beim Fest geht Lumo vorne, nicht ohne Kribbeln, aber mit Licht.",
+      "fr": "Bascharage, dans le sud-ouest du Luxembourg : dans le grand lampion en papier à la fenêtre de la Spillschoul (cycle 1 avec précoce, maison relais à côté) vit Lumo, une petite luciole. À la fête des lampions de Liichtmëssdag (la Chandeleur, 2 février), quand les enfants vont de porte en porte avec leurs lumières en chantant, elle doit briller en tête – mais chaque fois que ça picote dans son ventre, sa lumière clignote. Trois enfants de la Spillschoul connaissent aussi ces picotements : Madalena (5 ans ; portugais et luxembourgeois) pleure le matin à la porte quand elle doit dire au revoir ; Ettore (6 ans ; italien et français, apprend le luxembourgeois) est nouveau, sort des toilettes en courant quand la lumière s’y éteint toute seule et regarde le coin construction sans oser y aller ; Jempi (4 ans ; luxembourgeois et allemand) s’enfuit les mains mouillées devant le sèche-mains qui rugit. L’enfant est l’assistant de Lumo : rencontre après rencontre, il découvre avec elle comment sentir les picotements, chercher du réconfort auprès de sa grande lumière – un grand de confiance –, souffler doucement, puis oser un petit pas ; à la fête, Lumo marche devant, pas sans picotements, mais avec de la lumière."
+    },
+    "de": {
+      "warum": "Ängste vor Trennung, Dunkelheit, lauten Geräuschen und Unbekanntem gehören mit vier bis sechs Jahren zur normalen Entwicklung und nehmen mit dem Alter meist ab (Gullone, 2000); schwierig wird es, wenn ein Kind dauerhaft ausweicht. Der Kurs folgt darum dem Aufbau kindgerechter kognitiver Verhaltenstherapie: Angst als Körper-Alarm verstehen, Trost holen und gemeinsam ruhig werden, sich in kleinen, selbst gewählten Schritten nähern, zum Schluss planen und zurückschauen. Bei Vier- bis Siebenjährigen mit Angststörungen war KVT mit gestufter Annäherung und eng begleitenden Eltern in einer randomisierten Studie wirksamer als Warten (Hirshfeld-Becker et al., 2010). Das Elternprogramm Cool Little Kids für zurückhaltende Vorschulkinder setzt auf Wissen über Angst, weniger Überbehüten und kleine Mut-Schritte; danach hatten die Kinder seltener Angststörungen als Vergleichskinder (Rapee et al., 2005; Kennedy et al., 2009), unter Alltagsbedingungen war der Unterschied allerdings klein (Bayer et al., 2018). Wenn Erwachsene Kindern angstauslösende Situationen dauernd abnehmen, geht das mit stärkerer Angst einher (Lebowitz et al., 2013). Das ist keine Schuld – Eltern nehmen ab, weil sie sich sorgen. Darum: weder drängen noch vermeiden lassen. Mit vier bis sechs Jahren beruhigen sich Kinder vor allem gemeinsam mit Erwachsenen: Ein vertrauter Großer ist sicherer Hafen und Ausgangsbasis zugleich (Hoffman et al., 2006) – im Kurs das „große Licht“. Kinder übernehmen Angst und Mut auch am Modell der Erwachsenen (Gerull & Rapee, 2002); darum macht die Fachkraft jeden Schritt laut denkend vor. Der Lampion-Atem ist ein Spiel zur Mit-Regulation, kein Mittel, das Angst sicher wegmacht.",
+      "achtung": [
+        "Kein Quiz, kein richtig oder falsch: Was das Kind spürt, stimmt; „weiß nicht“ ist eine gute Antwort.",
+        "Weder drängen noch vermeiden lassen: Das Kind bestimmt Tempo und Stufe, stehen bleiben ist auch ein Schritt. Nie Licht aus, Geräusch lauter oder Decke zu gegen seinen Willen.",
+        "Trennungsangst ernst nehmen: nie heimlich weggehen, kein „Stell dich nicht so an“. Ein kurzer, gleicher Tschüss, dann übernimmt eine vertraute Person.",
+        "Bauchweh, Übelkeit und Pipi-Müssen sind echt, nie „Ausrede“. Kommen sie oft oder stark: mit den Bezugspersonen sprechen und ärztlich abklären lassen.",
+        "Keine Wirkversprechen: Atmen und Schrittchen helfen vielen Kindern, aber nicht immer und nicht auf Kommando. Lob gilt dem Versuch.",
+        "Nie nach Familie oder Zuhause fragen; Beispiele kommen von Lumo, Madalena, Ettore und Jempi. „Großes Licht“ heißt: eine Person in Spillschoul oder Maison relais.",
+        "Mehr Hilfe, wenn die Angst lange bleibt, sehr stark ist oder den Alltag einschränkt (Spillschoul wird gemieden, Panik, kaum Schlaf): mit Leitung und Bezugspersonen sprechen; Kinderarzt, Psy-Jeunes (Croix-Rouge), Liste auf santesecu.public.lu; Elterentelefon 8002 4444.",
+        "Erzählt ein Kind von Angst vor einem Menschen oder von Gewalt: Krisenkarte „wenn es echt wird“, am selben Tag Leitung und I-EBS; akut 112/113; Rat bei Gewalt: Helpline 2060 1060 (rund um die Uhr)."
+      ]
+    },
+    "fr": {
+      "warum": "Les peurs de la séparation, du noir, des bruits forts et de l’inconnu font partie du développement normal entre quatre et six ans et diminuent le plus souvent avec l’âge (Gullone, 2000) ; cela devient difficile quand l’enfant évite durablement. Le cours suit donc la structure des thérapies cognitivo-comportementales (TCC) adaptées aux enfants : comprendre la peur comme une alarme du corps, chercher du réconfort et se calmer ensemble, s’approcher par petits pas choisis, puis planifier et faire le bilan. Chez des enfants de quatre à sept ans souffrant de troubles anxieux, une TCC avec approche graduée et parents étroitement associés a été plus efficace que l’attente dans un essai randomisé (Hirshfeld-Becker et al., 2010). Le programme parental Cool Little Kids, pour les enfants d’âge préscolaire très réservés, mise sur des connaissances sur la peur, moins de surprotection et de petits pas de courage ; ensuite, les enfants avaient moins souvent un trouble anxieux que ceux du groupe de comparaison (Rapee et al., 2005 ; Kennedy et al., 2009), mais dans des conditions ordinaires la différence était faible (Bayer et al., 2018). Quand les adultes évitent sans cesse à l’enfant les situations qui lui font peur, cela va de pair avec une peur plus forte (Lebowitz et al., 2013). Ce n’est pas une faute – les parents le font parce qu’ils s’inquiètent. Donc : ni pousser, ni laisser éviter. Entre quatre et six ans, les enfants se calment surtout avec un adulte : un grand de confiance est à la fois refuge et point de départ (Hoffman et al., 2006) – dans le cours, la « grande lumière ». Les enfants reprennent aussi la peur et le courage des adultes par le modèle (Gerull & Rapee, 2002) ; c’est pourquoi l’adulte montre chaque étape en pensant tout haut. Le souffle-lampion est un jeu de co-régulation, pas un moyen sûr de faire disparaître la peur.",
+      "achtung": [
+        "Pas de quiz, pas de juste ou faux : ce que l’enfant sent est vrai ; « je ne sais pas » est une bonne réponse.",
+        "Ni pousser, ni laisser éviter : l’enfant décide du rythme et de la marche, s’arrêter est aussi un pas. Jamais éteindre, faire plus de bruit ou fermer la couverture contre son gré.",
+        "Prendre la peur de la séparation au sérieux : jamais partir en cachette, pas de « Ne fais pas d’histoires ». Un au revoir court et toujours pareil, puis une personne de confiance prend le relais.",
+        "Le mal de ventre, la nausée et l’envie de faire pipi sont réels, jamais une « excuse ». S’ils reviennent souvent ou sont forts : en parler aux proches et faire voir par un médecin.",
+        "Pas de promesse d’effet : souffler et faire un petit pas aident beaucoup d’enfants, mais pas toujours ni sur commande. On félicite l’essai.",
+        "Ne jamais questionner sur la famille ou la maison ; les exemples viennent de Lumo, Madalena, Ettore et Jempi. « Grande lumière » veut dire : une personne de la Spillschoul ou de la maison relais.",
+        "Plus d’aide si la peur dure, est très forte ou gêne le quotidien (la Spillschoul est évitée, panique, très peu de sommeil) : en parler à la direction et aux proches ; pédiatre, Psy-Jeunes (Croix-Rouge), liste sur santesecu.public.lu ; Elterentelefon 8002 4444.",
+        "Si un enfant parle de peur d’une personne ou de violence : carte « si ça devient sérieux », le jour même direction et I-EBS ; urgence 112/113 ; conseil en cas de violence : Helpline 2060 1060 (24 h/24)."
+      ]
+    },
+    "quellen": [
+      "Gullone, E. (2000): The development of normal fear: A century of research. Clinical Psychology Review, 20(4), 429–451.",
+      "Hirshfeld-Becker, D. R., Masek, B., Henin, A., Blakely, L. R., Pollock-Wurman, R. A., McQuade, J. et al. (2010): Cognitive behavioral therapy for 4- to 7-year-old children with anxiety disorders: A randomized clinical trial. Journal of Consulting and Clinical Psychology, 78(4), 498–510.",
+      "Rapee, R. M., Kennedy, S., Ingram, M., Edwards, S. & Sweeney, L. (2005): Prevention and early intervention of anxiety disorders in inhibited preschool children: A randomized controlled trial. Journal of Consulting and Clinical Psychology, 73(3), 488–497 (Programm „Cool Little Kids“).",
+      "Kennedy, S. J., Rapee, R. M. & Edwards, S. L. (2009): A selective intervention program for inhibited preschool-aged children of parents with an anxiety disorder: Effects on current anxiety disorders and temperament. Journal of the American Academy of Child and Adolescent Psychiatry, 48(6), 602–609.",
+      "Bayer, J. K., Beatson, R., Bretherton, L., Hiscock, H., Wake, M., Gilbertson, T. et al. (2018): Translational delivery of Cool Little Kids to prevent child internalising problems: Randomised controlled trial. Australian & New Zealand Journal of Psychiatry, 52(2), 181–191.",
+      "Lebowitz, E. R., Woolston, J., Bar-Haim, Y., Calvocoressi, L., Dauser, C., Warnick, E. et al. (2013): Family accommodation in pediatric anxiety disorders. Depression and Anxiety, 30(1), 47–54.",
+      "Hoffman, K. T., Marvin, R. S., Cooper, G. & Powell, B. (2006): Changing toddlers’ and preschoolers’ attachment classifications: The Circle of Security intervention. Journal of Consulting and Clinical Psychology, 74(6), 1017–1026.",
+      "Gerull, F. C. & Rapee, R. M. (2002): Mother knows best: Effects of maternal modelling on the acquisition of fear and avoidance behaviour in toddlers. Behaviour Research and Therapy, 40(3), 279–287."
+    ],
+    "klasse": {
+      "de": {
+        "ziel": "Das Kind lernt in sechs Treffen, Angst als Kribbeln im Körper zu merken und zu zeigen, sich bei einem vertrauten Großen Trost zu holen und mit ihm ruhig zu atmen und sich dann in kleinen, selbst gewählten Schritten zu nähern – beim Tschüss am Morgen, im Dunkeln, bei Lärm und bei neuen Kindern.",
+        "stichwort": "Lumo, das Glühwürmchen: „Es kribbelt – ich hol mir Licht – ein Schrittchen.“ Kribbel-Zeichen, großes Licht, Lampion-Atem, Mäuseschritte.",
+        "sitzungen": [
+          "Woche 1: Lumo flackert – Angst ist ein Körper-Alarm; 20-mal hüpfen, Herz spüren; Kribbel-Zeichen erfinden. Auftrag: einem Großen das Kribbel-Zeichen zeigen.",
+          "Woche 2: Tschüss an der Tür – Madalenas Kribbel-Welle steigt und sinkt; ein kurzer, gleicher Tschüss; zum großen Licht. Auftrag: schauen, wer in der Spillschoul ein großes Licht ist.",
+          "Woche 3: Lumo im Dunkeln – Lampion-Atem mit dem großen Licht, Licht-Stufen in der Decken-Höhle, Ettores Winke-Trick. Auftrag: einem Großen den Lampion-Atem zeigen.",
+          "Woche 4: Der Brumm-Kasten – das Kind ist Chef: Hände drunter brummt er, Hände weg ist er still; es bestimmt, wie laut. Auftrag: dem großen Licht den Hände-weg-Trick zeigen.",
+          "Woche 5: Neue Kinder in der Bauecke – Ettores Schrittchen spielen und einen eigenen Plan malen: wo, wer hilft, welches Schrittchen. Auftrag: wenn es mag, das Schrittchen probieren.",
+          "Woche 6: Das Lampion-Fest – Lumo über den Fest-Weg führen, alle drei Lichter, Leuchtkarte und Urkunde. Auftrag: die Leuchtkarte dem großen Licht zeigen."
+        ],
+        "helfen": [
+          "Zeigt das Kind sein Kribbel-Zeichen (Finger wackeln am Bauch), antworten Sie ruhig: „Ich seh’s. Ich bin da.“ – und bleiben kurz bei ihm, statt ihm die Situation abzunehmen.",
+          "Beim Tschüss am Morgen: kurz und immer gleich, nie heimlich; danach nimmt eine vertraute Person das Kind in Empfang – das „große Licht“.",
+          "Erinnern Sie leise an das nächste Schrittchen („Ein Mäuseschritt?“) und loben Sie den Versuch, nicht nur das Ankommen."
+        ],
+        "beobachten": [
+          "zeigt oder sagt, dass es kribbelt (Kribbel-Zeichen, Wort), statt nur zu weinen oder wegzulaufen",
+          "holt sich Trost bei einer vertrauten Person und wird mit ihr ruhiger",
+          "macht ein Schrittchen auf etwas zu, das ihm Angst macht"
+        ],
+        "nicht": "Das Kind weder drängen („Stell dich nicht so an“) noch ihm jede schwierige Situation abnehmen – und Bauchweh nie als Ausrede abtun."
+      },
+      "fr": {
+        "ziel": "En six rencontres, l’enfant apprend à sentir la peur comme des picotements dans le corps et à le montrer, à chercher du réconfort auprès d’un grand de confiance et à souffler doucement avec lui, puis à s’approcher par petits pas qu’il choisit – pour dire au revoir le matin, dans le noir, dans le bruit et avec de nouveaux enfants.",
+        "stichwort": "Lumo la luciole : « Ça picote – je vais vers la lumière – un petit pas. » Signe des picotements, grande lumière, souffle-lampion, pas de souris.",
+        "sitzungen": [
+          "Semaine 1 : Lumo clignote – la peur est une alarme du corps ; sauter vingt fois, sentir son cœur ; inventer le signe des picotements. Défi : montrer le signe à un grand.",
+          "Semaine 2 : Au revoir à la porte – la vague de Madalena monte et redescend ; un au revoir court et toujours pareil ; vers la grande lumière. Défi : repérer qui est une grande lumière à la Spillschoul.",
+          "Semaine 3 : Lumo dans le noir – souffle-lampion avec la grande lumière, marches de lumière dans la cabane, l’astuce du coucou d’Ettore. Défi : montrer le souffle-lampion à un grand.",
+          "Semaine 4 : La boîte qui gronde – l’enfant est le chef : mains dessous, ça gronde ; mains parties, silence ; il décide du volume. Défi : montrer le truc des mains à sa grande lumière.",
+          "Semaine 5 : De nouveaux enfants au coin construction – jouer le petit pas d’Ettore et dessiner son plan : où, qui aide, quel petit pas. Défi : s’il veut, essayer son petit pas.",
+          "Semaine 6 : La fête des lampions – guider Lumo sur le chemin de la fête, les trois lumières, carte lumineuse et diplôme. Défi : montrer la carte à sa grande lumière."
+        ],
+        "helfen": [
+          "Quand l’enfant montre son signe des picotements (doigts qui frétillent sur le ventre), répondez calmement : « Je vois. Je suis là. » – et restez un moment près de lui, au lieu de lui enlever la situation.",
+          "Pour l’au revoir du matin : court et toujours pareil, jamais en cachette ; ensuite, une personne de confiance accueille l’enfant – la « grande lumière ».",
+          "Rappelez doucement le prochain petit pas (« Un pas de souris ? ») et félicitez l’essai, pas seulement l’arrivée."
+        ],
+        "beobachten": [
+          "montre ou dit que ça picote (signe, mot), au lieu de seulement pleurer ou s’enfuir",
+          "cherche du réconfort auprès d’une personne de confiance et se calme avec elle",
+          "fait un petit pas vers ce qui lui fait peur"
+        ],
+        "nicht": "Ni pousser l’enfant (« Ne fais pas d’histoires ») ni lui éviter toute situation difficile – et ne jamais traiter un mal de ventre comme une excuse."
+      }
+    }
   }
 }
