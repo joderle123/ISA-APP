@@ -688,8 +688,9 @@ function kernBlattInhalt(kern: KatalogEintrag, phase: Bogen | 'leicht', sprache:
     // dünnes Kinderblatt (Blind-Bewertung 10: „untere Blatthälfte leer“): ein freiwilliges Malfeld zur Übung am Schluss
     const zahl = fertig.filter((b) => b.art !== 'text' && b.art !== 'aufgabe' && b.art !== 'bild' && b.art !== 'wortspeicher').length
     // … nie in Kursen zu einer Lebenslage: dort fragt das Blatt bewusst nur nach Figuren, das „Und du?“ fragte wieder nach
-    // Eigenem (Kritik kurs-familie-7-9, 23.10.2026)
-    const lageKurs = kursBlatt && KURS_LAGE_THEMEN.has(kern.thema?.[0] ?? '')
+    // Eigenem (Kritik kurs-familie-7-9, 23.10.2026); ebenso in Körper-Kursen: „Mal einen Moment …“ lud dazu ein, den
+    // eigenen Körper zu zeichnen (Kritik kurs-koerper-10-12)
+    const lageKurs = kursBlatt && (KURS_LAGE_THEMEN.has(kern.thema?.[0] ?? '') || !!kern.thema?.includes('koerper'))
     if ((o.alter ?? 12) < 12 && zahl <= 2 && !lageKurs && !fertig.some((b) => b.art === 'feld'))
       // … als „Und du?“ des Blatt-Gerüsts (Blind-Bewertung 13: „Mal hier, was du bei der Übung gemacht hast“ war ein immer
       // gleicher Füller ohne Bezug zum eigenen Leben)
