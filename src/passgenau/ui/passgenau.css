@@ -5463,3 +5463,7 @@ p.pg-kb-tausch {
     order: 3;
   }
 }
+
+/* Kursseite: Geschichte auf drei Zeilen, „Geschichte ganz lesen“ klappt sie auf (23.10.2026) */
+.pg-kb-welt:not(.auf) .pg-kb-welt-text { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.pg-kb-welt-mehr { display: inline-block; margin-top: 4px; min-height: 32px; font-size: 14px; }

@@ -177,6 +177,7 @@ function KursSeite({ k, zurueck }: { k: K.KursInfo; zurueck: () => void }) {
   // Kursmappe direkt (23.10.2026: „fertiger Kurs, wo man loslegen kann“): ohne Kind und ohne Planen die ganze Mappe als PDF –
   // Deckblatt, je Sitzung Startseite, Blatt und Karten, hinten die Zusatzinfo
   const [druckt, setDruckt] = useState(false)
+  const [weltAuf, setWeltAuf] = useState(false)
   const mappe = async () => {
     if (!pg.katalog || druckt) return
     setDruckt(true)
@@ -210,10 +211,16 @@ function KursSeite({ k, zurueck }: { k: K.KursInfo; zurueck: () => void }) {
           <h1>{k.name[sp]}</h1>
           {sp === 'de' && k.name.fr !== k.name.de && <p className="pg-leise pg-kb-fr">{k.name.fr}</p>}
           {k.ziel && <p className="pg-kb-held-ziel">{k.ziel[sp]}</p>}
+          {/* die Geschichte des Kurses erst auf Wunsch ganz (23.10.2026: „zu viele Erklärungen, man verliert die Übersicht“) */}
           {k.welt && (
-            <p className="pg-kb-welt">
+            <p className={'pg-kb-welt' + (weltAuf ? ' auf' : '')}>
               <Ic n="stern" />
-              <span>{k.welt[sp]}</span>
+              <span>
+                <span className="pg-kb-welt-text">{k.welt[sp]}</span>
+                <button type="button" className="pg-link pg-kb-welt-mehr" aria-expanded={weltAuf} onClick={() => setWeltAuf(!weltAuf)}>
+                  {weltAuf ? 'Weniger' : 'Geschichte ganz lesen'}
+                </button>
+              </span>
             </p>
           )}
           {k.stichwort && (
