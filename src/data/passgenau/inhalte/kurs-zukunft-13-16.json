@@ -1906,7 +1906,7 @@
        "2 : « J’aide à la toilette et à l’habillage, je prends la tension et je fais rire M. Krier. »",
        "3 : « Des enfants de trois à six ans : consoler, foot, rapports – en quatre langues. »",
        "Solution : 1 Joana, grutière · 2 Kevin, aide-soignant · 3 Paulo, éducateur en maison relais",
-       "Ne jamais ridiculiser l’image mentale. Un métier typique est aussi un bon choix – le test demande seulement : toi ou le cliché ?",
+       "Ne jamais ridiculiser l’image mentale. Un métier typique, c’est bien aussi – la question : toi ou le cliché ?",
        "Indice 2 : faire + chercher. Ne pas dire où travaille R."
       ]
      }
@@ -2364,7 +2364,7 @@
        "2 : « J’aide à la toilette et à l’habillage, je prends la tension et je fais rire M. Krier. »",
        "3 : « Des enfants de trois à six ans : consoler, foot, rapports – en quatre langues. »",
        "Solution : 1 Joana, grutière · 2 Kevin, aide-soignant · 3 Paulo, éducateur en maison relais",
-       "Ne jamais ridiculiser l’image mentale. Un métier typique est aussi un bon choix – le test demande seulement : toi ou le cliché ?",
+       "Ne jamais ridiculiser l’image mentale. Un métier typique, c’est bien aussi – la question : toi ou le cliché ?",
        "Indice 2 : faire + chercher. Ne pas dire où travaille R."
       ]
      }
@@ -2623,7 +2623,7 @@
        "2 : « J’aide à la toilette et à l’habillage, je prends la tension et je fais rire M. Krier. »",
        "3 : « Des enfants de trois à six ans : consoler, foot, rapports – en quatre langues. »",
        "Solution : 1 Joana, grutière · 2 Kevin, aide-soignant · 3 Paulo, éducateur en maison relais",
-       "Ne jamais ridiculiser l’image mentale. Un métier typique est aussi un bon choix – le test demande seulement : toi ou le cliché ?",
+       "Ne jamais ridiculiser l’image mentale. Un métier typique, c’est bien aussi – la question : toi ou le cliché ?",
        "Indice 2 : faire + chercher. Ne pas dire où travaille R."
       ]
      }
@@ -2855,7 +2855,7 @@
        "2 : « J’aide à la toilette et à l’habillage, je prends la tension et je fais rire M. Krier. »",
        "3 : « Des enfants de trois à six ans : consoler, foot, rapports – en quatre langues. »",
        "Solution : 1 Joana, grutière · 2 Kevin, aide-soignant · 3 Paulo, éducateur en maison relais",
-       "Ne jamais ridiculiser l’image mentale. Un métier typique est aussi un bon choix – le test demande seulement : toi ou le cliché ?",
+       "Ne jamais ridiculiser l’image mentale. Un métier typique, c’est bien aussi – la question : toi ou le cliché ?",
        "Indice 2 : faire + chercher. Ne pas dire où travaille R."
       ]
      }
@@ -5754,7 +5754,7 @@
   ],
   "einzeltauglich": "ja",
   "titel": "Halt 5: Plan A, Plan B",
-  "text": "Die Fachkraft legt Linas Absage-Karte verdeckt hin und deckt nur das erste Wort auf: « Désolés … » – „Was steht da wohl? Und was denkt Lina in dieser Sekunde?“ Dann der Absage-Check: Was sagt die Nachricht wirklich – und was nicht? Lina braucht einen Plan B: Unter den Absage-Karten liegt Spur 5. Der oder die Jugendliche legt Spur 2, 4 und 5 aus der Akte R. zusammen: Wo soll Lina fragen? Hakt es, hilft Nele mit ihrem Bus-Wissen. Lina fragt über Sandra. Kern: Er oder sie wählt auf dem Erkundungs-Bogen einen Erkundungsschritt für diese Woche – echt oder für Lina – und plant Plan A und Plan B: was, wann, wen, erster Satz. Den Satz sagt er oder sie einmal laut im Stehen. Merksatz, sonst: „Kommt ein Nein, steige ich um – nicht aus.“",
+  "text": "Die Fachkraft legt Linas Absage-Karte verdeckt hin und deckt nur das erste Wort auf: « Désolés … » – „Was steht da wohl? Und was denkt Lina in dieser Sekunde?“ Dann der Absage-Check: Was sagt die Nachricht wirklich – und was nicht? Lina braucht einen Plan B: Unter Linas Karte liegt Spur 5. Der oder die Jugendliche legt Spur 2, 4 und 5 aus der Akte R. zusammen: Wo soll Lina fragen? Hakt es, hilft Nele mit ihrem Bus-Wissen. Dann ruft Lina selbst an – mit Rúbens Fahrplan. Kern, direkt auf dem Blatt: Er oder sie wählt vom Erkundungs-Bogen einen Schritt für diese Woche – echt oder für Lina – und plant Plan A und Plan B: was, wann, wen, erster Satz. Den Satz sagt er oder sie einmal laut im Stehen. Merksatz, sonst: „Kommt ein Nein, steige ich um – nicht aus.“",
   "sagen": [
    "« Désolés … » – Was steht da wohl? Und was denkt Lina in dieser Sekunde?",
    "Was sagt die Absage wirklich – und was steht da nicht?",
@@ -5816,7 +5816,7 @@
       {
        "art": "bild",
        "bild": "figur:lina:enttaeuscht:handy",
-       "groesse": "m",
+       "groesse": "s",
        "text": "Halt 5 von 5 · Lina, 15",
        "ausrichtung": "mitte"
       }
@@ -5824,7 +5824,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Linas Chat. Was schreibt Nele zurück – in welcher Sprache du willst?",
+     "text": "Linas Chat. Wenn du magst: Was schreibt Nele zurück?",
      "symbole": [
       "lesen",
       "schreiben"
@@ -5885,12 +5885,8 @@
     {
      "art": "wennDann",
      "zeilen": 1,
-     "beispiele": [
-      {
-       "wenn": "Wenn ein Nein kommt,",
-       "dann": "dann frage ich nach einem anderen Tag."
-      }
-     ]
+     "wenn": "Wenn ein Nein kommt …",
+     "dann": "… dann mein Plan B:"
     },
     {
      "art": "info",
@@ -5898,13 +5894,9 @@
      "titel": "Wer hilft",
      "punkte": [
       "SePAS oder Jugendhaus – für Schnuppertage zuerst",
+      "Maison de l’orientation 8002 8181 · ohne Schulplatz: SNJ „hey!“",
       "Wenn ein Nein runterzieht: KJT 116 111"
      ]
-    },
-    {
-     "art": "text",
-     "klein": true,
-     "text": "Übrigens: Wo soll Lina fragen? Leg Spur 2, 4 und 5 aus deiner Akte R. zusammen."
     }
    ],
    "fr": [
@@ -5921,7 +5913,7 @@
       {
        "art": "bild",
        "bild": "figur:lina:enttaeuscht:handy",
-       "groesse": "m",
+       "groesse": "s",
        "text": "Arrêt 5 sur 5 · Lina, 15 ans",
        "ausrichtung": "mitte"
       }
@@ -5929,7 +5921,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Le chat de Lina. Qu’est-ce que Nele répond – dans la langue que tu veux ?",
+     "text": "Le chat de Lina. Si tu veux : qu’est-ce que Nele répond ?",
      "symbole": [
       "lesen",
       "schreiben"
@@ -5990,12 +5982,8 @@
     {
      "art": "wennDann",
      "zeilen": 1,
-     "beispiele": [
-      {
-       "wenn": "Si on me dit non,",
-       "dann": "alors je demande un autre jour."
-      }
-     ]
+     "wenn": "Si on me dit non…",
+     "dann": "… alors mon plan B :"
     },
     {
      "art": "info",
@@ -6003,25 +5991,21 @@
      "titel": "Qui aide",
      "punkte": [
       "le SePAS ou le Jugendhaus – d’abord là",
+      "Maison de l’orientation 8002 8181 · sans place à l’école : SNJ « hey! »",
       "Si un non te mine : KJT 116 111"
      ]
-    },
-    {
-     "art": "text",
-     "klein": true,
-     "text": "Au fait : où Lina doit-elle demander ? Assemble les indices 2, 4 et 5 de ton dossier R."
     }
    ],
    "anleitung": {
     "de": {
-     "text": "Das Blatt kommt nach dem Plan und dauert höchstens 4 Minuten: Neles Antwort in einer Zeile und der Plan – Tabelle und Wenn-dann, das Beispiel hilft. Den Kasten „Wer hilft“ liest die Fachkraft vor und fragt, wer davon erreichbar ist.",
+     "text": "Das Blatt ist das Werkzeug der Kernaktivität: Der Plan wird gleich hier eingetragen – nicht erst auf einem Bogen und dann noch einmal. Neles Antwort im Chat ist ein Angebot. Den Kasten „Wer hilft“ zeigt die Fachkraft und fragt, wer davon erreichbar ist.",
      "sagen": [
       "Wenn dein Plan A ein Nein bekommt – was ist dein erster Satz für Plan B?"
      ],
      "wennEsKippt": "Fällt Schreiben schwer, sagt der oder die Jugendliche den Plan, und die Fachkraft schreibt mit. Der Plan darf für Lina sein."
     },
     "fr": {
-     "text": "La fiche vient après le plan, 4 minutes au maximum : la réponse de Nele en une ligne et le plan – tableau et si… alors, l’exemple aide. L’adulte lit l’encadré « Qui aide » et demande qui est joignable.",
+     "text": "La fiche est l’outil du cœur de la séance : le plan s’écrit directement ici – pas d’abord sur une planche puis une deuxième fois. La réponse de Nele dans le chat est une option. L’adulte montre l’encadré « Qui aide » et demande qui est joignable.",
      "sagen": [
       "Si ton plan A reçoit un non – c’est quoi ta première phrase pour le plan B ?"
      ],
@@ -6031,7 +6015,7 @@
   },
   "fr": {
    "titel": "Arrêt 5 : plan A, plan B",
-   "text": "L’adulte pose la carte refus de Lina face cachée et ne découvre que le premier mot : « Désolés… » – « Qu’est-ce qui est écrit, à ton avis ? Et qu’est-ce que Lina pense, à cette seconde-là ? » Puis le test du refus : qu’est-ce que le message dit vraiment – et qu’est-ce qu’il ne dit pas ? Lina a besoin d’un plan B : sous les cartes refus, il y a l’indice 5. Le ou la jeune assemble les indices 2, 4 et 5 du dossier R. : où Lina doit-elle demander ? Si ça coince, Nele aide avec ce qu’elle sait des bus. Lina demande via Sandra. Cœur de la séance : il ou elle choisit sur la planche un pas d’exploration pour cette semaine – pour de vrai ou pour Lina – et prévoit plan A et plan B : quoi, quand, qui, première phrase. Cette phrase, il ou elle la dit une fois à voix haute, debout. Phrase-clé, sinon : « Si on me dit non, je change de ligne – je ne descends pas. »",
+   "text": "L’adulte pose la carte refus de Lina face cachée et ne découvre que le premier mot : « Désolés… » – « Qu’est-ce qui est écrit, à ton avis ? Et qu’est-ce que Lina pense, à cette seconde-là ? » Puis le test du refus : qu’est-ce que le message dit vraiment – et qu’est-ce qu’il ne dit pas ? Lina a besoin d’un plan B : sous la carte de Lina, il y a l’indice 5. Le ou la jeune assemble les indices 2, 4 et 5 du dossier R. : où Lina doit-elle demander ? Si ça coince, Nele aide avec ce qu’elle sait des bus. Ensuite, Lina appelle elle-même – avec la feuille de route de Rúben. Cœur de la séance, directement sur la fiche : il ou elle choisit sur la planche un pas pour cette semaine – pour de vrai ou pour Lina – et prévoit plan A et plan B : quoi, quand, qui, première phrase. Cette phrase, il ou elle la dit une fois à voix haute, debout. Phrase-clé, sinon : « Si on me dit non, je change de ligne – je ne descends pas. »",
    "sagen": [
     "« Désolés… » – Qu’est-ce qui est écrit, à ton avis ? Et que pense Lina, à cette seconde-là ?",
     "Qu’est-ce que le refus dit vraiment – et qu’est-ce qui n’y est pas ?",
@@ -6051,11 +6035,11 @@
     "haken": "Nur ein Wort ist aufgedeckt: « Désolés … » – „Was steht da wohl? Und was denkt Lina in dieser Sekunde?“ Jugendliche wissen sofort, wie sich das anfühlt, und dürfen es an Lina festmachen statt an sich.",
     "vorbereitung": [
      "Drucken: Blatt und Kartenbogen",
-     "Schneiden nur die 5 Absage-Karten – Spur 5 ist dabei; Linas Karte obenauf",
-     "Plan-B- und Erkundungs-Bogen ganz lassen",
+     "Schneiden nur die 5 Absage-Karten; Linas Karte obenauf, Spur 5 direkt darunter",
+     "Erkundungs-Bogen ganz lassen",
      "Akte R. bereitlegen (Spuren 2 und 4)"
     ],
-    "aufbau": "Spickzettel (Kern 12′ + Blatt 4′): 0′ « Désolés … » – „Was denkt Lina?“ · 1′ ganze Nachricht: sagt / sagt nicht · 3′ Spur 5 + Akte R.: Wo soll Lina fragen? (Nele-Joker) · 6′ eigener Schritt: Plan A, Plan B, erster Satz im Stehen · 12′ Blatt: nur der Plan. Muss: sagt/sagt nicht, Plan A+B. Kann: Spuren-Fall kurz. Knapp: Plan für Lina.",
+    "aufbau": "Spickzettel (15′, Blatt = Werkzeug): 0′ « Désolés … » verdeckt – „Was denkt Lina?“ · 1′ sagt / sagt nicht · 3′ Spur 5 darunter, Spur 2 + 4 dazu: Wo soll Lina fragen? (Nele-Joker nur, wenn es stockt) · 5′ aufs Blatt: Schritt vom Bogen, wann, erster Satz, Wenn-dann · 11′ Satz laut im Stehen · 12′ „Wer hilft“ · 13′ Puffer. Muss: sagt/sagt nicht, Wo, Plan A+B. Kann: Neles Chat.",
     "karten": [
      {
       "titel": "Absage-Karten (schneiden)",
@@ -6065,17 +6049,6 @@
        "Keine Antwort seit einer Woche.",
        "„Wir suchen jemanden mit besseren Noten.“",
        "Spur 5 von R.: „Vor meiner Lehrstelle hatte ich neun Absagen. Die zehnte war ein Ja. Ihr findet mich da, wo die Busse nachts schlafen.“"
-      ]
-     },
-     {
-      "titel": "Plan-B-Bogen (ganz lassen)",
-      "karten": [
-       "freundlich nach einem anderen Tag fragen",
-       "fragen: „Kennen Sie einen Betrieb, der …?“",
-       "einen anderen Betrieb in derselben Welt suchen",
-       "SePAS, Lycée oder Jugendhaus fragen – für Schnuppertage zuerst hier",
-       "Maison de l’orientation: 8002 8181, vorher anrufen",
-       "SNJ „hey!“ – wenn du gerade keinen Schulplatz hast"
       ]
      },
      {
@@ -6101,7 +6074,7 @@
       ]
      }
     ],
-    "leichter": "Nur Linas Nachricht und „sagt / sagt nicht“ mündlich; der Plan wird für Lina gemacht, mit einer Plan-B-Karte zum Zeigen.",
+    "leichter": "Nur Linas Nachricht und „sagt / sagt nicht“ mündlich; der Plan wird für Lina gemacht, die Fachkraft schreibt.",
     "schwerer": "Absage-Leiter: zu einer Absage drei Antworten bauen – gleicher Betrieb, anderer Tag · anderer Betrieb, gleiche Welt · andere Welt, gleiche Stärke. Eine wählen und den ersten Satz laut sagen.",
     "gruppe": "Paare mit je zwei Absage-Karten: eine Person liest (nie verletzend), die andere antwortet mit einem Plan-B-Satz; dann tauschen. Den Spuren-Fall löst die ganze Runde gemeinsam. Am Ende macht jede Person still ihren Plan A + B. Über echte Absagen der Anwesenden wird nur gesprochen, wenn jemand es will.",
     "beobachten": [
@@ -6129,11 +6102,11 @@
     "haken": "Un seul mot visible : « Désolés… » – « Qu’est-ce qui est écrit, à ton avis ? Et qu’est-ce que Lina pense, à cette seconde-là ? » Les jeunes savent tout de suite ce que ça fait, et peuvent le dire à propos de Lina plutôt que d’eux-mêmes.",
     "vorbereitung": [
      "Imprimer : fiche et planche de cartes",
-     "Découper seulement les 5 cartes refus – l’indice 5 compris ; celle de Lina sur le dessus",
-     "Laisser entières les planches plan B et pas d’exploration",
+     "Découper seulement les 5 cartes refus ; celle de Lina dessus, l’indice 5 juste dessous",
+     "Laisser entière la planche des pas d’exploration",
      "Préparer le dossier R. (indices 2 et 4)"
     ],
-    "aufbau": "Antisèche (cœur 12′ + fiche 4′) : 0′ « Désolés… » – « Que pense Lina ? » · 1′ tout le message : dit / ne dit pas · 3′ indice 5 + dossier : où Lina doit-elle demander ? (joker Nele) · 6′ son pas : plan A, plan B, première phrase debout · 12′ fiche : seulement le plan. Indispensable : dit/ne dit pas, plan A+B. Si c’est serré : plan pour Lina.",
+    "aufbau": "Antisèche (15′, fiche = outil) : 0′ « Désolés… » caché – « Que pense Lina ? » · 1′ dit / ne dit pas · 3′ indice 5 dessous, 2 + 4 avec : où Lina doit-elle demander ? (joker Nele si ça bloque) · 5′ sur la fiche : un pas de la planche, quand, 1re phrase, si-alors · 11′ phrase debout · 12′ « Qui aide » · 13′ marge. Indispensable : dit/ne dit pas, où, plan A+B. Option : chat de Nele.",
     "karten": [
      {
       "titel": "Cartes refus (à découper)",
@@ -6143,17 +6116,6 @@
        "Pas de réponse depuis une semaine.",
        "« On cherche quelqu’un avec de meilleures notes. »",
        "Indice 5 de R. : « Avant mon apprentissage, j’ai eu neuf refus. Le dixième, c’était un oui. On me trouve là où les bus dorment la nuit. »"
-      ]
-     },
-     {
-      "titel": "Planche plan B (entière)",
-      "karten": [
-       "demander poliment un autre jour",
-       "demander : « Vous connaissez une entreprise qui… ? »",
-       "chercher une autre entreprise dans le même monde",
-       "demander au SePAS, au lycée ou au Jugendhaus – pour une journée découverte, d’abord là",
-       "Maison de l’orientation : 8002 8181, appeler avant",
-       "SNJ « hey! » – si tu n’as pas de place à l’école en ce moment"
       ]
      },
      {
@@ -6170,16 +6132,16 @@
      {
       "titel": "Pour l’adulte : quand un non arrive",
       "karten": [
-       "Où (indices 2 + 4 + 5) : le dépôt. Joker Nele : « 5 h 30 ? Les premiers bus quittent le dépôt. »",
+       "Où (indices 2, 4, 5) : le dépôt. Joker Nele : « 5 h 30 ? Les premiers bus quittent le dépôt. »",
        "Ne pas balayer « Ils veulent pas de moi » : « C’est nul. » Puis : « Qu’est-ce qui est écrit ? »",
        "Découverte sûre : via lycée/SePAS, Jugendhaus, Maison ; contact et heure réglés ; quelqu’un sait où on est.",
-       "Travaux dangereux interdits avant 18 ans. Si c’est louche : partir et le dire au contact.",
-       "« Pas de filles », « pas avec ce nom », « pas en fauteuil » : pas un plan B, une injustice – associer le SePAS.",
+       "Travaux dangereux interdits avant 18 ans. Si c’est louche : partir, le dire au contact.",
+       "« Pas de filles », « pas avec ce nom », « pas en fauteuil » : pas un plan B, une injustice → SePAS.",
        "Très abattu·e : demander, personne de référence, KJT 116 111 ; danger : 112/113."
       ]
      }
     ],
-    "leichter": "Seulement le message de Lina et « dit / ne dit pas » à l’oral ; le plan se fait pour Lina, avec une carte plan B à montrer.",
+    "leichter": "Seulement le message de Lina et « dit / ne dit pas » à l’oral ; le plan se fait pour Lina, l’adulte écrit.",
     "schwerer": "Échelle du refus : pour un refus, construire trois réponses – même entreprise, autre jour · autre entreprise, même monde · autre monde, même point fort. En choisir une et dire la première phrase à voix haute.",
     "gruppe": "Binômes avec deux cartes refus chacun : une personne lit (jamais blessant), l’autre répond par une phrase plan B ; puis on échange. L’enquête des indices se résout tous ensemble. À la fin, chacun fait en silence son plan A + B. On ne parle des vrais refus des présents que si quelqu’un le souhaite.",
     "beobachten": [
@@ -6255,7 +6217,7 @@
   ],
   "einzeltauglich": "ja",
   "titel": "Halt 5: Plan A, Plan B",
-  "text": "Die Fachkraft legt Linas Absage-Karte verdeckt hin und deckt nur das erste Wort auf: « Désolés … » – „Was steht da wohl? Und was denkt Lina in dieser Sekunde?“ Dann der Absage-Check: Was sagt die Nachricht wirklich – und was nicht? Lina braucht einen Plan B: Unter den Absage-Karten liegt Spur 5. Der oder die Jugendliche legt Spur 2, 4 und 5 aus der Akte R. zusammen: Wo soll Lina fragen? Hakt es, hilft Nele mit ihrem Bus-Wissen. Lina fragt über Sandra. Kern: Er oder sie zeigt auf dem Erkundungs-Bogen einen Erkundungsschritt für diese Woche – echt oder für Lina – und plant Plan A und Plan B: was, wann, wen, erster Satz. Den Satz sagt er oder sie einmal laut im Stehen. Merksatz, sonst: „Kommt ein Nein, steige ich um – nicht aus.“",
+  "text": "Die Fachkraft legt Linas Absage-Karte verdeckt hin und deckt nur das erste Wort auf: « Désolés … » – „Was steht da wohl? Und was denkt Lina in dieser Sekunde?“ Dann der Absage-Check: Was sagt die Nachricht wirklich – und was nicht? Lina braucht einen Plan B: Unter Linas Karte liegt Spur 5. Der oder die Jugendliche legt Spur 2, 4 und 5 aus der Akte R. zusammen: Wo soll Lina fragen? Hakt es, hilft Nele mit ihrem Bus-Wissen. Dann ruft Lina selbst an – mit Rúbens Fahrplan. Kern, direkt auf dem Blatt: Er oder sie kreuzt einen Schritt für diese Woche an – echt oder für Lina – und plant Plan A und Plan B: was, wann, wen, erster Satz. Den Satz sagt er oder sie einmal laut im Stehen. Merksatz, sonst: „Kommt ein Nein, steige ich um – nicht aus.“",
   "sagen": [
    "« Désolés … » – Was steht da wohl? Und was denkt Lina in dieser Sekunde?",
    "Was sagt die Absage wirklich – und was steht da nicht?",
@@ -6317,7 +6279,7 @@
       {
        "art": "bild",
        "bild": "figur:lina:enttaeuscht:handy",
-       "groesse": "m",
+       "groesse": "s",
        "text": "Halt 5 von 5 · Lina, 15",
        "ausrichtung": "mitte"
       }
@@ -6325,7 +6287,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Linas Chat. Was schreibt Nele zurück – in welcher Sprache du willst?",
+     "text": "Linas Chat. Wenn du magst: Was schreibt Nele zurück?",
      "symbole": [
       "lesen",
       "sprechen"
@@ -6391,13 +6353,9 @@
      "titel": "Wer hilft",
      "punkte": [
       "SePAS oder Jugendhaus – für Schnuppertage zuerst",
+      "Maison de l’orientation 8002 8181 · ohne Schulplatz: SNJ „hey!“",
       "Wenn ein Nein runterzieht: KJT 116 111"
      ]
-    },
-    {
-     "art": "text",
-     "klein": true,
-     "text": "Übrigens: Wo soll Lina fragen? Leg Spur 2, 4 und 5 aus deiner Akte R. zusammen."
     }
    ],
    "fr": [
@@ -6414,7 +6372,7 @@
       {
        "art": "bild",
        "bild": "figur:lina:enttaeuscht:handy",
-       "groesse": "m",
+       "groesse": "s",
        "text": "Arrêt 5 sur 5 · Lina, 15 ans",
        "ausrichtung": "mitte"
       }
@@ -6422,7 +6380,7 @@
     },
     {
      "art": "aufgabe",
-     "text": "Le chat de Lina. Qu’est-ce que Nele répond – dans la langue que tu veux ?",
+     "text": "Le chat de Lina. Si tu veux : qu’est-ce que Nele répond ?",
      "symbole": [
       "lesen",
       "sprechen"
@@ -6488,25 +6446,21 @@
      "titel": "Qui aide",
      "punkte": [
       "le SePAS ou le Jugendhaus – d’abord là",
+      "Maison de l’orientation 8002 8181 · sans place à l’école : SNJ « hey! »",
       "Si un non te mine : KJT 116 111"
      ]
-    },
-    {
-     "art": "text",
-     "klein": true,
-     "text": "Au fait : où Lina doit-elle demander ? Assemble les indices 2, 4 et 5 de ton dossier R."
     }
    ],
    "anleitung": {
     "de": {
-     "text": "Das Blatt kommt nach dem Plan und dauert höchstens 4 Minuten: Neles Antwort sagen, einen Schritt und einen Plan B ankreuzen. Den Kasten „Wer hilft“ liest die Fachkraft vor und fragt, wer davon erreichbar ist.",
+     "text": "Das Blatt ist das Werkzeug der Kernaktivität: Der Plan wird gleich hier angekreuzt – nicht erst auf einem Bogen und dann noch einmal. Neles Antwort im Chat ist ein Angebot. Den Kasten „Wer hilft“ zeigt die Fachkraft und fragt, wer davon erreichbar ist.",
      "sagen": [
       "Wenn dein Plan A ein Nein bekommt – was ist dein erster Satz für Plan B?"
      ],
      "wennEsKippt": "Fällt Schreiben schwer, sagt der oder die Jugendliche den Plan, und die Fachkraft schreibt mit. Der Plan darf für Lina sein."
     },
     "fr": {
-     "text": "La fiche vient après le plan, 4 minutes au maximum : dire la réponse de Nele, cocher un pas et un plan B. L’adulte lit l’encadré « Qui aide » et demande qui est joignable.",
+     "text": "La fiche est l’outil du cœur de la séance : le plan se coche directement ici – pas d’abord sur une planche puis une deuxième fois. La réponse de Nele dans le chat est une option. L’adulte montre l’encadré « Qui aide » et demande qui est joignable.",
      "sagen": [
       "Si ton plan A reçoit un non – c’est quoi ta première phrase pour le plan B ?"
      ],
@@ -6516,7 +6470,7 @@
   },
   "fr": {
    "titel": "Arrêt 5 : plan A, plan B",
-   "text": "L’adulte pose la carte refus de Lina face cachée et ne découvre que le premier mot : « Désolés… » – « Qu’est-ce qui est écrit, à ton avis ? Et qu’est-ce que Lina pense, à cette seconde-là ? » Puis le test du refus : qu’est-ce que le message dit vraiment – et qu’est-ce qu’il ne dit pas ? Lina a besoin d’un plan B : sous les cartes refus, il y a l’indice 5. Le ou la jeune assemble les indices 2, 4 et 5 du dossier R. : où Lina doit-elle demander ? Si ça coince, Nele aide avec ce qu’elle sait des bus. Lina demande via Sandra. Cœur de la séance : il ou elle montre sur la planche un pas d’exploration pour cette semaine – pour de vrai ou pour Lina – et prévoit plan A et plan B : quoi, quand, qui, première phrase. Cette phrase, il ou elle la dit une fois à voix haute, debout. Phrase-clé, sinon : « Si on me dit non, je change de ligne – je ne descends pas. »",
+   "text": "L’adulte pose la carte refus de Lina face cachée et ne découvre que le premier mot : « Désolés… » – « Qu’est-ce qui est écrit, à ton avis ? Et qu’est-ce que Lina pense, à cette seconde-là ? » Puis le test du refus : qu’est-ce que le message dit vraiment – et qu’est-ce qu’il ne dit pas ? Lina a besoin d’un plan B : sous la carte de Lina, il y a l’indice 5. Le ou la jeune assemble les indices 2, 4 et 5 du dossier R. : où Lina doit-elle demander ? Si ça coince, Nele aide avec ce qu’elle sait des bus. Ensuite, Lina appelle elle-même – avec la feuille de route de Rúben. Cœur de la séance, directement sur la fiche : il ou elle coche un pas pour cette semaine – pour de vrai ou pour Lina – et prévoit plan A et plan B : quoi, quand, qui, première phrase. Cette phrase, il ou elle la dit une fois à voix haute, debout. Phrase-clé, sinon : « Si on me dit non, je change de ligne – je ne descends pas. »",
    "sagen": [
     "« Désolés… » – Qu’est-ce qui est écrit, à ton avis ? Et que pense Lina, à cette seconde-là ?",
     "Qu’est-ce que le refus dit vraiment – et qu’est-ce qui n’y est pas ?",
@@ -6536,11 +6490,10 @@
     "haken": "Nur ein Wort ist aufgedeckt: « Désolés … » – „Was steht da wohl? Und was denkt Lina in dieser Sekunde?“ Jugendliche wissen sofort, wie sich das anfühlt, und dürfen es an Lina festmachen statt an sich.",
     "vorbereitung": [
      "Drucken: Blatt und Kartenbogen",
-     "Schneiden nur die 5 Absage-Karten – Spur 5 ist dabei; Linas Karte obenauf",
-     "Plan-B- und Erkundungs-Bogen ganz lassen",
+     "Schneiden nur die 5 Absage-Karten; Linas Karte obenauf, Spur 5 direkt darunter",
      "Akte R. bereitlegen (Spuren 2 und 4)"
     ],
-    "aufbau": "Spickzettel (Kern 12′ + Blatt 4′): 0′ « Désolés … » – „Was denkt Lina?“ · 1′ ganze Nachricht: sagt / sagt nicht · 3′ Spur 5 + Akte R.: Wo soll Lina fragen? (Nele-Joker) · 6′ eigener Schritt: Plan A, Plan B, erster Satz im Stehen · 12′ Blatt: nur der Plan. Muss: sagt/sagt nicht, Plan A+B. Kann: Spuren-Fall kurz. Knapp: Plan für Lina.",
+    "aufbau": "Spickzettel (15′, Blatt = Werkzeug): 0′ « Désolés … » verdeckt – „Was denkt Lina?“ · 1′ sagt / sagt nicht · 3′ Spur 5 darunter, Spur 2 + 4 dazu: Wo soll Lina fragen? (Nele-Joker nur, wenn es stockt) · 5′ aufs Blatt: Schritt und Plan B ankreuzen, wann und erster Satz mündlich · 11′ Satz laut im Stehen · 12′ „Wer hilft“ · 13′ Puffer. Muss: sagt/sagt nicht, Wo, Plan A+B. Kann: Neles Chat.",
     "karten": [
      {
       "titel": "Absage-Karten (schneiden)",
@@ -6550,28 +6503,6 @@
        "Keine Antwort seit einer Woche.",
        "„Wir suchen jemanden mit besseren Noten.“",
        "Spur 5 von R.: „Vor meiner Lehrstelle hatte ich neun Absagen. Die zehnte war ein Ja. Ihr findet mich da, wo die Busse nachts schlafen.“"
-      ]
-     },
-     {
-      "titel": "Plan-B-Bogen (ganz lassen)",
-      "karten": [
-       "freundlich nach einem anderen Tag fragen",
-       "fragen: „Kennen Sie einen Betrieb, der …?“",
-       "einen anderen Betrieb in derselben Welt suchen",
-       "SePAS, Lycée oder Jugendhaus fragen – für Schnuppertage zuerst hier",
-       "Maison de l’orientation: 8002 8181, vorher anrufen",
-       "SNJ „hey!“ – wenn du gerade keinen Schulplatz hast"
-      ]
-     },
-     {
-      "titel": "Erkundungs-Bogen (ganz lassen)",
-      "karten": [
-       "jemanden zu seiner Arbeit fragen",
-       "auf orientation.lu zwei Berufe aus meiner Welt ansehen",
-       "die Maison de l’orientation anrufen – mit Lautsprecher, zusammen",
-       "im SePAS nach einem Schnuppertag fragen",
-       "einen Anruf zusammen vorbereiten",
-       "nur die Nummer heraussuchen – auch ein Schritt"
       ]
      },
      {
@@ -6586,7 +6517,7 @@
       ]
      }
     ],
-    "leichter": "Nur Linas Nachricht und „sagt / sagt nicht“ mündlich; der Plan wird für Lina gemacht, mit einer Plan-B-Karte zum Zeigen.",
+    "leichter": "Nur Linas Nachricht und „sagt / sagt nicht“ mündlich; der Plan wird für Lina gemacht, die Fachkraft schreibt.",
     "schwerer": "Absage-Leiter: zu einer Absage drei Antworten bauen – gleicher Betrieb, anderer Tag · anderer Betrieb, gleiche Welt · andere Welt, gleiche Stärke. Eine wählen und den ersten Satz laut sagen.",
     "gruppe": "Paare mit je zwei Absage-Karten: eine Person liest (nie verletzend), die andere antwortet mit einem Plan-B-Satz; dann tauschen. Den Spuren-Fall löst die ganze Runde gemeinsam. Am Ende macht jede Person still ihren Plan A + B. Über echte Absagen der Anwesenden wird nur gesprochen, wenn jemand es will.",
     "beobachten": [
@@ -6614,11 +6545,10 @@
     "haken": "Un seul mot visible : « Désolés… » – « Qu’est-ce qui est écrit, à ton avis ? Et qu’est-ce que Lina pense, à cette seconde-là ? » Les jeunes savent tout de suite ce que ça fait, et peuvent le dire à propos de Lina plutôt que d’eux-mêmes.",
     "vorbereitung": [
      "Imprimer : fiche et planche de cartes",
-     "Découper seulement les 5 cartes refus – l’indice 5 compris ; celle de Lina sur le dessus",
-     "Laisser entières les planches plan B et pas d’exploration",
+     "Découper seulement les 5 cartes refus ; celle de Lina dessus, l’indice 5 juste dessous",
      "Préparer le dossier R. (indices 2 et 4)"
     ],
-    "aufbau": "Antisèche (cœur 12′ + fiche 4′) : 0′ « Désolés… » – « Que pense Lina ? » · 1′ tout le message : dit / ne dit pas · 3′ indice 5 + dossier : où Lina doit-elle demander ? (joker Nele) · 6′ son pas : plan A, plan B, première phrase debout · 12′ fiche : seulement le plan. Indispensable : dit/ne dit pas, plan A+B. Si c’est serré : plan pour Lina.",
+    "aufbau": "Antisèche (15′, fiche = outil) : 0′ « Désolés… » caché – « Que pense Lina ? » · 1′ dit / ne dit pas · 3′ indice 5 dessous, 2 + 4 avec : où Lina doit-elle demander ? (joker Nele si ça bloque) · 5′ sur la fiche : cocher un pas et un plan B, quand et 1re phrase à l’oral · 11′ phrase debout · 12′ « Qui aide » · 13′ marge. Indispensable : dit/ne dit pas, où, plan A+B. Option : chat de Nele.",
     "karten": [
      {
       "titel": "Cartes refus (à découper)",
@@ -6631,40 +6561,18 @@
       ]
      },
      {
-      "titel": "Planche plan B (entière)",
-      "karten": [
-       "demander poliment un autre jour",
-       "demander : « Vous connaissez une entreprise qui… ? »",
-       "chercher une autre entreprise dans le même monde",
-       "demander au SePAS, au lycée ou au Jugendhaus – pour une journée découverte, d’abord là",
-       "Maison de l’orientation : 8002 8181, appeler avant",
-       "SNJ « hey! » – si tu n’as pas de place à l’école en ce moment"
-      ]
-     },
-     {
-      "titel": "Planche des pas d’exploration (entière)",
-      "karten": [
-       "interroger quelqu’un sur son travail",
-       "regarder sur orientation.lu deux métiers de mon monde",
-       "appeler la Maison de l’orientation – haut-parleur, ensemble",
-       "demander une journée découverte au SePAS",
-       "préparer un appel ensemble",
-       "seulement trouver le numéro – c’est aussi un pas"
-      ]
-     },
-     {
       "titel": "Pour l’adulte : quand un non arrive",
       "karten": [
-       "Où (indices 2 + 4 + 5) : le dépôt. Joker Nele : « 5 h 30 ? Les premiers bus quittent le dépôt. »",
+       "Où (indices 2, 4, 5) : le dépôt. Joker Nele : « 5 h 30 ? Les premiers bus quittent le dépôt. »",
        "Ne pas balayer « Ils veulent pas de moi » : « C’est nul. » Puis : « Qu’est-ce qui est écrit ? »",
        "Découverte sûre : via lycée/SePAS, Jugendhaus, Maison ; contact et heure réglés ; quelqu’un sait où on est.",
-       "Travaux dangereux interdits avant 18 ans. Si c’est louche : partir et le dire au contact.",
-       "« Pas de filles », « pas avec ce nom », « pas en fauteuil » : pas un plan B, une injustice – associer le SePAS.",
+       "Travaux dangereux interdits avant 18 ans. Si c’est louche : partir, le dire au contact.",
+       "« Pas de filles », « pas avec ce nom », « pas en fauteuil » : pas un plan B, une injustice → SePAS.",
        "Très abattu·e : demander, personne de référence, KJT 116 111 ; danger : 112/113."
       ]
      }
     ],
-    "leichter": "Seulement le message de Lina et « dit / ne dit pas » à l’oral ; le plan se fait pour Lina, avec une carte plan B à montrer.",
+    "leichter": "Seulement le message de Lina et « dit / ne dit pas » à l’oral ; le plan se fait pour Lina, l’adulte écrit.",
     "schwerer": "Échelle du refus : pour un refus, construire trois réponses – même entreprise, autre jour · autre entreprise, même monde · autre monde, même point fort. En choisir une et dire la première phrase à voix haute.",
     "gruppe": "Binômes avec deux cartes refus chacun : une personne lit (jamais blessant), l’autre répond par une phrase plan B ; puis on échange. L’enquête des indices se résout tous ensemble. À la fin, chacun fait en silence son plan A + B. On ne parle des vrais refus des présents que si quelqu’un le souhaite.",
     "beobachten": [
@@ -6803,7 +6711,7 @@
      "Absage-Karten (5) geschnitten, Plan-B- und Erkundungs-Bogen ganz",
      "Platz für zwei zum Stehen; Akte R. bereit"
     ],
-    "aufbau": "Spickzettel (Kern 12′ + Blatt 4′): 0′ zwei Statuen vormachen · 2′ Absagen: Statue, Umsteigen, Plan-B-Satz · 6′ Spur 5 + Akte R.: Wo soll Lina fragen? · 8′ eigener Schritt im Stehen, Plan B · 12′ Blatt. Muss: zwei Absagen, ein Plan. Stehplatz, Karten auf einem Stuhl.",
+    "aufbau": "Spickzettel (15′): 0′ zwei Statuen vormachen · 2′ Absagen: Statue, Umsteigen, Plan-B-Satz · 6′ Spur 5 + Akte R.: Wo soll Lina fragen? · 8′ eigener Schritt im Stehen, Plan B gleich aufs Blatt. Muss: zwei Absagen, ein Plan. Stehplatz, Karten auf einem Stuhl.",
     "karten": [
      {
       "titel": "Absage-Karten (schneiden)",
@@ -6874,7 +6782,7 @@
      "Cartes refus (5) découpées, planches plan B et pas d’exploration entières",
      "De la place pour deux, debout ; dossier R. prêt"
     ],
-    "aufbau": "Antisèche (cœur 12′ + fiche 4′) : 0′ montrer les deux statues · 2′ refus : statue, correspondance, phrase plan B · 6′ indice 5 + dossier : où Lina doit-elle demander ? · 8′ son pas debout, plan B · 12′ fiche. Indispensable : deux refus, un plan. Place debout, cartes sur une chaise.",
+    "aufbau": "Antisèche (15′) : 0′ montrer les deux statues · 2′ refus : statue, correspondance, phrase plan B · 6′ indice 5 + dossier : où Lina doit-elle demander ? · 8′ son pas debout, plan B directement sur la fiche. Indispensable : deux refus, un plan. Place debout, cartes sur une chaise.",
     "karten": [
      {
       "titel": "Cartes refus (à découper)",
@@ -6911,11 +6819,11 @@
      {
       "titel": "Pour l’adulte : quand un non arrive",
       "karten": [
-       "Où (indices 2 + 4 + 5) : le dépôt. Joker Nele : « 5 h 30 ? Les premiers bus quittent le dépôt. »",
+       "Où (indices 2, 4, 5) : le dépôt. Joker Nele : « 5 h 30 ? Les premiers bus quittent le dépôt. »",
        "Ne pas balayer « Ils veulent pas de moi » : « C’est nul. » Puis : « Qu’est-ce qui est écrit ? »",
        "Découverte sûre : via lycée/SePAS, Jugendhaus, Maison ; contact et heure réglés ; quelqu’un sait où on est.",
-       "Travaux dangereux interdits avant 18 ans. Si c’est louche : partir et le dire au contact.",
-       "« Pas de filles », « pas avec ce nom », « pas en fauteuil » : pas un plan B, une injustice – associer le SePAS.",
+       "Travaux dangereux interdits avant 18 ans. Si c’est louche : partir, le dire au contact.",
+       "« Pas de filles », « pas avec ce nom », « pas en fauteuil » : pas un plan B, une injustice → SePAS.",
        "Très abattu·e : demander, personne de référence, KJT 116 111 ; danger : 112/113."
       ]
      }
@@ -7011,7 +6919,7 @@
   },
   "ort": "raum",
   "titel": "Halt 5: Linas Comic",
-  "text": "Bei Lina kam eine Absage von der Autowerkstatt. Der oder die Jugendliche zeichnet einen Comic in drei Feldern, Strichmännchen reichen: Linas Handy mit der Nachricht – Linas Gedanke („Die wollen mich eh nicht“) – Linas Umstieg. Dazwischen prüfen beide: Was sagt die Absage wirklich – und was nicht? Für das dritte Feld liegt Spur 5 bei den Absage-Karten: Mit Spur 2 und 4 aus der Akte R. findet er oder sie, wo Lina fragen kann – über Sandra. Zum Schluss plant er oder sie für Lina einen kleinen Schritt mit Plan B; einen Plan für „jemand wie du“ nur, wenn er oder sie will. Merksatz: „Kommt ein Nein, steige ich um – nicht aus.“",
+  "text": "Bei Lina kam eine Absage von der Autowerkstatt. Der oder die Jugendliche zeichnet einen Comic in drei Feldern, Strichmännchen reichen: Linas Handy mit der Nachricht – Linas Gedanke („Die wollen mich eh nicht“) – Linas Umstieg. Dazwischen prüfen beide: Was sagt die Absage wirklich – und was nicht? Für das dritte Feld liegt Spur 5 bei den Absage-Karten: Mit Spur 2 und 4 aus der Akte R. findet er oder sie, wo Lina selbst anrufen kann. Zum Schluss plant er oder sie für Lina einen kleinen Schritt mit Plan B; einen Plan für „jemand wie du“ nur, wenn er oder sie will. Merksatz: „Kommt ein Nein, steige ich um – nicht aus.“",
   "sagen": [
    "Drei Felder: die Nachricht, Linas Gedanke, Linas Umstieg. Strichmännchen reichen.",
    "Was steht wirklich in der Nachricht – und was denkt Lina dazu?",
@@ -7041,7 +6949,7 @@
   },
   "fr": {
    "titel": "Arrêt 5 : la BD de Lina",
-   "text": "Lina a reçu un refus du garage. Le ou la jeune dessine une BD en trois cases, des bonshommes bâtons suffisent : le téléphone de Lina avec le message – la pensée de Lina (« De toute façon, ils veulent pas de moi ») – la correspondance de Lina. Entre-temps, les deux vérifient : qu’est-ce que le refus dit vraiment – et qu’est-ce qu’il ne dit pas ? Pour la troisième case, l’indice 5 est parmi les cartes refus : avec les indices 2 et 4 du dossier R., il ou elle trouve où Lina peut demander – via Sandra. Pour finir, il ou elle prévoit pour Lina un petit pas avec un plan B ; un plan pour « quelqu’un comme toi » seulement s’il ou elle le veut. Phrase-clé : « Si on me dit non, je change de ligne – je ne descends pas. »",
+   "text": "Lina a reçu un refus du garage. Le ou la jeune dessine une BD en trois cases, des bonshommes bâtons suffisent : le téléphone de Lina avec le message – la pensée de Lina (« De toute façon, ils veulent pas de moi ») – la correspondance de Lina. Entre-temps, les deux vérifient : qu’est-ce que le refus dit vraiment – et qu’est-ce qu’il ne dit pas ? Pour la troisième case, l’indice 5 est parmi les cartes refus : avec les indices 2 et 4 du dossier R., il ou elle trouve où Lina peut appeler elle-même. Pour finir, il ou elle prévoit pour Lina un petit pas avec un plan B ; un plan pour « quelqu’un comme toi » seulement s’il ou elle le veut. Phrase-clé : « Si on me dit non, je change de ligne – je ne descends pas. »",
    "sagen": [
     "Trois cases : le message, la pensée de Lina, sa correspondance. Des bonshommes bâtons suffisent.",
     "Qu’est-ce qui est vraiment écrit – et qu’est-ce que Lina en pense ?",
@@ -7056,7 +6964,7 @@
      "Papier, in drei Felder gefaltet, und Stifte",
      "Absage-Karten (5) geschnitten; Akte R. bereit"
     ],
-    "aufbau": "Spickzettel (Kern 12′ + Blatt 4′): 0′ Linas Nachricht · 2′ Feld 1 und 2 zeichnen · 5′ sagt / sagt nicht · 6′ Spur 5 + Akte R., Feld 3 · 9′ Linas Plan A + B · 12′ Blatt. Muss: drei Felder, Linas Plan. Nebeneinander am Tisch.",
+    "aufbau": "Spickzettel (15′): 0′ Linas Nachricht · 2′ Feld 1 und 2 zeichnen · 5′ sagt / sagt nicht · 6′ Spur 5 + Akte R., Feld 3 · 9′ Linas Plan A + B gleich aufs Blatt. Muss: drei Felder, Linas Plan. Nebeneinander am Tisch.",
     "karten": [
      {
       "titel": "Absage-Karten (schneiden)",
@@ -7116,7 +7024,7 @@
      "Du papier plié en trois cases et des crayons",
      "Cartes refus (5) découpées ; dossier R. prêt"
     ],
-    "aufbau": "Antisèche (cœur 12′ + fiche 4′) : 0′ message de Lina · 2′ cases 1 et 2 · 5′ dit / ne dit pas · 6′ indice 5 + dossier, case 3 · 9′ plan A + B de Lina · 12′ fiche. Indispensable : trois cases, plan de Lina. Côte à côte à table.",
+    "aufbau": "Antisèche (15′) : 0′ message de Lina · 2′ cases 1 et 2 · 5′ dit / ne dit pas · 6′ indice 5 + dossier, case 3 · 9′ plan A + B de Lina directement sur la fiche. Indispensable : trois cases, plan de Lina. Côte à côte à table.",
     "karten": [
      {
       "titel": "Cartes refus (à découper)",
@@ -7142,11 +7050,11 @@
      {
       "titel": "Pour l’adulte : quand un non arrive",
       "karten": [
-       "Où (indices 2 + 4 + 5) : le dépôt. Joker Nele : « 5 h 30 ? Les premiers bus quittent le dépôt. »",
+       "Où (indices 2, 4, 5) : le dépôt. Joker Nele : « 5 h 30 ? Les premiers bus quittent le dépôt. »",
        "Ne pas balayer « Ils veulent pas de moi » : « C’est nul. » Puis : « Qu’est-ce qui est écrit ? »",
        "Découverte sûre : via lycée/SePAS, Jugendhaus, Maison ; contact et heure réglés ; quelqu’un sait où on est.",
-       "Travaux dangereux interdits avant 18 ans. Si c’est louche : partir et le dire au contact.",
-       "« Pas de filles », « pas avec ce nom », « pas en fauteuil » : pas un plan B, une injustice – associer le SePAS.",
+       "Travaux dangereux interdits avant 18 ans. Si c’est louche : partir, le dire au contact.",
+       "« Pas de filles », « pas avec ce nom », « pas en fauteuil » : pas un plan B, une injustice → SePAS.",
        "Très abattu·e : demander, personne de référence, KJT 116 111 ; danger : 112/113."
       ]
      }
@@ -7221,7 +7129,7 @@
   ],
   "einzeltauglich": "ja",
   "titel": "Mein Netzplan: Nächster Halt",
-  "text": "Der Schnupperdag ist vorbei. Zum Einstieg öffnet der oder die Jugendliche die Akte R. und legt die fünf Spuren in eine Reihe: Was macht R., welchen Weg ist R. gegangen? Erst nach einer begründeten Vermutung liest die Fachkraft Linas Nachricht vor – R. heißt Romy – und fragt: „Wie hattest du dir R. vorgestellt?“ Kern: Er oder sie blättert die Mappe durch und füllt das Ticket mit vier Zeilen: meine Stärke mit Beweis, zwei Dinge, die mir bei Arbeit wichtig sind (Werte-Bogen, zwei Karten antippen), mein nächster Halt („noch offen“ geht auch), wer mir hilft. Zum Schluss steht er oder sie auf und sagt den nächsten Halt als Durchsage an – in einer oder mehreren Sprachen; beide lesen die Hilfe-Nummern. Merksatz, sonst: „Ich plane meine Route – und Umsteigen ist erlaubt.“",
+  "text": "Der Schnupperdag ist vorbei. Zum Einstieg öffnet der oder die Jugendliche die Akte R. und legt die fünf Spuren in eine Reihe: Was macht R., welchen Weg ist R. gegangen? Erst nach einer begründeten Vermutung liest die Fachkraft Linas Nachricht vor – R. heißt Romy – und fragt: „Wie hattest du dir R. vorgestellt?“ Kern: Er oder sie dreht den Fahrschein um, wählt einen Beweis und füllt das Ticket auf dem Blatt: meine Stärke mit Beweis, zwei Dinge, die mir bei Arbeit wichtig sind (Werte-Bogen, zwei Karten antippen), mein nächster Halt („noch offen“ geht auch), wer mir hilft. Zum Schluss steht er oder sie auf und sagt den nächsten Halt als Durchsage an – in einer oder mehreren Sprachen; beide lesen die Hilfe-Nummern. Merksatz, sonst: „Ich plane meine Route – und Umsteigen ist erlaubt.“",
   "sagen": [
    "Fünf Spuren in einer Reihe: Was macht R. – und welchen Weg ist R. gegangen?",
    "Wie hattest du dir R. vorgestellt?",
@@ -7256,8 +7164,8 @@
     "fr": "Prochain arrêt : l’avenir – avec le plan du réseau (points forts, métiers, chemins, questions, essayer), tracer son propre itinéraire : beaucoup de chemins, changer de ligne est permis"
    },
    "bruecke": {
-    "de": "Letztes Mal hast du Lina einen Plan B gebaut und herausgefunden, wo R. arbeitet: im Busdepot. Lina hat über Sandra gefragt und war am Schnupperdag dort; Rúben war im Pflegeheim, Nele in der Disposition eines Busbetriebs. Heute findest du heraus, was R. macht und welchen Weg R. gegangen ist – und legst deinen ganzen Netzplan.",
-    "fr": "La dernière fois, tu as construit un plan B pour Lina et trouvé où travaille R. : au dépôt de bus. Lina a demandé via Sandra et y était le jour du Schnupperdag ; Rúben était en maison de soins, Nele à la régulation d’une entreprise de bus. Aujourd’hui, tu découvres ce que fait R. et quel chemin a suivi R. – et tu assembles ton plan du réseau en entier."
+    "de": "Letztes Mal hast du Lina einen Plan B gebaut und herausgefunden, wo R. arbeitet: im Busdepot. Lina hat dort selbst angerufen – mit Rúbens Fahrplan – und war am Schnupperdag da; Rúben war im Pflegeheim, Nele in der Disposition eines Busbetriebs. Heute findest du heraus, was R. macht und welchen Weg R. gegangen ist – und legst deinen ganzen Netzplan.",
+    "fr": "La dernière fois, tu as construit un plan B pour Lina et trouvé où travaille R. : au dépôt de bus. Lina y a appelé elle-même – avec la feuille de route de Rúben – et y était le jour du Schnupperdag ; Rúben était en maison de soins, Nele à la régulation d’une entreprise de bus. Aujourd’hui, tu découvres ce que fait R. et quel chemin a suivi R. – et tu assembles ton plan du réseau en entier."
    }
   },
   "imSpiel": {
@@ -7353,7 +7261,7 @@
     {
      "art": "text",
      "klein": true,
-     "text": "Übrigens: Lina war am Schnupperdag in der Werkstatt und hat mit dem Diagnosegerät einen Fehler gefunden. Und du? Nächster Halt: …"
+     "text": "Übrigens: Lina war am Schnupperdag dort. Was sie erlebt hat, hörst du gleich. Und du? Nächster Halt: …"
     }
    ],
    "fr": [
@@ -7439,7 +7347,7 @@
     {
      "art": "text",
      "klein": true,
-     "text": "Au fait : le jour du Schnupperdag, Lina était à l’atelier et a trouvé une panne avec la valise de diagnostic. Et toi ? Prochain arrêt : …"
+     "text": "Au fait : Lina y était le jour du Schnupperdag. Ce qu’elle a vécu, tu vas l’entendre. Et toi ? Prochain arrêt : …"
     }
    ],
    "anleitung": {
@@ -7461,7 +7369,7 @@
   },
   "fr": {
    "titel": "Mon plan du réseau : prochain arrêt",
-   "text": "Le Schnupperdag est passé. Pour commencer, le ou la jeune ouvre le dossier R. et pose les cinq indices en ligne : que fait R., quel chemin a suivi R. ? Seulement après une hypothèse justifiée, l’adulte lit le message de Lina – R., c’est Romy – et demande : « Comment tu t’imaginais R. ? » Cœur de la séance : il ou elle feuillette le dossier et remplit le ticket en quatre lignes : mon point fort avec une preuve, deux choses qui comptent pour moi au travail (planche des valeurs, toucher deux cartes), mon prochain arrêt (« encore ouvert », ça marche aussi), qui m’aide. Pour finir, il ou elle se lève et annonce son prochain arrêt comme dans le bus – dans une ou plusieurs langues ; les deux lisent les numéros d’aide. Phrase-clé, sinon : « Je trace mon itinéraire – et changer de ligne est permis. »",
+   "text": "Le Schnupperdag est passé. Pour commencer, le ou la jeune ouvre le dossier R. et pose les cinq indices en ligne : que fait R., quel chemin a suivi R. ? Seulement après une hypothèse justifiée, l’adulte lit le message de Lina – R., c’est Romy – et demande : « Comment tu t’imaginais R. ? » Cœur de la séance : il ou elle retourne le ticket composté, choisit une preuve et remplit « Mon ticket » sur la fiche : mon point fort avec une preuve, deux choses qui comptent pour moi au travail (planche des valeurs, toucher deux cartes), mon prochain arrêt (« encore ouvert », ça marche aussi), qui m’aide. Pour finir, il ou elle se lève et annonce son prochain arrêt comme dans le bus – dans une ou plusieurs langues ; les deux lisent les numéros d’aide. Phrase-clé, sinon : « Je trace mon itinéraire – et changer de ligne est permis. »",
    "sagen": [
     "Cinq indices en ligne : que fait R. – et quel chemin a suivi R. ?",
     "Comment tu t’imaginais R. ?",
@@ -7484,7 +7392,7 @@
      "Akte R. mit den fünf Spuren in der Mappe",
      "Linas Nachricht auf „Nur für dich“ einmal lesen"
     ],
-    "aufbau": "Spickzettel (Kern 12′ + Blatt 4′): 0′ Akte R. öffnen, fünf Spuren in eine Reihe – „Was macht R.? Welcher Weg?“ · 3′ Vermutung begründen, Linas Nachricht vorlesen · 5′ Mappe durchblättern, Werte-Bogen, Ticket · 10′ Durchsage im Stehen · 11′ Hilfe-Nummern · 12′ Blatt. Muss: Fall, Ticket, Hilfe. Kann: mehrere Sprachen. Knapp: Ticket mündlich, die Fachkraft schreibt.",
+    "aufbau": "Spickzettel (15′, Blatt = Werkzeug ab 0′): 0′ fünf Spuren in eine Reihe – „Was macht R.? Welcher Weg?“ –, Vermutung aufs Blatt · 3′ Linas Nachricht: „Wie hattest du dir R. vorgestellt?“ · 5′ Fahrschein umdrehen: ein Beweis · 6′ zwei Werte antippen · 7′ Ticket · 11′ Durchsage im Stehen · 12′ Hilfe-Nummern: „Wen würdest du anrufen?“ · 14′ Ende. Muss: Fall, Ticket, Hilfe.",
     "karten": [
      {
       "titel": "Werte-Bogen (ganz lassen): Was ist mir bei Arbeit wichtig? Zwei wählen.",
@@ -7507,11 +7415,11 @@
       "titel": "Nur für dich: Auflösung und Rückblick",
       "karten": [
        "R. ist Romy, 31, Mechatronikerin für Busse und Lkw im Busdepot: Velos statt Sprachen · CCP, dann DAP · Meister-Vorbereitung · neun Absagen.",
-       "Linas Nachricht: „R. heißt Romy! Ich hab mit dem Diagnosegerät einen Fehler gefunden. Romy: ‚Komm gern wieder – frag Sandra.‘“",
+       "Linas Nachricht: „R. heißt Romy! Ich hab mit dem Diagnosegerät einen Fehler gefunden. Romy: ‚Du hast selbst gefragt – komm gern wieder.‘“",
        "Rúben: Pflegeheim. Nele: Disposition, Zugang vorher vom Jugendhaus geklärt. Mats fragt Lina jetzt, wie das Gerät geht.",
        "Fragen: „Wie hattest du dir R. vorgestellt?“ Nicht korrigieren.",
        "Werte nie bewerten: „gutes Geld“ zählt wie „etwas Sinnvolles“.",
-       "„Noch offen“ ist ehrlich. Zu den Nummern: „Wen davon würdest du anrufen?“"
+       "„Noch offen“ ist ehrlich."
       ]
      }
     ],
@@ -7546,7 +7454,7 @@
      "Dossier R. avec les cinq indices dans la pochette",
      "Lire une fois le message de Lina sur « Pour l’adulte »"
     ],
-    "aufbau": "Antisèche (cœur 12′ + fiche 4′) : 0′ ouvrir le dossier, cinq indices en ligne – « Que fait R. ? Quel chemin ? » · 3′ justifier, lire le message de Lina · 5′ feuilleter, planche des valeurs, ticket · 10′ annonce debout · 11′ numéros d’aide · 12′ fiche. Indispensable : enquête, ticket, aide. En option : plusieurs langues. Si c’est serré : ticket à l’oral, l’adulte écrit.",
+    "aufbau": "Antisèche (15′, fiche = outil dès 0′) : 0′ cinq indices en ligne – « Que fait R. ? Quel chemin ? » –, hypothèse sur la fiche · 3′ message de Lina : « Comment tu t’imaginais R. ? » · 5′ retourner le ticket composté : une preuve · 6′ toucher deux valeurs · 7′ « Mon ticket » · 11′ annonce debout · 12′ numéros d’aide : « Lequel tu appellerais ? » · 14′ fin. Indispensable : enquête, ticket, aide.",
     "karten": [
      {
       "titel": "Planche des valeurs (entière) : qu’est-ce qui compte pour moi au travail ? En choisir deux.",
@@ -7569,11 +7477,11 @@
       "titel": "Pour l’adulte : solution et bilan",
       "karten": [
        "R., c’est Romy, 31 ans, mécatronicienne pour bus et camions au dépôt : vélos plutôt que langues · CCP, puis DAP · brevet en cours · neuf refus.",
-       "Message de Lina : « R., c’est Romy ! J’ai trouvé une panne avec la valise. Romy : “Reviens quand tu veux – demande à Sandra.” »",
+       "Message de Lina : « R., c’est Romy ! J’ai trouvé une panne avec la valise. Romy : “Tu as demandé toi-même – reviens quand tu veux.” »",
        "Rúben : maison de soins. Nele : régulation, accès vérifié avant par le Jugendhaus. Mats demande à Lina comment marche la valise.",
        "Demander : « Comment tu t’imaginais R. ? » Ne pas corriger.",
        "Ne pas juger les valeurs : « bien gagner sa vie » vaut « quelque chose qui a du sens ».",
-       "« Encore ouvert » est honnête. Numéros : « Lequel tu appellerais ? »"
+       "« Encore ouvert » est honnête."
       ]
      }
     ],
@@ -7652,7 +7560,7 @@
   ],
   "einzeltauglich": "ja",
   "titel": "Mein Netzplan: Nächster Halt",
-  "text": "Der Schnupperdag ist vorbei. Zum Einstieg öffnet der oder die Jugendliche die Akte R. und legt die fünf Spuren in eine Reihe: Was macht R., welchen Weg ist R. gegangen? Erst nach einer begründeten Vermutung liest die Fachkraft Linas Nachricht vor – R. heißt Romy – und fragt: „Wie hattest du dir R. vorgestellt?“ Kern: Er oder sie blättert die Mappe durch und füllt das Ticket mit vier Zeilen: meine Stärke mit Beweis, zwei Dinge, die mir bei Arbeit wichtig sind (Werte-Bogen, zwei zeigen), mein nächster Halt („noch offen“ geht auch), wer mir hilft. Zum Schluss steht er oder sie auf und sagt den nächsten Halt als Durchsage an – in einer oder mehreren Sprachen; beide lesen die Hilfe-Nummern. Merksatz, sonst: „Ich plane meine Route – und Umsteigen ist erlaubt.“",
+  "text": "Der Schnupperdag ist vorbei. Zum Einstieg öffnet der oder die Jugendliche die Akte R. und legt die fünf Spuren in eine Reihe: Was macht R., welchen Weg ist R. gegangen? Erst nach einer begründeten Vermutung liest die Fachkraft Linas Nachricht vor – R. heißt Romy – und fragt: „Wie hattest du dir R. vorgestellt?“ Kern: Er oder sie dreht den Fahrschein um, wählt einen Beweis und füllt das Ticket auf dem Blatt: meine Stärke mit Beweis, zwei Dinge, die mir bei Arbeit wichtig sind (Werte-Bogen, zwei zeigen), mein nächster Halt („noch offen“ geht auch), wer mir hilft. Zum Schluss steht er oder sie auf und sagt den nächsten Halt als Durchsage an – in einer oder mehreren Sprachen; beide lesen die Hilfe-Nummern. Merksatz, sonst: „Ich plane meine Route – und Umsteigen ist erlaubt.“",
   "sagen": [
    "Fünf Spuren in einer Reihe: Was macht R. – und welchen Weg ist R. gegangen?",
    "Wie hattest du dir R. vorgestellt?",
@@ -7687,8 +7595,8 @@
     "fr": "Prochain arrêt : l’avenir – avec le plan du réseau (points forts, métiers, chemins, questions, essayer), tracer son propre itinéraire : beaucoup de chemins, changer de ligne est permis"
    },
    "bruecke": {
-    "de": "Letztes Mal hast du Lina einen Plan B gebaut und herausgefunden, wo R. arbeitet: im Busdepot. Lina hat über Sandra gefragt und war am Schnupperdag dort; Rúben war im Pflegeheim, Nele in der Disposition eines Busbetriebs. Heute findest du heraus, was R. macht und welchen Weg R. gegangen ist – und legst deinen ganzen Netzplan.",
-    "fr": "La dernière fois, tu as construit un plan B pour Lina et trouvé où travaille R. : au dépôt de bus. Lina a demandé via Sandra et y était le jour du Schnupperdag ; Rúben était en maison de soins, Nele à la régulation d’une entreprise de bus. Aujourd’hui, tu découvres ce que fait R. et quel chemin a suivi R. – et tu assembles ton plan du réseau en entier."
+    "de": "Letztes Mal hast du Lina einen Plan B gebaut und herausgefunden, wo R. arbeitet: im Busdepot. Lina hat dort selbst angerufen – mit Rúbens Fahrplan – und war am Schnupperdag da; Rúben war im Pflegeheim, Nele in der Disposition eines Busbetriebs. Heute findest du heraus, was R. macht und welchen Weg R. gegangen ist – und legst deinen ganzen Netzplan.",
+    "fr": "La dernière fois, tu as construit un plan B pour Lina et trouvé où travaille R. : au dépôt de bus. Lina y a appelé elle-même – avec la feuille de route de Rúben – et y était le jour du Schnupperdag ; Rúben était en maison de soins, Nele à la régulation d’une entreprise de bus. Aujourd’hui, tu découvres ce que fait R. et quel chemin a suivi R. – et tu assembles ton plan du réseau en entier."
    }
   },
   "imSpiel": {
@@ -7767,7 +7675,7 @@
     {
      "art": "text",
      "klein": true,
-     "text": "Übrigens: Lina war am Schnupperdag in der Werkstatt und hat mit dem Diagnosegerät einen Fehler gefunden. Und du? Nächster Halt: …"
+     "text": "Übrigens: Lina war am Schnupperdag dort. Was sie erlebt hat, hörst du gleich. Und du? Nächster Halt: …"
     }
    ],
    "fr": [
@@ -7836,7 +7744,7 @@
     {
      "art": "text",
      "klein": true,
-     "text": "Au fait : le jour du Schnupperdag, Lina était à l’atelier et a trouvé une panne avec la valise de diagnostic. Et toi ? Prochain arrêt : …"
+     "text": "Au fait : Lina y était le jour du Schnupperdag. Ce qu’elle a vécu, tu vas l’entendre. Et toi ? Prochain arrêt : …"
     }
    ],
    "anleitung": {
@@ -7858,7 +7766,7 @@
   },
   "fr": {
    "titel": "Mon plan du réseau : prochain arrêt",
-   "text": "Le Schnupperdag est passé. Pour commencer, le ou la jeune ouvre le dossier R. et pose les cinq indices en ligne : que fait R., quel chemin a suivi R. ? Seulement après une hypothèse justifiée, l’adulte lit le message de Lina – R., c’est Romy – et demande : « Comment tu t’imaginais R. ? » Cœur de la séance : il ou elle feuillette le dossier et remplit le ticket en quatre lignes : mon point fort avec une preuve, deux choses qui comptent pour moi au travail (planche des valeurs, en montrer deux), mon prochain arrêt (« encore ouvert », ça marche aussi), qui m’aide. Pour finir, il ou elle se lève et annonce son prochain arrêt comme dans le bus – dans une ou plusieurs langues ; les deux lisent les numéros d’aide. Phrase-clé, sinon : « Je trace mon itinéraire – et changer de ligne est permis. »",
+   "text": "Le Schnupperdag est passé. Pour commencer, le ou la jeune ouvre le dossier R. et pose les cinq indices en ligne : que fait R., quel chemin a suivi R. ? Seulement après une hypothèse justifiée, l’adulte lit le message de Lina – R., c’est Romy – et demande : « Comment tu t’imaginais R. ? » Cœur de la séance : il ou elle retourne le ticket composté, choisit une preuve et remplit « Mon ticket » sur la fiche : mon point fort avec une preuve, deux choses qui comptent pour moi au travail (planche des valeurs, en montrer deux), mon prochain arrêt (« encore ouvert », ça marche aussi), qui m’aide. Pour finir, il ou elle se lève et annonce son prochain arrêt comme dans le bus – dans une ou plusieurs langues ; les deux lisent les numéros d’aide. Phrase-clé, sinon : « Je trace mon itinéraire – et changer de ligne est permis. »",
    "sagen": [
     "Cinq indices en ligne : que fait R. – et quel chemin a suivi R. ?",
     "Comment tu t’imaginais R. ?",
@@ -7881,7 +7789,7 @@
      "Akte R. mit den fünf Spuren in der Mappe",
      "Linas Nachricht auf „Nur für dich“ einmal lesen"
     ],
-    "aufbau": "Spickzettel (Kern 12′ + Blatt 4′): 0′ Akte R. öffnen, fünf Spuren in eine Reihe – „Was macht R.? Welcher Weg?“ · 3′ Vermutung begründen, Linas Nachricht vorlesen · 5′ Mappe durchblättern, Werte-Bogen, Ticket · 10′ Durchsage im Stehen · 11′ Hilfe-Nummern · 12′ Blatt. Muss: Fall, Ticket, Hilfe. Kann: mehrere Sprachen. Knapp: Ticket mündlich, die Fachkraft schreibt.",
+    "aufbau": "Spickzettel (15′, Blatt = Werkzeug ab 0′): 0′ fünf Spuren in eine Reihe – „Was macht R.? Welcher Weg?“ –, Vermutung aufs Blatt · 3′ Linas Nachricht: „Wie hattest du dir R. vorgestellt?“ · 5′ Fahrschein umdrehen: ein Beweis · 6′ zwei Werte antippen · 7′ Ticket · 11′ Durchsage im Stehen · 12′ Hilfe-Nummern: „Wen würdest du anrufen?“ · 14′ Ende. Muss: Fall, Ticket, Hilfe.",
     "karten": [
      {
       "titel": "Werte-Bogen (ganz lassen): Was ist mir bei Arbeit wichtig? Zwei wählen.",
@@ -7904,11 +7812,11 @@
       "titel": "Nur für dich: Auflösung und Rückblick",
       "karten": [
        "R. ist Romy, 31, Mechatronikerin für Busse und Lkw im Busdepot: Velos statt Sprachen · CCP, dann DAP · Meister-Vorbereitung · neun Absagen.",
-       "Linas Nachricht: „R. heißt Romy! Ich hab mit dem Diagnosegerät einen Fehler gefunden. Romy: ‚Komm gern wieder – frag Sandra.‘“",
+       "Linas Nachricht: „R. heißt Romy! Ich hab mit dem Diagnosegerät einen Fehler gefunden. Romy: ‚Du hast selbst gefragt – komm gern wieder.‘“",
        "Rúben: Pflegeheim. Nele: Disposition, Zugang vorher vom Jugendhaus geklärt. Mats fragt Lina jetzt, wie das Gerät geht.",
        "Fragen: „Wie hattest du dir R. vorgestellt?“ Nicht korrigieren.",
        "Werte nie bewerten: „gutes Geld“ zählt wie „etwas Sinnvolles“.",
-       "„Noch offen“ ist ehrlich. Zu den Nummern: „Wen davon würdest du anrufen?“"
+       "„Noch offen“ ist ehrlich."
       ]
      }
     ],
@@ -7943,7 +7851,7 @@
      "Dossier R. avec les cinq indices dans la pochette",
      "Lire une fois le message de Lina sur « Pour l’adulte »"
     ],
-    "aufbau": "Antisèche (cœur 12′ + fiche 4′) : 0′ ouvrir le dossier, cinq indices en ligne – « Que fait R. ? Quel chemin ? » · 3′ justifier, lire le message de Lina · 5′ feuilleter, planche des valeurs, ticket · 10′ annonce debout · 11′ numéros d’aide · 12′ fiche. Indispensable : enquête, ticket, aide. En option : plusieurs langues. Si c’est serré : ticket à l’oral, l’adulte écrit.",
+    "aufbau": "Antisèche (15′, fiche = outil dès 0′) : 0′ cinq indices en ligne – « Que fait R. ? Quel chemin ? » –, hypothèse sur la fiche · 3′ message de Lina : « Comment tu t’imaginais R. ? » · 5′ retourner le ticket composté : une preuve · 6′ toucher deux valeurs · 7′ « Mon ticket » · 11′ annonce debout · 12′ numéros d’aide : « Lequel tu appellerais ? » · 14′ fin. Indispensable : enquête, ticket, aide.",
     "karten": [
      {
       "titel": "Planche des valeurs (entière) : qu’est-ce qui compte pour moi au travail ? En choisir deux.",
@@ -7966,11 +7874,11 @@
       "titel": "Pour l’adulte : solution et bilan",
       "karten": [
        "R., c’est Romy, 31 ans, mécatronicienne pour bus et camions au dépôt : vélos plutôt que langues · CCP, puis DAP · brevet en cours · neuf refus.",
-       "Message de Lina : « R., c’est Romy ! J’ai trouvé une panne avec la valise. Romy : “Reviens quand tu veux – demande à Sandra.” »",
+       "Message de Lina : « R., c’est Romy ! J’ai trouvé une panne avec la valise. Romy : “Tu as demandé toi-même – reviens quand tu veux.” »",
        "Rúben : maison de soins. Nele : régulation, accès vérifié avant par le Jugendhaus. Mats demande à Lina comment marche la valise.",
        "Demander : « Comment tu t’imaginais R. ? » Ne pas corriger.",
        "Ne pas juger les valeurs : « bien gagner sa vie » vaut « quelque chose qui a du sens ».",
-       "« Encore ouvert » est honnête. Numéros : « Lequel tu appellerais ? »"
+       "« Encore ouvert » est honnête."
       ]
      }
     ],
@@ -8063,8 +7971,8 @@
     "fr": "Prochain arrêt : l’avenir – avec le plan du réseau (points forts, métiers, chemins, questions, essayer), tracer son propre itinéraire : beaucoup de chemins, changer de ligne est permis"
    },
    "bruecke": {
-    "de": "Letztes Mal hast du Lina einen Plan B gebaut und herausgefunden, wo R. arbeitet: im Busdepot. Lina hat über Sandra gefragt und war am Schnupperdag dort; Rúben war im Pflegeheim, Nele in der Disposition eines Busbetriebs. Heute findest du heraus, was R. macht und welchen Weg R. gegangen ist – und legst deinen ganzen Netzplan.",
-    "fr": "La dernière fois, tu as construit un plan B pour Lina et trouvé où travaille R. : au dépôt de bus. Lina a demandé via Sandra et y était le jour du Schnupperdag ; Rúben était en maison de soins, Nele à la régulation d’une entreprise de bus. Aujourd’hui, tu découvres ce que fait R. et quel chemin a suivi R. – et tu assembles ton plan du réseau en entier."
+    "de": "Letztes Mal hast du Lina einen Plan B gebaut und herausgefunden, wo R. arbeitet: im Busdepot. Lina hat dort selbst angerufen – mit Rúbens Fahrplan – und war am Schnupperdag da; Rúben war im Pflegeheim, Nele in der Disposition eines Busbetriebs. Heute findest du heraus, was R. macht und welchen Weg R. gegangen ist – und legst deinen ganzen Netzplan.",
+    "fr": "La dernière fois, tu as construit un plan B pour Lina et trouvé où travaille R. : au dépôt de bus. Lina y a appelé elle-même – avec la feuille de route de Rúben – et y était le jour du Schnupperdag ; Rúben était en maison de soins, Nele à la régulation d’une entreprise de bus. Aujourd’hui, tu découvres ce que fait R. et quel chemin a suivi R. – et tu assembles ton plan du réseau en entier."
    }
   },
   "ort": "raum",
@@ -8137,11 +8045,11 @@
       "titel": "Nur für dich: Auflösung und Rückblick",
       "karten": [
        "R. ist Romy, 31, Mechatronikerin für Busse und Lkw im Busdepot: Velos statt Sprachen · CCP, dann DAP · Meister-Vorbereitung · neun Absagen.",
-       "Linas Nachricht: „R. heißt Romy! Ich hab mit dem Diagnosegerät einen Fehler gefunden. Romy: ‚Komm gern wieder – frag Sandra.‘“",
+       "Linas Nachricht: „R. heißt Romy! Ich hab mit dem Diagnosegerät einen Fehler gefunden. Romy: ‚Du hast selbst gefragt – komm gern wieder.‘“",
        "Rúben: Pflegeheim. Nele: Disposition, Zugang vorher vom Jugendhaus geklärt. Mats fragt Lina jetzt, wie das Gerät geht.",
        "Fragen: „Wie hattest du dir R. vorgestellt?“ Nicht korrigieren.",
        "Werte nie bewerten: „gutes Geld“ zählt wie „etwas Sinnvolles“.",
-       "„Noch offen“ ist ehrlich. Zu den Nummern: „Wen davon würdest du anrufen?“"
+       "„Noch offen“ ist ehrlich."
       ]
      }
     ],
@@ -8194,11 +8102,11 @@
       "titel": "Pour l’adulte : solution et bilan",
       "karten": [
        "R., c’est Romy, 31 ans, mécatronicienne pour bus et camions au dépôt : vélos plutôt que langues · CCP, puis DAP · brevet en cours · neuf refus.",
-       "Message de Lina : « R., c’est Romy ! J’ai trouvé une panne avec la valise. Romy : “Reviens quand tu veux – demande à Sandra.” »",
+       "Message de Lina : « R., c’est Romy ! J’ai trouvé une panne avec la valise. Romy : “Tu as demandé toi-même – reviens quand tu veux.” »",
        "Rúben : maison de soins. Nele : régulation, accès vérifié avant par le Jugendhaus. Mats demande à Lina comment marche la valise.",
        "Demander : « Comment tu t’imaginais R. ? » Ne pas corriger.",
        "Ne pas juger les valeurs : « bien gagner sa vie » vaut « quelque chose qui a du sens ».",
-       "« Encore ouvert » est honnête. Numéros : « Lequel tu appellerais ? »"
+       "« Encore ouvert » est honnête."
       ]
      }
     ],
@@ -8286,8 +8194,8 @@
     "fr": "Prochain arrêt : l’avenir – avec le plan du réseau (points forts, métiers, chemins, questions, essayer), tracer son propre itinéraire : beaucoup de chemins, changer de ligne est permis"
    },
    "bruecke": {
-    "de": "Letztes Mal hast du Lina einen Plan B gebaut und herausgefunden, wo R. arbeitet: im Busdepot. Lina hat über Sandra gefragt und war am Schnupperdag dort; Rúben war im Pflegeheim, Nele in der Disposition eines Busbetriebs. Heute findest du heraus, was R. macht und welchen Weg R. gegangen ist – und legst deinen ganzen Netzplan.",
-    "fr": "La dernière fois, tu as construit un plan B pour Lina et trouvé où travaille R. : au dépôt de bus. Lina a demandé via Sandra et y était le jour du Schnupperdag ; Rúben était en maison de soins, Nele à la régulation d’une entreprise de bus. Aujourd’hui, tu découvres ce que fait R. et quel chemin a suivi R. – et tu assembles ton plan du réseau en entier."
+    "de": "Letztes Mal hast du Lina einen Plan B gebaut und herausgefunden, wo R. arbeitet: im Busdepot. Lina hat dort selbst angerufen – mit Rúbens Fahrplan – und war am Schnupperdag da; Rúben war im Pflegeheim, Nele in der Disposition eines Busbetriebs. Heute findest du heraus, was R. macht und welchen Weg R. gegangen ist – und legst deinen ganzen Netzplan.",
+    "fr": "La dernière fois, tu as construit un plan B pour Lina et trouvé où travaille R. : au dépôt de bus. Lina y a appelé elle-même – avec la feuille de route de Rúben – et y était le jour du Schnupperdag ; Rúben était en maison de soins, Nele à la régulation d’une entreprise de bus. Aujourd’hui, tu découvres ce que fait R. et quel chemin a suivi R. – et tu assembles ton plan du réseau en entier."
    }
   },
   "ort": "raum",
@@ -8360,11 +8268,11 @@
       "titel": "Nur für dich: Auflösung und Rückblick",
       "karten": [
        "R. ist Romy, 31, Mechatronikerin für Busse und Lkw im Busdepot: Velos statt Sprachen · CCP, dann DAP · Meister-Vorbereitung · neun Absagen.",
-       "Linas Nachricht: „R. heißt Romy! Ich hab mit dem Diagnosegerät einen Fehler gefunden. Romy: ‚Komm gern wieder – frag Sandra.‘“",
+       "Linas Nachricht: „R. heißt Romy! Ich hab mit dem Diagnosegerät einen Fehler gefunden. Romy: ‚Du hast selbst gefragt – komm gern wieder.‘“",
        "Rúben: Pflegeheim. Nele: Disposition, Zugang vorher vom Jugendhaus geklärt. Mats fragt Lina jetzt, wie das Gerät geht.",
        "Fragen: „Wie hattest du dir R. vorgestellt?“ Nicht korrigieren.",
        "Werte nie bewerten: „gutes Geld“ zählt wie „etwas Sinnvolles“.",
-       "„Noch offen“ ist ehrlich. Zu den Nummern: „Wen davon würdest du anrufen?“"
+       "„Noch offen“ ist ehrlich."
       ]
      }
     ],
@@ -8417,11 +8325,11 @@
       "titel": "Pour l’adulte : solution et bilan",
       "karten": [
        "R., c’est Romy, 31 ans, mécatronicienne pour bus et camions au dépôt : vélos plutôt que langues · CCP, puis DAP · brevet en cours · neuf refus.",
-       "Message de Lina : « R., c’est Romy ! J’ai trouvé une panne avec la valise. Romy : “Reviens quand tu veux – demande à Sandra.” »",
+       "Message de Lina : « R., c’est Romy ! J’ai trouvé une panne avec la valise. Romy : “Tu as demandé toi-même – reviens quand tu veux.” »",
        "Rúben : maison de soins. Nele : régulation, accès vérifié avant par le Jugendhaus. Mats demande à Lina comment marche la valise.",
        "Demander : « Comment tu t’imaginais R. ? » Ne pas corriger.",
        "Ne pas juger les valeurs : « bien gagner sa vie » vaut « quelque chose qui a du sens ».",
-       "« Encore ouvert » est honnête. Numéros : « Lequel tu appellerais ? »"
+       "« Encore ouvert » est honnête."
       ]
      }
     ],
