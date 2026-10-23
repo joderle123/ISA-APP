@@ -95,6 +95,9 @@ export const themaByKey = new Map(THEMEN.map((t) => [t.key, t]))
 
 /** Themen-Wörter der Oberfläche und des Hubs, die es im Katalog unter anderem Schlüssel gibt (22.10.2026: „Konzentration“,
  *  „Trauer“, „Veränderung“ fanden keine Übung, weil die Schritte „aufmerksamkeit“, „traurig“, „familie“ tragen) */
+/** Themen der Kurse zu einer Lebenslage (Schulvermeidung, Trauer, Veränderung in der Familie): erstes Thema eines solchen Kurses */
+export const KURS_LAGE_THEMEN = new Set(['schule', 'traurig', 'familie'])
+
 export const THEMA_ALIAS: Record<string, string> = {
   konzentration: 'aufmerksamkeit', trauer: 'traurig', veraenderung: 'familie', stress: 'angst', pruefung: 'angst',
   beziehung: 'freundschaft', rueckzug: 'traurig', motivation: 'lernen',

@@ -9,7 +9,7 @@ import { BESONDERE_THEMEN, bewerte, kontext, krisenlage, pruefe, rang, warum, ty
 import { alltagsOrte, baueBlatt, kernBlatt, werkzeugName } from './blatt'
 import { BLATT_SYSTEM } from './system'
 import { vertrauenKind, vorliebe, type Vorlieben } from './vorlieben'
-import { KOMPETENZ_NAME, NUR_DEUTSCH, THEMA_ALIAS, feldEindeutig, kompetenzAusCode, themaByKey, type Kompetenz } from './vokabular'
+import { KOMPETENZ_NAME, KURS_LAGE_THEMEN, NUR_DEUTSCH, THEMA_ALIAS, feldEindeutig, kompetenzAusCode, themaByKey, type Kompetenz } from './vokabular'
 import HINTERGRUND from '../../data/passgenau/kurs-hintergrund.json'
 import { formSlots, formTreffer, formVon, type Unterrichtsform } from './formen'
 import { klammerFuer } from './klammer'
@@ -451,10 +451,9 @@ const KURS_VERWANDT: Record<string, readonly (readonly [string, number])[]> = {
   lernen: [['aufmerksamkeit', 0.6]],
 }
 const ALLGEMEINE_ZIELE = new Set(['V-25', 'V-15', 'K-12'])
-/** Kurse zu einer Lebenslage (Schulvermeidung, Trauer, Veränderung in der Familie): nur, wenn das Thema beim Kind vorkommt
- *  oder der Kurs in der Bibliothek gewählt wurde (23.10.2026: „Comeback“ hätte jeden Jugendlichen mit V-24 „neue Erfahrungen“
- *  bekommen, auch ohne Fehlzeiten) */
-export const KURS_LAGE_THEMEN = new Set(['schule', 'traurig', 'familie'])
+/** Kurse zu einer Lebenslage nur, wenn das Thema beim Kind vorkommt oder der Kurs in der Bibliothek gewählt wurde
+ *  (23.10.2026: „Comeback“ hätte jeden Jugendlichen mit V-24 „neue Erfahrungen“ bekommen, auch ohne Fehlzeiten) */
+export { KURS_LAGE_THEMEN }
 function kursWahl(c: Kontext): { id: string; ab: number } | null {
   let k = KURS_DER_FOLGE.get(c)
   if (k !== undefined) return k

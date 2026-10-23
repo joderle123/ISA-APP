@@ -9,7 +9,7 @@ import { setzeText, texte } from './inhalt'
 import { bewerte, NACHBAR, pruefe, rang, type Bewertet, type Kontext } from './regeln'
 import { knapp as umbruchKnapp, seitenMasse, teilHoehe, verteile } from './seiten'
 import { BLATT_SYSTEM } from './system'
-import { interesseName, SKILLS_BEREICH, type Kompetenz } from './vokabular'
+import { interesseName, KURS_LAGE_THEMEN, SKILLS_BEREICH, type Kompetenz } from './vokabular'
 
 /** Lernbogen des Blatts je Sitzungsphase (5.5 Schritt 1). */
 export const BLATT_BOGEN: Record<Bogen, Bogen[]> = {
@@ -682,7 +682,10 @@ function kernBlattInhalt(kern: KatalogEintrag, phase: Bogen | 'leicht', sprache:
     const fertig = ohneLeereAufgaben(liste, o.wenigSchreiben)
     // dünnes Kinderblatt (Blind-Bewertung 10: „untere Blatthälfte leer“): ein freiwilliges Malfeld zur Übung am Schluss
     const zahl = fertig.filter((b) => b.art !== 'text' && b.art !== 'aufgabe' && b.art !== 'bild' && b.art !== 'wortspeicher').length
-    if ((o.alter ?? 12) < 12 && zahl <= 2 && !fertig.some((b) => b.art === 'feld'))
+    // … nie in Kursen zu einer Lebenslage: dort fragt das Blatt bewusst nur nach Figuren, das „Und du?“ fragte wieder nach
+    // Eigenem (Kritik kurs-familie-7-9, 23.10.2026)
+    const lageKurs = kursBlatt && KURS_LAGE_THEMEN.has(kern.thema?.[0] ?? '')
+    if ((o.alter ?? 12) < 12 && zahl <= 2 && !lageKurs && !fertig.some((b) => b.art === 'feld'))
       // … als „Und du?“ des Blatt-Gerüsts (Blind-Bewertung 13: „Mal hier, was du bei der Übung gemacht hast“ war ein immer
       // gleicher Füller ohne Bezug zum eigenen Leben)
       fertig.push(
