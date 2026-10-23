@@ -19,7 +19,7 @@ import type { Auftrag, Plan, Profil } from '../src/passgenau/typen'
 import type { Layout, Stufe } from '../src/blatt/typen'
 import { registriereSchriften } from '../src/blatt/pdf/stil'
 import { FolgeDokument } from '../src/passgenau/pdf/PlanDokument'
-import { planen } from '../src/passgenau/kern/planer'
+import { KURS_LAGE_THEMEN, planen } from '../src/passgenau/kern/planer'
 import { druckFolge } from '../src/passgenau/kern/druck'
 import { ladeKatalogNode, ROOT } from './passgenau-quellen'
 
@@ -59,6 +59,8 @@ for (const kurs of kurse) {
   const alter = process.env.ALTER ? Math.min(bis, Math.max(von, +process.env.ALTER)) : Math.round((von + bis) / 2)
   const codes = [...new Set(erste.flatMap((e) => (e.eldib ?? []).filter((x) => x.gewicht === 1).map((x) => x.code)))].slice(0, 2)
   const rituale = alle.filter((e) => e.kurs === kurs)
+  // Kurs zu einer Lebenslage (Schulvermeidung, Trauer, Familie): das Testkind hat das Thema (sonst nimmt der Planer den Kurs nicht)
+  const lage = (k.eintraege.get(erste[0].id) as { thema?: string[] } | undefined)?.thema?.find((t) => KURS_LAGE_THEMEN.has(t)) ?? null
   const zugaenge = [...new Map(erste.map((e) => [JSON.stringify(e.zugang ?? null), e.zugang ?? null])).values()]
   console.log(`\n== ${kurs}: ${n} Sitzungen, ${sitzungen.length} Einträge, Alter ${von}–${bis} (Test: ${alter}), Ziele ${codes.join(', ')}, Rituale ${rituale.length}, Tausch-Übungen ${tausch.length}`)
   for (let nr = 1; nr <= n; nr++) if (!sitzungen.some((e) => e.linie!.nr === nr)) { console.log(`  ✗ Sitzung ${nr} fehlt`); fehler++ }
@@ -73,7 +75,7 @@ for (const kurs of kurse) {
         /* Testkind zur Variante: zur schreibenden ein Kind, das gut liest und schreibt (2/2/1), sonst genau der Zugang der Variante */
         zugang: { ...((z?.schreiben ?? 2) >= 1 ? { lesen: 2, schreiben: 2, bild: 1 } : { lesen: z!.lesen, schreiben: z!.schreiben, bild: Math.max(1, z!.bild) }), tempo: 'normal', struktur: 'normal', quelle: ['stufe'] } as Profil['zugang'],
         ziele: codes.map((code, i) => ({ code, ich: '', quelle: 'pei', seit: '2026-09-15', prio: i + 1 })),
-        erreicht: [], themen: [], vorsicht: process.env.VORSICHT ? [process.env.VORSICHT] : [], interessen: [], wochenziel: null, gemacht: [], folge: null, vorlieben: null,
+        erreicht: [], themen: lage ? [{ key: lage, art: 'reunion', datum: '2026-10-01' }] : [], vorsicht: process.env.VORSICHT ? [process.env.VORSICHT] : [], interessen: [], wochenziel: null, gemacht: [], folge: null, vorlieben: null,
         rechte: { speichern: true, rueckmelden: true }, seed: `kurs-${kurs}-${v}`, dichte: 'mittel', achtung: [],
       } as unknown as Profil
       const a: Auftrag = { weg: 'gruendlich', ziele: codes, n, dauer: Number(wert('--dauer') ?? (alter < 6 ? 20 : 30)) as 30, sozialform: 'einzeln', schwerpunkt: [], formate: [], heute: { energie: 4, konzentration: 4, stimmung: 4 } as Auftrag['heute'], sprache, datum: '2026-10-12' }

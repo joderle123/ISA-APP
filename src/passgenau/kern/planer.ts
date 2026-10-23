@@ -451,6 +451,10 @@ const KURS_VERWANDT: Record<string, readonly (readonly [string, number])[]> = {
   lernen: [['aufmerksamkeit', 0.6]],
 }
 const ALLGEMEINE_ZIELE = new Set(['V-25', 'V-15', 'K-12'])
+/** Kurse zu einer Lebenslage (Schulvermeidung, Trauer, Veränderung in der Familie): nur, wenn das Thema beim Kind vorkommt
+ *  oder der Kurs in der Bibliothek gewählt wurde (23.10.2026: „Comeback“ hätte jeden Jugendlichen mit V-24 „neue Erfahrungen“
+ *  bekommen, auch ohne Fehlzeiten) */
+export const KURS_LAGE_THEMEN = new Set(['schule', 'traurig', 'familie'])
 function kursWahl(c: Kontext): { id: string; ab: number } | null {
   let k = KURS_DER_FOLGE.get(c)
   if (k !== undefined) return k
@@ -483,6 +487,7 @@ function kursWahl(c: Kontext): { id: string; ab: number } | null {
       const allgemein = (code: string) => ALLGEMEINE_ZIELE.has(code) && code !== haupt
       c.ziele.forEach((z, i) => { const x = e.eldib.find((y) => y.code === z.code); if (x) w += (x.gewicht === 1 ? 1 : 0.2) * (allgemein(z.code) ? 0.4 : 1) / (i + 1) })
       const tw = themaW(e)
+      if (KURS_LAGE_THEMEN.has(e.thema[0] ?? '') && tw < 0.35) continue
       const zielTrifft = e.eldib.some((x) => x.gewicht === 1 && c.ziele.some((z) => z.code === x.code) && (!allgemein(x.code) || tw >= 0.35))
       if (!zielTrifft && tw < 0.7) continue
       w += 0.75 * tw

@@ -13,7 +13,7 @@ import { registriereSchriften } from '../src/blatt/pdf/stil'
 import { BlattDokument } from '../src/blatt/pdf/BlattDokument'
 import { PlanSeite, SitzungDokument, teilPositionen } from '../src/passgenau/pdf/PlanDokument'
 import { aufloesen, intern, textVon, zielSatz, type Katalog } from '../src/passgenau/kern/katalog'
-import { erkundbar, planen, sitzungNeu, type Verlauf } from '../src/passgenau/kern/planer'
+import { KURS_LAGE_THEMEN, erkundbar, planen, sitzungNeu, type Verlauf } from '../src/passgenau/kern/planer'
 import { alternativen, ersetzen } from '../src/passgenau/kern/alternativen'
 import { blattTeilKohaerent, kinderblatt } from '../src/passgenau/kern/blatt'
 import { seitenFuellung } from '../src/passgenau/kern/seiten'
@@ -1003,6 +1003,9 @@ await pruefung('Steckbrief-Vorschläge: gelten erst nach „Übernehmen“; weni
   info(`Kerne: ${kerne.map((x) => x.ref.replace('ki:kurs-wut-13-16-', '')).join(' ')}`)
 })
 
+/** Kurs zu einer Lebenslage: das Testkind hat das Thema (KURS_LAGE_THEMEN) */
+const lageThemen = (e: KatalogEintrag) => e.thema.filter((t) => KURS_LAGE_THEMEN.has(t)).slice(0, 1).map((key) => ({ key, art: 'reunion' as const, datum: '2026-10-01' }))
+
 await pruefung('Einzelkurs: Tausch-Übungen nie von selbst, als Alternative nach den Varianten; Blatt, Anleitung und Auftrag bleiben', async () => {
   const alle = [...k.eintraege.values()]
   const tausch = alle.filter((e) => e.typ === 'schritt' && e.tausch && e.linie)
@@ -1016,7 +1019,7 @@ await pruefung('Einzelkurs: Tausch-Übungen nie von selbst, als Alternative nach
     const alter = Math.round((von + bis) / 2)
     const codes = [...new Set(erste.flatMap((e) => e.eldib.filter((x) => x.gewicht === 1).map((x) => x.code)))].slice(0, 2)
     const n = Math.max(...kursE.map((e) => e.linie!.nr))
-    const p = kind({ ref: `t-tausch-${id}`, vorname: 'Lina', alterJahre: alter, ziele: codes.map((c, i) => z(c, '', i + 1)) })
+    const p = kind({ ref: `t-tausch-${id}`, vorname: 'Lina', alterJahre: alter, ziele: codes.map((c, i) => z(c, '', i + 1)), themen: lageThemen(erste[0]) })
     const plan = planen(k, p, auftrag(p, 'gruendlich', { ziele: codes, n, dauer: alter < 6 ? 20 : 30 }), leer(), VERLAUF)
     const kernIdx = (nr: number) => plan.sitzungen[nr - 1].schritte.findIndex((x) => x.rolle === 'kern')
     const kernVon = (pl: Plan, nr: number) => pl.sitzungen[nr - 1].schritte.find((x) => x.rolle === 'kern')
@@ -1068,7 +1071,7 @@ await pruefung('Einzelkurs mit heiklem Thema: jede Sitzung bleibt im Kurs – sc
     const alter = Math.round((erste[0].alter.von + erste[0].alter.bis) / 2)
     const codes = [...new Set(erste.flatMap((e) => e.eldib.filter((x) => x.gewicht === 1).map((x) => x.code)))].slice(0, 2)
     const n = Math.max(...kursE.map((e) => e.linie!.nr))
-    const p = kind({ ref: `t-schonend-${id}`, vorname: 'Lina', alterJahre: alter, ziele: codes.map((c, i) => z(c, '', i + 1)), vorsicht: ['heikel'] })
+    const p = kind({ ref: `t-schonend-${id}`, vorname: 'Lina', alterJahre: alter, ziele: codes.map((c, i) => z(c, '', i + 1)), themen: lageThemen(erste[0]), vorsicht: ['heikel'] })
     const plan = planen(k, p, auftrag(p, 'gruendlich', { ziele: codes, n, dauer: alter < 6 ? 20 : 30 }), leer(), VERLAUF)
     for (const s of plan.sitzungen) {
       sitzungen++
