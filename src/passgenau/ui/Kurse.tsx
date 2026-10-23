@@ -11,6 +11,7 @@ import { heuteIso, zielKurz } from './texte'
 import { ZeichnungSvg } from '../../blatt/ZeichnungSvg'
 import { bildZeichnung, palette } from '../../blatt/zeichnung'
 import { dauerVorgabe } from './Wege'
+import { HilfenBlock } from './Stundenbild'
 
 const BAENDER: [number, number][] = [
   [4, 6],
@@ -241,6 +242,7 @@ function KursSeite({ k, zurueck }: { k: K.KursInfo; zurueck: () => void }) {
                       </span>
                     )}
                   </div>
+                  {s.hilfen && <HilfenBlock h={(sp === 'fr' ? s.hilfen.fr : undefined) ?? s.hilfen.de} />}
                   {s.tausch.length > 0 && (
                     <p className="pg-kb-tausch">
                       Oder mit einer anderen Methode: {s.tausch.map((x) => (x.titel[sp].startsWith(s.titel[sp]) ? x.titel[sp].slice(s.titel[sp].length).replace(/^[\s:–-]+/, '') : x.titel[sp]) || x.titel[sp]).join(' · ')}

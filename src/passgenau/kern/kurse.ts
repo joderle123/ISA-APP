@@ -2,7 +2,7 @@
 // Themen, ich habe sie nie gefunden“. Bisher kamen sie nur still über „Gründlich planen“ in eine Folge (planer.ts kursWahl).
 import HINTERGRUND from '../../data/passgenau/kurs-hintergrund.json'
 import type { Katalog } from './katalog'
-import type { KatalogEintrag, Stundenschritt } from '../typen'
+import type { HilfenText, KatalogEintrag, Stundenschritt } from '../typen'
 import { felderStunde } from './rahmenplan'
 import type { FeldId } from './formen'
 
@@ -22,6 +22,8 @@ export interface KursSitzung {
   /** kurzer Wochenplan aus dem Kurs-Hintergrund („Woche 1: …“) */
   plan?: Zwei
   minuten: number
+  /** Hilfen der Hauptvariante (Vorbereitung, Karten, leichter/schwerer …) – zum Hineinschauen in der Kurs-Bibliothek */
+  hilfen?: { de: HilfenText; fr?: HilfenText }
 }
 
 export interface KursInfo {
@@ -102,6 +104,7 @@ export function kursListe(k: Katalog): KursInfo[] {
         tausch: alle.filter((e) => e.tausch).map((e) => ({ titel: { de: e.titel, fr: e.fr?.titel ?? e.titel }, format: e.format })),
         plan: zwei(planDe?.replace(/^Woche \d+:\s*/, ''), planFr?.replace(/^Semaine \d+\s*:\s*/, '')),
         minuten: haupt.dauer.typ,
+        ...(haupt.hilfen ? { hilfen: haupt.hilfen } : {}),
       }
     })
     const r = rituale.get(id) ?? []

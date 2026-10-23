@@ -4867,7 +4867,7 @@ dialog .pg-hinweise {
   display: grid;
   gap: 12px;
 }
-.pg-kb-sitzungen li {
+.pg-kb-sitzungen > li {
   display: grid;
   grid-template-columns: 44px minmax(0, 1fr);
   gap: 12px;
@@ -4877,11 +4877,11 @@ dialog .pg-hinweise {
   border-radius: var(--r-md);
   background: var(--surface);
 }
-.pg-kb-sitzungen b {
+.pg-kb-sitzungen > li > div > b {
   font-size: var(--fs-md);
   color: var(--ink);
 }
-.pg-kb-sitzungen p {
+.pg-kb-sitzungen > li > div > p {
   margin: 4px 0 0;
   font-size: var(--fs-sm);
   color: var(--ink-2);
@@ -5446,5 +5446,20 @@ p.pg-kb-tausch {
 @media (max-width: 520px) {
   .pg-nw-zeile {
     grid-template-columns: minmax(0, 130px) minmax(0, 1fr) 24px;
+  }
+}
+
+/* Hilfen je Sitzung in der Kurs-Bibliothek: volle Breite der Karte */
+.pg-kb-sitzungen .pg-hb {
+  margin-top: 10px;
+}
+/* schmale Karten (Kurs-Bibliothek, Handy): Zusammenfassung unter den Titel statt in eine schmale Spalte */
+@media (max-width: 640px) {
+  .pg-hb-kopf {
+    flex-wrap: wrap;
+  }
+  .pg-hb-kopf span {
+    flex-basis: calc(100% - 40px);
+    order: 3;
   }
 }
