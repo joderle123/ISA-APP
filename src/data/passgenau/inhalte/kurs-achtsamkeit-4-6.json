@@ -28,7 +28,7 @@
   "material": [
    "karten"
   ],
-  "vorbereitung": "Kawi-Bildkarte (oder ein Eichhörnchen-Stofftier) hinter die Mappe stellen.",
+  "vorbereitung": "Kawi-Bildkarte auf eine Klopapierrolle kleben – so steht Kawi, schaut hinter der Mappe hervor und kann umfallen – oder ein Eichhörnchen-Stofftier hinter die Mappe stellen (1 Minute, einmal für alle Treffen).",
   "thema": [],
   "eldib": [],
   "kompetenz": [],
@@ -54,7 +54,7 @@
     "À quelle vitesse va ton corps en ce moment ? Montre-le avec ta main – ou pas, les deux vont bien."
    ],
    "wennEsKippt": "Si l’enfant ne veut pas tapoter, un petit signe à Kawi suffit. Montrer la main est libre ; l’adulte ne juge jamais si la main est en haut ou en bas.",
-   "vorbereitung": "Placer la carte-image de Kawi (ou un écureuil en tissu) derrière la farde."
+   "vorbereitung": "Coller la carte-image de Kawi sur un rouleau de papier toilette – ainsi Kawi tient debout, sort de derrière la farde et peut tomber – ou placer un écureuil en tissu derrière la farde (1 minute, une fois pour toutes les rencontres)."
   }
  },
  {
@@ -215,12 +215,6 @@
    },
    "de": [
     {
-     "art": "info",
-     "symbol": "wissen",
-     "titel": "Heute: Stopp und spüren",
-     "text": "Kawi saust. Stopp! Wie schnell bin ich?"
-    },
-    {
      "art": "aufgabe",
      "text": "Kawis Tricks: Mal den Trick von heute bunt an.",
      "symbole": [
@@ -261,7 +255,7 @@
      "art": "karten",
      "spalten": 3,
      "schneiden": true,
-     "hoehe": 78,
+     "hoehe": 120,
      "karten": [
       {
        "bild": "motiv:eichhoernchen",
@@ -286,12 +280,6 @@
     }
    ],
    "fr": [
-    {
-     "art": "info",
-     "symbol": "wissen",
-     "titel": "Aujourd’hui : Stop, je sens !",
-     "text": "Kawi fonce. Stop ! Vite ou doucement ?"
-    },
     {
      "art": "aufgabe",
      "text": "Les astuces de Kawi : colorie l’astuce d’aujourd’hui.",
@@ -333,7 +321,7 @@
      "art": "karten",
      "spalten": 3,
      "schneiden": true,
-     "hoehe": 78,
+     "hoehe": 120,
      "karten": [
       {
        "bild": "motiv:eichhoernchen",
@@ -965,7 +953,7 @@
    "schreiben": 0,
    "bild": 3
   },
-  "vorbereitung": "Glitzer-Flasche bauen (Plastikflasche, Wasser, Glitzer, ein Tropfen Spülmittel) und die zweite Eichel hinten ankleben.",
+  "vorbereitung": "Am Vortag Glitzer-Flasche bauen (Plastikflasche, Wasser, Bio-Glitzer aus Zellulose, ein Tropfen Spülmittel) und die zweite Eichel hinten ankleben.",
   "uebungsblatt": {
    "titel": {
     "de": "Warten wie die Flasche",
@@ -1145,13 +1133,13 @@
    ],
    "wennEsKippt": "Si l’attente semble longue, les deux fredonnent doucement jusqu’à ce que les paillettes soient en bas. Si l’enfant ne veut pas se secouer, il secoue seulement les mains puis les laisse descendre lentement. Secouer une fois et attendre une fois, ça suffit.",
    "kurz": "Secouer la bouteille · essayer ses idées · attendre et regarder · je suis la bouteille",
-   "vorbereitung": "Fabriquer la bouteille à paillettes (bouteille en plastique, eau, paillettes, une goutte de liquide vaisselle) et coller le deuxième gland à l’arrière."
+   "vorbereitung": "La veille, fabriquer la bouteille à paillettes (bouteille en plastique, eau, paillettes biodégradables, une goutte de liquide vaisselle) et coller le deuxième gland à l’arrière."
   },
   "hilfen": {
    "de": {
     "haken": "Eine Flasche voller Glitzer-Wirbel – und irgendwo dahinter soll eine Eichel sein? Das Kind darf sie selbst schütteln und herausfinden, was hilft. Ein echtes kleines Experiment: Die Antwort kommt aus der Flasche, nicht von der Fachkraft.",
     "vorbereitung": [
-     "Glitzer-Flasche bauen (Kartensatz unten) und einmal testen",
+     "Glitzer-Flasche am Vortag bauen und testen (Kartensatz unten)",
      "Zweite Eichel-Karte hinten außen ankleben",
      "Neben dem Tisch einen Meter frei machen",
      "Karte „Nur für dich“ einmal lesen"
@@ -1159,14 +1147,14 @@
     "aufbau": "Spickzettel 8′: 0′ Flasche zeigen, Rui und Zoé kurz vorstellen · 1′ Kind schüttelt – „Siehst du die Eichel?“ · 2′ Ideen probieren · 3′ hinstellen, Hände auf den Tisch – „Wir schauen nur.“ · 5′ im Stehen: Kind ist die Flasche – schütteln, Stopp, Glitzer sinken lassen · 7′ Eichel. Übungsblatt 3′. Muss: einmal schütteln, einmal warten, Körper-Flasche. Knapp: Ideen kürzen.",
     "karten": [
      {
-      "titel": "Die Glitzer-Flasche (einmal bauen, bleibt für alle Treffen)",
+      "titel": "Die Glitzer-Flasche (am Vortag bauen, bleibt für alle Treffen)",
       "karten": [
        "Durchsichtige Plastikflasche (0,5 l), glatt, Etikett ab – kein Glas: Es wird kräftig geschüttelt.",
-       "Zu drei Vierteln warmes Wasser, 2–3 Esslöffel Glitzer (fein und grob gemischt), ein Tropfen Spülmittel, damit nichts oben schwimmt.",
-       "Wenn vorhanden, 1–2 Esslöffel Glyzerin (Apotheke) dazu: Der Glitzer sinkt dann langsamer.",
-       "Deckel fest zudrehen und rundum mit Klebeband sichern. Die Fachkraft füllt, nie das Kind.",
+       "Zu drei Vierteln warmes Wasser, 2–3 Esslöffel Glitzer, am besten aus Zellulose (biologisch abbaubar), fein und grob gemischt.",
+       "Ein Tropfen Spülmittel, damit nichts oben schwimmt. Wenn vorhanden, 1–2 Esslöffel Glyzerin (Apotheke): Der Glitzer sinkt dann langsamer.",
+       "Deckel fest zudrehen und rundum mit Klebeband sichern. Die Fachkraft füllt, nie das Kind. Über Nacht hinlegen: Ist es morgens trocken, ist sie dicht.",
        "Die zweite Eichel-Karte hinten außen ankleben, Bild zur Flasche hin.",
-       "Testen: schütteln – ist die Eichel im Wirbel kaum zu sehen und nach 20–60 Sekunden wieder klar? Zu schnell klar: mehr Glitzer."
+       "Testen: schütteln – ist die Eichel im Wirbel kaum zu sehen und nach 20–60 Sekunden wieder klar? Zu schnell klar: Glyzerin oder feinerer Glitzer."
       ]
      },
      {
@@ -1209,7 +1197,7 @@
    "fr": {
     "haken": "Une bouteille pleine de paillettes qui tourbillonnent – et quelque part derrière, il y aurait un gland ? L’enfant peut la secouer lui-même et trouver ce qui aide. Une vraie petite expérience : la réponse vient de la bouteille, pas de l’adulte.",
     "vorbereitung": [
-     "Fabriquer la bouteille à paillettes (cartes ci-dessous) et la tester une fois",
+     "Fabriquer la bouteille à paillettes la veille et la tester (cartes ci-dessous)",
      "Coller la deuxième carte-gland à l’arrière",
      "Libérer un mètre à côté de la table",
      "Lire une fois la carte « Pour l’adulte »"
@@ -1217,14 +1205,14 @@
     "aufbau": "Aide-mémoire 8′ : 0′ montrer la bouteille, présenter Rui et Zoé · 1′ l’enfant secoue – « Tu vois le gland ? » · 2′ essayer ses idées · 3′ poser, mains sur la table – « On regarde seulement. » · 5′ debout : l’enfant est la bouteille – secouer, stop, faire descendre · 7′ gland. Fiche 3′. Indispensable : secouer, attendre, bouteille-corps. Temps court : moins d’idées.",
     "karten": [
      {
-      "titel": "La bouteille à paillettes (à fabriquer une fois, sert à chaque rencontre)",
+      "titel": "La bouteille à paillettes (à fabriquer la veille, sert à chaque rencontre)",
       "karten": [
        "Bouteille en plastique transparente (0,5 l), lisse, sans étiquette – pas de verre : on la secoue fort.",
-       "Aux trois quarts d’eau tiède, 2 à 3 cuillères à soupe de paillettes (fines et grosses), une goutte de liquide vaisselle pour que rien ne flotte.",
-       "Si possible, 1 à 2 cuillères à soupe de glycérine (pharmacie) : les paillettes descendent plus lentement.",
-       "Bien visser le bouchon et l’entourer de ruban adhésif. C’est l’adulte qui remplit, jamais l’enfant.",
+       "Aux trois quarts d’eau tiède, 2 à 3 cuillères à soupe de paillettes, de préférence en cellulose (biodégradables), fines et grosses.",
+       "Une goutte de liquide vaisselle pour que rien ne flotte. Si possible, 1 à 2 cuillères de glycérine (pharmacie) : les paillettes descendent plus lentement.",
+       "Bien visser le bouchon, l’entourer de ruban adhésif ; l’adulte remplit, jamais l’enfant. La coucher une nuit : si c’est sec le matin, elle est étanche.",
        "Coller la deuxième carte-gland à l’arrière, à l’extérieur, image tournée vers la bouteille.",
-       "Tester : secouer – le gland est-il à peine visible dans le tourbillon, puis de nouveau net après 20 à 60 secondes ? Trop vite clair : plus de paillettes."
+       "Tester : secouer – le gland est-il à peine visible dans le tourbillon, puis net après 20 à 60 secondes ? Trop vite clair : glycérine ou paillettes plus fines."
       ]
      },
      {
@@ -1375,21 +1363,21 @@
     "haken": "Ein Tuch fliegt durch die Luft und schwebt dann ganz langsam herunter – Kinder schauen ihm automatisch nach. Genau dieses Nachschauen ist das Warten.",
     "vorbereitung": [
      "Ein leichtes Tuch (Seidentuch, Halstuch)",
-     "Glitzer-Flasche bauen (Kartensatz unten) und einmal testen",
+     "Glitzer-Flasche am Vortag bauen und testen (Kartensatz unten)",
      "Zweite Eichel-Karte hinten außen ankleben",
      "Zwei Meter Platz frei machen"
     ],
     "aufbau": "Spickzettel 8′: 0′ Flasche schütteln, hinstellen · 1′ Tuch = Glitzer – „Es wirbelt!“ · 2′ „Und warten …“ – Tuch landet · 4′ zweite Runde · 5′ Kind ruft, du wirbelst · 7′ Flasche klar, Eichel entdecken. Übungsblatt 3′. Muss: einmal wirbeln, einmal warten. Kann: Tausch. Knapp: eine Runde.",
     "karten": [
      {
-      "titel": "Die Glitzer-Flasche (einmal bauen, bleibt für alle Treffen)",
+      "titel": "Die Glitzer-Flasche (am Vortag bauen, bleibt für alle Treffen)",
       "karten": [
        "Durchsichtige Plastikflasche (0,5 l), glatt, Etikett ab – kein Glas: Es wird kräftig geschüttelt.",
-       "Zu drei Vierteln warmes Wasser, 2–3 Esslöffel Glitzer (fein und grob gemischt), ein Tropfen Spülmittel, damit nichts oben schwimmt.",
-       "Wenn vorhanden, 1–2 Esslöffel Glyzerin (Apotheke) dazu: Der Glitzer sinkt dann langsamer.",
-       "Deckel fest zudrehen und rundum mit Klebeband sichern. Die Fachkraft füllt, nie das Kind.",
+       "Zu drei Vierteln warmes Wasser, 2–3 Esslöffel Glitzer, am besten aus Zellulose (biologisch abbaubar), fein und grob gemischt.",
+       "Ein Tropfen Spülmittel, damit nichts oben schwimmt. Wenn vorhanden, 1–2 Esslöffel Glyzerin (Apotheke): Der Glitzer sinkt dann langsamer.",
+       "Deckel fest zudrehen und rundum mit Klebeband sichern. Die Fachkraft füllt, nie das Kind. Über Nacht hinlegen: Ist es morgens trocken, ist sie dicht.",
        "Die zweite Eichel-Karte hinten außen ankleben, Bild zur Flasche hin.",
-       "Testen: schütteln – ist die Eichel im Wirbel kaum zu sehen und nach 20–60 Sekunden wieder klar? Zu schnell klar: mehr Glitzer."
+       "Testen: schütteln – ist die Eichel im Wirbel kaum zu sehen und nach 20–60 Sekunden wieder klar? Zu schnell klar: Glyzerin oder feinerer Glitzer."
       ]
      },
      {
@@ -1430,21 +1418,21 @@
     "haken": "Un foulard vole en l’air puis redescend tout doucement – les enfants le suivent des yeux sans qu’on le demande. C’est justement ce regard qui est l’attente.",
     "vorbereitung": [
      "Un foulard léger (soie, écharpe fine)",
-     "Fabriquer la bouteille à paillettes (cartes ci-dessous) et la tester une fois",
+     "Fabriquer la bouteille à paillettes la veille et la tester (cartes ci-dessous)",
      "Coller la deuxième carte-gland à l’arrière",
      "Libérer deux mètres"
     ],
     "aufbau": "Aide-mémoire 8′ : 0′ secouer la bouteille, la poser · 1′ foulard = paillettes – « Ça tourbillonne ! » · 2′ « Et on attend… » – le foulard se pose · 4′ deuxième tour · 5′ l’enfant annonce, tu tourbillonnes · 7′ bouteille claire, gland découvert. Fiche 3′. Indispensable : un tourbillon, une attente. En option : échange. Temps court : un tour.",
     "karten": [
      {
-      "titel": "La bouteille à paillettes (à fabriquer une fois, sert à chaque rencontre)",
+      "titel": "La bouteille à paillettes (à fabriquer la veille, sert à chaque rencontre)",
       "karten": [
        "Bouteille en plastique transparente (0,5 l), lisse, sans étiquette – pas de verre : on la secoue fort.",
-       "Aux trois quarts d’eau tiède, 2 à 3 cuillères à soupe de paillettes (fines et grosses), une goutte de liquide vaisselle pour que rien ne flotte.",
-       "Si possible, 1 à 2 cuillères à soupe de glycérine (pharmacie) : les paillettes descendent plus lentement.",
-       "Bien visser le bouchon et l’entourer de ruban adhésif. C’est l’adulte qui remplit, jamais l’enfant.",
+       "Aux trois quarts d’eau tiède, 2 à 3 cuillères à soupe de paillettes, de préférence en cellulose (biodégradables), fines et grosses.",
+       "Une goutte de liquide vaisselle pour que rien ne flotte. Si possible, 1 à 2 cuillères de glycérine (pharmacie) : les paillettes descendent plus lentement.",
+       "Bien visser le bouchon, l’entourer de ruban adhésif ; l’adulte remplit, jamais l’enfant. La coucher une nuit : si c’est sec le matin, elle est étanche.",
        "Coller la deuxième carte-gland à l’arrière, à l’extérieur, image tournée vers la bouteille.",
-       "Tester : secouer – le gland est-il à peine visible dans le tourbillon, puis de nouveau net après 20 à 60 secondes ? Trop vite clair : plus de paillettes."
+       "Tester : secouer – le gland est-il à peine visible dans le tourbillon, puis net après 20 à 60 secondes ? Trop vite clair : glycérine ou paillettes plus fines."
       ]
      },
      {
@@ -1591,20 +1579,20 @@
     "haken": "Ein Turm, der mit schnellen Händen wackelt, und einer, der mit ruhigen Händen steht – den Unterschied spürt das Kind sofort in den eigenen Fingern.",
     "vorbereitung": [
      "8–10 Bausteine",
-     "Glitzer-Flasche bauen (Kartensatz unten) und einmal testen",
+     "Glitzer-Flasche am Vortag bauen und testen (Kartensatz unten)",
      "Zweite Eichel-Karte hinten außen ankleben"
     ],
     "aufbau": "Spickzettel 8′: 0′ im Stehen schütteln wie die Flasche, dann Flasche schütteln · 1′ schnell bauen – „Wirbel-Hände!“ · 2′ wackelt – „Hände wie die Flasche?“ · 3′ Hände flach, auf die Flasche schauen · 4′ langsam bauen · 6′ Tausch · 7′ Flasche klar, Eichel. Übungsblatt 3′. Muss: einmal schütteln im Stehen, einmal Hände flach. Knapp: drei Steine.",
     "karten": [
      {
-      "titel": "Die Glitzer-Flasche (einmal bauen, bleibt für alle Treffen)",
+      "titel": "Die Glitzer-Flasche (am Vortag bauen, bleibt für alle Treffen)",
       "karten": [
        "Durchsichtige Plastikflasche (0,5 l), glatt, Etikett ab – kein Glas: Es wird kräftig geschüttelt.",
-       "Zu drei Vierteln warmes Wasser, 2–3 Esslöffel Glitzer (fein und grob gemischt), ein Tropfen Spülmittel, damit nichts oben schwimmt.",
-       "Wenn vorhanden, 1–2 Esslöffel Glyzerin (Apotheke) dazu: Der Glitzer sinkt dann langsamer.",
-       "Deckel fest zudrehen und rundum mit Klebeband sichern. Die Fachkraft füllt, nie das Kind.",
+       "Zu drei Vierteln warmes Wasser, 2–3 Esslöffel Glitzer, am besten aus Zellulose (biologisch abbaubar), fein und grob gemischt.",
+       "Ein Tropfen Spülmittel, damit nichts oben schwimmt. Wenn vorhanden, 1–2 Esslöffel Glyzerin (Apotheke): Der Glitzer sinkt dann langsamer.",
+       "Deckel fest zudrehen und rundum mit Klebeband sichern. Die Fachkraft füllt, nie das Kind. Über Nacht hinlegen: Ist es morgens trocken, ist sie dicht.",
        "Die zweite Eichel-Karte hinten außen ankleben, Bild zur Flasche hin.",
-       "Testen: schütteln – ist die Eichel im Wirbel kaum zu sehen und nach 20–60 Sekunden wieder klar? Zu schnell klar: mehr Glitzer."
+       "Testen: schütteln – ist die Eichel im Wirbel kaum zu sehen und nach 20–60 Sekunden wieder klar? Zu schnell klar: Glyzerin oder feinerer Glitzer."
       ]
      },
      {
@@ -1645,20 +1633,20 @@
     "haken": "Une tour qui tremble avec des mains rapides, et une qui tient avec des mains calmes – l’enfant sent tout de suite la différence dans ses propres doigts.",
     "vorbereitung": [
      "8 à 10 cubes",
-     "Fabriquer la bouteille à paillettes (cartes ci-dessous) et la tester une fois",
+     "Fabriquer la bouteille à paillettes la veille et la tester (cartes ci-dessous)",
      "Coller la deuxième carte-gland à l’arrière"
     ],
     "aufbau": "Aide-mémoire 8′ : 0′ debout, se secouer comme la bouteille, puis secouer la bouteille · 1′ construire vite – « Mains tourbillon ! » · 2′ ça tremble – « Des mains comme la bouteille ? » · 3′ mains à plat · 4′ construire doucement · 6′ échange · 7′ bouteille claire, gland. Fiche 3′. Indispensable : se secouer debout, mains à plat une fois. Temps court : trois cubes.",
     "karten": [
      {
-      "titel": "La bouteille à paillettes (à fabriquer une fois, sert à chaque rencontre)",
+      "titel": "La bouteille à paillettes (à fabriquer la veille, sert à chaque rencontre)",
       "karten": [
        "Bouteille en plastique transparente (0,5 l), lisse, sans étiquette – pas de verre : on la secoue fort.",
-       "Aux trois quarts d’eau tiède, 2 à 3 cuillères à soupe de paillettes (fines et grosses), une goutte de liquide vaisselle pour que rien ne flotte.",
-       "Si possible, 1 à 2 cuillères à soupe de glycérine (pharmacie) : les paillettes descendent plus lentement.",
-       "Bien visser le bouchon et l’entourer de ruban adhésif. C’est l’adulte qui remplit, jamais l’enfant.",
+       "Aux trois quarts d’eau tiède, 2 à 3 cuillères à soupe de paillettes, de préférence en cellulose (biodégradables), fines et grosses.",
+       "Une goutte de liquide vaisselle pour que rien ne flotte. Si possible, 1 à 2 cuillères de glycérine (pharmacie) : les paillettes descendent plus lentement.",
+       "Bien visser le bouchon, l’entourer de ruban adhésif ; l’adulte remplit, jamais l’enfant. La coucher une nuit : si c’est sec le matin, elle est étanche.",
        "Coller la deuxième carte-gland à l’arrière, à l’extérieur, image tournée vers la bouteille.",
-       "Tester : secouer – le gland est-il à peine visible dans le tourbillon, puis de nouveau net après 20 à 60 secondes ? Trop vite clair : plus de paillettes."
+       "Tester : secouer – le gland est-il à peine visible dans le tourbillon, puis net après 20 à 60 secondes ? Trop vite clair : glycérine ou paillettes plus fines."
       ]
      },
      {
@@ -3364,48 +3352,6 @@
    },
    "de": [
     {
-     "art": "info",
-     "symbol": "wissen",
-     "titel": "Heute: mein Ruhe-Moment",
-     "text": "Mein Moment – mein Trick."
-    },
-    {
-     "art": "aufgabe",
-     "text": "Welcher Trick hilft in deinem Moment? Mal ihn an.",
-     "symbole": [
-      "malen"
-     ]
-    },
-    {
-     "art": "bilder",
-     "bilder": [
-      {
-       "bild": "motiv:herzklopfen",
-       "text": "Stopp und spüren"
-      },
-      {
-       "bild": "motiv:flasche",
-       "text": "Warten wie die Flasche"
-      },
-      {
-       "bild": "motiv:blatt-herbst",
-       "text": "Blatt-Atem"
-      },
-      {
-       "bild": "motiv:taschenlampe",
-       "text": "Sinnes-Lampe"
-      }
-     ],
-     "modus": "anmalen",
-     "spalten": 4
-    },
-    {
-     "art": "zielkarte",
-     "titel": "Bis zum nächsten Mal",
-     "text": "Wenn du magst: Probier deinen Trick in deinem Moment.",
-     "kaestchen": 1
-    },
-    {
      "art": "text",
      "text": "Psst … Kawi hat jetzt alle fünf Eicheln. Beim nächsten Mal feiert er!",
      "klein": true
@@ -3414,7 +3360,7 @@
      "art": "karten",
      "spalten": 4,
      "schneiden": true,
-     "hoehe": 66,
+     "hoehe": 150,
      "karten": [
       {
        "bild": "motiv:glocke",
@@ -3431,7 +3377,26 @@
       {
        "bild": "motiv:bus",
        "text": "Bus"
-      },
+      }
+     ]
+    },
+    {
+     "art": "karten",
+     "spalten": 2,
+     "schneiden": true,
+     "hoehe": 150,
+     "karten": [
+      {
+       "text": "Mein Moment"
+      }
+     ]
+    },
+    {
+     "art": "karten",
+     "spalten": 4,
+     "schneiden": true,
+     "hoehe": 150,
+     "karten": [
       {
        "bild": "motiv:herzklopfen",
        "text": "Stopp und spüren"
@@ -3453,48 +3418,6 @@
    ],
    "fr": [
     {
-     "art": "info",
-     "symbol": "wissen",
-     "titel": "Aujourd’hui : mon moment calme",
-     "text": "Mon moment – mon astuce."
-    },
-    {
-     "art": "aufgabe",
-     "text": "Quelle astuce aide à ton moment ? Colorie-la.",
-     "symbole": [
-      "malen"
-     ]
-    },
-    {
-     "art": "bilder",
-     "bilder": [
-      {
-       "bild": "motiv:herzklopfen",
-       "text": "Stop, je sens !"
-      },
-      {
-       "bild": "motiv:flasche",
-       "text": "Attendre comme la bouteille"
-      },
-      {
-       "bild": "motiv:blatt-herbst",
-       "text": "La petite brise"
-      },
-      {
-       "bild": "motiv:taschenlampe",
-       "text": "La lampe des sens"
-      }
-     ],
-     "modus": "anmalen",
-     "spalten": 4
-    },
-    {
-     "art": "zielkarte",
-     "titel": "D’ici la prochaine fois",
-     "text": "Si tu veux : essaie ton astuce à ton moment.",
-     "kaestchen": 1
-    },
-    {
      "art": "text",
      "text": "Chut… Kawi a maintenant ses cinq glands. La prochaine fois, il fait la fête !",
      "klein": true
@@ -3503,7 +3426,7 @@
      "art": "karten",
      "spalten": 4,
      "schneiden": true,
-     "hoehe": 66,
+     "hoehe": 150,
      "karten": [
       {
        "bild": "motiv:glocke",
@@ -3520,7 +3443,26 @@
       {
        "bild": "motiv:bus",
        "text": "bus"
-      },
+      }
+     ]
+    },
+    {
+     "art": "karten",
+     "spalten": 2,
+     "schneiden": true,
+     "hoehe": 150,
+     "karten": [
+      {
+       "text": "Mon moment"
+      }
+     ]
+    },
+    {
+     "art": "karten",
+     "spalten": 4,
+     "schneiden": true,
+     "hoehe": 150,
+     "karten": [
       {
        "bild": "motiv:herzklopfen",
        "text": "Stop, je sens !"
@@ -3542,20 +3484,22 @@
    ],
    "anleitung": {
     "de": {
-     "text": "Warum: Ein Trick kommt leichter im Alltag an, wenn klar ist, wann und wo – und ein Erwachsener freundlich erinnert. Die Fachkraft liest vor. Das Kind malt den Trick an, den es vorhin für seinen Moment (oder für Rui oder Zoé) gewählt hat. Mit seinem Einverständnis sagt die Fachkraft der Person, die erinnern darf, das Wort „Kawi?“ und den Trick. Die Bildkarten unten sind schon abgeschnitten und bleiben bis zum Fest in der Mappe.",
+     "text": "Warum: Ein Trick kommt leichter im Alltag an, wenn klar ist, wann und wo – und ein Erwachsener freundlich erinnert. Die Bildkarten sind vorher ausgeschnitten; sie sind das Werkzeug des Treffens. Zum Schluss malt das Kind auf die leere Karte „Mein Moment“ seinen Moment – oder den von Rui oder Zoé – und legt seine Trick-Karte darauf. Mit seinem Einverständnis sagt die Fachkraft der Person, die erinnern darf, das Wort „Kawi?“ und den Trick. Alle Karten bleiben bis zum Fest in der Mappe.",
      "sagen": [
-      "Welcher Trick hilft in deinem Moment? Mal ihn an – auch Ruis oder Zoés Trick ist gut.",
-      "Wer darf dich leise erinnern? Darf ich es ihr oder ihm sagen?"
+      "Mal deinen Moment auf die leere Karte und leg deine Trick-Karte drauf – Ruis oder Zoés Moment ist auch gut.",
+      "Wer darf dich leise erinnern? Darf ich es ihr oder ihm sagen?",
+      "Wenn du magst: Probier deinen Trick in deinem Moment."
      ],
-     "wennEsKippt": "Mag das Kind keinen Moment für sich wählen, malt es den Trick für Rui oder Zoé an. Ist die Zeit knapp, genügt der Trick."
+     "wennEsKippt": "Mag das Kind nicht malen, legt es nur seine Trick-Karte auf eine Moment-Karte. Ist die Zeit knapp, genügt das."
     },
     "fr": {
-     "text": "Pourquoi : une astuce trouve plus facilement sa place au quotidien quand on sait quand et où – et qu’un adulte la rappelle gentiment. L’adulte lit les consignes. L’enfant colorie l’astuce choisie tout à l’heure pour son moment (ou pour Rui ou Zoé). Avec son accord, l’adulte transmet à la personne qui peut le lui rappeler le mot « Kawi ? » et l’astuce. Les cartes-images du bas sont déjà découpées et restent dans la farde jusqu’à la fête.",
+     "text": "Pourquoi : une astuce trouve plus facilement sa place au quotidien quand on sait quand et où – et qu’un adulte la rappelle gentiment. Les cartes-images sont découpées avant ; ce sont les outils de la rencontre. Pour finir, l’enfant dessine sur la carte vide « Mon moment » son moment – ou celui de Rui ou de Zoé – et pose sa carte-astuce dessus. Avec son accord, l’adulte dit à la personne qui peut le lui rappeler le mot « Kawi ? » et l’astuce. Toutes les cartes restent dans la farde jusqu’à la fête.",
      "sagen": [
-      "Quelle astuce aide à ton moment ? Colorie-la – celle de Rui ou de Zoé, c’est bien aussi.",
-      "Qui peut te le rappeler tout bas ? Je peux le lui dire ?"
+      "Dessine ton moment sur la carte vide et pose ta carte-astuce dessus – celui de Rui ou de Zoé, c’est bien aussi.",
+      "Qui peut te le rappeler tout bas ? Je peux le lui dire ?",
+      "Si tu veux : essaie ton astuce à ton moment."
      ],
-     "wennEsKippt": "Si l’enfant ne veut pas choisir de moment pour lui, il colorie l’astuce de Rui ou de Zoé. Si le temps manque, l’astuce suffit."
+     "wennEsKippt": "Si l’enfant ne veut pas dessiner, il pose seulement sa carte-astuce sur une carte-moment. Si le temps manque, cela suffit."
     }
    }
   },
@@ -3581,7 +3525,7 @@
      "Die fünfte Eichel-Karte in die Hand nehmen",
      "Karte „Nur für dich“ lesen"
     ],
-    "aufbau": "Spickzettel 8′: 0′ Kling! – „Rui kommt reingesaust.“ · 1′ Moment- und Trick-Bildkarten auslegen · 2′ Kind wählt einen Trick für Rui, dann für Zoé · 4′ eigener Moment (freiwillig), Trick, Erinnerer · 6′ Probe im Stehen: Kling – sausen – Trick · 7′ fünfte Eichel. Übungsblatt 3′. Muss: ein Moment mit Trick und die Probe. Kann: eigener Moment. Knapp: nur Rui.",
+    "aufbau": "Spickzettel 8′: 0′ Kling! – „Rui kommt reingesaust.“ · 1′ Moment- und Trick-Bildkarten auslegen · 2′ Kind wählt einen Trick für Rui, dann für Zoé · 4′ eigener Moment (freiwillig), Trick, Erinnerer · 6′ Probe im Stehen: Kling – sausen – Trick · 7′ fünfte Eichel. Übungsblatt 3′: Moment malen, Trick-Karte drauf. Muss: ein Moment mit Trick und die Probe. Kann: eigener Moment. Knapp: nur Rui.",
     "karten": [
      {
       "titel": "Nur für dich: Übertragen mit Erinnerer",
@@ -3631,7 +3575,7 @@
      "Prendre la cinquième carte-gland en main",
      "Lire la carte « Pour l’adulte »"
     ],
-    "aufbau": "Aide-mémoire 8′ : 0′ Ding ! – « Rui rentre en trombe. » · 1′ poser les cartes-images moments et astuces · 2′ l’enfant choisit une astuce pour Rui, puis pour Zoé · 4′ son moment (libre), astuce, adulte-rappel · 6′ essai debout : ding – foncer – astuce · 7′ cinquième gland. Fiche 3′. Indispensable : un moment avec astuce et l’essai. Temps court : seulement Rui.",
+    "aufbau": "Aide-mémoire 8′ : 0′ Ding ! – « Rui rentre en trombe. » · 1′ poser les cartes-images moments et astuces · 2′ l’enfant choisit une astuce pour Rui, puis pour Zoé · 4′ son moment (libre), astuce, adulte-rappel · 6′ essai debout : ding – foncer – astuce · 7′ cinquième gland. Fiche 3′ : dessiner son moment, astuce dessus. Indispensable : un moment avec astuce et l’essai. Temps court : seulement Rui.",
     "karten": [
      {
       "titel": "Pour l’adulte : transférer avec un adulte-rappel",
@@ -3786,7 +3730,7 @@
      "Die vier Moment-Karten als Weg auf den Boden legen",
      "Die fünfte Eichel-Karte in die Hand nehmen"
     ],
-    "aufbau": "Spickzettel 8′: 0′ „Das ist Kawis Tag.“ · 1′ Kind geht den Weg, sausen oder schleichen · 2′ an jeder Karte ein Satz von dir · 3′ Halt bei Rui und Zoé, Trick zeigen · 5′ zweite Runde: eigener Moment (freiwillig) · 7′ fünfte Eichel. Übungsblatt 3′. Muss: ein Halt mit Trick. Kann: eigener Moment. Knapp: zwei Karten.",
+    "aufbau": "Spickzettel 8′: 0′ „Das ist Kawis Tag.“ · 1′ Kind geht den Weg, sausen oder schleichen · 2′ an jeder Karte ein Satz von dir · 3′ Halt bei Rui und Zoé, Trick zeigen · 5′ zweite Runde: eigener Moment (freiwillig) · 7′ fünfte Eichel. Übungsblatt 3′: Moment malen, Trick-Karte drauf. Muss: ein Halt mit Trick. Kann: eigener Moment. Knapp: zwei Karten.",
     "karten": [
      {
       "titel": "Nur für dich: Tages-Weg",
@@ -3830,7 +3774,7 @@
      "Poser les quatre cartes-moments en chemin par terre",
      "Prendre la cinquième carte-gland en main"
     ],
-    "aufbau": "Aide-mémoire 8′ : 0′ « Voici la journée de Kawi. » · 1′ l’enfant parcourt le chemin · 2′ une phrase de toi à chaque carte · 3′ arrêt chez Rui et Zoé, montrer l’astuce · 5′ deuxième tour : son moment (libre) · 7′ cinquième gland. Fiche 3′. Indispensable : un arrêt avec astuce. Temps court : deux cartes.",
+    "aufbau": "Aide-mémoire 8′ : 0′ « Voici la journée de Kawi. » · 1′ l’enfant parcourt le chemin · 2′ une phrase de toi à chaque carte · 3′ arrêt chez Rui et Zoé, montrer l’astuce · 5′ deuxième tour : son moment (libre) · 7′ cinquième gland. Fiche 3′ : dessiner son moment, astuce dessus. Indispensable : un arrêt avec astuce. Temps court : deux cartes.",
     "karten": [
      {
       "titel": "Pour l’adulte : le chemin de la journée",
@@ -3980,7 +3924,7 @@
      "Geschichte einmal lesen (Karte unten)",
      "Die fünfte Eichel-Karte in die Hand nehmen"
     ],
-    "aufbau": "Spickzettel 8′: 0′ „Kling! Rui saust herein …“ · 1′ „Und dann?“ – Kind wählt Ruis Trick, zeigt ihn im Stehen · 3′ Kantine, Zoé – „Was hilft ihr noch?“ · 5′ freiwillig: ein Kind wie du · 7′ fünfte Eichel. Übungsblatt 3′. Muss: ein Trick für Rui oder Zoé, im Stehen gezeigt. Kann: eigener Teil. Knapp: nur Rui.",
+    "aufbau": "Spickzettel 8′: 0′ „Kling! Rui saust herein …“ · 1′ „Und dann?“ – Kind wählt Ruis Trick, zeigt ihn im Stehen · 3′ Kantine, Zoé – „Was hilft ihr noch?“ · 5′ freiwillig: ein Kind wie du · 7′ fünfte Eichel. Übungsblatt 3′: Moment malen, Trick-Karte drauf. Muss: ein Trick für Rui oder Zoé, im Stehen gezeigt. Kann: eigener Teil. Knapp: nur Rui.",
     "karten": [
      {
       "titel": "Nur für dich: die Geschichte",
@@ -4024,7 +3968,7 @@
      "Lire une fois l’histoire (carte ci-dessous)",
      "Prendre la cinquième carte-gland en main"
     ],
-    "aufbau": "Aide-mémoire 8′ : 0′ « Ding ! Rui rentre en trombe… » · 1′ « Et alors ? » – l’enfant choisit l’astuce de Rui, la montre debout · 3′ cantine, Zoé – « Qu’est-ce qui peut encore l’aider ? » · 5′ libre : un enfant comme toi · 7′ cinquième gland. Fiche 3′. Indispensable : une astuce pour Rui ou Zoé, montrée debout. Temps court : seulement Rui.",
+    "aufbau": "Aide-mémoire 8′ : 0′ « Ding ! Rui rentre en trombe… » · 1′ « Et alors ? » – l’enfant choisit l’astuce de Rui, la montre debout · 3′ cantine, Zoé – « Qu’est-ce qui peut encore l’aider ? » · 5′ libre : un enfant comme toi · 7′ cinquième gland. Fiche 3′ : dessiner son moment, astuce dessus. Indispensable : une astuce pour Rui ou Zoé, montrée debout. Temps court : seulement Rui.",
     "karten": [
      {
       "titel": "Pour l’adulte : l’histoire",
@@ -4658,7 +4602,7 @@
   },
   "ort": "raum",
   "titel": "Kawis Ruhe-Fest – die Erinnerungs-Socke",
-  "text": "Die Fachkraft knüpft an: Kawi hat alle fünf Eicheln wieder – aber vor lauter Freude hat er alle Tricks vergessen! In einer Socke stecken vier Erinnerungs-Dinge: ein Bauklotz, ein Flaschendeckel, ein Papierblatt und ein Stück Stoff. Das Kind greift hinein, fühlt ein Ding, sagt, was es ist, und überlegt, zu welchem Trick es passt – zum Beispiel der Bauklotz zu Stopp und spüren (klopf-klopf!), der Deckel zum Warten wie die Flasche, das Papierblatt zum Blatt-Atem, der Stoff zur Sinnes-Lampe. Jede begründete Zuordnung gilt. Dann zeigt es Kawi den Trick, und die Fachkraft macht mit. Zum Schluss stehen beide auf: einmal Ruhe-Tanz mit dem Lieblings-Trick. Merksatz: „Ich spüre, wie schnell ich bin – und wähle meinen Trick.“",
+  "text": "Die Fachkraft knüpft an: Kawi hat alle fünf Eicheln wieder – aber vor lauter Freude hat er alle Tricks vergessen! In einer Socke stecken vier Erinnerungs-Dinge: ein Bauklotz, eine kleine leere Plastikflasche (zugeschraubt), ein Papierblatt und ein Stück Stoff. Das Kind greift hinein, fühlt ein Ding, sagt, was es ist, und überlegt, zu welchem Trick es passt – zum Beispiel der Bauklotz zu Stopp und spüren (klopf-klopf!), die kleine Flasche zum Warten wie die Flasche, das Papierblatt zum Blatt-Atem, der Stoff zur Sinnes-Lampe. Jede begründete Zuordnung gilt. Dann zeigt es Kawi den Trick, und die Fachkraft macht mit. Zum Schluss stehen beide auf: einmal Ruhe-Tanz mit dem Lieblings-Trick. Merksatz: „Ich spüre, wie schnell ich bin – und wähle meinen Trick.“",
   "sagen": [
    "In der Socke sind Erinnerungen an Kawis Tricks. Fühl eins – was ist es?",
    "Zu welchem Trick passt es? Zeig ihn Kawi.",
@@ -4690,7 +4634,7 @@
   },
   "fr": {
    "titel": "La fête de Kawi – la chaussette des souvenirs",
-   "text": "L’adulte fait le lien : Kawi a retrouvé ses cinq glands – mais avec toute cette joie, il a oublié toutes ses astuces ! Dans une chaussette, il y a quatre objets-souvenirs : un cube en bois, un bouchon, une feuille de papier et un bout de tissu. L’enfant plonge la main, touche un objet, dit ce que c’est et cherche l’astuce qui va avec – par exemple le cube pour « Stop, je sens ! » (toc-toc !), le bouchon pour attendre comme la bouteille, la feuille pour la petite brise, le tissu pour la lampe des sens. Toute idée expliquée compte. Puis il montre l’astuce à Kawi, et l’adulte la fait avec lui. Pour finir, les deux se lèvent : une danse calme avec l’astuce préférée. Phrase-clé : « Je sens si je vais vite – et je choisis mon astuce. »",
+   "text": "L’adulte fait le lien : Kawi a retrouvé ses cinq glands – mais avec toute cette joie, il a oublié toutes ses astuces ! Dans une chaussette, il y a quatre objets-souvenirs : un cube en bois, une petite bouteille en plastique vide (bouchon vissé), une feuille de papier et un bout de tissu. L’enfant plonge la main, touche un objet, dit ce que c’est et cherche l’astuce qui va avec – par exemple le cube pour « Stop, je sens ! » (toc-toc !), la petite bouteille pour attendre comme la bouteille, la feuille pour la petite brise, le tissu pour la lampe des sens. Toute idée expliquée compte. Puis il montre l’astuce à Kawi, et l’adulte la fait avec lui. Pour finir, les deux se lèvent : une danse calme avec l’astuce préférée. Phrase-clé : « Je sens si je vais vite – et je choisis mon astuce. »",
    "sagen": [
     "Dans la chaussette, il y a des souvenirs des astuces de Kawi. Touches-en un – qu’est-ce que c’est ?",
     "Avec quelle astuce il va ? Montre-la à Kawi.",
@@ -4703,7 +4647,7 @@
    "de": {
     "haken": "Eine Socke voller Erinnerungen: Fühlen, erkennen, zuordnen – das Kind merkt beim Tasten, wie viel es schon weiß.",
     "vorbereitung": [
-     "Eine Socke mit Bauklotz, Flaschendeckel, Papierblatt und Stück Stoff packen",
+     "Socke packen: Bauklotz, kleine zugeschraubte Plastikflasche, Papierblatt, Stoff – alles größer als ein Tischtennisball",
      "Die Trick-Bildkarten (für den Notfall) bereitlegen",
      "Kawi auf den Tisch"
     ],
@@ -4712,6 +4656,7 @@
      {
       "titel": "Nur für dich: Erinnerungs-Socke",
       "karten": [
+       "Nur Dinge, die größer sind als ein Tischtennisball – kein Flaschendeckel, keine Murmel: Manche Kinder stecken Dinge in den Mund.",
        "Zuordnungen des Kindes gelten, wenn es sie begründen kann (der Stoff kann auch zum Blatt-Atem passen).",
        "Augen zu beim Fühlen freiwillig.",
        "Ausstieg: Legt das Kind die Hand auf Kawi, ist Pause – ohne Frage, ohne Grund. Das Zeichen gilt in jedem Treffen.",
@@ -4745,7 +4690,7 @@
    "fr": {
     "haken": "Une chaussette pleine de souvenirs : toucher, reconnaître, relier – en tâtonnant, l’enfant découvre tout ce qu’il sait déjà.",
     "vorbereitung": [
-     "Remplir une chaussette : cube en bois, bouchon, feuille de papier, bout de tissu",
+     "Une chaussette : cube en bois, petite bouteille vide vissée, feuille, tissu – tout plus gros qu’une balle de ping-pong",
      "Préparer les cartes-images d’astuces (au cas où)",
      "Kawi sur la table"
     ],
@@ -4754,6 +4699,7 @@
      {
       "titel": "Pour l’adulte : la chaussette des souvenirs",
       "karten": [
+       "Uniquement des objets plus gros qu’une balle de ping-pong – pas de bouchon, pas de bille : certains enfants mettent des objets à la bouche.",
        "Les liens de l’enfant comptent s’il peut les expliquer (le tissu peut aussi aller avec la petite brise).",
        "Fermer les yeux en touchant reste libre.",
        "Sortie : si l’enfant pose la main sur Kawi, c’est la pause – sans question, sans raison. Ce signe vaut à chaque rencontre.",
