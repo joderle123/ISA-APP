@@ -33,6 +33,44 @@ export interface DruckSchritt {
   /** der Slot „Übung/Blatt“ */
   blatt?: boolean
   erkundung?: boolean
+  /** Kern mit Spickzettel (hilfen.aufbau): Minutenplan ohne wörtliche Sätze, für die Startseite der Sitzung (Rückmeldung
+   *  23.10.2026: „zu viele Erklärungen, man weiß nicht, wo anfangen – es sind geschulte Fachkräfte“) */
+  ablauf?: { min: string; was: string }[]
+  /** was im Spickzettel nach den Minuten steht: Muss, Kann, Wird es knapp */
+  ablaufRest?: string
+}
+
+const ABLAUF_MIN = /^(\d+(?:\s*[–-]\s*\d+)?)\s*(?:′|'|min\b\.?)\s*:?\s*(.*)$/
+const ABLAUF_REST = /\.\s+(?=(?:Dann|Danach|Puis|Ensuite|Muss|Kann|Knapp|Wird es knapp|Indispensable|Obligatoire|Facultatif|Si ça presse|Si c’est juste|Zeit|Temps)\b)/
+
+/** Spickzettel einer Übung („0′ Schritt – „Satz“ · 3′ …“, auch zeilenweise oder mit „min“) als Minutenplan: je Schritt Minute
+ *  und Handlung, ohne den wörtlichen Satz; der Rest (Muss, Kann, Wird es knapp) getrennt. Unter drei Schritten: null. */
+export function spickzettelAblauf(aufbau: string | undefined): { schritte: { min: string; was: string }[]; rest: string } | null {
+  if (!aufbau) return null
+  const a = aufbau.trim().replace(/^(?:Spickzettel|Antis[eè]che|Anti-sèche)[^:]*:\s*/i, '')
+  const schritte: { min: string; was: string }[] = []
+  const rest: string[] = []
+  for (const seg of a.split(/\n|\s·\s/).map((x) => x.trim()).filter(Boolean)) {
+    const m = ABLAUF_MIN.exec(seg)
+    if (!m) {
+      rest.push(seg)
+      continue
+    }
+    let was = m[2]
+    const teil = was.split(ABLAUF_REST)
+    if (teil.length > 1) {
+      was = teil[0]
+      rest.push(teil.slice(1).join('. '))
+    }
+    // der wörtliche Satz nach dem Gedankenstrich fällt weg – außer der Schritt IST der Satz
+    const ohne = was.split(/\s[–—-]\s(?=[„“"«‚])/)[0].trim()
+    schritte.push({ min: m[1].replace(/\s+/g, ''), was: (ohne || was).replace(/[.;]\s*$/, '') })
+  }
+  // das Minutenzeichen (′) fehlt in den Druckschriften – „5′“ wird „5 Min.“
+  const min = (t: string) => t.replace(/(\d)\s*′/g, '$1 Min.').replace(/′/g, '')
+  return schritte.length >= 3
+    ? { schritte: schritte.map((x) => ({ min: x.min, was: min(x.was) })), rest: min(rest.join(' ').replace(/\s+/g, ' ').trim()) }
+    : null
 }
 
 export interface DruckSitzung {
@@ -316,7 +354,7 @@ function ohneDiagnose(t: string | undefined): string | undefined {
 
 /** Kurzzeilen der eigenen Schritte (Spickzettel) */
 const PG_KURZ: Record<string, Record<Sprache, string>> = {
-  'pg:einstieg': { de: 'Den Satz oben sagen · ein Beispiel aus dem Alltag', fr: 'Dire la phrase ci-dessus · un exemple du quotidien' },
+  'pg:einstieg': { de: 'Thema der Stunde nennen · ein Beispiel aus dem Alltag', fr: 'Annoncer le thème · un exemple du quotidien' },
   'pg:blatt': { de: 'Blatt zur Übung · allein, mit Hilfe auf Nachfrage', fr: 'Fiche de l’exercice · seul, aide sur demande' },
   'pg:pause': { de: 'Kurz aufstehen und bewegen', fr: 'Se lever et bouger un peu' },
   'pg:uebertragen': { de: 'Geübtes auf eine kommende Situation übertragen', fr: 'Transférer à une situation qui arrive' },
@@ -409,6 +447,13 @@ function druckSchritt(k: Katalog, x: PlanSchritt, sprache: Sprache, warum: boole
   // ersten Satz mitten im Satzteil ab)
   const kursZeile = e.typ === 'schritt' && e.linie?.id.startsWith('kurs-') && x.rolle === 'kern' ? e.werkzeug?.[sprache] : undefined
   d.kurz = kz ?? kursZeile ?? ersterSatz(d.text, 80)
+  if (x.rolle === 'kern' && e.typ === 'schritt' && e.hilfen && !ueberText) {
+    const plan = spickzettelAblauf(sprache === 'fr' ? e.hilfen.fr?.aufbau : e.hilfen.de.aufbau)
+    if (plan) {
+      d.ablauf = plan.schritte
+      if (plan.rest) d.ablaufRest = plan.rest
+    }
+  }
   // Blind-Bewertung 9.10.: Optionen ohne Anleitung („Carte au trésor“ – und dann?) – jede Option mit einem Satz
   // Blind-Bewertung 8: die Beschreibung der ersten Option stand unter den anderen – jede Option trägt ihren Satz selbst,
   // der Schritt heißt neutral „Zur Wahl“

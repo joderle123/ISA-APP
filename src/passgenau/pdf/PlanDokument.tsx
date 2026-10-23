@@ -411,7 +411,7 @@ function Notizfeld({ d, zeilen: n = 4 }: { d: DruckSitzung; zeilen?: number }) {
 }
 
 /** Die Einzelschritte einer Sitzung („Schritt für Schritt“): ein oder zwei Seiten hinter „Auf einen Blick“. */
-export function PlanSeite({ d }: { d: DruckSitzung }) {
+export function PlanSeite({ d, zusatz = false }: { d: DruckSitzung; zusatz?: boolean }) {
   const tx = T[d.sprache]
   const sp = d.sprache
   const m = planMasse(d)
@@ -419,7 +419,14 @@ export function PlanSeite({ d }: { d: DruckSitzung }) {
   return (
     <Page size="A4" style={{ paddingHorizontal: SEITE.rand, paddingTop: SEITE.oben, paddingBottom: SEITE.unten + 6 }}>
       <Kopf d={d} erste={false} />
-      <Rubrik>{tx.schrittweise}</Rubrik>
+      <Rubrik>{zusatz ? `${sp === 'fr' ? 'Infos complémentaires' : 'Zusatzinfo'} · ${tx.schrittweise}` : tx.schrittweise}</Rubrik>
+      {/* der fertige erste Satz steht seit 23.10.2026 nicht mehr auf der Startseite („kein Vorsagen – geschulte Fachkräfte“) */}
+      {d.einstieg ? (
+        <View style={{ borderLeftWidth: 3, borderLeftColor: P.tief, paddingLeft: 9, marginBottom: 10 }}>
+          <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 8.4, color: P.tief, marginBottom: 2 }}>{sp === 'fr' ? 'Pour commencer, par exemple' : 'Zum Beispiel so anfangen'}</Text>
+          <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 9.6, lineHeight: 1.4, color: NEUTRAL.text }}>{ty(d.einstieg, sp)}</Text>
+        </View>
+      ) : null}
       <View style={{ borderBottomWidth: 0.6, borderBottomColor: NEUTRAL.haarlinie }}>
         {d.schritte.map((x, i) => (
           <SchrittZeile key={i} x={x} i={i} d={d} m={m} vorAus={i === d.schritte.length - 2 ? schrittHoehe(d.schritte[i + 1], d, m) : 0} />
@@ -440,7 +447,7 @@ export function PlanSeite({ d }: { d: DruckSitzung }) {
  *  die Beschreibung nur zum Nachlesen): Ziele, erster Satz, Ablauf mit Zeitbalken und einer Zeile je Schritt, Vorbereiten und
  *  Material zum Abhaken, am Ende die Notiz nach der Stunde. Leere Felder („nichts vorzubereiten“) fehlen. Die ausführliche
  *  Fassung (nummerierte Handlungen, Sagen, Wenn es kippt) folgt auf den nächsten Seiten. */
-export function SpickzettelSeite({ d }: { d: DruckSitzung }) {
+export function SpickzettelSeite({ d, anhang = false }: { d: DruckSitzung; anhang?: boolean }) {
   const sp = d.sprache
   const fr = sp === 'fr'
   const tx = T[sp]
@@ -449,8 +456,9 @@ export function SpickzettelSeite({ d }: { d: DruckSitzung }) {
     blick: fr ? 'En un coup d’œil' : 'Auf einen Blick',
     ziel: fr ? 'But de la séance' : 'Ziel der Stunde',
     werkzeug: fr ? 'Outil' : 'Werkzeug',
-    start: fr ? 'Pour commencer' : 'So fängst du an',
-    mehr: fr ? 'Pas à pas, avec les phrases à dire et « si ça bascule » : pages suivantes.' : 'Schritt für Schritt, mit Sätzen zum Sagen und „Wenn es kippt“: auf den nächsten Seiten.',
+    mehr: anhang
+      ? fr ? 'Détails (phrases possibles, « si ça bascule », contexte) : informations complémentaires en fin de dossier.' : 'Details (Sätze, „Wenn es kippt“, Hintergrund): Zusatzinfo am Ende der Mappe.'
+      : fr ? 'Détails (phrases possibles, « si ça bascule ») : dernières pages.' : 'Details (Sätze, „Wenn es kippt“): auf den letzten Seiten.',
   }
   const spickSpielschule = d.schritte.some((x) => x.quelle.startsWith('Spielschule') || x.quelle.startsWith('Préscolaire'))
   const zielText = d.ziele.length ? '' : d.ziel
@@ -497,12 +505,6 @@ export function SpickzettelSeite({ d }: { d: DruckSitzung }) {
           <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 8.8, lineHeight: 1.35, color: '#4A5263', marginTop: 2 }}>{ty(d.klammer.schluss, sp)}</Text>
         </View>
       ) : null}
-      {d.einstieg ? (
-        <View style={{ borderLeftWidth: 3, borderLeftColor: P.tief, paddingLeft: 9, marginBottom: 12 }}>
-          <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 8.4, color: P.tief, marginBottom: 2 }}>{W.start}</Text>
-          <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 10, lineHeight: 1.4, color: NEUTRAL.text }}>{ty(d.einstieg, sp)}</Text>
-        </View>
-      ) : null}
       <Ablaufkopf d={d} tx={tx} />
       <View style={{ borderTopWidth: 0.7, borderTopColor: NEUTRAL.haarlinie, marginBottom: 12 }}>
         {d.schritte.map((x, i) => (
@@ -517,7 +519,20 @@ export function SpickzettelSeite({ d }: { d: DruckSitzung }) {
             </View>
             <View style={{ flex: 1 }}>
               <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 10, fontWeight: 600, color: NEUTRAL.text }}>{ty(x.titel, sp)}</Text>
-              {x.kurz ? <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 8.8, lineHeight: 1.35, color: '#4A5263', marginTop: 1 }}>{ty(x.kurz, sp)}</Text> : null}
+              {/* Kern mit Spickzettel: der Minutenplan der Übung statt einer Zeile (23.10.2026: „fertiger Kurs, wo man loslegen kann“) */}
+              {x.ablauf ? (
+                <View style={{ marginTop: 3 }}>
+                  {x.ablauf.map((a, k) => (
+                    <View key={k} style={{ flexDirection: 'row', marginBottom: 1.6 }}>
+                      <Text style={{ fontFamily: SCHRIFT.jugend, fontWeight: 600, fontSize: 8.4, color: P.tief, width: 46 }}>{`${a.min} ${sp === 'fr' ? 'min' : 'Min.'}`}</Text>
+                      <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 9.2, lineHeight: 1.35, color: NEUTRAL.text, flex: 1 }}>{ty(a.was, sp)}</Text>
+                    </View>
+                  ))}
+                  {x.ablaufRest ? <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 8.4, lineHeight: 1.35, color: '#4A5263', marginTop: 2 }}>{ty(x.ablaufRest, sp)}</Text> : null}
+                </View>
+              ) : x.kurz ? (
+                <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 8.8, lineHeight: 1.35, color: '#4A5263', marginTop: 1 }}>{ty(x.kurz, sp)}</Text>
+              ) : null}
             </View>
           </View>
         ))}
@@ -606,11 +621,10 @@ function KartenSeiten({ d }: { d: DruckSitzung }) {
   )
 }
 
-export function SitzungSeiten({ d }: { d: DruckSitzung }) {
+export function SitzungSeiten({ d, anhang = false }: { d: DruckSitzung; anhang?: boolean }) {
   return (
     <>
-      <SpickzettelSeite d={d} />
-      <PlanSeite d={d} />
+      <SpickzettelSeite d={d} anhang={anhang} />
       {d.kinderblatt ? <BlattSeiten blatt={d.kinderblatt} opt={{ sprache: d.sprache, lehrer: false }} /> : null}
       {d.sammelblatt ? <BlattSeiten blatt={d.sammelblatt} opt={{ sprache: d.sprache, lehrer: false }} /> : null}
       {(d.weitereBlaetter ?? []).map((x, i) => (
@@ -619,6 +633,7 @@ export function SitzungSeiten({ d }: { d: DruckSitzung }) {
       {d.karten ? <BlattSeiten blatt={d.karten} opt={{ sprache: d.sprache, lehrer: false }} /> : null}
       {d.materialSeite ? <BlattSeiten blatt={d.materialSeite} opt={{ sprache: d.sprache, lehrer: false }} /> : null}
       <KartenSeiten d={d} />
+      {anhang ? null : <PlanSeite d={d} zusatz />}
     </>
   )
 }
@@ -639,7 +654,7 @@ function Deckblatt({ f }: { f: DruckFolge }) {
   // langer Hintergrund (Sichtprüfung 16.10.: bei vier Achtung-Punkten oder fünf Quellen lief die Quellenzeile unter den Fuß):
   // Bogen und Material rücken enger zusammen, damit das Deckblatt eine Seite bleibt
   const h = f.hintergrund
-  const lang = h ? h.warum.length + h.achtung.reduce((n, a) => n + a.length + 40, 0) + 0.75 * h.quellen.join(' · ').length + 12 * f.material.length : 0
+  const lang = h ? 12 * f.material.length : 0
   const eng = lang > 1150
   return (
     <Page size="A4" style={{ paddingHorizontal: SEITE.rand, paddingTop: SEITE.oben, paddingBottom: SEITE.unten + 6 }}>
@@ -716,8 +731,21 @@ function Deckblatt({ f }: { f: DruckFolge }) {
           </View>
         </Absatz>
       </View>
+      <Fuss sprache={sp} spielschule={false} />
+    </Page>
+  )
+}
+
+/** Zusatzinfo am Ende der Mappe (23.10.2026): warum der Kurs wirkt, worauf achten, Quellen – nicht mehr auf dem Deckblatt */
+function HintergrundSeite({ f }: { f: DruckFolge }) {
+  if (!f.hintergrund) return null
+  const sp = f.sprache
+  return (
+    <Page size="A4" style={{ paddingHorizontal: SEITE.rand, paddingTop: SEITE.oben, paddingBottom: SEITE.unten + 6 }}>
+      <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 7.4, letterSpacing: 0.9, color: SCHWACH, marginBottom: 4 }}>{(sp === 'fr' ? 'Informations complémentaires' : 'Zusatzinfo').toUpperCase()}</Text>
+      <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 18, color: NEUTRAL.text, marginBottom: 12 }}>{ty(f.titel, sp)}</Text>
       {f.hintergrund ? (
-        <View style={{ marginTop: 4, borderLeftWidth: 2.5, borderLeftColor: P.tief, paddingLeft: 9 }}>
+        <View style={{ marginTop: 0, borderLeftWidth: 2.5, borderLeftColor: P.tief, paddingLeft: 9 }}>
           <Absatz titel={sp === 'fr' ? 'Pour l’adulte : pourquoi ça marche' : 'Für die Fachkraft: warum das wirkt'} abstand={6}>
             <LText>{f.hintergrund.warum}</LText>
           </Absatz>
@@ -830,9 +858,15 @@ export function FolgeDokument({ f }: { f: DruckFolge }) {
   return (
     <Document title={`Passgenau – ${f.titel}`} author={urheberschaft(undefined).name} creator="CDSE Toolbox" producer="CDSE Toolbox" language={f.sprache}>
       <Deckblatt f={f} />
+      {f.sitzungen.map((d) => (
+        <SitzungSeiten key={d.nr} d={d} anhang />
+      ))}
+      {/* Zusatzinfo (23.10.2026: „zu viele Erklärungen – man weiß nicht, wo anfangen“): Hintergrund, Blatt für die Lehrkraft
+          und die ausführlichen Schritte mit Sätzen und „Wenn es kippt“ am Ende */}
+      <HintergrundSeite f={f} />
       <KlassenKarteSeite f={f} />
       {f.sitzungen.map((d) => (
-        <SitzungSeiten key={d.nr} d={d} />
+        <PlanSeite key={'z' + d.nr} d={d} zusatz />
       ))}
     </Document>
   )
