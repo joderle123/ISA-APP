@@ -47,7 +47,9 @@ export function useRueckmeldung() {
     if (r.kind?.daumen) pg.melde('kind_daumen', { sitzung: nr, wert: r.kind.daumen === 'hoch' ? 1 : -1 })
 
     // Plan fortschreiben; nicht gehaltene Folgesitzung passt sich an (5.6) – Zugang ändert sich nur per Klick (E-M14)
-    let neu: Plan = { ...plan, sitzungen: plan.sitzungen.map((x) => (x.nr === nr ? { ...x, status: 'gehalten', datum: heuteIso(), rueckmeldung: r } : x)) }
+    // Handlungsfelder des Rahmenplans zum Zeitpunkt des Haltens (Nachweis für den ganzen Dienst im Hub, ohne Katalog)
+    const felder = K.felderStunde(s.schritte.filter((x) => x.rolle !== 'ankommen' && x.rolle !== 'abschluss').map((x) => K.eintrag(k, x.ref)), plan.auftrag?.form, plan.ziele).slice(0, 3)
+    let neu: Plan = { ...plan, sitzungen: plan.sitzungen.map((x) => (x.nr === nr ? { ...x, status: 'gehalten', datum: heuteIso(), rueckmeldung: r, ...(felder.length ? { felder } : {}) } : x)) }
     const naechste = neu.sitzungen.find((x) => x.nr === nr + 1)
     let angepasst = false
     if (naechste && naechste.status !== 'gehalten' && (r.ergebnis === 'teils' || r.ergebnis === 'nicht')) {

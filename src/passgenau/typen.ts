@@ -372,6 +372,8 @@ export interface Sitzung {
   gedruckt?: string
   /** Änderungszähler für gleichzeitiges Speichern (T-M11, S7) */
   rev?: number
+  /** Handlungsfelder des Nationalen Rahmenplans, beim Halten berechnet (Nachweis im Hub) */
+  felder?: ('emotionen' | 'werte' | 'sprache' | 'kreativ' | 'bewegung' | 'natur' | 'uebergaenge')[]
 }
 
 export interface Plan {

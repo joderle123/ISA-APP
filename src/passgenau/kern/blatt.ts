@@ -512,6 +512,11 @@ const KURS_BILD: Record<string, string> = {
   'vielfalt-4-6': 'motiv:zebra', 'vielfalt-7-9': 'motiv:insel-5', 'vielfalt-10-12': 'motiv:brille',
   'alltag-4-6': 'motiv:kueken', 'alltag-10-12': 'motiv:kalender', 'alltag-13-16': 'motiv:schluessel',
   'sprechen-4-6': 'motiv:elefant', 'sprechen-7-9': 'motiv:hand-offen', 'sprechen-10-12': 'motiv:mikrofon', 'sprechen-13-16': 'motiv:megafon',
+  // Welle 3 (23.10.2026)
+  'socialmedia-13-16': 'motiv:handy-chat', 'fakenews-13-16': 'motiv:lupe', 'gaming-10-12': 'motiv:controller', 'comeback-13-16': 'motiv:bruecke',
+  'motivation-13-16': 'motiv:fussball', 'zukunft-13-16': 'motiv:bushaltestelle', 'mitbestimmen-7-9': 'motiv:biene', 'mobbing-7-9': 'motiv:stopp-hand',
+  'geld-10-12': 'motiv:muenzen', 'achtsamkeit-4-6': 'motiv:eichhoernchen', 'koerper-7-9': 'motiv:koerper', 'familie-7-9': 'motiv:haus',
+  'trauer-7-9': 'motiv:led-kerze',
 }
 
 const KERNBLATT_BEREICH: Record<string, Bereich> = {

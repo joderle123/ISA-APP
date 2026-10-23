@@ -108,7 +108,8 @@ export function rahmenplanNachweis(k: Katalog, plaene: Plan[], opt: { sprache: S
         aktivitaet,
         min: s.schritte.reduce((n, x) => n + x.min, 0),
         sozialform: SOZIAL[plan.auftrag?.sozialform ?? 'einzeln']?.[sp] ?? '',
-        felder: felderStunde(schritte.map((x) => k.eintraege.get(x.ref)), plan.auftrag?.form, plan.ziele).slice(0, 3),
+        // beim Halten gespeichert (gleich wie im Hub), sonst jetzt berechnet
+        felder: s.felder?.length ? s.felder : felderStunde(schritte.map((x) => k.eintraege.get(x.ref)), plan.auftrag?.form, plan.ziele).slice(0, 3),
       })
     }
   }
