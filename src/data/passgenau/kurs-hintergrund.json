@@ -7533,5 +7533,110 @@
       "de": "Steinfort – auf Lëtzebuergesch Stengefort – direkt an der Grenze zu Belgien: eine Grundschule mit Maison relais. Im Spillzëmmer soll eine Domino-Bahn aus 300 Holzsteinen von der Tür bis zum Fenster entstehen, in fünf Wochen wird sie umgestoßen – doch sie steht seit Tagen bei 40, und drei Kinder sagen vor allem eins: „Keng Loscht!“ Imane (8, Zyklus 3.1; Arabisch, Französisch, Lëtzebuergesch) lernt auf Deutsch lesen und sagt beim Lesebuch „Kann ich nicht“; Luka (9, Zyklus 3.2; Serbisch, Lëtzebuergesch, Deutsch) schiebt Rechen-Hausaufgaben und sein volles Fach vor sich her; Gonçalo (7, Zyklus 2.2; Portugiesisch, Lëtzebuergesch) lernt Gitarre in der Musikschule und will aufhören, weil es nicht sofort schön klingt. Und jeden Dienstag und Donnerstag stehen um 14:15 genau fünf neue Steine in der Bahn – niemand sagt, wer das war. Das Kind ist Keng-Loscht-Profi: Es hilft den dreien Stein für Stein, findet aus vier Spuren selbst heraus, wer heimlich baut, und baut seine eigene Domino-Bahn.",
       "fr": "Steinfort – Stengefort en luxembourgeois – juste à la frontière belge : une école fondamentale avec sa maison relais. Dans la salle de jeux, on veut construire une piste de 300 dominos en bois, de la porte à la fenêtre, et la faire tomber dans cinq semaines – mais elle en est à 40 depuis des jours, et trois enfants disent surtout une chose : « Keng Loscht ! » – pas envie. Imane (8 ans, cycle 3.1 ; arabe, français, luxembourgeois) apprend à lire en allemand et dit devant son livre « J’y arrive pas » ; Luka (9 ans, cycle 3.2 ; serbe, luxembourgeois, allemand) repousse ses devoirs de calcul et son casier plein ; Gonçalo (7 ans, cycle 2.2 ; portugais, luxembourgeois) apprend la guitare à l’école de musique et veut arrêter parce que ça ne sonne pas tout de suite bien. Et chaque mardi et chaque jeudi, à 14 h 15, il y a pile cinq nouveaux dominos dans la piste – personne ne dit qui l’a fait. L’enfant est le pro du pas-envie : il aide les trois, domino après domino, découvre lui-même grâce à quatre indices qui construit en cachette, et construit sa propre piste."
     }
+  },
+  "kurs-trauer-13-16": {
+    "name": {
+      "de": "Belichtungszeit",
+      "fr": "Temps de pose"
+    },
+    "de": {
+      "warum": "Trauer ist keine Krankheit, sondern eine normale Antwort auf Verlust. Der Kurs ist Psychoedukation und Begleitung, keine Therapie – für Jugendliche, die einen Menschen, ein Tier oder durch Umzug und Kontaktabbruch eine Welt verloren haben, und für alle, die Freunde in Trauer begleiten wollen. Alles läuft über die Geschichte von Kenza, Joris und Ilona; niemand wird nach Eigenem gefragt. Leitmodell ist die Kamera mit fünf Einstellungen. Belichtung: Trauer kommt bei Jugendlichen oft in Schüben, ausgelöst von Sinnen und Erinnerungen, und nicht in festen Phasen – Phasenmodelle sind keine Abfolge für Trauernde (Stroebe, Schut & Boerner, 2017). Filter: Trauer zeigt sich verdeckt, als Wut, Rückzug, Kopfweh oder „Alles gut“, je nach Stil eher fühlend oder handelnd (Doka & Martin, 2010); Verluste ohne Anerkennung – ein Tier, ein Umzug – sind trotzdem Verluste (Doka, 1989; Boss, 1999). Zoom: Nach dem Dualen Prozessmodell pendeln Trauernde gesund zwischen Vermissen und Alltag (Stroebe & Schut, 1999, 2010). Doppelbelichtung: Bindungen an Verstorbene enden nicht, sie verändern sich (Klass, Silverman & Nickman, 1996). Stativ: Freundschaften und Befinden trauernder Kinder und Jugendlicher beeinflussen sich gegenseitig (Dopp & Cain, 2012); darum wird Begleiten als Fertigkeit geübt – erklären, vormachen, üben, Rückmeldung, übertragen (Durlak u. a., 2011) –, einschließlich der Grenze: Lebensmüde Äußerungen gehören noch am selben Tag zu Erwachsenen. Ein Schulprogramm mit Rollenspielen zu Krise und Hilfesuche senkte Suizidversuche (SEYLE; Wasserman u. a., 2015). Dramaturgie: wahrnehmen und normalisieren (1–2), Pendeln üben (3), Verbindung neu gestalten (4), Begleiten üben und übertragen (5), Rückschau (6). Jede Sitzung beginnt mit einer echten Körpererfahrung (Licht, Haltung, Muskel, Rhythmus, Gleichgewicht), eine Spurengeschichte trägt durch alle Sitzungen. Keine Quiz- oder Richtig/Falsch-Formate: Jede begründete Antwort gilt.",
+      "achtung": [
+        "Nicht ausfragen: Die oder der Jugendliche erzählt Eigenes nur, wenn sie oder er will. Kommt ein eigener Verlust zur Sprache: danken, zuhören, nicht deuten, nicht vergleichen; später unter vier Augen fragen, ob Unterstützung gebraucht wird.",
+        "Vorher klären: Bei einem frischen Verlust (Wochen), einem plötzlichen Tod oder einem Suizid im Umfeld mit Bezugsperson und Leitung besprechen, ob und wie der Kurs passt; dann die schonenden Fassungen nehmen und den Strang weglassen, der dem eigenen Verlust am nächsten ist.",
+        "Suizid als Todesursache: nur Klartext ohne Wie – keine Methode, kein Ort, keine Details, keine Verklärung (Werther-Effekt; WHO, 2023). Immer Hilfe nennen. Keine Figur des Kurses stirbt durch Suizid.",
+        "Lebensmüde Äußerungen („Ich will nicht mehr aufwachen“, „Ich will zu ihm“): direkt nachfragen, nicht allein lassen, heute noch SePAS und Leitung, akut 112 – Kartensatz „Nur für dich – wenn es echt wird“. Danach fragen schadet nicht (Dazzi u. a., 2014).",
+        "Keine Phasen als Regel: Kübler-Ross beschrieb Sterbende, keine Abfolge für Trauernde. Wut, Lachen, Rückzug und Körperbeschwerden sind möglich; Körperbeschwerden ärztlich abklären lassen, nie als Ausrede abtun.",
+        "Anhaltende Trauer: Bleibt die Trauer über viele Monate unverändert stark (Orientierung: ICD-11 ab 6 Monaten; DSM-5-TR bei Jugendlichen ab 6 Monaten) und lähmt Schule, Schlaf und Freundschaften, ist das ein Weg für die Fachkraft: mit der Bezugsperson Omega 90, den SePAS des Lycée (national: CePAS) oder Psychotherapie einbeziehen – nie selbst diagnostizieren, nie vor der oder dem Jugendlichen benennen.",
+        "Kultur und Glaube: Abschiede, Trauerzeiten und Rituale sind verschieden. Nicht bewerten und nicht danach fragen; nur aufgreifen, wenn die oder der Jugendliche es selbst anspricht."
+      ]
+    },
+    "fr": {
+      "warum": "Le deuil n’est pas une maladie, mais une réponse normale à une perte. Le cours est de la psychoéducation et un accompagnement, pas une thérapie – pour des jeunes qui ont perdu une personne, un animal ou, par un déménagement ou une rupture de contact, tout un monde, et pour tous ceux qui veulent soutenir un ami en deuil. Tout passe par l’histoire de Kenza, Joris et Ilona ; personne n’est questionné sur son vécu. Le modèle est l’appareil photo à cinq réglages. Exposition : chez les adolescents, le deuil vient souvent par vagues, déclenchées par les sens et les souvenirs, et non par phases fixes – les modèles en étapes ne sont pas une séquence pour les endeuillés (Stroebe, Schut & Boerner, 2017). Filtre : le deuil se cache derrière la colère, le repli, les maux de tête ou le « tout va bien », plutôt ressenti ou plutôt agi selon le style (Doka & Martin, 2010) ; une perte non reconnue – un animal, un déménagement – reste une perte (Doka, 1989 ; Boss, 1999). Zoom : selon le modèle du double processus, les endeuillés oscillent sainement entre le manque et le quotidien (Stroebe & Schut, 1999, 2010). Double exposition : les liens avec les défunts ne s’arrêtent pas, ils se transforment (Klass, Silverman & Nickman, 1996). Trépied : amitiés et bien-être des enfants et adolescents endeuillés s’influencent mutuellement (Dopp & Cain, 2012) ; on exerce donc l’accompagnement comme une compétence – expliquer, montrer, s’exercer, retour, transfert (Durlak et al., 2011) –, limite comprise : des paroles d’envie de mourir vont le jour même à un adulte. Un programme scolaire avec jeux de rôle sur la crise et la demande d’aide a réduit les tentatives de suicide (SEYLE ; Wasserman et al., 2015). Dramaturgie : percevoir et normaliser (1–2), exercer l’oscillation (3), transformer le lien (4), accompagner et transférer (5), regard en arrière (6). Chaque séance commence par une vraie expérience du corps (lumière, posture, muscle, rythme, équilibre), une histoire d’indices traverse toutes les séances. Aucun format quiz ou juste/faux : toute réponse justifiée compte.",
+      "achtung": [
+        "Ne pas questionner : le ou la jeune ne parle de soi que s’il ou elle le veut. Si une perte personnelle est évoquée : remercier, écouter, ne pas interpréter, ne pas comparer ; plus tard, en tête-à-tête, demander si un soutien est souhaité.",
+        "Clarifier avant : en cas de perte récente (semaines), de mort soudaine ou de suicide dans l’entourage, voir avec la personne de référence et la direction si et comment le cours convient ; puis prendre les versions ménagées et laisser de côté le fil le plus proche de sa perte.",
+        "Le suicide comme cause de décès : seulement en mots clairs, sans le comment – ni méthode, ni lieu, ni détails, ni idéalisation (effet Werther ; OMS, 2023). Toujours nommer l’aide. Aucune figure du cours ne meurt par suicide.",
+        "Paroles d’envie de mourir (« Je ne veux plus me réveiller », « Je veux le rejoindre ») : demander directement, ne pas laisser seul, le jour même SePAS et direction, danger immédiat 112 – cartes « Pour l’adulte – quand ça devient réel ». Poser la question ne fait pas de mal (Dazzi et al., 2014).",
+        "Pas de phases comme règle : Kübler-Ross décrivait des mourants, pas une séquence pour les endeuillés. Colère, rires, repli et plaintes physiques sont possibles ; faire vérifier les plaintes physiques par un médecin, jamais les traiter d’excuse.",
+        "Deuil prolongé : si le deuil reste aussi intense pendant de longs mois (repère : CIM-11 à partir de 6 mois ; DSM-5-TR, chez les adolescents, à partir de 6 mois) et paralyse école, sommeil et amitiés, c’est un chemin pour l’adulte : impliquer avec la personne de référence Omega 90, le SePAS du lycée (au niveau national : CePAS) ou une psychothérapie – ne jamais poser de diagnostic soi-même, ni le nommer devant le ou la jeune.",
+        "Culture et croyances : adieux, temps de deuil et rituels diffèrent. Ne pas juger ni questionner ; n’en parler que si le ou la jeune l’aborde lui-même."
+      ]
+    },
+    "quellen": [
+      "Stroebe, M. & Schut, H. (1999): The dual process model of coping with bereavement: Rationale and description. Death Studies, 23(3), 197–224",
+      "Stroebe, M. & Schut, H. (2010): The dual process model of coping with bereavement: A decade on. Omega – Journal of Death and Dying, 61(4), 273–289",
+      "Stroebe, M., Schut, H. & Boerner, K. (2017): Cautioning health-care professionals: Bereaved persons are misguided through the stages of grief. Omega – Journal of Death and Dying, 74(4), 455–473",
+      "Klass, D., Silverman, P. R. & Nickman, S. L. (Hrsg.) (1996): Continuing bonds: New understandings of grief. Washington, DC: Taylor & Francis",
+      "Silverman, P. R., Nickman, S. & Worden, J. W. (1992): Detachment revisited: The child’s reconstruction of a dead parent. American Journal of Orthopsychiatry, 62(4), 494–503",
+      "Doka, K. J. (Hrsg.) (1989): Disenfranchised grief: Recognizing hidden sorrow. Lexington, MA: Lexington Books",
+      "Doka, K. J. & Martin, T. L. (2010): Grieving beyond gender: Understanding the ways men and women mourn (überarb. Aufl.). New York: Routledge",
+      "Boss, P. (1999): Ambiguous loss: Learning to live with unresolved grief. Cambridge, MA: Harvard University Press",
+      "Balk, D. E. & Corr, C. A. (Hrsg.) (2009): Adolescent encounters with death, bereavement, and coping. New York: Springer",
+      "Dyregrov, A. (2008): Grief in children: A handbook for adults (2. Aufl.). London: Jessica Kingsley",
+      "Dopp, A. R. & Cain, A. C. (2012): The role of peer relationships in parental bereavement during childhood and adolescence. Death Studies, 36(1), 41–60",
+      "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011): The impact of enhancing students’ social and emotional learning. Child Development, 82(1), 405–432",
+      "Wasserman, D. u. a. (2015): School-based suicide prevention programmes: The SEYLE cluster-randomised, controlled trial. The Lancet, 385(9977), 1536–1544",
+      "Dazzi, T., Gribble, R., Wessely, S. & Fear, N. T. (2014): Does asking about suicide and related behaviours induce suicidal ideation? What is the evidence? Psychological Medicine, 44(16), 3361–3363",
+      "Phillips, D. P. (1974): The influence of suggestion on suicide: Substantive and theoretical implications of the Werther effect. American Sociological Review, 39(3), 340–354",
+      "Niederkrotenthaler, T. u. a. (2010): Role of media reports in completed and prevented suicide: Werther v. Papageno effects. British Journal of Psychiatry, 197(3), 234–243",
+      "World Health Organization (2023): Preventing suicide: A resource for media professionals, update 2023. Geneva: WHO",
+      "World Health Organization (2019/2022): ICD-11, 6B42 Prolonged grief disorder",
+      "American Psychiatric Association (2022): DSM-5-TR – Prolonged Grief Disorder",
+      "Omega 90 (Luxemburg): Consultation de deuil – https://www.omega90.lu",
+      "Kanner-Jugendtelefon 116 111 – https://www.kjt.lu"
+    ],
+    "klasse": {
+      "de": {
+        "ziel": "Die oder der Jugendliche weiß, dass Trauer in Schüben kommt und viele Formen hat (auch Wut, Rückzug, Körperbeschwerden), dass Verluste ohne Tod eines Menschen zählen, dass Pendeln zwischen Vermissen und Alltag gesund ist und eine Verbindung bleiben darf – und kann eine trauernde Freundin oder einen Freund begleiten und weiß, wann Erwachsene dazugehören.",
+        "stichwort": "Die Kamera mit fünf Einstellungen: Belichtung · Filter · Zoom · Doppelbelichtung · Stativ – „Das Alte bleibt im Bild – das Neue kommt dazu.“",
+        "sitzungen": [
+          "Woche 1: Belichtung – Trauer kommt in Schüben; Auslöser erkennen, Blendschutz für den Schulalltag. Auftrag (freiwillig): einen Blendschutz merken.",
+          "Woche 2: Filter – Trauer sieht nicht immer traurig aus (Wut, Rückzug, Körper, „Alles gut“); auch Tier und Umzug sind Verluste. Auftrag (freiwillig): auf „nur ein …“ achten.",
+          "Woche 3: Zoom – Pendeln zwischen Vermissen und Alltag; ein Zoom-Plan. Auftrag (freiwillig): zehn Minuten bewusst „Zoom raus“.",
+          "Woche 4: Doppelbelichtung – Erinnern und Weitermachen zusammen; Spuren lösen. Angebot: eine eigene Doppelbelichtung, die niemand sehen muss.",
+          "Woche 5: Stativ – Freunde begleiten: da sein, fragen statt machen, nicht allein tragen; wann Erwachsene dazugehören. Auftrag (freiwillig): einen tragenden Satz merken.",
+          "Woche 6: Die letzten Bilder – Regie für Kenzas Mittwoch, Rückblick, meine Kamera mit Hilfewegen."
+        ],
+        "helfen": [
+          "Sagt die oder der Jugendliche „Ich brauch kurz Pause“ oder zeigt das abgemachte Zeichen: ruhig ja sagen, einen ruhigen Platz anbieten, später kurz nachfragen – ohne Publikum.",
+          "Wut, Lachen oder Leistungsabfall nicht als Gleichgültigkeit lesen; Jahrestage, Geburtstage und Feste können Schübe bringen – vorher kurz Wahlmöglichkeiten anbieten.",
+          "Bei Sätzen wie „Ich will nicht mehr aufwachen“: nicht allein lassen, direkt nachfragen, heute noch SePAS und Leitung informieren; akut 112."
+        ],
+        "beobachten": [
+          "benennt Trauer-Schübe und nutzt einen Blendschutz im Schulalltag",
+          "erkennt Trauer hinter Wut oder Rückzug bei anderen und reagiert mit Verständnis",
+          "antwortet trauernden Freunden mit Da-sein und Fragen und holt bei Gefahr Erwachsene"
+        ],
+        "nicht": "Fragen Sie nicht vor der Klasse nach einem Verlust, vergleichen Sie Verluste nicht („nur ein Tier“, „es ist doch niemand gestorben“), setzen Sie keine Frist („Jetzt ist es aber Zeit“) und sprechen Sie bei Suizid nie über das Wie."
+      },
+      "fr": {
+        "ziel": "Le ou la jeune sait que le deuil vient par vagues et prend beaucoup de formes (aussi colère, repli, plaintes physiques), que des pertes sans décès d’une personne comptent, qu’osciller entre le manque et le quotidien est sain et qu’un lien peut rester – et sait accompagner un ami ou une amie en deuil et quand un adulte doit être impliqué.",
+        "stichwort": "L’appareil photo à cinq réglages : exposition · filtre · zoom · double exposition · trépied – « L’ancien reste dans l’image – le nouveau s’y ajoute. »",
+        "sitzungen": [
+          "Semaine 1 : exposition – le deuil arrive par vagues ; repérer les déclencheurs, un pare-soleil pour le quotidien scolaire. Action libre : retenir un pare-soleil.",
+          "Semaine 2 : filtre – le deuil n’a pas toujours l’air triste (colère, repli, corps, « tout va bien ») ; un animal, un déménagement sont aussi des pertes. Action libre : repérer les « ce n’est qu’un… ».",
+          "Semaine 3 : zoom – osciller entre le manque et le quotidien ; un plan zoom. Action libre : dix minutes de vrai « zoom arrière ».",
+          "Semaine 4 : double exposition – se souvenir et continuer ensemble ; résoudre les indices. Proposition : sa propre double exposition, que personne n’a à voir.",
+          "Semaine 5 : trépied – accompagner un ami : être là, demander au lieu de faire, ne pas porter seul ; quand impliquer un adulte. Action libre : retenir une phrase qui porte.",
+          "Semaine 6 : les dernières photos – mise en scène du mercredi de Kenza, regard en arrière, mon appareil avec les chemins d’aide."
+        ],
+        "helfen": [
+          "Si le ou la jeune dit « J’ai besoin d’une petite pause » ou montre le signe convenu : dire oui calmement, proposer un endroit calme, demander brièvement plus tard – sans spectateurs.",
+          "Ne pas lire la colère, le rire ou une baisse des résultats comme de l’indifférence ; dates anniversaires, fêtes et anniversaires peuvent amener des vagues – proposer avant des choix.",
+          "Face à des phrases comme « Je ne veux plus me réveiller » : ne pas laisser seul, demander directement, informer le jour même le SePAS et la direction ; danger immédiat 112."
+        ],
+        "beobachten": [
+          "nomme des vagues de deuil et utilise un pare-soleil au quotidien",
+          "reconnaît le deuil derrière la colère ou le repli chez les autres et réagit avec compréhension",
+          "répond à des amis en deuil en étant là et en demandant, et va chercher un adulte en cas de danger"
+        ],
+        "nicht": "Ne demandez pas devant la classe de parler d’une perte, ne comparez pas les pertes (« qu’un animal », « personne n’est mort »), ne fixez pas de délai (« il est temps de passer à autre chose ») et ne parlez jamais du comment d’un suicide."
+      }
+    },
+    "welt": {
+      "de": "Belval, zwischen den alten Hochöfen und dem neuen Uni-Viertel: Im Fotoclub eines Lycée treffen sich mittwochs nach der Schule Kenza, Joris und Ilona – geredet wird Französisch, Lëtzebuergesch, Darija, Polnisch und Deutsch durcheinander. Kenza (15, 4G; Darija, Französisch, Lëtzebuergesch) hat die Kamera ihres Cousins Nassim, der im Februar mit 19 Jahren bei einem Autounfall gestorben ist; seitdem kommt sie kaum noch in den Club und hat seine letzten Bilder auf der Speicherkarte nie angeschaut. Joris (16, 3G; Lëtzebuergesch, Deutsch, Französisch) trägt ein Hörgerät, sieht auf Fotos jedes Detail und hat im April Comète verloren, die alte Stute, die er drei Jahre auf einem Hof bei Sanem gepflegt hat – seitdem ist er gereizt, und bei „War doch nur ein Pferd“ geht er. Ilona (14, Accueil-Klasse; Polnisch, Englisch, lernt Französisch und Lëtzebuergesch) ist vor acht Monaten aus Krakau hergezogen; ihre beste Freundin Zosia antwortet kaum noch, Ilona hat oft Kopfweh und glaubt, sie dürfe nicht traurig sein, „weil ja niemand gestorben ist“. Seit drei Wochen klebt jeden Mittwoch ein ausgedrucktes Foto von Nassim an Kenzas Spind; von Treffen zu Treffen lernt die oder der Jugendliche die fünf Einstellungen der Kamera kennen, findet über Spuren heraus, von wem die Fotos kommen, und führt am Ende Regie, wenn Kenza Nassims letzte Bilder ansieht.",
+      "fr": "Belval, entre les anciens hauts fourneaux et le nouveau quartier universitaire : au club photo d’un lycée, Kenza, Joris et Ilona se retrouvent le mercredi après les cours – on y parle français, luxembourgeois, darija, polonais et allemand, tout mélangé. Kenza (15 ans, 4G ; darija, français, luxembourgeois) a l’appareil photo de son cousin Nassim, mort en février à 19 ans dans un accident de voiture ; depuis, elle ne vient presque plus au club et n’a jamais regardé ses dernières photos sur la carte mémoire. Joris (16 ans, 3G ; luxembourgeois, allemand, français) porte un appareil auditif, voit chaque détail sur les photos et a perdu en avril Comète, la vieille jument dont il s’est occupé trois ans dans une ferme près de Sanem – depuis, il est à cran, et à « Ce n’était qu’un cheval », il s’en va. Ilona (14 ans, classe d’accueil ; polonais, anglais, apprend le français et le luxembourgeois) a quitté Cracovie il y a huit mois ; sa meilleure amie Zosia ne répond presque plus, Ilona a souvent mal à la tête et croit qu’elle n’a pas le droit d’être triste, « puisque personne n’est mort ». Depuis trois semaines, chaque mercredi, une photo imprimée de Nassim est collée sur le casier de Kenza ; de rencontre en rencontre, le ou la jeune découvre les cinq réglages de l’appareil, trouve grâce aux indices qui colle les photos et met en scène, à la fin, le moment où Kenza regarde les dernières photos de Nassim."
+    }
   }
 }

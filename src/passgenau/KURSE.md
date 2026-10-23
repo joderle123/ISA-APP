@@ -401,6 +401,7 @@ Machbarkeit beim Pilot wieder auf 5. Darum je Sitzung **hart**:
 - **Einzelstunde:** Das Kind handelt selbst (stimmt ab, wählt, spielt). Die Fachkraft spricht höchstens zwei Stimmen.
 - **Luxemburg:**
   - SePAS gibt es nur im Secondaire. Im Fondamental sind es Lehrkraft, Schulkomitee/Präsident·in, I-EBS, ESEB (Direction de région) und Maison relais.
+  - ESEB gibt es seit dem Gesetz vom 30.6.2023 auch in Lycées, aber für besonderen Förderbedarf, nicht für Trauer oder Krisen. Bei Krisen im Secondaire: SePAS, national CePAS.
   - Lëtzebuergesch nur fehlerfrei (Eifeler Regel), sonst weglassen.
   - Mehrsprachigkeit zeigen (2–3 echte Wörter je Sitzung), nicht behaupten.
   - Ein Inklusionsmerkmal (Hörgerät, Rollstuhl) hat eine Rolle in der Handlung.
