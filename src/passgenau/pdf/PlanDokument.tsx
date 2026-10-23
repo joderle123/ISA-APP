@@ -558,6 +558,43 @@ export function SpickzettelSeite({ d }: { d: DruckSitzung }) {
 }
 
 /** Plan + Blatt des Kindes + Karten einer Sitzung. */
+/** Karten zum Ausdrucken aus den Hilfen (22.10.2026): je Satz Titel und Karten in zwei Spalten mit Schnittlinien; Karten nur
+ *  für die Fachkraft (Lösungen, Spickzettel) auf eigener Seite mit „nicht austeilen“ */
+function KartenSeiten({ d }: { d: DruckSitzung }) {
+  const saetze = d.hilfenKarten ?? []
+  if (!saetze.length) return null
+  const fr = d.sprache === 'fr'
+  const seite = (liste: typeof saetze, fachkraft: boolean, key: string) =>
+    liste.length ? (
+      <Page key={key} size="A4" style={{ paddingHorizontal: SEITE.rand, paddingTop: SEITE.oben, paddingBottom: SEITE.unten + 6 }}>
+        <Kopf d={d} erste={false} />
+        <Rubrik>{fachkraft ? (fr ? 'Pour l’adulte – ne pas distribuer' : 'Nur für dich – nicht austeilen') : fr ? 'Cartes à découper' : 'Karten zum Ausschneiden'}</Rubrik>
+        {liste.map((satz, si) => (
+          <View key={si} style={{ marginBottom: 12 }} wrap={false}>
+            <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 10, color: NEUTRAL.text, marginBottom: 2 }}>{ty(satz.titel, d.sprache)}</Text>
+            <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 7.4, color: SCHWACH, marginBottom: 6 }}>{ty(satz.schritt, d.sprache)}</Text>
+            <View style={{ flexDirection: 'row', flexWrap: 'wrap' }}>
+              {satz.karten.map((karte, ki) => (
+                <View key={ki} style={{ width: '50%', padding: 3 }}>
+                  <View style={{ minHeight: 62, borderWidth: 0.9, borderStyle: fachkraft ? 'solid' : 'dashed', borderColor: fachkraft ? P.tief : NEUTRAL.leise, borderRadius: 4, padding: 8, justifyContent: 'center', backgroundColor: fachkraft ? '#F7F8FD' : '#FFFFFF' }}>
+                    <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 10.5, lineHeight: 1.35, color: NEUTRAL.text }}>{ty(karte, d.sprache)}</Text>
+                  </View>
+                </View>
+              ))}
+            </View>
+          </View>
+        ))}
+        <Fuss sprache={d.sprache} spielschule={false} />
+      </Page>
+    ) : null
+  return (
+    <>
+      {seite(saetze.filter((x) => !x.nurFachkraft), false, 'k')}
+      {seite(saetze.filter((x) => x.nurFachkraft), true, 'f')}
+    </>
+  )
+}
+
 export function SitzungSeiten({ d }: { d: DruckSitzung }) {
   return (
     <>
@@ -569,6 +606,7 @@ export function SitzungSeiten({ d }: { d: DruckSitzung }) {
       ))}
       {d.karten ? <BlattSeiten blatt={d.karten} opt={{ sprache: d.sprache, lehrer: false }} /> : null}
       {d.materialSeite ? <BlattSeiten blatt={d.materialSeite} opt={{ sprache: d.sprache, lehrer: false }} /> : null}
+      <KartenSeiten d={d} />
     </>
   )
 }

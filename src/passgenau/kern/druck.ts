@@ -65,6 +65,8 @@ export interface DruckSitzung {
   datei: string
   /** Krisentag oder Weg 3 (P10): zum Ankreuzen „hat sich beruhigt · war dabei · …“ statt „hat (nicht) geklappt“ */
   krisentag?: boolean
+  /** Karten zum Ausdrucken aus den Hilfen der Schritte (22.10.2026: „fertiges Produkt“) – Fachkraft-Karten getrennt */
+  hilfenKarten?: { titel: string; schritt: string; karten: string[]; nurFachkraft: boolean }[]
 }
 
 export interface DruckFolge {
@@ -472,6 +474,7 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
   // Material: aus allen Schritten und Blatt-Teilen; Ritual-Material nur in Sitzung 1 einer Folge
   const mat = new Set<string>()
   const vorbereitung = new Set<string>()
+  const hilfenKarten: NonNullable<DruckSitzung['hilfenKarten']> = []
   let elternbrief: string | undefined
   for (const x of s.schritte) {
     const e = k.eintraege.get(x.ref)
@@ -520,6 +523,16 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
       // … und ebenso jede übersetzte Übung (Jugend, Kinder, fr-kern; R9: „fr.vorbereitung wird nicht gelesen“)
       const v = sp === 'fr' && e.fr?.vorbereitung ? e.fr.vorbereitung : e.vorbereitung
       if (v) vorbereitung.add(kuerzen(v, 200)!)
+    }
+    // Hilfen (22.10.2026): Vorbereitung als Checkliste und Karten zum Ausdrucken – nur aus dem, was in der Stunde wirklich vorkommt
+    if (e.typ === 'schritt' && e.hilfen) {
+      const h = (sp === 'fr' ? e.hilfen.fr : undefined) ?? e.hilfen.de
+      for (const v of h.vorbereitung ?? []) vorbereitung.add(kuerzen(v, 160)!)
+      for (const kt of h.karten ?? []) {
+        if (!kt.karten.length) continue
+        const nurFachkraft = /nur für dich|pour l[’']adulte|fachkraft|spickzettel|anti-sèche|lösung|solution|musterantwort/i.test(kt.titel)
+        hilfenKarten.push({ titel: kt.titel, schritt: textVon(e, sp).titel, karten: kt.karten, nurFachkraft })
+      }
     }
     // Elternbrief der Einheit nur, wenn er diesen Schritt betrifft – und nie bei offenem Kinderschutz-Thema
     if (e.elternbrief && !(p.achtung ?? []).includes('kinderschutz') && e.typ === 'schritt') {
@@ -783,6 +796,7 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
     n: plan.n,
     datei: `Passgenau-Sitzung-${nr}${sp === 'fr' ? '_FR' : ''}.pdf`,
     krisentag: plan.weg === 'leicht' || s.phase === 'leicht' || (plan.auftrag?.heute?.stimmung ?? 4) <= 2,
+    ...(hilfenKarten.length ? { hilfenKarten } : {}),
   }
 }
 
