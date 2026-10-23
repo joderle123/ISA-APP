@@ -522,7 +522,7 @@ const KURS_BILD: Record<string, string> = {
   'mobbing-10-12': 'motiv:noten', 'mobbing-13-16': 'motiv:gruppe', 'familie-13-16': 'motiv:stuhl', 'motivation-10-12': 'motiv:rad',
   'comeback-10-12': 'motiv:fallschirm', 'deeskalation-10-12': 'motiv:rettungsring', 'stress-13-16': 'motiv:schiff', 'trauer-10-12': 'motiv:vogel',
   // Welle 4 (23.10.2026)
-  'koerper-4-6': 'motiv:koerper', 'trauer-4-6': 'motiv:nest', 'stress-7-9': 'motiv:gedanken-kopf',
+  'koerper-4-6': 'motiv:koerper', 'trauer-4-6': 'motiv:nest', 'stress-7-9': 'motiv:gedanken-kopf', 'gaming-7-9': 'motiv:karussell',
 }
 
 const KERNBLATT_BEREICH: Record<string, Bereich> = {
