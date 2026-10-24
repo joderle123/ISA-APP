@@ -445,12 +445,15 @@ function druckSchritt(k: Katalog, x: PlanSchritt, sprache: Sprache, warum: boole
     d.text += sprache === 'fr' ? ` Aujourd’hui en bref (${x.min} min) : la première partie suffit.` : ` Heute knapp (${x.min} Min.): Der erste Teil reicht.`
   // eigene Schritte haben eine feste Zeile (auch mit eingesetztem Text); ein überschriebener Text verdrängt die Zeile des Bausteins
   // Themen-Einstieg mit Anknüpfen: die Spickzettel-Zeile der Übung, nicht der Anknüpf-Satz (Blind-Bewertung 13)
-  const kz = PG_KURZ[x.ref]?.[sprache] ?? ((ueberText && !x.ref.startsWith('th:')) || x.wahl?.length ? undefined : e.typ === 'schritt' ? (sprache === 'fr' ? e.fr?.kurz : e.kurz) : undefined)
+  // Kurs-Sitzung ab 2: der Text bekommt die Brücke vorangestellt (ueber.text) – die Übung bleibt dieselbe, ihr Spickzettel gilt
+  // weiter (24.10.2026: ab Sitzung 2 fehlte der Minutenplan in der Mappe)
+  const kursUebung = e.typ === 'schritt' && !!e.linie?.id.startsWith('kurs-')
+  const kz = PG_KURZ[x.ref]?.[sprache] ?? ((ueberText && !x.ref.startsWith('th:') && !kursUebung) || x.wahl?.length ? undefined : e.typ === 'schritt' ? (sprache === 'fr' ? e.fr?.kurz : e.kurz) : undefined)
   // Einzelkurs: die Werkzeug-Zeile der Sitzung ist schon ein Einzeiler (Referenzmessung 16.10.: „Auf einen Blick“ brach den
   // ersten Satz mitten im Satzteil ab)
   const kursZeile = e.typ === 'schritt' && e.linie?.id.startsWith('kurs-') && x.rolle === 'kern' ? e.werkzeug?.[sprache] : undefined
   d.kurz = kz ?? kursZeile ?? ersterSatz(d.text, 80)
-  if (x.rolle === 'kern' && e.typ === 'schritt' && e.hilfen && !ueberText) {
+  if (x.rolle === 'kern' && e.typ === 'schritt' && e.hilfen && (!ueberText || kursUebung)) {
     const plan = spickzettelAblauf(sprache === 'fr' ? e.hilfen.fr?.aufbau : e.hilfen.de.aufbau)
     if (plan) {
       d.ablauf = plan.schritte

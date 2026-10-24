@@ -597,8 +597,8 @@ export function SpickzettelSeite({ d, anhang = false }: { d: DruckSitzung; anhan
 /** Plan + Blatt des Kindes + Karten einer Sitzung. */
 /** Karten zum Ausdrucken aus den Hilfen (22.10.2026): je Satz Titel und Karten in zwei Spalten mit Schnittlinien; Karten nur
  *  für die Fachkraft (Lösungen, Spickzettel) auf eigener Seite mit „nicht austeilen“ */
-function KartenSeiten({ d }: { d: DruckSitzung }) {
-  const saetze = d.hilfenKarten ?? []
+function KartenSeiten({ d, nurKind = false }: { d: DruckSitzung; nurKind?: boolean }) {
+  const saetze = (d.hilfenKarten ?? []).filter((x) => !nurKind || !x.nurFachkraft)
   if (!saetze.length) return null
   const fr = d.sprache === 'fr'
   const seite = (liste: typeof saetze, fachkraft: boolean, key: string) =>
@@ -864,22 +864,281 @@ function KlassenKarteSeite({ f }: { f: DruckFolge }) {
   )
 }
 
-/** Mappe einer Folge: Deckblatt mit Bogen und Material, dann (Einzelkurs) die Seite für die Lehrkraft, dann je Sitzung Planblatt und Blatt. */
+// --- Kompakte Mappe (24.10.2026, Rückmeldung: „zu viele Blätter, wo erklärt wird, wie der Ablauf ist – lieber kompakt am
+// Anfang, nicht alle drei Seiten wieder eine Erklärseite“): vorne der Ablauf aller Sitzungen hintereinander, dann die Karten für
+// die Fachkraft einmal (gleiche Sätze wie die Krisenkarte nur einmal), dann nur noch Material; Hintergrund und Schritt für
+// Schritt am Ende, fortlaufend statt einer neuen Seite je Sitzung.
+
+const klein = (farbe: string = NEUTRAL.text, size = 8.4) => ({ fontFamily: SCHRIFT.jugend, fontSize: size, lineHeight: 1.35, color: farbe })
+
+/** Eine Sitzung im Ablauf vorne: Kopfzeile, Ablauf mit Minuten (beim Kern der Minutenplan), Vorbereiten, Material, kurze Notiz */
+function AblaufBlock({ d, ohneWerkzeug = false, kurzOben }: { d: DruckSitzung; ohneWerkzeug?: boolean; kurzOben?: Set<string> }) {
+  const sp = d.sprache
+  const fr = sp === 'fr'
+  const tx = T[sp]
+  const summe = d.schritte.reduce((n, x) => n + x.min, 0)
+  // Titel der Sitzung ist der Titel ihres Kerns (d.titel ist bei Kursen der Kurstitel)
+  const kopf = d.schritte.find((x) => x.kern)?.titel ?? d.titel
+  const blatt = d.kinderblatt?.[sp]?.titel ?? d.kinderblatt?.de?.titel
+  return (
+    <View style={{ marginBottom: 12, borderBottomWidth: 0.7, borderBottomColor: NEUTRAL.haarlinie, paddingBottom: 8 }}>
+      <View minPresenceAhead={140} style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 4 }}>
+        <View style={{ width: 20, height: 20, borderRadius: 10, backgroundColor: P.tief, alignItems: 'center', justifyContent: 'center', marginRight: 8 }}>
+          <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 9.5, color: '#FFFFFF' }}>{String(d.nr)}</Text>
+        </View>
+        <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 12, color: NEUTRAL.text, flex: 1 }}>{ty(kopf, sp)}</Text>
+        <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 8.4, color: SCHWACH }}>{`${summe} ${tx.min}${blatt ? `  ·  ${fr ? 'Fiche' : 'Blatt'}: ${ty(blatt, sp)}` : ''}`}</Text>
+      </View>
+      {d.werkzeug && !ohneWerkzeug ? (
+        <Text style={{ ...klein(NEUTRAL.text, 8.6), marginBottom: 3, marginLeft: 28 }}>
+          <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, color: P.tief }}>{fr ? 'Outil : ' : 'Werkzeug: '}</Text>
+          {ty(d.werkzeug, sp)}
+        </Text>
+      ) : null}
+      {d.hinweise.map((h, k) => (
+        <Text key={'h' + k} style={{ ...klein('#6B4E0F', 8), marginLeft: 28, marginBottom: 2 }}>{ty(h, sp)}</Text>
+      ))}
+      {d.klammer ? <Text style={{ ...klein(KLAMMER_FARBE, 8), marginLeft: 28, marginBottom: 2 }}>{`${d.klammer.kopf}: ${ty(d.klammer.start, sp)}`}</Text> : null}
+      {d.schritte.map((x, i) => (
+        <View key={i} wrap={false} style={{ flexDirection: 'row', paddingVertical: 2.5 }}>
+          <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 9, color: P.tief, width: 28, textAlign: 'right', paddingRight: 8 }}>{String(x.min)}</Text>
+          <View style={{ flex: 1 }}>
+            <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 9, fontWeight: 600, color: NEUTRAL.text }}>
+              <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 6.8, letterSpacing: 0.4, color: SCHWACH }}>{`${x.rolle.toUpperCase()}   `}</Text>
+              {x.kern && x.titel === kopf ? '' : ty(x.titel, sp)}
+            </Text>
+            {x.ablauf ? (
+              <View style={{ marginTop: 1.5 }}>
+                {x.ablauf.map((a, k) => (
+                  <View key={k} style={{ flexDirection: 'row', marginBottom: 1 }}>
+                    <Text style={{ fontFamily: SCHRIFT.jugend, fontWeight: 600, fontSize: 8, color: P.tief, width: 40 }}>{`${a.min} ${fr ? 'min' : 'Min.'}`}</Text>
+                    <Text style={{ ...klein(), flex: 1 }}>{ty(a.was, sp)}</Text>
+                  </View>
+                ))}
+                {x.ablaufRest ? <Text style={{ ...klein('#4A5263', 7.8), marginTop: 1 }}>{ty(x.ablaufRest, sp)}</Text> : null}
+              </View>
+            ) : x.text && x.kern && !x.blatt && !x.kurz ? (
+              <View style={{ marginTop: 1.5 }}>
+                {handlungen(x.text).teile.map((t, k, alle) => (
+                  <View key={k} style={{ flexDirection: 'row', marginBottom: 1 }}>
+                    {alle.length > 1 ? <Text style={{ fontFamily: SCHRIFT.jugend, fontWeight: 600, fontSize: 8, color: P.tief, width: 12 }}>{`${k + 1}`}</Text> : null}
+                    <Text style={{ ...klein(), flex: 1 }}>{ty(t, sp)}</Text>
+                  </View>
+                ))}
+              </View>
+            ) : x.kurz && !kurzOben?.has(`${x.titel}\n${x.kurz}`) ? (
+              <Text style={{ ...klein('#4A5263', 8) }}>{ty(x.kurz, sp)}</Text>
+            ) : null}
+          </View>
+        </View>
+      ))}
+      {d.vorbereitung.length || d.material.length || d.elternbrief ? (
+        <View wrap={false} style={{ marginLeft: 28, marginTop: 3 }}>
+          {d.vorbereitung.length ? (
+            <Text style={klein(NEUTRAL.text, 8)}>
+              <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800 }}>{`${tx.vorbereitung}: `}</Text>
+              {d.vorbereitung.slice(0, 3).map((v) => ty(v, sp)).join('  ·  ')}
+            </Text>
+          ) : null}
+          {d.material.length ? (
+            <Text style={klein(NEUTRAL.text, 8)}>
+              <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800 }}>{`${tx.material}: `}</Text>
+              {d.material.map((m) => ty(m, sp)).join(', ')}
+            </Text>
+          ) : null}
+          {d.elternbrief ? (
+            <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 1 }}>
+              <Kaestchen g={7} />
+              <Text style={{ ...klein(NEUTRAL.text, 8), marginLeft: 4 }}>{tx.eltern}</Text>
+            </View>
+          ) : null}
+        </View>
+      ) : null}
+      {/* Notiz nach der Stunde, eine Zeile: Ankreuzen und ein Stichwort */}
+      <View wrap={false} style={{ flexDirection: 'row', alignItems: 'center', marginLeft: 28, marginTop: 5 }}>
+        {(d.krisentag ? [tx.beruhigt, tx.dabei, tx.nurDa] : [tx.geklappt, tx.teils, tx.nicht]).map((w) => (
+          <View key={w} style={{ flexDirection: 'row', alignItems: 'center', marginRight: 10 }}>
+            <Kaestchen g={7} />
+            <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 7.8, color: NEUTRAL.text, marginLeft: 3 }}>{w}</Text>
+          </View>
+        ))}
+        <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 7.8, color: SCHWACH, marginRight: 4 }}>{fr ? 'Note :' : 'Notiz:'}</Text>
+        <View style={{ flex: 1, borderBottomWidth: 0.7, borderBottomColor: NEUTRAL.linie, height: 10 }} />
+      </View>
+    </View>
+  )
+}
+
+/** Vorne: alle Sitzungen hintereinander – so viele auf eine Seite, wie passen */
+function AblaufSeiten({ f }: { f: DruckFolge }) {
+  const sp = f.sprache
+  const fr = sp === 'fr'
+  // dasselbe Werkzeug in allen Sitzungen (Kurse): einmal oben statt in jedem Block
+  const werkzeuge = new Set(f.sitzungen.map((d) => d.werkzeug ?? ''))
+  const werkzeug = werkzeuge.size === 1 && f.sitzungen.length > 1 ? f.sitzungen[0].werkzeug : undefined
+  // Schritte, die in jeder Sitzung gleich sind (Kurs-Rituale Ankommen und Abschluss): die Beschreibung einmal oben, im Block nur der Name
+  const zaehl = new Map<string, number>()
+  for (const d of f.sitzungen) for (const x of d.schritte) if (!x.kern && x.kurz) zaehl.set(`${x.titel}\n${x.kurz}`, (zaehl.get(`${x.titel}\n${x.kurz}`) ?? 0) + 1)
+  const kurzOben = new Set([...zaehl].filter(([, n]) => n > 1 && n === f.sitzungen.length).map(([k]) => k))
+  return (
+    <Page size="A4" style={{ paddingHorizontal: SEITE.rand, paddingTop: SEITE.oben, paddingBottom: SEITE.unten + 6 }}>
+      <Rubrik>{fr ? 'Le déroulement de toutes les séances' : 'Ablauf aller Sitzungen'}</Rubrik>
+      <Text style={{ ...klein(SCHWACH, 8), marginTop: -4, marginBottom: 10 }}>
+        {fr
+          ? 'Une séance = un bloc. Le matériel pour l’enfant suit après les cartes ; phrases et « si ça bascule » : en fin de dossier.'
+          : 'Eine Sitzung = ein Block. Das Material fürs Kind folgt nach den Karten; Sätze und „Wenn es kippt“: hinten in der Mappe.'}
+      </Text>
+      {werkzeug ? (
+        <Text style={{ ...klein(NEUTRAL.text, 9), marginBottom: 10 }}>
+          <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, color: P.tief }}>{fr ? 'Outil de tout le cours : ' : 'Werkzeug des ganzen Kurses: '}</Text>
+          {ty(werkzeug, sp)}
+        </Text>
+      ) : null}
+      {[...kurzOben].map((k) => {
+        const [titel, kurz] = k.split('\n')
+        return (
+          <Text key={k} style={{ ...klein(NEUTRAL.text, 8.6), marginBottom: 3 }}>
+            <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, color: P.tief }}>{`${ty(titel, sp)}: `}</Text>
+            {ty(kurz, sp)}
+          </Text>
+        )
+      })}
+      {kurzOben.size ? <View style={{ height: 7 }} /> : null}
+      {f.sitzungen.map((d) => (
+        <AblaufBlock key={d.nr} d={d} ohneWerkzeug={!!werkzeug} kurzOben={kurzOben} />
+      ))}
+      <Fuss sprache={sp} spielschule={false} />
+    </Page>
+  )
+}
+
+/** Karten nur für die Fachkraft, einmal und zusammen: Sätze, die in mehreren Sitzungen gleich sind (Krisenkarte), stehen nur
+ *  einmal oben; die übrigen je Sitzung. Kompakt als Liste – sie werden nicht ausgeschnitten. */
+function FachkraftKartenSeiten({ f }: { f: DruckFolge }) {
+  const sp = f.sprache
+  const fr = sp === 'fr'
+  type Satz = NonNullable<DruckSitzung['hilfenKarten']>[number]
+  const schluessel = (s: Satz) => `${s.titel}\n${s.karten.join('\n')}`
+  const zahl = new Map<string, number>()
+  for (const d of f.sitzungen) for (const s of new Map((d.hilfenKarten ?? []).filter((x) => x.nurFachkraft).map((x) => [schluessel(x), x])).values()) zahl.set(schluessel(s), (zahl.get(schluessel(s)) ?? 0) + 1)
+  if (!zahl.size) return null
+  const gemeinsam: Satz[] = []
+  const gesehen = new Set<string>()
+  for (const d of f.sitzungen)
+    for (const s of d.hilfenKarten ?? [])
+      if (s.nurFachkraft && (zahl.get(schluessel(s)) ?? 0) > 1 && !gesehen.has(schluessel(s))) {
+        gesehen.add(schluessel(s))
+        gemeinsam.push(s)
+      }
+  // einzelne Karten, die in mehreren Sitzungen gleich sind (z. B. „Keine echten Geräte …“): einmal oben, nicht je Sitzung
+  const kartenZahl = new Map<string, number>()
+  for (const d of f.sitzungen) {
+    const hier = new Set((d.hilfenKarten ?? []).filter((x) => x.nurFachkraft && (zahl.get(schluessel(x)) ?? 0) === 1).flatMap((x) => x.karten))
+    for (const k of hier) kartenZahl.set(k, (kartenZahl.get(k) ?? 0) + 1)
+  }
+  const immer = [...kartenZahl].filter(([, n]) => n > 1).map(([k]) => k)
+  if (immer.length) gemeinsam.push({ titel: fr ? 'Dans chaque séance' : 'In jeder Sitzung', schritt: '', karten: immer, nurFachkraft: true })
+  const satzBlock = (s: Satz, key: string) => (
+    <View key={key} wrap={false} style={{ marginBottom: 8 }}>
+      <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 9.2, color: NEUTRAL.text, marginBottom: 3 }}>{ty(s.titel, sp)}</Text>
+      <View style={{ flexDirection: 'row', flexWrap: 'wrap' }}>
+        {s.karten.map((k, i) => (
+          <View key={i} style={{ width: '50%', flexDirection: 'row', paddingRight: 8, marginBottom: 2.5 }}>
+            <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 8.4, color: P.tief, width: 8 }}>•</Text>
+            <Text style={{ ...klein(NEUTRAL.text, 8.4), flex: 1 }}>{ty(k, sp)}</Text>
+          </View>
+        ))}
+      </View>
+    </View>
+  )
+  return (
+    <Page size="A4" style={{ paddingHorizontal: SEITE.rand, paddingTop: SEITE.oben, paddingBottom: SEITE.unten + 6 }}>
+      <Rubrik>{fr ? 'Cartes pour l’adulte – ne pas distribuer' : 'Karten nur für dich – nicht austeilen'}</Rubrik>
+      {gemeinsam.length ? (
+        <View style={{ borderLeftWidth: 2.5, borderLeftColor: P.tief, paddingLeft: 9, marginBottom: 10 }}>
+          <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 8, letterSpacing: 0.6, color: P.tief, marginBottom: 5 }}>{(fr ? 'Pour toutes les séances' : 'Für alle Sitzungen').toUpperCase()}</Text>
+          {gemeinsam.map((s, i) => satzBlock(s, 'g' + i))}
+        </View>
+      ) : null}
+      {f.sitzungen.map((d) => {
+        const eigen = (d.hilfenKarten ?? [])
+          .filter((s) => s.nurFachkraft && (zahl.get(schluessel(s)) ?? 0) === 1)
+          .map((s) => ({ ...s, karten: s.karten.filter((k) => !immer.includes(k)) }))
+          .filter((s) => s.karten.length)
+        if (!eigen.length) return null
+        return (
+          <View key={d.nr} style={{ marginBottom: 4 }}>
+            <Text minPresenceAhead={150} style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 8, letterSpacing: 0.6, color: P.tief, marginBottom: 4 }}>{`${(fr ? 'Séance' : 'Sitzung').toUpperCase()} ${d.nr} · ${ty(d.schritte.find((x) => x.kern)?.titel ?? d.titel, sp).toUpperCase()}`}</Text>
+            {eigen.map((s, i) => satzBlock(s, `${d.nr}-${i}`))}
+          </View>
+        )
+      })}
+      <Fuss sprache={sp} spielschule={false} />
+    </Page>
+  )
+}
+
+/** Hinten: Schritt für Schritt (Sätze, „Wenn es kippt“) aller Sitzungen fortlaufend – keine neue Seite je Sitzung */
+function SchrittFolgeSeiten({ f }: { f: DruckFolge }) {
+  const sp = f.sprache
+  return (
+    <Page size="A4" style={{ paddingHorizontal: SEITE.rand, paddingTop: SEITE.oben, paddingBottom: SEITE.unten + 6 }}>
+      <Rubrik>{`${sp === 'fr' ? 'Infos complémentaires' : 'Zusatzinfo'} · ${T[sp].schrittweise}`}</Rubrik>
+      {f.sitzungen.map((d) => {
+        const m = planMasse(d)
+        return (
+          <View key={d.nr} style={{ marginBottom: 14 }}>
+            <Text minPresenceAhead={120} style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 13, color: NEUTRAL.text, marginBottom: 6 }}>{`${d.nr}  ${ty(d.schritte.find((x) => x.kern)?.titel ?? d.titel, sp)}`}</Text>
+            {d.einstieg ? (
+              <View wrap={false} style={{ borderLeftWidth: 3, borderLeftColor: P.tief, paddingLeft: 9, marginBottom: 8 }}>
+                <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 8.4, color: P.tief, marginBottom: 2 }}>{sp === 'fr' ? 'Pour commencer, par exemple' : 'Zum Beispiel so anfangen'}</Text>
+                <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 9.4, lineHeight: 1.4, color: NEUTRAL.text }}>{ty(d.einstieg, sp)}</Text>
+              </View>
+            ) : null}
+            <View style={{ borderBottomWidth: 0.6, borderBottomColor: NEUTRAL.haarlinie }}>
+              {d.schritte.map((x, i) => (
+                <SchrittZeile key={i} x={x} i={i} d={d} m={m} vorAus={i === d.schritte.length - 2 ? schrittHoehe(d.schritte[i + 1], d, m) : 0} />
+              ))}
+            </View>
+          </View>
+        )
+      })}
+      <Fuss sprache={sp} spielschule={false} />
+    </Page>
+  )
+}
+
+/** Mappe einer Folge (kompakt, 24.10.2026): Deckblatt, Ablauf aller Sitzungen, Karten für die Fachkraft einmal, dann je Sitzung
+ *  nur das Material fürs Kind; am Ende Hintergrund, Blatt für die Lehrkraft und Schritt für Schritt. */
 export function FolgeDokument({ f }: { f: DruckFolge }) {
   return (
     <Document title={`Passgenau – ${f.titel}`} author={urheberschaft(undefined).name} creator="CDSE Toolbox" producer="CDSE Toolbox" language={f.sprache}>
       <Deckblatt f={f} />
+      <AblaufSeiten f={f} />
+      <FachkraftKartenSeiten f={f} />
       {f.sitzungen.map((d) => (
-        <SitzungSeiten key={d.nr} d={d} anhang />
+        <MaterialSeiten key={d.nr} d={d} />
       ))}
-      {/* Zusatzinfo (23.10.2026: „zu viele Erklärungen – man weiß nicht, wo anfangen“): Hintergrund, Blatt für die Lehrkraft
-          und die ausführlichen Schritte mit Sätzen und „Wenn es kippt“ am Ende */}
       <HintergrundSeite f={f} />
       <KlassenKarteSeite f={f} />
-      {f.sitzungen.map((d) => (
-        <PlanSeite key={'z' + d.nr} d={d} zusatz />
-      ))}
+      <SchrittFolgeSeiten f={f} />
     </Document>
+  )
+}
+
+/** Material einer Sitzung ohne Erklärseite: Blatt des Kindes, Sammelblatt, Karten und Bögen zum Ausschneiden */
+function MaterialSeiten({ d }: { d: DruckSitzung }) {
+  return (
+    <>
+      {d.kinderblatt ? <BlattSeiten blatt={d.kinderblatt} opt={{ sprache: d.sprache, lehrer: false }} /> : null}
+      {d.sammelblatt ? <BlattSeiten blatt={d.sammelblatt} opt={{ sprache: d.sprache, lehrer: false }} /> : null}
+      {(d.weitereBlaetter ?? []).map((x, i) => (
+        <BlattSeiten key={'gb' + i} blatt={x.blatt} opt={{ sprache: x.sprache, lehrer: false }} />
+      ))}
+      {d.karten ? <BlattSeiten blatt={d.karten} opt={{ sprache: d.sprache, lehrer: false }} /> : null}
+      {d.materialSeite ? <BlattSeiten blatt={d.materialSeite} opt={{ sprache: d.sprache, lehrer: false }} /> : null}
+      <KartenSeiten d={d} nurKind />
+    </>
   )
 }
 

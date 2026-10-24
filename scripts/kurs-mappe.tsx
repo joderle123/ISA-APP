@@ -1,6 +1,6 @@
 // Passgenau – einen Einzelkurs prüfen: plant mit dem echten Kern die ganze Folge des Kurses (gründlich, eine Sitzung je
 // Kurs-Sitzung) für erfundene Testkinder – je Zugang einer Variante (z. B. A: liest und schreibt, B: bildgestützt) und je
-// Sprache –, schreibt die Mappe als PDF (Deckblatt, je Sitzung Planblatt und Blatt) und meldet, ob jede Sitzung die
+// Sprache –, schreibt die Mappe als PDF (Deckblatt, Ablauf aller Sitzungen, Karten für die Fachkraft, Material, Zusatzinfo) und meldet, ob jede Sitzung die
 // passende Kurs-Sitzung in der passenden Variante bekommt, ob die Kurs-Rituale dabei sind und wie viele Seiten jedes Blatt hat.
 //   npx tsx --tsconfig tsconfig.scripts.json scripts/kurs-mappe.tsx <kurs-linie> [zielordner] [--png] [--blaetter] [--nur-de] [--dauer=30]
 // --blaetter: nur die Kinderblätter als Bilder (je Sitzung und Variante, zum Ansehen); die Seitenzahl je Blatt steht immer im Bericht.

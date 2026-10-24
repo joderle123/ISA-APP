@@ -175,7 +175,7 @@ function KursSeite({ k, zurueck }: { k: K.KursInfo; zurueck: () => void }) {
     setWarte(true)
   }
   // Kursmappe direkt (23.10.2026: „fertiger Kurs, wo man loslegen kann“): ohne Kind und ohne Planen die ganze Mappe als PDF –
-  // Deckblatt, je Sitzung Startseite, Blatt und Karten, hinten die Zusatzinfo
+  // Deckblatt, Ablauf aller Sitzungen, Karten für die Fachkraft einmal, dann nur Material, hinten die Zusatzinfo (24.10.2026)
   const [druckt, setDruckt] = useState(false)
   const [weltAuf, setWeltAuf] = useState(false)
   const mappe = async () => {
