@@ -9725,5 +9725,110 @@
         "nicht": "Ne pas faire passer de petits tests (« Tu sais déjà écrire ton prénom ? ») ni balayer la petite peur – les deux rendent le départ plus difficile."
       }
     }
+  },
+  "kurs-geld-7-9": {
+    "name": {
+      "de": "Erst wiegen, dann zahlen",
+      "fr": "Je pèse, puis je paie"
+    },
+    "welt": {
+      "de": "Roeser im Süden Luxemburgs: In der Maison relais neben der Grundschule steht im Büro eine alte Blechdose, die Wunschkiste. Jeden Monat legt die Erzieherin Edmée 10 € hinein, und was davon gekauft wird, entscheiden die Kinder aus Zyklus 2 und 3 gemeinsam – über das Geld der Kinder selbst spricht niemand. Gaspar (8, Zyklus 3.1; Portugiesisch, Lëtzebuergesch, Französisch) ruft bei allem, was glitzert, „Quero!“ (Ich will!) und will die Glitzer-Schleim-Fabrik, Feven (9, Zyklus 3.2; Tigrinya, Lëtzebuergesch, Französisch) geht seit einer Fuß-OP an Unterarmstützen, sieht alles und träumt von einer Murmelbahn für 20 €, Greta (7, Zyklus 2.2; Lëtzebuergesch, Deutsch, Französisch) tauscht Fantasietier-Karten für ihr Leben gern. Von Treffen zu Treffen kommt eine Frage dazu – eine fremde Münze, zu viele Wünsche, jetzt oder später, ein Glitzer-Plakat, ein Tausch, der keiner ist, ein blinkender Kaufen-Knopf –, und das Kind prüft als Münz-Profi jedes Mal selbst mit der Arm-Waage, bis es am Ende die Wunschkiste hütet.",
+      "fr": "Roeser, dans le sud du Luxembourg : dans la maison relais à côté de l’école fondamentale, une vieille boîte en fer trône dans le bureau – la caisse à souhaits. Chaque mois, l’éducatrice Edmée y met 10 €, et ce qu’on achète avec, les enfants des cycles 2 et 3 le décident ensemble – personne ne parle de l’argent des enfants eux-mêmes. Gaspar (8 ans, cycle 3.1 ; portugais, luxembourgeois, français) crie « Quero ! » (je veux !) devant tout ce qui brille et veut la fabrique à slime pailletée, Feven (9 ans, cycle 3.2 ; tigrinya, luxembourgeois, français) marche avec des béquilles depuis une opération du pied, voit tout et rêve d’un circuit à billes à 20 €, Greta (7 ans, cycle 2.2 ; luxembourgeois, allemand, français) adore échanger ses cartes d’animaux fantastiques. De rencontre en rencontre, une question s’ajoute – une pièce étrangère, trop d’envies, maintenant ou plus tard, une affiche pailletée, un échange qui n’en est pas un, un bouton « Acheter » qui clignote –, et l’enfant, expert en pièces, vérifie chaque fois lui-même avec la balance des bras, jusqu’à garder la caisse à souhaits à la fin."
+    },
+    "de": {
+      "warum": "Erleben – benennen – üben – übertragen: Jede Waage-Frage erlebt das Kind zuerst mit dem Körper (Cent gegen Euro in den Händen, Wunsch-Weg, Murmel-Versuch, Werbe-Studio, echter Tausch, Waage-Weg) und benennt sie dann selbst; Fertigkeiten wie Nein sagen und Hilfe holen werden nach Behavioral Skills Training geübt: erklären, vormachen, üben, Rückmeldung (Miltenberger, 2008; SAFE-Kriterien nach Durlak et al., 2011). Ein Übersichtsbericht für den britischen Money Advice Service fasst zusammen, dass Grundhaltungen zu Geld früh entstehen, viele schon im Grundschulalter (Whitebread & Bingham, 2013); was Geld ist, verstehen Kinder schrittweise (Webley, 2005). Warten fällt mit Ablenkung leichter (Mischel et al., 1989), Wenn-dann-Pläne halfen Kindern mit und ohne ADHS beim Warten (Gawrilow et al., 2011), und Kinder warten vernünftigerweise weniger, wenn das Später unsicher ist (Kidd et al., 2013) – darum hält die Fachkraft jedes Versprechen. Spätere Lebenserfolge versprechen wir nicht: Die Zusammenhänge sind deutlich kleiner als in den alten Marshmallow-Studien (Watts et al., 2018). Werbung erkennen Kinder zuerst am Aussehen, die Verkaufsabsicht erst nach und nach (John, 1999); Wissen schützt nur, wenn ein fester Gedanke es abruft (Rozendaal et al., 2011) – darum „Wohin geht das Geld?“. Ab etwa sieben Jahren wird Kindern gleiche Verteilung wichtiger (Fehr et al., 2008). In Apps für Kinder sind Kauf-Aufforderungen häufig (Radesky et al., 2022). Sitzung 5 überträgt in die Pause, Sitzung 6 wendet alle Fragen an einem neuen Fall an und schaut zurück.",
+      "achtung": [
+        "Ohne Scham: Nie fragen, ob das Kind Taschengeld hat, was die Familie verdient oder besitzt; keine Vergleiche (Handy, Urlaub, Marken). Alles läuft über Gaspar, Feven und Greta; Eigenes nur freiwillig. Die Wunschkiste gehört allen – so geht es nie um Geld von zu Hause.",
+        "Sätze für „Wir haben das nicht“: „Danke, dass du das sagst. Wünschen darf man trotzdem – und vieles geht ohne Geld.“ Kein Mitleid, kein Nachfragen. Was Kinder brauchen, besorgen Große; das Kind ist dafür nicht verantwortlich.",
+        "Echte Münzen: nur aus dem Münz-Beutel der Einrichtung, nie aus dem eigenen Portemonnaie; nichts in den Mund, danach Hände waschen. Kein Geld schenken oder als Belohnung geben. Murmeln und Knöpfe bei Jüngeren groß wählen (Verschlucken).",
+        "Warten ehrlich: Der Murmel-Versuch ist ein Spiel, kein Test – kein Messen, kein Lob fürs Warten, kein Vergleich; „jetzt“ ist eine gültige Wahl. Versprechen genau halten: Wer wartet, rollt gleich drei Murmeln; die Murmeln bleiben hier (Kidd et al., 2013). Nichts versprechen: Zusammenhänge zwischen frühem Warten und späterem Erfolg sind klein (Watts et al., 2018).",
+        "Werbung nicht verteufeln, keine echten Marken. Die Frage ist: Wohin geht das Geld – und will ich es wirklich? Keine Quiz- oder Richtig/Falsch-Formate; Gründe zählen.",
+        "Tauschen und Drohen: Drohen und Wegnehmen werden nie gespielt, nur vorgelesen; das Kind spielt nie Greta oder den Großen, es berät. Erzählt ein Kind, dass ihm Geld oder Sachen weggenommen werden oder jemand droht: danken, „Du bist nicht schuld“, heute Lehrkraft bzw. Leitung; das Kind löst es nicht allein. Hilfe holen ist kein Petzen.",
+        "In-App-Käufe: Das Kind lernt „Fremdes Geld – erst fragen“. Tipps für Eltern (Käufe mit Passwort sperren, PEGI-Hinweis „In-Game-Käufe“) gehen über die Leitung bzw. das Elterentelefon 8002 4444, nicht über das Kind. Ist schon etwas gekauft worden: Das Kind ist nicht schuld, Erwachsene klären es.",
+        "Hunger: Sagt ein Kind „Ich hab Hunger und nichts dabei“, bietet die Fachkraft leise an, was die Einrichtung hat (Obst, Brot), und informiert sonst die Leitung – ohne Fragen nach Essen zu Hause.",
+        "Fevens Stützen werden weder erklärt noch bemitleidet. Fragt ein Kind: „Sie hatte eine OP am Fuß.“ Mehr nicht.",
+        "Krise (4–9 Jahre): Sagt ein Kind etwa „Ich will tot sein“, ruhig fragen „Wie meinst du das? Willst du dir wehtun?“, zuhören; klingt es ernst oder bleibt es unklar, ruhig nachfragen und nicht allein lassen; heute noch Maison-relais-Leitung, Lehrkraft oder Schulkomitee-Präsident·in, die I-EBS/ESEB holen; die Eltern informiert die Leitung nur, wenn dem Kind dadurch keine Gefahr droht; akute Gefahr 112. Erzählt ein Kind von Geldnot zu Hause: zuhören, nicht nachfragen, „Das lösen die Großen, nicht du“; die Fachkraft geht den Weg über die Leitung (ESEB, Info-Social 8002 98 98 für Familien, Elterentelefon 8002 4444). Gewalt: Helpline 20 60 10 60 (rund um die Uhr). Kind: Kanner-Jugendtelefon 116 111 (Mo–Sa), nachts 112/113; für Erwachsene SOS Détresse 45 45 45 (11–23 h)."
+      ]
+    },
+    "fr": {
+      "warum": "Vivre – nommer – s’exercer – transférer : l’enfant vit chaque question de la balance d’abord avec le corps (centimes contre euro dans les mains, chemin des envies, essai des billes, studio pub, vrai échange, chemin de la balance), puis la nomme lui-même ; des compétences comme dire non et chercher de l’aide s’entraînent selon le Behavioral Skills Training : expliquer, montrer, s’exercer, retour (Miltenberger, 2008 ; critères SAFE de Durlak et al., 2011). Un rapport de synthèse pour le Money Advice Service britannique résume que les attitudes envers l’argent se forment tôt, souvent dès l’école fondamentale (Whitebread & Bingham, 2013) ; les enfants comprennent pas à pas ce qu’est l’argent (Webley, 2005). Attendre est plus facile en se distrayant (Mischel et al., 1989), les plans si-alors ont aidé des enfants avec et sans TDAH à attendre (Gawrilow et al., 2011), et les enfants attendent raisonnablement moins quand le « plus tard » est incertain (Kidd et al., 2013) – c’est pourquoi l’adulte tient chaque promesse. Nous ne promettons pas de réussite future : les liens sont nettement plus faibles que dans les anciennes études du marshmallow (Watts et al., 2018). Les enfants reconnaissent d’abord la pub à son allure, l’intention de vendre seulement peu à peu (John, 1999) ; le savoir ne protège que si une idée fixe le rappelle (Rozendaal et al., 2011) – d’où « L’argent va où ? ». Vers sept ans, le partage égal devient plus important pour les enfants (Fehr et al., 2008). Les applis pour enfants poussent souvent à acheter (Radesky et al., 2022). La séance 5 transfère à la récré, la séance 6 applique toutes les questions à un cas nouveau et fait le bilan.",
+      "achtung": [
+        "Sans honte : ne jamais demander si l’enfant a de l’argent de poche, ce que gagne ou possède la famille ; pas de comparaisons (téléphone, vacances, marques). Tout passe par Gaspar, Feven et Greta ; l’enfant parle de lui s’il le veut. La caisse à souhaits appartient à tous – il ne s’agit jamais de l’argent de la maison.",
+        "Phrases pour « On n’a pas ça » : « Merci de me le dire. Souhaiter, c’est permis – et plein de choses sont gratuites. » Pas de pitié, pas de questions. Ce dont les enfants ont besoin, ce sont les grands qui s’en chargent ; l’enfant n’en est pas responsable.",
+        "Vraies pièces : seulement du sachet de la structure, jamais de ton porte-monnaie ; rien à la bouche, puis se laver les mains. Ne jamais donner d’argent ni en faire une récompense. Billes et boutons assez gros pour les plus jeunes (risque d’avaler).",
+        "Attendre, honnêtement : l’essai des billes est un jeu, pas un test – pas de mesure, pas d’éloge de l’attente, pas de comparaison ; « maintenant » est un choix valable. Tenir parole à la lettre : qui attend fait rouler trois billes juste après ; les billes restent ici (Kidd et al., 2013). Ne rien promettre : les liens entre attendre enfant et réussir plus tard sont faibles (Watts et al., 2018).",
+        "Ne pas diaboliser la pub, pas de vraies marques. La question est : où va l’argent – et est-ce que je le veux vraiment ? Pas de quiz ni de format juste/faux ; ce sont les raisons qui comptent.",
+        "Échanger et menacer : la menace et le vol ne sont jamais joués, seulement lus ; l’enfant ne joue jamais Greta ni le grand, il conseille. Si un enfant raconte qu’on lui prend de l’argent ou des affaires, ou qu’on le menace : remercier, « Ce n’est pas ta faute », aujourd’hui titulaire ou responsable de la maison relais ; il ne règle pas ça seul. Chercher de l’aide, ce n’est pas rapporter.",
+        "Achats dans les applis : l’enfant apprend « L’argent d’un autre – d’abord demander ». Les conseils aux parents (bloquer les achats par mot de passe, mention PEGI « achats en jeu ») passent par le ou la responsable ou l’Elterentelefon 8002 4444, pas par l’enfant. Si un achat a déjà eu lieu : l’enfant n’est pas coupable, les adultes règlent ça.",
+        "Faim : si un enfant dit « J’ai faim et je n’ai rien », l’adulte propose discrètement ce que la structure a (fruit, pain) et sinon informe le ou la responsable – sans questions sur les repas à la maison.",
+        "On n’explique pas les béquilles de Feven et on ne la plaint pas. Si un enfant demande : « Elle a été opérée du pied. » C’est tout.",
+        "Crise (4–9 ans) : si un enfant dit par exemple « Je veux être mort·e », demander calmement « Tu veux dire quoi ? Tu veux te faire mal ? », écouter ; si cela semble sérieux ou pas clair, redemander calmement et ne pas le laisser seul ; aujourd’hui encore responsable de la maison relais, titulaire ou président·e du comité d’école, qui alertent I-EBS/ESEB ; le ou la responsable informe les parents seulement si cela ne met pas l’enfant en danger ; danger aigu 112. Si un enfant parle de manque d’argent chez lui : écouter, ne pas questionner, « C’est aux grands de régler ça, pas à toi » ; l’adulte passe par le ou la responsable (ESEB, Info-Social 8002 98 98 pour les familles, Elterentelefon 8002 4444). Violence : Helpline 20 60 10 60 (24 h/24). Enfant : Kanner-Jugendtelefon 116 111 (lu–sa), la nuit 112/113 ; pour les adultes SOS Détresse 45 45 45 (11–23 h)."
+      ]
+    },
+    "quellen": [
+      "Whitebread, D. & Bingham, S. (2013): Habit formation and learning in young children. London: Money Advice Service (Übersichtsbericht).",
+      "Webley, P. (2005): Children’s understanding of economics. In M. Barrett & E. Buchanan-Barrow (Hrsg.), Children’s understanding of society (S. 43–67). Hove: Psychology Press.",
+      "Mischel, W., Shoda, Y. & Rodriguez, M. L. (1989): Delay of gratification in children. Science, 244(4907), 933–938.",
+      "Watts, T. W., Duncan, G. J. & Quan, H. (2018): Revisiting the marshmallow test: A conceptual replication investigating links between early delay of gratification and later outcomes. Psychological Science, 29(7), 1159–1177.",
+      "Kidd, C., Palmeri, H. & Aslin, R. N. (2013): Rational snacking: Young children’s decision-making on the marshmallow task is moderated by beliefs about environmental reliability. Cognition, 126(1), 109–114.",
+      "Gawrilow, C., Gollwitzer, P. M. & Oettingen, G. (2011): If-then plans benefit delay of gratification performance in children with and without ADHD. Cognitive Therapy and Research, 35(5), 442–455.",
+      "Gollwitzer, P. M. & Sheeran, P. (2006): Implementation intentions and goal achievement: A meta-analysis of effects and processes. Advances in Experimental Social Psychology, 38, 69–119.",
+      "John, D. R. (1999): Consumer socialization of children: A retrospective look at twenty-five years of research. Journal of Consumer Research, 26(3), 183–213.",
+      "Rozendaal, E., Lapierre, M. A., van Reijmersdal, E. A. & Buijzen, M. (2011): Reconsidering advertising literacy as a defense against advertising effects. Media Psychology, 14(4), 333–354.",
+      "Fehr, E., Bernhard, H. & Rockenbach, B. (2008): Egalitarianism in young children. Nature, 454, 1079–1083.",
+      "Radesky, J., Hiniker, A., McLaren, C., Akgun, E., Schaller, A., Weeks, H. M., Campbell, S. & Gearhardt, A. N. (2022): Prevalence and characteristics of manipulative design in mobile applications used by children. JAMA Network Open, 5(6), e2217641.",
+      "Miltenberger, R. G. (2008): Teaching safety skills to children: Prevention of firearm injury as an exemplar of best practice in assessment, training, and generalization of safety skills. Behavior Analysis in Practice, 1(1), 30–36.",
+      "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011): The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432.",
+      "Europäische Zentralbank: Euro-Münzen (gemeinsame Seite und nationale Seite, gültig im ganzen Euro-Raum; Gewichte 1 Cent 2,30 g, 50 Cent 7,80 g, 1 Euro 7,50 g, 2 Euro 8,50 g; Durchmesser 50 Cent 24,25 mm, 1 Euro 23,25 mm; 1 Euro: Ring golden, Mitte silbern, 2 Euro umgekehrt): https://www.ecb.europa.eu.",
+      "lëtzfin (CSSF): https://www.letzfin.lu. Kanner-Jugendtelefon: https://www.kjt.lu (116 111; Elterentelefon 8002 4444). Info-Social (Ligue médico-sociale): https://www.ligue.lu (8002 98 98). PEGI: https://pegi.info."
+    ],
+    "klasse": {
+      "de": {
+        "ziel": "Das Kind weiß, was Geld ist (Münzen und Scheine erkennen, bis 20 € zählen), unterscheidet brauchen und wünschen, kann für etwas Größeres warten und hat dafür einen Wenn-dann-Trick, erkennt, dass Werbung will, dass es will, tauscht nur mit eigenem Ja und holt bei Drohen oder Wegnehmen Hilfe – und fragt vor jedem Kaufen-Knopf auf einem fremden Handy einen Großen.",
+        "stichwort": "Die Arm-Waage mit sechs Fragen: Was ist es wert? Brauchen? Warten? Wohin geht das Geld? Beide Ja? Erst fragen! „Erst wiegen, dann zahlen.“",
+        "sitzungen": [
+          "Woche 1: Ist das Geld? – Fühlsocke, Arm-Waage (Cent gegen Euro), fremde Münze mit echten Münzen prüfen.",
+          "Woche 2: Brauchen wir das? – Wunsch-Weg am Boden: brauchen, kommt drauf an, wünschen – mit Gründen.",
+          "Woche 3: Eine Murmel jetzt – oder drei? – Warte-Versuch, Warte-Tricks, eigener Wenn-dann-Satz.",
+          "Woche 4: Mach, dass ich will! – Tricks auf Gaspars Plakat finden, selbst Werbung machen, „Wohin geht das Geld?“.",
+          "Woche 5: Tauschen wir? – echter Tausch mit Arm-Waage, Ja/Nein/Ich überleg noch/Zurück; Drohen ist kein Tauschen – Hilfe holen.",
+          "Woche 6: Kaufen mit einem Tipp? – Waage-Weg mit allen Fragen, Frage-Satz am Kaufen-Knopf, Kassen-Ausweis."
+        ],
+        "helfen": [
+          "So erinnern Sie: mit der Arm-Waage statt vieler Worte – kurz innehalten, Arme seitlich, dann entscheidet das Kind selbst.",
+          "Sprechen Sie über Geld nur an Beispielen aus Schule und Maison relais (Gemeinschaftskasse, Pausentausch), nie über Taschengeld oder Besitz der Familie.",
+          "Erzählt ein Kind, dass ihm etwas weggenommen wird oder jemand droht: ruhig danken („Gut, dass du’s sagst. Du bist nicht schuld.“), selbst handeln, Schulkomitee-Präsident·in informieren."
+        ],
+        "beobachten": [
+          "sagt bei einem Wunsch von sich aus „Brauchen oder wünschen?“ oder „Jetzt oder später?“",
+          "tauscht nur mit eigenem Ja und sagt auch „Nein, danke“",
+          "fragt einen Erwachsenen, bevor es auf einem fremden Gerät etwas kauft"
+        ],
+        "nicht": "Nicht nach Taschengeld, Besitz oder Geld zu Hause fragen, Warten nicht als Test oder Charakterfrage werten und Kinder nie Drohen oder Wegnehmen nachspielen lassen."
+      },
+      "fr": {
+        "ziel": "L’enfant sait ce qu’est l’argent (reconnaître pièces et billets, compter jusqu’à 20 €), distingue besoin et envie, peut attendre pour quelque chose de plus grand avec une astuce si-alors, reconnaît que la pub veut qu’il veuille, n’échange qu’avec son propre oui et cherche de l’aide en cas de menace ou de vol – et demande à un grand avant chaque bouton « Acheter » sur le téléphone d’un autre.",
+        "stichwort": "La balance des bras et ses six questions : Ça vaut quoi ? Besoin ? Attendre ? L’argent va où ? Deux oui ? D’abord demander ! « Je pèse, puis je paie. »",
+        "sitzungen": [
+          "Semaine 1 : C’est de l’argent, ça ? – chaussette mystère, balance des bras (centimes contre euro), pièce étrangère comparée aux vraies pièces.",
+          "Semaine 2 : On en a besoin ? – chemin des envies au sol : besoin, ça dépend, envie – avec des raisons.",
+          "Semaine 3 : Une bille maintenant – ou trois ? – essai d’attente, astuces, sa propre phrase si-alors.",
+          "Semaine 4 : Donne-moi envie ! – trouver les astuces de l’affiche de Gaspar, faire sa propre pub, « L’argent va où ? ».",
+          "Semaine 5 : On échange ? – vrai échange avec la balance, oui/non/je réfléchis/reprendre ; menacer n’est pas échanger – chercher de l’aide.",
+          "Semaine 6 : Acheter d’un seul doigt ? – chemin de la balance avec toutes les questions, phrase au bouton, carte de gardien·ne."
+        ],
+        "helfen": [
+          "Pour rappeler : la balance des bras plutôt que beaucoup de mots – s’arrêter un instant, bras sur les côtés, puis l’enfant décide lui-même.",
+          "Parlez d’argent seulement avec des exemples de l’école et de la maison relais (caisse commune, échanges à la récré), jamais d’argent de poche ou de ce que possède la famille.",
+          "Si un enfant raconte qu’on lui prend quelque chose ou qu’on le menace : remercier calmement (« C’est bien que tu me le dises. Ce n’est pas ta faute. »), agir vous-même, informer le ou la président·e du comité d’école."
+        ],
+        "beobachten": [
+          "dit de lui-même devant une envie « Besoin ou envie ? » ou « Maintenant ou plus tard ? »",
+          "n’échange qu’avec son propre oui et dit aussi « Non, merci »",
+          "demande à un adulte avant d’acheter quelque chose sur l’appareil d’un autre"
+        ],
+        "nicht": "Ne pas demander l’argent de poche, les biens ou l’argent à la maison, ne pas juger l’attente comme un test ou un trait de caractère, et ne jamais faire rejouer une menace ou un vol par les enfants."
+      }
+    }
   }
 }
