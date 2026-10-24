@@ -9933,5 +9933,96 @@
         "nicht": "Ne jamais exposer un enfant parce qu’il a cru ou répété quelque chose, ne jamais lire ni montrer une chaîne qui menace et ne pas demander qui a un téléphone à la maison."
       }
     }
+  },
+  "kurs-mitbestimmen-4-6": {
+    "name": {
+      "de": "Die große Kiste",
+      "fr": "La grande boîte"
+    },
+    "welt": {
+      "de": "In der Maison relais in Frisange (Fréiseng), ganz im Süden an der Grenze zu Frankreich, steht eine riesige leere Kiste; Erzieherin Viviane hat einen Zettel drangehängt: „Was soll sie werden? Das entscheiden die Kinder.“ Wanda (5; Lëtzebuergesch, Französisch) ruft „C’est moi qui décide!“ und will eine Rakete, Vítor (6; Portugiesisch, Lëtzebuergesch) will einen Bus „bis nach Frankreich“ und kann schwer damit leben, wenn seine Idee nicht gewählt wird, und Umut (4; Türkisch, Französisch) zeigt lieber, als er redet: Seine Ideen macht er mit dem ganzen Körper vor. Das Kind hilft von Treffen zu Treffen als Kisten-Expertin oder Kisten-Experte: Es findet Umuts stille Idee, bringt mit dem Redestein Tuff Ruhe ins Durcheinander, entdeckt, woher die fremden Steine kommen, holt Vítor zurück und sieht Umuts Nein – auch ohne das Wort. Am Ende leitet es selbst die Kistenkonferenz – und das Kistenfest findet statt.",
+      "fr": "Dans la maison relais de Frisange (Fréiseng), tout au sud, à la frontière française, il y a une immense boîte vide ; l’éducatrice Viviane y a accroché une étiquette : « Qu’est-ce qu’elle va devenir ? C’est aux enfants de décider. » Wanda (5 ans ; luxembourgeois, français) crie « C’est moi qui décide ! » et veut une fusée, Vítor (6 ans ; portugais, luxembourgeois) veut un bus « jusqu’en France » et supporte mal que son idée ne soit pas choisie, et Umut (4 ans ; turc, français) préfère montrer que parler : ses idées, il les mime avec tout son corps. De séance en séance, l’enfant aide comme expert de la boîte : il trouve l’idée muette d’Umut, ramène le calme avec Tuff, la pierre de parole, découvre d’où viennent des pierres étrangères, fait revenir Vítor et voit le non d’Umut – même sans le mot. À la fin, c’est lui qui mène la conférence de la boîte – et la fête a lieu."
+    },
+    "de": {
+      "warum": "Mitreden ist ein Kinderrecht: Nach Artikel 12 der UN-Kinderrechtskonvention darf jedes Kind, das sich eine Meinung bilden kann, sie in allen Angelegenheiten sagen, die es betreffen, und sie wird seinem Alter und seiner Reife entsprechend berücksichtigt – das gilt auch für Vierjährige, die ihre Meinung eher zeigen als sagen. In Luxemburg ist „Werteorientierung, Partizipation und Demokratie“ ein Handlungsfeld des Nationalen Rahmenplans zur non-formalen Bildung (MENJE & SNJ, 2021), also Auftrag jeder Maison relais. Der Kurs folgt dem Praxiskonzept „Die Kinderstube der Demokratie“ (Hansen, Knauer & Sturzenhecker): Kinder lernen Demokratie, indem sie sie erleben – in Kinderkonferenzen mit klaren Regeln –, und Erwachsene klären vorher ehrlich, was Kinder entscheiden und was nicht. Die Teilfertigkeiten (Idee sagen, ausreden lassen, fair wählen, nicht gewählt werden und einen Weg finden, Nein sagen) werden wie Fertigkeiten geübt: erklären, vormachen, üben, Rückmeldung, übertragen (Behavioral Skills Training; SAFE-Kriterien nach Durlak et al., 2011); Sitzung 5 überträgt in den Alltag, Sitzung 6 setzt eine echte Entscheidung sofort um. Für Vier- bis Sechsjährige läuft alles über Körper, Bilder und echte Steine; gewählt wird ohne Zählen – über Eins-zu-eins-Zuordnung und Steinreihen (Gelman & Gallistel, 1978). Mehrsprachigkeit ist eine Stärke: Umuts „Hayir“ wird in der Kiste ein Wort für alle.",
+      "achtung": [
+        "Nicht alles ist abstimmbar – und das sagen Sie ehrlich: Sicherheit, Gesundheit und Schutz vor Verletzung entscheiden Erwachsene (Straße, Feuer, Medizin, Anschnallen, wer abholt). Die Frage „Warum?“ ist willkommen und wird kurz und echt beantwortet.",
+        "Keine Scheinbeteiligung: Lassen Sie nur wählen, was danach wirklich gilt. Wird etwas Gewähltes doch nicht umgesetzt, sagen Sie offen, warum.",
+        "Nicht gewählt werden nie beschämen: Enttäuschung darf sein, niemand wird ausgelacht oder vorgeführt. Die Ballon-Luft ist ein Angebot, keine Pflicht; die eigene Probe in Sitzung 4 ist freiwillig.",
+        "Ein Nein zum eigenen Körper (umarmt, gekitzelt, festgehalten werden) gilt immer – auch gegenüber Erwachsenen und auch im Spiel.",
+        "Ziehen, Dazwischenrufen und Weglaufen spielt nur die Fachkraft mit den Papierkindern; kein Kind spielt das Kind, das gezogen wird. Eigene Erlebnisse nie abfragen.",
+        "Erzählt ein Kind, dass jemand ihm wehtut oder es zu etwas zwingt, oder sagt es „Ich will tot sein“: Krisenkarte – ruhig „Wie meinst du das?“, zuhören, nicht allein lassen, heute Leitung informieren (Eltern auch, außer der Verdacht betrifft die Familie); bei Gefahr 112.",
+        "Mehrsprachigkeit: Jede Sprache des Kindes ist willkommen; Wörter wie „Hayir“ oder „Neen“ gelten in der Kiste für alle. Kein Kind wird wegen seiner Aussprache verbessert."
+      ]
+    },
+    "fr": {
+      "warum": "Donner son avis est un droit de l’enfant : selon l’article 12 de la Convention relative aux droits de l’enfant, tout enfant capable de se forger une opinion peut l’exprimer sur toute question qui le concerne, et elle est prise en compte selon son âge et sa maturité – y compris à quatre ans, quand on montre son avis plus qu’on ne le dit. Au Luxembourg, « Valeurs, participation et démocratie » (« Werteorientierung, Partizipation und Demokratie ») est un champ d’action du cadre de référence national sur l’éducation non formelle (MENJE & SNJ, 2021), donc une mission de chaque maison relais. Le parcours suit le concept pratique « Die Kinderstube der Demokratie » (Hansen, Knauer & Sturzenhecker) : les enfants apprennent la démocratie en la vivant – dans des conférences d’enfants aux règles claires –, et les adultes clarifient d’abord honnêtement ce que les enfants décident et ce qu’ils ne décident pas. Les sous-compétences (dire son idée, laisser finir, choisir équitablement, ne pas être choisi et trouver son chemin, dire non) s’exercent comme des compétences : expliquer, montrer, s’exercer, retour, transférer (Behavioral Skills Training ; critères SAFE, Durlak et al., 2011) ; la séance 5 transfère au quotidien, la séance 6 réalise tout de suite une vraie décision. Pour les 4–6 ans, tout passe par le corps, les images et de vraies pierres ; on choisit sans compter – par correspondance terme à terme et rangées de pierres (Gelman & Gallistel, 1978). Le plurilinguisme est une force : le « Hayir » d’Umut devient dans la boîte un mot pour tous.",
+      "achtung": [
+        "Tout n’est pas soumis au choix – et vous le dites honnêtement : la sécurité, la santé et la protection contre les blessures relèvent des adultes (rue, feu, médicament, ceinture, qui vient chercher). La question « Pourquoi ? » est bienvenue et reçoit une réponse courte et vraie.",
+        "Pas de fausse participation : ne faites choisir que ce qui s’appliquera vraiment. Si un choix n’est finalement pas réalisé, dites ouvertement pourquoi.",
+        "Ne jamais humilier celui qui n’est pas choisi : la déception est permise, personne n’est moqué ni exposé. L’air du ballon est une offre, pas une obligation ; l’essai personnel de la séance 4 est libre.",
+        "Un non à son propre corps (être pris dans les bras, chatouillé, tenu) vaut toujours – aussi face aux adultes et aussi dans le jeu.",
+        "Tirer, couper la parole et partir en boudant : seul l’adulte le joue avec les enfants en papier ; aucun enfant ne joue celui qu’on tire. Ne jamais questionner le vécu personnel.",
+        "Si un enfant raconte que quelqu’un lui fait mal ou le force, ou dit « Je veux mourir » : carte de crise – calmement « Qu’est-ce que tu veux dire ? », écouter, ne pas le laisser seul, prévenir la direction aujourd’hui (les parents aussi, sauf si le soupçon vise la famille) ; en cas de danger, 112.",
+        "Plurilinguisme : chaque langue de l’enfant est bienvenue ; des mots comme « Hayir » ou « Neen » valent pour tous dans la boîte. On ne corrige jamais la prononciation d’un enfant."
+      ]
+    },
+    "quellen": [
+      "Vereinte Nationen (1989): Übereinkommen über die Rechte des Kindes, Artikel 12 (Berücksichtigung des Kindeswillens).",
+      "MENJE & Service national de la jeunesse (2021): Nationaler Rahmenplan zur non-formalen Bildung im Kindes- und Jugendalter. Luxemburg – Handlungsfeld „Werteorientierung, Partizipation und Demokratie“.",
+      "Hansen, R., Knauer, R. & Sturzenhecker, B.: Die Kinderstube der Demokratie. Partizipation in Kindertageseinrichtungen (Praxiskonzept, Institut für Partizipation und Bildung, Kiel; Text online bei der Universität Hamburg).",
+      "Hansen, R., Knauer, R. & Sturzenhecker, B. (2011): Partizipation in Kindertageseinrichtungen. So gelingt Demokratiebildung mit Kindern! Weimar/Berlin: verlag das netz.",
+      "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011): The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432.",
+      "Miltenberger, R. G. (2012): Behavior Modification: Principles and Procedures (5th ed.). Belmont, CA: Wadsworth.",
+      "Gelman, R. & Gallistel, C. R. (1978): The Child’s Understanding of Number. Cambridge, MA: Harvard University Press."
+    ],
+    "klasse": {
+      "de": {
+        "ziel": "Das Kind lernt, seine Idee zu sagen (auch mit Bild oder Zeigen), andere ausreden zu lassen, fair zu wählen, mitzumachen, wenn seine Idee nicht gewählt wurde, Nein zu sagen, wo es um es selbst geht – und zu verstehen, was Erwachsene zur Sicherheit entscheiden.",
+        "stichwort": "Wanda, Vítor und Umut mit der großen Kiste in Frisange: der Steinweg – Sagen · Hören · Wählen · Trotzdem · Nein. „Ein Kind – ein Stein.“",
+        "sitzungen": [
+          "Woche 1: Was wird aus der Kiste? Rakete, Bus und Umuts stille Idee mit dem Körper zeigen; die eigene Idee sagen, malen oder zeigen.",
+          "Woche 2: Wer hat Tuff? Durcheinander hören; der Redestein Tuff und das Echo „Du willst …“.",
+          "Woche 3: Wie viele Steine? Fremde Steine entdecken, fair neu wählen: ein Kind – ein Stein; Reihen vergleichen.",
+          "Woche 4: Nicht gewählt – und jetzt? Vítors „Assim não brinco mais!“, die Ballon-Luft und vier Wege – auch Pause.",
+          "Woche 5: Was sagt Umut? „Hayir“ und Nein in vielen Sprachen; drei Plätze: ich, wir, die Großen; wo das Kind im Alltag mitredet. Auftrag (freiwillig): einmal eine Idee sagen.",
+          "Woche 6: Das Kistenfest – das Kind leitet die Kistenkonferenz, das Gewählte wird gleich gemacht; Rückblick über den Steinweg."
+        ],
+        "helfen": [
+          "So beteiligen Sie: Lassen Sie in Spillschoul oder Maison relais nur wählen, was danach gilt, und nehmen Sie auch gezeigte Ideen an – mit Bild, Geste oder in einer anderen Sprache.",
+          "So erinnern Sie: mit einem Redestein und dem Echo („Du willst …“); nach einer Wahl leise: „Nicht gewählt – Ballon-Luft? Was machst du trotzdem?“",
+          "So loben Sie: konkret – „Du hast gewartet, bis er fertig war“, „Du hast mitgebaut, obwohl deine Idee nicht gewählt wurde“, „Du hast Nein gesagt – gut so.“"
+        ],
+        "beobachten": [
+          "sagt oder zeigt eine eigene Idee, auch ohne viele Worte",
+          "lässt andere ausreden und wählt mit genau einer Stimme",
+          "macht weiter mit, wenn seine Idee nicht gewählt wurde; sagt Nein, wenn es um es selbst geht"
+        ],
+        "nicht": "Keine Scheinbeteiligung: Lassen Sie nichts wählen, was danach nicht gilt, und beschämen Sie nie ein Kind, dessen Idee nicht gewählt wurde."
+      },
+      "fr": {
+        "ziel": "L’enfant apprend à dire son idée (aussi avec une image ou un geste), à laisser les autres finir, à choisir équitablement, à participer quand son idée n’est pas choisie, à dire non quand il s’agit de lui – et à comprendre ce que les adultes décident pour la sécurité.",
+        "stichwort": "Wanda, Vítor et Umut et la grande boîte de Frisange : le chemin de cailloux – dire · écouter · choisir · quand même · non. « Un enfant – une pierre. »",
+        "sitzungen": [
+          "Semaine 1 : que va devenir la boîte ? Montrer la fusée, le bus et l’idée muette d’Umut avec le corps ; dire, dessiner ou montrer sa propre idée.",
+          "Semaine 2 : qui a Tuff ? Écouter le brouhaha ; Tuff, la pierre de parole, et l’écho « Tu veux… ».",
+          "Semaine 3 : combien de pierres ? Découvrir des pierres étrangères, rechoisir équitablement : un enfant – une pierre ; comparer les rangées.",
+          "Semaine 4 : pas choisi – et maintenant ? Le « Assim não brinco mais ! » de Vítor, l’air du ballon et quatre chemins – aussi la pause.",
+          "Semaine 5 : que dit Umut ? « Hayir » et non en plusieurs langues ; trois places : moi, nous, les grands ; où l’enfant donne son avis au quotidien. Défi (libre) : dire une fois son idée.",
+          "Semaine 6 : la fête de la boîte – l’enfant mène la conférence, ce qui est choisi se fait tout de suite ; retour sur le chemin de cailloux."
+        ],
+        "helfen": [
+          "Pour faire participer : à l’école ou à la maison relais, ne faites choisir que ce qui s’appliquera, et accueillez aussi les idées montrées – par une image, un geste ou dans une autre langue.",
+          "Pour rappeler : avec une pierre de parole et l’écho (« Tu veux… ») ; après un choix, doucement : « Pas choisi – l’air du ballon ? Que fais-tu quand même ? »",
+          "Pour féliciter : concrètement – « Tu as attendu qu’il ait fini », « Tu as construit avec les autres, même si ton idée n’a pas été choisie », « Tu as dit non – c’est bien. »"
+        ],
+        "beobachten": [
+          "dit ou montre une idée à lui, même avec peu de mots",
+          "laisse les autres finir et choisit avec une seule voix",
+          "continue à participer quand son idée n’est pas choisie ; dit non quand il s’agit de lui"
+        ],
+        "nicht": "Pas de fausse participation : ne faites rien choisir qui ne s’appliquera pas, et n’humiliez jamais un enfant dont l’idée n’a pas été choisie."
+      }
+    }
   }
 }
