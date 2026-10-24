@@ -10226,5 +10226,100 @@
         "nicht": "Ne jamais questionner un enfant sur les repas, le sommeil ou les soins à la maison, ni lui faire honte pour les toilettes, la faim ou la fatigue – les signes persistants passent par la direction et la protection de l’enfance."
       }
     }
+  },
+  "kurs-geld-4-6": {
+    "name": {
+      "de": "Der Taler-Laden",
+      "fr": "On joue à la marchande"
+    },
+    "welt": {
+      "de": "Reckange-sur-Mess (Lëtzebuergesch: Recken op der Mess), ein Dorf im Südwesten an der Mess: Donnerstagnachmittags – da ist im Fondamental keine Schule – baut Erzieherin Liliane (Lëtzebuergesch, Deutsch, Französisch) in der Maison relais den Taler-Laden auf; eine Taschentuch-Schachtel ist die Kasse, und alle bekommen gleich viele Papier-Taler. Lucia (5, Spillschoul; Italienisch, Französisch, Lëtzebuergesch) sitzt am liebsten an der Kasse, sammelt glänzende Stern-Bildchen und ruft „Che peccato!“, wenn etwas schiefgeht. Idris (6, Spillschoul; Arabisch und Französisch, lernt Lëtzebuergesch) gibt seine Taler am liebsten sofort aus – bis er im Prospekt den Leuchtball sieht: „Das will ich!“ Fünf Taler kostet er, und er kommt erst zum Laden-Fest. Von Donnerstag zu Donnerstag hilft das Kind als Laden-Expertin oder -Experte – wohin sind die Taler, was suche ich aus, wie halte ich Warten aus, stimmt der Prospekt, ist der Tausch fair? – und klebt jedes Mal einen großen Kassen-Taler an die Kasse: Kostet Taler · Aussuchen · Warten mit Lied · Echt so? · Handschlag · Zusammen.",
+      "fr": "Reckange-sur-Mess (en luxembourgeois : Recken op der Mess), un village du sud-ouest au bord de la Mess : le jeudi après-midi – pas d’école au fondamental –, l’éducatrice Liliane (luxembourgeois, allemand, français) installe la boutique à la maison relais ; une boîte à mouchoirs sert de caisse, et tous reçoivent autant de sous en papier. Lucia (5 ans, Spillschoul ; italien, français, luxembourgeois) adore tenir la caisse, collectionne des images d’étoiles brillantes et s’écrie « Che peccato ! » quand quelque chose rate. Idris (6 ans, Spillschoul ; arabe et français, il apprend le luxembourgeois) dépense ses sous tout de suite – jusqu’au jour où il voit la balle lumineuse dans le prospectus : « Je la veux ! » Elle coûte cinq sous et n’arrive qu’à la fête de la boutique. De jeudi en jeudi, l’enfant aide en expert – où sont partis les sous, qu’est-ce que je choisis, comment supporter l’attente, le prospectus dit-il vrai, l’échange est-il juste ? – et colle chaque fois un grand sou sur la caisse : Ça coûte · Je choisis · J’attends en chantant · C’est vrai ? · Tope là · Ensemble."
+    },
+    "de": {
+      "warum": "Dramaturgie: im Spiel erleben – benennen – üben – übertragen. Vier- bis Sechsjährige lernen über Geld im Spiel und am Vorbild; ein Übersichtsbericht für den britischen Money Advice Service fasst zusammen, dass Grundhaltungen zu Geld früh entstehen, viele bis etwa sieben Jahre (Whitebread & Bingham, 2013). Darum ist jede Sitzung Kaufladen-Spiel mit echten Dingen und Papier-Talern, ohne Rechen-Prüfung. Warten fällt mit Ablenkung leichter (Mischel, Shoda & Rodriguez, 1989) und wenn Große verlässlich sind (Kidd, Palmeri & Aslin, 2013); dass Warten-Können im Vorschulalter spätere Leistungen vorhersagt, ist dagegen schwächer als lange gedacht – die Zusammenhänge sind klein (Watts, Duncan & Quan, 2018). Der Kurs verspricht darum nichts und testet nicht. Werbung erkennen Kinder in diesem Alter nur ansatzweise – am Aussehen; dass sie verkaufen will, verstehen die meisten erst mit sieben, acht Jahren (John, 1999). Geübt wird also nur ein Anfang: „Echt so?“ und ein echter Versuch. Fairness beim Teilen wird zwischen drei und acht Jahren wichtiger (Fehr, Bernhard & Rockenbach, 2008); Teilen aus freier Wahl wirkt nach, Teilen ohne Wahl weniger (Chernyak & Kushnir, 2013) – Teilen bleibt hier immer eine Wahl. Enttäuschung wird benannt und begleitet statt weggeredet (Gottman, Katz & Hooven, 1996). Fertigkeiten (Nein danke, Handschlag, Hilfe holen) folgen dem Behavioral Skills Training: vormachen, üben, Rückmeldung, übertragen (Miltenberger, 2012; SAFE nach Durlak et al., 2011). Jede Sitzung beginnt mit einer Spur oder Frage, die das Kind selbst löst; die Fachkraft spricht höchstens zwei Stimmen.",
+      "achtung": [
+        "Ohne Scham: Nie nach Geld, Taschengeld, Spielzeug oder Geschenken zu Hause fragen, nichts vergleichen. Im Taler-Laden bekommen alle gleich viele Taler. Für „Ich habe keine Taler“ gibt es den Satz „Zusammen spielen geht immer“ – ohne Mitleid-Theater.",
+        "Erzählt ein Kind, dass Essen, Kleidung oder Geld fehlen: danken, nicht nachfragen, nichts versprechen; mit der Leitung den Weg klären (Office social – für Reckange: Office social commun Mamer, Info-Social 8002 98 98, Elterentelefon 8002 4444). Das ist ein Weg für die Fachkraft, kein Thema für das Kind.",
+        "Keine echten Münzen und keine Knöpfe (Verschluckgefahr) – nur große Papier-Taler. Kein Essen als Warte-Belohnung.",
+        "Teilen und Tauschen nie erzwingen; ein Nein gilt. Wegnehmen wird nie gespielt, nur erzählt; Hilfe holen ist immer richtig. Nimmt ein Kind immer wieder weg oder droht („Gib her, sonst …“): ruhig stoppen, später mit der Leitung klären, kein Verhör vor anderen.",
+        "Ehrlich bleiben: Werbung erkennen 4–6-Jährige nur ansatzweise, und Warten-Können ist kein Maß für das Kind. Wünsche nie schlechtmachen – den Leuchtball zu wollen ist in Ordnung.",
+        "Keine Rechen-Prüfung, keine Quiz-Formate, kein Durchfallen beim Warten: Wer „Stopp“ sagt, darf das Paket öffnen. Pause ist mit dem Kissen-Bild immer möglich.",
+        "Sagt ein Kind „Ich will tot sein“: ruhig „Wie meinst du das?“, zuhören, nicht allein lassen, heute Leitung und Eltern, bei Gefahr 112 (Krisenkarte in jeder Sitzung)."
+      ]
+    },
+    "fr": {
+      "warum": "Dramaturgie : vivre dans le jeu – nommer – s’entraîner – transférer. Entre quatre et six ans, l’argent s’apprend par le jeu et l’exemple ; un rapport de synthèse pour le Money Advice Service britannique résume que les attitudes face à l’argent se forment tôt, beaucoup vers sept ans (Whitebread & Bingham, 2013). Chaque séance est donc un jeu de marchande avec de vrais objets et des sous en papier, sans contrôle de calcul. Attendre est plus facile en se distrayant (Mischel, Shoda & Rodriguez, 1989) et quand les grands sont fiables (Kidd, Palmeri & Aslin, 2013) ; que savoir attendre avant l’école prédise la réussite plus tard est en revanche moins solide qu’on l’a longtemps cru – les liens sont faibles (Watts, Duncan & Quan, 2018). Le cours ne promet donc rien et ne teste pas. À cet âge, les enfants reconnaissent la publicité seulement en partie – à son aspect ; qu’elle veut vendre, la plupart le comprennent vers sept, huit ans (John, 1999). On entraîne donc un début : « C’est vrai ? » et un vrai essai. La justice dans l’échange et le partage compte de plus en plus entre trois et huit ans (Fehr, Bernhard & Rockenbach, 2008) ; partager par libre choix laisse une trace, partager sans choix moins (Chernyak & Kushnir, 2013) – ici, partager reste toujours un choix. La déception est nommée et accompagnée au lieu d’être minimisée (Gottman, Katz & Hooven, 1996). Les savoir-faire (non merci, tope là, chercher de l’aide) suivent le Behavioral Skills Training : montrer, essayer, retour, transfert (Miltenberger, 2012 ; SAFE selon Durlak et al., 2011). Chaque séance commence par une trace ou une question que l’enfant résout lui-même ; l’adulte fait au plus deux voix.",
+      "achtung": [
+        "Sans honte : ne jamais demander l’argent, l’argent de poche, les jouets ou les cadeaux de l’enfant, ne rien comparer. À la boutique, tous reçoivent autant de sous. Pour « Je n’ai pas de sous », il y a la phrase « Jouer ensemble, c’est toujours possible » – sans théâtre de pitié.",
+        "Si un enfant raconte qu’il manque à manger, des habits ou de l’argent : remercier, ne pas questionner, ne rien promettre ; voir la suite avec la direction (pour Reckange : Office social commun Mamer, Info-Social 8002 98 98, Elterentelefon 8002 4444). C’est une piste pour l’adulte, pas un sujet pour l’enfant.",
+        "Pas de vraies pièces ni de boutons (risque d’avaler) – seulement de grands sous en papier. Jamais de nourriture comme récompense d’attente.",
+        "Ne jamais forcer à partager ou à échanger ; un non compte. « Prendre » n’est jamais joué, seulement raconté ; chercher de l’aide est toujours juste. Si un enfant prend sans cesse ou menace (« Donne, sinon… ») : arrêter calmement, voir plus tard avec la direction, pas d’interrogatoire devant les autres.",
+        "Rester honnête : à 4–6 ans, on reconnaît la publicité seulement en partie, et savoir attendre ne mesure pas l’enfant. Ne jamais dénigrer les envies – vouloir la balle lumineuse, c’est permis.",
+        "Pas de contrôle de calcul, pas de quiz, pas d’échec dans l’attente : qui dit « stop » peut ouvrir le paquet. La pause est toujours possible avec l’image du coussin.",
+        "Si un enfant dit « Je veux mourir » : calme, « Qu’est-ce que tu veux dire ? », écouter, ne pas le laisser seul, aujourd’hui la direction et les parents, en cas de danger 112 (carte de crise à chaque séance)."
+      ]
+    },
+    "quellen": [
+      "Whitebread, D. & Bingham, S. (2013): Habit Formation and Learning in Young Children. London: Money Advice Service.",
+      "Watts, T. W., Duncan, G. J. & Quan, H. (2018): Revisiting the Marshmallow Test: A Conceptual Replication Investigating Links Between Early Delay of Gratification and Later Outcomes. Psychological Science, 29(7), 1159–1177.",
+      "Mischel, W., Shoda, Y. & Rodriguez, M. L. (1989): Delay of gratification in children. Science, 244(4907), 933–938.",
+      "Kidd, C., Palmeri, H. & Aslin, R. N. (2013): Rational snacking: Young children’s decision-making on the marshmallow task is moderated by beliefs about environmental reliability. Cognition, 126(1), 109–114.",
+      "John, D. R. (1999): Consumer socialization of children: A retrospective look at twenty-five years of research. Journal of Consumer Research, 26(3), 183–213.",
+      "Fehr, E., Bernhard, H. & Rockenbach, B. (2008): Egalitarianism in young children. Nature, 454(7208), 1079–1083.",
+      "Chernyak, N. & Kushnir, T. (2013): Giving preschoolers choice increases sharing behavior. Psychological Science, 24(10), 1971–1979.",
+      "Gottman, J. M., Katz, L. F. & Hooven, C. (1996): Parental meta-emotion philosophy and the emotional life of families. Journal of Family Psychology, 10(3), 243–268.",
+      "Miltenberger, R. G. (2012): Behavior Modification: Principles and Procedures (5. Aufl.). Belmont: Wadsworth.",
+      "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011): The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432.",
+      "Ryan, R. M. & Deci, E. L. (2000): Self-determination theory and the facilitation of intrinsic motivation, social development, and well-being. American Psychologist, 55(1), 68–78."
+    ],
+    "klasse": {
+      "de": {
+        "ziel": "Das Kind erlebt im Kaufladen-Spiel, dass Dinge Taler kosten und gezahlte Taler weg sind, sucht aus, wenn nicht alles geht, und sagt „schade“, ohne zu toben, wartet mit einem Warte-Trick auf etwas Schönes, fragt beim Prospekt „Echt so?“, tauscht nur, wenn beide wollen, sagt „Nein danke“ und teilt, wenn es mag.",
+        "stichwort": "Idris und Lucia im Taler-Laden der Maison relais in Reckange-sur-Mess: die Taler-Kasse – Kostet Taler · Aussuchen · Warten mit Lied · Echt so? · Handschlag · Zusammen. „Was hilft Idris?“",
+        "sitzungen": [
+          "Woche 1: Wo sind Idris’ Taler? Spuren in der Kasse; selbst kaufen, Taler auf dem Handrücken. „Ich zahle mit Talern – dann sind sie weg.“",
+          "Woche 2: Drei Taler, viele Wünsche. Taler auf die Wünsche legen, aussuchen, Schade-Seufzer, eine Hilfe danach wählen.",
+          "Woche 3: Das Paket von Liliane. Warte-Tricks (weggucken, kneten, singen), ein Lied lang warten, dann öffnen. Wenn du magst: beim Warten das Warte-Lied singen.",
+          "Woche 4: Der Leuchtball im Prospekt. Prospekt-Bild absuchen, Ball-Versuch, einkreisen, was flunkert: „Echt so?“",
+          "Woche 5: Lucias Stern-Bildchen. Tauschen nur, wenn beide wollen; Nein danke sagen, auch beim zweiten Fragen.",
+          "Woche 6: Das Laden-Fest. Alle Kassen-Taler mit Bewegungen, mit Idris entscheiden, zusammen mit Lucia, die keine Taler mehr hat; Urkunde „Laden-Profi“."
+        ],
+        "helfen": [
+          "Beim Kaufladen-Spiel oder beim Warten die Sätze des Kurses nutzen: „Alles geht nicht – ich suche aus“, „Warten ist schwer – sing dein Warte-Lied“, „Echt so?“.",
+          "Enttäuschung ruhig benennen („Das ist schade“), kurz mitfühlen und eine Wahl anbieten, was jetzt hilft – nicht wegreden, nicht bestrafen.",
+          "Bei Tausch-Streit fragen: „Wollen beide? Dann Handschlag.“ Teilen nie erzwingen, Wegnehmen ruhig stoppen und Hilfe anbieten."
+        ],
+        "beobachten": [
+          "legt Wünsche zurück und sagt „schade“, ohne zu toben",
+          "wartet mit einem eigenen Trick, zum Beispiel singen",
+          "tauscht nur, wenn beide wollen, und sagt „Nein danke“"
+        ],
+        "nicht": "Kein Kind nach Geld, Spielzeug oder Geschenken zu Hause fragen oder vergleichen – und Teilen nie erzwingen."
+      },
+      "fr": {
+        "ziel": "Dans le jeu de la marchande, l’enfant vit que les choses coûtent des sous et que les sous donnés sont partis, choisit quand tout n’est pas possible et dit « dommage » sans exploser, attend quelque chose d’agréable avec une astuce, demande « C’est vrai ? » devant un prospectus, échange seulement si les deux veulent, dit « non merci » et partage s’il le veut.",
+        "stichwort": "Idris et Lucia à la boutique de la maison relais de Reckange-sur-Mess : la caisse – Ça coûte · Je choisis · J’attends en chantant · C’est vrai ? · Tope là · Ensemble. « Qu’est-ce qui aide Idris ? »",
+        "sitzungen": [
+          "Semaine 1 : Où sont les sous d’Idris ? Traces dans la caisse ; acheter soi-même, le sou sur le dos de la main. « Je paie avec mes sous – après, ils sont partis. »",
+          "Semaine 2 : Trois sous, plein d’envies. Poser les sous sur les envies, choisir, le soupir « dommage », choisir une aide.",
+          "Semaine 3 : Le paquet de Liliane. Astuces pour attendre (regarder ailleurs, malaxer, chanter), attendre une chanson, puis ouvrir. Si tu veux : chanter la chanson d’attente.",
+          "Semaine 4 : La balle lumineuse du prospectus. Fouiller l’image, essai du ballon, entourer ce qui exagère : « C’est vrai ? »",
+          "Semaine 5 : Les images d’étoiles de Lucia. Échanger seulement si les deux veulent ; dire non merci, même quand on redemande.",
+          "Semaine 6 : La fête de la boutique. Tous les sous avec leurs gestes, décider avec Idris, ensemble avec Lucia qui n’a plus de sous ; diplôme « Pro de la boutique »."
+        ],
+        "helfen": [
+          "En jouant à la marchande ou en attendant, reprendre les phrases du cours : « Tout n’est pas possible – je choisis », « Attendre, c’est dur – chante ta chanson », « C’est vrai ? ».",
+          "Nommer calmement la déception (« C’est dommage »), compatir un instant et proposer un choix de ce qui aide – sans minimiser, sans punir.",
+          "Dans une dispute d’échange, demander : « Les deux veulent ? Alors, tope là. » Ne jamais forcer à partager, arrêter calmement quand on prend et proposer de l’aide."
+        ],
+        "beobachten": [
+          "repose une envie et dit « dommage » sans exploser",
+          "attend avec sa propre astuce, par exemple en chantant",
+          "échange seulement quand les deux veulent et dit « non merci »"
+        ],
+        "nicht": "Ne jamais demander à un enfant son argent, ses jouets ou ses cadeaux, ni comparer – et ne jamais forcer à partager."
+      }
+    }
   }
 }
