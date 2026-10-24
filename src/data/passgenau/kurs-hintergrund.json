@@ -9830,5 +9830,108 @@
         "nicht": "Ne pas demander l’argent de poche, les biens ou l’argent à la maison, ne pas juger l’attente comme un test ou un trait de caractère, et ne jamais faire rejouer une menace ou un vol par les enfants."
       }
     }
+  },
+  "kurs-fakenews-7-9": {
+    "name": {
+      "de": "Hafen-Check: Stimmt das?",
+      "fr": "Contrôle au port : c’est vrai, ça ?"
+    },
+    "welt": {
+      "de": "Mertert an der Mosel, kurz bevor die Sauer in sie mündet: Im Hafen werden Schiffe be- und entladen, und die Maison relais neben der Grundschule darf an einem Donnerstagnachmittag auf das Frachtschiff Aurora – die Kapitänin hat eingeladen. Cátia (8, Zyklus 3.1; Portugiesisch, Lëtzebuergesch, Französisch) weiß alles als Erste: „Já sei!“; Berk (9, Zyklus 3.2; Türkisch, Deutsch, Lëtzebuergesch, Französisch) zeichnet Schiffe und fragt „Gerçekten mi?“ – wirklich?; Bob (7, Zyklus 2.2; Lëtzebuergesch, Deutsch, Französisch) trägt eine Schiene am Bein, hat kein Handy und fragt gern: „Wien huet dat gesot?“ – wer hat das gesagt? Am Montag flüstert es in der Pause: Die Aurora sei gesunken, der Ausflug falle aus. Die Erzieherin Annick macht das Kind zur Hafenmeisterin oder zum Hafenmeister für Nachrichten: Von Treffen zu Treffen kommt etwas Neues in den Hafen – ein wachsendes Gerücht, ein Foto, ein bunter Werbezettel, eine Kettennachricht für Bob –, und das Kind prüft es selbst mit dem Hafen-Check, bis es am Donnerstag an Bord geht.",
+      "fr": "Mertert, sur la Moselle, juste avant que la Sûre s’y jette : au port, on charge et décharge les bateaux, et la maison relais à côté de l’école fondamentale peut monter un jeudi après-midi sur le cargo Aurora – la capitaine l’a invitée. Cátia (8 ans, cycle 3.1 ; portugais, luxembourgeois, français) sait tout la première : « Já sei ! » ; Berk (9 ans, cycle 3.2 ; turc, allemand, luxembourgeois, français) dessine des bateaux et demande « Gerçekten mi ? » – vraiment ? ; Bob (7 ans, cycle 2.2 ; luxembourgeois, allemand, français) porte une attelle à la jambe, n’a pas de téléphone et demande souvent : « Wien huet dat gesot ? » – qui a dit ça ? Lundi, ça chuchote à la récré : l’Aurora aurait coulé, l’excursion serait annulée. L’éducatrice Annick nomme l’enfant chef du port pour les messages : de rencontre en rencontre, quelque chose de nouveau entre au port – une rumeur qui grandit, une photo, une affiche de pub colorée, une chaîne pour Bob –, et l’enfant le vérifie lui-même avec le contrôle du port, jusqu’à monter à bord le jeudi."
+    },
+    "de": {
+      "warum": "Forschendes Lernen statt Verbote und Merklisten: Das Kind erlebt jeden Mechanismus zuerst selbst – eine Geschichte verändert sich beim Weiterflüstern (Allport & Postman, 1947), eine Spur führt zurück zur Quelle, ein Ausschnitt täuscht das eigene Auge, Werbe-Tricks im eigenen Mund, eine Kette, die man selbst abreißt – und benennt ihn, bevor er einen Teil mit Bewegung und Satz bekommt. Kinder von 7 bis 9 vertrauen Gesagtem und Gesehenem noch leicht; sie lernen gerade, wann man zweifelt (Mills, 2013; Harris et al., 2018), und verstehen schon, dass Sehen zu Wissen führt (Pillow, 1989) – darum die Frage „Woher weißt du das?“. Statt Richtig/Falsch wird nach „weiß ich / weiß ich nicht“ sortiert: Das übt ehrliches Nichtwissen ohne Bloßstellung. „Wer prüft mit?“ ist die kindgerechte Form des seitlichen Prüfens von Profis (Wineburg & McGrew, 2019). Harmlose Vorformen (Quatsch-Kette, Täusch-Szene, selbst Werbung rufen) folgen der Idee des Prebunking; diese ist an Jugendlichen und Erwachsenen untersucht (Roozenbeek & van der Linden, 2019), nicht an Grundschulkindern – sie wird hier vorsichtig übertragen. Jüngere Kinder sehen die Verkaufsabsicht von Werbung oft noch nicht (John, 1999); Tricks zu benennen hilft (Rozendaal et al., 2011). Sitzung 5 endet mit einem Wenn-dann-Plan (wem, wann, welcher Satz), der Handeln im Ernstfall erleichtert (Gollwitzer & Sheeran, 2006).",
+      "achtung": [
+        "Kein Gerät vorausgesetzt: Gerüchte und Kettenbriefe kommen auch mündlich, über Geschwister oder das Handy von Großen. Nie fragen, wer zu Hause ein Handy hat; Eigenes nur freiwillig („bei dir oder bei anderen“).",
+        "Keine Schuld fürs Glauben: Dass Kinder dieses Alters Gesehenes und Gehörtes leicht für wahr halten, ist Entwicklung, kein Fehler. Gelobt wird das Anhalten und Fragen – auch Cátia und Berk sind nicht „schuld“.",
+        "Kein Quiz, kein Richtig/Falsch: Sortiert wird nach „weiß ich / weiß ich nicht“, mehrere Antworten gelten. Die Spuren lösen die Kinder selbst; Lösungen stehen nur auf den Karten „Nur für dich“, nie im Titel oder Minutenplan.",
+        "Drohketten: den Inhalt nie vorlesen, beschreiben oder nachfragen. Angst ernst nehmen („Die Nachricht hat keine Macht. Du bist nicht schuld.“), nichts ansehen oder weiterleiten, heute der Leitung sagen. Die Quatsch-Kette (Bananen) nur mit Lachen; wird ein Kind unruhig, weglassen.",
+        "Kinderschutz: Echte Drohung einer bekannten Person, Erpressung oder Fremde, die Fotos, ein Treffen oder ein Geheimnis wollen, sind kein Kettenbrief. Heute Leitung, Polizei 113; Bilder nie ansehen, speichern oder weiterleiten; BEE SECURE Helpline 8002 1234.",
+        "Krise: Sagt ein Kind „Ich will tot sein“ o. Ä., ruhig fragen „Wie meinst du das?“, klingt es ernst oder unklar: nicht allein lassen, heute Maison-relais-Leitung und Eltern, dann Lehrkraft, Schulkomitee-Präsident·in, I-EBS/ESEB informieren; bei Gefahr 112. Kinder: KJT 116 111 (Mo–Sa), nachts 112/113. Helpline Gewalt 2060 1060 (rund um die Uhr). Für Erwachsene: SOS Détresse 45 45 45 (11–23 h).",
+        "Ansprechpersonen im Fondamental: Lehrkraft, Maison relais, Schulkomitee bzw. Präsident·in, I-EBS, ESEB (Direction de région). Elterentelefon 8002 4444.",
+        "Werbung nicht verteufeln, Medien nicht schlechtreden; keine Vergleiche über Geld, Taschengeld oder Dinge zu Hause.",
+        "Bobs Beinschiene ist beiläufig (S6: breiter Landgang mit Geländer), nie Thema. Flüstern ins Ohr nur, wenn das Kind es mag; bei Hörproblemen deutlich vorlesen."
+      ]
+    },
+    "fr": {
+      "warum": "Apprendre en cherchant plutôt qu’interdire ou faire apprendre des listes : l’enfant vit chaque mécanisme d’abord lui-même – une histoire qui change de bouche à oreille (Allport & Postman, 1947), une piste qui remonte à la source, un cadrage qui trompe son propre œil, des astuces de pub dans sa propre bouche, une chaîne qu’il arrache lui-même – et le nomme avant de recevoir une partie avec un geste et une phrase. Entre 7 et 9 ans, l’enfant croit encore facilement ce qu’on lui dit et ce qu’il voit ; il apprend justement quand douter (Mills, 2013 ; Harris et al., 2018) et comprend déjà que voir permet de savoir (Pillow, 1989) – d’où la question « Comment tu le sais ? ». Au lieu de vrai/faux, on trie en « je sais / je ne sais pas » : cela entraîne à reconnaître qu’on ne sait pas, sans honte. « Qui vérifie avec moi ? » est la forme enfantine de la vérification latérale des pros (Wineburg & McGrew, 2019). Des formes sans danger (chaîne pour rire, scène trompeuse, crier soi-même une pub) suivent l’idée du prebunking ; elle a été étudiée chez des adolescents et des adultes (Roozenbeek & van der Linden, 2019), pas chez des enfants du fondamental – elle est transposée ici avec prudence. Les plus jeunes ne voient souvent pas encore l’intention de vendre (John, 1999) ; nommer les astuces aide (Rozendaal et al., 2011). La 5e rencontre se termine par un plan si-alors (à qui, quand, quelle phrase), qui facilite l’action le moment venu (Gollwitzer & Sheeran, 2006).",
+      "achtung": [
+        "Aucun appareil supposé : rumeurs et chaînes arrivent aussi de bouche à oreille, par les frères et sœurs ou le téléphone des grands. Ne jamais demander qui a un téléphone à la maison ; le vécu perso reste libre (« chez toi ou chez d’autres »).",
+        "Croire n’est pas une faute : qu’à cet âge on prenne facilement pour vrai ce qu’on voit et entend, c’est le développement, pas une erreur. On félicite le fait de s’arrêter et de demander – Cátia et Berk ne sont pas « coupables ».",
+        "Pas de quiz, pas de vrai/faux : on trie en « je sais / je ne sais pas », plusieurs réponses comptent. Les enfants résolvent les pistes eux-mêmes ; les solutions sont seulement sur les cartes « Pour l’adulte », jamais dans le titre ni le minutage.",
+        "Chaînes qui menacent : ne jamais lire, décrire ni demander le contenu. Prendre la peur au sérieux (« Le message n’a aucun pouvoir. Ce n’est pas ta faute. »), ne rien regarder ni transférer, le dire à la direction aujourd’hui. La chaîne pour rire (bananes) seulement en riant ; si l’enfant s’agite, la sauter.",
+        "Protection de l’enfance : une vraie menace d’une personne connue, du chantage ou des inconnus qui veulent des photos, un rendez-vous ou un secret, ce n’est pas une chaîne. Direction aujourd’hui, police 113 ; ne jamais regarder, garder ni transférer les images ; BEE SECURE Helpline 8002 1234.",
+        "Crise : si un enfant dit « Je veux être mort·e » ou autre, demander calmement « Qu’est-ce que tu veux dire ? » ; si c’est sérieux ou flou : ne pas le laisser seul, aujourd’hui direction de la maison relais et parents, puis titulaire, président·e du comité d’école, I-EBS/ESEB ; danger : 112. Enfants : KJT 116 111 (lu–sa), la nuit 112/113. Helpline violence 2060 1060 (24 h/24). Pour les adultes : SOS Détresse 45 45 45 (11–23 h).",
+        "Personnes de référence au fondamental : titulaire, maison relais, comité d’école ou président·e, I-EBS, ESEB (direction de région). Elterentelefon 8002 4444.",
+        "Ne pas diaboliser la pub ni les médias ; aucune comparaison sur l’argent, l’argent de poche ou les objets à la maison.",
+        "L’attelle de Bob est un détail (S6 : large passerelle avec garde-corps), jamais un sujet. Chuchoter à l’oreille seulement si l’enfant aime ça ; s’il entend mal, lire clairement."
+      ]
+    },
+    "quellen": [
+      "Allport, G. W. & Postman, L. (1947): The Psychology of Rumor. New York: Henry Holt.",
+      "Mills, C. M. (2013): Knowing when to doubt: Developing a critical stance when learning from others. Developmental Psychology, 49(3), 404–418.",
+      "Harris, P. L., Koenig, M. A., Corriveau, K. H. & Jaswal, V. K. (2018): Cognitive foundations of learning from testimony. Annual Review of Psychology, 69, 251–273.",
+      "Koenig, M. A., Clément, F. & Harris, P. L. (2004): Trust in testimony: Children’s use of true and false statements. Psychological Science, 15(10), 694–698.",
+      "Pillow, B. H. (1989): Early understanding of perception as a source of knowledge. Journal of Experimental Child Psychology, 47(1), 116–129.",
+      "Wineburg, S. & McGrew, S. (2019): Lateral reading and the nature of expertise: Reading less and learning more when evaluating digital information. Teachers College Record, 121(11), 1–40.",
+      "Roozenbeek, J. & van der Linden, S. (2019): Fake news game confers psychological resistance against online misinformation. Palgrave Communications, 5, 65.",
+      "Lewandowsky, S. & van der Linden, S. (2021): Countering misinformation and fake news through inoculation and prebunking. European Review of Social Psychology, 32(2), 348–384.",
+      "Nightingale, S. J., Wade, K. A. & Watson, D. G. (2017): Can people identify original and manipulated photos of real-world scenes? Cognitive Research: Principles and Implications, 2, 30.",
+      "John, D. R. (1999): Consumer socialization of children: A retrospective look at twenty-five years of research. Journal of Consumer Research, 26(3), 183–213.",
+      "Rozendaal, E., Lapierre, M. A., van Reijmersdal, E. A. & Buijzen, M. (2011): Reconsidering advertising literacy as a defense against advertising effects. Media Psychology, 14(4), 333–354.",
+      "Gollwitzer, P. M. & Sheeran, P. (2006): Implementation intentions and goal achievement: A meta-analysis of effects and processes. Advances in Experimental Social Psychology, 38, 69–119.",
+      "BEE SECURE (2023): Aktivitäten-Mappe für die Grundschule, u. a. Aktivität „Kettenbriefe“ / « Chaînes de lettres ». Luxemburg: SNJ/KJT – https://www.bee-secure.lu",
+      "Polizei Nordrhein-Westfalen, Kreispolizeibehörde Düren (2025): Präventionshinweis Kettenbriefe und Online-Challenges (nicht weiterleiten, Kinder beruhigen, Profile blockieren).",
+      "Kanner-Jugendtelefon (2026): 116 111 für Kinder und Jugendliche, Elterentelefon 8002 4444 – https://www.kjt.lu"
+    ],
+    "klasse": {
+      "de": {
+        "ziel": "Das Kind hält bei Gerüchten, Fotos, Werbung und Kettenbriefen an, fragt „Stimmt das? Woher weißt du das?“, sagt ehrlich „weiß ich nicht“, schickt Drohketten nicht weiter und sagt es einem Großen – ohne sich schuldig zu fühlen.",
+        "stichwort": "Der Hafen-Check: Anker – Woher? – Zweimal schauen – Info oder Kauf? – Keine Macht – Wer prüft mit?",
+        "sitzungen": [
+          "Woche 1: Mit der Aurora ist was … – Flüster-Weg, die Geschichte wächst; Anker werfen, sortieren nach „weiß ich / weiß ich nicht“.",
+          "Woche 2: Wer hat das gesagt? – Spuren als Kette legen, rückwärts zur Quelle; „Woher weißt du das?“",
+          "Woche 3: Ein Foto geht herum – durchs Papier-Rohr schauen, eine Täuschung im Raum suchen; „Was ist außerhalb vom Bild?“",
+          "Woche 4: Der bunte Zettel – selbst Rufer auf dem Markt, Werbe-Tricks erkennen; „Info oder Kauf?“",
+          "Woche 5: Bob ist ganz still – Kettenbriefe haben keine Macht: Kette abreißen, einem Großen sagen, Plan mit Satz.",
+          "Woche 6: An Bord der Aurora – Boote zur Hafen-Crew steuern, alle sechs Bewegungen, Hafenmeister-Diplom."
+        ],
+        "helfen": [
+          "Erinnern Sie mit der Bewegung statt mit vielen Worten: Fäuste nach unten heißt „Anker – stimmt das?“, Hand ans Ohr „Woher weißt du das?“.",
+          "Bringt ein Kind ein Gerücht oder eine Kettennachricht: danken, nicht lachen, nicht ausfragen – „Das hat keine Macht. Gut, dass du es mir sagst.“ – und dann mit der Leitung klären.",
+          "Sagen Sie selbst öfter „Das weiß ich nicht – ich frage nach“: Das ist das beste Vorbild für ehrliches Nichtwissen."
+        ],
+        "beobachten": [
+          "fragt von sich aus „Stimmt das?“ oder „Woher weißt du das?“",
+          "sagt „weiß ich nicht“, ohne sich zu schämen",
+          "kommt mit einer komischen Nachricht oder einem Gerücht zu einem Erwachsenen"
+        ],
+        "nicht": "Kinder nie für Glauben oder Weitersagen bloßstellen, Drohketten nie vorlesen oder als Beispiel zeigen und nicht fragen, wer zu Hause ein Handy hat."
+      },
+      "fr": {
+        "ziel": "L’enfant s’arrête devant les rumeurs, les photos, la pub et les chaînes, demande « C’est vrai ? Comment tu le sais ? », dit honnêtement « je ne sais pas », ne fait pas suivre les chaînes qui menacent et le disent à un adulte – sans se sentir coupable.",
+        "stichwort": "Le contrôle du port : ancre – d’où ? – regarde encore – dire ou vendre ? – aucun pouvoir – qui vérifie ?",
+        "sitzungen": [
+          "Semaine 1 : Il se passe un truc avec l’Aurora… – chemin des chuchotements, l’histoire grandit ; jeter l’ancre, trier en « je sais / je ne sais pas ».",
+          "Semaine 2 : Qui a dit ça ? – poser les traces en chaîne, remonter à reculons jusqu’à la source ; « Comment tu le sais ? »",
+          "Semaine 3 : Une photo circule – regarder par un tube de papier, chercher un piège dans la pièce ; « Qu’y a-t-il autour de l’image ? »",
+          "Semaine 4 : L’affiche colorée – crieur au marché, reconnaître les astuces de la pub ; « Dire ou vendre ? »",
+          "Semaine 5 : Bob ne dit plus rien – les chaînes n’ont aucun pouvoir : arracher la chaîne, le dire à un adulte, plan avec une phrase.",
+          "Semaine 6 : À bord de l’Aurora – conduire les bateaux vers l’équipage, les six gestes, diplôme de chef du port."
+        ],
+        "helfen": [
+          "Pour rappeler, utilisez le geste plutôt que beaucoup de mots : poings vers le bas, c’est « Ancre – c’est vrai ? » ; main à l’oreille, « Comment tu le sais ? ».",
+          "Si un enfant apporte une rumeur ou une chaîne : remercier, ne pas rire, ne pas questionner – « Ça n’a aucun pouvoir. C’est bien que tu me le dises. » – puis voir avec la direction.",
+          "Dites vous-même plus souvent « Je ne sais pas – je vais demander » : c’est le meilleur modèle pour oser ne pas savoir."
+        ],
+        "beobachten": [
+          "demande de lui-même « C’est vrai ? » ou « Comment tu le sais ? »",
+          "dit « je ne sais pas » sans avoir honte",
+          "vient voir un adulte avec un message bizarre ou une rumeur"
+        ],
+        "nicht": "Ne jamais exposer un enfant parce qu’il a cru ou répété quelque chose, ne jamais lire ni montrer une chaîne qui menace et ne pas demander qui a un téléphone à la maison."
+      }
+    }
   }
 }
