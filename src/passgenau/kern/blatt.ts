@@ -532,6 +532,9 @@ const KURS_BILD: Record<string, string> = {
   'deeskalation-4-6': 'motiv:feuerwehrauto', 'selbstfuersorge-7-9': 'motiv:pfote', 'geld-13-16': 'motiv:einkaufstasche', 'medien-7-9': 'motiv:fernseher',
   'fakenews-7-9': 'motiv:schiff', 'geld-7-9': 'motiv:waage', 'zukunft-7-9': 'motiv:werkzeug', 'zukunft-4-6': 'motiv:marienkaefer',
   'medien-4-6': 'motiv:lamm', 'mitbestimmen-4-6': 'motiv:paket',
+  // Welle 10 (24.10.2026)
+  'socialmedia-7-9': 'motiv:glocke', 'selbstfuersorge-4-6': 'motiv:eule', 'geld-4-6': 'motiv:muenzen', 'identitaet-4-6': 'motiv:traube',
+  'comeback-4-6': 'motiv:vogel',
 }
 
 const KERNBLATT_BEREICH: Record<string, Bereich> = {
