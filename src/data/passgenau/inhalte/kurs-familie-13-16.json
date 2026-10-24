@@ -7,7 +7,7 @@
    "titel": "Einzelkurs Mäi Stull"
   },
   "titel": "Stuhl stellen",
-  "text": "Zum Ankommen stellt die Person ihren Stuhl dorthin, wo er heute stehen soll – nah am Tisch, schräg, mit Blick zum Fenster. Die Fachkraft setzt sich passend dazu, ohne zu kommentieren. Dann sagt die Person ein Wort zum Tag in einer Sprache ihrer Wahl – Moien, Bonjour, Cześć, Hey – oder „Pass“. Keine Fragen, nichts erzählen: Das Ritual dauert eine Minute und läuft jedes Mal gleich.",
+  "text": "Zum Ankommen stellt die Person ihren Stuhl dorthin, wo er heute stehen soll – nah am Tisch, schräg, mit Blick zum Fenster. Die Fachkraft setzt sich passend dazu, ohne zu kommentieren. Dann sagt die Person ein Wort zum Tag in einer Sprache ihrer Wahl – Moien, Bonjour, Czesc, Hey – oder „Pass“. Keine Fragen, nichts erzählen: Das Ritual dauert eine Minute und läuft jedes Mal gleich.",
   "sagen": [
    "Stell deinen Stuhl hin, wo er heute stehen soll.",
    "Ein Wort zum Tag – in einer Sprache deiner Wahl. Oder „Pass“."
@@ -49,7 +49,7 @@
   "qualitaet": "geprueft",
   "fr": {
    "titel": "Placer sa chaise",
-   "text": "Pour commencer, la personne place sa chaise là où elle veut aujourd’hui – près de la table, de biais, face à la fenêtre. L’adulte s’installe en conséquence, sans commenter. Puis la personne dit un mot du jour dans la langue de son choix – moien, bonjour, cześć, hey – ou « je passe ». Pas de questions, rien à raconter : le rituel dure une minute et se déroule chaque fois de la même façon.",
+   "text": "Pour commencer, la personne place sa chaise là où elle veut aujourd’hui – près de la table, de biais, face à la fenêtre. L’adulte s’installe en conséquence, sans commenter. Puis la personne dit un mot du jour dans la langue de son choix – moien, bonjour, czesc, hey – ou « je passe ». Pas de questions, rien à raconter : le rituel dure une minute et se déroule chaque fois de la même façon.",
    "sagen": [
     "Place ta chaise là où tu veux aujourd’hui.",
     "Un mot du jour – dans la langue de ton choix. Ou « je passe »."
@@ -397,7 +397,7 @@
     "aufbau": "Spickzettel – Kern 12′: 0′ Hocke – „Zwischen zwei Stühlen sitzen?“ · 2′ Atelier, Außensicht · 3′ Spuren aufdecken – „Neu oder bleibt?“ · 8′ Arjuns „all good“ – „Passt das?“ · 10′ zwei Wortkarten, Beides-Satz. Dann Blatt 5′. Muss: Hocke, Spuren. Kann: Wortkarten. Wird es knapp: nur Arjuns fünf Spuren.",
     "karten": [
      {
-      "titel": "Spuren-Karten (Arjuns Status: „all good 👍“)",
+      "titel": "Spuren-Karten (Arjuns Status: „all good“)",
       "karten": [
        "Arjun: eigenes Zimmer in Junglinster – zum ersten Mal.",
        "Arjun: sein Cricket-Schläger hängt an der Tür, wie in Kirchberg.",
@@ -405,9 +405,9 @@
        "Spiel-Statistik: letztes Duo Arjun + Dev vor 6 Wochen. Davor fast immer abends.",
        "Arjuns Handy-Notiz: „Dev hat sich für Papa entschieden. Okay.“",
        "Gilles: zwei Zimmer, zwei Zahnbürsten – eine Woche Junglinster, eine Woche Grevenmacher.",
-       "Gilles: dieselben Kumpels, derselbe Spruch: „Mir egal 🙃“",
+       "Gilles: dieselben Kumpels, derselbe Spruch: „Mir egal“",
        "Marta: Raphaël wohnt seit dem Sommer mit. Ihr Schreibtisch steht im Flur.",
-       "Marta: Polnisch mit Mama, wie immer: „Cześć, kochanie!“"
+       "Marta: Polnisch mit Mama, wie immer: „Czesc, kochanie!“"
       ]
      },
      {
@@ -485,7 +485,7 @@
     "aufbau": "Aide-mémoire – cœur 12′ : 0′ accroupi – « S’asseoir entre deux chaises ? » · 2′ atelier, regard extérieur · 3′ retourner les traces – « Nouveau ou ça reste ? » · 8′ le « all good » d’Arjun – « Ça colle ? » · 10′ deux cartes-mots, phrase des deux. Puis fiche 5′. Indispensable : accroupi, traces. En option : cartes-mots. Temps court : les cinq traces d’Arjun.",
     "karten": [
      {
-      "titel": "Cartes-traces (statut d’Arjun : « all good 👍 »)",
+      "titel": "Cartes-traces (statut d’Arjun : « all good »)",
       "karten": [
        "Arjun : sa propre chambre à Junglinster – pour la première fois.",
        "Arjun : sa batte de cricket est accrochée à la porte, comme à Kirchberg.",
@@ -493,9 +493,9 @@
        "Stats du jeu : dernier duo Arjun + Dev il y a 6 semaines. Avant, presque tous les soirs.",
        "Note dans le téléphone d’Arjun : « Dev a choisi papa. Ok. »",
        "Gilles : deux chambres, deux brosses à dents – une semaine Junglinster, une semaine Grevenmacher.",
-       "Gilles : les mêmes potes, la même phrase : « M’en fiche 🙃 »",
+       "Gilles : les mêmes potes, la même phrase : « M’en fiche »",
        "Marta : Raphaël vit avec elles depuis l’été. Son bureau est dans le couloir.",
-       "Marta : polonais avec maman, comme toujours : « Cześć, kochanie! »"
+       "Marta : polonais avec maman, comme toujours : « Czesc, kochanie! »"
       ]
      },
      {
@@ -862,7 +862,7 @@
     "aufbau": "Spickzettel – Kern 12′: 0′ Hocke – „Zwischen zwei Stühlen sitzen?“ · 2′ Atelier, Außensicht · 3′ Spuren aufdecken – „Neu oder bleibt?“ · 8′ Arjuns „all good“ – „Passt das?“ · 10′ zwei Wortkarten, Beides-Satz. Dann Blatt 5′. Muss: Hocke, Spuren. Kann: Wortkarten. Wird es knapp: nur Arjuns fünf Spuren.",
     "karten": [
      {
-      "titel": "Spuren-Karten (Arjuns Status: „all good 👍“)",
+      "titel": "Spuren-Karten (Arjuns Status: „all good“)",
       "karten": [
        "Arjun: eigenes Zimmer in Junglinster – zum ersten Mal.",
        "Arjun: sein Cricket-Schläger hängt an der Tür, wie in Kirchberg.",
@@ -870,9 +870,9 @@
        "Spiel-Statistik: letztes Duo Arjun + Dev vor 6 Wochen. Davor fast immer abends.",
        "Arjuns Handy-Notiz: „Dev hat sich für Papa entschieden. Okay.“",
        "Gilles: zwei Zimmer, zwei Zahnbürsten – eine Woche Junglinster, eine Woche Grevenmacher.",
-       "Gilles: dieselben Kumpels, derselbe Spruch: „Mir egal 🙃“",
+       "Gilles: dieselben Kumpels, derselbe Spruch: „Mir egal“",
        "Marta: Raphaël wohnt seit dem Sommer mit. Ihr Schreibtisch steht im Flur.",
-       "Marta: Polnisch mit Mama, wie immer: „Cześć, kochanie!“"
+       "Marta: Polnisch mit Mama, wie immer: „Czesc, kochanie!“"
       ]
      },
      {
@@ -950,7 +950,7 @@
     "aufbau": "Aide-mémoire – cœur 12′ : 0′ accroupi – « S’asseoir entre deux chaises ? » · 2′ atelier, regard extérieur · 3′ retourner les traces – « Nouveau ou ça reste ? » · 8′ le « all good » d’Arjun – « Ça colle ? » · 10′ deux cartes-mots, phrase des deux. Puis fiche 5′. Indispensable : accroupi, traces. En option : cartes-mots. Temps court : les cinq traces d’Arjun.",
     "karten": [
      {
-      "titel": "Cartes-traces (statut d’Arjun : « all good 👍 »)",
+      "titel": "Cartes-traces (statut d’Arjun : « all good »)",
       "karten": [
        "Arjun : sa propre chambre à Junglinster – pour la première fois.",
        "Arjun : sa batte de cricket est accrochée à la porte, comme à Kirchberg.",
@@ -958,9 +958,9 @@
        "Stats du jeu : dernier duo Arjun + Dev il y a 6 semaines. Avant, presque tous les soirs.",
        "Note dans le téléphone d’Arjun : « Dev a choisi papa. Ok. »",
        "Gilles : deux chambres, deux brosses à dents – une semaine Junglinster, une semaine Grevenmacher.",
-       "Gilles : les mêmes potes, la même phrase : « M’en fiche 🙃 »",
+       "Gilles : les mêmes potes, la même phrase : « M’en fiche »",
        "Marta : Raphaël vit avec elles depuis l’été. Son bureau est dans le couloir.",
-       "Marta : polonais avec maman, comme toujours : « Cześć, kochanie! »"
+       "Marta : polonais avec maman, comme toujours : « Czesc, kochanie! »"
       ]
      },
      {
@@ -2509,7 +2509,7 @@
     "Quel point du côté « à moi » – et que fait Gilles avant d’aller chez son père ?"
    ],
    "wennEsKippt": "Sans corde, une écharpe ou une ligne de ruban adhésif ; assis, la ligne est sur la table. Cinq points suffisent.",
-   "kurz": "Corde au sol : à moi ↔ pas à moi · points de Gilles"
+   "kurz": "Corde au sol : à moi – pas à moi · points de Gilles"
   },
   "hilfen": {
    "de": {

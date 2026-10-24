@@ -2,6 +2,7 @@
 // neue Inhalte, Register und Abdeckung. Fehler → Exit 1, Hinweise werden nur gezählt.
 // Aufruf: npm run passgenau:pruefen [-- --alle]   (--alle: alle Treffer statt der ersten 8 je Regel)
 import { existsSync, readFileSync, readdirSync } from 'node:fs'
+import { createRequire } from 'node:module'
 import { join } from 'node:path'
 import type { KatalogEintrag, Plan, Stufe } from '../src/passgenau/typen'
 import type { BausteineDatei } from '../src/passgenau/kern/format'
@@ -417,6 +418,22 @@ regel(23, 'Altersband ohne Überschneidung mit den Stufen', 'fehler', alle.filte
     }
   }
   regel(28, 'Einzelkurs ohne Hintergrund (src/data/passgenau/kurs-hintergrund.json)', 'fehler', t)
+}
+
+// 31 Einzelkurse: nur Zeichen, die alle PDF-Schriften drucken (Kritik kurs-mitbestimmen-4-6, 24.10.2026: „Hayır“ stand als
+// „Hay1 r“ in der Mappe). Fehlen u. a. ≈ ↔ ▸, Emojis, Kyrillisch, ı ş ğ ž š č ć – Umschrift nehmen. „′“ ersetzt druck.ts.
+{
+  const fontkit = createRequire(import.meta.url)('fontkit') as { openSync: (p: string) => { hasGlyphForCodePoint: (c: number) => boolean } }
+  const schriften = ['Inter-Regular.ttf', 'Kinderschrift-Regular.ttf', 'Manrope-Bold.ttf'].map((f) => fontkit.openSync(join(ROOT, 'src/assets/fonts/pdf', f)))
+  const fehlt = (s: string) => [...new Set([...s].filter((c) => c !== '′' && c.codePointAt(0)! >= 0x20 && schriften.some((f) => !f.hasGlyphForCodePoint(c.codePointAt(0)!))))]
+  const t: string[] = []
+  const dateien = readdirSync(join(D, 'inhalte')).filter((f) => f.startsWith('kurs-')).map((f) => [f.replace(/\.json$/, ''), readFileSync(join(D, 'inhalte', f), 'utf8')])
+  const H = JSON.parse(readFileSync(join(D, 'kurs-hintergrund.json'), 'utf8')) as Record<string, unknown>
+  for (const [l, text] of [...dateien, ...Object.entries(H).map(([l, h]) => [`${l} (Hintergrund)`, JSON.stringify(h)])]) {
+    const z = fehlt(text)
+    if (z.length) t.push(`${l}: ${z.join(' ')}`)
+  }
+  regel(31, 'Einzelkurs: Zeichen, die die PDF-Schriften nicht drucken', 'fehler', t)
 }
 
 // Ausgabe

@@ -293,7 +293,7 @@
        "titel": "Zoom"
       },
       {
-       "titel": "Doppel­belichtung"
+       "titel": "Doppelbelichtung"
       },
       {
        "titel": "Stativ"
@@ -800,7 +800,7 @@
        "titel": "Zoom"
       },
       {
-       "titel": "Doppel­belichtung"
+       "titel": "Doppelbelichtung"
       },
       {
        "titel": "Stativ"
@@ -1836,7 +1836,7 @@
        "titel": "Zoom"
       },
       {
-       "titel": "Doppel­belichtung"
+       "titel": "Doppelbelichtung"
       },
       {
        "titel": "Stativ"
@@ -1980,7 +1980,7 @@
    "de": {
     "haken": "Drei eingefrorene Posen – verschränkt, Kapuze, Kopf in den Händen: Was zeigt das Bild? Erst danach erfährt die oder der Jugendliche, dass alle drei trauern.",
     "vorbereitung": [
-     "Szenen-Karten (6) drucken, schneiden, die Zeile „▸ Darunter“ nach hinten knicken",
+     "Szenen-Karten (6) drucken, schneiden, die Zeile „→ Darunter“ nach hinten knicken",
      "Vier Filter-Karten oder vier Blätter beschriften",
      "Die drei Posen einmal ausprobieren",
      "Kartensatz „Nur für dich – wenn es echt wird“ einmal lesen"
@@ -1990,12 +1990,12 @@
      {
       "titel": "Szenen: Joris, Kenza, Ilona (6 Karten, „Darunter“ knicken)",
       "karten": [
-       "Joris schnauzt einen aus der Klasse an, der sagt: „War doch nur ein Pferd.“ ▸ Darunter: Comète fehlt.",
-       "Joris trainiert seit April doppelt so viel wie vorher. ▸ Darunter: Comète fehlt.",
-       "Kenza geht mittwochs am Fotoclub vorbei, nicht hinein. ▸ Darunter: Nassim fehlt.",
-       "Kenza lacht in der Kantine am lautesten. ▸ Darunter: Nassim fehlt.",
-       "Ilona hat seit Wochen Kopfweh und ist im Unterricht müde. ▸ Darunter: Krakau und Zosia fehlen.",
-       "Ilona sagt: „Ich darf nicht traurig sein, es ist ja niemand gestorben.“ ▸ Darunter: Krakau und Zosia fehlen."
+       "Joris schnauzt einen aus der Klasse an, der sagt: „War doch nur ein Pferd.“ → Darunter: Comète fehlt.",
+       "Joris trainiert seit April doppelt so viel wie vorher. → Darunter: Comète fehlt.",
+       "Kenza geht mittwochs am Fotoclub vorbei, nicht hinein. → Darunter: Nassim fehlt.",
+       "Kenza lacht in der Kantine am lautesten. → Darunter: Nassim fehlt.",
+       "Ilona hat seit Wochen Kopfweh und ist im Unterricht müde. → Darunter: Krakau und Zosia fehlen.",
+       "Ilona sagt: „Ich darf nicht traurig sein, es ist ja niemand gestorben.“ → Darunter: Krakau und Zosia fehlen."
       ]
      },
      {
@@ -2063,7 +2063,7 @@
    "fr": {
     "haken": "Trois poses figées – bras croisés, capuche, tête dans les mains : que montre l’image ? C’est seulement après que le ou la jeune apprend que les trois sont en deuil.",
     "vorbereitung": [
-     "Imprimer et découper les cartes scènes (6), plier la ligne « ▸ Dessous » vers l’arrière",
+     "Imprimer et découper les cartes scènes (6), plier la ligne « → Dessous » vers l’arrière",
      "Préparer quatre cartes filtres ou quatre feuilles",
      "Essayer une fois les trois poses",
      "Lire une fois les cartes « Pour l’adulte – quand ça devient réel »"
@@ -2073,12 +2073,12 @@
      {
       "titel": "Scènes : Joris, Kenza, Ilona (6 cartes, plier « Dessous »)",
       "karten": [
-       "Joris rembarre un camarade qui dit : « Ce n’était qu’un cheval. » ▸ Dessous : Comète manque.",
-       "Depuis avril, Joris s’entraîne deux fois plus qu’avant. ▸ Dessous : Comète manque.",
-       "Le mercredi, Kenza passe devant le club photo sans entrer. ▸ Dessous : Nassim manque.",
-       "À la cantine, c’est Kenza qui rit le plus fort. ▸ Dessous : Nassim manque.",
-       "Depuis des semaines, Ilona a mal à la tête et elle est fatiguée en cours. ▸ Dessous : Cracovie et Zosia manquent.",
-       "Ilona dit : « Je n’ai pas le droit d’être triste, personne n’est mort. » ▸ Dessous : Cracovie et Zosia manquent."
+       "Joris rembarre un camarade qui dit : « Ce n’était qu’un cheval. » → Dessous : Comète manque.",
+       "Depuis avril, Joris s’entraîne deux fois plus qu’avant. → Dessous : Comète manque.",
+       "Le mercredi, Kenza passe devant le club photo sans entrer. → Dessous : Nassim manque.",
+       "À la cantine, c’est Kenza qui rit le plus fort. → Dessous : Nassim manque.",
+       "Depuis des semaines, Ilona a mal à la tête et elle est fatiguée en cours. → Dessous : Cracovie et Zosia manquent.",
+       "Ilona dit : « Je n’ai pas le droit d’être triste, personne n’est mort. » → Dessous : Cracovie et Zosia manquent."
       ]
      },
      {
@@ -2301,7 +2301,7 @@
        "titel": "Zoom"
       },
       {
-       "titel": "Doppel­belichtung"
+       "titel": "Doppelbelichtung"
       },
       {
        "titel": "Stativ"
@@ -2433,7 +2433,7 @@
    "de": {
     "haken": "Drei eingefrorene Posen – verschränkt, Kapuze, Kopf in den Händen: Was zeigt das Bild? Erst danach erfährt die oder der Jugendliche, dass alle drei trauern.",
     "vorbereitung": [
-     "Szenen-Karten (6) drucken, schneiden, die Zeile „▸ Darunter“ nach hinten knicken",
+     "Szenen-Karten (6) drucken, schneiden, die Zeile „→ Darunter“ nach hinten knicken",
      "Vier Filter-Karten oder vier Blätter beschriften",
      "Die drei Posen einmal ausprobieren",
      "Kartensatz „Nur für dich – wenn es echt wird“ einmal lesen"
@@ -2443,12 +2443,12 @@
      {
       "titel": "Szenen: Joris, Kenza, Ilona (6 Karten, „Darunter“ knicken)",
       "karten": [
-       "Joris schnauzt einen aus der Klasse an, der sagt: „War doch nur ein Pferd.“ ▸ Darunter: Comète fehlt.",
-       "Joris trainiert seit April doppelt so viel wie vorher. ▸ Darunter: Comète fehlt.",
-       "Kenza geht mittwochs am Fotoclub vorbei, nicht hinein. ▸ Darunter: Nassim fehlt.",
-       "Kenza lacht in der Kantine am lautesten. ▸ Darunter: Nassim fehlt.",
-       "Ilona hat seit Wochen Kopfweh und ist im Unterricht müde. ▸ Darunter: Krakau und Zosia fehlen.",
-       "Ilona sagt: „Ich darf nicht traurig sein, es ist ja niemand gestorben.“ ▸ Darunter: Krakau und Zosia fehlen."
+       "Joris schnauzt einen aus der Klasse an, der sagt: „War doch nur ein Pferd.“ → Darunter: Comète fehlt.",
+       "Joris trainiert seit April doppelt so viel wie vorher. → Darunter: Comète fehlt.",
+       "Kenza geht mittwochs am Fotoclub vorbei, nicht hinein. → Darunter: Nassim fehlt.",
+       "Kenza lacht in der Kantine am lautesten. → Darunter: Nassim fehlt.",
+       "Ilona hat seit Wochen Kopfweh und ist im Unterricht müde. → Darunter: Krakau und Zosia fehlen.",
+       "Ilona sagt: „Ich darf nicht traurig sein, es ist ja niemand gestorben.“ → Darunter: Krakau und Zosia fehlen."
       ]
      },
      {
@@ -2516,7 +2516,7 @@
    "fr": {
     "haken": "Trois poses figées – bras croisés, capuche, tête dans les mains : que montre l’image ? C’est seulement après que le ou la jeune apprend que les trois sont en deuil.",
     "vorbereitung": [
-     "Imprimer et découper les cartes scènes (6), plier la ligne « ▸ Dessous » vers l’arrière",
+     "Imprimer et découper les cartes scènes (6), plier la ligne « → Dessous » vers l’arrière",
      "Préparer quatre cartes filtres ou quatre feuilles",
      "Essayer une fois les trois poses",
      "Lire une fois les cartes « Pour l’adulte – quand ça devient réel »"
@@ -2526,12 +2526,12 @@
      {
       "titel": "Scènes : Joris, Kenza, Ilona (6 cartes, plier « Dessous »)",
       "karten": [
-       "Joris rembarre un camarade qui dit : « Ce n’était qu’un cheval. » ▸ Dessous : Comète manque.",
-       "Depuis avril, Joris s’entraîne deux fois plus qu’avant. ▸ Dessous : Comète manque.",
-       "Le mercredi, Kenza passe devant le club photo sans entrer. ▸ Dessous : Nassim manque.",
-       "À la cantine, c’est Kenza qui rit le plus fort. ▸ Dessous : Nassim manque.",
-       "Depuis des semaines, Ilona a mal à la tête et elle est fatiguée en cours. ▸ Dessous : Cracovie et Zosia manquent.",
-       "Ilona dit : « Je n’ai pas le droit d’être triste, personne n’est mort. » ▸ Dessous : Cracovie et Zosia manquent."
+       "Joris rembarre un camarade qui dit : « Ce n’était qu’un cheval. » → Dessous : Comète manque.",
+       "Depuis avril, Joris s’entraîne deux fois plus qu’avant. → Dessous : Comète manque.",
+       "Le mercredi, Kenza passe devant le club photo sans entrer. → Dessous : Nassim manque.",
+       "À la cantine, c’est Kenza qui rit le plus fort. → Dessous : Nassim manque.",
+       "Depuis des semaines, Ilona a mal à la tête et elle est fatiguée en cours. → Dessous : Cracovie et Zosia manquent.",
+       "Ilona dit : « Je n’ai pas le droit d’être triste, personne n’est mort. » → Dessous : Cracovie et Zosia manquent."
       ]
      },
      {
@@ -2717,12 +2717,12 @@
      {
       "titel": "Szenen: Joris, Kenza, Ilona (6 Karten, „Darunter“ knicken)",
       "karten": [
-       "Joris schnauzt einen aus der Klasse an, der sagt: „War doch nur ein Pferd.“ ▸ Darunter: Comète fehlt.",
-       "Joris trainiert seit April doppelt so viel wie vorher. ▸ Darunter: Comète fehlt.",
-       "Kenza geht mittwochs am Fotoclub vorbei, nicht hinein. ▸ Darunter: Nassim fehlt.",
-       "Kenza lacht in der Kantine am lautesten. ▸ Darunter: Nassim fehlt.",
-       "Ilona hat seit Wochen Kopfweh und ist im Unterricht müde. ▸ Darunter: Krakau und Zosia fehlen.",
-       "Ilona sagt: „Ich darf nicht traurig sein, es ist ja niemand gestorben.“ ▸ Darunter: Krakau und Zosia fehlen."
+       "Joris schnauzt einen aus der Klasse an, der sagt: „War doch nur ein Pferd.“ → Darunter: Comète fehlt.",
+       "Joris trainiert seit April doppelt so viel wie vorher. → Darunter: Comète fehlt.",
+       "Kenza geht mittwochs am Fotoclub vorbei, nicht hinein. → Darunter: Nassim fehlt.",
+       "Kenza lacht in der Kantine am lautesten. → Darunter: Nassim fehlt.",
+       "Ilona hat seit Wochen Kopfweh und ist im Unterricht müde. → Darunter: Krakau und Zosia fehlen.",
+       "Ilona sagt: „Ich darf nicht traurig sein, es ist ja niemand gestorben.“ → Darunter: Krakau und Zosia fehlen."
       ]
      },
      {
@@ -2788,12 +2788,12 @@
      {
       "titel": "Scènes : Joris, Kenza, Ilona (6 cartes, plier « Dessous »)",
       "karten": [
-       "Joris rembarre un camarade qui dit : « Ce n’était qu’un cheval. » ▸ Dessous : Comète manque.",
-       "Depuis avril, Joris s’entraîne deux fois plus qu’avant. ▸ Dessous : Comète manque.",
-       "Le mercredi, Kenza passe devant le club photo sans entrer. ▸ Dessous : Nassim manque.",
-       "À la cantine, c’est Kenza qui rit le plus fort. ▸ Dessous : Nassim manque.",
-       "Depuis des semaines, Ilona a mal à la tête et elle est fatiguée en cours. ▸ Dessous : Cracovie et Zosia manquent.",
-       "Ilona dit : « Je n’ai pas le droit d’être triste, personne n’est mort. » ▸ Dessous : Cracovie et Zosia manquent."
+       "Joris rembarre un camarade qui dit : « Ce n’était qu’un cheval. » → Dessous : Comète manque.",
+       "Depuis avril, Joris s’entraîne deux fois plus qu’avant. → Dessous : Comète manque.",
+       "Le mercredi, Kenza passe devant le club photo sans entrer. → Dessous : Nassim manque.",
+       "À la cantine, c’est Kenza qui rit le plus fort. → Dessous : Nassim manque.",
+       "Depuis des semaines, Ilona a mal à la tête et elle est fatiguée en cours. → Dessous : Cracovie et Zosia manquent.",
+       "Ilona dit : « Je n’ai pas le droit d’être triste, personne n’est mort. » → Dessous : Cracovie et Zosia manquent."
       ]
      },
      {
@@ -2970,12 +2970,12 @@
      {
       "titel": "Szenen: Joris und Ilona (6 Karten, „Darunter“ knicken)",
       "karten": [
-       "Joris schnauzt einen aus der Klasse an, der sagt: „War doch nur ein Pferd.“ ▸ Darunter: Comète fehlt.",
-       "Joris trainiert seit April doppelt so viel wie vorher. ▸ Darunter: Comète fehlt.",
-       "Joris sagt „Passt schon“ und geht, wenn jemand nach dem Hof fragt. ▸ Darunter: Comète fehlt.",
-       "Ilona hat seit Wochen Kopfweh und ist im Unterricht müde. ▸ Darunter: Krakau und Zosia fehlen.",
-       "Ilona sagt: „Ich darf nicht traurig sein, es ist ja niemand gestorben.“ ▸ Darunter: Krakau und Zosia fehlen.",
-       "Ilona hat die besten Noten der Klasse und hilft allen. ▸ Darunter: Krakau und Zosia fehlen."
+       "Joris schnauzt einen aus der Klasse an, der sagt: „War doch nur ein Pferd.“ → Darunter: Comète fehlt.",
+       "Joris trainiert seit April doppelt so viel wie vorher. → Darunter: Comète fehlt.",
+       "Joris sagt „Passt schon“ und geht, wenn jemand nach dem Hof fragt. → Darunter: Comète fehlt.",
+       "Ilona hat seit Wochen Kopfweh und ist im Unterricht müde. → Darunter: Krakau und Zosia fehlen.",
+       "Ilona sagt: „Ich darf nicht traurig sein, es ist ja niemand gestorben.“ → Darunter: Krakau und Zosia fehlen.",
+       "Ilona hat die besten Noten der Klasse und hilft allen. → Darunter: Krakau und Zosia fehlen."
       ]
      },
      {
@@ -3041,12 +3041,12 @@
      {
       "titel": "Scènes : Joris et Ilona (6 cartes, plier « Dessous »)",
       "karten": [
-       "Joris rembarre un camarade qui dit : « Ce n’était qu’un cheval. » ▸ Dessous : Comète manque.",
-       "Depuis avril, Joris s’entraîne deux fois plus qu’avant. ▸ Dessous : Comète manque.",
-       "Joris dit « Ça va » et s’en va quand on parle de la ferme. ▸ Dessous : Comète manque.",
-       "Depuis des semaines, Ilona a mal à la tête et elle est fatiguée en cours. ▸ Dessous : Cracovie et Zosia manquent.",
-       "Ilona dit : « Je n’ai pas le droit d’être triste, personne n’est mort. » ▸ Dessous : Cracovie et Zosia manquent.",
-       "Ilona a les meilleures notes de la classe et aide tout le monde. ▸ Dessous : Cracovie et Zosia manquent."
+       "Joris rembarre un camarade qui dit : « Ce n’était qu’un cheval. » → Dessous : Comète manque.",
+       "Depuis avril, Joris s’entraîne deux fois plus qu’avant. → Dessous : Comète manque.",
+       "Joris dit « Ça va » et s’en va quand on parle de la ferme. → Dessous : Comète manque.",
+       "Depuis des semaines, Ilona a mal à la tête et elle est fatiguée en cours. → Dessous : Cracovie et Zosia manquent.",
+       "Ilona dit : « Je n’ai pas le droit d’être triste, personne n’est mort. » → Dessous : Cracovie et Zosia manquent.",
+       "Ilona a les meilleures notes de la classe et aide tout le monde. → Dessous : Cracovie et Zosia manquent."
       ]
      },
      {
@@ -3276,7 +3276,7 @@
        "heute": true
       },
       {
-       "titel": "Doppel­belichtung"
+       "titel": "Doppelbelichtung"
       },
       {
        "titel": "Stativ"
@@ -3790,7 +3790,7 @@
        "heute": true
       },
       {
-       "titel": "Doppel­belichtung"
+       "titel": "Doppelbelichtung"
       },
       {
        "titel": "Stativ"
@@ -4817,7 +4817,7 @@
        "titel": "Zoom"
       },
       {
-       "titel": "Doppel­belichtung",
+       "titel": "Doppelbelichtung",
        "heute": true
       },
       {
@@ -5302,7 +5302,7 @@
        "titel": "Zoom"
       },
       {
-       "titel": "Doppel­belichtung",
+       "titel": "Doppelbelichtung",
        "heute": true
       },
       {
@@ -6332,7 +6332,7 @@
        "titel": "Zoom"
       },
       {
-       "titel": "Doppel­belichtung"
+       "titel": "Doppelbelichtung"
       },
       {
        "titel": "Stativ",
@@ -6831,7 +6831,7 @@
        "titel": "Zoom"
       },
       {
-       "titel": "Doppel­belichtung"
+       "titel": "Doppelbelichtung"
       },
       {
        "titel": "Stativ",
@@ -7862,7 +7862,7 @@
        "heute": true
       },
       {
-       "titel": "Doppel­belichtung",
+       "titel": "Doppelbelichtung",
        "heute": true
       },
       {
@@ -8335,7 +8335,7 @@
        "heute": true
       },
       {
-       "titel": "Doppel­belichtung",
+       "titel": "Doppelbelichtung",
        "heute": true
       },
       {

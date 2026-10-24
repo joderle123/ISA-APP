@@ -64,7 +64,7 @@
    "titel": "Einzelkurs Ohne Motor ins Ziel"
   },
   "titel": "Ein Teil mehr – Gutt gemaach",
-  "text": "Zum Abschluss malt das Kind in der Leiste unten auf dem Blatt das Teil aus, das heute dazugekommen ist, und legt das Blatt in die Mappe – am Ende die Zielflagge. Dann sagt die Fachkraft einen „Gutt gemaach“-Satz, der genau benennt, was das Kind heute getan hat (nicht, wie toll es ist), in einer Sprache nach Wahl: Gutt gemaach, Bravo, Shabash, Molodez oder Svaka čast. Wer mag, sagt einen Satz für sich selbst. Das Ritual ist jedes Mal gleich und dauert zwei bis drei Minuten.",
+  "text": "Zum Abschluss malt das Kind in der Leiste unten auf dem Blatt das Teil aus, das heute dazugekommen ist, und legt das Blatt in die Mappe – am Ende die Zielflagge. Dann sagt die Fachkraft einen „Gutt gemaach“-Satz, der genau benennt, was das Kind heute getan hat (nicht, wie toll es ist), in einer Sprache nach Wahl: Gutt gemaach, Bravo, Shabash, Molodez oder Svaka cast. Wer mag, sagt einen Satz für sich selbst. Das Ritual ist jedes Mal gleich und dauert zwei bis drei Minuten.",
   "sagen": [
    "Welches Teil kommt heute dazu? Mal es aus.",
    "Gutt gemaach: Du hast nach der langsamen Runde weitergemacht.",
@@ -106,7 +106,7 @@
   "qualitaet": "geprueft",
   "fr": {
    "titel": "Une pièce de plus – Gutt gemaach",
-   "text": "Pour finir, l’enfant colorie dans la barre en bas de la fiche la pièce ajoutée aujourd’hui et range la fiche dans le dossier – à la fin, le drapeau à damier. Puis l’adulte dit une phrase « Gutt gemaach » qui dit clairement ce que l’enfant a fait aujourd’hui (pas à quel point il ou elle est génial·e), dans une langue au choix : Gutt gemaach, Bravo, Shabash, Molodets ou Svaka čast. Qui veut se dit une phrase à soi-même. Le rituel est toujours pareil et dure deux à trois minutes.",
+   "text": "Pour finir, l’enfant colorie dans la barre en bas de la fiche la pièce ajoutée aujourd’hui et range la fiche dans le dossier – à la fin, le drapeau à damier. Puis l’adulte dit une phrase « Gutt gemaach » qui dit clairement ce que l’enfant a fait aujourd’hui (pas à quel point il ou elle est génial·e), dans une langue au choix : Gutt gemaach, Bravo, Shabash, Molodets ou Svaka cast. Qui veut se dit une phrase à soi-même. Le rituel est toujours pareil et dure deux à trois minutes.",
    "sagen": [
     "Quelle pièce s’ajoute aujourd’hui ? Colorie-la.",
     "Gutt gemaach : tu as continué après le tour plus lent.",
@@ -5594,8 +5594,8 @@
     "fr": "Amener une caisse à savon sans moteur jusqu’à l’arrivée : volant, roues, plan du virage, premier mètre, poussée – pièce par pièce, faire rouler son objectif"
    },
    "bruecke": {
-    "de": "Daryna hat angefangen: Auf der Kiste leuchtet ein roter Streifen. „Готово!“ (hotowo – fertig!), ruft Daryna. Nächsten Samstag ist das Rennen – und Emir fehlt noch.",
-    "fr": "Daryna a commencé : une bande rouge brille sur la caisse. « Готово ! » (hotovo – c’est fait !), crie Daryna. La course a lieu samedi prochain – et Emir n’est toujours pas là."
+    "de": "Daryna hat angefangen: Auf der Kiste leuchtet ein roter Streifen. „Hotowo!“ (fertig!), ruft Daryna. Nächsten Samstag ist das Rennen – und Emir fehlt noch.",
+    "fr": "Daryna a commencé : une bande rouge brille sur la caisse. « Hotovo ! » (c’est fait !), crie Daryna. La course a lieu samedi prochain – et Emir n’est toujours pas là."
    }
   },
   "imSpiel": {
@@ -6063,8 +6063,8 @@
     "fr": "Amener une caisse à savon sans moteur jusqu’à l’arrivée : volant, roues, plan du virage, premier mètre, poussée – pièce par pièce, faire rouler son objectif"
    },
    "bruecke": {
-    "de": "Daryna hat angefangen: Auf der Kiste leuchtet ein roter Streifen. „Готово!“ (hotowo – fertig!), ruft Daryna. Nächsten Samstag ist das Rennen – und Emir fehlt noch.",
-    "fr": "Daryna a commencé : une bande rouge brille sur la caisse. « Готово ! » (hotovo – c’est fait !), crie Daryna. La course a lieu samedi prochain – et Emir n’est toujours pas là."
+    "de": "Daryna hat angefangen: Auf der Kiste leuchtet ein roter Streifen. „Hotowo!“ (fertig!), ruft Daryna. Nächsten Samstag ist das Rennen – und Emir fehlt noch.",
+    "fr": "Daryna a commencé : une bande rouge brille sur la caisse. « Hotovo ! » (c’est fait !), crie Daryna. La course a lieu samedi prochain – et Emir n’est toujours pas là."
    }
   },
   "imSpiel": {
@@ -6532,8 +6532,8 @@
     "fr": "Amener une caisse à savon sans moteur jusqu’à l’arrivée : volant, roues, plan du virage, premier mètre, poussée – pièce par pièce, faire rouler son objectif"
    },
    "bruecke": {
-    "de": "Daryna hat angefangen: Auf der Kiste leuchtet ein roter Streifen. „Готово!“ (hotowo – fertig!), ruft Daryna. Nächsten Samstag ist das Rennen – und Emir fehlt noch.",
-    "fr": "Daryna a commencé : une bande rouge brille sur la caisse. « Готово ! » (hotovo – c’est fait !), crie Daryna. La course a lieu samedi prochain – et Emir n’est toujours pas là."
+    "de": "Daryna hat angefangen: Auf der Kiste leuchtet ein roter Streifen. „Hotowo!“ (fertig!), ruft Daryna. Nächsten Samstag ist das Rennen – und Emir fehlt noch.",
+    "fr": "Daryna a commencé : une bande rouge brille sur la caisse. « Hotovo ! » (c’est fait !), crie Daryna. La course a lieu samedi prochain – et Emir n’est toujours pas là."
    }
   },
   "ort": "raum",
@@ -6736,8 +6736,8 @@
     "fr": "Amener une caisse à savon sans moteur jusqu’à l’arrivée : volant, roues, plan du virage, premier mètre, poussée – pièce par pièce, faire rouler son objectif"
    },
    "bruecke": {
-    "de": "Daryna hat angefangen: Auf der Kiste leuchtet ein roter Streifen. „Готово!“ (hotowo – fertig!), ruft Daryna. Nächsten Samstag ist das Rennen – und Emir fehlt noch.",
-    "fr": "Daryna a commencé : une bande rouge brille sur la caisse. « Готово ! » (hotovo – c’est fait !), crie Daryna. La course a lieu samedi prochain – et Emir n’est toujours pas là."
+    "de": "Daryna hat angefangen: Auf der Kiste leuchtet ein roter Streifen. „Hotowo!“ (fertig!), ruft Daryna. Nächsten Samstag ist das Rennen – und Emir fehlt noch.",
+    "fr": "Daryna a commencé : une bande rouge brille sur la caisse. « Hotovo ! » (c’est fait !), crie Daryna. La course a lieu samedi prochain – et Emir n’est toujours pas là."
    }
   },
   "ort": "raum",

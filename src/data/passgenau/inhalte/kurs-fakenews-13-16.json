@@ -458,7 +458,7 @@
     "Vérifiable, opinion ou appel ? Pousse chaque phrase là où elle va."
    ],
    "wennEsKippt": "Si le ou la jeune n’a pas envie de lire, l’adulte lit chaque carte, et montrer suffit. Si un vrai chat de sa classe arrive sur la table, arrêter gentiment : « On reste avec la 5C d’Ettelbruck. » Si aucune phrase-clé ne vient, la lire suffit.",
-   "kurz": "14 tapotements · découper l’alerte · vérifiable ≠ vrai"
+   "kurz": "14 tapotements · découper l’alerte · vérifiable n’est pas forcément vrai"
   },
   "zugang": {
    "lesen": 2,
@@ -935,7 +935,7 @@
     "Vérifiable, opinion ou appel ? Pousse chaque phrase là où elle va."
    ],
    "wennEsKippt": "Si le ou la jeune n’a pas envie de lire, l’adulte lit chaque carte, et montrer suffit. Si un vrai chat de sa classe arrive sur la table, arrêter gentiment : « On reste avec la 5C d’Ettelbruck. » Si aucune phrase-clé ne vient, la lire suffit.",
-   "kurz": "14 tapotements · découper l’alerte · vérifiable ≠ vrai"
+   "kurz": "14 tapotements · découper l’alerte · vérifiable n’est pas forcément vrai"
   },
   "zugang": {
    "lesen": 1,
@@ -2625,7 +2625,7 @@
    "schreiben": 0,
    "bild": 2
   },
-  "kurz": "Ball zuwerfen · ruhig ↔ Alarm · Tricks benennen",
+  "kurz": "Ball zuwerfen · ruhig – Alarm · Tricks benennen",
   "fr": {
    "titel": "Pouls : ping-pong de gros titres",
    "text": "L’adulte pose l’alerte de @nordstad.news24 (transférée 87 fois) à côté du post de la commune (9 fois) et raconte l’étude en deux phrases : sur Twitter, le faux circulait plus vite, semblait plus nouveau et surprenait davantage (Vosoughi et al., 2018). Puis la balle vole : l’adulte lance avec un gros titre calme et vrai (« La bibliothèque a de nouvelles BD »), le ou la jeune attrape, tire une carte-ficelle et renvoie la version alerte (« CHOC : la bibliothèque cache des BD ! »). Après quatre lancers, on échange : maintenant arrive l’alerte, et il ou elle renvoie la version calme – le pouls redescend. Pour finir, il ou elle attrape la vraie alerte et nomme à chaque lancer une ficelle dedans. Phrase-clé : « Le pouls monte ? On ralentit : nommer la ficelle, puis décider. »",
@@ -2635,7 +2635,7 @@
     "Dernier lancer : la vraie alerte. Quelle ficelle vole avec ?"
    ],
    "wennEsKippt": "Assis, on fait rouler la balle sur la table. Si aucune version alerte ne vient, le ou la jeune lit simplement la carte-ficelle à voix haute – ça compte.",
-   "kurz": "Se lancer la balle · calme ↔ alerte · nommer les ficelles"
+   "kurz": "Se lancer la balle · calme – alerte · nommer les ficelles"
   },
   "hilfen": {
    "de": {

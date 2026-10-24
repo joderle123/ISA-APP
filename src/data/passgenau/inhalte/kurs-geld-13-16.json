@@ -66,11 +66,11 @@
    "titel": "Einzelkurs Geld mit Röntgenblick"
   },
   "titel": "Quittung – Äddi",
-  "text": "Zum Schluss kommt das Blatt in die Mappe. Die oder der Jugendliche schreibt die Schicht von heute in eine Zeile des Preisschilds; nach dem fünften Treffen sind alle Zeilen voll, beim sechsten kommt ein Haken dahinter. Die Fachkraft gibt eine Quittung in einem Satz: „Erhalten: deine zweite Meinung zu …“. Dann beide einmal lang ausatmen, Hände locker. Zum Gehen wählt die oder der Jugendliche ein Wort: Äddi, Tchau, Ciao oder Ćao.",
+  "text": "Zum Schluss kommt das Blatt in die Mappe. Die oder der Jugendliche schreibt die Schicht von heute in eine Zeile des Preisschilds; nach dem fünften Treffen sind alle Zeilen voll, beim sechsten kommt ein Haken dahinter. Die Fachkraft gibt eine Quittung in einem Satz: „Erhalten: deine zweite Meinung zu …“. Dann beide einmal lang ausatmen, Hände locker. Zum Gehen wählt die oder der Jugendliche ein Wort: Äddi, Tchau, Ciao oder Cao.",
   "sagen": [
    "Welche Schicht schreibst du heute ins Preisschild?",
    "Quittung: Erhalten – deine zweite Meinung zu …",
-   "Einmal lang aus. Äddi, Tchau, Ciao oder Ćao?"
+   "Einmal lang aus. Äddi, Tchau, Ciao oder Cao?"
   ],
   "wennEsKippt": "Mag die oder der Jugendliche nicht schreiben, schreibt die Fachkraft die Zeile. Das Ausatmen nur, wenn sie oder er will.",
   "rolle": [
@@ -108,11 +108,11 @@
   "qualitaet": "geprueft",
   "fr": {
    "titel": "Le reçu – Äddi",
-   "text": "Pour finir, la fiche va dans le dossier. Le ou la jeune écrit la couche du jour sur une ligne de l’étiquette ; après la cinquième rencontre, toutes les lignes sont pleines, à la sixième on ajoute une coche. L’adulte donne un reçu en une phrase : « Reçu : ton deuxième avis sur… ». Puis tous deux expirent une fois longuement, mains détendues. Pour se quitter, le ou la jeune choisit un mot : Äddi, Tchau, Ciao ou Ćao.",
+   "text": "Pour finir, la fiche va dans le dossier. Le ou la jeune écrit la couche du jour sur une ligne de l’étiquette ; après la cinquième rencontre, toutes les lignes sont pleines, à la sixième on ajoute une coche. L’adulte donne un reçu en une phrase : « Reçu : ton deuxième avis sur… ». Puis tous deux expirent une fois longuement, mains détendues. Pour se quitter, le ou la jeune choisit un mot : Äddi, Tchau, Ciao ou Cao.",
    "sagen": [
     "Quelle couche tu écris aujourd’hui sur l’étiquette ?",
     "Reçu : ton deuxième avis sur…",
-    "Une longue expiration. Äddi, Tchau, Ciao ou Ćao ?"
+    "Une longue expiration. Äddi, Tchau, Ciao ou Cao ?"
    ],
    "wennEsKippt": "Si le ou la jeune ne veut pas écrire, l’adulte écrit la ligne. L’expiration seulement si il ou elle le veut.",
    "vorbereitung": "Préparer un crayon. Rien d’autre."

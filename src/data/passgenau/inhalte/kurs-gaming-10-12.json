@@ -1980,7 +1980,7 @@
        "Zwei Sechsen: 1 von 36 Würfen (knapp 3 %). Mit 5 Truhen klappt es nur etwa jedes achte Mal.",
        "Lösung: Level 14 = Fast geschafft · Tag 6 von 7 = Tages-Streak · Truhe 1 % = Lootbox · 1.200 Kristalle = Spielgeld",
        "Lösung: 00:59:12 = Zeitdruck · Gold-Schwert = Pay-to-win · Kristall-Pass = Saison-Pass (vorher zahlen, viel spielen müssen, sonst verfallen Belohnungen)",
-       "Rechnung: 2 Pakete = 2.400 Kristalle = 19,98 €. 4 Truhen = 2.000, 400 bleiben übrig – zu wenig für eine Truhe. Eine Truhe ≈ 4,16 €.",
+       "Rechnung: 2 Pakete = 2.400 Kristalle = 19,98 €. 4 Truhen = 2.000, 400 bleiben übrig – zu wenig für eine Truhe. Eine Truhe ~ 4,16 €.",
        "PEGI 3–18 = Alter, nicht Schwierigkeit. Ab 1. Juni 2026 neu eingereichte Spiele: bezahlte Lootboxen meist PEGI 16, teils 18. Ältere behalten ihr altes Zeichen.",
        "Designer-Lösung („schwerer“): Streak mit Belohnung → mind. 7 · Streak verfällt → mind. 12 · Countdown → mind. 12 · bezahlte Truhe → meist 16.",
        "Skins machen nicht stärker – trotzdem wird „Default“ verspottet. Frag: Wer verdient am Spott? Gruppendruck ist auch ein Shop-Trick.",
@@ -1989,7 +1989,7 @@
      }
     ],
     "leichter": "Drei Bildschirm-Karten (Streak, Truhe, Zeitdruck) und drei Trick-Namen; die Fachkraft liest vor. Beim Würfeln reichen zwei Truhen.",
-    "schwerer": "Das Kind rechnet aus, was eine Truhe in Euro kostet (≈ 4,16 €) und wie viel man bei 1 % im Schnitt für eine legendäre zahlt (100 Truhen ≈ 416 €). Dazu: Warum passen Pakete und Preise nie genau zusammen?",
+    "schwerer": "Das Kind rechnet aus, was eine Truhe in Euro kostet (~ 4,16 €) und wie viel man bei 1 % im Schnitt für eine legendäre zahlt (100 Truhen ~ 416 €). Dazu: Warum passen Pakete und Preise nie genau zusammen?",
     "gruppe": "4–6 am Tisch: Truhen-Würfeln reihum, jede Person hat zehn Chips; wer aufhören will, schiebt die Chips weg. Dann knacken zwei Detektiv-Teams je drei, vier Bildschirm-Karten und erklären sie einander. Die Bremse wählt jede Person für sich. Keine Fragen, wer was kauft.",
     "beobachten": [
      "benennt in einer Spielmeldung den Trick und sagt, was das Spiel damit will",
@@ -2049,7 +2049,7 @@
        "Double six : 1 lancer sur 36 (presque 3 %). Avec 5 coffres, ça ne marche qu’environ une fois sur huit.",
        "Solution : niveau 14 = presque fini · jour 6 sur 7 = streak · coffre 1 % = loot box · 1 200 cristaux = monnaie du jeu",
        "Solution : 00:59:12 = pression du temps · épée d’or = pay-to-win · pass cristal = pass de saison (payer avant, beaucoup jouer, sinon les récompenses expirent)",
-       "Calcul : 2 packs = 2 400 cristaux = 19,98 €. 4 coffres = 2 000, il en reste 400 – pas assez pour un coffre. Un coffre ≈ 4,16 €.",
+       "Calcul : 2 packs = 2 400 cristaux = 19,98 €. 4 coffres = 2 000, il en reste 400 – pas assez pour un coffre. Un coffre ~ 4,16 €.",
        "PEGI 3–18 = âge, pas difficulté. Jeux soumis à partir du 1er juin 2026 : loot boxes payantes en général PEGI 16, parfois 18. Les anciens gardent leur logo.",
        "Solution designer (« plus difficile ») : streak récompensé → min. 7 · streak qui expire → min. 12 · compte à rebours → min. 12 · coffre payant → souvent 16.",
        "Les skins ne rendent pas plus fort – pourtant on se moque des « default ». Qui gagne de l’argent avec la moquerie ? La pression du groupe est aussi un piège.",
@@ -2058,7 +2058,7 @@
      }
     ],
     "leichter": "Trois cartes écran (streak, coffre, pression du temps) et trois noms de pièges ; l’adulte lit. Pour les dés, deux coffres suffisent.",
-    "schwerer": "L’enfant calcule ce que coûte un coffre en euros (≈ 4,16 €) et combien on paie en moyenne pour un légendaire à 1 % (100 coffres ≈ 416 €). Puis : pourquoi les packs et les prix ne tombent-ils jamais juste ?",
+    "schwerer": "L’enfant calcule ce que coûte un coffre en euros (~ 4,16 €) et combien on paie en moyenne pour un légendaire à 1 % (100 coffres ~ 416 €). Puis : pourquoi les packs et les prix ne tombent-ils jamais juste ?",
     "gruppe": "4 à 6 autour de la table : lancer de coffres à tour de rôle, dix jetons chacun ; qui veut arrêter pousse ses jetons. Puis deux équipes de détectives décodent trois ou quatre cartes écran et se les expliquent. Chacun choisit son frein. Pas de questions sur qui achète quoi.",
     "beobachten": [
      "nomme le piège dans un message du jeu et dit ce que le jeu veut",
@@ -2497,7 +2497,7 @@
        "Zwei Sechsen: 1 von 36 Würfen (knapp 3 %). Mit 5 Truhen klappt es nur etwa jedes achte Mal.",
        "Lösung: Level 14 = Fast geschafft · Tag 6 von 7 = Tages-Streak · Truhe 1 % = Lootbox · 1.200 Kristalle = Spielgeld",
        "Lösung: 00:59:12 = Zeitdruck · Gold-Schwert = Pay-to-win · Kristall-Pass = Saison-Pass (vorher zahlen, viel spielen müssen, sonst verfallen Belohnungen)",
-       "Rechnung: 2 Pakete = 2.400 Kristalle = 19,98 €. 4 Truhen = 2.000, 400 bleiben übrig – zu wenig für eine Truhe. Eine Truhe ≈ 4,16 €.",
+       "Rechnung: 2 Pakete = 2.400 Kristalle = 19,98 €. 4 Truhen = 2.000, 400 bleiben übrig – zu wenig für eine Truhe. Eine Truhe ~ 4,16 €.",
        "PEGI 3–18 = Alter, nicht Schwierigkeit. Ab 1. Juni 2026 neu eingereichte Spiele: bezahlte Lootboxen meist PEGI 16, teils 18. Ältere behalten ihr altes Zeichen.",
        "Designer-Lösung („schwerer“): Streak mit Belohnung → mind. 7 · Streak verfällt → mind. 12 · Countdown → mind. 12 · bezahlte Truhe → meist 16.",
        "Skins machen nicht stärker – trotzdem wird „Default“ verspottet. Frag: Wer verdient am Spott? Gruppendruck ist auch ein Shop-Trick.",
@@ -2506,7 +2506,7 @@
      }
     ],
     "leichter": "Drei Bildschirm-Karten (Streak, Truhe, Zeitdruck) und drei Trick-Namen; die Fachkraft liest vor. Beim Würfeln reichen zwei Truhen.",
-    "schwerer": "Das Kind rechnet aus, was eine Truhe in Euro kostet (≈ 4,16 €) und wie viel man bei 1 % im Schnitt für eine legendäre zahlt (100 Truhen ≈ 416 €). Dazu: Warum passen Pakete und Preise nie genau zusammen?",
+    "schwerer": "Das Kind rechnet aus, was eine Truhe in Euro kostet (~ 4,16 €) und wie viel man bei 1 % im Schnitt für eine legendäre zahlt (100 Truhen ~ 416 €). Dazu: Warum passen Pakete und Preise nie genau zusammen?",
     "gruppe": "4–6 am Tisch: Truhen-Würfeln reihum, jede Person hat zehn Chips; wer aufhören will, schiebt die Chips weg. Dann knacken zwei Detektiv-Teams je drei, vier Bildschirm-Karten und erklären sie einander. Die Bremse wählt jede Person für sich. Keine Fragen, wer was kauft.",
     "beobachten": [
      "benennt in einer Spielmeldung den Trick und sagt, was das Spiel damit will",
@@ -2566,7 +2566,7 @@
        "Double six : 1 lancer sur 36 (presque 3 %). Avec 5 coffres, ça ne marche qu’environ une fois sur huit.",
        "Solution : niveau 14 = presque fini · jour 6 sur 7 = streak · coffre 1 % = loot box · 1 200 cristaux = monnaie du jeu",
        "Solution : 00:59:12 = pression du temps · épée d’or = pay-to-win · pass cristal = pass de saison (payer avant, beaucoup jouer, sinon les récompenses expirent)",
-       "Calcul : 2 packs = 2 400 cristaux = 19,98 €. 4 coffres = 2 000, il en reste 400 – pas assez pour un coffre. Un coffre ≈ 4,16 €.",
+       "Calcul : 2 packs = 2 400 cristaux = 19,98 €. 4 coffres = 2 000, il en reste 400 – pas assez pour un coffre. Un coffre ~ 4,16 €.",
        "PEGI 3–18 = âge, pas difficulté. Jeux soumis à partir du 1er juin 2026 : loot boxes payantes en général PEGI 16, parfois 18. Les anciens gardent leur logo.",
        "Solution designer (« plus difficile ») : streak récompensé → min. 7 · streak qui expire → min. 12 · compte à rebours → min. 12 · coffre payant → souvent 16.",
        "Les skins ne rendent pas plus fort – pourtant on se moque des « default ». Qui gagne de l’argent avec la moquerie ? La pression du groupe est aussi un piège.",
@@ -2575,7 +2575,7 @@
      }
     ],
     "leichter": "Trois cartes écran (streak, coffre, pression du temps) et trois noms de pièges ; l’adulte lit. Pour les dés, deux coffres suffisent.",
-    "schwerer": "L’enfant calcule ce que coûte un coffre en euros (≈ 4,16 €) et combien on paie en moyenne pour un légendaire à 1 % (100 coffres ≈ 416 €). Puis : pourquoi les packs et les prix ne tombent-ils jamais juste ?",
+    "schwerer": "L’enfant calcule ce que coûte un coffre en euros (~ 4,16 €) et combien on paie en moyenne pour un légendaire à 1 % (100 coffres ~ 416 €). Puis : pourquoi les packs et les prix ne tombent-ils jamais juste ?",
     "gruppe": "4 à 6 autour de la table : lancer de coffres à tour de rôle, dix jetons chacun ; qui veut arrêter pousse ses jetons. Puis deux équipes de détectives décodent trois ou quatre cartes écran et se les expliquent. Chacun choisit son frein. Pas de questions sur qui achète quoi.",
     "beobachten": [
      "nomme le piège dans un message du jeu et dit ce que le jeu veut",
@@ -2993,7 +2993,7 @@
        "Zwei Sechsen: 1 von 36 Würfen (knapp 3 %). Mit 5 Truhen klappt es nur etwa jedes achte Mal.",
        "Lösung: Level 14 = Fast geschafft · Tag 6 von 7 = Tages-Streak · Truhe 1 % = Lootbox · 1.200 Kristalle = Spielgeld",
        "Lösung: 00:59:12 = Zeitdruck · Gold-Schwert = Pay-to-win · Kristall-Pass = Saison-Pass (vorher zahlen, viel spielen müssen, sonst verfallen Belohnungen)",
-       "Rechnung: 2 Pakete = 2.400 Kristalle = 19,98 €. 4 Truhen = 2.000, 400 bleiben übrig – zu wenig für eine Truhe. Eine Truhe ≈ 4,16 €.",
+       "Rechnung: 2 Pakete = 2.400 Kristalle = 19,98 €. 4 Truhen = 2.000, 400 bleiben übrig – zu wenig für eine Truhe. Eine Truhe ~ 4,16 €.",
        "PEGI 3–18 = Alter, nicht Schwierigkeit. Ab 1. Juni 2026 neu eingereichte Spiele: bezahlte Lootboxen meist PEGI 16, teils 18. Ältere behalten ihr altes Zeichen.",
        "Designer-Lösung („schwerer“): Streak mit Belohnung → mind. 7 · Streak verfällt → mind. 12 · Countdown → mind. 12 · bezahlte Truhe → meist 16.",
        "Skins machen nicht stärker – trotzdem wird „Default“ verspottet. Frag: Wer verdient am Spott? Gruppendruck ist auch ein Shop-Trick.",
@@ -3062,7 +3062,7 @@
        "Double six : 1 lancer sur 36 (presque 3 %). Avec 5 coffres, ça ne marche qu’environ une fois sur huit.",
        "Solution : niveau 14 = presque fini · jour 6 sur 7 = streak · coffre 1 % = loot box · 1 200 cristaux = monnaie du jeu",
        "Solution : 00:59:12 = pression du temps · épée d’or = pay-to-win · pass cristal = pass de saison (payer avant, beaucoup jouer, sinon les récompenses expirent)",
-       "Calcul : 2 packs = 2 400 cristaux = 19,98 €. 4 coffres = 2 000, il en reste 400 – pas assez pour un coffre. Un coffre ≈ 4,16 €.",
+       "Calcul : 2 packs = 2 400 cristaux = 19,98 €. 4 coffres = 2 000, il en reste 400 – pas assez pour un coffre. Un coffre ~ 4,16 €.",
        "PEGI 3–18 = âge, pas difficulté. Jeux soumis à partir du 1er juin 2026 : loot boxes payantes en général PEGI 16, parfois 18. Les anciens gardent leur logo.",
        "Solution designer (« plus difficile ») : streak récompensé → min. 7 · streak qui expire → min. 12 · compte à rebours → min. 12 · coffre payant → souvent 16.",
        "Les skins ne rendent pas plus fort – pourtant on se moque des « default ». Qui gagne de l’argent avec la moquerie ? La pression du groupe est aussi un piège.",
