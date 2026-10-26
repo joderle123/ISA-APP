@@ -57,7 +57,7 @@ export function Kurse() {
   const [thema, setThema] = useState<string | null>(null)
   const [suche, setSuche] = useState('')
   const [offen, setOffen] = useState<string | null>(() => {
-    const id = kursOeffnen
+    const id = kursOeffnen ?? /^#\/?passgenau\/kurse\/([\w-]+)$/.exec(window.location.hash)?.[1] ?? null
     kursOeffnen = null
     return id
   })

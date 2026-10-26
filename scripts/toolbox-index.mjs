@@ -16,6 +16,8 @@ import { materialTypeById, themeLabel } from '../src/data/taxonomy.ts'
 import { firstSentence } from '../src/lib/text.ts'
 import { nummerieren } from '../src/blatt/nummern.ts'
 import { bereichById, themaLabel } from '../src/blatt/katalog.ts'
+import { ladeKatalogNode } from './passgenau-quellen.ts'
+import { kursListe } from '../src/passgenau/kern/kurse.ts'
 
 const OUT = fileURLToPath(new URL('../offline/toolbox-index.js', import.meta.url))
 
@@ -60,6 +62,19 @@ const blaetter = nummerieren(dateien).map((b) => {
   return e
 })
 
+// Kurse (Förderplanung im Hub): je Kurs Name, Alter, Ziel, ELDiB und die Sitzungen – Link ISA-App.html#passgenau/kurse/<id>
+const kurse = kursListe(await ladeKatalogNode()).map((k) => ({
+  id: k.id,
+  name: k.name.de,
+  thema: k.thema,
+  von: k.von,
+  bis: k.bis,
+  ziel: k.ziel?.de ? firstSentence(k.ziel.de, 160) : undefined,
+  eldib: k.eldib.slice(0, 8),
+  achtung: k.achtung.de.slice(0, 2).map((t) => firstSentence(t, 140)),
+  sitzungen: k.sitzungen.map((s) => ({ nr: s.nr, titel: s.titel.de, min: s.minuten, form: s.format.slice(0, 2) })),
+}))
+
 const js =
   '/* Toolbox-Index für den CDSE Hub – automatisch erzeugt von scripts/toolbox-index.mjs\n' +
   '   (npm run build / npm run index). Nicht von Hand bearbeiten. Format: offline/README.md */\n' +
@@ -67,7 +82,9 @@ const js =
   materialien.map((m) => JSON.stringify(m)).join(',\n') +
   '\n],"blaetter":[\n' +
   blaetter.map((m) => JSON.stringify(m)).join(',\n') +
+  '\n],"kurse":[\n' +
+  kurse.map((m) => JSON.stringify(m)).join(',\n') +
   '\n]};\n'
 
 writeFileSync(OUT, js)
-console.log(`offline/toolbox-index.js: ${materialien.length} Materialien, ${blaetter.length} Arbeitsblätter, ${(js.length / 1024).toFixed(0)} KB, Stand ${stand}`)
+console.log(`offline/toolbox-index.js: ${materialien.length} Materialien, ${blaetter.length} Arbeitsblätter, ${kurse.length} Kurse, ${(js.length / 1024).toFixed(0)} KB, Stand ${stand}`)

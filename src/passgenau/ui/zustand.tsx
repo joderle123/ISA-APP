@@ -70,7 +70,8 @@ const ANSICHTEN: Ansicht[] = ['start', 'wissen', 'ohnekind', 'gruendlich', 'schn
 
 /** Ansicht aus `#passgenau/<ansicht>`. Der Start-Hash des CDSE-Hubs (`#passgenau=<ref>&weg=…`) enthält ein „=“ und ist hier nie gemeint. */
 export function ansichtAusHash(hash: string): Ansicht | null {
-  const m = /^#\/?passgenau\/([a-z]+)$/.exec(hash)
+  // #passgenau/kurse/<kurs-id>: ein Kurs direkt (Förderplanung im Hub, „Kurs ansehen“)
+  const m = /^#\/?passgenau\/([a-z]+)(?:\/[\w-]+)?$/.exec(hash)
   return m && (ANSICHTEN as string[]).includes(m[1]) ? (m[1] as Ansicht) : null
 }
 
