@@ -24,8 +24,8 @@ import type { Material } from './types/material'
 import { normaliseEldibCode } from './lib/deeplink'
 import { kursFrei } from './lib/nutzer'
 
-type Seite = 'blaetter' | 'kurs' | 'einheiten' | 'team' | 'passgenau'
-type ReiterId = 'passgenau' | 'kurse' | 'bibliothek' | 'kurs' | 'team'
+type Seite = 'blaetter' | 'kurs' | 'einheiten' | 'team' | 'passgenau' | 'spiele'
+type ReiterId = 'passgenau' | 'kurse' | 'bibliothek' | 'kurs' | 'team' | 'spiele'
 
 /** Name der Seite – für Dokumenttitel und Menü */
 const SEITENNAME: Record<Seite, string> = {
@@ -34,6 +34,7 @@ const SEITENNAME: Record<Seite, string> = {
   einheiten: 'Einheiten',
   kurs: 'Skills-Kurs',
   team: 'Team-Material',
+  spiele: 'Spiele (CREW)',
 }
 
 const WILLKOMMEN_KEY = 'toolbox-willkommen'
@@ -65,6 +66,8 @@ function seiteAusHash(hash: string): Seite | null {
   // Den Skills-Kurs sehen nur die Konten aus CDSE_SKILLSKURS (lib/nutzer kursFrei) – sonst die Arbeitsblätter
   if (h === 'kurs' || h.startsWith('kurs=') || h.startsWith('kurs&')) return kursFrei() ? 'kurs' : 'blaetter'
   if (h === 'einheiten') return 'einheiten'
+  // CREW (26.10.2026): die Spiele der Crew als Reiter der Toolbox (früher eine eigene App im Hub)
+  if (h === 'spiele' || h === 'crew') return 'spiele'
   if (h === 'blaetter') return 'blaetter'
   const p = hashParameter(hash)
   if (p.get('seite') === 'einheiten') return 'einheiten'
@@ -260,6 +263,7 @@ export default function App() {
     { id: 'bibliothek', name: 'Blätter', icon: 'book' },
     // „Skills“ statt „Kurs“: neben dem Reiter „Kurse“ (Kurs-Bibliothek) sonst verwechselbar
     ...(kurs ? [{ id: 'kurs' as const, name: 'Skills', icon: 'stairs' as const }] : []),
+    { id: 'spiele', name: 'Spiele', zusatz: 'CREW', icon: 'game' },
     { id: 'team', name: 'Team', icon: 'folder', n: teamMaterial.length },
   ]
   const aktivReiter: ReiterId = seite === 'blaetter' || seite === 'einheiten' ? 'bibliothek' : seite === 'passgenau' && pgAnsicht === 'kurse' ? 'kurse' : seite
@@ -426,6 +430,7 @@ export default function App() {
         {kurs && besucht.current.has('kurs') && <Kurs aktiv={seite === 'kurs'} bew={bew} />}
         {besucht.current.has('einheiten') && <Einheiten aktiv={seite === 'einheiten'} bew={bew} teamMaterials={teamMaterial} onBlaetterZuEldib={zuBlaettern} finderNr={finderNr} />}
         {besucht.current.has('team') && <Team aktiv={seite === 'team'} material={teamMaterial} bew={bew} />}
+        {besucht.current.has('spiele') && <Spiele aktiv={seite === 'spiele'} />}
         {besucht.current.has('passgenau') && <Passgenau aktiv={seite === 'passgenau'} start={pgStart} onHilfeFinden={hilfeFinden} />}
       </div>
 
@@ -435,5 +440,33 @@ export default function App() {
       </nav>
       <Toaster />
     </div>
+  )
+}
+
+/**
+ * Spiele der Crew (apps/crew im Hub-Ordner, neben toolbox.html): die Startseite mit Skills-Abschlussspiel,
+ * QR-Codes und iPads – eingebettet. Ohne Hub-Ordner (Toolbox allein geöffnet) fehlt sie; dann hilft der Hinweis.
+ */
+function Spiele({ aktiv }: { aktiv: boolean }) {
+  return (
+    <section hidden={!aktiv} aria-labelledby="spiele-titel" className="mx-auto max-w-[1440px] px-4 pt-4 pb-24 sm:px-6 sm:pt-5">
+      <div className="mb-3 flex flex-wrap items-end justify-between gap-3">
+        <div className="min-w-0">
+          <h1 id="spiele-titel" className="disp text-2xl text-ink">Spiele der CREW</h1>
+          <p className="text-sm text-muted">Am Beamer oder auf den iPads per QR-Code – das Abschlussspiel jeder Skills-Stunde und Spiele passend zu den Zielen eines Kindes.</p>
+        </div>
+        <a className="btn btn-sm" href="crew/start.html" target="_blank" rel="noopener">
+          <Icon name="external" />
+          Im eigenen Tab öffnen
+        </a>
+      </div>
+      <iframe
+        src="crew/start.html"
+        title="Spiele der CREW"
+        className="block w-full rounded-[var(--r-md)] border border-line bg-surface"
+        style={{ height: 'calc(100vh - 210px)', minHeight: 520 }}
+      />
+      <p className="mt-2 text-xs text-muted">Bleibt das Feld leer, liegt die Toolbox nicht im Hub-Ordner: Die Spiele stehen dort unter apps/crew.</p>
+    </section>
   )
 }
