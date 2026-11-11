@@ -1,0 +1,3884 @@
+{
+ "stand": "11.11.2026 (Schuljahr 2026/27)",
+ "bereiche": [
+  {
+   "id": "bau",
+   "name": "Bauen und Holz",
+   "farbe": "#b45309",
+   "zart": "#fdf0e2",
+   "passt": "passt, wenn du gern etwas baust, das bleibt",
+   "bild": "<path d=\"M3 21h18M5 21V11l7-5 7 5v10\"/><path d=\"M9 21v-6h6v6\"/>"
+  },
+  {
+   "id": "technik",
+   "name": "Technik, Metall und Fahrzeuge",
+   "farbe": "#1d4ed8",
+   "zart": "#e6eeff",
+   "passt": "passt, wenn du gern schraubst und reparierst",
+   "bild": "<circle cx=\"12\" cy=\"12\" r=\"3\"/><path d=\"M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1\"/>"
+  },
+  {
+   "id": "elektro",
+   "name": "Strom, Heizung und Sanitär",
+   "farbe": "#7c3aed",
+   "zart": "#f1eaff",
+   "passt": "passt, wenn du wissen willst, wie Strom und Wasser fließen",
+   "bild": "<path d=\"M13 2 4 14h7l-1 8 9-12h-7z\"/>"
+  },
+  {
+   "id": "natur",
+   "name": "Natur, Garten und Tiere",
+   "farbe": "#15803d",
+   "zart": "#e5f6ea",
+   "passt": "passt, wenn du gern draußen und bei Pflanzen oder Tieren bist",
+   "bild": "<path d=\"M12 22V12\"/><path d=\"M12 12c0-5 3-8 8-8 0 5-3 8-8 8z\"/><path d=\"M12 15c0-4-2.5-6-7-6 0 4 2.5 6 7 6z\"/>"
+  },
+  {
+   "id": "menschen",
+   "name": "Menschen, Pflege und Schönheit",
+   "farbe": "#be185d",
+   "zart": "#fdeaf3",
+   "passt": "passt, wenn du gern anderen hilfst und sie sich wohlfühlen",
+   "bild": "<path d=\"M12 21s-7-4.5-9-9a5 5 0 0 1 9-3 5 5 0 0 1 9 3c-2 4.5-9 9-9 9z\"/>"
+  },
+  {
+   "id": "essen",
+   "name": "Essen, Küche und Gäste",
+   "farbe": "#c2410c",
+   "zart": "#ffede3",
+   "passt": "passt, wenn du gern kochst, backst oder Gäste bedienst",
+   "bild": "<path d=\"M6 14h12v6H6z\"/><path d=\"M6 14a4 4 0 0 1 1-7.9A5 5 0 0 1 17 6a4 4 0 0 1 1 8\"/>"
+  },
+  {
+   "id": "verkauf",
+   "name": "Verkauf, Lager und Kunden",
+   "farbe": "#0f766e",
+   "zart": "#e2f5f2",
+   "passt": "passt, wenn du gern mit Kunden sprichst und Ordnung hältst",
+   "bild": "<path d=\"M3 4h2l2.4 11h10.2L20 8H6.2\"/><circle cx=\"9\" cy=\"20\" r=\"1.4\"/><circle cx=\"17\" cy=\"20\" r=\"1.4\"/>"
+  },
+  {
+   "id": "buero",
+   "name": "Büro und Verwaltung",
+   "farbe": "#334155",
+   "zart": "#eef1f6",
+   "passt": "passt, wenn du gern am Computer und mit Listen arbeitest",
+   "bild": "<rect x=\"3\" y=\"4\" width=\"18\" height=\"12\" rx=\"2\"/><path d=\"M8 20h8M12 16v4\"/>"
+  },
+  {
+   "id": "kreativ",
+   "name": "Gestalten, Mode und Medien",
+   "farbe": "#a21caf",
+   "zart": "#fbe9fd",
+   "passt": "passt, wenn du gern malst, gestaltest und genau arbeitest",
+   "bild": "<path d=\"M12 3a9 9 0 1 0 0 18c1.5 0 2-1 2-2s-1-1.5-1-2.5S14 15 15 15h2a4 4 0 0 0 4-4c0-4.4-4-8-9-8z\"/><circle cx=\"7.5\" cy=\"11\" r=\"1\"/><circle cx=\"10\" cy=\"7\" r=\"1\"/><circle cx=\"15\" cy=\"7.5\" r=\"1\"/>"
+  }
+ ],
+ "fragen": [
+  {
+   "id": "bau1",
+   "text": "Ich baue gern etwas – zum Beispiel aus Holz oder Steinen.",
+   "bereich": "bau"
+  },
+  {
+   "id": "technik1",
+   "text": "Ich schraube gern an Fahrrädern, Mofas oder Autos.",
+   "bereich": "technik"
+  },
+  {
+   "id": "elektro1",
+   "text": "Mich interessiert, wie Strom, Licht und Kabel funktionieren.",
+   "bereich": "elektro"
+  },
+  {
+   "id": "natur1",
+   "text": "Ich bin gern in der Natur.",
+   "bereich": "natur"
+  },
+  {
+   "id": "menschen1",
+   "text": "Ich helfe gern anderen Menschen.",
+   "bereich": "menschen"
+  },
+  {
+   "id": "essen1",
+   "text": "Ich koche oder backe gern.",
+   "bereich": "essen"
+  },
+  {
+   "id": "verkauf1",
+   "text": "Ich spreche gern mit Kunden.",
+   "bereich": "verkauf"
+  },
+  {
+   "id": "buero1",
+   "text": "Ich arbeite gern am Computer.",
+   "bereich": "buero"
+  },
+  {
+   "id": "kreativ1",
+   "text": "Ich male, zeichne oder gestalte gern.",
+   "bereich": "kreativ"
+  },
+  {
+   "id": "bau2",
+   "text": "Ich arbeite gern draußen, auch wenn es kalt ist.",
+   "bereich": "bau"
+  },
+  {
+   "id": "technik2",
+   "text": "Ich will wissen, wie eine Maschine funktioniert.",
+   "bereich": "technik"
+  },
+  {
+   "id": "elektro2",
+   "text": "Ich arbeite gern mit Rohren, Wasser oder Heizungen.",
+   "bereich": "elektro"
+  },
+  {
+   "id": "natur2",
+   "text": "Ich kümmere mich gern um Pflanzen oder Tiere.",
+   "bereich": "natur"
+  },
+  {
+   "id": "menschen2",
+   "text": "Ich kümmere mich gern um Kinder, alte oder kranke Menschen.",
+   "bereich": "menschen"
+  },
+  {
+   "id": "essen2",
+   "text": "Ich arbeite gern schnell, wenn viel los ist.",
+   "bereich": "essen"
+  },
+  {
+   "id": "verkauf2",
+   "text": "Ich räume gern Regale ein und halte Ordnung im Lager.",
+   "bereich": "verkauf"
+  },
+  {
+   "id": "buero2",
+   "text": "Ich ordne gern Listen, Briefe und Papiere.",
+   "bereich": "buero"
+  },
+  {
+   "id": "kreativ2",
+   "text": "Ich mag Mode, Farben oder Dekoration.",
+   "bereich": "kreativ"
+  },
+  {
+   "id": "bau3",
+   "text": "Ich mag es, wenn man am Ende sieht, was ich gemacht habe.",
+   "bereich": "bau"
+  },
+  {
+   "id": "technik3",
+   "text": "Ich repariere gern Dinge, die kaputt sind.",
+   "bereich": "technik"
+  },
+  {
+   "id": "elektro3",
+   "text": "Ich arbeite gern sehr genau und sicher nach Regeln.",
+   "bereich": "elektro"
+  },
+  {
+   "id": "natur3",
+   "text": "Es stört mich nicht, wenn meine Hände schmutzig werden.",
+   "bereich": "natur"
+  },
+  {
+   "id": "menschen3",
+   "text": "Ich mag es, wenn andere sich wohl und schön fühlen.",
+   "bereich": "menschen"
+  },
+  {
+   "id": "essen3",
+   "text": "Ich mag es, Gäste zu bedienen.",
+   "bereich": "essen"
+  },
+  {
+   "id": "verkauf3",
+   "text": "Ich berate gern andere beim Einkaufen.",
+   "bereich": "verkauf"
+  },
+  {
+   "id": "buero3",
+   "text": "Ich arbeite gern ruhig an einem Tisch.",
+   "bereich": "buero"
+  },
+  {
+   "id": "kreativ3",
+   "text": "Ich mache gern Fotos, Videos oder Plakate.",
+   "bereich": "kreativ"
+  }
+ ],
+ "stil": [
+  {
+   "id": "ort",
+   "a": "Drinnen arbeiten",
+   "b": "Draußen arbeiten"
+  },
+  {
+   "id": "wer",
+   "a": "Allein arbeiten",
+   "b": "Im Team arbeiten"
+  },
+  {
+   "id": "tempo",
+   "a": "Ruhig und in Ruhe",
+   "b": "Viel Bewegung"
+  },
+  {
+   "id": "womit",
+   "a": "Mit Menschen",
+   "b": "Mit Dingen und Werkzeug"
+  }
+ ],
+ "infoheft": [
+  {
+   "id": "weg",
+   "titel": "So geht es nach der 5P weiter",
+   "kurz": "Am Ende der 5P zählt, wie viele Module du bestanden hast (von 54).",
+   "punkte": [
+    "Weniger als 18 Module: Du gehst in eine CIP (classe d’initiation professionnelle). Danach geht es weiter, zum Beispiel zum CCP.",
+    "Mindestens 18 Module und mindestens 15 Jahre alt am 1. September: Du kannst einen CCP machen.",
+    "Mindestens 33 Module, davon 5 in Mathematik und 5 in Deutsch oder Französisch: Du kannst in die 5AD gehen – danach zum DAP.",
+    "Mindestens 45 Module: DAP der Kategorie A. Mit mindestens 8 Modulen in Mathematik auch Kategorie B.",
+    "DAP der Kategorie C (zum Beispiel Bürokaufmann, Mechatroniker, Fachinformatiker) geht nur mit bestandener 5G.",
+    "Wichtig: Die Anmeldung passiert nicht von allein – du musst dich selbst anmelden.",
+    "Seit 2026/27 gilt die Schulpflicht bis 18 Jahre: in der Schule, in einer Ausbildung oder ab 16 mit einem Arbeitsvertrag."
+   ]
+  },
+  {
+   "id": "ccp",
+   "titel": "Der CCP",
+   "kurz": "Certificat de capacité professionnelle – die erste Stufe der Berufsausbildung, dein Einstieg in die Arbeit.",
+   "punkte": [
+    "Dauer: 2 oder 3 Jahre.",
+    "Du lernst vor allem im Betrieb, mit Lehrvertrag. An 1 bis 2 Tagen pro Woche bist du im Lycée.",
+    "Im Lycée hast du manche Kurse auf Deutsch, andere auf Französisch.",
+    "Du bekommst jeden Monat Geld vom Betrieb (Lehrlingsentschädigung).",
+    "Danach: arbeiten – oder den DAP im selben Beruf machen."
+   ]
+  },
+  {
+   "id": "dap",
+   "titel": "Der DAP",
+   "kurz": "Diplôme d’aptitude professionnelle – danach bist du eine ausgebildete Fachkraft.",
+   "punkte": [
+    "Dauer: meistens 3 Jahre.",
+    "Drei Formen: mit Lehrvertrag im Betrieb und im Lycée, ganz im Lycée mit Praktika, oder erst im Lycée und danach im Betrieb.",
+    "Die Berufe sind in Kategorien A, B und C eingeteilt. Die Kategorie sagt, was du für den Zugang brauchst.",
+    "In der Mitte gibt es eine Zwischenprüfung (projet intégré intermédiaire), am Ende die Abschlussprüfung (projet intégré final).",
+    "Danach: als Fachkraft arbeiten, zum Diplôme de technicien (DT) weitergehen oder im Handwerk später den Meister machen."
+   ]
+  },
+  {
+   "id": "lehrstelle",
+   "titel": "Eine Lehrstelle finden",
+   "kurz": "Für eine Lehre brauchst du einen Betrieb, der dich ausbildet.",
+   "punkte": [
+    "Melde dich beim Service d’orientation professionnelle der ADEM (ADEM-OP) an – auch wenn du schon einen Betrieb gefunden hast.",
+    "Die ADEM-OP gibt dir eine Liste mit Betrieben, die Lehrlinge suchen.",
+    "Melde dich auch im Lycée an, das deine Ausbildung anbietet.",
+    "Geh zum Léierplazendag: Dort triffst du Betriebe und kannst dich oft direkt bewerben.",
+    "Du kannst dich auch direkt bei einem Betrieb bewerben, der Lehrlinge ausbilden darf.",
+    "Mitbringen zur ADEM: Sozialversicherungskarte, Ausweis, die Zeugnisse der ersten zwei Trimester.",
+    "Hilfe bekommst du auch beim SePAS oder der Cellule d’orientation (COI) in deiner Schule und in der Maison de l’orientation."
+   ]
+  },
+  {
+   "id": "fristen",
+   "titel": "Wichtige Termine",
+   "kurz": "Früh anfangen lohnt sich!",
+   "punkte": [
+    "Ab den Osterferien (April) bis Ende Oktober: bei der ADEM-OP für eine Lehrstelle anmelden.",
+    "Ab Mitte Juli bis Ende Oktober werden neue Lehrverträge unterschrieben.",
+    "Um den 15. Juli: Einschreibung im Lycée für Klassen ganz im Lycée. Unbedingt im Juli – im September sind viele Klassen voll."
+   ]
+  },
+  {
+   "id": "vertrag",
+   "titel": "Der Lehrvertrag",
+   "kurz": "Der Vertrag zwischen dir und deinem Lehrbetrieb.",
+   "punkte": [
+    "Bist du unter 18, unterschreiben deine Eltern mit.",
+    "Die ersten 3 Monate sind Probezeit: In dieser Zeit können beide Seiten ohne Grund kündigen.",
+    "Du bekommst jeden Monat eine Lehrlingsentschädigung – wie viel, hängt vom Beruf und vom Lehrjahr ab.",
+    "Bestehst du ein Lehrjahr, gibt es zusätzlich eine Prämie vom Staat: 130 € im Monat beim CCP, 150 € beim DAP. Antrag bei der ADEM-OP.",
+    "Bei Problemen in der Lehre hilft dir der Lehrstellenberater (conseiller à l’apprentissage) deiner Kammer.",
+    "Ganz im Lycée (plein temps) gibt es keinen Lehrvertrag und kein Geld vom Betrieb."
+   ]
+  }
+ ],
+ "links": [
+  {
+   "titel": "Shape your future",
+   "url": "https://shapeyourfuture.lu/fr/liste-des-formations",
+   "wofuer": "Alle Berufe mit Beschreibung, Schulen und Lohn (offizielle Seite des Bildungsministeriums)"
+  },
+  {
+   "titel": "ADEM – Lehre machen",
+   "url": "https://adem.public.lu/fr/orientation-professionnelle/apprentissage.html",
+   "wofuer": "Anmelden für eine Lehrstelle, Liste der Betriebe"
+  },
+  {
+   "titel": "ADEM – Beruffslëscht",
+   "url": "https://adem.public.lu/fr/orientation-professionnelle/beruffslescht.html",
+   "wofuer": "Liste aller Ausbildungen mit Zugangsbedingungen"
+  },
+  {
+   "titel": "Léierplazendag",
+   "url": "https://adem.public.lu/fr/orientation-professionnelle/apprentissage/Leierplazendag.html",
+   "wofuer": "Betriebe treffen und sich direkt bewerben"
+  },
+  {
+   "titel": "Maison de l’orientation",
+   "url": "https://maison-orientation.public.lu/fr/monde-du-travail/apprentissage.html",
+   "wofuer": "Beratung zur Berufswahl"
+  },
+  {
+   "titel": "Que faire après la 5e ?",
+   "url": "https://men.public.lu/dam-assets/catalogue-publications/orientation/informations-generales/que-faire-5-esg-fr.pdf",
+   "wofuer": "Broschüre des Ministeriums für die Zeit nach der 5e"
+  },
+  {
+   "titel": "winwin.lu",
+   "url": "https://www.winwin.lu/fr/apprentice/professions/all",
+   "wofuer": "Berufe und Lehrstellen der Chambre de Commerce"
+  },
+  {
+   "titel": "Chambre des Métiers",
+   "url": "https://formations.cdm.lu/fr/metiers-formations/metiers-de-la-construction-habitat/carreleur",
+   "wofuer": "Handwerksberufe und Ausbildungen"
+  },
+  {
+   "titel": "Guichet.lu – Lehrvertrag",
+   "url": "https://guichet.public.lu/fr/citoyens/travail/conditions-travail/contrat-jeunes-actifs/contrat-apprentissage.html",
+   "wofuer": "Alles zum Lehrvertrag"
+  }
+ ],
+ "quellen": [
+  {
+   "titel": "Annexe A – Liste des professions et métiers dans le cadre de la formation professionnelle (Règlement grand-ducal du 29 juillet 2025, Mémorial A 355 du 1er août 2025)",
+   "url": "https://men.public.lu/dam-assets/fr/professionnel/initiale/annexe-a-metiers-formation-professionnelle.pdf"
+  },
+  {
+   "titel": "Projet de règlement grand-ducal (30.06.2026) modifiant le RGD du 29 juillet 2025 – Ergänzungen 2026/27 + konsolidierte Annexes A und B (Lehrlingsentschädigungen, Index 100), Conseil d'État Dossier 62615",
+   "url": "https://conseil-etat.public.lu/content/dam/conseil_etat/fr/avis/2026/17072026/62615-texte-du-projet-de-rglement-grand-ducal-30062026.pdf"
+  },
+  {
+   "titel": "Shape Your Future (MENJE) – Liste des formations (je Beruf eigene Seite /fr/formations/<code>)",
+   "url": "https://shapeyourfuture.lu/fr/liste-des-formations"
+  },
+  {
+   "titel": "Shape Your Future (MENJE) – Offre formation professionnelle",
+   "url": "https://shapeyourfuture.lu/fr/offre-formation-professionnelle"
+  },
+  {
+   "titel": "Shape Your Future (MENJE) – FAQ Offre formation pro.",
+   "url": "https://shapeyourfuture.lu/fr/faq-offre-formation-pro"
+  },
+  {
+   "titel": "Shape Your Future (MENJE) – Décrocher un contrat d'apprentissage",
+   "url": "https://shapeyourfuture.lu/fr/decrocher-un-contrat-dapprentissage"
+  },
+  {
+   "titel": "Shape Your Future (MENJE) – Informations pour parents",
+   "url": "https://shapeyourfuture.lu/fr/informations-pour-parents"
+  },
+  {
+   "titel": "ADEM – Beruffslëscht (Online-Fassung, letzte Änderung 30.09.2026)",
+   "url": "https://adem.public.lu/fr/orientation-professionnelle/beruffslescht.html"
+  },
+  {
+   "titel": "Beruffslëscht – Formation professionnelle au Luxembourg / Berufsausbildung in Luxemburg, Schuljahr 2025/2026 (ADEM-OP, PDF, Version 20260218)",
+   "url": "https://cms.lifelong-learning.lu/view/document/formation-professionnelle-au-luxembourg---berufsausbildung-in-luxemburg/de"
+  },
+  {
+   "titel": "MENJE – Que faire après la 5e de l'enseignement secondaire général ? 2025-2026 (PDF erstellt 17.04.2026; enthält bereits Neuerungen 2026/27)",
+   "url": "https://men.public.lu/dam-assets/catalogue-publications/orientation/informations-generales/que-faire-5-esg-fr.pdf"
+  },
+  {
+   "titel": "MENJE – Formation professionnelle, Formations francophones 2026/2027",
+   "url": "https://men.public.lu/dam-assets/fr/actualites/articles/communiques-conference-presse/2026/06/offre-francophone-formation-professionnelle.pdf"
+  },
+  {
+   "titel": "MENJE – Deux nouvelles formations professionnelles pour la rentrée 2026/2027 (28.04.2026)",
+   "url": "https://men.public.lu/fr/actualites/communiques-conference-presse/2026/04/28-nouvelles-formations-2026-2027.html"
+  },
+  {
+   "titel": "MENJE – Flyer CCP Assistant dans les métiers du métal",
+   "url": "https://men.public.lu/content/dam/men/catalogue-publications/formation-professionnelle/offres/flyer-ccp-assistant-metiers-metal.pdf"
+  },
+  {
+   "titel": "MENJE – Flyer DAP Agent de sécurité et de sûreté",
+   "url": "https://men.public.lu/content/dam/men/catalogue-publications/formation-professionnelle/offres/flyer-dap-securite.pdf"
+  },
+  {
+   "titel": "gouvernement.lu – Un nouveau DAP pour valoriser les compétences acquises par les soldats volontaires (09.10.2026)",
+   "url": "https://gouvernement.lu/fr/actualites/toutes_actualites/communiques/2026/10-octobre/09-meisch-backes-dap.html"
+  },
+  {
+   "titel": "MENJE – Enseignement secondaire (Schulpflicht bis 18)",
+   "url": "https://men.public.lu/fr/systeme-educatif/secondaire.html"
+  },
+  {
+   "titel": "ADEM – Faire un apprentissage",
+   "url": "https://adem.public.lu/fr/orientation-professionnelle/apprentissage.html"
+  },
+  {
+   "titel": "ADEM – Foire aux questions (FAQ) Orientation professionnelle",
+   "url": "https://adem.public.lu/fr/orientation-professionnelle/faq-op.html"
+  },
+  {
+   "titel": "ADEM – Demande de (pré-)inscription à un placement en apprentissage",
+   "url": "https://adem.public.lu/fr/orientation-professionnelle/apprentissage/preinscription-apprentissage.html"
+  },
+  {
+   "titel": "ADEM – Léierplazendag",
+   "url": "https://adem.public.lu/fr/orientation-professionnelle/apprentissage/Leierplazendag.html"
+  },
+  {
+   "titel": "Guichet.lu – Conclusion d'un contrat d'apprentissage",
+   "url": "https://guichet.public.lu/fr/citoyens/travail/conditions-travail/contrat-jeunes-actifs/contrat-apprentissage.html"
+  },
+  {
+   "titel": "winwin.lu (Chambre de Commerce) – Liste des professions",
+   "url": "https://www.winwin.lu/fr/apprentice/professions/all"
+  },
+  {
+   "titel": "winwin.lu – Barème des indemnités d'apprentissage mensuelles (Version 29.05.2026, Index 992,24 ab 01.06.2026)",
+   "url": "https://www.winwin.lu/files/23022.pdf"
+  },
+  {
+   "titel": "Chambre des Métiers – Métiers & formations / Fiches métier (z. B. Carreleur, Électricien)",
+   "url": "https://formations.cdm.lu/fr/metiers-formations/metiers-de-la-construction-habitat/carreleur"
+  },
+  {
+   "titel": "Chambre des Métiers – Avis zu den Amendements zum Projet de loi „promotion de la formation professionnelle“ (Lehrlingsentschädigungen, 02.10.2026)",
+   "url": "https://www.cdm.lu/mediatheque/media/formation-professionnelle-indemnites-dapprentissage"
+  },
+  {
+   "titel": "Maison de l'orientation – Apprentissage / Apprentissage initial / Apprentissages par métier et profession",
+   "url": "https://maison-orientation.public.lu/fr/monde-du-travail/apprentissage.html"
+  }
+ ],
+ "berufe": [
+  {
+   "id": "aide-menagere",
+   "de": "Hauswirtschaftshilfe",
+   "fr": "Aide-ménagère",
+   "abschluss": [
+    "CCP"
+   ],
+   "bereich": "menschen",
+   "einfach": "Du hilfst Menschen im Haushalt, die das nicht mehr allein schaffen.",
+   "taetigkeiten": [
+    "einkaufen",
+    "einfache Gerichte kochen",
+    "die Wohnung putzen",
+    "Wäsche waschen und bügeln"
+   ],
+   "wege": [
+    {
+     "abschluss": "CCP",
+     "dauer": "2 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Bouneweger Lycée Luxembourg",
+      "École Privée Fieldgen"
+     ],
+     "zugang": "Aus der 5P: mindestens 18 von 54 Modulen bestanden (oder nach einer CIP) und am 1. September mindestens 15 Jahre alt.",
+     "lohn": [
+      "1. Jahr: 551,39 € im Monat",
+      "2. Jahr: 861,46 € im Monat"
+     ],
+     "danach": "Danach kannst du den DAP im selben Beruf machen.",
+     "link": "https://shapeyourfuture.lu/fr/formations/ccp-mn"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/ccp-mn",
+   "quelle": "https://shapeyourfuture.lu/fr/formations/ccp-mn"
+  },
+  {
+   "id": "assistant-d-accompagnement-au-quotidien",
+   "de": "Assistent bei der alltäglichen Begleitung",
+   "fr": "Assistant d’accompagnement au quotidien",
+   "abschluss": [
+    "CCP"
+   ],
+   "bereich": "menschen",
+   "einfach": "Du begleitest Kinder, Jugendliche oder ältere Menschen im Alltag.",
+   "taetigkeiten": [
+    "Kinder, Jugendliche oder Erwachsene im Alltag begleiten",
+    "bei der Pflege mithelfen",
+    "das Team unterstützen",
+    "im Haushalt helfen"
+   ],
+   "wege": [
+    {
+     "abschluss": "CCP",
+     "dauer": "2 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Bouneweger Lycée Luxembourg",
+      "Centre national de formation professionnelle continue - Esch-sur-Alzette",
+      "École nationale de santé du Luxembourg",
+      "École nationale pour adultes",
+      "École Privée Fieldgen",
+      "Lycée Bel-Val"
+     ],
+     "zugang": "Aus der 5P: mindestens 18 von 54 Modulen bestanden (oder nach einer CIP) und am 1. September mindestens 15 Jahre alt.",
+     "lohn": [
+      "1. Jahr: 750,53 € im Monat",
+      "2. Jahr: 1 147,92 € im Monat"
+     ],
+     "danach": "Danach kannst du den DAP im selben Beruf machen.",
+     "link": "https://shapeyourfuture.lu/fr/formations/ccp-sf"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/ccp-sf",
+   "quelle": "https://shapeyourfuture.lu/fr/formations/ccp-sf"
+  },
+  {
+   "id": "assistant-en-mecanique-automobile",
+   "de": "Kraftfahrzeugmechanikergehilfe",
+   "fr": "Assistant en mécanique automobile",
+   "abschluss": [
+    "CCP"
+   ],
+   "bereich": "technik",
+   "einfach": "Du hilfst in der Autowerkstatt bei Wartung und einfachen Reparaturen.",
+   "taetigkeiten": [
+    "Autos warten: Öl und Flüssigkeiten prüfen und wechseln",
+    "Reifen reparieren und Räder auswuchten",
+    "Zündkerzen und andere Teile wechseln",
+    "einfache Arbeiten an der Karosserie"
+   ],
+   "wege": [
+    {
+     "abschluss": "CCP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Lycée Bel-Val",
+      "Lycée technique d'Ettelbruck"
+     ],
+     "zugang": "Aus der 5P: mindestens 18 von 54 Modulen bestanden (oder nach einer CIP) und am 1. September mindestens 15 Jahre alt.",
+     "lohn": [
+      "1. Jahr: 620,25 € im Monat",
+      "2. Jahr: 758,17 € im Monat",
+      "3. Jahr: 895,99 € im Monat"
+     ],
+     "danach": "Danach kannst du den DAP im selben Beruf machen.",
+     "link": "https://shapeyourfuture.lu/fr/formations/ccp-ma"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/ccp-ma",
+   "quelle": "https://shapeyourfuture.lu/fr/formations/ccp-ma"
+  },
+  {
+   "id": "assistant-fleuriste",
+   "de": "Floristgehilfe",
+   "fr": "Assistant fleuriste",
+   "abschluss": [
+    "CCP"
+   ],
+   "bereich": "kreativ",
+   "einfach": "Du hilfst im Blumengeschäft beim Verkaufen und Pflegen der Blumen.",
+   "taetigkeiten": [
+    "beim Verkauf von Blumen und Pflanzen helfen",
+    "Lieferungen annehmen und prüfen",
+    "Blumen und Pflanzen schön präsentieren",
+    "Pflanzen und Schnittblumen pflegen"
+   ],
+   "wege": [
+    {
+     "abschluss": "CCP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Lycée technique agricole"
+     ],
+     "zugang": "Aus der 5P: mindestens 18 von 54 Modulen bestanden (oder nach einer CIP) und am 1. September mindestens 15 Jahre alt.",
+     "lohn": [
+      "1. Jahr: 689,21 € im Monat",
+      "2. Jahr: 854,62 € im Monat",
+      "3. Jahr: 1 171,64 € im Monat"
+     ],
+     "danach": "Danach kannst du den DAP im selben Beruf machen.",
+     "link": "https://shapeyourfuture.lu/fr/formations/ccp-hf"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/ccp-hf",
+   "quelle": "https://shapeyourfuture.lu/fr/formations/ccp-hf"
+  },
+  {
+   "id": "assistant-horticulteur-en-production",
+   "de": "Gärtnergehilfe",
+   "fr": "Assistant horticulteur en production",
+   "abschluss": [
+    "CCP"
+   ],
+   "bereich": "natur",
+   "einfach": "Du ziehst in der Gärtnerei Pflanzen groß und verkaufst sie.",
+   "taetigkeiten": [
+    "Pflanzen vermehren und großziehen",
+    "Werkzeuge und Maschinen benutzen und pflegen",
+    "Pflanzen und Gartenprodukte verkaufen",
+    "Pflanzen-Dekorationen aufstellen und pflegen"
+   ],
+   "wege": [
+    {
+     "abschluss": "CCP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Lycée technique agricole"
+     ],
+     "zugang": "Aus der 5P: mindestens 18 von 54 Modulen bestanden (oder nach einer CIP) und am 1. September mindestens 15 Jahre alt.",
+     "lohn": [
+      "1. Jahr: 689,21 € im Monat",
+      "2. Jahr: 854,62 € im Monat",
+      "3. Jahr: 1 171,64 € im Monat"
+     ],
+     "danach": "Danach kannst du den DAP im selben Beruf machen.",
+     "link": "https://shapeyourfuture.lu/fr/formations/ccp-ah"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/ccp-ah",
+   "quelle": "https://shapeyourfuture.lu/fr/formations/ccp-ah"
+  },
+  {
+   "id": "assistant-pepinieriste-paysagiste",
+   "de": "Baumschul- und Landschaftsgärtnergehilfe",
+   "fr": "Assistant pépiniériste-paysagiste",
+   "abschluss": [
+    "CCP"
+   ],
+   "bereich": "natur",
+   "einfach": "Du ziehst Bäume und Sträucher groß und legst Gärten an.",
+   "taetigkeiten": [
+    "Bäume und Sträucher vermehren und pflegen",
+    "Gartenmaschinen bedienen",
+    "Gärten und Grünflächen anlegen und pflegen"
+   ],
+   "wege": [
+    {
+     "abschluss": "CCP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Lycée technique agricole"
+     ],
+     "zugang": "Aus der 5P: mindestens 18 von 54 Modulen bestanden (oder nach einer CIP) und am 1. September mindestens 15 Jahre alt.",
+     "lohn": [
+      "1. Jahr: 689,21 € im Monat",
+      "2. Jahr: 854,62 € im Monat",
+      "3. Jahr: 1 171,64 € im Monat"
+     ],
+     "danach": "Danach kannst du den DAP im selben Beruf machen.",
+     "link": "https://shapeyourfuture.lu/fr/formations/ccp-hp"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/ccp-hp",
+   "quelle": "https://shapeyourfuture.lu/fr/formations/ccp-hp"
+  },
+  {
+   "id": "boucher-charcutier",
+   "de": "Metzger",
+   "fr": "Boucher-charcutier",
+   "abschluss": [
+    "CCP",
+    "DAP"
+   ],
+   "bereich": "essen",
+   "einfach": "Du schneidest Fleisch, machst Wurst und verkaufst sie.",
+   "taetigkeiten": [
+    "Fleisch zerlegen und schneiden",
+    "Fleisch verpacken und frisch halten",
+    "Fleisch für Wurst und Spezialitäten vorbereiten",
+    "Maschinen reinigen und pflegen"
+   ],
+   "wege": [
+    {
+     "abschluss": "CCP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Bouneweger Lycée Luxembourg"
+     ],
+     "zugang": "Aus der 5P: mindestens 18 von 54 Modulen bestanden (oder nach einer CIP) und am 1. September mindestens 15 Jahre alt.",
+     "lohn": [
+      "1. Jahr: 937,37 € im Monat",
+      "2. Jahr: 1 213,01 € im Monat",
+      "3. Jahr: 1 378,42 € im Monat"
+     ],
+     "danach": "Danach kannst du den DAP im selben Beruf machen.",
+     "link": "https://shapeyourfuture.lu/fr/formations/ccp-bc"
+    },
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Erst im Lycée, danach Lehre mit Lehrvertrag im Betrieb",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Bouneweger Lycée Luxembourg"
+     ],
+     "zugang": "Aus der 5P: mindestens 45 von 54 Modulen – oder die 5AD bestanden.",
+     "lohn": [
+      "vor der Zwischenprüfung: 964,85 € im Monat",
+      "nach der Zwischenprüfung: 1 585,20 € im Monat"
+     ],
+     "francophone": [
+      "Bouneweger Lycée Luxembourg"
+     ],
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-bc",
+     "kategorie": "A"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/ccp-bc",
+   "quelle": "https://men.public.lu/dam-assets/fr/actualites/articles/communiques-conference-presse/2026/06/offre-francophone-formation-professionnelle.pdf"
+  },
+  {
+   "id": "boulanger-patissier",
+   "de": "Bäcker-Konditor",
+   "fr": "Boulanger-pâtissier",
+   "abschluss": [
+    "CCP",
+    "DAP"
+   ],
+   "bereich": "essen",
+   "einfach": "Du backst Brot, Brötchen, Kuchen und Torten.",
+   "taetigkeiten": [
+    "Teige mit der Hand oder der Maschine machen",
+    "Gebäck formen und backen",
+    "Glasuren und Füllungen machen",
+    "Bestellungen vorbereiten"
+   ],
+   "wege": [
+    {
+     "abschluss": "CCP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Bouneweger Lycée Luxembourg"
+     ],
+     "zugang": "Aus der 5P: mindestens 18 von 54 Modulen bestanden (oder nach einer CIP) und am 1. September mindestens 15 Jahre alt.",
+     "lohn": [
+      "1. Jahr: 937,37 € im Monat",
+      "2. Jahr: 1 213,01 € im Monat",
+      "3. Jahr: 1 378,42 € im Monat"
+     ],
+     "danach": "Danach kannst du den DAP im selben Beruf machen.",
+     "link": "https://shapeyourfuture.lu/fr/formations/ccp-bl"
+    },
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Erst im Lycée, danach Lehre mit Lehrvertrag im Betrieb",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Centre national de formation professionnelle continue - Ettelbruck"
+     ],
+     "zugang": "Aus der 5P: mindestens 45 von 54 Modulen – oder die 5AD bestanden.",
+     "lohn": [
+      "vor der Zwischenprüfung: 964,85 € im Monat",
+      "nach der Zwischenprüfung: 1 585,20 € im Monat"
+     ],
+     "francophone": [
+      "Bouneweger Lycée Luxembourg"
+     ],
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-bl",
+     "kategorie": "A"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/ccp-bl",
+   "quelle": "https://men.public.lu/dam-assets/fr/actualites/articles/communiques-conference-presse/2026/06/offre-francophone-formation-professionnelle.pdf",
+   "hinweis": "Die offiziellen Quellen sind hier nicht ganz einheitlich (z. B. Form, Dauer oder Schule). Bitte auf der verlinkten Seite nachsehen."
+  },
+  {
+   "id": "carreleur",
+   "de": "Fliesenleger",
+   "fr": "Carreleur",
+   "abschluss": [
+    "CCP",
+    "DAP"
+   ],
+   "bereich": "bau",
+   "einfach": "Du verlegst Fliesen in Bädern, Küchen und auf Böden.",
+   "taetigkeiten": [
+    "den Boden vorbereiten und ausgleichen",
+    "Dämmung gegen Wärme, Kälte und Lärm einbauen",
+    "Fliesen zuschneiden und verlegen",
+    "die Fugen zwischen den Fliesen machen"
+   ],
+   "wege": [
+    {
+     "abschluss": "CCP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Lycée Josy Barthel"
+     ],
+     "zugang": "Aus der 5P: mindestens 18 von 54 Modulen bestanden (oder nach einer CIP) und am 1. September mindestens 15 Jahre alt.",
+     "lohn": [
+      "1. Jahr: 882,20 € im Monat",
+      "2. Jahr: 1 102,78 € im Monat",
+      "3. Jahr: 1 323,35 € im Monat"
+     ],
+     "danach": "Danach kannst du den DAP im selben Beruf machen.",
+     "link": "https://shapeyourfuture.lu/fr/formations/ccp-cr"
+    },
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Lycée Josy Barthel"
+     ],
+     "zugang": "Aus der 5P: mindestens 45 von 54 Modulen – oder die 5AD bestanden.",
+     "lohn": [
+      "vor der Zwischenprüfung: 1 102,78 € im Monat",
+      "nach der Zwischenprüfung: 1 654,06 € im Monat"
+     ],
+     "danach": "Danach kannst du zum Diplôme de technicien (DT) weitergehen: Génie civil.",
+     "francophone": [
+      "Lycée Josy Barthel"
+     ],
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-cr",
+     "kategorie": "A"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/ccp-cr",
+   "quelle": "https://men.public.lu/dam-assets/fr/actualites/articles/communiques-conference-presse/2026/06/offre-francophone-formation-professionnelle.pdf"
+  },
+  {
+   "id": "coiffeur",
+   "de": "Friseur",
+   "fr": "Coiffeur",
+   "abschluss": [
+    "CCP",
+    "DAP"
+   ],
+   "bereich": "menschen",
+   "einfach": "Du wäschst, schneidest, färbst und frisierst Haare.",
+   "taetigkeiten": [
+    "Haare waschen und die Kopfhaut massieren",
+    "Haare schneiden",
+    "Haare färben und Dauerwellen machen",
+    "Erwachsene und Kinder frisieren"
+   ],
+   "wege": [
+    {
+     "abschluss": "CCP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Lycée Guillaume Kroll",
+      "Lycée technique d'Ettelbruck",
+      "Lycée technique du Centre"
+     ],
+     "zugang": "Aus der 5P: mindestens 18 von 54 Modulen bestanden (oder nach einer CIP) und am 1. September mindestens 15 Jahre alt.",
+     "lohn": [
+      "1. Jahr: 813,24 € im Monat",
+      "2. Jahr: 1 033,81 € im Monat",
+      "3. Jahr: 1 309,46 € im Monat"
+     ],
+     "danach": "Danach kannst du den DAP im selben Beruf machen.",
+     "link": "https://shapeyourfuture.lu/fr/formations/ccp-co"
+    },
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Lycée Guillaume Kroll",
+      "Lycée technique d'Ettelbruck",
+      "Lycée technique du Centre",
+      "Maacher Lycée"
+     ],
+     "zugang": "Aus der 5P: mindestens 45 von 54 Modulen – oder die 5AD bestanden.",
+     "lohn": [
+      "vor der Zwischenprüfung: 988,97 € im Monat",
+      "nach der Zwischenprüfung: 1 554,15 € im Monat"
+     ],
+     "francophone": [
+      "Lycée Guillaume Kroll",
+      "Lycée technique du Centre"
+     ],
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-co",
+     "kategorie": "A"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/ccp-co",
+   "quelle": "https://men.public.lu/dam-assets/fr/actualites/articles/communiques-conference-presse/2026/06/offre-francophone-formation-professionnelle.pdf"
+  },
+  {
+   "id": "commis-de-vente",
+   "de": "Verkäufer",
+   "fr": "Commis de vente",
+   "abschluss": [
+    "CCP"
+   ],
+   "bereich": "verkauf",
+   "einfach": "Du hilfst im Geschäft: Ware einräumen, Kunden bedienen, kassieren.",
+   "taetigkeiten": [
+    "Ware annehmen",
+    "Preise anbringen und Regale auffüllen",
+    "bei Bestellungen und der Inventur helfen",
+    "Kunden empfangen und beraten"
+   ],
+   "wege": [
+    {
+     "abschluss": "CCP",
+     "dauer": "2 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Lycée Mathias Adam",
+      "Lycée technique de Lallange",
+      "Lycée technique du Centre",
+      "Nordstad-Lycée"
+     ],
+     "zugang": "Aus der 5P: mindestens 18 von 54 Modulen bestanden (oder nach einer CIP) und am 1. September mindestens 15 Jahre alt.",
+     "lohn": [
+      "1. Jahr: 551,39 € im Monat",
+      "2. Jahr: 689,21 € im Monat"
+     ],
+     "danach": "Danach kannst du den DAP im selben Beruf machen.",
+     "link": "https://shapeyourfuture.lu/fr/formations/ccp-ve"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/ccp-ve",
+   "quelle": "https://shapeyourfuture.lu/fr/formations/ccp-ve"
+  },
+  {
+   "id": "cordonnier-reparateur",
+   "de": "Reparatur-Schuhmacher",
+   "fr": "Cordonnier-réparateur",
+   "abschluss": [
+    "CCP"
+   ],
+   "bereich": "kreativ",
+   "einfach": "Du reparierst Schuhe und Lederwaren.",
+   "taetigkeiten": [
+    "Schuhe reparieren",
+    "Absätze und Sohlen erneuern",
+    "Lederwaren pflegen und ausbessern"
+   ],
+   "wege": [
+    {
+     "abschluss": "CCP",
+     "dauer": "2 Jahre",
+     "zugang": "Aus der 5P: mindestens 18 von 54 Modulen bestanden (oder nach einer CIP) und am 1. September mindestens 15 Jahre alt."
+    }
+   ],
+   "link": "",
+   "quelle": "https://adem.public.lu/fr/orientation-professionnelle/beruffslescht.html",
+   "hinweis": "Die offiziellen Quellen sind hier nicht ganz einheitlich (z. B. Form, Dauer oder Schule). Bitte auf der verlinkten Seite nachsehen."
+  },
+  {
+   "id": "couvreur",
+   "de": "Dachdecker",
+   "fr": "Couvreur",
+   "abschluss": [
+    "CCP",
+    "DAP"
+   ],
+   "bereich": "bau",
+   "einfach": "Du deckst Dächer – mit Ziegeln, Schiefer und anderen Materialien.",
+   "taetigkeiten": [
+    "Werkzeuge und Maschinen benutzen",
+    "Gerüste aufbauen und sichern",
+    "Pläne lesen und Dachflächen messen",
+    "Dachmaterialien verlegen"
+   ],
+   "wege": [
+    {
+     "abschluss": "CCP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Lycée Josy Barthel"
+     ],
+     "zugang": "Aus der 5P: mindestens 18 von 54 Modulen bestanden (oder nach einer CIP) und am 1. September mindestens 15 Jahre alt.",
+     "lohn": [
+      "1. Jahr: 882,20 € im Monat",
+      "2. Jahr: 1 102,78 € im Monat",
+      "3. Jahr: 1 323,35 € im Monat"
+     ],
+     "danach": "Danach kannst du den DAP im selben Beruf machen.",
+     "link": "https://shapeyourfuture.lu/fr/formations/ccp-cv"
+    },
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch",
+     "lycees": [
+      "Lycée technique du Centre"
+     ],
+     "zugang": "Aus der 5P: mindestens 45 von 54 Modulen – oder die 5AD bestanden.",
+     "lohn": [
+      "vor der Zwischenprüfung: 1 102,78 € im Monat",
+      "nach der Zwischenprüfung: 1 654,06 € im Monat"
+     ],
+     "danach": "Danach kannst du zum Diplôme de technicien (DT) weitergehen: Génie civil.",
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-cv",
+     "kategorie": "A"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/ccp-cv",
+   "quelle": "https://shapeyourfuture.lu/fr/formations/dap-cv"
+  },
+  {
+   "id": "cuisinier",
+   "de": "Koch",
+   "fr": "Cuisinier",
+   "abschluss": [
+    "CCP",
+    "DAP"
+   ],
+   "bereich": "essen",
+   "einfach": "Du kochst im Restaurant warme und kalte Gerichte.",
+   "taetigkeiten": [
+    "Gemüse und Speisen vorbereiten",
+    "Teller schön anrichten",
+    "mit den Küchengeräten arbeiten",
+    "den Arbeitsplatz sauber halten"
+   ],
+   "wege": [
+    {
+     "abschluss": "CCP",
+     "dauer": "2 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Bouneweger Lycée Luxembourg",
+      "École d'hôtellerie et de tourisme du Luxembourg",
+      "École nationale pour adultes"
+     ],
+     "zugang": "Aus der 5P: mindestens 18 von 54 Modulen bestanden (oder nach einer CIP) und am 1. September mindestens 15 Jahre alt.",
+     "lohn": [
+      "1. Jahr: 689,21 € im Monat",
+      "2. Jahr: 1 013,08 € im Monat"
+     ],
+     "danach": "Danach kannst du den DAP im selben Beruf machen.",
+     "link": "https://shapeyourfuture.lu/fr/formations/ccp-cu"
+    },
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Erst im Lycée, danach Lehre mit Lehrvertrag im Betrieb",
+     "sprachen": "Deutsch",
+     "lycees": [
+      "Bouneweger Lycée Luxembourg",
+      "École d'hôtellerie et de tourisme du Luxembourg",
+      "École nationale pour adultes"
+     ],
+     "zugang": "Aus der 5P: mindestens 45 von 54 Modulen – oder die 5AD bestanden.",
+     "lohn": [
+      "vor der Zwischenprüfung: 964,85 € im Monat",
+      "nach der Zwischenprüfung: 1 378,42 € im Monat"
+     ],
+     "danach": "Danach kannst du zum Diplôme de technicien (DT) weitergehen: Hôtellerie.",
+     "francophone": [
+      "Bouneweger Lycée Luxembourg"
+     ],
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-cu",
+     "kategorie": "A"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/ccp-cu",
+   "quelle": "https://men.public.lu/dam-assets/fr/actualites/articles/communiques-conference-presse/2026/06/offre-francophone-formation-professionnelle.pdf",
+   "hinweis": "Die offiziellen Quellen sind hier nicht ganz einheitlich (z. B. Form, Dauer oder Schule). Bitte auf der verlinkten Seite nachsehen."
+  },
+  {
+   "id": "debosseleur-de-vehicules-automoteurs",
+   "de": "Kraftfahrzeugspengler",
+   "fr": "Débosseleur de véhicules automoteurs",
+   "abschluss": [
+    "CCP",
+    "DAP"
+   ],
+   "bereich": "technik",
+   "einfach": "Du machst Beulen an Autos wieder glatt.",
+   "taetigkeiten": [
+    "Beulen mit Hammer und Werkzeug ausbeulen",
+    "Blechteile in die alte Form bringen",
+    "rostige oder kaputte Teile ausbauen und ersetzen",
+    "Teile nach der Reparatur wieder einbauen"
+   ],
+   "wege": [
+    {
+     "abschluss": "CCP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Lycée Bel-Val",
+      "Lycée technique d'Ettelbruck",
+      "Lycée technique du Centre"
+     ],
+     "zugang": "Aus der 5P: mindestens 18 von 54 Modulen bestanden (oder nach einer CIP) und am 1. September mindestens 15 Jahre alt.",
+     "lohn": [
+      "1. Jahr: 620,25 € im Monat",
+      "2. Jahr: 758,17 € im Monat",
+      "3. Jahr: 895,99 € im Monat"
+     ],
+     "danach": "Danach kannst du den DAP im selben Beruf machen.",
+     "link": "https://shapeyourfuture.lu/fr/formations/ccp-de"
+    },
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Lycée Bel-Val",
+      "Lycée technique d'Ettelbruck",
+      "Lycée technique du Centre"
+     ],
+     "zugang": "Aus der 5P: mindestens 45 von 54 Modulen – oder die 5AD bestanden.",
+     "lohn": [
+      "vor der Zwischenprüfung: 689,21 € im Monat",
+      "nach der Zwischenprüfung: 1 033,81 € im Monat"
+     ],
+     "francophone": [
+      "Lycée technique du Centre"
+     ],
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-de",
+     "kategorie": "A"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/ccp-de",
+   "quelle": "https://men.public.lu/dam-assets/fr/actualites/articles/communiques-conference-presse/2026/06/offre-francophone-formation-professionnelle.pdf"
+  },
+  {
+   "id": "electricien",
+   "de": "Elektriker",
+   "fr": "Électricien",
+   "abschluss": [
+    "CCP",
+    "DAP"
+   ],
+   "bereich": "elektro",
+   "einfach": "Du verlegst Kabel und schließt Licht, Steckdosen und Geräte an.",
+   "taetigkeiten": [
+    "Kabel und Leitungen verlegen",
+    "Alarmanlagen und Klingeln einbauen",
+    "Elektrogeräte anschließen",
+    "Material und Werkzeug vorbereiten"
+   ],
+   "wege": [
+    {
+     "abschluss": "CCP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Lycée Guillaume Kroll",
+      "Lycée Mathias Adam",
+      "Nordstad-Lycée"
+     ],
+     "zugang": "Aus der 5P: mindestens 18 von 54 Modulen bestanden (oder nach einer CIP) und am 1. September mindestens 15 Jahre alt.",
+     "lohn": [
+      "1. Jahr: 689,21 € im Monat",
+      "2. Jahr: 799,45 € im Monat",
+      "3. Jahr: 1 033,81 € im Monat"
+     ],
+     "danach": "Danach kannst du den DAP im selben Beruf machen.",
+     "link": "https://shapeyourfuture.lu/fr/formations/ccp-el"
+    },
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Bouneweger Lycée Luxembourg",
+      "École nationale pour adultes",
+      "Lycée Guillaume Kroll",
+      "Lycée Mathias Adam"
+     ],
+     "zugang": "Aus der 5P: mindestens 45 von 54 Modulen, davon mindestens 8 in Mathematik – oder 5AD mit „niveau fort“ in Mathematik.",
+     "lohn": [
+      "vor der Zwischenprüfung: 1 157,84 € im Monat",
+      "nach der Zwischenprüfung: 1 736,72 € im Monat"
+     ],
+     "danach": "Danach kannst du zum Diplôme de technicien (DT) weitergehen: Smart Buildings & Energies.",
+     "francophone": [
+      "Bouneweger Lycée Luxembourg",
+      "Lycée Guillaume Kroll",
+      "Lycée Mathias Adam"
+     ],
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-el",
+     "kategorie": "B"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/ccp-el",
+   "quelle": "https://men.public.lu/dam-assets/fr/actualites/articles/communiques-conference-presse/2026/06/offre-francophone-formation-professionnelle.pdf",
+   "hinweis": "Die offiziellen Quellen sind hier nicht ganz einheitlich (z. B. Form, Dauer oder Schule). Bitte auf der verlinkten Seite nachsehen."
+  },
+  {
+   "id": "installateur-chauffage-sanitaire",
+   "de": "Heizungs- und Sanitärinstallateur",
+   "fr": "Installateur chauffage-sanitaire",
+   "abschluss": [
+    "CCP",
+    "DAP"
+   ],
+   "bereich": "elektro",
+   "einfach": "Du baust Heizungen, Wasserleitungen und Bäder ein.",
+   "taetigkeiten": [
+    "Metall bearbeiten, anpassen und einbauen",
+    "Kunststoffrohre verschweißen",
+    "nach Plan arbeiten",
+    "Boiler, Heizungen und Leitungen montieren"
+   ],
+   "wege": [
+    {
+     "abschluss": "CCP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Lycée technique du Centre"
+     ],
+     "zugang": "Aus der 5P: mindestens 18 von 54 Modulen bestanden (oder nach einer CIP) und am 1. September mindestens 15 Jahre alt.",
+     "lohn": [
+      "1. Jahr: 689,21 € im Monat",
+      "2. Jahr: 854,62 € im Monat",
+      "3. Jahr: 1 171,64 € im Monat"
+     ],
+     "danach": "Danach kannst du den DAP im selben Beruf machen.",
+     "link": "https://shapeyourfuture.lu/fr/formations/ccp-cs"
+    },
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Centre national de formation professionnelle continue - Esch-sur-Alzette",
+      "Lycée Mathias Adam",
+      "Lycée technique d'Ettelbruck",
+      "Lycée technique du Centre"
+     ],
+     "zugang": "Aus der 5P: mindestens 45 von 54 Modulen – oder die 5AD bestanden.",
+     "lohn": [
+      "vor der Zwischenprüfung: 1 157,84 € im Monat",
+      "nach der Zwischenprüfung: 1 736,72 € im Monat"
+     ],
+     "danach": "Danach kannst du zum Diplôme de technicien (DT) weitergehen: Smart Buildings & Energies.",
+     "francophone": [
+      "Centre national de formation professionnelle continue - Esch-sur-Alzette",
+      "Lycée technique du Centre"
+     ],
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-cs",
+     "kategorie": "A"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/ccp-cs",
+   "quelle": "https://men.public.lu/dam-assets/fr/actualites/articles/communiques-conference-presse/2026/06/offre-francophone-formation-professionnelle.pdf"
+  },
+  {
+   "id": "macon",
+   "de": "Maurer",
+   "fr": "Maçon",
+   "abschluss": [
+    "CCP",
+    "DAP"
+   ],
+   "bereich": "bau",
+   "einfach": "Du baust Mauern, Wände und Fundamente.",
+   "taetigkeiten": [
+    "Baustellen einrichten und sichern",
+    "Mörtel und Beton mischen",
+    "Fundamente, Decken und Wände betonieren",
+    "Mauern aus Steinen bauen"
+   ],
+   "wege": [
+    {
+     "abschluss": "CCP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Lycée Josy Barthel"
+     ],
+     "zugang": "Aus der 5P: mindestens 18 von 54 Modulen bestanden (oder nach einer CIP) und am 1. September mindestens 15 Jahre alt.",
+     "lohn": [
+      "1. Jahr: 882,20 € im Monat",
+      "2. Jahr: 1 102,78 € im Monat",
+      "3. Jahr: 1 323,35 € im Monat"
+     ],
+     "danach": "Danach kannst du den DAP im selben Beruf machen.",
+     "link": "https://shapeyourfuture.lu/fr/formations/ccp-mc"
+    },
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Lycée Josy Barthel"
+     ],
+     "zugang": "Aus der 5P: mindestens 45 von 54 Modulen – oder die 5AD bestanden.",
+     "lohn": [
+      "vor der Zwischenprüfung: 1 102,78 € im Monat",
+      "nach der Zwischenprüfung: 1 654,06 € im Monat"
+     ],
+     "danach": "Danach kannst du zum Diplôme de technicien (DT) weitergehen: Génie civil.",
+     "francophone": [
+      "Lycée Josy Barthel"
+     ],
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-mc",
+     "kategorie": "A"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/ccp-mc",
+   "quelle": "https://men.public.lu/dam-assets/fr/actualites/articles/communiques-conference-presse/2026/06/offre-francophone-formation-professionnelle.pdf"
+  },
+  {
+   "id": "marbrier-tailleur-de-pierres",
+   "de": "Marmorschleifer",
+   "fr": "Marbrier-tailleur de pierres",
+   "abschluss": [
+    "CCP",
+    "DAP"
+   ],
+   "bereich": "bau",
+   "einfach": "Du bearbeitest Naturstein und Marmor – für Treppen, Böden und Fensterbänke.",
+   "taetigkeiten": [
+    "Steine vorbereiten, tragen und lagern",
+    "beim Schneiden und Schleifen von Steinen helfen",
+    "Steinböden und Treppen verlegen",
+    "Mörtel vorbereiten"
+   ],
+   "wege": [
+    {
+     "abschluss": "CCP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Lycée Josy Barthel"
+     ],
+     "zugang": "Aus der 5P: mindestens 18 von 54 Modulen bestanden (oder nach einer CIP) und am 1. September mindestens 15 Jahre alt.",
+     "lohn": [
+      "1. Jahr: 882,20 € im Monat",
+      "2. Jahr: 1 102,78 € im Monat",
+      "3. Jahr: 1 323,35 € im Monat"
+     ],
+     "danach": "Danach kannst du den DAP im selben Beruf machen.",
+     "link": "https://shapeyourfuture.lu/fr/formations/ccp-tm"
+    },
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Lycée Josy Barthel"
+     ],
+     "zugang": "Aus der 5P: mindestens 45 von 54 Modulen – oder die 5AD bestanden.",
+     "lohn": [
+      "vor der Zwischenprüfung: 1 102,78 € im Monat",
+      "nach der Zwischenprüfung: 1 654,06 € im Monat"
+     ],
+     "danach": "Danach kannst du zum Diplôme de technicien (DT) weitergehen: Génie civil.",
+     "francophone": [
+      "Lycée Josy Barthel"
+     ],
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-tm",
+     "kategorie": "A"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/ccp-tm",
+   "quelle": "https://men.public.lu/dam-assets/fr/actualites/articles/communiques-conference-presse/2026/06/offre-francophone-formation-professionnelle.pdf"
+  },
+  {
+   "id": "mecanicien-de-cycles",
+   "de": "Fahrradmechaniker",
+   "fr": "Mécanicien de cycles",
+   "abschluss": [
+    "CCP"
+   ],
+   "bereich": "technik",
+   "einfach": "Du baust und reparierst Fahrräder und E-Bikes.",
+   "taetigkeiten": [
+    "Fahrräder und E-Bikes zusammenbauen",
+    "Fahrräder warten und reparieren",
+    "beim Einkauf und Verkauf von Ersatzteilen helfen"
+   ],
+   "wege": [
+    {
+     "abschluss": "CCP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Lycée technique du Centre"
+     ],
+     "zugang": "Aus der 5P: mindestens 18 von 54 Modulen bestanden (oder nach einer CIP) und am 1. September mindestens 15 Jahre alt.",
+     "lohn": [
+      "1. Jahr: 620,25 € im Monat",
+      "2. Jahr: 758,17 € im Monat",
+      "3. Jahr: 895,99 € im Monat"
+     ],
+     "danach": "Danach kannst du den DAP im selben Beruf machen.",
+     "link": "https://shapeyourfuture.lu/fr/formations/ccp-mv"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/ccp-mv",
+   "quelle": "https://shapeyourfuture.lu/fr/formations/ccp-mv"
+  },
+  {
+   "id": "ouvrier-agricole",
+   "de": "Landwirtschaftlicher Arbeiter",
+   "fr": "Ouvrier agricole",
+   "abschluss": [
+    "CCP"
+   ],
+   "bereich": "natur",
+   "einfach": "Du arbeitest auf dem Bauernhof mit Tieren, Pflanzen und Maschinen.",
+   "taetigkeiten": [
+    "Pferde und Kühe versorgen",
+    "auf dem Feld mitarbeiten",
+    "landwirtschaftliche Maschinen bedienen",
+    "mit Kunden umgehen"
+   ],
+   "wege": [
+    {
+     "abschluss": "CCP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Lycée technique agricole"
+     ],
+     "zugang": "Aus der 5P: mindestens 18 von 54 Modulen bestanden (oder nach einer CIP) und am 1. September mindestens 15 Jahre alt.",
+     "lohn": [
+      "1. Jahr: 542,36 € im Monat",
+      "2. Jahr: 881,41 € im Monat",
+      "3. Jahr: 1 291,70 € im Monat"
+     ],
+     "danach": "Danach kannst du den DAP im selben Beruf machen.",
+     "link": "https://shapeyourfuture.lu/fr/formations/ccp-ag"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/ccp-ag",
+   "quelle": "https://shapeyourfuture.lu/fr/formations/ccp-ag"
+  },
+  {
+   "id": "parqueteur",
+   "de": "Parkettleger",
+   "fr": "Parqueteur",
+   "abschluss": [
+    "CCP",
+    "DAP"
+   ],
+   "bereich": "bau",
+   "einfach": "Du verlegst Parkett und Holzböden.",
+   "taetigkeiten": [
+    "den Untergrund vorbereiten",
+    "Parkett und Holzböden verlegen",
+    "Böden pflegen und erneuern",
+    "Holz mit der Hand und der Maschine bearbeiten"
+   ],
+   "wege": [
+    {
+     "abschluss": "CCP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Lycée Guillaume Kroll"
+     ],
+     "zugang": "Aus der 5P: mindestens 18 von 54 Modulen bestanden (oder nach einer CIP) und am 1. September mindestens 15 Jahre alt.",
+     "lohn": [
+      "1. Jahr: 689,21 € im Monat",
+      "2. Jahr: 1 102,78 € im Monat",
+      "3. Jahr: 1 378,42 € im Monat"
+     ],
+     "danach": "Danach kannst du den DAP im selben Beruf machen.",
+     "link": "https://shapeyourfuture.lu/fr/formations/ccp-pl"
+    },
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Lycée Guillaume Kroll"
+     ],
+     "zugang": "Aus der 5P: mindestens 45 von 54 Modulen – oder die 5AD bestanden.",
+     "lohn": [
+      "vor der Zwischenprüfung: 1 102,78 € im Monat",
+      "nach der Zwischenprüfung: 1 654,06 € im Monat"
+     ],
+     "danach": "Danach kannst du zum Diplôme de technicien (DT) weitergehen: Génie civil.",
+     "francophone": [
+      "Lycée Guillaume Kroll"
+     ],
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-pl",
+     "kategorie": "A"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/ccp-pl",
+   "quelle": "https://men.public.lu/dam-assets/fr/actualites/articles/communiques-conference-presse/2026/06/offre-francophone-formation-professionnelle.pdf"
+  },
+  {
+   "id": "patissier-chocolatier-confiseur-glacier",
+   "de": "Konditor, Süßwaren- und Eishersteller",
+   "fr": "Pâtissier-chocolatier-confiseur-glacier",
+   "abschluss": [
+    "CCP",
+    "DAP"
+   ],
+   "bereich": "essen",
+   "einfach": "Du machst feine Torten, Pralinen und Eis.",
+   "taetigkeiten": [
+    "Werkzeuge und Maschinen reinigen",
+    "die richtigen Zutaten auswählen",
+    "Teige und Massen herstellen",
+    "Torten, Gebäck und Glasuren machen"
+   ],
+   "wege": [
+    {
+     "abschluss": "CCP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Bouneweger Lycée Luxembourg"
+     ],
+     "zugang": "Aus der 5P: mindestens 18 von 54 Modulen bestanden (oder nach einer CIP) und am 1. September mindestens 15 Jahre alt.",
+     "lohn": [
+      "1. Jahr: 937,37 € im Monat",
+      "2. Jahr: 1 213,01 € im Monat",
+      "3. Jahr: 1 378,42 € im Monat"
+     ],
+     "danach": "Danach kannst du den DAP im selben Beruf machen.",
+     "link": "https://shapeyourfuture.lu/fr/formations/ccp-pc"
+    },
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Erst im Lycée, danach Lehre mit Lehrvertrag im Betrieb",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Bouneweger Lycée Luxembourg"
+     ],
+     "zugang": "Aus der 5P: mindestens 45 von 54 Modulen – oder die 5AD bestanden.",
+     "lohn": [
+      "vor der Zwischenprüfung: 964,85 € im Monat",
+      "nach der Zwischenprüfung: 1 585,20 € im Monat"
+     ],
+     "francophone": [
+      "Bouneweger Lycée Luxembourg"
+     ],
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-pc",
+     "kategorie": "A"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/ccp-pc",
+   "quelle": "https://men.public.lu/dam-assets/fr/actualites/articles/communiques-conference-presse/2026/06/offre-francophone-formation-professionnelle.pdf"
+  },
+  {
+   "id": "peintre-de-vehicules-automoteurs",
+   "de": "Fahrzeuglackierer",
+   "fr": "Peintre de véhicules automoteurs",
+   "abschluss": [
+    "CCP",
+    "DAP"
+   ],
+   "bereich": "technik",
+   "einfach": "Du lackierst Autos und Motorräder.",
+   "taetigkeiten": [
+    "Oberflächen schleifen und vorbereiten",
+    "Teile für das Lackieren ausbauen",
+    "Stellen abkleben, die keine Farbe bekommen",
+    "mit der Spritzpistole lackieren"
+   ],
+   "wege": [
+    {
+     "abschluss": "CCP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Lycée Bel-Val",
+      "Lycée technique du Centre"
+     ],
+     "zugang": "Aus der 5P: mindestens 18 von 54 Modulen bestanden (oder nach einer CIP) und am 1. September mindestens 15 Jahre alt.",
+     "lohn": [
+      "1. Jahr: 620,25 € im Monat",
+      "2. Jahr: 758,17 € im Monat",
+      "3. Jahr: 895,99 € im Monat"
+     ],
+     "danach": "Danach kannst du den DAP im selben Beruf machen.",
+     "link": "https://shapeyourfuture.lu/fr/formations/ccp-pv"
+    },
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Lycée Bel-Val",
+      "Lycée technique du Centre"
+     ],
+     "zugang": "Aus der 5P: mindestens 45 von 54 Modulen – oder die 5AD bestanden.",
+     "lohn": [
+      "vor der Zwischenprüfung: 689,21 € im Monat",
+      "nach der Zwischenprüfung: 1 033,81 € im Monat"
+     ],
+     "francophone": [
+      "Lycée Bel-Val",
+      "Lycée technique du Centre"
+     ],
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-pv",
+     "kategorie": "A"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/ccp-pv",
+   "quelle": "https://men.public.lu/dam-assets/fr/actualites/articles/communiques-conference-presse/2026/06/offre-francophone-formation-professionnelle.pdf"
+  },
+  {
+   "id": "peintre-decorateur",
+   "de": "Maler-Lackierer",
+   "fr": "Peintre-décorateur",
+   "abschluss": [
+    "CCP",
+    "DAP"
+   ],
+   "bereich": "bau",
+   "einfach": "Du streichst Wände, tapezierst und gestaltest Räume.",
+   "taetigkeiten": [
+    "Wände und Flächen vorbereiten",
+    "tapezieren und kleben",
+    "Farbe und Dekorputz auftragen",
+    "Material und Werkzeug vorbereiten"
+   ],
+   "wege": [
+    {
+     "abschluss": "CCP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Lycée Mathias Adam",
+      "Lycée technique du Centre",
+      "Nordstad-Lycée"
+     ],
+     "zugang": "Aus der 5P: mindestens 18 von 54 Modulen bestanden (oder nach einer CIP) und am 1. September mindestens 15 Jahre alt.",
+     "lohn": [
+      "1. Jahr: 551,39 € im Monat",
+      "2. Jahr: 758,07 € im Monat",
+      "3. Jahr: 964,85 € im Monat"
+     ],
+     "danach": "Danach kannst du den DAP im selben Beruf machen.",
+     "link": "https://shapeyourfuture.lu/fr/formations/ccp-pe"
+    },
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Lycée Mathias Adam",
+      "Lycée technique du Centre",
+      "Nordstad-Lycée"
+     ],
+     "zugang": "Aus der 5P: mindestens 45 von 54 Modulen – oder die 5AD bestanden.",
+     "lohn": [
+      "vor der Zwischenprüfung: 709,85 € im Monat",
+      "nach der Zwischenprüfung: 1 268,18 € im Monat"
+     ],
+     "francophone": [
+      "Lycée technique du Centre"
+     ],
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-pe",
+     "kategorie": "A"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/ccp-pe",
+   "quelle": "https://men.public.lu/dam-assets/fr/actualites/articles/communiques-conference-presse/2026/06/offre-francophone-formation-professionnelle.pdf"
+  },
+  {
+   "id": "plafonneur-facadier",
+   "de": "Gipser und Fassadenmacher",
+   "fr": "Plafonneur-façadier",
+   "abschluss": [
+    "CCP",
+    "DAP"
+   ],
+   "bereich": "bau",
+   "einfach": "Du verputzt Wände, Decken und Fassaden.",
+   "taetigkeiten": [
+    "Wände, Decken und Fassaden vorbereiten",
+    "Gips und Putz auftragen",
+    "Dämmung an Fassaden anbringen",
+    "Wände ausbessern"
+   ],
+   "wege": [
+    {
+     "abschluss": "CCP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Lycée Josy Barthel"
+     ],
+     "zugang": "Aus der 5P: mindestens 18 von 54 Modulen bestanden (oder nach einer CIP) und am 1. September mindestens 15 Jahre alt.",
+     "lohn": [
+      "1. Jahr: 882,20 € im Monat",
+      "2. Jahr: 1 102,78 € im Monat",
+      "3. Jahr: 1 323,35 € im Monat"
+     ],
+     "danach": "Danach kannst du den DAP im selben Beruf machen.",
+     "link": "https://shapeyourfuture.lu/fr/formations/ccp-pf"
+    },
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Lycée Josy Barthel"
+     ],
+     "zugang": "Aus der 5P: mindestens 45 von 54 Modulen – oder die 5AD bestanden.",
+     "lohn": [
+      "vor der Zwischenprüfung: 1 102,78 € im Monat",
+      "nach der Zwischenprüfung: 1 654,06 € im Monat"
+     ],
+     "danach": "Danach kannst du zum Diplôme de technicien (DT) weitergehen: Génie civil.",
+     "francophone": [
+      "Lycée Josy Barthel"
+     ],
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-pf",
+     "kategorie": "A"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/ccp-pf",
+   "quelle": "https://men.public.lu/dam-assets/fr/actualites/articles/communiques-conference-presse/2026/06/offre-francophone-formation-professionnelle.pdf"
+  },
+  {
+   "id": "serveur-de-restaurant",
+   "de": "Kellner",
+   "fr": "Serveur de restaurant",
+   "abschluss": [
+    "CCP",
+    "DAP"
+   ],
+   "bereich": "essen",
+   "einfach": "Du bedienst die Gäste im Restaurant.",
+   "taetigkeiten": [
+    "den Gastraum vorbereiten",
+    "Gäste empfangen, auch am Telefon",
+    "Bestellungen aufnehmen",
+    "Getränke und Speisen servieren und kassieren"
+   ],
+   "wege": [
+    {
+     "abschluss": "CCP",
+     "dauer": "2 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Bouneweger Lycée Luxembourg",
+      "École d'hôtellerie et de tourisme du Luxembourg"
+     ],
+     "zugang": "Aus der 5P: mindestens 18 von 54 Modulen bestanden (oder nach einer CIP) und am 1. September mindestens 15 Jahre alt.",
+     "lohn": [
+      "1. Jahr: 689,21 € im Monat",
+      "2. Jahr: 1 013,08 € im Monat"
+     ],
+     "danach": "Danach kannst du den DAP im selben Beruf machen.",
+     "link": "https://shapeyourfuture.lu/fr/formations/ccp-gr"
+    },
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch, Französisch, Englisch",
+     "lycees": [
+      "Bouneweger Lycée Luxembourg",
+      "École d'hôtellerie et de tourisme du Luxembourg"
+     ],
+     "zugang": "Aus der 5P: mindestens 45 von 54 Modulen – oder die 5AD bestanden.",
+     "lohn": [
+      "vor der Zwischenprüfung: 964,85 € im Monat",
+      "nach der Zwischenprüfung: 1 309,46 € im Monat"
+     ],
+     "danach": "Danach kannst du zum Diplôme de technicien (DT) weitergehen: Hôtellerie.",
+     "francophone": [
+      "Bouneweger Lycée Luxembourg",
+      "École d'hôtellerie et de tourisme du Luxembourg"
+     ],
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-gr",
+     "kategorie": "A"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/ccp-gr",
+   "quelle": "https://men.public.lu/dam-assets/fr/actualites/articles/communiques-conference-presse/2026/06/offre-francophone-formation-professionnelle.pdf",
+   "hinweis": "Der DAP heißt auf dem offiziellen Portal inzwischen „Service et conseil client en restauration“."
+  },
+  {
+   "id": "agent-administratif-et-commercial",
+   "de": "Bürokaufmann",
+   "fr": "Agent administratif et commercial",
+   "abschluss": [
+    "DAP"
+   ],
+   "bereich": "buero",
+   "einfach": "Du arbeitest im Büro: Kunden empfangen, Post, Termine, Unterlagen.",
+   "taetigkeiten": [
+    "Besucher und Kunden empfangen und informieren",
+    "die Post bearbeiten",
+    "Termine planen",
+    "Unterlagen ordnen und Büromaterial verwalten"
+   ],
+   "wege": [
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Erst im Lycée, danach Lehre mit Lehrvertrag im Betrieb",
+     "sprachen": "Deutsch, Französisch, Englisch",
+     "lycees": [
+      "Bouneweger Lycée Luxembourg",
+      "Centre national de formation professionnelle continue - Esch-sur-Alzette",
+      "Centre national de formation professionnelle continue - Ettelbruck",
+      "École Privée Sainte-Anne",
+      "Lënster Lycée International School",
+      "Lycée Mathias Adam",
+      "Lycée technique d'Ettelbruck",
+      "Lycée technique de Lallange",
+      "Lycée technique du Centre",
+      "Maacher Lycée"
+     ],
+     "zugang": "Nur mit bestandener 5G – aus der 5P oder 5AD geht es nicht direkt.",
+     "lohn": [
+      "vor der Zwischenprüfung: 758,17 € im Monat",
+      "nach der Zwischenprüfung: 1 309,46 € im Monat"
+     ],
+     "danach": "Danach kannst du zum Diplôme de technicien (DT) weitergehen: Administration et commerce.",
+     "francophone": [
+      "Centre national de formation professionnelle continue - Esch-sur-Alzette",
+      "Lycée Mathias Adam",
+      "Lycée technique du Centre",
+      "Lycée technique d'Ettelbruck"
+     ],
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-cm",
+     "kategorie": "C"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/dap-cm",
+   "quelle": "https://men.public.lu/dam-assets/fr/actualites/articles/communiques-conference-presse/2026/06/offre-francophone-formation-professionnelle.pdf"
+  },
+  {
+   "id": "agent-de-voyages",
+   "de": "Reiseverkehrskaufmann",
+   "fr": "Agent de voyages",
+   "abschluss": [
+    "DAP"
+   ],
+   "bereich": "verkauf",
+   "einfach": "Du verkaufst Reisen und berätst Kunden im Reisebüro.",
+   "taetigkeiten": [
+    "Reisen und Angebote vorstellen",
+    "Kunden am Computer beraten",
+    "Buchungen und Unterlagen erstellen",
+    "kassieren"
+   ],
+   "wege": [
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch",
+     "lycees": [
+      "Bouneweger Lycée Luxembourg"
+     ],
+     "zugang": "Nur mit bestandener 5G – aus der 5P oder 5AD geht es nicht direkt.",
+     "lohn": [
+      "vor der Zwischenprüfung: 758,17 € im Monat",
+      "nach der Zwischenprüfung: 1 309,46 € im Monat"
+     ],
+     "danach": "Danach kannst du zum Diplôme de technicien (DT) weitergehen: Hôtellerie.",
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-bv",
+     "kategorie": "C"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/dap-bv",
+   "quelle": "https://shapeyourfuture.lu/fr/formations/dap-bv"
+  },
+  {
+   "id": "agent-d-inclusion",
+   "de": "Fachkraft für Inklusion",
+   "fr": "Agent d’inclusion",
+   "abschluss": [
+    "DAP"
+   ],
+   "bereich": "menschen",
+   "einfach": "Du begleitest Kinder und Jugendliche mit besonderem Förderbedarf.",
+   "taetigkeiten": [
+    "Kinder mit besonderem Bedarf begleiten",
+    "Spiele und kreative Aktivitäten planen",
+    "eine sichere Umgebung schaffen",
+    "Lehrkräfte in der Klasse unterstützen"
+   ],
+   "wege": [
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Erst im Lycée, danach Lehre mit Lehrvertrag im Betrieb",
+     "sprachen": "Deutsch",
+     "lycees": [
+      "Bouneweger Lycée Luxembourg",
+      "École nationale pour adultes",
+      "École Privée Sainte-Anne",
+      "Lycée Bel-Val",
+      "Lycée des Arts et Métiers",
+      "Lycée du Nord",
+      "Maacher Lycée"
+     ],
+     "zugang": "Aus der 5P: mindestens 45 von 54 Modulen – oder die 5AD bestanden.",
+     "lohn": [
+      "vor der Zwischenprüfung: 895,99 € im Monat",
+      "nach der Zwischenprüfung: 1 378,42 € im Monat"
+     ],
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-ic",
+     "kategorie": "A"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/dap-ic",
+   "quelle": "https://shapeyourfuture.lu/fr/formations/dap-ic"
+  },
+  {
+   "id": "agent-socio-pedagogique",
+   "de": "Sozio-pädagogische Fachkraft",
+   "fr": "Agent socio-pédagogique",
+   "abschluss": [
+    "DAP"
+   ],
+   "bereich": "menschen",
+   "einfach": "Du betreust Kinder in der Kinderkrippe oder Maison relais.",
+   "taetigkeiten": [
+    "Kinder empfangen",
+    "Spiele und kreative Aktivitäten machen",
+    "kleinen Kindern im Alltag helfen",
+    "bei Ausflügen dabei sein"
+   ],
+   "wege": [
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Ganz im Lycée, mit Praktika (mind. 12 Wochen)",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Bouneweger Lycée Luxembourg",
+      "Lycée Guillaume Kroll",
+      "Lycée Nic-Biever",
+      "Lycée des Arts et Métiers",
+      "Lycée du Nord",
+      "Lycée technique du Centre",
+      "Maacher Lycée",
+      "Nordstad-Lycée",
+      "École Privée Fieldgen",
+      "École Privée Marie-Consolatrice",
+      "École Privée Sainte-Anne",
+      "École nationale pour adultes"
+     ],
+     "zugang": "Aus der 5P: mindestens 45 von 54 Modulen – oder die 5AD bestanden.",
+     "lohn": [
+      "vor der Zwischenprüfung: 895,99 € im Monat",
+      "nach der Zwischenprüfung: 1 378,42 € im Monat"
+     ],
+     "francophone": [
+      "Lycée Mathias Adam",
+      "Lycée technique du Centre",
+      "École Privée Sainte-Anne"
+     ],
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-ed",
+     "kategorie": "A"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/dap-ed",
+   "quelle": "https://men.public.lu/dam-assets/fr/actualites/articles/communiques-conference-presse/2026/06/offre-francophone-formation-professionnelle.pdf",
+   "hinweis": "Die offiziellen Quellen sind hier nicht ganz einheitlich (z. B. Form, Dauer oder Schule). Bitte auf der verlinkten Seite nachsehen."
+  },
+  {
+   "id": "agriculteur",
+   "de": "Landwirt",
+   "fr": "Agriculteur",
+   "abschluss": [
+    "DAP"
+   ],
+   "bereich": "natur",
+   "einfach": "Du führst einen Bauernhof mit Feldern und Tieren.",
+   "taetigkeiten": [
+    "den Boden bearbeiten und düngen",
+    "Pflanzen anbauen und ernten",
+    "Tiere halten, versorgen und verkaufen",
+    "Milch und Fleisch gewinnen"
+   ],
+   "wege": [
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Ganz im Lycée, mit Praktika (mind. 12 Wochen)",
+     "sprachen": "Deutsch",
+     "lycees": [
+      "Lycée technique agricole"
+     ],
+     "zugang": "Aus der 5P: mindestens 45 von 54 Modulen – oder die 5AD bestanden.",
+     "danach": "Danach kannst du zum Diplôme de technicien (DT) weitergehen: Agriculture.",
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-ag",
+     "kategorie": "A"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/dap-ag",
+   "quelle": "https://shapeyourfuture.lu/fr/formations/dap-ag"
+  },
+  {
+   "id": "aide-soignant",
+   "de": "Krankenpflegerhelfer",
+   "fr": "Aide-soignant",
+   "abschluss": [
+    "DAP"
+   ],
+   "bereich": "menschen",
+   "einfach": "Du hilfst kranken und alten Menschen bei der Pflege.",
+   "taetigkeiten": [
+    "beim Essen und Trinken helfen",
+    "bei der Körperpflege helfen",
+    "einfache Pflegearbeiten machen",
+    "zuhören und unterstützen"
+   ],
+   "wege": [
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Erst im Lycée, danach Lehre mit Lehrvertrag im Betrieb",
+     "sprachen": "Deutsch",
+     "lycees": [
+      "École nationale de santé du Luxembourg"
+     ],
+     "zugang": "Nur mit bestandener 5G – aus der 5P oder 5AD geht es nicht direkt.",
+     "lohn": [
+      "vor der Zwischenprüfung: 895,99 € im Monat",
+      "nach der Zwischenprüfung: 1 378,42 € im Monat"
+     ],
+     "francophone": [
+      "École nationale de santé du Luxembourg"
+     ],
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-as",
+     "kategorie": "C"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/dap-as",
+   "quelle": "https://men.public.lu/dam-assets/fr/actualites/articles/communiques-conference-presse/2026/06/offre-francophone-formation-professionnelle.pdf",
+   "hinweis": "Die offiziellen Quellen sind hier nicht ganz einheitlich (z. B. Form, Dauer oder Schule). Bitte auf der verlinkten Seite nachsehen."
+  },
+  {
+   "id": "assistant-en-pharmacie",
+   "de": "Apothekenhelfer",
+   "fr": "Assistant en pharmacie",
+   "abschluss": [
+    "DAP"
+   ],
+   "bereich": "verkauf",
+   "einfach": "Du arbeitest in der Apotheke und berätst Kunden.",
+   "taetigkeiten": [
+    "Medikamente vorbereiten",
+    "Kunden beraten und Medikamente verkaufen",
+    "Bestellungen und Lager verwalten",
+    "im Büro mithelfen"
+   ],
+   "wege": [
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Erst im Lycée, danach Lehre mit Lehrvertrag im Betrieb",
+     "sprachen": "Deutsch",
+     "lycees": [
+      "École nationale de santé du Luxembourg"
+     ],
+     "lohn": [
+      "vor der Zwischenprüfung: 551,39 € im Monat",
+      "nach der Zwischenprüfung: 1 309,46 € im Monat"
+     ],
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-ap"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/dap-ap",
+   "quelle": "https://shapeyourfuture.lu/fr/formations/dap-ap",
+   "hinweis": "Die offiziellen Quellen sind hier nicht ganz einheitlich (z. B. Form, Dauer oder Schule). Bitte auf der verlinkten Seite nachsehen."
+  },
+  {
+   "id": "carrossier",
+   "de": "Karosseriebauer",
+   "fr": "Carrossier",
+   "abschluss": [
+    "DAP"
+   ],
+   "bereich": "technik",
+   "einfach": "Du reparierst und baust Karosserien von Fahrzeugen.",
+   "taetigkeiten": [
+    "Fahrgestelle und Karosserien reparieren",
+    "Karosserieteile bauen und zusammensetzen",
+    "mit Messgeräten arbeiten",
+    "Bleche bearbeiten"
+   ],
+   "wege": [
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Lycée technique du Centre"
+     ],
+     "zugang": "Aus der 5P: mindestens 45 von 54 Modulen – oder die 5AD bestanden.",
+     "lohn": [
+      "vor der Zwischenprüfung: 689,21 € im Monat",
+      "nach der Zwischenprüfung: 1 033,81 € im Monat"
+     ],
+     "francophone": [
+      "Lycée technique du Centre"
+     ],
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-ca",
+     "kategorie": "A"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/dap-ca",
+   "quelle": "https://men.public.lu/dam-assets/fr/actualites/articles/communiques-conference-presse/2026/06/offre-francophone-formation-professionnelle.pdf"
+  },
+  {
+   "id": "charpentier",
+   "de": "Zimmerer",
+   "fr": "Charpentier",
+   "abschluss": [
+    "DAP"
+   ],
+   "bereich": "bau",
+   "einfach": "Du baust mit Holz: Dachstühle, Holzhäuser und Treppen.",
+   "taetigkeiten": [
+    "Holzbauten errichten",
+    "Innenausbau mit Holz",
+    "Pläne lesen",
+    "Holz schützen"
+   ],
+   "wege": [
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Lycée technique du Centre"
+     ],
+     "zugang": "Aus der 5P: mindestens 45 von 54 Modulen – oder die 5AD bestanden.",
+     "lohn": [
+      "vor der Zwischenprüfung: 1 102,78 € im Monat",
+      "nach der Zwischenprüfung: 1 654,06 € im Monat"
+     ],
+     "danach": "Danach kannst du zum Diplôme de technicien (DT) weitergehen: Génie civil.",
+     "francophone": [
+      "Lycée technique du Centre"
+     ],
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-ct",
+     "kategorie": "A"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/dap-ct",
+   "quelle": "https://men.public.lu/dam-assets/fr/actualites/articles/communiques-conference-presse/2026/06/offre-francophone-formation-professionnelle.pdf"
+  },
+  {
+   "id": "conseiller-en-vente",
+   "de": "Kaufmann im Einzelhandel",
+   "fr": "Conseiller en vente",
+   "abschluss": [
+    "DAP"
+   ],
+   "bereich": "verkauf",
+   "einfach": "Du berätst Kunden im Geschäft und verkaufst.",
+   "taetigkeiten": [
+    "Kunden empfangen und beraten",
+    "kassieren",
+    "Stammkunden betreuen",
+    "Ware annehmen und schön präsentieren"
+   ],
+   "wege": [
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Bouneweger Lycée Luxembourg",
+      "Centre national de formation professionnelle continue - Esch-sur-Alzette",
+      "Centre national de formation professionnelle continue - Ettelbruck",
+      "Lycée du Nord",
+      "Lycée Mathias Adam",
+      "Lycée Nic-Biever",
+      "Lycée technique d'Ettelbruck",
+      "Lycée technique de Lallange",
+      "Lycée technique du Centre",
+      "Maacher Lycée"
+     ],
+     "zugang": "Aus der 5P: mindestens 45 von 54 Modulen – oder die 5AD bestanden.",
+     "lohn": [
+      "vor der Zwischenprüfung: 758,17 € im Monat",
+      "nach der Zwischenprüfung: 1 033,72 € im Monat"
+     ],
+     "danach": "Danach kannst du zum Diplôme de technicien (DT) weitergehen: Vente et gestion.",
+     "francophone": [
+      "Centre national de formation professionnelle continue - Esch-sur-Alzette",
+      "Lycée technique de Lallange"
+     ],
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-ve",
+     "kategorie": "A"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/dap-ve",
+   "quelle": "https://men.public.lu/dam-assets/fr/actualites/articles/communiques-conference-presse/2026/06/offre-francophone-formation-professionnelle.pdf"
+  },
+  {
+   "id": "constructeur-metallique",
+   "de": "Metallbauer",
+   "fr": "Constructeur métallique",
+   "abschluss": [
+    "DAP"
+   ],
+   "bereich": "technik",
+   "einfach": "Du baust aus Metall: Tore, Geländer, Treppen und Stahlteile.",
+   "taetigkeiten": [
+    "Metallteile herstellen und reparieren",
+    "auf Baustellen montieren",
+    "Türen, Fenster und Geländer bauen",
+    "Teile mit Maschinen herstellen"
+   ],
+   "wege": [
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Ganz im Lycée, mit Praktika (mind. 12 Wochen)",
+     "sprachen": "Deutsch",
+     "lycees": [
+      "Lycée privé Emile Metz"
+     ],
+     "zugang": "Aus der 5P: mindestens 45 von 54 Modulen, davon mindestens 8 in Mathematik – oder 5AD mit „niveau fort“ in Mathematik.",
+     "danach": "Danach kannst du zum Diplôme de technicien (DT) weitergehen: Mécanique générale.",
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-sc",
+     "kategorie": "B"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/dap-sc",
+   "quelle": "https://shapeyourfuture.lu/fr/formations/dap-sc"
+  },
+  {
+   "id": "decorateur",
+   "de": "Schaufenstergestalter",
+   "fr": "Décorateur",
+   "abschluss": [
+    "DAP"
+   ],
+   "bereich": "kreativ",
+   "einfach": "Du gestaltest Schaufenster, Stände und Werbung.",
+   "taetigkeiten": [
+    "Waren und Produkte schön präsentieren",
+    "Werbedekoration gestalten",
+    "Messestände und Bühnen aufbauen",
+    "Schaufenster dekorieren"
+   ],
+   "wege": [
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch",
+     "lycees": [
+      "Lycée des Arts et Métiers"
+     ],
+     "zugang": "Aus der 5P: mindestens 45 von 54 Modulen – oder die 5AD bestanden.",
+     "lohn": [
+      "vor der Zwischenprüfung: 758,17 € im Monat",
+      "nach der Zwischenprüfung: 1 309,46 € im Monat"
+     ],
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-dc",
+     "kategorie": "A"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/dap-dc",
+   "quelle": "https://shapeyourfuture.lu/fr/formations/dap-dc"
+  },
+  {
+   "id": "dessinateur-en-batiment",
+   "de": "Bauzeichner",
+   "fr": "Dessinateur en bâtiment",
+   "abschluss": [
+    "DAP"
+   ],
+   "bereich": "buero",
+   "einfach": "Du zeichnest Pläne für Häuser und Bauwerke – meist am Computer.",
+   "taetigkeiten": [
+    "Gebäude vermessen",
+    "Baupläne zeichnen",
+    "Detailpläne zeichnen",
+    "Modelle bauen"
+   ],
+   "wege": [
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch",
+     "lycees": [
+      "Lycée Josy Barthel"
+     ],
+     "zugang": "Aus der 5P: mindestens 45 von 54 Modulen, davon mindestens 8 in Mathematik – oder 5AD mit „niveau fort“ in Mathematik.",
+     "lohn": [
+      "vor der Zwischenprüfung: 758,17 € im Monat",
+      "nach der Zwischenprüfung: 1 309,46 € im Monat"
+     ],
+     "danach": "Danach kannst du zum Diplôme de technicien (DT) weitergehen: Génie civil.",
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-db",
+     "kategorie": "B"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/dap-db",
+   "quelle": "https://shapeyourfuture.lu/fr/formations/dap-db"
+  },
+  {
+   "id": "electro-technologies",
+   "de": "Electro-Technologies",
+   "fr": "Électro-Technologies",
+   "abschluss": [
+    "DAP"
+   ],
+   "bereich": "elektro",
+   "einfach": "Du wartest und reparierst elektrische Anlagen und Maschinen.",
+   "taetigkeiten": [
+    "Maschinen und Anlagen überwachen und warten",
+    "Reparaturen machen",
+    "Stromverteilung in Betrieb nehmen",
+    "Schaltschränke bauen"
+   ],
+   "wege": [
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Erst im Lycée, danach Lehre mit Lehrvertrag im Betrieb",
+     "sprachen": "Deutsch, Französisch, Englisch",
+     "lycees": [
+      "Bouneweger Lycée Luxembourg"
+     ],
+     "lohn": [
+      "vor der Zwischenprüfung: 758,17 € im Monat",
+      "nach der Zwischenprüfung: 1 309,46 € im Monat"
+     ],
+     "francophone": [
+      "Lycée Guillaume Kroll",
+      "Lënster Lycée International School",
+      "Lycée du Nord"
+     ],
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-et"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/dap-et",
+   "quelle": "https://men.public.lu/dam-assets/fr/actualites/articles/communiques-conference-presse/2026/06/offre-francophone-formation-professionnelle.pdf",
+   "hinweis": "Die offiziellen Quellen sind hier nicht ganz einheitlich (z. B. Form, Dauer oder Schule). Bitte auf der verlinkten Seite nachsehen."
+  },
+  {
+   "id": "electronicien-en-energie",
+   "de": "Électronicien en énergie",
+   "fr": "Électronicien en énergie",
+   "abschluss": [
+    "DAP"
+   ],
+   "bereich": "elektro",
+   "einfach": "Du arbeitest mit elektrischen Anlagen und Energietechnik.",
+   "taetigkeiten": [],
+   "wege": [
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Erst im Lycée, danach Lehre mit Lehrvertrag im Betrieb",
+     "sprachen": "Deutsch",
+     "lycees": [
+      "Lycée des Arts et Métiers",
+      "Lycée du Nord",
+      "Lycée Guillaume Kroll",
+      "Lycée privé Emile Metz",
+      "Lycée technique d'Ettelbruck",
+      "Maacher Lycée"
+     ],
+     "zugang": "Nur mit bestandener 5G – aus der 5P oder 5AD geht es nicht direkt.",
+     "lohn": [
+      "vor der Zwischenprüfung: 758,17 € im Monat",
+      "nach der Zwischenprüfung: 1 309,46 € im Monat"
+     ],
+     "danach": "Danach kannst du zum Diplôme de technicien (DT) weitergehen: Smart Buildings & Energies et Mécatronique.",
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-ee",
+     "kategorie": "C"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/dap-ee",
+   "quelle": "https://shapeyourfuture.lu/fr/formations/dap-ee",
+   "hinweis": "Die offiziellen Quellen sind hier nicht ganz einheitlich (z. B. Form, Dauer oder Schule). Bitte auf der verlinkten Seite nachsehen."
+  },
+  {
+   "id": "estheticien",
+   "de": "Kosmetiker",
+   "fr": "Esthéticien",
+   "abschluss": [
+    "DAP"
+   ],
+   "bereich": "menschen",
+   "einfach": "Du pflegst Haut, Hände und Füße und machst schön.",
+   "taetigkeiten": [
+    "Kundinnen und Kunden empfangen und beraten",
+    "Maniküre und Pediküre",
+    "Gesichtspflege",
+    "Wimpern und Augenbrauen färben"
+   ],
+   "wege": [
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Lycée Guillaume Kroll",
+      "Lycée technique du Centre"
+     ],
+     "zugang": "Aus der 5P: mindestens 45 von 54 Modulen – oder die 5AD bestanden.",
+     "lohn": [
+      "vor der Zwischenprüfung: 847,77 € im Monat",
+      "nach der Zwischenprüfung: 1 350,84 € im Monat"
+     ],
+     "francophone": [
+      "Lycée Guillaume Kroll",
+      "Lycée technique du Centre"
+     ],
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-es",
+     "kategorie": "A"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/dap-es",
+   "quelle": "https://men.public.lu/dam-assets/fr/actualites/articles/communiques-conference-presse/2026/06/offre-francophone-formation-professionnelle.pdf"
+  },
+  {
+   "id": "ferblantier-zingueur",
+   "de": "Bauklempner",
+   "fr": "Ferblantier-zingueur",
+   "abschluss": [
+    "DAP"
+   ],
+   "bereich": "bau",
+   "einfach": "Du arbeitest mit Blech an Dächern und Fassaden.",
+   "taetigkeiten": [
+    "Blech biegen, falzen und löten",
+    "Dach- und Fassadenverkleidungen bauen",
+    "Dachrinnen und Regenrohre montieren",
+    "Blechteile reparieren"
+   ],
+   "wege": [
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch",
+     "lycees": [
+      "Lycée technique du Centre"
+     ],
+     "zugang": "Aus der 5P: mindestens 45 von 54 Modulen – oder die 5AD bestanden.",
+     "lohn": [
+      "vor der Zwischenprüfung: 1 102,78 € im Monat",
+      "nach der Zwischenprüfung: 1 654,06 € im Monat"
+     ],
+     "danach": "Danach kannst du zum Diplôme de technicien (DT) weitergehen: Génie civil.",
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-fz",
+     "kategorie": "A"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/dap-fz",
+   "quelle": "https://shapeyourfuture.lu/fr/formations/dap-fz"
+  },
+  {
+   "id": "fleuriste",
+   "de": "Florist",
+   "fr": "Fleuriste",
+   "abschluss": [
+    "DAP"
+   ],
+   "bereich": "kreativ",
+   "einfach": "Du machst Blumensträuße und Gestecke und verkaufst sie.",
+   "taetigkeiten": [
+    "Sträuße und Blumengestecke machen",
+    "Schaufenster und Laden gestalten",
+    "Pflanzen pflegen",
+    "Blumen und Pflanzen verkaufen"
+   ],
+   "wege": [
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Erst im Lycée, danach Lehre mit Lehrvertrag im Betrieb",
+     "sprachen": "Deutsch",
+     "lycees": [
+      "Lycée technique agricole"
+     ],
+     "zugang": "Aus der 5P: mindestens 45 von 54 Modulen – oder die 5AD bestanden.",
+     "lohn": [
+      "vor der Zwischenprüfung: 709,85 € im Monat",
+      "nach der Zwischenprüfung: 1 268,08 € im Monat"
+     ],
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-hf",
+     "kategorie": "A"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/dap-hf",
+   "quelle": "https://shapeyourfuture.lu/fr/formations/dap-hf",
+   "hinweis": "Die offiziellen Quellen sind hier nicht ganz einheitlich (z. B. Form, Dauer oder Schule). Bitte auf der verlinkten Seite nachsehen."
+  },
+  {
+   "id": "floriculteur",
+   "de": "Zierpflanzengärtner",
+   "fr": "Floriculteur",
+   "abschluss": [
+    "DAP"
+   ],
+   "bereich": "natur",
+   "einfach": "Du ziehst Blumen und Topfpflanzen in der Gärtnerei.",
+   "taetigkeiten": [
+    "Topfpflanzen und Schnittblumen ziehen",
+    "Erde und Saat vorbereiten",
+    "Pflanzen umtopfen, pflegen und schneiden",
+    "Pflanzen kaufen und verkaufen"
+   ],
+   "wege": [
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Erst im Lycée, danach Lehre mit Lehrvertrag im Betrieb",
+     "sprachen": "Deutsch",
+     "lycees": [
+      "Lycée technique agricole"
+     ],
+     "zugang": "Aus der 5P: mindestens 45 von 54 Modulen – oder die 5AD bestanden.",
+     "lohn": [
+      "vor der Zwischenprüfung: 709,85 € im Monat",
+      "nach der Zwischenprüfung: 1 268,08 € im Monat"
+     ],
+     "danach": "Danach kannst du zum Diplôme de technicien (DT) weitergehen: Horticulture.",
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-fc",
+     "kategorie": "A"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/dap-fc",
+   "quelle": "https://shapeyourfuture.lu/fr/formations/dap-fc",
+   "hinweis": "Die offiziellen Quellen sind hier nicht ganz einheitlich (z. B. Form, Dauer oder Schule). Bitte auf der verlinkten Seite nachsehen."
+  },
+  {
+   "id": "gestionnaire-qualifie-en-logistique",
+   "de": "Fachkraft für Logistik",
+   "fr": "Gestionnaire qualifié en logistique",
+   "abschluss": [
+    "DAP"
+   ],
+   "bereich": "verkauf",
+   "einfach": "Du arbeitest im Lager: Ware annehmen, lagern und verschicken.",
+   "taetigkeiten": [
+    "Ware annehmen, prüfen und wiegen",
+    "Transportgeräte und Hubwagen bedienen",
+    "Ware lagern und den Bestand verwalten",
+    "Ware verpacken und Lastwagen beladen"
+   ],
+   "wege": [
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Bouneweger Lycée Luxembourg"
+     ],
+     "zugang": "Nur mit bestandener 5G – aus der 5P oder 5AD geht es nicht direkt.",
+     "lohn": [
+      "vor der Zwischenprüfung: 758,17 € im Monat",
+      "nach der Zwischenprüfung: 1 309,46 € im Monat"
+     ],
+     "danach": "Danach kannst du zum Diplôme de technicien (DT) weitergehen: Logistique.",
+     "francophone": [
+      "Bouneweger Lycée Luxembourg"
+     ],
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-gl",
+     "kategorie": "C"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/dap-gl",
+   "quelle": "https://men.public.lu/dam-assets/fr/actualites/articles/communiques-conference-presse/2026/06/offre-francophone-formation-professionnelle.pdf"
+  },
+  {
+   "id": "hotelier-restaurateur",
+   "de": "Hotel- und Restaurantfachmann",
+   "fr": "Hôtelier-restaurateur",
+   "abschluss": [
+    "DAP"
+   ],
+   "bereich": "essen",
+   "einfach": "Du arbeitest im Hotel an der Rezeption und im Restaurant.",
+   "taetigkeiten": [
+    "Gäste empfangen",
+    "Reservierungen am Computer verwalten",
+    "über Ausflugsziele informieren",
+    "Speisekarten erstellen"
+   ],
+   "wege": [
+    {
+     "abschluss": "DAP",
+     "dauer": "1 Jahr",
+     "form": "Ganz im Lycée, mit Praktika (mind. 12 Wochen)",
+     "sprachen": "Deutsch",
+     "lycees": [
+      "École d'hôtellerie et de tourisme du Luxembourg"
+     ],
+     "zugang": "Nur für Personen, die schon den DAP Restaurateur haben.",
+     "danach": "Danach kannst du zum Diplôme de technicien (DT) weitergehen: Hôtellerie.",
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-rh"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/dap-rh",
+   "quelle": "https://shapeyourfuture.lu/fr/formations/dap-rh",
+   "hinweis": "Nur für Personen, die schon den DAP Restaurateur haben."
+  },
+  {
+   "id": "informaticien-qualifie",
+   "de": "Fachinformatiker",
+   "fr": "Informaticien qualifié",
+   "abschluss": [
+    "DAP"
+   ],
+   "bereich": "buero",
+   "einfach": "Du richtest Computer und Netzwerke ein und hältst sie sicher.",
+   "taetigkeiten": [
+    "Computer und Programme einrichten",
+    "Netzwerke warten",
+    "für IT-Sicherheit sorgen",
+    "mit Kunden und Kollegen arbeiten"
+   ],
+   "wege": [
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch",
+     "lycees": [
+      "Lycée des Arts et Métiers",
+      "Lycée Guillaume Kroll"
+     ],
+     "zugang": "Nur mit bestandener 5G – aus der 5P oder 5AD geht es nicht direkt.",
+     "lohn": [
+      "vor der Zwischenprüfung: 758,17 € im Monat",
+      "nach der Zwischenprüfung: 1 309,46 € im Monat"
+     ],
+     "danach": "Danach kannst du zum Diplôme de technicien (DT) weitergehen: Informatique.",
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-if",
+     "kategorie": "C"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/dap-if",
+   "quelle": "https://shapeyourfuture.lu/fr/formations/dap-if"
+  },
+  {
+   "id": "instructeur-de-la-conduite-automobile",
+   "de": "Fahrlehrer",
+   "fr": "Instructeur de la conduite automobile",
+   "abschluss": [
+    "DAP"
+   ],
+   "bereich": "technik",
+   "einfach": "Du bringst anderen das Autofahren bei.",
+   "taetigkeiten": [
+    "Theorieunterricht geben",
+    "Fahrstunden geben",
+    "das Fahrschulauto prüfen",
+    "auf die Führerscheinprüfung vorbereiten"
+   ],
+   "wege": [
+    {
+     "abschluss": "DAP",
+     "dauer": "2 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Lycée technique du Centre"
+     ],
+     "zugang": "Besondere Bedingungen: mindestens 20 Jahre alt, seit 2 Jahren Führerschein B, Prüfung beim Mobilitätsministerium.",
+     "lohn": [
+      "vor der Zwischenprüfung: 2 907,26 € im Monat",
+      "nach der Zwischenprüfung: 3 308,13 € im Monat"
+     ],
+     "francophone": [
+      "Lycée technique du Centre"
+     ],
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-ia"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/dap-ia",
+   "quelle": "https://men.public.lu/dam-assets/fr/actualites/articles/communiques-conference-presse/2026/06/offre-francophone-formation-professionnelle.pdf",
+   "hinweis": "Besondere Bedingungen: mindestens 20 Jahre alt, seit 2 Jahren Führerschein B, Prüfung beim Mobilitätsministerium."
+  },
+  {
+   "id": "instructeur-de-natation",
+   "de": "Schwimmlehrer",
+   "fr": "Instructeur de natation",
+   "abschluss": [
+    "DAP"
+   ],
+   "bereich": "menschen",
+   "einfach": "Du gibst Schwimmunterricht und passt im Schwimmbad auf.",
+   "taetigkeiten": [
+    "Schwimmkurse geben",
+    "Schwimmbad und Sauna überwachen",
+    "auf die Badegäste aufpassen",
+    "in Notfällen Erste Hilfe leisten"
+   ],
+   "wege": [
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Lycée technique du Centre"
+     ],
+     "zugang": "Aus der 5P: mindestens 45 von 54 Modulen – oder die 5AD bestanden.",
+     "lohn": [
+      "vor der Zwischenprüfung: 1 102,78 € im Monat",
+      "nach der Zwischenprüfung: 1 654,06 € im Monat"
+     ],
+     "francophone": [
+      "Lycée technique du Centre"
+     ],
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-in",
+     "kategorie": "A"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/dap-in",
+   "quelle": "https://men.public.lu/dam-assets/fr/actualites/articles/communiques-conference-presse/2026/06/offre-francophone-formation-professionnelle.pdf"
+  },
+  {
+   "id": "magasinier-du-secteur-automobile",
+   "de": "Lagerverwalter im Automobilsektor",
+   "fr": "Magasinier du secteur automobile",
+   "abschluss": [
+    "DAP"
+   ],
+   "bereich": "verkauf",
+   "einfach": "Du verwaltest das Lager für Autoteile.",
+   "taetigkeiten": [
+    "Bestellungen und Verkauf von Teilen",
+    "Ware annehmen, prüfen und einräumen",
+    "Ware verpacken und verschicken",
+    "den Bestand verwalten"
+   ],
+   "wege": [
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Lycée Bel-Val",
+      "Nordstad-Lycée"
+     ],
+     "zugang": "Aus der 5P: mindestens 45 von 54 Modulen – oder die 5AD bestanden.",
+     "lohn": [
+      "vor der Zwischenprüfung: 689,21 € im Monat",
+      "nach der Zwischenprüfung: 1 033,81 € im Monat"
+     ],
+     "danach": "Danach kannst du zum Diplôme de technicien (DT) weitergehen: Mécatronique agri-génie civil et Mécatronique automobile.",
+     "francophone": [
+      "Lycée Bel-Val",
+      "Nordstad-Lycée"
+     ],
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-vm",
+     "kategorie": "A"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/dap-vm",
+   "quelle": "https://men.public.lu/dam-assets/fr/actualites/articles/communiques-conference-presse/2026/06/offre-francophone-formation-professionnelle.pdf"
+  },
+  {
+   "id": "maraicher",
+   "de": "Gemüsegärtner",
+   "fr": "Maraîcher",
+   "abschluss": [
+    "DAP"
+   ],
+   "bereich": "natur",
+   "einfach": "Du baust Gemüse an – auf dem Feld und im Gewächshaus.",
+   "taetigkeiten": [
+    "den Anbau planen",
+    "Gemüse anbauen und pflegen",
+    "Gemüse mit der Hand oder Maschine ernten",
+    "Gemüse verpacken"
+   ],
+   "wege": [
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Erst im Lycée, danach Lehre mit Lehrvertrag im Betrieb",
+     "sprachen": "Deutsch",
+     "lycees": [
+      "Lycée technique agricole"
+     ],
+     "zugang": "Aus der 5P: mindestens 45 von 54 Modulen – oder die 5AD bestanden.",
+     "lohn": [
+      "vor der Zwischenprüfung: 709,85 € im Monat",
+      "nach der Zwischenprüfung: 1 268,08 € im Monat"
+     ],
+     "danach": "Danach kannst du zum Diplôme de technicien (DT) weitergehen: Entrepreneur maraîcher.",
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-hm",
+     "kategorie": "A"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/dap-hm",
+   "quelle": "https://shapeyourfuture.lu/fr/formations/dap-hm",
+   "hinweis": "Die offiziellen Quellen sind hier nicht ganz einheitlich (z. B. Form, Dauer oder Schule). Bitte auf der verlinkten Seite nachsehen."
+  },
+  {
+   "id": "mecanicien-de-mecanique-generale",
+   "de": "Maschinenbaumechaniker",
+   "fr": "Mécanicien de mécanique générale",
+   "abschluss": [
+    "DAP"
+   ],
+   "bereich": "technik",
+   "einfach": "Du baust und reparierst Maschinen und Maschinenteile.",
+   "taetigkeiten": [
+    "technische Zeichnungen lesen und machen",
+    "Teile verbinden",
+    "schweißen",
+    "Maschinen zusammenbauen"
+   ],
+   "wege": [
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Bouneweger Lycée Luxembourg"
+     ],
+     "zugang": "Aus der 5P: mindestens 45 von 54 Modulen, davon mindestens 8 in Mathematik – oder 5AD mit „niveau fort“ in Mathematik.",
+     "lohn": [
+      "vor der Zwischenprüfung: 689,21 € im Monat",
+      "nach der Zwischenprüfung: 1 033,81 € im Monat"
+     ],
+     "danach": "Danach kannst du zum Diplôme de technicien (DT) weitergehen: Mécanique générale.",
+     "francophone": [
+      "Bouneweger Lycée Luxembourg"
+     ],
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-at",
+     "kategorie": "B"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/dap-at",
+   "quelle": "https://men.public.lu/dam-assets/fr/actualites/articles/communiques-conference-presse/2026/06/offre-francophone-formation-professionnelle.pdf"
+  },
+  {
+   "id": "mecanicien-d-usinage",
+   "de": "Zerspanungsmechaniker",
+   "fr": "Mécanicien d’usinage",
+   "abschluss": [
+    "DAP"
+   ],
+   "bereich": "technik",
+   "einfach": "Du stellst Metallteile mit Dreh- und Fräsmaschinen her.",
+   "taetigkeiten": [
+    "Arbeitsschritte planen",
+    "Werkzeuge auswählen und schärfen",
+    "computergesteuerte Maschinen einrichten",
+    "die Qualität der Teile prüfen"
+   ],
+   "wege": [
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Erst im Lycée, danach Lehre mit Lehrvertrag im Betrieb",
+     "sprachen": "Deutsch, Französisch, Englisch",
+     "lycees": [
+      "Bouneweger Lycée Luxembourg",
+      "Lycée privé Emile Metz"
+     ],
+     "zugang": "Aus der 5P: mindestens 45 von 54 Modulen, davon mindestens 8 in Mathematik – oder 5AD mit „niveau fort“ in Mathematik.",
+     "lohn": [
+      "vor der Zwischenprüfung: 758,17 € im Monat",
+      "nach der Zwischenprüfung: 1 309,46 € im Monat"
+     ],
+     "danach": "Danach kannst du zum Diplôme de technicien (DT) weitergehen: Mécanique générale.",
+     "francophone": [
+      "Bouneweger Lycée Luxembourg"
+     ],
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-mf",
+     "kategorie": "B"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/dap-mf",
+   "quelle": "https://men.public.lu/dam-assets/fr/actualites/articles/communiques-conference-presse/2026/06/offre-francophone-formation-professionnelle.pdf",
+   "hinweis": "Die offiziellen Quellen sind hier nicht ganz einheitlich (z. B. Form, Dauer oder Schule). Bitte auf der verlinkten Seite nachsehen."
+  },
+  {
+   "id": "mecanicien-industriel-et-de-maintenance",
+   "de": "Industrie- und Wartungsmechaniker",
+   "fr": "Mécanicien industriel et de maintenance",
+   "abschluss": [
+    "DAP"
+   ],
+   "bereich": "technik",
+   "einfach": "Du hältst Maschinen in Fabriken am Laufen.",
+   "taetigkeiten": [
+    "Maschinen und Anlagen überwachen und warten",
+    "Störungen finden",
+    "Teile reparieren, aus- und einbauen",
+    "Maschinen in Betrieb nehmen"
+   ],
+   "wege": [
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Erst im Lycée, danach Lehre mit Lehrvertrag im Betrieb",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Bouneweger Lycée Luxembourg",
+      "Lycée des Arts et Métiers",
+      "Lycée du Nord",
+      "Maacher Lycée"
+     ],
+     "zugang": "Aus der 5P: mindestens 45 von 54 Modulen, davon mindestens 8 in Mathematik – oder 5AD mit „niveau fort“ in Mathematik.",
+     "lohn": [
+      "vor der Zwischenprüfung: 758,17 € im Monat",
+      "nach der Zwischenprüfung: 1 309,46 € im Monat"
+     ],
+     "danach": "Danach kannst du zum Diplôme de technicien (DT) weitergehen: Mécanique d'avions - cat. B.",
+     "francophone": [
+      "Bouneweger Lycée Luxembourg"
+     ],
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-mm",
+     "kategorie": "B"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/dap-mm",
+   "quelle": "https://men.public.lu/dam-assets/fr/actualites/articles/communiques-conference-presse/2026/06/offre-francophone-formation-professionnelle.pdf",
+   "hinweis": "Die offiziellen Quellen sind hier nicht ganz einheitlich (z. B. Form, Dauer oder Schule). Bitte auf der verlinkten Seite nachsehen."
+  },
+  {
+   "id": "mecatronicien",
+   "de": "Mechatroniker",
+   "fr": "Mécatronicien",
+   "abschluss": [
+    "DAP"
+   ],
+   "bereich": "technik",
+   "einfach": "Du arbeitest an Maschinen mit Mechanik, Elektrik und Computer.",
+   "taetigkeiten": [
+    "Maschinen und Anlagen warten",
+    "Teile montieren und demontieren",
+    "Fehler mit dem Computer finden",
+    "Maschinen in Betrieb nehmen"
+   ],
+   "wege": [
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch",
+     "lycees": [
+      "Lycée des Arts et Métiers",
+      "Lycée Guillaume Kroll"
+     ],
+     "zugang": "Nur mit bestandener 5G – aus der 5P oder 5AD geht es nicht direkt.",
+     "lohn": [
+      "vor der Zwischenprüfung: 758,17 € im Monat",
+      "nach der Zwischenprüfung: 1 309,46 € im Monat"
+     ],
+     "danach": "Danach kannst du zum Diplôme de technicien (DT) weitergehen: Mécanique d'avions - cat. B.",
+     "francophone": [
+      "Lycée Guillaume Kroll"
+     ],
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-mi",
+     "kategorie": "C"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/dap-mi",
+   "quelle": "https://men.public.lu/dam-assets/fr/actualites/articles/communiques-conference-presse/2026/06/offre-francophone-formation-professionnelle.pdf",
+   "hinweis": "Die offiziellen Quellen sind hier nicht ganz einheitlich (z. B. Form, Dauer oder Schule). Bitte auf der verlinkten Seite nachsehen."
+  },
+  {
+   "id": "mecatronicien-agri-genie-civil",
+   "de": "Land- und Baumechatroniker",
+   "fr": "Mécatronicien agri-génie civil",
+   "abschluss": [
+    "DAP"
+   ],
+   "bereich": "technik",
+   "einfach": "Du wartest und reparierst Traktoren und Baumaschinen.",
+   "taetigkeiten": [
+    "Maschinen fertig montieren und in Betrieb nehmen",
+    "Wartung und Kontrolle",
+    "Fehler finden und beheben",
+    "Zusatzgeräte einbauen"
+   ],
+   "wege": [
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch",
+     "lycees": [
+      "Lycée technique agricole"
+     ],
+     "zugang": "Aus der 5P: mindestens 45 von 54 Modulen, davon mindestens 8 in Mathematik – oder 5AD mit „niveau fort“ in Mathematik.",
+     "lohn": [
+      "vor der Zwischenprüfung: 847,77 € im Monat",
+      "nach der Zwischenprüfung: 1 350,84 € im Monat"
+     ],
+     "danach": "Danach kannst du zum Diplôme de technicien (DT) weitergehen: Mécatronique agri-génie civil et Mécatronique automobile.",
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-ml",
+     "kategorie": "B"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/dap-ml",
+   "quelle": "https://shapeyourfuture.lu/fr/formations/dap-ml"
+  },
+  {
+   "id": "mecatronicien-d-autos-et-de-motos",
+   "de": "Kraftfahrzeugmechatroniker",
+   "fr": "Mécatronicien d’autos et de motos",
+   "abschluss": [
+    "DAP"
+   ],
+   "bereich": "technik",
+   "einfach": "Du reparierst Autos und Motorräder – auch Elektrik und Elektronik.",
+   "taetigkeiten": [
+    "Fehler an Elektrik und Elektronik beheben",
+    "Wartung und Reparatur",
+    "den Motor prüfen",
+    "mit dem Computer Fehler suchen"
+   ],
+   "wege": [
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Lycée Bel-Val",
+      "Lycée technique d'Ettelbruck",
+      "Lycée technique du Centre"
+     ],
+     "zugang": "Aus der 5P: mindestens 45 von 54 Modulen, davon mindestens 8 in Mathematik – oder 5AD mit „niveau fort“ in Mathematik.",
+     "lohn": [
+      "vor der Zwischenprüfung: 847,77 € im Monat",
+      "nach der Zwischenprüfung: 1 350,84 € im Monat"
+     ],
+     "danach": "Danach kannst du zum Diplôme de technicien (DT) weitergehen: Mécatronique agri-génie civil et Mécatronique automobile.",
+     "francophone": [
+      "Lycée Bel-Val"
+     ],
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-ma",
+     "kategorie": "B"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/dap-ma",
+   "quelle": "https://men.public.lu/dam-assets/fr/actualites/articles/communiques-conference-presse/2026/06/offre-francophone-formation-professionnelle.pdf"
+  },
+  {
+   "id": "mecatronicien-de-cycles",
+   "de": "Fahrradmechatroniker",
+   "fr": "Mécatronicien de cycles",
+   "abschluss": [
+    "DAP"
+   ],
+   "bereich": "technik",
+   "einfach": "Du baust, wartest und verkaufst Fahrräder und E-Bikes.",
+   "taetigkeiten": [
+    "Fahrräder und E-Bikes zusammenbauen",
+    "Fehler finden",
+    "Wartung und Reparatur",
+    "Fahrräder und Zubehör verkaufen"
+   ],
+   "wege": [
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Lycée technique du Centre"
+     ],
+     "zugang": "Aus der 5P: mindestens 45 von 54 Modulen – oder die 5AD bestanden.",
+     "lohn": [
+      "vor der Zwischenprüfung: 913,95 € im Monat",
+      "nach der Zwischenprüfung: 1 378,42 € im Monat"
+     ],
+     "francophone": [
+      "Lycée technique du Centre"
+     ],
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-mv",
+     "kategorie": "A"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/dap-mv",
+   "quelle": "https://men.public.lu/dam-assets/fr/actualites/articles/communiques-conference-presse/2026/06/offre-francophone-formation-professionnelle.pdf"
+  },
+  {
+   "id": "mecatronicien-de-vehicules-utilitaires",
+   "de": "Nutzfahrzeugmechatroniker",
+   "fr": "Mécatronicien de véhicules utilitaires",
+   "abschluss": [
+    "DAP"
+   ],
+   "bereich": "technik",
+   "einfach": "Du wartest und reparierst Lastwagen und Busse.",
+   "taetigkeiten": [
+    "Nutzfahrzeuge vorbereiten und prüfen",
+    "Wartung und Inspektion",
+    "Fehler finden",
+    "einfache Reparaturen"
+   ],
+   "wege": [
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Lycée technique agricole"
+     ],
+     "zugang": "Aus der 5P: mindestens 45 von 54 Modulen, davon mindestens 8 in Mathematik – oder 5AD mit „niveau fort“ in Mathematik.",
+     "lohn": [
+      "vor der Zwischenprüfung: 847,77 € im Monat",
+      "nach der Zwischenprüfung: 1 350,84 € im Monat"
+     ],
+     "danach": "Danach kannst du zum Diplôme de technicien (DT) weitergehen: Mécatronique agri-génie civil et Mécatronique automobile.",
+     "francophone": [
+      "Lycée technique agricole"
+     ],
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-mu",
+     "kategorie": "B"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/dap-mu",
+   "quelle": "https://men.public.lu/dam-assets/fr/actualites/articles/communiques-conference-presse/2026/06/offre-francophone-formation-professionnelle.pdf"
+  },
+  {
+   "id": "mecatronicien-en-techniques-de-refrigeration",
+   "de": "Kälteanlagenbauer",
+   "fr": "Mécatronicien en techniques de réfrigération",
+   "abschluss": [
+    "DAP"
+   ],
+   "bereich": "elektro",
+   "einfach": "Du baust Kühl- und Klimaanlagen ein und reparierst sie.",
+   "taetigkeiten": [
+    "Kühlanlagen planen, einbauen und reparieren",
+    "elektrische Steuerungen bauen",
+    "alte Anlagen abbauen und recyceln",
+    "sicher mit Kältemitteln arbeiten"
+   ],
+   "wege": [
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch",
+     "lycees": [
+      "Lycée technique du Centre"
+     ],
+     "zugang": "Aus der 5P: mindestens 45 von 54 Modulen, davon mindestens 8 in Mathematik – oder 5AD mit „niveau fort“ in Mathematik.",
+     "lohn": [
+      "vor der Zwischenprüfung: 1 157,84 € im Monat",
+      "nach der Zwischenprüfung: 1 736,72 € im Monat"
+     ],
+     "danach": "Danach kannst du zum Diplôme de technicien (DT) weitergehen: Smart Buildings & Energies.",
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-fr",
+     "kategorie": "B"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/dap-fr",
+   "quelle": "https://shapeyourfuture.lu/fr/formations/dap-fr"
+  },
+  {
+   "id": "menuisier",
+   "de": "Schreiner",
+   "fr": "Menuisier",
+   "abschluss": [
+    "DAP"
+   ],
+   "bereich": "bau",
+   "einfach": "Du baust Möbel, Türen und Fenster aus Holz und baust sie ein.",
+   "taetigkeiten": [
+    "Werkstücke planen",
+    "Holz und Material auswählen",
+    "Möbel herstellen und einbauen",
+    "Holz behandeln und veredeln"
+   ],
+   "wege": [
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Erst im Lycée, danach Lehre mit Lehrvertrag im Betrieb",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Lycée du Nord",
+      "Lycée Guillaume Kroll",
+      "Maacher Lycée"
+     ],
+     "zugang": "Aus der 5P: mindestens 45 von 54 Modulen, davon mindestens 8 in Mathematik – oder 5AD mit „niveau fort“ in Mathematik.",
+     "lohn": [
+      "vor der Zwischenprüfung: 827,03 € im Monat",
+      "nach der Zwischenprüfung: 1 378,42 € im Monat"
+     ],
+     "danach": "Danach kannst du zum Diplôme de technicien (DT) weitergehen: Génie civil.",
+     "francophone": [
+      "Lycée Guillaume Kroll"
+     ],
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-mb",
+     "kategorie": "B"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/dap-mb",
+   "quelle": "https://men.public.lu/dam-assets/fr/actualites/articles/communiques-conference-presse/2026/06/offre-francophone-formation-professionnelle.pdf",
+   "hinweis": "Die offiziellen Quellen sind hier nicht ganz einheitlich (z. B. Form, Dauer oder Schule). Bitte auf der verlinkten Seite nachsehen."
+  },
+  {
+   "id": "menuisier-ebeniste",
+   "de": "Möbelschreiner",
+   "fr": "Menuisier-ébéniste",
+   "abschluss": [
+    "DAP"
+   ],
+   "bereich": "bau",
+   "einfach": "Du baust Möbel, Schränke, Türen und Fenster in der Werkstatt.",
+   "taetigkeiten": [
+    "Möbel, Türen und Fenster bauen",
+    "Material, Werkzeuge und Maschinen auswählen",
+    "verschiedene Holzarten bearbeiten",
+    "mit computergesteuerten Maschinen arbeiten"
+   ],
+   "wege": [
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Ganz im Lycée, mit Praktika (mind. 12 Wochen)",
+     "sprachen": "Deutsch",
+     "lycees": [
+      "Lycée privé Emile Metz"
+     ],
+     "zugang": "Aus der 5P: mindestens 45 von 54 Modulen, davon mindestens 8 in Mathematik – oder 5AD mit „niveau fort“ in Mathematik.",
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-eb",
+     "kategorie": "B"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/dap-eb",
+   "quelle": "https://shapeyourfuture.lu/fr/formations/dap-eb"
+  },
+  {
+   "id": "operateur-de-la-foret-et-de-l-environnement",
+   "de": "Fachkraft für Wald und Umwelt",
+   "fr": "Opérateur de la forêt et de l’environnement",
+   "abschluss": [
+    "DAP"
+   ],
+   "bereich": "natur",
+   "einfach": "Du pflegst den Wald und schützt die Natur.",
+   "taetigkeiten": [
+    "Bäume pflanzen",
+    "auf die Gesundheit der Bäume achten",
+    "Bäume fällen",
+    "Natur und Lebensräume schützen"
+   ],
+   "wege": [
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Ganz im Lycée, mit Praktika (mind. 12 Wochen)",
+     "sprachen": "Deutsch",
+     "lycees": [
+      "Lycée technique agricole"
+     ],
+     "zugang": "Aus der 5P: mindestens 45 von 54 Modulen – oder die 5AD bestanden.",
+     "danach": "Danach kannst du zum Diplôme de technicien (DT) weitergehen: Environnement naturel.",
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-en",
+     "kategorie": "A"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/dap-en",
+   "quelle": "https://shapeyourfuture.lu/fr/formations/dap-en"
+  },
+  {
+   "id": "opticien",
+   "de": "Augenoptiker",
+   "fr": "Opticien",
+   "abschluss": [
+    "DAP"
+   ],
+   "bereich": "menschen",
+   "einfach": "Du misst die Sehstärke und machst Brillen.",
+   "taetigkeiten": [
+    "die Sehstärke messen",
+    "Kunden bei der Brille beraten",
+    "Brillen anpassen",
+    "Gläser zuschneiden und Brillen reparieren"
+   ],
+   "wege": [
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Lycée technique du Centre"
+     ],
+     "zugang": "Aus der 5P: mindestens 45 von 54 Modulen, davon mindestens 8 in Mathematik – oder 5AD mit „niveau fort“ in Mathematik.",
+     "lohn": [
+      "vor der Zwischenprüfung: 1 075,19 € im Monat",
+      "nach der Zwischenprüfung: 1 612,79 € im Monat"
+     ],
+     "francophone": [
+      "Lycée technique du Centre"
+     ],
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-op",
+     "kategorie": "B"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/dap-op",
+   "quelle": "https://men.public.lu/dam-assets/fr/actualites/articles/communiques-conference-presse/2026/06/offre-francophone-formation-professionnelle.pdf"
+  },
+  {
+   "id": "pepinieriste-paysagiste",
+   "de": "Baumschul- und Landschaftsgärtner",
+   "fr": "Pépiniériste-paysagiste",
+   "abschluss": [
+    "DAP"
+   ],
+   "bereich": "natur",
+   "einfach": "Du ziehst Bäume und Pflanzen groß und gestaltest Gärten.",
+   "taetigkeiten": [
+    "Bäume und Pflanzen ziehen",
+    "junge Pflanzen setzen und pflegen",
+    "Kunden beraten",
+    "Gärten planen, Rasen und Bäume pflanzen"
+   ],
+   "wege": [
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Erst im Lycée, danach Lehre mit Lehrvertrag im Betrieb",
+     "sprachen": "Deutsch",
+     "lycees": [
+      "Lycée technique agricole"
+     ],
+     "zugang": "Aus der 5P: mindestens 45 von 54 Modulen – oder die 5AD bestanden.",
+     "lohn": [
+      "vor der Zwischenprüfung: 709,85 € im Monat",
+      "nach der Zwischenprüfung: 1 268,08 € im Monat"
+     ],
+     "danach": "Danach kannst du zum Diplôme de technicien (DT) weitergehen: Horticulture.",
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-hp",
+     "kategorie": "A"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/dap-hp",
+   "quelle": "https://shapeyourfuture.lu/fr/formations/dap-hp"
+  },
+  {
+   "id": "prothesiste-dentaire",
+   "de": "Zahntechniker",
+   "fr": "Prothésiste dentaire",
+   "abschluss": [
+    "DAP"
+   ],
+   "bereich": "kreativ",
+   "einfach": "Du stellst Zahnersatz her: Kronen, Brücken und Prothesen.",
+   "taetigkeiten": [
+    "Modelle vom Gebiss herstellen",
+    "Zahnprothesen anpassen und reparieren",
+    "verschiedene Prothesen herstellen",
+    "Kronen herstellen"
+   ],
+   "wege": [
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch",
+     "lycees": [
+      "Lycée technique du Centre"
+     ],
+     "zugang": "Aus der 5P: mindestens 45 von 54 Modulen, davon mindestens 8 in Mathematik – oder 5AD mit „niveau fort“ in Mathematik.",
+     "lohn": [
+      "vor der Zwischenprüfung: 847,77 € im Monat",
+      "nach der Zwischenprüfung: 1 350,84 € im Monat"
+     ],
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-md",
+     "kategorie": "B"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/dap-md",
+   "quelle": "https://shapeyourfuture.lu/fr/formations/dap-md",
+   "hinweis": "Die offiziellen Quellen sind hier nicht ganz einheitlich (z. B. Form, Dauer oder Schule). Bitte auf der verlinkten Seite nachsehen."
+  },
+  {
+   "id": "relieur",
+   "de": "Buchbinder",
+   "fr": "Relieur",
+   "abschluss": [
+    "DAP"
+   ],
+   "bereich": "kreativ",
+   "einfach": "Du bindest Bücher und stellst Hefte und Einbände her.",
+   "taetigkeiten": [
+    "Broschüren herstellen",
+    "Bucheinbände von Hand und mit Maschinen machen",
+    "Sonderanfertigungen planen",
+    "Bücher binden"
+   ],
+   "wege": [
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch",
+     "lycees": [
+      "Lycée des Arts et Métiers"
+     ],
+     "zugang": "Aus der 5P: mindestens 45 von 54 Modulen – oder die 5AD bestanden.",
+     "lohn": [
+      "vor der Zwischenprüfung: 1 378,42 € im Monat",
+      "nach der Zwischenprüfung: 2 274,41 € im Monat"
+     ],
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-rl",
+     "kategorie": "A"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/dap-rl",
+   "quelle": "https://shapeyourfuture.lu/fr/formations/dap-rl"
+  },
+  {
+   "id": "restaurateur",
+   "de": "Restaurantfachmann",
+   "fr": "Restaurateur",
+   "abschluss": [
+    "DAP"
+   ],
+   "bereich": "essen",
+   "einfach": "Du arbeitest im Restaurant in Küche und Service.",
+   "taetigkeiten": [
+    "die Speisekarte erstellen",
+    "Preise berechnen",
+    "Lebensmittel bestellen und lagern",
+    "Speisen zubereiten und servieren"
+   ],
+   "wege": [
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Ganz im Lycée, mit Praktika (mind. 12 Wochen)",
+     "sprachen": "Deutsch, Französisch, Englisch",
+     "lycees": [
+      "École d'hôtellerie et de tourisme du Luxembourg"
+     ],
+     "zugang": "Aus der 5P: mindestens 45 von 54 Modulen – oder die 5AD bestanden.",
+     "danach": "Danach kannst du zum Diplôme de technicien (DT) weitergehen: Hôtellerie.",
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-re",
+     "kategorie": "A"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/dap-re",
+   "quelle": "https://shapeyourfuture.lu/fr/formations/dap-re"
+  },
+  {
+   "id": "serrurier",
+   "de": "Schlosser",
+   "fr": "Serrurier",
+   "abschluss": [
+    "DAP"
+   ],
+   "bereich": "technik",
+   "einfach": "Du stellst Metallteile her und montierst sie auf Baustellen.",
+   "taetigkeiten": [
+    "technische Pläne lesen",
+    "Metallteile in der Werkstatt herstellen",
+    "schneiden, bohren, schweißen und zusammenbauen",
+    "auf der Baustelle montieren"
+   ],
+   "wege": [
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Erst im Lycée, danach Lehre mit Lehrvertrag im Betrieb",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Lycée du Nord",
+      "Lycée Guillaume Kroll"
+     ],
+     "lohn": [
+      "vor der Zwischenprüfung: 964,85 € im Monat",
+      "nach der Zwischenprüfung: 1 447,38 € im Monat"
+     ],
+     "danach": "Danach kannst du zum Diplôme de technicien (DT) weitergehen: Génie civil.",
+     "francophone": [
+      "Lycée Guillaume Kroll"
+     ],
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-se"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/dap-se",
+   "quelle": "https://men.public.lu/dam-assets/fr/actualites/articles/communiques-conference-presse/2026/06/offre-francophone-formation-professionnelle.pdf",
+   "hinweis": "Die offiziellen Quellen sind hier nicht ganz einheitlich (z. B. Form, Dauer oder Schule). Bitte auf der verlinkten Seite nachsehen."
+  },
+  {
+   "id": "smart-materials",
+   "de": "Smart materials",
+   "fr": "Smart materials",
+   "abschluss": [
+    "DAP"
+   ],
+   "bereich": "technik",
+   "einfach": "Du arbeitest mit neuen, „intelligenten“ Materialien in der Industrie.",
+   "taetigkeiten": [],
+   "wege": [
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "zugang": "Aus der 5P: mindestens 45 von 54 Modulen, davon mindestens 8 in Mathematik – oder 5AD mit „niveau fort“ in Mathematik.",
+     "kategorie": "B"
+    }
+   ],
+   "link": "",
+   "quelle": "https://adem.public.lu/fr/orientation-professionnelle/beruffslescht.html",
+   "hinweis": "Die offiziellen Quellen sind hier nicht ganz einheitlich (z. B. Form, Dauer oder Schule). Bitte auf der verlinkten Seite nachsehen."
+  },
+  {
+   "id": "tatoueur",
+   "de": "Tätowierer",
+   "fr": "Tatoueur",
+   "abschluss": [
+    "DAP"
+   ],
+   "bereich": "kreativ",
+   "einfach": "Du zeichnest Motive und tätowierst sie auf die Haut.",
+   "taetigkeiten": [
+    "Kunden empfangen und beraten",
+    "Motive entwerfen und zeichnen",
+    "tätowieren",
+    "Kunden nach dem Tattoo beraten"
+   ],
+   "wege": [
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Lycée technique du Centre"
+     ],
+     "zugang": "Aus der 5P: mindestens 45 von 54 Modulen – oder die 5AD bestanden.",
+     "lohn": [
+      "vor der Zwischenprüfung: 827,03 € im Monat",
+      "nach der Zwischenprüfung: 1 247,44 € im Monat"
+     ],
+     "francophone": [
+      "Lycée technique du Centre"
+     ],
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-ta",
+     "kategorie": "A"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/dap-ta",
+   "quelle": "https://men.public.lu/dam-assets/fr/actualites/articles/communiques-conference-presse/2026/06/offre-francophone-formation-professionnelle.pdf"
+  },
+  {
+   "id": "traiteur",
+   "de": "Feinkoch",
+   "fr": "Traiteur",
+   "abschluss": [
+    "DAP"
+   ],
+   "bereich": "essen",
+   "einfach": "Du bereitest feine Speisen für Feiern und das Feinkostgeschäft zu.",
+   "taetigkeiten": [
+    "Fleisch, Geflügel und Fisch verarbeiten",
+    "Gemüse vorbereiten",
+    "warme Gerichte kochen",
+    "kalte Platten, Salate und Desserts machen"
+   ],
+   "wege": [
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Erst im Lycée, danach Lehre mit Lehrvertrag im Betrieb",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Bouneweger Lycée Luxembourg"
+     ],
+     "zugang": "Aus der 5P: mindestens 45 von 54 Modulen – oder die 5AD bestanden.",
+     "lohn": [
+      "vor der Zwischenprüfung: 964,85 € im Monat",
+      "nach der Zwischenprüfung: 1 585,20 € im Monat"
+     ],
+     "danach": "Danach kannst du zum Diplôme de technicien (DT) weitergehen: Hôtellerie.",
+     "francophone": [
+      "Bouneweger Lycée Luxembourg"
+     ],
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-tr",
+     "kategorie": "A"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/dap-tr",
+   "quelle": "https://men.public.lu/dam-assets/fr/actualites/articles/communiques-conference-presse/2026/06/offre-francophone-formation-professionnelle.pdf"
+  },
+  {
+   "id": "vendeur-en-boucherie",
+   "de": "Metzgereifachverkäufer",
+   "fr": "Vendeur en boucherie",
+   "abschluss": [
+    "DAP"
+   ],
+   "bereich": "verkauf",
+   "einfach": "Du verkaufst Fleisch und Wurst in der Metzgerei.",
+   "taetigkeiten": [
+    "Kunden beraten, bedienen und kassieren",
+    "Fleisch und Wurst schön präsentieren",
+    "über die richtige Lagerung informieren",
+    "Bestellungen annehmen"
+   ],
+   "wege": [
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch",
+     "lycees": [
+      "Bouneweger Lycée Luxembourg"
+     ],
+     "zugang": "Aus der 5P: mindestens 45 von 54 Modulen – oder die 5AD bestanden.",
+     "lohn": [
+      "vor der Zwischenprüfung: 827,03 € im Monat",
+      "nach der Zwischenprüfung: 1 247,44 € im Monat"
+     ],
+     "danach": "Danach kannst du zum Diplôme de technicien (DT) weitergehen: Vente et gestion.",
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-vv",
+     "kategorie": "A"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/dap-vv",
+   "quelle": "https://shapeyourfuture.lu/fr/formations/dap-vv"
+  },
+  {
+   "id": "vendeur-en-boulangerie-patisserie-confiserie",
+   "de": "Bäckerei- und Konditoreifachverkäufer",
+   "fr": "Vendeur en boulangerie-pâtisserie-confiserie",
+   "abschluss": [
+    "DAP"
+   ],
+   "bereich": "verkauf",
+   "einfach": "Du verkaufst Brot, Kuchen und Süßes in der Bäckerei.",
+   "taetigkeiten": [
+    "Kunden beraten, bedienen und kassieren",
+    "Backwaren präsentieren",
+    "über die Haltbarkeit informieren",
+    "Ware schön verpacken"
+   ],
+   "wege": [
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch",
+     "lycees": [
+      "Bouneweger Lycée Luxembourg"
+     ],
+     "zugang": "Aus der 5P: mindestens 45 von 54 Modulen – oder die 5AD bestanden.",
+     "lohn": [
+      "vor der Zwischenprüfung: 827,03 € im Monat",
+      "nach der Zwischenprüfung: 1 247,44 € im Monat"
+     ],
+     "danach": "Danach kannst du zum Diplôme de technicien (DT) weitergehen: Vente et gestion.",
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-vb",
+     "kategorie": "A"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/dap-vb",
+   "quelle": "https://shapeyourfuture.lu/fr/formations/dap-vb"
+  },
+  {
+   "id": "vendeur-technique-en-optique",
+   "de": "Fachverkäufer im Optikergewerbe",
+   "fr": "Vendeur technique en optique",
+   "abschluss": [
+    "DAP"
+   ],
+   "bereich": "verkauf",
+   "einfach": "Du verkaufst Brillen und berätst die Kunden im Optikgeschäft.",
+   "taetigkeiten": [
+    "Kunden bei der Wahl der Brille beraten",
+    "Bestellungen prüfen",
+    "das Lager verwalten",
+    "Inventur machen"
+   ],
+   "wege": [
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch",
+     "lycees": [
+      "Lycée technique du Centre"
+     ],
+     "zugang": "Aus der 5P: mindestens 45 von 54 Modulen – oder die 5AD bestanden.",
+     "lohn": [
+      "vor der Zwischenprüfung: 827,03 € im Monat",
+      "nach der Zwischenprüfung: 1 247,44 € im Monat"
+     ],
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-vo",
+     "kategorie": "A"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/dap-vo",
+   "quelle": "https://shapeyourfuture.lu/fr/formations/dap-vo"
+  },
+  {
+   "id": "vendeur-retouche",
+   "de": "Fachverkäufer-Änderungsschneider",
+   "fr": "Vendeur-retouche",
+   "abschluss": [
+    "DAP"
+   ],
+   "bereich": "verkauf",
+   "einfach": "Du verkaufst Kleidung und änderst sie passend für die Kunden.",
+   "taetigkeiten": [
+    "Kunden empfangen und beraten",
+    "kassieren",
+    "Maß nehmen",
+    "Kleidung ändern und anpassen"
+   ],
+   "wege": [
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch",
+     "lycees": [
+      "Bouneweger Lycée Luxembourg"
+     ],
+     "zugang": "Aus der 5P: mindestens 45 von 54 Modulen – oder die 5AD bestanden.",
+     "lohn": [
+      "vor der Zwischenprüfung: 758,17 € im Monat",
+      "nach der Zwischenprüfung: 1 033,72 € im Monat"
+     ],
+     "danach": "Danach kannst du zum Diplôme de technicien (DT) weitergehen: Vente et gestion.",
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-vr",
+     "kategorie": "A"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/dap-vr",
+   "quelle": "https://shapeyourfuture.lu/fr/formations/dap-vr"
+  },
+  {
+   "id": "assistant-dans-les-metiers-du-metal",
+   "de": "Hilfskraft metallverarbeitende Berufe",
+   "fr": "Assistant dans les métiers du métal",
+   "abschluss": [
+    "CCP"
+   ],
+   "bereich": "technik",
+   "einfach": "Du hilfst in der Metallwerkstatt: schweißen, vormontieren, montieren.",
+   "taetigkeiten": [
+    "einfache Arbeiten an Metallteilen",
+    "einfache Schweiß- und Lötarbeiten",
+    "Teile in der Werkstatt vormontieren",
+    "bei der Montage beim Kunden helfen"
+   ],
+   "wege": [
+    {
+     "abschluss": "CCP",
+     "dauer": "3 Jahre",
+     "form": "Lehre mit Lehrvertrag: im Betrieb und im Lycée",
+     "sprachen": "Deutsch, Französisch",
+     "lycees": [
+      "Lycée du Nord",
+      "Lycée privé Emile Metz"
+     ],
+     "zugang": "Aus der 5P: mindestens 18 von 54 Modulen bestanden (oder nach einer CIP) und am 1. September mindestens 15 Jahre alt.",
+     "lohn": [
+      "1. Jahr: 689,21 € im Monat",
+      "2. Jahr: 1 102,78 € im Monat",
+      "3. Jahr: 1 378,42 € im Monat"
+     ],
+     "danach": "Danach kannst du den DAP im selben Beruf machen.",
+     "link": "https://shapeyourfuture.lu/fr/formations/ccp-om"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/ccp-om",
+   "quelle": "https://conseil-etat.public.lu/content/dam/conseil_etat/fr/avis/2026/17072026/62615-texte-du-projet-de-rglement-grand-ducal-30062026.pdf",
+   "hinweis": "Neu ab dem Schuljahr 2026/27: 3 Tage im Betrieb, 2 Tage im Lycée."
+  },
+  {
+   "id": "agent-de-securite-et-de-surete",
+   "de": "Fachkraft für Schutz und Sicherheit",
+   "fr": "Agent de sécurité et de sûreté",
+   "abschluss": [
+    "DAP"
+   ],
+   "bereich": "menschen",
+   "einfach": "Du sorgst für Sicherheit in Gebäuden und bei Veranstaltungen.",
+   "taetigkeiten": [
+    "Gebäude überwachen und Zugänge kontrollieren",
+    "gefährliche Situationen erkennen",
+    "Sicherheitsregeln anwenden",
+    "bei Vorfällen eingreifen und Menschen beruhigen"
+   ],
+   "wege": [
+    {
+     "abschluss": "DAP",
+     "dauer": "3 Jahre",
+     "form": "Ganz im Lycée, mit Praktika (mind. 12 Wochen)",
+     "sprachen": "Deutsch",
+     "lycees": [
+      "Lycée des Arts et Métiers"
+     ],
+     "zugang": "Aus der 5P: mindestens 45 von 54 Modulen – oder die 5AD bestanden.",
+     "link": "https://shapeyourfuture.lu/fr/formations/dap-gs",
+     "kategorie": "A"
+    }
+   ],
+   "link": "https://shapeyourfuture.lu/fr/formations/dap-gs",
+   "quelle": "https://conseil-etat.public.lu/content/dam/conseil_etat/fr/avis/2026/17072026/62615-texte-du-projet-de-rglement-grand-ducal-30062026.pdf",
+   "hinweis": "Neu ab dem Schuljahr 2026/27."
+  }
+ ]
+}

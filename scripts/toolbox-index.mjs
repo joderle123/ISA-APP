@@ -62,6 +62,8 @@ const blaetter = nummerieren(dateien).map((b) => {
   return e
 })
 
+// Berufe (Berufsbegleitung im Hub, 11.11.2026): Id, Name DE/FR, CCP/DAP – Link ISA-App.html#beruf=<id>
+const berufe = JSON.parse(readFileSync(new URL('../src/data/berufe/berufe.json', import.meta.url), 'utf8')).berufe.map((b) => ({ id: b.id, de: b.de, fr: b.fr, abschluss: b.abschluss, bereich: b.bereich }))
 // Kurse (Förderplanung im Hub): je Kurs Name, Alter, Ziel, ELDiB und die Sitzungen – Link ISA-App.html#passgenau/kurse/<id>
 const kurse = kursListe(await ladeKatalogNode()).map((k) => ({
   id: k.id,
@@ -84,7 +86,9 @@ const js =
   blaetter.map((m) => JSON.stringify(m)).join(',\n') +
   '\n],"kurse":[\n' +
   kurse.map((m) => JSON.stringify(m)).join(',\n') +
+  '\n],"berufe":[\n' +
+  berufe.map((m) => JSON.stringify(m)).join(',\n') +
   '\n]};\n'
 
 writeFileSync(OUT, js)
-console.log(`offline/toolbox-index.js: ${materialien.length} Materialien, ${blaetter.length} Arbeitsblätter, ${kurse.length} Kurse, ${(js.length / 1024).toFixed(0)} KB, Stand ${stand}`)
+console.log(`offline/toolbox-index.js: ${materialien.length} Materialien, ${blaetter.length} Arbeitsblätter, ${kurse.length} Kurse, ${berufe.length} Berufe, ${(js.length / 1024).toFixed(0)} KB, Stand ${stand}`)
