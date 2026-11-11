@@ -274,7 +274,7 @@
       "Skills-Kurs",
       "Ritual"
     ],
-    "bild": "icon:bookmark",
+    "bild": "icon:trophy",
     "kurs": [
       "j1-e01",
       "j1-e02",
@@ -396,60 +396,57 @@
     ],
     "de": {
       "titel": "Mein Skills-Pass",
-      "untertitel": "Ein Satz pro Einheit – am Ende des Jahres hast du dein ganzes Jahr in der Hand.",
+      "untertitel": "Ein Stempel pro Stunde. Am Ende des Jahres stehst du im Ziel.",
       "bausteine": [
         {
           "art": "aufgabe",
-          "text": "Schreib am Ende jeder Einheit einen Satz auf: Was nehme ich heute mit?",
-          "hinweis": "Zum Beispiel: „Mit 5-4-3-2-1 werde ich ruhiger.“ Auch Joker-Einheiten bekommen eine Zeile."
+          "text": "Hol dir nach jeder Stunde deinen Stempel.",
+          "hinweis": "Joker-Stunden zählen auch. Wer fehlt, holt den Stempel mit einer Mini-Aufgabe nach."
         },
         {
-          "art": "tabelle",
-          "spalten": [
-            "Nr.",
-            "Das nehme ich mit",
-            "Stempel"
+          "art": "stempelweg",
+          "felder": 40,
+          "ziel": "Ziel"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Deine Skills-Sammlung: Schreib jeden Skill, den du ausprobiert hast, in die passende Reihe.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "rangliste",
+          "stufen": [
+            "Hilft mir",
+            "Geht so",
+            "Nicht meins"
           ],
-          "breiten": [
-            0.45,
-            4,
-            0.85
-          ],
-          "zeilen": 19,
-          "nummern": 1
+          "hoehe": 2
         },
         {
           "art": "seitenumbruch"
         },
         {
-          "art": "tabelle",
-          "spalten": [
-            "Nr.",
-            "Das nehme ich mit",
-            "Stempel"
-          ],
-          "breiten": [
-            0.45,
-            4,
-            0.85
-          ],
-          "zeilen": 20,
-          "nummern": 20
+          "art": "aufgabe",
+          "text": "Was nimmst du mit? Ein Satz, ein Wort oder eine Zeichnung – nach jeder Stunde, wenn du magst.",
+          "symbole": [
+            "schreiben",
+            "malen"
+          ]
         },
         {
-          "art": "frage",
-          "text": "Am Ende des Jahres: Welcher Skill hat dir am meisten geholfen – und wann?",
-          "linien": 2
+          "art": "linien",
+          "anzahl": 12,
+          "fuellen": true
         }
       ],
       "lehrer": {
-        "ziel": "Die Jugendlichen halten nach jeder Einheit in einem Satz fest, was sie mitnehmen. So wird das Gelernte sichtbar, und am Jahresende entsteht ein persönlicher Rückblick.",
+        "ziel": "Die Jugendlichen sehen ihren Weg durch das Kursjahr wachsen: ein Stempel pro Einheit, dazu eine Sammlung der Skills, die sie ausprobiert haben – sortiert danach, was ihnen wirklich hilft.",
         "ablauf": [
-          "Einheit 1: Pässe austeilen, Namen eintragen lassen und erklären, dass sie im Raum bleiben (Box oder Mappe).",
-          "Ab dann am Ende jeder Einheit (3–5 Min.): Satz eintragen, Stempel oder Sticker geben. Wer nichts einfällt, darf aus dem Skill der Einheit einen Satz machen.",
-          "Die Einträge nicht korrigieren und nur lesen, wenn die Person es anbietet.",
-          "Letzte Einheit des Kursjahres: Die Pässe gemeinsam durchblättern und die Abschlussfrage beantworten.",
-          "39 Zeilen reichen für jedes Kursjahr: Jahr 1 hat 30 Einheiten und bis zu 9 Joker, Jahr 2 und 3 haben je 35 Einheiten und 4 Joker. Joker-Einheiten bekommen ebenfalls eine Zeile."
+          "Am Ende jeder Einheit (2 Min.): Stempel in das nächste freie Feld. Wer mag, schreibt auf Seite 2 einen Satz, ein Wort oder malt ein Zeichen.",
+          "Immer wenn ein Skill geübt wurde: Die Jugendlichen tragen ihn in die Reihe ein, die für sie stimmt. „Nicht meins“ ist ein ehrliches Ergebnis, kein Versagen.",
+          "Die Pässe bleiben in der Box im Raum. Am Jahresende geht der Pass mit nach Hause."
         ],
         "hintergrund": "Wer am Ende einer Stunde selbst formuliert, was er gelernt hat, verarbeitet das Gelernte ein zweites Mal und kann es später leichter abrufen. Das Skillstraining der Dialektisch-Behavioralen Therapie für Jugendliche nutzt mit der Tagebuchkarte ein ähnliches Werkzeug: Skills werden notiert, damit sie im Alltag präsent bleiben (Rathus & Miller, 2015). Der Stempel ist bewusst ein kleines Ritual – er würdigt die Mitarbeit, nicht die Qualität des Satzes.",
         "quellen": [
@@ -464,68 +461,65 @@
           "Welchen Satz würdet ihr euch in einem Monat gern selbst vorlesen?"
         ],
         "tipps": [
-          "Den Pass auf festeres Papier drucken oder in einer Klarsichthülle aufbewahren – er soll ein Jahr halten.",
-          "Einen eigenen Stempel für die Gruppe gestalten lassen; das stärkt das Wir-Gefühl."
+          "Ein eigener Stempel für die Gruppe (Motiv gemeinsam aussuchen) macht den Pass wertvoller als jede Unterschrift.",
+          "Alle fünf Stempel kurz innehalten: Welcher Skill ist in der Sammlung nach oben gewandert?"
         ],
         "material": "Pass auf festem Papier (A4, doppelseitig), Stempel oder Sticker, Box für die Pässe"
       }
     },
     "fr": {
       "titel": "Mon passeport Skills",
-      "untertitel": "Une phrase par séance – à la fin de l’année, tu as toute ton année entre les mains.",
+      "untertitel": "Un tampon par séance. À la fin de l’année, tu es à l’arrivée.",
       "bausteine": [
         {
           "art": "aufgabe",
-          "text": "À la fin de chaque séance, écris une phrase : qu’est-ce que j’emporte aujourd’hui ?",
-          "hinweis": "Par exemple : « Avec le 5-4-3-2-1, je me calme. » Les séances joker aussi ont une ligne."
+          "text": "Après chaque séance, va chercher ton tampon.",
+          "hinweis": "Les séances joker comptent aussi. En cas d’absence, on rattrape le tampon avec une mini-tâche."
         },
         {
-          "art": "tabelle",
-          "spalten": [
-            "N°",
-            "Ce que j’emporte",
-            "Tampon"
+          "art": "stempelweg",
+          "felder": 40,
+          "ziel": "Arrivée"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ta collection de skills : écris chaque skill essayé dans la ligne qui convient.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "rangliste",
+          "stufen": [
+            "Ça m’aide",
+            "Bof",
+            "Pas pour moi"
           ],
-          "breiten": [
-            0.45,
-            4,
-            0.85
-          ],
-          "zeilen": 19,
-          "nummern": 1
+          "hoehe": 2
         },
         {
           "art": "seitenumbruch"
         },
         {
-          "art": "tabelle",
-          "spalten": [
-            "N°",
-            "Ce que j’emporte",
-            "Tampon"
-          ],
-          "breiten": [
-            0.45,
-            4,
-            0.85
-          ],
-          "zeilen": 20,
-          "nummern": 20
+          "art": "aufgabe",
+          "text": "Qu’est-ce que tu retiens ? Une phrase, un mot ou un dessin – après chaque séance, si tu veux.",
+          "symbole": [
+            "schreiben",
+            "malen"
+          ]
         },
         {
-          "art": "frage",
-          "text": "À la fin de l’année : quel skill t’a le plus aidé – et quand ?",
-          "linien": 2
+          "art": "linien",
+          "anzahl": 12,
+          "fuellen": true
         }
       ],
       "lehrer": {
-        "ziel": "Après chaque séance, les jeunes notent en une phrase ce qu’ils emportent. Ainsi, ce qui a été appris devient visible et, en fin d’année, un bilan personnel se constitue.",
+        "ziel": "Les jeunes voient leur parcours dans l’année grandir : un tampon par séance, et une collection des skills essayés – classés selon ce qui les aide vraiment.",
         "ablauf": [
-          "Séance 1 : distribuer les passeports, faire inscrire le nom et expliquer qu’ils restent dans la salle (boîte ou classeur).",
-          "Ensuite, à la fin de chaque séance (3–5 min) : écrire la phrase, donner un tampon ou un autocollant. Si rien ne vient, on peut tirer une phrase du skill de la séance.",
-          "Ne pas corriger les inscriptions et ne les lire que si la personne le propose.",
-          "Dernière séance de l’année de cours : feuilleter ensemble les passeports et répondre à la question finale.",
-          "39 lignes suffisent pour chaque année de cours : l’année 1 compte 30 séances et jusqu’à 9 jokers, les années 2 et 3 comptent chacune 35 séances et 4 jokers. Les séances joker ont aussi une ligne."
+          "À la fin de chaque séance (2 min) : un tampon dans la prochaine case libre. Qui veut écrit en page 2 une phrase, un mot ou dessine un signe.",
+          "Chaque fois qu’un skill a été exercé : les jeunes le notent dans la ligne qui leur correspond. « Pas pour moi » est un résultat honnête, pas un échec.",
+          "Les passeports restent dans la boîte, dans la salle. À la fin de l’année, chacun emporte le sien."
         ],
         "hintergrund": "Quand on formule soi-même, à la fin d’une séance, ce que l’on a appris, on retravaille le contenu une seconde fois et on le retrouve plus facilement par la suite. L’entraînement aux skills de la thérapie comportementale dialectique pour adolescents utilise un outil semblable avec la fiche de suivi quotidien (diary card) : les skills sont notés pour rester présents au quotidien (Rathus & Miller, 2015). Le tampon est volontairement un petit rituel – il reconnaît la participation, pas la qualité de la phrase.",
         "quellen": [
@@ -540,12 +534,13 @@
           "Quelle phrase aimeriez-vous vous relire à vous-mêmes dans un mois ?"
         ],
         "tipps": [
-          "Imprimer le passeport sur du papier plus solide ou le ranger dans une pochette transparente – il doit tenir un an.",
-          "Faire créer au groupe son propre tampon ; cela renforce le sentiment d’appartenance."
+          "Un tampon propre au groupe (motif choisi ensemble) donne plus de valeur au passeport que n’importe quelle signature.",
+          "Tous les cinq tampons, faire une courte pause : quel skill est monté dans la collection ?"
         ],
         "material": "Passeport sur papier solide (A4, recto verso), tampon ou autocollants, boîte pour les passeports"
       }
-    }
+    },
+    "look": "spiel"
   },
   {
     "id": "skills-gefuehlsrad",
@@ -818,6 +813,7 @@
         "achtung": "Si une personne montre sans cesse « impuissant », « seul » ou « dépassé », ne pas poser de questions dans le groupe, mais proposer un entretien individuel.",
         "material": "Roue en A3 (plastifiée), feuille A4 par personne, pinces à linge"
       }
-    }
+    },
+    "look": "spiel"
   }
 ]

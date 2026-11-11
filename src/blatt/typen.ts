@@ -285,6 +285,21 @@ export type Baustein =
   | { art: 'stundenleiste'; titel?: string; schritte: { text: string; bild?: BildId; min?: number }[] }
   /** Checkliste zum Abhaken. */
   | { art: 'abhaken'; titel?: string; items: string[] }
+  // --- Skills-Kurs, Look „spiel“ (11/2026): Blätter zum Tun statt zum Abschreiben ---
+  /** Bingo zum Herumgehen: je Feld ein kurzer Satz (≤ 46 Zeichen), darunter Platz für einen Namen oder ein Kreuz. 9 oder 16 Felder. */
+  | { art: 'bingo'; felder: string[]; spalten?: 3 | 4; titel?: string; namen?: boolean }
+  /** Entweder – oder: Paare zum Einkreisen (je Seite ≤ 26 Zeichen), 3–8 Paare. */
+  | { art: 'entwederOder'; paare: [string, string][]; titel?: string }
+  /** Mission der Woche: eine kleine Aufgabe für draußen (≤ 170 Zeichen), Kästchen zum Abhaken (`tage`, 1–7), `beweis` = was man mitbringt oder erzählt. */
+  | { art: 'mission'; titel?: string; text: string; tage?: number; beweis?: string }
+  /** Würfelkarte: genau 6 Aufgaben oder Fragen (≤ 70 Zeichen), eine je Augenzahl. */
+  | { art: 'wuerfel'; zeilen: string[]; titel?: string }
+  /** Stempelweg: ein Pfad aus `felder` Kreisen (10–40) zum Stempeln; `etappen` = Abschnitte mit Titel ab Feld `ab` (≤ 22 Zeichen); `ziel` = Wort am Ende. */
+  | { art: 'stempelweg'; felder: number; etappen?: { ab: number; titel: string }[]; ziel?: string }
+  /** Rangliste (Tier-List): 2–5 Stufen (≤ 16 Zeichen) als farbige Reiter, daneben Platz zum Einsortieren; `items` = Kärtchen-Wörter darüber. */
+  | { art: 'rangliste'; stufen: string[]; items?: string[]; hoehe?: number }
+  /** Balken zum Ausmalen wie Werte in einem Spiel: je Zeile ein Wort (≤ 24 Zeichen) und `stufen` Segmente (5 oder 10); `leer` = Zeilen mit Linie für eigene Wörter. */
+  | { art: 'balken'; items: string[]; stufen?: 5 | 10; leer?: number; pole?: [string, string] }
 
 export type BausteinArt = Baustein['art']
 
@@ -652,6 +667,8 @@ export interface Blatt {
   verwandt?: string[]
   /** Gehört zum Skills-Kurs: Einheit(en), in denen das Blatt vorkommt (z. B. ['j1-e01']). */
   kurs?: string[]
+  /** Skills-Kurs: Look „spiel“ – kräftiger Kopf in der Modulfarbe, Aufkleber-Kästen, größere Schrift (design.ts, pdf/spiel.tsx). */
+  look?: 'spiel'
   /** Nur Spielschule: Domänen, Wörterstreifen DE/FR/LB/PT, Satz der Woche, Elternbrief (für beide Sprachfassungen). */
   woche?: Themenwoche
   /** Passgenau: zusammengesetztes Kinderblatt – „Mein Ziel“-Zeile unter dem Titel (statt des Untertitels) und die

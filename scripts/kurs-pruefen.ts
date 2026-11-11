@@ -264,6 +264,7 @@ for (const { e, datei } of einheiten.values()) {
   if (e.hintergrund && !(e.quellen ?? []).length) melde('H', wo, 'Hintergrund ohne Quelle')
   if (!e.achtung) melde('H', wo, '„achtung“ fehlt')
   if (!e.joker && !e.bruecke) melde('H', wo, '„bruecke“ (Ausblick) fehlt')
+  if (e.mission && e.mission.length > 220) melde('H', wo, `Mission über 220 Zeichen (${e.mission.length}) – ein bis zwei Sätze`)
   if (e.joker && !e.passt) melde('H', wo, 'Joker ohne „passt“ (wann einsetzen?)')
   if (!e.joker && e.passt) melde('H', wo, '„passt“ ist nur für Joker gedacht')
   for (const x of [e.titel, e.kurz, ...(e.ziele ?? []), ...(e.material ?? []), ...(e.vorbereitung ?? []), e.bruecke, e.hintergrund, e.achtung]) stil(wo, x)

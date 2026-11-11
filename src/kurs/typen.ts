@@ -71,6 +71,9 @@ export interface Einheit {
   blaetter: string[]
   ablauf: AblaufZeile[]
   schritte: Schritt[]
+  /** Mission der Woche: eine kleine, machbare Aufgabe für draußen bis zum nächsten Mal (ein bis zwei Sätze, wörtlich an die
+   *  Jugendlichen; freiwillig, nie bewertet). Steht auch auf dem Schülerblatt (Baustein `mission`). */
+  mission?: string
   /** Ausblick auf die nächste Einheit (ein Satz, wörtlich). */
   bruecke?: string
   /** Fachlicher Hintergrund für die Leitung (300–900 Zeichen, Quellen im Text). */

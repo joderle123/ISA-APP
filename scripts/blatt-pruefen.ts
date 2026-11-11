@@ -90,6 +90,8 @@ const ARTEN = new Set([
 ])
 /** Spielschule: Forscherblatt zum Experiment der Woche (eine ganze Seite) */
 ARTEN.add('forscherblatt')
+/** Skills-Kurs, Look „spiel“ (pdf/spiel.tsx) */
+for (const a of ['bingo', 'entwederOder', 'mission', 'wuerfel', 'stempelweg', 'rangliste', 'balken']) ARTEN.add(a)
 /** Passgenau: Karten und Hilfen für Einzelstunden (src/blatt/pdf/passgenau.tsx) */
 for (const a of ['zielkarte', 'checkin', 'wahlkarte', 'stundenleiste', 'abhaken']) ARTEN.add(a)
 
@@ -703,6 +705,40 @@ function pruefeBausteine(wo: string, liste: Baustein[], blatt: Blatt, sprache: S
         if (b.paare.length < 2 || b.paare.length > 16) melde('F', w, 'Regler: 2–16 Paare')
         if (b.stufen && ![5, 7].includes(b.stufen)) melde('F', w, 'Regler: 5 oder 7 Stufen')
         b.paare.forEach((p) => p.some((x) => x.length > 18) && melde('H', w, `Pol „${p.join(' – ')}“ zu lang (max. 18 Zeichen)`))
+        break
+      case 'bingo':
+        if (![9, 12, 16].includes(b.felder.length)) melde('F', w, 'Bingo: 9, 12 oder 16 Felder')
+        if (b.spalten && ![3, 4].includes(b.spalten)) melde('F', w, 'Bingo: 3 oder 4 Spalten')
+        b.felder.forEach((x) => x.length > 46 && melde('H', w, `Bingo-Feld „${x}“ zu lang (max. 46 Zeichen)`))
+        break
+      case 'entwederOder':
+        if (b.paare.length < 2 || b.paare.length > 8) melde('F', w, 'Entweder – oder: 2–8 Paare')
+        b.paare.forEach((p) => p.some((x) => x.length > 26) && melde('H', w, `Paar „${p.join(' / ')}“ zu lang (je Seite max. 26 Zeichen)`))
+        break
+      case 'mission':
+        if (!b.text) melde('F', w, 'Mission ohne Text')
+        if (b.text.length > 170) melde('H', w, 'Mission: Text über 170 Zeichen – eine Mission ist ein Satz')
+        if (b.tage !== undefined && (b.tage < 0 || b.tage > 7)) melde('F', w, 'Mission: 0–7 Kästchen')
+        break
+      case 'wuerfel':
+        if (b.zeilen.length !== 6) melde('F', w, 'Würfelkarte: genau 6 Zeilen')
+        b.zeilen.forEach((x) => x.length > 70 && melde('H', w, `Würfel-Zeile „${x}“ zu lang (max. 70 Zeichen)`))
+        break
+      case 'stempelweg':
+        if (b.felder < 4 || b.felder > 40) melde('F', w, 'Stempelweg: 4–40 Felder')
+        ;(b.etappen ?? []).forEach((e) => {
+          if (e.ab < 1 || e.ab > b.felder) melde('F', w, `Etappe „${e.titel}“ beginnt außerhalb des Wegs`)
+          if (e.titel.length > 22) melde('H', w, `Etappe „${e.titel}“ zu lang (max. 22 Zeichen)`)
+        })
+        break
+      case 'rangliste':
+        if (b.stufen.length < 2 || b.stufen.length > 5) melde('F', w, 'Rangliste: 2–5 Stufen')
+        b.stufen.forEach((x) => x.length > 16 && melde('H', w, `Stufe „${x}“ zu lang (max. 16 Zeichen)`))
+        break
+      case 'balken':
+        if (b.items.length + (b.leer ?? 0) < 2 || b.items.length + (b.leer ?? 0) > 12) melde('F', w, 'Balken: 2–12 Zeilen')
+        if (b.stufen && ![5, 10].includes(b.stufen)) melde('F', w, 'Balken: 5 oder 10 Segmente')
+        b.items.forEach((x) => x.length > 24 && melde('H', w, `Balken „${x}“ zu lang (max. 24 Zeichen)`))
         break
       case 'jahr':
         if (b.legende.length < 2 || b.legende.length > 7) melde('F', w, 'Jahr: 2–7 Farben in der Legende')

@@ -18,6 +18,7 @@ import { FARBEN, farbTeile, type FarbTeil } from '../spielschule'
 import { Anziehpuppe, Bastelbogen, Faedelkarte, Klappbild, Labyrinth, Laufweg, Memory, Minibuch, PunkteVerbinden, SchneidenKleben, Suchbild } from './spielschule'
 import { Abhaken, Checkin, Stundenleiste, Wahlkarte, Zielkarte } from './passgenau'
 import { Formfelder, Jahr, Personen, Regler } from './reflexion'
+import { Balken, Bingo, EntwederOder, Mission, Rangliste, SpielAufgabe, SpielInfo, SpielRegler, Stempelweg, Wuerfel } from './spiel'
 import { aufhellen, mischen, SEKTOR_TOENE, verlauf, WASSER, type Design } from './design'
 import { duotone, motivFuerIcon } from '../icon-motiv'
 import { istSzene, szeneMitFiguren } from '../szenen'
@@ -327,6 +328,23 @@ const PAL_GRUEN: Palette = { tinte: '#2F6B3A', tief: '#2F6B3A', mittel: '#9CC9A3
 
 function Aufgabe({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'aufgabe' }> }) {
   const n = c.nummern.get(b)
+  // Skills-Kurs, Look „spiel“: Nummer als schräger Aufkleber, größere Schrift (spiel.tsx)
+  if (c.design?.spiel)
+    return (
+      <SpielAufgabe
+        c={c}
+        n={n}
+        text={b.text}
+        hinweis={b.hinweis}
+        symbole={(b.symbole ?? []).length ? (
+          <View style={{ flexDirection: 'row', marginLeft: 3 }}>
+            {(b.symbole ?? []).map((s) => (
+              <SymbolKachel key={s} c={c} s={s} />
+            ))}
+          </View>
+        ) : undefined}
+      />
+    )
   return (
     <View wrap={false} style={{ marginTop: c.m.abstand * 0.7, marginBottom: c.m.abstand * 0.5 }}>
       <View style={{ flexDirection: 'row', alignItems: 'flex-start' }}>
@@ -358,6 +376,7 @@ function Aufgabe({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'aufgabe' }> })
 const INFO_ICON = { tipp: 'bulb', wissen: 'book', achtung: 'alert-triangle', merke: 'bookmark', hilfe: 'lifebuoy' } as const
 
 function Info({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'info' }> }) {
+  if (c.design?.spiel) return <SpielInfo c={c} b={b} />
   const sym = b.symbol ?? 'wissen'
   const titel = b.titel ?? tx(c)[sym]
   return (
@@ -2776,7 +2795,7 @@ function EinBaustein({ c, b, grow }: { c: Ctx; b: Baustein; grow?: boolean }) {
     case 'formfelder':
       return <Formfelder c={c} b={b} />
     case 'regler':
-      return <Regler c={c} b={b} />
+      return c.design?.spiel ? <SpielRegler c={c} b={b} /> : <Regler c={c} b={b} />
     case 'jahr':
       return <Jahr c={c} b={b} />
     case 'personen':
@@ -2843,6 +2862,20 @@ function EinBaustein({ c, b, grow }: { c: Ctx; b: Baustein; grow?: boolean }) {
       return <Stundenleiste c={c} b={b} />
     case 'abhaken':
       return <Abhaken c={c} b={b} />
+    case 'bingo':
+      return <Bingo c={c} b={b} />
+    case 'entwederOder':
+      return <EntwederOder c={c} b={b} />
+    case 'mission':
+      return <Mission c={c} b={b} />
+    case 'wuerfel':
+      return <Wuerfel c={c} b={b} />
+    case 'stempelweg':
+      return <Stempelweg c={c} b={b} />
+    case 'rangliste':
+      return <Rangliste c={c} b={b} />
+    case 'balken':
+      return <Balken c={c} b={b} />
   }
 }
 
@@ -2866,6 +2899,7 @@ const FEST = new Set<Baustein['art']>([
   'schneiden_kleben', 'memory', 'labyrinth', 'laufweg', 'minibuch', 'punkte_verbinden', 'klappbild', 'faedelkarte',
   'bastelbogen', 'suchbild', 'anziehpuppe',
   'zielkarte', 'checkin', 'wahlkarte', 'stundenleiste', 'abhaken',
+  'bingo', 'entwederOder', 'mission', 'wuerfel', 'stempelweg', 'rangliste', 'balken',
 ])
 
 /** Kleine Bausteine, die nicht umbrechen sollen (auch wenn sie es könnten). */

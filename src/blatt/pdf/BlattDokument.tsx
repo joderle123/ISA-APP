@@ -12,7 +12,8 @@ import { eldibDomainById, eldibGoalById } from '../../data/taxonomy'
 import { Bausteine, nummerieren, NiveauZeichen, Plakette, Leitbild, Fliess, type Ctx } from './bausteine'
 import { akzentFarben, designVon, type Design } from './design'
 import { textBreite, type SchriftSorte } from './textbreite'
-import { LEHRER_MASSE, MASSE, SCHRIFT, SEITE, TEXTE, dauerText, typo, type Masse } from './stil'
+import { LEHRER_MASSE, MASSE, SCHRIFT, SEITE, SPIEL_MASSE, TEXTE, dauerText, typo, type Masse } from './stil'
+import { SpielKopf } from './spiel'
 import { ELDIB_FR } from '../eldib-fr'
 import { urheberschaft } from '../../lib/urheber'
 import { CDSE_LOGO, CDSE_LOGO_SEITEN } from '../../lib/cdse-logo'
@@ -645,7 +646,9 @@ export function BlattSeiten({ blatt, opt }: { blatt: Blatt; opt?: BlattOptionen 
   const p = opt?.farben ? bp : palette(akzentFarben(blatt) ?? bereich.farben)
   const layoutName = opt?.layout ?? blattLayout(blatt)
   // Passgenau, Jugendblatt: großzügigere Schreibzeilen (28 statt 23 pt) – wer Gedanken aufschreibt, braucht Platz
-  const m = blatt.passgenau && layoutName === 'jugend' ? { ...MASSE.jugend, zeile: 28 } : MASSE[layoutName]
+  // Skills-Kurs, Look „spiel“: größere Schrift, mehr Luft (nur im Jugend-Layout)
+  const spiel = blatt.look === 'spiel' && layoutName === 'jugend' && !blatt.passgenau
+  const m = spiel ? SPIEL_MASSE : blatt.passgenau && layoutName === 'jugend' ? { ...MASSE.jugend, zeile: 28 } : MASSE[layoutName]
   const teile = blatt.passgenau?.teile
   const ids = teile ? new Map(inhalt.bausteine.flatMap((b, i) => (teile[i] ? [[b, teile[i]!] as const] : []))) : undefined
   const design = designVon(blatt, layoutName, JSON.stringify(inhalt.bausteine))
@@ -672,8 +675,14 @@ export function BlattSeiten({ blatt, opt }: { blatt: Blatt; opt?: BlattOptionen 
             />
           ) : null}
           <Folgekopf inhalt={inhalt} sprache={sprache} p={p} m={m} />
-          <Kopfzeile blatt={blatt} nr={opt?.nr} sprache={sprache} p={p} m={m} heft={opt?.heft} design={design} />
-          <Titelblock blatt={blatt} inhalt={inhalt} sprache={sprache} p={p} m={m} heft={opt?.heft} design={design} />
+          {design.spiel && !opt?.heft ? (
+            <SpielKopf blatt={blatt} inhalt={inhalt} sprache={sprache} p={p} m={m} c={c} />
+          ) : (
+            <>
+              <Kopfzeile blatt={blatt} nr={opt?.nr} sprache={sprache} p={p} m={m} heft={opt?.heft} design={design} />
+              <Titelblock blatt={blatt} inhalt={inhalt} sprache={sprache} p={p} m={m} heft={opt?.heft} design={design} />
+            </>
+          )}
           <Bausteine c={c} liste={inhalt.bausteine} oben />
           <Fusszeile blatt={blatt} nr={opt?.nr} sprache={sprache} heft={opt?.heft} />
         </Page>

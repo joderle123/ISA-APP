@@ -865,6 +865,12 @@ function EinheitSeite({ e, gruppe, gruppeAendern, bew, aktiv }: { e: Einheit; gr
                 <SchrittKarte key={i} s={s} i={i} zeit={zeiten[i]} onBlatt={(id) => setOffen(blattById.get(id) ?? null)} />
               ))}
             </ol>
+            {e.mission ? (
+              <div className="ku-bruecke ku-mission">
+                <span className="ku-seite-label">Mission der Woche</span>
+                <p>„{e.mission}“</p>
+              </div>
+            ) : null}
             {e.bruecke ? (
               <div className="ku-bruecke">
                 <span className="ku-seite-label">Ausblick zum Schluss</span>
@@ -964,6 +970,12 @@ function Spickzettel({ e, kopfzeile }: { e: Einheit; kopfzeile: string }) {
             <>
               <h2>Achtung</h2>
               <p className="ku-druck-klein">{e.achtung}</p>
+            </>
+          ) : null}
+          {e.mission ? (
+            <>
+              <h2>Mission der Woche</h2>
+              <p className="ku-druck-klein">„{e.mission}“</p>
             </>
           ) : null}
           {e.bruecke ? (
@@ -1095,6 +1107,11 @@ function DruckEinheit({ e, kopfzeile, jahrTitel, notiz }: { e: Einheit; kopfzeil
           </section>
         )
       })}
+      {e.mission ? (
+        <p className="ku-druck-bruecke">
+          <b>Mission der Woche:</b> „{e.mission}“
+        </p>
+      ) : null}
       {e.bruecke ? (
         <p className="ku-druck-bruecke">
           <b>Ausblick:</b> „{e.bruecke}“

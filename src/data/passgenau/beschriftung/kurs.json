@@ -719,34 +719,6 @@
   "sicher": 0.9,
   "h": "d7d5d2bf"
  },
- "k:j1-e04:2": {
-  "rolle": [
-   "kern",
-   "einstieg"
-  ],
-  "bogen": "verstehen",
-  "eldib": {
-   "primaer": [
-    "K-33"
-   ],
-   "sekundaer": [
-    "SOZ-40",
-    "K-29"
-   ]
-  },
-  "alter": {
-   "von": 12,
-   "bis": 17
-  },
-  "energie": 1,
-  "belastung": 0,
-  "einzeltauglich": "ja",
-  "merkmale": {},
-  "begruendung": "Sammeln, Zuordnen und Tank-Bild gehen wörtlich zu zweit; Bedürfnis hinter dem Wunsch = Motive (K-33).",
-  "von": "agent",
-  "sicher": 0.85,
-  "h": "8422896a"
- },
  "k:j1-e04:3": {
   "rolle": [
    "kern"
@@ -773,74 +745,6 @@
   "sicher": 0.85,
   "h": "84f43774"
  },
- "k:j1-e04:4": {
-  "rolle": [
-   "einstieg",
-   "bewegung"
-  ],
-  "bogen": "wahrnehmen",
-  "eldib": {
-   "primaer": [
-    "K-19"
-   ],
-   "sekundaer": [
-    "SOZ-31"
-   ]
-  },
-  "alter": {
-   "von": 10,
-   "bis": 17
-  },
-  "energie": 2,
-  "belastung": 0,
-  "einzeltauglich": "angepasst",
-  "einzelvariante": {
-   "text": "In vier Raumecken hängen Schilder: Ruhe, Bewegung, Leute, Essen und Schlaf. Die Fachkraft liest eine Frage vor (Was brauchst du nach einem langen Schultag?), der oder die Jugendliche geht in die passende Ecke und sagt kurz, warum. Die Fachkraft wählt auch eine Ecke.",
-   "sagen": [
-    "Es gibt keine richtige Ecke. Geh dahin, wo du ehrlich hingehörst.",
-    "Warum diese Ecke?"
-   ]
-  },
-  "merkmale": {},
-  "begruendung": "Ecken-Aufstellung geht zu zweit; Gehen statt Rennen (Energie 2), kurzer Einstieg statt Spiel.",
-  "von": "agent",
-  "sicher": 0.85,
-  "h": "5487c29d"
- },
- "k:j1-e04:5": {
-  "rolle": [
-   "kern",
-   "transfer"
-  ],
-  "bogen": "uebertragen",
-  "eldib": {
-   "primaer": [
-    "SOZ-40"
-   ],
-   "sekundaer": [
-    "V-32"
-   ]
-  },
-  "alter": {
-   "von": 12,
-   "bis": 17
-  },
-  "energie": 1,
-  "belastung": 1,
-  "einzeltauglich": "angepasst",
-  "einzelvariante": {
-   "text": "Die Fachkraft liest mit dem oder der Jugendlichen die Geschichte und bespricht die Beispielzeile. Dann wählt er oder sie fünf Bedürfnisse, schätzt Wichtigkeit und Füllstand ein, kreist die größte Lücke ein und plant einen kleinen Schritt für diese Woche.",
-   "sagen": [
-    "Sehr wichtig und wenig voll – da ist die Lücke. Dort lohnt sich ein kleiner Schritt am meisten.",
-    "Klein heißt: Du schaffst ihn diese Woche, ohne dass jemand anderes mitspielen muss."
-   ]
-  },
-  "merkmale": {},
-  "begruendung": "Mappe und Einheit 15/30 sind Kursbezug; Lücke finden und Schritt planen geht zu zweit (Transfer).",
-  "von": "agent",
-  "sicher": 0.85,
-  "h": "e8606070"
- },
  "k:j1-e04:6": {
   "rolle": [
    "regulation"
@@ -864,38 +768,6 @@
   "von": "agent",
   "sicher": 0.9,
   "h": "7b7db815"
- },
- "k:j1-e04:7": {
-  "rolle": [
-   "abschluss",
-   "transfer"
-  ],
-  "eldib": {
-   "primaer": [
-    "V-29"
-   ],
-   "sekundaer": [
-    "K-24"
-   ]
-  },
-  "alter": {
-   "von": 12,
-   "bis": 17
-  },
-  "energie": 1,
-  "belastung": 0,
-  "einzeltauglich": "angepasst",
-  "einzelvariante": {
-   "text": "Zum Schluss nennt der oder die Jugendliche eine Idee zum Auftanken, die er oder sie diese Woche ausprobieren will; die Fachkraft nennt auch eine. Wer mag, schreibt sie auf eine Karte zum Mitnehmen.",
-   "sagen": [
-    "Welche Idee zum Auftanken willst du diese Woche ausprobieren?"
-   ]
-  },
-  "merkmale": {},
-  "begruendung": "Ideen der anderen und Skills-Pass entfallen; eigene Auftank-Idee für die Woche bleibt.",
-  "von": "agent",
-  "sicher": 0.85,
-  "h": "af24c1ec"
  },
  "k:j1-e05:0": {
   "rolle": [
@@ -928,80 +800,6 @@
   "von": "agent",
   "sicher": 0.9,
   "h": "8dbe8966"
- },
- "k:j1-e05:1": {
-  "rolle": [
-   "einstieg"
-  ],
-  "bogen": "reflektieren",
-  "eldib": {
-   "primaer": [
-    "V-22"
-   ],
-   "sekundaer": [
-    "K-24"
-   ]
-  },
-  "kompetenz": [
-   "selbstbild"
-  ],
-  "alter": {
-   "von": 12,
-   "bis": 17
-  },
-  "energie": 1,
-  "belastung": 0,
-  "einzeltauglich": "angepasst",
-  "einzelvariante": {
-   "text": "Die Fachkraft fragt, ob der oder die Jugendliche den kleinen Schritt vom letzten Treffen ausprobiert hat; ein Daumen reicht, ein Bericht ist nicht nötig. Danach nennt sie das Thema: Wie bin ich, und die meisten Menschen stehen irgendwo zwischen den Extremen.",
-   "sagen": [
-    "Hast du deinen kleinen Schritt ausprobiert? Ein Daumen reicht.",
-    "Heute geht es um die Frage: Wie bist du – und sehen andere dich genauso?"
-   ]
-  },
-  "merkmale": {},
-  "begruendung": "Bezug auf Kurs-Woche ausgeschrieben; Rückblick auf den Vorsatz mit Daumen, dann Thema nennen.",
-  "von": "agent",
-  "sicher": 0.85,
-  "h": "69e3de08"
- },
- "k:j1-e05:2": {
-  "rolle": [
-   "kern"
-  ],
-  "bogen": "wahrnehmen",
-  "eldib": {
-   "primaer": [
-    "K-19"
-   ],
-   "sekundaer": [
-    "SOZ-31",
-    "SOZ-40"
-   ]
-  },
-  "kompetenz": [
-   "selbstbild"
-  ],
-  "alter": {
-   "von": 12,
-   "bis": 17
-  },
-  "energie": 1,
-  "belastung": 1,
-  "einzeltauglich": "angepasst",
-  "einzelvariante": {
-   "text": "Kurzer Input: Manche tanken in Ruhe auf, andere unter Leuten, keine Seite ist besser. Der oder die Jugendliche füllt Seite 1 des Blatts aus, klebt die Kreuze als Punkte auf die A3-Kopie und streicht Linien durch, zu denen er oder sie keine Rückmeldung möchte.",
-   "sagen": [
-    "Leise heißt nicht schüchtern. Leise ist, wer in Ruhe auftankt.",
-    "Denk daran, wie du meistens bist – nicht, wie du sein willst.",
-    "Streich eine Linie durch, wenn du dazu keine Rückmeldung möchtest."
-   ]
-  },
-  "merkmale": {},
-  "begruendung": "Selbsteinschätzung auf dem Blatt geht allein; A3-Punkte für die Galerie nur noch zwischen Kind und Fachkraft.",
-  "von": "agent",
-  "sicher": 0.85,
-  "h": "f5564d2a"
  },
  "k:j1-e05:3": {
   "rolle": [
@@ -1040,106 +838,6 @@
   "sicher": 0.85,
   "h": "b23d0cc9"
  },
- "k:j1-e05:4": {
-  "rolle": [
-   "reflexion",
-   "regulation"
-  ],
-  "bogen": "uebertragen",
-  "eldib": {
-   "primaer": [
-    "SOZ-40"
-   ],
-   "sekundaer": [
-    "K-19"
-   ]
-  },
-  "kompetenz": [
-   "selbstbild"
-  ],
-  "alter": {
-   "von": 12,
-   "bis": 17
-  },
-  "energie": 2,
-  "belastung": 0,
-  "einzeltauglich": "angepasst",
-  "einzelvariante": {
-   "text": "Fachkraft und Jugendliche gehen draußen eine ruhige Strecke von etwa zehn Minuten, bei Regen durch den Flur. Die ersten fünf Minuten wird nicht gesprochen, nur auf Geräusche, Gerüche und Schritte geachtet. Dann erzählt der oder die Jugendliche, was er oder sie heute über sich gelernt hat.",
-   "sagen": [
-    "Fünf Minuten nur hören und riechen. Wie viele Geräusche zählst du?",
-    "Was hast du heute über dich gelernt? Oder: Was hat dich an den Punkten überrascht?"
-   ]
-  },
-  "merkmale": {},
-  "begruendung": "Spaziergang zu zweit mit der Fachkraft statt Paare; ruhiges Gehen mit Stille und Rückblick, kein Bewegungsspiel.",
-  "von": "agent",
-  "sicher": 0.8,
-  "h": "2e4fb6be"
- },
- "k:j1-e05:5": {
-  "rolle": [
-   "regulation"
-  ],
-  "bogen": "ueben",
-  "eldib": {
-   "primaer": [
-    "V-25"
-   ],
-   "sekundaer": []
-  },
-  "kompetenz": [
-   "selbstregulation"
-  ],
-  "alter": {
-   "von": 11,
-   "bis": 17
-  },
-  "energie": 1,
-  "belastung": 0,
-  "einzeltauglich": "ja",
-  "merkmale": {},
-  "begruendung": "Zwanzig Sekunden Dankbarkeit mit geschlossenen Augen geht allein; altersneutraler Skill, daher ab 11.",
-  "von": "agent",
-  "sicher": 0.85,
-  "h": "98f2d32b"
- },
- "k:j1-e05:6": {
-  "rolle": [
-   "abschluss",
-   "reflexion"
-  ],
-  "eldib": {
-   "primaer": [
-    "K-19"
-   ],
-   "sekundaer": [
-    "SOZ-40"
-   ]
-  },
-  "kompetenz": [
-   "selbstbild"
-  ],
-  "alter": {
-   "von": 12,
-   "bis": 17
-  },
-  "energie": 1,
-  "belastung": 0,
-  "einzeltauglich": "angepasst",
-  "einzelvariante": {
-   "text": "Der oder die Jugendliche nennt ein Wort zu heute und schreibt einen Satz auf, den er oder sie mitnimmt: etwas, das er oder sie an der eigenen Art mag, oder den Dankbarkeitsblitz. Das Blatt geht mit nach Hause; aufgehängt wird nichts ohne ausdrückliches Ja.",
-   "sagen": [
-    "Ein Wort zu heute – welches?",
-    "Schreib einen Satz auf: etwas, das du an deiner Art magst – oder dein Dankbarkeitsblitz."
-   ]
-  },
-  "merkmale": {},
-  "begruendung": "Skills-Pass und Reihum entfallen; ein Wort und ein Satz zum Mitnehmen. Satz über die eigene Art: K-19.",
-  "von": "agent",
-  "sicher": 0.8,
-  "h": "dfda1cbf"
- },
  "k:j1-e06:0": {
   "rolle": [
    "ankommen"
@@ -1167,42 +865,6 @@
   "von": "agent",
   "sicher": 0.85,
   "h": "8c0f55c3"
- },
- "k:j1-e06:1": {
-  "rolle": [
-   "einstieg"
-  ],
-  "bogen": "reflektieren",
-  "eldib": {
-   "primaer": [
-    "K-19"
-   ],
-   "sekundaer": [
-    "SOZ-40"
-   ]
-  },
-  "kompetenz": [
-   "selbstbild"
-  ],
-  "alter": {
-   "von": 12,
-   "bis": 17
-  },
-  "energie": 1,
-  "belastung": 0,
-  "einzeltauglich": "angepasst",
-  "einzelvariante": {
-   "text": "Die Fachkraft knüpft kurz an das letzte Thema an (laut, leise, Selbst- und Fremdbild): Wer mag, sagt, was überrascht hat. Dann die Brücke: Jede Art hat ihre Stärken. Heute werden sie sichtbar, und dafür geht es zuerst nach draußen.",
-   "sagen": [
-    "Letztes Mal ging es darum, wie du bist. Heute geht es darum, was du kannst und was dich hält.",
-    "Dafür brauchst du einen Baum. Einen echten."
-   ]
-  },
-  "merkmale": {},
-  "begruendung": "Bezug auf Einheit 5 ausgeschrieben; Merkmal Gewaltbezug war falsch, hier geht es um Stärken.",
-  "von": "agent",
-  "sicher": 0.8,
-  "h": "9e1ee419"
  },
  "k:j1-e06:2": {
   "rolle": [
@@ -1276,43 +938,6 @@
   "sicher": 0.8,
   "h": "18928298"
  },
- "k:j1-e06:4": {
-  "rolle": [
-   "kern"
-  ],
-  "bogen": "wahrnehmen",
-  "eldib": {
-   "primaer": [
-    "SOZ-40"
-   ],
-   "sekundaer": [
-    "K-19",
-    "K-18"
-   ]
-  },
-  "kompetenz": [
-   "selbstbild"
-  ],
-  "alter": {
-   "von": 12,
-   "bis": 17
-  },
-  "energie": 1,
-  "belastung": 0,
-  "einzeltauglich": "angepasst",
-  "einzelvariante": {
-   "text": "Neben dem großen Baum liegt ein kleiner. Die Fachkraft schreibt vier bis fünf Haftnotizen mit je einer Stärke und einer kurzen Beobachtung, nichts zum Aussehen, und klebt sie an den kleinen Baum. Der oder die Jugendliche liest sie in Ruhe und beantwortet auf Seite 2 die Fragen.",
-   "sagen": [
-    "Ich schreibe auf, was ich bei dir gesehen habe: geduldig – du bleibst an einer schweren Aufgabe dran.",
-    "Welche Stärke hat dich überrascht? Welche kanntest du schon?"
-   ]
-  },
-  "merkmale": {},
-  "begruendung": "Zettel schreibt allein die Fachkraft (Tipp der Quelle bei wenigen Jugendlichen); Stärken-Rückmeldung ist leicht.",
-  "von": "agent",
-  "sicher": 0.85,
-  "h": "d870a8c8"
- },
  "k:j1-e06:5": {
   "rolle": [
    "regulation"
@@ -1342,42 +967,6 @@
   "von": "agent",
   "sicher": 0.85,
   "h": "6038961c"
- },
- "k:j1-e06:6": {
-  "rolle": [
-   "abschluss",
-   "reflexion"
-  ],
-  "eldib": {
-   "primaer": [
-    "K-19"
-   ],
-   "sekundaer": [
-    "SOZ-40"
-   ]
-  },
-  "kompetenz": [
-   "selbstbild"
-  ],
-  "alter": {
-   "von": 12,
-   "bis": 17
-  },
-  "energie": 1,
-  "belastung": 0,
-  "einzeltauglich": "angepasst",
-  "einzelvariante": {
-   "text": "Der oder die Jugendliche nennt eine Stärke aus dem kleinen Baum, die er oder sie mitnimmt, und schreibt einen Satz dazu auf. Der Baum kommt flach in eine Mappe und geht mit nach Hause; nur mit ausdrücklichem Ja bleibt er bei der Fachkraft.",
-   "sagen": [
-    "Welche Stärke aus deinem kleinen Baum nimmst du mit?",
-    "Schreib einen Satz dazu auf – nur für dich."
-   ]
-  },
-  "merkmale": {},
-  "begruendung": "Skills-Pass, Gruppenmappe und Einheit 19 entfallen; eine Stärke nennen und aufschreiben, Baum nimmt es mit.",
-  "von": "agent",
-  "sicher": 0.8,
-  "h": "e8778664"
  },
  "k:j1-e07:0": {
   "rolle": [
@@ -33191,5 +32780,29 @@
   "von": "agent",
   "sicher": 0.85,
   "h": "d506b611"
+ },
+ "k:j1-e04:10": {
+  "allgemein": {
+   "text": "Das Blatt austeilen. Jede Person malt still aus, wie voll ihre sechs Tanks heute sind; die Leitung malt ein eigenes Blatt mit. Dann den Tank einkreisen, der gerade blinkt, und eine Schnell-Tankstelle aus der Liste wählen oder eine eigene erfinden. Wer mag, nennt zum Schluss seine Tankstelle – nie den Grund. Das Blatt kommt in die persönliche Mappe und wird später wieder hervorgeholt."
+  },
+  "begruendung": "Nur der Verweis auf spätere Einheiten ersetzt; übrige Felder aus der automatischen Einordnung.",
+  "von": "agent",
+  "sicher": 0.7
+ },
+ "k:j1-e06:7": {
+  "allgemein": {
+   "sagen.1": "Heute geht es darum, was ihr könnt und was euch hält."
+  },
+  "begruendung": "Nur der Rückblick auf die Vorwoche ersetzt; übrige Felder aus der automatischen Einordnung.",
+  "von": "agent",
+  "sicher": 0.7
+ },
+ "k:j1-e06:11": {
+  "allgemein": {
+   "text": "Wer mag, nennt eine geschenkte Stärke, die er mitnimmt. Dann gibt es den Stempel in den Skills-Pass, und der Bodyscan kommt in die Skills-Sammlung. Die Leitung liest die Mission der Woche vor. Die Bäume kommen flach in die A3-Sammelmappe der Gruppe und bleiben im Raum, bis sie später wieder hervorgeholt werden."
+  },
+  "begruendung": "Nur der Verweis auf eine spätere Einheit ersetzt; übrige Felder aus der automatischen Einordnung.",
+  "von": "agent",
+  "sicher": 0.7
  }
 }

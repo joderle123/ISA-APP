@@ -2874,5 +2874,547 @@
       "skills-mein-argument",
       "skills-debatte"
     ]
+  },
+  {
+    "id": "skills-warnlicht-karten",
+    "bereich": "skills",
+    "thema": "ich",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "look": "spiel",
+    "sozialform": [
+      "gruppe"
+    ],
+    "dauer": "20 Min.",
+    "eldib": [
+      "K-21",
+      "K-29",
+      "SOZ-37"
+    ],
+    "schlagworte": [
+      "Bedürfnisse",
+      "Tanks",
+      "Pantomime",
+      "Spiel",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:bolt",
+    "verwandt": [
+      "skills-beduerfnis-pegel"
+    ],
+    "kurs": [
+      "j1-e04"
+    ],
+    "de": {
+      "titel": "Warnlicht-Karten",
+      "untertitel": "Ein Spiel für die ganze Gruppe: Welcher Tank ist hier leer?",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "So geht das Spiel",
+          "punkte": [
+            "Zwei Teams. Eine Person zieht eine Karte und spielt die Situation 30 Sekunden ohne Worte vor.",
+            "Ihr Team rät: Welcher Tank ist leer? Richtig = 1 Punkt.",
+            "Bonus: Nennt eine Tankstelle, die diesen Tank füllt = 1 Punkt.",
+            "Falsch geraten? Dann darf das andere Team den Punkt klauen."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schneidet die Karten aus und legt sie verdeckt auf einen Stapel.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 104,
+          "schneiden": true,
+          "karten": [
+            {
+              "titel": "Nur vier Stunden geschlafen",
+              "nummer": 1
+            },
+            {
+              "titel": "Seit dem Frühstück nichts gegessen",
+              "nummer": 2
+            },
+            {
+              "titel": "Überraschungstest – du wusstest von nichts",
+              "nummer": 3
+            },
+            {
+              "titel": "Neuer Stundenplan, niemand sagt dir den Raum",
+              "nummer": 4
+            },
+            {
+              "titel": "Alle haben eine Gruppe – du noch nicht",
+              "nummer": 5
+            },
+            {
+              "titel": "Deine Nachricht bleibt seit gestern ungelesen",
+              "nummer": 6
+            },
+            {
+              "titel": "Du meldest dich dreimal, niemand nimmt dich dran",
+              "nummer": 7
+            },
+            {
+              "titel": "Jemand lacht über deine Antwort",
+              "nummer": 8
+            },
+            {
+              "titel": "Den ganzen Tag sagt dir jemand, was du tun sollst",
+              "nummer": 9
+            },
+            {
+              "titel": "Alle stimmen ab – nur dich fragt keiner",
+              "nummer": 10
+            },
+            {
+              "titel": "Sonntag, Regen, nichts zu tun",
+              "nummer": 11
+            },
+            {
+              "titel": "Zum dritten Mal dieselbe Übung",
+              "nummer": 12
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen erkennen an gespielten Alltagssituationen, welches Bedürfnis zu kurz kommt, und nennen etwas, das den Tank wieder füllt.",
+        "ablauf": [
+          "Die sechs Tank-Schilder hängen noch vom Tank-Lauf im Raum. Zwei gemischte Teams bilden, eine Person stoppt die Zeit.",
+          "Abwechselnd ziehen, spielen, raten – etwa zehn Karten. Wer nicht spielen mag, beschreibt die Situation mit Worten, ohne den Tank zu nennen.",
+          "Zum Schluss fragen: Bei welcher Karte habt ihr gedacht – das kenne ich?"
+        ],
+        "hintergrund": "Bedürfnisse zeigen sich im Alltag selten direkt, sondern als Gefühl oder Verhalten: Gereiztheit, Rückzug, Trotz. Wer diese Signale bei anderen lesen lernt, erkennt sie leichter bei sich selbst. Das Spiel übt genau diesen Schritt – vom sichtbaren Verhalten zurück zum Bedürfnis dahinter (Grawe, 2004) – und zwar an erfundenen Situationen, damit niemand Eigenes preisgeben muss.",
+        "quellen": [
+          "Grawe, K. (2004). Neuropsychotherapie. Göttingen: Hogrefe."
+        ],
+        "differenzierung": {
+          "leichter": "Die Tank-Schilder liegen in der Mitte; das Team zeigt nur auf das passende Schild.",
+          "schwerer": "Zusätzlich das Gefühl nennen, das sich als Warnlicht meldet."
+        },
+        "impulse": [
+          "Woran habt ihr den leeren Tank erkannt?",
+          "Welche Tankstelle wäre in dieser Situation in zehn Minuten machbar?"
+        ],
+        "tipps": [
+          "Lösungen: 1–2 Körper, 3–4 Sicherheit, 5–6 Dazugehören, 7–8 Ernst genommen werden, 9–10 Selbst entscheiden, 11–12 Spaß und Neues.",
+          "Bei zwei oder drei Jugendlichen: alle gemeinsam gegen die Uhr."
+        ],
+        "achtung": "Gespielt werden nur die Situationen auf den Karten, nie eigene Erlebnisse. Erzählt jemand dabei von echtem Mangel, das nicht in der Gruppe vertiefen, sondern im Einzelgespräch aufgreifen; bei Hinweisen auf Gefährdung nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren.",
+        "material": "Ein Kartensatz für die Gruppe, ausgeschnitten, Stoppuhr oder Handy-Timer, Sechs Tank-Schilder"
+      }
+    },
+    "fr": {
+      "titel": "Cartes des voyants",
+      "untertitel": "Un jeu pour tout le groupe : quel réservoir est vide ici ?",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Règle du jeu",
+          "punkte": [
+            "Deux équipes. Une personne tire une carte et mime la situation pendant 30 secondes, sans paroles.",
+            "Son équipe devine : quel réservoir est vide ? Bonne réponse = 1 point.",
+            "Bonus : citer une station qui remplit ce réservoir = 1 point.",
+            "Mauvaise réponse ? L’autre équipe peut voler le point."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Découpez les cartes et posez-les en pile, face cachée.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 104,
+          "schneiden": true,
+          "karten": [
+            {
+              "titel": "Seulement quatre heures de sommeil",
+              "nummer": 1
+            },
+            {
+              "titel": "Rien mangé depuis le petit-déjeuner",
+              "nummer": 2
+            },
+            {
+              "titel": "Contrôle surprise – tu n’étais pas au courant",
+              "nummer": 3
+            },
+            {
+              "titel": "Nouvel horaire, personne ne te dit la salle",
+              "nummer": 4
+            },
+            {
+              "titel": "Tous ont un groupe – toi pas encore",
+              "nummer": 5
+            },
+            {
+              "titel": "Ton message reste non lu depuis hier",
+              "nummer": 6
+            },
+            {
+              "titel": "Tu lèves trois fois la main, personne ne t’interroge",
+              "nummer": 7
+            },
+            {
+              "titel": "Quelqu’un rit de ta réponse",
+              "nummer": 8
+            },
+            {
+              "titel": "Toute la journée, on te dit quoi faire",
+              "nummer": 9
+            },
+            {
+              "titel": "Tout le monde vote – sauf toi",
+              "nummer": 10
+            },
+            {
+              "titel": "Dimanche, pluie, rien à faire",
+              "nummer": 11
+            },
+            {
+              "titel": "Le même exercice pour la troisième fois",
+              "nummer": 12
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes reconnaissent, à partir de situations mimées, quel besoin n’est pas satisfait et citent ce qui remplirait le réservoir.",
+        "ablauf": [
+          "Les six panneaux des réservoirs sont encore affichés. Former deux équipes mélangées, une personne chronomètre.",
+          "Tirer, mimer, deviner à tour de rôle – une dizaine de cartes. Qui ne veut pas mimer décrit la situation avec des mots, sans nommer le réservoir.",
+          "Pour finir, demander : à quelle carte avez-vous pensé – ça, je connais ?"
+        ],
+        "hintergrund": "Dans la vie quotidienne, les besoins se montrent rarement directement, mais sous forme d’émotion ou de comportement : irritabilité, retrait, opposition. Apprendre à lire ces signaux chez les autres aide à les reconnaître chez soi. Le jeu exerce précisément ce pas – du comportement visible au besoin caché (Grawe, 2004) – avec des situations inventées, pour que personne n’ait à se dévoiler.",
+        "quellen": [
+          "Grawe, K. (2004). Neuropsychotherapie. Göttingen: Hogrefe."
+        ],
+        "differenzierung": {
+          "leichter": "Les panneaux sont au centre ; l’équipe montre seulement le bon panneau.",
+          "schwerer": "Nommer en plus l’émotion qui s’allume comme voyant."
+        },
+        "impulse": [
+          "À quoi avez-vous reconnu le réservoir vide ?",
+          "Quelle station serait faisable en dix minutes dans cette situation ?"
+        ],
+        "tipps": [
+          "Solutions : 1–2 corps, 3–4 sécurité, 5–6 appartenir, 7–8 être pris au sérieux, 9–10 décider soi-même, 11–12 plaisir et nouveauté.",
+          "Avec deux ou trois jeunes : tous ensemble contre la montre."
+        ],
+        "achtung": "On ne mime que les situations des cartes, jamais des expériences personnelles. Si quelqu’un évoque un vrai manque, ne pas approfondir en groupe mais en entretien individuel ; en cas d’indices de danger, agir selon le concept de protection interne et informer la direction compétente (responsable).",
+        "material": "Un jeu de cartes découpé pour le groupe, Chronomètre ou minuteur du téléphone, Six panneaux des réservoirs"
+      }
+    }
+  },
+  {
+    "id": "skills-staerken-karten",
+    "bereich": "skills",
+    "thema": "ich",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "look": "spiel",
+    "sozialform": [
+      "gruppe"
+    ],
+    "dauer": "15 Min.",
+    "eldib": [
+      "K-28",
+      "K-32",
+      "SOZ-28"
+    ],
+    "schlagworte": [
+      "Stärken",
+      "Rückmeldung",
+      "Anerkennung",
+      "Spiel",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:gift",
+    "verwandt": [
+      "skills-baum-der-staerke"
+    ],
+    "kurs": [
+      "j1-e06"
+    ],
+    "de": {
+      "titel": "Stärken-Karten",
+      "untertitel": "Stärken zum Verschenken: Wem aus der Gruppe gehört welche Karte?",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Stärken verschenken",
+          "punkte": [
+            "Jede Person zieht drei Karten vom Stapel.",
+            "Überleg: Zu wem aus der Gruppe passt die Karte? Geh hin und schenk sie mit einem Satz: „… passt zu dir, weil du …“",
+            "Passt eine Karte zu niemandem, tausch sie am Stapel.",
+            "Geschenkte Karten klebst du in die Krone deines Baums."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schneidet die Karten aus und mischt sie.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 4,
+          "hoehe": 62,
+          "schneiden": true,
+          "karten": [
+            {
+              "titel": "hilfsbereit"
+            },
+            {
+              "titel": "ehrlich"
+            },
+            {
+              "titel": "mutig"
+            },
+            {
+              "titel": "kreativ"
+            },
+            {
+              "titel": "sportlich"
+            },
+            {
+              "titel": "geduldig"
+            },
+            {
+              "titel": "kann gut zuhören"
+            },
+            {
+              "titel": "zuverlässig"
+            },
+            {
+              "titel": "fair"
+            },
+            {
+              "titel": "geschickt mit den Händen"
+            },
+            {
+              "titel": "musikalisch"
+            },
+            {
+              "titel": "bleibt ruhig"
+            },
+            {
+              "titel": "neugierig"
+            },
+            {
+              "titel": "kann gut erklären"
+            },
+            {
+              "titel": "tierlieb"
+            },
+            {
+              "titel": "gibt nicht auf"
+            },
+            {
+              "titel": "bringt andere zum Lachen"
+            },
+            {
+              "titel": "loyal"
+            },
+            {
+              "titel": "hat gute Ideen"
+            },
+            {
+              "titel": "kann trösten"
+            },
+            {
+              "titel": "organisiert gern"
+            },
+            {
+              "titel": "spricht mehrere Sprachen"
+            },
+            {
+              "titel": "technisch fit"
+            },
+            {
+              "titel": "hilft Jüngeren"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen benennen Stärken anderer an einem beobachteten Verhalten und nehmen Rückmeldungen der Gruppe zu eigenen Stärken an.",
+        "ablauf": [
+          "Ein Kartensatz reicht für drei bis vier Personen. Die Karten liegen gemischt in der Mitte.",
+          "Jede Person zieht drei Karten und verschenkt sie reihum oder im Herumgehen – immer mit einem „weil du …“.",
+          "Die Leitung hält eigene Karten in Reserve und sorgt dafür, dass jede Person mindestens zwei bekommt.",
+          "Danach kleben alle ihre Karten in die Krone des Baums und lesen sie in Ruhe."
+        ],
+        "hintergrund": "Jugendliche bewältigen Belastungen besser, wenn sie eigene Fähigkeiten kennen und erleben, dass andere sie sehen (Masten, 2014). Eine fertige Karte senkt die Schwelle: Niemand muss ein Wort suchen oder schön formulieren, es zählt die Beobachtung im „weil du …“. So bekommen auch stille Jugendliche konkrete Anerkennung – und üben zugleich, sie anzunehmen.",
+        "quellen": [
+          "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Zu zweit ziehen und gemeinsam überlegen, zu wem die Karte passt.",
+          "schwerer": "Auf die Rückseite der Karte die Beobachtung schreiben, bevor man sie verschenkt."
+        },
+        "impulse": [
+          "Welche Karte hat euch überrascht? Welche kanntet ihr schon?",
+          "Wie ist es, eine Stärke geschenkt zu bekommen?"
+        ],
+        "tipps": [
+          "Vormachen: eine Karte ziehen und sie einer Person mit einer echten Beobachtung aus den letzten Wochen schenken.",
+          "Leere Karten aus Papier bereithalten – für Stärken, die im Stapel fehlen."
+        ],
+        "achtung": "Nichts über das Aussehen. Ironisch gemeinte Geschenke sofort unterbinden und später unter vier Augen ansprechen. Wer verlegen wird, darf die Karten erst einmal einstecken: Anerkennung muss man manchmal aushalten lernen.",
+        "material": "Ein Kartensatz je drei bis vier Personen, ausgeschnitten, Klebestift, Einige leere Karten"
+      }
+    },
+    "fr": {
+      "titel": "Cartes des forces",
+      "untertitel": "Des forces à offrir : à qui, dans le groupe, revient quelle carte ?",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Offrir des forces",
+          "punkte": [
+            "Chacun tire trois cartes de la pile.",
+            "Réfléchis : à qui, dans le groupe, la carte correspond-elle ? Va la lui offrir avec une phrase : « … te correspond, parce que tu … »",
+            "Si une carte ne correspond à personne, échange-la à la pile.",
+            "Colle les cartes reçues dans la couronne de ton arbre."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Découpez les cartes et mélangez-les.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 4,
+          "hoehe": 62,
+          "schneiden": true,
+          "karten": [
+            {
+              "titel": "serviable"
+            },
+            {
+              "titel": "honnête"
+            },
+            {
+              "titel": "courageux"
+            },
+            {
+              "titel": "créatif"
+            },
+            {
+              "titel": "sportif"
+            },
+            {
+              "titel": "patient"
+            },
+            {
+              "titel": "sait écouter"
+            },
+            {
+              "titel": "fiable"
+            },
+            {
+              "titel": "juste"
+            },
+            {
+              "titel": "habile de ses mains"
+            },
+            {
+              "titel": "doué en musique"
+            },
+            {
+              "titel": "reste calme"
+            },
+            {
+              "titel": "curieux"
+            },
+            {
+              "titel": "explique bien"
+            },
+            {
+              "titel": "aime les animaux"
+            },
+            {
+              "titel": "n’abandonne pas"
+            },
+            {
+              "titel": "fait rire les autres"
+            },
+            {
+              "titel": "loyal"
+            },
+            {
+              "titel": "a de bonnes idées"
+            },
+            {
+              "titel": "sait consoler"
+            },
+            {
+              "titel": "aime organiser"
+            },
+            {
+              "titel": "parle plusieurs langues"
+            },
+            {
+              "titel": "à l’aise en technique"
+            },
+            {
+              "titel": "aide les plus jeunes"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes nomment les forces des autres à partir d’un comportement observé et accueillent les retours du groupe sur leurs propres forces.",
+        "ablauf": [
+          "Un jeu de cartes suffit pour trois à quatre personnes. Les cartes sont mélangées au centre.",
+          "Chacun tire trois cartes et les offre à tour de rôle ou en circulant – toujours avec un « parce que tu … ».",
+          "L’animateur garde des cartes en réserve et veille à ce que chacun en reçoive au moins deux.",
+          "Ensuite, tous collent leurs cartes dans la couronne de l’arbre et les lisent au calme."
+        ],
+        "hintergrund": "Les jeunes font mieux face aux difficultés quand ils connaissent leurs capacités et sentent que les autres les voient (Masten, 2014). Une carte toute prête abaisse le seuil : personne ne doit chercher un mot ni bien formuler, c’est l’observation dans le « parce que tu … » qui compte. Ainsi, même les jeunes discrets reçoivent une reconnaissance concrète – et s’exercent à l’accueillir.",
+        "quellen": [
+          "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Tirer à deux et réfléchir ensemble à qui la carte correspond.",
+          "schwerer": "Écrire l’observation au dos de la carte avant de l’offrir."
+        },
+        "impulse": [
+          "Quelle carte vous a surpris ? Laquelle connaissiez-vous déjà ?",
+          "Qu’est-ce que cela fait de recevoir une force en cadeau ?"
+        ],
+        "tipps": [
+          "Montrer l’exemple : tirer une carte et l’offrir avec une vraie observation des dernières semaines.",
+          "Prévoir des cartes vierges en papier – pour les forces qui manquent dans la pile."
+        ],
+        "achtung": "Rien sur l’apparence. Arrêter tout de suite les cadeaux ironiques et en reparler plus tard en tête-à-tête. Qui est gêné peut d’abord ranger ses cartes : la reconnaissance, il faut parfois apprendre à la supporter.",
+        "material": "Un jeu de cartes découpé pour trois à quatre personnes, Bâton de colle, Quelques cartes vierges"
+      }
+    }
   }
 ]

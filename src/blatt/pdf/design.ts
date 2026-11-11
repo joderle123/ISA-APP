@@ -25,6 +25,8 @@ export interface Design {
   magazin: boolean
   /** Kinderfigur → Jugendfigur (nur C4–ES) */
   figuren?: Map<string, string>
+  /** Skills-Kurs, Look „spiel“: Aufkleber-Stil (kräftige Umrisse, versetzter Schatten), großer Kopf, größere Schrift */
+  spiel?: boolean
 }
 
 /** Altersstufe des Layouts: Das Layout der Stufe (oder der Fassung „Größer“) bestimmt den Stil; ‚mittel‘ gilt für C3 und C4. */
@@ -45,6 +47,7 @@ export function designVon(blatt: Blatt, layout: Layout, bausteineText: string): 
     duotone: alter === 'c3' || alter === 'c4' || alter === 'es',
     magazin: !jung,
     figuren: jung ? undefined : jugendFiguren(bausteineText + ' ' + (blatt.bild ?? '')),
+    spiel: blatt.look === 'spiel' && !jung,
   }
 }
 
@@ -88,8 +91,25 @@ const GEFUEHL_AKZENT: Record<string, Farben> = {
   freundschaft: { tief: '#A64A72', mittel: '#E6BDD0', zart: '#FAEEF4' },
 }
 
+/** Look „spiel“ (Skills-Kurs): jedes Modul hat eine kräftige eigene Farbe – tief trägt Schrift und Nummern (weiß darauf lesbar),
+ *  mittel füllt Aufkleber und Reiter, zart ist der Grund von Kästen. In Schwarz-Weiß bleiben Umrisse und Text der Kontrast. */
+export const SPIEL_FARBEN: Record<string, Farben> = {
+  ankommen: { tief: '#0B7A75', mittel: '#7FD8CF', zart: '#E3F7F4' },
+  ich: { tief: '#C2560A', mittel: '#FFC078', zart: '#FFF1DE' },
+  gefuehle: { tief: '#C2255C', mittel: '#FFA8C5', zart: '#FFEBF2' },
+  regulieren: { tief: '#1E7F4F', mittel: '#8CE0AE', zart: '#E4F8EC' },
+  gedanken: { tief: '#5B3FD1', mittel: '#C0B2FF', zart: '#EEEAFF' },
+  kommunikation: { tief: '#1B62C4', mittel: '#9CC8FF', zart: '#E6F1FF' },
+  schwierig: { tief: '#C23A22', mittel: '#FFB3A1', zart: '#FFECE7' },
+  digital: { tief: '#3A3FB8', mittel: '#AEB4FF', zart: '#EAECFF' },
+  gesund: { tief: '#4F7A0A', mittel: '#C3E67A', zart: '#F1F9DC' },
+  abschluss: { tief: '#9A6700', mittel: '#FFD866', zart: '#FFF6D6' },
+}
+const SPIEL_STANDARD: Farben = { tief: '#5B3FD1', mittel: '#C0B2FF', zart: '#EEEAFF' }
+
 /** Akzentfarben eines Blatts, wenn sein Thema eine eigene Farbe hat (sonst undefined: Bereichsfarbe). */
-export function akzentFarben(blatt: Pick<Blatt, 'bereich' | 'thema'>): Farben | undefined {
+export function akzentFarben(blatt: Pick<Blatt, 'bereich' | 'thema' | 'look'>): Farben | undefined {
+  if (blatt.look === 'spiel') return SPIEL_FARBEN[blatt.thema] ?? SPIEL_STANDARD
   if (blatt.bereich === 'gefuehle') return GEFUEHL_AKZENT[blatt.thema]
   if (blatt.bereich === 'skills') {
     if (blatt.thema === 'wut') return GEFUEHL_AKZENT.wut

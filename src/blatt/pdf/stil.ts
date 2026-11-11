@@ -71,6 +71,9 @@ export const MASSE: Record<Layout, Masse> = {
   jugend: { layout: 'jugend', schrift: SCHRIFT.jugend, fett: 600, basis: 10.2, klein: 8.5, titel: 20, untertitel: 10.6, zeile: 23, abstand: 11, nummer: 17, lh: 1.46, kaestchen: 10.5 },
 }
 
+/** Skills-Kurs, Look „spiel“: größere Schrift und mehr Luft als das Jugend-Layout – weniger Text je Seite, alles gut lesbar. */
+export const SPIEL_MASSE: Masse = { ...MASSE.jugend, basis: 11.4, klein: 9.2, titel: 28, untertitel: 11.8, zeile: 27, abstand: 13, nummer: 22, lh: 1.42, kaestchen: 12.5 }
+
 /** Lehrerseite: immer sachlich gesetzt. */
 export const LEHRER_MASSE: Masse = { ...MASSE.jugend, basis: 9.6, klein: 8.2, titel: 18, untertitel: 10 }
 
