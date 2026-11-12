@@ -24,7 +24,10 @@
     ['Kopfhörer', 'Lautsprecher'], ['Schwimmbad', 'See'], ['Burger', 'Sushi'], ['Fliegen können', 'Unsichtbar sein'], ['Nie mehr Musik', 'Nie mehr Handy'], ['Regen', 'Schnee'],
     ['Achterbahn', 'Riesenrad'], ['Chips', 'Schokolade'], ['Duschen', 'Baden'], ['Mütze', 'Kapuze'], ['Ketchup', 'Mayo'], ['Zug', 'Auto'], ['Ananas auf Pizza', 'Niemals'],
     ['Sneaker', 'Schlappen'], ['Gruppenarbeit', 'Allein arbeiten'], ['Sprachnachricht', 'Tippen'], ['Hell', 'Dunkel'], ['Scharf', 'Mild'], ['Frühstück', 'Abendessen'],
-    ['Konzert', 'Kino'], ['Katzenvideo', 'Fail-Video'], ['Popcorn süß', 'Popcorn salzig'], ['Erster sein', 'Letzter sein'], ['Hausaufgaben sofort', 'Hausaufgaben nie'], ['Lift', 'Treppe']];
+    ['Konzert', 'Kino'], ['Katzenvideo', 'Fail-Video'], ['Popcorn süß', 'Popcorn salzig'], ['Erster sein', 'Letzter sein'], ['Hausaufgaben sofort', 'Hausaufgaben nie'], ['Lift', 'Treppe'],
+    ['Bus', 'Fahrrad'], ['Apfel', 'Banane'], ['Pfannkuchen', 'Waffeln'], ['Zelten', 'Sofa'], ['Schwimmen', 'Klettern'], ['Wecker', 'Ausschlafen'], ['Vorne sitzen', 'Hinten sitzen'],
+    ['Kakao', 'Tee'], ['Mütze', 'Stirnband'], ['Lesen', 'Hörbuch'], ['Wald', 'Strand'], ['Rutsche', 'Schaukel'], ['Samstag', 'Sonntag'], ['Tiere', 'Technik'], ['Zeichnen', 'Bauen'],
+    ['Frühling', 'Herbst'], ['Tisch decken', 'Abräumen'], ['Schnell', 'Gemütlich'], ['Allein zocken', 'Zusammen zocken'], ['Brettspiel', 'Kartenspiel']];
   CREW.registerGame({
     id: 'gleicher-kopf', template: 'T3', themen: ['party'],
     async run(ctx) {

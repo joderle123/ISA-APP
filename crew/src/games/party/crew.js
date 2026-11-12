@@ -49,7 +49,10 @@
   const SW_FRAGEN = [['Nie mehr Musik hören', 'Nie mehr Handy'], ['Immer 10 Minuten zu spät', 'Immer 2 Stunden zu früh'], ['Fliegen können', 'Unsichtbar sein'], ['Nur noch flüstern', 'Nur noch schreien'],
     ['Ein Jahr ohne Süßes', 'Ein Jahr ohne Zocken'], ['In der Vergangenheit leben', 'In der Zukunft leben'], ['Mit Tieren reden', 'Alle Sprachen sprechen'], ['Jeden Tag Pizza', 'Nie wieder Pizza'],
     ['Berühmt und pleite', 'Unbekannt und reich'], ['Immer Sommer', 'Immer Winter'], ['Gedanken lesen', 'In die Zukunft sehen'], ['Eine Woche ohne Internet', 'Eine Woche ohne Bett'],
-    ['Nur noch rückwärts gehen', 'Nur noch hüpfen'], ['Ein Drache als Haustier', 'Selbst ein Drache sein'], ['Nie mehr Hausaufgaben', 'Nie mehr früh aufstehen']];
+    ['Nur noch rückwärts gehen', 'Nur noch hüpfen'], ['Ein Drache als Haustier', 'Selbst ein Drache sein'], ['Nie mehr Hausaufgaben', 'Nie mehr früh aufstehen'],
+    ['Immer die Wahrheit sagen', 'Nie mehr reden'], ['Im Baumhaus wohnen', 'Auf einem Boot wohnen'], ['Zehn Geschwister', 'Keine Geschwister'], ['Alles vergessen können', 'Nichts vergessen können'],
+    ['Nur noch Lieblingsessen', 'Jeden Tag etwas Neues'], ['Unter Wasser atmen', 'Durch Wände gehen'], ['Ein Tag als Lehrer', 'Ein Tag als Direktorin'], ['Nie mehr müde', 'Nie mehr hungrig'],
+    ['Die Zeit anhalten', 'Die Zeit zurückdrehen'], ['Immer barfuß', 'Immer in Gummistiefeln']];
   CREW.registerGame({
     id: 'seitenwechsel', template: 'T4', themen: ['party'],
     async run(ctx) {

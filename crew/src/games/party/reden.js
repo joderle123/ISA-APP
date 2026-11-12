@@ -13,7 +13,10 @@
     'Ein Grund, liegen zu bleiben', 'Etwas in deinem Rucksack', 'Ein Land in Europa', 'Ein Spiel auf dem Handy', 'Etwas, das teurer ist als ein Handy', 'Ein Geräusch – mach es!',
     'Etwas Weiches', 'Ein Lied, das jeder kennt', 'Etwas, das man ständig verliert', 'Ein Beruf mit Uniform', 'Etwas Gelbes', 'Ein Wort auf Luxemburgisch', 'Ein Superheld',
     'Etwas zum Draufsetzen', 'Eine Eissorte', 'Etwas, das man nur im Sommer macht', 'Ein Tier, das fliegt', 'Etwas mit Rädern', 'Eine Automarke', 'Etwas, das im Bad steht',
-    'Ein Name mit A', 'Etwas, das man schenkt', 'Ein Wort, das sich auf „Haus“ reimt', 'Etwas Kaltes', 'Eine Stadt', 'Etwas, das kitzelt', 'Ein Gemüse, das keiner mag'];
+    'Ein Name mit A', 'Etwas, das man schenkt', 'Ein Wort, das sich auf „Haus“ reimt', 'Etwas Kaltes', 'Eine Stadt', 'Etwas, das kitzelt', 'Ein Gemüse, das keiner mag',
+    'Etwas, das man im Kino hört', 'Ein Grund zu lachen', 'Etwas, das immer leer ist', 'Ein Tier im Zoo', 'Etwas, das man auf Pizza legt', 'Ein Schulfach', 'Etwas, das leuchtet',
+    'Etwas, das in eine Hosentasche passt', 'Ein Wort mit drei Silben', 'Etwas, das man morgens macht', 'Ein Monster – beschreib es!', 'Etwas, das laut ist', 'Ein Getränk',
+    'Etwas, das man sammeln kann', 'Ein Ort zum Verstecken', 'Etwas Grünes', 'Ein Emoji – mach das Gesicht!', 'Etwas, das wächst', 'Ein Fest im Jahr', 'Etwas, das man teilt'];
   CREW.registerGame({
     id: 'zuendschnur', template: 'T5', themen: ['party'],
     async run(ctx) {
