@@ -270,7 +270,7 @@ export default {
       O.wirkung(neuerTag(R), R);
       uhr();
       const zuhause = ortVon('bootshaus');
-      if (stadt && stadt.parke) stadt.parke();   // der Lieferwagen steht morgens wieder am Kiosk
+      if (stadt && stadt.parke) { stadt.parke(); if (stadt.lieferwagen) { stadt.lieferwagen.visible = !R.flags['auto.wasser']; stadt.lieferwagen.rotation.z = 0; } }   // der Lieferwagen steht morgens wieder am Kiosk – außer er liegt im Wasser
       player.teleport(zuhause.x + 1.5, zuhause.z - 2.5, Math.atan2(-zuhause.x, -zuhause.z));
       if (game.cameraRig.behindPlayer) game.cameraRig.behindPlayer();
       if (game.cameraRig.snap) game.cameraRig.snap();

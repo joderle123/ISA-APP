@@ -6,6 +6,7 @@ import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import stadtBin from './modelle/stadt.glb';
 import { BUILDINGS, buildingYaw } from '../world/layout.js';
+import { LIEFERWAGEN } from './daten/welt.js';
 
 let geladen = null;
 function lade() {
@@ -147,11 +148,11 @@ export async function baueStadt(game) {
   const P = island.SITES && island.SITES.dorfplatz ? island.SITES.dorfplatz : { x: 4, z: 110 };
   for (const [dx, dz, yaw] of [[-9, -7, 0.8], [10, -8, -0.8], [11, 7, -2.3], [-10, 8, 2.3]]) setze('strasse/light-square', P.x + dx, P.z + dz, yaw, { massstab: 9 });
   setze('strasse/road-sign-stop', P.x + 7.5, P.z + 11, Math.PI, { massstab: 7 });
-  setze('strasse/dumpster', -24.5, 119.5, 0.6, { massstab: 5 });
+  setze('strasse/dumpster', -24.2, 113.2, 0.6, { massstab: 5 });
   setze('strasse/construction-cone', 14.5, 123, 0, { massstab: 6 });
   setze('strasse/construction-cone', 15.6, 124.2, 0.5, { massstab: 6 });
   // Fränz' Lieferwagen am Kiosk: den kann man nehmen (plugin.js → fahren.js)
-  const lieferwagen = setze('auto/delivery', -14.5, 121.5, 1.9, { massstab: 1.5 });
+  const lieferwagen = setze('auto/delivery', LIEFERWAGEN.x, LIEFERWAGEN.z, LIEFERWAGEN.yaw, { massstab: 1.5 });
   const parkplatz = lieferwagen ? { x: lieferwagen.position.x, y: lieferwagen.position.y, z: lieferwagen.position.z, yaw: lieferwagen.rotation.y } : null;
   setze('auto/taxi', 13.5, 103.5, -0.5, { massstab: 1.5 });
   // 3) Straßen auf den Hauptwegen, Lampen am Rand, parkende Autos, ein wenig Verkehr

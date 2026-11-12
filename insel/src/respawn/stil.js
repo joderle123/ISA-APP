@@ -120,5 +120,5 @@ export const STIL = `
 .rs-marke.ist-ort{background:rgba(16,14,34,.72);box-shadow:none;animation:none;font-weight:700;font-size:14px;}
 .rs-marke small{opacity:.8;font-weight:600;margin-left:6px;}
 .rs-hilfe p{font-size:17px;margin:0 0 10px;}
-@media (max-width:560px){.rs-leiste{gap:7px;font-size:14px;padding-left:10px}.rs-jz{display:none}.rs-karte{flex-basis:100%;max-width:none}}
+@media (max-width:560px){.rs-leiste{gap:7px;font-size:14px;padding-left:10px;left:max(10px,env(safe-area-inset-left));transform:none;transition:none;max-width:calc(100vw - 92px)}.rs-jz{display:none}.rs-karte{flex-basis:100%;max-width:none}}
 `;

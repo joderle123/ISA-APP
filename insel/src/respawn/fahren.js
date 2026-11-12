@@ -1,7 +1,7 @@
 // RESPAWN – ein Auto wirklich fahren. Kein eigenes Fahrmodell: Die Spielfigur wird schneller, unsichtbar, und der Wagen
 // hängt an ihr. So gelten Gelände, Wasser und Hindernisse wie zu Fuß.
 // Gemessen wird, was später zählt: wie weit, wie schnell, ob es gekracht hat, wer zur Seite springen musste.
-//   const F = createFahren({ game }); const erg = await F.starte(mesh, { sekunden })   → { strecke, vmax, beulen, erschreckt: [id], weit }
+//   const F = createFahren({ game }); const erg = await F.starte(mesh, { sekunden })   → { strecke, vmax, beulen, erschreckt: [id], weit, wasser }
 //   F.aktiv · F.beende()  (auch für Tests; im Spiel: Aktionstaste „Aussteigen“ oder die Zeit läuft ab)
 import * as THREE from 'three';
 
@@ -23,7 +23,7 @@ export function createFahren({ game }) {
       // an den Platz des Wagens, Blick in Fahrtrichtung
       player.teleport(mesh.position.x, mesh.position.z, mesh.rotation.y);
       if (game.cameraRig.behindPlayer) game.cameraRig.behindPlayer();
-      player.setModifiers({ speed: 2.5, jump: 0 });
+      player.setModifiers({ speed: 2.2, jump: 0 });
       const figur = player.humanoid.group; const sichtbar = figur.visible; figur.visible = false;
       const alt = { dist: game.cameraRig.targetDist };
       if (game.cameraRig.targetDist !== undefined) game.cameraRig.targetDist = Math.max(alt.dist || 0, 9);
@@ -43,8 +43,13 @@ export function createFahren({ game }) {
     if (game.cameraRig.targetDist !== undefined && f.alt.dist !== undefined) game.cameraRig.targetDist = f.alt.dist;
     // aussteigen: links neben den Wagen
     const yaw = f.mesh.rotation.y, lx = Math.cos(yaw) * 2.1, lz = -Math.sin(yaw) * 2.1;
-    player.teleport(f.mesh.position.x + lx, f.mesh.position.z + lz, yaw);
-    f.fertig({ strecke: Math.round(f.strecke), vmax: +f.vmax.toFixed(1), beulen: f.beulen, erschreckt: [...f.erschreckt], weit: Math.round(Math.hypot(f.mesh.position.x - f.start.x, f.mesh.position.z - f.start.z)) });
+    if (f.wasser) {
+      // der Wagen bleibt im Wasser liegen; du kommst an Land (letzter sicherer Punkt)
+      const s = player.lastSafe || f.start;
+      f.mesh.position.y -= 0.9; f.mesh.rotation.z = 0.18;
+      player.teleport(s.x, s.z, yaw);
+    } else player.teleport(f.mesh.position.x + lx, f.mesh.position.z + lz, yaw);
+    f.fertig({ wasser: !!f.wasser, strecke: Math.round(f.strecke), vmax: +f.vmax.toFixed(1), beulen: f.beulen, erschreckt: [...f.erschreckt], weit: Math.round(Math.hypot(f.mesh.position.x - f.start.x, f.mesh.position.z - f.start.z)) });
   }
 
   game.addUpdate((dt) => {
@@ -70,6 +75,9 @@ export function createFahren({ game }) {
       const q = n.position || (n.humanoid && n.humanoid.group.position); if (!q) continue;
       if (Math.hypot(q.x - p.x, q.z - p.z) < 2.6 && !f.erschreckt.has(n.id)) { f.erschreckt.add(n.id); if (npcs.setEmotion) { try { npcs.setEmotion(n.id, 'angst'); } catch (e) { /* egal */ } } }
     }
+    // ins Wasser gefahren: die Fahrt ist vorbei
+    const isl = game.world.island, wl = isl.waterLevel ? isl.waterLevel(p.x, p.z) : -99;
+    if (player.state === 'swim' || wl > hoehe(p.x, p.z) + 0.7) { f.wasser = true; f.mesh.position.y = wl - 0.2; beende(); return; }
     f.still = v < 0.3 ? f.still + dt : 0;
     const rest = Math.max(0, Math.ceil(f.sekunden - f.t));
     hinweis.textContent = (f.beulen ? '💥 ' : '🚚 ') + 'Aussteigen: Aktion · ' + rest + ' s';

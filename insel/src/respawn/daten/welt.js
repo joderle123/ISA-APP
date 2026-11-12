@@ -15,6 +15,9 @@ export const GROSSE = ['ilda', 'fraenz', 'lucinda'];
 export const WICHTIG = Object.keys(NAME);
 const zeuge = (z, ausser) => (z || []).find((w) => w !== ausser && WICHTIG.includes(w)) || null;
 
+// Parkplatz von Fränz’ Lieferwagen: neben der Straße, ein Stück vom Kiosk (stadt.js stellt ihn dorthin)
+export const LIEFERWAGEN = { x: -11.5, z: 116.0, yaw: 1.69 };
+
 // ---------- Orte ----------
 export const ORTE = [
   { id: 'zuhause', name: 'Zuhause', ort: 'bootshaus', bild: '🏠', aktionen: ['schlafen', 'zocken'] },
@@ -23,7 +26,7 @@ export const ORTE = [
   { id: 'werft', name: 'Werft', ort: 'werft', bild: '🔨', aktionen: ['sprayen', 'boot'] },
   { id: 'steg', name: 'Steg', ort: 'steg', bild: '🌊', aktionen: ['wasser'] },
   { id: 'krater', name: 'Krater', ort: 'kraterRand', bild: '🔥', aktionen: ['abhaengen'] },
-  { id: 'lieferwagen', name: 'Lieferwagen', ort: { x: -14.5, z: 121.5 }, bild: '🚚', aktionen: ['fahren'] },
+  { id: 'lieferwagen', name: 'Lieferwagen', ort: { x: LIEFERWAGEN.x, z: LIEFERWAGEN.z }, bild: '🚚', aktionen: ['fahren'] },
   { id: 'markt', name: 'Markt', ort: 'marktplatz', bild: '🛍️', aktionen: ['kaufen', 'einstecken'] },
 ];
 
@@ -97,12 +100,14 @@ export const ORT_AKTIONEN = {
     // erg = { strecke, vmax, beulen, erschreckt: [id], weit } aus fahren.js
     nach: (R, erg) => {
       const z = wert(R, 'auto.zeuge', ''), s = [];
-      if (erg.beulen) s.push(['t', 'Es hat gekracht. Vorne links ist alles eingedrückt.'], ['e', { druck: 10, flag: 'auto.beule' }]);
+      if (erg.wasser) s.push(['t', 'Der Wagen rollt ins Wasser. Du kommst gerade noch raus.'], ['e', { druck: 20, flags: { 'auto.wasser': true, 'auto.stehen': true } }]);
+      else if (erg.beulen) s.push(['t', 'Es hat gekracht. Vorne links ist alles eingedrückt.'], ['e', { druck: 10, flag: 'auto.beule' }]);
       else if (erg.strecke > 60) s.push(['t', 'Fenster runter. Zum ersten Mal seit Wochen: frei.'], ['e', { druck: -25 }]);
       else s.push(['t', 'Du rollst ein paar Meter. Dein Herz rast.'], ['e', { druck: -5 }]);
       const w = (erg.erschreckt || []).find((x) => WICHTIG.includes(x));
       if (w) s.push(['s', w, 'Spinnst du? Du hättest mich fast erwischt!'], ['e', { bond: { [w]: -1 }, flags: { 'auto.schreck': w } }]);
-      if (erg.weit > 25) s.push(['d', 'Du lässt den Wagen einfach stehen.'], ['e', { flag: 'auto.stehen' }]);
+      if (erg.wasser) s.push(['d', 'Du stehst tropfnass am Ufer. Keiner sagt etwas.']);
+      else if (erg.weit > 25) s.push(['d', 'Du lässt den Wagen einfach stehen.'], ['e', { flag: 'auto.stehen' }]);
       else s.push(['d', 'Du stellst ihn zurück. Fast gerade.']);
       if (z) s.push(['s', z, 'Du bist das gerade gefahren? Echt jetzt?']);
       return s;
@@ -311,6 +316,11 @@ export const FOLGEN = [
     text: ['Mikas Crew wartet abends am Steg. Auf dich.', 'Du nimmst den langen Weg. Jeden Abend.'],
     e: () => ({ druck: 15, flag: 'crew.feind' }) },
   // Lieferwagen: Blechschaden ist Fränz’ Monat. Ohne Zeuge fragt er dich – als Einzigen, dem er traut.
+  { id: 'auto.wasser', wenn: (R) => hat(R, 'auto.wasser') && seit(R, 'auto.tag') >= 1 && !hat(R, 'gestanden.auto'),
+    text: ['Fränz’ Lieferwagen liegt im Hafenbecken.', 'Ein Kran muss kommen. Der Kiosk bleibt zu.'],
+    e: (R) => (wert(R, 'auto.zeuge', '')
+      ? { bond: { fraenz: -3 }, ruf: { gross: -2, hafen: -1 }, akte: 'auto', flag: 'job.weg', chat: { von: 'fraenz', text: 'Mein Wagen liegt im Wasser. Und du warst am Steuer.' } }
+      : { bond: { fraenz: -1 }, ruf: { hafen: -1 }, chat: { von: 'fraenz', text: 'Der Wagen ist weg. Dreißig Jahre Arbeit. Hast du was gesehen?' } }) },
   { id: 'auto.beule', wenn: (R) => hat(R, 'auto.beule') && seit(R, 'auto.tag') >= 1 && !hat(R, 'gestanden.auto'),
     text: ['Fränz steht vor seinem Lieferwagen. Lange.', 'Die Werkstatt will 400 Euro. Das ist sein Monat.'],
     e: (R) => (wert(R, 'auto.zeuge', '')
