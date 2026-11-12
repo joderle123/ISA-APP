@@ -236,13 +236,14 @@
  "infoheft": [
   {
    "id": "weg",
-   "titel": "So geht es nach der 5P weiter",
+   "titel": "So geht es nach der 5P oder 5AD weiter",
    "kurz": "Am Ende der 5P zählt, wie viele Module du bestanden hast (von 54).",
    "punkte": [
     "Weniger als 18 Module: Du gehst in eine CIP (classe d’initiation professionnelle). Danach geht es weiter, zum Beispiel zum CCP.",
     "Mindestens 18 Module und mindestens 15 Jahre alt am 1. September: Du kannst einen CCP machen.",
     "Mindestens 33 Module, davon 5 in Mathematik und 5 in Deutsch oder Französisch: Du kannst in die 5AD gehen – danach zum DAP.",
     "Mindestens 45 Module: DAP der Kategorie A. Mit mindestens 8 Modulen in Mathematik auch Kategorie B.",
+    "Du bist in der 5AD? Mit bestandener 5AD kannst du einen DAP der Kategorie A machen. Für Kategorie B brauchst du in Mathematik das „niveau fort“.",
     "DAP der Kategorie C (zum Beispiel Bürokaufmann, Mechatroniker, Fachinformatiker) geht nur mit bestandener 5G.",
     "Wichtig: Die Anmeldung passiert nicht von allein – du musst dich selbst anmelden.",
     "Seit 2026/27 gilt die Schulpflicht bis 18 Jahre: in der Schule, in einer Ausbildung oder ab 16 mit einem Arbeitsvertrag."
