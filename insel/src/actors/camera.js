@@ -13,6 +13,7 @@ const MIN_OCCLUDED = 3.6;   // näher rückt die Kamera wegen Bäumen nie heran
 const OCC_PITCH = 0.4;      // bei Verdeckung hebt sich der Blick (über den Kopf hinweg)
 
 // Nur dicke Stämme (Dschungelriesen, Kiefern) ziehen die Kamera heran; dünne Stämme dürfen kurz durchs Bild
+const MIN_WAND = 0.9;   // so nah darf die Kamera an die Figur, wenn eine Hauswand dahinter steht
 const OCCLUDERS = new Set(['jungle', 'mangrove', 'podest', 'pine']);
 const VISTA = { dur: 1.2, dist: 1.5, fov: -4 };   // Vista-Moment beim Zonenwechsel (§12): kurzer Rückzug, engeres Bild
 
@@ -123,6 +124,8 @@ export function createCameraRig({ camera, island, input, player, events, collide
     let fOcc = 1;
     if (colliders && !indoor) {
       const th = colliders.segmentHit(rig.focus.x, rig.focus.z, desired.x, desired.z, 0.35, rig.focus.y, desired.y, (o) => OCCLUDERS.has(o.tag));
+      // Hauswände (sicht: true) sind dicht: Die Kamera bleibt davor, auch wenn sie dafür ganz nah heran muss
+      const tw = colliders.segmentHit(rig.focus.x, rig.focus.z, desired.x, desired.z, 0.45, rig.focus.y, desired.y, (o) => !!o.sicht);
       // Baumkronen zählen nur, wenn die Kamera selbst in einer Krone landen würde
       let tc = 1;
       if (inCanopy(desired.x, desired.z, desired.y)) {
@@ -130,6 +133,7 @@ export function createCameraRig({ camera, island, input, player, events, collide
       }
       const tt = Math.min(th, tc);
       if (tt < 1) fOcc = Math.max(tt - 0.04, MIN_OCCLUDED / Math.max(rig.dist, 0.01));
+      if (tw < 1) fOcc = Math.min(fOcc, Math.max(tw - 0.03, MIN_WAND / Math.max(rig.dist, 0.01)));
       fOcc = Math.min(1, fOcc);
     }
     if (snap) rig.occlusion = fOcc;

@@ -116,6 +116,39 @@ const dieNeue = {
   andere: { wer: 'noor', zeilen: ['Dritte Insel in zwei Jahren.', 'Ich lerne zuerst, wer lacht.', 'Dann, wer nicht lacht.'] },
 };
 
+// Abend am Strand: Die Crew hat ein Feuer. Mika will sehen, wie Pit drüber springt. Alle filmen.
+const lagerfeuer = {
+  id: 'lagerfeuer', titel: 'Das Feuer am Strand', zeit: ['herbst', 'fruehling', 'sommer'], ort: 'strandHuette', uhr: 21.4, cast: ['mika', 'pit', 'yara', 'luc'], thema: 'gruppe',
+  wenn: (R) => !hat(R, 'pit.weg'),
+  szene: () => [
+    ['t', 'Ein Feuer am Strand. Die Crew, Musik, Pit mittendrin.'],
+    ['s', 'mika', 'Skater! Spring drüber. Oder traust du dich nicht?', { mimik: 'freude' }],
+    ['t', 'Drei Handys gehen hoch. Pit schaut in die Flammen.'],
+    ['m', 'pit', { mimik: 'angst' }],
+    ['w', [
+      { t: 'Ich spring zuerst.', art: 'hart', e: { ruf: { krater: 2 }, bond: { pit: 1 }, flag: 'lager.sprung' }, dann: [
+        ['wenn', (R) => R.druck >= 60,
+          [['t', 'Du springst zu kurz. Dein Hosenbein qualmt.'], ['e', { druck: 10 }], ['s', 'yara', 'Zeig mal. Das gibt eine Blase.']],
+          [['t', 'Du fliegst drüber. Alle schreien. Du lebst.'], ['e', { druck: -10 }]]],
+        ['s', 'mika', 'Okay. Du traust dich. Pit nicht.'],
+      ] },
+      { t: 'Lass ihn, Mika.', art: 'nein', e: { ruf: { krater: -1 }, bond: { pit: 2 }, flag: 'lager.pitgeschuetzt' }, dann: [
+        ['s', 'mika', 'Bist du seine Mutter?'],
+        ['s', 'yara', 'Lass gut sein, Mika. Er will nicht.'],
+      ] },
+      { t: 'Mitfilmen.', art: 'weg', e: { ruf: { krater: 1 }, bond: { pit: -2 }, flag: 'lager.gefilmt' }, dann: [
+        ['t', 'Pit springt. Er knickt um. Alle johlen.'],
+        ['s', 'pit', 'Hast du das etwa gefilmt?', { mimik: 'trauer' }],
+      ] },
+      { t: 'Pit, komm. Wir gehen.', art: 'ruhig', e: { ruf: { krater: -1 }, bond: { pit: 2 }, flag: 'lager.pitgeschuetzt' }, dann: [
+        ['weg', 'pit'],
+        ['s', 'yara', 'Geht ruhig. Ich wär auch gern weg.'],
+      ] },
+    ]],
+  ],
+  andere: { wer: 'pit', zeilen: ['Sag ich Nein, bin ich der Feigling.', 'Springe ich, bin ich der Clown.', 'Ich wollte nur am Feuer sitzen.'] },
+};
+
 const SPRUCH = { oma: 'Wohnst bei Oma, weil dich keiner will.', allein: 'Zuhause wartet eh keiner auf dich.', zwei: 'Zwei Zuhause. Und keins will dich.' };
 const provokation = {
   id: 'provokation', titel: 'Am Steg', zeit: ['winter', 'fruehling', 'sommer'], ort: 'steg', uhr: 16.9, cast: ['luc', 'jolie'], thema: 'gewalt',
@@ -279,4 +312,4 @@ const finale = {
   },
 };
 
-export const SITUATIONEN_2 = [praktikum, mitfahren, dieNeue, provokation, schulden, nachricht, fest, finale];
+export const SITUATIONEN_2 = [praktikum, mitfahren, dieNeue, lagerfeuer, provokation, schulden, nachricht, fest, finale];

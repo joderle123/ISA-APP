@@ -67,6 +67,24 @@ export function createColliders() {
     return Math.abs(lx) <= o.hw + pad && Math.abs(lz) <= o.hd + pad;
   }
 
+  // Wo tritt die Strecke (x0,z0)+t·(dx,dz) in das gedrehte Rechteck ein? t in 0..1, sonst -1 (auch wenn der Anfang schon drin liegt)
+  function boxEintritt(o, x0, z0, dx, dz, pad) {
+    const fx = x0 - o.x, fz = z0 - o.z;
+    const lx = fx * o._c - fz * o._s, lz = fx * o._s + fz * o._c;
+    const ex = dx * o._c - dz * o._s, ez = dx * o._s + dz * o._c;
+    const hw = o.hw + pad, hd = o.hd + pad;
+    let t0 = 0, t1 = 1;
+    for (const [p, d, h] of [[lx, ex, hw], [lz, ez, hd]]) {
+      if (Math.abs(d) < 1e-9) { if (Math.abs(p) > h) return -1; continue; }
+      let a = (-h - p) / d, b = (h - p) / d;
+      if (a > b) { const q = a; a = b; b = q; }
+      if (a > t0) t0 = a;
+      if (b < t1) t1 = b;
+      if (t0 > t1) return -1;
+    }
+    return t0 > 0 ? t0 : -1;
+  }
+
   const api = {
     add(o) { prep(o); insert(grid, o); all.add(o); return o; },
     addCircle(x, z, r, extra = {}) { return api.add({ type: 'circle', x, z, r, ...extra }); },
@@ -135,7 +153,7 @@ export function createColliders() {
       }
       return hit;
     },
-    // Erste Kreis-Kollision entlang einer Strecke (für die Kamera). Liefert t (0..1) oder 1.
+    // Erste Kollision entlang einer Strecke (für die Kamera): Kreise, dazu Rechtecke mit sicht: true. Liefert t (0..1) oder 1.
     // y0/y1: Höhe am Anfang/Ende (Hindernis zählt nur unterhalb yMax). filter(o) optional.
     // shape(o) → { r, yMin, yMax } | null  (z. B. Baumkronen statt Stamm)
     segmentHit(x0, z0, x1, z1, pad = 0.3, y0 = 0, y1 = 0, filter = null, shape = null) {
@@ -147,7 +165,17 @@ export function createColliders() {
       for (let i = 0; i <= steps; i++) nearby(grid, x0 + (dx * i) / steps, z0 + (dz * i) / steps, pad + 5, tmpSet);
       let best = 1;
       for (const o of tmpSet) {
-        if (o.type !== 'circle' || (filter && !filter(o))) continue;
+        if (filter && !filter(o)) continue;
+        if (o.type !== 'circle') {
+          // Rechtecke zählen nur, wenn sie die Sicht ausdrücklich versperren (sicht: true, z. B. Häuser)
+          if (!o.sicht || shape) continue;
+          const t = boxEintritt(o, x0, z0, dx, dz, pad);
+          if (t < 0 || t >= best) continue;
+          const y = y0 + (y1 - y0) * t;
+          if (y > o.yMax || y < o.yMin) continue;
+          best = t;
+          continue;
+        }
         const sh = shape ? shape(o) : o;
         if (!sh) continue;
         const fx = x0 - o.x, fz = z0 - o.z;

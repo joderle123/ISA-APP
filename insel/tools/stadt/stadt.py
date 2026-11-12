@@ -1,4 +1,4 @@
-# Kenney-Bausätze (City Kit Suburban/Commercial/Roads, Car Kit; kenney.nl, CC0) → eine GLB-Datei für RESPAWN.
+# Kenney-Bausätze (City Kit Suburban/Commercial/Roads, Car Kit, Mini Skate, Watercraft Kit, Mini Market; kenney.nl, CC0) → eine GLB-Datei für RESPAWN.
 #   python3 -I tools/stadt/stadt.py <ordner mit den entpackten Kits> src/respawn/modelle/stadt.glb
 # Die Modelle nutzen eine gemeinsame Farbtafel (colormap.png). Hier wird die Farbe je Eckpunkt aus der Tafel gelesen und
 # fest ins Modell geschrieben (COLOR_0) – so brauchen sie keine Textur und nutzen das Material der Insel (Umriss, Schatten).
@@ -12,6 +12,10 @@ AUSWAHL = {
                        'road-side', 'light-square', 'light-curved', 'light-square-double', 'traffic-light', 'road-sign-stop', 'road-sign-street', 'road-sign-warning',
                        'construction-cone', 'construction-barrier', 'dumpster', 'electricity-pole', 'tile-low'],
     'car-kit': ['sedan', 'sedan-sports', 'hatchback-sports', 'suv', 'van', 'taxi', 'police', 'ambulance', 'delivery', 'tractor', 'cone', 'box'],
+    # Skate-Ecke am Brunnen, Boote am Steg, Stände am Markt (Mini Skate, Watercraft Kit, Mini Market)
+    'mini-skate': ['half-pipe-low', 'half-pipe', 'ramp', 'ramp-rail', 'rail-low', 'rail-high', 'obstacle-box-grind', 'obstacle-box', 'steps-rail', 'bench', 'pallet', 'skateboard', 'scooter', 'fence'],
+    'watercraft-kit': ['boat-fishing-small', 'boat-row-small', 'boat-row-large', 'boat-sail-a', 'boat-sail-b', 'boat-speed-a', 'buoy', 'buoy-flag', 'cargo-pile-a'],
+    'mini-market': ['display-bread', 'display-fruit', 'display-flowers', 'display-cans', 'display-small', 'clothing-rack', 'clothing-table', 'shelf-boxes', 'shopping-cart', 'hand-truck', 'cash-register'],
 }
 
 def png(pfad):
@@ -106,7 +110,7 @@ def main():
     for kit, namen in AUSWAHL.items():
         ordner = os.path.join(quelle, kit, 'Models', 'GLB format')
         farbe = png(os.path.join(ordner, 'Textures', 'colormap.png'))
-        kurz = {'city-kit-suburban': 'haus', 'city-kit-commercial': 'laden', 'city-kit-roads': 'strasse', 'car-kit': 'auto'}[kit]
+        kurz = {'city-kit-suburban': 'haus', 'city-kit-commercial': 'laden', 'city-kit-roads': 'strasse', 'car-kit': 'auto', 'mini-skate': 'skate', 'watercraft-kit': 'boot', 'mini-market': 'markt'}[kit]
         for nm in namen:
             pfad = os.path.join(ordner, nm + '.glb')
             if not os.path.exists(pfad): print('fehlt', kit, nm); continue

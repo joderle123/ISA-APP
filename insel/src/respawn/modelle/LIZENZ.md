@@ -19,4 +19,6 @@ Farben stehen je Material in der Datei (keine Texturen) und werden im Spiel je F
 „City Kit (Roads)“ und „Car Kit“ von Kenney (kenney.nl), Lizenz **CC0 1.0**. Geladen am 12.11.2026.
 Umwandlung: `python3 -I tools/stadt/stadt.py <ordner mit den entpackten Kits> src/respawn/modelle/stadt.glb`
 (Farben aus der Farbtafel fest in die Eckpunkte, Teile je Modell zusammengefasst, keine Texturen).
+Dazu seit dem 13.11.2026 (gleiche Quelle, gleiche Lizenz **CC0 1.0**): „Mini Skate“ (Rampen, Rail, Skateboard),
+„Watercraft Kit“ (Boote, Bojen) und „Mini Market“ (Auslagen, Regale) – Namen im Modell: `skate/…`, `boot/…`, `markt/…`.
 Die Straßen selbst sind keine Bausteine: `stadt.js` legt sie als Band auf die Wege der Insel.

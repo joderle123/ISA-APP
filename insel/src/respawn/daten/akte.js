@@ -21,6 +21,8 @@ export const AKTE = {
   clip: { amt: 'Filmt eine erwachsene Person heimlich. Verbreitet das Video.', echt: 'Du fandest es lustig. 31 Aufrufe.' },
   schubsen: { amt: 'Stößt eine Person zu Boden. Es gibt Zeugen.', echt: 'Du hast geschubst. Gefragt, warum, hat keiner.' },
   auto: { amt: 'Fährt ohne Führerschein einen Lieferwagen. Sachschaden.', echt: 'Der Schlüssel steckte. Es war das beste Gefühl seit Wochen.' },
+  feuer: { amt: 'Macht Feuer an der Strandhütte. Das Dach ist beschädigt.', echt: 'Es sollte nur warm sein. Der Wind kam von der Seite.' },
+  turm: { amt: 'Klettert auf das Geländer des Leuchtturms. Ein Kind macht es nach.', echt: 'Zwölf Sekunden lang hattest du vor nichts Angst.' },
   gestanden: { amt: 'Gibt von sich aus einen Schaden zu.', echt: 'Hinzugehen hat länger gedauert, als es zu sagen.' },
   'gespraech.fehlt': { amt: 'Erscheint nicht zum Gespräch.', echt: 'Du hattest keine Lust, dir das anzuhören.' },
   'prakt.fehlt': { amt: 'Erscheint nicht zum Praktikum.', echt: 'Du bist einfach nicht hingegangen.' },

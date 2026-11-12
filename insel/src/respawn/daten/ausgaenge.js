@@ -1,13 +1,13 @@
 // RESPAWN – Ausgänge eines Durchgangs. Der erste passende gilt (Reihenfolge = Vorrang). Im Album steht ein Ausgang
 // erst mit Namen, wenn man ihn einmal erreicht hat; vorher nur der Hinweis.
-import { hat, bond, besteBindung } from '../run.js';
+import { hat, bond, wert, besteBindung } from '../run.js';
 
-const schwer = (R) => ['kasse', 'spray', 'boot', 'auto', 'clip', 'schubsen', 'schlag', 'mitfahren.erwischt', 'tasche'].filter((a) => R.akte.includes(a)).length;
-const schuetzt = (R) => ['video.geloescht', 'pit.geholfen', 'neue.geschuetzt', 'fest.geblieben', 'fest.hilfe', 'fest.gemeldet', 'mitfahren.gestoppt', 'luege.begleitet'].filter((f) => hat(R, f)).length;
+const schwer = (R) => ['kasse', 'spray', 'boot', 'auto', 'feuer', 'turm', 'clip', 'schubsen', 'schlag', 'mitfahren.erwischt', 'tasche'].filter((a) => R.akte.includes(a)).length;
+const schuetzt = (R) => ['video.geloescht', 'pit.geholfen', 'neue.geschuetzt', 'lager.pitgeschuetzt', 'fest.geblieben', 'fest.hilfe', 'fest.gemeldet', 'mitfahren.gestoppt', 'luege.begleitet'].filter((f) => hat(R, f)).length;
 // freies Spiel: etwas angestellt / von sich aus zugegeben / ein anderer steht dafür gerade
-const MIST = ['kasse.geklaut', 'spray', 'boot.genommen', 'auto.genommen', 'markt.geklaut'];
-const zugegeben = (R) => ['kasse', 'spray', 'boot', 'auto', 'markt'].filter((k) => hat(R, 'gestanden.' + k)).length;
-const andererBuesst = (R) => hat(R, 'kasse.pitverdacht') || hat(R, 'spray.tunschuld') || hat(R, 'markt.noorverdacht');
+const MIST = ['kasse.geklaut', 'spray', 'boot.genommen', 'auto.genommen', 'markt.geklaut', 'feuer.nah', 'turm.clip'];
+const zugegeben = (R) => ['kasse', 'spray', 'boot', 'auto', 'markt', 'feuer'].filter((k) => hat(R, 'gestanden.' + k)).length;
+const andererBuesst = (R) => hat(R, 'kasse.pitverdacht') || hat(R, 'spray.tunschuld') || hat(R, 'markt.noorverdacht') || hat(R, 'feuer.mikaschuld');
 const aerger = (R) => hat(R, 'schlag') || hat(R, 'luege.gelogen') || hat(R, 'video.geteilt') || hat(R, 'mitfahren.erwischt') || hat(R, 'kontrolle.laut') || MIST.some((f) => hat(R, f));
 const gutgemacht = (R) => zugegeben(R) > 0 || hat(R, 'luege.gestanden') || hat(R, 'gespraech.eigen') || hat(R, 'pit.geholfen') || hat(R, 'fest.geblieben') || hat(R, 'fest.gemeldet');
 const freunde = (R) => ['jolie', 'tun', 'pit', 'noor', 'maelle', 'tiago'].filter((w) => bond(R, w) >= 3).length;
@@ -31,6 +31,9 @@ export const AUSGAENGE = [
   { id: 'werft', titel: 'Lehrstelle in der Werft', bild: 'hammer', farbe: '#d8a26b', hinweis: 'Arbeiten. Und drei Tage, die zählen.',
     wenn: (R) => hat(R, 'prakt.gut') && hat(R, 'job') && bond(R, 'fraenz') >= 3 && !hat(R, 'mitfahren.erwischt'),
     text: ['Fränz legt dir einen Vertrag hin.', 'Im Herbst fängst du an. Um sieben.'] },
+  { id: 'stimme', titel: 'Die Stimme vom Markt', bild: 'mikro', farbe: '#c77dff', hinweis: 'Sich auf die Bühne trauen. Mehr als einmal.',
+    wenn: (R) => wert(R, 'buehne.n', 0) >= 2 && bond(R, 'maelle') >= 2,
+    text: ['Beim Sommerfest stehst du auf der Bühne.', 'Maëlle singt die zweite Stimme. Alle bleiben stehen.'] },
   { id: 'leute', titel: 'Deine Leute', bild: 'herz', farbe: '#ff4f8b', hinweis: 'Zwei, auf die du zählen kannst.',
     wenn: (R) => freunde(R) >= 2,
     text: ['Am Steg warten sie auf dich. Jeden Abend.', 'Die Fähre fährt ohne dich. Du bleibst.'] },

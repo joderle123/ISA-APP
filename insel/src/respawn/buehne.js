@@ -153,6 +153,8 @@ export function createBuehne({ game, O }) {
       else if (art === 'e') O.wirkung(wirke(R, s[1], s[2] || {}), R);
       else if (art === 'wenn') await lauf(s[1](R) ? (s[2] || []) : (s[3] || []));
       else if (art === 'w') await wahl(s[1], s[2] || {});
+      // Geschick: ['spiel', { titel, bild }, (ergebnis) => Schritte] – wie es weitergeht, hängt von den Treffern ab
+      else if (art === 'spiel') { totale(); const erg = await O.geschick({ ...s[1], druck: R.druck }); game.events.emit('respawn:geschick', erg); await lauf((s[2] && s[2](erg, R)) || []); }
     }
   }
 

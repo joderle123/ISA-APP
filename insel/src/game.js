@@ -216,7 +216,8 @@ export async function createGame({ canvas, root, hudRoot, onProgress = () => {} 
         game.zone = z;
         if (z) {
           const Z = island.zoneById(z);
-          ui.showZone(Z.name, veil.isVeiled(z) ? 'Der Grauschleier liegt hier' : 'Hier leuchten die Farben');
+          // RESPAWN: nur der Name des Viertels, ohne die Lumo-Zeile über Farben und Schleier
+          if (game.gameMode === 'respawn') ui.showZone(Z.name, '', ''); else ui.showZone(Z.name, veil.isVeiled(z) ? 'Der Grauschleier liegt hier' : 'Hier leuchten die Farben');
           audio.play('chime');
         }
         events.emit('zone:change', { id: z, prev });

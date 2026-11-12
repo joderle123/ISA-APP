@@ -2,7 +2,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { neuerLauf, wirke, wahlen, zeitFuer, ohneWahl, planeJahreszeit, jahreszeitWechsel, ausgangFuer, akteFuer, verschlaeft, hatKarte, verteile, folgenAmMorgen, neuerTag, JAHRESZEITEN } from '../../src/respawn/run.js';
-import { SITUATIONEN, AUSGAENGE, AKTE, KARTEN, FIGUREN, STIMMEN, ORTE, ORT_AKTIONEN, LEUTE_AKTIONEN, LEUTE_REIHE, FOLGEN, VERPASST, WICHTIG } from '../../src/respawn/daten/index.js';
+import { SITUATIONEN, AUSGAENGE, AKTE, KARTEN, FIGUREN, STIMMEN, ORTE, ORT_AKTIONEN, LEUTE_AKTIONEN, LEUTE_REIHE, FOLGEN, VERPASST, WICHTIG, statistSagt, TRATSCH_ZEILEN } from '../../src/respawn/daten/index.js';
 
 const K = (kopf = 'zuendschnur', zuhause = 'oma', tasche = 'ok') => ({ kopf, zuhause, tasche });
 const woerter = (s) => String(s).trim().split(/\s+/).filter(Boolean).length;
@@ -50,6 +50,7 @@ function durchlaufe(schritte, R, f, tiefe = 0) {
     f(s, tiefe);
     if (s[0] === 'w') for (const w of s[1]) durchlaufe(w.dann, R, f, tiefe + 1);
     if (s[0] === 'wenn') { durchlaufe(s[2], R, f, tiefe); durchlaufe(s[3], R, f, tiefe); }
+    if (s[0] === 'spiel') for (const treffer of [0, 1, 2, 3]) durchlaufe(s[2]({ treffer, von: 3 }, R), R, f, tiefe);   // Geschick: alle Ausgänge prüfen
   }
 }
 test('Schreibregeln: Blase ≤ 12 Wörter, Wahl ≤ 6 Wörter, bekannte Figuren, bekannte Akten-Einträge', () => {
@@ -149,7 +150,11 @@ test('Ausgänge: jeder ist erreichbar, der letzte fängt alles auf; Akte hat bei
   // freies Spiel: ein anderer steht für den eigenen Mist gerade → „Davongekommen“; wer es zugibt, bekommt die zweite Chance
   assert.equal(mit((R) => { R.flags.spray = true; R.flags['spray.tunschuld'] = true; R.bond.ilda = 1; }), 'davongekommen');
   assert.equal(mit((R) => { R.flags['kasse.geklaut'] = true; R.flags['gestanden.kasse'] = true; R.bond.ilda = 1; R.akte.push('gestanden'); }), 'zweite');
-  assert.equal(new Set(AUSGAENGE.map((a) => a.id)).size, 12);
+  // Bühne: zweimal getraut und Maëlle an der Seite → eigener Ausgang; Feuer an der Hütte ohne Zeuge trifft die Crew
+  assert.equal(mit((R) => { R.flags['buehne.n'] = 2; R.bond.maelle = 2; }), 'stimme');
+  assert.equal(mit((R) => { R.flags['feuer.nah'] = true; R.flags['feuer.mikaschuld'] = true; R.bond.ilda = 1; }), 'davongekommen');
+  assert.equal(mit((R) => { R.flags['feuer.nah'] = true; R.flags['gestanden.feuer'] = true; R.bond.ilda = 1; R.akte.push('gestanden'); }), 'zweite');
+  assert.equal(new Set(AUSGAENGE.map((a) => a.id)).size, 13);
   const R = neuerLauf({ karten: K() }); R.akte.push('schlag', 'luege.gedeckt'); R.flags['luege.gestanden'] = true;
   const z = akteFuer(R, AKTE); assert.equal(z.length, 2); assert.match(z[1].echt, /zugegeben/);
   for (const [id, e] of Object.entries(AKTE)) { assert.ok(e.amt && e.echt, id); assert.ok(woerter(e.amt) <= 12, id); }
@@ -157,4 +162,42 @@ test('Ausgänge: jeder ist erreichbar, der letzte fängt alles auf; Akte hat bei
 test('Verschlafen: „Viel allein“ schon nach einer langen Nacht', () => {
   const a = neuerLauf({ karten: K('voll', 'allein') }), o = neuerLauf({ karten: K('voll', 'oma') });
   a.spaet = 1; o.spaet = 1; assert.equal(verschlaeft(a), true); assert.equal(verschlaeft(o), false);
+});
+
+// Häuser der neuen Stadt versperren der Kamera die Sicht: Rechtecke mit sicht: true zählen in segmentHit
+test('Kamera: Rechtecke mit „sicht“ halten die Sichtlinie auf, andere nicht', async () => {
+  const { createColliders } = await import('../../src/world/colliders.js');
+  const c = createColliders();
+  c.addBox(10, 0, 2, 3, 0, { tag: 'haus', sicht: true, yMax: 6 });
+  c.addBox(-10, 0, 2, 3, 0, { tag: 'zaun' });
+  const t = c.segmentHit(0, 0, 20, 0, 0.3, 1.5, 3);
+  assert.ok(Math.abs(t - (10 - 2 - 0.3) / 20) < 1e-6, 'trifft die Hauswand vorn: ' + t);
+  assert.equal(c.segmentHit(0, 0, -20, 0, 0.3, 1.5, 3), 1, 'ein Rechteck ohne sicht hält nichts auf');
+  assert.equal(c.segmentHit(0, 0, 20, 0, 0.3, 8, 9), 1, 'über dem Dach ist frei');
+  assert.equal(c.segmentHit(0, 8, 20, 8, 0.3, 1.5, 3), 1, 'am Haus vorbei ist frei');
+  // gedreht um 90°: Tiefe (3) liegt jetzt in x-Richtung
+  const d = createColliders(); d.addBox(10, 0, 2, 3, Math.PI / 2, { sicht: true });
+  const t2 = d.segmentHit(0, 0, 20, 0, 0, 0, 0);
+  assert.ok(Math.abs(t2 - (10 - 3) / 20) < 1e-6, 'gedrehtes Haus: ' + t2);
+  // ein Filter (wie in der Kamera) lässt sicht-Rechtecke durch
+  assert.ok(c.segmentHit(0, 0, 20, 0, 0.3, 1.5, 3, (o) => o.sicht || o.tag === 'pine') < 1);
+});
+
+test('Statisten: kurze Sätze; was man angestellt hat, spricht sich herum', () => {
+  for (const z of TRATSCH_ZEILEN) assert.ok(z.trim().split(/\s+/).length <= 12, z);
+  const R = neuerLauf({ karten: { kopf: 'voll', zuhause: 'oma', tasche: 'ok' } });
+  const ohne = new Set(['a', 'bb', 'ccc', 'dddd'].map((w) => statistSagt(R, w)));
+  assert.ok([...ohne].every((z) => !/Strandhütte|Werft|Bühne/.test(z)), 'ohne Vorfall nur Grüße');
+  R.flags['feuer.nah'] = true; R.flags['feuer.tag'] = -1;
+  const mit = ['a', 'bb', 'ccc', 'dddd', 'eeeee'].map((w) => statistSagt(R, w));
+  assert.ok(mit.some((z) => /Strandhütte/.test(z)), 'nach dem Feuer redet jemand über die Hütte');
+});
+
+test('Fahren üben: erst nach dem Zugeben (oder mit gutem Draht zu Fränz), einmal am Tag; Sätze kurz', () => {
+  const a = ORT_AKTIONEN.ueben, R = neuerLauf({ karten: { kopf: 'voll', zuhause: 'oma', tasche: 'ok' } });
+  assert.equal(a.wenn(R), false, 'ohne Draht zu Fränz kein Üben');
+  R.flags['auto.genommen'] = true; assert.equal(a.wenn(R), false, 'wer den Wagen genommen hat, muss es erst zugeben');
+  R.flags['gestanden.auto'] = true; assert.equal(a.wenn(R), true);
+  for (const erg of [{ wasser: true }, { beulen: 1, strecke: 10 }, { strecke: 80, beulen: 0 }, { strecke: 5, beulen: 0 }]) for (const s of a.nach(R, erg)) if (s[0] === 's') assert.ok(s[2].trim().split(/\s+/).length <= 12, s[2]);
+  const R2 = neuerLauf({ karten: { kopf: 'voll', zuhause: 'oma', tasche: 'ok' } }); R2.bond.fraenz = 3; assert.equal(a.wenn(R2), true, 'guter Draht reicht auch');
 });

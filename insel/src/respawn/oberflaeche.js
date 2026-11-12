@@ -6,7 +6,7 @@ import { JAHRESZEIT_NAME, jahreszeit, druckZone, karte, LEUTE, bond } from './ru
 import { STIL } from './stil.js';
 
 const BILD = { flamme: '🔥', hand: '✋', schloss: '🔒', wirbel: '🌀', schluessel: '🔑', koffer: '🧳', tasse: '☕', muenze: '🪙', muenzen: '💰',
-  faehre: '⛴️', hammer: '🔨', schild: '🛡️', herz: '❤️', boot: '⛵', kreis: '🔁', nebel: '🌫️', sonne: '☀️', welle: '🌊', pad: '🎮', brett: '🛹' };
+  faehre: '⛴️', hammer: '🔨', schild: '🛡️', herz: '❤️', boot: '⛵', kreis: '🔁', nebel: '🌫️', sonne: '☀️', welle: '🌊', pad: '🎮', brett: '🛹', mikro: '🎤' };
 const bild = (n) => BILD[n] || '⭐';
 const esc = (s) => String(s == null ? '' : s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const ART_ZEICHEN = { ruhig: '💬', nein: '✋', hilfe: '🤝', hart: '💥', weg: '🚶', mut: '🛡️' };
@@ -76,6 +76,63 @@ export function createOberflaeche({ game }) {
       game.events.on('respawn:weiter', zu);
       setTimeout(() => window.addEventListener('keydown', taste, true), 250);
       if (test) setTimeout(zu, 20); else if (kurz) setTimeout(zu, 1500);
+    });
+  }
+  // ---------- Geschick: im richtigen Moment tippen (Tricks, Angeln, Fritteuse, Bühne) ----------
+  // Ein Zeiger läuft hin und her; tippen, wenn er im hellen Feld steht. Viel Druck = zittrige Hände (Feld kleiner, Zeiger schneller).
+  // → { treffer, von }
+  function geschick({ titel = 'Im richtigen Moment tippen', bild = '●', runden = 3, druck = 0 } = {}) {
+    return new Promise((resolve) => {
+      const eng = druck >= 60;
+      const g = el('rs-geschick hud-interactive', `<small>${esc(titel)}</small>
+        <div class="rs-g-bahn"><i class="rs-g-ziel"></i><b class="rs-g-zeiger">${esc(bild)}</b></div>
+        <div class="rs-g-fuss"><span class="rs-g-punkte">${'<i></i>'.repeat(runden)}</span><span class="rs-g-tipp">${eng ? 'Viel Druck. Deine Hände zittern.' : 'Tippen, wenn es im hellen Feld steht.'}</span></div>`);
+      root.appendChild(g);
+      requestAnimationFrame(() => g.classList.add('is-da'));
+      const ziel = g.querySelector('.rs-g-ziel'), zeiger = g.querySelector('.rs-g-zeiger'), punkte = [...g.querySelectorAll('.rs-g-punkte i')];
+      let runde = 0, treffer = 0, mitte = 0.5, breite = 0.3, tempo = 1, phase = Math.random() * 6, x = 0.5, pause = 0, t0 = performance.now(), start = t0, fertig = false, raf = 0;
+      const neu = () => {
+        breite = (0.3 - runde * 0.055) * (eng ? 0.72 : 1);
+        tempo = (1.5 + runde * 0.55) * (eng ? 1.25 : 1);
+        mitte = 0.18 + Math.random() * 0.64;
+        ziel.style.left = ((mitte - breite / 2) * 100) + '%'; ziel.style.width = (breite * 100) + '%';
+        ziel.className = 'rs-g-ziel'; start = performance.now();
+      };
+      const ende = () => {
+        if (fertig) return; fertig = true; cancelAnimationFrame(raf);
+        window.removeEventListener('keydown', taste, true); window.removeEventListener('pointerdown', ueberall, true); game.events.off('respawn:weiter', tipp);
+        g.classList.remove('is-da'); setTimeout(() => { g.remove(); resolve({ treffer, von: runden }); }, test ? 0 : 220);
+      };
+      const werte = (gut) => {
+        if (gut) treffer++;
+        try { game.audio.play(gut ? 'pickup' : 'error'); } catch (e) { /* Ton ist Zugabe */ }
+        punkte[runde].className = gut ? 'ist-gut' : 'ist-daneben';
+        ziel.classList.add(gut ? 'ist-gut' : 'ist-daneben');
+        runde++; pause = performance.now() + (test ? 0 : 520);
+      };
+      function tipp(e) {
+        if (e && e.preventDefault) e.preventDefault();
+        if (fertig || pause || performance.now() - t0 < 350) return;
+        werte(Math.abs(x - mitte) <= breite / 2 + 0.02);
+      }
+      const taste = (e) => { if (e.code === 'Space' || e.code === 'Enter' || e.code === 'KeyE') { e.preventDefault(); e.stopPropagation(); tipp(); } };
+      const bild_ = () => {
+        const jetzt = performance.now();
+        if (pause) { if (jetzt >= pause) { pause = 0; if (runde >= runden) { ende(); return; } neu(); } }
+        else {
+          x = 0.5 + 0.5 * Math.sin(phase + (jetzt - t0) / 1000 * tempo * 2.4);
+          zeiger.style.left = (x * 100) + '%';
+          if (jetzt - start > 7000) werte(false);   // zu lange gewartet
+        }
+        raf = requestAnimationFrame(bild_);
+      };
+      // Tippen zählt überall auf dem Bild (nicht nur auf der Leiste) – außer auf Knöpfen wie Pause
+      const ueberall = (e) => { if (e.target && e.target.closest && e.target.closest('button, .menu, .overlay')) return; tipp(e); };
+      window.addEventListener('pointerdown', ueberall, true);
+      game.events.on('respawn:weiter', tipp);
+      window.addEventListener('keydown', taste, true);
+      neu();
+      if (test) { treffer = Math.max(0, runden - 1); runde = runden; setTimeout(ende, 20); } else raf = requestAnimationFrame(bild_);
     });
   }
   const erzaehler = (text, o) => zeile('ist-erz', `<p>${esc(text)}</p>`, o);
@@ -213,7 +270,7 @@ export function createOberflaeche({ game }) {
       heute: () => {
         const w = welt ? welt() : { ereignisse: [], orte: [] };
         return (w.ereignisse.length ? '<h4>Heute los</h4>' + w.ereignisse.map((x) => `<button type="button" class="rs-hin" data-hin="e:${x.id}"><b>❗ ${esc(x.titel)}</b><small>${esc(x.wo)} · hinbringen</small></button>`).join('') : '<p class="rs-lead">Heute steht nichts an. Mach, was du willst.</p>')
-          + '<h4>Orte</h4>' + w.orte.map((x) => `<button type="button" class="rs-hin" data-hin="o:${x.id}"><b>${x.bild} ${esc(x.name)}</b><small>hinbringen</small></button>`).join('');
+          + '<h4>Orte – antippen bringt dich hin</h4><div class="rs-orte">' + w.orte.map((x) => `<button type="button" class="rs-hin" data-hin="o:${x.id}"><b>${x.bild} ${esc(x.name)}</b></button>`).join('') + '</div>';
       },
       chats: () => ((R.chats || []).length ? (R.chats || []).slice().reverse().map((c) => `<div class="rs-chat"><b>${esc(nameVon(c.von))}</b><p>${esc(c.text)}</p></div>`).join('') : '<p class="rs-lead">Noch keine Nachrichten.</p>'),
       leute: () => LEUTE.concat(['yara', 'maelle', 'tiago']).filter((w) => R.bond[w] !== undefined).map((w) => { const b = bond(R, w); return `<div class="rs-leut"><b>${esc(nameVon(w))}</b><i class="${b < 0 ? 'ist-minus' : ''}">${'●'.repeat(Math.min(5, Math.abs(b)))}${'○'.repeat(5 - Math.min(5, Math.abs(b)))}</i><small>${b >= 3 ? 'steht zu dir' : b >= 1 ? 'mag dich' : b < 0 ? 'ist sauer' : 'kennt dich kaum'}</small></div>`; }).join('') || '<p class="rs-lead">Du kennst hier noch niemanden.</p>',
@@ -239,7 +296,7 @@ export function createOberflaeche({ game }) {
   }
 
   return {
-    status, wirkung, melde, erzaehler, gedanke, wahl, titelkarte, kartenZiehen, freizeit, abschluss, start,
+    status, wirkung, melde, erzaehler, gedanke, geschick, wahl, titelkarte, kartenZiehen, freizeit, abschluss, start,
     handy(R, meta, welt) { handy(R, meta, welt); },
     setzeHandy(fn) { handyAuf = fn; },
   };

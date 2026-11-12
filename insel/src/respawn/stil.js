@@ -34,6 +34,23 @@ export const STIL = `
 .rs-zeile.is-da{opacity:1;transform:translate(-50%,0);}
 .rs-zeile p{margin:0;font-size:clamp(18px,2.4vw,22px);line-height:1.35;font-weight:600;}
 .rs-zeile small{display:block;font-size:13px;letter-spacing:.07em;text-transform:uppercase;font-weight:700;opacity:.9;margin-bottom:4px;}
+.rs-orte{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+.rs-orte .rs-hin{margin:0;min-height:52px;}
+.rs-geschick{position:absolute;left:50%;bottom:max(26px,env(safe-area-inset-bottom));transform:translate(-50%,14px);width:min(680px,calc(100% - 32px));padding:14px 18px 16px;border-radius:18px;cursor:pointer;background:rgba(18,14,40,.92);border:2px solid rgba(255,255,255,.22);color:#fff;opacity:0;transition:opacity .16s,transform .16s;z-index:38;touch-action:manipulation;user-select:none;-webkit-user-select:none;}
+.rs-geschick.is-da{opacity:1;transform:translate(-50%,0);}
+.rs-geschick small{display:block;font-size:14px;letter-spacing:.06em;text-transform:uppercase;font-weight:800;color:#ffd23f;margin-bottom:10px;}
+.rs-g-bahn{position:relative;height:64px;border-radius:14px;background:rgba(255,255,255,.1);border:2px solid rgba(255,255,255,.2);overflow:hidden;}
+.rs-g-ziel{position:absolute;top:0;bottom:0;background:rgba(126,217,87,.55);border-left:3px solid #7ed957;border-right:3px solid #7ed957;}
+.rs-g-ziel.ist-gut{background:#7ed957;}
+.rs-g-ziel.ist-daneben{background:rgba(255,90,61,.75);border-color:#ff5a3d;}
+.rs-g-zeiger{position:absolute;top:50%;transform:translate(-50%,-50%);font-size:34px;line-height:1;text-shadow:0 2px 6px rgba(0,0,0,.6);pointer-events:none;}
+.rs-g-zeiger::after{content:'';position:absolute;left:50%;top:-18px;bottom:-18px;width:3px;margin-left:-1.5px;background:#fff;opacity:.85;z-index:-1;}
+.rs-g-fuss{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:10px;font-size:15px;}
+.rs-g-punkte{display:flex;gap:8px;}
+.rs-g-punkte i{width:18px;height:18px;border-radius:50%;border:2px solid rgba(255,255,255,.5);}
+.rs-g-punkte i.ist-gut{background:#7ed957;border-color:#7ed957;}
+.rs-g-punkte i.ist-daneben{background:#ff5a3d;border-color:#ff5a3d;}
+.rs-g-tipp{opacity:.85;text-align:right;}
 .rs-zeile.ist-ged{background:rgba(34,26,66,.88);border-style:dashed;}
 .rs-zeile.ist-ged p{font-style:italic;font-weight:500;}
 .rs-zeile.ist-ged small{color:#b9b2e0;}

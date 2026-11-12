@@ -18,25 +18,40 @@ const zeuge = (z, ausser) => (z || []).find((w) => w !== ausser && WICHTIG.inclu
 // Parkplatz von Fränz’ Lieferwagen: neben der Straße, ein Stück vom Kiosk (stadt.js stellt ihn dorthin)
 export const LIEFERWAGEN = { x: -11.5, z: 116.0, yaw: 1.69 };
 
+// Fuß des Leuchtturms: dort endet die Straße vom Hafen (world/island.js → PATHS „hafen-leuchtturm“)
+export const LEUCHTTURM = { x: -108, z: 124.5 };
+
 // ---------- Orte ----------
 export const ORTE = [
   { id: 'zuhause', name: 'Zuhause', ort: 'bootshaus', bild: '🏠', aktionen: ['schlafen', 'zocken'] },
   { id: 'kiosk', name: 'Kiosk', ort: 'snackStand', bild: '🍟', aktionen: ['job', 'kasse'] },
   { id: 'brunnen', name: 'Brunnen', ort: 'dorfplatz', bild: '🛹', aktionen: ['tricks'] },
   { id: 'werft', name: 'Werft', ort: 'werft', bild: '🔨', aktionen: ['sprayen', 'boot'] },
-  { id: 'steg', name: 'Steg', ort: 'steg', bild: '🌊', aktionen: ['wasser'] },
-  { id: 'krater', name: 'Krater', ort: 'kraterRand', bild: '🔥', aktionen: ['abhaengen'] },
-  { id: 'lieferwagen', name: 'Lieferwagen', ort: { x: LIEFERWAGEN.x, z: LIEFERWAGEN.z }, bild: '🚚', aktionen: ['fahren'] },
-  { id: 'markt', name: 'Markt', ort: 'marktplatz', bild: '🛍️', aktionen: ['kaufen', 'einstecken'] },
+  { id: 'steg', name: 'Steg', ort: 'steg', bild: '🌊', aktionen: ['wasser', 'angeln', 'springen'] },
+  { id: 'krater', name: 'Krater', ort: 'kraterRand', bild: '🔥', aktionen: ['abhaengen', 'ziehen'] },
+  { id: 'strand', name: 'Strand', ort: 'strandHuette', bild: '🏖️', aktionen: ['schwimmen', 'feuer'] },
+  { id: 'leuchtturm', name: 'Leuchtturm', ort: { x: LEUCHTTURM.x, z: LEUCHTTURM.z }, bild: '🗼', aktionen: ['aussicht', 'klettern'] },
+  { id: 'buehne', name: 'Bühne', ort: 'buehne', bild: '🎤', aktionen: ['auftreten'] },
+  { id: 'garten', name: 'Garten', ort: 'lucindasGarten', bild: '🍅', aktionen: ['garten'] },
+  { id: 'lieferwagen', name: 'Lieferwagen', ort: { x: LIEFERWAGEN.x, z: LIEFERWAGEN.z }, bild: '🚚', aktionen: ['fahren', 'ueben'] },
+  { id: 'markt', name: 'Markt', ort: 'marktplatz', bild: '🛍️', aktionen: ['kaufen', 'roller', 'einstecken'] },
 ];
 
 export const ORT_AKTIONEN = {
   schlafen: { t: 'Schlafen gehen', art: 'ruhig', kraft: 0, schlaf: true, szene: () => [['t', 'Du machst das Licht aus.']] },
   zocken: { t: 'Zocken bis nachts', art: 'weg', kraft: 1, szene: () => [['t', 'Noch eine Runde. Und noch eine. Halb drei.'], ['e', { druck: -25, spaet: 1 }]] },
   wasser: { t: 'Ans Wasser setzen', art: 'ruhig', kraft: 1, szene: () => [['t', 'Wellen. Sonst nichts. Dein Kopf wird leiser.'], ['e', { druck: -20 }]] },
-  tricks: { t: 'Tricks üben', art: 'ruhig', kraft: 1, szene: (R) => (hat(R, 'pit.weg') ? [['t', 'Der Brunnen ist leer. Pit kommt nicht mehr.'], ['e', { druck: -5 }]] : [['t', 'Du fällst zehnmal. Pit lacht nicht einmal.'], ['e', { druck: -15, bond: { pit: 1 } }]]) },
+  tricks: { t: 'Tricks üben', art: 'ruhig', kraft: 1, szene: (R) => (hat(R, 'pit.weg') ? [['t', 'Der Brunnen ist leer. Pit kommt nicht mehr.'], ['e', { druck: -5 }]] : [['t', 'Pit zeigt dir den Kickflip. Jetzt du.'],
+    ['spiel', { titel: 'Im richtigen Moment abspringen', bild: '🛹' }, (g) => (g.treffer >= 3 ? [['s', 'pit', 'Dreimal gestanden. Respekt, echt.'], ['e', { druck: -20, bond: { pit: 2 }, ruf: { hafen: 1 } }]]
+      : g.treffer >= 1 ? [['t', 'Einmal gestanden, sonst Asphalt. Pit grinst.'], ['e', { druck: -15, bond: { pit: 1 } }]]
+      : [['t', 'Du fällst zehnmal. Pit lacht nicht einmal.'], ['e', { druck: -10, bond: { pit: 1 } }]])]]) },
   abhaengen: { t: 'Mit der Crew abhängen', art: 'weg', kraft: 1, szene: () => [['t', 'Musik aus einer Box. Mikas Crew macht dir Platz.'], ['e', { druck: -15, ruf: { krater: 1 }, bond: { yara: 1 }, spaet: 1 }]] },
-  job: { t: 'Jobben', art: 'ruhig', kraft: 1, szene: (R) => (hat(R, 'job.weg') ? [['s', 'fraenz', 'Für dich hab ich keine Arbeit mehr.']] : [['t', 'Vier Stunden Pommes. Fränz zahlt bar.'], ['e', { geld: R.karten.zuhause === 'allein' ? 25 : 20, druck: 5, bond: { fraenz: 1 }, flag: 'job' }]]) },
+  job: { t: 'Jobben', art: 'ruhig', kraft: 1, szene: (R) => (hat(R, 'job.weg') ? [['s', 'fraenz', 'Für dich hab ich keine Arbeit mehr.']] : [['t', 'Vier Stunden Fritteuse. Der Korb muss rechtzeitig raus.'],
+    ['spiel', { titel: 'Pommes raus, bevor sie verbrennen', bild: '🍟' }, (g) => {
+      const lohn = (R.karten.zuhause === 'allein' ? 25 : 20) + (g.treffer >= 3 ? 5 : g.treffer === 0 ? -5 : 0);
+      return [g.treffer >= 3 ? ['s', 'fraenz', 'Nichts verbrannt. Fünf Euro extra.'] : g.treffer === 0 ? ['s', 'fraenz', 'Drei Körbe Kohle. Das zieh ich ab.'] : ['t', 'Fränz zahlt bar. Deine Jacke riecht nach Fett.'],
+        ['e', { geld: lohn, druck: 5, bond: { fraenz: 1 }, flag: 'job' }]];
+    }]]) },
   kasse: { t: 'In die Kasse greifen', art: 'hart', kraft: 1, mist: true, wenn: (R) => !hat(R, 'kasse.geklaut'),
     szene: (R, { zeugen }) => {
       const z = zeuge(zeugen, 'fraenz');
@@ -112,6 +127,122 @@ export const ORT_AKTIONEN = {
       if (z) s.push(['s', z, 'Du bist das gerade gefahren? Echt jetzt?']);
       return s;
     } },
+  // Wer es zugegeben hat (oder bei Fränz gut steht), darf wieder ans Steuer – diesmal sitzt er daneben. Einmal am Tag.
+  ueben: { t: 'Mit Fränz fahren üben', art: 'ruhig', kraft: 1, fahrt: true,
+    wenn: (R) => !hat(R, 'auto.wasser') && !hat(R, 'job.weg') && wert(R, 'ueben.tag', -1) !== tag(R) && (hat(R, 'gestanden.auto') || (!hat(R, 'auto.genommen') && bond(R, 'fraenz') >= 3)),
+    szene: (R) => [['s', 'fraenz', 'Nur bis zum Leuchtturm. Ich sitz daneben.'], ['e', { flags: { 'fahrt.jetzt': true, 'ueben.tag': tag(R) } }]],
+    nach: (R, erg) => (erg.wasser ? [['s', 'fraenz', 'Ins Wasser. Mit mir drin. Bravo.'], ['e', { druck: 15, bond: { fraenz: -2 }, flags: { 'auto.wasser': true } }]]
+      : erg.beulen ? [['s', 'fraenz', 'Das war der Zaun. Den flickst du.'], ['e', { druck: 5 }]]
+      : erg.strecke > 60 ? [['s', 'fraenz', 'Sauber gefahren. Nächste Woche wieder.'], ['e', { druck: -20, bond: { fraenz: 1 }, flag: 'ueben.gut' }]]
+      : [['s', 'fraenz', 'Du darfst ruhig Gas geben.'], ['e', { druck: -5 }]]) },
+  // ----- Steg -----
+  angeln: { t: 'Angeln', art: 'ruhig', kraft: 1,
+    szene: (R) => {
+      if (hat(R, 'boot.genommen') && !hat(R, 'gestanden.boot')) return [['t', 'Tiagos Vater angelt jetzt vom Steg. Er nickt dir zu.'], ['d', 'Du kannst ihn nicht lange ansehen.'], ['e', { druck: 5 }]];
+      return [['t', 'Du wirfst die Schnur aus. Warten.'],
+        ['spiel', { titel: 'Anschlagen, wenn er beißt', bild: '🐟' }, (g) => (g.treffer >= 2
+          ? [['t', g.treffer >= 3 ? 'Drei Makrelen. Fränz gibt dir zwölf Euro dafür.' : 'Zwei Makrelen. Fränz gibt dir acht Euro dafür.'], ['e', { druck: -15, geld: g.treffer >= 3 ? 12 : 8 }]]
+          : [['t', 'Nichts gefangen. Trotzdem gut, hier zu sitzen.'], ['e', { druck: -15 }]])]];
+    } },
+  springen: { t: 'Vom Steg springen', art: 'weg', kraft: 0, wenn: (R) => wert(R, 'sprung', -1) !== tag(R),
+    szene: (R, { zeugen }) => {
+      const z = (zeugen || []).find((w) => ['mika', 'yara', 'luc', 'tiago', 'pit'].includes(w));
+      return [
+        ['t', R.jz === 1 ? 'Anlauf, Sprung. Das Wasser ist wie Eis.' : 'Anlauf, Sprung, kaltes Wasser. Du tauchst lachend auf.'],
+        ...(z ? [['s', z, 'Zehn Punkte! Noch mal!']] : []),
+        ['e', { druck: R.jz === 1 ? -5 : -10, flags: { sprung: tag(R) }, ...(z ? { bond: { [z]: 1 } } : {}) }],
+      ];
+    } },
+  // ----- Krater: Die Vape geht rum (nicht im sanften Modus) -----
+  ziehen: { t: 'An der Vape ziehen', art: 'weg', kraft: 0, wenn: (R) => !R.sanft && !hat(R, 'meidet.mika') && wert(R, 'vape.tag', -1) !== tag(R),
+    szene: (R) => {
+      const n = wert(R, 'vape', 0);
+      if (!n) return [
+        ['s', 'mika', 'Hier. Mango. Zieh mal.'],
+        ['w', [
+          { t: 'Ziehen.', art: 'weg', e: { druck: -10, ruf: { krater: 1 }, flags: { vape: 1, 'vape.tag': tag(R) } }, dann: [['d', 'Du hustest. Alle lachen. Du auch.']] },
+          { t: 'Nein, lass mal.', art: 'nein', e: { flags: { 'vape.tag': tag(R) } }, dann: [['s', 'mika', 'Mehr für mich.'], ['s', 'yara', 'Ich zieh auch nie. Merkt keiner.']] },
+        ], { ruhe: true }],
+      ];
+      if (n >= 2 && R.geld < 5) return [['s', 'mika', 'Erst zahlen. Fünf Euro. Ich bin kein Automat.'], ['e', { druck: 5, flags: { 'vape.tag': tag(R) } }]];
+      return [
+        ['t', n >= 2 ? 'Fünf Euro an Mika. Süßer Dampf, leichter Kopf.' : 'Die Vape geht rum. Süßer Dampf, leichter Kopf.'],
+        ['e', { druck: -15, geld: n >= 2 ? -5 : 0, spaet: 1, flags: { vape: n + 1, 'vape.tag': tag(R) } }],
+      ];
+    } },
+  // ----- Strand -----
+  schwimmen: { t: 'Rausschwimmen', art: 'ruhig', kraft: 1,
+    szene: (R, { zeugen }) => {
+      const t = (zeugen || []).includes('tiago');
+      return [
+        ['t', R.jz === 1 ? 'Eiskalt. Du schreist. Dann lachst du laut.' : R.jz === 3 ? 'Das Wasser ist warm. Du schwimmst bis zur Boje.' : 'Kalt, aber gut. Dein Kopf ist danach leer.'],
+        ...(t ? [['s', 'tiago', 'Wer zuerst an der Boje ist!']] : []),
+        ['e', { druck: R.jz === 1 ? -15 : -25, ...(t ? { bond: { tiago: 1 } } : {}) }],
+      ];
+    } },
+  feuer: { t: 'Feuer am Strand machen', art: 'weg', kraft: 1, mist: true, wenn: (R) => !hat(R, 'feuer'),
+    szene: (R, { zeugen }) => {
+      const z = zeuge(zeugen);
+      return [
+        ['t', 'Treibholz, ein Feuerzeug. Daneben steht die alte Strandhütte.'],
+        ['w', [
+          { t: 'Feuer dicht an der Hütte.', art: 'hart', e: { druck: -20, ruf: { krater: 1 }, spaet: 1, flags: { feuer: true, 'feuer.nah': true, 'feuer.tag': tag(R), 'feuer.zeuge': z || '' } }, dann: [
+            ['d', 'Es knackt und leuchtet. Funken fliegen bis zum Dach.'],
+            ...(z ? [['s', z, 'Das ist zu nah, Mann. Das Dach ist aus Schilf.']] : []),
+          ] },
+          { t: 'Feuer unten am Wasser.', art: 'ruhig', e: { druck: -20, spaet: 1, flags: { feuer: true, 'feuer.tag': tag(R) }, ...(z ? { bond: { [z]: 1 } } : {}) }, dann: [
+            ['d', 'Ein kleines Feuer. Später löscht es die Flut.'],
+            ...(z ? [['s', z, 'Darf ich mich dazusetzen?']] : []),
+          ] },
+          { t: 'Lieber nicht.', art: 'nein', e: {}, dann: [] },
+        ], { ruhe: true }],
+      ];
+    } },
+  // ----- Leuchtturm -----
+  aussicht: { t: 'Die Aussicht anschauen', art: 'ruhig', kraft: 1,
+    szene: (R, { zeugen }) => {
+      const j = (zeugen || []).includes('jolie');
+      return [
+        ['t', '96 Stufen. Von oben sieht die Insel klein aus.'],
+        ['d', 'Deine Sorgen auch. Für einen Moment.'],
+        ...(j ? [['s', 'jolie', 'Bleib so stehen. Ich zeichne dich gerade.']] : []),
+        ['e', { druck: -20, ...(j ? { bond: { jolie: 1 } } : {}) }],
+      ];
+    } },
+  klettern: { t: 'Aufs Geländer klettern', art: 'hart', kraft: 1, mist: true, wenn: (R) => !R.sanft && !hat(R, 'turm'),
+    szene: (R, { zeugen }) => {
+      const z = zeuge(zeugen);
+      const f = { turm: true, 'turm.tag': tag(R), 'turm.zeuge': z || '' };
+      return [
+        ['t', 'Ganz oben. Das Geländer ist schmal. Unten nur Felsen.'],
+        ['w', [
+          { t: 'Draufstellen und filmen.', art: 'hart', e: { druck: -15, ruf: { krater: 2 }, flags: { ...f, 'turm.clip': true } }, dann: [['d', 'Dein Herz hämmert. Der Clip ist zwölf Sekunden lang.']] },
+          { t: 'Nur draufstellen.', art: 'weg', e: { druck: -15, flags: f }, dann: [['d', 'Der Wind zerrt an dir. Du stehst.'], ...(z ? [['s', z, 'Komm da runter. Bitte.']] : [])] },
+          { t: 'Wieder runtergehen.', art: 'nein', e: { druck: -5 }, dann: [['d', 'Deine Knie sind weich. Die Treppe ist lang.']] },
+        ], { ruhe: true }],
+      ];
+    } },
+  // ----- Markt: Bühne und Garten -----
+  auftreten: { t: 'Auf die Bühne gehen', art: 'mut', kraft: 1, wenn: (R) => wert(R, 'buehne.jz', -1) !== R.jz,
+    szene: (R) => [
+      ['t', 'Offene Bühne am Markt. Ein Mikro, zwanzig Leute.'],
+      ['w', [
+        { t: 'Etwas vortragen.', art: 'mut', e: { flags: { 'buehne.jz': R.jz, buehne: true, 'buehne.n': wert(R, 'buehne.n', 0) + 1 } }, dann: [
+          ['d', 'Das Mikro pfeift kurz. Alle schauen dich an.'],
+          ['spiel', { titel: 'Im Takt bleiben', bild: '🎤' }, (g) => (g.treffer >= 2
+            ? [['d', 'Es wird still. Dann klatschen sie. Für dich.'], ['s', 'maelle', 'Nächstes Mal singen wir zusammen.'], ['e', { druck: -20, bond: { maelle: 1 }, ruf: { hafen: 2 } }]]
+            : [['d', 'Deine Stimme kippt. Du machst trotzdem weiter.'], ['s', 'noor', 'Das war mutig. Ehrlich.'], ['e', { druck: -10, bond: { noor: 1 }, ruf: { hafen: 1 } }]])],
+        ] },
+        { t: 'Nur zuschauen.', art: 'ruhig', e: { druck: -10 }, dann: [['t', 'Maëlle singt. Du kennst das Lied von irgendwo.']] },
+      ], { ruhe: true }],
+    ] },
+  garten: { t: 'Im Garten helfen', art: 'ruhig', kraft: 1, wenn: (R) => !hat(R, 'meidet.lucinda'),
+    szene: (R) => (hat(R, 'markt.geklaut') && !hat(R, 'gestanden.markt')
+      ? [['t', 'Du ziehst Unkraut. Oma Lucinda summt dabei.'], ['s', 'lucinda', 'Mir fehlen Kopfhörer am Stand. Komisch, oder?'], ['e', { geld: 10, druck: 8, bond: { lucinda: 1 } }]]
+      : [['t', 'Tomaten binden, Unkraut ziehen. Erde unter den Nägeln.'], ['s', 'lucinda', 'Zehn Euro. Und nimm Tomaten mit.'], ['e', { geld: 10, druck: -10, bond: { lucinda: 1 } }]]) },
+  // Tretroller: das Einzige, was man mit Geld kaufen kann und danach behält – damit kommt man schneller über die Insel (roller.js)
+  roller: { t: 'Tretroller kaufen', art: 'ruhig', kraft: 0, kostet: 35, wenn: (R) => !hat(R, 'roller'),
+    szene: () => [['s', 'lucinda', 'Gebraucht, aber er rollt. 35 Euro.'], ['e', { geld: -35, druck: -10, flag: 'roller' }], ['d', 'Dein eigener Roller. Die Insel wird kleiner.']] },
   kaufen: { t: 'Etwas Süßes kaufen', art: 'ruhig', kraft: 0, kostet: 3, wenn: (R) => wert(R, 'gekauft', -1) !== tag(R),
     szene: (R) => [['t', 'Eine Tüte Saures. Der halbe Markt riecht nach Waffeln.'], ['e', { geld: -3, druck: -8, flags: { gekauft: tag(R) } }]] },
   einstecken: { t: 'Kopfhörer einstecken', art: 'hart', kraft: 1, mist: true, wenn: (R) => !hat(R, 'markt.geklaut') && !hat(R, 'kopfhoerer'),
@@ -180,6 +311,12 @@ function beichte(R, wer) {
     ['s', 'tiago', 'Papa dachte, er hat es falsch festgemacht.'],
     ['s', 'tiago', 'Sag es ihm selbst. Ich komm mit.'],
     ['e', { bond: { tiago: 2 }, akte: 'gestanden', flags: { 'gestanden.boot': true, 'meidet.tiago': false } }],
+  ];
+  if (wer === 'tiago' && hat(R, 'feuer.nah') && !hat(R, 'gestanden.feuer')) return [
+    ['d', 'Das Feuer an der Hütte. Das war ich.'],
+    ['s', 'tiago', 'Die Netze stinken nach Rauch. Aber sie halten.'],
+    ['s', 'tiago', 'Hilf mir Samstag, das Dach zu flicken.'],
+    ['e', { bond: { tiago: 2, ...(hat(R, 'feuer.mikaschuld') ? { mika: 1, yara: 1 } : {}) }, akte: 'gestanden', flags: { 'gestanden.feuer': true, 'feuer.mikaschuld': false, 'meidet.tiago': false } }],
   ];
   if (wer === 'lucinda' && hat(R, 'markt.geklaut') && !hat(R, 'gestanden.markt')) return [
     ['d', 'Die Kopfhörer. Ich hab nicht bezahlt.'],
@@ -270,6 +407,28 @@ export const LEUTE_AKTIONEN = {
       ['e', bond(R, wer) <= -3 ? { flags: { ['sorry.' + wer]: true } } : { bond: { [wer]: 1 }, flags: { ['sorry.' + wer]: true, ['meidet.' + wer]: false } }],
     ] },
 };
+// Leute ohne Namen (Statisten): ein Satz im Vorbeigehen. Zuerst das, was die Insel gerade über dich redet –
+// so merkt man, dass sich herumspricht, was man tut. Sonst ein Gruß.
+const TRATSCH = [
+  [(R) => hat(R, 'feuer.nah') && seit(R, 'feuer.tag') >= 1, 'Die Strandhütte ist halb schwarz. Hast du das gesehen?'],
+  [(R) => hat(R, 'spray') && seit(R, 'spray.tag') >= 1, 'Das Tor an der Werft. Wer macht so was?'],
+  [(R) => hat(R, 'auto.genommen') && !hat(R, 'gestanden.auto'), 'Fränz sucht den, der seinen Wagen hatte.'],
+  [(R) => hat(R, 'turm.tun'), 'Der Junge mit der Kamera. Arm in Gips.'],
+  [(R) => folgeWar(R, 'kasse.geruecht'), 'Am Kiosk soll einer klauen. Sagt man.'],
+  [(R) => hat(R, 'boot.genommen') && seit(R, 'boot.tag') >= 1, 'Tiagos Vater flickt seit Tagen sein Boot.'],
+  [(R) => hat(R, 'buehne'), 'Du warst doch auf der Bühne! Stark.'],
+  [(R) => (R.akte || []).includes('gestanden'), 'Du hast was zugegeben, hör ich. Respekt.'],
+  [(R) => (R.ruf.gross || 0) >= 2, 'Ilda redet gut von dir. Das tut sie selten.'],
+  [(R) => (R.ruf.gross || 0) <= -2, 'Dich kenn ich. Von dir hört man einiges.'],
+];
+const GRUSS = ['Moien.', 'Schöner Tag heute, oder?', 'Pass auf, die Straße ist neu.', 'Die Fähre hat wieder Verspätung.', 'Am Markt gibt es frische Waffeln.', 'Der Wind kommt heute vom Meer.',
+  'Na, auch unterwegs?', 'Bei Fränz gibt es die besten Pommes.'];
+export function statistSagt(R, wer) {
+  const t = TRATSCH.filter(([wenn]) => wenn(R)), n = tag(R) + String(wer || '').length;
+  return t.length && n % 3 !== 0 ? t[n % t.length][1] : GRUSS[n % GRUSS.length];
+}
+export const TRATSCH_ZEILEN = TRATSCH.map((x) => x[1]).concat(GRUSS);
+
 export const LEUTE_REIHE = ['gestehen', 'reden', 'einladen', 'helfen', 'entschuldigen', 'zurueck', 'leihen', 'laestern', 'filmen', 'aufziehen', 'schubsen'];
 
 // ---------- Folgen (jeden Morgen geprüft) ----------
@@ -292,6 +451,35 @@ export const FOLGEN = [
   { id: 'spray.gesehen', wenn: (R) => hat(R, 'spray') && seit(R, 'spray.tag') >= 1 && !!wert(R, 'spray.zeuge', ''),
     text: ['Fränz weiß, wer das Tor besprüht hat.', 'Er hat es allein neu gestrichen. Bis Mitternacht.'],
     e: () => ({ bond: { fraenz: -2 }, ruf: { gross: -1 }, akte: 'spray' }) },
+  // Feuer an der Hütte: Mit Zeuge weiß es Tiagos Familie. Ohne Zeuge bekommt die Krater-Crew den Ärger.
+  { id: 'feuer.huette', wenn: (R) => hat(R, 'feuer.nah') && seit(R, 'feuer.tag') >= 1 && !!wert(R, 'feuer.zeuge', ''),
+    text: ['Das Dach der Strandhütte ist halb verkohlt.', 'Tiagos Familie lagert dort ihre Netze. Sie wissen, wer es war.'],
+    e: () => ({ bond: { tiago: -2 }, ruf: { gross: -1 }, akte: 'feuer', chat: { von: 'tiago', text: 'Unsere Hütte. Im Ernst? Die Netze sind fast verbrannt.' } }) },
+  { id: 'feuer.crew', wenn: (R) => hat(R, 'feuer.nah') && seit(R, 'feuer.tag') >= 1 && !wert(R, 'feuer.zeuge', ''),
+    text: ['Das Dach der Strandhütte ist halb verkohlt.', 'Alle sagen: Das war die Crew vom Krater.'],
+    e: () => ({ flag: 'feuer.mikaschuld', chat: { von: 'yara', text: 'Alle denken, wir haben am Strand gezündelt. Waren wir nicht. Weißt du was?' } }) },
+  // Leuchtturm: Ein Clip findet Nachahmer. Ohne Clip erfährt es nur Ilda.
+  { id: 'turm.clip', wenn: (R) => hat(R, 'turm.clip') && seit(R, 'turm.tag') >= 1,
+    text: ['Dein Clip vom Leuchtturm hat 400 Aufrufe.', 'Tun wollte es nachmachen. Er ist abgerutscht. Arm gebrochen.'],
+    e: () => ({ flag: 'turm.tun', bond: { jolie: -1, ilda: -1 }, ruf: { gross: -1 }, akte: 'turm', chat: { von: 'jolie', text: 'Tun liegt im Krankenhaus. Er sagt, er wollte es machen wie du.' } }) },
+  { id: 'turm.gesehen', wenn: (R) => hat(R, 'turm') && !hat(R, 'turm.clip') && seit(R, 'turm.tag') >= 1 && !!wert(R, 'turm.zeuge', ''),
+    text: ['Jemand hat Ilda vom Leuchtturm erzählt.', 'Sie hat die Tür oben abgeschlossen.'],
+    e: () => ({ bond: { ilda: -1 }, chat: { von: 'ilda', text: 'Ich war auch mal fünfzehn. Komm trotzdem vorbei.' } }) },
+  // Vape: erst lustig, dann fehlt etwas. Mika rechnet mit.
+  { id: 'vape.ilda', wenn: (R) => wert(R, 'vape', 0) >= 2 && seit(R, 'vape.tag') >= 1,
+    text: ['Ilda riecht an deiner Jacke. Mango.', 'Sie sagt nichts. Sie schaut nur lange.'],
+    e: () => ({ chat: { von: 'ilda', text: 'Ich frag nicht. Aber ich bin da, wenn was ist.' } }) },
+  { id: 'vape.gewohnt', wenn: (R) => wert(R, 'vape', 0) >= 4 && seit(R, 'vape.tag') >= 1,
+    text: ['Abends bist du unruhig, bis du am Krater warst.', 'Mika sagt: Ab jetzt zahlst du die Pods.'],
+    e: () => ({ druck: 10, flag: 'vape.gewohnt', chat: { von: 'mika', text: 'Du schuldest mir 15. Für die Pods. Bis Freitag.' } }) },
+  // Bühne: Wer sich getraut hat, wird gefragt
+  { id: 'buehne.fest', wenn: (R) => hat(R, 'buehne') && wert(R, 'buehne.jz', -1) !== R.jz,
+    text: ['Maëlle hat dich für das Fest eingetragen.', 'Dein Name steht auf dem Plakat am Markt.'],
+    e: () => ({ bond: { maelle: 1 }, chat: { von: 'maelle', text: 'Ich hab dich einfach eingetragen. Sag nicht Nein.' } }) },
+  // Lagerfeuer: Wer mitgefilmt hat, dessen Clip geht rum
+  { id: 'lager.clip', wenn: (R) => hat(R, 'lager.gefilmt'),
+    text: ['Dein Video von Pits Sturz geht durch die Gruppe.', 'Er war heute nicht am Brunnen.'],
+    e: () => ({ bond: { jolie: -1 }, chat: { von: 'jolie', text: 'Du hast gefilmt, wie Pit fällt? Im Ernst?' } }) },
   // Boot: Tiagos Vater kann nicht rausfahren
   { id: 'boot.tiago', wenn: (R) => hat(R, 'boot.genommen') && seit(R, 'boot.tag') >= 1,
     text: ['Tiagos Vater wollte heute fischen fahren.', 'Das Boot zieht Wasser. Eine Woche ohne Fang.'],
@@ -354,6 +542,7 @@ export const VERPASST = {
   neue: { text: 'Alle haben über Noor gelacht. Keiner hat etwas gesagt.', e: { flag: 'neue.allein', bond: { noor: -1 } } },
   gespraech: { text: 'Ilda und Fränz haben gewartet. Du bist nicht gekommen.', e: { akte: 'gespraech.fehlt', ruf: { gross: -1 }, bond: { ilda: -1 }, flag: 'gespraech.raus' } },
   praktikum: { text: 'Die Werft hat um sieben angefangen. Ohne dich.', e: { akte: 'prakt.fehlt', flag: 'prakt.abbruch', bond: { fraenz: -2 }, ruf: { gross: -1 } } },
+  lagerfeuer: { text: 'Pit ist am Strand über das Feuer gesprungen. Fuß verstaucht.', e: { flag: 'lager.pitallein', bond: { pit: -1 } } },
   fest: { text: 'Beim Fest lag Tun allein hinter dem Felsen. Bis morgens.', e: { flag: 'fest.allein', bond: { tun: -1 } } },
   luege: { text: 'Ilda hat Tun allein gefragt. Er hat deinen Namen gesagt.', e: { flag: 'luege.raus', bond: { ilda: -1 } } },
 };

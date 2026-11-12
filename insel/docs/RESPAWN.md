@@ -30,4 +30,29 @@ man darf fast alles tun (auch Mist), keine Waffen, kein Gefängnis. Die Folgen s
 - **Schreibregeln:** Blase ≤ 12 Wörter, Wahl ≤ 6 Wörter, keine Lehre, jede Wahl kostet etwas. Hilfe-Nummern nur 116 111 und 112.
 - **Sanfter Rahmen:** `?sanft` (oder `meta.sanft`) nimmt Alkohol, Schlagen und Schubsen heraus.
 - **Tests:** `node --test tests/unit/respawn-run.test.mjs` · `node tests/scenarios/respawn.mjs` (Autopilot, ganze Runden).
-- **Offen:** Spieltest mit Jugendlichen, mehr Aktionen und Orte, Frauen-Modelle, Gesichtsausdruck der neuen Figuren, Kachel im Hub.
+- **Neu in der Nacht 12./13.11.:**
+  - **Vier neue Orte** (`daten/welt.js` → `ORTE`): Strand (rausschwimmen, Feuer machen), Leuchtturm (Aussicht, aufs Geländer
+    klettern), Bühne am Markt (auftreten), Lucindas Garten (helfen). Am Steg kann man jetzt angeln und springen, am Krater geht
+    eine Vape rum (nur ohne `?sanft`, wie Klettern am Leuchtturm).
+  - **Folgen dazu:** Feuer dicht an der Strandhütte verkohlt das Dach – mit Zeuge weiß es Tiagos Familie, ohne Zeuge bekommt
+    die Krater-Crew den Ärger („Davongekommen“). Der Clip vom Leuchtturm findet einen Nachahmer. Die Vape wird teuer und
+    macht unruhig; Ilda riecht es und sagt nur, dass sie da ist. Zugeben geht auch hier (bei Tiago).
+  - **Geschick** (`oberflaeche.js` → `geschick`, Szenen-Schritt `['spiel', { titel, bild }, (ergebnis) => Schritte]`):
+    ein Zeiger läuft hin und her, tippen, wenn er im hellen Feld steht – drei Runden. Benutzt beim Skaten, Angeln, an der
+    Fritteuse und auf der Bühne. Viel Druck macht das Feld kleiner und den Zeiger schneller („Deine Hände zittern“).
+  - **Spuren in der Welt:** Die Feuerstelle am Strand bleibt liegen (`stadt.js` → `zeigeSpuren`). Leute ohne Namen grüßen
+    nicht mehr nur – sie reden über das, was sich herumgesprochen hat (`statistSagt`).
+  - **13. Ausgang** „Die Stimme vom Markt“ (zweimal auf die Bühne, Maëlle an der Seite).
+  - **Kamera:** Hauswände versperren die Sicht (`colliders.js` → Rechtecke mit `sicht: true`); die Kamera rückt bis 0,9 m an
+    die Figur, statt im Haus zu landen. Die Hindernisse der Häuser passen jetzt zu den neuen Modellen.
+  - **Stadt:** Skate-Ecke am Dorfplatz, vier Boote am Steg, Bojen, Auslagen vor den Marktständen (Kenney „Mini Skate“,
+    „Watercraft Kit“, „Mini Market“, CC0).
+  - **Tretroller** (`roller.js`): am Markt für 35 Euro zu kaufen, danach jederzeit „Roller fahren“ auf der Aktionstaste
+    (schneller unterwegs; steigt von selbst ab, wenn eine Szene beginnt oder man ins Wasser gerät).
+  - **Fahren üben** (`ORT_AKTIONEN.ueben`): Wer den Lieferwagen zugegeben hat – oder bei Fränz gut steht –, darf einmal am
+    Tag mit ihm daneben fahren. Zugeben öffnet also wieder eine Tür.
+  - Die Straßen zum Leuchtturm und zum Strand sind jetzt EINE durchgehende Hauptstraße (keine Lücke am Dorfplatz), mit
+    zwei Wagen. Die Orte im Handy stehen zweispaltig (zwölf Orte passen auf einen Bildschirm).
+  - Im Hub steht RESPAWN als Kachel bei den Materialien (Klassebuch: `hub-apps.js`, Test `respawn-kachel.js`).
+- **Offen:** Spieltest mit Jugendlichen, Frauen-Modelle (Paket „Ultimate Modular Women“ fehlt noch), Gesichtsausdruck der
+  neuen Figuren.

@@ -13,7 +13,8 @@ import { createBuehne } from './buehne.js';
 import { ladeFigur, MODELLE, ueberziehe } from './figur3d.js';
 import { baueStadt } from './stadt.js';
 import { createFahren } from './fahren.js';
-import { SITUATIONEN, AUSGAENGE, AKTE, AKTE_LEER, ORTE, ORT_AKTIONEN, LEUTE_AKTIONEN, LEUTE_REIHE, FOLGEN, VERPASST, WICHTIG } from './daten/index.js';
+import { createRoller } from './roller.js';
+import { SITUATIONEN, AUSGAENGE, AKTE, AKTE_LEER, ORTE, ORT_AKTIONEN, LEUTE_AKTIONEN, LEUTE_REIHE, FOLGEN, VERPASST, WICHTIG, statistSagt } from './daten/index.js';
 import { neuerLauf, zieheKarten, planeJahreszeit, jahreszeitWechsel, jahreszeit, ausgangFuer, akteFuer, wirke, bond, verteile, folgenAmMorgen, neuerTag,
   JAHRESZEIT_NAME, UHR_NACH_KRAFT, TAGE_JE_JAHRESZEIT } from './run.js';
 
@@ -57,8 +58,12 @@ export default {
       // zwei Zonen nutzen denselben Namen „wimpel“ – die Liste kennt nur eine davon; den Rest direkt aus der Szene nehmen
       const weg = []; game.scene.traverse((o) => { if (/^props-bake-dekor-(wimpel|signalfeuer)/.test(o.name || '')) weg.push(o); });
       for (const o of weg) if (o.parent) o.parent.remove(o);
+      // der eigene Tretroller (am Markt gekauft): fährt nur an freien Tagen, nicht in Szenen und nicht im Lieferwagen
+      const rm = s.setze('skate/scooter', 0, 0, 0, { massstab: 2.0 });
+      if (rm) roller = createRoller({ game, mesh: rm, darf: () => !!(R && tagEnde && R.flags.roller && !B.aktiv && !F.aktiv && !beschaeftigt && !ui.overlay.count && !document.querySelector('.rs-voll')) });
     }).catch((e) => console.warn('[respawn] Stadt', e));
 
+    let roller = null;
     const F = createFahren({ game });
 
     // ---------- Neue Figuren (Skelett, echte Bewegungen): Überzug für die Spielfigur und alle anderen ----------
@@ -163,7 +168,7 @@ export default {
       if (beschaeftigt || !R || !tagEnde || B.aktiv || ui.overlay.count) return false;
       beschaeftigt = true;
       try { await f(); } catch (e) { console.error('[respawn]', e); } finally { beschaeftigt = false; }
-      if (R) { O.status(R); marken_(); sichern(); events.emit('respawn:frei', { kraft: R.kraft, tag: R.tag, jz: R.jz }); }
+      if (R) { O.status(R); marken_(); sichern(); if (stadt && stadt.zeigeSpuren) stadt.zeigeSpuren(R.flags); events.emit('respawn:frei', { kraft: R.kraft, tag: R.tag, jz: R.jz }); }
       return true;
     }
     async function schlafen() {
@@ -226,7 +231,7 @@ export default {
     // Menü an einer Person: höchstens sechs Kacheln. Das Gemeine liegt eine Ebene tiefer („Gemein sein …“).
     const GEMEIN = ['laestern', 'aufziehen', 'filmen', 'schubsen'];
     const leuteMenue = (wer) => frei(async () => {
-      if (!WICHTIG.includes(wer)) { const n = npcs.get(wer); ui.say({ who: wer, text: 'Moien.', anchor: n ? n.group : null, wait: false, lock: false, seconds: 1.8 }); return; }
+      if (!WICHTIG.includes(wer)) { const n = npcs.get(wer); ui.say({ who: wer, text: statistSagt(R, wer), anchor: n ? n.group : null, wait: false, lock: false, seconds: 2.6 }); return; }
       const alle = LEUTE_REIHE.map((id) => ({ id, ...LEUTE_AKTIONEN[id] })).filter((a) => !a.wenn || a.wenn(R, wer)).map((a) => ({ ...a, sub: a.kraft ? '⚡ kostet Kraft' : a.kostet ? a.kostet + ' Euro' : '' }));
       const nett = alle.filter((a) => !GEMEIN.includes(a.id)).slice(0, 4), gemein = alle.filter((a) => GEMEIN.includes(a.id));
       let w = await menue(npcs.nameOf(wer), gemein.length ? nett.concat([{ id: '_gemein', t: 'Gemein sein …', art: 'hart' }]) : nett);
@@ -270,6 +275,7 @@ export default {
       O.wirkung(neuerTag(R), R);
       uhr();
       const zuhause = ortVon('bootshaus');
+      if (stadt && stadt.zeigeSpuren) stadt.zeigeSpuren(R.flags);
       if (stadt && stadt.parke) { stadt.parke(); if (stadt.lieferwagen) { stadt.lieferwagen.visible = !R.flags['auto.wasser']; stadt.lieferwagen.rotation.z = 0; } }   // der Lieferwagen steht morgens wieder am Kiosk – außer er liegt im Wasser
       player.teleport(zuhause.x + 1.5, zuhause.z - 2.5, Math.atan2(-zuhause.x, -zuhause.z));
       if (game.cameraRig.behindPlayer) game.cameraRig.behindPlayer();
@@ -388,6 +394,7 @@ export default {
         return { namen: f.namen, stile: f.stile };
       },
       neueRunde, hauptmenue,
+      get roller() { return roller; },
       // Tests: eine freie Aktion ausführen (wie ein Klick in der Welt)
       tue(o) {
         if (o.ereignis) return frei(() => ereignis(o.ereignis));

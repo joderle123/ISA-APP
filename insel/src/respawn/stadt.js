@@ -94,8 +94,6 @@ function strassenBand(pts, hoehe, { breite = 5.2, rand = 0.7 } = {}) {
   return { geo: g, punkte: P };
 }
 
-// Wege der Insel, die zu Straßen werden (id aus world/island.js → PATHS)
-const STRASSEN = ['hafen-strand', 'hafen-leuchtturm', 'hafen-markt'];
 
 export async function baueStadt(game) {
   const G = await lade();
@@ -116,6 +114,18 @@ export async function baueStadt(game) {
   // tiefster Punkt unter dem Grundriss, damit ein Haus am Hang nicht in der Luft hängt
   const grund = (x, z, r) => Math.min(hoehe(x, z), hoehe(x + r, z), hoehe(x - r, z), hoehe(x, z + r), hoehe(x, z - r));
 
+  // Hindernis passend zum neuen Modell: ersetzt das des alten Hauses und versperrt der Kamera die Sicht (sicht: true),
+  // damit sie nicht durch die Wand schaut
+  const col = game.colliders;
+  const hindernis = (m, b) => {
+    if (!col || !m) return;
+    for (const o of col.query(b.x, b.z, 1.5)) if (o.tag === 'haus') col.remove(o);
+    const bb = m.geometry.boundingBox, s = m.scale.x;
+    col.addBox(m.position.x + ((bb.max.x + bb.min.x) / 2) * s * Math.cos(m.rotation.y) + ((bb.max.z + bb.min.z) / 2) * s * Math.sin(m.rotation.y),
+      m.position.z - ((bb.max.x + bb.min.x) / 2) * s * Math.sin(m.rotation.y) + ((bb.max.z + bb.min.z) / 2) * s * Math.cos(m.rotation.y),
+      Math.max(0.6, (bb.max.x - bb.min.x) * s / 2 - 0.25), Math.max(0.6, (bb.max.z - bb.min.z) * s / 2 - 0.25), m.rotation.y,
+      { group: 'props', tag: 'haus', sicht: true, yMax: m.position.y + bb.max.y * s });
+  };
   // 1) Häuser und Läden an die Stelle der alten
   let ih = 0, il = 0;
   const decor = game.world.decor;
@@ -125,6 +135,7 @@ export async function baueStadt(game) {
     if (b.type === 'kiosk') {
       const m = setze('laden/c', b.x, b.z, yaw, { breite: 6.2 });
       if (m) m.position.y = grund(b.x, b.z, 2) - 0.05;
+      hindernis(m, b);
       continue;
     }
     const laden = b.zone === 'markt';
@@ -135,6 +146,7 @@ export async function baueStadt(game) {
       m.position.y = grund(b.x, b.z, w * 0.4) - 0.15;
       const k = ih + il;
       m.geometry = gefaerbt(m.geometry, DACH[k % DACH.length], WAND[(k * 3 + 1) % WAND.length]);
+      hindernis(m, b);
     }
     // Auto neben dem Haus (rechts von der Tür), parallel zur Hausfront
     if (!laden && ih % 2 === 1) {
@@ -146,7 +158,7 @@ export async function baueStadt(game) {
   }
   // 2) Dorfplatz: Straßenlampen, Schilder, ein Lieferwagen am Kiosk
   const P = island.SITES && island.SITES.dorfplatz ? island.SITES.dorfplatz : { x: 4, z: 110 };
-  for (const [dx, dz, yaw] of [[-9, -7, 0.8], [10, -8, -0.8], [11, 7, -2.3], [-10, 8, 2.3]]) setze('strasse/light-square', P.x + dx, P.z + dz, yaw, { massstab: 9 });
+  for (const [dx, dz, yaw] of [[-9, -7, 0.8], [15.5, -3, -1.2], [11, 7, -2.3], [-10, 8, 2.3]]) setze('strasse/light-square', P.x + dx, P.z + dz, yaw, { massstab: 9 });
   setze('strasse/road-sign-stop', P.x + 7.5, P.z + 11, Math.PI, { massstab: 7 });
   setze('strasse/dumpster', -24.2, 113.2, 0.6, { massstab: 5 });
   setze('strasse/construction-cone', 14.5, 123, 0, { massstab: 6 });
@@ -154,19 +166,63 @@ export async function baueStadt(game) {
   // Fränz' Lieferwagen am Kiosk: den kann man nehmen (plugin.js → fahren.js)
   const lieferwagen = setze('auto/delivery', LIEFERWAGEN.x, LIEFERWAGEN.z, LIEFERWAGEN.yaw, { massstab: 1.5 });
   const parkplatz = lieferwagen ? { x: lieferwagen.position.x, y: lieferwagen.position.y, z: lieferwagen.position.z, yaw: lieferwagen.rotation.y } : null;
-  setze('auto/taxi', 13.5, 103.5, -0.5, { massstab: 1.5 });
+  setze('auto/taxi', -12.5, 103.2, 2.1, { massstab: 1.5 });   // am Weg zum Markt, nicht in der Skate-Ecke
+  // 2b) Skate-Ecke am Dorfplatz (Pflasterkreis im Nordosten): Rampe, Rail, Box – Pits Revier
+  const fest = (m, hw, hd, hoch) => { if (m && col) col.addBox(m.position.x, m.position.z, hw, hd, m.rotation.y, { group: 'props', tag: 'skate', yMax: m.position.y + hoch }); return m; };
+  fest(setze('skate/half-pipe-low', 17.2, 98.6, 0.5, { massstab: 4.2 }), 2.0, 2.0, 1.7);
+  fest(setze('skate/obstacle-box-grind', 12.6, 99.4, 1.2, { massstab: 3.4 }), 0.8, 1.6, 0.7);
+  fest(setze('skate/rail-low', 14.4, 103.2, 0.5, { massstab: 3.6 }), 0.2, 1.8, 0.9);
+  setze('skate/skateboard', 13.3, 101.4, 2.2, { massstab: 1.25 });
+  setze('skate/pallet', 19.6, 102.4, 0.3, { massstab: 2.4 });
+  // 2c) Boote am Steg und eine Boje vor dem Strand (bis dahin schwimmt man)
+  const wasser = (x, z) => (island.waterLevel ? island.waterLevel(x, z) : 0);
+  const schwimmt = (n, x, z, yaw, massstab, tief = 0.12) => { const m = setze(n, x, z, yaw, { massstab }); if (m) { const b = m.geometry.boundingBox; m.position.y = wasser(x, z) - tief - b.min.y * massstab; m.userData.wasserY = m.position.y; m.userData.phase = x * 0.7 + z; } return m; };
+  const boote = [
+    schwimmt('boot/boat-fishing-small', 10.3, 141.5, Math.PI, 1.15),
+    schwimmt('boot/boat-row-small', 1.9, 146.5, 0.1, 1.0),
+    schwimmt('boot/boat-sail-a', 10.6, 149.5, Math.PI, 1.1),
+    schwimmt('boot/boat-row-large', 1.6, 137.5, -0.1, 1.0),
+    schwimmt('boot/buoy-flag', 158, 37, 0, 1.3, 0.25),
+    schwimmt('boot/buoy', 40, 150, 0, 1.2, 0.25),
+  ].filter(Boolean);
+  // 2d) Markt: Auslagen vor den vier Ständen
+  for (const [n, x, z, yaw, ms] of [
+    ['markt/display-fruit', -115.2, 24.2, Math.PI, 2.2], ['markt/display-bread', -120.6, 24.2, Math.PI, 2.2],
+    ['markt/display-flowers', -128.2, 16.8, -Math.PI / 2, 2.0], ['markt/shelf-boxes', -128.4, 11.2, Math.PI / 2, 2.0],
+    ['markt/clothing-rack', -107.8, 11.4, Math.PI / 2, 2.2], ['markt/display-cans', -107.6, 16.8, -Math.PI / 2, 2.0],
+    ['markt/clothing-table', -115.4, 3.8, 0, 2.2], ['markt/hand-truck', -121.4, 4.2, 0.6, 2.2], ['markt/shopping-cart', -123.2, 19.4, 2.2, 2.4],
+  ]) { const m = setze(n, x, z, yaw, { massstab: ms }); if (m && col) { const b = m.geometry.boundingBox; col.addCircle(x, z, Math.max(b.max.x - b.min.x, b.max.z - b.min.z) * ms * 0.42, { group: 'props', tag: 'auslage' }); } }
+  // 2e) Feuerstelle am Strand: erst zu sehen, wenn dort jemand Feuer gemacht hat (plugin.js → zeigeSpuren)
+  const feuerstelle = new THREE.Group(); feuerstelle.name = 'respawn-feuerstelle'; feuerstelle.visible = false;
+  {
+    const fx = 125.5, fz = 43.5, fy = hoehe(fx, fz);
+    const stein = new THREE.MeshLambertMaterial({ color: '#8d8a86', flatShading: true }), kohle = new THREE.MeshLambertMaterial({ color: '#2a2422', flatShading: true });
+    const asche = new THREE.Mesh(new THREE.CircleGeometry(1.05, 14), new THREE.MeshLambertMaterial({ color: '#3a3330' })); asche.rotation.x = -Math.PI / 2; asche.position.set(fx, fy + 0.05, fz); feuerstelle.add(asche);
+    for (let i = 0; i < 8; i++) { const a = (i / 8) * Math.PI * 2; const st = new THREE.Mesh(new THREE.IcosahedronGeometry(0.24 + (i % 3) * 0.05, 0), stein); st.position.set(fx + Math.cos(a) * 1.0, fy + 0.14, fz + Math.sin(a) * 1.0); st.rotation.set(i, i * 2, i * 3); st.castShadow = true; feuerstelle.add(st); }
+    for (let i = 0; i < 3; i++) { const ast = new THREE.Mesh(new THREE.BoxGeometry(1.25, 0.16, 0.18), kohle); ast.position.set(fx, fy + 0.16 + i * 0.07, fz); ast.rotation.y = i * 1.05 + 0.3; ast.rotation.z = 0.12; feuerstelle.add(ast); }
+  }
+  wurzel.add(feuerstelle);
   // 3) Straßen auf den Hauptwegen, Lampen am Rand, parkende Autos, ein wenig Verkehr
   const fahrten = [];
   const base = game.props.materials.base;
-  for (const id of STRASSEN) {
-    const weg = (island.PATHS || []).find((p) => p.id === id); if (!weg) continue;
+  // Die Wege zum Leuchtturm und zum Strand beginnen beide am Dorfplatz: als EINE durchgehende Hauptstraße bauen
+  // (sonst klafft dort eine Lücke). Auf ihr fahren zwei Wagen.
+  const wegVon = (id) => ((island.PATHS || []).find((p) => p.id === id) || {}).pts;
+  const strassen = [];
+  if (wegVon('hafen-leuchtturm') && wegVon('hafen-strand')) strassen.push({ id: 'haupt', pts: wegVon('hafen-leuchtturm').slice().reverse().concat(wegVon('hafen-strand')), wagen: 2 });
+  else for (const id of ['hafen-leuchtturm', 'hafen-strand']) if (wegVon(id)) strassen.push({ id, pts: wegVon(id), wagen: 1 });
+  if (wegVon('hafen-markt')) strassen.push({ id: 'hafen-markt', pts: wegVon('hafen-markt'), wagen: 1 });
+  for (const weg of strassen) {
+    const id = weg.id;
     const { geo, punkte } = strassenBand(weg.pts, hoehe);
     const m = new THREE.Mesh(geo, base); m.receiveShadow = true; m.name = 'strasse-' + id; wurzel.add(m);
     // alle ~38 m eine Lampe, abwechselnd links und rechts
     for (let i = 10, s = 1; i < punkte.length - 4; i += 25, s = -s) {
       const a = punkte[i - 1], b = punkte[i + 1]; const yaw = Math.atan2(b.x - a.x, b.z - a.z);
       const nx = Math.cos(yaw), nz = -Math.sin(yaw);
-      setze('strasse/light-square', punkte[i].x + nx * 3.6 * s, punkte[i].z + nz * 3.6 * s, yaw + (s > 0 ? -Math.PI / 2 : Math.PI / 2), { massstab: 9 });
+      const lx = punkte[i].x + nx * 3.6 * s, lz = punkte[i].z + nz * 3.6 * s;
+      if (Math.hypot(lx - LIEFERWAGEN.x, lz - LIEFERWAGEN.z) < 5) continue;   // nicht auf dem Parkplatz des Lieferwagens
+      setze('strasse/light-square', lx, lz, yaw + (s > 0 ? -Math.PI / 2 : Math.PI / 2), { massstab: 9 });
     }
     // parkende Autos am Straßenrand
     for (let i = 18, k = 0; i < punkte.length - 10; i += 31, k++) {
@@ -174,7 +230,7 @@ export async function baueStadt(game) {
       const nx = Math.cos(yaw), nz = -Math.sin(yaw), s = k % 2 ? 1 : -1;
       setze('auto/' + AUTOS[(k + id.length) % AUTOS.length], punkte[i].x + nx * 3.5 * s, punkte[i].z + nz * 3.5 * s, yaw + (s > 0 ? 0 : Math.PI), { massstab: 1.5 });
     }
-    fahrten.push(punkte);
+    for (let k = 0; k < weg.wagen; k++) fahrten.push(punkte);
   }
   // Verkehr: je Straße ein Fahrzeug, das langsam hin- und herfährt und vor Menschen anhält
   const wagen = [];
@@ -182,7 +238,7 @@ export async function baueStadt(game) {
     const m = setze('auto/' + ['van', 'sedan', 'suv'][i % 3], punkte[4].x, punkte[4].z, 0, { massstab: 1.5 });
     if (!m) return;
     m.geometry = gefaerbt(m.geometry, '#000000', ['#F2C14E', '#E9E4D8', '#C9462F'][i % 3]);
-    wagen.push({ m, punkte, s: 4 + i * 30, richtung: 1, v: 0 });
+    wagen.push({ m, punkte, s: Math.min(punkte.length - 6, 4 + i * 55), richtung: i % 2 ? -1 : 1, v: 0 });
   });
   const _p = new THREE.Vector3();
   const halt = (x, z) => {
@@ -191,7 +247,11 @@ export async function baueStadt(game) {
     for (const f of game.npcs.list()) { const q = f.position || (f.humanoid && f.humanoid.group.position); if (q && Math.hypot(q.x - x, q.z - z) < 4.5) return true; }
     return false;
   };
+  let uhr = 0;
   game.addUpdate((dt) => {
+    // Boote und Bojen schaukeln leicht
+    uhr += dt;
+    for (const m of boote) { m.position.y = m.userData.wasserY + Math.sin(uhr * 1.1 + m.userData.phase) * 0.07; m.rotation.z = Math.sin(uhr * 0.8 + m.userData.phase) * 0.035; }
     for (const w of wagen) {
       const n = w.punkte.length - 1;
       const i = Math.max(0, Math.min(n - 1, Math.floor(w.s))), f = w.s - i;
@@ -211,7 +271,9 @@ export async function baueStadt(game) {
     }
   }, { order: 60 });
   game.scene.add(wurzel);
-  return { gruppe: wurzel, setze, modelle: Object.keys(G), wagen, lieferwagen,
+  return { gruppe: wurzel, setze, modelle: Object.keys(G), wagen, lieferwagen, boote,
+    // Spuren in der Welt: Was man angestellt hat, bleibt zu sehen
+    zeigeSpuren(flags) { feuerstelle.visible = !!(flags && flags.feuer); },
     // am Morgen steht der Lieferwagen wieder am Kiosk (Fränz hat ihn geholt)
     parke() { if (lieferwagen && parkplatz) { lieferwagen.position.set(parkplatz.x, parkplatz.y, parkplatz.z); lieferwagen.rotation.y = parkplatz.yaw; } } };
 }
