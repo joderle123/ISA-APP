@@ -7994,15 +7994,13 @@
           "symbol": "tipp",
           "titel": "So geht der Parcours",
           "punkte": [
-            "Immer zu zweit. An jeder Station liest eine Person die Karte vor.",
-            "Dann macht ihr die Übung, ohne zu reden. Gesprochen wird erst danach.",
-            "Beim Signal wechselt ihr im Uhrzeigersinn zur nächsten Station.",
-            "Stopp-Recht: Wer eine Station nicht machen möchte, wartet dort oder geht weiter."
+            "Immer zu zweit: Eine Person liest die Karte vor, dann macht ihr die Übung, ohne zu reden.",
+            "Beim Signal wechselt ihr im Uhrzeigersinn. Wer eine Station nicht machen möchte, wartet dort oder geht weiter."
           ]
         },
         {
           "art": "aufgabe",
-          "text": "Für die Leitung: Karten einmal ausschneiden, in Klarsichthüllen stecken und an den Stationen auslegen.",
+          "text": "Für die Leitung: Karten ausschneiden und in Klarsichthüllen an den Stationen auslegen.",
           "symbole": [
             "schneiden"
           ]
@@ -8053,7 +8051,7 @@
           "Parcours (60 Min.): etwa neun Minuten pro Station, Wechsel auf ein Signal. Danach malen die Jugendlichen auf dem Blatt „Achtsamkeits-Parcours“ ihren Balken aus.",
           "Nach dem Parcours: Welche Station geht auch im Pausenhof?"
         ],
-        "hintergrund": "Nach der Aufmerksamkeitserholungstheorie zieht Natur die Aufmerksamkeit sanft an, ohne sie zu beanspruchen; die willentliche Konzentration kann sich dabei erholen (Kaplan, 1995). Achtsamkeit heißt, den Moment absichtlich und ohne Bewertung wahrzunehmen (Kabat-Zinn, 1990); einzelne Sinne nacheinander in den Mittelpunkt zu stellen, macht das greifbar. Schulische Achtsamkeitsprogramme zeigen positive Effekte, besonders auf Konzentration und Stressbewältigung (Zenner et al., 2014). Die beiden Ruhe-Zahlen machen die Wirkung für die Jugendlichen selbst sichtbar.",
+        "hintergrund": "Nach der Aufmerksamkeitserholungstheorie zieht Natur die Aufmerksamkeit sanft an, ohne sie zu beanspruchen; die willentliche Konzentration kann sich dabei erholen (Kaplan, 1995). Achtsamkeit heißt, den Moment absichtlich und ohne Bewertung wahrzunehmen (Kabat-Zinn, 1990); einzelne Sinne nacheinander in den Mittelpunkt zu stellen, macht das greifbar. Schulische Achtsamkeitsprogramme zeigen positive Effekte, besonders auf Konzentration und Stressbewältigung (Zenner et al., 2014).",
         "quellen": [
           "Kaplan, S. (1995). The restorative benefits of nature: Toward an integrative framework. Journal of Environmental Psychology, 15(3), 169–182.",
           "Kabat-Zinn, J. (1990). Full Catastrophe Living. New York: Delacorte.",
@@ -8071,7 +8069,7 @@
           "Die Barfußstrecke am Morgen noch einmal auf Scherben, spitze Steine und Bienen im Klee prüfen.",
           "Bei zwei Leitungen bleibt eine am Barfußpfad."
         ],
-        "achtung": "Barfußgehen, Augenschließen und Liegen sind freiwillig. Die Barfußstrecke vorher prüfen, Allergien und Notfallmedikamente klären, nach dem Tag auf Zecken absuchen lassen. Fotos zeigen nur Natur.",
+        "achtung": "Barfußgehen, Augenschließen und Liegen sind freiwillig. Barfußstrecke vorher prüfen, Allergien und Notfallmedikamente klären, danach auf Zecken absuchen lassen. Fotos zeigen nur Natur.",
         "material": "Klarsichthüllen, Steine zum Beschweren, Würfel, Decken, Handtücher, Kamera der Einrichtung"
       }
     },
@@ -8084,15 +8082,13 @@
           "symbol": "tipp",
           "titel": "Comment se passe le parcours",
           "punkte": [
-            "Toujours à deux. À chaque station, l’un de vous lit la carte à voix haute.",
-            "Puis vous faites l’exercice sans parler. On ne parle qu’après.",
-            "Au signal, vous passez à la station suivante, dans le sens des aiguilles d’une montre.",
-            "Droit au stop : si tu ne veux pas faire une station, tu attends sur place ou tu continues."
+            "Toujours à deux : l’un lit la carte, puis vous faites l’exercice sans parler.",
+            "Au signal, vous changez de station dans le sens des aiguilles d’une montre. Tu peux aussi attendre ou passer."
           ]
         },
         {
           "art": "aufgabe",
-          "text": "Pour l’adulte : découper les cartes une fois, les glisser dans des pochettes transparentes et les poser aux stations.",
+          "text": "Pour l’adulte : découper les cartes et les poser aux stations dans des pochettes transparentes.",
           "symbole": [
             "schneiden"
           ]
@@ -8143,7 +8139,7 @@
           "Parcours (60 min) : environ neuf minutes par station, changement au signal. Ensuite, les jeunes colorient leur barre sur la fiche « Parcours de pleine conscience ».",
           "Après le parcours : quelle station marche aussi dans la cour de récréation ?"
         ],
-        "hintergrund": "Selon la théorie de la restauration de l’attention, la nature attire doucement l’attention sans la solliciter ; la concentration volontaire peut ainsi récupérer (Kaplan, 1995). La pleine conscience consiste à percevoir le moment de façon intentionnelle et sans jugement (Kabat-Zinn, 1990) ; placer tour à tour un sens au centre rend cela concret. Les programmes de pleine conscience à l’école montrent des effets positifs, surtout sur la concentration et la gestion du stress (Zenner et al., 2014). Les deux chiffres de calme rendent l’effet visible pour les jeunes eux-mêmes.",
+        "hintergrund": "Selon la théorie de la restauration de l’attention, la nature attire doucement l’attention sans la solliciter ; la concentration volontaire peut ainsi récupérer (Kaplan, 1995). La pleine conscience consiste à percevoir le moment de façon intentionnelle et sans jugement (Kabat-Zinn, 1990) ; placer tour à tour un sens au centre rend cela concret. Les programmes de pleine conscience à l’école montrent des effets positifs, surtout sur la concentration et la gestion du stress (Zenner et al., 2014).",
         "quellen": [
           "Kaplan, S. (1995). The restorative benefits of nature: Toward an integrative framework. Journal of Environmental Psychology, 15(3), 169–182.",
           "Kabat-Zinn, J. (1990). Full Catastrophe Living. New York: Delacorte.",
@@ -8161,7 +8157,7 @@
           "Le matin, vérifier encore une fois le sentier pieds nus : tessons, pierres pointues, abeilles dans le trèfle.",
           "S’il y a deux adultes, l’un reste au sentier pieds nus."
         ],
-        "achtung": "Marcher pieds nus, fermer les yeux et s’allonger sont facultatifs. Vérifier le chemin pieds nus à l’avance, clarifier allergies et médicaments d’urgence, faire vérifier l’absence de tiques après la journée. Les photos ne montrent que la nature.",
+        "achtung": "Marcher pieds nus, fermer les yeux et s’allonger restent facultatifs. Vérifier le sentier, clarifier allergies et médicaments d’urgence, faire contrôler les tiques après. Les photos ne montrent que la nature.",
         "material": "Pochettes transparentes, pierres pour lester, dé, couvertures, serviettes, appareil photo de l’établissement"
       }
     }
@@ -8352,10 +8348,10 @@
           "Woran merkt ihr in einer echten Prüfung, dass ihr hängen bleibt?"
         ],
         "tipps": [
-          "Lösungen A: 7 · Grün · Luxemburg · 8 · April · 60 · nicht lösbar · 25 · 11 · 6. Lösungen B: 12 · 25 · 3 · Montag · nicht lösbar · 18 · Belgien, Deutschland oder Frankreich · Winter · 5 · 60.",
-          "Keine Punkte ansagen und nichts einsammeln: Es geht nur um den Moment, in dem man hängen bleibt."
+          "Lösungen A: 7 · Grün · Luxemburg · 8 · April · 60 · nicht lösbar · 25 · 11 · 6. B: 12 · 25 · 3 · Montag · nicht lösbar · 18 · Belgien, Deutschland, Frankreich · Winter · 5 · 60.",
+          "Keine Punkte ansagen, nichts einsammeln."
         ],
-        "achtung": "Das Quiz bleibt ohne Bewertung. Ärgert sich jemand über die unlösbare Frage, den Ärger würdigen statt wegzureden. Nicht nach Noten fragen; zeigt sich starke Prüfungsangst, ein Einzelgespräch anbieten und auf SePAS oder Klassenlehrkraft hinweisen.",
+        "achtung": "Das Quiz bleibt ohne Bewertung. Ärger über die unlösbare Frage würdigen statt wegreden. Bei starker Prüfungsangst ein Einzelgespräch anbieten und auf SePAS oder Klassenlehrkraft hinweisen.",
         "material": "Klebeband, je Paar zwei Antwortzettel mit den Nummern 1 bis 10, Stifte, Stoppuhr"
       }
     },
@@ -8511,10 +8507,10 @@
           "Dans un vrai examen, à quoi remarquez-vous que vous restez bloqués ?"
         ],
         "tipps": [
-          "Réponses A : 7 · vert · Luxembourg · 8 · avril · 60 · impossible · 25 · 11 · 6. Réponses B : 12 · 25 · 3 · lundi · impossible · 18 · Belgique, Allemagne ou France · hiver · 5 · 60.",
-          "Ne pas annoncer de points ni ramasser les feuilles : seul compte le moment où l’on reste bloqué."
+          "Réponses A : 7 · vert · Luxembourg · 8 · avril · 60 · impossible · 25 · 11 · 6. B : 12 · 25 · 3 · lundi · impossible · 18 · Belgique, Allemagne, France · hiver · 5 · 60.",
+          "Ne pas annoncer de points, ne rien ramasser."
         ],
-        "achtung": "Le quiz reste sans évaluation. Si quelqu’un s’énerve à cause de la question impossible, reconnaître cet agacement au lieu de le minimiser. Ne pas demander les notes ; en cas de forte anxiété d’examen, proposer un entretien individuel et orienter vers le SePAS ou le ou la titulaire de classe.",
+        "achtung": "Le quiz reste sans évaluation. Reconnaître l’agacement face à la question impossible au lieu de le minimiser. En cas de forte anxiété d’examen, proposer un entretien individuel et orienter vers le SePAS ou le ou la titulaire.",
         "material": "Ruban adhésif, deux feuilles de réponses numérotées de 1 à 10 par binôme, stylos, chronomètre"
       }
     }
