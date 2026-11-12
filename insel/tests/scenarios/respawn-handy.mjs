@@ -75,6 +75,9 @@ try {
       // und der Knopf selbst geht auch
       if (d.blase && d.knopf) { await page.touchscreen.tap((d.knopf[0] + d.knopf[2]) / 2, (d.knopf[1] + d.knopf[3]) / 2); await page.waitForTimeout(900); const e = await lage(); check(`${name} · Tipp auf den Weiter-Knopf schaltet weiter`, e.text !== d.text || !e.blase, e); }
     }
+    // Leiste oben (Druck, Geld, Handy) und Pause-Knopf dürfen sich nicht überlappen
+    const oben = await page.evaluate(() => { const l = document.querySelector('.rs-leiste'), p = document.querySelector('.hud-menu-btn'); if (!l || !p) return null; const a = l.getBoundingClientRect(), b = p.getBoundingClientRect(); return { leisteRechts: Math.round(a.right), pauseLinks: Math.round(b.left), leisteLinks: Math.round(a.left) }; });
+    check(`${name} · Leiste oben berührt den Pause-Knopf nicht`, !!oben && oben.leisteRechts <= oben.pauseLinks && oben.leisteLinks >= 0, oben);
     // Einmal bis zum Ende durchspielen (nur schlafen): Auch der Abschluss mit Akte muss am Handy bedienbar sein
     if (vp.width === 412) {
       const ende = await page.evaluate(() => new Promise((resolve) => {

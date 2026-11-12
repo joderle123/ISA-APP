@@ -163,4 +163,6 @@ export const STIL = `
 .rs-kz .rs-knoepfe button,.rs-ende .rs-knoepfe button{flex:1 1 30%;min-height:48px;padding-left:8px;padding-right:8px;}
 }
 @media (max-width:560px){.rs-leiste{gap:7px;font-size:14px;padding-left:10px;left:max(10px,env(safe-area-inset-left));transform:none;transition:none;max-width:calc(100vw - 92px)}.rs-jz{display:none}.rs-karte{flex-basis:100%;max-width:none}}
+/* Sehr schmale Handys (360 px): Die Leiste darf den Pause-Knopf rechts nicht berühren – Balken kürzer, Abstände kleiner */
+@media (max-width:400px){.rs-leiste{gap:5px;padding:6px 6px 6px 10px;max-width:calc(100vw - 100px)}.rs-druck{gap:5px}.rs-druck i{width:44px}.rs-druck b{letter-spacing:0}}
 `;
