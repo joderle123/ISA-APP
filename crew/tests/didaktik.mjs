@@ -18,7 +18,8 @@ try {
   await page.waitForFunction(() => window.CREW && window.CREW.didaktik && window.CREW.games, null, { timeout: 5000 });
   const data = await page.evaluate(() => ({
     d: window.CREW.didaktik,
-    games: window.CREW.games.all.map((g) => g.id),
+    // Partyspiele („Schnell & lustig“) haben bewusst keinen Lehr-Rahmen
+    games: window.CREW.games.all.filter((g) => g.theme !== 'party').map((g) => g.id),
     missions: window.CREW.missions.map((m) => m.id),
     solo: window.CREW.soloGames.map((s) => s.id),
   }));

@@ -5,8 +5,9 @@
 const fs = require('fs');
 const path = require('path');
 
-/* Feste Kurznamen (Slugs) der acht Themen – so heißen auch die Ordner unter src/games/<slug>/ */
+/* Feste Kurznamen (Slugs) der Themen: „Schnell & lustig“ (Partyspiele ohne Lehr-Rahmen) und die acht Kurs-Themen – so heißen auch die Ordner unter src/games/<slug>/ */
 const THEME_SLUGS = {
+  'Schnell & lustig': 'party',
   'Ankommen & Crew': 'ankommen',
   'Ich: Bedürfnisse & Stärken': 'ich',
   'Gefühle verstehen': 'gefuehle',

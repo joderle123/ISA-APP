@@ -106,6 +106,143 @@
   ],
   "themen": [
     {
+      "name": "Schnell & lustig",
+      "spiele": [
+        {
+          "id": "zuendschnur",
+          "name": "Zündschnur",
+          "format": "Gerät weitergeben",
+          "dauer": "3–5 Min",
+          "text": "Sag etwas Passendes und gib schnell weiter. Die Lunte brennt unsichtbar – wer das iPad beim Knall hält, bekommt den Brandfleck. Drei Runden, gezählt werden die Antworten vor dem Knall.",
+          "foerdert": "Schnell abrufen, unter Zeitdruck ruhig bleiben, fair verlieren (K-21, SOZ-28)",
+          "einheiten": [],
+          "abschluss": false,
+          "top": false,
+          "aufwand": "S"
+        },
+        {
+          "id": "geheimauftrag",
+          "name": "Geheimauftrag",
+          "format": "Gerät weitergeben",
+          "dauer": "6–8 Min",
+          "text": "Jede Person bekommt einen albernen Geheimauftrag (dreimal „genau“ sagen, sich ans Ohr fassen …). Zwei Minuten wird über ein lustiges Thema geredet, danach rät die Crew, wer welchen Auftrag hatte.",
+          "foerdert": "Beobachten, Impulse steuern, sich in der Gruppe einigen (SOZ-30, V-18)",
+          "einheiten": [],
+          "abschluss": false,
+          "top": false,
+          "aufwand": "S"
+        },
+        {
+          "id": "zwei-wahrheiten",
+          "name": "2 Wahrheiten, 1 Lüge",
+          "format": "Gerät weitergeben",
+          "dauer": "5–8 Min",
+          "text": "Jede Person bekommt ein harmloses Thema und erzählt zwei wahre Sachen und eine Lüge. Die anderen zeigen mit Fingern, was gelogen war. Punkte gibt es fürs Reinlegen.",
+          "foerdert": "Sich kennenlernen, vor anderen sprechen, Gesichter lesen (K-24, SOZ-22)",
+          "einheiten": [],
+          "abschluss": false,
+          "top": false,
+          "aufwand": "S"
+        },
+        {
+          "id": "notfall-pitch",
+          "name": "Notfall-Pitch",
+          "format": "Gerät weitergeben",
+          "dauer": "5–8 Min",
+          "text": "Ein verrückter Notfall („Ein Lama blockiert den Schulflur“), ein zufälliger Gegenstand, 20 Sekunden: Wie rettest du alle? Die Crew stimmt mit dem Daumen ab.",
+          "foerdert": "Frei sprechen, Ideen entwickeln, Rückmeldung annehmen (K-26, KOG-31)",
+          "einheiten": [],
+          "abschluss": false,
+          "top": false,
+          "aufwand": "S"
+        },
+        {
+          "id": "sags-mal-so",
+          "name": "Sag’s mal so",
+          "format": "Gerät weitergeben",
+          "dauer": "5–7 Min",
+          "text": "Ein ganz normaler Satz, eine geheime Art („wie ein Roboter“, „total verliebt“). Die Crew rät aus vier Möglichkeiten, wie der Satz gemeint war.",
+          "foerdert": "Tonfall und Körpersprache einsetzen und lesen (K-22, E-14)",
+          "einheiten": [],
+          "abschluss": false,
+          "top": false,
+          "aufwand": "S"
+        },
+        {
+          "id": "gleicher-kopf",
+          "name": "Gleicher Kopf?",
+          "format": "Zu zweit an einem iPad",
+          "dauer": "2–3 Min",
+          "text": "Das iPad liegt zwischen zwei Personen. Beide tippen gleichzeitig: Pizza oder Döner? Meer oder Berge? Gleich getippt gibt einen Punkt – 60 Sekunden lang.",
+          "foerdert": "Andere einschätzen, aushalten, dass andere anders wählen (SOZ-24)",
+          "einheiten": [],
+          "abschluss": false,
+          "top": false,
+          "aufwand": "S"
+        },
+        {
+          "id": "nicht-zucken",
+          "name": "Nicht zucken!",
+          "format": "Zu zweit an einem iPad",
+          "dauer": "2–3 Min",
+          "text": "Reaktions-Duell: erst bei Grün tippen. Rot ist eine Falle – wer zuckt, schenkt den Punkt her. Die schnellste Reaktion wird in Millisekunden gemessen.",
+          "foerdert": "Impulse bremsen, abwarten, fair verlieren (V-16, SOZ-28)",
+          "einheiten": [],
+          "abschluss": false,
+          "top": false,
+          "aufwand": "S"
+        },
+        {
+          "id": "fehler-im-bild",
+          "name": "Fehler im Bild",
+          "format": "Zu zweit an einem iPad",
+          "dauer": "2–4 Min",
+          "text": "Viele gleiche Zeichen, eines ist anders. Wer es zuerst antippt, punktet; wer falsch tippt, pausiert zwei Sekunden. Wer zuerst fünf Punkte hat, gewinnt.",
+          "foerdert": "Genau hinsehen, erst schauen, dann handeln (KOG-22, V-16)",
+          "einheiten": [],
+          "abschluss": false,
+          "top": false,
+          "aufwand": "S"
+        },
+        {
+          "id": "treffer",
+          "name": "Treffer",
+          "format": "Gerät weitergeben",
+          "dauer": "6–8 Min",
+          "text": "Eine Person sieht ein Ziel auf einer Skala (eiskalt bis kochend heiß) und nennt ein Beispiel, das genau dort liegt. Die Crew stellt gemeinsam den Regler – nah dran gibt Punkte.",
+          "foerdert": "Sich in andere hineindenken, sich einigen (SOZ-26, K-23)",
+          "einheiten": [],
+          "abschluss": false,
+          "top": false,
+          "aufwand": "S"
+        },
+        {
+          "id": "seitenwechsel",
+          "name": "Seitenwechsel",
+          "format": "Bewegung im Raum",
+          "dauer": "6–8 Min",
+          "text": "Lieber fliegen können oder unsichtbar sein? Alle stellen sich an ihre Wand. Die kleinere Gruppe hat 20 Sekunden, um andere herüberzuholen – jeder Wechsel zählt.",
+          "foerdert": "Meinung vertreten, überzeugen statt überstimmen, Unterschiede aushalten (K-27, SOZ-31)",
+          "einheiten": [],
+          "abschluss": false,
+          "top": false,
+          "aufwand": "S"
+        },
+        {
+          "id": "jagd",
+          "name": "Jagd",
+          "format": "Bewegung im Raum",
+          "dauer": "4–6 Min",
+          "text": "Fünf Dinge müssen zum iPad: etwas Rundes, etwas mit einer Zahl, etwas, das klappert … 60 Sekunden pro Runde, drei Runden.",
+          "foerdert": "Zusammen arbeiten, Aufgaben verteilen, in Bewegung kommen (SOZ-27, UM-12)",
+          "einheiten": [],
+          "abschluss": false,
+          "top": false,
+          "aufwand": "S"
+        }
+      ]
+    },
+    {
       "name": "Ankommen & Crew",
       "spiele": [
         {

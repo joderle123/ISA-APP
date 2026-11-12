@@ -89,5 +89,35 @@
     return ctx.next(wrap, oo.label || 'Gemerkt – verstecken', { id: 'btn-versteckt' });
   };
 
+  /* Große Karte in der Mitte: kleine Zeile, großer Satz, Zusatz */
+  P.karte = (klein, gross, extra, o) => h('div', { class: 'p-karte' + (o && o.cls ? ' ' + o.cls : '') },
+    klein ? h('span', { class: 'eyebrow' }, klein) : null,
+    h('p', { class: o && o.mittel ? 'p-mittel' : 'p-gross' }, gross),
+    extra || null);
+
+  /* Liste großer Knöpfe untereinander (lange Texte). → Index der Wahl. Auto: zufällig (oder o.autoIndex). */
+  P.liste = (ctx, wrap, texte, o) => {
+    const oo = o || {};
+    return ctx.waitFor(new Promise((resolve) => {
+      const box = h('div', { class: 'p-liste', id: oo.id || 'p-liste' });
+      texte.forEach((t, i) => {
+        const b = h('button', { type: 'button', 'data-i': String(i) }, h('b', null, String.fromCharCode(65 + i)), h('span', null, t));
+        b.addEventListener('click', () => { CREW.sound.play('tap'); box.querySelectorAll('button').forEach((x) => (x.disabled = true)); resolve(i); });
+        box.appendChild(b);
+      });
+      (oo.slot || wrap).appendChild(box);
+      CREW.ui.revealRow(box);
+      if (ctx.auto) setTimeout(() => { const i = oo.autoIndex != null ? oo.autoIndex : Math.floor(ctx.autoRng() * texte.length); const b = box.querySelectorAll('button')[i]; if (b && b.isConnected && !b.disabled) b.click(); }, Math.max(40, window.__crewAutoDelay || 0));
+    }));
+  };
+
+  /* Zeit ODER Knopf: Balken läuft, ein Knopf beendet früher. → 'zeit' | Knopfwert | SKIP */
+  P.zeitOderKnopf = (ctx, wrap, sekunden, knoepfe, o) => {
+    const oo = o || {};
+    const bk = P.balken(ctx, sekunden, { auto: oo.auto });
+    (oo.slot || wrap).appendChild(bk.el);
+    return Promise.race([bk.promise, ctx.ask(wrap, knoepfe, oo)]).then((v) => { bk.stop(); return v; });
+  };
+
   CREW.party = P;
 })();

@@ -22,7 +22,7 @@
      ========================================================= */
   const GAMES = [];
   const BY_ID = {};
-  const THEME_ICON = { ankommen: 'users', ich: 'star', gefuehle: 'heart', skills: 'leaf', gedanken: 'sparkle', kommunikation: 'chat', konflikt: 'shield', digital: 'phone' };
+  const THEME_ICON = { party: 'bolt', ankommen: 'users', ich: 'star', gefuehle: 'heart', skills: 'leaf', gedanken: 'sparkle', kommunikation: 'chat', konflikt: 'shield', digital: 'phone' };
   const TEMPLATE_OF_FORMAT = { solo: 'T0', 'solo-austausch': 'T1', rollen: 'T2', 'zu-zweit': 'T3', bewegung: 'T4', weitergeben: 'T5', beamer: 'T6' };
   const TEMPLATE_NAME = { T0: 'Solo', T1: 'Solo + Austausch', T2: 'Rollen-Puzzle', T3: 'Zu zweit an einem iPad', T4: 'Bewegung im Raum', T5: 'Gerät weitergeben', T6: 'Beamer-Gruppe' };
 
@@ -787,16 +787,30 @@
       const oo = o || {};
       const g = ctx.game;
       const st = oo.noSticker ? null : award(g.id);
+      // Punkte und Crew-Rekord (Spiele, die `score` liefern): bester Wert bleibt auf diesem Gerät, ohne Namen
+      let rek = null;
+      if (typeof oo.score === 'number' && !oo.noSticker) {
+        const R = (CREW.state.spielRekorde = CREW.state.spielRekorde || {});
+        const alt = R[g.id];
+        const besser = !alt || (oo.kleiner ? oo.score < alt.best : oo.score > alt.best);
+        rek = { neu: besser && (!!alt || oo.score > 0), alt: alt ? alt.best : null };
+        R[g.id] = { best: besser ? oo.score : alt.best, n: (alt ? alt.n : 0) + 1, einheit: oo.einheit || '', kleiner: !!oo.kleiner };
+        CREW.save();
+      }
       const wrap = ctx.scr([
         h('div', { class: 'stack', style: { alignItems: 'center', textAlign: 'center' } },
-          h('h2', null, ctx.unterricht ? (oo.summary || 'Stark gespielt, Crew!') : 'Runde vorbei!'),
-          (oo.stats || []).length ? h('div', { class: 'row center' }, oo.stats.map(([n, l]) => h('span', { class: 'pill' }, h('b', null, String(n)), ' ' + l))) : null,
+          h('h2', null, ctx.unterricht ? (oo.summary || 'Stark gespielt, Crew!') : (rek && oo.summary ? oo.summary : 'Runde vorbei!')),
+          rek ? h('div', { class: 'p-rekord', id: 'p-rekord' },
+            h('b', { class: 'display p-zahl' }, String(oo.score)),
+            h('span', { class: 'p-mittel' }, oo.einheit || 'Punkte'),
+            rek.neu ? h('span', { class: 'neu' }, 'Neuer Crew-Rekord!') : (rek.alt !== null ? h('span', { class: 'muted' }, 'Crew-Rekord: ' + rek.alt) : null)) : null,
+          (oo.stats || []).length && !(rek && oo.stats.length === 1) ? h('div', { class: 'row center' }, oo.stats.map(([n, l]) => h('span', { class: 'pill' }, h('b', null, String(n)), ' ' + l))) : null,
           oo.noSticker || !ctx.unterricht ? null : skillRow(ctx.didaktik),
           st ? h('div', { class: 'stack pop', style: { alignItems: 'center', gap: '6px' } }, stickerEl(st, { big: true }), h('span', { class: 'muted small' }, st.isNew ? 'Neuer Sticker für die Sticker-Wand im Crew-HQ!' : 'Sticker ×' + st.n + ' auf der Sticker-Wand.')) : null,
           oo.extra || null),
         g.help || oo.help ? helpCard() : null,
       ], { eyebrow: 'Fertig', center: true, noPass: true });
-      if (st) { CREW.sound.play('good'); if (st.isNew && !ctx.fast) U().confetti(90); }
+      if (st) { CREW.sound.play(rek && rek.neu ? 'great' : 'good'); if ((st.isNew || (rek && rek.neu)) && !ctx.fast) U().confetti(90); }
       // Spiel-Modus: „Nochmal“ ist der Hauptknopf (neue Runde, neu gewürfelt); im Unterrichts-Modus nur, wo das Spiel es anbietet
       const opts = ctx.unterricht || oo.noSticker
         ? [{ label: 'Zurück zu Spiele', value: 'done', iconRight: 'home', id: 'btn-done' }]
@@ -976,28 +990,56 @@
     ]);
   }
   // Hub: alle Spiele nach Thema
+  /* Spiel-Modus: was Jugendliche zuerst sehen. „Schnell & lustig“ (Partyspiele) ganz oben, darunter die Spiele aus dem Kurs,
+     die auch ohne Unterricht tragen (Prüfung vom 12.11.2026). Alles andere sind Übungen für die Stunde: eingeklappt,
+     im Unterrichts-Modus wie bisher nach Thema. */
+  const AUCH_SPASS = ['pilot-navigator', 'stummer-aufbau', 'stillepost', 'pegel-reihe', 'undercover', 'fruehwarn', 'innen-aussen', 'uebersetzer', 'dealoderkein',
+    'trick-erkannt', 'sinnesjagd', 'haltungs-switch', 'sorrywerkstatt', 'erster-eindruck', 'staerke-einsatz', 'mixer', 'funkstille', 'gerecht-oder-gleich'];
+  let hubAlle = false;
+  const unterrichtAn = () => !!((CREW.state && CREW.state.settings && CREW.state.settings.unterricht) || window.__crewUnterricht);
+  function hubKachel(id) {
+    const K = CREW.katalog, k = K.spiele[id], g = get(id);
+    if (!k) return null;
+    const fmt = K.formate.find((f) => f.id === k.format) || {};
+    const rek = (CREW.state.spielRekorde || {})[id];
+    const tile = h('button', { type: 'button', class: 'tile hub-tile' + (g ? '' : ' soon'), 'data-game': id, disabled: !g },
+      h('span', { class: 't-title' }, k.name),
+      h('span', { class: 't-sub' }, fmt.name + ' · ' + k.dauer + (g ? '' : ' · bald')),
+      rek ? h('span', { class: 't-sub t-rek' }, 'Crew-Rekord: ' + rek.best) : null);
+    if (g) tile.addEventListener('click', () => { CREW.sound.play('tap'); startFromUi(id); });
+    return tile;
+  }
+  function hubThema(t, i) {
+    return h('div', { class: 'card stack hub-theme enter-' + Math.min(3, i + 1) + (t.id === 'party' ? ' hub-party' : ''), 'data-theme': t.id },
+      h('div', { class: 'row between' }, h('div', { class: 'row', style: { gap: '8px' } }, h('span', { class: 'game-ic', 'data-theme': t.id }, CREW.icon(THEME_ICON[t.id] || 'star', 24)), h('h3', null, t.name)), h('span', { class: 'pill' }, t.spiele.length + ' Spiele')),
+      h('div', { class: 'hub-games' }, t.spiele.map(hubKachel)));
+  }
   function renderHub() {
     if (CREW.app && CREW.app.endRun) CREW.app.endRun();
     const K = CREW.katalog;
     const built = list().length;
     const total = Object.keys(K.spiele).length;
+    const alle = unterrichtAn() || hubAlle;
+    const kopf = h('div', { class: 'row between enter' },
+      h('div', { class: 'stack', style: { gap: '4px' } }, h('span', { class: 'eyebrow' }, built + ' von ' + total + ' Spielen spielbar'), h('h1', { class: 'outline-text' }, 'Spiele')),
+      h('div', { class: 'row' }, ui().btn('Finder', () => renderFinder(), { variant: 'ghost', small: true, icon: 'help', id: 'btn-finder' }), ui().btn('Start', () => CREW.app.renderHome(), { variant: 'ghost', small: true, icon: 'home' })));
+    if (alle) {
+      ui().screen([
+        kopf,
+        h('p', { class: 'lead muted enter-2' }, 'Nach Thema. Jedes Spiel redet über Figuren, nie über dich. Pass ist immer okay.'),
+        K.themen.map(hubThema),
+        unterrichtAn() ? null : h('div', { class: 'row center' }, ui().btn('Nur die Spiele zeigen', () => { hubAlle = false; renderHub(); }, { variant: 'ghost', small: true, id: 'btn-hub-weniger' })),
+      ]);
+      return;
+    }
+    const party = K.themen.find((t) => t.id === 'party');
+    const mehr = { id: 'mehr', name: 'Mehr Spiele', spiele: AUCH_SPASS.filter((id) => K.spiele[id]) };
     ui().screen([
-      h('div', { class: 'row between enter' },
-        h('div', { class: 'stack', style: { gap: '4px' } }, h('span', { class: 'eyebrow' }, built + ' von ' + total + ' Spielen spielbar'), h('h1', { class: 'outline-text' }, 'Spiele')),
-        h('div', { class: 'row' }, ui().btn('Finder', () => renderFinder(), { variant: 'ghost', small: true, icon: 'help', id: 'btn-finder' }), ui().btn('Start', () => CREW.app.renderHome(), { variant: 'ghost', small: true, icon: 'home' }))),
-      h('p', { class: 'lead muted enter-2' }, 'Nach Thema. Jedes Spiel redet über Figuren, nie über dich. Pass ist immer okay.'),
-      K.themen.map((t, i) => h('div', { class: 'card stack hub-theme enter-' + Math.min(3, i + 1), 'data-theme': t.id },
-        h('div', { class: 'row between' }, h('div', { class: 'row', style: { gap: '8px' } }, h('span', { class: 'game-ic', 'data-theme': t.id }, CREW.icon(THEME_ICON[t.id] || 'star', 24)), h('h3', null, t.name)), h('span', { class: 'muted small' }, t.spiele.filter((id) => get(id)).length + '/' + t.spiele.length)),
-        h('div', { class: 'hub-games' }, t.spiele.map((id) => {
-          const k = K.spiele[id];
-          const g = get(id);
-          const fmt = K.formate.find((f) => f.id === k.format) || {};
-          const tile = h('button', { type: 'button', class: 'tile hub-tile' + (g ? '' : ' soon'), 'data-game': id, disabled: !g },
-            h('span', { class: 't-title' }, k.name),
-            h('span', { class: 't-sub' }, fmt.name + ' · ' + k.dauer + (g ? '' : ' · bald')));
-          if (g) tile.addEventListener('click', () => { CREW.sound.play('tap'); startFromUi(id); });
-          return tile;
-        })))),
+      kopf,
+      h('p', { class: 'lead muted enter-2' }, 'Aussuchen, antippen, los. Pass ist immer okay.'),
+      party ? hubThema(party, 0) : null,
+      hubThema(mehr, 1),
+      h('div', { class: 'row center' }, ui().btn('Übungen aus dem Kurs zeigen (' + (total - (party ? party.spiele.length : 0) - mehr.spiele.length) + ')', () => { hubAlle = true; renderHub(); }, { variant: 'ghost', small: true, id: 'btn-hub-alle' })),
     ]);
   }
   // Lehrer-Panel: Tagescode, Basis-URL, Finder mit QR

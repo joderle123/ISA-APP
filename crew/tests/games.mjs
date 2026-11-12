@@ -86,7 +86,7 @@ for (const [vpName, vp] of [['ipadLandscape', VIEWPORTS.ipadLandscape], ['beamer
   meta.forEach((m) => {
     expect(m.inKatalog, `${m.id}: nicht im Katalog (docs/spielekatalog.json)`);
     expect(/^T[0-6]$/.test(m.template), `${m.id}: Vorlage fehlt`);
-    expect(m.units > 0, `${m.id}: keine Einheit j1-eXX`);
+    expect(m.units > 0 || m.theme === 'party', `${m.id}: keine Einheit j1-eXX`);   // Partyspiele gehören zu keiner Kurs-Einheit
     expect(m.eldib > 0, `${m.id}: keine ELDiB-Codes`);
   });
   const timings = [];
@@ -114,13 +114,18 @@ for (const [vpName, vp] of [['ipadLandscape', VIEWPORTS.ipadLandscape], ['beamer
     // Hub & Finder
     await page.evaluate(() => window.CREW.games.renderHub());
     await page.locator('.hub-theme').first().waitFor();
-    expect(await page.locator('.hub-theme').count() === 8, 'hub: 8 Themen erwartet');
+    // Spiel-Modus zeigt zuerst nur „Schnell & lustig“ und „Mehr Spiele“; die Übungen aus dem Kurs sind eingeklappt
+    expect(await page.locator('.hub-theme').count() === 2, 'hub (Spiel-Modus): 2 Blöcke erwartet');
+    expect((await page.locator('.hub-theme').first().getAttribute('data-theme')) === 'party', 'hub (Spiel-Modus): „Schnell & lustig“ steht nicht oben');
+    await page.locator('#btn-hub-alle').click();
+    await page.locator('#btn-hub-weniger').waitFor();
+    expect(await page.locator('.hub-theme').count() === 9, 'hub: 9 Themen erwartet (Schnell & lustig + 8 Kurs-Themen)');
     expect(ONLY || (await page.locator('.hub-tile:not(.soon)').count()) === ids.length, 'hub: spielbare Kacheln ≠ registrierte Spiele');
     await shot(page, 'games-hub');
     problems.push(...await layoutCheck(page, 'hub'));
     await page.locator('#btn-finder').click();
     await page.locator('#finder-unit').waitFor();
-    expect(await page.locator('.game-row').count() === 62, 'finder: 62 Spiele erwartet');
+    expect(await page.locator('.game-row').count() === 73, 'finder: 73 Spiele erwartet (62 Kurs-Spiele + 11 Partyspiele)');
     await page.selectOption('#finder-unit', 'j1-e07');
     await page.waitForTimeout(150);
     expect(await page.locator('.unit-card').count() === 1, 'finder: Einheiten-Karte fehlt');

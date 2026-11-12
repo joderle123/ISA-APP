@@ -25,8 +25,8 @@
 @keyframes p-puls { 50% { transform: scale(1.09); } }
 @keyframes p-funke { 50% { transform: scale(1.35) rotate(40deg); opacity: .8; } }
 /* Zu zweit: zwei Hälften, oben gedreht */
-.p-duell { display: grid; grid-template-rows: 1fr auto 1fr; gap: 10px; min-height: 68dvh; width: 100%; }
-.p-seite { border-radius: var(--radius); border: var(--bw) solid var(--line); background: var(--panel); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; padding: 14px; min-height: 26dvh; touch-action: manipulation; user-select: none; -webkit-user-select: none; }
+.p-duell { display: grid; grid-template-rows: minmax(0, 1fr) auto minmax(0, 1fr); gap: 8px; height: calc(100dvh - 215px); min-height: 380px; width: 100%; }
+.p-seite { border-radius: var(--radius); border: var(--bw) solid var(--line); background: var(--panel); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; padding: 12px; min-height: 0; overflow: hidden; touch-action: manipulation; user-select: none; -webkit-user-select: none; }
 .p-seite.oben { transform: rotate(180deg); }
 .p-seite.a { border-color: var(--teamA); } .p-seite.b { border-color: var(--teamB); }
 .p-seite.warte { background: #23263a; color: #fff; }
@@ -36,10 +36,10 @@
 .p-seite.gesperrt { opacity: .35; }
 .p-mitte { display: flex; align-items: center; justify-content: center; gap: 14px; }
 .p-wahl { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; width: 100%; }
-.p-wahl button { min-height: 76px; font-size: clamp(1.1em, 2.6vw, 1.7em); font-weight: 800; border-radius: var(--radius); border: var(--bw) solid var(--line); background: var(--bg); color: var(--ink); padding: 10px; }
+.p-wahl button { min-height: 76px; font-size: clamp(1.1em, 2.6vw, 1.7em); font-weight: 800; border-radius: var(--radius); border: var(--bw) solid var(--line); background: var(--bg); color: var(--text); padding: 10px; }
 .p-wahl button:active { transform: scale(.97); }
-.p-gitter { display: grid; gap: 6px; width: 100%; max-width: 560px; }
-.p-gitter button { aspect-ratio: 1; min-height: 34px; font-size: clamp(1em, 3vw, 1.7em); font-weight: 800; border-radius: 10px; border: var(--bw) solid var(--line); background: var(--bg); color: var(--ink); padding: 0; }
+.p-gitter { display: grid; gap: 6px; width: 100%; max-width: min(560px, 42dvh); }
+.p-gitter button { aspect-ratio: 1; min-height: 0; font-size: clamp(1em, 3vw, 1.7em); font-weight: 800; border-radius: 10px; border: var(--bw) solid var(--line); background: var(--bg); color: var(--text); padding: 0; }
 .p-gitter button.treffer { background: var(--good); color: var(--good-ink); }
 /* Skala (Treffer) */
 .p-skala { width: 100%; max-width: 820px; display: flex; flex-direction: column; gap: 8px; }
@@ -50,7 +50,7 @@
 .p-skala-nadel { position: absolute; top: -4px; bottom: -4px; width: 8px; border-radius: 4px; background: var(--ink); transform: translateX(-50%); box-shadow: 0 0 0 3px var(--yellow); }
 .p-skala input[type="range"] { width: 100%; height: 54px; accent-color: var(--yellow); }
 .p-liste { display: grid; gap: 10px; width: 100%; max-width: 760px; }
-.p-liste button { display: flex; align-items: center; gap: 12px; text-align: left; min-height: 60px; padding: 10px 16px; font-size: clamp(1.05em, 2.2vw, 1.4em); font-weight: 700; border-radius: var(--radius); border: var(--bw) solid var(--line); background: var(--panel); color: var(--ink); }
+.p-liste button { display: flex; align-items: center; gap: 12px; text-align: left; min-height: 60px; padding: 10px 16px; font-size: clamp(1.05em, 2.2vw, 1.4em); font-weight: 700; border-radius: var(--radius); border: var(--bw) solid var(--line); background: var(--panel); color: var(--text); }
 .p-liste button.an { background: var(--good); color: var(--good-ink); }
 .p-liste button.richtig { background: var(--good); color: var(--good-ink); }
 .p-liste button.falsch { background: var(--teamB); color: var(--teamB-ink); }

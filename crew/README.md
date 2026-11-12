@@ -100,6 +100,34 @@ Look, Crew-Name, Ton und Vorlesen einstellen und den Fortschritt sichern.
 - **Sichern:** Lehrermodus → „Fortschritt“ → Sicherungscode kopieren oder als Datei speichern.
   Auf einem anderen Gerät unter „Laden“ einfügen.
 
+## Spiel-Modus und Partyspiele („Schnell & lustig“)
+
+Rückmeldung aus der Praxis (12.11.2026): Viele Spiele wirkten „erzwungen“ – zu viel Erklärung, zu viel Nachbesprechung.
+Darum startet CREW im **Spiel-Modus**: ein Satz Regel, spielen, am Ende „Nochmal“. Keine Erklärkarte, keine Stufen-
+Bildschirme, keine Nachbesprechung. Wer mit der Klasse arbeitet, schaltet im Lehrermodus den **Unterrichts-Modus** ein –
+dann ist alles wie bisher.
+
+Die Spiele-Liste zeigt im Spiel-Modus zuerst **elf Partyspiele** ohne Lehr-Rahmen, darunter „Mehr Spiele“ (die 18 Kurs-
+Spiele, die auch so tragen). Die übrigen Übungen aus dem Kurs sind eingeklappt.
+
+| Spiel | So geht’s | Format |
+| --- | --- | --- |
+| Zündschnur | Schnell etwas Passendes sagen und weitergeben – die Lunte brennt unsichtbar | iPad wandert |
+| Geheimauftrag | Alberner Geheimauftrag, zwei Minuten reden, dann rät die Crew | iPad wandert |
+| 2 Wahrheiten, 1 Lüge | Zwei wahre Sachen, eine Lüge – wer fällt rein? | iPad wandert |
+| Notfall-Pitch | Verrückter Notfall, ein Gegenstand, 20 Sekunden | iPad wandert |
+| Sag’s mal so | Ein normaler Satz auf eine geheime Art – die Crew rät | iPad wandert |
+| Treffer | Ein Beispiel nennen, die Crew stellt den Regler | iPad wandert |
+| Gleicher Kopf? | Beide tippen gleichzeitig: Pizza oder Döner? | zu zweit |
+| Nicht zucken! | Erst bei Grün tippen – Rot ist eine Falle | zu zweit |
+| Fehler im Bild | Ein Zeichen ist anders – wer findet es zuerst? | zu zweit |
+| Seitenwechsel | Lieber A oder B? Die kleinere Gruppe holt Leute herüber | Bewegung |
+| Jagd | Fünf Dinge in 60 Sekunden zum iPad bringen | Bewegung |
+
+Jedes Partyspiel zählt Punkte; der beste Wert bleibt als **Crew-Rekord** auf dem Gerät (ohne Namen) und steht auf der
+Kachel. Was die Spiele nebenbei üben, steht im Finder (Lehrkraft). Dateien: `src/games/party/` (Bausteine in `00-kit.js`),
+Test: `node tests/party.mjs`.
+
 ## Spiele (Spielekatalog Jahr 1)
 
 Neben den fünf Missionen gibt es den Bereich **Spiele**: 62 Spiele in 8 Themen aus `docs/spielekatalog.json`,

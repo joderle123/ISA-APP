@@ -8,7 +8,7 @@ const H = require(path.join(path.dirname(fileURLToPath(import.meta.url)), '..', 
 const problems = [];
 const expect = (c, m) => { if (!c) problems.push(m); };
 
-expect(Object.keys(H.katalog.spiele).length === 62, 'Katalog hat 62 Spiele');
+expect(Object.keys(H.katalog.spiele).length === 73, 'Katalog hat 73 Spiele (62 Kurs-Spiele + 11 Partyspiele)');
 expect(H.katalog.gebaut >= 28, 'mindestens 28 gebaute Spiele markiert');
 // Jede Einheit bekommt ein gebautes Spiel – nie ein toter Link
 H.katalog.einheiten.forEach((e) => { const s = H.suggest({ einheit: e.id, max: 1 }); expect(s.length === 1 && s[0].gebaut, 'Einheit ' + e.id + ' hat ein gebautes Spiel'); });

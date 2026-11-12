@@ -75,6 +75,11 @@
       noise(0.55, 0.5, 0.12, 3000, 8000);
     },
     drum: () => { for (let i = 0; i < 14; i++) tone(120 + (i % 2) * 20, i * 0.06, 0.05, 'triangle', 0.25 + i * 0.015); },
+    // Partyspiele: daneben, Stempel, Treffer in Serie, Knall
+    fail: () => { tone(220, 0, 0.16, 'sawtooth', 0.22, 150); tone(140, 0.12, 0.28, 'sawtooth', 0.22, 90); },
+    stamp: () => { noise(0, 0.08, 0.3, 200, 900); tone(180, 0, 0.12, 'square', 0.25, 90); },
+    combo: () => [659, 784, 988, 1318].forEach((f, i) => tone(f, i * 0.05, 0.14, 'square', 0.18)),
+    boom: () => { noise(0, 0.7, 0.55, 900, 60); tone(90, 0, 0.5, 'sine', 0.6, 35); },
     breatheIn: () => tone(220, 0, 3.8, 'sine', 0.12, 330),
     breatheOut: () => tone(330, 0, 5.5, 'sine', 0.1, 196),
   };
