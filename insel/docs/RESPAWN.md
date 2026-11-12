@@ -59,6 +59,10 @@ man darf fast alles tun (auch Mist), keine Waffen, kein Gefängnis. Die Folgen s
   - **Handy (Meldung 12.11., 22 Uhr):** „Deine Karten“ war höher als das Bild, der Knopf unten nicht erreichbar, Wischen
     ging nicht. Alle vollen Bildschirme (`.rs-voll`) sind jetzt `.ov-scroll` (Wischen erlaubt), beginnen oben, die Karten
     stehen am Handy als flache Zeilen und die Knöpfe bleiben unten sichtbar. Test: `tests/scenarios/respawn-handy.mjs`.
+  - **Durchatmen** (`oberflaeche.js` → `atmen`, Szenen-Schritt `['atem', { zuege }, (ergebnis) => Schritte]`): Finger halten =
+    einatmen, loslassen = ausatmen, drei Züge. Wird angeboten, wenn zu viel Druck eine ruhige Antwort sperrt („Erst
+    durchatmen.“, einmal je Auswahl) – danach steht dieselbe Auswahl wieder da, oft mit der ruhigen Antwort frei. Auch am
+    Steg („Ans Wasser setzen“). Ein kleines Spiel mit Sinn (erst runterkommen, dann antworten), ohne ein Wort der Belehrung.
   - Im Hub steht RESPAWN als Kachel bei den Materialien (Klassebuch: `hub-apps.js`, Test `respawn-kachel.js`).
 - **Offen:** Spieltest mit Jugendlichen, Frauen-Modelle (Paket „Ultimate Modular Women“ fehlt noch), Gesichtsausdruck der
   neuen Figuren.

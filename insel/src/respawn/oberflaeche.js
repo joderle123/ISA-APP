@@ -135,6 +135,52 @@ export function createOberflaeche({ game }) {
       if (test) { treffer = Math.max(0, runden - 1); runde = runden; setTimeout(ende, 20); } else raf = requestAnimationFrame(bild_);
     });
   }
+  // ---------- Durchatmen: Finger halten = einatmen, loslassen = ausatmen ----------
+  // Ein Kreis wird groß (einatmen, 3 s) und klein (ausatmen, 4 s). Wer mitgeht, wird ruhiger. Kein Text darüber, warum.
+  // → { gut }  Zahl der Atemzüge, bei denen man gut mitgegangen ist (0..zuege)
+  function atmen({ zuege = 3 } = {}) {
+    return new Promise((resolve) => {
+      const EIN = 3000, AUS = 4000;
+      const g = el('rs-geschick rs-atem hud-interactive', `<small>Durchatmen</small>
+        <div class="rs-a-feld"><i class="rs-a-kreis"></i><b class="rs-a-wort">Finger halten</b></div>
+        <div class="rs-g-fuss"><span class="rs-g-punkte">${'<i></i>'.repeat(zuege)}</span><span class="rs-g-tipp">Halten: einatmen. Loslassen: ausatmen.</span></div>`);
+      root.appendChild(g);
+      requestAnimationFrame(() => g.classList.add('is-da'));
+      const kreis = g.querySelector('.rs-a-kreis'), wort = g.querySelector('.rs-a-wort'), punkte = [...g.querySelectorAll('.rs-g-punkte i')];
+      let zug = 0, gut = 0, halt = false, t0 = performance.now(), passt = 0, gesamt = 0, letzte = t0, fertig = false, raf = 0;
+      const ende = () => {
+        if (fertig) return; fertig = true; cancelAnimationFrame(raf);
+        window.removeEventListener('pointerdown', runter, true); window.removeEventListener('pointerup', hoch, true); window.removeEventListener('pointercancel', hoch, true);
+        window.removeEventListener('keydown', taste, true); window.removeEventListener('keyup', tasteAuf, true); game.events.off('respawn:weiter', ab);
+        g.classList.remove('is-da'); setTimeout(() => { g.remove(); resolve({ gut }); }, test ? 0 : 220);
+      };
+      const ab = () => { gut = Math.max(gut, zuege - 1); ende(); };   // Tests und Autopilot
+      const runter = (e) => { if (e.target && e.target.closest && e.target.closest('button, .menu, .overlay')) return; halt = true; };
+      const hoch = () => { halt = false; };
+      const taste = (e) => { if (e.code === 'Space') { e.preventDefault(); e.stopPropagation(); halt = true; } };
+      const tasteAuf = (e) => { if (e.code === 'Space') { e.preventDefault(); halt = false; } };
+      const bild_ = () => {
+        const jetzt = performance.now(), t = jetzt - t0, ein = t < EIN, dt = jetzt - letzte; letzte = jetzt;
+        const anteil = ein ? t / EIN : 1 - Math.min(1, (t - EIN) / AUS);
+        kreis.style.transform = 'translate(-50%,-50%) scale(' + (0.35 + 0.65 * anteil).toFixed(3) + ')';
+        wort.textContent = ein ? 'Einatmen – halten' : 'Ausatmen – loslassen';
+        kreis.classList.toggle('ist-mit', halt === ein);
+        gesamt += dt; if (halt === ein) passt += dt;
+        if (t >= EIN + AUS) {
+          const ok = passt / Math.max(1, gesamt) >= 0.7;
+          if (ok) gut++;
+          punkte[zug].className = ok ? 'ist-gut' : 'ist-daneben';
+          zug++; passt = 0; gesamt = 0; t0 = jetzt;
+          if (zug >= zuege) { ende(); return; }
+        }
+        raf = requestAnimationFrame(bild_);
+      };
+      window.addEventListener('pointerdown', runter, true); window.addEventListener('pointerup', hoch, true); window.addEventListener('pointercancel', hoch, true);
+      window.addEventListener('keydown', taste, true); window.addEventListener('keyup', tasteAuf, true);
+      game.events.on('respawn:weiter', ab);
+      if (test) { gut = Math.max(0, zuege - 1); setTimeout(ende, 20); } else raf = requestAnimationFrame(bild_);
+    });
+  }
   const erzaehler = (text, o) => zeile('ist-erz', `<p>${esc(text)}</p>`, o);
   const gedanke = (text, k) => zeile('ist-ged' + (k ? ' hat-karte' : ''), (k ? `<small style="color:${k.farbe}">${bild(k.bild)} ${esc(k.name)}</small>` : '<small>Du denkst</small>') + `<p>${esc(text)}</p>`);
 
@@ -296,7 +342,7 @@ export function createOberflaeche({ game }) {
   }
 
   return {
-    status, wirkung, melde, erzaehler, gedanke, geschick, wahl, titelkarte, kartenZiehen, freizeit, abschluss, start,
+    status, wirkung, melde, erzaehler, gedanke, geschick, atmen, wahl, titelkarte, kartenZiehen, freizeit, abschluss, start,
     handy(R, meta, welt) { handy(R, meta, welt); },
     setzeHandy(fn) { handyAuf = fn; },
   };

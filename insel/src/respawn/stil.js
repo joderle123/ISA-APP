@@ -51,6 +51,11 @@ export const STIL = `
 .rs-g-punkte i.ist-gut{background:#7ed957;border-color:#7ed957;}
 .rs-g-punkte i.ist-daneben{background:#ff5a3d;border-color:#ff5a3d;}
 .rs-g-tipp{opacity:.85;text-align:right;}
+.rs-atem{touch-action:none;}
+.rs-a-feld{position:relative;height:150px;border-radius:14px;background:rgba(255,255,255,.07);border:2px solid rgba(255,255,255,.18);overflow:hidden;}
+.rs-a-kreis{position:absolute;left:50%;top:50%;width:132px;height:132px;border-radius:50%;background:radial-gradient(circle at 40% 35%,rgba(143,200,255,.55),rgba(77,140,255,.25));border:3px solid rgba(143,200,255,.8);transform:translate(-50%,-50%) scale(.35);}
+.rs-a-kreis.ist-mit{border-color:#7ed957;background:radial-gradient(circle at 40% 35%,rgba(160,240,150,.6),rgba(126,217,87,.28));}
+.rs-a-wort{position:absolute;left:0;right:0;bottom:8px;text-align:center;font-size:17px;font-weight:800;text-shadow:0 1px 4px rgba(0,0,0,.6);}
 .rs-zeile.ist-ged{background:rgba(34,26,66,.88);border-style:dashed;}
 .rs-zeile.ist-ged p{font-style:italic;font-weight:500;}
 .rs-zeile.ist-ged small{color:#b9b2e0;}

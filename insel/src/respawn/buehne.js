@@ -113,19 +113,28 @@ export function createBuehne({ game, O }) {
     const { R, sit } = szene;
     const sicht = wahlen(R, liste);
     if (!sicht.length) return;
+    // Zu viel Druck sperrt ruhige Antworten. Dann darf man einmal je Auswahl erst durchatmen (kleines Spiel) – das senkt
+    // den Druck, danach steht dieselbe Auswahl noch einmal da. Erst runterkommen, dann antworten: ohne ein Wort darüber.
+    const atem = !opt._geatmet && sicht.some((w) => w.gesperrt === 'druck');
     let sek = opt.ruhe ? 0 : zeitFuer(R);
     if (opt.eil) sek = Math.min(sek || 10, 10);
     const standard = ohneWahl(R, sicht);
     totale();
     const r = await O.wahl({
       frage: opt.frage,
-      items: sicht.map((w) => ({
+      items: sicht.concat(atem ? [{ t: 'Erst durchatmen.', art: 'ruhig', _atem: true }] : []).map((w) => ({
         label: w.t, art: w.art, gesperrt: !!w.gesperrt,
         sub: w.gesperrt ? (w.gesperrt === 'geld' ? 'Zu wenig Geld' : SPERRE_TEXT[w.gesperrt]) : (w.kostet ? w.kostet + ' Euro' : ''),
         karte: w.nur ? karte('kopf', w.nur) : null,
       })),
       sekunden: sek, standard, druck: R.druck,
     });
+    if (atem && r.index === sicht.length && !r.uhr) {
+      const erg = await O.atmen({ zuege: 3 });
+      game.events.emit('respawn:atem', erg);
+      O.wirkung(wirke(R, { druck: -(8 + 4 * erg.gut) }), R);
+      return wahl(liste, { ...opt, _geatmet: true });
+    }
     const w = sicht[r.index] || sicht[standard];
     R.log.push({ sit: sit.id, wahl: w.t, art: w.art, uhr: !!r.uhr });
     game.events.emit('respawn:wahl', { sit: sit.id, wahl: w.t, art: w.art, uhr: !!r.uhr });
@@ -153,6 +162,8 @@ export function createBuehne({ game, O }) {
       else if (art === 'e') O.wirkung(wirke(R, s[1], s[2] || {}), R);
       else if (art === 'wenn') await lauf(s[1](R) ? (s[2] || []) : (s[3] || []));
       else if (art === 'w') await wahl(s[1], s[2] || {});
+      // Durchatmen: ['atem', { zuege }, (ergebnis) => Schritte]
+      else if (art === 'atem') { totale(); const erg = await O.atmen(s[1] || {}); game.events.emit('respawn:atem', erg); await lauf((s[2] && s[2](erg, R)) || []); }
       // Geschick: ['spiel', { titel, bild }, (ergebnis) => Schritte] – wie es weitergeht, hängt von den Treffern ab
       else if (art === 'spiel') { totale(); const erg = await O.geschick({ ...s[1], druck: R.druck }); game.events.emit('respawn:geschick', erg); await lauf((s[2] && s[2](erg, R)) || []); }
     }

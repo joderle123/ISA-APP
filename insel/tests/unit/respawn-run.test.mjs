@@ -51,6 +51,7 @@ function durchlaufe(schritte, R, f, tiefe = 0) {
     if (s[0] === 'w') for (const w of s[1]) durchlaufe(w.dann, R, f, tiefe + 1);
     if (s[0] === 'wenn') { durchlaufe(s[2], R, f, tiefe); durchlaufe(s[3], R, f, tiefe); }
     if (s[0] === 'spiel') for (const treffer of [0, 1, 2, 3]) durchlaufe(s[2]({ treffer, von: 3 }, R), R, f, tiefe);   // Geschick: alle Ausgänge prüfen
+    if (s[0] === 'atem') for (const gut of [0, 1, 2, 3]) durchlaufe(s[2]({ gut }, R), R, f, tiefe);   // Durchatmen: alle Ausgänge prüfen
   }
 }
 test('Schreibregeln: Blase ≤ 12 Wörter, Wahl ≤ 6 Wörter, bekannte Figuren, bekannte Akten-Einträge', () => {

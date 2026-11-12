@@ -40,7 +40,8 @@ export const ORTE = [
 export const ORT_AKTIONEN = {
   schlafen: { t: 'Schlafen gehen', art: 'ruhig', kraft: 0, schlaf: true, szene: () => [['t', 'Du machst das Licht aus.']] },
   zocken: { t: 'Zocken bis nachts', art: 'weg', kraft: 1, szene: () => [['t', 'Noch eine Runde. Und noch eine. Halb drei.'], ['e', { druck: -25, spaet: 1 }]] },
-  wasser: { t: 'Ans Wasser setzen', art: 'ruhig', kraft: 1, szene: () => [['t', 'Wellen. Sonst nichts. Dein Kopf wird leiser.'], ['e', { druck: -20 }]] },
+  wasser: { t: 'Ans Wasser setzen', art: 'ruhig', kraft: 1, szene: () => [['t', 'Du setzt dich ans Ende vom Steg. Nur Wellen.'],
+    ['atem', { zuege: 3 }, (a) => [['t', a.gut >= 2 ? 'Dein Kopf wird leiser. Viel leiser.' : 'Dein Kopf wird ein bisschen leiser.'], ['e', { druck: -(12 + 5 * a.gut) }]]]] },
   tricks: { t: 'Tricks üben', art: 'ruhig', kraft: 1, szene: (R) => (hat(R, 'pit.weg') ? [['t', 'Der Brunnen ist leer. Pit kommt nicht mehr.'], ['e', { druck: -5 }]] : [['t', 'Pit zeigt dir den Kickflip. Jetzt du.'],
     ['spiel', { titel: 'Im richtigen Moment abspringen', bild: '🛹' }, (g) => (g.treffer >= 3 ? [['s', 'pit', 'Dreimal gestanden. Respekt, echt.'], ['e', { druck: -20, bond: { pit: 2 }, ruf: { hafen: 1 } }]]
       : g.treffer >= 1 ? [['t', 'Einmal gestanden, sonst Asphalt. Pit grinst.'], ['e', { druck: -15, bond: { pit: 1 } }]]
