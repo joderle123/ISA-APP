@@ -12,7 +12,7 @@
       "einzeln",
       "gruppe"
     ],
-    "dauer": "15 Min.",
+    "dauer": "10 Min.",
     "eldib": [
       "K-26",
       "K-16",
@@ -28,6 +28,7 @@
     "bild": "icon:mail",
     "verwandt": [
       "skills-gefuehlsrad",
+      "skills-botschaften-karten",
       "skills-gefuehlskarten",
       "gefuehle-genau-benennen"
     ],
@@ -36,15 +37,34 @@
     ],
     "de": {
       "titel": "Wozu sind Gefühle gut?",
-      "untertitel": "Jedes Gefühl hat eine Botschaft – auch die unangenehmen.",
+      "untertitel": "Jedes Gefühl ist eine Nachricht an dich – auch die unangenehmen.",
       "bausteine": [
         {
-          "art": "text",
-          "text": "Gefühle melden sich, wenn etwas passiert, das dir wichtig ist – ähnlich wie eine Nachricht auf dem Handy. Du musst nicht jeder Nachricht sofort folgen. Aber es lohnt sich, sie zu lesen."
+          "art": "aufgabe",
+          "text": "Wie oft meldet sich welches Gefühl bei dir? Male aus – nur für dich.",
+          "symbole": [
+            "malen"
+          ]
+        },
+        {
+          "art": "balken",
+          "stufen": 5,
+          "pole": [
+            "selten",
+            "ständig"
+          ],
+          "items": [
+            "Freude",
+            "Traurigkeit",
+            "Angst",
+            "Wut",
+            "Ekel",
+            "Überraschung"
+          ]
         },
         {
           "art": "aufgabe",
-          "text": "Welche Botschaft gehört zu welchem Gefühl? Verbinde.",
+          "text": "Welche Nachricht schickt welches Gefühl? Verbinde.",
           "symbole": [
             "verbinden"
           ]
@@ -53,7 +73,7 @@
           "art": "zuordnen",
           "titel": [
             "Gefühl",
-            "Seine Botschaft"
+            "Seine Nachricht"
           ],
           "links": [
             "Angst",
@@ -64,67 +84,34 @@
             "Überraschung"
           ],
           "rechts": [
-            "Das tut mir gut. Davon will ich mehr.",
+            "Davon will ich mehr.",
             "Moment – was ist da los?",
-            "Achtung, Gefahr. Pass auf dich auf.",
-            "Das ist schlecht für mich. Abstand.",
-            "Mir fehlt etwas. Ich brauche Trost.",
-            "Das ist unfair. Hier ist eine Grenze."
+            "Achtung, Gefahr.",
+            "Das schadet mir. Abstand.",
+            "Mir fehlt etwas.",
+            "Das ist unfair."
           ]
         },
         {
-          "art": "aufgabe",
-          "text": "Denk an drei Momente aus den letzten Wochen: Welches Gefühl war da – und was wollte es dir sagen?",
-          "hinweis": "Du wählst die Gefühle aus. Die Tabelle bleibt bei dir und wird nicht vorgelesen.",
-          "symbole": [
-            "nachdenken",
-            "schreiben"
+          "art": "satzanfaenge",
+          "items": [
+            "Am liebsten würde ich … rauswerfen. Aber dann würde mir fehlen: …"
           ]
         },
         {
-          "art": "tabelle",
-          "spalten": [
-            "Gefühl",
-            "Das ist passiert",
-            "Die Botschaft"
-          ],
-          "breiten": [
-            1,
-            2.6,
-            2.2
-          ],
-          "beispiel": [
-            "Wut",
-            "Mein Bruder hat ohne zu fragen mein Ladekabel genommen – schon wieder.",
-            "Das gehört mir. Ich will gefragt werden."
-          ],
-          "zeilen": 3
-        },
-        {
-          "art": "aufgabe",
-          "text": "Welches Gefühl magst du am wenigsten – und wofür ist es trotzdem gut?",
-          "symbole": [
-            "nachdenken"
-          ]
-        },
-        {
-          "art": "linien",
-          "anzahl": 2
-        },
-        {
-          "art": "info",
-          "symbol": "merke",
-          "titel": "Keine falschen Gefühle",
-          "text": "Jedes Gefühl hat seinen Sinn. Es gibt aber hilfreiche und weniger hilfreiche Arten, damit umzugehen. Wut darf sein – ob du zuschlägst oder klar „Stopp“ sagst, macht den Unterschied."
+          "art": "mission",
+          "text": "Erwisch diese Woche drei Gefühle auf frischer Tat – und frag jedes: Was willst du mir sagen?",
+          "tage": 3,
+          "beweis": "ein Wort – welches Gefühl hat sich am häufigsten gemeldet?"
         }
       ],
       "lehrer": {
-        "ziel": "Die Jugendlichen ordnen sechs Grundgefühlen ihre Botschaft zu und erkennen, dass auch unangenehme Gefühle eine Aufgabe haben. Sie übertragen das auf eigene Erlebnisse.",
+        "ziel": "Die Jugendlichen schätzen ein, wie oft sich die sechs Grundgefühle bei ihnen melden, ordnen jedem seine Botschaft zu und begründen, wozu auch ein unangenehmes Gefühl gut ist.",
         "ablauf": [
-          "Einstieg (3 Min.): „Wären wir ohne Gefühle besser dran?“ Meinungen hören, nicht auflösen.",
-          "Aufgabe 1 zu zweit (4 Min.), dann gemeinsam auflösen und zu jeder Botschaft ergänzen, was das Gefühl uns tun lässt (Tafelbild in Einheit 7).",
-          "Aufgabe 2 einzeln (5 Min.): Beispiel vorlesen, mindestens ein unangenehmes Gefühl wählen lassen. Die Tabelle wird nicht eingesammelt.",
-          "Aufgabe 3 (3 Min.): Antworten freiwillig vorlesen, den Merksatz an die Tafel schreiben."
+          "Vorher im Raum (12 Min.): „Sechs Ecken“ und „Botschaften-Post“ – die Botschaften hängen schon unter den sechs Gefühls-Schildern.",
+          "Abstimmung (5 Min.): Jede Person klebt einen Punkt an das Gefühl, das sie am liebsten abschaffen würde. Für das Gefühl mit den meisten Punkten sammelt die Gruppe in einer Minute Gründe, warum es bleiben muss.",
+          "Blatt (6 Min.): Aufgabe 1 still, Aufgabe 2 mit Blick auf die Schilder, dann den Satz darunter für sich. Vorgelesen wird nur freiwillig.",
+          "Mission vorlesen. Nächstes Mal reicht ein Wort: Welches Gefühl hat sich am häufigsten gemeldet?"
         ],
         "hintergrund": "Gefühle sind kurze, organisierte Reaktionen auf Ereignisse, die für uns bedeutsam sind: Sie lenken die Aufmerksamkeit, bereiten eine Handlung vor und zeigen anderen, was in uns vorgeht. Ekman (1992) beschreibt Grundgefühle, deren Ausdruck in vielen Kulturen erkannt wird. Plutchik (2001) ordnet jedem eine Funktion zu: Angst sorgt für Schutz, Wut räumt Hindernisse aus dem Weg, Traurigkeit sucht verlorene Nähe. Wer die Botschaft eines Gefühls versteht, muss seinem Handlungsdrang nicht blind folgen – darauf bauen die Skills in Modul 3 auf (Rathus & Miller, 2015).",
         "quellen": [
@@ -133,7 +120,7 @@
           "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
         ],
         "differenzierung": {
-          "leichter": "Aufgabe 1 mit den Gefühlskarten legen; in Aufgabe 2 nur eine Zeile ausfüllen.",
+          "leichter": "In Aufgabe 1 nur drei Gefühle ausmalen; Aufgabe 2 zu zweit.",
           "schwerer": "Überlegen, wann ein Gefühl übers Ziel hinausschießt – etwa große Angst vor einem harmlosen Referat."
         },
         "impulse": [
@@ -141,24 +128,43 @@
           "Wozu könnte Neid gut sein?"
         ],
         "tipps": [
-          "Die Botschaften als Plakat neben das Gefühlsrad hängen – in Einheit 8 werden sie wieder gebraucht.",
-          "Stockt Aufgabe 2, sind Beispiele aus Serien oder Sport erlaubt."
+          "Die sechs Schilder mit den Botschaften bleiben neben dem Gefühlsrad hängen – in Einheit 8 werden sie wieder gebraucht.",
+          "Stockt der Satz zum Rauswerfen, sind Beispiele aus Serien oder Sport erlaubt."
         ],
         "achtung": "Schreibt jemand von Belastendem, nicht in der Gruppe nachfragen, sondern ein Einzelgespräch anbieten. Bei Hinweisen auf Gefährdung nach dem Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren.",
-        "material": "Blatt je Person, Plakat"
+        "material": "Buntstifte, Klebepunkte, Botschaften-Karten"
       }
     },
     "fr": {
       "titel": "À quoi servent les émotions ?",
-      "untertitel": "Chaque émotion a un message – même les désagréables.",
+      "untertitel": "Chaque émotion est un message pour toi – même les désagréables.",
       "bausteine": [
         {
-          "art": "text",
-          "text": "Les émotions arrivent quand il se passe quelque chose d’important pour toi – comme des notifications sur ton téléphone. Pas besoin de réagir tout de suite à chacune, mais ça vaut la peine de les lire."
+          "art": "aufgabe",
+          "text": "Quelle émotion se manifeste souvent chez toi ? Colorie – rien que pour toi.",
+          "symbole": [
+            "malen"
+          ]
+        },
+        {
+          "art": "balken",
+          "stufen": 5,
+          "pole": [
+            "rarement",
+            "tout le temps"
+          ],
+          "items": [
+            "Joie",
+            "Tristesse",
+            "Peur",
+            "Colère",
+            "Dégoût",
+            "Surprise"
+          ]
         },
         {
           "art": "aufgabe",
-          "text": "Quel message va avec quelle émotion ? Relie.",
+          "text": "Quel message envoie quelle émotion ? Relie.",
           "symbole": [
             "verbinden"
           ]
@@ -178,67 +184,34 @@
             "Surprise"
           ],
           "rechts": [
-            "Ça me fait du bien. J’en veux encore.",
-            "Un instant – que se passe-t-il ?",
-            "Attention, danger. Protège-toi.",
-            "Mauvais pour moi. Je m’éloigne.",
-            "Il me manque du réconfort.",
-            "C’est injuste. Il y a ici une limite."
+            "J’en veux encore.",
+            "Attends – c’est quoi, ça ?",
+            "Attention, danger.",
+            "Ça me nuit. Je m’éloigne.",
+            "Quelque chose me manque.",
+            "C’est injuste."
           ]
         },
         {
-          "art": "aufgabe",
-          "text": "Pense à trois moments de ces dernières semaines : quelle émotion était là – et que voulait-elle te dire ?",
-          "hinweis": "C’est toi qui choisis les émotions. Le tableau reste chez toi et n’est pas lu à voix haute.",
-          "symbole": [
-            "nachdenken",
-            "schreiben"
+          "art": "satzanfaenge",
+          "items": [
+            "J’aimerais mettre … à la porte. Mais alors, il me manquerait : …"
           ]
         },
         {
-          "art": "tabelle",
-          "spalten": [
-            "Émotion",
-            "Ce qui s’est passé",
-            "Le message"
-          ],
-          "breiten": [
-            1,
-            2.6,
-            2.2
-          ],
-          "beispiel": [
-            "Colère",
-            "Mon frère a pris mon câble de chargeur sans demander – encore une fois.",
-            "Ça m’appartient. Je veux qu’on me demande."
-          ],
-          "zeilen": 3
-        },
-        {
-          "art": "aufgabe",
-          "text": "Quelle émotion aimes-tu le moins – et à quoi sert-elle malgré tout ?",
-          "symbole": [
-            "nachdenken"
-          ]
-        },
-        {
-          "art": "linien",
-          "anzahl": 2
-        },
-        {
-          "art": "info",
-          "symbol": "merke",
-          "titel": "Pas de mauvaises émotions",
-          "text": "Chaque émotion a son sens. Mais il y a des façons d’y réagir qui aident plus ou moins. La colère a le droit d’exister – que tu cognes ou que tu dises clairement « Stop » fait toute la différence."
+          "art": "mission",
+          "text": "Cette semaine, prends trois émotions sur le fait – et demande à chacune : que veux-tu me dire ?",
+          "tage": 3,
+          "beweis": "un mot – quelle émotion s’est manifestée le plus souvent ?"
         }
       ],
       "lehrer": {
-        "ziel": "Les jeunes associent à six émotions de base leur message et reconnaissent que même les émotions désagréables ont une fonction. Ils appliquent cela à leurs propres expériences.",
+        "ziel": "Les jeunes estiment la fréquence des six émotions de base chez eux, associent à chacune son message et expliquent à quoi sert aussi une émotion désagréable.",
         "ablauf": [
-          "Entrée en matière (3 min) : « Serions-nous mieux sans émotions ? » Écouter les avis, sans trancher.",
-          "Tâche 1 à deux (4 min), puis correction en commun ; pour chaque message, ajouter ce que l’émotion nous pousse à faire (schéma au tableau à la séance 7).",
-          "Tâche 2 individuelle (5 min) : lire l’exemple à voix haute, faire choisir au moins une émotion désagréable. Le tableau n’est pas ramassé.",
-          "Tâche 3 (3 min) : lecture volontaire des réponses à voix haute, écrire la phrase à retenir au tableau."
+          "Avant, dans la salle (12 min) : « Six coins » et « Le courrier des messages » – les messages sont déjà affichés sous les six panneaux des émotions.",
+          "Vote (5 min) : chacun colle une gommette sur l’émotion qu’il aimerait supprimer. Pour celle qui a le plus de gommettes, le groupe cherche pendant une minute pourquoi elle doit rester.",
+          "Feuille (6 min) : exercice 1 en silence, exercice 2 en regardant les panneaux, puis la phrase en dessous pour soi. On ne lit à voix haute que si on le souhaite.",
+          "Lire la mission. La prochaine fois, un mot suffit : quelle émotion s’est manifestée le plus souvent ?"
         ],
         "hintergrund": "Les émotions sont de brèves réactions organisées à des événements importants pour nous : elles dirigent l’attention, préparent une action et montrent aux autres ce qui se passe en nous. Ekman (1992) décrit des émotions de base dont l’expression est reconnue dans de nombreuses cultures. Plutchik (2001) attribue à chacune une fonction : la peur assure la protection, la colère écarte les obstacles, la tristesse cherche la proximité perdue. Qui comprend le message d’une émotion n’a pas à suivre aveuglément son élan d’action – les skills du module 3 s’appuient là-dessus (Rathus & Miller, 2015).",
         "quellen": [
@@ -247,7 +220,7 @@
           "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
         ],
         "differenzierung": {
-          "leichter": "Faire la tâche 1 avec les cartes d’émotions ; à la tâche 2, ne remplir qu’une ligne.",
+          "leichter": "Exercice 1 : colorier seulement trois émotions ; exercice 2 à deux.",
           "schwerer": "Réfléchir à quand une émotion dépasse la mesure – par exemple une grande peur avant un exposé sans danger."
         },
         "impulse": [
@@ -255,13 +228,14 @@
           "À quoi pourrait servir l’envie ?"
         ],
         "tipps": [
-          "Accrocher les messages sur une affiche à côté de la roue des émotions – ils resservent à la séance 8.",
-          "Si la tâche 2 coince, des exemples tirés de séries ou du sport sont permis."
+          "Les six panneaux avec leurs messages restent affichés à côté de la roue des émotions – ils resservent à la séance 8.",
+          "Si la phrase finale coince, des exemples tirés de séries ou du sport sont permis."
         ],
         "achtung": "Si quelqu’un écrit quelque chose de pesant, ne pas poser de questions devant le groupe, mais proposer un entretien individuel. En cas d’indices de mise en danger, agir selon le concept de protection et informer la direction compétente (responsable).",
-        "material": "Une feuille par personne, affiche"
+        "material": "Crayons de couleur, gommettes, cartes des messages"
       }
-    }
+    },
+    "look": "spiel"
   },
   {
     "id": "skills-gefuehlskarten",
@@ -286,12 +260,14 @@
       "Pantomime",
       "Memory",
       "Emotionswürfel",
+      "Steuerpult",
       "Gefühlswortschatz"
     ],
     "bild": "icon:masks-theater",
     "verwandt": [
       "skills-gefuehlsrad",
       "skills-gefuehle-botschaften",
+      "skills-wer-sitzt-am-steuer",
       "skills-gemischte-gefuehle"
     ],
     "kurs": [
@@ -301,21 +277,21 @@
     ],
     "de": {
       "titel": "Gefühlskarten",
-      "untertitel": "Karten zum Ausschneiden – für Pantomime, Memory und den Emotionswürfel",
+      "untertitel": "Karten zum Ausschneiden – für Pantomime-Duell, Steuerpult, Memory und Würfelspiele",
       "bausteine": [
         {
           "art": "info",
           "symbol": "tipp",
           "titel": "So könnt ihr spielen",
           "punkte": [
-            "Pantomime: Eine Karte verdeckt ziehen und das Gefühl ohne Worte zeigen. Die anderen raten.",
-            "Memory: Mit zwei Kartensätzen von dieser Seite spielen. Wer ein Paar findet, nennt eine Situation, in der man sich so fühlt.",
-            "Emotionswürfel: Die sechs Grundgefühle aus den ersten beiden Reihen auf einen Würfel kleben."
+            "Pantomime-Duell: Zwei Teams. Eine Person zeigt 60 Sekunden lang Karten ohne Worte, ihr Team rät. Jede erratene Karte zählt einen Punkt, Karten von Seite 2 zählen doppelt.",
+            "Memory: Seite 1 zweimal kopieren. Wer ein Paar findet, nennt eine Situation, in der man sich so fühlt.",
+            "Emotionswürfel: Die Karten 1 bis 6 sind die Grundgefühle. Würfelt mit einem normalen Würfel – die Zahl sagt, welches Gefühl dran ist."
           ]
         },
         {
           "art": "aufgabe",
-          "text": "Schneidet die Karten entlang der gestrichelten Linien aus.",
+          "text": "Schneidet die Karten aus und legt sie verdeckt auf einen Stapel.",
           "symbole": [
             "schneiden"
           ]
@@ -323,31 +299,37 @@
         {
           "art": "karten",
           "spalten": 3,
-          "hoehe": 118,
+          "hoehe": 106,
           "karten": [
             {
               "bild": "gesicht:froh",
-              "titel": "Freude"
+              "titel": "Freude",
+              "nummer": 1
             },
             {
               "bild": "gesicht:traurig",
-              "titel": "Traurigkeit"
+              "titel": "Traurigkeit",
+              "nummer": 2
             },
             {
               "bild": "gesicht:wuetend",
-              "titel": "Wut"
+              "titel": "Wut",
+              "nummer": 3
             },
             {
               "bild": "gesicht:aengstlich",
-              "titel": "Angst"
+              "titel": "Angst",
+              "nummer": 4
             },
             {
               "bild": "gesicht:ueberrascht",
-              "titel": "Überraschung"
+              "titel": "Überraschung",
+              "nummer": 5
             },
             {
               "bild": "gesicht:angeekelt",
-              "titel": "Ekel"
+              "titel": "Ekel",
+              "nummer": 6
             },
             {
               "bild": "gesicht:stolz",
@@ -380,7 +362,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Für Fortgeschrittene: Diese Gefühle sind schwerer zu zeigen. Die Erklärung hilft beim Spielen. Auf die leeren Karten kommen eure eigenen Wörter.",
+          "text": "Für Profis: Diese Gefühle sind schwerer zu zeigen – im Duell zählen sie doppelt.",
+          "hinweis": "Die Erklärung hilft beim Spielen. Auf die leeren Karten kommen eure eigenen Wörter.",
           "symbole": [
             "schneiden",
             "schreiben"
@@ -389,7 +372,7 @@
         {
           "art": "karten",
           "spalten": 3,
-          "hoehe": 112,
+          "hoehe": 124,
           "karten": [
             {
               "titel": "Neid",
@@ -446,14 +429,13 @@
         }
       ],
       "lehrer": {
-        "ziel": "Die Jugendlichen erkennen Gefühle an Gesicht und Haltung, stellen sie selbst dar und erweitern ihren Gefühlswortschatz. Der Kartensatz dient für Pantomime (Einheit 7), Memory (Einheit 8) und Emotionswürfel (Einheit 10).",
+        "ziel": "Die Jugendlichen erkennen Gefühle an Gesicht und Haltung, stellen sie selbst dar und erweitern ihren Gefühlswortschatz. Der Kartensatz wird in den Einheiten 7, 8 und 10 und in den Joker-Einheiten gebraucht.",
         "ablauf": [
-          "Vorbereiten: Seite 1 zweimal, Seite 2 einmal auf festes Papier kopieren, ausschneiden, bei Bedarf laminieren.",
-          "Pantomime (20 Min.): Reihum eine Karte ziehen, das Gefühl erst als Statue, dann in Bewegung zeigen. Fragen: Woran habt ihr es erkannt? Seite 2 erst in der zweiten Hälfte dazunehmen.",
-          "Steuerpult (Einheit 8): Freude, Traurigkeit, Angst, Wut und Ekel im Halbkreis auslegen; bei jeder Situation stellen sich alle zu dem Gefühl, das bei ihnen am Pult stünde.",
-          "Memory (15 Min.): Beide Sätze von Seite 1 verdeckt auslegen. Wer ein Paar findet, nennt eine Situation, in der man sich so fühlt.",
-          "Emotionswürfel: Die sechs Grundgefühle auf einen Pappwürfel oder eine Schachtel ab 7 cm Kantenlänge kleben – oder die Karten verdeckt ziehen lassen.",
-          "Die leeren Karten mit Wörtern aus der Mindmap der Gruppe füllen."
+          "Vorbereiten: Seite 1 zweimal, Seite 2 einmal auf festes Papier kopieren und ausschneiden.",
+          "Einheit 7: Die Karten 1 bis 6 hängen als Schilder für „Sechs Ecken“ im Raum. Nach der Pause Pantomime-Duell mit allen Karten; zum Schluss baut jedes Team ein Standbild.",
+          "Einheit 8: Freude, Traurigkeit (für Kummer), Angst, Wut und Ekel liegen im Halbkreis als Steuerpult; im Synchronstudio werden dieselben Karten gezogen.",
+          "Einheit 10: Freude, Traurigkeit, Wut, Angst, Scham und Zweifel sind die Felder beim Chips-Setzen. Für das Würfel-Duell genügen ein Würfel und die Karten 1 bis 6.",
+          "Memory (Spielkiste): beide Sätze von Seite 1 verdeckt auslegen. Wer ein Paar findet, nennt eine Situation dazu."
         ],
         "hintergrund": "Gefühle an Gesicht und Körper zu erkennen, ist eine Grundlage für Einfühlung. Ekman (1992) beschreibt für Grundgefühle Gesichtsausdrücke, die in vielen Kulturen verstanden werden. Beim Pantomime-Spiel werden Gefühle nicht nur erkannt, sondern selbst dargestellt; so wird der Zusammenhang von Gefühl, Mimik und Haltung erfahrbar. Ein großer Gefühlswortschatz hilft, genauer wahrzunehmen, was in einem vorgeht, und passender zu reagieren (Brackett, 2019). Seite 2 enthält deshalb Gefühle, die im Alltag oft ohne Namen bleiben.",
         "quellen": [
@@ -469,30 +451,30 @@
           "Welches Gefühl sieht man anderen oft nicht an?"
         ],
         "tipps": [
-          "Die Leitung spielt die erste Pantomime selbst und übertreibt ruhig.",
-          "Wer nicht allein vor der Gruppe spielen möchte, spielt zu zweit."
+          "Die Leitung spielt die erste Karte selbst und übertreibt ruhig.",
+          "Niemand muss allein vor der Gruppe spielen: Zu zweit ist immer erlaubt, „weiter“ auch."
         ],
         "achtung": "Klingt eine Situation im Memory nach eigenem belastendem Erleben: würdigen, weiterspielen und später ein Einzelgespräch anbieten; bei Bedarf die zuständige Leitung (Responsable) informieren.",
-        "material": "Festes Papier, Schere, Pappwürfel, Kleber"
+        "material": "Festes Papier, Schere, ein Würfel, Stoppuhr oder Handy-Timer"
       }
     },
     "fr": {
       "titel": "Cartes des émotions",
-      "untertitel": "Cartes à découper – pour le mime, le memory et le dé des émotions",
+      "untertitel": "Cartes à découper – pour le duel de mime, le pupitre, le memory et les jeux de dés",
       "bausteine": [
         {
           "art": "info",
           "symbol": "tipp",
           "titel": "Façons de jouer",
           "punkte": [
-            "Mime : tirer une carte face cachée et montrer l’émotion sans mots. Les autres devinent.",
-            "Memory : jouer avec deux jeux de cartes de cette page. Qui trouve une paire cite une situation où l’on ressent cela.",
-            "Dé des émotions : coller les six émotions de base des deux premières rangées sur un dé."
+            "Duel de mime : deux équipes. Une personne mime des cartes pendant 60 secondes, son équipe devine. Chaque carte trouvée vaut un point, celles de la page 2 comptent double.",
+            "Memory : copier la page 1 deux fois. Qui trouve une paire cite une situation où l’on ressent cela.",
+            "Dé des émotions : les cartes 1 à 6 sont les émotions de base. Lancez un dé ordinaire – le chiffre indique l’émotion."
           ]
         },
         {
           "art": "aufgabe",
-          "text": "Découpez les cartes le long des pointillés.",
+          "text": "Découpez les cartes et posez-les en pile, face cachée.",
           "symbole": [
             "schneiden"
           ]
@@ -500,31 +482,37 @@
         {
           "art": "karten",
           "spalten": 3,
-          "hoehe": 118,
+          "hoehe": 106,
           "karten": [
             {
               "bild": "gesicht:froh",
-              "titel": "Joie"
+              "titel": "Joie",
+              "nummer": 1
             },
             {
               "bild": "gesicht:traurig",
-              "titel": "Tristesse"
+              "titel": "Tristesse",
+              "nummer": 2
             },
             {
               "bild": "gesicht:wuetend",
-              "titel": "Colère"
+              "titel": "Colère",
+              "nummer": 3
             },
             {
               "bild": "gesicht:aengstlich",
-              "titel": "Peur"
+              "titel": "Peur",
+              "nummer": 4
             },
             {
               "bild": "gesicht:ueberrascht",
-              "titel": "Surprise"
+              "titel": "Surprise",
+              "nummer": 5
             },
             {
               "bild": "gesicht:angeekelt",
-              "titel": "Dégoût"
+              "titel": "Dégoût",
+              "nummer": 6
             },
             {
               "bild": "gesicht:stolz",
@@ -557,7 +545,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Pour aller plus loin : ces émotions sont plus difficiles à montrer. L’explication aide à jouer. Sur les cartes vides, écrivez vos propres mots.",
+          "text": "Pour les pros : ces émotions sont plus difficiles à montrer – dans le duel, elles comptent double.",
+          "hinweis": "L’explication aide à jouer. Sur les cartes vides, écrivez vos propres mots.",
           "symbole": [
             "schneiden",
             "schreiben"
@@ -566,7 +555,7 @@
         {
           "art": "karten",
           "spalten": 3,
-          "hoehe": 112,
+          "hoehe": 124,
           "karten": [
             {
               "titel": "Envie",
@@ -623,14 +612,13 @@
         }
       ],
       "lehrer": {
-        "ziel": "Les jeunes reconnaissent les émotions sur le visage et dans la posture, les jouent et enrichissent leur vocabulaire émotionnel. Le jeu sert au mime (séance 7), au memory (séance 8) et au dé des émotions (séance 10).",
+        "ziel": "Les jeunes reconnaissent les émotions sur le visage et dans la posture, les jouent et enrichissent leur vocabulaire émotionnel. Le jeu de cartes sert aux séances 7, 8 et 10 et aux séances joker.",
         "ablauf": [
-          "Préparer : copier la page 1 en deux exemplaires, la page 2 en un, sur papier épais ; découper, plastifier si besoin.",
-          "Mime (20 min) : à tour de rôle, tirer une carte et montrer l’émotion d’abord en statue, puis en mouvement. Question : à quoi l’avez-vous reconnue ? Page 2 seulement en seconde moitié.",
-          "Pupitre (séance 8) : disposer joie, tristesse, peur, colère et dégoût en demi-cercle ; pour chaque situation, chacun se place près de l’émotion qui serait au pupitre chez soi.",
-          "Memory (15 min) : poser les deux jeux de la page 1 face cachée. Qui trouve une paire cite une situation où l’on ressent cela.",
-          "Dé des émotions : coller les six émotions de base sur un dé en carton ou une boîte d’au moins 7 cm d’arête – ou tirer les cartes face cachée.",
-          "Remplir les cartes vides avec des mots de la carte mentale du groupe."
+          "Préparer : copier la page 1 deux fois et la page 2 une fois sur du papier épais, découper.",
+          "Séance 7 : les cartes 1 à 6 servent de panneaux pour « Six coins ». Après la pause, duel de mime avec toutes les cartes ; pour finir, chaque équipe construit une image figée.",
+          "Séance 8 : joie, tristesse, peur, colère et dégoût sont posées en demi-cercle – c’est le pupitre ; au studio de doublage, on tire les mêmes cartes.",
+          "Séance 10 : joie, tristesse, colère, peur, honte et doute sont les cases où l’on mise ses jetons. Pour le duel des dés, un dé et les cartes 1 à 6 suffisent.",
+          "Memory (boîte de jeux) : étaler les deux jeux de la page 1, face cachée. Qui trouve une paire cite une situation."
         ],
         "hintergrund": "Reconnaître les émotions sur le visage et le corps est une base de l’empathie. Ekman (1992) décrit pour les émotions de base des expressions faciales comprises dans de nombreuses cultures. Le mime permet non seulement de reconnaître les émotions, mais de les jouer : le lien entre émotion, mimique et posture devient perceptible. Un vocabulaire émotionnel riche aide à percevoir plus finement ce qui se passe en soi et à mieux réagir (Brackett, 2019). La page 2 réunit donc des émotions qui restent souvent sans nom au quotidien.",
         "quellen": [
@@ -646,13 +634,14 @@
           "Quelle émotion voit-on rarement chez les autres ?"
         ],
         "tipps": [
-          "L’adulte qui anime joue lui-même le premier mime et exagère sans complexe.",
-          "Qui ne veut pas jouer seul devant le groupe joue à deux."
+          "L’adulte qui anime joue lui-même la première carte et exagère sans complexe.",
+          "Personne ne doit jouer seul devant le groupe : à deux, c’est toujours permis, « je passe » aussi."
         ],
         "achtung": "Si une situation du memory évoque un vécu douloureux : reconnaître, poursuivre le jeu, proposer plus tard un entretien individuel ; informer au besoin la direction (responsable).",
-        "material": "Papier épais, ciseaux, dé en carton, colle"
+        "material": "Papier épais, ciseaux, un dé, chronomètre ou minuteur du téléphone"
       }
-    }
+    },
+    "look": "spiel"
   },
   {
     "id": "skills-wer-sitzt-am-steuer",
@@ -667,7 +656,7 @@
       "einzeln",
       "gruppe"
     ],
-    "dauer": "30 Min. mit Filmausschnitten",
+    "dauer": "25 Min. mit Filmausschnitten",
     "eldib": [
       "K-21",
       "K-26",
@@ -676,8 +665,9 @@
     "schlagworte": [
       "Alles steht Kopf",
       "Film",
+      "Tippspiel",
       "Grundgefühle",
-      "angenehm und unangenehm",
+      "Steuerpult",
       "Skills-Kurs"
     ],
     "bild": "icon:device-tv",
@@ -690,16 +680,12 @@
     ],
     "de": {
       "titel": "Wer sitzt am Steuer?",
-      "untertitel": "Beobachtungsbogen zu den Filmen „Alles steht Kopf“ 1 und 2",
+      "untertitel": "Dein Tippschein zu „Alles steht Kopf“ – und dein eigenes Steuerpult",
       "bausteine": [
         {
-          "art": "text",
-          "text": "In Rileys Kopf arbeiten fünf Gefühle an einem Steuerpult: Freude, Kummer, Angst, Wut und Ekel. Wer gerade am Pult steht, bestimmt, wie Riley reagiert. Im zweiten Teil ist Riley 13 – und vier neue Gefühle ziehen ein."
-        },
-        {
           "art": "aufgabe",
-          "text": "Während der Szenen: Ist das Gefühl angenehm, unangenehm – oder je nachdem? Kreuze an.",
-          "hinweis": "Nur ankreuzen. Schreiben kannst du nach dem Film.",
+          "text": "Film-Tipp: Bei jedem Stopp wettest du – welches Gefühl greift jetzt zum Steuer?",
+          "hinweis": "Ein Kreuz pro Stopp, bevor der Film weiterläuft. Richtig getippt? Mal einen Kreis um dein Kreuz.",
           "symbole": [
             "ankreuzen"
           ]
@@ -707,75 +693,67 @@
         {
           "art": "einschaetzung",
           "items": [
+            "Stopp 1 · Brokkoli",
+            "Stopp 2 · Nachtisch",
+            "Stopp 3 · Neue Klasse",
+            "Stopp 4 · Bing Bong"
+          ],
+          "optionen": [
+            "Freude",
+            "Kummer",
+            "Angst",
+            "Wut",
+            "Ekel"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dein Steuerpult: Welches Gefühl sitzt bei dir wie oft am Steuer? Schreib die Gefühle in die passende Reihe.",
+          "hinweis": "Du entscheidest, was du davon in der Runde erzählst.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "rangliste",
+          "stufen": [
+            "oft",
+            "manchmal",
+            "selten"
+          ],
+          "items": [
             "Freude",
             "Kummer",
             "Angst",
             "Wut",
             "Ekel",
-            "Zweifel (Teil 2)",
-            "Neid (Teil 2)",
-            "Peinlich (Teil 2)",
-            "Ennui – Langeweile (Teil 2)"
+            "Zweifel",
+            "Neid",
+            "Peinlich",
+            "Langeweile"
           ],
-          "optionen": [
-            "angenehm",
-            "unangenehm",
-            "je nachdem"
-          ]
-        },
-        {
-          "art": "aufgabe",
-          "text": "Nach den Szenen: Wähle zwei unangenehme Gefühle aus dem Film. Wozu sind sie für Riley gut?",
-          "symbole": [
-            "schreiben"
-          ]
-        },
-        {
-          "art": "tabelle",
-          "spalten": [
-            "Gefühl",
-            "Was macht es im Film?",
-            "Wozu ist es gut?"
-          ],
-          "breiten": [
-            1,
-            2.4,
-            2.2
-          ],
-          "beispiel": [
-            "Angst",
-            "Sie passt auf, dass Riley sich als kleines Kind nicht verletzt.",
-            "Sie schützt vor Gefahren."
-          ],
-          "zeilen": 2
-        },
-        {
-          "art": "aufgabe",
-          "text": "Und bei dir? Ergänze die Sätze.",
-          "hinweis": "Du entscheidest, was du davon in der Runde erzählst.",
-          "symbole": [
-            "nachdenken",
-            "schreiben"
-          ]
+          "hoehe": 2
         },
         {
           "art": "satzanfaenge",
           "items": [
-            "Am witzigsten fand ich …, weil …",
-            "Am ehesten erkenne ich mich in …, weil …",
-            "Bei mir sitzt oft … am Steuer, zum Beispiel wenn …"
-          ],
-          "linien": 2
+            "Am ehesten erkenne ich mich in …, weil …"
+          ]
+        },
+        {
+          "art": "mission",
+          "text": "Steuer-Check: Halt diese Woche fünfmal kurz an und frag dich: Welches Gefühl sitzt gerade am Steuer?",
+          "tage": 5,
+          "beweis": "ein Wort – wer saß am häufigsten am Steuer?"
         }
       ],
       "lehrer": {
-        "ziel": "Die Jugendlichen erkennen Gefühle in Filmszenen, unterscheiden angenehme und unangenehme Gefühle und begründen, wozu auch die unangenehmen gut sind. Das Steuerpult wird zum gemeinsamen Bild für den Kurs.",
+        "ziel": "Die Jugendlichen erkennen in Filmszenen, welches Gefühl gerade das Handeln bestimmt, und übertragen das Bild vom Steuerpult auf sich selbst: Wer sitzt bei mir oft am Steuer?",
         "ablauf": [
-          "Vorher: Vorführrechte klären lassen, Altersfreigabe beider Filme prüfen, Szenen heraussuchen (Szenenliste in Einheit 8).",
-          "Vor dem Film (2 Min.): Aufgabe 1 erklären – während der Szenen wird nur angekreuzt.",
-          "Szenen zeigen (15–20 Min.), nach jeder kurz fragen: Wer stand am Pult? Was hat Riley deshalb getan?",
-          "Aufgabe 1 vergleichen (3 Min.): Wann kann Angst angenehm sein, wann Freude unangenehm?",
-          "Aufgabe 2 zu zweit, Aufgabe 3 einzeln (8 Min.); Antworten nur freiwillig teilen."
+          "Vorher: Vorführrechte klären lassen, Altersfreigabe prüfen, Szenen und die vier Stopp-Stellen heraussuchen (Liste in Einheit 8).",
+          "Aufgabe 1 (während der Szenen): Bei jedem Stopp stellen sich alle zu der Pult-Karte, auf die sie wetten, und kreuzen an; dann läuft der Film weiter. Auflösung: Ekel, Wut, Kummer, Kummer.",
+          "Nach den Szenen (6 Min.): Was zeigt der Film über Gefühle? Die Sätze der Gruppe auf ein Plakat schreiben.",
+          "Aufgabe 2 und 3 (5 Min.): jede Person für sich; geteilt wird nur freiwillig. Mission vorlesen."
         ],
         "hintergrund": "Für „Alles steht Kopf“ ließ sich Pixar von den Emotionsforschern Dacher Keltner und Paul Ekman beraten. Sie betonen zwei Einsichten, die der Film anschaulich macht: Gefühle stören das Denken nicht, sondern ordnen es, und sie regeln unser Zusammenleben – Kummer zeigt anderen, dass jemand Trost braucht (Keltner & Ekman, 2015). Die fünf Figuren entsprechen fünf der Grundgefühle nach Ekman (1992). Filmszenen schaffen Abstand: Über Rileys Gefühle zu sprechen, fällt leichter als über die eigenen – und doch erkennen sich viele darin wieder.",
         "quellen": [
@@ -783,16 +761,16 @@
           "Ekman, P. (1992). An argument for basic emotions. Cognition and Emotion, 6(3–4), 169–200."
         ],
         "differenzierung": {
-          "leichter": "Nur die fünf Gefühle aus Teil 1; Aufgabe 2 gemeinsam an der Tafel.",
-          "schwerer": "Eine eigene Alltagsszene als Steuerpult-Szene beschreiben: Wer steht am Pult, wer will hin?"
+          "leichter": "In Aufgabe 2 nur die fünf Gefühle aus Teil 1 einsortieren.",
+          "schwerer": "Zwei Ranglisten in zwei Farben: eine für die Schule, eine für zu Hause."
         },
         "impulse": [
           "Warum will Freude Kummer vom Pult fernhalten – und ist das eine gute Idee?",
           "Was wäre, wenn nur Freude am Pult stünde?"
         ],
         "tipps": [
-          "Die französische Fassung heißt „Vice-versa“; die Namen der Gefühle unterscheiden sich, also beide an die Tafel schreiben.",
-          "Den ganzen Film zeigt die Joker-Einheit „Alles steht Kopf“."
+          "Kaum jemand tippt auf Kummer – und zweimal ist er richtig. Genau darüber lohnt sich das Gespräch.",
+          "Die französische Fassung heißt „Vice-versa“; die Namen der Gefühle unterscheiden sich, also beide an die Tafel schreiben."
         ],
         "achtung": "Umzug, Heimweh und Streit mit den Eltern können Jugendliche treffen, die nicht bei ihrer Familie leben oder einen Verlust erleben. Vorher überlegen, wen es betrifft, und nach dem Film ansprechbar sein.",
         "material": "Filmausschnitte, Beamer, Lautsprecher, Klemmbretter"
@@ -800,16 +778,12 @@
     },
     "fr": {
       "titel": "Qui est aux commandes ?",
-      "untertitel": "Fiche d’observation pour les films « Vice-versa » 1 et 2",
+      "untertitel": "Ta grille de paris pour « Vice-versa » – et ton propre pupitre",
       "bausteine": [
         {
-          "art": "text",
-          "text": "Dans la tête de Riley, cinq émotions se relaient au pupitre : Joie, Tristesse, Peur, Colère, Dégoût. Celle qui y est décide de la réaction de Riley. Dans le film 2, Riley a 13 ans – et quatre nouvelles arrivent."
-        },
-        {
           "art": "aufgabe",
-          "text": "Pendant les scènes : l’émotion est-elle agréable, désagréable – ou ça dépend ? Coche.",
-          "hinweis": "Tu coches seulement. Tu pourras écrire après le film.",
+          "text": "Pari de cinéma : à chaque arrêt, tu paries – quelle émotion prend les commandes ?",
+          "hinweis": "Une croix par arrêt, avant que le film continue. Bien vu ? Entoure ta croix.",
           "symbole": [
             "ankreuzen"
           ]
@@ -817,75 +791,67 @@
         {
           "art": "einschaetzung",
           "items": [
+            "Arrêt 1 · Brocoli",
+            "Arrêt 2 · Dessert",
+            "Arrêt 3 · Nouvelle classe",
+            "Arrêt 4 · Bing Bong"
+          ],
+          "optionen": [
+            "Joie",
+            "Tristesse",
+            "Peur",
+            "Colère",
+            "Dégoût"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ton pupitre : quelle émotion est aux commandes chez toi, et à quelle fréquence ? Écris les émotions dans la bonne ligne.",
+          "hinweis": "C’est toi qui décides ce que tu en racontes au groupe.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "rangliste",
+          "stufen": [
+            "souvent",
+            "parfois",
+            "rarement"
+          ],
+          "items": [
             "Joie",
             "Tristesse",
             "Peur",
             "Colère",
             "Dégoût",
-            "Anxiété (film 2)",
-            "Envie (film 2)",
-            "Embarras (film 2)",
-            "Ennui (film 2)"
+            "Anxiété",
+            "Envie",
+            "Embarras",
+            "Ennui"
           ],
-          "optionen": [
-            "agréable",
-            "désagréable",
-            "ça dépend"
-          ]
-        },
-        {
-          "art": "aufgabe",
-          "text": "Après les scènes : choisis deux émotions désagréables du film. À quoi servent-elles pour Riley ?",
-          "symbole": [
-            "schreiben"
-          ]
-        },
-        {
-          "art": "tabelle",
-          "spalten": [
-            "Émotion",
-            "Que fait-elle dans le film ?",
-            "À quoi sert-elle ?"
-          ],
-          "breiten": [
-            1,
-            2.4,
-            2.2
-          ],
-          "beispiel": [
-            "Peur",
-            "Elle veille à ce que la petite Riley ne se blesse pas.",
-            "Elle protège des dangers."
-          ],
-          "zeilen": 2
-        },
-        {
-          "art": "aufgabe",
-          "text": "Et toi ? Complète les phrases.",
-          "hinweis": "C’est toi qui décides ce que tu en racontes au groupe.",
-          "symbole": [
-            "nachdenken",
-            "schreiben"
-          ]
+          "hoehe": 2
         },
         {
           "art": "satzanfaenge",
           "items": [
-            "Le plus drôle, c’était …, parce que …",
-            "Je me reconnais surtout dans …, parce que …",
-            "Chez moi, c’est souvent … qui est aux commandes, par exemple quand …"
-          ],
-          "linien": 2
+            "Je me reconnais surtout dans …, parce que …"
+          ]
+        },
+        {
+          "art": "mission",
+          "text": "Contrôle du pupitre : cette semaine, arrête-toi cinq fois un instant et demande-toi : quelle émotion est aux commandes ?",
+          "tage": 5,
+          "beweis": "un mot – qui était le plus souvent aux commandes ?"
         }
       ],
       "lehrer": {
-        "ziel": "Les jeunes reconnaissent les émotions dans des scènes de film, distinguent agréable et désagréable et expliquent à quoi servent aussi les émotions désagréables. Le pupitre devient une image commune pour le cours.",
+        "ziel": "Les jeunes repèrent dans des scènes de film quelle émotion dirige l’action et reprennent l’image du pupitre pour eux-mêmes : qui est souvent aux commandes chez moi ?",
         "ablauf": [
-          "Avant : faire clarifier les droits de projection, vérifier l’âge minimal des deux films, choisir les scènes (liste à la séance 8).",
-          "Avant le film (2 min) : expliquer la tâche 1 – pendant les scènes, on coche seulement.",
-          "Scènes (15–20 min) ; après chacune : qui était au pupitre ? Qu’a fait Riley en conséquence ?",
-          "Comparer la tâche 1 (3 min) : quand la peur est-elle agréable, quand la joie désagréable ?",
-          "Tâche 2 à deux, tâche 3 en solo (8 min) ; partage volontaire."
+          "Avant : faire clarifier les droits de projection, vérifier la classification d’âge, repérer les scènes et les quatre arrêts (liste à la séance 8).",
+          "Exercice 1 (pendant les scènes) : à chaque arrêt, tous se placent près de la carte du pupitre sur laquelle ils parient et cochent ; puis le film continue. Réponses : Dégoût, Colère, Tristesse, Tristesse.",
+          "Après les scènes (6 min) : que montre le film sur les émotions ? Noter les phrases du groupe sur une affiche.",
+          "Exercices 2 et 3 (5 min) : chacun pour soi ; on ne partage que si on le souhaite. Lire la mission."
         ],
         "hintergrund": "Pour « Vice-versa », Pixar a consulté les chercheurs Dacher Keltner et Paul Ekman. Ils soulignent deux idées que le film rend visibles : les émotions ne gênent pas la pensée, elles l’organisent, et elles règlent la vie en commun – la tristesse montre qu’on a besoin de réconfort (Keltner & Ekman, 2015). Les cinq personnages correspondent à cinq émotions de base selon Ekman (1992). Les scènes de film créent de la distance : parler des émotions de Riley est plus facile que des siennes – et beaucoup s’y reconnaissent pourtant.",
         "quellen": [
@@ -893,21 +859,22 @@
           "Ekman, P. (1992). An argument for basic emotions. Cognition and Emotion, 6(3–4), 169–200."
         ],
         "differenzierung": {
-          "leichter": "Seulement les cinq émotions du film 1 ; tâche 2 en commun au tableau.",
-          "schwerer": "Décrire une scène du quotidien comme une scène de pupitre : qui est au pupitre, qui veut y accéder ?"
+          "leichter": "Exercice 2 : classer seulement les cinq émotions du film 1.",
+          "schwerer": "Deux classements en deux couleurs : un pour l’école, un pour la maison."
         },
         "impulse": [
           "Pourquoi Joie écarte-t-elle Tristesse du pupitre – est-ce une bonne idée ?",
           "Que se passerait-il si seule Joie était au pupitre ?"
         ],
         "tipps": [
-          "Les noms des émotions varient selon la langue du film (allemand : Kummer pour Tristesse) : écrire les deux au tableau.",
-          "Le film entier peut être projeté à la séance joker « Vice-versa »."
+          "Presque personne ne parie sur Tristesse – et elle est deux fois la bonne réponse. C’est de cela qu’il vaut la peine de parler.",
+          "Les noms des émotions varient selon la langue du film (allemand : Kummer pour Tristesse) : écrire les deux au tableau."
         ],
         "achtung": "Déménagement, mal du pays et disputes avec les parents peuvent toucher des jeunes qui ne vivent pas avec leur famille ou qui vivent une perte. Y penser à l’avance et rester disponible après le film.",
         "material": "Extraits de films, projecteur, haut-parleurs, planchettes à pince"
       }
-    }
+    },
+    "look": "spiel"
   },
   {
     "id": "skills-gefuehls-landkarte",
@@ -922,7 +889,7 @@
       "einzeln",
       "gruppe"
     ],
-    "dauer": "20 Min.",
+    "dauer": "15 Min.",
     "eldib": [
       "K-26",
       "K-16",
@@ -947,16 +914,12 @@
     ],
     "de": {
       "titel": "Meine Gefühls-Landkarte",
-      "untertitel": "Wo spüre ich Wut, Angst, Freude und Traurigkeit – und was merke ich zuerst?",
+      "untertitel": "Wo spürst du Wut, Angst, Freude und Traurigkeit – und was meldet sich zuerst?",
       "bausteine": [
         {
-          "art": "text",
-          "text": "Gefühle passieren nicht nur im Kopf. Oft merkt der Körper zuerst, dass etwas los ist: Das Herz klopft, der Bauch wird eng, das Gesicht wird heiß."
-        },
-        {
           "art": "aufgabe",
-          "text": "Wo spürst du Wut, Angst, Freude und Traurigkeit? Mal die Stellen in der passenden Farbe aus.",
-          "hinweis": "Denk an einen echten Moment, zum Beispiel an den letzten Streit oder den letzten richtig guten Tag. Überschneidungen sind erlaubt.",
+          "text": "Wo spürst du die vier Gefühle? Mal die Stellen in der passenden Farbe aus.",
+          "hinweis": "Denk an einen echten Moment: den letzten Streit, den letzten richtig guten Tag. Farben dürfen sich überlappen.",
           "symbole": [
             "malen"
           ]
@@ -990,7 +953,7 @@
           "rechts": [
             {
               "art": "aufgabe",
-              "text": "Woran merkst du, dass du wütend wirst – noch bevor du etwas sagst oder tust?",
+              "text": "Woran merkst du, dass du wütend wirst – noch bevor du etwas sagst?",
               "symbole": [
                 "ankreuzen"
               ]
@@ -1011,7 +974,8 @@
             },
             {
               "art": "aufgabe",
-              "text": "Was kommt bei dir zuerst? Das ist dein Warnsignal.",
+              "text": "Was kommt zuerst? Das ist dein Warnsignal.",
+              "hinweis": "Wer es früh bemerkt, hat mehr Zeit zu entscheiden.",
               "symbole": [
                 "schreiben"
               ]
@@ -1021,37 +985,24 @@
               "items": [
                 "Bei Wut merke ich zuerst …",
                 "Bei Angst merke ich zuerst …"
-              ],
-              "linien": 2
+              ]
             }
           ]
         },
         {
-          "art": "aufgabe",
-          "text": "Achte bis zum nächsten Mal darauf: Wann hat sich dein Warnsignal gemeldet – und was hast du dann gemacht?",
-          "symbole": [
-            "nachdenken",
-            "schreiben"
-          ]
-        },
-        {
-          "art": "linien",
-          "anzahl": 2
-        },
-        {
-          "art": "info",
-          "symbol": "merke",
-          "titel": "Deine Frühwarnanlage",
-          "text": "Wer das erste Signal bemerkt, hat mehr Zeit zu entscheiden, was er tut. Ab Einheit 11 suchst du Skills, die genau dann helfen. Dein Blatt musst du niemandem zeigen."
+          "art": "mission",
+          "text": "Warnsignal-Jagd: Erwisch diese Woche zweimal dein erstes Warnsignal – bei Wut, Angst oder Aufregung.",
+          "tage": 2,
+          "beweis": "Daumen – und wo im Körper hat es sich gemeldet?"
         }
       ],
       "lehrer": {
-        "ziel": "Die Jugendlichen nehmen wahr, wo sie Wut, Angst, Freude und Traurigkeit im Körper spüren, und benennen ihr erstes Warnsignal für Wut und Angst – die Grundlage für den Notfallplan in Modul 3.",
+        "ziel": "Die Jugendlichen zeichnen ein, wo sie Wut, Angst, Freude und Traurigkeit im Körper spüren, und benennen ihr erstes Warnsignal für Wut und für Angst – die Grundlage für den Ampelplan in Modul 3.",
         "ablauf": [
-          "Einstieg (4 Min.): „Woran merkst du, dass du wütend wirst – noch bevor du etwas sagst?“ Antworten um einen Körperumriss an der Tafel sammeln.",
-          "Aufgabe 1 (8 Min.): Farben wie im Gefühlsrad; ruhig arbeiten lassen.",
-          "Vergleichen (4 Min.): Wer mag, legt sein Blatt in die Mitte. Wo sind wir uns ähnlich, wo verschieden?",
-          "Aufgabe 2 und 3 (4 Min.); Aufgabe 4 ist ein Beobachtungsauftrag bis zur nächsten Einheit."
+          "Vorher im Raum (12 Min.): das Körper-Labor. Die Gruppe hat vier Körperzustände ausprobiert und Punkte auf den großen Umriss geklebt.",
+          "Aufgabe 1 (7 Min.): die Landkarte still ausmalen, Farben wie im Gefühlsrad.",
+          "Aufgabe 2 und 3 (5 Min.): Signale ankreuzen, dann das erste Signal für Wut und für Angst aufschreiben.",
+          "Vergleichen (2 Min.): Wer mag, legt sein Blatt in die Mitte. Mission vorlesen."
         ],
         "hintergrund": "Gefühle sind Zustände des ganzen Körpers: Herzschlag, Atmung und Muskelspannung verändern sich mit. Nummenmaa und Kollegen (2014) ließen über 700 Personen einzeichnen, wo sie bei verschiedenen Gefühlen etwas spüren. Die Körperkarten unterschieden sich je nach Gefühl deutlich und ähnelten sich in westeuropäischen und ostasiatischen Stichproben – Wut etwa zeigte sich in Kopf, Brust und Armen. Solche Signale kommen oft früher als der Gedanke „Ich bin wütend“, und je früher man eingreift, desto leichter gelingt die Regulation (Gross, 1998).",
         "quellen": [
@@ -1076,16 +1027,12 @@
     },
     "fr": {
       "titel": "Ma carte des émotions",
-      "untertitel": "Où ressens-je la colère, la peur, la joie et la tristesse – et qu’est-ce que je remarque en premier ?",
+      "untertitel": "Où ressens-tu la colère, la peur, la joie et la tristesse – et qu’est-ce qui se manifeste en premier ?",
       "bausteine": [
         {
-          "art": "text",
-          "text": "Les émotions ne se passent pas seulement dans la tête. Souvent, c’est le corps qui remarque le premier que quelque chose se passe : le cœur bat fort, le ventre se serre, le visage devient chaud."
-        },
-        {
           "art": "aufgabe",
-          "text": "Où ressens-tu la colère, la peur, la joie et la tristesse ? Colorie les endroits avec la couleur qui correspond.",
-          "hinweis": "Pense à un vrai moment, par exemple la dernière dispute ou le dernier très bon jour. Les zones peuvent se chevaucher.",
+          "text": "Où ressens-tu les quatre émotions ? Colorie les endroits avec la bonne couleur.",
+          "hinweis": "Pense à un vrai moment : la dernière dispute, le dernier très bon jour. Les couleurs peuvent se chevaucher.",
           "symbole": [
             "malen"
           ]
@@ -1119,7 +1066,7 @@
           "rechts": [
             {
               "art": "aufgabe",
-              "text": "À quoi remarques-tu que tu te mets en colère – avant même de dire ou de faire quoi que ce soit ?",
+              "text": "À quoi remarques-tu que la colère monte – avant même de parler ?",
               "symbole": [
                 "ankreuzen"
               ]
@@ -1140,7 +1087,8 @@
             },
             {
               "art": "aufgabe",
-              "text": "Qu’est-ce qui vient chez toi en premier ? C’est ton signal d’alerte.",
+              "text": "Qu’est-ce qui vient en premier ? C’est ton signal d’alerte.",
+              "hinweis": "Le remarquer tôt, c’est avoir plus de temps pour décider.",
               "symbole": [
                 "schreiben"
               ]
@@ -1150,37 +1098,24 @@
               "items": [
                 "Quand je suis en colère, je remarque d’abord …",
                 "Quand j’ai peur, je remarque d’abord …"
-              ],
-              "linien": 2
+              ]
             }
           ]
         },
         {
-          "art": "aufgabe",
-          "text": "D’ici la prochaine fois, fais attention : quand ton signal d’alerte s’est-il manifesté – et qu’as-tu fait alors ?",
-          "symbole": [
-            "nachdenken",
-            "schreiben"
-          ]
-        },
-        {
-          "art": "linien",
-          "anzahl": 2
-        },
-        {
-          "art": "info",
-          "symbol": "merke",
-          "titel": "Ton système d’alerte précoce",
-          "text": "Quand on remarque le premier signal, on a plus de temps pour décider quoi faire. À partir de la séance 11, tu cherches des skills qui aident justement à ce moment-là. Tu n’as à montrer ta feuille à personne."
+          "art": "mission",
+          "text": "Chasse au signal : cette semaine, repère deux fois ton premier signal d’alerte – colère, peur ou trac.",
+          "tage": 2,
+          "beweis": "pouce – et où dans le corps s’est-il manifesté ?"
         }
       ],
       "lehrer": {
-        "ziel": "Les jeunes perçoivent où ils ressentent colère, peur, joie et tristesse dans le corps et nomment leur premier signal d’alerte pour la colère et la peur – base du plan d’urgence du module 3.",
+        "ziel": "Les jeunes dessinent où ils ressentent colère, peur, joie et tristesse dans le corps et nomment leur premier signal d’alerte pour la colère et pour la peur – base du plan feu tricolore du module 3.",
         "ablauf": [
-          "Entrée en matière (4 min) : « À quoi remarques-tu que tu te mets en colère – avant même de parler ? » Noter les réponses autour d’un contour de corps au tableau.",
-          "Tâche 1 (8 min) : couleurs comme sur la roue des émotions ; laisser travailler au calme.",
-          "Comparer (4 min) : qui veut pose sa feuille au milieu. Qu’avons-nous en commun, en quoi diffère-t-on ?",
-          "Tâches 2 et 3 (4 min) ; la tâche 4 est une mission d’observation jusqu’à la séance suivante."
+          "Avant, dans la salle (12 min) : le labo du corps. Le groupe a essayé quatre états du corps et collé des gommettes sur le grand contour.",
+          "Exercice 1 (7 min) : colorier la carte en silence, mêmes couleurs que la roue des émotions.",
+          "Exercices 2 et 3 (5 min) : cocher les signaux, puis noter le premier signal pour la colère et pour la peur.",
+          "Comparer (2 min) : qui veut pose sa feuille au centre. Lire la mission."
         ],
         "hintergrund": "Les émotions sont des états du corps entier : rythme cardiaque, respiration et tension musculaire changent. Nummenmaa et al. (2014) ont fait dessiner à plus de 700 personnes où elles ressentent quelque chose pour différentes émotions. Les cartes corporelles différaient nettement selon l’émotion et se ressemblaient en Europe occidentale et en Asie orientale – la colère apparaissait dans la tête, la poitrine et les bras. Ces signaux précèdent souvent la pensée « Je suis en colère » ; plus on intervient tôt, plus la régulation est facile (Gross, 1998).",
         "quellen": [
@@ -1202,7 +1137,8 @@
         "achtung": "Porter l’attention sur le corps peut gêner ; personne n’est obligé de montrer sa feuille. En cas d’indices de blessures ou de violence : entretien individuel, informer la direction (responsable), agir selon le concept de protection.",
         "material": "Crayons de couleur rouge, violet, jaune, bleu"
       }
-    }
+    },
+    "look": "spiel"
   },
   {
     "id": "skills-gemischte-gefuehle",
@@ -1217,7 +1153,7 @@
       "einzeln",
       "gruppe"
     ],
-    "dauer": "25 Min.",
+    "dauer": "15 Min.",
     "eldib": [
       "K-26",
       "K-16",
@@ -1227,7 +1163,8 @@
       "gemischte Gefühle",
       "Gefühlsstärke",
       "Skala 0–10",
-      "Sichtweisen",
+      "Mischpult",
+      "Würfel",
       "Skills-Kurs"
     ],
     "bild": "icon:palette",
@@ -1240,74 +1177,71 @@
     ],
     "de": {
       "titel": "Gemischte Gefühle",
-      "untertitel": "Selten fühlt man nur eine Sache – und das ist normal.",
+      "untertitel": "Selten fühlt man nur eine Sache – und jedes Gefühl hat seine eigene Lautstärke.",
       "bausteine": [
         {
-          "art": "text",
-          "text": "Du freust dich auf die Party und bist gleichzeitig sauer auf deinen besten Freund. Das ist kein Widerspruch: Gefühle mischen sich wie Farben, und oft ist eines stärker als die anderen."
-        },
-        {
           "art": "aufgabe",
-          "text": "Welche Gefühle hättest du? Kreuze alle an, die passen, und kreise das stärkste ein.",
+          "text": "Würfle deine Situation.",
           "symbole": [
-            "ankreuzen",
-            "einkreisen"
+            "partner"
           ]
         },
         {
-          "art": "einschaetzung",
-          "items": [
-            "1. Du hast viel gelernt und trotzdem eine schlechte Note. Dein Sitznachbar hat eine sehr gute.",
-            "2. Du bist zu einer Party eingeladen, hast dich aber am selben Tag mit deinem besten Freund gestritten.",
-            "3. Du wirst vor der Klasse gelobt, und alle schauen dich an.",
-            "4. Du wirst Kapitän deiner Mannschaft, fühlst dich aber noch nicht bereit.",
-            "5. Du gewinnst einen Wettbewerb, aber deine Freunde reagieren neidisch.",
-            "6. Jemand verbreitet ein falsches Gerücht über dich, und viele glauben es.",
-            "7. Eine Freundin erzählt dir ein Geheimnis, das dir Sorgen macht. Du sollst es niemandem sagen.",
-            "8. Deine Familie zieht um. Du bekommst ein größeres Zimmer, aber deine Freunde bleiben zurück."
+          "art": "wuerfel",
+          "zeilen": [
+            "Viel gelernt und trotzdem eine schlechte Note.",
+            "Party-Einladung – und am selben Tag Streit mit deinem besten Freund.",
+            "Du wirst vor der Klasse gelobt, und alle schauen dich an.",
+            "Du wirst Kapitän der Mannschaft, fühlst dich aber noch nicht bereit.",
+            "Umzug: größeres Zimmer, aber deine Freunde bleiben zurück.",
+            "Du gewinnst einen Wettbewerb, und deine Freunde reagieren neidisch."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dein Mischpult: Wie stark wäre jedes Gefühl? Male aus – von 0 bis 10.",
+          "hinweis": "Mehrere Regler dürfen gleichzeitig oben sein. Lass dein Gegenüber vorher tippen: Welcher steht bei dir am höchsten?",
+          "symbole": [
+            "malen"
+          ]
+        },
+        {
+          "art": "balken",
+          "stufen": 10,
+          "pole": [
+            "0",
+            "10"
           ],
-          "optionen": [
+          "items": [
             "Freude",
-            "Trauer",
+            "Traurigkeit",
             "Wut",
             "Angst",
             "Scham",
             "Zweifel"
+          ],
+          "leer": 1
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ein Moment, in dem ich zwei Gefühle auf einmal hatte: …"
           ]
         },
         {
-          "art": "aufgabe",
-          "text": "Und bei dir? Denk an einen Moment mit gemischten Gefühlen. Schreib die Gefühle auf und gib jedem eine Zahl von 0 bis 10.",
-          "hinweis": "0 heißt: gar nicht. 10 heißt: so stark wie nie. Du entscheidest, ob du davon erzählst.",
-          "symbole": [
-            "nachdenken",
-            "schreiben"
-          ]
-        },
-        {
-          "art": "tabelle",
-          "spalten": [
-            "Der Moment",
-            "Meine Gefühle und wie stark (0–10)"
-          ],
-          "breiten": [
-            2.2,
-            2.6
-          ],
-          "beispiel": [
-            "Mein Cousin zieht zurück nach Portugal.",
-            "traurig 8 · froh für ihn 5 · ein bisschen neidisch 2"
-          ],
-          "zeilen": 2
+          "art": "mission",
+          "text": "Mix der Woche: Wenn dich etwas aufwühlt, halt kurz an. Welche zwei Gefühle sind da – und wie stark ist jedes, von 0 bis 10?",
+          "tage": 2,
+          "beweis": "zwei Gefühle und zwei Zahlen"
         }
       ],
       "lehrer": {
-        "ziel": "Die Jugendlichen erkennen, dass mehrere, auch widersprüchliche Gefühle gleichzeitig da sein können und dass dieselbe Situation bei verschiedenen Menschen Verschiedenes auslöst. Sie schätzen die Stärke von Gefühlen von 0 bis 10 ein.",
+        "ziel": "Die Jugendlichen stellen für eine gewürfelte Situation ihre Gefühlsmischung ein und schätzen die Stärke jedes Gefühls von 0 bis 10. Im Vergleich sehen sie: gleiche Situation, anderer Mix.",
         "ablauf": [
-          "Einstieg (5 Min.): „Kann man sich gleichzeitig freuen und traurig sein?“ Das Beispiel aus dem Text an die Tafel schreiben.",
-          "Aufgabe 1 einzeln (8 Min.): alle passenden Gefühle ankreuzen, das stärkste einkreisen.",
-          "Auswerten (8 Min.): Zwei, drei Situationen per Handzeichen auszählen und die Zahlen an die Tafel schreiben. Unterschiede sichtbar machen, nicht bewerten.",
-          "Aufgabe 2 still (4 Min.); teilen nur freiwillig."
+          "Vorher im Raum (13 Min.): „Chips setzen“ – die Gruppe hat erlebt, dass in einer Situation mehrere Gefühle zugleich da sind.",
+          "Aufgabe 1 (2 Min.): Zu zweit würfeln; beide nehmen dieselbe Situation.",
+          "Aufgabe 2 (7 Min.): Jede Person malt verdeckt ihr Mischpult aus. Dann tippen beide, welcher Regler beim anderen am höchsten steht – ein Punkt pro Treffer. Wer schnell ist, würfelt neu und trägt die zweite Runde als Striche in einer anderen Farbe ein.",
+          "Auswerten (4 Min.): Wer hatte denselben Mix wie sein Gegenüber? Aufgabe 3 still; Mission vorlesen."
         ],
         "hintergrund": "Gefühle treten selten einzeln auf. Larsen, McGraw und Cacioppo (2001) zeigten, dass Menschen in bittersüßen Momenten wie einem Abschied tatsächlich gleichzeitig Freude und Traurigkeit empfinden – nicht nur abwechselnd. Plutchik (2001) beschreibt Gefühle wie Farben, die sich zu neuen Mischungen verbinden. Wer gemischte Gefühle als normal erkennt, muss sich nicht für eine Seite entscheiden und versteht widersprüchliche Reaktionen bei sich und anderen besser. Die Stärke einzuschätzen, bereitet die Anspannungsskala von 0 bis 100 ab Einheit 11 vor.",
         "quellen": [
@@ -1315,91 +1249,88 @@
           "Plutchik, R. (2001). The nature of emotions. American Scientist, 89(4), 344–350."
         ],
         "differenzierung": {
-          "leichter": "Nur die Situationen 1 bis 4 bearbeiten.",
-          "schwerer": "Zu einer Situation notieren, was jedes Gefühl tun möchte – und welches am Ende gewinnt."
+          "leichter": "Nur die drei Regler ausmalen, die am meisten passen.",
+          "schwerer": "Neben jeden Regler schreiben, was dieses Gefühl tun möchte – und welches am Ende gewinnt."
         },
         "impulse": [
-          "Welche Situation hat die meisten verschiedenen Kreuze bekommen – und warum?",
+          "Bei welcher Situation lagen eure Regler am weitesten auseinander – und warum?",
           "Kennt ihr Wörter für Mischungen, etwa bittersüß oder Vorfreude?"
         ],
         "tipps": [
-          "Situation 7 bewusst aufgreifen: Geheimnisse, die jemanden in Gefahr bringen, darf und soll man einer Vertrauensperson erzählen.",
-          "Als Aufstellung spielbar: Zu jeder Situation stellen sich alle zu den passenden Gefühlskarten."
+          "Die leere Zeile ist für ein Gefühl, das fehlt: Neid, Stolz, Erleichterung.",
+          "Bei ungerader Zahl spielt die Leitung mit und zeigt ihr eigenes Mischpult."
         ],
-        "achtung": "Gerücht und Sorgen-Geheimnis können an Eigenes rühren: nicht vertiefen, Einzelgespräch anbieten. Bei Hinweisen auf Mobbing oder Gefährdung nach dem Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren.",
-        "material": "Blatt je Person, Stifte"
+        "achtung": "Die Situationen können an Eigenes rühren: nicht vertiefen, Einzelgespräch anbieten. Bei Hinweisen auf Mobbing oder Gefährdung nach dem Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren.",
+        "material": "Ein Würfel je Paar, Buntstifte"
       }
     },
     "fr": {
       "titel": "Émotions mélangées",
-      "untertitel": "On ressent rarement une seule chose – et c’est normal.",
+      "untertitel": "On ressent rarement une seule chose – et chaque émotion a son propre volume.",
       "bausteine": [
         {
-          "art": "text",
-          "text": "Tu te réjouis de la fête et en même temps, tu es en colère contre ton meilleur ami. Ce n’est pas contradictoire : les émotions se mélangent comme des couleurs, et souvent l’une est plus forte que les autres."
-        },
-        {
           "art": "aufgabe",
-          "text": "Quelles émotions aurais-tu ? Coche toutes celles qui conviennent et entoure la plus forte.",
+          "text": "Lance le dé : voici ta situation.",
           "symbole": [
-            "ankreuzen",
-            "einkreisen"
+            "partner"
           ]
         },
         {
-          "art": "einschaetzung",
-          "items": [
-            "1. Tu as beaucoup appris et tu as quand même une mauvaise note. À côté de toi, quelqu’un en a une très bonne.",
-            "2. Tu as une invitation à une fête, mais tu as eu une dispute avec ton meilleur ami le même jour.",
-            "3. On te félicite devant la classe, et tout le monde te regarde.",
-            "4. Tu deviens capitaine de ton équipe, mais tu ne te sens pas encore à la hauteur.",
-            "5. Tu gagnes un concours, mais tes amis réagissent avec jalousie.",
-            "6. Quelqu’un répand une fausse rumeur sur toi, et beaucoup de gens y croient.",
-            "7. Une amie te confie un secret qui t’inquiète. Tu ne dois le dire à personne.",
-            "8. Ta famille déménage. Tu auras une chambre plus grande, mais tes amis restent là-bas."
+          "art": "wuerfel",
+          "zeilen": [
+            "Beaucoup appris, et quand même une mauvaise note.",
+            "Invitation à une fête – et dispute avec ton meilleur ami le même jour.",
+            "On te félicite devant la classe, et tout le monde te regarde.",
+            "Tu deviens capitaine de l’équipe, sans te sentir à la hauteur.",
+            "Déménagement : chambre plus grande, mais tes amis restent là-bas.",
+            "Tu gagnes un concours, et tes amis réagissent avec jalousie."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ta table de mixage : quelle serait la force de chaque émotion ? Colorie – de 0 à 10.",
+          "hinweis": "Plusieurs curseurs peuvent être hauts en même temps. Avant, ton partenaire parie : lequel est le plus haut chez toi ?",
+          "symbole": [
+            "malen"
+          ]
+        },
+        {
+          "art": "balken",
+          "stufen": 10,
+          "pole": [
+            "0",
+            "10"
           ],
-          "optionen": [
+          "items": [
             "Joie",
             "Tristesse",
             "Colère",
             "Peur",
             "Honte",
             "Doute"
+          ],
+          "leer": 1
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Un moment où j’ai eu deux émotions à la fois : …"
           ]
         },
         {
-          "art": "aufgabe",
-          "text": "Et toi ? Pense à un moment avec des émotions mélangées. Note les émotions et donne à chacune un chiffre de 0 à 10.",
-          "hinweis": "0 veut dire : pas du tout. 10 veut dire : plus fort que jamais. C’est toi qui décides si tu en parles.",
-          "symbole": [
-            "nachdenken",
-            "schreiben"
-          ]
-        },
-        {
-          "art": "tabelle",
-          "spalten": [
-            "Le moment",
-            "Mes émotions et leur intensité (0–10)"
-          ],
-          "breiten": [
-            2.2,
-            2.6
-          ],
-          "beispiel": [
-            "Mon cousin retourne vivre au Portugal.",
-            "tristesse 8 · joie pour lui 5 · un peu de jalousie 2"
-          ],
-          "zeilen": 2
+          "art": "mission",
+          "text": "Mélange de la semaine : si quelque chose te remue, arrête-toi un instant. Quelles sont les deux émotions présentes – et leur force, de 0 à 10 ?",
+          "tage": 2,
+          "beweis": "deux émotions et deux chiffres"
         }
       ],
       "lehrer": {
-        "ziel": "Les jeunes reconnaissent que plusieurs émotions, même contradictoires, peuvent coexister et que la même situation déclenche des réactions différentes selon les personnes. Ils évaluent l’intensité des émotions de 0 à 10.",
+        "ziel": "Pour une situation tirée au dé, les jeunes règlent leur mélange d’émotions et évaluent l’intensité de chacune de 0 à 10. En comparant, ils voient : même situation, autre mélange.",
         "ablauf": [
-          "Entrée en matière (5 min) : « Peut-on se réjouir et être triste en même temps ? » Écrire au tableau l’exemple du texte.",
-          "Tâche 1 individuelle (8 min) : cocher toutes les émotions qui conviennent, entourer la plus forte.",
-          "Exploitation (8 min) : compter à main levée pour deux ou trois situations et écrire les chiffres au tableau. Rendre les différences visibles, sans les juger.",
-          "Tâche 2 en silence (4 min) ; partager seulement si on le souhaite."
+          "Avant, dans la salle (13 min) : « Miser ses jetons » – le groupe a vu que plusieurs émotions sont là en même temps dans une même situation.",
+          "Exercice 1 (2 min) : lancer le dé à deux ; les deux prennent la même situation.",
+          "Exercice 2 (7 min) : chacun colorie sa table de mixage en cachette. Puis chacun parie : quel curseur est le plus haut chez l’autre ? Un point par bonne réponse. Les plus rapides relancent le dé et notent la deuxième manche par des traits d’une autre couleur.",
+          "Bilan (4 min) : qui avait le même mélange que son partenaire ? Exercice 3 en silence ; lire la mission."
         ],
         "hintergrund": "Les émotions apparaissent rarement seules. Larsen, McGraw et Cacioppo (2001) ont montré que, dans des moments doux-amers comme un adieu, les gens ressentent bel et bien joie et tristesse en même temps, pas seulement à tour de rôle. Plutchik (2001) décrit les émotions comme des couleurs qui se mélangent. Reconnaître les émotions mélangées comme normales évite de devoir choisir un camp et aide à comprendre les réactions contradictoires chez soi et chez les autres. Évaluer l’intensité prépare l’échelle de tension de 0 à 100 (séance 11).",
         "quellen": [
@@ -1407,20 +1338,21 @@
           "Plutchik, R. (2001). The nature of emotions. American Scientist, 89(4), 344–350."
         ],
         "differenzierung": {
-          "leichter": "Ne traiter que les situations 1 à 4.",
-          "schwerer": "Pour une situation, noter ce que chaque émotion voudrait faire – et laquelle l’emporte à la fin."
+          "leichter": "Colorier seulement les trois curseurs qui conviennent le mieux.",
+          "schwerer": "À côté de chaque curseur, noter ce que cette émotion voudrait faire – et laquelle l’emporte à la fin."
         },
         "impulse": [
-          "Quelle situation a reçu le plus de croix différentes – et pourquoi ?",
+          "Pour quelle situation vos curseurs étaient-ils les plus éloignés – et pourquoi ?",
           "Connaissez-vous des mots pour les mélanges, par exemple doux-amer ou la joie d’avance ?"
         ],
         "tipps": [
-          "Reprendre exprès la situation 7 : un secret qui met quelqu’un en danger, on peut et on doit le confier à une personne de confiance.",
-          "Jouable en se déplaçant : pour chaque situation, tout le monde se place près des cartes d’émotions qui conviennent."
+          "La ligne vide sert à une émotion qui manque : envie, fierté, soulagement.",
+          "Si le nombre est impair, l’animateur joue aussi et montre sa propre table de mixage."
         ],
-        "achtung": "La rumeur et le secret qui inquiète peuvent toucher à du vécu : ne pas approfondir, proposer un entretien individuel. En cas d’indices de harcèlement ou de mise en danger, agir selon le concept de protection et informer la direction compétente (responsable).",
-        "material": "Une feuille par personne, crayons"
+        "achtung": "Les situations peuvent toucher à du vécu : ne pas approfondir, proposer un entretien individuel. En cas d’indices de harcèlement ou de mise en danger, agir selon le concept de protection et informer la direction compétente (responsable).",
+        "material": "Un dé par duo, crayons de couleur"
       }
-    }
+    },
+    "look": "spiel"
   }
 ]

@@ -11,7 +11,7 @@
     "sozialform": [
       "gruppe"
     ],
-    "dauer": "25 Min.",
+    "dauer": "20–25 Min.",
     "eldib": [
       "SOZ-12",
       "K-14",
@@ -33,81 +33,37 @@
       "untertitel": "Herumgehen, fragen, nachhaken – und herausfinden, was ihr gemeinsam habt.",
       "bausteine": [
         {
-          "art": "text",
-          "text": "Zehn Felder, zehn kurze Gespräche. Es zählt nicht, wer zuerst fertig ist, sondern was du über die anderen erfährst."
-        },
-        {
           "art": "aufgabe",
-          "text": "Geh herum und frag die anderen. Stimmt ein Satz für jemanden, schreibt die Person ihren Namen ins Feld.",
-          "hinweis": "Jeder Name höchstens zweimal. Wer alle Felder voll hat, ruft „Bingo“ und hilft dann den anderen.",
+          "text": "Geh herum und frag. Stimmt ein Satz, schreibt die Person ihren Namen ins Feld.",
+          "hinweis": "Jeder Name höchstens zweimal. Vier Felder nebeneinander voll? Ruf „Bingo“ – und spiel weiter, bis alle zwölf voll sind.",
           "symbole": [
-            "gruppe",
+            "bewegen",
             "sprechen"
           ]
         },
         {
-          "art": "spalten",
-          "verhaeltnis": "1:1",
-          "links": [
-            {
-              "art": "feld",
-              "label": "… dich heute schon zum Lachen gebracht hat",
-              "hoehe": 2.7
-            },
-            {
-              "art": "feld",
-              "label": "… im selben Monat Geburtstag hat wie du",
-              "hoehe": 2.7
-            },
-            {
-              "art": "feld",
-              "label": "… gern kocht oder backt",
-              "hoehe": 2.7
-            },
-            {
-              "art": "feld",
-              "label": "… sich mit Musik beruhigt",
-              "hoehe": 2.7
-            },
-            {
-              "art": "feld",
-              "label": "… einen Sport macht, den du noch nie ausprobiert hast",
-              "hoehe": 2.7
-            }
-          ],
-          "rechts": [
-            {
-              "art": "feld",
-              "label": "… ein Haustier hat oder gern eins hätte",
-              "hoehe": 2.7
-            },
-            {
-              "art": "feld",
-              "label": "… am Wochenende am liebsten lange schläft",
-              "hoehe": 2.7
-            },
-            {
-              "art": "feld",
-              "label": "… ein Wort in einer Sprache kann, die du nicht sprichst",
-              "hoehe": 2.7
-            },
-            {
-              "art": "feld",
-              "label": "… dir eine Serie oder ein Spiel empfehlen kann",
-              "hoehe": 2.7
-            },
-            {
-              "art": "feld",
-              "label": "… heute schon jemandem geholfen hat",
-              "hoehe": 2.7
-            }
+          "art": "bingo",
+          "spalten": 4,
+          "felder": [
+            "… dich heute schon zum Lachen gebracht hat",
+            "… im selben Monat Geburtstag hat wie du",
+            "… gern kocht oder backt",
+            "… sich mit Musik beruhigt",
+            "… einen Sport macht, den du nie probiert hast",
+            "… ein Haustier hat oder gern eins hätte",
+            "… am Wochenende am liebsten lange schläft",
+            "… dir ein Wort in einer neuen Sprache verrät",
+            "… dir eine Serie oder ein Spiel empfehlen kann",
+            "… heute schon jemandem geholfen hat",
+            "… schon mal im falschen Bus saß",
+            "… ein Talent hat, das man nicht sieht"
           ]
         },
         {
           "art": "info",
           "symbol": "tipp",
           "titel": "Nachhaken",
-          "text": "Frag bei jedem Feld eine Sache nach: Was kochst du am liebsten? Welche Musik? Welches Wort? So wird aus einer Unterschrift ein Gespräch."
+          "text": "Frag bei jedem Feld eine Sache nach: Was kochst du am liebsten? Welche Musik? Welches Wort? So wird aus einem Namen ein Gespräch."
         },
         {
           "art": "aufgabe",
@@ -120,19 +76,23 @@
           "art": "satzanfaenge",
           "items": [
             "Überrascht hat mich, dass …",
-            "Mit … habe ich gemeinsam, dass …",
-            "Diese Frage will ich jemandem noch stellen: …"
-          ],
-          "linien": 1
+            "Mit … habe ich gemeinsam, dass …"
+          ]
+        },
+        {
+          "art": "mission",
+          "text": "Stell diese Woche jemandem, den du noch kaum kennst, eine Frage – und hak einmal nach. Klasse, Bus, Verein: egal wo.",
+          "tage": 1,
+          "beweis": "Daumen hoch oder runter – hast du etwas Neues erfahren?"
         }
       ],
       "lehrer": {
-        "ziel": "Die Jugendlichen kommen in Bewegung ins Gespräch, entdecken Gemeinsamkeiten und üben, bei Antworten nachzufragen. Die Felder sind bewusst harmlos gewählt: Herkunft, Familie und Aussehen kommen nicht vor.",
+        "ziel": "Die Jugendlichen kommen in Bewegung ins Gespräch, entdecken Gemeinsamkeiten und üben, bei Antworten nachzufragen. Die Felder sind bewusst harmlos: Herkunft, Familie und Aussehen kommen nicht vor.",
         "ablauf": [
-          "Einführung (3 Min.): Blatt und Klemmbretter austeilen. Regel: Die gefragte Person schreibt ihren Namen ins Feld, jeder Name höchstens zweimal, in Gruppen unter fünf Personen dreimal. Die Leitung zählt als Person mit.",
-          "Nachhaken vormachen (2 Min.): Die Leitung fragt eine Person vor allen: „Kochst du gern? – Was denn am liebsten?“ und hört wirklich zu.",
-          "Runde (12–14 Min.): Alle gehen herum. Wer alle Felder voll hat, ruft „Bingo“ und hilft danach anderen, ihre Felder zu füllen.",
-          "Auflösen (6 Min.): Im Kreis einzelne Felder aufrufen: „Wer steht bei Musik – und was hört die Person?“ Dann Aufgabe 2; wer mag, liest einen Satz vor."
+          "Einführung (3 Min.): Blatt und Klemmbretter austeilen. Die gefragte Person schreibt ihren Namen ins Feld; jeder Name höchstens zweimal, in Gruppen unter fünf Personen dreimal. Die Leitung spielt mit.",
+          "Nachhaken vormachen (1 Min.): eine Person vor allen fragen – „Kochst du gern? Was denn am liebsten?“ – und wirklich zuhören.",
+          "Runde (12–14 Min.): Vier Felder nebeneinander heißen „Bingo“, danach geht es weiter bis zum vollen Blatt. Wer fertig ist, hilft anderen.",
+          "Auflösen (6 Min.): im Kreis einzelne Felder aufrufen – „Wer steht bei Musik, und was hört die Person?“ Dann Aufgabe 2 und die Mission."
         ],
         "hintergrund": "Zu Beginn prüfen die Mitglieder einer Gruppe vor allem, ob sie dazugehören und wie sicher der Rahmen ist; Tuckman (1965) beschreibt diese erste Phase als Orientierung. Bewegung und kleine, ungefährliche Fragen senken die Hemmschwelle, weil niemand vor allen sprechen muss. Gemeinsamkeiten zu entdecken, stärkt das Erleben von Verbundenheit, das neben Autonomie und Kompetenz zu den psychologischen Grundbedürfnissen gehört (Deci & Ryan, 2000). Die Nachfrage-Regel verhindert, dass das Spiel zum bloßen Unterschriftensammeln wird: Wer nachfragt, zeigt Interesse – eine Grundfertigkeit für Freundschaften und für die Gesprächsübungen im weiteren Kurs.",
         "quellen": [
@@ -140,12 +100,11 @@
           "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268."
         ],
         "differenzierung": {
-          "leichter": "Nur die linke Spalte spielen; als Nachfrage reicht ein einfaches „Welche?“ oder „Was denn?“.",
-          "schwerer": "Zu jedem Feld die Antwort auf die Nachfrage in Stichworten notieren und beim Auflösen eine Gemeinsamkeit der ganzen Gruppe suchen."
+          "leichter": "Nur die obere Reihe spielen; als Nachfrage reicht ein einfaches „Welche?“ oder „Was denn?“.",
+          "schwerer": "Zu jedem Feld die Antwort auf die Nachfrage als Stichwort neben den Namen schreiben."
         },
         "impulse": [
           "Welche Antwort hat dich überrascht?",
-          "Mit wem hast du etwas gemeinsam, das du nicht erwartet hättest?",
           "Wie war es, jemanden anzusprechen, den du noch kaum kennst?"
         ],
         "tipps": [
@@ -161,81 +120,37 @@
       "untertitel": "Circuler, poser des questions, relancer – et découvrir ce que vous avez en commun.",
       "bausteine": [
         {
-          "art": "text",
-          "text": "Dix cases, dix courtes conversations. Ce qui compte, ce n’est pas de finir le premier, mais ce que tu apprends sur les autres."
-        },
-        {
           "art": "aufgabe",
-          "text": "Circule et pose des questions aux autres. Si une phrase correspond à quelqu’un, cette personne écrit son prénom dans la case.",
-          "hinweis": "Chaque prénom au maximum deux fois. Quand toutes tes cases sont remplies, dis « Bingo » à voix haute, puis aide les autres.",
+          "text": "Circule et pose des questions. Si une phrase est vraie, la personne écrit son prénom dans la case.",
+          "hinweis": "Chaque prénom deux fois au plus. Quatre cases côte à côte ? Dis « Bingo » – et continue jusqu’à remplir les douze.",
           "symbole": [
-            "gruppe",
+            "bewegen",
             "sprechen"
           ]
         },
         {
-          "art": "spalten",
-          "verhaeltnis": "1:1",
-          "links": [
-            {
-              "art": "feld",
-              "label": "… t’a déjà fait rire aujourd’hui",
-              "hoehe": 2.7
-            },
-            {
-              "art": "feld",
-              "label": "… fête son anniversaire le même mois que toi",
-              "hoehe": 2.7
-            },
-            {
-              "art": "feld",
-              "label": "… aime cuisiner ou faire de la pâtisserie",
-              "hoehe": 2.7
-            },
-            {
-              "art": "feld",
-              "label": "… se calme en écoutant de la musique",
-              "hoehe": 2.7
-            },
-            {
-              "art": "feld",
-              "label": "… pratique un sport que tu n’as jamais essayé",
-              "hoehe": 2.7
-            }
-          ],
-          "rechts": [
-            {
-              "art": "feld",
-              "label": "… a un animal de compagnie ou en voudrait un",
-              "hoehe": 2.7
-            },
-            {
-              "art": "feld",
-              "label": "… préfère faire la grasse matinée le week-end",
-              "hoehe": 2.7
-            },
-            {
-              "art": "feld",
-              "label": "… connaît un mot dans une langue que tu ne parles pas",
-              "hoehe": 2.7
-            },
-            {
-              "art": "feld",
-              "label": "… peut te recommander une série ou un jeu",
-              "hoehe": 2.7
-            },
-            {
-              "art": "feld",
-              "label": "… a déjà aidé quelqu’un aujourd’hui",
-              "hoehe": 2.7
-            }
+          "art": "bingo",
+          "spalten": 4,
+          "felder": [
+            "… t’a déjà fait rire aujourd’hui",
+            "… a son anniversaire le même mois que toi",
+            "… aime cuisiner ou faire des gâteaux",
+            "… se calme en écoutant de la musique",
+            "… fait un sport que tu n’as jamais essayé",
+            "… a un animal ou aimerait en avoir un",
+            "… adore la grasse matinée le week-end",
+            "… t’apprend un mot dans une langue nouvelle",
+            "… peut te conseiller une série ou un jeu",
+            "… a déjà aidé quelqu’un aujourd’hui",
+            "… a déjà pris le mauvais bus",
+            "… a un talent qu’on ne devine pas"
           ]
         },
         {
           "art": "info",
           "symbol": "tipp",
           "titel": "Relancer",
-          "text": "Pour chaque case, pose une question de plus : Qu’est-ce que tu aimes cuisiner le plus ? Quelle musique ? Quel mot ? Ainsi, une signature devient une conversation."
+          "text": "Pour chaque case, pose une question de plus : Qu’est-ce que tu cuisines le plus volontiers ? Quelle musique ? Quel mot ? Un prénom devient ainsi une conversation."
         },
         {
           "art": "aufgabe",
@@ -248,19 +163,23 @@
           "art": "satzanfaenge",
           "items": [
             "Ce qui m’a surpris, c’est que …",
-            "Avec …, j’ai ceci en commun : …",
-            "Cette question, je voudrais encore la poser à quelqu’un : …"
-          ],
-          "linien": 1
+            "Avec …, j’ai ceci en commun : …"
+          ]
+        },
+        {
+          "art": "mission",
+          "text": "Cette semaine, pose une question à quelqu’un que tu connais à peine – et relance une fois. En classe, dans le bus, au club : peu importe.",
+          "tage": 1,
+          "beweis": "pouce en haut ou en bas – as-tu appris quelque chose de nouveau ?"
         }
       ],
       "lehrer": {
-        "ziel": "Les jeunes se mettent en mouvement et en conversation, découvrent des points communs et s’exercent à relancer. Les cases sont volontairement anodines : origine, famille et apparence n’y figurent pas.",
+        "ziel": "Les jeunes entrent en contact en bougeant, découvrent des points communs et s’exercent à relancer après une réponse. Les cases sont volontairement anodines : ni origine, ni famille, ni apparence.",
         "ablauf": [
-          "Introduction (3 min) : distribuer la feuille et des supports rigides. Règle : la personne interrogée écrit son prénom dans la case, deux fois au maximum par prénom (trois fois dans les groupes de moins de cinq). L’adulte qui anime joue aussi.",
-          "Montrer comment relancer (2 min) : l’adulte interroge une personne devant tout le monde (« Tu aimes cuisiner ? – Quoi, par exemple ? ») et écoute vraiment.",
-          "Tour (12–14 min) : tout le monde circule. Qui a rempli toutes ses cases dit « Bingo » et aide les autres.",
-          "Mise en commun (6 min) : en cercle, appeler quelques cases : « Qui a un prénom à la case Musique – et qu’écoute cette personne ? » Puis tâche 2 ; lecture volontaire d’une phrase."
+          "Introduction (3 min) : distribuer feuilles et supports. La personne interrogée écrit son prénom dans la case ; chaque prénom deux fois au plus, trois fois dans un groupe de moins de cinq. L’adulte joue aussi.",
+          "Montrer la relance (1 min) : interroger une personne devant tous – « Tu aimes cuisiner ? Quoi, surtout ? » – et écouter vraiment.",
+          "Tour (12–14 min) : quatre cases côte à côte, c’est « Bingo » ; on continue ensuite jusqu’à la feuille complète. Qui a fini aide les autres.",
+          "Mise en commun (6 min) : en cercle, appeler quelques cases – « Qui est noté pour la musique, et qu’écoute cette personne ? » Puis exercice 2 et mission."
         ],
         "hintergrund": "Au début, les membres d’un groupe vérifient surtout s’ils ont leur place et si le cadre est sûr ; Tuckman (1965) parle d’une phase d’orientation. Bouger et poser de petites questions sans risque abaisse le seuil d’inhibition, car personne n’a à parler devant tout le monde. Découvrir des points communs renforce le sentiment d’appartenance, l’un des besoins psychologiques fondamentaux avec l’autonomie et la compétence (Deci & Ryan, 2000). La règle de la relance évite que le jeu se réduise à une chasse aux signatures : relancer, c’est montrer de l’intérêt, une compétence de base pour l’amitié et pour les exercices de conversation du cours.",
         "quellen": [
@@ -268,12 +187,11 @@
           "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268."
         ],
         "differenzierung": {
-          "leichter": "Ne jouer que la colonne de gauche ; pour relancer, un simple « Lequel ? » ou « Quoi, par exemple ? » suffit.",
-          "schwerer": "Noter en mots-clés la réponse à chaque relance et, lors de la mise en commun, chercher un point commun à tout le groupe."
+          "leichter": "Ne jouer que la rangée du haut ; pour relancer, un simple « Lequel ? » ou « Quoi, par exemple ? » suffit.",
+          "schwerer": "Pour chaque case, noter en un mot-clé, à côté du prénom, la réponse à la relance."
         },
         "impulse": [
           "Quelle réponse t’a surpris ?",
-          "Avec qui as-tu un point commun auquel tu ne t’attendais pas ?",
           "Comment était-ce d’aborder quelqu’un que tu connais à peine ?"
         ],
         "tipps": [
@@ -283,7 +201,8 @@
         "achtung": "Si une case devient prétexte à des moqueries (plat préféré, langue), rappeler aussitôt le contrat de groupe : on rit ensemble, pas les uns des autres.",
         "material": "Une feuille par personne, supports rigides ou planchettes à pince, stylos"
       }
-    }
+    },
+    "look": "spiel"
   },
   {
     "id": "skills-natur-challenges",
@@ -297,7 +216,7 @@
     "sozialform": [
       "gruppe"
     ],
-    "dauer": "30 Min.",
+    "dauer": "25–30 Min.",
     "eldib": [
       "SOZ-18",
       "SOZ-30",
@@ -316,208 +235,164 @@
     ],
     "de": {
       "titel": "Natur-Challenges",
-      "untertitel": "Gemeinsam statt gegeneinander: Es zählt, dass alle mitmachen – nicht, wie viel ihr schafft.",
+      "untertitel": "Ein Team, 20 Minuten, zwölf Aufgaben – und doppelte Punkte, wenn wirklich alle mitmachen.",
       "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Wettet zuerst: Wie viele Punkte schafft ihr in 20 Minuten?",
+          "hinweis": "Geschafft = 1 Punkt. Alle dabei = 2 Punkte: Dann hat jede Person etwas beigetragen. Schreibt die Punkte ins Feld.",
+          "symbole": [
+            "gruppe"
+          ]
+        },
+        {
+          "art": "text",
+          "text": "Unsere Wette: ______ Punkte   ·   Am Ende waren es: ______ Punkte"
+        },
+        {
+          "art": "bingo",
+          "spalten": 4,
+          "felder": [
+            "Drei Oberflächen finden: weich, rau, glatt",
+            "Ein Kunstwerk bauen und ihm einen Namen geben",
+            "Etwas in jeder Farbe des Regenbogens finden",
+            "Turm aus fünf Steinen, der zehn Sekunden steht",
+            "Zehn verschiedene Blätter – nur vom Boden",
+            "Etwas ganz Kleines ganz groß fotografieren",
+            "Ein Geräusch finden, das euch neu ist",
+            "Eine Minute lang alle zusammen komplett still",
+            "Etwas finden, das älter ist als ihr zusammen",
+            "Fünf Fundstücke nach Größe ordnen – ohne Worte",
+            "Den Namen eurer Gruppe aus Fundstücken legen",
+            "Eine Challenge für die Leitung erfinden"
+          ]
+        },
         {
           "art": "info",
           "symbol": "merke",
-          "titel": "So spielt ihr",
+          "titel": "Regeln für draußen",
           "punkte": [
-            "Bleibt in Sicht- und Rufweite. Beim Sammelsignal kommen alle sofort zum Treffpunkt.",
+            "In Sicht- und Rufweite bleiben. Beim Sammelsignal sofort zum Treffpunkt.",
             "Pflanzen bleiben ganz – nehmt nur, was schon am Boden liegt.",
-            "Teilt euch auf, aber entscheidet gemeinsam.",
-            "Bei Regen spielt ihr drinnen: Statt Naturmaterial nehmt ihr, was im Raum oder in der Materialkiste liegt, statt Blättern zehn verschiedene Papiersorten."
+            "Fotos nur von Dingen, nicht von Gesichtern."
           ]
         },
         {
-          "art": "aufgabe",
-          "text": "Ihr habt 20 Minuten. Löst so viele Challenges wie möglich.",
-          "hinweis": "Kreuzt „geschafft“ an – und „alle dabei“ nur, wenn wirklich jede Person etwas beigetragen hat.",
-          "symbole": [
-            "gruppe",
-            "ankreuzen"
-          ]
-        },
-        {
-          "art": "einschaetzung",
-          "optionen": [
-            "geschafft",
-            "alle dabei"
-          ],
+          "art": "satzanfaenge",
           "items": [
-            "Findet drei ganz verschiedene Oberflächen – weich, rau, glatt.",
-            "Baut ein Kunstwerk aus Fundstücken – jede Person legt etwas dazu.",
-            "Findet etwas in jeder Farbe des Regenbogens.",
-            "Baut einen Turm aus fünf Steinen, der zehn Sekunden stehen bleibt.",
-            "Sammelt zehn verschiedene Blätter – nur vom Boden.",
-            "Fotografiert etwas ganz Kleines ganz groß.",
-            "Findet ein Geräusch, das ihr noch nie bewusst gehört habt.",
-            "Seid alle zusammen eine Minute lang komplett still.",
-            "Findet etwas, das älter ist als ihr alle zusammen.",
-            "Erfindet eine Challenge für die Leitung – und schaut zu, wie sie sie löst."
+            "Als Team hat uns geholfen: …",
+            "Schwierig war: …"
           ]
         },
         {
-          "art": "aufgabe",
-          "text": "Gebt eurem Kunstwerk einen Namen. Die Leitung fotografiert es."
-        },
-        {
-          "art": "feld",
-          "label": "Unser Kunstwerk heißt",
-          "hoehe": 1.6
-        },
-        {
-          "art": "aufgabe",
-          "text": "Was hat euch als Team geholfen – und was war schwierig?",
-          "symbole": [
-            "gruppe",
-            "schreiben"
-          ]
-        },
-        {
-          "art": "spalten",
-          "verhaeltnis": "1:1",
-          "links": [
-            {
-              "art": "feld",
-              "label": "Das hat uns geholfen",
-              "hoehe": 3
-            }
-          ],
-          "rechts": [
-            {
-              "art": "feld",
-              "label": "Das war schwierig",
-              "hoehe": 3
-            }
-          ]
+          "art": "mission",
+          "text": "Achte diese Woche einmal in einer Gruppe – Klasse, Verein, Bus – darauf: Was brauchst du selbst, damit es dir dort gut geht?",
+          "tage": 1,
+          "beweis": "ein Wort dafür – du brauchst es in der nächsten Stunde"
         }
       ],
       "lehrer": {
-        "ziel": "Die Gruppe löst draußen gemeinsam Aufgaben und erlebt, dass sie als Team mehr schafft. Die Spalte „alle dabei“ lenkt den Blick vom Ergebnis auf die Zusammenarbeit.",
+        "ziel": "Die Gruppe löst draußen gemeinsam Aufgaben und erlebt, dass sie als Team mehr schafft. Die doppelten Punkte für „alle dabei“ lenken den Blick vom Ergebnis auf die Zusammenarbeit.",
         "ablauf": [
-          "Vorher: Gelände ablaufen, Grenzen und Treffpunkt festlegen, Sammelsignal vereinbaren.",
-          "Start (3 Min.): Den Kasten „So spielt ihr“ vorlesen, das Blatt auf einem Klemmbrett übergeben, 20 Minuten ansagen.",
-          "Challenges (20 Min.): Die Leitung hält sich zurück, macht die Fotos und beobachtet, wie Entscheidungen fallen. Nach zehn Minuten auf die Spalte „alle dabei“ hinweisen.",
-          "Abschluss (7 Min.): Das Kunstwerk gemeinsam anschauen, benennen und fotografieren, dann Aufgabe 3 – sie liefert den Stoff für die Auswertung am Ende der Einheit.",
-          "Bei Regen: dieselben Aufgaben drinnen, mit einer Materialkiste (Becher, Papier, Wäscheklammern, Wollreste, Korken)."
+          "Vorher: Gelände ablaufen, Grenzen und Treffpunkt festlegen, Sammelsignal üben.",
+          "Start (3 Min.): Regeln vorlesen, das Blatt auf einem Klemmbrett übergeben. Die Gruppe wettet, wie viele Punkte sie schafft (höchstens 24).",
+          "Spiel (20 Min.): Die Leitung hält sich zurück, fotografiert und beobachtet, wie Entscheidungen fallen. Nach zehn Minuten Zwischenstand: In wie vielen Feldern steht eine 2?",
+          "Abschluss (4 Min.): Punkte zählen, mit der Wette vergleichen, die zwei Sätze schreiben. Bei Regen dieselben Aufgaben drinnen mit einer Materialkiste."
         ],
-        "hintergrund": "Aufgaben, die nur gemeinsam lösbar sind, stärken den Zusammenhalt, weil jede Person gebraucht wird. Nach Tuckman (1965) bilden Gruppen ihre Normen und Rollen erst, wenn sie gemeinsam handeln und dabei auch Reibung erleben; deshalb lohnt die Frage, was geholfen und was gestört hat. Draußen zu sein, entlastet die gerichtete Aufmerksamkeit und wirkt erholsam (Kaplan, 1995) – ein guter Rahmen für Jugendliche, denen langes Sitzen schwerfällt. Die Spalte „alle dabei“ macht Beteiligung sichtbar, ohne jemanden bloßzustellen: Gezählt wird, ob die Gruppe alle einbezieht, nicht, wer am meisten leistet.",
+        "hintergrund": "Aufgaben, die nur gemeinsam lösbar sind, stärken den Zusammenhalt, weil jede Person gebraucht wird. Nach Tuckman (1965) bilden Gruppen ihre Normen und Rollen erst, wenn sie gemeinsam handeln und dabei auch Reibung erleben; deshalb lohnt die Frage, was geholfen und was gestört hat. Draußen zu sein, entlastet die gerichtete Aufmerksamkeit und wirkt erholsam (Kaplan, 1995) – ein guter Rahmen für Jugendliche, denen langes Sitzen schwerfällt. Die doppelten Punkte für „alle dabei“ machen Beteiligung sichtbar, ohne jemanden bloßzustellen: Gezählt wird, ob die Gruppe alle einbezieht, nicht, wer am meisten leistet.",
         "quellen": [
           "Tuckman, B. W. (1965). Developmental sequence in small groups. Psychological Bulletin, 63(6), 384–399.",
           "Kaplan, S. (1995). The restorative benefits of nature: Toward an integrative framework. Journal of Environmental Psychology, 15(3), 169–182."
         ],
         "differenzierung": {
-          "leichter": "Fünf Challenges auswählen und die Zeit auf 15 Minuten kürzen; die Leitung liest die Aufgaben vor.",
-          "schwerer": "Vor jeder Challenge bestimmt die Gruppe eine andere Person, die koordiniert; am Ende sagt jede Person, wie es war, zu leiten."
+          "leichter": "Sechs Felder auswählen und die Zeit auf 15 Minuten kürzen; die Leitung liest die Aufgaben vor.",
+          "schwerer": "Vor jeder Aufgabe koordiniert eine andere Person; am Ende sagt jede, wie es war, zu leiten."
         },
         "impulse": [
           "Wer hatte eine Idee, die ihr umgesetzt habt?",
-          "Bei welcher Challenge wart ihr alle dabei – und woran lag das?"
+          "Bei welcher Aufgabe wart ihr alle dabei – und woran lag das?"
         ],
         "tipps": [
-          "Die Fotos in der nächsten Einheit zeigen: Sie erinnern an ein gemeinsames Erlebnis und stärken das Wir-Gefühl.",
+          "Die Fotos in der nächsten Einheit zeigen: Sie erinnern an ein gemeinsames Erlebnis.",
           "Die Challenge für die Leitung ernsthaft lösen – darauf freuen sich die Jugendlichen am meisten."
         ],
         "achtung": "Gelände vorher prüfen (Wasser, Straßen, Abhänge), Erste-Hilfe-Tasche mitnehmen, Allergien kennen (Wespen, Pollen). Nach Aufenthalten im hohen Gras auf Zecken hinweisen. Fotografiert werden Dinge, keine Gesichter.",
-        "material": "Blatt auf Klemmbrett, Stift, Handy der Leitung für Fotos, Pfeife; bei Regen Materialkiste"
+        "material": "Ein Blatt je Team auf Klemmbrett, Stift, Handy der Leitung für Fotos, Pfeife; bei Regen Materialkiste"
       }
     },
     "fr": {
       "titel": "Défis nature",
-      "untertitel": "Ensemble plutôt que les uns contre les autres : ce qui compte, c’est que tout le monde participe – pas le nombre de défis réussis.",
+      "untertitel": "Une équipe, 20 minutes, douze défis – et des points doublés quand tout le monde participe vraiment.",
       "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Pariez d’abord : combien de points en 20 minutes ?",
+          "hinweis": "Réussi = 1 point. Tous ensemble = 2 points : chaque personne a contribué. Notez les points dans la case.",
+          "symbole": [
+            "gruppe"
+          ]
+        },
+        {
+          "art": "text",
+          "text": "Notre pari : ______ points   ·   À la fin : ______ points"
+        },
+        {
+          "art": "bingo",
+          "spalten": 4,
+          "felder": [
+            "Trois surfaces : douce, rugueuse, lisse",
+            "Créer une œuvre et lui donner un nom",
+            "Trouver chaque couleur de l’arc-en-ciel",
+            "Tour de cinq pierres qui tient dix secondes",
+            "Dix feuilles différentes – ramassées par terre",
+            "Photographier en grand un objet minuscule",
+            "Trouver un bruit nouveau pour vous",
+            "Une minute de silence complet, tous ensemble",
+            "Trouver plus vieux que vous tous réunis",
+            "Classer cinq objets par taille, sans parler",
+            "Écrire le nom du groupe avec des trouvailles",
+            "Inventer un défi pour l’adulte"
+          ]
+        },
         {
           "art": "info",
           "symbol": "merke",
-          "titel": "Règles du jeu",
+          "titel": "Règles pour dehors",
           "punkte": [
-            "Restez à portée de vue et de voix. Au signal de rassemblement, tout le monde revient tout de suite au point de rendez-vous.",
+            "Restez à portée de vue et de voix. Au signal, retour immédiat au point de rendez-vous.",
             "Les plantes restent entières – ne prenez que ce qui est déjà par terre.",
-            "Répartissez-vous, mais décidez ensemble.",
-            "S’il pleut, vous jouez à l’intérieur : au lieu de matériaux naturels, vous prenez ce qu’il y a dans la salle ou dans la caisse de matériel, et dix sortes de papier au lieu de feuilles."
+            "On photographie des objets, pas des visages."
           ]
         },
         {
-          "art": "aufgabe",
-          "text": "Vous avez 20 minutes. Relevez autant de défis que possible.",
-          "hinweis": "Cochez « réussi » – et « tous ensemble » seulement si chaque personne a vraiment contribué.",
-          "symbole": [
-            "gruppe",
-            "ankreuzen"
-          ]
-        },
-        {
-          "art": "einschaetzung",
-          "optionen": [
-            "réussi",
-            "tous ensemble"
-          ],
+          "art": "satzanfaenge",
           "items": [
-            "Trouvez trois surfaces très différentes – douce, rugueuse, lisse.",
-            "Créez une œuvre avec ce que vous trouvez – chaque personne y ajoute quelque chose.",
-            "Trouvez quelque chose de chaque couleur de l’arc-en-ciel.",
-            "Construisez une tour de cinq pierres qui tient dix secondes.",
-            "Ramassez dix feuilles différentes – seulement celles qui sont par terre.",
-            "Photographiez quelque chose de tout petit en très grand.",
-            "Trouvez un bruit que vous n’aviez encore jamais écouté vraiment.",
-            "Restez tous ensemble complètement silencieux pendant une minute.",
-            "Trouvez quelque chose de plus vieux que vous tous réunis.",
-            "Inventez un défi pour l’adulte du groupe – et regardez-le s’y prendre."
+            "Ce qui a aidé notre équipe : …",
+            "Ce qui a été difficile : …"
           ]
         },
         {
-          "art": "aufgabe",
-          "text": "Donnez un nom à votre œuvre. L’adulte la photographie."
-        },
-        {
-          "art": "feld",
-          "label": "Notre œuvre s’appelle",
-          "hoehe": 1.6
-        },
-        {
-          "art": "aufgabe",
-          "text": "Qu’est-ce qui a aidé votre équipe – et qu’est-ce qui a été difficile ?",
-          "symbole": [
-            "gruppe",
-            "schreiben"
-          ]
-        },
-        {
-          "art": "spalten",
-          "verhaeltnis": "1:1",
-          "links": [
-            {
-              "art": "feld",
-              "label": "Ce qui nous a aidés",
-              "hoehe": 3
-            }
-          ],
-          "rechts": [
-            {
-              "art": "feld",
-              "label": "Ce qui a été difficile",
-              "hoehe": 3
-            }
-          ]
+          "art": "mission",
+          "text": "Cette semaine, observe-toi une fois dans un groupe – classe, club, bus : de quoi as-tu besoin, toi, pour t’y sentir bien ?",
+          "tage": 1,
+          "beweis": "un mot – tu en auras besoin à la prochaine séance"
         }
       ],
       "lehrer": {
-        "ziel": "Dehors, le groupe résout des tâches ensemble et vit qu’en équipe, on réussit davantage. La colonne « tous ensemble » déplace le regard du résultat vers la coopération.",
+        "ziel": "Le groupe relève des défis dehors et constate qu’il réussit mieux en équipe. Les points doublés pour « tous ensemble » déplacent le regard du résultat vers la coopération.",
         "ablauf": [
-          "Avant : parcourir le terrain, fixer limites et point de rendez-vous, convenir d’un signal de rassemblement.",
-          "Départ (3 min) : lire l’encadré « Règles du jeu », remettre la feuille sur une planchette à pince, annoncer 20 minutes.",
-          "Défis (20 min) : l’adulte reste en retrait, prend les photos et observe comment les décisions se prennent. Après dix minutes, attirer l’attention sur la colonne « tous ensemble ».",
-          "Clôture (7 min) : regarder, nommer et photographier l’œuvre, puis tâche 3 – elle nourrit le bilan de fin de séance.",
-          "S’il pleut : mêmes tâches à l’intérieur, avec une caisse de matériel (gobelets, papier, pinces à linge, laine, bouchons)."
+          "Avant : parcourir le terrain, fixer les limites et le point de rendez-vous, exercer le signal de rassemblement.",
+          "Départ (3 min) : lire les règles, remettre la feuille sur une planchette. Le groupe parie sur son nombre de points (24 au maximum).",
+          "Jeu (20 min) : l’adulte reste en retrait, photographie et observe comment les décisions se prennent. Après dix minutes, point d’étape : dans combien de cases y a-t-il un 2 ?",
+          "Fin (4 min) : compter les points, comparer avec le pari, écrire les deux phrases. S’il pleut : mêmes défis à l’intérieur avec une caisse de matériel."
         ],
-        "hintergrund": "Les tâches qui ne se résolvent qu’ensemble renforcent la cohésion : chaque personne est nécessaire. Selon Tuckman (1965), un groupe ne forme ses normes et ses rôles qu’en agissant ensemble, frictions comprises ; d’où la question : qu’est-ce qui a aidé, qu’est-ce qui a gêné ? Être dehors soulage l’attention dirigée (Kaplan, 1995) – un bon cadre pour des jeunes qui tiennent mal assis. La colonne « tous ensemble » rend la participation visible sans exposer personne : on compte si le groupe inclut tout le monde, pas qui fait le plus.",
+        "hintergrund": "Les tâches qui ne se résolvent qu’ensemble renforcent la cohésion : chaque personne est nécessaire. Selon Tuckman (1965), un groupe ne forme ses normes et ses rôles qu’en agissant ensemble, frictions comprises ; d’où la question : qu’est-ce qui a aidé, qu’est-ce qui a gêné ? Être dehors soulage l’attention dirigée (Kaplan, 1995) – un bon cadre pour des jeunes qui tiennent mal assis. Les points doublés pour « tous ensemble » rendent la participation visible sans exposer personne : on compte si le groupe inclut tout le monde, pas qui fait le plus.",
         "quellen": [
           "Tuckman, B. W. (1965). Developmental sequence in small groups. Psychological Bulletin, 63(6), 384–399.",
           "Kaplan, S. (1995). The restorative benefits of nature: Toward an integrative framework. Journal of Environmental Psychology, 15(3), 169–182."
         ],
         "differenzierung": {
-          "leichter": "Choisir cinq défis, réduire le temps à 15 minutes ; l’adulte lit les tâches à voix haute.",
+          "leichter": "Choisir six cases et réduire le temps à 15 minutes ; l’adulte lit les défis à voix haute.",
           "schwerer": "Avant chaque défi, une autre personne coordonne ; à la fin, chacun dit comment c’était de diriger."
         },
         "impulse": [
@@ -525,13 +400,14 @@
           "Pour quel défi étiez-vous tous ensemble – et à quoi cela tenait-il ?"
         ],
         "tipps": [
-          "Montrer les photos à la séance suivante : elles rappellent un moment vécu ensemble et renforcent le sentiment d’appartenance.",
+          "Montrer les photos à la séance suivante : elles rappellent un moment vécu ensemble.",
           "Relever sérieusement le défi lancé à l’adulte – c’est ce qui réjouit le plus les jeunes."
         ],
         "achtung": "Repérer le terrain avant (eau, routes, pentes), emporter la trousse de premiers secours, connaître les allergies (guêpes, pollen). Après les hautes herbes, penser aux tiques. On photographie des objets, pas des visages.",
-        "material": "Feuille sur planchette à pince, crayon, téléphone de l’adulte (photos), sifflet ; s’il pleut : caisse de matériel"
+        "material": "Une feuille par équipe sur planchette, crayon, téléphone de l’adulte (photos), sifflet ; s’il pleut : caisse de matériel"
       }
-    }
+    },
+    "look": "spiel"
   },
   {
     "id": "skills-beduerfnis-pegel",

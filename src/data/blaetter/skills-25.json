@@ -3416,5 +3416,1881 @@
         "material": "Un jeu de cartes découpé pour trois à quatre personnes, Bâton de colle, Quelques cartes vierges"
       }
     }
+  },
+  {
+    "id": "skills-botschaften-karten",
+    "bereich": "skills",
+    "thema": "gefuehle",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "look": "spiel",
+    "sozialform": [
+      "gruppe"
+    ],
+    "dauer": "10 Min.",
+    "eldib": [
+      "K-26",
+      "K-16",
+      "K-33"
+    ],
+    "schlagworte": [
+      "Grundgefühle",
+      "Botschaft",
+      "Handlungsimpuls",
+      "Spiel",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:mailbox",
+    "verwandt": [
+      "skills-gefuehle-botschaften",
+      "skills-gefuehlskarten"
+    ],
+    "kurs": [
+      "j1-e07"
+    ],
+    "de": {
+      "titel": "Botschaften-Karten",
+      "untertitel": "Post für die Gefühle: Wer hat diese Nachricht geschickt?",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "So geht die Botschaften-Post",
+          "punkte": [
+            "Zwei Teams, jedes mit einem eigenen Kartensatz. Im Raum hängen sechs Schilder: Freude, Traurigkeit, Angst, Wut, Ekel, Überraschung.",
+            "Auf „Los“ bringt ihr jede Karte zu dem Gefühl, von dem sie kommt – immer nur eine Karte pro Person und Weg.",
+            "Alles zugestellt? Ruft „Post ist da“. Jede richtige Karte zählt einen Punkt, das schnellere Team bekommt zwei Punkte dazu."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schneidet die Karten aus und mischt sie.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 104,
+          "schneiden": true,
+          "karten": [
+            {
+              "titel": "„Das ist unfair. Hier ist eine Grenze.“",
+              "nummer": 1
+            },
+            {
+              "titel": "Du hältst inne und schaust genau hin.",
+              "nummer": 2
+            },
+            {
+              "titel": "„Achtung, Gefahr. Pass auf dich auf.“",
+              "nummer": 3
+            },
+            {
+              "titel": "Du machst weiter und willst es teilen.",
+              "nummer": 4
+            },
+            {
+              "titel": "„Mir fehlt etwas. Ich brauche Trost.“",
+              "nummer": 5
+            },
+            {
+              "titel": "Du schiebst es weg und drehst dich ab.",
+              "nummer": 6
+            },
+            {
+              "titel": "„Das tut mir gut. Davon will ich mehr.“",
+              "nummer": 7
+            },
+            {
+              "titel": "Du wirst vorsichtig und holst Hilfe.",
+              "nummer": 8
+            },
+            {
+              "titel": "„Moment – was ist da los?“",
+              "nummer": 9
+            },
+            {
+              "titel": "Du ziehst dich zurück und suchst Nähe.",
+              "nummer": 10
+            },
+            {
+              "titel": "„Das ist schlecht für mich. Abstand.“",
+              "nummer": 11
+            },
+            {
+              "titel": "Du wehrst dich und sagst Stopp.",
+              "nummer": 12
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen ordnen den sechs Grundgefühlen ihre Botschaft zu und das, wozu das Gefühl drängt – in Bewegung statt an der Tafel.",
+        "ablauf": [
+          "Zwei Kartensätze auf Papier in zwei Farben kopieren und ausschneiden. Die sechs Schilder hängen noch von „Sechs Ecken“; unter jedem klebt ein Streifen Kreppband.",
+          "Zwei gemischte Teams stellen ihre Karten zu, eine Karte pro Person und Weg. Wer fertig ist, ruft „Post ist da“.",
+          "Gemeinsam von Schild zu Schild gehen und kontrollieren; strittige Karten begründen lassen. Punkte an die Tafel.",
+          "Die Karten bleiben unter den Schildern hängen: Das ist das Botschaften-Plakat für Einheit 8."
+        ],
+        "hintergrund": "Plutchik (2001) ordnet jedem Grundgefühl eine Funktion zu: Angst sorgt für Schutz, Wut räumt Hindernisse aus dem Weg, Traurigkeit sucht verlorene Nähe, Ekel hält Schädliches fern. Ekman (1992) beschreibt Grundgefühle als rasche Antworten auf wiederkehrende Lebensaufgaben. Wer die Botschaft eines Gefühls von dem unterscheidet, wozu es drängt, muss dem Drang nicht blind folgen – darauf bauen die Skills in Modul 3 auf (Rathus & Miller, 2015).",
+        "quellen": [
+          "Plutchik, R. (2001). The nature of emotions. American Scientist, 89(4), 344–350.",
+          "Ekman, P. (1992). An argument for basic emotions. Cognition and Emotion, 6(3–4), 169–200.",
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Nur die sechs Nachrichten in Anführungszeichen zustellen.",
+          "schwerer": "Zu jedem Gefühl eine eigene Karte schreiben: eine Situation, in der es sich meldet."
+        },
+        "impulse": [
+          "Welche Karte war strittig – und zu welchen zwei Gefühlen passt sie?",
+          "Wann ist es klug, einer Nachricht nicht sofort zu folgen?"
+        ],
+        "tipps": [
+          "Lösung: Freude 4 + 7, Traurigkeit 5 + 10, Angst 3 + 8, Wut 1 + 12, Ekel 6 + 11, Überraschung 2 + 9.",
+          "Bei zwei oder drei Jugendlichen: ein Team gegen die Uhr, drei Minuten."
+        ],
+        "achtung": "Gespielt wird mit Gefühlen im Allgemeinen, nicht mit eigenen Erlebnissen. Erzählt jemand von Belastendem: Einzelgespräch anbieten, bei Bedarf die zuständige Leitung (Responsable) informieren.",
+        "material": "Zwei Kartensätze in zwei Farben, Kreppband, sechs Gefühls-Schilder"
+      }
+    },
+    "fr": {
+      "titel": "Cartes des messages",
+      "untertitel": "Du courrier pour les émotions : qui a envoyé ce message ?",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Le courrier des messages",
+          "punkte": [
+            "Deux équipes, chacune avec son jeu de cartes. Six panneaux sont affichés : joie, tristesse, peur, colère, dégoût, surprise.",
+            "Au signal, vous portez chaque carte à l’émotion qui l’envoie – une seule carte par personne et par trajet.",
+            "Tout est distribué ? Criez « Courrier ! ». Chaque carte bien placée vaut un point, l’équipe la plus rapide gagne deux points de plus."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Découpez les cartes et mélangez-les.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 104,
+          "schneiden": true,
+          "karten": [
+            {
+              "titel": "« C’est injuste. Il y a ici une limite. »",
+              "nummer": 1
+            },
+            {
+              "titel": "Tu t’arrêtes et tu regardes de plus près.",
+              "nummer": 2
+            },
+            {
+              "titel": "« Attention, danger. Protège-toi. »",
+              "nummer": 3
+            },
+            {
+              "titel": "Tu continues et tu veux le partager.",
+              "nummer": 4
+            },
+            {
+              "titel": "« Il me manque quelque chose. J’ai besoin de réconfort. »",
+              "nummer": 5
+            },
+            {
+              "titel": "Tu repousses la chose et tu te détournes.",
+              "nummer": 6
+            },
+            {
+              "titel": "« Ça me fait du bien. J’en veux encore. »",
+              "nummer": 7
+            },
+            {
+              "titel": "Tu deviens prudent et tu vas chercher de l’aide.",
+              "nummer": 8
+            },
+            {
+              "titel": "« Un instant – que se passe-t-il ? »",
+              "nummer": 9
+            },
+            {
+              "titel": "Tu te mets à l’écart et tu cherches du réconfort.",
+              "nummer": 10
+            },
+            {
+              "titel": "« C’est mauvais pour moi. Je m’éloigne. »",
+              "nummer": 11
+            },
+            {
+              "titel": "Tu te défends et tu dis stop.",
+              "nummer": 12
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes associent aux six émotions de base leur message et ce à quoi l’émotion pousse – en mouvement plutôt qu’au tableau.",
+        "ablauf": [
+          "Copier deux jeux de cartes sur du papier de deux couleurs et les découper. Les six panneaux de « Six coins » sont encore affichés ; sous chacun, une bande de ruban de masquage.",
+          "Deux équipes mélangées distribuent leurs cartes, une carte par personne et par trajet. L’équipe qui a fini crie « Courrier ! ».",
+          "Passer ensemble d’un panneau à l’autre et vérifier ; faire justifier les cartes discutées. Points au tableau.",
+          "Les cartes restent sous les panneaux : c’est l’affiche des messages pour la séance 8."
+        ],
+        "hintergrund": "Plutchik (2001) attribue une fonction à chaque émotion de base : la peur protège, la colère écarte les obstacles, la tristesse cherche la proximité perdue, le dégoût tient à distance ce qui nuit. Ekman (1992) décrit les émotions de base comme des réponses rapides à des tâches de vie récurrentes. Qui distingue le message d’une émotion de ce à quoi elle pousse n’est pas obligé de suivre aveuglément cette impulsion – les skills du module 3 s’appuient là-dessus (Rathus & Miller, 2015).",
+        "quellen": [
+          "Plutchik, R. (2001). The nature of emotions. American Scientist, 89(4), 344–350.",
+          "Ekman, P. (1992). An argument for basic emotions. Cognition and Emotion, 6(3–4), 169–200.",
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Distribuer seulement les six messages entre guillemets.",
+          "schwerer": "Écrire pour chaque émotion une carte de plus : une situation où elle se manifeste."
+        },
+        "impulse": [
+          "Quelle carte a fait débat – et à quelles deux émotions correspond-elle ?",
+          "Quand est-il sage de ne pas suivre tout de suite un message ?"
+        ],
+        "tipps": [
+          "Solution : joie 4 + 7, tristesse 5 + 10, peur 3 + 8, colère 1 + 12, dégoût 6 + 11, surprise 2 + 9.",
+          "Avec deux ou trois jeunes : une seule équipe contre la montre, trois minutes."
+        ],
+        "achtung": "On joue avec les émotions en général, pas avec le vécu personnel. Si quelqu’un évoque quelque chose de pesant : proposer un entretien individuel, informer au besoin la direction (responsable).",
+        "material": "Deux jeux de cartes de deux couleurs, ruban de masquage, six panneaux des émotions"
+      }
+    }
+  },
+  {
+    "bereich": "skills",
+    "thema": "gedanken",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "look": "spiel",
+    "sozialform": [
+      "gruppe"
+    ],
+    "id": "skills-kopfkino-karten",
+    "dauer": "15 Min.",
+    "eldib": [
+      "K-29",
+      "K-26",
+      "V-18"
+    ],
+    "schlagworte": [
+      "Gedanken",
+      "Gefühle",
+      "Verhalten",
+      "Pantomime",
+      "Spiel",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:masks-theater",
+    "verwandt": [
+      "skills-gedanke-gefuehl-verhalten"
+    ],
+    "kurs": [
+      "j1-e16"
+    ],
+    "de": {
+      "titel": "Kopfkino-Karten",
+      "untertitel": "Ein Spiel für die ganze Gruppe: gleiche Situation, zwei Filme im Kopf – welcher läuft gerade?",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "So geht das Spiel",
+          "punkte": [
+            "Zwei Teams. Ein Paar zieht eine Karte und liest die Situation und beide Gedanken laut vor.",
+            "Das Paar wählt heimlich A oder B und spielt 20 Sekunden ohne Worte, wie es weitergeht.",
+            "Das eigene Team rät: Film A oder B? Richtig = 1 Punkt, das Gefühl dazu = noch 1 Punkt. Falsch? Das andere Team darf klauen."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schneidet die Karten aus und legt sie verdeckt auf einen Stapel.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 2,
+          "hoehe": 106,
+          "schneiden": true,
+          "karten": [
+            {
+              "titel": "Du kommst in die Klasse. Zwei lachen.",
+              "text": "A: Die lachen über mich.\nB: Die haben gerade etwas Lustiges gesehen.",
+              "nummer": 1
+            },
+            {
+              "titel": "Die Lehrerin sagt: „Komm nachher kurz zu mir.“",
+              "text": "A: Jetzt gibt es Ärger.\nB: Vielleicht will sie nur etwas fragen.",
+              "nummer": 2
+            },
+            {
+              "titel": "Du winkst jemandem im Bus. Er schaut weg.",
+              "text": "A: Der will nichts mit mir zu tun haben.\nB: Er hat mich nicht gesehen.",
+              "nummer": 3
+            },
+            {
+              "titel": "Beim Fußball wirst du als Vorletzter gewählt.",
+              "text": "A: Ich bin eben schlecht.\nB: Hauptsache, ich spiele mit.",
+              "nummer": 4
+            },
+            {
+              "titel": "Der Test kommt zurück: 31 von 60 Punkten.",
+              "text": "A: Ich kann das einfach nicht.\nB: Die Hälfte kann ich schon.",
+              "nummer": 5
+            },
+            {
+              "titel": "Du sollst vor der Klasse einen Text vorlesen.",
+              "text": "A: Ich verhaspele mich sicher.\nB: Zwei Minuten, dann ist es vorbei.",
+              "nummer": 6
+            },
+            {
+              "titel": "Deine Freunde gehen ins Kino – ohne dich.",
+              "text": "A: Die wollen mich nicht dabeihaben.\nB: Vielleicht dachten sie, ich habe Training.",
+              "nummer": 7
+            },
+            {
+              "titel": "Im Praktikum: „Das machen wir noch mal.“",
+              "text": "A: Ich mache alles falsch.\nB: Gut, jetzt weiß ich, wie es geht.",
+              "nummer": 8
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen erleben im Spiel, dass derselbe Moment je nach Gedanke anders weitergeht, und lesen aus Haltung und Verhalten den Gedanken dahinter ab.",
+        "ablauf": [
+          "Zwei gemischte Teams, eine Person stoppt die Zeit. Die Leitung spielt die erste Karte mit einer Freiwilligen vor.",
+          "Abwechselnd ziehen, vorlesen, spielen, raten – sechs bis acht Karten. Wer nicht spielen mag, sagt statt der Pantomime den nächsten Satz der Person.",
+          "Danach vier Kästen an die Tafel: Situation, Gedanke, Gefühl, Verhalten. Eine gespielte Karte eintragen und fragen: Was war bei beiden Filmen gleich, was nicht?"
+        ],
+        "hintergrund": "Nach dem ABC-Modell löst nicht das Ereignis selbst Gefühl und Verhalten aus, sondern seine Bewertung (Ellis, 1962). Arbeitsbücher der kognitiven Verhaltenstherapie für Jugendliche führen das Modell an alltäglichen, harmlosen Situationen ein, bevor eigene Themen folgen (Stallard, 2019). Das Spiel dreht die übliche Reihenfolge um: Die Gruppe sieht zuerst den Unterschied in Haltung und Handlung und benennt erst danach, was ihn ausgelöst hat.",
+        "quellen": [
+          "Ellis, A. (1962). Reason and Emotion in Psychotherapy. New York: Lyle Stuart.",
+          "Stallard, P. (2019). Think Good, Feel Good: A Cognitive Behavioural Therapy Workbook for Children and Young People (2nd ed.). Chichester: Wiley."
+        ],
+        "differenzierung": {
+          "leichter": "Die Leitung liest vor; das Paar spielt beide Filme nacheinander, das Team ordnet sie zu.",
+          "schwerer": "Das Team erfindet zur Situation einen dritten Gedanken und spielt, wohin er führt."
+        },
+        "impulse": [
+          "Woran habt ihr den Gedanken erkannt – am Gesicht, an den Schultern, am Tempo?",
+          "Welcher der beiden Gedanken kommt euch selbst schneller in den Kopf?"
+        ],
+        "tipps": [
+          "Gedanke A ist nicht „falsch“ und B nicht „richtig“: Beide sind Vermutungen. Das am Ende ausdrücklich sagen.",
+          "Bei zwei oder drei Jugendlichen spielt die Leitung, alle raten gemeinsam."
+        ],
+        "achtung": "Gespielt werden nur die Situationen auf den Karten, nie eigene Erlebnisse. Lacht jemand über eine Darstellung, an den Gruppenvertrag erinnern. Bei Gefährdung nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren.",
+        "material": "Ein Kartensatz für die Gruppe, ausgeschnitten, Stoppuhr oder Handy-Timer, Tafel"
+      }
+    },
+    "fr": {
+      "titel": "Cartes « Cinéma intérieur »",
+      "untertitel": "Un jeu pour tout le groupe : même situation, deux films dans la tête – lequel passe en ce moment ?",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Règle du jeu",
+          "punkte": [
+            "Deux équipes. Un duo tire une carte et lit à voix haute la situation et les deux pensées.",
+            "Le duo choisit en secret A ou B et joue la suite pendant 20 secondes, sans paroles.",
+            "Son équipe devine : film A ou B ? Juste = 1 point, l’émotion en plus = encore 1 point. Faux ? L’autre équipe peut voler le point."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Découpez les cartes et posez-les en pile, face cachée.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 2,
+          "hoehe": 106,
+          "schneiden": true,
+          "karten": [
+            {
+              "titel": "Tu entres en classe. Deux élèves rient.",
+              "text": "A: Ils se moquent de moi.\nB: Ils viennent de voir un truc drôle.",
+              "nummer": 1
+            },
+            {
+              "titel": "La prof dit : « Viens me voir après. »",
+              "text": "A: Ça va chauffer.\nB: Elle veut peut-être juste me demander quelque chose.",
+              "nummer": 2
+            },
+            {
+              "titel": "Dans le bus, tu fais signe. Il détourne le regard.",
+              "text": "A: Il ne veut rien avoir à faire avec moi.\nB: Il ne m’a pas vu.",
+              "nummer": 3
+            },
+            {
+              "titel": "Au foot, on te choisit avant-dernier.",
+              "text": "A: Je suis nul, c’est tout.\nB: L’essentiel, c’est que je joue.",
+              "nummer": 4
+            },
+            {
+              "titel": "Ton contrôle revient : 31 points sur 60.",
+              "text": "A: Je n’y arrive pas, c’est tout.\nB: J’en sais déjà la moitié.",
+              "nummer": 5
+            },
+            {
+              "titel": "Tu dois lire un texte devant la classe.",
+              "text": "A: Je vais sûrement bafouiller.\nB: Deux minutes, et c’est fini.",
+              "nummer": 6
+            },
+            {
+              "titel": "Tes amis vont au cinéma – sans toi.",
+              "text": "A: Ils ne veulent pas de moi.\nB: Ils pensaient peut-être que j’avais entraînement.",
+              "nummer": 7
+            },
+            {
+              "titel": "En stage : « On recommence ça. »",
+              "text": "A: Je fais tout de travers.\nB: Bien, maintenant je sais comment faire.",
+              "nummer": 8
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes vivent par le jeu qu’un même moment se poursuit autrement selon la pensée, et lisent la pensée cachée dans l’attitude et le comportement.",
+        "ablauf": [
+          "Deux équipes mélangées, une personne chronomètre. L’animateur joue la première carte avec un ou une volontaire.",
+          "Tirer, lire, jouer, deviner à tour de rôle – six à huit cartes. Qui ne veut pas mimer dit la prochaine phrase du personnage.",
+          "Ensuite, quatre cases au tableau : situation, pensée, émotion, comportement. Y noter une carte jouée et demander : qu’est-ce qui était pareil dans les deux films, qu’est-ce qui ne l’était pas ?"
+        ],
+        "hintergrund": "Selon le modèle ABC, ce n’est pas l’événement lui-même qui déclenche l’émotion et le comportement, mais la façon dont on l’interprète (Ellis, 1962). Les manuels de thérapie cognitivo-comportementale pour adolescents introduisent le modèle à partir de situations quotidiennes et anodines, avant d’aborder des thèmes personnels (Stallard, 2019). Le jeu inverse l’ordre habituel : le groupe voit d’abord la différence dans l’attitude et l’action, et nomme ensuite ce qui l’a provoquée.",
+        "quellen": [
+          "Ellis, A. (1962). Reason and Emotion in Psychotherapy. New York: Lyle Stuart.",
+          "Stallard, P. (2019). Think Good, Feel Good: A Cognitive Behavioural Therapy Workbook for Children and Young People (2nd ed.). Chichester: Wiley."
+        ],
+        "differenzierung": {
+          "leichter": "L’animateur lit ; le duo joue les deux films l’un après l’autre, l’équipe les attribue.",
+          "schwerer": "L’équipe invente une troisième pensée pour la situation et joue où elle mène."
+        },
+        "impulse": [
+          "À quoi avez-vous reconnu la pensée – au visage, aux épaules, au rythme ?",
+          "Laquelle des deux pensées vous vient le plus vite à l’esprit ?"
+        ],
+        "tipps": [
+          "La pensée A n’est pas « fausse » et la B « juste » : les deux sont des suppositions. Le dire clairement à la fin.",
+          "Avec deux ou trois jeunes, l’animateur joue et tous devinent ensemble."
+        ],
+        "achtung": "On ne joue que les situations des cartes, jamais des expériences personnelles. Si quelqu’un rit d’une interprétation, rappeler le contrat du groupe. En cas de danger, agir selon le concept de protection interne et informer la direction compétente (responsable).",
+        "material": "Un jeu de cartes découpé pour le groupe, Chronomètre ou minuteur du téléphone, Tableau"
+      }
+    }
+  },
+  {
+    "bereich": "skills",
+    "thema": "gedanken",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "look": "spiel",
+    "sozialform": [
+      "gruppe"
+    ],
+    "id": "skills-figuren-karten",
+    "dauer": "17 Min., später 10 Min.",
+    "eldib": [
+      "SOZ-40",
+      "K-19",
+      "SOZ-36"
+    ],
+    "schlagworte": [
+      "Glaubenssätze",
+      "Selbstbild",
+      "Stationen",
+      "Perspektivwechsel",
+      "Spiel",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:users",
+    "verwandt": [
+      "skills-glaubenssatz-karten",
+      "skills-meine-glaubenssaetze"
+    ],
+    "kurs": [
+      "j1-e17"
+    ],
+    "de": {
+      "titel": "Figuren-Karten",
+      "untertitel": "Sechs erfundene Jugendliche. Man sieht, was sie tun – aber welcher Satz steckt dahinter?",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "So geht die Figuren-Fahndung",
+          "punkte": [
+            "Die sechs Steckbriefe hängen im Raum. Die Glaubenssatz-Karten, die bremsen, liegen offen in der Mitte.",
+            "Zu zweit von Figur zu Figur, 90 Sekunden je Station: Welcher Satz steckt dahinter? Notiert die Nummer der Karte.",
+            "Auflösung: 1 Punkt für jeden Satz, den ihr mit einem „weil“ aus dem Steckbrief begründet. Mehrere Lösungen sind möglich."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schneidet die Steckbriefe aus und hängt sie mit Abstand im Raum auf.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 2,
+          "hoehe": 138,
+          "schneiden": true,
+          "karten": [
+            {
+              "titel": "Noah, 14",
+              "text": "Meldet sich nie, auch wenn er die Antwort weiß. Wird er aufgerufen, sagt er sofort: „Keine Ahnung.“",
+              "nummer": "A",
+              "bild": "icon:school"
+            },
+            {
+              "titel": "Inês, 15",
+              "text": "Sagt zu allem Ja: abschreiben lassen, mitkommen, Geld leihen. Abends ist sie erschöpft und sauer auf sich selbst.",
+              "nummer": "B",
+              "bild": "icon:heart-handshake"
+            },
+            {
+              "titel": "Elias, 13",
+              "text": "Radiert jede Zeichnung dreimal aus und gibt Arbeiten oft gar nicht ab. Bei 48 von 60 Punkten ist der Tag für ihn gelaufen.",
+              "nummer": "C",
+              "bild": "icon:pencil"
+            },
+            {
+              "titel": "Aylin, 16",
+              "text": "Lernt nächtelang allein und trägt beim Klassenfest jede Kiste selbst. Bietet jemand Hilfe an, sagt sie: „Geht schon.“",
+              "nummer": "D",
+              "bild": "icon:package"
+            },
+            {
+              "titel": "Liam, 14",
+              "text": "Entschuldigt sich ständig – auch wenn ein anderer den Ball ins Fenster geschossen hat. Bei Streit wird er ganz still.",
+              "nummer": "E",
+              "bild": "icon:ball-football"
+            },
+            {
+              "titel": "Zoé, 15",
+              "text": "Schaut in der Pause Fotos von anderen an und postet selbst nichts mehr. Im Sport stellt sie sich immer nach hinten.",
+              "nummer": "F",
+              "bild": "icon:device-mobile"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen schließen bei erfundenen Figuren vom sichtbaren Verhalten auf den Glaubenssatz dahinter und formulieren, was eine gute Freundin dieser Figur sagen würde. So üben sie den Blick, den sie danach still auf sich selbst richten.",
+        "ablauf": [
+          "Figuren-Fahndung (17 Min.): Teams zu zweit, je ein Zettel mit A bis F. Sechs Stationen zu 90 Sekunden, Wechsel auf ein Signal. Bei der Auflösung zählt die Begründung, nicht die „richtige“ Nummer.",
+          "Überleitung: Von außen sieht man nur das Verhalten. Den Satz dahinter kennt nur die Person selbst.",
+          "„Was würde eine Freundin sagen?“ (10 Min.): zwei Teams, eine Figur, 60 Sekunden Sätze sammeln. Wie bei Stadt-Land-Fluss zählen nur Sätze, die das andere Team nicht hat."
+        ],
+        "hintergrund": "Glaubenssätze wirken unbemerkt als Filter und zeigen sich nach außen nur im Verhalten (Beck, 2011). An erfundenen Figuren lässt sich dieser Zusammenhang gefahrlos untersuchen: Niemand muss von sich erzählen, und doch erkennen viele etwas wieder. Der Blick von außen und die Frage, was man einer Freundin sagen würde, schaffen Abstand zum eigenen Erleben; solches Selbst-Distanzieren senkt die Belastung beim Nachdenken über Schwieriges (Kross & Ayduk, 2017).",
+        "quellen": [
+          "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+          "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136."
+        ],
+        "differenzierung": {
+          "leichter": "Nur vier Figuren aufhängen; die Leitung liest die Steckbriefe an der Station vor.",
+          "schwerer": "Zu einer Figur mit einer Herkunftskarte erfinden, woher ihr Satz kommen könnte."
+        },
+        "impulse": [
+          "Bei welcher Figur wart ihr euch uneinig – und warum?",
+          "Was wäre anders, wenn die Figur ihren Satz nur halb so sehr glaubte?"
+        ],
+        "tipps": [
+          "Naheliegend: A – 5/16, B – 14, C – 22, D – 21/3, E – 12, F – 9/1. Anderes gilt, wenn das „weil“ passt.",
+          "Bei zwei oder drei Jugendlichen: alle gemeinsam gegen die Uhr."
+        ],
+        "achtung": "Figuren nie Personen aus der Gruppe zuordnen. Sagt jemand „Das bin ja ich“: stehen lassen, später allein ansprechen. Bei Gefährdung nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren.",
+        "material": "Kartensatz, Klebeband, Zettel, Stifte, Stoppuhr, Bremsende Glaubenssatz-Karten"
+      }
+    },
+    "fr": {
+      "titel": "Cartes des personnages",
+      "untertitel": "Six jeunes inventés. On voit ce qu’ils font – mais quelle phrase se cache derrière ?",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "L’enquête sur les personnages",
+          "punkte": [
+            "Les six fiches sont affichées dans la salle. Les cartes de croyances qui freinent sont au centre, face visible.",
+            "À deux, de personnage en personnage, 90 secondes par poste : quelle phrase se cache derrière ? Notez le numéro de la carte.",
+            "Solution : 1 point pour chaque phrase justifiée par un « parce que » tiré de la fiche. Plusieurs réponses sont possibles."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Découpez les fiches et affichez-les dans la salle, bien espacées.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 2,
+          "hoehe": 138,
+          "schneiden": true,
+          "karten": [
+            {
+              "titel": "Noah, 14 ans",
+              "text": "Ne lève jamais la main, même quand il connaît la réponse. Interrogé, il dit aussitôt : « Aucune idée. »",
+              "nummer": "A",
+              "bild": "icon:school"
+            },
+            {
+              "titel": "Inês, 15 ans",
+              "text": "Dit oui à tout : laisser copier, venir, prêter de l’argent. Le soir, elle est épuisée et fâchée contre elle-même.",
+              "nummer": "B",
+              "bild": "icon:heart-handshake"
+            },
+            {
+              "titel": "Elias, 13 ans",
+              "text": "Gomme chaque dessin trois fois et, souvent, ne rend pas ses travaux. Avec 48 points sur 60, sa journée est fichue.",
+              "nummer": "C",
+              "bild": "icon:pencil"
+            },
+            {
+              "titel": "Aylin, 16 ans",
+              "text": "Révise seule des nuits entières et porte chaque caisse elle-même à la fête de classe. Si on propose de l’aider : « Ça va aller. »",
+              "nummer": "D",
+              "bild": "icon:package"
+            },
+            {
+              "titel": "Liam, 14 ans",
+              "text": "S’excuse sans arrêt – même quand c’est un autre qui a envoyé le ballon dans la vitre. En cas de dispute, il se tait.",
+              "nummer": "E",
+              "bild": "icon:ball-football"
+            },
+            {
+              "titel": "Zoé, 15 ans",
+              "text": "Regarde à la récré les photos des autres et ne poste plus rien. En sport, elle se met toujours derrière.",
+              "nummer": "F",
+              "bild": "icon:device-mobile"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Avec des personnages inventés, les jeunes remontent du comportement visible à la croyance cachée et formulent ce qu’une bonne amie dirait à ce personnage. Ils exercent ainsi le regard qu’ils porteront ensuite, en silence, sur eux-mêmes.",
+        "ablauf": [
+          "Enquête (17 min) : équipes de deux, un papier avec A à F. Six postes de 90 secondes, changement au signal. À la solution, c’est la justification qui compte, pas le « bon » numéro.",
+          "Transition : de l’extérieur, on ne voit que le comportement. La phrase cachée, seule la personne la connaît.",
+          "« Que dirait une amie ? » (10 min) : deux équipes, un personnage, 60 secondes pour trouver des phrases. Comme au petit bac, seules comptent les phrases que l’autre équipe n’a pas."
+        ],
+        "hintergrund": "Les croyances agissent à notre insu comme un filtre et ne se montrent à l’extérieur que dans le comportement (Beck, 2011). Des personnages inventés permettent d’examiner ce lien sans risque : personne ne doit parler de soi, et pourtant beaucoup s’y reconnaissent. Le regard extérieur et la question de ce que l’on dirait à une amie créent de la distance ; cette prise de distance allège la charge quand on réfléchit à des sujets difficiles (Kross & Ayduk, 2017).",
+        "quellen": [
+          "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+          "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136."
+        ],
+        "differenzierung": {
+          "leichter": "Afficher seulement quatre personnages ; l’animateur lit les fiches au poste.",
+          "schwerer": "Pour un personnage, inventer avec une carte d’origine d’où pourrait venir sa phrase."
+        },
+        "impulse": [
+          "Pour quel personnage n’étiez-vous pas d’accord – et pourquoi ?",
+          "Que changerait-il si le personnage croyait sa phrase deux fois moins ?"
+        ],
+        "tipps": [
+          "Probable : A – 5/16, B – 14, C – 22, D – 21/3, E – 12, F – 9/1. Autre chose compte si le « parce que » tient.",
+          "Avec deux ou trois jeunes : tous ensemble contre la montre."
+        ],
+        "achtung": "Ne jamais attribuer un personnage à un membre du groupe. Si quelqu’un dit « C’est moi, ça » : laisser dire, en reparler plus tard seul à seul. En cas de danger, agir selon le concept de protection interne et informer la direction compétente (responsable).",
+        "material": "Jeu de cartes, Ruban adhésif, Papier, Crayons, Chronomètre, Cartes de croyances qui freinent"
+      }
+    }
+  },
+  {
+    "bereich": "skills",
+    "thema": "gedanken",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "look": "spiel",
+    "sozialform": [
+      "gruppe"
+    ],
+    "id": "skills-fallakte-karten",
+    "dauer": "15 Min.",
+    "eldib": [
+      "V-33",
+      "SOZ-36",
+      "V-18"
+    ],
+    "schlagworte": [
+      "Glaubenssätze",
+      "Beweise prüfen",
+      "Tatsache und Urteil",
+      "Stationen",
+      "Spiel",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:file-text",
+    "verwandt": [
+      "skills-kritischer-detektiv",
+      "skills-glaubenssatz-karten"
+    ],
+    "kurs": [
+      "j1-e18"
+    ],
+    "de": {
+      "titel": "Der Fall Tiago",
+      "untertitel": "Tiago, 15, sagt über sich: „Ich bin dumm.“ Zwölf Hinweise – aber nicht jeder ist ein Beweis.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "So ermittelt ihr",
+          "punkte": [
+            "Die zwölf Hinweise hängen im Raum. Ihr ermittelt zu zweit oder zu dritt und habt fünf Minuten.",
+            "Notiert zu jeder Nummer: D = Beweis dafür, G = Beweis dagegen, K = kein Beweis (Gefühl, Spruch, Vermutung).",
+            "Auflösung an der Waage: 1 Punkt für jeden Treffer. Dann euer Urteil – stimmt Tiagos Satz?"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schneidet die Hinweise aus und hängt sie im Raum auf.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 100,
+          "schneiden": true,
+          "karten": [
+            {
+              "titel": "22 von 60 Punkten im letzten Mathetest",
+              "nummer": 1
+            },
+            {
+              "titel": "Im Test davor waren es 15 Punkte",
+              "nummer": 2
+            },
+            {
+              "titel": "Wird er aufgerufen, fühlt er sich dumm",
+              "nummer": 3
+            },
+            {
+              "titel": "Sein Cousin sagt oft: „Du kapierst ja gar nichts.“",
+              "nummer": 4
+            },
+            {
+              "titel": "Er erklärt Freunden, wie man ein Moped repariert",
+              "nummer": 5
+            },
+            {
+              "titel": "Für lange Texte braucht er länger als die anderen",
+              "nummer": 6
+            },
+            {
+              "titel": "Er weiß alle Fußballergebnisse der Saison auswendig",
+              "nummer": 7
+            },
+            {
+              "titel": "Er glaubt, die ganze Klasse hält ihn für dumm",
+              "nummer": 8
+            },
+            {
+              "titel": "Im Praktikum durfte er nach drei Tagen allein an die Kasse",
+              "nummer": 9
+            },
+            {
+              "titel": "In Französisch ging es von 21 auf 33 Punkte",
+              "nummer": 10
+            },
+            {
+              "titel": "Die Aufgabe an der Tafel hat er gestern nicht gelöst",
+              "nummer": 11
+            },
+            {
+              "titel": "Er ist sicher: „Aus mir wird sowieso nichts.“",
+              "nummer": 12
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen unterscheiden an einem erfundenen Fall Tatsachen von Gefühlen, Sprüchen und Vermutungen und merken, dass die echten Beweise meist nur einen kleineren Satz stützen.",
+        "ablauf": [
+          "Hinweise im Raum verteilen, an der Tafel eine Waage: links „Beweise dafür“, rechts „Beweise dagegen“, darunter ein Papierkorb für „kein Beweis“.",
+          "Ermittlung (5 Min.) in Teams mit einem Zettel für die Nummern 1 bis 12. Auflösung (7 Min.): Karte für Karte an die Waage, die Teams zeigen ihre Antwort gleichzeitig.",
+          "Urteil (3 Min.): Stimmt „Ich bin dumm“ immer, manchmal, selten? Was stimmt genauer?"
+        ],
+        "hintergrund": "Belege für und gegen einen Gedanken zu prüfen, ist eine Kerntechnik der kognitiven Verhaltenstherapie (Beck, 2011). Jugendliche verwechseln dabei leicht Tatsachen mit Gefühlen und mit Urteilen anderer. Am fremden Fall gelingt die Unterscheidung leichter als am eigenen Satz: Der Abstand senkt die Belastung (Kross & Ayduk, 2017). Tiagos echte Beweise stützen nur „Mathe und lange Texte fallen mir schwer“ – ein Satz, der Lernen zulässt statt ein festes Urteil (Dweck, 2006).",
+        "quellen": [
+          "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+          "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136.",
+          "Dweck, C. S. (2006). Mindset: The New Psychology of Success. New York: Random House."
+        ],
+        "differenzierung": {
+          "leichter": "Nur fragen: Hätte eine Kamera das filmen können?",
+          "schwerer": "Zwei eigene Hinweise für die Akte erfinden – einen Beweis und einen, der nur so aussieht."
+        },
+        "impulse": [
+          "Welcher Hinweis sah aus wie ein Beweis und war keiner?",
+          "Welchen Satz dürfte Tiago nach dieser Akte ehrlich über sich sagen?"
+        ],
+        "tipps": [
+          "Lösung: dafür 1, 6, 11 – dagegen 2, 5, 7, 9, 10 – kein Beweis 3, 4, 8, 12.",
+          "Die Beweise dafür stehen lassen: Sie sind wahr, sie beweisen nur nicht „dumm“."
+        ],
+        "achtung": "Den Fall nie auf Personen aus der Gruppe beziehen. Sagt jemand, bei ihm sei alles „dafür“: nicht überreden, später allein nachfragen. Bei Gefährdung nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren.",
+        "material": "Kartensatz, Klebeband, Zettel, Stifte, Stoppuhr, Tafel"
+      }
+    },
+    "fr": {
+      "titel": "L’affaire Tiago",
+      "untertitel": "Tiago, 15 ans, dit de lui : « Je suis bête. » Douze indices – mais tous ne sont pas des preuves.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Votre enquête",
+          "punkte": [
+            "Les douze indices sont affichés dans la salle. Vous enquêtez à deux ou à trois et vous avez cinq minutes.",
+            "Notez pour chaque numéro : P = preuve pour, C = preuve contre, N = pas une preuve (émotion, remarque, supposition).",
+            "Solution à la balance : 1 point par bonne réponse. Puis votre verdict – la phrase de Tiago est-elle vraie ?"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Découpez les indices et affichez-les dans la salle.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 100,
+          "schneiden": true,
+          "karten": [
+            {
+              "titel": "22 points sur 60 au dernier contrôle de maths",
+              "nummer": 1
+            },
+            {
+              "titel": "Au contrôle d’avant, il avait 15 points",
+              "nummer": 2
+            },
+            {
+              "titel": "Quand on l’interroge, il se sent bête",
+              "nummer": 3
+            },
+            {
+              "titel": "Son cousin dit souvent : « Tu ne piges rien. »",
+              "nummer": 4
+            },
+            {
+              "titel": "Il explique à ses amis comment réparer une mobylette",
+              "nummer": 5
+            },
+            {
+              "titel": "Pour les longs textes, il lui faut plus de temps qu’aux autres",
+              "nummer": 6
+            },
+            {
+              "titel": "Il connaît par cœur tous les résultats de foot de la saison",
+              "nummer": 7
+            },
+            {
+              "titel": "Il croit que toute la classe le trouve bête",
+              "nummer": 8
+            },
+            {
+              "titel": "En stage, il a pu tenir la caisse seul après trois jours",
+              "nummer": 9
+            },
+            {
+              "titel": "En français, il est passé de 21 à 33 points",
+              "nummer": 10
+            },
+            {
+              "titel": "Hier, il n’a pas résolu l’exercice au tableau",
+              "nummer": 11
+            },
+            {
+              "titel": "Il en est sûr : « Je n’arriverai à rien. »",
+              "nummer": 12
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "À partir d’un cas inventé, les jeunes distinguent les faits des émotions, des remarques et des suppositions, et remarquent que les vraies preuves ne soutiennent souvent qu’une phrase plus petite.",
+        "ablauf": [
+          "Répartir les indices dans la salle ; au tableau, une balance : à gauche « preuves pour », à droite « preuves contre », en dessous une corbeille pour « pas une preuve ».",
+          "Enquête (5 min) en équipes avec un papier pour les numéros 1 à 12. Solution (7 min) : carte après carte à la balance, les équipes montrent leur réponse en même temps.",
+          "Verdict (3 min) : « Je suis bête » est-il vrai toujours, parfois, rarement ? Qu’est-ce qui est vrai plus précisément ?"
+        ],
+        "hintergrund": "Examiner les preuves pour et contre une pensée est une technique centrale de la thérapie cognitivo-comportementale (Beck, 2011). Les jeunes confondent facilement les faits avec des émotions et avec les jugements des autres. Sur le cas d’un autre, la distinction est plus facile que sur sa propre phrase : la distance allège la charge (Kross & Ayduk, 2017). Les vraies preuves de Tiago ne soutiennent que « les maths et les longs textes me sont difficiles » – une phrase qui laisse place à l’apprentissage plutôt qu’à un jugement définitif (Dweck, 2006).",
+        "quellen": [
+          "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+          "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136.",
+          "Dweck, C. S. (2006). Mindset: The New Psychology of Success. New York: Random House."
+        ],
+        "differenzierung": {
+          "leichter": "Demander seulement : une caméra aurait-elle pu le filmer ?",
+          "schwerer": "Inventer deux indices pour le dossier – une preuve et un indice qui n’en a que l’air."
+        },
+        "impulse": [
+          "Quel indice ressemblait à une preuve sans en être une ?",
+          "Quelle phrase Tiago pourrait-il dire honnêtement de lui après ce dossier ?"
+        ],
+        "tipps": [
+          "Solution : pour 1, 6, 11 – contre 2, 5, 7, 9, 10 – pas une preuve 3, 4, 8, 12.",
+          "Prendre au sérieux les preuves « pour » : elles sont vraies, elles ne prouvent simplement pas « bête »."
+        ],
+        "achtung": "Ne jamais rapporter le cas à un membre du groupe. Si quelqu’un dit que chez lui tout est « pour » : ne pas insister, y revenir plus tard seul à seul. En cas de danger, agir selon le concept de protection interne et informer la direction compétente (responsable).",
+        "material": "Jeu de cartes, Ruban adhésif, Papier, Crayons, Chronomètre, Tableau"
+      }
+    }
+  },
+  {
+    "id": "skills-sinnes-jagd",
+    "bereich": "skills",
+    "thema": "ankommen",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "look": "spiel",
+    "sozialform": [
+      "gruppe",
+      "einzeln"
+    ],
+    "dauer": "15–20 Min.",
+    "eldib": [
+      "V-21",
+      "V-24",
+      "SOZ-18"
+    ],
+    "schlagworte": [
+      "5-4-3-2-1",
+      "Achtsamkeit",
+      "Sinne",
+      "Draußen",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:eye",
+    "verwandt": [
+      "skills-pass"
+    ],
+    "kurs": [
+      "j1-e01"
+    ],
+    "de": {
+      "titel": "Sinnes-Jagd 5-4-3-2-1",
+      "untertitel": "Zu zweit unterwegs: Findet, was sonst niemand bemerkt.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Ihr habt acht Minuten. Geht zu zweit los und schreibt in Stichworten auf, was ihr findet.",
+          "hinweis": "Einen Punkt gibt es für alles, was kein anderes Team hat. Bleibt in Sichtweite – beim Signal kommen alle zurück.",
+          "symbole": [
+            "partner",
+            "bewegen"
+          ]
+        },
+        {
+          "art": "atmen",
+          "uebung": "fuenf-sinne"
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Dein erster Skill",
+          "text": "Dasselbe geht allein und ganz still: langsam durchzählen, 5 sehen, 4 fühlen, 3 hören, 2 riechen, 1 schmecken. Das holt den Kopf aus dem Grübeln zurück ins Hier und Jetzt."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wo könntest du 5-4-3-2-1 brauchen? Kreuz an.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 3,
+          "items": [
+            "im Bus",
+            "vor einem Test",
+            "wenn ich sauer bin",
+            "abends im Bett",
+            "wenn der Kopf voll ist"
+          ],
+          "frei": 1
+        },
+        {
+          "art": "mission",
+          "text": "Probier 5-4-3-2-1 diese Woche einmal aus, wenn dein Kopf voll ist – im Bus, vor einem Test oder abends im Bett.",
+          "tage": 1,
+          "beweis": "Daumen hoch oder runter – hat es etwas gebracht?"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen lernen ihren ersten Skill im Spiel kennen: Sie richten die Aufmerksamkeit nacheinander auf fünf Sinne und holen sich so ins Hier und Jetzt zurück.",
+        "ablauf": [
+          "Start (2 Min.): Paare bilden, Grenzen und Sammelsignal nennen. Gesucht wird zu zweit, jede Person schreibt auf ihr eigenes Blatt.",
+          "Jagd (8 Min.): draußen oder im Gebäude. Geschmeckt wird nur der Imbiss oder ein Schluck Wasser, nichts vom Boden.",
+          "Vergleich (3 Min.): Jedes Paar liest vor. Was kein anderes Paar hat, zählt einen Punkt.",
+          "Danach im Sitzen und still (5 Min.): dieselbe Übung als Skill anleiten, dann Aufgabe 2 und die Mission."
+        ],
+        "hintergrund": "Die Übung 5-4-3-2-1 lenkt die Aufmerksamkeit von den Gedanken auf das, was gerade wahrnehmbar ist. Kurze Achtsamkeitsübungen dieser Art stehen im Skillstraining der Dialektisch-Behavioralen Therapie für Jugendliche am Anfang jeder Sitzung (Rathus & Miller, 2015). Draußen fällt das Wahrnehmen leichter: Natur entlastet die gerichtete Aufmerksamkeit und wirkt erholsam (Kaplan, 1995). Als Spiel eingeführt, wirkt die Übung weniger fremd; der stille Durchgang danach zeigt, wie sie im Alltag gemeint ist.",
+        "quellen": [
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+          "Kaplan, S. (1995). The restorative benefits of nature: Toward an integrative framework. Journal of Environmental Psychology, 15(3), 169–182."
+        ],
+        "differenzierung": {
+          "leichter": "Nur drei Sinne jagen: sehen, fühlen, hören.",
+          "schwerer": "Es zählt nur, was kleiner ist als eine Hand oder weiter weg als zehn Meter."
+        },
+        "impulse": [
+          "Was habt ihr bemerkt, das ihr sonst übersehen hättet?",
+          "Woran habt ihr in den acht Minuten nicht gedacht?"
+        ],
+        "tipps": [
+          "Bei Regen im Gebäude jagen: Flur, Treppenhaus, Fensterplätze.",
+          "Wer es langweilig fand, hat nichts falsch gemacht – ein Skill muss nicht zu allen passen."
+        ],
+        "achtung": "Die Augen bleiben offen. Wirkt jemand bei der stillen Übung abwesend oder sehr unruhig, die Person ruhig ansprechen und später unter vier Augen nachfragen. Bei Hinweisen auf Gefährdung nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren.",
+        "material": "Blatt und Stift für jede Person, feste Unterlagen, Stoppuhr, Pfeife"
+      }
+    },
+    "fr": {
+      "titel": "Chasse aux sens 5-4-3-2-1",
+      "untertitel": "À deux, en route : trouvez ce que personne d’autre ne remarque.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Vous avez huit minutes. Partez à deux et notez en mots-clés ce que vous trouvez.",
+          "hinweis": "Un point pour tout ce qu’aucune autre équipe n’a trouvé. Restez à portée de vue – au signal, tout le monde revient.",
+          "symbole": [
+            "partner",
+            "bewegen"
+          ]
+        },
+        {
+          "art": "atmen",
+          "uebung": "fuenf-sinne"
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Ton premier skill",
+          "text": "On peut faire la même chose seul et en silence : compter lentement, 5 choses vues, 4 touchées, 3 entendues, 2 senties, 1 goûtée. Cela ramène la tête, perdue dans ses pensées, à l’instant présent."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Où pourrais-tu avoir besoin du 5-4-3-2-1 ? Coche.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 3,
+          "items": [
+            "dans le bus",
+            "avant un contrôle",
+            "quand je suis en colère",
+            "le soir au lit",
+            "quand ma tête est pleine"
+          ],
+          "frei": 1
+        },
+        {
+          "art": "mission",
+          "text": "Cette semaine, essaie une fois le 5-4-3-2-1 quand ta tête est pleine – dans le bus, avant un contrôle ou le soir au lit.",
+          "tage": 1,
+          "beweis": "pouce en haut ou en bas – est-ce que ça a servi ?"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes découvrent leur premier skill en jouant : ils dirigent leur attention sur les cinq sens, l’un après l’autre, et reviennent ainsi à l’instant présent.",
+        "ablauf": [
+          "Départ (2 min) : former des paires, indiquer les limites et le signal de rassemblement. On cherche à deux, chacun écrit sur sa propre feuille.",
+          "Chasse (8 min) : dehors ou dans le bâtiment. On ne goûte que la collation ou une gorgée d’eau, rien de ce qui est par terre.",
+          "Comparaison (3 min) : chaque paire lit sa liste. Ce qu’aucune autre paire n’a trouvé vaut un point.",
+          "Ensuite, assis et en silence (5 min) : guider le même exercice comme skill, puis exercice 2 et mission."
+        ],
+        "hintergrund": "L’exercice 5-4-3-2-1 déplace l’attention des pensées vers ce qui est perceptible à l’instant. De courts exercices de pleine conscience de ce type ouvrent chaque séance de l’entraînement aux compétences de la thérapie comportementale dialectique pour adolescents (Rathus & Miller, 2015). Dehors, percevoir est plus facile : la nature soulage l’attention dirigée et a un effet réparateur (Kaplan, 1995). Présenté comme un jeu, l’exercice paraît moins étrange ; le passage en silence qui suit montre comment l’utiliser au quotidien.",
+        "quellen": [
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+          "Kaplan, S. (1995). The restorative benefits of nature: Toward an integrative framework. Journal of Environmental Psychology, 15(3), 169–182."
+        ],
+        "differenzierung": {
+          "leichter": "Ne chasser que trois sens : voir, toucher, entendre.",
+          "schwerer": "Ne compte que ce qui est plus petit qu’une main ou à plus de dix mètres."
+        },
+        "impulse": [
+          "Qu’avez-vous remarqué que vous n’auriez pas vu autrement ?",
+          "À quoi n’avez-vous pas pensé pendant ces huit minutes ?"
+        ],
+        "tipps": [
+          "S’il pleut, chasser dans le bâtiment : couloir, escalier, fenêtres.",
+          "Trouver l’exercice ennuyeux n’est pas une erreur – un skill ne convient pas à tout le monde."
+        ],
+        "achtung": "Les yeux restent ouverts. Si quelqu’un semble absent ou très agité pendant l’exercice en silence, lui parler calmement et y revenir plus tard en tête-à-tête. En cas d’indices de danger, agir selon le concept de protection interne et informer la direction compétente (responsable).",
+        "material": "Une feuille et un crayon par personne, supports rigides, chronomètre, sifflet"
+      }
+    }
+  },
+  {
+    "id": "skills-jahresweg-karten",
+    "bereich": "skills",
+    "thema": "ankommen",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "look": "spiel",
+    "sozialform": [
+      "gruppe"
+    ],
+    "dauer": "8 Min.",
+    "eldib": [
+      "SOZ-30",
+      "V-22",
+      "SOZ-29"
+    ],
+    "schlagworte": [
+      "Jahresweg",
+      "Treppe",
+      "Überblick",
+      "Spiel",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:stairs-up",
+    "verwandt": [
+      "skills-pass"
+    ],
+    "kurs": [
+      "j1-e01"
+    ],
+    "de": {
+      "titel": "Jahresweg-Karten",
+      "untertitel": "Zehn Stufen, ein Kursjahr: In welcher Reihenfolge geht es nach oben?",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "So geht das Spiel",
+          "punkte": [
+            "Mischt die Karten und legt sie offen auf den Boden.",
+            "Ihr habt zwei Minuten: Legt die zehn Stufen als Treppe – unten das, womit das Jahr anfängt.",
+            "Die Leitung sagt nur, wie viele Karten richtig liegen. Dann dürft ihr einmal umbauen.",
+            "Auf die zwei Karten „Unsere Stufe“ schreibt ihr, was ihr dieses Jahr außerdem lernen wollt."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schneidet die Karten aus.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 100,
+          "schneiden": true,
+          "karten": [
+            {
+              "titel": "Gefühle regulieren",
+              "text": "Was hilft mir, wenn es zu viel wird?"
+            },
+            {
+              "titel": "Digitale Welt",
+              "text": "Was macht das Handy mit mir?"
+            },
+            {
+              "titel": "Wer bin ich?",
+              "text": "Was brauche ich, was kann ich?"
+            },
+            {
+              "titel": "Wenn es schwierig wird",
+              "text": "Was tue ich bei Konflikten, Druck und Mobbing?"
+            },
+            {
+              "titel": "Ankommen",
+              "text": "Wer sind wir als Gruppe?"
+            },
+            {
+              "titel": "Meine Gedanken",
+              "text": "Was denke ich über mich – und stimmt das?"
+            },
+            {
+              "titel": "Abschluss",
+              "text": "Was nehme ich mit?"
+            },
+            {
+              "titel": "Gefühle verstehen",
+              "text": "Was fühle ich – und wozu?"
+            },
+            {
+              "titel": "Gesund & stark",
+              "text": "Wie sorge ich für mich?"
+            },
+            {
+              "titel": "Kommunikation & Grenzen",
+              "text": "Wie sage ich, was ich fühle und brauche?"
+            },
+            {
+              "titel": "Unsere Stufe",
+              "text": "Das wollen wir auch lernen: …"
+            },
+            {
+              "titel": "Unsere Stufe",
+              "text": "Das wollen wir auch lernen: …"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Gruppe verschafft sich einen Überblick über das Kursjahr, indem sie die zehn Module selbst in eine Reihenfolge bringt. Eigene Wünsche bekommen auf zwei Karten Platz.",
+        "ablauf": [
+          "Karten ausschneiden, mischen und offen auf den Boden legen. Zwei Minuten zum Legen, ohne Hilfe der Leitung.",
+          "Nur die Zahl der richtigen Plätze nennen, einmal umbauen lassen, dann auflösen. Von unten nach oben: Ankommen, Wer bin ich?, Gefühle verstehen, Gefühle regulieren, Meine Gedanken, Kommunikation & Grenzen, Wenn es schwierig wird, Digitale Welt, Gesund & stark, Abschluss.",
+          "Die zwei Karten „Unsere Stufe“ beschriften lassen und dazulegen. Die Treppe auf ein Plakat kleben – sie kommt im Lauf des Jahres wieder."
+        ],
+        "hintergrund": "Programme zur Förderung sozial-emotionaler Kompetenzen wirken besonders, wenn sie Schritt für Schritt aufbauen und offen benennen, was gelernt wird (Durlak et al., 2011). Der Jahresweg macht diesen Aufbau sichtbar: vom Ich über das Wir zur Welt. Beim Legen spricht die Gruppe über die Inhalte, statt nur zuzuhören. Die zwei freien Karten nehmen das Bedürfnis nach Mitbestimmung ernst (Deci & Ryan, 2000) und zeigen der Leitung früh, was die Gruppe beschäftigt.",
+        "quellen": [
+          "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432.",
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268."
+        ],
+        "differenzierung": {
+          "leichter": "Die erste und die letzte Stufe liegen schon; die Gruppe ordnet nur die acht dazwischen.",
+          "schwerer": "Zu jeder Stufe eine Situation aus dem Alltag nennen, in der man das brauchen könnte."
+        },
+        "impulse": [
+          "Welche Stufe interessiert euch am meisten?",
+          "Warum kommt „Gefühle verstehen“ wohl vor „Gefühle regulieren“?"
+        ],
+        "tipps": [
+          "Beim Auflösen die Logik nennen: vom Ich über das Wir zur Welt.",
+          "Wünsche auf den freien Karten ernst nehmen und sagen, wo im Jahr sie Platz finden – sonst in einer Joker-Einheit."
+        ],
+        "achtung": "Steht auf einer freien Karte etwas Belastendes, das nicht in der Gruppe vertiefen, sondern im Einzelgespräch aufgreifen; bei Hinweisen auf Gefährdung nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren.",
+        "material": "Ein Kartensatz für die Gruppe (ausgeschnitten), Plakat und Klebestift"
+      }
+    },
+    "fr": {
+      "titel": "Cartes du parcours de l’année",
+      "untertitel": "Dix marches, une année de cours : dans quel ordre monte-t-on ?",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Règle du jeu",
+          "punkte": [
+            "Mélangez les cartes et posez-les par terre, face visible.",
+            "Vous avez deux minutes : formez un escalier avec les dix marches – en bas, ce par quoi l’année commence.",
+            "L’adulte dit seulement combien de cartes sont bien placées. Vous pouvez ensuite corriger une fois.",
+            "Sur les deux cartes « Notre marche », écrivez ce que vous voulez aussi apprendre cette année."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Découpez les cartes.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 100,
+          "schneiden": true,
+          "karten": [
+            {
+              "titel": "Réguler ses émotions",
+              "text": "Qu’est-ce qui m’aide quand c’est trop ?"
+            },
+            {
+              "titel": "Monde numérique",
+              "text": "Que fait le téléphone avec moi ?"
+            },
+            {
+              "titel": "Qui suis-je ?",
+              "text": "De quoi ai-je besoin, que sais-je faire ?"
+            },
+            {
+              "titel": "Quand c’est difficile",
+              "text": "Que faire face aux conflits, à la pression et au harcèlement ?"
+            },
+            {
+              "titel": "Arriver",
+              "text": "Qui sommes-nous en tant que groupe ?"
+            },
+            {
+              "titel": "Mes pensées",
+              "text": "Qu’est-ce que je pense de moi – et est-ce vrai ?"
+            },
+            {
+              "titel": "Conclusion",
+              "text": "Qu’est-ce que j’emporte ?"
+            },
+            {
+              "titel": "Comprendre les émotions",
+              "text": "Qu’est-ce que je ressens – et à quoi ça sert ?"
+            },
+            {
+              "titel": "En bonne santé",
+              "text": "Comment prendre soin de moi ?"
+            },
+            {
+              "titel": "Communication et limites",
+              "text": "Comment dire ce que je ressens et ce dont j’ai besoin ?"
+            },
+            {
+              "titel": "Notre marche",
+              "text": "Nous voulons aussi apprendre : …"
+            },
+            {
+              "titel": "Notre marche",
+              "text": "Nous voulons aussi apprendre : …"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Le groupe se fait une vue d’ensemble de l’année en mettant lui-même les dix modules dans l’ordre. Ses propres souhaits trouvent place sur deux cartes.",
+        "ablauf": [
+          "Découper les cartes, les mélanger et les poser par terre, face visible. Deux minutes pour les placer, sans aide de l’adulte.",
+          "Ne donner que le nombre de cartes bien placées, laisser corriger une fois, puis donner la solution. De bas en haut : Arriver, Qui suis-je ?, Comprendre les émotions, Réguler ses émotions, Mes pensées, Communication et limites, Quand c’est difficile, Monde numérique, En bonne santé, Conclusion.",
+          "Faire remplir les deux cartes « Notre marche » et les ajouter. Coller l’escalier sur une affiche – il reviendra au fil de l’année."
+        ],
+        "hintergrund": "Les programmes qui développent les compétences socio-émotionnelles sont particulièrement efficaces lorsqu’ils progressent pas à pas et disent ouvertement ce que l’on apprend (Durlak et al., 2011). Le parcours de l’année rend cette progression visible : du moi au nous, puis au monde. En plaçant les cartes, le groupe parle des contenus au lieu de seulement écouter. Les deux cartes libres prennent au sérieux le besoin de participation (Deci & Ryan, 2000) et montrent tôt à l’adulte ce qui préoccupe le groupe.",
+        "quellen": [
+          "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432.",
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268."
+        ],
+        "differenzierung": {
+          "leichter": "La première et la dernière marche sont déjà posées ; le groupe ordonne seulement les huit autres.",
+          "schwerer": "Pour chaque marche, citer une situation du quotidien où cela pourrait servir."
+        },
+        "impulse": [
+          "Quelle marche vous intéresse le plus ?",
+          "Pourquoi « Comprendre les émotions » vient-il sans doute avant « Réguler ses émotions » ?"
+        ],
+        "tipps": [
+          "En donnant la solution, nommer la logique : du moi au nous, puis au monde.",
+          "Prendre au sérieux les souhaits des cartes libres et dire où ils trouveront place dans l’année – sinon dans une séance joker."
+        ],
+        "achtung": "Si une carte libre évoque quelque chose de lourd, ne pas approfondir en groupe mais en entretien individuel ; en cas d’indices de danger, agir selon le concept de protection interne et informer la direction compétente (responsable).",
+        "material": "Un jeu de cartes découpé pour le groupe, une affiche et de la colle"
+      }
+    }
+  },
+  {
+    "id": "skills-zonen-karten",
+    "bereich": "skills",
+    "thema": "regulieren",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "look": "spiel",
+    "sozialform": [
+      "gruppe"
+    ],
+    "dauer": "20 Min.",
+    "eldib": [
+      "K-26",
+      "K-16",
+      "V-21"
+    ],
+    "schlagworte": [
+      "Anspannung",
+      "Anspannungsskala 0–100",
+      "Situationen einschätzen",
+      "Spiel",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:temperature",
+    "verwandt": [
+      "skills-anspannungsthermometer",
+      "skills-kaertchen"
+    ],
+    "kurs": [
+      "j1-e11",
+      "j1-e15"
+    ],
+    "de": {
+      "titel": "Zonen-Karten",
+      "untertitel": "Ein Spiel für die ganze Gruppe: Grün, Gelb oder Rot – wo landet ihr?",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "So geht die Zonen-Wette",
+          "punkte": [
+            "Zwei Teams. In jeder Runde dreht sich aus jedem Team eine Person um: Sie tippt.",
+            "Die Leitung liest eine Karte vor. Alle anderen gehen leise zu ihrer eigenen Zahl auf der Linie von 0 bis 100.",
+            "Die Tipper raten mit dem Rücken zur Linie: Wo stehen die meisten – Grün, Gelb oder Rot? Richtig = 1 Punkt.",
+            "Bonus: Das Team nennt einen Skill, der bei dieser Zahl noch hilft = 1 Punkt."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schneidet die Karten aus und legt sie verdeckt auf einen Stapel.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 104,
+          "schneiden": true,
+          "karten": [
+            {
+              "titel": "Jemand drängelt sich in der Kantine vor",
+              "nummer": 1
+            },
+            {
+              "titel": "Hausaufgaben vergessen – und du wirst gefragt",
+              "nummer": 2
+            },
+            {
+              "titel": "Du wirst an die Tafel gerufen und weißt die Antwort nicht",
+              "nummer": 3
+            },
+            {
+              "titel": "Dein Handy fällt runter, das Display springt",
+              "nummer": 4
+            },
+            {
+              "titel": "Dein Wecker hat nicht geklingelt – du kommst zu spät",
+              "nummer": 5
+            },
+            {
+              "titel": "Du wirst für etwas beschuldigt, das du nicht getan hast",
+              "nummer": 6
+            },
+            {
+              "titel": "Ein peinliches Foto von dir landet in der Klassengruppe",
+              "nummer": 7
+            },
+            {
+              "titel": "Jemand macht sich über deine Familie lustig",
+              "nummer": 8
+            },
+            {
+              "titel": "Kurz vor dem Sieg bricht im Spiel die Verbindung ab",
+              "nummer": 9
+            },
+            {
+              "titel": "Du wartest seit einer Stunde auf eine Antwort",
+              "nummer": 10
+            },
+            {
+              "titel": "Zwei flüstern und schauen zu dir herüber",
+              "nummer": 11
+            },
+            {
+              "titel": "Morgen ist die Prüfung – und du hast kaum gelernt",
+              "nummer": 12
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen schätzen Alltagssituationen auf der Anspannungsskala ein, erleben, dass dieselbe Situation für jede Person eine andere Zahl hat, und nennen Skills, die bei dieser Zahl noch helfen.",
+        "ablauf": [
+          "Die Bodenlinie von 0 bis 100 liegt, die Marken bei 30 und 70 teilen sie in Grün, Gelb und Rot. Zwei gemischte Teams bilden, jedes mit Tipp-Karten in den drei Farben.",
+          "Acht bis zehn Runden nach den Regeln auf dem Blatt; die Tipper wechseln in jeder Runde. Die Leitung zählt die Punkte an der Tafel.",
+          "Nach jeder Runde eine Person fragen: Was macht die Situation für dich so groß oder so klein?",
+          "Einheit 15: dieselben Karten im Spiel „Skills-Notruf“ (Regeln auf dem Blatt „Skills-Kärtchen“)."
+        ],
+        "hintergrund": "Die Anspannungsskala von 0 bis 100 gehört zu den Grundwerkzeugen des DBT-Skillstrainings für Jugendliche (Rathus & Miller, 2015; Fleischhaker et al., 2011). Sie trennt die Stärke der Erregung vom einzelnen Gefühl. Das Spiel macht zwei Dinge sichtbar: Dieselbe Situation löst bei verschiedenen Menschen sehr unterschiedliche Anspannung aus, und je höher die Zahl, desto weniger helfen Fertigkeiten, die Nachdenken voraussetzen (Linehan, 2015). Weil die Situationen erfunden sind, kann jede Person ehrlich stehen, ohne Eigenes preiszugeben.",
+        "quellen": [
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+          "Fleischhaker, C., Sixt, B. & Schulz, E. (2011). DBT-A: Dialektisch-behaviorale Therapie für Jugendliche. Berlin: Springer.",
+          "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Statt einer Zahl nur die Zone wählen: drei Reifen oder Blätter in Grün, Gelb und Rot auf dem Boden.",
+          "schwerer": "Die Tipper raten zusätzlich die Zahl der Person, die am höchsten steht."
+        },
+        "impulse": [
+          "Warum hat dieselbe Situation für zwei Menschen eine andere Zahl?",
+          "Was würde dir bei dieser Zahl helfen – und was würde es schlimmer machen?"
+        ],
+        "tipps": [
+          "Ehrlich stehen ist die Regel: Es gewinnt, wer die Gruppe gut einschätzt, nicht wer sich verstellt.",
+          "Bei zwei oder drei Jugendlichen tippt immer eine Person, wo die anderen stehen; die Leitung stellt sich mit auf."
+        ],
+        "achtung": "Nur die Situationen auf den Karten, nie eigene Erlebnisse; niemand muss seinen Platz begründen. Echte Belastung im Einzelgespräch aufgreifen; bei Gefährdung nach dem Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren.",
+        "material": "Kartensatz, Malerkrepp, Würfel (Einheit 15)"
+      }
+    },
+    "fr": {
+      "titel": "Cartes des zones",
+      "untertitel": "Un jeu pour tout le groupe : vert, orange ou rouge – où vous retrouvez-vous ?",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Le pari des zones : règle du jeu",
+          "punkte": [
+            "Deux équipes. À chaque manche, une personne de chaque équipe se retourne : elle parie.",
+            "L’animateur lit une carte. Tous les autres vont en silence à leur propre chiffre sur la ligne de 0 à 100.",
+            "Dos à la ligne, les parieurs devinent : où y a-t-il le plus de monde – vert, orange ou rouge ? Juste = 1 point.",
+            "Bonus : l’équipe cite un skill qui aide encore à ce chiffre = 1 point."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Découpez les cartes et posez-les en pile, face cachée.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 104,
+          "schneiden": true,
+          "karten": [
+            {
+              "titel": "Quelqu’un te passe devant à la cantine",
+              "nummer": 1
+            },
+            {
+              "titel": "Devoirs oubliés – et on t’interroge",
+              "nummer": 2
+            },
+            {
+              "titel": "On t’appelle au tableau et tu ne sais pas la réponse",
+              "nummer": 3
+            },
+            {
+              "titel": "Ton téléphone tombe, l’écran se fissure",
+              "nummer": 4
+            },
+            {
+              "titel": "Ton réveil n’a pas sonné – tu arrives en retard",
+              "nummer": 5
+            },
+            {
+              "titel": "On t’accuse de quelque chose que tu n’as pas fait",
+              "nummer": 6
+            },
+            {
+              "titel": "Une photo gênante de toi arrive dans le groupe de la classe",
+              "nummer": 7
+            },
+            {
+              "titel": "Quelqu’un se moque de ta famille",
+              "nummer": 8
+            },
+            {
+              "titel": "Juste avant la victoire, la connexion du jeu coupe",
+              "nummer": 9
+            },
+            {
+              "titel": "Tu attends une réponse depuis une heure",
+              "nummer": 10
+            },
+            {
+              "titel": "Deux personnes chuchotent en te regardant",
+              "nummer": 11
+            },
+            {
+              "titel": "Demain, c’est le contrôle – et tu as à peine révisé",
+              "nummer": 12
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes situent des situations du quotidien sur l’échelle de tension, constatent qu’une même situation n’a pas le même chiffre pour tous et citent des skills qui aident encore à ce chiffre.",
+        "ablauf": [
+          "La ligne de 0 à 100 est au sol, les repères 30 et 70 la partagent en vert, orange et rouge. Former deux équipes mélangées, chacune avec des cartes de pari des trois couleurs.",
+          "Huit à dix manches selon la règle de la feuille ; les parieurs changent à chaque manche. L’animateur note les points au tableau.",
+          "Après chaque manche, demander à une personne : qu’est-ce qui rend cette situation si grande ou si petite pour toi ?",
+          "Séance 15 : les mêmes cartes dans le jeu « Allô skills » (règle sur la feuille « Cartes de skills »)."
+        ],
+        "hintergrund": "L’échelle de tension de 0 à 100 fait partie des outils de base de l’entraînement aux compétences DBT pour adolescents (Rathus & Miller, 2015 ; Fleischhaker et al., 2011). Elle sépare l’intensité de l’activation de l’émotion elle-même. Le jeu rend deux choses visibles : une même situation déclenche des tensions très différentes selon les personnes, et plus le chiffre est élevé, moins les compétences qui demandent de réfléchir sont utiles (Linehan, 2015). Comme les situations sont inventées, chacun peut se placer honnêtement sans se dévoiler.",
+        "quellen": [
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+          "Fleischhaker, C., Sixt, B. & Schulz, E. (2011). DBT-A: Dialektisch-behaviorale Therapie für Jugendliche. Berlin: Springer.",
+          "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Choisir seulement la zone au lieu d’un chiffre : trois cerceaux ou feuilles, vert, orange et rouge, au sol.",
+          "schwerer": "Les parieurs devinent en plus le chiffre de la personne placée le plus haut."
+        },
+        "impulse": [
+          "Pourquoi la même situation a-t-elle un chiffre différent pour deux personnes ?",
+          "Qu’est-ce qui t’aiderait à ce chiffre – et qu’est-ce qui aggraverait les choses ?"
+        ],
+        "tipps": [
+          "Se placer honnêtement, c’est la règle : gagne celui qui évalue bien le groupe, pas celui qui triche sur sa place.",
+          "Avec deux ou trois jeunes, une personne parie toujours sur la place des autres ; l’animateur se place aussi."
+        ],
+        "achtung": "Seulement les situations des cartes, jamais d’expériences personnelles ; personne ne doit justifier sa place. Vraie détresse : entretien individuel ; en cas de danger, agir selon le concept de protection et informer la direction compétente (responsable).",
+        "material": "Jeu de cartes, ruban de masquage, dé (séance 15)"
+      }
+    }
+  },
+  {
+    "id": "skills-atem-stationen",
+    "bereich": "skills",
+    "thema": "regulieren",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "look": "spiel",
+    "sozialform": [
+      "gruppe"
+    ],
+    "dauer": "20 Min.",
+    "eldib": [
+      "V-24",
+      "V-25",
+      "V-21"
+    ],
+    "schlagworte": [
+      "Atem-Skills",
+      "Stationen",
+      "Körper-Skills",
+      "Skills testen",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:wind",
+    "verwandt": [
+      "skills-tester",
+      "skills-anspannungsthermometer"
+    ],
+    "kurs": [
+      "j1-e12"
+    ],
+    "de": {
+      "titel": "Atem-Stationen",
+      "untertitel": "Sechs Stationen, sechs Wege, über den Atem runterzukommen. Welcher passt zu dir?",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "So läuft der Parcours",
+          "punkte": [
+            "Geht zu zweit an eine Station und zeigt euch eure Zahl mit den Fingern.",
+            "Lest die Karte und macht den Skill, bis das Signal kommt.",
+            "Zahl noch einmal zeigen, im Skills-Tester ausmalen, weiter zur nächsten Station.",
+            "Wird dir schwindelig: aufhören und normal weiteratmen."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schneidet die Karten aus und legt an jede Station eine.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 2,
+          "hoehe": 150,
+          "schneiden": true,
+          "karten": [
+            {
+              "titel": "4-7-8-Atem",
+              "text": "4 Sekunden durch die Nase ein, 7 halten, 8 durch den Mund aus – wie durch einen Strohhalm. Viermal. Halten unangenehm? Zweimal kurz ein, lang aus.",
+              "bild": "icon:hourglass",
+              "nummer": 1
+            },
+            {
+              "titel": "Fingeratmung",
+              "text": "Fahr mit dem Zeigefinger an der anderen Hand entlang: am Finger hoch einatmen, runter ausatmen. Fünf Finger, dann die andere Hand.",
+              "bild": "icon:hand-finger",
+              "nummer": 2
+            },
+            {
+              "titel": "Atem-Feder",
+              "text": "Wirf die Feder hoch und halte sie mit langem, sanftem Pusten in der Luft. Wie viele Sekunden schafft ihr zu zweit?",
+              "bild": "icon:feather",
+              "nummer": 3
+            },
+            {
+              "titel": "Kastenatmung",
+              "text": "4 ein, 4 halten, 4 aus, 4 halten. Zeichne dabei mit dem Finger ein Quadrat auf den Tisch. Vier Runden.",
+              "bild": "icon:square",
+              "nummer": 4
+            },
+            {
+              "titel": "Luftballon-Atem",
+              "text": "Hände auf den Bauch. Beim Einatmen wird der Bauch rund wie ein Ballon, beim langen Ausatmen wieder flach. Sechsmal.",
+              "bild": "icon:balloon",
+              "nummer": 5
+            },
+            {
+              "titel": "Mein Atem-Trick",
+              "text": "Kennst du noch einen Trick, mit dem du ruhiger atmest? Zeig ihn – oder wiederholt die Station, die euch am besten gefallen hat.",
+              "bild": "icon:wind",
+              "nummer": 6
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen probieren an Stationen fünf Atem-Skills aus, messen ihre Anspannung vorher und nachher und bewerten jeden Skill im Skills-Tester.",
+        "ablauf": [
+          "Sechs Stationen mit Abstand im Raum aufbauen: je eine Karte, an Station 3 Federn. Paare bilden; bei ungerader Zahl gibt es eine Dreiergruppe.",
+          "Alle drei Minuten ein Signal (Klangschale oder Musik aus): Zahl zeigen, ausmalen, im Uhrzeigersinn weiter.",
+          "Nach fünf oder sechs Stationen im Kreis fragen: Welche Station hat eure Zahl am meisten bewegt?",
+          "In zwei Sätzen erklären: Langes Ausatmen tritt im Körper auf die Bremse, das Herz schlägt langsamer."
+        ],
+        "hintergrund": "Langsames Atmen mit verlängerter Ausatmung stärkt den beruhigenden Teil des Nervensystems und geht mit mehr Ruhe und weniger Angst und Ärger einher (Zaccaro et al., 2018). Im DBT-Skillstraining gehört es zu den Fertigkeiten, die bei hoher Anspannung über den Körper wirken, nicht über das Nachdenken (Linehan, 2015). Welche Form passt, ist persönlich: Manche brauchen das Zählen, andere ein Bild oder etwas zum Anfassen. Deshalb wird an Stationen getestet und bewertet. Entscheidend ist das Üben in ruhigen Zeiten – nur ein vertrauter Skill ist bei Rot abrufbar.",
+        "quellen": [
+          "Zaccaro, A., Piarulli, A., Laurino, M., Garbella, E., Menicucci, D., Neri, B. & Gemignani, A. (2018). How breath-control can change your life: A systematic review on psycho-physiological correlates of slow breathing. Frontiers in Human Neuroscience, 12, 353.",
+          "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Nur drei Stationen aufbauen (Fingeratmung, Atem-Feder, Luftballon-Atem) und gemeinsam im Kreis durchgehen.",
+          "schwerer": "An jeder Station überlegen: Wo ginge dieser Skill, ohne dass es jemand merkt?"
+        },
+        "impulse": [
+          "Welche Station hat eure Zahl am meisten bewegt – und welche gar nicht?",
+          "Welchen Atem-Skill könntet ihr im Bus oder im Unterricht machen?"
+        ],
+        "tipps": [
+          "Die Stationen vorher selbst einmal durchgehen, vor allem die Zählweise von 4-7-8 und Kastenatmung.",
+          "Kichern ist normal, weil Atemübungen ungewohnt sind: nicht ermahnen, selbst ruhig mitmachen."
+        ],
+        "achtung": "Bei Schwindel sofort aufhören und normal weiteratmen. Bei Asthma oder Herz-Kreislauf-Problemen die Luft nicht anhalten: an Station 1 und 4 ohne Halten atmen. Aussetzen ist immer erlaubt.",
+        "material": "Kartensatz, eine Feder je Person, Timer, Signal"
+      }
+    },
+    "fr": {
+      "titel": "Postes de respiration",
+      "untertitel": "Six postes, six façons de redescendre par le souffle. Laquelle te convient ?",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Comment marche le parcours",
+          "punkte": [
+            "Allez à deux à un poste et montrez-vous votre chiffre avec les doigts.",
+            "Lisez la carte et faites le skill jusqu’au signal.",
+            "Montrez encore votre chiffre, coloriez dans la feuille de test, passez au poste suivant.",
+            "Si tu as le vertige : arrête et respire normalement."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Découpez les cartes et posez-en une à chaque poste.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 2,
+          "hoehe": 150,
+          "schneiden": true,
+          "karten": [
+            {
+              "titel": "Respiration 4-7-8",
+              "text": "Inspire 4 secondes par le nez, retiens 7, expire 8 par la bouche – comme dans une paille. Quatre fois. Retenir te gêne ? Deux petites inspirations, une longue expiration.",
+              "bild": "icon:hourglass",
+              "nummer": 1
+            },
+            {
+              "titel": "Respiration du doigt",
+              "text": "Suis le contour de ta main avec l’index : inspire en montant le long d’un doigt, expire en descendant. Cinq doigts, puis l’autre main.",
+              "bild": "icon:hand-finger",
+              "nummer": 2
+            },
+            {
+              "titel": "Souffle de la plume",
+              "text": "Lance la plume et garde-la en l’air en soufflant longuement et doucement. Combien de secondes tenez-vous à deux ?",
+              "bild": "icon:feather",
+              "nummer": 3
+            },
+            {
+              "titel": "Respiration en carré",
+              "text": "Inspire 4, retiens 4, expire 4, retiens 4. Dessine en même temps un carré sur la table avec le doigt. Quatre tours.",
+              "bild": "icon:square",
+              "nummer": 4
+            },
+            {
+              "titel": "Souffle du ballon",
+              "text": "Mains sur le ventre. À l’inspiration, le ventre s’arrondit comme un ballon ; à la longue expiration, il redevient plat. Six fois.",
+              "bild": "icon:balloon",
+              "nummer": 5
+            },
+            {
+              "titel": "Mon truc de respiration",
+              "text": "Tu connais une autre astuce pour respirer plus calmement ? Montre-la – ou refaites le poste que vous avez préféré.",
+              "bild": "icon:wind",
+              "nummer": 6
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Aux postes, les jeunes essaient cinq skills de respiration, mesurent leur tension avant et après et évaluent chaque skill dans leur feuille de test.",
+        "ablauf": [
+          "Installer six postes espacés dans la salle : une carte par poste, des plumes au poste 3. Former des binômes ; si le nombre est impair, un groupe de trois.",
+          "Toutes les trois minutes, un signal (bol chantant ou musique coupée) : montrer son chiffre, colorier, avancer dans le sens des aiguilles d’une montre.",
+          "Après cinq ou six postes, demander en cercle : quel poste a le plus fait bouger votre chiffre ?",
+          "Expliquer en deux phrases : une longue expiration appuie sur le frein du corps, le cœur bat plus lentement."
+        ],
+        "hintergrund": "Respirer lentement en allongeant l’expiration renforce la partie apaisante du système nerveux et s’accompagne de plus de calme et de moins d’anxiété et de colère (Zaccaro et al., 2018). Dans l’entraînement aux compétences DBT, c’est l’une des compétences qui agissent par le corps, et non par la réflexion, quand la tension est élevée (Linehan, 2015). La forme qui convient est personnelle : certains ont besoin de compter, d’autres d’une image ou d’un objet. C’est pourquoi on teste et on évalue aux postes. L’essentiel est de s’exercer dans les moments calmes – seul un skill familier est disponible au rouge.",
+        "quellen": [
+          "Zaccaro, A., Piarulli, A., Laurino, M., Garbella, E., Menicucci, D., Neri, B. & Gemignani, A. (2018). How breath-control can change your life: A systematic review on psycho-physiological correlates of slow breathing. Frontiers in Human Neuroscience, 12, 353.",
+          "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Installer seulement trois postes (doigt, plume, ballon) et les parcourir ensemble, en cercle.",
+          "schwerer": "À chaque poste, se demander : où ce skill pourrait-il se faire sans que personne le remarque ?"
+        },
+        "impulse": [
+          "Quel poste a le plus fait bouger votre chiffre – et lequel pas du tout ?",
+          "Quel skill de respiration pourriez-vous faire dans le bus ou en classe ?"
+        ],
+        "tipps": [
+          "Parcourir soi-même les postes avant, surtout le comptage du 4-7-8 et du carré.",
+          "Les rires sont normaux, car ces exercices sont inhabituels : ne pas rappeler à l’ordre, continuer calmement."
+        ],
+        "achtung": "En cas de vertige, arrêter aussitôt et respirer normalement. Asthme ou problèmes cardio-vasculaires : ne pas retenir le souffle, aux postes 1 et 4 on respire sans retenir. On peut toujours passer son tour.",
+        "material": "Jeu de cartes, une plume par personne, minuteur, signal"
+      }
+    }
   }
 ]

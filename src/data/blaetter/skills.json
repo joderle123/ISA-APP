@@ -11,7 +11,7 @@
     "sozialform": [
       "gruppe"
     ],
-    "dauer": "20 Min.",
+    "dauer": "10–20 Min.",
     "eldib": [
       "SOZ-27",
       "SOZ-32",
@@ -34,73 +34,43 @@
     ],
     "de": {
       "titel": "Unser Gruppenvertrag",
-      "untertitel": "Was wir brauchen, damit wir hier offen sein können",
+      "untertitel": "Unsere Regeln – von uns gemacht, von allen unterschrieben.",
       "bausteine": [
         {
-          "art": "text",
-          "text": "Regeln wirken nur, wenn alle dahinterstehen – deshalb legt ihr sie selbst fest."
-        },
-        {
           "art": "aufgabe",
-          "text": "Sammelt zuerst: Was braucht ihr, um hier ehrlich sein zu können? Und was soll auf keinen Fall passieren?",
+          "text": "Schreibt eure drei bis fünf wichtigsten Regeln auf.",
+          "hinweis": "So, dass man es tun kann: „Wir lassen einander ausreden“ statt „Nicht dazwischenreden“.",
           "symbole": [
             "gruppe",
-            "sprechen"
+            "schreiben"
           ]
         },
         {
-          "art": "spalten",
-          "verhaeltnis": "1:1",
-          "links": [
-            {
-              "art": "feld",
-              "label": "Das brauchen wir",
-              "hoehe": 3
-            }
+          "art": "rangliste",
+          "stufen": [
+            "Regel 1",
+            "Regel 2",
+            "Regel 3",
+            "Regel 4",
+            "Regel 5"
           ],
-          "rechts": [
-            {
-              "art": "feld",
-              "label": "Das soll hier nicht passieren",
-              "hoehe": 3
-            }
-          ]
+          "hoehe": 2
         },
         {
-          "art": "aufgabe",
-          "text": "Einigt euch auf drei bis fünf Regeln. Schreibt dazu, warum sie euch wichtig sind.",
-          "hinweis": "Positiv formulieren hilft: „Wir lassen einander ausreden“ statt „Nicht dazwischenreden“."
-        },
-        {
-          "art": "tabelle",
-          "spalten": [
-            "Nr.",
-            "Unsere Regel",
-            "Warum sie uns wichtig ist"
-          ],
-          "breiten": [
-            0.45,
-            2.6,
-            2
-          ],
-          "zeilen": 5,
-          "nummern": 1,
-          "beispiel": [
-            "z. B.",
-            "Wir lachen miteinander, nicht übereinander.",
-            "Damit sich niemand bloßgestellt fühlt."
-          ]
-        },
-        {
-          "art": "frage",
-          "text": "Was machen wir, wenn jemand eine Regel bricht?",
-          "linien": 1
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Ein Vertrag darf wachsen. Später dazugekommen – mit Datum:",
+          "fuellen": false
         },
         {
           "art": "vertrag",
           "titel": "Wir halten uns daran",
-          "text": "Wir haben diese Regeln gemeinsam aufgestellt und erinnern einander ruhig daran. Was hier erzählt wird, bleibt hier – außer jemand ist in Gefahr: Dann holt die Leitung Hilfe und sagt vorher, was sie tut. Am ___ prüfen wir, ob die Regeln noch passen.",
+          "text": "Diese Regeln haben wir gemeinsam aufgestellt. Vergisst sie jemand, erinnern wir ruhig daran. Was hier erzählt wird, bleibt hier – außer jemand ist in Gefahr: Dann holt die Leitung Hilfe und sagt vorher, was sie tut. Am ___ schauen wir, ob die Regeln noch passen.",
           "unterschriften": [
+            "",
+            "",
+            "",
+            "",
             "",
             "",
             "",
@@ -112,12 +82,12 @@
         }
       ],
       "lehrer": {
-        "ziel": "Die Gruppe formuliert zu Beginn des Kurses eigene Regeln, begründet sie und verpflichtet sich darauf. Die Grenzen der Schweigepflicht werden offen besprochen.",
+        "ziel": "Die Gruppe legt eigene Regeln fest, unterschreibt sie und kann sich das ganze Jahr darauf berufen. Die Grenze der Schweigepflicht wird offen besprochen.",
         "ablauf": [
-          "Impuls (3 Min.): „Was braucht ihr, damit ihr euch hier wohlfühlt und ehrlich sein könnt?“ Antworten in die beiden Felder schreiben lassen.",
-          "Sammeln (7 Min.): Ähnliches zusammenfassen. Scherzantworten ernst nehmen und nachfragen, was dahintersteckt.",
-          "Formulieren (7 Min.): Drei bis fünf Regeln mit Begründung in die Tabelle schreiben. Fehlende Kernregeln ergänzen: Vertraulichkeit, „weiter“ ist erlaubt, miteinander statt übereinander lachen, Handys weg, Pausenregel.",
-          "Vertrag (3 Min.): Den Satz zur Schweigepflicht vorlesen und Fragen ehrlich beantworten. Alle unterschreiben, auch die Leitung; den Vertrag gut sichtbar aufhängen."
+          "Einheit 1 (10 Min.): Die Regelvorschläge aus der Staffel „Der schlimmste Kurs der Welt“ hängen an der Wand. Jede Person klebt drei Punkte; die drei bis fünf Regeln mit den meisten Punkten schreibt eine freiwillige Person auf das Blatt.",
+          "Ergänzen, was fehlt: Vertraulichkeit und ihre Grenze, „weiter“ ist erlaubt, miteinander statt übereinander lachen, Handys, Pausenregel. Den Satz zur Schweigepflicht vorlesen und Fragen ehrlich beantworten.",
+          "Alle unterschreiben, auch die Leitung. Das Datum zum Prüfen eintragen und den Vertrag gut sichtbar aufhängen.",
+          "Später (Einheit 3, neue Person, neues Kursjahr): Regel für Regel vorlesen lassen, prüfen und unter „Später dazugekommen“ ergänzen – oder ein frisches Blatt schreiben und neu unterschreiben."
         ],
         "hintergrund": "Gemeinsam erarbeitete Regeln werden eher eingehalten als vorgegebene, weil sie das Bedürfnis nach Mitbestimmung und Zugehörigkeit ernst nehmen (Deci & Ryan, 2000). Für Gruppen mit belasteten Jugendlichen ist ein klarer, vorhersehbarer Rahmen zugleich eine Schutzbedingung: Erst wenn die Gruppe sicher ist, können persönliche Themen Platz haben. Programme, die sozial-emotionale Fertigkeiten fördern, wirken besonders dann, wenn Ziele und Regeln offen benannt werden (Durlak et al., 2011).",
         "quellen": [
@@ -125,90 +95,60 @@
           "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432."
         ],
         "differenzierung": {
-          "leichter": "Die Leitung bringt acht vorformulierte Regelkarten mit; die Gruppe wählt aus und ergänzt die Begründung mündlich.",
-          "schwerer": "Die Gruppe legt zusätzlich fest, wie sie Regelverstöße bespricht – zum Beispiel mit einer Karte, die jede Person einmal pro Einheit hochhalten darf."
+          "leichter": "Die Leitung bringt acht vorformulierte Regelkarten mit; die Gruppe wählt mit Klebepunkten aus.",
+          "schwerer": "Die Gruppe legt zusätzlich fest, wie sie an Regeln erinnert – etwa mit einem Handzeichen, das alle kennen."
         },
         "impulse": [
           "Welche Regel ist euch die wichtigste – und warum gerade die?",
           "Was soll die Leitung tun, wenn es hier einmal richtig laut wird?"
         ],
         "tipps": [
-          "Den Vertrag in der dritten und in der zehnten Einheit kurz wieder anschauen: Passt noch alles?",
-          "Bei Regelverstößen auf den Vertrag zeigen statt zu schimpfen – die Regeln stammen von der Gruppe."
+          "Bei Regelverstößen auf den Vertrag zeigen statt zu schimpfen – die Regeln stammen von der Gruppe.",
+          "Scherzregeln ernst nehmen und nachfragen, was dahintersteckt: Oft wird daraus eine echte Regel."
         ],
         "achtung": "Wird deutlich, dass jemand Gewalt oder Bedrohung erlebt, nicht in der Gruppe nachfragen: Einzelgespräch anbieten, die zuständige Leitung (Responsable) informieren und bei Gefährdung sofort nach dem internen Schutzkonzept handeln.",
-        "material": "Blatt in A3, Stifte, Klebeband zum Aufhängen"
+        "material": "Blatt in A3, dicke Stifte, Klebepunkte, Klebeband zum Aufhängen"
       }
     },
     "fr": {
       "titel": "Notre contrat de groupe",
-      "untertitel": "Ce dont nous avons besoin pour pouvoir parler ouvertement ici",
+      "untertitel": "Nos règles – faites par nous, signées par tout le monde.",
       "bausteine": [
         {
-          "art": "text",
-          "text": "Les règles ne fonctionnent que si tout le monde les soutient – c’est pourquoi vous les fixez vous-mêmes."
-        },
-        {
           "art": "aufgabe",
-          "text": "Commencez par rassembler vos idées : de quoi avez-vous besoin pour pouvoir être honnêtes ici ? Et qu’est-ce qui ne doit surtout pas arriver ?",
+          "text": "Écrivez vos trois à cinq règles les plus importantes.",
+          "hinweis": "Des règles qu’on peut appliquer : « On laisse finir les autres » plutôt que « Ne pas couper la parole ».",
           "symbole": [
             "gruppe",
-            "sprechen"
+            "schreiben"
           ]
         },
         {
-          "art": "spalten",
-          "verhaeltnis": "1:1",
-          "links": [
-            {
-              "art": "feld",
-              "label": "Ce dont nous avons besoin",
-              "hoehe": 3
-            }
+          "art": "rangliste",
+          "stufen": [
+            "Règle 1",
+            "Règle 2",
+            "Règle 3",
+            "Règle 4",
+            "Règle 5"
           ],
-          "rechts": [
-            {
-              "art": "feld",
-              "label": "Ce qui ne doit pas arriver ici",
-              "hoehe": 3
-            }
-          ]
+          "hoehe": 2
         },
         {
-          "art": "aufgabe",
-          "text": "Mettez-vous d’accord sur trois à cinq règles. Notez pourquoi elles comptent pour vous.",
-          "hinweis": "Formuler de façon positive aide : « Nous laissons les autres finir de parler » plutôt que « Ne pas couper la parole »."
-        },
-        {
-          "art": "tabelle",
-          "spalten": [
-            "N°",
-            "Notre règle",
-            "Pourquoi elle compte pour nous"
-          ],
-          "breiten": [
-            0.45,
-            2.6,
-            2
-          ],
-          "zeilen": 5,
-          "nummern": 1,
-          "beispiel": [
-            "p. ex.",
-            "Nous rions ensemble, pas les uns des autres.",
-            "Pour que personne ne se sente humilié."
-          ]
-        },
-        {
-          "art": "frage",
-          "text": "Que faisons-nous quand quelqu’un enfreint une règle ?",
-          "linien": 1
+          "art": "linien",
+          "anzahl": 2,
+          "label": "Un contrat peut grandir. Ajouté plus tard – avec la date :",
+          "fuellen": false
         },
         {
           "art": "vertrag",
           "titel": "Nous nous y tenons",
-          "text": "Nous avons établi ces règles ensemble et nous nous les rappelons calmement. Ce qui est raconté ici reste ici – sauf si quelqu’un est en danger : alors l’adulte qui anime le groupe cherche de l’aide et dit avant ce qu’elle fait. Le ___, nous vérifierons si les règles conviennent encore.",
+          "text": "Nous avons établi ces règles ensemble. Si quelqu’un en oublie une, nous la lui rappelons calmement. Ce qui est raconté ici reste ici – sauf si quelqu’un est en danger : alors l’adulte qui anime le groupe cherche de l’aide et dit d’abord ce qu’il va faire. Le ___, nous vérifierons si les règles conviennent encore.",
           "unterschriften": [
+            "",
+            "",
+            "",
+            "",
             "",
             "",
             "",
@@ -220,12 +160,12 @@
         }
       ],
       "lehrer": {
-        "ziel": "Au début du cours, le groupe formule ses propres règles, les justifie et s’y engage. Les limites de la confidentialité sont discutées ouvertement.",
+        "ziel": "Le groupe fixe ses propres règles, les signe et peut s’y référer toute l’année. La limite de la confidentialité est expliquée ouvertement.",
         "ablauf": [
-          "Impulsion (3 min) : « De quoi avez-vous besoin pour vous sentir bien ici et pouvoir être honnêtes ? » Faire noter les réponses dans les deux cadres.",
-          "Recueillir (7 min) : regrouper ce qui se ressemble. Prendre au sérieux les réponses pour rire et demander ce qui se cache derrière.",
-          "Formuler (7 min) : écrire trois à cinq règles avec leur justification dans le tableau. Compléter les règles essentielles qui manquent : confidentialité, on a le droit de passer son tour, rire avec et non de l’autre, téléphones rangés, règle des pauses.",
-          "Contrat (3 min) : lire à voix haute la phrase sur la confidentialité et répondre honnêtement aux questions. Tout le monde signe, y compris l’adulte qui anime le groupe ; accrocher le contrat bien en vue."
+          "Séance 1 (10 min) : les propositions de règles du relais « Le pire cours du monde » sont au mur. Chaque personne colle trois gommettes ; un volontaire écrit sur la feuille les trois à cinq règles les plus choisies.",
+          "Compléter ce qui manque : confidentialité et sa limite, droit de dire « je passe », rire ensemble et non les uns des autres, téléphones, règle de pause. Lire la phrase sur la confidentialité et répondre honnêtement aux questions.",
+          "Tout le monde signe, l’adulte aussi. Noter la date de vérification et afficher le contrat bien en vue.",
+          "Plus tard (séance 3, nouvelle personne, nouvelle année) : faire lire règle par règle, vérifier, compléter sous « Ajouté plus tard » – ou écrire une nouvelle feuille et signer à nouveau."
         ],
         "hintergrund": "Les règles élaborées en commun sont plus souvent respectées que les règles imposées, car elles prennent au sérieux le besoin de participation et d’appartenance (Deci & Ryan, 2000). Pour des groupes de jeunes en situation difficile, un cadre clair et prévisible est en même temps une condition de protection : ce n’est que lorsque le groupe est sûr que les sujets personnels peuvent y avoir leur place. Les programmes qui développent les compétences socio-émotionnelles sont particulièrement efficaces lorsque les objectifs et les règles sont énoncés ouvertement (Durlak et al., 2011).",
         "quellen": [
@@ -233,21 +173,22 @@
           "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432."
         ],
         "differenzierung": {
-          "leichter": "L’adulte apporte huit cartes de règles déjà formulées ; le groupe choisit et ajoute oralement la justification.",
-          "schwerer": "Le groupe fixe en plus comment il parle des entorses aux règles – par exemple avec une carte que chaque personne peut lever une fois par séance."
+          "leichter": "L’adulte apporte huit cartes de règles déjà formulées ; le groupe choisit avec des gommettes.",
+          "schwerer": "Le groupe fixe en plus comment il se rappelle les règles – par exemple avec un signe de la main connu de tous."
         },
         "impulse": [
           "Quelle règle est la plus importante pour vous – et pourquoi justement celle-là ?",
           "Que doit faire l’adulte qui anime quand le ton monte vraiment, ici ?"
         ],
         "tipps": [
-          "Revoir brièvement le contrat à la troisième et à la dixième séance : tout est-il encore d’actualité ?",
-          "En cas d’entorse, montrer le contrat plutôt que gronder – les règles viennent du groupe."
+          "En cas d’entorse, montrer le contrat plutôt que gronder – les règles viennent du groupe.",
+          "Prendre au sérieux les règles pour rire et demander ce qu’il y a derrière : il en sort souvent une vraie règle."
         ],
         "achtung": "S’il apparaît que quelqu’un subit de la violence ou des menaces, ne pas poser de questions dans le groupe : proposer un entretien individuel, informer la direction compétente (responsable) et, en cas de mise en danger, agir immédiatement selon le concept de protection interne.",
-        "material": "Feuille A3, crayons, ruban adhésif pour accrocher"
+        "material": "Feuille A3, gros feutres, gommettes, ruban adhésif pour accrocher"
       }
-    }
+    },
+    "look": "spiel"
   },
   {
     "id": "skills-pass",

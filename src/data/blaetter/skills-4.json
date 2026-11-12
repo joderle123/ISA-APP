@@ -12,7 +12,7 @@
       "einzeln",
       "gruppe"
     ],
-    "dauer": "25 Min., danach 1 Min. je Check-in",
+    "dauer": "15 Min., danach 1 Min. je Check-in",
     "eldib": [
       "K-26",
       "K-16",
@@ -28,9 +28,9 @@
     ],
     "bild": "icon:temperature",
     "verwandt": [
+      "skills-zonen-karten",
       "skills-tester",
-      "skills-koffer-ampelplan",
-      "stress-werkzeugkoffer"
+      "skills-koffer-ampelplan"
     ],
     "kurs": [
       "j1-e11",
@@ -41,16 +41,15 @@
     ],
     "de": {
       "titel": "Mein Anspannungs-Thermometer",
-      "untertitel": "Von 0 bis 100: Je höher die Zahl, desto weniger hilft Nachdenken – und desto mehr muss zuerst der Körper runterkommen.",
+      "untertitel": "Von 0 bis 100: Deine Zahl zeigt, welche Skills noch funktionieren. Erst runter, dann reden.",
       "bausteine": [
         {
-          "art": "text",
-          "text": "Anspannung ist die Lautstärke deines inneren Alarms. Wut, Angst, Stress oder Aufregung können sie hochtreiben. Die Zahl sagt dir, welche Skills gerade noch funktionieren."
-        },
-        {
           "art": "aufgabe",
-          "text": "Lies die drei Zonen. Schreib in jede Zone, woran du sie bei dir merkst.",
-          "hinweis": "Denk an Körper, Gedanken und Verhalten – etwa heißes Gesicht, Tunnelblick, lauter werden. Hilfe: deine Gefühls-Landkarte."
+          "text": "Woran merkst du die Zone? Schreib in jede Zone ein Zeichen von dir.",
+          "hinweis": "Körper, Gedanken oder Verhalten – etwa heißes Gesicht, Tunnelblick, lauter werden.",
+          "symbole": [
+            "schreiben"
+          ]
         },
         {
           "art": "thermometer",
@@ -58,141 +57,61 @@
           "stufen": [
             {
               "titel": "Grün (0–30): Ich kann klar denken",
-              "text": "Reden, zuhören und Probleme lösen klappen. Jetzt ist die beste Zeit, Skills zu üben. So ist es bei mir:"
+              "text": "Reden, zuhören, Probleme lösen – und Skills üben."
             },
             {
               "titel": "Gelb (30–70): Es wird eng",
-              "text": "Ich werde gereizt, unruhig oder ziehe mich zurück. Jetzt helfen Ablenkung, Sinne, Musik und Bewegung. So ist es bei mir:"
+              "text": "Jetzt helfen Ablenkung, Sinne, Musik und Bewegung."
             },
             {
               "titel": "Rot (70–100): Der Körper übernimmt",
-              "text": "Denken geht kaum noch. Jetzt helfen starke Körper- und Sinnes-Skills, raus aus der Situation und Hilfe holen. So ist es bei mir:"
+              "text": "Jetzt helfen nur noch starke Skills für Körper und Sinne."
             }
           ]
         },
         {
-          "art": "info",
-          "symbol": "merke",
-          "titel": "Erst runter, dann reden.",
-          "text": "Bei Rot kann niemand vernünftig mit dir reden – auch du selbst nicht. Senk zuerst die Anspannung. Danach könnt ihr klären, was los war."
-        },
-        {
           "art": "aufgabe",
-          "text": "Mein Verlauf: Trag in jedem Check-in deine Zahl ein – und am Ende der Einheit noch einmal.",
-          "hinweis": "So siehst du mit der Zeit, was deine Zahl bewegt."
-        },
-        {
-          "art": "tabelle",
-          "spalten": [
-            "Einheit",
-            "Zahl am Anfang",
-            "Zahl am Ende",
-            "Was hat die Zahl verändert?"
-          ],
-          "breiten": [
-            0.8,
-            1.1,
-            1.1,
-            3
-          ],
-          "zeilen": 5,
-          "nummern": 11,
-          "beispiel": [
-            "z. B.",
-            "60",
-            "35",
-            "Spaziergang ohne Worte, gute Pause"
+          "text": "Dein Verlauf: Male in jedem Check-in aus, wie hoch deine Zahl ist.",
+          "hinweis": "Ein Kästchen sind 10 Punkte. Am Ende der Stunde setzt du einen Strich: Wo ist die Zahl jetzt?",
+          "symbole": [
+            "malen"
           ]
         },
         {
-          "art": "aufgabe",
-          "text": "Wie hoch wäre deine Anspannung? Kreuz für jede Situation die Zone an.",
-          "hinweis": "Es gibt kein Richtig oder Falsch. Dieselbe Situation ist für eine Person eine 20, für eine andere eine 80."
-        },
-        {
-          "art": "einschaetzung",
-          "optionen": [
-            "Grün 0–30",
-            "Gelb 30–70",
-            "Rot 70–100"
+          "art": "balken",
+          "stufen": 10,
+          "pole": [
+            "0",
+            "100"
           ],
           "items": [
-            "Jemand drängelt sich in der Kantine vor dir in die Schlange.",
-            "Die Lehrerin fragt nach den Hausaufgaben, die du vergessen hast.",
-            "Du sollst gleich vor der Klasse ein Referat halten.",
-            "Dein Handy fällt runter, das Display ist gesprungen.",
-            "Jemand beleidigt deine Familie.",
-            "Du wirst für etwas beschuldigt, das du nicht getan hast.",
-            "Jemand teilt ein peinliches Foto von dir in der Klassengruppe.",
-            "Dein Bus fährt dir vor der Nase weg."
+            "Einheit 11",
+            "Einheit 12",
+            "Einheit 13",
+            "Einheit 14",
+            "Einheit 15"
           ]
         },
         {
-          "art": "aufgabe",
-          "text": "Denk an einen Moment, in dem deine Anspannung sehr hoch war. Was hat geholfen – oder hätte geholfen?",
-          "hinweis": "Du entscheidest, was du aufschreibst. Das Blatt wird nicht eingesammelt."
-        },
-        {
-          "art": "tabelle",
-          "spalten": [
-            "Situation",
-            "Zahl",
-            "Gefühl",
-            "Was hat geholfen – oder hätte geholfen?"
-          ],
-          "breiten": [
-            2.1,
-            0.6,
-            1.2,
-            2.1
-          ],
-          "zeilen": 2,
-          "beispiel": [
-            "Streit im Chat, alle gegen mich",
-            "85",
-            "wütend, gekränkt",
-            "Handy weg, raus, Treppe laufen"
+          "art": "satzanfaenge",
+          "items": [
+            "Spaziergang ohne Worte – meine Zahl vorher: …    und nachher: …"
           ]
         },
         {
-          "art": "aufgabe",
-          "text": "Dein erstes Experiment: Schätz deine Zahl vor und nach dem Spaziergang ohne Worte.",
-          "hinweis": "So testest du ab jetzt jeden Skill: Zahl vorher, Skill, Zahl nachher."
-        },
-        {
-          "art": "tabelle",
-          "spalten": [
-            "Zahl vorher",
-            "Was ich gemacht habe",
-            "Zahl nachher"
-          ],
-          "breiten": [
-            1,
-            3,
-            1
-          ],
-          "zeilen": 1,
-          "beispiel": [
-            "65",
-            "5 Minuten schweigend gehen, auf Geräusche achten",
-            "40"
-          ]
-        },
-        {
-          "art": "info",
-          "symbol": "hilfe",
-          "titel": "Du entscheidest, was du teilst.",
-          "text": "Im Check-in reicht deine Zahl. Wenn sie oft sehr hoch ist, sprich mit der Leitung oder einer Person, der du vertraust."
+          "art": "mission",
+          "text": "Miss diese Woche dreimal deine Zahl: einmal morgens, einmal in der Schule, einmal abends.",
+          "tage": 3,
+          "beweis": "deine höchste und deine niedrigste Zahl"
         }
       ],
       "lehrer": {
-        "ziel": "Die Jugendlichen lernen die Anspannungsskala 0–100 kennen, beschreiben ihre Anzeichen in drei Zonen und schätzen Situationen ein. Ab Einheit 11 gehört die Zahl zu jedem Check-in.",
+        "ziel": "Die Jugendlichen lernen die Anspannungsskala 0–100 kennen und beschreiben ihre Anzeichen in drei Zonen. Ab Einheit 11 gehört die Zahl zu jedem Check-in und wird im Verlauf ausgemalt.",
         "ablauf": [
-          "Einstieg (5 Min.): die Zonen an der Tafel mit der Gruppe füllen. Mit dem Handmodell zeigen, warum bei Rot Reden nicht hilft.",
-          "Aufgabe 1 (5 Min.): eigene Anzeichen je Zone; Hilfe ist die Gefühls-Landkarte aus Einheit 9.",
-          "Aufgabe 3 allein, dann auf der Bodenlinie: Situationen vorlesen, alle stellen sich an ihre Zahl.",
-          "Aufgabe 4 allein und privat; Aufgabe 5 beim Spaziergang ohne Worte.",
-          "Aufgabe 2 ab jetzt in jedem Check-in: Zahl am Anfang und am Ende eintragen."
+          "Einheit 11, nach dem Handmodell (5 Min.): ein eigenes Zeichen je Zone; Hilfe ist die Gefühls-Landkarte aus Einheit 9.",
+          "Spaziergang ohne Worte: Zahl vorher und nachher in die Zeile unter dem Verlauf.",
+          "Ab jetzt in jedem Check-in: bis zur eigenen Zahl ausmalen; am Ende der Einheit ein Strich in einer zweiten Farbe.",
+          "Mission vorlesen. Nächstes Mal reichen die höchste und die niedrigste Zahl."
         ],
         "hintergrund": "Das DBT-Skillstraining wurde für Jugendliche adaptiert (Rathus & Miller, 2015); im deutschsprachigen Raum gehört die Skala von 0 bis 100 zu seinen Grundwerkzeugen (Fleischhaker et al., 2011). Sie trennt die Stärke der Anspannung vom einzelnen Gefühl und macht sichtbar, was Linehan (2015) beschreibt: Bei sehr hoher Erregung versagen Fertigkeiten, die Nachdenken voraussetzen. Daraus folgt die Faustregel: bei Grün üben und Probleme lösen, bei Gelb ablenken und die Sinne nutzen, bei Rot zuerst mit Körper- und Sinnes-Skills die Erregung senken. Die Grenzen bei 30 und 70 sind Orientierungswerte. Wer seine Zahl regelmäßig nennt, bemerkt eigene Zustände früher.",
         "quellen": [
@@ -201,8 +120,8 @@
           "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford."
         ],
         "differenzierung": {
-          "leichter": "Statt einer Zahl nur die Farbe nennen; Aufgabe 1 im Gespräch ausfüllen.",
-          "schwerer": "Zu jeder Situation notieren, welcher Gedanke die Zahl hochtreibt – Vorbereitung auf Modul 4."
+          "leichter": "Statt einer Zahl nur die Farbe nennen und im Verlauf die Zone ausmalen; Aufgabe 1 im Gespräch füllen.",
+          "schwerer": "Neben den Verlauf schreiben, was die Zahl an diesem Tag bewegt hat."
         },
         "impulse": [
           "Woran merkt ihr als Erstes, dass ihr Richtung Gelb geht?",
@@ -212,22 +131,21 @@
           "Die Bodenlinie mit Malerkrepp kleben; sie ist später schnell wieder aufgebaut.",
           "Hohe Zahlen nicht kommentieren, nach der Runde leise nachfragen."
         ],
-        "achtung": "Aufgabe 4 nicht vorlesen und nicht einsammeln. Bei dauerhaft sehr hohen Zahlen ein Einzelgespräch führen. Bei Hinweisen auf Gewalt, Selbstverletzung oder Suizidgedanken sofort nach dem Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren.",
-        "material": "Malerkrepp, Karten mit 0, 30, 70, 100"
+        "achtung": "Das Blatt nicht einsammeln und nicht vorlesen. Bei dauerhaft sehr hohen Zahlen ein Einzelgespräch führen; bei Hinweisen auf Gefährdung nach dem Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren.",
+        "material": "Buntstifte in zwei Farben, Malerkrepp"
       }
     },
     "fr": {
       "titel": "Mon thermomètre de tension",
-      "untertitel": "De 0 à 100 : plus le chiffre monte, moins réfléchir sert – et plus il faut d’abord calmer le corps.",
+      "untertitel": "De 0 à 100 : ton chiffre montre quels skills marchent encore. D’abord redescendre, ensuite parler.",
       "bausteine": [
         {
-          "art": "text",
-          "text": "La tension, c’est le volume de ton alarme intérieure. Colère, peur, stress ou excitation peuvent la faire monter. Le chiffre te dit quels skills fonctionnent encore."
-        },
-        {
           "art": "aufgabe",
-          "text": "Lis les trois zones. Dans chacune, écris à quoi tu la reconnais chez toi.",
-          "hinweis": "Pense au corps, aux pensées et au comportement – par exemple visage brûlant, vision en tunnel, voix qui monte. Aide : ta carte des émotions."
+          "text": "À quoi reconnais-tu la zone ? Écris dans chaque zone un signe à toi.",
+          "hinweis": "Corps, pensées ou comportement – visage brûlant, vision en tunnel, voix qui monte.",
+          "symbole": [
+            "schreiben"
+          ]
         },
         {
           "art": "thermometer",
@@ -235,141 +153,61 @@
           "stufen": [
             {
               "titel": "Vert (0–30) : je peux penser clairement",
-              "text": "Parler, écouter et résoudre des problèmes fonctionnent. C’est le meilleur moment pour s’exercer aux skills. Chez moi, c’est comme ça :"
+              "text": "Parler, écouter, résoudre des problèmes – et m’exercer aux skills."
             },
             {
               "titel": "Orange (30–70) : ça se resserre",
-              "text": "Je deviens irritable, agité ou je me referme. Ce qui aide : la distraction, les sens, la musique, le mouvement. Chez moi, c’est comme ça :"
+              "text": "Ce qui aide : la distraction, les sens, la musique, le mouvement."
             },
             {
               "titel": "Rouge (70–100) : le corps prend le relais",
-              "text": "Penser devient presque impossible. Ce qui aide : des skills corporels et sensoriels forts, quitter la situation, aller chercher de l’aide. Chez moi, c’est comme ça :"
+              "text": "Seuls des skills forts pour le corps et les sens aident encore."
             }
           ]
         },
         {
-          "art": "info",
-          "symbol": "merke",
-          "titel": "D’abord redescendre, ensuite parler.",
-          "text": "Au rouge, personne ne peut parler raisonnablement avec toi – toi non plus. Fais d’abord baisser la tension. Ensuite, vous pourrez éclaircir ce qui s’est passé."
-        },
-        {
           "art": "aufgabe",
-          "text": "Mon évolution : à chaque check-in, note ton chiffre – et une fois de plus à la fin de la séance.",
-          "hinweis": "Ainsi, tu verras avec le temps ce qui fait bouger ton chiffre."
-        },
-        {
-          "art": "tabelle",
-          "spalten": [
-            "Séance",
-            "Chiffre au début",
-            "Chiffre à la fin",
-            "Qu’est-ce qui l’a fait changer ?"
-          ],
-          "breiten": [
-            0.8,
-            1.1,
-            1.1,
-            3
-          ],
-          "zeilen": 5,
-          "nummern": 11,
-          "beispiel": [
-            "p. ex.",
-            "60",
-            "35",
-            "Promenade sans paroles, bonne pause"
+          "text": "Ton évolution : à chaque check-in, colorie jusqu’à ton chiffre.",
+          "hinweis": "Une case vaut 10 points. À la fin de la séance, trace un trait : où est le chiffre maintenant ?",
+          "symbole": [
+            "malen"
           ]
         },
         {
-          "art": "aufgabe",
-          "text": "À combien estimerais-tu ta tension ? Pour chaque situation, coche la zone.",
-          "hinweis": "Il n’y a ni bonne ni mauvaise réponse. La même situation vaut 20 pour une personne, 80 pour une autre."
-        },
-        {
-          "art": "einschaetzung",
-          "optionen": [
-            "Vert 0–30",
-            "Orange 30–70",
-            "Rouge 70–100"
+          "art": "balken",
+          "stufen": 10,
+          "pole": [
+            "0",
+            "100"
           ],
           "items": [
-            "Quelqu’un te passe devant dans la file à la cantine.",
-            "La prof te demande les devoirs que tu as oubliés.",
-            "Tu dois bientôt présenter un exposé devant la classe.",
-            "Ton téléphone tombe, l’écran est fissuré.",
-            "Quelqu’un insulte ta famille.",
-            "On t’accuse de quelque chose que tu n’as pas fait.",
-            "Quelqu’un partage dans le groupe de la classe une photo gênante de toi.",
-            "Ton bus part sous ton nez."
+            "Séance 11",
+            "Séance 12",
+            "Séance 13",
+            "Séance 14",
+            "Séance 15"
           ]
         },
         {
-          "art": "aufgabe",
-          "text": "Pense à un moment où ta tension était très haute. Qu’est-ce qui a aidé – ou aurait aidé ?",
-          "hinweis": "C’est toi qui décides ce que tu écris. La feuille n’est pas ramassée."
-        },
-        {
-          "art": "tabelle",
-          "spalten": [
-            "Situation",
-            "Chiffre",
-            "Émotion",
-            "Ce qui a aidé – ou aurait aidé"
-          ],
-          "breiten": [
-            2.1,
-            0.6,
-            1.2,
-            2.1
-          ],
-          "zeilen": 2,
-          "beispiel": [
-            "Dispute dans le chat, tout le monde contre moi",
-            "85",
-            "colère, vexation",
-            "Téléphone posé, sortir, courir dans l’escalier"
+          "art": "satzanfaenge",
+          "items": [
+            "Promenade sans paroles – mon chiffre avant : …    et après : …"
           ]
         },
         {
-          "art": "aufgabe",
-          "text": "Ta première expérience : estime ton chiffre avant et après la promenade sans paroles.",
-          "hinweis": "C’est ainsi que tu testeras désormais chaque skill : chiffre avant, skill, chiffre après."
-        },
-        {
-          "art": "tabelle",
-          "spalten": [
-            "Chiffre avant",
-            "Ce que j’ai fait",
-            "Chiffre après"
-          ],
-          "breiten": [
-            1,
-            3,
-            1
-          ],
-          "zeilen": 1,
-          "beispiel": [
-            "65",
-            "5 minutes de marche en silence, en écoutant les bruits",
-            "40"
-          ]
-        },
-        {
-          "art": "info",
-          "symbol": "hilfe",
-          "titel": "C’est toi qui décides de ce que tu partages.",
-          "text": "Au check-in, ton chiffre suffit. S’il est souvent très élevé, parle à l’adulte qui anime ou à quelqu’un en qui tu as confiance."
+          "art": "mission",
+          "text": "Cette semaine, mesure trois fois ton chiffre : une fois le matin, une fois à l’école, une fois le soir.",
+          "tage": 3,
+          "beweis": "ton chiffre le plus haut et le plus bas"
         }
       ],
       "lehrer": {
-        "ziel": "Les jeunes découvrent l’échelle de tension de 0 à 100, décrivent leurs signes dans trois zones et évaluent des situations. Dès la séance 11, le chiffre fait partie de chaque check-in.",
+        "ziel": "Les jeunes découvrent l’échelle de tension de 0 à 100 et décrivent leurs signes dans trois zones. À partir de la séance 11, le chiffre fait partie de chaque check-in et se colorie dans l’évolution.",
         "ablauf": [
-          "Entrée en matière (5 min) : remplir les zones au tableau avec le groupe. Montrer avec le modèle de la main pourquoi parler n’aide pas au rouge.",
-          "Tâche 1 (5 min) : ses signes par zone ; aide : la carte des émotions (séance 9).",
-          "Tâche 3 seul, puis sur la ligne au sol : lire les situations, chacun se place à son chiffre.",
-          "Tâche 4 seul et en privé ; tâche 5 pendant la promenade sans paroles.",
-          "Tâche 2 dès maintenant à chaque check-in : chiffre au début et à la fin."
+          "Séance 11, après le modèle de la main (5 min) : un signe personnel par zone ; aide : la carte des émotions de la séance 9.",
+          "Promenade sans paroles : chiffre avant et après sur la ligne sous l’évolution.",
+          "Désormais à chaque check-in : colorier jusqu’à son chiffre ; à la fin de la séance, un trait d’une deuxième couleur.",
+          "Lire la mission. La prochaine fois, le chiffre le plus haut et le plus bas suffisent."
         ],
         "hintergrund": "L’entraînement aux skills de la thérapie comportementale dialectique (DBT) a été adapté aux adolescents (Rathus & Miller, 2015) ; l’échelle de 0 à 100 en est un outil de base (Fleischhaker et al., 2011). Elle sépare l’intensité de la tension de l’émotion et rend visible ce que décrit Linehan (2015) : à très forte excitation, les capacités qui supposent de réfléchir font défaut. D’où la règle : au vert, s’exercer et résoudre des problèmes ; à l’orange, se distraire et utiliser les sens ; au rouge, d’abord faire baisser l’excitation par des skills corporels et sensoriels. Les limites à 30 et 70 sont des repères. Nommer régulièrement son chiffre aide à remarquer ses états plus tôt.",
         "quellen": [
@@ -378,8 +216,8 @@
           "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford."
         ],
         "differenzierung": {
-          "leichter": "Nommer seulement la couleur au lieu du chiffre ; remplir la tâche 1 à l’oral.",
-          "schwerer": "Pour chaque situation, noter la pensée qui fait monter le chiffre – préparation au module 4."
+          "leichter": "Dire seulement la couleur au lieu d’un chiffre et colorier la zone ; remplir l’exercice 1 en discutant.",
+          "schwerer": "Écrire à côté de l’évolution ce qui a fait bouger le chiffre ce jour-là."
         },
         "impulse": [
           "Qu’est-ce que vous remarquez en premier quand vous glissez vers l’orange ?",
@@ -389,10 +227,11 @@
           "Coller la ligne au sol avec du ruban de masquage ; elle se remonte vite plus tard.",
           "Ne pas commenter les chiffres élevés ; demander discrètement après le tour."
         ],
-        "achtung": "Ne pas lire la tâche 4 à voix haute ni la ramasser. Chiffres durablement très élevés : entretien individuel. Violence, automutilation, idées suicidaires : agir aussitôt selon le concept de protection, informer la direction compétente (responsable).",
-        "material": "Ruban de masquage, cartes 0, 30, 70, 100"
+        "achtung": "Ne pas ramasser la feuille ni la lire à voix haute. Chiffres durablement très élevés : entretien individuel ; en cas d’indices de danger, agir selon le concept de protection et informer la direction compétente (responsable).",
+        "material": "Crayons de deux couleurs, ruban de masquage"
       }
-    }
+    },
+    "look": "spiel"
   },
   {
     "id": "skills-tester",
@@ -407,7 +246,7 @@
       "einzeln",
       "gruppe"
     ],
-    "dauer": "3 Einheiten, je 10–20 Min.",
+    "dauer": "3 Einheiten, je 5–10 Min.",
     "eldib": [
       "V-24",
       "V-25",
@@ -425,6 +264,7 @@
     "bild": "icon:clipboard-check",
     "verwandt": [
       "skills-anspannungsthermometer",
+      "skills-atem-stationen",
       "skills-sinne",
       "skills-koffer-ampelplan"
     ],
@@ -436,141 +276,135 @@
     ],
     "de": {
       "titel": "Skills-Tester",
-      "untertitel": "Nicht jeder Skill passt zu jedem Menschen. Teste ehrlich, welche bei dir wirken – so findest du deine.",
+      "untertitel": "Nicht jeder Skill passt zu jedem Menschen. Teste ehrlich, was bei dir wirkt.",
       "bausteine": [
         {
-          "art": "info",
-          "symbol": "tipp",
-          "titel": "So testest du einen Skill",
-          "punkte": [
-            "Schätz deine Anspannung vorher (0–100).",
-            "Mach den Skill zwei bis drei Minuten lang.",
-            "Spür kurz nach und schätz die Zahl nachher.",
-            "Kreuz an, wie gut er dir geholfen hat. „Hilft kaum“ ist auch ein Ergebnis."
-          ]
-        },
-        {
           "art": "aufgabe",
-          "text": "Teste die Skills für Körper und Atem (Einheit 12).",
-          "hinweis": "Wird dir schwindelig, hörst du auf und atmest normal weiter."
-        },
-        {
-          "art": "einschaetzung",
-          "optionen": [
-            "hilft kaum",
-            "hilft etwas",
-            "hilft sehr"
-          ],
-          "items": [
-            "4-7-8-Atmung: 4 ein, 7 halten, 8 langsam aus",
-            "Fingeratmung: am Finger hoch ein, runter aus",
-            "Luftballon-Atem: der Bauch wird rund, dann wieder flach",
-            "Atem-Feder: die Feder mit langem Pusten oben halten",
-            "Kastenatmung: 4 ein, 4 halten, 4 aus, 4 halten",
-            "Vollgas-Bewegung: 3 Minuten, danach 2 Minuten sitzen",
-            "Anspannen und Loslassen: Fäuste, Schultern, Bauch, Beine"
+          "text": "Teste jeden Skill und male aus, wie stark er bei dir wirkt.",
+          "hinweis": "Zeig deine Zahl mit den Fingern – ein Finger sind 10. Mach den Skill. Zeig die Zahl noch einmal. „Bringt nichts“ ist auch ein Ergebnis.",
+          "symbole": [
+            "bewegen"
           ]
         },
         {
-          "art": "aufgabe",
-          "text": "Teste die Sinnes-Skills (Einheit 13).",
-          "hinweis": "Düfte nur vom Riechstreifen, nie direkt aus der Flasche. Kälte nur kurz und mit Tuch."
-        },
-        {
-          "art": "einschaetzung",
-          "optionen": [
-            "hilft kaum",
-            "hilft etwas",
-            "hilft sehr"
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "zusammen": true,
+          "links": [
+            {
+              "art": "aufgabe",
+              "text": "Körper und Atem",
+              "symbole": [
+                "malen"
+              ]
+            },
+            {
+              "art": "balken",
+              "stufen": 5,
+              "pole": [
+                "wenig",
+                "stark"
+              ],
+              "items": [
+                "4-7-8-Atem",
+                "Fingeratmung",
+                "Luftballon-Atem",
+                "Atem-Feder",
+                "Kastenatmung",
+                "Vollgas",
+                "Anspannen – los"
+              ]
+            }
           ],
-          "items": [
-            "5-4-3-2-1: sehen, hören, spüren, riechen, schmecken",
-            "Mein bester Duft aus dem Duft-Check",
-            "Knetball oder Handschmeichler kneten",
-            "Kälte: Kühlpack oder Eiswürfel im Tuch halten",
-            "Ein Song aus meiner Skills-Playlist",
-            "Klangschale: hören, bis der Ton weg ist"
+          "rechts": [
+            {
+              "art": "aufgabe",
+              "text": "Sinne",
+              "symbole": [
+                "malen"
+              ]
+            },
+            {
+              "art": "balken",
+              "stufen": 5,
+              "pole": [
+                "wenig",
+                "stark"
+              ],
+              "items": [
+                "5-4-3-2-1",
+                "Mein Duft",
+                "Knetball",
+                "Kälte",
+                "Mein Song",
+                "Klangschale"
+              ],
+              "leer": 1
+            }
           ]
         },
         {
-          "art": "aufgabe",
-          "text": "Teste die Skills für Achtsamkeit und Kopf (Einheit 14)."
-        },
-        {
-          "art": "einschaetzung",
-          "optionen": [
-            "hilft kaum",
-            "hilft etwas",
-            "hilft sehr"
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "zusammen": true,
+          "links": [
+            {
+              "art": "aufgabe",
+              "text": "Kopf",
+              "symbole": [
+                "malen"
+              ]
+            },
+            {
+              "art": "balken",
+              "stufen": 5,
+              "pole": [
+                "wenig",
+                "stark"
+              ],
+              "items": [
+                "Rückwärts zählen",
+                "ABC-Spiel",
+                "Farben zählen",
+                "Wie ein Freund",
+                "Gedankenschiff",
+                "Achtsam essen",
+                "Sicherer Ort"
+              ]
+            }
           ],
-          "items": [
-            "Gedankenschiffchen: Gedanken vorbeiziehen lassen",
-            "Von 100 in Siebener-Schritten rückwärts zählen",
-            "ABC-Spiel: zu jedem Buchstaben ein Tier oder eine Stadt",
-            "Alle blauen Dinge im Raum finden und zählen",
-            "Mit mir reden wie mit einem Freund – mit meinem Namen",
-            "Achtsam essen: ein Stück ganz langsam, mit allen Sinnen",
-            "Mein sicherer Ort in Gedanken"
+          "rechts": [
+            {
+              "art": "aufgabe",
+              "text": "Meine Top 3 – und bis zu welcher Zahl sie helfen",
+              "symbole": [
+                "schreiben"
+              ]
+            },
+            {
+              "art": "rangliste",
+              "stufen": [
+                "Platz 1",
+                "Platz 2",
+                "Platz 3"
+              ],
+              "hoehe": 2
+            }
           ]
         },
         {
-          "art": "aufgabe",
-          "text": "Deine Favoriten: Welche drei Skills haben am besten gewirkt – und bis zu welcher Zahl helfen sie noch?"
-        },
-        {
-          "art": "tabelle",
-          "spalten": [
-            "Mein Skill",
-            "hilft bis",
-            "Wo geht er unauffällig?"
-          ],
-          "breiten": [
-            2.1,
-            0.8,
-            2.3
-          ],
-          "zeilen": 3,
-          "beispiel": [
-            "Anspannen und Loslassen",
-            "80",
-            "im Bus, im Unterricht unter dem Tisch"
-          ]
-        },
-        {
-          "art": "aufgabe",
-          "text": "Test im Alltag: Probier einen Skill zwischen zwei Einheiten aus.",
-          "hinweis": "Zahl vorher, Skill, Zahl nachher – mehr musst du nicht notieren."
-        },
-        {
-          "art": "tabelle",
-          "spalten": [
-            "Wann und wo?",
-            "vorher",
-            "Skill",
-            "nachher"
-          ],
-          "breiten": [
-            2.1,
-            0.7,
-            2.1,
-            0.8
-          ],
-          "zeilen": 3,
-          "beispiel": [
-            "Mittwoch, Streit im Chat",
-            "70",
-            "3 Minuten Treppe laufen",
-            "45"
-          ]
+          "art": "mission",
+          "text": "Teste deinen Favoriten diese Woche einmal im echten Leben: Zahl vorher, Skill, Zahl nachher.",
+          "tage": 1,
+          "beweis": "Was hat die Zahl gemacht?"
         }
       ],
       "lehrer": {
-        "ziel": "Die Jugendlichen testen in drei Einheiten rund 20 Skills für Körper, Sinne und Kopf, bewerten sie ehrlich und halten ihre Favoriten fest – die Grundlage für den Skills-Koffer.",
+        "ziel": "Die Jugendlichen testen in drei Einheiten rund 20 Skills für Körper, Sinne und Kopf, bewerten sie ehrlich und halten ihre drei besten fest – die Grundlage für den Skills-Koffer.",
         "ablauf": [
-          "Einheit 12: Atem, Bewegung, Anspannen und Loslassen; nach jedem Skill kurz nachspüren, dann ankreuzen.",
-          "Einheit 13: 5-4-3-2-1, Duft-Check, Sinneskiste, Kälte, Playlist, Klangschale.",
-          "Einheit 14: Gedankenschiffchen, Kopf-Skills, achtsames Essen, sicherer Ort; dann Favoriten eintragen.",
-          "Zwischen den Einheiten: Test im Alltag; zu Beginn der nächsten Einheit kurz nachfragen, ohne Druck.",
+          "Vor jedem Skill zeigen alle ihre Zahl mit den Fingern (ein Finger = 10), danach noch einmal. Dann den Balken ausmalen.",
+          "Einheit 12: Körper und Atem. Einheit 13: Sinne. Einheit 14: Kopf – danach die Top 3 eintragen, mit der Zahl, bis zu der sie helfen.",
+          "Mission nach Einheit 12: den Favoriten einmal im Alltag testen. Beim nächsten Mal kurz nachfragen, ohne Druck.",
           "Einheit 15: Das Blatt liegt beim Packen des Skills-Koffers daneben."
         ],
         "hintergrund": "Skills wirken individuell: Was die eine beruhigt, macht den anderen nervös. Das DBT-Skillstraining für Jugendliche setzt deshalb auf Ausprobieren und Protokollieren (Rathus & Miller, 2015). Körper-Skills senken die Erregung, Sinnes-Skills binden die Aufmerksamkeit mit starken Reizen, Kopf-Skills lenken ab und brauchen dafür freie Denkkapazität (Linehan, 2015). Langsames Atmen mit langer Ausatmung geht mit mehr Ruhe einher (Zaccaro et al., 2018); schon fünf Minuten strukturiertes Atmen täglich hoben in einer Studie die Stimmung (Balban et al., 2023).",
@@ -581,8 +415,8 @@
           "Balban, M. Y., Neri, E., Kogon, M. M., Weed, L., Nouriani, B., Jo, B., Holl, G., Zeitzer, J. M., Spiegel, D. & Huberman, A. D. (2023). Brief structured respiration practices enhance mood and reduce physiological arousal. Cell Reports Medicine, 4(1), 100895."
         ],
         "differenzierung": {
-          "leichter": "Nur die Skills bewerten, die in der Einheit wirklich gemacht wurden.",
-          "schwerer": "Zu jedem Favoriten notieren, wann er einmal nicht gewirkt hat – und was dann half."
+          "leichter": "Nur die Skills ausmalen, die in der Einheit wirklich gemacht wurden.",
+          "schwerer": "Zu jedem der Top 3 notieren, wo er unauffällig geht – im Bus, im Unterricht."
         },
         "impulse": [
           "Welcher Skill hat euch überrascht?",
@@ -593,147 +427,141 @@
           "Selbst ehrlich mitbewerten – das nimmt den Druck, alles gut zu finden."
         ],
         "achtung": "Bei Schwindel aufhören und normal atmen; bei Asthma die Luft nicht anhalten. Kälte nur kurz, nicht bei Herz- oder Kreislaufproblemen; Düfte erst nach Abfrage von Allergien. Aussetzen ist immer erlaubt.",
-        "material": "Federn, Timer, Öle, Sinneskiste, Kühlpack, Klangschale"
+        "material": "Buntstifte, Timer"
       }
     },
     "fr": {
       "titel": "Tester mes skills",
-      "untertitel": "Tous les skills ne conviennent pas à tout le monde. Teste honnêtement lesquels marchent pour toi – c’est ainsi que tu trouveras les tiens.",
+      "untertitel": "Tous les skills ne conviennent pas à tout le monde. Teste honnêtement ce qui marche pour toi.",
       "bausteine": [
         {
-          "art": "info",
-          "symbol": "tipp",
-          "titel": "Comment tester un skill",
-          "punkte": [
-            "Estime ta tension avant (0–100).",
-            "Fais le skill pendant deux à trois minutes.",
-            "Prends un instant pour ressentir, puis estime le chiffre après.",
-            "Coche à quel point il t’a aidé. « N’aide presque pas » est aussi un résultat."
-          ]
-        },
-        {
           "art": "aufgabe",
-          "text": "Teste les skills pour le corps et la respiration (séance 12).",
-          "hinweis": "Si tu as le vertige, arrête et respire normalement."
-        },
-        {
-          "art": "einschaetzung",
-          "optionen": [
-            "n’aide presque pas",
-            "aide un peu",
-            "aide beaucoup"
-          ],
-          "items": [
-            "Respiration 4-7-8 : inspirer sur 4, retenir sur 7, expirer lentement sur 8",
-            "Respiration sur le doigt : inspirer en montant le long du doigt, expirer en descendant",
-            "Souffle du ballon : le ventre se gonfle, puis se creuse",
-            "Souffle de la plume : garder la plume en l’air en soufflant longuement",
-            "Respiration en carré : inspirer sur 4, retenir 4, expirer 4, retenir 4",
-            "Mouvement à fond : 3 minutes, puis 2 minutes assis",
-            "Contracter et relâcher : poings, épaules, ventre, jambes"
+          "text": "Teste chaque skill et colorie la force de son effet sur toi.",
+          "hinweis": "Montre ton chiffre avec les doigts – un doigt vaut 10. Fais le skill. Montre encore ton chiffre. « Ne fait rien » est aussi un résultat.",
+          "symbole": [
+            "bewegen"
           ]
         },
         {
-          "art": "aufgabe",
-          "text": "Teste les skills sensoriels (séance 13).",
-          "hinweis": "Parfums seulement sur la bandelette, jamais directement au flacon. Froid seulement brièvement et dans un tissu."
-        },
-        {
-          "art": "einschaetzung",
-          "optionen": [
-            "n’aide presque pas",
-            "aide un peu",
-            "aide beaucoup"
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "zusammen": true,
+          "links": [
+            {
+              "art": "aufgabe",
+              "text": "Corps et respiration",
+              "symbole": [
+                "malen"
+              ]
+            },
+            {
+              "art": "balken",
+              "stufen": 5,
+              "pole": [
+                "peu",
+                "fort"
+              ],
+              "items": [
+                "Souffle 4-7-8",
+                "Souffle du doigt",
+                "Souffle du ballon",
+                "Plume",
+                "Souffle en carré",
+                "À fond",
+                "Serrer – lâcher"
+              ]
+            }
           ],
-          "items": [
-            "5-4-3-2-1 : voir, entendre, ressentir, sentir, goûter",
-            "Mon meilleur parfum du test des parfums",
-            "Malaxer une balle antistress ou un objet doux à tenir en main",
-            "Froid : tenir une poche de froid ou un glaçon dans un tissu",
-            "Une chanson de ma playlist de skills",
-            "Bol chantant : écouter jusqu’à ce que le son s’éteigne"
+          "rechts": [
+            {
+              "art": "aufgabe",
+              "text": "Sens",
+              "symbole": [
+                "malen"
+              ]
+            },
+            {
+              "art": "balken",
+              "stufen": 5,
+              "pole": [
+                "peu",
+                "fort"
+              ],
+              "items": [
+                "5-4-3-2-1",
+                "Mon parfum",
+                "Balle antistress",
+                "Froid",
+                "Ma chanson",
+                "Bol chantant"
+              ],
+              "leer": 1
+            }
           ]
         },
         {
-          "art": "aufgabe",
-          "text": "Teste les skills de pleine conscience et de tête (séance 14)."
-        },
-        {
-          "art": "einschaetzung",
-          "optionen": [
-            "n’aide presque pas",
-            "aide un peu",
-            "aide beaucoup"
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "zusammen": true,
+          "links": [
+            {
+              "art": "aufgabe",
+              "text": "Tête",
+              "symbole": [
+                "malen"
+              ]
+            },
+            {
+              "art": "balken",
+              "stufen": 5,
+              "pole": [
+                "peu",
+                "fort"
+              ],
+              "items": [
+                "Compter à rebours",
+                "Jeu de l’alphabet",
+                "Compter le bleu",
+                "Comme un ami",
+                "Bateaux",
+                "Manger lentement",
+                "Mon lieu sûr"
+              ]
+            }
           ],
-          "items": [
-            "Petits bateaux de pensées : laisser passer les pensées",
-            "Compter à rebours à partir de 100, de 7 en 7",
-            "Jeu de l’alphabet : pour chaque lettre, un animal ou une ville",
-            "Trouver et compter tous les objets bleus de la pièce",
-            "Me parler comme à un ami – en utilisant mon prénom",
-            "Manger en pleine conscience : un morceau très lentement, avec tous les sens",
-            "Mon lieu sûr, en pensée"
+          "rechts": [
+            {
+              "art": "aufgabe",
+              "text": "Mon top 3 – et jusqu’à quel chiffre ils aident",
+              "symbole": [
+                "schreiben"
+              ]
+            },
+            {
+              "art": "rangliste",
+              "stufen": [
+                "1re place",
+                "2e place",
+                "3e place"
+              ],
+              "hoehe": 2
+            }
           ]
         },
         {
-          "art": "aufgabe",
-          "text": "Tes favoris : quels trois skills ont le mieux marché – et jusqu’à quel chiffre aident-ils encore ?"
-        },
-        {
-          "art": "tabelle",
-          "spalten": [
-            "Mon skill",
-            "aide jusqu’à",
-            "Où passe-t-il inaperçu ?"
-          ],
-          "breiten": [
-            2.1,
-            0.8,
-            2.3
-          ],
-          "zeilen": 3,
-          "beispiel": [
-            "Contracter et relâcher",
-            "80",
-            "dans le bus, en classe sous la table"
-          ]
-        },
-        {
-          "art": "aufgabe",
-          "text": "Test au quotidien : essaie un skill entre deux séances.",
-          "hinweis": "Chiffre avant, skill, chiffre après – tu n’as pas besoin de noter plus."
-        },
-        {
-          "art": "tabelle",
-          "spalten": [
-            "Quand et où ?",
-            "avant",
-            "Skill",
-            "après"
-          ],
-          "breiten": [
-            2.1,
-            0.7,
-            2.1,
-            0.8
-          ],
-          "zeilen": 3,
-          "beispiel": [
-            "Mercredi, dispute dans le chat",
-            "70",
-            "3 minutes à courir dans l’escalier",
-            "45"
-          ]
+          "art": "mission",
+          "text": "Cette semaine, teste une fois ton favori dans la vraie vie : chiffre avant, skill, chiffre après.",
+          "tage": 1,
+          "beweis": "qu’a fait le chiffre ?"
         }
       ],
       "lehrer": {
-        "ziel": "En trois séances, les jeunes testent une vingtaine de skills pour le corps, les sens et la tête, les évaluent honnêtement et notent leurs favoris – base de la valise de skills.",
+        "ziel": "En trois séances, les jeunes testent une vingtaine de skills pour le corps, les sens et la tête, les évaluent honnêtement et retiennent leurs trois meilleurs – la base de la valise de skills.",
         "ablauf": [
-          "Séance 12 : respiration, mouvement, contracter et relâcher ; après chaque skill, ressentir un instant, puis cocher.",
-          "Séance 13 : 5-4-3-2-1, test des parfums, boîte sensorielle, froid, playlist, bol chantant.",
-          "Séance 14 : bateaux de pensées, skills de tête, manger en pleine conscience, lieu sûr ; puis noter les favoris.",
-          "Entre les séances : test au quotidien ; demander brièvement au début de la suivante, sans pression.",
-          "Séance 15 : la feuille reste à côté pour préparer la valise de skills."
+          "Avant chaque skill, tous montrent leur chiffre avec les doigts (un doigt = 10), puis encore une fois après. Ensuite, colorier la barre.",
+          "Séance 12 : corps et respiration. Séance 13 : sens. Séance 14 : tête – puis noter le top 3, avec le chiffre jusqu’auquel chaque skill aide.",
+          "Mission après la séance 12 : tester une fois son favori au quotidien. La fois suivante, demander brièvement, sans pression.",
+          "Séance 15 : la feuille est posée à côté au moment de faire la valise de skills."
         ],
         "hintergrund": "Les skills agissent de façon individuelle : ce qui calme l’un rend l’autre nerveux. L’entraînement aux skills de la DBT pour adolescents mise donc sur l’essai et la notation (Rathus & Miller, 2015). Les skills corporels abaissent l’excitation, les skills sensoriels captent l’attention par des stimuli forts, les skills de tête distraient, si la capacité de réflexion est disponible (Linehan, 2015). Une respiration lente à longue expiration apaise (Zaccaro et al., 2018) ; cinq minutes par jour de respiration structurée ont amélioré l’humeur dans une étude (Balban et al., 2023).",
         "quellen": [
@@ -743,8 +571,8 @@
           "Balban, M. Y., Neri, E., Kogon, M. M., Weed, L., Nouriani, B., Jo, B., Holl, G., Zeitzer, J. M., Spiegel, D. & Huberman, A. D. (2023). Brief structured respiration practices enhance mood and reduce physiological arousal. Cell Reports Medicine, 4(1), 100895."
         ],
         "differenzierung": {
-          "leichter": "N’évaluer que les skills réellement faits pendant la séance.",
-          "schwerer": "Pour chaque favori, noter une fois où il n’a pas marché – et ce qui a aidé alors."
+          "leichter": "Colorier seulement les skills réellement faits pendant la séance.",
+          "schwerer": "Pour chaque skill du top 3, noter où il passe inaperçu – dans le bus, en classe."
         },
         "impulse": [
           "Quel skill vous a surpris ?",
@@ -755,9 +583,10 @@
           "Évaluer aussi honnêtement soi-même : cela enlève la pression de tout trouver bien."
         ],
         "achtung": "Vertige : arrêter, respirer normalement ; asthme : ne pas retenir le souffle. Froid bref, pas en cas de problème cardiaque ; allergies à demander avant les parfums. Passer son tour est permis.",
-        "material": "Plumes, minuteur, huiles, boîte sensorielle, poche de froid, bol chantant"
+        "material": "Crayons de couleur, minuteur"
       }
-    }
+    },
+    "look": "spiel"
   },
   {
     "id": "skills-sinne",
@@ -772,7 +601,7 @@
       "einzeln",
       "gruppe"
     ],
-    "dauer": "45 Min.",
+    "dauer": "30 Min. in drei Teilen",
     "eldib": [
       "V-25",
       "V-24",
@@ -797,71 +626,50 @@
     ],
     "de": {
       "titel": "Meine Sinnes-Skills",
-      "untertitel": "Ein Duft, ein Song, etwas in der Hand: Die Sinne holen dich zurück ins Hier und Jetzt, wenn die Gedanken rasen.",
+      "untertitel": "Ein Duft, ein Song, etwas in der Hand – die Sinne holen dich zurück.",
       "bausteine": [
         {
           "art": "aufgabe",
-          "text": "Duft-Check: Riech an jedem Streifen. Beschreib, wie der Duft auf dich wirkt, und gib 1 bis 5 Punkte.",
-          "hinweis": "Mit Abstand riechen. Ist dir ein Duft unangenehm, gib den Streifen einfach weiter."
-        },
-        {
-          "art": "wortspeicher",
-          "titel": "Wörter für Düfte",
-          "items": [
-            "beruhigend",
-            "belebend",
-            "erfrischend",
-            "wach",
-            "warm",
-            "geborgen",
-            "fröhlich",
-            "konzentriert",
-            "zu stark",
-            "unangenehm",
-            "erinnert mich an …"
+          "text": "Duft-Bar: Riech an jedem Streifen und male aus, wie gut dir der Duft tut.",
+          "hinweis": "Mit Abstand riechen. Ist dir ein Duft unangenehm, geh einfach weiter.",
+          "symbole": [
+            "malen"
           ]
         },
         {
-          "art": "tabelle",
-          "spalten": [
-            "Duft",
-            "So wirkt er auf mich",
-            "Punkte",
-            "Hilft vielleicht bei …"
+          "art": "balken",
+          "stufen": 5,
+          "pole": [
+            "mag ich nicht",
+            "tut mir gut"
           ],
-          "breiten": [
-            0.8,
-            2.4,
-            0.7,
-            2
-          ],
-          "zeilen": 5,
-          "nummern": 1,
-          "beispiel": [
-            "z. B.",
-            "frisch, macht wach, fast zu stark",
-            "4",
-            "Müdigkeit vor einer Prüfung"
+          "items": [
+            "Duft 1",
+            "Duft 2",
+            "Duft 3",
+            "Duft 4",
+            "Duft 5"
           ]
         },
         {
           "art": "satzanfaenge",
           "items": [
-            "Mein Lieblingsduft: …",
-            "Den nutze ich, wenn …"
-          ],
-          "linien": 1
+            "Mein Lieblingsduft ist Nummer … Er hilft mir, wenn …"
+          ]
         },
         {
           "art": "aufgabe",
-          "text": "Sinneskiste und Kälte: Was hat dich beruhigt, was hat dich wachgemacht?"
+          "text": "Sinneskiste, Kälte und Klang: Sortiere ein, was die Dinge mit dir machen.",
+          "symbole": [
+            "schreiben"
+          ]
         },
         {
-          "art": "einschaetzung",
-          "optionen": [
-            "beruhigt mich",
-            "macht mich wach",
-            "mag ich nicht"
+          "art": "rangliste",
+          "stufen": [
+            "Beruhigt mich",
+            "Macht wach",
+            "Nicht meins"
           ],
           "items": [
             "Feder",
@@ -869,67 +677,52 @@
             "Knetball",
             "Igelball",
             "weicher Stoff",
-            "Kühlpack oder Eiswürfel im Tuch"
-          ]
+            "Kühlpack",
+            "Klangschale"
+          ],
+          "hoehe": 1
         },
         {
           "art": "aufgabe",
-          "text": "Deine Skills-Playlist: je drei Songs zum Runterkommen und zum Aufladen."
-        },
-        {
-          "art": "tabelle",
-          "spalten": [
-            "Nr.",
-            "Zum Runterkommen",
-            "Zum Aufladen"
-          ],
-          "breiten": [
-            0.45,
-            2.4,
-            2.4
-          ],
-          "zeilen": 3,
-          "nummern": 1,
-          "beispiel": [
-            "z. B.",
-            "ein ruhiger Song, den ich mitsingen kann",
-            "der Song, der beim Training läuft"
+          "text": "Deine Skills-Playlist: Was bringt dich runter, was lädt dich auf?",
+          "symbole": [
+            "schreiben"
           ]
         },
         {
-          "art": "frage",
-          "text": "Musik kann auch hochziehen: Welcher Song würde deine Anspannung bei Rot noch steigern – und was hörst du dann lieber?",
-          "linien": 2
-        },
-        {
-          "art": "aufgabe",
-          "text": "Plane einen Sinnes-Skill für eine echte Situation in dieser Woche."
-        },
-        {
-          "art": "wennDann",
-          "zeilen": 2,
-          "beispiele": [
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
             {
-              "wenn": "Wenn ich vor dem Mathe-Test nervös bin,",
-              "dann": "rieche ich an meinem Pfefferminz-Streifen und atme lang aus."
+              "art": "linien",
+              "anzahl": 3,
+              "label": "Zum Runterkommen",
+              "fuellen": false
+            }
+          ],
+          "rechts": [
+            {
+              "art": "linien",
+              "anzahl": 3,
+              "label": "Zum Aufladen",
+              "fuellen": false
             }
           ]
         },
         {
-          "art": "info",
-          "symbol": "tipp",
-          "titel": "Sinnes-Skills für die Hosentasche",
-          "text": "Ein Riechstreifen im Zip-Beutel, ein Knetball, Kopfhörer mit deiner Playlist: Was du dabeihast, benutzt du auch."
+          "art": "mission",
+          "text": "Steck deinen Duftstreifen oder deine Kopfhörer ein. Nutze einen Sinnes-Skill, sobald deine Zahl steigt.",
+          "tage": 1,
+          "beweis": "Zahl vorher, Zahl nachher"
         }
       ],
       "lehrer": {
-        "ziel": "Die Jugendlichen testen Düfte, Tastgegenstände, Kälte und Musik, unterscheiden beruhigende von belebenden Reizen und legen Lieblingsduft und Skills-Playlist fest.",
+        "ziel": "Die Jugendlichen testen Düfte, Tastgegenstände, Kälte, Klang und Musik, unterscheiden beruhigende von belebenden Reizen und legen Lieblingsduft und Skills-Playlist fest.",
         "ablauf": [
           "Vorab: Allergien und Asthma klären; Öle nummerieren, Namen verdecken.",
-          "Duft-Check (20 Min.): je ein Tropfen auf einen Riechstreifen, herumreichen; erst am Ende die Namen aufdecken.",
-          "Sinneskiste und Kälte (15 Min.): blind ertasten, beschreiben, raten; Kühlpack 30 Sekunden halten.",
-          "Playlist (10 Min.): Songs eintragen, kurze Ausschnitte vorspielen; die Frage zu Rot besprechen.",
-          "Aufgabe 4 als Plan für die Woche; den Lieblingsduft im Zip-Beutel mitgeben."
+          "Duft-Bar (Aufgabe 1): je ein Tropfen auf einen Riechstreifen an fünf Stationen; erst am Ende die Namen aufdecken. Der Lieblingsduft kommt im Zip-Beutel mit.",
+          "Aufgabe 2 nach Tast-Duell, Kälte-Probe und Klangschale: einsortieren, was beruhigt und was wach macht.",
+          "Aufgabe 3 vor der DJ-Runde: je ein bis drei Songs eintragen. Mission vorlesen."
         ],
         "hintergrund": "Starke oder angenehme Sinnesreize ziehen die Aufmerksamkeit aus dem Gedankenkreisen ins Hier und Jetzt. Im DBT-Skillstraining gehört das Beruhigen mit allen Sinnen zu den Fertigkeiten, mit denen sich Krisen überstehen lassen; Kälte zählt zu den stärksten Reizen bei sehr hoher Anspannung (Linehan, 2015). Auch das Skillstraining für Jugendliche nutzt diese Fertigkeiten (Rathus & Miller, 2015). Sie wirken vor allem über die Lenkung der Aufmerksamkeit (Gross, 1998). Wie ein Duft oder ein Song wirkt, hängt stark von Erfahrungen ab; deshalb wird getestet statt verordnet.",
         "quellen": [
@@ -938,12 +731,12 @@
           "Gross, J. J. (1998). The emerging field of emotion regulation: An integrative review. Review of General Psychology, 2(3), 271–299."
         ],
         "differenzierung": {
-          "leichter": "Nur drei Düfte testen und in der Tabelle nur Punkte vergeben.",
+          "leichter": "Nur drei Düfte testen; bei der Playlist reicht ein Song je Seite.",
           "schwerer": "Zu jedem Duft eine Situation der letzten Woche notieren, in der er geholfen hätte."
         },
         "impulse": [
           "Welcher Duft erinnert euch an etwas – und macht das seine Wirkung aus?",
-          "Was davon könnt ihr in der Schule unauffällig nutzen?"
+          "Welcher Song würde eure Zahl bei Rot noch hochziehen – und was hört ihr dann lieber?"
         ],
         "tipps": [
           "Riechstreifen gibt es günstig in der Apotheke.",
@@ -955,139 +748,103 @@
     },
     "fr": {
       "titel": "Mes skills sensoriels",
-      "untertitel": "Un parfum, une chanson, quelque chose dans la main : les sens te ramènent à l’instant présent quand les pensées s’emballent.",
+      "untertitel": "Un parfum, une chanson, un objet en main – tes sens te ramènent ici.",
       "bausteine": [
         {
           "art": "aufgabe",
-          "text": "Test des parfums : sens chaque bandelette. Décris l’effet du parfum sur toi et donne de 1 à 5 points.",
-          "hinweis": "Sens à distance. Si un parfum te dérange, passe simplement la bandelette."
-        },
-        {
-          "art": "wortspeicher",
-          "titel": "Mots pour les parfums",
-          "items": [
-            "apaisant",
-            "tonique",
-            "rafraîchissant",
-            "éveillant",
-            "chaud",
-            "rassurant",
-            "joyeux",
-            "aide à se concentrer",
-            "trop fort",
-            "désagréable",
-            "me rappelle …"
+          "text": "Bar à parfums : sens chaque bandelette et colorie son effet sur toi.",
+          "hinweis": "Sens à distance. Si un parfum te dérange, passe simplement au suivant.",
+          "symbole": [
+            "malen"
           ]
         },
         {
-          "art": "tabelle",
-          "spalten": [
-            "Parfum",
-            "Effet sur moi",
-            "Points",
-            "Peut aider pour …"
+          "art": "balken",
+          "stufen": 5,
+          "pole": [
+            "je n’aime pas",
+            "me fait du bien"
           ],
-          "breiten": [
-            0.8,
-            2.4,
-            0.7,
-            2
-          ],
-          "zeilen": 5,
-          "nummern": 1,
-          "beispiel": [
-            "p. ex.",
-            "frais, réveille, presque trop fort",
-            "4",
-            "la fatigue avant un devoir en classe"
+          "items": [
+            "Parfum 1",
+            "Parfum 2",
+            "Parfum 3",
+            "Parfum 4",
+            "Parfum 5"
           ]
         },
         {
           "art": "satzanfaenge",
           "items": [
-            "Mon parfum préféré : …",
-            "Je l’utilise quand …"
-          ],
-          "linien": 1
+            "Mon parfum préféré est le numéro … Il m’aide quand …"
+          ]
         },
         {
           "art": "aufgabe",
-          "text": "Boîte sensorielle et froid : qu’est-ce qui t’a calmé, qu’est-ce qui t’a réveillé ?"
+          "text": "Boîte sensorielle, froid et son : classe ce que ces choses te font.",
+          "symbole": [
+            "schreiben"
+          ]
         },
         {
-          "art": "einschaetzung",
-          "optionen": [
-            "me calme",
-            "me réveille",
-            "je n’aime pas"
+          "art": "rangliste",
+          "stufen": [
+            "Me calme",
+            "Me réveille",
+            "Pas pour moi"
           ],
           "items": [
-            "Plume",
-            "galet lisse",
+            "plume",
+            "galet",
             "balle antistress",
             "balle à picots",
-            "tissu doux",
-            "Poche de froid ou glaçon dans un tissu"
-          ]
+            "tissu",
+            "froid",
+            "bol chantant"
+          ],
+          "hoehe": 1
         },
         {
           "art": "aufgabe",
-          "text": "Ta playlist de skills : trois chansons pour redescendre et trois pour te recharger."
-        },
-        {
-          "art": "tabelle",
-          "spalten": [
-            "N°",
-            "Pour redescendre",
-            "Pour me recharger"
-          ],
-          "breiten": [
-            0.45,
-            2.4,
-            2.4
-          ],
-          "zeilen": 3,
-          "nummern": 1,
-          "beispiel": [
-            "p. ex.",
-            "une chanson calme que je peux chanter avec",
-            "la chanson qui passe à l’entraînement"
+          "text": "Ta playlist de skills : qu’est-ce qui te calme, qu’est-ce qui te recharge ?",
+          "symbole": [
+            "schreiben"
           ]
         },
         {
-          "art": "frage",
-          "text": "La musique peut aussi faire monter : quelle chanson ferait encore grimper ta tension au rouge – et qu’écoutes-tu alors plutôt ?",
-          "linien": 2
-        },
-        {
-          "art": "aufgabe",
-          "text": "Planifie un skill sensoriel pour une vraie situation cette semaine."
-        },
-        {
-          "art": "wennDann",
-          "zeilen": 2,
-          "beispiele": [
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
             {
-              "wenn": "Si je stresse avant le test de maths,",
-              "dann": "je sens ma bandelette à la menthe poivrée et j’expire longuement."
+              "art": "linien",
+              "anzahl": 3,
+              "label": "Pour redescendre",
+              "fuellen": false
+            }
+          ],
+          "rechts": [
+            {
+              "art": "linien",
+              "anzahl": 3,
+              "label": "Pour me recharger",
+              "fuellen": false
             }
           ]
         },
         {
-          "art": "info",
-          "symbol": "tipp",
-          "titel": "Des skills sensoriels dans la poche",
-          "text": "Une bandelette dans un sachet zip, une balle antistress, des écouteurs avec ta playlist : ce que tu as sur toi, tu l’utilises."
+          "art": "mission",
+          "text": "Emporte ta bandelette ou tes écouteurs. Utilise un skill sensoriel dès que ton chiffre monte.",
+          "tage": 1,
+          "beweis": "chiffre avant, chiffre après"
         }
       ],
       "lehrer": {
-        "ziel": "Les jeunes testent parfums, objets tactiles, froid et musique, distinguent stimuli apaisants et stimulants et fixent leur parfum préféré et leur playlist de skills.",
+        "ziel": "Les jeunes testent des parfums, des objets à toucher, le froid, le son et la musique, distinguent ce qui calme de ce qui réveille et choisissent leur parfum préféré et leur playlist de skills.",
         "ablauf": [
           "Avant : vérifier allergies et asthme ; numéroter les huiles, cacher les noms.",
-          "Test des parfums (20 min) : une goutte sur chaque bandelette, faire circuler ; révéler les noms à la fin seulement.",
-          "Boîte sensorielle et froid (15 min) : toucher à l’aveugle, décrire, deviner ; tenir la poche de froid 30 secondes.",
-          "Playlist (10 min) : noter les chansons, faire écouter de courts extraits ; discuter la question sur le rouge.",
-          "Tâche 4 comme plan pour la semaine ; donner le parfum préféré dans un sachet zip."
+          "Bar à parfums (exercice 1) : une goutte par bandelette, à cinq postes ; dévoiler les noms seulement à la fin. Le parfum préféré part dans un sachet zip.",
+          "Exercice 2 après le duel du toucher, l’essai du froid et le bol chantant : classer ce qui calme et ce qui réveille.",
+          "Exercice 3 avant la ronde des DJ : noter une à trois chansons de chaque côté. Lire la mission."
         ],
         "hintergrund": "Des stimuli sensoriels forts ou agréables ramènent l’attention des ruminations au moment présent. Dans l’entraînement aux skills de la DBT, s’apaiser par tous les sens fait partie des capacités qui aident à traverser les crises ; le froid compte parmi les stimuli les plus forts en cas de très forte tension (Linehan, 2015). L’entraînement pour adolescents utilise aussi ces capacités (Rathus & Miller, 2015). Elles agissent surtout en orientant l’attention (Gross, 1998). L’effet d’un parfum ou d’une chanson dépend beaucoup du vécu : on teste donc au lieu de prescrire.",
         "quellen": [
@@ -1096,21 +853,22 @@
           "Gross, J. J. (1998). The emerging field of emotion regulation: An integrative review. Review of General Psychology, 2(3), 271–299."
         ],
         "differenzierung": {
-          "leichter": "Ne tester que trois parfums et ne donner que des points dans le tableau.",
+          "leichter": "Tester seulement trois parfums ; pour la playlist, une chanson par côté suffit.",
           "schwerer": "Pour chaque parfum, noter une situation de la semaine passée où il aurait aidé."
         },
         "impulse": [
           "Quel parfum vous rappelle quelque chose – et est-ce cela qui fait son effet ?",
-          "Lesquels pouvez-vous utiliser discrètement à l’école ?"
+          "Quelle chanson ferait encore monter votre chiffre au rouge – et qu’écoutez-vous alors plutôt ?"
         ],
         "tipps": [
           "Les bandelettes olfactives coûtent peu en pharmacie.",
           "Garder une poche de froid au congélateur de l’Annexe."
         ],
         "achtung": "Huiles seulement sur bandelettes, jamais sur la peau. En cas de maux de tête ou de gêne respiratoire : ouvrir la fenêtre, air frais. Froid brièvement, dans un tissu, pas en cas de problèmes cardio-vasculaires. Les parfums peuvent réveiller des souvenirs ; on peut se retirer.",
-        "material": "Huiles, bandelettes olfactives, sachets zip, boîte sensorielle, poche de froid, haut-parleur"
+        "material": "Huiles, bandelettes, sachets zip, boîte sensorielle, poche de froid, haut-parleur"
       }
-    }
+    },
+    "look": "spiel"
   },
   {
     "id": "skills-sicherer-ort",
@@ -1124,7 +882,7 @@
     "sozialform": [
       "einzeln"
     ],
-    "dauer": "25 Min.",
+    "dauer": "20 Min.",
     "eldib": [
       "V-21",
       "V-25",
@@ -1149,70 +907,75 @@
     ],
     "de": {
       "titel": "Mein sicherer Ort",
-      "untertitel": "Ein Ort in deiner Vorstellung, an dem du zur Ruhe kommst. Du kannst ihn jederzeit besuchen – in Gedanken.",
+      "untertitel": "Ein Ort in deiner Vorstellung, an dem du zur Ruhe kommst – jederzeit.",
       "bausteine": [
         {
-          "art": "info",
-          "symbol": "hilfe",
-          "titel": "Du entscheidest, was du teilst.",
-          "text": "Dein Ort gehört dir. Er kann echt oder erfunden sein – ein Strand, ein Baumhaus, ein Raum aus einem Spiel. Niemand muss seinen Ort zeigen."
-        },
-        {
           "art": "aufgabe",
-          "text": "Mal oder beschreib deinen Ort so, wie du ihn in der Traumreise gesehen hast.",
-          "hinweis": "Farben, Formen, Wörter – du musst nicht malen können."
+          "text": "Mal deinen Ort so, wie du ihn in der Traumreise gesehen hast.",
+          "hinweis": "Farben, Formen, Wörter – du musst nicht malen können. Dein Ort gehört dir: Niemand muss ihn zeigen.",
+          "symbole": [
+            "malen"
+          ]
         },
         {
           "art": "feld",
           "zeichnen": true,
-          "hoehe": 8.5
+          "hoehe": 6,
+          "fuellen": false
         },
         {
           "art": "aufgabe",
-          "text": "Mach deinen Ort genauer: Was nimmst du dort wahr?"
-        },
-        {
-          "art": "satzanfaenge",
-          "items": [
-            "Ich sehe …",
-            "Ich höre …",
-            "Ich rieche …",
-            "Ich spüre …",
-            "Bei mir ist … (oder: Ich bin allein.)"
-          ],
-          "linien": 1
-        },
-        {
-          "art": "aufgabe",
-          "text": "Gib deinem Ort ein Stichwort. Wenn du es dir innerlich sagst, bist du schneller dort."
-        },
-        {
-          "art": "satzanfaenge",
-          "items": [
-            "Mein Stichwort: …",
-            "Diese Woche besuche ich meinen Ort, wenn …"
-          ],
-          "linien": 1
-        },
-        {
-          "art": "info",
-          "symbol": "tipp",
-          "titel": "So wird dein Ort zum Skill",
-          "punkte": [
-            "Besuch ihn zuerst, wenn es dir gut geht – ein paarmal pro Woche, eine Minute reicht.",
-            "Dann funktioniert er auch bei Gelb, etwa vor einer Prüfung oder abends im Bett.",
-            "Bei Rot hilft er meist nicht mehr. Dann zuerst ein Körper- oder Sinnes-Skill."
+          "text": "Mach deinen Ort genauer: Kreise ein, was passt.",
+          "symbole": [
+            "einkreisen"
           ]
+        },
+        {
+          "art": "entwederOder",
+          "paare": [
+            [
+              "drinnen",
+              "draußen"
+            ],
+            [
+              "hell",
+              "gemütlich dunkel"
+            ],
+            [
+              "ganz still",
+              "mit Geräuschen"
+            ],
+            [
+              "allein",
+              "jemand ist bei mir"
+            ],
+            [
+              "echt",
+              "erfunden"
+            ]
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Dort rieche und spüre ich …",
+            "Mein Stichwort für den Ort: …"
+          ]
+        },
+        {
+          "art": "mission",
+          "text": "Besuch deinen Ort diese Woche dreimal in Gedanken – dann, wenn es dir gut geht. Eine Minute reicht.",
+          "tage": 3,
+          "beweis": "Daumen – bist du schneller dort angekommen?"
         }
       ],
       "lehrer": {
         "ziel": "Die Jugendlichen gestalten nach einer Traumreise einen inneren Ort der Ruhe, machen ihn mit allen Sinnen genauer und verknüpfen ihn mit einem Stichwort.",
         "ablauf": [
-          "Raum etwas abdunkeln, Störungen vermeiden. Ankündigen: Augen offen und Aussteigen sind erlaubt.",
-          "Traumreise (8–10 Min.): das Skript aus Einheit 14 langsam vorlesen, nach jeder Zeile zwei, drei Atemzüge Pause.",
-          "Aufgabe 1 (8 Min.): malen oder beschreiben, leise Musik ohne Gesang.",
-          "Aufgaben 2 und 3 (5 Min.): Sinne ergänzen, Stichwort finden.",
-          "Freiwillige Runde: Wer mag, zeigt seinen Ort. Nichts deuten, nur würdigen."
+          "Traumreise (7–8 Min.): das Skript aus Einheit 14 langsam vorlesen. Vorher ankündigen: Augen offen und Aussteigen sind erlaubt.",
+          "Aufgabe 1 (6 Min.): malen, leise Musik ohne Gesang. Aufgabe 2 (4 Min.): einkreisen, Sinne ergänzen, Stichwort finden.",
+          "Freiwillige Runde: Wer mag, zeigt seinen Ort. Nichts deuten, nur würdigen.",
+          "Dazusagen: erst bei Grün üben, dann klappt der Ort auch bei Gelb; bei Rot zuerst ein Körper- oder Sinnes-Skill. Mission vorlesen. In Einheit 22 wird das Stichwort wieder gebraucht."
         ],
         "hintergrund": "Die Vorstellung eines ruhigen, sicheren Ortes gehört im DBT-Skillstraining zu den Fertigkeiten, mit denen sich belastende Momente überstehen lassen: Innere Bilder verbessern den Augenblick, ohne die Lage zu verschlimmern (Linehan, 2015). In der ressourcenorientierten Traumatherapie ist der „sichere Ort“ eine zentrale Stabilisierungsübung (Reddemann, 2001). Je mehr Sinne beteiligt sind, desto lebendiger wird die Vorstellung; das Stichwort dient als Abkürzung. Die Übung wirkt über die Lenkung der Aufmerksamkeit (Gross, 1998) und muss bei niedriger Anspannung geübt werden, damit sie bei mittlerer abrufbar ist. Für Jugendliche mit belastenden Erfahrungen ist entscheidend, dass sie den Ort selbst wählen und jederzeit aussteigen können.",
         "quellen": [
@@ -1221,7 +984,7 @@
           "Reddemann, L. (2001). Imagination als heilsame Kraft. Zur Behandlung von Traumafolgen mit ressourcenorientierten Verfahren. Stuttgart: Pfeiffer bei Klett-Cotta."
         ],
         "differenzierung": {
-          "leichter": "Nur malen, ohne Satzanfänge; das Stichwort gemeinsam mit der Leitung finden.",
+          "leichter": "Nur malen und einkreisen; das Stichwort gemeinsam mit der Leitung finden.",
           "schwerer": "Eine eigene kurze Anleitung für den Ort schreiben und als Sprachnotiz aufnehmen."
         },
         "impulse": [
@@ -1238,70 +1001,75 @@
     },
     "fr": {
       "titel": "Mon lieu sûr",
-      "untertitel": "Un lieu dans ton imagination où tu retrouves le calme. Tu peux y aller à tout moment – en pensée.",
+      "untertitel": "Un lieu dans ton imagination où tu retrouves le calme – à tout moment.",
       "bausteine": [
         {
-          "art": "info",
-          "symbol": "hilfe",
-          "titel": "C’est toi qui décides de ce que tu partages.",
-          "text": "Ton lieu t’appartient. Il peut être réel ou inventé – une plage, une cabane dans un arbre, une pièce d’un jeu vidéo. Personne n’est obligé de montrer son lieu."
-        },
-        {
           "art": "aufgabe",
-          "text": "Dessine ou décris ton lieu tel que tu l’as vu pendant la visualisation guidée.",
-          "hinweis": "Couleurs, formes, mots – tu n’as pas besoin de savoir dessiner."
+          "text": "Dessine ton lieu tel que tu l’as vu pendant la visualisation guidée.",
+          "hinweis": "Couleurs, formes, mots – pas besoin de savoir dessiner. Ton lieu t’appartient : personne n’est obligé de le montrer.",
+          "symbole": [
+            "malen"
+          ]
         },
         {
           "art": "feld",
           "zeichnen": true,
-          "hoehe": 8.5
+          "hoehe": 6,
+          "fuellen": false
         },
         {
           "art": "aufgabe",
-          "text": "Précise ton lieu : qu’est-ce que tu y perçois ?"
-        },
-        {
-          "art": "satzanfaenge",
-          "items": [
-            "Je vois …",
-            "J’entends …",
-            "Je sens l’odeur de …",
-            "Je ressens …",
-            "Avec moi, il y a … (ou : personne d’autre.)"
-          ],
-          "linien": 1
-        },
-        {
-          "art": "aufgabe",
-          "text": "Donne un mot-clé à ton lieu. Quand tu te le dis intérieurement, tu y arrives plus vite."
-        },
-        {
-          "art": "satzanfaenge",
-          "items": [
-            "Mon mot-clé : …",
-            "Cette semaine, je visite mon lieu quand …"
-          ],
-          "linien": 1
-        },
-        {
-          "art": "info",
-          "symbol": "tipp",
-          "titel": "Comment ton lieu devient un skill",
-          "punkte": [
-            "Visite-le d’abord quand ça va bien – quelques fois par semaine, une minute suffit.",
-            "Il marche alors aussi à l’orange, par exemple avant un devoir en classe ou le soir au lit.",
-            "Au rouge, il n’aide en général plus. Dans ce cas, d’abord un skill corporel ou sensoriel."
+          "text": "Précise ton lieu : entoure ce qui convient.",
+          "symbole": [
+            "einkreisen"
           ]
+        },
+        {
+          "art": "entwederOder",
+          "paare": [
+            [
+              "dedans",
+              "dehors"
+            ],
+            [
+              "lumineux",
+              "sombre et douillet"
+            ],
+            [
+              "tout à fait calme",
+              "avec des bruits"
+            ],
+            [
+              "seul",
+              "quelqu’un est avec moi"
+            ],
+            [
+              "réel",
+              "inventé"
+            ]
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Là-bas, je sens et je ressens …",
+            "Mon mot-clé pour ce lieu : …"
+          ]
+        },
+        {
+          "art": "mission",
+          "text": "Cette semaine, visite ton lieu trois fois en pensée – quand ça va bien. Une minute suffit.",
+          "tage": 3,
+          "beweis": "pouce – y es-tu arrivé plus vite ?"
         }
       ],
       "lehrer": {
-        "ziel": "Après une visualisation guidée, les jeunes créent un lieu intérieur de calme, le précisent avec tous les sens et le relient à un mot-clé.",
+        "ziel": "Après une visualisation guidée, les jeunes créent un lieu intérieur de calme, le précisent avec tous les sens et l’associent à un mot-clé.",
         "ablauf": [
-          "Baisser un peu la lumière, éviter les dérangements. Annoncer : yeux ouverts et sortie de l’exercice permis.",
-          "Visualisation (8–10 min) : lire lentement le script de la séance 14, deux ou trois respirations de pause après chaque ligne.",
-          "Tâche 1 (8 min) : dessiner ou décrire, musique douce sans paroles.",
-          "Tâches 2 et 3 (5 min) : compléter les sens, trouver le mot-clé.",
-          "Tour volontaire : qui le souhaite montre son lieu. Ne rien interpréter, seulement reconnaître."
+          "Visualisation guidée (7–8 min) : lire lentement le script de la séance 14. Annoncer avant : on peut garder les yeux ouverts et sortir de l’exercice.",
+          "Exercice 1 (6 min) : dessiner, musique douce sans paroles. Exercice 2 (4 min) : entourer, compléter les sens, trouver le mot-clé.",
+          "Tour libre : qui veut montre son lieu. Ne rien interpréter, seulement accueillir.",
+          "Préciser : s’exercer d’abord au vert, le lieu marche alors aussi à l’orange ; au rouge, d’abord un skill corporel ou sensoriel. Lire la mission. Le mot-clé resservira à la séance 22."
         ],
         "hintergrund": "Imaginer un lieu calme et sûr fait partie, dans l’entraînement aux skills de la DBT, des capacités qui aident à traverser les moments éprouvants : les images intérieures améliorent l’instant sans aggraver la situation (Linehan, 2015). En thérapie du trauma centrée sur les ressources, le « lieu sûr » est un exercice central de stabilisation (Reddemann, 2001). Plus il y a de sens engagés, plus l’image est vivante ; le mot-clé sert de raccourci. L’exercice agit en orientant l’attention (Gross, 1998) et se pratique à faible tension pour être accessible à tension moyenne. Pour les jeunes ayant vécu des expériences éprouvantes, l’essentiel est qu’ils choisissent le lieu eux-mêmes et puissent en sortir à tout moment.",
         "quellen": [
@@ -1310,7 +1078,7 @@
           "Reddemann, L. (2001). Imagination als heilsame Kraft. Zur Behandlung von Traumafolgen mit ressourcenorientierten Verfahren. Stuttgart: Pfeiffer bei Klett-Cotta."
         ],
         "differenzierung": {
-          "leichter": "Seulement dessiner, sans débuts de phrases ; trouver le mot-clé avec l’adulte qui anime.",
+          "leichter": "Seulement dessiner et entourer ; trouver le mot-clé avec l’animateur.",
           "schwerer": "Écrire une courte consigne personnelle pour le lieu et l’enregistrer en note vocale."
         },
         "impulse": [
@@ -1324,7 +1092,8 @@
         "achtung": "Toujours permettre de sortir de l’exercice. Lieu sûr introuvable ou dessin menaçant : entretien individuel, informer la direction (responsable) ; si danger, agir selon le concept de protection.",
         "material": "Crayons de couleur, musique instrumentale douce"
       }
-    }
+    },
+    "look": "spiel"
   },
   {
     "id": "skills-koffer-ampelplan",
@@ -1370,62 +1139,37 @@
       "untertitel": "Deine besten Skills an einem Ort – und ein Plan, was du bei Grün, Gelb und Rot tust.",
       "bausteine": [
         {
-          "art": "text",
-          "text": "Leg deinen Skills-Tester und deinen Skills-Pass daneben. In den Koffer kommt nur, was bei dir wirklich gewirkt hat. Ein kleiner Koffer, den du benutzt, ist besser als ein großer, der im Schrank steht."
-        },
-        {
           "art": "aufgabe",
-          "text": "Pack deinen Skills-Koffer: Schreib in jedes Fach zwei oder drei Skills.",
-          "hinweis": "Die Beispiele zeigen, was in ein Fach passt."
+          "text": "Pack deinen Koffer: Schreib in jedes Fach zwei oder drei Skills, die bei dir gewirkt haben.",
+          "hinweis": "Leg Skills-Tester und Skills-Pass daneben. Ein kleiner Koffer, den du benutzt, ist besser als ein großer im Schrank.",
+          "symbole": [
+            "schreiben"
+          ]
         },
         {
-          "art": "spalten",
-          "verhaeltnis": "1:1",
-          "links": [
-            {
-              "art": "feld",
-              "label": "Körper",
-              "beispiel": "Treppe laufen, Kastenatmung",
-              "hoehe": 4
-            },
-            {
-              "art": "feld",
-              "label": "Sinne",
-              "beispiel": "Pfefferminz-Streifen, Kühlpack, Knetball",
-              "hoehe": 4
-            },
-            {
-              "art": "feld",
-              "label": "Kopf",
-              "beispiel": "rückwärts zählen, mein sicherer Ort",
-              "hoehe": 4
-            }
+          "art": "rangliste",
+          "stufen": [
+            "Körper",
+            "Sinne",
+            "Kopf",
+            "Menschen",
+            "Aktivitäten"
           ],
-          "rechts": [
-            {
-              "art": "feld",
-              "label": "Menschen",
-              "beispiel": "meiner Schwester schreiben, mit Diogo reden",
-              "hoehe": 4
-            },
-            {
-              "art": "feld",
-              "label": "Aktivitäten",
-              "beispiel": "Fußball, zeichnen, mit dem Hund raus",
-              "hoehe": 4
-            },
-            {
-              "art": "feld",
-              "label": "Zum Anfassen: das kommt in meine Skills-Box",
-              "beispiel": "Knetball, Duftstreifen, Kaugummi",
-              "hoehe": 4
-            }
+          "hoehe": 2
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Zum Anfassen – das kommt in meine Skills-Box: …"
           ]
         },
         {
           "art": "aufgabe",
           "text": "Woran merkst du, dass du Richtung Gelb gehst? Kreuz deine Warnsignale an.",
-          "hinweis": "Deine Gefühls-Landkarte aus Einheit 9 hilft dir dabei."
+          "hinweis": "Deine Gefühls-Landkarte aus Einheit 9 hilft dir.",
+          "symbole": [
+            "ankreuzen"
+          ]
         },
         {
           "art": "ankreuzen",
@@ -1451,15 +1195,21 @@
           "symbol": "merke",
           "titel": "Welcher Skill gehört wohin?",
           "punkte": [
-            "Rot: Körper und Sinne – sie wirken auch dann, wenn Denken nicht mehr geht.",
+            "Rot: Körper und Sinne – Treppe laufen, Kälte, Kastenatmung. Das wirkt auch, wenn Denken nicht mehr geht.",
             "Gelb: Kopf-Skills, Musik, Bewegung, jemandem schreiben.",
-            "Grün: Menschen und Aktivitäten, die deine Tanks füllen – und Zeit, um Skills zu üben."
+            "Grün: Menschen und Aktivitäten, die deine Tanks füllen."
           ]
+        },
+        {
+          "art": "seitenumbruch"
         },
         {
           "art": "aufgabe",
           "text": "Dein Ampelplan: Was tust du bei welcher Farbe?",
-          "hinweis": "Fang unten bei Grün an. Bei Rot nur Skills, die ohne Nachdenken funktionieren."
+          "hinweis": "Fang unten bei Grün an. Bei Rot nur Skills, die ohne Nachdenken funktionieren: Körper und Sinne.",
+          "symbole": [
+            "schreiben"
+          ]
         },
         {
           "art": "ampel",
@@ -1475,46 +1225,34 @@
             },
             {
               "titel": "Grün – mir geht es gut (0–30)",
-              "text": "Das tue ich, damit es so bleibt: Bedürfnisse auffüllen, Skills üben."
+              "text": "Das tue ich, damit es so bleibt: Tanks auffüllen, Skills üben."
             }
           ]
         },
         {
           "art": "aufgabe",
-          "text": "Trag ein, zu welchen Menschen du gehen kannst, wenn es dir schlecht geht.",
-          "hinweis": "Mindestens eine erwachsene Person, die du wirklich erreichen kannst."
-        },
-        {
-          "art": "tabelle",
-          "spalten": [
-            "Person",
-            "So erreiche ich sie",
-            "Wann?"
-          ],
-          "breiten": [
-            1.6,
-            2.3,
-            1.2
-          ],
-          "zeilen": 3,
-          "beispiel": [
-            "Educatrice im Annexe",
-            "morgens im Büro oder per Nachricht",
-            "Mo–Fr, 8–16 Uhr"
+          "text": "Zu wem kannst du gehen, wenn es dir schlecht geht? Trag unten eine erwachsene Person ein, die du wirklich erreichst.",
+          "symbole": [
+            "schreiben"
           ]
         },
         {
           "art": "notfall"
+        },
+        {
+          "art": "mission",
+          "text": "Zeig deinen Ampelplan einer Person, der du vertraust – und sag ihr, was dir bei Rot hilft.",
+          "tage": 1,
+          "beweis": "Daumen – wie war das Gespräch?"
         }
       ],
       "lehrer": {
         "ziel": "Die Jugendlichen bündeln ihre erprobten Skills in einem Skills-Koffer und legen im Ampelplan fest, was sie bei Grün, Gelb und Rot tun und zu wem sie gehen können.",
         "ablauf": [
-          "Vorab: Skills-Tester, Skills-Pass und Thermometer-Blatt bereitlegen, für Grün den Bedürfnis-Pegel aus Einheit 4.",
-          "Koffer (10 Min.): in jedes Fach zwei oder drei Skills, die im Tester gut abgeschnitten haben.",
-          "Warnsignale (5 Min.) ankreuzen; Hilfe ist die Gefühls-Landkarte aus Einheit 9.",
-          "Ampelplan (10 Min.) von Grün nach Rot; bei Rot prüfen: Geht das auch ohne Nachdenken?",
-          "Mindestens eine erreichbare erwachsene Person eintragen; den Plan mitnehmen und fotografieren."
+          "Koffer-Markt (Seite 1): mit Skills-Tester und Skills-Pass in jedes Fach zwei oder drei Skills, die gewirkt haben. Dann Warnsignale ankreuzen.",
+          "Ampelplan (Seite 2) von Grün nach Rot; bei Rot prüfen: Geht das ohne Nachdenken? Für Grün hilft das Blatt „Meine Tanks“.",
+          "Eine erreichbare erwachsene Person eintragen, den Plan fotografieren, Mission vorlesen.",
+          "In Einheit 24 und 29 schauen die Jugendlichen wieder auf ihren Plan."
         ],
         "hintergrund": "Der Skills-Koffer – in der Praxis oft Notfallkoffer genannt – sammelt erprobte Fertigkeiten und Gegenstände, die bei hoher Anspannung sofort greifbar sind; er folgt dem DBT-Skillstraining für Jugendliche (Fleischhaker et al., 2011). Die Ampel ordnet sie der Anspannung zu und knüpft sie an frühe Warnsignale, damit gehandelt wird, bevor Rot erreicht ist (Rathus & Miller, 2015). Aus dem Sicherheitsplan nach Stanley & Brown (2012) stammen die Reihenfolge von eigener Bewältigung über vertraute Menschen bis zu Hilfenummern und der Grundsatz, erreichbare Personen konkret zu nennen. Grün knüpft an das Glas der Bedürfnisse an.",
         "quellen": [
@@ -1535,7 +1273,7 @@
           "In Krisen zusätzlich den Toolbox-Sicherheitsplan nutzen."
         ],
         "achtung": "Nicht einsammeln, nicht vorlesen, nicht bewerten. Fehlt jede erreichbare Person oder stehen bei Rot Selbstverletzung, Drogen oder Suizidgedanken: Einzelgespräch, die zuständige Leitung (Responsable) informieren, Schutzkonzept.",
-        "material": "Tester, Skills-Pass, Kontakte von SePAS und Annexe"
+        "material": "Skills-Tester, Skills-Pass, Kontakte von SePAS und Annexe"
       }
     },
     "fr": {
@@ -1543,62 +1281,37 @@
       "untertitel": "Tes meilleurs skills au même endroit – et un plan de ce que tu fais au vert, à l’orange et au rouge.",
       "bausteine": [
         {
-          "art": "text",
-          "text": "Pose à côté ta feuille de test et ton passeport Skills. Dans la valise, ne mets que ce qui a vraiment marché pour toi. Une petite valise que tu utilises vaut mieux qu’une grande qui reste dans l’armoire."
-        },
-        {
           "art": "aufgabe",
-          "text": "Prépare ta valise de skills : écris deux ou trois skills dans chaque compartiment.",
-          "hinweis": "Les exemples montrent ce qui peut aller dans un compartiment."
+          "text": "Fais ta valise : écris dans chaque compartiment deux ou trois skills qui ont marché pour toi.",
+          "hinweis": "Pose à côté ta feuille de test et ton passeport Skills. Une petite valise utilisée vaut mieux qu’une grande dans l’armoire.",
+          "symbole": [
+            "schreiben"
+          ]
         },
         {
-          "art": "spalten",
-          "verhaeltnis": "1:1",
-          "links": [
-            {
-              "art": "feld",
-              "label": "Corps",
-              "beispiel": "courir dans l’escalier, respiration en carré",
-              "hoehe": 4
-            },
-            {
-              "art": "feld",
-              "label": "Sens",
-              "beispiel": "bandelette à la menthe, poche de froid, balle antistress",
-              "hoehe": 4
-            },
-            {
-              "art": "feld",
-              "label": "Tête",
-              "beispiel": "compter à rebours, mon lieu sûr",
-              "hoehe": 4
-            }
+          "art": "rangliste",
+          "stufen": [
+            "Corps",
+            "Sens",
+            "Tête",
+            "Personnes",
+            "Activités"
           ],
-          "rechts": [
-            {
-              "art": "feld",
-              "label": "Personnes",
-              "beispiel": "écrire à ma sœur, parler avec Diogo",
-              "hoehe": 4
-            },
-            {
-              "art": "feld",
-              "label": "Activités",
-              "beispiel": "foot, dessiner, sortir avec le chien",
-              "hoehe": 4
-            },
-            {
-              "art": "feld",
-              "label": "À toucher : ce qui va dans ma boîte à skills",
-              "beispiel": "balle antistress, bandelette de parfum, chewing-gum",
-              "hoehe": 4
-            }
+          "hoehe": 2
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "À toucher – ce qui va dans ma boîte à skills : …"
           ]
         },
         {
           "art": "aufgabe",
           "text": "À quoi remarques-tu que tu glisses vers l’orange ? Coche tes signaux d’alerte.",
-          "hinweis": "Ta carte des émotions de la séance 9 t’aide pour cela."
+          "hinweis": "Ta carte des émotions de la séance 9 t’aide.",
+          "symbole": [
+            "ankreuzen"
+          ]
         },
         {
           "art": "ankreuzen",
@@ -1607,13 +1320,13 @@
           "items": [
             "le cœur bat plus vite",
             "visage brûlant",
-            "poings serrés, mâchoire dure",
+            "poings serrés",
             "mal au ventre",
             "respiration rapide",
             "vision en tunnel",
             "pensées qui s’emballent",
             "« C’est trop injuste. »",
-            "« Tout le monde est contre moi. »",
+            "« Tous contre moi. »",
             "je hausse la voix",
             "je me renferme",
             "je claque les portes"
@@ -1624,15 +1337,21 @@
           "symbol": "merke",
           "titel": "Quel skill va où ?",
           "punkte": [
-            "Rouge : corps et sens – ils marchent même quand penser n’est plus possible.",
+            "Rouge : corps et sens – escalier, froid, respiration en carré. Ça marche même sans réfléchir.",
             "Orange : skills de tête, musique, mouvement, écrire à quelqu’un.",
-            "Vert : les personnes et activités qui remplissent tes réservoirs – et du temps pour t’exercer aux skills."
+            "Vert : les personnes et activités qui remplissent tes réservoirs."
           ]
+        },
+        {
+          "art": "seitenumbruch"
         },
         {
           "art": "aufgabe",
           "text": "Ton plan feu tricolore : que fais-tu à quelle couleur ?",
-          "hinweis": "Commence en bas, par le vert. Au rouge, seulement des skills qui marchent sans réfléchir."
+          "hinweis": "Commence en bas, par le vert. Au rouge, seulement des skills qui marchent sans réfléchir : corps et sens.",
+          "symbole": [
+            "schreiben"
+          ]
         },
         {
           "art": "ampel",
@@ -1648,46 +1367,34 @@
             },
             {
               "titel": "Vert – ça va bien (0–30)",
-              "text": "Ce que je fais pour que ça continue : remplir mes besoins, m’exercer aux skills."
+              "text": "Ce que je fais pour que ça continue : remplir mes réservoirs, m’exercer."
             }
           ]
         },
         {
           "art": "aufgabe",
-          "text": "Note vers qui tu peux aller quand ça ne va pas.",
-          "hinweis": "Au moins un adulte que tu peux vraiment joindre."
-        },
-        {
-          "art": "tabelle",
-          "spalten": [
-            "Personne",
-            "Comment la joindre",
-            "Quand ?"
-          ],
-          "breiten": [
-            1.6,
-            2.3,
-            1.2
-          ],
-          "zeilen": 3,
-          "beispiel": [
-            "Éducatrice de l’Annexe",
-            "le matin au bureau ou par message",
-            "lun–ven, 8 h–16 h"
+          "text": "Vers qui peux-tu aller quand ça ne va pas ? Note en bas un adulte que tu peux vraiment joindre.",
+          "symbole": [
+            "schreiben"
           ]
         },
         {
           "art": "notfall"
+        },
+        {
+          "art": "mission",
+          "text": "Montre ton plan à une personne de confiance – et dis-lui ce qui t’aide au rouge.",
+          "tage": 1,
+          "beweis": "pouce – comment s’est passée la discussion ?"
         }
       ],
       "lehrer": {
         "ziel": "Les jeunes réunissent leurs skills testés dans une valise de skills et fixent dans le plan feu tricolore ce qu’ils font au vert, à l’orange et au rouge et vers qui ils peuvent aller.",
         "ablauf": [
-          "Avant : préparer la feuille de test, le passeport Skills et la feuille du thermomètre ; pour le vert, les réservoirs de besoins de la séance 4.",
-          "Valise (10 min) : dans chaque compartiment, deux ou trois skills qui ont bien marché au test.",
-          "Signaux d’alerte (5 min) : cocher ; aide : la carte des émotions de la séance 9.",
-          "Plan feu tricolore (10 min) du vert au rouge ; au rouge, vérifier : est-ce que ça marche aussi sans réfléchir ?",
-          "Noter au moins un adulte joignable ; emporter le plan et le photographier."
+          "Marché de la valise (page 1) : avec la feuille de test et le passeport, deux ou trois skills qui ont marché par compartiment. Puis cocher les signaux d’alerte.",
+          "Plan (page 2) du vert au rouge ; au rouge, vérifier : ça marche sans réfléchir ? Pour le vert, la feuille « Mes réservoirs » aide.",
+          "Noter un adulte joignable, photographier le plan, lire la mission.",
+          "Aux séances 24 et 29, les jeunes reprennent leur plan."
         ],
         "hintergrund": "La valise de skills – souvent appelée valise d’urgence dans la pratique – rassemble des capacités et des objets éprouvés, immédiatement à portée de main en cas de forte tension ; elle suit l’entraînement aux skills de la DBT pour adolescents (Fleischhaker et al., 2011). Le feu tricolore les associe à la tension et à des signaux d’alerte précoces, pour agir avant d’atteindre le rouge (Rathus & Miller, 2015). Du plan de sécurité de Stanley & Brown (2012) viennent l’ordre allant de la gestion personnelle aux personnes de confiance puis aux numéros d’aide, et le principe de nommer concrètement des personnes joignables. Le vert se rattache au bocal des besoins.",
         "quellen": [
@@ -1710,7 +1417,8 @@
         "achtung": "Ne pas ramasser, ne pas lire à voix haute, ne pas évaluer. Si aucune personne joignable n’est notée ou si le rouge évoque automutilation, drogues ou idées suicidaires : entretien individuel, informer la direction compétente (responsable), concept de protection.",
         "material": "Feuille de test, passeport Skills, contacts du SePAS et de l’Annexe"
       }
-    }
+    },
+    "look": "spiel"
   },
   {
     "id": "skills-kaertchen",
@@ -1742,7 +1450,8 @@
     "bild": "icon:wallet",
     "verwandt": [
       "skills-koffer-ampelplan",
-      "skills-tester"
+      "skills-tester",
+      "skills-zonen-karten"
     ],
     "kurs": [
       "j1-e15",
@@ -1754,8 +1463,8 @@
       "bausteine": [
         {
           "art": "aufgabe",
-          "text": "Deine Notfallkarte: vorne deine drei bis fünf wichtigsten Skills für Rot, hinten deine Menschen.",
-          "hinweis": "Groß und kurz schreiben – bei 90 liest niemand lange Sätze. Beide Hälften ausschneiden, Rücken an Rücken legen, zusammen laminieren.",
+          "text": "Deine Notfallkarte: vorne deine drei wichtigsten Skills für Rot, hinten deine Menschen.",
+          "hinweis": "Groß und kurz schreiben – bei 90 liest niemand lange Sätze. Ausschneiden, Rücken an Rücken legen, laminieren.",
           "symbole": [
             "schreiben",
             "schneiden"
@@ -1768,7 +1477,7 @@
             {
               "art": "feld",
               "zeichnen": true,
-              "hoehe": 6.6,
+              "hoehe": 5.5,
               "label": "Vorne: Wenn es über 70 geht, mache ich …",
               "beispiel": "kaltes Wasser, 3 Minuten Treppe, Kastenatmung"
             }
@@ -1777,7 +1486,7 @@
             {
               "art": "feld",
               "zeichnen": true,
-              "hoehe": 6.6,
+              "hoehe": 5.5,
               "label": "Hinten: Zu diesen Menschen gehe ich …",
               "beispiel": "Educateur im Annexe, meine Tante, Kanner- a Jugendtelefon 116 111"
             }
@@ -1785,7 +1494,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Skills-Kärtchen: Schneide die Skills aus, die in deinen Koffer gehören. Auf die leeren Karten kommen eigene.",
+          "text": "Schneide die Kärtchen aus, die in deinen Koffer gehören. Auf die leeren kommen eigene Skills.",
+          "hinweis": "Kärtchen, Knetball und Duftstreifen passen in eine kleine Dose – das ist deine Skills-Box.",
           "symbole": [
             "schneiden"
           ]
@@ -1839,7 +1549,9 @@
               "text": "Kopfhörer auf, ein Song zum Runterkommen.",
               "bild": "icon:headphones"
             }
-          ]
+          ],
+          "schneiden": true,
+          "hoehe": 100
         },
         {
           "art": "seitenumbruch"
@@ -1889,59 +1601,30 @@
             {
               "titel": "Mein Skill"
             }
-          ]
-        },
-        {
-          "art": "aufgabe",
-          "text": "Bring der Gruppe einen Skill bei: Nimm dein Lieblingskärtchen und leite den Skill an.",
-          "hinweis": "Ein bis zwei Minuten reichen. Du darfst vom Kärtchen ablesen.",
-          "symbole": [
-            "sprechen",
-            "gruppe"
-          ]
-        },
-        {
-          "art": "schritte",
-          "stil": "kette",
-          "linien": 0,
-          "items": [
-            {
-              "titel": "Wann hilft er?",
-              "text": "bei Gelb, bei Rot oder bei beidem"
-            },
-            {
-              "titel": "Vormachen",
-              "text": "langsam und mit wenigen Worten"
-            },
-            {
-              "titel": "Zusammen üben",
-              "text": "eine Minute lang, du zählst mit"
-            },
-            {
-              "titel": "Nachfragen",
-              "text": "Zahl vorher, Zahl nachher?"
-            }
-          ]
+          ],
+          "schneiden": true,
+          "hoehe": 100
         },
         {
           "art": "info",
           "symbol": "tipp",
-          "titel": "So packst du deine Skills-Box",
+          "titel": "Skills-Notruf: So geht das Spiel",
           "punkte": [
-            "Eine kleine Dose oder ein Etui reicht.",
-            "Hinein kommen deine Kärtchen und zwei, drei Dinge zum Anfassen: Knetball, Duftstreifen im Zip-Beutel, Pfefferminz oder Kaugummi.",
-            "Die Box liegt dort, wo es oft schwierig wird – in der Schultasche oder neben dem Bett."
+            "Ein Team zieht eine Zonen-Karte und würfelt: 1–2 heißt Grün, 3–4 Gelb, 5–6 Rot.",
+            "In 20 Sekunden wählt das Team ein Kärtchen, das bei dieser Farbe hilft.",
+            "Eine oder zwei Personen leiten den Skill eine Minute für alle an: sagen, wann er hilft – vormachen – zusammen üben.",
+            "Passt der Skill zur Farbe? 1 Punkt. Konnten alle mitmachen? Noch 1 Punkt."
           ]
         }
       ],
       "lehrer": {
-        "ziel": "Die Jugendlichen gestalten eine Notfallkarte im Kreditkartenformat, wählen passende Skills-Kärtchen aus und leiten der Gruppe einen Skill an.",
+        "ziel": "Die Jugendlichen gestalten eine Notfallkarte im Kreditkartenformat, wählen passende Skills-Kärtchen aus und leiten im Spiel „Skills-Notruf“ der Gruppe einen Skill an.",
         "ablauf": [
-          "Blatt auf festes Papier (160 g) kopieren; Scheren und Laminiergerät bereitstellen.",
-          "Notfallkarte (10 Min.): Skills für Rot aus dem Ampelplan, hinten Menschen mit Telefonnummer; zusammen laminieren.",
-          "Kärtchen (10 Min.): passende ausschneiden, leere Karten mit eigenen Skills füllen.",
-          "Aufgabe 3 (15 Min.): Jede Person leitet mit ihrem Lieblingskärtchen einen Skill an.",
-          "Übrige Kärtchen als Gruppensatz aufbewahren – für Check-ins und Joker-Einheiten."
+          "Blatt auf festes Papier (160 g) kopieren, dazu einen Satz für die Gruppe; Scheren und Laminiergerät bereitstellen.",
+          "Koffer-Markt: Der Gruppensatz liegt ausgeschnitten aus; jede Person schneidet aus ihrem Blatt die Kärtchen, die zu ihr passen, und füllt die leeren.",
+          "Skills-Notruf (17 Min.): zwei Teams, Zonen-Karten und ein Würfel; die Regeln stehen auf Seite 2.",
+          "Notfallkarte (8 Min.): Skills für Rot aus dem Ampelplan, hinten Menschen mit Telefonnummer; zusammen laminieren.",
+          "Den Gruppensatz aufbewahren – für Check-ins, Einheit 25 und Joker-Einheiten."
         ],
         "hintergrund": "Bei hoher Anspannung fällt vielen gerade das nicht ein, was sie eigentlich können; Skills werden dann nur genutzt, wenn sie greifbar sind. In der kognitiven Verhaltenstherapie haben sich dafür Bewältigungskarten bewährt: kurze schriftliche Erinnerungen, die man bei sich trägt (Beck, 2011). Die Notfallkarte übernimmt Grundsätze des Sicherheitsplans: wenige, konkrete Schritte und Menschen, die man wirklich erreichen kann (Stanley & Brown, 2012). Wer einen Skill selbst anleitet, festigt ihn und erlebt sich als kompetent; das stärkt die Selbstwirksamkeit (Bandura, 1977).",
         "quellen": [
@@ -1962,7 +1645,7 @@
           "Gruppensatz: Im Check-in zieht jemand eine Karte, alle machen den Skill."
         ],
         "achtung": "Die Notfallkarte ist persönlich: nicht einsammeln, nicht vorlesen. Stehen schädliche Strategien darauf oder fehlt jede erreichbare Person: Einzelgespräch, die zuständige Leitung (Responsable) informieren, bei Gefährdung nach dem Schutzkonzept handeln.",
-        "material": "Festes Papier, Scheren, Laminiergerät"
+        "material": "Festes Papier, Scheren, Laminiergerät, Würfel, Zonen-Karten"
       }
     },
     "fr": {
@@ -1971,8 +1654,8 @@
       "bausteine": [
         {
           "art": "aufgabe",
-          "text": "Ta carte d’urgence : au recto tes trois à cinq skills les plus importants pour le rouge, au verso tes personnes.",
-          "hinweis": "Écris grand et court – à 90, personne ne lit de longues phrases. Découpe les deux moitiés, place-les dos à dos, plastifie-les ensemble.",
+          "text": "Ta carte d’urgence : au recto tes trois skills les plus importants pour le rouge, au verso tes personnes.",
+          "hinweis": "Écris grand et court – à 90, personne ne lit de longues phrases. Découper, placer dos à dos, plastifier.",
           "symbole": [
             "schreiben",
             "schneiden"
@@ -1985,7 +1668,7 @@
             {
               "art": "feld",
               "zeichnen": true,
-              "hoehe": 6.6,
+              "hoehe": 5.5,
               "label": "Recto : quand ça dépasse 70, je fais …",
               "beispiel": "de l’eau froide, 3 minutes d’escalier, respiration en carré"
             }
@@ -1994,7 +1677,7 @@
             {
               "art": "feld",
               "zeichnen": true,
-              "hoehe": 6.6,
+              "hoehe": 5.5,
               "label": "Verso : je vais vers ces personnes …",
               "beispiel": "Éducateur de l’Annexe, ma tante, Kanner- a Jugendtelefon 116 111"
             }
@@ -2002,7 +1685,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Cartes de skills : découpe les skills qui vont dans ta valise. Sur les cartes vides, ajoute les tiens.",
+          "text": "Découpe les cartes qui vont dans ta valise. Sur les cartes vides, écris tes propres skills.",
+          "hinweis": "Cartes, balle antistress et bandelette tiennent dans une petite boîte – c’est ta boîte à skills.",
           "symbole": [
             "schneiden"
           ]
@@ -2056,7 +1740,9 @@
               "text": "Mettre le casque, une chanson pour redescendre.",
               "bild": "icon:headphones"
             }
-          ]
+          ],
+          "schneiden": true,
+          "hoehe": 100
         },
         {
           "art": "seitenumbruch"
@@ -2106,59 +1792,30 @@
             {
               "titel": "Mon skill"
             }
-          ]
-        },
-        {
-          "art": "aufgabe",
-          "text": "Apprends un skill au groupe : prends ta carte préférée et guide les autres.",
-          "hinweis": "Une à deux minutes suffisent. Tu peux lire sur la carte.",
-          "symbole": [
-            "sprechen",
-            "gruppe"
-          ]
-        },
-        {
-          "art": "schritte",
-          "stil": "kette",
-          "linien": 0,
-          "items": [
-            {
-              "titel": "Quand aide-t-il ?",
-              "text": "à l’orange, au rouge ou aux deux"
-            },
-            {
-              "titel": "Montrer",
-              "text": "lentement et avec peu de mots"
-            },
-            {
-              "titel": "S’exercer ensemble",
-              "text": "pendant une minute, tu comptes avec eux"
-            },
-            {
-              "titel": "Demander",
-              "text": "chiffre avant, chiffre après ?"
-            }
-          ]
+          ],
+          "schneiden": true,
+          "hoehe": 100
         },
         {
           "art": "info",
           "symbol": "tipp",
-          "titel": "Comment préparer ta boîte à skills",
+          "titel": "Allô skills : règle du jeu",
           "punkte": [
-            "Une petite boîte ou une trousse suffit.",
-            "Dedans : tes cartes et deux ou trois objets à toucher : balle antistress, bandelette de parfum dans un sachet zip, menthe ou chewing-gum.",
-            "La boîte est là où c’est souvent difficile – dans le cartable ou à côté du lit."
+            "Une équipe tire une carte des zones et lance le dé : 1–2 = vert, 3–4 = orange, 5–6 = rouge.",
+            "En 20 secondes, l’équipe choisit une carte qui aide à cette couleur.",
+            "Une ou deux personnes guident le skill pendant une minute pour tous : dire quand il aide – montrer – s’exercer ensemble.",
+            "Le skill va avec la couleur ? 1 point. Tout le monde a pu suivre ? Encore 1 point."
           ]
         }
       ],
       "lehrer": {
-        "ziel": "Les jeunes créent une carte d’urgence au format carte de crédit, choisissent les cartes de skills qui leur conviennent et guident le groupe dans un skill.",
+        "ziel": "Les jeunes créent une carte d’urgence au format carte bancaire, choisissent les cartes de skills qui leur conviennent et guident un skill pour le groupe dans le jeu « Allô skills ».",
         "ablauf": [
-          "Copier la feuille sur papier épais (160 g) ; préparer ciseaux et plastifieuse.",
-          "Carte d’urgence (10 min) : skills pour le rouge tirés du plan feu tricolore, au verso des personnes avec leur numéro de téléphone ; plastifier ensemble.",
-          "Cartes (10 min) : découper celles qui conviennent, remplir les cartes vides avec ses propres skills.",
-          "Tâche 3 (15 min) : chaque personne guide un skill avec sa carte préférée.",
-          "Garder les cartes restantes comme jeu de groupe – pour les check-ins et les séances joker."
+          "Copier la feuille sur papier épais (160 g), plus un jeu pour le groupe ; préparer ciseaux et plastifieuse.",
+          "Marché de la valise : le jeu du groupe est étalé, découpé ; chacun découpe dans sa feuille les cartes qui lui conviennent et remplit les cartes vides.",
+          "Allô skills (17 min) : deux équipes, les cartes des zones et un dé ; la règle est en page 2.",
+          "Carte d’urgence (8 min) : skills pour le rouge tirés du plan, au verso les personnes avec leur numéro ; plastifier ensemble.",
+          "Garder le jeu du groupe – pour les check-ins, la séance 25 et les séances joker."
         ],
         "hintergrund": "À forte tension, beaucoup oublient justement ce qu’ils savent faire ; les skills ne servent que s’ils sont à portée de main. En thérapie cognitivo-comportementale, les cartes d’adaptation ont fait leurs preuves : de brefs rappels écrits que l’on porte sur soi (Beck, 2011). La carte d’urgence reprend des principes du plan de sécurité : peu d’étapes concrètes et des personnes vraiment joignables (Stanley & Brown, 2012). Guider soi-même un skill le consolide et fait vivre un sentiment de compétence, ce qui renforce le sentiment d’efficacité personnelle (Bandura, 1977).",
         "quellen": [
@@ -2179,8 +1836,9 @@
           "Jeu de groupe : au check-in, quelqu’un tire une carte et tout le monde fait le skill."
         ],
         "achtung": "La carte d’urgence est personnelle : ne pas ramasser, ne pas lire à voix haute. Si des stratégies nocives y figurent ou si aucune personne joignable n’est notée : entretien individuel, informer la direction compétente (responsable) ; en cas de mise en danger, agir selon le concept de protection.",
-        "material": "Papier épais, ciseaux, plastifieuse"
+        "material": "Papier épais, ciseaux, plastifieuse, dé, cartes des zones"
       }
-    }
+    },
+    "look": "spiel"
   }
 ]

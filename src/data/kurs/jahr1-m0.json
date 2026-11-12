@@ -6,80 +6,98 @@
       "jahr": 1,
       "modul": "j1-m0",
       "titel": "Willkommen – unser Rahmen",
-      "kurz": "Die Gruppe lernt sich kennen, legt gemeinsam ihre Regeln fest und lernt die Rituale kennen, die sie durch das ganze Jahr begleiten.",
+      "kurz": "Die Gruppe lernt die Namen im Ballspiel, baut aus dem „schlimmsten Kurs der Welt“ ihre eigenen Regeln und lernt Gefühlsrad, Skills-Pass und den ersten Skill kennen.",
       "dauer": 100,
       "ziele": [
-        "kennen Ziel und Ablauf des Skills-Kurses",
-        "erarbeiten einen eigenen Gruppenvertrag und unterschreiben ihn",
-        "lernen Gefühlsrad und Skills-Pass kennen",
-        "erleben eine erste Übung, um im Hier und Jetzt anzukommen"
+        "kennen die Namen der anderen und erleben im Spiel, dass Üben wirkt",
+        "entwickeln aus einer Staffel eigene Regeln und unterschreiben den Gruppenvertrag",
+        "lernen Gefühlsrad und Skills-Pass als feste Rituale kennen",
+        "probieren mit 5-4-3-2-1 ihren ersten Skill aus – erst als Spiel, dann still"
       ],
       "material": [
-        "Plakat (A1) und dicke Stifte",
+        "Ein weicher Ball, Stoppuhr oder Handy-Timer",
+        "Plakat (A1) „Was sind Skills?“, Haftnotizen in einer Farbe (für Einheit 11 und 30 andere Farben zurücklegen), dicke Stifte",
+        "Jahresweg-Karten, ausgeschnitten, dazu ein zweites Plakat und ein Klebestift",
+        "Zwei Flipchart-Bögen und zwei dicke Stifte für die Staffel, Kreppband für die Startlinie",
+        "Zehn A5-Karten für die Regelvorschläge, Klebepunkte (drei je Person), Klebeband",
         "Schülerblatt „Unser Gruppenvertrag“ in A3",
-        "Skills-Pass für jede Person, dazu eine Box zum Aufbewahren",
         "Gefühlsrad in A3, laminiert",
+        "Schülerblatt „Sinnes-Jagd 5-4-3-2-1“ für jede Person, Klemmbretter oder feste Unterlagen, Pfeife oder anderes Sammelsignal",
+        "Skills-Pass für jede Person (A4, doppelseitig, auf festem Papier), dazu eine Box zum Aufbewahren",
         "Stempel oder Sticker",
-        "Imbiss und Getränke"
+        "Imbiss und Getränke (Allergien und Essensregeln vorher erfragen)"
       ],
       "vorbereitung": [
-        "Stühle im Kreis, Tische an die Wand",
-        "Den Jahresweg vorbereiten: die zehn Module als Treppe auf ein Plakat oder an die Tafel",
-        "Einen ruhigen Platz draußen in Sichtweite aussuchen (bei Regen: Fensterplätze)"
+        "Stühle im Kreis, Tische an die Wand; an einer Wand die zwei Flipchart-Bögen mit Abstand aufhängen und vier Meter davor eine Startlinie kleben",
+        "„Skills“ in die Mitte des Plakats schreiben und es gut sichtbar aufhängen",
+        "Die Jahresweg-Karten ausschneiden und mischen",
+        "Draußen ein überschaubares Gelände in Sichtweite festlegen (bei Regen: Flur, Treppenhaus, Fensterplätze)"
       ],
       "blaetter": [
+        "skills-jahresweg-karten",
         "skills-gruppenvertrag",
         "skills-gefuehlsrad",
+        "skills-sinnes-jagd",
         "skills-pass"
       ],
       "ablauf": [
         {
-          "min": "0–10",
+          "min": "0–8",
           "phase": "ankommen",
           "titel": "Namensrunde mit Geste"
         },
         {
-          "min": "10–25",
-          "phase": "input",
+          "min": "8–18",
+          "phase": "aktiv",
+          "titel": "Ball-Rekord: Namen auf Zeit"
+        },
+        {
+          "min": "18–28",
+          "phase": "uebung",
           "titel": "Was sind Skills? Plakat und Jahresweg"
         },
         {
-          "min": "25–45",
-          "phase": "uebung",
-          "titel": "Unser Gruppenvertrag"
+          "min": "28–42",
+          "phase": "aktiv",
+          "titel": "Staffel: Der schlimmste Kurs der Welt"
         },
         {
-          "min": "45–60",
+          "min": "42–57",
           "phase": "pause",
           "titel": "Pause mit Imbiss"
         },
         {
-          "min": "60–75",
+          "min": "57–67",
+          "phase": "uebung",
+          "titel": "Unser Gruppenvertrag: punkten und unterschreiben"
+        },
+        {
+          "min": "67–75",
           "phase": "uebung",
           "titel": "Das Gefühlsrad und der erste Check-in"
         },
         {
-          "min": "75–90",
+          "min": "75–87",
           "phase": "aktiv",
-          "titel": "Zehn Minuten allein draußen"
+          "titel": "Sinnes-Jagd draußen"
         },
         {
-          "min": "90–95",
+          "min": "87–92",
           "phase": "skill",
           "titel": "Skill: 5-4-3-2-1"
         },
         {
-          "min": "95–100",
+          "min": "92–100",
           "phase": "abschluss",
-          "titel": "Réckbléck und Skills-Pass"
+          "titel": "Abschluss: Stempel und Mission"
         }
       ],
       "schritte": [
         {
           "titel": "Namensrunde mit Geste",
-          "dauer": 10,
+          "dauer": 8,
           "phase": "ankommen",
-          "text": "Alle stehen im Kreis. Reihum sagt jede Person ihren Vornamen und macht eine Geste dazu – winken, ein kurzer Tanzschritt, die Faust auf die Brust. Die Gruppe wiederholt Name und Geste gemeinsam. Selbst beginnen und die eigene Geste ruhig etwas albern wählen: Das nimmt den Druck. In einer zweiten Runde nennt jede Person Namen und Gesten der beiden Personen links neben sich.",
+          "text": "Alle stehen im Kreis. Reihum sagt jede Person ihren Vornamen und macht eine Geste dazu – winken, ein kurzer Tanzschritt, die Faust auf die Brust. Die Gruppe wiederholt Name und Geste gemeinsam. Selbst beginnen und die eigene Geste ruhig etwas albern wählen: Das nimmt den Druck. In einer zweiten, schnellen Runde macht jede Person nur noch ihre Geste, und die Gruppe ruft den Namen dazu.",
           "sagen": [
             "Ich bin …, und so sieht das bei mir aus. Wer macht weiter?",
             "Ihr müsst euch nichts Besonderes ausdenken. Eine Handbewegung reicht völlig."
@@ -88,13 +106,27 @@
           "wennEsKippt": "Wenn jemand nicht mitmachen will: nicht drängen, sondern anbieten, später einzusteigen. Die Runde läuft weiter. Oft machen Zögernde in der zweiten Runde von selbst mit."
         },
         {
-          "titel": "Was sind Skills? Plakat und Jahresweg",
-          "dauer": 15,
-          "phase": "input",
-          "text": "„Skills“ in die Mitte eines Plakats schreiben und Ideen sammeln, ohne sie zu bewerten; auch Scherzantworten notieren. Dann kurz erklären: Skills sind Fertigkeiten, mit denen man besser durch schwierige Momente kommt – mit Gefühlen, mit Stress, mit anderen Menschen. Man lernt sie wie einen Sport oder ein Instrument: durch Üben, nicht durch Zuhören. Zum Schluss den Jahresweg zeigen. Das Plakat bleibt hängen; es kommt in Einheit 11 und am Ende des Jahres wieder.",
+          "titel": "Ball-Rekord: Namen auf Zeit",
+          "dauer": 10,
+          "phase": "aktiv",
+          "text": "Alle bleiben im Kreis stehen. Ein weicher Ball wandert kreuz und quer: Wer wirft, ruft zuerst den Namen der Person, die fangen soll. Jede Person bekommt den Ball genau einmal und merkt sich, von wem er kam und an wen sie ihn weitergab; zum Schluss landet er wieder bei der Leitung. Dann läuft dieselbe Reihenfolge auf Zeit: Eine Person stoppt, und die Gruppe versucht dreimal, ihren eigenen Rekord zu unterbieten; zwischen den Runden darf sie sich 30 Sekunden beraten. Die Zeiten an die Tafel schreiben und in zwei Sätzen auflösen, was das mit dem Kurs zu tun hat.",
           "sagen": [
-            "Was glaubt ihr: Was könnte man hier lernen, das man im Alltag wirklich braucht?",
-            "Was macht ihr, wenn ihr richtig sauer seid – und was davon hilft euch hinterher wirklich?"
+            "Erst den Namen rufen, dann werfen. Fällt der Ball, hebt ihr ihn auf und macht weiter – die Zeit läuft.",
+            "30 Sekunden Beratung: Was könnt ihr ändern, damit es schneller geht?",
+            "Beim dritten Mal wart ihr schneller als beim ersten. Nicht, weil ich es euch erklärt habe, sondern weil ihr geübt habt. Genau so lernt man Skills."
+          ],
+          "tipp": "Ob die Gruppe enger zusammenrückt oder sich umstellt, entscheidet sie selbst – verboten ist nur, jemanden auszulassen. Meist halbiert sich die Zeit.",
+          "wennEsKippt": "Wirft jemand absichtlich hart oder daneben, den Ball gegen ein zusammengeknotetes Tuch tauschen und die Runde neu starten. Wer nicht fangen mag, stoppt die Zeit und sagt den Rekord an. Bei nur zwei oder drei Jugendlichen spielt die Leitung mit, und ein zweiter Ball kommt dazu."
+        },
+        {
+          "titel": "Was sind Skills? Plakat und Jahresweg",
+          "dauer": 10,
+          "phase": "uebung",
+          "text": "Alle gehen zum Plakat „Was sind Skills?“. Jede Person schreibt auf zwei Haftnotizen, was sie tut, wenn sie richtig sauer oder gestresst ist, und klebt sie auf; auch Scherzantworten bleiben hängen. In zwei Sätzen erklären, was Skills sind. Danach liegen die Jahresweg-Karten gemischt auf dem Boden: Die Gruppe legt in zwei Minuten die Treppe des Jahres, die Leitung nennt nur die Zahl der richtigen Plätze und lässt einmal umbauen. Die fertige Treppe auf das zweite Plakat kleben. Plakat und Treppe bleiben hängen; das Plakat kommt in Einheit 11 und am Ende des Jahres wieder.",
+          "sagen": [
+            "Was macht ihr, wenn ihr richtig sauer seid? Schreibt es auf – auch das, was hinterher nicht hilft.",
+            "Skills sind alles, was euch durch schwierige Momente bringt, ohne dass es danach schlimmer ist. Ein paar habt ihr schon – hier kommen neue dazu.",
+            "Vier Karten liegen richtig. Welche, sage ich nicht. Ihr dürft einmal umbauen."
           ],
           "tabelle": {
             "spalten": [
@@ -144,27 +176,29 @@
               ]
             ]
           },
-          "tipp": "Die Treppe von unten nach oben zeichnen: Ich – Wir – Welt. So wird sichtbar, dass jede Stufe auf der vorherigen aufbaut."
+          "tipp": "Die Treppe von unten nach oben kleben: Ich – Wir – Welt. Auf die zwei Karten „Unsere Stufe“ schreibt die Gruppe, was sie außerdem lernen möchte.",
+          "wennEsKippt": "Steht auf einer Haftnotiz etwas, das schadet – zuschlagen, sich wehtun –, sie ohne Kommentar hängen lassen und allgemein sagen: Manches hilft kurz und macht es danach schwerer; genau dafür gibt es hier Neues. Die Person später unter vier Augen ansprechen.",
+          "blatt": "skills-jahresweg-karten"
         },
         {
-          "titel": "Unser Gruppenvertrag",
-          "dauer": 20,
-          "phase": "uebung",
-          "text": "Die Frage stellen und die Antworten auf Zetteln oder direkt auf dem Blatt sammeln. Ähnliches zusammenfassen und gemeinsam drei bis fünf Regeln formulieren – positiv und in der Sprache der Jugendlichen. Die Regeln kommen aus der Gruppe; die Leitung ergänzt nur, was fehlt. Zusätzlich klären, was passiert, wenn eine Regel gebrochen wird. Alle unterschreiben, auch die Leitung. Der Vertrag hängt ab jetzt in jeder Einheit im Raum.",
+          "titel": "Staffel: Der schlimmste Kurs der Welt",
+          "dauer": 14,
+          "phase": "aktiv",
+          "text": "Zwei Teams stellen sich hinter der Startlinie auf, jedes vor seinem Flipchart-Bogen und mit einem Stift. Vier Minuten Staffel: Eine Person läuft vor, schreibt eine Sache auf, die einen Kurs richtig schlimm machen würde, läuft zurück und gibt den Stift weiter. Danach liest jedes Team vor; was das andere Team nicht hat, zählt einen Punkt. Nun wird umgedreht: Jedes Team macht aus den drei schlimmsten Punkten des anderen Teams je eine Regel, die mit „Bei uns …“ beginnt, und schreibt sie groß auf eine Karte. Die Karten kommen an die Wand – aus ihnen entsteht nach der Pause der Vertrag. Fällt einem Team nichts ein, helfen Beispiele wie diese:",
           "sagen": [
-            "Was braucht ihr, damit ihr euch hier wohlfühlt und ehrlich sein könnt?",
-            "Was soll hier auf keinen Fall passieren?"
+            "Stellt euch den schlimmsten Kurs der Welt vor. Was passiert da?",
+            "Vier Minuten, immer nur eine Person am Plakat. Los!",
+            "Jetzt dreht ihr es um: Aus „Alle lachen, wenn jemand etwas sagt“ wird „Bei uns …“ – was?"
           ],
           "punkte": [
-            "Was hier erzählt wird, bleibt hier.",
-            "Niemand muss etwas Persönliches erzählen – „weiter“ ist immer erlaubt.",
-            "Wir lachen miteinander, nicht übereinander.",
-            "Handys bleiben während der Einheit in der Tasche, außer bei Übungen.",
-            "Wer eine Pause braucht, darf kurz rausgehen und sagt Bescheid."
+            "Alle lachen, wenn jemand etwas Falsches sagt.",
+            "Was man erzählt, weiß am nächsten Tag die ganze Schule.",
+            "Man muss vor allen über Privates reden.",
+            "Die Leitung redet 100 Minuten am Stück.",
+            "Es gibt nichts zu essen."
           ],
-          "tipp": "Die Schweigepflicht ehrlich erklären: Wenn jemand in Gefahr ist, muss die Leitung handeln. Das vorab offen zu sagen, schafft eher Vertrauen als Misstrauen.",
-          "wennEsKippt": "Kommen nur Scherzregeln („jeden Tag Pizza“), mit Humor aufnehmen und nachfragen, was dahintersteckt: Wollt ihr, dass es sich hier nicht wie Unterricht anfühlt? Daraus lässt sich oft eine echte Regel machen.",
-          "blatt": "skills-gruppenvertrag"
+          "tipp": "Die Leitung schreibt nicht mit, sondern stoppt die Zeit und feuert beide Teams an. Scherzpunkte wie „kein WLAN“ zählen auch – oft steckt ein echter Wunsch dahinter.",
+          "wennEsKippt": "Schreibt jemand etwas über eine bestimmte Person oder Klasse, den Punkt streichen und ruhig sagen: Hier geht es um einen erfundenen Kurs. Wer nicht laufen mag, schreibt am Plakat, was die anderen ansagen. Bei nur zwei oder drei Jugendlichen spielt ein Team gegen die Uhr: zwölf Punkte in vier Minuten."
         },
         {
           "titel": "Pause mit Imbiss",
@@ -173,60 +207,100 @@
           "text": "Gemeinsam essen, Fenster auf oder kurz nach draußen. Die Leitung isst mit und lässt das Thema ruhen – hier darf es um Fußball, Serien und Haustiere gehen. Gerade in dieser Zeit entsteht oft am meisten Beziehung."
         },
         {
-          "titel": "Das Gefühlsrad und der erste Check-in",
-          "dauer": 15,
+          "titel": "Unser Gruppenvertrag: punkten und unterschreiben",
+          "dauer": 10,
           "phase": "uebung",
-          "text": "Das Gefühlsrad in die Mitte legen und erklären: Innen stehen die Grundgefühle, außen genauere Wörter. Ab heute beginnt jede Einheit mit dem Rad. Dann der erste Check-in: Jede Person zeigt auf ein Wort und sagt einen Satz dazu. Die Leitung beginnt und bleibt ehrlich, aber im Rahmen, etwa: „Ich bin ein bisschen nervös, weil ich euch noch nicht kenne.“",
+          "text": "Alle stehen vor den Regelkarten an der Wand. Jede Person klebt drei Punkte an die Regeln, die ihr am wichtigsten sind. Die drei bis fünf Regeln mit den meisten Punkten schreibt eine freiwillige Person auf das Blatt in A3; die Leitung ergänzt nur, was von der Liste fehlt, und fragt jedes Mal, ob die Gruppe einverstanden ist. Dann die Grenze der Schweigepflicht ehrlich erklären und den Satz im Vertrag vorlesen. Alle unterschreiben, auch die Leitung. Der Vertrag hängt ab jetzt in jeder Einheit im Raum.",
           "sagen": [
-            "Ich fühle mich gerade …, weil … – das „weil“ ist freiwillig.",
-            "Es gibt hier keine falschen Gefühle. Müde zählt auch."
+            "Drei Punkte für die Regeln, die ihr hier wirklich braucht.",
+            "Was hier erzählt wird, bleibt hier. Eine Ausnahme gibt es: Wenn jemand in Gefahr ist, hole ich Hilfe – und ich sage euch vorher, was ich tue.",
+            "Wer unterschreibt, sagt: Ich versuche es. Perfekt muss niemand sein."
+          ],
+          "punkte": [
+            "Was hier erzählt wird, bleibt hier.",
+            "Niemand muss etwas Persönliches erzählen – „weiter“ ist immer erlaubt.",
+            "Wir lachen miteinander, nicht übereinander.",
+            "Handys bleiben während der Einheit in der Tasche, außer bei Übungen.",
+            "Wer eine Pause braucht, darf kurz rausgehen und sagt Bescheid."
+          ],
+          "tipp": "Die Schweigepflicht und ihre Grenze vor dem Unterschreiben erklären, nicht danach. Das vorab offen zu sagen, schafft eher Vertrauen als Misstrauen.",
+          "wennEsKippt": "Bekommen nur Scherzregeln Punkte („jeden Tag Pizza“), mit Humor aufnehmen und nachfragen, was dahintersteckt: Wollt ihr, dass es sich hier nicht wie Unterricht anfühlt? Daraus lässt sich oft eine echte Regel machen. Will jemand nicht unterschreiben, nicht drängen: Die Person darf den Vertrag eine Woche lang prüfen und in Einheit 2 entscheiden.",
+          "blatt": "skills-gruppenvertrag"
+        },
+        {
+          "titel": "Das Gefühlsrad und der erste Check-in",
+          "dauer": 8,
+          "phase": "uebung",
+          "text": "Alle stehen um einen Tisch, auf dem das Gefühlsrad liegt. Kurz erklären: Innen stehen die Grundgefühle, außen genauere Wörter. Zum Aufwärmen nennt die Leitung drei kleine Situationen; auf drei legen alle gleichzeitig einen Finger auf das Wort, das für sie passt, und schauen, wie verschieden die Finger liegen. Dann der erste echte Check-in: Jede Person zeigt auf ein Wort und sagt, wenn sie mag, einen Satz dazu. Die Leitung beginnt und bleibt ehrlich, aber im Rahmen, etwa: „Ich bin ein bisschen nervös, weil ich euch noch nicht kenne.“ Ab heute beginnt jede Einheit mit dem Rad.",
+          "sagen": [
+            "Der Bus fährt euch vor der Nase weg. Eins, zwei, drei – Finger aufs Rad.",
+            "Gleiche Situation, verschiedene Gefühle. Falsch liegt hier niemand.",
+            "Und jetzt in echt: Wie geht es dir gerade? Das „weil“ ist freiwillig. Müde zählt auch."
+          ],
+          "punkte": [
+            "Der Bus fährt dir vor der Nase weg.",
+            "Freitag, die letzte Stunde fällt aus.",
+            "Du sollst gleich etwas vor der Klasse vortragen."
           ],
           "wennEsKippt": "Sagt jemand „egal“ oder „nichts“, das gelten lassen: Auch das ist eine Auskunft. Nicht nachbohren. Wer gar nichts sagen möchte, zeigt nur auf das Rad.",
           "blatt": "skills-gefuehlsrad"
         },
         {
-          "titel": "Zehn Minuten allein draußen",
-          "dauer": 15,
+          "titel": "Sinnes-Jagd draußen",
+          "dauer": 12,
           "phase": "aktiv",
-          "text": "Nach draußen gehen. Jede Person sucht sich einen Platz in Sichtweite, allein und ohne Handy. Zehn Minuten nur sitzen, schauen und hören. Danach kurz im Kreis austauschen. Bei Regen am offenen Fenster oder im Flur mit Blick nach draußen.",
+          "text": "Nach draußen gehen, Grenzen und Sammelsignal nennen. Zu zweit, ohne Handy, acht Minuten: Jedes Paar sucht fünf Dinge zum Sehen, vier zum Fühlen, drei zum Hören, zwei zum Riechen und eines zum Schmecken und notiert Stichworte auf dem Blatt – gesucht wird, was sonst niemand bemerkt. Beim Signal kommen alle zurück und lesen reihum vor; was kein anderes Paar hat, zählt einen Punkt. Bei Regen läuft die Jagd im Gebäude: Flur, Treppenhaus, Fensterplätze.",
           "sagen": [
-            "Was habt ihr gesehen, gehört, gerochen?",
-            "Wie waren zehn Minuten ohne Handy – lang, kurz, komisch?"
+            "Sucht nicht das Offensichtliche. Den Baum sehen alle – den Kratzer im Geländer nur ihr.",
+            "Geschmeckt wird nur, was ihr in der Pause gegessen habt, oder ein Schluck Wasser.",
+            "Woran habt ihr in den acht Minuten nicht gedacht?"
           ],
-          "tipp": "Es ist in Ordnung, wenn jemand es langweilig fand. Langeweile auszuhalten, ist selbst schon ein Skill – das darf man genau so sagen.",
-          "wennEsKippt": "Bleiben zwei zusammen und reden, freundlich trennen: heute jede und jeder für sich, nächstes Mal geht es gemeinsam weiter. Wer nicht still sitzen kann, darf langsam gehen."
+          "tipp": "Die letzte Frage ist der Kern: Wer mit allen Sinnen sucht, hat keinen Platz für Grübeln. Genau das nutzt gleich der Skill.",
+          "wennEsKippt": "Trödelt ein Paar oder greift zum Handy, bekommt es einen Sonderauftrag: an einem festen Platz nur Geräusche jagen. Bei ungerader Zahl gibt es ein Dreierteam. Bei nur zwei Jugendlichen jagen beide einzeln und vergleichen mit der Liste der Leitung.",
+          "blatt": "skills-sinnes-jagd"
         },
         {
           "titel": "Skill: 5-4-3-2-1",
           "dauer": 5,
           "phase": "skill",
-          "text": "Im Kreis, Augen offen oder geschlossen. Langsam anleiten und zwischen den Schritten Zeit lassen. Danach erklären: Das ist ein Skill für Momente, in denen der Kopf voll ist. Er holt die Aufmerksamkeit ins Hier und Jetzt zurück.",
+          "text": "Im Kreis sitzen oder stehen, draußen oder zurück im Raum. Jetzt dieselbe Übung still und jede Person für sich: Die Leitung leitet langsam an und lässt zwischen den Schritten Zeit, die Augen bleiben offen. Danach in zwei Sätzen erklären, wofür der Skill gut ist, und Aufgabe 2 auf dem Blatt ankreuzen lassen.",
+          "sagen": [
+            "Eben war es ein Spiel. Jetzt macht ihr dasselbe leise und nur für euch.",
+            "Das ist ein Skill für Momente, in denen der Kopf voll ist. Er holt euch ins Hier und Jetzt zurück – und niemand merkt, dass ihr ihn benutzt."
+          ],
           "punkte": [
             "5 Dinge, die du siehst",
-            "4 Dinge, die du hörst",
-            "3 Dinge, die du spürst – Stuhl, Füße, Kleidung",
+            "4 Dinge, die du spürst – Stuhl, Füße, Kleidung",
+            "3 Dinge, die du hörst",
             "2 Dinge, die du riechst",
             "1 Sache, die du schmeckst"
-          ]
+          ],
+          "tipp": "Es ist in Ordnung, wenn jemand es langweilig fand. Langeweile auszuhalten, ist selbst schon ein Skill – das darf man genau so sagen.",
+          "blatt": "skills-sinnes-jagd"
         },
         {
-          "titel": "Réckbléck und Skills-Pass",
-          "dauer": 5,
+          "titel": "Abschluss: Stempel und Mission",
+          "dauer": 8,
           "phase": "abschluss",
-          "text": "Die Skills-Pässe austeilen und erklären: Am Ende jeder Einheit kommt ein Satz hinein, dazu ein Stempel. Erster Eintrag: Das nehme ich heute mit. Die Pässe bleiben in einer Box im Raum. Zum Schluss ein Blitzlicht mit einem Wort zu heute.",
+          "text": "Die Skills-Pässe austeilen und Namen eintragen lassen. Kurz zeigen, wie der Pass funktioniert: Nach jeder Stunde gibt es einen Stempel auf dem Weg, jeder ausprobierte Skill kommt in die Sammlung – in die Reihe „Hilft mir“, „Geht so“ oder „Nicht meins“ –, und auf Seite 2 ist Platz für einen Satz oder eine Zeichnung. Blitzlicht mit einem Wort zu heute, dann der erste Stempel, und 5-4-3-2-1 wandert in die Sammlung. Die Leitung liest die Mission der Woche vor. Pässe und Blätter kommen in die Box im Raum.",
           "sagen": [
-            "Ein Wort zu heute – was fällt euch als Erstes ein?"
+            "Ein Wort zu heute – was fällt euch als Erstes ein?",
+            "In welche Reihe gehört 5-4-3-2-1 für euch? „Nicht meins“ ist eine ehrliche Antwort.",
+            "Eure Mission steht unten auf dem Blatt. Nächstes Mal reicht ein Daumen."
           ],
+          "tipp": "Die Sammlung mit Bleistift führen: Skills dürfen im Lauf des Jahres die Reihe wechseln.",
           "blatt": "skills-pass"
         }
       ],
-      "bruecke": "Nächstes Mal lernt ihr euch richtig kennen – und zwar in Bewegung.",
-      "hintergrund": "Gruppen brauchen am Anfang Sicherheit und klare Regeln, bevor persönliche Themen Platz haben. Programme zur Förderung sozial-emotionaler Kompetenzen wirken besonders, wenn sie Schritt für Schritt aufbauen, aktiv üben, auf bestimmte Fertigkeiten fokussieren und offen benennen, was gelernt wird (Durlak et al., 2011). Auch das Skillstraining der Dialektisch-Behavioralen Therapie für Jugendliche arbeitet mit festen Ritualen und beginnt jede Sitzung mit einer kurzen Achtsamkeitsübung (Rathus & Miller, 2015). Deshalb stehen in der ersten Einheit Rahmen, Rituale und eine leichte Übung zum Ankommen im Vordergrund.",
+      "mission": "Probiert 5-4-3-2-1 diese Woche einmal aus, wenn der Kopf voll ist – im Bus, vor einem Test oder abends im Bett. Nächstes Mal reicht ein Daumen: Hat es etwas gebracht?",
+      "bruecke": "Nächstes Mal lernt ihr euch richtig kennen – in Bewegung, mit einem Bingo und ein paar gut erfundenen Lügen.",
+      "hintergrund": "Gruppen brauchen am Anfang Sicherheit und klare Regeln, bevor persönliche Themen Platz haben. Regeln, die eine Gruppe selbst aufstellt, werden eher getragen, weil sie das Bedürfnis nach Mitbestimmung ernst nehmen (Deci & Ryan, 2000). Programme zur Förderung sozial-emotionaler Kompetenzen wirken besonders, wenn sie Schritt für Schritt aufbauen, aktiv üben, auf bestimmte Fertigkeiten fokussieren und offen benennen, was gelernt wird (Durlak et al., 2011). Auch das Skillstraining der Dialektisch-Behavioralen Therapie für Jugendliche arbeitet mit festen Ritualen und beginnt jede Sitzung mit einer kurzen Achtsamkeitsübung (Rathus & Miller, 2015). Deshalb erlebt die Gruppe in der ersten Einheit zuerst, dass Üben wirkt, baut ihren Rahmen selbst und lernt den ersten Skill im Spiel kennen, bevor er still geübt wird.",
       "quellen": [
         "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432.",
-        "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
+        "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+        "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268."
       ],
-      "achtung": "Beim Gruppenvertrag offen sagen, wo die Schweigepflicht endet. Erzählt jemand von Gewalt, Missbrauch, Selbstverletzung oder Suizidgedanken, wird das nicht in der Gruppe vertieft, sondern zeitnah im Einzelgespräch aufgegriffen und nach dem internen Schutzkonzept weitergegeben; die zuständige Leitung (Responsable) wird informiert."
+      "achtung": "Beim Gruppenvertrag offen sagen, wo die Schweigepflicht endet. In der Staffel geht es um einen erfundenen Kurs, nicht um echte Personen oder Klassen. Bei 5-4-3-2-1 bleiben die Augen offen; wer bei der stillen Übung abwesend oder sehr unruhig wirkt, wird später unter vier Augen angesprochen. Erzählt jemand von Gewalt, Missbrauch, Selbstverletzung oder Suizidgedanken, wird das nicht in der Gruppe vertieft, sondern zeitnah im Einzelgespräch aufgegriffen und nach dem internen Schutzkonzept weitergegeben; die zuständige Leitung (Responsable) wird informiert."
     },
     {
       "id": "j1-e02",
@@ -234,7 +308,7 @@
       "jahr": 1,
       "modul": "j1-m0",
       "titel": "Kennenlernen in Bewegung",
-      "kurz": "Mit Bewegung, Raten und Nachfragen lernt sich die Gruppe besser kennen und merkt, wie viel sie teilt – ohne dass jemand Persönliches preisgeben muss.",
+      "kurz": "Mit Platzwechsel, Schritten nach vorn, einem Lügen-Ratespiel und Bingo lernt sich die Gruppe kennen und merkt, wie viel sie teilt – ohne dass jemand Persönliches preisgeben muss.",
       "dauer": 100,
       "ziele": [
         "entdecken Gemeinsamkeiten, ohne etwas Persönliches erklären zu müssen",
@@ -245,15 +319,16 @@
       "material": [
         "Gefühlsrad in A3 (laminiert) und eine Wäscheklammer mit Vornamen für jede Person und für die Leitung",
         "Gruppenvertrag aus Einheit 1, gut sichtbar aufgehängt",
-        "Kreppband für eine Linie am Boden (etwa 5 m)",
+        "Kreppband für eine Linie am Boden (etwa 5 m) und für drei Bodenfelder mit den Ziffern 1, 2 und 3",
         "Karteikarten und Stifte für „Zwei Wahrheiten, eine Lüge“",
         "Schülerblatt „Finde jemanden, der …“ für jede Person, dazu Klemmbretter oder feste Unterlagen",
+        "Ein weicher Ball für die Komplimente",
         "Skills-Pässe aus der Box, Stempel oder Sticker",
-        "Imbiss und Getränke (Allergien und Essensregeln vorher erfragen)"
+        "Imbiss und Getränke (Allergien und Essensregeln beachten)"
       ],
       "vorbereitung": [
-        "Stühle im Halbkreis an eine Seite des Raums stellen, die andere Hälfte bleibt frei für Bewegung",
-        "Eine gerade Linie aus Kreppband auf den Boden kleben, davor mindestens drei Schritte Platz",
+        "Stühle im Kreis, genau einer weniger als Personen (die Leitung zählt mit); der Rest des Raums bleibt frei für Bewegung",
+        "Eine gerade Linie aus Kreppband auf den Boden kleben, davor mindestens drei Schritte Platz; daneben drei Bodenfelder mit 1, 2 und 3 markieren",
         "Die Namen auf die Wäscheklammern schreiben",
         "Die Sätze für „Ein Schritt nach vorn“ mit Blick auf die Gruppe durchgehen und streichen, was für jemanden gerade heikel sein könnte"
       ],
@@ -264,52 +339,57 @@
       ],
       "ablauf": [
         {
-          "min": "0–10",
+          "min": "0–8",
           "phase": "ankommen",
           "titel": "Check-in: Gefühlsrad mit Namensklammer"
         },
         {
-          "min": "10–15",
+          "min": "8–12",
           "phase": "bruecke",
-          "titel": "Rückblick: unser Vertrag"
+          "titel": "Rückblick: Mission und Vertrag"
         },
         {
-          "min": "15–35",
-          "phase": "uebung",
+          "min": "12–20",
+          "phase": "aktiv",
+          "titel": "Platzwechsel: Alle, die …"
+        },
+        {
+          "min": "20–32",
+          "phase": "aktiv",
           "titel": "Ein Schritt nach vorn"
         },
         {
-          "min": "35–45",
-          "phase": "uebung",
-          "titel": "Zwei Wahrheiten, eine Lüge"
+          "min": "32–46",
+          "phase": "aktiv",
+          "titel": "Zwei Wahrheiten, eine Lüge – mit den Füßen raten"
         },
         {
-          "min": "45–60",
+          "min": "46–61",
           "phase": "pause",
           "titel": "Pause mit Imbiss"
         },
         {
-          "min": "60–85",
+          "min": "61–84",
           "phase": "aktiv",
           "titel": "Bingo: Finde jemanden, der …"
         },
         {
-          "min": "85–95",
+          "min": "84–93",
           "phase": "skill",
           "titel": "Skill: Komplimente geben und annehmen"
         },
         {
-          "min": "95–100",
+          "min": "93–100",
           "phase": "abschluss",
-          "titel": "Réckbléck und Skills-Pass"
+          "titel": "Abschluss: Stempel und Mission"
         }
       ],
       "schritte": [
         {
           "titel": "Check-in: Gefühlsrad mit Namensklammer",
-          "dauer": 10,
+          "dauer": 8,
           "phase": "ankommen",
-          "text": "Das Gefühlsrad liegt in der Mitte, jede Person bekommt ihre Wäscheklammer mit Namen. Reihum steckt jede Person die Klammer an das Wort, das gerade am besten passt, und sagt einen Satz dazu. Die Leitung beginnt. Die Klammern bleiben bis zum Schluss am Rad – im Réckbléck darf jede Person ihre Klammer umstecken.",
+          "text": "Das Gefühlsrad liegt in der Mitte, jede Person bekommt ihre Wäscheklammer mit Namen. Reihum steckt jede Person die Klammer an das Wort, das gerade am besten passt, und sagt einen Satz dazu. Die Leitung beginnt. Die Klammern bleiben bis zum Schluss am Rad – im Abschluss darf jede Person ihre Klammer umstecken.",
           "sagen": [
             "Steckt eure Klammer dahin, wo ihr gerade seid – nicht dahin, wo ihr gern wärt.",
             "Ein Satz reicht. Wer lieber nichts sagt, steckt nur die Klammer an."
@@ -319,23 +399,44 @@
           "blatt": "skills-gefuehlsrad"
         },
         {
-          "titel": "Rückblick: unser Vertrag",
-          "dauer": 5,
+          "titel": "Rückblick: Mission und Vertrag",
+          "dauer": 4,
           "phase": "bruecke",
-          "text": "Auf den Gruppenvertrag an der Wand zeigen und eine Person bitten, die Regel vorzulesen, die ihr am wichtigsten ist. Zwei Regeln hervorheben, die heute besonders zählen: „Weiter“ ist immer erlaubt, und wir lachen miteinander, nicht übereinander. Dann das Thema nennen: sich besser kennenlernen, in Bewegung und ohne dass jemand mehr zeigen muss, als er möchte.",
+          "text": "Nach der Mission fragen: Daumen hoch, quer oder runter – hat 5-4-3-2-1 etwas gebracht? Ein Bericht ist nicht nötig. Dann auf den Gruppenvertrag zeigen und zwei Regeln hervorheben, die heute besonders zählen: „Weiter“ ist immer erlaubt, und wir lachen miteinander, nicht übereinander. Wer letzte Woche noch nicht unterschrieben hat, kann es jetzt tun.",
           "sagen": [
-            "Welche Regel von letzter Woche ist euch hängen geblieben?",
+            "Eure Mission: Daumen hoch, quer oder runter?",
             "Heute lernt ihr euch besser kennen. Was ihr von euch zeigt, entscheidet ihr selbst."
-          ]
+          ],
+          "wennEsKippt": "Hat niemand die Mission gemacht, das gelassen nehmen: Neue Gewohnheiten brauchen mehrere Anläufe. Wer mag, nimmt sie für diese Woche noch einmal mit."
+        },
+        {
+          "titel": "Platzwechsel: Alle, die …",
+          "dauer": 8,
+          "phase": "aktiv",
+          "text": "Stuhlkreis mit einem Stuhl weniger als Personen. Wer in der Mitte steht, sagt einen Satz, der mit „Alle, die …“ beginnt und für ihn selbst stimmt. Alle, für die der Satz auch stimmt, stehen auf und suchen sich einen neuen Platz, nur nicht den direkt daneben. Wer keinen Stuhl findet, steht als Nächstes in der Mitte. Die Leitung spielt mit, beginnt und gibt mit harmlosen Sätzen die Richtung vor. Nach etwa zehn Runden ist Schluss.",
+          "sagen": [
+            "Alle, die heute schon Musik gehört haben.",
+            "Nur Sätze über Essen, Hobbys und Gewohnheiten – nichts, was jemanden in Verlegenheit bringt.",
+            "Gehen statt rennen, und niemand wird vom Stuhl geschoben."
+          ],
+          "punkte": [
+            "Alle, die lieber Hunde als Katzen mögen.",
+            "Alle, die heute mit dem Bus gekommen sind.",
+            "Alle, die Ananas auf der Pizza in Ordnung finden.",
+            "Alle, die schon mal einen Wecker überhört haben.",
+            "Alle, die mehr als zwei Sprachen sprechen."
+          ],
+          "tipp": "Fällt der Person in der Mitte nichts ein, darf sie „Platzwechsel“ rufen: Dann wechseln alle.",
+          "wennEsKippt": "Zielt ein Satz auf eine Person oder wird er zu privat, sofort stoppen und die Regel wiederholen: nur Sätze, die niemanden bloßstellen. Wird gerempelt, eine Runde in Zeitlupe spielen. Bei weniger als fünf Personen im Stehen spielen: Für wen der Satz stimmt, der geht in die Mitte und klatscht mit den anderen ab."
         },
         {
           "titel": "Ein Schritt nach vorn",
-          "dauer": 20,
-          "phase": "uebung",
-          "text": "Alle stehen nebeneinander auf der Linie. Die Leitung liest die Sätze langsam vor, jeweils mit dem Anfang „Mach einen Schritt nach vorn, wenn du …“. Wer sich angesprochen fühlt, tritt vor, schaut kurz, wer noch vorne steht, und geht zurück; niemand erklärt oder kommentiert etwas. Vorher klar sagen: Stehenbleiben ist immer erlaubt und heißt nicht Nein – so weiß niemand, was für wen stimmt. Nach dem letzten Satz im Kreis hinsetzen und auswerten.",
+          "dauer": 12,
+          "phase": "aktiv",
+          "text": "Alle stehen nebeneinander auf der Linie. Die Leitung liest die Sätze langsam vor, jeweils mit dem Anfang „Mach einen Schritt nach vorn, wenn du …“. Wer sich angesprochen fühlt, tritt vor, schaut kurz, wer noch vorne steht, und geht zurück; niemand erklärt oder kommentiert etwas. Vorher klar sagen: Stehenbleiben ist immer erlaubt und heißt nicht Nein – so weiß niemand, was für wen stimmt. Bei den letzten vier Sätzen schätzt die Gruppe vorher mit den Fingern, wie viele vortreten werden; meist sind es mehr als gedacht. Danach kurz im Stehen auswerten.",
           "sagen": [
             "Stehenbleiben ist immer okay. Niemand weiß, ob ein Satz für euch stimmt, und niemand fragt nach.",
-            "Was ist euch aufgefallen? Wie war es zu sehen, dass andere auch vorne stehen?",
+            "Schätzt mit den Fingern: Wie viele treten gleich vor?",
             "Bei welchem Satz hättet ihr gedacht, dass ihr allein vorne steht?"
           ],
           "punkte": [
@@ -356,13 +457,14 @@
           "wennEsKippt": "Springen alle bei jedem Satz albern nach vorn, das Tempo herausnehmen: Satz vorlesen, fünf Sekunden Stille, erst dann bewegen. Kommentiert jemand, wer vorne steht, sofort und freundlich an die Regel erinnern: Hier wird geschaut, nicht bewertet."
         },
         {
-          "titel": "Zwei Wahrheiten, eine Lüge",
-          "dauer": 10,
-          "phase": "uebung",
-          "text": "Jede Person schreibt drei kurze Aussagen über sich auf eine Karte: zwei stimmen, eine ist erfunden. Reihum liest jede Person vor, die anderen zeigen auf ein Zeichen mit einem, zwei oder drei Fingern, welche Aussage sie für erfunden halten, dann wird aufgelöst. Bei mehr als sechs Personen in zwei Gruppen parallel spielen, damit die Zeit reicht. Die Leitung beginnt mit einem eigenen Beispiel wie diesem:",
+          "titel": "Zwei Wahrheiten, eine Lüge – mit den Füßen raten",
+          "dauer": 14,
+          "phase": "aktiv",
+          "text": "Jede Person schreibt drei kurze Aussagen über sich auf eine Karte: zwei stimmen, eine ist erfunden. Dann liest reihum eine Person ihre Karte vor, und alle anderen stellen sich auf das Bodenfeld 1, 2 oder 3 – auf die Aussage, die sie für gelogen halten. Bis zum Signal dürfen sie noch wechseln, dann wird aufgelöst. Steht mehr als die Hälfte richtig, bekommt die Gruppe den Punkt, sonst die Person, die gelogen hat; die Leitung führt die Strichliste an der Tafel. Die Leitung beginnt mit einem eigenen Beispiel wie diesem:",
           "sagen": [
             "Nehmt Dinge, die man euch nicht ansieht: ein komisches Talent, ein seltsames Lieblingsessen, ein Missgeschick.",
-            "Die Lüge darf ruhig glaubwürdig sein – genau das macht es schwer."
+            "Die Lüge darf ruhig glaubwürdig sein – genau das macht es schwer.",
+            "Letzte Chance zu wechseln. Drei, zwei, eins – stehen bleiben."
           ],
           "punkte": [
             "Ich kann ein Lied rückwärts singen.",
@@ -370,7 +472,7 @@
             "Ich habe als Kind einen Regenwurm gegessen, weil mich jemand herausgefordert hat."
           ],
           "tipp": "Stichworte an der Tafel helfen allen, denen spontan nichts einfällt: Essen, Missgeschicke, versteckte Talente, Rekorde, Sammlungen.",
-          "wennEsKippt": "Schreibt jemand etwas über andere oder etwas Verletzendes, die Karte freundlich zurückgeben: Hier geht es nur um dich. Wer gar nicht mitmachen will, wird Schiedsrichter und zählt, wer die meisten Lügen erkannt hat."
+          "wennEsKippt": "Schreibt jemand etwas über andere oder etwas Verletzendes, die Karte freundlich zurückgeben: Hier geht es nur um dich. Wer nicht vorlesen will, gibt seine Karte der Leitung oder führt die Strichliste. Bei mehr als sechs Personen liest nur vor, wer möchte, damit die Zeit reicht."
         },
         {
           "titel": "Pause mit Imbiss",
@@ -380,42 +482,44 @@
         },
         {
           "titel": "Bingo: Finde jemanden, der …",
-          "dauer": 25,
+          "dauer": 23,
           "phase": "aktiv",
-          "text": "Das Blatt austeilen und die Regeln erklären: herumgehen, fragen, und bei einem Ja schreibt die Person ihren Namen ins Feld. Jeder Name darf höchstens zweimal vorkommen, in Gruppen unter fünf Personen dreimal; die Leitung zählt als Person mit. Bei jedem Feld wird einmal nachgefragt – so wird aus der Unterschrift ein kurzes Gespräch. Wer alle Felder voll hat, ruft „Bingo“ und hilft danach anderen. Nach etwa 15 Minuten im Kreis einige Felder auflösen und Aufgabe 2 ausfüllen lassen.",
+          "text": "Das Blatt austeilen und die Regeln erklären: herumgehen, fragen, und bei einem Ja schreibt die Person ihren Namen ins Feld. Jeder Name darf höchstens zweimal vorkommen, in Gruppen unter fünf Personen dreimal; die Leitung spielt mit. Bei jedem Feld wird einmal nachgefragt – so wird aus dem Namen ein kurzes Gespräch. Vier Felder nebeneinander heißen „Bingo“, danach geht es weiter bis zum vollen Blatt; wer fertig ist, hilft anderen. Nach etwa 15 Minuten im Kreis einige Felder auflösen und Aufgabe 2 ausfüllen lassen.",
           "sagen": [
             "Bei „kocht gern“ fragt ihr nach: Was denn? Bei Musik: Welche? Die Nachfrage ist wichtiger als der Name.",
+            "Wer steht bei euch im Feld mit dem Talent, das man nicht sieht – und welches ist es?",
             "Was hat euch überrascht? Mit wem habt ihr etwas gemeinsam, das ihr nicht erwartet hättet?"
           ],
           "tipp": "Bei nur zwei oder drei Jugendlichen dürfen Namen beliebig oft vorkommen, und die Leitung spielt mit. Bei wenig Energie im Sitzen spielen: Die Blätter wandern reihum, und jede Person trägt sich dort ein, wo es für sie stimmt.",
-          "wennEsKippt": "Sammeln alle nur Unterschriften, kurz stoppen und die Nachfrage vormachen: Die Leitung fragt eine Person vor allen und hört wirklich zu. Bleibt jemand am Rand stehen, geht die Leitung mit ihm als Tandem zu den anderen.",
+          "wennEsKippt": "Sammeln alle nur Namen, kurz stoppen und die Nachfrage vormachen: Die Leitung fragt eine Person vor allen und hört wirklich zu. Bleibt jemand am Rand stehen, geht die Leitung mit ihm als Tandem zu den anderen.",
           "blatt": "skills-finde-jemanden"
         },
         {
           "titel": "Skill: Komplimente geben und annehmen",
-          "dauer": 10,
+          "dauer": 9,
           "phase": "skill",
-          "text": "Im Kreis sitzen. Jede Person sagt der Person rechts neben sich, was ihr heute an ihr aufgefallen ist – etwas, das sie getan hat, nicht wie sie aussieht. Die angesprochene Person antwortet nur mit „Danke“ und redet das Kompliment nicht klein; erst dann ist sie selbst dran. Zum Schluss kurz besprechen, was schwerer war: geben oder annehmen. Dann benennen: Ein Kompliment anzunehmen, ist ein Skill, den man üben kann.",
+          "text": "Im Kreis stehen. Ein weicher Ball wandert reihum nach rechts: Wer ihn weitergibt, sagt der Person, was ihm heute an ihr aufgefallen ist – etwas, das sie getan hat, nicht wie sie aussieht. Die angesprochene Person antwortet nur mit „Danke“ und redet das Kompliment nicht klein; erst dann gibt sie den Ball weiter. Zum Schluss kurz besprechen, was schwerer war: geben oder annehmen. Dann benennen: Ein Kompliment anzunehmen, ist ein Skill, den man üben kann.",
           "sagen": [
-            "Sagt, was die Person gemacht hat: Du hast beim Bingo richtig nachgefragt. Du hast dich beim ersten Satz getraut vorzutreten.",
+            "Sagt, was die Person gemacht hat: Du hast beim Bingo richtig nachgefragt. Du hast uns mit deiner Lüge alle reingelegt.",
             "Wer ein Kompliment bekommt, sagt nur: Danke. Kein „Ach, war doch nichts“."
           ],
           "tipp": "Zwei, drei Beispiele an die Tafel schreiben: „Du hast gut zugehört.“ „Du hast lustig erzählt.“ „Du hast anderen geholfen.“ Aussehen und Kleidung bleiben außen vor.",
           "wennEsKippt": "Kommt nur ein „Du bist nett“ oder etwas Ironisches, freundlich nachfragen: Woran hast du das heute gemerkt? Fällt jemandem gar nichts ein, hilft die Leitung mit einer Beobachtung aus der Stunde, statt die Person hängen zu lassen."
         },
         {
-          "titel": "Réckbléck und Skills-Pass",
-          "dauer": 5,
+          "titel": "Abschluss: Stempel und Mission",
+          "dauer": 7,
           "phase": "abschluss",
-          "text": "Jede Person schaut auf ihre Klammer am Gefühlsrad und steckt sie um, wenn sich seit dem Anfang etwas verändert hat; wer mag, sagt ein Wort dazu. Dann trägt jede Person einen Satz in den Skills-Pass ein und bekommt den Stempel. Pässe und Klammern kommen zurück in die Box.",
+          "text": "Jede Person schaut auf ihre Klammer am Gefühlsrad und steckt sie um, wenn sich seit dem Anfang etwas verändert hat; wer mag, sagt ein Wort dazu. Dann gibt es den Stempel in den Skills-Pass, und „Komplimente annehmen“ kommt in die Skills-Sammlung – in die Reihe, die für jede Person stimmt. Die Leitung liest die Mission der Woche vor und erinnert an feste Schuhe für das nächste Mal. Pässe, Blätter und Klammern kommen zurück in die Box.",
           "sagen": [
             "Stimmt eure Klammer noch – oder hat sich seit dem Anfang etwas verändert?",
-            "Für den Pass: Was hast du heute über jemanden erfahren? Oder: Wie war es, ein Kompliment anzunehmen?"
+            "Eure Mission: jemandem, den ihr kaum kennt, eine Frage stellen und einmal nachhaken. Nächstes Mal reicht ein Daumen."
           ],
           "tipp": "Wandernde Klammern nur wahrnehmen, nicht deuten. Dass sich Gefühle innerhalb von 100 Minuten ändern, greift der Kurs später wieder auf.",
           "blatt": "skills-pass"
         }
       ],
+      "mission": "Stellt diese Woche jemandem, den ihr noch kaum kennt, eine Frage – und hakt einmal nach. Klasse, Bus, Verein: egal wo. Nächstes Mal reicht ein Daumen.",
       "bruecke": "Nächstes Mal sind wir draußen und arbeiten als Team – zieht Schuhe und Kleidung an, die dreckig werden dürfen.",
       "hintergrund": "Zu Beginn prüfen die Mitglieder einer Gruppe vor allem, ob sie dazugehören und wie sicher der Rahmen ist; Tuckman (1965) beschreibt diese erste Phase als Orientierung („Forming“). Übungen mit wenig Risiko, viel Bewegung und klaren Regeln helfen, weil sie Kontakt ermöglichen, ohne Offenheit zu erzwingen. Wer sieht, dass andere Ähnliches erlebt haben, fühlt sich weniger allein – Yalom und Leszcz (2005) zählen diese Erfahrung zu den Wirkfaktoren von Gruppen. Das stärkt die Verbundenheit, eines der drei psychologischen Grundbedürfnisse neben Autonomie und Kompetenz (Deci & Ryan, 2000). Deshalb sind die Sätze bewusst harmlos gewählt, und Stehenbleiben bedeutet nicht Nein. Die Nachfrage-Regel im Bingo übt beiläufig Interesse und Zuhören. Ein Kompliment anzunehmen, ohne es abzuwehren, fällt vielen Jugendlichen schwer – es wird hier als erster kleiner Skill geübt.",
       "quellen": [
@@ -423,7 +527,7 @@
         "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
         "Yalom, I. D. & Leszcz, M. (2005). The Theory and Practice of Group Psychotherapy (5th ed.). New York: Basic Books."
       ],
-      "achtung": "Auch harmlose Sätze können etwas berühren. Wer bei einem Satz sichtbar betroffen reagiert, wird nicht vor der Gruppe angesprochen, sondern später unauffällig gefragt, wie es ihm geht. Bei den Komplimenten Bemerkungen über Körper und Aussehen sofort umlenken. Erzählt jemand von Gewalt, Missbrauch, Selbstverletzung oder Suizidgedanken, wird das nicht in der Gruppe vertieft, sondern zeitnah im Einzelgespräch aufgegriffen und nach dem internen Schutzkonzept weitergegeben; die zuständige Leitung (Responsable) wird informiert."
+      "achtung": "Auch harmlose Sätze können etwas berühren. Wer bei einem Satz sichtbar betroffen reagiert, wird nicht vor der Gruppe angesprochen, sondern später unauffällig gefragt, wie es ihm geht. Beim Platzwechsel und beim Lügen-Raten geht es nur um Sätze über sich selbst; wer nicht in der Mitte stehen oder vorlesen will, bekommt eine andere Rolle. Bei den Komplimenten Bemerkungen über Körper und Aussehen sofort umlenken. Erzählt jemand von Gewalt, Missbrauch, Selbstverletzung oder Suizidgedanken, wird das nicht in der Gruppe vertieft, sondern zeitnah im Einzelgespräch aufgegriffen und nach dem internen Schutzkonzept weitergegeben; die zuständige Leitung (Responsable) wird informiert."
     },
     {
       "id": "j1-e03",
@@ -431,7 +535,7 @@
       "jahr": 1,
       "modul": "j1-m0",
       "titel": "Wir als Team",
-      "kurz": "Draußen löst die Gruppe gemeinsam Aufgaben, vertraut sich beim Blindführen gegenseitig und hält fest, was sie als Team braucht.",
+      "kurz": "Draußen sammelt die Gruppe Punkte, die doppelt zählen, wenn alle mitmachen, lotst sich blind durch Parcours und zum Tor und hält fest, was sie als Team braucht.",
       "dauer": 100,
       "ziele": [
         "lösen gemeinsam Aufgaben, bei denen jede Person gebraucht wird",
@@ -441,10 +545,10 @@
       ],
       "material": [
         "Gefühlsrad in A3 (laminiert) und eine Unterlage, um es draußen auf den Boden zu legen",
-        "Schülerblatt „Natur-Challenges“ auf einem Klemmbrett (ein bis zwei Exemplare), Stifte",
+        "Schülerblatt „Natur-Challenges“ auf einem Klemmbrett (ein Exemplar je Team), Stifte, Stoppuhr oder Handy-Timer",
         "Handy oder Kamera der Leitung für Fotos",
         "Für jede Person eine eigene, saubere Augenbinde (Tuch oder Schlafmaske)",
-        "Je Paar ein weicher Ball oder Klingelball und zwei Hütchen oder Rucksäcke als Tor",
+        "Fünf Hütchen für den Slalom, je Paar ein weicher Ball oder Klingelball und zwei Hütchen oder Rucksäcke als Tor",
         "Pfeife oder anderes Sammelsignal",
         "Erste-Hilfe-Tasche, Notfallnummern, geladenes Handy der Leitung",
         "Imbiss und Getränke zum Mitnehmen (Allergien beachten), Müllbeutel, Sitzunterlagen",
@@ -455,7 +559,7 @@
       "vorbereitung": [
         "Das Gelände vorher ablaufen: Grenzen festlegen, Stolperstellen, Wasser, Straßen und Abhänge ausschließen",
         "Einen Treffpunkt bestimmen, von dem aus alle in Sicht- und Rufweite bleiben",
-        "Für Blindfußball eine ebene Wiese ohne Steine und Löcher suchen; bei Regen die Turnhalle oder einen großen Raum reservieren",
+        "Für Parcours und Blindfußball eine ebene Wiese ohne Steine und Löcher suchen und den Slalom aus fünf Hütchen aufstellen; bei Regen die Turnhalle oder einen großen Raum reservieren",
         "Die Jugendlichen am Ende von Einheit 2 an feste Schuhe und wetterfeste Kleidung erinnern"
       ],
       "blaetter": [
@@ -466,50 +570,50 @@
       ],
       "ablauf": [
         {
-          "min": "0–10",
+          "min": "0–8",
           "phase": "ankommen",
           "titel": "Check-in draußen: mein inneres Wetter"
         },
         {
-          "min": "10–15",
+          "min": "8–13",
           "phase": "bruecke",
-          "titel": "Rückblick und Regeln für draußen"
+          "titel": "Rückblick, Mission und Regeln für draußen"
         },
         {
-          "min": "15–45",
+          "min": "13–40",
           "phase": "aktiv",
           "titel": "Natur-Challenges im Team"
         },
         {
-          "min": "45–60",
+          "min": "40–55",
           "phase": "pause",
           "titel": "Imbiss draußen"
         },
         {
-          "min": "60–80",
+          "min": "55–77",
           "phase": "aktiv",
-          "titel": "Blind führen und Blindfußball"
+          "titel": "Blind-Parcours und Blindfußball"
         },
         {
-          "min": "80–90",
+          "min": "77–87",
           "phase": "uebung",
           "titel": "Was braucht unsere Gruppe?"
         },
         {
-          "min": "90–95",
+          "min": "87–93",
           "phase": "skill",
           "titel": "Skill: Gemeinsam atmen"
         },
         {
-          "min": "95–100",
+          "min": "93–100",
           "phase": "abschluss",
-          "titel": "Réckbléck und Skills-Pass"
+          "titel": "Abschluss: Stempel und Mission"
         }
       ],
       "schritte": [
         {
           "titel": "Check-in draußen: mein inneres Wetter",
-          "dauer": 10,
+          "dauer": 8,
           "phase": "ankommen",
           "text": "Am Treffpunkt im Kreis stehen, das Gefühlsrad liegt auf einer Unterlage in der Mitte. Jede Person beschreibt ihr inneres Wetter mit einem Satz – sonnig, bewölkt, Nebel, Gewitter, Sturm – und nennt, wenn sie mag, das passende Wort aus dem Rad. Die Leitung beginnt. Bei Regen findet der Check-in drinnen statt.",
           "sagen": [
@@ -521,27 +625,30 @@
           "blatt": "skills-gefuehlsrad"
         },
         {
-          "titel": "Rückblick und Regeln für draußen",
+          "titel": "Rückblick, Mission und Regeln für draußen",
           "dauer": 5,
           "phase": "bruecke",
-          "text": "Kurz an Einheit 2 anknüpfen: Wer weiß noch etwas, das er über jemanden erfahren hat? Dann das Thema nennen und die Regeln für draußen klären: die Grenzen des Geländes zeigen, das Sammelsignal einmal ausprobieren und das Stopp-Recht wiederholen. Wer bei einer Übung aussetzt, übernimmt eine andere Rolle und bleibt dabei.",
+          "text": "Nach der Mission fragen: Daumen hoch, wer diese Woche jemandem eine Frage gestellt hat – ein Bericht ist nicht nötig. Dann das Thema nennen und die Regeln für draußen klären: die Grenzen des Geländes zeigen und das Stopp-Recht wiederholen. Das Sammelsignal wird als kleines Spiel geübt: Alle verteilen sich, beim Pfiff zählt die Leitung laut, bis die ganze Gruppe am Treffpunkt steht. Wer bei einer Übung aussetzt, übernimmt eine andere Rolle und bleibt dabei.",
           "sagen": [
+            "Eure Mission: Daumen hoch, wer diese Woche jemandem eine Frage gestellt hat.",
             "Heute gewinnt niemand gegen jemanden. Entweder ihr schafft es zusammen oder gar nicht.",
-            "Bei diesem Pfiff kommen alle sofort hierher. Und wer Stopp sagt, wird ernst genommen – immer."
+            "Wer Stopp sagt, wird ernst genommen – immer."
           ],
           "tipp": "Ein Signal wählen, das man auch bei Wind hört – Pfeife oder dreimal lautes Klatschen. Was einmal geübt wurde, klappt später auch im Eifer des Spiels."
         },
         {
           "titel": "Natur-Challenges im Team",
-          "dauer": 30,
+          "dauer": 27,
           "phase": "aktiv",
-          "text": "Die Gruppe bekommt das Blatt auf einem Klemmbrett und hat 20 Minuten Zeit, gemeinsam so viele Aufgaben wie möglich zu lösen. Sie entscheidet selbst, womit sie anfängt und wer was übernimmt; die Leitung hält sich zurück und beobachtet, wie Entscheidungen fallen. In der Spalte „alle dabei“ wird nur angekreuzt, wenn jede einzelne Person etwas beigetragen hat. Danach das Kunstwerk gemeinsam anschauen, benennen und fotografieren – nur das Kunstwerk, keine Gesichter. Zum Schluss in zwei Minuten auf dem Blatt festhalten, was dem Team geholfen hat.",
+          "text": "Die Gruppe bekommt das Blatt auf einem Klemmbrett und wettet zuerst, wie viele Punkte sie in 20 Minuten schafft. Jede gelöste Aufgabe zählt einen Punkt; zwei Punkte gibt es nur, wenn jede einzelne Person etwas beigetragen hat. Die Gruppe trägt ihre Punkte selbst in die Felder ein und entscheidet, womit sie anfängt und wer was übernimmt. Die Leitung stoppt die Zeit, fotografiert und beobachtet, wie Entscheidungen fallen; nach zehn Minuten sagt sie den Zwischenstand an. Am Ende Punkte zählen, mit der Wette vergleichen, das Kunstwerk anschauen und fotografieren – nur das Kunstwerk, keine Gesichter – und die zwei Sätze auf dem Blatt ergänzen. Ab sieben Personen spielen zwei Teams mit je einem Blatt, und die Punkte werden zusammengezählt.",
           "sagen": [
-            "Es zählt nicht, wie viele Aufgaben ihr schafft, sondern ob alle mitmachen. Dafür gibt es die Spalte „alle dabei“.",
+            "Wettet: Wie viele Punkte schafft ihr? 24 sind möglich.",
+            "Zwei Punkte gibt es nur, wenn wirklich alle etwas beigetragen haben. Das entscheidet ihr ehrlich selbst.",
+            "Halbzeit. In wie vielen Feldern steht bei euch eine 2?",
             "Wer hatte eine Idee, die ihr umgesetzt habt?"
           ],
-          "tipp": "Bei Regen dieselben Aufgaben drinnen lösen: Raum, Flur und Turnhalle sind das Gelände, die Materialkiste ersetzt Naturmaterial und Steine. Bei wenig Energie nur die ruhigen Aufgaben wählen: Oberflächen, Geräusch, eine Minute Stille.",
-          "wennEsKippt": "Übernehmen ein oder zwei alles, nach zehn Minuten kurz stoppen und auf die Spalte „alle dabei“ zeigen: Wie viele Kreuze habt ihr dort? Zerfällt die Gruppe in Grüppchen, eine Aufgabe ansagen, für die alle gebraucht werden – etwa die Minute Stille.",
+          "tipp": "Bei Regen dieselben Aufgaben drinnen lösen: Raum, Flur und Turnhalle sind das Gelände, die Materialkiste ersetzt Naturmaterial und Steine. Bei wenig Energie nur die ruhigen Felder spielen: Oberflächen, Geräusch, eine Minute Stille.",
+          "wennEsKippt": "Übernehmen ein oder zwei alles, beim Zwischenstand auf die Felder zeigen: Wie viele Zweien habt ihr? Zerfällt die Gruppe in Grüppchen, eine Aufgabe ansagen, für die alle gebraucht werden – etwa die Minute Stille. Streitet die Gruppe, ob wirklich alle dabei waren, gilt die vorsichtigere Zahl: ein Punkt.",
           "blatt": "skills-natur-challenges"
         },
         {
@@ -551,33 +658,34 @@
           "text": "Gemeinsam draußen essen, auf Sitzunterlagen oder einer Bank. Süßes und Getränke wegen Wespen abdecken, den Müll wieder mitnehmen. Die Leitung isst mit und lässt das Thema ruhen."
         },
         {
-          "titel": "Blind führen und Blindfußball",
-          "dauer": 20,
+          "titel": "Blind-Parcours und Blindfußball",
+          "dauer": 22,
           "phase": "aktiv",
-          "text": "Zuerst Blind führen zu zweit: Eine Person schließt die Augen oder trägt eine Augenbinde, die andere führt sie fünf Minuten lang nur mit der Stimme über das Gelände, dann wird getauscht. In der zweiten Runde darf die Führung mit einer Hand an Schulter oder Ellbogen helfen, aber nur, wenn die geführte Person das vorher erlaubt hat. Danach Blindfußball: Jedes Paar hat einen Ball und ein Tor aus zwei Hütchen; eine Person spielt mit geschlossenen Augen, die andere steht hinter dem Tor und lotst nur mit der Stimme. Gegangen wird, nicht gerannt, und zwischen den Paaren bleiben mindestens fünf Meter Platz. Vorher die Regeln vorlesen:",
+          "text": "Zu zweit: Eine Person geht mit geschlossenen Augen oder Augenbinde, die andere lotst nur mit der Stimme. Runde 1, der Parcours: Die blinde Person wird durch den Slalom aus fünf Hütchen bis zum Ball gelotst; jedes Hütchen, das stehen bleibt, zählt einen Punkt für das Paar, dann wird getauscht. Runde 2, Blindfußball: Die blinde Person rollt den Ball ins Tor, die andere steht hinter dem Tor und ruft sie heran. Alle Tore der Gruppe werden zusammengezählt – Ziel sind zehn Tore in fünf Minuten, dann Rollentausch. Gegangen wird, nicht gerannt, und zwischen den Paaren bleiben mindestens fünf Meter Platz. Vorher die Regeln vorlesen:",
           "sagen": [
-            "Ihr entscheidet selbst: Augenbinde, Augen zu oder heute nur führen. Alles ist in Ordnung.",
+            "Ihr entscheidet selbst: Augenbinde, Augen zu oder heute nur lotsen. Alles ist in Ordnung.",
+            "Welche Ansage hilft mehr: „links“ – oder „zwei kleine Schritte nach links“?",
             "Wie war es, geführt zu werden? Und wie war es, für jemanden verantwortlich zu sein?"
           ],
           "punkte": [
             "Stopp! heißt: Die geführte Person bleibt sofort stehen und öffnet die Augen.",
-            "Wer führt, trägt die Verantwortung: langsam, ehrlich, keine Streiche.",
+            "Wer lotst, trägt die Verantwortung: langsam, ehrlich, keine Streiche.",
             "Berührt wird nur an Schulter oder Ellbogen und nur nach Erlaubnis.",
-            "Wer keine Augenbinde möchte, schließt die Augen – oder führt nur.",
+            "Wer keine Augenbinde möchte, schließt die Augen – oder lotst nur.",
             "Beim Blindfußball wird gerollt und gepasst, nicht geschossen."
           ],
-          "tipp": "Bei ungerader Zahl führt die Leitung selbst, oder ein Dreierteam bekommt eine Beobachterin, die auf Hindernisse achtet. Bei Regen in der Turnhalle spielen – dort ist es sogar sicherer.",
-          "wennEsKippt": "Führt jemand absichtlich gegen Hindernisse oder macht sich über die geführte Person lustig, das Paar sofort stoppen und ruhig sagen: Wer führt, trägt die Verantwortung. Beim zweiten Mal übernimmt die Person eine Beobachterrolle. Reagiert jemand mit Panik oder Wut auf das Nicht-Sehen, sofort Augen auf, hinsetzen lassen und später unter vier Augen nachfragen."
+          "tipp": "Bei ungerader Zahl lotst die Leitung selbst, oder ein Dreierteam bekommt eine Beobachterin, die auf Hindernisse achtet. Bei Regen in der Turnhalle spielen – dort ist es sogar sicherer.",
+          "wennEsKippt": "Lotst jemand absichtlich gegen Hindernisse oder macht sich über die geführte Person lustig, das Paar sofort stoppen und ruhig sagen: Wer lotst, trägt die Verantwortung. Beim zweiten Mal übernimmt die Person eine Beobachterrolle. Reagiert jemand mit Panik oder Wut auf das Nicht-Sehen, sofort Augen auf, hinsetzen lassen und später unter vier Augen nachfragen."
         },
         {
           "titel": "Was braucht unsere Gruppe?",
           "dauer": 10,
           "phase": "uebung",
-          "text": "Zurück im Raum im Kreis sitzen, der Gruppenvertrag hängt sichtbar. Die Erfahrungen des Tages mit drei Fragen auswerten: erst das Vertrauen beim Führen, dann die Zusammenarbeit bei den Challenges, zuletzt die Frage an die ganze Gruppe. Die Antworten auf die letzte Frage notieren. Was allen wichtig ist und im Vertrag noch fehlt, wird in der Sprache der Gruppe ergänzt und von allen abgenickt.",
+          "text": "Zurück im Raum im Kreis sitzen, der Gruppenvertrag hängt sichtbar. Die Leitung liest vom Blatt vor, was dem Team geholfen hat und was schwierig war, und fragt nach dem Lotsen: Was hat Vertrauen leichter gemacht? Dann die Frage an alle: Was davon soll ab jetzt für uns gelten? Jede Person nennt einen Vorschlag oder sagt „weiter“; über die Vorschläge wird auf drei mit dem Daumen abgestimmt. Was die meisten Daumen bekommt und im Vertrag noch fehlt, schreibt eine Person in der Sprache der Gruppe unter „Später dazugekommen“ – mit Datum.",
           "sagen": [
-            "Wie war es, jemandem zu vertrauen, den ihr noch nicht lange kennt?",
             "Was hat euch heute als Team geholfen – und was hat gestört?",
-            "Was braucht unsere Gruppe, damit sich alle hier wohlfühlen?"
+            "Wie war es, jemandem zu vertrauen, den ihr noch nicht lange kennt?",
+            "Was davon soll in unserem Vertrag stehen? Auf drei: Daumen."
           ],
           "tipp": "Nur ergänzen, was neu ist. Ein Vertrag, der wächst, zeigt: Die Regeln gehören der Gruppe.",
           "wennEsKippt": "Kommt nur „War gut“ oder Schweigen, konkreter fragen: Wer hat heute etwas getan, das dem Team geholfen hat? Über andere Gutes zu sagen, fällt oft leichter als über die Gruppe als Ganzes.",
@@ -585,9 +693,9 @@
         },
         {
           "titel": "Skill: Gemeinsam atmen",
-          "dauer": 5,
+          "dauer": 6,
           "phase": "skill",
-          "text": "Im Kreis sitzen, beide Füße auf dem Boden. Die Leitung gibt den Rhythmus vor – vier Sekunden ein, vier Sekunden aus – und zählt anfangs leise mit. Alle versuchen, im gleichen Takt zu atmen. Nach etwa einer Minute übernimmt eine freiwillige Person das Zählen, danach eine zweite. Zum Schluss kurz nachspüren.",
+          "text": "Im Kreis stehen, beide Füße fest auf dem Boden. Die Leitung gibt den Rhythmus vor – vier Sekunden ein, vier Sekunden aus – und zählt anfangs leise mit. Alle versuchen, im gleichen Takt zu atmen. Nach etwa einer Minute übernimmt eine freiwillige Person das Zählen, danach eine zweite. Zum Schluss kurz nachspüren.",
           "sagen": [
             "Ein – zwei – drei – vier. Aus – zwei – drei – vier.",
             "Wie fühlt es sich an, wenn die ganze Gruppe im selben Takt atmet?"
@@ -596,17 +704,18 @@
           "wennEsKippt": "Kichern gehört beim ersten Mal dazu. Nicht ermahnen, einfach ruhig weiterzählen – meist wird es nach drei, vier Atemzügen still."
         },
         {
-          "titel": "Réckbléck und Skills-Pass",
-          "dauer": 5,
+          "titel": "Abschluss: Stempel und Mission",
+          "dauer": 7,
           "phase": "abschluss",
-          "text": "Daumenbarometer: Auf ein Zeichen zeigt jede Person mit dem Daumen, wie gut die Gruppe heute als Team funktioniert hat – nach oben, zur Seite oder nach unten. Wer mag, sagt einen Satz dazu. Danach trägt jede Person einen Satz in den Skills-Pass ein und bekommt den Stempel.",
+          "text": "Daumenbarometer: Auf ein Zeichen zeigt jede Person mit dem Daumen, wie gut die Gruppe heute als Team funktioniert hat – nach oben, zur Seite oder nach unten. Wer mag, sagt, ob sich das innere Wetter seit dem Anfang verändert hat. Dann gibt es den Stempel in den Skills-Pass, und „Gemeinsam atmen“ kommt in die Skills-Sammlung. Die Leitung liest die Mission der Woche vom Blatt vor. Die Pässe kommen zurück in die Box.",
           "sagen": [
             "Daumen: Wie gut waren wir heute als Team?",
-            "Für den Pass: Was hat dir geholfen, jemandem zu vertrauen – oder was hättest du dafür gebraucht?"
+            "Eure Mission: Achtet einmal in einer Gruppe darauf, was ihr selbst braucht, damit es euch dort gut geht. Merkt euch ein Wort – ihr braucht es nächstes Mal."
           ],
           "blatt": "skills-pass"
         }
       ],
+      "mission": "Achtet diese Woche einmal in einer Gruppe – Klasse, Verein, Bus – darauf: Was braucht ihr selbst, damit es euch dort gut geht? Merkt euch ein Wort dafür. Ihr braucht es nächstes Mal.",
       "bruecke": "Ihr seid jetzt als Gruppe gestartet. Ab nächster Woche schaut jede und jeder auf sich selbst: Wer bin ich eigentlich – und was brauche ich?",
       "hintergrund": "Zusammenhalt entsteht, wenn eine Gruppe Aufgaben löst, bei denen jede Person gebraucht wird. Nach Tuckman (1965) bilden Gruppen ihre Normen und Rollen erst, nachdem sie sich kennengelernt und auch aneinander gerieben haben; die Auswertung am Ende macht diesen Schritt sichtbar und fließt in den Gruppenvertrag. Aufenthalte in der Natur entlasten die gerichtete Aufmerksamkeit und wirken erholsam (Kaplan, 1995) – ein guter Rahmen für Jugendliche, denen langes Sitzen schwerfällt. Beim Blindführen wird Vertrauen körperlich erlebbar, und das Stopp-Recht macht die Übung zugleich zu einer ersten Erfahrung mit eigenen Grenzen. Langsames Atmen geht mit mehr Entspannung und weniger Erregung einher (Zaccaro et al., 2018); gemeinsam geübt, beendet es die aktive Einheit ruhig.",
       "quellen": [
