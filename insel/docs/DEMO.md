@@ -1,0 +1,247 @@
+# LUMO – Demo „Hafen-Dorf“ (Stand: Demo-Woche)
+
+> **PFLICHT für alle Agenten, die Story, Texte oder Dialoge schreiben, prüfen oder kritisieren:** zuerst
+> `docs/LEITPLANKE-LEHRKRAFT.md` lesen (Verständlichkeit für die Schüler, ihre Problematik im Vordergrund – geht vor
+> „nicht zu einfach“).
+
+Kurzanleitung für die Lehrkraft. Die Demo umfasst das Modul 0 „Ankommen“: die Ankunft und die drei Hafen-Quests.
+Alles läuft offline in einer einzigen HTML-Datei, ohne Konten, ohne Namen, ohne Netz.
+
+## Öffnen
+- Datei **`dist/index.html`** auf das iPad (Safari) oder den PC kopieren und doppelt antippen bzw. öffnen.
+  `dist/lumo-vorschau.html` ist dieselbe Datei mit anderem Namen (für Vorschau-Links).
+- Erster Start: kurzes Intro (antippen überspringt), dann das **Stil-Studio** (Avatar in 1–2 Minuten, „Fertig“ reicht).
+- Der Spielstand liegt nur auf dem Gerät (Browser-Speicher). Beim nächsten Öffnen geht es an derselben Stelle weiter
+  („Weiter spielen“). Nach jeder fertigen Quest wird automatisch gespeichert, sonst alle 60 Sekunden.
+- Wichtig für die Klasse: **jedes Gerät hat seinen eigenen Spielstand.** Wer am selben iPad spielt, spielt denselben Stand.
+  **Neu anfangen:** Pause (II) → Einstellungen → „Neu anfangen …“ → „Ja“. Das setzt **nur den eigenen Spielstand**
+  zurück; andere Spielstände auf dem Gerät und die Lehrer-Einstellungen bleiben (wichtig auf geteilten iPads).
+  Alles löschen geht nur noch über `index.html?debug` → Kasten „Debug“ → „wipe“ oder die Website-Daten in Safari.
+- Lehrerheft zum Drucken: `dist/lehrerheft.html` (Codes, Rückseiten-Sätze, Debrief-Fragen je Einheit).
+
+## Ablauf der Demo (ca. 20–25 Minuten)
+1. **Ankunft** (2 min): Das letzte Boot legt an, der Hafen ist halb grau. Am Steg wartet Kapitänin Ilda und gibt den
+   **Blick** (Kraft-Knopf ★): Über jeder Figur erscheint ihre Gefühlsfarbe. Danach sagt Ilda: Der Kurs-Code öffnet den Auftrag.
+2. **Code eingeben:** Pause (II) → Tagebuch → **Code**. Wort tippen (Vorschlagsliste hilft), Groß/Klein egal.
+3. Jede Quest endet mit einem **Aufnäher** (auf dem Hoodie; umdrehen zeigt den Kurssatz), Lichtsplittern und einer
+   **Farbwelle**, die den Hafen Stück für Stück bunt macht. Nach der dritten Quest ist der Hafen ganz bunt, alle vier
+   Signalfeuer brennen (Schnellreise und Speichern).
+
+## Die Geschichte (für die Lehrkraft)
+Ausführlich in `docs/STORY.md`. Die Geschichte trägt das Kurs-Thema, sie ersetzt es nie: Nichts davon ist eine Übung,
+und wer eine Stunde fehlt, versteht jede Szene trotzdem für sich.
+
+- **Prämisse:** Du kommst mit dem letzten Boot vor dem Herbst auf eine Insel, die grau wird. Vor einem Jahr ging beim
+  Sommerfest der Leuchtturm aus, und seitdem redet niemand darüber. Am Turm hängt auch der Funkmast: Auf der Insel gibt
+  es kein Netz.
+- **Was auf dem Spiel steht:** Ohne Licht kommt im Herbststurm keine Fähre. Kapitänin Ilda will den Hafen zum Ende der
+  Saison schließen (sie sagt es erst am Ende der Demo, auf „Und dann?“). Am Steg stehen gepackte Kisten mit Namen.
+- **Deine eigene Geschichte:** Im Handy der Spielfigur liegt ein Satz, der nie abgeschickt wurde. Wem, was und warum
+  sagt das Spiel nie. Jede:r kann etwas hineinlegen, ohne es erzählen zu müssen.
+- **Die Gegenstimme:** Mika und die Vulkan-Crew sagen „Vergessen ist besser. Wer redet, verliert.“ Das klingt
+  überzeugend, weil letzten Sommer Tratsch wirklich geschadet hat. Mika ist kein Bösewicht; er ist später erlösbar,
+  aber nicht einfach.
+- **Szenen zwischen den Quests:** die Bootsfahrt · eine Nacht mit Ilda am Feuer neben Jhemps leerem Stuhl (nach BOJE,
+  das Spiel springt dafür auf 22:30 Uhr und danach auf den Morgen) · Jolies Zeichenheft (nach DELFIN) · ein Morgen mit
+  Mika an der Hafenmauer (nach OTTER, Ende der Demo mit „Noch nicht.“).
+
+<details><summary><b>Spoiler: die drei Entscheidungen und was sie ändern</b></summary>
+
+Keine Wahl ist „richtig“. Jede kostet etwas in einer Beziehung, keine kostet Fortschritt oder Belohnung, und nichts
+wird blockiert. Gespeichert wird nur im Spielstand (`flags.m0.*`).
+
+| Wahl | Wo | Möglichkeiten | Was sich ändert |
+|---|---|---|---|
+| **Jolies Geheimnis** | BOJE, bei Jolie am Ufer | „Versprochen.“ · „Das kann ich nicht versprechen.“ | Jolies Satz am Lagerfeuer; in Jolies Heft weiß sie, ob du dicht gehalten hast. |
+| **Ilda fragt direkt** | Nacht am Feuer | „Weiß ich nicht.“ · „Frag sie selbst.“ · „Ja. War sie.“ | Ausweichen merkt Ilda („Du hältst dicht. Gut für sie. Schlecht für mich.“); Weitersagen merkt Jolie; Zurückgeben schickt Ilda zu Jolie. Heft-Szene und Kodex bei OTTER reagieren. |
+| **Das alte Festplakat** | DELFIN, bei Tun | „Abreißen.“ · „Hängen lassen.“ · „Umdrehen.“ | Mikas Spruch reißt nur mit Jhemps Gesicht ab (Jolie zeichnet ihn nach); Umdrehen ist genau das Schweigen der Insel. Mikas Spitze am Ende passt zu deiner Wahl. |
+
+Dazu am Ende eine kleine Wahl bei Mika: Wer ihm recht gibt, bekommt ein Angebot seiner Crew (nur Text, wird später
+aufgegriffen). Wer zurückfragt „Und wem hilft Schweigen?“, hört ein einziges Wort: „… Mir.“
+</details>
+
+## Kostprobe: Die Kielpost fährt (nach OTTER oder mit HERZGLAS-99)
+Nach dem Demo-Ende (m0-finale) haben Jolie und Tun die alte **Kielpost** aus der Hafengrotte gehoben. Sie liegt am
+**Steg** (Westseite). Mit dem Code HERZGLAS-99 ist sie zum Ausprobieren sofort da.
+1. Am Steg **Einsteigen**. Beim ersten Mal erwischt dich Ilda („Eine Fahrt. Ohne Mist.“) und gibt dir ihre alte
+   **Laterne** („Nimm die. War meine.“) – das ist der Bauplan.
+2. **Fahren:** Joystick zeigt, wohin es geht. **Springen halten** = Segel dicht (in einer Böe gibt es einen kurzen Schub).
+   Gegen Felsen und Ufer prallt das Boot nur sanft ab, eine Möwe fliegt auf. Kein Kentern, kein Schaden.
+3. **Bergen:** 10 feste Kisten (6 treiben vor dem Hafen, 1 liegt auf dem Vorsprung der Möwenklippe, 3 an der Wrackbank).
+   Nah heranfahren (ein Ring leuchtet), **Aktion halten**: Die Leine spannt sich, die Kiste kommt an Bord. Zu früh
+   losgelassen? Die Kiste treibt ein Stück weiter, sonst nichts. Material (Holz, Tau, Tuch, Metall) steht unten im Bild,
+   nur auf dem Boot und an der Werft.
+4. **Werft** (offene Werkbank am Steg): Laterne, Ausleger (weniger Schaukeln), Segel (schneller). Jedes Teil sieht man am Boot.
+5. **Nebelwand** um die Wrackbank: Ohne Laterne dreht das Boot sanft ab („Zu dicht. Licht?“). Mit Laterne löst sie sich auf.
+- Die Ziel-Zeile zeigt ohne Auftrag immer den nächsten Schritt (z. B. „Kisten bergen“, „Zur Werft: Laterne bauen“).
+- **Zurück:** am Steg langsam werden → „Aussteigen“, oder jederzeit Pause → „Zurück zum Steg“.
+- **Zuklappen ist sicher:** Gespeichert wird bei jedem Fund, Bau und Anlegen. Wer auf dem Wasser zuklappt, steht beim
+  nächsten Start am Steg; alle Funde bleiben.
+- **Steuerung auf dem Boot:** Joystick (PC: WASD) = fahren · Springen halten (Leertaste) = Segel dicht ·
+  Aktion halten (E) = Haken auswerfen · Pause → „Zurück zum Steg“.
+- **Zum Ausprobieren:** einmal absichtlich gegen die Möwenklippe fahren (sanfter Stoß, Möwe fliegt auf) · erst ohne
+  Laterne an die Nebelwand, dann mit · auf dem Wasser zuklappen und neu laden (man steht am Steg, alles ist noch da).
+
+### Die zwei Gesprächs-Minispiele
+Beide starten aus einem Gespräch heraus (keine Texteingabe). Nichts geht kaputt: Klappt es nicht, sagt Glimm nur
+„Später.“, und man darf sofort wieder. Nach zwei Versuchen bietet Glimm „Anders probieren?“ an (Kurzfassung, gleiche
+Belohnung). X beendet jederzeit ohne Verlust.
+- **„Leine halten“ mit Jolie** (Code BOJE, nach dem Kodex am Feuer: Jolie sitzt grau am Steg → „Dazusetzen“).
+  Ihr sitzt am Stegende, zwischen euch eine Leine. Knopf halten = bleiben. Dreht Jolie sich weg: kurz loslassen.
+  Kurze Sätze wie „Egal.“ sind ein Test – weiter halten. „Was sagen“ ist die Falle: Jolie sagt nur „Egal.“.
+- **„Unter der Oberfläche“ mit Tun** (Code DELFIN, Ziel-Zeile „Tun am alten Festplakat“ folgen → „Genau hinsehen“).
+  Tun macht Witze. Unter dem Satz treibt eine Farbe: tippen, wenn sie im Kreis ist. Ist sie klar, das passende
+  Gefühlswort aus drei wählen. Unter dem „Haha“ liegt traurig.
+- Gesprächsthema danach: Wie merkt man, dass jemand Ruhe braucht? Was steckt manchmal hinter einem Witz?
+
+### Noch nicht drin (nächste Runde)
+Bootsfarbe und -name, der zweite Anleger (Bootshaus, Kürzungsliste: zu Fuß). Der nächste Raum aus der Abstimmung wird
+noch nicht gebaut.
+Die 30-Sekunden-Pause vor einem neuen Versuch ist noch nicht eingebaut (man darf sofort wieder).
+- Test: `flock /tmp/lumo-chrome.lock node tests/scenarios/kostprobe.mjs` · Unit-Tests `tests/unit/bergen.test.mjs`, `werft.test.mjs`.
+
+## Kostprobe Teil 2: Leck im Nest (Code QUELLE)
+Kurs-Einheit j1-e04 „Das Glas der Bedürfnisse“, ≈ 12–15 min. Der Satz dazu steht **nur** auf der Rückseite des
+Aufnähers („Wichtig und leer = größte Lücke.“) – im Spiel sagt ihn niemand, man findet ihn beim Spielen heraus.
+Die sechs Bedürfnisse heißen wie im Kurs: Dazugehören, Ruhe und Erholung, Anerkennung, Bewegung, Schlaf, Mitbestimmen.
+
+### So startest du
+- Nach OTTER: Pause (II) → Tagebuch → **Code** → `QUELLE`. Zum Ausprobieren ohne Vorlauf erst `HERZGLAS-99`, dann `QUELLE`.
+- Die Ziel-Zeile oben führt zur Tür **„Nest“** (Bootshaus am Strand westlich vom Steg, zu Fuß). Drinnen zeigt ein
+  schwebender gelber Kristall das nächste Ziel.
+- **Kurzfassung (3 min)**, falls die Zeit fehlt: Tagebuch → „Kurz spielen“ (Blick bei Ilda + Crew-Glas).
+
+### Was passiert
+1. **Wasser im Nest** (Ziel-Zeile zeigt zur Tür „Nest“; der Strand ums Nest ist grau): drinnen zwei Planken von der
+   Werkbank zum Leck tragen (hingehen liefert ab), dann die treibende Kiste mit dem **Haken** holen – Aktion **halten**,
+   zu früh loslassen heißt nur: sie treibt weiter. Treibgut: 2 Metall, 2 Holz, 1 Tau. Unter der losen Diele liegt
+   **Logbuchseite 2**: „Jhemp hat drei Nächte nicht geschlafen.“ Drinnen zeigt ein schwebender Kristall das nächste Ziel.
+2. **Ilda am Steg** hält zwei Laternengläser hoch (Bild über der Szene): „Welches fehlt mehr?“ Jede Antwort ist okay.
+   Danach hat der Blick die Stufe **Gläser**.
+3. **Tun neben dem Nest**: „Lasst mich alle in Ruhe!“ Beim Witz „Kapitän Titanic“ → „Genau hinsehen“ = **Unter der
+   Oberfläche**, das feine Wort ist **gekränkt** (steht in der Wortliste im Lehrerheft – vorher kurz einführen).
+   Danach stehen seine Blechdosen über ihm.
+4. **Spuren im Nest**: Hängematte (Dose Schlaf, klein), Winde (Anerkennung, hoch), Crew-Liste an der Tür (Dazugehören).
+   Die Hängematte kann man **flicken** – das ist die Falle: Tun sagt „Danke. Trotzdem.“ und bleibt grau.
+   An der Winde „Kurbeln“, an der Liste „Streifen antippen“ – Glimm kommentiert kurz.
+5. **Blitz-Motor**: Tun gibt dir den Plan. An der Werkbank darf man ihn bauen (Treibgut reicht). Sein Glas schießt
+   hoch, bekommt einen Riss und läuft bis zum nächsten Öffnen des Spiels aus. Keine Strafe, der Motor bleibt als Deko.
+6. **Vor der Crew reden**: „Du brauchst mehr Schlaf“ oder „Tun gehört zur Crew“ sind nicht falsch, bringen aber nichts
+   Neues. Erst „Tun hat die Winde repariert. Heimlich.“ öffnet den Bauplatz **Fotowand**.
+7. **Fotowand bauen** (Nest, „Bauen“) und „Bild aufhängen“: Tun bekommt Farbe, am Nest kommt ein Stück Farbe zurück.
+   Glimm: „Raus. Zum Wasserwerk.“
+8. **Das Wasserwerk** (Minispiel Tank-Leitungen): draußen vor dem Nest, Knopf **„Wasserwerk“**. Die Pointe: nie alle
+   Tanks gleichzeitig voll. Nach drei Versuchen geht es auch ohne Medaille weiter.
+9. **Jolie hinter dem Nest**: „Dableiben“ = **Leine halten** (sie testet: „Was willst du?“, „Geh doch.“). Dann: „Keiner
+   fragt mich was. Nie.“ Den Umzug kann man nicht ändern – aber eine eigene Ecke anbieten.
+10. **Jolies Ecke bauen** (Dachboden) und am Kartentisch „Route wählen“: „Ich wähle.“ (grauer Knopf) → „Klar. Wie
+    immer.“ (nichts ändert sich), „Jolie wählt.“ (Knopf in Jolies Farbe mit ihrer Muschel) → Marker auf der Karte,
+    ihr Glas steigt ein Stück (nicht voll).
+11. **Crew-Glas am Feuer**: Jede Figur wirft eine Muschel ohne Namen ins Glas, du auch (oder keine) – deine Wahl wird
+    nirgends gespeichert. Dann Abstimmung über den nächsten Raum (nur die Wahl wird gemerkt, gebaut wird später).
+    Aufnäher „Bedürfnis-Pegel“, Lichtsplitter, Farbwelle ums Nest.
+- **Kurzfassung (3 min)**: Blick (Gläser) bei Ilda + Crew-Glas → Blick-Stufe und Aufnäher (Tagebuch → „Kurz spielen“).
+- **Zuklappen ist sicher**: Es geht am zuletzt fertigen Schritt weiter; halbe Arbeit im Nest (z. B. eine Planke) bleibt.
+- **Echte-Welt-Karte:** „Welches Glas füllen bei dir Leute, nicht Dinge?“ · **Debrief:** „Warum hat die Hängematte Tun
+  nicht geholfen?“ · „Was wollte Tun, und was hat er gebraucht?“ Im Lehrerheft: Wortliste der Spielbegriffe mit Bild.
+  Eine eingelöste Quest heißt nicht, dass das Thema behandelt ist.
+- Test: `flock /tmp/lumo-chrome.lock node tests/scenarios/kostprobe2.mjs` · Unit-Tests `tests/unit/quelle.test.mjs`.
+
+### Das Nest, der Blick (Gläser) und der Blitz-Motor
+- **Nest:** das Bootshaus auf Pfählen am Strand westlich vom Steg, **zu Fuß** erreichbar (Tür „Nest“, nach OTTER).
+  Drinnen: Werkbank (öffnet die Werft), Wasserluke mit Tuns Winde, Kartentisch, Hängematte, zwei Bauplätze
+  (Fotowand, Dachboden-Ecke), die erst die Mission öffnet. Nest-Werte ändern sich nur durch Taten, nie durch Zeit.
+- **Blick-Stufe „Gläser“:** Kraft tippen zeigt zuerst nur die Folge (Tuns Winde klemmt, Jolies Karte bleibt leer).
+  Wer die Figur kurz weiter anschaut (Ring füllt sich) oder nochmal tippt, sieht ihre Gefäße: hoch = wichtig,
+  Füllung = voll, die größte Lücke leuchtet. Tun: Blechdosen, Jolie: Tintenfässer, Ilda: Laternengläser.
+- **Blitz-Motor** (an der Werft, erst mit Tuns Plan): füllt Tuns Glas sofort, bekommt einen Riss und tropft bis zur
+  **nächsten Sitzung** (nächstes Öffnen des Spiels). Der Motor bleibt als Deko im Nest.
+- Test: `flock /tmp/lumo-chrome.lock node tests/scenarios/nest.mjs` · Unit-Tests `tests/unit/nest.test.mjs`, `spiegel.test.mjs`.
+
+### Der Spiegel (privat, standardmäßig AUS)
+- Im Baumhaus steht ein **Spiegel**: Wer will, stellt dort die eigenen sechs Gläser ein (wie wichtig, wie voll).
+  Freiwillig, ohne Punkte, ohne Rückmeldung an die Lehrkraft.
+- **Er ist aus**, bis die **Datenschutz-Freigabe** der Schule da ist. Bis dahin nicht einschalten.
+- Für eine eigene Vorschau (z. B. am Lehrer-Gerät): Code `LEUCHTFEUER-42` → Lehrer-Panel → Seite **„Spiegel“** →
+  Schalter **„Spiegel-Stationen“** (Hinweis: „Erst nach Datenschutz-Freigabe einschalten.“). Der Schalter gilt für das
+  ganze Gerät. Danach wieder ausschalten.
+- Was gespeichert wird: nur auf dem Gerät, nur im privaten Teil des Spielstands, **nie** im Export. „Nicht merken“ ist
+  voreingestellt – dann wird gar nichts gespeichert. „Zeigen“ öffnet eine Vollbild-Karte, die nichts speichert.
+  „Neu anfangen“ und „wipe“ löschen die Werte. Die Lehrkraft sieht nicht, ob jemand den Spiegel benutzt hat.
+
+### Ehrliche Lücken (Teil 2)
+- Tun und Jolie stehen nie **im** Nest; ihre Sätze dort erscheinen als Sprechblase ohne Figur.
+- Im Nest wirkt das Wasser am Boden noch eher grau-blau; das Sprühen am Leck macht es lesbar.
+- Das Crew-Glas speichert nur die gewählte Raum-Idee; der Raum selbst wird erst später gebaut.
+- Die 30-Sekunden-Pause vor einem neuen Versuch bei Gesprächs-Minispielen fehlt noch (man darf sofort wieder).
+- Das Nest ist nur zu Fuß erreichbar (kein zweiter Anleger fürs Boot, Kürzungsliste).
+- Die Aufnäher-Stelle „nest“ im Schleier belegt den vierten Platz, der bisher für Rückfälle frei war.
+- Mehrere Szenen am selben Ort starten direkt hintereinander (z. B. nach dem Wasserwerk sofort Jolie).
+- Der Spiegel-Schalter merkt nicht, ob ein Gerät geteilt ist (eine Einstellung „Geteiltes Gerät“ gibt es noch nicht).
+
+## Die Codes
+| Code | Einheit | Quest | Dauer | Was passiert |
+|---|---|---|---|---|
+| **BOJE** | j1-e01 Willkommen – unser Rahmen | Landgang: Der Hafen-Kodex | ≈ 5 min | Möwe klaut Ildas Schlüssel (Lauf über Steg, Kisten, Dächer = Bewegungs-Tutorial) · am Feuer mit Tun und Ilda Regeln aushandeln · die einzige graue Figur (Jolie) finden und sich einfach dazusetzen → Splitter 1 |
+| **DELFIN** | j1-e02 Kennenlernen in Bewegung | Das Laternenfest | ≈ 5 min | Tun fragen – erst „Und dann?“ verrät etwas Echtes, ein Faden zu Jolie erscheint · drei Funken vom Feuer zu den Laternen tragen (Rennen schwappt) · Komplimente für Taten lassen die Laterne steigen |
+| **OTTER** | j1-e03 Wir als Team | Die Brücke der Drei | ≈ 6 min | Brücke nur zu dritt · Jolie mit Symbolbefehlen durch die dunkle Hafengrotte lotsen (sie hat ein Stopp-Recht) · Rollentausch (freiwillig) · die Crew ergänzt den Kodex um eine Zeile → Crew-Ruf |
+| **QUELLE** | j1-e04 Das Glas der Bedürfnisse | Leck im Nest | ≈ 12–15 min | Leck stopfen · Blick (Gläser) · Tuns größte Lücke finden (Falle Hängematte, Blitz-Motor) · Fotowand · Wasserwerk · Jolie (Leine halten), Dachboden-Ecke, Route · Crew-Glas |
+| HERZGLAS-99 | Demo (Team) | – | – | alle übrigen Einheiten als Kurzfassung freischalten (nur zum Ausprobieren) |
+| LEUCHTFEUER-42 | Lehrer-Panel | – | – | Codeliste, Inselwetter, Lines & Veils, Figuren umbenennen, Gefühlsfarben |
+| KOMPASS-0 | Modul 0 | – | – | für Neue: alle drei Hafen-Einheiten als Kurzfassung |
+
+Die Codes gelten für jede Einheit genau einmal pro Gerät. Ein später eingegebener Code setzt ausgelassene frühere
+Einheiten automatisch auf die 3-Minuten-Kurzfassung (Kraft, Splitter und Schleier-Anteil sind da, die volle Quest bleibt
+mit ihrem Code erhalten).
+
+## Was die Jugendlichen tun können
+- Frei laufen, springen, rennen (Joystick ganz nach vorn = rennen, Springen). PC: WASD oder Pfeile, Leertaste springen,
+  E/Enter = Aktion, Q/F = Kraft, Umschalt = langsam gehen. Kamera mit dem zweiten Finger oder der Maus.
+- Mit Figuren reden (Aktionsknopf, wenn „Reden“ erscheint), vorlesen lassen (Lautsprecher in jeder Blase).
+- Kraft ★ tippen: **Blick** – Auren pulsieren, die nächste Figur verrät ein Gefühlswort. Ab e02: Fäden zwischen Figuren mit
+  derselben Sache. Ab e03: **Crew-Ruf** (Kraft-Rad halten).
+- Tagebuch: Aufträge (aktueller Schritt, Kompass-Marker), Aufnäher mit Rückseite, Echte-Welt-Karte (einmal antippen:
+  gemacht / versucht / diesmal nicht – jede Antwort gibt denselben Stich), Kräfte, Stil, Code.
+- Minispiele wiederholen (Bestwerte nur auf dem Gerät): Hafen-Dächer-Rennen, Laternen-Satzbau, Hafengrotte.
+- Signalfeuer: Schnellreise, Speichern, „Für heute Schluss“ (Abend am Feuer mit Rückblick).
+- Baumhaus (−30/98) mit Spiegel (Stil-Studio) und Hängematte.
+
+Sicherheit ist immer an: Pause/X überall, kein Tod, keine Rangliste, Fehler kosten nur Sekunden. Regel 7: höchstens
+12 Wörter pro Blase.
+
+## Neu im Feinschliff
+- **Ziel-Zeile** oben mit Kompass-Pfeil und Entfernung. Kommt man 40 Sekunden dem Ziel nicht näher, pulsiert sie sanft.
+- Die Hauptfigur einer Szene **wartet am Ort** der Szene (z. B. Ilda am Steg statt nach Tagesplan am Dorfplatz).
+- **Aufnäher-Moment:** Nach einer Quest wächst der Aufnäher oben ins Bild, glänzt und fliegt auf die Figur, mit Ton.
+  Er wartet, bis kein Dialog und kein Fenster offen ist. Mit „weniger Effekte“ nur ein Einblenden.
+- Kleine Rückmeldungen: der Aktionsknopf federt, Funken beim Aufheben und Ablegen, Funkenring beim Quest-Ende.
+- Namensschilder sind kleine Pillen in fester Größe, blenden sich bei Gedränge und während Dialogen aus.
+- Der Lichtstrahl über dem Ziel blendet nicht mehr den halben Bildschirm, wenn die Kamera darin steht (Hochformat).
+- „Neu anfangen“ im Pause-Menü (siehe oben), zweistufig und nur für den eigenen Spielstand.
+- Während Gesprächen steht keine Ziel-Säule über den Figuren; in der Nachtszene sind unbeteiligte Figuren kurz ausgeblendet.
+
+## Bekannte Lücken (Demo-Stand)
+- **Andere Regionen** (Strand, Dschungel, Klippen, Markt, Vulkan, Moor) sind begehbar, aber grau. Glimm sagt beim
+  Betreten „Grau hier. Kommt bald.“ Ihre Quests kommen mit den Modulen 1–9. (Die Test-Quest j1-e11 „Das Sturmbarometer“
+  an den Klippen ist mit dem Code WELLE bereits spielbar, aber unfertig.)
+- e01 ist gegenüber dem Design gekürzt: drei Kodex-Runden in einer Szene statt vier Feuer mit eigenen Figuren; die
+  Kodex-Regeln verändern das Weltverhalten noch nicht.
+- e02: „Zwei Wahrheiten, eine Lüge“ und die Lichterkette mit Feuerwerk fehlen; die Laternen leuchten über die Farbwelle.
+- e03: die Brücke ist eine Szene (keine echte Kisten-Physik); die Grotte läuft als Symbol-Minispiel ohne eigenen Innenraum.
+- Joker j07 „Senait kommt an“ (Code NEST) ist noch nicht gebaut.
+- Mehrere Spielstände pro Gerät gibt es im Speicher, aber noch keine Auswahl für die Jugendlichen (nur im Lehrer-Panel sichtbar).
+- Im Schlussbild mit Mika springen vier Figuren zum Spieler; ein Laternenpfahl kann kurz die Sicht verdecken.
+- Die späteren Folgen der Entscheidungen (Module 3–9) sind geplant, aber noch nicht gebaut. In der Demo reagieren nur Zeilen.
+- Puls, Skills-Koffer, Baumhaus-Möbel und Chronik sind vorhanden, aber im Hafen noch ohne Rolle.
+- Vorlesen braucht eine deutsche System-Stimme (iPad: Einstellungen → Bedienungshilfen → Gesprochene Inhalte).
+- Grafikstufe stellt sich automatisch ein; ruckelt es, im Pause-Menü „Grafik: niedrig“ wählen.
+
+## Für Entwickler
+`npm run build` erzeugt `dist/`. Tests: `npm run test:fast` (Inhalte, Texte, Einheiten), `node tests/smoke.mjs`,
+`flock /tmp/lumo-chrome.lock node tests/scenarios/demo.mjs` (spielt den ganzen Demo-Pfad headless durch, 39 Prüfungen inkl. der Story-Entscheidungen, ruhiger Nachtszene, Aufnäher-Moment und „Neu anfangen“, und legt Screenshots `200_…`–`207_…` im
+`SHOTS`-Ordner ab). Dauer mit Software-Grafik: etwa 10–15 Minuten.
+
+Bekannte rote Tests (schon vor der Story-Runde so, gleiche Fehler auf dem Stand vor `729a784`): `tests/scenarios/kraefte.mjs`
+(6 von 28, Puls-Zonen/Gadgets/Ring – Puls ist im Hafen noch ohne Rolle) und die Drachenleine in
+`tests/scenarios/minispiele.mjs` und `tests/scenarios/quests.mjs` (das Minispiel endet unter Software-Grafik nicht
+im Zeitfenster). Alle übrigen Prüfungen sind grün.
