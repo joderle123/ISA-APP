@@ -12,3 +12,11 @@ rechnet die Spiegelung fest ein (sonst fehlt im Spiel eine Körperhälfte).
 Inhalt: ein Skelett (62 Knochen), Bausteine `<Stil>_Head|Body|Legs|Feet` für Adventurer, Beach, Casual, Casual2, Farmer, Punk,
 Suit, Worker; Bewegungen Idle (angespannt), Idle_Neutral, Walk, Run, Wave, Interact, Punch_Right, Kick_Right, HitRecieve, Death.
 Farben stehen je Material in der Datei (keine Texturen) und werden im Spiel je Figur neu gesetzt.
+
+# Stadt
+
+`stadt.glb` enthält Häuser, Läden, Straßenteile und Autos aus den Bausätzen „City Kit (Suburban)“, „City Kit (Commercial)“,
+„City Kit (Roads)“ und „Car Kit“ von Kenney (kenney.nl), Lizenz **CC0 1.0**. Geladen am 12.11.2026.
+Umwandlung: `python3 -I tools/stadt/stadt.py <ordner mit den entpackten Kits> src/respawn/modelle/stadt.glb`
+(Farben aus der Farbtafel fest in die Eckpunkte, Teile je Modell zusammengefasst, keine Texturen).
+Die Straßen selbst sind keine Bausteine: `stadt.js` legt sie als Band auf die Wege der Insel.

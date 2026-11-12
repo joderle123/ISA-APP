@@ -11,6 +11,7 @@
 import { createOberflaeche } from './oberflaeche.js';
 import { createBuehne } from './buehne.js';
 import { ladeFigur, MODELLE, ueberziehe } from './figur3d.js';
+import { baueStadt } from './stadt.js';
 import { SITUATIONEN, AUSGAENGE, AKTE, AKTE_LEER, ORTE, ORT_AKTIONEN, LEUTE_AKTIONEN, LEUTE_REIHE, FOLGEN, VERPASST, WICHTIG } from './daten/index.js';
 import { neuerLauf, zieheKarten, planeJahreszeit, jahreszeitWechsel, jahreszeit, ausgangFuer, akteFuer, wirke, bond, verteile, folgenAmMorgen, neuerTag,
   JAHRESZEIT_NAME, UHR_NACH_KRAFT, TAGE_JE_JAHRESZEIT } from './run.js';
@@ -45,6 +46,17 @@ export default {
     try { const rig = game.cameraRig; rig.targetDist = 5.6; rig.dist = 5.6; rig.pitch = 0.17; rig.baseFov = 46; } catch (e) { /* egal */ }
     for (const id of ['grisel', 'jhemp']) { try { npcs.remove(id); } catch (e) { /* nicht da */ } }
     const bunt = () => { const veil = game.world && game.world.veil; if (veil && veil.setZone) for (const Z of game.world.island.ZONES) veil.setZone(Z.id, 0); };
+
+    // ---------- Moderne Kleinstadt statt Bilderbuch-Dorf (Häuser, Läden, Autos, Lampen) ----------
+    let stadt = null;
+    baueStadt(game).then((s) => {
+      stadt = s;
+      // Wimpelketten und Signalfeuer gehören zum alten Dorf
+      try { for (const h of game.world.decor.list()) if (/wimpel|signalfeuer/.test(h.id)) game.world.decor.remove(h.id); } catch (e) { /* Dekor ist Zugabe */ }
+      // zwei Zonen nutzen denselben Namen „wimpel“ – die Liste kennt nur eine davon; den Rest direkt aus der Szene nehmen
+      const weg = []; game.scene.traverse((o) => { if (/^props-bake-dekor-(wimpel|signalfeuer)/.test(o.name || '')) weg.push(o); });
+      for (const o of weg) if (o.parent) o.parent.remove(o);
+    }).catch((e) => console.warn('[respawn] Stadt', e));
 
     // ---------- Neue Figuren (Skelett, echte Bewegungen): Überzug für die Spielfigur und alle anderen ----------
     const STIL = {

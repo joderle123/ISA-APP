@@ -18,6 +18,10 @@ man darf fast alles tun (auch Mist), keine Waffen, kein Gefängnis. Die Folgen s
   Lizenz und Umwandlung in `LIZENZ.md`). `figur3d.js` legt sie als „Überzug“ auf die Spielfiguren: Kopf, Oberteil, Beine und
   Füße je Figur gemischt (`STIL` in `plugin.js`), Farben aus dem Aussehen der Figur. LUMO selbst nutzt weiter die alten Figuren.
   Die Datei macht den Bau rund 5 MB größer. Es fehlen noch Frauen-Modelle (gleiches Paket „Ultimate Modular Women“).
+- **Stadt:** Im Modus RESPAWN ersetzt `stadt.js` das Bilderbuch-Dorf durch eine kleine moderne Stadt: Häuser und Läden
+  (Kenney, CC0; je Haus andere Dach- und Wandfarbe), Asphaltstraßen auf den Hauptwegen (Hafen–Strand, Hafen–Leuchtturm,
+  Hafen–Markt), Straßenlampen, parkende Autos und je Straße ein Fahrzeug, das langsam fährt und vor Menschen anhält.
+  Die alten Häuser bleiben unsichtbar als Logik bestehen (Kollision, Orte, Türen).
 - **Grafik:** Umgebungsschatten, Tiefenunschärfe, Lichtstrahlen (`src/engine/renderer.js`), nähere Kamera, Wetter je Jahreszeit.
 - **Schreibregeln:** Blase ≤ 12 Wörter, Wahl ≤ 6 Wörter, keine Lehre, jede Wahl kostet etwas. Hilfe-Nummern nur 116 111 und 112.
 - **Sanfter Rahmen:** `?sanft` (oder `meta.sanft`) nimmt Alkohol, Schlagen und Schubsen heraus.
