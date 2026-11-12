@@ -12,7 +12,7 @@
       "einzeln",
       "gruppe"
     ],
-    "dauer": "15–20 Min.",
+    "dauer": "15 Min.",
     "eldib": [
       "K-19",
       "V-23",
@@ -35,228 +35,203 @@
     ],
     "de": {
       "titel": "Mein Konfliktstil",
-      "untertitel": "Schildkröte, Hai, Teddybär, Fuchs oder Eule – wie reagierst du, wenn es kracht?",
+      "untertitel": "Welches Tier bist du, wenn es kracht?",
       "bausteine": [
         {
-          "art": "text",
-          "text": "Im Streit reagiert jede Person anders. Die fünf Tiere stehen für fünf Konfliktstile. Keiner ist immer richtig oder immer falsch – und die meisten Menschen sind je nach Gegenüber ein anderes Tier."
+          "art": "aufgabe",
+          "text": "Tier-Würfel: Würfle verdeckt und antworte auf den Streit-Satz so, wie dein Tier es tun würde. Dein Team rät.",
+          "symbole": [
+            "gruppe"
+          ]
+        },
+        {
+          "art": "wuerfel",
+          "titel": "Tier-Würfel",
+          "zeilen": [
+            "Schildkröte: zieht sich zurück, weicht aus, sagt lieber nichts",
+            "Hai: will gewinnen – egal, was es kostet",
+            "Teddybär: gibt nach, damit wieder Ruhe ist",
+            "Fuchs: sucht den Kompromiss – beide geben ein Stück nach",
+            "Eule: sucht eine Lösung, mit der beide wirklich zufrieden sind",
+            "Joker: Such dir ein Tier aus"
+          ]
         },
         {
           "art": "aufgabe",
-          "text": "Welches Tier bist du mit wem? Kreuze in jeder Spalte das Tier an, das am besten passt.",
-          "hinweis": "Denk an einen typischen Streit. Wenn zwei Tiere passen, darfst du auch zwei ankreuzen. Eine Spalte darfst du freilassen."
+          "text": "Wie viel von jedem Tier steckt in dir? Male aus.",
+          "hinweis": "Denk an deine letzten Streits. Das Blatt bleibt bei dir – in der Runde reicht dein Tier.",
+          "symbole": [
+            "malen"
+          ]
         },
         {
-          "art": "einschaetzung",
-          "optionen": [
+          "art": "balken",
+          "stufen": 5,
+          "pole": [
+            "selten",
+            "oft"
+          ],
+          "items": [
+            "Schildkröte",
+            "Hai",
+            "Teddybär",
+            "Fuchs",
+            "Eule"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mit wem bist du welches Tier? Schreib es in die Zeile.",
+          "hinweis": "Kein Tier ist immer richtig. Und die Eule klappt erst, wenn beide unter 70 sind.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "rangliste",
+          "stufen": [
             "mit Freunden",
             "in der Familie",
             "in der Schule"
           ],
-          "items": [
-            "Schildkröte: zieht sich zurück, weicht aus, sagt lieber nichts",
-            "Hai: will gewinnen – egal, was es kostet",
-            "Teddybär: gibt nach, damit wieder Ruhe ist",
-            "Fuchs: sucht einen Kompromiss, beide geben ein Stück nach",
-            "Eule: sucht eine Lösung, mit der beide wirklich zufrieden sind"
-          ]
-        },
-        {
-          "art": "aufgabe",
-          "text": "Jeder Stil hat zwei Seiten. Wann hilft er – und wann wird es schwierig? Wähle zwei weitere Tiere.",
-          "hinweis": "Die Schildkröte ist als Beispiel schon ausgefüllt."
-        },
-        {
-          "art": "tabelle",
-          "spalten": [
-            "Tier",
-            "Hilft, wenn …",
-            "Wird schwierig, wenn …"
-          ],
-          "breiten": [
-            0.9,
-            2,
-            2
-          ],
-          "zeilen": 2,
-          "beispiel": [
-            "Schildkröte",
-            "jemand sehr wütend ist und ich erst runterkommen muss",
-            "ich immer ausweiche und sich der Ärger bei mir staut"
-          ]
-        },
-        {
-          "art": "aufgabe",
-          "text": "Und du? Ergänze die Sätze."
-        },
-        {
-          "art": "satzanfaenge",
-          "items": [
-            "Am häufigsten bin ich …"
-          ],
-          "linien": 1
+          "hoehe": 1
         },
         {
           "art": "satzanfaenge",
           "items": [
             "Öfter sein möchte ich …, zum Beispiel, wenn …"
-          ],
-          "linien": 2
-        },
-        {
-          "art": "info",
-          "symbol": "merke",
-          "text": "Die Eule braucht Zeit und Ruhe. Ihr Weg klappt erst, wenn beide unter 70 sind."
-        },
-        {
-          "art": "info",
-          "symbol": "hilfe",
-          "titel": "Du entscheidest, was du teilst.",
-          "text": "Das Blatt bleibt bei dir. In der Runde reicht es, wenn du dein Tier nennst."
+          ]
         }
       ],
       "lehrer": {
-        "ziel": "Die Jugendlichen ordnen ihr Streitverhalten fünf Konfliktstilen zu, erkennen, dass sie je nach Gegenüber unterschiedlich reagieren, und wägen Stärken und Grenzen jedes Stils ab.",
+        "ziel": "Die Jugendlichen ordnen ihr Streitverhalten fünf Konfliktstilen zu und merken, dass sie je nach Gegenüber ein anderes Tier sind. Sie wägen ab, wann ein Stil hilft und wann er schwierig wird.",
         "ablauf": [
-          "Ecken-Spiel (10 Min.): Die fünf Tierschilder im Raum verteilen. Zu drei Situationen (Freundin, Eltern, Lehrkraft) stellen sich alle zu ihrem Tier; freiwillig ein Satz pro Ecke.",
-          "Aufgabe 1 allein (3 Min.). Fragen: „Wer ist überall dasselbe Tier? Wer wechselt – und warum?“",
-          "Aufgabe 2 (5 Min.): Die Beispielzeile gemeinsam lesen, dann zwei Tiere allein oder zu zweit ausfüllen.",
-          "Aufgabe 3 allein (2 Min.); vorlesen nur freiwillig.",
+          "Tier-Ecken (6 Min.): Zu drei Situationen (Freundin, Eltern, Lehrkraft) gehen alle zu ihrem Tierschild; pro Ecke freiwillig ein Satz.",
+          "Tier-Würfel (6 Min.): zwei Teams. Eine Person würfelt verdeckt und antwortet als ihr Tier auf den Streit-Satz; das eigene Team rät.",
+          "Aufgaben 2 und 3 allein (6 Min.). Frage: „Wer ist überall dasselbe Tier? Wer wechselt?“ Vorlesen nur freiwillig.",
           "Überleitung zur Konflikt-Treppe: Die Eule ist ein Ziel, kein Startpunkt – vorher muss jede Person runterkommen."
         ],
-        "hintergrund": "Das Thomas-Kilmann-Modell ordnet Konfliktverhalten nach zwei Dimensionen: wie stark eine Person ihre eigenen Anliegen verfolgt und wie stark die der anderen (Thomas & Kilmann, 1974). Daraus ergeben sich fünf Stile: Konkurrieren (Hai), Vermeiden (Schildkröte), Entgegenkommen (Teddybär), Kompromiss (Fuchs) und Zusammenarbeiten (Eule). Das Modell bewertet keinen Stil grundsätzlich: Vermeiden kann klug sein, wenn die Anspannung zu hoch ist, Nachgeben, wenn einem die Sache wenig bedeutet. Belastend wird ein Stil, wenn er die einzige Möglichkeit ist. Ziel ist deshalb Wahlfreiheit – und der Weg zur Eule führt über das, was Fisher und Ury (1981) als Kern guter Verhandlungen beschreiben: hart in der Sache, respektvoll zur Person.",
+        "hintergrund": "Das Thomas-Kilmann-Modell ordnet Konfliktverhalten nach zwei Dimensionen: wie stark eine Person ihre eigenen Anliegen verfolgt und wie stark die der anderen (Thomas & Kilmann, 1974). Daraus ergeben sich fünf Stile: Konkurrieren (Hai), Vermeiden (Schildkröte), Entgegenkommen (Teddybär), Kompromiss (Fuchs) und Zusammenarbeiten (Eule). Kein Stil ist grundsätzlich falsch; belastend wird er, wenn er die einzige Möglichkeit ist. Ziel ist Wahlfreiheit – hart in der Sache, respektvoll zur Person (Fisher & Ury, 1981).",
         "quellen": [
           "Thomas, K. W. & Kilmann, R. H. (1974). Thomas-Kilmann Conflict Mode Instrument. Tuxedo, NY: Xicom.",
           "Fisher, R. & Ury, W. (1981). Getting to Yes. Boston: Houghton Mifflin."
         ],
         "differenzierung": {
-          "leichter": "Nur die Spalte „mit Freunden“ ausfüllen und die Tabelle mündlich bearbeiten.",
-          "schwerer": "Eine Situation beschreiben, in der ein anderes Tier besser gewesen wäre, und überlegen, was es dafür gebraucht hätte."
+          "leichter": "Nur die Balken ausmalen und das häufigste Tier einkreisen.",
+          "schwerer": "Eine Situation beschreiben, in der ein anderes Tier besser gewesen wäre."
         },
         "impulse": [
           "Wann ist ein Hai sogar nützlich?",
           "Welches Tier wünscht ihr euch als Gegenüber, wenn ihr selbst wütend seid?"
         ],
         "tipps": [
-          "Die Leitung stellt sich bei jeder Runde mit in eine Ecke und nennt ehrlich ihr Tier.",
-          "Die Tierschilder hängen lassen – bei den Rollenspielen kann man auf sie zeigen."
+          "Die Leitung stellt sich mit in eine Ecke und nennt ehrlich ihr Tier.",
+          "Die Tierschilder hängen lassen – in der Streit-Arena kann man auf sie zeigen."
         ],
         "achtung": "Das Streitverhalten in der Familie kann belasten. Nicht nachfragen, wer mit wem streitet. Wird Gewalt zu Hause angedeutet, ein Einzelgespräch anbieten und die zuständige Leitung (Responsable) informieren.",
-        "material": "Fünf Tierschilder (A4), Blatt für jede Person"
+        "material": "Tierschilder (Blatt „Streit-Karten“), ein Würfel je Team, Buntstifte"
       }
     },
     "fr": {
       "titel": "Mon style de conflit",
-      "untertitel": "Tortue, requin, nounours, renard ou hibou – comment réagis-tu quand ça chauffe ?",
+      "untertitel": "Quel animal es-tu quand ça chauffe ?",
       "bausteine": [
         {
-          "art": "text",
-          "text": "Dans une dispute, chacun réagit à sa façon. Les cinq animaux sont cinq styles de conflit. Aucun n’est toujours bon ou toujours mauvais – et la plupart des gens changent d’animal selon la personne en face."
+          "art": "aufgabe",
+          "text": "Le dé des animaux : lance le dé en cachette et réponds à la phrase de dispute comme ton animal. Ton équipe devine.",
+          "symbole": [
+            "gruppe"
+          ]
+        },
+        {
+          "art": "wuerfel",
+          "titel": "Le dé des animaux",
+          "zeilen": [
+            "Tortue : se retire, esquive, préfère ne rien dire",
+            "Requin : veut gagner – quoi qu’il en coûte",
+            "Nounours : cède pour que le calme revienne",
+            "Renard : cherche le compromis – chacun cède un peu",
+            "Hibou : cherche une solution qui satisfait vraiment les deux",
+            "Joker : choisis ton animal"
+          ]
         },
         {
           "art": "aufgabe",
-          "text": "Quel animal es-tu avec qui ? Dans chaque colonne, coche l’animal qui te correspond le mieux.",
-          "hinweis": "Pense à une dispute typique. Si deux animaux conviennent, tu peux en cocher deux. Une colonne peut rester vide."
+          "text": "Quelle part de chaque animal y a-t-il en toi ? Colorie.",
+          "hinweis": "Pense à tes dernières disputes. La feuille reste chez toi – dans le cercle, ton animal suffit.",
+          "symbole": [
+            "malen"
+          ]
         },
         {
-          "art": "einschaetzung",
-          "optionen": [
+          "art": "balken",
+          "stufen": 5,
+          "pole": [
+            "rarement",
+            "souvent"
+          ],
+          "items": [
+            "Tortue",
+            "Requin",
+            "Nounours",
+            "Renard",
+            "Hibou"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quel animal es-tu avec qui ? Écris-le sur la ligne.",
+          "hinweis": "Aucun animal n’a toujours raison. Et le hibou ne marche que si les deux sont sous 70.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "rangliste",
+          "stufen": [
             "avec les amis",
             "en famille",
             "à l’école"
           ],
-          "items": [
-            "Tortue : se retire, esquive, préfère ne rien dire",
-            "Requin : veut gagner – quoi qu’il en coûte",
-            "Nounours : cède pour que le calme revienne",
-            "Renard : cherche un compromis, chacun cède un peu",
-            "Hibou : cherche une solution qui satisfait vraiment les deux"
-          ]
-        },
-        {
-          "art": "aufgabe",
-          "text": "Chaque style a deux côtés. Quand aide-t-il – et quand devient-il difficile ? Choisis deux autres animaux.",
-          "hinweis": "La tortue est déjà remplie comme exemple."
-        },
-        {
-          "art": "tabelle",
-          "spalten": [
-            "Animal",
-            "Utile quand …",
-            "Pose problème quand …"
-          ],
-          "breiten": [
-            0.9,
-            2,
-            2
-          ],
-          "zeilen": 2,
-          "beispiel": [
-            "Tortue",
-            "quelqu’un est très en colère et que je dois d’abord me calmer",
-            "j’esquive toujours et que la colère s’accumule"
-          ]
-        },
-        {
-          "art": "aufgabe",
-          "text": "Et toi ? Complète les phrases."
-        },
-        {
-          "art": "satzanfaenge",
-          "items": [
-            "Le plus souvent, je suis …"
-          ],
-          "linien": 1
+          "hoehe": 1
         },
         {
           "art": "satzanfaenge",
           "items": [
             "J’aimerais être plus souvent …, par exemple quand …"
-          ],
-          "linien": 2
-        },
-        {
-          "art": "info",
-          "symbol": "merke",
-          "text": "Le hibou a besoin de temps et de calme. Il ne marche que si les deux sont sous 70."
-        },
-        {
-          "art": "info",
-          "symbol": "hilfe",
-          "titel": "C’est toi qui décides de ce que tu partages.",
-          "text": "La feuille reste chez toi. Dans le cercle, nomme seulement ton animal."
+          ]
         }
       ],
       "lehrer": {
-        "ziel": "Les jeunes rattachent leur comportement en cas de dispute à cinq styles de conflit, constatent qu’ils réagissent différemment selon la personne en face et pèsent les forces et les limites de chaque style.",
+        "ziel": "Les jeunes rattachent leur comportement en cas de dispute à cinq styles de conflit et constatent qu’ils changent d’animal selon la personne en face. Ils pèsent quand un style aide et quand il pose problème.",
         "ablauf": [
-          "Jeu des coins (10 min) : répartir les cinq pancartes d’animaux dans la pièce. Pour trois situations (une amie, les parents, un prof), chacun va vers son animal ; une phrase par coin, facultative.",
-          "Tâche 1 individuellement (3 min). Questions : « Qui est le même animal partout ? Qui change – et pourquoi ? »",
-          "Tâche 2 (5 min) : lire ensemble la ligne d’exemple, puis remplir deux animaux seul ou à deux.",
-          "Tâche 3 individuellement (2 min) ; lecture à voix haute seulement sur la base du volontariat.",
-          "Transition vers l’escalier du conflit : le hibou est un objectif, pas un point de départ – avant, chacun doit se calmer."
+          "Les coins des animaux (6 min) : pour trois situations (amie, parents, enseignant), chacun rejoint sa pancarte ; une phrase par coin, si on veut.",
+          "Le dé des animaux (6 min) : deux équipes. Une personne lance le dé en cachette et répond à la phrase de dispute comme son animal ; son équipe devine.",
+          "Tâches 2 et 3 seul·e (6 min). Question : « Qui est partout le même animal ? Qui change ? » Lecture à voix haute seulement si on veut.",
+          "Transition vers l’escalier du conflit : le hibou est un but, pas un point de départ – d’abord, chacun doit redescendre."
         ],
-        "hintergrund": "Le modèle de Thomas et Kilmann classe le comportement en conflit selon deux dimensions : l’énergie qu’une personne met à défendre ses propres intérêts et celle qu’elle met à défendre ceux des autres (Thomas & Kilmann, 1974). Cela donne cinq styles : compétition (requin), évitement (tortue), accommodation (nounours), compromis (renard) et collaboration (hibou). Le modèle ne juge aucun style en soi : éviter peut être sage quand la tension est trop forte, céder quand l’enjeu compte peu. Un style devient pesant quand il est la seule option. L’objectif est donc la liberté de choix – et le chemin vers le hibou passe par ce que Fisher et Ury (1981) décrivent comme le cœur d’une bonne négociation : ferme sur le fond, respectueux envers la personne.",
+        "hintergrund": "Le modèle de Thomas et Kilmann classe le comportement en conflit selon deux dimensions : l’énergie qu’une personne met à défendre ses propres intérêts et celle qu’elle met à défendre ceux des autres (Thomas & Kilmann, 1974). Cela donne cinq styles : compétition (requin), évitement (tortue), accommodation (nounours), compromis (renard) et collaboration (hibou). Aucun style n’est mauvais en soi ; il devient pesant quand il est la seule option. Le but est la liberté de choix – ferme sur le fond, respectueux envers la personne (Fisher & Ury, 1981).",
         "quellen": [
           "Thomas, K. W. & Kilmann, R. H. (1974). Thomas-Kilmann Conflict Mode Instrument. Tuxedo, NY: Xicom.",
           "Fisher, R. & Ury, W. (1981). Getting to Yes. Boston: Houghton Mifflin."
         ],
         "differenzierung": {
-          "leichter": "Ne remplir que la colonne « avec les amis » et traiter le tableau à l’oral.",
-          "schwerer": "Décrire une situation où un autre animal aurait été meilleur et réfléchir à ce qu’il aurait fallu pour cela."
+          "leichter": "Colorier seulement les barres et entourer l’animal le plus fréquent.",
+          "schwerer": "Décrire une situation où un autre animal aurait été meilleur."
         },
         "impulse": [
           "Quand un requin est-il même utile ?",
-          "Quel animal aimeriez-vous avoir en face de vous quand vous êtes vous-mêmes en colère ?"
+          "Quel animal aimeriez-vous avoir en face de vous quand vous êtes en colère ?"
         ],
         "tipps": [
-          "L’adulte se place aussi dans un coin à chaque tour et nomme honnêtement son animal.",
-          "Laisser les pancartes accrochées – on peut les montrer pendant les jeux de rôle."
+          "L’adulte se place aussi dans un coin et nomme honnêtement son animal.",
+          "Laisser les pancartes accrochées – on peut les montrer pendant l’arène des disputes."
         ],
         "achtung": "Le comportement en conflit dans la famille peut être pesant. Ne pas demander qui se dispute avec qui. Si de la violence à la maison est évoquée, proposer un entretien individuel et informer la direction compétente (responsable).",
-        "material": "Cinq pancartes d’animaux (A4), une feuille par personne"
+        "material": "Pancartes des animaux (fiche « Cartes de dispute »), un dé par équipe, crayons de couleur"
       }
-    }
+    },
+    "look": "spiel"
   },
   {
     "id": "skills-konflikt-treppe",
@@ -271,7 +246,7 @@
       "einzeln",
       "gruppe"
     ],
-    "dauer": "15 Min.",
+    "dauer": "10–15 Min.",
     "eldib": [
       "V-28",
       "SOZ-34",
@@ -288,7 +263,8 @@
     "bild": "icon:stairs-up",
     "verwandt": [
       "konflikte-loesen",
-      "skills-konfliktstil"
+      "skills-konfliktstil",
+      "skills-streit-karten"
     ],
     "kurs": [
       "j1-e24"
@@ -298,77 +274,72 @@
       "untertitel": "Fünf Stufen aus dem Streit – eine nach der anderen",
       "bausteine": [
         {
-          "art": "geschichte",
-          "titel": "Das Plakat",
-          "bild": "figur:jana:wuetend:verschraenkt",
-          "text": "Léa und Tiago sollen bis Freitag ein Plakat für Geschichte fertig machen. Léa hat alles recherchiert und die Hälfte gestaltet, Tiago hat seit einer Woche nichts beigetragen. Am Donnerstag kommt er in der Pause vorbei: „Und, sind wir fertig?“ Léas Anspannung schießt auf 80."
-        },
-        {
           "art": "aufgabe",
-          "text": "Was könnte Léa auf jeder Stufe der Treppe sagen oder tun? Schreib zu jeder Stufe einen Satz.",
-          "hinweis": "Du kannst auch einen eigenen Streit nehmen."
-        },
-        {
-          "art": "schritte",
-          "linien": 1,
-          "items": [
-            {
-              "titel": "Stopp und runterkommen",
-              "text": "Erst die Anspannung unter 70 bringen – mit einem Skill aus deinem Koffer. Kurz rausgehen ist erlaubt."
-            },
-            {
-              "titel": "Ich-Botschaft",
-              "text": "Sagen, was dich stört, ohne Vorwurf: Ich fühle mich …, wenn …, weil … Ich wünsche mir …"
-            },
-            {
-              "titel": "Zuhören",
-              "text": "Die Sicht der anderen Person verstehen und mit eigenen Worten zusammenfassen: Du meinst also …?"
-            },
-            {
-              "titel": "Lösungen sammeln",
-              "text": "Alle Ideen aufschreiben, auch verrückte. Noch nichts bewerten."
-            },
-            {
-              "titel": "Einigen",
-              "text": "Eine Lösung wählen, mit der beide leben können. Abmachen, wann ihr schaut, ob sie klappt."
-            }
+          "text": "Lies die Treppe von unten nach oben. Kreise die Stufe ein, die dir im echten Leben am schwersten fällt.",
+          "hinweis": "Wird es wieder heiß? Dann zurück auf Stufe 1. Das ist kein Rückschritt, sondern der Weg, der funktioniert.",
+          "symbole": [
+            "einkreisen"
           ]
         },
         {
-          "art": "info",
-          "symbol": "tipp",
-          "titel": "Wenn es wieder kippt",
-          "text": "Merkst du auf einer Stufe, dass die Anspannung wieder steigt, geh zurück auf Stufe 1. Das ist kein Rückschritt, sondern der Weg, der funktioniert."
+          "art": "leiter",
+          "stufen": 5,
+          "unten": "Start: Es kracht",
+          "oben": "Ziel: Beide können damit leben",
+          "beispiele": [
+            "Stopp und runterkommen: erst unter 70 – mit einem Skill aus deinem Koffer.",
+            "Ich-Botschaft: sagen, was dich stört – ohne Vorwurf.",
+            "Zuhören: die andere Sicht verstehen. „Du meinst also …?“",
+            "Lösungen sammeln: Alle Ideen zählen, auch verrückte.",
+            "Einigen: eine Lösung wählen und abmachen, wann ihr nachschaut."
+          ]
         },
         {
           "art": "aufgabe",
-          "text": "Welche Stufe fällt dir im echten Leben am schwersten – und was könnte dir dabei helfen?"
+          "text": "Deine Sätze für die ersten zwei Stufen: Schreib sie so, wie du wirklich redest.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "formfelder",
+          "form": "blase",
+          "spalten": 2,
+          "hoehe": 3,
+          "items": [
+            "Stufe 1: So sage ich, dass ich kurz Zeit brauche",
+            "Stufe 2: Meine Ich-Botschaft"
+          ]
         },
         {
           "art": "satzanfaenge",
           "items": [
-            "Am schwersten fällt mir Stufe …, weil …",
-            "Helfen könnte mir …"
-          ],
-          "linien": 1
+            "Bei meiner schwersten Stufe könnte mir helfen: …"
+          ]
+        },
+        {
+          "art": "mission",
+          "text": "Achte diese Woche auf einen Streit – bei dir, in der Pause oder in einer Serie. Welche Tiere siehst du? Welche Stufe fehlt?",
+          "tage": 1,
+          "beweis": "ein Tier und eine Stufe – ohne Namen."
         }
       ],
       "lehrer": {
-        "ziel": "Die Jugendlichen kennen die fünf Stufen der Konflikt-Treppe, formulieren zu jeder Stufe einen Satz und wissen, dass sie bei steigender Anspannung auf Stufe 1 zurückgehen.",
+        "ziel": "Die Jugendlichen kennen die fünf Stufen der Konflikt-Treppe und formulieren eigene Sätze für die ersten Stufen. Sie wissen, dass sie bei steigender Anspannung auf Stufe 1 zurückgehen.",
         "ablauf": [
-          "Einstieg (2 Min.): Die Geschichte vorlesen. Frage: „Was passiert, wenn Léa mit 80 loslegt?“",
-          "Input am Plakat (5 Min.): Die Stufen von unten nach oben erklären – Stufe 1 kennt die Gruppe aus Modul 3, Stufe 2 und 3 aus Modul 5.",
-          "Aufgabe 1 zu zweit (6 Min.): zu jeder Stufe ein Satz für Léa; zwei Paare lesen ihre Treppe vor.",
-          "Aufgabe 2 allein, gern in der Abschlussrunde (2 Min.); nicht einsammeln. Danach Rollenspiele mit den Karten K1–K6."
+          "Treppe bauen (6 Min.): Teams legen die Stufen- und Satzkarten (Blatt „Streit-Karten“) am Boden zur Treppe. Auflösung am Plakat.",
+          "Mini-Input (2 Min.): „Warum steht Runterkommen ganz unten?“ Auf die Streit-Grenzen aus dem Check-in zeigen.",
+          "Aufgaben 1 und 2 allein (4 Min.). Das Blatt liegt in der Streit-Arena als Spickzettel bereit.",
+          "Abschluss: Mission vorlesen. In Einheit 25 reicht ein Tier und eine Stufe."
         ],
-        "hintergrund": "Die Treppe bündelt, was in den Modulen 3 und 5 geübt wurde. Bei hoher Anspannung kann kaum jemand zuhören oder verhandeln; deshalb steht die Regulation vor jedem Gespräch. Die Stufen 2 bis 5 folgen der niederlagelosen Methode von Gordon (1972): Ich-Botschaft statt Vorwurf, aktives Zuhören, gemeinsam Lösungen suchen und sich einigen, ohne dass eine Seite verliert. Beim Sammeln hilft der Blick auf die Interessen hinter den Forderungen (Fisher & Ury, 1981). Je früher ein Konflikt so bearbeitet wird, desto besser: Mit jeder Eskalationsstufe wird eine Lösung für beide schwerer (Glasl, 1980).",
+        "hintergrund": "Die Treppe bündelt, was in den Modulen 3 und 5 geübt wurde. Bei hoher Anspannung kann kaum jemand zuhören oder verhandeln; deshalb steht die Regulation vor jedem Gespräch. Die Stufen 2 bis 5 folgen der niederlagelosen Methode von Gordon (1972): Ich-Botschaft statt Vorwurf, aktives Zuhören, gemeinsam Lösungen suchen. Beim Sammeln hilft der Blick auf die Interessen hinter den Forderungen (Fisher & Ury, 1981). Je früher ein Konflikt so bearbeitet wird, desto eher gelingt eine Lösung für beide (Glasl, 1980).",
         "quellen": [
           "Gordon, T. (1972). Familienkonferenz. Hamburg: Hoffmann und Campe.",
           "Fisher, R. & Ury, W. (1981). Getting to Yes. Boston: Houghton Mifflin.",
           "Glasl, F. (1980). Konfliktmanagement. Bern: Haupt."
         ],
         "differenzierung": {
-          "leichter": "Satzanfänge an die Tafel: „Ich brauch kurz …“, „Ich ärgere mich, weil …“, „Du meinst also …“, „Wir könnten …“.",
+          "leichter": "Satzanfänge an die Tafel: „Ich brauch kurz …“, „Ich ärgere mich, weil …“.",
           "schwerer": "Die Treppe auf einen Streit mit einer erwachsenen Person übertragen: Was ändert sich?"
         },
         "impulse": [
@@ -380,7 +351,7 @@
           "Die Treppe als Geländer anbieten, nicht als Pflichtprogramm."
         ],
         "achtung": "Die Treppe setzt ungefähr gleich starke Seiten voraus. Bei Mobbing, Gewalt oder Bedrohung ist sie das falsche Werkzeug; dann geht es um Schutz. Hinweise nicht in der Gruppe vertiefen und die zuständige Leitung (Responsable) informieren.",
-        "material": "Plakat mit der Treppe (A2), Blatt für jede Person"
+        "material": "Plakat mit der Treppe (A2), Treppen-Karten vom Blatt „Streit-Karten“"
       }
     },
     "fr": {
@@ -388,77 +359,72 @@
       "untertitel": "Cinq marches pour sortir de la dispute – l’une après l’autre",
       "bausteine": [
         {
-          "art": "geschichte",
-          "titel": "L’affiche",
-          "bild": "figur:jana:wuetend:verschraenkt",
-          "text": "Léa et Tiago doivent terminer pour vendredi une affiche pour le cours d’histoire. Léa a fait toutes les recherches et la moitié de la mise en page, Tiago n’a rien apporté depuis une semaine. Jeudi, il passe à la récré : « Alors, on a fini ? » La tension de Léa monte à 80."
-        },
-        {
           "art": "aufgabe",
-          "text": "Que pourrait dire ou faire Léa à chaque marche de l’escalier ? Écris une phrase par marche.",
-          "hinweis": "Tu peux aussi prendre une dispute à toi."
-        },
-        {
-          "art": "schritte",
-          "linien": 1,
-          "items": [
-            {
-              "titel": "Stop et se calmer",
-              "text": "D’abord faire redescendre la tension sous 70 – avec un skill de ta valise. Sortir un instant est permis."
-            },
-            {
-              "titel": "Message-je",
-              "text": "Dire ce qui te dérange, sans reproche : Je ressens … quand … parce que … Je souhaite …"
-            },
-            {
-              "titel": "Écouter",
-              "text": "Comprendre le point de vue de l’autre personne et le reformuler avec tes mots : Tu veux dire que … ?"
-            },
-            {
-              "titel": "Chercher des solutions",
-              "text": "Noter toutes les idées, même les folles. Ne rien évaluer pour l’instant."
-            },
-            {
-              "titel": "S’entendre",
-              "text": "Choisir une solution avec laquelle les deux peuvent vivre. Convenir du moment où vous verrez si elle marche."
-            }
+          "text": "Lis l’escalier de bas en haut. Entoure la marche qui te paraît la plus difficile dans la vraie vie.",
+          "hinweis": "Ça rechauffe ? Alors retour à la marche 1. Ce n’est pas un pas en arrière, c’est le chemin qui fonctionne.",
+          "symbole": [
+            "einkreisen"
           ]
         },
         {
-          "art": "info",
-          "symbol": "tipp",
-          "titel": "Quand ça rebascule",
-          "text": "Si tu remarques à une marche que la tension remonte, retourne à la marche 1. Ce n’est pas un pas en arrière, c’est le chemin qui fonctionne."
+          "art": "leiter",
+          "stufen": 5,
+          "unten": "Départ : ça chauffe",
+          "oben": "But : les deux peuvent vivre avec",
+          "beispiele": [
+            "Stop et se calmer : d’abord sous 70 – avec un skill de ta valise.",
+            "Message-je : dire ce qui te dérange – sans reproche.",
+            "Écouter : comprendre l’autre point de vue. « Tu veux dire que … ? »",
+            "Chercher des solutions : toutes les idées comptent, même les folles.",
+            "S’entendre : choisir une solution et fixer quand vous ferez le point."
+          ]
         },
         {
           "art": "aufgabe",
-          "text": "Quelle marche te paraît la plus difficile dans la vraie vie – et qu’est-ce qui pourrait t’aider ?"
+          "text": "Tes phrases pour les deux premières marches : écris-les comme tu parles vraiment.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "formfelder",
+          "form": "blase",
+          "spalten": 2,
+          "hoehe": 3,
+          "items": [
+            "Marche 1 : je dis que j’ai besoin d’un moment",
+            "Marche 2 : mon message-je"
+          ]
         },
         {
           "art": "satzanfaenge",
           "items": [
-            "Le plus difficile pour moi, c’est la marche …, parce que …",
-            "Ce qui pourrait m’aider : …"
-          ],
-          "linien": 1
+            "Pour ma marche la plus difficile, ce qui pourrait m’aider : …"
+          ]
+        },
+        {
+          "art": "mission",
+          "text": "Cette semaine, observe une dispute – chez toi, à la récré ou dans une série. Quels animaux vois-tu ? Quelle marche manque ?",
+          "tage": 1,
+          "beweis": "un animal et une marche – sans nom."
         }
       ],
       "lehrer": {
-        "ziel": "Les jeunes connaissent les cinq marches de l’escalier du conflit, formulent une phrase pour chaque marche et savent qu’ils retournent à la marche 1 quand la tension monte.",
+        "ziel": "Les jeunes connaissent les cinq marches de l’escalier du conflit et formulent leurs propres phrases pour les premières marches. Ils savent qu’ils retournent à la marche 1 quand la tension monte.",
         "ablauf": [
-          "Entrée en matière (2 min) : lire l’histoire. Question : « Que se passe-t-il si Léa démarre à 80 ? »",
-          "Apport sur l’affiche (5 min) : expliquer les marches de bas en haut – la marche 1 est connue du groupe par le module 3, les marches 2 et 3 par le module 5.",
-          "Tâche 1 à deux (6 min) : une phrase par marche pour Léa ; deux binômes lisent leur escalier.",
-          "Tâche 2 individuellement, volontiers au tour de clôture (2 min) ; ne pas ramasser. Puis jeux de rôle avec les cartes K1–K6."
+          "Construire l’escalier (6 min) : les équipes posent au sol les cartes des marches et des phrases (fiche « Cartes de dispute »). Correction à l’affiche.",
+          "Mini-apport (2 min) : « Pourquoi se calmer est-il tout en bas ? » Montrer les limites de dispute du tour d’entrée.",
+          "Tâches 1 et 2 seul·e (4 min). La feuille sert d’aide-mémoire dans l’arène des disputes.",
+          "Clôture : lire la mission. À la séance 25, un animal et une marche suffisent."
         ],
-        "hintergrund": "L’escalier réunit ce qui a été exercé dans les modules 3 et 5. Quand la tension est forte, presque personne ne peut écouter ni négocier ; c’est pourquoi la régulation précède toute conversation. Les marches 2 à 5 suivent la méthode sans perdant de Gordon (1972) : message-je plutôt que reproche, écoute active, recherche commune de solutions et accord, sans qu’aucun côté ne perde. Pour chercher des solutions, il aide de regarder les intérêts derrière les exigences (Fisher & Ury, 1981). Plus tôt un conflit est traité ainsi, mieux c’est : à chaque degré d’escalade, une solution pour les deux devient plus difficile (Glasl, 1980).",
+        "hintergrund": "L’escalier réunit ce qui a été exercé dans les modules 3 et 5. Quand la tension est forte, presque personne ne peut écouter ni négocier ; c’est pourquoi la régulation précède toute conversation. Les marches 2 à 5 suivent la méthode sans perdant de Gordon (1972) : message-je plutôt que reproche, écoute active, recherche commune de solutions. Regarder les intérêts derrière les exigences aide à trouver des idées (Fisher & Ury, 1981). Plus tôt un conflit est traité ainsi, plus une solution pour les deux est possible (Glasl, 1980).",
         "quellen": [
           "Gordon, T. (1972). Familienkonferenz. Hamburg: Hoffmann und Campe.",
           "Fisher, R. & Ury, W. (1981). Getting to Yes. Boston: Houghton Mifflin.",
           "Glasl, F. (1980). Konfliktmanagement. Bern: Haupt."
         ],
         "differenzierung": {
-          "leichter": "Débuts de phrases au tableau : « J’ai besoin d’un moment … », « Ça m’énerve parce que … », « Tu veux dire que … », « On pourrait … ».",
+          "leichter": "Débuts de phrases au tableau : « J’ai besoin d’un moment … », « Ça m’énerve parce que … ».",
           "schwerer": "Transposer l’escalier à une dispute avec un adulte : qu’est-ce qui change ?"
         },
         "impulse": [
@@ -470,9 +436,10 @@
           "Proposer l’escalier comme une rampe, pas comme un programme obligatoire."
         ],
         "achtung": "L’escalier suppose des parties à peu près égales en force. En cas de harcèlement, de violence ou de menace, c’est le mauvais outil ; il s’agit alors de protéger. Ne pas approfondir les indices en groupe et informer la direction compétente (responsable).",
-        "material": "Affiche avec l’escalier (A2), une feuille par personne"
+        "material": "Affiche avec l’escalier (A2), cartes de l’escalier de la fiche « Cartes de dispute »"
       }
-    }
+    },
+    "look": "spiel"
   },
   {
     "id": "skills-situationskarten",
@@ -509,7 +476,7 @@
     ],
     "de": {
       "titel": "Situationskarten: Streit, Druck, Mobbing",
-      "untertitel": "Zum Ausschneiden – für Rollenspiele und Gespräche",
+      "untertitel": "18 erfundene Situationen zum Ausschneiden – für drei Spiele",
       "bausteine": [
         {
           "art": "info",
@@ -518,14 +485,13 @@
           "punkte": [
             "Alle Situationen sind erfunden. Niemand spielt sich selbst oder jemanden aus der Gruppe.",
             "Wer „Stopp“ sagt, beendet die Szene sofort.",
-            "Nach jeder Szene steigen alle aus der Rolle aus: aufstehen, ausschütteln, den eigenen Namen sagen.",
-            "Wer zuschaut, achtet auf eine Sache: Welcher Satz hat etwas verändert?",
+            "Nach jeder Szene raus aus der Rolle: aufstehen, ausschütteln, den eigenen Namen sagen.",
             "Bei Mobbing wird die betroffene Person nie gespielt. Wir üben, was Zuschauende tun können."
           ]
         },
         {
           "art": "aufgabe",
-          "text": "Konflikte: Spielt die Szene zweimal – erst so, wie sie oft läuft, dann mit der Konflikt-Treppe.",
+          "text": "Streit-Arena: Spielt die Szene zweimal – erst so, wie sie oft läuft, dann mit der Konflikt-Treppe.",
           "symbole": [
             "schneiden",
             "partner"
@@ -534,6 +500,8 @@
         {
           "art": "karten",
           "spalten": 3,
+          "hoehe": 112,
+          "schneiden": true,
           "karten": [
             {
               "titel": "K1 · Die Gruppenarbeit",
@@ -562,8 +530,17 @@
           ]
         },
         {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Kennst du so etwas aus deinem Leben?",
+          "text": "Dann musst du das nicht allein tragen. Sprich nach der Stunde mit der Leitung oder einer Person, der du vertraust – oder ruf anonym das Kanner- a Jugendtelefon an: 116 111."
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
           "art": "aufgabe",
-          "text": "Gruppendruck: Wie würdest du dich fühlen? Was würdest du tun? Was wäre mutig?",
+          "text": "Druck-Duell: Sag Nein mit einer der vier Arten – auch wenn dreimal nachgehakt wird.",
           "symbole": [
             "schneiden",
             "sprechen"
@@ -572,6 +549,8 @@
         {
           "art": "karten",
           "spalten": 3,
+          "hoehe": 112,
+          "schneiden": true,
           "karten": [
             {
               "titel": "D1 · Im Supermarkt",
@@ -601,7 +580,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Mobbing: Welche Stufe der Zivilcourage-Leiter traust du dir hier zu – und was tust du genau?",
+          "text": "Würfel-Leiter: Welche Stufe der Zivilcourage-Leiter passt hier – und was tust du genau?",
           "symbole": [
             "schneiden",
             "nachdenken"
@@ -610,6 +589,8 @@
         {
           "art": "karten",
           "spalten": 3,
+          "hoehe": 112,
+          "schneiden": true,
           "karten": [
             {
               "titel": "M1 · Im Unterricht",
@@ -639,14 +620,14 @@
         }
       ],
       "lehrer": {
-        "ziel": "Erfundene, alltagsnahe Situationen für Rollenspiele und Gespräche im Modul „Wenn es schwierig wird“: Konflikte (K), Gruppendruck (D) und Mobbing (M).",
+        "ziel": "Erfundene, alltagsnahe Situationen für die drei großen Spiele im Modul „Wenn es schwierig wird“: Konflikte (K), Gruppendruck (D) und Mobbing (M).",
         "ablauf": [
           "Vorbereitung: auf festes Papier drucken, ausschneiden, nach Buchstaben sortieren. Karten weglassen, die einer aktuellen Lage in der Gruppe ähneln.",
-          "K1–K6 (Einheit 24): Karte ziehen, 5 Min. vorbereiten, zweimal spielen – wie oft im Alltag, dann mit der Konflikt-Treppe.",
-          "D1–D6 (Einheit 25): die drei Fragen besprechen, dann mit den vier Arten, Nein zu sagen, spielen; die drängelnde Rolle zuerst von der Leitung.",
-          "M1–M6 (Einheit 26): Die Leitung liest vor, alle stellen sich auf ihre Stufe der Zivilcourage-Leiter und begründen."
+          "K1–K6 (Einheit 24, Streit-Arena): Karte ziehen, zweimal spielen. Das Publikum sammelt die Stufen, die es erkannt hat.",
+          "D1–D6 (Einheit 25, Druck-Duell): Die Leitung drängelt und hakt dreimal nach; jedes Nein, das hält, bringt der Gruppe einen Punkt.",
+          "M1–M6 (Einheit 26, Würfel-Leiter): Die Leitung liest vor, das Team würfelt die Stufe und sagt, was es genau tut."
         ],
-        "hintergrund": "Soziale Fertigkeiten lernt man durch Üben. Programme zum sozial-emotionalen Lernen wirken besonders, wenn sie aktive Formen wie das Rollenspiel nutzen und klar benennen, was geübt wird (Durlak et al., 2011). Im Rollenspiel lässt sich eine Reaktion ohne echtes Risiko ausprobieren und im zweiten Durchgang verbessern. Erfundene Situationen schützen: Niemand muss Eigenes offenlegen, und kein Gruppenmitglied gerät in eine Opferrolle. Beim Mobbing wird nur das Handeln der Zuschauenden geübt – dort liegt der größte Hebel (Salmivalli et al., 1996).",
+        "hintergrund": "Soziale Fertigkeiten lernt man durch Üben. Programme zum sozial-emotionalen Lernen wirken besonders, wenn sie aktive Formen wie das Rollenspiel nutzen und klar benennen, was geübt wird (Durlak et al., 2011). Erfundene Situationen schützen: Niemand muss Eigenes offenlegen, und kein Gruppenmitglied gerät in eine Opferrolle. Beim Mobbing wird nur das Handeln der Zuschauenden geübt – dort liegt der größte Hebel (Salmivalli et al., 1996).",
         "quellen": [
           "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432.",
           "Salmivalli, C., Lagerspetz, K., Björkqvist, K., Österman, K. & Kaukiainen, A. (1996). Bullying as a group process: Participant roles and their relations to social status within the group. Aggressive Behavior, 22(1), 1–15."
@@ -663,13 +644,13 @@
           "Karten laminieren; sie werden in drei Einheiten gebraucht.",
           "Lieber zwei Karten gründlich spielen als alle kurz."
         ],
-        "achtung": "Rollen nie mit echten Namen besetzen. Erzählt jemand von eigenen Erfahrungen mit Mobbing, Gewalt oder Substanzen: nicht in der Gruppe vertiefen, Einzelgespräch anbieten und die zuständige Leitung (Responsable) informieren.",
-        "material": "Festes Papier, Schere, eventuell Laminierfolie"
+        "achtung": "Rollen nie mit echten Namen besetzen; niemand spielt gegen den eigenen Willen, die betroffene Person bei Mobbing spielt niemand. Erzählt jemand von eigenen Erfahrungen: nicht in der Gruppe vertiefen, Einzelgespräch anbieten und die zuständige Leitung (Responsable) informieren.",
+        "material": "Festes Papier, Schere, eventuell Laminierfolie, ein Würfel"
       }
     },
     "fr": {
       "titel": "Cartes : conflit, pression, harcèlement",
-      "untertitel": "À découper – pour des jeux de rôle et des discussions",
+      "untertitel": "18 situations inventées à découper – pour trois jeux",
       "bausteine": [
         {
           "art": "info",
@@ -678,14 +659,13 @@
           "punkte": [
             "Toutes les situations sont inventées. Personne ne joue son propre rôle ni celui de quelqu’un du groupe.",
             "Qui dit « Stop » arrête la scène tout de suite.",
-            "Après chaque scène, tout le monde sort du rôle : se lever, se secouer, dire son propre prénom.",
-            "Qui regarde observe une seule chose : quelle phrase a changé quelque chose ?",
+            "Après chaque scène, on sort du rôle : se lever, se secouer, dire son prénom.",
             "En cas de harcèlement, on ne joue jamais la personne visée. On s’exerce à ce que peuvent faire les témoins."
           ]
         },
         {
           "art": "aufgabe",
-          "text": "Conflits : jouez la scène deux fois – d’abord comme elle se passe souvent, puis avec l’escalier du conflit.",
+          "text": "L’arène des disputes : jouez la scène deux fois – d’abord comme elle se passe souvent, puis avec l’escalier du conflit.",
           "symbole": [
             "schneiden",
             "partner"
@@ -694,6 +674,8 @@
         {
           "art": "karten",
           "spalten": 3,
+          "hoehe": 112,
+          "schneiden": true,
           "karten": [
             {
               "titel": "K1 · Le travail de groupe",
@@ -705,7 +687,7 @@
             },
             {
               "titel": "K3 · L’élection",
-              "text": "Tu as remporté l’élection de délégué de classe. Ton amie le voulait aussi et ne te parle presque plus depuis."
+              "text": "Tu as été élue déléguée de classe. Ton amie le voulait aussi et ne te parle presque plus depuis."
             },
             {
               "titel": "K4 · Entre deux",
@@ -722,8 +704,17 @@
           ]
         },
         {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Tu connais ça dans ta vie ?",
+          "text": "Alors tu n’as pas à le porter seul·e. Parle après la séance à l’adulte du cours ou à une personne de confiance – ou appelle anonymement Kanner- a Jugendtelefon : 116 111."
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
           "art": "aufgabe",
-          "text": "Pression du groupe : comment te sentirais-tu ? Que ferais-tu ? Qu’est-ce qui serait courageux ?",
+          "text": "Le duel de pression : dis non avec l’une des quatre façons – même si on insiste trois fois.",
           "symbole": [
             "schneiden",
             "sprechen"
@@ -732,10 +723,12 @@
         {
           "art": "karten",
           "spalten": 3,
+          "hoehe": 112,
+          "schneiden": true,
           "karten": [
             {
               "titel": "D1 · Au supermarché",
-              "text": "Un ami glisse un paquet de chewing-gums dans sa poche sans payer et te le met dans la main : « Garde-le, toi. »"
+              "text": "Un ami prend un paquet de chewing-gums sans payer et te le met dans la main : « Garde-le, toi. »"
             },
             {
               "titel": "D2 · La fête",
@@ -751,17 +744,17 @@
             },
             {
               "titel": "D5 · Le défi",
-              "text": "Après l’école, tout le monde veut escalader la clôture du chantier. « Il n’y a que les dégonflés qui restent en bas. »"
+              "text": "Après l’école, tout le monde veut escalader la clôture du chantier. « Seuls les dégonflés restent en bas. »"
             },
             {
               "titel": "D6 · La photo",
-              "text": "Dans le chat de groupe circule une photo gênante d’un camarade. Tout le monde ajoute un commentaire. On te demande de la transférer."
+              "text": "Dans le chat de groupe circule une photo gênante d’un camarade. Tout le monde commente. On te demande de la transférer."
             }
           ]
         },
         {
           "art": "aufgabe",
-          "text": "Harcèlement : quelle marche de l’échelle du courage civique oses-tu ici – et que fais-tu exactement ?",
+          "text": "L’échelle au dé : quel échelon de l’échelle du courage civique convient ici – et que fais-tu exactement ?",
           "symbole": [
             "schneiden",
             "nachdenken"
@@ -770,6 +763,8 @@
         {
           "art": "karten",
           "spalten": 3,
+          "hoehe": 112,
+          "schneiden": true,
           "karten": [
             {
               "titel": "M1 · En classe",
@@ -785,7 +780,7 @@
             },
             {
               "titel": "M4 · Dans le bus",
-              "text": "Chaque matin, deux plus grands arrachent le sac à dos d’un plus jeune dans le bus et se le lancent."
+              "text": "Chaque matin, deux plus grands prennent le sac à dos d’un plus jeune dans le bus et se le lancent."
             },
             {
               "titel": "M5 · Le chat",
@@ -793,27 +788,27 @@
             },
             {
               "titel": "M6 · La blague",
-              "text": "Depuis des semaines, il y a des blagues sur l’apparence d’un camarade. Il rit avec les autres, mais préfère rester seul à la récré."
+              "text": "Depuis des semaines, on blague sur l’apparence d’un camarade. Il rit avec les autres, mais reste seul à la récré."
             }
           ]
         }
       ],
       "lehrer": {
-        "ziel": "Situations inventées pour jeux de rôle et discussions du module « Quand ça devient difficile » : conflits (K), pression du groupe (D), harcèlement (M).",
+        "ziel": "Situations inventées, proches du quotidien, pour les trois grands jeux du module « Quand ça devient difficile » : conflits (K), pression du groupe (D), harcèlement (M).",
         "ablauf": [
-          "Préparation : imprimer sur papier épais, découper, trier par lettre. Écarter les cartes qui ressemblent à une situation actuelle du groupe.",
-          "K1–K6 (séance 24) : tirer une carte, préparer 5 min, jouer deux fois – comme souvent au quotidien, puis avec l’escalier du conflit.",
-          "D1–D6 (séance 25) : discuter les trois questions, puis jouer avec les quatre façons de dire non ; le rôle de celui qui insiste est d’abord tenu par l’adulte.",
-          "M1–M6 (séance 26) : l’adulte lit, chacun se place sur sa marche de l’échelle du courage civique et justifie."
+          "Préparation : imprimer, découper, trier par lettre. Écarter les cartes trop proches d’une situation actuelle du groupe.",
+          "K1–K6 (séance 24, arène des disputes) : tirer une carte, jouer deux fois. Le public recueille les marches qu’il a reconnues.",
+          "D1–D6 (séance 25, duel de pression) : l’adulte insiste trois fois ; chaque non qui tient rapporte un point au groupe.",
+          "M1–M6 (séance 26, échelle au dé) : l’adulte lit, l’équipe lance le dé pour l’échelon et dit ce qu’elle fait exactement."
         ],
-        "hintergrund": "Les compétences sociales s’apprennent en s’exerçant. Les programmes d’apprentissage socio-émotionnel agissent surtout lorsqu’ils utilisent des formes actives comme le jeu de rôle et nomment clairement ce qui est exercé (Durlak et al., 2011). Le jeu de rôle permet d’essayer une réaction sans vrai risque et de l’améliorer au deuxième passage. Les situations inventées protègent : personne ne dévoile rien de personnel et aucun membre du groupe n’endosse un rôle de victime. Pour le harcèlement, on n’exerce que l’action des témoins – c’est là que se trouve le plus grand levier (Salmivalli et al., 1996).",
+        "hintergrund": "Les compétences sociales s’apprennent en s’exerçant. Les programmes d’apprentissage socio-émotionnel agissent surtout lorsqu’ils utilisent des formes actives comme le jeu de rôle et nomment clairement ce qui est exercé (Durlak et al., 2011). Les situations inventées protègent : personne ne dévoile rien de personnel et aucun membre du groupe n’endosse un rôle de victime. Pour le harcèlement, on n’exerce que l’action des témoins – c’est là que se trouve le plus grand levier (Salmivalli et al., 1996).",
         "quellen": [
           "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432.",
           "Salmivalli, C., Lagerspetz, K., Björkqvist, K., Österman, K. & Kaukiainen, A. (1996). Bullying as a group process: Participant roles and their relations to social status within the group. Aggressive Behavior, 22(1), 1–15."
         ],
         "differenzierung": {
           "leichter": "Ne pas jouer, mais formuler une phrase que la personne de la carte pourrait dire.",
-          "schwerer": "Après une minute, crier « Stop » ; un spectateur ou une spectatrice reprend un rôle avec une nouvelle idée."
+          "schwerer": "Après une minute, dire « Stop » ; un spectateur ou une spectatrice reprend un rôle avec une nouvelle idée."
         },
         "impulse": [
           "Quelle phrase a changé quelque chose dans la scène ?",
@@ -823,10 +818,11 @@
           "Plastifier les cartes ; elles servent pendant trois séances.",
           "Mieux vaut jouer deux cartes à fond que toutes rapidement."
         ],
-        "achtung": "Ne jamais attribuer les rôles à de vrais noms. Si quelqu’un raconte ses propres expériences de harcèlement, de violence ou de substances : ne pas approfondir en groupe, proposer un entretien individuel, informer la direction compétente (responsable).",
-        "material": "Papier épais, ciseaux, pochettes de plastification (facultatif)"
+        "achtung": "Jamais de vrais noms ; personne ne joue contre son gré, et personne ne joue la personne visée par le harcèlement. Si quelqu’un raconte ses propres expériences : ne pas approfondir en groupe, proposer un entretien individuel et informer la direction compétente (responsable).",
+        "material": "Papier épais, ciseaux, un dé"
       }
-    }
+    },
+    "look": "spiel"
   },
   {
     "id": "skills-nein-sagen",
@@ -841,7 +837,7 @@
       "einzeln",
       "gruppe"
     ],
-    "dauer": "25–30 Min.",
+    "dauer": "15–20 Min.",
     "eldib": [
       "SOZ-39",
       "V-26",
@@ -857,169 +853,87 @@
     ],
     "bild": "icon:hand-stop",
     "verwandt": [
-      "nein-unter-druck"
+      "nein-unter-druck",
+      "skills-draengel-karten"
     ],
     "kurs": [
       "j1-e25"
     ],
     "de": {
       "titel": "Nein sagen – vier Wege",
-      "untertitel": "Wenn alle Ja sagen und du eigentlich Nein meinst",
+      "untertitel": "Ein echter Freund akzeptiert ein Nein – ohne lange Begründung.",
       "bausteine": [
         {
-          "art": "text",
-          "text": "Druck kann laut sein – überreden, auslachen, drohen. Oder leise: Alle machen mit, und keiner sagt etwas. Beides ist schwer auszuhalten, weil Dazugehören wichtig ist. Ein vorbereitetes Nein macht es leichter."
-        },
-        {
           "art": "aufgabe",
-          "text": "Wo liegen deine Zonen? Schreib in jeden Ring ein Stichwort zu einer Situation aus deinem Alltag.",
+          "text": "Wo liegen deine Zonen? Schreib in jede Zeile ein Stichwort aus deinem Alltag.",
+          "hinweis": "Komfortzone: fühlt sich sicher an. Lernzone: aufregend, aber machbar. Panikzone: zu viel.",
           "symbole": [
             "schreiben"
           ]
         },
         {
-          "art": "spalten",
-          "verhaeltnis": "1:1",
-          "links": [
-            {
-              "art": "zielscheibe",
-              "ringe": [
-                "Panikzone",
-                "Lernzone",
-                "Komfortzone"
-              ],
-              "mitte": "ich"
-            }
+          "art": "rangliste",
+          "stufen": [
+            "Komfortzone",
+            "Lernzone",
+            "Panikzone"
           ],
-          "rechts": [
-            {
-              "art": "info",
-              "symbol": "wissen",
-              "titel": "Drei Zonen",
-              "punkte": [
-                "Komfortzone: fühlt sich sicher an.",
-                "Lernzone: aufregend, aber machbar.",
-                "Panikzone: zu viel – hier geht nichts mehr."
-              ]
-            },
-            {
-              "art": "text",
-              "text": "Wachsen kannst du in der Lernzone. Was heute dort liegt, rutscht mit etwas Übung nach innen. Die Zonen sind bei jeder Person anders."
-            }
-          ]
+          "hoehe": 1
         },
         {
           "art": "aufgabe",
-          "text": "Vier Arten, Nein zu sagen: Kreise die Art ein, die zu dir passt, und schreib darunter deinen eigenen Satz."
-        },
-        {
-          "art": "schritte",
-          "stil": "kette",
-          "linien": 2,
-          "items": [
-            {
-              "titel": "Kaputte Schallplatte",
-              "text": "Ruhig immer wieder denselben Satz: „Nein, ich will nicht.“"
-            },
-            {
-              "titel": "Nein plus Vorschlag",
-              "text": "„Nein. Aber wir könnten stattdessen …“"
-            },
-            {
-              "titel": "Mit Humor",
-              "text": "„Nee, dafür bin ich heute echt zu faul.“",
-              "heute": false
-            },
-            {
-              "titel": "Einfach gehen",
-              "text": "Du musst dich nicht rechtfertigen."
-            }
+          "text": "Nein-Würfel: Zieh eine Drängel-Karte, würfle – und sag Nein auf diese Art.",
+          "symbole": [
+            "gruppe"
           ]
         },
         {
-          "art": "info",
-          "symbol": "merke",
-          "text": "Ein echter Freund akzeptiert ein Nein. Und ein Nein braucht keine lange Begründung."
-        },
-        {
-          "art": "aufgabe",
-          "text": "Im Supermarkt: Luca drängt, Ana will nicht mitmachen. Schreib Anas Antworten in die leere Blase und auf die Linie.",
-          "hinweis": "Nutze zwei verschiedene Arten, Nein zu sagen."
-        },
-        {
-          "art": "comic",
-          "spalten": 3,
-          "felder": [
-            {
-              "figuren": [
-                "figur:ben:froh:geben",
-                "figur:jana:neutral"
-              ],
-              "sprecher": 0,
-              "text": "Steck die Kaugummis ein. Merkt doch keiner.",
-              "requisit": "icon:shopping-cart"
-            },
-            {
-              "figuren": [
-                "figur:ben:froh",
-                "figur:jana:nervoes:stopp"
-              ],
-              "sprecher": 1
-            },
-            {
-              "figuren": [
-                "figur:ben:wuetend:verschraenkt",
-                "figur:jana:ruhig"
-              ],
-              "sprecher": 0,
-              "text": "Echt jetzt? Sei doch kein Feigling."
-            }
+          "art": "wuerfel",
+          "titel": "Nein-Würfel",
+          "zeilen": [
+            "Kaputte Schallplatte: ruhig immer wieder – „Nein, ich will nicht.“",
+            "Nein plus Vorschlag: „Nein. Aber wir könnten stattdessen …“",
+            "Mit Humor: „Nee, dafür bin ich heute echt zu faul.“",
+            "Einfach gehen: Du musst dich nicht rechtfertigen.",
+            "Deine Wahl: Nimm die Art, die dir am leichtesten fällt.",
+            "Zu zweit: Hol dir jemanden dazu, der auch Nein sagt."
           ]
         },
         {
           "art": "satzanfaenge",
           "items": [
-            "Anas zweite Antwort: …"
-          ],
-          "linien": 2
-        },
-        {
-          "art": "aufgabe",
-          "text": "Plane dein Nein für einen Moment, den du kennst."
-        },
-        {
-          "art": "wennDann",
-          "zeilen": 1,
-          "beispiele": [
-            {
-              "wenn": "Wenn in der Clique über jemanden gelästert wird und alle mich anschauen,",
-              "dann": "sage ich „Ohne mich“ und wechsle das Thema."
-            }
+            "Mein Nein-Satz für einen Moment, den ich kenne: …"
           ]
         },
         {
           "art": "info",
           "symbol": "hilfe",
-          "text": "Wirst du erpresst, bedroht oder zu etwas gedrängt, das dir schadet – auch online –, hol dir Hilfe: bei einer Vertrauensperson, beim SePAS, beim Kanner- a Jugendtelefon (116 111) oder bei der BEE SECURE Helpline (8002 1234)."
+          "text": "Wirst du erpresst, bedroht oder gedrängt – auch online? Hol dir Hilfe: Vertrauensperson, SePAS oder anonym das Kanner- a Jugendtelefon 116 111."
+        },
+        {
+          "art": "mission",
+          "text": "Sag diese Woche einmal Nein zu etwas Kleinem, das du nicht willst – mit einer der vier Arten.",
+          "tage": 1,
+          "beweis": "Daumen – wie hat sich dein Nein angefühlt?"
         }
       ],
       "lehrer": {
-        "ziel": "Die Jugendlichen erkunden ihre Komfort-, Lern- und Panikzone, lernen vier Arten, Nein zu sagen, und üben ein Nein unter Druck.",
+        "ziel": "Die Jugendlichen erkunden ihre Komfort-, Lern- und Panikzone und probieren vier Arten aus, Nein zu sagen. Sie formulieren einen eigenen Nein-Satz für einen Moment, den sie kennen.",
         "ablauf": [
-          "Nach der Komfortzonen-Übung im Raum: Aufgabe 1 allein (3 Min.), nicht vorlesen lassen.",
-          "Input (8 Min.): die vier Arten vorspielen, die Leitung drängelt. Aufgabe 2: eine Art einkreisen, eigenen Satz schreiben.",
-          "Aufgabe 3 zu zweit (4 Min.): Anas Antworten schreiben, die Szene einmal mit vertauschten Rollen sprechen.",
-          "Nach den Situationskarten D1–D6, in der Abschlussrunde: Aufgabe 4 allein (3 Min.)."
+          "Nein-Würfel im Kreis (12 Min.): Drängel-Karte ziehen, würfeln, Nein sagen. Die Leitung drängelt zuerst selbst und hakt zweimal nach.",
+          "Danach allein (8 Min.): in jede Zone ein Stichwort, dann der eigene Nein-Satz. Die Zonen nicht vorlesen lassen.",
+          "Der Nein-Satz wird später im Skill „Anker vor dem Nein“ gebraucht.",
+          "Abschluss: Mission vorlesen. In Einheit 26 reicht ein Daumen."
         ],
-        "hintergrund": "Im Jugendalter beeinflusst die Anwesenheit Gleichaltriger Entscheidungen stark: In einem Experiment gingen Jugendliche in einem Fahrspiel mehr Risiken ein, wenn Gleichaltrige zuschauten (Gardner & Steinberg, 2005). Schon eine einzige weitere Person, die widerspricht, verringert den Anpassungsdruck deutlich (Asch, 1956). Kurze, vorbereitete Sätze erleichtern das Nein; die „kaputte Schallplatte“ – ruhig denselben Satz wiederholen – stammt aus dem Fertigkeitentraining der DBT für Jugendliche (Rathus & Miller, 2015). Das Zonenmodell hilft, Mut dosiert zu üben: in der Lernzone, nicht in der Panikzone.",
+        "hintergrund": "Im Jugendalter beeinflusst die Anwesenheit Gleichaltriger Entscheidungen stark: In einem Experiment gingen Jugendliche in einem Fahrspiel mehr Risiken ein, wenn Gleichaltrige zuschauten (Gardner & Steinberg, 2005). Schon eine einzige weitere Person, die widerspricht, verringert den Anpassungsdruck deutlich (Asch, 1956). Kurze, vorbereitete Sätze erleichtern das Nein; die „kaputte Schallplatte“ stammt aus dem Fertigkeitentraining der DBT für Jugendliche (Rathus & Miller, 2015).",
         "quellen": [
           "Gardner, M. & Steinberg, L. (2005). Peer influence on risk taking, risk preference, and risky decision making in adolescence and adulthood: An experimental study. Developmental Psychology, 41(4), 625–635.",
           "Asch, S. E. (1956). Studies of independence and conformity: I. A minority of one against a unanimous majority. Psychological Monographs: General and Applied, 70(9), 1–70.",
           "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
         ],
         "differenzierung": {
-          "leichter": "Nur Aufgabe 2 und 3; Nein-Sätze an der Tafel vorgeben: „Nein, danke.“ – „Ohne mich.“",
-          "schwerer": "Eine Szene mit leisem Druck schreiben, in der keiner etwas sagt, und ein Nein dafür finden."
+          "leichter": "Ohne Würfel: Nein-Sätze an der Tafel vorgeben („Nein, danke.“ – „Ohne mich.“) und einen auswählen.",
+          "schwerer": "Ein Nein für leisen Druck finden: Alle machen mit, und keiner sagt etwas."
         },
         "impulse": [
           "Was ist schwerer auszuhalten: lauter oder leiser Druck?",
@@ -1030,180 +944,98 @@
           "Nicht moralisieren: Es geht um Möglichkeiten, nicht um frühere Fehler."
         ],
         "achtung": "Eigene Erfahrungen mit Alkohol, Diebstahl oder Mutproben nicht vertiefen und nicht bewerten. Bei Erpressung oder Bedrohung – auch online – die zuständige Leitung (Responsable) informieren.",
-        "material": "Blatt, Seile oder Kreide"
+        "material": "Drängel-Karten (ausgeschnitten), ein Würfel, Seile oder Kreide für die Zonen"
       }
     },
     "fr": {
       "titel": "Dire non – quatre voies",
-      "untertitel": "Quand tout le monde dit oui et que toi, tu penses non",
+      "untertitel": "Un vrai ami accepte un non – sans longue justification.",
       "bausteine": [
         {
-          "art": "text",
-          "text": "La pression peut être bruyante – convaincre, se moquer, menacer. Ou silencieuse : tout le monde suit et personne ne dit rien. Les deux sont difficiles à supporter, parce qu’appartenir au groupe est important. Un non préparé rend les choses plus faciles."
-        },
-        {
           "art": "aufgabe",
-          "text": "Où se trouvent tes zones ? Dans chaque anneau, écris un mot-clé sur une situation de ton quotidien.",
+          "text": "Où se trouvent tes zones ? Sur chaque ligne, écris un mot-clé de ton quotidien.",
+          "hinweis": "Zone de confort : on s’y sent en sécurité. Zone d’apprentissage : excitante, mais faisable. Zone de panique : trop.",
           "symbole": [
             "schreiben"
           ]
         },
         {
-          "art": "spalten",
-          "verhaeltnis": "1:1",
-          "links": [
-            {
-              "art": "zielscheibe",
-              "ringe": [
-                "Zone de panique",
-                "Zone d’apprentissage",
-                "Zone de confort"
-              ],
-              "mitte": "moi"
-            }
+          "art": "rangliste",
+          "stufen": [
+            "Confort",
+            "Apprentissage",
+            "Panique"
           ],
-          "rechts": [
-            {
-              "art": "info",
-              "symbol": "wissen",
-              "titel": "Trois zones",
-              "punkte": [
-                "Zone de confort : on s’y sent en sécurité.",
-                "Zone d’apprentissage : excitante, mais réalisable.",
-                "Zone de panique : trop – ici, plus rien ne va."
-              ]
-            },
-            {
-              "art": "text",
-              "text": "Tu peux grandir dans la zone d’apprentissage. Ce qui s’y trouve aujourd’hui glisse vers l’intérieur avec un peu d’entraînement. Les zones sont différentes pour chaque personne."
-            }
-          ]
+          "hoehe": 1
         },
         {
           "art": "aufgabe",
-          "text": "Quatre façons de dire non : entoure celle qui te correspond et écris dessous ta propre phrase."
-        },
-        {
-          "art": "schritte",
-          "stil": "kette",
-          "linien": 2,
-          "items": [
-            {
-              "titel": "Disque rayé",
-              "text": "Répéter calmement la même phrase : « Non, je ne veux pas. »"
-            },
-            {
-              "titel": "Non plus proposition",
-              "text": "« Non. Mais on pourrait plutôt … »"
-            },
-            {
-              "titel": "Avec humour",
-              "text": "« Bof, aujourd’hui, j’ai vraiment la flemme. »",
-              "heute": false
-            },
-            {
-              "titel": "Simplement partir",
-              "text": "Tu n’as pas à te justifier."
-            }
+          "text": "Le dé du non : tire une carte, lance le dé – et dis non de cette façon.",
+          "symbole": [
+            "gruppe"
           ]
         },
         {
-          "art": "info",
-          "symbol": "merke",
-          "text": "Les vrais amis acceptent un non. Et un non n’a pas besoin d’une longue justification."
-        },
-        {
-          "art": "aufgabe",
-          "text": "Au supermarché : Luca insiste, Ana ne veut pas participer. Écris les réponses d’Ana dans la bulle vide et sur la ligne.",
-          "hinweis": "Utilise deux façons différentes de dire non."
-        },
-        {
-          "art": "comic",
-          "spalten": 3,
-          "felder": [
-            {
-              "figuren": [
-                "figur:ben:froh:geben",
-                "figur:jana:neutral"
-              ],
-              "sprecher": 0,
-              "text": "Mets les chewing-gums dans ta poche. Personne ne le remarquera.",
-              "requisit": "icon:shopping-cart"
-            },
-            {
-              "figuren": [
-                "figur:ben:froh",
-                "figur:jana:nervoes:stopp"
-              ],
-              "sprecher": 1
-            },
-            {
-              "figuren": [
-                "figur:ben:wuetend:verschraenkt",
-                "figur:jana:ruhig"
-              ],
-              "sprecher": 0,
-              "text": "Sérieux ? Ne sois pas lâche."
-            }
+          "art": "wuerfel",
+          "titel": "Le dé du non",
+          "zeilen": [
+            "Disque rayé : toujours la même phrase – « Non, je ne veux pas. »",
+            "Non plus proposition : « Non. Mais on pourrait plutôt … »",
+            "Avec humour : « Bof, aujourd’hui, j’ai vraiment la flemme. »",
+            "Simplement partir : tu n’as pas à te justifier.",
+            "Ton choix : prends la façon la plus facile pour toi.",
+            "À deux : va chercher quelqu’un qui dit non aussi."
           ]
         },
         {
           "art": "satzanfaenge",
           "items": [
-            "Deuxième réponse d’Ana : …"
-          ],
-          "linien": 2
-        },
-        {
-          "art": "aufgabe",
-          "text": "Prépare ton non pour un moment que tu connais."
-        },
-        {
-          "art": "wennDann",
-          "zeilen": 1,
-          "beispiele": [
-            {
-              "wenn": "Si, dans la bande, on dit du mal de quelqu’un et que tout le monde me regarde,",
-              "dann": "je dis « Sans moi » et je change de sujet."
-            }
+            "Ma phrase pour dire non dans un moment que je connais : …"
           ]
         },
         {
           "art": "info",
           "symbol": "hilfe",
-          "text": "Si tu es victime de chantage, de menaces ou si on te pousse à faire quelque chose qui te nuit – en ligne aussi –, va chercher de l’aide : auprès d’une personne de confiance, du SePAS, de Kanner- a Jugendtelefon (116 111) ou de la BEE SECURE Helpline (8002 1234)."
+          "text": "Chantage, menaces, on te force – en ligne aussi ? Va chercher de l’aide : personne de confiance, SePAS ou, anonymement, Kanner- a Jugendtelefon 116 111."
+        },
+        {
+          "art": "mission",
+          "text": "Cette semaine, dis une fois non à une petite chose que tu ne veux pas – avec l’une des quatre façons.",
+          "tage": 1,
+          "beweis": "pouce – comment était ton non ?"
         }
       ],
       "lehrer": {
-        "ziel": "Les jeunes explorent leur zone de confort, d’apprentissage et de panique, apprennent quatre façons de dire non et s’exercent à dire non sous la pression.",
+        "ziel": "Les jeunes explorent leur zone de confort, d’apprentissage et de panique et essaient quatre façons de dire non. Ils formulent leur propre phrase pour un moment qu’ils connaissent.",
         "ablauf": [
-          "Après l’exercice de la zone de confort dans la salle : tâche 1 individuellement (3 min), ne pas faire lire à voix haute.",
-          "Apport (8 min) : jouer les quatre façons, l’adulte insiste. Tâche 2 : entourer une façon, écrire sa propre phrase.",
-          "Tâche 3 à deux (4 min) : écrire les réponses d’Ana, dire la scène une fois en inversant les rôles.",
-          "Après les cartes de situations D1–D6, au tour de clôture : tâche 4 individuellement (3 min)."
+          "Le dé du non en cercle (12 min) : tirer une carte, lancer le dé, dire non. L’adulte insiste d’abord lui-même, deux fois.",
+          "Ensuite seul·e (8 min) : un mot-clé par zone, puis sa propre phrase pour dire non. Pas de lecture des zones à voix haute.",
+          "La phrase resservira pour le skill « l’ancre avant le non ».",
+          "Clôture : lire la mission. À la séance 26, un pouce suffit."
         ],
-        "hintergrund": "À l’adolescence, la présence de pairs influence fortement les décisions : dans une expérience, des adolescents prenaient plus de risques dans un jeu de conduite quand des pairs les regardaient (Gardner & Steinberg, 2005). Une seule autre personne qui contredit suffit à réduire nettement la pression de conformité (Asch, 1956). Des phrases courtes et préparées facilitent le non ; le « disque rayé » – répéter calmement la même phrase – vient de l’entraînement aux compétences de la DBT pour adolescents (Rathus & Miller, 2015). Le modèle des zones aide à exercer le courage par doses : dans la zone d’apprentissage, pas dans la zone de panique.",
+        "hintergrund": "À l’adolescence, la présence de pairs influence fortement les décisions : dans une expérience, des adolescents prenaient plus de risques dans un jeu de conduite quand des pairs les regardaient (Gardner & Steinberg, 2005). Une seule autre personne qui contredit suffit à réduire nettement la pression de conformité (Asch, 1956). Des phrases courtes et préparées facilitent le non ; le « disque rayé » vient de l’entraînement aux compétences de la DBT pour adolescents (Rathus & Miller, 2015).",
         "quellen": [
           "Gardner, M. & Steinberg, L. (2005). Peer influence on risk taking, risk preference, and risky decision making in adolescence and adulthood: An experimental study. Developmental Psychology, 41(4), 625–635.",
           "Asch, S. E. (1956). Studies of independence and conformity: I. A minority of one against a unanimous majority. Psychological Monographs: General and Applied, 70(9), 1–70.",
           "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
         ],
         "differenzierung": {
-          "leichter": "Seulement les tâches 2 et 3 ; donner des phrases de non au tableau : « Non, merci. » – « Sans moi. »",
-          "schwerer": "Écrire une scène avec une pression silencieuse, où personne ne dit rien, et trouver un non adapté."
+          "leichter": "Sans dé : donner des phrases au tableau (« Non, merci. » – « Sans moi. ») et en choisir une.",
+          "schwerer": "Trouver un non pour une pression silencieuse : tout le monde suit et personne ne dit rien."
         },
         "impulse": [
           "Qu’est-ce qui est plus difficile à supporter : une pression bruyante ou silencieuse ?",
-          "Comment réagissez-vous quand un ami ou une amie vous dit non ?"
+          "Comment réagissez-vous quand une amie vous dit non ?"
         ],
         "tipps": [
           "Jouer soi-même, la première fois, le rôle de celui qui insiste – aimable et tenace.",
           "Ne pas moraliser : il s’agit de possibilités, pas d’erreurs passées."
         ],
         "achtung": "Ne pas approfondir ni juger les expériences personnelles avec l’alcool, le vol ou les défis. En cas de chantage ou de menace – en ligne aussi –, informer la direction compétente (responsable).",
-        "material": "Feuille, cordes ou craie"
+        "material": "Cartes « On insiste » (découpées), un dé, cordes ou craie pour les zones"
       }
-    }
+    },
+    "look": "spiel"
   },
   {
     "id": "skills-mobbing-erkennen",
@@ -1218,7 +1050,7 @@
       "einzeln",
       "gruppe"
     ],
-    "dauer": "25–30 Min.",
+    "dauer": "15 Min.",
     "eldib": [
       "SOZ-37",
       "SOZ-38",
@@ -1235,7 +1067,8 @@
     "bild": "icon:search",
     "verwandt": [
       "mobbing-cybermobbing",
-      "hinschauen"
+      "hinschauen",
+      "skills-zivilcourage-karten"
     ],
     "kurs": [
       "j1-e26"
@@ -1246,8 +1079,11 @@
       "bausteine": [
         {
           "art": "aufgabe",
-          "text": "Spaß, Konflikt oder Mobbing? Entscheide bei jeder Situation.",
-          "hinweis": "Wenn du unsicher bist, kreuze zwei Spalten an. Genau diese Fälle besprecht ihr danach."
+          "text": "Spaß, Konflikt oder Mobbing? Kreuz an.",
+          "hinweis": "Unsicher? Dann kreuz zwei Spalten an – genau diese Fälle besprecht ihr.",
+          "symbole": [
+            "ankreuzen"
+          ]
         },
         {
           "art": "einschaetzung",
@@ -1256,40 +1092,33 @@
             "Konflikt",
             "Mobbing"
           ],
+          "kopffarben": [
+            "gruen",
+            "gelb",
+            "rot"
+          ],
           "items": [
-            "Beim Handballtraining ziehen sich zwei Freunde mit ihren Fehlwürfen auf. Beide grinsen.",
-            "Léa und Diogo streiten, wer beim Ausflug am Fenster sitzt. Nach der Pause tauschen sie.",
-            "Ana wird immer wieder aus dem Gruppenchat entfernt, sobald jemand sie hinzufügt.",
-            "Yusuf und Liam haben sich wegen eines Spiels gestritten und reden seit zwei Tagen nicht.",
-            "Jemand hat Nora heimlich beim Sport gefilmt und das Video in drei Gruppen geteilt.",
-            "Drei Ältere nehmen einem Jüngeren im Bus jeden Morgen die Mütze weg und lachen."
+            "Zwei Freunde necken sich, beide grinsen.",
+            "Yusuf und Liam reden seit einem Streit nicht.",
+            "Ana fliegt immer wieder aus dem Gruppenchat.",
+            "Im Bus nehmen Ältere Jang täglich die Mütze weg.",
+            "Nora wurde heimlich gefilmt, das Video geteilt."
           ]
         },
         {
-          "art": "info",
-          "symbol": "merke",
-          "titel": "Vier Merkmale von Mobbing",
-          "text": "Von Mobbing spricht man, wenn diese Dinge zusammenkommen:",
-          "punkte": [
-            "Es passiert wiederholt und über längere Zeit.",
-            "Es gibt ein Ungleichgewicht: Eine Seite ist stärker – mehr Leute, älter, beliebter.",
-            "Es ist absichtlich.",
-            "Die betroffene Person kann sich allein nicht wehren."
+          "art": "ankreuzen",
+          "titel": "Mobbing-Check: Was trifft bei einem Mobbing-Fall von oben zu?",
+          "spalten": 2,
+          "items": [
+            "Es passiert immer wieder.",
+            "Eine Seite ist stärker.",
+            "Es ist Absicht.",
+            "Allein wehren geht nicht."
           ]
-        },
-        {
-          "art": "text",
-          "text": "Und: Ein Spaß ist nur ein Spaß, wenn alle lachen können – auch die Person, um die es geht."
-        },
-        {
-          "art": "geschichte",
-          "titel": "Die Sprachnachricht",
-          "bild": "figur:jana:traurig",
-          "text": "Nora hat im Klassenchat eine Sprachnachricht geschickt, ihre Stimme zittert ein bisschen. Mathis macht daraus einen Clip mit Quietschgeräuschen und postet ihn. Rafael leitet ihn in eine andere Gruppe weiter. Zehn Leute reagieren mit Lach-Smileys, die meisten anderen lesen nur mit. Inês schreibt Nora privat: „Das war echt fies. Ich bin auf deiner Seite.“ Seitdem wird jede Nachricht von Nora mit dem Clip beantwortet."
         },
         {
           "art": "aufgabe",
-          "text": "Wer spielt welche Rolle? Verbinde.",
+          "text": "Die Sprachnachricht: Wer hat welche Rolle? Verbinde.",
           "symbole": [
             "verbinden"
           ]
@@ -1297,54 +1126,46 @@
         {
           "art": "zuordnen",
           "titel": [
-            "In der Geschichte",
-            "Rolle im Mobbing"
+            "Im Klassenchat",
+            "Rolle"
           ],
           "links": [
-            "Mathis",
-            "Rafael",
-            "die zehn mit Lach-Smileys",
-            "die, die nur mitlesen",
-            "Inês",
-            "Nora"
+            "Mathis macht den Spott-Clip.",
+            "Rafael leitet ihn weiter.",
+            "Zehn schicken Lach-Smileys.",
+            "Die meisten lesen nur mit.",
+            "Inês tröstet Nora privat."
           ],
           "rechts": [
             "Verstärker",
-            "Betroffene",
-            "Täter",
             "Verteidigerin",
-            "Helfer des Täters",
-            "Außenstehende"
+            "Täter",
+            "Außenstehende",
+            "Helfer"
           ]
         },
         {
-          "art": "aufgabe",
-          "text": "Wer hätte die meiste Macht, das zu stoppen – und warum?"
-        },
-        {
-          "art": "linien",
-          "anzahl": 3
-        },
-        {
-          "art": "notfall"
+          "art": "info",
+          "symbol": "hilfe",
+          "text": "Ein Spaß ist nur Spaß, wenn alle lachen können. Wirst du selbst fertiggemacht? Hol dir Hilfe: Vertrauensperson oder anonym das Kanner- a Jugendtelefon 116 111."
         }
       ],
       "lehrer": {
-        "ziel": "Die Jugendlichen unterscheiden Spaß, Konflikt und Mobbing, ordnen die Rollen im Mobbing zu und erkennen, dass Zuschauende es beenden können.",
+        "ziel": "Die Jugendlichen unterscheiden Spaß, Konflikt und Mobbing anhand von vier Merkmalen und ordnen die Rollen im Mobbing zu. Sie erkennen, dass Zuschauende es beenden können.",
         "ablauf": [
-          "Ecken-Spiel (8 Min.): Situationen aus der Einheit vorlesen, alle stellen sich zu Spaß, Konflikt oder Mobbing; aus den Begründungen die Merkmale ableiten.",
-          "Aufgabe 1 allein (4 Min.), dann Grenzfälle besprechen – etwa das heimlich geteilte Video: einmal gepostet, oft angesehen.",
-          "Geschichte vorlesen, Aufgabe 2 zu zweit (5 Min.). Betonen: Rollen beschreiben ein Verhalten, keinen Menschen.",
-          "Aufgabe 3 nach der Stuhl-Aufstellung (3 Min.), dann den Hilfe-Kasten zeigen; alle tragen eine Vertrauensperson ein."
+          "Ecken-Lauf (12 Min.): Situationen aus der Einheit vorlesen; aus den Begründungen die vier Merkmal-Karten aufdecken.",
+          "Aufgabe 1 allein (5 Min.). Lösung: Spaß – Konflikt – Mobbing – Mobbing – Grenzfall (einmal gefilmt, aber oft geteilt).",
+          "Geschichte vorlesen, Aufgabe 2 zu zweit (3 Min.). Lösung: Täter – Helfer – Verstärker – Außenstehende – Verteidigerin.",
+          "Weiter mit „Kipp die Bühne“: Wer hat die meiste Macht, das zu stoppen?"
         ],
-        "hintergrund": "Nach Olweus (1993) liegt Mobbing vor, wenn eine Person wiederholt und absichtlich verletzt wird und sich wegen ungleicher Kräfte kaum wehren kann; ein Konflikt spielt sich dagegen zwischen ungefähr Gleichstarken ab. Mobbing ist ein Gruppenprozess: Salmivalli et al. (1996) beschrieben neben Tätern und Betroffenen die Rollen Helfer, Verstärker, Außenstehende und Verteidiger. Online kommen Reichweite, Dauer und schnelle Weitergabe hinzu; wer liked oder weiterleitet, verstärkt (Hinduja & Patchin, 2015). Deshalb setzen wirksame Programme bei den Zuschauenden an.",
+        "hintergrund": "Nach Olweus (1993) liegt Mobbing vor, wenn eine Person wiederholt und absichtlich verletzt wird und sich wegen ungleicher Kräfte kaum wehren kann; ein Konflikt spielt sich dagegen zwischen ungefähr Gleichstarken ab. Mobbing ist ein Gruppenprozess: Salmivalli et al. (1996) beschrieben neben Tätern und Betroffenen die Rollen Helfer, Verstärker, Außenstehende und Verteidiger. Online verstärkt, wer liked oder weiterleitet (Hinduja & Patchin, 2015).",
         "quellen": [
           "Olweus, D. (1993). Bullying at School: What We Know and What We Can Do. Oxford: Blackwell.",
           "Salmivalli, C., Lagerspetz, K., Björkqvist, K., Österman, K. & Kaukiainen, A. (1996). Bullying as a group process: Participant roles and their relations to social status within the group. Aggressive Behavior, 22(1), 1–15.",
           "Hinduja, S. & Patchin, J. W. (2015). Bullying Beyond the Schoolyard (2nd ed.). Thousand Oaks, CA: Corwin."
         ],
         "differenzierung": {
-          "leichter": "Aufgabe 1 mit drei Situationen beginnen; die Rollen vorher an der Tafel erklären.",
+          "leichter": "Aufgabe 1 gemeinsam lösen; die Rollen vorher an den Stühlen erklären.",
           "schwerer": "Die Geschichte weiterschreiben: Was passiert, wenn die Mitlesenden nicht mehr schweigen?"
         },
         "impulse": [
@@ -1355,18 +1176,20 @@
           "Die betroffene Rolle nie spielen lassen; ein leerer Stuhl steht für sie.",
           "Namen in den Beispielen austauschen, falls jemand in der Gruppe so heißt."
         ],
-        "achtung": "Mobbing kann in der Gruppe selbst vorkommen: niemanden nach Erfahrungen fragen. Bei Hinweisen nicht öffentlich klären, die betroffene Person schützen, die zuständige Leitung (Responsable) informieren.",
-        "material": "Eckenschilder, Stühle, Rollenkarten"
+        "achtung": "Niemanden nach eigenen Erfahrungen fragen, keine Rollen mit Gruppenmitgliedern besetzen. Bei Hinweisen auf Mobbing nicht öffentlich klären, die betroffene Person schützen und die zuständige Leitung (Responsable) informieren.",
+        "material": "Karten vom Blatt „Zivilcourage-Karten“, sechs Stühle"
       }
     },
     "fr": {
       "titel": "Pour rire, conflit ou harcèlement ?",
-      "untertitel": "Toute dispute n’est pas du harcèlement – et toute blague n’est pas inoffensive.",
+      "untertitel": "Toute blague n’est pas inoffensive.",
       "bausteine": [
         {
           "art": "aufgabe",
-          "text": "Pour rire, conflit ou harcèlement ? Décide pour chaque situation.",
-          "hinweis": "Si tu hésites, coche deux colonnes. Ce sont justement ces cas que vous discuterez ensuite."
+          "text": "Pour rire, conflit ou harcèlement ? Coche. Tu hésites ? Coche deux colonnes.",
+          "symbole": [
+            "ankreuzen"
+          ]
         },
         {
           "art": "einschaetzung",
@@ -1375,40 +1198,33 @@
             "Conflit",
             "Harcèlement"
           ],
+          "kopffarben": [
+            "gruen",
+            "gelb",
+            "rot"
+          ],
           "items": [
-            "À l’entraînement de handball, deux amis se chambrent à propos de leurs tirs ratés. Tous deux sourient.",
-            "Léa et Diogo se disputent pour savoir qui s’assoit près de la fenêtre pendant la sortie. Après la pause, ils échangent.",
-            "Ana est sans cesse retirée du chat de groupe dès que quelqu’un l’y ajoute.",
-            "Yusuf et Liam se sont disputés à cause d’un jeu et ne se parlent plus depuis deux jours.",
-            "Quelqu’un a filmé Nora en cachette pendant le sport et a partagé la vidéo dans trois groupes.",
-            "Trois plus grands prennent chaque matin le bonnet d’un plus jeune dans le bus et rient."
+            "Deux amis se chambrent, tous deux sourient.",
+            "Yusuf et Liam ne se parlent plus depuis une dispute.",
+            "Ana est sans cesse retirée du chat de groupe.",
+            "Chaque jour, des grands prennent le bonnet de Jang.",
+            "Nora a été filmée en cachette, la vidéo partagée."
           ]
         },
         {
-          "art": "info",
-          "symbol": "merke",
-          "titel": "Quatre caractéristiques du harcèlement",
-          "text": "On parle de harcèlement quand ces éléments se combinent :",
-          "punkte": [
-            "Cela se répète sur une période assez longue.",
-            "Il y a un déséquilibre : un côté est plus fort – plus nombreux, plus âgés, plus populaires.",
+          "art": "ankreuzen",
+          "titel": "Le test : pour un cas de harcèlement ci-dessus, qu’est-ce qui est vrai ?",
+          "spalten": 2,
+          "items": [
+            "Cela se répète.",
+            "Un côté est plus fort.",
             "C’est voulu.",
-            "La personne visée ne peut pas se défendre seule."
+            "Impossible de se défendre seul·e."
           ]
-        },
-        {
-          "art": "text",
-          "text": "Et : une blague n’est une blague que si tout le monde peut en rire – y compris la personne concernée."
-        },
-        {
-          "art": "geschichte",
-          "titel": "Le message vocal",
-          "bild": "figur:jana:traurig",
-          "text": "Nora a envoyé un message vocal dans le chat de la classe ; sa voix tremble un peu. Mathis en fait un clip avec des bruits aigus et le poste. Rafael le transfère dans un autre groupe. Dix personnes réagissent avec des smileys qui rient, la plupart des autres se contentent de lire. Inês écrit en privé à Nora : « C’était vraiment méchant. Je suis de ton côté. » Depuis, chaque message de Nora reçoit le clip en réponse."
         },
         {
           "art": "aufgabe",
-          "text": "Qui joue quel rôle ? Relie.",
+          "text": "Le message vocal : qui a quel rôle ? Relie.",
           "symbole": [
             "verbinden"
           ]
@@ -1416,54 +1232,46 @@
         {
           "art": "zuordnen",
           "titel": [
-            "Dans l’histoire",
-            "Rôle dans le harcèlement"
+            "Dans le chat de la classe",
+            "Rôle"
           ],
           "links": [
-            "Mathis",
-            "Rafael",
-            "les dix avec les smileys qui rient",
-            "ceux qui se contentent de lire",
-            "Inês",
-            "Nora"
+            "Mathis fait le clip moqueur.",
+            "Rafael le transfère.",
+            "Dix envoient des smileys.",
+            "La plupart lisent seulement.",
+            "Inês console Nora en privé."
           ],
           "rechts": [
             "Public qui encourage",
-            "Personne visée",
-            "Agresseur",
             "Défenseuse",
-            "Complice de l’agresseur",
-            "Observateurs passifs"
+            "Agresseur",
+            "Observateurs passifs",
+            "Complice"
           ]
         },
         {
-          "art": "aufgabe",
-          "text": "Qui aurait le plus de pouvoir pour arrêter cela – et pourquoi ?"
-        },
-        {
-          "art": "linien",
-          "anzahl": 3
-        },
-        {
-          "art": "notfall"
+          "art": "info",
+          "symbol": "hilfe",
+          "text": "Une blague n’en est une que si tous peuvent en rire. On te démolit, toi ? Cherche de l’aide : personne de confiance ou, anonymement, Kanner- a Jugendtelefon 116 111."
         }
       ],
       "lehrer": {
-        "ziel": "Les jeunes distinguent blague, conflit et harcèlement, attribuent les rôles dans le harcèlement et comprennent que les témoins peuvent y mettre fin.",
+        "ziel": "Les jeunes distinguent blague, conflit et harcèlement à l’aide de quatre caractéristiques et attribuent les rôles dans le harcèlement. Ils comprennent que les témoins peuvent y mettre fin.",
         "ablauf": [
-          "Jeu des coins (8 min) : lire les situations de la séance, chacun va vers « Pour rire », « Conflit » ou « Harcèlement » ; en déduire les caractéristiques à partir des justifications.",
-          "Tâche 1 individuellement (4 min), puis discuter des cas limites – par exemple la vidéo partagée en cachette : postée une fois, vue souvent.",
-          "Lire l’histoire, tâche 2 à deux (5 min). Souligner : les rôles décrivent un comportement, pas une personne.",
-          "Tâche 3 après la mise en place des chaises (3 min), puis montrer l’encadré d’aide ; chacun inscrit une personne de confiance."
+          "Course des coins (12 min) : lire les situations de la séance ; retourner les quatre cartes de caractéristiques à partir des arguments.",
+          "Tâche 1 seul·e (5 min). Solution : pour rire – conflit – harcèlement – harcèlement – cas limite (filmée une fois, partagée souvent).",
+          "Lire l’histoire, tâche 2 à deux (3 min). Solution : agresseur – complice – public qui encourage – observateurs passifs – défenseuse.",
+          "Suite avec « Fais basculer la scène » : qui a le plus de pouvoir pour arrêter cela ?"
         ],
-        "hintergrund": "Selon Olweus (1993), il y a harcèlement quand une personne est blessée de façon répétée et intentionnelle et qu’elle ne peut guère se défendre en raison d’un rapport de forces inégal ; un conflit, lui, se joue entre personnes à peu près de force égale. Le harcèlement est un processus de groupe : Salmivalli et al. (1996) ont décrit, à côté des agresseurs et des victimes, les rôles d’aides, de renforçateurs, d’observateurs extérieurs et de défenseurs. En ligne s’ajoutent la portée, la durée et la diffusion rapide ; qui like ou transfère renforce (Hinduja & Patchin, 2015). C’est pourquoi les programmes efficaces s’adressent aux témoins.",
+        "hintergrund": "Selon Olweus (1993), il y a harcèlement quand une personne est blessée de façon répétée et intentionnelle et qu’elle ne peut guère se défendre en raison d’un rapport de forces inégal ; un conflit, lui, se joue entre personnes à peu près de force égale. Le harcèlement est un processus de groupe : Salmivalli et al. (1996) ont décrit, à côté des agresseurs et des victimes, les rôles d’aides, de renforçateurs, d’observateurs extérieurs et de défenseurs. En ligne, qui like ou transfère renforce (Hinduja & Patchin, 2015).",
         "quellen": [
           "Olweus, D. (1993). Bullying at School: What We Know and What We Can Do. Oxford: Blackwell.",
           "Salmivalli, C., Lagerspetz, K., Björkqvist, K., Österman, K. & Kaukiainen, A. (1996). Bullying as a group process: Participant roles and their relations to social status within the group. Aggressive Behavior, 22(1), 1–15.",
           "Hinduja, S. & Patchin, J. W. (2015). Bullying Beyond the Schoolyard (2nd ed.). Thousand Oaks, CA: Corwin."
         ],
         "differenzierung": {
-          "leichter": "Commencer la tâche 1 avec trois situations ; expliquer d’abord les rôles au tableau.",
+          "leichter": "Faire la tâche 1 ensemble ; expliquer d’abord les rôles près des chaises.",
           "schwerer": "Écrire la suite de l’histoire : que se passe-t-il quand ceux qui lisent ne se taisent plus ?"
         },
         "impulse": [
@@ -1474,10 +1282,11 @@
           "Ne jamais faire jouer le rôle de la personne visée ; une chaise vide la représente.",
           "Changer les noms dans les exemples si quelqu’un du groupe s’appelle ainsi."
         ],
-        "achtung": "Le harcèlement peut exister dans le groupe même : ne demander d’expériences à personne. En cas d’indices, ne pas clarifier publiquement, protéger la personne visée, informer la direction compétente (responsable).",
-        "material": "Pancartes de coins, chaises, cartes de rôles"
+        "achtung": "Ne demander d’expériences à personne, n’attribuer aucun rôle à des membres du groupe. En cas d’indices de harcèlement, ne pas clarifier publiquement, protéger la personne visée et informer la direction compétente (responsable).",
+        "material": "Cartes de la fiche « Cartes du courage civique », six chaises"
       }
-    }
+    },
+    "look": "spiel"
   },
   {
     "id": "skills-zivilcourage-leiter",
@@ -1492,7 +1301,7 @@
       "einzeln",
       "gruppe"
     ],
-    "dauer": "25 Min.",
+    "dauer": "10–15 Min.",
     "eldib": [
       "K-28",
       "SOZ-26",
@@ -1509,22 +1318,19 @@
     "bild": "icon:ladder",
     "verwandt": [
       "mobbing-cybermobbing",
-      "skills-mobbing-erkennen"
+      "skills-mobbing-erkennen",
+      "skills-zivilcourage-karten"
     ],
     "kurs": [
       "j1-e26"
     ],
     "de": {
       "titel": "Die Zivilcourage-Leiter",
-      "untertitel": "Vom Einfachen zum Mutigen – und immer so, dass du dich selbst nicht gefährdest",
+      "untertitel": "Vom Einfachen zum Mutigen – immer so, dass du sicher bleibst",
       "bausteine": [
         {
-          "art": "text",
-          "text": "Zivilcourage heißt nicht, den Helden zu spielen. Schon wer nicht mitlacht, hört auf, Publikum zu sein. Jede Stufe zählt."
-        },
-        {
           "art": "aufgabe",
-          "text": "Lies die Leiter von unten nach oben. Kreise die Stufe ein, die du dir schon zutraust. Mach einen Stern an die Stufe, die du üben willst.",
+          "text": "Lies die Leiter von unten nach oben. Kreise ein, was du dir schon zutraust. Mach einen Stern an die Stufe, die du üben willst.",
           "symbole": [
             "einkreisen"
           ]
@@ -1532,103 +1338,57 @@
         {
           "art": "leiter",
           "stufen": 6,
-          "unten": "geht fast immer",
-          "oben": "braucht Mut – nur, wenn es für dich sicher ist",
           "beispiele": [
             "Nicht mitlachen, nichts weiterleiten.",
             "Der betroffenen Person zeigen: Ich bin auf deiner Seite – auch später oder per Nachricht.",
             "Andere dazuholen. Zu zweit oder zu dritt ist es leichter.",
             "Einer erwachsenen Person Bescheid sagen. Das ist Hilfe holen, kein Petzen.",
             "Online: Beweise sichern, melden, nicht liken und nicht teilen.",
-            "Direkt „Stopp“ sagen."
+            "Direkt „Stopp“ sagen – nur, wenn es für dich sicher ist."
           ]
         },
         {
           "art": "info",
-          "symbol": "tipp",
-          "titel": "Online helfen – so geht’s",
-          "punkte": [
-            "Nicht liken, nicht teilen, nicht mitkommentieren.",
-            "Screenshot mit Name, Datum und Uhrzeit als Beweis sichern und den Beitrag in der App melden.",
-            "Nacktbilder nie speichern oder weiterleiten – auch nicht als Beweis. Sofort einer erwachsenen Person Bescheid sagen."
-          ]
+          "symbol": "achtung",
+          "text": "Nacktbilder sind kein Beweis: nie speichern, nie weiterleiten – auch nicht, um zu helfen. Sofort einer erwachsenen Person Bescheid sagen."
         },
         {
-          "art": "info",
-          "symbol": "merke",
-          "titel": "Petzen oder Hilfe holen?",
-          "text": "Petzen will jemandem schaden. Hilfe holen will jemanden schützen – und das ist immer in Ordnung."
-        },
-        {
-          "art": "seitenumbruch"
-        },
-        {
-          "art": "aufgabe",
-          "text": "Was tust du? Wähle zwei Situationen und schreib die Stufe und deinen ersten Schritt auf."
-        },
-        {
-          "art": "info",
-          "symbol": "wissen",
-          "titel": "Drei Situationen",
-          "punkte": [
-            "A: Im Unterricht werden Geräusche gemacht, sobald ein Mitschüler etwas sagt.",
-            "B: Unter dem Video einer Mitschülerin stehen gemeine Kommentare.",
-            "C: Eine Neue wird wegen ihrer Kleidung ausgelacht und steht in der Pause allein."
-          ]
-        },
-        {
-          "art": "tabelle",
-          "spalten": [
-            "Situation",
-            "Stufe",
-            "Mein erster Schritt"
-          ],
-          "breiten": [
-            1,
-            0.7,
-            3
-          ],
-          "zeilen": 2,
-          "beispiel": [
-            "Foto im Chat",
-            "1 und 2",
-            "Ich leite es nicht weiter und schreibe der Person privat, dass ich das nicht okay finde."
-          ]
-        },
-        {
-          "art": "aufgabe",
-          "text": "Dein Plan: Was tust du, wenn du so etwas das nächste Mal mitbekommst?"
-        },
-        {
-          "art": "wennDann",
-          "zeilen": 1,
-          "beispiele": [
+          "art": "notfall",
+          "text": "Stufe 4: Wer ist deine erwachsene Person?",
+          "eintraege": [
             {
-              "wenn": "Wenn im Klassenchat jemand fertiggemacht wird,",
-              "dann": "like ich nichts, mache einen Screenshot und zeige ihn meiner Klassenlehrerin."
+              "name": "Kanner- a Jugendtelefon (anonym, kostenlos)",
+              "nummer": "116 111"
+            },
+            {
+              "name": "Notruf – wenn jemand in Gefahr ist",
+              "nummer": "112"
             }
           ]
         },
         {
-          "art": "notfall"
+          "art": "mission",
+          "text": "Zeig diese Woche einer Person, die oft allein steht, dass du sie siehst: ein Hallo, ein Platz neben dir oder eine Nachricht.",
+          "tage": 1,
+          "beweis": "ein Daumen reicht."
         }
       ],
       "lehrer": {
-        "ziel": "Die Jugendlichen kennen sechs abgestufte, sichere Handlungsmöglichkeiten bei Mobbing, schätzen ein, welche sie sich zutrauen, und planen einen ersten Schritt.",
+        "ziel": "Die Jugendlichen kennen sechs abgestufte, sichere Handlungsmöglichkeiten bei Mobbing und schätzen ein, welche sie sich zutrauen. Sie wissen, an welche erwachsene Person sie sich wenden.",
         "ablauf": [
-          "Leiter am Boden (5 Min.): sechs A4-Blätter als Sprossen auslegen und von unten nach oben durchgehen. Frage: „Petzen oder Hilfe holen – wo ist der Unterschied?“",
-          "Situationen (12 Min.): Die Leitung liest drei Karten (M1–M6) vor, alle stellen sich auf ihre Stufe, zwei oder drei begründen.",
-          "Aufgaben 1 bis 3 allein (8 Min.); die Beispielzeilen vorher gemeinsam lesen.",
-          "Abschluss: Hilfe-Kasten besprechen, eine Vertrauensperson eintragen, das Plakat mit den Anlaufstellen aufhängen."
+          "Leiter am Boden (4 Min.): die sechs Sprossen (Blatt „Zivilcourage-Karten“) auslegen und die Ideen-Zettel aus „Kipp die Bühne“ zuordnen.",
+          "Leiter-Lauf und Würfel-Leiter (18 Min.) mit den Karten M1–M6. Frage: „Petzen oder Hilfe holen – wo ist der Unterschied?“",
+          "Blatt allein (6 Min.): einkreisen, Stern setzen, Vertrauensperson eintragen. Den Aushang mit den Hilfenummern zeigen.",
+          "Abschluss: Mission vorlesen. Beim nächsten Treffen reicht ein Daumen."
         ],
-        "hintergrund": "Zuschauende greifen oft nicht ein, obwohl sie Mobbing ablehnen. Latané und Darley (1970) erklären das mit verteilter Verantwortung: Je mehr Menschen da sind, desto eher wartet jede Person auf die anderen – und wer nicht weiß, was er tun kann, bleibt passiv. Konkrete, abgestufte Handlungen senken diese Hürde; schon die unterste Stufe entzieht dem Täter Publikum. Das KiVa-Programm, das gezielt die Zuschauenden stärkt, verringerte Mobbing messbar (Kärnä et al., 2011). Online gilt: nicht zurückschreiben, Beweise sichern, melden, Erwachsene einbeziehen (Hinduja & Patchin, 2015).",
+        "hintergrund": "Zuschauende greifen oft nicht ein, obwohl sie Mobbing ablehnen. Latané und Darley (1970) erklären das mit verteilter Verantwortung: Je mehr Menschen da sind, desto eher wartet jede Person auf die anderen – und wer nicht weiß, was er tun kann, bleibt passiv. Konkrete, abgestufte Handlungen senken diese Hürde. Das KiVa-Programm, das gezielt die Zuschauenden stärkt, verringerte Mobbing messbar (Kärnä et al., 2011). Online gilt: nicht zurückschreiben, Beweise sichern, melden, Erwachsene einbeziehen (Hinduja & Patchin, 2015).",
         "quellen": [
           "Latané, B. & Darley, J. M. (1970). The Unresponsive Bystander: Why Doesn’t He Help? New York: Appleton-Century-Crofts.",
           "Kärnä, A., Voeten, M., Little, T. D., Poskiparta, E., Kaljonen, A. & Salmivalli, C. (2011). A large-scale evaluation of the KiVa antibullying program: Grades 4–6. Child Development, 82(1), 311–330.",
           "Hinduja, S. & Patchin, J. W. (2015). Bullying Beyond the Schoolyard (2nd ed.). Thousand Oaks, CA: Corwin."
         ],
         "differenzierung": {
-          "leichter": "Nur Aufgabe 1; Beispiele für die Stufen 1 und 2 gemeinsam sammeln.",
+          "leichter": "Nur die Stufen 1 bis 4 besprechen; zu jeder Stufe gemeinsam ein Beispiel sammeln.",
           "schwerer": "Einen Plan für eine ganze Klasse entwerfen: Was könnten zehn Zuschauende gemeinsam tun?"
         },
         "impulse": [
@@ -1636,24 +1396,20 @@
           "Was bräuchtet ihr, um eine Stufe höher zu kommen?"
         ],
         "tipps": [
-          "Die Leiter als Plakat im Raum hängen lassen.",
-          "Vorab klären, wer in der Schule bei Mobbing zuständig ist, und die Namen auf das Plakat schreiben."
+          "Online-Beweise: Screenshot mit Name, Datum und Uhrzeit, dann den Beitrag in der App melden.",
+          "Vorab klären, wer in der Schule bei Mobbing zuständig ist, und die Namen auf den Aushang schreiben."
         ],
-        "achtung": "Niemanden zu Stufe 6 drängen. Ist jemand aus der Gruppe betroffen oder beteiligt: nicht öffentlich klären, Einzelgespräche führen, die zuständige Leitung (Responsable) informieren.",
-        "material": "A4-Blätter mit den Stufen, Karten M1–M6"
+        "achtung": "Niemanden zu Stufe 6 drängen. Ist jemand aus der Gruppe betroffen oder beteiligt: nicht öffentlich klären, Einzelgespräche führen und die zuständige Leitung (Responsable) informieren.",
+        "material": "Sprossen-Karten, Situationskarten M1–M6, ein Würfel, Aushang mit Hilfenummern"
       }
     },
     "fr": {
       "titel": "L’échelle du courage civique",
-      "untertitel": "Du plus simple au plus courageux – et toujours sans te mettre toi-même en danger",
+      "untertitel": "Du plus simple au plus courageux – toujours en restant en sécurité",
       "bausteine": [
         {
-          "art": "text",
-          "text": "Le courage civique, ce n’est pas jouer les héros. Rien que ne pas rire avec les autres, c’est cesser d’être le public. Chaque échelon compte."
-        },
-        {
           "art": "aufgabe",
-          "text": "Lis l’échelle de bas en haut. Entoure l’échelon que tu te sens déjà capable de faire. Mets une étoile sur l’échelon que tu veux t’exercer à faire.",
+          "text": "Lis l’échelle de bas en haut. Entoure ce que tu te sens déjà capable de faire. Mets une étoile à l’échelon que tu veux exercer.",
           "symbole": [
             "einkreisen"
           ]
@@ -1661,103 +1417,57 @@
         {
           "art": "leiter",
           "stufen": 6,
-          "unten": "presque toujours possible",
-          "oben": "demande du courage – seulement si c’est sans danger pour toi",
           "beispiele": [
             "Ne pas rire avec les autres, ne rien transférer.",
             "Montrer à la personne visée : je suis de ton côté – aussi plus tard ou par message.",
             "Aller chercher d’autres personnes. À deux ou trois, c’est plus facile.",
             "Prévenir un adulte. C’est aller chercher de l’aide, pas cafarder.",
             "En ligne : sauvegarder des preuves, signaler, ne pas liker et ne pas partager.",
-            "Dire directement « Stop »."
+            "Dire directement « Stop » – seulement si c’est sans danger pour toi."
           ]
         },
         {
           "art": "info",
-          "symbol": "tipp",
-          "titel": "Aider en ligne – comment faire",
-          "punkte": [
-            "Ne pas liker, ne pas partager, ne pas commenter.",
-            "Sauvegarder une capture d’écran avec le nom, la date et l’heure comme preuve et signaler la publication dans l’appli.",
-            "Ne jamais enregistrer ni transférer des photos de nu – pas même comme preuve. Prévenir immédiatement un adulte."
-          ]
+          "symbol": "achtung",
+          "text": "Les photos de nu ne sont pas des preuves : ne jamais les enregistrer ni les transférer – pas même pour aider. Prévenir tout de suite un adulte."
         },
         {
-          "art": "info",
-          "symbol": "merke",
-          "titel": "Cafarder ou aller chercher de l’aide ?",
-          "text": "Cafarder veut nuire à quelqu’un. Aller chercher de l’aide veut protéger quelqu’un – et c’est toujours légitime."
-        },
-        {
-          "art": "seitenumbruch"
-        },
-        {
-          "art": "aufgabe",
-          "text": "Que fais-tu ? Choisis deux situations et note l’échelon et ton premier pas."
-        },
-        {
-          "art": "info",
-          "symbol": "wissen",
-          "titel": "Trois situations",
-          "punkte": [
-            "A : En classe, on fait du bruit dès qu’un camarade dit quelque chose.",
-            "B : Sous la vidéo d’une camarade, il y a des commentaires méchants.",
-            "C : Une nouvelle est moquée pour ses vêtements et reste seule à la récré."
-          ]
-        },
-        {
-          "art": "tabelle",
-          "spalten": [
-            "Situation",
-            "Échelon",
-            "Mon premier pas"
-          ],
-          "breiten": [
-            1,
-            0.7,
-            3
-          ],
-          "zeilen": 2,
-          "beispiel": [
-            "Photo dans le chat",
-            "1 et 2",
-            "Je ne la transfère pas et je lui écris en privé que je ne trouve pas ça correct."
-          ]
-        },
-        {
-          "art": "aufgabe",
-          "text": "Ton plan : que fais-tu la prochaine fois que tu remarques quelque chose de ce genre ?"
-        },
-        {
-          "art": "wennDann",
-          "zeilen": 1,
-          "beispiele": [
+          "art": "notfall",
+          "text": "Échelon 4 : qui est ton adulte de confiance ?",
+          "eintraege": [
             {
-              "wenn": "Si, dans le chat de la classe, quelqu’un se fait démolir,",
-              "dann": "je ne like rien, je fais une capture d’écran et je la montre à ma titulaire de classe."
+              "name": "Kanner- a Jugendtelefon (anonyme, gratuit)",
+              "nummer": "116 111"
+            },
+            {
+              "name": "Urgences – si quelqu’un est en danger",
+              "nummer": "112"
             }
           ]
         },
         {
-          "art": "notfall"
+          "art": "mission",
+          "text": "Cette semaine, montre à une personne souvent seule que tu la vois : un bonjour, une place à côté de toi ou un message.",
+          "tage": 1,
+          "beweis": "un pouce suffit."
         }
       ],
       "lehrer": {
-        "ziel": "Les jeunes connaissent six façons d’agir, graduées et sûres, face au harcèlement, estiment lesquelles ils se sentent capables de faire et planifient un premier pas.",
+        "ziel": "Les jeunes connaissent six façons d’agir, graduées et sûres, face au harcèlement et estiment lesquelles ils se sentent capables de faire. Ils savent à quel adulte s’adresser.",
         "ablauf": [
-          "Échelle au sol (5 min) : poser six feuilles A4 comme échelons et les parcourir de bas en haut. Question : « Cafarder ou aller chercher de l’aide – quelle différence ? »",
-          "Situations (12 min) : l’adulte lit trois cartes (M1–M6), chacun se place sur son échelon, deux ou trois personnes justifient.",
-          "Tâches 1 à 3 individuellement (8 min) ; lire d’abord ensemble les lignes d’exemple.",
-          "Conclusion : discuter l’encadré d’aide, inscrire une personne de confiance, accrocher l’affiche avec les services de contact."
+          "L’échelle au sol (4 min) : poser les six échelons (fiche « Cartes du courage civique ») et y classer les idées de « Fais basculer la scène ».",
+          "Course de l’échelle et échelle au dé (18 min) avec les cartes M1–M6. Question : « Cafarder ou aller chercher de l’aide – quelle différence ? »",
+          "Fiche seul·e (6 min) : entourer, mettre l’étoile, noter une personne de confiance. Montrer l’affiche avec les numéros d’aide.",
+          "Clôture : lire la mission. À la prochaine séance, un pouce suffit."
         ],
-        "hintergrund": "Les témoins n’interviennent souvent pas, bien qu’ils désapprouvent le harcèlement. Latané et Darley (1970) l’expliquent par la responsabilité diffuse : plus il y a de monde, plus chacun attend les autres – et qui ne sait pas quoi faire reste passif. Des actions concrètes et graduées abaissent cet obstacle ; dès l’échelon le plus bas, l’agresseur perd son public. Le programme KiVa, qui renforce spécifiquement les témoins, a réduit le harcèlement de façon mesurable (Kärnä et al., 2011). En ligne : ne pas répondre, sauvegarder les preuves, signaler, impliquer des adultes (Hinduja & Patchin, 2015).",
+        "hintergrund": "Les témoins n’interviennent souvent pas, bien qu’ils désapprouvent le harcèlement. Latané et Darley (1970) l’expliquent par la responsabilité diffuse : plus il y a de monde, plus chacun attend les autres – et qui ne sait pas quoi faire reste passif. Des actions concrètes et graduées abaissent cet obstacle. Le programme KiVa, qui renforce spécifiquement les témoins, a réduit le harcèlement de façon mesurable (Kärnä et al., 2011). En ligne : ne pas répondre, sauvegarder les preuves, signaler, impliquer des adultes (Hinduja & Patchin, 2015).",
         "quellen": [
           "Latané, B. & Darley, J. M. (1970). The Unresponsive Bystander: Why Doesn’t He Help? New York: Appleton-Century-Crofts.",
           "Kärnä, A., Voeten, M., Little, T. D., Poskiparta, E., Kaljonen, A. & Salmivalli, C. (2011). A large-scale evaluation of the KiVa antibullying program: Grades 4–6. Child Development, 82(1), 311–330.",
           "Hinduja, S. & Patchin, J. W. (2015). Bullying Beyond the Schoolyard (2nd ed.). Thousand Oaks, CA: Corwin."
         ],
         "differenzierung": {
-          "leichter": "Seulement la tâche 1 ; rechercher ensemble des exemples pour les échelons 1 et 2.",
+          "leichter": "Ne discuter que les échelons 1 à 4 ; chercher ensemble un exemple pour chacun.",
           "schwerer": "Concevoir un plan pour toute une classe : que pourraient faire ensemble dix témoins ?"
         },
         "impulse": [
@@ -1765,13 +1475,14 @@
           "De quoi auriez-vous besoin pour monter d’un échelon ?"
         ],
         "tipps": [
-          "Laisser l’échelle accrochée en affiche dans la salle.",
-          "Clarifier d’avance qui est responsable du harcèlement à l’école et écrire les noms sur l’affiche."
+          "Preuves en ligne : capture d’écran avec le nom, la date et l’heure, puis signaler la publication dans l’appli.",
+          "Clarifier d’avance qui s’occupe du harcèlement à l’école et écrire les noms sur l’affiche."
         ],
-        "achtung": "Ne pousser personne vers l’échelon 6. Si quelqu’un du groupe est concerné ou impliqué : ne pas clarifier publiquement, mener des entretiens individuels, informer la direction compétente (responsable).",
-        "material": "Feuilles A4 avec les échelons, cartes M1–M6"
+        "achtung": "Ne pousser personne vers l’échelon 6. Si quelqu’un du groupe est concerné ou impliqué : ne pas clarifier publiquement, mener des entretiens individuels et informer la direction compétente (responsable).",
+        "material": "Cartes des échelons, cartes de situation M1–M6, un dé, affiche avec les numéros d’aide"
       }
-    }
+    },
+    "look": "spiel"
   },
   {
     "id": "skills-social-media-check",
