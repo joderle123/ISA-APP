@@ -85,11 +85,11 @@
             "100"
           ],
           "items": [
-            "Einheit 11",
-            "Einheit 12",
-            "Einheit 13",
-            "Einheit 14",
-            "Einheit 15"
+            "1. Mal",
+            "2. Mal",
+            "3. Mal",
+            "4. Mal",
+            "5. Mal"
           ]
         },
         {
@@ -181,11 +181,11 @@
             "100"
           ],
           "items": [
-            "Séance 11",
-            "Séance 12",
-            "Séance 13",
-            "Séance 14",
-            "Séance 15"
+            "1re fois",
+            "2e fois",
+            "3e fois",
+            "4e fois",
+            "5e fois"
           ]
         },
         {
@@ -1166,7 +1166,7 @@
         {
           "art": "aufgabe",
           "text": "Woran merkst du, dass du Richtung Gelb gehst? Kreuz deine Warnsignale an.",
-          "hinweis": "Deine Gefühls-Landkarte aus Einheit 9 hilft dir.",
+          "hinweis": "Deine Gefühls-Landkarte hilft dir.",
           "symbole": [
             "ankreuzen"
           ]

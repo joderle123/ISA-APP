@@ -2,7 +2,8 @@ import { build, defineConfig, type Plugin, type PluginOption } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import { viteSingleFile } from 'vite-plugin-singlefile'
-import { readFileSync, readdirSync } from 'node:fs'
+import { existsSync, readFileSync, readdirSync, writeFileSync } from 'node:fs'
+import { resolve } from 'node:path'
 import { gzipSync } from 'node:zlib'
 import { fileURLToPath } from 'node:url'
 
@@ -15,6 +16,17 @@ const PDF_ENTRY = fileURLToPath(new URL('./src/lib/pdf.tsx', import.meta.url))
 const PDFJS_ENTRY = fileURLToPath(new URL('./src/lib/pdfjs-modul.ts', import.meta.url))
 
 const gzipBase64 = (text: string) => gzipSync(text, { level: 9 }).toString('base64')
+
+/**
+ * 5. The compressed blocks (17 of 22 MB) are not part of the JavaScript source: the browser would have to scan them as
+ *    string literals before the first line runs (about 1 s, several seconds on old PCs). They sit as inert data blocks
+ *    (<script type="application/octet-stream">) at the end of the page and are read with textContent when needed.
+ */
+const bloecke = new Map<string, string>()
+function block(id: string, b64: string): string {
+  bloecke.set(id, b64)
+  return `document.getElementById(${JSON.stringify('isa-gz-' + id)}).textContent`
+}
 
 /**
  * Loading speed of the single offline file (build only; `npm run dev` is
@@ -51,7 +63,7 @@ async function iifeGz(entry: string, name: string, plugins: PluginOption[] = [])
 function ladeCode(fn: string, name: string, code: string, fehler: string): string {
   return (
     `import { inflateText } from ${JSON.stringify(INFLATE)}\n` +
-    `const CODE = ${JSON.stringify(code)}\n` +
+    `const CODE = ${block(name, code)}\n` +
     `let ready = null\n` +
     `export function ${fn}() {\n` +
     `  ready = ready || inflateText(CODE).then((code) => {\n` +
@@ -71,10 +83,25 @@ function ladeCode(fn: string, name: string, code: string, fehler: string): strin
 function compactOfflineBundle(): Plugin {
   let pdfBundle = ''
   let pdfjsBundle = ''
+  let ausgabe = ''
   return {
     name: 'isa-compact-offline-bundle',
     apply: 'build',
     enforce: 'pre',
+    configResolved(config) {
+      ausgabe = resolve(config.root, config.build.outDir, 'index.html')
+    },
+    /* Nach dem Schreiben der einen Datei: die Datenblöcke ans Ende des <body> setzen (das Programm läuft erst, wenn die Seite gelesen ist) */
+    closeBundle() {
+      if (!bloecke.size || !existsSync(ausgabe)) return
+      const html = readFileSync(ausgabe, 'utf8')
+      const fehlt = [...bloecke.keys()].filter((id) => !html.includes('isa-gz-' + id))
+      if (fehlt.length) throw new Error('Datenblöcke ohne Verweis im Programm: ' + fehlt.join(', '))
+      const ende = html.lastIndexOf('</body>')
+      if (ende < 0) throw new Error('index.html ohne </body>')
+      const daten = [...bloecke].map(([id, b64]) => `<script type="application/octet-stream" id="isa-gz-${id}">${b64}</script>`).join('\n')
+      writeFileSync(ausgabe, html.slice(0, ende) + daten + '\n' + html.slice(ende))
+    },
     async buildStart() {
       // 4. pdf.js (Passgenau-Vorschau, T-M8): eigenes Modul, erst bei der ersten Vorschau entpackt
       pdfjsBundle = await iifeGz(PDFJS_ENTRY, '__isaPdfjs')
@@ -99,7 +126,7 @@ function compactOfflineBundle(): Plugin {
         }
         return (
           `import { inflateJson } from ${JSON.stringify(INFLATE)}\n` +
-          `export const ${name} = await inflateJson(${JSON.stringify(gzipBase64(JSON.stringify(list)))})\n`
+          `export const ${name} = await inflateJson(${block('material-' + data[1], gzipBase64(JSON.stringify(list)))})\n`
         )
       }
       // 1b. Arbeitsblätter (src/data/blaetter/*.json): alle Dateien zusammen komprimiert einbetten und beim Start
@@ -110,7 +137,7 @@ function compactOfflineBundle(): Plugin {
         for (const d of readdirSync(ordner).sort()) if (d.endsWith('.json')) dateien['./' + d] = JSON.parse(readFileSync(ordner + d, 'utf8'))
         return (
           `import { inflateJson } from ${JSON.stringify(INFLATE)}\n` +
-          `export const blattDateien = await inflateJson(${JSON.stringify(gzipBase64(JSON.stringify(dateien)))})\n`
+          `export const blattDateien = await inflateJson(${block('blaetter', gzipBase64(JSON.stringify(dateien)))})\n`
         )
       }
       // 1c. Passgenau (src/passgenau/daten.ts): Katalog, ELDiB-Bank, CREW, neue Inhalte als EIN komprimierter Block,
@@ -123,7 +150,7 @@ function compactOfflineBundle(): Plugin {
         const daten = { bausteine: json('bausteine.json'), schritte: json('schritte.json'), eldib: json('eldib.json'), crew: json('crew.json'), ff: ff('einheiten-7e.json'), ffAnnexe: ff('annexe/einheiten-7e.json'), inhalte }
         return (
           `import { inflateJson } from ${JSON.stringify(INFLATE)}\n` +
-          `const CODE = ${JSON.stringify(gzipBase64(JSON.stringify(daten)))}\n` +
+          `const CODE = ${block('passgenau', gzipBase64(JSON.stringify(daten)))}\n` +
           `let laden = null\n` +
           `export function ladeDaten() {\n` +
           `  laden = laden || inflateJson(CODE)\n` +

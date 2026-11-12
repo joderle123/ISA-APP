@@ -7608,7 +7608,7 @@
             },
             {
               "titel": "Erzählt",
-              "text": "Ein Spiel aus dem Kurs, das ihr sofort wieder spielen würdet",
+              "text": "Ein Spiel aus diesem Jahr, das ihr sofort wieder spielen würdet",
               "nummer": 11,
               "farbe": "orange"
             },
@@ -7818,7 +7818,7 @@
       "bausteine": [
         {
           "art": "vertrag",
-          "titel": "Ein Jahr Skills-Kurs",
+          "titel": "Ein Jahr Skills",
           "text": "Du hast ein Schuljahr lang mitgemacht: Gefühle benannt, Skills ausprobiert, Grenzen gesetzt, zugehört und anderen den Rücken gestärkt. Dein Skills-Pass ist im Ziel.",
           "unterschriften": [
             "Leitung",
@@ -7887,7 +7887,7 @@
       "bausteine": [
         {
           "art": "vertrag",
-          "titel": "Une année de cours de skills",
+          "titel": "Une année de skills",
           "text": "Tu as participé pendant toute une année scolaire : tu as nommé des émotions, essayé des skills, posé des limites, écouté et encouragé les autres. Ton passeport Skills est à l’arrivée.",
           "unterschriften": [
             "Animateur·rice",

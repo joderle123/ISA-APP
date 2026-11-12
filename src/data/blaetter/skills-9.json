@@ -536,10 +536,6 @@
           "text": "Hilfe bei Problemen im Netz",
           "eintraege": [
             {
-              "name": "BEE SECURE Helpline (anonym, kostenlos): Cybermobbing, Erpressung mit Bildern",
-              "nummer": "8002 1234"
-            },
-            {
               "name": "Kanner- a Jugendtelefon (anonym, kostenlos)",
               "nummer": "116 111"
             }
@@ -618,10 +614,6 @@
           "art": "notfall",
           "text": "Aide en cas de problème sur internet",
           "eintraege": [
-            {
-              "name": "BEE SECURE Helpline (anonyme, gratuit) : cyberharcèlement, chantage avec des images",
-              "nummer": "8002 1234"
-            },
             {
               "name": "Kanner- a Jugendtelefon (anonyme, gratuit)",
               "nummer": "116 111"

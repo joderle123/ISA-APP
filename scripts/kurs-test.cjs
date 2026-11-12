@@ -70,7 +70,7 @@ function pdfLesen(datei) {
   page.on('console', (m) => m.type() === 'error' && meldungen.push('console: ' + m.text()))
 
   await page.goto(DATEI + '#kurs')
-  await page.evaluate(() => localStorage.clear())
+  await page.evaluate(() => { localStorage.clear(); localStorage.setItem('cdse_hub_skillskurs', '1') })   // der Kurs ist nur für freigeschaltete Konten sichtbar (lib/nutzer kursFrei)
   await page.reload()
   await page.waitForSelector('.ku-held')
 
@@ -139,7 +139,7 @@ function pdfLesen(datei) {
   }
 
   // Heute gehalten → Übersicht zeigt die nächste Einheit
-  await page.click('.ku-einheit-aktionen .btn-primary')
+  await page.click('.ku-einheit-aktionen button:has-text("Heute gehalten")')
   pruefe(await page.locator('.ku-gehalten').isVisible(), '„Gehalten am“ erscheint')
   await page.click('.ku-einheit-nav .link-btn')
   await page.waitForSelector('.ku-held')
@@ -239,10 +239,10 @@ function pdfLesen(datei) {
   const wort = aufgabe && (aufgabe.text.match(/[A-Za-zÄÖÜäöüß]{7,}/g) ?? []).find((w) => !kursBlatt.de.titel.toLowerCase().includes(w.toLowerCase()))
   if (wort) {
     await page.goto(DATEI)
-    await page.waitForSelector('main#blaetter article.bl-karte')
+    await page.waitForSelector('#blaetter article.bl-karte')
     await page.fill('input[placeholder^="Suchen:"]', wort)
     await page.waitForTimeout(300)
-    const titel = await page.$$eval('main#blaetter article.bl-karte h3', (els) => els.map((x) => x.textContent))
+    const titel = await page.$$eval('#blaetter article.bl-karte h3', (els) => els.map((x) => x.textContent))
     pruefe(titel.includes(kursBlatt.de.titel), `Kurs-Blatt „${kursBlatt.de.titel}“ über „${wort}“ aus seiner Aufgabe gefunden`)
   }
 
@@ -254,7 +254,9 @@ function pdfLesen(datei) {
   if ((await page.locator('.ku-blaetter button').count()) > 0) {
     await page.locator('.ku-blaetter button').first().click()
     await page.waitForSelector('dialog.bl-detail[open]')
-    pruefe((await page.locator('dialog.bl-detail[open] .seg').count()) === 0, 'Kurs-Blatt ohne Französisch: keine Sprachwahl, auch wenn FR gemerkt ist')
+    // seit dem neuen Look gibt es die Kurs-Blätter auch auf Französisch: dann steht die Sprachwahl im Dialog, sonst nicht
+    const ersteFr = !!blaetter.get((e1.blaetter ?? [])[0])?.fr
+    pruefe(((await page.locator('dialog.bl-detail[open] .seg').count()) > 0) === ersteFr, 'Kurs-Blatt: Sprachwahl nur, wenn es das Blatt auch auf Französisch gibt')
     await page.click('dialog.bl-detail .icon-btn[aria-label="Schließen"]')
     const dl = page.waitForEvent('download', { timeout: 120000 })
     await page.locator('.ku-einheit-aktionen button', { hasText: 'Blätter für die Gruppe (PDF)' }).click()
@@ -289,9 +291,9 @@ function pdfLesen(datei) {
   // Reiterwechsel und zurück
   await page.goto(DATEI + '#kurs')
   await page.waitForSelector('.ku-held')
-  await page.click('.haupt-reiter button:has-text("Arbeitsblätter")')
+  await page.click('.haupt-reiter button:has-text("Blätter")')
   pruefe(!(await page.locator('.ku-held').isVisible()), 'Kurs verschwindet beim Reiterwechsel')
-  await page.click('.haupt-reiter button:has-text("Kurs")')
+  await page.click('.haupt-reiter button:has-text("Skills")')
   pruefe(await page.locator('.ku-held').isVisible(), 'Kurs erscheint wieder')
   pruefe(page.url().endsWith('#kurs'), 'Hash #kurs nach Reiterwechsel')
 
@@ -299,15 +301,15 @@ function pdfLesen(datei) {
   const zeigt = (sel) => page.waitForSelector(sel, { timeout: 5000 }).then(() => true, () => false)
   await page.goto(DATEI + '#kurs=' + e1.id)
   await page.waitForSelector('.ku-einheit-kopf')
-  await page.click('.haupt-reiter button:has-text("Arbeitsblätter")')
-  await page.click('.haupt-reiter button:has-text("Kurs")')
+  await page.click('.haupt-reiter button:has-text("Blätter")')
+  await page.click('.haupt-reiter button:has-text("Skills")')
   pruefe(await page.locator('.ku-einheit-kopf').isVisible(), 'Reiterwechsel: die offene Einheit bleibt')
   pruefe(page.url().endsWith('#kurs=' + e1.id), 'Reiterwechsel: Hash nennt die offene Einheit')
   await page.click('.ku-einheit-nav .link-btn')
   pruefe((await zeigt('.ku-held')) && page.url().endsWith('#kurs'), '„Jahresweg“ nach Reiterwechsel führt zur Übersicht')
   await page.goBack()
   pruefe((await zeigt('.ku-einheit-kopf')) && page.url().endsWith('#kurs=' + e1.id), 'Zurück führt wieder zur Einheit')
-  await page.click('.haupt-reiter button:has-text("Kurs")')
+  await page.click('.haupt-reiter button:has-text("Skills")')
   pruefe((await zeigt('.ku-held')) && page.url().endsWith('#kurs'), 'Klick auf den offenen Reiter „Skills-Kurs“ führt zur Übersicht')
   await page.goBack()
   pruefe((await zeigt('.ku-einheit-kopf')) && page.url().endsWith('#kurs=' + e1.id), 'danach führt Zurück wieder zur Einheit')
