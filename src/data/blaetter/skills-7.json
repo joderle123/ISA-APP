@@ -1496,7 +1496,7 @@
     "sozialform": [
       "einzeln"
     ],
-    "dauer": "20–25 Min.",
+    "dauer": "20 Min., danach eine Woche",
     "eldib": [
       "V-29",
       "V-32",
@@ -1520,117 +1520,89 @@
     ],
     "de": {
       "titel": "Mein Social-Media-Check",
-      "untertitel": "Ehrlich zu mir selbst – ohne schlechtes Gewissen",
+      "untertitel": "Dein Handy, deine Regeln: Was tut dir online gut – und was zieht Energie?",
       "bausteine": [
         {
           "art": "aufgabe",
-          "text": "Erst schätzen, dann nachschauen. Die Zahlen bleiben bei dir.",
-          "hinweis": "Die echte Zeit steht in den Einstellungen deines Handys, meist unter „Bildschirmzeit“ oder „Digital Wellbeing“."
-        },
-        {
-          "art": "satzanfaenge",
-          "items": [
-            "Geschätzte Bildschirmzeit pro Tag: …",
-            "Echte Bildschirmzeit pro Tag: …",
-            "Die App, die am meisten Zeit frisst: …"
-          ],
-          "linien": 1
-        },
-        {
-          "art": "aufgabe",
-          "text": "Nach 30 Minuten Scrollen fühle ich mich meistens …",
-          "hinweis": "Kreuze an, was passt – mehrere Kreuze sind erlaubt."
-        },
-        {
-          "art": "ankreuzen",
-          "spalten": 3,
-          "frei": 1,
-          "items": [
-            "gut unterhalten",
-            "entspannt",
-            "verbunden mit anderen",
-            "inspiriert",
-            "müde",
-            "leer",
-            "neidisch",
-            "gestresst",
-            "schlechter als vorher"
+          "text": "Wette mit dir selbst: erst schätzen, dann nachschauen.",
+          "hinweis": "Die echte Zeit steht in den Einstellungen unter „Bildschirmzeit“. Die Zahlen bleiben bei dir.",
+          "symbole": [
+            "schreiben"
           ]
         },
         {
-          "art": "info",
-          "symbol": "wissen",
-          "titel": "Warum Aufhören so schwer ist",
-          "text": "Viele Apps sind so gebaut, dass du bleibst: Der Feed hört nie auf, Videos starten von selbst, Likes und rote Punkte locken zurück. Ein Algorithmus merkt sich, wobei du hängen bleibst, und zeigt dir mehr davon. Wer das weiß, kann bewusster entscheiden."
-        },
-        {
-          "art": "aufgabe",
-          "text": "Was lädt dich online auf – und was kostet dich Energie?"
-        },
-        {
-          "art": "batterie",
-          "laden": "Online lädt mich auf",
-          "leeren": "Online kostet mich Energie",
-          "linien": 3
-        },
-        {
-          "art": "seitenumbruch"
-        },
-        {
-          "art": "aufgabe",
-          "text": "Mein Plan: Schreib eine Sache auf, die du ändern willst – klein und machbar."
-        },
-        {
-          "art": "satzanfaenge",
+          "art": "formfelder",
+          "form": "blase",
+          "spalten": 3,
+          "hoehe": 2,
           "items": [
-            "So viel Zeit will ich täglich höchstens am Handy verbringen: …",
-            "Diese App will ich weniger nutzen: …",
-            "Das mache ich stattdessen: …"
+            "Geschätzt pro Tag",
+            "Gemessen pro Tag",
+            "Mein größter Zeitfresser"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was lädt dich online auf, was zieht Energie? Male aus.",
+          "symbole": [
+            "malen"
+          ]
+        },
+        {
+          "art": "balken",
+          "stufen": 5,
+          "pole": [
+            "zieht Energie",
+            "lädt auf"
           ],
-          "linien": 1
+          "items": [
+            "Chatten mit Freunden",
+            "Videos scrollen",
+            "Spielen",
+            "Kommentare lesen"
+          ],
+          "leer": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dein Plan: ein Satz für den Moment, in dem dein Handy am meisten zieht.",
+          "hinweis": "Zum Beispiel: Wenn ich abends ins Bett gehe, dann lege ich das Handy auf den Schreibtisch.",
+          "symbole": [
+            "schreiben"
+          ]
         },
         {
           "art": "wennDann",
-          "zeilen": 1,
-          "beispiele": [
+          "zeilen": 1
+        },
+        {
+          "art": "mission",
+          "text": "Teste deinen Wenn-dann-Satz sieben Tage lang und hake ab.",
+          "tage": 7,
+          "beweis": "Daumen hoch, quer oder runter – und ein Wort dazu."
+        },
+        {
+          "art": "notfall",
+          "text": "Ärger im Netz? Hier hört jemand zu",
+          "eintraege": [
             {
-              "wenn": "Wenn ich abends ins Bett gehe,",
-              "dann": "lege ich das Handy auf den Schreibtisch und stelle dort den Wecker."
+              "name": "BEE SECURE Helpline (Internet, Cybermobbing)",
+              "nummer": "8002 1234"
+            },
+            {
+              "name": "Kanner- a Jugendtelefon (anonym, kostenlos)",
+              "nummer": "116 111"
             }
           ]
-        },
-        {
-          "art": "aufgabe",
-          "text": "Probier deinen Plan eine Woche lang aus. Hake jeden Tag ab, an dem es geklappt hat."
-        },
-        {
-          "art": "plan",
-          "tage": [
-            "Mo",
-            "Di",
-            "Mi",
-            "Do",
-            "Fr",
-            "Sa",
-            "So"
-          ],
-          "zeilen": [
-            "Plan geklappt",
-            "Danach ging es mir gut"
-          ],
-          "symbol": "kasten"
-        },
-        {
-          "art": "notfall"
         }
       ],
       "lehrer": {
-        "ziel": "Die Jugendlichen vergleichen geschätzte und gemessene Bildschirmzeit, beobachten ihre Gefühle nach dem Scrollen und legen einen kleinen, machbaren Plan fest.",
+        "ziel": "Die Jugendlichen vergleichen geschätzte und gemessene Bildschirmzeit, schätzen ein, was ihnen online guttut, und legen einen kleinen Plan für den Moment fest, in dem das Handy am meisten zieht.",
         "ablauf": [
           "Aufgabe 1 (5 Min.): schätzen, dann nachsehen. Die Leitung nennt ihre Zahl zuerst; niemand muss Zahlen zeigen.",
-          "Aufgabe 2 (3 Min.) mit dem Gefühlsrad; Info-Kasten lesen: Welche dieser Tricks kennt ihr aus euren Apps?",
-          "Aufgabe 3 (4 Min.): Batterie – beide Seiten gehören dazu, das Handy lädt auch auf.",
-          "Später in der Einheit Aufgabe 4 und 5 (8 Min.): ein Plan, ein Wenn-dann-Satz, eine Woche lang abhaken."
+          "Aufgabe 2 (5 Min.): Balken ausmalen. Beide Seiten gehören dazu – das Handy lädt auch auf.",
+          "Später in der Einheit Aufgabe 3 (7 Min.): ein Wenn-dann-Satz für eine bestimmte Situation. Wer mag, stellt ihn vor.",
+          "Mission vorlesen. Das Blatt geht mit nach Hause; nächstes Mal reicht ein Daumen."
         ],
         "hintergrund": "Die Nutzung digitaler Medien hängt im Durchschnitt nur sehr schwach mit dem Wohlbefinden Jugendlicher zusammen (Orben & Przybylski, 2019). Aussagekräftiger als die reine Zeit ist, was genutzt wird, in welcher Situation und mit welchem Gefühl danach. Livingstone und Blum-Ross (2020) raten, Jugendliche in solche Überlegungen einzubeziehen, statt nur Grenzen zu setzen. Ein Wenn-dann-Plan bindet ein Vorhaben an eine feste Situation und erhöht die Chance, dass es umgesetzt wird (Gollwitzer, 1999). Beratung bei Problemen im Netz bietet BEE SECURE.",
         "quellen": [
@@ -1640,8 +1612,8 @@
           "BEE SECURE – Initiative der luxemburgischen Regierung für ein sichereres Internet: www.bee-secure.lu"
         ],
         "differenzierung": {
-          "leichter": "Nur Aufgabe 1, 2 und den ersten Satz des Plans bearbeiten.",
-          "schwerer": "Eine Woche lang Bildschirmzeit und Stimmung notieren und danach vergleichen."
+          "leichter": "Nur schätzen und drei Balken ausmalen; den Wenn-dann-Satz gemeinsam mit der Leitung formulieren.",
+          "schwerer": "Eine Woche lang abends Bildschirmzeit und Stimmung notieren und danach vergleichen."
         },
         "impulse": [
           "Welche App tut euch gut – und welche eher nicht?",
@@ -1652,122 +1624,94 @@
           "Nach einer Woche neugierig nachfragen, wie der Plan läuft – ohne Kontrolle."
         ],
         "achtung": "Bei Hinweisen auf Cybermobbing, Sextortion, Kontakte zu Fremden oder starken Rückzug nicht im Plenum nachfragen: Einzelgespräch anbieten, die zuständige Leitung (Responsable) informieren und bei Gefährdung nach dem Schutzkonzept handeln.",
-        "material": "Handys (freiwillig), Gefühlsrad, Blatt für jede Person"
+        "material": "Handys (freiwillig), Buntstifte, Gefühlsrad"
       }
     },
     "fr": {
       "titel": "Mon bilan réseaux sociaux",
-      "untertitel": "Honnête avec moi-même – sans mauvaise conscience",
+      "untertitel": "Ton téléphone, tes règles : qu’est-ce qui te fait du bien en ligne ?",
       "bausteine": [
         {
           "art": "aufgabe",
-          "text": "D’abord estimer, puis vérifier. Les chiffres restent chez toi.",
-          "hinweis": "Le vrai temps se trouve dans les réglages de ton téléphone, le plus souvent sous « Temps d’écran » ou « Digital Wellbeing »."
-        },
-        {
-          "art": "satzanfaenge",
-          "items": [
-            "Temps d’écran estimé par jour : …",
-            "Temps d’écran réel par jour : …",
-            "L’appli qui me prend le plus de temps : …"
-          ],
-          "linien": 1
-        },
-        {
-          "art": "aufgabe",
-          "text": "Après 30 minutes de scroll, je me sens le plus souvent …",
-          "hinweis": "Coche ce qui convient – plusieurs croix sont permises."
-        },
-        {
-          "art": "ankreuzen",
-          "spalten": 3,
-          "frei": 1,
-          "items": [
-            "diverti·e",
-            "zen",
-            "en lien avec les autres",
-            "d’humeur créative",
-            "sans énergie",
-            "vide",
-            "jaloux·se",
-            "sous pression",
-            "moins bien qu’avant"
+          "text": "Parie avec toi-même : d’abord estimer, puis vérifier.",
+          "hinweis": "Le vrai temps est dans les réglages, sous « Temps d’écran ». Les chiffres restent chez toi.",
+          "symbole": [
+            "schreiben"
           ]
         },
         {
-          "art": "info",
-          "symbol": "wissen",
-          "titel": "Pourquoi c’est si dur d’arrêter",
-          "text": "Beaucoup d’applis sont conçues pour que tu restes : le fil ne s’arrête jamais, les vidéos démarrent toutes seules, les likes et les points rouges te ramènent. Un algorithme retient ce sur quoi tu t’arrêtes et t’en montre davantage. Qui le sait peut décider plus consciemment."
-        },
-        {
-          "art": "aufgabe",
-          "text": "Qu’est-ce qui te recharge en ligne – et qu’est-ce qui te coûte de l’énergie ?"
-        },
-        {
-          "art": "batterie",
-          "laden": "Ce qui me recharge en ligne",
-          "leeren": "Ce qui me coûte de l’énergie en ligne",
-          "linien": 3
-        },
-        {
-          "art": "seitenumbruch"
-        },
-        {
-          "art": "aufgabe",
-          "text": "Mon plan : écris une chose que tu veux changer – petite et réalisable."
-        },
-        {
-          "art": "satzanfaenge",
+          "art": "formfelder",
+          "form": "blase",
+          "spalten": 3,
+          "hoehe": 2,
           "items": [
-            "Voici le temps maximum que je veux passer par jour sur mon téléphone : …",
-            "Cette appli, je veux moins l’utiliser : …",
-            "À la place, je fais : …"
+            "Estimé par jour",
+            "Mesuré par jour",
+            "Mon plus gros voleur de temps"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qu’est-ce qui te recharge en ligne, qu’est-ce qui te vide ? Colorie.",
+          "symbole": [
+            "malen"
+          ]
+        },
+        {
+          "art": "balken",
+          "stufen": 5,
+          "pole": [
+            "me vide",
+            "me recharge"
           ],
-          "linien": 1
+          "items": [
+            "Discuter avec mes amis",
+            "Faire défiler des vidéos",
+            "Jouer",
+            "Lire les commentaires"
+          ],
+          "leer": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ton plan : une phrase pour le moment où ton téléphone t’attire.",
+          "hinweis": "Par exemple : si je vais me coucher, alors je pose mon téléphone sur le bureau.",
+          "symbole": [
+            "schreiben"
+          ]
         },
         {
           "art": "wennDann",
-          "zeilen": 1,
-          "beispiele": [
+          "zeilen": 1
+        },
+        {
+          "art": "mission",
+          "text": "Teste ta phrase « si … alors » pendant sept jours et coche.",
+          "tage": 7,
+          "beweis": "pouce en haut, à l’horizontale ou en bas – et un mot."
+        },
+        {
+          "art": "notfall",
+          "text": "Des ennuis en ligne ? Ici, quelqu’un t’écoute",
+          "eintraege": [
             {
-              "wenn": "Si, le soir, je vais me coucher,",
-              "dann": "je pose mon téléphone sur le bureau et j’y règle mon réveil."
+              "name": "BEE SECURE Helpline (internet, cyberharcèlement)",
+              "nummer": "8002 1234"
+            },
+            {
+              "name": "Kanner- a Jugendtelefon (anonyme, gratuit)",
+              "nummer": "116 111"
             }
           ]
-        },
-        {
-          "art": "aufgabe",
-          "text": "Teste ton plan pendant une semaine. Coche chaque jour où ça a marché."
-        },
-        {
-          "art": "plan",
-          "tage": [
-            "Lu",
-            "Ma",
-            "Me",
-            "Je",
-            "Ve",
-            "Sa",
-            "Di"
-          ],
-          "zeilen": [
-            "Plan réussi",
-            "Après, je me sentais bien"
-          ],
-          "symbol": "kasten"
-        },
-        {
-          "art": "notfall"
         }
       ],
       "lehrer": {
-        "ziel": "Les jeunes comparent le temps d’écran estimé et mesuré, observent leurs émotions après le scroll et fixent un petit plan réalisable.",
+        "ziel": "Les jeunes comparent le temps d’écran estimé et mesuré, évaluent ce qui leur fait du bien en ligne et fixent un petit plan pour le moment où le téléphone les attire le plus.",
         "ablauf": [
-          "Tâche 1 (5 min) : estimer, puis vérifier. L’adulte donne son chiffre en premier ; personne n’a à montrer les siens.",
-          "Tâche 2 (3 min) avec la roue des émotions ; lire l’encadré : quelles astuces connaissez-vous dans vos applis ?",
-          "Tâche 3 (4 min) : batterie – les deux côtés comptent, le téléphone recharge aussi.",
-          "Plus tard (8 min) : tâches 4 et 5 – un plan, une phrase « si … alors », une semaine à cocher."
+          "Exercice 1 (5 min) : estimer, puis vérifier. L’animateur donne son chiffre en premier ; personne ne doit montrer le sien.",
+          "Exercice 2 (5 min) : colorier les barres. Les deux côtés comptent – le téléphone recharge aussi.",
+          "Plus tard dans la séance, exercice 3 (7 min) : une phrase « si … alors » pour une situation précise. Qui veut la présente.",
+          "Lire la mission. La feuille part à la maison ; la prochaine fois, un pouce suffit."
         ],
         "hintergrund": "L’usage des médias numériques n’est lié que très faiblement au bien-être des adolescents en moyenne (Orben & Przybylski, 2019). Plus parlant : ce qui est utilisé, dans quelle situation, et le sentiment qui suit. Livingstone et Blum-Ross (2020) conseillent d’associer les jeunes à la réflexion plutôt que de seulement fixer des limites. Un plan « si … alors » relie un projet à une situation précise et en augmente les chances de réalisation (Gollwitzer, 1999). BEE SECURE conseille en cas de problème.",
         "quellen": [
@@ -1777,8 +1721,8 @@
           "BEE SECURE – Initiative der luxemburgischen Regierung für ein sichereres Internet: www.bee-secure.lu"
         ],
         "differenzierung": {
-          "leichter": "Ne traiter que les tâches 1 et 2 et la première phrase du plan.",
-          "schwerer": "Noter pendant une semaine le temps d’écran et l’humeur, puis comparer."
+          "leichter": "Seulement estimer et colorier trois barres ; formuler la phrase « si … alors » avec l’animateur.",
+          "schwerer": "Noter chaque soir, pendant une semaine, le temps d’écran et l’humeur, puis comparer."
         },
         "impulse": [
           "Quelle appli vous fait du bien – et laquelle plutôt pas ?",
@@ -1789,9 +1733,10 @@
           "Après une semaine, demander avec curiosité où en est le plan – sans contrôler."
         ],
         "achtung": "En cas de cyberharcèlement, de sextorsion, de contacts avec des inconnus ou de fort repli : entretien individuel, direction compétente (responsable) informée ; si danger, concept de protection.",
-        "material": "Téléphones, roue des émotions"
+        "material": "Téléphones (facultatif), crayons de couleur, roue des émotions"
       }
-    }
+    },
+    "look": "spiel"
   },
   {
     "id": "skills-echt-oder-fake",
@@ -1806,7 +1751,7 @@
       "einzeln",
       "gruppe"
     ],
-    "dauer": "30 Min.",
+    "dauer": "20 Min.",
     "eldib": [
       "KOG-51",
       "KOG-59",
@@ -1823,242 +1768,228 @@
     ],
     "bild": "icon:search",
     "verwandt": [
-      "mein-handy-und-ich"
+      "mein-handy-und-ich",
+      "skills-fake-fabrik-karten"
     ],
     "kurs": [
       "j1-e28"
     ],
     "de": {
       "titel": "Echt oder fake?",
-      "untertitel": "Die Checkliste für Detektive – bevor du glaubst, likest oder teilst",
+      "untertitel": "Dein Detektiv-Bogen – bevor du glaubst, likest oder teilst.",
       "bausteine": [
         {
           "art": "aufgabe",
-          "text": "Was bedeutet was? Verbinde jeden Begriff mit der passenden Erklärung.",
+          "text": "Der Fall im Klassenchat: Kreuze jedes Warnzeichen an, das du findest.",
           "symbole": [
-            "verbinden"
+            "ankreuzen"
           ]
         },
         {
-          "art": "zuordnen",
-          "titel": [
-            "Begriff",
-            "Erklärung"
-          ],
-          "links": [
-            "KI",
-            "Deepfake",
-            "Fake News",
-            "Algorithmus",
-            "Filterblase"
-          ],
-          "rechts": [
-            "Regel, die entscheidet, was du siehst",
-            "Du siehst nur noch, was dir recht gibt.",
-            "Gefälschtes Video einer echten Person",
-            "Programm, das Texte und Bilder erzeugt",
-            "Absichtlich verbreitete Falschmeldungen"
+          "art": "dialog",
+          "stil": "chat",
+          "zeilen": [
+            {
+              "wer": "Unbekannte Nummer",
+              "text": "EILMELDUNG: Ab Montag fahren keine Schulbusse mehr. Ein Experte hat es bestätigt. TEILEN, bevor es gelöscht wird.",
+              "zeit": "22:41"
+            }
           ]
         },
         {
-          "art": "geschichte",
-          "titel": "Gesehen im Klassenchat",
-          "bild": "figur:ben:ueberrascht",
-          "text": "Ein Bild macht die Runde: der Busbahnhof, alle Busse mit Absperrband. Darüber in Großbuchstaben: „EILMELDUNG: Ab Montag fahren keine Schulbusse mehr. Teilen, bevor es gelöscht wird.“ Wer es zuerst gepostet hat, weiß niemand. Ein Datum fehlt, die Schrift auf einem Schild ist verschwommen."
-        },
-        {
-          "art": "aufgabe",
-          "text": "Prüfe den Beitrag mit der Checkliste. Je öfter du „ja“ ankreuzt, desto vorsichtiger solltest du sein."
-        },
-        {
-          "art": "einschaetzung",
-          "optionen": [
-            "ja",
-            "nein",
-            "weiß nicht"
-          ],
+          "art": "ankreuzen",
+          "spalten": 2,
           "items": [
-            "Die Quelle ist unbekannt oder unseriös.",
-            "Es gibt kein Datum, oder die Meldung ist alt.",
-            "Keine andere seriöse Seite berichtet darüber.",
-            "Der Beitrag soll mich wütend oder ängstlich machen.",
-            "Die Überschrift klingt übertrieben (Clickbait).",
-            "Hände, Schrift oder Schatten im Bild wirken seltsam.",
-            "Im Video wirken Stimme oder Mund unnatürlich.",
-            "Ich soll es schnell teilen."
+            "Quelle unbekannt",
+            "kein Datum",
+            "soll Angst oder Wut machen",
+            "ich soll schnell teilen",
+            "Experte ohne Namen",
+            "sonst berichtet niemand darüber"
           ]
         },
         {
-          "art": "info",
-          "symbol": "tipp",
-          "titel": "Quer lesen wie die Profis",
-          "text": "Profis bleiben nicht auf der Seite, die sie prüfen. Sie starten eine neue Suche und schauen, was andere über die Quelle sagen. Seltsame Hände oder verschwommene Schrift werden bei KI-Bildern immer seltener – die Frage nach der Quelle bleibt."
-        },
-        {
           "art": "aufgabe",
-          "text": "KI – Chance und Gefahr: Schreib auf jede Seite mindestens zwei Beispiele."
+          "text": "KI im Alltag: Wo ist deine Grenze? Schreib jedes Wort in die passende Reihe.",
+          "hinweis": "Klare Grenze: Fälschungen von echten Personen sind Mobbing und können strafbar sein – auch als Spaß.",
+          "symbole": [
+            "schreiben"
+          ]
         },
         {
-          "art": "waage",
-          "links": "KI hilft mir, wenn …",
-          "rechts": "KI wird gefährlich, wenn …",
-          "zeilen": 3
+          "art": "rangliste",
+          "stufen": [
+            "Geht klar",
+            "Kommt drauf an",
+            "Geht gar nicht"
+          ],
+          "hoehe": 1,
+          "items": [
+            "erklären lassen",
+            "KI-Aufsatz abgeben",
+            "Chatbot als Zuhörer",
+            "Stimme fälschen"
+          ]
         },
         {
-          "art": "info",
-          "symbol": "achtung",
-          "titel": "Klare Grenze",
-          "text": "Gefälschte Bilder, Videos oder Stimmen von anderen zu erstellen oder zu teilen, ist Mobbing und kann strafbar sein – auch wenn es als Spaß gemeint ist."
+          "art": "mission",
+          "text": "Fang diese Woche einen Beitrag, bei dem du stutzt. Erst Teilen-Bremse, dann: Wer sagt das? Wer berichtet noch?",
+          "tage": 0,
+          "beweis": "Was hast du herausgefunden?"
         },
         {
-          "art": "notfall"
+          "art": "notfall",
+          "text": "Ärger im Netz? Hier hört jemand zu",
+          "eintraege": [
+            {
+              "name": "BEE SECURE Helpline (Internet, Cybermobbing)",
+              "nummer": "8002 1234"
+            },
+            {
+              "name": "Kanner- a Jugendtelefon (anonym, kostenlos)",
+              "nummer": "116 111"
+            }
+          ]
         }
       ],
       "lehrer": {
-        "ziel": "Die Jugendlichen erklären zentrale Begriffe, prüfen einen Beitrag mit einer Checkliste, lernen das Quer-Lesen kennen und wägen Nutzen und Risiken von KI ab.",
+        "ziel": "Die Jugendlichen prüfen einen Beitrag auf Warnzeichen, lernen das Quer-Lesen kennen und legen fest, wo für sie beim Einsatz von KI die Grenze liegt.",
         "ablauf": [
-          "Nach dem Real-or-Fake-Spiel: Aufgabe 1 allein (4 Min.), dann die Begriffe klären und Alltagsbeispiele sammeln.",
-          "Nach dem Video: Beitrag lesen, Aufgabe 2 zu zweit (6 Min.). Frage: „Welches Kreuz war am wichtigsten?“",
-          "Tipp-Kasten (3 Min.): Quer lesen am Beamer vormachen, wenn Internet da ist.",
-          "Aufgabe 3 (8 Min.): erst stilles Gespräch mit Haftnotizen, dann die Waage ausfüllen; den Achtung-Kasten klar kommentieren."
+          "Aufgabe 1 zu zweit (5 Min.), danach fragen: Welches Kreuz ist das wichtigste?",
+          "Quer lesen erklären (2 Min.): raus aus dem Beitrag, neue Suche – wer steckt dahinter, wer berichtet noch?",
+          "Nach der Grenz-Linie im Raum: Aufgabe 2 allein (3 Min.). Den Hinweis zur klaren Grenze laut lesen.",
+          "Mission vorlesen. Nächstes Mal erzählt, wer mag, was er herausgefunden hat."
         ],
-        "hintergrund": "Professionelle Faktenprüfer verlassen eine unbekannte Seite schnell und prüfen in neuen Tabs, wer dahintersteht; so urteilten sie schneller und häufiger richtig als Historiker und Studierende (Wineburg & McGrew, 2019). Wer die Tricks von Falschmeldungen kennt – Empörung, falsche Experten, Zeitdruck –, fällt seltener darauf herein; ein Spiel, in dem man selbst Falschmeldungen baut, verringerte die Anfälligkeit messbar (Roozenbeek & van der Linden, 2019). Weil Bildgeneratoren typische Fehler immer seltener machen, setzt die Checkliste vor allem auf Quelle, Datum und Gegenprüfung.",
+        "hintergrund": "Professionelle Faktenprüfer verlassen eine unbekannte Seite schnell und prüfen in neuen Tabs, wer dahintersteht; so urteilten sie schneller und häufiger richtig als Historiker und Studierende (Wineburg & McGrew, 2019). Wer die Tricks von Falschmeldungen kennt – Empörung, falsche Experten, Zeitdruck –, fällt seltener darauf herein (Roozenbeek & van der Linden, 2019). Weil Bildgeneratoren typische Fehler immer seltener machen, setzt der Bogen auf Quelle, Datum und Gegenprüfung.",
         "quellen": [
           "Wineburg, S. & McGrew, S. (2019). Lateral reading and the nature of expertise: Reading less and learning more when evaluating digital information. Teachers College Record, 121(11), 1–40.",
           "Roozenbeek, J. & van der Linden, S. (2019). Fake news game confers psychological resistance against online misinformation. Palgrave Communications, 5, 65.",
           "BEE SECURE – Initiative der luxemburgischen Regierung für ein sichereres Internet: www.bee-secure.lu"
         ],
         "differenzierung": {
-          "leichter": "Aufgabe 1 mit drei Begriffen; die Checkliste gemeinsam laut durchgehen.",
-          "schwerer": "Einen harmlosen, erfundenen Fake-Beitrag zu einem Schulthema bauen und prüfen lassen – ohne echte Personen."
+          "leichter": "Die Warnzeichen gemeinsam laut durchgehen; bei Aufgabe 2 nur zwei Wörter einsortieren.",
+          "schwerer": "Für den Fall im Klassenchat eine eigene Antwort schreiben, die nachfragt, ohne jemanden bloßzustellen."
         },
         "impulse": [
-          "Welche Frage der Checkliste hättet ihr vor heute nie gestellt?",
+          "Welches Warnzeichen hättet ihr vor heute übersehen?",
           "Wann habt ihr zuletzt etwas geteilt, ohne es zu prüfen?"
         ],
         "tipps": [
-          "Die Checkliste neben die Anspannungsskala hängen: Starke Gefühle sind ein Warnsignal.",
+          "Fünf Warnzeichen stecken in der Nachricht; das sechste zeigt sich erst beim Quer-Lesen.",
           "Auch verlässliche Quellen nennen, nicht nur Fälschungen zeigen."
         ],
         "achtung": "Keine Deepfakes echter Personen erstellen, auch nicht zur Demonstration. Bei gefälschten oder intimen Bildern einer realen Person nichts zeigen oder weiterleiten lassen und die zuständige Leitung (Responsable) informieren.",
-        "material": "Blatt, Haftnotizen, Beamer (optional)"
+        "material": "Stifte; Beamer (optional)"
       }
     },
     "fr": {
       "titel": "Vrai ou faux ?",
-      "untertitel": "La liste de contrôle du détective – avant de croire, de liker ou de partager",
+      "untertitel": "Ta fiche de détective – avant de croire, de liker ou de partager.",
       "bausteine": [
         {
           "art": "aufgabe",
-          "text": "Qui veut dire quoi ? Relie chaque notion à la bonne explication.",
+          "text": "L’affaire dans le chat de la classe : coche chaque signal d’alerte.",
           "symbole": [
-            "verbinden"
+            "ankreuzen"
           ]
         },
         {
-          "art": "zuordnen",
-          "titel": [
-            "Notion",
-            "Explication"
-          ],
-          "links": [
-            "IA",
-            "Deepfake",
-            "Fake news",
-            "Algorithme",
-            "Bulle de filtres"
-          ],
-          "rechts": [
-            "Règle qui décide de ce que tu vois",
-            "Tu ne vois plus que ce qui te donne raison.",
-            "Vidéo truquée d’une personne réelle",
-            "Programme qui produit des textes et des images",
-            "Fausses informations diffusées volontairement"
+          "art": "dialog",
+          "stil": "chat",
+          "zeilen": [
+            {
+              "wer": "Numéro inconnu",
+              "text": "INFO URGENTE : dès lundi, plus aucun bus scolaire. Un expert l’a confirmé. PARTAGEZ avant suppression.",
+              "zeit": "22:41"
+            }
           ]
         },
         {
-          "art": "geschichte",
-          "titel": "Vu dans le chat de la classe",
-          "bild": "figur:ben:ueberrascht",
-          "text": "Une image circule : la gare routière, tous les bus entourés de ruban de chantier. Au-dessus, en majuscules : « INFO URGENTE : dès lundi, plus de bus scolaires. Partagez avant suppression. » Personne ne sait qui l’a posté en premier. Pas de date, et l’écriture sur un panneau est floue."
-        },
-        {
-          "art": "aufgabe",
-          "text": "Vérifie la publication avec la liste. Plus tu coches « oui », plus tu dois te méfier."
-        },
-        {
-          "art": "einschaetzung",
-          "optionen": [
-            "oui",
-            "non",
-            "je ne sais pas"
-          ],
+          "art": "ankreuzen",
+          "spalten": 2,
           "items": [
-            "La source est inconnue ou peu fiable.",
-            "Pas de date, ou l’information est ancienne.",
-            "Aucun autre site fiable n’en parle.",
-            "Elle veut me mettre en colère ou me faire peur.",
-            "Le titre est exagéré (piège à clics).",
-            "Les mains, l’écriture ou les ombres semblent bizarres.",
-            "Dans la vidéo, voix ou bouche sonnent faux.",
-            "On me demande de partager vite."
+            "source inconnue",
+            "pas de date",
+            "veut faire peur ou fâcher",
+            "je dois partager vite",
+            "expert sans nom",
+            "personne d’autre n’en parle"
           ]
         },
         {
-          "art": "info",
-          "symbol": "tipp",
-          "titel": "Lire latéralement comme les pros",
-          "text": "Les pros ne restent pas sur la page qu’ils vérifient. Ils lancent une nouvelle recherche et regardent ce que d’autres disent de la source. Mains bizarres ou écriture floue deviennent rares sur les images d’IA – la question de la source reste."
-        },
-        {
           "art": "aufgabe",
-          "text": "IA – chance et danger : écris au moins deux exemples de chaque côté."
+          "text": "L’IA au quotidien : où est ta limite ? Classe chaque mot.",
+          "hinweis": "Limite claire : truquer l’image ou la voix d’une vraie personne, c’est du harcèlement – et punissable.",
+          "symbole": [
+            "schreiben"
+          ]
         },
         {
-          "art": "waage",
-          "links": "L’IA m’aide quand …",
-          "rechts": "L’IA devient dangereuse quand …",
-          "zeilen": 3
+          "art": "rangliste",
+          "stufen": [
+            "C’est bon",
+            "Ça dépend",
+            "Pas question"
+          ],
+          "hoehe": 1,
+          "items": [
+            "se faire expliquer",
+            "rendre un texte d’IA",
+            "chatbot qui écoute",
+            "truquer une voix"
+          ]
         },
         {
-          "art": "info",
-          "symbol": "achtung",
-          "titel": "Limite claire",
-          "text": "Créer ou partager de fausses images, vidéos ou voix d’autres personnes, c’est du harcèlement et cela peut être punissable – même si c’est pour rire."
+          "art": "mission",
+          "text": "Attrape cette semaine une publication qui te fait tiquer. D’abord le frein, puis : qui le dit ? Qui d’autre en parle ?",
+          "tage": 0,
+          "beweis": "qu’as-tu découvert ?"
         },
         {
-          "art": "notfall"
+          "art": "notfall",
+          "text": "Des ennuis en ligne ? Ici, quelqu’un t’écoute",
+          "eintraege": [
+            {
+              "name": "BEE SECURE Helpline (internet, cyberharcèlement)",
+              "nummer": "8002 1234"
+            },
+            {
+              "name": "Kanner- a Jugendtelefon (anonyme, gratuit)",
+              "nummer": "116 111"
+            }
+          ]
         }
       ],
       "lehrer": {
-        "ziel": "Les jeunes expliquent des notions clés, vérifient une publication avec une liste de contrôle, découvrent la lecture latérale et pèsent les avantages et les risques de l’IA.",
+        "ziel": "Les jeunes cherchent les signaux d’alerte dans une publication, découvrent la lecture latérale et fixent où se trouve, pour eux, la limite dans l’usage de l’IA.",
         "ablauf": [
-          "Après le jeu vrai ou faux : tâche 1 individuellement (4 min), puis clarifier les notions et recueillir des exemples du quotidien.",
-          "Après la vidéo : lire la publication, tâche 2 à deux (6 min). Question : « Quelle croix était la plus importante ? »",
-          "Encadré conseil (3 min) : montrer la lecture latérale au beamer si Internet est disponible.",
-          "Tâche 3 (8 min) : d’abord un échange silencieux avec des post-it, puis remplir la balance ; commenter clairement l’encadré « Limite claire »."
+          "Exercice 1 à deux (5 min), puis demander : quelle croix est la plus importante ?",
+          "Expliquer la lecture latérale (2 min) : sortir de la publication, nouvelle recherche – qui est derrière, qui d’autre en parle ?",
+          "Après la ligne des limites dans la salle : exercice 2 seul (3 min). Lire à voix haute la remarque sur la limite claire.",
+          "Lire la mission. La prochaine fois, qui veut raconte ce qu’il a découvert."
         ],
-        "hintergrund": "Les vérificateurs de faits professionnels quittent vite un site inconnu et vérifient dans de nouveaux onglets qui se trouve derrière ; ils jugeaient ainsi plus vite et plus souvent juste que des historiens et des étudiants (Wineburg & McGrew, 2019). Qui connaît les ficelles des fausses informations – indignation, faux experts, pression du temps – s’y laisse moins prendre ; un jeu où l’on fabrique soi-même des fausses informations a réduit la vulnérabilité de façon mesurable (Roozenbeek & van der Linden, 2019). Comme les générateurs d’images font de moins en moins leurs erreurs typiques, la liste de contrôle s’appuie surtout sur la source, la date et la vérification croisée.",
+        "hintergrund": "Les vérificateurs professionnels quittent vite une page inconnue et cherchent, dans de nouveaux onglets, qui se trouve derrière ; ils jugent ainsi plus vite et plus souvent juste que des historiens et des étudiants (Wineburg & McGrew, 2019). Qui connaît les ficelles des fausses informations – indignation, faux experts, urgence – s’y laisse moins prendre (Roozenbeek & van der Linden, 2019). Comme les générateurs d’images font de moins en moins d’erreurs typiques, la fiche mise sur la source, la date et la contre-vérification.",
         "quellen": [
           "Wineburg, S. & McGrew, S. (2019). Lateral reading and the nature of expertise: Reading less and learning more when evaluating digital information. Teachers College Record, 121(11), 1–40.",
           "Roozenbeek, J. & van der Linden, S. (2019). Fake news game confers psychological resistance against online misinformation. Palgrave Communications, 5, 65.",
           "BEE SECURE – Initiative der luxemburgischen Regierung für ein sichereres Internet: www.bee-secure.lu"
         ],
         "differenzierung": {
-          "leichter": "Tâche 1 avec trois notions ; parcourir la liste de contrôle à haute voix ensemble.",
-          "schwerer": "Fabriquer une fausse publication inoffensive et inventée sur un sujet scolaire et la faire vérifier – sans personnes réelles."
+          "leichter": "Parcourir ensemble les signaux d’alerte à voix haute ; pour l’exercice 2, ne classer que deux mots.",
+          "schwerer": "Écrire sa propre réponse dans le chat de la classe : poser des questions sans ridiculiser personne."
         },
         "impulse": [
-          "Quelle question de la liste ne vous étiez-vous jamais posée avant aujourd’hui ?",
+          "Quel signal d’alerte auriez-vous manqué avant aujourd’hui ?",
           "Quand avez-vous partagé quelque chose pour la dernière fois sans le vérifier ?"
         ],
         "tipps": [
-          "Accrocher la liste de contrôle à côté de l’échelle de tension : les fortes émotions sont un signal d’alerte.",
+          "Cinq signaux se trouvent dans le message ; le sixième n’apparaît qu’avec la lecture latérale.",
           "Citer aussi des sources fiables, pas seulement montrer des faux."
         ],
         "achtung": "Ne pas créer de deepfakes de personnes réelles, pas même pour démontrer. En cas d’images truquées ou intimes d’une personne réelle, ne rien faire montrer ni transférer et informer la direction compétente (responsable).",
-        "material": "Feuille, post-it, beamer (facultatif)"
+        "material": "Stylos ; beamer (facultatif)"
       }
-    }
+    },
+    "look": "spiel"
   }
 ]

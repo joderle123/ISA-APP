@@ -6,32 +6,31 @@
       "jahr": 1,
       "modul": "j1-m8",
       "titel": "Gesund und stark",
-      "kurz": "Schlaf, Bewegung, Essen, Pausen und Stress hängen zusammen: Die Gruppe bezieht Position, packt einen Stress-Rucksack und plant einen kleinen Schritt, der wirklich machbar ist.",
+      "kurz": "Schlaf, Bewegung, Essen, Pausen und Stress hängen zusammen: Die Gruppe läuft das Rucksack-Rennen, bezieht in vier Ecken Position, würfelt sich durch sechs Mini-Schritte und plant einen, der wirklich klappt.",
       "dauer": 100,
       "ziele": [
-        "beziehen Stellung zu Fragen rund um Stress, Schlaf, Essen, Bewegung und Gruppendruck – und hören, wie andere es sehen",
-        "erkennen im Stress-Rucksack, was sie belastet und was sie entlastet, und verbinden das mit ihrem Skills-Koffer",
-        "planen einen kleinen, machbaren Schritt für ihre Gesundheit und legen ihn mit einem Wenn-dann-Satz fest",
+        "erleben im Rucksack-Rennen, was belastet und was entlastet, und verbinden das mit ihrem Skills-Koffer",
+        "beziehen Stellung zu Fragen rund um Schlaf, Stress, Essen, Bewegung und Gruppendruck und hören, wie andere es sehen",
+        "probieren sechs Mini-Schritte für ihre Gesundheit sofort aus und legen einen davon mit einem Wenn-dann-Satz fest",
         "erleben den Bodyscan als Möglichkeit, abends zur Ruhe zu kommen"
       ],
       "material": [
         "Gefühlsrad (A3, laminiert) und Wäscheklammern",
         "Anspannungsskala 0–100 (Plakat aus Einheit 11)",
-        "Vier Schilder (A4) und Klebeband für die Ecken",
-        "Fragenliste für das Vier-Ecken-Spiel (Schritt 3), ausgedruckt",
-        "Ein leerer Rucksack und sechs bis acht Bücher oder volle Wasserflaschen",
-        "Plakat (A1) mit Rucksack-Umriss, dicke Stifte",
-        "Schülerblätter „Mein Stress-Rucksack“ und „Mein Gesund-Plan“ je Person",
+        "Ein leerer Rucksack und sechs bis acht Bücher oder volle Wasserflaschen; vier Stühle und Malerkrepp für den Parcours, Stoppuhr oder Handy-Timer",
+        "Vier Schilder (A4) und Klebeband für die Ecken; die Fragen für das Vier-Ecken-Spiel (Schritt 5)",
+        "Schülerblätter „Mein Stress-Rucksack“ und „Mein Gesund-Plan“ für jede Person, Buntstifte",
         "Skills-Koffer und Ampelpläne aus Einheit 15 (Original oder Foto auf dem Handy), dazu der Gruppensatz Skills-Kärtchen",
+        "Ein Würfel je Paar, ein Glas je Person und ein Krug Wasser für den Gesund-Würfel",
         "Optional: Schlaf-Check (Toolbox, Bereich Alltag) für alle, die den Bereich Schlaf wählen",
         "Zutaten für den Imbiss (Obst, Gemüse, Joghurt oder Quark, Vollkornbrot, Zitrone oder Minze), Schneidebretter, Messer, Schüsseln, Servietten",
         "Matten oder Decken für den Bodyscan (optional)",
         "Skills-Pässe, Stempel oder Sticker"
       ],
       "vorbereitung": [
-        "Die vier Schilder gut lesbar beschriften (A, B, Weiß nicht, Kommt drauf an) und in die Ecken hängen; die Mitte des Raums freiräumen.",
-        "Aus der Fragenliste acht bis zehn Fragen auswählen, die zur Gruppe passen, und die Reihenfolge festlegen: leichte Fragen zuerst.",
-        "Rucksack, Bücher oder Flaschen bereitlegen; auf das Plakat einen großen Rucksack zeichnen, links „Was macht ihn schwer?“, rechts „Was macht ihn leichter?“.",
+        "Den Parcours aufbauen: vier Stühle als Slalom, am Ende eine Wendelinie aus Malerkrepp. Rucksack, Bücher oder Flaschen bereitlegen.",
+        "Die vier Schilder gut lesbar beschriften (A, B, Weiß nicht, Kommt drauf an) und in die Ecken hängen.",
+        "Aus der Fragenliste sechs bis acht Fragen auswählen, die zur Gruppe passen, und die Reihenfolge festlegen: leichte Fragen zuerst.",
         "Allergien, Unverträglichkeiten und Essensregeln prüfen; Obst und Gemüse vorher waschen.",
         "Den Gruppensatz Skills-Kärtchen bereitlegen: Wer den eigenen Ampelplan aus Einheit 15 nicht dabeihat, nutzt das Foto auf dem Handy oder die Kärtchen."
       ],
@@ -45,32 +44,42 @@
       ],
       "ablauf": [
         {
-          "min": "0–10",
+          "min": "0–8",
           "phase": "ankommen",
           "titel": "Check-in: Gefühlsrad, Anspannung und Schlafnote"
         },
         {
-          "min": "10–15",
+          "min": "8–12",
           "phase": "bruecke",
-          "titel": "Von der digitalen Welt zu Schlaf und Stress"
+          "titel": "Rückblick: Beitrag gefangen?"
         },
         {
-          "min": "15–40",
+          "min": "12–26",
           "phase": "aktiv",
-          "titel": "Vier-Ecken-Spiel"
+          "titel": "Rucksack-Rennen"
         },
         {
-          "min": "40–55",
+          "min": "26–33",
           "phase": "uebung",
-          "titel": "Der Stress-Rucksack"
+          "titel": "Mein Stress-Rucksack"
         },
         {
-          "min": "55–70",
+          "min": "33–45",
+          "phase": "aktiv",
+          "titel": "Vier Ecken mit Tipp"
+        },
+        {
+          "min": "45–60",
           "phase": "pause",
           "titel": "Gesunder Imbiss, gemeinsam zubereitet"
         },
         {
-          "min": "70–90",
+          "min": "60–78",
+          "phase": "aktiv",
+          "titel": "Gesund-Würfel: sechs Mini-Schritte"
+        },
+        {
+          "min": "78–90",
           "phase": "uebung",
           "titel": "Mein Gesund-Plan"
         },
@@ -82,13 +91,13 @@
         {
           "min": "95–100",
           "phase": "abschluss",
-          "titel": "Réckbléck und Skills-Pass"
+          "titel": "Abschluss: Stempel und Mission"
         }
       ],
       "schritte": [
         {
           "titel": "Check-in: Gefühlsrad, Anspannung und Schlafnote",
-          "dauer": 10,
+          "dauer": 8,
           "phase": "ankommen",
           "text": "Stühle im Kreis, das Gefühlsrad liegt in der Mitte, die Anspannungsskala hängt an der Wand. Reihum nennt jede Person ein Wort aus dem Rad und ihre Anspannung von 0 bis 100. Heute kommt eine dritte Zahl dazu: die Schlafnote für die letzte Nacht, mit den Fingern gezeigt (0 heißt kaum geschlafen, 10 heißt tief und lang). Die Leitung beginnt, ehrlich und im Rahmen. Die Zahlen werden nicht kommentiert; erst am Ende der Runde laut überlegen, ob Schlafnote und Anspannung zusammenpassen.",
           "sagen": [
@@ -99,23 +108,48 @@
           "blatt": "skills-gefuehlsrad"
         },
         {
-          "titel": "Von der digitalen Welt zu Schlaf und Stress",
-          "dauer": 5,
+          "titel": "Rückblick: Beitrag gefangen?",
+          "dauer": 4,
           "phase": "bruecke",
-          "text": "Kurz an die letzte Einheit anknüpfen: echt oder fake, KI-Bilder, die Checkliste. Eine Frage in die Runde, zwei, drei Antworten reichen. Dann den Bogen schlagen: Handy, Schlaf, Stress und Essen hängen zusammen, und darum geht es heute. Ankündigen, dass nächste Woche die letzte Einheit ist, und auf dem Jahresweg zeigen, wo die Gruppe steht.",
+          "text": "Nach der Mission fragen: Wer hat einen Beitrag gefangen, bei dem er gestutzt hat – und was kam beim Nachprüfen heraus? Zwei, drei Antworten reichen. Dann den Bogen schlagen: Handy, Schlaf, Stress und Essen hängen zusammen, und darum geht es heute. Ankündigen, dass nächste Woche die letzte Einheit ist, und auf dem Jahresweg zeigen, wo die Gruppe steht.",
           "sagen": [
-            "Hattet ihr seit letzter Woche ein Bild oder Video, bei dem ihr gestutzt habt?",
+            "Hattet ihr seit letzter Woche einen Beitrag, bei dem ihr gestutzt habt? Was habt ihr herausgefunden?",
             "Handy bis spät, zu wenig Schlaf, am nächsten Tag gereizt – kennt ihr diese Kette? Heute geht es darum, wo man sie unterbrechen kann."
           ]
         },
         {
-          "titel": "Vier-Ecken-Spiel",
-          "dauer": 25,
+          "titel": "Rucksack-Rennen",
+          "dauer": 14,
           "phase": "aktiv",
-          "text": "In den Ecken hängen die Schilder A, B, „Weiß nicht“ und „Kommt drauf an“; das Prinzip kennt die Gruppe aus Einheit 26. Die Leitung liest eine Frage mit zwei Antworten vor, alle gehen in die Ecke, die für sie am ehesten stimmt. Dann sagen ein oder zwei Personen freiwillig, warum sie dort stehen; niemand muss sich begründen. Die Leitung fasst zusammen, ohne zu bewerten, und zieht, wo es passt, einen Faden aus dem Jahr: Nein sagen aus Einheit 25, die Zivilcourage-Leiter aus Einheit 26, Filter und Vergleiche aus Einheit 27, Quellen prüfen aus Einheit 28. Bei den persönlicheren Fragen (Alkohol, Körper, Sexualität) bleiben alle auf ihrem Platz, schließen die Augen und zeigen in eine Ecke; nur die Leitung sieht das Ergebnis und fasst es ohne Namen zusammen. Alle Fragen sind so gestellt, dass beide Antworten vertretbar sind: Es geht um Sichtweisen, nicht um richtig oder falsch.",
+          "text": "Die Gruppe läuft den Parcours dreimal als Staffel gegen die Uhr, immer mit demselben Rucksack. Lauf eins mit leerem Rucksack; die Zeit kommt an die Tafel. Dann sammelt die Gruppe, was Jugendliche in ihrem Alter belastet: Für jede Nennung kommt ein Buch oder eine volle Flasche hinein, und es folgt Lauf zwei. Danach sammelt die Gruppe, was den Rucksack leichter macht – für jede Idee wird etwas herausgenommen –, und läuft ein drittes Mal. Die drei Zeiten vergleichen und den Mini-Input geben: Der Skills-Koffer hilft, wenn es akut wird; Schlaf, Bewegung und Pausen sorgen dafür, dass der Rucksack gar nicht erst so schwer wird.",
           "sagen": [
+            "Was packt der Alltag Jugendlichen in eurem Alter in den Rucksack? Nicht euch persönlich – ganz allgemein.",
+            "Wie läuft es sich damit? Was müsste passieren, damit ihr etwas herausnehmen könnt?",
+            "Euer Skills-Koffer hilft, wenn es akut wird. Schlaf, Bewegung und Pausen sorgen dafür, dass der Rucksack gar nicht erst so schwer wird."
+          ],
+          "tipp": "Den Rucksack nicht zu schwer packen (höchstens etwa fünf Kilo) und niemanden zum Tragen drängen. Wer nicht laufen mag, stoppt die Zeit, packt ein und aus oder schreibt die Stichworte an die Tafel.",
+          "wennEsKippt": "Werden die Belastungen sehr persönlich (Trennung der Eltern, Krankheit, Geldsorgen), nicht vertiefen: das Stichwort allgemein notieren, etwa „Sorgen in der Familie“, und nach der Einheit ein Gespräch anbieten. Bei zwei oder drei Jugendlichen läuft jede Person alle drei Läufe und vergleicht die eigenen Zeiten."
+        },
+        {
+          "titel": "Mein Stress-Rucksack",
+          "dauer": 7,
+          "phase": "uebung",
+          "text": "Jede Person füllt still das eigene Blatt aus: ankreuzen, was gerade im Rucksack steckt, das Gewicht dieser Woche einkreisen, bei „Was hilft dir eher?“ wählen und eintragen, was sofort und was auf Dauer Gewicht herausnimmt. Die Skills-Koffer aus Einheit 15 oder deren Foto und die Skills-Kärtchen der Gruppe liegen dafür bereit. Das Blatt bleibt privat und wird nicht eingesammelt. Wer mag, nennt zum Schluss eine Sache aus der Reihe „Auf Dauer“.",
+          "sagen": [
+            "Jetzt euer eigener Rucksack. Das Blatt bleibt bei euch.",
+            "Was nimmt bei euch sofort Gewicht heraus – und was auf Dauer?"
+          ],
+          "tipp": "Die Reihe „Auf Dauer“ wird nach der Pause gebraucht: Aus ihr wählen die Jugendlichen ihren Schritt für den Gesund-Plan.",
+          "blatt": "skills-stress-rucksack"
+        },
+        {
+          "titel": "Vier Ecken mit Tipp",
+          "dauer": 12,
+          "phase": "aktiv",
+          "text": "In den Ecken hängen die Schilder A, B, „Weiß nicht“ und „Kommt drauf an“. Die Leitung liest eine Frage mit zwei Antworten vor. Bevor jemand losgeht, tippen alle mit den Fingern, welche Ecke am vollsten wird; dann gehen alle in ihre Ecke, und jeder richtige Tipp bringt der Gruppe einen Strich an der Tafel. Ein oder zwei Personen sagen freiwillig, warum sie dort stehen. Bei den persönlicheren Fragen (Alkohol, Körper, Sexualität) bleiben alle sitzen, schließen die Augen und zeigen in eine Ecke; nur die Leitung sieht das Ergebnis und fasst es ohne Namen zusammen. Alle Fragen sind so gestellt, dass beide Antworten vertretbar sind. Nach sechs bis acht Fragen ist Schluss.",
+          "sagen": [
+            "Erst tippen: Welche Ecke wird am vollsten? Ein Finger für A, zwei für B, drei für „Weiß nicht“, vier für „Kommt drauf an“.",
             "Die Ecke sagt nichts über euch, nur über eure Meinung heute. Ihr dürft auch umziehen, wenn euch jemand überzeugt.",
-            "Wer steht bei ‚Kommt drauf an‘ – worauf kommt es denn an?",
             "Welcher Skill aus diesem Jahr würde hier helfen?"
           ],
           "tabelle": {
@@ -192,22 +226,8 @@
               ]
             ]
           },
-          "tipp": "Bei nur zwei Jugendlichen oder wenig Energie im Sitzen spielen: Jede Person hat zwei Karten (A und B) und deckt auf drei gleichzeitig auf; die Leitung spielt mit.",
-          "wennEsKippt": "Laufen alle ihren Freunden hinterher, die nächste Frage mit geschlossenen Augen stellen: Alle zeigen mit dem Arm in eine Ecke, erst dann Augen auf. Erzählt jemand von eigenem Konsum oder einer belastenden Erfahrung, freundlich stoppen und ein Gespräch nach der Einheit anbieten – nicht nachfragen, nicht bewerten."
-        },
-        {
-          "titel": "Der Stress-Rucksack",
-          "dauer": 15,
-          "phase": "uebung",
-          "text": "Einen leeren Rucksack in die Mitte stellen. Die Gruppe sammelt, was Jugendliche in ihrem Alter belastet: Für jede Nennung kommt ein Buch oder eine volle Flasche hinein und ein Stichwort links aufs Plakat. Die Leitung oder eine freiwillige Person setzt den Rucksack auf und geht eine Runde. Dann sammelt die Gruppe, was ihn leichter macht: Für jede Idee wird etwas herausgenommen, das Stichwort kommt rechts aufs Plakat. Zum Schluss füllt jede Person still das eigene Blatt aus; die Skills-Koffer aus Einheit 15 (oder deren Foto) und die Skills-Kärtchen der Gruppe liegen dafür bereit.",
-          "sagen": [
-            "Was packt der Alltag Jugendlichen in eurem Alter in den Rucksack? Nicht euch persönlich – ganz allgemein.",
-            "Wie läuft es sich damit? Was müsste passieren, damit ihr etwas herausnehmen könnt?",
-            "Euer Skills-Koffer hilft, wenn es akut wird. Schlaf, Bewegung und Pausen sorgen dafür, dass der Rucksack gar nicht erst so schwer wird."
-          ],
-          "tipp": "Den Rucksack nicht zu schwer packen (höchstens etwa fünf Kilo) und niemanden zum Tragen drängen; wer mag, hebt ihn nur kurz an.",
-          "wennEsKippt": "Werden die Belastungen sehr persönlich (Trennung der Eltern, Krankheit, Geldsorgen), nicht vertiefen: das Stichwort allgemein notieren, etwa „Sorgen in der Familie“, und nach der Einheit ein Gespräch anbieten.",
-          "blatt": "skills-stress-rucksack"
+          "tipp": "Die Tipps zeigen oft, dass wir andere falsch einschätzen – das ruhig benennen. Wo es passt, einen Faden aus dem Jahr ziehen: Nein sagen aus Einheit 25, die Zivilcourage-Leiter aus Einheit 26, Vergleiche aus Einheit 27, Quellen prüfen aus Einheit 28.",
+          "wennEsKippt": "Laufen alle ihren Freunden hinterher, die nächste Frage mit geschlossenen Augen stellen: Alle zeigen mit dem Arm in eine Ecke, erst dann Augen auf. Erzählt jemand von eigenem Konsum oder einer belastenden Erfahrung, freundlich stoppen und ein Gespräch nach der Einheit anbieten – nicht nachfragen, nicht bewerten. Bei nur zwei Jugendlichen im Sitzen spielen; die Leitung spielt mit."
         },
         {
           "titel": "Gesunder Imbiss, gemeinsam zubereitet",
@@ -216,10 +236,24 @@
           "text": "Gemeinsam etwas Einfaches zubereiten, etwa Obstspieße, Gemüsesticks mit Joghurtdip und Vollkornbrot, dazu Wasser mit Zitrone oder Minze. Jede Person übernimmt eine kleine Aufgabe: schneiden, anrichten, Tisch decken. Nicht über gesund und ungesund dozieren und niemandes Essen bewerten – es geht um Genuss und um die gemeinsame Zeit."
         },
         {
+          "titel": "Gesund-Würfel: sechs Mini-Schritte",
+          "dauer": 18,
+          "phase": "aktiv",
+          "text": "Das Blatt „Mein Gesund-Plan“ austeilen, je Paar ein Würfel. Die Paare würfeln abwechselnd und führen den Mini-Schritt zur gewürfelten Zahl sofort aus: Bettzeit ausrechnen, Wandsitzen, ein Glas Wasser trinken, den Handy-Parkplatz für die Nacht beschreiben, eine Minute ans offene Fenster, jemandem im Raum danken. Jeder geschaffte Würfel wird auf dem Blatt angekreuzt; bei einer Zahl, die schon dran war, wird noch einmal gewürfelt. Ziel ist, dass nach zwölf Minuten jedes Paar alle sechs gesammelt hat – Paare, die fertig sind, feuern die anderen an. Danach im Kreis auswerten: Welcher Schritt war leichter als gedacht, welcher würde in den Alltag passen?",
+          "sagen": [
+            "Würfeln, machen, ankreuzen. Schafft es jedes Paar, alle sechs zu sammeln?",
+            "Welcher Mini-Schritt war leichter als gedacht?",
+            "Welchen davon könntet ihr euch für morgen vorstellen?"
+          ],
+          "tipp": "Beim Schlaf-Würfel mitrechnen: Wer um halb sieben aufsteht, müsste um halb zehn im Bett liegen. Das Staunen darüber ist erwünscht, bewertet wird es nicht.",
+          "wennEsKippt": "Wird das Wandsitzen zum Kräftemessen, eine feste Zeit ansagen: 30 Sekunden, dann ist Schluss. Wer eine Bewegungsaufgabe nicht machen kann oder mag, geht stattdessen eine Runde durch den Raum. Bei ungerader Zahl würfelt die Leitung mit.",
+          "blatt": "skills-gesund-plan"
+        },
+        {
           "titel": "Mein Gesund-Plan",
-          "dauer": 20,
+          "dauer": 12,
           "phase": "uebung",
-          "text": "Die sechs Bereiche auf dem Blatt kurz vorstellen und die Ideen vorlesen. Jede Person schätzt ein, wo es gut läuft, wählt einen Bereich und daraus einen kleinen Schritt für die nächsten zwei Wochen – so klein, dass er fast sicher klappt. Dann den Schritt mit einem Wenn-dann-Satz festlegen und gleich den Plan für das größte Hindernis dazuschreiben. Anschließend die Zuversicht von 0 bis 10 einschätzen: Liegt sie unter 7, wird der Schritt gemeinsam verkleinert. Wer möchte, sucht sich einen Buddy, der in der nächsten Einheit nachfragt. Der Schritt kommt zusätzlich als Satz in den Skills-Pass.",
+          "text": "Jede Person malt die sechs Balken aus: Wo läuft es gut, wo will ich ran? Dann einen Bereich wählen und daraus einen kleinen Schritt für die nächste Woche – die Würfel-Schritte und die Reihe „Auf Dauer“ vom Rucksack-Blatt sind Ideen, eigene sind willkommen. Den Schritt als Wenn-dann-Satz aufschreiben und zu zweit prüfen, ob Zeit, Ort und Handlung klar sind. Zum Schluss zeigen alle mit den Fingern ihre Zuversicht von 0 bis 10: Liegt sie unter 7, wird der Schritt gemeinsam verkleinert. Wer möchte, sucht sich einen Buddy, der in der nächsten Einheit nachfragt.",
           "sagen": [
             "Nicht das perfekte Leben planen – nur einen Schritt, den ihr ab morgen wirklich schafft.",
             "Wie sicher seid ihr, von null bis zehn? Unter sieben? Dann machen wir den Schritt kleiner.",
@@ -244,18 +278,20 @@
           "wennEsKippt": "Kichern am Anfang ist normal: kurz warten, dann ruhig weiterlesen. Wer nicht still liegen kann, darf sitzen, die Augen offen lassen oder einen Knetball halten."
         },
         {
-          "titel": "Réckbléck und Skills-Pass",
+          "titel": "Abschluss: Stempel und Mission",
           "dauer": 5,
           "phase": "abschluss",
-          "text": "Blitzlicht mit der Leitfrage: Was ist dein kleiner Schritt – und wann machst du ihn zum ersten Mal? Wer ihn nicht nennen möchte, sagt nur den Bereich. Dann den Schritt in den Skills-Pass schreiben, Stempel. Den Gesund-Plan nehmen die Jugendlichen mit nach Hause. Zum Schluss kurz fragen, was sich die Gruppe für den Abschlussimbiss in der letzten Einheit wünscht.",
+          "text": "Blitzlicht mit der Leitfrage: Was ist dein kleiner Schritt – und wann machst du ihn zum ersten Mal? Wer ihn nicht nennen möchte, sagt nur den Bereich. Dann gibt es den Stempel in den Skills-Pass. Die Leitung liest die Mission der Woche vor; den Gesund-Plan nehmen die Jugendlichen mit nach Hause. Zum Schluss kurz fragen, was sich die Gruppe für den Abschlussimbiss in der letzten Einheit wünscht.",
           "sagen": [
             "Euer Schritt in einem Satz – und wann ist das erste Mal?",
+            "Eure Mission: der kleine Schritt, an mindestens vier Tagen. Nächstes Mal reicht ein Daumen.",
             "Nächste Woche ist unsere letzte Einheit. Was wünscht ihr euch zum Abschluss zu essen?"
           ],
           "blatt": "skills-pass"
         }
       ],
-      "bruecke": "Nächstes Mal ist unsere letzte Einheit: Wir schauen gemeinsam auf das ganze Jahr zurück – mit euren Skills-Pässen, dem Glas der Bedürfnisse und euren Bäumen.",
+      "mission": "Macht euren kleinen Schritt bis nächste Woche an mindestens vier Tagen und hakt auf dem Blatt jeden Tag ab, an dem er geklappt hat. Nächstes Mal reicht ein Daumen.",
+      "bruecke": "Nächstes Mal ist unsere letzte Einheit, und die wird ein Fest: mit einem Rückblick-Spiel, euren Skills-Pässen, dem Glas der Bedürfnisse und euren Bäumen.",
       "hintergrund": "Stress entsteht, wenn Anforderungen die eigenen Möglichkeiten zu übersteigen scheinen – entscheidend sind die Bewertung der Lage und die verfügbaren Bewältigungswege (Lazarus & Folkman, 1984). Der Stress-Rucksack macht diese Bilanz sichtbar. Die Salutogenese ergänzt den Blick um das, was gesund hält: Schlaf, Bewegung und verlässliche Beziehungen sind Widerstandsressourcen (Antonovsky, 1987). Im Skillstraining gilt die Sorge für Schlaf, Essen, Bewegung und Körper als eigener Baustein, weil sie die Anfälligkeit für starke Gefühle senkt (Rathus & Miller, 2015). Jugendliche brauchen 8 bis 10 Stunden Schlaf (Paruthi et al., 2016); in der Pubertät verschiebt sich die innere Uhr aber nach hinten, während die Schule früh beginnt (Carskadon, 2011). Ein kleiner, selbst gewählter und genau geplanter Schritt wird eher umgesetzt als ein großer Vorsatz (Gollwitzer, 1999).",
       "quellen": [
         "Lazarus, R. S. & Folkman, S. (1984). Stress, Appraisal, and Coping. New York: Springer.",
@@ -265,7 +301,7 @@
         "Carskadon, M. A. (2011). Sleep in adolescents: The perfect storm. Pediatric Clinics of North America, 58(3), 637–647.",
         "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
       ],
-      "achtung": "Gesundheitsthemen berühren schnell Privates. Beim Körperbild keine Zahlen nennen (Gewicht, Kalorien, Kleidergrößen) und keine Körper im Raum kommentieren. Fragen zum Essen nie als Kontrolle stellen: Was es zu Hause gibt, entscheiden Jugendliche oft nicht selbst. Persönliche Erfahrungen mit Alkohol, Nikotin oder Cannabis nicht in der Gruppe vertiefen, sondern im Einzelgespräch aufgreifen; Fragen zur sexuellen Gesundheit ernst nehmen und auf seriöse Anlaufstellen verweisen (SePAS, Planning Familial). Bei Hinweisen auf gestörtes Essverhalten, Substanzmissbrauch, Vernachlässigung oder Selbstverletzung nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren."
+      "achtung": "Gesundheitsthemen berühren schnell Privates. Beim Rucksack-Rennen und beim Wandsitzen niemanden zu körperlicher Leistung drängen. Beim Körperbild keine Zahlen nennen (Gewicht, Kalorien, Kleidergrößen) und keine Körper im Raum kommentieren. Fragen zum Essen nie als Kontrolle stellen: Was es zu Hause gibt, entscheiden Jugendliche oft nicht selbst. Persönliche Erfahrungen mit Alkohol, Nikotin oder Cannabis nicht in der Gruppe vertiefen, sondern im Einzelgespräch aufgreifen; Fragen zur sexuellen Gesundheit ernst nehmen und auf seriöse Anlaufstellen verweisen (SePAS, Planning Familial). Bei Hinweisen auf gestörtes Essverhalten, Substanzmissbrauch, Vernachlässigung oder Selbstverletzung nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren."
     }
   ]
 }

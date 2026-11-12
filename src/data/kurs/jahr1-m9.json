@@ -6,94 +6,104 @@
       "jahr": 1,
       "modul": "j1-m9",
       "titel": "Rückblick und Abschied",
-      "kurz": "Die letzte Einheit: Mit Skills-Pass, Glas und Baum schauen die Jugendlichen auf ihr Jahr, schreiben einen Brief an sich selbst und verabschieden sich wertschätzend voneinander.",
+      "kurz": "Die letzte Einheit ist ein Fest: Rückblick-Spiel, Jahreskurve, ein letzter Blick ins Glas der Bedürfnisse und auf die Bäume, ein Brief an sich selbst, der Stärken-Rücken – und der Stempel im Ziel.",
       "dauer": 100,
       "ziele": [
-        "blicken mit Skills-Pass und Jahreskurve auf ihr Jahr zurück und benennen, was sie gelernt haben",
-        "sehen an Plakat, Glas und Baum, was sich seit September verändert hat",
+        "rufen im Rückblick-Spiel die wichtigsten Skills und Bilder des Jahres ab",
+        "sehen an Skills-Pass, Plakat, Glas, Tanks und Baum, was sich seit September verändert hat",
         "schreiben einen Brief an sich selbst und geben einander wertschätzende Rückmeldungen",
         "verabschieden sich bewusst voneinander und von der Leitung"
       ],
       "material": [
         "Gefühlsrad (A3, laminiert) und Anspannungsskala",
-        "Skills-Pässe aller Jugendlichen, Stempel für den letzten Eintrag",
-        "Schülerblatt „Mein Jahr“ je Person, Buntstifte",
-        "Plakat „Was sind Skills?“ aus Einheit 1, Klebezettel in einer neuen Farbe",
-        "Glas der Bedürfnisse und die Bedürfnis-Pegel aus Einheit 4 (in den Mappen)",
-        "Bäume der Stärke aus Einheit 6, Stifte in einer neuen Farbe",
+        "Rückblick-Karten, einmal ausgeschnitten, dazu einige leere Karten; Stoppuhr oder Handy-Timer",
+        "Skills-Pässe aller Jugendlichen, Stempel für das Ziel-Feld",
+        "Schülerblatt „Mein Jahr“ für jede Person, Buntstifte",
+        "Glas der Bedürfnisse, Zettel in der dritten Farbe und gleiche Stifte für alle",
+        "Plakat „Was sind Skills?“ aus Einheit 1, Haftnotizen in der dritten Farbe",
+        "Persönliche Mappen mit dem Blatt „Meine Tanks“, Buntstifte in einer Farbe, die dort noch nicht vorkommt",
+        "Bäume der Stärke aus Einheit 6 mit dem Blatt „Mein Baum der Stärke“, Stifte in einer neuen Farbe",
         "Briefbogen „Brief an mich“ und ein Umschlag je Person, eine verschließbare Box",
         "Blatt „Das schätzen wir an dir“ je Person, Malerkrepp, Filzstifte (keine Permanentmarker)",
-        "Kleine Karten mit dem persönlichen Satz der Leitung für jede Person",
+        "Eine Urkunde je Person, von der Leitung vorbereitet",
         "Abschlussimbiss und Getränke",
-        "Lautsprecher für leise Musik"
+        "Lautsprecher für Musik"
       ],
       "vorbereitung": [
         "Im Team klären und aufschreiben: Wer bewahrt die Briefe auf (verschlossen, etwa im Schrank der Leitung), wann werden sie zurückgegeben (Datum festlegen, etwa nach den Herbstferien), und wie bekommen Jugendliche ihren Brief, die die Einrichtung verlassen?",
-        "Für jede Person eine kleine Karte mit einem persönlichen Satz schreiben: eine konkrete Beobachtung aus dem Jahr.",
-        "Skills-Pässe, Bäume der Stärke und Bedürfnis-Pegel aus Box und Mappen holen und nach Namen sortieren.",
-        "Drei Stationen aufbauen: das Plakat „Was sind Skills?“ an der Wand, das Glas der Bedürfnisse, die Bäume auf Tischen.",
+        "Für jede Person die Urkunde ausfüllen: Name, Datum und im Feld der Leitung eine konkrete Beobachtung aus dem Jahr.",
+        "Die Rückblick-Karten ausschneiden und mischen; die Lösungen auf der Lehrerseite bereithalten.",
+        "Skills-Pässe, Bäume der Stärke und Mappen aus Box und Sammelmappe holen und nach Namen sortieren.",
+        "Vier Stationen aufbauen: das Glas der Bedürfnisse mit Zetteln, das Plakat „Was sind Skills?“ an der Wand, die Mappen mit dem Blatt „Meine Tanks“, die Bäume auf Tischen.",
         "Den Abschlussimbiss nach dem Wunsch der Gruppe aus Einheit 29 besorgen; Allergien beachten."
       ],
       "blaetter": [
         "skills-gefuehlsrad",
+        "skills-rueckblick-karten",
         "skills-pass",
         "skills-mein-jahr",
         "skills-beduerfnis-pegel",
         "skills-baum-der-staerke",
         "skills-brief-an-mich",
-        "skills-staerken-ruecken"
+        "skills-staerken-ruecken",
+        "skills-urkunde"
       ],
       "ablauf": [
         {
-          "min": "0–10",
+          "min": "0–8",
           "phase": "ankommen",
           "titel": "Check-in: Wenn ich an dieses Jahr denke …"
         },
         {
-          "min": "10–15",
+          "min": "8–11",
           "phase": "bruecke",
-          "titel": "Gesund-Plan nachgefragt, Ablauf von heute"
+          "titel": "Rückblick: Gesund-Plan und das Programm"
         },
         {
-          "min": "15–30",
+          "min": "11–27",
+          "phase": "aktiv",
+          "titel": "Wisst ihr noch? Das Rückblick-Spiel"
+        },
+        {
+          "min": "27–37",
           "phase": "uebung",
-          "titel": "Skills-Pass und Jahreskurve"
+          "titel": "Mein Jahr: Pass und Jahreskurve"
         },
         {
-          "min": "30–40",
-          "phase": "uebung",
-          "titel": "Plakat, Glas und Baum: die Fäden des Jahres"
+          "min": "37–49",
+          "phase": "aktiv",
+          "titel": "Die Fäden des Jahres: vier Stationen"
         },
         {
-          "min": "40–55",
-          "phase": "uebung",
-          "titel": "Brief an mich selbst"
-        },
-        {
-          "min": "55–70",
+          "min": "49–64",
           "phase": "pause",
           "titel": "Abschlussimbiss"
         },
         {
-          "min": "70–85",
-          "phase": "aktiv",
-          "titel": "Stärken-Rücken"
+          "min": "64–75",
+          "phase": "uebung",
+          "titel": "Brief an mich selbst"
         },
         {
-          "min": "85–90",
+          "min": "75–87",
+          "phase": "aktiv",
+          "titel": "Stärken-Rücken mit Musik-Stopp"
+        },
+        {
+          "min": "87–92",
           "phase": "skill",
           "titel": "Wie am ersten Tag: 5-4-3-2-1"
         },
         {
-          "min": "90–100",
+          "min": "92–100",
           "phase": "abschluss",
-          "titel": "Abschlussrunde und letzter Stempel"
+          "titel": "Abschluss: Urkunde, Stempel im Ziel und Ausblick"
         }
       ],
       "schritte": [
         {
           "titel": "Check-in: Wenn ich an dieses Jahr denke …",
-          "dauer": 10,
+          "dauer": 8,
           "phase": "ankommen",
           "text": "Stühle im Kreis, das Gefühlsrad in der Mitte. Reihum beendet jede Person den Satz „Wenn ich an dieses Jahr denke, fühle ich mich …“ und nennt ihre Anspannung von 0 bis 100. Heute sind ausdrücklich zwei Wörter erlaubt, auch solche, die nicht im Rad stehen, etwa erleichtert oder wehmütig. Die Leitung beginnt und zeigt, dass gemischte Gefühle dazugehören, zum Beispiel: stolz und ein bisschen traurig, weil heute das letzte Mal ist.",
           "sagen": [
@@ -104,47 +114,68 @@
           "blatt": "skills-gefuehlsrad"
         },
         {
-          "titel": "Gesund-Plan nachgefragt, Ablauf von heute",
-          "dauer": 5,
+          "titel": "Rückblick: Gesund-Plan und das Programm",
+          "dauer": 3,
           "phase": "bruecke",
-          "text": "Kurz an Einheit 29 anknüpfen: Wie läuft der Gesund-Plan? Alle zeigen gleichzeitig mit dem Daumen; wer einen Buddy hat, tauscht sich eine halbe Minute aus. Dann den Ablauf von heute nennen und auf dem Jahresweg zeigen, dass die Gruppe oben auf der Treppe angekommen ist.",
+          "text": "Kurz an Einheit 29 anknüpfen: Wie lief der kleine Schritt? Alle zeigen gleichzeitig mit dem Daumen; wer einen Buddy hat, tauscht sich eine halbe Minute aus. Dann das Programm nennen und auf dem Jahresweg zeigen, dass die Gruppe oben auf der Treppe angekommen ist.",
           "sagen": [
-            "Euer Gesund-Plan: Daumen hoch, Mitte oder runter? Auf drei.",
-            "Heute ist unsere letzte Einheit. Wir schauen zurück, schreiben euch selbst einen Brief und verabschieden uns richtig."
+            "Euer kleiner Schritt: Daumen hoch, quer oder runter? Auf drei.",
+            "Heute ist unsere letzte Einheit. Wir spielen, schauen zurück, schreiben euch selbst einen Brief und verabschieden uns richtig."
           ]
         },
         {
-          "titel": "Skills-Pass und Jahreskurve",
-          "dauer": 15,
+          "titel": "Wisst ihr noch? Das Rückblick-Spiel",
+          "dauer": 16,
+          "phase": "aktiv",
+          "text": "Zwei gemischte Teams ziehen abwechselnd eine Rückblick-Karte. Bei „Mach vor“ spielt eine Person den Skill ohne Worte vor, und ihr Team hat 30 Sekunden zum Raten. Bei „Wisst ihr noch?“ berät sich das Team 20 Sekunden und antwortet; liegt es daneben, darf das andere Team. Bei „Erzählt“ bringt jede Geschichte von höchstens einer Minute einen Punkt. Eine Person stoppt die Zeit, die Leitung zählt die Punkte an der Tafel, bis alle zwölf Karten gespielt sind. Zum Schluss fragen, was die Gruppe fast vergessen hatte.",
+          "sagen": [
+            "Ein Jahr in zwölf Karten. Wer zieht die erste?",
+            "Bei den Erzähl-Karten zählen nur Geschichten, über die alle lachen können – auch die Person, um die es geht.",
+            "Was hattet ihr fast vergessen?"
+          ],
+          "tipp": "Leere Karten dazulegen: Jedes Team darf vor dem Start eine eigene Erinnerung als Karte schreiben. Wer nicht vormachen mag, gibt die Karte im Team weiter.",
+          "wennEsKippt": "Wird jemand in einer Geschichte vorgeführt, freundlich stoppen und eine neue Karte ziehen lassen. Ist die Gruppe heute eher still oder wehmütig, die Punkte weglassen und die Karten reihum im Kreis spielen. Bei zwei oder drei Jugendlichen spielen alle gemeinsam gegen die Uhr.",
+          "blatt": "skills-rueckblick-karten"
+        },
+        {
+          "titel": "Mein Jahr: Pass und Jahreskurve",
+          "dauer": 10,
           "phase": "uebung",
-          "text": "Die Skills-Pässe austeilen. Jede Person blättert fünf Minuten still durch ihre Einträge und markiert die drei Sätze, die ihr heute am meisten bedeuten. Dann auf dem Blatt „Mein Jahr“ die Jahreskurve zeichnen: pro Monat ein Kreuz, die Kreuze verbinden, zu zwei, drei Hoch- und Tiefpunkten Stichworte eintragen. Die Leitung zeigt vorher eine eigene Beispielkurve an der Tafel, mit einem Tief im November und dem Satz, was sie daraus gelernt hat. Zum Schluss erzählt, wer mag, einer Partnerin oder einem Partner von einem Hochpunkt.",
+          "text": "Die Skills-Pässe austeilen. Jede Person blättert zwei Minuten still durch ihren Pass: der Stempelweg kurz vor dem Ziel, die Skills-Sammlung und auf Seite 2 die Einträge unter „Was nimmst du mit?“. Dann auf dem Blatt „Mein Jahr“ die Jahreskurve zeichnen – ein Punkt für jeden Monat, dann verbinden – und aus der Skills-Sammlung die drei Skills wählen, die mit in die Ferien kommen. Die Leitung zeigt vorher eine eigene Beispielkurve an der Tafel, mit einem Tief im November und dem Satz, was sie daraus gelernt hat. Wer mag, malt noch die Balken aus und erzählt einer Partnerin oder einem Partner von einem Hochpunkt.",
           "sagen": [
             "Blättert durch euren Pass. Welcher Satz überrascht euch heute? Welcher stimmt immer noch?",
-            "Die Kurve gehört euch. Schreibt nur dazu, was ihr aufschreiben wollt."
+            "Die Kurve gehört euch. Schreibt nur dazu, was ihr aufschreiben wollt.",
+            "Welche drei Skills kommen mit in die Ferien?"
           ],
-          "tipp": "Wer erst im Lauf des Jahres dazugekommen ist, beginnt die Kurve mit seinem ersten Monat in der Gruppe. Fehlen Einträge im Pass, nicht darauf hinweisen.",
-          "wennEsKippt": "Stockt jemand vor einem Tiefpunkt oder wird traurig, nicht nachfragen: ruhig dazusetzen und vorschlagen, die Kurve auszulassen und nur die Satzanfänge zu beantworten. Nach der Einheit ein Gespräch anbieten.",
+          "tipp": "Wer erst im Lauf des Jahres dazugekommen ist, beginnt die Kurve mit seinem ersten Monat in der Gruppe. Fehlen Einträge oder Stempel im Pass, nicht darauf hinweisen.",
+          "wennEsKippt": "Stockt jemand vor einem Tiefpunkt oder wird traurig, nicht nachfragen: ruhig dazusetzen und vorschlagen, die Kurve auszulassen und nur die drei Skills zu wählen. Nach der Einheit ein Gespräch anbieten.",
           "blatt": "skills-mein-jahr"
         },
         {
-          "titel": "Plakat, Glas und Baum: die Fäden des Jahres",
-          "dauer": 10,
-          "phase": "uebung",
-          "text": "Zuerst öffnet die Leitung das Glas der Bedürfnisse ein letztes Mal und liest zwei, drei Zettel aus Einheit 4 vor. Dann gehen alle in eigener Reihenfolge zu drei Stationen. Am Plakat „Was sind Skills?“ aus Einheit 1 klebt jede Person einen Zettel in neuer Farbe dazu: einen Skill, den sie heute kennt und im September noch nicht kannte. Auf dem Blatt „Meine Tanks“ aus der Mappe setzt jede Person in einer neuen Farbe einen Strich in jeden Balken: Wie voll sind die Tanks heute? Am eigenen Baum der Stärke kommen in einer neuen Farbe und mit Datum zwei, drei Früchte dazu: Was habe ich dieses Jahr geschafft? Wer seinen Zettel aus dem Glas wiedererkennt, darf ihn mitnehmen; die übrigen entsorgt die Leitung nach der Einheit vertraulich.",
+          "titel": "Die Fäden des Jahres: vier Stationen",
+          "dauer": 12,
+          "phase": "aktiv",
+          "text": "Zuerst öffnet die Leitung das Glas der Bedürfnisse ein letztes Mal und liest zwei, drei Zettel aus Einheit 4 vor. Dann gehen alle bei leiser Musik in eigener Reihenfolge zu den vier Stationen. Am Glas schreibt, wer mag, auf einen Zettel in der dritten Farbe, was er für den Sommer braucht, und wirft ihn hinein. Am Plakat „Was sind Skills?“ klebt jede Person eine Haftnotiz in neuer Farbe dazu: einen Skill, den sie heute kennt und im September noch nicht kannte. Auf dem Blatt „Meine Tanks“ aus der Mappe setzt jede Person in einer neuen Farbe einen Strich in jeden Balken: Wie voll sind die Tanks heute? Am eigenen Baum der Stärke kommen in einer neuen Farbe und mit Datum zwei, drei Früchte dazu, und jede Person liest auf dem Blatt die Zeile „Später im Jahr – mein neuer Satz für den Stamm“: Stimmt der Satz aus Einheit 19 noch? Wer seinen Zettel im Glas wiedererkennt, darf ihn mitnehmen; die übrigen entsorgt die Leitung nach der Einheit vertraulich.",
           "sagen": [
             "Schaut euch das Plakat vom ersten Tag an. Was wusstet ihr damals noch nicht?",
             "Welcher Tank ist heute voller als im September – und was hat dazu beigetragen?",
             "Was habt ihr dieses Jahr geschafft? Das darf klein sein: ein Nein, ein Referat, eine Woche ohne großen Streit."
           ],
-          "tipp": "Wer mag, schaut auf die Äste seines Baums: Ist dort etwas inzwischen zu einer Stärke geworden, darf es in den Stamm wandern.",
-          "wennEsKippt": "Fehlt jemandem der eigene Baum oder der Bedürfnis-Pegel, reicht ein neues Blatt mit Stamm und Früchten. Wird die Zeit knapp, liest die Leitung die Zettel aus dem Glas erst in der Abschlussrunde vor.",
+          "tipp": "Im Glas liegen jetzt drei Farben: September, Einheit 15 und heute. Wer mag, schaut auf die Äste seines Baums: Ist dort etwas inzwischen zu einer Stärke geworden, darf es in den Stamm wandern.",
+          "wennEsKippt": "Fehlt jemandem der eigene Baum oder das Blatt „Meine Tanks“, reicht ein neues Blatt mit Stamm und Früchten. Steht auf einem Zettel im Glas etwas Belastendes, wird er nicht vorgelesen. Wird die Zeit knapp, entfällt die Station am Plakat, und die Gruppe klebt ihre Notizen in der Pause dazu.",
           "blatt": "skills-baum-der-staerke"
         },
         {
-          "titel": "Brief an mich selbst",
+          "titel": "Abschlussimbiss",
           "dauer": 15,
+          "phase": "pause",
+          "text": "Gemeinsam essen, was sich die Gruppe in Einheit 29 gewünscht hat – bei gutem Wetter gern draußen. Die Leitung isst mit und erzählt, wenn es passt, eine lustige Erinnerung aus dem Jahr. Allergien und Essensregeln beachten."
+        },
+        {
+          "titel": "Brief an mich selbst",
+          "dauer": 11,
           "phase": "uebung",
-          "text": "Zuerst den Rahmen nennen: Niemand liest die Briefe, auch die Leitung nicht; sie bewahrt die verschlossenen Umschläge auf und gibt sie zum vereinbarten Termin zurück. Jede Person schreibt auf dem Briefbogen einen Brief an sich selbst in einem Jahr, leise Musik im Hintergrund. Die Satzanfänge sind ein Angebot, keine Pflicht. Den Brief falten, in den Umschlag stecken, zukleben, außen Namen und Rückgabedatum eintragen. Die Leitung sammelt die Umschläge sichtbar in einer Box, die verschlossen wird.",
+          "text": "Zuerst den Rahmen nennen: Niemand liest die Briefe, auch die Leitung nicht; sie bewahrt die verschlossenen Umschläge auf und gibt sie zum vereinbarten Termin zurück. Jede Person schreibt auf dem Briefbogen einen Brief an sich selbst in einem Jahr, leise Musik im Hintergrund. Die Anfänge im Kasten sind ein Angebot, keine Pflicht. Den Brief falten, in den Umschlag stecken, zukleben, außen Namen und Rückgabedatum eintragen. Die Leitung sammelt die Umschläge sichtbar in einer Box, die verschlossen wird.",
           "sagen": [
             "Stellt euch vor, ihr seid ein Jahr älter. Was wollt ihr euch dann sagen?",
             "Die Briefe liest niemand außer euch. Ich bewahre sie verschlossen auf und gebe sie euch am … zurück.",
@@ -155,27 +186,21 @@
           "blatt": "skills-brief-an-mich"
         },
         {
-          "titel": "Abschlussimbiss",
-          "dauer": 15,
-          "phase": "pause",
-          "text": "Gemeinsam essen, was sich die Gruppe in Einheit 29 gewünscht hat – bei gutem Wetter gern draußen. Die Leitung isst mit und erzählt, wenn es passt, eine lustige Erinnerung aus dem Jahr. Allergien und Essensregeln beachten."
-        },
-        {
-          "titel": "Stärken-Rücken",
-          "dauer": 15,
+          "titel": "Stärken-Rücken mit Musik-Stopp",
+          "dauer": 12,
           "phase": "aktiv",
-          "text": "Jede Person schreibt ihren Namen auf das Blatt „Das schätzen wir an dir“; die Blätter werden mit Malerkrepp locker auf den Rücken geklebt, wer das nicht möchte, legt sein Blatt auf den Stuhl. Die Regeln vorlesen, dann gehen alle bei leiser Musik herum und schreiben auf jedes Blatt einen Satz. Die Leitung schreibt überall mit und achtet darauf, dass jedes Blatt gleich viele Sätze bekommt. Bevor jemand liest, sammelt die Leitung die Blätter ein und liest sie kurz durch; ein unpassender Satz wird überklebt. Dann bekommt jede Person ihr Blatt zurück und liest es in Ruhe.",
+          "text": "Jede Person schreibt ihren Namen auf das Blatt „Das schätzen wir an dir“; die Blätter werden mit Malerkrepp locker auf den Rücken geklebt, wer das nicht möchte, legt sein Blatt auf den Stuhl. Die Regeln vorlesen, dann läuft Musik, und alle gehen durch den Raum. Bei jedem Stopp sucht sich jede Person einen Rücken, auf dem ihr Satz noch fehlt, und schreibt in eine Sprechblase. Die Leitung schreibt überall mit und achtet darauf, dass jedes Blatt gleich viele Sätze bekommt. Bevor jemand liest, sammelt die Leitung die Blätter ein und liest sie kurz durch; ein unpassender Satz wird überklebt. Dann bekommt jede Person ihr Blatt zurück, liest es in Ruhe und kreist den Satz ein, den sie sich merken will.",
+          "sagen": [
+            "Schreibt so, dass sich die Person in einem Jahr noch darüber freut.",
+            "Nehmt euch einen Moment für euer Blatt. Welcher Satz überrascht euch?"
+          ],
           "punkte": [
             "Nur Sätze, die stärken: eine Stärke, die du erlebt hast, oder ein Danke.",
             "Konkret: nicht nur „du bist nett“, sondern wann und wie.",
             "Nichts über Aussehen, keine Witze auf Kosten der Person.",
             "Auf jedes Blatt kommt ein Satz von jeder Person."
           ],
-          "sagen": [
-            "Schreibt so, dass sich die Person in einem Jahr noch darüber freut.",
-            "Nehmt euch einen Moment für euer Blatt. Welcher Satz überrascht euch?"
-          ],
-          "tipp": "Filzstifte oder Kugelschreiber verwenden, keine Permanentmarker – die drücken bis auf die Kleidung durch. Bei nur zwei Jugendlichen schreibt jede Person drei Sätze für die andere, die Leitung ergänzt.",
+          "tipp": "Filzstifte oder Kugelschreiber verwenden, keine Permanentmarker – die drücken bis auf die Kleidung durch. Hinter jedem Rücken schreibt immer nur eine Person. Bei nur zwei Jugendlichen schreibt jede Person drei Sätze für die andere, die Leitung ergänzt.",
           "wennEsKippt": "Taucht ein abwertender oder zweideutiger Satz auf, wird er überklebt und später mit der Person besprochen, die ihn geschrieben hat – nicht in der Gruppe. Ist jemand eher Außenseiter, schreibt die Leitung ihren Satz besonders sorgfältig und achtet darauf, dass dieses Blatt nicht dünner ausfällt als die anderen.",
           "blatt": "skills-staerken-ruecken"
         },
@@ -184,27 +209,28 @@
           "dauer": 5,
           "phase": "skill",
           "text": "Alle sitzen ein letztes Mal im Kreis. Die Leitung erinnert daran, dass 5-4-3-2-1 der erste Skill des Jahres war, und fragt, wer die Übung heute anleiten möchte. Die freiwillige Person leitet langsam an, die Leitung hilft bei Bedarf mit den Stichworten. Wünscht sich die Gruppe einen anderen Lieblings-Skill, wird dieser genommen.",
+          "sagen": [
+            "Mit diesem Skill haben wir im September angefangen. Wer von euch leitet ihn heute an?"
+          ],
           "punkte": [
             "5 Dinge, die du siehst",
             "4 Dinge, die du hörst",
             "3 Dinge, die du spürst",
             "2 Dinge, die du riechst",
             "1 Sache, die du schmeckst"
-          ],
-          "sagen": [
-            "Mit diesem Skill haben wir im September angefangen. Wer von euch leitet ihn heute an?"
           ]
         },
         {
-          "titel": "Abschlussrunde und letzter Stempel",
-          "dauer": 10,
+          "titel": "Abschluss: Urkunde, Stempel im Ziel und Ausblick",
+          "dauer": 8,
           "phase": "abschluss",
-          "text": "Reihum sagt jede Person einen Satz: Das nehme ich aus diesem Jahr mit … Dann folgen der letzte Eintrag in den Skills-Pass und der letzte Stempel. Die Leitung gibt jeder Person ihre Sachen mit – Skills-Pass, Baum der Stärke, Bedürfnis-Pegel, Stärken-Rücken – und dazu die Karte mit ihrem persönlichen Satz. Zum Schluss dankt sie der Gruppe und nennt noch einmal, wann und wo es die Briefe gibt.",
+          "text": "Reihum sagt jede Person einen Satz dazu, was sie aus diesem Jahr mitnimmt. Dann ruft die Leitung jede Person einzeln auf, überreicht die Urkunde und liest den persönlichen Satz vor, wenn die Person das möchte; die Gruppe klatscht. Dazu gibt es den letzten Stempel: ins Ziel-Feld des Skills-Passes und auf die Urkunde. Jede Person trägt auf der Urkunde ihren wichtigsten Skill ein; wer mag, sammelt danach Unterschriften und Grüße. Die Leitung gibt allen ihre Sachen mit – Skills-Pass, Baum der Stärke, Mappe, Stärken-Rücken – und nennt noch einmal, wann und wo es die Briefe gibt. Statt einer Mission gibt es heute einen Ausblick.",
           "sagen": [
             "Das nehme ich aus diesem Jahr mit … – ein Satz reicht.",
-            "Danke euch für dieses Jahr. Ich habe gesehen, wie viel ihr euch getraut habt."
+            "Danke euch für dieses Jahr. Ich habe gesehen, wie viel ihr euch getraut habt.",
+            "Heute gibt es keine Mission. Eure Skills kommen mit in die Ferien – und eure Briefe warten auf euch."
           ],
-          "tipp": "Die persönlichen Sätze vorher auf kleine Karten schreiben: Eine konkrete Beobachtung aus dem Jahr wirkt stärker als ein allgemeines Lob.",
+          "tipp": "Eine konkrete Beobachtung aus dem Jahr wirkt stärker als ein allgemeines Lob. Wer im Lauf des Jahres dazugekommen ist, bekommt dieselbe Urkunde und denselben Stempel im Ziel.",
           "wennEsKippt": "Fällt der Abschied schwer – Tränen, Rückzug oder Albernheit als Schutz –, das nicht wegreden: benennen, dass Abschiede gemischte Gefühle machen, und nach der Einheit Zeit für diese Person haben.",
           "blatt": "skills-pass"
         }
@@ -217,7 +243,7 @@
         "Emmons, R. A. & McCullough, M. E. (2003). Counting blessings versus burdens: An experimental investigation of gratitude and subjective well-being in daily life. Journal of Personality and Social Psychology, 84(2), 377–389.",
         "Seligman, M. E. P., Steen, T. A., Park, N. & Peterson, C. (2005). Positive psychology progress: Empirical validation of interventions. American Psychologist, 60(5), 410–421."
       ],
-      "achtung": "Abschiede wecken bei manchen Jugendlichen alte Verluste: Beziehungsabbrüche, Wechsel von Einrichtungen, Trennungen. Traurigkeit, Rückzug oder Albernheit sind dann verständlich; nicht in der Gruppe vertiefen, aber nach der Einheit Zeit für ein Gespräch haben. Auf der Jahreskurve und im Brief entscheidet jede Person selbst, was sie schreibt; die Briefe bleiben ungelesen und verschlossen. Beim Stärken-Rücken liest die Leitung jedes Blatt, bevor es zurückgegeben wird. Deutet jemand an, in einem Jahr „nicht mehr da“ sein zu wollen, oder gibt es andere Hinweise auf Gefährdung: noch am selben Tag das Gespräch suchen, nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren."
+      "achtung": "Abschiede wecken bei manchen Jugendlichen alte Verluste: Beziehungsabbrüche, Wechsel von Einrichtungen, Trennungen. Traurigkeit, Rückzug oder Albernheit sind dann verständlich; nicht in der Gruppe vertiefen, aber nach der Einheit Zeit für ein Gespräch haben. Auf der Jahreskurve und im Brief entscheidet jede Person selbst, was sie schreibt; die Briefe bleiben ungelesen und verschlossen. Im Rückblick-Spiel zählen nur Geschichten, bei denen niemand vorgeführt wird. Beim Stärken-Rücken liest die Leitung jedes Blatt, bevor es zurückgegeben wird. Alle Urkunden sind gleich wertvoll: für jede Person ein gleich sorgfältiger Satz, nichts aus vertraulichen Gesprächen. Deutet jemand an, in einem Jahr „nicht mehr da“ sein zu wollen, oder gibt es andere Hinweise auf Gefährdung: noch am selben Tag das Gespräch suchen, nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren."
     }
   ]
 }

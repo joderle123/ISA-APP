@@ -7167,5 +7167,1356 @@
         "material": "Ciseaux, ruban adhésif, 24 papillons adhésifs, six chaises, un dé"
       }
     }
+  },
+  {
+    "id": "skills-fake-fabrik-karten",
+    "bereich": "skills",
+    "thema": "digital",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "look": "spiel",
+    "sozialform": [
+      "gruppe"
+    ],
+    "dauer": "20 Min.",
+    "eldib": [
+      "KOG-51",
+      "KOG-59"
+    ],
+    "schlagworte": [
+      "Fake News",
+      "Tricks",
+      "Medienkompetenz",
+      "Spiel",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:speakerphone",
+    "verwandt": [
+      "skills-echt-oder-fake"
+    ],
+    "kurs": [
+      "j1-e28"
+    ],
+    "de": {
+      "titel": "Fake-Fabrik",
+      "untertitel": "Ein Spiel für zwei Teams: Wer die Tricks selbst gebaut hat, fällt nicht mehr so leicht darauf herein.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "So läuft die Fake-Fabrik",
+          "punkte": [
+            "Jedes Team zieht eine Themen-Karte (blau) und drei Trick-Karten (rot).",
+            "Baut in sechs Minuten eine erfundene Schlagzeile mit allen drei Tricks und schreibt sie groß auf ein Plakat.",
+            "Das andere Team hat 60 Sekunden: Jeder entlarvte Trick bringt 1 Punkt.",
+            "Nur Erfundenes über Schul-Themen – keine echten Namen, keine echten Personen."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schneidet die Karten aus und legt zwei Stapel: rot und blau.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 76,
+          "schneiden": true,
+          "karten": [
+            {
+              "titel": "Wut-Knopf",
+              "text": "So schreiben, dass man sich sofort aufregt.",
+              "nummer": 1,
+              "farbe": "rot"
+            },
+            {
+              "titel": "Angst-Knopf",
+              "text": "Etwas Schlimmes passiert – schon bald.",
+              "nummer": 2,
+              "farbe": "rot"
+            },
+            {
+              "titel": "Zeitdruck",
+              "text": "Teilen, bevor es gelöscht wird.",
+              "nummer": 3,
+              "farbe": "rot"
+            },
+            {
+              "titel": "Falscher Experte",
+              "text": "Ein Experte ohne Namen bestätigt alles.",
+              "nummer": 4,
+              "farbe": "rot"
+            },
+            {
+              "titel": "Großbuchstaben",
+              "text": "Die wichtigsten Wörter ganz groß.",
+              "nummer": 5,
+              "farbe": "rot"
+            },
+            {
+              "titel": "Ohne Quelle",
+              "text": "Niemand weiß, woher es kommt.",
+              "nummer": 6,
+              "farbe": "rot"
+            },
+            {
+              "titel": "Übertreibung",
+              "text": "Alle, nie, für immer, total.",
+              "nummer": 7,
+              "farbe": "rot"
+            },
+            {
+              "titel": "Geheimnis",
+              "text": "Was man euch nicht sagen will …",
+              "nummer": 8,
+              "farbe": "rot"
+            },
+            {
+              "titel": "Falscher Absender",
+              "text": "Klingt, als käme es von der Direktion.",
+              "nummer": 9,
+              "farbe": "rot"
+            },
+            {
+              "titel": "Kantine",
+              "text": "Thema",
+              "farbe": "blau"
+            },
+            {
+              "titel": "Schulbus",
+              "text": "Thema",
+              "farbe": "blau"
+            },
+            {
+              "titel": "Pausen",
+              "text": "Thema",
+              "farbe": "blau"
+            },
+            {
+              "titel": "Handyregel",
+              "text": "Thema",
+              "farbe": "blau"
+            },
+            {
+              "titel": "Hausaufgaben",
+              "text": "Thema",
+              "farbe": "blau"
+            },
+            {
+              "titel": "Ferien",
+              "text": "Thema",
+              "farbe": "blau"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen bauen mit vorgegebenen Tricks eine erfundene Falschmeldung und entlarven die Tricks des anderen Teams. So erkennen sie Empörung, Zeitdruck und falsche Experten später schneller.",
+        "ablauf": [
+          "Zwei Teams, Karten ziehen, Regel zu echten Personen laut sagen. Sechs Minuten bauen.",
+          "Ein Team liest seine Schlagzeile wie in den Nachrichten vor, das andere ruft 60 Sekunden lang Tricks. Punkte an die Tafel, Wechsel. Zwei Runden.",
+          "Auswerten (3 Min.): Welcher Trick wirkt am stärksten? Die Plakate danach zerreißen."
+        ],
+        "hintergrund": "Wer die Tricks von Falschmeldungen selbst angewendet hat, erkennt sie später leichter. In einem Online-Spiel, in dem die Spielenden selbst Falschmeldungen bauten, sank die Anfälligkeit für solche Meldungen messbar (Roozenbeek & van der Linden, 2019). Die Fake-Fabrik überträgt dieses Prinzip auf harmlose, erfundene Schul-Themen: erst bauen, dann entlarven.",
+        "quellen": [
+          "Roozenbeek, J. & van der Linden, S. (2019). Fake news game confers psychological resistance against online misinformation. Palgrave Communications, 5, 65."
+        ],
+        "differenzierung": {
+          "leichter": "Nur zwei Trick-Karten ziehen; die Leitung baut die erste Schlagzeile als Beispiel vor.",
+          "schwerer": "Das entlarvende Team schreibt die Meldung so um, dass sie stimmen könnte: mit Quelle, Datum und ruhigem Ton."
+        },
+        "impulse": [
+          "Welcher Trick hat bei euch selbst schon einmal funktioniert?",
+          "Woran merkt ihr im Körper, dass ein Beitrag auf euren Wut-Knopf drückt?"
+        ],
+        "tipps": [
+          "Beispiel: „Experte warnt: Ab morgen NUR NOCH Suppe in der Kantine. Teilen, bevor es gelöscht wird.“",
+          "Bei zwei oder drei Jugendlichen baut die Gruppe gemeinsam, und die Leitung entlarvt."
+        ],
+        "achtung": "Nur erfundene Meldungen über Schul-Themen: keine echten Personen, keine Namen, keine Bilder. Nichts wird fotografiert oder verschickt; die Plakate werden am Ende zerrissen. Macht sich eine Meldung über eine Gruppe von Menschen lustig, sofort stoppen und neu ziehen lassen.",
+        "material": "Ein Kartensatz für die Gruppe (ausgeschnitten), zwei Plakate oder A3-Blätter, dicke Stifte, Stoppuhr"
+      }
+    },
+    "fr": {
+      "titel": "La fabrique à fake news",
+      "untertitel": "Un jeu pour deux équipes : qui a fabriqué les ficelles soi-même s’y laisse moins prendre.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Comment fonctionne la fabrique",
+          "punkte": [
+            "Chaque équipe tire une carte thème (bleue) et trois cartes ficelle (rouges).",
+            "En six minutes, inventez un gros titre qui utilise les trois ficelles et écrivez-le en grand sur une affiche.",
+            "L’autre équipe a 60 secondes : chaque ficelle démasquée rapporte 1 point.",
+            "Uniquement de l’inventé sur des thèmes de l’école – pas de vrais noms, pas de personnes réelles."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Découpez les cartes et faites deux piles : rouge et bleue.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 76,
+          "schneiden": true,
+          "karten": [
+            {
+              "titel": "Bouton colère",
+              "text": "Écrire pour qu’on s’énerve tout de suite.",
+              "nummer": 1,
+              "farbe": "rot"
+            },
+            {
+              "titel": "Bouton peur",
+              "text": "Quelque chose de grave arrive – bientôt.",
+              "nummer": 2,
+              "farbe": "rot"
+            },
+            {
+              "titel": "Urgence",
+              "text": "Partagez avant suppression.",
+              "nummer": 3,
+              "farbe": "rot"
+            },
+            {
+              "titel": "Faux expert",
+              "text": "Un expert sans nom confirme tout.",
+              "nummer": 4,
+              "farbe": "rot"
+            },
+            {
+              "titel": "Majuscules",
+              "text": "Les mots importants en très grand.",
+              "nummer": 5,
+              "farbe": "rot"
+            },
+            {
+              "titel": "Sans source",
+              "text": "Personne ne sait d’où ça vient.",
+              "nummer": 6,
+              "farbe": "rot"
+            },
+            {
+              "titel": "Exagération",
+              "text": "Tous, jamais, pour toujours, totalement.",
+              "nummer": 7,
+              "farbe": "rot"
+            },
+            {
+              "titel": "Secret",
+              "text": "Ce qu’on ne veut pas vous dire …",
+              "nummer": 8,
+              "farbe": "rot"
+            },
+            {
+              "titel": "Faux expéditeur",
+              "text": "On dirait que ça vient de la direction.",
+              "nummer": 9,
+              "farbe": "rot"
+            },
+            {
+              "titel": "Cantine",
+              "text": "Thème",
+              "farbe": "blau"
+            },
+            {
+              "titel": "Bus scolaire",
+              "text": "Thème",
+              "farbe": "blau"
+            },
+            {
+              "titel": "Récréations",
+              "text": "Thème",
+              "farbe": "blau"
+            },
+            {
+              "titel": "Règle du téléphone",
+              "text": "Thème",
+              "farbe": "blau"
+            },
+            {
+              "titel": "Devoirs",
+              "text": "Thème",
+              "farbe": "blau"
+            },
+            {
+              "titel": "Vacances",
+              "text": "Thème",
+              "farbe": "blau"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Avec des ficelles imposées, les jeunes fabriquent une fausse information inventée et démasquent celles de l’autre équipe. Ils repèrent ensuite plus vite l’indignation, l’urgence et les faux experts.",
+        "ablauf": [
+          "Deux équipes, tirer les cartes, rappeler à voix haute la règle sur les personnes réelles. Six minutes de fabrication.",
+          "Une équipe lit son titre comme au journal, l’autre annonce des ficelles pendant 60 secondes. Points au tableau, on échange. Deux manches.",
+          "Bilan (3 min) : quelle ficelle agit le plus fort ? Déchirer ensuite les affiches."
+        ],
+        "hintergrund": "Qui a utilisé soi-même les ficelles des fausses informations les reconnaît plus facilement ensuite. Dans un jeu en ligne où les joueurs fabriquaient eux-mêmes de fausses informations, la vulnérabilité à ce type de messages a baissé de façon mesurable (Roozenbeek & van der Linden, 2019). La fabrique transpose ce principe à des thèmes scolaires inoffensifs et inventés : d’abord fabriquer, puis démasquer.",
+        "quellen": [
+          "Roozenbeek, J. & van der Linden, S. (2019). Fake news game confers psychological resistance against online misinformation. Palgrave Communications, 5, 65."
+        ],
+        "differenzierung": {
+          "leichter": "Ne tirer que deux cartes ficelle ; l’animateur fabrique le premier titre comme exemple.",
+          "schwerer": "L’équipe qui démasque réécrit le message pour qu’il puisse être vrai : avec une source, une date et un ton calme."
+        },
+        "impulse": [
+          "Quelle ficelle a déjà fonctionné sur vous ?",
+          "À quoi sentez-vous, dans le corps, qu’une publication appuie sur votre bouton colère ?"
+        ],
+        "tipps": [
+          "Exemple : « Un expert alerte : dès demain, PLUS QUE de la soupe à la cantine. Partagez avant suppression. »",
+          "Avec deux ou trois jeunes, le groupe fabrique ensemble et l’animateur démasque."
+        ],
+        "achtung": "Uniquement des messages inventés sur des thèmes de l’école : pas de personnes réelles, pas de noms, pas d’images. Rien n’est photographié ni envoyé ; les affiches sont déchirées à la fin. Si un message se moque d’un groupe de personnes, arrêter tout de suite et faire tirer de nouvelles cartes.",
+        "material": "Un jeu de cartes découpé pour le groupe, deux affiches ou feuilles A3, gros feutres, chronomètre"
+      }
+    }
+  },
+  {
+    "id": "skills-rueckblick-karten",
+    "bereich": "skills",
+    "thema": "abschluss",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "look": "spiel",
+    "sozialform": [
+      "gruppe"
+    ],
+    "dauer": "15–20 Min.",
+    "eldib": [
+      "K-18",
+      "SOZ-40"
+    ],
+    "schlagworte": [
+      "Jahresrückblick",
+      "Quiz",
+      "Pantomime",
+      "Spiel",
+      "Abschluss",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:confetti",
+    "verwandt": [
+      "skills-mein-jahr"
+    ],
+    "kurs": [
+      "j1-e30"
+    ],
+    "de": {
+      "titel": "Wisst ihr noch?",
+      "untertitel": "Das Rückblick-Spiel zum Abschluss: vormachen, wissen, erzählen.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "So geht das Spiel",
+          "punkte": [
+            "Zwei Teams ziehen abwechselnd eine Karte.",
+            "Grün – Mach vor: Eine Person spielt den Skill ohne Worte vor. Errät ihn ihr Team in 30 Sekunden, gibt es 1 Punkt.",
+            "Blau – Wisst ihr noch: Das Team berät sich 20 Sekunden und antwortet. Richtig = 1 Punkt, sonst darf das andere Team.",
+            "Orange – Erzählt: Jemand aus dem Team erzählt in höchstens einer Minute. Jede Geschichte bringt 1 Punkt."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schneidet die Karten aus und legt sie verdeckt auf einen Stapel.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 96,
+          "schneiden": true,
+          "karten": [
+            {
+              "titel": "Mach vor",
+              "text": "Atemübung 4-7-8",
+              "nummer": 1,
+              "farbe": "gruen"
+            },
+            {
+              "titel": "Mach vor",
+              "text": "5-4-3-2-1 mit allen Sinnen",
+              "nummer": 2,
+              "farbe": "gruen"
+            },
+            {
+              "titel": "Mach vor",
+              "text": "Stopp sagen – so, dass es jeder glaubt",
+              "nummer": 3,
+              "farbe": "gruen"
+            },
+            {
+              "titel": "Mach vor",
+              "text": "Die Teilen-Bremse",
+              "nummer": 4,
+              "farbe": "gruen"
+            },
+            {
+              "titel": "Wisst ihr noch?",
+              "text": "Wie viele Tanks hat jeder Mensch? Nennt drei davon.",
+              "nummer": 5,
+              "farbe": "blau"
+            },
+            {
+              "titel": "Wisst ihr noch?",
+              "text": "Was hält einen Baum im Sturm?",
+              "nummer": 6,
+              "farbe": "blau"
+            },
+            {
+              "titel": "Wisst ihr noch?",
+              "text": "Eure Ampel steht auf Rot. Welche Skills helfen dann noch? Nennt zwei.",
+              "nummer": 7,
+              "farbe": "blau"
+            },
+            {
+              "titel": "Wisst ihr noch?",
+              "text": "Was macht den Stress-Rucksack leichter? Nennt drei Dinge.",
+              "nummer": 8,
+              "farbe": "blau"
+            },
+            {
+              "titel": "Erzählt",
+              "text": "Der lustigste Moment in diesem Jahr",
+              "nummer": 9,
+              "farbe": "orange"
+            },
+            {
+              "titel": "Erzählt",
+              "text": "Ein Skill, den jemand von euch draußen benutzt hat",
+              "nummer": 10,
+              "farbe": "orange"
+            },
+            {
+              "titel": "Erzählt",
+              "text": "Ein Spiel aus dem Kurs, das ihr sofort wieder spielen würdet",
+              "nummer": 11,
+              "farbe": "orange"
+            },
+            {
+              "titel": "Erzählt",
+              "text": "Etwas, das ihr von jemandem aus der Gruppe gelernt habt",
+              "nummer": 12,
+              "farbe": "orange"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen holen im Spiel die wichtigsten Skills und Bilder des Jahres zurück und merken dabei, wie viel sie gemeinsam erlebt und gelernt haben.",
+        "ablauf": [
+          "Zwei gemischte Teams; eine Person stoppt die Zeit, die Leitung zählt die Punkte an der Tafel.",
+          "Abwechselnd ziehen, bis alle zwölf Karten gespielt sind. Wer nicht vormachen mag, gibt die Karte im Team weiter.",
+          "Zum Schluss fragen: Welche Karte hat euch überrascht – was hattet ihr fast vergessen? Dann geht es zu den Stationen."
+        ],
+        "hintergrund": "Ein gemeinsamer Rückblick macht sichtbar, was im Alltag untergeht: Die Gruppe hat ein Jahr lang Fähigkeiten aufgebaut und schwierige Momente bewältigt. Solche Erfahrungen von Wirksamkeit und verlässliche Beziehungen gehören zu den alltäglichen Schutzfaktoren, auf die Jugendliche bei Belastungen zurückgreifen (Masten, 2014). Das Spiel ruft die Skills dort ab, wo sie gelernt wurden – im Tun und in der Gruppe – und nicht als Abfrage.",
+        "quellen": [
+          "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Beim Vormachen dürfen zwei Personen zusammen spielen; bei den Fragen hilft das Plakat „Was sind Skills?“.",
+          "schwerer": "Nach jedem erratenen Skill sagt das Team, in welcher Situation er hilft."
+        },
+        "impulse": [
+          "Welchen Skill hattet ihr fast vergessen?",
+          "Welche Karte würdet ihr für die Gruppe im nächsten Jahr dazuschreiben?"
+        ],
+        "tipps": [
+          "Lösungen: 5) sechs – Körper, Sicherheit, Dazugehören, Ernst genommen werden, Selbst entscheiden, Spaß und Neues; 6) die Wurzeln; 7) Körper- und Sinnes-Skills; 8) zum Beispiel Schlaf, Bewegung, Pausen, Menschen, Skills.",
+          "Leere Karten für eigene Erinnerungen der Gruppe dazulegen. Bei zwei oder drei Jugendlichen: alle gemeinsam gegen die Uhr."
+        ],
+        "achtung": "Bei den Erzähl-Karten zählen nur Geschichten, über die alle lachen können – auch die Person, um die es geht. Wird jemand vorgeführt, freundlich stoppen und eine neue Karte ziehen lassen. Niemand muss vormachen oder erzählen; „weiter“ ist erlaubt.",
+        "material": "Ein Kartensatz für die Gruppe (ausgeschnitten), Stoppuhr oder Handy-Timer, einige leere Karten"
+      }
+    },
+    "fr": {
+      "titel": "Vous vous souvenez ?",
+      "untertitel": "Le jeu du bilan pour finir l’année : mimer, savoir, raconter.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Règle du jeu",
+          "punkte": [
+            "Deux équipes tirent une carte à tour de rôle.",
+            "Vert – Mime : une personne mime le skill sans paroles. Si son équipe le devine en 30 secondes, elle gagne 1 point.",
+            "Bleu – Vous vous souvenez : l’équipe se concerte 20 secondes et répond. Juste = 1 point, sinon l’autre équipe peut répondre.",
+            "Orange – Racontez : quelqu’un de l’équipe raconte en une minute au plus. Chaque histoire rapporte 1 point."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Découpez les cartes et posez-les en pile, face cachée.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 96,
+          "schneiden": true,
+          "karten": [
+            {
+              "titel": "Mime",
+              "text": "La respiration 4-7-8",
+              "nummer": 1,
+              "farbe": "gruen"
+            },
+            {
+              "titel": "Mime",
+              "text": "5-4-3-2-1 avec tous les sens",
+              "nummer": 2,
+              "farbe": "gruen"
+            },
+            {
+              "titel": "Mime",
+              "text": "Dire stop – de façon à ce que tout le monde y croie",
+              "nummer": 3,
+              "farbe": "gruen"
+            },
+            {
+              "titel": "Mime",
+              "text": "Le frein au partage",
+              "nummer": 4,
+              "farbe": "gruen"
+            },
+            {
+              "titel": "Vous vous souvenez ?",
+              "text": "Combien de réservoirs chaque personne a-t-elle ? Citez-en trois.",
+              "nummer": 5,
+              "farbe": "blau"
+            },
+            {
+              "titel": "Vous vous souvenez ?",
+              "text": "Qu’est-ce qui tient un arbre dans la tempête ?",
+              "nummer": 6,
+              "farbe": "blau"
+            },
+            {
+              "titel": "Vous vous souvenez ?",
+              "text": "Votre feu est au rouge. Quels skills aident encore ? Citez-en deux.",
+              "nummer": 7,
+              "farbe": "blau"
+            },
+            {
+              "titel": "Vous vous souvenez ?",
+              "text": "Qu’est-ce qui allège le sac à dos de stress ? Citez trois choses.",
+              "nummer": 8,
+              "farbe": "blau"
+            },
+            {
+              "titel": "Racontez",
+              "text": "Le moment le plus drôle de l’année",
+              "nummer": 9,
+              "farbe": "orange"
+            },
+            {
+              "titel": "Racontez",
+              "text": "Un skill que l’un de vous a utilisé dehors",
+              "nummer": 10,
+              "farbe": "orange"
+            },
+            {
+              "titel": "Racontez",
+              "text": "Un jeu du cours que vous rejoueriez tout de suite",
+              "nummer": 11,
+              "farbe": "orange"
+            },
+            {
+              "titel": "Racontez",
+              "text": "Quelque chose que vous avez appris de quelqu’un du groupe",
+              "nummer": 12,
+              "farbe": "orange"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "En jouant, les jeunes retrouvent les skills et les images les plus importants de l’année et réalisent tout ce qu’ils ont vécu et appris ensemble.",
+        "ablauf": [
+          "Deux équipes mélangées ; une personne chronomètre, l’animateur note les points au tableau.",
+          "Tirer à tour de rôle jusqu’à ce que les douze cartes soient jouées. Qui ne veut pas mimer passe la carte dans son équipe.",
+          "Pour finir, demander : quelle carte vous a surpris – qu’aviez-vous presque oublié ? Puis on passe aux stations."
+        ],
+        "hintergrund": "Un bilan fait ensemble rend visible ce qui se perd au quotidien : pendant un an, le groupe a construit des compétences et traversé des moments difficiles. Ces expériences d’efficacité et des relations fiables font partie des facteurs de protection ordinaires sur lesquels les jeunes s’appuient en cas de difficulté (Masten, 2014). Le jeu rappelle les skills là où ils ont été appris – en les faisant, et en groupe – et non sous forme d’interrogation.",
+        "quellen": [
+          "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Pour mimer, deux personnes peuvent jouer ensemble ; pour les questions, l’affiche « C’est quoi, des skills ? » aide.",
+          "schwerer": "Après chaque skill deviné, l’équipe dit dans quelle situation il aide."
+        },
+        "impulse": [
+          "Quel skill aviez-vous presque oublié ?",
+          "Quelle carte ajouteriez-vous pour le groupe de l’année prochaine ?"
+        ],
+        "tipps": [
+          "Solutions : 5) six – corps, sécurité, appartenir, être pris au sérieux, décider soi-même, plaisir et nouveauté ; 6) les racines ; 7) les skills du corps et des sens ; 8) par exemple sommeil, mouvement, pauses, personnes, skills.",
+          "Ajouter des cartes vierges pour les souvenirs du groupe. Avec deux ou trois jeunes : tous ensemble contre la montre."
+        ],
+        "achtung": "Pour les cartes « Racontez », seules comptent les histoires dont tout le monde peut rire – y compris la personne concernée. Si quelqu’un est ridiculisé, arrêter gentiment et faire tirer une nouvelle carte. Personne n’est obligé de mimer ou de raconter ; « je passe » est permis.",
+        "material": "Un jeu de cartes découpé pour le groupe, chronomètre ou minuteur du téléphone, quelques cartes vierges"
+      }
+    }
+  },
+  {
+    "id": "skills-urkunde",
+    "bereich": "skills",
+    "thema": "abschluss",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "look": "spiel",
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "5 Min.",
+    "eldib": [
+      "K-24",
+      "SOZ-40"
+    ],
+    "schlagworte": [
+      "Urkunde",
+      "Abschluss",
+      "Anerkennung",
+      "Rückmeldung",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:award",
+    "verwandt": [
+      "skills-pass",
+      "skills-staerken-ruecken"
+    ],
+    "kurs": [
+      "j1-e30"
+    ],
+    "de": {
+      "titel": "Urkunde",
+      "untertitel": "Skills-Kurs, Jahr 1 – geschafft.",
+      "bausteine": [
+        {
+          "art": "vertrag",
+          "titel": "Ein Jahr Skills-Kurs",
+          "text": "Du hast ein Schuljahr lang mitgemacht: Gefühle benannt, Skills ausprobiert, Grenzen gesetzt, zugehört und anderen den Rücken gestärkt. Dein Skills-Pass ist im Ziel.",
+          "unterschriften": [
+            "Leitung",
+            "Stempel der Gruppe"
+          ]
+        },
+        {
+          "art": "feld",
+          "label": "Das habe ich in diesem Jahr an dir gesehen (von der Leitung)",
+          "hoehe": 5,
+          "fuellen": false
+        },
+        {
+          "art": "aufgabe",
+          "text": "Trag ein, was bleibt – und sammle Unterschriften und Grüße der Gruppe.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "rangliste",
+          "stufen": [
+            "Mein Skill Nr. 1",
+            "Das bleibt"
+          ],
+          "hoehe": 2
+        },
+        {
+          "art": "feld",
+          "label": "Unterschriften und Grüße",
+          "hoehe": 6,
+          "fuellen": true
+        }
+      ],
+      "lehrer": {
+        "ziel": "Jede Person bekommt zum Abschluss eine persönliche Urkunde: mit einer konkreten Beobachtung der Leitung, dem eigenen wichtigsten Skill und den Unterschriften der Gruppe.",
+        "ablauf": [
+          "Vorher: für jede Person Name, Datum und das Feld der Leitung ausfüllen – eine konkrete Beobachtung aus dem Jahr, kein allgemeines Lob.",
+          "In der Abschlussrunde einzeln überreichen und den Satz vorlesen, wenn die Person das möchte. Dann der letzte Stempel in den Pass und auf die Urkunde.",
+          "Die Jugendlichen tragen ihren Skill Nr. 1 und einen Satz ein. Wer mag, sammelt Unterschriften und Grüße der anderen."
+        ],
+        "hintergrund": "Rückmeldungen wirken, wenn sie ein beobachtetes Verhalten benennen: Das ist glaubwürdiger und nützlicher als allgemeines Lob (Hattie & Timperley, 2007). Die Urkunde verbindet deshalb das Ritual des Abschlusses mit einem Satz, der nur für diese eine Person stimmt. Ein gestalteter Abschied zählt gerade für Jugendliche, die Beziehungsabbrüche erlebt haben: Er zeigt, dass etwas gut zu Ende gehen kann – und dass ein verlässlicher Erwachsener gesehen hat, was sie geschafft haben (Masten, 2014).",
+        "quellen": [
+          "Hattie, J. & Timperley, H. (2007). The power of feedback. Review of Educational Research, 77(1), 81–112.",
+          "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Den Skill Nr. 1 aus der Skills-Sammlung im Pass abschreiben.",
+          "schwerer": "Unter den Skill schreiben, in welcher Situation er im nächsten Schuljahr gebraucht wird."
+        },
+        "impulse": [
+          "Woran hast du in diesem Jahr gemerkt, dass du etwas dazugelernt hast?",
+          "Wem zeigst du die Urkunde?"
+        ],
+        "tipps": [
+          "Der Satz der Leitung beginnt am besten mit einer Situation: „Als es im März in der Gruppe laut wurde, hast du …“",
+          "Auf festeres Papier drucken. Wer im Lauf des Jahres dazugekommen ist, bekommt dieselbe Urkunde."
+        ],
+        "achtung": "Alle Urkunden sind gleich wertvoll: keine Ränge, keine Vergleiche, für jede Person ein gleich sorgfältiger Satz. Nichts aus vertraulichen Gesprächen auf die Urkunde schreiben. Fällt der Abschied jemandem schwer, nach der Einheit Zeit für ein Gespräch haben.",
+        "material": "Festeres Papier, Stempel der Gruppe, Stifte"
+      }
+    },
+    "fr": {
+      "titel": "Diplôme",
+      "untertitel": "Cours de skills, année 1 – c’est fait.",
+      "bausteine": [
+        {
+          "art": "vertrag",
+          "titel": "Une année de cours de skills",
+          "text": "Tu as participé pendant toute une année scolaire : tu as nommé des émotions, essayé des skills, posé des limites, écouté et encouragé les autres. Ton passeport Skills est à l’arrivée.",
+          "unterschriften": [
+            "Animateur·rice",
+            "Tampon du groupe"
+          ]
+        },
+        {
+          "art": "feld",
+          "label": "Ce que j’ai vu chez toi cette année (de la part de l’adulte qui anime)",
+          "hoehe": 5,
+          "fuellen": false
+        },
+        {
+          "art": "aufgabe",
+          "text": "Note ce qui reste – et recueille les signatures et les mots du groupe.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "rangliste",
+          "stufen": [
+            "Mon skill no 1",
+            "Ce qui reste"
+          ],
+          "hoehe": 2
+        },
+        {
+          "art": "feld",
+          "label": "Signatures et petits mots",
+          "hoehe": 6,
+          "fuellen": true
+        }
+      ],
+      "lehrer": {
+        "ziel": "Pour finir, chaque jeune reçoit un diplôme personnel : avec une observation concrète de l’adulte qui anime, son skill le plus important et les signatures du groupe.",
+        "ablauf": [
+          "Avant : pour chaque jeune, remplir le nom, la date et le champ de l’animateur – une observation concrète de l’année, pas un compliment général.",
+          "Au tour final, remettre les diplômes un par un et lire la phrase si la personne le souhaite. Puis le dernier tampon dans le passeport et sur le diplôme.",
+          "Les jeunes notent leur skill no 1 et une phrase. Qui veut recueille les signatures et les mots des autres."
+        ],
+        "hintergrund": "Un retour agit quand il nomme un comportement observé : c’est plus crédible et plus utile qu’un compliment général (Hattie & Timperley, 2007). Le diplôme relie donc le rituel de clôture à une phrase qui n’est vraie que pour cette personne. Un au revoir préparé compte particulièrement pour les jeunes qui ont vécu des ruptures : il montre qu’une chose peut bien se terminer – et qu’un adulte fiable a vu ce qu’ils ont réussi (Masten, 2014).",
+        "quellen": [
+          "Hattie, J. & Timperley, H. (2007). The power of feedback. Review of Educational Research, 77(1), 81–112.",
+          "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Recopier le skill no 1 depuis la collection de skills du passeport.",
+          "schwerer": "Écrire sous le skill dans quelle situation il servira l’année prochaine."
+        },
+        "impulse": [
+          "À quoi as-tu remarqué, cette année, que tu avais appris quelque chose ?",
+          "À qui vas-tu montrer ton diplôme ?"
+        ],
+        "tipps": [
+          "La phrase de l’animateur commence idéalement par une situation : « Quand le groupe s’est agité en mars, tu as … »",
+          "Imprimer sur un papier plus épais. Les jeunes arrivés en cours d’année reçoivent le même diplôme."
+        ],
+        "achtung": "Tous les diplômes ont la même valeur : pas de classement, pas de comparaison, une phrase aussi soignée pour chacun. Ne rien écrire qui vienne d’un entretien confidentiel. Si l’au revoir est difficile pour quelqu’un, prendre le temps d’un entretien après la séance.",
+        "material": "Papier plus épais, tampon du groupe, stylos"
+      }
+    }
+  },
+  {
+    "id": "skills-parcours-karten",
+    "bereich": "skills",
+    "thema": "regulieren",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "look": "spiel",
+    "sozialform": [
+      "gruppe"
+    ],
+    "dauer": "60 Min. (Parcours)",
+    "eldib": [
+      "V-1",
+      "V-3",
+      "V-24",
+      "K-26"
+    ],
+    "schlagworte": [
+      "Naturtag",
+      "Achtsamkeit",
+      "Sinne",
+      "Stationskarten",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:footsteps",
+    "verwandt": [
+      "skills-achtsamkeits-parcours"
+    ],
+    "kurs": [
+      "j1-j04"
+    ],
+    "de": {
+      "titel": "Parcours-Karten",
+      "untertitel": "Sechs Stationskarten für den Achtsamkeits-Parcours draußen",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "So geht der Parcours",
+          "punkte": [
+            "Immer zu zweit. An jeder Station liest eine Person die Karte vor.",
+            "Dann macht ihr die Übung, ohne zu reden. Gesprochen wird erst danach.",
+            "Beim Signal wechselt ihr im Uhrzeigersinn zur nächsten Station.",
+            "Stopp-Recht: Wer eine Station nicht machen möchte, wartet dort oder geht weiter."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Für die Leitung: Karten einmal ausschneiden, in Klarsichthüllen stecken und an den Stationen auslegen.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 2,
+          "schneiden": true,
+          "karten": [
+            {
+              "bild": "icon:footsteps",
+              "titel": "1 · Barfußpfad",
+              "text": "Schuhe aus. Geht langsam über Gras, Moos, Erde und Sand. Wo ist es kalt, weich, pieksig? Wer mag, schließt die Augen und lässt sich am Arm führen."
+            },
+            {
+              "bild": "icon:ear",
+              "titel": "2 · Klanglandkarte",
+              "text": "Setzt euch, Augen zu, zwei Minuten nur lauschen. Dann zeichnet jede Person ein Kreuz für sich und trägt alle Geräusche drumherum ein: nah, fern, links, rechts."
+            },
+            {
+              "bild": "icon:dice-5",
+              "titel": "3 · Sinneswürfel",
+              "text": "Würfelt: 1 sehen, 2 hören, 3 riechen, 4 mit den Händen tasten, 5 mit den Füßen spüren, 6 freie Wahl. Drei Minuten nur dieser Sinn, dann noch einmal würfeln."
+            },
+            {
+              "bild": "icon:tree",
+              "titel": "4 · Ein Baum aus der Nähe",
+              "text": "Sucht euch einen Baum. Wie fühlt sich die Rinde an, wie riecht sie? Welche Farben, welche kleinen Tiere entdeckt ihr, wenn ihr ganz nah herangeht?"
+            },
+            {
+              "bild": "icon:camera",
+              "titel": "5 · Ruhe-Foto",
+              "text": "Macht mit der Kamera der Gruppe ein Foto, das zeigt, wie Ruhe für euch aussieht. Keine Menschen im Bild. Erst lange schauen, dann einmal abdrücken."
+            },
+            {
+              "bild": "icon:cloud",
+              "titel": "6 · Wolken oder Blätterdach",
+              "text": "Legt euch auf die Decke und schaut drei Minuten nur nach oben. Was bewegt sich, was verändert sich? Die Augen bleiben offen."
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Karten leiten Paare selbstständig durch sechs Sinnes-Stationen. An jeder Station steht ein Sinn im Mittelpunkt; gesprochen wird erst nach der Übung.",
+        "ablauf": [
+          "Vorher: Karten ausschneiden, in Klarsichthüllen stecken, an sechs Stellen in Sichtweite auslegen und mit einem Stein beschweren.",
+          "Start: Paare bilden; jedes Paar beginnt an einer anderen Station.",
+          "Parcours (60 Min.): etwa neun Minuten pro Station, Wechsel auf ein Signal. Danach malen die Jugendlichen auf dem Blatt „Achtsamkeits-Parcours“ ihren Balken aus.",
+          "Nach dem Parcours: Welche Station geht auch im Pausenhof?"
+        ],
+        "hintergrund": "Nach der Aufmerksamkeitserholungstheorie zieht Natur die Aufmerksamkeit sanft an, ohne sie zu beanspruchen; die willentliche Konzentration kann sich dabei erholen (Kaplan, 1995). Achtsamkeit heißt, den Moment absichtlich und ohne Bewertung wahrzunehmen (Kabat-Zinn, 1990); einzelne Sinne nacheinander in den Mittelpunkt zu stellen, macht das greifbar. Schulische Achtsamkeitsprogramme zeigen positive Effekte, besonders auf Konzentration und Stressbewältigung (Zenner et al., 2014). Die beiden Ruhe-Zahlen machen die Wirkung für die Jugendlichen selbst sichtbar.",
+        "quellen": [
+          "Kaplan, S. (1995). The restorative benefits of nature: Toward an integrative framework. Journal of Environmental Psychology, 15(3), 169–182.",
+          "Kabat-Zinn, J. (1990). Full Catastrophe Living. New York: Delacorte.",
+          "Zenner, C., Herrnleben-Kurz, S. & Walach, H. (2014). Mindfulness-based interventions in schools – a systematic review and meta-analysis. Frontiers in Psychology, 5, 603."
+        ],
+        "differenzierung": {
+          "leichter": "Nur vier Stationen, dafür je elf Minuten.",
+          "schwerer": "Ein Paar leitet seine Lieblingsstation am Ende für die ganze Gruppe an."
+        },
+        "impulse": [
+          "An welcher Station war es am schwersten, still zu bleiben?",
+          "Wo findest du im Alltag einen Ort für so eine Übung?"
+        ],
+        "tipps": [
+          "Die Barfußstrecke am Morgen noch einmal auf Scherben, spitze Steine und Bienen im Klee prüfen.",
+          "Bei zwei Leitungen bleibt eine am Barfußpfad."
+        ],
+        "achtung": "Barfußgehen, Augenschließen und Liegen sind freiwillig. Die Barfußstrecke vorher prüfen, Allergien und Notfallmedikamente klären, nach dem Tag auf Zecken absuchen lassen. Fotos zeigen nur Natur.",
+        "material": "Klarsichthüllen, Steine zum Beschweren, Würfel, Decken, Handtücher, Kamera der Einrichtung"
+      }
+    },
+    "fr": {
+      "titel": "Cartes du parcours",
+      "untertitel": "Six cartes de station pour le parcours de pleine conscience en plein air",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Comment se passe le parcours",
+          "punkte": [
+            "Toujours à deux. À chaque station, l’un de vous lit la carte à voix haute.",
+            "Puis vous faites l’exercice sans parler. On ne parle qu’après.",
+            "Au signal, vous passez à la station suivante, dans le sens des aiguilles d’une montre.",
+            "Droit au stop : si tu ne veux pas faire une station, tu attends sur place ou tu continues."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Pour l’adulte : découper les cartes une fois, les glisser dans des pochettes transparentes et les poser aux stations.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 2,
+          "schneiden": true,
+          "karten": [
+            {
+              "bild": "icon:footsteps",
+              "titel": "1 · Chemin pieds nus",
+              "text": "Enlevez vos chaussures. Avancez lentement sur l’herbe, la mousse, la terre et le sable. Où est-ce froid, doux, piquant ? Qui le souhaite ferme les yeux et se laisse guider par le bras."
+            },
+            {
+              "bild": "icon:ear",
+              "titel": "2 · Carte sonore",
+              "text": "Asseyez-vous, yeux fermés, et écoutez seulement pendant deux minutes. Puis chacun dessine une croix pour soi et note tous les bruits autour : proches, lointains, à gauche, à droite."
+            },
+            {
+              "bild": "icon:dice-5",
+              "titel": "3 · Dé des sens",
+              "text": "Lancez le dé : 1 voir, 2 entendre, 3 sentir une odeur, 4 toucher avec les mains, 5 ressentir avec les pieds, 6 au choix. Trois minutes sur ce seul sens, puis relancez le dé."
+            },
+            {
+              "bild": "icon:tree",
+              "titel": "4 · Un arbre de près",
+              "text": "Choisissez un arbre. Comment l’écorce est-elle au toucher, quelle odeur a-t-elle ? Quelles couleurs, quels petits animaux découvrez-vous en vous approchant tout près ?"
+            },
+            {
+              "bild": "icon:camera",
+              "titel": "5 · Photo du calme",
+              "text": "Prenez, avec l’appareil du groupe, une photo qui montre à quoi ressemble le calme pour vous. Pas de personnes sur l’image. Regardez longtemps d’abord, puis déclenchez une seule fois."
+            },
+            {
+              "bild": "icon:cloud",
+              "titel": "6 · Nuages ou feuillage",
+              "text": "Allongez-vous sur la couverture et regardez en l’air pendant trois minutes. Qu’est-ce qui bouge, qu’est-ce qui change ? Gardez les yeux ouverts."
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les cartes guident les binômes en autonomie à travers six stations sensorielles. À chaque station, un sens est au centre ; on ne parle qu’après l’exercice.",
+        "ablauf": [
+          "Avant : découper les cartes, les glisser dans des pochettes transparentes, les poser à six endroits à portée de vue et les lester d’une pierre.",
+          "Départ : former des binômes ; chacun commence à une autre station.",
+          "Parcours (60 min) : environ neuf minutes par station, changement au signal. Ensuite, les jeunes colorient leur barre sur la fiche « Parcours de pleine conscience ».",
+          "Après le parcours : quelle station marche aussi dans la cour de récréation ?"
+        ],
+        "hintergrund": "Selon la théorie de la restauration de l’attention, la nature attire doucement l’attention sans la solliciter ; la concentration volontaire peut ainsi récupérer (Kaplan, 1995). La pleine conscience consiste à percevoir le moment de façon intentionnelle et sans jugement (Kabat-Zinn, 1990) ; placer tour à tour un sens au centre rend cela concret. Les programmes de pleine conscience à l’école montrent des effets positifs, surtout sur la concentration et la gestion du stress (Zenner et al., 2014). Les deux chiffres de calme rendent l’effet visible pour les jeunes eux-mêmes.",
+        "quellen": [
+          "Kaplan, S. (1995). The restorative benefits of nature: Toward an integrative framework. Journal of Environmental Psychology, 15(3), 169–182.",
+          "Kabat-Zinn, J. (1990). Full Catastrophe Living. New York: Delacorte.",
+          "Zenner, C., Herrnleben-Kurz, S. & Walach, H. (2014). Mindfulness-based interventions in schools – a systematic review and meta-analysis. Frontiers in Psychology, 5, 603."
+        ],
+        "differenzierung": {
+          "leichter": "Quatre stations seulement, mais onze minutes chacune.",
+          "schwerer": "À la fin, un binôme guide sa station préférée pour tout le groupe."
+        },
+        "impulse": [
+          "À quelle station était-ce le plus difficile de rester silencieux ?",
+          "Où trouves-tu, dans ton quotidien, un endroit pour un tel exercice ?"
+        ],
+        "tipps": [
+          "Le matin, vérifier encore une fois le sentier pieds nus : tessons, pierres pointues, abeilles dans le trèfle.",
+          "S’il y a deux adultes, l’un reste au sentier pieds nus."
+        ],
+        "achtung": "Marcher pieds nus, fermer les yeux et s’allonger sont facultatifs. Vérifier le chemin pieds nus à l’avance, clarifier allergies et médicaments d’urgence, faire vérifier l’absence de tiques après la journée. Les photos ne montrent que la nature.",
+        "material": "Pochettes transparentes, pierres pour lester, dé, couvertures, serviettes, appareil photo de l’établissement"
+      }
+    }
+  },
+  {
+    "id": "skills-pruefungs-quiz",
+    "bereich": "skills",
+    "thema": "regulieren",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "look": "spiel",
+    "sozialform": [
+      "gruppe"
+    ],
+    "dauer": "2 × 10 Min.",
+    "eldib": [
+      "V-21",
+      "V-25",
+      "V-32",
+      "K-26"
+    ],
+    "schlagworte": [
+      "Prüfungen",
+      "Blackout",
+      "Quiz",
+      "Spiel",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:dice-5",
+    "verwandt": [
+      "skills-pruefungs-countdown"
+    ],
+    "kurs": [
+      "j1-j09"
+    ],
+    "de": {
+      "titel": "Lauf-Quiz-Karten",
+      "untertitel": "Zwei Runden mit je zehn leichten Fragen – und in jeder Runde eine, die nicht zu lösen ist.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "So geht das Lauf-Quiz",
+          "punkte": [
+            "Die zehn Karten einer Runde hängen im Raum verteilt.",
+            "Zu zweit lauft ihr von Karte zu Karte und schreibt die Antwort neben die Nummer auf euren Zettel.",
+            "Ihr habt drei Minuten. Die Reihenfolge ist egal.",
+            "Verglichen wird nur mit eurer eigenen ersten Runde."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Für die Leitung: Karten ausschneiden. Runde A (blau) vor der Einheit aufhängen, Runde B (orange) in der Pause.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 4,
+          "schneiden": true,
+          "hoehe": 86,
+          "karten": [
+            {
+              "nummer": "A1",
+              "text": "Wie viele Tage hat eine Woche?",
+              "farbe": "blau"
+            },
+            {
+              "nummer": "A2",
+              "text": "Welche Farbe entsteht aus Blau und Gelb?",
+              "farbe": "blau"
+            },
+            {
+              "nummer": "A3",
+              "text": "Wie heißt die Hauptstadt von Luxemburg?",
+              "farbe": "blau"
+            },
+            {
+              "nummer": "A4",
+              "text": "Wie viele Beine hat eine Spinne?",
+              "farbe": "blau"
+            },
+            {
+              "nummer": "A5",
+              "text": "Welcher Monat kommt nach März?",
+              "farbe": "blau"
+            },
+            {
+              "nummer": "A6",
+              "text": "Wie viele Minuten hat eine Stunde?",
+              "farbe": "blau"
+            },
+            {
+              "nummer": "A7",
+              "text": "Welche Zahl denkt sich die Leitung gerade?",
+              "farbe": "blau"
+            },
+            {
+              "nummer": "A8",
+              "text": "Was ist die Hälfte von 50?",
+              "farbe": "blau"
+            },
+            {
+              "nummer": "A9",
+              "text": "Wie viele Spieler hat ein Fußballteam auf dem Platz?",
+              "farbe": "blau"
+            },
+            {
+              "nummer": "A10",
+              "text": "Wie viele Seiten hat ein Würfel?",
+              "farbe": "blau"
+            },
+            {
+              "nummer": "B1",
+              "text": "Wie viele Monate hat ein Jahr?",
+              "farbe": "orange"
+            },
+            {
+              "nummer": "B2",
+              "text": "Was ergibt 12 + 13?",
+              "farbe": "orange"
+            },
+            {
+              "nummer": "B3",
+              "text": "Wie viele Ecken hat ein Dreieck?",
+              "farbe": "orange"
+            },
+            {
+              "nummer": "B4",
+              "text": "Welcher Tag kommt nach Sonntag?",
+              "farbe": "orange"
+            },
+            {
+              "nummer": "B5",
+              "text": "Wie viele Sandkörner liegen in einem Sandkasten?",
+              "farbe": "orange"
+            },
+            {
+              "nummer": "B6",
+              "text": "Was ist 9 mal 2?",
+              "farbe": "orange"
+            },
+            {
+              "nummer": "B7",
+              "text": "Nenne ein Nachbarland von Luxemburg.",
+              "farbe": "orange"
+            },
+            {
+              "nummer": "B8",
+              "text": "In welcher Jahreszeit fällt bei uns Schnee?",
+              "farbe": "orange"
+            },
+            {
+              "nummer": "B9",
+              "text": "Wie viele Buchstaben hat das Wort „Pause“?",
+              "farbe": "orange"
+            },
+            {
+              "nummer": "B10",
+              "text": "Wie viele Sekunden hat eine Minute?",
+              "farbe": "orange"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen erleben im Kleinen, was Zeitdruck und eine unlösbare Aufgabe mit dem Kopf machen, und üben in der zweiten Runde ihren Blackout-Plan: ausatmen, markieren, weitergehen.",
+        "ablauf": [
+          "Runde A (3 Min. Laufzeit): ohne Vorwarnung, dass eine Frage nicht zu lösen ist. Danach auflösen und auf der Linie von 0 bis 100 zeigen, wie hoch die Anspannung war.",
+          "Zwischen den Runden: Lernplan, Gedanken-Staffel und der Blackout-Plan auf dem Blatt „Mein Prüfungs-Countdown“.",
+          "Runde B (3 Min. Laufzeit): gleiche Regeln, neue Karten – diesmal mit Plan. Die Paare vergleichen nur ihre eigenen zwei Runden."
+        ],
+        "hintergrund": "Prüfungsangst besteht aus Sorgengedanken und körperlicher Aufregung; vor allem die Sorgen binden Aufmerksamkeit, die dann für die Aufgaben fehlt (Zeidner, 1998). Wer an einer Aufgabe hängen bleibt, verliert Zeit und Zuversicht für alle folgenden. Das Lauf-Quiz macht diesen Moment im Kleinen erlebbar und übt den Ausweg als Wenn-dann-Plan, weil solche Vorsätze im entscheidenden Moment leichter abgerufen werden als gute Absichten (Gollwitzer, 1999).",
+        "quellen": [
+          "Zeidner, M. (1998). Test Anxiety: The State of the Art. New York: Plenum.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Vier Minuten statt drei; die Karten hängen nah beieinander.",
+          "schwerer": "Jede Person läuft allein und hat nur zwei Minuten."
+        },
+        "impulse": [
+          "Was habt ihr an der Frage gemacht, die nicht ging?",
+          "Woran merkt ihr in einer echten Prüfung, dass ihr hängen bleibt?"
+        ],
+        "tipps": [
+          "Lösungen A: 7 · Grün · Luxemburg · 8 · April · 60 · nicht lösbar · 25 · 11 · 6. Lösungen B: 12 · 25 · 3 · Montag · nicht lösbar · 18 · Belgien, Deutschland oder Frankreich · Winter · 5 · 60.",
+          "Keine Punkte ansagen und nichts einsammeln: Es geht nur um den Moment, in dem man hängen bleibt."
+        ],
+        "achtung": "Das Quiz bleibt ohne Bewertung. Ärgert sich jemand über die unlösbare Frage, den Ärger würdigen statt wegzureden. Nicht nach Noten fragen; zeigt sich starke Prüfungsangst, ein Einzelgespräch anbieten und auf SePAS oder Klassenlehrkraft hinweisen.",
+        "material": "Klebeband, je Paar zwei Antwortzettel mit den Nummern 1 bis 10, Stifte, Stoppuhr"
+      }
+    },
+    "fr": {
+      "titel": "Cartes du quiz en mouvement",
+      "untertitel": "Deux manches de dix questions faciles – et, dans chaque manche, une question impossible.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Comment se joue le quiz",
+          "punkte": [
+            "Les dix cartes d’une manche sont accrochées un peu partout dans la salle.",
+            "À deux, vous allez de carte en carte et notez la réponse à côté du numéro sur votre feuille.",
+            "Vous avez trois minutes. L’ordre n’a pas d’importance.",
+            "On ne compare qu’avec sa propre première manche."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Pour l’adulte : découper les cartes. Accrocher la manche A (bleu) avant la séance, la manche B (orange) pendant la pause.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 4,
+          "schneiden": true,
+          "hoehe": 86,
+          "karten": [
+            {
+              "nummer": "A1",
+              "text": "Combien de jours a une semaine ?",
+              "farbe": "blau"
+            },
+            {
+              "nummer": "A2",
+              "text": "Quelle couleur donnent le bleu et le jaune ?",
+              "farbe": "blau"
+            },
+            {
+              "nummer": "A3",
+              "text": "Quelle est la capitale du Luxembourg ?",
+              "farbe": "blau"
+            },
+            {
+              "nummer": "A4",
+              "text": "Combien de pattes a une araignée ?",
+              "farbe": "blau"
+            },
+            {
+              "nummer": "A5",
+              "text": "Quel mois vient après mars ?",
+              "farbe": "blau"
+            },
+            {
+              "nummer": "A6",
+              "text": "Combien de minutes a une heure ?",
+              "farbe": "blau"
+            },
+            {
+              "nummer": "A7",
+              "text": "À quel nombre l’adulte pense-t-il en ce moment ?",
+              "farbe": "blau"
+            },
+            {
+              "nummer": "A8",
+              "text": "Quelle est la moitié de 50 ?",
+              "farbe": "blau"
+            },
+            {
+              "nummer": "A9",
+              "text": "Combien de joueurs une équipe de foot a-t-elle sur le terrain ?",
+              "farbe": "blau"
+            },
+            {
+              "nummer": "A10",
+              "text": "Combien de faces a un dé ?",
+              "farbe": "blau"
+            },
+            {
+              "nummer": "B1",
+              "text": "Combien de mois a une année ?",
+              "farbe": "orange"
+            },
+            {
+              "nummer": "B2",
+              "text": "Combien font 12 + 13 ?",
+              "farbe": "orange"
+            },
+            {
+              "nummer": "B3",
+              "text": "Combien de coins a un triangle ?",
+              "farbe": "orange"
+            },
+            {
+              "nummer": "B4",
+              "text": "Quel jour vient après dimanche ?",
+              "farbe": "orange"
+            },
+            {
+              "nummer": "B5",
+              "text": "Combien de grains de sable y a-t-il dans un bac à sable ?",
+              "farbe": "orange"
+            },
+            {
+              "nummer": "B6",
+              "text": "Combien font 9 fois 2 ?",
+              "farbe": "orange"
+            },
+            {
+              "nummer": "B7",
+              "text": "Cite un pays voisin du Luxembourg.",
+              "farbe": "orange"
+            },
+            {
+              "nummer": "B8",
+              "text": "En quelle saison neige-t-il chez nous ?",
+              "farbe": "orange"
+            },
+            {
+              "nummer": "B9",
+              "text": "Combien de lettres a le mot « pause » ?",
+              "farbe": "orange"
+            },
+            {
+              "nummer": "B10",
+              "text": "Combien de secondes a une minute ?",
+              "farbe": "orange"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes vivent en petit ce que la pression du temps et une question impossible font à la tête, et s’exercent, à la deuxième manche, à leur plan anti-trou noir : expirer, marquer, continuer.",
+        "ablauf": [
+          "Manche A (3 min de course) : sans prévenir qu’une question est impossible. Ensuite, donner les réponses et montrer sur la ligne de 0 à 100 à quel point la tension est montée.",
+          "Entre les manches : plan de révision, relais des pensées et plan anti-trou noir sur la fiche « Mon compte à rebours avant l’examen ».",
+          "Manche B (3 min de course) : mêmes règles, nouvelles cartes – cette fois avec un plan. Les binômes ne comparent que leurs deux manches."
+        ],
+        "hintergrund": "L’anxiété d’examen se compose de pensées inquiètes et d’agitation physique ; ce sont surtout les inquiétudes qui accaparent l’attention, laquelle manque alors pour les exercices (Zeidner, 1998). Qui reste bloqué sur un exercice perd du temps et de la confiance pour tous les suivants. Le quiz en mouvement fait vivre ce moment en petit et entraîne l’issue sous forme de plan « si … alors », car ces intentions se rappellent plus facilement au moment décisif que de bonnes résolutions (Gollwitzer, 1999).",
+        "quellen": [
+          "Zeidner, M. (1998). Test Anxiety: The State of the Art. New York: Plenum.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Quatre minutes au lieu de trois ; les cartes sont accrochées près les unes des autres.",
+          "schwerer": "Chacun court seul et n’a que deux minutes."
+        },
+        "impulse": [
+          "Qu’avez-vous fait à la question impossible ?",
+          "Dans un vrai examen, à quoi remarquez-vous que vous restez bloqués ?"
+        ],
+        "tipps": [
+          "Réponses A : 7 · vert · Luxembourg · 8 · avril · 60 · impossible · 25 · 11 · 6. Réponses B : 12 · 25 · 3 · lundi · impossible · 18 · Belgique, Allemagne ou France · hiver · 5 · 60.",
+          "Ne pas annoncer de points ni ramasser les feuilles : seul compte le moment où l’on reste bloqué."
+        ],
+        "achtung": "Le quiz reste sans évaluation. Si quelqu’un s’énerve à cause de la question impossible, reconnaître cet agacement au lieu de le minimiser. Ne pas demander les notes ; en cas de forte anxiété d’examen, proposer un entretien individuel et orienter vers le SePAS ou le ou la titulaire de classe.",
+        "material": "Ruban adhésif, deux feuilles de réponses numérotées de 1 à 10 par binôme, stylos, chronomètre"
+      }
+    }
   }
 ]
