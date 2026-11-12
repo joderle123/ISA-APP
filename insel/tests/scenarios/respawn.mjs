@@ -54,8 +54,8 @@ try {
         const R = P.lauf, heute = P.heute, leute = ['jolie', 'tun', 'pit', 'fraenz', 'ilda', 'noor', 'mika', 'tiago'];
         const zieh = (l) => l[Math.floor(rnd() * l.length)];
         log.freie = (log.freie || 0) + 1;
-        const mist = () => { const x = zieh([{ ort: 'kiosk', aktion: 'kasse' }, { ort: 'werft', aktion: 'sprayen' }, { ort: 'werft', aktion: 'boot' }, { wer: zieh(leute), aktion: 'aufziehen' }, { wer: 'pit', aktion: 'aufziehen' }, { wer: zieh(leute), aktion: 'filmen' }, { wer: zieh(['pit', 'tun', 'noor', 'luc']), aktion: 'schubsen' }, { wer: zieh(leute), aktion: 'leihen' }]); return x; };
-        const brav = () => zieh([{ wer: zieh(leute), aktion: 'reden' }, { wer: zieh(leute), aktion: 'helfen' }, { ort: 'kiosk', aktion: 'job' }, { ort: 'brunnen', aktion: 'tricks' }, { ort: 'steg', aktion: 'wasser' }]);
+        const mist = () => { const x = zieh([{ ort: 'kiosk', aktion: 'kasse' }, { ort: 'werft', aktion: 'sprayen' }, { ort: 'werft', aktion: 'boot' }, { ort: 'lieferwagen', aktion: 'fahren' }, { ort: 'markt', aktion: 'einstecken' }, { wer: zieh(leute), aktion: 'laestern' }, { wer: zieh(leute), aktion: 'aufziehen' }, { wer: 'pit', aktion: 'aufziehen' }, { wer: zieh(leute), aktion: 'filmen' }, { wer: zieh(['pit', 'tun', 'noor', 'luc']), aktion: 'schubsen' }, { wer: zieh(leute), aktion: 'leihen' }]); return x; };
+        const brav = () => zieh([{ wer: zieh(leute), aktion: 'reden' }, { wer: zieh(leute), aktion: 'helfen' }, { wer: zieh(leute), aktion: 'einladen' }, { ort: 'markt', aktion: 'kaufen' }, { wer: zieh(['fraenz', 'tiago', 'lucinda']), aktion: 'gestehen' }, { ort: 'kiosk', aktion: 'job' }, { ort: 'brunnen', aktion: 'tricks' }, { ort: 'steg', aktion: 'wasser' }]);
         if (w === 'faul' || R.kraft === 0 || (log.heuteN || 0) > 7) { log.heuteN = 0; P.tue({ schlafen: true }); }
         else { log.heuteN = (log.heuteN || 0) + 1;
           if (heute.length && w !== 'mist' && rnd() < 0.7) P.tue({ ereignis: heute[0] });

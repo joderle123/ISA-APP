@@ -10,7 +10,7 @@ export const folgeWar = (R, id) => (R.folgen || []).includes(id);
 
 const tag = (R) => R.jz * 3 + (R.tag || 0);
 const seit = (R, flag) => tag(R) - wert(R, flag, 99);
-const NAME = { ilda: 'Ilda', fraenz: 'Fränz', jolie: 'Jolie', tun: 'Tun', pit: 'Pit', mika: 'Mika', yara: 'Yara', luc: 'Luc', noor: 'Noor', tiago: 'Tiago', maelle: 'Maëlle' };
+const NAME = { ilda: 'Ilda', fraenz: 'Fränz', lucinda: 'Oma Lucinda', jolie: 'Jolie', tun: 'Tun', pit: 'Pit', mika: 'Mika', yara: 'Yara', luc: 'Luc', noor: 'Noor', tiago: 'Tiago', maelle: 'Maëlle' };
 export const GROSSE = ['ilda', 'fraenz', 'lucinda'];
 export const WICHTIG = Object.keys(NAME);
 const zeuge = (z, ausser) => (z || []).find((w) => w !== ausser && WICHTIG.includes(w)) || null;
@@ -23,6 +23,8 @@ export const ORTE = [
   { id: 'werft', name: 'Werft', ort: 'werft', bild: '🔨', aktionen: ['sprayen', 'boot'] },
   { id: 'steg', name: 'Steg', ort: 'steg', bild: '🌊', aktionen: ['wasser'] },
   { id: 'krater', name: 'Krater', ort: 'kraterRand', bild: '🔥', aktionen: ['abhaengen'] },
+  { id: 'lieferwagen', name: 'Lieferwagen', ort: { x: -14.5, z: 121.5 }, bild: '🚚', aktionen: ['fahren'] },
+  { id: 'markt', name: 'Markt', ort: 'marktplatz', bild: '🛍️', aktionen: ['kaufen', 'einstecken'] },
 ];
 
 export const ORT_AKTIONEN = {
@@ -79,6 +81,52 @@ export const ORT_AKTIONEN = {
         ], { ruhe: true }],
       ];
     } },
+  // Fränz’ Lieferwagen: man fährt ihn wirklich (fahrt: true → plugin.js startet die Fahrt nach der Szene, danach `nach`)
+  fahren: { t: 'Den Lieferwagen nehmen', art: 'hart', kraft: 1, mist: true, fahrt: true, wenn: (R) => !hat(R, 'auto.genommen'),
+    szene: (R, { zeugen }) => {
+      const z = zeuge(zeugen, 'fraenz');
+      return [
+        ['t', 'Fränz’ Lieferwagen. Die Tür ist offen. Der Schlüssel steckt.'],
+        ['w', [
+          { t: 'Losfahren.', art: 'hart', e: { flags: { 'auto.genommen': true, 'auto.tag': tag(R), 'auto.zeuge': z || '', 'fahrt.jetzt': true } }, dann: [['d', 'Der Motor springt sofort an.']] },
+          { t: 'Den Schlüssel zu Fränz bringen.', art: 'ruhig', e: { bond: { fraenz: 1 }, flag: 'auto.schluessel' }, dann: [['s', 'fraenz', 'Steckte der wieder? Danke. Ich werd alt.']] },
+          { t: 'Weitergehen.', art: 'weg', e: {}, dann: [] },
+        ], { ruhe: true }],
+      ];
+    },
+    // erg = { strecke, vmax, beulen, erschreckt: [id], weit } aus fahren.js
+    nach: (R, erg) => {
+      const z = wert(R, 'auto.zeuge', ''), s = [];
+      if (erg.beulen) s.push(['t', 'Es hat gekracht. Vorne links ist alles eingedrückt.'], ['e', { druck: 10, flag: 'auto.beule' }]);
+      else if (erg.strecke > 60) s.push(['t', 'Fenster runter. Zum ersten Mal seit Wochen: frei.'], ['e', { druck: -25 }]);
+      else s.push(['t', 'Du rollst ein paar Meter. Dein Herz rast.'], ['e', { druck: -5 }]);
+      const w = (erg.erschreckt || []).find((x) => WICHTIG.includes(x));
+      if (w) s.push(['s', w, 'Spinnst du? Du hättest mich fast erwischt!'], ['e', { bond: { [w]: -1 }, flags: { 'auto.schreck': w } }]);
+      if (erg.weit > 25) s.push(['d', 'Du lässt den Wagen einfach stehen.'], ['e', { flag: 'auto.stehen' }]);
+      else s.push(['d', 'Du stellst ihn zurück. Fast gerade.']);
+      if (z) s.push(['s', z, 'Du bist das gerade gefahren? Echt jetzt?']);
+      return s;
+    } },
+  kaufen: { t: 'Etwas Süßes kaufen', art: 'ruhig', kraft: 0, kostet: 3, wenn: (R) => wert(R, 'gekauft', -1) !== tag(R),
+    szene: (R) => [['t', 'Eine Tüte Saures. Der halbe Markt riecht nach Waffeln.'], ['e', { geld: -3, druck: -8, flags: { gekauft: tag(R) } }]] },
+  einstecken: { t: 'Kopfhörer einstecken', art: 'hart', kraft: 1, mist: true, wenn: (R) => !hat(R, 'markt.geklaut') && !hat(R, 'kopfhoerer'),
+    szene: (R, { zeugen }) => {
+      const z = zeuge(zeugen, 'lucinda');
+      return [
+        ['t', 'Oma Lucindas Stand. Kopfhörer, 25 Euro. Sie sucht Wechselgeld.'],
+        ['w', [
+          { t: 'Einstecken.', art: 'hart', e: { druck: -5, flags: { 'markt.geklaut': true, 'markt.tag': tag(R), 'markt.zeuge': z || '' } }, dann: z ? [
+            ['s', z, 'Ich hab das gesehen. Leg sie zurück.'],
+            ['w', [
+              { t: 'Zurücklegen.', art: 'ruhig', e: { bond: { [z]: 1 }, flags: { 'markt.geklaut': false } }, dann: [['d', 'Du legst sie zurück. Deine Hand zittert.']] },
+              { t: 'Weitergehen.', art: 'hart', e: { bond: { [z]: -1 } }, dann: [['s', z, 'Sie ist siebzig, Mann.']] },
+            ], { ruhe: true }],
+          ] : [['d', 'Sie merkt nichts. Sie lächelt dich sogar an.']] },
+          { t: 'Bezahlen.', art: 'ruhig', kostet: 25, e: { geld: -25, druck: -10, bond: { lucinda: 1 }, flag: 'kopfhoerer' }, dann: [['s', 'lucinda', 'Gute Wahl. Die hat mein Enkel auch.']] },
+          { t: 'Weitergehen.', art: 'weg', e: {}, dann: [] },
+        ], { ruhe: true }],
+      ];
+    } },
 };
 
 // ---------- Leute ----------
@@ -89,7 +137,53 @@ const SMALLTALK = {
   yara: ['Mika ist nicht so hart, wie er tut.', 'Ich will hier weg. Irgendwann.'], luc: ['Was guckst du?', 'Der Wind ist heute gut. Mehr sag ich nicht.'],
   noor: ['Hier kennt jeder jeden. Komisch.', 'Auf der letzten Insel war ich drei Monate.'], tiago: ['Die Wellen sind heute perfekt.', 'Papa fährt morgen raus. Ich darf mit.'],
   maelle: ['Ich übe für das Fest. Nicht lachen.', 'Hörst du das? Das ist mein Lied.'],
+  lucinda: ['Iss was, Kind. Du bist ja nur Haut.', 'Noor redet von dir. Nur Gutes, bis jetzt.'],
 };
+// Pommes ausgeben: ein Satz, den man sonst nicht hört
+const EINLADEN = {
+  jolie: 'Zu Hause redet keiner beim Essen. Hier schon.', tun: 'Ich filme alles, damit ich nichts vergesse.', pit: 'Mein Bruder konnte den Trick. Dann zog er weg.',
+  mika: 'Sag keinem, dass ich Pommes mit Mayo mag.', yara: 'Mit dir kann man schweigen. Das ist selten.', luc: 'Hat mich noch nie einer eingeladen.',
+  noor: 'Auf der letzten Insel hatte ich niemanden.', tiago: 'Papa sagt, das Meer zahlt immer zurück.', maelle: 'Ich singe nur, wenn keiner zuhört. Fast.',
+};
+// Lästern: über wen man bei wem redet (die Person, die dem Zuhörer am nächsten steht – das weiß man vorher nicht)
+const LAESTER_ZIEL = { tun: 'jolie', jolie: 'maelle', pit: 'tun', mika: 'luc', yara: 'mika', luc: 'yara', noor: 'jolie', tiago: 'pit', maelle: 'noor' };
+// Etwas zugeben: bei wem was (das Erste, das zutrifft)
+function beichte(R, wer) {
+  if (wer === 'fraenz') {
+    if (hat(R, 'kasse.geklaut') && !hat(R, 'gestanden.kasse')) return [
+      ['d', 'Die zwanzig Euro aus der Kasse. Das war ich.'],
+      ['s', 'fraenz', folgeWar(R, 'kasse.fraenz') ? 'Ich weiß. Ich hab gewartet, ob du kommst.' : 'Du? Und kommst von selbst her.'],
+      ['w', [
+        { t: 'Das Geld zurückgeben.', art: 'mut', kostet: 20, e: { geld: -20, bond: { fraenz: 3, ...(hat(R, 'kasse.pitverdacht') ? { pit: 2 } : {}) }, akte: 'gestanden', flags: { 'gestanden.kasse': true, 'job.weg': false, 'kasse.pitverdacht': false } }, dann: [['s', 'fraenz', 'Montag um vier. Die Pommes machen sich nicht allein.']] },
+        { t: 'Nur sagen, dass es leidtut.', art: 'ruhig', e: { bond: { fraenz: 1, ...(hat(R, 'kasse.pitverdacht') ? { pit: 2 } : {}) }, akte: 'gestanden', flags: { 'gestanden.kasse': true, 'kasse.pitverdacht': false } }, dann: [['s', 'fraenz', 'Worte sind billig. Aber du bist gekommen.']] },
+      ], { ruhe: true }],
+    ];
+    if (hat(R, 'spray') && !hat(R, 'gestanden.spray')) return [
+      ['d', 'Das Tor. Das war ich. Nicht Tun.'],
+      ['s', 'fraenz', 'Dann streichst du es. Samstag. Sieben Uhr.'],
+      ['e', { bond: { fraenz: 1, ...(hat(R, 'spray.tunschuld') ? { tun: 2 } : {}) }, akte: 'gestanden', flags: { 'gestanden.spray': true, 'spray.tunschuld': false } }],
+    ];
+    if (hat(R, 'auto.genommen') && !hat(R, 'gestanden.auto')) return [
+      ['d', 'Der Lieferwagen. Ich bin gefahren.'],
+      ['s', 'fraenz', hat(R, 'auto.beule') ? 'Die Beule kostet 400 Euro. Du arbeitest sie ab.' : 'Mit fünfzehn. Ohne Schein. Bist du verrückt?'],
+      ['s', 'fraenz', 'Aber du stehst hier. Das zählt bei mir.'],
+      ['e', { bond: { fraenz: 2 }, akte: 'gestanden', flags: { 'gestanden.auto': true, 'job.weg': false } }],
+    ];
+  }
+  if (wer === 'tiago' && hat(R, 'boot.genommen') && !hat(R, 'gestanden.boot')) return [
+    ['d', 'Das Boot. Der Riss. Das war ich.'],
+    ['s', 'tiago', 'Papa dachte, er hat es falsch festgemacht.'],
+    ['s', 'tiago', 'Sag es ihm selbst. Ich komm mit.'],
+    ['e', { bond: { tiago: 2 }, akte: 'gestanden', flags: { 'gestanden.boot': true, 'meidet.tiago': false } }],
+  ];
+  if (wer === 'lucinda' && hat(R, 'markt.geklaut') && !hat(R, 'gestanden.markt')) return [
+    ['d', 'Die Kopfhörer. Ich hab nicht bezahlt.'],
+    ['s', 'lucinda', 'Ich weiß, Kind. Ich hab es gesehen.'],
+    ['s', 'lucinda', 'Ich wollte wissen, ob du wiederkommst.'],
+    ['e', { geld: -Math.min(25, R.geld), bond: { lucinda: 2, noor: 1 }, akte: 'gestanden', flags: { 'gestanden.markt': true, 'markt.noorverdacht': false } }],
+  ];
+  return null;
+}
 const SPOTT = {
   jolie: 'Malst du wieder deine Babybilder?', tun: 'Keiner lacht über deine Witze, Tun.', pit: 'Fall doch noch mal. War lustig.', noor: 'Na, Pinguin? Wieder verlaufen?',
   mika: 'Großer Mika. Ohne Crew bist du nichts.', yara: 'Läufst du Mika immer hinterher?', luc: 'Sag mal was Schlaues, Luc. Einmal.', tiago: 'Dein Boot ist ein Witz.', maelle: 'Sing leiser. Tut weh in den Ohren.',
@@ -97,11 +191,29 @@ const SPOTT = {
 };
 const HILFE = {
   pit: ['Pits Brett ist gebrochen. Ihr leimt es zusammen.', 'Hält. Danke. Echt.'], jolie: ['Jolies Mappe ist ins Wasser gefallen. Du trocknest Blätter.', 'Die meisten sind gerettet. Wegen dir.'],
+  lucinda: ['Der Stand muss vor dem Regen abgebaut sein.', 'Flinke Hände. Komm Sonntag zum Essen.'],
   fraenz: ['Zwanzig Kisten müssen ins Lager. Du schleppst.', 'Stark. Das vergess ich nicht.'], ilda: ['Ein Netz ist gerissen. Ihr flickt zwei Stunden.', 'Gute Knoten. Wer hat dir das gezeigt?'],
   noor: ['Noor findet den Weg zum Markt nicht. Du gehst mit.', 'Jetzt kenn ich wenigstens einen Weg.'], tun: ['Tuns Kamera spinnt. Ihr sucht den Fehler.', 'Läuft wieder! Du bist ein Genie.'],
 };
 
 export const LEUTE_AKTIONEN = {
+  gestehen: { t: 'Es zugeben', art: 'mut', kraft: 1, wenn: (R, wer) => !!beichte(R, wer), szene: (R, { wer }) => beichte(R, wer) || [] },
+  einladen: { t: 'Pommes ausgeben', art: 'ruhig', kraft: 0, kostet: 5, wenn: (R, wer) => !!EINLADEN[wer] && wert(R, 'eingeladen.' + wer, -9) < tag(R) - 2,
+    szene: (R, { wer }) => (hat(R, 'meidet.' + wer) ? [['s', wer, 'Behalt deine Pommes.']] : [
+      ['t', 'Ihr sitzt auf der Mauer. Ketchup überall.'],
+      ['s', wer, EINLADEN[wer]],
+      ['e', { geld: -5, druck: -5, bond: { [wer]: 1 }, flags: { ['eingeladen.' + wer]: tag(R) } }],
+    ]) },
+  laestern: { t: 'Über jemanden lästern', art: 'hart', kraft: 0, wenn: (R, wer) => !!LAESTER_ZIEL[wer] && !hat(R, 'meidet.' + wer) && !hat(R, 'laester.bei.' + wer),
+    szene: (R, { wer }) => {
+      const ziel = LAESTER_ZIEL[wer];
+      return [
+        ['d', '„Hast du gehört, was ' + NAME[ziel] + ' gemacht hat?“'],
+        ['s', wer, 'Echt? Erzähl.'],
+        ['t', 'Ihr lacht. Zu zweit fühlt es sich gut an.'],
+        ['e', { bond: { [wer]: 1 }, ruf: { hafen: 1 }, flags: { ['laester.bei.' + wer]: true, ['laester.' + ziel]: wer, ['laester.tag.' + ziel]: tag(R) } }],
+      ];
+    } },
   reden: { t: 'Reden', art: 'ruhig', kraft: 0,
     szene: (R, { wer }) => {
       if (hat(R, 'meidet.' + wer)) return [['s', wer, GROSSE.includes(wer) ? 'Nicht jetzt.' : 'Lass mich.']];
@@ -153,7 +265,7 @@ export const LEUTE_AKTIONEN = {
       ['e', bond(R, wer) <= -3 ? { flags: { ['sorry.' + wer]: true } } : { bond: { [wer]: 1 }, flags: { ['sorry.' + wer]: true, ['meidet.' + wer]: false } }],
     ] },
 };
-export const LEUTE_REIHE = ['reden', 'helfen', 'entschuldigen', 'zurueck', 'leihen', 'filmen', 'aufziehen', 'schubsen'];
+export const LEUTE_REIHE = ['gestehen', 'reden', 'einladen', 'helfen', 'entschuldigen', 'zurueck', 'leihen', 'laestern', 'filmen', 'aufziehen', 'schubsen'];
 
 // ---------- Folgen (jeden Morgen geprüft) ----------
 const freund = (R, z) => !!z && bond(R, z) >= 2;
@@ -198,6 +310,33 @@ export const FOLGEN = [
   { id: 'schubs.crew', wenn: (R) => ['mika', 'luc', 'yara'].some((w) => hat(R, 'schubs.' + w)) && seit(R, 'schubs.tag') >= 1,
     text: ['Mikas Crew wartet abends am Steg. Auf dich.', 'Du nimmst den langen Weg. Jeden Abend.'],
     e: () => ({ druck: 15, flag: 'crew.feind' }) },
+  // Lieferwagen: Blechschaden ist Fränz’ Monat. Ohne Zeuge fragt er dich – als Einzigen, dem er traut.
+  { id: 'auto.beule', wenn: (R) => hat(R, 'auto.beule') && seit(R, 'auto.tag') >= 1 && !hat(R, 'gestanden.auto'),
+    text: ['Fränz steht vor seinem Lieferwagen. Lange.', 'Die Werkstatt will 400 Euro. Das ist sein Monat.'],
+    e: (R) => (wert(R, 'auto.zeuge', '')
+      ? { bond: { fraenz: -3 }, ruf: { gross: -2 }, akte: 'auto', flag: 'job.weg', chat: { von: 'fraenz', text: 'Du bist meinen Wagen gefahren. Komm her. Sofort.' } }
+      : { bond: { fraenz: -1 }, chat: { von: 'fraenz', text: 'Jemand hat meinen Wagen kaputt gefahren. Hast du was gesehen? Dir trau ich.' } }) },
+  { id: 'auto.lieferung', wenn: (R) => hat(R, 'auto.genommen') && (hat(R, 'auto.stehen') || hat(R, 'auto.beule')) && seit(R, 'auto.tag') >= 1,
+    text: ['Heute kam keine Lieferung zum Kiosk.', 'Maëlles Mutter wartet seit sechs Uhr auf Brot.'],
+    e: () => ({ ruf: { hafen: -1 }, chat: { von: 'gruppe', text: 'Kiosk zu. Fränz sucht seinen Wagen. Wer war das??' } }) },
+  { id: 'auto.schreck', wenn: (R) => !!wert(R, 'auto.schreck', '') && seit(R, 'auto.tag') >= 1,
+    text: ['Gestern wäre fast jemand überfahren worden.', 'Alle reden davon. Einer kennt dein Gesicht.'],
+    e: (R) => ({ bond: { [wert(R, 'auto.schreck', '')]: -1 }, ruf: { hafen: -1 }, chat: { von: wert(R, 'auto.schreck', ''), text: 'Ich hab dich gesehen. Hinter der Scheibe. Du hast gelacht.' } }) },
+  { id: 'auto.still', wenn: (R) => hat(R, 'auto.genommen') && !hat(R, 'auto.beule') && !hat(R, 'auto.stehen') && !wert(R, 'auto.zeuge', '') && seit(R, 'auto.tag') >= 1,
+    text: ['Fränz wundert sich über den leeren Tank.', 'Er schließt den Wagen jetzt ab. Zum ersten Mal.'],
+    e: () => ({}) },
+  // Markt: Oma Lucinda legt das Geld aus ihrer Rente dazu. Später fällt der Verdacht auf Noor, die Neue.
+  { id: 'markt.lucinda', wenn: (R) => hat(R, 'markt.geklaut') && seit(R, 'markt.tag') >= 1 && !hat(R, 'gestanden.markt'),
+    text: ['Oma Lucinda zählt abends ihre Kasse.', 'Sie legt 25 Euro aus ihrer Rente dazu.'],
+    e: (R) => ({ chat: { von: 'noor', text: 'Oma sagt, sie hat sich verrechnet. Sie verrechnet sich nie.' },
+      ...(wert(R, 'markt.zeuge', '') ? { bond: { noor: -2, [wert(R, 'markt.zeuge', '')]: -1 }, ruf: { hafen: -1 } } : {}) }) },
+  { id: 'markt.noor', wenn: (R) => folgeWar(R, 'markt.lucinda') && seit(R, 'markt.tag') >= 3 && !hat(R, 'gestanden.markt'),
+    text: ['Am Markt heißt es: Seit die Neue da ist, fehlt Ware.', 'Noor darf nicht mehr hinter den Stand.'],
+    e: () => ({ flag: 'markt.noorverdacht', bond: { noor: -1 }, chat: { von: 'noor', text: 'Die denken, ich klaue. Ich hab hier noch nie was genommen.' } }) },
+  // Lästern: Nach zwei Tagen weiß es die Person – wörtlich. Und wer zugehört hat, traut dir weniger.
+  ...Object.values(LAESTER_ZIEL).filter((z, i, a) => a.indexOf(z) === i).map((z) => ({ id: 'laester.' + z, wenn: (R) => !!wert(R, 'laester.' + z, '') && seit(R, 'laester.tag.' + z) >= 2,
+    text: [NAME[z] + ' weiß, was du erzählt hast. Wörtlich.', 'Wer bei dir lacht, fragt sich jetzt: Und über mich?'],
+    e: (R) => ({ bond: { [z]: -2, [wert(R, 'laester.' + z, '')]: -1 }, chat: { von: z, text: 'Ich dachte, wir sind okay. Dann hör ich das.' } }) })),
 ];
 // Ereignisse, die man an ihrem Tag links liegen lässt, laufen ohne einen weiter
 export const VERPASST = {

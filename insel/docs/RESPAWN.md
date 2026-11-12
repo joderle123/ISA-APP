@@ -9,6 +9,10 @@ man darf fast alles tun (auch Mist), keine Waffen, kein Gefängnis. Die Folgen s
 - **Frei tun:** an Leuten (reden, helfen, Geld leihen/zurückgeben, entschuldigen, „Gemein sein …“: aufziehen, heimlich
   filmen, schubsen) und an Orten (jobben, in die Kasse greifen, Tor besprühen, Boot nehmen, zocken, schlafen …).
   Zeugen sind die Figuren, die in der 3D-Welt wirklich in der Nähe stehen.
+- **Neu am 12.11. abends:** Fränz’ Lieferwagen kann man nehmen und wirklich fahren (`fahren.js`; gemessen wird Strecke, Aufprall,
+  wer zur Seite springen musste, wo der Wagen stehen bleibt). Am Markt: Süßes kaufen oder an Oma Lucindas Stand Kopfhörer
+  einstecken. Bei Leuten: Pommes ausgeben, über jemanden lästern, etwas von sich aus zugeben (bei Fränz, Tiago, Oma Lucinda).
+  Dazu neun neue Folgen am Morgen (Blechschaden, ausgefallene Lieferung, Verdacht auf Noor, Lästern kommt heraus …).
 - **Folgen:** jeden Morgen (`daten/welt.js` → `FOLGEN`), jede einmal: Gerüchte im Gruppenchat, Rückzug, falscher Verdacht
   auf andere, Einträge in der Akte. Ereignisse des Tages stehen mit Marke in der Welt; liegen lassen hat auch Folgen (`VERPASST`).
 - **Druck:** sperrt sichtbar ruhige Antworten, bringt eine Uhr; die Startkarten ändern die Regeln (`run.js`).

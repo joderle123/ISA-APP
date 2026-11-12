@@ -12,6 +12,7 @@ import { createOberflaeche } from './oberflaeche.js';
 import { createBuehne } from './buehne.js';
 import { ladeFigur, MODELLE, ueberziehe } from './figur3d.js';
 import { baueStadt } from './stadt.js';
+import { createFahren } from './fahren.js';
 import { SITUATIONEN, AUSGAENGE, AKTE, AKTE_LEER, ORTE, ORT_AKTIONEN, LEUTE_AKTIONEN, LEUTE_REIHE, FOLGEN, VERPASST, WICHTIG } from './daten/index.js';
 import { neuerLauf, zieheKarten, planeJahreszeit, jahreszeitWechsel, jahreszeit, ausgangFuer, akteFuer, wirke, bond, verteile, folgenAmMorgen, neuerTag,
   JAHRESZEIT_NAME, UHR_NACH_KRAFT, TAGE_JE_JAHRESZEIT } from './run.js';
@@ -57,6 +58,8 @@ export default {
       const weg = []; game.scene.traverse((o) => { if (/^props-bake-dekor-(wimpel|signalfeuer)/.test(o.name || '')) weg.push(o); });
       for (const o of weg) if (o.parent) o.parent.remove(o);
     }).catch((e) => console.warn('[respawn] Stadt', e));
+
+    const F = createFahren({ game });
 
     // ---------- Neue Figuren (Skelett, echte Bewegungen): Überzug für die Spielfigur und alle anderen ----------
     const STIL = {
@@ -184,11 +187,20 @@ export default {
       const a = ORT_AKTIONEN[aid];
       if (!a || (a.wenn && !a.wenn(R))) return;
       if (a.schlaf) { await schlafen(); return; }
+      if (a.kostet && R.geld < a.kostet) { await O.erzaehler('Dafür fehlt dir das Geld.', { kurz: true }); return; }
       if (a.kraft && R.kraft < a.kraft) { await O.erzaehler('Dafür bist du heute zu müde.', { kurz: true }); return; }
       const zeugen = a.mist ? B.inDerNaehe(12).filter((w) => WICHTIG.includes(w)) : [];
       R.log.push({ ort: ort.id, aktion: aid, zeugen });
       events.emit('respawn:wahl', { sit: 'ort:' + ort.id, wahl: a.t, art: a.art });
       await B.frei(a.szene(R, { zeugen }), R, { zeugen });
+      // Aktionen mit echter Fahrt: Szene → fahren (frei in der Welt) → was daraus wurde
+      if (a.fahrt && R.flags['fahrt.jetzt']) {
+        delete R.flags['fahrt.jetzt'];
+        let erg = { strecke: 0, vmax: 0, beulen: 0, erschreckt: [], weit: 0 };
+        if (stadt && stadt.lieferwagen) { O.status(R); erg = (await F.starte(stadt.lieferwagen, { sekunden: 45 })) || erg; }
+        R.log.push({ fahrt: erg });
+        if (a.nach) await B.frei(a.nach(R, erg, { zeugen }), R, { zeugen });
+      }
       kraftWeg(a.kraft || 0);
     }
     async function leuteAktion(wer, aid) {
@@ -212,7 +224,7 @@ export default {
       if (w) await ortAktion(ort, w.id);
     });
     // Menü an einer Person: höchstens sechs Kacheln. Das Gemeine liegt eine Ebene tiefer („Gemein sein …“).
-    const GEMEIN = ['aufziehen', 'filmen', 'schubsen'];
+    const GEMEIN = ['laestern', 'aufziehen', 'filmen', 'schubsen'];
     const leuteMenue = (wer) => frei(async () => {
       if (!WICHTIG.includes(wer)) { const n = npcs.get(wer); ui.say({ who: wer, text: 'Moien.', anchor: n ? n.group : null, wait: false, lock: false, seconds: 1.8 }); return; }
       const alle = LEUTE_REIHE.map((id) => ({ id, ...LEUTE_AKTIONEN[id] })).filter((a) => !a.wenn || a.wenn(R, wer)).map((a) => ({ ...a, sub: a.kraft ? '⚡ kostet Kraft' : a.kostet ? a.kostet + ' Euro' : '' }));
@@ -233,6 +245,8 @@ export default {
       }
       for (const ort of ORTE) {
         const o = ortVon(ort.ort);
+        // Orte, an denen es gerade nichts zu tun gibt, zeigen keine Marke
+        if (!ort.aktionen.some((id) => { const a = ORT_AKTIONEN[id]; return a && (!a.wenn || a.wenn(R)); })) continue;
         soll.add('o-' + ort.id);
         if (!marken.has('o-' + ort.id)) marke('o-' + ort.id, { x: o.x, z: o.z, text: ort.bild + ' ' + ort.name, ort: true, radius: 5, label: ort.name, onAction: () => ortMenue(ort) });
       }
@@ -256,6 +270,7 @@ export default {
       O.wirkung(neuerTag(R), R);
       uhr();
       const zuhause = ortVon('bootshaus');
+      if (stadt && stadt.parke) stadt.parke();   // der Lieferwagen steht morgens wieder am Kiosk
       player.teleport(zuhause.x + 1.5, zuhause.z - 2.5, Math.atan2(-zuhause.x, -zuhause.z));
       if (game.cameraRig.behindPlayer) game.cameraRig.behindPlayer();
       if (game.cameraRig.snap) game.cameraRig.snap();

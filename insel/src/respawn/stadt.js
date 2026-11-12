@@ -150,7 +150,9 @@ export async function baueStadt(game) {
   setze('strasse/dumpster', -24.5, 119.5, 0.6, { massstab: 5 });
   setze('strasse/construction-cone', 14.5, 123, 0, { massstab: 6 });
   setze('strasse/construction-cone', 15.6, 124.2, 0.5, { massstab: 6 });
-  setze('auto/delivery', -14.5, 121.5, 1.9, { massstab: 1.5 });
+  // Fränz' Lieferwagen am Kiosk: den kann man nehmen (plugin.js → fahren.js)
+  const lieferwagen = setze('auto/delivery', -14.5, 121.5, 1.9, { massstab: 1.5 });
+  const parkplatz = lieferwagen ? { x: lieferwagen.position.x, y: lieferwagen.position.y, z: lieferwagen.position.z, yaw: lieferwagen.rotation.y } : null;
   setze('auto/taxi', 13.5, 103.5, -0.5, { massstab: 1.5 });
   // 3) Straßen auf den Hauptwegen, Lampen am Rand, parkende Autos, ein wenig Verkehr
   const fahrten = [];
@@ -208,5 +210,7 @@ export async function baueStadt(game) {
     }
   }, { order: 60 });
   game.scene.add(wurzel);
-  return { gruppe: wurzel, setze, modelle: Object.keys(G), wagen };
+  return { gruppe: wurzel, setze, modelle: Object.keys(G), wagen, lieferwagen,
+    // am Morgen steht der Lieferwagen wieder am Kiosk (Fränz hat ihn geholt)
+    parke() { if (lieferwagen && parkplatz) { lieferwagen.position.set(parkplatz.x, parkplatz.y, parkplatz.z); lieferwagen.rotation.y = parkplatz.yaw; } } };
 }
