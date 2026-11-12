@@ -1,0 +1,59 @@
+/* Partyspiele („Schnell & lustig“) */
+[data-theme="party"] { --tc: var(--yellow); --tc-ink: #1b1d26; }
+.p-balken { display: flex; align-items: center; gap: 12px; width: 100%; }
+.p-balken-bahn { flex: 1; height: 18px; border-radius: 99px; background: color-mix(in srgb, var(--ink) 14%, transparent); overflow: hidden; border: var(--bw) solid var(--line); }
+.p-balken-bahn i { display: block; height: 100%; width: 100%; background: var(--good); border-radius: 99px; transition: width .12s linear; }
+.p-balken b { min-width: 2.2em; text-align: right; font-size: 1.5em; font-variant-numeric: tabular-nums; }
+.p-balken.eng .p-balken-bahn i { background: var(--teamB); }
+.p-balken.eng b { color: var(--teamB); }
+.p-stempel { position: fixed; inset: 0; display: grid; place-items: center; pointer-events: none; z-index: 60; }
+.p-stempel b { font-size: clamp(3em, 13vw, 9em); padding: .1em .35em; border-radius: .2em; transform: rotate(-7deg); -webkit-text-stroke: 2px var(--ink); paint-order: stroke fill; text-shadow: 0 6px 0 var(--ink); animation: p-stempel .9s cubic-bezier(.2, 1.6, .4, 1) both; color: var(--yellow); }
+.p-stempel.gut b { color: var(--good); }
+.p-stempel.schlecht b { color: var(--teamB); }
+@keyframes p-stempel { 0% { transform: rotate(-7deg) scale(2.6); opacity: 0; } 25% { transform: rotate(-7deg) scale(1); opacity: 1; } 75% { opacity: 1; } 100% { transform: rotate(-7deg) scale(1.05); opacity: 0; } }
+.p-wackel { animation: p-wackel .45s linear; }
+@keyframes p-wackel { 10%, 50%, 90% { transform: translate(-9px, 3px); } 30%, 70% { transform: translate(9px, -3px); } }
+.p-gross { font-size: clamp(2em, 6vw, 4.2em); line-height: 1.08; text-align: center; margin: 0; }
+.p-mittel { font-size: clamp(1.4em, 3.2vw, 2.2em); line-height: 1.2; text-align: center; margin: 0; }
+.p-karte { width: 100%; max-width: 860px; margin: 0 auto; padding: clamp(18px, 3vw, 36px); border-radius: var(--radius); background: var(--panel); border: var(--bw) solid var(--line); display: flex; flex-direction: column; gap: 14px; align-items: center; text-align: center; }
+.p-karte .eyebrow { color: var(--yellow); }
+.p-zahl { font-size: clamp(3.4em, 12vw, 8em); line-height: 1; font-variant-numeric: tabular-nums; }
+/* Bombe (Zündschnur) */
+.p-bombe { width: clamp(110px, 20vw, 190px); aspect-ratio: 1; border-radius: 50%; background: radial-gradient(circle at 35% 30%, #5b5f73, #1b1d26 70%); position: relative; animation: p-puls var(--tempo, 1s) ease-in-out infinite; }
+.p-bombe::before { content: ''; position: absolute; left: 58%; top: -16%; width: 12%; height: 26%; background: #8a6b45; border-radius: 6px; transform: rotate(24deg); }
+.p-bombe::after { content: ''; position: absolute; left: 68%; top: -30%; width: 22%; aspect-ratio: 1; border-radius: 50%; background: radial-gradient(circle, #fff 0 20%, var(--yellow) 30% 55%, #ff7a3d 60% 100%); animation: p-funke .18s steps(2) infinite; }
+@keyframes p-puls { 50% { transform: scale(1.09); } }
+@keyframes p-funke { 50% { transform: scale(1.35) rotate(40deg); opacity: .8; } }
+/* Zu zweit: zwei Hälften, oben gedreht */
+.p-duell { display: grid; grid-template-rows: 1fr auto 1fr; gap: 10px; min-height: 68dvh; width: 100%; }
+.p-seite { border-radius: var(--radius); border: var(--bw) solid var(--line); background: var(--panel); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; padding: 14px; min-height: 26dvh; touch-action: manipulation; user-select: none; -webkit-user-select: none; }
+.p-seite.oben { transform: rotate(180deg); }
+.p-seite.a { border-color: var(--teamA); } .p-seite.b { border-color: var(--teamB); }
+.p-seite.warte { background: #23263a; color: #fff; }
+.p-seite.falle { background: var(--teamB); color: var(--teamB-ink); }
+.p-seite.los { background: var(--good); color: var(--good-ink); }
+.p-seite.sieg { outline: 6px solid var(--yellow); }
+.p-seite.gesperrt { opacity: .35; }
+.p-mitte { display: flex; align-items: center; justify-content: center; gap: 14px; }
+.p-wahl { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; width: 100%; }
+.p-wahl button { min-height: 76px; font-size: clamp(1.1em, 2.6vw, 1.7em); font-weight: 800; border-radius: var(--radius); border: var(--bw) solid var(--line); background: var(--bg); color: var(--ink); padding: 10px; }
+.p-wahl button:active { transform: scale(.97); }
+.p-gitter { display: grid; gap: 6px; width: 100%; max-width: 560px; }
+.p-gitter button { aspect-ratio: 1; min-height: 34px; font-size: clamp(1em, 3vw, 1.7em); font-weight: 800; border-radius: 10px; border: var(--bw) solid var(--line); background: var(--bg); color: var(--ink); padding: 0; }
+.p-gitter button.treffer { background: var(--good); color: var(--good-ink); }
+/* Skala (Treffer) */
+.p-skala { width: 100%; max-width: 820px; display: flex; flex-direction: column; gap: 8px; }
+.p-skala-pole { display: flex; justify-content: space-between; gap: 12px; font-weight: 800; font-size: clamp(1em, 2.4vw, 1.5em); }
+.p-skala-bahn { position: relative; height: 54px; border-radius: 99px; border: var(--bw) solid var(--line); background: linear-gradient(90deg, color-mix(in srgb, var(--teamA) 55%, var(--panel)), var(--panel) 50%, color-mix(in srgb, var(--teamB) 55%, var(--panel))); overflow: hidden; }
+.p-skala-ziel { position: absolute; top: 0; bottom: 0; width: 14%; transform: translateX(-50%); background: repeating-linear-gradient(90deg, var(--good) 0 6px, color-mix(in srgb, var(--good) 60%, #fff) 6px 12px); opacity: .9; }
+.p-skala-ziel::after { content: ''; position: absolute; left: 50%; top: 0; bottom: 0; width: 4px; transform: translateX(-50%); background: var(--ink); }
+.p-skala-nadel { position: absolute; top: -4px; bottom: -4px; width: 8px; border-radius: 4px; background: var(--ink); transform: translateX(-50%); box-shadow: 0 0 0 3px var(--yellow); }
+.p-skala input[type="range"] { width: 100%; height: 54px; accent-color: var(--yellow); }
+.p-liste { display: grid; gap: 10px; width: 100%; max-width: 760px; }
+.p-liste button { display: flex; align-items: center; gap: 12px; text-align: left; min-height: 60px; padding: 10px 16px; font-size: clamp(1.05em, 2.2vw, 1.4em); font-weight: 700; border-radius: var(--radius); border: var(--bw) solid var(--line); background: var(--panel); color: var(--ink); }
+.p-liste button.an { background: var(--good); color: var(--good-ink); }
+.p-liste button.richtig { background: var(--good); color: var(--good-ink); }
+.p-liste button.falsch { background: var(--teamB); color: var(--teamB-ink); }
+.p-rekord { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.p-rekord .neu { color: var(--yellow); font-weight: 800; letter-spacing: .04em; text-transform: uppercase; }
+.hub-party .hub-tile .t-rek { font-size: .78em; opacity: .8; }
