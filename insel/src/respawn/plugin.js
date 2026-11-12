@@ -296,6 +296,8 @@ export default {
       },
     });
 
+    // Einstieg für die allererste Runde (nach der Ankunft): was man an einem freien Tag tun kann
+    const EINSTIEG = ['Der Tag gehört dir. Geh, wohin du willst.', 'Orte haben ein Schild. Leute kannst du ansprechen.', 'Das Handy oben bringt dich schnell überall hin.', 'Zuhause schlafen beendet den Tag.'];
     async function einTag() {
       // Morgen: was aus gestern geworden ist
       O.wirkung(neuerTag(R), R);
@@ -318,7 +320,14 @@ export default {
         tagEnde = resolve;
         marken_();
         const auto = heute().find((id) => sit(id).platz === 'anfang' && id === 'ankunft');
-        if (auto) frei(() => ereignis(auto));
+        if (auto) frei(async () => {
+          await ereignis(auto);
+          // Allererste Runde: vier kurze Sätze, wie ein freier Tag geht – einmal, dann nie wieder
+          if (!meta.runden && !meta.einstieg) {
+            meta.einstieg = true; schreib(META, meta);
+            for (const z of EINSTIEG) await O.erzaehler(z);
+          }
+        });
         events.emit('respawn:frei', { kraft: R.kraft, tag: R.tag, jz: R.jz });
       });
       knopfWeg(); alleWeg();
