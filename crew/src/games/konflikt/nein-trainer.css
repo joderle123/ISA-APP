@@ -1,0 +1,36 @@
+/* Nein-Trainer: Sprachnachrichten im Handy-Look, Anker-Kreis, „Sag es“-Karte */
+.nt-phone { background: #fff; color: #111; border: var(--bw) solid var(--line); border-radius: 22px; box-shadow: 0 var(--lift) 0 var(--line); display: flex; flex-direction: column; overflow: hidden; font-family: system-ui, -apple-system, sans-serif; }
+.nt-phone .muted { color: #666; }
+.nt-kopf { display: flex; align-items: center; gap: 10px; padding: 10px 14px; border-bottom: 1px solid #e5e5e5; background: #f7f7f9; }
+.nt-chat { display: flex; flex-direction: column; gap: 10px; padding: 12px 14px; max-height: 38dvh; overflow-y: auto; background: #eef1f5; }
+.nt-msg { display: flex; align-items: flex-end; gap: 8px; max-width: 92%; }
+.nt-msg.me { align-self: flex-end; }
+.nt-msg .bubble { background: #dcf8c6; color: #111; border-color: #b6e3a3; }
+.nt-msg .bubble-who { color: #2b7a0b; }
+.nt-voice { display: flex; flex-direction: column; gap: 6px; background: #fff; border: 2px solid #dcdfe4; border-radius: 18px 18px 18px 4px; padding: 8px 12px; min-width: 0; }
+.nt-voice-row { display: flex; align-items: center; gap: 10px; }
+.nt-play { width: 44px; height: 44px; border-radius: 50%; background: #7a3ff2; color: #fff; border-color: #4b1fa8; box-shadow: none; }
+.nt-wave { display: flex; align-items: center; gap: 2px; height: 30px; flex: 1; min-width: 90px; }
+.nt-wave i { display: block; width: 4px; border-radius: 2px; background: #b9a3f0; }
+.nt-msg.playing .nt-wave i { background: #7a3ff2; animation: nt-wave 700ms ease-in-out infinite alternate; }
+.nt-msg.playing .nt-wave i:nth-child(3n) { animation-delay: 120ms; }
+.nt-msg.playing .nt-wave i:nth-child(3n+1) { animation-delay: 260ms; }
+@keyframes nt-wave { from { transform: scaleY(.45); } to { transform: scaleY(1); } }
+.nt-dauer { color: #666; font-variant-numeric: tabular-nums; }
+.nt-trans { font-size: .95em; line-height: 1.3; color: #222; }
+.nt-foot { padding: 10px 14px; border-top: 1px solid #e5e5e5; background: #fff; }
+.nt-foot .meter-label { color: #111; }
+.nt-foot .meter-bar { background: #eee; }
+.nt-anker { display: flex; align-items: center; gap: 22px; padding: 18px 22px; border: var(--bw) solid var(--line); border-radius: var(--radius); background: var(--panel); box-shadow: 0 var(--lift) 0 var(--line); }
+.nt-anker-kreis { flex: none; width: 110px; height: 110px; border-radius: 50%; display: grid; place-items: center; color: var(--good-ink); background: radial-gradient(circle, var(--good) 0%, color-mix(in srgb, var(--good) 40%, transparent) 70%); animation: breathe 6s ease-in-out infinite; }
+.nt-sag { display: flex; flex-direction: column; align-items: center; gap: 12px; padding: 22px 26px; border: var(--bw) solid var(--line); border-radius: var(--radius); background: var(--panel); box-shadow: 0 var(--lift) 0 var(--line); max-width: 760px; width: 100%; }
+.nt-sag-satz { font-size: clamp(1.6em, 4vw, 2.6em); line-height: 1.15; text-wrap: balance; text-align: center; text-transform: none; }
+.nt-ende[data-vertagt="1"] .ic { color: var(--yellow); }
+@media (max-width: 560px) {
+  .nt-anker { flex-direction: column; text-align: center; }
+  .nt-anker-kreis { width: 84px; height: 84px; }
+}
+@media (prefers-reduced-motion: reduce) { .nt-anker-kreis, .nt-msg.playing .nt-wave i { animation: none; } }
+.nt-tipp { display: flex; align-items: center; gap: 12px; padding: 8px 12px; border-radius: var(--radius-sm); border: 2px solid var(--line); background: var(--panel); }
+.nt-tipp b { flex: 1; min-width: 0; }
+@media (min-height: 700px) and (min-width: 900px) { .nt-chat { max-height: 30dvh; } }

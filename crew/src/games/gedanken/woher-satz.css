@@ -1,0 +1,52 @@
+/* Woher kommt der Satz?: Schnipsel im Chat-/Feed-/Heft-Look, Stempel Quelle/Verstärker, Satz-Update v2.0 */
+.ws-snips { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); align-items: start; }
+.ws-snip { position: relative; overflow: hidden; display: flex; flex-direction: column; gap: 8px; width: 100%; min-height: 132px; text-align: left; font: inherit; color: inherit; cursor: pointer;
+  background: var(--panel); border: var(--bw) solid var(--line); border-radius: var(--radius); padding: 12px 14px; box-shadow: 0 var(--lift) 0 var(--line); transition: transform 150ms, box-shadow 150ms; }
+.ws-snip:active { transform: translateY(var(--lift)); box-shadow: 0 0 0 var(--line); }
+.ws-snip:disabled { cursor: default; opacity: 1; }
+.ws-snip.picked { outline: 4px solid var(--yellow); outline-offset: 2px; }
+.ws-snip-head { display: flex; justify-content: space-between; gap: 8px; align-items: baseline; }
+.ws-snip-head b { font-family: var(--font-display); letter-spacing: .02em; }
+.ws-chat { display: flex; flex-direction: column; gap: 4px; }
+.ws-who { font-size: .75em; font-weight: 800; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.ws-bubble { align-self: flex-start; background: #dcf8c6; color: #111; border-radius: 14px 14px 14px 4px; padding: 8px 12px; line-height: 1.3; max-width: 34ch; }
+.ws-feed { background: #fff; color: #111; border-radius: 12px; padding: 8px 10px; display: flex; flex-direction: column; gap: 4px; font-family: system-ui, -apple-system, sans-serif; }
+.ws-feed p { margin: 0; line-height: 1.3; }
+.ws-feed-head { display: flex; align-items: center; gap: 8px; font-size: .85em; }
+.ws-feed-ava { width: 26px; height: 26px; border-radius: 50%; background: linear-gradient(135deg, #4cc9f0, #7a3ff2); flex: none; }
+.ws-likes { display: inline-flex; align-items: center; gap: 4px; font-size: .78em; color: #7a3ff2; font-weight: 700; }
+.ws-note { background: repeating-linear-gradient(180deg, #fffbe8 0 26px, #c9d9f2 26px 27px); color: #b3261e; border-radius: 6px; padding: 8px 12px; font-family: "Segoe Print", "Bradley Hand", "Comic Sans MS", cursive; font-size: 1.05em; transform: rotate(-1deg); }
+.ws-note p { margin: 0; line-height: 27px; }
+.ws-stamp { position: absolute; bottom: 10px; right: 10px; font-family: var(--font-display); font-size: 1em; letter-spacing: .1em; text-transform: uppercase; padding: 4px 10px; border: 3px solid currentColor; border-radius: 8px; transform: rotate(8deg); background: color-mix(in srgb, var(--bg) 80%, transparent); animation: ws-stamp 320ms cubic-bezier(.2,1.6,.4,1) both; }
+.ws-snip.is-quelle, .ws-snip.is-echo { padding-bottom: 50px; }
+.ws-snip.is-quelle { border-color: var(--hot); box-shadow: 0 var(--lift) 0 var(--hot); }
+.ws-snip.is-quelle .ws-stamp { color: var(--hot); }
+.ws-snip.is-echo .ws-stamp { color: var(--muted); }
+.ws-snip.is-echo { opacity: .88; }
+@keyframes ws-stamp { from { transform: rotate(8deg) scale(2.2); opacity: 0; } to { transform: rotate(8deg) scale(1); opacity: 1; } }
+.ws-why { margin: 0; padding: 0 4px; }
+.ws-version { background: color-mix(in srgb, var(--accent) 25%, var(--panel2)); }
+.ws-kenne-note { display: flex; align-items: center; gap: 8px; margin: 0; padding: 10px 12px; border-radius: var(--radius-sm); background: color-mix(in srgb, var(--good) 18%, var(--bg)); border: 2px solid var(--good); font-weight: 600; }
+.ws-kenne-note[hidden] { display: none; }
+.ws-kenne-note .ic { color: var(--good); flex: none; }
+.ws-geschafft { display: flex; flex-direction: column; gap: 8px; background: var(--panel); border: var(--bw) solid var(--line); border-radius: var(--radius); padding: 14px 16px; box-shadow: 0 var(--lift) 0 var(--line); }
+.ws-win { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-radius: var(--radius-sm); background: color-mix(in srgb, var(--good) 20%, var(--bg)); border: 2px solid var(--line); font-weight: 600; }
+.ws-win .ic { color: var(--good); flex: none; }
+.ws-update { display: flex; flex-direction: column; gap: 10px; background: #f4f6fb; color: #15122e; border: var(--bw) solid var(--line); border-radius: 22px; padding: 16px 18px; box-shadow: 0 var(--lift) 0 var(--line); font-family: system-ui, -apple-system, sans-serif; width: 100%; max-width: 760px; }
+.ws-update.center { align-items: center; text-align: center; }
+.ws-update .eyebrow { color: #4b3fb0; }
+.ws-update .muted { color: #555; }
+.ws-old { margin: 0; font-size: 1.15em; }
+.ws-patch { color: #1b6b3a; font-weight: 600; }
+.ws-install { width: min(420px, 100%); height: 18px; border-radius: 99px; background: #dde1ee; border: 2px solid #15122e; overflow: hidden; }
+.ws-install > i { display: block; height: 100%; width: 4%; background: linear-gradient(90deg, #2ee6c5, #3da5ff); transition: width 1100ms cubic-bezier(.4,0,.2,1); }
+.ws-install.run > i { width: 100%; }
+.ws-result { display: flex; align-items: center; gap: 12px; padding: 12px 18px; border: var(--bw) solid var(--line); border-left: 10px solid var(--yellow); border-radius: var(--radius); background: var(--panel); box-shadow: 0 var(--lift) 0 var(--line); }
+.ws-result h2 { margin: 0; }
+.ws-result .ic { color: var(--yellow); flex: none; }
+.ws-result.ok { border-left-color: var(--good); }
+.ws-result.ok .ic { color: var(--good); }
+@media (prefers-reduced-motion: reduce) { .ws-stamp { animation: none; } .ws-install > i { transition: none; } }
+.ws-top { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); align-items: stretch; }
+.ws-top > * { min-width: 0; }
+@media (max-width: 560px) { .ws-top { grid-template-columns: 1fr; } }

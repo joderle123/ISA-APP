@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CREW-Hub Demo</title>
+<meta name="description" content="Beispiel-Karten für die Einbindung der CREW-Spiele in Galileo und Unified – nur Beispieldaten, keine echten Personen.">
+<style>
+  :root { --bg: #f4f5fa; --card: #ffffff; --ink: #1b1446; --muted: #5b5a73; --line: #e2e3ee; --accent: #ff6b3d; --accent-ink: #1a0b05; --soft: #efe9ff; --tag: #e8f1ff; --warn: #fff3cd; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #141126; --card: #1f1a3a; --ink: #f3f1ff; --muted: #b8b4d6; --line: #342d5c; --soft: #2a2350; --tag: #22304f; --warn: #4a3b12; } }
+  :root[data-theme="dark"] { --bg: #141126; --card: #1f1a3a; --ink: #f3f1ff; --muted: #b8b4d6; --line: #342d5c; --soft: #2a2350; --tag: #22304f; --warn: #4a3b12; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.45 system-ui, -apple-system, "Segoe UI", Rubik, sans-serif; padding: 16px; }
+  main { max-width: 1040px; margin: 0 auto; display: grid; gap: 20px; }
+  h1 { font-size: 1.5rem; margin: 0; }
+  h2 { font-size: 1.05rem; margin: 0 0 8px; }
+  .beispiel { display: inline-block; background: var(--warn); color: var(--ink); border-radius: 999px; padding: 3px 10px; font-size: .8rem; font-weight: 700; letter-spacing: .04em; }
+  .muted { color: var(--muted); font-size: .9rem; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+  .panel { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 16px; display: grid; gap: 10px; align-content: start; }
+  .profil { display: flex; gap: 12px; align-items: center; }
+  .ava { width: 44px; height: 44px; border-radius: 50%; background: var(--soft); display: grid; place-items: center; font-weight: 800; }
+  textarea, select, input { width: 100%; font: inherit; color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 10px; padding: 8px 10px; }
+  textarea { min-height: 96px; resize: vertical; }
+  label { font-size: .85rem; font-weight: 600; color: var(--muted); display: grid; gap: 4px; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; min-height: 28px; }
+  .tag { background: var(--tag); border-radius: 999px; padding: 3px 10px; font-size: .8rem; font-weight: 600; }
+  .tag[data-vorsicht="true"] { background: var(--warn); }
+  .ziele { display: flex; flex-wrap: wrap; gap: 6px; }
+  .ziele label { display: inline-flex; align-items: center; gap: 4px; background: var(--soft); border-radius: 999px; padding: 3px 10px; cursor: pointer; }
+  .ziele input { width: auto; }
+  button { font: inherit; font-weight: 700; border: 0; border-radius: 10px; padding: 9px 14px; background: var(--accent); color: var(--accent-ink); cursor: pointer; }
+  button.ghost { background: var(--soft); color: var(--ink); }
+  .row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+  /* Karte aus CREWHub.renderKarte – diese Klassen dürfen die Klassebücher nach Belieben überschreiben */
+  .crewhub-karte { border: 1px solid var(--line); border-radius: 14px; overflow: hidden; background: var(--card); }
+  .crewhub-head { display: flex; align-items: center; gap: 10px; padding: 10px 14px; background: var(--ink); color: #fff; }
+  .crewhub-logo { background: var(--accent); color: var(--accent-ink); font-weight: 900; letter-spacing: .06em; padding: 2px 8px; border-radius: 6px; font-size: .8rem; }
+  .crewhub-code { margin-left: auto; font-size: .8rem; opacity: .85; }
+  .crewhub-list { list-style: none; margin: 0; padding: 0; }
+  .crewhub-item { display: flex; gap: 12px; padding: 12px 14px; border-top: 1px solid var(--line); }
+  .crewhub-qr svg { display: block; border-radius: 6px; }
+  .crewhub-body { display: grid; gap: 3px; align-content: start; }
+  .crewhub-meta { color: var(--muted); font-size: .85rem; }
+  .crewhub-grund { font-size: .85rem; background: var(--soft); border-radius: 8px; padding: 4px 8px; }
+  .crewhub-link { font-size: .85rem; font-weight: 700; color: var(--ink); }
+  .crewhub-fuss, .crewhub-leer { margin: 0; padding: 10px 14px; font-size: .8rem; color: var(--muted); }
+  .crewhub-karte[data-modus="jugend"] .crewhub-item { align-items: center; }
+  .crewhub-karte[data-modus="jugend"] .crewhub-name { font-size: 1.1rem; }
+  code { background: var(--soft); padding: 1px 5px; border-radius: 5px; font-size: .85em; }
+  footer { font-size: .8rem; color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="row"><h1>CREW im Klassebuch</h1><span class="beispiel">BEISPIEL – keine echten Personen</span></div>
+    <p class="muted">So könnten die Karten in Galileo (Annexe) und Unified (CDSE-Hub) aussehen. Alle Daten auf dieser Seite sind erfunden.
+      Die Notizen verlassen den Browser nicht; nach außen gehen nur Themen-Tags und Spiel-IDs.</p>
+  </header>
+
+  <section class="grid">
+    <!-- Personal-Ansicht: Schülerprofil -->
+    <div class="panel">
+      <div class="profil"><div class="ava">M.</div><div><b>Schülerprofil (Beispiel) – Ansicht Personal</b><br><span class="muted">Wochenziele aus ELDiB, Notizen der Woche</span></div></div>
+      <label>ELDiB-Wochenziele (Beispiel)
+        <div class="ziele" id="ziele"></div>
+      </label>
+      <label>Notizen der Woche (Beispiel – bleiben hier im Browser)
+        <textarea id="notizen">Mo: In der Pause Streit mit einem Mitschüler, ist laut geworden und dann rausgegangen.
+Mi: Erzählt, dass er nachts lange am Handy ist (TikTok) und morgens müde ist.
+Do: Hat sich beim Gruppenspiel zurückgezogen, sagt „ich kann das eh nicht“.</textarea>
+      </label>
+      <div class="row"><span class="muted">Gefundene Themen (nur lokal, Stichwortliste):</span></div>
+      <div class="tags" id="tags"></div>
+      <div class="row"><button id="rechnen">Vorschläge berechnen</button><button class="ghost" id="leeren">Notizen leeren</button></div>
+      <div id="karte-personal"></div>
+    </div>
+
+    <!-- Jugend-Ansicht -->
+    <div class="panel">
+      <h2>Dieselbe Karte, Ansicht Jugendliche:r</h2>
+      <p class="muted">Nur Spiel und QR-Code. Kein Grund, keine Themen, keine Namen im Link.</p>
+      <div id="karte-jugend"></div>
+    </div>
+  </section>
+
+  <section class="grid">
+    <!-- Gruppenkarte: Ende der Skills-Stunde -->
+    <div class="panel">
+      <h2>Gruppenkarte: Ende der Skills-Stunde</h2>
+      <label>Einheit heute
+        <select id="einheit"></select>
+      </label>
+      <p class="muted" id="variante"></p>
+      <div id="karte-gruppe"></div>
+    </div>
+
+    <div class="panel">
+      <h2>Was die Klassebuch-Sitzung braucht</h2>
+      <p class="muted">Eine Datei: <code>crew-hub.js</code> (keine Abhängigkeiten, kein Netz). Aufrufe:</p>
+      <pre class="muted" style="white-space:pre-wrap;margin:0"><code>const tags = CREWHub.themenAusNotizen(notizText);
+const top3 = CREWHub.suggest({ eldib: ziele, themen: tags, max: 3 });
+CREWHub.renderKarte(el, { vorschlaege: top3, modus: 'personal' });
+CREWHub.renderKarte(el2, { vorschlaege: top3, modus: 'jugend' });
+const gruppe = CREWHub.suggest({ einheit: 'j1-e04', max: 1 });
+const svg = CREWHub.qrSvg(CREWHub.spielUrl('tank-detektiv'));</code></pre>
+      <p class="muted">Details: <code>HUB-ANLEITUNG.md</code>. Stand des Katalogs: <span id="stand"></span>.</p>
+    </div>
+  </section>
+
+  <footer>CREW-Hub Demo · Beispieldaten · Katalog aus docs/spielekatalog.json · Keine Datenübertragung.</footer>
+</main>
+<script src="crew-hub.js"></script>
+<script>
+  (function () {
+    'use strict';
+    const H = window.CREWHub;
+    const $ = (s) => document.querySelector(s);
+    $('#stand').textContent = H.version + ' · ' + H.katalog.gebaut + ' von ' + Object.keys(H.katalog.spiele).length + ' Spielen gebaut';
+
+    /* ELDiB-Ziele als Häkchen (Beispiel: drei vorausgewählt) */
+    const vor = ['V-21', 'K-26', 'K-28'];
+    const ziele = $('#ziele');
+    Object.keys(H.eldib).forEach((c) => {
+      const l = document.createElement('label');
+      l.innerHTML = '<input type="checkbox" value="' + c + '"' + (vor.indexOf(c) >= 0 ? ' checked' : '') + '> ' + c + ' <span class="muted">' + H.eldibName(c) + '</span>';
+      ziele.appendChild(l);
+    });
+    const gewaehlt = () => Array.from(ziele.querySelectorAll('input:checked')).map((i) => i.value);
+
+    function rechnen() {
+      const tags = H.themenAusNotizen($('#notizen').value, { details: true });
+      $('#tags').innerHTML = tags.length ? tags.map((t) => '<span class="tag" data-vorsicht="' + t.vorsicht + '">' + t.name + (t.vorsicht ? ' · nur mit Hilfe-Hinweis' : '') + '</span>').join('') : '<span class="muted">keine</span>';
+      const top3 = H.suggest({ eldib: gewaehlt(), themen: tags.map((t) => t.id), max: 3 });
+      H.renderKarte($('#karte-personal'), { vorschlaege: top3, modus: 'personal', titel: 'CREW-Spiele für diese Woche' });
+      H.renderKarte($('#karte-jugend'), { vorschlaege: top3, modus: 'jugend', titel: 'Deine CREW-Spiele' });
+    }
+    $('#rechnen').addEventListener('click', rechnen);
+    $('#leeren').addEventListener('click', () => { $('#notizen').value = ''; rechnen(); });
+    ziele.addEventListener('change', rechnen);
+
+    /* Gruppenkarte: Einheit → Abschlussspiel */
+    const sel = $('#einheit');
+    H.katalog.einheiten.forEach((e) => { const o = document.createElement('option'); o.value = e.id; o.textContent = e.id + ' · ' + e.titel; sel.appendChild(o); });
+    sel.value = 'j1-e04';
+    function gruppe() {
+      const e = H.katalog.einheiten.find((x) => x.id === sel.value);
+      $('#variante').textContent = e ? 'Variante heute: ' + e.variante : '';
+      H.renderKarte($('#karte-gruppe'), { vorschlaege: H.suggest({ einheit: sel.value, max: 2 }), modus: 'personal', titel: 'Abschlussspiel ' + sel.value });
+    }
+    sel.addEventListener('change', gruppe);
+    rechnen();
+    gruppe();
+  })();
+</script>
+</body>
+</html>

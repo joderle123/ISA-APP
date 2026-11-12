@@ -1,0 +1,20 @@
+/* Zuhör-Falle: Erzähl-Karte mit Untertiteln, Verstanden-Meter, Fallen-Pill, eigener Satz */
+.zf-erzaehl { display: grid; grid-template-columns: auto 1fr; gap: 18px; align-items: start; padding: clamp(16px, 2.4vw, 28px); border: var(--bw) solid var(--line); border-radius: calc(var(--radius) + 6px); background: var(--panel); box-shadow: 0 var(--lift) 0 var(--line); }
+.zf-erzaehl-side { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.zf-sub { display: flex; flex-direction: column; gap: 8px; min-height: 7em; }
+.zf-zeile { margin: 0; font-family: var(--font-display); font-size: clamp(1.25em, 1.6vw + 0.7em, 2em); line-height: 1.2; text-wrap: balance; padding: 6px 12px; border-radius: var(--radius-sm); background: color-mix(in srgb, #000 22%, transparent); }
+.zf-kurz .fig-chat { font-size: 1.02em; }
+.zf-meter { padding: 12px 16px; }
+.zf-meter .meter-bar > i { background: linear-gradient(90deg, var(--hot), var(--yellow) 45%, var(--good)); }
+.zf-meter .meter[data-level="hot"] .meter-num { color: var(--good); }
+.zf-meter .meter[data-level="cool"] .meter-num { color: var(--hot); }
+.zf-antwort { padding: 12px 18px; border-left: 8px solid var(--yellow); background: var(--panel); border-radius: var(--radius-sm); }
+.zf-antwort p { margin: 4px 0 0; font-family: var(--font-display); font-size: clamp(1.15em, 1.2vw + 0.7em, 1.6em); line-height: 1.2; }
+.zf-falle[data-falle="treffer"] { background: var(--good); color: var(--good-ink); }
+.zf-falle[data-falle="ratschlag"], .zf-falle[data-falle="ichauch"], .zf-falle[data-falle="kleinreden"] { background: color-mix(in srgb, var(--hot) 60%, var(--panel)); color: #fff; }
+.zf-falle[data-falle="sachlich"] { background: var(--yellow); color: var(--yellow-ink); }
+.zf-satz { padding: 12px 18px; border: var(--bw) dashed var(--line); border-radius: var(--radius); background: var(--panel); }
+.zf-satz p { margin: 4px 0 0; font-family: var(--font-display); font-size: clamp(1.2em, 1.4vw + 0.7em, 1.8em); line-height: 1.2; }
+.zf-satz.big { border-style: solid; border-color: var(--good); background: color-mix(in srgb, var(--good) 14%, var(--panel)); }
+.game-screen[data-game="zuhoerfalle"] .row > .btn.big[id^="zf-a-"] { font-family: var(--font-body); font-weight: 600; font-size: 1.12em; text-transform: none; min-height: 58px; padding: 10px 20px; }
+@media (max-width: 560px) { .zf-erzaehl { grid-template-columns: 1fr; } .zf-erzaehl-side { flex-direction: row; } }

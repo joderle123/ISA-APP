@@ -1,0 +1,43 @@
+/* Ampel-Woche: Koffer packen, Tages-Kopf, Ampel-Rückmeldung, Wochenkurve */
+.aw-pack { gap: 12px; }
+.aw-packrow { display: grid; grid-template-columns: minmax(130px, 180px) 1fr; gap: 10px; align-items: center; }
+.aw-packlbl { display: inline-flex; align-items: center; gap: 8px; }
+.aw-packlbl .ic { color: var(--yellow); }
+.aw-koffer { position: relative; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; padding: 22px 12px 12px; margin-top: 14px; border-radius: 18px; border: var(--bw) solid var(--line); background: linear-gradient(180deg, #8a4b22, #6b3716); box-shadow: 0 var(--lift) 0 var(--line); }
+.aw-griff { position: absolute; top: -16px; left: 50%; width: 90px; height: 22px; transform: translateX(-50%); border: var(--bw) solid var(--line); border-bottom: 0; border-radius: 12px 12px 0 0; background: transparent; }
+.aw-fach { display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 10px 6px; text-align: center; border-radius: 10px; border: 2px dashed rgba(255,255,255,.4); color: rgba(255,255,255,.7); min-width: 0; }
+.aw-fach .eyebrow { color: inherit; font-size: .7em; }
+.aw-fach b { font-size: .85em; overflow-wrap: anywhere; }
+.aw-fach.voll { border-style: solid; border-color: var(--line); background: #fff3dc; color: #2a1200; }
+.aw-fach.voll .ic { color: #b45a16; }
+.aw-fach[data-fach="erwachsen"].voll { background: color-mix(in srgb, var(--good) 45%, #fff); }
+.aw-koffer.small { padding: 16px 8px 8px; margin-top: 10px; }
+.aw-koffer.small .aw-fach { padding: 6px 4px; }
+.aw-tag { display: flex; align-items: center; gap: 12px; }
+.aw-tag b.display { display: grid; place-items: center; width: 56px; height: 56px; border-radius: 14px; background: var(--yellow); color: var(--yellow-ink); border: var(--bw) solid var(--line); font-size: 1.5em; }
+.aw-tag span { font-weight: 800; font-size: 1.1em; }
+.aw-signal { display: flex; gap: 8px; align-items: flex-start; margin: 0; padding: 8px 12px; border-radius: var(--radius-sm); background: color-mix(in srgb, var(--yellow) 15%, var(--bg)); border: 2px solid var(--line); }
+.aw-signal .ic { color: var(--yellow); flex: none; margin-top: 2px; }
+.aw-ampel-fb { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; padding: 12px 16px; border-radius: var(--radius); border: var(--bw) solid var(--line); background: var(--amp); color: var(--amp-ink); box-shadow: 0 var(--lift) 0 var(--line); }
+.aw-ampel-fb b { font-family: var(--font-display); font-size: 1.4em; }
+.aw-kurve svg { width: 100%; height: auto; display: block; }
+.aw-kurve .b-rot { fill: color-mix(in srgb, var(--hot) 22%, transparent); }
+.aw-kurve .b-gelb { fill: color-mix(in srgb, var(--yellow) 20%, transparent); }
+.aw-kurve .b-gruen { fill: color-mix(in srgb, var(--good) 18%, transparent); }
+.aw-kurve .lbl { fill: var(--muted); font-size: 13px; font-family: var(--font-body); font-weight: 700; }
+.aw-kurve polyline { fill: none; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+.aw-kurve .vorher { stroke: var(--muted); stroke-dasharray: 6 6; stroke-width: 3; }
+.aw-kurve .nachher { stroke: var(--yellow); }
+.aw-kurve .geist { stroke: #fff; opacity: .28; stroke-width: 6; }
+.aw-kurve .dv { fill: var(--panel); stroke: var(--muted); stroke-width: 2.5; }
+.aw-kurve .dn { fill: var(--yellow); stroke: var(--line); stroke-width: 2.5; }
+.aw-leg { display: inline-flex; align-items: center; gap: 6px; font-size: .85em; color: var(--muted); }
+.aw-leg::before { content: ''; width: 22px; height: 4px; border-radius: 2px; background: var(--yellow); }
+.aw-leg.vorher::before { background: repeating-linear-gradient(90deg, var(--muted) 0 5px, transparent 5px 9px); }
+.aw-leg.geist::before { background: rgba(255,255,255,.35); height: 6px; }
+.aw-hinweis { display: flex; gap: 8px; align-items: flex-start; margin: 0; padding: 10px 14px; border-radius: var(--radius-sm); border: 2px solid var(--line); background: var(--panel); }
+.aw-hinweis .ic { color: var(--yellow); flex: none; margin-top: 2px; }
+@media (max-width: 640px) {
+  .aw-packrow { grid-template-columns: 1fr; }
+  .aw-koffer { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}

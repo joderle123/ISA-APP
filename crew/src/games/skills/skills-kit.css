@@ -1,0 +1,22 @@
+/* Bausteine „Anspannung & Skills“: Körper-Silhouette mit Zonen, Ampel-Farben, Bewegungs-Wände */
+.kk-body { width: 120px; max-width: 100%; flex: none; line-height: 0; }
+.kk-body svg { width: 100%; height: auto; display: block; overflow: visible; }
+.kk-body .kz, .kk-body .kk-hals { fill: color-mix(in srgb, var(--muted) 30%, var(--panel)); stroke: var(--line); stroke-width: 2.5; stroke-linejoin: round; transition: fill 250ms; }
+.kk-body .kk-arm { fill: none; stroke: color-mix(in srgb, var(--muted) 30%, var(--panel)); stroke-width: 11; stroke-linecap: round; }
+.kk-body .kk-herz { fill: color-mix(in srgb, var(--hot) 35%, var(--panel2)); stroke: var(--line); stroke-width: 1.5; }
+.kk-body .kz[data-on="leise"] { fill: var(--yellow); stroke-width: 3.5; }
+.kk-body .kz[data-on="laut"] { fill: var(--hot); stroke-width: 3.5; animation: kk-puls 0.9s ease-in-out infinite; }
+.kk-body .kz[data-on="ruhig"] { fill: var(--good); }
+@keyframes kk-puls { 50% { fill: color-mix(in srgb, var(--hot) 60%, #fff); } }
+@media (prefers-reduced-motion: reduce) { .kk-body .kz[data-on="laut"] { animation: none; } }
+
+/* Ampel-Farben für Pillen, Wände, Knöpfe */
+[data-ampel="gruen"] { --amp: var(--good); --amp-ink: var(--good-ink); }
+[data-ampel="gelb"] { --amp: var(--yellow); --amp-ink: var(--yellow-ink); }
+[data-ampel="rot"] { --amp: var(--hot); --amp-ink: #fff; }
+.amp-pill { display: inline-flex; align-items: center; gap: 6px; font-weight: 800; font-size: .85em; padding: 5px 12px; border-radius: 99px; border: 2px solid var(--line); background: var(--amp, var(--panel2)); color: var(--amp-ink, var(--text)); }
+.walk-p[data-pos="gelb"] { background: color-mix(in srgb, var(--yellow) 45%, var(--panel)); }
+.walk-p[data-pos="rot"] { background: color-mix(in srgb, var(--hot) 45%, var(--panel)); }
+.walk-p[data-pos="b40"] { background: color-mix(in srgb, var(--good) 35%, var(--panel)); }
+.walk-p[data-pos="b70"] { background: color-mix(in srgb, var(--yellow) 40%, var(--panel)); }
+.walk-p[data-pos="ue70"] { background: color-mix(in srgb, var(--hot) 40%, var(--panel)); }

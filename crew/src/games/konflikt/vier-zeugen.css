@@ -1,0 +1,41 @@
+/* Vier Zeugen: Szene, vier Sicht-Kacheln, Ampel-Checkliste, Auflösung, Leiter-Stufe */
+.vz-szene { display: flex; align-items: center; gap: 16px; padding: 14px 18px; border: var(--bw) solid var(--line); border-radius: var(--radius); background: var(--panel); box-shadow: 0 var(--lift) 0 var(--line); }
+.vz-szene > .ic { color: var(--yellow); flex: none; }
+.vz-tiles { display: grid; gap: 12px; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.vz-tile { display: flex; flex-direction: column; gap: 8px; padding: 12px; border: 2px solid var(--line); border-top: 8px solid var(--rc, var(--accent)); border-radius: var(--radius-sm); background: var(--panel); }
+.vz-tile .btn { width: 100%; }
+.vz-tile[data-role="A"], .vz-sicht[data-role="A"] { --rc: var(--teamB); }
+.vz-tile[data-role="B"], .vz-sicht[data-role="B"] { --rc: var(--yellow); }
+.vz-tile[data-role="C"], .vz-sicht[data-role="C"] { --rc: var(--teamA); }
+.vz-tile[data-role="D"], .vz-sicht[data-role="D"] { --rc: var(--good); }
+.vz-sicht { border-left: 10px solid var(--rc, var(--accent)); }
+.vz-detail { display: flex; flex-direction: column; gap: 4px; padding: 10px 12px; border-radius: var(--radius-sm); border: 2px dashed var(--line); background: var(--bg); }
+.vz-lk { display: grid; place-items: center; width: 56px; height: 56px; flex: none; border-radius: 50%; border: 3px solid var(--line); background: var(--panel2); color: var(--text); }
+.vz-ampel { display: flex; flex-direction: column; gap: 10px; }
+.vz-merkmal { display: grid; grid-template-columns: 1fr auto; gap: 12px; align-items: center; padding: 10px 14px; border: 2px solid var(--line); border-radius: var(--radius-sm); background: var(--panel); }
+.vz-lichter { display: flex; gap: 8px; }
+.vz-licht { appearance: none; font: inherit; font-weight: 700; color: var(--text); min-height: 48px; padding: 8px 14px; border-radius: 99px; border: var(--bw) solid var(--line); background: var(--bg); cursor: pointer; touch-action: manipulation; }
+.vz-licht[data-licht="ja"][aria-pressed="true"] { background: var(--hot); color: #fff; }
+.vz-licht[data-licht="unklar"][aria-pressed="true"] { background: var(--yellow); color: var(--yellow-ink); }
+.vz-licht[data-licht="nein"][aria-pressed="true"] { background: var(--good); color: var(--good-ink); }
+.vz-licht:focus-visible { outline: 3px solid var(--yellow); outline-offset: 2px; }
+.vz-urteil { display: flex; align-items: center; gap: 16px; padding: 16px 20px; border: var(--bw) solid var(--line); border-left: 12px solid var(--uc); border-radius: var(--radius); background: var(--panel); box-shadow: 0 var(--lift) 0 var(--line); }
+.vz-urteil .ic { color: var(--uc); flex: none; }
+.vz-urteil b.display { font-size: 2em; color: var(--uc); }
+.vz-urteil[data-urteil="mobbing"] { --uc: var(--hot); }
+.vz-urteil[data-urteil="konflikt"] { --uc: var(--yellow); }
+.vz-urteil[data-urteil="spass"] { --uc: var(--good); }
+.vz-aufl { gap: 8px; }
+.vz-aufl-z { display: flex; align-items: flex-start; gap: 10px; padding: 8px 12px; border: 2px solid var(--line); border-radius: var(--radius-sm); background: var(--panel); }
+.vz-dot { flex: none; width: 18px; height: 18px; margin-top: 3px; border-radius: 50%; border: 2px solid var(--line); background: var(--good); }
+.vz-aufl-z[data-ja="1"] .vz-dot { background: var(--hot); }
+.vz-stufe { display: flex; flex-direction: column; gap: 8px; padding: 16px 20px; border: var(--bw) solid var(--line); border-left: 12px solid var(--good); border-radius: var(--radius); background: var(--panel); }
+.vz-stufe[data-wert="mutig"] { border-left-color: var(--yellow); }
+.vz-stufe .pill { align-self: flex-start; }
+@media (max-width: 900px) { .vz-tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 640px) {
+  .vz-merkmal { grid-template-columns: 1fr; }
+  .vz-lichter { flex-wrap: wrap; }
+  .vz-licht { flex: 1; padding: 8px 10px; }
+  .vz-szene { flex-direction: column; align-items: flex-start; }
+}

@@ -1,0 +1,88 @@
+/* Trick erkannt: erfundene App-Screens als Suchbild (keine echten Logos), Treffer-Panel, Trick-Sammlung */
+.te-turn { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 8px 12px; border-radius: 99px; background: var(--panel); border: var(--bw) solid var(--line); }
+.te-turn b { font-family: var(--font-display); font-weight: 400; font-size: 1.15em; }
+.te-turn-side { padding: 6px 14px; border-radius: 99px; color: var(--muted); font-weight: 700; }
+.te-turn-side.on { background: var(--yellow); color: var(--yellow-ink); }
+.te-layout { display: grid; gap: 18px; grid-template-columns: minmax(280px, 380px) 1fr; align-items: start; }
+.te-layout > * { min-width: 0; }
+@media (max-width: 760px) { .te-layout { grid-template-columns: 1fr; } }
+.te-phone { position: relative; overflow: hidden; display: flex; flex-direction: column; gap: 10px; padding: 26px 12px 14px; border-radius: 30px; border: 6px solid #0e0a26; background: #fff; color: #15122e; box-shadow: 0 var(--lift) 0 var(--line), 0 20px 40px rgba(0,0,0,.3); font-family: system-ui, -apple-system, sans-serif; width: 100%; max-width: 380px; justify-self: center; }
+.te-notch { position: absolute; top: 6px; left: 50%; width: 90px; height: 12px; margin-left: -45px; border-radius: 99px; background: #0e0a26; }
+.te-erfunden { text-align: center; font-size: .72em; color: #8a86a8; }
+.te-hot { font: inherit; color: inherit; background: transparent; border: 2px solid transparent; border-radius: 12px; padding: 8px 10px; min-height: 44px; cursor: pointer; text-align: left; position: relative; display: inline-flex; align-items: center; gap: 6px; transition: border-color 150ms, background 150ms; }
+.te-hot:hover { border-color: #cfd3ea; }
+.te-hot.found { border-color: #ff4d3d; box-shadow: 0 0 0 3px rgba(255,77,61,.35); }
+.te-hot.found::after { content: attr(data-n); position: absolute; top: -10px; right: -8px; width: 24px; height: 24px; border-radius: 50%; background: #ff4d3d; color: #fff; font-weight: 900; font-size: .8em; display: grid; place-items: center; border: 2px solid #0e0a26; }
+.te-hot.checked { border-color: #9ad9c9; border-style: dashed; }
+.te-hot.checked::after { content: '✓'; position: absolute; top: -10px; right: -8px; width: 22px; height: 22px; border-radius: 50%; background: #2ee6c5; color: #03211c; font-weight: 900; font-size: .75em; display: grid; place-items: center; border: 2px solid #0e0a26; }
+.te-bar { display: flex; align-items: center; justify-content: space-between; gap: 8px; border-bottom: 1px solid #e6e8f2; padding-bottom: 6px; }
+.te-logo { font-weight: 900; font-size: 1.3em; letter-spacing: -.02em; color: #12a37f; }
+.te-icon { color: #4b3fb0; font-weight: 700; white-space: nowrap; }
+.te-appname { font-weight: 900; color: #15122e; }
+.te-newpill { align-self: center; background: #15122e; color: #fff; border-radius: 99px; padding: 6px 14px; font-weight: 700; font-size: .9em; }
+.te-video { position: relative; min-height: 170px; border-radius: 16px; background: linear-gradient(160deg, #2b1055, #12a37f); display: flex; flex-direction: column; justify-content: space-between; padding: 10px; color: #fff; }
+.te-video-cap { font-size: .85em; font-weight: 700; opacity: .9; }
+.te-autoplay { align-self: flex-end; background: rgba(0,0,0,.5); color: #fff; font-weight: 700; font-size: .9em; border-radius: 99px; }
+.te-actions { display: flex; align-items: center; justify-content: space-between; gap: 6px; flex-wrap: wrap; }
+.te-likes { color: #d6336c; font-weight: 800; font-size: .9em; }
+.te-handle { font-weight: 700; color: #4b3fb0; }
+.te-more { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.te-thumb { display: block; height: 70px; border-radius: 12px; background: linear-gradient(135deg, #ffd27a, #ff9ac1); }
+.te-thumb.b { background: linear-gradient(135deg, #a5d8ff, #7a3ff2); }
+.te-loading { grid-column: 1 / -1; justify-content: center; color: #8a86a8; font-weight: 700; }
+.te-phone[data-app="chat"] { background: #f4fbff; }
+.te-stories { flex-direction: column; align-items: stretch; }
+.te-story-row { display: flex; gap: 8px; }
+.te-story { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; font-style: normal; font-weight: 900; color: #15122e; background: #fff; box-shadow: 0 0 0 3px #3da5ff, 0 0 0 5px #fff, 0 0 0 7px #2ee6c5; }
+.te-story-t { font-size: .78em; color: #5b5680; font-weight: 700; }
+.te-search { background: #e9eef7; border-radius: 12px; color: #5b5680; }
+.te-chatrow { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 10px; width: 100%; background: #fff; border-color: #e6e8f2; }
+.te-chatrow.static { padding: 8px 10px; border: 2px solid #e6e8f2; border-radius: 12px; }
+.te-ava { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; font-weight: 900; color: #15122e; background: #ffc93c; }
+.te-ava.y { background: #ff9ac1; }
+.te-chat-t { display: flex; flex-direction: column; font-size: .9em; }
+.te-chat-t span { color: #5b5680; }
+.te-flame { font-weight: 900; color: #e8590c; }
+.te-time { color: #8a86a8; font-size: .8em; }
+.te-notif { background: #15122e; color: #fff; border-radius: 14px; font-weight: 700; justify-content: center; }
+.te-phone[data-app="shop"] { background: linear-gradient(180deg, #1d1145, #3b1b6b); color: #fff; }
+.te-phone[data-app="shop"] .te-erfunden { color: #c3bdf0; }
+.te-bar.shop { border-color: rgba(255,255,255,.15); }
+.te-phone[data-app="shop"] .te-icon, .te-phone[data-app="shop"] .te-appname { color: #ffd27a; }
+.te-deal { flex-direction: column; align-items: flex-start; background: linear-gradient(135deg, #ff4d3d, #ff9a3c); color: #fff; border-radius: 16px; }
+.te-deal span { font-weight: 900; font-size: 1.1em; }
+.te-shop-row { display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
+.te-gems { background: rgba(255,255,255,.12); color: #a5f3fc; font-weight: 800; border-radius: 99px; }
+.te-chest { justify-content: center; background: rgba(255,210,122,.18); color: #ffd27a; font-weight: 800; border-radius: 16px; min-height: 70px; }
+.te-chest-ic { font-size: 1.8em; }
+.te-login { flex-direction: column; align-items: stretch; background: rgba(255,255,255,.08); border-radius: 14px; font-weight: 700; font-size: .9em; }
+.te-days { display: flex; gap: 4px; }
+.te-days i { flex: 1; display: grid; place-items: center; height: 26px; border-radius: 6px; font-style: normal; background: rgba(255,255,255,.12); }
+.te-days i.on { background: #ffd27a; color: #2a1c00; }
+
+.te-panel { display: flex; flex-direction: column; gap: 10px; min-height: 200px; padding: 16px 18px; background: var(--panel); border: var(--bw) solid var(--line); border-radius: var(--radius); box-shadow: 0 var(--lift) 0 var(--line); }
+.te-panel .read-btn { align-self: flex-end; }
+.te-hit { display: flex; align-items: center; gap: 12px; }
+.te-hit-n { display: grid; place-items: center; width: 46px; height: 46px; flex: none; border-radius: 50%; background: var(--hot); color: #fff; font-family: var(--font-display); font-size: 1.4em; border: var(--bw) solid var(--line); }
+.te-hit-name { font-family: var(--font-display); font-weight: 400; font-size: clamp(1.4em, 2vw + 0.6em, 2em); line-height: 1.05; }
+.te-kopf { margin: 0; font-size: 1.15em; line-height: 1.35; font-weight: 600; }
+.te-alle { display: flex; align-items: center; gap: 6px; margin: 0; color: var(--good); font-weight: 800; }
+.te-miss { display: flex; align-items: center; gap: 8px; color: var(--good); }
+.te-raten-fb { margin: 0; font-weight: 800; color: var(--yellow); }
+.te-raten-fb.ok { color: var(--good); }
+.btn.pulse { animation: te-pulse 1.2s ease-in-out infinite; }
+@keyframes te-pulse { 50% { box-shadow: 0 var(--lift) 0 var(--line), 0 0 0 6px color-mix(in srgb, var(--yellow) 60%, transparent); } }
+.te-missed { display: flex; flex-direction: column; gap: 4px; padding: 12px 14px; border-radius: var(--radius-sm); border: 2px solid var(--line); border-left: 8px solid var(--hot); background: var(--panel); }
+.te-plan-row { display: flex; align-items: center; gap: 12px; padding: 12px 16px; border-radius: var(--radius-sm); border: 2px solid var(--line); background: var(--panel); text-align: left; max-width: 760px; }
+.te-plan-row .ic { color: var(--yellow); flex: none; }
+.te-plan-row.ok .ic { color: var(--good); }
+.te-want { border-left: 8px solid var(--hot); }
+.te-stay { border-left: 8px solid var(--good); }
+.te-sammlung { display: flex; flex-direction: column; gap: 12px; padding: 16px 18px; border-radius: var(--radius); background: #f4f6fb; color: #15122e; border: var(--bw) solid var(--line); box-shadow: 0 var(--lift) 0 var(--line); }
+.te-sammlung .eyebrow { color: #4b3fb0; }
+.te-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.te-tag { font-family: var(--font-display); font-size: 1.25em; padding: 6px 14px; border-radius: 10px; background: #fff; border: 3px solid #15122e; box-shadow: 3px 3px 0 #15122e; transform: rotate(-1.5deg); }
+.te-tag:nth-child(even) { transform: rotate(1.5deg); background: #fff4d6; }
+@media (prefers-reduced-motion: reduce) { .btn.pulse { animation: none; } }
+/* Handy: Erklärung bleibt unten im Blick, während man im App-Bild tippt */
+@media (max-width: 760px) { .te-layout > .stack { position: sticky; bottom: 6px; z-index: 2; } .te-panel { min-height: 0; max-height: 38dvh; overflow-y: auto; box-shadow: 0 -6px 24px rgba(0,0,0,.45); } }

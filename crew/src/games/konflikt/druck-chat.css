@@ -1,0 +1,23 @@
+/* Druck-Chat: Gruppenchat im Handy-Look (hell, eigenständig), Druck-Meter im Fuß */
+.dc-phone { background: #fff; color: #111; border: var(--bw) solid var(--line); border-radius: 22px; box-shadow: 0 var(--lift) 0 var(--line); display: flex; flex-direction: column; overflow: hidden; font-family: system-ui, -apple-system, sans-serif; }
+.dc-phone .muted { color: #666; }
+.dc-head { display: flex; align-items: center; gap: 10px; padding: 10px 14px; border-bottom: 1px solid #e5e5e5; background: #f7f7f9; }
+.dc-head > .stack { flex: 1; min-width: 0; }
+.dc-head b { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.dc-ava { width: 40px; height: 40px; border-radius: 50%; background: conic-gradient(from 90deg, #f09433, #dc2743, #bc1888, #f09433); border: 3px solid #fff; box-shadow: 0 0 0 2px #dc2743; flex: none; }
+.dc-msgs { display: flex; flex-direction: column; gap: 8px; padding: 12px 14px; max-height: 34dvh; overflow-y: auto; background: #f0f2f5; scroll-behavior: auto; }
+.dc-msg { display: flex; align-items: flex-end; gap: 8px; max-width: 85%; }
+.dc-msg.me { align-self: flex-end; }
+.dc-msg .fig-avatar svg { display: block; }
+.dc-msg .bubble { background: #fff; border-color: #dcdfe4; color: #111; max-width: 100%; }
+.dc-msg.me .bubble { background: #dcf8c6; color: #111; border-color: #b6e3a3; }
+.dc-msg .bubble-who { color: #7a3ff2; }
+.dc-msg.me .bubble-who { color: #2b7a0b; }
+.dc-foot { padding: 10px 14px; border-top: 1px solid #e5e5e5; background: #fff; }
+.dc-foot .meter-label { color: #111; }
+.dc-foot .meter-bar { background: #eee; }
+.dc-preis { border-left: 6px solid var(--yellow); }
+.dc-preis p { margin: 0; }
+.dc-ende { display: flex; align-items: center; gap: 14px; padding: 14px 18px; border: var(--bw) solid var(--line); border-radius: var(--radius); background: var(--panel); box-shadow: 0 var(--lift) 0 var(--line); }
+.dc-ende .ic { color: var(--good); flex: none; }
+.dc-ende h2 { margin: 0; }

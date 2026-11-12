@@ -1,0 +1,11 @@
+/* Hitze-Ecken: Satz-Karte am Beamer, Ecken-Farben, Pill der Auflösung */
+.he-satz { display: grid; grid-template-columns: auto 1fr; gap: 16px; align-items: center; padding: 16px 18px; border: var(--bw) solid var(--line); border-radius: var(--radius); background: var(--panel); box-shadow: 0 var(--lift) 0 var(--line); }
+.he-satz-side { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.he-text { font-family: var(--font-display); font-size: clamp(1.3em, 2.6vw, 2em); line-height: 1.2; text-wrap: balance; }
+.he-text.soft { padding: 12px 18px; border: 2px dashed var(--line); border-radius: var(--radius-sm); background: var(--panel); text-align: center; }
+.walk-p[data-pos="klartext"], .he-ecke[data-pos="klartext"], .he-pill[data-pos="klartext"] { background: color-mix(in srgb, var(--good) 40%, var(--panel)); }
+.walk-p[data-pos="angriff"], .he-ecke[data-pos="angriff"], .he-pill[data-pos="angriff"] { background: color-mix(in srgb, var(--hot) 40%, var(--panel)); }
+.walk-p[data-pos="abgetaucht"], .he-ecke[data-pos="abgetaucht"], .he-pill[data-pos="abgetaucht"] { background: color-mix(in srgb, var(--muted) 30%, var(--panel)); }
+.walk-p[data-pos="getarnt"], .he-ecke[data-pos="getarnt"], .he-pill[data-pos="getarnt"] { background: color-mix(in srgb, var(--yellow) 45%, var(--panel)); }
+.he-ecke { text-align: center; }
+@media (max-width: 640px) { .he-satz { grid-template-columns: 1fr; } }

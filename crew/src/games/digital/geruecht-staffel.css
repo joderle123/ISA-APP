@@ -1,0 +1,35 @@
+/* Gerücht-Staffel: Nachricht, Punktwolke (Reichweite), Station, Verlockung, Reihe */
+.gs-msg { display: flex; flex-direction: column; gap: 8px; padding: 14px 16px; border-radius: 18px 18px 18px 6px; background: #fff; color: #15122e; border: var(--bw) solid var(--line); box-shadow: 0 var(--lift) 0 var(--line); font-family: system-ui, -apple-system, sans-serif; }
+.gs-msg p { margin: 0; font-size: 1.15em; font-weight: 600; line-height: 1.35; }
+.gs-msg .muted { color: #5b5680; }
+.gs-msg-head { display: inline-flex; align-items: center; gap: 6px; font-size: .78em; font-weight: 800; text-transform: uppercase; letter-spacing: .06em; color: #8a86a8; }
+.gs-bild { display: flex; align-items: center; gap: 10px; min-height: 70px; padding: 10px 14px; border-radius: 12px; background: repeating-linear-gradient(135deg, #d9dcef 0 10px, #eceef8 10px 20px); color: #4b3fb0; font-weight: 700; font-style: italic; }
+.gs-wolke { display: grid; grid-template-columns: 1fr auto; gap: 14px; align-items: center; padding: 12px 16px; border-radius: var(--radius); background: #120d33; border: var(--bw) solid var(--line); box-shadow: 0 var(--lift) 0 var(--line); width: 100%; }
+.gs-dots { display: flex; flex-wrap: wrap; gap: 4px; align-content: flex-start; min-height: 40px; max-height: 170px; overflow: hidden; }
+.gs-dots i { width: 10px; height: 10px; border-radius: 50%; background: var(--teamB); box-shadow: 0 0 8px color-mix(in srgb, var(--teamB) 70%, transparent); }
+.gs-dots i.neu { animation: gs-pop 380ms cubic-bezier(.2,1.6,.4,1) both; }
+@keyframes gs-pop { from { transform: scale(0); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+.gs-reach { display: flex; flex-direction: column; align-items: flex-end; text-align: right; }
+.gs-reach b.display { font-size: clamp(2.2em, 5vw, 3.4em); line-height: 1; color: var(--teamB); }
+.gs-reach span { font-size: .85em; color: var(--muted); font-weight: 700; }
+.gs-station { display: flex; align-items: center; gap: 16px; padding: 12px 18px; border-radius: var(--radius); background: var(--panel); border: var(--bw) solid var(--line); box-shadow: 0 var(--lift) 0 var(--line); }
+.gs-station-n { display: grid; place-items: center; width: 64px; height: 64px; flex: none; border-radius: 50%; background: var(--yellow); color: var(--yellow-ink); border: var(--bw) solid var(--line); font-size: 2em; }
+.gs-station b { font-size: 1.2em; }
+.gs-grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); align-items: start; }
+.gs-lock { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; padding: 12px 16px; border-radius: var(--radius); background: color-mix(in srgb, var(--hot) 25%, var(--panel)); border: var(--bw) solid var(--line); animation: gs-glow 1.6s ease-in-out infinite; }
+.gs-lock .ic { color: var(--yellow); }
+.gs-lock b { font-size: 1.15em; }
+.gs-lock span { flex-basis: 100%; color: var(--muted); }
+@keyframes gs-glow { 50% { box-shadow: 0 0 22px color-mix(in srgb, var(--hot) 55%, transparent); } }
+.gs-start { display: grid; grid-template-columns: 1fr minmax(220px, 320px); gap: 16px; align-items: center; }
+.gs-reihe { display: flex; justify-content: center; gap: clamp(10px, 3vw, 28px); flex-wrap: wrap; padding: 16px; }
+.gs-reihe-p { display: grid; place-items: center; width: 54px; height: 54px; border-radius: 50%; background: var(--panel2); border: var(--bw) solid var(--line); font-family: var(--font-display); font-size: 1.4em; box-shadow: 0 4px 0 var(--line); }
+.gs-reihe-p:first-child { background: var(--yellow); color: var(--yellow-ink); }
+.gs-result { display: grid; grid-template-columns: minmax(220px, 340px) 1fr; gap: 18px; align-items: center; padding: 14px 18px; border-radius: var(--radius); background: var(--panel); border: var(--bw) solid var(--line); border-left: 10px solid var(--hot); box-shadow: 0 var(--lift) 0 var(--line); }
+.gs-result.ok { border-left-color: var(--good); }
+.gs-result-t { font-size: clamp(1.5em, 2.6vw, 2.2em); }
+.gs-result.ok .gs-result-t { color: var(--good); }
+.gs-satz { font-family: var(--font-display); font-size: 1.15em; color: var(--yellow); }
+.gs-wahr .gs-msg { box-shadow: none; }
+@media (max-width: 640px) { .gs-start, .gs-result { grid-template-columns: 1fr; } }
+@media (prefers-reduced-motion: reduce) { .gs-lock, .gs-dots i.neu { animation: none; } }

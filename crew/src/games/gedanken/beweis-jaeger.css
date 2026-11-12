@@ -1,0 +1,48 @@
+/* Beweis-Jäger: Satz-Kopf mit Lupe, Wisch-Karten, Bilanz, Haltungs-Scans, Challenge */
+.bj-head > .stack { flex: 1 1 220px !important; }
+.bj-head { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; padding: 14px 18px; background: var(--panel); border: var(--bw) solid var(--line); border-left: 10px solid var(--good); border-radius: var(--radius); box-shadow: 0 var(--lift) 0 var(--line); }
+.bj-neu { font-family: var(--font-display); font-weight: 400; font-size: clamp(1.25em, 1.4vw + 0.7em, 1.8em); line-height: 1.15; text-wrap: balance; }
+.bj-lupe { display: grid; grid-template-columns: auto auto; grid-template-rows: auto auto; align-items: center; column-gap: 6px; padding: 8px 14px; border-radius: 99px; background: var(--yellow); color: var(--yellow-ink); border: var(--bw) solid var(--line); box-shadow: 0 3px 0 var(--line); }
+.bj-lupe .ic { grid-row: 1 / span 2; }
+.bj-lupe b.display { font-size: 1.6em; line-height: 1; }
+.bj-lupe span { font-size: .72em; font-weight: 800; text-transform: uppercase; letter-spacing: .06em; }
+.bj-deck { position: relative; display: grid; place-items: center; min-height: 230px; padding: 8px 0; }
+.bj-deck-shadow { grid-area: 1 / 1; width: min(520px, 92%); height: 190px; border-radius: 22px; background: var(--panel2); border: var(--bw) solid var(--line); transform: rotate(-3deg) translateY(10px); opacity: .55; }
+.bj-card { --yes: 0; --no: 0; grid-area: 1 / 1; z-index: 1; position: relative; width: min(520px, 100%); min-height: 190px; display: flex; flex-direction: column; gap: 12px; padding: 16px 20px; border-radius: 22px; background: #fff; color: #15122e; border: var(--bw) solid var(--line); box-shadow: 0 var(--lift) 0 var(--line), 0 18px 40px rgba(0,0,0,.25); touch-action: pan-y; user-select: none; cursor: grab; transition: transform 220ms cubic-bezier(.2,.8,.2,1), opacity 220ms; }
+.bj-card.drag { transition: none; cursor: grabbing; }
+.bj-card.static { cursor: default; width: 100%; max-width: 620px; align-self: center; }
+.bj-card .muted { color: #5b5680; }
+.bj-card-body { display: flex; align-items: center; gap: 14px; }
+.bj-card-body p { margin: 0; font-size: clamp(1.15em, 1vw + 0.8em, 1.45em); font-weight: 700; line-height: 1.3; }
+.bj-card-ic { display: grid; place-items: center; width: 62px; height: 62px; flex: none; border-radius: 50%; background: #eef0fb; color: #4b3fb0; border: 2px solid #15122e; }
+.bj-tag { display: inline-grid; place-items: center; min-width: 44px; padding: 4px 10px; border-radius: 10px; background: #15122e; color: #fff; }
+.bj-tag.small { font-size: .9em; min-width: 38px; }
+.bj-stamp { position: absolute; top: 16px; font-family: var(--font-display); font-size: 1.3em; text-transform: uppercase; letter-spacing: .08em; padding: 4px 12px; border: 4px solid currentColor; border-radius: 10px; pointer-events: none; }
+.bj-stamp.yes { left: 18px; color: #12a37f; transform: rotate(-12deg); opacity: var(--yes); }
+.bj-stamp.no { right: 18px; color: #8a86a8; transform: rotate(12deg); opacity: var(--no); }
+.bj-card.fly-yes { transform: translateX(140%) rotate(22deg) !important; opacity: 0; }
+.bj-card.fly-no { transform: translateX(-140%) rotate(-22deg) !important; opacity: 0; }
+.bj-card.fly-yes .bj-stamp.yes, .bj-card.fly-no .bj-stamp.no { opacity: 1; }
+.bj-bilanz { display: flex; flex-direction: column; gap: 6px; }
+.bj-row { display: grid; grid-template-columns: auto 1fr auto 30px; gap: 10px; align-items: center; padding: 8px 12px; border-radius: var(--radius-sm); border: 2px solid var(--line); background: var(--panel); }
+.bj-row[data-wahl="beweis"] { background: color-mix(in srgb, var(--good) 18%, var(--panel)); }
+.bj-row-t { min-width: 0; }
+.bj-lupe-mark { display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: var(--yellow); color: var(--yellow-ink); border: 2px solid var(--line); font-weight: 900; }
+.bj-lupe-mark.trick { background: var(--teamB); color: var(--teamB-ink); }
+.bj-lupe-mark.leer { background: transparent; border-color: transparent; }
+.bj-plus { display: inline-flex; align-items: center; gap: 10px; align-self: flex-start; padding: 8px 16px; border-radius: 99px; background: var(--yellow); color: var(--yellow-ink); border: var(--bw) solid var(--line); box-shadow: 0 3px 0 var(--line); animation: pop-in 300ms cubic-bezier(.2,1.5,.4,1) both; }
+.bj-scan { display: grid; grid-template-columns: auto 1fr; gap: 18px; align-items: center; padding: 16px 20px; background: var(--panel); border: var(--bw) solid var(--line); border-radius: var(--radius); box-shadow: 0 var(--lift) 0 var(--line); }
+.bj-scan.done[data-art="neu"] { border-left: 10px solid var(--good); }
+.bj-scan.done[data-art="alt"] { border-left: 10px solid var(--hot); }
+.bj-scan-fig { position: relative; display: grid; place-items: center; padding: 8px 14px; border-radius: var(--radius-sm); background: radial-gradient(circle at 50% 40%, color-mix(in srgb, var(--good) 22%, transparent), transparent 70%), var(--bg); border: 2px solid var(--line); overflow: hidden; }
+.bj-scanline { position: absolute; left: 0; right: 0; height: 4px; top: 0; background: var(--good); box-shadow: 0 0 14px var(--good); animation: bj-scan 1.8s ease-in-out infinite alternate; }
+@keyframes bj-scan { from { top: 4%; } to { top: 94%; } }
+.bj-haltung { display: block; line-height: 0; }
+.bj-cue { display: flex; align-items: center; gap: 10px; padding: 8px 12px; border-radius: var(--radius-sm); background: var(--bg); border: 2px solid var(--line); font-weight: 600; }
+.bj-cue .ic { color: var(--yellow); flex: none; }
+.bj-scan-satz { font-family: var(--font-display); font-weight: 400; font-size: 1.3em; }
+.bj-challenge { display: grid; grid-template-columns: auto 1fr auto; gap: 16px; align-items: center; text-align: left; max-width: 760px; padding: 18px 22px; border-radius: var(--radius); background: color-mix(in srgb, var(--yellow) 16%, var(--panel)); border: var(--bw) solid var(--line); box-shadow: 0 var(--lift) 0 var(--line); }
+.bj-challenge > .ic { color: var(--yellow); }
+.bj-challenge b { font-size: 1.15em; }
+@media (max-width: 560px) { .bj-scan { grid-template-columns: 1fr; justify-items: center; } .bj-row { grid-template-columns: auto 1fr 30px; } .bj-row .pill { display: none; } .bj-challenge { grid-template-columns: 1fr; } }
+@media (prefers-reduced-motion: reduce) { .bj-scanline { animation: none; } .bj-card { transition: none; } }

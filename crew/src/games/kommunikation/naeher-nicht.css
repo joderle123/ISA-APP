@@ -1,0 +1,39 @@
+/* Näher nicht: Gang am Beamer (Figur wächst beim Näherkommen), Bodenmarken, Figuren-Skala, Stopp-Hilfe */
+.nn-person { display: grid; grid-template-columns: auto 1fr; gap: 14px; align-items: center; padding: 12px 18px; border: var(--bw) solid var(--line); border-radius: var(--radius); background: var(--panel); box-shadow: 0 var(--lift) 0 var(--line); }
+.nn-rolle { font-family: var(--font-display); font-weight: 400; font-size: clamp(1.2em, 1.4vw + 0.7em, 1.8em); line-height: 1.15; }
+.nn-gang { display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 14px; border: var(--bw) solid var(--line); border-radius: calc(var(--radius) + 6px); background: linear-gradient(180deg, color-mix(in srgb, var(--panel2) 70%, var(--bg)) 0 62%, color-mix(in srgb, var(--panel) 60%, var(--bg)) 62%); overflow: hidden; }
+.nn-buehne { position: relative; height: clamp(170px, 28vh, 260px); width: 100%; display: flex; align-items: flex-end; justify-content: center; }
+.nn-fig { transform-origin: 50% 100%; transition: transform 900ms cubic-bezier(.3, .8, .3, 1); line-height: 0; }
+.nn-gang[data-mark="5"] .nn-fig { transform: translateY(-18%) scale(.42); }
+.nn-gang[data-mark="4"] .nn-fig { transform: translateY(-12%) scale(.6); }
+.nn-gang[data-mark="3"] .nn-fig { transform: translateY(-6%) scale(.82); }
+.nn-gang[data-mark="2"] .nn-fig { transform: scale(1.08); }
+.nn-gang[data-mark="1"] .nn-fig { transform: scale(1.45); }
+.nn-bubble { position: absolute; top: 6px; left: 50%; transform: translateX(-50%); background: var(--good); color: var(--good-ink); border: 2px solid var(--line); border-radius: 14px; padding: 6px 14px; font-weight: 800; opacity: 0; transition: opacity 200ms; white-space: nowrap; }
+.nn-bubble.on { opacity: 1; }
+.nn-floor { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; width: 100%; max-width: 560px; }
+.nn-mark { display: grid; place-items: center; min-height: 44px; border: 2px solid var(--line); border-radius: 10px; background: var(--bg); font-family: var(--font-display); font-size: 1.3em; color: var(--muted); }
+.nn-mark.now { background: var(--yellow); color: var(--yellow-ink); transform: scale(1.06); }
+.walk-p[data-pos="m1"] { background: color-mix(in srgb, var(--hot) 30%, var(--panel)); }
+.walk-p[data-pos="m2"] { background: color-mix(in srgb, var(--yellow) 30%, var(--panel)); }
+.walk-p[data-pos="m3"] { background: color-mix(in srgb, var(--good) 22%, var(--panel)); }
+.walk-p[data-pos="m4"] { background: color-mix(in srgb, var(--teamA) 28%, var(--panel)); }
+.walk-p[data-pos="m5"] { background: color-mix(in srgb, var(--teamA) 45%, var(--panel)); }
+.game-screen[data-game="naeher-nicht"] .walk-pos { grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); }
+.game-screen[data-game="naeher-nicht"] .walk-p { min-height: 90px; }
+.nn-skala { display: flex; flex-direction: column; gap: 8px; padding: 14px; border: var(--bw) solid var(--line); border-radius: var(--radius); background: var(--panel); }
+.nn-skala-bar { display: grid; grid-template-columns: repeat(5, 1fr); gap: 4px; }
+.nn-skala-m { display: grid; place-items: center; min-height: 36px; border-radius: 8px; background: var(--bg); border: 2px solid var(--line); font-family: var(--font-display); }
+.nn-skala-figs { position: relative; display: grid; grid-template-columns: repeat(5, 1fr); gap: 4px; min-height: 90px; }
+.nn-skala-fig { grid-column: var(--pos); display: flex; flex-direction: column; align-items: center; gap: 2px; text-align: center; font-size: .9em; }
+.nn-skala-figs { grid-auto-flow: dense; }
+.nn-stopp-hilfe { display: grid; grid-template-columns: auto 1fr; gap: 14px; align-items: center; padding: 12px 16px; border: var(--bw) solid var(--line); border-radius: var(--radius); background: color-mix(in srgb, var(--teamB) 16%, var(--panel)); }
+.nn-stopp-ic { display: grid; place-items: center; width: 60px; height: 60px; border-radius: 50%; background: var(--teamB); color: var(--teamB-ink); border: 2px solid var(--line); }
+@media (max-width: 640px) {
+  .nn-buehne { height: 170px; }
+  .nn-skala-fig b { font-size: .8em; }
+  .nn-person { grid-template-columns: 1fr; justify-items: center; text-align: center; }
+}
+@media (prefers-reduced-motion: reduce) { .nn-fig { transition: none; } }
+.nn-pair .nn-buehne { height: clamp(170px, 26vh, 240px); }
+.nn-pair > .stack { align-self: center; }

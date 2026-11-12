@@ -1,0 +1,53 @@
+/* Wer fehlt?: Bild mit antippbaren Stellen (Mensa, Flur), Chat im Handy-Look, Auflösung, großer Pass bei der Bonusfrage */
+.wf-bild { position: relative; width: 100%; aspect-ratio: 16 / 7; min-height: 330px; border: var(--bw) solid var(--line); border-radius: var(--radius); overflow: hidden; background: linear-gradient(180deg, color-mix(in srgb, var(--panel2) 80%, var(--bg)) 0%, var(--panel) 100%); box-shadow: 0 var(--lift) 0 var(--line); }
+.wf-tisch { position: absolute; left: 24%; top: 34%; width: 44%; height: 28%; border-radius: 18px; border: 3px solid var(--line); background: repeating-linear-gradient(90deg, #a8743f 0 22px, #b98149 22px 44px); box-shadow: 0 6px 0 var(--line); }
+.wf-flur { position: absolute; left: 0; right: 0; bottom: 0; height: 30%; background: repeating-linear-gradient(90deg, color-mix(in srgb, var(--text) 8%, transparent) 0 40px, transparent 40px 80px); border-top: 3px solid color-mix(in srgb, var(--text) 18%, transparent); }
+.wf-spot { position: absolute; width: 20%; min-width: 120px; max-width: 200px; display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 6px 8px 8px; border: 2px dashed color-mix(in srgb, var(--text) 35%, transparent); border-radius: var(--radius-sm); background: color-mix(in srgb, var(--bg) 70%, transparent); color: var(--text); font: inherit; text-align: center; cursor: pointer; touch-action: manipulation; }
+.wf-spot:hover { border-color: var(--yellow); }
+.wf-spot:focus-visible { outline: 3px solid var(--yellow); outline-offset: 2px; }
+.wf-cap { font-size: .86em; line-height: 1.2; font-weight: 600; }
+.wf-emo { font-size: 2.2em; line-height: 1; }
+.wf-mark { position: absolute; top: -10px; right: -10px; width: 28px; height: 28px; border-radius: 50%; display: none; place-items: center; font-weight: 900; border: 2px solid var(--line); }
+.wf-spot[data-done="zeichen"] { border: 3px solid var(--good); background: color-mix(in srgb, var(--good) 22%, var(--bg)); }
+.wf-spot[data-done="zeichen"] .wf-mark { display: grid; background: var(--good); color: var(--good-ink); }
+.wf-spot[data-done="zeichen"] .wf-mark::after { content: "✓"; }
+.wf-spot[data-done="nein"] { opacity: .6; border-style: solid; animation: shake 380ms ease both; }
+.wf-spot[data-done="nein"] .wf-mark { display: grid; background: var(--panel2); color: var(--text); }
+.wf-spot[data-done="nein"] .wf-mark::after { content: "–"; }
+.wf-info { display: flex; align-items: center; gap: 10px; min-height: 48px; padding: 8px 12px; border-radius: var(--radius-sm); border: 2px solid var(--line); background: var(--panel); }
+.wf-info-tag { display: inline-flex; align-items: center; gap: 4px; flex: none; font-weight: 800; padding: 3px 10px; border-radius: 99px; background: var(--panel2); }
+.wf-info-tag.ja { background: var(--good); color: var(--good-ink); }
+.wf-zaehler.good { background: var(--good); color: var(--good-ink); }
+/* Chat */
+.wf-chat { display: grid; gap: 14px; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); align-items: start; }
+.wf-phone { background: #fff; color: #111; border: var(--bw) solid var(--line); border-radius: 22px; overflow: hidden; box-shadow: 0 var(--lift) 0 var(--line); font-family: system-ui, -apple-system, sans-serif; }
+.wf-msgs { display: flex; flex-direction: column; gap: 8px; padding: 12px; background: #eef1f5; }
+.wf-chat .wf-spot { position: relative; width: auto; max-width: none; min-width: 0; color: #111; }
+.wf-chat .wf-spot.kopf { width: 100%; flex-direction: row; justify-content: flex-start; border: none; border-bottom: 1px solid #e5e5e5; border-radius: 0; background: #f7f7f9; padding: 12px 14px; }
+.wf-chat .wf-spot.kopf .wf-cap { font-size: 1em; font-weight: 800; text-align: left; }
+.wf-chat .wf-spot.msg { align-self: flex-start; align-items: flex-start; text-align: left; background: #fff; border: 2px solid #dcdfe4; border-radius: 16px 16px 16px 4px; padding: 8px 12px; max-width: 85%; }
+.wf-chat .wf-spot.msg .bubble-who { color: #7a3ff2; font-size: .78em; font-weight: 800; }
+.wf-chat .wf-spot.extra { background: #fff; border: 2px dashed #b9b9c9; padding: 12px; align-items: flex-start; text-align: left; }
+.wf-chat .wf-spot[data-done="zeichen"] { border: 3px solid #12a58a; background: #d8fbf2; }
+.wf-chat .wf-spot[data-done="nein"] { opacity: .55; }
+/* Auflösung, Zug */
+.wf-aufl { gap: 8px; }
+.wf-z { display: flex; align-items: flex-start; gap: 8px; padding: 6px 10px; border-radius: var(--radius-sm); background: var(--bg); border: 2px dashed var(--line); }
+.wf-z.ja { border-style: solid; border-color: var(--good); }
+.wf-z.ja .ic { color: var(--good); }
+.wf-zugtag { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; padding: 12px 16px; border: var(--bw) solid var(--line); border-left-width: 10px; border-radius: var(--radius-sm); background: var(--panel); }
+.wf-zugtag[data-k="mini"] { border-left-color: var(--good); }
+.wf-zugtag[data-k="gross"] { border-left-color: var(--yellow); }
+.wf-zugtag[data-k="nichts"], .wf-zugtag[data-k="hart"] { border-left-color: var(--hot); }
+.wf-bonus #wf-bonus-pass { font-size: 1.8em; min-height: 96px; min-width: min(320px, 100%); }
+@media (max-width: 760px) {
+  .wf-chat { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .wf-bild { aspect-ratio: auto; min-height: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 12px; }
+  .wf-bild .wf-spot { position: relative; left: auto !important; top: auto !important; width: auto; min-width: 0; max-width: none; }
+  .wf-tisch, .wf-flur { display: none; }
+}
+.wf-kopf { display: flex; align-items: center; gap: 12px; padding: 10px 14px; border: 2px solid var(--line); border-radius: var(--radius-sm); background: var(--panel); }
+.game-screen[data-game="wer-fehlt"] .wf-kopf + .row.end { margin-top: -8px; margin-bottom: -8px; }
+@media (min-width: 641px) { .wf-bild { aspect-ratio: 16 / 6.4; min-height: 300px; } }

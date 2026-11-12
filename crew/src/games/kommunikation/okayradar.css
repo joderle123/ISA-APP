@@ -1,0 +1,33 @@
+/* Okay-Radar: Szenen-Karte mit Bild, Radar-Halbkreis mit Nadel, Figuren-Radar, Signale */
+.okr-szene { display: grid; grid-template-columns: auto 1fr; gap: 16px; align-items: center; padding: clamp(14px, 2vw, 24px); border: var(--bw) solid var(--line); border-radius: calc(var(--radius) + 6px); background: var(--panel); box-shadow: 0 var(--lift) 0 var(--line); }
+.okr-bild { display: grid; place-items: center; width: clamp(70px, 9vw, 104px); aspect-ratio: 1; border-radius: 50%; background: var(--bg); border: var(--bw) solid var(--line); font-size: clamp(2.2em, 4vw, 3.4em); line-height: 1; font-family: system-ui, "Apple Color Emoji", "Segoe UI Emoji", sans-serif; }
+.okr-text { margin: 0; font-family: var(--font-display); font-size: clamp(1.3em, 1.8vw + 0.7em, 2.1em); line-height: 1.15; text-wrap: balance; }
+.okr-frage { display: grid; grid-template-columns: minmax(180px, 280px) 1fr; gap: 16px; align-items: center; }
+.okr-dial { display: flex; flex-direction: column; align-items: center; gap: 4px; width: 100%; max-width: 280px; margin: 0 auto; }
+.okr-dial svg { width: 100%; height: auto; display: block; overflow: visible; }
+.okr-arc { fill: none; stroke-width: 26; stroke: var(--line); }
+.okr-arc.ok { stroke: var(--good); }
+.okr-arc.kommt { stroke: var(--yellow); }
+.okr-arc.nein { stroke: var(--hot); }
+.okr-dial[data-sel=""] .okr-arc { opacity: .55; }
+.okr-dial[data-sel="ok"] .okr-arc:not(.ok), .okr-dial[data-sel="kommt"] .okr-arc:not(.kommt), .okr-dial[data-sel="nein"] .okr-arc:not(.nein) { opacity: .3; }
+.okr-needle { transform-origin: 100px 100px; transition: transform 700ms cubic-bezier(.3, 1.6, .5, 1); }
+.okr-needle line { stroke: var(--text); stroke-width: 7; stroke-linecap: round; }
+.okr-needle circle { fill: var(--text); stroke: var(--line); stroke-width: 3; }
+.okr-dial[data-sel=""] .okr-needle { opacity: .35; }
+.okr-dial-labels { display: grid; grid-template-columns: 1fr 1fr 1fr; width: 100%; text-align: center; font-size: .78em; font-weight: 700; color: var(--muted); gap: 4px; }
+.okr-dial.mini { width: 64px; max-width: 64px; margin: 0; flex: none; }
+.okr-mein { display: grid; grid-template-columns: minmax(150px, 220px) 1fr; gap: 16px; align-items: center; padding: 12px 16px; border: var(--bw) solid var(--line); border-radius: var(--radius); background: var(--panel); }
+.okr-mein-t { font-family: var(--font-display); font-size: clamp(1.3em, 1.4vw + 0.7em, 1.8em); }
+.okr-figs { display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+.okr-fig { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border: 2px solid var(--line); border-radius: var(--radius-sm); background: var(--bg); border-left-width: 10px; }
+.okr-fig[data-sel="ok"] { border-left-color: var(--good); }
+.okr-fig[data-sel="kommt"] { border-left-color: var(--yellow); }
+.okr-fig[data-sel="nein"] { border-left-color: var(--hot); }
+.okr-signale { display: flex; flex-direction: column; gap: 8px; padding: 12px 16px; border: 2px dashed var(--line); border-radius: var(--radius); background: var(--panel); }
+.okr-signal { text-transform: none; letter-spacing: 0; font-size: .9em; }
+@media (max-width: 640px) {
+  .okr-frage, .okr-mein { grid-template-columns: 1fr; }
+  .okr-szene { grid-template-columns: 1fr; justify-items: center; text-align: center; }
+  .okr-szene .row.between { justify-content: center; gap: 8px; }
+}

@@ -1,0 +1,33 @@
+/* Später-Monster: Monster (wächst/schrumpft), Flüstern, Zeitbalken gefühlt/echt, Vergleich zweier Abende */
+.sm-szene { display: grid; grid-template-columns: 1fr minmax(170px, 300px); gap: 18px; align-items: center; }
+@media (max-width: 640px) { .sm-szene { grid-template-columns: 1fr; justify-items: center; } .sm-szene > .stack, .sm-szene > .bigcard, .sm-szene > .fig-card { width: 100%; } }
+.sm-monster { display: grid; place-items: center; min-height: 190px; }
+.sm-monster svg { width: calc(200px * var(--s, 1)); max-width: 100%; height: auto; transition: width 600ms cubic-bezier(.2,1.4,.4,1); filter: drop-shadow(0 8px 0 rgba(0,0,0,.25)); animation: sm-wobble 2.4s ease-in-out infinite; }
+.sm-monster.klein svg { width: 90px; animation: none; }
+@keyframes sm-wobble { 50% { transform: rotate(-3deg) translateY(-4px); } }
+.sm-whisper { position: relative; display: flex; flex-direction: column; gap: 6px; padding: 14px 64px 14px 18px; border-radius: 20px 20px 4px 20px; background: #2a1650; border: var(--bw) solid var(--line); box-shadow: 0 var(--lift) 0 var(--line), 0 0 30px rgba(155,108,255,.35); }
+.sm-whisper .eyebrow { color: #c9a7ff; }
+.sm-whisper b { font-family: var(--font-display); font-weight: 400; font-size: clamp(1.3em, 1.6vw + 0.7em, 1.9em); line-height: 1.15; font-style: italic; }
+.sm-whisper .read-btn { position: absolute; top: 10px; right: 10px; }
+.sm-whisper.laugh { background: #3d1a1a; box-shadow: 0 var(--lift) 0 var(--line), 0 0 30px rgba(255,77,61,.35); }
+.sm-zeit { display: flex; flex-direction: column; gap: 8px; padding: 12px 16px; border-radius: var(--radius); background: var(--panel); border: var(--bw) solid var(--line); }
+.sm-uhr { font-size: 2em; color: var(--yellow); line-height: 1; }
+.sm-bar { display: grid; grid-template-columns: 96px 1fr 70px; gap: 10px; align-items: center; }
+.sm-bar-l { font-weight: 800; font-size: .9em; }
+.sm-bar b { text-align: right; font-variant-numeric: tabular-nums; }
+.sm-track { height: 16px; border-radius: 99px; background: var(--bg); border: 2px solid var(--line); overflow: hidden; }
+.sm-track i { display: block; height: 100%; transition: width 600ms cubic-bezier(.2,.8,.2,1); }
+.sm-track i.gef { background: var(--good); }
+.sm-track i.echt { background: linear-gradient(90deg, var(--yellow), var(--hot)); }
+.sm-loop, .sm-raus, .sm-plan { display: flex; align-items: center; gap: 12px; padding: 12px 16px; border-radius: var(--radius); border: var(--bw) solid var(--line); background: var(--panel); }
+.sm-loop .ic { color: var(--hot); flex: none; }
+.sm-raus { border-left: 10px solid var(--good); }
+.sm-raus .ic { color: var(--good); flex: none; }
+.sm-plan { background: var(--yellow); color: var(--yellow-ink); }
+.sm-plan .ic { flex: none; }
+.sm-vergleich { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+.sm-abend { display: flex; flex-direction: column; gap: 6px; padding: 16px 18px; border-radius: var(--radius); background: var(--panel); border: var(--bw) solid var(--line); border-top: 10px solid var(--hot); box-shadow: 0 var(--lift) 0 var(--line); }
+.sm-abend.gut { border-top-color: var(--good); }
+.sm-abend b.display { font-size: clamp(1.6em, 3vw, 2.4em); }
+.sm-abend.gut b.display { color: var(--good); }
+@media (prefers-reduced-motion: reduce) { .sm-monster svg { animation: none; transition: none; } }

@@ -1,0 +1,22 @@
+/* Blackout: Testblatt, das mit dem Pegel verschwimmt, Sams Gedanke, Abgabe */
+.bo-buehne { display: grid; grid-template-columns: minmax(240px, 0.9fr) 1.1fr; gap: 14px; align-items: start; }
+.bo-blatt { --blur: 0px; --weg: 0; position: relative; display: flex; flex-direction: column; gap: 6px; padding: 16px 18px 12px; border-radius: 6px; background: #fdfbf3; color: #1e1e28; border: 3px solid #0e0a26; box-shadow: 6px 6px 0 #0e0a26; transform: rotate(-1deg); background-image: repeating-linear-gradient(180deg, transparent 0 27px, #dfe7f5 27px 28px); }
+.bo-kopf { display: flex; justify-content: space-between; font-size: .9em; border-bottom: 2px solid #c0392b; padding-bottom: 4px; }
+.bo-inhalt { filter: blur(var(--blur)); transition: filter 600ms ease; }
+.bo-inhalt p { margin: 0 0 6px; font-size: .95em; line-height: 1.35; font-family: "Courier New", ui-monospace, monospace; opacity: calc(1 - var(--weg) * 0.6); }
+.bo-inhalt p[data-geloest="1"]::after { content: ' ✓'; color: #1a8a3a; font-weight: 900; }
+.bo-blatt.schwimmt .bo-inhalt { animation: bo-schwimm 1.6s ease-in-out infinite; }
+@keyframes bo-schwimm { 50% { transform: translateX(3px) skewX(-3deg); } }
+@media (prefers-reduced-motion: reduce) { .bo-blatt.schwimmt .bo-inhalt { animation: none; } }
+.bo-blatt.small { max-width: 420px; }
+.bo-les { display: inline-flex; align-items: center; gap: 6px; align-self: flex-start; margin-top: 4px; padding: 4px 10px; border-radius: 99px; border: 2px solid #0e0a26; background: var(--amp); color: var(--amp-ink); font-weight: 800; font-size: .85em; font-family: var(--font-body); }
+.bo-sig { display: flex; gap: 8px; align-items: flex-start; margin: 0; }
+.bo-sig .ic { color: var(--yellow); flex: none; margin-top: 2px; }
+.bo-gedanke { position: relative; align-self: flex-start; font-family: var(--font-display); font-size: 1.2em; padding: 10px 16px; border-radius: 20px; background: var(--bg); border: 2px solid var(--line); }
+.bo-gedanke::before { content: ''; position: absolute; left: 18px; top: -12px; width: 12px; height: 12px; border-radius: 50%; background: var(--bg); border: 2px solid var(--line); }
+.bo-abgabe { display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 16px; border-radius: var(--radius); border: var(--bw) solid var(--line); background: var(--panel); box-shadow: 0 var(--lift) 0 var(--line); text-align: center; }
+.bo-abgabe b.display { font-size: clamp(2.2em, 5vw, 3.4em); color: var(--yellow); line-height: 1; }
+.bo-log { display: flex; flex-wrap: wrap; gap: 6px; }
+.bo-logchip { cursor: default; }
+.bo-logchip.ok { background: color-mix(in srgb, var(--good) 30%, var(--panel)); }
+@media (max-width: 760px) { .bo-buehne { grid-template-columns: 1fr; } .bo-blatt { transform: none; } }

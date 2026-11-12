@@ -1,0 +1,38 @@
+/* Gerecht oder gleich?: Dilemma-Karte mit Bild, zwei Seiten, Folgen und Rewind */
+.gg-karte { gap: 12px; }
+.gg-oben { display: flex; align-items: center; gap: 18px; }
+.gg-oben .lead { flex: 1; min-width: 0; }
+.gg-seiten { display: grid; gap: 10px; grid-template-columns: 1fr 1fr; }
+.gg-seite { display: flex; flex-direction: column; gap: 4px; padding: 10px 14px; border: 2px solid var(--line); border-radius: var(--radius-sm); }
+.gg-seite[data-pos="a"] { background: color-mix(in srgb, var(--teamA) 28%, var(--panel)); }
+.gg-seite[data-pos="b"] { background: color-mix(in srgb, var(--teamB) 28%, var(--panel)); }
+.gg-seite b { font-size: 1.15em; }
+.gg-bild { display: flex; align-items: center; gap: 14px; flex: none; }
+.gg-pizza svg { display: block; }
+.gg-legende { display: grid; grid-template-columns: repeat(2, auto); gap: 6px 14px; }
+.gg-leg { display: inline-flex; align-items: center; gap: 6px; border-left: 5px solid var(--fc); padding-left: 6px; }
+.gg-leg b { font-family: var(--font-display); font-size: 1.3em; }
+.gg-arbeit { flex-direction: column; align-items: stretch; gap: 6px; min-width: 260px; }
+.gg-zeile { display: grid; grid-template-columns: auto 3.4em 1fr 3.6em 2.2em; gap: 8px; align-items: center; }
+.gg-balken { height: 14px; border: 2px solid var(--line); border-radius: 99px; overflow: hidden; background: var(--bg); }
+.gg-balken i { display: block; height: 100%; }
+.gg-note { text-align: center; font-size: 1.3em; border: 2px solid var(--line); border-radius: 8px; background: var(--bg); }
+.gg-tor { position: relative; flex-direction: column; padding: 10px 14px 6px; border: 3px solid var(--line); border-bottom: none; border-radius: 12px 12px 0 0; background: repeating-linear-gradient(90deg, transparent 0 14px, color-mix(in srgb, var(--text) 10%, transparent) 14px 16px), repeating-linear-gradient(0deg, transparent 0 14px, color-mix(in srgb, var(--text) 10%, transparent) 14px 16px); }
+.gg-schuetze { display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 4px 6px; border-bottom: 5px solid var(--fc); min-width: 64px; text-align: center; }
+.gg-schuetze.bank { opacity: .55; border-bottom-style: dashed; }
+.gg-folge { gap: 10px; }
+.gg-reakt { gap: 8px; }
+.gg-r { display: flex; align-items: center; gap: 10px; padding: 6px 10px; border-radius: var(--radius-sm); background: var(--bg); border: 2px solid var(--line); }
+.gg-folge[data-weg="a"] { border-top: 8px solid var(--teamA); }
+.gg-folge[data-weg="b"] { border-top: 8px solid var(--teamB); }
+.gg-folge[data-weg="mitte"] { border-top: 8px solid var(--yellow); }
+.gg-folge.klein { font-size: .92em; }
+.gg-wege { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+.gg-rewind { display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 2.2em; color: var(--yellow); }
+@media (max-width: 640px) {
+  .gg-oben { flex-direction: column; align-items: flex-start; }
+  .gg-seiten { grid-template-columns: 1fr; }
+  .gg-arbeit { min-width: 0; width: 100%; }
+  .gg-zeile { grid-template-columns: auto 3em 1fr 3.2em 2em; gap: 6px; }
+  .gg-bild { flex-wrap: wrap; }
+}
