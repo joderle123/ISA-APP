@@ -7,6 +7,7 @@
 // ---------------------------------------------------------------------------
 
 import ICONS from './bilder/icons.json'
+import EMOJI from './bilder/emoji.json'
 import type { Farben } from './katalog'
 import type { BildId } from './typen'
 import { gesichtZeichnung, istGefuehl } from './gesichter'
@@ -110,7 +111,23 @@ export function iconZeichnung(name: string): Zeichnung {
   }
 }
 
-/** Löst einen Bild-Verweis ('icon:…', 'gesicht:…', 'figur:…', 'motiv:…', 'szene:…', 'peep:…') auf. */
+const emoji = EMOJI as unknown as IconMap
+
+/** Namen der farbigen Bilder (Fluent Emoji, MIT; Auswahl in scripts/blatt-emoji.mjs). */
+export const EMOJI_NAMEN: string[] = Object.keys(emoji)
+
+export function hatEmoji(name: string): boolean {
+  return Object.prototype.hasOwnProperty.call(emoji, name)
+}
+
+/** Farbiges Bild (32er-Raster, eigene Farben – unabhängig von der Bereichsfarbe). */
+export function emojiZeichnung(name: string): Zeichnung {
+  const formen = emoji[name]
+  if (!formen) return iconZeichnung('')
+  return { vb: [0, 0, 32, 32], formen, w: 1 }
+}
+
+/** Löst einen Bild-Verweis ('icon:…', 'gesicht:…', 'figur:…', 'motiv:…', 'szene:…', 'peep:…', 'emoji:…') auf. */
 export function bildZeichnung(id: BildId): Zeichnung {
   const [art, ...rest] = id.split(':')
   if (art === 'icon') return iconZeichnung(rest[0] ?? '')
@@ -122,6 +139,7 @@ export function bildZeichnung(id: BildId): Zeichnung {
   if (art === 'motiv') return motivZeichnung(rest[0] ?? '')
   if (art === 'szene') return szeneZeichnung(rest[0] ?? '')
   if (art === 'peep') return peepZeichnung(rest[0] ?? 'jana', rest[1], rest[2])
+  if (art === 'emoji') return emojiZeichnung(rest[0] ?? '')
   return iconZeichnung(id)
 }
 
@@ -132,6 +150,7 @@ export function bildGueltig(id: BildId): boolean {
   if (art === 'gesicht') return istGefuehl(name ?? '')
   if (art === 'figur' || art === 'motiv') return bildZeichnung(id).formen.length > 0
   if (art === 'szene') return istSzene(name ?? '')
+  if (art === 'emoji') return hatEmoji(name ?? '')
   if (art === 'peep') {
     const [, wer, g, h] = id.split(':')
     return istPeep(wer ?? '') && (!g || istGefuehl(g) || PEEP_GESICHTER.includes(g)) && (!h || h in PEEP_HALTUNGEN)

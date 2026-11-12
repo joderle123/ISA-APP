@@ -13,7 +13,7 @@ import { join, dirname, basename } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import type { Baustein, Bildtext, Blatt, BlattInhalt, Brieftext, Experiment, Forscherblatt, Spielideen, Sprache } from '../src/blatt/typen'
 import { BEREICHE, THEMEN, STUFEN_REIHE } from '../src/blatt/katalog'
-import { bildGueltig, hatIcon } from '../src/blatt/zeichnung'
+import { bildGueltig, hatIcon, hatEmoji } from '../src/blatt/zeichnung'
 import { GEFUEHLE, gefuehlWort } from '../src/blatt/gesichter'
 import { FIGUREN, POSEN } from '../src/blatt/figuren'
 import { istSzene } from '../src/blatt/szenen'
@@ -161,6 +161,7 @@ function bildOk(id: string): string | null {
     if (c && !(POSEN as string[]).includes(c)) return `Haltung „${c}“ gibt es nicht`
     return null
   }
+  if (art === 'emoji') return hatEmoji(a ?? '') ? null : `Farbbild „${a}“ gibt es nicht (Liste: src/blatt/bilder/emoji.json, Auswahl in scripts/blatt-emoji.mjs)`
   if (art === 'peep') {
     if (!a || !istPeep(a)) return `Peep „${a}“ gibt es nicht (Liste: src/blatt/peeps.ts)`
     if (b && !(GEFUEHLE as string[]).includes(b) && !PEEP_GESICHTER.includes(b)) return `Gefühl „${b}“ gibt es nicht`

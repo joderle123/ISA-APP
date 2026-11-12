@@ -14,6 +14,7 @@
 // dasselbe darin sehen („ear“ → Körper-Motiv „ohr“ wäre kein Ersatz für „zuhören“).
 // ---------------------------------------------------------------------------
 
+import { hatEmoji } from './zeichnung'
 import { MOTIV_NAMEN } from './motive'
 import { ICON_MOTIV } from './motive-neu'
 import type { BildId } from './typen'
@@ -117,11 +118,23 @@ export function motivFuerIconName(name: string): string | undefined {
   return m && motivSet.has(m) ? m : undefined
 }
 
-/** Bild-Verweis für junge Stufen: ‚icon:book‘ → ‚motiv:buch‘; alles andere bleibt, wie es ist. */
+/** Piktogramme ohne gezeichnetes Motiv, für die es ein eindeutiges farbiges Bild gibt (Fluent Emoji, src/blatt/bilder/emoji.json).
+ *  Nur Dinge – Zeichen wie Kreis, Pfeil, Zahl oder Haken bleiben Piktogramme. */
+const ICON_EMOJI: Record<string, string> = {
+  trees: 'deciduous-tree', robot: 'robot', 'ball-tennis': 'tennis', dental: 'tooth', mail: 'envelope', candy: 'candy', 'needle-thread': 'sewing-needle',
+  globe: 'globe-showing-europe-africa', 'plant-2': 'potted-plant', helicopter: 'helicopter', piano: 'musical-keyboard', lamp: 'light-bulb',
+  mountain: 'mountain', 'device-laptop': 'laptop', zzz: 'zzz', sunrise: 'sunrise', photo: 'camera', 'building-community': 'houses', spray: 'lotion-bottle',
+  hanger: 't-shirt', paperclip: 'linked-paperclips', wand: 'magic-wand', road: 'motorway', 'ruler-measure': 'straight-ruler',
+  'mood-happy': 'grinning-face', 'mood-kid': 'grinning-face', yoga: 'relieved-face', 'user-heart': 'hugging-face', fence: 'house-with-garden',
+}
+
+/** Bild-Verweis für junge Stufen: ‚icon:book‘ → ‚motiv:buch‘, sonst ein farbiges Bild, wenn es eines gibt; alles andere bleibt. */
 export function motivFuerIcon(id: BildId): BildId {
   if (!id.startsWith('icon:')) return id
   const m = motivFuerIconName(id)
-  return m ? 'motiv:' + m : id
+  if (m) return 'motiv:' + m
+  const e = ICON_EMOJI[id.slice(5)]
+  return e && hatEmoji(e) ? 'emoji:' + e : id
 }
 
 // --- Jugendfiguren statt Kinderfiguren (C4–ES) -----------------------------------------------------------
