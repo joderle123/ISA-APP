@@ -15,6 +15,13 @@ export const AKTE = {
   'mitfahren.gemeldet': { amt: 'Meldet einen Diebstahl an der Werft.', echt: 'Danach wollte die Krater-Crew nichts mehr von dir wissen.' },
   schlag: { amt: 'Schlägt am Steg einen Jungen. Es gibt Videos.', echt: 'Er hat über dein Zuhause geredet.' },
   tasche: { amt: 'Wird nachts mit einer fremden Tasche gesehen.', echt: 'Du hast nicht gefragt, was drin ist.' },
+  kasse: { amt: 'Am Kiosk fehlen 20 Euro. War zuletzt an der Kasse.', echt: 'Du hast sie genommen.' },
+  spray: { amt: 'Besprüht das frisch gestrichene Tor der Werft.', echt: 'Es sah gut aus. Fränz hat bis Mitternacht neu gestrichen.' },
+  boot: { amt: 'Nimmt ein fremdes Boot. Schaden am Rumpf.', echt: 'Du wolltest nur fahren. Der Riss kam beim Anlegen.' },
+  clip: { amt: 'Filmt eine erwachsene Person heimlich. Verbreitet das Video.', echt: 'Du fandest es lustig. 31 Aufrufe.' },
+  schubsen: { amt: 'Stößt eine Person zu Boden. Es gibt Zeugen.', echt: 'Du hast geschubst. Gefragt, warum, hat keiner.' },
+  'gespraech.fehlt': { amt: 'Erscheint nicht zum Gespräch.', echt: 'Du hattest keine Lust, dir das anzuhören.' },
+  'prakt.fehlt': { amt: 'Erscheint nicht zum Praktikum.', echt: 'Du bist einfach nicht hingegangen.' },
   'fest.gemeldet': { amt: 'Ruft beim Fest Hilfe für einen Jungen.', echt: 'Tun ging es schlecht. Du hast das Fest beendet.' },
 };
 export const AKTE_LEER = { amt: 'Keine Einträge.', echt: 'Keiner hat etwas über dich geschrieben. Gut? Oder hat keiner hingeschaut?' };

@@ -2,6 +2,7 @@
 // erst mit Namen, wenn man ihn einmal erreicht hat; vorher nur der Hinweis.
 import { hat, bond, besteBindung } from '../run.js';
 
+const schwer = (R) => ['kasse', 'spray', 'boot', 'clip', 'schubsen', 'schlag', 'mitfahren.erwischt', 'tasche'].filter((a) => R.akte.includes(a)).length;
 const schuetzt = (R) => ['video.geloescht', 'pit.geholfen', 'neue.geschuetzt', 'fest.geblieben', 'fest.hilfe', 'fest.gemeldet', 'mitfahren.gestoppt', 'luege.begleitet'].filter((f) => hat(R, f)).length;
 const aerger = (R) => hat(R, 'schlag') || hat(R, 'luege.gelogen') || hat(R, 'video.geteilt') || hat(R, 'mitfahren.erwischt') || hat(R, 'kontrolle.laut');
 const gutgemacht = (R) => hat(R, 'luege.gestanden') || hat(R, 'gespraech.eigen') || hat(R, 'pit.geholfen') || hat(R, 'fest.geblieben') || hat(R, 'fest.gemeldet');
@@ -9,8 +10,11 @@ const freunde = (R) => ['jolie', 'tun', 'pit', 'noor', 'maelle', 'tiago'].filter
 
 export const AUSGAENGE = [
   { id: 'geflogen', titel: 'Von der Insel geflogen', bild: 'faehre', farbe: '#ff5a3d', hinweis: 'Wenn zu viel zusammenkommt.',
-    wenn: (R) => hat(R, 'schlag') && (hat(R, 'mitfahren.erwischt') || hat(R, 'tasche') || R.akte.length >= 5),
+    wenn: (R) => (hat(R, 'schlag') && (hat(R, 'mitfahren.erwischt') || hat(R, 'tasche') || R.akte.length >= 5)) || schwer(R) >= 4,
     text: ['Die Fähre nimmt dich mit. Diesmal ohne Rückfahrt.', 'In der Akte steht alles. Nur nicht, warum.'] },
+  { id: 'allein', titel: 'Allein auf der Insel', bild: 'nebel', farbe: '#b9b2e0', hinweis: 'Alles machen, was man will. Mit jedem.',
+    wenn: (R) => Object.values(R.bond).filter((b) => b <= -2).length >= 3,
+    text: ['Du hast gemacht, was du wolltest. Mit allen.', 'Am Steg ist Platz neben dir. Viel Platz.'] },
   { id: 'krater', titel: 'Mikas rechte Hand', bild: 'flamme', farbe: '#ff8c42', hinweis: 'Am Krater ist immer Platz.',
     wenn: (R) => R.ruf.krater >= 4 && (hat(R, 'tasche') || hat(R, 'mitfahren.schmiere')),
     text: ['Du gehörst zur Crew. Alle grüßen dich.', 'Mika ruft an. Immer nachts. Du gehst immer ran.'] },

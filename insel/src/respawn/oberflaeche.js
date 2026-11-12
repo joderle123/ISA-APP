@@ -24,7 +24,7 @@ export function createOberflaeche({ game }) {
 
   // ---------- Statusleiste ----------
   const leiste = el('rs-leiste hud-interactive is-hidden', `
-    <span class="rs-jz" data-jz></span>
+    <span class="rs-jz" data-jz></span><span class="rs-kraft" data-kraft title="Kraft für heute"></span>
     <span class="rs-druck" title="Druck"><b>Druck</b><i><u data-druck></u></i></span>
     <span class="rs-geld" data-geld></span>
     <button class="rs-handy" type="button" data-handy aria-label="Handy">📱<em data-neu hidden></em></button>`);
@@ -37,7 +37,8 @@ export function createOberflaeche({ game }) {
   function status(R) {
     if (!R) { leiste.classList.add('is-hidden'); rot.className = 'rs-rot'; return; }
     leiste.classList.remove('is-hidden');
-    leiste.querySelector('[data-jz]').textContent = JAHRESZEIT_NAME[jahreszeit(R)];
+    leiste.querySelector('[data-jz]').textContent = JAHRESZEIT_NAME[jahreszeit(R)] + ' · Tag ' + ((R.tag || 0) + 1);
+    leiste.querySelector('[data-kraft]').textContent = '⚡'.repeat(Math.max(0, R.kraft || 0)) + '·'.repeat(Math.max(0, 3 - (R.kraft || 0)));
     const u = leiste.querySelector('[data-druck]');
     u.style.width = Math.max(3, R.druck) + '%';
     const z = druckZone(R.druck);
@@ -207,19 +208,25 @@ export function createOberflaeche({ game }) {
   }
 
   // ---------- Handy ----------
-  function handy(R, meta) {
+  function handy(R, meta, welt) {
     const seiten = {
+      heute: () => {
+        const w = welt ? welt() : { ereignisse: [], orte: [] };
+        return (w.ereignisse.length ? '<h4>Heute los</h4>' + w.ereignisse.map((x) => `<button type="button" class="rs-hin" data-hin="e:${x.id}"><b>❗ ${esc(x.titel)}</b><small>${esc(x.wo)} · hinbringen</small></button>`).join('') : '<p class="rs-lead">Heute steht nichts an. Mach, was du willst.</p>')
+          + '<h4>Orte</h4>' + w.orte.map((x) => `<button type="button" class="rs-hin" data-hin="o:${x.id}"><b>${x.bild} ${esc(x.name)}</b><small>hinbringen</small></button>`).join('');
+      },
       chats: () => ((R.chats || []).length ? (R.chats || []).slice().reverse().map((c) => `<div class="rs-chat"><b>${esc(nameVon(c.von))}</b><p>${esc(c.text)}</p></div>`).join('') : '<p class="rs-lead">Noch keine Nachrichten.</p>'),
       leute: () => LEUTE.concat(['yara', 'maelle', 'tiago']).filter((w) => R.bond[w] !== undefined).map((w) => { const b = bond(R, w); return `<div class="rs-leut"><b>${esc(nameVon(w))}</b><i class="${b < 0 ? 'ist-minus' : ''}">${'●'.repeat(Math.min(5, Math.abs(b)))}${'○'.repeat(5 - Math.min(5, Math.abs(b)))}</i><small>${b >= 3 ? 'steht zu dir' : b >= 1 ? 'mag dich' : b < 0 ? 'ist sauer' : 'kennt dich kaum'}</small></div>`; }).join('') || '<p class="rs-lead">Du kennst hier noch niemanden.</p>',
       karten: () => `<div class="rs-reihe ist-klein">${['kopf', 'zuhause', 'tasche'].map((art) => karteHtml(art, karte(art, R.karten[art]))).join('')}</div>`,
       album: () => albumHtml(meta),
       hilfe: () => `<div class="rs-hilfe"><p>Das hier ist ein Spiel. Geht es dir im echten Leben nicht gut?</p><p><b>116 111</b> – Kanner-Jugendtelefon. Kostenlos, anonym.</p><p><b>112</b> – Notfall.</p><p>Oder sprich mit einem Erwachsenen, dem du traust.</p></div>`,
     };
-    const namen = { chats: 'Chats', leute: 'Leute', karten: 'Karten', album: 'Album', hilfe: 'Hilfe' };
+    const namen = { heute: 'Heute', chats: 'Chats', leute: 'Leute', karten: 'Karten', album: 'Album', hilfe: 'Hilfe' };
     ui.overlay.open({
       id: 'rs-handy', title: 'Handy', kind: 'panel', cls: 'rs-handy-ov',
-      content: (body) => {
-        let seite = 'chats';
+      content: (body, griff) => {
+        let seite = (R.chats || []).some((c) => !c.gelesen) ? 'chats' : 'heute';
+        body.addEventListener('click', (e) => { const h = e.target.closest('[data-hin]'); if (h && welt) { griff.close('hin'); welt().hin(h.dataset.hin); } });
         const z = () => {
           body.innerHTML = `<div class="rs-tabs">${Object.keys(seiten).map((s) => `<button type="button" data-t="${s}" class="${s === seite ? 'ist-an' : ''}">${namen[s]}</button>`).join('')}</div><div class="rs-seite">${seiten[seite]()}</div>`;
         };
@@ -233,7 +240,7 @@ export function createOberflaeche({ game }) {
 
   return {
     status, wirkung, melde, erzaehler, gedanke, wahl, titelkarte, kartenZiehen, freizeit, abschluss, start,
-    handy(R, meta) { handy(R, meta); },
+    handy(R, meta, welt) { handy(R, meta, welt); },
     setzeHandy(fn) { handyAuf = fn; },
   };
 }

@@ -1,106 +1,246 @@
 // RESPAWN – Spielmodus „Ein Jahr auf der Insel, dann nochmal“ (12.11.2026). Läuft nur mit game.gameMode === 'respawn'
 // (dist/respawn.html oder ?mode=respawn); die LUMO-Insel selbst bleibt unverändert.
-// Ablauf: Start → Karten ziehen → vier Jahreszeiten (Situationen aus daten/, ein freier Nachmittag je Jahreszeit) →
-// Finale → Ausgang und Akte → nochmal mit anderen Karten.
+// Offene Welt: Ein Jahr hat vier Jahreszeiten mit je drei Tagen. An jedem Tag läuft man frei herum und tut, was man will –
+// mit Leuten (reden, helfen, aufziehen, filmen, leihen, schubsen …) und an Orten (jobben, in die Kasse greifen, sprühen,
+// ein Boot nehmen …). Ereignisse des Tages stehen mit Marke in der Welt; man kann sie auch links liegen lassen.
+// Größere Dinge kosten Kraft (3 am Tag). Nach dem Schlafen kommt der Morgen – und mit ihm, was aus gestern geworden ist.
+// Kein Gefängnis, keine Strafe vom Spiel: Die Folgen kommen von den Menschen (daten/welt.js).
 // Gespeichert nur auf dem Gerät: respawn.meta (Album, Runden, Einstellungen) und respawn.lauf (laufende Runde).
-// Kein Kursbezug: keine Codes, keine Übungen, keine Bewertung. Ereignisse für Tests: respawn:start, respawn:karten,
-// respawn:frei, respawn:weiter, respawn:ende (auslösen) · respawn:wahl, respawn:wirkung, respawn:stand (hören).
+// Für Tests: Ereignisse respawn:start, respawn:karten, respawn:weiter, respawn:ende (auslösen); plugin.tue({...}) spielt
+// eine freie Aktion; respawn:wahl, respawn:wirkung, respawn:stand, respawn:frei (hören).
 import { createOberflaeche } from './oberflaeche.js';
 import { createBuehne } from './buehne.js';
-import { SITUATIONEN, AUSGAENGE, AKTE, AKTE_LEER, FREIZEIT, FREIZEIT_JE } from './daten/index.js';
-import { neuerLauf, zieheKarten, planeJahreszeit, jahreszeitWechsel, jahreszeit, ausgangFuer, akteFuer, wirke, bond, JAHRESZEIT_NAME } from './run.js';
+import { SITUATIONEN, AUSGAENGE, AKTE, AKTE_LEER, ORTE, ORT_AKTIONEN, LEUTE_AKTIONEN, LEUTE_REIHE, FOLGEN, VERPASST, WICHTIG } from './daten/index.js';
+import { neuerLauf, zieheKarten, planeJahreszeit, jahreszeitWechsel, jahreszeit, ausgangFuer, akteFuer, wirke, bond, verteile, folgenAmMorgen, neuerTag,
+  JAHRESZEIT_NAME, UHR_NACH_KRAFT, TAGE_JE_JAHRESZEIT } from './run.js';
 
 const META = 'respawn.meta', LAUF = 'respawn.lauf';
 const lies = (k, d) => { try { return JSON.parse(localStorage.getItem(k) || 'null') || d; } catch (e) { return d; } };
 const schreib = (k, v) => { try { if (v == null) localStorage.removeItem(k); else localStorage.setItem(k, JSON.stringify(v)); } catch (e) { /* voll oder privat */ } };
 const zufall = (seed) => { let a = seed >>> 0; return () => { a |= 0; a = (a + 0x6D2B79F5) | 0; let t = Math.imul(a ^ (a >>> 15), 1 | a); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; }; };
+const fn = (v, R) => (typeof v === 'function' ? v(R) : v);
 
 export default {
   id: 'respawn', order: 92, deps: ['ui', 'npcs'],
   install(game) {
     if (game.gameMode !== 'respawn') return null;
-    const { events, ui } = game;
+    const { events, ui, npcs, player } = game;
     const test = game.params.has('test');
+    const hud = document.getElementById('hud');
     document.getElementById('lumo-root').classList.add('mode-respawn');
     const O = createOberflaeche({ game });
     const B = createBuehne({ game, O });
     const meta = { v: 1, ausgaenge: {}, runden: 0, sanft: false, ...lies(META, {}) };
     if (game.params.has('sanft')) meta.sanft = game.params.get('sanft') !== '0';
-    let R = null, laeuft = false;
+    let R = null, laeuft = false, beschaeftigt = false, tagEnde = null;
     const sit = (id) => SITUATIONEN.find((s) => s.id === id);
-    // Glimm, der Begleiter aus LUMO, gehört nicht in dieses Spiel
-    const ohneGlimm = () => { try { game.player.humanoid.group.traverse((o) => { if (o.name === 'glimm') o.visible = false; }); if (game.glimm && game.glimm.mesh) game.glimm.mesh.visible = false; } catch (e) { /* egal */ } };
-    ohneGlimm(); events.on('avatar:change', () => setTimeout(ohneGlimm, 50)); events.on('game:start', ohneGlimm);
+    const ortVon = (ref) => game.content.resolveSite(ref) || { x: 6, z: 118 };
     const sichern = () => { schreib(LAUF, R && !R.fertig ? R : null); events.emit('respawn:stand', R); };
 
-    // Die Insel ist in diesem Modus überall farbig; der Grauschleier gehört zur LUMO-Geschichte
+    // Aus LUMO, hier fehl am Platz: Glimm auf der Schulter, die Figuren der Leuchtturm-Geschichte, der Grauschleier
+    const ohneGlimm = () => { try { player.humanoid.group.traverse((o) => { if (o.name === 'glimm') o.visible = false; }); if (game.glimm && game.glimm.mesh) game.glimm.mesh.visible = false; } catch (e) { /* egal */ } };
+    ohneGlimm(); events.on('avatar:change', () => setTimeout(ohneGlimm, 50)); events.on('game:start', ohneGlimm);
+    for (const id of ['grisel', 'jhemp']) { try { npcs.remove(id); } catch (e) { /* nicht da */ } }
     const bunt = () => { const veil = game.world && game.world.veil; if (veil && veil.setZone) for (const Z of game.world.island.ZONES) veil.setZone(Z.id, 0); };
 
-    // Ansprechen außerhalb einer Situation: ein kurzer Satz je nach Bindung
-    events.on('npc:talk', (e) => {
-      if (!e || e.handled) return;
-      e.handled = true;
-      if (B.aktiv || !R) return;
-      const b = bond(R, e.id), n = e.npc;
-      const text = b >= 3 ? 'Hey. Gut, dich zu sehen.' : b >= 1 ? 'Moien. Alles klar?' : b < 0 ? 'Was willst du?' : 'Moien.';
-      ui.say({ who: e.id, text, anchor: n && n.group ? n.group : null, wait: false, lock: false, seconds: 2.2 });
+    // ---------- Marken in der Welt (Ereignisse des Tages, Orte) ----------
+    const marken = new Map();   // id → { el, x, z, y, greifen: Interaktion }
+    function marke(id, { x, z, text, klein = '', ort = false, radius = 4, onAction, label }) {
+      weg(id);
+      const el = document.createElement('div');
+      el.className = 'rs-marke' + (ort ? ' ist-ort' : '');
+      el.innerHTML = text + (klein ? `<small>${klein}</small>` : '');
+      hud.appendChild(el);
+      const greifen = game.interactions.add({ id: 'rs-' + id, x, z, radius, label: label || text, priority: ort ? 0 : 5, onAction });
+      if (!ort && ui.setMarker) ui.setMarker('rs-' + id, x, z, '❗', '#ff5a7a');
+      marken.set(id, { el, x, z, greifen, ort });
+    }
+    function weg(id) { const m = marken.get(id); if (!m) return; m.el.remove(); m.greifen.remove(); if (!m.ort && ui.removeMarker) ui.removeMarker('rs-' + id); marken.delete(id); }
+    const alleWeg = () => { for (const id of [...marken.keys()]) weg(id); };
+    game.addUpdate(() => {
+      const cam = game.camera;
+      if (!cam || !marken.size) return;
+      const frei = R && !B.aktiv && !ui.overlay.count && !document.querySelector('.rs-voll');
+      for (const m of marken.values()) {
+        const d = Math.hypot(m.x - player.position.x, m.z - player.position.z);
+        if (!frei || (m.ort && d > 40)) { m.el.style.display = 'none'; continue; }
+        const y = (game.world.island.heightAt ? game.world.island.heightAt(m.x, m.z) : player.position.y) + (m.ort ? 3.2 : 4.2);
+        const p = player.position.clone().set(m.x, y, m.z).project(cam);
+        if (p.z > 1 || Math.abs(p.x) > 1.05 || Math.abs(p.y) > 1.05) { m.el.style.display = 'none'; continue; }
+        m.el.style.display = '';
+        m.el.style.left = ((p.x * 0.5 + 0.5) * 100).toFixed(2) + '%';
+        m.el.style.top = ((-p.y * 0.5 + 0.5) * 100).toFixed(2) + '%';
+      }
+    }, { order: 93, always: true });
+
+    // ---------- Der Tag ----------
+    const heute = () => ((R.tage || [])[R.tag] || []).filter((id) => !R.gespielt.includes(id));
+    const uhr = () => game.time.setTimeOfDay(UHR_NACH_KRAFT[Math.max(0, Math.min(3, R.kraft))]);
+    function kraftWeg(n) {
+      if (!n) return;
+      R.kraft = Math.max(0, R.kraft - n);
+      uhr();
+      if (R.kraft === 0) { O.melde('Es wird Abend. Zeit zum Schlafen.'); schlafKnopf(); }
+    }
+    let knopf = null;
+    function schlafKnopf() {
+      if (knopf || test) return;
+      knopf = document.createElement('button');
+      knopf.type = 'button'; knopf.className = 'rs-naechst hud-interactive'; knopf.textContent = 'Schlafen gehen ▸';
+      knopf.addEventListener('click', () => frei(() => schlafen()));
+      hud.appendChild(knopf);
+    }
+    const knopfWeg = () => { if (knopf) { knopf.remove(); knopf = null; } };
+
+    // Alles Freie läuft nacheinander: eine Aktion zur Zeit
+    async function frei(f) {
+      if (beschaeftigt || !R || !tagEnde || B.aktiv || ui.overlay.count) return false;
+      beschaeftigt = true;
+      try { await f(); } catch (e) { console.error('[respawn]', e); } finally { beschaeftigt = false; }
+      if (R) { O.status(R); marken_(); sichern(); events.emit('respawn:frei', { kraft: R.kraft, tag: R.tag, jz: R.jz }); }
+      return true;
+    }
+    async function schlafen() {
+      knopfWeg();
+      await O.erzaehler(R.kraft > 0 ? 'Du gehst früh schlafen.' : 'Der Tag ist vorbei.', { kurz: true });
+      const ende = tagEnde; tagEnde = null;
+      if (ende) ende();
+    }
+    async function ereignis(id) {
+      const s = sit(id);
+      if (!s || R.gespielt.includes(id)) return;
+      weg('e-' + id);
+      R.sanft = !!meta.sanft;
+      await O.titelkarte(s.titel, JAHRESZEIT_NAME[jahreszeit(R)]);
+      await B.spiele(s, R);
+      R.gespielt.push(id);
+      uhr();
+      kraftWeg(1);
+    }
+    async function ortAktion(ort, aid) {
+      const a = ORT_AKTIONEN[aid];
+      if (!a || (a.wenn && !a.wenn(R))) return;
+      if (a.schlaf) { await schlafen(); return; }
+      if (a.kraft && R.kraft < a.kraft) { await O.erzaehler('Dafür bist du heute zu müde.', { kurz: true }); return; }
+      const zeugen = a.mist ? B.inDerNaehe(12).filter((w) => WICHTIG.includes(w)) : [];
+      R.log.push({ ort: ort.id, aktion: aid, zeugen });
+      events.emit('respawn:wahl', { sit: 'ort:' + ort.id, wahl: a.t, art: a.art });
+      await B.frei(a.szene(R, { zeugen }), R, { zeugen });
+      kraftWeg(a.kraft || 0);
+    }
+    async function leuteAktion(wer, aid) {
+      const a = LEUTE_AKTIONEN[aid];
+      if (!a || (a.wenn && !a.wenn(R, wer))) return;
+      if (a.kostet && R.geld < a.kostet) { await O.erzaehler('Dafür fehlt dir das Geld.', { kurz: true }); return; }
+      if (a.kraft && R.kraft < a.kraft) { await O.erzaehler('Dafür bist du heute zu müde.', { kurz: true }); return; }
+      const zeugen = a.mist ? B.inDerNaehe(12, wer).filter((w) => WICHTIG.includes(w)) : [];
+      R.log.push({ wer, aktion: aid, zeugen });
+      events.emit('respawn:wahl', { sit: 'leute:' + wer, wahl: a.t, art: a.art });
+      await B.frei(a.szene(R, { wer, zeugen }), R, { wer, zeugen });
+      kraftWeg(a.kraft || 0);
+    }
+    async function menue(frage, liste) {
+      const r = await O.wahl({ frage, items: liste.map((x) => ({ label: x.t, art: x.art, sub: x.sub || '' })).concat([{ label: 'Nichts.', art: 'weg' }]), sekunden: 0, standard: liste.length });
+      return r.index < liste.length ? liste[r.index] : null;
+    }
+    const ortMenue = (ort) => frei(async () => {
+      const liste = ort.aktionen.map((id) => ({ id, ...ORT_AKTIONEN[id] })).filter((a) => !a.wenn || a.wenn(R)).map((a) => ({ ...a, sub: a.kraft ? '⚡ kostet Kraft' : '' }));
+      const w = await menue(ort.name, liste);
+      if (w) await ortAktion(ort, w.id);
+    });
+    const leuteMenue = (wer) => frei(async () => {
+      if (!WICHTIG.includes(wer)) { const n = npcs.get(wer); ui.say({ who: wer, text: 'Moien.', anchor: n ? n.group : null, wait: false, lock: false, seconds: 1.8 }); return; }
+      const liste = LEUTE_REIHE.map((id) => ({ id, ...LEUTE_AKTIONEN[id] })).filter((a) => !a.wenn || a.wenn(R, wer)).map((a) => ({ ...a, sub: a.kraft ? '⚡ kostet Kraft' : a.kostet ? a.kostet + ' Euro' : '' }));
+      const w = await menue(npcs.nameOf(wer), liste);
+      if (w) await leuteAktion(wer, w.id);
+    });
+    events.on('npc:talk', (e) => { if (!e || e.handled) return; e.handled = true; if (R && tagEnde) leuteMenue(e.id); });
+
+    function marken_() {
+      if (!R || !tagEnde) { alleWeg(); return; }
+      const soll = new Set();
+      for (const id of heute()) {
+        const s = sit(id), o = ortVon(fn(s.ort, R));
+        soll.add('e-' + id);
+        if (!marken.has('e-' + id)) marke('e-' + id, { x: o.x, z: o.z, text: '❗ ' + s.titel, radius: 5, label: s.titel, onAction: () => frei(() => ereignis(id)) });
+      }
+      for (const ort of ORTE) {
+        const o = ortVon(ort.ort);
+        soll.add('o-' + ort.id);
+        if (!marken.has('o-' + ort.id)) marke('o-' + ort.id, { x: o.x, z: o.z, text: ort.bild + ' ' + ort.name, ort: true, radius: 5, label: ort.name, onAction: () => ortMenue(ort) });
+      }
+      for (const id of [...marken.keys()]) if (!soll.has(id)) weg(id);
+    }
+    const weltFuerHandy = () => ({
+      ereignisse: heute().map((id) => { const s = sit(id); const o = ORTE.find((x) => x.ort === fn(s.ort, R)); return { id, titel: s.titel, wo: o ? o.name : 'auf der Insel' }; }),
+      orte: ORTE.map((o) => ({ id: o.id, name: o.name, bild: o.bild })),
+      hin(ref) {
+        const [art, id] = ref.split(':');
+        const o = art === 'e' ? ortVon(fn(sit(id).ort, R)) : ortVon((ORTE.find((x) => x.id === id) || {}).ort);
+        const a = Math.atan2(-o.x, -o.z);
+        player.teleport(o.x - Math.sin(a) * 3.2, o.z - Math.cos(a) * 3.2, a);
+        if (game.cameraRig.behindPlayer) game.cameraRig.behindPlayer();
+        if (game.cameraRig.snap) game.cameraRig.snap();
+      },
     });
 
-    function weiterKnopf(text) {
-      return new Promise((resolve) => {
-        if (test) { resolve(); return; }
-        const b = document.createElement('button');
-        b.type = 'button'; b.className = 'rs-naechst hud-interactive'; b.textContent = text + ' ▸';
-        document.getElementById('hud').appendChild(b);
-        const zu = () => { ab(); b.remove(); resolve(); };
-        const ab = events.on('respawn:weiter', zu);
-        b.addEventListener('click', zu);
+    async function einTag() {
+      // Morgen: was aus gestern geworden ist
+      O.wirkung(neuerTag(R), R);
+      uhr();
+      const zuhause = ortVon('bootshaus');
+      player.teleport(zuhause.x + 1.5, zuhause.z - 2.5, Math.atan2(-zuhause.x, -zuhause.z));
+      if (game.cameraRig.behindPlayer) game.cameraRig.behindPlayer();
+      if (game.cameraRig.snap) game.cameraRig.snap();
+      const folgen = folgenAmMorgen(R, FOLGEN);
+      if (folgen.length) {
+        await O.titelkarte('Am Morgen', JAHRESZEIT_NAME[jahreszeit(R)] + ' · Tag ' + (R.tag + 1));
+        for (const f of folgen) { for (const z of f.text) await O.erzaehler(z); O.wirkung(f.aend, R); }
+      }
+      O.status(R);
+      sichern();
+      // Erster Tag des Jahres: die Ankunft passiert von selbst
+      await new Promise((resolve) => {
+        tagEnde = resolve;
+        marken_();
+        const auto = heute().find((id) => sit(id).platz === 'anfang' && id === 'ankunft');
+        if (auto) frei(() => ereignis(auto));
+        events.emit('respawn:frei', { kraft: R.kraft, tag: R.tag, jz: R.jz });
       });
+      knopfWeg(); alleWeg();
+      // Was man heute liegen gelassen hat, läuft ohne einen weiter
+      for (const id of heute()) {
+        R.gespielt.push(id);
+        const v = VERPASST[id];
+        if (v) { await O.erzaehler(v.text); O.wirkung(wirke(R, v.e), R); }
+      }
     }
 
-    async function freierNachmittag() {
-      const ids = FREIZEIT_JE[jahreszeit(R)] || [];
-      const angebote = ids.map((id) => FREIZEIT.find((f) => f.id === id)).filter(Boolean);
-      if (!angebote.length) return;
-      const id = await O.freizeit(angebote, R);
-      const f = angebote.find((a) => a.id === id) || angebote[0];
-      await B.zeige(f.ort, f.uhr, f.satz);
-      O.wirkung(wirke(R, f.e(R)), R);
-      R.log.push({ frei: f.id });
-      R.frei = true;
-    }
-
-    async function runde() {
+    async function jahr() {
       if (laeuft) return;
       laeuft = true;
       O.status(R);
-      O.setzeHandy(() => O.handy(R, meta));
+      O.setzeHandy(() => { if (R && !B.aktiv) O.handy(R, meta, tagEnde ? weltFuerHandy : null); });
       while (R.jz < 4) {
         if (!R.plan.length) {
           const rng = zufall(R.seed * 7919 + R.jz * 104729 + 13);
           if (R.jz > 0) O.wirkung(jahreszeitWechsel(R), R);
           R.plan = planeJahreszeit(R, SITUATIONEN, rng);
-          R.schritt = 0; R.frei = false;
+          R.tage = verteile(R.plan.filter((id) => id !== 'finale'), SITUATIONEN);
+          R.tag = 0;
           sichern();
           await O.titelkarte(JAHRESZEIT_NAME[jahreszeit(R)], 'Kapitel ' + (R.jz + 1) + ' von 4');
         }
-        while (R.schritt < R.plan.length) {
-          if (!R.frei && R.schritt === Math.min(1, R.plan.length - 1) && R.plan.length > 1) { await freierNachmittag(); sichern(); }
-          const s = sit(R.plan[R.schritt]);
-          if (s) {
-            R.sanft = !!meta.sanft;
-            if (R.schritt > 0 || R.jz > 0) await weiterKnopf('Weiter: ' + s.titel);
-            await O.titelkarte(s.titel, JAHRESZEIT_NAME[jahreszeit(R)]);
-            await B.spiele(s, R);
-            R.gespielt.push(s.id);
-          }
-          R.schritt += 1;
-          O.status(R);
-          sichern();
-        }
-        R.jz += 1; R.plan = []; R.schritt = 0;
+        while (R.tag < TAGE_JE_JAHRESZEIT) { await einTag(); R.tag += 1; sichern(); }
+        R.jz += 1; R.plan = []; R.tage = []; R.tag = 0;
         sichern();
       }
+      // Finale am Steg, dann Ausgang und Akte
+      R.jz = 3; R.sanft = !!meta.sanft;
+      const f = sit('finale');
+      await O.titelkarte(f.titel, 'Ein Jahr später');
+      await B.spiele(f, R);
+      R.gespielt.push('finale');
       await ende();
       laeuft = false;
     }
@@ -112,9 +252,9 @@ export default {
       meta.ausgaenge[a.id] = (meta.ausgaenge[a.id] || 0) + 1;
       meta.runden += 1;
       schreib(META, meta); schreib(LAUF, null);
-      const andere = R.gespielt.map(sit).filter((s) => s && s.andere).map((s) => {
-        const wer = typeof s.andere.wer === 'function' ? s.andere.wer(R) : s.andere.wer;
-        return { name: game.npcs.get(wer) ? game.npcs.nameOf(wer) : ({ kontrolle: 'Der Kontrolleur', geselle: 'Marc' }[wer] || wer), titel: s.titel, zeilen: s.andere.zeilen };
+      const andere = R.gespielt.map(sit).filter((s) => s && s.andere && (R.log || []).some((l) => l.sit === s.id)).map((s) => {
+        const wer = fn(s.andere.wer, R);
+        return { name: npcs.get(wer) ? npcs.nameOf(wer) : ({ kontrolle: 'Der Kontrolleur', geselle: 'Marc' }[wer] || wer), titel: s.titel, zeilen: s.andere.zeilen };
       });
       events.emit('respawn:ausgang', { id: a.id, neu, akte: R.akte.slice(), R });
       O.status(null);
@@ -129,7 +269,7 @@ export default {
       const karten = vorgabe || await O.kartenZiehen({ ziehe: () => zieheKarten(rng) });
       R = neuerLauf({ seed: seed % 100000, karten });
       sichern();
-      await runde();
+      await jahr();
     }
 
     async function hauptmenue() {
@@ -141,7 +281,7 @@ export default {
         else hauptmenue();
         return;
       }
-      if (was === 'weiter' && gespeichert) { R = gespeichert; await runde(); return; }
+      if (was === 'weiter' && gespeichert) { R = gespeichert; await jahr(); return; }
       await neueRunde(typeof was === 'object' ? was : null);
     }
 
@@ -149,16 +289,17 @@ export default {
     if (game.started) los(); else events.on('game:start', los);
 
     return {
-      get lauf() { return R; }, get meta() { return meta; },
-      situationen: SITUATIONEN, ausgaenge: AUSGAENGE,
+      get lauf() { return R; }, get meta() { return meta; }, get frei() { return !!(R && tagEnde && !beschaeftigt && !B.aktiv); },
+      get heute() { return R ? heute() : []; },
+      situationen: SITUATIONEN, ausgaenge: AUSGAENGE, orte: ORTE,
       neueRunde, hauptmenue,
-      // Tests/Debug: eine einzelne Situation mit einem vorbereiteten Lauf spielen
-      async probe(id, { karten, vor } = {}) {
-        R = neuerLauf({ seed: 1, karten: karten || { kopf: 'zuendschnur', zuhause: 'oma', tasche: 'ok' } });
-        if (vor) vor(R);
-        O.status(R);
-        await B.spiele(sit(id), R);
-        return R;
+      // Tests: eine freie Aktion ausführen (wie ein Klick in der Welt)
+      tue(o) {
+        if (o.ereignis) return frei(() => ereignis(o.ereignis));
+        if (o.schlafen) return frei(() => schlafen());
+        if (o.ort) return frei(() => ortAktion(ORTE.find((x) => x.id === o.ort), o.aktion));
+        if (o.wer) return frei(() => leuteAktion(o.wer, o.aktion));
+        return Promise.resolve(false);
       },
     };
   },

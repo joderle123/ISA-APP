@@ -11,6 +11,9 @@
 //   ausgangFuer(R, AUSGAENGE) → Ausgang                      akteFuer(R, EINTRAEGE) → Zeilen { amt, echt }
 import { KARTEN } from './daten/karten.js';
 
+export const KRAFT_JE_TAG = 3;     // so viel schafft man an einem Tag (Ereignisse und größere Aktionen kosten 1)
+export const TAGE_JE_JAHRESZEIT = 3;
+export const UHR_NACH_KRAFT = [21.2, 17.3, 13.5, 9.5];   // Tageszeit: je weniger Kraft übrig, desto später
 export const JAHRESZEITEN = ['herbst', 'winter', 'fruehling', 'sommer'];
 export const JAHRESZEIT_NAME = { herbst: 'Herbst', winter: 'Winter', fruehling: 'Frühling', sommer: 'Sommer' };
 export const LEUTE = ['ilda', 'jolie', 'tun', 'mika', 'pit', 'fraenz', 'noor'];
@@ -34,6 +37,7 @@ export function neuerLauf({ seed = 1, karten } = {}) {
     ruf: { hafen: 0, krater: 0, gross: 0 },          // Clique am Hafen · Krater-Crew · Erwachsene
     bond: {}, flags: {}, akte: [], chats: [], spaet: 0,
     jz: 0, schritt: 0, plan: [], gespielt: [], log: [], fertig: false, ausgang: null,
+    tag: 0, kraft: KRAFT_JE_TAG, tage: [], folgen: [], angekommen: false,
   };
   if (k.zuhause === 'allein') R.druck = 25;
   return R;
@@ -140,6 +144,37 @@ export function planeJahreszeit(R, SITUATIONEN, rng = Math.random) {
   const ordnung = { anfang: 0, mitte: 1, ende: 2 };
   const plan = fest.concat(gezogen).sort((a, b) => (ordnung[a.platz || 'mitte'] - ordnung[b.platz || 'mitte']));
   return plan.map((s) => s.id);
+}
+
+// Die Situationen einer Jahreszeit auf drei Tage verteilen: „anfang“ am ersten, „ende“ am letzten Tag, der Rest dazwischen
+export function verteile(plan, SITUATIONEN) {
+  const tage = [[], [], []];
+  const rest = [];
+  for (const id of plan) {
+    const s = SITUATIONEN.find((x) => x.id === id) || {};
+    if (s.platz === 'anfang') tage[0].push(id); else if (s.platz === 'ende') tage[2].push(id); else rest.push(id);
+  }
+  const reihe = [1, 0, 2, 1];
+  rest.forEach((id, i) => tage[reihe[i % reihe.length]].push(id));
+  return tage;
+}
+// Jeden Morgen: Was aus dem geworden ist, was man getan (oder gelassen) hat. Jede Folge passiert einmal.
+export function folgenAmMorgen(R, FOLGEN) {
+  const out = [];
+  R.folgen = R.folgen || [];
+  for (const f of FOLGEN) {
+    if (R.folgen.includes(f.id) || !f.wenn(R)) continue;
+    R.folgen.push(f.id);
+    out.push({ id: f.id, text: f.text, aend: wirke(R, typeof f.e === 'function' ? f.e(R) : f.e) });
+  }
+  return out;
+}
+// Neuer Tag: Kraft voll, eine Nacht Schlaf senkt den Druck etwas (nach einer langen Nacht weniger)
+export function neuerTag(R) {
+  R.kraft = KRAFT_JE_TAG - (R.spaet >= 2 ? 1 : 0);
+  const e = { druck: R.spaet >= 1 ? -3 : -8 };
+  R.spaet = Math.max(0, R.spaet - 1);
+  return wirke(R, e);
 }
 
 // Neue Jahreszeit: einmal schlafen senkt den Druck etwas; die Zuhause-Karte meldet sich.

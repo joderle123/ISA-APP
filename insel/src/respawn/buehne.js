@@ -157,7 +157,29 @@ export function createBuehne({ game, O }) {
         await lauf(fn(sit.szene, R) || []);
       } finally { abbauen(); }
     },
-    // Freier Nachmittag: Ort und Uhrzeit zeigen, ein Satz
+    // Freie Aktion dort, wo man gerade steht: kein Ortswechsel, die Figur (und wer zuschaut) dreht sich zu dir
+    async frei(schritte, R, { wer = null, zeugen = [] } = {}) {
+      szene = { sit: { id: 'frei' }, R, cast: new Map(), fremd: new Set(), mitte: null, versteckt: [] };
+      ui.lock.acquire('respawn');
+      wurzel.classList.add('rs-szene');
+      try {
+        const p = player.position;
+        for (const id of [wer, ...zeugen].filter(Boolean)) {
+          const f = npcs.get(id);
+          if (!f || szene.cast.has(id)) continue;
+          f.setOverride({ x: f.position.x, z: f.position.z, yaw: yawZu(f.position.x, f.position.z, p.x, p.z), anim: 'idle' });
+          f.face({ x: p.x, y: 1.4, z: p.z });
+          szene.cast.set(id, f);
+        }
+        await lauf(schritte || []);
+      } finally { abbauen(); }
+    },
+    // Wer steht gerade in der Nähe? (Zeugen)
+    inDerNaehe(radius = 12, ausser = null) {
+      const p = player.position;
+      return npcs.list().filter((f) => f.id !== ausser && f.position && !f.hidden && Math.hypot(f.position.x - p.x, f.position.z - p.z) < radius).map((f) => f.id);
+    },
+    // Ort und Uhrzeit zeigen, ein Satz
     async zeige(ortId, uhr, satz) {
       const site = game.content.resolveSite(ortId) || { x: 6, z: 118 };
       if (typeof uhr === 'number') game.time.setTimeOfDay(uhr);

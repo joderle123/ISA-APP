@@ -1,8 +1,8 @@
 // RESPAWN – Spiellogik und Inhalte (reine Node-Tests): Regeln, Schreibregeln, keine Sackgassen, jeder Ausgang erreichbar.
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { neuerLauf, wirke, wahlen, zeitFuer, ohneWahl, planeJahreszeit, jahreszeitWechsel, ausgangFuer, akteFuer, verschlaeft, hatKarte, JAHRESZEITEN } from '../../src/respawn/run.js';
-import { SITUATIONEN, AUSGAENGE, AKTE, KARTEN, FREIZEIT, FREIZEIT_JE, FIGUREN, STIMMEN } from '../../src/respawn/daten/index.js';
+import { neuerLauf, wirke, wahlen, zeitFuer, ohneWahl, planeJahreszeit, jahreszeitWechsel, ausgangFuer, akteFuer, verschlaeft, hatKarte, verteile, folgenAmMorgen, neuerTag, JAHRESZEITEN } from '../../src/respawn/run.js';
+import { SITUATIONEN, AUSGAENGE, AKTE, KARTEN, FIGUREN, STIMMEN, ORTE, ORT_AKTIONEN, LEUTE_AKTIONEN, LEUTE_REIHE, FOLGEN, VERPASST, WICHTIG } from '../../src/respawn/daten/index.js';
 
 const K = (kopf = 'zuendschnur', zuhause = 'oma', tasche = 'ok') => ({ kopf, zuhause, tasche });
 const woerter = (s) => String(s).trim().split(/\s+/).filter(Boolean).length;
@@ -86,14 +86,52 @@ test('Plan: jede Jahreszeit hat Situationen, das Jahr beginnt mit „ankunft“ 
     let a = seed; const rng = () => { a = (a * 1103515245 + 12345) & 0x7fffffff; return a / 0x7fffffff; };
     const R = neuerLauf({ seed, karten: alleKarten()[seed % 24] });
     const alle = [];
-    for (let jz = 0; jz < 4; jz++) { R.jz = jz; const p = planeJahreszeit(R, SITUATIONEN, rng); assert.ok(p.length >= 2, JAHRESZEITEN[jz]); R.gespielt.push(...p); alle.push(...p); jahreszeitWechsel(R); }
+    for (let jz = 0; jz < 4; jz++) { R.jz = jz; const p = planeJahreszeit(R, SITUATIONEN, rng); assert.ok(p.length >= 2, JAHRESZEITEN[jz]); assert.equal(verteile(p, SITUATIONEN).flat().length, p.length); R.gespielt.push(...p); alle.push(...p); jahreszeitWechsel(R); }
     assert.equal(alle[0], 'ankunft'); assert.equal(alle[alle.length - 1], 'finale');
     assert.equal(new Set(alle).size, alle.length);
     assert.ok(alle.length >= 8 && alle.length <= 10, String(alle.length));
   }
 });
-test('Freizeit: Angebote je Jahreszeit vorhanden', () => {
-  for (const jz of JAHRESZEITEN) { assert.equal(FREIZEIT_JE[jz].length, 4); for (const id of FREIZEIT_JE[jz]) assert.ok(FREIZEIT.find((f) => f.id === id), id); }
+test('Tage: Situationen einer Jahreszeit verteilen sich auf drei Tage, Ankunft am ersten, Gespräch am letzten', () => {
+  const tage = verteile(['ankunft', 'video'], SITUATIONEN);
+  assert.deepEqual(tage[0], ['ankunft']); assert.equal(tage.flat().length, 2);
+  const w = verteile(['kontrolle', 'luege', 'gespraech'], SITUATIONEN);
+  assert.deepEqual(w[2], ['gespraech']); assert.equal(w.flat().length, 3);
+});
+test('Offene Welt: Texte kurz, Aktionen vollständig, Akten-Einträge vorhanden', () => {
+  const fehler = [];
+  const pruefe = (wo, steps) => durchlaufe(steps, null, (s) => {
+    const text = s[0] === 't' || s[0] === 'd' ? s[1] : (s[0] === 's' || s[0] === 'k') ? s[2] : null;
+    if (text && woerter(text) > 12) fehler.push(`${wo}: zu lang „${text}“`);
+    if (s[0] === 'w') for (const x of s[1]) { if (woerter(x.t) > 6) fehler.push(`${wo}: Wahl zu lang „${x.t}“`); if (x.e && x.e.akte && !AKTE[x.e.akte]) fehler.push(`${wo}: Akte ${x.e.akte}`); }
+    if (s[0] === 'e' && s[1].akte && !AKTE[s[1].akte]) fehler.push(`${wo}: Akte ${s[1].akte}`);
+  });
+  for (const o of ORTE) for (const a of o.aktionen) assert.ok(ORT_AKTIONEN[a], a);
+  for (const id of LEUTE_REIHE) assert.ok(LEUTE_AKTIONEN[id], id);
+  for (const zeugen of [[], ['jolie', 'pit']]) for (const karten of alleKarten().slice(0, 6)) {
+    const R = neuerLauf({ karten }); R.bond.jolie = 2; R.bond.pit = -1;
+    for (const [id, a] of Object.entries(ORT_AKTIONEN)) { assert.ok(woerter(a.t) <= 6, id); pruefe('ort ' + id, a.szene(R, { zeugen })); }
+    for (const [id, a] of Object.entries(LEUTE_AKTIONEN)) { assert.ok(woerter(a.t) <= 6, id); for (const wer of WICHTIG) if (!a.wenn || a.wenn(R, wer) || id === 'zurueck' || id === 'entschuldigen') pruefe(`leute ${id}/${wer}`, a.szene(R, { wer, zeugen })); }
+  }
+  for (const f of FOLGEN) { for (const z of f.text) if (woerter(z) > 12) fehler.push(`folge ${f.id}: „${z}“`); }
+  for (const [id, v] of Object.entries(VERPASST)) { assert.ok(SITUATIONEN.find((s) => s.id === id), id); if (woerter(v.text) > 12) fehler.push(`verpasst ${id}`); if (v.e.akte) assert.ok(AKTE[v.e.akte], v.e.akte); }
+  assert.deepEqual([...new Set(fehler)], []);
+});
+test('Folgen kommen am nächsten Morgen, jede nur einmal: Kasse ohne Zeuge trifft später Pit', () => {
+  const R = neuerLauf({ karten: K() });
+  wirke(R, { geld: 20, flags: { 'kasse.geklaut': true, 'kasse.tag': 0, 'kasse.zeuge': '' } });
+  assert.equal(folgenAmMorgen(R, FOLGEN).length, 0);                 // derselbe Tag: noch nichts
+  R.tag = 1; neuerTag(R);
+  let f = folgenAmMorgen(R, FOLGEN).map((x) => x.id);
+  assert.deepEqual(f, ['kasse.fraenz']); assert.ok(R.flags['job.weg']); assert.ok(R.akte.includes('kasse')); assert.ok(R.bond.fraenz < 0);
+  assert.equal(folgenAmMorgen(R, FOLGEN).length, 0);                 // nicht doppelt
+  R.tag = 2;
+  f = folgenAmMorgen(R, FOLGEN).map((x) => x.id);
+  assert.deepEqual(f, ['kasse.pit']); assert.ok(R.chats.some((c) => c.von === 'pit'));
+  // Spott: zweimal Pit → er kommt nicht mehr, Jolie wendet sich ab
+  const S = neuerLauf({ karten: K() });
+  wirke(S, { flags: { 'spott.pit': 2, 'spott.tag.pit': 0 } }); S.tag = 1;
+  assert.ok(folgenAmMorgen(S, FOLGEN).some((x) => x.id === 'spott.pit')); assert.ok(S.flags['pit.weg'] && S.flags['meidet.pit']); assert.ok(S.bond.jolie < 0);
 });
 test('Ausgänge: jeder ist erreichbar, der letzte fängt alles auf; Akte hat beide Seiten', () => {
   const mit = (f) => { const R = neuerLauf({ karten: K() }); f(R); return ausgangFuer(R, AUSGAENGE).id; };
@@ -107,7 +145,8 @@ test('Ausgänge: jeder ist erreichbar, der letzte fängt alles auf; Akte hat bei
   assert.equal(mit((R) => { R.geld = 120; R.bond.fraenz = 1; R.akte.push('kontrolle.ohne'); }), 'kiosk');
   assert.equal(mit(() => {}), 'unsichtbar');
   assert.equal(mit((R) => { R.bond.ilda = 1; }), 'offen');
-  assert.equal(new Set(AUSGAENGE.map((a) => a.id)).size, 10);
+  assert.equal(mit((R) => { R.bond.pit = -2; R.bond.jolie = -3; R.bond.tun = -2; }), 'allein');
+  assert.equal(new Set(AUSGAENGE.map((a) => a.id)).size, 11);
   const R = neuerLauf({ karten: K() }); R.akte.push('schlag', 'luege.gedeckt'); R.flags['luege.gestanden'] = true;
   const z = akteFuer(R, AKTE); assert.equal(z.length, 2); assert.match(z[1].echt, /zugegeben/);
   for (const [id, e] of Object.entries(AKTE)) { assert.ok(e.amt && e.echt, id); assert.ok(woerter(e.amt) <= 12, id); }

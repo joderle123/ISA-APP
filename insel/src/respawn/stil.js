@@ -110,6 +110,13 @@ export const STIL = `
 .rs-leut{display:grid;grid-template-columns:1fr auto;gap:0 10px;padding:8px 0;border-bottom:1px solid rgba(127,127,127,.25);}
 .rs-leut b{font-size:16px;}.rs-leut i{font-style:normal;letter-spacing:2px;color:#ff4f8b;}.rs-leut i.ist-minus{color:#8a8aa8;}
 .rs-leut small{grid-column:1/-1;font-size:14px;opacity:.75;}
+.rs-kraft{letter-spacing:1px;font-size:14px;}
+.rs-seite h4{margin:10px 0 6px;font-size:13px;letter-spacing:.08em;text-transform:uppercase;opacity:.7;}
+.rs-hin{display:flex;flex-direction:column;align-items:flex-start;width:100%;min-height:52px;margin:0 0 6px;padding:8px 14px;border-radius:12px;border:1px solid rgba(127,127,127,.35);background:rgba(127,127,160,.12);font:inherit;color:inherit;cursor:pointer;text-align:left;}
+.rs-hin b{font-size:16px;}.rs-hin small{font-size:13px;opacity:.7;}
+.rs-marke{position:absolute;z-index:6;transform:translate(-50%,-100%);pointer-events:none;font-size:15px;font-weight:800;color:#fff;padding:5px 11px;border-radius:99px;background:linear-gradient(180deg,#ff8a5c,#ff5a7a);box-shadow:0 6px 16px -6px #ff5a7a;white-space:nowrap;animation:rs-wink 1.6s ease-in-out infinite;}
+.rs-marke.ist-ort{background:rgba(16,14,34,.72);box-shadow:none;animation:none;font-weight:700;font-size:14px;}
+.rs-marke small{opacity:.8;font-weight:600;margin-left:6px;}
 .rs-hilfe p{font-size:17px;margin:0 0 10px;}
 @media (max-width:560px){.rs-leiste{gap:7px;font-size:14px;padding-left:10px}.rs-jz{display:none}.rs-karte{flex-basis:100%;max-width:none}}
 `;
