@@ -56,6 +56,9 @@ man darf fast alles tun (auch Mist), keine Waffen, kein Gefängnis. Die Folgen s
     Tag mit ihm daneben fahren. Zugeben öffnet also wieder eine Tür.
   - Die Straßen zum Leuchtturm und zum Strand sind jetzt EINE durchgehende Hauptstraße (keine Lücke am Dorfplatz), mit
     zwei Wagen. Die Orte im Handy stehen zweispaltig (zwölf Orte passen auf einen Bildschirm).
+  - **Handy (Meldung 12.11., 22 Uhr):** „Deine Karten“ war höher als das Bild, der Knopf unten nicht erreichbar, Wischen
+    ging nicht. Alle vollen Bildschirme (`.rs-voll`) sind jetzt `.ov-scroll` (Wischen erlaubt), beginnen oben, die Karten
+    stehen am Handy als flache Zeilen und die Knöpfe bleiben unten sichtbar. Test: `tests/scenarios/respawn-handy.mjs`.
   - Im Hub steht RESPAWN als Kachel bei den Materialien (Klassebuch: `hub-apps.js`, Test `respawn-kachel.js`).
 - **Offen:** Spieltest mit Jugendlichen, Frauen-Modelle (Paket „Ultimate Modular Women“ fehlt noch), Gesichtsausdruck der
   neuen Figuren.

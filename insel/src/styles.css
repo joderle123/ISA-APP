@@ -620,6 +620,7 @@ html.reduced-fx .ov { -webkit-backdrop-filter: none; backdrop-filter: none; back
    ===================================================================================================================== */
 .bubble {
   position: absolute; left: 50%; bottom: calc(168px + var(--safe-b)); z-index: 25;
+  box-sizing: content-box;   /* Breite ohne Innenabstand (Tablet/PC); am Handy siehe unten: border-box */
   width: min(640px, calc(100vw - 32px));
   padding: 14px 152px 16px 24px;
   border-radius: var(--radius-l);
@@ -911,6 +912,12 @@ html.reduced-fx .ov { -webkit-backdrop-filter: none; backdrop-filter: none; back
   .zone-banner { top: calc(54px + var(--safe-t)); }
 }
 @media (max-width: 640px) {
+  /* Handy hochkant: Die Sprechblase darf nie breiter sein als das Bild (sonst liegt der Weiter-Knopf rechts außerhalb –
+     Meldung vom 12.11.2026). Breite samt Innenabstand rechnen, Knöpfe unter den Text, Schrift etwas kleiner. */
+  .bubble, .bubble.is-anchored { box-sizing: border-box; width: min(560px, calc(100vw - 20px)); padding: 12px 16px 70px 20px; }
+  .bubble-text { font-size: calc(20px * var(--txt-scale)); }
+  .bubble-tools { right: 10px; bottom: 8px; }
+  .bubble-read, .bubble-next { width: 54px; height: 54px; }
   .choices-grid { grid-template-columns: 1fr; }
   .cf-moments { grid-template-columns: 1fr; }
   .ampel { grid-template-columns: 1fr 1fr; }

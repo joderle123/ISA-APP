@@ -121,9 +121,12 @@ export function createBubbles({ root, events, game, speech, audio, icon, lock })
     const behind = V.z > 1;
     let x = (V.x * 0.5 + 0.5) * w, y = (-V.y * 0.5 + 0.5) * h;
     if (behind) { x = w / 2; y = h * 0.3; }
-    const minY = Math.min(h - 220, (item.el.offsetHeight || 100) + 56);   // ganze Blase samt Namen im Bild (Gesprächs-Kamera)
-    const hw = (item.el.offsetWidth || 340) / 2 + 16;                      // halbe Blasenbreite (bis 560 px breit) + Rand
-    x = Math.max(hw, Math.min(w - hw, x)); y = Math.max(minY, Math.min(h - 220, y));
+    // ganze Blase samt Namen im Bild (Gesprächs-Kamera); in RESPAWN liegt oben die Leiste mit Druck und Geld – darunter bleiben
+    const oben = root.classList.contains('mode-respawn') || document.getElementById('lumo-root')?.classList.contains('mode-respawn') ? 96 : 56;
+    const minY = Math.min(h - 150, (item.el.offsetHeight || 100) + oben);
+    const hw = (item.el.offsetWidth || 340) / 2 + (w < 480 ? 6 : 16);      // halbe Blasenbreite (bis 560 px breit) + Rand
+    x = hw * 2 >= w ? w / 2 : Math.max(hw, Math.min(w - hw, x));   // breiter als das Bild geht nicht: dann mittig
+    y = Math.max(minY, Math.min(Math.max(minY, h - 220), y));
     item.el.style.left = x.toFixed(0) + 'px';
     item.el.style.top = y.toFixed(0) + 'px';
     if (force) item.el.style.transition = 'none';

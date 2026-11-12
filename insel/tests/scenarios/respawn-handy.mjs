@@ -47,6 +47,57 @@ try {
     await page.tap('.rs-voll.ist-karten [data-k="los"]');
     const weg = await page.waitForFunction(() => !document.querySelector('.rs-voll.ist-karten'), null, { timeout: 15000 }).then(() => true, () => false);
     check(`${name} · Tipp auf „So spiele ich“ startet die Runde`, weg);
+    // Erste Szene mit echten Fingertipps (Meldung vom 12.11.2026, 22:21 Uhr: „Hier bleibt es hängen“ – die Sprechblase war
+    // breiter als das Bild, der Weiter-Knopf lag rechts außerhalb). Blase ganz im Bild, unter der Leiste; ein Tipp
+    // irgendwo ins Bild schaltet weiter.
+    const lage = () => page.evaluate(() => {
+      const r = (e) => { if (!e) return null; const q = e.getBoundingClientRect(); return [Math.round(q.left), Math.round(q.top), Math.round(q.right), Math.round(q.bottom)]; };
+      const bl = document.querySelector('.bubble.is-in');
+      return { titel: !!document.querySelector('.rs-voll.ist-titel'), zeile: !!document.querySelector('.rs-zeile.is-da'), blase: r(bl), text: bl ? bl.querySelector('.bubble-text').textContent : '',
+        knopf: bl ? r(bl.querySelector('[data-next]')) : null, leiste: r(document.querySelector('.rs-leiste')), wahl: LUMO.ui.choices.open, b: innerWidth, h: innerHeight };
+    });
+    let bl = null, zeilen = 0;
+    for (let i = 0; i < 80 && !bl; i++) {
+      await page.waitForTimeout(400);
+      const l = await lage();
+      if (l.blase) { bl = l; break; }
+      if (l.titel || l.zeile) { if (l.zeile) zeilen++; await page.touchscreen.tap(Math.round(vp.width / 2), Math.round(vp.height * 0.45)); }
+    }
+    check(`${name} · Erste Szene: Mit Tipps ins Bild (Titel, Erzählzeile) kommt man bis zur Sprechblase`, !!bl, { bl, zeilen });
+    if (bl) {
+      check(`${name} · Sprechblase liegt ganz im Bild und unter der Leiste`, bl.blase[0] >= 0 && bl.blase[2] <= bl.b && bl.blase[1] >= (bl.leiste ? bl.leiste[3] : 0) - 2 && bl.blase[3] <= bl.h, bl);
+      check(`${name} · Weiter-Knopf der Blase ist im Bild (mindestens 44 px)`, !!bl.knopf && bl.knopf[0] >= 0 && bl.knopf[2] <= bl.b && bl.knopf[2] - bl.knopf[0] >= 44, bl);
+      if (SHOTS) await page.screenshot({ path: join(SHOTS, `rs-handy-blase-${vp.width}.png`) });
+      await page.touchscreen.tap(Math.round(vp.width / 2), Math.round(vp.height * 0.62));
+      await page.waitForTimeout(900);
+      const d = await lage();
+      check(`${name} · Tipp irgendwo ins Bild schaltet die Blase weiter`, d.text !== bl.text || !d.blase, d);
+      // und der Knopf selbst geht auch
+      if (d.blase && d.knopf) { await page.touchscreen.tap((d.knopf[0] + d.knopf[2]) / 2, (d.knopf[1] + d.knopf[3]) / 2); await page.waitForTimeout(900); const e = await lage(); check(`${name} · Tipp auf den Weiter-Knopf schaltet weiter`, e.text !== d.text || !e.blase, e); }
+    }
+    // Einmal bis zum Ende durchspielen (nur schlafen): Auch der Abschluss mit Akte muss am Handy bedienbar sein
+    if (vp.width === 412) {
+      const ende = await page.evaluate(() => new Promise((resolve) => {
+        const P = LUMO.plugin('respawn'), E = LUMO.events, t0 = Date.now();
+        const tick = setInterval(() => {
+          if (document.querySelector('.rs-voll.ist-ende')) { clearInterval(tick); resolve(true); }
+          else if (LUMO.ui.choices.open) E.emit('dialogue:choose', { index: LUMO.ui.choices.current.items.filter((x) => !x.disabled)[0].index });
+          else if (LUMO.ui.bubbles.current) E.emit('input:action:down');
+          else if (P.frei) P.tue({ schlafen: true });
+          else E.emit('respawn:weiter');
+          if (Date.now() - t0 > 200000) { clearInterval(tick); resolve(false); }
+        }, 25);
+      }));
+      check(`${name} · Runde bis zum Abschluss gespielt`, ende);
+      if (ende) {
+        await page.waitForTimeout(700);
+        const a = await mass('.rs-voll.ist-ende');
+        check(`${name} · Abschluss: Knopf unten ist im Bild, der Rest lässt sich wischen`, a.knopfUnten <= a.bild && a.oben >= 0 - 1 && a.wischen, a);
+        const r2 = await page.evaluate(() => { const v = document.querySelector('.rs-voll.ist-ende'); const max = v.scrollHeight - v.clientHeight; v.scrollTop = max; const t = v.scrollTop; v.scrollTop = 0; return { max, top: t }; });
+        check(`${name} · Abschluss: rollt bis ganz nach unten`, r2.top >= r2.max - 1, r2);
+        if (SHOTS) await page.screenshot({ path: join(SHOTS, 'rs-handy-ende.png') });
+      }
+    }
     check(`${name} · Keine Fehler`, errors.length === 0, errors.slice(0, 3));
     await ctx.close();
   }

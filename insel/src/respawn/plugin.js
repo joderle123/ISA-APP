@@ -251,6 +251,21 @@ export default {
     });
     events.on('npc:talk', (e) => { if (!e || e.handled) return; e.handled = true; if (R && tagEnde) leuteMenue(e.id); });
 
+    // ---------- Tippen irgendwo ins Bild schaltet weiter (Sprechblase, Erzählzeile) ----------
+    // Am Handy sucht niemand den kleinen Weiter-Knopf: Ein kurzer Tipp aufs Bild reicht. Gilt nur, solange eine Blase mit
+    // Weiter-Knopf oder eine Erzählzeile offen ist – nicht auf Knöpfen, in der Auswahl oder in Fenstern.
+    {
+      let unten = null;
+      const offen = () => { const b = ui.bubbles.current; return (b && b.el && b.el.querySelector('[data-next]')) ? b.el : document.querySelector('.rs-zeile.is-da'); };
+      const frei_ = (t) => !(t && t.closest && t.closest('button, a, input, .choices, .ov, .overlay, .menu, .rs-voll, .rs-geschick, .rs-zeile, .bubble-tools'));
+      window.addEventListener('pointerdown', (e) => { const el = offen(); unten = el && frei_(e.target) ? { el, x: e.clientX, y: e.clientY, t: performance.now() } : null; }, true);
+      window.addEventListener('pointerup', (e) => {
+        const u = unten; unten = null;
+        if (!u || u.el !== offen() || Math.hypot(e.clientX - u.x, e.clientY - u.y) > 14 || performance.now() - u.t > 700) return;
+        if (u.el.classList.contains('rs-zeile')) events.emit('respawn:weiter'); else events.emit('input:action:down');
+      }, true);
+    }
+
     function marken_() {
       if (!R || !tagEnde) { alleWeg(); return; }
       const soll = new Set();
