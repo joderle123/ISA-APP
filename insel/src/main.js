@@ -27,7 +27,7 @@ async function boot() {
     return;
   }
   game.loop.start();
-  status.textContent = 'Die Insel wartet auf dich.';
+  status.textContent = game.gameMode === 'respawn' ? 'Ein Jahr wartet auf dich.' : 'Die Insel wartet auf dich.';
   startBtn.classList.remove('is-hidden');
   let started = false;
   const go = (e) => {

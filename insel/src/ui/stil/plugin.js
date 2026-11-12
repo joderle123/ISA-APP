@@ -63,6 +63,7 @@ export default {
 
     // ---- Erster Start ----
     const autoOpen = () => {
+      if (game.gameMode === 'respawn') return;   // RESPAWN öffnet das Studio aus seinem Startmenü
       if (params.has('stil')) { setTimeout(() => studio.open({ first: !game.avatar.isSet }), 900); return; }
       if (params.has('test') || params.has('nostil') || game.avatar.isSet) return;
       setTimeout(() => { if (!game.avatar.isSet && game.started && !ui.overlay.count) studio.open({ first: true }); }, 1400);

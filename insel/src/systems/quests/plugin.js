@@ -166,7 +166,7 @@ export default {
     });
     let started = false;
     events.on('day:new', () => { if (started) engine.echoes.check(); });
-    const boot = () => { if (started) return; started = true; state.inc('sessions'); engine.resume(); };
+    const boot = () => { if (started || game.gameMode === 'respawn') return; started = true; state.inc('sessions'); engine.resume(); };
     if (game.started) boot(); else events.on('game:start', boot);
     events.on('state:reset', () => { markers.clear(); ctx.clearRueckenwind(); if (started) engine.resume(); });
     events.on('save:load', () => { if (started) engine.resume(); });

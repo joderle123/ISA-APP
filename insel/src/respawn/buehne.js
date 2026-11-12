@@ -1,0 +1,147 @@
+// RESPAWN – Bühne: spielt eine Situation in der 3D-Welt (Ort, Uhrzeit, Figuren aufstellen, Kamera, Blasen, Wahlen).
+// Die Schritte kommen aus daten/situationen-*.js; die Regeln (Sperren, Uhr, Wirkungen) aus run.js.
+//   const buehne = createBuehne({ game, O })      O = Oberfläche (oberflaeche.js)
+//   await buehne.spiele(situation, R) → { abgebrochen? }      buehne.zeige(ort, uhr) (freier Nachmittag)
+import { wirke, wahlen, zeitFuer, ohneWahl, SPERRE_TEXT, hatKarte, karte } from './run.js';
+import { FIGUREN, STIMMEN } from './daten/index.js';
+
+const fn = (v, R) => (typeof v === 'function' ? v(R) : v);
+const warte = (ms) => new Promise((r) => setTimeout(r, ms));
+
+export function createBuehne({ game, O }) {
+  const { ui, npcs, player, cameraRig } = game;
+  const test = game.params && game.params.has('test');
+  let szene = null;   // { sit, R, cast: Map(id → npc), fremd: Set, mitte }
+
+  // Sprecher anmelden (Figuren ohne Eintrag in der Insel, Stimmen am Telefon)
+  for (const [id, f] of Object.entries(FIGUREN)) ui.bubbles.registerSpeaker(id, { name: f.name, icon: f.icon, color: f.color, voice: f.voice });
+  for (const [id, s] of Object.entries(STIMMEN)) ui.bubbles.registerSpeaker(id, s);
+
+  function figur(id) {
+    let n = npcs.get(id);
+    if (!n && FIGUREN[id]) { n = npcs.spawn(FIGUREN[id]); if (szene) szene.fremd.add(id); }
+    return n;
+  }
+  const yawZu = (x1, z1, x2, z2) => Math.atan2(x2 - x1, z2 - z1);
+
+  function aufstellen(sit, R) {
+    const site = game.content.resolveSite(fn(sit.ort, R)) || { x: 6, z: 118 };
+    const v = sit.versatz || {};
+    const cx = site.x + (v.x || 0), cz = site.z + (v.z || 0);
+    // Blickrichtung: zur Inselmitte hin (Dorf und Berg im Hintergrund), außer die Situation gibt eine vor
+    const a = typeof sit.richtung === 'number' ? sit.richtung : Math.atan2(-cx, -cz);
+    const px = cx - Math.sin(a) * 1.3, pz = cz - Math.cos(a) * 1.3;
+    if (typeof sit.uhr === 'number') game.time.setTimeOfDay(sit.uhr);
+    if (game.world.sky.setStorm) game.world.sky.setStorm(sit.sturm || 0);
+    player.teleport(px, pz, a);
+    const ids = fn(sit.cast, R) || [];
+    const n = ids.length;
+    ids.forEach((id, i) => {
+      const f = figur(id);
+      if (!f) return;
+      const off = n === 1 ? 0 : (i / (n - 1) - 0.5) * Math.min(1.5, 0.75 * (n - 1));
+      const d = 1.5 + (n > 2 && i % 2 ? 0.5 : 0);
+      const x = cx + Math.sin(a + off) * d, z = cz + Math.cos(a + off) * d;
+      const yaw = yawZu(x, z, px, pz);
+      if (f.warpTo) f.warpTo(x, z, yaw);
+      f.setOverride({ x, z, yaw, anim: 'idle' });
+      f.face({ x: px, y: 1.4, z: pz });
+      szene.cast.set(id, f);
+    });
+    szene.mitte = { x: cx, z: cz, a, px, pz };
+    if (cameraRig.behindPlayer) cameraRig.behindPlayer();
+    if (cameraRig.snap) cameraRig.snap();
+  }
+
+  function abbauen() {
+    if (!szene) return;
+    for (const [id, f] of szene.cast) {
+      if (szene.fremd.has(id)) { npcs.remove(id); continue; }
+      try { f.face(null); f.clearOverride(); if (f.humanoid) f.humanoid.setExpression(null); } catch (e) { /* Figur schon weg */ }
+    }
+    if (cameraRig.setMode) cameraRig.setMode(null);
+    ui.lock.release('respawn');
+    szene = null;
+  }
+
+  function mimik(id, f, opt) {
+    if (!f || !opt) return;
+    if (opt.versteckt !== undefined) { const o = f.override || {}; f.setOverride({ ...o, hidden: !!opt.versteckt }); }
+    if (opt.mimik) { if (npcs.setEmotion && !szene.fremd.has(id)) npcs.setEmotion(id, { primary: [opt.mimik, 7] }); if (f.humanoid) f.humanoid.setExpression(opt.mimik); }
+    if (opt.anim) { const o = f.override || {}; f.setOverride({ ...o, anim: opt.anim }); }
+    if (opt.emote && f.humanoid && f.humanoid.playEmote) { try { f.humanoid.playEmote(opt.emote, {}); } catch (e) { /* unbekannte Geste */ } }
+  }
+  function kamera(f) {
+    if (f && f.group && cameraRig.setMode) cameraRig.setMode('talk', { target: f.group, side: 1 });
+  }
+
+  async function wahl(liste, opt = {}) {
+    const { R, sit } = szene;
+    const sicht = wahlen(R, liste);
+    if (!sicht.length) return;
+    let sek = opt.ruhe ? 0 : zeitFuer(R);
+    if (opt.eil) sek = Math.min(sek || 10, 10);
+    const standard = ohneWahl(R, sicht);
+    const r = await O.wahl({
+      frage: opt.frage,
+      items: sicht.map((w) => ({
+        label: w.t, art: w.art, gesperrt: !!w.gesperrt,
+        sub: w.gesperrt ? (w.gesperrt === 'geld' ? 'Zu wenig Geld' : SPERRE_TEXT[w.gesperrt]) : (w.kostet ? w.kostet + ' Euro' : ''),
+        karte: w.nur ? karte('kopf', w.nur) : null,
+      })),
+      sekunden: sek, standard, druck: R.druck,
+    });
+    const w = sicht[r.index] || sicht[standard];
+    R.log.push({ sit: sit.id, wahl: w.t, art: w.art, uhr: !!r.uhr });
+    game.events.emit('respawn:wahl', { sit: sit.id, wahl: w.t, art: w.art, uhr: !!r.uhr });
+    if (r.uhr) await O.erzaehler('Zu lange gezögert.', { kurz: true });
+    O.wirkung(wirke(R, w.e, { reiz: !!(w.reiz || opt.reiz) }), R);
+    await lauf(w.dann || []);
+  }
+
+  async function lauf(schritte) {
+    for (const s of schritte) {
+      if (!szene) return;
+      const { R } = szene;
+      const art = s[0];
+      if (art === 't') { if (cameraRig.setMode && cameraRig.mode === 'talk') cameraRig.setMode(null); await O.erzaehler(s[1]); }
+      else if (art === 'd') await O.gedanke(s[1]);
+      else if (art === 'k') { if (hatKarte(R, s[1])) await O.gedanke(s[2], karte('kopf', s[1])); }
+      else if (art === 's') {
+        const id = fn(s[1], R), f = szene.cast.get(id) || null;
+        if (f) { mimik(id, f, s[3]); kamera(f); if (f.override) f.setOverride({ ...f.override, anim: (s[3] && s[3].anim) || 'talk' }); }
+        await ui.say({ who: id, text: s[2], anchor: f ? f.group : null });
+        if (f && f.override) f.setOverride({ ...f.override, anim: (s[3] && s[3].anim) || 'idle' });
+      }
+      else if (art === 'm') mimik(fn(s[1], R), szene.cast.get(fn(s[1], R)), s[2]);
+      else if (art === 'weg') { const f = szene.cast.get(fn(s[1], R)); if (f) { f.setOverride({ ...(f.override || {}), hidden: true }); if (!test) await warte(350); } }
+      else if (art === 'e') O.wirkung(wirke(R, s[1], s[2] || {}), R);
+      else if (art === 'wenn') await lauf(s[1](R) ? (s[2] || []) : (s[3] || []));
+      else if (art === 'w') await wahl(s[1], s[2] || {});
+    }
+  }
+
+  return {
+    get aktiv() { return !!szene; },
+    async spiele(sit, R) {
+      szene = { sit, R, cast: new Map(), fremd: new Set(), mitte: null };
+      ui.lock.acquire('respawn');
+      try {
+        aufstellen(sit, R);
+        if (!test) await warte(500);
+        await lauf(fn(sit.szene, R) || []);
+      } finally { abbauen(); }
+    },
+    // Freier Nachmittag: Ort und Uhrzeit zeigen, ein Satz
+    async zeige(ortId, uhr, satz) {
+      const site = game.content.resolveSite(ortId) || { x: 6, z: 118 };
+      if (typeof uhr === 'number') game.time.setTimeOfDay(uhr);
+      const a = Math.atan2(-site.x, -site.z);
+      player.teleport(site.x - Math.sin(a) * 1.5, site.z - Math.cos(a) * 1.5, a);
+      if (cameraRig.behindPlayer) cameraRig.behindPlayer();
+      if (cameraRig.snap) cameraRig.snap();
+      if (satz) await O.erzaehler(satz);
+    },
+    abbrechen() { abbauen(); },
+  };
+}

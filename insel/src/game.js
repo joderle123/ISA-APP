@@ -243,7 +243,7 @@ export async function createGame({ canvas, root, hudRoot, onProgress = () => {} 
       ui.show(true);
       ui.showIntro(false);
       const Z = island.zoneById('hafen');
-      setTimeout(() => ui.showZone(Z.name, 'Willkommen auf der Insel!', 'Du bist angekommen'), 400);
+      if (game.gameMode !== 'respawn') setTimeout(() => ui.showZone(Z.name, 'Willkommen auf der Insel!', 'Du bist angekommen'), 400);
       game.zone = 'hafen';
       events.emit('game:start');
     };
@@ -308,7 +308,19 @@ export async function createGame({ canvas, root, hudRoot, onProgress = () => {} 
 
   // ---- Kern (Zustand, Speichern, Inhalte, Zufall) und alle Plugins (src/**/plugin.js, siehe core/state.js) ----
   await step(0.8, 'Die Insel erinnert sich …');
-  await installCore(game, { plugins: PLUGINS, content: CONTENT, params });
+  // Spielmodus: 'lumo' (die Kurs-Insel) oder 'respawn' (ein Jahr als Jugendliche:r, src/respawn). RESPAWN hat einen eigenen
+  // Speicher (Schlüssel respawn.*), damit die LUMO-Spielstände unberührt bleiben.
+  game.gameMode = params.get('mode') || (typeof window !== 'undefined' && window.__LUMO_MODE) || 'lumo';
+  let storage = null;
+  if (game.gameMode === 'respawn') {
+    try {
+      const L = window.localStorage, P = 'respawn.';
+      L.getItem('respawn.probe');
+      storage = { getItem: (k) => L.getItem(P + k), setItem: (k, v) => L.setItem(P + k, v), removeItem: (k) => L.removeItem(P + k),
+        get length() { return L.length; }, key: (i) => { const k = L.key(i); return k && k.startsWith(P) ? k.slice(P.length) : null; } };
+    } catch (e) { storage = null; }
+  }
+  await installCore(game, { plugins: PLUGINS, content: CONTENT, params, storage });
 
   // Shader vorkompilieren (vermeidet Ruckler)
   await step(0.84, 'Farben werden gemischt …');

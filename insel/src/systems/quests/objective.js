@@ -63,7 +63,7 @@ export function createObjective({ game, engine, markers }) {
     textT -= dt;
     if (textT <= 0 || hide !== !info.visible) {
       textT = 0.25;
-      const text = step ? (step.label || '') : active ? '' : free ? free.text : 'Neuer Code? Tagebuch → Code';
+      const text = game.gameMode === 'respawn' ? '' : step ? (step.label || '') : active ? '' : free ? free.text : 'Neuer Code? Tagebuch → Code';
       info.mode = step ? 'step' : active ? 'none' : free ? 'frei' : 'code';
       info.text = text;
       info.dist = target && p ? Math.hypot(target.x - p.x, target.z - p.z) : null;

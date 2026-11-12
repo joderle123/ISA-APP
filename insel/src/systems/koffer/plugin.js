@@ -259,6 +259,7 @@ export default {
     // ---- Koffer-Steine (Umbau in der Welt) ----
     const stones = [];
     function placeStones() {
+      if (game.gameMode === 'respawn') return;
       if (!game.props || !game.props.spawn || !game.interactions) return;
       for (const s of STONES) {
         const site = content.resolveSite(s.site);

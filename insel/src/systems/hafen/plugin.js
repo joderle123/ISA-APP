@@ -107,6 +107,7 @@ export default {
     events.on('session:ended', () => { const b = state.get('story.beat'); if (b) setTimeout(() => playBeat(b), 1200); });
 
     const onStart = () => {
+      if (game.gameMode === 'respawn') return;   // RESPAWN erzählt seine eigene Ankunft
       setTimeout(() => { if (firstStart()) setTimeout(() => playBeat('m0-ankunft-boot'), 2500); else { const b = state.get('story.beat'); if (b) setTimeout(() => playBeat(b), 3000); } }, 300);
     };
     if (game.started) onStart(); else events.on('game:start', onStart);

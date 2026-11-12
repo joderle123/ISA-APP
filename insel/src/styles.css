@@ -975,3 +975,6 @@ html.reduced-fx .quest-obj.is-new, html.reduced-fx .quest-obj.is-nudge { animati
 html.reduced-fx .patch-reveal { animation: pr-fade 2.2s ease forwards; }
 html.reduced-fx .patch-reveal .pr-shine, html.reduced-fx .patch-reveal .pr-ring { animation: none; display: none; }
 @keyframes pr-fade { 0%, 100% { opacity: 0; } 15%, 75% { opacity: 1; } }
+
+/* RESPAWN (src/respawn): Titelkarte mit sieben Buchstaben */
+.boot-title.boot-title-rs { font-size: clamp(44px, 11vmin, 104px); letter-spacing: .02em; }

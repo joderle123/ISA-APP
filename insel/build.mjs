@@ -65,6 +65,14 @@ const distDir = join(root, 'dist');
 mkdirSync(distDir, { recursive: true });
 writeFileSync(join(distDir, 'index.html'), full);
 writeFileSync(join(distDir, 'lumo-vorschau.html'), preview);
+// RESPAWN (src/respawn): dieselbe Datei mit gesetztem Spielmodus und eigener Titelkarte
+const respawn = full
+  .replace('<script>', '<script>window.__LUMO_MODE="respawn";</script>\n<script>')
+  .replace(/<title>[\s\S]*?<\/title>/i, '<title>RESPAWN</title>')
+  .replace('<div class="boot-kicker">Ein Abenteuer auf der Insel</div>', '<div class="boot-kicker">Ein Jahr auf der Insel</div>')
+  .replace(/<h1 class="boot-title"[\s\S]*?<\/h1>/, '<h1 class="boot-title boot-title-rs" aria-label="RESPAWN"><span>R</span><span>E</span><span>S</span><span>P</span><span>A</span><span>W</span><span>N</span></h1>')
+  .replace('<div class="boot-sub">Die Insel</div>', '<div class="boot-sub">Dann nochmal. Anders.</div>');
+writeFileSync(join(distDir, 'respawn.html'), respawn);
 
 const kb = (s) => (Buffer.byteLength(s) / 1024).toFixed(0) + ' KB';
 console.log(`dist/index.html ${kb(full)} · dist/lumo-vorschau.html ${kb(preview)} · JS ${kb(js)} · CSS ${kb(css)}`);

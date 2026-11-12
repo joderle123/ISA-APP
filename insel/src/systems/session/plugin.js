@@ -172,6 +172,7 @@ export default {
 
     // ---- Start ----
     const onStart = () => {
+      if (game.gameMode === 'respawn') return;   // kein Rückblick, kein Lagerfeuer
       const returning = state.get('playSeconds', 0) > 30 && !!state.get('recap');
       emit('session:start', { day: day(), returning });
       fires.refresh();
