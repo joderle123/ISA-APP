@@ -18,8 +18,10 @@ function builtGames(root) {
       if (fs.statSync(p).isDirectory()) walk(p);
       else if (n.endsWith('.js')) {
         const src = fs.readFileSync(p, 'utf8');
-        const m = src.match(/registerGame\(\s*\{[^}]*?id:\s*'([a-z0-9-]+)'/);
-        out.add(m ? m[1] : n.replace(/\.js$/, ''));
+        // eine Datei kann mehrere Spiele anmelden (Partyspiele: reden.js, duell.js, crew.js); Hilfsdateien ohne Spiel zählen nicht
+        const alle = [...src.matchAll(/registerGame\(\s*\{[^}]*?id:\s*'([a-z0-9-]+)'/g)].map((m) => m[1]);
+        if (alle.length) alle.forEach((id) => out.add(id));
+        else if (!/^\d/.test(n)) out.add(n.replace(/\.js$/, ''));
       }
     });
   };
