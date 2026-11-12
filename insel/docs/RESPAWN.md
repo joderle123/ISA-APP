@@ -5,7 +5,7 @@ man darf fast alles tun (auch Mist), keine Waffen, kein Gefängnis. Die Folgen s
 
 - **Öffnen:** `dist/respawn.html` (oder `index.html?mode=respawn`). Bau: `node build.mjs`. LUMO selbst bleibt unverändert.
 - **Ablauf:** Startkarten ziehen (Kopf, Zuhause, Tasche) → vier Jahreszeiten mit je drei freien Tagen (Kraft 3 je Tag) →
-  Finale am Steg → Ausgang (11) und Akte („Das steht drin“ / „Das war wirklich“) → nochmal mit anderen Karten.
+  Finale am Steg → Ausgang (12) und Akte („Das steht drin“ / „Das war wirklich“) → nochmal mit anderen Karten.
 - **Frei tun:** an Leuten (reden, helfen, Geld leihen/zurückgeben, entschuldigen, „Gemein sein …“: aufziehen, heimlich
   filmen, schubsen) und an Orten (jobben, in die Kasse greifen, Tor besprühen, Boot nehmen, zocken, schlafen …).
   Zeugen sind die Figuren, die in der 3D-Welt wirklich in der Nähe stehen.

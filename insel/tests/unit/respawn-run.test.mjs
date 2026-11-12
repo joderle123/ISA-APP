@@ -146,7 +146,10 @@ test('Ausgänge: jeder ist erreichbar, der letzte fängt alles auf; Akte hat bei
   assert.equal(mit(() => {}), 'unsichtbar');
   assert.equal(mit((R) => { R.bond.ilda = 1; }), 'offen');
   assert.equal(mit((R) => { R.bond.pit = -2; R.bond.jolie = -3; R.bond.tun = -2; }), 'allein');
-  assert.equal(new Set(AUSGAENGE.map((a) => a.id)).size, 11);
+  // freies Spiel: ein anderer steht für den eigenen Mist gerade → „Davongekommen“; wer es zugibt, bekommt die zweite Chance
+  assert.equal(mit((R) => { R.flags.spray = true; R.flags['spray.tunschuld'] = true; R.bond.ilda = 1; }), 'davongekommen');
+  assert.equal(mit((R) => { R.flags['kasse.geklaut'] = true; R.flags['gestanden.kasse'] = true; R.bond.ilda = 1; R.akte.push('gestanden'); }), 'zweite');
+  assert.equal(new Set(AUSGAENGE.map((a) => a.id)).size, 12);
   const R = neuerLauf({ karten: K() }); R.akte.push('schlag', 'luege.gedeckt'); R.flags['luege.gestanden'] = true;
   const z = akteFuer(R, AKTE); assert.equal(z.length, 2); assert.match(z[1].echt, /zugegeben/);
   for (const [id, e] of Object.entries(AKTE)) { assert.ok(e.amt && e.echt, id); assert.ok(woerter(e.amt) <= 12, id); }

@@ -2,10 +2,14 @@
 // erst mit Namen, wenn man ihn einmal erreicht hat; vorher nur der Hinweis.
 import { hat, bond, besteBindung } from '../run.js';
 
-const schwer = (R) => ['kasse', 'spray', 'boot', 'clip', 'schubsen', 'schlag', 'mitfahren.erwischt', 'tasche'].filter((a) => R.akte.includes(a)).length;
+const schwer = (R) => ['kasse', 'spray', 'boot', 'auto', 'clip', 'schubsen', 'schlag', 'mitfahren.erwischt', 'tasche'].filter((a) => R.akte.includes(a)).length;
 const schuetzt = (R) => ['video.geloescht', 'pit.geholfen', 'neue.geschuetzt', 'fest.geblieben', 'fest.hilfe', 'fest.gemeldet', 'mitfahren.gestoppt', 'luege.begleitet'].filter((f) => hat(R, f)).length;
-const aerger = (R) => hat(R, 'schlag') || hat(R, 'luege.gelogen') || hat(R, 'video.geteilt') || hat(R, 'mitfahren.erwischt') || hat(R, 'kontrolle.laut');
-const gutgemacht = (R) => hat(R, 'luege.gestanden') || hat(R, 'gespraech.eigen') || hat(R, 'pit.geholfen') || hat(R, 'fest.geblieben') || hat(R, 'fest.gemeldet');
+// freies Spiel: etwas angestellt / von sich aus zugegeben / ein anderer steht dafür gerade
+const MIST = ['kasse.geklaut', 'spray', 'boot.genommen', 'auto.genommen', 'markt.geklaut'];
+const zugegeben = (R) => ['kasse', 'spray', 'boot', 'auto', 'markt'].filter((k) => hat(R, 'gestanden.' + k)).length;
+const andererBuesst = (R) => hat(R, 'kasse.pitverdacht') || hat(R, 'spray.tunschuld') || hat(R, 'markt.noorverdacht');
+const aerger = (R) => hat(R, 'schlag') || hat(R, 'luege.gelogen') || hat(R, 'video.geteilt') || hat(R, 'mitfahren.erwischt') || hat(R, 'kontrolle.laut') || MIST.some((f) => hat(R, f));
+const gutgemacht = (R) => zugegeben(R) > 0 || hat(R, 'luege.gestanden') || hat(R, 'gespraech.eigen') || hat(R, 'pit.geholfen') || hat(R, 'fest.geblieben') || hat(R, 'fest.gemeldet');
 const freunde = (R) => ['jolie', 'tun', 'pit', 'noor', 'maelle', 'tiago'].filter((w) => bond(R, w) >= 3).length;
 
 export const AUSGAENGE = [
@@ -18,6 +22,9 @@ export const AUSGAENGE = [
   { id: 'krater', titel: 'Mikas rechte Hand', bild: 'flamme', farbe: '#ff8c42', hinweis: 'Am Krater ist immer Platz.',
     wenn: (R) => R.ruf.krater >= 4 && (hat(R, 'tasche') || hat(R, 'mitfahren.schmiere')),
     text: ['Du gehörst zur Crew. Alle grüßen dich.', 'Mika ruft an. Immer nachts. Du gehst immer ran.'] },
+  { id: 'davongekommen', titel: 'Davongekommen', bild: 'nebel', farbe: '#7d8aa0', hinweis: 'Nicht erwischt werden. Egal, wer zahlt.',
+    wenn: (R) => andererBuesst(R),
+    text: ['Dich hat keiner erwischt. Glückwunsch.', 'Bezahlt hat ein anderer. Das weißt nur du.'] },
   { id: 'dazwischen', titel: 'Geht dazwischen', bild: 'schild', farbe: '#4d8cff', hinweis: 'Für andere einstehen. Mehr als einmal.',
     wenn: (R) => schuetzt(R) >= 3,
     text: ['Auf der Insel sagen sie: Frag die Person vom Steg.', 'Wenn es brennt, schauen sie zu dir.'] },
