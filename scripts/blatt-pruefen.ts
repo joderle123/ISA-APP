@@ -17,6 +17,7 @@ import { bildGueltig, hatIcon } from '../src/blatt/zeichnung'
 import { GEFUEHLE, gefuehlWort } from '../src/blatt/gesichter'
 import { FIGUREN, POSEN } from '../src/blatt/figuren'
 import { istSzene } from '../src/blatt/szenen'
+import { istPeep, PEEP_GESICHTER, PEEP_HALTUNGEN } from '../src/blatt/peeps'
 import { MOTIV_NAMEN } from '../src/blatt/motive'
 import { QUELLEN_TEXTE } from '../src/blatt/quellen'
 import { eldibGoalById } from '../src/data/taxonomy'
@@ -158,6 +159,12 @@ function bildOk(id: string): string | null {
     if (!a || !FIGUREN[a]) return `Figur „${a}“ gibt es nicht`
     if (b && !(GEFUEHLE as string[]).includes(b)) return `Gefühl „${b}“ gibt es nicht`
     if (c && !(POSEN as string[]).includes(c)) return `Haltung „${c}“ gibt es nicht`
+    return null
+  }
+  if (art === 'peep') {
+    if (!a || !istPeep(a)) return `Peep „${a}“ gibt es nicht (Liste: src/blatt/peeps.ts)`
+    if (b && !(GEFUEHLE as string[]).includes(b) && !PEEP_GESICHTER.includes(b)) return `Gefühl „${b}“ gibt es nicht`
+    if (c && !(c in PEEP_HALTUNGEN)) return `Haltung „${c}“ gibt es nicht (Liste: PEEP_HALTUNGEN)`
     return null
   }
   return `Unbekannter Bildtyp „${id}“`

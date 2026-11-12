@@ -13,6 +13,7 @@ import { gesichtZeichnung, istGefuehl } from './gesichter'
 import { figurZeichnung } from './figuren'
 import { motivZeichnung } from './motive'
 import { istSzene, szeneZeichnung } from './szenen'
+import { istPeep, peepZeichnung, PEEP_HALTUNGEN, PEEP_GESICHTER } from './peeps'
 
 /** Farbrollen; alles andere wird als CSS-Farbe (#rrggbb) gelesen. */
 export type Rolle = 'tinte' | 'tief' | 'mittel' | 'zart' | 'papier' | 'grau' | 'hellgrau' | 'haut' | 'haar' | 'none'
@@ -31,7 +32,8 @@ interface Stil {
 }
 
 export type Form =
-  | ({ t: 'path'; d: string } & Stil)
+  /** `er`: Füllregel „evenodd“ (Löcher in zusammengesetzten Pfaden, z. B. bei den Peeps) */
+  | ({ t: 'path'; d: string; er?: boolean } & Stil)
   | ({ t: 'circle'; cx: number; cy: number; r: number } & Stil)
   | ({ t: 'ellipse'; cx: number; cy: number; rx: number; ry: number } & Stil)
   | ({ t: 'rect'; x: number; y: number; b: number; h: number; rx?: number } & Stil)
@@ -108,7 +110,7 @@ export function iconZeichnung(name: string): Zeichnung {
   }
 }
 
-/** Löst einen Bild-Verweis ('icon:…', 'gesicht:…', 'figur:…', 'motiv:…', 'szene:…') auf. */
+/** Löst einen Bild-Verweis ('icon:…', 'gesicht:…', 'figur:…', 'motiv:…', 'szene:…', 'peep:…') auf. */
 export function bildZeichnung(id: BildId): Zeichnung {
   const [art, ...rest] = id.split(':')
   if (art === 'icon') return iconZeichnung(rest[0] ?? '')
@@ -119,6 +121,7 @@ export function bildZeichnung(id: BildId): Zeichnung {
   if (art === 'figur') return figurZeichnung(rest[0] ?? 'mia', rest[1], rest[2])
   if (art === 'motiv') return motivZeichnung(rest[0] ?? '')
   if (art === 'szene') return szeneZeichnung(rest[0] ?? '')
+  if (art === 'peep') return peepZeichnung(rest[0] ?? 'jana', rest[1], rest[2])
   return iconZeichnung(id)
 }
 
@@ -129,5 +132,9 @@ export function bildGueltig(id: BildId): boolean {
   if (art === 'gesicht') return istGefuehl(name ?? '')
   if (art === 'figur' || art === 'motiv') return bildZeichnung(id).formen.length > 0
   if (art === 'szene') return istSzene(name ?? '')
+  if (art === 'peep') {
+    const [, wer, g, h] = id.split(':')
+    return istPeep(wer ?? '') && (!g || istGefuehl(g) || PEEP_GESICHTER.includes(g)) && (!h || h in PEEP_HALTUNGEN)
+  }
   return false
 }

@@ -24,7 +24,7 @@ function formPdf(f: Form, p: Palette, w: number, key: number, cap: 'round' | 'bu
   }
   switch (f.t) {
     case 'path':
-      return <Path key={key} d={f.d} {...common} />
+      return <Path key={key} d={f.d} {...common} fillRule={f.er ? 'evenodd' : undefined} />
     case 'circle':
       return <Circle key={key} cx={f.cx} cy={f.cy} r={f.r} {...common} />
     case 'ellipse':

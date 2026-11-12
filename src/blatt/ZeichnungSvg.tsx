@@ -23,7 +23,7 @@ function form(f: Form, p: Palette, w: number, key: number): ReactElement {
   }
   switch (f.t) {
     case 'path':
-      return <path key={key} d={f.d} {...c} />
+      return <path key={key} d={f.d} {...c} fillRule={f.er ? 'evenodd' : undefined} />
     case 'circle':
       return <circle key={key} cx={f.cx} cy={f.cy} r={f.r} {...c} />
     case 'ellipse':
