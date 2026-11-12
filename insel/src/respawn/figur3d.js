@@ -129,8 +129,7 @@ export async function ueberziehe(game, h, { stil, look } = {}) {
   f.faerbeNach(look || (h.config || {}));
   f.group.name = 'figur';
   f.group.scale.multiplyScalar(1.8 / HOEHE);   // die Spielfiguren sind 2,0 × Größenfaktor hoch; Kopf knapp unter dem Namensschild
-  // Die Modelle sind sehr schlank; die Insel ist kräftig gezeichnet. Etwas breiter und der Kopf etwas größer passt besser dazu.
-  f.group.scale.x *= 1.16; f.group.scale.z *= 1.16;
+  // Der Kopf etwas größer: liest sich aus der Spielkamera besser (Gesichter) und passt zur gezeichneten Welt.
   let kopf = null; f.group.traverse((o) => { if (o.isBone && /^head$/i.test(o.name)) kopf = o; });
   h.group.add(f.group);
   const e = { h, f, kopf };
@@ -148,7 +147,7 @@ export async function ueberziehe(game, h, { stil, look } = {}) {
         const clip = (x.h.emote && GESTE[x.h.emote]) || BEWEGUNG[x.h.anim] || 'Idle_Neutral';
         x.f.spiele(clip, { tempo: TEMPO[clip] || 1 });
         x.f.update(dt);
-        if (x.kopf) x.kopf.scale.setScalar(1.14);
+        if (x.kopf) x.kopf.scale.setScalar(1.1);
       }
     }, { order: 97, always: true });
   }
