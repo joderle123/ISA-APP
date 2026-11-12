@@ -9,10 +9,10 @@
     ],
     "layout": "jugend",
     "sozialform": [
-      "einzeln",
-      "gruppe"
+      "gruppe",
+      "einzeln"
     ],
-    "dauer": "15 Min.",
+    "dauer": "15–20 Min.",
     "eldib": [
       "K-21",
       "K-17",
@@ -31,98 +31,69 @@
     ],
     "de": {
       "titel": "Mehr als Worte",
-      "untertitel": "Was Gesicht, Stimme und Haltung mitsagen – und was im Chat fehlt",
+      "untertitel": "Worte, Stimme, Körper: Passen sie nicht zusammen, glauben die meisten der Stimme und dem Körper.",
       "bausteine": [
         {
-          "art": "text",
-          "text": "Wer spricht, sagt mehr als Worte: Gesicht, Stimme und Haltung reden mit. Man kann nicht nicht kommunizieren – auch wer schweigt oder wegschaut, sendet eine Botschaft."
-        },
-        {
           "art": "aufgabe",
-          "text": "Passen Worte und Körper zusammen? Schreib unter jedes Bild, was der Körper sagt."
-        },
-        {
-          "art": "comic",
-          "spalten": 3,
-          "felder": [
-            {
-              "figuren": [
-                "figur:ben:wuetend:verschraenkt"
-              ],
-              "text": "Ist mir doch egal.",
-              "untertitel": ""
-            },
-            {
-              "figuren": [
-                "figur:jana:traurig:stehen"
-              ],
-              "text": "Alles gut, echt.",
-              "untertitel": ""
-            },
-            {
-              "figuren": [
-                "figur:jana:froh:jubeln"
-              ],
-              "text": "Endlich geschafft.",
-              "untertitel": ""
-            }
+          "text": "Würfle verdeckt und sag den Satz so, wie die Zahl es will.",
+          "hinweis": "Ein Satz, sechs Bedeutungen. Dein Gegenüber rät die Zahl, dann wird getauscht.",
+          "symbole": [
+            "sprechen",
+            "partner"
           ]
         },
         {
-          "art": "info",
-          "symbol": "wissen",
-          "titel": "Drei Kanäle",
-          "text": "Passen die drei nicht zusammen, glauben die meisten der Stimme und dem Körper.",
-          "punkte": [
-            "Worte: was du sagst.",
-            "Stimme: wie du es sagst – laut oder leise, schnell oder langsam, freundlich oder genervt.",
-            "Körper: Gesicht, Blick, Haltung, Hände, Abstand."
+          "art": "wuerfel",
+          "titel": "„Klar, mach ruhig.“",
+          "zeilen": [
+            "genervt – mit Augenrollen",
+            "begeistert – du freust dich wirklich",
+            "traurig – leise, Blick nach unten",
+            "ängstlich – du traust dich kaum",
+            "gelangweilt – es ist dir völlig egal",
+            "beleidigt – mit verschränkten Armen"
           ]
         },
         {
           "art": "aufgabe",
-          "text": "Im Chat fehlen Stimme und Gesicht. Was kann eine Nachricht heißen – und wie kann sie ankommen?",
-          "hinweis": "Nimm diese Nachrichten: „Aha.“ – „Wie du meinst.“ – „Wir müssen reden.“"
-        },
-        {
-          "art": "tabelle",
-          "spalten": [
-            "Nachricht",
-            "So kann sie gemeint sein",
-            "So kann sie ankommen"
-          ],
-          "breiten": [
-            1.1,
-            2,
-            2
-          ],
-          "zeilen": 3,
-          "beispiel": [
-            "„ok.“",
-            "Passt, bin einverstanden.",
-            "Die ist sauer auf mich."
+          "text": "Im Chat fehlen Stimme und Gesicht. Wie kommt das bei dir an?",
+          "hinweis": "Kreuz an und vergleich mit jemandem neben dir: Wo habt ihr verschieden angekreuzt?",
+          "symbole": [
+            "ankreuzen"
           ]
         },
         {
-          "art": "aufgabe",
-          "text": "Wie findest du heraus, was gemeint ist? Ergänze die Sätze."
-        },
-        {
-          "art": "satzanfaenge",
-          "linien": 1,
+          "art": "einschaetzung",
           "items": [
-            "Wenn ich nicht weiß, wie eine Nachricht gemeint ist, …",
-            "Etwas Wichtiges kläre ich lieber …"
+            "„ok.“",
+            "„Aha.“",
+            "„Wie du meinst.“",
+            "„Wir müssen reden.“"
+          ],
+          "optionen": [
+            "freundlich",
+            "neutral",
+            "sauer"
+          ],
+          "kopffarben": [
+            "gruen",
+            "gelb",
+            "rot"
           ]
+        },
+        {
+          "art": "mission",
+          "text": "Schick diese Woche eine Nachricht als Sprachnachricht statt als Text – oder frag bei einer unklaren Nachricht einmal nach: „Wie meinst du das?“",
+          "tage": 1,
+          "beweis": "Daumen – hat es etwas geändert?"
         }
       ],
       "lehrer": {
-        "ziel": "Die Jugendlichen unterscheiden Worte, Stimme und Körper als Kanäle einer Nachricht, erkennen Widersprüche zwischen ihnen und entwickeln Strategien gegen Missverständnisse im Chat.",
+        "ziel": "Die Jugendlichen erleben am selben Satz, wie Stimme und Körper die Bedeutung ändern, merken an vier Chat-Nachrichten, wie verschieden sie ankommen, und probieren in der Woche einen Weg gegen Missverständnisse aus.",
         "ablauf": [
-          "Einheit 20, nach dem Plakat (4 Min.): Die Leitung sagt mit trauriger Stimme „Mir geht’s super“. Frage: „Was glaubt ihr mir?“ Dann Aufgabe 1 allein und kurz vergleichen.",
-          "Den Kasten „Drei Kanäle“ gemeinsam lesen und mit den Beispielen vom Plakat verbinden.",
-          "Nach den Emojis (5 Min.): Aufgabe 2 zu zweit. Frage: „Warum lesen wir ein ‚ok.‘ oft schlechter, als es gemeint ist?“",
-          "Aufgabe 3 allein (2 Min.); zwei, drei Sätze vorlesen lassen und als Chat-Regeln an die Tafel schreiben."
+          "Einheit 20, nach dem Drei-Runden-Spiel (12 Min.): Aufgabe 1 zu zweit, ein Würfel je Paar; die Leitung macht es einmal vor. Danach fragen: Wem glaubt ihr – den Worten oder dem Rest?",
+          "Nach den Emoji-Ecken (4 Min.): Aufgabe 2 allein ankreuzen und mit jemandem vergleichen. Frage: Was tut ihr, wenn eine Nachricht unklar ist? Antworten als Chat-Regeln an die Tafel.",
+          "Am Ende der Einheit die Mission vorlesen. Nächstes Mal reicht ein Daumen."
         ],
         "hintergrund": "Nach Watzlawick et al. (1967) kann man nicht nicht kommunizieren, und jede Nachricht hat einen Inhalts- und einen Beziehungsaspekt; die Beziehung wird vor allem über Stimme, Blick und Haltung vermittelt. Passen Worte und Körper nicht zusammen, entsteht eine widersprüchliche Botschaft, die das Gegenüber deuten muss. Schulz von Thun (1981) zeigt, dass jede Nachricht zugleich etwas über die Sache, die sprechende Person, die Beziehung und einen Wunsch aussagt. Im Chat fehlen Stimme und Körper; Lesende füllen die Lücke mit eigenen Deutungen, die zur Absicht nicht passen müssen. Nachfragen ist deshalb die einfachste Strategie gegen Missverständnisse.",
         "quellen": [
@@ -130,7 +101,7 @@
           "Schulz von Thun, F. (1981). Miteinander reden 1: Störungen und Klärungen. Reinbek: Rowohlt."
         ],
         "differenzierung": {
-          "leichter": "Aufgabe 2 gemeinsam an der Tafel lösen und nur die Spalte „So kann sie ankommen“ schreiben lassen.",
+          "leichter": "Aufgabe 1 ohne Würfel: Die Leitung nennt die Stimmung, alle sprechen den Satz gleichzeitig.",
           "schwerer": "Eine eigene missverständliche Nachricht erfinden und von jemandem deuten lassen: Stimmt die Deutung mit der Absicht überein?"
         },
         "impulse": [
@@ -142,103 +113,74 @@
           "Körpersprache beschreiben, aber nie bewerten – Blickkontakt und Abstand sind kulturell und persönlich verschieden."
         ],
         "achtung": "Kommen aktuelle Chat-Konflikte oder Cybermobbing zur Sprache: nicht in der Gruppe auswerten, ein Einzelgespräch anbieten, auf die BEE SECURE Helpline (8002 1234) hinweisen und die zuständige Leitung (Responsable) informieren.",
-        "material": "Blatt je Person, Stifte; Plakat mit drei Spalten"
+        "material": "Ein Würfel je Paar, Stifte"
       }
     },
     "fr": {
       "titel": "Plus que des mots",
-      "untertitel": "Ce que le visage, la voix et la posture disent aussi – et ce qui manque dans un chat",
+      "untertitel": "Les mots, la voix, le corps : quand ils ne disent pas la même chose, on croit surtout la voix et le corps.",
       "bausteine": [
         {
-          "art": "text",
-          "text": "Quand on parle, on dit plus que des mots : visage, voix et posture parlent aussi. On ne peut pas ne pas communiquer – même se taire ou détourner le regard envoie un message."
-        },
-        {
           "art": "aufgabe",
-          "text": "Les mots et le corps vont-ils ensemble ? Écris sous chaque image ce que dit le corps."
-        },
-        {
-          "art": "comic",
-          "spalten": 3,
-          "felder": [
-            {
-              "figuren": [
-                "figur:ben:wuetend:verschraenkt"
-              ],
-              "text": "Je m’en fiche.",
-              "untertitel": ""
-            },
-            {
-              "figuren": [
-                "figur:jana:traurig:stehen"
-              ],
-              "text": "Tout va bien, vraiment.",
-              "untertitel": ""
-            },
-            {
-              "figuren": [
-                "figur:jana:froh:jubeln"
-              ],
-              "text": "Enfin, c’est fait.",
-              "untertitel": ""
-            }
+          "text": "Lance le dé en cachette et dis la phrase comme le chiffre le demande.",
+          "hinweis": "Une phrase, six sens. Ton binôme devine le chiffre, puis on échange.",
+          "symbole": [
+            "sprechen",
+            "partner"
           ]
         },
         {
-          "art": "info",
-          "symbol": "wissen",
-          "titel": "Trois canaux",
-          "text": "Quand les trois ne vont pas ensemble, la plupart des gens croient la voix et le corps.",
-          "punkte": [
-            "Mots : ce que tu dis.",
-            "Voix : comment tu le dis – fort ou doucement, vite ou lentement, sur un ton aimable ou agacé.",
-            "Corps : visage, regard, posture, mains, distance."
+          "art": "wuerfel",
+          "titel": "« Vas-y, fais-le. »",
+          "zeilen": [
+            "agacé – en levant les yeux au ciel",
+            "enthousiaste – tu es vraiment content",
+            "triste – tout bas, le regard baissé",
+            "inquiet – tu oses à peine",
+            "blasé – ça t’est complètement égal",
+            "vexé – les bras croisés"
           ]
         },
         {
           "art": "aufgabe",
-          "text": "Dans un chat, voix et visage manquent. Que peut dire un message – et comment peut-il être reçu ?",
-          "hinweis": "Prends ces messages : « Ah. » – « Comme tu veux. » – « Il faut qu’on parle. »"
-        },
-        {
-          "art": "tabelle",
-          "spalten": [
-            "Message",
-            "Intention possible",
-            "Effet possible"
-          ],
-          "breiten": [
-            1.1,
-            2,
-            2
-          ],
-          "zeilen": 3,
-          "beispiel": [
-            "« ok. »",
-            "D’accord, ça me va.",
-            "Elle est fâchée contre moi."
+          "text": "Dans un chat, il manque la voix et le visage. Comment le reçois-tu ?",
+          "hinweis": "Coche, puis compare avec quelqu’un à côté de toi : où avez-vous coché différemment ?",
+          "symbole": [
+            "ankreuzen"
           ]
         },
         {
-          "art": "aufgabe",
-          "text": "Comment savoir ce que l’autre a voulu dire ? Complète."
-        },
-        {
-          "art": "satzanfaenge",
-          "linien": 1,
+          "art": "einschaetzung",
           "items": [
-            "Quand je ne sais pas ce qu’un message veut dire, …",
-            "Je préfère régler les choses importantes …"
+            "« ok. »",
+            "« Ah. »",
+            "« Comme tu veux. »",
+            "« Il faut qu’on parle. »"
+          ],
+          "optionen": [
+            "gentil",
+            "neutre",
+            "fâché"
+          ],
+          "kopffarben": [
+            "gruen",
+            "gelb",
+            "rot"
           ]
+        },
+        {
+          "art": "mission",
+          "text": "Cette semaine, envoie un message vocal à la place d’un texte – ou, devant un message pas clair, demande une fois : « Tu veux dire quoi ? »",
+          "tage": 1,
+          "beweis": "pouce – est-ce que ça a changé quelque chose ?"
         }
       ],
       "lehrer": {
-        "ziel": "Les jeunes distinguent les mots, la voix et le corps comme canaux d’un message, repèrent les contradictions entre eux et développent des stratégies contre les malentendus dans le chat.",
+        "ziel": "Les jeunes vivent, avec une même phrase, combien la voix et le corps changent le sens, constatent sur quatre messages de chat qu’ils sont reçus différemment et essaient pendant la semaine un moyen contre les malentendus.",
         "ablauf": [
-          "Séance 20, après l’affiche (4 min) : l’adulte dit d’une voix triste « Moi, ça va super. » Question : « Qu’est-ce que vous me croyez ? » Puis tâche 1 individuellement et brève comparaison.",
-          "Lire ensemble l’encadré « Trois canaux » et le relier aux exemples de l’affiche.",
-          "Après les émojis (5 min) : tâche 2 à deux. Question : « Pourquoi lit-on souvent un « ok. » plus durement qu’il n’est voulu ? »",
-          "Tâche 3 individuellement (2 min) ; faire lire deux ou trois phrases et les noter au tableau comme règles de chat."
+          "Séance 20, après le jeu en trois manches (12 min) : exercice 1 à deux, un dé par binôme ; l’adulte montre une fois. Puis demander : qui croyez-vous – les mots ou le reste ?",
+          "Après les coins des émojis (4 min) : exercice 2 seul, puis comparer avec quelqu’un. Question : que faites-vous quand un message n’est pas clair ? Noter les réponses au tableau comme règles de chat.",
+          "En fin de séance, lire la mission. La prochaine fois, un pouce suffit."
         ],
         "hintergrund": "Selon Watzlawick et al. (1967), on ne peut pas ne pas communiquer, et chaque message comporte un aspect de contenu et un aspect de relation ; la relation passe surtout par la voix, le regard et la posture. Quand les mots et le corps ne vont pas ensemble, il en résulte un message contradictoire que l’interlocuteur doit interpréter. Schulz von Thun (1981) montre que chaque message dit en même temps quelque chose sur la chose, sur la personne qui parle, sur la relation et sur un souhait. Dans le chat, la voix et le corps manquent ; la personne qui lit comble le vide avec ses propres interprétations, qui ne correspondent pas forcément à l’intention. Demander est donc la stratégie la plus simple contre les malentendus.",
         "quellen": [
@@ -246,7 +188,7 @@
           "Schulz von Thun, F. (1981). Miteinander reden 1: Störungen und Klärungen. Reinbek: Rowohlt."
         ],
         "differenzierung": {
-          "leichter": "Résoudre la tâche 2 en commun au tableau et ne faire écrire que la colonne « Effet possible ».",
+          "leichter": "Exercice 1 sans dé : l’adulte annonce l’humeur, tous disent la phrase en même temps.",
           "schwerer": "Inventer un message ambigu et le faire interpréter par quelqu’un : l’interprétation correspond-elle à l’intention ?"
         },
         "impulse": [
@@ -258,9 +200,13 @@
           "Décrire le langage corporel, jamais le juger – le contact visuel et la distance varient selon la culture et la personne."
         ],
         "achtung": "Si des conflits de chat actuels ou du cyberharcèlement sont évoqués : ne pas les analyser en groupe, proposer un entretien individuel, indiquer la BEE SECURE Helpline (8002 1234) et informer la direction compétente (responsable).",
-        "material": "Une feuille par personne, stylos ; affiche à trois colonnes"
+        "material": "Un dé par binôme, crayons"
       }
-    }
+    },
+    "look": "spiel",
+    "verwandt": [
+      "skills-drei-runden-karten"
+    ]
   },
   {
     "id": "skills-ich-botschaften",
@@ -275,7 +221,7 @@
       "einzeln",
       "gruppe"
     ],
-    "dauer": "20 Min.",
+    "dauer": "12–15 Min.",
     "eldib": [
       "K-26",
       "K-30",
@@ -294,11 +240,15 @@
     ],
     "de": {
       "titel": "Ich-Botschaften",
-      "untertitel": "Sagen, was ich fühle – ohne anzugreifen",
+      "untertitel": "Sagen, was dich stört – ohne anzugreifen.",
       "bausteine": [
         {
-          "art": "text",
-          "text": "„Du nervst immer.“ Solche Du-Botschaften klingen nach Angriff – die andere Person verteidigt sich oder schlägt zurück. Eine Ich-Botschaft sagt, was bei dir passiert und was du dir wünschst. Dann kann die andere Person zuhören, statt sich zu wehren."
+          "art": "aufgabe",
+          "text": "So baust du eine Ich-Botschaft: vier Teile, ein Satz.",
+          "hinweis": "Klappt am besten mit ruhigem Kopf. Anspannung über 70? Erst runterkommen, dann reden.",
+          "symbole": [
+            "lesen"
+          ]
         },
         {
           "art": "schritte",
@@ -306,124 +256,73 @@
           "linien": 0,
           "items": [
             {
-              "titel": "Ich fühle mich …",
-              "text": "das Gefühl: ein Wort vom Gefühlsrad"
+              "titel": "Ich fühle mich …",
+              "text": "genervt,"
             },
             {
               "titel": "wenn …",
-              "text": "die Situation: wie eine Kamera, ohne „immer“ und „nie“"
+              "text": "wenn ich unterbrochen werde,"
             },
             {
               "titel": "weil …",
-              "text": "der Grund: was dir wichtig ist"
+              "text": "weil ich den Faden verliere."
             },
             {
-              "titel": "Ich wünsche mir …",
-              "text": "der Wunsch: konkret und machbar"
+              "titel": "Ich wünsche mir …",
+              "text": "dass du mich ausreden lässt."
             }
           ]
         },
         {
-          "art": "info",
-          "symbol": "merke",
-          "titel": "So klingt das",
-          "text": "„Ich fühle mich genervt, wenn ich unterbrochen werde, weil ich dann meinen Gedanken verliere. Ich wünsche mir, dass du mich ausreden lässt.“"
-        },
-        {
           "art": "aufgabe",
-          "text": "Welche Ich-Botschaft gehört zu welcher Du-Botschaft? Verbinde.",
-          "hinweis": "Markiere danach in einer Ich-Botschaft das Gefühl, die Situation, den Grund und den Wunsch."
-        },
-        {
-          "art": "zuordnen",
-          "titel": [
-            "Du-Botschaft",
-            "Ich-Botschaft"
-          ],
-          "links": [
-            "„Du nervst immer.“",
-            "„Du hörst mir nie zu.“",
-            "„Du nimmst immer meine Sachen.“",
-            "„Du bist so unfair.“"
-          ],
-          "rechts": [
-            "„Ich ärgere mich, wenn mein Ladekabel weg ist, weil ich es abends brauche. Frag bitte vorher.“",
-            "„Ich bin sauer, wenn nur ich aufräume, weil wir abwechseln wollten. Ich wünsche mir einen Plan.“",
-            "„Ich bin genervt, wenn du mich unterbrichst, weil ich den Faden verliere. Lass mich bitte ausreden.“",
-            "„Ich bin enttäuscht, wenn du beim Erzählen aufs Handy schaust, weil mir das wichtig ist. Leg es bitte kurz weg.“"
+          "text": "Würfle eine Situation und sag eine Ich-Botschaft dazu.",
+          "hinweis": "Gefühlswörter stehen auf dem Gefühlsrad. Dein Gegenüber prüft: Steckt noch ein Angriff drin? „Ich finde, du bist egoistisch“ greift auch an.",
+          "symbole": [
+            "sprechen",
+            "partner"
           ]
         },
         {
-          "art": "info",
-          "symbol": "achtung",
-          "titel": "Vorsicht, verkleidete Du-Botschaft",
-          "text": "„Ich finde, du bist egoistisch“ oder „Ich fühle mich, als wärst du total unfair“ beginnen mit „Ich“ – und greifen trotzdem an. Eine echte Ich-Botschaft beschreibt dein Gefühl, nicht die andere Person."
-        },
-        {
-          "art": "aufgabe",
-          "text": "Jetzt du: Verwandle diese drei Sätze in Ich-Botschaften.",
-          "hinweis": "Die Situation hilft dir. Gefühlswörter findest du im Kasten."
-        },
-        {
-          "art": "wortspeicher",
-          "titel": "Gefühlswörter",
-          "items": [
-            "genervt",
-            "gestresst",
-            "enttäuscht",
-            "verletzt",
-            "traurig",
-            "wütend",
-            "unsicher",
-            "besorgt",
-            "überfordert",
-            "eifersüchtig"
+          "art": "wuerfel",
+          "titel": "Was sagst du?",
+          "zeilen": [
+            "Dein Bruder platzt zum dritten Mal in dein Zimmer.",
+            "Deine Freundin kommt schon wieder zwanzig Minuten zu spät.",
+            "Jemand liest mit, während du chattest.",
+            "In der Gruppenarbeit machst du alles allein.",
+            "Jemand nimmt dein Ladekabel und bringt es nicht zurück.",
+            "Im Bus hört jemand neben dir laut Musik ohne Kopfhörer."
           ]
         },
         {
-          "art": "frage",
-          "linien": 3,
-          "text": "„Lass mich in Ruhe.“ – Dein Bruder kommt zum dritten Mal in dein Zimmer, während du lernst."
-        },
-        {
-          "art": "frage",
-          "linien": 3,
-          "text": "„Immer kommst du zu spät.“ – Du wartest schon wieder zwanzig Minuten an der Bushaltestelle auf deine Freundin."
-        },
-        {
-          "art": "frage",
-          "linien": 3,
-          "text": "„Hör auf, meine Nachrichten zu lesen.“ – Deine große Schwester liest mit, während du chattest."
-        },
-        {
           "art": "aufgabe",
-          "text": "Deine eigene Ich-Botschaft: Denk an eine Situation, die dich stört oder gestört hat.",
-          "hinweis": "Du entscheidest, was du teilst. Niemand muss den Satz vorlesen."
+          "text": "Deine eigene Ich-Botschaft: Denk an etwas, das dich stört oder gestört hat.",
+          "hinweis": "Du entscheidest, was du teilst. Niemand muss den Satz vorlesen.",
+          "symbole": [
+            "schreiben"
+          ]
         },
         {
           "art": "satzanfaenge",
-          "linien": 1,
           "items": [
-            "Ich fühle mich …",
-            "wenn …",
-            "weil …",
+            "Ich fühle mich …, wenn …",
             "Ich wünsche mir …"
           ]
         },
         {
-          "art": "info",
-          "symbol": "tipp",
-          "text": "Ich-Botschaften gelingen mit ruhigem Kopf. Liegt deine Anspannung über 70, hol dich zuerst mit einem Skill runter – dann rede."
+          "art": "mission",
+          "text": "Probier diese Woche eine Ich-Botschaft aus – zu Hause, im Bus oder im Chat. Zwei Teile reichen: Gefühl und Wunsch.",
+          "tage": 1,
+          "beweis": "Daumen – wie hat die andere Person reagiert?"
         }
       ],
       "lehrer": {
-        "ziel": "Die Jugendlichen kennen die vier Teile einer Ich-Botschaft, unterscheiden Ich- von Du-Botschaften und formulieren Vorwürfe und eine eigene Situation als Ich-Botschaft.",
+        "ziel": "Die Jugendlichen kennen die vier Teile einer Ich-Botschaft, bilden mündlich Ich-Botschaften zu gewürfelten Situationen und schreiben eine eigene.",
         "ablauf": [
-          "Einheit 21, Einstieg (12 Min.): Eine Szene mit Unterbrechen zweimal spielen – mit „Du nervst immer“ und mit der Ich-Botschaft aus dem Kasten. Frage: „Was wollt ihr nach dem ersten Satz tun, was nach dem zweiten?“",
-          "Die vier Teile der Kette an der Tafel zeigen; beim „weil“ auf das Glas der Bedürfnisse verweisen.",
-          "Aufgabe 1 allein (4 Min.), dann vergleichen: Woran erkennt man die Ich-Botschaft?",
-          "Aufgabe 2 zu zweit (8 Min.); einige Sätze vorlesen und prüfen: Steckt noch ein Vorwurf darin?",
-          "Aufgabe 3 allein (4 Min.); die Sätze werden nicht vorgelesen, außer jemand möchte das."
+          "Einheit 21, nach „Schritt vor, Schritt zurück“ (4 Min.): die vier Teile an der Kette zeigen; beim „weil“ auf das Glas der Bedürfnisse verweisen.",
+          "Aufgabe 2 zu zweit (5 Min.), ein Würfel je Paar: würfeln, Ich-Botschaft sagen, das Gegenüber prüft. Zwei, drei Sätze im Plenum anhören.",
+          "Aufgabe 3 allein (3 Min.); die Sätze werden nicht vorgelesen, außer jemand möchte das.",
+          "Am Ende der Einheit die Mission vorlesen. Nächstes Mal reicht ein Daumen."
         ],
         "hintergrund": "Die Ich-Botschaft geht auf Thomas Gordon (1972) zurück: Du-Botschaften enthalten Urteile und lösen Verteidigung aus, Ich-Botschaften beschreiben das Verhalten, das eigene Gefühl und die Folgen für die sprechende Person. Die hier verwendete Form mit „weil“ und Wunsch verbindet Gordons Modell mit der Gewaltfreien Kommunikation nach Rosenberg (2001), in der hinter jedem Gefühl ein Bedürfnis steht und das Anliegen als erfüllbare Bitte formuliert wird. Die Formel ist ein Übungsgerüst; im Alltag reichen oft zwei Teile. Voraussetzung ist ein ruhiger Kopf: Bei hoher Anspannung kommt zuerst ein Skill, dann das Gespräch.",
         "quellen": [
@@ -443,16 +342,20 @@
           "Nicht auf dem genauen Wortlaut bestehen: Es geht um die Haltung, nicht um eine Formel."
         ],
         "achtung": "Ich-Botschaften helfen nicht gegen Mobbing oder Gewalt. Schreibt jemand in Aufgabe 3 von wiederholten Angriffen, Bedrohung oder Kontrolle, ein Einzelgespräch anbieten und die zuständige Leitung (Responsable) informieren.",
-        "material": "Blatt je Person, Stifte, Gefühlsrad, Glas der Bedürfnisse"
+        "material": "Ein Würfel je Paar, Stifte, Gefühlsrad, Glas der Bedürfnisse"
       }
     },
     "fr": {
       "titel": "Les messages-je",
-      "untertitel": "Dire ce que je ressens – sans attaquer",
+      "untertitel": "Dire ce qui te dérange – sans attaquer.",
       "bausteine": [
         {
-          "art": "text",
-          "text": "« Tu m’énerves tout le temps. » Les messages-tu de ce genre sonnent comme une attaque – l’autre se défend ou riposte. Un message-je dit ce qui se passe chez toi et ce que tu souhaites. L’autre peut alors t’écouter au lieu de se défendre."
+          "art": "aufgabe",
+          "text": "Voici comment construire un message-je : quatre parties, une phrase.",
+          "hinweis": "Ça marche mieux à tête reposée. Tension au-dessus de 70 ? Redescends d’abord, parle ensuite.",
+          "symbole": [
+            "lesen"
+          ]
         },
         {
           "art": "schritte",
@@ -460,124 +363,73 @@
           "linien": 0,
           "items": [
             {
-              "titel": "Je ressens …",
-              "text": "l’émotion : un mot de la roue des émotions"
+              "titel": "Je me sens …",
+              "text": "agacé,"
             },
             {
               "titel": "quand …",
-              "text": "la situation : comme une caméra, sans « toujours » ni « jamais »"
+              "text": "quand on me coupe la parole,"
             },
             {
               "titel": "parce que …",
-              "text": "la raison : ce qui est important pour toi"
+              "text": "parce que je perds le fil."
             },
             {
-              "titel": "Je souhaite …",
-              "text": "le souhait : concret et réalisable"
+              "titel": "J’aimerais …",
+              "text": "que tu me laisses finir."
             }
           ]
         },
         {
-          "art": "info",
-          "symbol": "merke",
-          "titel": "Ça donne ça",
-          "text": "« Je ressens de l’agacement quand on m’interrompt, parce que je perds mon idée. Je souhaite que tu me laisses finir. »"
-        },
-        {
           "art": "aufgabe",
-          "text": "Quel message-je correspond à quel message-tu ? Relie.",
-          "hinweis": "Ensuite, dans un message-je, marque l’émotion, la situation, la raison et le souhait."
-        },
-        {
-          "art": "zuordnen",
-          "titel": [
-            "Message-tu",
-            "Message-je"
-          ],
-          "links": [
-            "« Tu m’énerves tout le temps. »",
-            "« Tu ne m’écoutes jamais. »",
-            "« Tu prends toujours mes affaires. »",
-            "« Tu es tellement injuste. »"
-          ],
-          "rechts": [
-            "« Ça m’énerve quand mon chargeur a disparu, parce que j’en ai besoin le soir. Demande-moi avant, s’il te plaît. »",
-            "« Je suis en colère quand il n’y a que moi qui range, parce qu’on voulait se relayer. Je souhaite qu’on fasse un plan. »",
-            "« Ça m’agace quand tu m’interromps, parce que je perds le fil. Laisse-moi finir, s’il te plaît. »",
-            "« Ça me déçoit quand tu regardes ton téléphone pendant que je raconte, parce que c’est important pour moi. Pose-le un instant, s’il te plaît. »"
+          "text": "Lance le dé et dis un message-je pour la situation.",
+          "hinweis": "Les mots d’émotions sont sur la roue. Ton binôme vérifie : y a-t-il encore une attaque ? « Je trouve que tu es égoïste » attaque aussi.",
+          "symbole": [
+            "sprechen",
+            "partner"
           ]
         },
         {
-          "art": "info",
-          "symbol": "achtung",
-          "titel": "Attention, message-tu déguisé",
-          "text": "« Je trouve que tu es égoïste » ou « J’ai l’impression que tu es complètement injuste » commencent par « je » – et attaquent quand même. Un vrai message-je décrit ton émotion, pas l’autre personne."
-        },
-        {
-          "art": "aufgabe",
-          "text": "À toi : transforme ces trois phrases en messages-je.",
-          "hinweis": "La situation t’aide. Tu trouveras des mots d’émotions dans l’encadré."
-        },
-        {
-          "art": "wortspeicher",
-          "titel": "Pour compléter « Je ressens … »",
-          "items": [
-            "de l’agacement",
-            "du stress",
-            "de la déception",
-            "de la peine",
-            "de la tristesse",
-            "de la colère",
-            "de l’incertitude",
-            "de l’inquiétude",
-            "de la surcharge",
-            "de la jalousie"
+          "art": "wuerfel",
+          "titel": "Que dis-tu ?",
+          "zeilen": [
+            "Ton frère débarque pour la troisième fois dans ta chambre.",
+            "Ton amie arrive encore avec vingt minutes de retard.",
+            "Quelqu’un lit par-dessus ton épaule pendant que tu chattes.",
+            "Dans le travail de groupe, tu fais tout tout seul.",
+            "Quelqu’un prend ton chargeur et ne le rapporte pas.",
+            "Dans le bus, ton voisin écoute de la musique sans écouteurs."
           ]
         },
         {
-          "art": "frage",
-          "linien": 3,
-          "text": "« Laisse-moi tranquille. » – Ton frère entre pour la troisième fois dans ta chambre pendant que tu travailles."
-        },
-        {
-          "art": "frage",
-          "linien": 3,
-          "text": "« Tu es toujours en retard. » – Tu attends encore une fois depuis vingt minutes ton amie à l’arrêt de bus."
-        },
-        {
-          "art": "frage",
-          "linien": 3,
-          "text": "« Arrête de lire mes messages. » – Ta grande sœur lit par-dessus ton épaule pendant que tu chattes."
-        },
-        {
           "art": "aufgabe",
-          "text": "Ton propre message-je : pense à une situation qui te dérange ou t’a dérangé.",
-          "hinweis": "C’est toi qui décides ce que tu partages. Personne n’est obligé de lire la phrase à voix haute."
+          "text": "Ton propre message-je : pense à quelque chose qui te dérange ou t’a dérangé.",
+          "hinweis": "C’est toi qui décides ce que tu partages. Personne ne doit lire sa phrase.",
+          "symbole": [
+            "schreiben"
+          ]
         },
         {
           "art": "satzanfaenge",
-          "linien": 1,
           "items": [
-            "Je ressens …",
-            "quand …",
-            "parce que …",
-            "Je souhaite …"
+            "Je me sens …, quand …",
+            "J’aimerais …"
           ]
         },
         {
-          "art": "info",
-          "symbol": "tipp",
-          "text": "Les messages-je marchent avec la tête froide. Si ta tension dépasse 70, commence par te calmer avec un skill – et parle ensuite."
+          "art": "mission",
+          "text": "Cette semaine, essaie un message-je – à la maison, dans le bus ou dans un chat. Deux parties suffisent : l’émotion et le souhait.",
+          "tage": 1,
+          "beweis": "pouce – comment l’autre a-t-il réagi ?"
         }
       ],
       "lehrer": {
-        "ziel": "Les jeunes connaissent les quatre parties d’un message-je, distinguent messages-je et messages-tu et reformulent des reproches ainsi qu’une situation personnelle en messages-je.",
+        "ziel": "Les jeunes connaissent les quatre parties d’un message-je, en formulent à l’oral pour des situations tirées au dé et en écrivent un pour eux-mêmes.",
         "ablauf": [
-          "Séance 21, entrée en matière (12 min) : jouer deux fois une scène d’interruption – avec « Tu m’énerves tout le temps » puis avec le message-je de l’encadré. Question : « Qu’avez-vous envie de faire après la première phrase, et après la deuxième ? »",
-          "Montrer au tableau les quatre parties de la chaîne ; au « parce que », renvoyer au bocal des besoins.",
-          "Tâche 1 individuellement (4 min), puis comparer : à quoi reconnaît-on le message-je ?",
-          "Tâche 2 à deux (8 min) ; lire quelques phrases et vérifier : y a-t-il encore un reproche dedans ?",
-          "Tâche 3 individuellement (4 min) ; les phrases ne sont pas lues à voix haute, sauf si quelqu’un le souhaite."
+          "Séance 21, après « Un pas en avant, un pas en arrière » (4 min) : montrer les quatre parties sur la chaîne ; au « parce que », renvoyer au bocal des besoins.",
+          "Exercice 2 à deux (5 min), un dé par binôme : lancer, dire le message-je, le binôme vérifie. Écouter deux ou trois phrases en plénière.",
+          "Exercice 3 seul (3 min) ; les phrases ne sont pas lues, sauf si quelqu’un le souhaite.",
+          "En fin de séance, lire la mission. La prochaine fois, un pouce suffit."
         ],
         "hintergrund": "Le message-je remonte à Thomas Gordon (1972) : les messages-tu contiennent des jugements et provoquent la défense ; les messages-je décrivent le comportement, le sentiment propre et les conséquences pour la personne qui parle. La forme utilisée ici, avec « parce que » et un souhait, relie le modèle de Gordon à la communication non violente de Rosenberg (2001), pour qui derrière chaque émotion se trouve un besoin et la demande se formule comme une requête réalisable. La formule est un support d’entraînement ; au quotidien, deux parties suffisent souvent. Il faut avoir la tête froide : quand la tension est élevée, un skill d’abord, la conversation ensuite.",
         "quellen": [
@@ -597,9 +449,14 @@
           "Ne pas s’accrocher à la formulation exacte : il s’agit d’une attitude, pas d’une formule."
         ],
         "achtung": "Les messages-je n’aident pas contre le harcèlement ou la violence. Si quelqu’un décrit dans la tâche 3 des attaques répétées, des menaces ou du contrôle, proposer un entretien individuel et informer la direction compétente (responsable).",
-        "material": "Une feuille par personne, stylos, roue des émotions, bocal des besoins"
+        "material": "Un dé par binôme, crayons, roue des émotions, bocal des besoins"
       }
-    }
+    },
+    "look": "spiel",
+    "verwandt": [
+      "skills-vorwurf-karten",
+      "skills-zuhoeren"
+    ]
   },
   {
     "id": "skills-zuhoeren",
@@ -614,7 +471,7 @@
       "gruppe",
       "einzeln"
     ],
-    "dauer": "15 Min.",
+    "dauer": "20 Min.",
     "eldib": [
       "K-17",
       "SOZ-37",
@@ -637,31 +494,32 @@
       "bausteine": [
         {
           "art": "aufgabe",
-          "text": "Was läuft hier schief – und was läuft gut? Schreib es unter die Bilder."
+          "text": "Zuhör-Killer: Würfle verdeckt und hör eine Minute so schlecht zu, wie die Zahl es will.",
+          "hinweis": "Dein Gegenüber erzählt vom besten Essen der Woche – und rät danach deine Zahl. Dann wird getauscht.",
+          "symbole": [
+            "zuhoeren",
+            "partner"
+          ]
         },
         {
-          "art": "comic",
-          "spalten": 2,
-          "felder": [
-            {
-              "figuren": [
-                "figur:jana:traurig:stehen",
-                "figur:ben:gelangweilt:stehen"
-              ],
-              "requisit": "icon:device-mobile",
-              "text": "… und dann hat sie nicht mehr geantwortet. Hörst du mir überhaupt zu?",
-              "sprecher": 0,
-              "untertitel": ""
-            },
-            {
-              "figuren": [
-                "figur:jana:traurig:stehen",
-                "figur:ben:besorgt:stehen"
-              ],
-              "text": "Du warst also enttäuscht, weil sie nicht mehr geantwortet hat?",
-              "sprecher": 1,
-              "untertitel": ""
-            }
+          "art": "wuerfel",
+          "titel": "So hört man schlecht zu",
+          "zeilen": [
+            "Schau immer wieder auf dein Handy – oder tu so.",
+            "Unterbrich nach jedem zweiten Satz.",
+            "Erzähl sofort von dir: „Das kenn ich, bei mir …“",
+            "Gib Tipps, um die niemand gebeten hat.",
+            "Schau weg und gähne.",
+            "Mach aus allem einen Witz."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Echo zu dritt: Eine Person erzählt zwei Minuten, eine hört in vier Schritten zu, eine beobachtet.",
+          "hinweis": "Danach wechselt ihr die Rollen, bis alle einmal zugehört haben.",
+          "symbole": [
+            "zuhoeren",
+            "gruppe"
           ]
         },
         {
@@ -671,11 +529,11 @@
           "items": [
             {
               "titel": "Zuwenden",
-              "text": "Körper und Blick zur Person – die Stirn reicht. Handy weg."
+              "text": "Körper zur Person, Handy weg."
             },
             {
               "titel": "Dranbleiben",
-              "text": "Nicken, „mhm“, ausreden lassen."
+              "text": "Nicken, ausreden lassen."
             },
             {
               "titel": "Nachfragen",
@@ -683,46 +541,42 @@
             },
             {
               "titel": "Zusammenfassen",
-              "text": "„Habe ich richtig verstanden, dass …?“ – mit dem Gefühl."
+              "text": "„Du warst also …, weil …?“"
             }
           ]
         },
         {
           "art": "aufgabe",
-          "text": "Nach der Übung zu zweit: Wie gut ist dir das Zuhören gelungen? Kreuze an."
-        },
-        {
-          "art": "einschaetzung",
-          "optionen": [
-            "gelungen",
-            "teilweise",
-            "noch nicht"
-          ],
-          "items": [
-            "Ich habe die Person ausreden lassen.",
-            "Ich habe nicht von mir selbst erzählt.",
-            "Ich habe keine Tipps gegeben, um die niemand gebeten hat.",
-            "Ich habe nachgefragt.",
-            "Ich habe zusammengefasst, was ich verstanden habe.",
-            "Ich habe das Gefühl der Person benannt."
+          "text": "Echo-Punkte: Wer beobachtet hat, kreuzt auf deinem Blatt an, was dir gelungen ist.",
+          "hinweis": "Jedes Kreuz ist ein Punkt. Schafft ihr zu dritt zwölf von fünfzehn?",
+          "symbole": [
+            "ankreuzen"
           ]
         },
         {
-          "art": "aufgabe",
-          "text": "Und andersherum: Wie hat es sich angefühlt, als dir jemand so zugehört hat?"
+          "art": "ankreuzen",
+          "spalten": 1,
+          "items": [
+            "hat ausreden lassen",
+            "hat nicht von sich selbst erzählt",
+            "hat keine Tipps gegeben, um die niemand gebeten hat",
+            "hat nachgefragt",
+            "hat zusammengefasst – mit dem Gefühl"
+          ]
         },
         {
-          "art": "linien",
-          "anzahl": 2
+          "art": "satzanfaenge",
+          "items": [
+            "Als mir jemand richtig zugehört hat, war das …"
+          ]
         }
       ],
       "lehrer": {
-        "ziel": "Die Jugendlichen kennen vier Schritte des aktiven Zuhörens, üben sie zu zweit und schätzen ein, was ihnen schon gelingt.",
+        "ziel": "Die Jugendlichen erleben im Würfelspiel, wie sich schlechtes Zuhören anfühlt, üben die vier Schritte des aktiven Zuhörens zu dritt und bekommen Rückmeldung, was ihnen schon gelingt.",
         "ablauf": [
-          "Einheit 21, Negativ-Szene (3 Min.): Die Leitung „hört zu“, schaut dabei aufs Handy, unterbricht und erzählt von sich. Frage: „Was läuft schief?“",
-          "Aufgabe 1 allein, dann die vier Schritte gemeinsam lesen (3 Min.).",
-          "Übung zu zweit (8 Min.): A erzählt zwei Minuten von etwas, das sie oder ihn am Wochenende gefreut oder geärgert hat; B hört zu und fasst mit dem Gefühl zusammen. A bestätigt oder korrigiert, dann Rollen tauschen.",
-          "Aufgabe 2 und 3 allein (3 Min.). Frage in die Runde: „Wie war es, wirklich gehört zu werden?“"
+          "Einheit 21, vor der Pause (9 Min.): Aufgabe 1 zu zweit, ein Würfel je Paar, je eine Minute. Danach fragen: Wie war das für die Person, die erzählt hat?",
+          "Nach der Pause (12 Min.): die vier Schritte lesen, dann „Echo zu dritt“. A erzählt zwei Minuten (Wochenende, Serie, Essen), B hört zu und fasst mit dem Gefühl zusammen, C kreuzt auf Bs Blatt an. Zweimal wechseln.",
+          "Zum Schluss schreibt jede Person ihren Satz. Frage in die Runde: Wie war es, wirklich gehört zu werden?"
         ],
         "hintergrund": "Aktives Zuhören geht auf Carl Rogers (1951) zurück: Wer verstehen will, hört zu, ohne zu bewerten, und gibt wieder, was er verstanden hat – einschließlich des Gefühls. Thomas Gordon (1972) machte daraus ein Werkzeug für Familie und Schule und stellte es neben die Ich-Botschaft: Die Ich-Botschaft passt, wenn mich etwas stört, das aktive Zuhören, wenn die andere Person ein Anliegen hat. Ratschläge, Bewertungen und eigene Geschichten wirken dagegen oft wie eine Sperre, auch wenn sie gut gemeint sind. Das Zusammenfassen zeigt Interesse, klärt Missverständnisse früh und senkt oft die Anspannung im Gespräch.",
         "quellen": [
@@ -731,7 +585,7 @@
         ],
         "differenzierung": {
           "leichter": "Nur zwei Schritte üben: ausreden lassen und mit „Du meinst also …“ zusammenfassen.",
-          "schwerer": "Zu dritt üben: Die dritte Person beobachtet mit Aufgabe 2 und gibt Rückmeldung."
+          "schwerer": "Beim Zusammenfassen auch sagen, was der Person an der Sache wichtig sein könnte."
         },
         "impulse": [
           "Woran merkt ihr, dass euch jemand wirklich zuhört?",
@@ -739,11 +593,10 @@
         ],
         "tipps": [
           "Die Erzählthemen harmlos halten: Wochenende, Serie, Spiel, Essen.",
-          "Einen Timer benutzen; zwei Minuten fühlen sich für Zuhörende länger an, als sie sind.",
-          "Blickkontakt nicht verlangen: Für manche Jugendliche ist er anstrengend. Auf die Stirn zu schauen oder sich nur zuzuwenden, reicht."
+          "Blickkontakt nicht verlangen: Für manche Jugendliche ist er anstrengend. Sich zuzuwenden reicht."
         ],
         "achtung": "Erzählt jemand in der Übung etwas Belastendes, übernimmt die Leitung: freundlich unterbrechen, würdigen und ein Einzelgespräch anbieten. Die zuhörende Person ist dafür nicht zuständig.",
-        "material": "Blatt je Person, Stifte, Uhr oder Handy-Timer"
+        "material": "Ein Würfel je Paar, Stifte, Uhr oder Handy-Timer"
       }
     },
     "fr": {
@@ -752,31 +605,32 @@
       "bausteine": [
         {
           "art": "aufgabe",
-          "text": "Qu’est-ce qui ne va pas ici – et qu’est-ce qui va bien ? Écris-le sous les images."
+          "text": "Tueurs d’écoute : lance le dé en cachette et écoute pendant une minute aussi mal que le chiffre le demande.",
+          "hinweis": "Ton binôme raconte son meilleur repas de la semaine – puis devine ton chiffre. Ensuite on échange.",
+          "symbole": [
+            "zuhoeren",
+            "partner"
+          ]
         },
         {
-          "art": "comic",
-          "spalten": 2,
-          "felder": [
-            {
-              "figuren": [
-                "figur:jana:traurig:stehen",
-                "figur:ben:gelangweilt:stehen"
-              ],
-              "requisit": "icon:device-mobile",
-              "text": "… et après, elle ne m’a plus répondu. Tu m’écoutes, au moins ?",
-              "sprecher": 0,
-              "untertitel": ""
-            },
-            {
-              "figuren": [
-                "figur:jana:traurig:stehen",
-                "figur:ben:besorgt:stehen"
-              ],
-              "text": "Donc tu étais déçue qu’elle ne te réponde plus ?",
-              "sprecher": 1,
-              "untertitel": ""
-            }
+          "art": "wuerfel",
+          "titel": "Comment mal écouter",
+          "zeilen": [
+            "Regarde sans cesse ton téléphone – ou fais semblant.",
+            "Coupe la parole toutes les deux phrases.",
+            "Parle tout de suite de toi : « Je connais, moi aussi … »",
+            "Donne des conseils que personne n’a demandés.",
+            "Regarde ailleurs et bâille.",
+            "Tourne tout en blague."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Écho à trois : une personne raconte deux minutes, une autre écoute en quatre étapes, la troisième observe.",
+          "hinweis": "Ensuite vous changez de rôle, jusqu’à ce que chacun ait écouté une fois.",
+          "symbole": [
+            "zuhoeren",
+            "gruppe"
           ]
         },
         {
@@ -786,58 +640,54 @@
           "items": [
             {
               "titel": "Se tourner",
-              "text": "Corps et regard vers la personne – le front suffit. Téléphone rangé."
+              "text": "Corps vers la personne, téléphone rangé."
             },
             {
               "titel": "Rester présent",
-              "text": "Hocher la tête, dire « mhm », laisser finir."
+              "text": "Hocher la tête, laisser finir."
             },
             {
               "titel": "Questionner",
-              "text": "« Comment ça s’est passé, exactement ? »"
+              "text": "« Comment ça s’est passé ? »"
             },
             {
               "titel": "Reformuler",
-              "text": "« Si je comprends bien, … ? » – avec l’émotion."
+              "text": "« Donc tu étais …, parce que … ? »"
             }
           ]
         },
         {
           "art": "aufgabe",
-          "text": "Après l’exercice à deux : as-tu bien réussi à écouter ? Coche."
-        },
-        {
-          "art": "einschaetzung",
-          "optionen": [
-            "réussi",
-            "en partie",
-            "pas encore"
-          ],
-          "items": [
-            "J’ai laissé la personne finir.",
-            "Je n’ai pas parlé de moi.",
-            "Je n’ai pas donné de conseils que personne n’avait demandés.",
-            "J’ai posé des questions.",
-            "J’ai reformulé ce que j’avais compris.",
-            "J’ai nommé l’émotion de la personne."
+          "text": "Points d’écho : la personne qui a observé coche sur ta feuille ce que tu as réussi.",
+          "hinweis": "Chaque croix est un point. À trois, arrivez-vous à douze sur quinze ?",
+          "symbole": [
+            "ankreuzen"
           ]
         },
         {
-          "art": "aufgabe",
-          "text": "Et l’inverse : qu’as-tu ressenti quand quelqu’un t’a écouté ainsi ?"
+          "art": "ankreuzen",
+          "spalten": 1,
+          "items": [
+            "a laissé finir",
+            "n’a pas parlé de soi",
+            "n’a pas donné de conseils non demandés",
+            "a posé des questions",
+            "a reformulé – avec l’émotion"
+          ]
         },
         {
-          "art": "linien",
-          "anzahl": 2
+          "art": "satzanfaenge",
+          "items": [
+            "Quand quelqu’un m’a vraiment écouté, c’était …"
+          ]
         }
       ],
       "lehrer": {
-        "ziel": "Les jeunes connaissent quatre étapes de l’écoute active, les pratiquent à deux et estiment ce qui leur réussit déjà.",
+        "ziel": "Les jeunes vivent dans un jeu de dé ce que cela fait d’être mal écouté, s’exercent à trois aux quatre étapes de l’écoute active et reçoivent un retour sur ce qui leur réussit déjà.",
         "ablauf": [
-          "Séance 21, scène négative (3 min) : l’adulte « écoute » en regardant son téléphone, interrompt et parle de soi. Question : « Qu’est-ce qui ne va pas ? »",
-          "Tâche 1 individuellement, puis lire ensemble les quatre étapes (3 min).",
-          "Exercice à deux (8 min) : A raconte deux minutes ce qui l’a réjoui ou agacé pendant le week-end ; B écoute et reformule avec l’émotion. A confirme ou corrige, puis on échange.",
-          "Tâches 2 et 3 individuellement (3 min). Question au groupe : « Qu’est-ce que ça fait d’être vraiment entendu ? »"
+          "Séance 21, avant la pause (9 min) : exercice 1 à deux, un dé par binôme, une minute chacun. Puis demander : comment c’était pour la personne qui racontait ?",
+          "Après la pause (12 min) : lire les quatre étapes, puis « Écho à trois ». A raconte deux minutes (week-end, série, repas), B écoute et reformule avec l’émotion, C coche sur la feuille de B. Changer deux fois.",
+          "Pour finir, chacun écrit sa phrase. Question au groupe : qu’est-ce que ça fait d’être vraiment entendu ?"
         ],
         "hintergrund": "L’écoute active remonte à Carl Rogers (1951) : qui veut comprendre écoute sans juger et redit ce qu’il a compris, émotion comprise. Thomas Gordon (1972) en a fait un outil pour la famille et l’école, à côté du message-je : le message-je convient quand quelque chose me dérange, l’écoute active quand l’autre a une préoccupation. Conseils, jugements et histoires personnelles agissent souvent comme un frein, même bien intentionnés. Reformuler montre de l’intérêt, clarifie tôt les malentendus et fait souvent baisser la tension.",
         "quellen": [
@@ -846,7 +696,7 @@
         ],
         "differenzierung": {
           "leichter": "Ne pratiquer que deux étapes : laisser finir et reformuler avec « Tu veux dire que … ».",
-          "schwerer": "S’exercer à trois : la troisième personne observe avec la tâche 2 et donne un retour."
+          "schwerer": "En reformulant, dire aussi ce qui pourrait compter pour la personne dans cette histoire."
         },
         "impulse": [
           "À quoi remarquez-vous que quelqu’un vous écoute vraiment ?",
@@ -854,13 +704,17 @@
         ],
         "tipps": [
           "Garder des sujets anodins : week-end, série, jeu, repas.",
-          "Utiliser un minuteur ; deux minutes paraissent plus longues à qui écoute.",
-          "Ne pas exiger le contact visuel : pour certains jeunes, il est pénible. Regarder le front ou se tourner vers l’autre suffit."
+          "Ne pas exiger le contact visuel : pour certains jeunes, il est pénible. Se tourner vers l’autre suffit."
         ],
         "achtung": "Si quelqu’un raconte quelque chose de pesant, l’adulte prend le relais : interrompre aimablement, reconnaître ce qui est dit, proposer un entretien individuel. La personne qui écoute n’en est pas responsable.",
-        "material": "Une feuille par personne, stylos, horloge ou minuteur"
+        "material": "Un dé par binôme, crayons, horloge ou minuteur"
       }
-    }
+    },
+    "look": "spiel",
+    "verwandt": [
+      "skills-ich-botschaften",
+      "skills-vorwurf-karten"
+    ]
   },
   {
     "id": "skills-grenz-karten",
@@ -874,7 +728,7 @@
     "sozialform": [
       "gruppe"
     ],
-    "dauer": "15–20 Min.",
+    "dauer": "15 Min.; später 16 Min.",
     "eldib": [
       "SOZ-32",
       "SOZ-31",
@@ -898,14 +752,28 @@
       "untertitel": "Situationen zum Sortieren und Nachspielen: Welche Grenze wird hier überschritten?",
       "bausteine": [
         {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "So geht die Karten-Staffel",
+          "punkte": [
+            "Die drei großen Karten liegen am anderen Ende des Raums. Team 1 hat die Karten 1–9, Team 2 die Karten 10–18.",
+            "Immer eine Person geht: Karte nehmen, zur passenden Grenze legen, zurück – dann die nächste.",
+            "Tempo zählt nicht. 1 Punkt für jede Karte, die richtig liegt.",
+            "Manche Karten passen zu zwei Grenzen: Wer es begründet, bekommt den Punkt."
+          ]
+        },
+        {
           "art": "aufgabe",
-          "text": "Schneidet die Karten aus und legt die drei Überschriften nebeneinander. Sortiert: Welche Grenze wird überschritten?",
-          "hinweis": "Manche Karten passen zu zwei Gruppen – begründet eure Wahl. Eigene Situationen schreibt ihr auf leere Zettel."
+          "text": "Schneidet die Karten aus: drei große für die Grenzen, 18 für die Situationen.",
+          "symbole": [
+            "schneiden"
+          ]
         },
         {
           "art": "karten",
           "spalten": 3,
-          "hoehe": 82,
+          "hoehe": 92,
+          "schneiden": true,
           "karten": [
             {
               "titel": "Körperlich",
@@ -921,78 +789,115 @@
               "titel": "Digital",
               "text": "meine Fotos, Nachrichten und Daten",
               "bild": "icon:device-mobile"
-            },
+            }
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 86,
+          "schneiden": true,
+          "karten": [
             {
               "titel": "Weitergeleitet",
-              "text": "Jemand leitet ein Foto von dir weiter, ohne dich zu fragen."
+              "text": "Jemand leitet ein Foto von dir weiter, ohne dich zu fragen.",
+              "nummer": 1
             },
             {
               "titel": "Ohne zu fragen",
-              "text": "Jemand berührt dich, ohne zu fragen."
+              "text": "Jemand berührt dich, ohne zu fragen.",
+              "nummer": 2
             },
             {
               "titel": "Ausgelacht",
-              "text": "Jemand lacht über deine Gefühle."
+              "text": "Jemand lacht über deine Gefühle.",
+              "nummer": 3
             },
             {
               "titel": "Die Umarmung",
-              "text": "Bei der Begrüßung wirst du zu einer Umarmung gedrängt."
+              "text": "Bei der Begrüßung wirst du zu einer Umarmung gedrängt.",
+              "nummer": 4
             },
             {
               "titel": "Das Passwort",
-              "text": "Jemand will dein Passwort: „Wenn du mir vertraust, gibst du es mir.“"
+              "text": "Jemand will dein Passwort: „Wenn du mir vertraust, gibst du es mir.“",
+              "nummer": 5
             },
             {
               "titel": "Ausgefragt",
-              "text": "Du wirst gedrängt, Privates zu erzählen."
+              "text": "Du wirst gedrängt, Privates zu erzählen.",
+              "nummer": 6
             },
             {
               "titel": "Die Tasche",
-              "text": "Jemand durchsucht deine Tasche."
+              "text": "Jemand durchsucht deine Tasche.",
+              "nummer": 7
             },
             {
               "titel": "Das Hobby",
-              "text": "Jemand macht sich über dein Hobby lustig."
+              "text": "Jemand macht sich über dein Hobby lustig.",
+              "nummer": 8
             },
             {
               "titel": "Der Screenshot",
-              "text": "Deine private Nachricht landet als Screenshot in der Klassengruppe."
-            },
+              "text": "Deine private Nachricht landet als Screenshot in der Klassengruppe.",
+              "nummer": 9
+            }
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 120,
+          "schneiden": true,
+          "karten": [
             {
               "titel": "Zu dicht",
-              "text": "Im Bus steht jemand ganz dicht an dir, obwohl Platz ist."
+              "text": "Im Bus steht jemand ganz dicht an dir, obwohl Platz ist.",
+              "nummer": 10
             },
             {
               "titel": "Unterbrochen",
-              "text": "Du wirst ständig unterbrochen."
+              "text": "Du wirst ständig unterbrochen.",
+              "nummer": 11
             },
             {
               "titel": "Der Standort",
-              "text": "Jemand verlangt, dass du deinen Standort teilst, damit er immer weiß, wo du bist."
+              "text": "Jemand verlangt, dass du deinen Standort teilst, damit er immer weiß, wo du bist.",
+              "nummer": 12
             },
             {
               "titel": "Weitererzählt",
-              "text": "Jemand erzählt Privates von dir weiter."
+              "text": "Jemand erzählt Privates von dir weiter.",
+              "nummer": 13
             },
             {
               "titel": "Das Handy",
-              "text": "Jemand nimmt dir das Handy aus der Hand, ohne zu fragen."
+              "text": "Jemand nimmt dir das Handy aus der Hand, ohne zu fragen.",
+              "nummer": 14
             },
             {
               "titel": "Die Lästergruppe",
-              "text": "Du wirst ungefragt in eine Chatgruppe geholt, in der über andere gelästert wird."
+              "text": "Du wirst ungefragt in eine Chatgruppe geholt, in der über andere gelästert wird.",
+              "nummer": 15
             },
             {
               "titel": "Nicht weinen",
-              "text": "Du wirst kritisiert, weil du weinst oder wütend bist."
+              "text": "Du wirst kritisiert, weil du weinst oder wütend bist.",
+              "nummer": 16
             },
             {
               "titel": "Nachts",
-              "text": "Jemand schreibt dir nachts immer wieder, obwohl du nicht antwortest."
+              "text": "Jemand schreibt dir nachts immer wieder, obwohl du nicht antwortest.",
+              "nummer": 17
             },
             {
               "titel": "Die Tür",
-              "text": "Jemand kommt in dein Zimmer, ohne anzuklopfen."
+              "text": "Jemand kommt in dein Zimmer, ohne anzuklopfen.",
+              "nummer": 18
             }
           ]
         }
@@ -1000,30 +905,30 @@
       "lehrer": {
         "ziel": "Die Jugendlichen ordnen Alltagssituationen körperlichen, emotionalen und digitalen Grenzen zu, begründen ihre Wahl und erleben, dass Grenzen unterschiedlich empfunden werden. In Einheit 23 dienen die Karten als Rollenspiel-Situationen.",
         "ablauf": [
-          "Vorher: Karten einmal pro Kleingruppe auf festem Papier ausschneiden und in Umschläge stecken.",
-          "Einheit 22 (11 Min.): Überschriften auslegen, zu zweit oder zu dritt sortieren, strittige Karten im Plenum klären. Frage: „Wie fühlt es sich an, wenn das passiert?“",
-          "Daumen-Runde mit geschlossenen Augen zu harmlosen Karten (Umarmung, Hobby, Unterbrochen); die Leitung nennt nur die Verteilung.",
-          "Einheit 23: Karten auf vier Stationen verteilen (Mein Körper, Meine Sachen, Mein Privates, Mein Handy) und als Rollenspiele nutzen."
+          "Vorher: Karten auf festem Papier ausschneiden; die drei großen Karten liegen auf drei Plakaten am anderen Raumende.",
+          "Einheit 22 (15 Min.): Karten-Staffel, dann gemeinsam prüfen und Stichworte auf die Plakate schreiben. Frage: Wie fühlt es sich an, wenn das passiert?",
+          "Daumen-Runde mit geschlossenen Augen zu harmlosen Karten (4, 8, 11); die Leitung nennt nur die Verteilung.",
+          "Einheit 23, Stationen: Mein Körper (2, 4, 10), Meine Sachen (7, 14, 18), Mein Privates (3, 6, 8, 11, 13, 16), Mein Handy (1, 5, 9, 12, 15, 17)."
         ],
-        "hintergrund": "Grenzen schützen, was zu einer Person gehört: ihren Körper und Raum, ihre Gefühle und ihr Privates – und zunehmend auch Fotos, Nachrichten und Daten. Wie nah jemand kommen darf, hängt von Beziehung, Situation und Kultur ab (Hall, 1966); deshalb gibt es bei vielen Karten kein eindeutiges Richtig. Eindeutig ist dagegen die Regel im Digitalen: Fotos und private Nachrichten anderer werden nur mit deren Einverständnis weitergegeben, und wer kontrolliert oder bedrängt wird, kann sich Hilfe holen (BEE SECURE). Das Sortieren schafft eine gemeinsame Sprache, bevor persönliche Grenzen Thema werden.",
+        "hintergrund": "Grenzen schützen, was zu einer Person gehört: ihren Körper und Raum, ihre Gefühle und ihr Privates – und zunehmend auch Fotos, Nachrichten und Daten. Wie nah jemand kommen darf, hängt von Beziehung, Situation und Kultur ab (Hall, 1966); deshalb gibt es bei vielen Karten kein eindeutiges Richtig. Eindeutig ist dagegen die Regel im Digitalen: Fotos und private Nachrichten anderer werden nur mit deren Einverständnis weitergegeben, und wer kontrolliert oder bedrängt wird, kann sich Hilfe holen (BEE SECURE).",
         "quellen": [
           "Hall, E. T. (1966). The Hidden Dimension. Garden City, NY: Doubleday.",
           "BEE SECURE – Initiative der luxemburgischen Regierung für ein sichereres Internet: www.bee-secure.lu"
         ],
         "differenzierung": {
-          "leichter": "Nur zwei Überschriften verwenden (körperlich und emotional) und die digitalen Karten gemeinsam besprechen.",
-          "schwerer": "Zu jeder Karte einen Satz aufschreiben, mit dem man die Grenze setzen könnte."
+          "leichter": "Am Tisch sortieren, nur körperlich und emotional; die digitalen Karten gemeinsam besprechen.",
+          "schwerer": "Zu jeder Karte einen Satz sagen, mit dem man die Grenze setzen könnte."
         },
         "impulse": [
           "Welche Karte wäre für euch am unangenehmsten – und warum?",
           "Warum sind digitale Grenzen oft schwerer zu verteidigen als körperliche?"
         ],
         "tipps": [
-          "Die Karten nach Einheit 22 einsammeln; sie werden in Einheit 23 wieder gebraucht.",
-          "Eigene Situationen der Jugendlichen auf leere Zettel schreiben lassen, ohne Namen."
+          "Lösung: Körper und Sachen = körperlich, Privates = emotional, Handy = digital (Karte 14 passt auch dorthin).",
+          "Karten nach Einheit 22 einsammeln – Einheit 23 braucht sie wieder."
         ],
         "achtung": "Wirkt jemand bei einer Karte betroffen, nach der Einheit ein Gespräch anbieten. Bei Hinweisen auf Übergriffe, verbreitete Bilder oder Kontrolle nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren.",
-        "material": "Schere, Umschläge, festes Papier"
+        "material": "Schere, festes Papier, drei Plakate"
       }
     },
     "fr": {
@@ -1031,14 +936,28 @@
       "untertitel": "Des situations à trier et à rejouer : quelle limite est franchie ici ?",
       "bausteine": [
         {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Le relais des cartes",
+          "punkte": [
+            "Les trois grandes cartes sont à l’autre bout de la salle. L’équipe 1 a les cartes 1–9, l’équipe 2 les cartes 10–18.",
+            "Une seule personne se déplace : prendre une carte, la poser près de la bonne limite, revenir – puis la suivante.",
+            "La vitesse ne compte pas. 1 point par carte bien placée.",
+            "Certaines cartes vont avec deux limites : qui le justifie gagne le point."
+          ]
+        },
+        {
           "art": "aufgabe",
-          "text": "Découpez les cartes et posez les trois titres côte à côte. Triez : quelle limite est franchie ?",
-          "hinweis": "Certaines cartes vont avec deux groupes – justifiez votre choix. Pour vos propres situations, utilisez des bouts de papier vierges."
+          "text": "Découpez les cartes : trois grandes pour les limites, 18 pour les situations.",
+          "symbole": [
+            "schneiden"
+          ]
         },
         {
           "art": "karten",
           "spalten": 3,
-          "hoehe": 82,
+          "hoehe": 92,
+          "schneiden": true,
           "karten": [
             {
               "titel": "Physique",
@@ -1054,78 +973,115 @@
               "titel": "Numérique",
               "text": "mes photos, messages et données",
               "bild": "icon:device-mobile"
-            },
+            }
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 86,
+          "schneiden": true,
+          "karten": [
             {
               "titel": "Photo transférée",
-              "text": "Quelqu’un transfère une photo de toi sans te demander."
+              "text": "Quelqu’un transfère une photo de toi sans te demander.",
+              "nummer": 1
             },
             {
               "titel": "Sans demander",
-              "text": "Quelqu’un te touche sans demander."
+              "text": "Quelqu’un te touche sans demander.",
+              "nummer": 2
             },
             {
               "titel": "Moquerie",
-              "text": "Quelqu’un rit de tes émotions."
+              "text": "Quelqu’un rit de tes émotions.",
+              "nummer": 3
             },
             {
               "titel": "Le câlin",
-              "text": "En te saluant, on te pousse à faire un câlin."
+              "text": "En te saluant, on te pousse à faire un câlin.",
+              "nummer": 4
             },
             {
               "titel": "Le mot de passe",
-              "text": "Quelqu’un veut ton mot de passe : « Si tu me fais confiance, tu me le donnes. »"
+              "text": "Quelqu’un veut ton mot de passe : « Si tu me fais confiance, tu me le donnes. »",
+              "nummer": 5
             },
             {
               "titel": "Trop de questions",
-              "text": "On te pousse à raconter des choses privées."
+              "text": "On te pousse à raconter des choses privées.",
+              "nummer": 6
             },
             {
               "titel": "Le sac",
-              "text": "Quelqu’un fouille ton sac."
+              "text": "Quelqu’un fouille ton sac.",
+              "nummer": 7
             },
             {
               "titel": "Le hobby",
-              "text": "Quelqu’un se moque de ton hobby."
+              "text": "Quelqu’un se moque de ton hobby.",
+              "nummer": 8
             },
             {
               "titel": "La capture d’écran",
-              "text": "Ton message privé finit en capture d’écran dans le groupe de la classe."
-            },
+              "text": "Ton message privé finit en capture d’écran dans le groupe de la classe.",
+              "nummer": 9
+            }
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 120,
+          "schneiden": true,
+          "karten": [
             {
               "titel": "Trop près",
-              "text": "Dans le bus, quelqu’un se tient tout contre toi alors qu’il y a de la place."
+              "text": "Dans le bus, quelqu’un se tient tout contre toi alors qu’il y a de la place.",
+              "nummer": 10
             },
             {
               "titel": "Interruptions",
-              "text": "On t’interrompt sans arrêt."
+              "text": "On t’interrompt sans arrêt.",
+              "nummer": 11
             },
             {
               "titel": "La localisation",
-              "text": "Quelqu’un exige que tu partages ta position pour savoir en permanence où tu es."
+              "text": "Quelqu’un exige que tu partages ta position pour savoir en permanence où tu es.",
+              "nummer": 12
             },
             {
               "titel": "Répété",
-              "text": "Quelqu’un répète à d’autres des choses privées sur toi."
+              "text": "Quelqu’un répète à d’autres des choses privées sur toi.",
+              "nummer": 13
             },
             {
               "titel": "Le téléphone",
-              "text": "Quelqu’un t’arrache le téléphone des mains sans demander."
+              "text": "Quelqu’un t’arrache le téléphone des mains sans demander.",
+              "nummer": 14
             },
             {
               "titel": "Le groupe de médisances",
-              "text": "On t’ajoute sans te demander à un groupe de chat où l’on dit du mal des autres."
+              "text": "On t’ajoute sans te demander à un groupe de chat où l’on dit du mal des autres.",
+              "nummer": 15
             },
             {
               "titel": "Interdit de pleurer",
-              "text": "On te critique parce que tu pleures ou que tu es en colère."
+              "text": "On te critique parce que tu pleures ou que tu es en colère.",
+              "nummer": 16
             },
             {
               "titel": "La nuit",
-              "text": "Quelqu’un t’écrit sans cesse la nuit, même si tu ne réponds pas."
+              "text": "Quelqu’un t’écrit sans cesse la nuit, même si tu ne réponds pas.",
+              "nummer": 17
             },
             {
               "titel": "La porte",
-              "text": "Quelqu’un entre dans ta chambre sans frapper."
+              "text": "Quelqu’un entre dans ta chambre sans frapper.",
+              "nummer": 18
             }
           ]
         }
@@ -1133,32 +1089,37 @@
       "lehrer": {
         "ziel": "Les jeunes rattachent des situations du quotidien à des limites physiques, émotionnelles et numériques, justifient leur choix et constatent que les limites sont ressenties différemment. À la séance 23, les cartes servent de situations pour des jeux de rôle.",
         "ablauf": [
-          "Avant : découper un jeu de cartes par petit groupe sur papier épais et le glisser dans une enveloppe.",
-          "Séance 22 (11 min) : poser les titres, trier à deux ou à trois, clarifier les cartes controversées en plénière. Question : « Qu’est-ce qu’on ressent quand ça arrive ? »",
-          "Tour des pouces, yeux fermés, sur des cartes anodines (câlin, hobby, interruptions) ; l’adulte annonce seulement la répartition.",
-          "Séance 23 : répartir les cartes sur quatre stations (Mon corps, Mes affaires, Ma vie privée, Mon téléphone) et les utiliser comme jeux de rôle."
+          "Avant : découper les cartes sur papier épais ; les trois grandes cartes sont posées sur trois affiches à l’autre bout de la salle.",
+          "Séance 22 (15 min) : relais des cartes, puis vérifier ensemble et noter des mots-clés sur les affiches. Question : qu’est-ce qu’on ressent quand ça arrive ?",
+          "Tour des pouces, yeux fermés, sur des cartes anodines (4, 8, 11) ; l’adulte annonce seulement la répartition.",
+          "Séance 23, stations : Mon corps (2, 4, 10), Mes affaires (7, 14, 18), Ma vie privée (3, 6, 8, 11, 13, 16), Mon téléphone (1, 5, 9, 12, 15, 17)."
         ],
-        "hintergrund": "Les limites protègent ce qui appartient à une personne : son corps et son espace, ses émotions et sa vie privée – et de plus en plus aussi ses photos, ses messages et ses données. La proximité acceptable dépend de la relation, de la situation et de la culture (Hall, 1966) ; c’est pourquoi, pour beaucoup de cartes, il n’y a pas de réponse unique. En revanche, la règle est claire dans le numérique : les photos et les messages privés d’autrui ne se transmettent qu’avec leur accord, et qui est contrôlé ou harcelé peut chercher de l’aide (BEE SECURE). Le tri crée un langage commun avant que les limites personnelles ne deviennent un sujet.",
+        "hintergrund": "Les limites protègent ce qui appartient à une personne : son corps et son espace, ses émotions et sa vie privée – et de plus en plus aussi ses photos, ses messages et ses données. La proximité acceptable dépend de la relation, de la situation et de la culture (Hall, 1966) ; c’est pourquoi, pour beaucoup de cartes, il n’y a pas de réponse unique. En revanche, la règle est claire dans le numérique : les photos et les messages privés d’autrui ne se transmettent qu’avec leur accord, et qui est contrôlé ou harcelé peut chercher de l’aide (BEE SECURE).",
         "quellen": [
           "Hall, E. T. (1966). The Hidden Dimension. Garden City, NY: Doubleday.",
           "BEE SECURE – Initiative der luxemburgischen Regierung für ein sichereres Internet: www.bee-secure.lu"
         ],
         "differenzierung": {
-          "leichter": "N’utiliser que deux titres (physique et émotionnelle) et discuter ensemble des cartes numériques.",
-          "schwerer": "Pour chaque carte, écrire une phrase qui permettrait de poser la limite."
+          "leichter": "Trier à table, seulement physique et émotionnelle ; discuter ensemble des cartes numériques.",
+          "schwerer": "Pour chaque carte, dire une phrase qui permettrait de poser la limite."
         },
         "impulse": [
           "Quelle carte serait la plus désagréable pour vous – et pourquoi ?",
           "Pourquoi les limites numériques sont-elles souvent plus difficiles à défendre que les limites physiques ?"
         ],
         "tipps": [
-          "Ramasser les cartes après la séance 22 ; elles resservent à la séance 23.",
-          "Faire écrire les situations des jeunes sur des papiers vierges, sans nom."
+          "Solution : corps et affaires = physique, vie privée = émotionnelle, téléphone = numérique (la carte 14 y va aussi).",
+          "Ramasser les cartes après la séance 22 – la séance 23 en a besoin."
         ],
         "achtung": "Si quelqu’un semble touché par une carte, proposer un entretien après la séance. En cas d’indices d’agressions, d’images diffusées ou de contrôle, agir selon le concept de protection interne et informer la direction compétente (responsable).",
-        "material": "Ciseaux, enveloppes, papier épais"
+        "material": "Ciseaux, papier épais, trois affiches"
       }
-    }
+    },
+    "look": "spiel",
+    "verwandt": [
+      "skills-meine-grenzen",
+      "skills-stopp"
+    ]
   },
   {
     "id": "skills-meine-grenzen",
@@ -1172,7 +1133,7 @@
     "sozialform": [
       "einzeln"
     ],
-    "dauer": "10 Min.",
+    "dauer": "8 Min.",
     "eldib": [
       "K-26",
       "SOZ-40",
@@ -1191,115 +1152,87 @@
     ],
     "de": {
       "titel": "Meine Grenzen",
-      "untertitel": "Wo meine Grenzen liegen und woran ich merke, dass es mir zu viel wird",
+      "untertitel": "Wie nah ist okay – und woran merkst du, dass es zu viel wird?",
       "bausteine": [
         {
-          "art": "info",
-          "symbol": "hilfe",
-          "titel": "Du entscheidest, was du teilst.",
-          "text": "Dieses Blatt gehört dir. Niemand muss es lesen."
-        },
-        {
           "art": "aufgabe",
-          "text": "Was ist für dich eine Grenze? Schreib für jede Art ein Beispiel auf.",
-          "hinweis": "Die Grenz-Karten helfen dir. Eigene Beispiele sind noch besser."
-        },
-        {
-          "art": "tabelle",
-          "spalten": [
-            "Körperlich",
-            "Emotional",
-            "Digital"
-          ],
-          "zeilen": 3,
-          "beispiel": [
-            "Jemand setzt sich im Bus auf meinen Rucksack.",
-            "Jemand lacht, wenn ich von meinem Hund erzähle.",
-            "Jemand postet ein Foto von mir, ohne zu fragen."
+          "text": "Wer darf dir wie nah kommen? Schreib Namen oder Anfangsbuchstaben in die Kreise.",
+          "hinweis": "Dieses Blatt gehört dir. Deine Kreise dürfen sich ändern – je nach Tag und Stimmung.",
+          "symbole": [
+            "schreiben"
           ]
         },
         {
-          "art": "aufgabe",
-          "text": "Woran merkst du, dass eine Grenze erreicht ist? Schreib auf, was du spürst, denkst oder tust.",
-          "hinweis": "Denk an den Check-in und an deine Gefühls-Landkarte: Wo im Körper meldet sich ein Gefühl zuerst?"
-        },
-        {
-          "art": "ampel",
-          "linien": 2,
-          "stufen": [
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "zusammen": true,
+          "links": [
             {
-              "titel": "Stopp – Grenze überschritten",
-              "text": "zum Beispiel: Herz rast, ich will nur weg oder werde laut"
-            },
+              "art": "zielscheibe",
+              "ringe": [
+                "öffentlich",
+                "sozial",
+                "persönlich",
+                "ganz nah"
+              ],
+              "mitte": "Ich",
+              "daneben": false
+            }
+          ],
+          "rechts": [
             {
-              "titel": "Achtung – es wird mir zu viel",
-              "text": "zum Beispiel: Bauch zieht sich zusammen, ich lächle gequält"
-            },
-            {
-              "titel": "Passt – ich fühle mich wohl",
-              "text": "zum Beispiel: Schultern locker, ich lache und bleibe gern"
+              "art": "wortspeicher",
+              "titel": "Mein Körper merkt es zuerst",
+              "items": [
+                "Herz klopft",
+                "Bauch zieht sich zusammen",
+                "Schultern gehen hoch",
+                "mir wird heiß",
+                "ich werde still",
+                "ich lächle, obwohl ich nicht will",
+                "ich schaue weg",
+                "ich will nur weg",
+                "ich werde laut"
+              ]
             }
           ]
         },
         {
-          "art": "satzanfaenge",
-          "linien": 1,
-          "items": [
-            "Wenn meine Ampel auf Gelb springt, kann ich …"
-          ]
-        },
-        {
           "art": "aufgabe",
-          "text": "Nach der Übung „Zwei Linien“: Wer darf dir wie nah kommen? Schreib Namen oder Gruppen in die Kreise.",
-          "hinweis": "Die Abstände sind Richtwerte nach dem Forscher Edward T. Hall. Deine Kreise dürfen sich ändern."
-        },
-        {
-          "art": "zielscheibe",
-          "ringe": [
-            "öffentlich: mehr als 3,6 m",
-            "sozial: 1,2 bis 3,6 m",
-            "persönlich: 45 cm bis 1,2 m",
-            "ganz nah: unter 45 cm"
-          ],
-          "mitte": "Ich"
-        },
-        {
-          "art": "satzanfaenge",
-          "linien": 1,
-          "items": [
-            "Mehr Abstand brauche ich, wenn …",
-            "Nähe ist für mich in Ordnung, wenn …"
+          "text": "Zu nah, zu viel? Kreise oben ein, woran du es bei dir merkst.",
+          "hinweis": "Fehlt dein Signal? Schreib es dazu.",
+          "symbole": [
+            "einkreisen"
           ]
-        },
-        {
-          "art": "info",
-          "symbol": "merke",
-          "titel": "Grenzen sind verschieden – und alle zählen.",
-          "text": "Auch wer dir ganz nah ist, muss dein Nein beachten. Und wer Stopp hört, hört auf – online wie offline."
         },
         {
           "art": "info",
           "symbol": "hilfe",
           "titel": "Du musst das nicht allein lösen.",
           "text": "Überschreitet jemand deine Grenzen immer wieder oder ist dir etwas passiert, das sich falsch anfühlt: Das ist nicht deine Schuld. Sprich mit einer Vertrauensperson, zum Beispiel beim SePAS. Anonym und kostenlos: Kanner- a Jugendtelefon 116 111."
+        },
+        {
+          "art": "mission",
+          "text": "Achte diese Woche einmal darauf, wann dein Körper „zu nah“ oder „zu viel“ meldet. Nur beobachten – nichts aufschreiben.",
+          "tage": 1,
+          "beweis": "Daumen – hast du ein Signal bemerkt?"
         }
       ],
       "lehrer": {
-        "ziel": "Die Jugendlichen halten eigene körperliche, emotionale und digitale Grenzen fest, beschreiben ihre Körpersignale in drei Stufen und tragen ein, wer ihnen wie nah kommen darf.",
+        "ziel": "Die Jugendlichen tragen ein, wer ihnen wie nah kommen darf, benennen ihre Körpersignale für „zu nah“ und „zu viel“ und beobachten diese Signale eine Woche lang im Alltag.",
         "ablauf": [
-          "Einheit 22, nach dem Sortieren der Grenz-Karten (7 Min.): Seite 1 allein. Frage: „Wie merkt ihr, dass es euch zu viel wird – noch bevor ihr etwas sagt?“",
-          "Die Leitung geht herum und hilft mit Fragen, nicht mit Antworten. Das Blatt wird nicht eingesammelt.",
-          "Nach der Übung „Zwei Linien“ (3 Min.): Seite 2 mit Nähe-Kreisen und Satzanfängen. Die Kreise bleiben privat.",
-          "Zum Schluss den Hilfe-Kasten vorlesen und die Ansprechpersonen im Haus nennen."
+          "Einheit 22, direkt nach der Übung „Zwei Linien“ (8 Min.): beide Aufgaben allein. Frage: Wie merkt ihr, dass es euch zu viel wird – noch bevor ihr etwas sagt?",
+          "Die Leitung geht herum und hilft mit Fragen, nicht mit Antworten. Das Blatt wird nicht eingesammelt, die Kreise bleiben privat.",
+          "Den Hilfe-Kasten vorlesen und die Ansprechpersonen im Haus nennen. Am Ende der Einheit die Mission vorlesen: nur beobachten."
         ],
-        "hintergrund": "Wer Grenzen setzen will, muss sie zuerst wahrnehmen. Gefühle gehen mit typischen Körperempfindungen einher (Nummenmaa et al., 2014) – Enge in der Brust, ein flaues Gefühl im Bauch, angespannte Schultern. Diese Signale melden oft früher als der Verstand, dass etwas zu viel wird; die Ampel ordnet sie in drei Stufen, passend zur Anspannungsskala. Die Nähe-Kreise beruhen auf den Distanzzonen von Hall (1966): intim bis etwa 45 cm, persönlich bis etwa 1,2 m, sozial bis etwa 3,6 m, dahinter öffentlich. Die Werte schwanken mit Kultur, Beziehung und Stimmung – es gibt keinen richtigen Abstand, nur einen, der für die Person passt.",
+        "hintergrund": "Wer Grenzen setzen will, muss sie zuerst wahrnehmen. Gefühle gehen mit typischen Körperempfindungen einher (Nummenmaa et al., 2014) – Enge in der Brust, ein flaues Gefühl im Bauch, angespannte Schultern. Diese Signale melden oft früher als der Verstand, dass etwas zu viel wird; auf dem Blatt kreisen die Jugendlichen ihre eigenen ein. Die Nähe-Kreise beruhen auf den Distanzzonen von Hall (1966): intim bis etwa 45 cm, persönlich bis etwa 1,2 m, sozial bis etwa 3,6 m, dahinter öffentlich. Die Werte schwanken mit Kultur, Beziehung und Stimmung – es gibt keinen richtigen Abstand, nur einen, der für die Person passt.",
         "quellen": [
           "Nummenmaa, L., Glerean, E., Hari, R. & Hietanen, J. K. (2014). Bodily maps of emotions. Proceedings of the National Academy of Sciences, 111(2), 646–651.",
           "Hall, E. T. (1966). The Hidden Dimension. Garden City, NY: Doubleday."
         ],
         "differenzierung": {
-          "leichter": "Nur Aufgabe 2 und 3; in den Kreisen genügen Anfangsbuchstaben oder Symbole.",
-          "schwerer": "Zu jeder Ampelstufe notieren, was man in diesem Moment tun oder sagen könnte."
+          "leichter": "In den Kreisen genügen Anfangsbuchstaben oder Symbole; bei den Signalen reicht eines.",
+          "schwerer": "Zu einem Warnsignal notieren, was man in diesem Moment tun oder sagen könnte."
         },
         "impulse": [
           "Woran merkt ihr bei anderen, dass ihnen etwas zu nah ist?",
@@ -1307,123 +1240,95 @@
         ],
         "tipps": [
           "Die Kreise nicht einsammeln und nicht vorlesen lassen.",
-          "Die Ampel mit dem Ampelplan aus Einheit 15 verbinden: Bei Rot helfen die Notfall-Skills und eine Person, zu der man gehen kann."
+          "Die Warnsignale mit dem Ampelplan aus Einheit 15 verbinden: Bei Rot helfen die Notfall-Skills und eine Person, zu der man gehen kann."
         ],
         "achtung": "Deutet jemand Übergriffe, Gewalt oder Missbrauch an: ruhig zuhören, nicht ausfragen, keine Geheimhaltung versprechen. Bei Gefährdung sofort nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren.",
-        "material": "Blatt je Person, Stifte, Grenz-Karten zum Nachschauen"
+        "material": "Stifte, Grenz-Karten zum Nachschauen"
       }
     },
     "fr": {
       "titel": "Mes limites",
-      "untertitel": "Où se trouvent mes limites et comment je remarque que c’est trop",
+      "untertitel": "Quelle distance te convient – et à quoi remarques-tu que c’est trop ?",
       "bausteine": [
         {
-          "art": "info",
-          "symbol": "hilfe",
-          "titel": "C’est toi qui décides de ce que tu partages.",
-          "text": "Cette feuille t’appartient. Personne n’a besoin de la lire."
-        },
-        {
           "art": "aufgabe",
-          "text": "Qu’est-ce qu’une limite pour toi ? Écris un exemple pour chaque sorte.",
-          "hinweis": "Les cartes des limites t’aident. Tes propres exemples sont encore mieux."
-        },
-        {
-          "art": "tabelle",
-          "spalten": [
-            "Physique",
-            "Émotionnelle",
-            "Numérique"
-          ],
-          "zeilen": 3,
-          "beispiel": [
-            "Quelqu’un s’assoit sur mon sac à dos dans le bus.",
-            "Quelqu’un rit quand je parle de mon chien.",
-            "Quelqu’un poste une photo de moi sans demander."
+          "text": "Qui peut s’approcher de toi, et jusqu’où ? Écris des noms ou des initiales dans les cercles.",
+          "hinweis": "Cette feuille t’appartient. Tes cercles ont le droit de changer – selon le jour et l’humeur.",
+          "symbole": [
+            "schreiben"
           ]
         },
         {
-          "art": "aufgabe",
-          "text": "À quoi remarques-tu qu’une limite est atteinte ? Écris ce que tu ressens, penses ou fais.",
-          "hinweis": "Pense au check-in et à ta carte des émotions : où dans le corps une émotion se manifeste-t-elle en premier ?"
-        },
-        {
-          "art": "ampel",
-          "linien": 2,
-          "stufen": [
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "zusammen": true,
+          "links": [
             {
-              "titel": "Stop – limite dépassée",
-              "text": "par exemple : le cœur s’emballe, je veux juste partir ou j’élève la voix"
-            },
+              "art": "zielscheibe",
+              "ringe": [
+                "public",
+                "social",
+                "personnel",
+                "tout près"
+              ],
+              "mitte": "Moi",
+              "daneben": false
+            }
+          ],
+          "rechts": [
             {
-              "titel": "Attention – ça devient trop",
-              "text": "par exemple : le ventre se serre, je souris à contrecœur"
-            },
-            {
-              "titel": "Ça va – je me sens bien",
-              "text": "par exemple : épaules détendues, je ris et je reste volontiers"
+              "art": "wortspeicher",
+              "titel": "Mon corps le remarque en premier",
+              "items": [
+                "le cœur bat fort",
+                "le ventre se serre",
+                "les épaules remontent",
+                "j’ai chaud",
+                "je me tais",
+                "je souris sans en avoir envie",
+                "je détourne le regard",
+                "je veux juste partir",
+                "j’élève la voix"
+              ]
             }
           ]
         },
         {
-          "art": "satzanfaenge",
-          "linien": 1,
-          "items": [
-            "Quand mon feu passe à l’orange, je peux …"
-          ]
-        },
-        {
           "art": "aufgabe",
-          "text": "Après l’exercice « Deux lignes » : qui peut s’approcher de toi, et jusqu’où ? Écris des noms ou des groupes dans les cercles.",
-          "hinweis": "Les distances sont des repères d’après le chercheur Edward T. Hall. Tes cercles ont le droit de changer."
-        },
-        {
-          "art": "zielscheibe",
-          "ringe": [
-            "public : plus de 3,6 m",
-            "social : 1,2 à 3,6 m",
-            "personnel : 45 cm à 1,2 m",
-            "tout près : moins de 45 cm"
-          ],
-          "mitte": "Moi"
-        },
-        {
-          "art": "satzanfaenge",
-          "linien": 1,
-          "items": [
-            "J’ai besoin de plus de distance quand …",
-            "La proximité me convient quand …"
+          "text": "Trop près, trop ? Entoure en haut à quoi tu le remarques.",
+          "hinweis": "Ton signal manque ? Ajoute-le.",
+          "symbole": [
+            "einkreisen"
           ]
-        },
-        {
-          "art": "info",
-          "symbol": "merke",
-          "titel": "Les limites sont différentes – et toutes comptent.",
-          "text": "Même une personne très proche de toi doit respecter ton non. Et celui ou celle qui entend « Stop » s’arrête – en ligne comme dans la vraie vie."
         },
         {
           "art": "info",
           "symbol": "hilfe",
           "titel": "Tu n’as pas à régler ça sans soutien.",
           "text": "Si quelqu’un dépasse tes limites encore et encore, ou s’il t’est arrivé quelque chose qui te semble faux : ce n’est pas ta faute. Parle à une personne de confiance, par exemple au SePAS. Anonyme et gratuit : Kanner- a Jugendtelefon 116 111."
+        },
+        {
+          "art": "mission",
+          "text": "Cette semaine, remarque une fois le moment où ton corps signale « trop près » ou « trop ». Observe seulement – sans rien noter.",
+          "tage": 1,
+          "beweis": "pouce – as-tu remarqué un signal ?"
         }
       ],
       "lehrer": {
-        "ziel": "Les jeunes notent leurs propres limites physiques, émotionnelles et numériques, décrivent leurs signaux corporels en trois niveaux et indiquent qui peut s’approcher d’eux et jusqu’où.",
+        "ziel": "Les jeunes indiquent qui peut s’approcher d’eux et jusqu’où, nomment leurs signaux corporels pour « trop près » et « trop » et observent ces signaux pendant une semaine.",
         "ablauf": [
-          "Séance 22, après le tri des cartes des limites (7 min) : page 1 individuellement. Question : « À quoi remarquez-vous que c’est trop pour vous – avant même de dire quoi que ce soit ? »",
-          "L’adulte circule et aide avec des questions, pas avec des réponses. La feuille n’est pas ramassée.",
-          "Après l’exercice « Deux lignes » (3 min) : page 2 avec les cercles de proximité et les débuts de phrases. Les cercles restent privés.",
-          "Pour finir, lire l’encadré d’aide à voix haute et nommer les personnes de contact dans la maison."
+          "Séance 22, juste après l’exercice « Deux lignes » (8 min) : les deux exercices seul. Question : à quoi remarquez-vous que c’est trop pour vous – avant même de dire quoi que ce soit ?",
+          "L’adulte circule et aide avec des questions, pas avec des réponses. La feuille n’est pas ramassée, les cercles restent privés.",
+          "Lire l’encadré d’aide et nommer les personnes de contact dans la maison. En fin de séance, lire la mission : observer seulement."
         ],
-        "hintergrund": "Pour poser des limites, il faut d’abord les percevoir. Les émotions s’accompagnent de sensations corporelles typiques (Nummenmaa et al., 2014) – poitrine serrée, creux dans le ventre, épaules tendues. Ces signaux annoncent souvent plus tôt que la raison que c’est trop ; le feu les classe en trois niveaux, en lien avec l’échelle de tension. Les cercles de proximité reposent sur les zones de distance de Hall (1966) : intime jusqu’à environ 45 cm, personnelle jusqu’à environ 1,2 m, sociale jusqu’à environ 3,6 m, au-delà publique. Les valeurs varient selon la culture, la relation et l’humeur – il n’y a pas de bonne distance, seulement celle qui convient à la personne.",
+        "hintergrund": "Pour poser des limites, il faut d’abord les percevoir. Les émotions s’accompagnent de sensations corporelles typiques (Nummenmaa et al., 2014) – poitrine serrée, creux dans le ventre, épaules tendues. Ces signaux annoncent souvent plus tôt que la raison que c’est trop ; sur la feuille, les jeunes entourent les leurs. Les cercles de proximité reposent sur les zones de distance de Hall (1966) : intime jusqu’à environ 45 cm, personnelle jusqu’à environ 1,2 m, sociale jusqu’à environ 3,6 m, au-delà publique. Les valeurs varient selon la culture, la relation et l’humeur – il n’y a pas de bonne distance, seulement celle qui convient à la personne.",
         "quellen": [
           "Nummenmaa, L., Glerean, E., Hari, R. & Hietanen, J. K. (2014). Bodily maps of emotions. Proceedings of the National Academy of Sciences, 111(2), 646–651.",
           "Hall, E. T. (1966). The Hidden Dimension. Garden City, NY: Doubleday."
         ],
         "differenzierung": {
-          "leichter": "Seulement les tâches 2 et 3 ; dans les cercles, des initiales ou des symboles suffisent.",
-          "schwerer": "Pour chaque niveau du feu, noter ce que l’on pourrait faire ou dire à ce moment-là."
+          "leichter": "Dans les cercles, des initiales ou des symboles suffisent ; pour les signaux, un seul suffit.",
+          "schwerer": "Pour un signal d’alerte, noter ce que l’on pourrait faire ou dire à ce moment-là."
         },
         "impulse": [
           "À quoi remarquez-vous chez les autres que quelque chose est trop proche ?",
@@ -1431,12 +1336,17 @@
         ],
         "tipps": [
           "Ne pas ramasser les cercles et ne pas les faire lire à voix haute.",
-          "Relier le feu au plan des feux de la séance 15 : au rouge, les skills d’urgence aident, ainsi qu’une personne vers qui aller."
+          "Relier les signaux d’alerte au plan des feux de la séance 15 : au rouge, les skills d’urgence aident, ainsi qu’une personne vers qui aller."
         ],
         "achtung": "Si quelqu’un évoque des agressions, de la violence ou des abus : écouter calmement, ne pas interroger, ne promettre aucun secret. En cas de mise en danger, agir immédiatement selon le concept de protection interne et informer la direction compétente (responsable).",
-        "material": "Une feuille par personne, crayons, cartes des limites pour consulter"
+        "material": "Crayons, cartes des limites pour consulter"
       }
-    }
+    },
+    "look": "spiel",
+    "verwandt": [
+      "skills-grenz-karten",
+      "skills-stopp"
+    ]
   },
   {
     "id": "skills-stopp",
@@ -1470,145 +1380,75 @@
     ],
     "de": {
       "titel": "Mein Stopp",
-      "untertitel": "Klar und deutlich – mit Körper und Stimme",
+      "untertitel": "Klar und deutlich. Und wer Stopp hört, hört auf.",
       "bausteine": [
         {
           "art": "aufgabe",
-          "text": "Drei Arten, Stopp zu sagen. Welches Stopp nimmt man ernst? Kreise es ein und schreib auf, warum."
-        },
-        {
-          "art": "comic",
-          "spalten": 3,
-          "felder": [
-            {
-              "figuren": [
-                "figur:jana:verlegen:stehen"
-              ],
-              "text": "Ähm … stopp vielleicht?",
-              "untertitel": "leise, mit Lächeln"
-            },
-            {
-              "figuren": [
-                "figur:jana:froh:stopp"
-              ],
-              "text": "Stopp, hör auf, haha.",
-              "untertitel": "laut, mit Grinsen"
-            },
-            {
-              "figuren": [
-                "figur:jana:neutral:stopp"
-              ],
-              "text": "Stopp. Das will ich nicht.",
-              "untertitel": "laut, ernst, Hand hoch, Blick zur Person"
-            }
+          "text": "Würfle verdeckt und sag Stopp so, wie die Zahl es will.",
+          "hinweis": "Die anderen raten die Zahl. Finger von 0 bis 10: Wie ernst nehmt ihr dieses Stopp?",
+          "symbole": [
+            "sprechen",
+            "gruppe"
           ]
         },
         {
-          "art": "satzanfaenge",
-          "linien": 1,
-          "items": [
-            "Dieses Stopp wirkt am stärksten, weil …"
-          ]
-        },
-        {
-          "art": "aufgabe",
-          "text": "So wird ein Stopp klar. Probiere es zu zweit aus und kreuze an, was dir schon gelingt."
-        },
-        {
-          "art": "einschaetzung",
-          "optionen": [
-            "gelingt schon",
-            "übe ich noch"
-          ],
-          "items": [
-            "Ich stehe gerade, beide Füße fest am Boden.",
-            "Ich schaue die Person an – die Stirn reicht.",
-            "Ich hebe die Hand.",
-            "Ich gehe einen Schritt zurück.",
-            "Meine Stimme ist laut und ruhig.",
-            "Ich lächle nicht und entschuldige mich nicht.",
-            "Ich sage kurz, was ich nicht will."
-          ]
-        },
-        {
-          "art": "aufgabe",
-          "text": "Welche Sätze passen zu dir? Kreuze an oder ergänze eigene."
-        },
-        {
-          "art": "ankreuzen",
-          "spalten": 2,
-          "frei": 2,
-          "items": [
-            "„Stopp. Das will ich nicht.“",
-            "„Bitte fass mich nicht an.“",
-            "„Das ist für mich ein sensibles Thema.“",
-            "„Danke, aber das passt für mich nicht.“",
-            "„Ich brauche gerade Abstand.“",
-            "„Lösch das Foto bitte. Ich will das nicht.“",
-            "„Nein. Und dabei bleibt es.“",
-            "„Darüber rede ich nicht.“"
-          ]
-        },
-        {
-          "art": "aufgabe",
-          "text": "Luca hört nicht auf. Was sagst du beim ersten und beim zweiten Mal?",
-          "hinweis": "Bleib ruhig und klar. Du musst dich nicht rechtfertigen."
-        },
-        {
-          "art": "dialog",
+          "art": "wuerfel",
+          "titel": "Sechs Arten, Stopp zu sagen",
           "zeilen": [
-            {
-              "wer": "Luca",
-              "text": "„Zeig mal dein Handy, ich will die Fotos sehen.“"
-            },
-            {
-              "wer": "Du"
-            },
-            {
-              "wer": "Luca",
-              "text": "„Stell dich nicht so an. Ist doch nur Spaß.“"
-            },
-            {
-              "wer": "Du"
-            }
+            "ganz leise, mit Lächeln",
+            "laut, aber mit Grinsen",
+            "mit Blick auf den Boden",
+            "mit Entschuldigung: „Sorry, aber … stopp?“",
+            "klar: Hand hoch, Blick zur Person, feste Stimme",
+            "klar und mit Satz: „Stopp. Das will ich nicht.“"
           ]
         },
         {
           "art": "aufgabe",
-          "text": "Finde deinen eigenen Stopp-Satz."
-        },
-        {
-          "art": "satzanfaenge",
-          "linien": 1,
-          "items": [
-            "Mein Stopp-Satz: …",
-            "Dazu mache ich mit dem Körper: …",
-            "Eine Situation, in der ich ihn brauchen könnte: …"
+          "text": "Dein Stopp-Satz: Kreise einen ein oder schreib deinen eigenen.",
+          "symbole": [
+            "einkreisen",
+            "schreiben"
           ]
         },
         {
-          "art": "info",
-          "symbol": "merke",
-          "titel": "Wer Stopp hört, hört auf.",
-          "text": "Das gilt auch für dich – beim Spaß, in der Pause und im Chat. Ein Nein braucht keine Begründung."
+          "art": "wortspeicher",
+          "titel": "Stopp-Sätze",
+          "items": [
+            "Stopp. Das will ich nicht.",
+            "Bitte fass mich nicht an.",
+            "Ich brauche gerade Abstand.",
+            "Nein. Und dabei bleibt es.",
+            "Darüber rede ich nicht.",
+            "Lösch das Foto bitte."
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Mein Stopp-Satz: …"
+          ]
         },
         {
           "art": "info",
           "symbol": "hilfe",
           "titel": "Wenn ein Stopp nicht reicht",
-          "text": "Geh weg und hol dir Hilfe – das ist kein Petzen. Und wenn du in einem Moment nichts sagen konntest: Du bist nicht schuld. Schuld hat, wer die Grenze überschreitet."
+          "text": "Geh weg und hol dir Hilfe – das ist kein Petzen. Konntest du nichts sagen: Du bist nicht schuld. Schuld hat, wer die Grenze überschreitet. Kanner- a Jugendtelefon: 116 111."
         },
         {
-          "art": "notfall"
+          "art": "mission",
+          "text": "Sag diese Woche einmal klar Nein oder Stopp, wenn dir etwas nicht passt – ohne Entschuldigung. Sagt jemand Stopp zu dir: Sag „Okay“.",
+          "tage": 1,
+          "beweis": "Daumen – wie war es, klar zu sein?"
         }
       ],
       "lehrer": {
-        "ziel": "Die Jugendlichen erkennen, was ein Stopp glaubwürdig macht, üben es mit Körper und Stimme, wählen passende Stopp-Sätze und bereiten sich darauf vor, dass jemand nachhakt.",
+        "ziel": "Die Jugendlichen erleben im Würfelspiel, was ein Stopp schwach oder glaubwürdig macht, üben das klare Stopp mit Körper und Stimme und wählen einen eigenen Stopp-Satz.",
         "ablauf": [
-          "Einheit 23, nach der Vorführung der drei Stopps (5 Min.): Aufgabe 1 allein. Frage: „Warum wirkt das Stopp mit Lächeln so schwach?“",
-          "Übung zu zweit (8 Min.): B geht langsam auf A zu, A stoppt mit Variante 3. Wer sich schwertut, beginnt leise und wird lauter. Danach Aufgabe 2 ankreuzen.",
-          "Nach den Rollenspielen (5 Min.): Aufgabe 3 und 4 allein oder zu zweit. Frage: „Was sagt ihr, wenn jemand nachhakt?“",
-          "Aufgabe 5 allein. In der Abschlussrunde sagt, wer mag, den Satz laut, und die Gruppe antwortet mit „Okay“. Die Kästen am Ende gemeinsam lesen und die Ansprechpersonen im Haus nennen."
+          "Einheit 23, nach der Stopp-Jury (15 Min.): Stopp-Würfel in Dreier- oder Vierergruppen. Gesprochen wird zu einer gedachten Person, nie zu jemandem aus der Gruppe.",
+          "Danach üben alle die 5 und die 6 – erst leise, dann eine Stufe lauter. Jede Person bestimmt ihr Tempo.",
+          "Aufgabe 2 allein (6 Min.): Stopp-Satz einkreisen oder einen eigenen schreiben. Den Hilfe-Kasten gemeinsam lesen und die Ansprechpersonen im Haus nennen.",
+          "Abschluss: Wer mag, sagt seinen Stopp-Satz laut, die Gruppe antwortet „Okay“. Mission vorlesen."
         ],
         "hintergrund": "Das Skillstraining der Dialektisch-Behavioralen Therapie für Jugendliche übt, ein Anliegen klar zu sagen, bei Bedarf zu wiederholen und dabei selbstsicher aufzutreten: aufrechte Haltung, Blickkontakt, feste Stimme, kein Rückzug (Rathus & Miller, 2015). Ein Lächeln beim Stopp ist meist Verlegenheit, schwächt aber die Botschaft. Rollenspiele sind dabei keine Spielerei: Wer ein Verhalten mehrmals erfolgreich ausprobiert, traut es sich im Ernstfall eher zu (Bandura, 1977). Ebenso wichtig ist die Gegenseite – ein Nein zu hören und anzunehmen. Ein Stopp ist kein Schutz vor Gewalt: Viele Menschen erstarren in bedrohlichen Situationen, und wer nichts sagen konnte, trägt keine Schuld.",
         "quellen": [
@@ -1616,8 +1456,8 @@
           "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215."
         ],
         "differenzierung": {
-          "leichter": "Nur Aufgabe 1, 2 und 5; die Stopp-Sätze an die Tafel schreiben und einen davon übernehmen lassen.",
-          "schwerer": "Das Gespräch mit Luca weiterschreiben: Was tust du, wenn er ein drittes Mal nachhakt?"
+          "leichter": "Nur die 5 und die 6 üben; einen Stopp-Satz aus der Liste übernehmen.",
+          "schwerer": "Überlegen: Was sagst du, wenn jemand nachhakt („Stell dich nicht so an“)? Den Satz ruhig wiederholen."
         },
         "impulse": [
           "Wem gegenüber fällt euch ein Stopp schwerer – Fremden oder Freunden?",
@@ -1628,150 +1468,80 @@
           "Wer ungern vor anderen übt, beginnt nur mit der Hand oder übt zuerst mit der Leitung."
         ],
         "achtung": "Nur mit Worten und Abstand üben. Deutet jemand Übergriffe, Gewalt oder Erpressung an: nicht in der Gruppe vertiefen, Einzelgespräch führen, nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren.",
-        "material": "Blatt je Person, Stifte"
+        "material": "Ein Würfel je Gruppe, Stifte"
       }
     },
     "fr": {
       "titel": "Mon stop",
-      "untertitel": "Clair et net – avec le corps et la voix",
+      "untertitel": "Clair et net. Et qui entend stop s’arrête.",
       "bausteine": [
         {
           "art": "aufgabe",
-          "text": "Trois façons de dire stop. Lequel prend-on au sérieux ? Entoure-le et écris pourquoi."
-        },
-        {
-          "art": "comic",
-          "spalten": 3,
-          "felder": [
-            {
-              "figuren": [
-                "figur:jana:verlegen:stehen"
-              ],
-              "text": "Euh … stop, peut-être ?",
-              "untertitel": "doucement, en souriant"
-            },
-            {
-              "figuren": [
-                "figur:jana:froh:stopp"
-              ],
-              "text": "Stop, arrête, haha.",
-              "untertitel": "fort, en rigolant"
-            },
-            {
-              "figuren": [
-                "figur:jana:neutral:stopp"
-              ],
-              "text": "Stop. Je ne veux pas ça.",
-              "untertitel": "fort, sérieux, main levée, regard direct"
-            }
+          "text": "Lance le dé en cachette et dis stop comme le chiffre le demande.",
+          "hinweis": "Les autres devinent le chiffre. Doigts de 0 à 10 : prenez-vous ce stop au sérieux ?",
+          "symbole": [
+            "sprechen",
+            "gruppe"
           ]
         },
         {
-          "art": "satzanfaenge",
-          "linien": 1,
-          "items": [
-            "Ce stop est le plus efficace, parce que …"
-          ]
-        },
-        {
-          "art": "aufgabe",
-          "text": "Voici comment rendre un stop clair. Essaie à deux et coche ce qui te réussit déjà."
-        },
-        {
-          "art": "einschaetzung",
-          "optionen": [
-            "j’y arrive déjà",
-            "je m’entraîne"
-          ],
-          "items": [
-            "Je tiens le dos droit, les deux pieds ancrés au sol.",
-            "Je regarde la personne – le front suffit.",
-            "Je lève la main.",
-            "Je recule d’un pas.",
-            "Ma voix est forte et calme.",
-            "Je ne souris pas et ne m’excuse pas.",
-            "Je dis en peu de mots ce que je ne veux pas."
-          ]
-        },
-        {
-          "art": "aufgabe",
-          "text": "Quelles phrases te conviennent ? Coche ou ajoute les tiennes."
-        },
-        {
-          "art": "ankreuzen",
-          "spalten": 2,
-          "frei": 2,
-          "items": [
-            "« Stop. Je ne veux pas ça. »",
-            "« Ne me touche pas, s’il te plaît. »",
-            "« C’est un sujet sensible pour moi. »",
-            "« Merci, mais ça ne me convient pas. »",
-            "« J’ai besoin de distance. »",
-            "« Supprime la photo, je ne veux pas de ça. »",
-            "« Non. Et ça ne changera pas. »",
-            "« Je n’en parle pas. »"
-          ]
-        },
-        {
-          "art": "aufgabe",
-          "text": "Luca ne s’arrête pas. Que dis-tu la première fois, et la deuxième ?",
-          "hinweis": "Reste calme et clair. Tu n’as pas à te justifier."
-        },
-        {
-          "art": "dialog",
+          "art": "wuerfel",
+          "titel": "Six façons de dire stop",
           "zeilen": [
-            {
-              "wer": "Luca",
-              "text": "« Montre ton téléphone, je veux voir les photos. »"
-            },
-            {
-              "wer": "Toi"
-            },
-            {
-              "wer": "Luca",
-              "text": "« Ne fais pas d’histoires. C’est pour rire. »"
-            },
-            {
-              "wer": "Toi"
-            }
+            "tout bas, avec un sourire",
+            "fort, mais en rigolant",
+            "en regardant le sol",
+            "en t’excusant : « Pardon, mais … stop ? »",
+            "clair : main levée, regard vers la personne, voix ferme",
+            "clair, avec une phrase : « Stop. Je ne veux pas ça. »"
           ]
         },
         {
           "art": "aufgabe",
-          "text": "Trouve ta propre phrase de stop."
-        },
-        {
-          "art": "satzanfaenge",
-          "linien": 1,
-          "items": [
-            "Ma phrase de stop : …",
-            "Avec mon corps, je fais : …",
-            "Une situation où j’en aurais besoin : …"
+          "text": "Ta phrase de stop : entoure-en une ou écris la tienne.",
+          "symbole": [
+            "einkreisen",
+            "schreiben"
           ]
         },
         {
-          "art": "info",
-          "symbol": "merke",
-          "titel": "Qui entend stop s’arrête.",
-          "text": "Cela vaut aussi pour toi – pour rire, en pause, dans le chat. Un non n’a pas à être justifié."
+          "art": "wortspeicher",
+          "titel": "Phrases de stop",
+          "items": [
+            "Stop. Je ne veux pas ça.",
+            "Ne me touche pas.",
+            "J’ai besoin de distance.",
+            "Non. Et ça ne changera pas.",
+            "Je n’en parle pas.",
+            "Supprime la photo."
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ma phrase de stop : …"
+          ]
         },
         {
           "art": "info",
           "symbol": "hilfe",
           "titel": "Quand un stop ne suffit pas",
-          "text": "Éloigne-toi et va chercher de l’aide – ce n’est pas cafarder. Si tu n’as rien pu dire sur le moment : ce n’est pas ta faute. La faute revient à qui franchit la limite."
+          "text": "Éloigne-toi et va chercher de l’aide – ce n’est pas cafarder. Tu n’as rien pu dire ? Ce n’est pas ta faute : la faute revient à qui franchit la limite. Kanner- a Jugendtelefon : 116 111."
         },
         {
-          "art": "notfall"
+          "art": "mission",
+          "text": "Cette semaine, dis une fois clairement non ou stop quand quelque chose ne te convient pas. On te dit stop ? Réponds « D’accord ».",
+          "tage": 1,
+          "beweis": "pouce – c’était comment, d’être clair ?"
         }
       ],
       "lehrer": {
-        "ziel": "Les jeunes reconnaissent ce qui rend un stop crédible, s’exercent avec le corps et la voix, choisissent des phrases de stop et se préparent à ce que quelqu’un insiste.",
+        "ziel": "Les jeunes vivent dans un jeu de dé ce qui rend un stop faible ou crédible, s’exercent au stop clair avec le corps et la voix et choisissent leur propre phrase de stop.",
         "ablauf": [
-          "Séance 23, après la présentation des trois stops (5 min) : tâche 1 individuellement. Question : « Pourquoi le stop avec un sourire est-il si faible ? »",
-          "Exercice à deux (8 min) : B avance lentement vers A, A dit stop (variante 3). Qui a du mal commence doucement et monte la voix. Puis cocher la tâche 2.",
-          "Après les jeux de rôle (5 min) : tâches 3 et 4, seul ou à deux. Question : « Que dites-vous quand quelqu’un insiste ? »",
-          "Tâche 5 individuellement. Au tour de clôture, qui veut dit sa phrase à voix haute ; le groupe répond « D’accord ». Lire les encadrés de la fin et nommer les personnes de contact dans la maison."
+          "Séance 23, après le jury du stop (15 min) : le dé du stop par groupes de trois ou quatre. On s’adresse à une personne imaginaire, jamais à quelqu’un du groupe.",
+          "Ensuite, tous s’exercent au 5 et au 6 – d’abord doucement, puis un cran plus fort. Chacun décide de son rythme.",
+          "Exercice 2 seul (6 min) : entourer une phrase de stop ou écrire la sienne. Lire ensemble l’encadré d’aide et nommer les personnes de contact dans la maison.",
+          "Clôture : qui veut dit sa phrase de stop à voix haute, le groupe répond « D’accord ». Lire la mission."
         ],
         "hintergrund": "L’entraînement aux skills de la thérapie comportementale dialectique pour adolescents apprend à dire clairement une demande, à la répéter au besoin et à s’affirmer : posture droite, contact visuel, voix ferme, pas de retrait (Rathus & Miller, 2015). Un sourire en disant stop traduit le plus souvent la gêne, mais affaiblit le message. Les jeux de rôle ne sont pas un gadget : qui a essayé plusieurs fois un comportement avec succès s’en sent plus capable en situation réelle (Bandura, 1977). Tout aussi important : entendre un non et l’accepter. Un stop ne protège pas de la violence : beaucoup de personnes se figent face à une menace, et qui n’a rien pu dire n’y est pour rien.",
         "quellen": [
@@ -1779,8 +1549,8 @@
           "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215."
         ],
         "differenzierung": {
-          "leichter": "Seulement les tâches 1, 2 et 5 ; écrire les phrases de stop au tableau et en faire adopter une.",
-          "schwerer": "Poursuivre la conversation avec Luca : que fais-tu s’il insiste une troisième fois ?"
+          "leichter": "S’exercer seulement au 5 et au 6 ; reprendre une phrase de stop de la liste.",
+          "schwerer": "Réfléchir : que dis-tu si quelqu’un insiste (« Ne fais pas d’histoires ») ? Répéter calmement la phrase."
         },
         "impulse": [
           "Avec qui un stop est-il plus difficile – des inconnus ou des amis ?",
@@ -1791,8 +1561,13 @@
           "Qui n’aime pas s’exercer devant les autres commence par le geste de la main ou avec l’adulte."
         ],
         "achtung": "S’exercer uniquement avec des mots et à distance. Si quelqu’un laisse entendre des agressions, de la violence ou du chantage : ne pas approfondir en groupe, entretien individuel, agir selon le concept de protection interne, informer la direction compétente (responsable).",
-        "material": "Une feuille par personne, stylos"
+        "material": "Un dé par groupe, crayons"
       }
-    }
+    },
+    "look": "spiel",
+    "verwandt": [
+      "skills-grenz-karten",
+      "skills-meine-grenzen"
+    ]
   }
 ]

@@ -5292,5 +5292,1880 @@
         "material": "Jeu de cartes, une plume par personne, minuteur, signal"
       }
     }
+  },
+  {
+    "id": "skills-drei-runden-karten",
+    "bereich": "skills",
+    "thema": "kommunikation",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "look": "spiel",
+    "sozialform": [
+      "gruppe"
+    ],
+    "dauer": "20 Min.",
+    "eldib": [
+      "K-21",
+      "K-17",
+      "SOZ-37"
+    ],
+    "schlagworte": [
+      "Körpersprache",
+      "Stimme",
+      "Pantomime",
+      "Spiel",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:masks-theater",
+    "verwandt": [
+      "skills-mehr-als-worte"
+    ],
+    "kurs": [
+      "j1-e20"
+    ],
+    "de": {
+      "titel": "Drei-Runden-Karten",
+      "untertitel": "Ein Stapel, drei Runden: erst nur Worte, dann nur Stimme, dann nur Körper.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "So geht das Spiel",
+          "punkte": [
+            "Zwei Teams, ein Stapel. Wer dran ist, hat 40 Sekunden: Das eigene Team rät so viele Karten wie möglich. Jede Karte = 1 Punkt.",
+            "Runde 1 – nur Worte: erklären, ohne das Wort zu nennen. Hände auf den Rücken.",
+            "Runde 2 – nur Stimme: Geräusche und Töne, kein einziges Wort.",
+            "Runde 3 – nur Körper: Pantomime, kein Ton.",
+            "Stapel leer? Mischen – die nächste Runde läuft mit denselben Karten."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schneidet die Karten aus und legt sie verdeckt auf einen Stapel.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 4,
+          "hoehe": 58,
+          "schneiden": true,
+          "karten": [
+            {
+              "titel": "Hund"
+            },
+            {
+              "titel": "Wecker"
+            },
+            {
+              "titel": "Zahnarzt"
+            },
+            {
+              "titel": "Gewitter"
+            },
+            {
+              "titel": "Baby"
+            },
+            {
+              "titel": "Gespenst"
+            },
+            {
+              "titel": "Zug"
+            },
+            {
+              "titel": "Staubsauger"
+            },
+            {
+              "titel": "Schnarchen"
+            },
+            {
+              "titel": "Niesen"
+            },
+            {
+              "titel": "Tor beim Fußball"
+            },
+            {
+              "titel": "Zähne putzen"
+            },
+            {
+              "titel": "Schlagzeug"
+            },
+            {
+              "titel": "Feuerwehr"
+            },
+            {
+              "titel": "Mücke"
+            },
+            {
+              "titel": "Schluckauf"
+            },
+            {
+              "titel": "Lachanfall"
+            },
+            {
+              "titel": "Achterbahn"
+            },
+            {
+              "titel": "Hahn"
+            },
+            {
+              "titel": "Moped"
+            },
+            {
+              "titel": "Dusche"
+            },
+            {
+              "titel": "scharfes Essen"
+            },
+            {
+              "titel": "Frieren"
+            },
+            {
+              "titel": "Gähnen"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen erleben in drei Spielrunden, was Worte, Stimme und Körper jeweils leisten, und benennen danach die drei Kanäle einer Nachricht.",
+        "ablauf": [
+          "Zwei gemischte Teams, eine Person stoppt 40 Sekunden. Alle 24 Karten liegen verdeckt auf einem Stapel; bei wenig Zeit reichen 16.",
+          "Drei Runden mit demselben Stapel: nur Worte, nur Stimme, nur Körper. Weil die Begriffe ab Runde 2 bekannt sind, klappen auch Geräusche und Pantomime.",
+          "Punkte je Runde an die Tafel. Danach fragen: Welche Runde war am leichtesten, welche am lustigsten – und welcher Kanal hat euch gefehlt?",
+          "Die Antworten in drei Spalten festhalten: Worte – Stimme – Körper."
+        ],
+        "hintergrund": "Eine Nachricht läuft über mehrere Kanäle zugleich: Worte, Stimme und Körper. Watzlawick et al. (1967) beschrieben, dass man nicht nicht kommunizieren kann und dass Stimme, Blick und Haltung vor allem mitteilen, wie die Beteiligten zueinander stehen. Das Spiel trennt die Kanäle künstlich: Mit Worten gelingen Gegenstände und Berufe schnell, Gefühle und Tätigkeiten erkennt man am Körper oft sofort. Wer das selbst erlebt hat, versteht leichter, warum im Chat so viel fehlt.",
+        "quellen": [
+          "Watzlawick, P., Beavin, J. H. & Jackson, D. D. (1967). Pragmatics of Human Communication. New York: Norton."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Runde 1 und 3 spielen; wer nicht allein vorspielen mag, tritt zu zweit an.",
+          "schwerer": "Runde 1 verschärfen: höchstens drei Wörter je Karte."
+        },
+        "impulse": [
+          "Was ging mit Worten schneller, was mit dem Körper?",
+          "Welcher Kanal fehlt, wenn ihr eine Textnachricht schreibt?"
+        ],
+        "tipps": [
+          "Bei zwei oder drei Jugendlichen spielen alle zusammen gegen die Uhr: Schafft die Gruppe den Stapel in drei Minuten?",
+          "„Weiter“ ist erlaubt: Die Karte kommt unter den Stapel."
+        ],
+        "achtung": "Niemand muss allein vorspielen; zu zweit antreten oder die Zeit stoppen zählt genauso. Die Körpersprache einzelner Jugendlicher nie vor der Gruppe deuten oder bewerten. Lacht jemand über eine Darstellung, an den Gruppenvertrag erinnern: miteinander lachen, nicht übereinander.",
+        "material": "Ein Kartensatz für die Gruppe, ausgeschnitten, Stoppuhr oder Handy-Timer"
+      }
+    },
+    "fr": {
+      "titel": "Cartes des trois manches",
+      "untertitel": "Une pile, trois manches : d’abord les mots, puis la voix, puis le corps.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Règle du jeu",
+          "punkte": [
+            "Deux équipes, une pile. Le joueur a 40 secondes : son équipe devine le plus de cartes possible. Chaque carte = 1 point.",
+            "Manche 1 – les mots : expliquer sans dire le mot. Mains dans le dos.",
+            "Manche 2 – la voix : des bruits et des sons, pas un seul mot.",
+            "Manche 3 – le corps : mime, sans aucun son.",
+            "Pile vide ? On mélange – la manche suivante se joue avec les mêmes cartes."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Découpez les cartes et posez-les en pile, face cachée.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 4,
+          "hoehe": 58,
+          "schneiden": true,
+          "karten": [
+            {
+              "titel": "Chien"
+            },
+            {
+              "titel": "Réveil"
+            },
+            {
+              "titel": "Dentiste"
+            },
+            {
+              "titel": "Orage"
+            },
+            {
+              "titel": "Bébé"
+            },
+            {
+              "titel": "Fantôme"
+            },
+            {
+              "titel": "Train"
+            },
+            {
+              "titel": "Aspirateur"
+            },
+            {
+              "titel": "Ronfler"
+            },
+            {
+              "titel": "Éternuer"
+            },
+            {
+              "titel": "But au foot"
+            },
+            {
+              "titel": "Se brosser les dents"
+            },
+            {
+              "titel": "Batterie"
+            },
+            {
+              "titel": "Pompiers"
+            },
+            {
+              "titel": "Moustique"
+            },
+            {
+              "titel": "Hoquet"
+            },
+            {
+              "titel": "Fou rire"
+            },
+            {
+              "titel": "Montagnes russes"
+            },
+            {
+              "titel": "Coq"
+            },
+            {
+              "titel": "Scooter"
+            },
+            {
+              "titel": "Douche"
+            },
+            {
+              "titel": "Plat très épicé"
+            },
+            {
+              "titel": "Avoir froid"
+            },
+            {
+              "titel": "Bâiller"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes découvrent en trois manches ce qu’apportent les mots, la voix et le corps, puis nomment les trois canaux d’un message.",
+        "ablauf": [
+          "Deux équipes mélangées, une personne chronomètre 40 secondes. Les 24 cartes sont en pile, face cachée ; s’il y a peu de temps, 16 suffisent.",
+          "Trois manches avec la même pile : les mots, la voix, le corps. Comme les mots sont connus dès la manche 2, les bruits et le mime fonctionnent aussi.",
+          "Noter les points de chaque manche au tableau. Puis demander : quelle manche était la plus facile, la plus drôle – et quel canal vous a manqué ?",
+          "Garder les réponses en trois colonnes : mots – voix – corps."
+        ],
+        "hintergrund": "Un message passe par plusieurs canaux à la fois : les mots, la voix et le corps. Watzlawick et al. (1967) ont montré qu’on ne peut pas ne pas communiquer et que la voix, le regard et la posture disent surtout comment les personnes se situent l’une par rapport à l’autre. Le jeu sépare artificiellement ces canaux : avec les mots, les objets et les métiers se devinent vite ; les émotions et les actions se lisent souvent tout de suite sur le corps. Qui l’a vécu comprend mieux pourquoi il manque tant de choses dans un chat.",
+        "quellen": [
+          "Watzlawick, P., Beavin, J. H. & Jackson, D. D. (1967). Pragmatics of Human Communication. New York: Norton."
+        ],
+        "differenzierung": {
+          "leichter": "Jouer seulement les manches 1 et 3 ; qui ne veut pas jouer seul se présente à deux.",
+          "schwerer": "Durcir la manche 1 : trois mots au maximum par carte."
+        },
+        "impulse": [
+          "Qu’est-ce qui allait plus vite avec les mots, et avec le corps ?",
+          "Quel canal manque quand vous écrivez un message ?"
+        ],
+        "tipps": [
+          "Avec deux ou trois jeunes, tous jouent ensemble contre la montre : le groupe finit-il la pile en trois minutes ?",
+          "« Je passe » est permis : la carte retourne sous la pile."
+        ],
+        "achtung": "Personne n’est obligé de jouer seul ; se présenter à deux ou chronométrer compte tout autant. Ne jamais interpréter ni juger le langage corporel d’un jeune devant le groupe. Si quelqu’un se moque d’une prestation, rappeler le contrat du groupe : on rit ensemble, pas des autres.",
+        "material": "Un jeu de cartes découpé pour le groupe, Chronomètre ou minuteur du téléphone"
+      }
+    }
+  },
+  {
+    "id": "skills-vorwurf-karten",
+    "bereich": "skills",
+    "thema": "kommunikation",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "look": "spiel",
+    "sozialform": [
+      "gruppe"
+    ],
+    "dauer": "18 Min.",
+    "eldib": [
+      "K-26",
+      "K-30",
+      "K-17"
+    ],
+    "schlagworte": [
+      "Ich-Botschaft",
+      "Du-Botschaft",
+      "aktives Zuhören",
+      "Spiel",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:arrows-shuffle",
+    "verwandt": [
+      "skills-ich-botschaften",
+      "skills-zuhoeren"
+    ],
+    "kurs": [
+      "j1-e21"
+    ],
+    "de": {
+      "titel": "Vorwurf-Karten",
+      "untertitel": "Das Umwandler-Spiel: Aus einem Vorwurf wird eine Ich-Botschaft – und die andere Seite hört zu.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "So geht das Spiel",
+          "punkte": [
+            "Zwei Teams. Team A zieht eine Karte und liest Situation und Vorwurf vor – so genervt wie möglich.",
+            "Team B hat 30 Sekunden und macht daraus eine Ich-Botschaft. Gefühl und Wunsch = 1 Punkt, alle vier Teile = 2 Punkte.",
+            "Team A fasst zusammen: „Du bist also …, weil …?“ Stimmt es, bekommt Team A 1 Punkt.",
+            "Steckt noch ein Angriff im Satz, gibt es keinen Punkt. Dann wird getauscht."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schneidet die Karten aus und legt sie verdeckt auf einen Stapel.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 96,
+          "schneiden": true,
+          "karten": [
+            {
+              "titel": "„Du nervst immer.“",
+              "text": "Dein Bruder kommt zum dritten Mal ins Zimmer, während du lernst.",
+              "nummer": 1
+            },
+            {
+              "titel": "„Immer kommst du zu spät.“",
+              "text": "Du wartest seit zwanzig Minuten an der Bushaltestelle.",
+              "nummer": 2
+            },
+            {
+              "titel": "„Du hörst mir nie zu.“",
+              "text": "Du erzählst etwas, dein Freund schaut dabei aufs Handy.",
+              "nummer": 3
+            },
+            {
+              "titel": "„Du nimmst immer meine Sachen.“",
+              "text": "Dein Ladekabel ist schon wieder weg.",
+              "nummer": 4
+            },
+            {
+              "titel": "„Du bist so unfair.“",
+              "text": "In der Gruppenarbeit hast du alles allein gemacht.",
+              "nummer": 5
+            },
+            {
+              "titel": "„Hör auf, mitzulesen.“",
+              "text": "Deine Schwester schaut dir beim Chatten über die Schulter.",
+              "nummer": 6
+            },
+            {
+              "titel": "„Du bist so peinlich.“",
+              "text": "Ein Freund erzählt vor allen eine Geschichte über dich.",
+              "nummer": 7
+            },
+            {
+              "titel": "„Nie fragst du mich.“",
+              "text": "Deine Freunde haben den Film ohne dich ausgesucht.",
+              "nummer": 8
+            },
+            {
+              "titel": "„Du machst alles kaputt.“",
+              "text": "Jemand hat dein Fahrrad geliehen, jetzt ist das Licht ab.",
+              "nummer": 9
+            },
+            {
+              "titel": "„Dir ist doch alles egal.“",
+              "text": "Deine Freundin antwortet seit zwei Tagen nicht.",
+              "nummer": 10
+            },
+            {
+              "titel": "„Du lachst mich immer aus.“",
+              "text": "Du versprichst dich im Unterricht, jemand kichert.",
+              "nummer": 11
+            },
+            {
+              "titel": "„Mach doch mal leiser.“",
+              "text": "Im Bus hört jemand neben dir laut Musik ohne Kopfhörer.",
+              "nummer": 12
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen verwandeln Vorwürfe im Team in Ich-Botschaften und fassen die Ich-Botschaft der anderen Seite mit dem Gefühl zusammen.",
+        "ablauf": [
+          "Zwei gemischte Teams stehen sich gegenüber, die Karten liegen verdeckt in der Mitte. Die Formel und die vier Zuhör-Schritte hängen sichtbar.",
+          "Team A liest vor, Team B berät 30 Sekunden, eine Person spricht die Ich-Botschaft, Team A fasst zusammen. Dann Wechsel; etwa acht Karten.",
+          "Die Leitung vergibt die Punkte und fragt bei Zweifeln die Gruppe: Würdet ihr bei diesem Satz zuhören oder euch wehren?",
+          "Zum Schluss: Welcher Satz hat euch überzeugt – und warum?"
+        ],
+        "hintergrund": "Du-Botschaften enthalten Urteile und lösen meist Verteidigung aus; Ich-Botschaften beschreiben Situation, Gefühl und Wunsch und lassen dem Gegenüber Raum (Gordon, 1972). Das Gegenstück ist das aktive Zuhören: Wer ohne Bewertung zusammenfasst, zeigt Verständnis und klärt Missverständnisse früh. Im Spiel werden beide Werkzeuge an erfundenen Situationen geübt – im Team und unter leichtem Zeitdruck, damit niemand allein formulieren muss und kein echter Streit aus der Gruppe auf den Tisch kommt.",
+        "quellen": [
+          "Gordon, T. (1972). Familienkonferenz. Hamburg: Hoffmann und Campe."
+        ],
+        "differenzierung": {
+          "leichter": "Ohne Zeitlimit spielen; Gefühl und Wunsch reichen für die volle Punktzahl.",
+          "schwerer": "Die Ich-Botschaft so kürzen, wie man sie im Bus wirklich sagen würde – höchstens zwölf Wörter."
+        },
+        "impulse": [
+          "Woran habt ihr gemerkt, dass in einem Satz noch ein Angriff steckt?",
+          "Was war schwerer – umwandeln oder zusammenfassen?"
+        ],
+        "tipps": [
+          "Bei zwei oder drei Jugendlichen spielen alle gemeinsam; die Leitung liest die Vorwürfe vor.",
+          "Scherzsätze gelten, wenn die Form stimmt – dann um eine zweite, ernst gemeinte Fassung bitten."
+        ],
+        "achtung": "Gespielt werden nur die Situationen auf den Karten, nie echte Konflikte aus der Gruppe. Ich-Botschaften helfen nicht gegen Mobbing oder Gewalt: Erzählt jemand von wiederholten Angriffen oder Bedrohung, ein Einzelgespräch anbieten und die zuständige Leitung (Responsable) informieren.",
+        "material": "Ein Kartensatz für die Gruppe, ausgeschnitten, Stoppuhr oder Handy-Timer"
+      }
+    },
+    "fr": {
+      "titel": "Cartes des reproches",
+      "untertitel": "Le jeu du transformateur : un reproche devient un message-je – et l’autre équipe écoute.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Règle du jeu",
+          "punkte": [
+            "Deux équipes. L’équipe A tire une carte et lit la situation et le reproche – d’un ton aussi agacé que possible.",
+            "L’équipe B a 30 secondes pour en faire un message-je. Émotion et souhait = 1 point, les quatre parties = 2 points.",
+            "L’équipe A reformule : « Donc tu es …, parce que … ? » Si c’est juste, 1 point pour l’équipe A.",
+            "S’il reste une attaque dans la phrase : pas de point. Puis on échange les rôles."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Découpez les cartes et posez-les en pile, face cachée.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 96,
+          "schneiden": true,
+          "karten": [
+            {
+              "titel": "« Tu m’énerves tout le temps. »",
+              "text": "Ton frère entre pour la troisième fois dans ta chambre pendant que tu travailles.",
+              "nummer": 1
+            },
+            {
+              "titel": "« Tu es toujours en retard. »",
+              "text": "Tu attends depuis vingt minutes à l’arrêt de bus.",
+              "nummer": 2
+            },
+            {
+              "titel": "« Tu ne m’écoutes jamais. »",
+              "text": "Tu racontes quelque chose, ton ami regarde son téléphone.",
+              "nummer": 3
+            },
+            {
+              "titel": "« Tu prends toujours mes affaires. »",
+              "text": "Ton chargeur a encore disparu.",
+              "nummer": 4
+            },
+            {
+              "titel": "« Tu es tellement injuste. »",
+              "text": "Dans le travail de groupe, tu as tout fait tout seul.",
+              "nummer": 5
+            },
+            {
+              "titel": "« Arrête de lire mes messages. »",
+              "text": "Ta sœur regarde par-dessus ton épaule pendant que tu chattes.",
+              "nummer": 6
+            },
+            {
+              "titel": "« Tu me fais honte. »",
+              "text": "Un ami raconte devant tout le monde une histoire sur toi.",
+              "nummer": 7
+            },
+            {
+              "titel": "« Tu ne me demandes jamais. »",
+              "text": "Tes amis ont choisi le film sans toi.",
+              "nummer": 8
+            },
+            {
+              "titel": "« Tu casses tout. »",
+              "text": "Quelqu’un a emprunté ton vélo, le phare est cassé.",
+              "nummer": 9
+            },
+            {
+              "titel": "« Tu t’en fiches complètement. »",
+              "text": "Ton amie ne répond plus depuis deux jours.",
+              "nummer": 10
+            },
+            {
+              "titel": "« Tu te moques toujours de moi. »",
+              "text": "Tu bafouilles en classe, quelqu’un ricane.",
+              "nummer": 11
+            },
+            {
+              "titel": "« Baisse le son. »",
+              "text": "Dans le bus, ton voisin écoute de la musique sans écouteurs.",
+              "nummer": 12
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes transforment en équipe des reproches en messages-je et reformulent le message-je de l’autre équipe en nommant l’émotion.",
+        "ablauf": [
+          "Deux équipes mélangées se font face, les cartes sont au centre, face cachée. La formule et les quatre étapes de l’écoute sont affichées.",
+          "L’équipe A lit, l’équipe B se concerte 30 secondes, une personne dit le message-je, l’équipe A reformule. Puis on échange ; environ huit cartes.",
+          "L’adulte attribue les points et, en cas de doute, demande au groupe : à cette phrase, écouteriez-vous ou vous défendriez-vous ?",
+          "Pour finir : quelle phrase vous a convaincus – et pourquoi ?"
+        ],
+        "hintergrund": "Les messages-tu contiennent des jugements et provoquent le plus souvent la défense ; les messages-je décrivent la situation, l’émotion et le souhait et laissent de la place à l’autre (Gordon, 1972). Leur pendant est l’écoute active : reformuler sans juger montre que l’on a compris et dissipe tôt les malentendus. Le jeu exerce les deux outils sur des situations inventées – en équipe et avec une légère pression du temps, pour que personne ne doive formuler seul et qu’aucun vrai conflit du groupe ne soit mis sur la table.",
+        "quellen": [
+          "Gordon, T. (1972). Familienkonferenz. Hamburg: Hoffmann und Campe."
+        ],
+        "differenzierung": {
+          "leichter": "Jouer sans limite de temps ; émotion et souhait suffisent pour tous les points.",
+          "schwerer": "Raccourcir le message-je comme on le dirait vraiment dans le bus – douze mots au maximum."
+        },
+        "impulse": [
+          "À quoi avez-vous remarqué qu’il restait une attaque dans une phrase ?",
+          "Qu’est-ce qui était le plus difficile – transformer ou reformuler ?"
+        ],
+        "tipps": [
+          "Avec deux ou trois jeunes, tous jouent ensemble ; l’adulte lit les reproches.",
+          "Les phrases pour rire comptent si la forme est juste – demander ensuite une deuxième version, sérieuse."
+        ],
+        "achtung": "On ne joue que les situations des cartes, jamais de vrais conflits du groupe. Les messages-je n’aident pas contre le harcèlement ou la violence : si quelqu’un parle d’attaques répétées ou de menaces, proposer un entretien individuel et informer la direction compétente (responsable).",
+        "material": "Un jeu de cartes découpé pour le groupe, Chronomètre ou minuteur du téléphone"
+      }
+    }
+  },
+  {
+    "id": "skills-signal-karten",
+    "bereich": "skills",
+    "thema": "kommunikation",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "look": "spiel",
+    "sozialform": [
+      "gruppe"
+    ],
+    "dauer": "22 Min.",
+    "eldib": [
+      "K-21",
+      "SOZ-32",
+      "SOZ-37"
+    ],
+    "schlagworte": [
+      "Körpersprache",
+      "Grenzen",
+      "Nein sagen",
+      "Pantomime",
+      "Spiel",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:eye",
+    "verwandt": [
+      "skills-grenz-karten",
+      "skills-stopp"
+    ],
+    "kurs": [
+      "j1-e22"
+    ],
+    "de": {
+      "titel": "Signal-Karten",
+      "untertitel": "Zeig es ohne Worte: Was versteht jeder – und was kann man falsch lesen?",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "So geht das Spiel",
+          "punkte": [
+            "Zwei Teams. Eine Person zieht eine Karte und zeigt die Botschaft 20 Sekunden ohne Worte – mit zwei Schritten Abstand, ohne Berührung.",
+            "Ihr Team rät die Botschaft. Richtig = 1 Punkt.",
+            "Dann stimmen alle ab: Daumen hoch = eindeutig. Daumen quer = kann man falsch lesen.",
+            "Die Karte kommt auf dem Plakat in die passende Spalte."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schneidet die Karten aus und legt sie verdeckt auf einen Stapel.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 82,
+          "schneiden": true,
+          "karten": [
+            {
+              "titel": "„Ich mag dich sehr.“",
+              "nummer": 1
+            },
+            {
+              "titel": "„Ich bin wütend.“",
+              "nummer": 2
+            },
+            {
+              "titel": "„Ich bin gekränkt.“",
+              "nummer": 3
+            },
+            {
+              "titel": "„Komm her.“",
+              "nummer": 4
+            },
+            {
+              "titel": "„Lass mich in Ruhe.“",
+              "nummer": 5
+            },
+            {
+              "titel": "„Das ist mir zu nah.“",
+              "nummer": 6
+            },
+            {
+              "titel": "„Ich will das nicht.“",
+              "nummer": 7
+            },
+            {
+              "titel": "„Ich brauche Hilfe.“",
+              "nummer": 8
+            },
+            {
+              "titel": "„Ich höre dir zu.“",
+              "nummer": 9
+            },
+            {
+              "titel": "„Mir ist das peinlich.“",
+              "nummer": 10
+            },
+            {
+              "titel": "„Ich will nichts von dir.“",
+              "nummer": 11
+            },
+            {
+              "titel": "„Hör auf.“",
+              "nummer": 12
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen zeigen Gefühle und ein Nein ohne Worte, erleben, welche Signale eindeutig ankommen, und erkennen, dass ein klares Nein Worte und Körper zusammen braucht.",
+        "ablauf": [
+          "Plakat mit zwei Spalten: „eindeutig“ und „kann man falsch lesen“. Zwei gemischte Teams, eine Person stoppt 20 Sekunden.",
+          "Abwechselnd ziehen, zeigen, raten, abstimmen – etwa zehn Karten. Wer nicht vorspielen mag, stoppt die Zeit oder klebt die Karten auf.",
+          "Auswertung am Plakat: Wo sind die Nein-Karten (5, 6, 7, 11, 12) gelandet? Was hat ein Nein eindeutig gemacht?",
+          "Das Plakat bleibt für Einheit 23 hängen."
+        ],
+        "hintergrund": "Ohne Worte teilen Menschen vor allem mit, wie sie zueinander stehen (Watzlawick et al., 1967). Grundgefühle wie Freude oder Wut werden im Gesicht meist sicher erkannt (Ekman, 1992). Ein Nein bleibt ohne Worte dagegen oft mehrdeutig: Wegschauen, Schweigen oder ein verlegenes Lächeln können Ablehnung, Unsicherheit oder Schüchternheit bedeuten. Das Spiel bereitet so das klare Stopp vor, bei dem Worte, Stimme und Körper dasselbe sagen.",
+        "quellen": [
+          "Watzlawick, P., Beavin, J. H. & Jackson, D. D. (1967). Pragmatics of Human Communication. New York: Norton.",
+          "Ekman, P. (1992). An argument for basic emotions. Cognition and Emotion, 6(3–4), 169–200."
+        ],
+        "differenzierung": {
+          "leichter": "Zu zweit vorspielen oder die Botschaft nur mit dem Gesicht zeigen.",
+          "schwerer": "Dieselbe Karte zweimal zeigen: einmal so, dass sie missverstanden wird, einmal eindeutig."
+        },
+        "impulse": [
+          "Welche Botschaft war ohne Worte am schwersten zu zeigen?",
+          "Was kann ein verlegenes Lächeln alles bedeuten?"
+        ],
+        "tipps": [
+          "Bei zwei oder drei Jugendlichen zeigt die Leitung mit, und alle raten gemeinsam.",
+          "Anspielungen auf Personen im Raum freundlich stoppen; gezeigt wird immer zu einer gedachten Person."
+        ],
+        "achtung": "Gezeigt wird mit Abstand, ohne Berührung, immer zu einer gedachten Person. Niemand muss vorspielen. Wird jemand still oder plötzlich albern: nach der Einheit ein Gespräch anbieten. Bei Hinweisen auf Übergriffe nach dem Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren.",
+        "material": "Kartensatz, Plakat mit zwei Spalten, Kreppband, Stoppuhr"
+      }
+    },
+    "fr": {
+      "titel": "Cartes des signaux",
+      "untertitel": "Montre-le sans paroles : qu’est-ce qui est clair – et qu’est-ce qu’on peut mal lire ?",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Règle du jeu",
+          "punkte": [
+            "Deux équipes. Une personne tire une carte et montre le message 20 secondes, sans paroles – à deux pas de distance, sans contact.",
+            "Son équipe devine le message. Bonne réponse = 1 point.",
+            "Puis tout le monde vote : pouce en haut = clair. Pouce de côté = on peut mal le lire.",
+            "La carte va sur l’affiche, dans la bonne colonne."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Découpez les cartes et posez-les en pile, face cachée.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 82,
+          "schneiden": true,
+          "karten": [
+            {
+              "titel": "« Je t’aime beaucoup. »",
+              "nummer": 1
+            },
+            {
+              "titel": "« Je suis en colère. »",
+              "nummer": 2
+            },
+            {
+              "titel": "« Je suis blessé. »",
+              "nummer": 3
+            },
+            {
+              "titel": "« Viens ici. »",
+              "nummer": 4
+            },
+            {
+              "titel": "« Laisse-moi tranquille. »",
+              "nummer": 5
+            },
+            {
+              "titel": "« C’est trop près pour moi. »",
+              "nummer": 6
+            },
+            {
+              "titel": "« Je ne veux pas ça. »",
+              "nummer": 7
+            },
+            {
+              "titel": "« J’ai besoin d’aide. »",
+              "nummer": 8
+            },
+            {
+              "titel": "« Je t’écoute. »",
+              "nummer": 9
+            },
+            {
+              "titel": "« Ça me gêne. »",
+              "nummer": 10
+            },
+            {
+              "titel": "« Tu ne m’intéresses pas. »",
+              "nummer": 11
+            },
+            {
+              "titel": "« Arrête. »",
+              "nummer": 12
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes montrent des émotions et un non sans paroles, constatent quels signaux sont clairs et comprennent qu’un non clair a besoin des mots et du corps ensemble.",
+        "ablauf": [
+          "Une affiche à deux colonnes : « clair » et « on peut mal le lire ». Deux équipes mélangées, une personne chronomètre 20 secondes.",
+          "Tirer, montrer, deviner, voter à tour de rôle – une dizaine de cartes. Qui ne veut pas jouer chronomètre ou colle les cartes.",
+          "Bilan devant l’affiche : où sont arrivées les cartes du non (5, 6, 7, 11, 12) ? Qu’est-ce qui a rendu un non clair ?",
+          "L’affiche reste accrochée pour la séance 23."
+        ],
+        "hintergrund": "Sans paroles, on dit surtout comment on se situe par rapport à l’autre (Watzlawick et al., 1967). Les émotions de base comme la joie ou la colère se lisent le plus souvent sûrement sur le visage (Ekman, 1992). Un non, en revanche, reste souvent ambigu sans paroles : détourner le regard, se taire ou sourire avec gêne peut signifier le refus, l’incertitude ou la timidité. Le jeu prépare ainsi le stop clair, où les mots, la voix et le corps disent la même chose.",
+        "quellen": [
+          "Watzlawick, P., Beavin, J. H. & Jackson, D. D. (1967). Pragmatics of Human Communication. New York: Norton.",
+          "Ekman, P. (1992). An argument for basic emotions. Cognition and Emotion, 6(3–4), 169–200."
+        ],
+        "differenzierung": {
+          "leichter": "Jouer à deux ou montrer le message seulement avec le visage.",
+          "schwerer": "Montrer deux fois la même carte : une fois de façon ambiguë, une fois clairement."
+        },
+        "impulse": [
+          "Quel message était le plus difficile à montrer sans paroles ?",
+          "Que peut vouloir dire un sourire gêné ?"
+        ],
+        "tipps": [
+          "Avec deux ou trois jeunes, l’adulte montre aussi et tous devinent ensemble.",
+          "Arrêter gentiment les allusions à des personnes présentes ; on montre toujours à une personne imaginaire."
+        ],
+        "achtung": "On montre à distance, sans contact, toujours à une personne imaginaire. Personne n’est obligé de jouer. Si quelqu’un se tait ou fait soudain le clown : proposer un entretien après la séance. En cas d’indices d’agressions, agir selon le concept de protection et informer la direction compétente (responsable).",
+        "material": "Jeu de cartes, affiche à deux colonnes, ruban de masquage, chronomètre"
+      }
+    }
+  },
+  {
+    "id": "skills-streit-karten",
+    "bereich": "skills",
+    "thema": "schwierig",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "look": "spiel",
+    "sozialform": [
+      "gruppe"
+    ],
+    "dauer": "25 Min.",
+    "eldib": [
+      "V-28",
+      "SOZ-34",
+      "K-31"
+    ],
+    "schlagworte": [
+      "Konflikt-Treppe",
+      "Konfliktstil",
+      "Zuhören",
+      "Spiel",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:puzzle",
+    "verwandt": [
+      "skills-konflikt-treppe",
+      "skills-konfliktstil"
+    ],
+    "kurs": [
+      "j1-e24"
+    ],
+    "de": {
+      "titel": "Streit-Karten",
+      "untertitel": "Treppe bauen, Tier-Ecken, Schreiduell – drei Spiele für die ganze Gruppe",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Treppe bauen: so geht das Spiel",
+          "punkte": [
+            "Jedes Team bekommt einen gemischten Kartensatz: 5 Stufen (roter Punkt) und 10 Sätze.",
+            "Auf „Los“ baut ihr die Treppe am Boden: die erste Stufe unten, die letzte oben. Zu jeder Stufe gehören zwei Sätze.",
+            "Nach 4 Minuten ist Schluss. Jede richtige Stufe und jeder richtige Satz bringt 1 Punkt."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schneidet die Karten aus und mischt sie.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 80,
+          "schneiden": true,
+          "karten": [
+            {
+              "titel": "Stopp und runterkommen",
+              "farbe": "rot"
+            },
+            {
+              "titel": "Ich-Botschaft",
+              "farbe": "rot"
+            },
+            {
+              "titel": "Zuhören",
+              "farbe": "rot"
+            },
+            {
+              "titel": "Lösungen sammeln",
+              "farbe": "rot"
+            },
+            {
+              "titel": "Einigen",
+              "farbe": "rot"
+            },
+            {
+              "titel": "„Ich brauch kurz fünf Minuten.“"
+            },
+            {
+              "titel": "„Okay, wir probieren das bis Freitag.“"
+            },
+            {
+              "titel": "„Du meinst also, du wusstest nicht, was du tun sollst?“"
+            },
+            {
+              "titel": "„Ich ärgere mich, weil ich fast alles allein gemacht habe.“"
+            },
+            {
+              "titel": "„Was könnten wir noch machen?“"
+            },
+            {
+              "titel": "„Stopp. Ich geh kurz Wasser trinken.“"
+            },
+            {
+              "titel": "„Hab ich das richtig verstanden: Du warst sauer wegen gestern?“"
+            },
+            {
+              "titel": "„Abgemacht. Am Montag schauen wir, ob es klappt.“"
+            },
+            {
+              "titel": "„Ich bin enttäuscht, weil du es weitererzählt hast.“"
+            },
+            {
+              "titel": "„Sag einfach alles, was dir einfällt – auch Quatsch.“"
+            }
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Tier-Ecken: Hängt die fünf Tierschilder im Raum auf. Die sechste Karte ist der Streit-Satz für den Tier-Würfel.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 150,
+          "schneiden": true,
+          "karten": [
+            {
+              "titel": "Schildkröte",
+              "text": "zieht sich zurück, weicht aus, sagt lieber nichts"
+            },
+            {
+              "titel": "Hai",
+              "text": "will gewinnen – egal, was es kostet"
+            },
+            {
+              "titel": "Teddybär",
+              "text": "gibt nach, damit wieder Ruhe ist"
+            },
+            {
+              "titel": "Fuchs",
+              "text": "sucht den Kompromiss – beide geben ein Stück nach"
+            },
+            {
+              "titel": "Eule",
+              "text": "sucht eine Lösung, mit der beide wirklich zufrieden sind"
+            },
+            {
+              "titel": "Der Streit-Satz",
+              "text": "„Du hast schon wieder mein Ladekabel genommen.“"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schreiduell: Zwei rufen gleichzeitig. Welches Team versteht seinen Satz zuerst?",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 90,
+          "schneiden": true,
+          "karten": [
+            {
+              "titel": "Die Eule sucht ihre Brille im Kühlschrank."
+            },
+            {
+              "titel": "Drei Schildkröten spielen Tischtennis im Regen."
+            },
+            {
+              "titel": "Der Hai hat Zahnschmerzen und isst nur noch Pudding."
+            },
+            {
+              "titel": "Der Fuchs verkauft Pizza mit Ananas an der Tankstelle."
+            },
+            {
+              "titel": "Der Teddybär hat seinen Schlüssel im Bus vergessen."
+            },
+            {
+              "titel": "Morgen regnet es Popcorn über der Kantine."
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Ein Kartensatz für drei Spiele der Einheit „Konflikte lösen“: Die Jugendlichen erleben ihre Konfliktstile, erfahren, wie schwer Zuhören im Lärm ist, und setzen die Konflikt-Treppe selbst zusammen.",
+        "ablauf": [
+          "Vorbereitung: Seite 1 für jedes Team einmal drucken, Seite 2 einmal. Ausschneiden, die Treppen-Karten je Satz mischen.",
+          "Tier-Ecken und Tier-Würfel (12 Min.): Tierschilder aufhängen; erst stellen sich alle zu ihrem Tier, dann wird gewürfelt und geraten.",
+          "Schreiduell (6 Min.): zwei Teams, zwei Rufende, 10 Meter Abstand. Frage danach: „Was hat geholfen, damit euer Satz ankommt?“",
+          "Treppe bauen (6 Min.): 4 Minuten legen, dann Auflösung am Plakat und Punkte zählen."
+        ],
+        "hintergrund": "Die Treppe folgt der niederlagelosen Methode von Gordon (1972): erst die eigene Anspannung senken, dann Ich-Botschaft, Zuhören, gemeinsam Lösungen suchen und sich einigen. Wer die Reihenfolge selbst legt und begründet, behält sie besser als nach einem Vortrag. Die Tierschilder stehen für die fünf Konfliktstile nach Thomas und Kilmann (1974); keiner ist grundsätzlich falsch, hilfreich ist, wählen zu können.",
+        "quellen": [
+          "Gordon, T. (1972). Familienkonferenz. Hamburg: Hoffmann und Campe.",
+          "Thomas, K. W. & Kilmann, R. H. (1974). Thomas-Kilmann Conflict Mode Instrument. Tuxedo, NY: Xicom."
+        ],
+        "differenzierung": {
+          "leichter": "Nur die fünf Stufen ordnen; die Sätze liest die Leitung vor, das Team zeigt auf die Stufe.",
+          "schwerer": "Zu jeder Stufe einen dritten, eigenen Satz auf einen Zettel schreiben."
+        },
+        "impulse": [
+          "Warum steht Runterkommen ganz unten und nicht in der Mitte?",
+          "Bei welchem Satz wart ihr euch nicht einig?"
+        ],
+        "tipps": [
+          "Lösung, Sätze von links oben: 1, 5, 3 – 2, 4, 1 – 3, 5, 2 – 4.",
+          "Beim Schreiduell die Nachbarräume vorwarnen; wer Lärm schlecht aushält, zählt die Punkte."
+        ],
+        "achtung": "Gespielt wird nur mit den erfundenen Sätzen der Karten. Echte Konflikte aus der Gruppe werden nicht nachgespielt, sondern in einem begleiteten Gespräch außerhalb der Einheit geklärt.",
+        "material": "Festes Papier, Schere, Klebeband für die Schilder, ein Würfel je Team"
+      }
+    },
+    "fr": {
+      "titel": "Cartes de dispute",
+      "untertitel": "Construire l’escalier, les coins des animaux, le duel de cris – trois jeux pour tout le groupe",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Construire l’escalier : règle du jeu",
+          "punkte": [
+            "Chaque équipe reçoit un jeu de cartes mélangé : 5 marches (point rouge) et 10 phrases.",
+            "Au signal, vous construisez l’escalier au sol : la première marche en bas, la dernière en haut. Deux phrases vont avec chaque marche.",
+            "Après 4 minutes, c’est fini. Chaque marche et chaque phrase bien placée rapporte 1 point."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Découpez les cartes et mélangez-les.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 80,
+          "schneiden": true,
+          "karten": [
+            {
+              "titel": "Stop et se calmer",
+              "farbe": "rot"
+            },
+            {
+              "titel": "Message-je",
+              "farbe": "rot"
+            },
+            {
+              "titel": "Écouter",
+              "farbe": "rot"
+            },
+            {
+              "titel": "Chercher des solutions",
+              "farbe": "rot"
+            },
+            {
+              "titel": "S’entendre",
+              "farbe": "rot"
+            },
+            {
+              "titel": "« J’ai besoin de cinq minutes. »"
+            },
+            {
+              "titel": "« D’accord, on essaie ça jusqu’à vendredi. »"
+            },
+            {
+              "titel": "« Tu veux dire que tu ne savais pas quoi faire ? »"
+            },
+            {
+              "titel": "« Ça m’énerve, parce que j’ai presque tout fait seul. »"
+            },
+            {
+              "titel": "« Qu’est-ce qu’on pourrait faire d’autre ? »"
+            },
+            {
+              "titel": "« Stop. Je vais boire un verre d’eau. »"
+            },
+            {
+              "titel": "« Si j’ai bien compris : tu étais fâché à cause d’hier ? »"
+            },
+            {
+              "titel": "« Marché conclu. Lundi, on voit si ça marche. »"
+            },
+            {
+              "titel": "« Je suis déçue, parce que tu l’as répété. »"
+            },
+            {
+              "titel": "« Dis tout ce qui te passe par la tête – même des bêtises. »"
+            }
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Les coins des animaux : accrochez les cinq pancartes dans la salle. La sixième carte est la phrase de dispute pour le dé des animaux.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 150,
+          "schneiden": true,
+          "karten": [
+            {
+              "titel": "Tortue",
+              "text": "se retire, esquive, préfère ne rien dire"
+            },
+            {
+              "titel": "Requin",
+              "text": "veut gagner – quoi qu’il en coûte"
+            },
+            {
+              "titel": "Nounours",
+              "text": "cède pour que le calme revienne"
+            },
+            {
+              "titel": "Renard",
+              "text": "cherche le compromis – chacun cède un peu"
+            },
+            {
+              "titel": "Hibou",
+              "text": "cherche une solution qui satisfait vraiment les deux"
+            },
+            {
+              "titel": "La phrase de dispute",
+              "text": "« Tu as encore pris mon chargeur. »"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Le duel de cris : deux personnes crient en même temps. Quelle équipe comprend sa phrase en premier ?",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 90,
+          "schneiden": true,
+          "karten": [
+            {
+              "titel": "Le hibou cherche ses lunettes dans le frigo."
+            },
+            {
+              "titel": "Trois tortues jouent au ping-pong sous la pluie."
+            },
+            {
+              "titel": "Le requin a mal aux dents et ne mange plus que du pudding."
+            },
+            {
+              "titel": "Le renard vend des pizzas à l’ananas à la station-service."
+            },
+            {
+              "titel": "Le nounours a oublié sa clé dans le bus."
+            },
+            {
+              "titel": "Demain, il pleut du pop-corn sur la cantine."
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Un jeu de cartes pour trois jeux de la séance « Résoudre les conflits » : les jeunes vivent leurs styles de conflit, constatent combien il est difficile d’écouter dans le bruit et assemblent eux-mêmes l’escalier du conflit.",
+        "ablauf": [
+          "Préparation : imprimer la page 1 une fois par équipe, la page 2 une fois. Découper, mélanger chaque jeu de cartes de l’escalier.",
+          "Coins et dé des animaux (12 min) : accrocher les pancartes ; d’abord chacun rejoint son animal, puis on lance le dé et on devine.",
+          "Duel de cris (6 min) : deux équipes, deux crieurs, 10 mètres de distance. Ensuite : « Qu’est-ce qui a aidé votre phrase à passer ? »",
+          "Construire l’escalier (6 min) : 4 minutes pour poser, puis correction à l’affiche et comptage des points."
+        ],
+        "hintergrund": "L’escalier suit la méthode sans perdant de Gordon (1972) : d’abord faire baisser sa propre tension, puis message-je, écoute, recherche commune de solutions et accord. Qui pose et justifie l’ordre soi-même le retient mieux qu’après un exposé. Les pancartes représentent les cinq styles de conflit de Thomas et Kilmann (1974) ; aucun n’est mauvais en soi, l’essentiel est de pouvoir choisir.",
+        "quellen": [
+          "Gordon, T. (1972). Familienkonferenz. Hamburg: Hoffmann und Campe.",
+          "Thomas, K. W. & Kilmann, R. H. (1974). Thomas-Kilmann Conflict Mode Instrument. Tuxedo, NY: Xicom."
+        ],
+        "differenzierung": {
+          "leichter": "Ordonner seulement les cinq marches ; l’adulte lit les phrases, l’équipe montre la marche.",
+          "schwerer": "Écrire pour chaque marche une troisième phrase personnelle sur un papier."
+        },
+        "impulse": [
+          "Pourquoi se calmer est-il tout en bas et pas au milieu ?",
+          "Pour quelle phrase n’étiez-vous pas d’accord ?"
+        ],
+        "tipps": [
+          "Solution, phrases à partir d’en haut à gauche : 1, 5, 3 – 2, 4, 1 – 3, 5, 2 – 4.",
+          "Pour le duel de cris, prévenir les salles voisines ; qui supporte mal le bruit compte les points."
+        ],
+        "achtung": "On ne joue qu’avec les phrases inventées des cartes. Les vrais conflits du groupe ne sont pas rejoués ; ils se règlent dans un entretien accompagné, en dehors de la séance.",
+        "material": "Papier épais, ciseaux, ruban adhésif pour les pancartes, un dé par équipe"
+      }
+    }
+  },
+  {
+    "id": "skills-draengel-karten",
+    "bereich": "skills",
+    "thema": "schwierig",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "look": "spiel",
+    "sozialform": [
+      "gruppe"
+    ],
+    "dauer": "12 Min.",
+    "eldib": [
+      "SOZ-39",
+      "V-26",
+      "SOZ-35"
+    ],
+    "schlagworte": [
+      "Nein sagen",
+      "Gruppendruck",
+      "Selbstbehauptung",
+      "Spiel",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:dice-5",
+    "verwandt": [
+      "skills-nein-sagen"
+    ],
+    "kurs": [
+      "j1-e25"
+    ],
+    "de": {
+      "titel": "Drängel-Karten",
+      "untertitel": "Zwölf harmlose Angebote, zu denen man gut Nein sagen kann – für den Nein-Würfel",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Nein-Würfel: so geht das Spiel",
+          "punkte": [
+            "Alle stehen im Kreis. Wer dran ist, zieht eine Karte und gibt sie der Person, die drängelt – zuerst ist das die Leitung.",
+            "Würfle: Die Zahl sagt, auf welche Art du Nein sagst (Blatt „Nein sagen – vier Wege“).",
+            "Es wird zweimal nachgehakt. Bleibst du ruhig bei deinem Nein, gibt es 1 Punkt für die Gruppe.",
+            "Bei 10 Punkten hat die Gruppe gewonnen. „Weiter“ sagen ist immer erlaubt."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schneidet die Karten aus und legt sie verdeckt auf einen Stapel.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 100,
+          "schneiden": true,
+          "karten": [
+            {
+              "titel": "Komm, tausch für heute die Schuhe mit mir.",
+              "nummer": 1
+            },
+            {
+              "titel": "Iss den Löffel Senf. Alle haben schon.",
+              "nummer": 2
+            },
+            {
+              "titel": "Leih mir dein Handy bis morgen.",
+              "nummer": 3
+            },
+            {
+              "titel": "Sing vor allen die Melodie deiner Lieblingsserie.",
+              "nummer": 4
+            },
+            {
+              "titel": "Mach heute meine Hausaufgaben mit. Nur dieses eine Mal.",
+              "nummer": 5
+            },
+            {
+              "titel": "Gib mir dein Pausenbrot. Du hast doch eh keinen Hunger.",
+              "nummer": 6
+            },
+            {
+              "titel": "Mal dir einen Schnurrbart mit Filzstift. Steht dir bestimmt.",
+              "nummer": 7
+            },
+            {
+              "titel": "Komm, wir laufen die zehn Kilometer nach Hause.",
+              "nummer": 8
+            },
+            {
+              "titel": "Sag dem ganzen Bus laut Guten Morgen.",
+              "nummer": 9
+            },
+            {
+              "titel": "Trag heute meinen Rucksack. Du bist doch stark.",
+              "nummer": 10
+            },
+            {
+              "titel": "Morgen kommen wir alle in Gummistiefeln. Du auch.",
+              "nummer": 11
+            },
+            {
+              "titel": "Probier das: Cola mit Ketchup. Schmeckt super.",
+              "nummer": 12
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen probieren die vier Arten, Nein zu sagen, an harmlosen, lustigen Angeboten aus – bevor es nach der Pause um ernstere Druck-Situationen geht.",
+        "ablauf": [
+          "Alle stehen im Kreis, das Blatt „Nein sagen – vier Wege“ liegt mit dem Nein-Würfel in der Mitte.",
+          "Reihum: Karte ziehen, würfeln, Nein sagen. Die Leitung drängelt und hakt zweimal nach; später drängeln nur Freiwillige.",
+          "Nach jeder Runde zeigt die Gruppe mit dem Daumen: Hat das Nein gehalten? Punkte an der Tafel sammeln.",
+          "Zum Schluss fragen: „Welche Art war für euch am leichtesten – und welche hat am besten gewirkt?“"
+        ],
+        "hintergrund": "Ein Nein gelingt unter Druck eher, wenn der Satz vorher geübt wurde. Das Fertigkeitentraining der DBT für Jugendliche setzt deshalb auf kurze, wiederholbare Sätze und viele Durchgänge mit steigender Schwierigkeit (Rathus & Miller, 2015). Die Angebote auf den Karten sind bewusst harmlos und komisch: So lässt sich die Form des Neins üben, ohne dass eigene Erfahrungen berührt werden.",
+        "quellen": [
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Ohne Würfel: Jede Person wählt die Art, die ihr am leichtesten fällt.",
+          "schwerer": "Dreimal nachhaken lassen, auch mit Schmeicheln: „Du bist doch sonst nicht so.“"
+        },
+        "impulse": [
+          "Woran habt ihr gemerkt, dass ein Nein sitzt?",
+          "Was passiert, wenn man anfängt, sich zu erklären?"
+        ],
+        "tipps": [
+          "Freundlich und hartnäckig drängeln, nie abwertend – der Druck soll spürbar, aber nicht verletzend sein.",
+          "Bei zwei oder drei Jugendlichen spielt jede Person zwei Karten."
+        ],
+        "achtung": "Die drängelnde Rolle zuerst selbst spielen, danach nur Freiwillige und nur mit den Sätzen der Karten. Keine echten Situationen aus der Gruppe. Wird deutlich, dass jemand im Alltag bedroht oder erpresst wird: Einzelgespräch anbieten und die zuständige Leitung (Responsable) informieren.",
+        "material": "Ein Kartensatz, ausgeschnitten, ein Würfel, Blatt „Nein sagen – vier Wege“"
+      }
+    },
+    "fr": {
+      "titel": "Cartes « On insiste »",
+      "untertitel": "Douze propositions sans gravité auxquelles on peut bien dire non – pour le dé du non",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Le dé du non : règle du jeu",
+          "punkte": [
+            "Tout le monde est debout en cercle. Qui joue tire une carte et la donne à la personne qui insiste – d’abord, c’est l’adulte.",
+            "Lance le dé : le chiffre dit de quelle façon tu dis non (fiche « Dire non – quatre voies »).",
+            "On insiste deux fois. Si tu restes calmement sur ton non, le groupe gagne 1 point.",
+            "À 10 points, le groupe a gagné. On peut toujours dire « je passe »."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Découpez les cartes et posez-les en pile, face cachée.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 100,
+          "schneiden": true,
+          "karten": [
+            {
+              "titel": "Allez, on échange nos chaussures pour aujourd’hui.",
+              "nummer": 1
+            },
+            {
+              "titel": "Mange cette cuillère de moutarde. Tout le monde l’a fait.",
+              "nummer": 2
+            },
+            {
+              "titel": "Prête-moi ton téléphone jusqu’à demain.",
+              "nummer": 3
+            },
+            {
+              "titel": "Chante devant tous le générique de ta série préférée.",
+              "nummer": 4
+            },
+            {
+              "titel": "Fais aussi mes devoirs aujourd’hui. Juste cette fois.",
+              "nummer": 5
+            },
+            {
+              "titel": "Donne-moi ton sandwich. Tu n’as pas faim de toute façon.",
+              "nummer": 6
+            },
+            {
+              "titel": "Dessine-toi une moustache au feutre. Ça t’ira bien.",
+              "nummer": 7
+            },
+            {
+              "titel": "Viens, on rentre à pied : dix kilomètres.",
+              "nummer": 8
+            },
+            {
+              "titel": "Dis bonjour bien fort à tout le bus.",
+              "nummer": 9
+            },
+            {
+              "titel": "Porte mon sac à dos aujourd’hui. Toi qui es fort.",
+              "nummer": 10
+            },
+            {
+              "titel": "Demain, on vient tous en bottes de pluie. Toi aussi.",
+              "nummer": 11
+            },
+            {
+              "titel": "Goûte ça : du cola au ketchup. C’est super bon.",
+              "nummer": 12
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes essaient les quatre façons de dire non avec des propositions drôles et sans gravité – avant d’aborder, après la pause, des situations de pression plus sérieuses.",
+        "ablauf": [
+          "Tout le monde est debout en cercle ; la fiche « Dire non – quatre voies » avec le dé du non est au centre.",
+          "À tour de rôle : tirer une carte, lancer le dé, dire non. L’adulte insiste deux fois ; plus tard, seuls des volontaires insistent.",
+          "Après chaque tour, le groupe montre avec le pouce : le non a-t-il tenu ? Noter les points au tableau.",
+          "Pour finir : « Quelle façon était la plus facile pour vous – et laquelle a le mieux marché ? »"
+        ],
+        "hintergrund": "Un non réussit mieux sous pression quand la phrase a été exercée avant. L’entraînement aux compétences de la DBT pour adolescents mise donc sur des phrases courtes, répétables, et sur de nombreux passages de difficulté croissante (Rathus & Miller, 2015). Les propositions des cartes sont volontairement anodines et drôles : on exerce ainsi la forme du non sans toucher aux expériences personnelles.",
+        "quellen": [
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Sans dé : chacun choisit la façon la plus facile pour lui.",
+          "schwerer": "Insister trois fois, aussi en flattant : « D’habitude, tu n’es pas comme ça. »"
+        },
+        "impulse": [
+          "À quoi avez-vous remarqué qu’un non tient bon ?",
+          "Que se passe-t-il quand on commence à se justifier ?"
+        ],
+        "tipps": [
+          "Insister de façon aimable et tenace, jamais dévalorisante – la pression doit se sentir sans blesser.",
+          "Avec deux ou trois jeunes, chacun joue deux cartes."
+        ],
+        "achtung": "Jouer d’abord soi-même le rôle de celui qui insiste, ensuite seulement des volontaires, avec les phrases des cartes. Pas de situations réelles du groupe. S’il apparaît que quelqu’un est menacé ou victime de chantage : proposer un entretien individuel et informer la direction compétente (responsable).",
+        "material": "Un jeu de cartes découpé, un dé, fiche « Dire non – quatre voies »"
+      }
+    }
+  },
+  {
+    "id": "skills-zivilcourage-karten",
+    "bereich": "skills",
+    "thema": "schwierig",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "look": "spiel",
+    "sozialform": [
+      "gruppe"
+    ],
+    "dauer": "40 Min.",
+    "eldib": [
+      "SOZ-37",
+      "SOZ-38",
+      "SOZ-39"
+    ],
+    "schlagworte": [
+      "Zivilcourage",
+      "Mobbing",
+      "Rollen im Mobbing",
+      "Spiel",
+      "Skills-Kurs"
+    ],
+    "bild": "icon:shield-check",
+    "verwandt": [
+      "skills-zivilcourage-leiter",
+      "skills-mobbing-erkennen"
+    ],
+    "kurs": [
+      "j1-e26"
+    ],
+    "de": {
+      "titel": "Zivilcourage-Karten",
+      "untertitel": "Sprossen, Eckenschilder, Merkmale und Rollen – alles für die Spiele zu Mobbing und Zivilcourage",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Würfel-Leiter: so geht das Spiel",
+          "punkte": [
+            "Die sechs Sprossen liegen als Leiter am Boden. Zwei Teams sind abwechselnd dran und sammeln Punkte auf ein gemeinsames Konto.",
+            "Die Leitung liest eine Situationskarte vor. Das Team würfelt: Die Zahl ist die Stufe.",
+            "In 30 Sekunden sagt das Team, was es auf dieser Stufe genau tut oder sagt. Passt es – und ist es sicher? 1 Punkt.",
+            "Bei einer 6 darf das Team sagen: „Zu riskant – wir holen Hilfe.“ Auch das bringt den Punkt."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schneidet die sechs Sprossen aus und legt sie als Leiter auf den Boden – Stufe 1 vorne.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 2,
+          "hoehe": 110,
+          "schneiden": true,
+          "karten": [
+            {
+              "titel": "Nicht mitmachen",
+              "text": "Nicht mitlachen, nichts weiterleiten.",
+              "nummer": 1
+            },
+            {
+              "titel": "Zeigen: Ich bin auf deiner Seite",
+              "text": "Auch später, unter vier Augen oder per Nachricht.",
+              "nummer": 2
+            },
+            {
+              "titel": "Andere dazuholen",
+              "text": "Zu zweit oder zu dritt ist es leichter.",
+              "nummer": 3
+            },
+            {
+              "titel": "Einer erwachsenen Person Bescheid sagen",
+              "text": "Das ist Hilfe holen, kein Petzen.",
+              "nummer": 4
+            },
+            {
+              "titel": "Online handeln",
+              "text": "Beweise sichern, melden, nicht liken und nicht teilen.",
+              "nummer": 5
+            },
+            {
+              "titel": "Direkt „Stopp“ sagen",
+              "text": "Nur, wenn es für dich sicher ist.",
+              "nummer": 6
+            }
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ecken-Lauf: drei Schilder für die Ecken, vier Merkmal-Karten zum Aufdecken.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 90,
+          "schneiden": true,
+          "karten": [
+            {
+              "titel": "Spaß",
+              "farbe": "gruen"
+            },
+            {
+              "titel": "Konflikt",
+              "farbe": "gelb"
+            },
+            {
+              "titel": "Mobbing",
+              "farbe": "rot"
+            }
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 2,
+          "hoehe": 80,
+          "schneiden": true,
+          "karten": [
+            {
+              "titel": "Immer wieder",
+              "text": "Es passiert wiederholt und über längere Zeit."
+            },
+            {
+              "titel": "Ungleich stark",
+              "text": "Eine Seite ist stärker: mehr Leute, älter, beliebter."
+            },
+            {
+              "titel": "Mit Absicht",
+              "text": "Es soll wehtun."
+            },
+            {
+              "titel": "Allein wehrlos",
+              "text": "Die betroffene Person kann sich allein nicht wehren."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Kipp die Bühne: Legt auf jeden Stuhl eine Rollenkarte. Der Stuhl der betroffenen Person bleibt leer.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 100,
+          "schneiden": true,
+          "karten": [
+            {
+              "titel": "Täter",
+              "text": "fängt an und bestimmt, was passiert"
+            },
+            {
+              "titel": "Helfer",
+              "text": "macht mit, sobald es losgeht"
+            },
+            {
+              "titel": "Verstärker",
+              "text": "lacht, feuert an, liked"
+            },
+            {
+              "titel": "Außenstehende",
+              "text": "schauen weg oder lesen nur mit"
+            },
+            {
+              "titel": "Verteidiger",
+              "text": "halten zur betroffenen Person oder holen Hilfe"
+            },
+            {
+              "titel": "Betroffene Person",
+              "text": "wird immer wieder angegriffen und kann sich allein nicht wehren"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Ein Kartensatz für die Einheit „Mobbing und Zivilcourage“: Die Jugendlichen leiten die Merkmale von Mobbing her, sehen die Macht der Zuschauenden und üben sichere Schritte auf der Zivilcourage-Leiter.",
+        "ablauf": [
+          "Vorbereitung: beide Seiten einmal drucken und ausschneiden. Eckenschilder aufhängen, Merkmal-Karten verdeckt an die Tafel.",
+          "Ecken-Lauf (12 Min.): Nennt jemand in seiner Begründung ein Merkmal, wird die passende Karte aufgedeckt. Ziel: alle vier.",
+          "Kipp die Bühne (14 Min.): Rollenkarten auf sechs Stühle, 24 Haftnotizen als Leute im Chat. Jede Idee zieht zwei Zettel zum Verteidiger-Stuhl.",
+          "Nach der Pause: Sprossen auslegen, Ideen-Zettel zuordnen, dann Leiter-Lauf und Würfel-Leiter mit den Karten M1–M6."
+        ],
+        "hintergrund": "Mobbing ist ein Gruppenprozess: Neben Tätern und Betroffenen gibt es Helfer, Verstärker, Außenstehende und Verteidiger (Salmivalli et al., 1996). Wer lacht oder schweigt, sichert dem Täter Publikum. Zuschauende bleiben oft passiv, weil sich die Verantwortung auf viele verteilt und sie nicht wissen, was sie tun können (Latané & Darley, 1970). Die Karten machen beides sichtbar: wie viele das Publikum sind – und welche kleinen, sicheren Schritte es gibt.",
+        "quellen": [
+          "Salmivalli, C., Lagerspetz, K., Björkqvist, K., Österman, K. & Kaukiainen, A. (1996). Bullying as a group process: Participant roles and their relations to social status within the group. Aggressive Behavior, 22(1), 1–15.",
+          "Latané, B. & Darley, J. M. (1970). The Unresponsive Bystander: Why Doesn’t He Help? New York: Appleton-Century-Crofts."
+        ],
+        "differenzierung": {
+          "leichter": "Würfel-Leiter ohne Würfel: Das Team wählt die Stufe selbst.",
+          "schwerer": "Zu jeder Stufe den genauen Satz sagen – zum leeren Stuhl oder zur Leitung als erwachsene Person."
+        },
+        "impulse": [
+          "Was ist der Unterschied zwischen Petzen und Hilfe holen?",
+          "Was ändert sich für den Täter, wenn das Publikum die Seite wechselt?"
+        ],
+        "tipps": [
+          "Die Sprossen für eine größere Gruppe auf A3 vergrößern.",
+          "Die Leiter nach der Einheit als Plakat im Raum hängen lassen."
+        ],
+        "achtung": "Rollen werden nie mit Gruppenmitgliedern besetzt: Stühle und Zettel stehen für die Rollen, der Stuhl der betroffenen Person bleibt leer. Keine echten Fälle, keine Namen aus der Schule. Bei Hinweisen auf Mobbing in der Gruppe nicht öffentlich klären, die betroffene Person schützen und die zuständige Leitung (Responsable) informieren.",
+        "material": "Festes Papier, Schere, Klebeband, 24 Haftnotizen, sechs Stühle, ein Würfel"
+      }
+    },
+    "fr": {
+      "titel": "Cartes du courage civique",
+      "untertitel": "Échelons, pancartes des coins, caractéristiques et rôles – tout pour les jeux sur le harcèlement et le courage civique",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "L’échelle au dé : règle du jeu",
+          "punkte": [
+            "Les six échelons forment une échelle au sol. Deux équipes jouent à tour de rôle et gagnent des points pour un compte commun.",
+            "L’adulte lit une carte de situation. L’équipe lance le dé : le chiffre est l’échelon.",
+            "En 30 secondes, l’équipe dit ce qu’elle fait ou dit exactement à cet échelon. Ça convient – et c’est sans danger ? 1 point.",
+            "Avec un 6, l’équipe peut dire : « Trop risqué – on va chercher de l’aide. » Cela rapporte aussi le point."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Découpez les six échelons et posez-les au sol comme une échelle – l’échelon 1 devant.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 2,
+          "hoehe": 110,
+          "schneiden": true,
+          "karten": [
+            {
+              "titel": "Ne pas participer",
+              "text": "Ne pas rire avec les autres, ne rien transférer.",
+              "nummer": 1
+            },
+            {
+              "titel": "Montrer : je suis de ton côté",
+              "text": "Aussi plus tard, en tête-à-tête ou par message.",
+              "nummer": 2
+            },
+            {
+              "titel": "Aller chercher d’autres personnes",
+              "text": "À deux ou trois, c’est plus facile.",
+              "nummer": 3
+            },
+            {
+              "titel": "Prévenir un adulte",
+              "text": "C’est aller chercher de l’aide, pas cafarder.",
+              "nummer": 4
+            },
+            {
+              "titel": "Agir en ligne",
+              "text": "Sauvegarder des preuves, signaler, ne pas liker et ne pas partager.",
+              "nummer": 5
+            },
+            {
+              "titel": "Dire directement « Stop »",
+              "text": "Seulement si c’est sans danger pour toi.",
+              "nummer": 6
+            }
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Course des coins : trois pancartes pour les coins, quatre cartes de caractéristiques à retourner.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 90,
+          "schneiden": true,
+          "karten": [
+            {
+              "titel": "Pour rire",
+              "farbe": "gruen"
+            },
+            {
+              "titel": "Conflit",
+              "farbe": "gelb"
+            },
+            {
+              "titel": "Harcèlement",
+              "farbe": "rot"
+            }
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 2,
+          "hoehe": 80,
+          "schneiden": true,
+          "karten": [
+            {
+              "titel": "Encore et encore",
+              "text": "Cela se répète sur une période assez longue."
+            },
+            {
+              "titel": "Forces inégales",
+              "text": "Un côté est plus fort : plus nombreux, plus âgés, plus populaires."
+            },
+            {
+              "titel": "Exprès",
+              "text": "Le but est de faire mal."
+            },
+            {
+              "titel": "Seul·e sans défense",
+              "text": "La personne visée ne peut pas se défendre seule."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Fais basculer la scène : posez une carte de rôle sur chaque chaise. La chaise de la personne visée reste vide.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 100,
+          "schneiden": true,
+          "karten": [
+            {
+              "titel": "Agresseur",
+              "text": "commence et décide de ce qui se passe"
+            },
+            {
+              "titel": "Complice",
+              "text": "participe dès que ça commence"
+            },
+            {
+              "titel": "Public qui encourage",
+              "text": "rit, pousse à continuer, like"
+            },
+            {
+              "titel": "Observateurs passifs",
+              "text": "détournent le regard ou se contentent de lire"
+            },
+            {
+              "titel": "Défenseurs",
+              "text": "soutiennent la personne visée ou vont chercher de l’aide"
+            },
+            {
+              "titel": "Personne visée",
+              "text": "est attaquée encore et encore et ne peut pas se défendre seule"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Un jeu de cartes pour la séance « Harcèlement et courage civique » : les jeunes dégagent les caractéristiques du harcèlement, voient le pouvoir des témoins et exercent des pas sûrs sur l’échelle du courage civique.",
+        "ablauf": [
+          "Préparation : imprimer et découper les deux pages. Accrocher les pancartes, fixer les caractéristiques au tableau, face cachée.",
+          "Course des coins (12 min) : dès que quelqu’un cite une caractéristique dans son argument, on retourne la carte. But : les quatre.",
+          "Fais basculer la scène (14 min) : rôles sur six chaises, 24 papillons adhésifs pour les personnes du chat. Chaque idée en déplace deux vers les défenseurs.",
+          "Après la pause : poser les échelons, y classer les idées, puis course de l’échelle et échelle au dé avec les cartes M1–M6."
+        ],
+        "hintergrund": "Le harcèlement est un processus de groupe : à côté des agresseurs et des personnes visées, il y a des aides, des renforçateurs, des observateurs extérieurs et des défenseurs (Salmivalli et al., 1996). Qui rit ou se tait assure un public à l’agresseur. Les témoins restent souvent passifs parce que la responsabilité se répartit sur beaucoup de monde et qu’ils ne savent pas quoi faire (Latané & Darley, 1970).",
+        "quellen": [
+          "Salmivalli, C., Lagerspetz, K., Björkqvist, K., Österman, K. & Kaukiainen, A. (1996). Bullying as a group process: Participant roles and their relations to social status within the group. Aggressive Behavior, 22(1), 1–15.",
+          "Latané, B. & Darley, J. M. (1970). The Unresponsive Bystander: Why Doesn’t He Help? New York: Appleton-Century-Crofts."
+        ],
+        "differenzierung": {
+          "leichter": "Échelle sans dé : l’équipe choisit elle-même l’échelon.",
+          "schwerer": "Dire la phrase exacte pour chaque échelon – à la chaise vide ou à l’adulte."
+        },
+        "impulse": [
+          "Quelle est la différence entre cafarder et aller chercher de l’aide ?",
+          "Qu’est-ce qui change pour l’agresseur quand le public change de camp ?"
+        ],
+        "tipps": [
+          "Pour un groupe plus grand, agrandir les échelons en A3.",
+          "Après la séance, laisser l’échelle affichée dans la salle."
+        ],
+        "achtung": "Aucun rôle n’est attribué à un membre du groupe : chaises et papillons représentent les rôles, la chaise de la personne visée reste vide. Pas de cas réels, pas de noms de l’école. En cas d’indices de harcèlement dans le groupe : ne pas clarifier publiquement, protéger la personne visée et informer la direction compétente (responsable).",
+        "material": "Ciseaux, ruban adhésif, 24 papillons adhésifs, six chaises, un dé"
+      }
+    }
   }
 ]
