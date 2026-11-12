@@ -32065,7 +32065,13 @@ var qrcode = function() {
     ['Aufzug', 'Knopf', 'hoch', 'Stockwerk'], ['Gitarre', 'Saiten', 'Musik', 'spielen'], ['Zelt', 'campen', 'schlafen', 'draußen'], ['Ketchup', 'rot', 'Pommes', 'Tomate'],
     ['Bibliothek', 'Bücher', 'leise', 'ausleihen'], ['Astronaut', 'Weltall', 'Rakete', 'Mond'], ['Friseur', 'Haare', 'schneiden', 'Schere'], ['Skateboard', 'Rollen', 'Brett', 'Trick'],
     ['Spiegel', 'sehen', 'Bad', 'Gesicht'], ['Kühlschrank', 'kalt', 'Essen', 'Küche'], ['Ampel', 'rot', 'grün', 'Straße'], ['Trampolin', 'springen', 'hoch', 'Netz'],
-    ['Pirat', 'Schiff', 'Schatz', 'Augenklappe'], ['Passwort', 'geheim', 'Handy', 'eingeben'], ['Mücke', 'stechen', 'jucken', 'summen'], ['Hausaufgaben', 'Schule', 'zu Hause', 'machen']];
+    ['Pirat', 'Schiff', 'Schatz', 'Augenklappe'], ['Passwort', 'geheim', 'Handy', 'eingeben'], ['Mücke', 'stechen', 'jucken', 'summen'], ['Hausaufgaben', 'Schule', 'zu Hause', 'machen'],
+    ['Regenbogen', 'Farben', 'Regen', 'Sonne'], ['Zahnarzt', 'Zähne', 'bohren', 'Arzt'], ['Schlüssel', 'Tür', 'aufschließen', 'Schloss'], ['Taschenlampe', 'Licht', 'dunkel', 'Batterie'],
+    ['Achterbahn', 'schnell', 'Freizeitpark', 'Looping'], ['Pinguin', 'Eis', 'Vogel', 'schwarz'], ['Bäcker', 'Brot', 'Brötchen', 'backen'], ['Feuerwehr', 'Feuer', 'löschen', 'rot'],
+    ['Stau', 'Autos', 'Autobahn', 'warten'], ['Mülltonne', 'wegwerfen', 'Abfall', 'stinken'], ['Kissen', 'Bett', 'weich', 'Kopf'], ['Spinne', 'Netz', 'acht', 'Beine'],
+    ['Schere', 'schneiden', 'Papier', 'scharf'], ['Dusche', 'Wasser', 'waschen', 'Bad'], ['Geheimnis', 'verraten', 'niemand', 'sagen'], ['Ferien', 'Schule', 'frei', 'Urlaub'],
+    ['Stadion', 'Fußball', 'Fans', 'Spiel'], ['Lagerfeuer', 'Holz', 'brennen', 'Marshmallow'], ['Selfie', 'Foto', 'Handy', 'Gesicht'], ['Bushaltestelle', 'Bus', 'warten', 'Fahrplan'],
+    ['Gänsehaut', 'kalt', 'Haut', 'Angst'], ['Zwilling', 'gleich', 'Geschwister', 'zwei'], ['Kaugummi', 'kauen', 'Blase', 'kleben'], ['Lieblingslied', 'Musik', 'hören', 'singen']];
   CREW.registerGame({
     id: 'verboten', template: 'T5', themen: ['party'],
     async run(ctx) {
@@ -32081,7 +32087,11 @@ var qrcode = function() {
     'Spaghetti essen', 'Einen Drachen steigen lassen', 'Im Regen ohne Schirm', 'Gewichte heben', 'Ein Baby wickeln', 'Auf heißem Sand laufen', 'Ein Zelt aufbauen', 'Tischtennis spielen',
     'Den Bus verpassen', 'Einen Luftballon aufblasen', 'In eine Zitrone beißen', 'Schlittschuh laufen', 'Einen Koffer zukriegen', 'Popcorn im Kino essen', 'Ein Pferd reiten', 'Fenster putzen',
     'Im Dunkeln den Lichtschalter suchen', 'Karaoke singen', 'Eine Katze streicheln, die nicht will', 'Schlafwandeln', 'Einen Torwart spielen', 'Rasen mähen', 'Etwas Scharfes essen',
-    'Auf dem Handy tippen und stolpern', 'Eine Achterbahn fahren', 'Einen Schneemann bauen', 'Haare föhnen', 'Ein Geschenk auspacken', 'Kaugummi vom Schuh kratzen', 'Surfen', 'Einen Wecker ausmachen'];
+    'Auf dem Handy tippen und stolpern', 'Eine Achterbahn fahren', 'Einen Schneemann bauen', 'Haare föhnen', 'Ein Geschenk auspacken', 'Kaugummi vom Schuh kratzen', 'Surfen', 'Einen Wecker ausmachen',
+    'Schuhe binden', 'Eine heiße Kartoffel halten', 'Auf einen Bus warten, der nicht kommt', 'Im Sturm einen Schirm halten', 'Einen Schrank schieben', 'Seilspringen',
+    'Einen Fisch halten, der zappelt', 'Auf Zehenspitzen schleichen', 'Ein Kartenhaus bauen', 'Eine Spinne entdecken', 'Kopfhörer entwirren', 'Trampolin springen',
+    'Einen schweren Rucksack tragen', 'Ein Eis essen, das tropft', 'Gegen eine Glastür laufen', 'Eine Sprachnachricht aufnehmen', 'Auf Glatteis ausrutschen', 'Einen Luftballon platzen lassen',
+    'Den Wecker überhören', 'Eine Mütze gegen den Wind festhalten'];
   CREW.registerGame({
     id: 'ohne-worte', template: 'T5', themen: ['party'],
     async run(ctx) {
@@ -32095,7 +32105,9 @@ var qrcode = function() {
   /* ---------- Kritzel-Blitz ---------- */
   const KB = ['Giraffe', 'Fahrrad', 'Pizza', 'Leuchtturm', 'Kaktus', 'Rakete', 'Schnecke', 'Brille', 'Gitarre', 'Hubschrauber', 'Schneemann', 'Krone', 'Elefant', 'Regenschirm', 'Burger', 'Pinguin',
     'Spinne', 'Zahnbürste', 'Segelboot', 'Vulkan', 'Kopfhörer', 'Schmetterling', 'Leiter', 'Eis am Stiel', 'Dinosaurier', 'Fußballtor', 'Wecker', 'Banane', 'Krokodil', 'Zelt', 'Roboter',
-    'Sonnenbrille', 'Baumhaus', 'Qualle', 'Trompete', 'Riesenrad', 'Schlüssel', 'Hai', 'Ampel', 'Skateboard'];
+    'Sonnenbrille', 'Baumhaus', 'Qualle', 'Trompete', 'Riesenrad', 'Schlüssel', 'Hai', 'Ampel', 'Skateboard',
+    'Schere', 'Trampolin', 'Kerze', 'Pilz', 'Wal', 'Brücke', 'Kamel', 'Windrad', 'Rucksack', 'Anker', 'Igel', 'Brezel', 'Burg', 'Gewitterwolke', 'Kran', 'Flamingo', 'Schlitten',
+    'Lokomotive', 'Mikrofon', 'Fallschirm'];
   function leinwand(ctx) {
     // am Handy (hochkant) eine fast quadratische Fläche, sonst quer
     const schmal = window.innerWidth < 700;
