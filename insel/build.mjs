@@ -30,7 +30,7 @@ const result = await build({
   legalComments: 'none',
   treeShaking: true,
   define: { 'process.env.NODE_ENV': '"production"' },
-  loader: { '.gltf': 'text' },   // Figuren (src/respawn/modelle) als Text einbetten – alles bleibt eine Datei
+  loader: { '.gltf': 'text', '.glb': 'binary' },   // Figuren (src/respawn/modelle) als Text einbetten – alles bleibt eine Datei
   logLevel: 'warning',
 });
 
@@ -77,7 +77,7 @@ writeFileSync(join(distDir, 'respawn.html'), respawn);
 
 const kb = (s) => (Buffer.byteLength(s) / 1024).toFixed(0) + ' KB';
 console.log(`dist/index.html ${kb(full)} · dist/lumo-vorschau.html ${kb(preview)} · JS ${kb(js)} · CSS ${kb(css)}`);
-if (Buffer.byteLength(full) > 3 * 1024 * 1024) console.warn('⚠ dist/index.html ist größer als 3 MB (DESIGN §20)');
+if (Buffer.byteLength(full) > 9 * 1024 * 1024) console.warn('⚠ dist/index.html ist größer als 9 MB (mit eingebetteten Figuren, src/respawn/modelle)');
 
 // ---- Postbuild-Hooks ----
 await runPostbuild({

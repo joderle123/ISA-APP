@@ -10,7 +10,7 @@
 // eine freie Aktion; respawn:wahl, respawn:wirkung, respawn:stand, respawn:frei (hören).
 import { createOberflaeche } from './oberflaeche.js';
 import { createBuehne } from './buehne.js';
-import { ladeFigur, MODELLE } from './figur3d.js';
+import { ladeFigur, MODELLE, ueberziehe } from './figur3d.js';
 import { SITUATIONEN, AUSGAENGE, AKTE, AKTE_LEER, ORTE, ORT_AKTIONEN, LEUTE_AKTIONEN, LEUTE_REIHE, FOLGEN, VERPASST, WICHTIG } from './daten/index.js';
 import { neuerLauf, zieheKarten, planeJahreszeit, jahreszeitWechsel, jahreszeit, ausgangFuer, akteFuer, wirke, bond, verteile, folgenAmMorgen, neuerTag,
   JAHRESZEIT_NAME, UHR_NACH_KRAFT, TAGE_JE_JAHRESZEIT } from './run.js';
@@ -45,6 +45,25 @@ export default {
     try { const rig = game.cameraRig; rig.targetDist = 5.6; rig.dist = 5.6; rig.pitch = 0.17; rig.baseFov = 46; } catch (e) { /* egal */ }
     for (const id of ['grisel', 'jhemp']) { try { npcs.remove(id); } catch (e) { /* nicht da */ } }
     const bunt = () => { const veil = game.world && game.world.veil; if (veil && veil.setZone) for (const Z of game.world.island.ZONES) veil.setZone(Z.id, 0); };
+
+    // ---------- Neue Figuren (Skelett, echte Bewegungen): Überzug für die Spielfigur und alle anderen ----------
+    const STIL = {
+      ilda: { Head: 'Farmer', Body: 'Suit', Legs: 'Suit', Feet: 'Suit' }, fraenz: 'Worker', lucinda: { Head: 'Farmer', Body: 'Farmer', Legs: 'Farmer', Feet: 'Farmer' },
+      kontrolle: 'Suit', geselle: { Head: 'Casual2', Body: 'Worker', Legs: 'Worker', Feet: 'Worker' },
+      jolie: { Head: 'Beach', Body: 'Casual2', Legs: 'Casual', Feet: 'Casual' }, tun: { Head: 'Casual2', Body: 'Casual', Legs: 'Casual2', Feet: 'Casual2' },
+      pit: { Head: 'Casual', Body: 'Casual2', Legs: 'Casual2', Feet: 'Casual' }, mika: 'Punk', luc: { Head: 'Punk', Body: 'Casual', Legs: 'Punk', Feet: 'Punk' },
+      yara: { Head: 'Beach', Body: 'Punk', Legs: 'Punk', Feet: 'Punk' }, noor: { Head: 'Adventurer', Body: 'Casual2', Legs: 'Casual2', Feet: 'Casual' },
+      tiago: 'Beach', maelle: { Head: 'Beach', Body: 'Casual', Legs: 'Casual', Feet: 'Beach' },
+    };
+    const MISCH = ['Casual', 'Casual2', 'Beach', 'Farmer', 'Adventurer', 'Suit'];
+    const hash = (s) => { let x = 7; for (const c of String(s)) x = (x * 31 + c.charCodeAt(0)) >>> 0; return x; };
+    const stilFuer = (id) => STIL[id] || { Head: MISCH[hash(id) % MISCH.length], Body: MISCH[hash(id + 'b') % MISCH.length], Legs: MISCH[hash(id + 'l') % 4], Feet: MISCH[hash(id + 'f') % 4] };
+    const SPIELER_STIL = ['Casual', 'Casual2', 'Punk', 'Beach', 'Adventurer'];
+    const spielerStil = () => { const k = SPIELER_STIL[(meta.figur || 0) % SPIELER_STIL.length]; return { Head: k, Body: k === 'Punk' ? 'Casual2' : k, Legs: k === 'Beach' ? 'Beach' : 'Casual2', Feet: 'Casual' }; };
+    const zieheAn = (f) => { try { if (f && f.humanoid) ueberziehe(game, f.humanoid, { stil: stilFuer(f.id), look: (f.def && f.def.look) || undefined }).catch((e) => console.warn('[respawn] Figur', e)); } catch (e) { console.warn('[respawn] Figur', e); } };
+    ueberziehe(game, player.humanoid, { stil: spielerStil() }).catch((e) => console.warn('[respawn] Figur', e));
+    for (const f of npcs.list()) zieheAn(f);
+    events.on('npc:spawn', (e) => { const f = e && npcs.get(e.id); if (f) zieheAn(f); });
 
     // ---------- Jahreszeiten: Farbstimmung und Wetter (Laub, Schnee, Blüten, Glühwürmchen) ----------
     const WETTER = {
@@ -329,17 +348,17 @@ export default {
       get heute() { return R ? heute() : []; },
       situationen: SITUATIONEN, ausgaenge: AUSGAENGE, orte: ORTE,
       // Probe: eine Figur mit Skelett neben die Spielfigur stellen (Grafik-Vergleich alt/neu)
-      async probeFigur(id, bewegung = 'Idle', farben = {}, text = null) {
-        if (text) MODELLE[id] = text;
+      async probeFigur(id, bewegung = 'Idle', { farben = {}, stil = null, seite = 1.3, vor = 0 } = {}, daten = null) {
+        if (daten) MODELLE[id] = daten;
         if (!MODELLE[id]) return [];
-        const f = await ladeFigur(game, id, { farben });
+        const f = await ladeFigur(game, id, { farben, stil });
         const p = player.position, a = player.yaw || 0;
-        f.group.position.set(p.x + Math.cos(a) * 1.3, p.y, p.z - Math.sin(a) * 1.3);
+        f.group.position.set(p.x + Math.cos(a) * seite + Math.sin(a) * vor, p.y, p.z - Math.sin(a) * seite + Math.cos(a) * vor);
         f.group.rotation.y = a;
         game.scene.add(f.group);
         f.spiele(bewegung);
         game.addUpdate((dt) => f.update(dt), { order: 31, always: true });
-        return f.namen;
+        return { namen: f.namen, stile: f.stile };
       },
       neueRunde, hauptmenue,
       // Tests: eine freie Aktion ausführen (wie ein Klick in der Welt)

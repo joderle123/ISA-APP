@@ -14,7 +14,12 @@ man darf fast alles tun (auch Mist), keine Waffen, kein Gefängnis. Die Folgen s
 - **Druck:** sperrt sichtbar ruhige Antworten, bringt eine Uhr; die Startkarten ändern die Regeln (`run.js`).
 - **Dateien:** `src/respawn/` – `run.js` (Regeln, ohne Browser), `buehne.js` (Szenen in der 3D-Welt), `oberflaeche.js` + `stil.js`,
   `plugin.js` (Ablauf), `daten/` (Karten, Situationen, Welt, Ausgänge, Akte, Figuren).
+- **Figuren:** echte 3D-Figuren mit Skelett und Bewegungen (Quaternius „Ultimate Modular Men“, CC0; `src/respawn/modelle/`,
+  Lizenz und Umwandlung in `LIZENZ.md`). `figur3d.js` legt sie als „Überzug“ auf die Spielfiguren: Kopf, Oberteil, Beine und
+  Füße je Figur gemischt (`STIL` in `plugin.js`), Farben aus dem Aussehen der Figur. LUMO selbst nutzt weiter die alten Figuren.
+  Die Datei macht den Bau rund 5 MB größer. Es fehlen noch Frauen-Modelle (gleiches Paket „Ultimate Modular Women“).
+- **Grafik:** Umgebungsschatten, Tiefenunschärfe, Lichtstrahlen (`src/engine/renderer.js`), nähere Kamera, Wetter je Jahreszeit.
 - **Schreibregeln:** Blase ≤ 12 Wörter, Wahl ≤ 6 Wörter, keine Lehre, jede Wahl kostet etwas. Hilfe-Nummern nur 116 111 und 112.
 - **Sanfter Rahmen:** `?sanft` (oder `meta.sanft`) nimmt Alkohol, Schlagen und Schubsen heraus.
 - **Tests:** `node --test tests/unit/respawn-run.test.mjs` · `node tests/scenarios/respawn.mjs` (Autopilot, ganze Runden).
-- **Offen:** Spieltest mit Jugendlichen, mehr Aktionen und Orte, Feinschliff der Figuren, Kachel im Hub.
+- **Offen:** Spieltest mit Jugendlichen, mehr Aktionen und Orte, Frauen-Modelle, Gesichtsausdruck der neuen Figuren, Kachel im Hub.
