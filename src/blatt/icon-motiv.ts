@@ -126,6 +126,12 @@ const ICON_EMOJI: Record<string, string> = {
   mountain: 'mountain', 'device-laptop': 'laptop', zzz: 'zzz', sunrise: 'sunrise', photo: 'camera', 'building-community': 'houses', spray: 'lotion-bottle',
   hanger: 't-shirt', paperclip: 'linked-paperclips', wand: 'magic-wand', road: 'motorway', 'ruler-measure': 'straight-ruler',
   'mood-happy': 'grinning-face', 'mood-kid': 'grinning-face', yoga: 'relieved-face', 'user-heart': 'hugging-face', fence: 'house-with-garden',
+  // 12.11.2026: weitere Dinge, die auf den Blättern der jungen Stufen noch als graue Linie standen (gleiche Bedeutung, eindeutig)
+  'door-enter': 'door', 'door-exit': 'door', mushroom: 'mushroom', chess: 'chess-pawn', 'bell-school': 'bell', bath: 'bathtub',
+  'leaf-2': 'herb', pepper: 'bell-pepper', 'first-aid-kit': 'adhesive-bandage', sparkles: 'sparkles', lollipop: 'lollipop', 'music-heart': 'musical-notes',
+  cash: 'euro-banknote', 'ball-volleyball': 'volleyball', 'gift-card': 'wrapped-gift', sunglasses: 'sunglasses', microscope: 'microscope',
+  world: 'globe-showing-europe-africa', 'egg-fried': 'cooking', 'calendar-event': 'calendar', 'mood-angry': 'angry-face',
+  'mood-smile': 'smiling-face-with-smiling-eyes', 'clipboard-check': 'clipboard', 'clipboard-list': 'clipboard', 'clothes-rack': 'coat', 'shield-check': 'shield',
 }
 
 /** Bild-Verweis für junge Stufen: ‚icon:book‘ → ‚motiv:buch‘, sonst ein farbiges Bild, wenn es eines gibt; alles andere bleibt. */

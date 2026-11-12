@@ -62,7 +62,7 @@ try {
           else if (w === 'mist' || (w === 'zufall' && rnd() < 0.5)) P.tue(mist());
           else P.tue(brav()); }
       } else E.emit('respawn:weiter');
-      if (Date.now() - t0 > 150000) { clearInterval(tick); resolve({ ...log, zeit: true }); }
+      if (Date.now() - t0 > 240000) { clearInterval(tick); resolve({ ...log, zeit: true }); }   // seit den Geschick-Spielen dauert eine brave Runde länger
     }, 25);
   }), [karten, weise, seed]);
 
