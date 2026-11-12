@@ -28,6 +28,9 @@ export default {
     if (game.params.has('sanft')) meta.sanft = game.params.get('sanft') !== '0';
     let R = null, laeuft = false;
     const sit = (id) => SITUATIONEN.find((s) => s.id === id);
+    // Glimm, der Begleiter aus LUMO, gehört nicht in dieses Spiel
+    const ohneGlimm = () => { try { game.player.humanoid.group.traverse((o) => { if (o.name === 'glimm') o.visible = false; }); if (game.glimm && game.glimm.mesh) game.glimm.mesh.visible = false; } catch (e) { /* egal */ } };
+    ohneGlimm(); events.on('avatar:change', () => setTimeout(ohneGlimm, 50)); events.on('game:start', ohneGlimm);
     const sichern = () => { schreib(LAUF, R && !R.fertig ? R : null); events.emit('respawn:stand', R); };
 
     // Die Insel ist in diesem Modus überall farbig; der Grauschleier gehört zur LUMO-Geschichte

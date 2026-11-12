@@ -2,6 +2,7 @@
 // Die Schritte kommen aus daten/situationen-*.js; die Regeln (Sperren, Uhr, Wirkungen) aus run.js.
 //   const buehne = createBuehne({ game, O })      O = Oberfläche (oberflaeche.js)
 //   await buehne.spiele(situation, R) → { abgebrochen? }      buehne.zeige(ort, uhr) (freier Nachmittag)
+import * as THREE from 'three';
 import { wirke, wahlen, zeitFuer, ohneWahl, SPERRE_TEXT, hatKarte, karte } from './run.js';
 import { FIGUREN, STIMMEN } from './daten/index.js';
 
@@ -11,7 +12,19 @@ const warte = (ms) => new Promise((r) => setTimeout(r, ms));
 export function createBuehne({ game, O }) {
   const { ui, npcs, player, cameraRig } = game;
   const test = game.params && game.params.has('test');
-  let szene = null;   // { sit, R, cast: Map(id → npc), fremd: Set, mitte }
+  let szene = null;   // { sit, R, cast: Map(id → npc), fremd: Set, mitte, versteckt: [npc] }
+  const wurzel = document.getElementById('lumo-root');
+  const vPos = new THREE.Vector3(), vLook = new THREE.Vector3();
+  // Bild der Szene: Kamera schräg hinter dir, du im linken Drittel, die anderen im Blick
+  function totale() {
+    if (!szene || !szene.mitte || !cameraRig.setShot) return;
+    const { a, px, pz, cx, cz } = szene.mitte;
+    const y = player.position.y;
+    const fx = Math.sin(a), fz = Math.cos(a), rx = Math.cos(a), rz = -Math.sin(a);
+    vPos.set(px - fx * 2.9 + rx * 3.0, y + 2.15, pz - fz * 2.9 + rz * 3.0);
+    vLook.set(cx + fx * 0.6, y + 1.35, cz + fz * 0.6);
+    cameraRig.setShot(vPos, vLook);
+  }
 
   // Sprecher anmelden (Figuren ohne Eintrag in der Insel, Stimmen am Telefon)
   for (const [id, f] of Object.entries(FIGUREN)) ui.bubbles.registerSpeaker(id, { name: f.name, icon: f.icon, color: f.color, voice: f.voice });
@@ -48,9 +61,16 @@ export function createBuehne({ game, O }) {
       f.face({ x: px, y: 1.4, z: pz });
       szene.cast.set(id, f);
     });
-    szene.mitte = { x: cx, z: cz, a, px, pz };
+    szene.mitte = { cx, cz, a, px, pz };
+    // Wer nicht zur Situation gehört und im Bild stünde, tritt kurz zur Seite
+    for (const f of npcs.list()) {
+      if (szene.cast.has(f.id) || f.override || !f.position) continue;
+      if (Math.hypot(f.position.x - cx, f.position.z - cz) < 7) { f.setOverride({ hidden: true }); szene.versteckt.push(f); }
+    }
     if (cameraRig.behindPlayer) cameraRig.behindPlayer();
     if (cameraRig.snap) cameraRig.snap();
+    totale();
+    wurzel.classList.add('rs-szene');
   }
 
   function abbauen() {
@@ -59,7 +79,11 @@ export function createBuehne({ game, O }) {
       if (szene.fremd.has(id)) { npcs.remove(id); continue; }
       try { f.face(null); f.clearOverride(); if (f.humanoid) f.humanoid.setExpression(null); } catch (e) { /* Figur schon weg */ }
     }
+    for (const f of szene.versteckt) { try { f.clearOverride(); } catch (e) { /* schon weg */ } }
     if (cameraRig.setMode) cameraRig.setMode(null);
+    if (cameraRig.setShot) cameraRig.setShot(null);
+    if (cameraRig.behindPlayer) cameraRig.behindPlayer();
+    wurzel.classList.remove('rs-szene');
     ui.lock.release('respawn');
     szene = null;
   }
@@ -82,6 +106,7 @@ export function createBuehne({ game, O }) {
     let sek = opt.ruhe ? 0 : zeitFuer(R);
     if (opt.eil) sek = Math.min(sek || 10, 10);
     const standard = ohneWahl(R, sicht);
+    totale();
     const r = await O.wahl({
       frage: opt.frage,
       items: sicht.map((w) => ({
@@ -104,9 +129,9 @@ export function createBuehne({ game, O }) {
       if (!szene) return;
       const { R } = szene;
       const art = s[0];
-      if (art === 't') { if (cameraRig.setMode && cameraRig.mode === 'talk') cameraRig.setMode(null); await O.erzaehler(s[1]); }
-      else if (art === 'd') await O.gedanke(s[1]);
-      else if (art === 'k') { if (hatKarte(R, s[1])) await O.gedanke(s[2], karte('kopf', s[1])); }
+      if (art === 't') { totale(); await O.erzaehler(s[1]); }
+      else if (art === 'd') { totale(); await O.gedanke(s[1]); }
+      else if (art === 'k') { if (hatKarte(R, s[1])) { totale(); await O.gedanke(s[2], karte('kopf', s[1])); } }
       else if (art === 's') {
         const id = fn(s[1], R), f = szene.cast.get(id) || null;
         if (f) { mimik(id, f, s[3]); kamera(f); if (f.override) f.setOverride({ ...f.override, anim: (s[3] && s[3].anim) || 'talk' }); }
@@ -124,7 +149,7 @@ export function createBuehne({ game, O }) {
   return {
     get aktiv() { return !!szene; },
     async spiele(sit, R) {
-      szene = { sit, R, cast: new Map(), fremd: new Set(), mitte: null };
+      szene = { sit, R, cast: new Map(), fremd: new Set(), mitte: null, versteckt: [] };
       ui.lock.acquire('respawn');
       try {
         aufstellen(sit, R);
