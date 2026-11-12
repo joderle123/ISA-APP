@@ -291,7 +291,7 @@
         {
           "id": "blink-kette",
           "name": "Blink-Kette",
-          "format": "Bewegung im Raum",
+          "format": "Gerät weitergeben",
           "dauer": "3–6 Min",
           "text": "Vier Farbfelder blinken in einer Reihenfolge. Die Crew merkt sie sich zusammen, eine Person tippt nach. Jede Runde kommt eine Farbe dazu und eine andere Person ist dran. Ein Fehler beendet die Kette.",
           "foerdert": "Zusammen merken, sich absprechen, einander vertrauen (KOG-24, SOZ-27)",

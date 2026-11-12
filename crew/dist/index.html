@@ -12056,8 +12056,8 @@ var qrcode = function() {
    "id": "blink-kette",
    "name": "Blink-Kette",
    "thema": "party",
-   "format": "bewegung",
-   "formatName": "Bewegung im Raum",
+   "format": "weitergeben",
+   "formatName": "Gerät weitergeben",
    "dauer": "3–6 Min",
    "text": "Vier Farbfelder blinken in einer Reihenfolge. Die Crew merkt sie sich zusammen, eine Person tippt nach. Jede Runde kommt eine Farbe dazu und eine andere Person ist dran. Ein Fehler beendet die Kette.",
    "foerdert": "Zusammen merken, sich absprechen, einander vertrauen (KOG-24, SOZ-27)",
@@ -32196,7 +32196,7 @@ var qrcode = function() {
   /* ---------- Blink-Kette ---------- */
   const BK_FARBEN = ['var(--teamA)', 'var(--yellow)', 'var(--good)', 'var(--teamB)'];
   CREW.registerGame({
-    id: 'blink-kette', template: 'T4', themen: ['party'],
+    id: 'blink-kette', template: 'T5', themen: ['party'],
     async run(ctx) {
       await ctx.T.intro({ rule: 'Merkt euch die Reihenfolge und tippt sie nach. Jede Runde eine Farbe mehr – und eine andere Person tippt.' });
       const felder = BK_FARBEN.map((f, i) => h('button', { type: 'button', class: 'p-blink', 'data-i': String(i), style: { '--f': f }, 'aria-label': 'Feld ' + (i + 1) }));

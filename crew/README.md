@@ -127,7 +127,7 @@ Spiele, die auch so tragen). Die übrigen Übungen aus dem Kurs sind eingeklappt
 | Verboten! | Ein Wort erklären, ohne die drei roten Wörter zu sagen | iPad wandert |
 | Ohne Worte | Pantomime: Karte um Karte vorspielen, 45 Sekunden | iPad wandert |
 | Tauziehen | Beide tippen um die Wette, das Tau wandert zur schnelleren Seite | zu zweit |
-| Blink-Kette | Vier Farben blinken, die Crew merkt sich die Reihenfolge – jede Runde eine mehr | Crew |
+| Blink-Kette | Vier Farben blinken, die Crew merkt sich die Reihenfolge – jede Runde eine mehr | iPad wandert |
 | Zehn Sekunden | Die Uhr blind bei genau 10,0 Sekunden stoppen | iPad wandert |
 
 Jedes Partyspiel zählt Punkte; der beste Wert bleibt als **Crew-Rekord** auf dem Gerät (ohne Namen) und steht auf der

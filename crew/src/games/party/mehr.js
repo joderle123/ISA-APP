@@ -191,7 +191,7 @@
   /* ---------- Blink-Kette ---------- */
   const BK_FARBEN = ['var(--teamA)', 'var(--yellow)', 'var(--good)', 'var(--teamB)'];
   CREW.registerGame({
-    id: 'blink-kette', template: 'T4', themen: ['party'],
+    id: 'blink-kette', template: 'T5', themen: ['party'],
     async run(ctx) {
       await ctx.T.intro({ rule: 'Merkt euch die Reihenfolge und tippt sie nach. Jede Runde eine Farbe mehr – und eine andere Person tippt.' });
       const felder = BK_FARBEN.map((f, i) => h('button', { type: 'button', class: 'p-blink', 'data-i': String(i), style: { '--f': f }, 'aria-label': 'Feld ' + (i + 1) }));
