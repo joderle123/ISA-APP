@@ -8,6 +8,7 @@
 
 import ICONS from './bilder/icons.json'
 import EMOJI from './bilder/emoji.json'
+import DOODLES from './bilder/doodles.json'
 import type { Farben } from './katalog'
 import type { BildId } from './typen'
 import { gesichtZeichnung, istGefuehl } from './gesichter'
@@ -127,7 +128,30 @@ export function emojiZeichnung(name: string): Zeichnung {
   return { vb: [0, 0, 32, 32], formen, w: 1 }
 }
 
-/** Löst einen Bild-Verweis ('icon:…', 'gesicht:…', 'figur:…', 'motiv:…', 'szene:…', 'peep:…', 'emoji:…') auf. */
+const doodles = DOODLES as unknown as Record<string, { vb: [number, number, number, number]; f: Form[] }>
+const doodleFertig = new Map<string, Zeichnung>()
+
+/** Namen der gezeichneten Szenen (Open Doodles von Pablo Stanley, CC0; tools/doodles/doodles.cjs). */
+export const DOODLE_NAMEN: string[] = Object.keys(doodles)
+
+export function hatDoodle(name: string): boolean {
+  return Object.prototype.hasOwnProperty.call(doodles, name)
+}
+
+function akzent(formen: Form[]): Form[] {
+  return formen.map((f) => (f.t === 'g' ? { ...f, formen: akzent(f.formen) } : f.f === 'akzent' ? { ...f, f: 'mittel' } : f) as Form)
+}
+
+/** Gezeichnete Szene: Strich in Tinte, Flächen in der Bereichsfarbe des Blatts. */
+export function doodleZeichnung(name: string): Zeichnung {
+  const d = doodles[name]
+  if (!d) return iconZeichnung('')
+  let z = doodleFertig.get(name)
+  if (!z) doodleFertig.set(name, (z = { vb: d.vb, formen: akzent(d.f), w: 2 }))
+  return z
+}
+
+/** Löst einen Bild-Verweis ('icon:…', 'gesicht:…', 'figur:…', 'motiv:…', 'szene:…', 'peep:…', 'emoji:…', 'doodle:…') auf. */
 export function bildZeichnung(id: BildId): Zeichnung {
   const [art, ...rest] = id.split(':')
   if (art === 'icon') return iconZeichnung(rest[0] ?? '')
@@ -140,6 +164,7 @@ export function bildZeichnung(id: BildId): Zeichnung {
   if (art === 'szene') return szeneZeichnung(rest[0] ?? '')
   if (art === 'peep') return peepZeichnung(rest[0] ?? 'jana', rest[1], rest[2])
   if (art === 'emoji') return emojiZeichnung(rest[0] ?? '')
+  if (art === 'doodle') return doodleZeichnung(rest[0] ?? '')
   return iconZeichnung(id)
 }
 
@@ -151,6 +176,7 @@ export function bildGueltig(id: BildId): boolean {
   if (art === 'figur' || art === 'motiv') return bildZeichnung(id).formen.length > 0
   if (art === 'szene') return istSzene(name ?? '')
   if (art === 'emoji') return hatEmoji(name ?? '')
+  if (art === 'doodle') return hatDoodle(name ?? '')
   if (art === 'peep') {
     const [, wer, g, h] = id.split(':')
     return istPeep(wer ?? '') && (!g || istGefuehl(g) || PEEP_GESICHTER.includes(g)) && (!h || h in PEEP_HALTUNGEN)

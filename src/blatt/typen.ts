@@ -33,6 +33,7 @@ export type Sozialform = 'einzeln' | 'gruppe' | 'klasse'
  *  - 'gesicht:<gefuehl>'            → Gefühlsgesicht (siehe Gefuehl)
  *  - 'figur:<typ>[:<gefuehl>[:<pose>]]' → Kinderfigur, z. B. 'figur:mia:froh:winken'
  *  - 'motiv:<name>'                 → größere Zeichnung (Vulkan, Eisberg, Batterie …)
+ *  - 'doodle:<name>'                → gezeichnete Szene mit Person (Open Doodles), z. B. 'doodle:lesen', 'doodle:meditieren' (Liste: DOODLE_NAMEN)
  *  - 'emoji:<name>'                 → farbiges Bild (Fluent Emoji), z. B. 'emoji:pizza', 'emoji:bus' (Liste: src/blatt/bilder/emoji.json)
  *  - 'peep:<wer>[:<gefuehl>[:<haltung>]]' → gezeichnete Jugendliche/Erwachsene (Open Peeps), z. B. 'peep:jana:froh:handy' (src/blatt/peeps.ts)
  */
