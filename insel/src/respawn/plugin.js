@@ -148,10 +148,14 @@ export default {
       const w = await menue(ort.name, liste);
       if (w) await ortAktion(ort, w.id);
     });
+    // Menü an einer Person: höchstens sechs Kacheln. Das Gemeine liegt eine Ebene tiefer („Gemein sein …“).
+    const GEMEIN = ['aufziehen', 'filmen', 'schubsen'];
     const leuteMenue = (wer) => frei(async () => {
       if (!WICHTIG.includes(wer)) { const n = npcs.get(wer); ui.say({ who: wer, text: 'Moien.', anchor: n ? n.group : null, wait: false, lock: false, seconds: 1.8 }); return; }
-      const liste = LEUTE_REIHE.map((id) => ({ id, ...LEUTE_AKTIONEN[id] })).filter((a) => !a.wenn || a.wenn(R, wer)).map((a) => ({ ...a, sub: a.kraft ? '⚡ kostet Kraft' : a.kostet ? a.kostet + ' Euro' : '' }));
-      const w = await menue(npcs.nameOf(wer), liste);
+      const alle = LEUTE_REIHE.map((id) => ({ id, ...LEUTE_AKTIONEN[id] })).filter((a) => !a.wenn || a.wenn(R, wer)).map((a) => ({ ...a, sub: a.kraft ? '⚡ kostet Kraft' : a.kostet ? a.kostet + ' Euro' : '' }));
+      const nett = alle.filter((a) => !GEMEIN.includes(a.id)).slice(0, 4), gemein = alle.filter((a) => GEMEIN.includes(a.id));
+      let w = await menue(npcs.nameOf(wer), gemein.length ? nett.concat([{ id: '_gemein', t: 'Gemein sein …', art: 'hart' }]) : nett);
+      if (w && w.id === '_gemein') w = await menue(npcs.nameOf(wer), gemein);
       if (w) await leuteAktion(wer, w.id);
     });
     events.on('npc:talk', (e) => { if (!e || e.handled) return; e.handled = true; if (R && tagEnde) leuteMenue(e.id); });
