@@ -63,6 +63,9 @@ man darf fast alles tun (auch Mist), keine Waffen, kein Gefängnis. Die Folgen s
     einatmen, loslassen = ausatmen, drei Züge. Wird angeboten, wenn zu viel Druck eine ruhige Antwort sperrt („Erst
     durchatmen.“, einmal je Auswahl) – danach steht dieselbe Auswahl wieder da, oft mit der ruhigen Antwort frei. Auch am
     Steg („Ans Wasser setzen“). Ein kleines Spiel mit Sinn (erst runterkommen, dann antworten), ohne ein Wort der Belehrung.
+  - **Zuhören** (`welt.js` → `merkFrage`): Wer jemandem Pommes ausgegeben hat, wird ab dem nächsten Tag beim Reden einmal
+    gefragt: „Weißt du noch, was ich dir erzählt hab?“ – drei Antworten, die richtige gibt Nähe, die falsche kostet nichts.
+  - **Einstieg:** In der allerersten Runde folgen auf die Ankunft vier kurze Sätze, wie ein freier Tag geht (einmalig).
   - Im Hub steht RESPAWN als Kachel bei den Materialien (Klassebuch: `hub-apps.js`, Test `respawn-kachel.js`).
 - **Offen:** Spieltest mit Jugendlichen, Frauen-Modelle (Paket „Ultimate Modular Women“ fehlt noch), Gesichtsausdruck der
   neuen Figuren.

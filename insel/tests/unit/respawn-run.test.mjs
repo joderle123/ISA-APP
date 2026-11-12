@@ -213,3 +213,16 @@ test('Rennen gegen Pit: Ziel und Zeit stehen fest, beide Ausgänge haben kurze S
   for (const erg of [{ geschafft: true, zeit: 12 }, { geschafft: true, zeit: 22 }, { geschafft: false, zeit: 26 }]) for (const s of a.nach(R, erg)) if (s[0] === 's') assert.ok(s[2].trim().split(/\s+/).length <= 12, s[2]);
   R.flags['pit.weg'] = true; R.flags['rennen.tag'] = -5; assert.equal(a.wenn(R), false, 'ohne Pit kein Rennen');
 });
+
+test('Zuhören: nach den Pommes fragt die Person einmal nach – richtig gemerkt gibt Nähe, falsch kostet nichts', () => {
+  const R = neuerLauf({ karten: { kopf: 'voll', zuhause: 'oma', tasche: 'ok' } });
+  const reden = (wer) => LEUTE_AKTIONEN.reden.szene(R, { wer });
+  assert.ok(!reden('pit').some((s) => s[0] === 'w'), 'ohne Pommes keine Frage');
+  R.flags['eingeladen.pit'] = 0; R.tag = 1;   // gestern eingeladen
+  const f = reden('pit'); const w = f.find((s) => s[0] === 'w');
+  assert.ok(w && w[1].length === 3, 'drei Antworten');
+  for (const x of w[1]) { assert.ok(x.t.trim().split(/\s+/).length <= 6, x.t); assert.ok(x.dann[0][2].trim().split(/\s+/).length <= 12); }
+  const gut = w[1].filter((x) => x.e.bond); assert.equal(gut.length, 1); assert.equal(gut[0].t, 'Sein Bruder zog weg.');
+  assert.ok(w[1].every((x) => x.e.flags['gemerkt.pit']), 'die Frage kommt nur einmal');
+  wirke(R, gut[0].e); assert.ok(!reden('pit').some((s) => s[0] === 'w'), 'danach wieder normales Reden');
+});

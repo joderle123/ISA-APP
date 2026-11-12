@@ -289,6 +289,23 @@ const EINLADEN = {
   mika: 'Sag keinem, dass ich Pommes mit Mayo mag.', yara: 'Mit dir kann man schweigen. Das ist selten.', luc: 'Hat mich noch nie einer eingeladen.',
   noor: 'Auf der letzten Insel hatte ich niemanden.', tiago: 'Papa sagt, das Meer zahlt immer zurück.', maelle: 'Ich singe nur, wenn keiner zuhört. Fast.',
 };
+// Zuhören: Was jemand beim Pommes-Essen erzählt hat, in wenigen Wörtern. Tage später fragt die Person nach –
+// wer es noch weiß, hat zugehört (kleines Merkspiel beim Reden, ohne Erklärung).
+const MERK = {
+  jolie: 'Zu Hause ist es still.', tun: 'Er filmt gegen das Vergessen.', pit: 'Sein Bruder zog weg.', mika: 'Er mag Pommes mit Mayo.', yara: 'Mit dir kann sie schweigen.',
+  luc: 'Ihn lädt sonst keiner ein.', noor: 'Dort hatte sie niemanden.', tiago: 'Das Meer zahlt zurück.', maelle: 'Sie singt nur heimlich.',
+};
+export function merkFrage(R, wer) {
+  const namen = Object.keys(MERK).filter((w) => w !== wer), n = tag(R) + wer.length;
+  const falsch = [namen[n % namen.length], namen[(n + 3) % namen.length]];
+  const liste = [{ t: MERK[wer], gut: true }, { t: MERK[falsch[0]] }, { t: MERK[falsch[1]] }];
+  for (let i = 0; i < n % 3; i++) liste.push(liste.shift());   // Reihenfolge wechselt, ist aber je Tag fest
+  return [
+    ['s', wer, 'Weißt du noch, was ich dir erzählt hab?'],
+    ['w', liste.map((x) => ({ t: x.t, art: 'ruhig', e: x.gut ? { bond: { [wer]: 1 }, flags: { ['gemerkt.' + wer]: true } } : { flags: { ['gemerkt.' + wer]: true } },
+      dann: [['s', wer, x.gut ? 'Du hörst echt zu. Macht sonst keiner.' : 'Nee. Egal. Vergiss es.']] })), { ruhe: true }],
+  ];
+}
 // Lästern: über wen man bei wem redet (die Person, die dem Zuhörer am nächsten steht – das weiß man vorher nicht)
 const LAESTER_ZIEL = { tun: 'jolie', jolie: 'maelle', pit: 'tun', mika: 'luc', yara: 'mika', luc: 'yara', noor: 'jolie', tiago: 'pit', maelle: 'noor' };
 // Etwas zugeben: bei wem was (das Erste, das zutrifft)
@@ -367,6 +384,8 @@ export const LEUTE_AKTIONEN = {
   reden: { t: 'Reden', art: 'ruhig', kraft: 0,
     szene: (R, { wer }) => {
       if (hat(R, 'meidet.' + wer)) return [['s', wer, GROSSE.includes(wer) ? 'Nicht jetzt.' : 'Lass mich.']];
+      // ab dem Tag nach den Pommes: einmal die Frage, ob man zugehört hat
+      if (MERK[wer] && !hat(R, 'gemerkt.' + wer) && wert(R, 'eingeladen.' + wer, 99) < tag(R)) return merkFrage(R, wer);
       const l = SMALLTALK[wer] || ['Moien.'];
       const schon = wert(R, 'geredet.' + wer, -1) === tag(R);
       return [['s', wer, l[(tag(R) + wer.length) % l.length]], ...(schon ? [] : [['e', { bond: bond(R, wer) < 3 ? { [wer]: 1 } : {}, flags: { ['geredet.' + wer]: tag(R) } }]])];
