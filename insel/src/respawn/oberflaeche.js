@@ -167,7 +167,7 @@ export function createOberflaeche({ game }) {
 
   // ---------- Vollbild-Karten (Jahreszeit, Kartenziehen, Freizeit, Abschluss) ----------
   function voll(cls, html) {
-    const v = el('rs-voll hud-interactive ' + cls, html);
+    const v = el('rs-voll hud-interactive ov-scroll ' + cls, html);   // ov-scroll: hier darf man wischen (engine/input.js)
     root.appendChild(v);
     requestAnimationFrame(() => v.classList.add('is-da'));
     ui.lock.acquire('rs-voll');

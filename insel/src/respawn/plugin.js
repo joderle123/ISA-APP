@@ -14,6 +14,7 @@ import { ladeFigur, MODELLE, ueberziehe } from './figur3d.js';
 import { baueStadt } from './stadt.js';
 import { createFahren } from './fahren.js';
 import { createRoller } from './roller.js';
+import { createWettlauf } from './lauf.js';
 import { SITUATIONEN, AUSGAENGE, AKTE, AKTE_LEER, ORTE, ORT_AKTIONEN, LEUTE_AKTIONEN, LEUTE_REIHE, FOLGEN, VERPASST, WICHTIG, statistSagt } from './daten/index.js';
 import { neuerLauf, zieheKarten, planeJahreszeit, jahreszeitWechsel, jahreszeit, ausgangFuer, akteFuer, wirke, bond, verteile, folgenAmMorgen, neuerTag,
   JAHRESZEIT_NAME, UHR_NACH_KRAFT, TAGE_JE_JAHRESZEIT } from './run.js';
@@ -60,11 +61,12 @@ export default {
       for (const o of weg) if (o.parent) o.parent.remove(o);
       // der eigene Tretroller (am Markt gekauft): fährt nur an freien Tagen, nicht in Szenen und nicht im Lieferwagen
       const rm = s.setze('skate/scooter', 0, 0, 0, { massstab: 2.0 });
-      if (rm) roller = createRoller({ game, mesh: rm, darf: () => !!(R && tagEnde && R.flags.roller && !B.aktiv && !F.aktiv && !beschaeftigt && !ui.overlay.count && !document.querySelector('.rs-voll')) });
+      if (rm) roller = createRoller({ game, mesh: rm, darf: () => !!(R && tagEnde && R.flags.roller && !B.aktiv && !F.aktiv && (!beschaeftigt || W.aktiv) && !ui.overlay.count && !document.querySelector('.rs-voll')) });
     }).catch((e) => console.warn('[respawn] Stadt', e));
 
     let roller = null;
     const F = createFahren({ game });
+    const W = createWettlauf({ game });
 
     // ---------- Neue Figuren (Skelett, echte Bewegungen): Überzug für die Spielfigur und alle anderen ----------
     const STIL = {
@@ -198,6 +200,15 @@ export default {
       R.log.push({ ort: ort.id, aktion: aid, zeugen });
       events.emit('respawn:wahl', { sit: 'ort:' + ort.id, wahl: a.t, art: a.art });
       await B.frei(a.szene(R, { zeugen }), R, { zeugen });
+      // Aktionen mit Wettlauf: Szene → laufen oder rollern (frei in der Welt, die Uhr läuft) → wie es ausging
+      if (a.lauf && R.flags['lauf.jetzt']) {
+        delete R.flags['lauf.jetzt'];
+        O.status(R);
+        const erg = (await W.starte(a.lauf)) || { geschafft: false, zeit: 0, rest: 0 };
+        if (roller && roller.aktiv) roller.ab();
+        R.log.push({ lauf: erg });
+        if (a.nach) await B.frei(a.nach(R, erg, { zeugen }), R, { zeugen });
+      }
       // Aktionen mit echter Fahrt: Szene → fahren (frei in der Welt) → was daraus wurde
       if (a.fahrt && R.flags['fahrt.jetzt']) {
         delete R.flags['fahrt.jetzt'];

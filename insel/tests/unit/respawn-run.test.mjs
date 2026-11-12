@@ -201,3 +201,14 @@ test('Fahren üben: erst nach dem Zugeben (oder mit gutem Draht zu Fränz), einm
   for (const erg of [{ wasser: true }, { beulen: 1, strecke: 10 }, { strecke: 80, beulen: 0 }, { strecke: 5, beulen: 0 }]) for (const s of a.nach(R, erg)) if (s[0] === 's') assert.ok(s[2].trim().split(/\s+/).length <= 12, s[2]);
   const R2 = neuerLauf({ karten: { kopf: 'voll', zuhause: 'oma', tasche: 'ok' } }); R2.bond.fraenz = 3; assert.equal(a.wenn(R2), true, 'guter Draht reicht auch');
 });
+
+test('Rennen gegen Pit: Ziel und Zeit stehen fest, beide Ausgänge haben kurze Sätze, einmal am Tag', () => {
+  const a = ORT_AKTIONEN.rennen, R = neuerLauf({ karten: { kopf: 'voll', zuhause: 'oma', tasche: 'ok' } });
+  assert.ok(a.lauf && a.lauf.sekunden >= 20 && Number.isFinite(a.lauf.ziel.x) && Number.isFinite(a.lauf.ziel.z));
+  assert.equal(a.wenn(R), true);
+  const schritte = a.szene(R); const e = schritte.find((s) => s[0] === 'e')[1];
+  assert.equal(e.flags['lauf.jetzt'], true);
+  wirke(R, e); assert.equal(a.wenn(R), false, 'heute schon gerannt');
+  for (const erg of [{ geschafft: true, zeit: 12 }, { geschafft: true, zeit: 22 }, { geschafft: false, zeit: 26 }]) for (const s of a.nach(R, erg)) if (s[0] === 's') assert.ok(s[2].trim().split(/\s+/).length <= 12, s[2]);
+  R.flags['pit.weg'] = true; R.flags['rennen.tag'] = -5; assert.equal(a.wenn(R), false, 'ohne Pit kein Rennen');
+});

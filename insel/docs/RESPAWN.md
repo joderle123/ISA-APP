@@ -49,6 +49,9 @@ man darf fast alles tun (auch Mist), keine Waffen, kein Gefängnis. Die Folgen s
     „Watercraft Kit“, „Mini Market“, CC0).
   - **Tretroller** (`roller.js`): am Markt für 35 Euro zu kaufen, danach jederzeit „Roller fahren“ auf der Aktionstaste
     (schneller unterwegs; steigt von selbst ab, wenn eine Szene beginnt oder man ins Wasser gerät).
+  - **Rennen gegen Pit** (`lauf.js`, `ORT_AKTIONEN.rennen`): vom Brunnen in 26 Sekunden zum Leuchtturm – frei in der Welt,
+    oben läuft die Uhr mit Entfernung. Zu Fuß knapp, mit dem Roller leicht. Wer verliert, zahlt Pommes.
+  - **Neue Situation** „Das Feuer am Strand“ (`situationen-2.js` → `lagerfeuer`): Mika will, dass Pit über das Feuer springt.
   - **Fahren üben** (`ORT_AKTIONEN.ueben`): Wer den Lieferwagen zugegeben hat – oder bei Fränz gut steht –, darf einmal am
     Tag mit ihm daneben fahren. Zugeben öffnet also wieder eine Tür.
   - Die Straßen zum Leuchtturm und zum Strand sind jetzt EINE durchgehende Hauptstraße (keine Lücke am Dorfplatz), mit

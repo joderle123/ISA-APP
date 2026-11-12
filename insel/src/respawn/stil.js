@@ -76,6 +76,10 @@ export const STIL = `
 .rs-tk{text-align:center;animation:rs-rein .5s ease-out;}
 .rs-tk small{font-size:16px;letter-spacing:.2em;text-transform:uppercase;opacity:.75;}
 .rs-tk h2{margin:6px 0 0;font-size:clamp(46px,9vw,92px);letter-spacing:-.02em;line-height:1;}
+/* Volle Bildschirme am Handy: Ist der Inhalt höher als das Bild, beginnt er oben und lässt sich wischen
+   (mit „place-items:center“ wäre der obere Teil abgeschnitten und der Knopf unten nicht erreichbar). */
+.rs-voll{align-items:start;justify-items:center;touch-action:pan-y;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;}
+.rs-voll>*{margin-top:auto;margin-bottom:auto;}
 .rs-kz,.rs-ende,.rs-start{width:min(900px,100%);display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center;}
 .rs-voll h1{margin:0;font-size:clamp(52px,11vw,110px);letter-spacing:.04em;line-height:1;background:linear-gradient(180deg,#fff,#ffb38a);-webkit-background-clip:text;background-clip:text;color:transparent;}
 .rs-voll h2{margin:0;font-size:clamp(26px,4.4vw,38px);}
@@ -137,5 +141,21 @@ export const STIL = `
 .rs-marke.ist-ort{background:rgba(16,14,34,.72);box-shadow:none;animation:none;font-weight:700;font-size:14px;}
 .rs-marke small{opacity:.8;font-weight:600;margin-left:6px;}
 .rs-hilfe p{font-size:17px;margin:0 0 10px;}
+/* Handy hochkant: Karten als flache Zeilen (Bild links, Text rechts), damit alle drei und der Knopf auf ein Bild passen.
+   Die Knöpfe unten bleiben beim Wischen immer sichtbar. */
+@media (max-width:560px){
+.rs-voll{padding-left:12px;padding-right:12px;}
+.rs-kz,.rs-ende,.rs-start{gap:10px;}
+.rs-kz h2,.rs-ende h2{font-size:24px;}
+.rs-kz .rs-lead{font-size:15px;}
+.rs-reihe{gap:8px;}
+.rs-karte{display:grid;grid-template-columns:52px 1fr;column-gap:10px;align-items:center;text-align:left;padding:9px 12px;border-radius:14px;}
+.rs-karte small{grid-column:2;font-size:12px;}
+.rs-kb{grid-column:1;grid-row:1 / span 4;font-size:36px;margin:0;text-align:center;}
+.rs-karte h3{grid-column:2;font-size:17px;margin:0 0 2px;}
+.rs-karte p{grid-column:2;font-size:14px;margin:2px 0 0;padding-left:18px;line-height:1.3;}
+.rs-kz .rs-knoepfe,.rs-ende .rs-knoepfe{position:sticky;bottom:0;width:100%;margin:0;padding:10px 0 4px;background:linear-gradient(180deg,rgba(18,12,40,0),rgba(18,12,40,.96) 34%);z-index:2;}
+.rs-kz .rs-knoepfe button,.rs-ende .rs-knoepfe button{flex:1 1 30%;min-height:48px;padding-left:8px;padding-right:8px;}
+}
 @media (max-width:560px){.rs-leiste{gap:7px;font-size:14px;padding-left:10px;left:max(10px,env(safe-area-inset-left));transform:none;transition:none;max-width:calc(100vw - 92px)}.rs-jz{display:none}.rs-karte{flex-basis:100%;max-width:none}}
 `;

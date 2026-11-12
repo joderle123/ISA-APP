@@ -25,7 +25,7 @@ export const LEUCHTTURM = { x: -108, z: 124.5 };
 export const ORTE = [
   { id: 'zuhause', name: 'Zuhause', ort: 'bootshaus', bild: '🏠', aktionen: ['schlafen', 'zocken'] },
   { id: 'kiosk', name: 'Kiosk', ort: 'snackStand', bild: '🍟', aktionen: ['job', 'kasse'] },
-  { id: 'brunnen', name: 'Brunnen', ort: 'dorfplatz', bild: '🛹', aktionen: ['tricks'] },
+  { id: 'brunnen', name: 'Brunnen', ort: 'dorfplatz', bild: '🛹', aktionen: ['tricks', 'rennen'] },
   { id: 'werft', name: 'Werft', ort: 'werft', bild: '🔨', aktionen: ['sprayen', 'boot'] },
   { id: 'steg', name: 'Steg', ort: 'steg', bild: '🌊', aktionen: ['wasser', 'angeln', 'springen'] },
   { id: 'krater', name: 'Krater', ort: 'kraterRand', bild: '🔥', aktionen: ['abhaengen', 'ziehen'] },
@@ -46,6 +46,13 @@ export const ORT_AKTIONEN = {
       : g.treffer >= 1 ? [['t', 'Einmal gestanden, sonst Asphalt. Pit grinst.'], ['e', { druck: -15, bond: { pit: 1 } }]]
       : [['t', 'Du fällst zehnmal. Pit lacht nicht einmal.'], ['e', { druck: -10, bond: { pit: 1 } }]])]]) },
   abhaengen: { t: 'Mit der Crew abhängen', art: 'weg', kraft: 1, szene: () => [['t', 'Musik aus einer Box. Mikas Crew macht dir Platz.'], ['e', { druck: -15, ruf: { krater: 1 }, bond: { yara: 1 }, spaet: 1 }]] },
+  // Wettlauf (lauf.js): in 26 Sekunden zum Leuchtturm. Zu Fuß knapp, mit dem eigenen Roller leicht. Einmal am Tag.
+  rennen: { t: 'Rennen gegen Pit', art: 'mut', kraft: 1, lauf: { ziel: LEUCHTTURM, sekunden: 26, name: 'Leuchtturm' },
+    wenn: (R) => !hat(R, 'pit.weg') && !hat(R, 'meidet.pit') && wert(R, 'rennen.tag', -1) !== tag(R),
+    szene: (R) => [['s', 'pit', 'Bis zum Leuchtturm. Wer verliert, zahlt Pommes.'], ['d', hat(R, 'roller') ? 'Mit dem Roller hat er keine Chance.' : 'Einfach die Straße runter. Los.'], ['e', { flags: { 'lauf.jetzt': true, 'rennen.tag': tag(R) } }]],
+    nach: (R, erg) => (erg.geschafft
+      ? [['s', 'pit', erg.zeit < 15 ? 'Was war das denn? Du fliegst ja.' : 'Knapp. Aber gewonnen ist gewonnen.'], ['e', { druck: -15, geld: 5, bond: { pit: 1 }, ruf: { hafen: 1 }, flag: 'rennen.gewonnen' }]]
+      : [['s', 'pit', 'Ich war schon oben. Pommes gehen auf dich.'], ['e', { druck: -5, geld: -Math.min(5, R.geld), bond: { pit: 1 } }]]) },
   job: { t: 'Jobben', art: 'ruhig', kraft: 1, szene: (R) => (hat(R, 'job.weg') ? [['s', 'fraenz', 'Für dich hab ich keine Arbeit mehr.']] : [['t', 'Vier Stunden Fritteuse. Der Korb muss rechtzeitig raus.'],
     ['spiel', { titel: 'Pommes raus, bevor sie verbrennen', bild: '🍟' }, (g) => {
       const lohn = (R.karten.zuhause === 'allein' ? 25 : 20) + (g.treffer >= 3 ? 5 : g.treffer === 0 ? -5 : 0);

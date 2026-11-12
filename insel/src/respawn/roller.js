@@ -43,7 +43,7 @@ export function createRoller({ game, mesh, darf }) {
     const yaw = player.yaw || 0;
     let d = yaw - yawVor; while (d > Math.PI) d -= Math.PI * 2; while (d < -Math.PI) d += Math.PI * 2; yawVor = yaw;
     kipp += ((Math.max(-0.3, Math.min(0.3, -d / Math.max(dt, 0.001) * 0.06))) - kipp) * Math.min(1, dt * 6);   // legt sich in die Kurve
-    mesh.rotation.set(0, yaw + Math.PI, -kipp);   // das Modell zeigt mit dem Lenker nach hinten – umdrehen
+    mesh.rotation.set(0, yaw, kipp);   // Lenker (im Modell bei +z) zeigt in Blickrichtung – geprüft am Bild in Fahrt
     if ((player.speed || 0) < 0.4) player.playAnim('idle', 0);
   }, { order: 61 });
 
