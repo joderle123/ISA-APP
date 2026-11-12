@@ -19,16 +19,16 @@ export const QUALITY = {
     post: false, outline: 0, bloom: 0, bloomScale: 0.5,
   },
   medium: {
-    name: 'medium', label: 'Mittel', pixelRatio: 1.5, shadows: true, shadowSize: 1024,
+    name: 'medium', label: 'Mittel', pixelRatio: 1.5, shadows: true, shadowSize: 2048,
     vegetation: 0.7, terrainCell: 2.5, drawDistance: 480, waterSegments: 150, antialias: false,
     grassDistance: 80, particles: 0.8,
-    post: true, outline: 0.8, bloom: 0.22, bloomScale: 0.5,
+    post: true, outline: 0.8, bloom: 0.22, bloomScale: 0.5, ao: 0.8, dof: 0.9, rays: 0.5,
   },
   high: {
-    name: 'high', label: 'Hoch', pixelRatio: 2, shadows: true, shadowSize: 2048,
+    name: 'high', label: 'Hoch', pixelRatio: 2, shadows: true, shadowSize: 4096,
     vegetation: 1, terrainCell: 2.0, drawDistance: 600, waterSegments: 190, antialias: false,
     grassDistance: 110, particles: 1,
-    post: true, outline: 1.0, bloom: 0.32, bloomScale: 1.0,
+    post: true, outline: 1.0, bloom: 0.32, bloomScale: 1.0, ao: 1.0, dof: 1, rays: 0.62,
   },
 };
 // Kontur-Breite in Gerätepixeln: mindestens 1 px (sonst trifft die Abtastung denselben Texel und die Linie verschwindet)
@@ -123,6 +123,110 @@ class OutlinePass extends ShaderPass {
   }
 }
 
+// ---- Tiefen-Pass (Grafik-Durchgang 12.11.2026): zwei Dinge aus dem Tiefenbild, in einem Durchlauf.
+// 1) Umgebungsverdeckung: Ecken, Fugen und der Boden unter Figuren und Dingen werden weich dunkler – die Welt bekommt
+//    Tiefe und alles „steht“ auf dem Boden. Gegenüberliegende Abtastpaare: auf einer ebenen Fläche heben sie sich auf
+//    (kein falsches Abdunkeln schräger Böden), in Kehlen und an Kontaktkanten nicht.
+// 2) Schärfentiefe (nur in Szenen, uDof > 0): Vorder- und Hintergrund werden weich, das Gesicht bleibt scharf (Kino-Bild).
+const TIEFE_SHADER = {
+  uniforms: {
+    tDiffuse: { value: null }, tDepth: { value: null }, uTexel: { value: new THREE.Vector2(1 / 1024, 1 / 1024) },
+    uNear: { value: 0.3 }, uFar: { value: 1600 }, uAO: { value: 0.7 }, uRadius: { value: 0.55 }, uProj: { value: 1 },
+    uDof: { value: 0 }, uFocus: { value: 6 }, uNight: { value: 0 },
+    uRays: { value: 0 }, uSunUv: { value: new THREE.Vector2(0.5, 0.8) }, uSunCol: { value: new THREE.Vector3(1, 0.85, 0.6) },
+  },
+  vertexShader: /* glsl */`
+    varying vec2 vUv;
+    void main() { vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0); }`,
+  fragmentShader: /* glsl */`
+    uniform sampler2D tDiffuse; uniform sampler2D tDepth; uniform vec2 uTexel;
+    uniform float uNear; uniform float uFar; uniform float uAO; uniform float uRadius; uniform float uProj;
+    uniform float uDof; uniform float uFocus; uniform float uNight;
+    uniform float uRays; uniform vec2 uSunUv; uniform vec3 uSunCol;
+    varying vec2 vUv;
+    float linD(vec2 uv) {
+      float z = texture2D(tDepth, uv).x;
+      return (2.0 * uNear * uFar) / (uFar + uNear - (z * 2.0 - 1.0) * (uFar - uNear));
+    }
+    float paar(vec2 o, float d) {
+      float a = linD(vUv + o), b = linD(vUv - o);
+      // Ausreißer (weit vorn stehende Dinge) zählen nicht: sonst gäbe es Höfe um Figuren
+      float lim = 0.9 + d * 0.05;
+      a = max(a, d - lim); b = max(b, d - lim);
+      float v = d - 0.5 * (a + b);
+      return smoothstep(0.012 + d * 0.004, 0.16 + d * 0.02, v);
+    }
+    void main() {
+      vec4 c = texture2D(tDiffuse, vUv);
+      float d = linD(vUv);
+      float aspect = uTexel.x / uTexel.y;
+      // Radius in Bildkoordinaten: Weltradius × Projektion / Tiefe (in der Ferne mindestens 2 Texel)
+      float r = max(uRadius * uProj / d, uTexel.y * 2.0);
+      float occ = 0.0;
+      if (uAO > 0.0 && d < 140.0 && c.a > 0.995) {
+        vec2 s = vec2(aspect, 1.0);
+        occ += paar(vec2(1.0, 0.0) * r * s, d);
+        occ += paar(vec2(0.0, 1.0) * r * s, d);
+        occ += paar(vec2(0.7071, 0.7071) * r * s, d);
+        occ += paar(vec2(0.7071, -0.7071) * r * s, d);
+        occ += paar(vec2(0.9239, 0.3827) * r * 0.5 * s, d);
+        occ += paar(vec2(-0.3827, 0.9239) * r * 0.5 * s, d);
+        occ += paar(vec2(0.3827, 0.9239) * r * 1.7 * s, d) * 0.6;
+        occ += paar(vec2(0.9239, -0.3827) * r * 1.7 * s, d) * 0.6;
+        occ = clamp(occ / 4.6, 0.0, 1.0);
+        occ *= 1.0 - smoothstep(70.0, 140.0, d);
+        // Leuchtendes (Lampen, Feuer, Himmel) wird nicht verdunkelt
+        occ *= 1.0 - smoothstep(0.9, 1.5, max(c.r, max(c.g, c.b)));
+      }
+      // Schattenfarbe statt Schwarz: kühl am Tag, tiefblau in der Nacht (gemalter Look)
+      vec3 tint = mix(vec3(0.42, 0.36, 0.56), vec3(0.30, 0.32, 0.62), uNight);
+      vec3 col = c.rgb * mix(vec3(1.0), tint, occ * uAO);
+      if (uDof > 0.001) {
+        float coc = clamp(abs(d - uFocus) / max(uFocus, 1.0) - 0.22, 0.0, 1.0) * uDof;
+        if (coc > 0.01) {
+          vec2 px = uTexel * coc * 11.0;
+          vec3 acc = col; float wsum = 1.0;
+          for (int i = 0; i < 12; i++) {
+            float fi = float(i);
+            float ang = fi * 2.39996, rad = sqrt((fi + 0.5) / 12.0);
+            vec2 uv = vUv + vec2(cos(ang), sin(ang)) * rad * px;
+            // Scharfes aus dem Vordergrund darf nicht in den unscharfen Hintergrund bluten
+            float ds = linD(uv);
+            float w = step(uFocus * 1.15, ds) + step(ds, uFocus * 0.7) + 0.15;
+            acc += texture2D(tDiffuse, uv).rgb * w; wsum += w;
+          }
+          col = mix(col, acc / wsum, smoothstep(0.0, 0.25, coc));
+        }
+      }
+      // 3) Lichtstrahlen: Himmelslicht aus Richtung der Sonne fällt zwischen Bäumen und Dächern durch (stark bei tiefer Sonne)
+      if (uRays > 0.001) {
+        vec2 dir = uSunUv - vUv;
+        float nah = 1.0 - smoothstep(0.0, 1.15, length(dir * vec2(aspect, 1.0)));
+        if (nah > 0.0) {
+          vec2 st = dir / 16.0 * 0.92;
+          vec2 uv = vUv; float acc = 0.0, w = 1.0;
+          for (int i = 0; i < 16; i++) {
+            uv += st;
+            float himmel = step(uFar * 0.45, linD(uv));
+            vec3 s = texture2D(tDiffuse, uv).rgb;
+            acc += himmel * min(dot(s, vec3(0.3, 0.59, 0.11)), 4.0) * w;
+            w *= 0.94;
+          }
+          col += uSunCol * (acc / 16.0) * uRays * nah * nah;
+        }
+      }
+      gl_FragColor = vec4(col, c.a);
+    }`,
+};
+class TiefePass extends ShaderPass {
+  constructor() { super(TIEFE_SHADER); }
+  setSize(w, h) { this.uniforms.uTexel.value.set(1 / w, 1 / h); }
+  render(renderer, writeBuffer, readBuffer, dt, mask) {
+    this.uniforms.tDepth.value = readBuffer.depthTexture;
+    super.render(renderer, writeBuffer, readBuffer, dt, mask);
+  }
+}
+
 // ---- Abschluss-Pass: Tone-Mapping + sRGB (wie OutputPass), danach Farbkorrektur (dieselbe Formel wie lumoGrade in den
 // Materialien, aber fürs ganze Bild inkl. Sprites/Partikel), weiche S-Kurve (gemalter Kontrast: satte Schatten, klare
 // Lichter, Mitten unverändert), weiche Vignette, Dithering.
@@ -198,7 +302,7 @@ export function createRenderer({ canvas, quality: qInfo, events }) {
       for (const p of post.composer.passes) if (p.dispose) p.dispose();
       post.composer.renderTarget1.dispose(); post.composer.renderTarget2.dispose();
     }
-    post.composer = null; post.outline = null; post.bloom = null; post.final = null; post.fxaa = null;
+    post.composer = null; post.outline = null; post.tiefe = null; post.bloom = null; post.final = null; post.fxaa = null;
     post.active = false;
     if (post.veil) post.veil.uniforms.uLumoPost.value = 0;
   }
@@ -219,6 +323,13 @@ export function createRenderer({ canvas, quality: qInfo, events }) {
     outline.uniforms.uNear.value = post.camera.near; outline.uniforms.uFar.value = post.camera.far;
     outline.enabled = q.outline > 0;
     composer.addPass(outline);
+    // Tiefe: Umgebungsverdeckung (immer mit Post) und Schärfentiefe in Szenen (rr.setDof)
+    const tiefe = new TiefePass();
+    tiefe.uniforms.uAO.value = q.ao || 0;
+    tiefe.uniforms.uNear.value = post.camera.near; tiefe.uniforms.uFar.value = post.camera.far;
+    tiefe.material.toneMapped = false;
+    tiefe.enabled = (q.ao || 0) > 0 || dof.amount > 0;
+    composer.addPass(tiefe);
     const bloom = new UnrealBloomPass(new THREE.Vector2(w * q.bloomScale, h * q.bloomScale), q.bloom, 0.45, 1.0);
     // Bloom in halber/viertel Auflösung: die Mips sind ohnehin geblurrt, das spart auf dem iPad viel Füllrate
     const bloomSetSize = bloom.setSize.bind(bloom);
@@ -240,7 +351,7 @@ export function createRenderer({ canvas, quality: qInfo, events }) {
     const fxaa = new FXAAPass();
     composer.addPass(fxaa);
     composer.setSize(size.w, size.h);
-    Object.assign(post, { composer, outline, bloom, final, fxaa, active: true });
+    Object.assign(post, { composer, outline, tiefe, bloom, final, fxaa, active: true });
     if (post.veil) post.veil.uniforms.uLumoPost.value = 1;
     return composer;
   }
@@ -321,6 +432,8 @@ export function createRenderer({ canvas, quality: qInfo, events }) {
     }
   }
 
+  const dof = { amount: 0, focus: 6, now: 0, focusNow: 6 };
+  const sunV = new THREE.Vector3(); let rayNow = 0;
   // renderer.render(scene, camera) von außen (Fotomodus, Tests) läuft durch den Post-Stack; innen (RenderPass) direkt
   const rawRender = renderer.render.bind(renderer);
   let inPost = false;
@@ -333,6 +446,9 @@ export function createRenderer({ canvas, quality: qInfo, events }) {
 
   const r = {
     renderer,
+    // Schärfentiefe für Szenen: amount 0..1, focus = Abstand der scharfen Ebene in Metern (0 = aus)
+    setDof(amount = 0, focus = 6) { dof.amount = Math.max(0, Math.min(1, amount)); if (focus > 0) dof.focus = focus; },
+    get dof() { return dof; },
     size,
     monitor,
     post,
@@ -353,6 +469,28 @@ export function createRenderer({ canvas, quality: qInfo, events }) {
       renderer.info.reset();
       if (post.active) {
         if (post.outline) { post.outline.uniforms.uNight.value = opts.night || 0; post.outline.uniforms.uNear.value = post.camera.near; post.outline.uniforms.uFar.value = post.camera.far; }
+        if (post.tiefe) {
+          const u = post.tiefe.uniforms, cam = post.camera;
+          u.uNear.value = cam.near; u.uFar.value = cam.far; u.uNight.value = opts.night || 0;
+          u.uProj.value = 0.5 / Math.tan((cam.fov * Math.PI) / 360);
+          // Schärfentiefe weich ein- und ausblenden
+          dof.now += (dof.amount - dof.now) * 0.12; dof.focusNow += (dof.focus - dof.focusNow) * 0.15;
+          u.uDof.value = dof.now < 0.01 ? 0 : dof.now * (q.dof || 0); u.uFocus.value = dof.focusNow;
+          // Lichtstrahlen: Sonne im Bild? Je tiefer sie steht, desto stärker
+          let rays = 0;
+          if (opts.sun && (q.rays || 0) > 0) {
+            sunV.copy(opts.sun).multiplyScalar(900).add(cam.position).project(cam);
+            if (sunV.z < 1 && Math.abs(sunV.x) < 1.5 && Math.abs(sunV.y) < 1.5) {
+              u.uSunUv.value.set(sunV.x * 0.5 + 0.5, sunV.y * 0.5 + 0.5);
+              const tief = 1 - Math.min(1, Math.max(0, opts.sun.y) * 1.5);
+              rays = q.rays * (0.3 + 0.7 * tief) * (1 - (opts.night || 0)) * Math.min(1, Math.max(0, opts.sun.y * 12 + 0.6));
+              if (opts.sunColor) u.uSunCol.value.set(opts.sunColor.r, opts.sunColor.g, opts.sunColor.b);
+            }
+          }
+          rayNow += (rays - rayNow) * 0.08;
+          u.uRays.value = rayNow < 0.004 ? 0 : rayNow;
+          post.tiefe.enabled = (q.ao || 0) > 0 || u.uDof.value > 0 || u.uRays.value > 0;
+        }
         if (post.final) post.final.uniforms.uTime.value = opts.time || 0;
         if (post.final) post.final.uniforms.toneMappingExposure.value = renderer.toneMappingExposure;
         inPost = true;

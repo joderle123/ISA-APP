@@ -13,7 +13,7 @@ import { KARTEN } from './daten/karten.js';
 
 export const KRAFT_JE_TAG = 3;     // so viel schafft man an einem Tag (Ereignisse und größere Aktionen kosten 1)
 export const TAGE_JE_JAHRESZEIT = 3;
-export const UHR_NACH_KRAFT = [21.2, 17.3, 13.5, 9.5];   // Tageszeit: je weniger Kraft übrig, desto später
+export const UHR_NACH_KRAFT = [21.3, 18.1, 16.3, 7.3];   // Tageszeit: je weniger Kraft übrig, desto später (Morgen- und Abendlicht)
 export const JAHRESZEITEN = ['herbst', 'winter', 'fruehling', 'sommer'];
 export const JAHRESZEIT_NAME = { herbst: 'Herbst', winter: 'Winter', fruehling: 'Frühling', sommer: 'Sommer' };
 export const LEUTE = ['ilda', 'jolie', 'tun', 'mika', 'pit', 'fraenz', 'noor'];

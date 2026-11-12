@@ -98,7 +98,7 @@ export async function createGame({ canvas, root, hudRoot, onProgress = () => {} 
 
   const game = {
     THREE,
-    scene, camera, renderer, events, input, audio, particles, colliders, settings,
+    scene, camera, renderer, gfx: rr, events, input, audio, particles, colliders, settings,
     world: { island, terrain, water, sky, veil, veilFx, vegetation, landmarks, life, lightPool },
     player, cameraRig,
     ui: null, interactions: null, loop: null,
@@ -182,7 +182,7 @@ export async function createGame({ canvas, root, hudRoot, onProgress = () => {} 
 
   // ---- Schleife (Post-Stack auf mittel/hoch, direkt auf niedrig – engine/renderer.js) ----
   rr.attachPost({ scene, camera, veil });
-  const loop = createLoop({ render: () => rr.render({ night: sky.night, time: loop.time }) });
+  const loop = createLoop({ render: () => rr.render({ night: sky.night, time: loop.time, sun: sky.sunDir, sunColor: sky.colors && sky.colors.light }) });
   game.loop = loop;
   let zoneT = 0, ambT = 0;
   loop.add(() => input.beginFrame(), { order: -100, always: true });

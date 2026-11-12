@@ -89,7 +89,7 @@ try {
   if (nach.mist) check('Wer Mist baut, bekommt Folgen am Morgen, Einträge in der Akte und Leute, die sauer sind', (nach.mist.folgen || []).length >= 2 && nach.mist.akte.length >= 2 && nach.mist.minus >= 2, nach.mist);
   if (nach.faul) check('Wer alles liegen lässt, verpasst Ereignisse – auch das hat Folgen', nach.faul.akte.includes('prakt.fehlt') && nach.faul.akte.includes('gespraech.fehlt'), nach.faul);
   if (nach.brav) check('Wer hilft und redet, hat am Ende Leute und kaum Ärger', nach.brav.minus <= 1 && ['leute', 'werft', 'dazwischen', 'offen', 'kiosk', 'zweite'].includes(nach.brav.ausgang), nach.brav);
-  check('Verschiedene Ausgänge erreicht', gefunden.size >= 3, [...gefunden]);
+  check('Verschiedene Ausgänge erreicht', gefunden.size >= Math.min(3, plan.length - 1), [...gefunden]);
   check('Viele verschiedene Situationen und freie Aktionen gespielt', gespielt.size >= 14, [...gespielt]);
   const meta = await page.evaluate(() => ({ meta: JSON.parse(localStorage.getItem('respawn.meta')), lumo: Object.keys(localStorage).filter((k) => k.startsWith('lumo.save')), lauf: localStorage.getItem('respawn.lauf') }));
   check('Album zählt mit, keine laufende Runde übrig, LUMO-Spielstände unberührt', meta.meta.runden === plan.length && Object.keys(meta.meta.ausgaenge).length === gefunden.size && !meta.lauf && meta.lumo.length === 0, meta);

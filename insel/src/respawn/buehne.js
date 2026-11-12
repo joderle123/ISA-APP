@@ -14,7 +14,16 @@ export function createBuehne({ game, O }) {
   const test = game.params && game.params.has('test');
   let szene = null;   // { sit, R, cast: Map(id → npc), fremd: Set, mitte, versteckt: [npc] }
   const wurzel = document.getElementById('lumo-root');
-  const vPos = new THREE.Vector3(), vLook = new THREE.Vector3();
+  const vPos = new THREE.Vector3(), vLook = new THREE.Vector3(), vZiel = new THREE.Vector3();
+  // Kino-Unschärfe: scharf ist, wer spricht (oder die Gruppe); der Rest des Bildes wird weich
+  let fokus = null;   // Object3D | Vector3 | null
+  game.addUpdate(() => {
+    const g = game.gfx;
+    if (!g || !g.setDof) return;
+    if (!szene || !fokus) { g.setDof(0); return; }
+    if (fokus.isObject3D) fokus.getWorldPosition(vZiel).y += 1.4; else vZiel.copy(fokus);
+    g.setDof(szene.nah ? 1 : 0.6, Math.max(1.5, game.camera.position.distanceTo(vZiel)));
+  }, { order: 94, always: true });
   // Bild der Szene: Kamera schräg hinter dir, du im linken Drittel, die anderen im Blick
   function totale() {
     if (!szene || !szene.mitte || !cameraRig.setShot) return;
@@ -24,6 +33,7 @@ export function createBuehne({ game, O }) {
     vPos.set(px - fx * 2.9 + rx * 3.0, y + 2.15, pz - fz * 2.9 + rz * 3.0);
     vLook.set(cx + fx * 0.6, y + 1.35, cz + fz * 0.6);
     cameraRig.setShot(vPos, vLook);
+    fokus = vLook.clone(); szene.nah = false;
   }
 
   // Sprecher anmelden (Figuren ohne Eintrag in der Insel, Stimmen am Telefon)
@@ -85,7 +95,7 @@ export function createBuehne({ game, O }) {
     if (cameraRig.behindPlayer) cameraRig.behindPlayer();
     wurzel.classList.remove('rs-szene');
     ui.lock.release('respawn');
-    szene = null;
+    szene = null; fokus = null;
   }
 
   function mimik(id, f, opt) {
@@ -96,7 +106,7 @@ export function createBuehne({ game, O }) {
     if (opt.emote && f.humanoid && f.humanoid.playEmote) { try { f.humanoid.playEmote(opt.emote, {}); } catch (e) { /* unbekannte Geste */ } }
   }
   function kamera(f) {
-    if (f && f.group && cameraRig.setMode) cameraRig.setMode('talk', { target: f.group, side: 1 });
+    if (f && f.group && cameraRig.setMode) { cameraRig.setMode('talk', { target: f.group, side: 1 }); fokus = f.group; if (szene) szene.nah = true; }
   }
 
   async function wahl(liste, opt = {}) {

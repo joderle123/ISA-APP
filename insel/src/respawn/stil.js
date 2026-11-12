@@ -4,9 +4,11 @@ export const STIL = `
 .mode-respawn .hud-btn-power,.mode-respawn .glimm-badge,.mode-respawn .quest-objective,.mode-respawn .objective,.mode-respawn [data-objective]{display:none !important;}
 .mode-respawn.rs-szene .joystick,.mode-respawn.rs-szene .hud-buttons,.mode-respawn.rs-szene .compass{opacity:0 !important;pointer-events:none !important;}
 .mode-respawn .choices.rs-wahl{bottom:calc(22px + var(--safe-b,0px));width:min(720px,calc(100vw - 32px));}
-.rs-leiste{position:absolute;left:50%;top:max(12px,env(safe-area-inset-top));transform:translateX(-50%);display:flex;align-items:center;gap:10px;padding:7px 8px 7px 14px;
+.rs-leiste{position:absolute;left:50%;top:max(12px,env(safe-area-inset-top));transform:translateX(-50%);transition:left .3s,transform .3s;display:flex;align-items:center;gap:10px;padding:7px 8px 7px 14px;
   background:rgba(16,14,34,.78);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.14);border-radius:999px;color:#fff;font-size:15px;font-weight:700;z-index:30;white-space:nowrap;}
 .rs-leiste.is-hidden{display:none;}
+.rs-szene .rs-leiste{left:max(14px,env(safe-area-inset-left));transform:none;}
+.rs-szene .rs-jz,.rs-szene .rs-kraft{display:none;}
 .rs-jz{opacity:.85;font-weight:600;}
 .rs-druck{display:flex;align-items:center;gap:8px;}
 .rs-druck b{font-size:13px;letter-spacing:.06em;text-transform:uppercase;opacity:.8;}

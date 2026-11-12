@@ -40,8 +40,39 @@ export default {
     // Aus LUMO, hier fehl am Platz: Glimm auf der Schulter, die Figuren der Leuchtturm-Geschichte, der Grauschleier
     const ohneGlimm = () => { try { player.humanoid.group.traverse((o) => { if (o.name === 'glimm') o.visible = false; }); if (game.glimm && game.glimm.mesh) game.glimm.mesh.visible = false; } catch (e) { /* egal */ } };
     ohneGlimm(); events.on('avatar:change', () => setTimeout(ohneGlimm, 50)); events.on('game:start', ohneGlimm);
+    // Kamera näher und tiefer als in LUMO: man ist bei der Figur, nicht über dem Dorf
+    try { const rig = game.cameraRig; rig.targetDist = 5.6; rig.dist = 5.6; rig.pitch = 0.17; rig.baseFov = 46; } catch (e) { /* egal */ }
     for (const id of ['grisel', 'jhemp']) { try { npcs.remove(id); } catch (e) { /* nicht da */ } }
     const bunt = () => { const veil = game.world && game.world.veil; if (veil && veil.setZone) for (const Z of game.world.island.ZONES) veil.setZone(Z.id, 0); };
+
+    // ---------- Jahreszeiten: Farbstimmung und Wetter (Laub, Schnee, Blüten, Glühwürmchen) ----------
+    const WETTER = {
+      herbst: { palette: 'herbst', sturm: 0, teile: { rate: 9, color: 0xe8792b, jitter: 0.5, size: 0.26, life: 5.5, gravity: -0.55, drag: 0.6, hoch: 7, wind: 1.3 } },
+      winter: { palette: 'winter', sturm: 0.22, teile: { rate: 46, color: 0xffffff, jitter: 0.05, size: 0.13, life: 6.5, gravity: -0.28, drag: 0.9, hoch: 8, wind: 0.6 } },
+      fruehling: { palette: 'fruehling', sturm: 0, teile: { rate: 6, color: 0xffb7d5, jitter: 0.25, size: 0.2, life: 6, gravity: -0.35, drag: 0.7, hoch: 6, wind: 0.9 } },
+      sommer: { palette: 'sommer', sturm: 0, teile: null },
+    };
+    let wetterT = 0;
+    function wetter() {
+      const W = WETTER[R ? jahreszeit(R) : 'sommer'];
+      const S = game.plugin('session');
+      if (S && S.seasons && S.seasons.overrideId !== W.palette) S.seasons.override(W.palette);
+      if (game.world.sky.setStorm && !B.aktiv) game.world.sky.setStorm(W.sturm);
+      return W;
+    }
+    game.addUpdate((dt) => {
+      if (!R || !game.particles || game.paused) return;
+      const W = wetter(), p = player.position, nacht = game.world.sky.night || 0;
+      const T = W.teile || (nacht > 0.5 ? { rate: 5, color: 0xfff29a, jitter: 0.1, size: 0.16, life: 4, gravity: 0.05, drag: 1.2, hoch: 1.6, wind: 0.2, additive: true } : null);
+      if (!T) return;
+      wetterT += dt * T.rate;
+      while (wetterT >= 1) {
+        wetterT -= 1;
+        const a = Math.random() * Math.PI * 2, r = 2 + Math.random() * 13;
+        game.particles.emit({ x: p.x + Math.cos(a) * r, y: p.y + T.hoch * (0.5 + Math.random() * 0.6), z: p.z + Math.sin(a) * r, count: 1, vx: T.wind * (0.6 + Math.random() * 0.8), vz: T.wind * 0.3 * (Math.random() - 0.3),
+          color: T.color, colorJitter: T.jitter, size: T.size, life: T.life, gravity: T.gravity, drag: T.drag, grow: 0, alpha: 0.9, additive: !!T.additive });
+      }
+    }, { order: 60 });
 
     // ---------- Marken in der Welt (Ereignisse des Tages, Orte) ----------
     const marken = new Map();   // id → { el, x, z, y, greifen: Interaktion }
