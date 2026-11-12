@@ -12,6 +12,7 @@
 
 import type { Form, Zeichnung } from './zeichnung'
 import { figurZeichnung } from './figuren'
+import { peepGanz, peepZeichnung } from './peeps'
 import { motivZeichnung } from './motive'
 
 export const SZENEN_NAMEN = ['pausenhof', 'klassenzimmer', 'bus', 'kueche', 'kinderzimmer', 'park', 'flur', 'kantine', 'umkleide', 'chat'] as const
@@ -346,6 +347,7 @@ export interface SzenenFigur {
 function einzel(bild: string): Zeichnung {
   const [art, ...r] = bild.split(':')
   if (art === 'figur') return figurZeichnung(r[0] ?? 'mia', r[1], r[2])
+  if (art === 'peep') { const g = peepGanz(bild).split(':'); return peepZeichnung(g[1], g[2], g[3]) }
   if (art === 'motiv') return motivZeichnung(r[0] ?? '')
   return { vb: [0, 0, 10, 10], formen: [] }
 }
@@ -366,13 +368,14 @@ export function szeneMitFiguren(name: string, figuren: SzenenFigur[]): Zeichnung
   figuren.forEach((fg, i) => {
     const z = einzel(fg.bild)
     if (!z.formen.length) return
-    const istFigur = fg.bild.startsWith('figur:')
+    const istPeepBild = fg.bild.startsWith('peep:')
+    const istFigur = fg.bild.startsWith('figur:') || istPeepBild
     const x = (fg.x ?? info.figuren?.x[i] ?? 0.5) * W
     const hoehe = (fg.hoehe ?? (istFigur ? (info.figuren?.hoehe ?? 0.66) : 0.3)) * H
     const [vx, vy, vw, vh] = z.vb
     const s = hoehe / vh
     // Figuren: Füße bei y = 155 (Bodenschatten) des 160er-Rasters; Motive: Unterkante
-    const unten = istFigur ? 155 : vy + vh
+    const unten = istPeepBild ? vy + vh - 14 : istFigur ? 155 : vy + vh
     const sp = fg.spiegeln ? -1 : 1
     const tx = x - sp * (vx + vw / 2) * s
     const ty = boden + 3 * s - unten * s

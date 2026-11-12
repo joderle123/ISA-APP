@@ -9,6 +9,7 @@
 // Farben bleiben zart: in Schwarz-Weiß-Kopien soll nur Weiß bis Hellgrau entstehen, Linien und Text tragen den Kontrast.
 // ---------------------------------------------------------------------------
 
+import { PEEP_OHNE_GESTE } from '../peeps'
 import type { Blatt, Layout, Stufe } from '../typen'
 import { STUFEN_REIHE, type Farben } from '../katalog'
 import { jugendFiguren } from '../icon-motiv'
@@ -25,6 +26,9 @@ export interface Design {
   magazin: boolean
   /** Kinderfigur → Jugendfigur (nur C4–ES) */
   figuren?: Map<string, string>
+  /** gezeichnete Jugendliche und Erwachsene (Open Peeps, src/blatt/peeps.ts) statt der Jugendfiguren – C4–ES, außer das Blatt
+   *  braucht eine Geste, die es dort nicht gibt (Stopp-Hand, Melden …): dann bleiben alle Figuren des Blatts wie bisher. */
+  peeps?: boolean
   /** Skills-Kurs, Look „spiel“: Aufkleber-Stil (kräftige Umrisse, versetzter Schatten), großer Kopf, größere Schrift */
   spiel?: boolean
 }
@@ -38,6 +42,8 @@ export function alterStil(layout: Layout, stufen: Stufe[]): AlterStil {
   return erste === 'C3' || erste === 'C2' || erste === 'C1' ? 'c3' : 'c4'
 }
 
+const OHNE_GESTE = new RegExp('figur:[a-z]+:[a-z]*:(' + PEEP_OHNE_GESTE.join('|') + ')\\b')
+
 export function designVon(blatt: Blatt, layout: Layout, bausteineText: string): Design {
   const alter = alterStil(layout, blatt.stufen)
   const jung = alter === 'c1' || alter === 'c2' || alter === 'c3'
@@ -47,6 +53,7 @@ export function designVon(blatt: Blatt, layout: Layout, bausteineText: string): 
     duotone: alter === 'c3' || alter === 'c4' || alter === 'es',
     magazin: !jung,
     figuren: jung ? undefined : jugendFiguren(bausteineText + ' ' + (blatt.bild ?? '')),
+    peeps: !jung && !OHNE_GESTE.test(bausteineText + ' ' + (blatt.bild ?? '')),
     spiel: blatt.look === 'spiel' && !jung,
   }
 }

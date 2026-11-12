@@ -40,29 +40,34 @@ export interface Peep {
 }
 
 export const PEEPS: Record<string, Peep> = {
+  // Oberteile sind bewusst in der Kleiderfarbe der Person gehalten (hoodie, tee-1, button-shirt-1, striped-tee, shirt-and-coat,
+  // blazer-black-tee): Die Haltungen mit Geste (Handy, zeigen, verschränkt …) tragen dieselbe Farbe – so bleibt eine Person
+  // im Comic von Bild zu Bild erkennbar.
   // Jugendliche
   jana: { kopf: 'medium-1', haut: '#C58C66', kleid: '#8FD3C8', ober: 'hoodie', stehen: 'shirt-1', sitzen: 'crossed-legs' },
-  ben: { kopf: 'pomp', haut: '#F2D3BA', kleid: '#B9C4D6', ober: 'sweater', stehen: 'easing-1', sitzen: 'mid-1' },
-  lina: { kopf: 'hijab', haut: '#E3B890', kleid: '#B7D38F', ober: 'turtleneck', stehen: 'resting-1', sitzen: 'closed-legs-1', haar: '#D9A5B5' },
-  yusuf: { kopf: 'flat-top', haut: '#966242', kleid: '#F4B860', ober: 'thunder-t-shirt', stehen: 'crossed-arms-1', sitzen: 'one-leg-up-1' },
-  nele: { kopf: 'medium-bangs', haut: '#F2D3BA', kleid: '#F2A0A5', ober: 'striped-tee', stehen: 'resting-2', sitzen: 'wheelchair' },
-  finn: { kopf: 'short-1', haut: '#EFC9A6', kleid: '#9BC3E6', ober: 'tee-1', stehen: 'walking-1', sitzen: 'hands-back-1' },
-  chloe: { kopf: 'bun-2', haut: '#F6DDC8', kleid: '#F0CE6E', ober: 'sweater-dots', stehen: 'shirt-2', sitzen: 'closed-legs-2', brille: 'glasses-2' },
-  sami: { kopf: 'twists', haut: '#9C6A48', kleid: '#E8A0B4', ober: 'gym-shirt', stehen: 'robot-dance-1', sitzen: 'mid-2' },
-  mia: { kopf: 'long-bangs', haut: '#F2D2B6', kleid: '#F2B27A', ober: 'tee-2', stehen: 'walking-2', sitzen: 'crossed-legs' },
-  noah: { kopf: 'short-3', haut: '#DDB08A', kleid: '#9DB7E8', ober: 'striped-pocket-tee', stehen: 'easing-2', sitzen: 'one-leg-up-2' },
-  lea: { kopf: 'buns', haut: '#F6DDC8', kleid: '#A9D39A', ober: 'sporty-tee', stehen: 'pointing-finger-1', sitzen: 'hands-back-2' },
-  amira: { kopf: 'long-curly', haut: '#D6A57F', kleid: '#C3B1E8', ober: 'dress', stehen: 'shirt-3', sitzen: 'closed-legs-1' },
-  tom: { kopf: 'hat-beanie', haut: '#F0CDAD', kleid: '#E9D27A', ober: 'whatever', stehen: 'walking-3', sitzen: 'mid-1', haar: '#D9705F' },
-  lio: { kopf: 'afro', haut: '#B98561', kleid: '#8CCDB8', ober: 'gaming', stehen: 'crossed-arms-2', sitzen: 'wheelchair' },
+  ben: { kopf: 'pomp', haut: '#F2D3BA', kleid: '#B9C4D6', ober: 'button-shirt-1', stehen: 'easing-1', sitzen: 'mid-1' },
+  lina: { kopf: 'hijab', haut: '#E3B890', kleid: '#B7D38F', ober: 'shirt-and-coat', stehen: 'resting-1', sitzen: 'closed-legs-1', haar: '#D9A5B5' },
+  yusuf: { kopf: 'flat-top', haut: '#966242', kleid: '#F4B860', ober: 'tee-1', stehen: 'crossed-arms-1', sitzen: 'one-leg-up-1' },
+  nele: { kopf: 'bangs', haut: '#F2D3BA', kleid: '#F2A0A5', ober: 'striped-tee', stehen: 'resting-2', sitzen: 'wheelchair', haar: '#D9B45E' },
+  finn: { kopf: 'short-4-b', haut: '#EFC9A6', kleid: '#9BC3E6', ober: 'hoodie', stehen: 'walking-1', sitzen: 'hands-back-1', haar: '#B98A4E' },
+  chloe: { kopf: 'medium-bangs-2', haut: '#F6DDC8', kleid: '#F0CE6E', ober: 'blazer-black-tee', stehen: 'shirt-2', sitzen: 'closed-legs-2', brille: 'glasses-2', haar: '#C8653C' },
+  sami: { kopf: 'twists', haut: '#9C6A48', kleid: '#E8A0B4', ober: 'tee-1', stehen: 'robot-dance-1', sitzen: 'mid-2' },
+  mia: { kopf: 'long-bangs', haut: '#F2D2B6', kleid: '#F2B27A', ober: 'striped-tee', stehen: 'walking-2', sitzen: 'crossed-legs' },
+  noah: { kopf: 'short-3', haut: '#DDB08A', kleid: '#9DB7E8', ober: 'button-shirt-1', stehen: 'easing-2', sitzen: 'one-leg-up-2' },
+  lea: { kopf: 'buns', haut: '#F6DDC8', kleid: '#A9D39A', ober: 'hoodie', stehen: 'pointing-finger-1', sitzen: 'hands-back-2' },
+  amira: { kopf: 'long-curly', haut: '#D6A57F', kleid: '#C3B1E8', ober: 'shirt-and-coat', stehen: 'shirt-3', sitzen: 'closed-legs-1' },
+  tom: { kopf: 'hat-beanie', haut: '#F0CDAD', kleid: '#E9D27A', ober: 'tee-1', stehen: 'walking-3', sitzen: 'mid-1', haar: '#D9705F' },
+  lio: { kopf: 'afro', haut: '#B98561', kleid: '#8CCDB8', ober: 'striped-tee', stehen: 'crossed-arms-2', sitzen: 'wheelchair' },
   // Erwachsene
   lehrerin: { kopf: 'bun', haut: '#EFCFB3', kleid: '#E3A9A9', ober: 'button-shirt-1', stehen: 'blazer-1', sitzen: 'closed-legs-2', brille: 'glasses' },
-  lehrer: { kopf: 'no-hair-1', haut: '#8C5A3E', kleid: '#A9C0DA', ober: 'polo-and-sweater', stehen: 'shirt-4', sitzen: 'mid-2', bart: 'full-2' },
+  lehrer: { kopf: 'no-hair-1', haut: '#8C5A3E', kleid: '#A9C0DA', ober: 'blazer-black-tee', stehen: 'shirt-4', sitzen: 'mid-2', bart: 'full-2' },
   mutter: { kopf: 'medium-straight', haut: '#EBC4A2', kleid: '#A9CFA6', ober: 'shirt-and-coat', stehen: 'blazer-2', sitzen: 'crossed-legs' },
-  vater: { kopf: 'short-2', haut: '#D2A07A', kleid: '#A9C4E6', ober: 'button-shirt-2', stehen: 'blazer-3', sitzen: 'one-leg-up-1', bart: 'full' },
-  oma: { kopf: 'gray-bun', haut: '#F1D3B8', kleid: '#D9C2E8', ober: 'sweater', stehen: 'polka-dots', sitzen: 'closed-legs-1', haar: '#D9DCE3', brille: 'glasses-3' },
-  opa: { kopf: 'gray-short', haut: '#E7BE9A', kleid: '#C9D4B0', ober: 'polo-and-sweater', stehen: 'resting-1', sitzen: 'mid-1', haar: '#D9DCE3', bart: 'moustache-3' },
-  aerztin: { kopf: 'doctor-nurse-2', haut: '#C58C66', kleid: '#A8DAD0', ober: 'jacket', stehen: 'doctor-nurse-02', sitzen: 'closed-legs-2', haar: '#A8DAD0' },
+  vater: { kopf: 'short-2', haut: '#D2A07A', kleid: '#A9C4E6', ober: 'button-shirt-1', stehen: 'blazer-3', sitzen: 'one-leg-up-1', bart: 'full' },
+  oma: { kopf: 'gray-bun', haut: '#F1D3B8', kleid: '#D9C2E8', ober: 'button-shirt-1', stehen: 'polka-dots', sitzen: 'closed-legs-1', haar: '#D9DCE3', brille: 'glasses-3' },
+  opa: { kopf: 'gray-short', haut: '#E7BE9A', kleid: '#C9D4B0', ober: 'shirt-and-coat', stehen: 'resting-1', sitzen: 'mid-1', haar: '#D9DCE3', bart: 'moustache-3' },
+  aerztin: { kopf: 'bun-2', haut: '#C58C66', kleid: '#A8DAD0', ober: 'button-shirt-2', stehen: 'doctor-nurse-02', sitzen: 'closed-legs-2' },
+  verkaeuferin: { kopf: 'medium-bangs', haut: '#F1D3B8', kleid: '#A7D3A9', ober: 'striped-tee', stehen: 'shirt-2', sitzen: 'closed-legs-1' },
+  arzthelferin: { kopf: 'bun-b', haut: '#E7BE9A', kleid: '#A8DAD0', ober: 'button-shirt-2', stehen: 'doctor-nurse-01', sitzen: 'closed-legs-2' },
   chef: { kopf: 'short-5', haut: '#F0CCAE', kleid: '#DDE6F0', ober: 'blazer-black-tee', stehen: 'blazer-4', sitzen: 'mid-2', brille: 'glasses-4' },
 }
 export const PEEP_NAMEN = Object.keys(PEEPS)
@@ -92,8 +97,9 @@ export const PEEP_GESICHT: Record<Gefuehl, string> = {
 export const PEEP_HALTUNGEN: Record<string, { art: Art; teil?: string }> = {
   brust: { art: 'brust' },
   handy: { art: 'brust', teil: 'koerper/device' },
-  zeigen: { art: 'brust', teil: 'koerper/pointing-up' },
-  verschraenkt: { art: 'brust', teil: 'koerper/tee-arms-crossed' },
+  zeigen: { art: 'brust', teil: 'koerper/jacket-polka-dots' },
+  'zeigen-hoch': { art: 'brust', teil: 'koerper/pointing-up' },
+  verschraenkt: { art: 'brust', teil: 'koerper/sweater' },
   erklaeren: { art: 'brust', teil: 'koerper/explaining' },
   zocken: { art: 'brust', teil: 'koerper/gaming' },
   laptop: { art: 'brust', teil: 'koerper/macbook' },
@@ -122,6 +128,30 @@ export const PEEP_OBERTEILE = namenVon('koerper')
 function faerbe(formen: Form[], p: Peep): Form[] {
   const neu = (w: string | undefined) => (w === 'haut' ? p.haut : w === 'kleid' ? p.kleid : w === 'haar' ? (p.haar ?? '#D9DCE3') : w)
   return formen.map((f) => (f.t === 'g' ? { ...f, formen: faerbe(f.formen, p) } : { ...f, f: neu(f.f), s: neu(f.s) }) as Form)
+}
+
+/** Haltungen der alten Figuren (figuren.ts), die eine feste Geste zeigen und bei den Peeps fehlen. Blätter mit solchen
+ *  Figuren behalten die alten Figuren – sonst ginge der Inhalt verloren (Stopp-Hand, Melden …). */
+export const PEEP_OHNE_GESTE = ['stopp', 'melden', 'haende-gesicht', 'geben', 'abwenden']
+const AUS_POSE: Record<string, string> = { stehen: 'brust', winken: 'brust', jubeln: 'brust', nachdenken: 'brust', zeigen: 'zeigen', verschraenkt: 'verschraenkt', handy: 'handy', sitzen: 'sitzen', gehen: 'gehen' }
+
+/** 'figur:ben:traurig:handy' → 'peep:ben:traurig:handy'. Gibt den Verweis unverändert zurück, wenn es die Person oder die
+ *  Haltung bei den Peeps nicht gibt. */
+export function peepAusFigur(id: string): string {
+  const [art, wer, gefuehl, pose] = id.split(':')
+  if (art !== 'figur' || !wer || !istPeep(wer)) return id
+  const h = pose ? AUS_POSE[pose] : 'brust'
+  if (!h) return id
+  return ['peep', wer, gefuehl || 'neutral', h].join(':')
+}
+
+/** Für Szenen: dieselbe Person als ganze Figur (stehend, gehend oder sitzend). */
+export function peepGanz(id: string): string {
+  const [art, wer, gefuehl, h] = id.split(':')
+  if (art !== 'peep') return id
+  const art2 = PEEP_HALTUNGEN[h ?? 'brust']?.art ?? 'brust'
+  if (art2 !== 'brust') return id
+  return ['peep', wer, gefuehl || 'neutral', h === 'zeigen' ? 'stehen-zeigen' : h === 'verschraenkt' ? 'stehen-verschraenkt' : 'stehen'].join(':')
 }
 
 export function istPeep(wer: string): boolean {

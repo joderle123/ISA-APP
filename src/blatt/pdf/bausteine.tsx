@@ -7,6 +7,7 @@
 import { View, Text, Svg, Path, Circle, Line, Rect, Polygon, Defs, LinearGradient, Stop, G } from '@react-pdf/renderer'
 import type { ReactNode } from 'react'
 import type { Baustein, BildId, ComicFeld, Farbwort, Gefuehl, Rechnung, Sprache, Stufentext, Symbol } from '../typen'
+import { peepAusFigur } from '../peeps'
 import { bildZeichnung, iconZeichnung, NEUTRAL, type Form, type Palette, type Zeichnung } from '../zeichnung'
 import { gefuehlWort, gesichtZeichnung } from '../gesichter'
 import { motivZeichnung, VULKAN, HAND, fingerSpitze, EISBERG } from '../motive'
@@ -149,8 +150,10 @@ export function bildAuf(c: Ctx, id: BildId): BildId {
   if (d.figuren && id.startsWith('figur:')) {
     const [, name, ...rest] = id.split(':')
     const neu = d.figuren.get(name)
-    if (neu) return ['figur', neu, ...rest].join(':')
+    const jugend = neu ? ['figur', neu, ...rest].join(':') : id
+    return d.peeps ? peepAusFigur(jugend) : jugend
   }
+  if (d.peeps && id.startsWith('figur:')) return peepAusFigur(id)
   return id
 }
 
@@ -421,7 +424,8 @@ function Geschichte({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'geschichte'
   const klein = c.m.layout === 'jugend' ? 62 : 78
   const eff = b.bild ? bildAuf(c, b.bild) : ''
   const szene = b.szene && c.design && istSzene(b.szene) ? b.szene : undefined
-  const figur = !!c.design && eff.startsWith('figur:') && !szene
+  const peep = eff.startsWith('peep:')
+  const figur = !!c.design && (eff.startsWith('figur:') || peep) && !szene
   let hFig = klein * 1.5
   const breiteVon = (h: number) => (szene ? h * 1.25 : figur ? h * 0.72 : klein)
   if (figur || szene) {
@@ -439,14 +443,21 @@ function Geschichte({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'geschichte'
     <View wrap={false} style={{ flexDirection: 'row', backgroundColor: c.design ? c.p.zart : NEUTRAL.flaeche, borderRadius: 10, padding: 12 }}>
       {szene ? (
         <View style={rahmen}>
-          <SzeneFlaeche c={c} z={szeneMitFiguren(szene, eff.startsWith('figur:') ? [{ bild: eff, x: 0.5, hoehe: 0.74 }] : [])} b={bildB - 2} h={hFig - 4} />
+          <SzeneFlaeche c={c} z={szeneMitFiguren(szene, eff.startsWith('figur:') || peep ? [{ bild: eff, x: 0.5, hoehe: 0.74 }] : [])} b={bildB - 2} h={hFig - 4} />
         </View>
       ) : b.bild ? (
         figur ? (
           <View style={rahmen}>
-            <View style={{ position: 'absolute', top: hFig * 0.04, left: 0, right: 0, alignItems: 'center' }}>
-              <Bild c={c} id={eff} hoehe={hFig * 1.3} />
-            </View>
+            {peep ? (
+              // Peeps sind schon ein Brustbild: unten bündig im Rahmen
+              <View style={{ position: 'absolute', bottom: -2, left: 0, right: 0, alignItems: 'center' }}>
+                <Bild c={c} id={eff} hoehe={hFig * 0.94} />
+              </View>
+            ) : (
+              <View style={{ position: 'absolute', top: hFig * 0.04, left: 0, right: 0, alignItems: 'center' }}>
+                <Bild c={c} id={eff} hoehe={hFig * 1.3} />
+              </View>
+            )}
           </View>
         ) : (
           <View style={{ width: klein, marginRight: 12, alignItems: 'center', justifyContent: 'flex-end' }}>
