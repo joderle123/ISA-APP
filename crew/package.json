@@ -1,0 +1,5 @@
+{
+  "private": true,
+  "type": "commonjs",
+  "description": "CREW – Spiele für die Crew (Bau: node build.js, Tests: node tests/*.mjs)"
+}

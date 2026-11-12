@@ -28,11 +28,13 @@ export async function launch(viewport = VIEWPORTS.ipadLandscape) {
   page.on('pageerror', (e) => errors.push('pageerror: ' + e.message));
   page.on('console', (m) => { if (m.type() === 'error') errors.push('console: ' + m.text()); });
   // Animationen & Wartezeiten stark verkürzen, damit Tests schnell laufen
-  await page.addInitScript(() => {
+  // Die bisherigen Tests prüfen den Unterrichts-Modus (Erklärkarte, Stufen, Nachbesprechung); CREW_SPIELMODUS=1 testet den neuen Standard
+  await page.addInitScript((unterricht) => {
     const _st = window.setTimeout;
     window.__fast = true;
+    window.__crewUnterricht = unterricht;
     window.setTimeout = (fn, ms, ...a) => _st(fn, Math.min(ms || 0, 30), ...a);
-  });
+  }, process.env.CREW_SPIELMODUS !== '1');
   await page.goto('file://' + DIST);
   return { browser, context, page, errors };
 }

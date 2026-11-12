@@ -88,6 +88,7 @@
       sound: true,
       speech: true,
       sensitive: false,   // heikle Karten zeigen?
+      unterricht: false,  // Unterrichts-Modus: Erklärkarte, Stufen und Nachbesprechung in jedem Spiel (Standard: aus = einfach spielen)
       disabled: [],       // ausgeschaltete Missionen
     },
     solo: {},             // Bestwerte pro Solo-Spiel (ohne Namen)

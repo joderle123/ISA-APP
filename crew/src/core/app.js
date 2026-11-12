@@ -1103,7 +1103,10 @@
   function teacherContent() {
     const pools = Object.entries(CREW.content).filter(([, v]) => Array.isArray(v));
     const sens = ui.btn(S.settings.sensitive ? 'Heikle Karten: AN' : 'Heikle Karten: AUS', () => { S.settings.sensitive = !S.settings.sensitive; CREW.save(); renderTeacher('inhalte'); }, { variant: S.settings.sensitive ? 'yellow' : 'ghost' });
+    const unt = ui.btn(S.settings.unterricht ? 'Unterrichts-Modus: AN' : 'Unterrichts-Modus: AUS', () => { S.settings.unterricht = !S.settings.unterricht; CREW.save(); renderTeacher('inhalte'); }, { variant: S.settings.unterricht ? 'yellow' : 'ghost', id: 'btn-unterricht' });
     return h('div', { class: 'stack' },
+      h('div', { class: 'card stack' },
+        h('div', { class: 'switch' }, h('div', null, h('h3', null, 'Unterrichts-Modus'), h('p', { class: 'muted small' }, 'Aus (Standard): einfach spielen – ein Satz Regel, los, am Ende „Nochmal“. An: jedes Spiel zeigt die Erklärkarte, die Stufen und die Nachbesprechung mit drei Fragen.')), unt)),
       h('div', { class: 'card stack' },
         h('div', { class: 'switch' }, h('div', null, h('h3', null, 'Heikle Karten'), h('p', { class: 'muted small' }, 'Karten zu Familie, Geld, Körper, Verlust und ähnlichen Themen sind markiert und standardmäßig aus. Nur einschalten, wenn die Gruppe stabil ist.')), sens)),
       h('div', { class: 'card stack' }, h('h3', null, 'Kartenstapel'),

@@ -339,7 +339,20 @@
     const code = o.code || CREW.seed.getCode();
     const seat = o.platz || CREW.seed.getSeat();
     const n = o.n || CREW.seed.crewSize();
+    /* Spiel-Modus (Standard seit 12.11.2026, Rückmeldung aus der Praxis: „erzwungen, cringe-pädagogisch“): ein Satz Regel und los,
+       keine Erklärkarte, keine Stufen-Bildschirme, keine Vergleichskarte, keine Nachbesprechung, am Ende „Nochmal“.
+       Unterrichts-Modus (Lehrkraft → Einstellungen, oder window.__crewUnterricht in Tests): alles wie bisher. */
+    ctx.unterricht = !!((CREW.state && CREW.state.settings && CREW.state.settings.unterricht) || window.__crewUnterricht);
+    // Jede neue Runde („Nochmal“) würfelt neu – auf allen iPads gleich, wenn alle gleich oft „Nochmal“ drücken
+    let runde = 0;
     const rng = CREW.seed.rng(code, game.id, o.salt || '');
+    ctx.neueRunde = () => {
+      runde += 1;
+      ctx.rng = CREW.seed.rng(ctx.code, game.id, (o.salt || '') + '#' + runde);
+      ctx.rpick = (arr) => CREW.seed.pick(arr, ctx.rng);
+      ctx.rshuffle = (arr) => CREW.seed.shuffle(arr, ctx.rng);
+      return runde;
+    };
     const autoRng = CREW.seed.rng('auto', game.id, o.autoSeed || Date.now());
     ctx.game = game;
     ctx.opts = o;
@@ -410,7 +423,7 @@
     /* Timer-Ring. Kein Timer unter 20 s außer Bewegung ({movement:true}). Auto: läuft sofort ab. */
     ctx.timer = (seconds, o2) => {
       const oo = o2 || {};
-      let sec = Math.max(oo.movement ? 5 : 20, Math.round(seconds || 20));
+      let sec = Math.max(oo.movement ? 5 : (ctx.unterricht ? 20 : 8), Math.round(seconds || 20));
       if (auto) sec = 1;
       const t = ui().timer(sec, { autostart: oo.autostart !== false, onDone: oo.onDone });
       ctx.onCleanup(() => t.stop());
@@ -449,11 +462,11 @@
           h('h1', { class: 'outline-text' }, g.name),
           h('div', { class: 'row' }, h('span', { class: 'pill accent' }, fmt.name || TEMPLATE_NAME[g.template]), h('span', { class: 'pill' }, 'ca. ' + g.minutes + ' Min'), g.top ? h('span', { class: 'pill' }, CREW.icon('star', 16), 'Top') : null)),
         // Erst: Worum geht's und wozu ist das gut? Dann die Regel. (Breit: nebeneinander, iPad hoch: untereinander)
-        h('div', { class: 'intro-grid' + (ctx.didaktik ? '' : ' one') },
-          warumCard(ctx.didaktik),
+        h('div', { class: 'intro-grid' + (ctx.didaktik && ctx.unterricht ? '' : ' one') },
+          ctx.unterricht ? warumCard(ctx.didaktik) : null,
           say(oo.rule || g.tagline || 'Los geht’s.', { eyebrow: 'So geht’s', cls: 'rule-card' })),
-        oo.levels ? h('div', { class: 'row', style: { gap: '10px' } }, h('span', { class: 'muted small' }, 'So steigt es an:'), stufenLeiste(0, oo.levels === true ? null : oo.levels)) : null,
-        oo.steps ? U().steps(oo.steps, { row: oo.steps.length <= 3 }) : null,
+        oo.levels && ctx.unterricht ? h('div', { class: 'row', style: { gap: '10px' } }, h('span', { class: 'muted small' }, 'So steigt es an:'), stufenLeiste(0, oo.levels === true ? null : oo.levels)) : null,
+        oo.steps && (ctx.unterricht || oo.steps.length <= 3) ? U().steps(oo.steps, { row: oo.steps.length <= 3 }) : null,
         h('div', { class: 'row' }, (oo.safety || g.safety || []).map((k) => safetyLine(k)), g.help ? safetyLine('freiwillig') : null),
       ], { eyebrow: 'Start', step: 0 });
       const opts = [];
@@ -480,6 +493,15 @@
       const oo = o || {};
       const n = oo.n || 1;
       const names = oo.names || LEVEL_NAMES;
+      if (!ctx.unterricht) {
+        // Spiel-Modus: nur ein kurzer Stempel „Runde 2“, kein Text, kein Knopf
+        if (n <= 1) return true;
+        const st = ctx.scr([h('div', { class: 'level-screen' }, h('h1', { class: 'outline-text runde-stempel' }, 'Runde ' + n))], { eyebrow: 'Weiter', center: true });
+        void st;
+        CREW.sound.play('unlock');
+        await ctx.hold(900);
+        return true;
+      }
       const wrap = ctx.scr([
         h('div', { class: 'level-screen' },
           stufenLeiste(n, names),
@@ -493,6 +515,7 @@
     /* ----- Nachbesprechung (für alle Spiele gleich): Das habt ihr geübt + 3 Fragen, Passen ist okay ----- */
     T.nachbesprechung = async (o) => {
       const oo = o || {};
+      if (!ctx.unterricht) return null;   // Spiel-Modus: nach dem Spiel ist Schluss
       const e = oo.entry || ctx.didaktik;
       if (!e) return null;
       const solo = ctx.game.template === 'T0' || !!e.solo;
@@ -576,6 +599,7 @@
     // T.vergleich({ title, items: [{ label, icon?, text?, el? }], questions: [q1, q2], note })
     T.vergleich = async (o) => {
       const oo = o || {};
+      if (!ctx.unterricht) return 'done';   // Spiel-Modus: keine „Redet darüber“-Karte
       const c = ctx.pair.colour;
       const qs = oo.questions && oo.questions.length ? oo.questions : ['Wie hast du dich entschieden?', 'Warum?'];
       const items = (oo.items || []).map((it) => h('div', { class: 'vk-item' },
@@ -765,16 +789,19 @@
       const st = oo.noSticker ? null : award(g.id);
       const wrap = ctx.scr([
         h('div', { class: 'stack', style: { alignItems: 'center', textAlign: 'center' } },
-          h('h2', null, oo.summary || 'Stark gespielt, Crew!'),
+          h('h2', null, ctx.unterricht ? (oo.summary || 'Stark gespielt, Crew!') : 'Runde vorbei!'),
           (oo.stats || []).length ? h('div', { class: 'row center' }, oo.stats.map(([n, l]) => h('span', { class: 'pill' }, h('b', null, String(n)), ' ' + l))) : null,
-          oo.noSticker ? null : skillRow(ctx.didaktik),
+          oo.noSticker || !ctx.unterricht ? null : skillRow(ctx.didaktik),
           st ? h('div', { class: 'stack pop', style: { alignItems: 'center', gap: '6px' } }, stickerEl(st, { big: true }), h('span', { class: 'muted small' }, st.isNew ? 'Neuer Sticker für die Sticker-Wand im Crew-HQ!' : 'Sticker ×' + st.n + ' auf der Sticker-Wand.')) : null,
           oo.extra || null),
         g.help || oo.help ? helpCard() : null,
       ], { eyebrow: 'Fertig', center: true, noPass: true });
       if (st) { CREW.sound.play('good'); if (st.isNew && !ctx.fast) U().confetti(90); }
-      const opts = [{ label: 'Zurück zu Spiele', value: 'done', iconRight: 'home', id: 'btn-done' }];
-      if (oo.again) opts.unshift({ label: 'Nochmal', value: 'again', variant: 'ghost', icon: 'shuffle', auto: false });
+      // Spiel-Modus: „Nochmal“ ist der Hauptknopf (neue Runde, neu gewürfelt); im Unterrichts-Modus nur, wo das Spiel es anbietet
+      const opts = ctx.unterricht || oo.noSticker
+        ? [{ label: 'Zurück zu Spiele', value: 'done', iconRight: 'home', id: 'btn-done' }]
+        : [{ label: 'Zurück', value: 'done', variant: 'ghost', icon: 'home', id: 'btn-done' }, { label: 'Nochmal!', value: 'again', icon: 'shuffle', id: 'btn-nochmal', auto: false }];
+      if (oo.again && (ctx.unterricht || oo.noSticker)) opts.unshift({ label: 'Nochmal', value: 'again', variant: 'ghost', icon: 'shuffle', auto: false });
       // Auto-Modus: Endbild kurz stehen lassen (Tests machen hier ein Foto)
       const r = await ctx.ask(wrap, opts, { autoDelay: ctx.opts.autoEndWait || 40 });
       return r === 'again' ? 'again' : 'done';
@@ -808,6 +835,7 @@
         if (!nachDone && !result.noSticker && !result.noNach) { await ctx.T.nachbesprechung(result); nachDone = true; }
         const r = await ctx.T.end(result);
         if (r !== 'again') break;
+        if (ctx.neueRunde) ctx.neueRunde();
       }
       done = { id: game.id, ok: true, result };
       return result;
