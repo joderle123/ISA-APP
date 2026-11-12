@@ -10,6 +10,7 @@
 // eine freie Aktion; respawn:wahl, respawn:wirkung, respawn:stand, respawn:frei (hören).
 import { createOberflaeche } from './oberflaeche.js';
 import { createBuehne } from './buehne.js';
+import { ladeFigur, MODELLE } from './figur3d.js';
 import { SITUATIONEN, AUSGAENGE, AKTE, AKTE_LEER, ORTE, ORT_AKTIONEN, LEUTE_AKTIONEN, LEUTE_REIHE, FOLGEN, VERPASST, WICHTIG } from './daten/index.js';
 import { neuerLauf, zieheKarten, planeJahreszeit, jahreszeitWechsel, jahreszeit, ausgangFuer, akteFuer, wirke, bond, verteile, folgenAmMorgen, neuerTag,
   JAHRESZEIT_NAME, UHR_NACH_KRAFT, TAGE_JE_JAHRESZEIT } from './run.js';
@@ -327,6 +328,19 @@ export default {
       get lauf() { return R; }, get meta() { return meta; }, get frei() { return !!(R && tagEnde && !beschaeftigt && !B.aktiv); },
       get heute() { return R ? heute() : []; },
       situationen: SITUATIONEN, ausgaenge: AUSGAENGE, orte: ORTE,
+      // Probe: eine Figur mit Skelett neben die Spielfigur stellen (Grafik-Vergleich alt/neu)
+      async probeFigur(id, bewegung = 'Idle', farben = {}, text = null) {
+        if (text) MODELLE[id] = text;
+        if (!MODELLE[id]) return [];
+        const f = await ladeFigur(game, id, { farben });
+        const p = player.position, a = player.yaw || 0;
+        f.group.position.set(p.x + Math.cos(a) * 1.3, p.y, p.z - Math.sin(a) * 1.3);
+        f.group.rotation.y = a;
+        game.scene.add(f.group);
+        f.spiele(bewegung);
+        game.addUpdate((dt) => f.update(dt), { order: 31, always: true });
+        return f.namen;
+      },
       neueRunde, hauptmenue,
       // Tests: eine freie Aktion ausführen (wie ein Klick in der Welt)
       tue(o) {

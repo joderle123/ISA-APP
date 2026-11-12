@@ -30,6 +30,7 @@ const result = await build({
   legalComments: 'none',
   treeShaking: true,
   define: { 'process.env.NODE_ENV': '"production"' },
+  loader: { '.gltf': 'text' },   // Figuren (src/respawn/modelle) als Text einbetten – alles bleibt eine Datei
   logLevel: 'warning',
 });
 
