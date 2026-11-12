@@ -20,7 +20,13 @@
     "fehler-im-bild",
     "treffer",
     "seitenwechsel",
-    "jagd"
+    "jagd",
+    "kritzel-blitz",
+    "verboten",
+    "ohne-worte",
+    "tauziehen",
+    "blink-kette",
+    "zehn-sekunden"
    ]
   },
   {
@@ -377,6 +383,114 @@
    "eldib": [
     "SOZ-27",
     "UM-12"
+   ],
+   "einheiten": [],
+   "abschluss": false,
+   "top": false,
+   "aufwand": "S"
+  },
+  "kritzel-blitz": {
+   "id": "kritzel-blitz",
+   "name": "Kritzel-Blitz",
+   "thema": "party",
+   "format": "weitergeben",
+   "formatName": "Gerät weitergeben",
+   "dauer": "4–8 Min",
+   "text": "Eine Person bekommt ein geheimes Wort und zeichnet es mit dem Finger auf das iPad. Die Crew rät laut – 40 Sekunden pro Bild. Gezählt werden die erratenen Bilder.",
+   "foerdert": "Sich ohne Worte verständlich machen, zusammen raten, Fehler mit Humor nehmen (K-22, SOZ-27)",
+   "eldib": [
+    "K-22",
+    "SOZ-27"
+   ],
+   "einheiten": [],
+   "abschluss": false,
+   "top": false,
+   "aufwand": "S"
+  },
+  "verboten": {
+   "id": "verboten",
+   "name": "Verboten!",
+   "thema": "party",
+   "format": "weitergeben",
+   "formatName": "Gerät weitergeben",
+   "dauer": "4–8 Min",
+   "text": "Erklär ein Wort, ohne die drei roten Wörter zu sagen. Die Crew rät, 45 Sekunden pro Person. Jedes erratene Wort zählt für alle.",
+   "foerdert": "Umschreiben, andere Wörter finden, genau zuhören (K-25, KOG-28)",
+   "eldib": [
+    "K-25",
+    "KOG-28"
+   ],
+   "einheiten": [],
+   "abschluss": false,
+   "top": false,
+   "aufwand": "S"
+  },
+  "ohne-worte": {
+   "id": "ohne-worte",
+   "name": "Ohne Worte",
+   "thema": "party",
+   "format": "weitergeben",
+   "formatName": "Gerät weitergeben",
+   "dauer": "4–8 Min",
+   "text": "Pantomime: Zähne putzen, einen Hund baden, in eine Zitrone beißen. Wer dran ist, spielt 45 Sekunden lang Karte um Karte vor – ohne Wort und ohne Geräusch.",
+   "foerdert": "Körpersprache zeigen und lesen, sich vor anderen trauen (K-24, SOZ-22)",
+   "eldib": [
+    "K-24",
+    "SOZ-22"
+   ],
+   "einheiten": [],
+   "abschluss": false,
+   "top": false,
+   "aufwand": "S"
+  },
+  "tauziehen": {
+   "id": "tauziehen",
+   "name": "Tauziehen",
+   "thema": "party",
+   "format": "zu-zweit",
+   "formatName": "Zu zweit an einem iPad",
+   "dauer": "1–2 Min",
+   "text": "Das iPad liegt zwischen zwei Personen. Nach dem Startzeichen tippen beide so schnell sie können – jeder Tipp zieht das Tau ein Stück zur eigenen Seite. Zwei gewonnene Runden reichen.",
+   "foerdert": "Auf das Startzeichen warten, sich anstrengen, fair gewinnen und verlieren (V-16, SOZ-28)",
+   "eldib": [
+    "V-16",
+    "SOZ-28"
+   ],
+   "einheiten": [],
+   "abschluss": false,
+   "top": false,
+   "aufwand": "S"
+  },
+  "blink-kette": {
+   "id": "blink-kette",
+   "name": "Blink-Kette",
+   "thema": "party",
+   "format": "bewegung",
+   "formatName": "Bewegung im Raum",
+   "dauer": "3–6 Min",
+   "text": "Vier Farbfelder blinken in einer Reihenfolge. Die Crew merkt sie sich zusammen, eine Person tippt nach. Jede Runde kommt eine Farbe dazu und eine andere Person ist dran. Ein Fehler beendet die Kette.",
+   "foerdert": "Zusammen merken, sich absprechen, einander vertrauen (KOG-24, SOZ-27)",
+   "eldib": [
+    "KOG-24",
+    "SOZ-27"
+   ],
+   "einheiten": [],
+   "abschluss": false,
+   "top": false,
+   "aufwand": "S"
+  },
+  "zehn-sekunden": {
+   "id": "zehn-sekunden",
+   "name": "Zehn Sekunden",
+   "thema": "party",
+   "format": "weitergeben",
+   "formatName": "Gerät weitergeben",
+   "dauer": "3–5 Min",
+   "text": "Stopp die Uhr bei genau 10,0 Sekunden. Nach drei Sekunden verschwindet die Anzeige – der Rest ist Gefühl. Die Crew merkt sich den besten Versuch.",
+   "foerdert": "Zeit einschätzen, ruhig bleiben, abwarten (V-18, KOG-22)",
+   "eldib": [
+    "V-18",
+    "KOG-22"
    ],
    "einheiten": [],
    "abschluss": false,

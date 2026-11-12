@@ -11,7 +11,8 @@ try { pw = require('playwright'); } catch { pw = require('/opt/node22/lib/node_m
 
 const problems = [];
 const expect = (cond, msg) => { if (!cond) problems.push(msg); };
-const PARTY = ['zuendschnur', 'geheimauftrag', 'zwei-wahrheiten', 'notfall-pitch', 'sags-mal-so', 'gleicher-kopf', 'nicht-zucken', 'fehler-im-bild', 'treffer', 'seitenwechsel', 'jagd'];
+const PARTY = ['zuendschnur', 'geheimauftrag', 'zwei-wahrheiten', 'notfall-pitch', 'sags-mal-so', 'gleicher-kopf', 'nicht-zucken', 'fehler-im-bild', 'treffer', 'seitenwechsel', 'jagd',
+  'kritzel-blitz', 'verboten', 'ohne-worte', 'tauziehen', 'blink-kette', 'zehn-sekunden'];
 
 for (const [name, vp] of [['ipadLandscape', VIEWPORTS.ipadLandscape], ['handy', { width: 390, height: 780 }]]) {
   const browser = await pw.chromium.launch();

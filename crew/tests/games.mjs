@@ -125,7 +125,7 @@ for (const [vpName, vp] of [['ipadLandscape', VIEWPORTS.ipadLandscape], ['beamer
     problems.push(...await layoutCheck(page, 'hub'));
     await page.locator('#btn-finder').click();
     await page.locator('#finder-unit').waitFor();
-    expect(await page.locator('.game-row').count() === 73, 'finder: 73 Spiele erwartet (62 Kurs-Spiele + 11 Partyspiele)');
+    expect(await page.locator('.game-row').count() === 79, 'finder: 79 Spiele erwartet (62 Kurs-Spiele + 17 Partyspiele)');
     await page.selectOption('#finder-unit', 'j1-e07');
     await page.waitForTimeout(150);
     expect(await page.locator('.unit-card').count() === 1, 'finder: Einheiten-Karte fehlt');

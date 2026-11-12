@@ -107,7 +107,7 @@ Darum startet CREW im **Spiel-Modus**: ein Satz Regel, spielen, am Ende „Nochm
 Bildschirme, keine Nachbesprechung. Wer mit der Klasse arbeitet, schaltet im Lehrermodus den **Unterrichts-Modus** ein –
 dann ist alles wie bisher.
 
-Die Spiele-Liste zeigt im Spiel-Modus zuerst **elf Partyspiele** ohne Lehr-Rahmen, darunter „Mehr Spiele“ (die 18 Kurs-
+Die Spiele-Liste zeigt im Spiel-Modus zuerst **17 Partyspiele** ohne Lehr-Rahmen, darunter „Mehr Spiele“ (die 18 Kurs-
 Spiele, die auch so tragen). Die übrigen Übungen aus dem Kurs sind eingeklappt.
 
 | Spiel | So geht’s | Format |
@@ -123,6 +123,12 @@ Spiele, die auch so tragen). Die übrigen Übungen aus dem Kurs sind eingeklappt
 | Fehler im Bild | Ein Zeichen ist anders – wer findet es zuerst? | zu zweit |
 | Seitenwechsel | Lieber A oder B? Die kleinere Gruppe holt Leute herüber | Bewegung |
 | Jagd | Fünf Dinge in 60 Sekunden zum iPad bringen | Bewegung |
+| Kritzel-Blitz | Geheimes Wort mit dem Finger zeichnen, die Crew rät – 40 Sekunden | iPad wandert |
+| Verboten! | Ein Wort erklären, ohne die drei roten Wörter zu sagen | iPad wandert |
+| Ohne Worte | Pantomime: Karte um Karte vorspielen, 45 Sekunden | iPad wandert |
+| Tauziehen | Beide tippen um die Wette, das Tau wandert zur schnelleren Seite | zu zweit |
+| Blink-Kette | Vier Farben blinken, die Crew merkt sich die Reihenfolge – jede Runde eine mehr | Crew |
+| Zehn Sekunden | Die Uhr blind bei genau 10,0 Sekunden stoppen | iPad wandert |
 
 Jedes Partyspiel zählt Punkte; der beste Wert bleibt als **Crew-Rekord** auf dem Gerät (ohne Namen) und steht auf der
 Kachel. Was die Spiele nebenbei üben, steht im Finder (Lehrkraft). Dateien: `src/games/party/` (Bausteine in `00-kit.js`),

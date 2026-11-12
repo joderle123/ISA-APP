@@ -79,6 +79,7 @@
     fail: () => { tone(220, 0, 0.16, 'sawtooth', 0.22, 150); tone(140, 0.12, 0.28, 'sawtooth', 0.22, 90); },
     stamp: () => { noise(0, 0.08, 0.3, 200, 900); tone(180, 0, 0.12, 'square', 0.25, 90); },
     combo: () => [659, 784, 988, 1318].forEach((f, i) => tone(f, i * 0.05, 0.14, 'square', 0.18)),
+    pad0: () => tone(330, 0, 0.22, 'triangle', 0.3), pad1: () => tone(415, 0, 0.22, 'triangle', 0.3), pad2: () => tone(494, 0, 0.22, 'triangle', 0.3), pad3: () => tone(659, 0, 0.22, 'triangle', 0.3),
     boom: () => { noise(0, 0.7, 0.55, 900, 60); tone(90, 0, 0.5, 'sine', 0.6, 35); },
     breatheIn: () => tone(220, 0, 3.8, 'sine', 0.12, 330),
     breatheOut: () => tone(330, 0, 5.5, 'sine', 0.1, 196),
