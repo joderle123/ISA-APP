@@ -82,6 +82,8 @@ try {
     if (vp.width === 412) {
       const ende = await page.evaluate(() => new Promise((resolve) => {
         const P = LUMO.plugin('respawn'), E = LUMO.events, t0 = Date.now();
+        window.__morgen = [];
+        E.on('respawn:frei', () => { window.__morgen.push(P.sichtFrei()); });   // einmal je Morgen messen
         const tick = setInterval(() => {
           if (document.querySelector('.rs-voll.ist-ende')) { clearInterval(tick); resolve(true); }
           else if (LUMO.ui.choices.open) E.emit('dialogue:choose', { index: LUMO.ui.choices.current.items.filter((x) => !x.disabled)[0].index });
@@ -92,6 +94,9 @@ try {
         }, 25);
       }));
       check(`${name} · Runde bis zum Abschluss gespielt`, ende);
+      // Jeden Morgen (und nach der Ankunft) muss die Kamera die eigene Figur sehen – nicht in einer Wand stecken
+      const morgen = await page.evaluate(() => window.__morgen || []);
+      check(`${name} · An jedem Morgen ist die eigene Figur zu sehen (${morgen.length} Tage)`, morgen.length >= 10 && morgen.every((m) => m.frei && m.weit >= 2.5), morgen.filter((m) => !m.frei || m.weit < 2.5).slice(0, 3));
       if (ende) {
         await page.waitForTimeout(700);
         const a = await mass('.rs-voll.ist-ende');

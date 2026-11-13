@@ -28,7 +28,9 @@ try {
     let a = s; const rnd = () => { a = (a * 1103515245 + 12345) & 0x7fffffff; return a / 0x7fffffff; };
     const P = LUMO.plugin('respawn');
     const E = LUMO.events, log = { wahlen: 0, situationen: [], ausgang: null };
-    const ab1 = E.on('respawn:wahl', (e) => { log.wahlen++; if (!log.situationen.includes(e.sit)) log.situationen.push(e.sit); });
+    // bei der ersten Wahl jeder Situation: Sieht die Kamera die eigene Figur? (nicht in einer Wand, nichts Festes davor)
+    log.verdeckt = [];
+    const ab1 = E.on('respawn:wahl', (e) => { log.wahlen++; if (!log.situationen.includes(e.sit)) { log.situationen.push(e.sit); try { const s = P.sichtFrei(); if (!s.frei) log.verdeckt.push(e.sit + ': ' + s.davor.join(', ')); } catch (err) { log.verdeckt.push(e.sit + ': ' + err); } } });
     const ab2 = E.on('respawn:ausgang', (e) => { log.ausgang = e.id; log.akte = e.akte; log.druck = e.R.druck; log.geld = e.R.geld; log.folgen = e.R.folgen; log.minus = Object.values(e.R.bond).filter((b) => b < 0).length; });
     const t0 = Date.now();
     const tick = setInterval(() => {
@@ -73,12 +75,12 @@ try {
     [{ kopf: 'voll', zuhause: 'oma', tasche: 'leer' }, 'faul'],
     [{ kopf: 'zuendschnur', zuhause: 'allein', tasche: 'leer' }, 'zufall'],
   ].slice(0, Number(process.env.RUNDEN) || 5);
-  const gefunden = new Set(), gespielt = new Set(), nach = {};
+  const gefunden = new Set(), gespielt = new Set(), nach = {}, verdeckt = new Set();
   let n = 0;
   for (const [karten, weise] of plan) {
     n++;
     const r = await runde(karten, weise, 17 * n);
-    r.situationen.forEach((s) => gespielt.add(s)); if (r.ausgang) gefunden.add(r.ausgang);
+    r.situationen.forEach((s) => gespielt.add(s)); if (r.ausgang) gefunden.add(r.ausgang); (r.verdeckt || []).forEach((v) => verdeckt.add(v));
     nach[weise] = r;
     check(`Runde ${n} (${karten.kopf}, ${weise}): Ausgang „${r.titel}“, ${r.wahlen} Wahlen, Akte ${r.akteZeilen}, Folgen ${(r.folgen || []).length}, sauer: ${r.minus}`,
       !!r.ausgang && !r.zeit && r.akteZeilen >= 1 && r.situationen.includes('finale'), r);
@@ -91,6 +93,7 @@ try {
   if (nach.brav) check('Wer hilft und redet, hat am Ende Leute und kaum Ärger', nach.brav.minus <= 1 && ['leute', 'werft', 'dazwischen', 'offen', 'kiosk', 'zweite'].includes(nach.brav.ausgang), nach.brav);
   check('Verschiedene Ausgänge erreicht', gefunden.size >= Math.min(3, plan.length - 1), [...gefunden]);
   check('Viele verschiedene Situationen und freie Aktionen gespielt', gespielt.size >= 14, [...gespielt]);
+  check('In jeder Situation sieht die Kamera die eigene Figur', verdeckt.size === 0, [...verdeckt]);
   const meta = await page.evaluate(() => ({ meta: JSON.parse(localStorage.getItem('respawn.meta')), lumo: Object.keys(localStorage).filter((k) => k.startsWith('lumo.save')), lauf: localStorage.getItem('respawn.lauf') }));
   check('Album zählt mit, keine laufende Runde übrig, LUMO-Spielstände unberührt', meta.meta.runden === plan.length && Object.keys(meta.meta.ausgaenge).length === gefunden.size && !meta.lauf && meta.lumo.length === 0, meta);
   check('Keine Fehler', errors.length === 0, errors.slice(0, 4));

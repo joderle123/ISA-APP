@@ -8,6 +8,7 @@
 // Gespeichert nur auf dem Gerät: respawn.meta (Album, Runden, Einstellungen) und respawn.lauf (laufende Runde).
 // Für Tests: Ereignisse respawn:start, respawn:karten, respawn:weiter, respawn:ende (auslösen); plugin.tue({...}) spielt
 // eine freie Aktion; respawn:wahl, respawn:wirkung, respawn:stand, respawn:frei (hören).
+import * as THREE from 'three';
 import { createOberflaeche } from './oberflaeche.js';
 import { createBuehne } from './buehne.js';
 import { ladeFigur, MODELLE, ueberziehe } from './figur3d.js';
@@ -447,6 +448,17 @@ export default {
       },
       neueRunde, hauptmenue,
       get roller() { return roller; },
+      // Tests: Sieht die Kamera die eigene Figur? (Strahl von der Kamera zur Brust; etwas Festes davor = verdeckt.)
+      // Fängt Fehler wie „Kamera steckt im Bootshaus, jeder Morgen ist dunkelbraun“.
+      sichtFrei() {
+        const cam = game.camera.position, ziel = player.position.clone(); ziel.y += 1.1;
+        const dir = ziel.clone().sub(cam), weit = dir.length(); dir.normalize();
+        const strahl = new THREE.Raycaster(cam.clone(), dir, 0.05, Math.max(0.1, weit - 0.6));
+        strahl.camera = game.camera;   // Schilder (Sprites) brauchen die Kamera
+        const eigen = (o) => { for (let k = o; k; k = k.parent) if (k === player.group || (player.humanoid && k === player.humanoid.group) || /roller|respawn-figur/.test(k.name || '')) return true; return false; };
+        const fest = strahl.intersectObjects(game.scene.children, true).filter((t) => t.object.isMesh && t.object.visible && !eigen(t.object) && !(t.object.material && (t.object.material.transparent || t.object.material.depthWrite === false)));
+        return { frei: fest.length === 0, weit: Math.round(weit * 10) / 10, davor: fest.slice(0, 2).map((t) => (t.object.name || t.object.parent && t.object.parent.name || '?') + '@' + Math.round(t.distance * 10) / 10) };
+      },
       // Tests: eine freie Aktion ausführen (wie ein Klick in der Welt)
       tue(o) {
         if (o.ereignis) return frei(() => ereignis(o.ereignis));
