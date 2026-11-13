@@ -476,6 +476,10 @@ const TRATSCH = [
   [(R) => hat(R, 'boot.genommen') && seit(R, 'boot.tag') >= 1, 'Tiagos Vater flickt seit Tagen sein Boot.'],
   [(R) => hat(R, 'buehne'), 'Du warst doch auf der Bühne! Stark.'],
   [(R) => (R.akte || []).includes('gestanden'), 'Du hast was zugegeben, hör ich. Respekt.'],
+  [(R) => hat(R, 'gutmachen.ja'), 'Du hast am Samstag mitgestrichen. Hab ich gesehen.'],
+  [(R) => hat(R, 'trost.foto'), 'Das mit Yaras Foto war mies. Sagen alle.'],
+  [(R) => hat(R, 'frage.gelacht'), 'Wer fragt, wird bei dir ausgelacht. Hört man.'],
+  [(R) => hat(R, 'einladung.dabei'), 'Du warst bei Maëlle, oder? Soll gut gewesen sein.'],
   [(R) => (R.ruf.gross || 0) >= 2, 'Ilda redet gut von dir. Das tut sie selten.'],
   [(R) => (R.ruf.gross || 0) <= -2, 'Dich kenn ich. Von dir hört man einiges.'],
 ];
