@@ -89,3 +89,5 @@ man darf fast alles tun (auch Mist), keine Waffen, kein Gefängnis. Die Folgen s
     Dingen in derselben Reihenfolge antippen. Viel Druck: kürzer zu sehen („Dein Kopf ist voll“). Benutzt im Garten bei
     Oma Lucinda (alles richtig: mehr Geld, mehr Nähe – „Du hörst zu. Das können wenige.“). Die kleinen Spiele (Geschick,
     Durchatmen, Merken) sind jetzt genau so breit wie das Bild (vorher 4 Pixel zu breit).
+  - **Lucindas Garten ist zu sehen** (`stadt.js` 2d2, Kenney „Nature Kit“, CC0): drei Beete mit Salat, Mais, Kürbis, Melone,
+    Möhren und Blumen neben ihrem Stand. `tools/stadt/stadt.py` liest jetzt auch Bausätze ohne Farbtafel (Farbe im Material).

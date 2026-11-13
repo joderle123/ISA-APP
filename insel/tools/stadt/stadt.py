@@ -1,4 +1,4 @@
-# Kenney-Bausätze (City Kit Suburban/Commercial/Roads, Car Kit, Mini Skate, Watercraft Kit, Mini Market; kenney.nl, CC0) → eine GLB-Datei für RESPAWN.
+# Kenney-Bausätze (City Kit Suburban/Commercial/Roads, Car Kit, Mini Skate, Watercraft Kit, Mini Market, Nature Kit; kenney.nl, CC0) → eine GLB-Datei für RESPAWN.
 #   python3 -I tools/stadt/stadt.py <ordner mit den entpackten Kits> src/respawn/modelle/stadt.glb
 # Die Modelle nutzen eine gemeinsame Farbtafel (colormap.png). Hier wird die Farbe je Eckpunkt aus der Tafel gelesen und
 # fest ins Modell geschrieben (COLOR_0) – so brauchen sie keine Textur und nutzen das Material der Insel (Umriss, Schatten).
@@ -15,6 +15,8 @@ AUSWAHL = {
     # Skate-Ecke am Brunnen, Boote am Steg, Stände am Markt (Mini Skate, Watercraft Kit, Mini Market)
     'mini-skate': ['half-pipe-low', 'half-pipe', 'ramp', 'ramp-rail', 'rail-low', 'rail-high', 'obstacle-box-grind', 'obstacle-box', 'steps-rail', 'bench', 'pallet', 'skateboard', 'scooter', 'fence'],
     'watercraft-kit': ['boat-fishing-small', 'boat-row-small', 'boat-row-large', 'boat-sail-a', 'boat-sail-b', 'boat-speed-a', 'buoy', 'buoy-flag', 'cargo-pile-a'],
+    # Lucindas Garten: Beete und Gemüse (Nature Kit – ohne Farbtafel, die Farbe steht im Material)
+    'nature-kit': ['crops_dirtDoubleRow', 'crops_dirtRow', 'crops_leafsStageB', 'crops_cornStageC', 'crop_pumpkin', 'crop_melon', 'crop_carrot', 'crop_turnip', 'fence_simple', 'flower_redA', 'flower_yellowB', 'flower_purpleB'],
     'mini-market': ['display-bread', 'display-fruit', 'display-flowers', 'display-cans', 'display-small', 'clothing-rack', 'clothing-table', 'shelf-boxes', 'shopping-cart', 'hand-truck', 'cash-register'],
 }
 
@@ -49,6 +51,9 @@ def png(pfad):
         if art in (2, 6): return px[o], px[o + 1], px[o + 2]
         return px[o], px[o], px[o]
     return farbe
+
+# Nature Kit: Kenneys Minzgrün und Rosa-Erde passen nicht zur Insel – Blätter grüner, Erde brauner (übrige Farben bleiben)
+NATUR_FARBE = {'grass': (0.42, 0.78, 0.28), 'leafsDark': (0.25, 0.6, 0.28), 'dirt': (0.62, 0.42, 0.28), 'dirtDark': (0.5, 0.33, 0.22)}
 
 def quat_mat(q):
     x, y, z, w = q
@@ -92,8 +97,8 @@ def modell(pfad, farbe):
                     q = [p[a] * S2[a] for a in range(3)]
                     P.append(tuple(T2[a] + sum(R2[a][b] * q[b] for b in range(3)) for a in range(3)))
                     nn = nor[k]; N.append(tuple(sum(R2[a][b] * nn[b] for b in range(3)) for a in range(3)))
-                    c = farbe(uv[k][0], uv[k][1]) if (uv and hat_tex) else (255, 255, 255)
-                    C.append(tuple(min(255, int(c[a] * fak[a])) for a in range(3)))
+                    if uv and hat_tex and farbe: c = farbe(uv[k][0], uv[k][1]); C.append(tuple(min(255, int(c[a] * fak[a])) for a in range(3)))
+                    else: f2 = NATUR_FARBE.get(mat.get('name'), fak); C.append(tuple(min(255, int(255 * f2[a])) for a in range(3)))   # ohne Farbtafel: Farbe des Materials
                 I.extend(basis + x for x in idx)
         for c in nd.get('children', []): lauf(c, R2, T2, S2)
     eins = [[1, 0, 0], [0, 1, 0], [0, 0, 1]]
@@ -109,8 +114,10 @@ def main():
         binär.extend(daten); return len(views) - 1
     for kit, namen in AUSWAHL.items():
         ordner = os.path.join(quelle, kit, 'Models', 'GLB format')
-        farbe = png(os.path.join(ordner, 'Textures', 'colormap.png'))
-        kurz = {'city-kit-suburban': 'haus', 'city-kit-commercial': 'laden', 'city-kit-roads': 'strasse', 'car-kit': 'auto', 'mini-skate': 'skate', 'watercraft-kit': 'boot', 'mini-market': 'markt'}[kit]
+        if not os.path.isdir(ordner): ordner = os.path.join(quelle, kit, 'Models', 'GLTF format')
+        tafel = os.path.join(ordner, 'Textures', 'colormap.png')
+        farbe = png(tafel) if os.path.exists(tafel) else None
+        kurz = {'city-kit-suburban': 'haus', 'city-kit-commercial': 'laden', 'city-kit-roads': 'strasse', 'car-kit': 'auto', 'mini-skate': 'skate', 'watercraft-kit': 'boot', 'mini-market': 'markt', 'nature-kit': 'natur'}[kit]
         for nm in namen:
             pfad = os.path.join(ordner, nm + '.glb')
             if not os.path.exists(pfad): print('fehlt', kit, nm); continue

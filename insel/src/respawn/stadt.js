@@ -192,6 +192,15 @@ export async function baueStadt(game) {
     ['markt/clothing-rack', -107.8, 11.4, Math.PI / 2, 2.2], ['markt/display-cans', -107.6, 16.8, -Math.PI / 2, 2.0],
     ['markt/clothing-table', -115.4, 3.8, 0, 2.2], ['markt/hand-truck', -121.4, 4.2, 0.6, 2.2], ['markt/shopping-cart', -123.2, 19.4, 2.2, 2.4],
   ]) { const m = setze(n, x, z, yaw, { massstab: ms }); if (m && col) { const b = m.geometry.boundingBox; col.addCircle(x, z, Math.max(b.max.x - b.min.x, b.max.z - b.min.z) * ms * 0.42, { group: 'props', tag: 'auslage' }); } }
+  // 2d2) Lucindas Garten: drei Beete neben ihrem Stand (Kenney „Nature Kit“). Vorher hieß der Ort nur so – zu sehen war nichts.
+  {
+    const gx = -113.6, reihen = [[28.2, ['natur/crops_leafsStageB']], [29.5, ['natur/crops_cornStageC']], [30.8, ['natur/crop_pumpkin', 'natur/crop_melon', 'natur/crop_carrot', 'natur/crop_turnip']]];
+    for (const [z, pflanzen] of reihen) {
+      for (const dx of [-1, 1]) setze('natur/crops_dirtRow', gx + dx, z, 0, { massstab: 2, y: 0.04, schatten: false });
+      for (let i = 0; i < 5; i++) setze(pflanzen[i % pflanzen.length], gx - 1.6 + i * 0.8, z, i * 1.3, { massstab: 1.5, y: 0.06 });
+    }
+    for (const [n, x, z] of [['natur/flower_redA', -111.1, 28.0], ['natur/flower_yellowB', -111.0, 29.6], ['natur/flower_purpleB', -111.2, 31.2], ['natur/flower_redA', -116.1, 31.6]]) setze(n, x, z, x, { massstab: 2.6, schatten: false });
+  }
   // 2e) Feuerstelle am Strand: erst zu sehen, wenn dort jemand Feuer gemacht hat (plugin.js → zeigeSpuren)
   const feuerstelle = new THREE.Group(); feuerstelle.name = 'respawn-feuerstelle'; feuerstelle.visible = false;
   {
