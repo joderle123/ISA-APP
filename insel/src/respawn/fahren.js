@@ -25,7 +25,9 @@ export function createFahren({ game }) {
       if (game.cameraRig.behindPlayer) game.cameraRig.behindPlayer();
       player.setModifiers({ speed: 2.2, jump: 0 });
       const figur = player.humanoid.group; const sichtbar = figur.visible; figur.visible = false;
-      const alt = { dist: game.cameraRig.targetDist };
+      const alt = { dist: game.cameraRig.targetDist, hochkant: game.cameraRig.hochkant };
+      // Hochformat: beim Fahren höher und steiler schauen – sonst füllt der Wagen das halbe Bild und man sieht keine Straße
+      game.cameraRig.hochkant = { lookY: 1.7, pitch: 0.46 }; if (game.cameraRig.portrait) game.cameraRig.pitch = 0.46;
       if (game.cameraRig.targetDist !== undefined) game.cameraRig.targetDist = Math.max(alt.dist || 0, 9);
       const aus = game.interactions.add({ id: 'rs-aussteigen', x: () => player.position.x, z: () => player.position.z, radius: 6, label: 'Aussteigen', priority: 99, onAction: () => beende() });
       fahrt = { mesh, t: 0, sekunden, strecke: 0, vmax: 0, beulen: 0, erschreckt: new Set(), vVor: 0, still: 0, letzte: player.position.clone(), fertig, start, aus, figur, sichtbar, alt, b, s, knall: 0 };
@@ -41,6 +43,7 @@ export function createFahren({ game }) {
     player.setModifiers({ speed: 1, jump: 1 });
     f.figur.visible = f.sichtbar;
     if (game.cameraRig.targetDist !== undefined && f.alt.dist !== undefined) game.cameraRig.targetDist = f.alt.dist;
+    game.cameraRig.hochkant = f.alt.hochkant; if (game.cameraRig.portrait && f.alt.hochkant) game.cameraRig.pitch = f.alt.hochkant.pitch;
     // aussteigen: links neben den Wagen
     const yaw = f.mesh.rotation.y, lx = Math.cos(yaw) * 2.1, lz = -Math.sin(yaw) * 2.1;
     if (f.wasser) {

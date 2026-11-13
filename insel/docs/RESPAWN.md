@@ -112,3 +112,5 @@ man darf fast alles tun (auch Mist), keine Waffen, kein Gefängnis. Die Folgen s
     ist, „gerade nicht zu sehen“. Vorher musste man Leute auf der ganzen Insel suchen (zum Entschuldigen, Zurückgeben …).
   - **Aussehen am kleinen Handy** (`src/ui/stil/css.js`, gilt auch für LUMO): Die Figur war winzig und von Spielname und
     Dreh-Knöpfen verdeckt. Jetzt Spielname als schmale Zeile, Dreh-Knöpfe an den Rändern, Emote-Reihe und Untertitel weg.
+  - **Fahren im Hochformat** (`fahren.js`): Die Kamera schaut beim Fahren höher und steiler – man sieht die Straße, nicht nur
+    das Wagendach. Orts-Schilder sind während der Fahrt ausgeblendet. Nach dem Aussteigen gilt wieder die normale Kamera.

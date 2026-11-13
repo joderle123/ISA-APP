@@ -135,7 +135,7 @@ export default {
     game.addUpdate(() => {
       const cam = game.camera;
       if (!cam || !marken.size) return;
-      const frei = R && !B.aktiv && !ui.overlay.count && !document.querySelector('.rs-voll');
+      const frei = R && !B.aktiv && !ui.overlay.count && !document.querySelector('.rs-voll') && !F.aktiv;   // beim Fahren keine Orts-Schilder (sie lagen auf dem Wagen)
       // „Schlafen gehen“ lag sonst mitten über Sprechblasen und Auswahl (sobald die Kraft leer ist und man noch redet)
       if (knopf) knopf.style.display = frei && !ui.bubbles.current && !ui.choices.open ? '' : 'none';
       for (const m of marken.values()) {
