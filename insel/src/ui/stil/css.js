@@ -62,4 +62,20 @@ export const STIL_CSS = `
   .st-opt { min-width: 56px; padding: 0 12px; }
   .st-tab { min-width: 74px; }
 }
+/* Kleines Handy hochkant (13.11.2026): Die Figur war winzig und von Spielname und Dreh-Knöpfen verdeckt. Jetzt: Spielname als
+   schmale Zeile oben, Dreh-Knöpfe an den Rändern, Emote-Reihe weg (sie nahm der Figur die halbe Höhe), Untertitel weg. */
+@media (max-aspect-ratio: 1/1) and (max-height: 760px) {
+  .ov-stil .ov-sub { display: none; }
+  .st-left { flex: 0 0 48%; }
+  .st-emotes { display: none; }
+  .st-handle { top: 6px; left: 8px; right: auto; max-width: 62%; padding: 2px 2px 2px 12px; border-radius: 14px; gap: 6px; }
+  .st-handle small { display: none; }
+  .st-handle b { font-size: calc(15px * var(--txt-scale)); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .st-handle .btn { min-width: 44px; min-height: 44px; padding: 0 8px; }
+  .st-turn { left: 8px; right: 8px; bottom: 8px; transform: none; justify-content: flex-end; }
+  .st-turn .btn { min-width: 48px; min-height: 48px; padding: 0 10px; }
+  .st-turn .btn:first-child { margin-right: auto; }
+  .st-tabs { padding: 6px 10px 4px; }
+  .st-tab { min-height: 56px; }
+}
 `;
