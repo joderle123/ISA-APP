@@ -1,6 +1,7 @@
 // RESPAWN – Die Akte. Jeder Eintrag hat zwei Seiten: was die Erwachsenen aufschreiben (amt) und was wirklich war (echt).
 // Die Spielerin, der Spieler kennt beide. Die Akte bewertet nicht – sie zeigt, wie etwas von außen aussieht.
 export const AKTE = {
+  gutmachen: { amt: 'Hilft an einem Samstag freiwillig bei Reparaturen am Hafen.', echt: 'Keiner hat gefragt, wer es war. Du bist trotzdem gekommen.' },
   'ankunft.kamera': { amt: 'Greift am ersten Tag in die Kamera eines Jungen.', echt: 'Er hat dich gefilmt, ohne zu fragen.' },
   'video.handy': { amt: 'Nimmt einem Jungen das Handy weg.', echt: 'Damit das Video von Pit nicht in die Gruppe geht.' },
   'kontrolle.ohne': { amt: 'Fährt ohne gültiges Ticket.', echt: 'Das Ticket war abgelaufen.' },

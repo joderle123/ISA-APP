@@ -93,7 +93,7 @@ test('Plan: jede Jahreszeit hat Situationen, das Jahr beginnt mit „ankunft“ 
     for (let jz = 0; jz < 4; jz++) { R.jz = jz; const p = planeJahreszeit(R, SITUATIONEN, rng); assert.ok(p.length >= 2, JAHRESZEITEN[jz]); assert.equal(verteile(p, SITUATIONEN).flat().length, p.length); R.gespielt.push(...p); alle.push(...p); jahreszeitWechsel(R); }
     assert.equal(alle[0], 'ankunft'); assert.equal(alle[alle.length - 1], 'finale');
     assert.equal(new Set(alle).size, alle.length);
-    assert.ok(alle.length >= 8 && alle.length <= 10, String(alle.length));
+    assert.ok(alle.length >= 11 && alle.length <= 14, String(alle.length));   // seit 13.11.2026: dichteres Jahr (13 Situationen)
   }
 });
 test('Tage: Situationen einer Jahreszeit verteilen sich auf drei Tage, Ankunft am ersten, Gespräch am letzten', () => {

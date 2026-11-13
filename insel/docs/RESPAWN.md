@@ -118,3 +118,10 @@ man darf fast alles tun (auch Mist), keine Waffen, kein Gefängnis. Die Folgen s
     107 000 kleine (vorher 16 000), in Flecken heller, trockener oder satter, dazu Blumen in Gruppen. Gras wird in kleinen
     Blöcken (30 m) gezeichnet – nur, was nah und im Bild ist; die Zahl der Gras-Dreiecke je Bild bleibt etwa wie vorher.
     LUMO ist unverändert (eigener Zufall für die neuen Büschel, alle anderen Pflanzen stehen, wo sie standen).
+  - **Fünf neue Situationen** (`daten/situationen-3.js`), Themen, die fehlten: „Nicht eingeladen“ (Ausgrenzung ohne böse
+    Absicht), „Yara am Leuchtturm“ (jemanden trösten – dableiben statt lösen), „Die zweite Chance“ (nur nach eigenem Mist:
+    Ilda fragt nicht, wer es war – sie sagt, wann repariert wird; zählt für den Ausgang „Zweite Chance“), „Kommst du mit
+    mir?“ (wer dich am meisten mag, fragt dich – Ja, ein ehrliches Nein, Auslachen), „Noor geht“ (Abschied am letzten Tag).
+    Je mit Folgen am Morgen danach (`welt.js` → `FOLGEN`) und der Sicht der anderen Person im Abschluss.
+  - **Dichteres Jahr:** 13 statt 9 Situationen je Runde (`run.js` → `JE_JAHRESZEIT` 3/4/3/3). Aus jetzt 21 Situationen werden je
+    Runde andere gezogen – die zweite Runde erzählt etwas anderes als die erste. Das Finale steht immer am Schluss.

@@ -9,7 +9,7 @@ const MIST = ['kasse.geklaut', 'spray', 'boot.genommen', 'auto.genommen', 'markt
 const zugegeben = (R) => ['kasse', 'spray', 'boot', 'auto', 'markt', 'feuer'].filter((k) => hat(R, 'gestanden.' + k)).length;
 const andererBuesst = (R) => hat(R, 'kasse.pitverdacht') || hat(R, 'spray.tunschuld') || hat(R, 'markt.noorverdacht') || hat(R, 'feuer.mikaschuld');
 const aerger = (R) => hat(R, 'schlag') || hat(R, 'luege.gelogen') || hat(R, 'video.geteilt') || hat(R, 'mitfahren.erwischt') || hat(R, 'kontrolle.laut') || MIST.some((f) => hat(R, f));
-const gutgemacht = (R) => zugegeben(R) > 0 || hat(R, 'luege.gestanden') || hat(R, 'gespraech.eigen') || hat(R, 'pit.geholfen') || hat(R, 'fest.geblieben') || hat(R, 'fest.gemeldet');
+const gutgemacht = (R) => zugegeben(R) > 0 || hat(R, 'gutmachen.ja') || hat(R, 'luege.gestanden') || hat(R, 'gespraech.eigen') || hat(R, 'pit.geholfen') || hat(R, 'fest.geblieben') || hat(R, 'fest.gemeldet');
 const freunde = (R) => ['jolie', 'tun', 'pit', 'noor', 'maelle', 'tiago'].filter((w) => bond(R, w) >= 3).length;
 
 export const AUSGAENGE = [

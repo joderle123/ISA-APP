@@ -520,6 +520,15 @@ export const LEUTE_REIHE = ['gestehen', 'treffen', 'reden', 'einladen', 'helfen'
 // ---------- Folgen (jeden Morgen geprüft) ----------
 const freund = (R, z) => !!z && bond(R, z) >= 2;
 export const FOLGEN = [
+  // Neue Situationen (situationen-3.js): was am Morgen danach davon übrig ist
+  { id: 'einladung.dabei', wenn: (R) => hat(R, 'einladung.dabei'), text: ['Bei Maëlle war es laut und eng.', 'Du hast trotzdem bis zum Schluss getanzt.'], e: () => ({ druck: -10, bond: { maelle: 1 } }) },
+  { id: 'einladung.egal', wenn: (R) => hat(R, 'einladung.egal'), text: ['Samstagabend. Alle posten Bilder von Maëlles Feier.', 'Du schaust dir jedes einzelne an.'], e: () => ({ druck: 8 }) },
+  { id: 'einladung.laestern', wenn: (R) => hat(R, 'einladung.laestern'), text: ['Maëlle weiß, was du über sie gesagt hast.', 'Sie grüßt dich nicht mehr.'], e: () => ({ bond: { maelle: -1 }, ruf: { hafen: -1 } }) },
+  { id: 'trost.danke', wenn: (R) => hat(R, 'trost.geheim') || hat(R, 'trost.da'), text: ['Yara nickt dir am Morgen zu. Nur kurz.'], e: () => ({ bond: { yara: 1 }, chat: { von: 'yara', text: 'Danke für gestern. Bruno hätte dich gemocht.' } }) },
+  { id: 'trost.foto', wenn: (R) => hat(R, 'trost.foto'), text: ['Das Foto von Yara ist in Mikas Gruppe.', 'Yara kommt drei Tage nicht zum Krater.'], e: () => ({ bond: { yara: -1 }, druck: 5, chat: { von: 'yara', text: 'Ich dachte, du bist anders.' } }) },
+  { id: 'gutmachen.geleugnet', wenn: (R) => hat(R, 'gutmachen.geleugnet') || hat(R, 'gutmachen.offen'), text: ['Samstag. Am Hafen wird gestrichen. Ohne dich.', 'Fränz zählt, wer da ist.'], e: () => ({ ruf: { gross: -1 } }) },
+  { id: 'frage.ja', wenn: (R) => hat(R, 'frage.ja'), text: ['Kino am Steg. Der Film war schlecht.', 'Ihr seid trotzdem bis zum Abspann geblieben.'], e: (R) => ({ druck: -10, bond: { [wert(R, 'frage.wer', 'jolie')]: 1 } }) },
+  { id: 'frage.gelacht', wenn: (R) => hat(R, 'frage.gelacht'), text: ['Am Brunnen wird es still, wenn du kommst.', 'Alle wissen, wie du gestern reagiert hast.'], e: () => ({ ruf: { hafen: -1 }, druck: 8 }) },
   // Kasse: Fränz zählt abends. Mit Zeuge, der nicht dein Freund ist, weiß es bald der ganze Hafen.
   { id: 'kasse.fraenz', wenn: (R) => hat(R, 'kasse.geklaut') && seit(R, 'kasse.tag') >= 1,
     text: ['Fränz hat abends die Kasse gezählt.', 'Zwanzig Euro fehlen. Er hat lange dagesessen.'],

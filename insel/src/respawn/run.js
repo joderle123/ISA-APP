@@ -126,7 +126,8 @@ export function ohneWahl(R, sichtbar) {
 // ---- Plan ----
 // Situation: { id, fest?: 'herbst' | …, zeit: ['herbst', …], wenn?(R), gewicht?, platz?: 'anfang'|'ende' }
 // Je Jahreszeit: alle festen Situationen dieser Zeit plus so viele gezogene, dass es `anzahl` sind.
-export const JE_JAHRESZEIT = { herbst: 2, winter: 3, fruehling: 2, sommer: 2 };
+// 13.11.2026: ein dichteres Jahr – 13 statt 9 Situationen je Runde (an fast jedem zweiten Tag steht etwas an)
+export const JE_JAHRESZEIT = { herbst: 3, winter: 4, fruehling: 3, sommer: 3 };
 export function planeJahreszeit(R, SITUATIONEN, rng = Math.random) {
   const jz = jahreszeit(R);
   const offen = SITUATIONEN.filter((s) => !R.gespielt.includes(s.id) && (!s.wenn || s.wenn(R)));
@@ -142,7 +143,8 @@ export function planeJahreszeit(R, SITUATIONEN, rng = Math.random) {
     gezogen.push(rest.splice(k, 1)[0]);
   }
   const ordnung = { anfang: 0, mitte: 1, ende: 2 };
-  const plan = fest.concat(gezogen).sort((a, b) => (ordnung[a.platz || 'mitte'] - ordnung[b.platz || 'mitte']));
+  const rang = (x) => (x.id === 'finale' ? 3 : ordnung[x.platz || 'mitte']);   // das Finale steht immer ganz am Ende
+  const plan = fest.concat(gezogen).sort((a, b) => rang(a) - rang(b));
   return plan.map((s) => s.id);
 }
 
