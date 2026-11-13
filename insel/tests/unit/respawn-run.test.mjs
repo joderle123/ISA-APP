@@ -2,7 +2,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { neuerLauf, wirke, wahlen, zeitFuer, ohneWahl, planeJahreszeit, jahreszeitWechsel, ausgangFuer, akteFuer, verschlaeft, hatKarte, verteile, folgenAmMorgen, neuerTag, JAHRESZEITEN } from '../../src/respawn/run.js';
-import { SITUATIONEN, AUSGAENGE, AKTE, KARTEN, FIGUREN, STIMMEN, ORTE, ORT_BEI, ORT_AKTIONEN, LEUTE_AKTIONEN, LEUTE_REIHE, FOLGEN, VERPASST, WICHTIG, statistSagt, TRATSCH_ZEILEN, ideenFuerHeute, IDEEN_ZEILEN } from '../../src/respawn/daten/index.js';
+import { SITUATIONEN, AUSGAENGE, AKTE, KARTEN, FIGUREN, STIMMEN, ORTE, ORT_BEI, ORT_AKTIONEN, LEUTE_AKTIONEN, LEUTE_REIHE, FOLGEN, VERPASST, WICHTIG, statistSagt, TRATSCH_ZEILEN, ideenFuerHeute, IDEEN_ZEILEN, kapitelAuftakt, KAPITEL_ZEILEN } from '../../src/respawn/daten/index.js';
 
 const K = (kopf = 'zuendschnur', zuhause = 'oma', tasche = 'ok') => ({ kopf, zuhause, tasche });
 const woerter = (s) => String(s).trim().split(/\s+/).filter(Boolean).length;
@@ -287,4 +287,18 @@ test('Finale: am Steg stehen die engsten drei, jede Person erinnert an etwas Get
   for (const z of zeilen) assert.ok(woerter(z[2]) <= 12, z[2]);
   // leere Akte: Ilda behauptet nicht, sie sei dicker geworden
   assert.ok(fin.szene(R).some((s) => s[0] === 's' && /nichts dazu/.test(s[2])));
+});
+
+test('Kapitel-Auftakt: erst die Insel, dann du – nur was stimmt, kurze Sätze', () => {
+  for (const z of KAPITEL_ZEILEN) assert.ok(woerter(z) <= 12, z);
+  const R = neuerLauf({ karten: K() });
+  assert.deepEqual(kapitelAuftakt(R), ['Herbst. Die Bäume am Hafen werden rot.', 'Du kennst hier niemanden. Noch nicht.']);
+  R.jz = 1;
+  assert.deepEqual(kapitelAuftakt(R), ['Über Nacht kam der Schnee. Die Dächer sind weiß.', 'Am Hafen grüßt man dich. Mehr nicht.']);
+  Object.assign(R.bond, { pit: 3, jolie: 2, mika: -2 }); R.akte.push('kasse', 'spray');
+  assert.deepEqual(kapitelAuftakt(R).slice(1), ['Pit hebt die Hand, wenn du kommst.', 'Mika schaut weg, wenn du kommst.', 'In Ildas Büro liegt eine Akte. Deine.']);
+  R.jz = 3; R.akte.length = 0;
+  const s = kapitelAuftakt(R);
+  assert.ok(s.length <= 4 && s[s.length - 1] === 'Noch ein paar Wochen. Dann kommt die Fähre.');
+  for (const z of s) assert.ok(woerter(z) <= 12, z);
 });

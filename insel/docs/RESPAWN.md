@@ -149,3 +149,6 @@ man darf fast alles tun (auch Mist), keine Waffen, kein Gefängnis. Die Folgen s
     rund, hoch und schmal, breit ausladend und als kleinen Apfelbaum mit roten Äpfeln; Kiefern breit oder schlank. Jeder
     Baum hat einen leicht anderen Farbton (aus dem Standort berechnet). Die zusätzlichen Formen nutzen einen eigenen Zufall
     (`rndForm`), damit jeder Baum, Busch und Halm der Insel an seinem Platz bleibt. Gilt auch für LUMO.
+  - **Kapitel-Auftakt** (`daten/welt.js` → `kapitelAuftakt(R)`, gezeigt nach der Titelkarte in `plugin.js`): zwei bis vier kurze
+    Sätze – erst die Insel („Über Nacht kam der Schnee.“), dann der eigene Stand: wer einen grüßt, wer wegschaut, ob eine Akte
+    da ist. Jede Zeile stimmt mit dem Lauf überein.

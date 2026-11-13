@@ -16,7 +16,7 @@ import { baueStadt } from './stadt.js';
 import { createFahren } from './fahren.js';
 import { createRoller } from './roller.js';
 import { createWettlauf } from './lauf.js';
-import { SITUATIONEN, AUSGAENGE, AKTE, AKTE_LEER, ORTE, ORT_BEI, ORT_AKTIONEN, LEUTE_AKTIONEN, LEUTE_REIHE, FOLGEN, VERPASST, WICHTIG, statistSagt, ideenFuerHeute } from './daten/index.js';
+import { SITUATIONEN, AUSGAENGE, AKTE, AKTE_LEER, ORTE, ORT_BEI, ORT_AKTIONEN, LEUTE_AKTIONEN, LEUTE_REIHE, FOLGEN, VERPASST, WICHTIG, statistSagt, ideenFuerHeute, kapitelAuftakt } from './daten/index.js';
 import { neuerLauf, zieheKarten, planeJahreszeit, jahreszeitWechsel, jahreszeit, ausgangFuer, akteFuer, wirke, bond, verteile, folgenAmMorgen, neuerTag,
   JAHRESZEIT_NAME, UHR_NACH_KRAFT, TAGE_JE_JAHRESZEIT } from './run.js';
 
@@ -382,6 +382,7 @@ export default {
           R.tag = 0;
           sichern();
           await O.titelkarte(JAHRESZEIT_NAME[jahreszeit(R)], 'Kapitel ' + (R.jz + 1) + ' von 4');
+          for (const z of kapitelAuftakt(R)) await O.erzaehler(z);
         }
         while (R.tag < TAGE_JE_JAHRESZEIT) { await einTag(); R.tag += 1; sichern(); }
         R.jz += 1; R.plan = []; R.tage = []; R.tag = 0;

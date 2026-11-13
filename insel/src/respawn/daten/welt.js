@@ -519,6 +519,34 @@ export function ideenFuerHeute(R, max = 3) {
 }
 export const IDEEN_ZEILEN = IDEEN.map((i) => i.text);
 
+// ---- Auftakt eines Kapitels: zwei, drei Sätze nach der Titelkarte ----
+// Erst die Insel (so sieht die Jahreszeit aus), dann du: wie es mit den Leuten steht und was dir nachhängt.
+// Jede Zeile kommt aus dem, was im Lauf wirklich passiert ist – nichts wird behauptet, was nicht stimmt.
+const KAPITEL_INSEL = {
+  herbst: 'Herbst. Die Bäume am Hafen werden rot.',
+  winter: 'Über Nacht kam der Schnee. Die Dächer sind weiß.',
+  fruehling: 'Der Schnee ist weg. Am Markt blühen die Bäume.',
+  sommer: 'Sommer. Die Abende sind lang und warm.',
+};
+const KAPITEL_NAH = ['jolie', 'tun', 'pit', 'noor', 'mika', 'yara', 'maelle', 'tiago', 'fraenz'];
+export function kapitelAuftakt(R) {
+  const jz = ['herbst', 'winter', 'fruehling', 'sommer'][Math.max(0, Math.min(3, R.jz || 0))];
+  const z = [KAPITEL_INSEL[jz]];
+  if (!R.jz) { z.push('Du kennst hier niemanden. Noch nicht.'); return z; }
+  let nah = null, fern = null;
+  for (const w of KAPITEL_NAH) { if (bond(R, w) >= 2 && (!nah || bond(R, w) > bond(R, nah))) nah = w; if (bond(R, w) <= -2 && (!fern || bond(R, w) < bond(R, fern))) fern = w; }
+  if (nah) z.push(NAME[nah] + ' hebt die Hand, wenn du kommst.');
+  if (fern) z.push(NAME[fern] + ' schaut weg, wenn du kommst.');
+  if (!nah && !fern) z.push('Am Hafen grüßt man dich. Mehr nicht.');
+  if (R.akte.length >= 2) z.push('In Ildas Büro liegt eine Akte. Deine.');
+  else if (R.druck >= 60) z.push('Du schläfst schlecht. Zu viel im Kopf.');
+  else if (hat(R, 'job') && !hat(R, 'job.weg')) z.push('Am Kiosk kennst du jeden Handgriff.');
+  if (jz === 'sommer') z.push('Noch ein paar Wochen. Dann kommt die Fähre.');
+  return z.slice(0, 4);
+}
+export const KAPITEL_ZEILEN = Object.values(KAPITEL_INSEL).concat(['Du kennst hier niemanden. Noch nicht.', 'Oma Lucinda hebt die Hand, wenn du kommst.', 'Oma Lucinda schaut weg, wenn du kommst.',
+  'Am Hafen grüßt man dich. Mehr nicht.', 'In Ildas Büro liegt eine Akte. Deine.', 'Du schläfst schlecht. Zu viel im Kopf.', 'Am Kiosk kennst du jeden Handgriff.', 'Noch ein paar Wochen. Dann kommt die Fähre.']);
+
 export const LEUTE_REIHE = ['gestehen', 'treffen', 'reden', 'einladen', 'helfen', 'entschuldigen', 'zurueck', 'leihen', 'laestern', 'filmen', 'aufziehen', 'schubsen'];
 
 // ---------- Folgen (jeden Morgen geprüft) ----------
