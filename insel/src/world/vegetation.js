@@ -580,6 +580,17 @@ export function createVegetation({ island, veil, colliders, quality, scene, lush
       if (I.s === 'sand') grassTint.lerp(trocken, 0.6);
       add('grass', px, pz, { s: 0.36 + r2 * 0.46, tint: grassTint.clone(), rot: r3 * Math.PI * 2, v: r1 < 0.5 ? 0 : 1 });
     }
+    // Unterwuchs: Farne und ab und zu ein kleiner Busch am Fuß der Bäume – Wald und Waldrand wirken voller (Bäume standen auf kahlem Boden)
+    for (const art of ['tree', 'blossom', 'birch', 'pine', 'jungle']) for (const b of placed[art] || []) {
+      const n = art === 'jungle' ? 4 : 3;
+      for (let k = 0; k < n; k++) {
+        const w = rg() * Math.PI * 2, d = (1.1 + rg() * 1.7) * b.s, px = b.x + Math.sin(w) * d, pz = b.z + Math.cos(w) * d, r1 = rg(), r2 = rg();
+        const I = info(px, pz);
+        if ((I.s !== 'grass' && I.s !== 'moor') || I.path > 0.25 || I.ny < 0.8 || blocked(px, pz)) continue;
+        if (k === 0 && r1 < 0.3) add('bush', px, pz, { s: 0.55 + r2 * 0.35, rot: r1 * 20, v: 0 });
+        else add('fern', px, pz, { s: 0.7 + r2 * 0.5, rot: r1 * 20, v: 0 });
+      }
+    }
     // Blumenflecken: wo das Rauschen hoch ist, stehen Blumen in Gruppen (statt einzeln verstreut)
     for (let z = -R; z < R; z += 1.7) for (let x = -R; x < R; x += 1.7) {
       const px = x + (rg() - 0.5) * 1.6, pz = z + (rg() - 0.5) * 1.6, r0 = rg(), r1 = rg(), r2 = rg();
@@ -666,7 +677,7 @@ export function createVegetation({ island, veil, colliders, quality, scene, lush
   for (const [name, sp] of Object.entries(SPECIES)) {
     const list = placed[name];
     // Üppige Wiese: Gras in kleinen Blöcken – so wird nur gezeichnet, was nah und im Bild ist (sonst über 400 000 Dreiecke Gras je Bild)
-    const chunk = lush && name === 'grass' ? 30 : CHUNK;
+    const chunk = lush && (name === 'grass' || name === 'fern' || name === 'flowers') ? 30 : CHUNK;
     // nach Variante und Block gruppieren
     const buckets = new Map();
     for (const it of list) {

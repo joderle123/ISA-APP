@@ -125,3 +125,5 @@ man darf fast alles tun (auch Mist), keine Waffen, kein Gefängnis. Die Folgen s
     Je mit Folgen am Morgen danach (`welt.js` → `FOLGEN`) und der Sicht der anderen Person im Abschluss.
   - **Dichteres Jahr:** 13 statt 9 Situationen je Runde (`run.js` → `JE_JAHRESZEIT` 3/4/3/3). Aus jetzt 21 Situationen werden je
     Runde andere gezogen – die zweite Runde erzählt etwas anderes als die erste. Das Finale steht immer am Schluss.
+  - **Unterwuchs** (`vegetation.js`, `lush`): am Fuß der Bäume stehen Farne und ab und zu ein kleiner Busch. Farne und Blumen
+    werden wie das Gras in kleinen Blöcken gezeichnet.
