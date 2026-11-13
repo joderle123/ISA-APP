@@ -132,6 +132,7 @@ const ICON_EMOJI: Record<string, string> = {
   cash: 'euro-banknote', 'ball-volleyball': 'volleyball', 'gift-card': 'wrapped-gift', sunglasses: 'sunglasses', microscope: 'microscope',
   world: 'globe-showing-europe-africa', 'egg-fried': 'cooking', 'calendar-event': 'calendar', 'mood-angry': 'angry-face',
   'mood-smile': 'smiling-face-with-smiling-eyes', 'clipboard-check': 'clipboard', 'clipboard-list': 'clipboard', 'clothes-rack': 'coat', 'shield-check': 'shield',
+  'christmas-tree': 'christmas-tree', 'mood-sad': 'disappointed-face',
 }
 
 /** Bild-Verweis für junge Stufen: ‚icon:book‘ → ‚motiv:buch‘, sonst ein farbiges Bild, wenn es eines gibt; alles andere bleibt. */
