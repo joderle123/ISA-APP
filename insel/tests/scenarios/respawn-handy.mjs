@@ -98,6 +98,9 @@ try {
         check(`${name} · Abschluss: Knopf unten ist im Bild, der Rest lässt sich wischen`, a.knopfUnten <= a.bild && a.oben >= 0 - 1 && a.wischen, a);
         const r2 = await page.evaluate(() => { const v = document.querySelector('.rs-voll.ist-ende'); const max = v.scrollHeight - v.clientHeight; v.scrollTop = max; const t = v.scrollTop; v.scrollTop = 0; return { max, top: t }; });
         check(`${name} · Abschluss: rollt bis ganz nach unten`, r2.top >= r2.max - 1, r2);
+        // nichts ragt seitlich über das Bild (die Ausgangs-Karte war 40 Pixel zu breit)
+        const breit = await page.evaluate(() => [...document.querySelectorAll('.rs-voll.ist-ende *')].filter((e) => e.offsetParent).map((e) => { const q = e.getBoundingClientRect(); return { k: String(e.className).split(' ')[0] || e.tagName, l: Math.round(q.left), r: Math.round(q.right) }; }).filter((q) => q.l < -1 || q.r > innerWidth + 1).slice(0, 4));
+        check(`${name} · Abschluss: nichts ragt seitlich über das Bild`, breit.length === 0, breit);
         if (SHOTS) await page.screenshot({ path: join(SHOTS, 'rs-handy-ende.png') });
       }
     }
