@@ -226,3 +226,18 @@ test('Zuhören: nach den Pommes fragt die Person einmal nach – richtig gemerkt
   assert.ok(w[1].every((x) => x.e.flags['gemerkt.pit']), 'die Frage kommt nur einmal');
   wirke(R, gut[0].e); assert.ok(!reden('pit').some((s) => s[0] === 'w'), 'danach wieder normales Reden');
 });
+
+test('Freundschaft: ab Bindung 3 kommt am Morgen eine Einladung, danach gibt es „Zusammen losziehen“ – einmal', () => {
+  const R = neuerLauf({ karten: { kopf: 'voll', zuhause: 'oma', tasche: 'ok' } });
+  assert.equal(LEUTE_AKTIONEN.treffen.wenn(R, 'pit'), false);
+  R.bond.pit = 3;
+  const f = FOLGEN.find((x) => x.id === 'freund.pit'); assert.ok(f && f.wenn(R));
+  for (const z of f.text) assert.ok(z.trim().split(/\s+/).length <= 12, z);
+  wirke(R, f.e(R)); assert.ok(R.chats.some((c) => c.von === 'pit'), 'Nachricht von Pit');
+  assert.equal(LEUTE_AKTIONEN.treffen.wenn(R, 'pit'), true);
+  const sz = LEUTE_AKTIONEN.treffen.szene(R, { wer: 'pit' });
+  for (const x of sz) if (x[0] === 't') assert.ok(x[1].trim().split(/\s+/).length <= 12, x[1]);
+  wirke(R, sz.find((x) => x[0] === 'e')[1]);
+  assert.equal(LEUTE_AKTIONEN.treffen.wenn(R, 'pit'), false, 'nur einmal'); assert.equal(R.bond.pit, 4);
+  assert.ok(LEUTE_REIHE.includes('treffen'));
+});

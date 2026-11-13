@@ -289,6 +289,17 @@ const EINLADEN = {
   mika: 'Sag keinem, dass ich Pommes mit Mayo mag.', yara: 'Mit dir kann man schweigen. Das ist selten.', luc: 'Hat mich noch nie einer eingeladen.',
   noor: 'Auf der letzten Insel hatte ich niemanden.', tiago: 'Papa sagt, das Meer zahlt immer zurück.', maelle: 'Ich singe nur, wenn keiner zuhört. Fast.',
 };
+// Freundschaft trägt: Wer jemandem nahe ist (Bindung ab 3), wird von der Person eingeladen (Nachricht am Morgen).
+// Dann gibt es beim Ansprechen „Zusammen losziehen“ – ein kurzer gemeinsamer Moment, einmal je Person.
+const TREFF = {
+  jolie: { chat: 'Ich zeichne heute am Steg. Kommst du?', text: ['Ihr sitzt am Steg. Jolie zeichnet dich.', 'Auf dem Bild lachst du. Du erkennst dich kaum.'] },
+  tun: { chat: 'Neuer Clip. Du musst mitspielen. Bitte!', text: ['Tun filmt, du spielst den Bösewicht.', 'Ihr lacht, bis der Akku leer ist.'] },
+  pit: { chat: 'Hab eine neue Rampe gebaut. Komm testen.', text: ['Pits Rampe wackelt. Ihr fahrt trotzdem.', 'Er zeigt dir, wie man richtig fällt.'] },
+  noor: { chat: 'Oma Lucinda kocht. Du bist eingeladen.', text: ['Bei Oma Lucinda riecht es nach Knoblauch.', 'Noor erzählt von den anderen Inseln. Du hörst zu.'] },
+  tiago: { chat: 'Papa nimmt uns mit raus. Um sechs!', text: ['Draußen auf dem Meer ist es ganz still.', 'Tiago lässt dich das Netz einholen.'] },
+  maelle: { chat: 'Ich hab ein Lied. Hörst du es dir an?', text: ['Maëlle singt nur für dich. Sie zittert.', 'Beim zweiten Mal singst du leise mit.'] },
+};
+export const TREFF_LEUTE = Object.keys(TREFF);
 // Zuhören: Was jemand beim Pommes-Essen erzählt hat, in wenigen Wörtern. Tage später fragt die Person nach –
 // wer es noch weiß, hat zugehört (kleines Merkspiel beim Reden, ohne Erklärung).
 const MERK = {
@@ -381,6 +392,8 @@ export const LEUTE_AKTIONEN = {
         ['e', { bond: { [wer]: 1 }, ruf: { hafen: 1 }, flags: { ['laester.bei.' + wer]: true, ['laester.' + ziel]: wer, ['laester.tag.' + ziel]: tag(R) } }],
       ];
     } },
+  treffen: { t: 'Zusammen losziehen', art: 'ruhig', kraft: 1, wenn: (R, wer) => !!TREFF[wer] && hat(R, 'treff.' + wer) && !hat(R, 'meidet.' + wer),
+    szene: (R, { wer }) => [['t', TREFF[wer].text[0]], ['t', TREFF[wer].text[1]], ['e', { druck: -15, bond: { [wer]: 1 }, flags: { ['treff.' + wer]: false, ['getroffen.' + wer]: true } }]] },
   reden: { t: 'Reden', art: 'ruhig', kraft: 0,
     szene: (R, { wer }) => {
       if (hat(R, 'meidet.' + wer)) return [['s', wer, GROSSE.includes(wer) ? 'Nicht jetzt.' : 'Lass mich.']];
@@ -456,7 +469,7 @@ export function statistSagt(R, wer) {
 }
 export const TRATSCH_ZEILEN = TRATSCH.map((x) => x[1]).concat(GRUSS);
 
-export const LEUTE_REIHE = ['gestehen', 'reden', 'einladen', 'helfen', 'entschuldigen', 'zurueck', 'leihen', 'laestern', 'filmen', 'aufziehen', 'schubsen'];
+export const LEUTE_REIHE = ['gestehen', 'treffen', 'reden', 'einladen', 'helfen', 'entschuldigen', 'zurueck', 'leihen', 'laestern', 'filmen', 'aufziehen', 'schubsen'];
 
 // ---------- Folgen (jeden Morgen geprüft) ----------
 const freund = (R, z) => !!z && bond(R, z) >= 2;
@@ -503,6 +516,10 @@ export const FOLGEN = [
   { id: 'buehne.fest', wenn: (R) => hat(R, 'buehne') && wert(R, 'buehne.jz', -1) !== R.jz,
     text: ['Maëlle hat dich für das Fest eingetragen.', 'Dein Name steht auf dem Plakat am Markt.'],
     e: () => ({ bond: { maelle: 1 }, chat: { von: 'maelle', text: 'Ich hab dich einfach eingetragen. Sag nicht Nein.' } }) },
+  // Freundschaft: Wer jemandem nahe ist, wird eingeladen (einmal je Person)
+  ...TREFF_LEUTE.map((w) => ({ id: 'freund.' + w, wenn: (R) => bond(R, w) >= 3 && !hat(R, 'meidet.' + w),
+    text: [NAME[w] + ' hat dir geschrieben.', 'Seit wann schreibt dir hier jemand zuerst?'],
+    e: () => ({ flag: 'treff.' + w, chat: { von: w, text: TREFF[w].chat } }) })),
   // Lagerfeuer: Wer mitgefilmt hat, dessen Clip geht rum
   { id: 'lager.clip', wenn: (R) => hat(R, 'lager.gefilmt'),
     text: ['Dein Video von Pits Sturz geht durch die Gruppe.', 'Er war heute nicht am Brunnen.'],
