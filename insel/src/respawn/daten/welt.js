@@ -47,7 +47,14 @@ export const ORT_AKTIONEN = {
     ['spiel', { titel: 'Im richtigen Moment abspringen', bild: '🛹' }, (g) => (g.treffer >= 3 ? [['s', 'pit', 'Dreimal gestanden. Respekt, echt.'], ['e', { druck: -20, bond: { pit: 2 }, ruf: { hafen: 1 } }]]
       : g.treffer >= 1 ? [['t', 'Einmal gestanden, sonst Asphalt. Pit grinst.'], ['e', { druck: -15, bond: { pit: 1 } }]]
       : [['t', 'Du fällst zehnmal. Pit lacht nicht einmal.'], ['e', { druck: -10, bond: { pit: 1 } }]])]]) },
-  abhaengen: { t: 'Mit der Crew abhängen', art: 'weg', kraft: 1, szene: () => [['t', 'Musik aus einer Box. Mikas Crew macht dir Platz.'], ['e', { druck: -15, ruf: { krater: 1 }, bond: { yara: 1 }, spaet: 1 }]] },
+  // Kleines Spiel „Nicht zucken“: Mika täuscht an oder wirft wirklich einen Kronkorken. Nur beim echten Wurf fangen.
+  abhaengen: { t: 'Mit der Crew abhängen', art: 'weg', kraft: 1, szene: () => [['t', 'Musik aus einer Box. Mikas Crew macht dir Platz.'],
+    ['s', 'mika', 'Fang den Deckel. Aber nur, wenn ich wirklich werfe.'],
+    ['zuck', { titel: 'Fang nur den echten Wurf' }, (z) => (z.richtig >= 6
+      ? [['s', 'mika', 'Du zuckst nicht mal. Respekt.'], ['e', { druck: -15, ruf: { krater: 2 }, bond: { yara: 1 }, spaet: 1 }]]
+      : z.richtig >= 3
+        ? [['t', 'Ein paar gefangen, ein paar Mal gezuckt. Alle lachen.'], ['e', { druck: -15, ruf: { krater: 1 }, bond: { yara: 1 }, spaet: 1 }]]
+        : [['s', 'mika', 'Du zuckst bei allem. Entspann dich mal.'], ['e', { druck: -8, ruf: { krater: 1 }, bond: { yara: 1 }, spaet: 1 }]])]] },
   // Wettlauf (lauf.js): in 29 Sekunden zum Leuchtturm (bis oben an den Turm). Zu Fuß knapp, mit dem eigenen Roller leicht. Einmal am Tag.
   rennen: { t: 'Rennen gegen Pit', art: 'mut', kraft: 1, lauf: { ziel: LEUCHTTURM, sekunden: 29, name: 'Leuchtturm' },
     wenn: (R) => !hat(R, 'pit.weg') && !hat(R, 'meidet.pit') && wert(R, 'rennen.tag', -1) !== tag(R),

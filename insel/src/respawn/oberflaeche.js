@@ -190,6 +190,55 @@ export function createOberflaeche({ game }) {
       if (test) { richtig = Math.max(0, runden - 1); setTimeout(ende, 20); } else zeige();
     });
   }
+  // ---------- Nicht zucken: nur reagieren, wenn es echt ist ----------
+  // Jemand täuscht an (die Faust wackelt) oder wirft wirklich (gelber Deckel fliegt). Tippen nur beim echten Wurf.
+  // Wer bei der Finte tippt oder zu früh, hat gezuckt. Viel Druck: weniger Zeit zum Fangen. → { richtig, von }
+  function nichtZucken({ titel = 'Fang nur den echten Wurf', runden = 7, druck = 0 } = {}) {
+    return new Promise((resolve) => {
+      const eng = druck >= 60, fenster = 720 * (eng ? 0.75 : 1);
+      const g = el('rs-geschick rs-zuck hud-interactive', `<small>${esc(titel)}</small>
+        <div class="rs-z-feld"><b class="rs-z-hand">✊</b></div>
+        <div class="rs-g-fuss"><span class="rs-g-punkte">${'<i></i>'.repeat(runden)}</span><span class="rs-g-tipp">${eng ? 'Viel Druck. Du bist schreckhaft.' : 'Wackeln ist nur angetäuscht.'}</span></div>`);
+      root.appendChild(g);
+      requestAnimationFrame(() => g.classList.add('is-da'));
+      const hand = g.querySelector('.rs-z-hand'), tippText = g.querySelector('.rs-g-tipp'), punkte = [...g.querySelectorAll('.rs-g-punkte i')];
+      const wuerfe = Math.ceil(runden * 0.57), plan = Array.from({ length: runden }, (_, i) => (i < wuerfe ? 'wurf' : 'finte'));
+      for (let i = plan.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [plan[i], plan[j]] = [plan[j], plan[i]]; }
+      let runde = 0, richtig = 0, phase = 'pause', uhr = 0, fertig = false; const t0 = performance.now();
+      const ende = () => {
+        if (fertig) return; fertig = true; clearTimeout(uhr);
+        window.removeEventListener('keydown', taste, true); window.removeEventListener('pointerdown', ueberall, true); game.events.off('respawn:weiter', ab);
+        g.classList.remove('is-da'); setTimeout(() => { g.remove(); resolve({ richtig, von: runden }); }, test ? 0 : 220);
+      };
+      const ab = () => { richtig = Math.max(richtig, runden - 1); ende(); };   // Tests und Autopilot
+      const neu = () => { phase = 'ruhe'; hand.className = 'rs-z-hand'; hand.textContent = '✊'; uhr = setTimeout(los, 800 + Math.random() * 1300); };
+      const los = () => {
+        phase = plan[runde];
+        hand.classList.add(phase === 'wurf' ? 'ist-wurf' : 'ist-finte'); if (phase === 'wurf') hand.textContent = '🟡';
+        uhr = setTimeout(() => werte(phase === 'finte', phase === 'wurf' ? 'Zu spät.' : 'Nicht gezuckt.'), phase === 'wurf' ? fenster : 560);
+      };
+      const werte = (gut, wort) => {
+        clearTimeout(uhr); phase = 'pause';
+        if (gut) richtig++;
+        try { game.audio.play(gut ? 'pickup' : 'error'); } catch (e) { /* Ton ist Zugabe */ }
+        punkte[runde].className = gut ? 'ist-gut' : 'ist-daneben';
+        hand.classList.add(gut ? 'ist-gut' : 'ist-daneben'); tippText.textContent = wort;
+        runde++;
+        uhr = setTimeout(() => { if (runde >= runden) ende(); else neu(); }, 700);
+      };
+      function tipp(e) {
+        if (e && e.preventDefault) e.preventDefault();
+        if (fertig || phase === 'pause' || performance.now() - t0 < 350) return;
+        if (phase === 'wurf') werte(true, 'Gefangen.'); else werte(false, 'Gezuckt.');
+      }
+      const taste = (e) => { if (e.code === 'Space' || e.code === 'Enter' || e.code === 'KeyE') { e.preventDefault(); e.stopPropagation(); tipp(); } };
+      const ueberall = (e) => { if (e.target && e.target.closest && e.target.closest('button, .menu, .overlay')) return; tipp(e); };
+      window.addEventListener('pointerdown', ueberall, true);
+      window.addEventListener('keydown', taste, true);
+      game.events.on('respawn:weiter', ab);
+      if (test) { richtig = Math.max(0, runden - 1); setTimeout(ende, 20); } else neu();
+    });
+  }
   // ---------- Durchatmen: Finger halten = einatmen, loslassen = ausatmen ----------
   // Ein Kreis wird groß (einatmen, 3 s) und klein (ausatmen, 4 s). Wer mitgeht, wird ruhiger. Kein Text darüber, warum.
   // → { gut }  Zahl der Atemzüge, bei denen man gut mitgegangen ist (0..zuege)
@@ -398,7 +447,7 @@ export function createOberflaeche({ game }) {
   }
 
   return {
-    status, wirkung, melde, erzaehler, gedanke, geschick, atmen, merken, wahl, titelkarte, kartenZiehen, freizeit, abschluss, start,
+    status, wirkung, melde, erzaehler, gedanke, geschick, atmen, merken, nichtZucken, wahl, titelkarte, kartenZiehen, freizeit, abschluss, start,
     handy(R, meta, welt) { handy(R, meta, welt); },
     setzeHandy(fn) { handyAuf = fn; },
   };

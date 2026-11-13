@@ -53,6 +53,7 @@ function durchlaufe(schritte, R, f, tiefe = 0) {
     if (s[0] === 'spiel') for (const treffer of [0, 1, 2, 3]) durchlaufe(s[2]({ treffer, von: 3 }, R), R, f, tiefe);   // Geschick: alle Ausgänge prüfen
     if (s[0] === 'atem') for (const gut of [0, 1, 2, 3]) durchlaufe(s[2]({ gut }, R), R, f, tiefe);   // Durchatmen: alle Ausgänge prüfen
     if (s[0] === 'merk') for (const richtig of [0, 1, 2, 3]) durchlaufe(s[2]({ richtig, von: 3 }, R), R, f, tiefe);   // Merken: alle Ausgänge prüfen
+    if (s[0] === 'zuck') for (const richtig of [0, 3, 5, 7]) durchlaufe(s[2]({ richtig, von: 7 }, R), R, f, tiefe);   // Nicht zucken: alle Ausgänge prüfen
   }
 }
 test('Schreibregeln: Blase ≤ 12 Wörter, Wahl ≤ 6 Wörter, bekannte Figuren, bekannte Akten-Einträge', () => {

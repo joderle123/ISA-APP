@@ -91,3 +91,7 @@ man darf fast alles tun (auch Mist), keine Waffen, kein Gefängnis. Die Folgen s
     Durchatmen, Merken) sind jetzt genau so breit wie das Bild (vorher 4 Pixel zu breit).
   - **Lucindas Garten ist zu sehen** (`stadt.js` 2d2, Kenney „Nature Kit“, CC0): drei Beete mit Salat, Mais, Kürbis, Melone,
     Möhren und Blumen neben ihrem Stand. `tools/stadt/stadt.py` liest jetzt auch Bausätze ohne Farbtafel (Farbe im Material).
+  - **Nicht zucken** (`oberflaeche.js` → `nichtZucken`, Szenen-Schritt `['zuck', { titel }, (ergebnis) => Schritte]`, Ergebnis
+    `{ richtig, von }`): Mika täuscht an (die Faust wackelt) oder wirft wirklich einen Kronkorken (gelb, groß). Tippen nur
+    beim echten Wurf – wer bei der Finte oder zu früh tippt, hat gezuckt. Sieben Durchgänge; viel Druck lässt weniger Zeit.
+    Benutzt am Krater bei „Mit der Crew abhängen“. Sinn ohne Lehre: erst schauen, was wirklich passiert, dann reagieren.
