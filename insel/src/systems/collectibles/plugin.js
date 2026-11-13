@@ -172,6 +172,7 @@ export default {
       ringFg = ring.querySelector('.fg'); ringTxt = ring.querySelector('span');
     }
     function apUpdate(dt) {
+      if (game.gameMode === 'respawn') return;   // Aussichtspunkte gehören zu LUMO (sonst erscheint dort „Bleib kurz. Schau.“)
       const p = player.position;
       let near = null;
       for (const it of items) {

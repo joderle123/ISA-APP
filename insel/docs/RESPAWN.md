@@ -95,3 +95,5 @@ man darf fast alles tun (auch Mist), keine Waffen, kein Gefängnis. Die Folgen s
     `{ richtig, von }`): Mika täuscht an (die Faust wackelt) oder wirft wirklich einen Kronkorken (gelb, groß). Tippen nur
     beim echten Wurf – wer bei der Finte oder zu früh tippt, hat gezuckt. Sieben Durchgänge; viel Druck lässt weniger Zeit.
     Benutzt am Krater bei „Mit der Crew abhängen“. Sinn ohne Lehre: erst schauen, was wirklich passiert, dann reagieren.
+  - **Reste aus LUMO entfernt:** Der Knopf „Feuer“ an den Signalfeuern (Speichern in LUMO) und der Hinweis „Bleib kurz. Schau.“
+    an Aussichtspunkten erscheinen in RESPAWN nicht mehr (`signalfeuer.js`, `collectibles/plugin.js`, je eine Zeile).

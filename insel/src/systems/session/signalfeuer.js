@@ -47,7 +47,7 @@ export function createSignalfeuer({ game, evalCond, onSchluss }) {
     f.prop = findProp(f.x, f.z) || (game.props ? game.props.spawn('signalfeuer', { id: 'sf-' + f.id, x: f.x, z: f.z, lit: false }) : null);
     if (f.prop && f.prop.setLit) f.prop.setLit(isLit(f.id));
     if (game.interactions) {
-      f.interaction = game.interactions.add({ id: 'feuer-' + f.id, x: f.x, z: f.z, radius: 3.4, label: 'Feuer', priority: 0, onAction: () => menu(f.id) });
+      f.interaction = game.interactions.add({ id: 'feuer-' + f.id, x: f.x, z: f.z, radius: 3.4, label: 'Feuer', priority: 0, enabled: game.gameMode !== 'respawn', onAction: () => menu(f.id) });   // in RESPAWN ohne Knopf (dort speichert das Spiel selbst)
     }
     fires.set(f.id, f);
     return f;
