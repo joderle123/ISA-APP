@@ -467,7 +467,8 @@
           say(oo.rule || g.tagline || 'Los geht’s.', { eyebrow: 'So geht’s', cls: 'rule-card' })),
         oo.levels && ctx.unterricht ? h('div', { class: 'row', style: { gap: '10px' } }, h('span', { class: 'muted small' }, 'So steigt es an:'), stufenLeiste(0, oo.levels === true ? null : oo.levels)) : null,
         oo.steps && (ctx.unterricht || oo.steps.length <= 3) ? U().steps(oo.steps, { row: oo.steps.length <= 3 }) : null,
-        h('div', { class: 'row' }, (oo.safety || g.safety || []).map((k) => safetyLine(k)), g.help ? safetyLine('freiwillig') : null),
+        // jeder Hinweis nur einmal (auch wenn das Spiel „freiwillig“ schon selbst nennt)
+        h('div', { class: 'row' }, [...new Set((oo.safety || g.safety || []).concat(g.help ? ['freiwillig'] : []))].map((k) => safetyLine(k))),
       ], { eyebrow: 'Start', step: 0 });
       const opts = [];
       if (oo.probe) opts.push({ label: 'Probe-Runde (10 Sek.)', value: 'probe', variant: 'ghost', icon: 'play', id: 'btn-probe' });

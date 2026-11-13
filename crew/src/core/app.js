@@ -109,7 +109,9 @@
     const p = document.getElementById('btn-pause') || x;
     const rx = x.getBoundingClientRect();
     const rp = p.getBoundingClientRect();
-    const right = Math.max(8, window.innerWidth - Math.max(rx.right, rp.right) - 4);
+    // schmale Geräte: Blase ganz ins Bild schieben (sie ist bis 380 px breit), der Pfeil zeigt weiter auf das X
+    const breit = Math.min(380, window.innerWidth - 24);
+    const right = Math.min(Math.max(8, window.innerWidth - Math.max(rx.right, rp.right) - 4), Math.max(8, window.innerWidth - breit - 12));
     const box = h('div', { class: 'coach', role: 'status', style: { top: Math.round(Math.max(rx.bottom, rp.bottom) + 14) + 'px', right: right + 'px' } },
       h('span', { class: 'coach-arrow', style: { right: Math.max(14, window.innerWidth - right - (rx.left + rx.width / 2) - 10) + 'px' } }),
       h('span', { class: 'eyebrow' }, 'Neu hier oben'),
@@ -333,7 +335,7 @@
         c.addEventListener('click', () => { CREW.sound.play('tap'); chosen = n; needName = false; input.value = ''; draw(); });
         return c;
       }), ui.iconBtn('shuffle', () => { names = CREW.util.shuffle(NAME_A).slice(0, 3); draw(); }, { label: 'Neue Vorschläge' }));
-      const input = h('input', { type: 'text', id: 'crew-name', maxlength: '24', placeholder: 'oder eigenen Crew-Namen eintippen (ohne echte Namen)', value: chosen && !names.includes(chosen) ? chosen : '' });
+      const input = h('input', { type: 'text', id: 'crew-name', maxlength: '24', placeholder: window.innerWidth < 520 ? 'Eigener Name (kein echter)' : 'oder eigenen Crew-Namen eintippen (ohne echte Namen)', value: chosen && !names.includes(chosen) ? chosen : '' });
       input.addEventListener('input', () => {
         chosen = input.value.trim() || null;
         foundLabel();
