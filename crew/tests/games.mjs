@@ -76,7 +76,8 @@ async function playGame(page, id, tag, withShots) {
 }
 
 /* ---------- Spiele auf zwei Bildschirmgrößen ---------- */
-for (const [vpName, vp] of [['ipadLandscape', VIEWPORTS.ipadLandscape], ['beamer', VIEWPORTS.beamer]]) {
+// CREW_HANDY=1: stattdessen alle Spiele einmal auf einem kleinen Handy (360×640), mit Layout-Prüfung
+for (const [vpName, vp] of process.env.CREW_HANDY ? [['handy', { width: 360, height: 640 }]] : [['ipadLandscape', VIEWPORTS.ipadLandscape], ['beamer', VIEWPORTS.beamer]]) {
   const { browser, page, errors } = await launch(vp);
   let ids = await page.evaluate(() => window.CREW.games.list().map((g) => g.id));
   if (ONLY) ids = ids.filter((id) => ONLY.includes(id));
@@ -91,7 +92,7 @@ for (const [vpName, vp] of [['ipadLandscape', VIEWPORTS.ipadLandscape], ['beamer
   });
   const timings = [];
   for (const id of ids) {
-    const ms = await playGame(page, id, `game-${vpName}-${id}`, vpName === 'ipadLandscape');
+    const ms = await playGame(page, id, `game-${vpName}-${id}`, vpName === 'ipadLandscape' || vpName === 'handy');
     timings.push(id + ' ' + (ms / 1000).toFixed(1) + 's');
     const errHere = errors.splice(0);
     errHere.forEach((e) => problems.push(`game-${vpName}-${id}: ${e}`));

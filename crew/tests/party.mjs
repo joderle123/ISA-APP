@@ -14,7 +14,7 @@ const expect = (cond, msg) => { if (!cond) problems.push(msg); };
 const PARTY = ['zuendschnur', 'geheimauftrag', 'zwei-wahrheiten', 'notfall-pitch', 'sags-mal-so', 'gleicher-kopf', 'nicht-zucken', 'fehler-im-bild', 'treffer', 'seitenwechsel', 'jagd',
   'kritzel-blitz', 'verboten', 'ohne-worte', 'tauziehen', 'blink-kette', 'zehn-sekunden'];
 
-for (const [name, vp] of [['ipadLandscape', VIEWPORTS.ipadLandscape], ['handy', { width: 390, height: 780 }]]) {
+for (const [name, vp] of [['ipadLandscape', VIEWPORTS.ipadLandscape], ['handy', { width: 390, height: 780 }], ['handyKlein', { width: 360, height: 640 }]]) {
   const browser = await pw.chromium.launch();
   const context = await browser.newContext({ viewport: vp, hasTouch: true, deviceScaleFactor: 1 });
   const page = await context.newPage();
@@ -71,4 +71,4 @@ for (const [name, vp] of [['ipadLandscape', VIEWPORTS.ipadLandscape], ['handy', 
   await browser.close();
 }
 if (problems.length) { console.log('PROBLEME:\n' + problems.join('\n')); process.exit(1); }
-console.log('party :: ' + PARTY.length + ' Spiele auf 2 Bildschirmgrößen, 0 Probleme');
+console.log('party :: ' + PARTY.length + ' Spiele auf 3 Bildschirmgrößen, 0 Probleme');
