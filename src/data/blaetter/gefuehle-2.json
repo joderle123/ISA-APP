@@ -222,7 +222,7 @@
         "ziel": "Die Kinder lernen verschiedene Quellen von Trost kennen – Menschen, Dinge, Tätigkeiten und hilfreiche Sätze – und stellen einen persönlichen Trost-Koffer mit einem Plan für traurige Tage zusammen.",
         "ablauf": [
           "Einstieg (5 Min.): Geschichte vorlesen. Fragen: „Was hat Nora geholfen? Ist ihre Traurigkeit jetzt weg?“",
-          "Aufgabe 1 (5 Min.): Zuordnen und besprechen: Trost kann ein Mensch, ein Ding, eine Tätigkeit oder ein Satz sein.",
+          "Aufgabe 1 (5 Min.): Zuordnen und besprechen: Trost kann ein Mensch, ein Ding, eine Tätigkeit oder ein Satz sein. Lösung (von oben): ein Mensch – ein Ding – etwas tun – ein Satz.",
           "Aufgabe 2 (10 Min.): Koffer in Einzelarbeit packen. Zeichnen ist ausdrücklich erlaubt.",
           "Aufgabe 3 (10 Min.): Trost-Karten auswählen, eigene ergänzen, ausschneiden und in einen Umschlag stecken.",
           "Aufgabe 4 (5 Min.): Plan ausfüllen. Betonen: Wenn der Koffer nicht reicht, ist Hilfe holen der richtige Schritt."
@@ -319,7 +319,7 @@
         "ziel": "Les enfants découvrent différentes sources de réconfort – personnes, objets, activités et phrases utiles – et composent une valise de réconfort personnelle avec un plan pour les jours tristes.",
         "ablauf": [
           "Entrée en matière (5 min) : lire l’histoire. Questions : « Qu’est-ce qui a aidé Nora ? Sa tristesse a-t-elle disparu maintenant ? »",
-          "Exercice 1 (5 min) : relier et discuter : le réconfort peut être une personne, un objet, une activité ou une phrase.",
+          "Exercice 1 (5 min) : relier et discuter : le réconfort peut être une personne, un objet, une activité ou une phrase. Solution (de haut en bas) : une personne – un objet – faire quelque chose – une phrase.",
           "Exercice 2 (10 min) : préparer la valise en individuel. Dessiner est expressément permis.",
           "Exercice 3 (10 min) : choisir les cartes de réconfort, en ajouter, les découper et les mettre dans une enveloppe.",
           "Exercice 4 (5 min) : remplir le plan. Souligner : quand la valise ne suffit pas, demander de l’aide est la bonne étape."
@@ -431,7 +431,7 @@
         "ablauf": [
           "Einstieg (5 Min.): „Woran merkt man, dass jemand einfach einen schlechten Tag hat?“ Nicht nach eigenen Erfahrungen fragen.",
           "Info-Kästen lesen (5 Min.): Entscheidend sind Dauer, Häufigkeit und Folgen für den Alltag.",
-          "Aufgabe 1 zu zweit (10 Min.), dann begründen. Unklare Fälle sind gewollt: im Zweifel nachfragen.",
+          "Aufgabe 1 zu zweit (10 Min.), dann begründen. Unklare Fälle sind gewollt: im Zweifel nachfragen. Lösung: eher ein Durchhänger – 1, 3; eher mehr als das – 2, 4; begründete andere Einschätzungen gelten.",
           "Aufgaben 2 und 3 (10 Min.): Schritte besprechen, Gesprächsanfänge formulieren, freiwillig vorlesen.",
           "Aufgabe 4 allein (10 Min.), nicht einsammeln. SePAS mit Raum und Sprechzeiten nennen; sagen, wann Sie erreichbar sind."
         ],
@@ -530,7 +530,7 @@
         "ablauf": [
           "Entrée en matière (5 min) : « À quoi voit-on que quelqu’un a juste une mauvaise journée ? » Ne pas demander d’expériences personnelles.",
           "Lire les encadrés (5 min) : ce qui compte, c’est la durée, la fréquence et l’impact sur le quotidien.",
-          "Exercice 1 à deux (10 min), puis justifier. Les cas ambigus sont voulus : dans le doute, mieux vaut demander.",
+          "Exercice 1 à deux (10 min), puis justifier. Les cas ambigus sont voulus : dans le doute, mieux vaut demander. Solution : plutôt un coup de mou – 1, 3 ; plutôt plus que ça – 2, 4 ; d’autres réponses justifiées comptent aussi.",
           "Exercices 2 et 3 (10 min) : discuter les étapes, formuler des premières phrases, lecture volontaire.",
           "Exercice 4 en individuel (10 min), sans ramasser. Indiquer le SePAS (salle, horaires) et quand vous êtes joignable."
         ],
@@ -1314,7 +1314,7 @@
         {
           "art": "satzanfaenge",
           "linien": 2,
-          "items": ["Am meisten gefreut habe ich mich über …", "Dazu habe ich selbst beigetragen: …", "Das ist mir in dieser Woche aufgefallen: …"]
+          "items": ["Am meisten gefreut habe ich mich über …", "Dazu habe ich selbst beigetragen: …", "Das ist mir in dieser Woche aufgefallen: …", "Das mache ich nächste Woche wieder: …"]
         }
       ],
       "lehrer": {
@@ -1374,7 +1374,7 @@
         {
           "art": "satzanfaenge",
           "linien": 2,
-          "items": ["Ce qui m’a fait le plus plaisir, c’est …", "J’y ai moi-même contribué : …", "Voici ce que j’ai remarqué cette semaine : …"]
+          "items": ["Ce qui m’a fait le plus plaisir, c’est …", "J’y ai moi-même contribué : …", "Voici ce que j’ai remarqué cette semaine : …", "Ce que je refais la semaine prochaine : …"]
         }
       ],
       "lehrer": {

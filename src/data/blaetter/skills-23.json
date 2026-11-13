@@ -136,7 +136,8 @@
           "art": "satzanfaenge",
           "items": [
             "Mir bleibt im Kopf: …",
-            "Weil …"
+            "Weil …",
+            "Wird es bei mir einmal schwer, kann mir das helfen: …"
           ],
           "linien": 1
         }
@@ -274,7 +275,8 @@
           "art": "satzanfaenge",
           "items": [
             "Ce qui me reste en tête : …",
-            "Parce que …"
+            "Parce que …",
+            "Si un jour c’est difficile pour moi, ce qui peut m’aider : …"
           ],
           "linien": 1
         }

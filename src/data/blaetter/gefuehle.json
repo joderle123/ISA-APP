@@ -423,7 +423,7 @@
         "ablauf": [
           "Einstieg (5 Min.): Einen Satz („Ich habe ein Päckchen bekommen.“) froh, wütend und ängstlich sagen. Frage: „Woran habt ihr gemerkt, wie ich mich fühle?“ Antworten nach Gesicht, Körper und Stimme ordnen.",
           "Aufgabe 1: Sätze vorlesen, die Kinder kreuzen an. Die drei richtigen Hinweise gemeinsam vormachen.",
-          "Aufgabe 2: Situationen lesen und verbinden. Nachfragen: „Könnte man sich auch anders fühlen?“ Mehrere Gefühle zugleich sind möglich.",
+          "Aufgabe 2: Situationen lesen und verbinden. Nachfragen: „Könnte man sich auch anders fühlen?“ Mehrere Gefühle zugleich sind möglich. Lösung (von oben): wütend – ängstlich – froh – traurig; begründete andere Zuordnungen gelten.",
           "Aufgabe 3: Pantomime zu zweit (5–10 Min.). Wer rät, nennt einen Hinweis: „Ich glaube, du bist traurig, weil dein Kopf hängt.“",
           "Abschluss: Eine Detektiv-Regel festhalten: „Erst genau hinschauen, dann nachfragen: Bist du traurig?“"
         ],
@@ -491,7 +491,7 @@
         "ablauf": [
           "Entrée en matière (5 min) : dire une phrase (« J’ai reçu un colis. ») sur un ton joyeux, en colère, puis inquiet. Question : « À quoi avez-vous remarqué ce que je ressens ? » Classer les réponses : visage, corps, voix.",
           "Exercice 1 : lire les phrases, les enfants cochent. Mimer ensemble les trois bons indices.",
-          "Exercice 2 : lire les situations et relier. Demander : « Pourrait-on aussi ressentir autre chose ? » Plusieurs émotions en même temps sont possibles.",
+          "Exercice 2 : lire les situations et relier. Demander : « Pourrait-on aussi ressentir autre chose ? » Plusieurs émotions en même temps sont possibles. Solution (de haut en bas) : la colère – la peur – la joie – la tristesse ; d’autres réponses justifiées comptent aussi.",
           "Exercice 3 : mime à deux (5 à 10 min). Celui ou celle qui devine donne un indice : « Je crois que tu es triste, parce que ta tête est baissée. »",
           "Conclusion : retenir une règle du détective : « D’abord bien regarder, puis demander : es-tu triste ? »"
         ],
@@ -805,7 +805,7 @@
         {"art": "aufgabe", "text": "Schau auf deine Woche zurück."},
         {
           "art": "satzanfaenge",
-          "items": ["Am häufigsten war ich im Feld …", "In das rote Feld bringt mich oft …", "Aus dem roten oder blauen Feld hilft mir …"],
+          "items": ["Am häufigsten war ich im Feld …", "In das rote Feld bringt mich oft …", "Aus dem roten oder blauen Feld hilft mir …", "Bin ich das nächste Mal im roten Feld, probiere ich zuerst: …"],
           "linien": 2
         },
         {
@@ -923,7 +923,7 @@
         {"art": "aufgabe", "text": "Fais le bilan de ta semaine."},
         {
           "art": "satzanfaenge",
-          "items": ["J’étais le plus souvent dans la zone …", "Ce qui me fait passer dans le rouge : …", "Ce qui m’aide à sortir du rouge ou du bleu : …"],
+          "items": ["J’étais le plus souvent dans la zone …", "Ce qui me fait passer dans le rouge : …", "Ce qui m’aide à sortir du rouge ou du bleu : …", "La prochaine fois que je suis dans le rouge, j’essaie d’abord : …"],
           "linien": 2
         },
         {

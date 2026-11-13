@@ -856,7 +856,8 @@
             "Am meisten geboten habe ich für …",
             "Verzichten musste ich auf …",
             "Das hat mich an mir überrascht: …",
-            "Hinter meinem teuersten Gebot steckt der Wert …"
+            "Hinter meinem teuersten Gebot steckt der Wert …",
+            "So zeige ich diesen Wert diese Woche: …"
           ],
           "linien": 1
         }
@@ -965,7 +966,8 @@
             "J’ai enchéri le plus pour …",
             "J’ai dû renoncer à …",
             "Ce que j’ai découvert de surprenant sur moi : …",
-            "Derrière mon enchère la plus élevée se trouve la valeur …"
+            "Derrière mon enchère la plus élevée se trouve la valeur …",
+            "Voilà comment je montre cette valeur cette semaine : …"
           ],
           "linien": 1
         }
@@ -1552,7 +1554,8 @@
           "items": [
             "Das soll an mir so bleiben: …",
             "Das soll an mir wachsen: …",
-            "Mit 21 möchte ich jemand sein, der …"
+            "Mit 21 möchte ich jemand sein, der …",
+            "Dafür mache ich diesen Monat einen kleinen Schritt: …"
           ],
           "linien": 2
         },
@@ -1680,7 +1683,8 @@
           "items": [
             "Ce qui doit rester ainsi chez moi : …",
             "Ce qui doit grandir chez moi : …",
-            "À 21 ans, je voudrais être quelqu’un qui …"
+            "À 21 ans, je voudrais être quelqu’un qui …",
+            "Pour cela, je fais un petit pas ce mois-ci : …"
           ],
           "linien": 2
         },

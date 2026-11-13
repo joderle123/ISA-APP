@@ -128,7 +128,8 @@
           "art": "satzanfaenge",
           "items": [
             "Elias hätte gebraucht, dass …",
-            "Wenn bei mir … unter der Wut liegt, hilft mir …"
+            "Wenn bei mir … unter der Wut liegt, hilft mir …",
+            "Werde ich das nächste Mal wütend, frage ich mich zuerst: …"
           ],
           "linien": 2
         },
@@ -262,7 +263,8 @@
           "art": "satzanfaenge",
           "items": [
             "Elias aurait eu besoin que …",
-            "Quand il y a … sous ma colère, ce qui m’aide, c’est …"
+            "Quand il y a … sous ma colère, ce qui m’aide, c’est …",
+            "La prochaine fois que la colère monte, je me demande d’abord : …"
           ],
           "linien": 2
         },
@@ -455,7 +457,8 @@
           "items": [
             "Meine Wut kam vor allem, wenn …",
             "Darunter lag meistens …",
-            "Meine Zündschnur war am kürzesten, wenn …"
+            "Meine Zündschnur war am kürzesten, wenn …",
+            "Merke ich mein erstes Zeichen, mache ich als Erstes: …"
           ],
           "linien": 2
         },
@@ -613,7 +616,8 @@
           "items": [
             "Ma colère venait surtout quand …",
             "En dessous, il y avait le plus souvent …",
-            "Ma mèche était la plus courte quand …"
+            "Ma mèche était la plus courte quand …",
+            "Quand je remarque mon premier signal, je fais d’abord : …"
           ],
           "linien": 2
         },
@@ -1593,7 +1597,7 @@
         "ziel": "Die Jugendlichen trennen Tat und Person, erkennen die vier Teile einer guten Entschuldigung, beantworten die Fragen der Wiedergutmachung und planen eine passende Wiedergutmachung.",
         "ablauf": [
           "Einstieg (5 Min.): Geschichte vorlesen. „Was hält Diogo davon ab, es wiedergutzumachen?“",
-          "Aufgabe 1 und 2 (10 Min.), dann den Merkkasten an der Tafel festhalten.",
+          "Aufgabe 1 und 2 (10 Min.), dann den Merkkasten an der Tafel festhalten. Lösung Aufgabe 2: echt – 3, 5, 6; Ausrede – 1, 2, 4.",
           "Aufgabe 3 in zwei Hälften (8 Min.): die Leitung liest die Fragen vor, beide Seiten antworten im Wechsel.",
           "Aufgabe 4 allein (7 Min.): für Diogo oder eine eigene Situation. Nicht einsammeln."
         ],
@@ -1756,7 +1760,7 @@
         "ziel": "Les jeunes distinguent l’acte de la personne, reconnaissent les quatre parties de bonnes excuses, répondent aux questions de la réparation et planifient une réparation adaptée.",
         "ablauf": [
           "Entrée en matière (5 min) : lire l’histoire. « Qu’est-ce qui empêche Diogo de réparer ? »",
-          "Tâches 1 et 2 (10 min), puis fixer l’encadré à retenir au tableau.",
+          "Tâches 1 et 2 (10 min), puis fixer l’encadré à retenir au tableau. Solution de la tâche 2 : sincère – 3, 5, 6 ; prétexte – 1, 2, 4.",
           "Tâche 3 en deux moitiés (8 min) : l’adulte lit les questions, les deux côtés répondent à tour de rôle.",
           "Tâche 4 individuellement (7 min) : pour Diogo ou une situation personnelle. Ne pas ramasser."
         ],
@@ -1942,7 +1946,8 @@
           "art": "satzanfaenge",
           "items": [
             "In diese Schublade werde ich manchmal gesteckt: …",
-            "Diese Schublade bemerke ich manchmal bei mir selbst: …"
+            "Diese Schublade bemerke ich manchmal bei mir selbst: …",
+            "Bemerke ich die Schublade bei mir wieder, frage ich mich: …"
           ],
           "linien": 2
         },
@@ -1956,9 +1961,9 @@
       "lehrer": {
         "ziel": "Die Jugendlichen unterscheiden Kategorie, Stereotyp, Vorurteil und Diskriminierung, sehen, was eine Schublade anrichtet, und kennen den Schubladen-Check und die Bedingungen für hilfreichen Kontakt.",
         "ablauf": [
-          "Einstieg (5 Min.): die Kette mit Vorurteilen über Jugendliche erklären, dann Aufgabe 1 allein.",
+          "Einstieg (5 Min.): die Kette mit Vorurteilen über Jugendliche erklären, dann Aufgabe 1 allein. Lösung Aufgabe 1 (von oben): Kategorie – Stereotyp – Vorurteil – Diskriminierung.",
           "Aufgabe 2 zu zweit (8 Min.): „Was macht Rafael, weil alle ihn so sehen?“ Danach den Schubladen-Check lesen.",
-          "Aufgabe 3 nach dem Blitzgruppen-Spiel (5 Min.): erst die vier Bedingungen, dann einschätzen.",
+          "Aufgabe 3 nach dem Blitzgruppen-Spiel (5 Min.): erst die vier Bedingungen, dann einschätzen. Lösung Aufgabe 3: eher nein – eher ja – eher nein – eher ja – eher nein.",
           "Aufgabe 4 allein und freiwillig (3 Min.), nicht vorlesen."
         ],
         "hintergrund": "Allport (1954) zeigte, dass Vorurteile auf einem normalen Denkvorgang aufbauen: Menschen bilden Kategorien, um die Welt schnell zu ordnen. Zum Problem wird das, wenn daraus ein starres Bild aller Mitglieder wird, Abwertung hinzukommt und Handeln folgt. Schon eine bedeutungslose Einteilung in zwei Gruppen reichte, damit 14- und 15-jährige Schüler die eigene Gruppe bevorzugten (Tajfel et al., 1971) – das Blitzgruppen-Spiel macht das erlebbar. Wer immer wieder in dieselbe Schublade gesteckt wird, verhält sich oft irgendwann so, wie es erwartet wird. Nach Allports Kontakthypothese baut Begegnung Vorurteile ab – eine Metaanalyse mit über 500 Studien bestätigte das, am deutlichsten unter den vier Bedingungen auf dem Blatt (Pettigrew & Tropp, 2006).",
@@ -2107,7 +2112,8 @@
           "art": "satzanfaenge",
           "items": [
             "Dans cette case, on me range parfois : …",
-            "Cette case, je la remarque parfois chez moi-même : …"
+            "Cette case, je la remarque parfois chez moi-même : …",
+            "Si je remarque de nouveau cette case chez moi, je me demande : …"
           ],
           "linien": 2
         },
@@ -2121,9 +2127,9 @@
       "lehrer": {
         "ziel": "Les jeunes distinguent catégorie, stéréotype, préjugé et discrimination, voient ce que fait une case et connaissent le test des cases et les conditions d’un contact utile.",
         "ablauf": [
-          "Entrée en matière (5 min) : expliquer la chaîne avec des préjugés sur les jeunes, puis tâche 1 seul.",
+          "Entrée en matière (5 min) : expliquer la chaîne avec des préjugés sur les jeunes, puis tâche 1 seul. Solution de la tâche 1 (de haut en bas) : catégorie – stéréotype – préjugé – discrimination.",
           "Tâche 2 à deux (8 min) : « Que fait Rafael parce que tout le monde le voit ainsi ? » Puis le test des cases.",
-          "Tâche 3 après le jeu des groupes éclairs (5 min) : les quatre conditions, puis évaluer.",
+          "Tâche 3 après le jeu des groupes éclairs (5 min) : les quatre conditions, puis évaluer. Solution de la tâche 3 : plutôt non – plutôt oui – plutôt non – plutôt oui – plutôt non.",
           "Tâche 4 seul, volontaire (3 min), sans lecture à voix haute."
         ],
         "hintergrund": "Allport (1954) a montré que les préjugés reposent sur un processus de pensée normal : on forme des catégories pour ordonner vite le monde. Le problème commence quand s’y ajoutent une image rigide de tous les membres, puis une dévalorisation, puis des actes. Même une répartition sans signification en deux groupes suffisait pour que des élèves de 14 et 15 ans favorisent leur groupe (Tajfel et al., 1971) – le jeu des groupes éclairs permet de le vivre. Qui est sans cesse rangé dans la même case finit souvent par agir comme on l’attend de lui. Selon l’hypothèse du contact d’Allport, la rencontre réduit les préjugés – confirmé par une méta-analyse de plus de 500 études, surtout dans les quatre conditions de la feuille (Pettigrew & Tropp, 2006).",
@@ -2645,8 +2651,8 @@
       "lehrer": {
         "ziel": "Die Jugendlichen erkennen Diskriminierung an drei Merkmalen, ordnen Beispiele der Treppe der Abwertung zu und kennen Wege, zu reagieren und Hilfe zu holen.",
         "ablauf": [
-          "Aufgabe 1 nach der Positionslinie (5 Min.): Grenzfälle besprechen – gleich ist nicht immer gerecht.",
-          "Aufgabe 2 nach dem Input zur Treppe (5 Min.): „Warum lohnt es sich, unten zu reagieren?“",
+          "Aufgabe 1 nach der Positionslinie (5 Min.): Grenzfälle besprechen – gleich ist nicht immer gerecht. Lösung Aufgabe 1: ja – 1, 3, 4, 5; nein – 2 (mehr Zeit gleicht einen Nachteil aus).",
+          "Aufgabe 2 nach dem Input zur Treppe (5 Min.): „Warum lohnt es sich, unten zu reagieren?“ Lösung Aufgabe 2: Stufe 1 – 2 – 3 – 4, in der Reihenfolge der Beispiele.",
           "Tippkasten und Aufgabe 3 nach dem Forumtheater (8 Min.): Welche Wege haben wir ausprobiert?",
           "Aufgabe 4 und Hilfe-Kasten (5 Min.): Vertrauensperson eintragen, Anlaufstellen zeigen."
         ],
@@ -2799,8 +2805,8 @@
       "lehrer": {
         "ziel": "Les jeunes reconnaissent la discrimination à trois critères, classent des exemples sur l’escalier de la dévalorisation et connaissent des façons de réagir et de chercher de l’aide.",
         "ablauf": [
-          "Tâche 1 après la ligne de positionnement (5 min) : discuter les cas limites – égal n’est pas toujours juste.",
-          "Tâche 2 après l’apport sur l’escalier (5 min) : « Pourquoi vaut-il la peine de réagir en bas ? »",
+          "Tâche 1 après la ligne de positionnement (5 min) : discuter les cas limites – égal n’est pas toujours juste. Solution de la tâche 1 : oui – 1, 3, 4, 5 ; non – 2 (le temps en plus compense un désavantage).",
+          "Tâche 2 après l’apport sur l’escalier (5 min) : « Pourquoi vaut-il la peine de réagir en bas ? » Solution de la tâche 2 : marches 1 – 2 – 3 – 4, dans l’ordre des exemples.",
           "Encadré-conseil et tâche 3 après le théâtre-forum (8 min) : quelles façons avons-nous essayées ?",
           "Tâche 4 et encadré d’aide (5 min) : inscrire une personne de confiance, montrer les services où trouver de l’aide."
         ],

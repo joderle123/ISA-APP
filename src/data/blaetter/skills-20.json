@@ -177,7 +177,8 @@
         {
           "art": "satzanfaenge",
           "items": [
-            "Test und Parcours passen zusammen / passen nicht zusammen, weil …"
+            "Test und Parcours passen zusammen / passen nicht zusammen, weil …",
+            "Das probiere ich als Nächstes aus, um mehr herauszufinden: …"
           ],
           "linien": 1
         }
@@ -356,7 +357,8 @@
         {
           "art": "satzanfaenge",
           "items": [
-            "Le test et le parcours concordent / ne concordent pas, parce que …"
+            "Le test et le parcours concordent / ne concordent pas, parce que …",
+            "Ce que j’essaie ensuite pour en savoir plus : …"
           ],
           "linien": 1
         }

@@ -536,7 +536,8 @@
         {
           "art": "satzanfaenge",
           "items": [
-            "Das habe ich gemerkt: …"
+            "Das habe ich gemerkt: …",
+            "Beim nächsten Warten probiere ich: …"
           ]
         }
       ],
@@ -719,7 +720,8 @@
         {
           "art": "satzanfaenge",
           "items": [
-            "Voilà ce que j’ai remarqué : …"
+            "Voilà ce que j’ai remarqué : …",
+            "La prochaine fois que j’attends, j’essaie : …"
           ]
         }
       ],
