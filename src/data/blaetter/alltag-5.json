@@ -144,6 +144,7 @@
         {
           "art": "aufgabe",
           "text": "Dein Kompass: Schreib in jede Himmelsrichtung ein Stichwort aus deinen Antworten. Gib jeder Richtung eine eigene Farbe.",
+          "hinweis": "Beispiel: „Das kann ich“ – Fahrräder reparieren. „So arbeite ich gern“ – draußen.",
           "symbole": [
             "schreiben",
             "malen"
@@ -363,6 +364,7 @@
         {
           "art": "aufgabe",
           "text": "Ta boussole : écris dans chaque direction un mot-clé tiré de tes réponses. Donne à chaque direction sa propre couleur.",
+          "hinweis": "Exemple : « Ce que je sais faire » – réparer des vélos. « Comment je travaille » – dehors.",
           "symbole": [
             "schreiben",
             "malen"

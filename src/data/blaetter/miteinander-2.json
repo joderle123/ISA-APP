@@ -2181,7 +2181,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Welches Feedback hast du bekommen – und was machst du daraus?"
+          "text": "Welches Feedback hast du bekommen – und was machst du daraus?",
+          "hinweis": "Beispiel: „Du sprichst sehr schnell.“ – Ich mache nach jeder Folie eine kurze Pause."
         },
         {
           "art": "satzanfaenge",
@@ -2342,7 +2343,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Quel feedback as-tu reçu – et qu’en fais-tu ?"
+          "text": "Quel feedback as-tu reçu – et qu’en fais-tu ?",
+          "hinweis": "Exemple : « Tu parles très vite. » – Je fais une courte pause après chaque diapo."
         },
         {
           "art": "satzanfaenge",
@@ -2682,6 +2684,7 @@
         {
           "art": "aufgabe",
           "text": "Übe den Satz. Schreibe ihn zu Ende.",
+          "hinweis": "Beispiel: Ich brauche Hilfe, weil ein Kind mich immer ärgert.",
           "symbole": [
             "sprechen",
             "schreiben"
@@ -2751,7 +2754,7 @@
           "text": "Tu peux toujours demander de l’aide. Par exemple, quand …",
           "punkte": ["tu as mal.", "tu as peur ou tu es triste.", "quelqu’un t’embête encore et encore.", "un secret te donne mal au ventre."]
         },
-        { "art": "aufgabe", "text": "Exerce la phrase. Termine-la.", "symbole": ["sprechen", "schreiben"] },
+        { "art": "aufgabe", "text": "Exerce la phrase. Termine-la.", "hinweis": "Exemple : j’ai besoin d’aide parce qu’un enfant m’embête tout le temps.", "symbole": ["sprechen", "schreiben"] },
         { "art": "satzanfaenge", "items": ["J’ai besoin d’aide parce que …", "D’abord, je demande à …"] },
         { "art": "rueckblick" }
       ],
@@ -2881,6 +2884,7 @@
         {
           "art": "aufgabe",
           "text": "Du gehörst auch zu anderen Netzen. Für wen bist du da?",
+          "hinweis": "Beispiel: Ich bin da für meinen Sitznachbarn. Ich erkläre ihm die Aufgabe noch einmal.",
           "symbole": [
             "nachdenken",
             "schreiben"
@@ -2967,7 +2971,7 @@
           "symbole": ["schreiben"]
         },
         { "art": "zielscheibe", "ringe": ["Peuvent aussi aider", "Bien connues", "Très proches"], "mitte": "Moi" },
-        { "art": "aufgabe", "text": "Tu fais aussi partie d’autres réseaux. Pour qui es-tu là ?", "symbole": ["nachdenken", "schreiben"] },
+        { "art": "aufgabe", "text": "Tu fais aussi partie d’autres réseaux. Pour qui es-tu là ?", "hinweis": "Exemple : je suis là pour mon voisin de table. Je lui réexplique l’exercice.", "symbole": ["nachdenken", "schreiben"] },
         { "art": "satzanfaenge", "items": ["Je suis là pour", "Voilà comment j’aide :"], "linien": 2 }
       ],
       "lehrer": {

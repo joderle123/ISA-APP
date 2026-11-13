@@ -120,6 +120,7 @@
         {
           "art": "aufgabe",
           "text": "Mal ein Bild, ein Muster oder ein Symbol für einen Moment, in dem du dich bei Menschen ganz wohlfühlst.",
+          "hinweis": "Beispiel: eine Bank am Sportplatz – dort sitzen wir nach dem Training.",
           "symbole": [
             "malen"
           ]
@@ -267,6 +268,7 @@
         {
           "art": "aufgabe",
           "text": "Dessine une image, un motif ou un symbole pour un moment où tu te sens tout à fait bien avec des gens.",
+          "hinweis": "Exemple : un banc au bord du terrain – on s’y assoit après l’entraînement.",
           "symbole": [
             "malen"
           ]

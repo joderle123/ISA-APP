@@ -398,7 +398,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Schau auf das, was dein Körper kann – nicht nur darauf, wie er aussieht."
+          "text": "Schau auf das, was dein Körper kann – nicht nur darauf, wie er aussieht.",
+          "hinweis": "Beispiel: Mein Körper hat mir ermöglicht, mit dem Rad zum Training zu fahren."
         },
         {
           "art": "satzanfaenge",
@@ -536,7 +537,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Regarde ce que ton corps te permet de faire – pas seulement son apparence."
+          "text": "Regarde ce que ton corps te permet de faire – pas seulement son apparence.",
+          "hinweis": "Exemple : mon corps m’a permis d’aller à l’entraînement à vélo."
         },
         {
           "art": "satzanfaenge",

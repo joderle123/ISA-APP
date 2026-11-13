@@ -1302,7 +1302,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Was fällt dir auf? Gibt es Tage, Menschen oder Dinge, die bestimmte Farben mitbringen?"
+          "text": "Was fällt dir auf? Gibt es Tage, Menschen oder Dinge, die bestimmte Farben mitbringen?",
+          "hinweis": "Beispiel: Meine gelben Tage haben oft gemeinsam, dass ich draußen war."
         },
         {
           "art": "satzanfaenge",
@@ -1455,7 +1456,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Qu’est-ce que tu remarques ? Y a-t-il des jours, des personnes ou des choses qui amènent certaines couleurs ?"
+          "text": "Qu’est-ce que tu remarques ? Y a-t-il des jours, des personnes ou des choses qui amènent certaines couleurs ?",
+          "hinweis": "Exemple : mes jours jaunes ont souvent en commun que j’étais dehors."
         },
         {
           "art": "satzanfaenge",
@@ -1686,6 +1688,7 @@
         {
           "art": "aufgabe",
           "text": "Ein Wunsch für deinen Umgang mit dem Handy – ganz allein deine Entscheidung. Es darf auch heißen: Ich lasse alles, wie es ist.",
+          "hinweis": "Beispiel: Das soll bleiben: abends mit meiner Cousine schreiben.",
           "symbole": [
             "schreiben"
           ]
@@ -1892,6 +1895,7 @@
         {
           "art": "aufgabe",
           "text": "Un souhait pour ta façon d’utiliser ton téléphone – c’est entièrement ta décision. Cela peut aussi être : je laisse tout comme c’est.",
+          "hinweis": "Exemple : ce qui doit rester : écrire le soir à ma cousine.",
           "symbole": [
             "schreiben"
           ]

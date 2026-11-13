@@ -459,6 +459,7 @@
         {
           "art": "aufgabe",
           "text": "Wähle deine heißeste Situation. Schreibe dazu auf:",
+          "hinweis": "Beispiel: Das merke ich in meinem Körper: Meine Beine wippen, mir wird warm.",
           "symbole": [
             "schreiben"
           ]
@@ -643,6 +644,7 @@
         {
           "art": "aufgabe",
           "text": "Choisis ta situation la plus chaude. Complète :",
+          "hinweis": "Exemple : je le remarque dans mon corps : mes jambes bougent, j’ai chaud.",
           "symbole": [
             "schreiben"
           ]

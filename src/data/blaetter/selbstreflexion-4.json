@@ -1420,6 +1420,7 @@
         {
           "art": "aufgabe",
           "text": "Lies am Ende der Woche deine Zeilen durch. Beende dann die Sätze.",
+          "hinweis": "Beispiel: Gute Dinge passieren oft, wenn ich draußen bin oder jemanden anspreche.",
           "symbole": [
             "lesen",
             "schreiben"
@@ -1607,6 +1608,7 @@
         {
           "art": "aufgabe",
           "text": "À la fin de la semaine, relis tes lignes. Puis termine les phrases.",
+          "hinweis": "Exemple : les bonnes choses arrivent souvent quand je sors ou que j’aborde quelqu’un.",
           "symbole": [
             "lesen",
             "schreiben"

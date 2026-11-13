@@ -579,7 +579,7 @@
           "zeilen": 4,
           "beispiel": ["1", "20 Vokabeln (Englisch, Unit 4) wiederholen", "III", "ja"]
         },
-        { "art": "aufgabe", "text": "Halte deinen Fokusplan fest. Ergänze die Sätze." },
+        { "art": "aufgabe", "text": "Halte deinen Fokusplan fest. Ergänze die Sätze.", "hinweis": "Beispiel: Mein Handy ist während der Lernzeit im Flur und auf lautlos." },
         {
           "art": "satzanfaenge",
           "linien": 2, "items": [
@@ -683,7 +683,7 @@
           "zeilen": 4,
           "beispiel": ["1", "Revoir 20 mots de vocabulaire (anglais, unit 4)", "III", "oui"]
         },
-        { "art": "aufgabe", "text": "Note ton plan de concentration : complète les phrases." },
+        { "art": "aufgabe", "text": "Note ton plan de concentration : complète les phrases.", "hinweis": "Exemple : pendant que je travaille, mon téléphone est dans le couloir, en mode silencieux." },
         {
           "art": "satzanfaenge",
           "linien": 2, "items": [

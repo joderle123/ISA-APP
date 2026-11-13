@@ -349,7 +349,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Schau dir dein Netz an. Was fällt dir auf?"
+          "text": "Schau dir dein Netz an. Was fällt dir auf?",
+          "hinweis": "Beispiel: Am meisten trägt mich gerade mein Verein. Dort kenne ich alle."
         },
         {
           "art": "satzanfaenge",
@@ -456,7 +457,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Regarde ta toile. Qu’est-ce que tu remarques ?"
+          "text": "Regarde ta toile. Qu’est-ce que tu remarques ?",
+          "hinweis": "Exemple : ce qui me porte le plus : mon club. J’y connais tout le monde."
         },
         {
           "art": "satzanfaenge",
@@ -621,7 +623,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Hängen Stimmung und Energie bei dir zusammen? Und was hatte Einfluss – Schlaf, Menschen, Bildschirm, Bewegung?"
+          "text": "Hängen Stimmung und Energie bei dir zusammen? Und was hatte Einfluss – Schlaf, Menschen, Bildschirm, Bewegung?",
+          "hinweis": "Beispiel: Mir fällt auf: Nach wenig Schlaf sinken beide Linien."
         },
         {
           "art": "satzanfaenge",
@@ -729,7 +732,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Ton humeur et ton énergie vont-elles ensemble ? Et qu’est-ce qui a joué – le sommeil, les gens, les écrans, le sport ?"
+          "text": "Ton humeur et ton énergie vont-elles ensemble ? Et qu’est-ce qui a joué – le sommeil, les gens, les écrans, le sport ?",
+          "hinweis": "Exemple : je remarque : après une nuit courte, les deux lignes descendent."
         },
         {
           "art": "satzanfaenge",
@@ -1142,7 +1146,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Stell dir vor, eine Sorge kommt heute Abend im Bett zurück. Schreib auf, was du dann tust – und was du dir sagst."
+          "text": "Stell dir vor, eine Sorge kommt heute Abend im Bett zurück. Schreib auf, was du dann tust – und was du dir sagst.",
+          "hinweis": "Beispiel: Ich schreibe sie auf einen Zettel und sage mir: „Morgen ist dafür Zeit.“"
         },
         {
           "art": "linien",
@@ -1260,7 +1265,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Imagine : ce soir, au lit, un souci revient. Écris ce que tu fais alors – et ce que tu te dis."
+          "text": "Imagine : ce soir, au lit, un souci revient. Écris ce que tu fais alors – et ce que tu te dis.",
+          "hinweis": "Exemple : je la note sur un papier et je me dis : « J’y penserai demain. »"
         },
         {
           "art": "linien",
@@ -1998,7 +2004,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Was fällt dir auf? Gibt es Wochentage, Menschen oder Dinge, die bestimmte Farben mitbringen?"
+          "text": "Was fällt dir auf? Gibt es Wochentage, Menschen oder Dinge, die bestimmte Farben mitbringen?",
+          "hinweis": "Beispiel: Mir fällt auf: Die Montage sind oft orange, die Samstage grün."
         },
         {
           "art": "satzanfaenge",
@@ -2131,7 +2138,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Qu’est-ce que tu remarques ? Y a-t-il des jours de la semaine, des personnes ou des choses qui amènent certaines couleurs ?"
+          "text": "Qu’est-ce que tu remarques ? Y a-t-il des jours de la semaine, des personnes ou des choses qui amènent certaines couleurs ?",
+          "hinweis": "Exemple : je remarque : les lundis sont souvent orange, les samedis verts."
         },
         {
           "art": "satzanfaenge",

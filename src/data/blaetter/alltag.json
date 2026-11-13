@@ -2702,6 +2702,7 @@
         {
           "art": "aufgabe",
           "text": "Schau auf deine Woche. Was hat deine Batterie aufgeladen? Was hat sie geleert?",
+          "hinweis": "Beispiel: Gut ging es mir nach dem Spielen mit Ben, schlechter nach langen Videos.",
           "symbole": [
             "nachdenken",
             "schreiben"
@@ -2836,6 +2837,7 @@
         {
           "art": "aufgabe",
           "text": "Regarde ta semaine. Qu’est-ce qui a rechargé ta batterie ? Qu’est-ce qui l’a vidée ?",
+          "hinweis": "Exemple : bien après le jeu avec Ben, moins bien après de longues vidéos.",
           "symbole": [
             "nachdenken",
             "schreiben"

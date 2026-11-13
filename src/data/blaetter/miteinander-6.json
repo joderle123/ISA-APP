@@ -96,6 +96,7 @@
         {
           "art": "aufgabe",
           "text": "Welche Freundin, welcher Freund bist du? Füll die Karte für dich aus – so, wie eine Person es sagen würde, die dich mag.",
+          "hinweis": "Beispiel: „Ein Satz, den ich oft sage“ – „Komm, das kriegen wir hin.“",
           "symbole": [
             "schreiben",
             "nachdenken"
@@ -278,6 +279,7 @@
         {
           "art": "aufgabe",
           "text": "Quel ami, quelle amie es-tu ? Remplis la carte pour toi, comme le dirait une personne qui t’apprécie.",
+          "hinweis": "Exemple : « Une phrase que je dis souvent » – « Allez, on va y arriver. »",
           "symbole": [
             "schreiben",
             "nachdenken"

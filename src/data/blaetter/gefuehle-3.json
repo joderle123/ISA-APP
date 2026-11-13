@@ -606,6 +606,7 @@
         {
           "art": "aufgabe",
           "text": "Was war dein schönster Fund? Male ihn.",
+          "hinweis": "Beispiel: der Vogel, den ich draußen gehört habe.",
           "symbole": [
             "malen"
           ]
@@ -755,6 +756,7 @@
         {
           "art": "aufgabe",
           "text": "Quelle trouvaille t’a le plus plu ? Dessine-la.",
+          "hinweis": "Exemple : l’oiseau que j’ai entendu dehors.",
           "symbole": [
             "malen"
           ]

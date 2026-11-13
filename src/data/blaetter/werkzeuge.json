@@ -1779,7 +1779,7 @@
           "links": [{"art": "satzanfaenge", "items": ["Leitung:", "Protokoll:"]}],
           "rechts": [{"art": "satzanfaenge", "items": ["Zeit:", "Regeln:"]}]
         },
-        {"art": "aufgabe", "text": "Positive Runde: Was lief diese Woche gut?"},
+        {"art": "aufgabe", "text": "Positive Runde: Was lief diese Woche gut?", "hinweis": "Beispiel: Beim Ausflug haben alle aufeinander gewartet."},
         {"art": "linien", "anzahl": 2},
         {
           "art": "aufgabe",
@@ -1901,7 +1901,7 @@
           "links": [{ "art": "satzanfaenge", "items": ["Présidence :", "Secrétariat :"] }],
           "rechts": [{ "art": "satzanfaenge", "items": ["Temps :", "Règles :"] }]
         },
-        { "art": "aufgabe", "text": "Tour positif : qu’est-ce qui s’est bien passé cette semaine ?" },
+        { "art": "aufgabe", "text": "Tour positif : qu’est-ce qui s’est bien passé cette semaine ?", "hinweis": "Exemple : pendant la sortie, tout le monde a attendu les autres." },
         { "art": "linien", "anzahl": 2 },
         {
           "art": "aufgabe",

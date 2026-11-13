@@ -207,7 +207,7 @@
             {}
           ]
         },
-        { "art": "aufgabe", "text": "Mein Plan für traurige Tage", "symbole": ["schreiben"] },
+        { "art": "aufgabe", "text": "Mein Plan für traurige Tage", "hinweis": "Beispiel: Ich merke es daran, dass ich still werde und zu nichts Lust habe.", "symbole": ["schreiben"] },
         {
           "art": "schritte",
           "items": [
@@ -304,7 +304,7 @@
             {  }
           ]
         },
-        { "art": "aufgabe", "text": "Mon plan pour les jours tristes", "symbole": ["schreiben"] },
+        { "art": "aufgabe", "text": "Mon plan pour les jours tristes", "hinweis": "Exemple : je le remarque quand je ne parle plus et n’ai envie de rien.", "symbole": ["schreiben"] },
         {
           "art": "schritte",
           "items": [
@@ -710,7 +710,7 @@
       "bausteine": [
         { "art": "aufgabe", "text": "Stell dir deine Ruhe-Insel vor. Male sie.", "hinweis": "Nur was dir guttut, darf auf deine Insel.", "symbole": ["zuhoeren", "malen"] },
         { "art": "feld", "zeichnen": true, "hoehe": 8.5 },
-        { "art": "aufgabe", "text": "Beschreibe deine Insel und gib ihr einen Namen.", "symbole": ["schreiben"] },
+        { "art": "aufgabe", "text": "Beschreibe deine Insel und gib ihr einen Namen.", "hinweis": "Beispiel: Ich sehe einen kleinen See. Ich höre Vögel.", "symbole": ["schreiben"] },
         { "art": "satzanfaenge", "items": ["Ich sehe …", "Ich höre …", "Ich fühle …", "Meine Insel heißt …"] },
         { "art": "aufgabe", "text": "Wann denkst du an deine Insel? Kreuze an.", "symbole": ["ankreuzen"] },
         {
@@ -761,7 +761,7 @@
           "symbole": ["zuhoeren", "malen"]
         },
         { "art": "feld", "zeichnen": true, "hoehe": 8.5 },
-        { "art": "aufgabe", "text": "Décris ton île et donne-lui un nom.", "symbole": ["schreiben"] },
+        { "art": "aufgabe", "text": "Décris ton île et donne-lui un nom.", "hinweis": "Exemple : je vois un petit lac. J’entends des oiseaux.", "symbole": ["schreiben"] },
         { "art": "satzanfaenge", "items": ["Je vois …", "J’entends …", "Je ressens …", "Mon île s’appelle …"] },
         { "art": "aufgabe", "text": "Quand penses-tu à ton île ? Coche.", "symbole": ["ankreuzen"] },
         {
@@ -1310,7 +1310,7 @@
         { "art": "tabelle", "spalten": ["Freitag – das war gut", "Wie kam es dazu?"], "breiten": [1.1, 1], "zeilen": 3 },
         { "art": "tabelle", "spalten": ["Samstag – das war gut", "Wie kam es dazu?"], "breiten": [1.1, 1], "zeilen": 3 },
         { "art": "tabelle", "spalten": ["Sonntag – das war gut", "Wie kam es dazu?"], "breiten": [1.1, 1], "zeilen": 3 },
-        { "art": "aufgabe", "text": "Am Ende der Woche: Schau zurück.", "symbole": ["nachdenken", "schreiben"] },
+        { "art": "aufgabe", "text": "Am Ende der Woche: Schau zurück.", "hinweis": "Beispiel: Dazu habe ich selbst beigetragen: Ich habe gefragt, ob ich mitspielen darf.", "symbole": ["nachdenken", "schreiben"] },
         {
           "art": "satzanfaenge",
           "linien": 2,
@@ -1370,7 +1370,7 @@
         { "art": "tabelle", "spalten": ["Vendredi – c’était bien", "Comment est-ce arrivé ?"], "breiten": [1.1, 1], "zeilen": 3 },
         { "art": "tabelle", "spalten": ["Samedi – c’était bien", "Comment est-ce arrivé ?"], "breiten": [1.1, 1], "zeilen": 3 },
         { "art": "tabelle", "spalten": ["Dimanche – c’était bien", "Comment est-ce arrivé ?"], "breiten": [1.1, 1], "zeilen": 3 },
-        { "art": "aufgabe", "text": "À la fin de la semaine : regarde en arrière.", "symbole": ["nachdenken", "schreiben"] },
+        { "art": "aufgabe", "text": "À la fin de la semaine : regarde en arrière.", "hinweis": "Exemple : j’y ai moi-même contribué : j’ai demandé si je pouvais jouer aussi.", "symbole": ["nachdenken", "schreiben"] },
         {
           "art": "satzanfaenge",
           "linien": 2,
@@ -1440,7 +1440,7 @@
           "items": ["Ausdauer", "Mut", "Hilfsbereitschaft", "Humor", "Fairness", "Neugier", "Geduld", "Kreativität", "Ehrlichkeit", "Selbstdisziplin", "Teamgeist", "Freundlichkeit"]
         },
         { "art": "satzanfaenge", "items": ["Darauf bin ich stolz: …", "Dabei hat mir diese Stärke geholfen: …"], "linien": 2 },
-        { "art": "aufgabe", "text": "Was nimmst du mit in die nächste Woche?" },
+        { "art": "aufgabe", "text": "Was nimmst du mit in die nächste Woche?", "hinweis": "Beispiel: nach dem Training noch bleiben und mit den anderen reden." },
         { "art": "satzanfaenge", "items": ["Das möchte ich wiederholen oder beibehalten: …"], "linien": 2 }
       ],
       "lehrer": {
@@ -1495,7 +1495,7 @@
           "items": ["persévérance", "courage", "serviabilité", "humour", "sens de la justice", "curiosité", "patience", "créativité", "honnêteté", "autodiscipline", "esprit d’équipe", "gentillesse"]
         },
         { "art": "satzanfaenge", "items": ["Ma fierté : …", "Une force qui m’a servi : …"], "linien": 2 },
-        { "art": "aufgabe", "text": "Que retiens-tu pour la semaine prochaine ?" },
+        { "art": "aufgabe", "text": "Que retiens-tu pour la semaine prochaine ?", "hinweis": "Exemple : rester un moment après l’entraînement pour parler avec les autres." },
         { "art": "satzanfaenge", "items": ["Ce que je veux refaire ou garder : …"], "linien": 2 }
       ],
       "lehrer": {

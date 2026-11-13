@@ -123,6 +123,7 @@
         {
           "art": "aufgabe",
           "text": "Prüfe deinen Gedanken: Was spricht dafür? Was spricht dagegen?",
+          "hinweis": "Beispiel: Dagegen spricht: Im letzten Diktat hatte ich 15 Wörter richtig.",
           "symbole": [
             "schreiben"
           ]
@@ -288,6 +289,7 @@
         {
           "art": "aufgabe",
           "text": "Vérifie ta pensée : qu’est-ce qui parle pour ? Qu’est-ce qui parle contre ?",
+          "hinweis": "Exemple : ce qui parle contre : à la dernière dictée, j’avais 15 mots justes.",
           "symbole": [
             "schreiben"
           ]

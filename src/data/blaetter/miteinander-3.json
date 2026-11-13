@@ -170,7 +170,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Dein eigenes Zeichen: Sprich es mit deiner Lehrperson ab."
+          "text": "Dein eigenes Zeichen: Sprich es mit deiner Lehrperson ab.",
+          "hinweis": "Beispiel: Wenn ich eine Pause brauche, zeige ich ein T mit beiden Händen."
         },
         {
           "art": "satzanfaenge",
@@ -348,7 +349,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Ton propre signal : mets-toi d’accord avec ton enseignant ou ton enseignante."
+          "text": "Ton propre signal : mets-toi d’accord avec ton enseignant ou ton enseignante.",
+          "hinweis": "Exemple : quand j’ai besoin d’une pause, je montre un T avec les deux mains."
         },
         {
           "art": "satzanfaenge",
@@ -901,6 +903,7 @@
         {
           "art": "aufgabe",
           "text": "Ratespiel zu zweit: Beschreib einen Gegenstand im Raum, ohne ihn zu nennen. Die andere Person rät.",
+          "hinweis": "Beispiel: Es ist eckig. Die Farbe ist weiß. Man braucht es zum Schreiben.",
           "symbole": [
             "partner"
           ]
@@ -1072,6 +1075,7 @@
         {
           "art": "aufgabe",
           "text": "Devinette à deux : décris un objet de la salle sans le nommer. L’autre devine.",
+          "hinweis": "Exemple : c’est rectangulaire. La couleur est blanche. On s’en sert pour écrire.",
           "symbole": [
             "partner"
           ]
@@ -1271,7 +1275,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Nach der Gruppenarbeit: Darauf sind wir stolz."
+          "text": "Nach der Gruppenarbeit: Darauf sind wir stolz.",
+          "hinweis": "Beispiel: Wir haben geschafft, dass das Plakat pünktlich fertig war."
         },
         {
           "art": "satzanfaenge",
@@ -1408,7 +1413,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Après le travail de groupe : ce dont nous sommes fiers."
+          "text": "Après le travail de groupe : ce dont nous sommes fiers.",
+          "hinweis": "Exemple : nous avons réussi à finir l’affiche à temps."
         },
         {
           "art": "satzanfaenge",
@@ -1996,7 +2002,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Erklär einer neuen Person dein Lieblingsspiel – kurz und klar."
+          "text": "Erklär einer neuen Person dein Lieblingsspiel – kurz und klar.",
+          "hinweis": "Beispiel: Das Spiel heißt Kicker. Ziel ist, mehr Tore zu schießen als die anderen."
         },
         {
           "art": "satzanfaenge",
@@ -2158,7 +2165,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Explique ton jeu préféré à une nouvelle personne – court et clair."
+          "text": "Explique ton jeu préféré à une nouvelle personne – court et clair.",
+          "hinweis": "Exemple : le jeu s’appelle baby-foot. Le but, c’est de marquer le plus de buts."
         },
         {
           "art": "satzanfaenge",
@@ -2377,7 +2385,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Nach dem Echt-Versuch: Wie ist es gelaufen?"
+          "text": "Nach dem Echt-Versuch: Wie ist es gelaufen?",
+          "hinweis": "Beispiel: am Dienstag in der Bäckerei. Gut geklappt hat das deutliche Bestellen."
         },
         {
           "art": "satzanfaenge",
@@ -2560,7 +2569,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Après l’essai en vrai : comment ça s’est passé ?"
+          "text": "Après l’essai en vrai : comment ça s’est passé ?",
+          "hinweis": "Exemple : mardi, à la boulangerie. Ce qui a bien marché : commander d’une voix claire."
         },
         {
           "art": "satzanfaenge",

@@ -1851,6 +1851,7 @@
         {
           "art": "aufgabe",
           "text": "Vervollständige die Sätze, wenn du magst.",
+          "hinweis": "Beispiel: Das würde mir guttun: ein Nachmittag ohne Termine.",
           "symbole": [
             "schreiben"
           ]
@@ -2009,6 +2010,7 @@
         {
           "art": "aufgabe",
           "text": "Complète les phrases, si tu veux.",
+          "hinweis": "Exemple : ça me ferait du bien : un après-midi sans rien de prévu.",
           "symbole": [
             "schreiben"
           ]

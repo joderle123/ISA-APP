@@ -96,7 +96,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Warten fällt dir schwer? Schreib deine Ideen."
+          "text": "Warten fällt dir schwer? Schreib deine Ideen.",
+          "hinweis": "Beispiel: Beim Warten kann ich ein Spiel auf dem Handy spielen – ohne Ton."
         },
         {
           "art": "satzanfaenge",
@@ -254,7 +255,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Attendre, c’est dur pour toi ? Écris tes idées."
+          "text": "Attendre, c’est dur pour toi ? Écris tes idées.",
+          "hinweis": "Exemple : en attendant, je peux jouer sur mon téléphone – sans le son."
         },
         {
           "art": "satzanfaenge",
@@ -853,7 +855,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Bewegung mit Erlaubnis: Macht eine Abmachung für den Unterricht."
+          "text": "Bewegung mit Erlaubnis: Macht eine Abmachung für den Unterricht.",
+          "hinweis": "Beispiel: Ich zeige es mit einer Karte. Dann darf ich kurz Wasser holen."
         },
         {
           "art": "vertrag",
@@ -994,7 +997,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Bouger avec permission : passez un accord pour les cours."
+          "text": "Bouger avec permission : passez un accord pour les cours.",
+          "hinweis": "Exemple : je le montre avec une carte. Alors, je peux aller chercher de l’eau."
         },
         {
           "art": "vertrag",

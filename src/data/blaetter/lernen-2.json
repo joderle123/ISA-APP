@@ -576,7 +576,7 @@
           "zeilen": 3,
           "beispiel": ["Schwimmen", "Jeden Mittwoch geübt, auch wenn ich Wasser geschluckt habe", "25 Meter ohne Pause"]
         },
-        { "art": "aufgabe", "text": "Was lernst du gerade? Plane deinen nächsten kleinen Schritt.", "symbole": ["schreiben"] },
+        { "art": "aufgabe", "text": "Was lernst du gerade? Plane deinen nächsten kleinen Schritt.", "hinweis": "Beispiel: Das kann ich noch nicht: die 7er-Reihe. Nächster Schritt: jeden Abend fünf Aufgaben.", "symbole": ["schreiben"] },
         { "art": "satzanfaenge", "items": ["Das kann ich noch nicht: …", "Mein nächster kleiner Schritt: …", "Dabei hilft mir: …"] },
         { "art": "aufgabe", "text": "Was sagst du dir beim nächsten Stopp-Satz? Schreibe einen Wenn-dann-Plan.", "symbole": ["schreiben"] },
         {
@@ -673,7 +673,7 @@
           "zeilen": 3,
           "beispiel": ["Nager", "Entraînement chaque mercredi, même quand j’ai bu la tasse", "25 mètres sans pause"]
         },
-        { "art": "aufgabe", "text": "Qu’apprends-tu en ce moment ? Planifie ton prochain petit pas.", "symbole": ["schreiben"] },
+        { "art": "aufgabe", "text": "Qu’apprends-tu en ce moment ? Planifie ton prochain petit pas.", "hinweis": "Exemple : la table de 7. Prochain petit pas : cinq calculs chaque soir.", "symbole": ["schreiben"] },
         { "art": "satzanfaenge", "items": ["Ça, je ne sais pas encore le faire : …", "Mon prochain petit pas : …", "Ce qui m’aide : …"] },
         { "art": "aufgabe", "text": "Que te dis-tu la prochaine fois que cette phrase te freine ? Écris un plan « si … alors ».", "symbole": ["schreiben"] },
         {

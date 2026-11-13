@@ -149,7 +149,7 @@
             "verträgt sich nach einem Streit wieder mit mir."
           ]
         },
-        { "art": "aufgabe", "text": "Denk an ein Kind, mit dem du gern spielst. Male euch beide und schreibe.", "symbole": ["malen", "schreiben"] },
+        { "art": "aufgabe", "text": "Denk an ein Kind, mit dem du gern spielst. Male euch beide und schreibe.", "hinweis": "Beispiel: Ich mag an dir, dass du auf mich wartest.", "symbole": ["malen", "schreiben"] },
         {
           "art": "spalten",
           "verhaeltnis": "1:1",
@@ -215,7 +215,7 @@
             "se réconcilie avec moi après une dispute."
           ]
         },
-        { "art": "aufgabe", "text": "Pense à un enfant avec qui tu aimes jouer. Dessine-vous deux, puis écris.", "symbole": ["malen", "schreiben"] },
+        { "art": "aufgabe", "text": "Pense à un enfant avec qui tu aimes jouer. Dessine-vous deux, puis écris.", "hinweis": "Exemple : ce que j’aime chez toi : tu m’attends toujours.", "symbole": ["malen", "schreiben"] },
         {
           "art": "spalten",
           "verhaeltnis": "1:1",
@@ -342,7 +342,7 @@
             { "titel": "Neu verabreden", "text": "Wie machen die beiden es beim nächsten Mal?" }
           ]
         },
-        { "art": "aufgabe", "text": "Denk an einen eigenen Streit mit einem Freund oder einer Freundin.", "symbole": ["nachdenken", "schreiben"] },
+        { "art": "aufgabe", "text": "Denk an einen eigenen Streit mit einem Freund oder einer Freundin.", "hinweis": "Beispiel: Wir haben erst am nächsten Tag geredet. Da waren wir ruhiger.", "symbole": ["nachdenken", "schreiben"] },
         { "art": "frage", "text": "Was hat euch geholfen, euch wieder zu vertragen – oder was hätte geholfen?", "linien": 2 }
       ],
       "lehrer": {
@@ -450,7 +450,7 @@
             { "titel": "Prévoir la suite", "text": "Comment feront-elles la prochaine fois ?" }
           ]
         },
-        { "art": "aufgabe", "text": "Pense à une dispute que tu as eue avec un ami ou une amie.", "symbole": ["nachdenken", "schreiben"] },
+        { "art": "aufgabe", "text": "Pense à une dispute que tu as eue avec un ami ou une amie.", "hinweis": "Exemple : nous avons attendu le lendemain pour parler. Nous étions plus calmes.", "symbole": ["nachdenken", "schreiben"] },
         { "art": "frage", "text": "Qu’est-ce qui vous a aidés à vous réconcilier – ou qu’est-ce qui aurait aidé ?", "linien": 2 }
       ],
       "lehrer": {
@@ -563,7 +563,7 @@
             "Du erzählst immer von deinen Problemen – Tiago kommt selbst kaum zu Wort."
           ]
         },
-        { "art": "aufgabe", "text": "Deine Grenze: Was ist für dich in einer Freundschaft nicht in Ordnung – und was würdest du dann sagen?" },
+        { "art": "aufgabe", "text": "Deine Grenze: Was ist für dich in einer Freundschaft nicht in Ordnung – und was würdest du dann sagen?", "hinweis": "Beispiel: … wenn jemand meine Nachrichten herumzeigt. Dann würde ich sagen: „Das war privat.“" },
         {
           "art": "satzanfaenge",
           "linien": 2,
@@ -669,7 +669,7 @@
             "Tu parles toujours de tes problèmes – Tiago a à peine le temps de placer un mot."
           ]
         },
-        { "art": "aufgabe", "text": "Ta limite : qu’est-ce qui n’est pas acceptable pour toi dans une amitié – et que dirais-tu alors ?" },
+        { "art": "aufgabe", "text": "Ta limite : qu’est-ce qui n’est pas acceptable pour toi dans une amitié – et que dirais-tu alors ?", "hinweis": "Exemple : … quand quelqu’un montre mes messages à d’autres. Je dirais alors : « C’était privé. »" },
         {
           "art": "satzanfaenge",
           "linien": 2,
@@ -777,7 +777,7 @@
           "spalten": 2,
           "items": ["abwechseln", "den Ball wegnehmen", "zusammen spielen", "laut schreien", "auslosen, wer anfängt", "einen Erwachsenen fragen"]
         },
-        { "art": "aufgabe", "text": "Und du? Denk an einen Streit von dir.", "symbole": ["nachdenken", "schreiben"] },
+        { "art": "aufgabe", "text": "Und du? Denk an einen Streit von dir.", "hinweis": "Beispiel: Wir haben gestritten wegen der Schaukel.", "symbole": ["nachdenken", "schreiben"] },
         { "art": "satzanfaenge", "items": ["Wir haben gestritten wegen …", "Beim nächsten Streit mache ich zuerst: …"] }
       ],
       "lehrer": {
@@ -867,7 +867,7 @@
             "demander à un adulte"
           ]
         },
-        { "art": "aufgabe", "text": "Et toi ? Pense à une de tes disputes.", "symbole": ["nachdenken", "schreiben"] },
+        { "art": "aufgabe", "text": "Et toi ? Pense à une de tes disputes.", "hinweis": "Exemple : on s’est disputés à cause de la balançoire.", "symbole": ["nachdenken", "schreiben"] },
         { "art": "satzanfaenge", "items": ["On s’est disputés à cause de …", "La prochaine fois, je fais d’abord : …"] }
       ],
       "lehrer": {
@@ -968,7 +968,7 @@
         },
         { "art": "aufgabe", "text": "Schritt 4: Welche Brücke ist am fairsten? Begründe.", "symbole": ["nachdenken", "schreiben"] },
         { "art": "linien", "anzahl": 3 },
-        { "art": "aufgabe", "text": "Denk an einen eigenen Streit. Wie könnte eure Brücke aussehen?", "symbole": ["nachdenken", "schreiben"] },
+        { "art": "aufgabe", "text": "Denk an einen eigenen Streit. Wie könnte eure Brücke aussehen?", "hinweis": "Beispiel: Ich wollte im Bus am Fenster sitzen. Die andere Seite wollte das auch.", "symbole": ["nachdenken", "schreiben"] },
         { "art": "satzanfaenge", "items": ["Ich wollte …", "Die andere Seite wollte …", "Unsere Brücke könnte sein: …", "Das probiere ich beim nächsten Streit zuerst: …"], "linien": 2 }
       ],
       "lehrer": {
@@ -1065,7 +1065,7 @@
         },
         { "art": "aufgabe", "text": "Étape 4 : quel pont est le plus juste ? Explique pourquoi.", "symbole": ["nachdenken", "schreiben"] },
         { "art": "linien", "anzahl": 3 },
-        { "art": "aufgabe", "text": "Pense à une de tes disputes. À quoi pourrait ressembler votre pont ?", "symbole": ["nachdenken", "schreiben"] },
+        { "art": "aufgabe", "text": "Pense à une de tes disputes. À quoi pourrait ressembler votre pont ?", "hinweis": "Exemple : dans le bus, je voulais la place à la fenêtre. L’autre côté aussi.", "symbole": ["nachdenken", "schreiben"] },
         { "art": "satzanfaenge", "items": ["Je voulais …", "L’autre côté voulait …", "Notre pont pourrait être : …", "À la prochaine dispute, j’essaie d’abord : …"], "linien": 2 }
       ],
       "lehrer": {
@@ -1180,7 +1180,7 @@
           "titel": "Fragen, die Interessen sichtbar machen",
           "punkte": ["„Was ist dir daran wichtig?“", "„Was befürchtest du, wenn wir es anders machen?“", "„Was bräuchtest du, um zustimmen zu können?“"]
         },
-        { "art": "aufgabe", "text": "Nimm einen eigenen Konflikt – in der Familie, mit Freunden oder in der Schule – und wende die Grundsätze an." },
+        { "art": "aufgabe", "text": "Nimm einen eigenen Konflikt – in der Familie, mit Freunden oder in der Schule – und wende die Grundsätze an.", "hinweis": "Beispiel: Meine Position: Ich will am Wochenende länger wegbleiben. Interesse: Zeit mit meinen Freunden." },
         {
           "art": "satzanfaenge",
           "linien": 2,
@@ -1297,7 +1297,7 @@
             "« De quoi aurais-tu besoin pour pouvoir dire oui ? »"
           ]
         },
-        { "art": "aufgabe", "text": "Choisis un conflit personnel – en famille, entre amis ou à l’école – et applique les principes." },
+        { "art": "aufgabe", "text": "Choisis un conflit personnel – en famille, entre amis ou à l’école – et applique les principes.", "hinweis": "Exemple : ma position : rentrer plus tard le week-end. Intérêt : du temps avec mes amis." },
         {
           "art": "satzanfaenge",
           "linien": 2,

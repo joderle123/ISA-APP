@@ -471,7 +471,7 @@
             { "titel": "Verändern", "text": "Was mache ich künftig anders?" }
           ]
         },
-        { "art": "aufgabe", "text": "Bereite das Gespräch mit der betroffenen Person vor. Ergänze die Sätze." },
+        { "art": "aufgabe", "text": "Bereite das Gespräch mit der betroffenen Person vor. Ergänze die Sätze.", "hinweis": "Beispiel: Ich möchte mit dir über meinen Spruch gestern im Bus sprechen." },
         {
           "art": "satzanfaenge",
           "items": [
@@ -582,7 +582,7 @@
             { "titel": "Changer", "text": "Que ferai-je autrement à l’avenir ?" }
           ]
         },
-        { "art": "aufgabe", "text": "Prépare la conversation avec la personne concernée. Complète les phrases." },
+        { "art": "aufgabe", "text": "Prépare la conversation avec la personne concernée. Complète les phrases.", "hinweis": "Exemple : j’aimerais te parler de ce que j’ai dit hier dans le bus." },
         {
           "art": "satzanfaenge",
           "items": ["J’aimerais te parler de …", "J’ai compris que …", "Excuse-moi pour …", "J’aimerais réparer en …"],
@@ -799,6 +799,7 @@
         {
           "art": "aufgabe",
           "text": "Was ist dein großes Ziel? Schreibe es so auf, dass man sehen kann, ob du es schaffst.",
+          "hinweis": "Beispiel: Ich melde mich und warte, bis ich drankomme.",
           "symbole": ["schreiben"]
         },
         { "art": "satzanfaenge", "items": ["Mein Ziel: Ich …"], "linien": 2 },
@@ -903,7 +904,7 @@
           "text": "Mathis aime jouer au foot à la récré. Quand son équipe perd, il rouspète et donne un coup de pied dans le ballon. Alors les autres ne veulent plus jouer avec lui. Mathis se fixe un objectif : « Je joue fair-play, même quand nous perdons. » Sa première marche : pendant une récré, il reste calme quand on marque contre lui. Son ami Robin le lui rappelle avec un pouce levé.",
           "bild": "figur:tom:ruhig"
         },
-        { "art": "aufgabe", "text": "Quel est ton grand objectif ? Écris-le de façon à pouvoir voir si tu y arrives.", "symbole": ["schreiben"] },
+        { "art": "aufgabe", "text": "Quel est ton grand objectif ? Écris-le de façon à pouvoir voir si tu y arrives.", "hinweis": "Exemple : je lève la main et j’attends mon tour.", "symbole": ["schreiben"] },
         { "art": "satzanfaenge", "items": ["Mon objectif : Je …"], "linien": 2 },
         {
           "art": "ankreuzen",
@@ -1575,7 +1576,7 @@
           "titel": "Warum Pausen wirken",
           "text": "Konzentration lässt im Lauf des Tages nach – besonders bei Stress, wenig Schlaf und langem Sitzen. Kurze, bewusst gewählte Pausen helfen, wieder aufzutanken. Was erholt, ist bei jedem anders: Probiere aus und beobachte dich."
         },
-        { "art": "aufgabe", "text": "Was lädt deinen Akku auf, was leert ihn? Denk an einen ganz normalen Schultag." },
+        { "art": "aufgabe", "text": "Was lädt deinen Akku auf, was leert ihn? Denk an einen ganz normalen Schultag.", "hinweis": "Beispiel: Energie gibt mir die Mittagspause draußen. Energie kostet mich der Lärm im Bus." },
         { "art": "batterie", "laden": "Das gibt mir Energie", "leeren": "Das kostet mich Energie", "linien": 3 },
         { "art": "aufgabe", "text": "Wie erholsam sind diese Pausen für dich?", "hinweis": "Es gibt kein richtiges Ergebnis – es geht um dich." },
         {
@@ -1669,7 +1670,7 @@
           "titel": "Pourquoi les pauses aident",
           "text": "La concentration baisse au fil de la journée – surtout en cas de stress, de manque de sommeil ou quand on reste longtemps assis. De courtes pauses bien choisies aident à recharger. Ce qui repose varie d’une personne à l’autre : essaie et observe-toi."
         },
-        { "art": "aufgabe", "text": "Qu’est-ce qui recharge ta batterie, qu’est-ce qui la vide ? Pense à une journée d’école ordinaire." },
+        { "art": "aufgabe", "text": "Qu’est-ce qui recharge ta batterie, qu’est-ce qui la vide ? Pense à une journée d’école ordinaire.", "hinweis": "Exemple : me donne de l’énergie – la pause dehors. M’en coûte – le bruit du bus." },
         { "art": "batterie", "laden": "Ce qui me donne de l’énergie", "leeren": "Ce qui me coûte de l’énergie", "linien": 3 },
         { "art": "aufgabe", "text": "Ces pauses te reposent-elles vraiment ?", "hinweis": "Il n’y a pas de bonne réponse : il s’agit de toi." },
         {

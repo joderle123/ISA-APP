@@ -778,7 +778,7 @@
             {"art": "feld", "label": "Grün – wenig Energie, angenehm", "hoehe": 4.8}
           ]
         },
-        {"art": "aufgabe", "text": "Und jetzt du: Welches Wort beschreibt dein Gefühl gerade am genauesten?"},
+        {"art": "aufgabe", "text": "Und jetzt du: Welches Wort beschreibt dein Gefühl gerade am genauesten?", "hinweis": "Beispiel: Gerade fühle ich mich zufrieden. Feld Grün, weil ich ganz ruhig bin."},
         {"art": "satzanfaenge", "items": ["Gerade fühle ich mich …", "Das gehört ins Feld …, weil …"]},
         {
           "art": "aufgabe",
@@ -896,7 +896,7 @@
             {"art": "feld", "label": "Vert – peu d’énergie, agréable", "hoehe": 4.8}
           ]
         },
-        {"art": "aufgabe", "text": "Et toi, maintenant ? Quel mot décrit le plus précisément ce que tu ressens ?"},
+        {"art": "aufgabe", "text": "Et toi, maintenant ? Quel mot décrit le plus précisément ce que tu ressens ?", "hinweis": "Exemple : je ressens du contentement. C’est la zone verte, parce que je suis calme."},
         {"art": "satzanfaenge", "items": ["En ce moment, je ressens …", "C’est la zone …, parce que …"]},
         {
           "art": "aufgabe",
@@ -1113,7 +1113,7 @@
       "bausteine": [
         {"art": "aufgabe", "text": "Wie geht es dir gerade? Kreise ein Gesicht ein.", "symbole": ["einkreisen"]},
         {"art": "skala", "von": "gar nicht gut", "bis": "sehr gut", "gesichter": true},
-        {"art": "aufgabe", "text": "Warum geht es dir so? Male oder schreibe.", "symbole": ["malen", "schreiben"]},
+        {"art": "aufgabe", "text": "Warum geht es dir so? Male oder schreibe.", "hinweis": "Beispiel: Mir geht es so, weil ich schlecht geschlafen habe.", "symbole": ["malen", "schreiben"]},
         {"art": "feld", "label": "Mir geht es so, weil …", "hoehe": 4.5, "zeichnen": true},
         {
           "art": "aufgabe",
@@ -1170,7 +1170,7 @@
       "bausteine": [
         { "art": "aufgabe", "text": "Comment vas-tu en ce moment ? Entoure un visage.", "symbole": ["einkreisen"] },
         { "art": "skala", "von": "pas bien du tout", "bis": "très bien", "gesichter": true },
-        { "art": "aufgabe", "text": "Pourquoi te sens-tu comme ça ? Dessine ou écris.", "symbole": ["malen", "schreiben"] },
+        { "art": "aufgabe", "text": "Pourquoi te sens-tu comme ça ? Dessine ou écris.", "hinweis": "Exemple : je me sens comme ça, parce que j’ai mal dormi.", "symbole": ["malen", "schreiben"] },
         { "art": "feld", "label": "Je me sens comme ça, parce que …", "hoehe": 4.5, "zeichnen": true },
         {
           "art": "aufgabe",
@@ -1274,6 +1274,7 @@
         {
           "art": "aufgabe",
           "text": "Schau auf deine Woche zurück. Was hat dir Kraft gegeben? Was hat dich Kraft gekostet?",
+          "hinweis": "Beispiel: Gutgetan hat mir das Schwimmen. Schwer war der Streit im Bus.",
           "symbole": ["nachdenken", "schreiben"]
         },
         {"art": "batterie", "laden": "Das hat mir gutgetan", "leeren": "Das war schwer für mich", "linien": 3},
@@ -1356,6 +1357,7 @@
         {
           "art": "aufgabe",
           "text": "Regarde ta semaine en arrière. Qu’est-ce qui t’a donné de la force ? Qu’est-ce qui t’en a pris ?",
+          "hinweis": "Exemple : la piscine m’a fait du bien. La dispute dans le bus était difficile.",
           "symbole": ["nachdenken", "schreiben"]
         },
         { "art": "batterie", "laden": "Ça m’a fait du bien", "leeren": "C’était difficile pour moi", "linien": 3 },
@@ -1766,7 +1768,7 @@
           "links": ["Kühl", "Warm", "Heiß", "Kochend"],
           "rechts": ["atmen, bis 10 zählen", "weggehen, Hilfe holen", "weiterspielen", "„Hör bitte auf“ sagen"]
         },
-        {"art": "aufgabe", "text": "Was hilft dir, wenn deine Wut kocht? Male oder schreibe.", "symbole": ["malen", "schreiben"]},
+        {"art": "aufgabe", "text": "Was hilft dir, wenn deine Wut kocht? Male oder schreibe.", "hinweis": "Beispiel: Ich gehe in die Ruhe-Ecke und drücke ein Kissen.", "symbole": ["malen", "schreiben"]},
         {"art": "feld", "label": "Mein Plan für die kochende Zone:", "hoehe": 3, "zeichnen": true}
       ],
       "lehrer": {
@@ -1818,7 +1820,7 @@
           "links": ["Frais", "Chaud", "Très chaud", "Bouillant"],
           "rechts": ["respirer, compter jusqu’à 10", "partir, chercher de l’aide", "continuer à jouer", "dire : « Arrête, s’il te plaît »"]
         },
-        { "art": "aufgabe", "text": "Qu’est-ce qui t’aide quand ta colère bout ? Dessine ou écris.", "symbole": ["malen", "schreiben"] },
+        { "art": "aufgabe", "text": "Qu’est-ce qui t’aide quand ta colère bout ? Dessine ou écris.", "hinweis": "Exemple : je vais dans le coin calme et je serre un coussin.", "symbole": ["malen", "schreiben"] },
         { "art": "feld", "label": "Mon plan pour la zone bouillante :", "hoehe": 3, "zeichnen": true }
       ],
       "lehrer": {
@@ -2617,7 +2619,7 @@
           "hinweis": "Notiere die Angst (0–10). Chiaras Leiter beginnt so: allein laut lesen (2), einer Freundin vortragen (4)."
         },
         {"art": "leiter", "stufen": 6, "oben": "am schwersten (Angst 8–10)", "unten": "am leichtesten (Angst 2–3)"},
-        {"art": "aufgabe", "text": "Plane deinen ersten Schritt so genau wie möglich."},
+        {"art": "aufgabe", "text": "Plane deinen ersten Schritt so genau wie möglich.", "hinweis": "Beispiel: Mein erster Schritt: den Text allein laut lesen – heute Abend in meinem Zimmer."},
         {
           "art": "satzanfaenge",
           "items": ["Mein erster Schritt: …", "Wann und wo: …", "Das sage ich mir, wenn die Angst steigt: …", "Wer mich unterstützt: …"]
@@ -2698,7 +2700,7 @@
           "hinweis": "Note la peur (0–10). L’échelle de Chiara commence ainsi : lire seule à voix haute (2), présenter à une amie (4)."
         },
         {"art": "leiter", "stufen": 6, "oben": "le plus difficile (peur 8–10)", "unten": "le plus facile (peur 2–3)"},
-        {"art": "aufgabe", "text": "Planifie ta première étape aussi précisément que possible."},
+        {"art": "aufgabe", "text": "Planifie ta première étape aussi précisément que possible.", "hinweis": "Exemple : première étape : lire mon texte à voix haute – ce soir, dans ma chambre."},
         {
           "art": "satzanfaenge",
           "items": ["Ma première étape : …", "Quand et où : …", "Ce que je me dis quand la peur monte : …", "Qui me soutient : …"]

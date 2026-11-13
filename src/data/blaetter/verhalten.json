@@ -1874,7 +1874,7 @@
           "zeilen": 5,
           "beispiel": ["Mo", "Langweilige Erklärung, ein Freund grinst mich an", "Witz laut in die Klasse gerufen", "Alle lachen. Danach eine Verwarnung."]
         },
-        {"art": "aufgabe", "text": "Werte deine Woche aus."},
+        {"art": "aufgabe", "text": "Werte deine Woche aus.", "hinweis": "Beispiel: Das Verhalten kommt vor allem, wenn mir langweilig ist und andere zuschauen."},
         {
           "art": "satzanfaenge",
           "linien": 2,
@@ -1965,7 +1965,7 @@
             "Tout le monde rit. Ensuite, un avertissement."
           ]
         },
-        {"art": "aufgabe", "text": "Analyse ta semaine."},
+        {"art": "aufgabe", "text": "Analyse ta semaine.", "hinweis": "Exemple : ce comportement apparaît surtout quand je m’ennuie et que d’autres regardent."},
         {
           "art": "satzanfaenge",
           "linien": 2,

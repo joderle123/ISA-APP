@@ -515,6 +515,7 @@
         {
           "art": "aufgabe",
           "text": "Übt zu zweit einen Notruf. Eine Person ist die Leitstelle, die andere antwortet. Dann tauscht ihr.",
+          "hinweis": "Beispiel: „Ich bin am Sportplatz hinter der Schule, beim Eingang.“",
           "symbole": [
             "partner"
           ]
@@ -674,6 +675,7 @@
         {
           "art": "aufgabe",
           "text": "Entraînez-vous à deux à appeler les secours. Une personne joue le 112, l’autre répond. Puis échangez.",
+          "hinweis": "Exemple : « Je suis au terrain de sport derrière l’école, près de l’entrée. »",
           "symbole": [
             "partner"
           ]
