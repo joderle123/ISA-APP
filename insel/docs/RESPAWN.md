@@ -66,6 +66,11 @@ man darf fast alles tun (auch Mist), keine Waffen, kein Gefängnis. Die Folgen s
   - **Zuhören** (`welt.js` → `merkFrage`): Wer jemandem Pommes ausgegeben hat, wird ab dem nächsten Tag beim Reden einmal
     gefragt: „Weißt du noch, was ich dir erzählt hab?“ – drei Antworten, die richtige gibt Nähe, die falsche kostet nichts.
   - **Einstieg:** In der allerersten Runde folgen auf die Ankunft vier kurze Sätze, wie ein freier Tag geht (einmalig).
+  - **Frisuren und Kopfbedeckungen** (`figur3d.js` → `baueFrisur`): Das Figuren-Paket hat nur kurze Männerfrisuren. Jede
+    Figur bekommt jetzt die Frisur aus ihrem Aussehen (`look.hairStyle`: lang, bob, dutt, flechtzoepfe, locken, kopftuch,
+    irokese, stachel; `look.head`: muetze, cap, stirnband, bandana) als einfache Formen am Kopfknochen. Volle Frisuren
+    blenden das kurze Haar des Kopfmodells aus. Jolie, Yara, Noor, Maëlle, Ilda und Oma Lucinda haben Köpfe ohne Bart und
+    Hut und etwas schmalere Schultern. (Echte Frauen-Modelle bleiben besser – Paket „Ultimate Modular Women“.)
   - Im Hub steht RESPAWN als Kachel bei den Materialien (Klassebuch: `hub-apps.js`, Test `respawn-kachel.js`).
 - **Offen:** Spieltest mit Jugendlichen, Frauen-Modelle (Paket „Ultimate Modular Women“ fehlt noch), Gesichtsausdruck der
   neuen Figuren.

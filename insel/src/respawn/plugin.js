@@ -70,19 +70,20 @@ export default {
 
     // ---------- Neue Figuren (Skelett, echte Bewegungen): Überzug für die Spielfigur und alle anderen ----------
     const STIL = {
-      ilda: { Head: 'Farmer', Body: 'Suit', Legs: 'Suit', Feet: 'Suit' }, fraenz: 'Worker', lucinda: { Head: 'Farmer', Body: 'Farmer', Legs: 'Farmer', Feet: 'Farmer' },
+      ilda: { Head: 'Casual2', Body: 'Suit', Legs: 'Suit', Feet: 'Suit' }, fraenz: 'Worker', lucinda: { Head: 'Casual', Body: 'Farmer', Legs: 'Farmer', Feet: 'Farmer' },   // Frauen: Köpfe ohne Bart und Hut – Haar und Mütze kommen aus figur3d.js (baueFrisur)
       kontrolle: 'Suit', geselle: { Head: 'Casual2', Body: 'Worker', Legs: 'Worker', Feet: 'Worker' },
       jolie: { Head: 'Beach', Body: 'Casual2', Legs: 'Casual', Feet: 'Casual' }, tun: { Head: 'Casual2', Body: 'Casual', Legs: 'Casual2', Feet: 'Casual2' },
       pit: { Head: 'Casual', Body: 'Casual2', Legs: 'Casual2', Feet: 'Casual' }, mika: 'Punk', luc: { Head: 'Punk', Body: 'Casual', Legs: 'Punk', Feet: 'Punk' },
-      yara: { Head: 'Beach', Body: 'Punk', Legs: 'Punk', Feet: 'Punk' }, noor: { Head: 'Adventurer', Body: 'Casual2', Legs: 'Casual2', Feet: 'Casual' },
+      yara: { Head: 'Beach', Body: 'Punk', Legs: 'Punk', Feet: 'Punk' }, noor: { Head: 'Casual', Body: 'Casual2', Legs: 'Casual2', Feet: 'Casual' },
       tiago: 'Beach', maelle: { Head: 'Beach', Body: 'Casual', Legs: 'Casual', Feet: 'Beach' },
     };
+    const FRAUEN = ['jolie', 'yara', 'noor', 'maelle', 'ilda', 'lucinda'];   // schmalere Schultern (das Paket hat nur Männerkörper)
     const MISCH = ['Casual', 'Casual2', 'Beach', 'Farmer', 'Adventurer', 'Suit'];
     const hash = (s) => { let x = 7; for (const c of String(s)) x = (x * 31 + c.charCodeAt(0)) >>> 0; return x; };
     const stilFuer = (id) => STIL[id] || { Head: MISCH[hash(id) % MISCH.length], Body: MISCH[hash(id + 'b') % MISCH.length], Legs: MISCH[hash(id + 'l') % 4], Feet: MISCH[hash(id + 'f') % 4] };
     const SPIELER_STIL = ['Casual', 'Casual2', 'Punk', 'Beach', 'Adventurer'];
     const spielerStil = () => { const k = SPIELER_STIL[(meta.figur || 0) % SPIELER_STIL.length]; return { Head: k, Body: k === 'Punk' ? 'Casual2' : k, Legs: k === 'Beach' ? 'Beach' : 'Casual2', Feet: 'Casual' }; };
-    const zieheAn = (f) => { try { if (f && f.humanoid) ueberziehe(game, f.humanoid, { stil: stilFuer(f.id), look: (f.def && f.def.look) || undefined }).catch((e) => console.warn('[respawn] Figur', e)); } catch (e) { console.warn('[respawn] Figur', e); } };
+    const zieheAn = (f) => { try { if (f && f.humanoid) ueberziehe(game, f.humanoid, { stil: stilFuer(f.id), look: (f.def && f.def.look) || undefined, frau: FRAUEN.includes(f.id) }).catch((e) => console.warn('[respawn] Figur', e)); } catch (e) { console.warn('[respawn] Figur', e); } };
     ueberziehe(game, player.humanoid, { stil: spielerStil() }).catch((e) => console.warn('[respawn] Figur', e));
     for (const f of npcs.list()) zieheAn(f);
     events.on('npc:spawn', (e) => { const f = e && npcs.get(e.id); if (f) zieheAn(f); });
