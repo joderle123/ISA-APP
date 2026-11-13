@@ -11,8 +11,8 @@ import { lambertVC } from '../../world/landmarks.js';
 
 export function createMaterials(veil) {
   const cache = new Map();
-  const base = lambertVC(veil, 'props');
-  const baseDouble = lambertVC(veil, 'props2', { side: THREE.DoubleSide });
+  const base = lambertVC(veil, 'props', { schnee: true });
+  const baseDouble = lambertVC(veil, 'props2', { side: THREE.DoubleSide, schnee: true });
 
   // Leuchtendes leuchtet (Stil-Bibel §10.1): Emission über 1.0, damit der Bloom greift (Laterne ≈ 1.6, Feuer ≈ 2.2);
   // keine Rampe, kein Kantenlicht (Rampe „glow“ über den Schlüssel)

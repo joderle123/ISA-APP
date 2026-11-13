@@ -127,3 +127,15 @@ man darf fast alles tun (auch Mist), keine Waffen, kein Gefängnis. Die Folgen s
     Runde andere gezogen – die zweite Runde erzählt etwas anderes als die erste. Das Finale steht immer am Schluss.
   - **Unterwuchs** (`vegetation.js`, `lush`): am Fuß der Bäume stehen Farne und ab und zu ein kleiner Busch. Farne und Blumen
     werden wie das Gras in kleinen Blöcken gezeichnet.
+  - **Jahreszeiten in der Natur** (`world/veil.js` → `setSeason(herbst, schnee, bluete)`, Uniform `uLumoSeason`; gesetzt in
+    `respawn/plugin.js` → `WETTER[…].natur`, gleitet in ein paar Sekunden hinüber). Die vier Kapitel sehen jetzt wirklich
+    verschieden aus – ohne ein einziges Dreieck mehr, alles ist Farbe im Shader:
+    - *Herbst:* Laubbäume, Birken und Büsche (`matLaub` in `vegetation.js`) werden je Baum gelb, orange oder rot, wenige bleiben
+      grün. Die Wiese wird fleckig ocker, bunte Blätter liegen im Gras (`terrain.js`).
+    - *Winter:* Laubbäume stehen kahl-braun mit Schneehaube, Kiefern, Palmen und Felsen tragen Schnee obenauf, Gras ist bereift,
+      Blumen sind weg. Schnee liegt auf Wiese, Fels und Sand – Wege und Ufer bleiben frei. Auf allen schrägen Flächen der Häuser
+      (Dächer, Markisen, Autoscheiben) liegt Schnee (`landmarks.js` → `SCHNEE_DACH`, Material-Option `schnee`); Straße und Platz
+      sind geräumt.
+    - *Frühling:* jede dritte Krone blüht rosa oder weiß, das Gras ist frischer, kleine Blütenpunkte in der Wiese.
+    - *Sommer:* wie bisher. LUMO selbst ist nicht betroffen (dort bleibt `uLumoSeason` null).
+    Ansehen: `LUMO.world.veil.setSeason(0, 1, 0)` in der Konsole (solange keine Runde läuft).

@@ -343,6 +343,34 @@ float lumoInk(float v, float th, float w) { float fw = fwidth(v) * 1.2 + w; retu
     vertex: (s) => s
       .replace('#include <common>', '#include <common>\nattribute float aGlow;\nattribute vec3 aSurf;\nvarying float vGlow;\nvarying vec3 vSurf;')
       .replace('#include <begin_vertex>', '#include <begin_vertex>\nvGlow = aGlow;\nvSurf = aSurf;'),
+    // Jahreszeit am Boden (uLumoSeason: x Herbst, y Schnee, z Blüte) – vor dem Licht, damit Schnee Schatten annimmt.
+    // Herbst: Wiese fleckig ocker, bunte Blätter liegen herum. Winter: Schnee auf Wiese, Fels und Sand, Wege bleiben
+    // ausgetreten frei, am Wasser taut es. Frühling: frisches Grün mit kleinen Blütenpunkten.
+    fragment: (s) => s.replace('#include <color_fragment>', `#include <color_fragment>
+      if (uLumoSeason.x + uLumoSeason.y + uLumoSeason.z > 0.001) {
+        vec2 jp = vVeilPos.xz;
+        float jn = lumoBlotch(jp * 0.11 + 31.0) * 0.65 + lumoBlotch(jp * 0.47 - 9.0) * 0.35;
+        float jnah = 1.0 - smoothstep(22.0, 60.0, -vFogView.z);
+        float wiese = vSurf.x * (1.0 - vSurf.z);
+        // Herbst
+        float ocker = smoothstep(0.38, 0.62, jn);
+        diffuseColor.rgb = mix(diffuseColor.rgb, diffuseColor.rgb * vec3(1.55, 1.0, 0.5), uLumoSeason.x * wiese * (0.35 + 0.45 * ocker));
+        vec2 jz = floor(jp * 2.6);
+        float jb = lumoBlotchH(jz + 0.5);
+        float blatt = step(0.9 - 0.06 * ocker, jb) * step(length(fract(jp * 2.6) - 0.5), 0.3);
+        vec3 bf = jb > 0.967 ? vec3(0.58, 0.056, 0.024) : (jb > 0.933 ? vec3(0.8, 0.19, 0.024) : vec3(0.89, 0.54, 0.03));
+        diffuseColor.rgb = mix(diffuseColor.rgb, bf, uLumoSeason.x * wiese * blatt * jnah);
+        // Winter
+        float fels = clamp(1.0 - vSurf.x - vSurf.y - vSurf.z, 0.0, 1.0);
+        float decke = wiese * smoothstep(0.2, 0.34, jn + 0.25) + fels * smoothstep(0.42, 0.55, jn) * 0.85 + vSurf.y * smoothstep(0.5, 0.62, jn) * 0.7;
+        decke *= smoothstep(0.35, 1.5, vVeilPos.y) * (1.0 - vGlow);
+        diffuseColor.rgb = mix(diffuseColor.rgb, vec3(0.86, 0.91, 1.0) * (0.96 + 0.04 * lumoBlotch(jp * 1.3)), uLumoSeason.y * clamp(decke, 0.0, 1.0));
+        // Frühling
+        diffuseColor.rgb = mix(diffuseColor.rgb, diffuseColor.rgb * vec3(0.94, 1.1, 0.86), uLumoSeason.z * wiese);
+        float punkt = step(0.93, jb) * step(length(fract(jp * 2.6) - 0.5), 0.2);
+        vec3 pf = jb > 0.977 ? vec3(1.0, 0.27, 0.48) : (jb > 0.953 ? vec3(1.0, 0.95, 0.9) : vec3(1.0, 0.72, 0.05));
+        diffuseColor.rgb = mix(diffuseColor.rgb, pf, uLumoSeason.z * wiese * punkt * jnah);
+      }`),
     // Gemalte Flächenstruktur je Materialklasse (§7: drei Töne, klare Formen, kein Rauschen), Unterwasser-Tönung +
     // zweitonige Kaustik (§5.4), Lava-Glühen
     beforeVeil: /* glsl */`

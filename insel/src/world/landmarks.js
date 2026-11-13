@@ -6,10 +6,18 @@ import { FEATURES } from './island.js';
 
 // Standard-Material für Requisiten und Wahrzeichen: flach schattiert, Vertexfarben, Toon-Rampe „props“ (Stil-Bibel §3.1).
 // opts: Material-Optionen; zusätzlich ramp ('props' | 'fels' | 'laub' | 'figur' | {…}), rim, fogCap für den Schleier-Patch.
+// schnee: Im Winter (uLumoSeason.y) liegt Schnee auf allen schrägen Flächen – Dächer, Markisen, Autoscheiben.
+// Ganz flache Flächen (Straße, Platz, Böden) bleiben frei: dort ist geräumt und ausgetreten.
+const SCHNEE_DACH = (s) => s.replace('#include <normal_fragment_maps>', `#include <normal_fragment_maps>
+  {
+    float sny = dot(vec3(viewMatrix[0][1], viewMatrix[1][1], viewMatrix[2][1]), normal);
+    float dach = smoothstep(0.28, 0.42, sny) * (1.0 - smoothstep(0.93, 0.985, sny));
+    diffuseColor.rgb = mix(diffuseColor.rgb, vec3(0.86, 0.91, 1.0), uLumoSeason.y * dach * 0.92);
+  }`);
 export function lambertVC(veil, key, opts = {}) {
-  const { ramp, rim, fogCap, trans, ...matOpts } = opts;
+  const { ramp, rim, fogCap, trans, schnee, ...matOpts } = opts;
   const m = new THREE.MeshLambertMaterial({ vertexColors: true, flatShading: true, ...matOpts });
-  if (veil) veil.patch(m, { key: 'lm-' + key, ramp, rim, fogCap, trans });
+  if (veil) veil.patch(m, { key: 'lm-' + key, ramp, rim, fogCap, trans, fragment: schnee ? SCHNEE_DACH : undefined });
   return m;
 }
 

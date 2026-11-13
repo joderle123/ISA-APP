@@ -331,7 +331,8 @@ function shellsGeo(rnd) {
 }
 
 // ---------- Material mit Wind ----------
-function windMaterial(veil, { fade = false, bloom = false } = {}) {
+// laub: Laubbaum/Busch (färbt sich im Herbst, blüht im Frühling, steht im Winter kahl unter Schnee) · blume: verschwindet im Schnee
+function windMaterial(veil, { fade = false, bloom = false, laub = false, blume = false } = {}) {
   const mat = new THREE.MeshLambertMaterial({ vertexColors: true, side: THREE.DoubleSide });
   const u = {
     uWindDir: { value: new THREE.Vector2(0.8, 0.6).normalize() },
@@ -349,11 +350,43 @@ uniform vec2 uWindDir;
 uniform float uWindStrength;
 uniform float uFadeFar;
 uniform float uBloom;
+uniform vec3 uLumoSeason;
 varying float vGrassTip;`)
+      // Jahreszeit (uLumoSeason: x Herbst, y Schnee, z Blüte) – nur Farbe je Eckpunkt, kostet im Bild nichts
+      .replace('#include <color_vertex>', `#include <color_vertex>
+#ifdef USE_COLOR
+{
+  vec3 jp = vec3(0.0);
+  #ifdef USE_INSTANCING
+    jp = instanceMatrix[3].xyz;
+  #endif
+  float jh = fract(sin(dot(jp.xz, vec2(12.9898, 78.233))) * 43758.5453);
+  float jl = dot(vColor.rgb, vec3(0.3, 0.6, 0.1));
+  float jg = clamp((vColor.g - max(vColor.r, vColor.b)) * 5.0, 0.0, 1.0);
+  ${laub ? `
+  float jk = step(0.9, aLeaf);   // nur das Laub der Krone, nicht Stamm und Blütenkugeln
+  // Herbst: jede Krone gelb, orange oder rot; wenige bleiben grün
+  vec3 hc = jh < 0.3 ? vec3(0.89, 0.54, 0.03) : (jh < 0.62 ? vec3(0.8, 0.19, 0.024) : (jh < 0.86 ? vec3(0.58, 0.056, 0.024) : vec3(0.39, 0.43, 0.05)));
+  vColor.rgb = mix(vColor.rgb, hc * (0.4 + jl * 1.5), uLumoSeason.x * jk);
+  // Frühling: etwa jede dritte Krone blüht rosa oder weiß
+  vec3 fc = fract(jh * 7.31) < 0.5 ? vec3(1.0, 0.27, 0.48) : vec3(1.0, 0.78, 0.83);
+  vColor.rgb = mix(vColor.rgb, fc * (0.45 + jl * 1.1), uLumoSeason.z * jk * step(0.64, fract(jh * 3.17)));
+  // Winter: kahles Geäst (braun-grau) statt Laub
+  vColor.rgb = mix(vColor.rgb, vec3(0.21, 0.15, 0.12) * (0.6 + jl), uLumoSeason.y * jk * 0.9);` : ''}
+  ${fade ? `
+  // Wiese: im Herbst fleckig trocken, im Winter weiß bereift (Spitzen zuerst)
+  vColor.rgb = mix(vColor.rgb, vec3(0.62, 0.42, 0.07) * (0.5 + jl * 1.2), uLumoSeason.x * jg * 0.55 * step(0.45, jh));
+  vColor.rgb = mix(vColor.rgb, vec3(0.86, 0.91, 1.0), uLumoSeason.y * (0.62 + 0.3 * aWind));` : `
+  // Schnee liegt oben auf Kronen, Ästen und Felsen
+  float jo = smoothstep(0.12, 0.62, normal.y + (fract(sin(dot(position.xz, vec2(3.1, 5.7))) * 437.5) - 0.5) * 0.3);
+  vColor.rgb = mix(vColor.rgb, vec3(0.86, 0.91, 1.0), uLumoSeason.y * jo * 0.9);`}
+}
+#endif`)
       .replace('#include <begin_vertex>', `#include <begin_vertex>
 {
   vGrassTip = aWind;
   ${bloom ? 'transformed *= mix(1.0, uBloom, step(0.94, aWind));' : ''}
+  ${blume ? 'transformed *= 1.0 - uLumoSeason.y;' : ''}
   vec3 ip = vec3(0.0);
   #ifdef USE_INSTANCING
     ip = instanceMatrix[3].xyz;
@@ -375,11 +408,11 @@ varying float vGrassTip;`)
   #endif` : ''}
 }`);
   };
-  mat.userData.__lumoKey = (fade ? 'windF' : 'wind') + (bloom ? 'B' : '');
+  mat.userData.__lumoKey = (fade ? 'windF' : 'wind') + (bloom ? 'B' : '') + (laub ? 'L' : '') + (blume ? 'M' : '');
   mat.customProgramCacheKey = () => mat.userData.__lumoKey;
   // Im Schleier werden helle Halmspitzen (×1.18) zu weißen Kritzeln (Duotone hebt Lichter): dort auf Boden × 1.05 deckeln
   veil.patch(mat, {
-    key: (fade ? 'vegF' : 'veg') + (bloom ? 'B' : ''),
+    key: (fade ? 'vegF' : 'veg') + (bloom ? 'B' : '') + (laub ? 'L' : '') + (blume ? 'M' : ''),
     fragmentPars: 'varying float vGrassTip;\n',
     afterVeil: 'outgoingLight *= mix(1.0, 0.88, gLumoVeil * vGrassTip);\n',
   });
@@ -393,20 +426,23 @@ export function createVegetation({ island, veil, colliders, quality, scene, lush
   const matTree = windMaterial(veil);
   const matSmall = windMaterial(veil, { fade: true });
   const matBloom = windMaterial(veil, { fade: true, bloom: true });
+  const matLaub = windMaterial(veil, { laub: true });
+  const matBlume = windMaterial(veil, { fade: true, blume: true });
   matSmall.userData.wind.uFadeFar.value = quality.grassDistance;
+  matBlume.userData.wind.uFadeFar.value = quality.grassDistance;
   matBloom.userData.wind.uFadeFar.value = quality.grassDistance * 1.3;
 
   const flowerPalA = ['#ff5d8f', '#ffd23f', '#ffffff', '#ff8c42'];
   const flowerPalB = ['#b17dff', '#6ec6ff', '#ffffff', '#ff5d8f'];
   const SPECIES = {
     palm: { geos: [palmGeo(rnd, 0), palmGeo(rnd, 1)], mat: matTree, shadow: true, collide: 0.42, trunk: 7, crown: [3.2, 6.2, 9.2], kind: 'tree' },
-    tree: { geos: [broadleafGeo(rnd, false), broadleafGeo(rnd, false)], mat: matTree, shadow: true, collide: 0.45, trunk: 3.4, crown: [2.7, 2.8, 7.2], kind: 'tree' },
-    blossom: { geos: [broadleafGeo(rnd, true)], mat: matTree, shadow: true, collide: 0.45, trunk: 3.4, crown: [2.7, 2.8, 7.2], kind: 'tree' },
+    tree: { geos: [broadleafGeo(rnd, false), broadleafGeo(rnd, false)], mat: matLaub, shadow: true, collide: 0.45, trunk: 3.4, crown: [2.7, 2.8, 7.2], kind: 'tree' },
+    blossom: { geos: [broadleafGeo(rnd, true)], mat: matLaub, shadow: true, collide: 0.45, trunk: 3.4, crown: [2.7, 2.8, 7.2], kind: 'tree' },
     jungle: { geos: [jungleGeo(rnd), jungleGeo(rnd)], mat: matTree, shadow: true, collide: 0.75, trunk: 6.5, crown: [4.2, 5.4, 11], kind: 'tree' },
     pine: { geos: [pineGeo(rnd), pineGeo(rnd)], mat: matTree, shadow: true, collide: 0.4, trunk: 2.2, crown: [2.3, 0.9, 7.6], kind: 'tree' },
-    bush: { geos: [bushGeo(rnd, false), bushGeo(rnd, true)], mat: matTree, kind: 'small', far: 1.8 },
+    bush: { geos: [bushGeo(rnd, false), bushGeo(rnd, true)], mat: matLaub, kind: 'small', far: 1.8 },
     fern: { geos: [fernGeo(rnd)], mat: matSmall, kind: 'small', far: 1.2 },
-    flowers: { geos: [flowersGeo(rnd, flowerPalA), flowersGeo(rnd, flowerPalB)], mat: matSmall, kind: 'small', far: 1.0 },
+    flowers: { geos: [flowersGeo(rnd, flowerPalA), flowersGeo(rnd, flowerPalB)], mat: matBlume, kind: 'small', far: 1.0 },
     grass: { geos: [grassGeo(rnd), grassGeo(rnd)], mat: matSmall, kind: 'small', far: 1.0 },
     rock: { geos: [rockGeo(rnd, false)], mat: matTree, kind: 'small', far: 2.2 },
     boulder: { geos: [rockGeo(rnd, true)], mat: matTree, shadow: true, kind: 'tree', collideRock: true },
@@ -414,7 +450,7 @@ export function createVegetation({ island, veil, colliders, quality, scene, lush
     shells: { geos: [shellsGeo(rnd)], mat: matSmall, kind: 'small', far: 0.7 },
     // WP11: Schilf an Gewässern, Moorbirke und Heide im Moor, Mangroven in der Lagune
     reed: { geos: [reedGeo(rnd), reedGeo(rnd)], mat: matSmall, kind: 'small', far: 1.3 },
-    birch: { geos: [birchGeo(rnd), birchGeo(rnd)], mat: matTree, shadow: true, collide: 0.22, trunk: 5.5, crown: [1.8, 3.4, 7.4], kind: 'tree' },
+    birch: { geos: [birchGeo(rnd), birchGeo(rnd)], mat: matLaub, shadow: true, collide: 0.22, trunk: 5.5, crown: [1.8, 3.4, 7.4], kind: 'tree' },
     heather: { geos: [heatherGeo(rnd), heatherGeo(rnd)], mat: matBloom, kind: 'small', far: 1.6 },
     mangrove: { geos: [mangroveGeo(rnd), mangroveGeo(rnd)], mat: matTree, shadow: true, collide: 0.5, trunk: 3.2, crown: [2.4, 2.8, 6.2], kind: 'tree', tag: 'mangrove' },
   };
@@ -748,19 +784,20 @@ export function createVegetation({ island, veil, colliders, quality, scene, lush
       }
     }
     matSmall.userData.wind.uFadeFar.value = q.grassDistance;
+    matBlume.userData.wind.uFadeFar.value = q.grassDistance;
   }
   applyDensity(quality);
 
   let bloomT = 0;
   const vegetation = {
     group, meshes, placed, species: Object.keys(SPECIES),
-    materials: [matTree, matSmall, matBloom],
+    materials: [matTree, matSmall, matBloom, matLaub, matBlume],
     get instanceCount() { return totalInstances; },
     get bloom() { return matBloom.userData.wind.uBloom.value; },
     setQuality(q) { applyDensity(q); },
     // Wind (0 = still, 1 = normal, 2 = Sturm)
     setWind(strength, dirX, dirZ) {
-      for (const m of [matTree, matSmall, matBloom]) {
+      for (const m of [matTree, matSmall, matBloom, matLaub, matBlume]) {
         m.userData.wind.uWindStrength.value = strength;
         if (dirX !== undefined) m.userData.wind.uWindDir.value.set(dirX, dirZ).normalize();
       }

@@ -81,6 +81,7 @@ uniform vec4 uVeilWave;
 uniform vec4 uVeilWave2;
 uniform float uVeilStrength;
 uniform float uLumoTime;
+uniform vec3 uLumoSeason;   // Jahreszeit in der Natur: x Herbstlaub, y Schnee, z Frühlingsblüte (je 0..1)
 uniform vec3 uVeilHaze;
 uniform vec3 uVeilFogColor;
 uniform vec3 uFogSunColor;
@@ -327,6 +328,7 @@ export function createVeil({ events, audio, zones: zoneDefs = ZONES } = {}) {
     uVeilWave2: { value: new THREE.Vector4(1, 0, 1, 0) },
     uVeilStrength: { value: 1 },
     uLumoTime: { value: 0 },
+    uLumoSeason: { value: new THREE.Vector3(0, 0, 0) },
     uVeilHaze: { value: new THREE.Color('#8f86b8') },
     uVeilFogColor: { value: new THREE.Color('#8f8aa8') },   // Nebel im Schleier (linear, Stil-Bibel §2.4)
     uFogSunColor: { value: new THREE.Color('#ffb070') },    // Sonnenstreuung im Dunst (linear, setzt der Himmel)
@@ -470,6 +472,9 @@ export function createVeil({ events, audio, zones: zoneDefs = ZONES } = {}) {
     patch,
     get patches() { return slots.slice(NUM_ZONES).filter((s) => s.id); },
     // Farbkorrektur setzen: { lift:[r,g,b], gain:[r,g,b], sat, contrast }
+    // Jahreszeit in der Natur (Laub, Schnee, Blüte): Pflanzen und Boden lesen uLumoSeason
+    setSeason(herbst = 0, schnee = 0, bluete = 0) { uniforms.uLumoSeason.value.set(herbst, schnee, bluete); },
+    get season() { return uniforms.uLumoSeason.value; },
     setGrade({ lift, gain, sat, contrast } = {}) {
       if (lift) uniforms.uGradeLift.value.set(lift[0], lift[1], lift[2]);
       if (gain) uniforms.uGradeGain.value.set(gain[0], gain[1], gain[2]);

@@ -91,10 +91,10 @@ export default {
 
     // ---------- Jahreszeiten: Farbstimmung und Wetter (Laub, Schnee, Blüten, Glühwürmchen) ----------
     const WETTER = {
-      herbst: { palette: 'herbst', sturm: 0, teile: { rate: 9, color: 0xe8792b, jitter: 0.5, size: 0.26, life: 5.5, gravity: -0.55, drag: 0.6, hoch: 7, wind: 1.3 } },
-      winter: { palette: 'winter', sturm: 0.22, teile: { rate: 46, color: 0xffffff, jitter: 0.05, size: 0.13, life: 6.5, gravity: -0.28, drag: 0.9, hoch: 8, wind: 0.6 } },
-      fruehling: { palette: 'fruehling', sturm: 0, teile: { rate: 6, color: 0xffb7d5, jitter: 0.25, size: 0.2, life: 6, gravity: -0.35, drag: 0.7, hoch: 6, wind: 0.9 } },
-      sommer: { palette: 'sommer', sturm: 0, teile: null },
+      herbst: { palette: 'herbst', natur: [1, 0, 0], sturm: 0, teile: { rate: 9, color: 0xe8792b, jitter: 0.5, size: 0.26, life: 5.5, gravity: -0.55, drag: 0.6, hoch: 7, wind: 1.3 } },
+      winter: { palette: 'winter', natur: [0, 1, 0], sturm: 0.22, teile: { rate: 46, color: 0xffffff, jitter: 0.05, size: 0.13, life: 6.5, gravity: -0.28, drag: 0.9, hoch: 8, wind: 0.6 } },
+      fruehling: { palette: 'fruehling', natur: [0, 0, 1], sturm: 0, teile: { rate: 6, color: 0xffb7d5, jitter: 0.25, size: 0.2, life: 6, gravity: -0.35, drag: 0.7, hoch: 6, wind: 0.9 } },
+      sommer: { palette: 'sommer', natur: [0, 0, 0], sturm: 0, teile: null },
     };
     let wetterT = 0;
     function wetter() {
@@ -107,6 +107,9 @@ export default {
     game.addUpdate((dt) => {
       if (!R || !game.particles || game.paused) return;
       const W = wetter(), p = player.position, nacht = game.world.sky.night || 0;
+      // Natur folgt der Jahreszeit (buntes Laub, Schnee, Blüte) – gleitet in ein paar Sekunden hinüber
+      const V = game.world.veil;
+      if (V && V.setSeason) { const s = V.season, n = W.natur, k = Math.min(1, dt * 0.7); V.setSeason(s.x + (n[0] - s.x) * k, s.y + (n[1] - s.y) * k, s.z + (n[2] - s.z) * k); }
       const T = W.teile || (nacht > 0.5 ? { rate: 5, color: 0xfff29a, jitter: 0.1, size: 0.16, life: 4, gravity: 0.05, drag: 1.2, hoch: 1.6, wind: 0.2, additive: true } : null);
       if (!T) return;
       wetterT += dt * T.rate;
