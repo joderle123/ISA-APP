@@ -167,7 +167,7 @@ const fuenfziger = {
 };
 
 const luege = {
-  id: 'luege', titel: 'Die Lüge für Tun', zeit: ['winter', 'fruehling'], ort: 'bootshaus', uhr: 15.4, cast: ['tun', 'ilda'], thema: 'freundschaft',
+  id: 'luege', titel: 'Die Lüge für Tun', zeit: ['winter', 'fruehling'], ort: 'bootshaus', versatz: { x: 2.6, z: -5.5 }, uhr: 15.4, cast: ['tun', 'ilda'], thema: 'freundschaft',
   szene: () => [
     ['t', 'Nachts hat jemand das Werft-Tor besprüht.'],
     ['m', 'ilda', { versteckt: true }],
@@ -216,6 +216,8 @@ const luege = {
 const zuhause = {
   id: 'zuhause', titel: 'Zuhause', zeit: ['winter'], uhr: 19.6, thema: 'familie',
   ort: (R) => (R.karten.zuhause === 'oma' ? 'lucindasGarten' : 'bootshaus'),
+  // vor dem Haus statt an der Wand (die Kamera stand sonst im Bootshaus: dunkles Bild); bei Oma neben den Beeten statt auf der Straße
+  versatz: (R) => (R.karten.zuhause === 'oma' ? { x: -4, z: 2 } : { x: 2.6, z: -5.5 }),
   cast: (R) => (R.karten.zuhause === 'oma' ? ['lucinda'] : []),
   szene: (R) => (R.karten.zuhause === 'oma' ? [
     ['t', 'Du kommst spät heim. In der Küche brennt Licht.'],

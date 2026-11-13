@@ -49,7 +49,7 @@ export function createBuehne({ game, O }) {
 
   function aufstellen(sit, R) {
     const site = game.content.resolveSite(fn(sit.ort, R)) || { x: 6, z: 118 };
-    const v = sit.versatz || {};
+    const v = fn(sit.versatz, R) || {};   // fest oder je nach Runde (Funktion)
     const cx = site.x + (v.x || 0), cz = site.z + (v.z || 0);
     // Blickrichtung: zur Inselmitte hin (Dorf und Berg im Hintergrund), außer die Situation gibt eine vor
     const a = typeof sit.richtung === 'number' ? sit.richtung : Math.atan2(-cx, -cz);

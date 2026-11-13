@@ -135,6 +135,8 @@ export default {
       const cam = game.camera;
       if (!cam || !marken.size) return;
       const frei = R && !B.aktiv && !ui.overlay.count && !document.querySelector('.rs-voll');
+      // „Schlafen gehen“ lag sonst mitten über Sprechblasen und Auswahl (sobald die Kraft leer ist und man noch redet)
+      if (knopf) knopf.style.display = frei && !ui.bubbles.current && !ui.choices.open ? '' : 'none';
       for (const m of marken.values()) {
         const d = Math.hypot(m.x - player.position.x, m.z - player.position.z);
         if (!frei || (m.ort && d > 40)) { m.el.style.display = 'none'; continue; }

@@ -99,3 +99,8 @@ man darf fast alles tun (auch Mist), keine Waffen, kein Gefängnis. Die Folgen s
     an Aussichtspunkten erscheinen in RESPAWN nicht mehr (`signalfeuer.js`, `collectibles/plugin.js`, je eine Zeile).
   - **Der Morgen** (`plugin.js` → `einTag`): Jeder Tag begann mit einem dunkelbraunen Bild – die Kamera steckte in der Wand
     vom Bootshaus, die Figur war nicht zu sehen. Jetzt steht man morgens vor der Tür und schaut ins Dorf (zum Brunnen).
+  - **Szenen am Zuhause** („Die Lüge für Tun“, „Zuhause“): Die Kamera stand im Bootshaus, das Bild war dunkel. Beide Szenen
+    spielen jetzt vor dem Haus (`versatz`, darf auch eine Funktion der Runde sein). Gefunden mit einem Durchlauf aller
+    Szenen am Handy (jede einmal starten, erstes Bild ansehen).
+  - **„Schlafen gehen“** verdeckte Sprechblasen und Auswahl, sobald die Kraft leer war. Der Knopf ist jetzt nur zu sehen,
+    wenn gerade niemand spricht und nichts offen ist.
