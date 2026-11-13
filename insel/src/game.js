@@ -85,7 +85,8 @@ export async function createGame({ canvas, root, hudRoot, onProgress = () => {} 
   const sky = createSky({ scene, renderer, audio, quality: q0, events });
   const colliders = createColliders();
   await step(0.5, 'Palmen sprießen …');
-  const vegetation = createVegetation({ island, veil, colliders, quality: q0, scene });
+  // RESPAWN: üppige Wiese (mehr und kleinere Grasbüschel); LUMO bleibt, wie es war
+  const vegetation = createVegetation({ island, veil, colliders, quality: q0, scene, lush: (params.get('mode') || (typeof window !== 'undefined' && window.__LUMO_MODE)) === 'respawn' });
   await step(0.66, 'Möwen kreisen …');
   const particles = createParticles(scene);
   const landmarks = createLandmarks({ island, veil, colliders, scene, quality: q0 });

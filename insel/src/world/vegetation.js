@@ -388,7 +388,7 @@ varying float vGrassTip;`)
 }
 
 // ---------- Aufbau ----------
-export function createVegetation({ island, veil, colliders, quality, scene }) {
+export function createVegetation({ island, veil, colliders, quality, scene, lush = false }) {
   const rnd = mulberry32(4242);
   const matTree = windMaterial(veil);
   const matSmall = windMaterial(veil, { fade: true });
@@ -553,6 +553,44 @@ export function createVegetation({ island, veil, colliders, quality, scene }) {
     if (I.s === 'sand') grassTint.lerp(new THREE.Color('#c9c47a'), 0.6);
     add('grass', x, z, { s: 0.95 + rnd() * 0.6, tint: grassTint.clone() });
   });
+  // Üppige Wiese (lush, nur RESPAWN): Die Büschel oben stehen weit auseinander und sind groß und stachelig. Hier kommen
+  // viele kleine dazu (eigener Zufall, damit alles andere an seinem Platz bleibt), in mehr Farbtönen – trockene gelbe
+  // und dunkle satte Büschel dazwischen. Die großen werden kleiner. Sichtweite und Dichte regelt weiter die Grafikstufe.
+  if (lush) {
+    for (const it of placed.grass) it.s *= 0.7;
+    const rg = mulberry32(9917), trocken = new THREE.Color('#d6cf6e'), satt = new THREE.Color('#55b445'), R = 205, sp = 0.68;
+    for (let z = -R; z < R; z += sp) for (let x = -R; x < R; x += sp) {
+      const px = x + (rg() - 0.5) * sp * 0.95, pz = z + (rg() - 0.5) * sp * 0.95, r0 = rg(), r1 = rg(), r2 = rg(), r3 = rg();
+      if (Math.hypot(px, pz) > 200) continue;
+      const I = info(px, pz);
+      if (I.path > 0.35 || blocked(px, pz, -1)) continue;
+      let p = 0;
+      if (I.s === 'grass') p = 0.85 * (1 - zw[ZI.dschungel] * 0.5);
+      else if (I.s === 'sand' && I.h > 1.6) p = 0.04;
+      else if (I.s === 'ash') p = 0.05;
+      if (r0 >= p) continue;
+      let tw = 0; grassTint.setRGB(0, 0, 0);
+      ZONES.forEach((Z, k) => { if (zw[k] > 0) { grassTint.r += gtc[Z.id].r * zw[k]; grassTint.g += gtc[Z.id].g * zw[k]; grassTint.b += gtc[Z.id].b * zw[k]; tw += zw[k]; } });
+      const wild = Math.max(0, 1 - tw);
+      grassTint.r += gtc.wild.r * wild; grassTint.g += gtc.wild.g * wild; grassTint.b += gtc.wild.b * wild; tw += wild;
+      grassTint.multiplyScalar((0.9 + r1 * 0.24) / tw);
+      // Flecken: Rauschen entscheidet, wo es trockener oder satter ist (zusammenhängende Stellen, kein Pfeffer und Salz)
+      const fleck = island.noise.detail(px / 9 + 3, pz / 9 - 5);
+      if (fleck > 0.62) grassTint.lerp(trocken, Math.min(0.55, (fleck - 0.62) * 2.2)); else if (fleck < 0.38) grassTint.lerp(satt, Math.min(0.5, (0.38 - fleck) * 2));
+      if (I.s === 'sand') grassTint.lerp(trocken, 0.6);
+      add('grass', px, pz, { s: 0.36 + r2 * 0.46, tint: grassTint.clone(), rot: r3 * Math.PI * 2, v: r1 < 0.5 ? 0 : 1 });
+    }
+    // Blumenflecken: wo das Rauschen hoch ist, stehen Blumen in Gruppen (statt einzeln verstreut)
+    for (let z = -R; z < R; z += 1.7) for (let x = -R; x < R; x += 1.7) {
+      const px = x + (rg() - 0.5) * 1.6, pz = z + (rg() - 0.5) * 1.6, r0 = rg(), r1 = rg(), r2 = rg();
+      if (Math.hypot(px, pz) > 200) continue;
+      const fleck = island.noise.detail(px / 14 - 9, pz / 14 + 4);
+      if (fleck < 0.66 || r0 > (fleck - 0.66) * 4) continue;
+      const I = info(px, pz);
+      if (I.s !== 'grass' || I.path > 0.3 || blocked(px, pz)) continue;
+      add('flowers', px, pz, { s: 0.8 + r1 * 0.5, rot: r2 * Math.PI * 2, v: island.noise.detail(px / 40, pz / 40) > 0.5 ? 0 : 1 });
+    }
+  }
   // Steine und Felsbrocken
   scatter(5, (x, z, r) => {
     const I = info(x, z);
@@ -627,10 +665,12 @@ export function createVegetation({ island, veil, colliders, quality, scene }) {
   let totalInstances = 0;
   for (const [name, sp] of Object.entries(SPECIES)) {
     const list = placed[name];
+    // Üppige Wiese: Gras in kleinen Blöcken – so wird nur gezeichnet, was nah und im Bild ist (sonst über 400 000 Dreiecke Gras je Bild)
+    const chunk = lush && name === 'grass' ? 30 : CHUNK;
     // nach Variante und Block gruppieren
     const buckets = new Map();
     for (const it of list) {
-      const ci = Math.floor((it.x + 256) / CHUNK), cj = Math.floor((it.z + 256) / CHUNK);
+      const ci = Math.floor((it.x + 256) / chunk), cj = Math.floor((it.z + 256) / chunk);
       // Kleinkram: eine Variante je Block (halb so viele Draw-Calls; Vielfalt kommt aus Farbe, Größe, Drehung)
       const v = sp.kind === 'small' ? (ci * 7 + cj * 13) % sp.geos.length : it.v;
       const key = v + ':' + ci + ':' + cj;
@@ -658,7 +698,7 @@ export function createVegetation({ island, veil, colliders, quality, scene }) {
       mesh.computeBoundingSphere();
       mesh.castShadow = !!sp.shadow;
       mesh.receiveShadow = true;
-      mesh.userData = { species: name, kind: sp.kind, far: sp.far || 0, items, cx: cx / items.length, cz: cz / items.length, total: items.length };
+      mesh.userData = { species: name, kind: sp.kind, far: sp.far || 0, items, cx: cx / items.length, cz: cz / items.length, total: items.length, chunk };
       mesh.name = 'veg-' + name;
       group.add(mesh);
       meshes.push(mesh);
@@ -727,7 +767,7 @@ export function createVegetation({ island, veil, colliders, quality, scene }) {
       for (const m of meshes) {
         const f = m.userData.far;
         if (!f) continue;
-        const d = Math.hypot(m.userData.cx - cx, m.userData.cz - cz) - CHUNK * 0.75;
+        const d = Math.hypot(m.userData.cx - cx, m.userData.cz - cz) - (m.userData.chunk || CHUNK) * 0.75;
         m.visible = d < gd * f;
       }
     },

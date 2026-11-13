@@ -114,3 +114,7 @@ man darf fast alles tun (auch Mist), keine Waffen, kein Gefängnis. Die Folgen s
     Dreh-Knöpfen verdeckt. Jetzt Spielname als schmale Zeile, Dreh-Knöpfe an den Rändern, Emote-Reihe und Untertitel weg.
   - **Fahren im Hochformat** (`fahren.js`): Die Kamera schaut beim Fahren höher und steiler – man sieht die Straße, nicht nur
     das Wagendach. Orts-Schilder sind während der Fahrt ausgeblendet. Nach dem Aussteigen gilt wieder die normale Kamera.
+  - **Üppige Wiese** (`world/vegetation.js` → `lush`, nur RESPAWN): Statt weniger großer, stacheliger Büschel stehen jetzt rund
+    107 000 kleine (vorher 16 000), in Flecken heller, trockener oder satter, dazu Blumen in Gruppen. Gras wird in kleinen
+    Blöcken (30 m) gezeichnet – nur, was nah und im Bild ist; die Zahl der Gras-Dreiecke je Bild bleibt etwa wie vorher.
+    LUMO ist unverändert (eigener Zufall für die neuen Büschel, alle anderen Pflanzen stehen, wo sie standen).
