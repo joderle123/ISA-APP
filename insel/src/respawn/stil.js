@@ -150,6 +150,7 @@ export const STIL = `
 .rs-chat b{font-size:13px;opacity:.75;}
 .rs-chat p{margin:2px 0 0;font-size:16px;}
 .rs-leut{display:grid;grid-template-columns:1fr auto;gap:0 10px;padding:8px 0;border-bottom:1px solid rgba(127,127,127,.25);}
+button.rs-leut{width:100%;min-height:52px;background:none;border:0;border-bottom:1px solid rgba(127,127,127,.25);border-radius:0;color:inherit;font:inherit;text-align:left;cursor:pointer;}
 .rs-leut b{font-size:16px;}.rs-leut i{font-style:normal;letter-spacing:2px;color:#ff4f8b;}.rs-leut i.ist-minus{color:#8a8aa8;}
 .rs-leut small{grid-column:1/-1;font-size:14px;opacity:.75;}
 .rs-kraft{letter-spacing:1px;font-size:14px;}

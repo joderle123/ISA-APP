@@ -16,7 +16,7 @@ import { baueStadt } from './stadt.js';
 import { createFahren } from './fahren.js';
 import { createRoller } from './roller.js';
 import { createWettlauf } from './lauf.js';
-import { SITUATIONEN, AUSGAENGE, AKTE, AKTE_LEER, ORTE, ORT_AKTIONEN, LEUTE_AKTIONEN, LEUTE_REIHE, FOLGEN, VERPASST, WICHTIG, statistSagt, ideenFuerHeute } from './daten/index.js';
+import { SITUATIONEN, AUSGAENGE, AKTE, AKTE_LEER, ORTE, ORT_BEI, ORT_AKTIONEN, LEUTE_AKTIONEN, LEUTE_REIHE, FOLGEN, VERPASST, WICHTIG, statistSagt, ideenFuerHeute } from './daten/index.js';
 import { neuerLauf, zieheKarten, planeJahreszeit, jahreszeitWechsel, jahreszeit, ausgangFuer, akteFuer, wirke, bond, verteile, folgenAmMorgen, neuerTag,
   JAHRESZEIT_NAME, UHR_NACH_KRAFT, TAGE_JE_JAHRESZEIT } from './run.js';
 
@@ -300,6 +300,14 @@ export default {
       ereignisse: heute().map((id) => { const s = sit(id); const o = ORTE.find((x) => x.ort === fn(s.ort, R)); return { id, titel: s.titel, wo: o ? o.name : 'auf der Insel' }; }),
       ideen: ideenFuerHeute(R).map((i) => { const o = ORTE.find((x) => x.id === i.ort); return { ort: i.ort, text: i.text, bild: o.bild, wo: o.name }; }),
       orte: ORTE.map((o) => ({ id: o.id, name: o.name, bild: o.bild })),
+      // Wo ist jemand gerade? Der nächste Ort (höchstens 30 m entfernt) – oder „unterwegs“; null = nicht zu sehen
+      wo(id) {
+        const n = npcs.get(id);
+        if (!n || n.hidden || !n.position) return null;
+        let best = null;
+        for (const o of ORTE) { if (o.id === 'lieferwagen') continue; const q = ortVon(o.ort), d = Math.hypot(q.x - n.position.x, q.z - n.position.z); if (!best || d < best.d) best = { d, id: o.id }; }
+        return best && best.d < 30 ? { ort: best.id, text: ORT_BEI[best.id] } : { ort: null, text: 'unterwegs' };
+      },
       hin(ref) {
         const [art, id] = ref.split(':');
         const ziel = art === 'e' ? fn(sit(id).ort, R) : (ORTE.find((x) => x.id === id) || {}).ort;

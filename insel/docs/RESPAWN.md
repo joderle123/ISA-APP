@@ -107,3 +107,6 @@ man darf fast alles tun (auch Mist), keine Waffen, kein Gefängnis. Die Folgen s
   - **Prüfung „Sieht die Kamera die Figur?“** (`plugin.sichtFrei()`, nur für Tests): ein Strahl von der Kamera zur Brust der
     Figur; etwas Festes davor = verdeckt. `respawn-handy.mjs` prüft damit jeden Morgen, `respawn.mjs` die erste Wahl jeder
     Situation. So fallen dunkle Bilder (Kamera in einer Wand) von selbst auf.
+  - **Handy → Leute zeigt, wo jemand ist** (`plugin.js` → `weltFuerHandy().wo`, `ORT_BEI`): „mag dich · am Steg · hinbringen“.
+    Antippen bringt einen an diesen Ort. Wer weiter als 30 m von jedem Ort weg ist, ist „unterwegs“; wer gerade nicht da
+    ist, „gerade nicht zu sehen“. Vorher musste man Leute auf der ganzen Insel suchen (zum Entschuldigen, Zurückgeben …).

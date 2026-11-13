@@ -424,7 +424,17 @@ export function createOberflaeche({ game }) {
           + '<h4>Orte – antippen bringt dich hin</h4><div class="rs-orte">' + w.orte.map((x) => `<button type="button" class="rs-hin" data-hin="o:${x.id}"><b>${x.bild} ${esc(x.name)}</b></button>`).join('') + '</div>';
       },
       chats: () => ((R.chats || []).length ? (R.chats || []).slice().reverse().map((c) => `<div class="rs-chat"><b>${esc(nameVon(c.von))}</b><p>${esc(c.text)}</p></div>`).join('') : '<p class="rs-lead">Noch keine Nachrichten.</p>'),
-      leute: () => LEUTE.concat(['yara', 'maelle', 'tiago']).filter((w) => R.bond[w] !== undefined).map((w) => { const b = bond(R, w); return `<div class="rs-leut"><b>${esc(nameVon(w))}</b><i class="${b < 0 ? 'ist-minus' : ''}">${'●'.repeat(Math.min(5, Math.abs(b)))}${'○'.repeat(5 - Math.min(5, Math.abs(b)))}</i><small>${b >= 3 ? 'steht zu dir' : b >= 1 ? 'mag dich' : b < 0 ? 'ist sauer' : 'kennt dich kaum'}</small></div>`; }).join('') || '<p class="rs-lead">Du kennst hier noch niemanden.</p>',
+      // Leute: wie ihr steht – und wo jemand gerade ist. Antippen bringt einen an den Ort (wenn der Tag frei ist).
+      leute: () => {
+        const w = welt ? welt() : null;
+        return LEUTE.concat(['yara', 'maelle', 'tiago']).filter((id) => R.bond[id] !== undefined).map((id) => {
+          const b = bond(R, id), wo = w && w.wo ? w.wo(id) : undefined;
+          const stand = b >= 3 ? 'steht zu dir' : b >= 1 ? 'mag dich' : b < 0 ? 'ist sauer' : 'kennt dich kaum';
+          const innen = `<b>${esc(nameVon(id))}</b><i class="${b < 0 ? 'ist-minus' : ''}">${'●'.repeat(Math.min(5, Math.abs(b)))}${'○'.repeat(5 - Math.min(5, Math.abs(b)))}</i>`;
+          if (wo && wo.ort) return `<button type="button" class="rs-leut" data-hin="o:${wo.ort}">${innen}<small>${stand} · ${esc(wo.text)} · hinbringen</small></button>`;
+          return `<div class="rs-leut">${innen}<small>${stand}${wo === null ? ' · gerade nicht zu sehen' : wo ? ' · ' + esc(wo.text) : ''}</small></div>`;
+        }).join('') || '<p class="rs-lead">Du kennst hier noch niemanden.</p>';
+      },
       karten: () => `<div class="rs-reihe ist-klein">${['kopf', 'zuhause', 'tasche'].map((art) => karteHtml(art, karte(art, R.karten[art]))).join('')}</div>`,
       album: () => albumHtml(meta),
       hilfe: () => `<div class="rs-hilfe"><p>Das hier ist ein Spiel. Geht es dir im echten Leben nicht gut?</p><p><b>116 111</b> – Kanner-Jugendtelefon. Kostenlos, anonym.</p><p><b>112</b> – Notfall.</p><p>Oder sprich mit einem Erwachsenen, dem du traust.</p></div>`,

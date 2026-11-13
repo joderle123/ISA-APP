@@ -2,7 +2,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { neuerLauf, wirke, wahlen, zeitFuer, ohneWahl, planeJahreszeit, jahreszeitWechsel, ausgangFuer, akteFuer, verschlaeft, hatKarte, verteile, folgenAmMorgen, neuerTag, JAHRESZEITEN } from '../../src/respawn/run.js';
-import { SITUATIONEN, AUSGAENGE, AKTE, KARTEN, FIGUREN, STIMMEN, ORTE, ORT_AKTIONEN, LEUTE_AKTIONEN, LEUTE_REIHE, FOLGEN, VERPASST, WICHTIG, statistSagt, TRATSCH_ZEILEN, ideenFuerHeute, IDEEN_ZEILEN } from '../../src/respawn/daten/index.js';
+import { SITUATIONEN, AUSGAENGE, AKTE, KARTEN, FIGUREN, STIMMEN, ORTE, ORT_BEI, ORT_AKTIONEN, LEUTE_AKTIONEN, LEUTE_REIHE, FOLGEN, VERPASST, WICHTIG, statistSagt, TRATSCH_ZEILEN, ideenFuerHeute, IDEEN_ZEILEN } from '../../src/respawn/daten/index.js';
 
 const K = (kopf = 'zuendschnur', zuhause = 'oma', tasche = 'ok') => ({ kopf, zuhause, tasche });
 const woerter = (s) => String(s).trim().split(/\s+/).filter(Boolean).length;
@@ -264,4 +264,8 @@ test('Ideen für heute: höchstens drei, je Ort eine, nie Mist, kurze Sätze, m�
   assert.equal(ideenFuerHeute(R)[0].ort, 'steg');
   R.flags['job.weg'] = true; R.flags['pit.weg'] = true; R.flags['meidet.mika'] = true;
   for (let t = 0; t < 12; t++) { R.jz = Math.floor(t / 3); R.tag = t % 3; for (const x of ideenFuerHeute(R)) assert.ok(!['kiosk', 'brunnen', 'krater'].includes(x.ort), x.ort); }
+});
+
+test('Handy „Leute“: jeder Ort hat ein Wort dafür, wo jemand ist', () => {
+  for (const o of ORTE) assert.ok(ORT_BEI[o.id] && ORT_BEI[o.id].split(/\s+/).length <= 3, o.id);
 });

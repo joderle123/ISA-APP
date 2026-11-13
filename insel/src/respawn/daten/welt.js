@@ -38,6 +38,10 @@ export const ORTE = [
   { id: 'markt', name: 'Markt', ort: 'marktplatz', bild: '🛍️', aktionen: ['kaufen', 'roller', 'einstecken'] },
 ];
 
+// Für das Handy („Leute“): wo jemand gerade ist – in Worten
+export const ORT_BEI = { zuhause: 'am Bootshaus', kiosk: 'am Kiosk', brunnen: 'am Brunnen', werft: 'an der Werft', steg: 'am Steg', krater: 'am Krater', strand: 'am Strand',
+  leuchtturm: 'am Leuchtturm', buehne: 'an der Bühne', garten: 'im Garten', lieferwagen: 'am Lieferwagen', markt: 'am Markt' };
+
 export const ORT_AKTIONEN = {
   schlafen: { t: 'Schlafen gehen', art: 'ruhig', kraft: 0, schlaf: true, szene: () => [['t', 'Du machst das Licht aus.']] },
   zocken: { t: 'Zocken bis nachts', art: 'weg', kraft: 1, szene: () => [['t', 'Noch eine Runde. Und noch eine. Halb drei.'], ['e', { druck: -25, spaet: 1 }]] },
