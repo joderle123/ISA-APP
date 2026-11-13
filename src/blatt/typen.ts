@@ -12,7 +12,7 @@ import type { AgeLevel } from '../types/material'
 export type Stufe = AgeLevel
 
 /** Themenbereiche der Blätter (bewusst keine Schulfächer). */
-export type Bereich = 'gefuehle' | 'verhalten' | 'miteinander' | 'lernen' | 'alltag' | 'werkzeuge' | 'skills' | 'selbstreflexion' | 'mathe' | 'spielschule'
+export type Bereich = 'gefuehle' | 'verhalten' | 'miteinander' | 'lernen' | 'alltag' | 'werkzeuge' | 'skills' | 'selbstreflexion' | 'mathe' | 'spielschule' | 'kern'
 
 /**
  * Gestaltung nach Alter:

@@ -673,7 +673,7 @@ let nPakete = 0
 let nFrei = 0
 
 for (const blatt of q.blaetter) {
-  if (blatt.bereich === 'mathe') continue
+  if (blatt.bereich === 'mathe' || blatt.bereich === 'kern') continue
   const einheiten = schneide(blatt)
   const fr = frParallel(blatt)
   const typ = blattDauer(blatt.dauer)

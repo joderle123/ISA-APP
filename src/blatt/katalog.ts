@@ -116,6 +116,15 @@ export const BEREICHE: BereichDef[] = [
     farben: { tief: '#B5600F', mittel: '#F2CDA2', zart: '#FDF3E7' },
     beschreibung: 'Themenwochen für die Spielschule (Cycle 1): je Einheit farbige Bildkarten und ein Blatt zum Tun (schneiden, kleben, falten, spielen, forschen), Aktivitäten für Kreis, Bewegung, Gestalten, Sprache, Musik und Sinne, ein Reim, ein Experiment der Woche, Beobachten & Begleiten, Wörter der Woche in vier Sprachen und ein Elternbrief. Alle Blätter der Spielschule: Michèle Wagner.',
   },
+  {
+    id: 'kern',
+    kuerzel: 'KK',
+    de: 'Kernkompetenzen',
+    fr: 'Compétences clés',
+    icon: 'key',
+    farben: { tief: '#1F6F78', mittel: '#B9DADD', zart: '#EAF5F6' },
+    beschreibung: 'Arbeitsblätter zu den Kernkompetenzen der Scolarisation spécialisée: Sprechen und Zuhören, Lesen, Schreiben, Zahlen und Rechnen, Geld, Maße und Zeit, Raum und Formen. Je Blatt eine Seite, große Schrift, wenig Text – der Punkt der Liste (S1–S13, R1–R19) steht im Untertitel.',
+  },
 ]
 
 export const bereichById = new Map(BEREICHE.map((b) => [b.id, b]))
@@ -218,6 +227,13 @@ export const THEMEN: ThemaDef[] = [
   T('mathe', 'groessen', 'Größen & Einheiten', 'Grandeurs et mesures'),
   T('mathe', 'geometrie', 'Geometrie', 'Géométrie'),
   T('mathe', 'daten', 'Daten & Statistik', 'Données et statistiques'),
+
+  T('kern', 'sprechen', 'Sprechen & Zuhören', 'Parler et écouter'),
+  T('kern', 'lesen', 'Lesen', 'Lire'),
+  T('kern', 'schreiben', 'Schreiben', 'Écrire'),
+  T('kern', 'zahlen', 'Zahlen & Rechnen', 'Nombres et opérations'),
+  T('kern', 'groessen', 'Geld, Maße, Zeit', 'Argent, mesures, temps'),
+  T('kern', 'raum', 'Raum & Formen', 'Espace et formes'),
 
   T('spielschule', 'ich', 'Ich und die Gruppe', 'Moi et le groupe'),
   T('spielschule', 'gefuehle', 'Gefühle', 'Les émotions'),

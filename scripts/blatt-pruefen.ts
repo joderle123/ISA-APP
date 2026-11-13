@@ -233,7 +233,7 @@ function pruefeBausteine(wo: string, liste: Baustein[], blatt: Blatt, sprache: S
         if (b.text.length > 150) melde('H', w, `Aufgabentext zu lang (${b.text.length} Zeichen, max. 150)`)
         for (const s of b.symbole ?? []) if (!SYMBOLE.includes(s)) melde('F', w, `Symbol „${s}“ gibt es nicht`)
         if (b.stufe !== undefined && ![1, 2, 3].includes(b.stufe)) melde('F', w, 'Stufe 1, 2 oder 3')
-        if (b.stufe && blatt.bereich !== 'mathe') melde('H', w, 'Stufen-Punkte sind für Mathe-Blätter gedacht')
+        if (b.stufe && blatt.bereich !== 'mathe' && blatt.bereich !== 'kern') melde('H', w, 'Stufen-Punkte sind für Mathe-Blätter gedacht')
         if (b.niveau !== undefined && !['einstieg', 'stern'].includes(b.niveau)) melde('F', w, 'niveau: „einstieg“ oder „stern“')
         break
       case 'rechnungen':
@@ -1142,7 +1142,7 @@ function pruefeInhalt(wo: string, inh: BlattInhalt | undefined, blatt: Blatt, sp
   if (!L.hintergrund || L.hintergrund.length < 250) melde('F', wo, 'Lehrerseite: fachlicher Hintergrund zu kurz (mind. 250 Zeichen)')
   if (L.hintergrund && L.hintergrund.length > 1100) melde('H', wo, 'Lehrerseite: Hintergrund über 1100 Zeichen – Seite wird voll')
   for (const q of L.quellen ?? []) if (!QUELLEN_TEXTE.has(q)) melde('F', wo, `Quelle nicht in der geprüften Liste (src/blatt/quellen.ts): „${q.slice(0, 70)}“`)
-  if (!(L.quellen ?? []).length && blatt.bereich !== 'mathe') melde('H', wo, 'Lehrerseite ohne Quelle')
+  if (!(L.quellen ?? []).length && blatt.bereich !== 'mathe' && blatt.bereich !== 'kern') melde('H', wo, 'Lehrerseite ohne Quelle')
   const alle = [L.ziel, ...(L.ablauf ?? []), L.hintergrund, ...(L.impulse ?? []), ...(L.tipps ?? []), L.achtung ?? '', L.material ?? '', L.differenzierung?.leichter ?? '', L.differenzierung?.schwerer ?? '', ...(L.loesungen ?? [])]
   if (blatt.bereich === 'mathe' && !(L.loesungen ?? []).length) melde('F', wo, 'Mathe-Blatt: Lösungen für die Lehrperson fehlen')
   if (blatt.bereich === 'spielschule') {
@@ -1195,7 +1195,7 @@ for (const datei of liste) {
     if (!Array.isArray(b.sozialform) || !b.sozialform.length || b.sozialform.some((s) => !['einzeln', 'gruppe', 'klasse'].includes(s))) melde('F', wo, 'sozialform ungültig')
     if (!b.dauer) melde('F', wo, 'dauer fehlt')
     /* Mathe übt Rechnen und Messen – dafür gibt es keine ELDiB-Ziele */
-    if (b.bereich === 'mathe' ? !Array.isArray(b.eldib) || b.eldib.length > 4 : !Array.isArray(b.eldib) || !b.eldib.length || b.eldib.length > 4) melde('F', wo, '1–4 ELDiB-Ziele angeben')
+    if (b.bereich === 'mathe' || b.bereich === 'kern' ? !Array.isArray(b.eldib) || b.eldib.length > 4 : !Array.isArray(b.eldib) || !b.eldib.length || b.eldib.length > 4) melde('F', wo, '1–4 ELDiB-Ziele angeben')
     for (const e of b.eldib ?? []) if (!eldibGoalById.has(e)) melde('F', wo, `ELDiB-Ziel „${e}“ gibt es nicht`)
     if (!Array.isArray(b.schlagworte) || b.schlagworte.length < 3) melde('H', wo, 'mindestens 3 Schlagworte')
     if (b.bild) {
