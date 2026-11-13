@@ -267,7 +267,7 @@ export default function App() {
     { id: 'bibliothek', name: 'Blätter', icon: 'book' },
     // „Skills“ statt „Kurs“: neben dem Reiter „Kurse“ (Kurs-Bibliothek) sonst verwechselbar
     ...(kurs ? [{ id: 'kurs' as const, name: 'Skills', icon: 'stairs' as const }] : []),
-    { id: 'spiele', name: 'Spiele', zusatz: 'CREW', icon: 'game' },
+    { id: 'spiele', name: 'Spiele', zusatz: 'CREW · RESPAWN', icon: 'game' },
     { id: 'beruf', name: 'Beruf', zusatz: 'CCP · DAP', icon: 'briefcase' },
     { id: 'team', name: 'Team', icon: 'folder', n: teamMaterial.length },
   ]
@@ -465,6 +465,18 @@ function Spiele({ aktiv }: { aktiv: boolean }) {
           <Icon name="external" />
           Im eigenen Tab öffnen
         </a>
+      </div>
+      {/* RESPAWN: das große Spiel. Nicht eingebettet – es öffnet in einem eigenen Tab, damit Toolbox und Hub schnell bleiben. */}
+      <div className="mb-4 flex flex-wrap items-center justify-between gap-3 rounded-[var(--r-md)] border border-line bg-surface p-4" id="respawn-karte">
+        <div className="min-w-0 flex-1" style={{ minWidth: 240 }}>
+          <h2 className="disp text-xl text-ink">RESPAWN – ein Jahr auf der Insel</h2>
+          <p className="text-sm text-muted">Ein offenes Spiel für Jugendliche ab 12, am Handy, iPad oder PC. Man darf fast alles ausprobieren – die Folgen kommen von den Menschen. Zum Spielen und Darüber-Reden.</p>
+        </div>
+        <a className="btn btn-primary" href="respawn.html" target="_blank" rel="noopener">
+          <Icon name="external" />
+          RESPAWN spielen
+        </a>
+        <p className="w-full text-xs text-muted">Öffnet in einem eigenen Tab. Gespeichert wird nur auf diesem Gerät, ohne Namen.</p>
       </div>
       <iframe
         src="crew/start.html"
