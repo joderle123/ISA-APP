@@ -18,22 +18,23 @@ const zeuge = (z, ausser) => (z || []).find((w) => w !== ausser && WICHTIG.inclu
 // Parkplatz von Fränz’ Lieferwagen: neben der Straße, ein Stück vom Kiosk (stadt.js stellt ihn dorthin)
 export const LIEFERWAGEN = { x: -11.5, z: 116.0, yaw: 1.69 };
 
-// Fuß des Leuchtturms: dort endet die Straße vom Hafen (world/island.js → PATHS „hafen-leuchtturm“)
-export const LEUCHTTURM = { x: -108, z: 124.5 };
+// Am Leuchtturm: oben auf der Kuppe. Die Straße vom Hafen endet unten am Hang (world/island.js → PATHS „hafen-leuchtturm“).
+export const LEUCHTTURM = { x: -115.5, z: 122 };   // oben auf der Kuppe, direkt am Turm (vorher am Hang: der Turm war von dort nie zu sehen)
 
 // ---------- Orte ----------
+// steh: fester Ankunftsplatz (x, z) mit Blickpunkt (bx, bz), wenn der übliche Platz schlecht aussieht; hoch: Kamera-Neigung (unter 0 = Blick nach oben)
 export const ORTE = [
-  { id: 'zuhause', name: 'Zuhause', ort: 'bootshaus', bild: '🏠', aktionen: ['schlafen', 'zocken'] },
+  { id: 'zuhause', name: 'Zuhause', ort: 'bootshaus', bild: '🏠', steh: { x: -6.5, z: 130.5, bx: -6, bz: 141 }, aktionen: ['schlafen', 'zocken'] },
   { id: 'kiosk', name: 'Kiosk', ort: 'snackStand', bild: '🍟', aktionen: ['job', 'kasse'] },
   { id: 'brunnen', name: 'Brunnen', ort: 'dorfplatz', bild: '🛹', aktionen: ['tricks', 'rennen'] },
   { id: 'werft', name: 'Werft', ort: 'werft', bild: '🔨', aktionen: ['sprayen', 'boot'] },
   { id: 'steg', name: 'Steg', ort: 'steg', bild: '🌊', aktionen: ['wasser', 'angeln', 'springen'] },
   { id: 'krater', name: 'Krater', ort: 'kraterRand', bild: '🔥', aktionen: ['abhaengen', 'ziehen'] },
   { id: 'strand', name: 'Strand', ort: 'strandHuette', bild: '🏖️', aktionen: ['schwimmen', 'feuer'] },
-  { id: 'leuchtturm', name: 'Leuchtturm', ort: { x: LEUCHTTURM.x, z: LEUCHTTURM.z }, bild: '🗼', aktionen: ['aussicht', 'klettern'] },
+  { id: 'leuchtturm', name: 'Leuchtturm', ort: { x: LEUCHTTURM.x, z: LEUCHTTURM.z }, bild: '🗼', steh: { x: -113, z: 120.8, bx: -122, bz: 124, hoch: -0.12 }, aktionen: ['aussicht', 'klettern'] },
   { id: 'buehne', name: 'Bühne', ort: 'buehne', bild: '🎤', aktionen: ['auftreten'] },
-  { id: 'garten', name: 'Garten', ort: 'lucindasGarten', bild: '🍅', aktionen: ['garten'] },
-  { id: 'lieferwagen', name: 'Lieferwagen', ort: { x: LIEFERWAGEN.x, z: LIEFERWAGEN.z }, bild: '🚚', aktionen: ['fahren', 'ueben'] },
+  { id: 'garten', name: 'Garten', ort: 'lucindasGarten', bild: '🍅', steh: { x: -109.5, z: 30.3, bx: -119, bz: 27.5 }, aktionen: ['garten'] },
+  { id: 'lieferwagen', name: 'Lieferwagen', ort: { x: LIEFERWAGEN.x, z: LIEFERWAGEN.z }, bild: '🚚', steh: { x: -11.5, z: 112.3, bx: -11.5, bz: 116 }, aktionen: ['fahren', 'ueben'] },
   { id: 'markt', name: 'Markt', ort: 'marktplatz', bild: '🛍️', aktionen: ['kaufen', 'roller', 'einstecken'] },
 ];
 
@@ -47,8 +48,8 @@ export const ORT_AKTIONEN = {
       : g.treffer >= 1 ? [['t', 'Einmal gestanden, sonst Asphalt. Pit grinst.'], ['e', { druck: -15, bond: { pit: 1 } }]]
       : [['t', 'Du fällst zehnmal. Pit lacht nicht einmal.'], ['e', { druck: -10, bond: { pit: 1 } }]])]]) },
   abhaengen: { t: 'Mit der Crew abhängen', art: 'weg', kraft: 1, szene: () => [['t', 'Musik aus einer Box. Mikas Crew macht dir Platz.'], ['e', { druck: -15, ruf: { krater: 1 }, bond: { yara: 1 }, spaet: 1 }]] },
-  // Wettlauf (lauf.js): in 26 Sekunden zum Leuchtturm. Zu Fuß knapp, mit dem eigenen Roller leicht. Einmal am Tag.
-  rennen: { t: 'Rennen gegen Pit', art: 'mut', kraft: 1, lauf: { ziel: LEUCHTTURM, sekunden: 26, name: 'Leuchtturm' },
+  // Wettlauf (lauf.js): in 29 Sekunden zum Leuchtturm (bis oben an den Turm). Zu Fuß knapp, mit dem eigenen Roller leicht. Einmal am Tag.
+  rennen: { t: 'Rennen gegen Pit', art: 'mut', kraft: 1, lauf: { ziel: LEUCHTTURM, sekunden: 29, name: 'Leuchtturm' },
     wenn: (R) => !hat(R, 'pit.weg') && !hat(R, 'meidet.pit') && wert(R, 'rennen.tag', -1) !== tag(R),
     szene: (R) => [['s', 'pit', 'Bis zum Leuchtturm. Wer verliert, zahlt Pommes.'], ['d', hat(R, 'roller') ? 'Mit dem Roller hat er keine Chance.' : 'Einfach die Straße runter. Los.'], ['e', { flags: { 'lauf.jetzt': true, 'rennen.tag': tag(R) } }]],
     nach: (R, erg) => (erg.geschafft

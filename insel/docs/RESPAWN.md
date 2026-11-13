@@ -49,7 +49,7 @@ man darf fast alles tun (auch Mist), keine Waffen, kein Gefängnis. Die Folgen s
     „Watercraft Kit“, „Mini Market“, CC0).
   - **Tretroller** (`roller.js`): am Markt für 35 Euro zu kaufen, danach jederzeit „Roller fahren“ auf der Aktionstaste
     (schneller unterwegs; steigt von selbst ab, wenn eine Szene beginnt oder man ins Wasser gerät).
-  - **Rennen gegen Pit** (`lauf.js`, `ORT_AKTIONEN.rennen`): vom Brunnen in 26 Sekunden zum Leuchtturm – frei in der Welt,
+  - **Rennen gegen Pit** (`lauf.js`, `ORT_AKTIONEN.rennen`): vom Brunnen in 29 Sekunden zum Leuchtturm – frei in der Welt,
     oben läuft die Uhr mit Entfernung. Zu Fuß knapp, mit dem Roller leicht. Wer verliert, zahlt Pommes.
   - **Neue Situation** „Das Feuer am Strand“ (`situationen-2.js` → `lagerfeuer`): Mika will, dass Pit über das Feuer springt.
   - **Fahren üben** (`ORT_AKTIONEN.ueben`): Wer den Lieferwagen zugegeben hat – oder bei Fränz gut steht –, darf einmal am
@@ -77,3 +77,7 @@ man darf fast alles tun (auch Mist), keine Waffen, kein Gefängnis. Die Folgen s
   - **Ideen für heute** (`welt.js` → `ideenFuerHeute`): Im Handy stehen unter „Heute“ bis zu drei Hinweise, wo gerade etwas
     los ist („Pit übt Tricks am Brunnen.“) – jeden Tag andere, nur Dinge, die heute wirklich gehen, nie Mist. Antippen
     bringt einen hin. Wer müde ist, sieht zuerst das Bett; bei viel Druck zuerst den Steg. Kein Auftrag, kein Lohn.
+  - **Ankommen mit Blick auf den Ort** (`ORTE[].steh`, `plugin.js` → `stehplatz`): Wer sich vom Handy an einen Ort bringen
+    lässt, sah am Zuhause nur eine Wand, am Leuchtturm den Turm nie, am Garten stand man auf der Straße und am Lieferwagen
+    im Nachbarauto. Diese vier Orte haben jetzt einen festen Stehplatz mit Blickpunkt. Der Leuchtturm-Ort liegt neu oben
+    am Turm (vorher am Hang); das Rennen gegen Pit hat dafür 29 statt 26 Sekunden.

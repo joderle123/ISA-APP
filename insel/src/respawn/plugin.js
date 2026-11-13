@@ -284,16 +284,27 @@ export default {
       }
       for (const id of [...marken.keys()]) if (!soll.has(id)) weg(id);
     }
+    // Ankommen mit Blick auf den Ort (Handy): Üblich ist die Außenseite mit Blick zur Inselmitte. Wo das schlecht aussah
+    // (Zuhause: Hauswand im ganzen Bild; Leuchtturm: Turm im Rücken; Garten: mitten auf der Straße; Lieferwagen: im
+    // Nachbarauto), hat der Ort einen festen Stehplatz mit Blickpunkt (`steh` in `ORTE`).
+    function stehplatz(o, ort) {
+      const s = ort && ort.steh;
+      if (s) return { x: s.x, z: s.z, a: Math.atan2(s.bx - s.x, s.bz - s.z), hoch: s.hoch };
+      const a = Math.atan2(-o.x, -o.z);
+      return { x: o.x - Math.sin(a) * 3.2, z: o.z - Math.cos(a) * 3.2, a };
+    }
     const weltFuerHandy = () => ({
       ereignisse: heute().map((id) => { const s = sit(id); const o = ORTE.find((x) => x.ort === fn(s.ort, R)); return { id, titel: s.titel, wo: o ? o.name : 'auf der Insel' }; }),
       ideen: ideenFuerHeute(R).map((i) => { const o = ORTE.find((x) => x.id === i.ort); return { ort: i.ort, text: i.text, bild: o.bild, wo: o.name }; }),
       orte: ORTE.map((o) => ({ id: o.id, name: o.name, bild: o.bild })),
       hin(ref) {
         const [art, id] = ref.split(':');
-        const o = art === 'e' ? ortVon(fn(sit(id).ort, R)) : ortVon((ORTE.find((x) => x.id === id) || {}).ort);
-        const a = Math.atan2(-o.x, -o.z);
-        player.teleport(o.x - Math.sin(a) * 3.2, o.z - Math.cos(a) * 3.2, a);
+        const ziel = art === 'e' ? fn(sit(id).ort, R) : (ORTE.find((x) => x.id === id) || {}).ort;
+        const o = ortVon(ziel);
+        const p = stehplatz(o, ORTE.find((x) => x.ort === ziel));
+        player.teleport(p.x, p.z, p.a);
         if (game.cameraRig.behindPlayer) game.cameraRig.behindPlayer();
+        game.cameraRig.pitch = p.hoch !== undefined ? p.hoch : 0.24;
         if (game.cameraRig.snap) game.cameraRig.snap();
       },
     });
