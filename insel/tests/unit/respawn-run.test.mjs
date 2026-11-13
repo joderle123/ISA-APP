@@ -269,3 +269,22 @@ test('Ideen für heute: höchstens drei, je Ort eine, nie Mist, kurze Sätze, m�
 test('Handy „Leute“: jeder Ort hat ein Wort dafür, wo jemand ist', () => {
   for (const o of ORTE) assert.ok(ORT_BEI[o.id] && ORT_BEI[o.id].split(/\s+/).length <= 3, o.id);
 });
+
+test('Finale: am Steg stehen die engsten drei, jede Person erinnert an etwas Getanes; wer abgereist ist, fehlt', async () => {
+  const { amSteg } = await import('../../src/respawn/daten/situationen-2.js');
+  const R = neuerLauf({ karten: K() });
+  assert.deepEqual(amSteg(R), []);
+  Object.assign(R.bond, { pit: 4, noor: 3, jolie: 2, tun: 2, mika: 1 });
+  assert.deepEqual(amSteg(R).slice(0, 2), ['pit', 'noor']);
+  assert.equal(amSteg(R).length, 3);
+  wirke(R, { flag: 'pit.geholfen' }); wirke(R, { flag: 'abschied.kontakt' });
+  assert.ok(!amSteg(R).includes('noor'), 'Noor ist mit der Fähre weg');
+  const fin = SITUATIONEN.find((s) => s.id === 'finale');
+  assert.deepEqual(fin.cast(R), ['ilda', 'pit', 'jolie', 'tun']);
+  const zeilen = fin.szene(R).filter((s) => s[0] === 's' && s[1] !== 'ilda');
+  assert.equal(zeilen.length, 3);
+  assert.equal(zeilen[0][2], 'Du bist damals geblieben. Das weiß ich noch.');
+  for (const z of zeilen) assert.ok(woerter(z[2]) <= 12, z[2]);
+  // leere Akte: Ilda behauptet nicht, sie sei dicker geworden
+  assert.ok(fin.szene(R).some((s) => s[0] === 's' && /nichts dazu/.test(s[2])));
+});

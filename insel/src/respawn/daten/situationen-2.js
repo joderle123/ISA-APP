@@ -292,20 +292,48 @@ const SATZ = {
   noor: 'Du warst die erste Person, die nett war.', mika: 'Am Krater ist immer Platz für dich.', fraenz: 'In der Werft ist ein Platz frei.',
   ilda: 'Du hast mir das Gegenteil gezeigt.',
 };
+// Wer am Steg steht: die Leute, mit denen es gut lief (Bindung ab 2, höchstens drei, die engsten zuerst). Jede Person
+// erinnert an etwas, das du im Jahr wirklich getan hast – sonst sagt sie ihren Satz von oben. Wer weg ist, fehlt.
+const NAME = { jolie: 'Jolie', tun: 'Tun', pit: 'Pit', noor: 'Noor', mika: 'Mika', fraenz: 'Fränz', yara: 'Yara' };
+const ECHO = {
+  pit: [['pit.geholfen', 'Du bist damals geblieben. Das weiß ich noch.'], ['lager.pitgeschuetzt', 'Am Feuer hast du Mika gestoppt. Für mich.'], ['video.geloescht', 'Das Video ist weg. Wegen dir.']],
+  tun: [['luege.begleitet', 'Du bist mit zu Ilda gekommen. Vergess ich nicht.']],
+  noor: [['neue.geschuetzt', 'Du hast dich vor mich gestellt. Am ersten Tag.']],
+  jolie: [['fest.hilfe', 'Am Krater hast du mich geholt. Das war richtig.'], ['einladung.dabei', 'Nächstes Mal stehst du auf der Liste. Versprochen.']],
+  mika: [['mitfahren.gestoppt', 'Du hast Nein gesagt. Macht sonst keiner.']],
+  fraenz: [['prakt.gut', 'Montag um sieben. Wenn du willst.'], ['fuenfziger.geklaert', 'Der Fünfziger. Du hast es geklärt. Vergess ich nicht.']],
+  yara: [['trost.geheim', 'Du hast nichts erzählt. Niemandem.'], ['trost.da', 'Am Leuchtturm hast du einfach dagesessen. Danke.']],
+};
+SATZ.yara = 'Ohne dich wär der Sommer leiser gewesen.';
+const nooristWeg = (R) => ['abschied.geholfen', 'abschied.kontakt', 'abschied.kurz'].some((f) => hat(R, f));
+export const amSteg = (R) => Object.keys(NAME).filter((w) => bond(R, w) >= 2 && !(w === 'noor' && nooristWeg(R)))
+  .sort((a, b) => bond(R, b) - bond(R, a)).slice(0, 3);
+const echo = (R, w) => { const e = (ECHO[w] || []).find(([f]) => hat(R, f)); return e ? e[1] : SATZ[w]; };
 const finale = {
   id: 'finale', titel: 'Die Fähre', fest: 'sommer', platz: 'ende', ort: 'steg', uhr: 18.2,
-  cast: (R) => { const b = besteBindung(R); return ['ilda'].concat(b && b !== 'ilda' ? [b] : []); },
+  cast: (R) => ['ilda'].concat(amSteg(R)),
   szene: (R) => {
-    const b = besteBindung(R);
+    const da = amSteg(R);
+    const fehlt = Object.keys(NAME).filter((w) => bond(R, w) <= -2).sort((a, b) => bond(R, a) - bond(R, b))[0];
+    const n = R.akte.length;
     return [
       ['t', 'Ein Jahr ist um. Am Steg wartet die Fähre.'],
-      ...(b && b !== 'ilda' ? [['s', b, SATZ[b] || 'Schön, dass du da warst.']] : [['d', 'Keiner ist gekommen. Nur Ilda.']]),
+      ...(da.length ? da.map((w) => ['s', w, echo(R, w)]) : [['d', 'Keiner ist gekommen. Nur Ilda.']]),
+      ...(fehlt ? [['d', NAME[fehlt] + ' ist nicht gekommen.']] : []),
+      ['wenn', (r) => hat(r, 'abschied.kontakt'), [['d', 'Dein Handy summt. Noor: Bin gut angekommen.']]],
       ['wenn', (r) => hat(r, 'kontrolle.ehrlich'), [['t', 'Der Kontrolleur nickt dir zu. Er kennt dich noch.']]],
       ['wenn', (r) => hat(r, 'kontrolle.laut'), [['t', 'Der Kontrolleur sieht dich. Er schaut weg.']]],
-      ['s', 'ilda', 'Deine Akte. Sie ist dicker geworden.'],
+      ['s', 'ilda', n >= 3 ? 'Deine Akte. Sie ist dicker geworden.' : (n ? 'Deine Akte. Ein paar Seiten mehr.' : 'Deine Akte. Dieses Jahr kam nichts dazu.')],
       ['s', 'ilda', 'Willst du lesen, was drinsteht?'],
       ['w', [
-        { t: 'Ja. Zeig her.', art: 'ruhig', e: { flag: 'finale.lesen' }, dann: [['s', 'ilda', 'Lies. Und sag mir, was fehlt.']] },
+        { t: 'Ja. Zeig her.', art: 'ruhig', e: { flag: 'finale.lesen' }, dann: [
+          ['s', 'ilda', 'Lies. Und sag mir, was fehlt.'],
+          ['w', [
+            { t: 'Warum ich es getan habe.', art: 'ruhig', e: { flag: 'finale.warum' }, dann: [['s', 'ilda', 'Dann schreib es dazu. Hier ist Platz.']] },
+            { t: 'Was gut gelaufen ist.', art: 'ruhig', e: { flag: 'finale.gut' }, dann: [['s', 'ilda', 'Stimmt. Das schreibt nie jemand auf.'], ['d', 'Ilda schreibt. Diesmal mit Grün.']] },
+            { t: 'Nichts. Stimmt alles.', art: 'weg', e: { flag: 'finale.stimmt' }, dann: [['s', 'ilda', 'Dann unterschreib. Es ist deine.']] },
+          ], { ruhe: true }],
+        ] },
         { t: 'Nein. Ich weiß, was war.', art: 'weg', e: { flag: 'finale.nichtlesen' }, dann: [['s', 'ilda', 'Das ist auch eine Antwort.']] },
       ], { ruhe: true }],
     ];

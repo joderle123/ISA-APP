@@ -139,3 +139,9 @@ man darf fast alles tun (auch Mist), keine Waffen, kein Gefängnis. Die Folgen s
     - *Frühling:* jede dritte Krone blüht rosa oder weiß, das Gras ist frischer, kleine Blütenpunkte in der Wiese.
     - *Sommer:* wie bisher. LUMO selbst ist nicht betroffen (dort bleibt `uLumoSeason` null).
     Ansehen: `LUMO.world.veil.setSeason(0, 1, 0)` in der Konsole (solange keine Runde läuft).
+  - **Das Ende erinnert sich** (`daten/situationen-2.js` → `finale`, `amSteg(R)`, `ECHO`): Am Steg stehen jetzt bis zu drei
+    Leute – die, mit denen es am besten lief (Bindung ab 2). Jede Person sagt einen Satz zu etwas, das man im Jahr wirklich
+    getan hat (bei Pit geblieben, das Video gelöscht, Noor am ersten Tag geschützt, mit Tun zu Ilda gegangen …); sonst ihren
+    allgemeinen Satz. Wer mit einem zerstritten ist, „ist nicht gekommen“. Noor fehlt, wenn sie abgereist ist – wer sich
+    gut verabschiedet hat, bekommt eine Nachricht von ihr. Ilda sagt nicht mehr „dicker geworden“, wenn die Akte leer ist.
+    Wer die Akte liest, darf sagen, was darin fehlt (drei Antworten, Flags `finale.warum|gut|stimmt`).
