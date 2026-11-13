@@ -71,18 +71,36 @@ function lobes(parts, list, light, dark, y0, y1, wind, seedBase = 0, segW = 12, 
   });
 }
 
-function broadleafGeo(rnd, blossom) {
+// Laubbaum in vier Formen, damit kein Wald aus Kopien entsteht:
+//   0 rund (klassisch) · 1 hoch und schmal · 2 breit ausladend (alte Eiche) · 3 kleiner Obstbaum mit roten Äpfeln
+function broadleafGeo(rnd, blossom, form = 0) {
   const parts = [];
-  const h = 3.0 + rnd() * 0.8;
+  const hr = rnd();   // genau ein Zufallswert für die Höhe (die Reihenfolge des Insel-Zufalls bleibt wie früher)
+  const F = [
+    { h: 3.0 + hr * 0.8, st: [0.2, 0.3], list: (h) => [[0, h + 1.6, 0, 1.75], [1.35, h + 0.95, 0.4, 1.5], [-1.25, h + 1.05, -0.3, 1.55], [0.2, h + 2.7, -0.4, 1.35], [-0.3, h + 0.85, 1.15, 1.35]], band: [0.7, 2.2] },
+    { h: 3.1 + hr * 0.5, st: [0.17, 0.26], list: (h) => [[0, h + 1.2, 0, 1.3], [0.25, h + 2.5, 0.1, 1.2], [-0.15, h + 3.7, -0.1, 0.95], [0.6, h + 0.6, -0.4, 1.0], [-0.6, h + 0.85, 0.4, 1.05]], band: [0.4, 3.0] },
+    { h: 2.6 + hr * 0.6, st: [0.27, 0.4], list: (h) => [[0, h + 1.25, 0, 1.85], [2.0, h + 0.8, 0.5, 1.35], [-1.9, h + 0.9, -0.4, 1.4], [0.4, h + 0.85, 1.9, 1.3], [-0.3, h + 0.8, -1.9, 1.3], [0.2, h + 2.3, 0, 1.3]], band: [0.5, 1.9] },
+    { h: 2.1 + hr * 0.4, st: [0.14, 0.22], list: (h) => [[0, h + 1.0, 0, 1.4], [1.0, h + 0.6, 0.3, 1.1], [-0.95, h + 0.7, -0.2, 1.15], [0.1, h + 1.85, -0.2, 1.0]], band: [0.4, 1.6] },
+  ][form];
+  const h = F.h, [r0, r1] = F.st;
   // Stamm 6-eckig mit leichter Verjüngung und Wurzelansatz
-  parts.push(part(new THREE.CylinderGeometry(0.2, 0.3, h, 6, 1), { pos: [0, h / 2, 0], color: '#7a5638', wind: (x, y) => (y / h) * 0.05 }));
-  parts.push(part(new THREE.CylinderGeometry(0.3, 0.44, 0.35, 6, 1), { pos: [0, 0.17, 0], color: '#6e4c30' }));
-  parts.push(part(new THREE.CylinderGeometry(0.08, 0.14, 1.6, 5, 1), { pos: [0.55, h - 0.1, 0], rot: [0, 0, -0.9], color: '#7a5638', wind: 0.08 }));
-  parts.push(part(new THREE.CylinderGeometry(0.08, 0.14, 1.4, 5, 1), { pos: [-0.45, h - 0.3, 0.2], rot: [0.3, 0, 0.9], color: '#7a5638', wind: 0.08 }));
-  const list = [[0, h + 1.6, 0, 1.75], [1.35, h + 0.95, 0.4, 1.5], [-1.25, h + 1.05, -0.3, 1.55], [0.2, h + 2.7, -0.4, 1.35], [-0.3, h + 0.85, 1.15, 1.35]];
+  parts.push(part(new THREE.CylinderGeometry(r0, r1, h, 6, 1), { pos: [0, h / 2, 0], color: '#7a5638', wind: (x, y) => (y / h) * 0.05 }));
+  parts.push(part(new THREE.CylinderGeometry(r1, r1 * 1.45, 0.35, 6, 1), { pos: [0, 0.17, 0], color: '#6e4c30' }));
+  const ast = form === 2 ? 1.5 : 1;
+  parts.push(part(new THREE.CylinderGeometry(0.08 * ast, 0.14 * ast, 1.6 * ast, 5, 1), { pos: [0.55 * ast, h - 0.1, 0], rot: [0, 0, -0.9], color: '#7a5638', wind: 0.08 }));
+  parts.push(part(new THREE.CylinderGeometry(0.08 * ast, 0.14 * ast, 1.4 * ast, 5, 1), { pos: [-0.45 * ast, h - 0.3, 0.2], rot: [0.3, 0, 0.9], color: '#7a5638', wind: 0.08 }));
+  const list = F.list(h), wind = (x, y) => 0.12 + Math.max(0, y - h) * 0.05;
   // zwei Töne: dunkles Band unten (bis ≈ 0,55 der Kronenhöhe), oben hell
-  if (blossom) lobes(parts, list, '#ffc2dc', '#f06a9c', h + 0.7, h + 2.2, (x, y) => 0.12 + Math.max(0, y - h) * 0.05, 2);
-  else lobes(parts, list, '#9ade5a', '#3b8a3e', h + 0.7, h + 2.2, (x, y) => 0.12 + Math.max(0, y - h) * 0.05, Math.floor(rnd() * 3));
+  if (blossom) lobes(parts, list, '#ffc2dc', '#f06a9c', h + F.band[0], h + F.band[1], wind, 2);
+  else lobes(parts, list, form === 2 ? '#8fd456' : '#9ade5a', form === 2 ? '#2f7d3a' : '#3b8a3e', h + F.band[0], h + F.band[1], wind, Math.floor(rnd() * 3));
+  if (form === 3 && !blossom) {
+    // Äpfel sitzen außen an der Krone (kein Laub: sie bleiben im Herbst rot)
+    const ra = mulberry32(3131);
+    for (let k = 0; k < 10; k++) {
+      const b = list[k % list.length], a = ra() * Math.PI * 2, el = -0.5 + ra() * 0.9, r = b[3] * 0.98;
+      parts.push(part(new THREE.SphereGeometry(0.14, 6, 5), { pos: [b[0] + Math.cos(a) * Math.cos(el) * r, b[1] + Math.sin(el) * r * 0.86, b[2] + Math.sin(a) * Math.cos(el) * r], color: k % 4 === 3 ? '#f2b632' : '#e23b2e', wind: 0.14, smooth: true }));
+    }
+  }
   return merge(parts);
 }
 
@@ -110,14 +128,19 @@ function jungleGeo(rnd) {
   return merge(parts);
 }
 
-function pineGeo(rnd) {
+// Kiefer in zwei Formen: 0 breit mit vier Etagen · 1 schlank und hoch mit fünf
+function pineGeo(rnd, form = 0) {
   const parts = [];
-  parts.push(part(new THREE.CylinderGeometry(0.16, 0.26, 2.2, 6, 1), { pos: [0, 1.1, 0], color: '#6d4c34' }));
-  const tiers = [[2.3, 2.6, 2.0], [1.85, 2.4, 3.4], [1.35, 2.2, 4.7], [0.85, 1.9, 5.9]];
-  tiers.forEach(([r, hh, y], i) => {
+  const sh = form ? 2.6 : 2.2;
+  parts.push(part(new THREE.CylinderGeometry(0.16, 0.26, sh, 6, 1), { pos: [0, sh / 2, 0], color: '#6d4c34' }));
+  const tiers = form
+    ? [[1.75, 2.4, 2.4], [1.45, 2.2, 3.7], [1.15, 2.0, 4.9], [0.85, 1.8, 6.0], [0.55, 1.6, 7.0]]
+    : [[2.3, 2.6, 2.0], [1.85, 2.4, 3.4], [1.35, 2.2, 4.7], [0.85, 1.9, 5.9]];
+  const [hell, dunkel] = form ? ['#3f946e', '#1f5445'] : ['#4fa06a', '#255e45'];
+  tiers.forEach(([r, hh, y]) => {
     parts.push(part(new THREE.ConeGeometry(r, hh, 9, 1), {
       pos: [0, y, 0], smooth: true, leaf: 1,
-      color: canopyColor('#4fa06a', '#255e45', y - hh / 2, y + hh / 2), wind: (x, yy) => Math.max(0, yy - 1.5) * 0.02,
+      color: canopyColor(hell, dunkel, y - hh / 2, y + hh / 2), wind: (x, yy) => Math.max(0, yy - 1.5) * 0.02,
     }));
   });
   return merge(parts);
@@ -434,12 +457,13 @@ export function createVegetation({ island, veil, colliders, quality, scene, lush
 
   const flowerPalA = ['#ff5d8f', '#ffd23f', '#ffffff', '#ff8c42'];
   const flowerPalB = ['#b17dff', '#6ec6ff', '#ffffff', '#ff5d8f'];
+  const rndForm = mulberry32(5151);   // eigener Zufall für die zusätzlichen Baumformen – der Insel-Zufall (rnd) läuft weiter wie bisher
   const SPECIES = {
     palm: { geos: [palmGeo(rnd, 0), palmGeo(rnd, 1)], mat: matTree, shadow: true, collide: 0.42, trunk: 7, crown: [3.2, 6.2, 9.2], kind: 'tree' },
-    tree: { geos: [broadleafGeo(rnd, false), broadleafGeo(rnd, false)], mat: matLaub, shadow: true, collide: 0.45, trunk: 3.4, crown: [2.7, 2.8, 7.2], kind: 'tree' },
-    blossom: { geos: [broadleafGeo(rnd, true)], mat: matLaub, shadow: true, collide: 0.45, trunk: 3.4, crown: [2.7, 2.8, 7.2], kind: 'tree' },
+    tree: { geos: [broadleafGeo(rnd, false, 0), broadleafGeo(rnd, false, 1), broadleafGeo(rndForm, false, 2), broadleafGeo(rndForm, false, 3), broadleafGeo(rndForm, false, 0)], mat: matLaub, shadow: true, collide: 0.45, trunk: 3.4, crown: [2.7, 2.8, 7.2], kind: 'tree' },
+    blossom: { geos: [broadleafGeo(rnd, true, 0), broadleafGeo(rndForm, true, 3)], mat: matLaub, shadow: true, collide: 0.45, trunk: 3.4, crown: [2.7, 2.8, 7.2], kind: 'tree' },
     jungle: { geos: [jungleGeo(rnd), jungleGeo(rnd)], mat: matTree, shadow: true, collide: 0.75, trunk: 6.5, crown: [4.2, 5.4, 11], kind: 'tree' },
-    pine: { geos: [pineGeo(rnd), pineGeo(rnd)], mat: matTree, shadow: true, collide: 0.4, trunk: 2.2, crown: [2.3, 0.9, 7.6], kind: 'tree' },
+    pine: { geos: [pineGeo(rnd, 0), pineGeo(rnd, 1)], mat: matTree, shadow: true, collide: 0.4, trunk: 2.2, crown: [2.3, 0.9, 7.6], kind: 'tree' },
     bush: { geos: [bushGeo(rnd, false), bushGeo(rnd, true)], mat: matLaub, kind: 'small', far: 1.8 },
     fern: { geos: [fernGeo(rnd)], mat: matSmall, kind: 'small', far: 1.2 },
     flowers: { geos: [flowersGeo(rnd, flowerPalA), flowersGeo(rnd, flowerPalB)], mat: matBlume, kind: 'small', far: 1.0 },
@@ -737,7 +761,14 @@ export function createVegetation({ island, veil, colliders, quality, scene, lush
         m4.compose(v3.set(it.x, y, it.z), q, s3.set(it.s, it.s * (0.9 + rnd() * 0.2), it.s));
         mesh.setMatrixAt(i, m4);
         if (it.tint) mesh.setColorAt(i, it.tint);
-        else mesh.setColorAt(i, tintC.copy(white).multiplyScalar(0.9 + rnd() * 0.2));
+        else {
+          const hell = 0.9 + rnd() * 0.2;
+          // Bäume: jeder ein wenig anders im Ton (gelblicher, satter, kühler) – berechnet aus dem Standort
+          if (sp.kind === 'tree' && !sp.collideRock) {
+            const h1 = Math.abs(Math.sin(it.x * 12.9898 + it.z * 78.233) * 43758.5453) % 1, h2 = Math.abs(Math.sin(it.x * 39.346 + it.z * 11.135) * 24634.6345) % 1;
+            mesh.setColorAt(i, tintC.setRGB((0.88 + h1 * 0.26) * hell, (0.95 + h2 * 0.1) * hell, (0.8 + (1 - h1) * 0.3) * hell));
+          } else mesh.setColorAt(i, tintC.copy(white).multiplyScalar(hell));
+        }
         cx += it.x; cz += it.z;
       });
       mesh.instanceMatrix.needsUpdate = true;

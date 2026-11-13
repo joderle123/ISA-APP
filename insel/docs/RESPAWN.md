@@ -145,3 +145,7 @@ man darf fast alles tun (auch Mist), keine Waffen, kein Gefängnis. Die Folgen s
     allgemeinen Satz. Wer mit einem zerstritten ist, „ist nicht gekommen“. Noor fehlt, wenn sie abgereist ist – wer sich
     gut verabschiedet hat, bekommt eine Nachricht von ihr. Ilda sagt nicht mehr „dicker geworden“, wenn die Akte leer ist.
     Wer die Akte liest, darf sagen, was darin fehlt (drei Antworten, Flags `finale.warum|gut|stimmt`).
+  - **Mehr Baumformen** (`vegetation.js` → `broadleafGeo(rnd, blossom, form)`, `pineGeo(rnd, form)`): Laubbäume gibt es jetzt
+    rund, hoch und schmal, breit ausladend und als kleinen Apfelbaum mit roten Äpfeln; Kiefern breit oder schlank. Jeder
+    Baum hat einen leicht anderen Farbton (aus dem Standort berechnet). Die zusätzlichen Formen nutzen einen eigenen Zufall
+    (`rndForm`), damit jeder Baum, Busch und Halm der Insel an seinem Platz bleibt. Gilt auch für LUMO.
