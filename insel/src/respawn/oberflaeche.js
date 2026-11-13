@@ -135,6 +135,61 @@ export function createOberflaeche({ game }) {
       if (test) { treffer = Math.max(0, runden - 1); runde = runden; setTimeout(ende, 20); } else raf = requestAnimationFrame(bild_);
     });
   }
+  // ---------- Merken: zuhören, behalten, in der richtigen Reihenfolge antippen ----------
+  // Jemand sagt, was er braucht (drei, vier, fünf Dinge). Kurz sichtbar, dann weg – danach aus sechs Dingen in derselben
+  // Reihenfolge antippen. Viel Druck: kürzer sichtbar („Dein Kopf ist voll“). → { richtig, von }
+  function merken({ titel = 'Merken', dinge = ['🍅', '🥕', '🧅', '🥒', '🌶️', '🍓'], runden = 3, druck = 0 } = {}) {
+    return new Promise((resolve) => {
+      const voll_ = druck >= 60;
+      const g = el('rs-geschick rs-merk hud-interactive', `<small>${esc(titel)}</small>
+        <div class="rs-m-reihe"></div><div class="rs-m-wahl"></div>
+        <div class="rs-g-fuss"><span class="rs-g-punkte">${'<i></i>'.repeat(runden)}</span><span class="rs-g-tipp"></span></div>`);
+      root.appendChild(g);
+      requestAnimationFrame(() => g.classList.add('is-da'));
+      const reihe = g.querySelector('.rs-m-reihe'), wahl = g.querySelector('.rs-m-wahl'), tippText = g.querySelector('.rs-g-tipp'), punkte = [...g.querySelectorAll('.rs-g-punkte i')];
+      let runde = 0, richtig = 0, folge = [], stelle = 0, fertig = false, uhr = 0, offen = false;
+      const misch = (a) => { const b = a.slice(); for (let i = b.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [b[i], b[j]] = [b[j], b[i]]; } return b; };
+      const ende = () => {
+        if (fertig) return; fertig = true; clearTimeout(uhr);
+        game.events.off('respawn:weiter', ab);
+        g.classList.remove('is-da'); setTimeout(() => { g.remove(); resolve({ richtig, von: runden }); }, test ? 0 : 220);
+      };
+      const ab = () => { richtig = Math.max(richtig, runden - 1); ende(); };   // Tests und Autopilot
+      const zeige = () => {
+        const n = Math.min(dinge.length, 3 + runde);
+        folge = misch(dinge).slice(0, n); stelle = 0; offen = false;
+        reihe.innerHTML = folge.map((d) => `<b>${esc(d)}</b>`).join('');
+        wahl.innerHTML = ''; wahl.classList.remove('is-da');
+        tippText.textContent = voll_ ? 'Viel Druck. Dein Kopf ist voll.' : 'Merk dir die Reihenfolge.';
+        uhr = setTimeout(frage, (900 + n * 650) * (voll_ ? 0.6 : 1));
+      };
+      const frage = () => {
+        reihe.innerHTML = folge.map(() => '<b class="ist-leer">?</b>').join('');
+        wahl.innerHTML = misch(dinge).map((d) => `<button type="button" data-d="${esc(d)}">${esc(d)}</button>`).join('');
+        wahl.classList.add('is-da'); offen = true;
+        tippText.textContent = 'Jetzt du: gleiche Reihenfolge.';
+      };
+      const werte = (gut) => {
+        offen = false;
+        if (gut) richtig++;
+        try { game.audio.play(gut ? 'pickup' : 'error'); } catch (e) { /* Ton ist Zugabe */ }
+        punkte[runde].className = gut ? 'ist-gut' : 'ist-daneben';
+        if (!gut) reihe.innerHTML = folge.map((d) => `<b class="ist-loesung">${esc(d)}</b>`).join('');
+        runde++;
+        uhr = setTimeout(() => { if (runde >= runden) ende(); else zeige(); }, gut ? 600 : 1500);
+      };
+      wahl.addEventListener('click', (e) => {
+        const b = e.target.closest('button[data-d]'); if (!b || !offen || fertig) return;
+        const gut = b.dataset.d === folge[stelle];
+        if (!gut) { b.classList.add('ist-daneben'); werte(false); return; }
+        reihe.children[stelle].textContent = folge[stelle]; reihe.children[stelle].className = 'ist-gut'; b.disabled = true;
+        stelle++;
+        if (stelle >= folge.length) werte(true);
+      });
+      game.events.on('respawn:weiter', ab);
+      if (test) { richtig = Math.max(0, runden - 1); setTimeout(ende, 20); } else zeige();
+    });
+  }
   // ---------- Durchatmen: Finger halten = einatmen, loslassen = ausatmen ----------
   // Ein Kreis wird groß (einatmen, 3 s) und klein (ausatmen, 4 s). Wer mitgeht, wird ruhiger. Kein Text darüber, warum.
   // → { gut }  Zahl der Atemzüge, bei denen man gut mitgegangen ist (0..zuege)
@@ -343,7 +398,7 @@ export function createOberflaeche({ game }) {
   }
 
   return {
-    status, wirkung, melde, erzaehler, gedanke, geschick, atmen, wahl, titelkarte, kartenZiehen, freizeit, abschluss, start,
+    status, wirkung, melde, erzaehler, gedanke, geschick, atmen, merken, wahl, titelkarte, kartenZiehen, freizeit, abschluss, start,
     handy(R, meta, welt) { handy(R, meta, welt); },
     setzeHandy(fn) { handyAuf = fn; },
   };

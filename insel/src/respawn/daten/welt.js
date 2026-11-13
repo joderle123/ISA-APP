@@ -248,7 +248,13 @@ export const ORT_AKTIONEN = {
   garten: { t: 'Im Garten helfen', art: 'ruhig', kraft: 1, wenn: (R) => !hat(R, 'meidet.lucinda'),
     szene: (R) => (hat(R, 'markt.geklaut') && !hat(R, 'gestanden.markt')
       ? [['t', 'Du ziehst Unkraut. Oma Lucinda summt dabei.'], ['s', 'lucinda', 'Mir fehlen Kopfhörer am Stand. Komisch, oder?'], ['e', { geld: 10, druck: 8, bond: { lucinda: 1 } }]]
-      : [['t', 'Tomaten binden, Unkraut ziehen. Erde unter den Nägeln.'], ['s', 'lucinda', 'Zehn Euro. Und nimm Tomaten mit.'], ['e', { geld: 10, druck: -10, bond: { lucinda: 1 } }]]) },
+      // Merkspiel: Oma Lucinda sagt, was sie aus dem Beet braucht. Wer zuhört und behält, dem traut sie mehr zu.
+      : [['t', 'Erde unter den Nägeln. Oma Lucinda zeigt aufs Beet.'], ['s', 'lucinda', 'Hol mir das. Genau in der Reihenfolge.'],
+        ['merk', { titel: 'Was braucht Oma Lucinda?' }, (m) => (m.richtig >= 3
+          ? [['s', 'lucinda', 'Alles richtig. Du hörst zu. Das können wenige.', { mimik: 'freude' }], ['e', { geld: 14, druck: -12, bond: { lucinda: 2 } }]]
+          : m.richtig >= 1
+            ? [['s', 'lucinda', 'Fast. Zehn Euro. Und nimm Tomaten mit.'], ['e', { geld: 10, druck: -10, bond: { lucinda: 1 } }]]
+            : [['s', 'lucinda', 'Macht nichts. Morgen nochmal. Hier, Tomaten.'], ['e', { geld: 6, druck: -6, bond: { lucinda: 1 } }]])]]) },
   // Tretroller: das Einzige, was man mit Geld kaufen kann und danach behält – damit kommt man schneller über die Insel (roller.js)
   roller: { t: 'Tretroller kaufen', art: 'ruhig', kraft: 0, kostet: 35, wenn: (R) => !hat(R, 'roller'),
     szene: () => [['s', 'lucinda', 'Gebraucht, aber er rollt. 35 Euro.'], ['e', { geld: -35, druck: -10, flag: 'roller' }], ['d', 'Dein eigener Roller. Die Insel wird kleiner.']] },

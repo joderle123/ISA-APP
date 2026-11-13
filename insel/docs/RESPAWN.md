@@ -84,3 +84,8 @@ man darf fast alles tun (auch Mist), keine Waffen, kein Gefängnis. Die Folgen s
   - **Kamera im Hochformat** (`actors/camera.js` → `rig.hochkant`, nur von RESPAWN gesetzt): Am Handy verdeckte die eigene
     Figur, wer vor ihr stand. Der Blickpunkt liegt jetzt 0,5 m höher und die Kamera schaut etwas steiler – die Figur steht
     tiefer im Bild, darüber sieht man Leute und Ort. LUMO und das Querformat bleiben, wie sie waren.
+  - **Merken** (`oberflaeche.js` → `merken`, Szenen-Schritt `['merk', { titel, dinge }, (ergebnis) => Schritte]`, Ergebnis
+    `{ richtig, von }`): Jemand sagt, was er braucht – drei, vier, fünf Dinge, kurz zu sehen, dann weg. Danach aus sechs
+    Dingen in derselben Reihenfolge antippen. Viel Druck: kürzer zu sehen („Dein Kopf ist voll“). Benutzt im Garten bei
+    Oma Lucinda (alles richtig: mehr Geld, mehr Nähe – „Du hörst zu. Das können wenige.“). Die kleinen Spiele (Geschick,
+    Durchatmen, Merken) sind jetzt genau so breit wie das Bild (vorher 4 Pixel zu breit).

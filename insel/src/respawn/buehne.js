@@ -164,6 +164,8 @@ export function createBuehne({ game, O }) {
       else if (art === 'w') await wahl(s[1], s[2] || {});
       // Durchatmen: ['atem', { zuege }, (ergebnis) => Schritte]
       else if (art === 'atem') { totale(); const erg = await O.atmen(s[1] || {}); game.events.emit('respawn:atem', erg); await lauf((s[2] && s[2](erg, R)) || []); }
+      // Merken: ['merk', { titel, dinge }, (ergebnis) => Schritte] – ergebnis { richtig, von }
+      else if (art === 'merk') { totale(); const erg = await O.merken({ ...s[1], druck: R.druck }); game.events.emit('respawn:merken', erg); await lauf((s[2] && s[2](erg, R)) || []); }
       // Geschick: ['spiel', { titel, bild }, (ergebnis) => Schritte] – wie es weitergeht, hängt von den Treffern ab
       else if (art === 'spiel') { totale(); const erg = await O.geschick({ ...s[1], druck: R.druck }); game.events.emit('respawn:geschick', erg); await lauf((s[2] && s[2](erg, R)) || []); }
     }
