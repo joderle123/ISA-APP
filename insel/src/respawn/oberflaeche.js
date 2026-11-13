@@ -331,6 +331,49 @@ export function createOberflaeche({ game }) {
       setTimeout(zu, test ? 10 : 2200);
     });
   }
+  // ---------- Aufträge ----------
+  // Erklärkarte vor einem Auftrag: wer ihn gibt, drei Sätze (Was? Wo? Worauf kommt es an?), der Lohn. → true = angenommen
+  // („respawn:weiter“ = später; „respawn:auftrag-ja“ = annehmen – für Tests und Autopilot)
+  function auftragKarte({ m, von, thema }) {
+    return new Promise((resolve) => {
+      const v = voll('ist-auftrag', `<div class="rs-ak"><small>${thema ? 'Thema: ' + esc(thema.name) : 'Auftrag'}${von ? ' · von ' + esc(von) : ''}</small>
+        <h2><span>${m.bild}</span> ${esc(m.titel)}</h2>
+        <ol>${m.wie.map((z) => `<li>${esc(z)}</li>`).join('')}</ol>
+        <p class="rs-lohn">Lohn: ${esc(m.lohn)}</p>
+        <div class="rs-knoepfe"><button type="button" class="ist-haupt" data-a="ja">Annehmen</button><button type="button" data-a="nein">Später</button></div></div>`);
+      const zu = (ja) => { ab1(); ab2(); v.zu(); resolve(!!ja); };
+      v.el.addEventListener('click', (e) => { const b = e.target.closest('[data-a]'); if (b) zu(b.dataset.a === 'ja'); });
+      const ab1 = game.events.on('respawn:weiter', () => zu(false)), ab2 = game.events.on('respawn:auftrag-ja', () => zu(true));
+    });
+  }
+  // Nach dem Auftrag: Sterne (1–3) und ein Satz dazu
+  function auftragFertig({ m, sterne }) {
+    return new Promise((resolve) => {
+      const satz = sterne >= 3 ? 'Stark. Besser geht es kaum.' : sterne === 2 ? 'Gut gemacht.' : 'Geschafft. Das zählt.';
+      const v = voll('ist-auftrag ist-fertig', `<div class="rs-ak"><small>Auftrag geschafft</small><h2><span>${m.bild}</span> ${esc(m.titel)}</h2>
+        <p class="rs-sterne" aria-label="${sterne} von 3 Sternen">${'★'.repeat(sterne)}<i>${'★'.repeat(3 - sterne)}</i></p><p class="rs-lead">${satz}</p>
+        <div class="rs-knoepfe"><button type="button" class="ist-haupt" data-a="ok">Weiter</button></div></div>`);
+      const zu = () => { ab(); v.zu(); resolve(); };
+      v.el.addEventListener('click', (e) => { if (e.target.closest('[data-a]')) zu(); });
+      const ab = game.events.on('respawn:weiter', zu);
+      if (test) setTimeout(zu, 10);
+    });
+  }
+  // Themen für Lehrpersonen: Zusatz-Aufträge zu einem Thema aus dem Skills-Kurs an- und ausschalten
+  function themenWahl({ themen, an, anzahl, speichern }) {
+    const html = () => `<p class="rs-lead">Für Lehrpersonen. Ein eingeschaltetes Thema bringt Zusatz-Aufträge ins Spiel – passend zur Stunde.</p>
+      <div class="rs-themen">${themen.map((t) => `<button type="button" class="rs-thema${an.includes(t.id) ? ' ist-an' : ''}" data-thema="${t.id}" aria-pressed="${an.includes(t.id)}">
+        <b>${t.bild} ${esc(t.name)}</b><small>${esc(t.kurz)} · ${anzahl(t.id)} ${anzahl(t.id) === 1 ? 'Auftrag' : 'Aufträge'}</small><i>${an.includes(t.id) ? 'an' : 'aus'}</i></button>`).join('')}</div>
+      <p class="rs-klein">Die Aufträge erscheinen mit einem Stern an den Orten und im Handy unter „Heute“.</p>`;
+    ui.overlay.open({ id: 'rs-themen', title: 'Themen', kind: 'panel', content: (body) => {
+      body.innerHTML = html();
+      body.addEventListener('click', (e) => {
+        const b = e.target.closest('[data-thema]'); if (!b) return;
+        const i = an.indexOf(b.dataset.thema); if (i >= 0) an.splice(i, 1); else an.push(b.dataset.thema);
+        speichern(an); body.innerHTML = html();
+      });
+    } });
+  }
   const karteHtml = (art, k, extra = '') => `
     <div class="rs-karte" style="--kf:${k.farbe}" data-art="${art}" data-id="${k.id}">
       <small>${esc(KARTEN_ART[art])}</small><span class="rs-kb">${bild(k.bild)}</span><h3>${esc(k.name)}</h3>
@@ -398,16 +441,18 @@ export function createOberflaeche({ game }) {
   }
 
   // ---------- Start ----------
-  function start({ meta, laufend }) {
+  function start({ meta, laufend, themen }) {
     return new Promise((resolve) => {
       const v = voll('ist-start', `<div class="rs-start"><h1>RESPAWN</h1><p class="rs-lead">Ein Jahr auf der Insel. Dann nochmal. Anders.</p>
         <div class="rs-knoepfe ist-spalte">${laufend ? '<button type="button" class="ist-haupt" data-s="weiter">Weiterspielen</button>' : ''}
           <button type="button" class="${laufend ? '' : 'ist-haupt'}" data-s="neu">Neue Runde</button>
-          <button type="button" data-s="aussehen">Aussehen</button><button type="button" data-s="album">Album (${Object.keys(meta.ausgaenge || {}).length}/${AUSGAENGE.length})</button></div>
+          <button type="button" data-s="aussehen">Aussehen</button><button type="button" data-s="album">Album (${Object.keys(meta.ausgaenge || {}).length}/${AUSGAENGE.length})</button>
+          ${themen ? '<button type="button" class="ist-leise" data-s="themen">Themen (Lehrperson)</button>' : ''}</div>
         <p class="rs-klein">Du darfst alles ausprobieren. Nichts hier wird bewertet oder gespeichert, außer auf diesem Gerät.</p></div>`);
       v.el.addEventListener('click', (e) => {
         const b = e.target.closest('[data-s]'); if (!b) return;
         if (b.dataset.s === 'album') { ui.overlay.open({ id: 'rs-album', title: 'Album', kind: 'panel', content: albumHtml(meta) }); return; }
+        if (b.dataset.s === 'themen') { themenWahl(themen); return; }
         ab(); v.zu(); resolve(b.dataset.s);
       });
       const ab = game.events.on('respawn:start', (was) => { ab(); v.zu(); resolve(was || 'neu'); });
@@ -419,7 +464,12 @@ export function createOberflaeche({ game }) {
     const seiten = {
       heute: () => {
         const w = welt ? welt() : { ereignisse: [], orte: [] };
-        return (w.ereignisse.length ? '<h4>Heute los</h4>' + w.ereignisse.map((x) => `<button type="button" class="rs-hin" data-hin="e:${x.id}"><b>❗ ${esc(x.titel)}</b><small>${esc(x.wo)} · hinbringen</small></button>`).join('') : '<p class="rs-lead">Kein Termin heute. Der Tag gehört dir.</p>')
+        const a = w.auftrag, an = w.angebote || [], fertig = w.erledigt || [];
+        const auftraege = (a ? `<h4>Dein Auftrag</h4><div class="rs-auftrag-h"><b>${a.bild} ${esc(a.titel)}</b><p>▶ ${esc(a.text)}</p>
+            <div class="rs-ah-knoepfe">${a.hin ? `<button type="button" class="rs-hin" data-hin="m:"><b>Weiter</b><small>${esc(a.wo)}</small></button>` : ''}<button type="button" class="rs-ab" data-ab="1">Auftrag abbrechen</button></div></div>` : '')
+          + (an.length ? '<h4>Neue Aufträge</h4>' + an.map((x) => `<button type="button" class="rs-hin rs-angebot" data-hin="o:${x.ort}"><b>⭐ ${esc(x.titel)}${x.thema ? ' <u>Thema</u>' : ''}</b><small>${esc(x.kurz)} · ${esc(x.von)}, ${esc(x.wo)} · hinbringen</small></button>`).join('') : '')
+          + (fertig.length ? '<h4>Geschafft</h4><p class="rs-geschafft">' + fertig.map((x) => `${x.bild} ${esc(x.titel)} <b>${'★'.repeat(x.sterne)}</b>`).join(' · ') + '</p>' : '');
+        return auftraege + (w.ereignisse.length ? '<h4>Heute los</h4>' + w.ereignisse.map((x) => `<button type="button" class="rs-hin" data-hin="e:${x.id}"><b>❗ ${esc(x.titel)}</b><small>${esc(x.wo)} · hinbringen</small></button>`).join('') : '<p class="rs-lead">Kein Termin heute. Der Tag gehört dir.</p>')
           + ((w.ideen || []).length ? '<h4>Was heute los ist</h4>' + w.ideen.map((x) => `<button type="button" class="rs-hin rs-idee" data-hin="o:${x.ort}"><b>${x.bild} ${esc(x.text)}</b><small>${esc(x.wo)} · hinbringen</small></button>`).join('') : '')
           + '<h4>Orte – antippen bringt dich hin</h4><div class="rs-orte">' + w.orte.map((x) => `<button type="button" class="rs-hin" data-hin="o:${x.id}"><b>${x.bild} ${esc(x.name)}</b></button>`).join('') + '</div>';
       },
@@ -445,6 +495,7 @@ export function createOberflaeche({ game }) {
       content: (body, griff) => {
         let seite = (R.chats || []).some((c) => !c.gelesen) ? 'chats' : 'heute';
         body.addEventListener('click', (e) => { const h = e.target.closest('[data-hin]'); if (h && welt) { griff.close('hin'); welt().hin(h.dataset.hin); } });
+        body.addEventListener('click', (e) => { if (e.target.closest('[data-ab]') && welt) { griff.close('ab'); welt().abbrechen(); } });
         const z = () => {
           body.innerHTML = `<div class="rs-tabs">${Object.keys(seiten).map((s) => `<button type="button" data-t="${s}" class="${s === seite ? 'ist-an' : ''}">${namen[s]}</button>`).join('')}</div><div class="rs-seite">${seiten[seite]()}</div>`;
         };
@@ -457,7 +508,7 @@ export function createOberflaeche({ game }) {
   }
 
   return {
-    status, wirkung, melde, erzaehler, gedanke, geschick, atmen, merken, nichtZucken, wahl, titelkarte, kartenZiehen, freizeit, abschluss, start,
+    status, wirkung, melde, erzaehler, gedanke, geschick, atmen, merken, nichtZucken, wahl, titelkarte, auftragKarte, auftragFertig, themenWahl, kartenZiehen, freizeit, abschluss, start,
     handy(R, meta, welt) { handy(R, meta, welt); },
     setzeHandy(fn) { handyAuf = fn; },
   };

@@ -180,4 +180,39 @@ button.rs-leut{width:100%;min-height:52px;background:none;border:0;border-bottom
 @media (max-width:560px){.rs-leiste{gap:7px;font-size:14px;padding-left:10px;left:max(10px,env(safe-area-inset-left));transform:none;transition:none;max-width:calc(100vw - 92px)}.rs-jz{display:none}.rs-karte{flex-basis:100%;max-width:none}}
 /* Sehr schmale Handys (360 px): Die Leiste darf den Pause-Knopf rechts nicht berühren – Balken kürzer, Abstände kleiner */
 @media (max-width:400px){.rs-leiste{gap:5px;padding:6px 6px 6px 10px;max-width:calc(100vw - 100px)}.rs-druck{gap:5px}.rs-druck i{width:44px}.rs-druck b{letter-spacing:0}}
+
+/* Aufträge: Erklärkarte, Ergebnis, Anzeige des nächsten Schritts, Handy, Themen */
+.rs-voll.ist-auftrag{background:rgba(10,8,24,.8);}
+.rs-ak{box-sizing:border-box;width:min(520px,100%);padding:22px 20px;border-radius:22px;background:linear-gradient(180deg,#2a2350,#1b1736);border:1px solid rgba(255,210,63,.45);box-shadow:0 18px 50px rgba(0,0,0,.5);text-align:left;animation:rs-rein .35s ease-out;}
+.rs-ak small{display:block;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#ffd23f;margin-bottom:6px;}
+.rs-ak h2{font-size:clamp(26px,6vw,34px);line-height:1.1;}
+.rs-ak ol{margin:14px 0 10px;padding:0;list-style:none;counter-reset:ak;display:grid;gap:9px;}
+.rs-ak li{counter-increment:ak;display:grid;grid-template-columns:34px 1fr;align-items:center;gap:10px;font-size:17px;line-height:1.3;}
+.rs-ak li::before{content:counter(ak);display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:#ffd23f;color:#1b1736;font-weight:800;}
+.rs-lohn{margin:0 0 6px;font-size:15px;opacity:.85;}
+.rs-ak .rs-knoepfe{justify-content:stretch;}
+.rs-ak .rs-knoepfe button{flex:1 1 130px;}
+.rs-voll.ist-fertig .rs-ak{text-align:center;}
+.rs-sterne{margin:10px 0 4px;font-size:54px;line-height:1;color:#ffd23f;letter-spacing:.08em;}
+.rs-sterne i{font-style:normal;color:rgba(255,255,255,.2);}
+.rs-voll button.ist-leise{min-height:44px;font-size:15px;font-weight:600;opacity:.8;background:transparent;}
+.rs-auftrag{position:absolute;left:max(10px,env(safe-area-inset-left));top:calc(max(12px,env(safe-area-inset-top)) + 58px);max-width:min(62%,360px);box-sizing:border-box;padding:7px 12px;border-radius:14px;background:rgba(20,22,34,.84);border:1px solid rgba(255,210,63,.5);color:#fff;font:700 14px/1.25 system-ui,sans-serif;pointer-events:none;z-index:6;}
+.rs-auftrag b{display:block;font-size:12px;letter-spacing:.06em;color:#ffd23f;text-transform:uppercase;}
+.rs-marke.ist-auftrag{background:#ffd23f;color:#1b1736;border-color:#fff;}
+.rs-auftrag-h{padding:12px;border-radius:14px;background:rgba(255,210,63,.12);border:1px solid rgba(255,210,63,.45);margin-bottom:8px;}
+.rs-auftrag-h p{margin:6px 0 10px;font-size:16px;}
+.rs-ah-knoepfe{display:flex;flex-wrap:wrap;gap:8px;}
+.rs-ah-knoepfe .rs-hin{flex:1 1 150px;margin:0;}
+.rs-ab{flex:0 1 auto;min-height:48px;padding:0 14px;border-radius:12px;border:1px solid rgba(255,255,255,.22);background:transparent;color:#fff;font:600 14px system-ui,sans-serif;cursor:pointer;}
+.rs-angebot{border-color:rgba(255,210,63,.55)!important;}
+.rs-angebot u{text-decoration:none;font-size:12px;padding:2px 7px;border-radius:999px;background:#ffd23f;color:#1b1736;margin-left:6px;}
+.rs-geschafft{margin:0 0 6px;font-size:15px;line-height:1.6;}
+.rs-geschafft b{color:#ffd23f;}
+.rs-themen{display:grid;gap:8px;margin:12px 0;}
+.rs-thema{display:grid;grid-template-columns:1fr auto;align-items:center;gap:2px 12px;text-align:left;min-height:60px;padding:10px 14px;border-radius:14px;border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.06);color:inherit;font:inherit;cursor:pointer;}
+.rs-thema b{font-size:17px;}
+.rs-thema small{grid-column:1;font-size:14px;opacity:.75;}
+.rs-thema i{grid-column:2;grid-row:1 / span 2;font-style:normal;font-weight:800;font-size:14px;padding:6px 12px;border-radius:999px;background:rgba(255,255,255,.14);}
+.rs-thema.ist-an{border-color:#ffd23f;background:rgba(255,210,63,.14);}
+.rs-thema.ist-an i{background:#ffd23f;color:#1b1736;}
 `;

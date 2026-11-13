@@ -1,8 +1,9 @@
 // RESPAWN – Spiellogik und Inhalte (reine Node-Tests): Regeln, Schreibregeln, keine Sackgassen, jeder Ausgang erreichbar.
 import { test } from 'node:test';
+import { angebote, nimmAn, aktuell, weiter, schliesse, sterneFuer, sterneLauf, sterneSammeln, sterneTreffer, zeitFuerStrecke } from '../../src/respawn/missionen.js';
 import assert from 'node:assert/strict';
 import { neuerLauf, wirke, wahlen, zeitFuer, ohneWahl, planeJahreszeit, jahreszeitWechsel, ausgangFuer, akteFuer, verschlaeft, hatKarte, verteile, folgenAmMorgen, neuerTag, JAHRESZEITEN } from '../../src/respawn/run.js';
-import { SITUATIONEN, AUSGAENGE, AKTE, KARTEN, FIGUREN, STIMMEN, ORTE, ORT_BEI, ORT_AKTIONEN, LEUTE_AKTIONEN, LEUTE_REIHE, FOLGEN, VERPASST, WICHTIG, statistSagt, TRATSCH_ZEILEN, ideenFuerHeute, IDEEN_ZEILEN, kapitelAuftakt, KAPITEL_ZEILEN } from '../../src/respawn/daten/index.js';
+import { SITUATIONEN, AUSGAENGE, AKTE, KARTEN, FIGUREN, STIMMEN, ORTE, ORT_BEI, ORT_AKTIONEN, LEUTE_AKTIONEN, LEUTE_REIHE, FOLGEN, VERPASST, WICHTIG, statistSagt, TRATSCH_ZEILEN, ideenFuerHeute, IDEEN_ZEILEN, kapitelAuftakt, KAPITEL_ZEILEN, MISSIONEN, THEMEN } from '../../src/respawn/daten/index.js';
 
 const K = (kopf = 'zuendschnur', zuhause = 'oma', tasche = 'ok') => ({ kopf, zuhause, tasche });
 const woerter = (s) => String(s).trim().split(/\s+/).filter(Boolean).length;
@@ -301,4 +302,94 @@ test('Kapitel-Auftakt: erst die Insel, dann du – nur was stimmt, kurze Sätze'
   const s = kapitelAuftakt(R);
   assert.ok(s.length <= 4 && s[s.length - 1] === 'Noch ein paar Wochen. Dann kommt die Fähre.');
   for (const z of s) assert.ok(woerter(z) <= 12, z);
+});
+
+// ---- Aufträge (Missionen) ----
+const missionSchritte = (m, R, M) => m.schritte.flatMap((s) => {
+  if (s.art === 'hin' || s.art === 'szene') return [s.szene(R, M)];
+  if (s.art === 'lauf') return [true, false].map((geschafft) => s.nach ? s.nach(R, { geschafft, rest: geschafft ? 9 : 0, zeit: 20 }, M) : []);
+  return [5, 2].map((gefunden) => s.nach ? s.nach(R, { gefunden, von: 5, geschafft: gefunden >= 5, rest: 3, sekunden: 60 }, M) : []);
+});
+test('Aufträge: vollständig beschrieben, kurze Sätze, bekannte Orte, Figuren und Themen', () => {
+  const fehler = [];
+  const bekannt = new Set(['ilda', 'jolie', 'tun', 'mika', 'pit', 'fraenz', 'noor', 'luc', 'yara', 'maelle', 'tiago', 'lucinda', ...Object.keys(FIGUREN), ...Object.keys(STIMMEN)]);
+  assert.ok(MISSIONEN.length >= 5);
+  assert.equal(new Set(MISSIONEN.map((m) => m.id)).size, MISSIONEN.length);
+  for (const t of THEMEN) assert.ok(MISSIONEN.some((m) => m.thema === t.id), 'Thema ohne Auftrag: ' + t.id);
+  for (const m of MISSIONEN) {
+    if (!m.titel || !m.bild || !m.lohn || !bekannt.has(m.von)) fehler.push(m.id + ': Kopf unvollständig');
+    if (!ORTE.some((o) => o.id === m.ort)) fehler.push(m.id + ': Ort ' + m.ort);
+    if (m.thema && !THEMEN.some((t) => t.id === m.thema)) fehler.push(m.id + ': Thema ' + m.thema);
+    if (!Array.isArray(m.wie) || m.wie.length !== 3) fehler.push(m.id + ': Erklärkarte braucht genau drei Sätze');
+    for (const z of [m.kurz, ...(m.wie || [])]) if (woerter(z) > 12) fehler.push(m.id + ': zu lang „' + z + '“');
+    if (!(m.gespraech || []).length) fehler.push(m.id + ': Fragen fürs Gespräch fehlen');
+    if (!m.schritte.some((s) => s.art === 'lauf' || s.art === 'sammeln' || s.art === 'hin')) fehler.push(m.id + ': kein Schritt in der Welt');
+    for (const s of m.schritte) {
+      if (!['hin', 'lauf', 'sammeln', 'szene'].includes(s.art)) fehler.push(m.id + ': Art ' + s.art);
+      if (s.art !== 'szene' && (!s.text || woerter(s.text) > 8)) fehler.push(m.id + ': Schritt-Text fehlt oder zu lang „' + s.text + '“');
+      if (s.ort && !ORTE.some((o) => o.id === s.ort)) fehler.push(m.id + ': Ort ' + s.ort);
+      if ((s.art === 'hin' || s.art === 'lauf') && !s.ort && !s.platz) fehler.push(m.id + ': Schritt ohne Ziel');
+      for (const c of s.cast || []) if (!bekannt.has(c)) fehler.push(m.id + ': Figur ' + c);
+      for (const d of s.dinge || []) if (!ORTE.some((o) => o.id === d.ort)) fehler.push(m.id + ': Ding an ' + d.ort);
+    }
+    // Szenen in allen Lagen durchgehen: ohne Flags und mit jedem Flag, das der Auftrag selbst setzt
+    const flags = new Set();
+    const pruefe = (R) => {
+      const M = { id: m.id, i: 0, sterne: [], versuche: 0 };
+      let spiel = false;
+      for (const steps of missionSchritte(m, R, M)) durchlaufe(steps, R, (s) => {
+        const text = s[0] === 't' || s[0] === 'd' ? s[1] : (s[0] === 's' || s[0] === 'k') ? s[2] : null;
+        if (text && woerter(text) > 12) fehler.push(`${m.id}: zu lang „${text}“`);
+        if (s[0] === 's' && !bekannt.has(s[1])) fehler.push(`${m.id}: unbekannte Figur ${s[1]}`);
+        if (s[0] === 'e') { if (s[1].flag) flags.add(s[1].flag); if (s[1].akte && !AKTE[s[1].akte]) fehler.push(`${m.id}: Akte ${s[1].akte} fehlt`); if (s[1].chat && woerter(s[1].chat.text) > 14) fehler.push(`${m.id}: Chat zu lang`); }
+        if (['spiel', 'merk', 'zuck', 'atem'].includes(s[0])) spiel = true;
+        if (s[0] === 'w') {
+          if (s[1].length < 2 || s[1].length > 4) fehler.push(`${m.id}: ${s[1].length} Wahlen`);
+          for (const w of s[1]) {
+            if (woerter(w.t) > 6) fehler.push(`${m.id}: Wahl zu lang „${w.t}“`);
+            if (!['ruhig', 'nein', 'hilfe', 'hart', 'weg', 'mut'].includes(w.art)) fehler.push(`${m.id}: Art ${w.art}`);
+            if (w.e && w.e.flag) flags.add(w.e.flag);
+            if (w.e && w.e.akte && !AKTE[w.e.akte]) fehler.push(`${m.id}: Akte ${w.e.akte} fehlt`);
+          }
+        }
+      });
+      return spiel;
+    };
+    const spiel = pruefe(neuerLauf({ karten: K() }));
+    // fordernd: jeder Auftrag hat ein Spielteil (Geschick, Merken, Ruhe, Atem) oder einen Lauf gegen die Uhr
+    if (!spiel && !m.schritte.some((s) => s.art === 'lauf' || s.art === 'sammeln')) fehler.push(m.id + ': nichts, was fordert');
+    for (const f of [...flags]) { const R = neuerLauf({ karten: K() }); R.flags[f] = true; pruefe(R); }
+    // mehr als ein Weg: mindestens drei verschiedene Entscheidungen bleiben hängen
+    if (flags.size < 3) fehler.push(m.id + ': zu wenig Entscheidungen mit Folgen (' + flags.size + ')');
+  }
+  for (const f of FOLGEN) for (const z of f.text) if (woerter(z) > 12) fehler.push('Folge zu lang: ' + z);
+  assert.deepEqual(fehler, []);
+});
+test('Aufträge: Ablauf – anbieten, annehmen, Schritte, Sterne, erledigt; Themen nur wenn eingeschaltet', () => {
+  const R = neuerLauf({ karten: K() });
+  const ohne = angebote(R, MISSIONEN, []).map((m) => m.id);
+  assert.ok(ohne.includes('lieferung') && !ohne.includes('mutprobe') && !ohne.includes('nachtwache'), 'Herbst ohne Thema: ' + ohne);
+  assert.equal(angebote(R, MISSIONEN, ['nein'])[0].id, 'mutprobe', 'Themen-Auftrag steht vorn');
+  R.jz = 1;
+  assert.ok(angebote(R, MISSIONEN, []).some((m) => m.id === 'sturm') && angebote(R, MISSIONEN, []).some((m) => m.id === 'nachtwache'));
+  R.jz = 2;
+  assert.ok(!angebote(R, MISSIONEN, []).some((m) => m.id === 'sturm'), 'Sturm gibt es nur im Winter');
+  const m = MISSIONEN.find((x) => x.id === 'lieferung');
+  nimmAn(R, m);
+  assert.deepEqual(angebote(R, MISSIONEN, ['nein', 'wut']), [], 'nur ein Auftrag zur Zeit');
+  assert.equal(aktuell(R, MISSIONEN).s.art, 'hin');
+  let n = 0; while (!weiter(R, MISSIONEN)) n += 1;
+  assert.equal(n, m.schritte.length - 1);
+  R.mission.sterne = [3, 2, 0, 3];
+  assert.equal(sterneFuer(R.mission), 2);
+  assert.equal(schliesse(R), 2);
+  assert.equal(R.mission, null);
+  assert.ok(!angebote(R, MISSIONEN, []).some((x) => x.id === 'lieferung'), 'erledigt kommt nicht wieder');
+  assert.deepEqual(JSON.parse(JSON.stringify(R)).missionen, { lieferung: { sterne: 2, jz: 2, tag: 0 } });
+  // Wertung
+  assert.equal(sterneLauf({ geschafft: true, rest: 10 }, 30), 3); assert.equal(sterneLauf({ geschafft: true, rest: 2 }, 30), 2); assert.equal(sterneLauf({ geschafft: false, rest: 0 }, 30), 0);
+  assert.equal(sterneSammeln({ gefunden: 5, von: 5, rest: 20, sekunden: 60 }), 3); assert.equal(sterneSammeln({ gefunden: 3, von: 5, rest: 0, sekunden: 60 }), 1);
+  assert.equal(sterneTreffer(3, 3), 3); assert.equal(sterneTreffer(2, 3), 2); assert.equal(sterneTreffer(0, 3), 0);
+  assert.ok(zeitFuerStrecke(100, 5, 1.15) > zeitFuerStrecke(100, 5, 0.92));
+  assert.equal(sterneFuer({ sterne: [0, 0] }), 1, 'durchgezogen = mindestens ein Stern');
 });

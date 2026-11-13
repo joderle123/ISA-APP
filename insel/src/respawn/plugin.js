@@ -16,7 +16,9 @@ import { baueStadt } from './stadt.js';
 import { createFahren } from './fahren.js';
 import { createRoller } from './roller.js';
 import { createWettlauf } from './lauf.js';
-import { SITUATIONEN, AUSGAENGE, AKTE, AKTE_LEER, ORTE, ORT_BEI, ORT_AKTIONEN, LEUTE_AKTIONEN, LEUTE_REIHE, FOLGEN, VERPASST, WICHTIG, statistSagt, ideenFuerHeute, kapitelAuftakt } from './daten/index.js';
+import { SITUATIONEN, AUSGAENGE, AKTE, AKTE_LEER, ORTE, ORT_BEI, ORT_AKTIONEN, LEUTE_AKTIONEN, LEUTE_REIHE, FOLGEN, VERPASST, WICHTIG, statistSagt, ideenFuerHeute, kapitelAuftakt, MISSIONEN, THEMEN, FIGUREN } from './daten/index.js';
+import { angebote, nimmAn, aktuell, weiter, schliesse, brichAb, sterneLauf, sterneSammeln, zeitFuerStrecke, themenAn } from './missionen.js';
+import { createSammeln } from './sammeln.js';
 import { neuerLauf, zieheKarten, planeJahreszeit, jahreszeitWechsel, jahreszeit, ausgangFuer, akteFuer, wirke, bond, verteile, folgenAmMorgen, neuerTag,
   JAHRESZEIT_NAME, UHR_NACH_KRAFT, TAGE_JE_JAHRESZEIT } from './run.js';
 
@@ -68,6 +70,10 @@ export default {
     let roller = null;
     const F = createFahren({ game });
     const W = createWettlauf({ game });
+    const SA = createSammeln({ game });
+    // Themen aus dem Skills-Kurs: von der Lehrperson eingeschaltet (Start → „Themen“) oder im Link (?thema=nein,wut)
+    let themenLink = game.params.has('thema') ? String(game.params.get('thema') || '').split(',').map((x) => x.trim()).filter((x) => THEMEN.some((t) => t.id === x)) : null;
+    const themen = () => themenLink || themenAn(meta);
 
     // ---------- Neue Figuren (Skelett, echte Bewegungen): Überzug für die Spielfigur und alle anderen ----------
     const STIL = {
@@ -101,7 +107,8 @@ export default {
       const W = WETTER[R ? jahreszeit(R) : 'sommer'];
       const S = game.plugin('session');
       if (S && S.seasons && S.seasons.overrideId !== W.palette) S.seasons.override(W.palette);
-      if (game.world.sky.setStorm && !B.aktiv) game.world.sky.setStorm(W.sturm);
+      const am = R && R.mission && MISSIONEN.find((m) => m.id === R.mission.id);
+      if (game.world.sky.setStorm && !B.aktiv) game.world.sky.setStorm(am && am.sturm ? am.sturm : W.sturm);
       return W;
     }
     game.addUpdate((dt) => {
@@ -123,24 +130,27 @@ export default {
 
     // ---------- Marken in der Welt (Ereignisse des Tages, Orte) ----------
     const marken = new Map();   // id → { el, x, z, y, greifen: Interaktion }
-    function marke(id, { x, z, text, klein = '', ort = false, radius = 4, onAction, label }) {
+    function marke(id, { x, z, text, klein = '', ort = false, radius = 4, onAction, label, auftrag = false }) {
       weg(id);
       const el = document.createElement('div');
-      el.className = 'rs-marke' + (ort ? ' ist-ort' : '');
+      el.className = 'rs-marke' + (ort ? ' ist-ort' : '') + (auftrag ? ' ist-auftrag' : '');
       el.innerHTML = text + (klein ? `<small>${klein}</small>` : '');
       hud.appendChild(el);
       const greifen = game.interactions.add({ id: 'rs-' + id, x, z, radius, label: label || text, priority: ort ? 0 : 5, onAction });
-      if (!ort && ui.setMarker) ui.setMarker('rs-' + id, x, z, '❗', '#ff5a7a');
+      if (!ort && ui.setMarker) ui.setMarker('rs-' + id, x, z, auftrag ? '⭐' : '❗', auftrag ? '#ffd23f' : '#ff5a7a');
       marken.set(id, { el, x, z, greifen, ort });
     }
     function weg(id) { const m = marken.get(id); if (!m) return; m.el.remove(); m.greifen.remove(); if (!m.ort && ui.removeMarker) ui.removeMarker('rs-' + id); marken.delete(id); }
     const alleWeg = () => { for (const id of [...marken.keys()]) weg(id); };
+    const auftragEl = document.createElement('div'); auftragEl.className = 'rs-auftrag'; auftragEl.style.display = 'none'; hud.appendChild(auftragEl);
     game.addUpdate(() => {
       const cam = game.camera;
+      if (!R) auftragEl.style.display = 'none';
       if (!cam || !marken.size) return;
       const frei = R && !B.aktiv && !ui.overlay.count && !document.querySelector('.rs-voll') && !F.aktiv;   // beim Fahren keine Orts-Schilder (sie lagen auf dem Wagen)
       // „Schlafen gehen“ lag sonst mitten über Sprechblasen und Auswahl (sobald die Kraft leer ist und man noch redet)
       if (knopf) knopf.style.display = frei && !ui.bubbles.current && !ui.choices.open ? '' : 'none';
+      auftragEl.style.display = frei && R.mission && auftragEl.textContent ? '' : 'none';
       for (const m of marken.values()) {
         const d = Math.hypot(m.x - player.position.x, m.z - player.position.z);
         if (!frei || (m.ort && d > 40)) { m.el.style.display = 'none'; continue; }
@@ -177,7 +187,7 @@ export default {
       if (beschaeftigt || !R || !tagEnde || B.aktiv || ui.overlay.count) return false;
       beschaeftigt = true;
       try { await f(); } catch (e) { console.error('[respawn]', e); } finally { beschaeftigt = false; }
-      if (R) { O.status(R); marken_(); sichern(); if (stadt && stadt.zeigeSpuren) stadt.zeigeSpuren(R.flags); events.emit('respawn:frei', { kraft: R.kraft, tag: R.tag, jz: R.jz }); }
+      if (R) { O.status(R); auftragAnzeige(); marken_(); sichern(); if (stadt && stadt.zeigeSpuren) stadt.zeigeSpuren(R.flags); events.emit('respawn:frei', { kraft: R.kraft, tag: R.tag, jz: R.jz }); }
       return true;
     }
     async function schlafen() {
@@ -237,14 +247,101 @@ export default {
       await B.frei(a.szene(R, { wer, zeugen }), R, { wer, zeugen });
       kraftWeg(a.kraft || 0);
     }
+    // ---------- Aufträge (Missionen) ----------
+    const ortMit = (id) => ORTE.find((o) => o.id === id);
+    // Wo ein Schritt spielt: an einem Ort aus ORTE (`ort`) oder an einer Stelle der Insel (`platz`)
+    const BUEHNE = { leuchtturm: { richtung: -Math.PI / 2 }, zuhause: { versatz: { x: 2.6, z: -5.5 } } };
+    function zielVon(s) {
+      if (s.platz) { const o = ortVon(s.platz); return { x: o.x, z: o.z, name: s.name || 'Ziel', site: s.platz, steh: stehplatz(o, null), extra: {} }; }
+      const E = ortMit(s.ort), o = ortVon(E.ort);
+      return { x: o.x, z: o.z, name: s.name || E.name, site: E.ort, steh: stehplatz(o, E), extra: BUEHNE[E.id] || {} };
+    }
+    const tempo = () => { const a = ortVon(ortMit('brunnen').ort), b = ortVon(ortMit('leuchtturm').ort); return Math.hypot(a.x - b.x, a.z - b.z) / 29; };
+    const MI = () => aktuell(R, MISSIONEN);
+    const werHeisst = (id) => (FIGUREN[id] && FIGUREN[id].name) || npcs.nameOf(id);
+    function auftragAnzeige() {
+      const a = R && MI();
+      auftragEl.innerHTML = a ? `<b>⭐ ${a.m.titel}</b>${a.s.text || ''}` : '';
+      if (!a) auftragEl.style.display = 'none';
+    }
+    async function auftragBuehne(m, s, ziel, schritte) {
+      if (!schritte || !schritte.length) return;
+      if (ziel) await B.spiele({ id: 'm:' + m.id, titel: m.titel, ort: ziel.site, uhr: s.uhr, cast: s.cast || [], ...ziel.extra, szene: () => schritte }, R);
+      else await B.frei(schritte, R);
+      uhr();
+    }
+    const nochmal = async () => (await O.wahl({ frage: 'Nicht geschafft. Noch einmal versuchen?', items: [{ label: 'Ja. Nochmal.', art: 'mut' }, { label: 'Nein. Weiter.', art: 'weg' }], sekunden: 0, standard: 1 })).index === 0;
+    // Läuft, bis ein „hin“-Schritt auf dich wartet oder der Auftrag durch ist. vonMarke = du stehst an der Marke.
+    async function auftragLaufen(vonMarke = false) {
+      for (;;) {
+        const a = MI(); if (!a) return;
+        const { m, M, s } = a;
+        if (s.wenn && !s.wenn(R)) { if (weiter(R, MISSIONEN)) return auftragEnde(m); continue; }
+        if (s.art === 'hin' && !vonMarke) { auftragAnzeige(); marken_(); return; }
+        vonMarke = false;
+        const ziel = s.ort || s.platz ? zielVon(s) : null;
+        auftragAnzeige();
+        if (s.art === 'hin' || s.art === 'szene') await auftragBuehne(m, s, ziel, s.szene(R, M));
+        else if (s.art === 'lauf' || s.art === 'sammeln') {
+          await O.erzaehler(s.text, { kurz: true });
+          let erg = null, sek = 0;
+          for (;;) {
+            const p = player.position, start = { x: p.x, z: p.z };
+            const fk = fn(s.faktor, R) || 1.15, mehr = 1 + 0.25 * M.versuche;
+            O.status(R);
+            if (s.art === 'lauf') {
+              sek = zeitFuerStrecke(Math.hypot(p.x - ziel.x, p.z - ziel.z), tempo(), fk * mehr);
+              erg = (await W.starte({ ziel: { x: ziel.steh.x, z: ziel.steh.z }, sekunden: sek, name: ziel.name })) || { geschafft: false, zeit: 0, rest: 0 };
+            } else {
+              // Dinge liegen an Orten (mit kleinem Versatz); was im Wasser läge, rückt an den Ort selbst
+              const dinge = s.dinge.map((d) => { const E = ortMit(d.ort), q = stehplatz(ortVon(E.ort), E); let x = q.x + (d.dx || 0), z = q.z + (d.dz || 0); if (game.world.island.getHeight(x, z) < 0.5) { x = q.x; z = q.z; } return { x, z }; });
+              let weg_ = 0, c = { x: p.x, z: p.z };
+              for (const d of dinge) { weg_ += Math.hypot(d.x - c.x, d.z - c.z); c = d; }
+              sek = zeitFuerStrecke(weg_, tempo(), fk * mehr);
+              erg = (await SA.starte({ dinge, sekunden: sek, bild: s.bild, name: s.name })) || { gefunden: 0, von: dinge.length, geschafft: false, rest: 0, sekunden: sek };
+            }
+            if (erg.geschafft || M.versuche >= 1 || test || !(await nochmal())) break;
+            M.versuche += 1;
+            player.teleport(start.x, start.z, player.yaw || 0);
+          }
+          if (roller && roller.aktiv) roller.ab();
+          M.sterne.push(s.art === 'lauf' ? sterneLauf(erg, sek) : sterneSammeln(erg));
+          R.log.push({ mission: m.id, schritt: M.i, erg });
+          events.emit('respawn:auftrag', { id: m.id, was: s.art, erg });
+          if (s.nach) await auftragBuehne(m, s, s.cast && ziel ? ziel : null, s.nach(R, erg, M));
+        }
+        if (weiter(R, MISSIONEN)) return auftragEnde(m);
+        sichern();
+      }
+    }
+    async function auftragEnde(m) {
+      const n = schliesse(R);
+      meta.missionen = meta.missionen || {};
+      meta.missionen[m.id] = Math.max(meta.missionen[m.id] || 0, n);
+      schreib(META, meta);
+      auftragAnzeige();
+      await O.auftragFertig({ m, sterne: n });
+      events.emit('respawn:auftrag', { id: m.id, was: 'fertig', sterne: n });
+      kraftWeg(1);
+    }
+    async function auftragAnbieten(m) {
+      if (R.kraft < 1) { await O.erzaehler('Dafür bist du heute zu müde.', { kurz: true }); return; }
+      const ja = await O.auftragKarte({ m, von: werHeisst(m.von), thema: THEMEN.find((t) => t.id === m.thema) });
+      if (!ja) return;
+      nimmAn(R, m);
+      events.emit('respawn:auftrag', { id: m.id, was: 'an' });
+      await auftragLaufen();
+    }
     async function menue(frage, liste) {
       const r = await O.wahl({ frage, items: liste.map((x) => ({ label: x.t, art: x.art, sub: x.sub || '' })).concat([{ label: 'Nichts.', art: 'weg' }]), sekunden: 0, standard: liste.length });
       return r.index < liste.length ? liste[r.index] : null;
     }
     const ortMenue = (ort) => frei(async () => {
       const liste = ort.aktionen.map((id) => ({ id, ...ORT_AKTIONEN[id] })).filter((a) => !a.wenn || a.wenn(R)).map((a) => ({ ...a, sub: a.kraft ? '⚡ kostet Kraft' : '' }));
-      const w = await menue(ort.name, liste);
-      if (w) await ortAktion(ort, w.id);
+      const neu = angebote(R, MISSIONEN, themen()).filter((m) => m.ort === ort.id).map((m) => ({ id: '_m:' + m.id, t: '⭐ Auftrag: ' + m.titel, art: 'mut', sub: m.thema ? 'Thema · neuer Auftrag' : 'neuer Auftrag' }));
+      const w = await menue(ort.name, neu.concat(liste));
+      if (w && w.id.startsWith('_m:')) await auftragAnbieten(MISSIONEN.find((m) => m.id === w.id.slice(3)));
+      else if (w) await ortAktion(ort, w.id);
     });
     // Menü an einer Person: höchstens sechs Kacheln. Das Gemeine liegt eine Ebene tiefer („Gemein sein …“).
     const GEMEIN = ['laestern', 'aufziehen', 'filmen', 'schubsen'];
@@ -281,12 +378,21 @@ export default {
         soll.add('e-' + id);
         if (!marken.has('e-' + id)) marke('e-' + id, { x: o.x, z: o.z, text: '❗ ' + s.titel, radius: 5, label: s.titel, onAction: () => frei(() => ereignis(id)) });
       }
+      // Auftrag: der nächste Ort, an den du gehen sollst
+      const am = MI();
+      if (am && am.s.art === 'hin') {
+        const z = zielVon(am.s), mid = 'm-' + am.m.id + '-' + am.M.i;
+        soll.add(mid);
+        if (!marken.has(mid)) marke(mid, { x: z.x, z: z.z, text: '⭐ ' + am.s.text, radius: 6, label: am.m.titel, auftrag: true, onAction: () => frei(() => auftragLaufen(true)) });
+      }
+      const neu = angebote(R, MISSIONEN, themen());
       for (const ort of ORTE) {
-        const o = ortVon(ort.ort);
+        const o = ortVon(ort.ort), stern = neu.some((m) => m.ort === ort.id);
         // Orte, an denen es gerade nichts zu tun gibt, zeigen keine Marke
-        if (!ort.aktionen.some((id) => { const a = ORT_AKTIONEN[id]; return a && (!a.wenn || a.wenn(R)); })) continue;
-        soll.add('o-' + ort.id);
-        if (!marken.has('o-' + ort.id)) marke('o-' + ort.id, { x: o.x, z: o.z, text: ort.bild + ' ' + ort.name, ort: true, radius: 5, label: ort.name, onAction: () => ortMenue(ort) });
+        if (!stern && !ort.aktionen.some((id) => { const a = ORT_AKTIONEN[id]; return a && (!a.wenn || a.wenn(R)); })) continue;
+        const oid = 'o-' + ort.id + (stern ? '-stern' : '');
+        soll.add(oid);
+        if (!marken.has(oid)) marke(oid, { x: o.x, z: o.z, text: ort.bild + ' ' + ort.name + (stern ? ' ⭐' : ''), ort: true, radius: 5, label: ort.name, onAction: () => ortMenue(ort) });
       }
       for (const id of [...marken.keys()]) if (!soll.has(id)) weg(id);
     }
@@ -303,6 +409,10 @@ export default {
       ereignisse: heute().map((id) => { const s = sit(id); const o = ORTE.find((x) => x.ort === fn(s.ort, R)); return { id, titel: s.titel, wo: o ? o.name : 'auf der Insel' }; }),
       ideen: ideenFuerHeute(R).map((i) => { const o = ORTE.find((x) => x.id === i.ort); return { ort: i.ort, text: i.text, bild: o.bild, wo: o.name }; }),
       orte: ORTE.map((o) => ({ id: o.id, name: o.name, bild: o.bild })),
+      auftrag: (() => { const a = MI(); if (!a) return null; const z = a.s.ort || a.s.platz ? zielVon(a.s) : null; return { titel: a.m.titel, bild: a.m.bild, text: a.s.text || '', wo: a.s.art === 'hin' && z ? z.name : 'jetzt weitermachen', hin: true }; })(),
+      angebote: angebote(R, MISSIONEN, themen()).map((m) => ({ id: m.id, titel: m.titel, bild: m.bild, kurz: m.kurz, ort: m.ort, wo: ortMit(m.ort).name, thema: !!m.thema, von: werHeisst(m.von) })),
+      erledigt: Object.keys(R.missionen || {}).map((id) => { const m = MISSIONEN.find((x) => x.id === id); return m ? { titel: m.titel, bild: m.bild, sterne: R.missionen[id].sterne } : null; }).filter(Boolean),
+      abbrechen() { if (R && R.mission && !beschaeftigt) { brichAb(R); auftragAnzeige(); marken_(); sichern(); O.melde('Auftrag abgebrochen.'); } },
       // Wo ist jemand gerade? Der nächste Ort (höchstens 30 m entfernt) – oder „unterwegs“; null = nicht zu sehen
       wo(id) {
         const n = npcs.get(id);
@@ -313,7 +423,11 @@ export default {
       },
       hin(ref) {
         const [art, id] = ref.split(':');
-        const ziel = art === 'e' ? fn(sit(id).ort, R) : (ORTE.find((x) => x.id === id) || {}).ort;
+        const am = art === 'm' ? MI() : null;
+        // Auftrag, der nicht auf einen Ort wartet (z. B. nach dem Neuladen mitten im Wettlauf): einfach weitermachen
+        if (am && am.s.art !== 'hin') { frei(() => auftragLaufen()); return; }
+        if (art === 'm' && !(am && (am.s.ort || am.s.platz))) return;
+        const ziel = am ? zielVon(am.s).site : art === 'e' ? fn(sit(id).ort, R) : (ORTE.find((x) => x.id === id) || {}).ort;
         const o = ortVon(ziel);
         const p = stehplatz(o, ORTE.find((x) => x.ort === ziel));
         player.teleport(p.x, p.z, p.a);
@@ -428,7 +542,9 @@ export default {
     async function hauptmenue() {
       bunt();
       const gespeichert = lies(LAUF, null);
-      const was = await O.start({ meta, laufend: !!(gespeichert && !gespeichert.fertig) });
+      meta.themen = themenAn(meta).filter((x) => THEMEN.some((t) => t.id === x));
+      const was = await O.start({ meta, laufend: !!(gespeichert && !gespeichert.fertig),
+        themen: { themen: THEMEN, an: themen().slice(), anzahl: (id) => MISSIONEN.filter((m) => m.thema === id).length, speichern: (an) => { themenLink = null; meta.themen = an.slice(); schreib(META, meta); } } });
       if (was === 'aussehen') {
         if (ui.stil && ui.stil.open) { ui.stil.open({ first: !game.avatar.isSet }); const ab = events.on('ui:overlay', (e) => { if (e && !e.open) { ab(); setTimeout(hauptmenue, 200); } }); }
         else hauptmenue();
@@ -442,7 +558,7 @@ export default {
     if (game.started) los(); else events.on('game:start', los);
 
     return {
-      get lauf() { return R; }, get meta() { return meta; }, get frei() { return !!(R && tagEnde && !beschaeftigt && !B.aktiv); },
+      get lauf() { return R; }, get meta() { return meta; }, get auftrag() { const a = R && MI(); return a ? { id: a.m.id, i: a.M.i, art: a.s.art, text: a.s.text } : null; }, auftragAn(id) { const m = MISSIONEN.find((x) => x.id === id); return m && R && !R.mission ? frei(async () => { nimmAn(R, m); await auftragLaufen(); }) : false; }, auftragWeiter() { return frei(() => auftragLaufen(true)); }, get themen() { return themen(); }, get frei() { return !!(R && tagEnde && !beschaeftigt && !B.aktiv); },
       get heute() { return R ? heute() : []; },
       situationen: SITUATIONEN, ausgaenge: AUSGAENGE, orte: ORTE,
       // Probe: eine Figur mit Skelett neben die Spielfigur stellen (Grafik-Vergleich alt/neu)
