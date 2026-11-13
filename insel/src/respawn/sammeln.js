@@ -69,5 +69,5 @@ export function createSammeln({ game }) {
   }, { order: 61 });
   events.on('respawn:weiter', () => { if (lauf && lauf.t > 0.4) beende(); });
 
-  return { starte, beende, get aktiv() { return !!lauf; } };
+  return { starte, beende, get aktiv() { return !!lauf; }, get offen() { return lauf ? lauf.liste.filter((d) => d.da).map((d) => ({ x: d.x, z: d.z })) : []; }, get stand() { return lauf ? { sekunden: lauf.sekunden, t: lauf.t } : null; } };
 }

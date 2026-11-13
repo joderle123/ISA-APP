@@ -558,7 +558,7 @@ export default {
     if (game.started) los(); else events.on('game:start', los);
 
     return {
-      get lauf() { return R; }, get meta() { return meta; }, get auftrag() { const a = R && MI(); return a ? { id: a.m.id, i: a.M.i, art: a.s.art, text: a.s.text } : null; }, auftragAn(id) { const m = MISSIONEN.find((x) => x.id === id); return m && R && !R.mission ? frei(async () => { nimmAn(R, m); await auftragLaufen(); }) : false; }, auftragWeiter() { return frei(() => auftragLaufen(true)); }, get themen() { return themen(); }, get frei() { return !!(R && tagEnde && !beschaeftigt && !B.aktiv); },
+      get lauf() { return R; }, get meta() { return meta; }, get auftrag() { const a = R && MI(); return a ? { id: a.m.id, i: a.M.i, art: a.s.art, text: a.s.text } : null; }, auftragAn(id) { const m = MISSIONEN.find((x) => x.id === id); return m && R && !R.mission ? frei(async () => { nimmAn(R, m); await auftragLaufen(); }) : false; }, auftragWeiter() { return frei(() => auftragLaufen(true)); }, get missionenListe() { return MISSIONEN.map((m) => ({ id: m.id, titel: m.titel, thema: m.thema || '', ort: m.ort })); }, get ziele() { return W.aktiv ? [W.ziel] : SA.aktiv ? SA.offen : []; }, get uhrStand() { return W.aktiv ? W.stand : SA.aktiv ? SA.stand : null; }, get themen() { return themen(); }, get frei() { return !!(R && tagEnde && !beschaeftigt && !B.aktiv); },
       get heute() { return R ? heute() : []; },
       situationen: SITUATIONEN, ausgaenge: AUSGAENGE, orte: ORTE,
       // Probe: eine Figur mit Skelett neben die Spielfigur stellen (Grafik-Vergleich alt/neu)

@@ -37,5 +37,5 @@ export function createWettlauf({ game }) {
   }, { order: 61 });
   events.on('respawn:weiter', () => { if (lauf && lauf.t > 0.4) beende(false); });
 
-  return { starte, beende, get aktiv() { return !!lauf; } };
+  return { starte, beende, get aktiv() { return !!lauf; }, get ziel() { return lauf ? { x: lauf.ziel.x, z: lauf.ziel.z } : null; }, get stand() { return lauf ? { sekunden: lauf.sekunden, t: lauf.t } : null; } };
 }
