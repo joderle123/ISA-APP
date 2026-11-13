@@ -22,6 +22,10 @@ export function iconImage(name, color = '#ffffff') {
   return img;
 }
 
+// Alle Namensschilder auf einmal ausblenden (z. B. im Wettlauf: nur Weg und Uhr zählen)
+let alleAus = false;
+export function nameTagsAus(aus) { alleAus = !!aus; }
+
 export function createNameTag({ name = '', icon = 'punkt', color = '#ffd166', pill = 30, text = 15 } = {}) {
   if (!hasDOM) return { sprite: null, set() {}, update() {}, dispose() {}, name, get hidden() { return false; } };
   const canvas = document.createElement('canvas');
@@ -101,7 +105,7 @@ export function createNameTag({ name = '', icon = 'punkt', color = '#ffd166', pi
       cur.dist = dist;
       cur.elig = !cur.hidden && dist < far && dist >= near;
       const on = cur.elig && cur.dcv > 0.03;
-      sprite.visible = on;
+      sprite.visible = on && !alleAus;
       if (on) mat.opacity = Math.max(0, Math.min(1, (far - dist) / fade)) * cur.dcv;
     },
     // Entflechten (siehe declutterTags): Pillen-Maße in Bildschirm-Pixeln und weiches Aus-/Einblenden bei Überlappung

@@ -152,3 +152,37 @@ man darf fast alles tun (auch Mist), keine Waffen, kein Gefängnis. Die Folgen s
   - **Kapitel-Auftakt** (`daten/welt.js` → `kapitelAuftakt(R)`, gezeigt nach der Titelkarte in `plugin.js`): zwei bis vier kurze
     Sätze – erst die Insel („Über Nacht kam der Schnee.“), dann der eigene Stand: wer einen grüßt, wer wegschaut, ob eine Akte
     da ist. Jede Zeile stimmt mit dem Lauf überein.
+
+## Aufträge (Missionen) – Stand 13.11.2026
+
+Aufträge sind größer als eine freie Aktion: mehrere Schritte in der Welt, ein Teil, der etwas abverlangt (Zeit, Geschick,
+Merken, Ruhe, Atem), und mittendrin Entscheidungen, die bleiben. Daten: `src/respawn/daten/missionen.js` (Format im Kopf der
+Datei), Ablauf: `src/respawn/missionen.js`, Anzeige: `plugin.js` (`auftragLaufen`, `marken_`).
+
+| Auftrag | ab | Worum es geht | Was fordert |
+|---|---|---|---|
+| Die Lieferung | Herbst | Job, Zeitdruck, ein offenes Paket | Wettlauf (3 Adressen) |
+| Nachtwache | Winter | Wegschauen für Geld oder stehen bleiben | Merken, Nicht zucken, Wettlauf |
+| Sturm (nur Winter) | Winter | Tiago hat Panik am Leuchtturm | Sammeln im Wind, Atem |
+| Die Mutprobe (Thema „Nein sagen“) | Herbst | Druck in der Gruppe | Nicht zucken, Geschick |
+| Kurz vorm Platzen (Thema „Wut und Stopp“) | Herbst | Luc wirft den Stapel um | Sammeln, Geschick, Atem |
+| **Tun fehlt** | Winter | Tun ist weg; finden, zuhören, wem sagt man es | Sammeln (4 Spuren), „Zuhören. Nicht dazwischenreden.“ |
+| **Der Hafenlauf** | Frühling | Staffel mit Luc; er kennt eine Abkürzung | Geschick (Übergabe), Wettlauf – fair ist knapp |
+| **Lucindas Garten** | Sommer | Verantwortung, Hilfe holen, Mika am Zaun, ehrlich sein | Merken, Sammeln in der Hitze, Nicht zucken |
+| **Leo schreibt** (Thema „Sicher im Netz“) | Herbst | Ein Fremder im Chat: Geschenk, Geheimnis, Foto | Merken, Sammeln, „Nicht antworten. Auch wenn es piept.“ |
+| **Das kaputte Board** (Thema „Streit klären“) | Herbst | Zwei Seiten hören, nicht richten, Lösung finden | Merken, Sammeln, „Ausreden lassen.“ |
+
+- **Folgen am Morgen danach:** `MISSION_FOLGEN` (z. B. Ilda findet Tun durchgefroren; Fußspuren im Beet; ein Korb vor Mikas Tür).
+- **„Dein Weg“** (`MISSION_WEG`, `wegVon(R, id)`): Die Karte „Auftrag geschafft“ zeigt bis zu drei Sätze, was man getan hat –
+  ohne Urteil („Du hast zugehört.“ · „Du hast Ilda geholt.“). Jede und jeder hat einen anderen Weg auf der Karte: guter
+  Einstieg ins Gespräch. Die Fragen dazu stehen je Auftrag in `gespraech` (nur für die Lehrperson).
+- **Ruhiges Bild:** Im Wettlauf und beim Sammeln sind Orts-Schilder, Auftrags-Knopf und Namensschilder aus; die Uhr zeigt
+  Pfeil, Zeit und Meter, am Ziel steht eine Lichtsäule. Sonst gilt: Schilder liegen nie in der Leiste oben, nie über dem Rand
+  und nie übereinander (Auftrag vor Ereignis vor Ort); das Ziel-Schild nennt nur den Ort, der Satz steht in der Anzeige links.
+- **Zielbogen:** Im Wettlauf steht am Ziel ein Bogen mit kariertem Band (`lauf.js` → `zielbogen`), dazu die Lichtsäule.
+- **Das Ende erinnert sich auch an Aufträge** (`situationen-2.js` → `ECHO`): Tun („Am Leuchtturm hast du zugehört.“), Jolie,
+  Mika, Pit, Fränz – und neu am Steg: Tiago und Oma Lucinda, wenn es mit ihnen gut lief.
+- **Heft für die Lehrperson:** `node tools/respawn-heft.mjs` schreibt `docs/RESPAWN-Auftraege.md` (je Auftrag: Ablauf, was er
+  fordert, mögliche Wege, Fragen für danach; Themen mit Link `?thema=…`).
+- **Prüfen:** `node --test tests/unit/*.mjs` (Regeln für Länge, Figuren, Orte, Flags) und je Auftrag ein Testspieler:
+  `NUR=<id> GRENZE=380 node tests/scenarios/respawn-auftrag.mjs` (läuft die Ziele an, klickt die Szenen durch).

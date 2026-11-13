@@ -346,12 +346,13 @@ export function createOberflaeche({ game }) {
       const ab1 = game.events.on('respawn:weiter', () => zu(false)), ab2 = game.events.on('respawn:auftrag-ja', () => zu(true));
     });
   }
-  // Nach dem Auftrag: Sterne (1–3) und ein Satz dazu
-  function auftragFertig({ m, sterne }) {
+  // Nach dem Auftrag: Sterne (1–3), ein Satz dazu und „Dein Weg“ – was du entschieden hast (ohne Urteil)
+  function auftragFertig({ m, sterne, weg = [] }) {
     return new Promise((resolve) => {
       const satz = sterne >= 3 ? 'Stark. Besser geht es kaum.' : sterne === 2 ? 'Gut gemacht.' : 'Geschafft. Das zählt.';
       const v = voll('ist-auftrag ist-fertig', `<div class="rs-ak"><small>Auftrag geschafft</small><h2><span>${m.bild}</span> ${esc(m.titel)}</h2>
         <p class="rs-sterne" aria-label="${sterne} von 3 Sternen">${'★'.repeat(sterne)}<i>${'★'.repeat(3 - sterne)}</i></p><p class="rs-lead">${satz}</p>
+        ${weg.length ? `<div class="rs-weg"><small>Dein Weg</small><ul>${weg.map((t) => `<li>${esc(t)}</li>`).join('')}</ul></div>` : ''}
         <div class="rs-knoepfe"><button type="button" class="ist-haupt" data-a="ok">Weiter</button></div></div>`);
       const zu = () => { ab(); v.zu(); resolve(); };
       v.el.addEventListener('click', (e) => { if (e.target.closest('[data-a]')) zu(); });

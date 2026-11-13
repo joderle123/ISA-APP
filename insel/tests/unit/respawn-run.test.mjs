@@ -3,7 +3,7 @@ import { test } from 'node:test';
 import { angebote, nimmAn, aktuell, weiter, schliesse, sterneFuer, sterneLauf, sterneSammeln, sterneTreffer, zeitFuerStrecke } from '../../src/respawn/missionen.js';
 import assert from 'node:assert/strict';
 import { neuerLauf, wirke, wahlen, zeitFuer, ohneWahl, planeJahreszeit, jahreszeitWechsel, ausgangFuer, akteFuer, verschlaeft, hatKarte, verteile, folgenAmMorgen, neuerTag, JAHRESZEITEN } from '../../src/respawn/run.js';
-import { SITUATIONEN, AUSGAENGE, AKTE, KARTEN, FIGUREN, STIMMEN, ORTE, ORT_BEI, ORT_AKTIONEN, LEUTE_AKTIONEN, LEUTE_REIHE, FOLGEN, VERPASST, WICHTIG, statistSagt, TRATSCH_ZEILEN, ideenFuerHeute, IDEEN_ZEILEN, kapitelAuftakt, KAPITEL_ZEILEN, MISSIONEN, THEMEN } from '../../src/respawn/daten/index.js';
+import { SITUATIONEN, AUSGAENGE, AKTE, KARTEN, FIGUREN, STIMMEN, ORTE, ORT_BEI, ORT_AKTIONEN, LEUTE_AKTIONEN, LEUTE_REIHE, FOLGEN, VERPASST, WICHTIG, statistSagt, TRATSCH_ZEILEN, ideenFuerHeute, IDEEN_ZEILEN, kapitelAuftakt, KAPITEL_ZEILEN, MISSIONEN, THEMEN, MISSION_WEG, wegVon } from '../../src/respawn/daten/index.js';
 
 const K = (kopf = 'zuendschnur', zuhause = 'oma', tasche = 'ok') => ({ kopf, zuhause, tasche });
 const woerter = (s) => String(s).trim().split(/\s+/).filter(Boolean).length;
@@ -364,6 +364,24 @@ test('Aufträge: vollständig beschrieben, kurze Sätze, bekannte Orte, Figuren 
   }
   for (const f of FOLGEN) for (const z of f.text) if (woerter(z) > 12) fehler.push('Folge zu lang: ' + z);
   assert.deepEqual(fehler, []);
+});
+test('Aufträge: „Dein Weg“ – jeder Auftrag hat Sätze, jeder Satz ist kurz und hängt an einer echten Entscheidung', () => {
+  const fehler = [];
+  for (const m of MISSIONEN) {
+    const weg = MISSION_WEG[m.id] || [];
+    if (weg.length < 3) fehler.push(m.id + ': weniger als drei Weg-Sätze');
+    const quelle = m.schritte.map((s) => String(s.szene || '') + String(s.nach || '')).join('\n');
+    for (const [f, t] of weg) {
+      if (!quelle.includes("'" + f + "'")) fehler.push(m.id + ': Flag ' + f + ' wird nie gesetzt');
+      if (woerter(t) > 8) fehler.push(m.id + ': Weg-Satz zu lang „' + t + '“');
+    }
+  }
+  for (const id of Object.keys(MISSION_WEG)) if (!MISSIONEN.some((m) => m.id === id)) fehler.push('Weg ohne Auftrag: ' + id);
+  assert.deepEqual(fehler, []);
+  const R = neuerLauf({ karten: K() });
+  R.flags['suche.zugehoert'] = true; R.flags['suche.ilda'] = true;
+  assert.deepEqual(wegVon(R, 'suche'), ['Du hast zugehört.', 'Du hast Ilda geholt.']);
+  assert.deepEqual(wegVon(R, 'hitze'), []);
 });
 test('Aufträge: Ablauf – anbieten, annehmen, Schritte, Sterne, erledigt; Themen nur wenn eingeschaltet', () => {
   const R = neuerLauf({ karten: K() });

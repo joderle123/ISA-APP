@@ -24,3 +24,12 @@ Dazu seit dem 13.11.2026 (gleiche Quelle, gleiche Lizenz **CC0 1.0**): „Mini S
 Dazu „Nature Kit“ (Beete, Gemüse, Blumen für Lucindas Garten; gleiche Quelle, **CC0 1.0**) – Namen im Modell: `natur/…`;
 Blatt- und Erdfarben sind an die Insel angepasst (`NATUR_FARBE` in `stadt.py`).
 Die Straßen selbst sind keine Bausteine: `stadt.js` legt sie als Band auf die Wege der Insel.
+
+Dazu seit dem 13.11.2026 abends (gleiche Quelle kenney.nl, gleiche Lizenz **CC0 1.0**): „Pirate Kit“ (Segelschiffe, Wrack, Fässer,
+Kisten, Fahnen, Felsen – `hafen/…`), „Survival Kit“ (Feuerstelle, Stämme, Wegweiser, Bettrollen, Kisten – `lager/…`),
+„Fantasy Town Kit“ (Marktstände, Karren, Laternen, Hecken – `platz/…`), „Holiday Kit“ (Schneemänner, geschmückte Bäume,
+Geschenke, Schlitten, Bank – `winter/…`), „Racing Kit“ (Zeltdächer, Fahnen – `fest/…`), „City Kit (Industrial)“ (Container,
+Wasserturm, Windrad – `werk/…`) und weitere Teile aus dem „Nature Kit“ (Zelte, Kanu, Stämme, Pilze, Blumen).
+Laden: `kenney.nl/download-link/<hex von „assets/<name>“>` liefert die Adresse der ZIP-Datei.
+Nicht ladbar aus dieser Umgebung: Pakete von Quaternius (liegen auf Google Drive) – z. B. „Ultimate Modular Women“ für
+Frauen-Figuren müsste von Hand heruntergeladen und hochgeladen werden.

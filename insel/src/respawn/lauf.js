@@ -22,6 +22,28 @@ export function lichtsaeule(game, x, z, hoehe = 34, farbe = 0x7ed957) {
   return { mesh: m, weg() { game.scene.remove(m); geo.dispose(); mat.dispose(); }, puls(t) { mat.opacity = 0.26 + 0.1 * Math.sin(t * 3); } };
 }
 
+// Zielbogen: zwei Pfosten und ein kariertes Band quer zur Laufrichtung – man sieht, wo das Rennen endet
+export function zielbogen(game, x, z, vonX, vonZ) {
+  const y = game.world.island.getHeight ? game.world.island.getHeight(x, z) : 0;
+  const g = new THREE.Group(); g.name = 'rs-zielbogen';
+  const holz = new THREE.MeshLambertMaterial({ color: 0xf4efe6 });
+  const pfosten = new THREE.CylinderGeometry(0.12, 0.14, 3.6, 8);
+  for (const sx of [-2.6, 2.6]) { const m = new THREE.Mesh(pfosten, holz); m.position.set(sx, 1.8, 0); g.add(m); }
+  let tex = null;
+  if (typeof document !== 'undefined') {
+    const c = document.createElement('canvas'); c.width = 256; c.height = 32;
+    const k = c.getContext('2d');
+    for (let i = 0; i < 16; i++) for (let j = 0; j < 2; j++) { k.fillStyle = (i + j) % 2 ? '#1b1736' : '#ffffff'; k.fillRect(i * 16, j * 16, 16, 16); }
+    tex = new THREE.CanvasTexture(c); tex.magFilter = THREE.NearestFilter; tex.colorSpace = THREE.SRGBColorSpace;
+  }
+  const band = new THREE.Mesh(new THREE.PlaneGeometry(5.2, 0.65), new THREE.MeshBasicMaterial({ map: tex, color: tex ? 0xffffff : 0xffd23f, side: THREE.DoubleSide }));
+  band.position.set(0, 3.25, 0); g.add(band);
+  g.position.set(x, y, z);
+  g.rotation.y = Math.atan2(x - vonX, z - vonZ);   // quer zur Richtung, aus der man kommt
+  game.scene.add(g);
+  return { gruppe: g, weg() { game.scene.remove(g); pfosten.dispose(); holz.dispose(); band.geometry.dispose(); band.material.dispose(); if (tex) tex.dispose(); } };
+}
+
 export function createWettlauf({ game }) {
   const { player, events, ui } = game;
   let lauf = null;
@@ -33,7 +55,7 @@ export function createWettlauf({ game }) {
   function starte({ ziel, sekunden = 26, name = 'Ziel' }) {
     if (lauf) return Promise.resolve(null);
     return new Promise((fertig) => {
-      lauf = { ziel, sekunden, name, t: 0, fertig, saeule: lichtsaeule(game, ziel.x, ziel.z) };
+      lauf = { ziel, sekunden, name, t: 0, fertig, saeule: lichtsaeule(game, ziel.x, ziel.z), bogen: zielbogen(game, ziel.x, ziel.z, game.player.position.x, game.player.position.z) };
       if (ui.setMarker) ui.setMarker('rs-lauf', ziel.x, ziel.z, '🏁', '#7ed957');
       anzeige.style.display = '';
     });
@@ -43,6 +65,7 @@ export function createWettlauf({ game }) {
     lauf = null;
     anzeige.style.display = 'none';
     if (l.saeule) l.saeule.weg();
+    if (l.bogen) l.bogen.weg();
     if (ui.removeMarker) ui.removeMarker('rs-lauf');
     l.fertig({ geschafft: !!geschafft, zeit: +l.t.toFixed(1), rest: Math.max(0, +(l.sekunden - l.t).toFixed(1)) });
   }

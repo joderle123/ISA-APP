@@ -1,4 +1,5 @@
-# Kenney-Bausätze (City Kit Suburban/Commercial/Roads, Car Kit, Mini Skate, Watercraft Kit, Mini Market, Nature Kit; kenney.nl, CC0) → eine GLB-Datei für RESPAWN.
+# Kenney-Bausätze (City Kit Suburban/Commercial/Roads/Industrial, Car Kit, Mini Skate, Watercraft Kit, Mini Market, Nature Kit,
+# Pirate Kit, Survival Kit, Fantasy Town Kit, Holiday Kit, Racing Kit; kenney.nl, CC0) → eine GLB-Datei für RESPAWN.
 #   python3 -I tools/stadt/stadt.py <ordner mit den entpackten Kits> src/respawn/modelle/stadt.glb
 # Die Modelle nutzen eine gemeinsame Farbtafel (colormap.png). Hier wird die Farbe je Eckpunkt aus der Tafel gelesen und
 # fest ins Modell geschrieben (COLOR_0) – so brauchen sie keine Textur und nutzen das Material der Insel (Umriss, Schatten).
@@ -16,8 +17,19 @@ AUSWAHL = {
     'mini-skate': ['half-pipe-low', 'half-pipe', 'ramp', 'ramp-rail', 'rail-low', 'rail-high', 'obstacle-box-grind', 'obstacle-box', 'steps-rail', 'bench', 'pallet', 'skateboard', 'scooter', 'fence'],
     'watercraft-kit': ['boat-fishing-small', 'boat-row-small', 'boat-row-large', 'boat-sail-a', 'boat-sail-b', 'boat-speed-a', 'buoy', 'buoy-flag', 'cargo-pile-a'],
     # Lucindas Garten: Beete und Gemüse (Nature Kit – ohne Farbtafel, die Farbe steht im Material)
-    'nature-kit': ['crops_dirtDoubleRow', 'crops_dirtRow', 'crops_leafsStageB', 'crops_cornStageC', 'crop_pumpkin', 'crop_melon', 'crop_carrot', 'crop_turnip', 'fence_simple', 'flower_redA', 'flower_yellowB', 'flower_purpleB'],
+    'nature-kit': ['crops_dirtDoubleRow', 'crops_dirtRow', 'crops_leafsStageB', 'crops_cornStageC', 'crop_pumpkin', 'crop_melon', 'crop_carrot', 'crop_turnip', 'fence_simple', 'flower_redA', 'flower_yellowB', 'flower_purpleB', 'tent_detailedOpen', 'tent_smallOpen', 'campfire_stones', 'campfire_logs', 'canoe', 'canoe_paddle', 'log', 'log_stack', 'stump_round', 'stump_old', 'rock_largeA', 'rock_largeB', 'rock_tallA', 'stone_largeA', 'stone_largeB', 'mushroom_red', 'mushroom_redGroup', 'mushroom_tanGroup', 'sign', 'plant_bushLarge', 'flower_purpleA', 'flower_redB', 'flower_yellowA', 'pot_large'],
     'mini-market': ['display-bread', 'display-fruit', 'display-flowers', 'display-cans', 'display-small', 'clothing-rack', 'clothing-table', 'shelf-boxes', 'shopping-cart', 'hand-truck', 'cash-register'],
+    # 13.11.2026 abends – mehr Welt: Hafen und Bucht (Pirate Kit), Lager und Treffpunkte (Survival Kit), Platz (Fantasy Town Kit),
+    # Winter (Holiday Kit), Fest und Strand (Racing Kit: Zeltdächer, Fahnen), Werft und Fernblick (City Kit Industrial)
+    'pirate-kit': ['barrel', 'crate', 'crate-bottles', 'chest', 'flag-high', 'flag-pennant', 'palm-bend', 'palm-detailed-bend', 'palm-detailed-straight', 'rocks-a', 'rocks-b', 'rocks-c', 'rocks-sand-a', 'rocks-sand-b',
+                   'ship-large', 'ship-medium', 'ship-wreck', 'boat-row-small', 'structure-platform-dock', 'tool-paddle', 'patch-sand-foliage', 'grass-plant', 'mast-ropes'],
+    'survival-kit': ['tent-canvas', 'structure-canvas', 'structure-metal', 'campfire-pit', 'campfire-stand', 'campfire-fishing-stand', 'bedroll', 'bedroll-packed', 'tree-log', 'tree-log-small', 'tree-trunk', 'signpost',
+                     'signpost-single', 'box-large', 'box', 'bucket', 'fish-large', 'resource-wood', 'resource-planks', 'workbench', 'rock-flat', 'metal-panel', 'fence'],
+    'fantasy-town-kit': ['fountain-round-detail', 'fountain-round', 'lantern', 'hedge', 'hedge-large', 'hedge-curved', 'stall', 'stall-green', 'stall-red', 'stall-bench', 'stall-stool', 'cart', 'cart-high', 'banner-green', 'banner-red'],
+    'holiday-kit': ['snowman', 'snowman-hat', 'tree-decorated-snow', 'tree-decorated', 'tree-snow-a', 'present-a-cube', 'present-b-round', 'present-a-rectangle', 'sled', 'lights-colored', 'wreath-decorated', 'bench',
+                    'snow-pile', 'candy-cane-red', 'reindeer'],
+    'racing-kit': ['tent', 'tentClosed', 'tentLong', 'tentRoof', 'flagCheckers', 'flagGreen', 'flagRed', 'overheadRound', 'grandStand', 'pylon', 'barrierRed', 'barrierWhite', 'bannerTowerGreen', 'bannerTowerRed'],
+    'city-kit-industrial': ['shipping-container-a', 'shipping-container-b', 'shipping-container-c', 'water-tower', 'windmill', 'solar-panel-landscape-group', 'detail-tank'],
 }
 
 def png(pfad):
@@ -117,7 +129,8 @@ def main():
         if not os.path.isdir(ordner): ordner = os.path.join(quelle, kit, 'Models', 'GLTF format')
         tafel = os.path.join(ordner, 'Textures', 'colormap.png')
         farbe = png(tafel) if os.path.exists(tafel) else None
-        kurz = {'city-kit-suburban': 'haus', 'city-kit-commercial': 'laden', 'city-kit-roads': 'strasse', 'car-kit': 'auto', 'mini-skate': 'skate', 'watercraft-kit': 'boot', 'mini-market': 'markt', 'nature-kit': 'natur'}[kit]
+        kurz = {'city-kit-suburban': 'haus', 'city-kit-commercial': 'laden', 'city-kit-roads': 'strasse', 'car-kit': 'auto', 'mini-skate': 'skate', 'watercraft-kit': 'boot', 'mini-market': 'markt', 'nature-kit': 'natur',
+                'pirate-kit': 'hafen', 'survival-kit': 'lager', 'fantasy-town-kit': 'platz', 'holiday-kit': 'winter', 'racing-kit': 'fest', 'city-kit-industrial': 'werk'}[kit]
         for nm in namen:
             pfad = os.path.join(ordner, nm + '.glb')
             if not os.path.exists(pfad): print('fehlt', kit, nm); continue

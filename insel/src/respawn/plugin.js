@@ -8,6 +8,7 @@
 // Gespeichert nur auf dem Gerät: respawn.meta (Album, Runden, Einstellungen) und respawn.lauf (laufende Runde).
 // Für Tests: Ereignisse respawn:start, respawn:karten, respawn:weiter, respawn:ende (auslösen); plugin.tue({...}) spielt
 // eine freie Aktion; respawn:wahl, respawn:wirkung, respawn:stand, respawn:frei (hören).
+import { nameTagsAus } from '../actors/humanoid/nametag.js';
 import * as THREE from 'three';
 import { createOberflaeche } from './oberflaeche.js';
 import { createBuehne } from './buehne.js';
@@ -16,7 +17,7 @@ import { baueStadt } from './stadt.js';
 import { createFahren } from './fahren.js';
 import { createRoller } from './roller.js';
 import { createWettlauf } from './lauf.js';
-import { SITUATIONEN, AUSGAENGE, AKTE, AKTE_LEER, ORTE, ORT_BEI, ORT_AKTIONEN, LEUTE_AKTIONEN, LEUTE_REIHE, FOLGEN, VERPASST, WICHTIG, statistSagt, ideenFuerHeute, kapitelAuftakt, MISSIONEN, THEMEN, FIGUREN } from './daten/index.js';
+import { SITUATIONEN, AUSGAENGE, AKTE, AKTE_LEER, ORTE, ORT_BEI, ORT_AKTIONEN, LEUTE_AKTIONEN, LEUTE_REIHE, FOLGEN, VERPASST, WICHTIG, statistSagt, ideenFuerHeute, kapitelAuftakt, MISSIONEN, THEMEN, FIGUREN, wegVon } from './daten/index.js';
 import { angebote, nimmAn, aktuell, weiter, schliesse, brichAb, sterneLauf, sterneSammeln, zeitFuerStrecke, themenAn } from './missionen.js';
 import { createSammeln } from './sammeln.js';
 import { neuerLauf, zieheKarten, planeJahreszeit, jahreszeitWechsel, jahreszeit, ausgangFuer, akteFuer, wirke, bond, verteile, folgenAmMorgen, neuerTag,
@@ -115,6 +116,7 @@ export default {
       if (!R || !game.particles || game.paused) return;
       const W = wetter(), p = player.position, nacht = game.world.sky.night || 0;
       // Natur folgt der Jahreszeit (buntes Laub, Schnee, Blüte) – gleitet in ein paar Sekunden hinüber
+      if (stadt && stadt.jahreszeit) stadt.jahreszeit(R.jz);   // Kürbisse, Schneemänner, Blumen, Festzelte
       const V = game.world.veil;
       if (V && V.setSeason) { const s = V.season, n = W.natur, k = Math.min(1, dt * 0.7); V.setSeason(s.x + (n[0] - s.x) * k, s.y + (n[1] - s.y) * k, s.z + (n[2] - s.z) * k); }
       const T = W.teile || (nacht > 0.5 ? { rate: 5, color: 0xfff29a, jitter: 0.1, size: 0.16, life: 4, gravity: 0.05, drag: 1.2, hoch: 1.6, wind: 0.2, additive: true } : null);
@@ -130,6 +132,7 @@ export default {
 
     // ---------- Marken in der Welt (Ereignisse des Tages, Orte) ----------
     const marken = new Map();   // id → { el, x, z, y, greifen: Interaktion }
+    let laufAn = false;   // Wettlauf oder Sammeln läuft: keine Marken, kein Knopf „Ort“ oder „Auftrag“ mitten im Rennen
     function marke(id, { x, z, text, klein = '', ort = false, radius = 4, onAction, label, auftrag = false }) {
       weg(id);
       const el = document.createElement('div');
@@ -138,7 +141,7 @@ export default {
       hud.appendChild(el);
       const greifen = game.interactions.add({ id: 'rs-' + id, x, z, radius, label: label || text, priority: ort ? 0 : 5, onAction });
       if (!ort && ui.setMarker) ui.setMarker('rs-' + id, x, z, auftrag ? '⭐' : '❗', auftrag ? '#ffd23f' : '#ff5a7a');
-      marken.set(id, { el, x, z, greifen, ort });
+      marken.set(id, { el, x, z, greifen, ort, auftrag });
     }
     function weg(id) { const m = marken.get(id); if (!m) return; m.el.remove(); m.greifen.remove(); if (!m.ort && ui.removeMarker) ui.removeMarker('rs-' + id); marken.delete(id); }
     const alleWeg = () => { for (const id of [...marken.keys()]) weg(id); };
@@ -146,20 +149,42 @@ export default {
     game.addUpdate(() => {
       const cam = game.camera;
       if (!R) auftragEl.style.display = 'none';
-      if (!cam || !marken.size) return;
+      if (!cam) return;
       const frei = R && !B.aktiv && !ui.overlay.count && !document.querySelector('.rs-voll') && !F.aktiv && !W.aktiv && !SA.aktiv;   // im Wettlauf und beim Sammeln ein ruhiges Bild: nur die Uhr   // beim Fahren keine Orts-Schilder (sie lagen auf dem Wagen)
       // „Schlafen gehen“ lag sonst mitten über Sprechblasen und Auswahl (sobald die Kraft leer ist und man noch redet)
       if (knopf) knopf.style.display = frei && !ui.bubbles.current && !ui.choices.open ? '' : 'none';
       auftragEl.style.display = frei && R.mission && auftragEl.textContent ? '' : 'none';
+      // In Szenen, im Wettlauf und beim Sammeln stehen keine Namen über den Köpfen: Die Sprechblase nennt, wer spricht
+      nameTagsAus(!!R && (laufAn || B.aktiv));
+      if (!marken.size) return;
+      // Schilder: nie in der Leiste oben, nie über den Rand, nie übereinander. Wichtiges zuerst (Auftrag, Ereignis, nahe Orte).
+      const bw = hud.clientWidth || innerWidth;
+      const oben = (auftragEl.style.display === 'none' ? 62 : auftragEl.offsetTop + auftragEl.offsetHeight) + 8;
+      const liste = [];
       for (const m of marken.values()) {
         const d = Math.hypot(m.x - player.position.x, m.z - player.position.z);
         if (!frei || (m.ort && d > 40)) { m.el.style.display = 'none'; continue; }
         const y = (game.world.island.heightAt ? game.world.island.heightAt(m.x, m.z) : player.position.y) + (m.ort ? 3.2 : 4.2);
         const p = player.position.clone().set(m.x, y, m.z).project(cam);
         if (p.z > 1 || Math.abs(p.x) > 1.05 || Math.abs(p.y) > 1.05) { m.el.style.display = 'none'; continue; }
+        liste.push({ m, d, px: (p.x * 0.5 + 0.5) * bw, py: (-p.y * 0.5 + 0.5) * (hud.clientHeight || innerHeight) });
+      }
+      const rang = (m) => (m.auftrag ? 0 : m.ort ? 2 : 1);
+      liste.sort((a, b) => rang(a.m) - rang(b.m) || a.d - b.d);
+      const belegt = [];
+      for (const e of liste) {
+        const m = e.m;
         m.el.style.display = '';
-        m.el.style.left = ((p.x * 0.5 + 0.5) * 100).toFixed(2) + '%';
-        m.el.style.top = ((-p.y * 0.5 + 0.5) * 100).toFixed(2) + '%';
+        if (!m.w) { m.w = m.el.offsetWidth; m.h = m.el.offsetHeight; }
+        const w = m.w || 120, h = m.h || 30;
+        let x = e.px, y = e.py;
+        if (m.auftrag) { x = Math.max(w / 2 + 8, Math.min(bw - w / 2 - 8, x)); y = Math.max(y, oben + h); }
+        else if (y - h < oben || x - w / 2 < 4 || x + w / 2 > bw - 4) { m.el.style.display = 'none'; continue; }
+        const r = { l: x - w / 2 - 4, r: x + w / 2 + 4, t: y - h - 3, b: y + 3 };
+        if (!m.auftrag && belegt.some((q) => r.l < q.r && r.r > q.l && r.t < q.b && r.b > q.t)) { m.el.style.display = 'none'; continue; }
+        belegt.push(r);
+        m.el.style.left = x.toFixed(1) + 'px';
+        m.el.style.top = y.toFixed(1) + 'px';
       }
     }, { order: 93, always: true });
 
@@ -285,7 +310,7 @@ export default {
         else if (s.art === 'lauf' || s.art === 'sammeln') {
           await O.erzaehler(s.text, { kurz: true });
           let erg = null, sek = 0;
-          laufAn = true; marken_();
+          laufAn = true; nameTagsAus(true); marken_();
           for (;;) {
             const p = player.position, start = { x: p.x, z: p.z };
             const fk = fn(s.faktor, R) || 1.15, mehr = 1 + 0.25 * M.versuche;
@@ -305,7 +330,7 @@ export default {
             M.versuche += 1;
             player.teleport(start.x, start.z, player.yaw || 0);
           }
-          laufAn = false;
+          laufAn = false; nameTagsAus(false);
           if (roller && roller.aktiv) roller.ab();
           M.sterne.push(s.art === 'lauf' ? sterneLauf(erg, sek) : sterneSammeln(erg));
           R.log.push({ mission: m.id, schritt: M.i, erg });
@@ -322,7 +347,7 @@ export default {
       meta.missionen[m.id] = Math.max(meta.missionen[m.id] || 0, n);
       schreib(META, meta);
       auftragAnzeige();
-      await O.auftragFertig({ m, sterne: n });
+      await O.auftragFertig({ m, sterne: n, weg: wegVon(R, m.id) });
       events.emit('respawn:auftrag', { id: m.id, was: 'fertig', sterne: n });
       kraftWeg(1);
     }
@@ -372,7 +397,6 @@ export default {
       }, true);
     }
 
-    let laufAn = false;   // Wettlauf oder Sammeln läuft: keine Marken, kein Knopf „Ort“ oder „Auftrag“ mitten im Rennen
     function marken_() {
       if (!R || !tagEnde || laufAn) { alleWeg(); return; }
       const soll = new Set();
@@ -386,7 +410,7 @@ export default {
       if (am && am.s.art === 'hin') {
         const z = zielVon(am.s), mid = 'm-' + am.m.id + '-' + am.M.i;
         soll.add(mid);
-        if (!marken.has(mid)) marke(mid, { x: z.x, z: z.z, text: '⭐ ' + am.s.text, radius: 6, label: am.m.titel, auftrag: true, onAction: () => frei(() => auftragLaufen(true)) });
+        if (!marken.has(mid)) marke(mid, { x: z.x, z: z.z, text: '⭐ ' + z.name, radius: 6, label: am.m.titel, auftrag: true, onAction: () => frei(() => auftragLaufen(true)) });
       }
       const neu = angebote(R, MISSIONEN, themen());
       for (const ort of ORTE) {

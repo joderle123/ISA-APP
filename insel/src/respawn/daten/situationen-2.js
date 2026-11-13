@@ -294,17 +294,21 @@ const SATZ = {
 };
 // Wer am Steg steht: die Leute, mit denen es gut lief (Bindung ab 2, höchstens drei, die engsten zuerst). Jede Person
 // erinnert an etwas, das du im Jahr wirklich getan hast – sonst sagt sie ihren Satz von oben. Wer weg ist, fehlt.
-const NAME = { jolie: 'Jolie', tun: 'Tun', pit: 'Pit', noor: 'Noor', mika: 'Mika', fraenz: 'Fränz', yara: 'Yara' };
+const NAME = { jolie: 'Jolie', tun: 'Tun', pit: 'Pit', noor: 'Noor', mika: 'Mika', fraenz: 'Fränz', yara: 'Yara', tiago: 'Tiago', lucinda: 'Oma Lucinda' };
 const ECHO = {
-  pit: [['pit.geholfen', 'Du bist damals geblieben. Das weiß ich noch.'], ['lager.pitgeschuetzt', 'Am Feuer hast du Mika gestoppt. Für mich.'], ['video.geloescht', 'Das Video ist weg. Wegen dir.']],
-  tun: [['luege.begleitet', 'Du bist mit zu Ilda gekommen. Vergess ich nicht.']],
+  pit: [['board.gehoert', 'Du hast uns ausreden lassen. Tiago und mich.'], ['pit.geholfen', 'Du bist damals geblieben. Das weiß ich noch.'], ['lager.pitgeschuetzt', 'Am Feuer hast du Mika gestoppt. Für mich.'], ['video.geloescht', 'Das Video ist weg. Wegen dir.']],
+  tun: [['suche.zugehoert', 'Am Leuchtturm hast du zugehört. Nur zugehört.'], ['suche.vater', 'Du bist mit zu meinem Vater gegangen.'], ['luege.begleitet', 'Du bist mit zu Ilda gekommen. Vergess ich nicht.']],
   noor: [['neue.geschuetzt', 'Du hast dich vor mich gestellt. Am ersten Tag.']],
-  jolie: [['fest.hilfe', 'Am Krater hast du mich geholt. Das war richtig.'], ['einladung.dabei', 'Nächstes Mal stehst du auf der Liste. Versprochen.']],
-  mika: [['mitfahren.gestoppt', 'Du hast Nein gesagt. Macht sonst keiner.']],
-  fraenz: [['prakt.gut', 'Montag um sieben. Wenn du willst.'], ['fuenfziger.geklaert', 'Der Fünfziger. Du hast es geklärt. Vergess ich nicht.']],
+  jolie: [['chat.gemeldet', 'Leo ist weg. Weil du geblieben bist.'], ['fest.hilfe', 'Am Krater hast du mich geholt. Das war richtig.'], ['einladung.dabei', 'Nächstes Mal stehst du auf der Liste. Versprochen.']],
+  mika: [['hitze.hunger', 'Du hast gefragt, ob ich Hunger hab.'], ['mitfahren.gestoppt', 'Du hast Nein gesagt. Macht sonst keiner.']],
+  tiago: [['sturm.ruhig', 'Im Sturm hast du mit mir geatmet.'], ['staffel.gestanden', 'Du hast die Medaille hergegeben. Respekt.'], ['board.gehoert', 'Du hast uns ausreden lassen. Pit und mich.']],
+  lucinda: [['hitze.zugegeben', 'Du hast mir die Wahrheit gesagt. Wegen der Tomaten.'], ['hitze.gegossen', 'Mein Garten lebt. Wegen dir.']],
+  fraenz: [['prakt.gut', 'Montag um sieben. Wenn du willst.'], ['staffel.sieg', 'Deine Medaille hängt noch in der Werft.'], ['fuenfziger.geklaert', 'Der Fünfziger. Du hast es geklärt. Vergess ich nicht.']],
   yara: [['trost.geheim', 'Du hast nichts erzählt. Niemandem.'], ['trost.da', 'Am Leuchtturm hast du einfach dagesessen. Danke.']],
 };
 SATZ.yara = 'Ohne dich wär der Sommer leiser gewesen.';
+SATZ.tiago = 'Die Wellen warten. Komm mal wieder.';
+SATZ.lucinda = 'Im Garten ist immer ein Beet für dich.';
 const nooristWeg = (R) => ['abschied.geholfen', 'abschied.kontakt', 'abschied.kurz'].some((f) => hat(R, f));
 export const amSteg = (R) => Object.keys(NAME).filter((w) => bond(R, w) >= 2 && !(w === 'noor' && nooristWeg(R)))
   .sort((a, b) => bond(R, b) - bond(R, a)).slice(0, 3);

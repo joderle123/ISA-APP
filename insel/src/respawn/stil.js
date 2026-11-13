@@ -195,6 +195,11 @@ button.rs-leut{width:100%;min-height:52px;background:none;border:0;border-bottom
 .rs-voll.ist-fertig .rs-ak{text-align:center;}
 .rs-sterne{margin:10px 0 4px;font-size:54px;line-height:1;color:#ffd23f;letter-spacing:.08em;}
 .rs-sterne i{font-style:normal;color:rgba(255,255,255,.2);}
+.rs-weg{margin:14px 0 2px;padding:12px 14px;border-radius:14px;background:rgba(255,255,255,.07);text-align:left;}
+.rs-weg small{margin-bottom:6px;}
+.rs-weg ul{margin:0;padding:0;list-style:none;}
+.rs-ak .rs-weg li{display:block;position:relative;padding:3px 0 3px 22px;font-size:16px;line-height:1.35;font-weight:600;}
+.rs-ak .rs-weg li::before{content:'';display:block;position:absolute;left:4px;top:.72em;width:8px;height:8px;border-radius:50%;background:#ffd23f;}
 .rs-voll button.ist-leise{min-height:44px;font-size:15px;font-weight:600;opacity:.8;background:transparent;}
 .rs-auftrag{position:absolute;left:max(10px,env(safe-area-inset-left));top:calc(max(12px,env(safe-area-inset-top)) + 58px);max-width:min(62%,360px);box-sizing:border-box;padding:7px 12px;border-radius:14px;background:rgba(20,22,34,.84);border:1px solid rgba(255,210,63,.5);color:#fff;font:700 14px/1.25 system-ui,sans-serif;pointer-events:none;z-index:6;}
 .rs-auftrag b{display:block;font-size:12px;letter-spacing:.06em;color:#ffd23f;text-transform:uppercase;}

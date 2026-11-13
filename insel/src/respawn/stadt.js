@@ -4,6 +4,7 @@
 // Die alten Häuser bleiben als Logik (Kollision, Türen, Orte) bestehen und werden nur unsichtbar.
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+import { mergeGeometries } from 'three/examples/jsm/utils/BufferGeometryUtils.js';
 import stadtBin from './modelle/stadt.glb';
 import { BUILDINGS, buildingYaw } from '../world/layout.js';
 import { LIEFERWAGEN } from './daten/welt.js';
@@ -22,6 +23,9 @@ function lade() {
         const f = new Float32Array(n * 3), col = new THREE.Color();
         for (let i = 0; i < n; i++) { col.setRGB(c.getX(i), c.getY(i), c.getZ(i), THREE.SRGBColorSpace); f[i * 3] = col.r; f[i * 3 + 1] = col.g; f[i * 3 + 2] = col.b; }
         g.setAttribute('color', new THREE.BufferAttribute(f, 3));
+        const nr = g.attributes.normal;
+        if (nr) { const nf = new Float32Array(n * 3), v = new THREE.Vector3(); for (let i = 0; i < n; i++) { v.fromBufferAttribute(nr, i).normalize(); nf[i * 3] = v.x; nf[i * 3 + 1] = v.y; nf[i * 3 + 2] = v.z; } g.setAttribute('normal', new THREE.BufferAttribute(nf, 3)); }
+        for (const k of Object.keys(g.attributes)) if (!['position', 'normal', 'color'].includes(k)) g.deleteAttribute(k);
         g.computeBoundingBox();
         // der Lader bereinigt Namen („haus/a“ → „hausa“); der echte Name steht in userData
         geo[(o.userData && o.userData.name) || o.name] = g;
@@ -211,6 +215,131 @@ export async function baueStadt(game) {
     for (let i = 0; i < 3; i++) { const ast = new THREE.Mesh(new THREE.BoxGeometry(1.25, 0.16, 0.18), kohle); ast.position.set(fx, fy + 0.16 + i * 0.07, fz); ast.rotation.y = i * 1.05 + 0.3; ast.rotation.z = 0.12; feuerstelle.add(ast); }
   }
   wurzel.add(feuerstelle);
+
+  // 4) Mehr Welt (13.11.2026 abends; Kenney Pirate/Survival/Fantasy Town/Holiday/Racing/Industrial Kit, CC0):
+  //    Hafen und Bucht, Strandlager, Stände am Platz, Treff am Krater, Bank am Leuchtturm, Windräder auf den Klippen –
+  //    und je Jahreszeit eigene Dinge (Kürbisse, Schneemänner, Blumen, Festzelte). Alles Feste wird je Gruppe zu EINEM Netz
+  //    zusammengefasst (ein Zeichen-Aufruf statt hunderte).
+  const stapel = {};
+  const _q = new THREE.Quaternion(), _hoch = new THREE.Vector3(0, 1, 0);
+  const lege = (gruppe, n, x, z, yaw = 0, ms = 1, { y = 0, kreis = 0, kipp = 0, aufWasser = false } = {}) => {
+    const g = name(n); if (!g) { console.warn('[respawn] Modell fehlt', n); return; }
+    const b = g.boundingBox, grund = aufWasser ? wasser(x, z) : hoehe(x, z);
+    _q.setFromAxisAngle(_hoch, yaw);
+    if (kipp) _q.multiply(new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(0, 0, 1), kipp));
+    const k = g.clone();
+    k.applyMatrix4(new THREE.Matrix4().compose(new THREE.Vector3(x, grund + y - b.min.y * ms, z), _q, new THREE.Vector3(ms, ms, ms)));
+    (stapel[gruppe] = stapel[gruppe] || []).push(k);
+    if (kreis && col) col.addCircle(x, z, kreis, { group: 'props', tag: 'schmuck' });
+  };
+  // flachste Stelle in der Nähe (Zelte und Türme sollen nicht am Hang hängen)
+  const flach = (x, z, r = 2, such = 7) => {
+    let best = { x, z, d: 1e9 };
+    for (let dx = -such; dx <= such; dx += 1.75) for (let dz = -such; dz <= such; dz += 1.75) {
+      const px = x + dx, pz = z + dz, h = hoehe(px, pz);
+      if (h < 0.8) continue;
+      const d = Math.abs(hoehe(px + r, pz) - h) + Math.abs(hoehe(px - r, pz) - h) + Math.abs(hoehe(px, pz + r) - h) + Math.abs(hoehe(px, pz - r) - h) + Math.hypot(dx, dz) * 0.06;
+      if (d < best.d) best = { x: px, z: pz, d };
+    }
+    return best;
+  };
+  // was aus LUMO stammt und in RESPAWN keinen Sinn hat, geht: die Gezeiten-Tanks am Strand
+  if (decor && decor.remove) decor.remove('tanks');
+
+  // --- Hafen und Bucht ---
+  const segler = [schwimmt('hafen/ship-large', -16, 194, 2.3, 2.3, 1.5), schwimmt('hafen/ship-medium', 74, 176, -0.9, 1.9, 1.2)].filter(Boolean);
+  for (const m of segler) { m.castShadow = false; boote.push(m); }
+  lege('fest', 'hafen/flag-high', 3.1, 131.4, 0.4, 1.3); lege('fest', 'hafen/flag-high', 8.9, 131.4, -0.4, 1.3);
+  lege('welt', 'lager/campfire-fishing-stand', 12.6, 136.4, 0.5, 4.5, { kreis: 0.8 }); lege('welt', 'lager/fish-large', 12.9, 135.2, 1.1, 2.2); lege('welt', 'lager/bucket', 11.5, 137.2, 0, 2.6);
+  lege('welt', 'natur/canoe', -3.0, 134.6, 0.9, 3.4, { kreis: 1.0 }); lege('welt', 'natur/canoe_paddle', -1.4, 135.6, 2.2, 3.4);
+  lege('welt', 'hafen/boat-row-small', 17.8, 139.8, 1.1, 1.25, { kreis: 1.1 }); lege('welt', 'hafen/tool-paddle', 19.2, 138.6, 0.3, 0.8);
+  lege('welt', 'hafen/barrel', -1.2, 132.4, 0, 0.65, { kreis: 0.6 }); lege('welt', 'hafen/crate', -2.4, 131.6, 0.4, 0.75, { kreis: 0.6 }); lege('welt', 'hafen/crate-bottles', -0.3, 131.2, 1.0, 0.75);
+  lege('welt', 'lager/signpost', 1.3, 127.6, 0.6, 4.2, { kreis: 0.3 });
+  lege('welt', 'hafen/rocks-a', 30.2, 144.2, 0.3, 0.45, { kreis: 1.1 });
+  // Werft: Container, Fässer, Planken
+  { const c = flach(32, 139, 2.2, 4);
+    lege('welt', 'werk/shipping-container-a', c.x, c.z, 0.3, 6.5, { kreis: 2.0 }); lege('welt', 'werk/shipping-container-c', c.x + 3.4, c.z - 1.2, 0.3, 6.5, { kreis: 2.0 });
+    { const cb = name('werk/shipping-container-a').boundingBox; lege('welt', 'werk/shipping-container-b', c.x + 0.4, c.z - 0.1, 0.38, 6.5, { y: (cb.max.y - cb.min.y) * 6.5 }); }
+    lege('welt', 'lager/resource-planks', 19.6, 135.2, 0.4, 3); lege('welt', 'lager/workbench', 13.2, 128.6, 1.6, 3.2, { kreis: 0.7 }); }
+
+  // --- Dorfplatz: zwei Marktstände, Karren, Laternen ---
+  lege('welt', 'platz/stall-green', -0.6, 102.7, 0, 2.7, { kreis: 1.5 }); lege('welt', 'platz/stall-red', 3.4, 102.5, 0.08, 2.7, { kreis: 1.5 });
+  lege('welt', 'markt/display-fruit', -0.6, 104.1, Math.PI, 1.3); lege('welt', 'natur/pot_large', 5.3, 103.6, 0, 1.6);
+  lege('welt', 'platz/cart-high', -9.2, 111.4, 1.3, 2.3, { kreis: 1.3 });
+  for (const [x, z] of [[7.0, 105.4], [-4.6, 105.6], [8.9, 110.6]]) lege('welt', 'platz/lantern', x, z, 0, 2.4, { kreis: 0.25 });
+
+  // --- Strand: Lager statt Tanks, Zeltdach als Strandbar, Boote im Sand, Wrack im Wasser ---
+  lege('welt', 'natur/tent_detailedOpen', 121.4, 49.6, 2.5, 4.4, { kreis: 1.6 }); lege('welt', 'natur/tent_smallOpen', 127.2, 51.2, 3.5, 4.2, { kreis: 1.4 });
+  lege('welt', 'lager/bedroll', 124.2, 47.8, 0.4, 3.2); lege('welt', 'lager/bedroll-packed', 129.4, 48.6, 1.2, 3);
+  lege('welt', 'natur/log', 122.9, 43.0, 0.2, 3.2, { kreis: 0.6 }); lege('welt', 'natur/log', 128.0, 44.8, 1.4, 3.2, { kreis: 0.6 }); lege('welt', 'natur/stump_round', 125.0, 46.3, 0, 2.2, { kreis: 0.5 });
+  lege('welt', 'fest/tentRoof', 138.2, 41.2, 0.25, 4.6); lege('welt', 'platz/stall', 138.2, 41.2, 0.25, 2.6, { kreis: 1.4 });
+  lege('welt', 'platz/stall-bench', 136.2, 43.3, 0.25, 2.4); lege('welt', 'platz/stall-stool', 140.3, 43.0, 0, 2.4); lege('welt', 'hafen/crate-bottles', 140.4, 39.6, 0.6, 0.75); lege('welt', 'hafen/barrel', 135.9, 39.4, 0, 0.65, { kreis: 0.6 });
+  lege('welt', 'hafen/boat-row-small', 152.4, 40.2, 0.5, 1.3, { kreis: 1.1 }); lege('welt', 'natur/canoe', 150.6, 51.4, 1.9, 3.4, { kreis: 1.0 }); lege('welt', 'natur/canoe_paddle', 149.2, 52.6, 0.4, 3.4);
+  lege('welt', 'lager/signpost', 132.6, 33.8, -0.6, 4.2, { kreis: 0.3 });
+  lege('welt', 'hafen/rocks-a', 156.8, 57.4, 0.4, 0.5, { kreis: 1.2 }); lege('welt', 'hafen/rocks-b', 157.4, 32.6, 1.7, 0.45, { kreis: 1.1 }); lege('welt', 'hafen/chest', 155.4, 59.2, 2.4, 0.6);
+  lege('welt', 'hafen/ship-wreck', 176, 49, 2.3, 1.5, { aufWasser: true, y: -2.2, kipp: 0.16 });
+  lege('fest', 'hafen/flag-pennant', 134.4, 37.2, 0.2, 1.6);
+
+  // --- Leuchtturm: Bank mit Blick aufs Meer, Wegweiser, Laternen, Felsen ---
+  lege('welt', 'winter/bench', -128.8, 131.4, -2.3, 1.7, { kreis: 0.8 }); lege('welt', 'winter/bench', -109.2, 116.2, 0.6, 1.7, { kreis: 0.8 });
+  lege('welt', 'lager/signpost', -103.6, 121.6, 1.2, 4.2, { kreis: 0.3 });
+  lege('welt', 'platz/lantern', -108.4, 127.2, 0, 2.4, { kreis: 0.25 }); lege('welt', 'platz/lantern', -121.6, 119.2, 0, 2.4, { kreis: 0.25 });
+  lege('welt', 'hafen/rocks-a', -131.6, 116.8, 0.8, 0.45, { kreis: 1.1 }); lege('welt', 'hafen/rocks-b', -124.2, 135.6, 2.6, 0.4, { kreis: 0.9 });
+
+  // --- Treff am Krater: Feuerstelle, Stämme, eine Bude aus Blech ---
+  { const k = flach(-19, -50, 2.2, 6);
+    lege('welt', 'lager/campfire-pit', k.x, k.z, 0, 5, { kreis: 0.9 });
+    lege('welt', 'lager/tree-log', k.x - 2.3, k.z + 0.4, 1.5, 2.6, { kreis: 0.6 }); lege('welt', 'lager/tree-log', k.x + 1.2, k.z - 2.2, 0.2, 2.6, { kreis: 0.6 });
+    const b2 = flach(k.x - 5, k.z - 3, 2.2, 3);
+    lege('welt', 'lager/structure-canvas', b2.x, b2.z, 0.7, 5.5, { kreis: 1.4 }); lege('welt', 'lager/metal-panel', b2.x + 2.2, b2.z + 0.8, 2.0, 3.4); lege('welt', 'lager/bedroll', b2.x, b2.z, 0.7, 3.2, { y: 0.1 });
+    lege('welt', 'hafen/barrel', k.x + 2.6, k.z + 1.6, 0, 0.65, { kreis: 0.6 }); lege('welt', 'lager/box', k.x + 3.3, k.z + 0.5, 0.5, 2.6); }
+
+  // --- Markt: Karren und Kisten zwischen den Ständen ---
+  lege('welt', 'platz/cart', -127.4, 21.2, 2.2, 2.3, { kreis: 1.2 }); lege('welt', 'lager/box-large', -108.6, 6.2, 0.3, 2.6, { kreis: 0.6 }); lege('welt', 'hafen/barrel', -109.9, 5.2, 0, 0.65, { kreis: 0.6 });
+
+  // --- Fernblick: drei Windräder auf den Klippen, ein Wasserturm über dem Hafen ---
+  for (const [x, z, yaw] of [[-112, -70, 0.4], [-94, -90, 0.9], [-82, -58, 0.1]]) { const w = flach(x, z, 2.5, 6); lege('welt', 'werk/windmill', w.x, w.z, yaw, 10, { kreis: 1.0 }); }
+  { const t = flach(-44, 96, 3, 8); lege('welt', 'werk/water-tower', t.x, t.z, 0.5, 5.5, { kreis: 2.2 }); }
+
+  // --- Jahreszeiten ---
+  // Herbst: Kürbisse vor den Ständen, Holzstapel, Pilze
+  for (const [x, z, ms] of [[-1.7, 104.3, 2.3], [-0.9, 104.9, 1.8], [4.6, 104.2, 2.4], [-113.4, 25.4, 2.2], [-112.6, 24.7, 1.8], [-17.8, 121.2, 2.2], [136.4, 44.6, 2.0]]) lege('herbst', 'natur/crop_pumpkin', x, z, x * 1.7, ms);
+  lege('herbst', 'natur/log_stack', -10.6, 104.6, 0.4, 3.0); lege('herbst', 'natur/log_stack', -126.2, 5.4, 1.2, 3.0);
+  for (const [x, z] of [[-6.4, 100.6], [12.8, 95.2], [-104.2, 119.4], [118.6, 52.4], [-22.4, 108.6]]) lege('herbst', 'natur/mushroom_redGroup', x, z, x, 1.8);
+  for (const [x, z] of [[9.6, 99.2], [-111.2, 126.4], [-121.8, 27.6]]) lege('herbst', 'natur/mushroom_tanGroup', x, z, z, 1.8);
+  // Winter: Schneemänner, ein geschmückter Baum am Platz und am Markt, Geschenke, Schlitten, Schneehaufen an der Straße
+  lege('winter', 'winter/tree-decorated-snow', -7.6, 105.8, 0, 3.4, { kreis: 1.3 }); lege('winter', 'winter/present-a-cube', -6.2, 106.9, 0.4, 1.1); lege('winter', 'winter/present-b-round', -8.6, 107.4, 1.3, 1.1); lege('winter', 'winter/present-a-rectangle', -7.0, 107.8, 2.1, 1.1);
+  lege('winter', 'winter/tree-decorated', -125.6, 5.6, 0, 3.0, { kreis: 1.2 }); lege('winter', 'winter/present-a-cube', -124.4, 6.6, 1.0, 1.1);
+  lege('winter', 'winter/snowman-hat', 9.4, 112.9, -2.2, 1.5, { kreis: 0.7 }); lege('winter', 'winter/snowman', -112.4, 19.8, 2.4, 1.5, { kreis: 0.7 }); lege('winter', 'winter/snowman', -19.8, 121.8, 0.6, 1.5, { kreis: 0.7 });
+  lege('winter', 'winter/snowman-hat', -112.6, 119.4, 1.2, 1.5, { kreis: 0.7 }); lege('winter', 'winter/snowman', 131.2, 41.8, -1.4, 1.5, { kreis: 0.7 });
+  lege('winter', 'winter/sled', 12.4, 97.4, 0.8, 1.6); lege('winter', 'winter/sled', -106.8, 118.2, 2.0, 1.6); lege('winter', 'winter/reindeer', -110.6, 113.6, 0.9, 1.5, { kreis: 0.7 });
+  for (const [x, z] of [[-3.4, 119.2], [10.2, 119.0], [-15.2, 120.6], [22.6, 118.4], [-121.6, 0.6], [126.4, 33.2], [4.2, 127.6]]) lege('winter', 'winter/snow-pile', x, z, x, 2.6);
+  for (const [x, z] of [[-0.6, 103.4], [3.4, 103.2]]) lege('winter', 'winter/wreath-decorated', x, z, 0, 1.2, { y: 1.7 });
+  // Frühling: Blumen rund um den Platz, am Leuchtturm, am Weg zum Strand
+  { const BL = ['natur/flower_redB', 'natur/flower_yellowA', 'natur/flower_purpleA', 'natur/flower_redA', 'natur/flower_yellowB', 'natur/flower_purpleB'];
+    let i = 0;
+    for (let a = 0; a < 16; a++) { const w = (a / 16) * Math.PI * 2 + 0.2, r = 8.6 + (a % 3) * 0.9; const x = 1 + Math.sin(w) * r, z = 111 + Math.cos(w) * r; if (z > 114.2) continue; lege('fruehling', BL[i++ % BL.length], x, z, a, 3.0); }
+    for (let a = 0; a < 14; a++) { const w = (a / 14) * Math.PI * 2, r = 6.5 + (a % 4) * 1.6; lege('fruehling', BL[i++ % BL.length], -117 + Math.sin(w) * r, 121 + Math.cos(w) * r, a, 3.0); }
+    for (const [x, z] of [[120.2, 44.4], [121.4, 45.6], [133.6, 34.6], [-16.4, 122.4], [-19.2, 114.6], [-104.2, 31.4], [-108.6, 33.2], [-126.8, 24.6], [-109.2, 3.4]]) lege('fruehling', BL[i++ % BL.length], x, z, x, 3.0);
+    lege('fruehling', 'natur/pot_large', -2.6, 103.6, 0, 1.6); lege('fruehling', 'natur/pot_large', 8.4, 108.2, 0, 1.6); }
+  // Sommer: Festzelte am Platz und am Strand, Fahnen, Liegeplätze
+  lege('sommer', 'fest/tentLong', -10.6, 106.4, 1.35, 4.2); lege('sommer', 'platz/stall-bench', -10.6, 106.4, 1.35, 2.4, { kreis: 1.2 });
+  lege('sommer', 'fest/tent', 145.2, 47.6, 0.3, 4.2); lege('sommer', 'lager/bedroll', 147.8, 44.2, 0.5, 3.2); lege('sommer', 'lager/bedroll', 150.2, 45.4, 0.2, 3.2); lege('sommer', 'lager/bedroll', 146.4, 52.2, 1.1, 3.2);
+  lege('sommer', 'fest/flagRed', 142.6, 45.6, 0, 3.0); lege('sommer', 'fest/flagGreen', 148.0, 49.8, 0, 3.0); lege('sommer', 'fest/flagCheckers', 6.2, 104.6, 0, 3.0);
+  lege('sommer', 'fest/tentClosed', -121.6, 23.2, 0.8, 4.0, { kreis: 1.8 });
+
+  const gruppen = {};
+  for (const [id, liste] of Object.entries(stapel)) {
+    const geo = mergeGeometries(liste, false);
+    for (const g of liste) g.dispose();
+    if (!geo) { console.warn('[respawn] Schmuck-Gruppe leer', id); continue; }
+    const m = new THREE.Mesh(geo, mat); m.castShadow = true; m.receiveShadow = true; m.name = 'schmuck-' + id; wurzel.add(m); gruppen[id] = m;
+  }
+  const JZ = ['herbst', 'winter', 'fruehling', 'sommer'];
+  let jzJetzt = -2;
+  const zeigeJahreszeit = (jz) => { if (jz === jzJetzt) return; jzJetzt = jz; JZ.forEach((id, i) => { if (gruppen[id]) gruppen[id].visible = i === jz; }); };
+  zeigeJahreszeit(-1);
+
   // 3) Straßen auf den Hauptwegen, Lampen am Rand, parkende Autos, ein wenig Verkehr
   const fahrten = [];
   const base = game.props.materials.base;
@@ -280,7 +409,9 @@ export async function baueStadt(game) {
     }
   }, { order: 60 });
   game.scene.add(wurzel);
-  return { gruppe: wurzel, setze, modelle: Object.keys(G), wagen, lieferwagen, boote,
+  return { gruppe: wurzel, setze, modelle: Object.keys(G), wagen, lieferwagen, boote, gruppen,
+    // Dinge der Jahreszeit zeigen (0 Herbst · 1 Winter · 2 Frühling · 3 Sommer; -1 = keine)
+    jahreszeit: zeigeJahreszeit,
     // Spuren in der Welt: Was man angestellt hat, bleibt zu sehen
     zeigeSpuren(flags) { feuerstelle.visible = !!(flags && flags.feuer); },
     // am Morgen steht der Lieferwagen wieder am Kiosk (Fränz hat ihn geholt)
