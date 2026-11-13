@@ -46,6 +46,9 @@ export function createCameraRig({ camera, island, input, player, events, collide
     baseFov: 50,
     fovOffset: 0,
     vista: null,    // { t } – läuft nach einem Zonenwechsel zu Fuß (nicht nach Teleport)
+    portrait: false,
+    hochkant: null, // { lookY, pitch } – nur im Hochformat (Handy): Blickpunkt höher und etwas steiler, damit die Figur tiefer im Bild
+                    // steht und nicht verdeckt, wer vor ihr steht. LUMO setzt nichts; RESPAWN setzt es (respawn/plugin.js).
   };
   let idleLook = 10;
   const tmp = new THREE.Vector3();
@@ -106,7 +109,8 @@ export function createCameraRig({ camera, island, input, player, events, collide
     rig.lookOffsetY = viewLookY;
     rig.focus.x += (p.x - rig.focus.x) * k;
     rig.focus.z += (p.z - rig.focus.z) * k;
-    rig.focus.y += (p.y + rig.lookOffsetY - rig.focus.y) * ky;
+    const hk = rig.portrait && rig.hochkant && rig.viewMode === 'follow' && rig.mode === 'follow' ? rig.hochkant : null;
+    rig.focus.y += (p.y + rig.lookOffsetY + (hk ? hk.lookY : 0) - rig.focus.y) * ky;
     if (rig.mode === 'photo') rig.focus.add(photo.pan);
     // Vista-Moment: Sinus-Bogen über 1,2 s (Rückzug +1,5 m, FOV −4°)
     let vistaK = 0;
@@ -336,7 +340,7 @@ export function createCameraRig({ camera, island, input, player, events, collide
       const rate = view.behind * (rig.viewMode === 'glide' || rig.viewMode === 'climb' ? 1 : Math.min(1, sp / 6));
       if (Math.abs(d) < 2.3 || rig.viewMode !== 'follow') rig.yaw += d * Math.min(1, dt * rate);
       // Neigung sanft zum Standard zurück
-      const p0 = rig.viewMode === 'glide' ? 0.42 : rig.viewMode === 'climb' ? 0.08 : 0.24;
+      const p0 = rig.viewMode === 'glide' ? 0.42 : rig.viewMode === 'climb' ? 0.08 : (rig.portrait && rig.hochkant ? rig.hochkant.pitch : 0.24);
       rig.pitch += (p0 - rig.pitch) * Math.min(1, dt * 0.4);
     }
     place(dt, false);
@@ -346,6 +350,7 @@ export function createCameraRig({ camera, island, input, player, events, collide
   // FOV für Hoch-/Querformat (§12: 50° quer, 62° hoch)
   rig.onResize = (size) => {
     camera.aspect = size.aspect;
+    rig.portrait = !!size.portrait;
     rig.baseFov = size.portrait ? 62 : 50;
     fovCur = rig.baseFov + (VIEWS[rig.viewMode] || VIEWS.follow).fov + rig.fovOffset;
     camera.fov = fovCur;

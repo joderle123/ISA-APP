@@ -46,7 +46,7 @@ export default {
     const ohneGlimm = () => { try { player.humanoid.group.traverse((o) => { if (o.name === 'glimm') o.visible = false; }); if (game.glimm && game.glimm.mesh) game.glimm.mesh.visible = false; } catch (e) { /* egal */ } };
     ohneGlimm(); events.on('avatar:change', () => setTimeout(ohneGlimm, 50)); events.on('game:start', ohneGlimm);
     // Kamera näher und tiefer als in LUMO: man ist bei der Figur, nicht über dem Dorf
-    try { const rig = game.cameraRig; rig.targetDist = 5.6; rig.dist = 5.6; rig.pitch = 0.17; rig.baseFov = 46; } catch (e) { /* egal */ }
+    try { const rig = game.cameraRig; rig.targetDist = 5.6; rig.dist = 5.6; rig.pitch = 0.17; rig.baseFov = 46; rig.hochkant = { lookY: 0.5, pitch: 0.3 }; if (rig.portrait) rig.pitch = 0.3; } catch (e) { /* egal */ }
     for (const id of ['grisel', 'jhemp']) { try { npcs.remove(id); } catch (e) { /* nicht da */ } }
     const bunt = () => { const veil = game.world && game.world.veil; if (veil && veil.setZone) for (const Z of game.world.island.ZONES) veil.setZone(Z.id, 0); };
 
@@ -304,7 +304,7 @@ export default {
         const p = stehplatz(o, ORTE.find((x) => x.ort === ziel));
         player.teleport(p.x, p.z, p.a);
         if (game.cameraRig.behindPlayer) game.cameraRig.behindPlayer();
-        game.cameraRig.pitch = p.hoch !== undefined ? p.hoch : 0.24;
+        game.cameraRig.pitch = p.hoch !== undefined ? p.hoch : (game.cameraRig.portrait ? 0.3 : 0.24);
         if (game.cameraRig.snap) game.cameraRig.snap();
       },
     });

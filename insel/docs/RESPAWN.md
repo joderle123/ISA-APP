@@ -81,3 +81,6 @@ man darf fast alles tun (auch Mist), keine Waffen, kein Gefängnis. Die Folgen s
     lässt, sah am Zuhause nur eine Wand, am Leuchtturm den Turm nie, am Garten stand man auf der Straße und am Lieferwagen
     im Nachbarauto. Diese vier Orte haben jetzt einen festen Stehplatz mit Blickpunkt. Der Leuchtturm-Ort liegt neu oben
     am Turm (vorher am Hang); das Rennen gegen Pit hat dafür 29 statt 26 Sekunden.
+  - **Kamera im Hochformat** (`actors/camera.js` → `rig.hochkant`, nur von RESPAWN gesetzt): Am Handy verdeckte die eigene
+    Figur, wer vor ihr stand. Der Blickpunkt liegt jetzt 0,5 m höher und die Kamera schaut etwas steiler – die Figur steht
+    tiefer im Bild, darüber sieht man Leute und Ort. LUMO und das Querformat bleiben, wie sie waren.
