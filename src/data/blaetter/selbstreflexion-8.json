@@ -451,7 +451,7 @@
       "bausteine": [
         {
           "art": "text",
-          "text": "Nicht jeder Tag kann ein Traumtag sein, aber ein guter Tag ist öfter drin, als man denkt. Hier malst du zwei Tage nebeneinander: einen guten Tag mit Schule, wie er wirklich sein könnte, und einen Traumtag ohne jede Pflicht. Was ähnlich ist und was ganz anders, zeigt dir, worauf es dir ankommt."
+          "text": "Nicht jeder Tag kann ein Traumtag sein, aber ein guter Tag ist öfter drin, als man denkt. Hier malst du zwei Tage nebeneinander. Einen guten Tag mit Schule, wie er wirklich sein könnte. Und einen Traumtag ohne jede Pflicht. Was ähnlich ist und was ganz anders, zeigt dir, worauf es dir ankommt."
         },
         {
           "art": "aufgabe",
@@ -1209,7 +1209,7 @@
       "bausteine": [
         {
           "art": "text",
-          "text": "Ein Kästchen ausmalen dauert eine Minute. Nach ein paar Wochen siehst du Muster, die dir im Alltag nie auffallen würden: Welche Tage leuchten, welche sind grau, was kommt zusammen vor? Du bestimmst, wofür deine Farben stehen – Stimmung, Schlaf, Bewegung oder eine Gewohnheit, die du aufbauen willst."
+          "text": "Ein Kästchen ausmalen dauert eine Minute. Nach ein paar Wochen siehst du Muster, die dir im Alltag nie auffallen würden. Welche Tage leuchten, welche sind grau, was kommt zusammen vor? Du bestimmst, wofür deine Farben stehen – Stimmung, Schlaf, Bewegung oder eine Gewohnheit, die du aufbauen willst."
         },
         {
           "art": "aufgabe",
@@ -1234,7 +1234,7 @@
         {
           "art": "aufgabe",
           "text": "Leg deine Farben fest: Schreib in die Legende, wofür jede Farbe steht. Gelb ist schon besetzt – es ist deine Farbe für „richtig gut“.",
-          "hinweis": "Mal die gelben Kästchen besonders schön aus, mit Gold- oder Glitzerstift, wenn du einen hast, und denk kurz daran, was heute richtig gut war. Zwei Farben in einem Kästchen sind erlaubt.",
+          "hinweis": "Mal die gelben Kästchen besonders schön aus, mit Gold- oder Glitzerstift, wenn du einen hast. Denk kurz daran, was heute richtig gut war. Zwei Farben in einem Kästchen sind erlaubt.",
           "symbole": [
             "malen",
             "nachdenken"
@@ -1318,7 +1318,7 @@
           "art": "info",
           "symbol": "hilfe",
           "titel": "Ein leeres Kästchen ist kein Fehler.",
-          "text": "Wer einen Abend vergisst, malt am nächsten weiter: Gewohnheiten entstehen über Wochen, nicht an einem Abend. Dein Jahr gehört dir – du musst es niemandem zeigen. Tauchen über Wochen fast nur schwere Farben auf, sprich mit einer erwachsenen Person, der du vertraust, zum Beispiel im SePAS deines Lycée."
+          "text": "Wer einen Abend vergisst, malt am nächsten weiter: Gewohnheiten entstehen über Wochen, nicht an einem Abend. Dein Jahr gehört dir – du musst es niemandem zeigen. Tauchen über Wochen fast nur schwere Farben auf? Dann sprich mit einer erwachsenen Person, der du vertraust, zum Beispiel im SePAS deines Lycée."
         },
         {
           "art": "linien",

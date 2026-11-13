@@ -447,7 +447,7 @@
           "art": "info",
           "symbol": "merke",
           "titel": "Kraftquellen wachsen",
-          "text": "Niemand hat alle Kraftquellen gleichzeitig. Neue kann man finden: einen Verein ausprobieren, einen Menschen fragen, einen Skill üben. Wenn dir gerade kaum etwas einfällt, ist das ein guter Grund, mit jemandem zu reden – kein Zeichen, dass mit dir etwas nicht stimmt."
+          "text": "Niemand hat alle Kraftquellen gleichzeitig. Neue kann man finden: einen Verein ausprobieren, einen Menschen fragen, einen Skill üben. Wenn dir gerade kaum etwas einfällt, ist das ein guter Grund, mit jemandem zu reden. Es ist kein Zeichen, dass mit dir etwas nicht stimmt."
         },
         {
           "art": "notfall"
@@ -2477,7 +2477,7 @@
           "art": "info",
           "symbol": "wissen",
           "titel": "So sortiert ein Feed",
-          "text": "Ein Feed misst, wie lange du hinschaust, ob du bis zum Ende schaust, likest, kommentierst oder teilst – und was Leute mögen, die ähnlich klicken wie du. Daraus rechnet er, wobei du hängen bleibst. Ob etwas stimmt, wichtig ist oder dir guttut, misst er nicht. Das Ziel ist deine Aufmerksamkeit: Je länger du bleibst, desto mehr Werbung siehst du."
+          "text": "Ein Feed misst, wie lange du hinschaust und ob du bis zum Ende schaust. Er misst, ob du likest, kommentierst oder teilst. Und er misst, was Leute mögen, die ähnlich klicken wie du. Daraus rechnet er, wobei du hängen bleibst. Ob etwas stimmt, wichtig ist oder dir guttut, misst er nicht. Das Ziel ist deine Aufmerksamkeit: Je länger du bleibst, desto mehr Werbung siehst du."
         },
         {
           "art": "aufgabe",

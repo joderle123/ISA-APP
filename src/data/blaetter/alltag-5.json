@@ -1009,7 +1009,7 @@
         {
           "art": "aufgabe",
           "text": "Wo stehst du heute? Ein Kreuz pro Regler: links brauchst du noch Hilfe, rechts machst du es allein.",
-          "hinweis": "Beispiel: Den Weg zum Training findest du allein, bei Zugverbindungen fragst du noch nach – dein Kreuz bei „Weg“ steht eher rechts. „Anrufe“ heißt z. B.: beim Arzt anrufen, ein Formular ausfüllen.",
+          "hinweis": "Beispiel: Den Weg zum Training findest du allein, bei Zugverbindungen fragst du noch nach. Dann steht dein Kreuz bei „Weg“ eher rechts. „Anrufe“ heißt z. B.: beim Arzt anrufen, ein Formular ausfüllen.",
           "symbole": [
             "ankreuzen"
           ]
@@ -1052,7 +1052,7 @@
         {
           "art": "aufgabe",
           "text": "Feiern, was klappt: Schau auf die Regler, bei denen dein Kreuz rechts steht. Das hast du gelernt – auch wenn es dir normal vorkommt.",
-          "hinweis": "Beispiel: zum ersten Mal allein zum Zahnarzt gefahren – geholfen hat, dass ich den Weg vorher einmal mit meiner Schwester gegangen bin.",
+          "hinweis": "Beispiel: zum ersten Mal allein zum Zahnarzt gefahren. Geholfen hat, dass ich den Weg vorher einmal mit meiner Schwester gegangen bin.",
           "symbole": [
             "schreiben",
             "nachdenken"

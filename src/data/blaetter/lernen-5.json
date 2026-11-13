@@ -42,7 +42,7 @@
       "bausteine": [
         {
           "art": "text",
-          "text": "Zwei Leute lernen dasselbe Kapitel und machen dabei etwas ganz anderes: Die eine braucht Stille und einen aufgeräumten Tisch, der andere Kopfhörer und das Sofa. Keins davon ist besser. Heute findest du heraus, wie du lernst, wann es bei dir richtig gut lief und was du zwei Wochen lang ausprobieren willst."
+          "text": "Zwei Leute lernen dasselbe Kapitel und machen dabei etwas ganz anderes. Die eine braucht Stille und einen aufgeräumten Tisch, der andere Kopfhörer und das Sofa. Keins davon ist besser. Heute findest du heraus, wie du lernst und wann es bei dir richtig gut lief. Und du findest heraus, was du zwei Wochen lang ausprobieren willst."
         },
         {
           "art": "aufgabe",
@@ -223,7 +223,7 @@
           "art": "info",
           "symbol": "hilfe",
           "titel": "Du entscheidest, was du teilst.",
-          "text": "Deine Antworten gehören dir. Niemand sammelt das Blatt ein. Wenn dir etwas zu nah ist, füll es für eine erfundene Person aus, zum Beispiel für Ben, der morgen einen Test schreibt."
+          "text": "Deine Antworten gehören dir. Niemand sammelt das Blatt ein. Wenn dir etwas zu nah ist, füll es für eine erfundene Person aus. Zum Beispiel für Ben, der morgen einen Test schreibt."
         },
         {
           "art": "linien",
@@ -536,7 +536,7 @@
       "bausteine": [
         {
           "art": "text",
-          "text": "Vor einer Prüfung macht der ganze Körper mit: Herz, Bauch, Gedanken. Das ist normal, und ein Teil davon lässt sich beeinflussen. Heute schaust du dir deinen Stress an, hörst auf deine Gedanken und baust dir einen Plan und ein Ritual für den Morgen."
+          "text": "Vor einer Prüfung macht der ganze Körper mit: Herz, Bauch, Gedanken. Das ist normal, und ein Teil davon lässt sich beeinflussen. Heute schaust du dir deinen Stress an und hörst auf deine Gedanken. Und du baust dir einen Plan und ein Ritual für den Morgen."
         },
         {
           "art": "aufgabe",
@@ -718,7 +718,7 @@
           "art": "info",
           "symbol": "hilfe",
           "titel": "Du entscheidest, was du teilst.",
-          "text": "Deine Antworten gehören dir, niemand sammelt das Blatt ein. Ist dir eine echte Prüfung zu nah, füll es für Jana aus (Mathe-Arbeit am Freitag). Wird der Druck so groß, dass du kaum noch schläfst oder isst, sprich mit dem SePAS oder einer Person, der du vertraust."
+          "text": "Deine Antworten gehören dir, niemand sammelt das Blatt ein. Ist dir eine echte Prüfung zu nah, füll es für Jana aus (Mathe-Arbeit am Freitag). Wird der Druck so groß, dass du kaum noch schläfst oder isst? Dann sprich mit dem SePAS oder einer Person, der du vertraust."
         },
         {
           "art": "linien",
@@ -1032,7 +1032,7 @@
       "bausteine": [
         {
           "art": "text",
-          "text": "Manchmal läuft Lernen fast von selbst, manchmal kostet schon das Aufschlagen des Hefts Kraft. Oft hängt das davon ab, woher der Antrieb kommt: von innen (Neugier, Freude, das Gefühl, dass es Sinn hat) oder von außen (Noten, Lob, Druck). Beides gibt es bei allen. Heute schaust du, was dich antreibt, und nimmst eine Idee für ein schweres Fach mit."
+          "text": "Manchmal läuft Lernen fast von selbst, manchmal kostet schon das Aufschlagen des Hefts Kraft. Oft hängt das davon ab, woher der Antrieb kommt. Von innen: Neugier, Freude, das Gefühl, dass es Sinn hat. Von außen: Noten, Lob, Druck. Beides gibt es bei allen. Heute schaust du, was dich antreibt, und nimmst eine Idee für ein schweres Fach mit."
         },
         {
           "art": "aufgabe",

@@ -40,7 +40,7 @@
       "bausteine": [
         {
           "art": "text",
-          "text": "Im Kopf hängen oft lose Fäden: die Nachricht, die du noch beantworten wolltest, das Versprechen an einen Freund, das Projekt, das du anfangen wolltest. Jeder Faden braucht ein bisschen Platz, auch wenn du gerade gar nicht an ihn denkst. Hier legst du sie einmal alle vor dich hin und entscheidest, was mit ihnen passiert."
+          "text": "Im Kopf hängen oft lose Fäden: die Nachricht, die du noch beantworten wolltest. Das Versprechen an einen Freund. Das Projekt, das du anfangen wolltest. Jeder Faden braucht ein bisschen Platz, auch wenn du gerade gar nicht an ihn denkst. Hier legst du sie einmal alle vor dich hin und entscheidest, was mit ihnen passiert."
         },
         {
           "art": "aufgabe",
@@ -902,7 +902,7 @@
           "art": "info",
           "symbol": "hilfe",
           "titel": "Kein Weg ist nur gut oder nur schlecht.",
-          "text": "Viele Wege helfen kurz und kosten später etwas, andere brauchen erst einen kleinen Anstoß. Mehrere Wege für verschiedene Situationen zu haben, ist ein gutes Zeichen. Wird der Druck so groß, dass du nicht mehr weiterweißt, sprich noch heute mit jemandem: mit einer Vertrauensperson, der SePAS oder über die Nummern unten."
+          "text": "Viele Wege helfen kurz und kosten später etwas, andere brauchen erst einen kleinen Anstoß. Mehrere Wege für verschiedene Situationen zu haben, ist ein gutes Zeichen. Wird der Druck so groß, dass du nicht mehr weiterweißt? Sprich noch heute mit jemandem: mit einer Vertrauensperson, der SePAS oder über die Nummern unten."
         },
         {
           "art": "notfall"
@@ -1350,7 +1350,7 @@
           "art": "info",
           "symbol": "tipp",
           "titel": "Wenn Gedanken kreisen",
-          "text": "Schreib fünf Minuten vor dem Licht-Aus auf einen Zettel, was dich beschäftigt und was du morgen erledigen willst. Der Zettel hält es für dich fest. Schläfst du über längere Zeit kaum oder fühlst du dich sehr belastet, sprich mit deiner Hausärztin, deinem Hausarzt oder einer Person, der du vertraust."
+          "text": "Schreib fünf Minuten vor dem Licht-Aus auf einen Zettel, was dich beschäftigt und was du morgen erledigen willst. Der Zettel hält es für dich fest. Schläfst du über längere Zeit kaum oder fühlst du dich sehr belastet? Dann sprich mit deiner Hausärztin, deinem Hausarzt oder einer Person, der du vertraust."
         },
         {
           "art": "linien",
@@ -1661,7 +1661,7 @@
       "bausteine": [
         {
           "art": "text",
-          "text": "Dein Körper arbeitet den ganzen Tag für dich, auch wenn du nicht daran denkst: Er trägt dich, lässt dich hören, lachen, rennen, einschlafen. Hier geht es um das, was er kann und dir möglich macht – an Tagen, an denen es leicht ist, und an Tagen, an denen es schwerer ist."
+          "text": "Dein Körper arbeitet den ganzen Tag für dich, auch wenn du nicht daran denkst. Er trägt dich, lässt dich hören, lachen, rennen, einschlafen. Hier geht es um das, was er kann und dir möglich macht. An Tagen, an denen es leicht ist, und an Tagen, an denen es schwerer ist."
         },
         {
           "art": "aufgabe",

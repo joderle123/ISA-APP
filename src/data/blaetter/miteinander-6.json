@@ -442,7 +442,7 @@
       "bausteine": [
         {
           "art": "text",
-          "text": "Nach einem Streit bleibt oft etwas zurück: ein Knoten im Bauch, ein Schweigen, ein Gedanke, der immer wiederkommt. Es hilft, den Streit noch einmal anzuschauen, wenn er nicht mehr so heiß ist – von deiner Seite und von der anderen. Es geht nicht darum, wer recht hatte. Nimm einen Streit, der schon etwas her ist. Ein ausgedachter oder ein Beispiel funktioniert genauso."
+          "text": "Nach einem Streit bleibt oft etwas zurück: ein Knoten im Bauch, ein Schweigen, ein Gedanke, der immer wiederkommt. Es hilft, den Streit noch einmal anzuschauen, wenn er nicht mehr so heiß ist. Schau von deiner Seite und von der anderen. Es geht nicht darum, wer recht hatte. Nimm einen Streit, der schon etwas her ist. Ein ausgedachter oder ein Beispiel funktioniert genauso."
         },
         {
           "art": "aufgabe",
@@ -625,7 +625,7 @@
           "art": "info",
           "symbol": "hilfe",
           "titel": "Du entscheidest, was du teilst.",
-          "text": "Deine Antworten gehören dir. Niemand sammelt das Blatt ein. Wenn dich ein Streit nicht loslässt oder jemand dir Angst macht, sprich mit einer Person, der du vertraust, oder mit dem SePAS deines Lycée."
+          "text": "Deine Antworten gehören dir. Niemand sammelt das Blatt ein. Lässt dich ein Streit nicht los oder macht dir jemand Angst? Dann sprich mit einer Person, der du vertraust, oder mit dem SePAS deines Lycée."
         },
         {
           "art": "linien",
@@ -1079,7 +1079,7 @@
         {
           "art": "aufgabe",
           "text": "Dein Ausstiegs-Plan: Wie kommst du aus so einer Situation, wenn es eng wird? Schreib einen Plan, den du wirklich machen würdest.",
-          "hinweis": "Zum Beispiel ein Codewort: Du schickst „Hast du meine Jacke?“ an eine Person, der du vertraust – sie ruft an und holt dich raus, ohne Fragen.",
+          "hinweis": "Zum Beispiel ein Codewort. Du schickst „Hast du meine Jacke?“ an eine Person, der du vertraust. Sie ruft an und holt dich raus, ohne Fragen.",
           "symbole": [
             "schreiben"
           ]
@@ -1104,7 +1104,7 @@
           "art": "info",
           "symbol": "hilfe",
           "titel": "Wenn es mehr ist als Druck",
-          "text": "Wirst du bedroht, erpresst oder zu etwas gedrängt, das dir schadet – auch online –, sprich mit einer Person, der du vertraust, oder mit dem SePAS. Das ist kein Verrat. BEE SECURE Helpline: 8002 1234 · Kanner- a Jugendtelefon: 116 111."
+          "text": "Wirst du bedroht, erpresst oder zu etwas gedrängt, das dir schadet – auch online? Dann sprich mit einer Person, der du vertraust, oder mit dem SePAS. Das ist kein Verrat. BEE SECURE Helpline: 8002 1234 · Kanner- a Jugendtelefon: 116 111."
         },
         {
           "art": "linien",

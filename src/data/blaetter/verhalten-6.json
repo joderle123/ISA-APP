@@ -611,7 +611,7 @@
         {
           "art": "aufgabe",
           "text": "Gestalte ein Zeichen für die andere Person und sag deinen wichtigsten Satz einmal laut. Kreuz an, wie er sich anfühlt.",
-          "hinweis": "Mal eine Karte oder ein Symbol, oder schreib den Satz schön auf – nur für dich oder zum Geben. Ein Satz, der trägt: sagen, was war, ohne „aber“; sagen, wie es für die andere Person gewesen sein könnte; anbieten, was du tun kannst.",
+          "hinweis": "Mal eine Karte oder ein Symbol, oder schreib den Satz schön auf – nur für dich oder zum Geben. Ein Satz, der trägt: sagen, was war, ohne „aber“. Sagen, wie es für die andere Person gewesen sein könnte. Anbieten, was du tun kannst.",
           "symbole": [
             "malen",
             "sprechen"
@@ -909,12 +909,12 @@
       "bausteine": [
         {
           "art": "text",
-          "text": "Hinter fast jedem Verhalten steckt ein Grund, auch wenn man ihn in der Sekunde nicht sieht. Wer ihn kennt, versteht sich besser – ohne sich zu verurteilen. Heute nimmst du eine Situation auseinander, die sich bei dir wiederholt, und schaust, was du darin brauchst – es gibt kein Richtig oder Falsch."
+          "text": "Hinter fast jedem Verhalten steckt ein Grund, auch wenn man ihn in der Sekunde nicht sieht. Wer ihn kennt, versteht sich besser – ohne sich zu verurteilen. Heute nimmst du eine Situation auseinander, die sich bei dir wiederholt. Du schaust, was du darin brauchst. Es gibt kein Richtig oder Falsch."
         },
         {
           "art": "aufgabe",
           "text": "Such dir eine Situation, die sich bei dir wiederholt. Kreuz an oder schreib eine eigene.",
-          "hinweis": "Nimm eine Situation, die dich nur ein bisschen kribbeln lässt. Oder arbeite mit Pol: Die Lehrerin nennt vor allen seine Fehler, er sagt „Das ist unfair“ und macht nicht mehr mit.",
+          "hinweis": "Nimm eine Situation, die dich nur ein bisschen kribbeln lässt. Oder arbeite mit Pol: Die Lehrerin nennt vor allen seine Fehler. Er sagt „Das ist unfair“ und macht nicht mehr mit.",
           "symbole": [
             "ankreuzen",
             "nachdenken"

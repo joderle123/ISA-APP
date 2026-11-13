@@ -17,11 +17,11 @@
       "bausteine": [
         {
           "art": "text",
-          "text": "Wut ist nicht überall gleich groß. An manchen Orten bleibst du ruhig, an anderen kocht es schnell – und meistens gibt es dafür einen Grund. Heute zeichnest du eine Karte deiner Wut: wo sie groß wird, woran du es früh merkst und was oft darunter liegt. Es gibt kein Richtig oder Falsch. Wut ist ein Gefühl, kein Fehler."
+          "text": "Wut ist nicht überall gleich groß. An manchen Orten bleibst du ruhig, an anderen kocht es schnell – und meistens gibt es dafür einen Grund. Heute zeichnest du eine Karte deiner Wut. Sie zeigt, wo die Wut groß wird und woran du es früh merkst. Sie zeigt auch, was oft darunter liegt. Es gibt kein Richtig oder Falsch. Wut ist ein Gefühl, kein Fehler."
         },
         {
           "art": "aufgabe",
-          "text": "Mal deine Wut-Landkarte aus: In jedem Feld färbst du die Ringe von innen nach außen – so weit, wie die Wut dort wächst.",
+          "text": "Mal deine Wut-Landkarte aus: In jedem Feld färbst du die Ringe von innen nach außen. Färbe so weit, wie die Wut dort wächst.",
           "hinweis": "Die Farbe passt zur Hitze: blau – grün – gelb – orange – rot. Beispiel: Schulbus = 4 Ringe in Orange, Training = 1 Ring in Blau. Ein Feld darf leer bleiben, in „mein eigener Ort“ schreibst du selbst hinein. Die zarten Hintergrundfarben bedeuten nichts.",
           "symbole": ["malen", "nachdenken"]
         },
@@ -97,7 +97,7 @@
         {
           "art": "aufgabe",
           "text": "Kreis deinen heißesten Ort auf der Karte ein. Welches Frühwarnzeichen meldet sich dort – und was wäre ein erster Schritt?",
-          "hinweis": "Wenn dir dein eigener Ort zu nah ist, nimm Ben: Im Bus drückt ihn jemand zur Seite, er ballt die Faust. Beispiel: Mein Kiefer wird fest – dann Hände öffnen, ausatmen, Kopfhörer auf.",
+          "hinweis": "Wenn dir dein eigener Ort zu nah ist, nimm Ben. Im Bus drückt ihn jemand zur Seite, er ballt die Faust. Beispiel: Mein Kiefer wird fest – dann Hände öffnen, ausatmen, Kopfhörer auf.",
           "symbole": ["einkreisen", "schreiben"]
         },
         {

@@ -43,7 +43,7 @@
       "bausteine": [
         {
           "art": "text",
-          "text": "Stress ist die Antwort deines Körpers auf eine Anforderung: Das Herz schlägt schneller, die Muskeln spannen sich an, der Blick wird eng. Das macht dich bereit. Zum Problem wird es, wenn es zu viel wird oder zu lange dauert."
+          "text": "Stress ist die Antwort deines Körpers auf eine Anforderung. Das Herz schlägt schneller, die Muskeln spannen sich an, der Blick wird eng. Das macht dich bereit. Zum Problem wird es, wenn es zu viel wird oder zu lange dauert."
         },
         {
           "art": "aufgabe",
@@ -100,7 +100,7 @@
           "art": "info",
           "symbol": "merke",
           "titel": "Zwei Seiten, zwei Wege",
-          "text": "Stress kippt, wenn die linke Seite schwerer wirkt als die rechte. Du kannst an beiden Seiten drehen: Anforderungen kleiner machen – planen, aufteilen, um Hilfe bitten – und Kraftquellen stärken: Schlaf, Bewegung, Menschen, Skills."
+          "text": "Stress kippt, wenn die linke Seite schwerer wirkt als die rechte. Du kannst an beiden Seiten drehen. Anforderungen kleiner machen: planen, aufteilen, um Hilfe bitten. Kraftquellen stärken: Schlaf, Bewegung, Menschen, Skills."
         },
         {
           "art": "aufgabe",
@@ -175,7 +175,7 @@
           "art": "info",
           "symbol": "hilfe",
           "titel": "Du entscheidest, was du teilst.",
-          "text": "Das Blatt gehört dir. Steht dein Barometer über Wochen auf „zu viel“, sprich mit jemandem, dem du vertraust, mit dem SePAS oder anonym und kostenlos mit dem Kanner- a Jugendtelefon: 116 111."
+          "text": "Das Blatt gehört dir. Steht dein Barometer über Wochen auf „zu viel“? Dann sprich mit jemandem, dem du vertraust, oder mit dem SePAS. Oder sprich anonym und kostenlos mit dem Kanner- a Jugendtelefon: 116 111."
         }
       ],
       "lehrer": {
@@ -1521,7 +1521,7 @@
           "art": "info",
           "symbol": "hilfe",
           "titel": "Wenn nichts mehr geht",
-          "text": "Blockiert dich das Aufschieben über Wochen oder fühlt sich alles sinnlos an, sprich mit jemandem, dem du vertraust, oder mit dem SePAS. Anonym und kostenlos hilft das Kanner- a Jugendtelefon: 116 111."
+          "text": "Blockiert dich das Aufschieben über Wochen oder fühlt sich alles sinnlos an? Dann sprich mit jemandem, dem du vertraust, oder mit dem SePAS. Anonym und kostenlos hilft das Kanner- a Jugendtelefon: 116 111."
         }
       ],
       "lehrer": {
@@ -1918,7 +1918,7 @@
           "art": "info",
           "symbol": "hilfe",
           "titel": "Wenn die Angst zu groß wird",
-          "text": "Kannst du vor Prüfungen tagelang kaum schlafen oder essen, oder fühlt sich der Druck nicht mehr auszuhalten an, sprich mit dem SePAS, deiner Klassenlehrerin oder deinem Klassenlehrer – oder anonym und kostenlos mit dem Kanner- a Jugendtelefon: 116 111."
+          "text": "Kannst du vor Prüfungen tagelang kaum schlafen oder essen? Oder fühlt sich der Druck nicht mehr auszuhalten an? Dann sprich mit dem SePAS, deiner Klassenlehrerin oder deinem Klassenlehrer. Oder sprich anonym und kostenlos mit dem Kanner- a Jugendtelefon: 116 111."
         }
       ],
       "lehrer": {

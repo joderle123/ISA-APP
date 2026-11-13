@@ -330,7 +330,7 @@
         },
         {
           "art": "mission",
-          "text": "Schreib deinen Satz auf einen Zettel und steck ihn dorthin, wo du ihn an einem schlechten Tag findest: Mäppchen, Handyhülle, Jackentasche.",
+          "text": "Schreib deinen Satz auf einen Zettel. Steck ihn dorthin, wo du ihn an einem schlechten Tag findest: Mäppchen, Handyhülle, Jackentasche.",
           "tage": 1
         }
       ],
@@ -1425,7 +1425,7 @@
         {
           "art": "aufgabe",
           "text": "Was hilft dir, wenn es dich wieder einholt? Kreuze an und ergänze.",
-          "hinweis": "Schlecht schlafen, gereizt sein, nichts spüren, immer wieder daran denken: Nach etwas Schwerem ist das normal – und wird meist nach Tagen oder Wochen schwächer.",
+          "hinweis": "Schlecht schlafen, gereizt sein, nichts spüren, immer wieder daran denken. Nach etwas Schwerem ist das normal – und wird meist nach Tagen oder Wochen schwächer.",
           "symbole": [
             "ankreuzen"
           ]

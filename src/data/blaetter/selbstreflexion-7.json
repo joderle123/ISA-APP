@@ -370,7 +370,7 @@
       "bausteine": [
         {
           "art": "text",
-          "text": "In deinem Alltag spielen Menschen eine Rolle, die nicht immer gleich auffallen: ein Freund, eine Trainerin, ein Lehrer, die Nachbarin von nebenan. Manche begleiten dich lange, andere nur ein Stück. Hier schaust du dir drei von ihnen genauer an – und was sie dir mitgegeben haben."
+          "text": "In deinem Alltag spielen Menschen eine Rolle, die nicht immer gleich auffallen. Ein Freund, eine Trainerin, ein Lehrer, die Nachbarin von nebenan. Manche begleiten dich lange, andere nur ein Stück. Hier schaust du dir drei von ihnen genauer an – und was sie dir mitgegeben haben."
         },
         {
           "art": "info",
@@ -675,7 +675,7 @@
       "bausteine": [
         {
           "art": "text",
-          "text": "Freunde zeigen auf ganz verschiedene Arten, dass sie jemanden mögen: Die eine schreibt dir spätabends „Gute Nacht“, der andere hilft dir, ohne ein Wort zu sagen. Beides kann „Ich mag dich“ heißen. Hier findest du heraus, woran du es merkst – und wie du es zeigst."
+          "text": "Freunde zeigen auf ganz verschiedene Arten, dass sie jemanden mögen. Die eine schreibt dir spätabends „Gute Nacht“. Der andere hilft dir, ohne ein Wort zu sagen. Beides kann „Ich mag dich“ heißen. Hier findest du heraus, woran du es merkst – und wie du es zeigst."
         },
         {
           "art": "aufgabe",
@@ -1161,7 +1161,7 @@
         {
           "art": "aufgabe",
           "text": "Probier es aus: Steh auf und sag deine Antwort einmal laut. Achte auf Füße, Schultern, Stimme – und setz danach auf jedem Regler ein Kreuz.",
-          "hinweis": "Wähle eine Situation. Du kannst es auch leise oder zu zweit ausprobieren: Eine Person spricht, die andere sagt danach, was sie gesehen und gehört hat. Niemand muss vorspielen.",
+          "hinweis": "Wähle eine Situation. Du kannst es auch leise oder zu zweit ausprobieren. Eine Person spricht, die andere sagt danach, was sie gesehen und gehört hat. Niemand muss vorspielen.",
           "symbole": [
             "sprechen",
             "partner"

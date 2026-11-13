@@ -899,7 +899,7 @@
       "bausteine": [
         {
           "art": "text",
-          "text": "Euer Auftrag: Findet heraus, was jemand wissen muss, der neu hierherkommt – wo es Hilfe gibt, wo Ruhe, wo der Bus fährt. Jeder Auftrag beginnt und endet an der Basis."
+          "text": "Euer Auftrag: Findet heraus, was jemand wissen muss, der neu hierherkommt. Wo gibt es Hilfe, wo Ruhe, wo fährt der Bus? Jeder Auftrag beginnt und endet an der Basis."
         },
         {
           "art": "aufgabe",
@@ -952,7 +952,7 @@
           "items": [
             {
               "titel": "Hilfe finden · Skill: Hilfe holen",
-              "text": "Findet die nächste Apotheke und einen Ort, an dem Menschen helfen können, wenn etwas passiert – etwa eine Rezeption oder ein Geschäft mit Personal. Wo genau?"
+              "text": "Findet die nächste Apotheke und einen Ort, an dem Menschen helfen können, wenn etwas passiert. Das kann eine Rezeption oder ein Geschäft mit Personal sein. Wo genau?"
             },
             {
               "titel": "Nachfragen · Skill: ansprechen",

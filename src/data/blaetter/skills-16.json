@@ -159,7 +159,7 @@
           "art": "info",
           "symbol": "hilfe",
           "titel": "Du entscheidest, was du teilst.",
-          "text": "Das Blatt gehört dir. Liegst du über Wochen oft lange wach oder bist ständig müde, sprich mit jemandem, dem du vertraust – zum Beispiel mit der Schulärztin, dem Schularzt oder beim SePAS."
+          "text": "Das Blatt gehört dir. Liegst du über Wochen oft lange wach oder bist ständig müde? Dann sprich mit jemandem, dem du vertraust. Zum Beispiel mit der Schulärztin, dem Schularzt oder beim SePAS."
         }
       ],
       "lehrer": {
@@ -397,7 +397,7 @@
         {
           "art": "aufgabe",
           "text": "Zeichne deine Energie an einem normalen Schultag: pro Uhrzeit ein Kreuz, dann die Kreuze zu einer Kurve verbinden.",
-          "hinweis": "In der letzten Zeile trägst du ein E ein, wenn du um diese Zeit etwas isst, und ein T, wenn du etwas trinkst."
+          "hinweis": "Trag in der letzten Zeile ein E ein, wenn du um diese Zeit etwas isst. Trag ein T ein, wenn du etwas trinkst."
         },
         {
           "art": "plan",
@@ -1145,7 +1145,7 @@
         {
           "art": "aufgabe",
           "text": "Wähl eine Bewegungsidee für die Woche, die dir Spaß macht, und leg fest, wann du sie machst.",
-          "hinweis": "In die zweite Zeile kommt dein Plan für das größte Hindernis, zum Beispiel: Wenn es in Strömen regnet, laufe ich zu Hause dreimal die Treppe hoch."
+          "hinweis": "In die zweite Zeile kommt dein Plan für das größte Hindernis. Zum Beispiel: Wenn es in Strömen regnet, laufe ich zu Hause dreimal die Treppe hoch."
         },
         {
           "art": "ankreuzen",
@@ -1198,7 +1198,7 @@
           "art": "info",
           "symbol": "hilfe",
           "titel": "Bewegung ersetzt keine Hilfe.",
-          "text": "Fühlst du dich über Wochen niedergeschlagen, sprich mit jemandem, dem du vertraust, oder ruf anonym und kostenlos das Kanner- a Jugendtelefon an: 116 111."
+          "text": "Fühlst du dich über Wochen niedergeschlagen, sprich mit jemandem, dem du vertraust. Oder ruf anonym und kostenlos das Kanner- a Jugendtelefon an: 116 111."
         }
       ],
       "lehrer": {

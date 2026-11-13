@@ -903,7 +903,7 @@
       "bausteine": [
         {
           "art": "text",
-          "text": "Schöne Momente gibt es mehr, als man im Alltag bemerkt: ein Abend mit Freunden, ein Tor, ein Lied im Bus, ein freier Tag. Auf den Bändern sammelst du deine aus den letzten Monaten. Einen davon hältst du mit allen Sinnen fest – er wird dein Anker für schwere Tage."
+          "text": "Schöne Momente gibt es mehr, als man im Alltag bemerkt. Ein Abend mit Freunden, ein Tor, ein Lied im Bus, ein freier Tag. Auf den Bändern sammelst du deine aus den letzten Monaten. Einen davon hältst du mit allen Sinnen fest – er wird dein Anker für schwere Tage."
         },
         {
           "art": "aufgabe",
@@ -1396,7 +1396,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Mal jeden Abend das Herz des Tages an: so viel und in der Farbe, wie sich der Tag gut angefühlt hat.",
+          "text": "Mal jeden Abend das Herz des Tages an. Mal so viel und in der Farbe, wie sich der Tag gut angefühlt hat.",
           "hinweis": "Auch ein halbes Herz ist ein Herz. An manchen Tagen darf es klein bleiben. Das letzte Herz ist für die ganze Woche.",
           "symbole": [
             "malen"

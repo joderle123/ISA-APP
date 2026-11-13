@@ -51,7 +51,7 @@
       "bausteine": [
         {
           "art": "text",
-          "text": "Im Skills-Kurs probierst du viel aus. In dieses Buch kommt nur, was bei dir wirklich wirkt – in vier Rubriken: Lieblingsskills, Pläne, Sätze, die tragen, und Menschen, die helfen. So findest du es auch nach dem Kurs noch: im Lycée, in der Ausbildung, zu Hause."
+          "text": "Im Skills-Kurs probierst du viel aus. In dieses Buch kommt nur, was bei dir wirklich wirkt. Es hat vier Rubriken: Lieblingsskills, Pläne, Sätze, die tragen, und Menschen, die helfen. So findest du es auch nach dem Kurs noch: im Lycée, in der Ausbildung, zu Hause."
         },
         {
           "art": "aufgabe",
@@ -1046,7 +1046,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Schneide die Karten aus und leg sie in eine Reihe: oben der Wert, der dir am wichtigsten ist, unten der, der dir am wenigsten bedeutet.",
+          "text": "Schneide die Karten aus und leg sie in eine Reihe. Oben der Wert, der dir am wichtigsten ist, unten der, der dir am wenigsten bedeutet.",
           "hinweis": "Auf die leeren Karten darfst du Werte schreiben, die dir fehlen – zum Beispiel Humor oder Glaube.",
           "symbole": [
             "schneiden"
@@ -1869,7 +1869,7 @@
         {
           "art": "info",
           "symbol": "hilfe",
-          "text": "Setzt dich online jemand unter Druck, will dir Geld abnehmen oder macht dir Angst? Sprich mit einer Vertrauensperson oder melde dich bei der BEE SECURE Helpline (8002 1234, kostenlos) oder beim Kanner- a Jugendtelefon (116 111)."
+          "text": "Setzt dich online jemand unter Druck, will dir Geld abnehmen oder macht dir Angst? Sprich mit einer Vertrauensperson oder melde dich bei der BEE SECURE Helpline (8002 1234, kostenlos). Oder melde dich beim Kanner- a Jugendtelefon (116 111)."
         }
       ],
       "lehrer": {

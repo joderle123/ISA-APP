@@ -38,7 +38,7 @@
       "bausteine": [
         {
           "art": "text",
-          "text": "Bedürfnisse sind das, was jeder Mensch zum Leben und zum Wohlfühlen braucht: Schlaf, Sicherheit, Menschen, auf die man zählen kann, Zeit für sich. Sie sind nicht allen gleich wichtig – und nicht immer gleich gut erfüllt. Ist ein Glas lange fast leer, merkt man es oft zuerst an der Stimmung: gereizt, müde, lustlos."
+          "text": "Bedürfnisse sind das, was jeder Mensch zum Leben und zum Wohlfühlen braucht. Schlaf, Sicherheit, Menschen, auf die man zählen kann, Zeit für sich. Sie sind nicht allen gleich wichtig – und nicht immer gleich gut erfüllt. Ist ein Glas lange fast leer, merkt man es oft zuerst an der Stimmung: gereizt, müde, lustlos."
         },
         {
           "art": "aufgabe",
@@ -321,7 +321,7 @@
       "bausteine": [
         {
           "art": "text",
-          "text": "Dein Leben spielt sich in vielen Bereichen ab. Selten läuft alles gleich gut: Mit den Freunden ist es gerade schön, in der Schule eher zäh, und der Schlaf kommt zu kurz. Das Netz zeigt dir auf einen Blick, wo es dich trägt und wo es dünn ist."
+          "text": "Dein Leben spielt sich in vielen Bereichen ab. Selten läuft alles gleich gut. Mit den Freunden ist es gerade schön, in der Schule eher zäh. Und der Schlaf kommt zu kurz. Das Netz zeigt dir auf einen Blick, wo es dich trägt und wo es dünn ist."
         },
         {
           "art": "aufgabe",
@@ -636,7 +636,7 @@
           "art": "info",
           "symbol": "wissen",
           "titel": "Schwere Tage bleiben länger hängen",
-          "text": "Das Gedächtnis hebt Schwieriges stärker hervor als Schönes. Eine Kurve, die du jeden Abend weiterzeichnest, zeigt ehrlicher, wie die Woche wirklich war – oft besser, als sie sich am Sonntag anfühlt."
+          "text": "Das Gedächtnis hebt Schwieriges stärker hervor als Schönes. Eine Kurve, die du jeden Abend weiterzeichnest, zeigt ehrlicher, wie die Woche wirklich war. Oft besser, als sie sich am Sonntag anfühlt."
         }
       ],
       "lehrer": {
@@ -861,7 +861,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Wenn deine Lebenslinie ein Buch wäre: Wie heißt das Kapitel, in dem du gerade steckst – und wie soll das nächste heißen?"
+          "text": "Wenn deine Lebenslinie ein Buch wäre: Wie heißt das Kapitel, in dem du gerade steckst? Und wie soll das nächste heißen?"
         },
         {
           "art": "spalten",

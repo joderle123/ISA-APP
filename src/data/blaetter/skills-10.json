@@ -788,7 +788,7 @@
           "art": "info",
           "symbol": "wissen",
           "titel": "Was wackelt, was trägt?",
-          "text": "Die ersten fünf Quellen hängen vor allem am Urteil anderer oder am Vergleich. Sie können dir an einem einzigen Tag genommen werden. Die letzten vier hängen mehr an dir: an dem, was du tust, was dir wichtig ist, und an Menschen, die dich nicht nach Noten sortieren. Gute Noten und Siege dürfen dich freuen – sie sollten nur nicht das Einzige sein, worauf du stehst."
+          "text": "Die ersten fünf Quellen hängen vor allem am Urteil anderer oder am Vergleich. Sie können dir an einem einzigen Tag genommen werden. Die letzten vier hängen mehr an dir. Sie hängen an dem, was du tust und was dir wichtig ist. Und an Menschen, die dich nicht nach Noten sortieren. Gute Noten und Siege dürfen dich freuen – sie sollten nur nicht das Einzige sein, worauf du stehst."
         },
         {
           "art": "aufgabe",
@@ -842,7 +842,7 @@
           "art": "info",
           "symbol": "hilfe",
           "titel": "Du entscheidest, was du teilst.",
-          "text": "Wenn die Gedanken über dich selbst oft sehr hart sind, sprich mit jemandem, dem du vertraust – mit der Leitung, beim SePAS oder anonym beim Kanner- a Jugendtelefon (116 111)."
+          "text": "Sind die Gedanken über dich selbst oft sehr hart? Dann sprich mit jemandem, dem du vertraust. Mit der Leitung, beim SePAS oder anonym beim Kanner- a Jugendtelefon (116 111)."
         }
       ],
       "lehrer": {
@@ -1469,7 +1469,7 @@
       "bausteine": [
         {
           "art": "text",
-          "text": "Ein Spruch über die Beine, ein Lach-Emoji unter einem Foto, ein „Du hast aber zugenommen“ beim Familienfest: Solche Sätze treffen, auch wenn sie als Spaß gemeint sind. Und oft steht jemand daneben und weiß nicht, was er sagen soll."
+          "text": "Ein Spruch über die Beine, ein Lach-Emoji unter einem Foto. Ein „Du hast aber zugenommen“ beim Familienfest. Solche Sätze treffen, auch wenn sie als Spaß gemeint sind. Und oft steht jemand daneben und weiß nicht, was er sagen soll."
         },
         {
           "art": "aufgabe",
@@ -1530,7 +1530,7 @@
           "art": "info",
           "symbol": "hilfe",
           "titel": "Hier bekommst du Hilfe",
-          "text": "Wenn Gedanken über Aussehen, Essen oder Gewicht viel Raum einnehmen oder dich jemand wegen deines Körpers fertigmacht: Sprich mit jemandem, dem du vertraust – beim SePAS, bei der Schulärztin oder dem Schularzt, anonym beim Kanner- a Jugendtelefon (116 111). Bei Problemen im Netz: BEE SECURE Helpline (8002 1234)."
+          "text": "Nehmen Gedanken über Aussehen, Essen oder Gewicht viel Raum ein? Oder macht dich jemand wegen deines Körpers fertig? Dann sprich mit jemandem, dem du vertraust. Beim SePAS, bei der Schulärztin oder dem Schularzt, anonym beim Kanner- a Jugendtelefon (116 111). Bei Problemen im Netz: BEE SECURE Helpline (8002 1234)."
         },
         {
           "art": "seitenumbruch"
@@ -1842,7 +1842,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Dein Kritiker, dein Freund: Schreib zwei Sätze deines Kritikers auf – eigene oder aus dem Kasten – und was dein innerer Freund antwortet.",
+          "text": "Dein Kritiker, dein Freund: Schreib zwei Sätze deines Kritikers auf – eigene oder aus dem Kasten. Schreib dazu, was dein innerer Freund antwortet.",
           "hinweis": "Nichts davon wird vorgelesen, außer du möchtest es."
         },
         {

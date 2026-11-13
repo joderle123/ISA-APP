@@ -533,7 +533,7 @@
           "art": "info",
           "symbol": "hilfe",
           "titel": "Kennst du so etwas aus deinem Leben?",
-          "text": "Dann musst du das nicht allein tragen. Sprich nach der Stunde mit der Leitung oder einer Person, der du vertraust – oder ruf anonym das Kanner- a Jugendtelefon an: 116 111."
+          "text": "Dann musst du das nicht allein tragen. Sprich nach der Stunde mit der Leitung oder einer Person, der du vertraust. Oder ruf anonym das Kanner- a Jugendtelefon an: 116 111."
         },
         {
           "art": "seitenumbruch"
@@ -1368,7 +1368,7 @@
         },
         {
           "art": "mission",
-          "text": "Zeig diese Woche einer Person, die oft allein steht, dass du sie siehst: ein Hallo, ein Platz neben dir oder eine Nachricht.",
+          "text": "Zeig diese Woche einer Person, die oft allein steht, dass du sie siehst. Ein Hallo, ein Platz neben dir oder eine Nachricht.",
           "tage": 1,
           "beweis": "ein Daumen reicht."
         }
