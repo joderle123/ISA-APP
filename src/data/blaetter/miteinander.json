@@ -158,11 +158,11 @@
         },
         {
           "art": "aufgabe",
-          "text": "Wie bist du ein guter Freund, eine gute Freundin?",
-          "hinweis": "Zum Beispiel: Ich teile meine Stifte. Ich lasse andere mitspielen.",
+          "text": "Dein Freund sagt: „Sonst bist du nicht mehr mein Freund.“ Was sagst du?",
+          "hinweis": "Zum Beispiel: „Ich mag dich. Aber ich will auch mal bestimmen.“",
           "symbole": ["nachdenken", "schreiben"]
         },
-        { "art": "satzanfaenge", "items": ["Das kann ich schon gut: Ich …", "Das will ich noch üben: Ich …"], "linien": 2 }
+        { "art": "satzanfaenge", "items": ["Ich sage: …", "So bin ich ein guter Freund: Ich …"], "linien": 2 }
       ],
       "lehrer": {
         "ziel": "Die Kinder unterscheiden, was einer Freundschaft guttut und was ihr schadet, beschreiben eine eigene Freundschaft und benennen, was sie als Freund oder Freundin gut können.",
@@ -170,7 +170,7 @@
           "Einstieg (5 Min.): „Woran merkst du, dass jemand dein Freund oder deine Freundin ist?“ Antworten an der Tafel sammeln.",
           "Aufgabe 1 (5 Min.): Sätze gemeinsam lesen, allein ankreuzen. Nachfragen: Wie fühlt sich „Sonst bist du nicht mehr mein Freund“ an?",
           "Aufgabe 2 (10 Min.): Malen und Sätze ergänzen. Wer mag, stellt sein Bild vor.",
-          "Aufgabe 3 (5 Min.): Beispiele an der Tafel sammeln, dann schreibt jedes Kind für sich.",
+          "Aufgabe 3 (8 Min.): Den Satz „Sonst bist du nicht mehr mein Freund“ zu zweit nachspielen. Antworten sammeln, die freundlich und klar sind. Dann schreibt jedes Kind für sich.",
           "Nach einer Woche fragen: „Wann warst du ein guter Freund oder eine gute Freundin?“"
         ],
         "hintergrund": "Mit dem Schulbeginn verändert sich, was Kinder unter Freundschaft verstehen: Neben dem gemeinsamen Spiel werden Hilfe, Trost und Verlässlichkeit wichtiger. Kinder in diesem Alter können solche Eigenschaften benennen, reagieren im Streit aber oft noch impulsiv – etwa mit „Dann bist du nicht mehr mein Freund“. Das Blatt verbindet deshalb das Erkennen guter Eigenschaften mit dem Blick auf das eigene Verhalten. Sich mit anderen verbunden zu fühlen, ist ein psychologisches Grundbedürfnis (Deci & Ryan, 2000); schulische Programme zum sozial-emotionalen Lernen stärken Beziehungsfertigkeiten nachweislich (Durlak et al., 2011).",
@@ -224,11 +224,11 @@
         },
         {
           "art": "aufgabe",
-          "text": "Comment es-tu un bon ami, une bonne amie ?",
-          "hinweis": "Par exemple : Je partage mes crayons. Je laisse les autres jouer avec moi.",
+          "text": "Ton ami dit : « Sinon, tu n’es plus mon ami. » Que réponds-tu ?",
+          "hinweis": "Par exemple : « Je t’aime bien. Mais je veux aussi décider parfois. »",
           "symbole": ["nachdenken", "schreiben"]
         },
-        { "art": "satzanfaenge", "items": ["Ça, je sais déjà le faire : je …", "Ça, je veux encore m’y entraîner : je …"], "linien": 2 }
+        { "art": "satzanfaenge", "items": ["Je dis : …", "Voilà comment je suis un bon ami : je …"], "linien": 2 }
       ],
       "lehrer": {
         "ziel": "Les enfants distinguent ce qui fait du bien à une amitié et ce qui lui nuit, décrivent une de leurs amitiés et nomment ce qu’ils font bien en tant qu’ami ou amie.",
@@ -236,7 +236,7 @@
           "Entrée en matière (5 min) : « À quoi remarques-tu que quelqu’un est ton ami ou ton amie ? » Noter les réponses au tableau.",
           "Exercice 1 (5 min) : lire les phrases ensemble, cocher seul. Demander : qu’est-ce que ça fait d’entendre « Sinon, tu n’es plus mon ami » ?",
           "Exercice 2 (10 min) : dessiner et compléter les phrases. Qui le souhaite présente son dessin.",
-          "Exercice 3 (5 min) : recueillir des exemples au tableau, puis chaque enfant écrit pour soi.",
+          "Exercice 3 (8 min) : rejouer à deux la phrase « Sinon, tu n’es plus mon ami ». Recueillir des réponses gentilles et claires. Puis chaque enfant écrit pour soi.",
           "Une semaine plus tard : « Quand as-tu été un bon ami ou une bonne amie ? »"
         ],
         "hintergrund": "À l’entrée à l’école, la façon dont les enfants comprennent l’amitié change : à côté du jeu commun, l’aide, la consolation et la fiabilité prennent de l’importance. À cet âge, les enfants savent nommer ces qualités, mais réagissent encore souvent de façon impulsive en cas de dispute, par exemple par « Alors tu n’es plus mon ami ». La fiche relie donc la reconnaissance des bonnes qualités à un regard sur son propre comportement. Se sentir lié aux autres est un besoin psychologique fondamental (Deci & Ryan, 2000) ; les programmes scolaires d’apprentissage socio-émotionnel renforcent de façon démontrée les compétences relationnelles (Durlak et al., 2011).",
