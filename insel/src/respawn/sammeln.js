@@ -4,6 +4,7 @@
 //     → { gefunden, von, geschafft, zeit, rest, sekunden }
 //   S.aktiv · S.beende()   (Tests und Autopilot: „respawn:weiter“ bricht ab)
 import * as THREE from 'three';
+import { richtungZu, lichtsaeule } from './lauf.js';
 
 export function createSammeln({ game }) {
   const { player, events, ui } = game;
@@ -28,7 +29,7 @@ export function createSammeln({ game }) {
         const r = new THREE.Mesh(ringGeo, ringMat); r.rotation.x = -Math.PI / 2; r.position.set(d.x, y + 0.12, d.z);
         gruppe.add(m, r);
         if (ui.setMarker) ui.setMarker('rs-ding-' + i, d.x, d.z, bild, '#ffd23f');
-        return { x: d.x, z: d.z, y, m, r, da: true, i };
+        return { x: d.x, z: d.z, y, m, r, da: true, i, saeule: lichtsaeule(game, d.x, d.z, 16, farbe) };
       });
       game.scene.add(gruppe);
       lauf = { liste, sekunden, bild, name, t: 0, fertig, gruppe, mat, ringMat };
@@ -39,7 +40,7 @@ export function createSammeln({ game }) {
     const l = lauf; if (!l) return;
     lauf = null;
     anzeige.style.display = 'none';
-    l.liste.forEach((d) => { if (ui.removeMarker) ui.removeMarker('rs-ding-' + d.i); });
+    l.liste.forEach((d) => { if (ui.removeMarker) ui.removeMarker('rs-ding-' + d.i); if (d.saeule) { d.saeule.weg(); d.saeule = null; } });
     game.scene.remove(l.gruppe); l.mat.dispose(); l.ringMat.dispose();
     const gefunden = l.liste.filter((d) => !d.da).length;
     l.fertig({ gefunden, von: l.liste.length, geschafft: gefunden >= l.liste.length, zeit: +l.t.toFixed(1), rest: Math.max(0, +(l.sekunden - l.t).toFixed(1)), sekunden: l.sekunden });
@@ -48,22 +49,24 @@ export function createSammeln({ game }) {
     const l = lauf; if (!l) return;
     l.t += dt;
     const p = player.position;
-    let offen = 0, nah = Infinity;
+    let offen = 0, nah = Infinity, naechstes = null;
     for (const d of l.liste) {
       if (!d.da) continue;
       const e = Math.hypot(p.x - d.x, p.z - d.z);
       if (e < 2.6) {
-        d.da = false; d.m.visible = false; d.r.visible = false;
+        d.da = false; d.m.visible = false; d.r.visible = false; if (d.saeule) { d.saeule.weg(); d.saeule = null; }
         if (ui.removeMarker) ui.removeMarker('rs-ding-' + d.i);
         if (game.particles) game.particles.emit({ x: d.x, y: d.y + 1.2, z: d.z, count: 14, spread: 0.6, speed: 2.2, up: 2.4, color: 0xffd23f, size: 0.3, life: 0.6, gravity: -3, drag: 2, alpha: 0.9 });
         events.emit('respawn:gesammelt', { i: d.i });
         continue;
       }
-      offen += 1; nah = Math.min(nah, e);
+      offen += 1; if (e < nah) { nah = e; naechstes = d; }
+      if (d.saeule) d.saeule.puls(l.t + d.i);
       d.m.rotation.y += dt * 2.4; d.m.position.y = d.y + 1.25 + Math.sin(l.t * 2.6 + d.i) * 0.16;
     }
     const rest = Math.max(0, l.sekunden - l.t);
-    anzeige.textContent = l.bild + ' ' + (l.liste.length - offen) + ' von ' + l.liste.length + ' · ' + Math.ceil(rest) + ' s' + (offen ? ' · ' + Math.round(nah) + ' m' : '');
+    const grad = naechstes ? Math.round(richtungZu(game, naechstes.x, naechstes.z) * 180 / Math.PI) : 0;
+    anzeige.innerHTML = (naechstes ? '<span class="rs-pfeil" style="display:inline-block;transform:rotate(' + grad + 'deg);margin-right:8px;color:#ffd23f">↑</span>' : '') + l.bild + ' ' + (l.liste.length - offen) + ' von ' + l.liste.length + ' · ' + Math.ceil(rest) + ' s' + (offen ? ' · ' + Math.round(nah) + ' m' : '');
     anzeige.style.background = rest < 8 ? 'rgba(160,40,30,.9)' : 'rgba(20,22,34,.86)';
     if (!offen || l.t >= l.sekunden) beende();
   }, { order: 61 });

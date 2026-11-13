@@ -147,7 +147,7 @@ export default {
       const cam = game.camera;
       if (!R) auftragEl.style.display = 'none';
       if (!cam || !marken.size) return;
-      const frei = R && !B.aktiv && !ui.overlay.count && !document.querySelector('.rs-voll') && !F.aktiv;   // beim Fahren keine Orts-Schilder (sie lagen auf dem Wagen)
+      const frei = R && !B.aktiv && !ui.overlay.count && !document.querySelector('.rs-voll') && !F.aktiv && !W.aktiv && !SA.aktiv;   // im Wettlauf und beim Sammeln ein ruhiges Bild: nur die Uhr   // beim Fahren keine Orts-Schilder (sie lagen auf dem Wagen)
       // „Schlafen gehen“ lag sonst mitten über Sprechblasen und Auswahl (sobald die Kraft leer ist und man noch redet)
       if (knopf) knopf.style.display = frei && !ui.bubbles.current && !ui.choices.open ? '' : 'none';
       auftragEl.style.display = frei && R.mission && auftragEl.textContent ? '' : 'none';
@@ -285,6 +285,7 @@ export default {
         else if (s.art === 'lauf' || s.art === 'sammeln') {
           await O.erzaehler(s.text, { kurz: true });
           let erg = null, sek = 0;
+          laufAn = true; marken_();
           for (;;) {
             const p = player.position, start = { x: p.x, z: p.z };
             const fk = fn(s.faktor, R) || 1.15, mehr = 1 + 0.25 * M.versuche;
@@ -304,6 +305,7 @@ export default {
             M.versuche += 1;
             player.teleport(start.x, start.z, player.yaw || 0);
           }
+          laufAn = false;
           if (roller && roller.aktiv) roller.ab();
           M.sterne.push(s.art === 'lauf' ? sterneLauf(erg, sek) : sterneSammeln(erg));
           R.log.push({ mission: m.id, schritt: M.i, erg });
@@ -370,8 +372,9 @@ export default {
       }, true);
     }
 
+    let laufAn = false;   // Wettlauf oder Sammeln läuft: keine Marken, kein Knopf „Ort“ oder „Auftrag“ mitten im Rennen
     function marken_() {
-      if (!R || !tagEnde) { alleWeg(); return; }
+      if (!R || !tagEnde || laufAn) { alleWeg(); return; }
       const soll = new Set();
       for (const id of heute()) {
         const s = sit(id), o = ortVon(fn(s.ort, R));

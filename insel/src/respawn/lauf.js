@@ -2,6 +2,26 @@
 // Bewegungsmodell: Es zählt nur, ob man rechtzeitig am Ziel ist.
 //   const W = createWettlauf({ game }); const erg = await W.starte({ ziel: { x, z }, sekunden, name })   → { geschafft, zeit, rest }
 //   W.aktiv · W.beende(geschafft)   (Tests und Autopilot: „respawn:weiter“ bricht ab = nicht geschafft)
+import * as THREE from 'three';
+
+// Winkel vom Blick der Kamera zum Ziel (rad, rechts = positiv) – für den Richtungspfeil in der Uhr
+export function richtungZu(game, x, z) {
+  const cam = game.camera, p = game.player.position;
+  if (!cam) return 0;
+  const f = new THREE.Vector3(); cam.getWorldDirection(f);
+  const dx = x - p.x, dz = z - p.z;
+  return Math.atan2(dx * -f.z + dz * f.x, dx * f.x + dz * f.z);
+}
+// Lichtsäule: zeigt von Weitem, wo das Ziel ist
+export function lichtsaeule(game, x, z, hoehe = 34, farbe = 0x7ed957) {
+  const y = game.world.island.getHeight ? game.world.island.getHeight(x, z) : 0;
+  const geo = new THREE.CylinderGeometry(0.55, 0.9, hoehe, 12, 1, true);
+  const mat = new THREE.MeshBasicMaterial({ color: farbe, transparent: true, opacity: 0.32, depthWrite: false, side: THREE.DoubleSide });
+  const m = new THREE.Mesh(geo, mat); m.position.set(x, y + hoehe / 2, z); m.name = 'rs-lichtsaeule'; m.renderOrder = 5;
+  game.scene.add(m);
+  return { mesh: m, weg() { game.scene.remove(m); geo.dispose(); mat.dispose(); }, puls(t) { mat.opacity = 0.26 + 0.1 * Math.sin(t * 3); } };
+}
+
 export function createWettlauf({ game }) {
   const { player, events, ui } = game;
   let lauf = null;
@@ -13,7 +33,7 @@ export function createWettlauf({ game }) {
   function starte({ ziel, sekunden = 26, name = 'Ziel' }) {
     if (lauf) return Promise.resolve(null);
     return new Promise((fertig) => {
-      lauf = { ziel, sekunden, name, t: 0, fertig };
+      lauf = { ziel, sekunden, name, t: 0, fertig, saeule: lichtsaeule(game, ziel.x, ziel.z) };
       if (ui.setMarker) ui.setMarker('rs-lauf', ziel.x, ziel.z, '🏁', '#7ed957');
       anzeige.style.display = '';
     });
@@ -22,6 +42,7 @@ export function createWettlauf({ game }) {
     const l = lauf; if (!l) return;
     lauf = null;
     anzeige.style.display = 'none';
+    if (l.saeule) l.saeule.weg();
     if (ui.removeMarker) ui.removeMarker('rs-lauf');
     l.fertig({ geschafft: !!geschafft, zeit: +l.t.toFixed(1), rest: Math.max(0, +(l.sekunden - l.t).toFixed(1)) });
   }
@@ -30,7 +51,10 @@ export function createWettlauf({ game }) {
     l.t += dt;
     const p = player.position, d = Math.hypot(p.x - l.ziel.x, p.z - l.ziel.z);
     const rest = Math.max(0, l.sekunden - l.t);
-    anzeige.textContent = '🏁 ' + l.name + ' · ' + Math.ceil(rest) + ' s · ' + Math.round(d) + ' m';
+    // Pfeil zum Ziel (dreht sich mit der Kamera), dann Name, Zeit, Meter
+    if (l.saeule) l.saeule.puls(l.t);
+    const grad = Math.round(richtungZu(game, l.ziel.x, l.ziel.z) * 180 / Math.PI);
+    anzeige.innerHTML = '<span class="rs-pfeil" style="display:inline-block;transform:rotate(' + grad + 'deg);margin-right:8px;color:#7ed957">↑</span>🏁 ' + l.name + ' · ' + Math.ceil(rest) + ' s · ' + Math.round(d) + ' m';
     anzeige.style.background = rest < 6 ? 'rgba(160,40,30,.9)' : 'rgba(20,22,34,.86)';
     if (d < 6) beende(true);
     else if (l.t >= l.sekunden) beende(false);

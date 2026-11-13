@@ -38,11 +38,13 @@ try {
         const p = pl.position, dx = z[0].x - p.x, dz = z[0].z - p.z;
         // hängt er (unter 0,25 m in 0,2 s)? dann kurz seitlich ausweichen und springen
         const weg = T.pos ? Math.hypot(p.x - T.pos.x, p.z - T.pos.z) : 1; T.pos = { x: p.x, z: p.z };
-        T.still = weg < 0.25 ? T.still + 1 : 0;
-        if (T.still >= 4) { T.aus = 6; T.seite = T.seite === 1 ? -1 : 1; T.still = 0; T.haenger = (T.haenger || 0) + 1; }
+        T.still = weg < 0.5 ? T.still + 1 : 0;
+        if (T.still >= 2) { T.aus = 6; T.seite = T.seite === 1 ? -1 : 1; T.still = 0; T.haenger = (T.haenger || 0) + 1; }
         let yaw = Math.atan2(-dx, -dz);
         if (T.aus > 0) { T.aus -= 1; yaw += 1.2 * (T.seite || 1); }
         pl.setIntent({ x: 0, y: 1, run: true, jump: T.aus > 4, jumpHeld: T.aus > 4, camYaw: yaw });
+        /* ohne Grafikkarte läuft die Spieluhr hier viel langsamer als echt: die Spielzeit ohne Bild vorspulen (8 Schritte zu 1/20 s) */
+        const L = LUMO.loop, bild = L.render; L.render = null; try { for (let i = 0; i < 8; i++) L.step(1 / 20); } finally { L.render = bild; }
         const u = P.uhrStand;
         return { was: 'lauf', rest: u ? +(u.sekunden - u.t).toFixed(1) : 0, sek: u ? u.sekunden : 0, m: Math.round(Math.hypot(dx, dz)), offen: z.length };
       }
@@ -58,7 +60,8 @@ try {
       if (P.frei && P.auftrag && P.auftrag.art === 'hin') {
         const a = document.querySelector('.rs-auftrag'), r = a ? a.getBoundingClientRect() : null;
         const erg = { was: 'hin', i: P.auftrag.i, text: P.auftrag.text, anzeige: r ? { oben: Math.round(r.top), unten: Math.round(r.bottom), links: Math.round(r.left), rechts: Math.round(r.right), sichtbar: a.style.display !== 'none' && r.width > 0, bild: innerWidth } : null };
-        if (T.hinGesehen === P.auftrag.i) P.auftragWeiter(); T.hinGesehen = P.auftrag.i;
+        T.hinMal = T.hinGesehen === P.auftrag.i ? (T.hinMal || 0) + 1 : 0; T.hinGesehen = P.auftrag.i;
+        if (T.hinMal >= 3) P.auftragWeiter();   // drei Blicke (0,6 s), dann weiter
         return erg;
       }
       E.emit('respawn:weiter');
@@ -66,10 +69,13 @@ try {
     }, id);
     let ende = null, bilder = {}, laeufe = [], letzter = null, hin = [], fertig = null;
     const t0 = Date.now();
-    while (Date.now() - t0 < 200000) {
+    /* ohne Grafikkarte läuft die Spieluhr langsamer als die echte Zeit – darum großzügig (GRENZE in Sekunden) */
+    while (Date.now() - t0 < (+(process.env.GRENZE || 500)) * 1000) {
       const s = await schritt(m.id);
       if (s.was === 'lauf') { if (!letzter || letzter.was !== 'lauf') laeufe.push({ sek: s.sek, m: s.m, offen: s.offen }); laeufe[laeufe.length - 1].rest = s.rest; }
-      if (s.was === 'hin' && !hin.some((h) => h.i === s.i)) hin.push(s);
+      if (process.env.LAUT && s.was !== (letzter && letzter.was)) console.log('   ', Math.round((Date.now() - t0) / 1000) + ' s', JSON.stringify(s).slice(0, 160));
+      /* die Anzeige erscheint mit dem nächsten Bild – darum zählt die spätere Messung, sobald sie sichtbar ist */
+      if (s.was === 'hin') { const h = hin.find((x) => x.i === s.i); if (!h) hin.push(s); else if (!(h.anzeige && h.anzeige.sichtbar) && s.anzeige && s.anzeige.sichtbar) Object.assign(h, s); }
       if (s.was === 'fertig') fertig = s;
       if (SHOTS && ['hin', 'lauf', 'fertig'].includes(s.was) && !bilder[s.was]) { bilder[s.was] = true; await page.waitForTimeout(s.was === 'lauf' ? 900 : 300); await page.screenshot({ path: join(SHOTS, `${m.id}-${s.was}.png`) }); }
       if (s.was === 'ende') { ende = s; break; }
