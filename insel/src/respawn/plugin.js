@@ -318,7 +318,9 @@ export default {
       const zuhause = ortVon('bootshaus');
       if (stadt && stadt.zeigeSpuren) stadt.zeigeSpuren(R.flags);
       if (stadt && stadt.parke) { stadt.parke(); if (stadt.lieferwagen) { stadt.lieferwagen.visible = !R.flags['auto.wasser']; stadt.lieferwagen.rotation.z = 0; } }   // der Lieferwagen steht morgens wieder am Kiosk – außer er liegt im Wasser
-      player.teleport(zuhause.x + 1.5, zuhause.z - 2.5, Math.atan2(-zuhause.x, -zuhause.z));
+      // Morgens vor der Tür stehen, Blick ins Dorf (zum Brunnen). Vorher stand die Kamera in der Wand vom Bootshaus:
+      // jeder Tag begann mit einem dunkelbraunen Bild ohne Figur.
+      { const mx = zuhause.x + 2.6, mz = zuhause.z - 3.8, brunnen = ortVon('dorfplatz'); player.teleport(mx, mz, Math.atan2(brunnen.x - mx, brunnen.z - mz)); }
       if (game.cameraRig.behindPlayer) game.cameraRig.behindPlayer();
       if (game.cameraRig.snap) game.cameraRig.snap();
       const folgen = folgenAmMorgen(R, FOLGEN);
