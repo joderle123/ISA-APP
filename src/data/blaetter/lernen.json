@@ -185,7 +185,7 @@
             { "bild": "icon:search", "text": "Sachen suchen" }
           ]
         },
-        { "art": "aufgabe", "text": "Was hilft dir? Kreuze an.", "hinweis": "Du darfst mehrere Kreuze machen.", "symbole": ["ankreuzen"] },
+        { "art": "aufgabe", "text": "Probiere zwei Tricks gleich aus. Kreuze an, was dir hilft.", "hinweis": "Du darfst mehrere Kreuze machen.", "symbole": ["ankreuzen"] },
         {
           "art": "ankreuzen",
           "spalten": 2,
@@ -262,7 +262,7 @@
             { "bild": "icon:search", "text": "affaires perdues" }
           ]
         },
-        { "art": "aufgabe", "text": "Qu’est-ce qui t’aide ? Coche.", "hinweis": "Tu peux faire plusieurs croix.", "symbole": ["ankreuzen"] },
+        { "art": "aufgabe", "text": "Essaie tout de suite deux astuces. Coche ce qui t’aide.", "hinweis": "Tu peux faire plusieurs croix.", "symbole": ["ankreuzen"] },
         {
           "art": "ankreuzen",
           "spalten": 2,

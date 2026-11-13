@@ -381,7 +381,7 @@
             "Ich bin schlecht im Bauen.",
             "Ich baue nie wieder.",
             "Ich probiere es anders.",
-            "Aus Fehlern lerne ich.",
+            "Was kann ich anders machen?",
             "Das ist blöd. Ich höre auf."
           ]
         },
@@ -455,7 +455,7 @@
             "Je suis nulle pour construire.",
             "Je ne construirai plus jamais.",
             "J’essaie autrement.",
-            "J’apprends de mes erreurs.",
+            "Qu’est-ce que je peux changer ?",
             "C’est nul. J’arrête."
           ]
         },
@@ -561,7 +561,7 @@
           "art": "zuordnen",
           "titel": ["Stopp-Satz", "Weiter-Satz"],
           "links": ["Ich kann das nicht.", "Das ist so viel auf einmal.", "Ich habe einen Fehler gemacht.", "Die anderen sind schneller."],
-          "rechts": ["Ich kann von den anderen lernen.", "Ich kann das noch nicht.", "Ich übe es in kleinen Schritten.", "Aus Fehlern lerne ich."]
+          "rechts": ["Ich kann von den anderen lernen.", "Ich kann das noch nicht.", "Ich übe es in kleinen Schritten.", "Der Fehler zeigt mir, was ich noch üben kann."]
         },
         {
           "art": "aufgabe",
@@ -658,7 +658,7 @@
           "art": "zuordnen",
           "titel": ["Phrase qui freine", "Phrase qui fait avancer"],
           "links": ["Je n’y arrive pas.", "C’est trop d’un coup.", "J’ai fait une erreur.", "Les autres sont plus rapides."],
-          "rechts": ["Je peux apprendre des autres.", "Je n’y arrive pas encore.", "Je m’exerce par petites étapes.", "J’apprends de mes erreurs."]
+          "rechts": ["Je peux apprendre des autres.", "Je n’y arrive pas encore.", "Je m’exerce par petites étapes.", "L’erreur me montre ce que je peux encore exercer."]
         },
         {
           "art": "aufgabe",

@@ -729,7 +729,7 @@
             }
           ]
         },
-        {"art": "aufgabe", "text": "Wann hilft dir der Schildkröten-Trick? Kreuze an.", "symbole": ["ankreuzen"]},
+        {"art": "aufgabe", "text": "Wann hilft dir der Schildkröten-Trick? Kreuze an.", "hinweis": "Übe den Trick heute einmal, wenn du ruhig bist.", "symbole": ["ankreuzen"]},
         {
           "art": "ankreuzen",
           "spalten": 2,
@@ -804,7 +804,7 @@
             }
           ]
         },
-        { "art": "aufgabe", "text": "Quand l’astuce de la tortue t’aide-t-elle ? Coche.", "symbole": ["ankreuzen"] },
+        { "art": "aufgabe", "text": "Quand l’astuce de la tortue t’aide-t-elle ? Coche.", "hinweis": "Entraîne-toi une fois aujourd’hui, quand tu es calme.", "symbole": ["ankreuzen"] },
         {
           "art": "ankreuzen",
           "spalten": 2,

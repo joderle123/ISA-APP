@@ -969,7 +969,7 @@
         { "art": "aufgabe", "text": "Schritt 4: Welche Brücke ist am fairsten? Begründe.", "symbole": ["nachdenken", "schreiben"] },
         { "art": "linien", "anzahl": 3 },
         { "art": "aufgabe", "text": "Denk an einen eigenen Streit. Wie könnte eure Brücke aussehen?", "symbole": ["nachdenken", "schreiben"] },
-        { "art": "satzanfaenge", "items": ["Ich wollte …", "Die andere Seite wollte …", "Unsere Brücke könnte sein: …"], "linien": 2 }
+        { "art": "satzanfaenge", "items": ["Ich wollte …", "Die andere Seite wollte …", "Unsere Brücke könnte sein: …", "Das probiere ich beim nächsten Streit zuerst: …"], "linien": 2 }
       ],
       "lehrer": {
         "ziel": "Die Kinder lernen ein Problemlöse-Modell in vier Schritten kennen, versetzen sich in beide Seiten eines Konflikts, sammeln Lösungen, schätzen deren Folgen ab und wählen eine faire Lösung.",
@@ -1066,7 +1066,7 @@
         { "art": "aufgabe", "text": "Étape 4 : quel pont est le plus juste ? Explique pourquoi.", "symbole": ["nachdenken", "schreiben"] },
         { "art": "linien", "anzahl": 3 },
         { "art": "aufgabe", "text": "Pense à une de tes disputes. À quoi pourrait ressembler votre pont ?", "symbole": ["nachdenken", "schreiben"] },
-        { "art": "satzanfaenge", "items": ["Je voulais …", "L’autre côté voulait …", "Notre pont pourrait être : …"], "linien": 2 }
+        { "art": "satzanfaenge", "items": ["Je voulais …", "L’autre côté voulait …", "Notre pont pourrait être : …", "À la prochaine dispute, j’essaie d’abord : …"], "linien": 2 }
       ],
       "lehrer": {
         "ziel": "Les enfants découvrent un modèle en quatre étapes : comprendre les deux côtés d’un conflit, chercher des solutions, en estimer les conséquences et choisir la plus juste.",
@@ -1558,7 +1558,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Denk an eine echte Situation, die dich stört. Schreibe deine Ich-Botschaft und übe sie mit einem Partner.",
+          "text": "Denk an eine Situation, die dich stört – echt oder erfunden. Schreibe deine Ich-Botschaft. Wenn du magst, übe sie mit einem Partner.",
           "symbole": ["schreiben", "partner"]
         },
         { "art": "satzanfaenge", "items": ["Wenn du …", "bin ich …", "Ich wünsche mir, dass …", "Mein Partner antwortet: …"] },
@@ -1671,7 +1671,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Pense à une vraie situation qui te dérange. Écris ton message je et entraîne-toi avec un camarade.",
+          "text": "Pense à une situation qui te dérange – vraie ou inventée. Écris ton message je. Si tu veux, entraîne-toi avec un camarade.",
           "symbole": ["schreiben", "partner"]
         },
         { "art": "satzanfaenge", "items": ["Quand tu …", "je suis …", "Je voudrais que …", "Mon camarade répond : …"] },

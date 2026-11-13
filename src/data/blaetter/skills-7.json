@@ -866,7 +866,7 @@
         {
           "art": "aufgabe",
           "text": "Wo liegen deine Zonen? Schreib in jede Zeile ein Stichwort aus deinem Alltag.",
-          "hinweis": "Komfortzone: fühlt sich sicher an. Lernzone: aufregend, aber machbar. Panikzone: zu viel.",
+          "hinweis": "Komfortzone: fühlt sich sicher an. Lernzone: aufregend, aber machbar. Panikzone: zu viel – hier ist ein Nein genau richtig.",
           "symbole": [
             "schreiben"
           ]
@@ -954,7 +954,7 @@
         {
           "art": "aufgabe",
           "text": "Où se trouvent tes zones ? Sur chaque ligne, écris un mot-clé de ton quotidien.",
-          "hinweis": "Zone de confort : on s’y sent en sécurité. Zone d’apprentissage : excitante, mais faisable. Zone de panique : trop.",
+          "hinweis": "Zone de confort : on s’y sent en sécurité. Zone d’apprentissage : excitante, mais faisable. Zone de panique : trop – ici, dire non est exactement ce qu’il faut.",
           "symbole": [
             "schreiben"
           ]
@@ -1141,7 +1141,7 @@
             "Verteidigerin",
             "Täter",
             "Außenstehende",
-            "Helfer"
+            "Mitmacher"
           ]
         },
         {
@@ -1155,7 +1155,7 @@
         "ablauf": [
           "Ecken-Lauf (12 Min.): Situationen aus der Einheit vorlesen; aus den Begründungen die vier Merkmal-Karten aufdecken.",
           "Aufgabe 1 allein (5 Min.). Lösung: Spaß – Konflikt – Mobbing – Mobbing – Grenzfall (einmal gefilmt, aber oft geteilt).",
-          "Geschichte vorlesen, Aufgabe 2 zu zweit (3 Min.). Lösung: Täter – Helfer – Verstärker – Außenstehende – Verteidigerin.",
+          "Geschichte vorlesen, Aufgabe 2 zu zweit (3 Min.). Lösung: Täter – Mitmacher – Verstärker – Außenstehende – Verteidigerin.",
           "Weiter mit „Kipp die Bühne“: Wer hat die meiste Macht, das zu stoppen?"
         ],
         "hintergrund": "Nach Olweus (1993) liegt Mobbing vor, wenn eine Person wiederholt und absichtlich verletzt wird und sich wegen ungleicher Kräfte kaum wehren kann; ein Konflikt spielt sich dagegen zwischen ungefähr Gleichstarken ab. Mobbing ist ein Gruppenprozess: Salmivalli et al. (1996) beschrieben neben Tätern und Betroffenen die Rollen Helfer, Verstärker, Außenstehende und Verteidiger. Online verstärkt, wer liked oder weiterleitet (Hinduja & Patchin, 2015).",

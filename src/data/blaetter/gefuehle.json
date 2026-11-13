@@ -412,7 +412,7 @@
         {
           "art": "aufgabe",
           "text": "Spielt zu zweit: Zeig ein Gefühl ohne Worte. Dein Partner rät.",
-          "hinweis": "Nur mit Gesicht und Körper. Dann tauscht ihr.",
+          "hinweis": "Nur mit Gesicht und Körper. Dein Partner fragt: „Bist du …?“ Dann tauscht ihr.",
           "symbole": ["partner", "zeigen"]
         },
         {"art": "gefuehle", "gefuehle": ["froh", "traurig", "wuetend", "aengstlich", "ueberrascht", "muede"], "spalten": 6},
@@ -475,7 +475,7 @@
         {
           "art": "aufgabe",
           "text": "À deux : montre une émotion sans mots. Ton ou ta camarade devine.",
-          "hinweis": "Seulement avec le visage et le corps. Ensuite, vous échangez.",
+          "hinweis": "Seulement avec le visage et le corps. Ton camarade demande : « Tu es … ? » Puis vous échangez.",
           "symbole": ["partner", "zeigen"]
         },
         {
@@ -581,7 +581,7 @@
         {"art": "aufgabe", "text": "Sag es genau. Ergänze die Sätze mit einem passenden Gefühlswort.", "symbole": ["schreiben"]},
         {
           "art": "satzanfaenge",
-          "items": ["Wenn mich jemand auslacht, bin ich …", "Vor einem Test bin ich …", "Wenn ich etwas Schweres geschafft habe, bin ich …"]
+          "items": ["Wenn mich jemand auslacht, bin ich …", "Vor einem Test bin ich …", "Wenn ich etwas Schweres geschafft habe, bin ich …", "Heute sage ich jemandem genau, wie es mir geht: Ich bin …"]
         },
         {
           "art": "info",
@@ -673,7 +673,7 @@
         { "art": "aufgabe", "text": "Dis-le précisément. Complète les phrases avec un mot d’émotion qui convient.", "symbole": ["schreiben"] },
         {
           "art": "satzanfaenge",
-          "items": ["Quand quelqu’un se moque de moi, je ressens …", "Avant un contrôle, je ressens …", "Quand j’ai réussi quelque chose de difficile, je ressens …"]
+          "items": ["Quand quelqu’un se moque de moi, je ressens …", "Avant un contrôle, je ressens …", "Quand j’ai réussi quelque chose de difficile, je ressens …", "Aujourd’hui, je dis précisément à quelqu’un comment je vais : je ressens …"]
         },
         {
           "art": "info",
@@ -1774,7 +1774,7 @@
         "ablauf": [
           "Einstieg (5 Min.): Ein großes Thermometer an die Tafel zeichnen. Frage: „Kann Wut klein sein? Wie fühlt sich große Wut an?“",
           "Aufgabe 1: Die Zonen gemeinsam lesen und mit dem Körper zeigen (kühl: ganz locker, kochend: ganz angespannt). Jedes Kind zeigt auf seine Zone gerade jetzt.",
-          "Aufgabe 2: Verbinden und besprechen: „Warum hilft Weggehen, wenn die Wut kocht?“ Je heißer die Wut, desto weniger helfen Worte.",
+          "Aufgabe 2: Verbinden und besprechen: „Warum hilft Weggehen, wenn die Wut kocht?“ Je heißer die Wut, desto weniger helfen Worte. Lösung: kühl – weiterspielen; warm – „Hör bitte auf“ sagen; heiß – atmen, bis 10 zählen; kochend – weggehen, Hilfe holen.",
           "Aufgabe 3: Jedes Kind malt oder schreibt seinen Plan für die heißeste Zone.",
           "Im Alltag nutzen: „Wo bist du gerade auf dem Thermometer?“ Die Zonen im Klassenzimmer aufhängen."
         ],
@@ -1909,7 +1909,7 @@
           "items": [
             {"titel": "S – Stopp", "text": "Halte inne. Sag nichts, tu nichts – nur für einen Moment."},
             {"titel": "T – Tritt einen Schritt zurück", "text": "Nimm Abstand, innerlich oder wirklich. Atme langsam aus."},
-            {"titel": "O – Beobachte", "text": "Was passiert in dir, was um dich herum? Was ist Tatsache, was Vermutung?"},
+            {"titel": "O – Orientiere dich", "text": "Was passiert in dir, was um dich herum? Was ist Tatsache, was Vermutung?"},
             {"titel": "P – Plane achtsam", "text": "Was ist dein Ziel? Was macht die Lage besser, nicht schlimmer?"}
           ]
         },
@@ -2423,7 +2423,7 @@
         {
           "art": "info",
           "symbol": "wissen",
-          "text": "Beim Üben steigt die Angst zuerst an. Wenn du dabeibleibst, sinkt sie wieder – jedes Mal ein bisschen schneller. Erst wenn eine Stufe leicht geworden ist, gehst du zur nächsten."
+          "text": "Beim Üben steigt die Angst zuerst an. Wenn du dabeibleibst, sinkt sie wieder – jedes Mal ein bisschen schneller. Erst wenn eine Stufe leicht geworden ist, gehst du zur nächsten. Sinkt sie einmal nicht ganz? Dann hast du trotzdem gelernt: Ich halte das aus."
         },
         {"art": "aufgabe", "text": "Übe jede Stufe mehrmals. Trag ein, wie groß die Angst vorher und nachher war.", "symbole": ["schreiben"]},
         {
@@ -2441,7 +2441,7 @@
         },
         {
           "art": "satzanfaenge",
-          "items": ["Mein Mut-Satz: …", "Nach Stufe 3 belohne ich mich mit …", "Wenn ich oben angekommen bin, feiere ich mit …"]
+          "items": ["Mein Mut-Satz: …", "Nach jeder geschafften Stufe belohne ich mich mit …", "Wenn ich oben angekommen bin, feiere ich mit …"]
         },
         {"art": "rueckblick"}
       ],
@@ -2506,7 +2506,7 @@
         {
           "art": "info",
           "symbol": "wissen",
-          "text": "Quand tu t’exerces, la peur monte d’abord. Si tu tiens bon, elle redescend – chaque fois un peu plus vite. Tu ne passes à l’échelon suivant que lorsque celui-ci est devenu facile."
+          "text": "Quand tu t’exerces, la peur monte d’abord. Si tu tiens bon, elle redescend – chaque fois un peu plus vite. Tu ne passes à l’échelon suivant que lorsque celui-ci est devenu facile. Elle ne redescend pas tout à fait ? Tu as quand même appris : je peux le supporter."
         },
         { "art": "aufgabe", "text": "Exerce chaque échelon plusieurs fois. Note l’intensité de la peur avant et après.", "symbole": ["schreiben"] },
         {
@@ -2524,7 +2524,7 @@
         },
         {
           "art": "satzanfaenge",
-          "items": ["Ma phrase de courage : …", "Après l’échelon 3, je me récompense avec …", "Quand j’arrive en haut, je fête ça avec …"]
+          "items": ["Ma phrase de courage : …", "Après chaque échelon réussi, je me récompense avec …", "Quand j’arrive en haut, je fête ça avec …"]
         },
         { "art": "rueckblick" }
       ],
@@ -2582,7 +2582,7 @@
           "punkte": [
             "Angst ist ein Alarmsystem: Herzklopfen, schneller Atem und Anspannung machen den Körper bereit für Flucht oder Kampf.",
             "Angst verläuft wie eine Welle: Sie steigt, erreicht einen Höhepunkt und sinkt wieder – auch wenn du nichts tust.",
-            "Vermeiden bringt sofort Erleichterung. Aber das Gehirn lernt: „Das war gefährlich.“ Beim nächsten Mal ist die Angst größer.",
+            "Vermeiden bringt sofort Erleichterung. Aber das Gehirn lernt: „Das war gefährlich.“ Beim nächsten Mal ist die Angst wieder da – oft noch größer.",
             "Wer sich der Situation in kleinen Schritten stellt, erlebt: „Ich halte das aus.“ So wird die Angst nach und nach kleiner."
           ]
         },
@@ -2607,7 +2607,7 @@
             "Ich finde Ausreden oder melde mich krank.",
             "Ich lenke mich mit dem Handy ab.",
             "Ich frage immer wieder nach, ob alles gut geht.",
-            "Ich mache es nur, wenn jemand mitkommt.",
+            "Ich mache es immer nur, wenn jemand mitkommt.",
             "Ich bleibe dabei, bis es leichter wird."
           ]
         },
@@ -2663,7 +2663,7 @@
           "punkte": [
             "La peur est un système d’alarme : cœur qui bat, respiration rapide et tension préparent le corps à fuir ou à se battre.",
             "La peur fonctionne comme une vague : elle monte, atteint un pic et redescend – même si tu ne fais rien.",
-            "Éviter soulage tout de suite. Mais le cerveau retient : « C’était dangereux. » La fois suivante, la peur est plus forte.",
+            "Éviter soulage tout de suite. Mais le cerveau retient : « C’était dangereux. » La fois suivante, la peur revient – souvent encore plus forte.",
             "Qui affronte la situation par petites étapes découvre : « Je peux le supporter. » Ainsi, la peur diminue peu à peu."
           ]
         },
@@ -2688,7 +2688,7 @@
             "Je trouve des excuses ou je me fais porter malade.",
             "Je me distrais avec mon téléphone.",
             "Je demande sans cesse si tout va bien se passer.",
-            "Je ne le fais que si quelqu’un m’accompagne.",
+            "Je ne le fais toujours que si quelqu’un m’accompagne.",
             "Je reste dans la situation jusqu’à ce que ça aille mieux."
           ]
         },

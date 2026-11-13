@@ -257,7 +257,7 @@
           "items": [
             {
               "titel": "Ich fühle mich …",
-              "text": "genervt,"
+              "text": "Ich fühle mich genervt,"
             },
             {
               "titel": "wenn …",
@@ -269,7 +269,7 @@
             },
             {
               "titel": "Ich wünsche mir …",
-              "text": "dass du mich ausreden lässt."
+              "text": "Ich wünsche mir, dass du mich ausreden lässt."
             }
           ]
         },
@@ -364,7 +364,7 @@
           "items": [
             {
               "titel": "Je me sens …",
-              "text": "agacé,"
+              "text": "Je me sens agacé,"
             },
             {
               "titel": "quand …",
@@ -376,7 +376,7 @@
             },
             {
               "titel": "J’aimerais …",
-              "text": "que tu me laisses finir."
+              "text": "J’aimerais que tu me laisses finir."
             }
           ]
         },

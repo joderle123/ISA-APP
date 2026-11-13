@@ -933,7 +933,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Male deinen Wachhund. Gib ihm einen Namen.",
+          "text": "Male deinen Wachhund. Gib ihm einen Namen. Was sagst du zu ihm?",
+          "hinweis": "Beispiel: „Danke, Wachhund. Es ist nur ein Blatt.“",
           "symbole": [
             "malen",
             "schreiben"
@@ -941,7 +942,7 @@
         },
         {
           "art": "feld",
-          "label": "Mein Wachhund heißt …",
+          "label": "Mein Wachhund heißt … Ich sage zu ihm: …",
           "hoehe": 3.5,
           "zeichnen": true
         }
@@ -950,7 +951,7 @@
         "ziel": "Die Kinder verstehen Angst als Alarmanlage, die manchmal zu laut anschlägt, unterscheiden echte Gefahr von falschem Alarm und kennen Hilfen, die den „Wachhund“ beruhigen.",
         "ablauf": [
           "Einstieg (5 Min.): „Wann bellt ein Hund?“ Geschichte vorlesen, Wachhund an die Tafel zeichnen.",
-          "Aufgabe 1 (10 Min.): Sätze vorlesen, ankreuzen, begründen lassen. „Falscher Alarm heißt nicht: Das Gefühl ist falsch. Der Wachhund meint es gut.“",
+          "Aufgabe 1 (10 Min.): Sätze vorlesen, ankreuzen, begründen lassen. „Falscher Alarm heißt nicht: Das Gefühl ist falsch. Der Wachhund meint es gut.“ Lösung: echte Gefahr – Auto, knurrender Hund; falscher Alarm – Blatt, Vorlesen (die Angst ist echt, die Gefahr nicht).",
           "Aufgabe 2 (5 Min.): Hilfen vorlesen, zwei gleich ausprobieren (tief atmen, Mut-Satz leise und laut).",
           "Aufgabe 3 (10 Min.): Hund malen, Namen geben. Wer mag, schreibt ihm einen Satz („Danke, Wachhund. Es ist nur ein Blatt.“) und stellt ihn vor.",
           "Abschluss: „Der Wachhund bellt, damit ich aufpasse. Ich prüfe, ob es wirklich gefährlich ist.“"
@@ -1051,7 +1052,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Dessine ton chien de garde. Donne-lui un nom.",
+          "text": "Dessine ton chien de garde. Donne-lui un nom. Que lui dis-tu ?",
+          "hinweis": "Exemple : « Merci, mon chien. Ce n’est qu’une feuille. »",
           "symbole": [
             "malen",
             "schreiben"
@@ -1059,7 +1061,7 @@
         },
         {
           "art": "feld",
-          "label": "Mon chien de garde s’appelle …",
+          "label": "Mon chien de garde s’appelle … Je lui dis : …",
           "hoehe": 3.5,
           "zeichnen": true
         }
@@ -1068,7 +1070,7 @@
         "ziel": "Les enfants comprennent la peur comme un système d’alarme parfois trop fort, distinguent le vrai danger de la fausse alerte et connaissent des aides qui calment le « chien de garde ».",
         "ablauf": [
           "Entrée (5 min) : « Quand un chien aboie-t-il ? » Lire l’histoire, dessiner le chien de garde au tableau.",
-          "Tâche 1 (10 min) : lire les phrases, cocher, faire justifier. « Fausse alerte ne veut pas dire : l’émotion est fausse. Le chien de garde veut bien faire. »",
+          "Tâche 1 (10 min) : lire les phrases, cocher, faire justifier. « Fausse alerte ne veut pas dire : l’émotion est fausse. Le chien de garde veut bien faire. » Solution : vrai danger – la voiture, le chien qui grogne ; fausse alerte – la feuille, lire devant la classe (la peur est vraie, le danger non).",
           "Tâche 2 (5 min) : lire les aides, en essayer deux (bien respirer, phrase de courage à voix basse puis haute).",
           "Tâche 3 (10 min) : dessiner le chien, lui donner un nom. Qui veut lui écrit une phrase (« Merci, chien de garde. Ce n’est qu’une feuille. ») et le présente.",
           "Conclusion : « Le chien de garde aboie pour que je fasse attention. Je vérifie si c’est vraiment dangereux. »"
@@ -1276,7 +1278,8 @@
           "items": [
             "Ein anderer Gedanke wäre: …",
             "Dann würde ich mich … fühlen.",
-            "Dann würde ich …"
+            "Dann würde ich …",
+            "Kommt der erste Gedanke wieder, frage ich mich: …"
           ]
         },
         {
@@ -1466,7 +1469,8 @@
           "items": [
             "Une autre pensée serait : …",
             "Alors je me sentirais …",
-            "Alors je …"
+            "Alors je …",
+            "Si la première pensée revient, je me demande : …"
           ]
         },
         {
@@ -2336,7 +2340,7 @@
           "punkte": [
             "Jeden Tag dieselbe Zeit am selben Ort: 15 Minuten nur für Sorgen.",
             "Kommt eine Sorge zu einer anderen Zeit, schreibst du ein Stichwort auf und tust etwas anderes.",
-            "In der Sorgenzeit liest du die Zettel. Kannst du etwas tun? Dann plane den ersten Schritt. Wenn nicht, lass die Sorge los.",
+            "In der Sorgenzeit liest du die Zettel. Kannst du etwas tun? Dann plane den ersten Schritt. Wenn nicht, schreib „Das lasse ich für heute los“ dazu und leg den Zettel weg.",
             "Nicht direkt vor dem Schlafen."
           ]
         },
@@ -2502,7 +2506,7 @@
           "punkte": [
             "Chaque jour, même heure, même endroit : 15 minutes rien que pour les soucis.",
             "Si un souci arrive à un autre moment, tu notes un mot-clé et tu fais autre chose.",
-            "Pendant ce temps, tu relis tes papiers. Peux-tu agir ? Alors prépare un premier pas. Sinon, laisse ce souci partir.",
+            "Pendant ce temps, tu relis tes papiers. Peux-tu agir ? Alors prépare un premier pas. Sinon, écris « Je laisse ça pour aujourd’hui » et range le papier.",
             "Pas juste avant de dormir."
           ]
         },
@@ -2756,7 +2760,7 @@
           "punkte": [
             "Gehst du weg, sinkt die Angst sofort. Das fühlt sich wie Rettung an.",
             "Dein Kopf merkt sich: Die Situation war gefährlich, Weggehen hat geholfen.",
-            "Beim nächsten Mal ist die Angst größer, und du erlebst nie, dass sie von allein sinkt."
+            "Beim nächsten Mal ist die Angst wieder da, oft sogar größer. Und du erlebst nie, dass sie von allein sinkt."
           ]
         },
         {
@@ -2931,7 +2935,7 @@
           "punkte": [
             "Si tu pars, la peur baisse tout de suite. On a l’impression d’être sauvé.",
             "Ton cerveau retient : la situation était dangereuse, partir a aidé.",
-            "La fois suivante, la peur est plus grande, et tu ne découvres jamais qu’elle baisse toute seule."
+            "La fois suivante, la peur est de nouveau là, souvent plus grande. Et tu ne découvres jamais qu’elle baisse toute seule."
           ]
         },
         {
@@ -3093,7 +3097,7 @@
               "text": "Mein Körper meldet sich. Ich habe es noch im Griff."
             },
             {
-              "titel": "ab 60 · stark",
+              "titel": "ab 70 · stark",
               "text": "Ich reagiere schnell. Zuhören und Nachdenken fallen schwer."
             },
             {
@@ -3130,7 +3134,7 @@
           "art": "einschaetzung",
           "optionen": [
             "ab 30",
-            "ab 60",
+            "ab 70",
             "ab 90"
           ],
           "items": [
@@ -3149,7 +3153,7 @@
           "art": "info",
           "symbol": "merke",
           "titel": "Hohe Zahl: erst der Körper",
-          "text": "Bei 90 funktioniert Nachdenken kaum noch. Dann helfen Dinge, die den Körper beruhigen: Wasser, Bewegung, langsames Ausatmen. Reden und Überlegen klappen wieder, wenn die Zahl sinkt."
+          "text": "Ab 70 fällt Nachdenken schwer, bei 90 geht es kaum noch. Dann helfen Dinge, die den Körper beruhigen: Wasser, Bewegung, langsames Ausatmen. Reden und Überlegen klappen wieder, wenn die Zahl sinkt."
         },
         {
           "art": "aufgabe",
@@ -3163,7 +3167,7 @@
           "art": "einschaetzung",
           "optionen": [
             "ab 30",
-            "ab 60",
+            "ab 70",
             "ab 90"
           ],
           "items": [
@@ -3181,7 +3185,7 @@
         {
           "art": "aufgabe",
           "text": "Schreib deinen Plan: Wenn die Spannung steigt, dann …",
-          "hinweis": "Je ein Plan für ab 60 und für ab 90. Nimm Ideen aus der Liste oder eigene.",
+          "hinweis": "Je ein Plan für ab 70 und für ab 90. Nimm Ideen aus der Liste oder eigene.",
           "symbole": [
             "schreiben"
           ]
@@ -3191,7 +3195,7 @@
           "zeilen": 2,
           "beispiele": [
             {
-              "wenn": "Wenn ich ab 60 merke, dass mein Herz klopft und die Fäuste fest sind,",
+              "wenn": "Wenn ich ab 70 merke, dass mein Herz klopft und die Fäuste fest sind,",
               "dann": "gehe ich kurz raus und atme 6-mal lang aus."
             }
           ]
@@ -3233,12 +3237,12 @@
         }
       ],
       "lehrer": {
-        "ziel": "Die Jugendlichen schätzen ihre Spannung auf einer Skala von 0 bis 100 ein, erkennen ihre Warnzeichen und ordnen jeder Stufe passende Fertigkeiten zu. Sie formulieren je einen Plan für „ab 60“ und „ab 90“.",
+        "ziel": "Die Jugendlichen schätzen ihre Spannung auf einer Skala von 0 bis 100 ein, erkennen ihre Warnzeichen und ordnen jeder Stufe passende Fertigkeiten zu. Sie formulieren je einen Plan für „ab 70“ und „ab 90“.",
         "ablauf": [
           "Einstieg (5 Min.): Barometer an die Tafel zeichnen. Frage: „Bei welcher Zahl kannst du nicht mehr gut zuhören?“",
           "Warnzeichen (7 Min.): Aufgabe 2 allein ankreuzen, danach freiwillig: „Was merkst du zuerst?“",
           "Hilfen (10 Min.): Info lesen, Aufgabe 3 ankreuzen (mehrere Kreuze je Zeile sind erwünscht). Zwei Hilfen kurz testen.",
-          "Plan (8 Min.): Wenn-dann-Pläne für ab 60 und ab 90; zu zweit prüfen: konkret und in der Schule machbar?",
+          "Plan (8 Min.): Wenn-dann-Pläne für ab 70 und ab 90; zu zweit prüfen: konkret und in der Schule machbar?",
           "Wochenaufgabe: Aufgabe 5. Nach einer Woche nachfragen: Welche Hilfe hat bei welcher Zahl geholfen?"
         ],
         "hintergrund": "Das Barometer verbindet zwei Bausteine der DBT: die Einschätzung der Anspannung auf einer Skala (hier 0 bis 100) und die Wahl der Fertigkeit nach der Stärke der Erregung. Bei niedriger Spannung genügen Denk- und Gesprächsfertigkeiten, bei sehr hoher helfen körperorientierte Stresstoleranz-Fertigkeiten wie Kälte, Bewegung und langsames Atmen, weil Nachdenken dann kaum noch gelingt (Linehan, 2015; Rathus & Miller, 2015). Passend dazu wählen Menschen bei starker Erregung eher Ablenkung als Umdeuten (Sheppes et al., 2011).",
@@ -3253,7 +3257,7 @@
         },
         "impulse": [
           "Wo merkst du es zuerst: im Körper, in den Gedanken oder im Verhalten?",
-          "Was hilft bei 60, was bei 90 – und warum nicht dasselbe?"
+          "Was hilft bei 70, was bei 90 – und warum nicht dasselbe?"
         ],
         "tipps": [
           "Gruppe: Zahlen nicht vergleichen; anonyme Hilfen-Wand mit Karten sammeln.",
@@ -3285,7 +3289,7 @@
               "text": "Mon corps se manifeste. Je garde le contrôle."
             },
             {
-              "titel": "dès 60 · fort",
+              "titel": "dès 70 · fort",
               "text": "Je réagis vite. Écouter et réfléchir devient difficile."
             },
             {
@@ -3322,7 +3326,7 @@
           "art": "einschaetzung",
           "optionen": [
             "dès 30",
-            "dès 60",
+            "dès 70",
             "dès 90"
           ],
           "items": [
@@ -3341,7 +3345,7 @@
           "art": "info",
           "symbol": "merke",
           "titel": "Chiffre élevé : le corps d’abord",
-          "text": "À 90, réfléchir ne marche presque plus. Ce qui aide alors, c’est ce qui calme le corps : l’eau, le mouvement, une expiration lente. Parler et réfléchir redeviennent possibles quand le chiffre baisse."
+          "text": "Dès 70, réfléchir devient difficile ; à 90, ça ne marche presque plus. Ce qui aide alors, c’est ce qui calme le corps : l’eau, le mouvement, une expiration lente. Parler et réfléchir redeviennent possibles quand le chiffre baisse."
         },
         {
           "art": "aufgabe",
@@ -3355,7 +3359,7 @@
           "art": "einschaetzung",
           "optionen": [
             "dès 30",
-            "dès 60",
+            "dès 70",
             "dès 90"
           ],
           "items": [
@@ -3373,7 +3377,7 @@
         {
           "art": "aufgabe",
           "text": "Écris ton plan : si la tension monte, alors …",
-          "hinweis": "Un plan pour dès 60 et un pour dès 90. Prends des idées de la liste ou les tiennes.",
+          "hinweis": "Un plan pour dès 70 et un pour dès 90. Prends des idées de la liste ou les tiennes.",
           "symbole": [
             "schreiben"
           ]
@@ -3385,7 +3389,7 @@
           "zeilen": 2,
           "beispiele": [
             {
-              "wenn": "Si, dès 60, je sens mon cœur battre et mes poings se serrer,",
+              "wenn": "Si, dès 70, je sens mon cœur battre et mes poings se serrer,",
               "dann": "je sors un instant et j’expire lentement 6 fois."
             }
           ]
@@ -3427,12 +3431,12 @@
         }
       ],
       "lehrer": {
-        "ziel": "Les jeunes évaluent leur tension de 0 à 100, repèrent leurs signaux d’alerte et associent à chaque niveau des outils adaptés. Ils formulent un plan pour « dès 60 » et un pour « dès 90 ».",
+        "ziel": "Les jeunes évaluent leur tension de 0 à 100, repèrent leurs signaux d’alerte et associent à chaque niveau des outils adaptés. Ils formulent un plan pour « dès 70 » et un pour « dès 90 ».",
         "ablauf": [
           "Entrée en matière (5 min) : dessiner le baromètre au tableau. Question : « À quel chiffre n’écoutes-tu plus bien ? »",
           "Signaux (7 min) : tâche 2 en individuel, puis sur base volontaire : « Que remarques-tu en premier ? »",
           "Outils (10 min) : lire l’encadré, tâche 3 (plusieurs croix par ligne sont voulues). Tester deux outils.",
-          "Plan (8 min) : plans « si … alors » pour dès 60 et dès 90 ; à deux : concret et faisable à l’école ?",
+          "Plan (8 min) : plans « si … alors » pour dès 70 et dès 90 ; à deux : concret et faisable à l’école ?",
           "Tâche de la semaine : tâche 5. Une semaine plus tard : quel outil a aidé à quel chiffre ?"
         ],
         "hintergrund": "Le baromètre associe deux éléments de la DBT : l’évaluation de la tension sur une échelle (ici de 0 à 100) et le choix de l’outil selon l’intensité de l’activation. À faible tension, les compétences de réflexion et de dialogue suffisent ; à très forte tension, ce sont les outils corporels de tolérance à la détresse (froid, mouvement, respiration lente) qui aident, car réfléchir devient presque impossible (Linehan, 2015 ; Rathus & Miller, 2015). Quand l’émotion est intense, on choisit d’ailleurs plutôt la distraction que la réinterprétation (Sheppes et al., 2011).",
@@ -3447,7 +3451,7 @@
         },
         "impulse": [
           "Où le remarques-tu en premier : corps, pensées ou comportement ?",
-          "Qu’est-ce qui aide à 60, qu’est-ce qui aide à 90 – et pourquoi pas la même chose ?"
+          "Qu’est-ce qui aide à 70, qu’est-ce qui aide à 90 – et pourquoi pas la même chose ?"
         ],
         "tipps": [
           "Groupe : ne pas comparer les chiffres ; mur d’outils avec cartes anonymes.",

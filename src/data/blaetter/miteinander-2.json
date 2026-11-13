@@ -600,7 +600,7 @@
         "ziel": "Die Jugendlichen unterscheiden Konflikt und Mobbing anhand klarer Merkmale, kennen die Rollen in der Gruppe und wissen, wie sie bei Cybermobbing Beweise sichern und Hilfe holen.",
         "ablauf": [
           "Einstieg (5 Min.): „Wann wird aus Streit Mobbing?“ Antworten sammeln, dann den Info-Kasten lesen.",
-          "Aufgabe 1 allein, dann zu zweit vergleichen. Unsichere Fälle im Plenum klären, z. B. das geteilte Foto: einmal gepostet, aber immer wieder gesehen.",
+          "Aufgabe 1 allein, dann zu zweit vergleichen. Unsichere Fälle im Plenum klären, z. B. das geteilte Foto: einmal gepostet, aber immer wieder gesehen. Lösung: Konflikt – Mobbing – Konflikt – Mobbing – Grenzfall – Mobbing.",
           "Fallvignette lesen. Aufgabe 2: Schritte sammeln, die wenig Mut brauchen (nicht mitlachen, nichts weiterleiten, Leonor privat schreiben).",
           "Aufgabe 3 und den Tipp-Kasten gemeinsam besprechen.",
           "Abschluss: Hilfenummern und Ansprechpersonen im Lycée zeigen. Alle tragen eine Vertrauensperson ein."
@@ -718,7 +718,7 @@
         "ziel": "Les jeunes distinguent conflit et harcèlement à l’aide de critères clairs, connaissent les rôles dans le groupe et savent comment garder des preuves et demander de l’aide en cas de cyberharcèlement.",
         "ablauf": [
           "Entrée en matière (5 min) : « Quand une dispute devient-elle du harcèlement ? » Recueillir les réponses, puis lire l’encadré.",
-          "Exercice 1 en individuel, puis comparer à deux. Clarifier en classe les cas incertains, p. ex. la photo partagée : publiée une fois, mais vue sans cesse.",
+          "Exercice 1 en individuel, puis comparer à deux. Clarifier en classe les cas incertains, p. ex. la photo partagée : publiée une fois, mais vue sans cesse. Solution : conflit – harcèlement – conflit – harcèlement – cas limite – harcèlement.",
           "Lire la vignette. Exercice 2 : chercher des gestes qui demandent peu de courage (ne pas rire, ne rien transférer, écrire à Leonor en privé).",
           "Discuter ensemble l’exercice 3 et l’encadré.",
           "Clôture : montrer les numéros d’aide et les personnes-ressources du lycée. Chaque élève note une personne de confiance."
@@ -1084,7 +1084,8 @@
           "items": [
             "Ich habe gedacht:",
             "Die andere Person hat vielleicht gedacht:",
-            "Vielleicht hat sie sich … gefühlt."
+            "Vielleicht hat sie sich … gefühlt.",
+            "Beim nächsten Streit frage ich zuerst: …"
           ],
           "linien": 2
         },
@@ -1170,7 +1171,7 @@
           "hinweis": "Tu n’as pas besoin d’écrire de noms.",
           "symbole": ["nachdenken", "schreiben"]
         },
-        { "art": "satzanfaenge", "items": ["J’ai pensé :", "L’autre personne a peut-être pensé :", "Elle s’est peut-être sentie …"], "linien": 2 },
+        { "art": "satzanfaenge", "items": ["J’ai pensé :", "L’autre personne a peut-être pensé :", "Elle s’est peut-être sentie …", "À la prochaine dispute, je demande d’abord : …"], "linien": 2 },
         { "art": "rueckblick" }
       ],
       "lehrer": {

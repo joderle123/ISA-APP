@@ -317,7 +317,7 @@
         {
           "art": "aufgabe",
           "text": "Mila geht den STOPP-Weg. Was tut und denkt sie an jeder Station?",
-          "hinweis": "Orientieren heißt schauen und spüren: Was ist passiert? Was fühle ich? Was will ich? Die Anfangsbuchstaben der vier Stationen ergeben das Wort STOP.",
+          "hinweis": "Orientieren heißt schauen und spüren: Was ist passiert? Was fühle ich? Was will ich? Die Anfangsbuchstaben der vier Stationen ergeben STOP – wie auf dem Stoppschild.",
           "symbole": [
             "schreiben"
           ]
@@ -505,7 +505,7 @@
         {
           "art": "aufgabe",
           "text": "Mila suit le chemin STOP. Que fait-elle et que pense-t-elle à chaque étape ?",
-          "hinweis": "Observer, c’est regarder et ressentir : que s’est-il passé ? Que ressens-tu ? Que veux-tu ? Les premières lettres des quatre étapes forment le mot STOP.",
+          "hinweis": "Observer, c’est regarder et ressentir : que s’est-il passé ? Que ressens-tu ? Que veux-tu ? Les premières lettres des quatre étapes forment STOP – comme sur le panneau.",
           "symbole": [
             "schreiben"
           ]
@@ -880,11 +880,11 @@
         "ablauf": [
           "Einstieg (5 Min.): „Jemand geht grußlos an dir vorbei. Was könnte das heißen?“ Drei bis vier Deutungen sammeln, nicht bewerten.",
           "Modell (3 Min.): Die drei Kästen erklären. A so beschreiben, wie eine Kamera es filmt; B steckt dazwischen und ist oft kaum bemerkbar.",
-          "Aufgabe 1 zu zweit (5 Min.). Aufgabe 2 gemeinsam (10 Min.): beide Bewertungen nebeneinander ausfüllen. „Was ändert sich, wenn nur B anders ist?“",
+          "Aufgabe 1 zu zweit (5 Min.; Lösung: A, B, C, A, B, C). Aufgabe 2 gemeinsam (10 Min.): beide Bewertungen nebeneinander ausfüllen. „Was ändert sich, wenn nur B anders ist?“",
           "Aufgabe 3 und 4 einzeln (12 Min.): eigener oder erfundener Fall, wird nicht vorgelesen. Gefühlsstärke vorher und nachher vergleichen.",
           "Abschluss (3 Min.): „Welche andere Bewertung hat am meisten geholfen?“ Beispiele ohne persönliche Details."
         ],
-        "hintergrund": "Das ABC-Modell geht auf Ellis (1962) zurück und ist ein Kern der kognitiven Verhaltenstherapie (KVT): Nicht das Ereignis (A) löst Gefühl und Verhalten (C) aus, sondern seine Bewertung (B). Beck (2011) beschreibt automatische Gedanken, die schnell und ungeprüft auftauchen, sich aber erfragen lassen. Arbeitsbücher für Kinder und Jugendliche führen das Modell an kleinen Alltagsfällen ein (Stallard, 2019). Ziel ist nicht „positiv“, sondern realistischer zu denken.",
+        "hintergrund": "Das ABC-Modell geht auf Ellis (1962) zurück und ist ein Kern der kognitiven Verhaltenstherapie (KVT): Nicht das Ereignis (A) allein bestimmt Gefühl und Verhalten (C), sondern vor allem seine Bewertung (B). Beck (2011) beschreibt automatische Gedanken, die schnell und ungeprüft auftauchen, sich aber erfragen lassen. Arbeitsbücher für Kinder und Jugendliche führen das Modell an kleinen Alltagsfällen ein (Stallard, 2019). Ziel ist nicht „positiv“, sondern realistischer zu denken. Nicht verwechseln mit dem ABC-Beobachtungsbogen der Toolbox: Dort steht B für das Verhalten (Behavior), hier für die Bewertung.",
         "quellen": [
           "Ellis, A. (1962). Reason and Emotion in Psychotherapy. New York: Lyle Stuart.",
           "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
@@ -1094,7 +1094,7 @@
           "Exercices 3 et 4 individuellement (12 min) : cas personnel ou inventé, sans lecture à voix haute. Comparer l’intensité avant et après.",
           "Conclusion (3 min) : « Quelle autre interprétation a le plus aidé ? » Exemples sans détails personnels."
         ],
-        "hintergrund": "Le modèle ABC remonte à Ellis (1962) et constitue un noyau de la thérapie cognitivo-comportementale (TCC) : ce n’est pas l’événement (A) qui déclenche l’émotion et le comportement (C), mais son interprétation (B). Beck (2011) décrit des pensées automatiques, qui surgissent vite et sans examen, mais que l’on peut questionner. Les manuels pour enfants et adolescents introduisent le modèle par de petits cas du quotidien (Stallard, 2019). Le but n’est pas de penser « positif », mais plus réaliste.",
+        "hintergrund": "Le modèle ABC remonte à Ellis (1962) et constitue un noyau de la thérapie cognitivo-comportementale (TCC) : ce n’est pas l’événement (A) à lui seul qui détermine l’émotion et le comportement (C), mais surtout son interprétation (B). Beck (2011) décrit des pensées automatiques, qui surgissent vite et sans examen, mais que l’on peut questionner. Les manuels pour enfants et adolescents introduisent le modèle par de petits cas du quotidien (Stallard, 2019). Le but n’est pas de penser « positif », mais plus réaliste. À ne pas confondre avec la grille d’observation ABC : là, B désigne le comportement, ici l’interprétation.",
         "quellen": [
           "Ellis, A. (1962). Reason and Emotion in Psychotherapy. New York: Lyle Stuart.",
           "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",

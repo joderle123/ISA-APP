@@ -138,7 +138,7 @@
           "Aufgabe 2 allein (4 Min.). Die eigene Situation wird nicht vorgelesen, außer jemand möchte das.",
           "Mission vorlesen. Nächstes Mal reicht ein Daumen."
         ],
-        "hintergrund": "Das Blatt folgt dem ABC-Modell von Ellis (1962): Nicht das Ereignis (A) löst Gefühl und Verhalten (C) aus, sondern seine Bewertung (B). Beck (2011) beschreibt dieselbe Kette als kognitives Modell, in dem automatische Gedanken von tiefer liegenden Grundüberzeugungen gefärbt werden – den Glaubenssätzen, um die es im Modul geht. Arbeitsbücher der kognitiven Verhaltenstherapie für Kinder und Jugendliche führen das Modell an alltäglichen, harmlosen Situationen ein, bevor eigene Themen folgen (Stallard, 2019).",
+        "hintergrund": "Das Blatt folgt dem ABC-Modell von Ellis (1962): Nicht das Ereignis (A) allein bestimmt Gefühl und Verhalten (C), sondern vor allem seine Bewertung (B). Beck (2011) beschreibt dieselbe Kette als kognitives Modell, in dem automatische Gedanken von tiefer liegenden Grundüberzeugungen gefärbt werden – den Glaubenssätzen, um die es im Modul geht. Arbeitsbücher der kognitiven Verhaltenstherapie für Kinder und Jugendliche führen das Modell an alltäglichen, harmlosen Situationen ein, bevor eigene Themen folgen (Stallard, 2019).",
         "quellen": [
           "Ellis, A. (1962). Reason and Emotion in Psychotherapy. New York: Lyle Stuart.",
           "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
@@ -262,7 +262,7 @@
           "Exercice 2 seul (4 min). La situation personnelle n’est pas lue à voix haute, sauf si quelqu’un le souhaite.",
           "Lire la mission. La prochaine fois, un pouce suffit."
         ],
-        "hintergrund": "La feuille suit le modèle ABC d’Ellis (1962) : ce n’est pas l’événement (A) qui déclenche l’émotion et le comportement (C), mais la façon dont on l’interprète (B). Beck (2011) décrit la même chaîne comme un modèle cognitif, où les pensées automatiques sont teintées par des convictions plus profondes – les croyances, au cœur du module. Les manuels de thérapie cognitivo-comportementale pour enfants et adolescents introduisent le modèle à partir de situations quotidiennes et anodines, avant d’aborder des thèmes personnels (Stallard, 2019).",
+        "hintergrund": "La feuille suit le modèle ABC d’Ellis (1962) : ce n’est pas l’événement (A) à lui seul qui détermine l’émotion et le comportement (C), mais surtout la façon dont on l’interprète (B). Beck (2011) décrit la même chaîne comme un modèle cognitif, où les pensées automatiques sont teintées par des convictions plus profondes – les croyances, au cœur du module. Les manuels de thérapie cognitivo-comportementale pour enfants et adolescents introduisent le modèle à partir de situations quotidiennes et anodines, avant d’aborder des thèmes personnels (Stallard, 2019).",
         "quellen": [
           "Ellis, A. (1962). Reason and Emotion in Psychotherapy. New York: Lyle Stuart.",
           "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
@@ -1290,7 +1290,7 @@
         },
         {
           "art": "mission",
-          "text": "Trag dein Kärtchen bei dir. Meldet sich der alte Satz: Stopp denken, Kärtchen lesen. Einmal reicht.",
+          "text": "Trag dein Kärtchen bei dir. Meldet sich der alte Satz: kurz bemerken („Da bist du wieder“), Kärtchen lesen. Einmal reicht.",
           "tage": 1,
           "beweis": "Hat dein Kärtchen einmal gearbeitet?"
         }
@@ -1436,7 +1436,7 @@
         },
         {
           "art": "mission",
-          "text": "Garde ta petite carte sur toi. Si l’ancienne phrase revient : pense « stop » et lis ta carte. Une fois suffit.",
+          "text": "Garde ta petite carte sur toi. Si l’ancienne phrase revient : remarque-la (« Te revoilà »), puis lis ta carte. Une fois suffit.",
           "tage": 1,
           "beweis": "ta carte a-t-elle servi une fois ?"
         }
