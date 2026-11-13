@@ -2,7 +2,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { neuerLauf, wirke, wahlen, zeitFuer, ohneWahl, planeJahreszeit, jahreszeitWechsel, ausgangFuer, akteFuer, verschlaeft, hatKarte, verteile, folgenAmMorgen, neuerTag, JAHRESZEITEN } from '../../src/respawn/run.js';
-import { SITUATIONEN, AUSGAENGE, AKTE, KARTEN, FIGUREN, STIMMEN, ORTE, ORT_AKTIONEN, LEUTE_AKTIONEN, LEUTE_REIHE, FOLGEN, VERPASST, WICHTIG, statistSagt, TRATSCH_ZEILEN } from '../../src/respawn/daten/index.js';
+import { SITUATIONEN, AUSGAENGE, AKTE, KARTEN, FIGUREN, STIMMEN, ORTE, ORT_AKTIONEN, LEUTE_AKTIONEN, LEUTE_REIHE, FOLGEN, VERPASST, WICHTIG, statistSagt, TRATSCH_ZEILEN, ideenFuerHeute, IDEEN_ZEILEN } from '../../src/respawn/daten/index.js';
 
 const K = (kopf = 'zuendschnur', zuhause = 'oma', tasche = 'ok') => ({ kopf, zuhause, tasche });
 const woerter = (s) => String(s).trim().split(/\s+/).filter(Boolean).length;
@@ -240,4 +240,26 @@ test('Freundschaft: ab Bindung 3 kommt am Morgen eine Einladung, danach gibt es 
   wirke(R, sz.find((x) => x[0] === 'e')[1]);
   assert.equal(LEUTE_AKTIONEN.treffen.wenn(R, 'pit'), false, 'nur einmal'); assert.equal(R.bond.pit, 4);
   assert.ok(LEUTE_REIHE.includes('treffen'));
+});
+
+test('Ideen für heute: höchstens drei, je Ort eine, nie Mist, kurze Sätze, müde → Bett zuerst', () => {
+  for (const z of IDEEN_ZEILEN) assert.ok(z.trim().split(/\s+/).length <= 12, z);
+  const R = neuerLauf({ seed: 7, karten: { kopf: 'ruhig', zuhause: 'voll', tasche: 'voll' } });
+  const orteJeTag = new Set();
+  for (let t = 0; t < 12; t++) {
+    R.jz = Math.floor(t / 3); R.tag = t % 3;
+    const i = ideenFuerHeute(R);
+    assert.ok(i.length >= 2 && i.length <= 3, 'Tag ' + t + ': ' + i.length);
+    assert.equal(new Set(i.map((x) => x.ort)).size, i.length, 'je Ort eine');
+    for (const x of i) { assert.ok(ORTE.some((o) => o.id === x.ort), x.ort); orteJeTag.add(x.ort); }
+  }
+  assert.ok(orteJeTag.size >= 6, 'über das Jahr verschiedene Orte: ' + orteJeTag.size);
+  R.kraft = 0; R.jz = 0; R.tag = 0;
+  const muede = ideenFuerHeute(R);
+  assert.equal(muede[0].ort, 'zuhause');
+  assert.ok(muede.every((x) => x.ort !== 'kiosk'), 'ohne Kraft kein Job');
+  R.kraft = 3; R.druck = 80;
+  assert.equal(ideenFuerHeute(R)[0].ort, 'steg');
+  R.flags['job.weg'] = true; R.flags['pit.weg'] = true; R.flags['meidet.mika'] = true;
+  for (let t = 0; t < 12; t++) { R.jz = Math.floor(t / 3); R.tag = t % 3; for (const x of ideenFuerHeute(R)) assert.ok(!['kiosk', 'brunnen', 'krater'].includes(x.ort), x.ort); }
 });

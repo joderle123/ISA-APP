@@ -74,3 +74,6 @@ man darf fast alles tun (auch Mist), keine Waffen, kein Gefängnis. Die Folgen s
   - Im Hub steht RESPAWN als Kachel bei den Materialien (Klassebuch: `hub-apps.js`, Test `respawn-kachel.js`).
 - **Offen:** Spieltest mit Jugendlichen, Frauen-Modelle (Paket „Ultimate Modular Women“ fehlt noch), Gesichtsausdruck der
   neuen Figuren.
+  - **Ideen für heute** (`welt.js` → `ideenFuerHeute`): Im Handy stehen unter „Heute“ bis zu drei Hinweise, wo gerade etwas
+    los ist („Pit übt Tricks am Brunnen.“) – jeden Tag andere, nur Dinge, die heute wirklich gehen, nie Mist. Antippen
+    bringt einen hin. Wer müde ist, sieht zuerst das Bett; bei viel Druck zuerst den Steg. Kein Auftrag, kein Lohn.

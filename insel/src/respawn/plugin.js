@@ -15,7 +15,7 @@ import { baueStadt } from './stadt.js';
 import { createFahren } from './fahren.js';
 import { createRoller } from './roller.js';
 import { createWettlauf } from './lauf.js';
-import { SITUATIONEN, AUSGAENGE, AKTE, AKTE_LEER, ORTE, ORT_AKTIONEN, LEUTE_AKTIONEN, LEUTE_REIHE, FOLGEN, VERPASST, WICHTIG, statistSagt } from './daten/index.js';
+import { SITUATIONEN, AUSGAENGE, AKTE, AKTE_LEER, ORTE, ORT_AKTIONEN, LEUTE_AKTIONEN, LEUTE_REIHE, FOLGEN, VERPASST, WICHTIG, statistSagt, ideenFuerHeute } from './daten/index.js';
 import { neuerLauf, zieheKarten, planeJahreszeit, jahreszeitWechsel, jahreszeit, ausgangFuer, akteFuer, wirke, bond, verteile, folgenAmMorgen, neuerTag,
   JAHRESZEIT_NAME, UHR_NACH_KRAFT, TAGE_JE_JAHRESZEIT } from './run.js';
 
@@ -286,6 +286,7 @@ export default {
     }
     const weltFuerHandy = () => ({
       ereignisse: heute().map((id) => { const s = sit(id); const o = ORTE.find((x) => x.ort === fn(s.ort, R)); return { id, titel: s.titel, wo: o ? o.name : 'auf der Insel' }; }),
+      ideen: ideenFuerHeute(R).map((i) => { const o = ORTE.find((x) => x.id === i.ort); return { ort: i.ort, text: i.text, bild: o.bild, wo: o.name }; }),
       orte: ORTE.map((o) => ({ id: o.id, name: o.name, bild: o.bild })),
       hin(ref) {
         const [art, id] = ref.split(':');

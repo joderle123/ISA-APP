@@ -315,7 +315,8 @@ export function createOberflaeche({ game }) {
     const seiten = {
       heute: () => {
         const w = welt ? welt() : { ereignisse: [], orte: [] };
-        return (w.ereignisse.length ? '<h4>Heute los</h4>' + w.ereignisse.map((x) => `<button type="button" class="rs-hin" data-hin="e:${x.id}"><b>❗ ${esc(x.titel)}</b><small>${esc(x.wo)} · hinbringen</small></button>`).join('') : '<p class="rs-lead">Heute steht nichts an. Mach, was du willst.</p>')
+        return (w.ereignisse.length ? '<h4>Heute los</h4>' + w.ereignisse.map((x) => `<button type="button" class="rs-hin" data-hin="e:${x.id}"><b>❗ ${esc(x.titel)}</b><small>${esc(x.wo)} · hinbringen</small></button>`).join('') : '<p class="rs-lead">Kein Termin heute. Der Tag gehört dir.</p>')
+          + ((w.ideen || []).length ? '<h4>Was heute los ist</h4>' + w.ideen.map((x) => `<button type="button" class="rs-hin rs-idee" data-hin="o:${x.ort}"><b>${x.bild} ${esc(x.text)}</b><small>${esc(x.wo)} · hinbringen</small></button>`).join('') : '')
           + '<h4>Orte – antippen bringt dich hin</h4><div class="rs-orte">' + w.orte.map((x) => `<button type="button" class="rs-hin" data-hin="o:${x.id}"><b>${x.bild} ${esc(x.name)}</b></button>`).join('') + '</div>';
       },
       chats: () => ((R.chats || []).length ? (R.chats || []).slice().reverse().map((c) => `<div class="rs-chat"><b>${esc(nameVon(c.von))}</b><p>${esc(c.text)}</p></div>`).join('') : '<p class="rs-lead">Noch keine Nachrichten.</p>'),

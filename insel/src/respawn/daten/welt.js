@@ -469,6 +469,34 @@ export function statistSagt(R, wer) {
 }
 export const TRATSCH_ZEILEN = TRATSCH.map((x) => x[1]).concat(GRUSS);
 
+// ---------- Ideen für heute (Handy → „Heute“) ----------
+// Ein freier Tag ohne Termin wirkte leer („Heute steht nichts an“). Jetzt stehen im Handy bis zu drei Hinweise, wo gerade
+// etwas los ist – nur auf Dinge, die es heute wirklich gibt, nie auf Mist. Kein Auftrag, kein Lohn fürs Hingehen.
+const IDEEN = [
+  { ort: 'zuhause', akt: 'schlafen', text: 'Du bist müde. Dein Bett wartet.', wenn: (R) => (R.kraft || 0) <= 0, vor: true },
+  { ort: 'steg', akt: 'wasser', text: 'Dein Kopf ist voll. Am Steg ist es still.', wenn: (R) => R.druck >= 60, vor: true },
+  { ort: 'kiosk', akt: 'job', text: 'Fränz braucht heute jemanden am Kiosk.', wenn: (R) => !hat(R, 'job.weg') },
+  { ort: 'brunnen', akt: 'tricks', text: 'Pit übt Tricks am Brunnen.', wenn: (R) => !hat(R, 'pit.weg') },
+  { ort: 'brunnen', akt: 'rennen', text: 'Pit wettet: Du bist zu langsam.', wenn: (R) => !hat(R, 'pit.weg') },
+  { ort: 'steg', akt: 'angeln', text: 'Am Steg beißen heute die Fische.' },
+  { ort: 'garten', akt: 'garten', text: 'Oma Lucinda schafft den Garten nicht allein.' },
+  { ort: 'buehne', akt: 'auftreten', text: 'Die Bühne am Markt ist heute frei.' },
+  { ort: 'leuchtturm', akt: 'aussicht', text: 'Vom Leuchtturm sieht man heute weit.' },
+  { ort: 'strand', akt: 'schwimmen', text: 'Das Wasser am Strand ist ruhig.' },
+  { ort: 'krater', akt: 'abhaengen', text: 'Mikas Crew hängt am Krater.', wenn: (R) => !hat(R, 'meidet.mika') },
+  { ort: 'markt', akt: 'roller', text: 'Am Markt steht ein Tretroller. 35 Euro.', wenn: (R) => R.geld >= 35 },
+  { ort: 'lieferwagen', akt: 'ueben', text: 'Fränz hat Zeit. Fahren üben?' },
+];
+export function ideenFuerHeute(R, max = 3) {
+  const geht = (i) => { const a = ORT_AKTIONEN[i.akt]; return !!a && !a.mist && (a.kraft || 0) <= (R.kraft || 0) && (a.kostet || 0) <= R.geld && (!a.wenn || a.wenn(R)) && (!i.wenn || i.wenn(R)); };
+  const vor = IDEEN.filter((i) => i.vor && geht(i)), rest = IDEEN.filter((i) => !i.vor && geht(i));
+  const n = tag(R) * 5 + (R.seed || 0), aus = vor.slice(0, max), orte = new Set(aus.map((i) => i.ort));
+  // jeden Tag andere Hinweise, höchstens einer je Ort
+  for (let k = 0; k < rest.length && aus.length < max; k++) { const i = rest[(n + k * 3) % rest.length]; if (!orte.has(i.ort) && !aus.includes(i)) { aus.push(i); orte.add(i.ort); } }
+  return aus.map((i) => ({ ort: i.ort, text: i.text }));
+}
+export const IDEEN_ZEILEN = IDEEN.map((i) => i.text);
+
 export const LEUTE_REIHE = ['gestehen', 'treffen', 'reden', 'einladen', 'helfen', 'entschuldigen', 'zurueck', 'leihen', 'laestern', 'filmen', 'aufziehen', 'schubsen'];
 
 // ---------- Folgen (jeden Morgen geprüft) ----------
