@@ -1,0 +1,289 @@
+/* Skills-Dossiers: ein Heft je Modul, A4, druckfertig. Farben je Station über --a (Akzent) und --z (zart). */
+@page { size: 210mm 297mm; margin: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+:root { --n: #1E2440; --leise: #5B6480; --linie: #9AA2B5; --gelb: #FFF1BF; --gelbt: #F2B824; --a: #C2500F; --z: #FCE9DD; }
+html, body { background: #fff; }
+body { font-family: 'Nunito', sans-serif; font-size: 10.6pt; line-height: 1.38; color: var(--n); -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+strong, b { font-weight: 800; }
+h1, h2, h3, h4, .f { font-family: 'Fredoka', sans-serif; font-weight: 600; line-height: 1.12; }
+svg { display: block; width: 100%; height: 100%; }
+
+.seite { width: 210mm; height: 297mm; position: relative; overflow: hidden; page-break-after: always; break-after: page; display: flex; flex-direction: column; }
+.seite > div:first-child { flex: 1; min-height: 0; display: flex; flex-direction: column; padding-bottom: 19mm; }
+.inhalt { flex: 1; min-height: 0; padding: 6mm 10mm 0; display: flex; flex-direction: column; gap: 3mm; justify-content: space-between; }
+.inhalt > * { flex: none; }
+.fuss { position: absolute; left: 10mm; right: 10mm; bottom: 7mm; display: flex; align-items: center; justify-content: space-between; font-size: 7.6pt; font-weight: 800; letter-spacing: .09em; color: var(--leise); text-transform: uppercase; }
+.fuss .punkte { display: flex; gap: 1.6mm; align-items: center; }
+.fuss .punkte i { width: 2.2mm; height: 2.2mm; border-radius: 50%; display: block; }
+.fuss .punkte i.an { width: 3.6mm; height: 3.6mm; border: .5mm solid var(--n); }
+.fuss .nr { width: 8mm; height: 8mm; border: .6mm solid var(--n); border-radius: 50%; display: grid; place-items: center; font-family: 'Fredoka'; font-size: 9.5pt; color: var(--n); letter-spacing: 0; }
+
+/* Kopfband */
+.kopf { background: var(--z); border-bottom: .8mm solid var(--n); padding: 8mm 10mm 6mm; display: flex; align-items: center; gap: 5mm; min-height: 39mm; }
+.kopf .kreis { flex: none; width: 23mm; height: 23mm; border-radius: 50%; background: var(--a); border: .8mm solid var(--n); box-shadow: 1.2mm 1.2mm 0 var(--n); color: #fff; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.kopf .kreis small { font-size: 6.4pt; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.kopf .kreis b { font-family: 'Fredoka'; font-weight: 700; font-size: 27pt; line-height: .95; }
+.kopf .kreis .bild { width: 13mm; height: 13mm; }
+.kopf .kreis .bild svg * { stroke: #fff; }
+.kopf .titel { flex: 1; min-width: 0; }
+.kopf .ober { font-size: 8.2pt; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; color: var(--a); margin-bottom: .6mm; }
+.kopf h1 { font-size: 31pt; font-weight: 700; letter-spacing: -.01em; }
+.kopf h1.kl { font-size: 25pt; }
+.kopf .unter { font-weight: 800; font-size: 11.4pt; color: var(--a); margin-top: 1mm; line-height: 1.25; }
+.kopf .unter.gr { color: var(--leise); }
+.kopf .eck { flex: none; width: 34mm; height: 25mm; background: #fff; border: .6mm solid var(--n); border-radius: 3.5mm; padding: 1mm 2mm 0; overflow: hidden; }
+.kopf .eck.frei { background: none; border: 0; }
+.kopf .dreier { flex: none; display: flex; flex-direction: column; gap: 1.4mm; font-size: 8.6pt; font-weight: 800; }
+.kopf .dreier span { display: flex; align-items: center; gap: 1.8mm; }
+.kopf .dreier i { font-style: normal; width: 4.6mm; height: 4.6mm; border: .45mm solid var(--n); border-radius: 50%; display: grid; place-items: center; font-size: 7.4pt; }
+
+/* Bausteine */
+.pille { align-self: flex-start; background: var(--a); color: #fff; font-weight: 800; font-size: 8.4pt; letter-spacing: .1em; text-transform: uppercase; padding: 1.3mm 4mm 1.2mm 3mm; border-radius: 6mm; display: inline-flex; align-items: center; gap: 1.8mm; }
+.pille .ic { width: 4.2mm; height: 4.2mm; }
+.pille .ic svg * { stroke: #fff; }
+.karte { border: .65mm solid var(--n); border-radius: 4mm; background: #fff; padding: 3.2mm 4mm; }
+.karte.sch { box-shadow: 1.3mm 1.3mm 0 var(--a); }
+.intro { font-size: 11.2pt; line-height: 1.42; }
+.reihe { display: grid; gap: 3.2mm; }
+.r2 { grid-template-columns: 1fr 1fr; } .r3 { grid-template-columns: repeat(3, 1fr); } .r4 { grid-template-columns: repeat(4, 1fr); }
+.num { flex: none; display: inline-grid; place-items: center; width: 5.4mm; height: 5.4mm; border-radius: 50%; background: var(--a); color: #fff; font-weight: 800; font-size: 8.6pt; }
+.idee h3 { font-size: 11.6pt; display: flex; align-items: center; gap: 2mm; margin-bottom: 1.4mm; }
+.idee p { font-size: 9.8pt; }
+.ding { display: flex; gap: 3.2mm; align-items: flex-start; padding: 3mm; }
+.ding .kachel { flex: none; width: 21mm; height: 21mm; background: var(--z); border-radius: 3mm; padding: 2mm; }
+.ding .kachel.peep { padding: 1mm 1mm 0; }
+.ding .tx { flex: 1; min-width: 0; }
+.ding .zeile { display: flex; align-items: center; justify-content: space-between; gap: 2mm; }
+.ding h3 { font-size: 12pt; }
+.etikett { flex: none; border: .4mm solid var(--n); border-radius: 4mm; font-size: 7.2pt; font-weight: 800; padding: .3mm 2.2mm; white-space: nowrap; }
+.ding .ort { font-size: 7.4pt; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--a); margin: .5mm 0 .6mm; }
+.ding p { font-size: 9.6pt; line-height: 1.33; }
+.chips { display: flex; flex-wrap: wrap; gap: 2mm 2.4mm; }
+.chip { border: .5mm solid var(--a); border-radius: 5mm; padding: .7mm 3.2mm; font-size: 9.4pt; font-weight: 800; }
+.chip span { color: var(--leise); font-weight: 700; }
+.gelb { background: var(--gelb); display: flex; gap: 3.5mm; align-items: center; }
+.gelb .birne { flex: none; width: 11mm; height: 11mm; border-radius: 50%; background: var(--gelbt); border: .55mm solid var(--n); padding: 2mm; }
+.gelb h3 { font-size: 11.4pt; margin-bottom: .4mm; }
+.gelb p { font-size: 9.8pt; }
+.hilfe { border: .45mm dashed var(--leise); border-radius: 3mm; padding: 1.6mm 3mm; font-size: 8.6pt; color: var(--n); display: flex; gap: 2.5mm; align-items: center; }
+.hilfe .ic { flex: none; width: 5mm; height: 5mm; }
+
+/* Missionen */
+.mission { display: flex; padding: 0; overflow: hidden; }
+.mission .links { flex: none; width: 37mm; background: var(--z); border-right: .55mm dashed var(--n); padding: 3mm 2.5mm; display: flex; flex-direction: column; align-items: center; gap: 1.6mm; text-align: center; }
+.mission .links .lab { font-size: 7.8pt; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--a); }
+.mission .links .bild { width: 25mm; height: 25mm; background: #fff; border: .55mm solid var(--n); border-radius: 3mm; padding: 2mm; }
+.mission .links .bild.peep { padding: 1mm 1mm 0; }
+.mission .links .wie { font-size: 8pt; font-weight: 800; line-height: 1.25; }
+.mission .links .zeit { font-size: 7.8pt; font-weight: 700; color: var(--leise); display: flex; align-items: center; gap: 1mm; }
+.mission .links .zeit .ic { width: 3.4mm; height: 3.4mm; }
+.mission .rechts { flex: 1; min-width: 0; padding: 3mm 4mm 3.4mm; }
+.mission h3 { font-size: 13.4pt; }
+.mission .zeile2 { font-size: 8.6pt; font-weight: 800; color: var(--a); margin: .5mm 0 1mm; }
+.mission .kontext { font-size: 9.8pt; margin-bottom: 1.6mm; }
+.frage { display: flex; gap: 2.4mm; margin-top: 2mm; }
+.frage .fk { flex: 1; min-width: 0; }
+.frage .ft { font-weight: 800; font-size: 9.9pt; line-height: 1.3; }
+.linie { border-bottom: .35mm solid var(--linie); height: 7.6mm; }
+.kreise { display: flex; flex-wrap: wrap; gap: 1.6mm 2mm; margin-top: 1.5mm; }
+.kreise span { border: .35mm dashed var(--leise); border-radius: 4mm; padding: .5mm 2.8mm; font-size: 9.2pt; font-weight: 700; }
+.kreuze { display: flex; flex-wrap: wrap; gap: 1.2mm 5mm; margin-top: 1.5mm; font-size: 9.6pt; }
+.kreuze.unter { flex-direction: column; gap: 1.1mm; }
+.kreuze span { display: flex; align-items: flex-start; gap: 1.8mm; }
+.kreuze i { flex: none; width: 3.6mm; height: 3.6mm; border: .45mm solid var(--n); border-radius: .9mm; margin-top: .5mm; }
+.skala { margin-top: 1.5mm; display: grid; grid-template-columns: auto 1fr; gap: 1.2mm 3mm; align-items: center; font-size: 8.6pt; font-weight: 800; }
+.skala .zahlen { display: flex; justify-content: space-between; }
+.skala .zahlen span { width: 6.6mm; height: 5.2mm; border: .35mm solid var(--linie); border-radius: 2.6mm; display: grid; place-items: center; font-size: 7.4pt; font-weight: 700; }
+.satz { margin-top: 1.4mm; display: flex; align-items: flex-end; gap: 2mm; font-size: 9.8pt; }
+.satz .linie { flex: 1; height: 6.4mm; }
+.paare { margin-top: 1.5mm; display: grid; grid-template-columns: 1fr 1fr; gap: 0 12mm; font-size: 9.4pt; }
+.paare div { display: flex; flex-direction: column; gap: 1.1mm; }
+.paare span { display: flex; align-items: center; gap: 2mm; border: .35mm solid var(--linie); border-radius: 2mm; padding: .6mm 2.4mm; }
+.paare .l span { justify-content: space-between; } .paare .l span::after, .paare .r span::before { content: ''; flex: none; width: 2mm; height: 2mm; border-radius: 50%; background: var(--n); }
+.sort { margin-top: 1.5mm; }
+.sort .tab { display: grid; gap: 0; border: .4mm solid var(--n); border-radius: 2.5mm; overflow: hidden; }
+.sort .tab div { border-right: .35mm solid var(--linie); min-height: 17mm; }
+.sort .tab div:last-child { border-right: 0; }
+.sort .tab b { display: block; background: var(--z); font-size: 8.6pt; padding: .7mm 2mm; border-bottom: .35mm solid var(--linie); text-align: center; }
+.unten { display: grid; grid-template-columns: 1.08fr 1fr; gap: 3.2mm; }
+.bonus { display: flex; padding: 0; overflow: hidden; }
+.bonus .links { flex: none; width: 27mm; background: var(--z); border-right: .55mm dashed var(--n); padding: 3mm 2mm; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 1.5mm; }
+.bonus .links .lab { font-size: 7.6pt; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--a); }
+.bonus .links .bild { width: 17mm; height: 17mm; }
+.bonus .rechts { flex: 1; padding: 3mm 3.4mm; }
+.bonus h3 { font-size: 11.4pt; margin-bottom: .8mm; }
+.bonus p { font-size: 9.6pt; font-weight: 700; }
+.mitmach { background: var(--gelb); }
+.mitmach .lab { font-size: 7.8pt; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; display: flex; align-items: center; gap: 1.8mm; margin-bottom: 1.2mm; }
+.mitmach .lab .ic { width: 5.4mm; height: 5.4mm; }
+.mitmach h3 { font-size: 11.8pt; margin-bottom: .8mm; }
+.mitmach p { font-size: 9.6pt; }
+.ende { display: flex; gap: 5mm; align-items: center; }
+.stempel { flex: none; width: 27mm; height: 27mm; border: .7mm dashed var(--a); border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--a); transform: rotate(-9deg); text-align: center; }
+.stempel small { font-size: 6.2pt; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.stempel b { font-family: 'Fredoka'; font-size: 9.4pt; line-height: 1.05; padding: 0 2mm; }
+.ende .tx { flex: 1; }
+.ende .f { font-size: 10.6pt; display: flex; align-items: center; gap: 2.5mm; }
+.sterne { display: inline-flex; gap: 1mm; }
+.sterne i { width: 6mm; height: 6mm; display: block; }
+.woche { border: .5mm solid var(--a); border-radius: 3mm; padding: 1.8mm 3.4mm; font-size: 9.6pt; display: flex; gap: 2.5mm; align-items: center; }
+.woche b { flex: none; font-size: 7.8pt; letter-spacing: .1em; text-transform: uppercase; color: var(--a); }
+
+/* Deckblatt */
+.seite > div.deck { padding: 7mm 7mm 0; display: block; }
+.deck .feld { height: 200mm; background: var(--z); border: .9mm solid var(--n); border-radius: 7mm; position: relative; display: flex; flex-direction: column; align-items: center; padding: 8mm 8mm 0; text-align: center; }
+.deck .band { background: var(--n); color: #fff; font-size: 8.8pt; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; padding: 1.5mm 5mm; border-radius: 5mm; }
+.deck h1 { font-size: 74pt; font-weight: 700; letter-spacing: -.02em; line-height: .98; margin-top: 7mm; }
+.deck h1.lang { font-size: 58pt; }
+.deck .ut { font-size: 14pt; font-weight: 800; color: var(--leise); margin-top: 4mm; max-width: 150mm; }
+.deck .buehne { flex: 1; width: 100%; display: flex; align-items: flex-end; justify-content: center; gap: 1mm; margin-top: 3mm; position: relative; min-height: 0; }
+.deck .buehne .fig { width: 42mm; height: 100%; position: relative; }
+.deck .buehne .fig .blase { position: absolute; top: -1mm; left: 50%; transform: translateX(-50%); background: #fff; border: .6mm solid var(--n); border-radius: 4mm; padding: 1mm 3mm; font-family: 'Fredoka'; font-size: 10.5pt; white-space: nowrap; box-shadow: .9mm .9mm 0 var(--n); z-index: 2; }
+.deck .buehne .fig:nth-child(even) .blase { top: 7mm; }
+.deck .buehne .fig .sv { position: absolute; left: 0; right: 0; bottom: 0; top: 17mm; }
+.deck .buehne .fig .sv svg { overflow: visible; }
+.deck .zaehler { display: flex; justify-content: center; gap: 3mm; margin: 0 0 5mm; padding-top: 3mm; width: 100%; border-top: .8mm solid var(--n); }
+.deck .zaehler span { background: #fff; border: .6mm solid var(--n); border-radius: 5mm; padding: .9mm 4mm; font-family: 'Fredoka'; font-size: 10.6pt; }
+.deck .ecke { position: absolute; width: 24mm; height: 24mm; }
+.deck .ecke.a { left: 7mm; top: 7mm; transform: rotate(-10deg); } .deck .ecke.b { right: 7mm; top: 7mm; transform: rotate(9deg); }
+.pass { margin: 8mm 3mm 0; display: flex; border: .8mm solid var(--n); border-radius: 5mm; box-shadow: 1.6mm 1.6mm 0 var(--gelbt); overflow: hidden; height: 66mm; background: #fff; }
+.pass .haupt { flex: 1; padding: 5mm 6mm; }
+.pass .oben { display: flex; justify-content: space-between; align-items: center; margin-bottom: 3mm; }
+.pass .oben h2 { font-size: 15pt; letter-spacing: .04em; text-transform: uppercase; display: flex; align-items: center; gap: 2.5mm; }
+.pass .oben h2 .ic { width: 6mm; height: 6mm; }
+.pass .oben small { font-size: 7.6pt; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; color: var(--leise); }
+.pass .felder { display: grid; grid-template-columns: 1.15fr 1.75fr 1.2fr; gap: 2.6mm 6mm; }
+.pass .felder div small { display: block; font-size: 7pt; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; color: var(--leise); }
+.pass .felder div b { font-family: 'Fredoka'; font-weight: 600; font-size: 11pt; }
+.pass .felder .leer { grid-column: span 2; } .pass .felder .leer i, .pass .felder .leer1 i { display: block; height: 7.5mm; border-bottom: .4mm solid var(--linie); }
+.pass .stub { flex: none; width: 44mm; background: var(--gelb); border-left: .6mm dashed var(--n); display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 5mm 4mm; }
+.pass .stub b { font-family: 'Fredoka'; font-size: 13pt; letter-spacing: .08em; text-transform: uppercase; }
+.pass .stub .bild { width: 22mm; height: 22mm; }
+.pass .stub .code { width: 30mm; height: 9mm; background: repeating-linear-gradient(90deg, var(--n) 0 .5mm, transparent .5mm 1.1mm, var(--n) 1.1mm 2mm, transparent 2mm 2.4mm, var(--n) 2.4mm 2.7mm, transparent 2.7mm 3.6mm); }
+
+/* Anleitung, Übersicht */
+.schritt3 .karte { text-align: center; padding: 3mm 3mm; }
+.schritt3 .bild { width: 14mm; height: 14mm; margin: 0 auto 1mm; }
+.schritt3 h3 { font-size: 12pt; display: flex; justify-content: center; align-items: center; gap: 2mm; margin-bottom: 1mm; }
+.schritt3 p { font-size: 9.6pt; }
+.werkzeug { display: grid; grid-template-columns: 1fr; gap: 0; padding: 1.5mm 4mm; }
+.werkzeug .w { display: grid; grid-template-columns: 10mm 34mm 1fr; gap: 3mm; align-items: center; padding: 1.3mm 0; border-bottom: .3mm solid #D8DCE6; }
+.werkzeug .w:last-child { border-bottom: 0; }
+.werkzeug .bild { width: 9.5mm; height: 9.5mm; }
+.werkzeug h3 { font-size: 11.6pt; }
+.werkzeug p { font-size: 9.7pt; }
+.leute .karte { text-align: center; padding: 2.5mm 2mm 3mm; }
+.leute .bild { width: 20mm; height: 20mm; margin: 0 auto 1mm; background: var(--z); border-radius: 3mm; padding: 1mm 1mm 0; }
+.leute h3 { font-size: 11.4pt; } .leute p { font-size: 8.8pt; line-height: 1.28; }
+.regeln { background: var(--gelb); }
+.regeln h3 { font-size: 11.6pt; margin-bottom: 1mm; }
+.regeln ul { list-style: none; display: grid; gap: .9mm; font-size: 9.9pt; }
+.regeln li { display: flex; gap: 2.4mm; align-items: flex-start; }
+.weg { display: grid; gap: 3mm; }
+.weg .st { display: flex; align-items: center; gap: 4mm; border: .65mm solid var(--n); border-radius: 4mm; padding: 2.6mm 4mm; background: #fff; box-shadow: 1.3mm 1.3mm 0 var(--a); }
+.weg .st .k { flex: none; width: 13mm; height: 13mm; border-radius: 50%; background: var(--a); border: .6mm solid var(--n); color: #fff; display: grid; place-items: center; font-family: 'Fredoka'; font-weight: 700; font-size: 17pt; }
+.weg .st .tx { flex: 1; } .weg .st h3 { font-size: 13pt; } .weg .st p { font-size: 9.6pt; }
+.weg .st .bild { flex: none; width: 15mm; height: 15mm; }
+.weg .st .s { flex: none; font-size: 8pt; font-weight: 800; letter-spacing: .08em; color: var(--leise); text-transform: uppercase; }
+.warm h3 { font-size: 12pt; margin-bottom: .6mm; }
+.stpass { display: flex; align-items: center; gap: 5mm; }
+.stpass .tx { flex: none; width: 43mm; } .stpass h3 { font-size: 12pt; } .stpass p { font-size: 9pt; }
+.stpass .kr { flex: 1; display: flex; justify-content: space-around; }
+.stpass .kr div { width: 22mm; height: 22mm; border: .7mm dashed var(--a); border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: var(--a); }
+.stpass .kr b { font-family: 'Fredoka'; font-size: 13pt; line-height: 1; } .stpass .kr small { font-size: 6.4pt; font-weight: 800; line-height: 1.1; padding: 0 1.5mm; }
+
+/* Rätsel, Quiz, Rückblick */
+.wer .karte { padding: 2.8mm 3.4mm; display: flex; gap: 2.5mm; }
+.wer .karte { padding: 3.6mm 4mm; } .wer p { font-size: 10.6pt; line-height: 1.36; } .wer .linie { height: 9mm; }
+.wortbank { display: flex; flex-wrap: wrap; gap: 1.6mm 2mm; padding: 2.4mm 3mm; background: var(--z); border-radius: 3mm; }
+.wortbank span { background: #fff; border: .4mm solid var(--n); border-radius: 4mm; padding: .6mm 3mm; font-size: 9.8pt; font-weight: 800; }
+.quiz { display: grid; grid-template-columns: 1fr 1fr; gap: 2.4mm 4mm; }
+.q { display: flex; gap: 2.4mm; border: .6mm solid var(--n); border-radius: 3.5mm; padding: 3mm 3.2mm; }
+.q .fk { flex: 1; min-width: 0; }
+.q .ft { font-weight: 800; font-size: 10.2pt; line-height: 1.25; margin-bottom: 1.2mm; }
+.q .op { display: flex; gap: 2mm; font-size: 9.8pt; line-height: 1.25; margin-top: 1.1mm; align-items: center; }
+.q .op i { flex: none; font-style: normal; font-family: 'Fredoka'; font-weight: 600; font-size: 9.4pt; width: 5.6mm; height: 5.6mm; border: .4mm solid var(--n); border-radius: 1.2mm; display: grid; place-items: center; }
+.lwort { display: flex; align-items: center; gap: 4mm; background: var(--gelb); }
+.lwort h3 { font-size: 12pt; flex: none; }
+.lwort .kaest { display: flex; gap: 1.6mm; }
+.lwort .kaest div { width: 10mm; height: 11.5mm; background: #fff; border: .55mm solid var(--n); border-radius: 2mm; position: relative; }
+.lwort .kaest small { position: absolute; left: 0; right: 0; bottom: -4.3mm; text-align: center; font-size: 7pt; font-weight: 800; color: var(--leise); }
+.rf { display: grid; gap: 1.8mm; font-size: 10.4pt; }
+.rf div { display: flex; gap: 3mm; align-items: center; justify-content: space-between; border-bottom: .3mm solid #D8DCE6; padding-bottom: 1mm; }
+.rf span.jn { flex: none; display: flex; gap: 3mm; font-weight: 800; font-size: 8.6pt; }
+.rf span.jn i { font-style: normal; display: flex; align-items: center; gap: 1.2mm; }
+.rf span.jn i::before { content: ''; width: 3.6mm; height: 3.6mm; border: .45mm solid var(--n); border-radius: .9mm; }
+.tb { display: grid; gap: 2.6mm; padding: 4.4mm 4.6mm; }
+.tb .z { display: flex; align-items: center; gap: 3mm; font-size: 9.8pt; }
+.tb .z .p { flex: none; width: 5mm; height: 5mm; border-radius: 50%; }
+.tb .z b { flex: none; width: 62mm; font-family: 'Fredoka'; font-weight: 600; font-size: 10.6pt; }
+.tb .z .linie { flex: 1; height: 6mm; }
+.urkunde { border: .7mm dashed var(--n); border-radius: 5mm; padding: 8mm 7mm; display: flex; gap: 6mm; align-items: center; position: relative; background: #fff; }
+.urkunde .schere { position: absolute; top: -3.4mm; right: 12mm; width: 6mm; height: 6mm; background: #fff; }
+.urkunde .bild { flex: none; width: 30mm; height: 30mm; }
+.urkunde .tx { flex: 1; text-align: center; }
+.urkunde small { font-size: 8pt; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; color: var(--leise); }
+.urkunde h2 { font-size: 22pt; font-weight: 700; margin: 1mm 0; }
+.urkunde p { font-size: 10pt; }
+.urkunde .name { border-bottom: .45mm solid var(--n); height: 9mm; margin: 1mm 12mm 1.4mm; }
+.urkunde .u2 { display: flex; gap: 8mm; margin-top: 4mm; font-size: 7.6pt; font-weight: 800; color: var(--leise); text-transform: uppercase; letter-spacing: .1em; }
+.urkunde .u2 div { flex: 1; border-top: .4mm solid var(--linie); padding-top: 1mm; }
+
+/* Leitung */
+.lk { background: #EEF0F5; border-bottom: .8mm solid var(--n); padding: 7mm 10mm 5mm; display: flex; align-items: center; gap: 5mm; }
+.lk .mark { flex: none; background: var(--n); color: #fff; font-size: 8pt; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; padding: 1.4mm 4mm; border-radius: 5mm; }
+.lk h1 { font-size: 21pt; font-weight: 700; }
+.lt { font-size: 9.2pt; line-height: 1.36; }
+.lt .inhalt { gap: 3mm; padding-top: 4.5mm; justify-content: flex-start; }
+.lt h2 { font-size: 11.6pt; margin-bottom: 1mm; display: flex; align-items: center; gap: 2mm; }
+.lt h2::before { content: ''; width: 2.6mm; height: 2.6mm; background: var(--a); border-radius: 50%; }
+.lt ul { padding-left: 4.4mm; } .lt li { margin-bottom: .5mm; }
+.fakten { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2.4mm; }
+.fakten div { border: .5mm solid var(--n); border-radius: 3mm; padding: 1.8mm 2.6mm; }
+.fakten small { display: block; font-size: 6.8pt; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--leise); }
+.fakten b { font-size: 9.4pt; line-height: 1.25; display: block; }
+table.t { width: 100%; border-collapse: collapse; font-size: 8.8pt; }
+table.t th { text-align: left; background: var(--n); color: #fff; font-size: 7.4pt; letter-spacing: .08em; text-transform: uppercase; padding: 1.2mm 2mm; }
+table.t td { border-bottom: .3mm solid #C9CEDB; padding: 1.2mm 2mm; vertical-align: top; }
+table.t td:first-child { font-weight: 800; white-space: nowrap; }
+.zl { display: flex; border: .5mm solid var(--n); border-radius: 3mm; overflow: hidden; font-size: 7.6pt; font-weight: 800; text-align: center; line-height: 1.15; }
+.zl div { padding: 1.4mm .8mm; border-right: .4mm solid var(--n); } .zl div:last-child { border-right: 0; }
+.zl div small { display: block; font-weight: 700; color: var(--leise); font-size: 6.8pt; }
+.zl .h { background: var(--z); }
+.sp2 { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm 5mm; }
+.kasten { border: .5mm solid var(--n); border-radius: 3mm; padding: 2.2mm 3mm; }
+.kasten.g { background: var(--gelb); }
+.los { break-inside: avoid; }
+.los h3 { font-size: 10.4pt; display: flex; align-items: center; gap: 2mm; margin-bottom: .6mm; }
+.los h3 i { width: 3mm; height: 3mm; border-radius: 50%; display: block; }
+.klein { font-size: 8.2pt; color: var(--leise); }
+
+.raster { margin-top: 1.4mm; display: grid; gap: .9mm 3.5mm; align-items: center; font-size: 9.3pt; line-height: 1.25; }
+.raster b { font-size: 7.6pt; font-weight: 800; text-align: center; color: var(--a); letter-spacing: .03em; }
+.raster i { justify-self: center; width: 3.8mm; height: 3.8mm; border: .45mm solid var(--n); border-radius: .9mm; }
+.raster span { border-bottom: .3mm solid #E1E4EC; padding-bottom: .6mm; }
+
+/* linke Seite (verstehen): etwas größer gesetzt */
+.ls .intro { font-size: 12.2pt; }
+.ls .idee { padding: 4mm; } .ls .idee h3 { font-size: 12.6pt; margin-bottom: 1.8mm; } .ls .idee p { font-size: 10.6pt; }
+.ls .ding { padding: 3.6mm; } .ls .ding .kachel { width: 25mm; height: 25mm; } .ls .ding h3 { font-size: 12.8pt; } .ls .ding p { font-size: 10.4pt; } .ls .ding .ort { font-size: 7.8pt; margin: .8mm 0 1mm; }
+.ls .chip { font-size: 10.2pt; padding: 1mm 3.6mm; }
+.ls .gelb { padding: 4.2mm 4.6mm; } .ls .gelb .birne { width: 13mm; height: 13mm; } .ls .gelb h3 { font-size: 12.4pt; } .ls .gelb p { font-size: 10.8pt; }
+.ziele h3 { font-size: 12pt; margin-bottom: 1.2mm; } .ziele ul { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 1.2mm 5mm; font-size: 9.9pt; } .ziele li { display: flex; gap: 2mm; align-items: flex-start; } .ziele .ic { flex: none; width: 4.6mm; height: 4.6mm; margin-top: .3mm; }
+
+.gr { display: flex; flex-direction: column; gap: 2.4mm; }
+.gr > .pille { margin-bottom: .2mm; }
+.linie.extra { display: none; }
+.luft2 .linie.extra { display: block; }
+.luft .linie { height: 9mm; }
+.luft .frage { margin-top: 2.8mm; } .luft .frage .ft { font-size: 10.6pt; }
+.luft .mission .rechts { padding: 4mm 5mm 4.6mm; } .luft .mission h3 { font-size: 14.4pt; } .luft .mission .kontext { font-size: 10.6pt; margin-bottom: 2.2mm; } .luft .mission .zeile2 { font-size: 9.2pt; }
+.luft .kreise span { font-size: 10pt; padding: .8mm 3.2mm; } .luft .kreuze { font-size: 10.4pt; } .luft .satz { font-size: 10.4pt; margin-top: 2mm; } .luft .raster { font-size: 10pt; gap: 1.3mm 3.5mm; }
+.luft .bonus p, .luft .mitmach p { font-size: 10.4pt; } .luft .bonus h3, .luft .mitmach h3 { font-size: 12.6pt; } .luft .bonus .rechts, .luft .mitmach { padding-top: 4mm; padding-bottom: 4mm; }
+.luft .woche { font-size: 10.4pt; padding: 2.6mm 3.6mm; }
+.ls.luft .intro { font-size: 12.8pt; } .ls.luft .idee p { font-size: 11pt; } .ls.luft .ding p { font-size: 10.8pt; } .ls.luft .gelb p { font-size: 11.2pt; }
+
+.wahl p { font-size: 10.4pt; margin-bottom: 2mm; } .wahl .wortbank { background: none; padding: 0; gap: 2.4mm 3mm; } .wahl .wortbank span { border-style: dashed; font-size: 11pt; padding: 1mm 4mm; }
+.sort .tab b { font-size: 9.6pt; padding: 1mm 2mm; }
+
+.lt.gross { font-size: 10.4pt; line-height: 1.42; } .lt.gross .inhalt { gap: 5mm; } .lt.gross h2 { font-size: 12.4pt; } .lt.gross table.t { font-size: 9.8pt; } .lt.gross table.t td { padding: 1.8mm 2.2mm; } .lt.gross .los h3 { font-size: 11.4pt; } .lt.gross .klein { font-size: 8.8pt; } .lt.gross .kasten { padding: 3mm 3.6mm; }

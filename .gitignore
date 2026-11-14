@@ -30,3 +30,6 @@ dist-ssr
 tmp/
 
 __pycache__/
+
+# Skills-Dossiers: erzeugte HTML-Dateien
+dossiers/aus/
