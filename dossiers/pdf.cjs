@@ -12,8 +12,8 @@ const path = require('path')
   const browser = await chromium.launch()
   let schlecht = 0
   for (const id of process.argv.slice(2)) {
-    const datei = fs.readdirSync(aus).find((f) => f.endsWith('.html') && f.toLowerCase().includes(`-${id.replace('m', '')}-`))
-    if (!datei) { console.error('keine HTML-Datei für', id); schlecht++; continue }
+    const datei = id + '.html'
+    if (!fs.existsSync(path.join(aus, datei))) { console.error('keine HTML-Datei für', id); schlecht++; continue }
     const page = await browser.newPage({ viewport: { width: 794, height: 1123 }, deviceScaleFactor: 1 })
     await page.goto('file://' + path.join(aus, datei))
     await page.waitForFunction(() => document.body.dataset.fertig === '1')
@@ -30,8 +30,7 @@ const path = require('path')
           const platz = inh.clientHeight - parseFloat(cs.paddingTop) - parseFloat(cs.paddingBottom) - summe - (kinder.length - 1) * parseFloat(cs.rowGap || '0')
           frei = Math.round((platz / 96) * 25.4)
         } else {
-          const d = s.querySelector('.deck'); const letzte = d.lastElementChild.getBoundingClientRect().bottom
-          frei = Math.round(((s.getBoundingClientRect().bottom - 20 - letzte) / 96) * 25.4)
+          frei = 0
         }
         let breit = ''
         s.querySelectorAll('.inhalt *').forEach((el) => {
@@ -51,7 +50,8 @@ const path = require('path')
       if (zeichen || b.breit) console.log(`  S.${b.nr}: frei ${b.frei} mm ${zeichen} ${b.breit}`)
     }
     console.log(id, bericht.map((b) => b.frei).join(' '))
-    const ziel = path.join(pdfDir, datei.replace('.html', '.pdf'))
+    const name = await page.evaluate(() => document.querySelector('meta[name=datei]').content)
+    const ziel = path.join(pdfDir, name + '.pdf')
     await page.pdf({ path: ziel, preferCSSPageSize: true, printBackground: true })
     console.log(id, '→', path.relative(hier, ziel), Math.round(fs.statSync(ziel).size / 1024), 'KB,', bericht.length, 'Seiten')
     if (process.env.BILDER) {
