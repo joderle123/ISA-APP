@@ -8,12 +8,14 @@ export interface Frage {
   unter?: boolean
   /** Anspannung 0–100, eine Zeile je Eintrag (z. B. 'vorher', 'nachher') */
   skala?: string[]
+  /** Regler 0–10, eine Zeile je Eintrag */
+  regler?: string[]
   /** Satzanfänge mit Schreiblinie */
   satz?: string[]
   /** Tabelle zum Ankreuzen: Zeilen (Aussagen) × Spalten */
   raster?: { spalten: string[]; zeilen: string[] }
   /** Entscheidung: je Möglichkeit zwei leere Spalten (z. B. „kostet mich“ / „bringt mir“) */
-  preis?: { kopf: [string, string]; optionen: string[] }
+  preis?: { kopf: [string, string]; optionen: string[]; /** Überschrift der ersten Spalte (Standard: Möglichkeit) */ erste?: string }
   /** kleine Kästchen für eine Zahl (Punkte, Wertung) */
   zahl?: string[]
   /** Linie von … bis …, Position markieren */
@@ -21,6 +23,8 @@ export interface Frage {
   /** freies Feld (Höhe in mm) zum Zeichnen oder Schreiben */
   feld?: number
 }
+export interface Clip { titel: string; kanal: string; url: string; dauer: string; frage: string }
+export interface Film { titel: string; jahr: number; fsk: number | null; laenge: string; worum: string; achte: string[]; achtung?: string }
 export interface Move { titel: string; wie: string; zeit: string; kontext?: string; fragen: Frage[] }
 export interface Track {
   /** Nummer der Kurs-Einheit */
@@ -37,9 +41,13 @@ export interface Track {
   moveUnter: string
   moves: Move[]
   challenge: { titel: string; wie: string; x: string }
-  line: { titel: string; x: string; feld?: number; linien?: number }
+  line: { titel: string; x: string; feld?: number; linien?: number; /** Kästchen zum Abhaken, z. B. Wochentage */ kaestchen?: string[] }
   woche: string
   hilfe?: boolean
+  /** kurzes Video zum Track (QR-Code). Nur geprüfte Links eintragen. */
+  clip?: Clip
+  /** Gruppen-Aktionen (Sessions) zu diesem Track */
+  gruppe: { titel: string; wer: string; zeit: string; material: string; schritte: string[]; /** schwerere Variante */ level2?: string; frage: string }[]
   leitung: { einsatz: string; loesungen: string[]; impulse: string[]; material: string; blaetter: string }
 }
 export interface Heft {
@@ -57,6 +65,8 @@ export interface Heft {
   cast: { bild: string; name: string; x: string }[]
   warm: { titel: string; text: string; fragen: Frage[] }
   tracks: Track[]
+  /** Film-Nachmittag: ein Film für die Gruppe, einer als Tipp für zu Hause */
+  kino: { filme: Film[]; /** neun Dinge, die man im Hauptfilm entdecken kann */ bingo: string[]; nachher: string[]; geprueft: string }
   hot: { unter: string; regeln: string; takes: string[] }
   quiz: { unter: string; wort: string; fragen: { f: string; o: string[]; r: number }[] }
   karten: { titel: string; icon: string; zeilen: string[]; eigen?: string }[]

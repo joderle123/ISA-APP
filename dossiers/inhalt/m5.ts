@@ -54,6 +54,7 @@ const d: Heft = {
         ['„ok.“ heißt ok.', 'Kann heißen: passt. Oder: bin sauer. Oder: keine Zeit.'],
         ['Verschränkte Arme heißen: aggressiv.', 'Oder kalt. Oder unsicher. Ein Signal allein beweist nichts.'],
       ],
+      clip: {"titel": "Körpersprache: Ich sehe, was du fühlst", "kanal": "Terra Xplore", "url": "https://www.youtube.com/watch?v=pOGO-JByT5c", "dauer": "die ersten 5 Min.", "frage": "Welches Signal im Video hättest du übersehen?"},
       merk: 'Wenn Worte und Körper streiten, ==gewinnt der Körper.==',
       moveUnter: 'Lesen lernen, was keiner sagt',
       moves: [
@@ -77,6 +78,10 @@ const d: Heft = {
       challenge: { titel: 'Ein Satz, sechs Stimmungen', wie: 'zu zweit · Würfel', x: 'Sag „Klar, mach ruhig.“ – so, wie der Würfel es will: **1** fröhlich · **2** genervt · **3** traurig · **4** ängstlich · **5** drohend · **6** verliebt. Dein Gegenüber rät die Zahl.' },
       line: { titel: 'Alles klar?', x: 'Die ehrlichste Antwort, die du heute geben könntest. Höchstens fünf Wörter.', linien: 1 },
       woche: 'Schick einmal eine **Sprachnachricht** statt Text. Oder frag bei einem „ok.“ nach: Wie meinst du das?',
+      gruppe: [
+        {"titel": "Drei Runden", "wer": "zwei Teams", "zeit": "20 Min.", "material": "Karten mit Begriffen, Stoppuhr", "schritte": ["**Runde 1 – nur Worte:** Begriff erklären, ohne ihn zu nennen. Hände auf den Rücken. 40 Sekunden pro Person.", "**Runde 2 – nur Stimme:** dieselben Karten. Geräusche und Töne, kein Wort.", "**Runde 3 – nur Körper:** Pantomime, kein Laut."], "frage": "In welcher Runde habt ihr am schnellsten verstanden?"},
+        {"titel": "Rücken an Rücken", "wer": "zu zweit", "zeit": "15 Min.", "material": "Papier, Stift, einfache Bildvorlagen", "schritte": ["Ihr sitzt Rücken an Rücken. A sieht das Bild und beschreibt es, B zeichnet.", "**Runde 1:** B darf nichts fragen.", "**Runde 2:** neue Vorlage, Rollen tauschen – jetzt sind Rückfragen erlaubt."], "frage": "Was haben die Rückfragen geändert?"},
+      ],
       leitung: {
         einsatz: 'Szene nach dem Drei-Runden-Spiel lesen. Move A statt des Tests beim Stimmungs-Würfel; die Challenge ist der Stimmungs-Würfel. Move B statt „Chat-Check auf dem Blatt“.',
         loesungen: [
@@ -128,6 +133,10 @@ const d: Heft = {
       challenge: { titel: 'Vorwurf-Battle', wie: 'zwei Teams', x: 'Team A wirft einen Vorwurf rüber – so genervt wie möglich. Team B hat 30 Sekunden und kontert mit einem Ich-Satz. Steckt noch ein Angriff drin? **Kein Punkt.**' },
       line: { titel: 'Der Satz, der fehlt', x: 'Ein Satz, den du jemandem schon lange sagen willst – als Ich-Satz. Niemand liest ihn.', linien: 2 },
       woche: 'Ein Ich-Satz im echten Leben. Zwei Teile reichen: **was los ist** und **was du willst**.',
+      gruppe: [
+        {"titel": "Schritt vor, Schritt zurück", "wer": "alle", "zeit": "10 Min.", "material": "eine Linie am Boden, Liste mit Sätzen", "schritte": ["Alle stehen auf der Linie. Jemand liest einen Satz vor – so, als wäre er an dich gerichtet.", "Würdest du weiter zuhören? **Schritt vor.** Willst du dich wehren oder gehen? **Schritt zurück.**", "Nach zehn Sätzen: Schaut, wo ihr steht."], "frage": "Welcher Satz hat euch am weitesten zurückgeschickt?"},
+        {"titel": "Zuhör-Killer", "wer": "zu zweit", "zeit": "10 Min.", "material": "1 Würfel je Paar", "schritte": ["A erzählt eine Minute vom besten Essen der Woche.", "B würfelt verdeckt und hört so schlecht zu, wie die Zahl sagt: **1** Handy · **2** unterbrechen · **3** von sich erzählen · **4** Tipps geben · **5** wegschauen, gähnen · **6** alles zum Witz machen.", "A rät die Zahl. Dann tauschen."], "frage": "Wie hat es sich angefühlt, so angehört zu werden?"},
+      ],
       leitung: {
         einsatz: 'Szene als Einstieg vor oder nach „Schritt vor, Schritt zurück“. Move A und B im Schritt „Ich-Botschaften würfeln“. Die Challenge ist das Umwandler-Spiel. Die Line bleibt privat.',
         loesungen: [
@@ -157,6 +166,7 @@ const d: Heft = {
         ['War doch nett gemeint – dann darf es nicht stören.', 'Gemeint und angekommen sind zwei Dinge. Dein Bauch entscheidet.'],
         ['Meine Grenzen zählen. Deine sind dein Problem.', 'Gilt in beide Richtungen. Online wie offline.'],
       ],
+      clip: {"titel": "Sozialexperiment: Wie viel Nähe verträgt der Mensch?", "kanal": "Quarks", "url": "https://www.youtube.com/watch?v=wEALzPr7hBo", "dauer": "die ersten 5 Min.", "frage": "Ab wann wird es den Leuten zu nah – und woran sieht man es?"},
       merk: 'Dein Bauch weiß es ==vor deinem Kopf.==',
       moveUnter: 'Wo ist bei dir Schluss?',
       moves: [
@@ -178,6 +188,10 @@ const d: Heft = {
       challenge: { titel: 'Stopp-Abstand', wie: 'zwei Reihen', x: 'Eine Reihe geht langsam auf die andere zu. Wer steht, sagt Stopp, sobald es zu nah wird. Wer Stopp hört, bleibt stehen. **Sofort.** Danach: Abstände vergleichen.' },
       line: { titel: 'Dein Türschild', x: 'Was steht an deiner Tür? Schreib oder zeichne es.', feld: 19 },
       woche: 'Achte einmal darauf, wann dein Körper „zu viel“ meldet. **Nur merken.** Mehr nicht.',
+      gruppe: [
+        {"titel": "Grenz-Staffel", "wer": "zwei Teams", "zeit": "15 Min.", "material": "Situationskarten, drei Plakate: Körper, Inneres, Digital", "schritte": ["Jedes Team hat neun Situationen. Am anderen Ende des Raums liegen die drei Plakate.", "Immer eine Person läuft los und legt eine Karte zur passenden Grenze.", "Ein Punkt pro Karte, die passt. Passt sie zu zwei Grenzen und ihr begründet es: auch ein Punkt."], "frage": "Bei welcher Karte wart ihr euch nicht einig?"},
+        {"titel": "Signal-Spiel", "wer": "zwei Teams", "zeit": "20 Min.", "material": "Karten mit Botschaften („Lass mich in Ruhe“, „Das ist mir zu nah“ …)", "schritte": ["Eine Person zieht eine Karte und zeigt die Botschaft 20 Sekunden lang **ohne Worte** – zu einer gedachten Person.", "Ihr Team rät. Richtig: ein Punkt.", "Alle stimmen ab: Daumen hoch = eindeutig. Daumen quer = kann man falsch lesen."], "frage": "Welches Nein kommt ohne Worte nicht an?"},
+      ],
       leitung: {
         einsatz: 'Szene nach der Karten-Staffel. Move A sichert die Staffel, Move B statt oder neben dem Blatt „Meine Grenzen“ (privat). Die Challenge ist „Zwei Linien“.',
         loesungen: [
@@ -207,6 +221,7 @@ const d: Heft = {
         ['Wenn ich erstarre, bin ich selbst schuld.', 'Erstarren ist ein Schutzprogramm. Schuld hat, wer die Grenze überschreitet.'],
         ['Ein Nein muss man begründen.', 'Muss man nicht. Und wenn du eins hörst: Okay. Ohne Diskussion.'],
       ],
+      clip: {"titel": "Einverständnis – so einfach wie Tee", "kanal": "GONEASTRAYfilms", "url": "https://www.youtube.com/watch?v=2ovcQgIN5G4", "dauer": "ca. 3 Min.", "frage": "Was hat eine Tasse Tee mit einem Nein zu tun?"},
       merk: '==Nein== ist ein ganzer Satz.',
       moveUnter: 'Kurz. Klar. Ohne Lächeln.',
       moves: [
@@ -228,6 +243,10 @@ const d: Heft = {
       line: { titel: 'Dein Stopp-Satz', x: 'Kurz und deins. Schreib ihn so, wie er aussehen soll: als Tag, als Tattoo, als Schild.', feld: 24 },
       woche: 'Sag einmal klar **Nein**. Ohne Entschuldigung. Und hörst du eins: **Okay.**',
       hilfe: true,
+      gruppe: [
+        {"titel": "Stopp-Würfel", "wer": "zu dritt oder viert", "zeit": "15 Min.", "material": "1 Würfel je Gruppe", "schritte": ["Würfle verdeckt. Sag Stopp so, wie die Zahl sagt – zu einer gedachten Person an der Wand.", "**1** leise, mit Lächeln · **2** laut, mit Grinsen · **3** Blick zum Boden · **4** mit Entschuldigung · **5** klar, Hand hoch · **6** klar, mit Satz.", "Die anderen raten die Zahl und zeigen mit den Fingern 0–10: Wie ernst nehmt ihr es?"], "frage": "Ab welcher Zahl hättet ihr aufgehört?"},
+        {"titel": "Vier Stationen", "wer": "zu zweit", "zeit": "16 Min.", "material": "Stationsschilder: Körper, Sachen, Privates, Handy; Situationskarten", "schritte": ["An jeder Station zieht ihr eine Karte. A überschreitet die Grenze und hakt **einmal** nach („Stell dich nicht so an“).", "B setzt die Grenze: Körper, Stimme, kurzer Satz. Nach dem zweiten Stopp ist Schluss.", "Rollen tauschen, dann weiter zur nächsten Station."], "frage": "Was war schwerer – das Stopp oder das Nachhaken auszuhalten?"},
+      ],
       leitung: {
         einsatz: 'Move A läuft während der Stopp-Jury mit. Szene und Fakten danach. Die Line ersetzt „Mein Stopp-Satz“ auf dem Blatt; vorgelesen wird erst in der Abschlussrunde. Move B nach der Garten-Übung (Challenge): die andere Seite der Grenze.',
         loesungen: [
@@ -240,6 +259,52 @@ const d: Heft = {
       },
     },
   ],
+  kino: {
+    "geprueft": "14.11.2026",
+    "filme": [
+      {
+        "titel": "Das schönste Mädchen der Welt",
+        "jahr": 2018,
+        "fsk": 12,
+        "laenge": "103 Min.",
+        "worum": "Cyril, 16, hat eine riesige Nase, null Selbstvertrauen – und die besten Lines der Schule. Auf Klassenfahrt in Berlin verliebt er sich in Roxy. Die steht aber auf den schönen Rick, der kaum drei Wörter rausbringt. Also schreibt Cyril für ihn die Nachrichten.",
+        "achte": [
+          "Wer sagt hier, was er meint – und wer versteckt sich?",
+          "Was können Worte im Battle, was sie im Chat nicht können?",
+          "Wo setzt Roxy eine klare Grenze?"
+        ],
+        "achtung": "Derbe Sprache im Battle-Rap, Alkohol auf der Klassenfahrt."
+      },
+      {
+        "titel": "Ziemlich beste Freunde",
+        "jahr": 2011,
+        "fsk": 6,
+        "laenge": "112 Min.",
+        "worum": "Driss kommt frisch aus dem Knast und will nur eine Unterschrift fürs Amt. Stattdessen wird er Pfleger des gelähmten Philippe. Zwei, die nichts gemeinsam haben – außer dass keiner den anderen schont.",
+        "achte": [
+          "Wie redet Driss mit Philippe – und warum mag der das?",
+          "Wo sagt einer der beiden klar Nein?"
+        ],
+        "achtung": "Joints und derbe Witze."
+      }
+    ],
+    "bingo": [
+      "Jemand sagt Ja und meint Nein",
+      "Ein Blick sagt mehr als der Satz",
+      "Eine Nachricht wird falsch verstanden",
+      "Jemand versteckt sich hinter Witzen",
+      "Jemand sagt klar Stopp",
+      "Worte als Waffe",
+      "Jemand hört wirklich zu",
+      "Eine Lüge fliegt auf",
+      "Jemand sagt endlich, was ist"
+    ],
+    "nachher": [
+      "Warum traut sich Cyril im Battle alles – und bei Roxy nichts?",
+      "Für jemand anderen schreiben: Wo ist da die Grenze?",
+      "Welcher Satz aus dem Film bleibt bei dir hängen?"
+    ]
+  },
   hot: {
     unter: 'Sechs Sätze zum Streiten – nach Regeln',
     regeln: 'Mach auf jeder Linie ein Kreuz: Wie sehr stimmt der Satz für dich? Dann stellt euch im Raum auf – eine Wand heißt „nie“, die andere „immer“. Wer mag, sagt einen Satz dazu. **Niemand muss sich rechtfertigen. Platz wechseln ist erlaubt.**',
@@ -284,7 +349,7 @@ const d: Heft = {
     hilfe: ['Szene und Fakten vorlesen oder reihum lesen lassen.', 'Bei Schreibaufgaben reicht ein Stichwort. Wer nicht schreiben mag, diktiert oder zeichnet.', 'Moves zu zweit lösen lassen, auch wenn „allein“ dasteht.', 'Bei hoher Anspannung: nur Challenge und Line.'],
     forder: ['Eine eigene Szene schreiben (fünf Sätze, erfundene Person).', 'Einen eigenen Hot Take formulieren und zur Abstimmung stellen.', 'Die „Rechnung“ (kostet mich / bringt mir) für eine echte Situation aufmachen.', 'Bei der Garten-Übung als Schiedsrichter/in Rückmeldung geben.'],
     gespraech: 'Die Szenen sind nah am Alltag der Jugendlichen (Betrieb, Wohngruppe, Klinik). Das ist gewollt: Wer sich wiedererkennt, hört zu. Niemand muss sagen, ob er etwas kennt. Fragen Sie nach der Figur („Was braucht Tom?“), nicht nach der Person im Raum. Erzählt jemand von Übergriff, Gewalt oder Bedrohung: freundlich unterbrechen, ein Gespräch unter vier Augen direkt nach der Einheit anbieten und die zuständige Leitung (Responsable) informieren.',
-    druck: ['A4, doppelseitig, an der langen Seite gewendet. So liegen Szene (links) und „Dein Move“ (rechts) nebeneinander.', 'Seiten 1–15 für die Jugendlichen, Seiten 16–18 nur für Sie.', 'Schwarz-Weiß ist möglich; das Titelblatt braucht viel Toner.', 'Seite 14 (Karten) einzeln und einseitig drucken, am besten auf festerem Papier.'],
+    druck: ['A4, doppelseitig, an der langen Seite gewendet. So liegen Szene (links) und „Dein Move“ (rechts) nebeneinander.', 'Seiten 1–{J} für die Jugendlichen, Seiten {L} nur für Sie.', 'Schwarz-Weiß ist möglich; das Titelblatt braucht viel Toner.', 'Seite {K} (Karten) einzeln und einseitig drucken, am besten auf festerem Papier.'],
     hot: 'Es gibt keine richtige Position. Ziel ist, dass Meinungen nebeneinander stehen dürfen und begründet werden. Nachfragen statt korrigieren: „Was hast du erlebt, dass du dort stehst?“ Bei Take 6 lohnt die Unterscheidung von Respekt und Angst: Vor wem habe ich Respekt – und warum? Abwertung einzelner sofort stoppen.',
     achtung: 'Beim Thema Chat können aktuelle Konflikte oder Cybermobbing zur Sprache kommen: nicht in der Gruppe auswerten, keine echten Chats zeigen lassen. In allen Übungen gilt das Stopp-Recht; niemand wird angefasst. „Du hörst ein Nein“ (Track 04) kann eigene Grenzüberschreitungen berühren – ohne Beschämung besprechen: Es geht um den nächsten Moment, nicht um Schuld.',
     hintergrund: 'Jede Nachricht hat einen Inhalts- und einen Beziehungsaspekt; die Beziehung wird vor allem über Stimme, Blick und Haltung vermittelt (Watzlawick). Ich-Botschaft und aktives Zuhören gehören zusammen (Gordon). Menschen halten je nach Beziehung unterschiedliche Abstände ein; die Werte schwanken mit Kultur, Situation und Stimmung (Hall). Das Skillstraining für Jugendliche übt, ein Anliegen klar zu sagen, zu wiederholen und dabei sicher aufzutreten (Rathus & Miller). Die Kosten-Nutzen-Rechnung („kostet mich / bringt mir“) folgt der Pro-und-Contra-Technik desselben Trainings: Sie ersetzt die Moral durch eine eigene Abwägung.',

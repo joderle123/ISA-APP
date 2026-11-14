@@ -7,6 +7,7 @@ import { fileURLToPath } from 'node:url'
 import { renderToStaticMarkup } from 'react-dom/server'
 import { ZeichnungSvg } from '../src/blatt/ZeichnungSvg'
 import { bildZeichnung, bildGueltig, palette } from '../src/blatt/zeichnung'
+import qrcode from 'qrcode-generator'
 import type { Heft, Frage } from './typen'
 
 const HIER = dirname(fileURLToPath(import.meta.url))
@@ -34,6 +35,21 @@ function icon(name: string): string {
   if (!existsSync(p)) { fehler.push('Icon fehlt: ' + name); return '' }
   return readFileSync(p, 'utf8').replace(/<svg[^>]*>/, '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">').replace(/<!--[\s\S]*?-->/g, '')
 }
+/** QR-Code als SVG (ein Pfad, scharf im Druck). */
+function qr(url: string): string {
+  const q = qrcode(0, 'M')
+  q.addData(url)
+  q.make()
+  const n = q.getModuleCount()
+  let pfad = ''
+  for (let r = 0; r < n; r++) for (let c = 0; c < n; c++) if (q.isDark(r, c)) pfad += `M${c} ${r}h1v1h-1z`
+  return `<svg viewBox="-2 -2 ${n + 4} ${n + 4}" shape-rendering="crispEdges"><rect x="-2" y="-2" width="${n + 4}" height="${n + 4}" fill="#fff"/><path d="${pfad}" fill="#111"/></svg>`
+}
+/** youtu.be-Kurzlink zum Abtippen */
+const kurzlink = (url: string) => {
+  const m = url.match(/[?&]v=([\w-]{6,})/) ?? url.match(/youtu\.be\/([\w-]{6,})/)
+  return m ? 'youtu.be/' + m[1] : url.replace(/^https?:\/\/(www\.)?/, '')
+}
 const ic = (name: string) => `<span class="ic">${icon(name)}</span>`
 const linien = (n: number) => Array.from({ length: n }, () => '<div class="linie"></div>').join('')
 const tape = (i: string, s: string, a = false) => `<div class="tape mo${a ? ' a' : ''}">${ic(i)}${esc(s)}</div>`
@@ -43,9 +59,10 @@ function frage(f: Frage, i: number): string {
   if (f.kreis) a += `<div class="kreise">${f.kreis.map((w) => `<span>${t(w)}</span>`).join('')}</div>`
   if (f.kreuz) a += `<div class="kreuze${f.unter ? ' unter' : ''}">${f.kreuz.map((w) => `<span><i></i>${t(w)}</span>`).join('')}</div>`
   if (f.skala) a += `<div class="skala">${f.skala.map((w) => `<span class="mo">${t(w)}</span><div class="zahlen">${[0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100].map((n) => `<span>${n}</span>`).join('')}</div>`).join('')}</div>`
+  if (f.regler) a += `<div class="skala reg">${f.regler.map((w) => `<span class="mo">${t(w)}</span><div class="zahlen">${[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((n) => `<span>${n}</span>`).join('')}</div>`).join('')}</div>`
   if (f.satz) a += f.satz.map((w) => `<div class="satz"><span>${t(w)}</span><div class="linie"></div></div>`).join('')
   if (f.raster) a += `<div class="raster" style="grid-template-columns:1fr repeat(${f.raster.spalten.length},auto)"><span></span>${f.raster.spalten.map((w) => `<b class="mo">${t(w)}</b>`).join('')}${f.raster.zeilen.map((z) => `<span>${t(z)}</span>${f.raster!.spalten.map(() => '<i></i>').join('')}`).join('')}</div>`
-  if (f.preis) a += `<div class="preis"><span class="k mo">Möglichkeit</span><span class="k mo">${t(f.preis.kopf[0])}</span><span class="k mo">${t(f.preis.kopf[1])}</span>${f.preis.optionen.map((o) => `<span class="o">${t(o)}</span><span></span><span></span>`).join('')}</div>`
+  if (f.preis) a += `<div class="preis"><span class="k mo">${t(f.preis.erste ?? 'Möglichkeit')}</span><span class="k mo">${t(f.preis.kopf[0])}</span><span class="k mo">${t(f.preis.kopf[1])}</span>${f.preis.optionen.map((o) => `<span class="o">${t(o)}</span><span></span><span></span>`).join('')}</div>`
   if (f.zahl) a += `<div class="zahl">${f.zahl.map((w) => `<div><span>${t(w)}</span><i></i></div>`).join('')}</div>`
   if (f.strich) a += `<div class="strich"><span class="mo">${t(f.strich[0])}</span><div></div><span class="mo">${t(f.strich[1])}</span></div>`
   if (f.feld) a += `<div class="feld" style="height:${f.feld}mm"></div>`
@@ -63,6 +80,10 @@ function baue(d: Heft): string {
     `<div class="kh"><div><div class="mo" style="color:var(--g);margin-bottom:1.4mm">${marke} · ${esc(d.thema)}</div><h1 class="an">${t(titel)}</h1><div class="ut">${t(unter)}</div></div>${sticker ? `<div class="st">${t(sticker)}</div>` : ''}</div>`
   const ersteSeite = 4
   const seiteVon = (i: number) => ersteSeite + i * 2
+  const nT = d.tracks.length
+  const S = { ses: seiteVon(nT), kino: seiteVon(nT) + 2, hot: seiteVon(nT) + 3, code: seiteVon(nT) + 4, karten: seiteVon(nT) + 5, ab: seiteVon(nT) + 6 }
+  /** Text mit Seiten-Platzhaltern: {K} Karten, {J} letzte Seite für Jugendliche, {L} Seiten der Leitung, {S} Sessions */
+  const tp = (x: string) => t(x.replace(/\{K\}/g, String(S.karten)).replace(/\{J\}/g, String(S.ab)).replace(/\{L\}/g, `${S.ab + 1}–${S.ab + 3}`).replace(/\{S\}/g, `${S.ses}–${S.ses + 1}`))
 
   // 1 Titel
   seiten.push({
@@ -96,7 +117,7 @@ function baue(d: Heft): string {
     html: `<div>${kh('Tracklist', `${['', 'Ein', 'Zwei', 'Drei', 'Vier', 'Fünf', 'Sechs'][d.tracks.length]} Tracks, ein Thema: ${d.thema}`)}
     <div class="inhalt">
       <div class="tl">${d.tracks.map((e, i) => `<div class="t"><div class="z">${z2(i + 1)}</div><div class="tx"><h3>${t(e.titel)}</h3><p>${t(e.kurz)}</p></div><div class="s mo">S. ${seiteVon(i)}</div></div>`).join('')}
-        <div class="t x"><div class="z">+</div><div class="tx"><h3>Hot Takes · Code · Karten · Abspann</h3><p>Streiten nach Regeln, den Code knacken, Karten für die Tasche.</p></div><div class="s mo">S. ${seiteVon(d.tracks.length)}</div></div></div>
+        <div class="t x"><div class="z">+</div><div class="tx"><h3>Sessions · Kino · Hot Takes · Code · Karten</h3><p>Aktionen für die ganze Gruppe, ein Film, Streiten nach Regeln, Karten für die Tasche.</p></div><div class="s mo">S. ${S.ses}</div></div></div>
       <div class="gr">${tape('users', 'Cast – alle erfunden, alles schon passiert')}
         <div class="cast">${d.cast.map((c) => `<div class="c"><div class="b"><div class="pk punkt"></div><div class="fig">${figur(c.bild)}</div></div><div class="tx"><h3>${t(c.name)}</h3><p>${t(c.x)}</p></div></div>`).join('')}</div></div>
       <div class="bx warm"><h3>${t(d.warm.titel)}</h3><p>${t(d.warm.text)}</p>${d.warm.fragen.map(frage).join('')}</div>
@@ -107,13 +128,14 @@ function baue(d: Heft): string {
   d.tracks.forEach((e, i) => {
     seiten.push({
       e: i,
-      html: `<div><div class="th"><div class="zahl">${z2(i + 1)}</div><div class="lab mo">Track ${z2(i + 1)}</div><h1 class="an${e.titel.length > 15 ? ' kl' : ''}">${t(e.titel)}</h1><div class="ut">${t(e.unter)}</div></div>
+      html: `<div><div class="th"><div class="znr">${z2(i + 1)}</div><div class="lab mo">Track ${z2(i + 1)}</div><h1 class="an${e.titel.length > 15 ? ' kl' : ''}">${t(e.titel)}</h1><div class="ut">${t(e.unter)}</div></div>
       <div class="inhalt ls">
         <div class="gr">${tape('movie', 'Szene')}
           <div class="bx p szene"><div class="wer"><div class="pk punkt"></div><div class="fig">${figur(e.szene.bild)}</div><div class="nm mo">${esc(e.szene.name)}</div></div>
           <div class="tx"><p>${t(e.szene.text)}</p><div class="fr mk">${ic('arrow-big-right')}<span>${t(e.szene.frage)}</span></div><div class="linie"></div></div></div></div>
         <div class="gr">${tape('bulb', e.faktenTitel ?? 'Was dahinter steckt')}
           <div class="fk">${e.fakten.map((x, k) => `<div><div class="z">${k + 1}</div><h3>${t(x.t)}</h3><p>${t(x.x)}</p></div>`).join('')}</div></div>
+        ${e.clip ? `<div class="clip"><div class="qr">${qr(e.clip.url)}</div><div class="tx"><div class="lab mo">${ic('player-play')}Clip zum Track · ${esc(e.clip.dauer)}</div><h3>${t(e.clip.titel)}</h3><div class="ka mo">${esc(e.clip.kanal)} · ${esc(kurzlink(e.clip.url))}</div><div class="fr2">${t(e.clip.frage)}</div></div></div>` : ''}
         <div class="my"><div class="kopf"><span class="mo">Mythos</span><span class="mo">Real</span></div>${e.mythen.map((m) => `<div class="z"><span>${ic('x')}<span>${t(m[0])}</span></span><span>${ic('check')}<span>${t(m[1])}</span></span></div>`).join('')}</div>
         <div class="merk"><span class="mo">Merk dir</span><div class="mk">${t(e.merk)}</div></div>
       </div></div>`,
@@ -125,12 +147,43 @@ function baue(d: Heft): string {
         ${e.moves.map((m, k) => `<div class="bx mv"><div class="kp"><div class="b">${'ABC'[k]}</div><h3>${t(m.titel)}</h3><div class="me mo"><span>${esc(m.wie)}</span><span>${esc(m.zeit)}</span></div></div>
           <div class="kb">${m.kontext ? `<p class="kontext">${t(m.kontext)}</p>` : ''}${m.fragen.map(frage).join('')}</div></div>`).join('')}
         <div class="zwei"><div class="bx ak ch"><div class="lab mo"><span>Challenge</span><span>${esc(e.challenge.wie)}</span></div><h3>${t(e.challenge.titel)}</h3><p>${t(e.challenge.x)}</p></div>
-          <div class="bx ln"><div class="lab mo">Deine Line</div><h3>${t(e.line.titel)}</h3><p>${t(e.line.x)}</p>${e.line.feld ? `<div class="feld" style="height:${e.line.feld}mm"></div>` : ''}${linien(e.line.linien ?? 0)}</div></div>
+          <div class="bx ln"><div class="lab mo">Deine Line</div><h3>${t(e.line.titel)}</h3><p>${tp(e.line.x)}</p>${e.line.feld ? `<div class="feld" style="height:${e.line.feld}mm"></div>` : ''}${e.line.kaestchen ? `<div class="wk">${e.line.kaestchen.map((k) => `<span><i></i><b class="mo">${esc(k)}</b></span>`).join('')}</div>` : ''}${linien(e.line.linien ?? 0)}</div></div>
         <div class="wo"><span class="mo">Diese Woche</span><span>${t(e.woche)}</span></div>
         <div class="vibe"><span class="mo">Track erledigt <i></i></span><span class="mo">Vibe: <i></i> lahm <i></i> okay <i></i> stark</span><span class="mo">Datum: ____________</span></div>
         ${e.hilfe ? `<div class="hilfe">${ic('phone')}<span>${t(d.hilfeText ?? 'Wenn dich etwas belastet: Sprich mit jemandem, dem du vertraust. Kanner-Jugendtelefon **116 111** · Notruf **112**')}</span></div>` : ''}
       </div></div>`,
     })
+  })
+
+  // Sessions: Aktionen für die ganze Gruppe
+  const alle = d.tracks.flatMap((e, i) => e.gruppe.map((g) => ({ ...g, tr: i })))
+  const halb = Math.ceil(alle.length / 2)
+  const ses = (g: (typeof alle)[number]) => `<div class="se"><div class="kp"><span class="mo tr2">Track ${z2(g.tr + 1)}</span><span class="mo">${esc(g.wer)} · ${esc(g.zeit)}</span></div><h3>${t(g.titel)}</h3><div class="mat mo">${ic('box')}<span>${esc(g.material)}</span></div><ol>${g.schritte.map((x) => `<li><span>${t(x)}</span></li>`).join('')}</ol>${g.level2 ? `<div class="l2"><b class="mo">Level 2</b><span>${t(g.level2)}</span></div>` : ''}<div class="da">${ic('message-circle')}<span>${t(g.frage)}</span></div></div>`
+  const breit = halb % 2 === 0 ? ' x' : ''
+  seiten.push({
+    html: `<div>${kh('Sessions', `${alle.length} Aktionen für die ganze Gruppe`, 'Alle machen mit')}
+    <div class="inhalt"><div class="ses">${alle.slice(0, halb).map(ses).join('')}
+      <div class="se regel${breit}"><h3>Für jede Session gilt</h3><ol><li><span>Wer nicht mitspielen will, schaut zu, stoppt die Zeit oder ist Jury.</span></li><li><span>Gespielt wird mit erfundenen Situationen – nie mit echten Leuten aus der Gruppe.</span></li><li><span>Nach dem Spiel: Rolle abschütteln. So ist hier niemand wirklich.</span></li></ol></div></div>
+    </div></div>`,
+  })
+  seiten.push({
+    html: `<div>${kh('Sessions', 'Teil zwei – und Platz für eure eigene', 'Selbst anleiten')}
+    <div class="inhalt"><div class="ses">${alle.slice(halb).map(ses).join('')}
+      <div class="se eigen${(alle.length - halb) % 2 === 0 ? ' x' : ''}"><h3>Eure Session</h3><p>Erfindet eine eigene Aktion zum Thema. Wer sie erfindet, leitet sie an.</p><div class="satz"><span><strong>Name:</strong></span><div class="linie"></div></div><div class="satz"><span><strong>So geht es:</strong></span><div class="linie"></div></div>${linien(1)}</div></div>
+    </div></div>`,
+  })
+
+  // Kino
+  const kino = d.kino
+  seiten.push({
+    html: `<div>${kh('Kino', 'Ein Film für die Gruppe – und einer für danach', 'Popcorn erlaubt')}
+    <div class="inhalt">
+      <div class="filme">${kino.filme.map((f, i) => `<div class="film"><div class="ab mo"><span>${i === 0 ? 'Hauptfilm' : 'Noch ein Tipp'}</span><span>${f.jahr} · ${f.fsk === null ? 'FSK prüfen' : 'FSK ' + f.fsk} · ${esc(f.laenge)}</span></div><h3>${t(f.titel)}</h3><p>${t(f.worum)}</p><div class="ach"><span class="mo">Achte auf</span><ul>${f.achte.map((x) => `<li>${t(x)}</li>`).join('')}</ul></div>${f.achtung ? `<div class="warn mo">${ic('alert-triangle')}<span>${t(f.achtung)}</span></div>` : ''}</div>`).join('')}</div>
+      <div class="kz"><div class="gr">${tape('layout-grid', 'Kino-Bingo zum Hauptfilm', true)}
+          <div class="bingo">${kino.bingo.map((x) => `<div>${t(x)}</div>`).join('')}</div><p class="mo" style="color:var(--g)">Entdeckt? Ankreuzen. Drei in einer Reihe: leise „Bingo“.</p></div>
+        <div class="bx nach"><div class="tape mo" style="margin-bottom:2.4mm">${ic('message-circle')}Nach dem Abspann</div>${kino.nachher.map((x, i) => frage({ f: x, linien: 2 }, i)).join('')}</div></div>
+      <div class="vibe"><span class="mo">Meine Wertung: <i></i><i></i><i></i><i></i><i></i> Popcorn</span><span class="mo">Beste Szene: ______________________________</span></div>
+    </div></div>`,
   })
 
   // Hot Takes
@@ -170,7 +223,7 @@ function baue(d: Heft): string {
   seiten.push({
     html: `<div>${kh('Für die Tasche', `${d.karten.length === 6 ? 'Sechs' : d.karten.length} Karten. Ausschneiden, einstecken, benutzen.`, 'Zum Ausschneiden')}
     <div class="inhalt">
-      <div class="kk${d.karten.length > 4 ? ' sechs' : ''}">${d.karten.map((k) => `<div class="karte"><div class="o"><h3>${t(k.titel)}</h3>${ic(k.icon)}</div><div class="m">${k.zeilen.map((x) => `<div><span>${t(x)}</span></div>`).join('')}</div>${k.eigen ? `<div class="e"><span><strong>${t(k.eigen)}</strong></span><i></i></div>` : ''}</div>`).join('')}</div>
+      <div class="kk${d.karten.length > 4 ? ' sechs' : ''}">${d.karten.map((k) => `<div class="karte"><div class="o"><h3>${t(k.titel)}</h3>${ic(k.icon)}</div><div class="m">${k.zeilen.map((x) => (x.startsWith('_') ? `<p class="leer"><b>${esc(x.slice(1))}</b><i></i></p>` : `<div><span>${t(x)}</span></div>`)).join('')}</div>${k.eigen ? `<div class="e"><span><strong>${t(k.eigen)}</strong></span><i></i></div>` : ''}</div>`).join('')}</div>
       <p class="mo" style="color:var(--g);text-align:center">Passt ins Portemonnaie oder hinter die Handyhülle · ${marke}</p>
     </div></div>`,
   })
@@ -194,15 +247,16 @@ function baue(d: Heft): string {
   const n = d.tracks.length
   const lkopf = (titel: string) => `<div class="lk"><span class="mark mo">Nur für die Leitung</span><h1>${t(titel)}</h1></div>`
   seiten.push({
-    klasse: 'lt',
+    klasse: 'lt eng',
     html: `<div>${lkopf('Hinweise zum Einsatz')}<div class="inhalt">
       <div class="fakten">${lt.fakten.map((x) => `<div><small>${esc(x[0])}</small><b>${t(x[1])}</b></div>`).join('')}</div>
       <div><h2>Wozu dieses Heft?</h2><p>${t(lt.wozu)}</p></div>
       <div><h2>Lernziele</h2><ul>${lt.lernziele.map((x) => `<li>${t(x)}</li>`).join('')}</ul></div>
       <div><h2>Das Heft in den Einheiten</h2><table class="t"><tr><th>Einheit</th><th>Seiten</th><th>So passt das Heft in die 100 Minuten</th></tr>
         <tr><td>vor Einheit ${d.tracks[0].nr}</td><td>1–3</td><td>${t(lt.start)}</td></tr>
-        ${d.tracks.map((e, i) => `<tr><td>E${e.nr} · Track ${z2(i + 1)}</td><td>${seiteVon(i)}–${seiteVon(i) + 1}</td><td>${t(e.leitung.einsatz)}</td></tr>`).join('')}
-        <tr><td>nach Einheit ${d.tracks[n - 1].nr}</td><td>${seiteVon(n)}–${seiteVon(n) + 3}</td><td>${t(lt.schluss)}</td></tr></table></div>
+        ${d.tracks.map((e, i) => `<tr><td>E${e.nr} · Track ${z2(i + 1)}</td><td>${seiteVon(i)}–${seiteVon(i) + 1}</td><td>${tp(e.leitung.einsatz)}</td></tr>`).join('')}
+        <tr><td>nach Einheit ${d.tracks[n - 1].nr}</td><td>${S.kino}–${S.ab}</td><td>${tp(lt.schluss)}</td></tr>
+        <tr><td>Sessions</td><td>${S.ses}–${S.ses + 1}</td><td>Die Gruppenspiele der Einheiten in Kurzform – zum Nachschlagen, und damit Jugendliche selbst eine Aktion anleiten können. Die ausführliche Anleitung steht in der jeweiligen Einheit.</td></tr></table></div>
       <div><h2>Eine Einheit mit dem Heft</h2><div class="zl">
         <div style="flex:10">Ankommen<small>0–10</small></div><div style="flex:6">Brücke<small>10–15</small></div>
         <div class="h" style="flex:30">Hauptteil 1 · Heft<small>15–45 · Szene lesen, Fakten, Move A</small></div><div style="flex:15">Pause<small>45–60</small></div>
@@ -213,7 +267,7 @@ function baue(d: Heft): string {
     </div></div>`,
   })
   seiten.push({
-    klasse: 'lt gross',
+    klasse: n > 4 ? 'lt' : 'lt gross',
     html: `<div>${lkopf('Lösungen und Fragen für die Runde')}<div class="inhalt">
       <p class="klein">Bei offenen Fragen gibt es kein Richtig oder Falsch. Genannt ist, was häufig kommt und woran sich das Gespräch anknüpfen lässt.</p>
       <div class="sp2">${d.tracks.map((e, i) => `<div class="los"><h3>Track ${z2(i + 1)} · ${t(e.titel)}</h3><ul>${e.leitung.loesungen.map((x) => `<li>${t(x)}</li>`).join('')}</ul></div>`).join('')}</div>
@@ -223,11 +277,15 @@ function baue(d: Heft): string {
     </div></div>`,
   })
   seiten.push({
-    klasse: 'lt gross',
-    html: `<div>${lkopf('Material, Druck und Hintergrund')}<div class="inhalt">
+    klasse: n > 4 ? 'lt eng' : 'lt',
+    html: `<div>${lkopf('Material, Videos, Druck und Hintergrund')}<div class="inhalt">
       <div><h2>Was Sie je Einheit zusätzlich brauchen</h2><table class="t"><tr><th>Einheit</th><th>Für das Heft</th><th>Aus dem Kurs (Toolbox)</th></tr>
         ${d.tracks.map((e, i) => `<tr><td>E${e.nr} · Track ${z2(i + 1)}</td><td>${t(e.leitung.material)}</td><td>${t(e.leitung.blaetter)}</td></tr>`).join('')}</table></div>
-      <div class="sp2"><div class="kasten"><h2>Drucken</h2><ul>${lt.druck.map((x) => `<li>${t(x)}</li>`).join('')}</ul></div>
+      <div><h2>Videos und Filme (Links geprüft am ${esc(kino.geprueft)})</h2><table class="t"><tr><th>Wo</th><th>Titel und Kanal</th><th>Link</th><th>läuft</th></tr>
+        ${d.tracks.filter((e) => e.clip).map((e) => `<tr><td>Track ${z2(d.tracks.indexOf(e) + 1)}</td><td>${t(e.clip!.titel)} – ${esc(e.clip!.kanal)} (${esc(e.clip!.dauer)})</td><td>${esc(kurzlink(e.clip!.url))}</td><td>☐</td></tr>`).join('')}
+        ${kino.filme.map((f) => `<tr><td>Kino</td><td>${t(f.titel)} (${f.jahr}, ${esc(f.laenge)}, ${f.fsk === null ? 'FSK vor dem Einsatz prüfen' : 'FSK ' + f.fsk})${f.achtung ? ' – ' + t(f.achtung) : ''}</td><td>DVD, Mediathek oder Streaming</td><td>☐</td></tr>`).join('')}</table>
+        <p class="klein" style="margin-top:1mm">Videos können verschwinden: vor jeder Einheit kurz öffnen. Filme vorher selbst ansehen und die Vorführrechte der Einrichtung beachten.</p></div>
+      <div class="sp2"><div class="kasten"><h2>Drucken</h2><ul>${lt.druck.map((x) => `<li>${tp(x)}</li>`).join('')}</ul></div>
         <div class="kasten g"><h2>Achtung bei dieser Ausgabe</h2><p>${t(lt.achtung)}</p></div></div>
       <div><h2>Fachlicher Hintergrund in Kürze</h2><p>${t(lt.hintergrund)}</p><p class="klein" style="margin-top:1.5mm">${t(lt.quellen)}</p></div>
       <p class="klein">Alle Personen und Szenen im Heft sind erfunden. Zeichnungen: Open Peeps (Pablo Stanley, CC0), Tabler Icons (MIT). Schriften: Anton, Space Grotesk (SIL Open Font License), Permanent Marker (Apache-Lizenz 2.0). Stand: ${esc(d.stand)}.</p>

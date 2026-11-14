@@ -5,8 +5,9 @@ Akzentfarbe je Ausgabe, direkter Ton, erfundene Szenen nah am Alltag (Betrieb, W
 
 Aufbau einer Ausgabe: Titel · Ansage · Tracklist mit Cast und Soundcheck · je Thema eine Doppelseite
 (links Szene, Fakten, Mythos/Real, Merksatz – rechts „Dein Move“ mit zwei Aufgaben, Challenge,
-eigener Line und Aufgabe für die Woche) · Hot Takes · Knack den Code · Karten für die Tasche ·
-Abspann · drei Seiten nur für die Leitung.
+eigener Line und Aufgabe für die Woche) · Sessions (Gruppen-Aktionen aus dem Kurs, zwei Seiten) · Kino
+(Hauptfilm, Tipp, Bingo, Fragen) · Hot Takes · Knack den Code · Karten für die Tasche · Abspann ·
+drei Seiten nur für die Leitung.
 
     npx tsx --tsconfig tsconfig.scripts.json dossiers/bau.tsx m5      # HTML nach dossiers/aus/
     node dossiers/pdf.cjs m5                                           # PDF nach dossiers/pdf/, prüft jede Seite
@@ -17,6 +18,13 @@ Abspann · drei Seiten nur für die Leitung.
 - `bau.tsx` – setzt die Seiten. Figuren: Open Peeps aus `src/blatt` in Graustufen; Icons: Tabler (voller Satz).
 - `stil.css` – Gestaltung. Akzentfarbe je Ausgabe über `farbe` im Inhalt.
 - `pdf.cjs` – meldet „frei … mm“ je Seite. Negativ heißt Überlauf: Text kürzen oder Feld verkleinern.
+
+Videos und Filme
+- `clip` je Track wird als QR-Code gedruckt. Nur Links eintragen, die über die oEmbed-Schnittstelle von
+  YouTube bestätigt sind (Titel und Kanal von dort übernehmen); Dauer und Inhalt muss die Leitung vor dem
+  Einsatz selbst ansehen – das steht auch auf der dritten Leitungsseite.
+- `kino.filme`: FSK nur 0, 6 oder 12 und aus einer Quelle belegt; sonst `fsk: null` („FSK prüfen“).
+- Die Liste der Kandidaten liegt nicht im Repo (Recherche-Stand 14.11.2026).
 
 Regeln für den Inhalt
 - Du-Form, kurze Sätze, trockener Humor. Kein Kinderkram, keine Moral am Ende.
