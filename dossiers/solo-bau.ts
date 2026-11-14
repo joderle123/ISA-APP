@@ -42,7 +42,8 @@ export function baueSolo(d: Solo, h: Helfer): string {
           <div class="tx"><p>${t(b.text)}</p><div class="fr mk">${ic('arrow-big-right')}<span>${t(b.frage)}</span></div><div class="linie"></div></div></div></div>`
       case 'fakten':
         return `<div class="gr">${h.tape('bulb', b.titel)}
-          <div class="fk${b.fakten.length > 3 ? ' sechs' : ''}">${b.fakten.map((x, k) => `<div><div class="z">${k + 1}</div><h3>${t(x.t)}</h3><p>${t(x.x)}</p></div>`).join('')}</div></div>`
+          <div class="fk${b.fakten.length > 3 ? ' sechs' : ''}">${b.fakten.map((x, k) => `<div><div class="z">${k + 1}</div><h3>${t(x.t)}</h3><p>${t(x.x)}</p></div>`).join('')}</div>
+          <p class="mo so-hin">Welcher der Kästen stimmt für dich nicht? Streich ihn durch.</p></div>`
       case 'clip':
         return `<div class="clip"><div class="qr">${h.qr(b.clip.url)}</div><div class="tx"><div class="lab mo">${ic('player-play')}Video · ${esc(b.clip.dauer)}</div><h3>${t(b.clip.titel)}</h3><div class="ka mo">${esc(b.clip.kanal)} · ${esc(h.kurzlink(b.clip.url))}</div><div class="fr2">${t(b.clip.frage)}</div></div></div>`
       case 'marker':
@@ -55,12 +56,14 @@ export function baueSolo(d: Solo, h: Helfer): string {
       case 'tiefe':
         return `<div class="gr">${h.tape('messages', 'Du wählst die Tiefe')}
           <div class="so-tf">${b.fragen.map((f, k) => `<div class="s${k + 1}"><div class="lab mo"><b>Stufe ${k + 1}</b><span>${['leicht', 'ehrlich', 'tief'][k]}</span></div>${f.map((x) => `<p>${t(x)}</p>`).join('')}</div>`).join('')}</div>
-          <p class="mo so-hin">Du suchst die Stufe aus. Du darfst dieselbe Frage zurückstellen. „Weiter“ gilt immer.</p></div>`
+          <p class="mo so-hin">Du suchst die Stufe aus. Jede Frage darfst du zurückgeben. „Weiter“ gilt immer. Vor Stufe 3: Frag, was dein Gegenüber weitersagen muss.</p></div>`
       case 'logbuch':
         return `<table class="so-log"><tr><th>Datum</th><th>Akku 0–10</th><th>Thema</th><th>Mein Experiment: Was kam raus?</th><th>War</th></tr>${Array.from({ length: b.zeilen }, () => '<tr><td></td><td></td><td></td><td></td><td><i></i><i></i><i></i></td></tr>').join('')}</table>
           <p class="mo so-hin">War: drei Kästchen – nichts für mich · okay · gut</p>`
       case 'check':
-        return `<div class="vibe"><span class="mo">Heute war: <i></i> nichts für mich <i></i> okay <i></i> gut</span><span class="mo">Nächstes Thema: ______________________</span><span class="mo">Datum: __________</span></div>`
+        return d.id === 's00'
+          ? `<div class="vibe"><span class="mo">Heute war: <i></i> nichts für mich <i></i> okay <i></i> gut</span><span class="mo">Nächstes Thema: ______________________</span><span class="mo">Datum: __________</span></div>`
+          : `<div class="vibe"><span class="mo">Ins Logbuch (Heft #01): Datum · Thema · Kreuz</span><span class="mo">Nächstes Thema: ______________________</span></div>`
       case 'zwei':
         return `<div class="zwei so-zw"><div class="gr">${b.links.map(block).join('')}</div><div class="gr">${b.rechts.map(block).join('')}</div></div>`
     }
@@ -80,6 +83,7 @@ export function baueSolo(d: Solo, h: Helfer): string {
 
   // Seiten für die Bezugsperson
   const b = d.begleitung
+  const hatTiefe = d.seiten.some((x) => x.bloecke.some((y) => y.art === 'tiefe'))
   const lkopf = (titel: string) => `<div class="lk"><span class="mark mo">Für die Bezugsperson</span><h1>${t(titel)}</h1></div>`
   const clips = d.seiten.flatMap((s) => s.bloecke.flatMap((x) => (x.art === 'clip' ? [x.clip] : x.art === 'zwei' ? [...x.links, ...x.rechts].flatMap((y) => (y.art === 'clip' ? [y.clip] : [])) : [])))
   seiten.push({
@@ -90,7 +94,7 @@ export function baueSolo(d: Solo, h: Helfer): string {
         <div class="kasten g"><h2>Ziel der Stunde</h2><p>${t(b.ziel)}</p>${b.anschluss ? `<p style="margin-top:1.4mm"><strong>Anschluss:</strong> ${t(b.anschluss)}</p>` : ''}</div></div>
       <div><h2>Ablauf (45 bis 50 Minuten)</h2><table class="t"><tr><th>Minute</th><th>Was</th></tr>${b.ablauf.map((x) => `<tr><td>${esc(x[0])}</td><td>${t(x[1])}</td></tr>`).join('')}</table></div>
       <div class="sp2"><div class="kasten"><h2>Haltung</h2><ul>${b.haltung.map((x) => `<li>${t(x)}</li>`).join('')}</ul></div>
-        <div class="kasten"><h2>Hinweise zu den Seiten</h2><ul>${b.hinweise.map((x) => `<li>${t(x)}</li>`).join('')}</ul></div></div>
+        <div class="kasten"><h2>Hinweise zu den Seiten</h2><ul>${b.hinweise.map((x) => `<li>${t(x)}</li>`).join('')}${hatTiefe ? '<li>Stufe 3 nur, wenn noch 15 Minuten bleiben – sonst als erste Frage der nächsten Stunde.</li>' : ''}</ul></div></div>
       <div class="kasten g"><h2>Achtung</h2><p>${t(b.achtung)}</p></div>
     </div></div>`,
   })

@@ -58,23 +58,23 @@
   ],
   "quiz": [
    {
-    "f": "Was ist eine Grenze?",
+    "f": "Wer als Kind kein Nein haben durfte, hat es …",
     "o": [
-     "eine Regel für andere",
-     "der Punkt, an dem es für mich nicht mehr okay ist",
-     "ein Zeichen von Schwäche",
-     "etwas, das nur Erwachsene haben"
+     "für immer verlernt",
+     "gar nicht nötig",
+     "nie geübt",
+     "falsch verstanden"
     ],
-    "r": 1,
-    "warum": "Sie gehört zu einer Person, nicht zu einer Hausordnung."
+    "r": 2,
+    "warum": "Nie geübt heißt: Es lässt sich nachholen."
    },
    {
     "f": "Woran merkt man die eigene Grenze meistens zuerst?",
     "o": [
      "am Körper",
      "an den Worten",
-     "an der Uhrzeit",
-     "gar nicht"
+     "am schlechten Gewissen",
+     "erst am nächsten Tag"
     ],
     "r": 0,
     "warum": "Bauch, Kiefer, Schritt zurück – vor dem Gedanken."
@@ -91,14 +91,14 @@
     "warum": "Zeit kaufen ist eine Grenze."
    },
    {
-    "f": "Muss man ein Nein begründen?",
+    "f": "Du willst dein Ladekabel nicht verleihen. Brauchst du einen Grund?",
     "o": [
-     "ja, immer",
-     "nur bei Erwachsenen",
-     "nein",
-     "nur schriftlich"
+     "ja, einen guten",
+     "ja, sonst ist es unhöflich",
+     "nur bei Freunden",
+     "nein"
     ],
-    "r": 2,
+    "r": 3,
     "warum": "Erklären darf man. Müssen nicht."
    },
    {
@@ -135,15 +135,15 @@
     "warum": "Beides stimmt gleichzeitig."
    },
    {
-    "f": "Du hörst ein Nein. Was jetzt?",
+    "f": "Chloé sagt „Klar“ und tritt zu Hause gegen die Schranktür. Auf wen ist sie sauer?",
     "o": [
-     "weiterfragen, bis es ein Ja wird",
-     "beleidigt sein",
-     "„Okay“ sagen",
-     "so tun, als hättest du nichts gehört"
+     "auf Mila",
+     "auf ihre Eltern",
+     "auf alle",
+     "auf sich selbst"
     ],
-    "r": 2,
-    "warum": "Der schwerste und kürzeste Satz."
+    "r": 3,
+    "warum": "Das Ja hat sie selbst gegeben – gegen ihren Willen."
    }
   ]
  },
@@ -172,92 +172,92 @@
   ],
   "quiz": [
    {
-    "f": "Warum fesselt ein Feed so stark?",
+    "f": "Du weißt, dass ein Foto gestellt ist. Was ist trotzdem schneller?",
     "o": [
-     "weil alles darin gut ist",
-     "weil die Treffer unregelmäßig kommen",
-     "weil er so teuer war",
-     "weil er kurz ist"
+     "der Gedanke „ist gestellt“",
+     "der Griff zum Ausschalten",
+     "die Langeweile",
+     "das Gefühl beim Vergleichen"
     ],
-    "r": 1,
-    "warum": "Unregelmäßige Belohnung – wie am Spielautomaten."
+    "r": 3,
+    "warum": "Der Kopf vergleicht, bevor du denkst."
    },
    {
     "f": "Was fehlt einem Feed, das ein Buch hat?",
     "o": [
      "Bilder",
      "ein Ende",
-     "Buchstaben",
-     "ein Titel"
+     "Spannung",
+     "neue Folgen"
     ],
     "r": 1,
     "warum": "Ohne Stopp-Stelle hört man später auf."
    },
    {
-    "f": "Womit verdienen kostenlose Apps ihr Geld?",
+    "f": "Wer gewinnt beim Duell „Die Daten“?",
     "o": [
-     "mit Spenden",
-     "mit gar nichts",
-     "mit deiner Zeit und deinen Daten",
-     "mit Steuern"
+     "wer weniger Bildschirmzeit hat",
+     "wer seltener entsperrt hat",
+     "wer näher an seiner Schätzung liegt",
+     "wer zuerst fertig ist"
     ],
     "r": 2,
-    "warum": "Mehr Zeit im Feed heißt mehr Werbung."
+    "warum": "Es zählt, wie gut du dich kennst – nicht, wie wenig du scrollst."
    },
    {
-    "f": "Du weißt, dass ein Bild gestellt ist. Wirkt der Vergleich trotzdem?",
+    "f": "Was misst du bei „Fünf Minuten Feed“?",
     "o": [
-     "nein, nie",
-     "ja, oft",
-     "nur bei Kindern",
-     "nur nachts"
+     "wie viele Videos du schaffst",
+     "deine Laune vorher und nachher",
+     "deinen Akku",
+     "wie schnell du tippst"
     ],
     "r": 1,
-    "warum": "Wissen schützt nicht vor dem Gefühl."
+    "warum": "Eine Zahl vorher, eine nachher – mehr braucht es nicht."
    },
    {
     "f": "Wonach greifen Leute oft zum Handy?",
     "o": [
      "nach einem miesen Gefühl",
-     "nach dem Sport",
-     "nur nach dem Essen",
-     "nie ohne Grund"
+     "nach einem guten Tag",
+     "wenn jemand zuschaut",
+     "wenn alles erledigt ist"
     ],
     "r": 0,
     "warum": "Langeweile, Leere, Druck – das Handy betäubt schnell."
    },
    {
-    "f": "Was bewirkt Schwarz-Weiß auf dem Handy?",
+    "f": "Was soll die Karte „Mein Ende“ ersetzen?",
     "o": [
-     "spart nur Akku",
-     "macht Apps weniger verlockend",
-     "macht das Handy schneller",
-     "gar nichts"
+     "den Wecker",
+     "ein Zeitlimit der Eltern",
+     "den Akku",
+     "das Ende, das der Feed nicht hat"
     ],
-    "r": 1,
-    "warum": "Farbe ist ein Köder. In einer Studie sank die Nutzung deutlich."
+    "r": 3,
+    "warum": "Der Feed hört nicht auf. Also baust du die Stopp-Stelle selbst."
    },
    {
-    "f": "Was hält besser: ein Verbot oder ein eigener Plan?",
+    "f": "Mia hat 300 Leute gesehen. Wie viele davon kennt sie?",
     "o": [
-     "das Verbot",
-     "der eigene Plan",
-     "beides gleich",
-     "nichts davon"
+     "keinen",
+     "die Hälfte",
+     "die meisten",
+     "alle"
     ],
-    "r": 1,
-    "warum": "Konkrete Wenn-dann-Pläne funktionieren besser als Vorsätze."
+    "r": 0,
+    "warum": "Sie vergleicht sich mit Fremden."
    },
    {
-    "f": "Gibt es „Social-Media-Sucht“ als offizielle Diagnose?",
+    "f": "Was fragt die Karte „Die Sekunde davor“?",
     "o": [
-     "ja, seit Jahren",
-     "nein – bisher nur für Gaming",
-     "nur für Erwachsene",
-     "nur in Europa"
+     "Wie spät ist es?",
+     "Wer hat geschrieben?",
+     "Was fühle ich gerade?",
+     "Wie viel Akku habe ich?"
     ],
-    "r": 1,
-    "warum": "Die WHO führt die Computerspielstörung, nicht das Scrollen."
+    "r": 2,
+    "warum": "Oft geht es ums Gefühl davor, nicht ums Handy."
    }
   ]
  },
@@ -286,23 +286,23 @@
   ],
   "quiz": [
    {
-    "f": "Warum fühlen sich gute Spiele so gut an?",
+    "f": "Im Spiel wirst du besser, entscheidest selbst – und was noch?",
     "o": [
-     "Man wird besser, entscheidet selbst und gehört dazu.",
-     "Sie sind bunt.",
-     "Sie sind laut.",
-     "Sie dauern lange."
+     "Leute brauchen dich",
+     "du verdienst Geld",
+     "du lernst für die Schule",
+     "du hast deine Ruhe"
     ],
     "r": 0,
-    "warum": "Können, Selbstbestimmung, Zugehörigkeit – drei Grundbedürfnisse."
+    "warum": "Drei Grundbedürfnisse auf einmal."
    },
    {
     "f": "Wozu gibt es tägliche Login-Belohnungen?",
     "o": [
-     "als Geschenk",
-     "damit du jeden Tag wiederkommst",
-     "aus Versehen",
-     "für die Grafik"
+     "als Dank",
+     "damit du täglich wiederkommst",
+     "für Anfänger",
+     "weil es nichts kostet"
     ],
     "r": 1,
     "warum": "Wer eine Serie hat, will sie nicht reißen lassen."
@@ -310,12 +310,12 @@
    {
     "f": "Kisten mit Zufallsinhalt funktionieren wie …",
     "o": [
-     "ein Sparbuch",
-     "Glücksspiel",
-     "ein Lexikon",
-     "eine Schulnote"
+     "ein Abo",
+     "ein Geschenk",
+     "ein Glücksspiel",
+     "ein Rabatt"
     ],
-    "r": 1,
+    "r": 2,
     "warum": "Unregelmäßige Belohnung gegen Geld."
    },
    {
@@ -323,52 +323,52 @@
     "o": [
      "ja, ab drei Stunden",
      "ja, ab fünf Stunden",
-     "nein – die Stunden allein sagen es nicht",
-     "ja, immer"
+     "ja, bei täglichem Spielen",
+     "nein – Stunden allein sagen es nicht"
     ],
-    "r": 2,
+    "r": 3,
     "warum": "Es zählt, ob man die Kontrolle verliert und anderes aufgibt."
    },
    {
-    "f": "Was gehört zu einer Computerspielstörung?",
+    "f": "Welche Frage sagt mehr als die Stundenzahl?",
     "o": [
-     "ein hoher Rang",
-     "Weiterspielen trotz deutlicher Schäden",
-     "ein teurer PC",
-     "viele Freunde im Spiel"
+     "Welches Spiel?",
+     "Welche Konsole?",
+     "Wie hoch ist der Rang?",
+     "Kannst du aufhören, wenn du willst?"
     ],
-    "r": 1,
-    "warum": "Dazu: Kontrollverlust und Vorrang vor allem anderen – über Monate."
+    "r": 3,
+    "warum": "Dazu: Was fällt hinten runter?"
    },
    {
-    "f": "Führt die Weltgesundheitsorganisation die Computerspielstörung als Diagnose?",
+    "f": "Noah fehlt in der Schule, im Clan nie. Was bekommt er dort?",
     "o": [
-     "nein",
-     "ja",
-     "nur für Kinder",
-     "nur in den USA"
+     "Geld",
+     "Ruhe vor allen",
+     "Leute, die ihn brauchen",
+     "bessere Noten"
     ],
-    "r": 1,
-    "warum": "In der ICD-11 als „Gaming Disorder“."
+    "r": 2,
+    "warum": "Drei Leute schreiben: „Endlich.“"
    },
    {
     "f": "Was hilft am ehesten, rechtzeitig aufzuhören?",
     "o": [
-     "auf Müdigkeit warten",
      "vorher festlegen, wann Schluss ist",
-     "schneller spielen",
-     "gar nichts"
+     "auf Müdigkeit warten",
+     "nach einem Sieg",
+     "wenn jemand ruft"
     ],
-    "r": 1,
+    "r": 0,
     "warum": "Die Entscheidung fällt vor dem Einloggen, nicht mittendrin."
    },
    {
     "f": "Jemand spielt, um etwas nicht zu fühlen. Was ist das Spiel dann?",
     "o": [
-     "Sport",
+     "ein Training",
      "eine Betäubung",
-     "ein Beruf",
-     "Zufall"
+     "eine Belohnung",
+     "ein Zeitvertreib"
     ],
     "r": 1,
     "warum": "Dann lohnt die Frage: Wovor ist dort Ruhe?"
@@ -402,10 +402,10 @@
    {
     "f": "Was liegt oft unter der Wut?",
     "o": [
-     "gar nichts",
+     "nichts – Wut ist einfach Wut",
      "ein anderes Gefühl wie Scham oder Angst",
-     "Hunger",
-     "Langeweile"
+     "schlechte Erziehung",
+     "zu viel Energie"
     ],
     "r": 1,
     "warum": "Wut fühlt sich stärker an als das Gefühl darunter."
@@ -425,66 +425,66 @@
     "f": "Auf ein Kissen einschlagen macht …",
     "o": [
      "ruhiger",
+     "müde",
      "eher wütender",
-     "müde und glücklich",
      "gar nichts"
     ],
-    "r": 1,
+    "r": 2,
     "warum": "Es übt die Wut ein, statt sie abzubauen."
    },
    {
     "f": "Was hilft bei voller Wut am ehesten?",
     "o": [
+     "Abstand und Zeit",
      "diskutieren",
      "eine Erklärung verlangen",
-     "Abstand und Bewegung",
      "eine Nachricht schreiben"
     ],
-    "r": 2,
+    "r": 0,
     "warum": "Erst der Körper, dann das Gespräch."
    },
    {
-    "f": "Ist Wut ein schlechtes Gefühl?",
+    "f": "Finn wirft den Teller. Worum ging es wirklich?",
     "o": [
-     "ja, immer",
-     "nein – sie zeigt, dass etwas nicht stimmt",
-     "nur bei Jungen",
-     "nur bei Erwachsenen"
+     "um das Essen",
+     "um den Ton des Erziehers",
+     "um den Teller",
+     "um die Nachricht seiner Mutter"
     ],
-    "r": 1,
-    "warum": "Das Gefühl ist ein Signal. Was man damit macht, ist die Frage."
+    "r": 3,
+    "warum": "Darüber hat er mit keinem geredet."
    },
    {
-    "f": "Wut runterschlucken ist …",
+    "f": "Was steht auf der Karte „Der Satz danach“?",
     "o": [
-     "immer die beste Lösung",
-     "auf Dauer auch teuer",
-     "unmöglich",
-     "ein Zeichen von Stärke"
+     "„Vorhin ging es eigentlich nicht um …“",
+     "„Tut mir leid, kommt nie wieder vor.“",
+     "„Du hast angefangen.“",
+     "„Ist mir egal.“"
     ],
-    "r": 1,
-    "warum": "Sie kommt später wieder – oft an der falschen Stelle."
+    "r": 0,
+    "warum": "Der Satz sagt, worum es wirklich ging – ohne Versprechen."
    },
    {
     "f": "Wann redet man am besten über einen Ausraster?",
     "o": [
      "mittendrin",
-     "sofort danach",
      "wenn der Körper wieder ruhig ist",
-     "nie"
+     "sofort danach",
+     "am besten gar nicht"
     ],
-    "r": 2,
+    "r": 1,
     "warum": "Erst dann ist das Denken wieder da."
    },
    {
     "f": "Jemand rastet wegen einer Kleinigkeit aus. Meistens …",
     "o": [
      "ging es wirklich um die Kleinigkeit",
-     "war das Fass schon vorher voll",
      "ist er einfach so",
-     "hat er schlecht gegessen"
+     "will er Aufmerksamkeit",
+     "war das Fass schon vorher voll"
     ],
-    "r": 1,
+    "r": 3,
     "warum": "Der Auslöser ist selten der Grund."
    }
   ]
@@ -494,7 +494,7 @@
   "nr": "06",
   "reihe": "Thema",
   "thema": "Nachts",
-  "headline": "Um halb drei lügt dein Kopf.",
+  "headline": "Um halb drei ist alles größer.",
   "farbe": "#4D94FF",
   "datei": "Solo-06-Nachts",
   "wann": [
@@ -518,8 +518,8 @@
     "o": [
      "Bett heißt schlafen",
      "Bett heißt wach",
-     "gar nichts",
-     "Mathe"
+     "Bett heißt Ruhe",
+     "gar nichts"
     ],
     "r": 1,
     "warum": "Deshalb hilft es, bei langem Wachliegen aufzustehen."
@@ -528,34 +528,34 @@
     "f": "Warum wirken Sorgen nachts größer?",
     "o": [
      "weil sie dann stimmen",
+     "weil es dunkel und still ist",
      "weil der prüfende Teil des Gehirns müde ist",
-     "wegen des Mondes",
-     "weil es dunkel ist"
+     "weil man nachts ehrlicher ist"
     ],
-    "r": 1,
+    "r": 2,
     "warum": "Nachts fehlt die Gegenstimme."
    },
    {
     "f": "Was stabilisiert den Schlaf am meisten?",
     "o": [
-     "früh ins Bett gehen",
      "jeden Tag ungefähr gleich aufstehen",
-     "am Wochenende bis mittags schlafen",
+     "früh ins Bett gehen",
+     "am Wochenende lange ausschlafen",
      "ein Nickerchen am Abend"
     ],
-    "r": 1,
+    "r": 0,
     "warum": "Die Aufstehzeit ist der Anker der inneren Uhr."
    },
    {
-    "f": "Warum werden Jugendliche abends später müde?",
+    "f": "Nele denkt um halb drei, dass ihre Freundin sie nicht mag. Was gilt?",
     "o": [
-     "aus Faulheit",
-     "die innere Uhr verschiebt sich in der Pubertät",
-     "wegen der Schule",
-     "das stimmt gar nicht"
+     "Es stimmt, nachts ist man ehrlich.",
+     "Es ist gelogen.",
+     "Sie sollte sofort schreiben.",
+     "Um zehn Uhr noch mal prüfen."
     ],
-    "r": 1,
-    "warum": "Biologie, kein Charakterfehler."
+    "r": 3,
+    "warum": "Das Thema kann echt sein. Die Größe stimmt nachts nicht."
    },
    {
     "f": "Was hilft morgens beim Wachwerden am meisten?",
@@ -580,25 +580,25 @@
     "warum": "Zurück ins Bett erst, wenn Müdigkeit kommt."
    },
    {
-    "f": "Was macht zu wenig Schlaf am nächsten Tag?",
+    "f": "Was kannst du am Schlaf am ehesten selbst steuern?",
     "o": [
-     "bessere Laune",
-     "eine kürzere Zündschnur",
-     "mehr Geduld",
-     "nichts"
+     "wann ich einschlafe",
+     "was ich träume",
+     "wie tief ich schlafe",
+     "wann ich aufstehe"
     ],
-    "r": 1,
-    "warum": "Müde Menschen rasten schneller aus."
+    "r": 3,
+    "warum": "Eine feste Aufstehzeit zieht den Rest mit."
    },
    {
     "f": "Eine Entscheidung um drei Uhr nachts ist meistens …",
     "o": [
      "besonders klug",
-     "besonders ehrlich",
      "schlechter als dieselbe am Vormittag",
-     "egal"
+     "besonders ehrlich",
+     "genauso gut wie am Tag"
     ],
-    "r": 2,
+    "r": 1,
     "warum": "Darum: nachts nichts entscheiden."
    }
   ]
@@ -631,22 +631,22 @@
     "f": "Woher kommt die strenge Stimme im Kopf meistens?",
     "o": [
      "Sie ist angeboren.",
+     "Sie kommt aus dem Nichts.",
      "Sie wurde gelernt – oft von echten Menschen.",
-     "aus dem Handy",
-     "Niemand hat so eine."
+     "Sie ist die Wahrheit über mich."
     ],
-    "r": 1,
+    "r": 2,
     "warum": "Deshalb lohnt die Frage nach dem Tonfall."
    },
    {
     "f": "Was will die Stimme eigentlich erreichen?",
     "o": [
-     "dich zerstören",
-     "dich schützen, auf eine schlechte Art",
-     "gar nichts",
+     "dich schützen – auf eine schlechte Art",
+     "dich fertigmachen",
+     "dich besser machen",
      "dich unterhalten"
     ],
-    "r": 1,
+    "r": 0,
     "warum": "Wer sich zuerst kleinmacht, wird nicht überrascht."
    },
    {
@@ -655,53 +655,53 @@
      "wer sich fertigmacht",
      "wer fair mit sich umgeht",
      "beide gleich",
-     "keiner"
+     "keiner von beiden"
     ],
     "r": 1,
     "warum": "Härte lähmt, Fairness hält im Spiel."
    },
    {
-    "f": "Der Freundes-Test fragt:",
+    "f": "Was prüft die Aufgabe „Gleiche Lage, zwei Stimmen“?",
     "o": [
      "Wie viele Freunde habe ich?",
-     "Würde ich das so einem Freund sagen?",
-     "Wer ist mein bester Freund?",
-     "Wer mag mich nicht?"
+     "Wer mag mich nicht?",
+     "Wer ist schuld am Fehler?",
+     "Würde ich so mit jemandem reden, den ich mag?"
     ],
-    "r": 1,
+    "r": 3,
     "warum": "Meistens lautet die Antwort Nein."
    },
    {
     "f": "Hilft „Denk doch positiv“ gegen die Stimme?",
     "o": [
-     "ja, sofort",
      "meistens nicht",
-     "nur morgens",
-     "nur bei Erwachsenen"
+     "ja, sofort",
+     "nur an guten Tagen",
+     "ja, wenn man es oft genug sagt"
     ],
-    "r": 1,
+    "r": 0,
     "warum": "Ein neuer Satz muss stimmen, sonst glaubt ihn der Kopf nicht."
    },
    {
-    "f": "Ein Gedanke über dich ist …",
+    "f": "Die Stimme ist laut Heft ein schlechter …",
     "o": [
-     "immer wahr",
-     "ein Gedanke – noch keine Tatsache",
-     "immer falsch",
-     "ein Befehl"
+     "Lehrer",
+     "Freund",
+     "Witz",
+     "Bodyguard"
     ],
-    "r": 1,
-    "warum": "Man kann ihn prüfen wie eine Behauptung."
+    "r": 3,
+    "warum": "Sie will schützen – nur auf eine schlechte Art."
    },
    {
-    "f": "Das Hochstapler-Gefühl („gleich fliegt auf, dass ich nichts kann“) haben …",
+    "f": "Wer kennt das Gefühl „gleich fliegt auf, dass ich nichts kann“?",
     "o": [
-     "nur Schwache",
+     "nur Leute, die wirklich nichts können",
+     "nur Jugendliche",
      "sehr viele, auch Erfolgreiche",
-     "nur Kinder",
      "fast niemand"
     ],
-    "r": 1,
+    "r": 2,
     "warum": "Es sagt wenig über das, was man wirklich kann."
    },
    {
@@ -709,8 +709,8 @@
     "o": [
      "sie anschreien",
      "sie bemerken",
-     "sie ignorieren",
-     "lauter Musik hören"
+     "ihr recht geben",
+     "sie übertönen"
     ],
     "r": 1,
     "warum": "Wer sie bemerkt, ist schon nicht mehr dasselbe wie sie."
@@ -755,56 +755,56 @@
    {
     "f": "Kann man unter vielen Leuten einsam sein?",
     "o": [
-     "nein",
-     "ja",
-     "nur Erwachsene",
+     "ja – es zählt, ob dich jemand kennt",
+     "nein, dann ist man ja nicht allein",
+     "nur, wer sich abkapselt",
      "nur im Netz"
     ],
-    "r": 1,
+    "r": 0,
     "warum": "Es zählt, ob jemand dich wirklich kennt."
    },
    {
     "f": "Was macht lange Einsamkeit mit dem Blick auf andere?",
     "o": [
      "freundlicher",
+     "genauer",
      "misstrauischer",
-     "gar nichts",
-     "genauer"
+     "gleichgültiger"
     ],
-    "r": 1,
+    "r": 2,
     "warum": "Neutrale Gesichter wirken plötzlich feindlich."
    },
    {
     "f": "Was schützt am meisten?",
     "o": [
+     "ein Mensch für etwas Echtes",
      "viele Follower",
      "eine große Clique",
-     "ein Mensch, dem man etwas Echtes erzählen kann",
-     "beliebt sein"
+     "bei allen beliebt sein"
     ],
-    "r": 2,
-    "warum": "Der Sprung von null auf eins ist der größte."
+    "r": 0,
+    "warum": "Eine Person reicht – wenn sie dich wirklich kennt."
    },
    {
     "f": "„Mal sehen“ auf eine Einladung ist oft …",
     "o": [
      "Desinteresse",
-     "Schutz vor einer Enttäuschung",
      "Unhöflichkeit",
+     "Schutz vor einer Enttäuschung",
      "Zeitmangel"
     ],
-    "r": 1,
+    "r": 2,
     "warum": "Wer nicht hingeht, kann nicht abgelehnt werden."
    },
    {
     "f": "Wie entsteht Nähe am ehesten?",
     "o": [
-     "durch kleine echte Sätze, die mit der Zeit mehr werden",
+     "von allein, mit der Zeit",
+     "durch ein großes Geständnis",
      "durch Geschenke",
-     "durch gemeinsames Schweigen im Chat",
-     "von allein"
+     "durch kleine echte Sätze"
     ],
-    "r": 0,
+    "r": 3,
     "warum": "Schritt für Schritt – nicht alles auf einmal."
    },
    {
@@ -816,18 +816,18 @@
      "ein Urteil"
     ],
     "r": 1,
-    "warum": "Alarm oder Beweis? Nachfragen klärt es."
+    "warum": "Von heute oder von früher? Nachfragen klärt es."
    },
    {
-    "f": "Wer ist auch ein Teil deines Netzes?",
+    "f": "Amira hat 212 Kontakte. Was fehlt ihr?",
     "o": [
-     "nur Gleichaltrige",
-     "auch Erwachsene, Tiere und Leute aus dem Netz",
-     "nur Familie",
-     "niemand"
+     "mehr Follower",
+     "ein besseres Handy",
+     "eine größere Clique",
+     "ein Mensch für zwei Uhr nachts"
     ],
-    "r": 1,
-    "warum": "Verlässlichkeit zählt, nicht die Sorte Mensch."
+    "r": 3,
+    "warum": "Der Sprung von null auf eins ist der größte."
    }
   ]
  },
@@ -860,30 +860,30 @@
     "o": [
      "bis 12",
      "bis 16",
-     "bis Mitte 20",
-     "gar nicht mehr"
+     "bis 18",
+     "bis Mitte 20"
     ],
-    "r": 2,
+    "r": 3,
     "warum": "Deshalb wirken Rauschmittel in der Jugend stärker nach."
    },
    {
-    "f": "Wie schnell kann Nikotin bei Jugendlichen abhängig machen?",
+    "f": "Wie früh können sich bei Jugendlichen erste Zeichen von Nikotin-Abhängigkeit zeigen?",
     "o": [
-     "nach Jahren",
-     "schon nach wenigen Wochen",
-     "nie",
+     "nach wenigen Wochen",
+     "nach einem Jahr",
+     "nach vielen Jahren",
      "nur bei Zigaretten"
     ],
-    "r": 1,
+    "r": 0,
     "warum": "Auch bei Vapes – der Geschmack ändert nichts am Stoff."
    },
    {
     "f": "Früh und oft kiffen erhöht das Risiko für …",
     "o": [
-     "bessere Noten",
+     "Diabetes",
      "Psychosen",
-     "Muskelwachstum",
-     "nichts"
+     "Asthma",
+     "gar nichts"
     ],
     "r": 1,
     "warum": "Besonders bei starkem Cannabis und frühem Beginn."
@@ -891,56 +891,56 @@
    {
     "f": "„Ich kann jederzeit aufhören.“ Wie prüft man das?",
     "o": [
-     "gar nicht",
-     "mit einer Pause von ein paar Tagen",
      "indem man es oft sagt",
-     "mit einem Online-Test"
+     "mit einem Online-Test",
+     "mit einer Pause von ein paar Tagen",
+     "indem man Freunde fragt"
     ],
-    "r": 1,
+    "r": 2,
     "warum": "Was in der Pause passiert, ist die Antwort."
    },
    {
     "f": "Jemand ist nach dem Trinken nicht mehr ansprechbar. Was tun?",
     "o": [
      "ausschlafen lassen",
-     "kalt duschen",
      "112 rufen und dableiben",
-     "weggehen"
+     "kalt abduschen",
+     "allein nach Hause schicken"
     ],
-    "r": 2,
+    "r": 1,
     "warum": "Bewusstlose können ersticken. Zeit zählt, nicht der Ärger."
    },
    {
     "f": "Warum nehmen Menschen Rauschmittel?",
     "o": [
-     "weil sie nichts bringen",
-     "weil sie etwas bewirken, das gerade fehlt",
-     "nur aus Dummheit",
-     "nur wegen der Werbung"
+     "aus Dummheit",
+     "wegen der Werbung",
+     "weil alle es tun",
+     "weil sie etwas bewirken, das gerade fehlt"
     ],
-    "r": 1,
+    "r": 3,
+    "warum": "Deshalb die Frage: Wofür?"
+   },
+   {
+    "f": "Was fragt die Karte „Vorher fragen“ zuerst?",
+    "o": [
+     "Wie viel?",
+     "Merkt es jemand?",
+     "Wofür will ich es gerade?",
+     "Wer hat etwas dabei?"
+    ],
+    "r": 2,
     "warum": "Wer das Wofür kennt, kann nach anderen Wegen suchen."
    },
    {
-    "f": "Welches Rauschmittel richtet insgesamt den größten Schaden an?",
+    "f": "Jemand kann drei Tage ohne Joint kaum schlafen. Das spricht …",
     "o": [
-     "Cannabis",
-     "Alkohol",
-     "Koffein",
-     "Nikotin-Kaugummi"
-    ],
-    "r": 1,
-    "warum": "So das Ergebnis einer bekannten britischen Untersuchung."
-   },
-   {
-    "f": "Ohne das Mittel geht es jemandem deutlich schlechter. Das spricht …",
-    "o": [
-     "dafür, dass es ihm guttut",
      "für eine Gewöhnung",
+     "dafür, dass es ihm guttut",
      "für gar nichts",
-     "für zu wenig Schlaf"
+     "für zu wenig Sport"
     ],
-    "r": 1,
+    "r": 0,
     "warum": "Siehe Yusufs drei Tage."
    }
   ]
@@ -950,7 +950,7 @@
   "nr": "10",
   "reihe": "Thema",
   "thema": "Null Bock",
-  "headline": "Wovor schützt dich „mir egal“?",
+  "headline": "Was steckt hinter „mir egal“?",
   "farbe": "#FFB21A",
   "datei": "Solo-10-Null-Bock",
   "wann": [
@@ -972,10 +972,10 @@
    {
     "f": "Was schiebt man beim Aufschieben eigentlich weg?",
     "o": [
-     "die Zeit",
+     "die Aufgabe",
      "das unangenehme Gefühl",
-     "den Stift",
-     "die Lehrerin"
+     "die Verantwortung",
+     "den Ärger danach"
     ],
     "r": 1,
     "warum": "Angst, Überforderung, Langeweile – nicht die Aufgabe selbst."
@@ -983,76 +983,76 @@
    {
     "f": "Wann kommt Motivation meistens?",
     "o": [
-     "vorher, wenn man lange wartet",
-     "nach dem Anfangen",
+     "vorher, wenn man lange genug wartet",
      "am Wochenende",
-     "nie"
+     "wenn der Druck groß genug ist",
+     "nach dem Anfangen"
     ],
-    "r": 1,
+    "r": 3,
     "warum": "Erst tun, dann Lust – nicht umgekehrt."
    },
    {
     "f": "„Mir egal“ bedeutet oft …",
     "o": [
-     "wirklich egal",
      "zu wichtig, um zu scheitern",
-     "Müdigkeit",
-     "Hunger"
+     "wirklich egal",
+     "zu langweilig",
+     "zu leicht"
     ],
-    "r": 1,
+    "r": 0,
     "warum": "Wer es nicht versucht, kann nicht versagen."
    },
    {
     "f": "Was hilft am ehesten beim Anfangen?",
     "o": [
      "auf Lust warten",
+     "alles auf einmal planen",
      "ein sehr kleiner erster Schritt",
-     "sich beschimpfen",
-     "alles auf einmal planen"
+     "sich selbst Druck machen"
     ],
-    "r": 1,
+    "r": 2,
     "warum": "Fünf Minuten sind leichter als „das Referat“."
    },
    {
     "f": "Jemand macht eine Aufgabe nicht. Woran kann es liegen?",
     "o": [
      "nur an Faulheit",
-     "an Können, Wollen oder Trauen",
      "nur am Handy",
-     "an der Uhrzeit"
+     "an schlechter Erziehung",
+     "an Können, Wollen oder Trauen"
     ],
-    "r": 1,
+    "r": 3,
     "warum": "Drei verschiedene Gründe brauchen drei verschiedene Lösungen."
    },
    {
-    "f": "Hilft es, sich fürs Aufschieben fertigzumachen?",
+    "f": "Wer nach fünf Minuten aufhört, hat das Experiment …",
     "o": [
-     "ja, das spornt an",
-     "nein, es macht das nächste Mal schwerer",
-     "nur bei Mathe",
-     "manchmal"
+     "abgebrochen",
+     "verloren",
+     "bestanden",
+     "nicht ernst genommen"
     ],
-    "r": 1,
-    "warum": "Mehr mieses Gefühl heißt mehr Ausweichen."
+    "r": 2,
+    "warum": "Der Deal gilt wörtlich: Aufhören ist erlaubt."
    },
    {
     "f": "Warum fühlt sich Aufschieben kurz gut an?",
     "o": [
-     "weil die Aufgabe weg ist",
      "weil das miese Gefühl kurz weg ist",
-     "weil man klüger wird",
-     "gar nicht"
+     "weil die Aufgabe erledigt ist",
+     "weil man Zeit gewinnt",
+     "weil es keiner merkt"
     ],
-    "r": 1,
+    "r": 0,
     "warum": "Die Erleichterung ist echt – und hält nicht."
    },
    {
     "f": "Was ist bei Überforderung der klügste Satz?",
     "o": [
      "„Ist mir egal.“",
-     "„Ich kriege es nicht hin – ich brauche Hilfe.“",
+     "„Ich brauche Hilfe.“",
      "„Mach ich morgen.“",
-     "gar keiner"
+     "„Ich bin halt dumm.“"
     ],
     "r": 1,
     "warum": "Der teuerste Satz im Moment, der billigste auf Dauer."
@@ -1086,43 +1086,43 @@
    {
     "f": "Wozu ist Angst eigentlich da?",
     "o": [
-     "zu nichts",
      "zum Schutz vor Gefahr",
-     "als Strafe",
-     "zum Angeben"
+     "sie ist ein Fehler im Kopf",
+     "sie zeigt Schwäche",
+     "zu gar nichts"
     ],
-    "r": 1,
+    "r": 0,
     "warum": "Ein Alarmsystem – manchmal zu empfindlich eingestellt."
    },
    {
     "f": "Ist eine Panikattacke gefährlich?",
     "o": [
      "ja, lebensgefährlich",
+     "nur für das Herz",
      "nein, sie fühlt sich nur so an",
-     "nur nachts",
-     "nur bei Kindern"
+     "nur, wenn man allein ist"
     ],
-    "r": 1,
+    "r": 2,
     "warum": "Der Körper schlägt Alarm, ohne dass Gefahr besteht."
    },
    {
     "f": "Was passiert mit der Angst, wenn man immer ausweicht?",
     "o": [
      "sie verschwindet",
-     "sie wird größer",
      "sie bleibt gleich",
-     "sie wird lustig"
+     "sie wird kleiner",
+     "sie wird größer"
     ],
-    "r": 1,
+    "r": 3,
     "warum": "Das Gehirn lernt: Das war gefährlich."
    },
    {
     "f": "Was passiert, wenn man in der Situation bleibt?",
     "o": [
-     "die Angst steigt für immer",
+     "die Angst steigt immer weiter",
      "sie steigt und fällt dann von allein",
-     "man fällt um",
-     "nichts"
+     "man gewöhnt sich nie daran",
+     "sie bleibt auf dem höchsten Punkt"
     ],
     "r": 1,
     "warum": "Diese Erfahrung macht nur, wer bleibt."
@@ -1131,11 +1131,11 @@
     "f": "Wie übt man am besten gegen eine Angst?",
     "o": [
      "alles auf einmal",
+     "nur im Kopf",
      "in kleinen Stufen von leicht nach schwer",
-     "gar nicht",
-     "nur im Kopf"
+     "erst, wenn sie weg ist"
     ],
-    "r": 1,
+    "r": 2,
     "warum": "Jede geschaffte Stufe macht die nächste kleiner."
    },
    {
@@ -1143,32 +1143,32 @@
     "o": [
      "immer am Zittern",
      "an dem, was sie vermeiden",
-     "an der Kleidung",
+     "an der Stimme",
      "gar nicht"
     ],
     "r": 1,
     "warum": "„Keine Lust“ heißt manchmal „trau mich nicht“."
    },
    {
-    "f": "Was bedeutet Mut?",
+    "f": "Tom sagt „Verschlafen“. Was war wirklich los?",
     "o": [
-     "keine Angst haben",
-     "es trotz Angst tun",
-     "laut sein",
-     "nie nachdenken"
+     "Er hatte keine Lust",
+     "Er hat den Bus verpasst",
+     "Er war krank",
+     "Er ist dem Bus ausgewichen"
     ],
-    "r": 1,
-    "warum": "Ohne Angst bräuchte man keinen Mut."
+    "r": 3,
+    "warum": "Die Ausrede gehört zum Umweg."
    },
    {
     "f": "Was hilft dem Körper bei Panik am schnellsten?",
     "o": [
-     "schnell einatmen",
      "lang ausatmen",
+     "schnell einatmen",
      "die Luft anhalten",
-     "rennen"
+     "losrennen"
     ],
-    "r": 1,
+    "r": 0,
     "warum": "Langes Ausatmen bremst den Alarm."
    }
   ]
@@ -1201,22 +1201,22 @@
     "f": "Starke Eifersucht ist …",
     "o": [
      "ein Liebesbeweis",
+     "ein Kompliment",
      "kein Beweis für Liebe",
-     "immer harmlos",
-     "ein Kompliment"
+     "immer harmlos"
     ],
-    "r": 1,
+    "r": 2,
     "warum": "Sie sagt etwas über die Angst des einen, nichts über die Liebe."
    },
    {
     "f": "Wann ist ein Ja ein echtes Ja?",
     "o": [
-     "wenn man lange genug gefragt hat",
      "wenn auch ein Nein möglich wäre",
+     "wenn man lange genug gefragt hat",
      "wenn niemand widerspricht",
-     "immer"
+     "wenn man zusammen ist"
     ],
-    "r": 1,
+    "r": 0,
     "warum": "Ohne freie Wahl ist es kein Einverständnis."
    },
    {
@@ -1224,19 +1224,19 @@
     "o": [
      "nein",
      "nur vorher",
-     "ja, jederzeit",
-     "nur schriftlich"
+     "nur mit gutem Grund",
+     "ja, jederzeit"
     ],
-    "r": 2,
+    "r": 3,
     "warum": "Auch mittendrin."
    },
    {
-    "f": "Jemand ist betrunken und sagt Ja. Das ist …",
+    "f": "Jemand kann vor Alkohol kaum noch stehen und sagt Ja. Das ist …",
     "o": [
      "ein Ja",
      "kein gültiges Ja",
-     "egal",
-     "ein halbes Ja"
+     "ein halbes Ja",
+     "seine Sache"
     ],
     "r": 1,
     "warum": "Wer nicht klar entscheiden kann, kann nicht zustimmen."
@@ -1245,33 +1245,33 @@
     "f": "Was zeigen Pornos?",
     "o": [
      "wie Sex normalerweise ist",
-     "gespielte, geschnittene Szenen",
-     "Aufklärung",
-     "die Wahrheit"
+     "was die meisten wollen",
+     "eine Art Aufklärung",
+     "gespielte, geschnittene Szenen"
     ],
-    "r": 1,
+    "r": 3,
     "warum": "Darsteller, Drehbuch, Schnitt – wie im Actionfilm."
    },
    {
-    "f": "Der Partner will dein Passwort „als Vertrauensbeweis“. Das ist …",
+    "f": "Jemand will dein Passwort „als Vertrauensbeweis“. Was stimmt?",
     "o": [
-     "Vertrauen",
-     "Kontrolle",
-     "normal",
-     "romantisch"
+     "Wer liebt, gibt es her",
+     "Das machen alle Paare",
+     "Vertrauen braucht keinen Zugriff",
+     "Nur wer etwas versteckt, sagt Nein"
     ],
-    "r": 1,
+    "r": 2,
     "warum": "Vertrauen braucht keinen Zugriff."
    },
    {
     "f": "Woran erkennt man eine gute Beziehung am ehesten?",
     "o": [
-     "man ist nie getrennt",
      "das eigene Leben wird größer",
+     "man ist nie getrennt",
      "man streitet nie",
-     "der andere bestimmt"
+     "man teilt alle Passwörter"
     ],
-    "r": 1,
+    "r": 0,
     "warum": "Freunde, Hobbys, eigene Meinung – alles bleibt."
    },
    {
@@ -1280,7 +1280,7 @@
      "nachgeben, damit Ruhe ist",
      "Nein sagen – ohne Begründung",
      "sich entschuldigen",
-     "nichts"
+     "erst einen guten Grund suchen"
     ],
     "r": 1,
     "warum": "Ein Nein braucht keinen Grund."
@@ -1307,24 +1307,24 @@
    {
     "f": "Kann man jemanden lieben und gleichzeitig wütend auf ihn sein?",
     "o": [
-     "nein",
-     "ja",
-     "nur kurz",
-     "nur Erwachsene"
+     "nein, eins von beiden ist gelogen",
+     "nur für kurze Zeit",
+     "ja – beides geht zusammen",
+     "nur Erwachsene können das"
     ],
-    "r": 1,
+    "r": 2,
     "warum": "Gemischte Gefühle sind bei Familie die Regel."
    },
    {
     "f": "Ein Kind tröstet ständig seine Mutter. Das ist …",
     "o": [
      "seine Aufgabe",
-     "eine Aufgabe, die Erwachsenen gehört",
-     "egal",
-     "ein Hobby"
+     "ein Zeichen von Liebe",
+     "ganz normal",
+     "eine Aufgabe, die Erwachsenen gehört"
     ],
-    "r": 1,
-    "warum": "Es macht stark – und kostet die eigene Kindheit."
+    "r": 3,
+    "warum": "Es macht stark – und sehr müde."
    },
    {
     "f": "Wer es zu Hause schwer hatte, macht es später …",
@@ -1332,53 +1332,53 @@
      "immer genauso",
      "meistens anders",
      "immer schlimmer",
-     "gar nicht"
+     "genau umgekehrt"
     ],
     "r": 1,
-    "warum": "Muster wiederholen sich nicht von selbst."
+    "warum": "Du musst nicht werden wie deine Eltern."
    },
    {
     "f": "Warum verteidigen viele ihre Eltern, auch wenn es schwer war?",
     "o": [
-     "aus Dummheit",
      "aus Treue – sie gehören zu einem",
+     "weil sie es nicht besser wissen",
      "weil sie lügen",
-     "aus Langeweile"
+     "aus Angst vor Strafe"
     ],
-    "r": 1,
+    "r": 0,
     "warum": "Wer die Eltern angreift, greift ein Stück von einem selbst an."
    },
    {
     "f": "Muss man verzeihen, um weiterzukommen?",
     "o": [
      "ja, sofort",
-     "nein – das entscheidet jeder selbst und in seinem Tempo",
-     "ja, immer",
-     "nur an Feiertagen"
+     "ja, sonst wird man bitter",
+     "nein – das entscheidet jeder selbst",
+     "nur, wenn sich die Eltern entschuldigen"
     ],
-    "r": 1,
+    "r": 2,
     "warum": "Verzeihen auf Befehl funktioniert nicht."
    },
    {
-    "f": "Ist ein Kind schuld, wenn Eltern sich trennen oder nicht kommen?",
+    "f": "Jana schreibt „Kein Problem“ und streitet dann wegen eines Joghurts. Warum?",
     "o": [
-     "ja",
-     "nein",
-     "manchmal",
-     "zur Hälfte"
+     "Die Enttäuschung musste irgendwohin",
+     "Sie mag keinen Joghurt",
+     "Die Erzieherin hat angefangen",
+     "Sie hatte Hunger"
     ],
-    "r": 1,
-    "warum": "Das sind Entscheidungen von Erwachsenen."
+    "r": 0,
+    "warum": "Der Joghurt war nur der Anlass."
    },
    {
     "f": "Was darf man von zu Hause mitnehmen?",
     "o": [
      "alles oder nichts",
-     "das Gute – und den Rest dalassen",
-     "nur Geld",
-     "nichts"
+     "nur das, was die Eltern wollen",
+     "nichts – ein Neuanfang",
+     "das Gute – und den Rest dalassen"
     ],
-    "r": 1,
+    "r": 3,
     "warum": "Man muss nicht die ganze Kiste nehmen."
    },
    {
@@ -1386,7 +1386,7 @@
     "o": [
      "verrückt",
      "verständlich",
-     "verboten",
+     "ein Zeichen von Schwäche",
      "gelogen"
     ],
     "r": 1,
@@ -1399,7 +1399,7 @@
   "nr": "14",
   "reihe": "Thema",
   "thema": "Später",
-  "headline": "Welchen Plan sagst du keinem?",
+  "headline": "Wer darf deinen Plan hören?",
   "farbe": "#2EE6A8",
   "datei": "Solo-14-Spaeter",
   "wann": [
@@ -1419,59 +1419,59 @@
   ],
   "quiz": [
    {
-    "f": "Muss man mit 15 wissen, was man wird?",
+    "f": "Muss man in deinem Alter wissen, was man wird?",
     "o": [
      "ja, unbedingt",
-     "nein – nur den nächsten Versuch",
      "ja, sonst ist es zu spät",
+     "nein – nur den nächsten Versuch",
      "das entscheiden andere"
     ],
-    "r": 1,
+    "r": 2,
     "warum": "Die meisten Wege haben Umwege."
    },
    {
     "f": "Warum fällt es schwer, heute etwas für später zu tun?",
     "o": [
      "aus Faulheit",
-     "das spätere Ich fühlt sich fremd an",
      "weil es sinnlos ist",
-     "wegen der Schule"
+     "weil später noch viel Zeit ist",
+     "das spätere Ich fühlt sich fremd an"
     ],
-    "r": 1,
+    "r": 3,
     "warum": "Für einen Fremden strengt man sich weniger an."
    },
    {
-    "f": "Was haben viele Menschen mit schwerem Start gemeinsam, bei denen es gut ausging?",
+    "f": "Was gab es oft bei Menschen mit schwerem Start, bei denen es gut ausging?",
     "o": [
      "Glück im Lotto",
-     "einen Wendepunkt: ein Mensch, eine Arbeit, ein Ort",
+     "einen Wendepunkt",
      "reiche Eltern",
-     "nichts"
+     "gute Noten"
     ],
     "r": 1,
-    "warum": "Oft reichte eine Person, die blieb."
+    "warum": "Ein Mensch, eine Arbeit, ein Ort."
    },
    {
     "f": "Ein Plan ist am stärksten, wenn er …",
     "o": [
-     "groß und ungenau ist",
      "einen konkreten nächsten Schritt hat",
+     "groß und ungenau ist",
      "geheim bleibt",
      "von anderen stammt"
     ],
-    "r": 1,
+    "r": 0,
     "warum": "„Diese Woche anrufen“ schlägt „irgendwann“."
    },
    {
-    "f": "Jemand nennt deinen Plan „unrealistisch“. Was sagt das?",
+    "f": "Warum sagt Yusuf dem Berater „Keine Ahnung“?",
     "o": [
-     "dass er falsch ist",
-     "etwas über die Vorstellung dieser Person",
-     "dass du aufgeben sollst",
-     "gar nichts"
+     "Er hat keinen Plan",
+     "Er mag den Berater nicht",
+     "Er will nicht arbeiten",
+     "Beim letzten Mal hat jemand gelacht"
     ],
-    "r": 1,
-    "warum": "Prüfen kannst du ihn nur durch den nächsten Schritt."
+    "r": 3,
+    "warum": "Er schützt den Plan, nicht sich."
    },
    {
     "f": "Was hilft, sich die Zukunft vorzustellen?",
@@ -1479,7 +1479,7 @@
      "ein ganzes Leben planen",
      "einen einzigen normalen Tag ausmalen",
      "gar nicht daran denken",
-     "Horoskope"
+     "andere entscheiden lassen"
     ],
     "r": 1,
     "warum": "Ein Dienstag ist greifbarer als „die Zukunft“."
@@ -1488,23 +1488,23 @@
     "f": "Legt deine Vergangenheit fest, was aus dir wird?",
     "o": [
      "ja, vollständig",
-     "nein – sie macht manches schwerer, nicht unmöglich",
-     "ja, bis 30",
+     "ja, wenn es eine Akte gibt",
+     "nein – sie macht manches schwerer",
      "nur bei anderen"
     ],
-    "r": 1,
+    "r": 2,
     "warum": "Start und Ziel sind zwei verschiedene Dinge."
    },
    {
-    "f": "Wer ist für einen Wendepunkt oft entscheidend?",
+    "f": "Wie plant man vom Ziel aus?",
     "o": [
-     "ein Mensch, der an einen glaubt",
-     "ein Algorithmus",
-     "der Zufall allein",
-     "niemand"
+     "rückwärts: Was muss vorher passieren?",
+     "vorwärts: einfach anfangen",
+     "alles gleichzeitig",
+     "erst, wenn man sicher ist"
     ],
     "r": 0,
-    "warum": "Deshalb lohnt die Frage: Wer ist das bei dir?"
+    "warum": "So werden aus einem Dienstag drei Schritte."
    }
   ]
  },
@@ -1536,11 +1536,11 @@
     "f": "Monatelang ist alles leer und nichts macht mehr Spaß. Das ist am ehesten …",
     "o": [
      "Faulheit",
-     "ein Zustand, der einen Namen hat und behandelbar ist",
-     "schlechtes Wetter",
-     "Pubertät"
+     "eine Phase, die jeder hat",
+     "ein behandelbarer Zustand",
+     "schlechte Laune"
     ],
-    "r": 1,
+    "r": 2,
     "warum": "Depression ist eine Erkrankung, kein Charakter."
    },
    {
@@ -1548,8 +1548,8 @@
     "o": [
      "ja, immer",
      "nein – oft ist es Leere oder Gereiztheit",
-     "nur Mädchen",
-     "nur im Winter"
+     "ja, sonst ist es etwas anderes",
+     "nur am Anfang"
     ],
     "r": 1,
     "warum": "Bei Jugendlichen zeigt es sich häufig als Leere, Müdigkeit oder Wut."
@@ -1557,57 +1557,57 @@
    {
     "f": "„Es wird nie besser“ ist in so einer Zeit …",
     "o": [
-     "eine Tatsache",
      "ein Anzeichen der Verstimmung",
+     "eine Tatsache",
      "ein guter Rat",
      "eine Vorhersage"
     ],
-    "r": 1,
+    "r": 0,
     "warum": "Der Kopf färbt in dieser Zeit alles dunkel."
    },
    {
     "f": "Was hilft eher?",
     "o": [
      "warten, bis die Lust zurückkommt",
-     "kleine Dinge trotzdem tun",
      "sich zusammenreißen",
-     "nichts"
+     "viel schlafen",
+     "kleine Dinge trotzdem tun"
     ],
-    "r": 1,
+    "r": 3,
     "warum": "Erst tun, dann fühlen – nicht umgekehrt."
    },
    {
     "f": "Macht es Suizidgedanken schlimmer, wenn man jemanden danach fragt?",
     "o": [
-     "ja",
      "nein – es entlastet eher",
-     "manchmal",
+     "ja, das bringt einen erst darauf",
+     "nur bei Erwachsenen",
      "das weiß niemand"
     ],
-    "r": 1,
+    "r": 0,
     "warum": "Das ist gut untersucht: Fragen schadet nicht."
    },
    {
     "f": "Ein Freund sagt: „Ohne mich wäre alles besser.“ Was tust du?",
     "o": [
-     "für dich behalten, er hat es dir anvertraut",
-     "einem Erwachsenen sagen, dem du traust",
-     "einen Witz machen",
-     "das Thema wechseln"
+     "es für dich behalten",
+     "ihn zum Lachen bringen",
+     "es einem Erwachsenen sagen",
+     "abwarten, ob er es wiederholt"
     ],
-    "r": 1,
+    "r": 2,
     "warum": "Dieses Geheimnis ist zu schwer für eine Person allein."
    },
    {
-    "f": "Wen kann man Tag und Nacht anrufen?",
+    "f": "Es ist drei Uhr nachts und es wird gefährlich. Welche Nummer?",
     "o": [
-     "niemanden",
-     "das Kanner-Jugendtelefon 116 111 und den Notruf 112",
-     "nur die Schule",
-     "nur die Eltern"
+     "keine – bis morgen warten",
+     "die Schule",
+     "eine Freundin, die schläft",
+     "112"
     ],
-    "r": 1,
-    "warum": "Die Nummern stehen auf der Karte."
+    "r": 3,
+    "warum": "Die 116 111 hat feste Zeiten. Die 112 ist immer da."
    },
    {
     "f": "Wie lange dauert so ein Zustand?",
@@ -1615,7 +1615,7 @@
      "für immer",
      "er geht vorbei – mit Hilfe meist schneller",
      "genau eine Woche",
-     "bis zum 18. Geburtstag"
+     "bis man erwachsen ist"
     ],
     "r": 1,
     "warum": "Auch wenn es sich nicht so anfühlt."
@@ -1650,34 +1650,34 @@
     "f": "Was ist der Unterschied zwischen Schuld und Scham?",
     "o": [
      "Es gibt keinen.",
+     "Scham ist die stärkere Schuld.",
      "Schuld: Ich habe etwas getan. Scham: Ich bin so.",
-     "Scham ist schlimmer bestraft.",
-     "Schuld haben nur Erwachsene."
+     "Schuld fühlt man, Scham zeigt man."
     ],
-    "r": 1,
+    "r": 2,
     "warum": "Mit Schuld kann man etwas tun. Scham lähmt."
    },
    {
     "f": "Wann gehen Jugendliche mehr Risiko ein?",
     "o": [
-     "allein",
      "wenn Gleichaltrige dabei sind",
-     "morgens",
-     "nie"
+     "wenn sie allein sind",
+     "wenn Erwachsene zuschauen",
+     "morgens vor der Schule"
     ],
-    "r": 1,
+    "r": 0,
     "warum": "Die Gruppe verschiebt, was sich normal anfühlt."
    },
    {
-    "f": "Die meisten, die mit 15 Mist bauen, …",
+    "f": "Die meisten, die als Jugendliche Mist bauen, …",
     "o": [
      "bleiben für immer dabei",
-     "hören bis Mitte 20 damit auf",
-     "werden Verbrecher",
-     "haben Pech"
+     "werden später schlimmer",
+     "haben einfach Pech gehabt",
+     "hören nach ein paar Jahren damit auf"
     ],
-    "r": 1,
-    "warum": "Die Kurve fällt bei fast allen."
+    "r": 3,
+    "warum": "Wer du heute bist, legt nicht fest, wer du dann bist."
    },
    {
     "f": "„Ich bin halt so einer“ führt meistens zu …",
@@ -1685,7 +1685,7 @@
      "Besserung",
      "mehr vom Gleichen",
      "Ruhe",
-     "nichts"
+     "Mitleid"
     ],
     "r": 1,
     "warum": "Wer sich abstempelt, hat nichts mehr zu verlieren."
@@ -1694,33 +1694,33 @@
     "f": "Die Idee kam von anderen, gemacht hast du es. Wer trägt Verantwortung?",
     "o": [
      "nur die anderen",
+     "nur du",
      "alle – jeder seinen Teil",
-     "niemand",
-     "nur du"
+     "niemand, es war die Gruppe"
     ],
-    "r": 1,
+    "r": 2,
     "warum": "Erklären ist nicht dasselbe wie entschuldigen."
    },
    {
     "f": "Was hilft nach einem Fehler am meisten?",
     "o": [
-     "sich verstecken",
      "einen Schritt zum Wiedergutmachen gehen",
+     "abwarten, bis Gras darüber wächst",
      "alles abstreiten",
      "sich selbst fertigmachen"
     ],
-    "r": 1,
+    "r": 0,
     "warum": "Reparieren verändert, wie andere und du selbst dich sehen."
    },
    {
     "f": "Was ist ein guter Satz zum Aussteigen?",
     "o": [
      "„Ihr seid alle dumm.“",
-     "„Ich bin raus.“",
-     "gar keiner",
-     "„Macht ihr mal.“"
+     "„Das sage ich dem Erzieher.“",
+     "„Ich muss leider weg, sorry.“",
+     "„Ich bin raus.“"
     ],
-    "r": 1,
+    "r": 3,
     "warum": "Kurz, ohne Vorwurf, ohne Erklärung."
    },
    {
@@ -1728,7 +1728,7 @@
     "o": [
      "ja",
      "nein",
-     "manchmal",
+     "ja, wenn der Grund gut ist",
      "nur bei Kleinigkeiten"
     ],
     "r": 1,
@@ -1741,7 +1741,7 @@
   "nr": "17",
   "reihe": "Thema",
   "thema": "Körper",
-  "headline": "Niemand schaut so genau hin wie du.",
+  "headline": "Kaum jemand schaut so genau hin wie du.",
   "farbe": "#FFD60A",
   "datei": "Solo-17-Koerper",
   "wann": [
@@ -1750,7 +1750,7 @@
    "Abwertende Kommentare über den eigenen Körper.",
    "Als „brennt“ auf der Landkarte angekreuzt."
   ],
-  "ziel": "Der Jugendliche versteht, warum sein Blick auf sich selbst strenger ist als der aller anderen, und richtet die Aufmerksamkeit einmal darauf, was sein Körper kann.",
+  "ziel": "Der Jugendliche versteht, warum sein Blick auf sich selbst strenger ist als der aller anderen, und richtet die Aufmerksamkeit einmal darauf, wofür er seinen Körper benutzt.",
   "clips": [
    {
     "titel": "Schönheitswahn im Netz: Schlechter Einfluss durch Influencer?",
@@ -1761,23 +1761,23 @@
   ],
   "quiz": [
    {
-    "f": "Wer achtet am genauesten auf dein Aussehen?",
+    "f": "Wer achtet meistens am genauesten auf dein Aussehen?",
     "o": [
      "alle anderen",
+     "die Leute im Feed",
      "du selbst",
-     "deine Lehrer",
-     "Fremde im Bus"
+     "deine Familie"
     ],
-    "r": 1,
+    "r": 2,
     "warum": "Andere bemerken viel weniger, als man glaubt."
    },
    {
     "f": "Du weißt, dass ein Foto bearbeitet ist. Wirkt der Vergleich trotzdem?",
     "o": [
-     "nein",
+     "nein, Wissen schützt",
      "ja, oft",
-     "nur bei Kindern",
-     "nur bei Mädchen"
+     "nur bei Jüngeren",
+     "nur, wenn man unsicher ist"
     ],
     "r": 1,
     "warum": "Das Gefühl kommt schneller als das Wissen."
@@ -1785,56 +1785,56 @@
    {
     "f": "Wer ist mit seinem Körper zufriedener?",
     "o": [
+     "wer ihn benutzt, statt ihn zu prüfen",
      "wer ihn oft im Spiegel prüft",
-     "wer darauf achtet, was er kann",
      "wer viele Fotos macht",
      "wer ihn versteckt"
     ],
-    "r": 1,
-    "warum": "Funktion schlägt Aussehen."
+    "r": 0,
+    "warum": "Benutzen schlägt Prüfen."
    },
    {
     "f": "Betrifft Unzufriedenheit mit dem Körper nur Mädchen?",
     "o": [
      "ja",
-     "nein, Jungen genauso",
      "nur Erwachsene",
-     "nur Sportler"
+     "nur Sportler",
+     "nein, Jungen genauso"
     ],
-    "r": 1,
+    "r": 3,
     "warum": "Bei Jungen geht es oft um Muskeln statt um Dünnsein."
    },
    {
     "f": "Was zeigen Bilder von Influencern meistens?",
     "o": [
      "den Alltag",
-     "das beste von sehr vielen Fotos",
+     "einen Schnappschuss",
      "die Wahrheit",
-     "nichts Besonderes"
+     "das beste von sehr vielen Fotos"
     ],
-    "r": 1,
+    "r": 3,
     "warum": "Licht, Winkel, Filter, Auswahl."
    },
    {
     "f": "Was hilft dem eigenen Körperbild am ehesten?",
     "o": [
-     "mehr Vergleiche",
      "Accounts entfolgen, die runterziehen",
+     "mehr Vergleiche",
      "strengere Regeln beim Essen",
-     "öfter wiegen"
+     "öfter in den Spiegel schauen"
     ],
-    "r": 1,
+    "r": 0,
     "warum": "Weniger gezinkte Vergleiche, weniger Druck."
    },
    {
     "f": "Jemand isst kaum noch und redet nur über sein Aussehen. Was tun?",
     "o": [
      "nichts, ist seine Sache",
+     "ihm sagen, dass er gut aussieht",
      "einem Erwachsenen sagen, dem man traut",
-     "ihn auslachen",
-     "Diät-Tipps geben"
+     "Tipps geben"
     ],
-    "r": 1,
+    "r": 2,
     "warum": "Das kann ernst werden und braucht Hilfe."
    },
    {

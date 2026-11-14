@@ -65,3 +65,14 @@ Schriften in `schrift/`: Anton, Space Grotesk (SIL Open Font License), Permanent
 - Neues Heft im Hub: in `Klassebuch/hub-apps.js` bei der Toolbox einen `zusatz`-Eintrag für das PDF ergänzen.
 - Grundidee: Der Jugendliche ist der Profi („Schon mal gehört?“), die Bezugsperson macht mit (Duell mit eigenen
   Antworten), jede Stunde endet mit einem Experiment und einer Wette. Themenwahl über die Landkarte (#01).
+- Regeln aus der Jugend-Kritik (November 2026):
+  - **Quiz:** richtige Antworten gleichmäßig auf A–D verteilen, nicht die längste. Falsche Antworten sind naheliegende
+    Irrtümer (Sprüche von Seite 1, Ausreden der Figur), keine Witze. Jede Frage muss im Heft belegt sein.
+  - **Nichts versprechen, was die Einrichtung nicht hält:** Der Deal (#00) sagt „Du erfährst, was weitergesagt wird“.
+    Vor Stufe 3 steht der Hinweis, zuerst nach der Meldepflicht zu fragen (druckt der Renderer).
+  - **Keine Frage, die ein Geständnis oder Namen verlangt.** Heikles mit „Ja oder Nein reicht“ oder über die Figur.
+  - **Experimente** nennen immer eine Wette, sind in der Wohngruppe machbar und sagen, was bei Abbruch gilt.
+  - **Abwechslung:** Etikett über den Sprüchen, Titel der drei Kästen, Aufkleber und Unterzeile von Seite 4 je Heft
+    eigen. Unter den Kästen darf der Jugendliche einen streichen. Kein Rat im Heft, über den Seite 1 spottet –
+    sonst den Unterschied in einem Satz nennen.
+  - **Alter:** kein „mit 15“ (Leser sind 12–17). **116 111** hat feste Zeiten – nur die **112** ist immer erreichbar.
