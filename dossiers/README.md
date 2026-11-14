@@ -76,3 +76,17 @@ Schriften in `schrift/`: Anton, Space Grotesk (SIL Open Font License), Permanent
     eigen. Unter den Kästen darf der Jugendliche einen streichen. Kein Rat im Heft, über den Seite 1 spottet –
     sonst den Unterschied in einem Satz nennen.
   - **Alter:** kein „mit 15“ (Leser sind 12–17). **116 111** hat feste Zeiten – nur die **112** ist immer erreichbar.
+
+## SOLO AKTION – Hefte zum Machen (je Thema acht Aktionen)
+
+- Für Jugendliche, die wenig lesen wollen oder können (auch Förderbedarf): eine Seite je Aktion, höchstens fünf kurze
+  Schritte, Ankreuzen, Zeichnen, Messen, Spielen statt Schreiben. Dazu ein Auftrag für die Woche und zwei Seiten für
+  die Bezugsperson. Ein Thema reicht so für vier bis acht Bezugszeiten.
+- Inhalt: `aktion/aNN.ts` (Aufbau `aktion-typen.ts`), Renderer `aktion-bau.ts`. Farbe, Video und Warnhinweis kommen aus
+  dem vollen Heft `solo/sNN.ts` (`aktion/hilfe.ts`).
+- Bauen: `npx tsx --tsconfig tsconfig.scripts.json dossiers/bau.tsx a05 && node dossiers/pdf.cjs a05`
+  → `offline/solo/Solo-05-Wut-Aktion.pdf`. Die Toolbox zeigt das Aktions-Heft automatisch (`solo-index`).
+- Regeln: einfache Sätze (ein Gedanke je Satz), jede Aktion mit dem Gegenüber gemeinsam, messbar oder sichtbar
+  (Zahl, Kreuz, Zeichnung), in 10–15 Minuten mit Dingen aus jedem Büro machbar. Heikles läuft über die Figur, nie über
+  ein Geständnis. Rollenspiele nur zu harmlosen Lagen (Stift, Handy), nach der letzten Stufe aus der Rolle gehen.
+  Kein Körperkontakt außer der Seitenlage (#09) – und nur mit Einverständnis.

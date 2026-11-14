@@ -393,7 +393,10 @@ for (const id of process.argv.slice(2)) {
     for (const f of dateien) {
       const d = ((await import(`./solo/${f}`)) as { default: Solo }).default
       const clips = d.seiten.flatMap((x) => x.bloecke.flatMap((b) => (b.art === 'clip' ? [b.clip] : [])))
-      liste.push({ id: d.id, nr: d.nr, reihe: d.reihe, thema: d.thema, headline: d.headline, farbe: d.farbe, datei: d.datei, wann: d.begleitung.wann, ziel: d.begleitung.ziel,
+      // Aktions-Heft (acht Aktionen zum Machen), falls es eines zu diesem Thema gibt
+      const ak = join(HIER, 'aktion', `a${d.nr}.ts`)
+      const aktion = existsSync(ak) ? ((await import(`./aktion/a${d.nr}.ts`)) as { default: AktionsHeft }).default.datei : undefined
+      liste.push({ id: d.id, nr: d.nr, reihe: d.reihe, thema: d.thema, headline: d.headline, farbe: d.farbe, datei: d.datei, aktion, wann: d.begleitung.wann, ziel: d.begleitung.ziel,
         clips: clips.map((c) => ({ titel: c.titel, kanal: c.kanal, url: c.url, dauer: c.dauer })), quiz: d.quiz ?? [] })
     }
     writeFileSync(join(HIER, '..', 'src', 'data', 'solo.json'), JSON.stringify(liste, null, 1) + '\n')

@@ -14,6 +14,10 @@ export type Zone =
   | { art: 'koerper'; woerter: string[] }
   /** drei Ringe um einen Punkt (innen, Mitte, außen) zum Hineinschreiben */
   | { art: 'ringe'; ringe: [string, string, string] }
+  /** leere Bildfelder zum Zeichnen (2 je Reihe), jedes mit Titel */
+  | { art: 'felder'; titel: string[] }
+  /** farbiger Kasten mit einem wichtigen Text zum Vorlesen */
+  | { art: 'hinweis'; label: string; titel: string; x: string }
   /** kurze Geschichte in Bildern: Icon und ein Satz je Feld */
   | { art: 'comic'; bilder: [string, string][] }
   /** Auswahl mit Icons und Kästchen */

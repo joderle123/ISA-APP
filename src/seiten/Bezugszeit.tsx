@@ -21,6 +21,8 @@ interface SoloHeft {
   headline: string
   farbe: string
   datei: string
+  /** Dateiname des Aktions-Hefts (acht Aktionen zum Machen), falls vorhanden */
+  aktion?: string
   wann: string[]
   ziel: string
   clips: { titel: string; kanal: string; url: string; dauer: string }[]
@@ -226,9 +228,15 @@ function HeftKarte({ h, onQuiz }: { h: SoloHeft; onQuiz: (h: SoloHeft) => void }
           <strong>Passt, wenn:</strong> {h.wann[0]}
         </p>
         <div className="bz-knoepfe">
-          <a className="btn btn-sm btn-primary" href={pdf(h)} target="_blank" rel="noopener" title="Öffnet das Heft als PDF in einem neuen Tab">
+          {h.aktion ? (
+            <a className="btn btn-sm btn-primary" href={`solo/${h.aktion}.pdf`} target="_blank" rel="noopener" title="Acht Aktionen zum Machen: wenig Text, einfache Sprache, eine Seite je Aktion">
+              <Icon name="book" />
+              Aktions-Heft
+            </a>
+          ) : null}
+          <a className={h.aktion ? 'btn btn-sm' : 'btn btn-sm btn-primary'} href={pdf(h)} target="_blank" rel="noopener" title="Öffnet das Heft als PDF in einem neuen Tab">
             <Icon name="book" />
-            Heft (PDF)
+            {h.aktion ? 'Heft mit Hintergrund' : 'Heft (PDF)'}
           </a>
           {h.clips.map((c) => (
             <a key={c.url} className="btn btn-sm" href={c.url} target="_blank" rel="noopener" title={`${c.titel} – ${c.kanal} (braucht Internet)`}>
@@ -273,6 +281,10 @@ export function BezugszeitSeite({ onZurueck }: { onZurueck: () => void }) {
         <p className="bz-intro">
           Hefte für die Arbeit mit einem einzelnen Jugendlichen, im Stil von REAL TALK. Sie setzen voraus, dass der Jugendliche die üblichen Sätze schon kennt: Er ist der Profi, die
           Bezugsperson macht bei den Aufgaben mit. Die letzten zwei Seiten jedes Hefts sind für die Bezugsperson.
+        </p>
+        <p className="bz-intro">
+          <strong>Neu: Aktions-Hefte.</strong> Zu jedem Thema gibt es acht Aktionen zum Machen – eine Seite je Aktion, wenig Text, einfache Sprache, Ankreuzen und Zeichnen statt
+          Schreiben. Geeignet auch für Jugendliche mit Förderbedarf. Ein Thema reicht so für mehrere Bezugszeiten.
         </p>
       </header>
 

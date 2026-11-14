@@ -510,3 +510,6 @@ table.t td:first-child { font-weight: 700; white-space: nowrap; }
 .ak-leg { display: flex; gap: 8mm; margin-bottom: 2.6mm; } .ak-leg span { display: flex; align-items: center; gap: 2mm; } .ak-leg i { width: 7mm; height: 5mm; border: .5mm solid var(--k); background: #fff; } .ak-leg i.g { border-style: dashed; }
 .ak-ri { display: flex; gap: 8mm; align-items: center; } .ak-ri svg { flex: none; width: 96mm; height: 96mm; } .ak-ri .w { flex: 1; display: flex; flex-direction: column; gap: 4mm; font-size: 12pt; line-height: 1.3; }
 .ak-ri .w b { display: block; font-family: 'Anton'; font-weight: 400; text-transform: uppercase; font-size: 13pt; }
+.ak-fe { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm; } .ak-fe > div { position: relative; height: 52mm; border: .7mm solid var(--k); background: #fff; box-shadow: 1.2mm 1.2mm 0 var(--k); padding: 2mm 2.6mm; display: flex; gap: 2mm; align-items: flex-start; }
+.ak-fe b { font-family: 'Anton'; font-weight: 400; font-size: 14pt; line-height: 1; background: var(--a); border: .4mm solid var(--k); padding: .6mm 1.8mm; } .ak-fe span { color: var(--g); margin-top: 1mm; }
+.ak-hi { padding: 5mm 6mm; } .ak-hi h3 { font-family: 'Anton'; font-weight: 400; text-transform: uppercase; font-size: 17pt; margin: 1mm 0 1.6mm; } .ak-hi p { font-size: 12.6pt; line-height: 1.36; font-weight: 500; }

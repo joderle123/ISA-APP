@@ -41,6 +41,7 @@
   "headline": "Mauer oder offenes Tor?",
   "farbe": "#FF5A36",
   "datei": "Solo-02-Grenzen",
+  "aktion": "Solo-02-Grenzen-Aktion",
   "wann": [
    "Sagt zu allem Ja und explodiert später – oder zieht sich zurück.",
    "Lässt niemanden an sich heran; jede Nähe wird abgewehrt.",
@@ -155,6 +156,7 @@
   "headline": "Was fühlst du in der Sekunde davor?",
   "farbe": "#2EE6A8",
   "datei": "Solo-03-Scrollen",
+  "aktion": "Solo-03-Scrollen-Aktion",
   "wann": [
    "Übermüdet; das Handy läuft bis tief in die Nacht.",
    "Gereizt oder leer, wenn das Handy weg ist.",
@@ -269,6 +271,7 @@
   "headline": "Was gibt dir das Spiel, das sonst keiner gibt?",
   "farbe": "#B79CFF",
   "datei": "Solo-04-Zocken",
+  "aktion": "Solo-04-Zocken-Aktion",
   "wann": [
    "Zocken ist das Hauptthema im Leben des Jugendlichen – als Stärke oder als Streitpunkt.",
    "Schlaf, Schule oder Kontakte bleiben wegen des Spiels liegen.",
@@ -383,6 +386,7 @@
   "headline": "Worauf warst du wirklich wütend?",
   "farbe": "#C6F02C",
   "datei": "Solo-05-Wut",
+  "aktion": "Solo-05-Wut-Aktion",
   "wann": [
    "Häufige Ausraster, die der Jugendliche hinterher selbst nicht versteht.",
    "Nach einem Vorfall – aber erst, wenn er wirklich wieder ruhig ist, frühestens am nächsten Tag.",
@@ -497,6 +501,7 @@
   "headline": "Um halb drei ist alles größer.",
   "farbe": "#4D94FF",
   "datei": "Solo-06-Nachts",
+  "aktion": "Solo-06-Nachts-Aktion",
   "wann": [
    "Dauermüde, verschläft, schläft im Unterricht ein.",
    "Grübelt nachts; morgens gereizt oder niedergeschlagen.",
@@ -611,6 +616,7 @@
   "headline": "Wer redet da eigentlich so mit dir?",
   "farbe": "#B79CFF",
   "datei": "Solo-07-Stimme",
+  "aktion": "Solo-07-Stimme-Aktion",
   "wann": [
    "Wertet sich ständig ab oder wehrt jedes Lob ab.",
    "Gibt schnell auf: „Kann ich eh nicht.“",
@@ -725,6 +731,7 @@
   "headline": "Wen rufst du um zwei Uhr nachts an?",
   "farbe": "#2FD3E6",
   "datei": "Solo-08-Allein",
+  "aktion": "Solo-08-Allein-Aktion",
   "wann": [
    "Steht am Rand, wirkt angepasst oder unsichtbar.",
    "Viele oberflächliche Kontakte, niemand Vertrautes.",
@@ -839,6 +846,7 @@
   "headline": "Wofür brauchst du es?",
   "farbe": "#FFD60A",
   "datei": "Solo-09-Rausch",
+  "aktion": "Solo-09-Rausch-Aktion",
   "wann": [
    "Konsum ist bekannt oder wird vermutet – und Verbote haben nichts verändert.",
    "Der Jugendliche spricht das Thema selbst an oder prahlt damit.",
@@ -953,6 +961,7 @@
   "headline": "Was steckt hinter „mir egal“?",
   "farbe": "#FFB21A",
   "datei": "Solo-10-Null-Bock",
+  "aktion": "Solo-10-Null-Bock-Aktion",
   "wann": [
    "Verweigert Aufgaben oder gibt nichts ab; wirkt gleichgültig.",
    "Fehlt häufig, verschläft, hat „Bauchweh“ vor bestimmten Tagen.",
@@ -1067,6 +1076,7 @@
   "headline": "Was machst du nicht, weil sie es nicht erlaubt?",
   "farbe": "#4D94FF",
   "datei": "Solo-11-Angst",
+  "aktion": "Solo-11-Angst-Aktion",
   "wann": [
    "Meidet bestimmte Orte, Fächer, Wege oder Menschen – mit immer neuen Begründungen.",
    "Körperliche Beschwerden ohne Befund vor bestimmten Situationen.",
@@ -1181,6 +1191,7 @@
   "headline": "Wird dein Leben größer oder kleiner?",
   "farbe": "#FF7AC3",
   "datei": "Solo-12-Naehe",
+  "aktion": "Solo-12-Naehe-Aktion",
   "wann": [
    "Erste Beziehung, Liebeskummer oder eine Beziehung, die den Jugendlichen kleiner macht.",
    "Kontrolle oder Druck sind erkennbar – ausgeübt oder erlitten.",
@@ -1295,6 +1306,7 @@
   "headline": "Beides stimmt gleichzeitig.",
   "farbe": "#C6F02C",
   "datei": "Solo-13-Zuhause",
+  "aktion": "Solo-13-Zuhause-Aktion",
   "wann": [
    "Nach enttäuschenden Besuchstagen, abgesagten Kontakten, Wochenenden zu Hause.",
    "Der Jugendliche schwankt zwischen Idealisieren und Abwerten der Eltern.",
@@ -1402,6 +1414,7 @@
   "headline": "Wer darf deinen Plan hören?",
   "farbe": "#2EE6A8",
   "datei": "Solo-14-Spaeter",
+  "aktion": "Solo-14-Spaeter-Aktion",
   "wann": [
    "Vor Entscheidungen: Praktikum, Lehrstelle, Schulwechsel, Auszug.",
    "„Mir doch egal, was wird“ – bei einem Jugendlichen, dem es nicht egal ist.",
@@ -1516,6 +1529,7 @@
   "headline": "Nicht traurig. Das wäre wenigstens ein Gefühl.",
   "farbe": "#4D94FF",
   "datei": "Solo-15-Leer",
+  "aktion": "Solo-15-Leer-Aktion",
   "wann": [
    "Rückzug, Müdigkeit, Interessenverlust über mehr als zwei Wochen.",
    "Gereiztheit oder Gleichgültigkeit, wo früher Lebendigkeit war.",
@@ -1630,6 +1644,7 @@
   "headline": "Du hast etwas getan. Du bist es nicht.",
   "farbe": "#FF5A36",
   "datei": "Solo-16-Mist-gebaut",
+  "aktion": "Solo-16-Mist-gebaut-Aktion",
   "wann": [
    "Nach einem Vorfall mit Folgen: Anzeige, Ausschluss, Schaden – wenn die erste Aufregung vorbei ist.",
    "Der Jugendliche stempelt sich selbst ab („Bin halt kriminell“).",
@@ -1744,6 +1759,7 @@
   "headline": "Kaum jemand schaut so genau hin wie du.",
   "farbe": "#FFD60A",
   "datei": "Solo-17-Koerper",
+  "aktion": "Solo-17-Koerper-Aktion",
   "wann": [
    "Versteckt den Körper, meidet Schwimmen, Sport, Fotos.",
    "Ständige Vergleiche; viel Zeit vor dem Spiegel oder mit Fitness- und Schönheitsinhalten.",

@@ -23,6 +23,10 @@ export function baueAktion(d: AktionsHeft, h: Helfer): string {
       case 'ringe':
         return `<div class="ak-z ak-ri"><svg viewBox="0 0 200 200"><circle cx="100" cy="100" r="96" fill="#fff" stroke="#111" stroke-width="1.6" stroke-dasharray="5 4"/><circle cx="100" cy="100" r="64" fill="var(--p)" stroke="#111" stroke-width="1.6"/><circle cx="100" cy="100" r="33" fill="var(--a)" stroke="#111" stroke-width="1.6"/><circle cx="100" cy="100" r="5" fill="#111"/></svg>
           <div class="w">${z.ringe.map((r, i) => `<div><b>${['innen', 'Mitte', 'außen'][i]}</b><span>${t(r)}</span></div>`).join('')}</div></div>`
+      case 'felder':
+        return `<div class="ak-fe">${z.titel.map((x, i) => `<div><b>${i + 1}</b><span class="mo">${esc(x)}</span></div>`).join('')}</div>`
+      case 'hinweis':
+        return `<div class="bx ak ak-hi"><div class="lab mo">${esc(z.label)}</div><h3>${t(z.titel)}</h3><p>${t(z.x)}</p></div>`
       case 'comic':
         return `<div class="ak-co">${z.bilder.map((b, i) => `<div><div class="o"><b>${i + 1}</b>${ic(b[0])}</div><p>${t(b[1])}</p></div>`).join('')}</div>`
       case 'wahl':
