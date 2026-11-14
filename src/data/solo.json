@@ -374,5 +374,347 @@
     "warum": "Dann lohnt die Frage: Wovor ist dort Ruhe?"
    }
   ]
+ },
+ {
+  "id": "s05",
+  "nr": "05",
+  "reihe": "Thema",
+  "thema": "Wut",
+  "headline": "Worauf warst du wirklich wütend?",
+  "farbe": "#C6F02C",
+  "datei": "Solo-05-Wut",
+  "wann": [
+   "Häufige Ausraster, die der Jugendliche hinterher selbst nicht versteht.",
+   "Nach einem Vorfall – aber erst, wenn er wirklich wieder ruhig ist, frühestens am nächsten Tag.",
+   "Wut als einziges Gefühl, das gezeigt wird.",
+   "Auch bei Jugendlichen, die alles schlucken und nie laut werden."
+  ],
+  "ziel": "Der Jugendliche entdeckt an eigenen Beispielen, welches Gefühl unter seiner Wut liegt – und dass darüber zu reden mehr verändert als jede Beherrschungstechnik.",
+  "clips": [
+   {
+    "titel": "Aggressiv: Woher kommt deine Wut?",
+    "kanal": "Terra Xplore",
+    "url": "https://www.youtube.com/watch?v=ytcdqLNedrg",
+    "dauer": "die ersten 6 Min."
+   }
+  ],
+  "quiz": [
+   {
+    "f": "Was liegt oft unter der Wut?",
+    "o": [
+     "gar nichts",
+     "ein anderes Gefühl wie Scham oder Angst",
+     "Hunger",
+     "Langeweile"
+    ],
+    "r": 1,
+    "warum": "Wut fühlt sich stärker an als das Gefühl darunter."
+   },
+   {
+    "f": "Wie lange braucht der Körper ungefähr, bis der Alarm abklingt?",
+    "o": [
+     "10 Sekunden",
+     "1 Minute",
+     "20 Minuten",
+     "2 Tage"
+    ],
+    "r": 2,
+    "warum": "Vorher bringt Reden wenig."
+   },
+   {
+    "f": "Auf ein Kissen einschlagen macht …",
+    "o": [
+     "ruhiger",
+     "eher wütender",
+     "müde und glücklich",
+     "gar nichts"
+    ],
+    "r": 1,
+    "warum": "Es übt die Wut ein, statt sie abzubauen."
+   },
+   {
+    "f": "Was hilft bei voller Wut am ehesten?",
+    "o": [
+     "diskutieren",
+     "eine Erklärung verlangen",
+     "Abstand und Bewegung",
+     "eine Nachricht schreiben"
+    ],
+    "r": 2,
+    "warum": "Erst der Körper, dann das Gespräch."
+   },
+   {
+    "f": "Ist Wut ein schlechtes Gefühl?",
+    "o": [
+     "ja, immer",
+     "nein – sie zeigt, dass etwas nicht stimmt",
+     "nur bei Jungen",
+     "nur bei Erwachsenen"
+    ],
+    "r": 1,
+    "warum": "Das Gefühl ist ein Signal. Was man damit macht, ist die Frage."
+   },
+   {
+    "f": "Wut runterschlucken ist …",
+    "o": [
+     "immer die beste Lösung",
+     "auf Dauer auch teuer",
+     "unmöglich",
+     "ein Zeichen von Stärke"
+    ],
+    "r": 1,
+    "warum": "Sie kommt später wieder – oft an der falschen Stelle."
+   },
+   {
+    "f": "Wann redet man am besten über einen Ausraster?",
+    "o": [
+     "mittendrin",
+     "sofort danach",
+     "wenn der Körper wieder ruhig ist",
+     "nie"
+    ],
+    "r": 2,
+    "warum": "Erst dann ist das Denken wieder da."
+   },
+   {
+    "f": "Jemand rastet wegen einer Kleinigkeit aus. Meistens …",
+    "o": [
+     "ging es wirklich um die Kleinigkeit",
+     "war das Fass schon vorher voll",
+     "ist er einfach so",
+     "hat er schlecht gegessen"
+    ],
+    "r": 1,
+    "warum": "Der Auslöser ist selten der Grund."
+   }
+  ]
+ },
+ {
+  "id": "s06",
+  "nr": "06",
+  "reihe": "Thema",
+  "thema": "Nachts",
+  "headline": "Um halb drei lügt dein Kopf.",
+  "farbe": "#4D94FF",
+  "datei": "Solo-06-Nachts",
+  "wann": [
+   "Dauermüde, verschläft, schläft im Unterricht ein.",
+   "Grübelt nachts; morgens gereizt oder niedergeschlagen.",
+   "Tag-Nacht-Rhythmus verschoben (Ferien, Zocken, Schichtwechsel in der Wohngruppe).",
+   "Ausraster häufen sich nach schlechten Nächten."
+  ],
+  "ziel": "Der Jugendliche unterscheidet zwischen „nicht schlafen können“ und „nachts denken müssen“ – und testet eine einzige Veränderung, die er selbst in der Hand hat.",
+  "clips": [
+   {
+    "titel": "6 oder 9 Uhr? Warum wir zur falschen Zeit aufstehen!",
+    "kanal": "Quarks",
+    "url": "https://www.youtube.com/watch?v=kY5rFRU8A1c",
+    "dauer": "die ersten 6 Min."
+   }
+  ],
+  "quiz": [
+   {
+    "f": "Was lernt das Gehirn, wenn man stundenlang wach im Bett liegt?",
+    "o": [
+     "Bett heißt schlafen",
+     "Bett heißt wach",
+     "gar nichts",
+     "Mathe"
+    ],
+    "r": 1,
+    "warum": "Deshalb hilft es, bei langem Wachliegen aufzustehen."
+   },
+   {
+    "f": "Warum wirken Sorgen nachts größer?",
+    "o": [
+     "weil sie dann stimmen",
+     "weil der prüfende Teil des Gehirns müde ist",
+     "wegen des Mondes",
+     "weil es dunkel ist"
+    ],
+    "r": 1,
+    "warum": "Nachts fehlt die Gegenstimme."
+   },
+   {
+    "f": "Was stabilisiert den Schlaf am meisten?",
+    "o": [
+     "früh ins Bett gehen",
+     "jeden Tag ungefähr gleich aufstehen",
+     "am Wochenende bis mittags schlafen",
+     "ein Nickerchen am Abend"
+    ],
+    "r": 1,
+    "warum": "Die Aufstehzeit ist der Anker der inneren Uhr."
+   },
+   {
+    "f": "Warum werden Jugendliche abends später müde?",
+    "o": [
+     "aus Faulheit",
+     "die innere Uhr verschiebt sich in der Pubertät",
+     "wegen der Schule",
+     "das stimmt gar nicht"
+    ],
+    "r": 1,
+    "warum": "Biologie, kein Charakterfehler."
+   },
+   {
+    "f": "Was hilft morgens beim Wachwerden am meisten?",
+    "o": [
+     "Tageslicht",
+     "die Schlummertaste",
+     "ein dunkles Zimmer",
+     "liegen bleiben"
+    ],
+    "r": 0,
+    "warum": "Licht stellt die innere Uhr."
+   },
+   {
+    "f": "Du liegst seit 20 Minuten wach. Was ist am klügsten?",
+    "o": [
+     "auf die Uhr schauen",
+     "liegen bleiben und nachrechnen",
+     "aufstehen und etwas Langweiliges tun",
+     "das Handy holen"
+    ],
+    "r": 2,
+    "warum": "Zurück ins Bett erst, wenn Müdigkeit kommt."
+   },
+   {
+    "f": "Was macht zu wenig Schlaf am nächsten Tag?",
+    "o": [
+     "bessere Laune",
+     "eine kürzere Zündschnur",
+     "mehr Geduld",
+     "nichts"
+    ],
+    "r": 1,
+    "warum": "Müde Menschen rasten schneller aus."
+   },
+   {
+    "f": "Eine Entscheidung um drei Uhr nachts ist meistens …",
+    "o": [
+     "besonders klug",
+     "besonders ehrlich",
+     "schlechter als dieselbe am Vormittag",
+     "egal"
+    ],
+    "r": 2,
+    "warum": "Darum: nachts nichts entscheiden."
+   }
+  ]
+ },
+ {
+  "id": "s07",
+  "nr": "07",
+  "reihe": "Thema",
+  "thema": "Stimme",
+  "headline": "Wer redet da eigentlich so mit dir?",
+  "farbe": "#B79CFF",
+  "datei": "Solo-07-Stimme",
+  "wann": [
+   "Wertet sich ständig ab oder wehrt jedes Lob ab.",
+   "Gibt schnell auf: „Kann ich eh nicht.“",
+   "Perfektionismus – nichts ist gut genug.",
+   "Nach außen cool, nach innen gnadenlos."
+  ],
+  "ziel": "Der Jugendliche hört die abwertende Stimme zum ersten Mal als etwas, das er hat – nicht als etwas, das er ist – und erkennt, woher ihr Ton stammt.",
+  "clips": [
+   {
+    "titel": "Impostor-Syndrom: Warum wir uns manchmal als Hochstapler fühlen",
+    "kanal": "Quarks Dimension Ralph",
+    "url": "https://www.youtube.com/watch?v=8sPRWUwsmfk",
+    "dauer": "die ersten 5 Min."
+   }
+  ],
+  "quiz": [
+   {
+    "f": "Woher kommt die strenge Stimme im Kopf meistens?",
+    "o": [
+     "Sie ist angeboren.",
+     "Sie wurde gelernt – oft von echten Menschen.",
+     "aus dem Handy",
+     "Niemand hat so eine."
+    ],
+    "r": 1,
+    "warum": "Deshalb lohnt die Frage nach dem Tonfall."
+   },
+   {
+    "f": "Was will die Stimme eigentlich erreichen?",
+    "o": [
+     "dich zerstören",
+     "dich schützen, auf eine schlechte Art",
+     "gar nichts",
+     "dich unterhalten"
+    ],
+    "r": 1,
+    "warum": "Wer sich zuerst kleinmacht, wird nicht überrascht."
+   },
+   {
+    "f": "Wer macht nach einem Fehler eher weiter?",
+    "o": [
+     "wer sich fertigmacht",
+     "wer fair mit sich umgeht",
+     "beide gleich",
+     "keiner"
+    ],
+    "r": 1,
+    "warum": "Härte lähmt, Fairness hält im Spiel."
+   },
+   {
+    "f": "Der Freundes-Test fragt:",
+    "o": [
+     "Wie viele Freunde habe ich?",
+     "Würde ich das so einem Freund sagen?",
+     "Wer ist mein bester Freund?",
+     "Wer mag mich nicht?"
+    ],
+    "r": 1,
+    "warum": "Meistens lautet die Antwort Nein."
+   },
+   {
+    "f": "Hilft „Denk doch positiv“ gegen die Stimme?",
+    "o": [
+     "ja, sofort",
+     "meistens nicht",
+     "nur morgens",
+     "nur bei Erwachsenen"
+    ],
+    "r": 1,
+    "warum": "Ein neuer Satz muss stimmen, sonst glaubt ihn der Kopf nicht."
+   },
+   {
+    "f": "Ein Gedanke über dich ist …",
+    "o": [
+     "immer wahr",
+     "ein Gedanke – noch keine Tatsache",
+     "immer falsch",
+     "ein Befehl"
+    ],
+    "r": 1,
+    "warum": "Man kann ihn prüfen wie eine Behauptung."
+   },
+   {
+    "f": "Das Hochstapler-Gefühl („gleich fliegt auf, dass ich nichts kann“) haben …",
+    "o": [
+     "nur Schwache",
+     "sehr viele, auch Erfolgreiche",
+     "nur Kinder",
+     "fast niemand"
+    ],
+    "r": 1,
+    "warum": "Es sagt wenig über das, was man wirklich kann."
+   },
+   {
+    "f": "Was ist der erste Schritt gegen die Stimme?",
+    "o": [
+     "sie anschreien",
+     "sie bemerken",
+     "sie ignorieren",
+     "lauter Musik hören"
+    ],
+    "r": 1,
+    "warum": "Wer sie bemerkt, ist schon nicht mehr dasselbe wie sie."
+   }
+  ]
  }
 ]
