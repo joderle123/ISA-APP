@@ -438,3 +438,60 @@ table.t td:first-child { font-weight: 700; white-space: nowrap; }
 .kh h1.kl2 { font-size: 30pt; }
 .so-qz td:nth-child(1) { width: 8mm; } .so-qz td:nth-child(3) { width: 38mm; font-weight: 700; } .so-qz td:nth-child(4) { width: 52mm; } .so-qz u { text-decoration-thickness: .4mm; }
 .lt.gross table.so-qz { font-size: 8.6pt; } .lt.gross table.so-qz td { padding: 1mm 2mm; }
+
+/* ---------- SOLO AKTION: Hefte zum Machen (große Schrift, wenig Text) ---------- */
+.seite.akt { font-size: 12pt; line-height: 1.35; }
+.ak-kh { display: flex; align-items: center; gap: 5mm; padding: 8mm 10mm 5mm; border-bottom: .9mm solid var(--k); }
+.ak-kh .nr { flex: none; width: 25mm; height: 25mm; background: var(--k); color: #fff; font-family: 'Anton'; font-size: 44pt; line-height: 25mm; text-align: center; box-shadow: 1.6mm 1.6mm 0 var(--a); }
+.ak-kh .ti { flex: 1; min-width: 0; } .ak-kh .ti > .mo { color: var(--g); }
+.ak-kh h1 { font-family: 'Anton'; font-weight: 400; font-size: 34pt; line-height: 1; text-transform: uppercase; margin-top: 1mm; }
+.ak-kh .chips { display: flex; flex-wrap: wrap; gap: 1.6mm; margin-top: 2.4mm; }
+.ak-kh .chips > span { display: inline-flex; align-items: center; gap: 1.3mm; border: .5mm solid var(--k); padding: .5mm 2.4mm; font-size: 9.4pt; font-weight: 600; }
+.ak-kh .chips .ic { width: 3.9mm; height: 3.9mm; }
+.ak-kh .bi { flex: none; width: 27mm; height: 27mm; border-radius: 50%; background: var(--a); border: .7mm solid var(--k); display: grid; place-items: center; transform: rotate(6deg); }
+.ak-kh .bi .ic { width: 15mm; height: 15mm; }
+.inhalt.ak { gap: 4.5mm; justify-content: space-between; padding-top: 6mm; padding-bottom: 15mm; }
+.ak-so { display: flex; gap: 6mm; align-items: flex-start; } .ak-so .ak-st { flex: 1; min-width: 0; } .ak-so .fig { flex: none; width: 40mm; height: 50mm; overflow: hidden; margin-top: -2mm; } .ak-so .fig svg { width: 100%; height: auto; display: block; }
+.ak-un { display: flex; flex-direction: column; gap: 3mm; }
+.ak-name { display: flex; align-items: flex-end; gap: 3mm; font-size: 11pt; font-weight: 600; } .ak-name i { flex: 1; border-bottom: .4mm solid var(--k); height: 7mm; }
+.ak-st { list-style: none; counter-reset: s; display: flex; flex-direction: column; gap: 2.6mm; }
+.ak-st li { counter-increment: s; display: flex; gap: 3.4mm; align-items: flex-start; font-size: 13pt; font-weight: 500; line-height: 1.3; }
+.ak-st li::before { content: counter(s); flex: none; width: 8mm; height: 8mm; background: var(--a); border: .5mm solid var(--k); font-family: 'Anton'; font-size: 14pt; line-height: 7mm; text-align: center; }
+.ak-z { border: .7mm solid var(--k); background: #fff; padding: 4mm 4.5mm; box-shadow: 1.4mm 1.4mm 0 var(--k); }
+.akt .frage .ft { font-size: 12pt; } .akt .frage .n { display: none; }
+.akt .kreuze { font-size: 12pt; gap: 2.4mm 7mm; margin-top: 2.4mm; } .akt .kreise span { font-size: 12pt; padding: 1mm 3.4mm; } .akt .kreise { gap: 2.4mm; margin-top: 2.4mm; }
+.akt .kreuze i, .akt .raster i { width: 5mm; height: 5mm; margin-top: .2mm; }
+.akt .raster { font-size: 12pt; gap: 1.8mm 6mm; } .akt .raster span { padding-bottom: 1.4mm; }
+.akt .satz { font-size: 12pt; margin-top: 2.4mm; } .akt .satz .linie { height: 8mm; } .akt .linie { height: 9.5mm; }
+.ak-tb { width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 11pt; }
+.ak-tb th { background: var(--k); color: #fff; font-size: 8.6pt; font-weight: 700; padding: 1.4mm 1mm; border: .4mm solid var(--k); }
+.ak-tb td { border: .5mm solid var(--k); height: 13mm; padding: 0 2.4mm; }
+.ak-tb td:first-child { font-weight: 700; background: var(--p); width: 34mm; } .ak-tb th:first-child { width: 34mm; }
+.ak-tb.ak-wo td { height: 9.5mm; } .ak-tb.ak-wo td:first-child, .ak-tb.ak-wo th:first-child { width: 62mm; font-weight: 600; }
+.ak-th { display: flex; align-items: center; gap: 3mm; margin-bottom: 3mm; }
+.ak-th div { flex: 1; display: grid; grid-template-columns: repeat(11, 1fr); border: .5mm solid var(--k); height: 6mm; } .ak-th div i { background: var(--a); border-right: .3mm solid var(--k); } .ak-th div i:last-child { border-right: 0; }
+.ak-we { display: grid; grid-template-columns: 1fr 1fr; gap: 1.6mm 8mm; }
+.ak-we > div { display: grid; grid-template-columns: 1fr 12mm 12mm; gap: 1.6mm; align-items: center; font-size: 11.4pt; line-height: 1.2; }
+.ak-we > div.k { display: none; }
+.ak-we i { height: 10.5mm; border: .5mm solid var(--k); background: #fff; } .ak-we i:last-child { border-style: dashed; }
+.ak-ko { display: flex; gap: 8mm; align-items: center; } .ak-ko .fig { flex: none; width: 50mm; } .ak-ko .fig svg { width: 100%; display: block; }
+.ak-ko .w { flex: 1; display: flex; flex-direction: column; gap: 3mm; font-size: 12.5pt; font-weight: 500; } .ak-ko .w span { display: flex; gap: 3mm; align-items: center; }
+.ak-ko .w i, .ak-wa i, .ak-ok i, .ak-map i { flex: none; width: 5.4mm; height: 5.4mm; border: .5mm solid var(--k); background: #fff; display: inline-block; }
+.ak-co { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2.4mm; }
+.ak-co > div { border: .6mm solid var(--k); background: var(--p); display: flex; flex-direction: column; }
+.ak-co .o { background: var(--k); color: #fff; display: flex; align-items: center; justify-content: space-between; padding: 1.4mm 2.4mm; } .ak-co .o b { font-family: 'Anton'; font-weight: 400; font-size: 14pt; color: var(--a); } .ak-co .o .ic { width: 8mm; height: 8mm; }
+.ak-co p { padding: 2.2mm 2.6mm 2.6mm; font-size: 10.8pt; line-height: 1.28; font-weight: 500; }
+.ak-wa { display: grid; grid-template-columns: 1fr 1fr; gap: 2.2mm 8mm; } .ak-wa > div { display: flex; align-items: center; gap: 3mm; font-size: 12pt; font-weight: 500; border-bottom: .3mm solid #DCDCDC; padding-bottom: 1.6mm; }
+.ak-wa .ic { width: 7mm; height: 7mm; } .ak-wa span:not(.ic) { flex: 1; }
+.ak-da { display: flex; flex-direction: column; gap: 2mm; } .ak-da > div { display: grid; grid-template-columns: 1fr 24mm 24mm; gap: 3mm; align-items: center; font-size: 11.6pt; line-height: 1.25; border-bottom: .3mm solid #DCDCDC; padding-bottom: 1.8mm; }
+.ak-da > div:last-child { border-bottom: 0; padding-bottom: 0; } .ak-da .k { border-bottom: 0; padding-bottom: 0; } .ak-da .k b { text-align: center; }
+.ak-da em { display: flex; justify-content: center; gap: 2mm; } .ak-da em .ic { width: 8.4mm; height: 8.4mm; border: .45mm solid var(--k); border-radius: 50%; padding: 1.3mm; }
+.ak-aha { display: flex; gap: 5mm; align-items: center; background: var(--k); color: #fff; padding: 4mm 5mm; box-shadow: 1.4mm 1.4mm 0 var(--a); }
+.ak-aha .mo { color: var(--a); flex: none; } .ak-aha div { font-size: 13pt; font-weight: 500; line-height: 1.28; } .ak-aha strong { color: var(--a); font-weight: 700; }
+.ak-ok { display: flex; justify-content: space-between; align-items: center; } .ak-ok span { display: flex; align-items: center; gap: 1.8mm; } .ak-ok i { width: 4.4mm; height: 4.4mm; }
+.ak-start { display: flex; flex-direction: column; gap: 2mm; font-size: 14pt; font-weight: 500; line-height: 1.3; }
+.ak-map { display: grid; grid-template-columns: repeat(4, 1fr); gap: 3mm; margin-top: 3mm; }
+.ak-map > div { position: relative; border: .7mm solid var(--k); background: #fff; box-shadow: 1.2mm 1.2mm 0 var(--k); padding: 3mm 3mm 3.4mm; display: flex; flex-direction: column; gap: 1.4mm; min-height: 39mm; }
+.ak-map b { font-family: 'Anton'; font-weight: 400; font-size: 20pt; line-height: 1; } .ak-map .ic { width: 10mm; height: 10mm; } .ak-map span:not(.ic) { font-family: 'Anton'; text-transform: uppercase; font-size: 12.4pt; line-height: 1.08; }
+.ak-map small { color: var(--g); margin-top: auto; } .ak-map i { position: absolute; right: 2.4mm; top: 2.4mm; }
+.akt .kk { gap: 5mm; } .akt .clip .qr { width: 34mm; height: 34mm; } .akt .clip h3 { font-size: 15pt; } .akt .clip .fr2 { font-size: 12pt; }

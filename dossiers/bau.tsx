@@ -11,6 +11,8 @@ import qrcode from 'qrcode-generator'
 import type { Heft, Frage, Track } from './typen'
 import { URHEBER } from '../src/lib/urheber'
 import { baueSolo } from './solo-bau'
+import { baueAktion } from './aktion-bau'
+import type { AktionsHeft } from './aktion-typen'
 import type { Solo } from './solo-typen'
 
 const HIER = dirname(fileURLToPath(import.meta.url))
@@ -396,6 +398,10 @@ for (const id of process.argv.slice(2)) {
     writeFileSync(join(HIER, '..', 'src', 'data', 'solo.json'), JSON.stringify(liste, null, 1) + '\n')
     console.log('solo-index →', 'src/data/solo.json', liste.length, 'Hefte')
     continue
+  } else if (/^a\d/.test(id)) {
+    // SOLO AKTION: Hefte zum Machen (je Thema acht Aktionen)
+    const mod = (await import(`./aktion/${id}.ts`)) as { default: AktionsHeft }
+    html = baueAktion(mod.default, { t, esc, figur, ic, qr, kurzlink, linien, tape, frage, huelle, urheber: URHEBER.de })
   } else if (/^s\d/.test(id)) {
     // SOLO: Hefte für die Bezugszeit
     const mod = (await import(`./solo/${id}.ts`)) as { default: Solo }
