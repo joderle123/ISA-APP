@@ -368,3 +368,10 @@ table.t td:first-child { font-weight: 700; white-space: nowrap; }
 .gitter div { border-right: .35mm solid var(--k); border-bottom: .35mm solid var(--k); padding: 1.2mm 1.8mm; min-height: 13.5mm; font-size: 8.8pt; line-height: 1.2; font-weight: 500; }
 .gitter div:nth-child(3n) { border-right: 0; } .gitter div:nth-last-child(-n+3) { border-bottom: 0; }
 .filme.eins { grid-template-columns: 1fr; }
+
+/* Jahresplan */
+.plan .pk { display: inline-block; width: 2.8mm; height: 2.8mm; border: .3mm solid var(--k); margin-right: 1.6mm; vertical-align: -.3mm; }
+.lt.plan { font-size: 9pt; } .lt.plan .inhalt { gap: 3.4mm; padding-top: 5mm; }
+.lt.plan table.t { font-size: 8.4pt; } .lt.plan table.t td { padding: 1.25mm 2mm; } .lt.plan table.t td.mo { font-size: 7pt; white-space: nowrap; }
+.lt.plan .kasten ul { padding-left: 4.4mm; }
+.lt.plan table.fi td:nth-child(4) { white-space: nowrap; }

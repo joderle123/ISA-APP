@@ -294,8 +294,13 @@ function baue(d: Heft): string {
     </div></div>`,
   })
 
-  const schrift = (datei: string) => readFileSync(join(HIER, 'schrift', datei)).toString('base64')
-  const face = (fam: string, w: string, datei: string, range = '') => `@font-face{font-family:'${fam}';font-weight:${w};src:url(data:font/woff2;base64,${schrift(datei)}) format('woff2');${range}}`
+  const body = seiten.map((s, i) => `<section class="seite ${s.klasse ?? ''}" data-nr="${i + 1}">${s.html}${s.ohneFuss ? '' : fuss(i + 1, s.e)}</section>`).join('\n')
+  return huelle(d.datei, `REAL TALK #${d.nr} – ${d.thema}`, d.farbe, body)
+}
+
+function huelle(datei: string, titel: string, farbe: string, body: string): string {
+  const schrift = (f: string) => readFileSync(join(HIER, 'schrift', f)).toString('base64')
+  const face = (fam: string, w: string, f: string, range = '') => `@font-face{font-family:'${fam}';font-weight:${w};src:url(data:font/woff2;base64,${schrift(f)}) format('woff2');${range}}`
   const LAT = 'unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD'
   const EXT = 'unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF'
   const fonts = [
@@ -304,8 +309,46 @@ function baue(d: Heft): string {
     face('Space Grotesk', '300 700', 'space-grotesk-latin-wght-normal.woff2', LAT), face('Space Grotesk', '300 700', 'space-grotesk-latin-ext-wght-normal.woff2', EXT),
   ].join('\n')
   const css = readFileSync(join(HIER, 'stil.css'), 'utf8')
-  const body = seiten.map((s, i) => `<section class="seite ${s.klasse ?? ''}" data-nr="${i + 1}">${s.html}${s.ohneFuss ? '' : fuss(i + 1, s.e)}</section>`).join('\n')
-  return `<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="datei" content="${esc(d.datei)}"><title>REAL TALK #${esc(d.nr)} – ${esc(d.thema)}</title><style>${fonts}\n${css}\n:root{--a:${d.farbe}}</style></head><body>\n${body}\n<script>${SKRIPT}</script></body></html>`
+  return `<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="datei" content="${esc(datei)}"><title>${esc(titel)}</title><style>${fonts}\n${css}\n:root{--a:${farbe}}</style></head><body>\n${body}\n<script>${SKRIPT}</script></body></html>`
+}
+
+/** Jahresplan für die Leitung: alle Ausgaben, Videos und Filme auf drei Seiten. */
+function bauePlan(hefte: Heft[]): string {
+  const z2 = (n: number) => String(n).padStart(2, '0')
+  const einh = (d: Heft) => { const a = [...new Set(d.tracks.map((x) => x.nr))]; return a.length > 1 ? `E${a[0]}–E${a[a.length - 1]}` : `E${a[0]}` }
+  const kopf = (titel: string) => `<div class="lk"><span class="mark mo">Nur für die Leitung</span><h1>${t(titel)}</h1></div>`
+  const punkt = (d: Heft) => `<i class="pk" style="background:${d.farbe}"></i>`
+  const clips = hefte.flatMap((d) => d.tracks.map((e, i) => ({ d, e, i })).filter((x) => x.e.clip))
+  const filme = hefte.flatMap((d) => d.kino.filme.map((f) => ({ d, f })))
+  const seiten = [
+    `<div>${kopf('Das Jahr auf einen Blick')}<div class="inhalt">
+      <p><strong>REAL TALK</strong> begleitet das erste Jahr des Skills-Kurses: neun Ausgaben, ${hefte.reduce((s, d) => s + d.tracks.length, 0)} Tracks, ${clips.length} Videos, ${filme.length} Filme. Jede Ausgabe gehört zu einem Modul. Ein Track passt in eine Einheit; wo ein Modul mehr Stoff hat, gibt es Zusatz-Tracks für einen eigenen Termin.</p>
+      <table class="t plan"><tr><th>Ausgabe</th><th>Einheiten</th><th>Tracks</th><th>Kino</th><th>Seiten</th></tr>
+      ${hefte.map((d) => `<tr><td>${punkt(d)}#${esc(d.nr)} ${esc(d.thema)}</td><td>${einh(d)}</td><td>${d.tracks.map((e, i) => `${z2(i + 1)} ${esc(e.titel)}`).join(' · ')}</td><td>${d.kino.filme.map((f) => esc(f.titel)).join(' · ')}</td><td>${13 + d.tracks.length * 2}</td></tr>`).join('')}</table>
+      <div class="zwei">
+        <div class="kasten"><h2>So ist jede Ausgabe gebaut</h2><ul><li><span><strong>Titel, Ansage, Tracklist</strong> – Einstieg, etwa 10 Minuten</span></li><li><span><strong>Je Track eine Doppelseite</strong> – links Szene, Fakten, Clip, Mythos/Real; rechts „Dein Move“ mit Challenge</span></li><li><span><strong>Sessions</strong> – die Gruppenspiele in Kurzform</span></li><li><span><strong>Kino, Hot Takes, Knack den Code</strong> – für eigene Termine und zur Wiederholung</span></li><li><span><strong>Karten und Abspann</strong> – zum Mitnehmen und für die Rückmeldung</span></li><li><span><strong>Drei Seiten für die Leitung</strong> – Einsatz, Lösungen, Material</span></li></ul></div>
+        <div class="kasten g"><h2>Ein möglicher Rhythmus</h2><ul><li><span><strong>Pro Einheit ein Track.</strong> Das Heft ersetzt die Arbeitsblätter der Einheit, nicht die Spiele.</span></li><li><span><strong>Nach jedem Modul ein Kino-Termin</strong> – mit Bingo und drei Fragen nach dem Abspann.</span></li><li><span><strong>Letzte Einheit des Moduls:</strong> Hot Takes, Code, Karten, Abspann.</span></li><li><span><strong>Die Hefte bleiben im Raum</strong> oder gehen am Ende des Moduls mit nach Hause – die Gruppe entscheidet.</span></li></ul></div>
+      </div>
+      <p class="klein">Alle Personen und Szenen in den Heften sind erfunden. Die Figuren kehren in mehreren Ausgaben wieder; ihre Geschichten passen zueinander.</p>
+    </div></div>`,
+    ...[0, 1].map((teil) => { const liste = clips.filter((c) => (Number(c.d.nr) <= 3) === (teil === 0)); return `<div>${kopf(teil === 0 ? 'Alle Videos · #00 bis #03' : 'Alle Videos · #04 bis #08')}<div class="inhalt">
+      ${teil === 0 ? '<p>Die Videos werden im Heft per QR-Code geöffnet. <strong>Bitte jedes Video vor dem Einsatz selbst ansehen:</strong> Geprüft ist nur, dass es unter diesem Titel und Kanal abrufbar war. Inhalt und Länge wurden nicht gesichtet. Wo „die ersten 5 Min.“ steht, reicht ein Ausschnitt.</p>' : ''}
+      <table class="t plan"><tr><th>Ausgabe · Track</th><th>Video</th><th>Kanal</th><th>Link</th></tr>
+      ${liste.map(({ d, e, i }) => `<tr><td>${punkt(d)}#${esc(d.nr)} · ${z2(i + 1)} ${esc(e.titel)}</td><td>${esc(e.clip!.titel)}</td><td>${esc(e.clip!.kanal)}</td><td class="mo">${esc(kurzlink(e.clip!.url))}</td></tr>`).join('')}</table>
+      ${teil === 1 ? '<p class="klein">Verschwindet ein Video, bleibt der Track vollständig: Szene, Fakten und Moves funktionieren ohne Clip. Tracks ohne Video sind Absicht – dort wurde kein passendes gefunden.</p>' : ''}
+    </div></div>` }),
+    `<div>${kopf('Alle Filme')}<div class="inhalt">
+      <table class="t plan fi"><tr><th>Ausgabe</th><th>Film</th><th>FSK</th><th>Länge</th><th>Vorher wissen</th></tr>
+      ${filme.map(({ d, f }) => `<tr><td>${punkt(d)}#${esc(d.nr)} ${esc(d.thema)}</td><td><strong>${esc(f.titel)}</strong> (${f.jahr})</td><td>${f.fsk === null ? '–' : f.fsk}</td><td>${esc(f.laenge)}</td><td>${esc(f.achtung ?? '–')}</td></tr>`).join('')}</table>
+      <div class="zwei">
+        <div class="kasten g"><h2>Vor jedem Film</h2><ul><li><span><strong>Selbst ansehen.</strong> Die Hinweise oben ersetzen das nicht – Sie kennen Ihre Gruppe.</span></li><li><span><strong>Altersfreigabe prüfen.</strong> Die Angaben stammen aus Kino- und Filmdatenbanken, nicht direkt von der FSK.</span></li><li><span><strong>Vorführrechte klären.</strong> Eine Vorführung in der Gruppe ist keine private Nutzung; es gelten die Regeln Ihrer Einrichtung.</span></li></ul></div>
+        <div class="kasten"><h2>Im Heft dazu</h2><ul><li><span><strong>Bingo:</strong> neun Felder zum Abhaken während des Films.</span></li><li><span><strong>Nach dem Abspann:</strong> drei Fragen für die Runde.</span></li><li><span><strong>Popcorn-Wertung:</strong> Jede Person bewertet den Film.</span></li><li><span>Ein Film darf auch in zwei Teilen laufen – mit Bingo dazwischen.</span></li></ul></div>
+      </div>
+      <p class="klein">Stand: ${esc(hefte[hefte.length - 1].stand)}. Zeichnungen: Open Peeps (Pablo Stanley, CC0), Tabler Icons (MIT). Schriften: Anton, Space Grotesk (SIL Open Font License), Permanent Marker (Apache-Lizenz 2.0).</p>
+    </div></div>`,
+  ]
+  const body = seiten.map((h, i) => `<section class="seite lt plan" data-nr="${i + 1}">${h}<div class="fuss"><span class="mo">REAL TALK · Jahresplan</span><span></span><span class="nr">${i + 1}</span></div></section>`).join('\n')
+  return huelle('Real-Talk-Jahresplan', 'REAL TALK – Jahresplan', '#FFD60A', body)
 }
 
 const SKRIPT = `document.fonts.ready.then(function(){
@@ -317,8 +360,15 @@ const SKRIPT = `document.fonts.ready.then(function(){
 const ziel = join(HIER, 'aus')
 mkdirSync(ziel, { recursive: true })
 for (const id of process.argv.slice(2)) {
-  const mod = (await import(`./inhalt/${id}.ts`)) as { default: Heft }
-  const html = baue(mod.default)
+  let html: string
+  if (id === 'plan') {
+    const hefte: Heft[] = []
+    for (let i = 0; i <= 8; i++) hefte.push(((await import(`./inhalt/m${i}.ts`)) as { default: Heft }).default)
+    html = bauePlan(hefte)
+  } else {
+    const mod = (await import(`./inhalt/${id}.ts`)) as { default: Heft }
+    html = baue(mod.default)
+  }
   writeFileSync(join(ziel, `${id}.html`), html)
   console.log(id, '→', `aus/${id}.html`, Math.round(html.length / 1024), 'KB')
 }
