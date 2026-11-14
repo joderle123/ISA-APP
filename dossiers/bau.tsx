@@ -10,6 +10,8 @@ import { bildZeichnung, bildGueltig, palette } from '../src/blatt/zeichnung'
 import qrcode from 'qrcode-generator'
 import type { Heft, Frage, Track } from './typen'
 import { URHEBER } from '../src/lib/urheber'
+import { baueSolo } from './solo-bau'
+import type { Solo } from './solo-typen'
 
 const HIER = dirname(fileURLToPath(import.meta.url))
 const fehler: string[] = []
@@ -309,7 +311,7 @@ function baue(d: Heft): string {
   return huelle(d.datei, `REAL TALK #${d.nr} – ${d.thema}`, d.farbe, body)
 }
 
-function huelle(datei: string, titel: string, farbe: string, body: string): string {
+function huelle(datei: string, titel: string, farbe: string, body: string, ordner = 'real-talk'): string {
   const schrift = (f: string) => readFileSync(join(HIER, 'schrift', f)).toString('base64')
   const face = (fam: string, w: string, f: string, range = '') => `@font-face{font-family:'${fam}';font-weight:${w};src:url(data:font/woff2;base64,${schrift(f)}) format('woff2');${range}}`
   const LAT = 'unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD'
@@ -320,7 +322,7 @@ function huelle(datei: string, titel: string, farbe: string, body: string): stri
     face('Space Grotesk', '300 700', 'space-grotesk-latin-wght-normal.woff2', LAT), face('Space Grotesk', '300 700', 'space-grotesk-latin-ext-wght-normal.woff2', EXT),
   ].join('\n')
   const css = readFileSync(join(HIER, 'stil.css'), 'utf8')
-  return `<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="datei" content="${esc(datei)}"><title>${esc(titel)}</title><style>${fonts}\n${css}\n:root{--a:${farbe}}</style></head><body>\n${body}\n<script>${SKRIPT}</script></body></html>`
+  return `<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="datei" content="${esc(datei)}"><meta name="ordner" content="${esc(ordner)}"><title>${esc(titel)}</title><style>${fonts}\n${css}\n:root{--a:${farbe}}</style></head><body>\n${body}\n<script>${SKRIPT}</script></body></html>`
 }
 
 /** Jahresplan für die Leitung: alle Ausgaben, Videos und Filme auf drei Seiten. */
@@ -370,7 +372,7 @@ function bauePlan(hefte: Heft[]): string {
 const SKRIPT = `document.fonts.ready.then(function(){
   function frei(el){var cs=getComputedStyle(el),k=[].slice.call(el.children),h=0;k.forEach(function(c){h+=c.getBoundingClientRect().height});
     return el.clientHeight-parseFloat(cs.paddingTop)-h-(k.length-1)*parseFloat(cs.rowGap||0)}
-  [].forEach.call(document.querySelectorAll('.inhalt.rs,.inhalt.ls'),function(el){if(frei(el)>68)el.classList.add('luft')});
+  [].forEach.call(document.querySelectorAll('.inhalt.rs,.inhalt.ls,.inhalt.sol'),function(el){if(frei(el)>68)el.classList.add('luft')});
   document.body.dataset.fertig='1'})`
 
 const ziel = join(HIER, 'aus')
@@ -381,6 +383,10 @@ for (const id of process.argv.slice(2)) {
     const hefte: Heft[] = []
     for (let i = 0; i <= 8; i++) hefte.push(((await import(`./inhalt/m${i}.ts`)) as { default: Heft }).default)
     html = bauePlan(hefte)
+  } else if (/^s\d/.test(id)) {
+    // SOLO: Hefte für die Bezugszeit
+    const mod = (await import(`./solo/${id}.ts`)) as { default: Solo }
+    html = baueSolo(mod.default, { t, esc, figur, ic, qr, kurzlink, linien, tape, frage, huelle, urheber: URHEBER.de })
   } else {
     const mod = (await import(`./inhalt/${id}.ts`)) as { default: Heft }
     html = baue(mod.default)

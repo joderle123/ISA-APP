@@ -389,3 +389,52 @@ table.t td:first-child { font-weight: 700; white-space: nowrap; }
 .lt .abl { display: block; font-size: 7.7pt; line-height: 1.25; color: var(--g); margin-top: .4mm; }
 .lt .abl b { color: var(--k); font-weight: 700; }
 .ch .z3 { margin-top: 1mm; font-size: 8.6pt; line-height: 1.25; }
+
+/* ---------- SOLO: Hefte für die Bezugszeit ---------- */
+.so-cv { background: var(--k); color: #fff; display: flex; justify-content: space-between; height: 86mm; position: relative; overflow: hidden; }
+.so-cv .l { padding: 9mm 0 0 10mm; flex: 1; min-width: 0; position: relative; z-index: 2; }
+.so-cv .top { display: flex; gap: 6mm; color: #CFCFCF; }
+.so-cv .top span:last-child { background: var(--a); color: var(--k); padding: 0 2mm; }
+.so-cv .logo { font-family: 'Anton'; font-size: 58pt; line-height: .9; letter-spacing: .02em; margin-top: 3mm; }
+.so-cv .logo span { color: transparent; -webkit-text-stroke: .6mm #fff; }
+.so-cv .th2 { display: inline-block; background: var(--a); color: var(--k); font-family: 'Anton'; text-transform: uppercase; font-size: 46pt; line-height: 1; padding: 1.5mm 5mm 1mm; margin: 3mm 0 0 -10mm; padding-left: 10mm; transform: rotate(-1.6deg); transform-origin: left center; }
+.so-cv .th2.kl { font-size: 36pt; }
+.so-cv .hd { font-size: 16pt; margin-top: 4mm; line-height: 1.15; max-width: 118mm; }
+.so-cv .r { flex: none; width: 70mm; position: relative; }
+.so-cv .r .fig { position: absolute; right: 6mm; top: 8mm; width: 60mm; height: 110mm; }
+.so-cv .r .fig svg { width: 100%; height: 100%; }
+.so-cv .stk { position: absolute; left: -8mm; top: 10mm; width: 25mm; height: 25mm; border-radius: 50%; background: #fff; color: var(--k); border: .7mm solid var(--k); display: grid; place-items: center; text-align: center; font-family: 'Anton'; font-size: 10pt; line-height: 1.05; text-transform: uppercase; padding: 2mm; transform: rotate(-10deg); }
+.inhalt.sol { gap: 3.2mm; padding-top: 5mm; justify-content: flex-start; }
+.inhalt.sol.luft { justify-content: space-between; }
+.so-text { font-size: 11pt; line-height: 1.42; display: grid; gap: 1.8mm; }
+.so-deal { background: var(--k); color: #fff; box-shadow: 1.3mm 1.3mm 0 var(--a); padding: 3.6mm 4.4mm 4mm; }
+.so-deal h3 { font-family: 'Anton'; font-weight: 400; text-transform: uppercase; font-size: 15pt; color: var(--a); margin-bottom: 2mm; }
+.so-deal ol { list-style: none; counter-reset: s; display: grid; gap: 1.5mm; font-size: 10.2pt; line-height: 1.34; }
+.so-deal ol li { counter-increment: s; display: flex; gap: 2.4mm; }
+.so-deal ol li::before { content: counter(s); flex: none; width: 4.8mm; height: 4.8mm; background: var(--a); color: var(--k); display: grid; place-items: center; font-family: 'Anton'; font-size: 8.6pt; margin-top: .2mm; }
+.so-deal strong { color: var(--a); }
+.so-ka h3, .so-ex h3 { font-family: 'Anton'; font-weight: 400; text-transform: uppercase; font-size: 15pt; line-height: 1.05; margin-bottom: 1mm; }
+.so-ka p, .so-ex p { font-size: 10.2pt; line-height: 1.36; }
+.so-ka .lab, .so-ex .lab { margin-bottom: 1.2mm; display: flex; align-items: center; gap: 1.6mm; }
+.so-ex .lab span { display: flex; align-items: center; gap: 1.6mm; } .so-ex .lab .ic { width: 4mm; height: 4mm; }
+.so-ex .satz { margin-top: 2.6mm; }
+.mv .kp .b.bd { background: var(--a); color: var(--k); } .mv .kp .b.bd .ic { width: 6mm; height: 6mm; }
+.mv .kp h3 small { display: block; color: var(--g); margin-bottom: .6mm; }
+.so-mk .merk .mk { font-size: 18pt; }
+.so-mk .linie { margin-left: 8mm; }
+.so-tf { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border: .7mm solid var(--k); }
+.so-tf > div { padding: 2.6mm 3.2mm 3mm; border-right: .7mm solid var(--k); display: flex; flex-direction: column; gap: 1.8mm; }
+.so-tf > div:last-child { border-right: 0; }
+.so-tf .s2 { background: var(--p); } .so-tf .s3 { background: var(--k); color: #fff; }
+.so-tf .lab { display: flex; justify-content: space-between; } .so-tf .s3 .lab b { color: var(--a); }
+.so-tf p { font-size: 9.8pt; line-height: 1.32; font-weight: 500; padding-top: 1.6mm; border-top: .3mm solid currentColor; }
+.so-hin { color: var(--g); }
+.so-log { width: 100%; border-collapse: collapse; font-size: 9pt; }
+.so-log th { text-align: left; background: var(--k); color: #fff; font-size: 7.2pt; letter-spacing: .08em; text-transform: uppercase; padding: 1.4mm 2mm; }
+.so-log td { border: .4mm solid var(--k); height: 11.5mm; padding: 0 2mm; }
+.so-log td:nth-child(1) { width: 20mm; } .so-log td:nth-child(2) { width: 19mm; } .so-log td:nth-child(3) { width: 38mm; } .so-log td:nth-child(5) { width: 21mm; white-space: nowrap; }
+.so-log td i { display: inline-block; width: 3.7mm; height: 3.7mm; border: .5mm solid var(--k); margin-right: 1.2mm; }
+.so-zw { align-items: start; }
+.kh h1.kl2 { font-size: 30pt; }
+.so-qz td:nth-child(1) { width: 8mm; } .so-qz td:nth-child(3) { width: 38mm; font-weight: 700; } .so-qz td:nth-child(4) { width: 52mm; } .so-qz u { text-decoration-thickness: .4mm; }
+.lt.gross table.so-qz { font-size: 8.6pt; } .lt.gross table.so-qz td { padding: 1mm 2mm; }
