@@ -7,7 +7,7 @@ const d: Heft = {
   thema: 'Neu hier', headline: 'Erst mal gucken.', farbe: '#FFB21A', stand: 'November 2026',
   cover: {
     bild: 'peep:tom:neutral:laessig', sticker: 'Ausgabe eins',
-    zeilen: ['Welche Regeln hier gelten – und wer sie macht', '„Weiter“: der wichtigste Satz im ganzen Kurs', 'Kennenlernen ohne Seelen-Striptease', 'Kann aus diesem Haufen ein Team werden?'],
+    zeilen: ['Welche Regeln hier gelten – und wer sie macht', '„Weiter“: der wichtigste Satz im ganzen Kurs', 'Kennenlernen, ohne alles von dir zu erzählen', 'Kann aus diesem Haufen ein Team werden?'],
   },
   ansage: {
     text: [

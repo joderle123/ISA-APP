@@ -5,7 +5,7 @@ Akzentfarbe je Ausgabe, direkter Ton, erfundene Szenen nah am Alltag (Betrieb, W
 
 Aufbau einer Ausgabe: Titel · Ansage · Tracklist mit Cast und Soundcheck · je Thema eine Doppelseite
 (links Szene, Fakten, Mythos/Real, Merksatz – rechts „Dein Move“ mit zwei Aufgaben, Challenge,
-eigener Line und Aufgabe für die Woche) · Sessions (Gruppen-Aktionen aus dem Kurs, zwei Seiten) · Kino
+eigenem Satz und Aufgabe für die Woche) · Sessions (Gruppen-Aktionen aus dem Kurs, zwei Seiten) · Kino
 (Hauptfilm, Tipp, Bingo, Fragen) · Hot Takes · Knack den Code · Karten für die Tasche · Abspann ·
 drei Seiten nur für die Leitung.
 
@@ -36,3 +36,10 @@ Regeln für den Inhalt
 - Das Code-Quiz braucht so viele Fragen, wie das Lösungswort Buchstaben hat.
 
 Schriften in `schrift/`: Anton, Space Grotesk (SIL Open Font License), Permanent Marker (Apache 2.0).
+
+## Ton
+
+- Klares, direktes Deutsch. **Keine nachgemachte Jugendsprache** (kein „Digga“, „cringe“, „Vibe“ usw.) – das wirkt bemüht.
+- Englisch nur dort, wo es der normale Name einer Sache ist (Track, Challenge, Hot Take, Clip).
+- Nicht ständig betonen, dass das Heft „nicht wie Schule“ ist. Höchstens einmal je Ausgabe.
+- Ernst nehmen statt anbiedern: echte Themen, kurze Sätze, Humor ohne Zeigefinger. Mitmachen ist immer freiwillig.

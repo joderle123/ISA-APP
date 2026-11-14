@@ -12,7 +12,7 @@ const d: Heft = {
   ansage: {
     text: [
       'Das ist die letzte Ausgabe. Sie hat zwei Hälften.',
-      'In der ersten geht es um deinen **Akku**: Schlaf, Essen, Bewegung. Klingt nach Gesundheitsunterricht, ist es aber nicht. Es ist der Grund, warum derselbe blöde Spruch dich an einem Tag kaltlässt und am nächsten explodieren lässt.',
+      'In der ersten geht es um deinen **Akku**: Schlaf, Essen, Bewegung. Das ist der Grund, warum derselbe blöde Spruch dich an einem Tag kaltlässt und am nächsten explodieren lässt.',
       'In der zweiten Hälfte schaust du zurück. Auf ein Jahr, in dem du mehr gemacht hast, als du dir zutraust. Und dann kommt ein Abschied. Der gehört dazu – auch wenn man ihn am liebsten überspringen würde.',
     ],
     zitat: 'Es endet. ==Du bleibst.==',
@@ -135,7 +135,7 @@ const d: Heft = {
         { titel: 'Vier Ecken', wer: 'alle', zeit: '10 Min.', material: 'vier Schilder: Schlaf, Essen, Bewegung, Pause', schritte: ['Die Leitung fragt: „Wo läuft es bei dir schon gut?“ Geh in deine Ecke.', 'Jede Ecke sammelt einen Tipp, der wirklich funktioniert, und ruft ihn in den Raum.', 'Zweite Frage: „Wo wäre dein größter Hebel?“ Neue Ecke, neuer Tipp.'], frage: 'Welchen Tipp aus einer anderen Ecke probierst du aus?' },
       ],
       leitung: {
-        einsatz: 'Zweite Hälfte von Einheit 29: Rucksack-Rennen und Vier Ecken stehen bei den Sessions, der Gesund-Würfel ist die Challenge, die Line ersetzt „Mein Gesund-Plan“ und begleitet die Mission (kleiner Schritt an vier Tagen).',
+        einsatz: 'Zweite Hälfte von Einheit 29: Rucksack-Rennen und Vier Ecken stehen bei den Sessions, der Gesund-Würfel ist die Challenge, „Dein Satz“ ersetzt „Mein Gesund-Plan“ und begleitet die Mission (kleiner Schritt an vier Tagen).',
         loesungen: [
           'Szene: zu wenig Schlaf, nichts gegessen, viel Koffein und Zucker – der Körper war schon auf Alarm, bevor die Kiste kam. Das entschuldigt das Brüllen nicht, erklärt aber die kurze Zündschnur.',
           'Move A: Es gibt kein Richtig. Zocken und Scrollen dürfen in beiden Spalten stehen – das ist ein guter Gesprächsanlass.',
@@ -290,6 +290,7 @@ const d: Heft = {
   abspann: {
     posten: ['Schlaf ernst nehmen', 'Akku-Check', 'Mini-Schritt', 'Mein Jahr sehen', 'Abschied aushalten'],
     saetze: ['Das nehme ich aus dem ganzen Jahr mit:', 'Das war Quatsch:', 'Das wünsche ich der nächsten Gruppe:'],
+    schluss: 'Das war die letzte Ausgabe. Der Rest gehört dir.',
   },
   leitung: {
     fakten: [['Zielgruppe', '12–16 Jahre, 4–8 Jugendliche'], ['Dauer', '2 Einheiten à 100 Min. (E29–E30)'], ['Sozialform', 'allein, zu zweit, Teams'], ['Material', 'Stifte, Rucksäcke, Würfel, Umschläge, Schere']],

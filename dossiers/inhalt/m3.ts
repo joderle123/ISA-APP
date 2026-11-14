@@ -11,7 +11,7 @@ const d: Heft = {
   ansage: {
     text: [
       'Jeder kennt den Moment. Es wird heiß, eng, laut – und dann machst du etwas, das du später bereust. Oder du machst gar nichts mehr.',
-      'Dieses Heft ist kein Benimmkurs. Es ist ein **Testlabor**. Du probierst aus, was deinen Körper runterbringt, wenn der Kopf schon offline ist. Was bei dir wirkt, bleibt. Der Rest fliegt raus.',
+      'Dieses Heft ist ein **Testlabor**. Du probierst aus, was deinen Körper runterbringt, wenn der Kopf schon offline ist. Was bei dir wirkt, bleibt. Der Rest fliegt raus.',
       'Du brauchst dafür nur eine Zahl von 0 bis 100. Und die Bereitschaft, Dinge zu testen, die erst mal komisch aussehen.',
     ],
     zitat: 'Erst runter. ==Dann reden.==',
@@ -197,7 +197,7 @@ const d: Heft = {
         {"titel": "Tast-Duell", "wer": "zwei Teams", "zeit": "12 Min.", "material": "Kiste mit Gegenständen: Stein, Knetball, Bürste, Tuch, Kühlpack …", "schritte": ["Augen zu, Hand in die Kiste. Nimm einen Gegenstand.", "Beschreib ihn deinem Team, ohne ihn zu nennen: warm oder kalt, glatt oder rau, schwer oder leicht.", "Das Team hat 30 Sekunden zum Raten. Richtig: ein Punkt."], "frage": "Was davon würdet ihr in die Hosentasche stecken?"},
       ],
       leitung: {
-        einsatz: 'Szene nach „5-4-3-2-1 im Gehen“. Move A begleitet die Duft-Bar, Move B die Kälte-Probe, die Challenge ist die DJ-Runde. Die Line gehört zur Playlist auf dem Blatt „Skills über die Sinne“.',
+        einsatz: 'Szene nach „5-4-3-2-1 im Gehen“. Move A begleitet die Duft-Bar, Move B die Kälte-Probe, die Challenge ist die DJ-Runde. „Dein Satz“ gehört zur Playlist auf dem Blatt „Skills über die Sinne“.',
         loesungen: [
           'Szene: Der starke Kältereiz zieht die Aufmerksamkeit aus der Gedankenspirale in den Körper. Danach konnte Amira Hilfe holen. Die Szene zeigt eine Alternative zu schädlichen Reizen, ohne sie zu benennen – nicht nachbohren.',
           'Move A: Düfte wirken sehr verschieden. Wer keinen mag, hat auch ein Ergebnis.',
@@ -256,7 +256,7 @@ const d: Heft = {
         {"titel": "Fokus-Dreikampf", "wer": "zwei Teams", "zeit": "12 Min.", "material": "Stoppuhr, Becher mit Wasser", "schritte": ["**Eine Minute:** Augen zu. Setz dich, wenn du glaubst, 60 Sekunden sind um.", "**Wasser-Staffel:** Ein randvoller Becher wandert durch das Team und zurück.", "**Spiegel:** Zu zweit gegenüber. Eine Person bewegt sich in Zeitlupe, die andere spiegelt."], "frage": "Was passiert mit der Zeit, wenn ihr unter Druck steht?"},
       ],
       leitung: {
-        einsatz: 'Szene nach dem Kopf-Skill-Zirkel. Move A direkt nach dem Gedankenschiffchen, Move B im Schritt „Den sicheren Ort gestalten“. Die Challenge gehört zum Fokus-Vierkampf. Die Line ist der vierte Kopf-Skill („wie mit einem Freund“).',
+        einsatz: 'Szene nach dem Kopf-Skill-Zirkel. Move A direkt nach dem Gedankenschiffchen, Move B im Schritt „Den sicheren Ort gestalten“. Die Challenge gehört zum Fokus-Vierkampf. „Dein Satz“ ist der vierte Kopf-Skill („wie mit einem Freund“).',
         loesungen: [
           'Szene: Gedanken wegzudrücken macht sie stärker. Eine Aufgabe, die den Kopf ganz braucht, lässt keinen Platz fürs Grübeln.',
           'Move A: Jede Antwort passt. Wer lange mitgefahren ist, hat nichts falsch gemacht – das Bemerken ist die Übung.',

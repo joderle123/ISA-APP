@@ -74,7 +74,7 @@ export interface Heft {
   hot: { unter: string; regeln: string; takes: string[] }
   quiz: { unter: string; wort: string; fragen: { f: string; o: string[]; r: number }[] }
   karten: { titel: string; icon: string; zeilen: string[]; eigen?: string }[]
-  abspann: { saetze: string[]; posten: string[] }
+  abspann: { saetze: string[]; posten: string[]; /** letzter Satz der Seite (Standard: Hinweis auf die nächste Ausgabe) */ schluss?: string }
   hilfeText?: string
   leitung: {
     fakten: [string, string][]; wozu: string; lernziele: string[]; start: string; schluss: string

@@ -77,7 +77,7 @@ const d: Heft = {
         { titel: 'Sortier-Duell', wer: 'zwei Teams', zeit: '18 Min.', material: 'Glaubenssatz-Karten, drei Felder: Hilft, Kommt drauf an, Bremst', schritte: ['Staffel: Eine Person pro Team läuft mit einer Karte los und legt sie auf ein Feld.', 'Das andere Team darf „Einspruch!“ rufen. Dann muss begründet werden.', 'Punkte gibt es für jede Karte, die nach der Diskussion liegen bleibt.'], level2: 'Eigene Sätze aus Songs oder Serien auf leere Karten schreiben.', frage: 'Welcher Satz lag am Ende bei „Kommt drauf an“ – und worauf?' },
       ],
       leitung: {
-        einsatz: 'Szene als Einstieg oder nach dem Spiel „Kopfkino“ (Challenge). Move A ersetzt das Blatt „Drei Filme für Ben“. Move B bereitet das Sortier-Duell vor. Die Line ist privat.',
+        einsatz: 'Szene als Einstieg oder nach dem Spiel „Kopfkino“ (Challenge). Move A ersetzt das Blatt „Drei Filme für Ben“. Move B bereitet das Sortier-Duell vor. „Dein Satz“ ist privat.',
         loesungen: [
           'Szene: sein Film. Die Situation (gelesen, keine Antwort) war harmlos; der Gedanke hat Gefühl und Verhalten bestimmt.',
           'Move A: Film 1 – gekränkt, traurig – schreibt nicht mehr, mies drauf. Film 2 – gelassen, etwas ungeduldig – macht etwas anderes, fragt morgen. Der dritte Gedanke ist frei, z. B. „Akku leer“.',
@@ -186,7 +186,7 @@ const d: Heft = {
         { titel: 'Die freundliche Stimme', wer: 'alle', zeit: '5 Min.', material: 'Stuhlkreis', schritte: ['Sitzen, Augen zu oder Blick auf den Boden. Wer mag, legt eine Hand auf die Brust.', 'Die Leitung spricht langsam: „Das ist gerade schwer.“ – „So geht es vielen.“ – „Was brauche ich jetzt?“', 'Sprich die Sätze innerlich nach – in dem Ton, in dem du mit einem Freund redest.'], frage: 'Wie redet ihr sonst mit euch, wenn etwas schiefgeht?' },
       ],
       leitung: {
-        einsatz: 'Szene vor dem „Fall Tiago“ (bei den Sessions als „Tatort“). Move A ist die Kurzfassung des Falls im Heft. Die Arbeit am eigenen Satz („Mein Fall“) bleibt auf dem Detektivblatt im Umschlag. Move B ist der Prüfstand. Die Line ist der neue Satz; die Karte dazu steht auf Seite {K}.',
+        einsatz: 'Szene vor dem „Fall Tiago“ (bei den Sessions als „Tatort“). Move A ist die Kurzfassung des Falls im Heft. Die Arbeit am eigenen Satz („Mein Fall“) bleibt auf dem Detektivblatt im Umschlag. Move B ist der Prüfstand. „Dein Satz“ ist der neue Satz; die Karte dazu steht auf Seite {K}.',
         loesungen: [
           'Szene: die Steigerung von 15 auf 22, das Moped, die Kasse im Praktikum.',
           'Move A: dafür – 22 Punkte · dagegen – davor 15 (also besser geworden), Moped, Kasse · kein Beweis – fühlt sich dumm, Spruch des Cousins. Urteil: zu grob.',
@@ -243,7 +243,7 @@ const d: Heft = {
         { titel: 'Satz-Baum', wer: 'alle', zeit: '13 Min.', material: 'Plakat mit Baum, Karten, Kleber', schritte: ['An der Wand hängt ein Baum. Bremsende Sätze kommen unten in die Erde, hilfreiche in die Krone.', 'Jeder klebt zwei, drei Karten. Wer mag, schreibt seinen neuen Satz auf ein Blatt in die Krone – ohne Namen.', 'Einen Schritt zurück: Was wächst da?'], frage: 'Welcher Satz aus der Krone könnte auch eurer sein?' },
       ],
       leitung: {
-        einsatz: 'Szene als Einstieg nach dem Gang-Raten. Move A begleitet die Rollenspiele (Szenen-Tabelle der Einheit). Move B ersetzt oder ergänzt „Meine Beweis-Challenge“. Die Challenge ist das Würfelspiel „Sofort-Beweise“. Die Line (sieben Kästchen) wird in der nächsten Einheit angeschaut.',
+        einsatz: 'Szene als Einstieg nach dem Gang-Raten. Move A begleitet die Rollenspiele (Szenen-Tabelle der Einheit). Move B ersetzt oder ergänzt „Meine Beweis-Challenge“. Die Challenge ist das Würfelspiel „Sofort-Beweise“. „Dein Satz“ (sieben Kästchen) wird in der nächsten Einheit angeschaut.',
         loesungen: [
           'Szene: Der neue Satz hat seinen ersten erlebten Beweis – gegen den lauten alten Satz. Selbstwirksamkeit entsteht durch Tun, nicht durch Einsicht.',
           'Move A: Mit dem neuen Satz ändern sich meist Haltung, Stimme und Blick – und oft das Ende der Szene.',

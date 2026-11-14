@@ -136,7 +136,7 @@ const d: Heft = {
         { titel: 'Nein-Würfel', wer: 'alle', zeit: '12 Min.', material: 'Drängel-Karten, 1 Würfel', schritte: ['Zieh eine Drängel-Karte („Komm, nur einmal“) und würfle.', 'Sag Nein, wie die Zahl es will: **1** kaputte Schallplatte · **2** Nein plus Vorschlag · **3** mit Humor · **4** einfach gehen · **5** freie Wahl · **6** zu zweit.', 'Die Gruppe zeigt mit den Fingern: Wie überzeugend war das?'], level2: 'Die Leitung drängelt nach: „Stell dich nicht so an.“', frage: 'Welche Art von Nein fällt euch am leichtesten?' },
       ],
       leitung: {
-        einsatz: '„Der Schwarm“ als Einstieg, dann die Szene. Move A ersetzt die Zonen auf dem Blatt „Nein sagen“ (Zonen-Wette). Move B vor dem Nein-Würfel. Die Challenge ist das Druck-Duell; die Line ist der eigene Nein-Satz.',
+        einsatz: '„Der Schwarm“ als Einstieg, dann die Szene. Move A ersetzt die Zonen auf dem Blatt „Nein sagen“ (Zonen-Wette). Move B vor dem Nein-Würfel. Die Challenge ist das Druck-Duell; „Dein Satz“ ist der eigene Nein-Satz.',
         loesungen: [
           'Szene: Zeit, einen fertigen Satz – und eine einzige Person, die auch Nein sagt. Der Druck kam nicht aus Worten, sondern aus Blicken.',
           'Move A: offen. Wachsen findet in der Lernzone statt; die Panikzone lähmt.',

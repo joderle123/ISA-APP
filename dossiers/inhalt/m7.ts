@@ -84,7 +84,7 @@ const d: Heft = {
         { titel: 'Foto-Duell', wer: 'zwei Teams', zeit: '15 Min.', material: 'je ein Handy, ein Apfel oder eine Flasche', schritte: ['Sechs Minuten: Macht aus einem langweiligen Gegenstand das perfekte Bild. Licht, Winkel, Filter – alles erlaubt.', 'Zeigt euer bestes Bild. Und dann: das erste.', 'Zählt, wie viele Versuche dazwischenlagen. **Keine Personen fotografieren, Bilder danach löschen.**'], frage: 'Was sagt das über die Bilder in eurem Feed?' },
       ],
       leitung: {
-        einsatz: 'Szene als Einstieg vor dem Quiz „Gruppe gegen den Algorithmus“. Move A ist „Die Wette“ (statt Blatt), Move B der Wenn-dann-Satz. Die Challenge ist der Ping-Turm; das Foto-Duell steht bei den Sessions. Die Line begleitet die Mission der Woche.',
+        einsatz: 'Szene als Einstieg vor dem Quiz „Gruppe gegen den Algorithmus“. Move A ist „Die Wette“ (statt Blatt), Move B der Wenn-dann-Satz. Die Challenge ist der Ping-Turm; das Foto-Duell steht bei den Sessions. „Dein Satz“ begleitet die Mission der Woche.',
         loesungen: [
           'Szene: die App – Autoplay und Endlos-Feed nehmen die Stopp-Stelle weg. Sami hat nie entschieden, weiterzuschauen.',
           'Move A: Schätzung und Messung liegen meist weit auseinander. Zahlen nicht vergleichen, nicht kommentieren.',
@@ -193,7 +193,7 @@ const d: Heft = {
         { titel: 'Begriffe-Blitz', wer: 'zwei Teams', zeit: '10 Min.', material: 'fünf Schilder: KI, Deepfake, Fake News, Algorithmus, Filterblase', schritte: ['Aus jedem Team steht eine Person an der Startlinie.', 'Die Leitung liest eine Erklärung vor: „Die Regel, nach der eine App entscheidet, was du als Nächstes siehst.“', 'Wer zuerst am richtigen Schild ist, holt den Punkt.'], frage: 'Welchen Begriff könnt ihr jetzt jemandem erklären?' },
       ],
       leitung: {
-        einsatz: 'Szene vor „Fall 1: Die Bilder-Wette“. Move A ersetzt „Der Fall im Klassenchat“, Move B begleitet die Grenz-Linie zur KI. Die Challenge ist die Fake-Fabrik; Bilder-Wette und Begriffe-Blitz stehen bei den Sessions. Die Line ist die Teilen-Bremse.',
+        einsatz: 'Szene vor „Fall 1: Die Bilder-Wette“. Move A ersetzt „Der Fall im Klassenchat“, Move B begleitet die Grenz-Linie zur KI. Die Challenge ist die Fake-Fabrik; Bilder-Wette und Begriffe-Blitz stehen bei den Sessions. „Dein Satz“ ist die Teilen-Bremse.',
         loesungen: [
           'Szene: Das Bild weckt Schadenfreude und Empörung – starke Gefühle lassen teilen, bevor man prüft. Eine Richtigstellung ist langweiliger als das Fake.',
           'Move A: alle sechs Warnzeichen stecken drin. Prüfen: offizielle Seite der Stadt oder des Verkehrsbetriebs, eine zweite Quelle suchen, jemanden fragen.',

@@ -149,9 +149,9 @@ function baue(d: Heft): string {
         ${e.moves.map((m, k) => `<div class="bx mv"><div class="kp"><div class="b">${'ABC'[k]}</div><h3>${t(m.titel)}</h3><div class="me mo"><span>${esc(m.wie)}</span><span>${esc(m.zeit)}</span></div></div>
           <div class="kb">${m.kontext ? `<p class="kontext">${t(m.kontext)}</p>` : ''}${m.fragen.map(frage).join('')}</div></div>`).join('')}
         <div class="zwei"><div class="bx ak ch"><div class="lab mo"><span>Challenge</span><span>${esc(e.challenge.wie)}</span></div><h3>${t(e.challenge.titel)}</h3><p>${t(e.challenge.x)}</p></div>
-          <div class="bx ln"><div class="lab mo">Deine Line</div><h3>${t(e.line.titel)}</h3><p>${tp(e.line.x)}</p>${e.line.feld ? `<div class="feld" style="height:${e.line.feld}mm"></div>` : ''}${e.line.kaestchen ? `<div class="wk">${e.line.kaestchen.map((k) => `<span><i></i><b class="mo">${esc(k)}</b></span>`).join('')}</div>` : ''}${linien(e.line.linien ?? 0)}</div></div>
+          <div class="bx ln"><div class="lab mo">Dein Satz</div><h3>${t(e.line.titel)}</h3><p>${tp(e.line.x)}</p>${e.line.feld ? `<div class="feld" style="height:${e.line.feld}mm"></div>` : ''}${e.line.kaestchen ? `<div class="wk">${e.line.kaestchen.map((k) => `<span><i></i><b class="mo">${esc(k)}</b></span>`).join('')}</div>` : ''}${linien(e.line.linien ?? 0)}</div></div>
         <div class="wo"><span class="mo">Diese Woche</span><span>${t(e.woche)}</span></div>
-        <div class="vibe"><span class="mo">Track erledigt <i></i></span><span class="mo">Vibe: <i></i> lahm <i></i> okay <i></i> stark</span><span class="mo">Datum: ____________</span></div>
+        <div class="vibe"><span class="mo">Erledigt <i></i></span><span class="mo">Der Track war: <i></i> nichts für mich <i></i> okay <i></i> gut</span><span class="mo">Datum: ____________</span></div>
         ${e.hilfe ? `<div class="hilfe">${ic('phone')}<span>${t(d.hilfeText ?? 'Wenn dich etwas belastet: Sprich mit jemandem, dem du vertraust. Kanner-Jugendtelefon **116 111** · Notruf **112**')}</span></div>` : ''}
       </div></div>`,
     })
@@ -239,8 +239,8 @@ function baue(d: Heft): string {
         ${ab.posten.map((p) => `<div class="po"><span>1× ${esc(p)}</span><span><i></i> kann ich <i></i> übe ich noch</span></div>`).join('')}
         <div class="su"><span>Summe</span><span>mehr als vorher</span></div></div>
       <div class="bx">${ab.saetze.map((s) => `<div class="satz"><span><strong>${t(s)}</strong></span><div class="linie"></div></div>${linien(1)}`).join('')}</div>
-      <div class="bx ak shout"><h3>Shoutout</h3><p>Wer aus der Gruppe hat dich in diesen Wochen überrascht – und womit? Ein Name muss nicht drauf.</p>${linien(1)}</div>
-      <p class="mk" style="font-size:15pt;text-align:center">Nächste Ausgabe: gleicher Ort, neues Thema.</p>
+      <div class="bx ak shout"><h3>Respekt an</h3><p>Wer aus der Gruppe hat dich in diesen Wochen überrascht – und womit? Ein Name muss nicht drauf.</p>${linien(1)}</div>
+      <p class="mk" style="font-size:15pt;text-align:center">${t(ab.schluss ?? 'Nächste Ausgabe: gleicher Ort, neues Thema.')}</p>
     </div></div>`,
   })
 
@@ -262,7 +262,7 @@ function baue(d: Heft): string {
       <div><h2>Eine Einheit mit dem Heft</h2><div class="zl">
         <div style="flex:10">Ankommen<small>0–10</small></div><div style="flex:6">Brücke<small>10–15</small></div>
         <div class="h" style="flex:30">Hauptteil 1 · Heft<small>15–45 · Szene lesen, Fakten, Move A</small></div><div style="flex:15">Pause<small>45–60</small></div>
-        <div class="h" style="flex:25">Hauptteil 2 · Heft<small>60–85 · Challenge, Move B</small></div><div style="flex:11">Skill<small>85–95</small></div><div class="h" style="flex:9">Schluss<small>Line</small></div></div></div>
+        <div class="h" style="flex:25">Hauptteil 2 · Heft<small>60–85 · Challenge, Move B</small></div><div style="flex:11">Skill<small>85–95</small></div><div class="h" style="flex:9">Schluss<small>Dein Satz</small></div></div></div>
       <div class="sp2"><div class="kasten"><h2>Wenn es schwerfällt</h2><ul>${lt.hilfe.map((x) => `<li>${t(x)}</li>`).join('')}</ul></div>
         <div class="kasten"><h2>Wenn jemand mehr will</h2><ul>${lt.forder.map((x) => `<li>${t(x)}</li>`).join('')}</ul></div></div>
       <div class="kasten g"><h2>Wichtig für das Gespräch</h2><p>${t(lt.gespraech)}</p></div>

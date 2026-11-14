@@ -14,7 +14,7 @@ const d: Heft = {
       'In diesem Heft geht es um zwei Dinge, die fast jeden Ärger größer oder kleiner machen: **wie du etwas sagst** – und **wo bei dir Schluss ist**. Wer beides draufhat, muss seltener brüllen, zuschlagen oder abhauen. Und bekommt öfter, was er will.',
       'Die Szenen im Heft sind erfunden. Aber so oder so ähnlich ist alles schon passiert. Vielleicht erkennst du jemanden. Vielleicht dich.',
     ],
-    zitat: 'Kein Kinderkram. ==Kein Zeigefinger.==',
+    zitat: 'Sag, was ist. ==Und wo Schluss ist.==',
     so: [['Szene', 'Eine kurze Geschichte. Lies sie und sag, was du siehst.'], ['Fakten', 'Drei Dinge, die dahinterstecken. Mehr nicht.'], ['Mythos / Real', 'Was alle sagen – und was stimmt.'], ['Dein Move', 'Jetzt du: testen, entscheiden, eine Line schreiben.']],
     regeln: [
       '**Du schreibst nur, was du willst.** Niemand sammelt das Heft ein. Niemand liest mit.',
@@ -138,7 +138,7 @@ const d: Heft = {
         {"titel": "Zuhör-Killer", "wer": "zu zweit", "zeit": "10 Min.", "material": "1 Würfel je Paar", "schritte": ["A erzählt eine Minute vom besten Essen der Woche.", "B würfelt verdeckt und hört so schlecht zu, wie die Zahl sagt: **1** Handy · **2** unterbrechen · **3** von sich erzählen · **4** Tipps geben · **5** wegschauen, gähnen · **6** alles zum Witz machen.", "A rät die Zahl. Dann tauschen."], "frage": "Wie hat es sich angefühlt, so angehört zu werden?"},
       ],
       leitung: {
-        einsatz: 'Szene als Einstieg vor oder nach „Schritt vor, Schritt zurück“. Move A und B im Schritt „Ich-Botschaften würfeln“. Die Challenge ist das Umwandler-Spiel. Die Line bleibt privat.',
+        einsatz: 'Szene als Einstieg vor oder nach „Schritt vor, Schritt zurück“. Move A und B im Schritt „Ich-Botschaften würfeln“. Die Challenge ist das Umwandler-Spiel. „Dein Satz“ bleibt privat.',
         loesungen: [
           'Szene: Es kippt bei „Sie haben mich eh auf dem Kieker“ – ein Du-Satz als Gegenangriff. Auch „Schon wieder“ vor allen ist ein Angriff: Beide Seiten haben Anteil.',
           'Move A: Satz 1 und 3. Satz 2 ist ein Urteil, Satz 4 ein versteckter Vorwurf. Angriffswörter: immer, nie, typisch, schon wieder.',
@@ -248,7 +248,7 @@ const d: Heft = {
         {"titel": "Vier Stationen", "wer": "zu zweit", "zeit": "16 Min.", "material": "Stationsschilder: Körper, Sachen, Privates, Handy; Situationskarten", "schritte": ["An jeder Station zieht ihr eine Karte. A überschreitet die Grenze und hakt **einmal** nach („Stell dich nicht so an“).", "B setzt die Grenze: Körper, Stimme, kurzer Satz. Nach dem zweiten Stopp ist Schluss.", "Rollen tauschen, dann weiter zur nächsten Station."], "frage": "Was war schwerer – das Stopp oder das Nachhaken auszuhalten?"},
       ],
       leitung: {
-        einsatz: 'Move A läuft während der Stopp-Jury mit. Szene und Fakten danach. Die Line ersetzt „Mein Stopp-Satz“ auf dem Blatt; vorgelesen wird erst in der Abschlussrunde. Move B nach der Garten-Übung (Challenge): die andere Seite der Grenze.',
+        einsatz: 'Move A läuft während der Stopp-Jury mit. Szene und Fakten danach. „Dein Satz“ ersetzt „Mein Stopp-Satz“ auf dem Blatt; vorgelesen wird erst in der Abschlussrunde. Move B nach der Garten-Übung (Challenge): die andere Seite der Grenze.',
         loesungen: [
           'Szene: Beim ersten Mal lachen die Worte mit („haha“, „mal bitte“). Beim zweiten Mal sagen Körper, Stimme und Worte dasselbe.',
           'Move A: Stopp 3 bekommt fast immer die meisten Punkte. Die Worte waren dreimal gleich.',
