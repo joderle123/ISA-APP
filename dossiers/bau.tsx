@@ -64,6 +64,7 @@ function frage(f: Frage, i: number): string {
   if (f.raster) a += `<div class="raster" style="grid-template-columns:1fr repeat(${f.raster.spalten.length},auto)"><span></span>${f.raster.spalten.map((w) => `<b class="mo">${t(w)}</b>`).join('')}${f.raster.zeilen.map((z) => `<span>${t(z)}</span>${f.raster!.spalten.map(() => '<i></i>').join('')}`).join('')}</div>`
   if (f.preis) a += `<div class="preis"><span class="k mo">${t(f.preis.erste ?? 'Möglichkeit')}</span><span class="k mo">${t(f.preis.kopf[0])}</span><span class="k mo">${t(f.preis.kopf[1])}</span>${f.preis.optionen.map((o) => `<span class="o">${t(o)}</span><span></span><span></span>`).join('')}</div>`
   if (f.zahl) a += `<div class="zahl">${f.zahl.map((w) => `<div><span>${t(w)}</span><i></i></div>`).join('')}</div>`
+  if (f.gitter) a += `<div class="gitter">${f.gitter.map((w) => `<div>${t(w)}</div>`).join('')}</div>`
   if (f.striche) a += `<div class="striche">${f.striche.map((w) => `<span class="mo l">${t(w[0])}</span><div></div><span class="mo">${t(w[1])}</span>`).join('')}</div>`
   if (f.strich) a += `<div class="strich"><span class="mo">${t(f.strich[0])}</span><div></div><span class="mo">${t(f.strich[1])}</span></div>`
   if (f.feld) a += `<div class="feld" style="height:${f.feld}mm"></div>`
@@ -179,7 +180,7 @@ function baue(d: Heft): string {
   seiten.push({
     html: `<div>${kh('Kino', 'Ein Film für die Gruppe – und einer für danach', 'Popcorn erlaubt')}
     <div class="inhalt">
-      <div class="filme">${kino.filme.map((f, i) => `<div class="film"><div class="ab mo"><span>${i === 0 ? 'Hauptfilm' : 'Noch ein Tipp'}</span><span>${f.jahr} · ${f.fsk === null ? 'FSK prüfen' : 'FSK ' + f.fsk} · ${esc(f.laenge)}</span></div><h3>${t(f.titel)}</h3><p>${t(f.worum)}</p><div class="ach"><span class="mo">Achte auf</span><ul>${f.achte.map((x) => `<li>${t(x)}</li>`).join('')}</ul></div>${f.achtung ? `<div class="warn mo">${ic('alert-triangle')}<span>${t(f.achtung)}</span></div>` : ''}</div>`).join('')}</div>
+      <div class="filme${kino.filme.length === 1 ? ' eins' : ''}">${kino.filme.map((f, i) => `<div class="film"><div class="ab mo"><span>${i === 0 ? 'Hauptfilm' : 'Noch ein Tipp'}</span><span>${f.jahr} · ${f.fsk === null ? 'FSK prüfen' : 'FSK ' + f.fsk} · ${esc(f.laenge)}</span></div><h3>${t(f.titel)}</h3><p>${t(f.worum)}</p><div class="ach"><span class="mo">Achte auf</span><ul>${f.achte.map((x) => `<li>${t(x)}</li>`).join('')}</ul></div>${f.achtung ? `<div class="warn mo">${ic('alert-triangle')}<span>${t(f.achtung)}</span></div>` : ''}</div>`).join('')}</div>
       <div class="kz"><div class="gr">${tape('layout-grid', 'Kino-Bingo zum Hauptfilm', true)}
           <div class="bingo">${kino.bingo.map((x) => `<div>${t(x)}</div>`).join('')}</div><p class="mo" style="color:var(--g)">Entdeckt? Ankreuzen. Drei in einer Reihe: leise „Bingo“.</p></div>
         <div class="bx nach"><div class="tape mo" style="margin-bottom:2.4mm">${ic('message-circle')}Nach dem Abspann</div>${kino.nachher.map((x, i) => frage({ f: x, linien: 2 }, i)).join('')}</div></div>

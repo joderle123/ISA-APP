@@ -18,6 +18,8 @@ export interface Frage {
   preis?: { kopf: [string, string]; optionen: string[]; /** Überschrift der ersten Spalte (Standard: Möglichkeit) */ erste?: string }
   /** kleine Kästchen für eine Zahl (Punkte, Wertung) */
   zahl?: string[]
+  /** Gitter 3×3 mit Text und Platz für einen Namen (Bingo „Finde jemanden, der …“) */
+  gitter?: string[]
   /** mehrere Linien untereinander: [links, rechts] je Zeile */
   striche?: [string, string][]
   /** Linie von … bis …, Position markieren */

@@ -363,3 +363,8 @@ table.t td:first-child { font-weight: 700; white-space: nowrap; }
 .striche div { height: 0; border-top: .6mm solid var(--k); position: relative; }
 .striche div::before, .striche div::after { content: ''; position: absolute; top: -1.8mm; width: .6mm; height: 3mm; background: var(--k); }
 .striche div::before { left: 0; } .striche div::after { right: 0; }
+
+.gitter { margin-top: 1.6mm; display: grid; grid-template-columns: repeat(3, 1fr); border: .5mm solid var(--k); }
+.gitter div { border-right: .35mm solid var(--k); border-bottom: .35mm solid var(--k); padding: 1.2mm 1.8mm; min-height: 13.5mm; font-size: 8.8pt; line-height: 1.2; font-weight: 500; }
+.gitter div:nth-child(3n) { border-right: 0; } .gitter div:nth-last-child(-n+3) { border-bottom: 0; }
+.filme.eins { grid-template-columns: 1fr; }
