@@ -356,3 +356,4 @@ table.t td:first-child { font-weight: 700; white-space: nowrap; }
 .wk span { display: flex; flex-direction: column; align-items: center; gap: .8mm; }
 .wk i { width: 8mm; height: 8mm; border: .5mm solid var(--k); background: #fff; }
 .skala.reg .zahlen span { width: 6.4mm; }
+.cv .zl { text-align: left; } .cv .zl div span { text-align: left; }
