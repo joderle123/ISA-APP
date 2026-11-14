@@ -172,7 +172,7 @@ const d: Heft = {
           titel: 'Spaß, Streit oder Mobbing?', wie: 'zu zweit', zeit: '6 Min.',
           fragen: [
             { f: 'Kreuze an:', raster: { spalten: ['Spaß', 'Streit', 'Mobbing'], zeilen: ['Zwei Freunde ziehen sich mit Spitznamen auf. Beide lachen.', 'Nach einem Foul beschimpfen sich zwei. Am nächsten Tag ist es vorbei.', 'Seit Wochen macht eine Gruppe Geräusche, sobald Elias etwas sagt.', 'Über Samuels Schuhe gibt es täglich einen Witz. Er lacht mit – und geht allein.'] } },
-            { f: 'Die vier Merkmale von Mobbing – kreise ein:', kreis: ['wiederholt', 'laut', 'absichtlich', 'mehrere gegen einen', 'einmalig', 'kann sich nicht wehren'] },
+            { f: 'Die vier Merkmale von Mobbing – kreise ein:', kreis: ['wiederholt', 'laut', 'absichtlich', 'mehrere gegen einen', 'wehrlos'] },
           ],
         },
         {
@@ -180,7 +180,7 @@ const d: Heft = {
           fragen: [{ f: 'Sechs Stufen, vom Einfachen zum Mutigen. Wo stehst du?', raster: { spalten: ['mache ich', 'will ich üben', 'noch nicht'], zeilen: ['**1** Nicht mitlachen, nichts weiterleiten', '**2** Der Person zeigen: Ich bin auf deiner Seite', '**3** Andere dazuholen', '**4** Einem Erwachsenen Bescheid sagen', '**5** Online: Beweise sichern, melden', '**6** Direkt „Stopp“ sagen – wenn es sicher ist'] } }],
         },
       ],
-      challenge: { titel: 'Kipp die Bühne', wie: 'alle', x: 'Sechs Stühle, sechs Rollen: der Anfänger, der Weiterleiter, die Lacher, die Mitleser, die Verteidigerin. **Wer nimmt dem Täter das Publikum weg – und wie?**' },
+      challenge: { titel: 'Kipp die Bühne', wie: 'alle', x: 'Sechs Stühle, sechs Rollen – vom Anfänger bis zur Verteidigerin. **Wer nimmt dem Täter das Publikum weg – und wie?**' },
       line: { titel: 'Die Nachricht', x: 'Schreib Lea eine Nachricht. Eine, die du wirklich abschicken würdest.', linien: 1 },
       woche: 'Zeig einer Person, die oft allein steht, dass du sie siehst: **ein Hallo, ein Platz, eine Nachricht.**',
       hilfe: true,
