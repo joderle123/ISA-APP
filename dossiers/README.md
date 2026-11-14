@@ -54,3 +54,14 @@ Schriften in `schrift/`: Anton, Space Grotesk (SIL Open Font License), Permanent
 - Englisch nur dort, wo es der normale Name einer Sache ist (Track, Challenge, Hot Take, Clip).
 - Nicht ständig betonen, dass das Heft „nicht wie Schule“ ist. Höchstens einmal je Ausgabe.
 - Ernst nehmen statt anbiedern: echte Themen, kurze Sätze, Humor ohne Zeigefinger. Mitmachen ist immer freiwillig.
+
+## SOLO – Hefte für die Bezugszeit (Einzelarbeit)
+
+- Inhalt: `solo/sNN.ts` (Aufbau `solo-typen.ts`), Renderer `solo-bau.ts`. Jede Seite ist eine Liste von Bausteinen
+  (Text, Deal, Aufgaben, Fall, Fakten, Video, Marker-Frage, Experiment, Karten, drei Tiefen, Logbuch).
+- Bauen: `npx tsx --tsconfig tsconfig.scripts.json dossiers/bau.tsx s02 && node dossiers/pdf.cjs s02` → `offline/solo/`.
+- Verzeichnis für die Toolbox: `npx tsx --tsconfig tsconfig.scripts.json dossiers/bau.tsx solo-index` schreibt
+  `src/data/solo.json` (Seite „Bezugszeit“ im Skills-Kurs, mit Quiz zum Spielen). Danach die Toolbox neu bauen.
+- Neues Heft im Hub: in `Klassebuch/hub-apps.js` bei der Toolbox einen `zusatz`-Eintrag für das PDF ergänzen.
+- Grundidee: Der Jugendliche ist der Profi („Schon mal gehört?“), die Bezugsperson macht mit (Duell mit eigenen
+  Antworten), jede Stunde endet mit einem Experiment und einer Wette. Themenwahl über die Landkarte (#01).

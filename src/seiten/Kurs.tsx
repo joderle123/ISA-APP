@@ -11,6 +11,7 @@ import type { Abschnitt, Einheit, Phase, Schritt } from '../kurs/typen'
 import { einheitById, einheitenVon, geplanteEinheiten, grundlagen, jahrByNr, jokerVon, kursjahre, modulById, moduleVon } from '../data/kurs'
 import { blattById } from '../data/blaetter'
 import { realTalkHeft, realTalkLink, REAL_TALK_JAHRESPLAN } from '../data/realtalk'
+import { BezugszeitSeite } from './Bezugszeit'
 import type { NummeriertesBlatt } from '../blatt/typen'
 import { heute, neueGruppe, useKursStand, type Gruppe } from '../kurs/fortschritt'
 import { loadPdfModule } from '../lib/loadPdf'
@@ -67,7 +68,7 @@ function schrittZeiten(e: Einheit): { von: number; bis: number }[] {
 
 // --- Ansicht aus dem Hash --------------------------------------------------------------
 
-type Ansicht = { art: 'uebersicht' } | { art: 'einheit'; id: string } | { art: 'grundlagen' }
+type Ansicht = { art: 'uebersicht' } | { art: 'einheit'; id: string } | { art: 'grundlagen' } | { art: 'bezugszeit' }
 
 function ansichtAusHash(hash: string): Ansicht | null {
   const h = hash.replace(/^#\/?/, '')
@@ -75,12 +76,13 @@ function ansichtAusHash(hash: string): Ansicht | null {
   const k = new URLSearchParams(h).get('kurs')
   if (k === null) return null
   if (k === 'grundlagen') return { art: 'grundlagen' }
+  if (k === 'bezugszeit') return { art: 'bezugszeit' }
   if (einheitById.has(k)) return { art: 'einheit', id: k }
   return { art: 'uebersicht' }
 }
 
 function hashVon(a: Ansicht): string {
-  return a.art === 'einheit' ? 'kurs=' + a.id : a.art === 'grundlagen' ? 'kurs=grundlagen' : 'kurs'
+  return a.art === 'einheit' ? 'kurs=' + a.id : a.art === 'grundlagen' ? 'kurs=grundlagen' : a.art === 'bezugszeit' ? 'kurs=bezugszeit' : 'kurs'
 }
 
 /** Von der Kurs-Seite gesetzt: stellt die Ansicht direkt um (für gehe(), wenn der Hash schon stimmt). */
@@ -1463,6 +1465,7 @@ export function Kurs({ aktiv, bew }: { aktiv: boolean; bew: Bewertungen }) {
   let inhalt: ReactNode
   if (!gruppe) inhalt = null
   else if (ansicht.art === 'grundlagen') inhalt = <GrundlagenSeite aktiv={aktiv} />
+  else if (ansicht.art === 'bezugszeit') inhalt = <BezugszeitSeite onZurueck={() => gehe({ art: 'uebersicht' })} />
   else if (einheit) inhalt = <EinheitSeite key={einheit.id} e={einheit} gruppe={gruppe} gruppeAendern={gruppeAendern} bew={bew} aktiv={aktiv} />
   else
     inhalt = (
@@ -1476,6 +1479,10 @@ export function Kurs({ aktiv, bew }: { aktiv: boolean; bew: Bewertungen }) {
           </div>
           <div className="flex flex-wrap items-center gap-2">
             {gruppenWahl}
+            <button type="button" className="btn" onClick={() => gehe({ art: 'bezugszeit' })}>
+              <Icon name="user" />
+              Bezugszeit (SOLO)
+            </button>
             <button type="button" className="btn" onClick={() => gehe({ art: 'grundlagen' })}>
               <Icon name="book" />
               Grundlagen und Methoden

@@ -2773,6 +2773,340 @@
     margin-left: 4px;
     vertical-align: middle;
   }
+  /* Bezugszeit (SOLO) */
+  .bz-intro {
+    margin-top: 8px;
+    max-width: 72ch;
+    font-size: var(--fs-base, 1rem);
+    line-height: 1.5;
+    color: var(--ink-2);
+  }
+  .bz-faden {
+    display: grid;
+    gap: 8px;
+    margin: 18px 0 6px;
+    padding: 0;
+    list-style: none;
+  }
+  @media (min-width: 760px) {
+    .bz-faden {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  .bz-faden li {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    padding: 10px 12px;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: var(--surface);
+    font-size: var(--fs-sm);
+    line-height: 1.45;
+  }
+  .bz-faden b {
+    flex: none;
+    display: grid;
+    place-items: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 6px;
+    background: #111;
+    color: #fff;
+    font-size: var(--fs-sm);
+  }
+  .bz-h2 {
+    margin: 22px 0 10px;
+    font-size: var(--fs-lg, 1.125rem);
+    font-weight: 700;
+    color: var(--ink);
+  }
+  .bz-liste {
+    display: grid;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  @media (min-width: 900px) {
+    .bz-liste {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .bz-karte {
+    display: flex;
+    overflow: hidden;
+    border: 2px solid #111;
+    border-radius: 10px;
+    background: var(--surface);
+    box-shadow: 4px 4px 0 #111;
+  }
+  .bz-farbe {
+    flex: none;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 58px;
+    padding-top: 14px;
+    border-right: 2px solid #111;
+    font-weight: 800;
+    font-size: 1.05rem;
+    color: #111;
+  }
+  .bz-inhalt {
+    min-width: 0;
+    padding: 12px 14px 14px;
+  }
+  .bz-kicker {
+    font-size: var(--fs-xs);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .bz-karte h3 {
+    font-size: 1.35rem;
+    font-weight: 800;
+    line-height: 1.15;
+    color: #111;
+  }
+  .bz-headline {
+    margin-top: 2px;
+    font-size: var(--fs-sm);
+    font-style: italic;
+    color: var(--ink-2);
+  }
+  .bz-wann {
+    margin-top: 8px;
+    font-size: var(--fs-sm);
+    line-height: 1.45;
+    color: var(--ink-2);
+  }
+  .bz-knoepfe {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 10px;
+  }
+  .bz-knoepfe a.btn {
+    text-decoration: none;
+  }
+  .bz-hinweis {
+    margin-top: 18px;
+    max-width: 72ch;
+    font-size: var(--fs-xs);
+    color: var(--muted);
+  }
+  /* Quiz */
+  dialog.sq {
+    width: min(720px, calc(100vw - 24px));
+    max-height: calc(100vh - 24px);
+    padding: 0;
+    border: 3px solid #111;
+    border-radius: 12px;
+    background: #fff;
+    color: #111;
+    overflow: auto;
+  }
+  .sq-kopf {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 14px 18px;
+    border-bottom: 3px solid #111;
+  }
+  .sq-kicker {
+    font-size: var(--fs-xs);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .sq-kopf h2 {
+    font-size: 1.6rem;
+    font-weight: 800;
+    line-height: 1.1;
+  }
+  .sq-zu {
+    display: grid;
+    place-items: center;
+    width: 36px;
+    height: 36px;
+    border: 2px solid #111;
+    border-radius: 8px;
+    background: #fff;
+  }
+  .sq-zu svg {
+    width: 18px;
+    height: 18px;
+  }
+  .sq-start,
+  .sq-ende,
+  .sq-spiel {
+    display: grid;
+    gap: 14px;
+    padding: 18px;
+  }
+  .sq-start p,
+  .sq-ende p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  .sq-modi {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .sq-modus {
+    flex: 1 1 200px;
+    display: grid;
+    gap: 2px;
+    padding: 14px 16px;
+    border: 2px solid #111;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 4px 4px 0 #111;
+    text-align: left;
+  }
+  .sq-modus strong {
+    font-size: 1.2rem;
+  }
+  .sq-modus span {
+    font-size: var(--fs-sm);
+    color: var(--ink-2);
+  }
+  .sq-leiste {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    color: var(--ink-2);
+  }
+  .sq-stand {
+    display: flex;
+    gap: 8px;
+  }
+  .sq-stand div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 10px;
+    border: 2px solid #111;
+    border-radius: 8px;
+    color: #111;
+  }
+  .sq-stand div.dran {
+    background: #111;
+    color: #fff;
+  }
+  .sq-stand.gross div {
+    flex: 1;
+    justify-content: space-between;
+    padding: 10px 14px;
+    font-size: 1.1rem;
+  }
+  .sq-frage {
+    font-size: 1.35rem;
+    font-weight: 800;
+    line-height: 1.25;
+  }
+  .sq-dran {
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    color: var(--ink-2);
+  }
+  .sq-antworten {
+    display: grid;
+    gap: 10px;
+  }
+  @media (min-width: 600px) {
+    .sq-antworten {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  .sq-a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-height: 68px;
+    padding: 12px 14px;
+    border: 2px solid #111;
+    border-radius: 10px;
+    color: #111;
+    font-size: 1.02rem;
+    font-weight: 700;
+    line-height: 1.25;
+    text-align: left;
+  }
+  .sq-a.f0 {
+    background: #ff6b5e;
+  }
+  .sq-a.f1 {
+    background: #5fa8ff;
+  }
+  .sq-a.f2 {
+    background: #ffd447;
+  }
+  .sq-a.f3 {
+    background: #5fd68b;
+  }
+  .sq-a.blass {
+    background: #f1f1ee;
+    color: #5c5c5c;
+  }
+  .sq-a.richtig {
+    outline: 4px solid #111;
+    outline-offset: 2px;
+  }
+  .sq-a.falsch .sq-text {
+    text-decoration: line-through;
+  }
+  .sq-form {
+    flex: none;
+    font-size: 1.2rem;
+  }
+  .sq-text {
+    flex: 1;
+    min-width: 0;
+  }
+  .sq-wer {
+    flex: none;
+    padding: 2px 8px;
+    border-radius: 6px;
+    background: #111;
+    color: #fff;
+    font-size: var(--fs-xs);
+    text-decoration: none;
+  }
+  .sq-warum {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 12px 14px;
+    border: 2px solid #111;
+    border-radius: 10px;
+    background: #f7f6f1;
+  }
+  .sq-warum p {
+    flex: 1 1 280px;
+    font-size: 1rem;
+    line-height: 1.45;
+  }
+  .sq-ende h3 {
+    font-size: 1.6rem;
+    font-weight: 800;
+  }
+  .sq-frage-danach {
+    padding: 12px 14px;
+    border-left: 5px solid #111;
+    background: #f7f6f1;
+    font-weight: 600;
+  }
   .ku-mini-balken {
     flex: 0 0 64px;
     height: 5px;

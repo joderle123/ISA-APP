@@ -1,0 +1,378 @@
+[
+ {
+  "id": "s00",
+  "nr": "00",
+  "reihe": "Start",
+  "thema": "Start",
+  "headline": "Wer sitzt hier eigentlich?",
+  "farbe": "#FFB21A",
+  "datei": "Solo-00-Start",
+  "wann": [
+   "Erste Bezugszeit mit einem neuen Jugendlichen.",
+   "Als Neustart, wenn die Beziehung festgefahren ist oder die Bezugsperson gewechselt hat.",
+   "Bei Jugendlichen mit viel Helfer-Erfahrung, die Standardfragen auswendig kennen."
+  ],
+  "ziel": "Der Jugendliche erlebt in der ersten Stunde zwei Dinge: Er bestimmt mit – und der Erwachsene hält, was er sagt. Mehr muss diese Stunde nicht leisten.",
+  "clips": [],
+  "quiz": []
+ },
+ {
+  "id": "s01",
+  "nr": "01",
+  "reihe": "Start",
+  "thema": "Landkarte",
+  "headline": "Worum soll es hier gehen?",
+  "farbe": "#2FD3E6",
+  "datei": "Solo-01-Landkarte",
+  "wann": [
+   "Nach dem Start-Heft, sobald ein Mindestmaß an Vertrauen da ist.",
+   "Erneut nach sechs bis acht Wochen: Karte neu ausfüllen und vergleichen.",
+   "Wenn die Bezugszeit beliebig geworden ist und ein gemeinsamer Plan fehlt."
+  ],
+  "ziel": "Der Jugendliche wählt selbst, woran gearbeitet wird, und benennt ein eigenes Ziel in seinen Worten. Daraus entsteht der rote Faden für die nächsten Wochen.",
+  "clips": [],
+  "quiz": []
+ },
+ {
+  "id": "s02",
+  "nr": "02",
+  "reihe": "Thema",
+  "thema": "Grenzen",
+  "headline": "Mauer oder offenes Tor?",
+  "farbe": "#FF5A36",
+  "datei": "Solo-02-Grenzen",
+  "wann": [
+   "Sagt zu allem Ja und explodiert später – oder zieht sich zurück.",
+   "Lässt niemanden an sich heran; jede Nähe wird abgewehrt.",
+   "Überschreitet selbst Grenzen: Nähe, Sachen, Sprüche.",
+   "Nach einem Vorfall, bei dem ein Nein überhört wurde."
+  ],
+  "ziel": "Der Jugendliche erkennt sein eigenes Muster (zu weich, zu hart, je nach Person) als sinnvolle Schutzlösung – und probiert ein kleines Nein aus, das nichts kostet.",
+  "clips": [
+   {
+    "titel": "Sozialexperiment: Wie viel Nähe verträgt der Mensch?",
+    "kanal": "Quarks",
+    "url": "https://www.youtube.com/watch?v=wEALzPr7hBo",
+    "dauer": "die ersten 5 Min."
+   }
+  ],
+  "quiz": [
+   {
+    "f": "Was ist eine Grenze?",
+    "o": [
+     "eine Regel für andere",
+     "der Punkt, an dem es für mich nicht mehr okay ist",
+     "ein Zeichen von Schwäche",
+     "etwas, das nur Erwachsene haben"
+    ],
+    "r": 1,
+    "warum": "Sie gehört zu einer Person, nicht zu einer Hausordnung."
+   },
+   {
+    "f": "Woran merkt man die eigene Grenze meistens zuerst?",
+    "o": [
+     "am Körper",
+     "an den Worten",
+     "an der Uhrzeit",
+     "gar nicht"
+    ],
+    "r": 0,
+    "warum": "Bauch, Kiefer, Schritt zurück – vor dem Gedanken."
+   },
+   {
+    "f": "„Ich überleg’s mir“ ist …",
+    "o": [
+     "feige",
+     "unhöflich",
+     "eine erlaubte Antwort",
+     "dasselbe wie Ja"
+    ],
+    "r": 2,
+    "warum": "Zeit kaufen ist eine Grenze."
+   },
+   {
+    "f": "Muss man ein Nein begründen?",
+    "o": [
+     "ja, immer",
+     "nur bei Erwachsenen",
+     "nein",
+     "nur schriftlich"
+    ],
+    "r": 2,
+    "warum": "Erklären darf man. Müssen nicht."
+   },
+   {
+    "f": "Jemand sagt Ja, schaut weg und wird still. Das ist …",
+    "o": [
+     "ein klares Ja",
+     "wahrscheinlich kein echtes Ja",
+     "egal",
+     "ein Kompliment"
+    ],
+    "r": 1,
+    "warum": "Worte und Körper passen nicht zusammen – nachfragen."
+   },
+   {
+    "f": "Wer immer Ja sagt, …",
+    "o": [
+     "hat keine Probleme",
+     "ist bei allen beliebt",
+     "zahlt oft selbst den Preis",
+     "braucht keine Grenzen"
+    ],
+    "r": 2,
+    "warum": "Siehe Chloé und die Schranktür."
+   },
+   {
+    "f": "Eine Mauer um sich herum …",
+    "o": [
+     "schützt – und hält auch die Guten draußen",
+     "ist immer die beste Lösung",
+     "kostet nichts",
+     "haben nur Schwache"
+    ],
+    "r": 0,
+    "warum": "Beides stimmt gleichzeitig."
+   },
+   {
+    "f": "Du hörst ein Nein. Was jetzt?",
+    "o": [
+     "weiterfragen, bis es ein Ja wird",
+     "beleidigt sein",
+     "„Okay“ sagen",
+     "so tun, als hättest du nichts gehört"
+    ],
+    "r": 2,
+    "warum": "Der schwerste und kürzeste Satz."
+   }
+  ]
+ },
+ {
+  "id": "s03",
+  "nr": "03",
+  "reihe": "Thema",
+  "thema": "Scrollen",
+  "headline": "Was fühlst du in der Sekunde davor?",
+  "farbe": "#2EE6A8",
+  "datei": "Solo-03-Scrollen",
+  "wann": [
+   "Übermüdet; das Handy läuft bis tief in die Nacht.",
+   "Gereizt oder leer, wenn das Handy weg ist.",
+   "Vergleicht sich; die Stimmung fällt nach dem Scrollen.",
+   "Dauerstreit um Handyregeln zu Hause oder in der Wohngruppe."
+  ],
+  "ziel": "Der Jugendliche untersucht sein eigenes Verhalten wie ein Forscher – mit eigenen Zahlen – und entdeckt, welches Gefühl er mit dem Handy regelt. Ein Verbot ist nicht das Ziel.",
+  "clips": [
+   {
+    "titel": "Social Media: Warum kann ich nicht aufhören mit Binge-Scrolling?",
+    "kanal": "Quarks Dimension Ralph",
+    "url": "https://www.youtube.com/watch?v=_V_VBrW3ZuY",
+    "dauer": "die ersten 5 Min."
+   }
+  ],
+  "quiz": [
+   {
+    "f": "Warum fesselt ein Feed so stark?",
+    "o": [
+     "weil alles darin gut ist",
+     "weil die Treffer unregelmäßig kommen",
+     "weil er so teuer war",
+     "weil er kurz ist"
+    ],
+    "r": 1,
+    "warum": "Unregelmäßige Belohnung – wie am Spielautomaten."
+   },
+   {
+    "f": "Was fehlt einem Feed, das ein Buch hat?",
+    "o": [
+     "Bilder",
+     "ein Ende",
+     "Buchstaben",
+     "ein Titel"
+    ],
+    "r": 1,
+    "warum": "Ohne Stopp-Stelle hört man später auf."
+   },
+   {
+    "f": "Womit verdienen kostenlose Apps ihr Geld?",
+    "o": [
+     "mit Spenden",
+     "mit gar nichts",
+     "mit deiner Zeit und deinen Daten",
+     "mit Steuern"
+    ],
+    "r": 2,
+    "warum": "Mehr Zeit im Feed heißt mehr Werbung."
+   },
+   {
+    "f": "Du weißt, dass ein Bild gestellt ist. Wirkt der Vergleich trotzdem?",
+    "o": [
+     "nein, nie",
+     "ja, oft",
+     "nur bei Kindern",
+     "nur nachts"
+    ],
+    "r": 1,
+    "warum": "Wissen schützt nicht vor dem Gefühl."
+   },
+   {
+    "f": "Wonach greifen Leute oft zum Handy?",
+    "o": [
+     "nach einem miesen Gefühl",
+     "nach dem Sport",
+     "nur nach dem Essen",
+     "nie ohne Grund"
+    ],
+    "r": 0,
+    "warum": "Langeweile, Leere, Druck – das Handy betäubt schnell."
+   },
+   {
+    "f": "Was bewirkt Schwarz-Weiß auf dem Handy?",
+    "o": [
+     "spart nur Akku",
+     "macht Apps weniger verlockend",
+     "macht das Handy schneller",
+     "gar nichts"
+    ],
+    "r": 1,
+    "warum": "Farbe ist ein Köder. In einer Studie sank die Nutzung deutlich."
+   },
+   {
+    "f": "Was hält besser: ein Verbot oder ein eigener Plan?",
+    "o": [
+     "das Verbot",
+     "der eigene Plan",
+     "beides gleich",
+     "nichts davon"
+    ],
+    "r": 1,
+    "warum": "Konkrete Wenn-dann-Pläne funktionieren besser als Vorsätze."
+   },
+   {
+    "f": "Gibt es „Social-Media-Sucht“ als offizielle Diagnose?",
+    "o": [
+     "ja, seit Jahren",
+     "nein – bisher nur für Gaming",
+     "nur für Erwachsene",
+     "nur in Europa"
+    ],
+    "r": 1,
+    "warum": "Die WHO führt die Computerspielstörung, nicht das Scrollen."
+   }
+  ]
+ },
+ {
+  "id": "s04",
+  "nr": "04",
+  "reihe": "Thema",
+  "thema": "Zocken",
+  "headline": "Was gibt dir das Spiel, das sonst keiner gibt?",
+  "farbe": "#B79CFF",
+  "datei": "Solo-04-Zocken",
+  "wann": [
+   "Zocken ist das Hauptthema im Leben des Jugendlichen – als Stärke oder als Streitpunkt.",
+   "Schlaf, Schule oder Kontakte bleiben wegen des Spiels liegen.",
+   "Dauerstreit um Spielzeiten; der Jugendliche fühlt sich nur kontrolliert.",
+   "Auch ohne Problem: als Zugang zu einem Jugendlichen, der sonst wenig erzählt."
+  ],
+  "ziel": "Der Jugendliche erlebt, dass sein Spiel ernst genommen wird, benennt selbst, was es ihm gibt – und prüft ehrlich, ob er noch entscheidet, wann Schluss ist.",
+  "clips": [
+   {
+    "titel": "Gaming & Psyche: Darum kann Spielen heilsam für dich sein",
+    "kanal": "Terra Xplore",
+    "url": "https://www.youtube.com/watch?v=6vGY6Oyxb8c",
+    "dauer": "die ersten 6 Min."
+   }
+  ],
+  "quiz": [
+   {
+    "f": "Warum fühlen sich gute Spiele so gut an?",
+    "o": [
+     "Man wird besser, entscheidet selbst und gehört dazu.",
+     "Sie sind bunt.",
+     "Sie sind laut.",
+     "Sie dauern lange."
+    ],
+    "r": 0,
+    "warum": "Können, Selbstbestimmung, Zugehörigkeit – drei Grundbedürfnisse."
+   },
+   {
+    "f": "Wozu gibt es tägliche Login-Belohnungen?",
+    "o": [
+     "als Geschenk",
+     "damit du jeden Tag wiederkommst",
+     "aus Versehen",
+     "für die Grafik"
+    ],
+    "r": 1,
+    "warum": "Wer eine Serie hat, will sie nicht reißen lassen."
+   },
+   {
+    "f": "Kisten mit Zufallsinhalt funktionieren wie …",
+    "o": [
+     "ein Sparbuch",
+     "Glücksspiel",
+     "ein Lexikon",
+     "eine Schulnote"
+    ],
+    "r": 1,
+    "warum": "Unregelmäßige Belohnung gegen Geld."
+   },
+   {
+    "f": "Ist jemand süchtig, weil er viele Stunden spielt?",
+    "o": [
+     "ja, ab drei Stunden",
+     "ja, ab fünf Stunden",
+     "nein – die Stunden allein sagen es nicht",
+     "ja, immer"
+    ],
+    "r": 2,
+    "warum": "Es zählt, ob man die Kontrolle verliert und anderes aufgibt."
+   },
+   {
+    "f": "Was gehört zu einer Computerspielstörung?",
+    "o": [
+     "ein hoher Rang",
+     "Weiterspielen trotz deutlicher Schäden",
+     "ein teurer PC",
+     "viele Freunde im Spiel"
+    ],
+    "r": 1,
+    "warum": "Dazu: Kontrollverlust und Vorrang vor allem anderen – über Monate."
+   },
+   {
+    "f": "Führt die Weltgesundheitsorganisation die Computerspielstörung als Diagnose?",
+    "o": [
+     "nein",
+     "ja",
+     "nur für Kinder",
+     "nur in den USA"
+    ],
+    "r": 1,
+    "warum": "In der ICD-11 als „Gaming Disorder“."
+   },
+   {
+    "f": "Was hilft am ehesten, rechtzeitig aufzuhören?",
+    "o": [
+     "auf Müdigkeit warten",
+     "vorher festlegen, wann Schluss ist",
+     "schneller spielen",
+     "gar nichts"
+    ],
+    "r": 1,
+    "warum": "Die Entscheidung fällt vor dem Einloggen, nicht mittendrin."
+   },
+   {
+    "f": "Jemand spielt, um etwas nicht zu fühlen. Was ist das Spiel dann?",
+    "o": [
+     "Sport",
+     "eine Betäubung",
+     "ein Beruf",
+     "Zufall"
+    ],
+    "r": 1,
+    "warum": "Dann lohnt die Frage: Wovor ist dort Ruhe?"
+   }
+  ]
+ }
+]
