@@ -423,7 +423,7 @@ const d: Solo = {
       "Seite 4: Der Stopp-Test braucht eine zweite Person, die den Zeitpunkt kennt – am besten wählt der Jugendliche sie selbst.",
       "Für Jugendliche, die nicht spielen: Das Heft funktioniert auch mit Serien oder Kurzvideos."
     ],
-    "achtung": "Erzählt der Jugendliche selbst von mehreren „oft“ über viele Monate, bei, Schulabbruch oder völligem Rückzug: fachliche Abklärung anregen (Kinder- und Jugendpsychiatrie, Suchtberatung). Auf Geld achten (Käufe im Spiel, Schulden, fremde Karten) und auf Kontakte: Erwachsene, die Geschenke machen oder in private Chats wechseln wollen, sind ein Grund, sofort die zuständige Leitung (Responsable) einzubeziehen. Spielen als Flucht vor einer unerträglichen Lage zu Hause ist kein Spielproblem.",
+    "achtung": "Erzählt der Jugendliche selbst von mehreren „oft“ über viele Monate, oder bei Schulabbruch oder völligem Rückzug: fachliche Abklärung anregen (Kinder- und Jugendpsychiatrie, Suchtberatung). Auf Geld achten (Käufe im Spiel, Schulden, fremde Karten) und auf Kontakte: Erwachsene, die Geschenke machen oder in private Chats wechseln wollen, sind ein Grund, sofort die zuständige Leitung (Responsable) einzubeziehen. Spielen als Flucht vor einer unerträglichen Lage zu Hause ist kein Spielproblem.",
     "extra": [
       {
         "titel": "Computerspiele-Sucht und die Verkaufs-Tricks der Hersteller",

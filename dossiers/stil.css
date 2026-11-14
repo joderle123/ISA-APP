@@ -495,3 +495,18 @@ table.t td:first-child { font-weight: 700; white-space: nowrap; }
 .ak-map b { font-family: 'Anton'; font-weight: 400; font-size: 20pt; line-height: 1; } .ak-map .ic { width: 10mm; height: 10mm; } .ak-map span:not(.ic) { font-family: 'Anton'; text-transform: uppercase; font-size: 12.4pt; line-height: 1.08; }
 .ak-map small { color: var(--g); margin-top: auto; } .ak-map i { position: absolute; right: 2.4mm; top: 2.4mm; }
 .akt .kk { gap: 5mm; } .akt .clip .qr { width: 34mm; height: 34mm; } .akt .clip h3 { font-size: 15pt; } .akt .clip .fr2 { font-size: 12pt; }
+/* Aktions-Seiten mit viel Platz: alles eine Stufe größer */
+.ak.luft .ak-st { gap: 3.6mm; } .ak.luft .ak-st li { font-size: 14.6pt; } .ak.luft .ak-st li::before { width: 9mm; height: 9mm; line-height: 8mm; font-size: 15pt; }
+.ak.luft .ak-z { padding: 6mm 6mm; } .ak.luft .frage .ft { font-size: 13.4pt; } .ak.luft .frage { margin-top: 4.5mm; } .ak.luft .frage:first-child { margin-top: 0; }
+.ak.luft .kreuze, .ak.luft .raster, .ak.luft .kreise span, .ak.luft .ak-wa > div, .ak.luft .ak-da > div, .ak.luft .ak-ko .w { font-size: 13.4pt; }
+.ak.luft .raster { gap: 3mm 7mm; } .ak.luft .kreuze { gap: 3.4mm 8mm; } .ak.luft .kreise { gap: 3.2mm; } .ak.luft .kreise span { padding: 1.6mm 4.4mm; }
+.ak.luft .kreuze i, .ak.luft .raster i { width: 6mm; height: 6mm; }
+.ak.luft .ak-tb td { height: 17mm; } .ak.luft .ak-tb { font-size: 12.4pt; } .ak.luft .ak-tb th { font-size: 9.6pt; padding: 2mm 1mm; }
+.ak.luft .ak-we > div { font-size: 12.6pt; } .ak.luft .ak-we { gap: 3mm 8mm; } .ak.luft .ak-we i { height: 12mm; }
+.ak.luft .ak-wa { gap: 4mm 8mm; } .ak.luft .ak-wa > div { padding-bottom: 3mm; } .ak.luft .ak-da { gap: 3.4mm; } .ak.luft .ak-da > div { padding-bottom: 3mm; }
+.ak.luft .ak-co p { font-size: 12pt; padding: 3mm 3mm 4mm; } .ak.luft .ak-aha div { font-size: 14.4pt; } .ak.luft .ak-aha { padding: 5.5mm 6mm; }
+.ak.luft .skala .zahlen span { width: 9mm; height: 8mm; font-size: 10pt; } .ak.luft .skala { gap: 3mm 4mm; } .ak.luft .skala > .mo { font-size: 8.6pt; }
+.ak.luft .ak-ko .w { gap: 4.4mm; } .ak.luft .ak-so .fig { width: 46mm; height: 58mm; }
+.ak-leg { display: flex; gap: 8mm; margin-bottom: 2.6mm; } .ak-leg span { display: flex; align-items: center; gap: 2mm; } .ak-leg i { width: 7mm; height: 5mm; border: .5mm solid var(--k); background: #fff; } .ak-leg i.g { border-style: dashed; }
+.ak-ri { display: flex; gap: 8mm; align-items: center; } .ak-ri svg { flex: none; width: 96mm; height: 96mm; } .ak-ri .w { flex: 1; display: flex; flex-direction: column; gap: 4mm; font-size: 12pt; line-height: 1.3; }
+.ak-ri .w b { display: block; font-family: 'Anton'; font-weight: 400; text-transform: uppercase; font-size: 13pt; }

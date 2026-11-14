@@ -375,6 +375,7 @@ const SKRIPT = `document.fonts.ready.then(function(){
   function frei(el){var cs=getComputedStyle(el),k=[].slice.call(el.children),h=0;k.forEach(function(c){h+=c.getBoundingClientRect().height});
     return el.clientHeight-parseFloat(cs.paddingTop)-h-(k.length-1)*parseFloat(cs.rowGap||0)}
   [].forEach.call(document.querySelectorAll('.inhalt.rs,.inhalt.ls,.inhalt.sol'),function(el){if(frei(el)>68)el.classList.add('luft')});
+  [].forEach.call(document.querySelectorAll('.inhalt.ak'),function(el){if(frei(el)>300)el.classList.add('luft')});
   document.body.dataset.fertig='1'})`
 
 const ziel = join(HIER, 'aus')

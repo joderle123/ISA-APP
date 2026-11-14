@@ -12,6 +12,8 @@ export type Zone =
   | { art: 'werte'; kopf: [string, string]; zeilen: string[]; von?: string; bis?: string }
   /** Körper-Umriss zum Anmalen und Wörter zum Ankreuzen */
   | { art: 'koerper'; woerter: string[] }
+  /** drei Ringe um einen Punkt (innen, Mitte, außen) zum Hineinschreiben */
+  | { art: 'ringe'; ringe: [string, string, string] }
   /** kurze Geschichte in Bildern: Icon und ein Satz je Feld */
   | { art: 'comic'; bilder: [string, string][] }
   /** Auswahl mit Icons und Kästchen */

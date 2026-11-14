@@ -17,9 +17,12 @@ export function baueAktion(d: AktionsHeft, h: Helfer): string {
         return `<div class="ak-z"><table class="ak-tb"><tr>${z.kopf.map((k) => `<th>${t(k)}</th>`).join('')}</tr>${z.zeilen.map((r) => `<tr><td>${t(r)}</td>${z.kopf.slice(1).map(() => '<td></td>').join('')}</tr>`).join('')}</table></div>`
       case 'werte':
         return `<div class="ak-z"><div class="ak-th"><span class="mo">0 · ${esc(z.von ?? 'gar nicht')}</span><div>${Array.from({ length: 11 }, (_, i) => `<i style="opacity:${0.12 + i * 0.088}"></i>`).join('')}</div><span class="mo">10 · ${esc(z.bis ?? 'extrem')}</span></div>
-          <div class="ak-we"><div class="k"><span></span><b class="mo">${esc(z.kopf[0])}</b><b class="mo">${esc(z.kopf[1])}</b></div>${z.zeilen.map((r) => `<div><span>${t(r)}</span><i></i><i></i></div>`).join('')}</div></div>`
+          <div class="ak-leg mo"><span><i></i>${esc(z.kopf[0])}</span><span><i class="g"></i>${esc(z.kopf[1])}</span></div><div class="ak-we">${z.zeilen.map((r) => `<div><span>${t(r)}</span><i></i><i></i></div>`).join('')}</div></div>`
       case 'koerper':
         return `<div class="ak-z ak-ko"><div class="fig">${KOERPER}</div><div class="w">${z.woerter.map((w) => `<span><i></i>${t(w)}</span>`).join('')}</div></div>`
+      case 'ringe':
+        return `<div class="ak-z ak-ri"><svg viewBox="0 0 200 200"><circle cx="100" cy="100" r="96" fill="#fff" stroke="#111" stroke-width="1.6" stroke-dasharray="5 4"/><circle cx="100" cy="100" r="64" fill="var(--p)" stroke="#111" stroke-width="1.6"/><circle cx="100" cy="100" r="33" fill="var(--a)" stroke="#111" stroke-width="1.6"/><circle cx="100" cy="100" r="5" fill="#111"/></svg>
+          <div class="w">${z.ringe.map((r, i) => `<div><b>${['innen', 'Mitte', 'außen'][i]}</b><span>${t(r)}</span></div>`).join('')}</div></div>`
       case 'comic':
         return `<div class="ak-co">${z.bilder.map((b, i) => `<div><div class="o"><b>${i + 1}</b>${ic(b[0])}</div><p>${t(b[1])}</p></div>`).join('')}</div>`
       case 'wahl':
