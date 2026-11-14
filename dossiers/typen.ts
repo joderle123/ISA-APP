@@ -44,14 +44,14 @@ export interface Track {
   merk: string
   moveUnter: string
   moves: Move[]
-  challenge: { titel: string; wie: string; x: string }
+  challenge: { titel: string; wie: string; x: string; /** Hinweis für die kleine Gruppe (drei Jugendliche) */ zu3?: string; /** Zeitpunkt in der Einheit */ wann?: 'Start' | 'Mitte' | 'Schluss' }
   line: { titel: string; x: string; feld?: number; linien?: number; /** Kästchen zum Abhaken, z. B. Wochentage */ kaestchen?: string[] }
   woche: string
   hilfe?: boolean
   /** kurzes Video zum Track (QR-Code). Nur geprüfte Links eintragen. */
   clip?: Clip
   /** Gruppen-Aktionen (Sessions) zu diesem Track */
-  gruppe: { titel: string; wer: string; zeit: string; material: string; schritte: string[]; /** schwerere Variante */ level2?: string; frage: string }[]
+  gruppe: { titel: string; wer: string; zeit: string; material: string; schritte: string[]; /** schwerere Variante */ level2?: string; frage: string; /** Zeitpunkt in der Einheit */ wann?: 'Start' | 'Mitte' | 'Schluss'; /** Hinweis für die kleine Gruppe (drei Jugendliche) */ zu3?: string }[]
   leitung: { einsatz: string; loesungen: string[]; impulse: string[]; material: string; blaetter: string }
 }
 export interface Heft {
@@ -69,8 +69,12 @@ export interface Heft {
   cast: { bild: string; name: string; x: string }[]
   warm: { titel: string; text: string; fragen: Frage[] }
   tracks: Track[]
-  /** Film-Nachmittag: ein Film für die Gruppe, einer als Tipp für zu Hause */
-  kino: { filme: Film[]; /** neun Dinge, die man im Hauptfilm entdecken kann */ bingo: string[]; nachher: string[]; geprueft: string }
+  /** Film des Trimesters – nur in einer Ausgabe je Trimester (höchstens ein Film) */
+  kino?: { filme: Film[]; /** neun Dinge, die man im Hauptfilm entdecken kann */ bingo: string[]; nachher: string[]; geprueft: string }
+  /** Ersatzfilm für die Leitung (steht nur im Jahresplan) */
+  reserve?: Film[]
+  /** Datum, an dem die Video-Links geprüft wurden */
+  geprueft?: string
   hot: { unter: string; regeln: string; takes: string[] }
   quiz: { unter: string; wort: string; fragen: { f: string; o: string[]; r: number }[] }
   karten: { titel: string; icon: string; zeilen: string[]; eigen?: string }[]

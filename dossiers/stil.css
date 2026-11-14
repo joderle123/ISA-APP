@@ -375,3 +375,17 @@ table.t td:first-child { font-weight: 700; white-space: nowrap; }
 .lt.plan table.t { font-size: 8.4pt; } .lt.plan table.t td { padding: 1.25mm 2mm; } .lt.plan table.t td.mo { font-size: 7pt; white-space: nowrap; }
 .lt.plan .kasten ul { padding-left: 4.4mm; }
 .lt.plan table.fi td:nth-child(4) { white-space: nowrap; }
+
+/* Sechs Fakten-Kästen (3 × 2), Hinweis für die kleine Gruppe */
+.fk.sechs > div { padding: 2.2mm 3mm 2.4mm; border-right: .7mm solid var(--k); border-bottom: .7mm solid var(--k); display: grid; grid-template-columns: auto 1fr; column-gap: 2.2mm; align-items: baseline; }
+.fk.sechs > div:nth-child(3n) { border-right: 0; }
+.fk.sechs > div:nth-last-child(-n+3) { border-bottom: 0; }
+.fk.sechs .z { font-size: 17pt; grid-row: span 2; align-self: start; }
+.fk.sechs h3 { font-size: 11.6pt; margin: 0 0 .6mm; }
+.fk.sechs p { font-size: 9.2pt; line-height: 1.28; grid-column: 2; }
+.ch .z3 { margin-top: 1.4mm; font-size: 9pt; line-height: 1.28; }
+.ch .z3 b { background: var(--k); color: #fff; padding: .2mm 1.4mm; margin-right: 1mm; font-weight: 500; }
+
+.lt .abl { display: block; font-size: 7.7pt; line-height: 1.25; color: var(--g); margin-top: .4mm; }
+.lt .abl b { color: var(--k); font-weight: 700; }
+.ch .z3 { margin-top: 1mm; font-size: 8.6pt; line-height: 1.25; }

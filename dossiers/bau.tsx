@@ -8,7 +8,7 @@ import { renderToStaticMarkup } from 'react-dom/server'
 import { ZeichnungSvg } from '../src/blatt/ZeichnungSvg'
 import { bildZeichnung, bildGueltig, palette } from '../src/blatt/zeichnung'
 import qrcode from 'qrcode-generator'
-import type { Heft, Frage } from './typen'
+import type { Heft, Frage, Track } from './typen'
 
 const HIER = dirname(fileURLToPath(import.meta.url))
 const fehler: string[] = []
@@ -83,9 +83,13 @@ function baue(d: Heft): string {
   const ersteSeite = 4
   const seiteVon = (i: number) => ersteSeite + i * 2
   const nT = d.tracks.length
-  const S = { ses: seiteVon(nT), kino: seiteVon(nT) + 2, hot: seiteVon(nT) + 3, code: seiteVon(nT) + 4, karten: seiteVon(nT) + 5, ab: seiteVon(nT) + 6 }
+  const kk = d.kino ? 1 : 0
+  const nAkt = d.tracks.reduce((x, e) => x + e.gruppe.length, 0)
+  /** Sessions-Seiten: bis acht Aktionen zwei Seiten, sonst vier Aktionen je Seite */
+  const nSes = nAkt > 8 ? Math.ceil(nAkt / 4) : 2
+  const S = { ses: seiteVon(nT), kino: seiteVon(nT) + nSes, hot: seiteVon(nT) + nSes + kk, code: seiteVon(nT) + nSes + 1 + kk, karten: seiteVon(nT) + nSes + 2 + kk, ab: seiteVon(nT) + nSes + 3 + kk }
   /** Text mit Seiten-Platzhaltern: {K} Karten, {J} letzte Seite für Jugendliche, {L} Seiten der Leitung, {S} Sessions */
-  const tp = (x: string) => t(x.replace(/\{K\}/g, String(S.karten)).replace(/\{J\}/g, String(S.ab)).replace(/\{L\}/g, `${S.ab + 1}–${S.ab + 3}`).replace(/\{S\}/g, `${S.ses}–${S.ses + 1}`))
+  const tp = (x: string) => t(x.replace(/\{K\}/g, String(S.karten)).replace(/\{J\}/g, String(S.ab)).replace(/\{L\}/g, `${S.ab + 1}–${S.ab + 3}`).replace(/\{S\}/g, `${S.ses}–${S.ses + nSes - 1}`))
 
   // 1 Titel
   seiten.push({
@@ -119,7 +123,7 @@ function baue(d: Heft): string {
     html: `<div>${kh('Tracklist', `${['', 'Ein', 'Zwei', 'Drei', 'Vier', 'Fünf', 'Sechs'][d.tracks.length]} Tracks, ein Thema: ${d.thema}`)}
     <div class="inhalt">
       <div class="tl">${d.tracks.map((e, i) => `<div class="t"><div class="z">${z2(i + 1)}</div><div class="tx"><h3>${t(e.titel)}</h3><p>${t(e.kurz)}</p></div><div class="s mo">S. ${seiteVon(i)}</div></div>`).join('')}
-        <div class="t x"><div class="z">+</div><div class="tx"><h3>Sessions · Kino · Hot Takes · Code · Karten</h3><p>Aktionen für die ganze Gruppe, ein Film, Streiten nach Regeln, Karten für die Tasche.</p></div><div class="s mo">S. ${S.ses}</div></div></div>
+        <div class="t x"><div class="z">+</div><div class="tx"><h3>Sessions · ${d.kino ? 'Kino · ' : ''}Hot Takes · Code · Karten</h3><p>Aktionen für die ganze Gruppe, ${d.kino ? 'der Film des Trimesters, ' : ''}Streiten nach Regeln, Karten für die Tasche.</p></div><div class="s mo">S. ${S.ses}</div></div></div>
       <div class="gr">${tape('users', 'Cast – alle erfunden, alles schon passiert')}
         <div class="cast">${d.cast.map((c) => `<div class="c"><div class="b"><div class="pk punkt"></div><div class="fig">${figur(c.bild)}</div></div><div class="tx"><h3>${t(c.name)}</h3><p>${t(c.x)}</p></div></div>`).join('')}</div></div>
       <div class="bx warm"><h3>${t(d.warm.titel)}</h3><p>${t(d.warm.text)}</p>${d.warm.fragen.map(frage).join('')}</div>
@@ -136,7 +140,7 @@ function baue(d: Heft): string {
           <div class="bx p szene"><div class="wer"><div class="pk punkt"></div><div class="fig">${figur(e.szene.bild)}</div><div class="nm mo">${esc(e.szene.name)}</div></div>
           <div class="tx"><p>${t(e.szene.text)}</p><div class="fr mk">${ic('arrow-big-right')}<span>${t(e.szene.frage)}</span></div><div class="linie"></div></div></div></div>
         <div class="gr">${tape('bulb', e.faktenTitel ?? 'Was dahinter steckt')}
-          <div class="fk">${e.fakten.map((x, k) => `<div><div class="z">${k + 1}</div><h3>${t(x.t)}</h3><p>${t(x.x)}</p></div>`).join('')}</div></div>
+          <div class="fk${e.fakten.length > 3 ? ' sechs' : ''}">${e.fakten.map((x, k) => `<div><div class="z">${k + 1}</div><h3>${t(x.t)}</h3><p>${t(x.x)}</p></div>`).join('')}</div></div>
         ${e.clip ? `<div class="clip"><div class="qr">${qr(e.clip.url)}</div><div class="tx"><div class="lab mo">${ic('player-play')}Clip zum Track · ${esc(e.clip.dauer)}</div><h3>${t(e.clip.titel)}</h3><div class="ka mo">${esc(e.clip.kanal)} · ${esc(kurzlink(e.clip.url))}</div><div class="fr2">${t(e.clip.frage)}</div></div></div>` : ''}
         <div class="my"><div class="kopf"><span class="mo">Mythos</span><span class="mo">Real</span></div>${e.mythen.map((m) => `<div class="z"><span>${ic('x')}<span>${t(m[0])}</span></span><span>${ic('check')}<span>${t(m[1])}</span></span></div>`).join('')}</div>
         <div class="merk"><span class="mo">Merk dir</span><div class="mk">${t(e.merk)}</div></div>
@@ -148,7 +152,7 @@ function baue(d: Heft): string {
       <div class="inhalt rs">
         ${e.moves.map((m, k) => `<div class="bx mv"><div class="kp"><div class="b">${'ABC'[k]}</div><h3>${t(m.titel)}</h3><div class="me mo"><span>${esc(m.wie)}</span><span>${esc(m.zeit)}</span></div></div>
           <div class="kb">${m.kontext ? `<p class="kontext">${t(m.kontext)}</p>` : ''}${m.fragen.map(frage).join('')}</div></div>`).join('')}
-        <div class="zwei"><div class="bx ak ch"><div class="lab mo"><span>Challenge</span><span>${esc(e.challenge.wie)}</span></div><h3>${t(e.challenge.titel)}</h3><p>${t(e.challenge.x)}</p></div>
+        <div class="zwei"><div class="bx ak ch"><div class="lab mo"><span>Challenge</span><span>${esc(e.challenge.wie)}</span></div><h3>${t(e.challenge.titel)}</h3><p>${t(e.challenge.x)}</p>${e.challenge.zu3 ? `<p class="z3"><b class="mo">Zu dritt</b> ${t(e.challenge.zu3)}</p>` : ''}</div>
           <div class="bx ln"><div class="lab mo">Dein Satz</div><h3>${t(e.line.titel)}</h3><p>${tp(e.line.x)}</p>${e.line.feld ? `<div class="feld" style="height:${e.line.feld}mm"></div>` : ''}${e.line.kaestchen ? `<div class="wk">${e.line.kaestchen.map((k) => `<span><i></i><b class="mo">${esc(k)}</b></span>`).join('')}</div>` : ''}${linien(e.line.linien ?? 0)}</div></div>
         <div class="wo"><span class="mo">Diese Woche</span><span>${t(e.woche)}</span></div>
         <div class="vibe"><span class="mo">Erledigt <i></i></span><span class="mo">Der Track war: <i></i> nichts für mich <i></i> okay <i></i> gut</span><span class="mo">Datum: ____________</span></div>
@@ -158,27 +162,28 @@ function baue(d: Heft): string {
   })
 
   // Sessions: Aktionen für die ganze Gruppe
-  const alle = d.tracks.flatMap((e, i) => e.gruppe.map((g) => ({ ...g, tr: i })))
-  const halb = Math.ceil(alle.length / 2)
-  const ses = (g: (typeof alle)[number]) => `<div class="se"><div class="kp"><span class="mo tr2">Track ${z2(g.tr + 1)}</span><span class="mo">${esc(g.wer)} · ${esc(g.zeit)}</span></div><h3>${t(g.titel)}</h3><div class="mat mo">${ic('box')}<span>${esc(g.material)}</span></div><ol>${g.schritte.map((x) => `<li><span>${t(x)}</span></li>`).join('')}</ol>${g.level2 ? `<div class="l2"><b class="mo">Level 2</b><span>${t(g.level2)}</span></div>` : ''}<div class="da">${ic('message-circle')}<span>${t(g.frage)}</span></div></div>`
-  const breit = halb % 2 === 0 ? ' x' : ''
-  seiten.push({
-    html: `<div>${kh('Sessions', `${alle.length} Aktionen für die ganze Gruppe`, 'Alle machen mit')}
-    <div class="inhalt"><div class="ses">${alle.slice(0, halb).map(ses).join('')}
-      <div class="se regel${breit}"><h3>Für jede Session gilt</h3><ol><li><span>Wer nicht mitspielen will, schaut zu, stoppt die Zeit oder ist Jury.</span></li><li><span>Gespielt wird mit erfundenen Situationen – nie mit echten Leuten aus der Gruppe.</span></li><li><span>Nach dem Spiel: Rolle abschütteln. So ist hier niemand wirklich.</span></li></ol></div></div>
+  const WANN = { Start: 0, Mitte: 1, Schluss: 2 } as const
+  const WANN_TEXT = { Start: 'zum Start', Mitte: 'mittendrin', Schluss: 'zum Schluss' } as const
+  const alle = d.tracks.flatMap((e, i) => e.gruppe.map((g) => ({ ...g, tr: i })).sort((a, b) => (a.wann ? WANN[a.wann] : 1) - (b.wann ? WANN[b.wann] : 1)))
+  const ses = (g: (typeof alle)[number]) => `<div class="se"><div class="kp"><span class="mo tr2">Track ${z2(g.tr + 1)}${g.wann ? ' · ' + WANN_TEXT[g.wann] : ''}</span><span class="mo">${esc(g.wer)} · ${esc(g.zeit)}</span></div><h3>${t(g.titel)}</h3><div class="mat mo">${ic('box')}<span>${esc(g.material)}</span></div><ol>${g.schritte.map((x) => `<li><span>${t(x)}</span></li>`).join('')}</ol>${g.zu3 ? `<div class="l2"><b class="mo">Zu dritt</b><span>${t(g.zu3)}</span></div>` : ''}${g.level2 ? `<div class="l2"><b class="mo">Level 2</b><span>${t(g.level2)}</span></div>` : ''}<div class="da">${ic('message-circle')}<span>${t(g.frage)}</span></div></div>`
+  const teile = nAkt > 8 ? Array.from({ length: nSes }, (_, i) => alle.slice(i * 4, i * 4 + 4)) : [alle.slice(0, Math.ceil(alle.length / 2)), alle.slice(Math.ceil(alle.length / 2))]
+  const regel = (x: string) => `<div class="se regel${x}"><h3>Für jede Session gilt</h3><ol><li><span>Wer nicht mitspielen will, schaut zu, stoppt die Zeit oder ist Jury.</span></li><li><span>Gespielt wird mit erfundenen Situationen – nie mit echten Leuten aus der Gruppe.</span></li><li><span>Seid ihr nur zu dritt: Die Leitung spielt mit. Statt zwei Teams seid ihr ein Team gegen die Uhr.</span></li><li><span>Nach dem Spiel: Rolle abschütteln. So ist hier niemand wirklich.</span></li></ol></div>`
+  const eigen = (x: string) => `<div class="se eigen${x}"><h3>Eure Session</h3><p>Erfindet eine eigene Aktion zum Thema. Wer sie erfindet, leitet sie an.</p><div class="satz"><span><strong>Name:</strong></span><div class="linie"></div></div><div class="satz"><span><strong>So geht es:</strong></span><div class="linie"></div></div>${linien(1)}</div>`
+  teile.forEach((g, i) => {
+    const erste = i === 0
+    const letzte = i === teile.length - 1
+    const x = g.length % 2 === 0 ? ' x' : ''
+    seiten.push({
+      html: `<div>${kh('Sessions', erste ? `${alle.length} Aktionen für die ganze Gruppe` : letzte ? 'Letzter Teil – und Platz für eure eigene' : 'Teil zwei', letzte && !erste ? 'Selbst anleiten' : 'Alle machen mit')}
+    <div class="inhalt"><div class="ses">${g.map(ses).join('')}${erste ? regel(x) : letzte ? eigen(x) : ''}</div>
     </div></div>`,
-  })
-  seiten.push({
-    html: `<div>${kh('Sessions', 'Teil zwei – und Platz für eure eigene', 'Selbst anleiten')}
-    <div class="inhalt"><div class="ses">${alle.slice(halb).map(ses).join('')}
-      <div class="se eigen${(alle.length - halb) % 2 === 0 ? ' x' : ''}"><h3>Eure Session</h3><p>Erfindet eine eigene Aktion zum Thema. Wer sie erfindet, leitet sie an.</p><div class="satz"><span><strong>Name:</strong></span><div class="linie"></div></div><div class="satz"><span><strong>So geht es:</strong></span><div class="linie"></div></div>${linien(1)}</div></div>
-    </div></div>`,
+    })
   })
 
   // Kino
   const kino = d.kino
-  seiten.push({
-    html: `<div>${kh('Kino', 'Ein Film für die Gruppe – und einer für danach', 'Popcorn erlaubt')}
+  if (kino) seiten.push({
+    html: `<div>${kh('Kino', kino.filme.length === 1 ? 'Der Film dieses Trimesters' : 'Ein Film für die Gruppe – und einer für danach', 'Popcorn erlaubt')}
     <div class="inhalt">
       <div class="filme${kino.filme.length === 1 ? ' eins' : ''}">${kino.filme.map((f, i) => `<div class="film"><div class="ab mo"><span>${i === 0 ? 'Hauptfilm' : 'Noch ein Tipp'}</span><span>${f.jahr} · ${f.fsk === null ? 'FSK prüfen' : 'FSK ' + f.fsk} · ${esc(f.laenge)}</span></div><h3>${t(f.titel)}</h3><p>${t(f.worum)}</p><div class="ach"><span class="mo">Achte auf</span><ul>${f.achte.map((x) => `<li>${t(x)}</li>`).join('')}</ul></div>${f.achtung ? `<div class="warn mo">${ic('alert-triangle')}<span>${t(f.achtung)}</span></div>` : ''}</div>`).join('')}</div>
       <div class="kz"><div class="gr">${tape('layout-grid', 'Kino-Bingo zum Hauptfilm', true)}
@@ -192,7 +197,7 @@ function baue(d: Heft): string {
   seiten.push({
     html: `<div>${kh('Hot Takes', d.hot.unter, 'Kein Richtig, kein Falsch')}
     <div class="inhalt">
-      <p style="font-size:10.8pt">${t(d.hot.regeln)}</p>
+      <p style="font-size:10.8pt">${t(d.hot.regeln)} Seid ihr nur zu dritt: Die Leitung stellt sich mit auf – und bei heiklen Sätzen reicht das Kreuz im Heft.</p>
       <div>${d.hot.takes.map((x, i) => `<div class="take"><div class="z">${i + 1}</div><div class="s">${t(x)}</div><div class="strich"><span class="mo">stimmt nie</span><div></div><span class="mo">stimmt immer</span></div></div>`).join('')}</div>
       <div class="bx p"><div class="satz" style="margin-top:0"><span><strong>Bei diesem Take habe ich meine Meinung geändert:</strong> Nr.</span><div class="linie" style="max-width:20mm"></div><span><strong>– weil</strong></span><div class="linie"></div></div></div>
     </div></div>`,
@@ -247,6 +252,12 @@ function baue(d: Heft): string {
   // Leitung
   const lt = d.leitung
   const n = d.tracks.length
+  const ablauf = (e: Track) => {
+    if (!e.gruppe.some((x) => x.wann)) return ''
+    const alle2 = [{ titel: `Challenge „${e.challenge.titel}“`, wann: e.challenge.wann ?? 'Mitte' }, ...e.gruppe.map((x) => ({ titel: x.titel, wann: x.wann ?? 'Mitte' }))]
+    const g = (w: string) => alle2.filter((x) => x.wann === w).map((x) => esc(x.titel)).join(', ')
+    return `<span class="abl">${['Start', 'Mitte', 'Schluss'].filter((w) => g(w)).map((w) => `<b>${w}:</b> ${g(w)}`).join(' · ')}</span>`
+  }
   const lkopf = (titel: string) => `<div class="lk"><span class="mark mo">Nur für die Leitung</span><h1>${t(titel)}</h1></div>`
   seiten.push({
     klasse: 'lt eng',
@@ -256,13 +267,12 @@ function baue(d: Heft): string {
       <div><h2>Lernziele</h2><ul>${lt.lernziele.map((x) => `<li>${t(x)}</li>`).join('')}</ul></div>
       <div><h2>Das Heft in den Einheiten</h2><table class="t"><tr><th>Einheit</th><th>Seiten</th><th>So passt das Heft in die 100 Minuten</th></tr>
         <tr><td>vor Einheit ${d.tracks[0].nr}</td><td>1–3</td><td>${t(lt.start)}</td></tr>
-        ${d.tracks.map((e, i) => `<tr><td>E${e.nr} · Track ${z2(i + 1)}</td><td>${seiteVon(i)}–${seiteVon(i) + 1}</td><td>${tp(e.leitung.einsatz)}</td></tr>`).join('')}
-        <tr><td>nach Einheit ${d.tracks[n - 1].nr}</td><td>${S.kino}–${S.ab}</td><td>${tp(lt.schluss)}</td></tr>
-        <tr><td>Sessions</td><td>${S.ses}–${S.ses + 1}</td><td>Die Gruppenspiele der Einheiten in Kurzform – zum Nachschlagen, und damit Jugendliche selbst eine Aktion anleiten können. Die ausführliche Anleitung steht in der jeweiligen Einheit.</td></tr></table></div>
+        ${d.tracks.map((e, i) => `<tr><td>E${e.nr} · Track ${z2(i + 1)}</td><td>${seiteVon(i)}–${seiteVon(i) + 1}</td><td>${tp(e.leitung.einsatz)}${ablauf(e)}</td></tr>`).join('')}
+        <tr><td>nach Einheit ${d.tracks[n - 1].nr}</td><td>${S.ses + nSes}–${S.ab}</td><td>${tp(lt.schluss)}</td></tr></table></div>
       <div><h2>Eine Einheit mit dem Heft</h2><div class="zl">
-        <div style="flex:10">Ankommen<small>0–10</small></div><div style="flex:6">Brücke<small>10–15</small></div>
+        <div style="flex:10">Ankommen<small>0–10 · Session zum Start</small></div><div style="flex:6">Brücke<small>10–15</small></div>
         <div class="h" style="flex:30">Hauptteil 1 · Heft<small>15–45 · Szene lesen, Fakten, Move A</small></div><div style="flex:15">Pause<small>45–60</small></div>
-        <div class="h" style="flex:25">Hauptteil 2 · Heft<small>60–85 · Challenge, Move B</small></div><div style="flex:11">Skill<small>85–95</small></div><div class="h" style="flex:9">Schluss<small>Dein Satz</small></div></div></div>
+        <div class="h" style="flex:25">Hauptteil 2 · Heft<small>60–85 · Challenge, Move B, Session</small></div><div style="flex:11">Skill<small>85–95 · Session zum Schluss</small></div><div class="h" style="flex:9">Schluss<small>Dein Satz</small></div></div></div>
       <div class="sp2"><div class="kasten"><h2>Wenn es schwerfällt</h2><ul>${lt.hilfe.map((x) => `<li>${t(x)}</li>`).join('')}</ul></div>
         <div class="kasten"><h2>Wenn jemand mehr will</h2><ul>${lt.forder.map((x) => `<li>${t(x)}</li>`).join('')}</ul></div></div>
       <div class="kasten g"><h2>Wichtig für das Gespräch</h2><p>${t(lt.gespraech)}</p></div>
@@ -283,10 +293,10 @@ function baue(d: Heft): string {
     html: `<div>${lkopf('Material, Videos, Druck und Hintergrund')}<div class="inhalt">
       <div><h2>Was Sie je Einheit zusätzlich brauchen</h2><table class="t"><tr><th>Einheit</th><th>Für das Heft</th><th>Aus dem Kurs (Toolbox)</th></tr>
         ${d.tracks.map((e, i) => `<tr><td>E${e.nr} · Track ${z2(i + 1)}</td><td>${t(e.leitung.material)}</td><td>${t(e.leitung.blaetter)}</td></tr>`).join('')}</table></div>
-      <div><h2>Videos und Filme (Links geprüft am ${esc(kino.geprueft)})</h2><table class="t"><tr><th>Wo</th><th>Titel und Kanal</th><th>Link</th><th>läuft</th></tr>
+      <div><h2>${kino ? 'Videos und Film' : 'Videos'} (Links geprüft am ${esc(d.geprueft ?? kino?.geprueft ?? '14.11.2026')})</h2><table class="t"><tr><th>Wo</th><th>Titel und Kanal</th><th>Link</th><th>läuft</th></tr>
         ${d.tracks.filter((e) => e.clip).map((e) => `<tr><td>Track ${z2(d.tracks.indexOf(e) + 1)}</td><td>${t(e.clip!.titel)} – ${esc(e.clip!.kanal)} (${esc(e.clip!.dauer)})</td><td>${esc(kurzlink(e.clip!.url))}</td><td>☐</td></tr>`).join('')}
-        ${kino.filme.map((f) => `<tr><td>Kino</td><td>${t(f.titel)} (${f.jahr}, ${esc(f.laenge)}, ${f.fsk === null ? 'FSK vor dem Einsatz prüfen' : 'FSK ' + f.fsk})${f.achtung ? ' – ' + t(f.achtung) : ''}</td><td>DVD, Mediathek oder Streaming</td><td>☐</td></tr>`).join('')}</table>
-        <p class="klein" style="margin-top:1mm">Videos können verschwinden: vor jeder Einheit kurz öffnen. Filme vorher selbst ansehen und die Vorführrechte der Einrichtung beachten.</p></div>
+        ${(kino?.filme ?? []).map((f) => `<tr><td>Kino</td><td>${t(f.titel)} (${f.jahr}, ${esc(f.laenge)}, ${f.fsk === null ? 'FSK vor dem Einsatz prüfen' : 'FSK ' + f.fsk})${f.achtung ? ' – ' + t(f.achtung) : ''}</td><td>DVD, Mediathek oder Streaming</td><td>☐</td></tr>`).join('')}</table>
+        <p class="klein" style="margin-top:1mm">Videos können verschwinden: vor jeder Einheit kurz öffnen.${kino ? ' Den Film vorher selbst ansehen und die Vorführrechte der Einrichtung beachten.' : ''}</p></div>
       <div class="sp2"><div class="kasten"><h2>Drucken</h2><ul>${lt.druck.map((x) => `<li>${tp(x)}</li>`).join('')}</ul></div>
         <div class="kasten g"><h2>Achtung bei dieser Ausgabe</h2><p>${t(lt.achtung)}</p></div></div>
       <div><h2>Fachlicher Hintergrund in Kürze</h2><p>${t(lt.hintergrund)}</p><p class="klein" style="margin-top:1.5mm">${t(lt.quellen)}</p></div>
@@ -319,16 +329,18 @@ function bauePlan(hefte: Heft[]): string {
   const kopf = (titel: string) => `<div class="lk"><span class="mark mo">Nur für die Leitung</span><h1>${t(titel)}</h1></div>`
   const punkt = (d: Heft) => `<i class="pk" style="background:${d.farbe}"></i>`
   const clips = hefte.flatMap((d) => d.tracks.map((e, i) => ({ d, e, i })).filter((x) => x.e.clip))
-  const filme = hefte.flatMap((d) => d.kino.filme.map((f) => ({ d, f })))
+  const filme = hefte.flatMap((d) => (d.kino?.filme ?? []).map((f) => ({ d, f })))
+  const reserve = hefte.flatMap((d) => (d.reserve ?? []).map((f) => ({ d, f })))
   const seiten = [
     `<div>${kopf('Das Jahr auf einen Blick')}<div class="inhalt">
-      <p><strong>REAL TALK</strong> begleitet das erste Jahr des Skills-Kurses: neun Ausgaben, ${hefte.reduce((s, d) => s + d.tracks.length, 0)} Tracks, ${clips.length} Videos, ${filme.length} Filme. Jede Ausgabe gehört zu einem Modul. Ein Track passt in eine Einheit; wo ein Modul mehr Stoff hat, gibt es Zusatz-Tracks für einen eigenen Termin.</p>
+      <p><strong>REAL TALK</strong> begleitet das erste Jahr des Skills-Kurses: neun Ausgaben, ${hefte.reduce((s, d) => s + d.tracks.length, 0)} Tracks, ${clips.length} Videos und ein Film je Trimester. Jede Ausgabe gehört zu einem Modul. Ein Track passt in eine Einheit; wo ein Modul mehr Stoff hat, gibt es Zusatz-Tracks für einen eigenen Termin.</p>
       <table class="t plan"><tr><th>Ausgabe</th><th>Einheiten</th><th>Tracks</th><th>Kino</th><th>Seiten</th></tr>
-      ${hefte.map((d) => `<tr><td>${punkt(d)}#${esc(d.nr)} ${esc(d.thema)}</td><td>${einh(d)}</td><td>${d.tracks.map((e, i) => `${z2(i + 1)} ${esc(e.titel)}`).join(' · ')}</td><td>${d.kino.filme.map((f) => esc(f.titel)).join(' · ')}</td><td>${13 + d.tracks.length * 2}</td></tr>`).join('')}</table>
+      ${hefte.map((d) => `<tr><td>${punkt(d)}#${esc(d.nr)} ${esc(d.thema)}</td><td>${einh(d)}</td><td>${d.tracks.map((e, i) => `${z2(i + 1)} ${esc(e.titel)}`).join(' · ')}</td><td>${d.kino ? d.kino.filme.map((f) => esc(f.titel)).join(' · ') : '–'}</td><td>${10 + (d.kino ? 1 : 0) + d.tracks.length * 2 + (d.tracks.reduce((x, e) => x + e.gruppe.length, 0) > 8 ? Math.ceil(d.tracks.reduce((x, e) => x + e.gruppe.length, 0) / 4) : 2)}</td></tr>`).join('')}</table>
       <div class="zwei">
-        <div class="kasten"><h2>So ist jede Ausgabe gebaut</h2><ul><li><span><strong>Titel, Ansage, Tracklist</strong> – Einstieg, etwa 10 Minuten</span></li><li><span><strong>Je Track eine Doppelseite</strong> – links Szene, Fakten, Clip, Mythos/Real; rechts „Dein Move“ mit Challenge</span></li><li><span><strong>Sessions</strong> – die Gruppenspiele in Kurzform</span></li><li><span><strong>Kino, Hot Takes, Knack den Code</strong> – für eigene Termine und zur Wiederholung</span></li><li><span><strong>Karten und Abspann</strong> – zum Mitnehmen und für die Rückmeldung</span></li><li><span><strong>Drei Seiten für die Leitung</strong> – Einsatz, Lösungen, Material</span></li></ul></div>
-        <div class="kasten g"><h2>Ein möglicher Rhythmus</h2><ul><li><span><strong>Pro Einheit ein Track.</strong> Das Heft ersetzt die Arbeitsblätter der Einheit, nicht die Spiele.</span></li><li><span><strong>Nach jedem Modul ein Kino-Termin</strong> – mit Bingo und drei Fragen nach dem Abspann.</span></li><li><span><strong>Letzte Einheit des Moduls:</strong> Hot Takes, Code, Karten, Abspann.</span></li><li><span><strong>Die Hefte bleiben im Raum</strong> oder gehen am Ende des Moduls mit nach Hause – die Gruppe entscheidet.</span></li></ul></div>
+        <div class="kasten"><h2>So ist jede Ausgabe gebaut</h2><ul><li><span><strong>Titel, Ansage, Tracklist</strong> – Einstieg, etwa 10 Minuten</span></li><li><span><strong>Je Track eine Doppelseite</strong> – links Szene, Fakten, Clip, Mythos/Real; rechts „Dein Move“ mit Challenge</span></li><li><span><strong>Sessions</strong> – die Gruppenspiele in Kurzform</span></li><li><span><strong>Hot Takes, Knack den Code</strong> – Streiten nach Regeln und Wiederholung</span></li><li><span><strong>Kino</strong> – nur in drei Ausgaben: ein Film je Trimester</span></li><li><span><strong>Karten und Abspann</strong> – zum Mitnehmen und für die Rückmeldung</span></li><li><span><strong>Drei Seiten für die Leitung</strong> – Einsatz, Lösungen, Material</span></li></ul></div>
+        <div class="kasten g"><h2>Ein möglicher Rhythmus</h2><ul><li><span><strong>Pro Einheit ein Track.</strong> Das Heft ersetzt die Arbeitsblätter der Einheit, nicht die Spiele.</span></li><li><span><strong>Sessions verteilen:</strong> eine zum Start, eine mittendrin oder zum Schluss. Der Zeitpunkt steht auf jeder Karte.</span></li><li><span><strong>Ein Film pro Trimester</strong> – als eigener Termin, mit Bingo und drei Fragen. Mehr braucht es nicht.</span></li><li><span><strong>Letzte Einheit des Moduls:</strong> Hot Takes, Code, Karten, Abspann.</span></li><li><span><strong>Die Hefte bleiben im Raum</strong> oder gehen am Ende des Moduls mit nach Hause – die Gruppe entscheidet.</span></li></ul></div>
       </div>
+      <div class="kasten"><h2>Kleine Gruppe: drei bis sechs Jugendliche</h2><ul><li><span><strong>Zu dritt spielt die Leitung mit.</strong> Statt zwei Teams gibt es ein Team gegen die Uhr oder gegen die eigene erste Runde. Wo es mehr braucht, steht auf der Karte der Hinweis „Zu dritt“.</span></li><li><span><strong>Niemand steht allein da.</strong> Bei Linien und Aufstellungen stellt sich die Leitung mit auf. Anonyme Zettel schreibt sie mit, damit niemand erkennbar ist.</span></li><li><span><strong>Zeit:</strong> Zu dritt sind Kreis- und Ratespiele schneller vorbei. Eine zweite Runde oder „Level 2“ einplanen – oder früher Schluss machen.</span></li><li><span><strong>Wenn Ausgang, eigene Handys oder Material fehlen:</strong> Draußen-Übungen am Fenster oder im Flur machen, Fotos und Songs über ein Gerät der Leitung, Kühlpack statt Eiswürfel.</span></li><li><span><strong>Augen zu und Berührung</strong> sind immer freiwillig. Der Blick auf den Boden reicht, geschrieben wird auf Zettel statt auf den Rücken.</span></li></ul></div>
       <p class="klein">Alle Personen und Szenen in den Heften sind erfunden. Die Figuren kehren in mehreren Ausgaben wieder; ihre Geschichten passen zueinander.</p>
     </div></div>`,
     ...[0, 1].map((teil) => { const liste = clips.filter((c) => (Number(c.d.nr) <= 3) === (teil === 0)); return `<div>${kopf(teil === 0 ? 'Alle Videos · #00 bis #03' : 'Alle Videos · #04 bis #08')}<div class="inhalt">
@@ -337,12 +349,15 @@ function bauePlan(hefte: Heft[]): string {
       ${liste.map(({ d, e, i }) => `<tr><td>${punkt(d)}#${esc(d.nr)} · ${z2(i + 1)} ${esc(e.titel)}</td><td>${esc(e.clip!.titel)}</td><td>${esc(e.clip!.kanal)}</td><td class="mo">${esc(kurzlink(e.clip!.url))}</td></tr>`).join('')}</table>
       ${teil === 1 ? '<p class="klein">Verschwindet ein Video, bleibt der Track vollständig: Szene, Fakten und Moves funktionieren ohne Clip. Tracks ohne Video sind Absicht – dort wurde kein passendes gefunden.</p>' : ''}
     </div></div>` }),
-    `<div>${kopf('Alle Filme')}<div class="inhalt">
-      <table class="t plan fi"><tr><th>Ausgabe</th><th>Film</th><th>FSK</th><th>Länge</th><th>Vorher wissen</th></tr>
-      ${filme.map(({ d, f }) => `<tr><td>${punkt(d)}#${esc(d.nr)} ${esc(d.thema)}</td><td><strong>${esc(f.titel)}</strong> (${f.jahr})</td><td>${f.fsk === null ? '–' : f.fsk}</td><td>${esc(f.laenge)}</td><td>${esc(f.achtung ?? '–')}</td></tr>`).join('')}</table>
+    `<div>${kopf('Ein Film pro Trimester')}<div class="inhalt">
+      <p>REAL TALK ist kein Filmkurs. Pro Trimester läuft <strong>ein Film</strong> – dort, wo er zum Thema passt und etwas zeigt, das sich nicht erklären lässt. Die Kino-Seite steht nur in diesen drei Ausgaben.</p>
+      <table class="t plan fi"><tr><th>Trimester</th><th>Film</th><th>FSK</th><th>Länge</th><th>Vorher wissen</th></tr>
+      ${filme.map(({ d, f }, i) => `<tr><td>${punkt(d)}${i + 1} · #${esc(d.nr)} ${esc(d.thema)}</td><td><strong>${esc(f.titel)}</strong> (${f.jahr})</td><td>${f.fsk === null ? '–' : f.fsk}</td><td>${esc(f.laenge)}</td><td>${esc(f.achtung ?? '–')}</td></tr>`).join('')}</table>
+      ${reserve.length ? `<div><h2>Ersatz, falls ein Film nicht zur Gruppe passt</h2><table class="t plan fi"><tr><th>Statt</th><th>Film</th><th>FSK</th><th>Länge</th><th>Vorher wissen</th></tr>
+      ${reserve.map(({ d, f }) => `<tr><td>${punkt(d)}#${esc(d.nr)} ${esc(d.thema)}</td><td><strong>${esc(f.titel)}</strong> (${f.jahr})</td><td>${f.fsk === null ? '–' : f.fsk}</td><td>${esc(f.laenge)}</td><td>${esc(f.achtung ?? '–')}</td></tr>`).join('')}</table><p class="klein" style="margin-top:1mm">Zum Ersatzfilm gibt es keine Kino-Seite im Heft. Das Bingo passt meist trotzdem; die drei Fragen nach dem Abspann stellen Sie mündlich.</p></div>` : ''}
       <div class="zwei">
-        <div class="kasten g"><h2>Vor jedem Film</h2><ul><li><span><strong>Selbst ansehen.</strong> Die Hinweise oben ersetzen das nicht – Sie kennen Ihre Gruppe.</span></li><li><span><strong>Altersfreigabe prüfen.</strong> Die Angaben stammen aus Kino- und Filmdatenbanken, nicht direkt von der FSK.</span></li><li><span><strong>Vorführrechte klären.</strong> Eine Vorführung in der Gruppe ist keine private Nutzung; es gelten die Regeln Ihrer Einrichtung.</span></li></ul></div>
-        <div class="kasten"><h2>Im Heft dazu</h2><ul><li><span><strong>Bingo:</strong> neun Felder zum Abhaken während des Films.</span></li><li><span><strong>Nach dem Abspann:</strong> drei Fragen für die Runde.</span></li><li><span><strong>Popcorn-Wertung:</strong> Jede Person bewertet den Film.</span></li><li><span>Ein Film darf auch in zwei Teilen laufen – mit Bingo dazwischen.</span></li></ul></div>
+        <div class="kasten g"><h2>Vor dem Film</h2><ul><li><span><strong>Selbst ansehen.</strong> Die Hinweise oben ersetzen das nicht – Sie kennen Ihre Gruppe.</span></li><li><span><strong>Altersfreigabe prüfen.</strong> Die Angaben stammen aus Kino- und Filmdatenbanken, nicht direkt von der FSK.</span></li><li><span><strong>Vorführrechte klären.</strong> Eine Vorführung in der Gruppe ist keine private Nutzung; es gelten die Regeln Ihrer Einrichtung.</span></li></ul></div>
+        <div class="kasten"><h2>Im Heft dazu</h2><ul><li><span><strong>Bingo:</strong> neun Felder zum Abhaken während des Films.</span></li><li><span><strong>Nach dem Abspann:</strong> drei Fragen für die Runde.</span></li><li><span><strong>Wertung:</strong> Jede Person bewertet den Film.</span></li><li><span>Ein langer Film darf in zwei Teilen laufen.</span></li></ul></div>
       </div>
       <p class="klein">Stand: ${esc(hefte[hefte.length - 1].stand)}. Zeichnungen: Open Peeps (Pablo Stanley, CC0), Tabler Icons (MIT). Schriften: Anton, Space Grotesk (SIL Open Font License), Permanent Marker (Apache-Lizenz 2.0).</p>
     </div></div>`,

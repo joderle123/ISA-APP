@@ -5,8 +5,8 @@ Akzentfarbe je Ausgabe, direkter Ton, erfundene Szenen nah am Alltag (Betrieb, W
 
 Aufbau einer Ausgabe: Titel · Ansage · Tracklist mit Cast und Soundcheck · je Thema eine Doppelseite
 (links Szene, Fakten, Mythos/Real, Merksatz – rechts „Dein Move“ mit zwei Aufgaben, Challenge,
-eigenem Satz und Aufgabe für die Woche) · Sessions (Gruppen-Aktionen aus dem Kurs, zwei Seiten) · Kino
-(Hauptfilm, Tipp, Bingo, Fragen) · Hot Takes · Knack den Code · Karten für die Tasche · Abspann ·
+eigenem Satz und Aufgabe für die Woche) · Sessions (Gruppen-Aktionen, zwei Seiten; ab neun Aktionen vier je
+Seite) · Kino (nur in drei Ausgaben: ein Film je Trimester, mit Bingo und Fragen) · Hot Takes · Knack den Code · Karten für die Tasche · Abspann ·
 drei Seiten nur für die Leitung.
 
     npx tsx --tsconfig tsconfig.scripts.json dossiers/bau.tsx m5      # HTML nach dossiers/aus/
@@ -15,7 +15,7 @@ drei Seiten nur für die Leitung.
     npx tsx --tsconfig tsconfig.scripts.json dossiers/bau.tsx plan && node dossiers/pdf.cjs plan   # Jahresplan für die Leitung (alle Ausgaben, Videos, Filme)
     python3 dossiers/kurz.py m5                                        # Kurzfassung der Kurs-Einheiten
 
-- `inhalt/<modul>.ts` – der Inhalt einer Ausgabe (Aufbau siehe `typen.ts`). Texte: `**fett**`, `==markiert==`.
+- `inhalt/<modul>.ts` – der Inhalt einer Ausgabe als Daten (Aufbau siehe `typen.ts`). Texte: `**fett**`, `==markiert==`.
 - `bau.tsx` – setzt die Seiten. Figuren: Open Peeps aus `src/blatt` in Graustufen; Icons: Tabler (voller Satz).
 - `stil.css` – Gestaltung. Akzentfarbe je Ausgabe über `farbe` im Inhalt.
 - `pdf.cjs` – meldet „frei … mm“ je Seite. Negativ heißt Überlauf: Text kürzen oder Feld verkleinern.
@@ -24,8 +24,19 @@ Videos und Filme
 - `clip` je Track wird als QR-Code gedruckt. Nur Links eintragen, die über die oEmbed-Schnittstelle von
   YouTube bestätigt sind (Titel und Kanal von dort übernehmen); Dauer und Inhalt muss die Leitung vor dem
   Einsatz selbst ansehen – das steht auch auf der dritten Leitungsseite.
-- `kino.filme`: FSK nur 0, 6 oder 12 und aus einer Quelle belegt; sonst `fsk: null` („FSK prüfen“).
+- `kino` ist wählbar und steht nur in #01, #03 und #07: **ein Film pro Trimester**, kein Filmkurs. `reserve` nennt
+  einen Ersatzfilm für die Leitung (erscheint nur im Jahresplan). FSK nur 0, 6 oder 12 und aus einer Quelle
+  belegt; sonst `fsk: null` („FSK prüfen“).
 - Die Liste der Kandidaten liegt nicht im Repo (Recherche-Stand 14.11.2026).
+
+Gruppe und Aktivitäten
+- Die Gruppe hat **3 bis 6 Jugendliche**. Jede Aktion muss zu dritt funktionieren: `zu3` ist der Hinweis auf der
+  Karte („Zu dritt: …“), wenn die allgemeine Regel (Leitung spielt mit, ein Team gegen die Uhr) nicht reicht.
+- `wann` (`Start`, `Mitte`, `Schluss`) sagt, wann eine Aktion in der Einheit läuft. Jeder Track braucht eine
+  Aktion für den Start. Die Leitungsseite zeigt daraus den Ablauf je Track.
+- Nichts, was bloßstellt: keine Berührung, die man nicht sieht; Augen zu ist freiwillig; Vorwürfe und
+  Täterrollen spricht die Leitung oder eine Karte, nie ein Gruppenmitglied.
+- Praxistest und Jugend-Kritik vom 14.11.2026 sind eingearbeitet (Widersprüche, Therapie-Sprech, Wiederholungen).
 
 Regeln für den Inhalt
 - Du-Form, kurze Sätze, trockener Humor. Kein Kinderkram, keine Moral am Ende.
