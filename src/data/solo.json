@@ -716,5 +716,461 @@
     "warum": "Wer sie bemerkt, ist schon nicht mehr dasselbe wie sie."
    }
   ]
+ },
+ {
+  "id": "s08",
+  "nr": "08",
+  "reihe": "Thema",
+  "thema": "Allein",
+  "headline": "Wen rufst du um zwei Uhr nachts an?",
+  "farbe": "#2FD3E6",
+  "datei": "Solo-08-Allein",
+  "wann": [
+   "Steht am Rand, wirkt angepasst oder unsichtbar.",
+   "Viele oberflächliche Kontakte, niemand Vertrautes.",
+   "Nach einem Wechsel: neue Gruppe, neue Schule, Freundschaft zerbrochen.",
+   "Sucht Nähe fast nur noch im Netz."
+  ],
+  "ziel": "Der Jugendliche versteht seinen Rückzug als Schutz, der inzwischen mehr kostet als bringt – und probiert einen einzigen kleinen Schritt auf jemanden zu.",
+  "clips": [
+   {
+    "titel": "Einsamkeit",
+    "kanal": "Dinge Erklärt – Kurzgesagt",
+    "url": "https://www.youtube.com/watch?v=DwqwRYe6fKA",
+    "dauer": "die ersten 6 Min."
+   }
+  ],
+  "quiz": [
+   {
+    "f": "Was ist Einsamkeit am ehesten?",
+    "o": [
+     "ein Charakterfehler",
+     "ein Alarmsignal wie Hunger",
+     "eine Ausrede",
+     "eine Frage des Alters"
+    ],
+    "r": 1,
+    "warum": "Sie zeigt, dass etwas Lebenswichtiges fehlt."
+   },
+   {
+    "f": "Kann man unter vielen Leuten einsam sein?",
+    "o": [
+     "nein",
+     "ja",
+     "nur Erwachsene",
+     "nur im Netz"
+    ],
+    "r": 1,
+    "warum": "Es zählt, ob jemand dich wirklich kennt."
+   },
+   {
+    "f": "Was macht lange Einsamkeit mit dem Blick auf andere?",
+    "o": [
+     "freundlicher",
+     "misstrauischer",
+     "gar nichts",
+     "genauer"
+    ],
+    "r": 1,
+    "warum": "Neutrale Gesichter wirken plötzlich feindlich."
+   },
+   {
+    "f": "Was schützt am meisten?",
+    "o": [
+     "viele Follower",
+     "eine große Clique",
+     "ein Mensch, dem man etwas Echtes erzählen kann",
+     "beliebt sein"
+    ],
+    "r": 2,
+    "warum": "Der Sprung von null auf eins ist der größte."
+   },
+   {
+    "f": "„Mal sehen“ auf eine Einladung ist oft …",
+    "o": [
+     "Desinteresse",
+     "Schutz vor einer Enttäuschung",
+     "Unhöflichkeit",
+     "Zeitmangel"
+    ],
+    "r": 1,
+    "warum": "Wer nicht hingeht, kann nicht abgelehnt werden."
+   },
+   {
+    "f": "Wie entsteht Nähe am ehesten?",
+    "o": [
+     "durch kleine echte Sätze, die mit der Zeit mehr werden",
+     "durch Geschenke",
+     "durch gemeinsames Schweigen im Chat",
+     "von allein"
+    ],
+    "r": 0,
+    "warum": "Schritt für Schritt – nicht alles auf einmal."
+   },
+   {
+    "f": "Du denkst: „Die mögen mich nicht.“ Was ist das zuerst?",
+    "o": [
+     "eine Tatsache",
+     "ein Gedanke, den man prüfen kann",
+     "ein Beweis",
+     "ein Urteil"
+    ],
+    "r": 1,
+    "warum": "Alarm oder Beweis? Nachfragen klärt es."
+   },
+   {
+    "f": "Wer ist auch ein Teil deines Netzes?",
+    "o": [
+     "nur Gleichaltrige",
+     "auch Erwachsene, Tiere und Leute aus dem Netz",
+     "nur Familie",
+     "niemand"
+    ],
+    "r": 1,
+    "warum": "Verlässlichkeit zählt, nicht die Sorte Mensch."
+   }
+  ]
+ },
+ {
+  "id": "s09",
+  "nr": "09",
+  "reihe": "Thema",
+  "thema": "Rausch",
+  "headline": "Wofür brauchst du es?",
+  "farbe": "#FFD60A",
+  "datei": "Solo-09-Rausch",
+  "wann": [
+   "Konsum ist bekannt oder wird vermutet – und Verbote haben nichts verändert.",
+   "Der Jugendliche spricht das Thema selbst an oder prahlt damit.",
+   "Rauschmittel dienen erkennbar einem Zweck: schlafen, runterkommen, dazugehören.",
+   "Auch vorbeugend, wenn das Umfeld konsumiert."
+  ],
+  "ziel": "Der Jugendliche benennt, welche Aufgabe das Mittel für ihn erfüllt und was es ihn kostet. Eine Abstinenzzusage ist nicht das Ziel dieser Stunde.",
+  "clips": [
+   {
+    "titel": "Wie schädlich ist Cannabis für das Gehirn Jugendlicher?",
+    "kanal": "drugcom.de",
+    "url": "https://www.youtube.com/watch?v=IbjiA_5BZ14",
+    "dauer": "ganz schauen"
+   }
+  ],
+  "quiz": [
+   {
+    "f": "Bis wann wird das Gehirn noch umgebaut?",
+    "o": [
+     "bis 12",
+     "bis 16",
+     "bis Mitte 20",
+     "gar nicht mehr"
+    ],
+    "r": 2,
+    "warum": "Deshalb wirken Rauschmittel in der Jugend stärker nach."
+   },
+   {
+    "f": "Wie schnell kann Nikotin bei Jugendlichen abhängig machen?",
+    "o": [
+     "nach Jahren",
+     "schon nach wenigen Wochen",
+     "nie",
+     "nur bei Zigaretten"
+    ],
+    "r": 1,
+    "warum": "Auch bei Vapes – der Geschmack ändert nichts am Stoff."
+   },
+   {
+    "f": "Früh und oft kiffen erhöht das Risiko für …",
+    "o": [
+     "bessere Noten",
+     "Psychosen",
+     "Muskelwachstum",
+     "nichts"
+    ],
+    "r": 1,
+    "warum": "Besonders bei starkem Cannabis und frühem Beginn."
+   },
+   {
+    "f": "„Ich kann jederzeit aufhören.“ Wie prüft man das?",
+    "o": [
+     "gar nicht",
+     "mit einer Pause von ein paar Tagen",
+     "indem man es oft sagt",
+     "mit einem Online-Test"
+    ],
+    "r": 1,
+    "warum": "Was in der Pause passiert, ist die Antwort."
+   },
+   {
+    "f": "Jemand ist nach dem Trinken nicht mehr ansprechbar. Was tun?",
+    "o": [
+     "ausschlafen lassen",
+     "kalt duschen",
+     "112 rufen und dableiben",
+     "weggehen"
+    ],
+    "r": 2,
+    "warum": "Bewusstlose können ersticken. Zeit zählt, nicht der Ärger."
+   },
+   {
+    "f": "Warum nehmen Menschen Rauschmittel?",
+    "o": [
+     "weil sie nichts bringen",
+     "weil sie etwas bewirken, das gerade fehlt",
+     "nur aus Dummheit",
+     "nur wegen der Werbung"
+    ],
+    "r": 1,
+    "warum": "Wer das Wofür kennt, kann nach anderen Wegen suchen."
+   },
+   {
+    "f": "Welches Rauschmittel richtet insgesamt den größten Schaden an?",
+    "o": [
+     "Cannabis",
+     "Alkohol",
+     "Koffein",
+     "Nikotin-Kaugummi"
+    ],
+    "r": 1,
+    "warum": "So das Ergebnis einer bekannten britischen Untersuchung."
+   },
+   {
+    "f": "Ohne das Mittel geht es jemandem deutlich schlechter. Das spricht …",
+    "o": [
+     "dafür, dass es ihm guttut",
+     "für eine Gewöhnung",
+     "für gar nichts",
+     "für zu wenig Schlaf"
+    ],
+    "r": 1,
+    "warum": "Siehe Yusufs drei Tage."
+   }
+  ]
+ },
+ {
+  "id": "s10",
+  "nr": "10",
+  "reihe": "Thema",
+  "thema": "Null Bock",
+  "headline": "Wovor schützt dich „mir egal“?",
+  "farbe": "#FFB21A",
+  "datei": "Solo-10-Null-Bock",
+  "wann": [
+   "Verweigert Aufgaben oder gibt nichts ab; wirkt gleichgültig.",
+   "Fehlt häufig, verschläft, hat „Bauchweh“ vor bestimmten Tagen.",
+   "Hohe Fähigkeiten, wenig Ergebnis.",
+   "Vor einem Wechsel: Praktikum, neue Schule, Lehrstelle."
+  ],
+  "ziel": "Der Jugendliche unterscheidet bei sich selbst zwischen „kann nicht“, „will nicht“ und „trau mich nicht“ – und erlebt mit einem Fünf-Minuten-Versuch, dass Anfangen möglich ist.",
+  "clips": [
+   {
+    "titel": "Prokrastination – Warum schieben wir so viel auf?",
+    "kanal": "Quarks Dimension Ralph",
+    "url": "https://www.youtube.com/watch?v=QNyKtYJ-e7Y",
+    "dauer": "die ersten 5 Min."
+   }
+  ],
+  "quiz": [
+   {
+    "f": "Was schiebt man beim Aufschieben eigentlich weg?",
+    "o": [
+     "die Zeit",
+     "das unangenehme Gefühl",
+     "den Stift",
+     "die Lehrerin"
+    ],
+    "r": 1,
+    "warum": "Angst, Überforderung, Langeweile – nicht die Aufgabe selbst."
+   },
+   {
+    "f": "Wann kommt Motivation meistens?",
+    "o": [
+     "vorher, wenn man lange wartet",
+     "nach dem Anfangen",
+     "am Wochenende",
+     "nie"
+    ],
+    "r": 1,
+    "warum": "Erst tun, dann Lust – nicht umgekehrt."
+   },
+   {
+    "f": "„Mir egal“ bedeutet oft …",
+    "o": [
+     "wirklich egal",
+     "zu wichtig, um zu scheitern",
+     "Müdigkeit",
+     "Hunger"
+    ],
+    "r": 1,
+    "warum": "Wer es nicht versucht, kann nicht versagen."
+   },
+   {
+    "f": "Was hilft am ehesten beim Anfangen?",
+    "o": [
+     "auf Lust warten",
+     "ein sehr kleiner erster Schritt",
+     "sich beschimpfen",
+     "alles auf einmal planen"
+    ],
+    "r": 1,
+    "warum": "Fünf Minuten sind leichter als „das Referat“."
+   },
+   {
+    "f": "Jemand macht eine Aufgabe nicht. Woran kann es liegen?",
+    "o": [
+     "nur an Faulheit",
+     "an Können, Wollen oder Trauen",
+     "nur am Handy",
+     "an der Uhrzeit"
+    ],
+    "r": 1,
+    "warum": "Drei verschiedene Gründe brauchen drei verschiedene Lösungen."
+   },
+   {
+    "f": "Hilft es, sich fürs Aufschieben fertigzumachen?",
+    "o": [
+     "ja, das spornt an",
+     "nein, es macht das nächste Mal schwerer",
+     "nur bei Mathe",
+     "manchmal"
+    ],
+    "r": 1,
+    "warum": "Mehr mieses Gefühl heißt mehr Ausweichen."
+   },
+   {
+    "f": "Warum fühlt sich Aufschieben kurz gut an?",
+    "o": [
+     "weil die Aufgabe weg ist",
+     "weil das miese Gefühl kurz weg ist",
+     "weil man klüger wird",
+     "gar nicht"
+    ],
+    "r": 1,
+    "warum": "Die Erleichterung ist echt – und hält nicht."
+   },
+   {
+    "f": "Was ist bei Überforderung der klügste Satz?",
+    "o": [
+     "„Ist mir egal.“",
+     "„Ich kriege es nicht hin – ich brauche Hilfe.“",
+     "„Mach ich morgen.“",
+     "gar keiner"
+    ],
+    "r": 1,
+    "warum": "Der teuerste Satz im Moment, der billigste auf Dauer."
+   }
+  ]
+ },
+ {
+  "id": "s11",
+  "nr": "11",
+  "reihe": "Thema",
+  "thema": "Angst",
+  "headline": "Was machst du nicht, weil sie es nicht erlaubt?",
+  "farbe": "#4D94FF",
+  "datei": "Solo-11-Angst",
+  "wann": [
+   "Meidet bestimmte Orte, Fächer, Wege oder Menschen – mit immer neuen Begründungen.",
+   "Körperliche Beschwerden ohne Befund vor bestimmten Situationen.",
+   "Panikattacken.",
+   "Wirkt „unmotiviert“, wo eigentlich Angst vor Bewertung steckt."
+  ],
+  "ziel": "Der Jugendliche erkennt seine Umwege als Angst, versteht, warum Ausweichen sie vergrößert, und plant eine erste, wirklich kleine Stufe.",
+  "clips": [
+   {
+    "titel": "Wie Angst dein Leben beeinflusst – und was du dagegen tun kannst",
+    "kanal": "Quarks Dimension Ralph",
+    "url": "https://www.youtube.com/watch?v=ZSPEJVzsovo",
+    "dauer": "die ersten 6 Min."
+   }
+  ],
+  "quiz": [
+   {
+    "f": "Wozu ist Angst eigentlich da?",
+    "o": [
+     "zu nichts",
+     "zum Schutz vor Gefahr",
+     "als Strafe",
+     "zum Angeben"
+    ],
+    "r": 1,
+    "warum": "Ein Alarmsystem – manchmal zu empfindlich eingestellt."
+   },
+   {
+    "f": "Ist eine Panikattacke gefährlich?",
+    "o": [
+     "ja, lebensgefährlich",
+     "nein, sie fühlt sich nur so an",
+     "nur nachts",
+     "nur bei Kindern"
+    ],
+    "r": 1,
+    "warum": "Der Körper schlägt Alarm, ohne dass Gefahr besteht."
+   },
+   {
+    "f": "Was passiert mit der Angst, wenn man immer ausweicht?",
+    "o": [
+     "sie verschwindet",
+     "sie wird größer",
+     "sie bleibt gleich",
+     "sie wird lustig"
+    ],
+    "r": 1,
+    "warum": "Das Gehirn lernt: Das war gefährlich."
+   },
+   {
+    "f": "Was passiert, wenn man in der Situation bleibt?",
+    "o": [
+     "die Angst steigt für immer",
+     "sie steigt und fällt dann von allein",
+     "man fällt um",
+     "nichts"
+    ],
+    "r": 1,
+    "warum": "Diese Erfahrung macht nur, wer bleibt."
+   },
+   {
+    "f": "Wie übt man am besten gegen eine Angst?",
+    "o": [
+     "alles auf einmal",
+     "in kleinen Stufen von leicht nach schwer",
+     "gar nicht",
+     "nur im Kopf"
+    ],
+    "r": 1,
+    "warum": "Jede geschaffte Stufe macht die nächste kleiner."
+   },
+   {
+    "f": "Woran erkennt man Angst bei anderen oft?",
+    "o": [
+     "immer am Zittern",
+     "an dem, was sie vermeiden",
+     "an der Kleidung",
+     "gar nicht"
+    ],
+    "r": 1,
+    "warum": "„Keine Lust“ heißt manchmal „trau mich nicht“."
+   },
+   {
+    "f": "Was bedeutet Mut?",
+    "o": [
+     "keine Angst haben",
+     "es trotz Angst tun",
+     "laut sein",
+     "nie nachdenken"
+    ],
+    "r": 1,
+    "warum": "Ohne Angst bräuchte man keinen Mut."
+   },
+   {
+    "f": "Was hilft dem Körper bei Panik am schnellsten?",
+    "o": [
+     "schnell einatmen",
+     "lang ausatmen",
+     "die Luft anhalten",
+     "rennen"
+    ],
+    "r": 1,
+    "warum": "Langes Ausatmen bremst den Alarm."
+   }
+  ]
  }
 ]
