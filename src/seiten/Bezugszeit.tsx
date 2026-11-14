@@ -310,7 +310,7 @@ export function BezugszeitSeite({ onZurueck }: { onZurueck: () => void }) {
         ))}
       </ul>
       <p className="bz-hinweis">
-        Videos: Geprüft ist nur, dass sie unter Titel und Kanal abrufbar waren – bitte vor der Stunde selbst ansehen. Weitere Themen der Landkarte folgen.
+        Videos: Geprüft ist nur, dass sie unter Titel und Kanal abrufbar waren – bitte vor der Stunde selbst ansehen. Zu jedem Thema der Landkarte (Heft #01) gibt es ein Themenheft.
       </p>
       {quiz ? <Quiz key={quiz.id} heft={quiz} onClose={() => setQuiz(null)} /> : null}
     </article>

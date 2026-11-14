@@ -1172,5 +1172,682 @@
     "warum": "Langes Ausatmen bremst den Alarm."
    }
   ]
+ },
+ {
+  "id": "s12",
+  "nr": "12",
+  "reihe": "Thema",
+  "thema": "Nähe",
+  "headline": "Wird dein Leben größer oder kleiner?",
+  "farbe": "#FF7AC3",
+  "datei": "Solo-12-Naehe",
+  "wann": [
+   "Erste Beziehung, Liebeskummer oder eine Beziehung, die den Jugendlichen kleiner macht.",
+   "Kontrolle oder Druck sind erkennbar – ausgeübt oder erlitten.",
+   "Vorstellungen über Sex stammen vor allem aus Pornos.",
+   "Der Jugendliche bringt das Thema selbst mit."
+  ],
+  "ziel": "Der Jugendliche hat eigene Prüfsteine dafür, ob ihm eine Beziehung guttut, und weiß, was Einverständnis bedeutet – als jemand, der gefragt wird, und als jemand, der fragt.",
+  "clips": [
+   {
+    "titel": "Einverständnis – so einfach wie Tee",
+    "kanal": "GONEASTRAYfilms",
+    "url": "https://www.youtube.com/watch?v=2ovcQgIN5G4",
+    "dauer": "ca. 3 Min."
+   }
+  ],
+  "quiz": [
+   {
+    "f": "Starke Eifersucht ist …",
+    "o": [
+     "ein Liebesbeweis",
+     "kein Beweis für Liebe",
+     "immer harmlos",
+     "ein Kompliment"
+    ],
+    "r": 1,
+    "warum": "Sie sagt etwas über die Angst des einen, nichts über die Liebe."
+   },
+   {
+    "f": "Wann ist ein Ja ein echtes Ja?",
+    "o": [
+     "wenn man lange genug gefragt hat",
+     "wenn auch ein Nein möglich wäre",
+     "wenn niemand widerspricht",
+     "immer"
+    ],
+    "r": 1,
+    "warum": "Ohne freie Wahl ist es kein Einverständnis."
+   },
+   {
+    "f": "Darf man ein Ja zurücknehmen?",
+    "o": [
+     "nein",
+     "nur vorher",
+     "ja, jederzeit",
+     "nur schriftlich"
+    ],
+    "r": 2,
+    "warum": "Auch mittendrin."
+   },
+   {
+    "f": "Jemand ist betrunken und sagt Ja. Das ist …",
+    "o": [
+     "ein Ja",
+     "kein gültiges Ja",
+     "egal",
+     "ein halbes Ja"
+    ],
+    "r": 1,
+    "warum": "Wer nicht klar entscheiden kann, kann nicht zustimmen."
+   },
+   {
+    "f": "Was zeigen Pornos?",
+    "o": [
+     "wie Sex normalerweise ist",
+     "gespielte, geschnittene Szenen",
+     "Aufklärung",
+     "die Wahrheit"
+    ],
+    "r": 1,
+    "warum": "Darsteller, Drehbuch, Schnitt – wie im Actionfilm."
+   },
+   {
+    "f": "Der Partner will dein Passwort „als Vertrauensbeweis“. Das ist …",
+    "o": [
+     "Vertrauen",
+     "Kontrolle",
+     "normal",
+     "romantisch"
+    ],
+    "r": 1,
+    "warum": "Vertrauen braucht keinen Zugriff."
+   },
+   {
+    "f": "Woran erkennt man eine gute Beziehung am ehesten?",
+    "o": [
+     "man ist nie getrennt",
+     "das eigene Leben wird größer",
+     "man streitet nie",
+     "der andere bestimmt"
+    ],
+    "r": 1,
+    "warum": "Freunde, Hobbys, eigene Meinung – alles bleibt."
+   },
+   {
+    "f": "Jemand drängt dich. Was ist erlaubt?",
+    "o": [
+     "nachgeben, damit Ruhe ist",
+     "Nein sagen – ohne Begründung",
+     "sich entschuldigen",
+     "nichts"
+    ],
+    "r": 1,
+    "warum": "Ein Nein braucht keinen Grund."
+   }
+  ]
+ },
+ {
+  "id": "s13",
+  "nr": "13",
+  "reihe": "Thema",
+  "thema": "Zuhause",
+  "headline": "Beides stimmt gleichzeitig.",
+  "farbe": "#C6F02C",
+  "datei": "Solo-13-Zuhause",
+  "wann": [
+   "Nach enttäuschenden Besuchstagen, abgesagten Kontakten, Wochenenden zu Hause.",
+   "Der Jugendliche schwankt zwischen Idealisieren und Abwerten der Eltern.",
+   "Er trägt erkennbar Verantwortung für Eltern oder Geschwister.",
+   "Vor einer Rückkehr nach Hause oder einer Entscheidung über den Wohnort."
+  ],
+  "ziel": "Der Jugendliche darf gemischte Gefühle gegenüber seiner Familie haben und aussprechen, ohne dass jemand Partei ergreift – und unterscheidet, was er von zu Hause mitnehmen will.",
+  "clips": [],
+  "quiz": [
+   {
+    "f": "Kann man jemanden lieben und gleichzeitig wütend auf ihn sein?",
+    "o": [
+     "nein",
+     "ja",
+     "nur kurz",
+     "nur Erwachsene"
+    ],
+    "r": 1,
+    "warum": "Gemischte Gefühle sind bei Familie die Regel."
+   },
+   {
+    "f": "Ein Kind tröstet ständig seine Mutter. Das ist …",
+    "o": [
+     "seine Aufgabe",
+     "eine Aufgabe, die Erwachsenen gehört",
+     "egal",
+     "ein Hobby"
+    ],
+    "r": 1,
+    "warum": "Es macht stark – und kostet die eigene Kindheit."
+   },
+   {
+    "f": "Wer es zu Hause schwer hatte, macht es später …",
+    "o": [
+     "immer genauso",
+     "meistens anders",
+     "immer schlimmer",
+     "gar nicht"
+    ],
+    "r": 1,
+    "warum": "Muster wiederholen sich nicht von selbst."
+   },
+   {
+    "f": "Warum verteidigen viele ihre Eltern, auch wenn es schwer war?",
+    "o": [
+     "aus Dummheit",
+     "aus Treue – sie gehören zu einem",
+     "weil sie lügen",
+     "aus Langeweile"
+    ],
+    "r": 1,
+    "warum": "Wer die Eltern angreift, greift ein Stück von einem selbst an."
+   },
+   {
+    "f": "Muss man verzeihen, um weiterzukommen?",
+    "o": [
+     "ja, sofort",
+     "nein – das entscheidet jeder selbst und in seinem Tempo",
+     "ja, immer",
+     "nur an Feiertagen"
+    ],
+    "r": 1,
+    "warum": "Verzeihen auf Befehl funktioniert nicht."
+   },
+   {
+    "f": "Ist ein Kind schuld, wenn Eltern sich trennen oder nicht kommen?",
+    "o": [
+     "ja",
+     "nein",
+     "manchmal",
+     "zur Hälfte"
+    ],
+    "r": 1,
+    "warum": "Das sind Entscheidungen von Erwachsenen."
+   },
+   {
+    "f": "Was darf man von zu Hause mitnehmen?",
+    "o": [
+     "alles oder nichts",
+     "das Gute – und den Rest dalassen",
+     "nur Geld",
+     "nichts"
+    ],
+    "r": 1,
+    "warum": "Man muss nicht die ganze Kiste nehmen."
+   },
+   {
+    "f": "Jemand vermisst einen Menschen, der ihm wehgetan hat. Das ist …",
+    "o": [
+     "verrückt",
+     "verständlich",
+     "verboten",
+     "gelogen"
+    ],
+    "r": 1,
+    "warum": "Vermissen und Verletztsein schließen sich nicht aus."
+   }
+  ]
+ },
+ {
+  "id": "s14",
+  "nr": "14",
+  "reihe": "Thema",
+  "thema": "Später",
+  "headline": "Welchen Plan sagst du keinem?",
+  "farbe": "#2EE6A8",
+  "datei": "Solo-14-Spaeter",
+  "wann": [
+   "Vor Entscheidungen: Praktikum, Lehrstelle, Schulwechsel, Auszug.",
+   "„Mir doch egal, was wird“ – bei einem Jugendlichen, dem es nicht egal ist.",
+   "Nach einem Rückschlag (Absage, Abbruch, Verfahren).",
+   "Wenn die Erwachsenen mehr Pläne für ihn haben als er selbst."
+  ],
+  "ziel": "Der Jugendliche spricht einen eigenen Plan aus – oder malt sich wenigstens einen einzigen guten Tag aus – und erlebt, dass er nicht kleingemacht wird.",
+  "clips": [
+   {
+    "titel": "So krempelst du dein Leben um!",
+    "kanal": "Dinge Erklärt – Kurzgesagt",
+    "url": "https://www.youtube.com/watch?v=OSk0AUT4_8o",
+    "dauer": "die ersten 6 Min."
+   }
+  ],
+  "quiz": [
+   {
+    "f": "Muss man mit 15 wissen, was man wird?",
+    "o": [
+     "ja, unbedingt",
+     "nein – nur den nächsten Versuch",
+     "ja, sonst ist es zu spät",
+     "das entscheiden andere"
+    ],
+    "r": 1,
+    "warum": "Die meisten Wege haben Umwege."
+   },
+   {
+    "f": "Warum fällt es schwer, heute etwas für später zu tun?",
+    "o": [
+     "aus Faulheit",
+     "das spätere Ich fühlt sich fremd an",
+     "weil es sinnlos ist",
+     "wegen der Schule"
+    ],
+    "r": 1,
+    "warum": "Für einen Fremden strengt man sich weniger an."
+   },
+   {
+    "f": "Was haben viele Menschen mit schwerem Start gemeinsam, bei denen es gut ausging?",
+    "o": [
+     "Glück im Lotto",
+     "einen Wendepunkt: ein Mensch, eine Arbeit, ein Ort",
+     "reiche Eltern",
+     "nichts"
+    ],
+    "r": 1,
+    "warum": "Oft reichte eine Person, die blieb."
+   },
+   {
+    "f": "Ein Plan ist am stärksten, wenn er …",
+    "o": [
+     "groß und ungenau ist",
+     "einen konkreten nächsten Schritt hat",
+     "geheim bleibt",
+     "von anderen stammt"
+    ],
+    "r": 1,
+    "warum": "„Diese Woche anrufen“ schlägt „irgendwann“."
+   },
+   {
+    "f": "Jemand nennt deinen Plan „unrealistisch“. Was sagt das?",
+    "o": [
+     "dass er falsch ist",
+     "etwas über die Vorstellung dieser Person",
+     "dass du aufgeben sollst",
+     "gar nichts"
+    ],
+    "r": 1,
+    "warum": "Prüfen kannst du ihn nur durch den nächsten Schritt."
+   },
+   {
+    "f": "Was hilft, sich die Zukunft vorzustellen?",
+    "o": [
+     "ein ganzes Leben planen",
+     "einen einzigen normalen Tag ausmalen",
+     "gar nicht daran denken",
+     "Horoskope"
+    ],
+    "r": 1,
+    "warum": "Ein Dienstag ist greifbarer als „die Zukunft“."
+   },
+   {
+    "f": "Legt deine Vergangenheit fest, was aus dir wird?",
+    "o": [
+     "ja, vollständig",
+     "nein – sie macht manches schwerer, nicht unmöglich",
+     "ja, bis 30",
+     "nur bei anderen"
+    ],
+    "r": 1,
+    "warum": "Start und Ziel sind zwei verschiedene Dinge."
+   },
+   {
+    "f": "Wer ist für einen Wendepunkt oft entscheidend?",
+    "o": [
+     "ein Mensch, der an einen glaubt",
+     "ein Algorithmus",
+     "der Zufall allein",
+     "niemand"
+    ],
+    "r": 0,
+    "warum": "Deshalb lohnt die Frage: Wer ist das bei dir?"
+   }
+  ]
+ },
+ {
+  "id": "s15",
+  "nr": "15",
+  "reihe": "Thema",
+  "thema": "Leer",
+  "headline": "Nicht traurig. Das wäre wenigstens ein Gefühl.",
+  "farbe": "#4D94FF",
+  "datei": "Solo-15-Leer",
+  "wann": [
+   "Rückzug, Müdigkeit, Interessenverlust über mehr als zwei Wochen.",
+   "Gereiztheit oder Gleichgültigkeit, wo früher Lebendigkeit war.",
+   "„Wenn alles leer ist“ wurde auf der Landkarte als „brennt“ angekreuzt.",
+   "Nach Verlusten, Trennungen, Einrichtungswechseln."
+  ],
+  "ziel": "Der Jugendliche erkennt seinen Zustand als etwas, das er hat und das sich verändern kann, weiß, mit wem er über dunkle Gedanken sprechen kann – und probiert eine sehr kleine Aktivität aus.",
+  "clips": [
+   {
+    "titel": "Depressionen – einfach erklärt",
+    "kanal": "iks Institut Kinderseele Schweiz",
+    "url": "https://www.youtube.com/watch?v=tMsA-AZzy5g",
+    "dauer": "ganz schauen"
+   }
+  ],
+  "quiz": [
+   {
+    "f": "Monatelang ist alles leer und nichts macht mehr Spaß. Das ist am ehesten …",
+    "o": [
+     "Faulheit",
+     "ein Zustand, der einen Namen hat und behandelbar ist",
+     "schlechtes Wetter",
+     "Pubertät"
+    ],
+    "r": 1,
+    "warum": "Depression ist eine Erkrankung, kein Charakter."
+   },
+   {
+    "f": "Muss man traurig sein, um depressiv zu sein?",
+    "o": [
+     "ja, immer",
+     "nein – oft ist es Leere oder Gereiztheit",
+     "nur Mädchen",
+     "nur im Winter"
+    ],
+    "r": 1,
+    "warum": "Bei Jugendlichen zeigt es sich häufig als Leere, Müdigkeit oder Wut."
+   },
+   {
+    "f": "„Es wird nie besser“ ist in so einer Zeit …",
+    "o": [
+     "eine Tatsache",
+     "ein Anzeichen der Verstimmung",
+     "ein guter Rat",
+     "eine Vorhersage"
+    ],
+    "r": 1,
+    "warum": "Der Kopf färbt in dieser Zeit alles dunkel."
+   },
+   {
+    "f": "Was hilft eher?",
+    "o": [
+     "warten, bis die Lust zurückkommt",
+     "kleine Dinge trotzdem tun",
+     "sich zusammenreißen",
+     "nichts"
+    ],
+    "r": 1,
+    "warum": "Erst tun, dann fühlen – nicht umgekehrt."
+   },
+   {
+    "f": "Macht es Suizidgedanken schlimmer, wenn man jemanden danach fragt?",
+    "o": [
+     "ja",
+     "nein – es entlastet eher",
+     "manchmal",
+     "das weiß niemand"
+    ],
+    "r": 1,
+    "warum": "Das ist gut untersucht: Fragen schadet nicht."
+   },
+   {
+    "f": "Ein Freund sagt: „Ohne mich wäre alles besser.“ Was tust du?",
+    "o": [
+     "für dich behalten, er hat es dir anvertraut",
+     "einem Erwachsenen sagen, dem du traust",
+     "einen Witz machen",
+     "das Thema wechseln"
+    ],
+    "r": 1,
+    "warum": "Dieses Geheimnis ist zu schwer für eine Person allein."
+   },
+   {
+    "f": "Wen kann man Tag und Nacht anrufen?",
+    "o": [
+     "niemanden",
+     "das Kanner-Jugendtelefon 116 111 und den Notruf 112",
+     "nur die Schule",
+     "nur die Eltern"
+    ],
+    "r": 1,
+    "warum": "Die Nummern stehen auf der Karte."
+   },
+   {
+    "f": "Wie lange dauert so ein Zustand?",
+    "o": [
+     "für immer",
+     "er geht vorbei – mit Hilfe meist schneller",
+     "genau eine Woche",
+     "bis zum 18. Geburtstag"
+    ],
+    "r": 1,
+    "warum": "Auch wenn es sich nicht so anfühlt."
+   }
+  ]
+ },
+ {
+  "id": "s16",
+  "nr": "16",
+  "reihe": "Thema",
+  "thema": "Mist gebaut",
+  "headline": "Du hast etwas getan. Du bist es nicht.",
+  "farbe": "#FF5A36",
+  "datei": "Solo-16-Mist-gebaut",
+  "wann": [
+   "Nach einem Vorfall mit Folgen: Anzeige, Ausschluss, Schaden – wenn die erste Aufregung vorbei ist.",
+   "Der Jugendliche stempelt sich selbst ab („Bin halt kriminell“).",
+   "Regelverstöße in der Gruppe, bei denen er mitzieht.",
+   "Vor einem Termin bei Polizei, Gericht oder Jugendschutz, um die eigene Haltung zu klären."
+  ],
+  "ziel": "Der Jugendliche trennt, was er getan hat, von dem, was er ist, übernimmt seinen Anteil – nicht mehr und nicht weniger – und macht einen ersten Schritt zur Wiedergutmachung.",
+  "clips": [
+   {
+    "titel": "Das Asch-Experiment: So manipuliert uns die Gruppe",
+    "kanal": "Quarks",
+    "url": "https://www.youtube.com/watch?v=I40g6U3K7hc",
+    "dauer": "die ersten 5 Min."
+   }
+  ],
+  "quiz": [
+   {
+    "f": "Was ist der Unterschied zwischen Schuld und Scham?",
+    "o": [
+     "Es gibt keinen.",
+     "Schuld: Ich habe etwas getan. Scham: Ich bin so.",
+     "Scham ist schlimmer bestraft.",
+     "Schuld haben nur Erwachsene."
+    ],
+    "r": 1,
+    "warum": "Mit Schuld kann man etwas tun. Scham lähmt."
+   },
+   {
+    "f": "Wann gehen Jugendliche mehr Risiko ein?",
+    "o": [
+     "allein",
+     "wenn Gleichaltrige dabei sind",
+     "morgens",
+     "nie"
+    ],
+    "r": 1,
+    "warum": "Die Gruppe verschiebt, was sich normal anfühlt."
+   },
+   {
+    "f": "Die meisten, die mit 15 Mist bauen, …",
+    "o": [
+     "bleiben für immer dabei",
+     "hören bis Mitte 20 damit auf",
+     "werden Verbrecher",
+     "haben Pech"
+    ],
+    "r": 1,
+    "warum": "Die Kurve fällt bei fast allen."
+   },
+   {
+    "f": "„Ich bin halt so einer“ führt meistens zu …",
+    "o": [
+     "Besserung",
+     "mehr vom Gleichen",
+     "Ruhe",
+     "nichts"
+    ],
+    "r": 1,
+    "warum": "Wer sich abstempelt, hat nichts mehr zu verlieren."
+   },
+   {
+    "f": "Die Idee kam von anderen, gemacht hast du es. Wer trägt Verantwortung?",
+    "o": [
+     "nur die anderen",
+     "alle – jeder seinen Teil",
+     "niemand",
+     "nur du"
+    ],
+    "r": 1,
+    "warum": "Erklären ist nicht dasselbe wie entschuldigen."
+   },
+   {
+    "f": "Was hilft nach einem Fehler am meisten?",
+    "o": [
+     "sich verstecken",
+     "einen Schritt zum Wiedergutmachen gehen",
+     "alles abstreiten",
+     "sich selbst fertigmachen"
+    ],
+    "r": 1,
+    "warum": "Reparieren verändert, wie andere und du selbst dich sehen."
+   },
+   {
+    "f": "Was ist ein guter Satz zum Aussteigen?",
+    "o": [
+     "„Ihr seid alle dumm.“",
+     "„Ich bin raus.“",
+     "gar keiner",
+     "„Macht ihr mal.“"
+    ],
+    "r": 1,
+    "warum": "Kurz, ohne Vorwurf, ohne Erklärung."
+   },
+   {
+    "f": "Heißt verstehen, warum etwas passiert ist, dass es okay war?",
+    "o": [
+     "ja",
+     "nein",
+     "manchmal",
+     "nur bei Kleinigkeiten"
+    ],
+    "r": 1,
+    "warum": "Gründe erklären – die Verantwortung bleibt."
+   }
+  ]
+ },
+ {
+  "id": "s17",
+  "nr": "17",
+  "reihe": "Thema",
+  "thema": "Körper",
+  "headline": "Niemand schaut so genau hin wie du.",
+  "farbe": "#FFD60A",
+  "datei": "Solo-17-Koerper",
+  "wann": [
+   "Versteckt den Körper, meidet Schwimmen, Sport, Fotos.",
+   "Ständige Vergleiche; viel Zeit vor dem Spiegel oder mit Fitness- und Schönheitsinhalten.",
+   "Abwertende Kommentare über den eigenen Körper.",
+   "Als „brennt“ auf der Landkarte angekreuzt."
+  ],
+  "ziel": "Der Jugendliche versteht, warum sein Blick auf sich selbst strenger ist als der aller anderen, und richtet die Aufmerksamkeit einmal darauf, was sein Körper kann.",
+  "clips": [
+   {
+    "titel": "Schönheitswahn im Netz: Schlechter Einfluss durch Influencer?",
+    "kanal": "ARD GESUND",
+    "url": "https://www.youtube.com/watch?v=S-i0TGztH0Y",
+    "dauer": "die ersten 6 Min."
+   }
+  ],
+  "quiz": [
+   {
+    "f": "Wer achtet am genauesten auf dein Aussehen?",
+    "o": [
+     "alle anderen",
+     "du selbst",
+     "deine Lehrer",
+     "Fremde im Bus"
+    ],
+    "r": 1,
+    "warum": "Andere bemerken viel weniger, als man glaubt."
+   },
+   {
+    "f": "Du weißt, dass ein Foto bearbeitet ist. Wirkt der Vergleich trotzdem?",
+    "o": [
+     "nein",
+     "ja, oft",
+     "nur bei Kindern",
+     "nur bei Mädchen"
+    ],
+    "r": 1,
+    "warum": "Das Gefühl kommt schneller als das Wissen."
+   },
+   {
+    "f": "Wer ist mit seinem Körper zufriedener?",
+    "o": [
+     "wer ihn oft im Spiegel prüft",
+     "wer darauf achtet, was er kann",
+     "wer viele Fotos macht",
+     "wer ihn versteckt"
+    ],
+    "r": 1,
+    "warum": "Funktion schlägt Aussehen."
+   },
+   {
+    "f": "Betrifft Unzufriedenheit mit dem Körper nur Mädchen?",
+    "o": [
+     "ja",
+     "nein, Jungen genauso",
+     "nur Erwachsene",
+     "nur Sportler"
+    ],
+    "r": 1,
+    "warum": "Bei Jungen geht es oft um Muskeln statt um Dünnsein."
+   },
+   {
+    "f": "Was zeigen Bilder von Influencern meistens?",
+    "o": [
+     "den Alltag",
+     "das beste von sehr vielen Fotos",
+     "die Wahrheit",
+     "nichts Besonderes"
+    ],
+    "r": 1,
+    "warum": "Licht, Winkel, Filter, Auswahl."
+   },
+   {
+    "f": "Was hilft dem eigenen Körperbild am ehesten?",
+    "o": [
+     "mehr Vergleiche",
+     "Accounts entfolgen, die runterziehen",
+     "strengere Regeln beim Essen",
+     "öfter wiegen"
+    ],
+    "r": 1,
+    "warum": "Weniger gezinkte Vergleiche, weniger Druck."
+   },
+   {
+    "f": "Jemand isst kaum noch und redet nur über sein Aussehen. Was tun?",
+    "o": [
+     "nichts, ist seine Sache",
+     "einem Erwachsenen sagen, dem man traut",
+     "ihn auslachen",
+     "Diät-Tipps geben"
+    ],
+    "r": 1,
+    "warum": "Das kann ernst werden und braucht Hilfe."
+   },
+   {
+    "f": "Wozu ist ein Körper zuerst da?",
+    "o": [
+     "um anderen zu gefallen",
+     "um dich durchs Leben zu tragen",
+     "für Fotos",
+     "für Vergleiche"
+    ],
+    "r": 1,
+    "warum": "Er muss dich tragen, nicht gefallen."
+   }
+  ]
  }
 ]
