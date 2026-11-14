@@ -7,8 +7,8 @@ const path = require('path')
 ;(async () => {
   const hier = __dirname
   const aus = path.join(hier, 'aus')
-  const pdfDir = path.join(hier, 'pdf')
-  fs.mkdirSync(pdfDir, { recursive: true })
+  // PDFs liegen neben der Toolbox (offline/ISA-App.html), damit ihre Links „real-talk/…pdf“ funktionieren
+  const offline = path.join(hier, '..', 'offline')
   const browser = await chromium.launch()
   let schlecht = 0
   for (const id of process.argv.slice(2)) {
@@ -51,6 +51,9 @@ const path = require('path')
     }
     console.log(id, bericht.map((b) => b.frei).join(' '))
     const name = await page.evaluate(() => document.querySelector('meta[name=datei]').content)
+    const ordner = await page.evaluate(() => (document.querySelector('meta[name=ordner]') || {}).content || 'real-talk')
+    const pdfDir = path.join(offline, ordner)
+    fs.mkdirSync(pdfDir, { recursive: true })
     const ziel = path.join(pdfDir, name + '.pdf')
     await page.pdf({ path: ziel, preferCSSPageSize: true, printBackground: true })
     console.log(id, '→', path.relative(hier, ziel), Math.round(fs.statSync(ziel).size / 1024), 'KB,', bericht.length, 'Seiten')

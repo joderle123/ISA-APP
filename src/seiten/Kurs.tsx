@@ -10,6 +10,7 @@ import { createPortal, flushSync } from 'react-dom'
 import type { Abschnitt, Einheit, Phase, Schritt } from '../kurs/typen'
 import { einheitById, einheitenVon, geplanteEinheiten, grundlagen, jahrByNr, jokerVon, kursjahre, modulById, moduleVon } from '../data/kurs'
 import { blattById } from '../data/blaetter'
+import { realTalkHeft, realTalkLink, REAL_TALK_JAHRESPLAN } from '../data/realtalk'
 import type { NummeriertesBlatt } from '../blatt/typen'
 import { heute, neueGruppe, useKursStand, type Gruppe } from '../kurs/fortschritt'
 import { loadPdfModule } from '../lib/loadPdf'
@@ -337,12 +338,23 @@ function Jahresweg({ jahrNr, gruppe, onOeffnen }: { jahrNr: number; gruppe: Grup
           Der Jahresweg
         </h2>
         <EinZeile text={jahr.faden} />
+        {jahrNr === 1 ? (
+          <p className="ku-realtalk">
+            <strong>REAL TALK</strong> – das Heft der Jugendlichen zu jedem Modul, gemacht wie ein Magazin: Szenen, Videos per QR-Code,
+            Gruppenspiele für 3 bis 6, Karten für die Tasche. Die letzten Seiten jedes Hefts sind für die Leitung.{' '}
+            <a className="ku-heft-link" href={REAL_TALK_JAHRESPLAN} target="_blank" rel="noopener">
+              <Icon name="download" />
+              Jahresplan (PDF)
+            </a>
+          </p>
+        ) : null}
       </div>
       <ol className="ku-treppe">
         {module.map((m) => {
           const fertig = m.einheiten.filter((id) => gruppe.erledigt[id]).length
           const ganz = m.einheiten.length > 0 && fertig === m.einheiten.length
           const aktuell = naechsteId ? m.einheiten.includes(naechsteId) : false
+          const heft = realTalkHeft(m.id)
           return (
             <li key={m.id} className={`ku-stufe ${aktuell ? 'aktuell' : ''} ${ganz ? 'fertig' : ''}`}>
               <div className="ku-stufe-kopf">
@@ -362,6 +374,13 @@ function Jahresweg({ jahrNr, gruppe, onOeffnen }: { jahrNr: number; gruppe: Grup
                     </span>
                     {fertig} von {m.einheiten.length} gehalten
                   </div>
+                  {heft ? (
+                    <a className="ku-heft-link" href={realTalkLink(heft.datei)} target="_blank" rel="noopener" title="Öffnet das Heft als PDF in einem neuen Tab">
+                      <Icon name="book" />
+                      REAL TALK #{heft.nr} · {heft.thema}
+                    </a>
+                  ) : null}
+                  {heft?.kino ? <p className="ku-heft-film">Film des Trimesters: {heft.kino}</p> : null}
                 </div>
               </div>
               <ul className="ku-kacheln">

@@ -9,6 +9,7 @@ import { ZeichnungSvg } from '../src/blatt/ZeichnungSvg'
 import { bildZeichnung, bildGueltig, palette } from '../src/blatt/zeichnung'
 import qrcode from 'qrcode-generator'
 import type { Heft, Frage, Track } from './typen'
+import { URHEBER } from '../src/lib/urheber'
 
 const HIER = dirname(fileURLToPath(import.meta.url))
 const fehler: string[] = []
@@ -300,7 +301,7 @@ function baue(d: Heft): string {
       <div class="sp2"><div class="kasten"><h2>Drucken</h2><ul>${lt.druck.map((x) => `<li>${tp(x)}</li>`).join('')}</ul></div>
         <div class="kasten g"><h2>Achtung bei dieser Ausgabe</h2><p>${t(lt.achtung)}</p></div></div>
       <div><h2>Fachlicher Hintergrund in Kürze</h2><p>${t(lt.hintergrund)}</p><p class="klein" style="margin-top:1.5mm">${t(lt.quellen)}</p></div>
-      <p class="klein">Alle Personen und Szenen im Heft sind erfunden. Zeichnungen: Open Peeps (Pablo Stanley, CC0), Tabler Icons (MIT). Schriften: Anton, Space Grotesk (SIL Open Font License), Permanent Marker (Apache-Lizenz 2.0). Stand: ${esc(d.stand)}.</p>
+      <p class="klein">Alle Personen und Szenen im Heft sind erfunden. Zeichnungen: Open Peeps (Pablo Stanley, CC0), Tabler Icons (MIT). Schriften: Anton, Space Grotesk (SIL Open Font License), Permanent Marker (Apache-Lizenz 2.0). ${esc(URHEBER.de)} Stand: ${esc(d.stand)}.</p>
     </div></div>`,
   })
 
@@ -359,7 +360,7 @@ function bauePlan(hefte: Heft[]): string {
         <div class="kasten g"><h2>Vor dem Film</h2><ul><li><span><strong>Selbst ansehen.</strong> Die Hinweise oben ersetzen das nicht – Sie kennen Ihre Gruppe.</span></li><li><span><strong>Altersfreigabe prüfen.</strong> Die Angaben stammen aus Kino- und Filmdatenbanken, nicht direkt von der FSK.</span></li><li><span><strong>Vorführrechte klären.</strong> Eine Vorführung in der Gruppe ist keine private Nutzung; es gelten die Regeln Ihrer Einrichtung.</span></li></ul></div>
         <div class="kasten"><h2>Im Heft dazu</h2><ul><li><span><strong>Bingo:</strong> neun Felder zum Abhaken während des Films.</span></li><li><span><strong>Nach dem Abspann:</strong> drei Fragen für die Runde.</span></li><li><span><strong>Wertung:</strong> Jede Person bewertet den Film.</span></li><li><span>Ein langer Film darf in zwei Teilen laufen.</span></li></ul></div>
       </div>
-      <p class="klein">Stand: ${esc(hefte[hefte.length - 1].stand)}. Zeichnungen: Open Peeps (Pablo Stanley, CC0), Tabler Icons (MIT). Schriften: Anton, Space Grotesk (SIL Open Font License), Permanent Marker (Apache-Lizenz 2.0).</p>
+      <p class="klein">Stand: ${esc(hefte[hefte.length - 1].stand)}. Zeichnungen: Open Peeps (Pablo Stanley, CC0), Tabler Icons (MIT). Schriften: Anton, Space Grotesk (SIL Open Font License), Permanent Marker (Apache-Lizenz 2.0). ${esc(URHEBER.de)}</p>
     </div></div>`,
   ]
   const body = seiten.map((h, i) => `<section class="seite lt plan" data-nr="${i + 1}">${h}<div class="fuss"><span class="mo">REAL TALK · Jahresplan</span><span></span><span class="nr">${i + 1}</span></div></section>`).join('\n')

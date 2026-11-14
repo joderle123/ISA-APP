@@ -2734,6 +2734,45 @@
     color: var(--muted);
     font-variant-numeric: tabular-nums;
   }
+  .ku-heft-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 8px;
+    padding: 4px 10px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    font-size: var(--fs-xs);
+    font-weight: 600;
+    color: var(--ink);
+    background: var(--surface, #fff);
+    text-decoration: none;
+  }
+  .ku-heft-link:hover {
+    border-color: var(--ink-2);
+  }
+  .ku-heft-link svg {
+    width: 14px;
+    height: 14px;
+    flex: none;
+  }
+  .ku-heft-film {
+    margin-top: 4px;
+    font-size: var(--fs-xs);
+    color: var(--muted);
+  }
+  .ku-realtalk {
+    margin-top: 10px;
+    max-width: 70ch;
+    font-size: var(--fs-sm);
+    line-height: 1.5;
+    color: var(--ink-2);
+  }
+  .ku-realtalk .ku-heft-link {
+    margin-top: 0;
+    margin-left: 4px;
+    vertical-align: middle;
+  }
   .ku-mini-balken {
     flex: 0 0 64px;
     height: 5px;

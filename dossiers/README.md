@@ -10,7 +10,7 @@ Seite) · Kino (nur in drei Ausgaben: ein Film je Trimester, mit Bingo und Frage
 drei Seiten nur für die Leitung.
 
     npx tsx --tsconfig tsconfig.scripts.json dossiers/bau.tsx m5      # HTML nach dossiers/aus/
-    node dossiers/pdf.cjs m5                                           # PDF nach dossiers/pdf/, prüft jede Seite
+    node dossiers/pdf.cjs m5                                           # PDF nach offline/real-talk/ (neben der Toolbox), prüft jede Seite
     BILDER=/pfad SEITEN=4,5 node dossiers/pdf.cjs m5                   # dazu Seitenbilder zum Ansehen
     npx tsx --tsconfig tsconfig.scripts.json dossiers/bau.tsx plan && node dossiers/pdf.cjs plan   # Jahresplan für die Leitung (alle Ausgaben, Videos, Filme)
     python3 dossiers/kurz.py m5                                        # Kurzfassung der Kurs-Einheiten
