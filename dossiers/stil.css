@@ -357,3 +357,9 @@ table.t td:first-child { font-weight: 700; white-space: nowrap; }
 .wk i { width: 8mm; height: 8mm; border: .5mm solid var(--k); background: #fff; }
 .skala.reg .zahlen span { width: 6.4mm; }
 .cv .zl { text-align: left; } .cv .zl div span { text-align: left; }
+
+.striche { margin-top: 2.4mm; display: grid; grid-template-columns: auto 1fr auto; gap: 3.6mm 2.6mm; align-items: center; }
+.striche .l { text-align: right; }
+.striche div { height: 0; border-top: .6mm solid var(--k); position: relative; }
+.striche div::before, .striche div::after { content: ''; position: absolute; top: -1.8mm; width: .6mm; height: 3mm; background: var(--k); }
+.striche div::before { left: 0; } .striche div::after { right: 0; }

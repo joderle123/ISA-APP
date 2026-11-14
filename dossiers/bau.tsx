@@ -64,6 +64,7 @@ function frage(f: Frage, i: number): string {
   if (f.raster) a += `<div class="raster" style="grid-template-columns:1fr repeat(${f.raster.spalten.length},auto)"><span></span>${f.raster.spalten.map((w) => `<b class="mo">${t(w)}</b>`).join('')}${f.raster.zeilen.map((z) => `<span>${t(z)}</span>${f.raster!.spalten.map(() => '<i></i>').join('')}`).join('')}</div>`
   if (f.preis) a += `<div class="preis"><span class="k mo">${t(f.preis.erste ?? 'Möglichkeit')}</span><span class="k mo">${t(f.preis.kopf[0])}</span><span class="k mo">${t(f.preis.kopf[1])}</span>${f.preis.optionen.map((o) => `<span class="o">${t(o)}</span><span></span><span></span>`).join('')}</div>`
   if (f.zahl) a += `<div class="zahl">${f.zahl.map((w) => `<div><span>${t(w)}</span><i></i></div>`).join('')}</div>`
+  if (f.striche) a += `<div class="striche">${f.striche.map((w) => `<span class="mo l">${t(w[0])}</span><div></div><span class="mo">${t(w[1])}</span>`).join('')}</div>`
   if (f.strich) a += `<div class="strich"><span class="mo">${t(f.strich[0])}</span><div></div><span class="mo">${t(f.strich[1])}</span></div>`
   if (f.feld) a += `<div class="feld" style="height:${f.feld}mm"></div>`
   if (f.linien) a += linien(f.linien)
