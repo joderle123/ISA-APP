@@ -295,7 +295,7 @@ function baue(d: Heft): string {
   if (neu) seiten.push({
     klasse: 'lt eng',
     html: `<div>${lkopf('Der Ablauf der Stunden')}<div class="inhalt">
-      <p class="klein">Jede Stunde ist ein Ablauf mit Stationen – in dieser Reihenfolge steht sie im Heft. Zeiten sind Richtwerte (100 Minuten mit Pause). Wird es eng: „Für dich“ kürzen, nicht die große Runde.</p>
+      <p class="klein">Zeiten sind Richtwerte (100 Minuten mit Pause). Wird es eng: „Für dich“ kürzen, nicht die große Runde. Niemand muss etwas vorspielen.</p>
       ${d.tracks.map((e, i) => `<div><h2>${einheit} ${z2(i + 1)} · ${t(e.titel)} (Einheit ${e.nr}) – ${t(e.stunde!.frage)}</h2>
         <table class="sd-abl"><colgroup><col style="width:27%"><col style="width:9%"><col style="width:15%"><col style="width:5%"><col></colgroup><tr><th>Station</th><th>Zeit</th><th>Form</th><th>S.</th><th>Darauf kommt es an</th></tr>
         ${stationen(e).map((x) => `<tr><td>${x.nr} ${esc(kurzName(x.s))}</td><td>${esc(x.s.zeit)}</td><td>${esc(x.s.wie)}</td><td>${seiteVon(i) + x.seite}</td><td>${t((e.leitung.stationen ?? [])[x.nr - 1] ?? '')}</td></tr>`).join('')}</table></div>`).join('')}

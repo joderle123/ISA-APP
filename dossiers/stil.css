@@ -566,6 +566,11 @@ table.t td:first-child { font-weight: 700; white-space: nowrap; }
 .sd-chat .kp .ic { width: 3.8mm; height: 3.8mm; }
 .sd-chat .z { display: grid; grid-template-columns: 12mm 17mm 1fr; gap: 2mm; align-items: baseline; font-size: 9.9pt; line-height: 1.32; }
 .sd-chat .z .u { color: var(--g); }
+.sd-chat.ohne .z { grid-template-columns: 30mm 1fr; font-size: 10.6pt; gap: 2.4mm; }
+.sd-chat.ohne .z > span:first-child { display: none; }
+.sd-chat.ohne .z.tut { grid-template-columns: 1fr; }
+.sd-chat.ohne .z.tut b { display: none; }
+.sd-chat.ohne .z.tut .x { color: var(--k); font-weight: 500; padding: .6mm 0; }
 .sd-chat .z .x { background: #fff; border: .35mm solid var(--k); padding: .8mm 2.2mm; border-radius: 0 2mm 2mm 2mm; justify-self: start; }
 .sd-chat .z.denkt .x { border-style: dashed; font-style: italic; background: transparent; }
 .sd-chat .z.tut .x { border: 0; background: transparent; padding-left: 0; color: var(--g); font-weight: 600; }

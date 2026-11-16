@@ -41,7 +41,7 @@ export function baueStunde(e: Track, i: number, h: StundenHelfer): string[] {
         return `<div class="bx p szene sd-fall"><div class="wer"><div class="pk punkt"></div><div class="fig">${figur(b.bild)}</div><div class="nm mo">${esc(b.name)}</div></div>
           <div class="tx"><p>${t(b.text)}</p>${b.zeitleiste ? `<div class="sd-zl">${b.zeitleiste.map((z) => `<span class="mo">${esc(z[0])}</span><span>${t(z[1])}</span>`).join('')}</div>` : ''}</div></div>${fragen(b.fragen)}`
       case 'chat':
-        return `<div class="sd-chat">${b.titel ? `<div class="kp mo">${ic('message-circle')}${esc(b.titel)}</div>` : ''}${b.zeilen.map((z) => `<div class="z ${z.art ?? 'sagt'}">${z.zeit ? `<span class="mo u">${esc(z.zeit)}</span>` : '<span></span>'}<b>${esc(z.wer)}</b><span class="x">${t(z.x)}</span></div>`).join('')}</div>${fragen(b.fragen)}`
+        return `<div class="sd-chat${b.zeilen.some((z) => z.zeit) ? '' : ' ohne'}">${b.titel ? `<div class="kp mo">${ic('message-circle')}${esc(b.titel)}</div>` : ''}${b.zeilen.map((z) => `<div class="z ${z.art ?? 'sagt'}">${z.zeit ? `<span class="mo u">${esc(z.zeit)}</span>` : '<span></span>'}<b>${esc(z.wer)}</b><span class="x">${t(z.x)}</span></div>`).join('')}</div>${fragen(b.fragen)}`
       case 'akte':
         return `<div class="sd-akte"><div class="blatt"><div class="kp"><span class="mo">${esc(b.titel)}</span><b>${t(b.kopf)}</b></div><ul>${b.eintraege.map((x) => `<li>${t(x)}</li>`).join('')}</ul><div class="stempel an">${esc(b.stempel)}</div></div>
           <div class="daneben"><div class="mo">${esc(b.daneben.titel)}</div><ul>${b.daneben.punkte.map((x) => `<li>${t(x)}</li>`).join('')}</ul></div></div>${fragen(b.fragen)}`

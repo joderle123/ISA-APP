@@ -51,8 +51,9 @@ const tank: Stunde = {
               ],
               dabei: ['Das passiert im Schlaf:', 'Das passiert bei zu wenig Schlaf:', 'Das war mir neu:'],
               nachher: [
-                { f: 'Was aus dem Clip erklärt Neles Vormittag?', linien: 2 },
-                { f: 'Der Energydrink: Hilfe oder nur verschoben? Begründe.', linien: 2 },
+                { f: 'Was hat Nele am Morgen gefehlt? Schreib auf, was der Clip dazu sagt.', linien: 2 },
+                { f: 'Hilft der Energydrink Nele wirklich?', kreuz: ['ja', 'nur kurz', 'nein'] },
+                { f: 'Warum?', linien: 1 },
               ],
             },
           ],
@@ -72,7 +73,7 @@ const tank: Stunde = {
                 { icon: 'confetti', t: 'Spaß und Neues', x: 'Etwas erleben, das neu ist.', warn: 'gelangweilt, zappelig, Blödsinn' },
               ],
             },
-            { art: 'fragen', fragen: [{ f: 'Zurück zu Nele: Körper war leer. Welcher **zweite** Tank hat geblinkt, als sie vor allen angesprochen wurde?', linien: 1 }] },
+            { art: 'fragen', fragen: [{ f: 'Zurück zu Nele: Der Tank „Körper“ war leer. Die Lehrerin spricht sie vor allen an. Welcher Tank blinkt jetzt auch noch?', linien: 1 }] },
           ],
         },
       ],
@@ -80,32 +81,32 @@ const tank: Stunde = {
     {
       stationen: [
         {
-          titel: 'Die große Runde: Warnlicht-Raten', zeit: '30 Min.', wie: 'zu zweit · dann zwei Teams', icon: 'masks-theater',
+          titel: 'Die große Runde: Tank-Detektive', zeit: '30 Min.', wie: 'zu zweit · dann zwei Teams am Tisch', icon: 'cards',
           bausteine: [
             { art: 'fragen', kontext: '**Zum Warmwerden (zu zweit, 5 Min.):** Welcher Tank ist hier leer? Ein Kreuz pro Zeile.', fragen: [
               { f: 'Probe-Runde:', raster: { spalten: ['Körper', 'sicher', 'dazu', 'ernst', 'selbst', 'Spaß'], zeilen: ['Alle haben eine Gruppe – du noch nicht', 'Jemand lacht über deine Antwort', 'Den ganzen Tag sagt dir jemand, was du tun sollst', 'Sonntag, Regen, nichts zu tun'] } },
             ] },
             {
               art: 'aktion',
-              ziel: 'Am Verhalten erkennen, welcher Tank leer ist – und eine Tankstelle finden, die ihn füllt.',
-              material: 'die 18 Situations-Karten von der nächsten Seite (ausschneiden, mischen), eine Stoppuhr, das Modell von Station 4',
+              ziel: 'An einer Situation erkennen, welcher Tank leer ist – und eine Tankstelle finden, die ihn füllt. **Niemand spielt etwas vor:** Es wird gelesen, gezeigt und gelegt.',
+              material: 'die 18 Situations-Karten von der nächsten Seite (ausschneiden, mischen) und das Modell von Station 4 – die Tanks haben die Nummern 1 bis 6',
               schritte: [
-                'Bildet zwei Teams. Die Karten liegen verdeckt in der Mitte.',
-                'Eine Person zieht, liest still und spielt die Situation **30 Sekunden** vor.',
-                'Das eigene Team rät den Tank: **1 Punkt.** Falsch? Das andere Team darf einmal raten.',
-                '**Bonus-Punkt:** eine Tankstelle nennen, die diesen Tank in zehn Minuten füllt.',
-                'Der Tank steht klein auf der Karte. Ansagen, Punkte eintragen, wechseln.',
+                'Zwei Teams am Tisch. Die Leitung liest eine Karte vor – ohne den Tank, der unten draufsteht.',
+                'Alle überlegen still. Auf „drei“ zeigen **alle gleichzeitig** mit den Fingern die Nummer des Tanks.',
+                'Jede richtige Hand bringt dem Team **1 Punkt.** Zeigt ihr verschiedene Tanks? Kurz sagen, warum – oft passen zwei.',
+                '**Bonus-Punkt:** Das Team nennt eine Tankstelle, die diesen Tank in zehn Minuten füllt.',
+                'Die Karte kommt auf den Platz ihres Tanks. Am Ende liegen sechs Stapel auf dem Tisch.',
               ],
               runden: [
-                { t: 'Runde 1 · ohne Worte', x: 'Nur Körper und Gesicht. Kein Ton.' },
-                { t: 'Runde 2 · ein Satz', x: 'Ein einziger Satz, den die Person in dem Moment sagen würde.' },
-                { t: 'Runde 3 · doppelt', x: 'Zwei Karten ziehen und in einer Szene spielen. Beide Tanks raten.' },
+                { t: 'Runde 1 · zeigen', x: 'Karte hören, Nummer zeigen. Neun Karten.' },
+                { t: 'Runde 2 · legen', x: 'Jedes Team legt die Hälfte der restlichen Karten zu den Tanks. Das andere Team prüft.' },
+                { t: 'Runde 3 · eigene Karte', x: 'Jedes Team erfindet eine Situation. Das andere Team rät den Tank.' },
               ],
-              regeln: ['Gespielt werden nur die Karten – niemand aus der Gruppe.', 'Wer nicht spielen will, stoppt die Zeit oder zählt die Punkte.'],
-              zu3: 'Ein Team. Die Leitung spielt, ihr ratet gegen die Uhr: Wie viele Karten schafft ihr in drei Minuten?',
+              regeln: ['Niemand muss vorlesen oder etwas vorführen. Zeigen und legen reicht.'],
+              zu3: 'Ein Team gegen die Karten: Zeigen alle drei den richtigen Tank, gibt es den Punkt. Ziel: zwölf von achtzehn.',
               wertung: { kopf: ['Punkte', 'Runde 1', 'Runde 2', 'Runde 3', 'Summe'], zeilen: ['Team A', 'Team B'] },
-              notiz: { titel: 'Die drei besten Tankstellen der Runde – ihr braucht sie gleich bei Station 6:', linien: 3 },
-              auswertung: ['Welche Karte war am schwersten zu raten – und warum?', 'Bei welcher Situation hätten zwei Tanks gepasst?', 'Welche Tankstelle war die beste Idee der Runde?'],
+              notiz: { titel: 'Die zwei besten Tankstellen der Runde – ihr braucht sie gleich bei Station 6:', linien: 2 },
+              auswertung: ['Bei welcher Karte habt ihr verschiedene Tanks gezeigt? Warum?', 'Welche Situation kennt ihr selbst am besten?'],
             },
           ],
         },
@@ -183,32 +184,33 @@ const tank: Stunde = {
 
 /* ---------- Stunde 2 · Laut oder leise: erst erleben, dann verstehen ---------- */
 const lautLeise: Stunde = {
-  frage: 'Was verliert eine Gruppe, wenn nur die Lauten zählen?',
+  frage: 'Was fehlt einer Gruppe, wenn nur die Lauten reden?',
   dauer: 'etwa 90 Minuten',
   kannst: ['sagen, wo du zwischen laut und leise stehst', 'die Stärke der anderen Seite nennen', 'die andere Seite einmal ausprobieren'],
   seiten: [
     {
       stationen: [
         {
-          titel: 'Erst machen: die Olympiade', zeit: '15 Min.', wie: 'alle · im Stehen', icon: 'trophy',
+          titel: 'Erst machen: das Experiment', zeit: '12 Min.', wie: 'alle · am Tisch', icon: 'flask',
           bausteine: [
-            { art: 'text', x: ['Vier kurze Disziplinen, keine Sieger. Achte nur auf eins: **Was fällt dir leicht – und was kostet dich Überwindung?** Kreuz nach jeder Runde an.'] },
+            { art: 'text', x: ['Dieselbe Aufgabe, zweimal – einmal laut, einmal leise. Die Aufgabe: **Was kann man alles mit einem Blatt Papier machen?** Niemand muss etwas vorführen. Die Leitung zählt mit.'] },
             {
-              art: 'tabelle', breiten: '27mm auto 15mm 15mm 15mm', kopf: ['Disziplin', 'So geht es', 'leicht', 'ging', 'schwer'],
+              art: 'tabelle', breiten: '22mm auto 22mm 34mm', kopf: ['Runde', 'So geht es', 'Ideen', 'Von wie vielen Leuten?'], hoehe: 13,
               zeilen: [
-                ['Schweige-Reihe', 'Stellt euch nach Geburtstag auf – Januar links, Dezember rechts. Kein einziges Wort.', '', '', ''],
-                ['Marktschreier', '20 Sekunden lang einen Stift anpreisen, als wäre er das Beste der Welt. Wer mag.', '', '', ''],
-                ['Lippenlesen', 'Sag einen Satz ohne Ton. Die anderen lesen ihn von deinen Lippen ab.', '', '', ''],
-                ['Dirigent', 'Eine Person steuert mit der Hand die Lautstärke: Alle summen – lauter, leiser, Stopp.', '', '', ''],
+                ['A · laut', 'Zwei Minuten: Alle sagen ihre Ideen einfach in die Runde. Jede Idee ist ein Strich.', '', ''],
+                ['B · leise', 'Zwei Minuten: Jede Person schreibt still für sich. Dann zusammenzählen – doppelte Ideen nur einmal.', '', ''],
               ],
             },
-            { art: 'fragen', fragen: [{ f: 'Meine leichteste Disziplin war eher …', kreuz: ['eine laute', 'eine leise', 'beides ging'] }] },
+            { art: 'fragen', fragen: [
+              { f: 'In welcher Runde hattest **du** mehr Ideen?', kreuz: ['A – laut', 'B – leise', 'gleich'] },
+              { f: 'In welcher Runde kamen Ideen von **allen**?', kreuz: ['A – laut', 'B – leise', 'in beiden'] },
+            ] },
           ],
         },
         {
-          titel: 'Die Linie', zeit: '10 Min.', wie: 'alle · dann allein', icon: 'ruler-measure',
+          titel: 'Die Linie', zeit: '10 Min.', wie: 'allein · dann wer mag', icon: 'ruler-measure',
           bausteine: [
-            { art: 'text', x: ['Ein Klebeband quer durch den Raum: ein Ende heißt **laut**, das andere **leise**. Stell dich dahin, wo du dich meistens siehst. Dann dasselbe im Heft – ein Kreuz pro Linie, die Mitte ist erlaubt.'] },
+            { art: 'text', x: ['Zuerst im Heft: ein Kreuz pro Linie, wo du dich **meistens** siehst. Die Mitte ist erlaubt. Wer mag, stellt sich danach auf das Klebeband im Raum: ein Ende heißt **laut**, das andere **leise**.'] },
             { art: 'fragen', fragen: [{ f: 'Ich bin eher …', striche: [['laut', 'leise'], ['spontan', 'plane gern'], ['unter Leuten', 'für mich'], ['rede gern', 'höre gern zu'], ['probiere sofort', 'schaue erst zu']] }, { f: 'An welchem Ort stehst du auf der Linie ganz woanders als hier?', linien: 1 }] },
           ],
         },
@@ -217,22 +219,24 @@ const lautLeise: Stunde = {
     {
       stationen: [
         {
-          titel: 'Das Protokoll: Gruppenarbeit, 20 Minuten', zeit: '12 Min.', wie: 'lesen · zu zweit', icon: 'file-text',
+          titel: 'Der Fall: Sami redet, Amira schweigt', zeit: '12 Min.', wie: 'lesen · zu zweit', icon: 'file-text',
           bausteine: [
+            { art: 'text', x: ['Vier Leute sollen zusammen ein Plakat machen. **Morgen muss es fertig sein.**'] },
             {
-              art: 'chat', titel: 'Vier Leute, ein Plakat, Abgabe morgen',
+              art: 'chat',
               zeilen: [
-                { zeit: '10:02', wer: 'Sami', x: 'Ich hab’s! Wir drehen ein Video. Oder wir bauen ein Modell!' },
-                { zeit: '10:05', wer: 'Lehrer', x: 'Gut, Sami, dass du anfängst.' },
-                { zeit: '10:06', wer: 'Amira', x: 'Abgabe ist morgen. Ein Video schaffen wir nie.', art: 'denkt' },
-                { zeit: '10:09', wer: 'Sami', x: 'redet weiter. Drei Ideen, eine davon ist gut.', art: 'tut' },
-                { zeit: '10:14', wer: 'Amira', x: 'holt Luft. Sami ist schon beim nächsten Satz.', art: 'tut' },
-                { zeit: '10:20', wer: 'Lehrer', x: 'Sami, gut mitgemacht. Amira, du musst dich mehr beteiligen.' },
-                { zeit: '10:21', wer: 'Amira', x: 'nickt. Den Fehler im Plan behält sie für sich.', art: 'tut' },
+                { wer: 'Sami sagt:', x: 'Ich hab’s! Wir drehen ein Video!' },
+                { wer: 'Der Lehrer sagt:', x: 'Gut, Sami, dass du anfängst.' },
+                { wer: 'Amira denkt:', x: 'Ein Video schaffen wir nicht bis morgen.', art: 'denkt' },
+                { wer: '', x: 'Amira will es sagen. Aber Sami redet und redet. Amira kommt nicht zu Wort.', art: 'tut' },
+                { wer: 'Der Lehrer sagt:', x: 'Amira, du musst mehr mitmachen.' },
+                { wer: '', x: 'Amira nickt. Ihre wichtige Idee hat keiner gehört.', art: 'tut' },
               ],
               fragen: [
-                { f: 'Mach die Rechnung für die Gruppe auf:', preis: { erste: 'Wer', kopf: ['bringt der Gruppe', 'kostet die Gruppe'], optionen: ['Sami (laut)', 'Amira (leise)'] } },
-                { f: 'Um 10:14 holt Amira Luft. Was hätte **eine** Person tun können, damit die Gruppe ihren Satz bekommt?', linien: 1 },
+                { f: 'Wer hat gemerkt, dass der Plan nicht klappt?', kreuz: ['Sami', 'Amira', 'der Lehrer'] },
+                { f: 'Warum hört die Gruppe Amiras Idee nicht? Mehrere Kreuze gehen.', kreuz: ['Sami redet die ganze Zeit', 'Amira sagt nichts', 'keiner fragt Amira'] },
+                { f: 'Beide können etwas gut. Was?', satz: ['Sami kann gut:', 'Amira kann gut:'] },
+                { f: 'Mit welchem Satz hätte jemand Amira helfen können?', linien: 1 },
               ],
             },
           ],
@@ -242,10 +246,10 @@ const lautLeise: Stunde = {
           bausteine: [
             {
               art: 'clip',
-              clip: { titel: 'Introvertiert | extrovertiert: Wer ist glücklicher?', kanal: 'Terra Xplore', url: 'https://www.youtube.com/watch?v=x_un3Ojno7Y', dauer: 'die ersten 5 Min.', frage: 'Wer hat es leichter – und stimmt das überhaupt?' },
+              clip: { titel: 'Introvertiert | extrovertiert: Wer ist glücklicher?', kanal: 'Terra Xplore', url: 'https://www.youtube.com/watch?v=x_un3Ojno7Y', dauer: 'die ersten 5 Min.', frage: 'Introvertiert heißt: eher leise. Extrovertiert heißt: eher laut. Wer hat es leichter?' },
               vorher: [{ f: 'Dein Tipp: Wer ist glücklicher?', kreuz: ['die Lauten', 'die Leisen', 'kein Unterschied'], unter: true }],
               dabei: ['Das können die Leisen gut:', 'Das können die Lauten gut:', 'Das hat mich überrascht:'],
-              nachher: [{ f: 'Hat der Clip deinen Tipp bestätigt?', kreuz: ['ja', 'nein', 'halb'] }, { f: 'Was würde der Clip dem Lehrer von Amira sagen?', linien: 2 }],
+              nachher: [{ f: 'War dein Tipp richtig?', kreuz: ['ja', 'nein', 'halb'] }, { f: 'Was sollte Amiras Lehrer über leise Leute wissen?', linien: 2 }],
             },
           ],
         },
@@ -262,21 +266,21 @@ const lautLeise: Stunde = {
               material: '20 Blatt Papier, Klebeband, eine volle Plastikflasche, zwei Stühle, die sechs Rollen-Karten von unten',
               schritte: [
                 'Der Auftrag: Baut aus Papier und Klebeband eine Brücke zwischen zwei Stühlen (40 cm Abstand). Sie muss die volle Flasche **zehn Sekunden** tragen.',
-                'Jede Person zieht eine Rollen-Karte. Wer sonst laut ist, tauscht gegen eine leise Rolle – und umgekehrt.',
+                'Jede Person zieht eine Rollen-Karte. Die Rolle ist eine Aufgabe, kein Schauspiel. Wer mag, tauscht: sonst laut – heute eine leise Rolle.',
                 '**Zwei Minuten Stille:** Jede Person zeichnet allein ihre Idee. Dann zeigt jede reihum ihr Blatt – auch die, die sonst nichts sagen.',
                 '**Zehn Minuten bauen.** Jede Person bleibt in ihrer Rolle.',
                 'Test mit der Flasche. Hält sie? Einmal nachbessern ist erlaubt.',
               ],
               regeln: ['Keine Idee wird ausgelacht. Erst alle Blätter ansehen, dann entscheiden.', 'Wer nicht bauen will, ist Zeitwächter oder prüft die Brücke.'],
               zu3: 'Jede Person nimmt zwei Rollen. Die Leitung ist Zeitwächter und baut nicht mit.',
-              auswertung: ['Wessen Idee steckt in der Brücke – und wäre sie ohne die Stille aufgetaucht?', 'Welche Rolle hat der Gruppe am meisten geholfen?', 'Was war anders als bei eurer letzten Gruppenarbeit?'],
+              auswertung: ['Von wem kam die Idee, die ihr gebaut habt?', 'Welche Rolle hat der Gruppe am meisten geholfen?', 'Was war anders als bei eurer letzten Gruppenarbeit?'],
             },
             {
               art: 'karten', spalten: 3, hoehe: 25, hinweis: 'Rollen-Karten: ausschneiden und verdeckt ziehen.',
               karten: [
                 { t: 'Starter', x: 'Du fängst an und sagst: „Los, erste Idee!“', marke: 'laut' },
-                { t: 'Stimmung', x: 'Du feuerst an, wenn es hakt.', marke: 'laut' },
-                { t: 'Sprecher', x: 'Du erklärst am Ende, wie die Brücke hält.', marke: 'laut' },
+                { t: 'Mutmacher', x: 'Du sagst, was schon gut klappt.', marke: 'laut' },
+                { t: 'Sprecher', x: 'Du sagst am Ende in einem Satz, warum sie hält.', marke: 'laut' },
                 { t: 'Zuhörer', x: 'Du fasst zusammen: „Bisher haben wir …“', marke: 'leise' },
                 { t: 'Prüfer', x: 'Du schaust genau hin: „Moment – hält das?“', marke: 'leise' },
                 { t: 'Frager', x: 'Du fragst die Stillste: „Was denkst du?“', marke: 'leise' },
@@ -292,9 +296,9 @@ const lautLeise: Stunde = {
           titel: 'Für dich: die andere Seite', zeit: '8 Min.', wie: 'allein', icon: 'user',
           bausteine: [
             {
-              art: 'fragen', kontext: 'Jede Seite bringt etwas – und kostet etwas. Mach deine eigene Rechnung auf.',
+              art: 'fragen', kontext: 'Laut sein hat gute Seiten. Leise sein auch. Beides ist manchmal schwierig.',
               fragen: [
-                { f: 'Laut sein und leise sein:', preis: { erste: 'Seite', kopf: ['bringt mir', 'kostet mich'], optionen: ['laut sein', 'leise sein'] } },
+                { f: 'Was ist gut daran – und was ist schwierig daran?', preis: { erste: '', kopf: ['Das ist gut daran', 'Das ist schwierig daran'], optionen: ['laut sein', 'leise sein'] } },
                 { f: 'Meine Rolle beim Brückenbau war:', kreuz: ['wie immer', 'ungewohnt, aber okay', 'ungewohnt und anstrengend'] },
                 { f: 'Wo wärst du gern ein Stück mehr auf der anderen Seite?', linien: 2 },
               ],
@@ -304,7 +308,7 @@ const lautLeise: Stunde = {
         {
           titel: 'Schluss: Amiras Satz', zeit: '5 Min.', wie: 'alle', icon: 'flag',
           bausteine: [
-            { art: 'fragen', fragen: [{ f: 'Morgen ist wieder Gruppenarbeit. Welchen Satz sagt Amira als Erstes – und was sagt Sami, damit sie ihn sagen kann?', satz: ['Amira:', 'Sami:'] }] },
+            { art: 'fragen', fragen: [{ f: 'Morgen ist wieder Gruppenarbeit. Was fragt Sami – und was sagt Amira?', satz: ['Sami fragt:', 'Amira sagt:'] }] },
             { art: 'merk', x: 'Beide Seiten ==punkten.==' },
             { art: 'woche', x: 'Probier die andere Seite: Bist du eher leise, sag einmal **als Erstes** etwas. Bist du eher laut, hör einmal **nur zu**.', kaestchen: ['gemacht'] },
           ],
@@ -329,10 +333,13 @@ const kannst: Stunde = {
     {
       stationen: [
         {
-          titel: 'Zehn Sekunden Ruhm', zeit: '10 Min.', wie: 'alle', icon: 'microphone-2',
+          titel: 'Was in diesem Raum steckt', zeit: '10 Min.', wie: 'allein · dann alle', icon: 'checklist',
           bausteine: [
-            { art: 'text', x: ['Jede Person zeigt zehn Sekunden lang etwas, das sie kann. **Je kleiner und schräger, desto besser:** pfeifen, einen Stift drehen, einen Zungenbrecher, in drei Sprachen bis fünf zählen. Wer nichts zeigen will, sagt einen Satz: „Ich kann …“ Geklatscht wird bei allen gleich laut.'] },
-            { art: 'fragen', fragen: [{ f: 'Was hat dich bei jemand anderem überrascht?', linien: 1 }] },
+            { art: 'text', x: ['Kreuz an, was du kannst – auch wenn es dir klein vorkommt. **Niemand muss etwas vorführen.** Danach liest die Leitung die Liste vor: Hand hoch, wer es kann.'] },
+            { art: 'fragen', fragen: [
+              { f: 'Das kann ich:', kreuz: ['pfeifen', 'etwas reparieren', 'kochen oder backen', 'mit Tieren umgehen', 'mir Wege merken', 'jemanden zum Lachen bringen', 'lange zuhören', 'schnell rechnen', 'zeichnen', 'mit kleinen Kindern umgehen', 'ein Spiel richtig gut', 'zwei oder mehr Sprachen'] },
+              { f: 'Was kann hier im Raum **nur eine** Person – und was fehlt in der Liste?', linien: 1 },
+            ] },
           ],
         },
         {
@@ -342,10 +349,10 @@ const kannst: Stunde = {
               art: 'akte', titel: 'Akte · Seite 1', kopf: 'Yusuf, 16', stempel: 'unvollständig',
               eintraege: ['laut im Unterricht', 'impulsiv, gibt Widerworte', 'zwei Verwarnungen', 'verlässt den Raum ohne Erlaubnis', 'Auf die Frage „Was kannst du gut?“: „Nichts Besonderes.“'],
               daneben: { titel: 'Was nicht drinsteht', punkte: ['Bringt jeden Morgen seine kleine Schwester zur Schule.', 'Erklärt dem Neuen in der Werkstatt alles zweimal.', 'Hat noch nie einen Freund verpfiffen.'] },
-              fragen: [{ f: 'Schreib **Seite 2** der Akte: drei Stärken von Yusuf – jede mit Beweis.', linien: 0 }],
+              fragen: [{ f: 'Schreib **Seite 2** der Akte: drei Dinge, die Yusuf gut kann. Schreib dazu, woran man es sieht.', linien: 0 }],
             },
-            { art: 'tabelle', breiten: '9mm 42% auto', kopf: ['Nr.', 'Stärke', 'Beweis: Daran sieht man sie'], zeilen: [['1', '', ''], ['2', '', ''], ['3', '', '']], hoehe: 9 },
-            { art: 'fragen', fragen: [{ f: 'Yusuf sagt: „Nichts Besonderes.“ Warum sagt er das, obwohl es nicht stimmt?', linien: 2 }] },
+            { art: 'tabelle', breiten: '9mm 42% auto', kopf: ['Nr.', 'Das kann Yusuf gut', 'Daran sieht man es'], zeilen: [['1', '', ''], ['2', '', ''], ['3', '', '']], hoehe: 9 },
+            { art: 'fragen', fragen: [{ f: 'Yusuf sagt: „Nichts Besonderes.“ Das stimmt nicht. Warum sagt er es trotzdem?', linien: 1 }] },
           ],
         },
       ],
@@ -360,7 +367,7 @@ const kannst: Stunde = {
               clip: { titel: 'Ich bin nichts wert – so steigerst du dein Selbstwertgefühl', kanal: 'BUBBLES', url: 'https://www.youtube.com/watch?v=XZzcGOxqBy8', dauer: 'die ersten 5 Min.', frage: 'Woher weiß ein Mensch, was er wert ist?' },
               vorher: [{ f: 'Was zählt am meisten dafür, wie du über dich denkst?', kreuz: ['Noten', 'was andere sagen', 'was ich selbst über mich denke', 'was ich für andere tue'], unter: true }],
               dabei: ['Tipp 1 aus dem Clip:', 'Tipp 2 aus dem Clip:', 'Dieser Satz ist hängen geblieben:'],
-              nachher: [{ f: 'Welcher Tipp ist machbar – und welcher klingt nur gut?', linien: 2 }, { f: 'Welcher Tipp hätte Yusuf vor der Frage der Betreuerin geholfen?', linien: 1 }],
+              nachher: [{ f: 'Welchen Tipp kannst du wirklich ausprobieren?', linien: 2 }, { f: 'Welcher Tipp hilft Yusuf?', linien: 1 }],
             },
           ],
         },
