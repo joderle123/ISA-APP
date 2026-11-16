@@ -1,6 +1,8 @@
 // REAL TALK #06 · ÄRGER – Modul 6 (Wenn es schwierig wird, Einheiten 24–26).
 // Inhalt als Daten (wird auch per Skript bearbeitet). Texte: **fett**, ==markiert==.
 import type { Heft } from '../typen'
+import { loesungen, stunden } from './m6-stunden'
+import { aufStunden } from './stunden-hilfe'
 
 const d: Heft = {
   "id": "m6",
@@ -812,4 +814,8 @@ const d: Heft = {
   },
   "geprueft": "14.11.2026"
 }
+
+// Fassung mit Stunden (16.11.2026): Die Einheiten sind zusammenhängende Stunden (m6-stunden.ts). Die Angaben oben bleiben als Quelle;
+// gedruckt werden die Stunden.
+aufStunden(d, stunden(d), { geprueft: '16.11.2026', loesungen })
 export default d

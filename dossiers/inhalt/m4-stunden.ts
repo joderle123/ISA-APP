@@ -139,7 +139,7 @@ export function stunden(d: Heft): Stunde[] {
         ],
         zu3: 'Ihr ermittelt als ein Team. Die Leitung ermittelt allein – dann vergleichen.',
         notiz: { titel: 'Unser neuer Satz für Jana:', linien: 1 },
-        auswertung: ['Welcher Hinweis sah aus wie ein Beweis – und war keiner?', 'Welche Hinweise hätte Janas Kopf nicht reingelassen?'],
+        auswertung: ['Welcher Hinweis sah aus wie ein Beweis – und war keiner?'],
       }, { danach: [tabelle('14mm 1fr 14mm 1fr', ['Nr.', 'dafür · dagegen · kein Beweis', 'Nr.', 'dafür · dagegen · kein Beweis'], [1, 2, 3, 4, 5, 6].map((k) => [String(k), '☐ dafür   ☐ dagegen   ☐ kein Beweis', String(k + 6), '☐ dafür   ☐ dagegen   ☐ kein Beweis']), 6)], leitung: 'Hinweise vorher aufhängen. Lösung: dafür 1, 6, 10 · dagegen 2, 4, 7, 9, 12 · kein Beweis 3, 5, 8, 11.' }),
     ),
     seite(
