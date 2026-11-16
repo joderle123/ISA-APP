@@ -20,6 +20,28 @@ drei Seiten nur für die Leitung.
 - `stil.css` – Gestaltung. Akzentfarbe je Ausgabe über `farbe` im Inhalt.
 - `pdf.cjs` – meldet „frei … mm“ je Seite. Negativ heißt Überlauf: Text kürzen oder Feld verkleinern.
 
+## Hefte mit Stunden (seit 16.11.2026 – Pilot: #01)
+
+Rückmeldung aus der Praxis: Die Doppelseiten wirkten zusammengewürfelt (Clip ohne Bezug und ohne Fragen, jede Seite gleich gebaut,
+Aktionen ohne Material). Deshalb ist eine Einheit jetzt eine **zusammenhängende Stunde** (`Track.stunde`, Aufbau in `typen.ts`,
+gesetzt von `stunde-bau.ts`):
+
+- **Stationen in der Reihenfolge des Unterrichts.** Die erste Seite zeigt Leitfrage, „Am Ende kannst du …“ und den Fahrplan mit
+  Minuten; jede weitere Seite zeigt oben, wo die Gruppe gerade ist.
+- **Ein roter Faden:** Der Fall vom Anfang kommt bei Clip, Modell und Schluss wieder vor (z. B. Nele: Ankommen → Fall → Clip über
+  Schlaf → Schlaf ist einer von sechs Tanks → Warnlichter erkennen → eigener Tank → ein Satz für Nele).
+- **Jede Stunde ist anders gebaut:** einmal vom Fall aus, einmal vom Tun aus (erst Olympiade, dann das Protokoll), einmal von einem
+  Auftritt aus. Bausteine: Fall mit Zeitleiste, Gesprächsprotokoll, Akte, Modell, Clip, große Aktion, Karten, Tabelle, Auswahl.
+- **Clip nur, wenn er zum Fall passt – und immer mit Aufträgen:** vorher (Tipp abgeben), beim Schauen (mitschreiben), danach
+  (zurück zum Fall). Der Inhalt der Videos lässt sich von hier aus nicht ansehen: Titel und Kanal kommen von oEmbed, die Fragen
+  sind so gestellt, dass sie mit jedem passenden Ausschnitt funktionieren. Die Leitung sieht den Clip vorher an.
+- **Eine große Aktion je Stunde (25–30 Minuten)** mit Ziel, Material, Schritten, Runden, Regeln, Variante zu dritt, Punktetabelle
+  und Auswertung. **Alles Material steht im Heft** (Situations-, Rollen- und Stärken-Karten zum Ausschneiden).
+- **Wörter:** Stunde statt Track, „Das kommt“ statt Tracklist, „Zum Aufwärmen“, „Streitfragen“, „Zum Schluss“. Die „Sessions“ entfallen
+  (die Aktionen stehen in den Stunden). Die Leitung bekommt eine Seite „Der Ablauf der Stunden“ (Station, Zeit, Form, Seite, worauf es ankommt).
+
+Hefte ohne `stunde` (noch #00, #02–#08) werden unverändert als Doppelseiten gesetzt.
+
 Videos und Filme
 - `clip` je Track wird als QR-Code gedruckt. Nur Links eintragen, die über die oEmbed-Schnittstelle von
   YouTube bestätigt sind (Titel und Kanal von dort übernehmen); Dauer und Inhalt muss die Leitung vor dem

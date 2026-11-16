@@ -1,6 +1,7 @@
 // REAL TALK #01 · ICH – Modul 1 (Wer bin ich?, Einheiten 4–6).
 // Inhalt als Daten (wird auch per Skript bearbeitet). Texte: **fett**, ==markiert==.
 import type { Heft } from '../typen'
+import { stunden } from './m1-stunden'
 
 const d: Heft = {
   "id": "m1",
@@ -880,4 +881,90 @@ const d: Heft = {
   ],
   "geprueft": "14.11.2026"
 }
+
+// ---------- Fassung mit Stunden (16.11.2026) ----------
+// Die drei Einheiten sind zusammenhängende Stunden (m1-stunden.ts): Stationen in der Reihenfolge des Unterrichts, der Fall vom
+// Anfang kommt bei Clip, Modell und Schluss wieder vor, die großen Aktionen haben ihr Material im Heft. Die Angaben oben
+// (Szene, Fakten, Moves, Sessions) bleiben als Quelle stehen; gedruckt werden die Stunden.
+d.tracks.forEach((e, i) => { e.stunde = stunden[i] })
+d.warm.titel = 'Zum Aufwärmen'
+d.ansage.so = [
+  ['Stationen', 'Jede Stunde läuft von Station 1 bis zum Schluss. Oben auf der Seite siehst du, wo ihr gerade seid.'],
+  ['Fall', 'Eine erfundene Person, der etwas passiert. Sie kommt in der Stunde wieder vor.'],
+  ['Clip', 'Ein Video per QR-Code – mit Aufträgen für vorher, beim Schauen und danach.'],
+  ['Große Runde', 'Eine Aktion für alle, 25 Minuten. Die Karten dafür stehen im Heft.'],
+]
+// Clip zu Stunde 1: Schlaf statt Einsamkeit – passt zum Fall (Nele, vier Stunden Schlaf). Titel und Kanal über oEmbed bestätigt (16.11.2026).
+d.tracks[0].clip = { titel: 'Mehr als lebenswichtig: Darum schlafen wir!', kanal: 'Quarks', url: 'https://www.youtube.com/watch?v=sdH-fEEh1uY', dauer: 'Ausschnitt, etwa 6 Min.', frage: 'Was macht dein Körper nachts – und was hat Nele am Morgen gefehlt?' }
+d.geprueft = '16.11.2026'
+d.tracks[0].leitung = {
+  ...d.tracks[0].leitung,
+  einsatz: 'Die Stunde folgt einem Faden: der eigene Ärger von heute (Ankommen) → Neles Vormittag (Fall) → warum Schlaf zählt (Clip) → Schlaf ist einer von sechs Tanks (Modell) → Warnlichter erkennen (große Runde mit 18 Karten) → zurück zum eigenen Ärger: Welcher Tank war es, welche Tankstelle hilft? Am Schluss schreiben alle Nele einen Satz.',
+  loesungen: [
+    'Fall: Es gibt keine einzelne Schuldige. Die kurze Nacht und das fehlende Frühstück haben den Tank geleert; die Frage der Lehrerin war nur der Auslöser. Der Energydrink macht wach, füllt aber nichts auf.',
+    'Clip: Die Antworten hängen vom gewählten Ausschnitt ab – bitte vorher ansehen und eigene Stichwörter bereithalten. Die Brücke zum Fall: Zu wenig Schlaf macht reizbar und unkonzentriert.',
+    'Modell: „Ernst genommen“ oder „Sicherheit“ – vor allen angesprochen zu werden, fühlt sich wie Bloßstellen an. Beide Antworten gelten.',
+    'Probe-Runde: keine Gruppe – Dazugehören · ausgelacht – ernst genommen werden · herumkommandiert – selbst entscheiden · Regen-Sonntag – Spaß und Neues.',
+    'Große Runde: Der Tank steht auf jeder Karte. Bei mehreren Karten passen zwei Tanks (z. B. Teamwahl: Dazugehören und ernst genommen werden) – das ist die zweite Frage der Auswertung.',
+  ],
+  material: '18 Situations-Karten (im Heft, ausschneiden oder Seite kopieren), Stoppuhr, Gerät für den Clip',
+  blaetter: 'Gefühlsrad, Skills-Pass. Die Blätter „Warnlicht-Karten“ und „Meine Tanks“ stehen jetzt im Heft.',
+  stationen: [
+    'Still. Nichts vorlesen lassen – das Stichwort wird bei Station 6 wieder gebraucht.',
+    'Reihum lesen. Die Schuldfrage nicht auflösen – sie bleibt bis zum Modell offen.',
+    'Ausschnitt vorher wählen. Erst „Vorher“, dann schauen. „Danach“ zu zweit, zwei Antworten hören.',
+    'Die sechs Tanks vorlesen, zu jedem ein Beispiel aus der Gruppe sammeln.',
+    'Karten vorher ausschneiden. Runde 3 nur, wenn Runde 1 und 2 gut liefen. Fünf Minuten für die Auswertung lassen.',
+    'Stille Arbeit, niemand zeigt die Regler. Die Tankstelle muss klein sein: zehn Minuten, ohne jemanden zu überreden.',
+    'Wer mag, liest den Satz an Nele vor. In der nächsten Stunde nach den drei Kreuzen fragen.',
+  ],
+}
+d.tracks[1].leitung = {
+  ...d.tracks[1].leitung,
+  einsatz: 'Diese Stunde beginnt mit dem Tun: Olympiade und Linie zeigen, wo jede Person steht. Erst danach kommt der Fall (Amira und Sami als Protokoll), dann der Clip und die Brücke – eine Aufgabe, die laute und leise Rollen braucht. Am Schluss bekommt Amira ihren Satz.',
+  loesungen: [
+    'Olympiade: kein Richtig oder Falsch. Wichtig ist der Unterschied zwischen den Disziplinen, nicht die Leistung.',
+    'Protokoll: Sami bringt Tempo und Ideen, kostet Zuhören und Zeit. Amira bringt Überblick (der Termin!), kostet die Gruppe ihren Satz, weil sie ihn nicht sagt. Um 10:14 hätte eine Frage gereicht: „Amira, was denkst du?“',
+    'Clip: Die Antworten hängen vom Ausschnitt ab – bitte vorher ansehen.',
+    'Brücke: Häufig steckt die tragende Idee (rollen, falten) in einem Blatt aus der stillen Phase. Darauf zielt die erste Auswertungsfrage.',
+    'Für dich: laut – bringt Aufmerksamkeit und Tempo, kostet Zuhören und manchmal Ärger · leise – bringt Überblick, kostet Sichtbarkeit.',
+  ],
+  material: 'Klebeband für die Linie, 20 Blatt Papier, Klebeband zum Bauen, eine volle Plastikflasche, zwei Stühle, Rollen-Karten (im Heft), Gerät für den Clip; für die Galerie: Blätter, Klebepunkte',
+  blaetter: 'Gefühlsrad, Skills-Pass. Das Blatt „Laut und leise“ steht jetzt im Heft.',
+  stationen: [
+    'Jede Disziplin höchstens drei Minuten. Marktschreier ist freiwillig. Nach jeder Runde ankreuzen lassen.',
+    'Erst im Raum, dann im Heft. Bei jedem Paar sagt eine Person von jedem Ende: Was ist an meiner Seite gut?',
+    'Mit verteilten Rollen lesen (Sami, Lehrer, Erzähler). Die Tabelle zu zweit.',
+    'Tipp vorher ankreuzen lassen. Nach dem Clip zuerst: Wer hat seinen Tipp geändert?',
+    'Rollen wirklich tauschen lassen. Die zwei Minuten Stille stoppen. Nicht mitbauen – beobachten, wessen Idee gebaut wird.',
+    'Stille Arbeit. Die Rechnung ist privat.',
+    'Zwei, drei Sätze hören. Wochenaufgabe ansagen.',
+    'Nur mit einer Gruppe, die sich kennt. Auf Kommentare und gehäufte Punkte achten.',
+  ],
+}
+d.tracks[2].leitung = {
+  ...d.tracks[2].leitung,
+  einsatz: 'Die Stunde beginnt mit einem Auftritt (Zehn Sekunden Ruhm). Dann prüfen die Jugendlichen eine Akte und schreiben die fehlende Seite. Nach dem Clip handeln sie auf dem Stärken-Markt mit 24 Karten und verteilen die Jobs für ein Grillfest. Der Baum sammelt am Ende, was bleibt.',
+  loesungen: [
+    'Akte, Seite 2: verlässlich (Schwester – jeden Morgen), geduldig und hilfsbereit (erklärt dem Neuen alles zweimal), loyal (verpfeift niemanden). Der Beweis zählt mehr als das Wort.',
+    '„Nichts Besonderes“: Yusuf kennt seine Akte auswendig – niemand hat ihm die andere Seite gesagt. Was für ihn normal ist, hält er nicht für eine Stärke.',
+    'Clip: Die Antworten hängen vom Ausschnitt ab – bitte vorher ansehen.',
+    'Markt: Wer wenig Karten bekommt, bekommt welche von der Leitung. Bei der Crew zählt, dass jede Person einen Job hat – nicht, welcher.',
+    'Baum: Bei den Wurzeln ausdrücklich auch Orte, Tiere, Musik und Erinnerungen zulassen – nicht nur Menschen.',
+  ],
+  material: '24 Stärken-Karten (im Heft, ausschneiden oder Seite kopieren), Stifte, Gerät für den Clip; auf Wunsch A3-Papier für den großen Baum',
+  blaetter: 'Gefühlsrad, „Baum der Stärke“ (A3, große Fassung), Skills-Pass. Die Stärken-Karten stehen jetzt im Heft.',
+  stationen: [
+    'Selbst anfangen – mit etwas Kleinem. Niemand muss. Bei allen gleich klatschen.',
+    'Die Akte vorlesen wie ein Amt, „Was nicht drinsteht“ normal. Seite 2 zu zweit schreiben.',
+    'Der Titel ist hart – vorher sagen, dass es um die Tipps geht, nicht um das Gefühl. Ausschnitt vorher wählen.',
+    'Karten vorher ausschneiden. Beim Verschenken mitgehen und darauf achten, dass niemand leer ausgeht.',
+    'Stille Arbeit. Wer nicht schreiben mag, zeichnet. Kein Vorzeigen.',
+    'Wer mag, liest seinen Satz vor. Wochenaufgabe ansagen.',
+  ],
+}
+d.leitung.wozu = 'REAL TALK ist das Heft der Jugendlichen zu Modul 1. Jede der drei Einheiten ist eine **zusammenhängende Stunde** mit Stationen: Der Fall vom Anfang kommt bei Clip, Modell und Schluss wieder vor, die große Aktion (25 Minuten) hat ihre Karten im Heft, und jede Stunde ist anders gebaut – Stunde 1 geht vom Fall aus, Stunde 2 vom Tun, Stunde 3 von einem Auftritt. Leitmotiv dieser Ausgabe: Die Jugendlichen kennen ihre „Akte“ – hier schreiben sie die andere Seite.'
+d.leitung.start = 'Titel, Ansage (vorlesen – der Ton ist Absicht), „Das kommt“ und die zwei Fragen zum Aufwärmen. Etwa 10 Minuten, z. B. in der Brücke von Einheit 4.'
+d.leitung.schluss = 'Kino – der Film des Trimesters – als eigener Termin. Streitfragen: je zwei Sätze als Einstieg in eine Einheit – oder alle sechs im Stehen am Schluss. „Knack den Code“ als Wiederholung, Karten ausschneiden, „Zum Schluss“ in der Abschlussrunde von Einheit 6.'
+d.leitung.fakten = [['Zielgruppe', '12–16 Jahre, 3–6 Jugendliche'], ['Dauer', '3 Stunden à etwa 90 Min. (E4–E6)'], ['Sozialform', 'allein, zu zweit, Teams'], ['Material', 'Schere, Stoppuhr, Papier, Klebeband, Flasche']]
 export default d

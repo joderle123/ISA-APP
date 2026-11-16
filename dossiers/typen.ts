@@ -30,6 +30,33 @@ export interface Frage {
 export interface Clip { titel: string; kanal: string; url: string; dauer: string; frage: string }
 export interface Film { titel: string; jahr: number; fsk: number | null; laenge: string; worum: string; achte: string[]; achtung?: string }
 export interface Move { titel: string; wie: string; zeit: string; kontext?: string; fragen: Frage[] }
+/** Bausteine einer Stunde (Hefte mit zusammenhängendem Stundenablauf, seit 16.11.2026) */
+export type Baustein =
+  | { art: 'text'; x: string[] }
+  /** Fall: Person, kurze Geschichte, auf Wunsch eine Zeitleiste (Uhrzeit, was passiert) und Fragen */
+  | { art: 'fall'; bild: string; name: string; text: string; zeitleiste?: [string, string][]; fragen?: Frage[] }
+  /** Protokoll eines Gesprächs: wer sagt, denkt oder tut was */
+  | { art: 'chat'; titel?: string; zeilen: { zeit?: string; wer: string; x: string; art?: 'sagt' | 'denkt' | 'tut' }[]; fragen?: Frage[] }
+  /** Ein Dokument (Akte) – und daneben, was nicht drinsteht */
+  | { art: 'akte'; titel: string; kopf: string; eintraege: string[]; stempel: string; daneben: { titel: string; punkte: string[] }; fragen?: Frage[] }
+  /** Modell: Punkte mit Erklärung und Warnzeichen */
+  | { art: 'modell'; punkte: { icon: string; t: string; x: string; warn?: string }[]; warnTitel?: string }
+  /** Video mit Aufträgen: vor dem Schauen, beim Schauen, danach */
+  | { art: 'clip'; clip: Clip; vorher: Frage[]; dabei: string[]; nachher: Frage[] }
+  | { art: 'fragen'; kontext?: string; fragen: Frage[] }
+  /** Große Aktion für die Gruppe (15–30 Minuten) mit allem, was man dafür braucht */
+  | { art: 'aktion'; ziel: string; material: string; schritte: string[]; runden?: { t: string; x: string }[]; regeln?: string[]; wertung?: { kopf: string[]; zeilen: string[] }; zu3?: string; /** Zeilen zum Festhalten (z. B. die besten Ideen der Runde) */ notiz?: { titel: string; linien: number }; auswertung?: string[] }
+  /** Karten zum Ausschneiden (Situationen, Wörter, Rollen) */
+  | { art: 'karten'; hinweis?: string; spalten: number; hoehe?: number; /** ein Wort je Karte, groß gesetzt */ wort?: boolean; karten: { t: string; x?: string; marke?: string }[] }
+  /** Tabelle: Text in der Zelle oder leer zum Ausfüllen */
+  | { art: 'tabelle'; kopf: string[]; zeilen: string[][]; breiten?: string; hoehe?: number }
+  /** Auswahl: je Gruppe ein paar Möglichkeiten zum Ankreuzen */
+  | { art: 'menue'; titel: string; gruppen: { t: string; punkte: string[] }[] }
+  | { art: 'merk'; x: string }
+  | { art: 'woche'; x: string; kaestchen?: string[] }
+export interface Station { titel: string; zeit: string; wie: string; icon: string; /** Fortsetzung oder Material zur Station davor (zählt nicht neu) */ fort?: boolean; bausteine: Baustein[] }
+/** Eine Stunde: Leitfrage, Ziele und die Seiten in der Reihenfolge des Ablaufs */
+export interface Stunde { frage: string; dauer: string; kannst: string[]; seiten: { stationen: Station[] }[] }
 export interface Track {
   /** Nummer der Kurs-Einheit */
   nr: number
@@ -50,9 +77,11 @@ export interface Track {
   hilfe?: boolean
   /** kurzes Video zum Track (QR-Code). Nur geprüfte Links eintragen. */
   clip?: Clip
+  /** Die Einheit als zusammenhängende Stunde – ersetzt Doppelseite und Sessions dieses Tracks */
+  stunde?: Stunde
   /** Gruppen-Aktionen (Sessions) zu diesem Track */
   gruppe: { titel: string; wer: string; zeit: string; material: string; schritte: string[]; /** schwerere Variante */ level2?: string; frage: string; /** Zeitpunkt in der Einheit */ wann?: 'Start' | 'Mitte' | 'Schluss'; /** Hinweis für die kleine Gruppe (drei Jugendliche) */ zu3?: string }[]
-  leitung: { einsatz: string; loesungen: string[]; impulse: string[]; material: string; blaetter: string }
+  leitung: { einsatz: string; loesungen: string[]; impulse: string[]; material: string; blaetter: string; /** je Station ein Satz: worauf es ankommt (Hefte mit Stunden) */ stationen?: string[] }
 }
 export interface Heft {
   id: string

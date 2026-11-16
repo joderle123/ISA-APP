@@ -513,3 +513,149 @@ table.t td:first-child { font-weight: 700; white-space: nowrap; }
 .ak-fe { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm; } .ak-fe > div { position: relative; height: 52mm; border: .7mm solid var(--k); background: #fff; box-shadow: 1.2mm 1.2mm 0 var(--k); padding: 2mm 2.6mm; display: flex; gap: 2mm; align-items: flex-start; }
 .ak-fe b { font-family: 'Anton'; font-weight: 400; font-size: 14pt; line-height: 1; background: var(--a); border: .4mm solid var(--k); padding: .6mm 1.8mm; } .ak-fe span { color: var(--g); margin-top: 1mm; }
 .ak-hi { padding: 5mm 6mm; } .ak-hi h3 { font-family: 'Anton'; font-weight: 400; text-transform: uppercase; font-size: 17pt; margin: 1mm 0 1.6mm; } .ak-hi p { font-size: 12.6pt; line-height: 1.36; font-weight: 500; }
+
+/* ===== Stunden (seit 16.11.2026): eine Einheit als zusammenhängender Ablauf – Stationen statt Doppelseite ===== */
+.sd-th { min-height: 38mm; padding-bottom: 5mm; }
+.sd-th h1 { font-size: 42pt; }
+.sd-th .ut { font-size: 12.4pt; color: #fff; font-weight: 600; }
+.sd-plan { background: var(--p); border-bottom: .7mm solid var(--k); padding: 2.6mm 10mm 3mm; display: flex; flex-direction: column; gap: 2.2mm; }
+.sd-plan .kann { display: flex; flex-wrap: wrap; align-items: center; gap: .6mm 4mm; font-size: 9.2pt; }
+.sd-plan .kann .mo { color: var(--g); }
+.sd-plan .kann span { display: inline-flex; align-items: center; gap: 1mm; }
+.sd-plan .kann .ic { width: 3.6mm; height: 3.6mm; }
+.sd-plan .weg { display: flex; gap: 1.2mm; }
+.sd-plan .weg > div { flex: 1; min-width: 0; background: #fff; border: .45mm solid var(--k); padding: 1.2mm 1.8mm 1.3mm; display: grid; grid-template-columns: auto 1fr; column-gap: 1.6mm; align-items: center; position: relative; }
+.sd-plan .weg > div:not(:last-child)::after { content: ''; position: absolute; right: -1.5mm; top: 50%; width: 1.6mm; height: .45mm; background: var(--k); }
+.sd-plan .weg i { grid-row: span 2; font-style: normal; font-family: 'Anton'; font-size: 13pt; width: 6.4mm; height: 6.4mm; background: var(--a); border: .4mm solid var(--k); display: grid; place-items: center; }
+.sd-plan .weg b { font-size: 8.2pt; line-height: 1.15; }
+.sd-plan .weg .mo { font-size: 6.4pt; color: var(--g); }
+.sd-kopf { background: var(--k); color: #fff; padding: 5mm 10mm 3.4mm; display: flex; flex-direction: column; gap: 2.2mm; }
+.sd-kopf > div:first-child { display: flex; align-items: baseline; gap: 3mm; }
+.sd-kopf > div:first-child .mo { color: var(--a); }
+.sd-kopf > div:first-child b { font-size: 17pt; font-weight: 400; }
+.sd-weg { display: flex; gap: 1mm; }
+.sd-weg span { flex: 1; min-width: 0; display: flex; align-items: center; gap: 1.4mm; font-size: 7.2pt; font-weight: 600; line-height: 1.1; padding: .9mm 1.4mm; border: .3mm solid #6A6A6A; color: #9A9A9A; }
+.sd-weg span i { flex: none; font-style: normal; font-family: 'Anton'; font-size: 9pt; }
+.sd-weg span.war { color: #CFCFCF; border-color: #8A8A8A; }
+.sd-weg span.da { background: var(--a); color: var(--k); border-color: var(--a); }
+.inhalt.sd { padding-top: 4.4mm; gap: 3.4mm; justify-content: flex-start; }
+.inhalt.sd.luft { justify-content: space-between; }
+.sd-st { border: .7mm solid var(--k); background: #fff; box-shadow: 1.3mm 1.3mm 0 var(--k); }
+.sd-st > .kp { display: flex; align-items: stretch; border-bottom: .7mm solid var(--k); }
+.sd-st > .kp .b { flex: none; width: 10mm; background: var(--a); border-right: .7mm solid var(--k); font-family: 'Anton'; font-size: 19pt; display: grid; place-items: center; }
+.sd-st > .kp .b .ic { width: 5.4mm; height: 5.4mm; }
+.sd-st > .kp h3 { flex: 1; font-family: 'Anton'; font-weight: 400; text-transform: uppercase; font-size: 15pt; line-height: 1.05; padding: 2.2mm 3.4mm 1.9mm; }
+.sd-st > .kp .me { flex: none; display: flex; flex-direction: column; justify-content: center; align-items: flex-end; padding: 0 3.4mm; gap: .5mm; color: var(--g); }
+.sd-st > .kp .me span { display: inline-flex; align-items: center; gap: 1.2mm; }
+.sd-st > .kp .me .ic { width: 3.6mm; height: 3.6mm; }
+.sd-st.fort > .kp .b { background: var(--k); color: #fff; }
+.sd-st > .kb { padding: 3mm 4mm 3.4mm; display: flex; flex-direction: column; gap: 2.6mm; }
+.sd-tx p { font-size: 10.4pt; line-height: 1.42; }
+.sd-tx p + p { margin-top: 1.4mm; }
+.sd-kon { font-size: 10pt; }
+.sd-kon.sch { display: flex; align-items: center; gap: 2mm; color: var(--g); font-size: 9.2pt; }
+.sd-kon.sch .ic { width: 4.2mm; height: 4.2mm; }
+.sd-fr .frage .ft { font-size: 10pt; }
+.sd-fall { box-shadow: none; border-width: .5mm; }
+.sd-fall .wer { width: 32mm; }
+.sd-fall p { font-size: 10.5pt; line-height: 1.42; }
+.sd-zl { margin-top: 2.2mm; display: grid; grid-template-columns: auto 1fr; gap: .9mm 3mm; font-size: 9.8pt; line-height: 1.3; }
+.sd-zl .mo { background: var(--k); color: #fff; padding: .3mm 1.6mm; align-self: start; }
+.sd-chat { border: .5mm solid var(--k); background: var(--p); padding: 2.2mm 3.2mm 2.6mm; display: flex; flex-direction: column; gap: 1.1mm; }
+.sd-chat .kp { display: flex; align-items: center; gap: 1.6mm; color: var(--g); margin-bottom: .6mm; }
+.sd-chat .kp .ic { width: 3.8mm; height: 3.8mm; }
+.sd-chat .z { display: grid; grid-template-columns: 12mm 17mm 1fr; gap: 2mm; align-items: baseline; font-size: 9.9pt; line-height: 1.32; }
+.sd-chat .z .u { color: var(--g); }
+.sd-chat .z .x { background: #fff; border: .35mm solid var(--k); padding: .8mm 2.2mm; border-radius: 0 2mm 2mm 2mm; justify-self: start; }
+.sd-chat .z.denkt .x { border-style: dashed; font-style: italic; background: transparent; }
+.sd-chat .z.tut .x { border: 0; background: transparent; padding-left: 0; color: var(--g); font-weight: 600; }
+.sd-akte { display: grid; grid-template-columns: 1.05fr 1fr; gap: 5mm; align-items: stretch; }
+.sd-akte .blatt { border: .5mm solid var(--k); background: var(--p); padding: 2.6mm 3.4mm 3mm; position: relative; transform: rotate(-.8deg); box-shadow: 1mm 1mm 0 var(--l); }
+.sd-akte .blatt .kp { display: flex; flex-direction: column; gap: .4mm; border-bottom: .4mm solid var(--k); padding-bottom: 1.4mm; margin-bottom: 1.6mm; }
+.sd-akte .blatt .kp .mo { color: var(--g); }
+.sd-akte .blatt .kp b { font-size: 11pt; }
+.sd-akte ul { list-style: none; display: flex; flex-direction: column; gap: 1mm; font-size: 9.9pt; line-height: 1.3; }
+.sd-akte .blatt li::before { content: '–'; margin-right: 1.6mm; }
+.sd-akte .stempel { position: absolute; right: 3mm; top: 2.4mm; border: .7mm solid var(--a); color: var(--a); padding: .6mm 2.4mm; font-size: 12pt; transform: rotate(-9deg); -webkit-text-stroke: .1mm var(--k); background: rgba(255,255,255,.6); }
+.sd-akte .daneben { border: .5mm dashed var(--k); padding: 2.6mm 3.4mm 3mm; }
+.sd-akte .daneben .mo { color: var(--g); margin-bottom: 1.6mm; }
+.sd-akte .daneben li { display: flex; gap: 1.8mm; }
+.sd-akte .daneben li::before { content: ''; flex: none; width: 2.2mm; height: 2.2mm; background: var(--a); border: .3mm solid var(--k); margin-top: 1.2mm; }
+.sd-modell { display: grid; grid-template-columns: repeat(3, 1fr); border: .5mm solid var(--k); }
+.sd-modell > div { padding: 2mm 2.8mm 2.4mm; border-right: .5mm solid var(--k); border-bottom: .5mm solid var(--k); }
+.sd-modell > div:nth-child(3n) { border-right: 0; }
+.sd-modell > div:nth-last-child(-n+3) { border-bottom: 0; }
+.sd-modell .o { display: flex; align-items: center; gap: 1.6mm; margin-bottom: .8mm; }
+.sd-modell .o .z { font-family: 'Anton'; font-size: 15pt; line-height: .9; color: var(--a); -webkit-text-stroke: .3mm var(--k); }
+.sd-modell .o .ic { width: 4.4mm; height: 4.4mm; }
+.sd-modell h3 { font-family: 'Anton'; font-weight: 400; text-transform: uppercase; font-size: 11.6pt; line-height: 1.05; }
+.sd-modell p { font-size: 9pt; line-height: 1.28; }
+.sd-modell p.w { margin-top: 1mm; padding-top: 1mm; border-top: .3mm dashed var(--g); color: #333; }
+.sd-modell p.w .mo { display: block; font-size: 6.2pt; color: var(--g); }
+.sd-clip { display: flex; flex-direction: column; gap: 2.6mm; }
+.sd-clip .clip { box-shadow: none; }
+.sd-clip .clip .qr { width: 21mm; height: 21mm; }
+.sd-clip .drei { display: grid; grid-template-columns: 1fr 1.05fr 1.25fr; gap: 0; border: .5mm solid var(--k); }
+.sd-clip .drei > div { padding: 2mm 2.8mm 2.6mm; border-right: .5mm solid var(--k); min-width: 0; }
+.sd-clip .drei > div:last-child { border-right: 0; }
+.sd-clip .lab { display: flex; align-items: center; gap: 1.4mm; margin-bottom: 1.4mm; background: var(--k); color: #fff; padding: .6mm 2mm; align-self: flex-start; width: fit-content; }
+.sd-clip .lab .ic { width: 3.4mm; height: 3.4mm; }
+.sd-clip .drei .k { font-size: 9pt; color: var(--g); }
+.sd-clip .drei .satz { font-size: 9.4pt; margin-top: 1.2mm; font-weight: 600; }
+.sd-clip .drei .linie { height: 6.4mm; }
+.sd-clip .drei .frage .ft { font-size: 9.5pt; }
+.sd-clip .drei .frage { gap: 1.8mm; }
+.sd-akt { display: flex; flex-direction: column; gap: 2.2mm; }
+.sd-akt .ziel { display: grid; grid-template-columns: 17mm 1fr; gap: 2mm; font-size: 9.8pt; line-height: 1.32; align-items: baseline; }
+.sd-akt .ziel .mo { color: var(--g); }
+.sd-akt ol { list-style: none; counter-reset: sa; display: flex; flex-direction: column; gap: 1.3mm; }
+.sd-akt ol li { counter-increment: sa; display: flex; gap: 2.2mm; font-size: 10.1pt; line-height: 1.34; }
+.sd-akt ol li::before { content: counter(sa); flex: none; width: 5mm; height: 5mm; background: var(--k); color: #fff; font-family: 'Anton'; font-size: 9pt; display: grid; place-items: center; margin-top: .2mm; }
+.sd-akt .runden { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2mm; }
+.sd-akt .runden > div { background: var(--a); border: .45mm solid var(--k); padding: 1.6mm 2.4mm 2mm; font-size: 9.3pt; line-height: 1.28; display: flex; flex-direction: column; gap: .5mm; }
+.sd-akt .regeln { display: flex; flex-direction: column; gap: .8mm; font-size: 9.3pt; }
+.sd-akt .regeln > div { display: flex; gap: 1.8mm; align-items: flex-start; }
+.sd-akt .regeln .ic { width: 4mm; height: 4mm; margin-top: .2mm; }
+.sd-akt .z3 { font-size: 9.3pt; border: .4mm dashed var(--g); padding: 1.1mm 2.4mm; }
+.sd-akt .z3 .mo { margin-right: 1.6mm; }
+.sd-akt .not { font-size: 9.8pt; }
+.sd-akt .not .linie { height: 7.4mm; }
+.sd-akt .aus { background: var(--p); border-left: 1.4mm solid var(--a); padding: 1.8mm 3mm 2.2mm; font-size: 9.8pt; line-height: 1.34; }
+.sd-akt .aus .mo { display: flex; align-items: center; gap: 1.4mm; color: var(--g); margin-bottom: 1mm; }
+.sd-akt .aus .mo .ic { width: 3.8mm; height: 3.8mm; }
+.sd-akt .aus p + p { margin-top: .8mm; }
+.sd-tab { width: 100%; border-collapse: collapse; font-size: 9.6pt; line-height: 1.28; table-layout: fixed; }
+.sd-tab th { background: var(--k); color: #fff; font-family: 'JetBrains Mono', monospace; font-size: 7pt; letter-spacing: .06em; text-transform: uppercase; text-align: left; padding: 1mm 2.2mm; border: .4mm solid var(--k); }
+.sd-tab td { border: .4mm solid var(--k); padding: 1.3mm 2.2mm; height: 8.4mm; vertical-align: middle; }
+.sd-tab td:first-child { font-weight: 600; background: var(--p); }
+.sd-tab.wert td { height: 9mm; }
+.sd-karten { display: grid; gap: 0; border-top: .4mm dashed var(--k); border-left: .4mm dashed var(--k); }
+.sd-karten > div { border-right: .4mm dashed var(--k); border-bottom: .4mm dashed var(--k); height: var(--kh, 37mm); padding: 2.6mm 3mm 5.4mm; display: flex; flex-direction: column; justify-content: center; gap: 1mm; position: relative; }
+.sd-karten b { font-size: 10.6pt; line-height: 1.3; font-weight: 600; }
+.sd-karten span { font-size: 8.8pt; line-height: 1.25; color: #333; }
+.sd-karten i { position: absolute; left: 3mm; bottom: 1.6mm; font-style: normal; font-size: 6.2pt; color: var(--g); }
+.sd-karten .wort { align-items: center; text-align: center; }
+.sd-karten .wort b { font-family: 'Anton'; font-weight: 400; text-transform: uppercase; font-size: 13.5pt; line-height: 1.08; }
+.sd-menue { border: .5mm solid var(--k); }
+.sd-menue .kp { display: flex; align-items: center; gap: 1.6mm; background: var(--k); color: #fff; padding: .9mm 2.6mm; }
+.sd-menue .kp .ic { width: 3.8mm; height: 3.8mm; color: var(--a); }
+.sd-menue .g { display: grid; grid-template-columns: repeat(3, 1fr); }
+.sd-menue .g > div { padding: 1.6mm 2.6mm 2mm; border-right: .35mm solid var(--k); border-bottom: .35mm solid var(--k); display: flex; flex-direction: column; gap: .7mm; font-size: 8.8pt; line-height: 1.25; }
+.sd-menue .g > div:nth-child(3n) { border-right: 0; }
+.sd-menue .g > div:nth-last-child(-n+3) { border-bottom: 0; }
+.sd-menue .g b { font-family: 'Anton'; font-weight: 400; text-transform: uppercase; font-size: 10.4pt; }
+.sd-menue .g span { display: flex; gap: 1.6mm; align-items: flex-start; }
+.sd-menue .g i { flex: none; width: 3mm; height: 3mm; border: .4mm solid var(--k); margin-top: .5mm; }
+.sd-wo { flex-wrap: nowrap; }
+.sd-wo .wk2 { margin-left: auto; display: flex; gap: 2.4mm; flex: none; }
+.sd-wo .wk2 > span { display: flex; flex-direction: column; align-items: center; gap: .6mm; }
+.sd-wo .wk2 i { width: 5.4mm; height: 5.4mm; border: .5mm solid #fff; background: transparent; }
+.sd-wo .wk2 .mo { font-size: 5.8pt; color: #fff; }
+.sd-st .merk .mk { font-size: 17pt; }
+/* Leitung: Ablauf der Stunden */
+.lt .sd-abl { width: 100%; border-collapse: collapse; }
+.lt .sd-abl td, .lt .sd-abl th { border: .3mm solid var(--k); padding: .8mm 1.8mm; text-align: left; vertical-align: top; }
+.lt .sd-abl th { background: var(--k); color: #fff; font-weight: 600; }
+.lt .sd-abl { table-layout: fixed; }
+.lt .sd-abl td:first-child { font-weight: 700; }
+.lt .sd-abl td:nth-child(2), .lt .sd-abl td:nth-child(4) { white-space: nowrap; }
