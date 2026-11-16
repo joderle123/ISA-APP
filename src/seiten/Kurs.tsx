@@ -342,8 +342,9 @@ function Jahresweg({ jahrNr, gruppe, onOeffnen }: { jahrNr: number; gruppe: Grup
         <EinZeile text={jahr.faden} />
         {jahrNr === 1 ? (
           <p className="ku-realtalk">
-            <strong>REAL TALK</strong> – das Heft der Jugendlichen zu jedem Modul, gemacht wie ein Magazin: Szenen, Videos per QR-Code,
-            Gruppenspiele für 3 bis 6, Karten für die Tasche. Die letzten Seiten jedes Hefts sind für die Leitung.{' '}
+            <strong>REAL TALK</strong> – das Heft der Jugendlichen zu jedem Modul. Jede Einheit ist eine zusammenhängende Stunde: ein Fall,
+            ein passendes Video per QR-Code, eine große Runde für 3 bis 6 – mit allen Karten zum Ausschneiden im Heft. Niemand muss
+            etwas vorspielen. Die letzten Seiten jedes Hefts sind für die Leitung.{' '}
             <a className="ku-heft-link" href={REAL_TALK_JAHRESPLAN} target="_blank" rel="noopener">
               <Icon name="download" />
               Jahresplan (PDF)
