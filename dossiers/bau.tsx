@@ -310,7 +310,7 @@ function baue(d: Heft): string {
     klasse: neu && n > 4 ? 'lt eng' : n > 4 || neu ? 'lt' : 'lt gross',
     html: `<div>${lkopf('Lösungen und Fragen für die Runde')}<div class="inhalt">
       <p class="klein">Bei offenen Fragen gibt es kein Richtig oder Falsch. Genannt ist, was häufig kommt und woran sich das Gespräch anknüpfen lässt.${neu ? ' Bei den Clips hängen die Antworten vom gewählten Ausschnitt ab – bitte vorher ansehen.' : ''}</p>
-      <div class="${neu && n > 3 ? 'losfluss' : 'sp2'}">${d.tracks.map((e, i) => `<div class="los"><h3>${einheit} ${z2(i + 1)} · ${t(e.titel)}</h3><ul>${e.leitung.loesungen.map((x) => `<li>${t(x)}</li>`).join('')}</ul></div>`).join('')}</div>
+      <div class="${neu ? 'losfluss' : 'sp2'}">${d.tracks.map((e, i) => `<div class="los"><h3>${einheit} ${z2(i + 1)} · ${t(e.titel)}</h3><ul>${e.leitung.loesungen.map((x) => `<li>${t(x)}</li>`).join('')}</ul></div>`).join('')}</div>
       <div><h2>Fragen für die Runde</h2><table class="t">${d.tracks.map((e, i) => `<tr><td>${einheit} ${z2(i + 1)}</td><td>${e.leitung.impulse.map((x) => t(x)).join('<br>')}</td></tr>`).join('')}</table></div>
       <div class="sp2"><div class="kasten"><h2>${neu ? 'Streitfragen' : 'Hot Takes'}</h2><p>${t(lt.hot)}</p></div>
         <div class="kasten"><h2>Knack den Code</h2><p>Code: <strong>${wort}</strong></p><p>${quizLoesung.map(t).join(' · ')}</p></div></div>

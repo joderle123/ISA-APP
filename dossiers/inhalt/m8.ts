@@ -1,6 +1,8 @@
 // REAL TALK #08 · AKKU – Module 8 und 9 (Gesundheit und Abschluss, Einheiten 29–30). Letzte Ausgabe von Jahr 1.
 // Inhalt als Daten (wird auch per Skript bearbeitet). Texte: **fett**, ==markiert==.
 import type { Heft } from '../typen'
+import { loesungen, stunden } from './m8-stunden'
+import { aufStunden } from './stunden-hilfe'
 
 const d: Heft = {
   "id": "m8",
@@ -931,4 +933,9 @@ const d: Heft = {
   },
   "geprueft": "14.11.2026"
 }
+
+// Fassung mit Stunden (16.11.2026): Die Einheiten sind zusammenhängende Stunden (m8-stunden.ts). Die Angaben oben bleiben als Quelle;
+// gedruckt werden die Stunden. Die letzte Einheit heißt jetzt „Letzte Stunde“ (früher „Letzter Track“).
+Object.assign(d, JSON.parse(JSON.stringify(d).split('Letzter Track').join('Letzte Stunde')))
+aufStunden(d, stunden(d), { geprueft: '16.11.2026', loesungen })
 export default d
