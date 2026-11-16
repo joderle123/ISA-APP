@@ -54,7 +54,7 @@ export type Baustein =
   | { art: 'menue'; titel: string; gruppen: { t: string; punkte: string[] }[] }
   | { art: 'merk'; x: string }
   | { art: 'woche'; x: string; kaestchen?: string[] }
-export interface Station { titel: string; zeit: string; wie: string; icon: string; /** Fortsetzung oder Material zur Station davor (zählt nicht neu) */ fort?: boolean; bausteine: Baustein[] }
+export interface Station { titel: string; zeit: string; wie: string; icon: string; /** ein Satz für die Leitung: worauf es bei dieser Station ankommt */ leitung?: string; /** Fortsetzung oder Material zur Station davor (zählt nicht neu) */ fort?: boolean; bausteine: Baustein[] }
 /** Eine Stunde: Leitfrage, Ziele und die Seiten in der Reihenfolge des Ablaufs */
 export interface Stunde { frage: string; dauer: string; kannst: string[]; seiten: { stationen: Station[] }[] }
 export interface Track {

@@ -1,0 +1,120 @@
+// REAL TALK – Bausteine für Hefte mit Stunden (seit 16.11.2026). Kurzschreibweisen, damit jede Ausgabe ihre Stunden knapp
+// beschreibt und dabei die Regeln aus der Praxis einhält (siehe dossiers/README.md, „Hefte mit Stunden“):
+//   1. Roter Faden: „Ankommen“ fragt etwas, das am Ende wieder gebraucht wird; der Fall kommt bei Clip und Schluss wieder vor.
+//   2. Einfach zu verstehen: zuerst ankreuzen, dann ein Satzanfang, höchstens eine freie Zeile. Kurze Sätze.
+//   3. Kein Vorspielen: lesen, gleichzeitig zeigen, legen, bauen, ankreuzen – nie allein vor der Gruppe etwas darstellen.
+//   4. Clip nur, wenn er zum Fall passt – immer mit Aufträgen für vorher, beim Schauen, danach.
+//   5. Eine große Runde je Stunde (20–30 Minuten), das Material steht im Heft.
+//   6. Jede Stunde einer Ausgabe ist anders gebaut.
+import type { Baustein, Frage, Heft, Station, Stunde, Track } from '../typen'
+
+type Aktion = Omit<Extract<Baustein, { art: 'aktion' }>, 'art'>
+type Karte = { t: string; x?: string; marke?: string }
+
+/* ---------- Fragen ---------- */
+export const kreuz = (f: string, ...o: string[]): Frage => ({ f, kreuz: o })
+/** Kästchen untereinander (lange Antworten) */
+export const kreuzU = (f: string, ...o: string[]): Frage => ({ f, kreuz: o, unter: true })
+export const zeile = (f: string, n = 1): Frage => ({ f, linien: n })
+export const satz = (f: string, ...anfaenge: string[]): Frage => ({ f, satz: anfaenge })
+export const strich = (f: string, von: string, bis: string): Frage => ({ f, strich: [von, bis] })
+/** Stimmt / stimmt nicht – für Aussagen zum Ankreuzen */
+export const stimmt = (f: string, ...aussagen: string[]): Frage => ({ f, raster: { spalten: ['stimmt', 'stimmt nicht'], zeilen: aussagen } })
+/** Aufgaben leichter machen: höchstens eine freie Zeile je Frage */
+export const leicht = (l: Frage[]): Frage[] => l.map((f) => (f.linien && f.linien > 1 ? { ...f, linien: 1 } : f))
+
+/* ---------- Bausteine ---------- */
+export const text = (...x: string[]): Baustein => ({ art: 'text', x })
+export const fragen = (kontext: string | null, ...l: Frage[]): Baustein => ({ art: 'fragen', ...(kontext ? { kontext } : {}), fragen: l })
+export const karten = (spalten: number, hoehe: number, hinweis: string, l: Karte[], wort = false): Baustein => ({ art: 'karten', spalten, hoehe, hinweis, karten: l, ...(wort ? { wort: true } : {}) })
+export const tabelle = (breiten: string, kopf: string[], zeilen: string[][], hoehe?: number): Baustein => ({ art: 'tabelle', breiten, kopf, zeilen, ...(hoehe ? { hoehe } : {}) })
+export const merk = (x: string): Baustein => ({ art: 'merk', x })
+/** Sprechblasen: [wer, was] sagt · ['~wer', was] denkt · ['', was] Erzählsatz */
+export const blasen = (...z: [string, string][]): Baustein => ({ art: 'chat', zeilen: z.map(([wer, x]) => (wer === '' ? { wer: '', x, art: 'tut' as const } : wer.startsWith('~') ? { wer: wer.slice(1), x, art: 'denkt' as const } : { wer, x })) })
+
+/* ---------- Stationen ---------- */
+export const st = (titel: string, zeit: string, wie: string, icon: string, leitung: string, ...bausteine: Baustein[]): Station => ({ titel, zeit, wie, icon, leitung, bausteine })
+/** Ankommen: zwei Fragen nur für dich – die zweite wird am Ende der Stunde wieder gebraucht */
+export const ankommen = (untertitel: string, ...l: Frage[]): Station =>
+  st(`Ankommen: ${untertitel}`, '5 Min.', 'allein', 'door-enter', 'Still. Nichts vorlesen lassen – die Antwort wird am Ende der Stunde wieder gebraucht.',
+    fragen('Bevor es losgeht – nur für dich. Du brauchst es am Ende der Stunde noch einmal.', ...l))
+/** Fall aus der Szene des Tracks (Bild, Name, Text) mit Fragen – erst ankreuzen, dann höchstens eine Zeile */
+export const fall = (e: Track, titel: string, l: Frage[], opt: { zeit?: string; text?: string; zeitleiste?: [string, string][]; leitung?: string } = {}): Station =>
+  st(`Der Fall: ${titel}`, opt.zeit ?? '10 Min.', 'lesen · zu zweit', 'search', opt.leitung ?? 'Selbst vorlesen oder reihum lesen lassen. Die Fragen zu zweit, dann zwei Antworten hören.',
+    { art: 'fall', bild: e.szene.bild, name: e.szene.name, text: opt.text ?? e.szene.text, ...(opt.zeitleiste ? { zeitleiste: opt.zeitleiste } : {}), fragen: leicht(l) })
+/** Clip des Tracks mit Aufträgen: vorher (Tipp), beim Schauen (zwei Stichwörter), danach (zurück zum Fall) */
+export const clip = (e: Track, titel: string, vorher: Frage[], dabei: string[], nachher: Frage[], zeit = '12 Min.'): Station => {
+  if (!e.clip) throw new Error(`Track ${e.nr} „${e.titel}“ hat keinen Clip`)
+  return st(`Clip: ${titel}`, zeit, 'alle', 'player-play', 'Ausschnitt vorher ansehen und wählen. Erst „Vorher“ ankreuzen, dann schauen. „Danach“ zu zweit.',
+    { art: 'clip', clip: e.clip, vorher, dabei, nachher: leicht(nachher) })
+}
+/** Modell aus den Fakten des Tracks: je Punkt ein Symbol, auf Wunsch ein Warnzeichen */
+export const modell = (e: Track, titel: string, icons: string[], opt: { zeit?: string; intro?: string; warn?: string[]; warnTitel?: string; fragen?: Frage[]; leitung?: string } = {}): Station =>
+  st(`Das Modell: ${titel}`, opt.zeit ?? '10 Min.', 'alle', 'bulb', opt.leitung ?? 'Vorlesen, zu jedem Punkt ein Beispiel aus der Gruppe sammeln.',
+    ...(opt.intro ? [text(opt.intro)] : []),
+    { art: 'modell', ...(opt.warnTitel ? { warnTitel: opt.warnTitel } : {}), punkte: e.fakten.map((f, i) => ({ icon: icons[i] ?? 'point', t: f.t, x: f.x, ...(opt.warn?.[i] ? { warn: opt.warn[i] } : {}) })) },
+    ...(opt.fragen ? [fragen(null, ...leicht(opt.fragen))] : []))
+/** „Stimmt das?“ – die Mythen des Tracks zum Ankreuzen; die Auflösung steht bei den Lösungen der Leitung */
+export const stimmtDas = (e: Track, zeit = '8 Min.'): Station =>
+  st('Stimmt das?', zeit, 'allein · dann alle', 'help-circle', 'Erst still ankreuzen, dann Hand hoch: Wer hat „stimmt“? Die Auflösung steht bei den Lösungen.',
+    fragen('Drei Sätze, die man oft hört. Kreuz an – danach wird aufgelöst.', stimmt('Was denkst du?', ...e.mythen.map((m) => m[0]))))
+/** Die große Runde: Aktion für alle mit Material, Schritten, Runden, Variante zu dritt, Punkten und Auswertung */
+export const runde = (titel: string, zeit: string, wie: string, icon: string, a: Aktion, opt: { davor?: Baustein[]; danach?: Baustein[]; leitung?: string } = {}): Station =>
+  st(`Die große Runde: ${titel}`, zeit, wie, icon, opt.leitung ?? 'Material vorher bereitlegen. Niemand muss etwas vorführen. Fünf Minuten für die Auswertung lassen.',
+    ...(opt.davor ?? []), { art: 'aktion', ...a }, ...(opt.danach ?? []))
+/** Material-Seite zu einer Station (Karten zum Ausschneiden, Plan) */
+export const material = (titel: string, zuStation: number, ...bausteine: Baustein[]): Station => ({ titel: `Material: ${titel}`, zeit: '', wie: `zu Station ${zuStation}`, icon: 'scissors', fort: true, bausteine })
+export const fuerDich = (titel: string, zeit: string, ...bausteine: Baustein[]): Station =>
+  st(`Für dich: ${titel}`, zeit, 'allein', 'user', 'Stille Arbeit. Niemand muss etwas zeigen oder vorlesen.', ...bausteine)
+/** Schluss: eine Frage, die zum Anfang zurückführt, der Merksatz und die Aufgabe für die Woche (beides aus dem Track) */
+export const schluss = (e: Track, titel: string, l: Frage[], kaestchen: string[] = ['gemacht']): Station =>
+  st(`Schluss: ${titel}`, '5 Min.', 'alle', 'flag', 'Wer mag, liest vor. Wochenaufgabe ansagen – in der nächsten Stunde danach fragen.',
+    fragen(null, ...leicht(l)), merk(e.merk), { art: 'woche', x: e.woche, kaestchen })
+export const seite = (...stationen: Station[]): { stationen: Station[] } => ({ stationen })
+export const stunde = (frage: string, kannst: string[], ...seiten: { stationen: Station[] }[]): Stunde => ({ frage, dauer: 'etwa 90 Minuten', kannst, seiten })
+
+/* ---------- Eine Ausgabe auf Stunden umstellen ---------- */
+const WOERTER: [RegExp, string][] = [
+  [/Tracklist und Soundcheck/g, '„Das kommt“ und die Fragen zum Aufwärmen'], [/Tracklist/g, '„Das kommt“'], [/Soundcheck/g, 'Aufwärmen'], [/Hot Takes/g, 'Streitfragen'], [/Hot Take/g, 'Satz'],
+  [/im Abspann/g, 'auf der Seite „Zum Schluss“'], [/Abspann in der/g, '„Zum Schluss“ in der'], [/Abspann/g, '„Zum Schluss“'], [/Zusatz-Tracks/g, 'Zusatz-Stunden'], [/Tracks/g, 'Stunden'], [/Track/g, 'Stunde'],
+  [/Sessions/g, 'große Runden'], [/Session/g, 'große Runde'], [/Challenge/g, 'Aktion'], [/„Dein Move“/g, '„Für dich“'], [/Move A/g, 'Aufgabe A'], [/Move B/g, 'Aufgabe B'],
+]
+const neu = (x: string) => WOERTER.reduce((s, [a, b]) => s.replace(a, b), x)
+/** Setzt die Stunden ein und passt Wörter und Leitungsangaben der Ausgabe an (Aufruf am Ende von inhalt/mN.ts). */
+export function aufStunden(d: Heft, stunden: Stunde[], opt: { wozu?: string; geprueft?: string } = {}): Heft {
+  if (stunden.length !== d.tracks.length) throw new Error(`#${d.nr}: ${d.tracks.length} Tracks, aber ${stunden.length} Stunden`)
+  d.tracks.forEach((e, i) => {
+    e.stunde = stunden[i]
+    const stationen = stunden[i].seiten.flatMap((p) => p.stationen).filter((s) => !s.fort)
+    const aktionen = stunden[i].seiten.flatMap((p) => p.stationen).flatMap((s) => s.bausteine).flatMap((b) => (b.art === 'aktion' ? [b] : []))
+    e.titel = neu(e.titel); e.kurz = neu(e.kurz)
+    e.leitung = {
+      ...e.leitung,
+      einsatz: `Ablauf: ${stationen.map((s) => s.titel.split(':')[0]).join(' → ')}. Der Fall vom Anfang kommt bei Clip und Schluss wieder vor; die große Runde hat ihr Material im Heft. Niemand muss etwas vorspielen.`,
+      loesungen: [...e.leitung.loesungen.map(neu), `„Stimmt das?“ und Gespräch: ${e.mythen.map((m) => `„${m[0]}“ – ${m[1]}`).join(' · ')}`, ...(e.clip ? ['Clip: Die Antworten hängen vom gewählten Ausschnitt ab – bitte vorher ansehen.'] : [])],
+      impulse: e.leitung.impulse.map(neu),
+      material: [...new Set(aktionen.map((a) => a.material))].join('; ') + (e.clip ? '; Gerät für den Clip' : '') + '; Schere',
+      blaetter: neu(e.leitung.blaetter),
+    }
+  })
+  d.warm.titel = 'Zum Aufwärmen'
+  d.ansage.so = [
+    ['Stationen', 'Jede Stunde läuft von Station 1 bis zum Schluss. Oben auf der Seite siehst du, wo ihr gerade seid.'],
+    ['Fall', 'Eine erfundene Person, der etwas passiert. Sie kommt in der Stunde wieder vor.'],
+    ['Clip', 'Ein Video per QR-Code – mit Aufträgen für vorher, beim Schauen und danach.'],
+    ['Große Runde', 'Eine Aktion für alle. Die Karten dafür stehen im Heft. Niemand muss etwas vorspielen.'],
+  ]
+  d.ansage.text = d.ansage.text.map(neu); d.ansage.regeln = d.ansage.regeln.map(neu)
+  d.cover.zeilen = d.cover.zeilen.map(neu)
+  d.abspann.saetze = d.abspann.saetze.map(neu); d.abspann.posten = d.abspann.posten.map(neu); if (d.abspann.schluss) d.abspann.schluss = neu(d.abspann.schluss)
+  d.hot.unter = neu(d.hot.unter); d.hot.regeln = neu(d.hot.regeln)
+  d.quiz.unter = neu(d.quiz.unter); d.quiz.fragen.forEach((q) => { q.f = neu(q.f); q.o = q.o.map(neu) })
+  d.karten.forEach((k) => { k.titel = neu(k.titel); k.zeilen = k.zeilen.map(neu) })
+  const lt = d.leitung
+  lt.wozu = opt.wozu ?? `REAL TALK ist das Heft der Jugendlichen zu diesem Modul. Jede Einheit ist eine **zusammenhängende Stunde** mit Stationen: Der Fall vom Anfang kommt bei Clip und Schluss wieder vor, die große Runde (20–30 Minuten) hat ihre Karten im Heft, und jede Stunde ist anders gebaut. **Niemand muss etwas vorspielen:** Es wird gelesen, gezeigt, gelegt, gebaut und angekreuzt. Die Sprache ist einfach gehalten – erst ankreuzen, dann höchstens eine Zeile schreiben.`
+  lt.start = neu(lt.start); lt.schluss = neu(lt.schluss); lt.hot = neu(lt.hot); lt.achtung = neu(lt.achtung); lt.gespraech = neu(lt.gespraech); lt.hintergrund = neu(lt.hintergrund)
+  lt.hilfe = lt.hilfe.map(neu); lt.forder = lt.forder.map(neu); lt.druck = lt.druck.map(neu); lt.lernziele = lt.lernziele.map(neu)
+  lt.fakten = lt.fakten.map((x) => (x[0] === 'Dauer' ? [x[0], x[1].replace(/Einheiten à 100 Min\./, 'Stunden à etwa 90 Min.')] : x[0] === 'Material' ? [x[0], 'Schere, Stifte, Material der großen Runden'] : x)) as [string, string][]
+  if (opt.geprueft) d.geprueft = opt.geprueft
+  return d
+}

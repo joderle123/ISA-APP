@@ -1,6 +1,8 @@
 // REAL TALK #00 · NEU HIER – Modul 0 (Ankommen, Einheiten 1–3).
 // Inhalt als Daten (wird auch per Skript bearbeitet). Texte: **fett**, ==markiert==.
 import type { Heft } from '../typen'
+import { stunden } from './m0-stunden'
+import { aufStunden } from './stunden-hilfe'
 
 const d: Heft = {
   "id": "m0",
@@ -828,4 +830,8 @@ const d: Heft = {
   },
   "geprueft": "14.11.2026"
 }
+
+// Fassung mit Stunden (16.11.2026): Die Einheiten sind zusammenhängende Stunden (m0-stunden.ts). Die Angaben oben bleiben als Quelle;
+// gedruckt werden die Stunden.
+aufStunden(d, stunden(d), { geprueft: '16.11.2026' })
 export default d
