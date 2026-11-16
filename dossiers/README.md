@@ -20,7 +20,7 @@ drei Seiten nur für die Leitung.
 - `stil.css` – Gestaltung. Akzentfarbe je Ausgabe über `farbe` im Inhalt.
 - `pdf.cjs` – meldet „frei … mm“ je Seite. Negativ heißt Überlauf: Text kürzen oder Feld verkleinern.
 
-## Hefte mit Stunden (seit 16.11.2026 – Pilot: #01)
+## Hefte mit Stunden (seit 16.11.2026 – alle neun Hefte)
 
 Rückmeldung aus der Praxis: Die Doppelseiten wirkten zusammengewürfelt (Clip ohne Bezug und ohne Fragen, jede Seite gleich gebaut,
 Aktionen ohne Material). Deshalb ist eine Einheit jetzt eine **zusammenhängende Stunde** (`Track.stunde`, Aufbau in `typen.ts`,
@@ -46,7 +46,25 @@ gesetzt von `stunde-bau.ts`):
 - **Wörter:** Stunde statt Track, „Das kommt“ statt Tracklist, „Zum Aufwärmen“, „Streitfragen“, „Zum Schluss“. Die „Sessions“ entfallen
   (die Aktionen stehen in den Stunden). Die Leitung bekommt eine Seite „Der Ablauf der Stunden“ (Station, Zeit, Form, Seite, worauf es ankommt).
 
-Hefte ohne `stunde` (noch #00, #02–#08) werden unverändert als Doppelseiten gesetzt.
+**So ist es abgelegt:** Die alten Angaben je Track (Szene, Fakten, Moves, Mythen) bleiben in `inhalt/mN.ts` als Quelle. Die Stunden
+stehen in `inhalt/mN-stunden.ts` (`stunden(d)` und `loesungen`); am Ende von `mN.ts` stellt `aufStunden(d, stunden(d), { loesungen })`
+die Ausgabe um (Wörter, Einsatz, Material, Lösungen der Leitung). #01 ist von Hand geschrieben (`m1-stunden.ts` + Block am Ende von
+`m1.ts`). Die Kurzschreibweisen stehen in `inhalt/stunden-hilfe.ts` (`ankommen`, `fall`, `clip`, `modell`, `stimmtDas`, `runde`,
+`material`, `fuerDich`, `schluss` …). Hefte ohne `stunde` würden weiter als Doppelseiten gesetzt – es gibt aber keine mehr.
+
+**Die großen Runden** (je Stunde eine, Material im Heft): #00 eigene Regeln · Treffer-Jagd · Blind-Lotse — #01 Tank-Detektive · Brücke ·
+Stärken-Markt — #02 Wörter-Jagd · Pult-Wette · Song-Tipp · Chips setzen — #03 Druck-Tag · Atem-Labor · Sinnes-Labor · Kopf-Zirkel ·
+Skills-Notruf — #04 Zwei Filme · geheime Zählung · Tatort · Mut-Leiter — #05 drei Kanäle · Satz-Werkstatt · drei Felder · von unklar
+bis klar — #06 Tiere und Treppe · Nein-Baukasten · Kipp die Bühne — #07 gegen den Algorithmus · bevor ich sende · Schlagzeilen-Wette —
+#08 Schlaf-Auktion · Rucksack-Rennen · das Jahr in 16 Karten · Stärken-Post.
+
+**Seiten prüfen:** `pdf.cjs` meldet den freien Platz je Seite. Faustwerte: erste Seite einer Stunde (Kopf und Fahrplan) trägt Ankommen
+und ein bis zwei kurze Stationen; Fall 70–95 mm, Clip etwa 80 mm, Modell etwa 55 mm, große Runde 150–180 mm, Schluss 50–60 mm.
+Ab vier Stunden verteilt sich „Der Ablauf der Stunden“ auf mehrere Seiten; bei fünf Stunden entfällt die Stations-Kette auf „Das kommt“.
+
+**Clips umgehängt (16.11.2026):** #02 – der Clip über das Steuerpult der Gefühle gehört jetzt zu „Wer sitzt am Steuer?“; #04 – der Clip
+über Glaubenssätze gehört zu „Alte Sätze“. Ohne Clip (keiner passte zum Fall): #00 Stunde 1, #02 Stunde 4, #04 Stunde 1, #07 Stunde 2,
+#08 Stunde 3.
 
 Videos und Filme
 - `clip` je Track wird als QR-Code gedruckt. Nur Links eintragen, die über die oEmbed-Schnittstelle von
