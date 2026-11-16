@@ -1,6 +1,8 @@
 // REAL TALK #05 · GRENZEN – Modul 5 (Kommunikation & Grenzen, Einheiten 20–23).
 // Inhalt als Daten (wird auch per Skript bearbeitet). Texte: **fett**, ==markiert==.
 import type { Heft } from '../typen'
+import { loesungen, stunden } from './m5-stunden'
+import { aufStunden } from './stunden-hilfe'
 
 const d: Heft = {
   "id": "m5",
@@ -963,4 +965,8 @@ const d: Heft = {
   },
   "geprueft": "14.11.2026"
 }
+
+// Fassung mit Stunden (16.11.2026): Die Einheiten sind zusammenhängende Stunden (m5-stunden.ts). Die Angaben oben bleiben als Quelle;
+// gedruckt werden die Stunden.
+aufStunden(d, stunden(d), { geprueft: '16.11.2026', loesungen })
 export default d

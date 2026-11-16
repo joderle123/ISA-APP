@@ -91,7 +91,7 @@ export function aufStunden(d: Heft, stunden: Stunde[], opt: { wozu?: string; gep
     e.leitung = {
       ...e.leitung,
       einsatz: `Ablauf: ${stationen.map((s) => s.titel.split(':')[0]).join(' → ')}. Der Fall vom Anfang kommt bei Clip und Schluss wieder vor; die große Runde hat ihr Material im Heft. Niemand muss etwas vorspielen.`,
-      loesungen: [...(opt.loesungen?.[i] ?? e.leitung.loesungen.map(neu)), ...(!opt.loesungen?.[i] || stationen.some((s) => s.titel === 'Stimmt das?') ? [`„Stimmt das?“ und Gespräch: ${e.mythen.map((m) => `„${m[0]}“ – ${m[1]}`).join(' · ')}`] : []), ...(e.clip ? ['Clip: Die Antworten hängen vom gewählten Ausschnitt ab – bitte vorher ansehen.'] : [])],
+      loesungen: [...(opt.loesungen?.[i] ?? e.leitung.loesungen.map(neu)), ...(!opt.loesungen?.[i] || stationen.some((s) => s.titel === 'Stimmt das?') ? [`„Stimmt das?“ und Gespräch: ${e.mythen.map((m) => `„${m[0]}“ – ${m[1]}`).join(' · ')}`] : [])],
       impulse: e.leitung.impulse.map(neu),
       material: [...new Set(aktionen.map((a) => a.material))].join('; ') + (e.clip ? '; Gerät für den Clip' : '') + '; Schere',
       blaetter: neu(e.leitung.blaetter),
