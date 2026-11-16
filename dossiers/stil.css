@@ -662,5 +662,7 @@ table.t td:first-child { font-weight: 700; white-space: nowrap; }
 .lt .sd-abl td, .lt .sd-abl th { border: .3mm solid var(--k); padding: .8mm 1.8mm; text-align: left; vertical-align: top; }
 .lt .sd-abl th { background: var(--k); color: #fff; font-weight: 600; }
 .lt .sd-abl { table-layout: fixed; }
+/* Lösungen bei fünf Stunden: Blöcke fließen in zwei Spalten, damit beide gleich hoch werden */
+.lt .losfluss { columns: 2; column-gap: 5mm; } .lt .losfluss .los { break-inside: avoid; margin-bottom: 2.4mm; }
 .lt .sd-abl td:first-child { font-weight: 700; }
 .lt .sd-abl td:nth-child(2), .lt .sd-abl td:nth-child(4) { white-space: nowrap; }

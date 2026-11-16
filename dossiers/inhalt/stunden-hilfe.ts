@@ -36,39 +36,39 @@ export const blasen = (...z: [string, string][]): Baustein => ({ art: 'chat', ze
 export const st = (titel: string, zeit: string, wie: string, icon: string, leitung: string, ...bausteine: Baustein[]): Station => ({ titel, zeit, wie, icon, leitung, bausteine })
 /** Ankommen: zwei Fragen nur für dich – die zweite wird am Ende der Stunde wieder gebraucht */
 export const ankommen = (untertitel: string, ...l: Frage[]): Station =>
-  st(`Ankommen: ${untertitel}`, '5 Min.', 'allein', 'door-enter', 'Still. Nichts vorlesen lassen – die Antwort wird am Ende der Stunde wieder gebraucht.',
+  st(`Ankommen: ${untertitel}`, '5 Min.', 'allein', 'door-enter', 'Still. Die Antwort wird am Ende wieder gebraucht.',
     fragen('Bevor es losgeht – nur für dich. Du brauchst es am Ende der Stunde noch einmal.', ...l))
 /** Fall aus der Szene des Tracks (Bild, Name, Text) mit Fragen – erst ankreuzen, dann höchstens eine Zeile */
 export const fall = (e: Track, titel: string, l: Frage[], opt: { zeit?: string; text?: string; zeitleiste?: [string, string][]; leitung?: string } = {}): Station =>
-  st(`Der Fall: ${titel}`, opt.zeit ?? '10 Min.', 'lesen · zu zweit', 'search', opt.leitung ?? 'Selbst vorlesen oder reihum lesen lassen. Die Fragen zu zweit, dann zwei Antworten hören.',
+  st(`Der Fall: ${titel}`, opt.zeit ?? '10 Min.', 'lesen · zu zweit', 'search', opt.leitung ?? 'Vorlesen. Fragen zu zweit, dann zwei Antworten hören.',
     { art: 'fall', bild: e.szene.bild, name: e.szene.name, text: opt.text ?? e.szene.text, ...(opt.zeitleiste ? { zeitleiste: opt.zeitleiste } : {}), fragen: leicht(l) })
 /** Clip des Tracks mit Aufträgen: vorher (Tipp), beim Schauen (zwei Stichwörter), danach (zurück zum Fall) */
 export const clip = (e: Track, titel: string, vorher: Frage[], dabei: string[], nachher: Frage[], zeit = '12 Min.'): Station => {
   if (!e.clip) throw new Error(`Track ${e.nr} „${e.titel}“ hat keinen Clip`)
-  return st(`Clip: ${titel}`, zeit, 'alle', 'player-play', 'Ausschnitt vorher ansehen und wählen. Erst „Vorher“ ankreuzen, dann schauen. „Danach“ zu zweit.',
+  return st(`Clip: ${titel}`, zeit, 'alle', 'player-play', 'Ausschnitt vorher wählen. Erst „Vorher“ ankreuzen.',
     { art: 'clip', clip: e.clip, vorher, dabei, nachher: leicht(nachher) })
 }
 /** Modell aus den Fakten des Tracks: je Punkt ein Symbol, auf Wunsch ein Warnzeichen */
 export const modell = (e: Track, titel: string, icons: string[], opt: { zeit?: string; intro?: string; warn?: string[]; warnTitel?: string; fragen?: Frage[]; leitung?: string } = {}): Station =>
-  st(`Das Modell: ${titel}`, opt.zeit ?? '10 Min.', 'alle', 'bulb', opt.leitung ?? 'Vorlesen, zu jedem Punkt ein Beispiel aus der Gruppe sammeln.',
+  st(`Das Modell: ${titel}`, opt.zeit ?? '10 Min.', 'alle', 'bulb', opt.leitung ?? 'Vorlesen. Zu jedem Punkt ein Beispiel sammeln.',
     ...(opt.intro ? [text(opt.intro)] : []),
     { art: 'modell', ...(opt.warnTitel ? { warnTitel: opt.warnTitel } : {}), punkte: e.fakten.map((f, i) => ({ icon: icons[i] ?? 'point', t: f.t, x: f.x, ...(opt.warn?.[i] ? { warn: opt.warn[i] } : {}) })) },
     ...(opt.fragen ? [fragen(null, ...leicht(opt.fragen))] : []))
 /** „Stimmt das?“ – die Mythen des Tracks zum Ankreuzen; die Auflösung steht bei den Lösungen der Leitung */
 export const stimmtDas = (e: Track, zeit = '8 Min.'): Station =>
-  st('Stimmt das?', zeit, 'allein · dann alle', 'help-circle', 'Erst still ankreuzen, dann Hand hoch: Wer hat „stimmt“? Die Auflösung steht bei den Lösungen.',
+  st('Stimmt das?', zeit, 'allein · dann alle', 'help-circle', 'Erst still ankreuzen, dann auflösen (siehe Lösungen).',
     fragen('Drei Sätze, die man oft hört. Kreuz an – danach wird aufgelöst.', stimmt('Was denkst du?', ...e.mythen.map((m) => m[0]))))
 /** Die große Runde: Aktion für alle mit Material, Schritten, Runden, Variante zu dritt, Punkten und Auswertung */
 export const runde = (titel: string, zeit: string, wie: string, icon: string, a: Aktion, opt: { davor?: Baustein[]; danach?: Baustein[]; leitung?: string } = {}): Station =>
-  st(`Die große Runde: ${titel}`, zeit, wie, icon, opt.leitung ?? 'Material vorher bereitlegen. Niemand muss etwas vorführen. Fünf Minuten für die Auswertung lassen.',
+  st(`Die große Runde: ${titel}`, zeit, wie, icon, opt.leitung ?? 'Material bereitlegen. Fünf Minuten für die Auswertung.',
     ...(opt.davor ?? []), { art: 'aktion', ...a }, ...(opt.danach ?? []))
 /** Material-Seite zu einer Station (Karten zum Ausschneiden, Plan) */
 export const material = (titel: string, zuStation: number, ...bausteine: Baustein[]): Station => ({ titel: `Material: ${titel}`, zeit: '', wie: `zu Station ${zuStation}`, icon: 'scissors', fort: true, bausteine })
 export const fuerDich = (titel: string, zeit: string, ...bausteine: Baustein[]): Station =>
-  st(`Für dich: ${titel}`, zeit, 'allein', 'user', 'Stille Arbeit. Niemand muss etwas zeigen oder vorlesen.', ...bausteine)
+  st(`Für dich: ${titel}`, zeit, 'allein', 'user', 'Stille Arbeit. Niemand muss etwas zeigen.', ...bausteine)
 /** Schluss: eine Frage, die zum Anfang zurückführt, der Merksatz und die Aufgabe für die Woche (beides aus dem Track) */
 export const schluss = (e: Track, titel: string, l: Frage[], kaestchen: string[] = ['gemacht']): Station =>
-  st(`Schluss: ${titel}`, '5 Min.', 'alle', 'flag', 'Wer mag, liest vor. Wochenaufgabe ansagen – in der nächsten Stunde danach fragen.',
+  st(`Schluss: ${titel}`, '5 Min.', 'alle', 'flag', 'Wer mag, liest vor. Wochenaufgabe ansagen.',
     fragen(null, ...leicht(l)), merk(e.merk), { art: 'woche', x: e.woche, kaestchen })
 export const seite = (...stationen: Station[]): { stationen: Station[] } => ({ stationen })
 export const stunde = (frage: string, kannst: string[], ...seiten: { stationen: Station[] }[]): Stunde => ({ frage, dauer: 'etwa 90 Minuten', kannst, seiten })

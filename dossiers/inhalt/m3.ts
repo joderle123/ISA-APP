@@ -1,6 +1,8 @@
 // REAL TALK #03 · DRUCK – Modul 3 (Gefühle regulieren: Skills, Einheiten 11–15).
 // Inhalt als Daten (wird auch per Skript bearbeitet). Texte: **fett**, ==markiert==.
 import type { Heft } from '../typen'
+import { loesungen, stunden } from './m3-stunden'
+import { aufStunden } from './stunden-hilfe'
 
 const d: Heft = {
   "id": "m3",
@@ -1178,4 +1180,8 @@ const d: Heft = {
   ],
   "geprueft": "14.11.2026"
 }
+
+// Fassung mit Stunden (16.11.2026): Die Einheiten sind zusammenhängende Stunden (m3-stunden.ts). Die Angaben oben bleiben als Quelle;
+// gedruckt werden die Stunden.
+aufStunden(d, stunden(d), { geprueft: '16.11.2026', loesungen })
 export default d

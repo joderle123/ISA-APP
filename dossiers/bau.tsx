@@ -134,7 +134,7 @@ function baue(d: Heft): string {
   seiten.push({
     html: `<div>${neu ? kh('Das kommt', `${['', 'Eine Stunde', 'Zwei Stunden', 'Drei Stunden', 'Vier Stunden', 'Fünf Stunden', 'Sechs Stunden'][d.tracks.length]}, ein Thema: ${d.thema}`) : kh('Tracklist', `${['', 'Ein', 'Zwei', 'Drei', 'Vier', 'Fünf', 'Sechs'][d.tracks.length]} Tracks, ein Thema: ${d.thema}`)}
     <div class="inhalt">
-      <div class="tl">${d.tracks.map((e, i) => `<div class="t"><div class="z">${z2(i + 1)}</div><div class="tx"><h3>${t(e.titel)}</h3><p>${t(e.kurz)}</p>${e.stunde ? `<p style="color:var(--g);margin-top:.5mm;font-size:8.6pt">${stationen(e).map((x) => esc(kurzName(x.s))).join(' → ')}</p>` : ''}</div><div class="s mo">S. ${seiteVon(i)}</div></div>`).join('')}
+      <div class="tl">${d.tracks.map((e, i) => `<div class="t"><div class="z">${z2(i + 1)}</div><div class="tx"><h3>${t(e.titel)}</h3><p>${t(e.kurz)}</p>${e.stunde && nT < 5 ? `<p style="color:var(--g);margin-top:.5mm;font-size:8.6pt">${stationen(e).map((x) => esc(kurzName(x.s))).join(' → ')}</p>` : ''}</div><div class="s mo">S. ${seiteVon(i)}</div></div>`).join('')}
         <div class="t x"><div class="z">+</div><div class="tx"><h3>${neu ? '' : 'Sessions · '}${d.kino ? 'Kino · ' : ''}${neu ? 'Streitfragen' : 'Hot Takes'} · Code · Karten</h3><p>${neu ? '' : 'Aktionen für die ganze Gruppe, '}${d.kino ? (neu ? 'Der Film des Trimesters, ' : 'der Film des Trimesters, ') : ''}${neu && !d.kino ? 'Streiten' : 'Streiten'} nach Regeln, ein Quiz, Karten für die Tasche.</p></div><div class="s mo">S. ${neu ? S.kino : S.ses}</div></div></div>
       <div class="gr">${tape('users', neu ? 'Die Leute im Heft – alle erfunden' : 'Cast – alle erfunden, alles schon passiert')}
         <div class="cast">${d.cast.map((c) => `<div class="c"><div class="b"><div class="pk punkt"></div><div class="fig">${figur(c.bild)}</div></div><div class="tx"><h3>${t(c.name)}</h3><p>${t(c.x)}</p></div></div>`).join('')}</div></div>
@@ -307,10 +307,10 @@ function baue(d: Heft): string {
     })
   }
   seiten.push({
-    klasse: n > 4 || neu ? 'lt' : 'lt gross',
+    klasse: neu && n > 4 ? 'lt eng' : n > 4 || neu ? 'lt' : 'lt gross',
     html: `<div>${lkopf('Lösungen und Fragen für die Runde')}<div class="inhalt">
       <p class="klein">Bei offenen Fragen gibt es kein Richtig oder Falsch. Genannt ist, was häufig kommt und woran sich das Gespräch anknüpfen lässt.</p>
-      <div class="sp2">${d.tracks.map((e, i) => `<div class="los"><h3>${einheit} ${z2(i + 1)} · ${t(e.titel)}</h3><ul>${e.leitung.loesungen.map((x) => `<li>${t(x)}</li>`).join('')}</ul></div>`).join('')}</div>
+      <div class="${neu && n > 4 ? 'losfluss' : 'sp2'}">${d.tracks.map((e, i) => `<div class="los"><h3>${einheit} ${z2(i + 1)} · ${t(e.titel)}</h3><ul>${e.leitung.loesungen.map((x) => `<li>${t(x)}</li>`).join('')}</ul></div>`).join('')}</div>
       <div><h2>Fragen für die Runde</h2><table class="t">${d.tracks.map((e, i) => `<tr><td>${einheit} ${z2(i + 1)}</td><td>${e.leitung.impulse.map((x) => t(x)).join('<br>')}</td></tr>`).join('')}</table></div>
       <div class="sp2"><div class="kasten"><h2>${neu ? 'Streitfragen' : 'Hot Takes'}</h2><p>${t(lt.hot)}</p></div>
         <div class="kasten"><h2>Knack den Code</h2><p>Code: <strong>${wort}</strong></p><p>${quizLoesung.map(t).join(' · ')}</p></div></div>
