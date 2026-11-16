@@ -98,8 +98,10 @@ function baue(d: Heft): string {
   /** Sessions-Seiten: bis acht Aktionen zwei Seiten, sonst vier Aktionen je Seite; keine, wenn alle Aktionen in den Stunden stehen */
   const nSes = nAkt === 0 ? 0 : nAkt > 8 ? Math.ceil(nAkt / 4) : 2
   const S = { ses: seiteVon(nT), kino: seiteVon(nT) + nSes, hot: seiteVon(nT) + nSes + kk, code: seiteVon(nT) + nSes + 1 + kk, karten: seiteVon(nT) + nSes + 2 + kk, ab: seiteVon(nT) + nSes + 3 + kk }
+  /** Seiten „Der Ablauf der Stunden“ für die Leitung: höchstens drei Stunden je Seite, gleichmäßig verteilt */
+  const nAbl = neu ? Math.ceil(nT / 3) : 0
   /** Text mit Seiten-Platzhaltern: {K} Karten, {J} letzte Seite für Jugendliche, {L} Seiten der Leitung, {S} Sessions */
-  const tp = (x: string) => t(x.replace(/\{K\}/g, String(S.karten)).replace(/\{J\}/g, String(S.ab)).replace(/\{L\}/g, `${S.ab + 1}–${S.ab + (neu ? 4 : 3)}`).replace(/\{S\}/g, `${S.ses}–${S.ses + nSes - 1}`))
+  const tp = (x: string) => t(x.replace(/\{K\}/g, String(S.karten)).replace(/\{J\}/g, String(S.ab)).replace(/\{L\}/g, `${S.ab + 1}–${S.ab + 3 + nAbl}`).replace(/\{S\}/g, `${S.ses}–${S.ses + nSes - 1}`))
 
   // 1 Titel
   seiten.push({
@@ -292,15 +294,18 @@ function baue(d: Heft): string {
       <div class="kasten g"><h2>Wichtig für das Gespräch</h2><p>${t(lt.gespraech)}</p></div>
     </div></div>`,
   })
-  if (neu) seiten.push({
-    klasse: 'lt eng',
-    html: `<div>${lkopf('Der Ablauf der Stunden')}<div class="inhalt">
-      ${d.tracks.reduce((x, e) => x + stationen(e).length, 0) > 20 ? '' : `<p class="klein">Zeiten sind Richtwerte (100 Minuten mit Pause). Wird es eng: „Für dich“ kürzen, nicht die große Runde. Niemand muss etwas vorspielen.</p>`}
-      ${d.tracks.map((e, i) => `<div><h2>${einheit} ${z2(i + 1)} · ${t(e.titel)} (Einheit ${e.nr}) – ${t(e.stunde!.frage)}</h2>
+  for (let k = 0; k < nAbl; k++) {
+    const je = Math.ceil(nT / nAbl), teil = d.tracks.map((e, i) => ({ e, i })).slice(k * je, (k + 1) * je)
+    seiten.push({
+      klasse: 'lt eng',
+      html: `<div>${lkopf(`Der Ablauf der Stunden${nAbl > 1 ? ` (${k + 1} von ${nAbl})` : ''}`)}<div class="inhalt">
+      ${k > 0 || teil.reduce((x, y) => x + stationen(y.e).length, 0) > 20 ? '' : `<p class="klein">Zeiten sind Richtwerte (100 Minuten mit Pause). Wird es eng: „Für dich“ kürzen, nicht die große Runde. Niemand muss etwas vorspielen.</p>`}
+      ${teil.map(({ e, i }) => `<div><h2>${einheit} ${z2(i + 1)} · ${t(e.titel)} (Einheit ${e.nr}) – ${t(e.stunde!.frage)}</h2>
         <table class="sd-abl"><colgroup><col style="width:27%"><col style="width:9%"><col style="width:15%"><col style="width:5%"><col></colgroup><tr><th>Station</th><th>Zeit</th><th>Form</th><th>S.</th><th>Darauf kommt es an</th></tr>
         ${stationen(e).map((x) => `<tr><td>${x.nr} ${esc(kurzName(x.s))}</td><td>${esc(x.s.zeit)}</td><td>${esc(x.s.wie)}</td><td>${seiteVon(i) + x.seite}</td><td>${t(x.s.leitung ?? (e.leitung.stationen ?? [])[x.nr - 1] ?? '')}</td></tr>`).join('')}</table></div>`).join('')}
     </div></div>`,
-  })
+    })
+  }
   seiten.push({
     klasse: n > 4 || neu ? 'lt' : 'lt gross',
     html: `<div>${lkopf('Lösungen und Fragen für die Runde')}<div class="inhalt">

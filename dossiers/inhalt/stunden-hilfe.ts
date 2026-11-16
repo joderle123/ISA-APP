@@ -81,7 +81,7 @@ const WOERTER: [RegExp, string][] = [
 ]
 const neu = (x: string) => WOERTER.reduce((s, [a, b]) => s.replace(a, b), x)
 /** Setzt die Stunden ein und passt Wörter und Leitungsangaben der Ausgabe an (Aufruf am Ende von inhalt/mN.ts). */
-export function aufStunden(d: Heft, stunden: Stunde[], opt: { wozu?: string; geprueft?: string } = {}): Heft {
+export function aufStunden(d: Heft, stunden: Stunde[], opt: { wozu?: string; geprueft?: string; loesungen?: string[][] } = {}): Heft {
   if (stunden.length !== d.tracks.length) throw new Error(`#${d.nr}: ${d.tracks.length} Tracks, aber ${stunden.length} Stunden`)
   d.tracks.forEach((e, i) => {
     e.stunde = stunden[i]
@@ -91,7 +91,7 @@ export function aufStunden(d: Heft, stunden: Stunde[], opt: { wozu?: string; gep
     e.leitung = {
       ...e.leitung,
       einsatz: `Ablauf: ${stationen.map((s) => s.titel.split(':')[0]).join(' → ')}. Der Fall vom Anfang kommt bei Clip und Schluss wieder vor; die große Runde hat ihr Material im Heft. Niemand muss etwas vorspielen.`,
-      loesungen: [...e.leitung.loesungen.map(neu), `„Stimmt das?“ und Gespräch: ${e.mythen.map((m) => `„${m[0]}“ – ${m[1]}`).join(' · ')}`, ...(e.clip ? ['Clip: Die Antworten hängen vom gewählten Ausschnitt ab – bitte vorher ansehen.'] : [])],
+      loesungen: [...(opt.loesungen?.[i] ?? e.leitung.loesungen.map(neu)), ...(!opt.loesungen?.[i] || stationen.some((s) => s.titel === 'Stimmt das?') ? [`„Stimmt das?“ und Gespräch: ${e.mythen.map((m) => `„${m[0]}“ – ${m[1]}`).join(' · ')}`] : []), ...(e.clip ? ['Clip: Die Antworten hängen vom gewählten Ausschnitt ab – bitte vorher ansehen.'] : [])],
       impulse: e.leitung.impulse.map(neu),
       material: [...new Set(aktionen.map((a) => a.material))].join('; ') + (e.clip ? '; Gerät für den Clip' : '') + '; Schere',
       blaetter: neu(e.leitung.blaetter),
