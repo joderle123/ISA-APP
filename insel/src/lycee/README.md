@@ -29,6 +29,16 @@ alles zusammenpasst.
 - **Kapitel 4 „Nein sagen“** (kapitel4.js): Noah will abschreiben (Nein sagen und erklären) · Schwänzen und Vape
   hinter der Turnhalle · Hausaufgaben-Club mit den Aufgaben der Lehrperson · Streit zwischen Ben und Jo schlichten
   (Reihenfolge-Spiel) · ein Ziel für nächste Woche · Folgen kommen von Menschen (gleiche Fehler im Heft, Frau Sommer fragt).
+- **Kapitel 5 „Gerüchte“** (kapitel5.js): aus der Klassengruppe geworfen, ein Bild von dir geht rum (welches, hängt von
+  früher ab: Sturz an der Skate-Ecke, Fundkiste-Schuhe …) · Gerücht „du und Mila“ · schlechter Morgen nach Stress
+  zuhause (niemand muss erzählen) · zu Unrecht rausgeschickt · Freitag: was hängen bleibt (gefälschte Unterschrift?).
+- **Jugend-Kritik (17.11.2026, Panel K./S./D., Schnitt vorher 1,8 von 5)** umgesetzt: keine Glocke und keine Herzen
+  nach jeder Antwort (Tagesrückblick beim Tageswechsel, Stärken still im Journal), Antworten in gemischter
+  Reihenfolge, echte Versuchungen (Witz, Handy, Lügen, Decken, Screenshot, Mitlachen, Weggehen), Erwachsene mit
+  Macken und Grenzen (Kaya sagt, was er weitergeben muss; Hoffmann schickt den Falschen raus), Konflikte nicht am
+  selben Tag gelöst, späte Folgen über `merke` (Kantine → Skate-Ecke, Turnschuhe → Bild im Chat, Abschreiben →
+  Hoffmann, Portemonnaie → Freitag), neue Szenen Raucherecke am Tor, Skate-Ecke, Bäcker ohne Geld, WC-Portemonnaie.
+  Szenen mit `wenn` gibt es nur nach bestimmten Entscheidungen (SePAS, Hoffmann nach dem Abschreiben).
 - **Phase 2 – eigene Aufgaben** (lernen.js): Auf dem Titelbild „Für Lehrpersonen: eigene Aufgaben“ – Aufgabenpaket
   anlegen (Fach, Frage, 2–4 Antworten, richtige Antwort, Erklärung), als Datei speichern oder laden, auf Wunsch
   „Geschichte geht erst weiter, wenn gelöst“. Gespielt an der Lernstation im CDI (Mme Laurent, immer da) und im
@@ -46,4 +56,4 @@ Sitzen) · `steuerung.js` Laufen und Kamera · `geschichte.js` Kapitel, Gespräc
 `ui.js` Oberfläche · `spiel.js` Kern · `main.js`, `shell.html`, `stil.css`.
 
 ## Nächste Schritte
-Kapitel 5; Phase 2 ausbauen (Aufgaben aus dem Hub, mehr Lernmomente); Phase 3 (Werkstatt: Arbeitssimulator DAP/CCP).
+Kapitel 6; Phase 2 ausbauen (Aufgaben aus dem Hub, mehr Lernmomente); Phase 3 (Werkstatt: Arbeitssimulator DAP/CCP).

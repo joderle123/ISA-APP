@@ -48,10 +48,10 @@ export const SCHRITTE2 = [
     start: { teleport: 'eingangHof' },
     leute: HOF_DONNERSTAG,
     fertig: { ort: 'preau', r: 3.2, gespraech: 'chat' } },
-  { id: 'do_mila', kap: 2, tag: 'Donnerstag', uhr: 12.6, titel: 'Mila', ziel: 'Mila sitzt allein auf der Bank. Geh zu ihr.', marker: 'mila',
+  { id: 'do_mila', kap: 2, tag: 'Donnerstag', uhr: 12.6, titel: 'Mila', ziel: 'Mila sitzt allein auf der Bank.', marker: 'mila',
     leute: HOF_DONNERSTAG,
     fertig: { reden: 'mila', gespraech: 'milaChat' } },
-  { id: 'do_sepas', kap: 2, tag: 'Donnerstag', uhr: 12.8, titel: 'Beim SePAS', ziel: 'Geh mit Mila zum SePAS. Herr Kaya ist da.', marker: 'kaya',
+  { id: 'do_sepas', kap: 2, wenn: (m) => m.zuKaya && !m.keinKaya, tag: 'Donnerstag', uhr: 12.8, titel: 'Beim SePAS', ziel: 'Geh mit Mila zum SePAS. Herr Kaya ist da.', marker: 'kaya',
     leute: { kaya: [-12, -6.6, Math.PI], mila: [-13.4, -12.4, 0.3], noah: [10, -16, 1.5] },
     fertig: { reden: 'kaya', gespraech: 'kaya' } },
   { id: 'fr_test', kap: 2, tag: 'Freitag', uhr: 8.0, titel: 'Der Mathe-Test', ziel: 'Setz dich auf deinen Platz in Saal 1.04.', marker: 'meinPlatz',
@@ -73,36 +73,54 @@ export const GESPRAECHE2 = {
     ['erzaehler', 'Du öffnest deine Tasche. Die Turnschuhe … liegen zu Hause.'],
   ],
   sommer1: [
-    ['sommer', 'Guten Morgen! Ich bin Frau Sommer. Alle umgezogen?'],
+    ['sommer', 'Moien! Alle umgezogen? … {name}, Schuhe?'],
     { wahl: [
-      { t: 'Ich hab meine Turnschuhe vergessen. Sorry.', staerke: 'ehrlich', herz: { sommer: 2 }, dann: [
-        ['sommer', 'Danke, dass du es gleich sagst.'],
-        ['sommer', 'In der Fundkiste sind welche. Such dir ein Paar aus.'],
-        ['erzaehler', 'Die Schuhe sind etwas groß. Aber es geht.'] ] },
-      { t: 'Mir ist schlecht. Ich setz mich hin.', merke: 'bank', dann: [
-        ['sommer', 'Okay. Dann setz dich auf die Bank.'],
-        ['erzaehler', 'Von der Bank aus schaust du zu. Es ist langweilig.'],
-        ['sommer', 'Geht’s wieder? Turnschuhe gibt es übrigens in der Fundkiste.'],
-        ['erzaehler', 'Du nimmst ein Paar und machst mit.'] ] },
-      { t: '(In Socken mitmachen.)', dann: [
-        ['sommer', 'Stopp! In Socken rutschst du aus.'],
-        ['sommer', 'Schuhe vergessen? Kein Drama. Nimm welche aus der Fundkiste.'] ] },
+      { t: '„Vergessen. Sorry.“', staerke: 'ehrlich', herz: { sommer: 1 }, merke: 'fundkiste', dann: [
+        ['sommer', 'Fundkiste. Neben der Tür.'],
+        ['erzaehler', 'Ein Paar passt halb. Pink. Riecht nach Keller.'],
+        ['jo', 'Schicke Schuhe, {name}.'],
+        ['erzaehler', 'Ben lacht. Yusuf nicht.'] ] },
+      { t: '„Mir ist schlecht.“', merke: 'bank', dann: [
+        ['sommer', '(schaut dich lange an) … Bank.'],
+        ['sommer', 'Ich trag’s ein. Wie bei allen.'],
+        ['erzaehler', '50 Minuten Bank. Keiner lacht. Keiner redet mit dir.'] ] },
+      { t: '„Yusuf, hast du noch Schuhe?“', staerke: 'hilfe', herz: { yusuf: 1 }, merke: 'yusufSchuhe', dann: [
+        ['yusuf', 'Meine alten. Im Spind. Zwei Nummern zu groß.'],
+        ['yusuf', 'Wenn die wegkommen, bist du dran.'],
+        ['erzaehler', 'Du schlurfst. Aber du spielst mit.'] ] },
+      { t: '(In Socken loslaufen. Mal sehen.)', dann: [
+        ['sommer', 'Stopp! Socken geht nicht. Versicherung.'],
+        ['sommer', 'Fundkiste oder Bank. Such’s dir aus.'],
+        { wahl: [
+          { t: 'Fundkiste.', merke: 'fundkiste', dann: [['erzaehler', 'Pink. Riecht nach Keller. Jo grinst schon.']] },
+          { t: 'Bank.', merke: 'bank', dann: [['sommer', 'Eingetragen.']] },
+        ] } ] },
     ] },
   ],
   teams: [
-    ['sommer', 'Heute: Korbwurf in zwei Teams. Jo und Ben wählen.'],
-    ['jo', 'Ich nehm Yusuf. Und Ayla.'],
-    ['ben', 'Chiara! Und Noah.'],
-    ['jo', 'Dann … {name}.'],
-    ['erzaehler', 'Am Ende steht nur noch Lina da.'],
-    ['jo', 'Lina zuletzt. War ja klar.'],
-    ['erzaehler', 'Ein paar lachen. Lina schaut auf den Boden.'],
+    ['sommer', 'Korbwurf, zwei Teams. Jo und Ben wählen. Schnell.'],
+    ['jo', 'Yusuf. … Ayla.'],
+    ['ben', 'Chiara. Noah.'],
+    ['erzaehler', 'Nur noch du und Lina.'],
+    ['jo', '(zu Ben) Nimm du die Klavierspielerin. Ich bin großzügig.'],
+    ['erzaehler', 'Ein paar lachen. Lina schaut auf ihre Schuhe.'],
+    ['jo', '… {name}, komm.'],
     { wahl: [
-      { t: '„Lina, komm zu uns. Wir brauchen dich.“', staerke: 'einbeziehen', herz: { lina: 2, jo: -1 }, merke: 'linaTeam', dann: [
-        ['lina', '(leise) Okay.'], ['jo', 'Ja … komm halt.'] ] },
-      { t: '„Das war nicht nett, Jo.“', staerke: 'mut', herz: { lina: 1, jo: -1 }, dann: [
-        ['jo', 'Was denn? War nur Spaß.'], ['sommer', 'Hier wird niemand ausgelacht. Lina, du gehst zu Ben.'] ] },
-      { t: '(Nichts sagen.)', dann: [['erzaehler', 'Lina geht langsam zu Bens Team.']] },
+      { t: 'Mitgrinsen. Zu Jo gehen.', herz: { jo: 1, lina: -1 }, merke: 'linaGelacht', dann: [
+        ['jo', 'Siehste. {name} versteht Spaß.'],
+        ['erzaehler', 'Lina zieht die Ärmel über die Hände.'] ] },
+      { t: '„Großzügig. Wie bei deinen Freiwürfen.“', staerke: 'mut', herz: { jo: -1, ben: 1, lina: 1 }, merke: 'joGekontert', dann: [
+        ['ben', 'Hahaha!'],
+        ['jo', 'Pass auf, was du sagst.'],
+        ['erzaehler', 'Er lacht dabei. Die Augen nicht.'] ] },
+      { t: '„Ben, mit Lina gewinnst du eh.“', staerke: 'einbeziehen', herz: { lina: 1 }, merke: 'linaTeam', dann: [
+        ['ben', 'Na hoffentlich.'],
+        ['lina', '(schaut kurz hoch)'],
+        ['jo', 'Was bist du, ihr Trainer?'] ] },
+      { t: '„Können wir nicht einfach abzählen?“', staerke: 'klar', herz: { sommer: 1, jo: -1 }, dann: [
+        ['sommer', 'Nächstes Mal. Heute keine Zeit.'],
+        ['jo', '(leise) Streber.'] ] },
+      { t: '(Nichts sagen. Zu Jo gehen.)', dann: [['erzaehler', 'Lina geht zu Ben. Langsam.']] },
     ] },
     { tu: 'korbRunde' },
   ],
@@ -111,21 +129,25 @@ export const GESPRAECHE2 = {
     ['erzaehler', 'Brüche. Du verstehst die Aufgabe nicht.'],
   ],
   mathe: [
-    ['chiara', 'Hey {name}! Sitzt du auch an Mathe?'],
+    ['erzaehler', 'CDI. Chiara sitzt da. Ihr Heft ist voll.'],
+    ['chiara', 'Was ist? Ich muss noch Französisch.'],
     { wahl: [
-      { t: 'Ja. Kannst du mir das erklären?', staerke: 'hilfe', herz: { chiara: 2 }, merke: 'matheGefragt', dann: [['chiara', 'Klar! Stell dir eine Pizza vor.']] },
-      { t: 'Kann ich bei dir abschreiben?', dann: [['chiara', 'Hm. Dann kannst du es im Test aber nicht.'], ['chiara', 'Ich erklär’s dir lieber. Stell dir eine Pizza vor.']] },
-      { t: 'Nee, ich mach das später.', dann: [['chiara', 'Sicher? Ist echt nicht schwer.'], ['chiara', 'Schau: Stell dir eine Pizza vor.']] },
+      { t: '„Ich check Aufgabe 2 nicht. Gar nicht.“', staerke: 'hilfe', herz: { chiara: 1 }, merke: 'matheGefragt', dann: [
+        ['chiara', '(seufzt) Fünf Minuten. Dann muss ich echt.'] ] },
+      { t: '„Darf ich ein Foto von deinem Heft?“', dann: [
+        ['chiara', 'Kostet. Dein Dessert morgen.'],
+        { wahl: [
+          { t: '„Deal.“', herz: { chiara: 1 }, merke: 'matheFoto', dann: [
+            ['erzaehler', 'Klick. In zehn Sekunden fertig.'],
+            ['erzaehler', 'Verstanden hast du nichts. Aber es steht da.'] ] },
+          { t: '„Dann erklär lieber. Ist billiger.“', staerke: 'hilfe', merke: 'matheGefragt', dann: [
+            ['chiara', '(lacht kurz) Okay. Fünf Minuten.'] ] },
+        ] } ] },
+      { t: '„Mathe ist eh für nix gut.“ (Heft zu)', merke: 'matheZu', dann: [
+        ['chiara', 'Sag das Hoffmann am Freitag.'],
+        ['erzaehler', 'Du spielst auf dem Handy. Die Pause ist schnell weg.'] ] },
     ] },
-    ['chiara', 'Eine halbe Pizza und noch ein Viertel. Wie viel ist das?'],
-    { wahl: [
-      { t: '3/4 – drei Viertel', merke: 'matheRichtig', dann: [['chiara', 'Genau! Eine Hälfte sind zwei Viertel. Plus eins: drei.']] },
-      { t: '2/6', dann: [['chiara', 'Fast. Erst müssen die Stücke gleich groß sein.'], ['chiara', 'Eine Hälfte sind zwei Viertel. Plus eins: drei Viertel.']] },
-      { t: 'Keine Ahnung.', dann: [['chiara', 'Kein Ding. Eine halbe Pizza sind zwei Viertel.'], ['chiara', 'Plus ein Viertel: drei Viertel!']] },
-    ] },
-    ['du', 'Ah. Jetzt versteh ich’s.'],
-    ['chiara', 'Siehst du. Wenn du wieder hängst: einfach fragen.'],
-    { tu: 'lernkarte' },
+    { tu: 'matheErklaeren' },
   ],
   ag: [
     ['erzaehler', 'An der Pinnwand hängen Zettel für die AGs. Mittwochs ab 14 Uhr.'],
@@ -140,63 +162,139 @@ export const GESPRAECHE2 = {
     ] },
   ],
   chat: [
-    ['erzaehler', 'Donnerstag, Mittagspause. Dein Handy vibriert.'],
+    ['erzaehler', 'Mittagspause. Dein Handy vibriert. Nochmal. Und nochmal.'],
     { tu: 'chat' },
-    ['erzaehler', 'Ein Foto von Mila beim Essen. Mit Lach-Smileys.'],
+    ['erzaehler', 'Ein Foto von Mila. Mund voll, Augen halb zu.'],
+    ['erzaehler', 'Gesehen von 14. Mila ist auch dabei.'],
     { wahl: [
-      { t: 'Schreiben: „Lösch das bitte. Das ist nicht okay.“', staerke: 'mut', herz: { mila: 1, jo: -1, ayla: 1 }, merke: 'chatMut', dann: [
-        ['erzaehler', 'Ein paar Sekunden passiert nichts.'], ['erzaehler', 'Dann schreibt Ayla: „Ja, Jo. Lösch das.“'], ['erzaehler', 'Jo schreibt nichts mehr.'] ] },
-      { t: 'Einen Lach-Smiley schicken.', herz: { mila: -2, jo: 1 }, merke: 'chatGelacht', dann: [
-        ['erzaehler', 'Jo schreibt: „Haha genau 😂“'], ['erzaehler', 'Über den Hof siehst du Mila. Sie schaut auf ihr Handy.'] ] },
-      { t: 'Nichts schreiben. Das Handy wegstecken.', dann: [['erzaehler', 'Du steckst das Handy weg. Ein komisches Gefühl bleibt.']] },
+      { t: 'Ein 😂 schicken. Wie alle.', herz: { jo: 1, ben: 1, mila: -2 }, merke: 'chatGelacht', dann: [
+        ['erzaehler', 'Jo: „endlich jemand mit humor 😂“'],
+        ['erzaehler', 'Ben schickt dir privat ein Meme. Zum ersten Mal.'] ] },
+      { t: 'In die Gruppe: „Jo, echt jetzt?“', staerke: 'mut', herz: { jo: -2, mila: 1 }, merke: 'chatMut', dann: [
+        ['erzaehler', 'Jo: „wer hat dich gefragt 😂“'],
+        ['erzaehler', 'Ben: „😂😂“. Luca: „oha“.'],
+        ['erzaehler', 'Ayla ist online. Sie schreibt nichts.'],
+        ['erzaehler', 'Das Foto bleibt drin.'] ] },
+      { t: 'Mila privat: „alles ok?“', staerke: 'zuhoeren', herz: { mila: 1 }, merke: 'chatPrivat', dann: [
+        ['erzaehler', 'Zwei blaue Haken. Keine Antwort.'],
+        ['erzaehler', 'In der Gruppe kommen noch drei Smileys.'] ] },
+      { t: 'Screenshot machen. Nichts schreiben.', staerke: 'lesen', merke: 'chatBeweis', dann: [
+        ['erzaehler', 'Jetzt hast du ein Bild von dem Bild.'],
+        ['erzaehler', 'Was du damit machst, weißt du noch nicht.'] ] },
+      { t: 'Gruppe stummschalten. Weiteressen.', merke: 'chatStumm', dann: [
+        ['erzaehler', 'Ruhe. Das Essen ist kalt. Du isst trotzdem.'] ] },
     ] },
   ],
   milaChat: [
-    ['erzaehler', 'Mila sitzt allein. Ihre Augen sind rot.'],
+    ['erzaehler', 'Mila auf der Bank. Kapuze auf. Handy in der Hand.'],
     { tu: 'milaGelacht' },
-    ['mila', 'Warum macht Jo so was?'],
+    ['mila', 'Was willst du?'],
     { wahl: [
-      { t: 'Ich weiß es nicht. Wie geht es dir?', staerke: 'zuhoeren', herz: { mila: 2 }, dann: [['mila', 'Schlecht. Alle haben es gesehen.'], ['mila', 'Ich will morgen nicht kommen.']] },
-      { t: 'Vergiss es einfach.', dann: [['mila', 'So einfach ist das nicht.'], ['mila', 'Alle haben es gesehen.']] },
+      { t: '(Hinsetzen. Nichts sagen.)', staerke: 'warten', herz: { mila: 1 }, dann: [
+        ['erzaehler', 'Eine Minute. Zwei.'],
+        ['mila', 'Er macht einen Sticker draus. Hat er geschrieben.'] ] },
+      { t: '„Jo ist ein Idiot.“', herz: { mila: 1 }, dann: [
+        ['mila', 'Toll. Und? Alle haben’s trotzdem.'] ] },
+      { t: '„Ehrlich, man sieht fast nix.“', dann: [
+        ['mila', 'Lüg nicht. Ich hab’s gesehen.'] ] },
+      { t: '„Soll ich gehen?“', dann: [
+        ['mila', '… Nein. Bleib halt.'] ] },
     ] },
+    ['mila', 'Wenn das ein Sticker wird, komm ich nicht mehr.'],
     { wahl: [
-      { t: 'Sollen wir zusammen zum SePAS gehen?', staerke: 'hilfe', herz: { mila: 2 }, dann: [['mila', '…Kommst du mit?'], ['du', 'Klar.']] },
-      { t: 'Herr Kaya vom SePAS ist nett. Ich komm mit.', staerke: 'hilfe', herz: { mila: 1 }, dann: [['mila', 'Okay. Aber nur mit dir.']] },
+      { t: '„Komm, wir gehen zu Kaya.“', staerke: 'hilfe', merke: 'zuKaya', dann: [
+        ['mila', 'Spinnst du? Dann bin ich die Petze.'],
+        ['mila', 'Und Jo weiß sofort, wer’s war.'],
+        { wahl: [
+          { t: '„Dann sag ich, ich hab’s gemeldet.“', staerke: 'mut', herz: { mila: 2 }, merke: 'ichMelde', dann: [
+            ['mila', 'Das würdest du machen?'],
+            ['mila', '… Okay. Aber du redest.'] ] },
+          { t: '„Dann nicht. Deine Sache.“', merke: 'keinKaya', dann: [
+            ['mila', 'Ja. Meine Sache.'],
+            ['erzaehler', 'Es klingelt. Sie geht ohne dich rein.'] ] },
+        ] } ] },
+      { t: '„Ich schreib Jo. Privat.“', staerke: 'klar', merke: 'joPrivat', dann: [
+        ['erzaehler', 'Du schreibst: „lösch das. ist nicht lustig.“'],
+        ['erzaehler', 'Jo: „chill 😂“. Zehn Minuten später ist es weg.'],
+        ['erzaehler', 'Der Sticker ist schon bei Luca.'] ] },
+      { t: '„Mach ein Foto von ihm. Beim Nasebohren.“', staerke: 'humor', herz: { mila: 1 }, merke: 'racheIdee', dann: [
+        ['mila', '(kurzes Lachen)'],
+        ['mila', 'Dann geht’s erst richtig los. Nee.'] ] },
+      { t: '„Morgen redet keiner mehr drüber.“', merke: 'abgewiegelt', dann: [
+        ['mila', 'Du kennst die Leute hier nicht.'] ] },
     ] },
   ],
   kaya: [
-    ['kaya', 'Hallo ihr zwei. Kommt rein. Ich bin Herr Kaya.'],
-    ['mila', '(leise) Es geht um ein Foto im Klassenchat.'],
-    ['kaya', 'Gut, dass ihr gekommen seid.'],
-    ['kaya', 'Mila, magst du kurz allein mit mir reden?'],
-    ['mila', 'Ja. Danke, {name}.'],
-    ['kaya', 'Ich kümmere mich darum. Und du – wie geht’s dir damit?'],
+    ['erzaehler', 'Die Tür vom SePAS ist offen. Herr Kaya isst ein Brötchen.'],
+    ['kaya', 'Moment. (kaut) So. Was gibt’s?'],
+    ['erzaehler', 'Mila schaut auf den Boden.'],
     { wahl: [
-      { t: 'Ich fand es gemein. Ich wusste nicht, was ich tun soll.', staerke: 'ehrlich', herz: { kaya: 2 }, dann: [['kaya', 'Das kennen viele. Du bist mitgekommen. Das zählt.']] },
-      { t: 'Geht schon.', herz: { kaya: 1 }, dann: [['kaya', 'Okay. Meine Tür ist offen, wenn doch was ist.']] },
+      { t: '„Ein Foto von Mila. Im Klassenchat.“', staerke: 'klar', herz: { kaya: 1, mila: 1 }, dann: [] },
+      { t: '„Mila, sag du.“', herz: { mila: -1 }, dann: [['mila', '(leise) Ein Foto. Im Chat. Von mir.']] },
     ] },
-    ['erzaehler', 'Am Nachmittag ist das Foto aus dem Chat verschwunden.'],
+    { tu: 'kayaBeweis' },
+    ['kaya', 'Okay. Ich sag euch gleich, wie das läuft.'],
+    ['kaya', 'Das muss ich M. Hoffmann sagen. Nicht nur hier drin.'],
+    ['mila', 'Dann weiß Jo, dass wir’s waren.'],
+    ['kaya', 'Kann sein. Das kann ich nicht verhindern.'],
+    ['kaya', 'Wer hat es geschickt?'],
+    { wahl: [
+      { t: '„Jo.“', staerke: 'mut', herz: { mila: 1, jo: -2 }, merke: 'joGenannt', dann: [
+        ['kaya', 'Okay.'],
+        ['erzaehler', 'Er schreibt einen Namen auf einen Zettel.'] ] },
+      { t: '„Weiß nicht. Irgendwer.“', merke: 'keinName', dann: [
+        ['kaya', 'Ohne Namen kann ich wenig machen.'],
+        ['erzaehler', 'Mila schaut dich an. Lange.'] ] },
+      { t: '„Das soll Mila sagen.“', staerke: 'einbeziehen', herz: { mila: 2 }, merke: 'milaEntscheidet', dann: [
+        ['mila', '… Jo. Es war Jo.'] ] },
+    ] },
+    ['kaya', 'Ich red morgen mit ihm. Heute bin ich allein hier.'],
+    ['kaya', 'Mila, bleibst du noch? {name}, du kannst gehen.'],
+    ['erzaehler', 'Am Abend ist das Foto immer noch im Chat.'],
   ],
   test: [
     { tu: 'setzen' },
     ['hoffmann', 'Handys weg, bitte. Ihr habt 30 Minuten.'],
     ['erzaehler', 'Dein Herz klopft. Deine Hände sind kalt.'],
-    ['erzaehler', 'Ein Trick gegen Aufregung: langsam atmen.'],
-    { tu: 'atem' },
+    { wahl: [
+      { t: '(Augen zu. Vier rein, vier raus.)', dann: [{ tu: 'atem' }] },
+      { t: '(Einfach anfangen.)', dann: [] },
+      { t: '(Zu Noah rüberschauen. Der schwitzt auch.)', staerke: 'lesen', dann: [['noah', '(flüstert) Ich hab nix gelernt.']] },
+    ] },
     ['erzaehler', 'Du liest die erste Aufgabe. Okay. Die kennst du.'],
     { tu: 'testPizza' },
     ['hoffmann', 'Zeit ist um. Danke euch. Ihr bekommt ihn Montag zurück.'],
   ],
   klassenrat: [
-    ['hoffmann', 'Freitag ist Klassenrat. Was lief gut, was nicht?'],
-    ['hoffmann', 'Wer etwas sagt, macht eine Ich-Botschaft.'],
-    ['hoffmann', 'Also: Ich fühle mich … wenn … Ich wünsche mir …'],
-    ['hoffmann', '{name}, magst du anfangen?'],
+    { tu: 'milaFehlt' },
+    ['hoffmann', 'Klassenrat. Erster Punkt: der Klassenchat.'],
+    ['erzaehler', 'Alle schauen zu Mila. Dann zu Jo.'],
+    ['hoffmann', 'Mila, magst du erzählen, wie das für dich war?'],
+    ['erzaehler', 'Mila wird rot. Sie sagt nichts.'],
     { wahl: [
-      { t: 'Okay, ich versuch’s.', dann: [] },
-      { t: 'Lieber nicht. Darf ich erst zuhören?', dann: [['hoffmann', 'Klar.'], ['erzaehler', 'Ayla sagt etwas über die laute Kantine.'], ['hoffmann', 'Und du, {name}? Jetzt vielleicht?']] },
+      { t: '„Muss sie das jetzt vor allen sagen?“', staerke: 'mut', herz: { mila: 2, hoffmann: -1 }, merke: 'hoffmannGestoppt', dann: [
+        ['hoffmann', '… Nein. Stimmt. Sorry, Mila.'],
+        ['hoffmann', 'Dann anders: Was soll im Chat gelten?'] ] },
+      { t: '(Auf den Tisch schauen. Abwarten.)', dann: [
+        ['erzaehler', 'Zehn lange Sekunden.'],
+        ['mila', '(leise) War halt nicht so schön.'],
+        ['hoffmann', 'Danke. Was soll im Chat gelten?'] ] },
+      { t: '„Nächster Punkt: die Kantinen-Nudeln.“', staerke: 'humor', herz: { mila: 1, hoffmann: -1 }, merke: 'witzRat', dann: [
+        ['erzaehler', 'Die halbe Klasse lacht. Mila atmet aus.'],
+        ['hoffmann', '{name}. Bitte.'],
+        ['hoffmann', '… Gut. Was soll im Chat gelten?'] ] },
     ] },
-    { tu: 'ichBotschaft' },
+    ['jo', 'Ist doch nur ein Chat. Da schickt jeder Zeug.'],
+    { wahl: [
+      { t: '„Dann schick ich mal eins von dir.“', herz: { jo: -1, ben: 1 }, dann: [
+        ['ben', 'Uuuh.'], ['jo', 'Mach doch.'], ['hoffmann', 'Stopp. Beide.'] ] },
+      { t: '„Fotos nur, wenn der andere Ja sagt.“', staerke: 'klar', herz: { hoffmann: 1 }, merke: 'regelVorschlag', dann: [
+        ['jo', 'Oh Mann. Streber.'], ['ayla', 'Nee. Ich bin dafür.'] ] },
+      { t: '(Nichts sagen. Soll Hoffmann machen.)', dann: [
+        ['hoffmann', 'Dann schlag ich was vor: Fotos nur mit Ja.'], ['jo', '(verdreht die Augen)'] ] },
+    ] },
+    ['hoffmann', 'Abstimmung. Hände hoch.'],
+    ['erzaehler', 'Fast alle Hände. Jo hebt seine als Letzter. Halb.'],
   ],
   woche: [
     ['erzaehler', 'Freitag, 15:30 Uhr. Die erste Woche ist geschafft.'],
@@ -218,10 +316,11 @@ export const GESPRAECHE2 = {
 
 // Klassenchat (Handy-Bild): Absender, Text
 export const CHAT = [
-  { wer: 'Jo', text: '😂😂 schaut mal, Mila beim Essen', bild: true },
-  { wer: 'Ben', text: '😂' },
-  { wer: 'Luca', text: 'lol' },
-  { wer: 'Ayla', text: 'hä?' },
+  { wer: 'Jo', text: 'mila beim essen 💀', bild: true },
+  { wer: 'Ben', text: '😂😂' },
+  { wer: 'Luca', text: 'nein bitte 😭' },
+  { wer: 'Jo', text: 'sticker kommt gleich' },
+  { wer: 'Ayla', text: 'hä' },
 ];
 
 // Ich-Botschaft im Klassenrat: drei Teile; was ein Vorwurf ist, wird freundlich zurückgegeben

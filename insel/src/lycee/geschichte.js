@@ -117,12 +117,12 @@ export const GESPRAECHE = {
       { t: 'Ja. Ich bin {name}. Und du?', staerke: 'kontakt', herz: { noah: 2 }, dann: [
         ['noah', 'Noah. Ich komm in die 7P2.'],
         ['du', 'Ich auch! Dann sind wir in einer Klasse.'],
-        ['noah', 'Echt? Okay … das ist gut. Ich war nervös.'] ] },
+        ['noah', 'Echt? Okay. Gut.'] ] },
       { t: 'Ja. Weißt du, wo man sich melden muss?', staerke: 'hilfe', herz: { noah: 1 }, dann: [
         ['noah', 'Im Sekretariat, glaube ich. Links in der Halle.'],
         ['noah', 'Ich bin übrigens Noah. 7P2.'],
         ['du', '{name}. Auch 7P2.'] ] },
-      { t: '(Nur nicken.)', herz: { noah: 0 }, dann: [
+      { t: '(Kopfhörer drin lassen. Nicken.)', herz: { noah: 0 }, dann: [
         ['noah', 'Okay. Ich bin Noah.'],
         ['noah', 'Man muss wohl erst ins Sekretariat. Links in der Halle.'] ] },
     ] },
@@ -134,9 +134,9 @@ export const GESPRAECHE = {
     ['weber', '„… ja, genau. Nein, die Liste kommt heute …“'],
     ['erzaehler', 'Mme Weber telefoniert noch.'],
     { wahl: [
-      { t: '(Warten, bis sie fertig ist.)', staerke: 'warten', herz: { weber: 2 }, dann: [
+      { t: '(Warten. Handy raus.)', staerke: 'warten', herz: { weber: 1 }, dann: [
         ['erzaehler', 'Nach einer Minute legt sie auf.'],
-        ['weber', 'Danke fürs Warten! Was kann ich für dich tun?'] ] },
+        ['weber', '(legt auf) So. Was brauchst du?'] ] },
       { t: 'Entschuldigung … ich bin neu.', herz: { weber: 1 }, dann: [
         ['weber', 'Einen Moment bitte, ich telefoniere.'],
         ['erzaehler', 'Sie legt kurz danach auf.'],
@@ -151,7 +151,7 @@ export const GESPRAECHE = {
       { t: 'Ich weiß nicht, wo ich hin muss.', staerke: 'hilfe', herz: { weber: 1 }, dann: [['weber', 'Kein Problem. Wie heißt du?'], ['du', '{name}. 7P2.']] },
     ] },
     ['weber', 'Hier, dein Stundenplan. Saal 1.04, im Gang links.'],
-    ['weber', 'Wenn etwas ist: Die Tür hier ist immer offen.'],
+    ['weber', 'Bis 16 Uhr bin ich da. Nicht 16:05.'],
     { tu: 'stundenplan' },
   ],
   gang: [
@@ -163,7 +163,7 @@ export const GESPRAECHE = {
         ['kenan', 'Neu hier? Viel Glück bei Hoffmann. Der ist okay.'] ] },
       { t: '(Einfach durchdrängeln.)', herz: { kenan: -1, dario: -1 }, merke: 'gedraengelt', dann: [
         ['kenan', 'Ey! Geht’s noch?'],
-        ['dario', 'Lass. Der ist neu.'],
+        ['dario', 'Lass. Neu hier.'],
         ['erzaehler', 'Sie schauen dir nach. Ein komisches Gefühl.'] ] },
       { t: '(Warten, bis sie weggehen.)', merke: 'gewartet', dann: [
         ['erzaehler', 'Sie reden weiter. Dann klingelt es.'],
@@ -180,6 +180,7 @@ export const GESPRAECHE = {
     ['hoffmann', 'Finde für jedes Feld jemanden. Einfach fragen.'],
     { wahl: [
       { t: 'Okay, verstanden.', dann: [] },
+      { t: '„Muss ich?“', dann: [['hoffmann', 'Ja. Aber nur zehn Minuten.'], ['jo', '(stöhnt laut)']] },
       { t: 'Muss ich dann was über mich erzählen?', staerke: 'hilfe', herz: { hoffmann: 1 }, dann: [
         ['hoffmann', 'Nur, wenn du willst. Du darfst auch nur fragen.'] ] },
     ] },
@@ -218,7 +219,7 @@ export const GESPRAECHE = {
       { t: 'Ja. Spielst du was auf dem Handy?', herz: { mila: 1 }, dann: [
         ['mila', 'Nur so ein Puzzle-Spiel.'], ['mila', 'Wenn alles zu laut ist, hilft das.'] ] },
     ] },
-    ['mila', 'Danke, dass du gekommen bist.'],
+    ['erzaehler', 'Sie rutscht ein Stück. Platz für dich.'],
   ],
   freiwurf: [
     ['ben', 'Hey, du! Spielst du mit? Freiwürfe!'],
@@ -233,28 +234,37 @@ export const GESPRAECHE = {
     ] },
   ],
   kantine: [
-    ['kremer', 'Hallo! Nudeln oder Gemüse-Curry?'],
-    ['erzaehler', 'Da schiebt sich jemand vor dich. Mit Tablett.'],
-    ['luca', 'Einmal Nudeln, bitte.'],
+    ['kremer', 'Nächster! Nudeln oder Curry? Zack, zack.'],
+    ['erzaehler', 'Luca schiebt sich vor dich. Zwei Kumpels hinter ihm.'],
+    ['luca', 'Dreimal Nudeln. Wir haben’s eilig.'],
     { wahl: [
-      { t: '„Hey, ich war gerade dran.“', staerke: 'klar', herz: { luca: 0, kremer: 1 }, dann: [
-        ['luca', 'Oh. Hab dich nicht gesehen.'],
-        ['luca', 'Sorry. Geh vor.'],
-        ['kremer', 'Danke. So, was darf’s sein?'] ] },
-      { t: '(Tief durchatmen. Nichts sagen.)', staerke: 'ruhig', dann: [
-        ['erzaehler', 'Es nervt. Aber es sind nur zwei Minuten.'],
-        ['kremer', 'So, jetzt du. Was darf’s sein?'] ] },
-      { t: '„Ey! Hinten anstellen!“', herz: { luca: -1 }, dann: [
-        ['luca', 'Chill mal. Ich hab’s eilig.'],
-        ['kremer', 'Bitte nicht streiten. Du bist dran.'],
-        ['erzaehler', 'Dein Herz klopft noch eine Weile.'] ] },
+      { t: '„Ey. Ich war dran.“', staerke: 'klar', herz: { luca: -1 }, merke: 'lucaAngelegt', dann: [
+        ['luca', '(dreht sich langsam um) Und?'],
+        ['erzaehler', 'Die Kumpels grinsen. Hinter dir wird es still.'],
+        { wahl: [
+          { t: '„Und hinten ist noch Platz.“', staerke: 'mut', herz: { kremer: 1 }, dann: [
+            ['kremer', 'Stimmt. Luca, nach hinten. Jeden Tag dasselbe.'],
+            ['luca', '(leise, im Vorbeigehen) Merk ich mir.'] ] },
+          { t: '„… Schon gut.“', dann: [
+            ['luca', 'Dacht ich mir.'],
+            ['erzaehler', 'Die Kumpels lachen. Du bist trotzdem gleich dran.'] ] },
+        ] } ] },
+      { t: '(Nichts sagen. Aufs Handy schauen.)', staerke: 'ruhig', dann: [
+        ['kremer', 'So. Nudeln sind aus. Nur noch Curry.'] ] },
+      { t: '„Nimmst du mir eine mit?“', staerke: 'humor', herz: { luca: 1 }, merke: 'lucaWitz', dann: [
+        ['luca', '(kurzes Grinsen) Frech.'],
+        ['erzaehler', 'Er bleibt vor dir. Aber er nickt dir zu.'] ] },
+      { t: '(Frau Kremer anschauen. Augen verdrehen.)', herz: { kremer: 1, luca: -1 }, merke: 'lucaGepetzt', dann: [
+        ['kremer', 'Ich seh’s. Luca. Hinten anstellen.'],
+        ['luca', 'Echt jetzt? Petze.'],
+        ['erzaehler', 'Er rempelt dich an. Wie aus Versehen.'] ] },
     ] },
     { wahl: [
       { t: 'Nudeln, bitte.', dann: [] },
       { t: 'Das Curry, bitte.', dann: [] },
-      { t: 'Was ist im Curry drin?', staerke: 'hilfe', herz: { kremer: 1 }, dann: [['kremer', 'Linsen, Gemüse, Reis. Ein bisschen scharf.'], ['du', 'Dann das, bitte.']] },
+      { t: '(Auf das zeigen, was noch da ist.)', dann: [['kremer', 'Gute Wahl. Ist eh das Einzige.']] },
     ] },
-    ['kremer', 'Guten Appetit!'],
+    ['kremer', 'Guten Appetit.'],
     { tu: 'tablett' },
   ],
   tisch_noah: [
@@ -275,21 +285,24 @@ export const GESPRAECHE = {
     { tu: 'gegessen' },
   ],
   gruppe: [
-    ['hoffmann', 'Gruppenarbeit! Ein Plakat: „Unser Lycée“.'],
-    ['hoffmann', 'Ihr drei: Jo, Lina und {name}. 20 Minuten.'],
-    ['jo', 'Okay, ich mach das. Ich hab schon eine Idee.'],
-    ['jo', 'Wir malen einfach das Gebäude. Fertig.'],
-    ['erzaehler', 'Lina sagt nichts. Sie hält einen Stift in der Hand.'],
+    ['hoffmann', 'Plakat: „Unser Lycée“. Ihr drei. 20 Minuten. Los.'],
+    ['jo', 'Ich mal das Gebäude. Ihr malt aus. Fertig.'],
+    ['erzaehler', 'Lina schiebt dir einen Zettel rüber.'],
+    ['erzaehler', 'Darauf steht: „Orte, wo man sich wohlfühlt?“'],
     { wahl: [
-      { t: 'Lina, hast du auch eine Idee?', staerke: 'einbeziehen', herz: { lina: 2 }, merke: 'linaGefragt', dann: [
-        ['lina', '(leise) Vielleicht … Orte, wo man sich wohlfühlt?'],
-        ['jo', 'Hm. Das ist eigentlich gut.'] ] },
-      { t: 'Wir könnten aufteilen: Jeder macht einen Teil.', staerke: 'fair', herz: { jo: 1, lina: 1 }, merke: 'aufgeteilt', dann: [
-        ['jo', 'Okay. Ich mach das Gebäude.'],
-        ['lina', 'Ich kann schreiben. Ich hab eine schöne Schrift.'] ] },
-      { t: 'Okay, Jo, mach du.', herz: { jo: 1 }, merke: 'joMacht', dann: [
-        ['jo', 'Cool. Ihr könnt ausmalen.'],
-        ['erzaehler', 'Lina malt aus. Sie sieht ein bisschen enttäuscht aus.'] ] },
+      { t: '„Jo, Lina hat ’ne bessere Idee.“', staerke: 'einbeziehen', herz: { lina: 1, jo: -1 }, merke: 'linaGefragt', dann: [
+        ['lina', '(wird rot) Ist nicht so wichtig …'],
+        ['jo', 'Welche Idee? Zeig.'],
+        ['jo', '… Hm. Okay. Aber das Gebäude mal ich.'] ] },
+      { t: 'Die Idee laut sagen. Als deine.', herz: { jo: 1 }, merke: 'ideeGeklaut', dann: [
+        ['jo', 'Okay, das ist gut. Machen wir.'],
+        ['erzaehler', 'Lina nimmt den Zettel zurück. Sie knüllt ihn klein.'] ] },
+      { t: 'Zurückschreiben: „Gut. Sag du’s.“', herz: { lina: 1 }, merke: 'zettel', dann: [
+        ['erzaehler', 'Lina liest. Schüttelt den Kopf.'],
+        ['jo', 'Was schreibt ihr da? Liebesbriefe?'],
+        ['erzaehler', 'Jo malt das Gebäude.'] ] },
+      { t: '(Jo machen lassen. Handy unterm Tisch.)', merke: 'joMacht', dann: [
+        ['erzaehler', '18 Minuten Ruhe. Jo malt. Lina malt aus. Du scrollst.'] ] },
     ] },
     { tu: 'plakat' },
     ['hoffmann', 'Zeit! Zeigt mal her.'],
@@ -315,12 +328,13 @@ export const GESPRAECHE = {
 import { SCHRITTE2, GESPRAECHE2, LEUTE2, STAERKEN2 } from './kapitel2.js';
 import { SCHRITTE3, GESPRAECHE3, LEUTE3, STAERKEN3 } from './kapitel3.js';
 import { SCHRITTE4, GESPRAECHE4, LEUTE4, STAERKEN4 } from './kapitel4.js';
-export const KAPITEL = { 1: 'Rentrée', 2: 'Die erste Woche', 3: 'Der Schnuppertag', 4: 'Nein sagen' };
+import { SCHRITTE5, GESPRAECHE5, STAERKEN5 } from './kapitel5.js';
+export const KAPITEL = { 1: 'Rentrée', 2: 'Die erste Woche', 3: 'Der Schnuppertag', 4: 'Nein sagen', 5: 'Gerüchte' };
 for (const st of SCHRITTE) { st.kap = st.kap || 1; st.tag = st.tag || 'Montag'; }
-SCHRITTE.push(...SCHRITTE2, ...SCHRITTE3, ...SCHRITTE4);
-Object.assign(GESPRAECHE, GESPRAECHE2, GESPRAECHE3, GESPRAECHE4);
+SCHRITTE.push(...SCHRITTE2, ...SCHRITTE3, ...SCHRITTE4, ...SCHRITTE5);
+Object.assign(GESPRAECHE, GESPRAECHE2, GESPRAECHE3, GESPRAECHE4, GESPRAECHE5);
 Object.assign(LEUTE, LEUTE2, LEUTE3, LEUTE4);
-Object.assign(STAERKEN, STAERKEN2, STAERKEN3, STAERKEN4);
+Object.assign(STAERKEN, STAERKEN2, STAERKEN3, STAERKEN4, STAERKEN5);
 
 // Sprecher-Namen und Farben (Erzähler, du)
 export const SPRECHER = { erzaehler: { name: '', farbe: '#5b6472' }, du: { name: 'Du', farbe: '#2b3a55' } };

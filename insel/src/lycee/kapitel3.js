@@ -41,6 +41,10 @@ export const SCHRITTE3 = [
   { id: 'k3_feedback', kap: 3, tag: 'Montag', uhr: 11.8, titel: 'Wie war’s?', ziel: 'Meister Becker sagt dir, wie es lief.', marker: 'becker',
     leute: { becker: [-48, -13, 0], kenan: [-45.4, -12.6, -1.2, 'redet'], mila: [-50.6, -11.8, 1.6, 'redet'] },
     fertig: { reden: 'becker', gespraech: 'feedback' } },
+  { id: 'k3_tor', kap: 3, tag: 'Montag', uhr: 12.65, titel: 'Am Tor', ziel: 'Mittagspause. Kenan winkt dir vom Tor.', marker: 'kenan',
+    start: { teleport: 'eingangHof' },
+    leute: { kenan: [1.2, 38.6, Math.PI, 'winkt'], dario: [-0.6, 39.2, 2.8, 'redet'], hoffmann: [6, 24, -2.4] },
+    fertig: { reden: 'kenan', gespraech: 'tor' } },
   { id: 'k3_heim', kap: 3, tag: 'Montag', uhr: 15.5, titel: 'Heimweg', ziel: 'Geh zur Bushaltestelle. Diesmal bist du pünktlich.', marker: 'bus',
     start: { teleport: 'eingang' },
     leute: { noah: [-21.5, 42.2, 0.3], mila: [-23.5, 42.4, -0.3], kenan: [-27, 41.6, 0.4], fahrer: [-11.2, 44.6, -Math.PI / 2] },
@@ -84,13 +88,14 @@ export const GESPRAECHE3 = {
     ['hoffmann', 'Ah, da seid ihr. Mme Weber hat Bescheid gesagt.'],
     { wahl: [
       { t: 'Entschuldigung. Wir haben den Bus verpasst.', staerke: 'ehrlich', herz: { hoffmann: 1 }, dann: [['hoffmann', 'Passiert. Danke fürs Anrufen.']] },
-      { t: '(Schnell hinsetzen.)', dann: [['hoffmann', 'Ein kurzes „Entschuldigung“ wäre schön gewesen.'], ['du', '… Entschuldigung.']] },
+      { t: '(Schnell hinsetzen.)', dann: [['jo', 'Guten Morgen, Hoheit.'], ['erzaehler', 'Ein paar lachen. Hoffmann schreibt weiter.']] },
     ] },
     ['hoffmann', 'Heute ist Schnuppertag im Atelier. Ihr geht gleich zu Meister Becker.'],
     ['hoffmann', 'Wer später eine Ausbildung machen will: gut hinschauen.'],
   ],
   regeln: [
-    ['becker', 'Morgen. Ich bin Meister Becker. Hier wird gearbeitet, nicht gespielt.'],
+    ['becker', 'Morgen. Becker. Hier wird gearbeitet.'],
+    ['erzaehler', 'Er hebt die linke Hand. Ein Finger ist kürzer.'],
     ['becker', 'Bevor jemand eine Säge anfasst: Was machst du zuerst?'],
     { wahl: [
       { t: 'Schutzbrille auf und Haare zusammen.', staerke: 'sicher', herz: { becker: 2 }, dann: [['becker', 'Genau. Und das Handy?'], ['du', 'In die Tasche.'], ['becker', 'Gut. Du darfst gleich anfangen.']] },
@@ -106,11 +111,11 @@ export const GESPRAECHE3 = {
   ],
   kenanTeam: [
     ['becker', 'Jetzt ein kleines Regal. Immer zu zweit. {name}, du mit Kenan.'],
-    ['kenan', 'Okay, Neuer. Kannst du schrauben?'],
+    ['kenan', 'Okay. Kannst du schrauben?'],
     { wahl: [
       { t: 'Nicht so gut. Zeigst du es mir?', staerke: 'hilfe', herz: { kenan: 2 }, dann: [['kenan', 'Klar. Erst vorbohren, dann schrauben. Schau.'], ['erzaehler', 'Kenan zeigt es dir. Beim dritten Mal kannst du es.']] },
       { t: 'Klar, kein Problem.', dann: [['erzaehler', 'Die erste Schraube geht schief.'], ['kenan', 'Halt. Erst vorbohren. Ich zeig’s dir.']] },
-      { t: 'Mach du. Ich halte.', dann: [['kenan', 'Nee, du lernst es. Ich halte, du schraubst.']] },
+      { t: 'Mach du. Ich halte.', dann: [['kenan', 'Okay. Dann lernst du halt nix. Mir egal.'], ['erzaehler', 'Kenan schraubt. Du hältst. Es geht schnell.']] },
     ] },
     ['erzaehler', 'Nach einer halben Stunde steht das Regal. Es wackelt kaum.'],
     ['kenan', 'Nicht schlecht für den ersten Tag.'],
@@ -120,8 +125,8 @@ export const GESPRAECHE3 = {
     { tu: 'beckerLob' },
     ['becker', 'Was ich mir wünsche: langsamer. Erst messen, dann sägen.'],
     { wahl: [
-      { t: 'Okay. Darauf achte ich nächstes Mal.', staerke: 'rueckmeldung', herz: { becker: 2 }, dann: [['becker', 'Gut. Mehr will ich gar nicht.']] },
-      { t: 'Aber die anderen waren auch schnell!', dann: [['becker', 'Ich rede gerade mit dir, nicht mit den anderen.'], ['becker', 'Denk mal drüber nach.']] },
+      { t: 'Okay. Langsamer.', staerke: 'rueckmeldung', herz: { becker: 1 }, dann: [['becker', 'Gut.']] },
+      { t: 'Aber die anderen waren auch schnell!', dann: [['becker', 'Ich rede gerade mit dir. Nicht mit den anderen.'], ['erzaehler', 'Er geht zur nächsten Werkbank.']] },
       { t: '(Nicken.)', herz: { becker: 1 }, dann: [['becker', 'Gut.']] },
     ] },
     ['becker', 'Und? Wär so was was für dich – später?'],
@@ -131,13 +136,51 @@ export const GESPRAECHE3 = {
       { t: 'Eher was anderes. Vielleicht mit Menschen.', staerke: 'entscheiden', merke: 'berufMenschen', dann: [['becker', 'Auch gut. Dann frag mal beim SePAS nach Praktika.']] },
     ] },
   ],
+  tor: [
+    ['erzaehler', 'Am Tor. Kenan und Dario rauchen. Einen Schritt draußen.'],
+    ['kenan', 'Hey, Regal-Partner. Willst du?'],
+    ['erzaehler', 'Er hält dir die Schachtel hin. Dario schaut zu.'],
+    { wahl: [
+      { t: '„Nee. Schmeckt wie Aschenbecher.“', staerke: 'neinsagen', dann: [
+        ['dario', 'Schon mal Aschenbecher gegessen, oder was?'],
+        ['kenan', '(lacht) Lass. Mehr für uns.'] ] },
+      { t: 'Eine nehmen. Nur halten.', herz: { kenan: 1, dario: 1 }, merke: 'zigiGehalten', dann: [
+        ['dario', 'Hältst du die nur zum Angeben?'],
+        ['kenan', 'Lass. Jeder, wie er will.'] ] },
+      { t: 'Eine nehmen. Anzünden.', herz: { kenan: 1, dario: 1 }, merke: 'geraucht', dann: [
+        ['erzaehler', 'Der Rauch brennt im Hals. Du verziehst keine Miene.'],
+        ['dario', 'Ach. Machst du das schon länger?'] ] },
+      { t: '„Ich steh nur. Raucht ihr mal.“', staerke: 'lesen', herz: { kenan: 1 }, dann: [
+        ['kenan', 'Okay. Auch gut.'] ] },
+    ] },
+    ['erzaehler', 'M. Hoffmann kommt über den Hof. Gelbe Weste. Aufsicht.'],
+    ['dario', 'Mist.'],
+    ['erzaehler', 'Kenan wirft seine Kippe. Sie landet vor deinen Füßen.'],
+    ['hoffmann', 'So. Wem gehört die?'],
+    { wahl: [
+      { t: '„Mir nicht.“ (Schulterzucken)', herz: { kenan: 1 }, merke: 'kenanGedeckt', dann: [
+        ['hoffmann', 'Aha. Vom Himmel gefallen.'],
+        ['hoffmann', 'Alle drei: Namen. Ich red mit den Klassenlehrern.'],
+        ['hoffmann', 'Bei dir … also mit mir. Toll.'] ] },
+      { t: '„Die ist von Kenan.“', staerke: 'ehrlich', herz: { kenan: -3, hoffmann: 1 }, merke: 'kenanVerpfiffen', dann: [
+        ['kenan', '(starrt dich an) Wow.'],
+        ['hoffmann', 'Kenan, mitkommen. {name}, rein mit dir.'] ] },
+      { t: '„Meine.“ (Aufheben. Austreten.)', staerke: 'loyal', herz: { kenan: 2, hoffmann: -1 }, merke: 'schuldGenommen', dann: [
+        ['hoffmann', 'Deine. Klar.'],
+        ['hoffmann', 'Eintrag. Und ein Brief nach Hause.'],
+        ['kenan', '(leise) Was machst du denn?'] ] },
+      { t: '(Weggehen. Schnell. Nicht rennen.)', staerke: 'abstand', merke: 'torWeg', dann: [
+        ['hoffmann', '{name}! Hiergeblieben!'],
+        ['erzaehler', 'Zu spät. Du bist schon drinnen.'] ] },
+    ] },
+  ],
   k3_ende: [
     ['erzaehler', '15:30 Uhr. Diesmal bist du pünktlich.'],
     { tu: 'kenanBus' },
     ['noah', 'Und, wie war die Werkstatt?'],
     { wahl: [
       { t: 'Anstrengend. Aber gut.', herz: { noah: 1 }, dann: [['noah', 'Ich hab mir fast in den Finger gesägt, haha.']] },
-      { t: 'Ich hab einen Fehler gemacht. Aber ich hab es gesagt.', staerke: 'ehrlich', herz: { noah: 1 }, dann: [['noah', 'Mutig. Ich hätte es versteckt.']] },
+      { t: 'Ich hab mich beim Sägen verhauen.', herz: { noah: 1 }, dann: [['noah', 'Ich auch. Zweimal. Becker hat nur geseufzt.']] },
     ] },
     ['erzaehler', 'Der Bus kommt. Pünktlich.'],
     { tu: 'kapitelEnde' },

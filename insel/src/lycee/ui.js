@@ -18,7 +18,7 @@ export function createUI({ root, input, speech }) {
   // Touch: Joystick-Bild und Aktionsknopf
   const stick = el('div', 'ly-stick', '<span></span>'); hud.appendChild(stick);
   const akt = el('button', 'ly-akt', 'E'); akt.type = 'button'; akt.setAttribute('aria-label', 'Reden / weiter'); hud.appendChild(akt);
-  let dialogOffen = false, weiterFn = null, wahlFn = null;
+  let dialogOffen = false, weiterFn = null, wahlFn = null, wahlReihe = [];
   const ui = { dialogOffen: () => dialogOffen || !ebene.hidden, onJournal: null, onAktion: null };
 
   // ---------- Auftrag, Raum, Uhr, Hinweis, Toasts ----------
@@ -58,7 +58,11 @@ export function createUI({ root, input, speech }) {
   ui.waehle = (optionen, frage = '') => new Promise((ok) => {
     dialogOffen = true; dialog.hidden = false; root.classList.add('ly-im-dialog'); dialog.className = 'ly-dialog hud-interactive ly-wahl';
     dialog.innerHTML = (frage ? '<div class="ly-d-text">' + esc(frage) + '</div>' : '<div class="ly-d-frage">Was machst du?</div>') +
-      '<div class="ly-d-optionen">' + optionen.map((o, i) => '<button type="button" data-i="' + i + '"><kbd>' + (i + 1) + '</kbd><span>' + esc(o) + '</span></button>').join('') + '</div>';
+      '<div class="ly-d-optionen"></div>';
+    // gemischte Reihenfolge: die „vernünftige“ Antwort steht nicht immer oben (Jugend-Kritik). data-i = Platz in den Daten.
+    wahlReihe = optionen.map((o, i) => i);
+    if (!ui.festeReihenfolge) for (let i = wahlReihe.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); const t = wahlReihe[i]; wahlReihe[i] = wahlReihe[j]; wahlReihe[j] = t; }
+    dialog.querySelector('.ly-d-optionen').innerHTML = wahlReihe.map((i, pos) => '<button type="button" data-i="' + i + '"><kbd>' + (pos + 1) + '</kbd><span>' + esc(optionen[i]) + '</span></button>').join('');
     wahlFn = (i) => { if (i < 0 || i >= optionen.length) return; wahlFn = null; ok(i); };
     dialog.querySelectorAll('[data-i]').forEach((b) => { b.onclick = () => wahlFn && wahlFn(+b.dataset.i); });
     const b0 = dialog.querySelector('[data-i]'); if (b0) setTimeout(() => { try { b0.focus({ preventScroll: true }); } catch (e) { /* egal */ } }, 30);
@@ -75,7 +79,7 @@ export function createUI({ root, input, speech }) {
     if (e.code === 'Tab') { e.preventDefault(); if (ebene.hidden && !dialogOffen) ui.onJournal && ui.onJournal(); else if (ebene.dataset.art === 'journal') ebeneZu(); return; }
     if (!dialogOffen) return;
     // Taste hier verbrauchen: sonst sieht die Spielsteuerung dasselbe E und startet gleich das nächste Gespräch
-    if (wahlFn && /^Digit[1-4]$/.test(e.code)) { e.preventDefault(); e.stopPropagation(); wahlFn(+e.code.slice(5) - 1); return; }
+    if (wahlFn && /^Digit[1-5]$/.test(e.code)) { e.preventDefault(); e.stopPropagation(); const i = wahlReihe[+e.code.slice(5) - 1]; if (i !== undefined) wahlFn(i); return; }
     if (weiterFn && (e.code === 'KeyE' || e.code === 'Enter' || e.code === 'Space')) { e.preventDefault(); e.stopPropagation(); weiterFn(); }
     else if (e.code === 'KeyE' || e.code === 'Enter' || e.code === 'Space') { e.preventDefault(); e.stopPropagation(); }
   }, true);
@@ -426,6 +430,14 @@ export function createUI({ root, input, speech }) {
     };
     document.addEventListener('keydown', taste, true);
     zeige();
+  });
+
+  // Tagesrückblick beim Tageswechsel: wer dir näher oder ferner ist (statt sofortiger Herzen nach jeder Antwort)
+  ui.rueckblick = (titel, untertitel, eintraege) => new Promise((ok) => {
+    const k = ebeneAuf('bild', '<h2>' + esc(titel) + '</h2><p>' + esc(untertitel) + '</p>' + (eintraege.length ? '<div class="ly-t-kicker">Was hängen bleibt</div><ul class="ly-rb">' +
+      eintraege.map((e) => '<li><span class="ly-j-name" style="--f:' + esc(e.farbe) + '">' + esc(e.name) + '</span><b class="' + (e.n > 0 ? 'auf' : 'ab') + '">' + (e.n > 0 ? (e.n > 1 ? 'mag dich mehr' : 'mag dich ein bisschen mehr') : (e.n < -1 ? 'ist sauer auf dich' : 'ist etwas kühler')) + '</b></li>').join('') + '</ul>' : ''));
+    let zu = false; const fertig = () => { if (zu) return; zu = true; ebeneZu(); ok(); };
+    k.onclick = fertig; setTimeout(fertig, eintraege.length ? 4200 : 2400);
   });
 
   // Plakat-Arbeit: kurzes Zwischenbild
