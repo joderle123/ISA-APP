@@ -227,6 +227,7 @@ export const THEMEN: ThemaDef[] = [
   T('mathe', 'groessen', 'Größen & Einheiten', 'Grandeurs et mesures'),
   T('mathe', 'geometrie', 'Geometrie', 'Géométrie'),
   T('mathe', 'daten', 'Daten & Statistik', 'Données et statistiques'),
+  T('mathe', 'rechnen', 'Zahlen & Rechnen', 'Nombres et calcul'),
 
   T('kern', 'sprechen', 'Sprechen & Zuhören', 'Parler et écouter'),
   T('kern', 'lesen', 'Lesen', 'Lire'),

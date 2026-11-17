@@ -1,0 +1,4437 @@
+[
+  {
+    "id": "annexe-mathe-m1-stellen",
+    "bereich": "mathe",
+    "thema": "rechnen",
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "20–30 Min.",
+    "eldib": [],
+    "schlagworte": [
+      "Annexe Junglinster",
+      "Mathe-Training",
+      "Modul 1",
+      "Zahlen bis 1000",
+      "Hunderter, Zehner, Einer"
+    ],
+    "bild": "icon:abacus",
+    "de": {
+      "titel": "Hunderter, Zehner, Einer",
+      "untertitel": "Mathe-Training Modul 1 „Zahlen bis 1000“ – auch im Spiel Annexe Junglinster",
+      "bausteine": [
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "So geht’s",
+              "text": "Jede Ziffer hat ihren Platz. Der Platz sagt, wie viel sie wert ist.",
+              "punkte": [
+                "H = Hunderter (100er)",
+                "Z = Zehner (10er)",
+                "E = Einer (1er)"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Beispiel",
+              "text": "472 = 4 H + 7 Z + 2 E = 400 + 70 + 2"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Rechne. Schreib die Lösung auf die Linie."
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "6 H + 0 Z + 9 E = ___",
+            "441 = ___ H + ___ Z + ___ E",
+            "5 H + 4 Z + 0 E = ___",
+            "780 = ___ H + ___ Z + ___ E",
+            "2 H + 8 Z + 1 E = ___",
+            "210 = ___ H + ___ Z + ___ E",
+            "8 H + 1 Z + 7 E = ___",
+            "661 = ___ H + ___ Z + ___ E",
+            "2 H + 2 Z + 2 E = ___",
+            "421 = ___ H + ___ Z + ___ E"
+          ],
+          "spalten": 2,
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Noch einmal – mit neuen Zahlen. Schaffst du es ohne Hilfe?"
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "2 H + 8 Z + 8 E = ___",
+            "539 = ___ H + ___ Z + ___ E",
+            "672 = ___ H + ___ Z + ___ E",
+            "6 H + 1 Z + 4 E = ___",
+            "678 = ___ H + ___ Z + ___ E",
+            "2 H + 2 Z + 0 E = ___",
+            "7 H + 5 Z + 5 E = ___",
+            "774 = ___ H + ___ Z + ___ E"
+          ],
+          "spalten": 2,
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 5,
+          "label": "Platz für Nebenrechnungen"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen üben: Zahlen in Hunderter, Zehner, Einer zerlegen, Nachbarzahlen und Nachbarzehner finden, Zahlen vergleichen und runden. Dieses Blatt: „Hunderter, Zehner, Einer“.",
+        "ablauf": [
+          "Merkkasten „So geht’s“ gemeinsam lesen und das Beispiel an der Tafel vorrechnen.",
+          "Reihe 1 allein oder zu zweit. Wer nicht weiterkommt, schaut in den Merkkasten.",
+          "Reihe 2 ohne Hilfe. Danach selbst mit der Lösung vergleichen.",
+          "Mehr Übung: Im Spiel „Annexe Junglinster“ am eigenen Platz dasselbe Blatt mit immer neuen Zahlen."
+        ],
+        "hintergrund": "Vorläufige Einteilung des Mathe-Trainings in sechs Module; sie wird an die offiziellen Modulbeschreibungen angepasst, sobald diese vorliegen. Kurze Erklärung, ein Beispiel, viele gleichartige Aufgaben: Wiederholung mit kleinen Schritten gibt Sicherheit. Im Spiel erscheint bei einer falschen Antwort ein Tipp; auf Papier übernimmt das die Lehrperson.",
+        "differenzierung": {
+          "leichter": "Nur Reihe 1; das Beispiel daneben abschreiben lassen.",
+          "schwerer": "Eigene Aufgaben in derselben Art erfinden und tauschen."
+        },
+        "loesungen": [
+          "1) a) 609 · b) 4 | 4 | 1 · c) 540 · d) 7 | 8 | 0 · e) 281 · f) 2 | 1 | 0 · g) 817 · h) 6 | 6 | 1 · i) 222 · j) 4 | 2 | 1",
+          "2) a) 288 · b) 5 | 3 | 9 · c) 6 | 7 | 2 · d) 614 · e) 6 | 7 | 8 · f) 220 · g) 755 · h) 7 | 7 | 4"
+        ]
+      }
+    },
+    "fr": {
+      "titel": "Centaines, dizaines, unités",
+      "untertitel": "Entraînement maths module 1 « Les nombres jusqu’à 1000 » – aussi dans le jeu Annexe Junglinster",
+      "bausteine": [
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Comment faire",
+              "text": "Chaque chiffre a sa place. La place dit combien il vaut.",
+              "punkte": [
+                "C = centaines (100)",
+                "D = dizaines (10)",
+                "U = unités (1)"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Exemple",
+              "text": "472 = 4 C + 7 D + 2 U = 400 + 70 + 2"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Calcule. Écris le résultat sur la ligne."
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "6 C + 0 D + 9 U = ___",
+            "441 = ___ C + ___ D + ___ U",
+            "5 C + 4 D + 0 U = ___",
+            "780 = ___ C + ___ D + ___ U",
+            "2 C + 8 D + 1 U = ___",
+            "210 = ___ C + ___ D + ___ U",
+            "8 C + 1 D + 7 U = ___",
+            "661 = ___ C + ___ D + ___ U",
+            "2 C + 2 D + 2 U = ___",
+            "421 = ___ C + ___ D + ___ U"
+          ],
+          "spalten": 2,
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Encore une fois – avec de nouveaux nombres. Tu y arrives sans aide ?"
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "2 C + 8 D + 8 U = ___",
+            "539 = ___ C + ___ D + ___ U",
+            "672 = ___ C + ___ D + ___ U",
+            "6 C + 1 D + 4 U = ___",
+            "678 = ___ C + ___ D + ___ U",
+            "2 C + 2 D + 0 U = ___",
+            "7 C + 5 D + 5 U = ___",
+            "774 = ___ C + ___ D + ___ U"
+          ],
+          "spalten": 2,
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 5,
+          "label": "Place pour les calculs"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes s’entraînent : décomposer les nombres en centaines, dizaines et unités, trouver le nombre et la dizaine voisins, comparer et arrondir les nombres. Cette fiche : « Centaines, dizaines, unités ».",
+        "ablauf": [
+          "Lire ensemble l’encadré « Comment faire » et calculer l’exemple au tableau.",
+          "Série 1 seul ou à deux. En cas de blocage, regarder l’encadré.",
+          "Série 2 sans aide. Ensuite, comparer soi-même avec la solution.",
+          "Pour s’entraîner davantage : dans le jeu « Annexe Junglinster », la même fiche à sa place, avec toujours de nouveaux nombres."
+        ],
+        "hintergrund": "Répartition provisoire de l’entraînement en six modules ; elle sera adaptée aux descriptifs officiels des modules dès qu’ils seront disponibles. Une courte explication, un exemple, beaucoup d’exercices du même type : répéter à petits pas donne de l’assurance. Dans le jeu, une astuce apparaît après une mauvaise réponse ; sur papier, c’est l’enseignant qui prend ce rôle.",
+        "differenzierung": {
+          "leichter": "Seulement la série 1 ; recopier l’exemple à côté.",
+          "schwerer": "Inventer ses propres exercices du même type et les échanger."
+        },
+        "loesungen": [
+          "1) a) 609 · b) 4 | 4 | 1 · c) 540 · d) 7 | 8 | 0 · e) 281 · f) 2 | 1 | 0 · g) 817 · h) 6 | 6 | 1 · i) 222 · j) 4 | 2 | 1",
+          "2) a) 288 · b) 5 | 3 | 9 · c) 6 | 7 | 2 · d) 614 · e) 6 | 7 | 8 · f) 220 · g) 755 · h) 7 | 7 | 4"
+        ]
+      }
+    }
+  },
+  {
+    "id": "annexe-mathe-m1-nachbarn",
+    "bereich": "mathe",
+    "thema": "rechnen",
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "20–30 Min.",
+    "eldib": [],
+    "schlagworte": [
+      "Annexe Junglinster",
+      "Mathe-Training",
+      "Modul 1",
+      "Zahlen bis 1000",
+      "Nachbarzahlen und Nachbarzehner"
+    ],
+    "bild": "icon:abacus",
+    "de": {
+      "titel": "Nachbarzahlen und Nachbarzehner",
+      "untertitel": "Mathe-Training Modul 1 „Zahlen bis 1000“ – auch im Spiel Annexe Junglinster",
+      "bausteine": [
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "So geht’s",
+              "text": "Nachbarn stehen direkt davor und danach.",
+              "punkte": [
+                "Vorgänger: 1 weniger",
+                "Nachfolger: 1 mehr",
+                "Nachbarzehner: der Zehner davor und danach"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Beispiel",
+              "text": "346 → Nachbarzahlen 345 und 347 · Nachbarzehner 340 und 350"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Rechne. Schreib die Lösung auf die Linie."
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "___ < 659 < ___",
+            "___ < 151 < ___",
+            "___ < 679 < ___",
+            "___ < 425 < ___",
+            "___ < 171 < ___",
+            "Zehner: ___ < 844 < ___",
+            "Zehner: ___ < 907 < ___",
+            "Zehner: ___ < 328 < ___",
+            "Zehner: ___ < 601 < ___",
+            "Zehner: ___ < 826 < ___"
+          ],
+          "spalten": 2,
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Noch einmal – mit neuen Zahlen. Schaffst du es ohne Hilfe?"
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "___ < 219 < ___",
+            "___ < 949 < ___",
+            "___ < 489 < ___",
+            "___ < 38 < ___",
+            "Zehner: ___ < 691 < ___",
+            "Zehner: ___ < 73 < ___",
+            "Zehner: ___ < 464 < ___",
+            "Zehner: ___ < 624 < ___"
+          ],
+          "spalten": 2,
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 5,
+          "label": "Platz für Nebenrechnungen"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen üben: Zahlen in Hunderter, Zehner, Einer zerlegen, Nachbarzahlen und Nachbarzehner finden, Zahlen vergleichen und runden. Dieses Blatt: „Nachbarzahlen und Nachbarzehner“.",
+        "ablauf": [
+          "Merkkasten „So geht’s“ gemeinsam lesen und das Beispiel an der Tafel vorrechnen.",
+          "Reihe 1 allein oder zu zweit. Wer nicht weiterkommt, schaut in den Merkkasten.",
+          "Reihe 2 ohne Hilfe. Danach selbst mit der Lösung vergleichen.",
+          "Mehr Übung: Im Spiel „Annexe Junglinster“ am eigenen Platz dasselbe Blatt mit immer neuen Zahlen."
+        ],
+        "hintergrund": "Vorläufige Einteilung des Mathe-Trainings in sechs Module; sie wird an die offiziellen Modulbeschreibungen angepasst, sobald diese vorliegen. Kurze Erklärung, ein Beispiel, viele gleichartige Aufgaben: Wiederholung mit kleinen Schritten gibt Sicherheit. Im Spiel erscheint bei einer falschen Antwort ein Tipp; auf Papier übernimmt das die Lehrperson.",
+        "differenzierung": {
+          "leichter": "Nur Reihe 1; das Beispiel daneben abschreiben lassen.",
+          "schwerer": "Eigene Aufgaben in derselben Art erfinden und tauschen."
+        },
+        "loesungen": [
+          "1) a) 658 | 660 · b) 150 | 152 · c) 678 | 680 · d) 424 | 426 · e) 170 | 172 · f) 840 | 850 · g) 900 | 910 · h) 320 | 330 · i) 600 | 610 · j) 820 | 830",
+          "2) a) 218 | 220 · b) 948 | 950 · c) 488 | 490 · d) 37 | 39 · e) 690 | 700 · f) 70 | 80 · g) 460 | 470 · h) 620 | 630"
+        ]
+      }
+    },
+    "fr": {
+      "titel": "Nombres voisins et dizaines voisines",
+      "untertitel": "Entraînement maths module 1 « Les nombres jusqu’à 1000 » – aussi dans le jeu Annexe Junglinster",
+      "bausteine": [
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Comment faire",
+              "text": "Les voisins sont juste avant et juste après.",
+              "punkte": [
+                "Le précédent : 1 de moins",
+                "Le suivant : 1 de plus",
+                "Dizaines voisines : la dizaine avant et après"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Exemple",
+              "text": "346 → voisins 345 et 347 · dizaines voisines 340 et 350"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Calcule. Écris le résultat sur la ligne."
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "___ < 659 < ___",
+            "___ < 151 < ___",
+            "___ < 679 < ___",
+            "___ < 425 < ___",
+            "___ < 171 < ___",
+            "Dizaines : ___ < 844 < ___",
+            "Dizaines : ___ < 907 < ___",
+            "Dizaines : ___ < 328 < ___",
+            "Dizaines : ___ < 601 < ___",
+            "Dizaines : ___ < 826 < ___"
+          ],
+          "spalten": 2,
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Encore une fois – avec de nouveaux nombres. Tu y arrives sans aide ?"
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "___ < 219 < ___",
+            "___ < 949 < ___",
+            "___ < 489 < ___",
+            "___ < 38 < ___",
+            "Dizaines : ___ < 691 < ___",
+            "Dizaines : ___ < 73 < ___",
+            "Dizaines : ___ < 464 < ___",
+            "Dizaines : ___ < 624 < ___"
+          ],
+          "spalten": 2,
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 5,
+          "label": "Place pour les calculs"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes s’entraînent : décomposer les nombres en centaines, dizaines et unités, trouver le nombre et la dizaine voisins, comparer et arrondir les nombres. Cette fiche : « Nombres voisins et dizaines voisines ».",
+        "ablauf": [
+          "Lire ensemble l’encadré « Comment faire » et calculer l’exemple au tableau.",
+          "Série 1 seul ou à deux. En cas de blocage, regarder l’encadré.",
+          "Série 2 sans aide. Ensuite, comparer soi-même avec la solution.",
+          "Pour s’entraîner davantage : dans le jeu « Annexe Junglinster », la même fiche à sa place, avec toujours de nouveaux nombres."
+        ],
+        "hintergrund": "Répartition provisoire de l’entraînement en six modules ; elle sera adaptée aux descriptifs officiels des modules dès qu’ils seront disponibles. Une courte explication, un exemple, beaucoup d’exercices du même type : répéter à petits pas donne de l’assurance. Dans le jeu, une astuce apparaît après une mauvaise réponse ; sur papier, c’est l’enseignant qui prend ce rôle.",
+        "differenzierung": {
+          "leichter": "Seulement la série 1 ; recopier l’exemple à côté.",
+          "schwerer": "Inventer ses propres exercices du même type et les échanger."
+        },
+        "loesungen": [
+          "1) a) 658 | 660 · b) 150 | 152 · c) 678 | 680 · d) 424 | 426 · e) 170 | 172 · f) 840 | 850 · g) 900 | 910 · h) 320 | 330 · i) 600 | 610 · j) 820 | 830",
+          "2) a) 218 | 220 · b) 948 | 950 · c) 488 | 490 · d) 37 | 39 · e) 690 | 700 · f) 70 | 80 · g) 460 | 470 · h) 620 | 630"
+        ]
+      }
+    }
+  },
+  {
+    "id": "annexe-mathe-m1-vergleichen",
+    "bereich": "mathe",
+    "thema": "rechnen",
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "20–30 Min.",
+    "eldib": [],
+    "schlagworte": [
+      "Annexe Junglinster",
+      "Mathe-Training",
+      "Modul 1",
+      "Zahlen bis 1000",
+      "Größer, kleiner, gleich"
+    ],
+    "bild": "icon:abacus",
+    "de": {
+      "titel": "Größer, kleiner, gleich",
+      "untertitel": "Mathe-Training Modul 1 „Zahlen bis 1000“ – auch im Spiel Annexe Junglinster",
+      "bausteine": [
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "So geht’s",
+              "text": "Das Zeichen ist ein hungriges Maul. Es frisst immer die größere Zahl.",
+              "punkte": [
+                "Zuerst die Hunderter vergleichen",
+                "Gleich? Dann die Zehner",
+                "Wieder gleich? Dann die Einer"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Beispiel",
+              "text": "468 > 459, weil 6 Zehner mehr sind als 5 Zehner."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Setze <, = oder > ein."
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "696 [] 695",
+            "846 [] 841",
+            "200 [] 460",
+            "203 [] 236",
+            "535 [] 535",
+            "481 [] 486",
+            "997 [] 990",
+            "497 [] 470",
+            "894 [] 659",
+            "907 [] 116"
+          ],
+          "spalten": 3,
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Noch einmal – mit neuen Zahlen. Schaffst du es ohne Hilfe?"
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "292 [] 292",
+            "281 [] 498",
+            "734 [] 152",
+            "936 [] 943",
+            "784 [] 776",
+            "934 [] 934",
+            "390 [] 389",
+            "271 [] 271"
+          ],
+          "spalten": 3,
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 5,
+          "label": "Platz für Nebenrechnungen"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen üben: Zahlen in Hunderter, Zehner, Einer zerlegen, Nachbarzahlen und Nachbarzehner finden, Zahlen vergleichen und runden. Dieses Blatt: „Größer, kleiner, gleich“.",
+        "ablauf": [
+          "Merkkasten „So geht’s“ gemeinsam lesen und das Beispiel an der Tafel vorrechnen.",
+          "Reihe 1 allein oder zu zweit. Wer nicht weiterkommt, schaut in den Merkkasten.",
+          "Reihe 2 ohne Hilfe. Danach selbst mit der Lösung vergleichen.",
+          "Mehr Übung: Im Spiel „Annexe Junglinster“ am eigenen Platz dasselbe Blatt mit immer neuen Zahlen."
+        ],
+        "hintergrund": "Vorläufige Einteilung des Mathe-Trainings in sechs Module; sie wird an die offiziellen Modulbeschreibungen angepasst, sobald diese vorliegen. Kurze Erklärung, ein Beispiel, viele gleichartige Aufgaben: Wiederholung mit kleinen Schritten gibt Sicherheit. Im Spiel erscheint bei einer falschen Antwort ein Tipp; auf Papier übernimmt das die Lehrperson.",
+        "differenzierung": {
+          "leichter": "Nur Reihe 1; das Beispiel daneben abschreiben lassen.",
+          "schwerer": "Eigene Aufgaben in derselben Art erfinden und tauschen."
+        },
+        "loesungen": [
+          "1) a) > · b) > · c) < · d) < · e) = · f) < · g) > · h) > · i) > · j) >",
+          "2) a) = · b) < · c) > · d) < · e) > · f) = · g) > · h) ="
+        ]
+      }
+    },
+    "fr": {
+      "titel": "Plus grand, plus petit, égal",
+      "untertitel": "Entraînement maths module 1 « Les nombres jusqu’à 1000 » – aussi dans le jeu Annexe Junglinster",
+      "bausteine": [
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Comment faire",
+              "text": "Le signe est une bouche affamée. Elle mange toujours le plus grand nombre.",
+              "punkte": [
+                "D’abord comparer les centaines",
+                "Égales ? Alors les dizaines",
+                "Encore égales ? Alors les unités"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Exemple",
+              "text": "468 > 459, car 6 dizaines, c’est plus que 5 dizaines."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Écris <, = ou >."
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "696 [] 695",
+            "846 [] 841",
+            "200 [] 460",
+            "203 [] 236",
+            "535 [] 535",
+            "481 [] 486",
+            "997 [] 990",
+            "497 [] 470",
+            "894 [] 659",
+            "907 [] 116"
+          ],
+          "spalten": 3,
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Encore une fois – avec de nouveaux nombres. Tu y arrives sans aide ?"
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "292 [] 292",
+            "281 [] 498",
+            "734 [] 152",
+            "936 [] 943",
+            "784 [] 776",
+            "934 [] 934",
+            "390 [] 389",
+            "271 [] 271"
+          ],
+          "spalten": 3,
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 5,
+          "label": "Place pour les calculs"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes s’entraînent : décomposer les nombres en centaines, dizaines et unités, trouver le nombre et la dizaine voisins, comparer et arrondir les nombres. Cette fiche : « Plus grand, plus petit, égal ».",
+        "ablauf": [
+          "Lire ensemble l’encadré « Comment faire » et calculer l’exemple au tableau.",
+          "Série 1 seul ou à deux. En cas de blocage, regarder l’encadré.",
+          "Série 2 sans aide. Ensuite, comparer soi-même avec la solution.",
+          "Pour s’entraîner davantage : dans le jeu « Annexe Junglinster », la même fiche à sa place, avec toujours de nouveaux nombres."
+        ],
+        "hintergrund": "Répartition provisoire de l’entraînement en six modules ; elle sera adaptée aux descriptifs officiels des modules dès qu’ils seront disponibles. Une courte explication, un exemple, beaucoup d’exercices du même type : répéter à petits pas donne de l’assurance. Dans le jeu, une astuce apparaît après une mauvaise réponse ; sur papier, c’est l’enseignant qui prend ce rôle.",
+        "differenzierung": {
+          "leichter": "Seulement la série 1 ; recopier l’exemple à côté.",
+          "schwerer": "Inventer ses propres exercices du même type et les échanger."
+        },
+        "loesungen": [
+          "1) a) > · b) > · c) < · d) < · e) = · f) < · g) > · h) > · i) > · j) >",
+          "2) a) = · b) < · c) > · d) < · e) > · f) = · g) > · h) ="
+        ]
+      }
+    }
+  },
+  {
+    "id": "annexe-mathe-m1-runden",
+    "bereich": "mathe",
+    "thema": "rechnen",
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "20–30 Min.",
+    "eldib": [],
+    "schlagworte": [
+      "Annexe Junglinster",
+      "Mathe-Training",
+      "Modul 1",
+      "Zahlen bis 1000",
+      "Runden auf Zehner und Hunderter"
+    ],
+    "bild": "icon:abacus",
+    "de": {
+      "titel": "Runden auf Zehner und Hunderter",
+      "untertitel": "Mathe-Training Modul 1 „Zahlen bis 1000“ – auch im Spiel Annexe Junglinster",
+      "bausteine": [
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "So geht’s",
+              "text": "Runden heißt: zur nächsten „schönen“ Zahl gehen.",
+              "punkte": [
+                "Schau auf die Stelle rechts davon",
+                "0 bis 4: abrunden",
+                "5 bis 9: aufrunden"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Beispiel",
+              "text": "347 auf Zehner: 350 (7 → aufrunden) · 347 auf Hunderter: 300 (4 → abrunden)"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Rechne. Schreib die Lösung auf die Linie."
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "690 gerundet auf Zehner: ___",
+            "389 gerundet auf Hunderter: ___",
+            "147 gerundet auf Zehner: ___",
+            "542 gerundet auf Hunderter: ___",
+            "542 gerundet auf Zehner: ___",
+            "409 gerundet auf Hunderter: ___",
+            "792 gerundet auf Zehner: ___",
+            "240 gerundet auf Hunderter: ___",
+            "652 gerundet auf Zehner: ___",
+            "943 gerundet auf Hunderter: ___"
+          ],
+          "spalten": 2,
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Noch einmal – mit neuen Zahlen. Schaffst du es ohne Hilfe?"
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "291 gerundet auf Zehner: ___",
+            "225 gerundet auf Hunderter: ___",
+            "600 gerundet auf Hunderter: ___",
+            "422 gerundet auf Zehner: ___",
+            "270 gerundet auf Hunderter: ___",
+            "923 gerundet auf Zehner: ___",
+            "528 gerundet auf Zehner: ___",
+            "760 gerundet auf Hunderter: ___"
+          ],
+          "spalten": 2,
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 5,
+          "label": "Platz für Nebenrechnungen"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen üben: Zahlen in Hunderter, Zehner, Einer zerlegen, Nachbarzahlen und Nachbarzehner finden, Zahlen vergleichen und runden. Dieses Blatt: „Runden auf Zehner und Hunderter“.",
+        "ablauf": [
+          "Merkkasten „So geht’s“ gemeinsam lesen und das Beispiel an der Tafel vorrechnen.",
+          "Reihe 1 allein oder zu zweit. Wer nicht weiterkommt, schaut in den Merkkasten.",
+          "Reihe 2 ohne Hilfe. Danach selbst mit der Lösung vergleichen.",
+          "Mehr Übung: Im Spiel „Annexe Junglinster“ am eigenen Platz dasselbe Blatt mit immer neuen Zahlen."
+        ],
+        "hintergrund": "Vorläufige Einteilung des Mathe-Trainings in sechs Module; sie wird an die offiziellen Modulbeschreibungen angepasst, sobald diese vorliegen. Kurze Erklärung, ein Beispiel, viele gleichartige Aufgaben: Wiederholung mit kleinen Schritten gibt Sicherheit. Im Spiel erscheint bei einer falschen Antwort ein Tipp; auf Papier übernimmt das die Lehrperson.",
+        "differenzierung": {
+          "leichter": "Nur Reihe 1; das Beispiel daneben abschreiben lassen.",
+          "schwerer": "Eigene Aufgaben in derselben Art erfinden und tauschen."
+        },
+        "loesungen": [
+          "1) a) 690 · b) 400 · c) 150 · d) 500 · e) 540 · f) 400 · g) 790 · h) 200 · i) 650 · j) 900",
+          "2) a) 290 · b) 200 · c) 600 · d) 420 · e) 300 · f) 920 · g) 530 · h) 800"
+        ]
+      }
+    },
+    "fr": {
+      "titel": "Arrondir à la dizaine et à la centaine",
+      "untertitel": "Entraînement maths module 1 « Les nombres jusqu’à 1000 » – aussi dans le jeu Annexe Junglinster",
+      "bausteine": [
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Comment faire",
+              "text": "Arrondir, c’est aller au nombre « rond » le plus proche.",
+              "punkte": [
+                "Regarde le chiffre juste à droite",
+                "0 à 4 : on arrondit vers le bas",
+                "5 à 9 : on arrondit vers le haut"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Exemple",
+              "text": "347 à la dizaine : 350 (7 → vers le haut) · 347 à la centaine : 300 (4 → vers le bas)"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Calcule. Écris le résultat sur la ligne."
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "690 arrondi à la dizaine : ___",
+            "389 arrondi à la centaine : ___",
+            "147 arrondi à la dizaine : ___",
+            "542 arrondi à la centaine : ___",
+            "542 arrondi à la dizaine : ___",
+            "409 arrondi à la centaine : ___",
+            "792 arrondi à la dizaine : ___",
+            "240 arrondi à la centaine : ___",
+            "652 arrondi à la dizaine : ___",
+            "943 arrondi à la centaine : ___"
+          ],
+          "spalten": 2,
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Encore une fois – avec de nouveaux nombres. Tu y arrives sans aide ?"
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "291 arrondi à la dizaine : ___",
+            "225 arrondi à la centaine : ___",
+            "600 arrondi à la centaine : ___",
+            "422 arrondi à la dizaine : ___",
+            "270 arrondi à la centaine : ___",
+            "923 arrondi à la dizaine : ___",
+            "528 arrondi à la dizaine : ___",
+            "760 arrondi à la centaine : ___"
+          ],
+          "spalten": 2,
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 5,
+          "label": "Place pour les calculs"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes s’entraînent : décomposer les nombres en centaines, dizaines et unités, trouver le nombre et la dizaine voisins, comparer et arrondir les nombres. Cette fiche : « Arrondir à la dizaine et à la centaine ».",
+        "ablauf": [
+          "Lire ensemble l’encadré « Comment faire » et calculer l’exemple au tableau.",
+          "Série 1 seul ou à deux. En cas de blocage, regarder l’encadré.",
+          "Série 2 sans aide. Ensuite, comparer soi-même avec la solution.",
+          "Pour s’entraîner davantage : dans le jeu « Annexe Junglinster », la même fiche à sa place, avec toujours de nouveaux nombres."
+        ],
+        "hintergrund": "Répartition provisoire de l’entraînement en six modules ; elle sera adaptée aux descriptifs officiels des modules dès qu’ils seront disponibles. Une courte explication, un exemple, beaucoup d’exercices du même type : répéter à petits pas donne de l’assurance. Dans le jeu, une astuce apparaît après une mauvaise réponse ; sur papier, c’est l’enseignant qui prend ce rôle.",
+        "differenzierung": {
+          "leichter": "Seulement la série 1 ; recopier l’exemple à côté.",
+          "schwerer": "Inventer ses propres exercices du même type et les échanger."
+        },
+        "loesungen": [
+          "1) a) 690 · b) 400 · c) 150 · d) 500 · e) 540 · f) 400 · g) 790 · h) 200 · i) 650 · j) 900",
+          "2) a) 290 · b) 200 · c) 600 · d) 420 · e) 300 · f) 920 · g) 530 · h) 800"
+        ]
+      }
+    }
+  },
+  {
+    "id": "annexe-mathe-m2-plus",
+    "bereich": "mathe",
+    "thema": "rechnen",
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "20–30 Min.",
+    "eldib": [],
+    "schlagworte": [
+      "Annexe Junglinster",
+      "Mathe-Training",
+      "Modul 2",
+      "Plus und Minus",
+      "Plus über den Zehner"
+    ],
+    "bild": "icon:math-symbols",
+    "de": {
+      "titel": "Plus über den Zehner",
+      "untertitel": "Mathe-Training Modul 2 „Plus und Minus“ – auch im Spiel Annexe Junglinster",
+      "bausteine": [
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "So geht’s",
+              "text": "Erst bis zum nächsten Zehner, dann den Rest.",
+              "punkte": [
+                "Wie viel fehlt bis zum Zehner?",
+                "Diesen Teil zuerst dazu",
+                "Dann den Rest dazu"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Beispiel",
+              "text": "47 + 8 → 47 + 3 = 50 → 50 + 5 = 55"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Rechne. Schreib die Lösung auf die Linie."
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "66 + 3 = ___",
+            "18 + 4 = ___",
+            "57 + 3 = ___",
+            "52 + 4 = ___",
+            "78 + 3 = ___",
+            "76 + 6 = ___",
+            "65 + 8 = ___",
+            "85 + 37 = ___",
+            "46 + 14 = ___",
+            "82 + 26 = ___"
+          ],
+          "spalten": 3,
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Noch einmal – mit neuen Zahlen. Schaffst du es ohne Hilfe?"
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "31 + 19 = ___",
+            "12 + 8 = ___",
+            "71 + 15 = ___",
+            "28 + 13 = ___",
+            "82 + 24 = ___",
+            "22 + 6 = ___",
+            "24 + 9 = ___",
+            "58 + 37 = ___"
+          ],
+          "spalten": 3,
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 5,
+          "label": "Platz für Nebenrechnungen"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen üben: Im Kopf über den Zehner rechnen, Zum Hunderter und Tausender ergänzen, Schriftlich addieren und subtrahieren. Dieses Blatt: „Plus über den Zehner“.",
+        "ablauf": [
+          "Merkkasten „So geht’s“ gemeinsam lesen und das Beispiel an der Tafel vorrechnen.",
+          "Reihe 1 allein oder zu zweit. Wer nicht weiterkommt, schaut in den Merkkasten.",
+          "Reihe 2 ohne Hilfe. Danach selbst mit der Lösung vergleichen.",
+          "Mehr Übung: Im Spiel „Annexe Junglinster“ am eigenen Platz dasselbe Blatt mit immer neuen Zahlen."
+        ],
+        "hintergrund": "Vorläufige Einteilung des Mathe-Trainings in sechs Module; sie wird an die offiziellen Modulbeschreibungen angepasst, sobald diese vorliegen. Kurze Erklärung, ein Beispiel, viele gleichartige Aufgaben: Wiederholung mit kleinen Schritten gibt Sicherheit. Im Spiel erscheint bei einer falschen Antwort ein Tipp; auf Papier übernimmt das die Lehrperson.",
+        "differenzierung": {
+          "leichter": "Nur Reihe 1; das Beispiel daneben abschreiben lassen.",
+          "schwerer": "Eigene Aufgaben in derselben Art erfinden und tauschen."
+        },
+        "loesungen": [
+          "1) a) 69 · b) 22 · c) 60 · d) 56 · e) 81 · f) 82 · g) 73 · h) 122 · i) 60 · j) 108",
+          "2) a) 50 · b) 20 · c) 86 · d) 41 · e) 106 · f) 28 · g) 33 · h) 95"
+        ]
+      }
+    },
+    "fr": {
+      "titel": "Plus en passant la dizaine",
+      "untertitel": "Entraînement maths module 2 « Plus et moins » – aussi dans le jeu Annexe Junglinster",
+      "bausteine": [
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Comment faire",
+              "text": "D’abord jusqu’à la dizaine suivante, puis le reste.",
+              "punkte": [
+                "Combien manque-t-il jusqu’à la dizaine ?",
+                "Ajoute d’abord cette partie",
+                "Puis ajoute le reste"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Exemple",
+              "text": "47 + 8 → 47 + 3 = 50 → 50 + 5 = 55"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Calcule. Écris le résultat sur la ligne."
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "66 + 3 = ___",
+            "18 + 4 = ___",
+            "57 + 3 = ___",
+            "52 + 4 = ___",
+            "78 + 3 = ___",
+            "76 + 6 = ___",
+            "65 + 8 = ___",
+            "85 + 37 = ___",
+            "46 + 14 = ___",
+            "82 + 26 = ___"
+          ],
+          "spalten": 3,
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Encore une fois – avec de nouveaux nombres. Tu y arrives sans aide ?"
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "31 + 19 = ___",
+            "12 + 8 = ___",
+            "71 + 15 = ___",
+            "28 + 13 = ___",
+            "82 + 24 = ___",
+            "22 + 6 = ___",
+            "24 + 9 = ___",
+            "58 + 37 = ___"
+          ],
+          "spalten": 3,
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 5,
+          "label": "Place pour les calculs"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes s’entraînent : calculer de tête en passant la dizaine, compléter jusqu’à la centaine et au millier, additionner et soustraire en colonnes. Cette fiche : « Plus en passant la dizaine ».",
+        "ablauf": [
+          "Lire ensemble l’encadré « Comment faire » et calculer l’exemple au tableau.",
+          "Série 1 seul ou à deux. En cas de blocage, regarder l’encadré.",
+          "Série 2 sans aide. Ensuite, comparer soi-même avec la solution.",
+          "Pour s’entraîner davantage : dans le jeu « Annexe Junglinster », la même fiche à sa place, avec toujours de nouveaux nombres."
+        ],
+        "hintergrund": "Répartition provisoire de l’entraînement en six modules ; elle sera adaptée aux descriptifs officiels des modules dès qu’ils seront disponibles. Une courte explication, un exemple, beaucoup d’exercices du même type : répéter à petits pas donne de l’assurance. Dans le jeu, une astuce apparaît après une mauvaise réponse ; sur papier, c’est l’enseignant qui prend ce rôle.",
+        "differenzierung": {
+          "leichter": "Seulement la série 1 ; recopier l’exemple à côté.",
+          "schwerer": "Inventer ses propres exercices du même type et les échanger."
+        },
+        "loesungen": [
+          "1) a) 69 · b) 22 · c) 60 · d) 56 · e) 81 · f) 82 · g) 73 · h) 122 · i) 60 · j) 108",
+          "2) a) 50 · b) 20 · c) 86 · d) 41 · e) 106 · f) 28 · g) 33 · h) 95"
+        ]
+      }
+    }
+  },
+  {
+    "id": "annexe-mathe-m2-minus",
+    "bereich": "mathe",
+    "thema": "rechnen",
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "20–30 Min.",
+    "eldib": [],
+    "schlagworte": [
+      "Annexe Junglinster",
+      "Mathe-Training",
+      "Modul 2",
+      "Plus und Minus",
+      "Minus über den Zehner"
+    ],
+    "bild": "icon:math-symbols",
+    "de": {
+      "titel": "Minus über den Zehner",
+      "untertitel": "Mathe-Training Modul 2 „Plus und Minus“ – auch im Spiel Annexe Junglinster",
+      "bausteine": [
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "So geht’s",
+              "text": "Erst bis zum Zehner zurück, dann den Rest weg.",
+              "punkte": [
+                "Zurück bis zum Zehner",
+                "Dann den Rest abziehen"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Beispiel",
+              "text": "53 − 7 → 53 − 3 = 50 → 50 − 4 = 46"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Rechne. Schreib die Lösung auf die Linie."
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "76 – 14 = ___",
+            "84 – 27 = ___",
+            "58 – 7 = ___",
+            "36 – 18 = ___",
+            "44 – 7 = ___",
+            "98 – 7 = ___",
+            "60 – 15 = ___",
+            "90 – 8 = ___",
+            "27 – 16 = ___",
+            "45 – 27 = ___"
+          ],
+          "spalten": 3,
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Noch einmal – mit neuen Zahlen. Schaffst du es ohne Hilfe?"
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "40 – 3 = ___",
+            "36 – 7 = ___",
+            "70 – 16 = ___",
+            "63 – 17 = ___",
+            "46 – 8 = ___",
+            "85 – 24 = ___",
+            "82 – 6 = ___",
+            "65 – 4 = ___"
+          ],
+          "spalten": 3,
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 5,
+          "label": "Platz für Nebenrechnungen"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen üben: Im Kopf über den Zehner rechnen, Zum Hunderter und Tausender ergänzen, Schriftlich addieren und subtrahieren. Dieses Blatt: „Minus über den Zehner“.",
+        "ablauf": [
+          "Merkkasten „So geht’s“ gemeinsam lesen und das Beispiel an der Tafel vorrechnen.",
+          "Reihe 1 allein oder zu zweit. Wer nicht weiterkommt, schaut in den Merkkasten.",
+          "Reihe 2 ohne Hilfe. Danach selbst mit der Lösung vergleichen.",
+          "Mehr Übung: Im Spiel „Annexe Junglinster“ am eigenen Platz dasselbe Blatt mit immer neuen Zahlen."
+        ],
+        "hintergrund": "Vorläufige Einteilung des Mathe-Trainings in sechs Module; sie wird an die offiziellen Modulbeschreibungen angepasst, sobald diese vorliegen. Kurze Erklärung, ein Beispiel, viele gleichartige Aufgaben: Wiederholung mit kleinen Schritten gibt Sicherheit. Im Spiel erscheint bei einer falschen Antwort ein Tipp; auf Papier übernimmt das die Lehrperson.",
+        "differenzierung": {
+          "leichter": "Nur Reihe 1; das Beispiel daneben abschreiben lassen.",
+          "schwerer": "Eigene Aufgaben in derselben Art erfinden und tauschen."
+        },
+        "loesungen": [
+          "1) a) 62 · b) 57 · c) 51 · d) 18 · e) 37 · f) 91 · g) 45 · h) 82 · i) 11 · j) 18",
+          "2) a) 37 · b) 29 · c) 54 · d) 46 · e) 38 · f) 61 · g) 76 · h) 61"
+        ]
+      }
+    },
+    "fr": {
+      "titel": "Moins en passant la dizaine",
+      "untertitel": "Entraînement maths module 2 « Plus et moins » – aussi dans le jeu Annexe Junglinster",
+      "bausteine": [
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Comment faire",
+              "text": "D’abord revenir à la dizaine, puis enlever le reste.",
+              "punkte": [
+                "Reviens jusqu’à la dizaine",
+                "Puis enlève le reste"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Exemple",
+              "text": "53 − 7 → 53 − 3 = 50 → 50 − 4 = 46"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Calcule. Écris le résultat sur la ligne."
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "76 – 14 = ___",
+            "84 – 27 = ___",
+            "58 – 7 = ___",
+            "36 – 18 = ___",
+            "44 – 7 = ___",
+            "98 – 7 = ___",
+            "60 – 15 = ___",
+            "90 – 8 = ___",
+            "27 – 16 = ___",
+            "45 – 27 = ___"
+          ],
+          "spalten": 3,
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Encore une fois – avec de nouveaux nombres. Tu y arrives sans aide ?"
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "40 – 3 = ___",
+            "36 – 7 = ___",
+            "70 – 16 = ___",
+            "63 – 17 = ___",
+            "46 – 8 = ___",
+            "85 – 24 = ___",
+            "82 – 6 = ___",
+            "65 – 4 = ___"
+          ],
+          "spalten": 3,
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 5,
+          "label": "Place pour les calculs"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes s’entraînent : calculer de tête en passant la dizaine, compléter jusqu’à la centaine et au millier, additionner et soustraire en colonnes. Cette fiche : « Moins en passant la dizaine ».",
+        "ablauf": [
+          "Lire ensemble l’encadré « Comment faire » et calculer l’exemple au tableau.",
+          "Série 1 seul ou à deux. En cas de blocage, regarder l’encadré.",
+          "Série 2 sans aide. Ensuite, comparer soi-même avec la solution.",
+          "Pour s’entraîner davantage : dans le jeu « Annexe Junglinster », la même fiche à sa place, avec toujours de nouveaux nombres."
+        ],
+        "hintergrund": "Répartition provisoire de l’entraînement en six modules ; elle sera adaptée aux descriptifs officiels des modules dès qu’ils seront disponibles. Une courte explication, un exemple, beaucoup d’exercices du même type : répéter à petits pas donne de l’assurance. Dans le jeu, une astuce apparaît après une mauvaise réponse ; sur papier, c’est l’enseignant qui prend ce rôle.",
+        "differenzierung": {
+          "leichter": "Seulement la série 1 ; recopier l’exemple à côté.",
+          "schwerer": "Inventer ses propres exercices du même type et les échanger."
+        },
+        "loesungen": [
+          "1) a) 62 · b) 57 · c) 51 · d) 18 · e) 37 · f) 91 · g) 45 · h) 82 · i) 11 · j) 18",
+          "2) a) 37 · b) 29 · c) 54 · d) 46 · e) 38 · f) 61 · g) 76 · h) 61"
+        ]
+      }
+    }
+  },
+  {
+    "id": "annexe-mathe-m2-ergaenzen",
+    "bereich": "mathe",
+    "thema": "rechnen",
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "20–30 Min.",
+    "eldib": [],
+    "schlagworte": [
+      "Annexe Junglinster",
+      "Mathe-Training",
+      "Modul 2",
+      "Plus und Minus",
+      "Ergänzen bis 100 und 1000"
+    ],
+    "bild": "icon:math-symbols",
+    "de": {
+      "titel": "Ergänzen bis 100 und 1000",
+      "untertitel": "Mathe-Training Modul 2 „Plus und Minus“ – auch im Spiel Annexe Junglinster",
+      "bausteine": [
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "So geht’s",
+              "text": "Wie viel fehlt? Rechne vom kleinen Wert hoch.",
+              "punkte": [
+                "Erst bis zum nächsten Zehner",
+                "Dann bis zum Hunderter",
+                "Alles zusammenzählen"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Beispiel",
+              "text": "37 + ___ = 100 → 37 + 3 = 40 → 40 + 60 = 100 → 63"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Rechne. Schreib die Lösung auf die Linie."
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "66 + ___ = 100",
+            "35 + ___ = 100",
+            "77 + ___ = 100",
+            "23 + ___ = 100",
+            "48 + ___ = 100",
+            "400 + ___ = 1000",
+            "500 + ___ = 1000",
+            "850 + ___ = 1000",
+            "950 + ___ = 1000",
+            "650 + ___ = 1000"
+          ],
+          "spalten": 3,
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Noch einmal – mit neuen Zahlen. Schaffst du es ohne Hilfe?"
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "30 + ___ = 100",
+            "20 + ___ = 100",
+            "28 + ___ = 100",
+            "37 + ___ = 100",
+            "250 + ___ = 1000",
+            "600 + ___ = 1000",
+            "850 + ___ = 1000",
+            "450 + ___ = 1000"
+          ],
+          "spalten": 3,
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 5,
+          "label": "Platz für Nebenrechnungen"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen üben: Im Kopf über den Zehner rechnen, Zum Hunderter und Tausender ergänzen, Schriftlich addieren und subtrahieren. Dieses Blatt: „Ergänzen bis 100 und 1000“.",
+        "ablauf": [
+          "Merkkasten „So geht’s“ gemeinsam lesen und das Beispiel an der Tafel vorrechnen.",
+          "Reihe 1 allein oder zu zweit. Wer nicht weiterkommt, schaut in den Merkkasten.",
+          "Reihe 2 ohne Hilfe. Danach selbst mit der Lösung vergleichen.",
+          "Mehr Übung: Im Spiel „Annexe Junglinster“ am eigenen Platz dasselbe Blatt mit immer neuen Zahlen."
+        ],
+        "hintergrund": "Vorläufige Einteilung des Mathe-Trainings in sechs Module; sie wird an die offiziellen Modulbeschreibungen angepasst, sobald diese vorliegen. Kurze Erklärung, ein Beispiel, viele gleichartige Aufgaben: Wiederholung mit kleinen Schritten gibt Sicherheit. Im Spiel erscheint bei einer falschen Antwort ein Tipp; auf Papier übernimmt das die Lehrperson.",
+        "differenzierung": {
+          "leichter": "Nur Reihe 1; das Beispiel daneben abschreiben lassen.",
+          "schwerer": "Eigene Aufgaben in derselben Art erfinden und tauschen."
+        },
+        "loesungen": [
+          "1) a) 34 · b) 65 · c) 23 · d) 77 · e) 52 · f) 600 · g) 500 · h) 150 · i) 50 · j) 350",
+          "2) a) 70 · b) 80 · c) 72 · d) 63 · e) 750 · f) 400 · g) 150 · h) 550"
+        ]
+      }
+    },
+    "fr": {
+      "titel": "Compléter jusqu’à 100 et 1000",
+      "untertitel": "Entraînement maths module 2 « Plus et moins » – aussi dans le jeu Annexe Junglinster",
+      "bausteine": [
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Comment faire",
+              "text": "Combien manque-t-il ? Compte en montant depuis le petit nombre.",
+              "punkte": [
+                "D’abord jusqu’à la dizaine suivante",
+                "Puis jusqu’à la centaine",
+                "Additionne tout"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Exemple",
+              "text": "37 + ___ = 100 → 37 + 3 = 40 → 40 + 60 = 100 → 63"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Calcule. Écris le résultat sur la ligne."
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "66 + ___ = 100",
+            "35 + ___ = 100",
+            "77 + ___ = 100",
+            "23 + ___ = 100",
+            "48 + ___ = 100",
+            "400 + ___ = 1000",
+            "500 + ___ = 1000",
+            "850 + ___ = 1000",
+            "950 + ___ = 1000",
+            "650 + ___ = 1000"
+          ],
+          "spalten": 3,
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Encore une fois – avec de nouveaux nombres. Tu y arrives sans aide ?"
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "30 + ___ = 100",
+            "20 + ___ = 100",
+            "28 + ___ = 100",
+            "37 + ___ = 100",
+            "250 + ___ = 1000",
+            "600 + ___ = 1000",
+            "850 + ___ = 1000",
+            "450 + ___ = 1000"
+          ],
+          "spalten": 3,
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 5,
+          "label": "Place pour les calculs"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes s’entraînent : calculer de tête en passant la dizaine, compléter jusqu’à la centaine et au millier, additionner et soustraire en colonnes. Cette fiche : « Compléter jusqu’à 100 et 1000 ».",
+        "ablauf": [
+          "Lire ensemble l’encadré « Comment faire » et calculer l’exemple au tableau.",
+          "Série 1 seul ou à deux. En cas de blocage, regarder l’encadré.",
+          "Série 2 sans aide. Ensuite, comparer soi-même avec la solution.",
+          "Pour s’entraîner davantage : dans le jeu « Annexe Junglinster », la même fiche à sa place, avec toujours de nouveaux nombres."
+        ],
+        "hintergrund": "Répartition provisoire de l’entraînement en six modules ; elle sera adaptée aux descriptifs officiels des modules dès qu’ils seront disponibles. Une courte explication, un exemple, beaucoup d’exercices du même type : répéter à petits pas donne de l’assurance. Dans le jeu, une astuce apparaît après une mauvaise réponse ; sur papier, c’est l’enseignant qui prend ce rôle.",
+        "differenzierung": {
+          "leichter": "Seulement la série 1 ; recopier l’exemple à côté.",
+          "schwerer": "Inventer ses propres exercices du même type et les échanger."
+        },
+        "loesungen": [
+          "1) a) 34 · b) 65 · c) 23 · d) 77 · e) 52 · f) 600 · g) 500 · h) 150 · i) 50 · j) 350",
+          "2) a) 70 · b) 80 · c) 72 · d) 63 · e) 750 · f) 400 · g) 150 · h) 550"
+        ]
+      }
+    }
+  },
+  {
+    "id": "annexe-mathe-m2-schriftlich",
+    "bereich": "mathe",
+    "thema": "rechnen",
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "20–30 Min.",
+    "eldib": [],
+    "schlagworte": [
+      "Annexe Junglinster",
+      "Mathe-Training",
+      "Modul 2",
+      "Plus und Minus",
+      "Schriftlich rechnen"
+    ],
+    "bild": "icon:math-symbols",
+    "de": {
+      "titel": "Schriftlich rechnen",
+      "untertitel": "Mathe-Training Modul 2 „Plus und Minus“ – auch im Spiel Annexe Junglinster",
+      "bausteine": [
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "So geht’s",
+              "text": "Untereinander schreiben: Einer unter Einer, Zehner unter Zehner.",
+              "punkte": [
+                "Rechts bei den Einern anfangen",
+                "Mehr als 9? Den Zehner merken (Übertrag)",
+                "Beim Minus: zu wenig? Einen Zehner „leihen“"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Beispiel",
+              "text": "386 + 247: 6+7=13 (3, merke 1) · 8+4+1=13 (3, merke 1) · 3+2+1=6 → 633"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Rechne. Schreib die Lösung auf die Linie."
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "527 + 182 = ___",
+            "566 – 143 = ___",
+            "202 + 128 = ___",
+            "886 – 255 = ___",
+            "405 + 240 = ___",
+            "699 – 215 = ___",
+            "571 + 284 = ___",
+            "665 – 149 = ___"
+          ],
+          "spalten": 3,
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Noch einmal – mit neuen Zahlen. Schaffst du es ohne Hilfe?"
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "266 + 146 = ___",
+            "482 – 156 = ___",
+            "124 + 292 = ___",
+            "316 – 179 = ___",
+            "324 + 199 = ___",
+            "691 – 263 = ___",
+            "249 + 142 = ___",
+            "917 – 223 = ___"
+          ],
+          "spalten": 3,
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 5,
+          "label": "Platz für Nebenrechnungen"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen üben: Im Kopf über den Zehner rechnen, Zum Hunderter und Tausender ergänzen, Schriftlich addieren und subtrahieren. Dieses Blatt: „Schriftlich rechnen“.",
+        "ablauf": [
+          "Merkkasten „So geht’s“ gemeinsam lesen und das Beispiel an der Tafel vorrechnen.",
+          "Reihe 1 allein oder zu zweit. Wer nicht weiterkommt, schaut in den Merkkasten.",
+          "Reihe 2 ohne Hilfe. Danach selbst mit der Lösung vergleichen.",
+          "Mehr Übung: Im Spiel „Annexe Junglinster“ am eigenen Platz dasselbe Blatt mit immer neuen Zahlen."
+        ],
+        "hintergrund": "Vorläufige Einteilung des Mathe-Trainings in sechs Module; sie wird an die offiziellen Modulbeschreibungen angepasst, sobald diese vorliegen. Kurze Erklärung, ein Beispiel, viele gleichartige Aufgaben: Wiederholung mit kleinen Schritten gibt Sicherheit. Im Spiel erscheint bei einer falschen Antwort ein Tipp; auf Papier übernimmt das die Lehrperson.",
+        "differenzierung": {
+          "leichter": "Nur Reihe 1; das Beispiel daneben abschreiben lassen.",
+          "schwerer": "Eigene Aufgaben in derselben Art erfinden und tauschen."
+        },
+        "loesungen": [
+          "1) a) 709 · b) 423 · c) 330 · d) 631 · e) 645 · f) 484 · g) 855 · h) 516",
+          "2) a) 412 · b) 326 · c) 416 · d) 137 · e) 523 · f) 428 · g) 391 · h) 694"
+        ]
+      }
+    },
+    "fr": {
+      "titel": "Calculer en colonnes",
+      "untertitel": "Entraînement maths module 2 « Plus et moins » – aussi dans le jeu Annexe Junglinster",
+      "bausteine": [
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Comment faire",
+              "text": "Écris les nombres l’un sous l’autre : unités sous unités, dizaines sous dizaines.",
+              "punkte": [
+                "Commence à droite, par les unités",
+                "Plus de 9 ? Retiens la dizaine (la retenue)",
+                "Pour moins : pas assez ? « Emprunte » une dizaine"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Exemple",
+              "text": "386 + 247 : 6+7=13 (3, retenue 1) · 8+4+1=13 (3, retenue 1) · 3+2+1=6 → 633"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Calcule. Écris le résultat sur la ligne."
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "527 + 182 = ___",
+            "566 – 143 = ___",
+            "202 + 128 = ___",
+            "886 – 255 = ___",
+            "405 + 240 = ___",
+            "699 – 215 = ___",
+            "571 + 284 = ___",
+            "665 – 149 = ___"
+          ],
+          "spalten": 3,
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Encore une fois – avec de nouveaux nombres. Tu y arrives sans aide ?"
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "266 + 146 = ___",
+            "482 – 156 = ___",
+            "124 + 292 = ___",
+            "316 – 179 = ___",
+            "324 + 199 = ___",
+            "691 – 263 = ___",
+            "249 + 142 = ___",
+            "917 – 223 = ___"
+          ],
+          "spalten": 3,
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 5,
+          "label": "Place pour les calculs"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes s’entraînent : calculer de tête en passant la dizaine, compléter jusqu’à la centaine et au millier, additionner et soustraire en colonnes. Cette fiche : « Calculer en colonnes ».",
+        "ablauf": [
+          "Lire ensemble l’encadré « Comment faire » et calculer l’exemple au tableau.",
+          "Série 1 seul ou à deux. En cas de blocage, regarder l’encadré.",
+          "Série 2 sans aide. Ensuite, comparer soi-même avec la solution.",
+          "Pour s’entraîner davantage : dans le jeu « Annexe Junglinster », la même fiche à sa place, avec toujours de nouveaux nombres."
+        ],
+        "hintergrund": "Répartition provisoire de l’entraînement en six modules ; elle sera adaptée aux descriptifs officiels des modules dès qu’ils seront disponibles. Une courte explication, un exemple, beaucoup d’exercices du même type : répéter à petits pas donne de l’assurance. Dans le jeu, une astuce apparaît après une mauvaise réponse ; sur papier, c’est l’enseignant qui prend ce rôle.",
+        "differenzierung": {
+          "leichter": "Seulement la série 1 ; recopier l’exemple à côté.",
+          "schwerer": "Inventer ses propres exercices du même type et les échanger."
+        },
+        "loesungen": [
+          "1) a) 709 · b) 423 · c) 330 · d) 631 · e) 645 · f) 484 · g) 855 · h) 516",
+          "2) a) 412 · b) 326 · c) 416 · d) 137 · e) 523 · f) 428 · g) 391 · h) 694"
+        ]
+      }
+    }
+  },
+  {
+    "id": "annexe-mathe-m3-einmaleins",
+    "bereich": "mathe",
+    "thema": "rechnen",
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "20–30 Min.",
+    "eldib": [],
+    "schlagworte": [
+      "Annexe Junglinster",
+      "Mathe-Training",
+      "Modul 3",
+      "Mal und Geteilt",
+      "Das kleine Einmaleins"
+    ],
+    "bild": "icon:math",
+    "de": {
+      "titel": "Das kleine Einmaleins",
+      "untertitel": "Mathe-Training Modul 3 „Mal und Geteilt“ – auch im Spiel Annexe Junglinster",
+      "bausteine": [
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "So geht’s",
+              "text": "Mal heißt: mehrmals das Gleiche.",
+              "punkte": [
+                "Kernaufgaben: ·1, ·2, ·5, ·10",
+                "Von dort aus weiterrechnen",
+                "7 · 6 = 5 · 6 + 2 · 6 = 30 + 12"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Beispiel",
+              "text": "8 · 7 → 10 · 7 = 70 → minus 2 · 7 = 14 → 56"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Rechne. Schreib die Lösung auf die Linie."
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "8 · 3 = ___",
+            "10 · 9 = ___",
+            "9 · 7 = ___",
+            "8 · 7 = ___",
+            "9 · 4 = ___",
+            "7 · 10 = ___",
+            "6 · 4 = ___",
+            "9 · 5 = ___",
+            "9 · 2 = ___",
+            "6 · 6 = ___",
+            "10 · 3 = ___",
+            "8 · 6 = ___"
+          ],
+          "spalten": 3,
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Noch einmal – mit neuen Zahlen. Schaffst du es ohne Hilfe?"
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "4 · 2 = ___",
+            "7 · 6 = ___",
+            "9 · 4 = ___",
+            "6 · 4 = ___",
+            "10 · 6 = ___",
+            "5 · 9 = ___",
+            "9 · 7 = ___",
+            "7 · 4 = ___"
+          ],
+          "spalten": 3,
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 5,
+          "label": "Platz für Nebenrechnungen"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen üben: Das kleine Einmaleins sicher können, Teilen als Umkehraufgabe, Mit Zehnern und Hundertern malnehmen, Kleine Sachaufgaben lösen. Dieses Blatt: „Das kleine Einmaleins“.",
+        "ablauf": [
+          "Merkkasten „So geht’s“ gemeinsam lesen und das Beispiel an der Tafel vorrechnen.",
+          "Reihe 1 allein oder zu zweit. Wer nicht weiterkommt, schaut in den Merkkasten.",
+          "Reihe 2 ohne Hilfe. Danach selbst mit der Lösung vergleichen.",
+          "Mehr Übung: Im Spiel „Annexe Junglinster“ am eigenen Platz dasselbe Blatt mit immer neuen Zahlen."
+        ],
+        "hintergrund": "Vorläufige Einteilung des Mathe-Trainings in sechs Module; sie wird an die offiziellen Modulbeschreibungen angepasst, sobald diese vorliegen. Kurze Erklärung, ein Beispiel, viele gleichartige Aufgaben: Wiederholung mit kleinen Schritten gibt Sicherheit. Im Spiel erscheint bei einer falschen Antwort ein Tipp; auf Papier übernimmt das die Lehrperson.",
+        "differenzierung": {
+          "leichter": "Nur Reihe 1; das Beispiel daneben abschreiben lassen.",
+          "schwerer": "Eigene Aufgaben in derselben Art erfinden und tauschen."
+        },
+        "loesungen": [
+          "1) a) 24 · b) 90 · c) 63 · d) 56 · e) 36 · f) 70 · g) 24 · h) 45 · i) 18 · j) 36 · k) 30 · l) 48",
+          "2) a) 8 · b) 42 · c) 36 · d) 24 · e) 60 · f) 45 · g) 63 · h) 28"
+        ]
+      }
+    },
+    "fr": {
+      "titel": "Les tables de multiplication",
+      "untertitel": "Entraînement maths module 3 « Fois et divisé » – aussi dans le jeu Annexe Junglinster",
+      "bausteine": [
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Comment faire",
+              "text": "Multiplier, c’est prendre plusieurs fois la même chose.",
+              "punkte": [
+                "Tables clés : ×1, ×2, ×5, ×10",
+                "Continue à partir de là",
+                "7 × 6 = 5 × 6 + 2 × 6 = 30 + 12"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Exemple",
+              "text": "8 × 7 → 10 × 7 = 70 → moins 2 × 7 = 14 → 56"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Calcule. Écris le résultat sur la ligne."
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "8 × 3 = ___",
+            "10 × 9 = ___",
+            "9 × 7 = ___",
+            "8 × 7 = ___",
+            "9 × 4 = ___",
+            "7 × 10 = ___",
+            "6 × 4 = ___",
+            "9 × 5 = ___",
+            "9 × 2 = ___",
+            "6 × 6 = ___",
+            "10 × 3 = ___",
+            "8 × 6 = ___"
+          ],
+          "spalten": 3,
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Encore une fois – avec de nouveaux nombres. Tu y arrives sans aide ?"
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "4 × 2 = ___",
+            "7 × 6 = ___",
+            "9 × 4 = ___",
+            "6 × 4 = ___",
+            "10 × 6 = ___",
+            "5 × 9 = ___",
+            "9 × 7 = ___",
+            "7 × 4 = ___"
+          ],
+          "spalten": 3,
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 5,
+          "label": "Place pour les calculs"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes s’entraînent : connaître les tables de multiplication, diviser comme opération inverse, multiplier avec des dizaines et des centaines, résoudre de petits problèmes. Cette fiche : « Les tables de multiplication ».",
+        "ablauf": [
+          "Lire ensemble l’encadré « Comment faire » et calculer l’exemple au tableau.",
+          "Série 1 seul ou à deux. En cas de blocage, regarder l’encadré.",
+          "Série 2 sans aide. Ensuite, comparer soi-même avec la solution.",
+          "Pour s’entraîner davantage : dans le jeu « Annexe Junglinster », la même fiche à sa place, avec toujours de nouveaux nombres."
+        ],
+        "hintergrund": "Répartition provisoire de l’entraînement en six modules ; elle sera adaptée aux descriptifs officiels des modules dès qu’ils seront disponibles. Une courte explication, un exemple, beaucoup d’exercices du même type : répéter à petits pas donne de l’assurance. Dans le jeu, une astuce apparaît après une mauvaise réponse ; sur papier, c’est l’enseignant qui prend ce rôle.",
+        "differenzierung": {
+          "leichter": "Seulement la série 1 ; recopier l’exemple à côté.",
+          "schwerer": "Inventer ses propres exercices du même type et les échanger."
+        },
+        "loesungen": [
+          "1) a) 24 · b) 90 · c) 63 · d) 56 · e) 36 · f) 70 · g) 24 · h) 45 · i) 18 · j) 36 · k) 30 · l) 48",
+          "2) a) 8 · b) 42 · c) 36 · d) 24 · e) 60 · f) 45 · g) 63 · h) 28"
+        ]
+      }
+    }
+  },
+  {
+    "id": "annexe-mathe-m3-geteilt",
+    "bereich": "mathe",
+    "thema": "rechnen",
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "20–30 Min.",
+    "eldib": [],
+    "schlagworte": [
+      "Annexe Junglinster",
+      "Mathe-Training",
+      "Modul 3",
+      "Mal und Geteilt",
+      "Geteilt durch"
+    ],
+    "bild": "icon:math",
+    "de": {
+      "titel": "Geteilt durch",
+      "untertitel": "Mathe-Training Modul 3 „Mal und Geteilt“ – auch im Spiel Annexe Junglinster",
+      "bausteine": [
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "So geht’s",
+              "text": "Teilen ist Mal rückwärts.",
+              "punkte": [
+                "Frag dich: Welche Zahl mal … gibt …?",
+                "56 : 8 = ? → ? · 8 = 56"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Beispiel",
+              "text": "42 : 6 = 7, weil 7 · 6 = 42"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Rechne. Schreib die Lösung auf die Linie."
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "32 : 4 = ___",
+            "63 : 9 = ___",
+            "30 : 5 = ___",
+            "18 : 6 = ___",
+            "20 : 4 = ___",
+            "16 : 8 = ___",
+            "18 : 3 = ___",
+            "20 : 10 = ___",
+            "20 : 2 = ___",
+            "45 : 5 = ___",
+            "63 : 9 = ___",
+            "30 : 6 = ___"
+          ],
+          "spalten": 3,
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Noch einmal – mit neuen Zahlen. Schaffst du es ohne Hilfe?"
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "8 : 2 = ___",
+            "16 : 4 = ___",
+            "12 : 3 = ___",
+            "100 : 10 = ___",
+            "60 : 6 = ___",
+            "63 : 9 = ___",
+            "18 : 6 = ___",
+            "20 : 5 = ___"
+          ],
+          "spalten": 3,
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 5,
+          "label": "Platz für Nebenrechnungen"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen üben: Das kleine Einmaleins sicher können, Teilen als Umkehraufgabe, Mit Zehnern und Hundertern malnehmen, Kleine Sachaufgaben lösen. Dieses Blatt: „Geteilt durch“.",
+        "ablauf": [
+          "Merkkasten „So geht’s“ gemeinsam lesen und das Beispiel an der Tafel vorrechnen.",
+          "Reihe 1 allein oder zu zweit. Wer nicht weiterkommt, schaut in den Merkkasten.",
+          "Reihe 2 ohne Hilfe. Danach selbst mit der Lösung vergleichen.",
+          "Mehr Übung: Im Spiel „Annexe Junglinster“ am eigenen Platz dasselbe Blatt mit immer neuen Zahlen."
+        ],
+        "hintergrund": "Vorläufige Einteilung des Mathe-Trainings in sechs Module; sie wird an die offiziellen Modulbeschreibungen angepasst, sobald diese vorliegen. Kurze Erklärung, ein Beispiel, viele gleichartige Aufgaben: Wiederholung mit kleinen Schritten gibt Sicherheit. Im Spiel erscheint bei einer falschen Antwort ein Tipp; auf Papier übernimmt das die Lehrperson.",
+        "differenzierung": {
+          "leichter": "Nur Reihe 1; das Beispiel daneben abschreiben lassen.",
+          "schwerer": "Eigene Aufgaben in derselben Art erfinden und tauschen."
+        },
+        "loesungen": [
+          "1) a) 8 · b) 7 · c) 6 · d) 3 · e) 5 · f) 2 · g) 6 · h) 2 · i) 10 · j) 9 · k) 7 · l) 5",
+          "2) a) 4 · b) 4 · c) 4 · d) 10 · e) 10 · f) 7 · g) 3 · h) 4"
+        ]
+      }
+    },
+    "fr": {
+      "titel": "Divisé par",
+      "untertitel": "Entraînement maths module 3 « Fois et divisé » – aussi dans le jeu Annexe Junglinster",
+      "bausteine": [
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Comment faire",
+              "text": "Diviser, c’est multiplier à l’envers.",
+              "punkte": [
+                "Demande-toi : quel nombre fois … donne … ?",
+                "56 : 8 = ? → ? × 8 = 56"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Exemple",
+              "text": "42 : 6 = 7, car 7 × 6 = 42"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Calcule. Écris le résultat sur la ligne."
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "32 : 4 = ___",
+            "63 : 9 = ___",
+            "30 : 5 = ___",
+            "18 : 6 = ___",
+            "20 : 4 = ___",
+            "16 : 8 = ___",
+            "18 : 3 = ___",
+            "20 : 10 = ___",
+            "20 : 2 = ___",
+            "45 : 5 = ___",
+            "63 : 9 = ___",
+            "30 : 6 = ___"
+          ],
+          "spalten": 3,
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Encore une fois – avec de nouveaux nombres. Tu y arrives sans aide ?"
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "8 : 2 = ___",
+            "16 : 4 = ___",
+            "12 : 3 = ___",
+            "100 : 10 = ___",
+            "60 : 6 = ___",
+            "63 : 9 = ___",
+            "18 : 6 = ___",
+            "20 : 5 = ___"
+          ],
+          "spalten": 3,
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 5,
+          "label": "Place pour les calculs"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes s’entraînent : connaître les tables de multiplication, diviser comme opération inverse, multiplier avec des dizaines et des centaines, résoudre de petits problèmes. Cette fiche : « Divisé par ».",
+        "ablauf": [
+          "Lire ensemble l’encadré « Comment faire » et calculer l’exemple au tableau.",
+          "Série 1 seul ou à deux. En cas de blocage, regarder l’encadré.",
+          "Série 2 sans aide. Ensuite, comparer soi-même avec la solution.",
+          "Pour s’entraîner davantage : dans le jeu « Annexe Junglinster », la même fiche à sa place, avec toujours de nouveaux nombres."
+        ],
+        "hintergrund": "Répartition provisoire de l’entraînement en six modules ; elle sera adaptée aux descriptifs officiels des modules dès qu’ils seront disponibles. Une courte explication, un exemple, beaucoup d’exercices du même type : répéter à petits pas donne de l’assurance. Dans le jeu, une astuce apparaît après une mauvaise réponse ; sur papier, c’est l’enseignant qui prend ce rôle.",
+        "differenzierung": {
+          "leichter": "Seulement la série 1 ; recopier l’exemple à côté.",
+          "schwerer": "Inventer ses propres exercices du même type et les échanger."
+        },
+        "loesungen": [
+          "1) a) 8 · b) 7 · c) 6 · d) 3 · e) 5 · f) 2 · g) 6 · h) 2 · i) 10 · j) 9 · k) 7 · l) 5",
+          "2) a) 4 · b) 4 · c) 4 · d) 10 · e) 10 · f) 7 · g) 3 · h) 4"
+        ]
+      }
+    }
+  },
+  {
+    "id": "annexe-mathe-m3-zehner",
+    "bereich": "mathe",
+    "thema": "rechnen",
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "20–30 Min.",
+    "eldib": [],
+    "schlagworte": [
+      "Annexe Junglinster",
+      "Mathe-Training",
+      "Modul 3",
+      "Mal und Geteilt",
+      "Mal mit Zehnern und Hundertern"
+    ],
+    "bild": "icon:math",
+    "de": {
+      "titel": "Mal mit Zehnern und Hundertern",
+      "untertitel": "Mathe-Training Modul 3 „Mal und Geteilt“ – auch im Spiel Annexe Junglinster",
+      "bausteine": [
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "So geht’s",
+              "text": "Rechne ohne Nullen, hänge die Nullen dann an.",
+              "punkte": [
+                "30 · 4 → 3 · 4 = 12",
+                "Eine Null war dabei → 120"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Beispiel",
+              "text": "20 · 70 → 2 · 7 = 14 → zwei Nullen → 1400"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Rechne. Schreib die Lösung auf die Linie."
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "700 · 40 = ___",
+            "40 · 8 = ___",
+            "20 · 30 = ___",
+            "600 · 5 = ___",
+            "80 · 50 = ___",
+            "60 · 4 = ___",
+            "500 · 30 = ___",
+            "40 · 4 = ___",
+            "20 · 20 = ___",
+            "300 · 3 = ___"
+          ],
+          "spalten": 3,
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Noch einmal – mit neuen Zahlen. Schaffst du es ohne Hilfe?"
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "400 · 30 = ___",
+            "30 · 9 = ___",
+            "700 · 2 = ___",
+            "70 · 30 = ___",
+            "50 · 6 = ___",
+            "900 · 50 = ___",
+            "70 · 90 = ___",
+            "500 · 4 = ___"
+          ],
+          "spalten": 3,
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 5,
+          "label": "Platz für Nebenrechnungen"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen üben: Das kleine Einmaleins sicher können, Teilen als Umkehraufgabe, Mit Zehnern und Hundertern malnehmen, Kleine Sachaufgaben lösen. Dieses Blatt: „Mal mit Zehnern und Hundertern“.",
+        "ablauf": [
+          "Merkkasten „So geht’s“ gemeinsam lesen und das Beispiel an der Tafel vorrechnen.",
+          "Reihe 1 allein oder zu zweit. Wer nicht weiterkommt, schaut in den Merkkasten.",
+          "Reihe 2 ohne Hilfe. Danach selbst mit der Lösung vergleichen.",
+          "Mehr Übung: Im Spiel „Annexe Junglinster“ am eigenen Platz dasselbe Blatt mit immer neuen Zahlen."
+        ],
+        "hintergrund": "Vorläufige Einteilung des Mathe-Trainings in sechs Module; sie wird an die offiziellen Modulbeschreibungen angepasst, sobald diese vorliegen. Kurze Erklärung, ein Beispiel, viele gleichartige Aufgaben: Wiederholung mit kleinen Schritten gibt Sicherheit. Im Spiel erscheint bei einer falschen Antwort ein Tipp; auf Papier übernimmt das die Lehrperson.",
+        "differenzierung": {
+          "leichter": "Nur Reihe 1; das Beispiel daneben abschreiben lassen.",
+          "schwerer": "Eigene Aufgaben in derselben Art erfinden und tauschen."
+        },
+        "loesungen": [
+          "1) a) 28000 · b) 320 · c) 600 · d) 3000 · e) 4000 · f) 240 · g) 15000 · h) 160 · i) 400 · j) 900",
+          "2) a) 12000 · b) 270 · c) 1400 · d) 2100 · e) 300 · f) 45000 · g) 6300 · h) 2000"
+        ]
+      }
+    },
+    "fr": {
+      "titel": "Multiplier avec des dizaines et des centaines",
+      "untertitel": "Entraînement maths module 3 « Fois et divisé » – aussi dans le jeu Annexe Junglinster",
+      "bausteine": [
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Comment faire",
+              "text": "Calcule sans les zéros, puis ajoute les zéros.",
+              "punkte": [
+                "30 × 4 → 3 × 4 = 12",
+                "Il y avait un zéro → 120"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Exemple",
+              "text": "20 × 70 → 2 × 7 = 14 → deux zéros → 1400"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Calcule. Écris le résultat sur la ligne."
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "700 × 40 = ___",
+            "40 × 8 = ___",
+            "20 × 30 = ___",
+            "600 × 5 = ___",
+            "80 × 50 = ___",
+            "60 × 4 = ___",
+            "500 × 30 = ___",
+            "40 × 4 = ___",
+            "20 × 20 = ___",
+            "300 × 3 = ___"
+          ],
+          "spalten": 3,
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Encore une fois – avec de nouveaux nombres. Tu y arrives sans aide ?"
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "400 × 30 = ___",
+            "30 × 9 = ___",
+            "700 × 2 = ___",
+            "70 × 30 = ___",
+            "50 × 6 = ___",
+            "900 × 50 = ___",
+            "70 × 90 = ___",
+            "500 × 4 = ___"
+          ],
+          "spalten": 3,
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 5,
+          "label": "Place pour les calculs"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes s’entraînent : connaître les tables de multiplication, diviser comme opération inverse, multiplier avec des dizaines et des centaines, résoudre de petits problèmes. Cette fiche : « Multiplier avec des dizaines et des centaines ».",
+        "ablauf": [
+          "Lire ensemble l’encadré « Comment faire » et calculer l’exemple au tableau.",
+          "Série 1 seul ou à deux. En cas de blocage, regarder l’encadré.",
+          "Série 2 sans aide. Ensuite, comparer soi-même avec la solution.",
+          "Pour s’entraîner davantage : dans le jeu « Annexe Junglinster », la même fiche à sa place, avec toujours de nouveaux nombres."
+        ],
+        "hintergrund": "Répartition provisoire de l’entraînement en six modules ; elle sera adaptée aux descriptifs officiels des modules dès qu’ils seront disponibles. Une courte explication, un exemple, beaucoup d’exercices du même type : répéter à petits pas donne de l’assurance. Dans le jeu, une astuce apparaît après une mauvaise réponse ; sur papier, c’est l’enseignant qui prend ce rôle.",
+        "differenzierung": {
+          "leichter": "Seulement la série 1 ; recopier l’exemple à côté.",
+          "schwerer": "Inventer ses propres exercices du même type et les échanger."
+        },
+        "loesungen": [
+          "1) a) 28000 · b) 320 · c) 600 · d) 3000 · e) 4000 · f) 240 · g) 15000 · h) 160 · i) 400 · j) 900",
+          "2) a) 12000 · b) 270 · c) 1400 · d) 2100 · e) 300 · f) 45000 · g) 6300 · h) 2000"
+        ]
+      }
+    }
+  },
+  {
+    "id": "annexe-mathe-m3-sach",
+    "bereich": "mathe",
+    "thema": "rechnen",
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "20–30 Min.",
+    "eldib": [],
+    "schlagworte": [
+      "Annexe Junglinster",
+      "Mathe-Training",
+      "Modul 3",
+      "Mal und Geteilt",
+      "Kleine Sachaufgaben"
+    ],
+    "bild": "icon:math",
+    "de": {
+      "titel": "Kleine Sachaufgaben",
+      "untertitel": "Mathe-Training Modul 3 „Mal und Geteilt“ – auch im Spiel Annexe Junglinster",
+      "bausteine": [
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "So geht’s",
+              "text": "Lies zweimal. Was ist gefragt? Welche Zahlen brauchst du?",
+              "punkte": [
+                "Wichtige Zahlen unterstreichen",
+                "Mal, geteilt, plus oder minus?",
+                "Antwort mit Einheit"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Beispiel",
+              "text": "4 Freunde teilen 24 Kekse gerecht → 24 : 4 = 6 Kekse für jeden"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Lies genau und rechne. Schreib die Antwort auf die Linie."
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "Ein Heft kostet 5 €. Du kaufst 8 Hefte. Du zahlst ___ €.",
+            "72 Bonbons für 9 Kinder, gerecht verteilt. Jedes Kind bekommt ___.",
+            "Ein Bus hat 8 Reihen mit je 8 Plätzen. Das sind ___ Plätze.",
+            "9 Wochen sind ___ Tage.",
+            "Eine Kiste hat 30 Flaschen in 5 Reihen. In jeder Reihe stehen ___.",
+            "Du sparst jede Woche 2 €. Nach 3 Wochen hast du ___ €."
+          ],
+          "spalten": 1,
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Noch einmal – mit neuen Zahlen. Schaffst du es ohne Hilfe?"
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "Ein Heft kostet 3 €. Du kaufst 5 Hefte. Du zahlst ___ €.",
+            "64 Bonbons für 8 Kinder, gerecht verteilt. Jedes Kind bekommt ___.",
+            "Ein Bus hat 7 Reihen mit je 7 Plätzen. Das sind ___ Plätze.",
+            "3 Wochen sind ___ Tage.",
+            "Eine Kiste hat 18 Flaschen in 3 Reihen. In jeder Reihe stehen ___.",
+            "Du sparst jede Woche 4 €. Nach 9 Wochen hast du ___ €."
+          ],
+          "spalten": 1,
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 5,
+          "label": "Platz für Nebenrechnungen"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen üben: Das kleine Einmaleins sicher können, Teilen als Umkehraufgabe, Mit Zehnern und Hundertern malnehmen, Kleine Sachaufgaben lösen. Dieses Blatt: „Kleine Sachaufgaben“.",
+        "ablauf": [
+          "Merkkasten „So geht’s“ gemeinsam lesen und das Beispiel an der Tafel vorrechnen.",
+          "Reihe 1 allein oder zu zweit. Wer nicht weiterkommt, schaut in den Merkkasten.",
+          "Reihe 2 ohne Hilfe. Danach selbst mit der Lösung vergleichen.",
+          "Mehr Übung: Im Spiel „Annexe Junglinster“ am eigenen Platz dasselbe Blatt mit immer neuen Zahlen."
+        ],
+        "hintergrund": "Vorläufige Einteilung des Mathe-Trainings in sechs Module; sie wird an die offiziellen Modulbeschreibungen angepasst, sobald diese vorliegen. Kurze Erklärung, ein Beispiel, viele gleichartige Aufgaben: Wiederholung mit kleinen Schritten gibt Sicherheit. Im Spiel erscheint bei einer falschen Antwort ein Tipp; auf Papier übernimmt das die Lehrperson.",
+        "differenzierung": {
+          "leichter": "Nur Reihe 1; das Beispiel daneben abschreiben lassen.",
+          "schwerer": "Eigene Aufgaben in derselben Art erfinden und tauschen."
+        },
+        "loesungen": [
+          "1) a) 40 · b) 8 · c) 64 · d) 63 · e) 6 · f) 6",
+          "2) a) 15 · b) 8 · c) 49 · d) 21 · e) 6 · f) 36"
+        ]
+      }
+    },
+    "fr": {
+      "titel": "Petits problèmes",
+      "untertitel": "Entraînement maths module 3 « Fois et divisé » – aussi dans le jeu Annexe Junglinster",
+      "bausteine": [
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Comment faire",
+              "text": "Lis deux fois. Que demande-t-on ? De quels nombres as-tu besoin ?",
+              "punkte": [
+                "Souligne les nombres importants",
+                "Fois, divisé, plus ou moins ?",
+                "Réponds avec l’unité"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Exemple",
+              "text": "4 amis partagent 24 biscuits → 24 : 4 = 6 biscuits chacun"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Lis bien et calcule. Écris la réponse sur la ligne."
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "Un cahier coûte 5 €. Tu achètes 8 cahiers. Tu paies ___ €.",
+            "72 bonbons pour 9 enfants, partagés équitablement. Chaque enfant reçoit ___ bonbons.",
+            "Un bus a 8 rangées de 8 places. Cela fait ___ places.",
+            "9 semaines font ___ jours.",
+            "Une caisse contient 30 bouteilles en 5 rangées. Chaque rangée a ___ bouteilles.",
+            "Tu économises 2 € par semaine. Après 3 semaines, tu as ___ €."
+          ],
+          "spalten": 1,
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Encore une fois – avec de nouveaux nombres. Tu y arrives sans aide ?"
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "Un cahier coûte 3 €. Tu achètes 5 cahiers. Tu paies ___ €.",
+            "64 bonbons pour 8 enfants, partagés équitablement. Chaque enfant reçoit ___ bonbons.",
+            "Un bus a 7 rangées de 7 places. Cela fait ___ places.",
+            "3 semaines font ___ jours.",
+            "Une caisse contient 18 bouteilles en 3 rangées. Chaque rangée a ___ bouteilles.",
+            "Tu économises 4 € par semaine. Après 9 semaines, tu as ___ €."
+          ],
+          "spalten": 1,
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 5,
+          "label": "Place pour les calculs"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes s’entraînent : connaître les tables de multiplication, diviser comme opération inverse, multiplier avec des dizaines et des centaines, résoudre de petits problèmes. Cette fiche : « Petits problèmes ».",
+        "ablauf": [
+          "Lire ensemble l’encadré « Comment faire » et calculer l’exemple au tableau.",
+          "Série 1 seul ou à deux. En cas de blocage, regarder l’encadré.",
+          "Série 2 sans aide. Ensuite, comparer soi-même avec la solution.",
+          "Pour s’entraîner davantage : dans le jeu « Annexe Junglinster », la même fiche à sa place, avec toujours de nouveaux nombres."
+        ],
+        "hintergrund": "Répartition provisoire de l’entraînement en six modules ; elle sera adaptée aux descriptifs officiels des modules dès qu’ils seront disponibles. Une courte explication, un exemple, beaucoup d’exercices du même type : répéter à petits pas donne de l’assurance. Dans le jeu, une astuce apparaît après une mauvaise réponse ; sur papier, c’est l’enseignant qui prend ce rôle.",
+        "differenzierung": {
+          "leichter": "Seulement la série 1 ; recopier l’exemple à côté.",
+          "schwerer": "Inventer ses propres exercices du même type et les échanger."
+        },
+        "loesungen": [
+          "1) a) 40 · b) 8 · c) 64 · d) 63 · e) 6 · f) 6",
+          "2) a) 15 · b) 8 · c) 49 · d) 21 · e) 6 · f) 36"
+        ]
+      }
+    }
+  },
+  {
+    "id": "annexe-mathe-m4-euro",
+    "bereich": "mathe",
+    "thema": "dezimalzahlen",
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "20–30 Min.",
+    "eldib": [],
+    "schlagworte": [
+      "Annexe Junglinster",
+      "Mathe-Training",
+      "Modul 4",
+      "Geld und Komma",
+      "Euro und Cent"
+    ],
+    "bild": "icon:coin-euro",
+    "de": {
+      "titel": "Euro und Cent",
+      "untertitel": "Mathe-Training Modul 4 „Geld und Komma“ – auch im Spiel Annexe Junglinster",
+      "bausteine": [
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "So geht’s",
+              "text": "1 Euro = 100 Cent. Das Komma trennt Euro und Cent.",
+              "punkte": [
+                "3,45 € = 3 € und 45 ct",
+                "In Cent: 3 · 100 + 45 = 345 ct",
+                "Achtung: 3,05 € = 305 ct"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Beispiel",
+              "text": "250 ct = 2,50 €"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Rechne. Schreib die Lösung auf die Linie."
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "1577 ct = ___ €",
+            "6,03 € = ___ ct",
+            "882 ct = ___ €",
+            "10,33 € = ___ ct",
+            "931 ct = ___ €",
+            "8,93 € = ___ ct",
+            "1609 ct = ___ €",
+            "5,85 € = ___ ct",
+            "1445 ct = ___ €",
+            "1,23 € = ___ ct"
+          ],
+          "spalten": 3,
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Noch einmal – mit neuen Zahlen. Schaffst du es ohne Hilfe?"
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "726 ct = ___ €",
+            "2,54 € = ___ ct",
+            "11,56 € = ___ ct",
+            "675 ct = ___ €",
+            "5,97 € = ___ ct",
+            "1889 ct = ___ €",
+            "1181 ct = ___ €",
+            "16,24 € = ___ ct"
+          ],
+          "spalten": 3,
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 5,
+          "label": "Platz für Nebenrechnungen"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen üben: Euro und Cent umrechnen, Preise zusammenzählen, Rückgeld berechnen. Dieses Blatt: „Euro und Cent“.",
+        "ablauf": [
+          "Merkkasten „So geht’s“ gemeinsam lesen und das Beispiel an der Tafel vorrechnen.",
+          "Reihe 1 allein oder zu zweit. Wer nicht weiterkommt, schaut in den Merkkasten.",
+          "Reihe 2 ohne Hilfe. Danach selbst mit der Lösung vergleichen.",
+          "Mehr Übung: Im Spiel „Annexe Junglinster“ am eigenen Platz dasselbe Blatt mit immer neuen Zahlen."
+        ],
+        "hintergrund": "Vorläufige Einteilung des Mathe-Trainings in sechs Module; sie wird an die offiziellen Modulbeschreibungen angepasst, sobald diese vorliegen. Kurze Erklärung, ein Beispiel, viele gleichartige Aufgaben: Wiederholung mit kleinen Schritten gibt Sicherheit. Im Spiel erscheint bei einer falschen Antwort ein Tipp; auf Papier übernimmt das die Lehrperson.",
+        "differenzierung": {
+          "leichter": "Nur Reihe 1; das Beispiel daneben abschreiben lassen.",
+          "schwerer": "Eigene Aufgaben in derselben Art erfinden und tauschen."
+        },
+        "loesungen": [
+          "1) a) 15,77 · b) 603 · c) 8,82 · d) 1033 · e) 9,31 · f) 893 · g) 16,09 · h) 585 · i) 14,45 · j) 123",
+          "2) a) 7,26 · b) 254 · c) 1156 · d) 6,75 · e) 597 · f) 18,89 · g) 11,81 · h) 1624"
+        ]
+      }
+    },
+    "fr": {
+      "titel": "Euros et centimes",
+      "untertitel": "Entraînement maths module 4 « L’argent et la virgule » – aussi dans le jeu Annexe Junglinster",
+      "bausteine": [
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Comment faire",
+              "text": "1 euro = 100 centimes. La virgule sépare les euros et les centimes.",
+              "punkte": [
+                "3,45 € = 3 € et 45 ct",
+                "En centimes : 3 × 100 + 45 = 345 ct",
+                "Attention : 3,05 € = 305 ct"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Exemple",
+              "text": "250 ct = 2,50 €"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Calcule. Écris le résultat sur la ligne."
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "1577 ct = ___ €",
+            "6,03 € = ___ ct",
+            "882 ct = ___ €",
+            "10,33 € = ___ ct",
+            "931 ct = ___ €",
+            "8,93 € = ___ ct",
+            "1609 ct = ___ €",
+            "5,85 € = ___ ct",
+            "1445 ct = ___ €",
+            "1,23 € = ___ ct"
+          ],
+          "spalten": 3,
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Encore une fois – avec de nouveaux nombres. Tu y arrives sans aide ?"
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "726 ct = ___ €",
+            "2,54 € = ___ ct",
+            "11,56 € = ___ ct",
+            "675 ct = ___ €",
+            "5,97 € = ___ ct",
+            "1889 ct = ___ €",
+            "1181 ct = ___ €",
+            "16,24 € = ___ ct"
+          ],
+          "spalten": 3,
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 5,
+          "label": "Place pour les calculs"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes s’entraînent : convertir euros et centimes, additionner des prix, calculer la monnaie à rendre. Cette fiche : « Euros et centimes ».",
+        "ablauf": [
+          "Lire ensemble l’encadré « Comment faire » et calculer l’exemple au tableau.",
+          "Série 1 seul ou à deux. En cas de blocage, regarder l’encadré.",
+          "Série 2 sans aide. Ensuite, comparer soi-même avec la solution.",
+          "Pour s’entraîner davantage : dans le jeu « Annexe Junglinster », la même fiche à sa place, avec toujours de nouveaux nombres."
+        ],
+        "hintergrund": "Répartition provisoire de l’entraînement en six modules ; elle sera adaptée aux descriptifs officiels des modules dès qu’ils seront disponibles. Une courte explication, un exemple, beaucoup d’exercices du même type : répéter à petits pas donne de l’assurance. Dans le jeu, une astuce apparaît après une mauvaise réponse ; sur papier, c’est l’enseignant qui prend ce rôle.",
+        "differenzierung": {
+          "leichter": "Seulement la série 1 ; recopier l’exemple à côté.",
+          "schwerer": "Inventer ses propres exercices du même type et les échanger."
+        },
+        "loesungen": [
+          "1) a) 15,77 · b) 603 · c) 8,82 · d) 1033 · e) 9,31 · f) 893 · g) 16,09 · h) 585 · i) 14,45 · j) 123",
+          "2) a) 7,26 · b) 254 · c) 1156 · d) 6,75 · e) 597 · f) 18,89 · g) 11,81 · h) 1624"
+        ]
+      }
+    }
+  },
+  {
+    "id": "annexe-mathe-m4-einkaufen",
+    "bereich": "mathe",
+    "thema": "dezimalzahlen",
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "20–30 Min.",
+    "eldib": [],
+    "schlagworte": [
+      "Annexe Junglinster",
+      "Mathe-Training",
+      "Modul 4",
+      "Geld und Komma",
+      "Einkaufen: zusammenzählen"
+    ],
+    "bild": "icon:coin-euro",
+    "de": {
+      "titel": "Einkaufen: zusammenzählen",
+      "untertitel": "Mathe-Training Modul 4 „Geld und Komma“ – auch im Spiel Annexe Junglinster",
+      "bausteine": [
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "So geht’s",
+              "text": "Euro zu Euro, Cent zu Cent.",
+              "punkte": [
+                "Erst die Euro",
+                "Dann die Cent",
+                "Mehr als 100 ct? Das ist 1 Euro mehr"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Beispiel",
+              "text": "2,80 € + 1,50 € → 3 € und 130 ct → 4,30 €"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Rechne. Schreib die Lösung auf die Linie."
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "8,00 € + 4,10 € = ___ €",
+            "1,80 € + 5,70 € = ___ €",
+            "1,90 € + 2,40 € = ___ €",
+            "3,00 € + 2,50 € = ___ €",
+            "2,90 € + 1,60 € = ___ €",
+            "5,10 € + 2,40 € = ___ €",
+            "2,70 € + 4,40 € = ___ €",
+            "9,00 € + 5,60 € = ___ €"
+          ],
+          "spalten": 2,
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Noch einmal – mit neuen Zahlen. Schaffst du es ohne Hilfe?"
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "3,90 € + 2,50 € = ___ €",
+            "9,30 € + 6,30 € = ___ €",
+            "9,70 € + 1,00 € = ___ €",
+            "4,30 € + 8,00 € = ___ €",
+            "1,70 € + 8,70 € = ___ €",
+            "4,30 € + 4,60 € = ___ €",
+            "6,70 € + 6,80 € = ___ €",
+            "2,70 € + 9,00 € = ___ €"
+          ],
+          "spalten": 2,
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 5,
+          "label": "Platz für Nebenrechnungen"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen üben: Euro und Cent umrechnen, Preise zusammenzählen, Rückgeld berechnen. Dieses Blatt: „Einkaufen: zusammenzählen“.",
+        "ablauf": [
+          "Merkkasten „So geht’s“ gemeinsam lesen und das Beispiel an der Tafel vorrechnen.",
+          "Reihe 1 allein oder zu zweit. Wer nicht weiterkommt, schaut in den Merkkasten.",
+          "Reihe 2 ohne Hilfe. Danach selbst mit der Lösung vergleichen.",
+          "Mehr Übung: Im Spiel „Annexe Junglinster“ am eigenen Platz dasselbe Blatt mit immer neuen Zahlen."
+        ],
+        "hintergrund": "Vorläufige Einteilung des Mathe-Trainings in sechs Module; sie wird an die offiziellen Modulbeschreibungen angepasst, sobald diese vorliegen. Kurze Erklärung, ein Beispiel, viele gleichartige Aufgaben: Wiederholung mit kleinen Schritten gibt Sicherheit. Im Spiel erscheint bei einer falschen Antwort ein Tipp; auf Papier übernimmt das die Lehrperson.",
+        "differenzierung": {
+          "leichter": "Nur Reihe 1; das Beispiel daneben abschreiben lassen.",
+          "schwerer": "Eigene Aufgaben in derselben Art erfinden und tauschen."
+        },
+        "loesungen": [
+          "1) a) 12,10 · b) 7,50 · c) 4,30 · d) 5,50 · e) 4,50 · f) 7,50 · g) 7,10 · h) 14,60",
+          "2) a) 6,40 · b) 15,60 · c) 10,70 · d) 12,30 · e) 10,40 · f) 8,90 · g) 13,50 · h) 11,70"
+        ]
+      }
+    },
+    "fr": {
+      "titel": "Faire les courses : additionner",
+      "untertitel": "Entraînement maths module 4 « L’argent et la virgule » – aussi dans le jeu Annexe Junglinster",
+      "bausteine": [
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Comment faire",
+              "text": "Les euros avec les euros, les centimes avec les centimes.",
+              "punkte": [
+                "D’abord les euros",
+                "Puis les centimes",
+                "Plus de 100 ct ? Cela fait 1 euro de plus"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Exemple",
+              "text": "2,80 € + 1,50 € → 3 € et 130 ct → 4,30 €"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Calcule. Écris le résultat sur la ligne."
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "8,00 € + 4,10 € = ___ €",
+            "1,80 € + 5,70 € = ___ €",
+            "1,90 € + 2,40 € = ___ €",
+            "3,00 € + 2,50 € = ___ €",
+            "2,90 € + 1,60 € = ___ €",
+            "5,10 € + 2,40 € = ___ €",
+            "2,70 € + 4,40 € = ___ €",
+            "9,00 € + 5,60 € = ___ €"
+          ],
+          "spalten": 2,
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Encore une fois – avec de nouveaux nombres. Tu y arrives sans aide ?"
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "3,90 € + 2,50 € = ___ €",
+            "9,30 € + 6,30 € = ___ €",
+            "9,70 € + 1,00 € = ___ €",
+            "4,30 € + 8,00 € = ___ €",
+            "1,70 € + 8,70 € = ___ €",
+            "4,30 € + 4,60 € = ___ €",
+            "6,70 € + 6,80 € = ___ €",
+            "2,70 € + 9,00 € = ___ €"
+          ],
+          "spalten": 2,
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 5,
+          "label": "Place pour les calculs"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes s’entraînent : convertir euros et centimes, additionner des prix, calculer la monnaie à rendre. Cette fiche : « Faire les courses : additionner ».",
+        "ablauf": [
+          "Lire ensemble l’encadré « Comment faire » et calculer l’exemple au tableau.",
+          "Série 1 seul ou à deux. En cas de blocage, regarder l’encadré.",
+          "Série 2 sans aide. Ensuite, comparer soi-même avec la solution.",
+          "Pour s’entraîner davantage : dans le jeu « Annexe Junglinster », la même fiche à sa place, avec toujours de nouveaux nombres."
+        ],
+        "hintergrund": "Répartition provisoire de l’entraînement en six modules ; elle sera adaptée aux descriptifs officiels des modules dès qu’ils seront disponibles. Une courte explication, un exemple, beaucoup d’exercices du même type : répéter à petits pas donne de l’assurance. Dans le jeu, une astuce apparaît après une mauvaise réponse ; sur papier, c’est l’enseignant qui prend ce rôle.",
+        "differenzierung": {
+          "leichter": "Seulement la série 1 ; recopier l’exemple à côté.",
+          "schwerer": "Inventer ses propres exercices du même type et les échanger."
+        },
+        "loesungen": [
+          "1) a) 12,10 · b) 7,50 · c) 4,30 · d) 5,50 · e) 4,50 · f) 7,50 · g) 7,10 · h) 14,60",
+          "2) a) 6,40 · b) 15,60 · c) 10,70 · d) 12,30 · e) 10,40 · f) 8,90 · g) 13,50 · h) 11,70"
+        ]
+      }
+    }
+  },
+  {
+    "id": "annexe-mathe-m4-rueckgeld",
+    "bereich": "mathe",
+    "thema": "dezimalzahlen",
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "20–30 Min.",
+    "eldib": [],
+    "schlagworte": [
+      "Annexe Junglinster",
+      "Mathe-Training",
+      "Modul 4",
+      "Geld und Komma",
+      "Rückgeld"
+    ],
+    "bild": "icon:coin-euro",
+    "de": {
+      "titel": "Rückgeld",
+      "untertitel": "Mathe-Training Modul 4 „Geld und Komma“ – auch im Spiel Annexe Junglinster",
+      "bausteine": [
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "So geht’s",
+              "text": "Rückgeld = bezahlt minus Preis. Oder: vom Preis aus hochzählen.",
+              "punkte": [
+                "Preis 6,40 €, bezahlt 10 €",
+                "Bis 7 € fehlen 0,60 €",
+                "Bis 10 € fehlen 3 € → 3,60 €"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Beispiel",
+              "text": "Du zahlst 20 € für 13,25 € → 6,75 € zurück"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Lies genau und rechne. Schreib die Antwort auf die Linie."
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "Preis 23,05 €, du zahlst 50 €. Zurück: ___ €",
+            "Preis 15,45 €, du zahlst 20 €. Zurück: ___ €",
+            "Preis 2,15 €, du zahlst 20 €. Zurück: ___ €",
+            "Preis 4,55 €, du zahlst 5 €. Zurück: ___ €",
+            "Preis 1,70 €, du zahlst 5 €. Zurück: ___ €",
+            "Preis 22,35 €, du zahlst 50 €. Zurück: ___ €",
+            "Preis 45,70 €, du zahlst 50 €. Zurück: ___ €",
+            "Preis 1,75 €, du zahlst 20 €. Zurück: ___ €"
+          ],
+          "spalten": 1,
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Noch einmal – mit neuen Zahlen. Schaffst du es ohne Hilfe?"
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "Preis 2,75 €, du zahlst 10 €. Zurück: ___ €",
+            "Preis 12,85 €, du zahlst 20 €. Zurück: ___ €",
+            "Preis 35,25 €, du zahlst 50 €. Zurück: ___ €",
+            "Preis 41,40 €, du zahlst 50 €. Zurück: ___ €",
+            "Preis 12,30 €, du zahlst 20 €. Zurück: ___ €",
+            "Preis 0,70 €, du zahlst 10 €. Zurück: ___ €",
+            "Preis 0,55 €, du zahlst 10 €. Zurück: ___ €",
+            "Preis 49,75 €, du zahlst 50 €. Zurück: ___ €"
+          ],
+          "spalten": 1,
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 5,
+          "label": "Platz für Nebenrechnungen"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen üben: Euro und Cent umrechnen, Preise zusammenzählen, Rückgeld berechnen. Dieses Blatt: „Rückgeld“.",
+        "ablauf": [
+          "Merkkasten „So geht’s“ gemeinsam lesen und das Beispiel an der Tafel vorrechnen.",
+          "Reihe 1 allein oder zu zweit. Wer nicht weiterkommt, schaut in den Merkkasten.",
+          "Reihe 2 ohne Hilfe. Danach selbst mit der Lösung vergleichen.",
+          "Mehr Übung: Im Spiel „Annexe Junglinster“ am eigenen Platz dasselbe Blatt mit immer neuen Zahlen."
+        ],
+        "hintergrund": "Vorläufige Einteilung des Mathe-Trainings in sechs Module; sie wird an die offiziellen Modulbeschreibungen angepasst, sobald diese vorliegen. Kurze Erklärung, ein Beispiel, viele gleichartige Aufgaben: Wiederholung mit kleinen Schritten gibt Sicherheit. Im Spiel erscheint bei einer falschen Antwort ein Tipp; auf Papier übernimmt das die Lehrperson.",
+        "differenzierung": {
+          "leichter": "Nur Reihe 1; das Beispiel daneben abschreiben lassen.",
+          "schwerer": "Eigene Aufgaben in derselben Art erfinden und tauschen."
+        },
+        "loesungen": [
+          "1) a) 26,95 · b) 4,55 · c) 17,85 · d) 0,45 · e) 3,30 · f) 27,65 · g) 4,30 · h) 18,25",
+          "2) a) 7,25 · b) 7,15 · c) 14,75 · d) 8,60 · e) 7,70 · f) 9,30 · g) 9,45 · h) 0,25"
+        ]
+      }
+    },
+    "fr": {
+      "titel": "La monnaie à rendre",
+      "untertitel": "Entraînement maths module 4 « L’argent et la virgule » – aussi dans le jeu Annexe Junglinster",
+      "bausteine": [
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Comment faire",
+              "text": "Monnaie = payé moins prix. Ou : compter en montant à partir du prix.",
+              "punkte": [
+                "Prix 6,40 €, payé 10 €",
+                "Jusqu’à 7 € il manque 0,60 €",
+                "Jusqu’à 10 € il manque 3 € → 3,60 €"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Exemple",
+              "text": "Tu paies 20 € pour 13,25 € → on te rend 6,75 €"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Lis bien et calcule. Écris la réponse sur la ligne."
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "Prix 23,05 €, tu paies 50 €. On te rend : ___ €",
+            "Prix 15,45 €, tu paies 20 €. On te rend : ___ €",
+            "Prix 2,15 €, tu paies 20 €. On te rend : ___ €",
+            "Prix 4,55 €, tu paies 5 €. On te rend : ___ €",
+            "Prix 1,70 €, tu paies 5 €. On te rend : ___ €",
+            "Prix 22,35 €, tu paies 50 €. On te rend : ___ €",
+            "Prix 45,70 €, tu paies 50 €. On te rend : ___ €",
+            "Prix 1,75 €, tu paies 20 €. On te rend : ___ €"
+          ],
+          "spalten": 1,
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Encore une fois – avec de nouveaux nombres. Tu y arrives sans aide ?"
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "Prix 2,75 €, tu paies 10 €. On te rend : ___ €",
+            "Prix 12,85 €, tu paies 20 €. On te rend : ___ €",
+            "Prix 35,25 €, tu paies 50 €. On te rend : ___ €",
+            "Prix 41,40 €, tu paies 50 €. On te rend : ___ €",
+            "Prix 12,30 €, tu paies 20 €. On te rend : ___ €",
+            "Prix 0,70 €, tu paies 10 €. On te rend : ___ €",
+            "Prix 0,55 €, tu paies 10 €. On te rend : ___ €",
+            "Prix 49,75 €, tu paies 50 €. On te rend : ___ €"
+          ],
+          "spalten": 1,
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 5,
+          "label": "Place pour les calculs"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes s’entraînent : convertir euros et centimes, additionner des prix, calculer la monnaie à rendre. Cette fiche : « La monnaie à rendre ».",
+        "ablauf": [
+          "Lire ensemble l’encadré « Comment faire » et calculer l’exemple au tableau.",
+          "Série 1 seul ou à deux. En cas de blocage, regarder l’encadré.",
+          "Série 2 sans aide. Ensuite, comparer soi-même avec la solution.",
+          "Pour s’entraîner davantage : dans le jeu « Annexe Junglinster », la même fiche à sa place, avec toujours de nouveaux nombres."
+        ],
+        "hintergrund": "Répartition provisoire de l’entraînement en six modules ; elle sera adaptée aux descriptifs officiels des modules dès qu’ils seront disponibles. Une courte explication, un exemple, beaucoup d’exercices du même type : répéter à petits pas donne de l’assurance. Dans le jeu, une astuce apparaît après une mauvaise réponse ; sur papier, c’est l’enseignant qui prend ce rôle.",
+        "differenzierung": {
+          "leichter": "Seulement la série 1 ; recopier l’exemple à côté.",
+          "schwerer": "Inventer ses propres exercices du même type et les échanger."
+        },
+        "loesungen": [
+          "1) a) 26,95 · b) 4,55 · c) 17,85 · d) 0,45 · e) 3,30 · f) 27,65 · g) 4,30 · h) 18,25",
+          "2) a) 7,25 · b) 7,15 · c) 14,75 · d) 8,60 · e) 7,70 · f) 9,30 · g) 9,45 · h) 0,25"
+        ]
+      }
+    }
+  },
+  {
+    "id": "annexe-mathe-m5-laengen",
+    "bereich": "mathe",
+    "thema": "groessen",
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "20–30 Min.",
+    "eldib": [],
+    "schlagworte": [
+      "Annexe Junglinster",
+      "Mathe-Training",
+      "Modul 5",
+      "Messen und Zeit",
+      "Längen: km, m, cm"
+    ],
+    "bild": "icon:ruler",
+    "de": {
+      "titel": "Längen: km, m, cm",
+      "untertitel": "Mathe-Training Modul 5 „Messen und Zeit“ – auch im Spiel Annexe Junglinster",
+      "bausteine": [
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "So geht’s",
+              "text": "Einheiten sind wie Treppenstufen.",
+              "punkte": [
+                "1 m = 100 cm",
+                "1 km = 1000 m",
+                "Größere Einheit → kleinere: mal",
+                "Kleinere → größere: geteilt"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Beispiel",
+              "text": "3 m = 300 cm · 2500 m = 2,5 km"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Rechne. Schreib die Lösung auf die Linie."
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "8 m = ___ cm",
+            "4 km = ___ m",
+            "900 cm = ___ m",
+            "3000 m = ___ km",
+            "2 kg = ___ g",
+            "3 m = ___ cm",
+            "9 km = ___ m",
+            "800 cm = ___ m",
+            "6000 m = ___ km",
+            "8 kg = ___ g"
+          ],
+          "spalten": 3,
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Noch einmal – mit neuen Zahlen. Schaffst du es ohne Hilfe?"
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "4 m = ___ cm",
+            "3 km = ___ m",
+            "4000 m = ___ km",
+            "9 kg = ___ g",
+            "2 m = ___ cm",
+            "2 km = ___ m",
+            "5000 m = ___ km",
+            "6 kg = ___ g"
+          ],
+          "spalten": 3,
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 5,
+          "label": "Platz für Nebenrechnungen"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen üben: Längen und Gewichte umrechnen, Zeitspannen berechnen, Uhrzeiten lesen. Dieses Blatt: „Längen: km, m, cm“.",
+        "ablauf": [
+          "Merkkasten „So geht’s“ gemeinsam lesen und das Beispiel an der Tafel vorrechnen.",
+          "Reihe 1 allein oder zu zweit. Wer nicht weiterkommt, schaut in den Merkkasten.",
+          "Reihe 2 ohne Hilfe. Danach selbst mit der Lösung vergleichen.",
+          "Mehr Übung: Im Spiel „Annexe Junglinster“ am eigenen Platz dasselbe Blatt mit immer neuen Zahlen."
+        ],
+        "hintergrund": "Vorläufige Einteilung des Mathe-Trainings in sechs Module; sie wird an die offiziellen Modulbeschreibungen angepasst, sobald diese vorliegen. Kurze Erklärung, ein Beispiel, viele gleichartige Aufgaben: Wiederholung mit kleinen Schritten gibt Sicherheit. Im Spiel erscheint bei einer falschen Antwort ein Tipp; auf Papier übernimmt das die Lehrperson.",
+        "differenzierung": {
+          "leichter": "Nur Reihe 1; das Beispiel daneben abschreiben lassen.",
+          "schwerer": "Eigene Aufgaben in derselben Art erfinden und tauschen."
+        },
+        "loesungen": [
+          "1) a) 800 · b) 4000 · c) 9 · d) 3 · e) 2000 · f) 300 · g) 9000 · h) 8 · i) 6 · j) 8000",
+          "2) a) 400 · b) 3000 · c) 4 · d) 9000 · e) 200 · f) 2000 · g) 5 · h) 6000"
+        ]
+      }
+    },
+    "fr": {
+      "titel": "Longueurs : km, m, cm",
+      "untertitel": "Entraînement maths module 5 « Mesures et temps » – aussi dans le jeu Annexe Junglinster",
+      "bausteine": [
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Comment faire",
+              "text": "Les unités sont comme les marches d’un escalier.",
+              "punkte": [
+                "1 m = 100 cm",
+                "1 km = 1000 m",
+                "Grande unité → petite : fois",
+                "Petite unité → grande : divisé"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Exemple",
+              "text": "3 m = 300 cm · 2500 m = 2,5 km"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Calcule. Écris le résultat sur la ligne."
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "8 m = ___ cm",
+            "4 km = ___ m",
+            "900 cm = ___ m",
+            "3000 m = ___ km",
+            "2 kg = ___ g",
+            "3 m = ___ cm",
+            "9 km = ___ m",
+            "800 cm = ___ m",
+            "6000 m = ___ km",
+            "8 kg = ___ g"
+          ],
+          "spalten": 3,
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Encore une fois – avec de nouveaux nombres. Tu y arrives sans aide ?"
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "4 m = ___ cm",
+            "3 km = ___ m",
+            "4000 m = ___ km",
+            "9 kg = ___ g",
+            "2 m = ___ cm",
+            "2 km = ___ m",
+            "5000 m = ___ km",
+            "6 kg = ___ g"
+          ],
+          "spalten": 3,
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 5,
+          "label": "Place pour les calculs"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes s’entraînent : convertir longueurs et masses, calculer des durées, lire l’heure. Cette fiche : « Longueurs : km, m, cm ».",
+        "ablauf": [
+          "Lire ensemble l’encadré « Comment faire » et calculer l’exemple au tableau.",
+          "Série 1 seul ou à deux. En cas de blocage, regarder l’encadré.",
+          "Série 2 sans aide. Ensuite, comparer soi-même avec la solution.",
+          "Pour s’entraîner davantage : dans le jeu « Annexe Junglinster », la même fiche à sa place, avec toujours de nouveaux nombres."
+        ],
+        "hintergrund": "Répartition provisoire de l’entraînement en six modules ; elle sera adaptée aux descriptifs officiels des modules dès qu’ils seront disponibles. Une courte explication, un exemple, beaucoup d’exercices du même type : répéter à petits pas donne de l’assurance. Dans le jeu, une astuce apparaît après une mauvaise réponse ; sur papier, c’est l’enseignant qui prend ce rôle.",
+        "differenzierung": {
+          "leichter": "Seulement la série 1 ; recopier l’exemple à côté.",
+          "schwerer": "Inventer ses propres exercices du même type et les échanger."
+        },
+        "loesungen": [
+          "1) a) 800 · b) 4000 · c) 9 · d) 3 · e) 2000 · f) 300 · g) 9000 · h) 8 · i) 6 · j) 8000",
+          "2) a) 400 · b) 3000 · c) 4 · d) 9000 · e) 200 · f) 2000 · g) 5 · h) 6000"
+        ]
+      }
+    }
+  },
+  {
+    "id": "annexe-mathe-m5-zeit",
+    "bereich": "mathe",
+    "thema": "groessen",
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "20–30 Min.",
+    "eldib": [],
+    "schlagworte": [
+      "Annexe Junglinster",
+      "Mathe-Training",
+      "Modul 5",
+      "Messen und Zeit",
+      "Zeitspannen"
+    ],
+    "bild": "icon:ruler",
+    "de": {
+      "titel": "Zeitspannen",
+      "untertitel": "Mathe-Training Modul 5 „Messen und Zeit“ – auch im Spiel Annexe Junglinster",
+      "bausteine": [
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "So geht’s",
+              "text": "Rechne in Schritten bis zur vollen Stunde.",
+              "punkte": [
+                "Von 8:40 bis 9:00 = 20 min",
+                "Von 9:00 bis 9:15 = 15 min",
+                "Zusammen 35 min"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Beispiel",
+              "text": "Der Bus fährt 7:48 ab und ist 8:10 da → 22 Minuten"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Rechne. Schreib die Lösung auf die Linie."
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "Von 14:30 bis 15:15 sind es ___ Minuten.",
+            "Von 9:45 bis 10:55 sind es ___ Minuten.",
+            "Von 9:45 bis 10:05 sind es ___ Minuten.",
+            "Von 14:50 bis 15:40 sind es ___ Minuten.",
+            "Von 14:35 bis 15:30 sind es ___ Minuten.",
+            "Von 8:35 bis 8:55 sind es ___ Minuten.",
+            "Von 12:45 bis 13:50 sind es ___ Minuten.",
+            "Von 10:30 bis 11:35 sind es ___ Minuten."
+          ],
+          "spalten": 2,
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Noch einmal – mit neuen Zahlen. Schaffst du es ohne Hilfe?"
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "Von 10:20 bis 10:55 sind es ___ Minuten.",
+            "Von 9:40 bis 10:40 sind es ___ Minuten.",
+            "Von 11:25 bis 12:35 sind es ___ Minuten.",
+            "Von 12:45 bis 13:50 sind es ___ Minuten.",
+            "Von 9:50 bis 10:05 sind es ___ Minuten.",
+            "Von 11:20 bis 12:30 sind es ___ Minuten.",
+            "Von 15:50 bis 16:15 sind es ___ Minuten.",
+            "Von 12:25 bis 13:20 sind es ___ Minuten."
+          ],
+          "spalten": 2,
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 5,
+          "label": "Platz für Nebenrechnungen"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen üben: Längen und Gewichte umrechnen, Zeitspannen berechnen, Uhrzeiten lesen. Dieses Blatt: „Zeitspannen“.",
+        "ablauf": [
+          "Merkkasten „So geht’s“ gemeinsam lesen und das Beispiel an der Tafel vorrechnen.",
+          "Reihe 1 allein oder zu zweit. Wer nicht weiterkommt, schaut in den Merkkasten.",
+          "Reihe 2 ohne Hilfe. Danach selbst mit der Lösung vergleichen.",
+          "Mehr Übung: Im Spiel „Annexe Junglinster“ am eigenen Platz dasselbe Blatt mit immer neuen Zahlen."
+        ],
+        "hintergrund": "Vorläufige Einteilung des Mathe-Trainings in sechs Module; sie wird an die offiziellen Modulbeschreibungen angepasst, sobald diese vorliegen. Kurze Erklärung, ein Beispiel, viele gleichartige Aufgaben: Wiederholung mit kleinen Schritten gibt Sicherheit. Im Spiel erscheint bei einer falschen Antwort ein Tipp; auf Papier übernimmt das die Lehrperson.",
+        "differenzierung": {
+          "leichter": "Nur Reihe 1; das Beispiel daneben abschreiben lassen.",
+          "schwerer": "Eigene Aufgaben in derselben Art erfinden und tauschen."
+        },
+        "loesungen": [
+          "1) a) 45 · b) 70 · c) 20 · d) 50 · e) 55 · f) 20 · g) 65 · h) 65",
+          "2) a) 35 · b) 60 · c) 70 · d) 65 · e) 15 · f) 70 · g) 25 · h) 55"
+        ]
+      }
+    },
+    "fr": {
+      "titel": "Durées",
+      "untertitel": "Entraînement maths module 5 « Mesures et temps » – aussi dans le jeu Annexe Junglinster",
+      "bausteine": [
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Comment faire",
+              "text": "Calcule par étapes jusqu’à l’heure pleine.",
+              "punkte": [
+                "De 8:40 à 9:00 = 20 min",
+                "De 9:00 à 9:15 = 15 min",
+                "Ensemble 35 min"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Exemple",
+              "text": "Le bus part à 7:48 et arrive à 8:10 → 22 minutes"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Calcule. Écris le résultat sur la ligne."
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "De 14:30 à 15:15, il y a ___ minutes.",
+            "De 9:45 à 10:55, il y a ___ minutes.",
+            "De 9:45 à 10:05, il y a ___ minutes.",
+            "De 14:50 à 15:40, il y a ___ minutes.",
+            "De 14:35 à 15:30, il y a ___ minutes.",
+            "De 8:35 à 8:55, il y a ___ minutes.",
+            "De 12:45 à 13:50, il y a ___ minutes.",
+            "De 10:30 à 11:35, il y a ___ minutes."
+          ],
+          "spalten": 2,
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Encore une fois – avec de nouveaux nombres. Tu y arrives sans aide ?"
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "De 10:20 à 10:55, il y a ___ minutes.",
+            "De 9:40 à 10:40, il y a ___ minutes.",
+            "De 11:25 à 12:35, il y a ___ minutes.",
+            "De 12:45 à 13:50, il y a ___ minutes.",
+            "De 9:50 à 10:05, il y a ___ minutes.",
+            "De 11:20 à 12:30, il y a ___ minutes.",
+            "De 15:50 à 16:15, il y a ___ minutes.",
+            "De 12:25 à 13:20, il y a ___ minutes."
+          ],
+          "spalten": 2,
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 5,
+          "label": "Place pour les calculs"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes s’entraînent : convertir longueurs et masses, calculer des durées, lire l’heure. Cette fiche : « Durées ».",
+        "ablauf": [
+          "Lire ensemble l’encadré « Comment faire » et calculer l’exemple au tableau.",
+          "Série 1 seul ou à deux. En cas de blocage, regarder l’encadré.",
+          "Série 2 sans aide. Ensuite, comparer soi-même avec la solution.",
+          "Pour s’entraîner davantage : dans le jeu « Annexe Junglinster », la même fiche à sa place, avec toujours de nouveaux nombres."
+        ],
+        "hintergrund": "Répartition provisoire de l’entraînement en six modules ; elle sera adaptée aux descriptifs officiels des modules dès qu’ils seront disponibles. Une courte explication, un exemple, beaucoup d’exercices du même type : répéter à petits pas donne de l’assurance. Dans le jeu, une astuce apparaît après une mauvaise réponse ; sur papier, c’est l’enseignant qui prend ce rôle.",
+        "differenzierung": {
+          "leichter": "Seulement la série 1 ; recopier l’exemple à côté.",
+          "schwerer": "Inventer ses propres exercices du même type et les échanger."
+        },
+        "loesungen": [
+          "1) a) 45 · b) 70 · c) 20 · d) 50 · e) 55 · f) 20 · g) 65 · h) 65",
+          "2) a) 35 · b) 60 · c) 70 · d) 65 · e) 15 · f) 70 · g) 25 · h) 55"
+        ]
+      }
+    }
+  },
+  {
+    "id": "annexe-mathe-m5-stunden",
+    "bereich": "mathe",
+    "thema": "groessen",
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "20–30 Min.",
+    "eldib": [],
+    "schlagworte": [
+      "Annexe Junglinster",
+      "Mathe-Training",
+      "Modul 5",
+      "Messen und Zeit",
+      "Stunden und Minuten"
+    ],
+    "bild": "icon:ruler",
+    "de": {
+      "titel": "Stunden und Minuten",
+      "untertitel": "Mathe-Training Modul 5 „Messen und Zeit“ – auch im Spiel Annexe Junglinster",
+      "bausteine": [
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "So geht’s",
+              "text": "1 Stunde = 60 Minuten. 1 Minute = 60 Sekunden.",
+              "punkte": [
+                "Halbe Stunde = 30 min",
+                "Viertelstunde = 15 min",
+                "Dreiviertelstunde = 45 min"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Beispiel",
+              "text": "2 h 15 min = 120 + 15 = 135 min"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Rechne. Schreib die Lösung auf die Linie."
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "4 h = ___ min",
+            "2 h 15 min = ___ min",
+            "160 min = ___ h ___ min",
+            "4 min = ___ s",
+            "3 h = ___ min",
+            "2 h 20 min = ___ min",
+            "270 min = ___ h ___ min",
+            "4 min = ___ s"
+          ],
+          "spalten": 2,
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Noch einmal – mit neuen Zahlen. Schaffst du es ohne Hilfe?"
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "2 h = ___ min",
+            "1 h 20 min = ___ min",
+            "150 min = ___ h ___ min",
+            "4 min = ___ s",
+            "2 h = ___ min",
+            "1 h 35 min = ___ min",
+            "165 min = ___ h ___ min",
+            "2 min = ___ s"
+          ],
+          "spalten": 2,
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 5,
+          "label": "Platz für Nebenrechnungen"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen üben: Längen und Gewichte umrechnen, Zeitspannen berechnen, Uhrzeiten lesen. Dieses Blatt: „Stunden und Minuten“.",
+        "ablauf": [
+          "Merkkasten „So geht’s“ gemeinsam lesen und das Beispiel an der Tafel vorrechnen.",
+          "Reihe 1 allein oder zu zweit. Wer nicht weiterkommt, schaut in den Merkkasten.",
+          "Reihe 2 ohne Hilfe. Danach selbst mit der Lösung vergleichen.",
+          "Mehr Übung: Im Spiel „Annexe Junglinster“ am eigenen Platz dasselbe Blatt mit immer neuen Zahlen."
+        ],
+        "hintergrund": "Vorläufige Einteilung des Mathe-Trainings in sechs Module; sie wird an die offiziellen Modulbeschreibungen angepasst, sobald diese vorliegen. Kurze Erklärung, ein Beispiel, viele gleichartige Aufgaben: Wiederholung mit kleinen Schritten gibt Sicherheit. Im Spiel erscheint bei einer falschen Antwort ein Tipp; auf Papier übernimmt das die Lehrperson.",
+        "differenzierung": {
+          "leichter": "Nur Reihe 1; das Beispiel daneben abschreiben lassen.",
+          "schwerer": "Eigene Aufgaben in derselben Art erfinden und tauschen."
+        },
+        "loesungen": [
+          "1) a) 240 · b) 135 · c) 2 | 40 · d) 240 · e) 180 · f) 140 · g) 4 | 30 · h) 240",
+          "2) a) 120 · b) 80 · c) 2 | 30 · d) 240 · e) 120 · f) 95 · g) 2 | 45 · h) 120"
+        ]
+      }
+    },
+    "fr": {
+      "titel": "Heures et minutes",
+      "untertitel": "Entraînement maths module 5 « Mesures et temps » – aussi dans le jeu Annexe Junglinster",
+      "bausteine": [
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Comment faire",
+              "text": "1 heure = 60 minutes. 1 minute = 60 secondes.",
+              "punkte": [
+                "Une demi-heure = 30 min",
+                "Un quart d’heure = 15 min",
+                "Trois quarts d’heure = 45 min"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Exemple",
+              "text": "2 h 15 min = 120 + 15 = 135 min"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Calcule. Écris le résultat sur la ligne."
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "4 h = ___ min",
+            "2 h 15 min = ___ min",
+            "160 min = ___ h ___ min",
+            "4 min = ___ s",
+            "3 h = ___ min",
+            "2 h 20 min = ___ min",
+            "270 min = ___ h ___ min",
+            "4 min = ___ s"
+          ],
+          "spalten": 2,
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Encore une fois – avec de nouveaux nombres. Tu y arrives sans aide ?"
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "2 h = ___ min",
+            "1 h 20 min = ___ min",
+            "150 min = ___ h ___ min",
+            "4 min = ___ s",
+            "2 h = ___ min",
+            "1 h 35 min = ___ min",
+            "165 min = ___ h ___ min",
+            "2 min = ___ s"
+          ],
+          "spalten": 2,
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 5,
+          "label": "Place pour les calculs"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes s’entraînent : convertir longueurs et masses, calculer des durées, lire l’heure. Cette fiche : « Heures et minutes ».",
+        "ablauf": [
+          "Lire ensemble l’encadré « Comment faire » et calculer l’exemple au tableau.",
+          "Série 1 seul ou à deux. En cas de blocage, regarder l’encadré.",
+          "Série 2 sans aide. Ensuite, comparer soi-même avec la solution.",
+          "Pour s’entraîner davantage : dans le jeu « Annexe Junglinster », la même fiche à sa place, avec toujours de nouveaux nombres."
+        ],
+        "hintergrund": "Répartition provisoire de l’entraînement en six modules ; elle sera adaptée aux descriptifs officiels des modules dès qu’ils seront disponibles. Une courte explication, un exemple, beaucoup d’exercices du même type : répéter à petits pas donne de l’assurance. Dans le jeu, une astuce apparaît après une mauvaise réponse ; sur papier, c’est l’enseignant qui prend ce rôle.",
+        "differenzierung": {
+          "leichter": "Seulement la série 1 ; recopier l’exemple à côté.",
+          "schwerer": "Inventer ses propres exercices du même type et les échanger."
+        },
+        "loesungen": [
+          "1) a) 240 · b) 135 · c) 2 | 40 · d) 240 · e) 180 · f) 140 · g) 4 | 30 · h) 240",
+          "2) a) 120 · b) 80 · c) 2 | 30 · d) 240 · e) 120 · f) 95 · g) 2 | 45 · h) 120"
+        ]
+      }
+    }
+  },
+  {
+    "id": "annexe-mathe-m6-brueche",
+    "bereich": "mathe",
+    "thema": "brueche",
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "20–30 Min.",
+    "eldib": [],
+    "schlagworte": [
+      "Annexe Junglinster",
+      "Mathe-Training",
+      "Modul 6",
+      "Brüche, Prozent, Fläche",
+      "Bruchteile von Mengen"
+    ],
+    "bild": "icon:pizza",
+    "de": {
+      "titel": "Bruchteile von Mengen",
+      "untertitel": "Mathe-Training Modul 6 „Brüche, Prozent, Fläche“ – auch im Spiel Annexe Junglinster",
+      "bausteine": [
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "So geht’s",
+              "text": "Ein Viertel von 20 heißt: 20 in 4 gleiche Teile.",
+              "punkte": [
+                "Nenner (unten): in so viele Teile teilen",
+                "Zähler (oben): so viele Teile nehmen"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Beispiel",
+              "text": "3/4 von 20 → 20 : 4 = 5 → 3 · 5 = 15"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Rechne. Schreib die Lösung auf die Linie."
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "#1/2# von 22 = ___",
+            "#1/3# von 18 = ___",
+            "#1/4# von 20 = ___",
+            "#1/5# von 55 = ___",
+            "#1/10# von 100 = ___",
+            "#1/2# von 4 = ___",
+            "#1/3# von 18 = ___",
+            "#2/4# von 40 = ___",
+            "#2/5# von 40 = ___",
+            "#8/10# von 50 = ___"
+          ],
+          "spalten": 3,
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Noch einmal – mit neuen Zahlen. Schaffst du es ohne Hilfe?"
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "#1/2# von 12 = ___",
+            "#1/3# von 12 = ___",
+            "#1/5# von 60 = ___",
+            "#1/10# von 80 = ___",
+            "#1/2# von 6 = ___",
+            "#1/3# von 15 = ___",
+            "#3/5# von 10 = ___",
+            "#1/10# von 80 = ___"
+          ],
+          "spalten": 3,
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 5,
+          "label": "Platz für Nebenrechnungen"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen üben: Halbe, Viertel, Drittel von Mengen, Einfache Prozente (10 %, 25 %, 50 %), Umfang und Fläche vom Rechteck. Dieses Blatt: „Bruchteile von Mengen“.",
+        "ablauf": [
+          "Merkkasten „So geht’s“ gemeinsam lesen und das Beispiel an der Tafel vorrechnen.",
+          "Reihe 1 allein oder zu zweit. Wer nicht weiterkommt, schaut in den Merkkasten.",
+          "Reihe 2 ohne Hilfe. Danach selbst mit der Lösung vergleichen.",
+          "Mehr Übung: Im Spiel „Annexe Junglinster“ am eigenen Platz dasselbe Blatt mit immer neuen Zahlen."
+        ],
+        "hintergrund": "Vorläufige Einteilung des Mathe-Trainings in sechs Module; sie wird an die offiziellen Modulbeschreibungen angepasst, sobald diese vorliegen. Kurze Erklärung, ein Beispiel, viele gleichartige Aufgaben: Wiederholung mit kleinen Schritten gibt Sicherheit. Im Spiel erscheint bei einer falschen Antwort ein Tipp; auf Papier übernimmt das die Lehrperson.",
+        "differenzierung": {
+          "leichter": "Nur Reihe 1; das Beispiel daneben abschreiben lassen.",
+          "schwerer": "Eigene Aufgaben in derselben Art erfinden und tauschen."
+        },
+        "loesungen": [
+          "1) a) 11 · b) 6 · c) 5 · d) 11 · e) 10 · f) 2 · g) 6 · h) 20 · i) 16 · j) 40",
+          "2) a) 6 · b) 4 · c) 12 · d) 8 · e) 3 · f) 5 · g) 6 · h) 8"
+        ]
+      }
+    },
+    "fr": {
+      "titel": "Fraction d’une quantité",
+      "untertitel": "Entraînement maths module 6 « Fractions, pourcentages, aire » – aussi dans le jeu Annexe Junglinster",
+      "bausteine": [
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Comment faire",
+              "text": "Un quart de 20, c’est 20 en 4 parts égales.",
+              "punkte": [
+                "Dénominateur (en bas) : en combien de parts on partage",
+                "Numérateur (en haut) : combien de parts on prend"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Exemple",
+              "text": "3/4 de 20 → 20 : 4 = 5 → 3 × 5 = 15"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Calcule. Écris le résultat sur la ligne."
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "#1/2# de 22 = ___",
+            "#1/3# de 18 = ___",
+            "#1/4# de 20 = ___",
+            "#1/5# de 55 = ___",
+            "#1/10# de 100 = ___",
+            "#1/2# de 4 = ___",
+            "#1/3# de 18 = ___",
+            "#2/4# de 40 = ___",
+            "#2/5# de 40 = ___",
+            "#8/10# de 50 = ___"
+          ],
+          "spalten": 3,
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Encore une fois – avec de nouveaux nombres. Tu y arrives sans aide ?"
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "#1/2# de 12 = ___",
+            "#1/3# de 12 = ___",
+            "#1/5# de 60 = ___",
+            "#1/10# de 80 = ___",
+            "#1/2# de 6 = ___",
+            "#1/3# de 15 = ___",
+            "#3/5# de 10 = ___",
+            "#1/10# de 80 = ___"
+          ],
+          "spalten": 3,
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 5,
+          "label": "Place pour les calculs"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes s’entraînent : la moitié, le quart, le tiers d’une quantité, pourcentages simples (10 %, 25 %, 50 %), périmètre et aire du rectangle. Cette fiche : « Fraction d’une quantité ».",
+        "ablauf": [
+          "Lire ensemble l’encadré « Comment faire » et calculer l’exemple au tableau.",
+          "Série 1 seul ou à deux. En cas de blocage, regarder l’encadré.",
+          "Série 2 sans aide. Ensuite, comparer soi-même avec la solution.",
+          "Pour s’entraîner davantage : dans le jeu « Annexe Junglinster », la même fiche à sa place, avec toujours de nouveaux nombres."
+        ],
+        "hintergrund": "Répartition provisoire de l’entraînement en six modules ; elle sera adaptée aux descriptifs officiels des modules dès qu’ils seront disponibles. Une courte explication, un exemple, beaucoup d’exercices du même type : répéter à petits pas donne de l’assurance. Dans le jeu, une astuce apparaît après une mauvaise réponse ; sur papier, c’est l’enseignant qui prend ce rôle.",
+        "differenzierung": {
+          "leichter": "Seulement la série 1 ; recopier l’exemple à côté.",
+          "schwerer": "Inventer ses propres exercices du même type et les échanger."
+        },
+        "loesungen": [
+          "1) a) 11 · b) 6 · c) 5 · d) 11 · e) 10 · f) 2 · g) 6 · h) 20 · i) 16 · j) 40",
+          "2) a) 6 · b) 4 · c) 12 · d) 8 · e) 3 · f) 5 · g) 6 · h) 8"
+        ]
+      }
+    }
+  },
+  {
+    "id": "annexe-mathe-m6-prozent",
+    "bereich": "mathe",
+    "thema": "rechnen",
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "20–30 Min.",
+    "eldib": [],
+    "schlagworte": [
+      "Annexe Junglinster",
+      "Mathe-Training",
+      "Modul 6",
+      "Brüche, Prozent, Fläche",
+      "Prozente: 10 %, 25 %, 50 %"
+    ],
+    "bild": "icon:pizza",
+    "de": {
+      "titel": "Prozente: 10 %, 25 %, 50 %",
+      "untertitel": "Mathe-Training Modul 6 „Brüche, Prozent, Fläche“ – auch im Spiel Annexe Junglinster",
+      "bausteine": [
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "So geht’s",
+              "text": "Prozent heißt „von hundert“.",
+              "punkte": [
+                "50 % = die Hälfte",
+                "25 % = ein Viertel",
+                "10 % = durch 10"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Beispiel",
+              "text": "Jacke 60 €, 25 % Rabatt → 60 : 4 = 15 € weniger → 45 €"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Lies genau und rechne. Schreib die Antwort auf die Linie."
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "10 % von 360 € = ___ €",
+            "25 % von 220 € = ___ €",
+            "50 % von 40 € = ___ €",
+            "10 % von 380 € = ___ €",
+            "25 % von 180 € = ___ €",
+            "50 % von 300 € = ___ €",
+            "Preis 200 €, 10 % Rabatt. Neuer Preis: ___ €",
+            "Preis 180 €, 25 % Rabatt. Neuer Preis: ___ €"
+          ],
+          "spalten": 1,
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Noch einmal – mit neuen Zahlen. Schaffst du es ohne Hilfe?"
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "10 % von 180 € = ___ €",
+            "25 % von 140 € = ___ €",
+            "50 % von 360 € = ___ €",
+            "10 % von 400 € = ___ €",
+            "25 % von 120 € = ___ €",
+            "50 % von 240 € = ___ €",
+            "Preis 260 €, 10 % Rabatt. Neuer Preis: ___ €",
+            "Preis 40 €, 25 % Rabatt. Neuer Preis: ___ €"
+          ],
+          "spalten": 1,
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 5,
+          "label": "Platz für Nebenrechnungen"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen üben: Halbe, Viertel, Drittel von Mengen, Einfache Prozente (10 %, 25 %, 50 %), Umfang und Fläche vom Rechteck. Dieses Blatt: „Prozente: 10 %, 25 %, 50 %“.",
+        "ablauf": [
+          "Merkkasten „So geht’s“ gemeinsam lesen und das Beispiel an der Tafel vorrechnen.",
+          "Reihe 1 allein oder zu zweit. Wer nicht weiterkommt, schaut in den Merkkasten.",
+          "Reihe 2 ohne Hilfe. Danach selbst mit der Lösung vergleichen.",
+          "Mehr Übung: Im Spiel „Annexe Junglinster“ am eigenen Platz dasselbe Blatt mit immer neuen Zahlen."
+        ],
+        "hintergrund": "Vorläufige Einteilung des Mathe-Trainings in sechs Module; sie wird an die offiziellen Modulbeschreibungen angepasst, sobald diese vorliegen. Kurze Erklärung, ein Beispiel, viele gleichartige Aufgaben: Wiederholung mit kleinen Schritten gibt Sicherheit. Im Spiel erscheint bei einer falschen Antwort ein Tipp; auf Papier übernimmt das die Lehrperson.",
+        "differenzierung": {
+          "leichter": "Nur Reihe 1; das Beispiel daneben abschreiben lassen.",
+          "schwerer": "Eigene Aufgaben in derselben Art erfinden und tauschen."
+        },
+        "loesungen": [
+          "1) a) 36 · b) 55 · c) 20 · d) 38 · e) 45 · f) 150 · g) 180 · h) 135",
+          "2) a) 18 · b) 35 · c) 180 · d) 40 · e) 30 · f) 120 · g) 234 · h) 30"
+        ]
+      }
+    },
+    "fr": {
+      "titel": "Pourcentages : 10 %, 25 %, 50 %",
+      "untertitel": "Entraînement maths module 6 « Fractions, pourcentages, aire » – aussi dans le jeu Annexe Junglinster",
+      "bausteine": [
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Comment faire",
+              "text": "Pour cent veut dire « sur cent ».",
+              "punkte": [
+                "50 % = la moitié",
+                "25 % = un quart",
+                "10 % = divisé par 10"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Exemple",
+              "text": "Veste 60 €, 25 % de réduction → 60 : 4 = 15 € de moins → 45 €"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Lis bien et calcule. Écris la réponse sur la ligne."
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "10 % de 360 € = ___ €",
+            "25 % de 220 € = ___ €",
+            "50 % de 40 € = ___ €",
+            "10 % de 380 € = ___ €",
+            "25 % de 180 € = ___ €",
+            "50 % de 300 € = ___ €",
+            "Prix 200 €, 10 % de réduction. Nouveau prix : ___ €",
+            "Prix 180 €, 25 % de réduction. Nouveau prix : ___ €"
+          ],
+          "spalten": 1,
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Encore une fois – avec de nouveaux nombres. Tu y arrives sans aide ?"
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "10 % de 180 € = ___ €",
+            "25 % de 140 € = ___ €",
+            "50 % de 360 € = ___ €",
+            "10 % de 400 € = ___ €",
+            "25 % de 120 € = ___ €",
+            "50 % de 240 € = ___ €",
+            "Prix 260 €, 10 % de réduction. Nouveau prix : ___ €",
+            "Prix 40 €, 25 % de réduction. Nouveau prix : ___ €"
+          ],
+          "spalten": 1,
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 5,
+          "label": "Place pour les calculs"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes s’entraînent : la moitié, le quart, le tiers d’une quantité, pourcentages simples (10 %, 25 %, 50 %), périmètre et aire du rectangle. Cette fiche : « Pourcentages : 10 %, 25 %, 50 % ».",
+        "ablauf": [
+          "Lire ensemble l’encadré « Comment faire » et calculer l’exemple au tableau.",
+          "Série 1 seul ou à deux. En cas de blocage, regarder l’encadré.",
+          "Série 2 sans aide. Ensuite, comparer soi-même avec la solution.",
+          "Pour s’entraîner davantage : dans le jeu « Annexe Junglinster », la même fiche à sa place, avec toujours de nouveaux nombres."
+        ],
+        "hintergrund": "Répartition provisoire de l’entraînement en six modules ; elle sera adaptée aux descriptifs officiels des modules dès qu’ils seront disponibles. Une courte explication, un exemple, beaucoup d’exercices du même type : répéter à petits pas donne de l’assurance. Dans le jeu, une astuce apparaît après une mauvaise réponse ; sur papier, c’est l’enseignant qui prend ce rôle.",
+        "differenzierung": {
+          "leichter": "Seulement la série 1 ; recopier l’exemple à côté.",
+          "schwerer": "Inventer ses propres exercices du même type et les échanger."
+        },
+        "loesungen": [
+          "1) a) 36 · b) 55 · c) 20 · d) 38 · e) 45 · f) 150 · g) 180 · h) 135",
+          "2) a) 18 · b) 35 · c) 180 · d) 40 · e) 30 · f) 120 · g) 234 · h) 30"
+        ]
+      }
+    }
+  },
+  {
+    "id": "annexe-mathe-m6-flaeche",
+    "bereich": "mathe",
+    "thema": "geometrie",
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln"
+    ],
+    "dauer": "20–30 Min.",
+    "eldib": [],
+    "schlagworte": [
+      "Annexe Junglinster",
+      "Mathe-Training",
+      "Modul 6",
+      "Brüche, Prozent, Fläche",
+      "Umfang und Fläche (Rechteck)"
+    ],
+    "bild": "icon:pizza",
+    "de": {
+      "titel": "Umfang und Fläche (Rechteck)",
+      "untertitel": "Mathe-Training Modul 6 „Brüche, Prozent, Fläche“ – auch im Spiel Annexe Junglinster",
+      "bausteine": [
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "So geht’s",
+              "text": "Umfang = einmal rundherum. Fläche = wie viele Quadrate passen hinein.",
+              "punkte": [
+                "Umfang = 2 · Länge + 2 · Breite",
+                "Fläche = Länge · Breite",
+                "Fläche hat „hoch 2“: m²"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Beispiel",
+              "text": "Zimmer 5 m × 4 m → Umfang 18 m · Fläche 20 m²"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Rechne. Schreib die Lösung auf die Linie."
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "Rechteck 11 m × 6 m: Umfang = ___ m",
+            "Rechteck 10 m × 9 m: Fläche = ___ m²",
+            "Rechteck 3 m × 2 m: Umfang = ___ m",
+            "Rechteck 11 m × 4 m: Fläche = ___ m²",
+            "Rechteck 7 m × 5 m: Umfang = ___ m",
+            "Rechteck 9 m × 8 m: Fläche = ___ m²",
+            "Rechteck 8 m × 6 m: Umfang = ___ m",
+            "Rechteck 10 m × 3 m: Fläche = ___ m²"
+          ],
+          "spalten": 2,
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Noch einmal – mit neuen Zahlen. Schaffst du es ohne Hilfe?"
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "Rechteck 7 m × 4 m: Umfang = ___ m",
+            "Rechteck 8 m × 2 m: Fläche = ___ m²",
+            "Rechteck 12 m × 4 m: Umfang = ___ m",
+            "Rechteck 3 m × 3 m: Fläche = ___ m²",
+            "Rechteck 6 m × 4 m: Umfang = ___ m",
+            "Rechteck 8 m × 2 m: Fläche = ___ m²",
+            "Rechteck 12 m × 9 m: Umfang = ___ m",
+            "Rechteck 3 m × 3 m: Fläche = ___ m²"
+          ],
+          "spalten": 2,
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 5,
+          "label": "Platz für Nebenrechnungen"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen üben: Halbe, Viertel, Drittel von Mengen, Einfache Prozente (10 %, 25 %, 50 %), Umfang und Fläche vom Rechteck. Dieses Blatt: „Umfang und Fläche (Rechteck)“.",
+        "ablauf": [
+          "Merkkasten „So geht’s“ gemeinsam lesen und das Beispiel an der Tafel vorrechnen.",
+          "Reihe 1 allein oder zu zweit. Wer nicht weiterkommt, schaut in den Merkkasten.",
+          "Reihe 2 ohne Hilfe. Danach selbst mit der Lösung vergleichen.",
+          "Mehr Übung: Im Spiel „Annexe Junglinster“ am eigenen Platz dasselbe Blatt mit immer neuen Zahlen."
+        ],
+        "hintergrund": "Vorläufige Einteilung des Mathe-Trainings in sechs Module; sie wird an die offiziellen Modulbeschreibungen angepasst, sobald diese vorliegen. Kurze Erklärung, ein Beispiel, viele gleichartige Aufgaben: Wiederholung mit kleinen Schritten gibt Sicherheit. Im Spiel erscheint bei einer falschen Antwort ein Tipp; auf Papier übernimmt das die Lehrperson.",
+        "differenzierung": {
+          "leichter": "Nur Reihe 1; das Beispiel daneben abschreiben lassen.",
+          "schwerer": "Eigene Aufgaben in derselben Art erfinden und tauschen."
+        },
+        "loesungen": [
+          "1) a) 34 · b) 90 · c) 10 · d) 44 · e) 24 · f) 72 · g) 28 · h) 30",
+          "2) a) 22 · b) 16 · c) 32 · d) 9 · e) 20 · f) 16 · g) 42 · h) 9"
+        ]
+      }
+    },
+    "fr": {
+      "titel": "Périmètre et aire (rectangle)",
+      "untertitel": "Entraînement maths module 6 « Fractions, pourcentages, aire » – aussi dans le jeu Annexe Junglinster",
+      "bausteine": [
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Comment faire",
+              "text": "Périmètre = faire le tour une fois. Aire = combien de carrés entrent dedans.",
+              "punkte": [
+                "Périmètre = 2 × longueur + 2 × largeur",
+                "Aire = longueur × largeur",
+                "L’aire a un « au carré » : m²"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "tipp",
+              "titel": "Exemple",
+              "text": "Chambre 5 m × 4 m → périmètre 18 m · aire 20 m²"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Calcule. Écris le résultat sur la ligne."
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "Rectangle 11 m × 6 m : périmètre = ___ m",
+            "Rectangle 10 m × 9 m : aire = ___ m²",
+            "Rectangle 3 m × 2 m : périmètre = ___ m",
+            "Rectangle 11 m × 4 m : aire = ___ m²",
+            "Rectangle 7 m × 5 m : périmètre = ___ m",
+            "Rectangle 9 m × 8 m : aire = ___ m²",
+            "Rectangle 8 m × 6 m : périmètre = ___ m",
+            "Rectangle 10 m × 3 m : aire = ___ m²"
+          ],
+          "spalten": 2,
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Encore une fois – avec de nouveaux nombres. Tu y arrives sans aide ?"
+        },
+        {
+          "art": "paeckchen",
+          "items": [
+            "Rectangle 7 m × 4 m : périmètre = ___ m",
+            "Rectangle 8 m × 2 m : aire = ___ m²",
+            "Rectangle 12 m × 4 m : périmètre = ___ m",
+            "Rectangle 3 m × 3 m : aire = ___ m²",
+            "Rectangle 6 m × 4 m : périmètre = ___ m",
+            "Rectangle 8 m × 2 m : aire = ___ m²",
+            "Rectangle 12 m × 9 m : périmètre = ___ m",
+            "Rectangle 3 m × 3 m : aire = ___ m²"
+          ],
+          "spalten": 2,
+          "buchstaben": true
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 5,
+          "label": "Place pour les calculs"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes s’entraînent : la moitié, le quart, le tiers d’une quantité, pourcentages simples (10 %, 25 %, 50 %), périmètre et aire du rectangle. Cette fiche : « Périmètre et aire (rectangle) ».",
+        "ablauf": [
+          "Lire ensemble l’encadré « Comment faire » et calculer l’exemple au tableau.",
+          "Série 1 seul ou à deux. En cas de blocage, regarder l’encadré.",
+          "Série 2 sans aide. Ensuite, comparer soi-même avec la solution.",
+          "Pour s’entraîner davantage : dans le jeu « Annexe Junglinster », la même fiche à sa place, avec toujours de nouveaux nombres."
+        ],
+        "hintergrund": "Répartition provisoire de l’entraînement en six modules ; elle sera adaptée aux descriptifs officiels des modules dès qu’ils seront disponibles. Une courte explication, un exemple, beaucoup d’exercices du même type : répéter à petits pas donne de l’assurance. Dans le jeu, une astuce apparaît après une mauvaise réponse ; sur papier, c’est l’enseignant qui prend ce rôle.",
+        "differenzierung": {
+          "leichter": "Seulement la série 1 ; recopier l’exemple à côté.",
+          "schwerer": "Inventer ses propres exercices du même type et les échanger."
+        },
+        "loesungen": [
+          "1) a) 34 · b) 90 · c) 10 · d) 44 · e) 24 · f) 72 · g) 28 · h) 30",
+          "2) a) 22 · b) 16 · c) 32 · d) 9 · e) 20 · f) 16 · g) 42 · h) 9"
+        ]
+      }
+    }
+  }
+]
