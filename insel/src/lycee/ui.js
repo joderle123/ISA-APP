@@ -35,7 +35,9 @@ export function createUI({ root, input, speech }) {
   let raumT = 0;
   ui.raum = (name) => { raum.textContent = name; raum.classList.remove('an'); void raum.offsetWidth; raum.classList.add('an'); clearTimeout(raumT); raumT = setTimeout(() => raum.classList.remove('an'), 2600); };
   ui.uhr = (h, tag) => { const hh = Math.floor(h), mm = Math.floor((h - hh) * 60); uhr.textContent = (tag ? tag.slice(0, 2) + ' ' : '') + String(hh).padStart(2, '0') + ':' + String(mm).padStart(2, '0'); };
-  ui.hinweis = (t) => { if (!t) { hinweis.hidden = true; return; } hinweis.hidden = false; hinweis.innerHTML = '<kbd>E</kbd>' + esc(t); };
+  // Tätigkeitswort für den runden Knopf (Finger): letztes Wort auf „-en“ („Spind öffnen“ → „Öffnen“), sonst das erste
+  const verb = (t) => { const w = String(t).replace(/\(.*?\)/g, '').trim().split(/\s+/); const v = [...w].reverse().find((x) => /en$/.test(x)) || w[0] || 'Los'; return v.charAt(0).toUpperCase() + v.slice(1); };
+  ui.hinweis = (t) => { if (!t) { hinweis.hidden = true; akt.textContent = 'Los'; akt.classList.remove('ly-akt-wort'); return; } hinweis.hidden = false; hinweis.innerHTML = '<kbd>E</kbd>' + esc(t); akt.textContent = verb(t); akt.classList.add('ly-akt-wort'); };
   hinweis.addEventListener('click', () => ui.onAktion && ui.onAktion());
   ui.toast = (t, art = '') => {
     const x = el('div', 'ly-toast ' + art, t); toastBox.appendChild(x);
@@ -43,6 +45,63 @@ export function createUI({ root, input, speech }) {
   };
   ui.staerke = (s) => ui.toast('<b>Stärke: ' + esc(s.name) + '</b><span>' + esc(s.text) + '</span>', 'ly-t-staerke');
   ui.herz = (name, n) => ui.toast((n > 0 ? '♥ ' : '') + esc(name) + (n > 0 ? ' mag dich ein bisschen mehr' : ' ist etwas verstimmt'), n > 0 ? 'ly-t-herz' : 'ly-t-kalt');
+
+  // ---------- Einstellungen (nur auf diesem Gerät): Textgröße, Vorlesen, weniger Bewegung, Linkshänder, ruhig, Lautstärke ----------
+  const EINST = 'lycee.einstellungen';
+  const STANDARD = { text: 'normal', vorlesen: false, bewegung: false, links: false, ruhig: false, laut: 0.8, musik: 0.7 };
+  let einst = { ...STANDARD };
+  try { einst = { ...STANDARD, ...JSON.parse(localStorage.getItem(EINST) || '{}') }; } catch (e) { /* egal */ }
+  function wendeEinst() {
+    root.classList.toggle('ly-text-gross', einst.text === 'gross');
+    root.classList.toggle('ly-text-sehrgross', einst.text === 'sehrgross');
+    root.classList.toggle('ly-wenig-bewegung', !!einst.bewegung);
+    root.classList.toggle('ly-linkshaendig', !!einst.links);
+    ui.autoVorlesen = !!einst.vorlesen; ui.wenigBewegung = !!einst.bewegung; ui.ruhig = !!einst.ruhig;
+    if (input && input.state) input.state.linkshaendig = !!einst.links;
+    if (ui.onEinstellungen) ui.onEinstellungen(einst);
+  }
+  ui.einstellungen = () => einst;
+  ui.wendeEinst = wendeEinst;
+  function einstSpeichern() { try { localStorage.setItem(EINST, JSON.stringify(einst)); } catch (e) { /* privat */ } wendeEinst(); }
+  const einstPanel = (zurueck) => {
+    const an = (b) => (b ? 'an' : 'aus');
+    const k = ebeneAuf('raus', '<div class="ly-t-kicker">Einstellungen</div><h2>So, wie es dir passt.</h2><div class="ly-einst">' +
+      '<div><span>Textgröße</span>' + ['normal', 'gross', 'sehrgross'].map((t) => '<button type="button" data-t="' + t + '" class="' + (einst.text === t ? 'an' : '') + '">' + { normal: 'A', gross: 'A+', sehrgross: 'A++' }[t] + '</button>').join('') + '</div>' +
+      [['vorlesen', 'Texte vorlesen'], ['bewegung', 'Weniger Bewegung'], ['links', 'Linkshändig (Joystick rechts)'], ['ruhig', 'Ruhiger Modus (keine Durchsagen)']].map(([k2, t]) =>
+        '<div><span>' + t + '</span><button type="button" data-b="' + k2 + '" class="' + (einst[k2] ? 'an' : '') + '">' + an(einst[k2]) + '</button></div>').join('') +
+      '<label><span>Lautstärke</span><input type="range" min="0" max="1" step="0.05" data-v="laut" value="' + einst.laut + '"></label>' +
+      '<label><span>Musik</span><input type="range" min="0" max="1" step="0.05" data-v="musik" value="' + einst.musik + '"></label>' +
+      '</div><div class="ly-t-knoepfe"><button type="button" class="ly-btn ly-primaer" data-a="w">Fertig</button><button type="button" class="ly-btn" data-a="code">Sicherungscode</button></div>');
+    k.querySelector('[data-a="code"]').onclick = () => sicherung(() => einstPanel(zurueck));
+    k.querySelectorAll('[data-t]').forEach((b) => { b.onclick = () => { einst.text = b.dataset.t; einstSpeichern(); einstPanel(zurueck); }; });
+    k.querySelectorAll('[data-b]').forEach((b) => { b.onclick = () => { einst[b.dataset.b] = !einst[b.dataset.b]; einstSpeichern(); einstPanel(zurueck); }; });
+    k.querySelectorAll('[data-v]').forEach((r) => { r.addEventListener('keydown', (e) => e.stopPropagation()); r.oninput = () => { einst[r.dataset.v] = +r.value; einstSpeichern(); }; });
+    k.querySelector('[data-a="w"]').onclick = zurueck;
+  };
+
+  // Sicherungscode: der ganze Spielstand als Text (zum Aufschreiben/Kopieren) – und zurück. Nichts geht ins Netz.
+  const sicherung = (zurueck) => {
+    let code = '';
+    try { const roh = localStorage.getItem('lycee.stand') || ''; code = roh ? 'AJ1.' + btoa(unescape(encodeURIComponent(roh))) : ''; } catch (e) { code = ''; }
+    const k = ebeneAuf('raus', '<div class="ly-t-kicker">Sicherungscode</div><h2>Dein Spielstand als Code</h2><p class="ly-leer">Kopieren und gut aufheben. Auf einem anderen Gerät hier einfügen.</p>' +
+      '<textarea class="ly-sagt-text" rows="4" readonly>' + esc(code || '(noch kein Spielstand)') + '</textarea>' +
+      '<p class="ly-leer">Code einfügen (ersetzt den Spielstand auf diesem Gerät):</p><textarea class="ly-sagt-text" rows="3" data-ein></textarea>' +
+      '<div class="ly-t-knoepfe"><button type="button" class="ly-btn" data-a="kopie">Kopieren</button><button type="button" class="ly-btn" data-a="laden">Code einlösen</button><button type="button" class="ly-btn ly-primaer" data-a="w">Zurück</button></div><p class="ly-leer" data-meld></p>');
+    const ein = k.querySelector('[data-ein]'); ein.addEventListener('keydown', (e) => e.stopPropagation());
+    k.querySelector('[data-a="kopie"]').onclick = async (e) => { try { await navigator.clipboard.writeText(code); e.target.textContent = 'Kopiert ✓'; } catch (x) { k.querySelector('textarea').select(); } };
+    k.querySelector('[data-a="laden"]').onclick = () => {
+      const meld = k.querySelector('[data-meld]');
+      try {
+        const t = ein.value.trim(); if (!t.startsWith('AJ1.')) throw new Error('form');
+        const roh = decodeURIComponent(escape(atob(t.slice(4)))); const st = JSON.parse(roh);
+        if (!st || typeof st.name !== 'string' || typeof st.schritt !== 'number') throw new Error('inhalt');
+        try { const alt = localStorage.getItem('lycee.stand'); if (alt) localStorage.setItem('lycee.stand.vorher', alt); } catch (x) { /* egal */ }
+        localStorage.setItem('lycee.stand', roh);
+        meld.textContent = 'Geladen. Das Spiel startet neu …'; setTimeout(() => location.reload(), 900);
+      } catch (e) { meld.textContent = 'Der Code passt nicht. Ganz kopiert?'; }
+    };
+    k.querySelector('[data-a="w"]').onclick = zurueck;
+  };
 
   // ---------- „Sagt keiner so“: Sätze, die falsch klingen, nur auf diesem Gerät merken (ohne Spielernamen) ----------
   const SAGT = 'lycee.sagtkeiner';
@@ -317,12 +376,36 @@ export function createUI({ root, input, speech }) {
       so.map((d) => '<button type="button" data-d="' + esc(d.id) + '"><kbd>♪</kbd><span>' + esc(d.name) + '</span></button>').join('') +
       de.map((d) => '<button type="button" data-d="' + esc(d.id) + '"><kbd style="background:' + esc(d.wert) + '"></kbd><span>' + esc(d.name) + (d.wert === deck ? ' · aufs Brett ✓' : ' · aufs Brett') + '</span></button>').join('') +
       la.map((d) => '<button type="button" data-d="' + esc(d.id) + '"><kbd style="background:' + esc(d.wert) + '"></kbd><span>' + esc(d.name) + (d.wert === lampe ? ' · an ✓' : ' · anmachen') + '</span></button>').join('') +
+      '<button type="button" data-d="spiegel"><kbd>🪞</kbd><span>Spiegel: Aussehen ändern</span></button>' +
       '<button type="button" data-d=""><kbd>✕</kbd><span>Zumachen</span></button></div>' +
       (dinge.length ? '' : '<p class="ly-leer">Turnbeutel, Mathebuch, eine sehr alte Banane. Jetons gibt es fürs Lernen – einlösen bei Kenan, Lina, Ayla und Chiara.</p>') + '</div>');
     const fertig = (d) => { document.removeEventListener('keydown', taste, true); ebeneZu(); ok(d); };
     const taste = (e) => { if (e.code === 'KeyE' || e.code === 'Escape') { e.preventDefault(); e.stopPropagation(); fertig(null); } };
     document.addEventListener('keydown', taste, true);
-    k.querySelectorAll('[data-d]').forEach((b) => { b.onclick = () => fertig(dinge.find((d) => d.id === b.dataset.d) || null); });
+    k.querySelectorAll('[data-d]').forEach((b) => { b.onclick = () => fertig(b.dataset.d === 'spiegel' ? { art: 'spiegel' } : (dinge.find((d) => d.id === b.dataset.d) || null)); });
+  });
+
+  // Editor (Spiegel im Spind): Hautton, Haare, Frisur, Kopfbedeckung (auch Kopftuch), Brille, Oberteil. Rückgabe: Aussehen oder null
+  ui.editor = ({ aussehen }) => new Promise((ok) => {
+    const a = { haut: aussehen.haut, haar: aussehen.haar, frisur: aussehen.frisur || null, kopf: aussehen.kopf || null, kopfFarbe: aussehen.kopfFarbe || null, brille: aussehen.brille || null, oben: aussehen.oben };
+    const HAUT = ['#f6d7bd', '#eec09a', '#d8a982', '#c68e64', '#9b6a45', '#7a4e32', '#5a3826'];
+    const HAAR = ['#1b1410', '#3a2a1c', '#6b4e3a', '#a0522d', '#d9b36a', '#c9c9c9', '#3f5fbf', '#c0392b'];
+    const OBEN = ['#2f4f45', '#d9693f', '#e9c46a', '#4f88c8', '#9b7bc8', '#e85d75', '#3a3f4b', '#f2f2f2'];
+    const FRISUR = [[null, 'Kurz'], ['locken', 'Locken'], ['bob', 'Bob'], ['dutt', 'Dutt'], ['flechtzoepfe', 'Zöpfe'], ['stachel', 'Stacheln'], ['lang', 'Lang'], ['kopftuch', 'Kopftuch']];
+    const KOPF = [[null, 'Nichts'], ['cap', 'Cap'], ['muetze', 'Mütze'], ['stirnband', 'Stirnband']];
+    const farben = (name, liste, wert) => '<div class="ly-ed-reihe"><span>' + name + '</span>' + liste.map((c) => '<button type="button" class="ly-ed-farbe' + (c === wert ? ' an' : '') + '" data-f="' + name + '" data-w="' + c + '" style="background:' + c + '" aria-label="' + name + ' ' + c + '"></button>').join('') + '</div>';
+    const wahl = (name, liste, wert) => '<div class="ly-ed-reihe"><span>' + name + '</span>' + liste.map(([w, t]) => '<button type="button" class="ly-ed-wort' + (w === wert ? ' an' : '') + '" data-f="' + name + '" data-w="' + (w || '') + '">' + t + '</button>').join('') + '</div>';
+    const zeig = () => {
+      const k = ebeneAuf('editor', '<div class="ly-t-kicker">Spiegel</div><h2>So siehst du aus.</h2><div class="ly-ed">' +
+        farben('Haut', HAUT, a.haut) + farben('Haare', HAAR, a.haar) + wahl('Frisur', FRISUR, a.frisur) + wahl('Kopf', KOPF, a.kopf) +
+        wahl('Brille', [[null, 'Keine'], ['#2b2b33', 'Schwarz'], ['#b5651d', 'Horn'], ['#c0392b', 'Rot']], a.brille) + farben('Oberteil', OBEN, a.oben) +
+        '</div><div class="ly-t-knoepfe"><button type="button" class="ly-btn ly-primaer" data-a="ok">Passt so</button><button type="button" class="ly-btn" data-a="nein">Doch nicht</button></div>');
+      const feld = { Haut: 'haut', Haare: 'haar', Frisur: 'frisur', Kopf: 'kopf', Brille: 'brille', Oberteil: 'oben' };
+      k.querySelectorAll('[data-f]').forEach((b) => { b.onclick = () => { a[feld[b.dataset.f]] = b.dataset.w || null; if (a.frisur === 'kopftuch') a.kopf = null; zeig(); }; });
+      k.querySelector('[data-a="ok"]').onclick = () => { ebeneZu(); ok({ ...a, kopfFarbe: a.kopf ? a.oben : null }); };
+      k.querySelector('[data-a="nein"]').onclick = () => { ebeneZu(); ok(null); };
+    };
+    zeig();
   });
 
   // Atmen gegen Aufregung: Kreis wird groß (einatmen, 4 s) und klein (ausatmen, 4 s), drei Mal. Nichts kann schiefgehen.
@@ -626,6 +709,7 @@ export function createUI({ root, input, speech }) {
         '<button type="button" data-w="atem"><kbd>1</kbd><span>Atmen mit dem Kreis</span></button>' +
         '<button type="button" data-w="sinne"><kbd>2</kbd><span>5-4-3-2-1: zurück ins Hier</span></button>' +
         '<button type="button" data-w="zu"><kbd>3</kbd><span>Zurück ins Spiel</span></button>' +
+        '<button type="button" data-w="einst"><kbd>⚙</kbd><span>Einstellungen</span></button>' +
         (sagtListe().length ? '<button type="button" data-w="sagt"><kbd>4</kbd><span>„Sagt keiner so“ – ' + sagtListe().length + ' Sätze</span></button>' : '') + '</div>');
       k.querySelectorAll('[data-w]').forEach((b) => { b.onclick = () => wahl(b.dataset.w); });
     };
@@ -637,6 +721,7 @@ export function createUI({ root, input, speech }) {
     const wahl = async (w) => {
       if (w === 'atem') { await ui.atem(); if (!zu) start(); }
       else if (w === 'sinne') sinne(0);
+      else if (w === 'einst') einstPanel(start);
       else if (w === 'sagt') {
         const l = sagtListe(); const text = l.map((x) => '[' + x.wer + ', ' + x.text + ']').join('\n');
         const k = ebeneAuf('raus', '<div class="ly-t-kicker">Sagt keiner so</div><h2>' + l.length + ' Sätze klingen falsch</h2><p class="ly-leer">Nur auf diesem Gerät. Ohne Namen. Kopieren und an die Lehrperson geben.</p>' +

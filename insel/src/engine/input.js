@@ -147,7 +147,7 @@ export function createInput({ root, events, clock = null }) {
       if (target && target.closest && target.closest(INTERACTIVE)) continue;
       used = true;
       if (!state.enabled) continue;
-      if (stickId === null && t.clientX < w * 0.45) {
+      if (stickId === null && (state.linkshaendig ? t.clientX > w * 0.55 : t.clientX < w * 0.45)) {   // Linkshänder: Joystick rechts
         stickId = t.identifier;
         const js = state.joystick;
         const pad = js.radius + 14;

@@ -279,7 +279,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   let spieler = null;
   async function spielerFigur(i) {
     if (spieler) { scene.remove(spieler.group); }
-    spieler = await ladePerson(veil, FIGUREN[i] || FIGUREN[0]);
+    spieler = await ladePerson(veil, { ...(FIGUREN[i] || FIGUREN[0]), ...((S && S.aussehen) || {}) });   // Aussehen aus dem Spind-Spiegel
     spieler.group.add(fussSchatten()); scene.add(spieler.group); steuerung.figur = spieler;
     spieler.spiele('Idle');
   }
@@ -1210,10 +1210,12 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   if (!new URLSearchParams(location.search).has('test')) {
     let durchsage = 0;
     setInterval(() => {
-      if (!S || imGespraech || !steuerung.frei || document.hidden || Math.random() < 0.5) return;
+      if (!S || imGespraech || ui.ruhig || !steuerung.frei || document.hidden || Math.random() < 0.5) return;
       ui.toast('<b>📢 Durchsage</b><span>' + DURCHSAGEN[durchsage++ % DURCHSAGEN.length] + '</span>');
     }, 140000);
   }
+  ui.onEinstellungen = (e) => { try { audio.setVolume(e.laut); audio.setMusicVolume(e.musik); } catch (x) { /* Ton noch nicht bereit */ } };
+  ui.wendeEinst();
   ui.ohneName = (t) => (S && S.name && S.name.length > 1 ? t.split(S.name).join('{name}') : t);
   ui.onJournal = () => {
     if (!S || imGespraech) return;
@@ -1225,6 +1227,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     const z = [];
     if (S.benSchuld) z.push({ t: 'Ben hat sich geliehen', w: S.benSchuld + ' €' });
     if (S.benZurueck) z.push({ t: 'Ben hat zurückgezahlt', w: S.benZurueck + ' €' });
+    if (S.jetonsGesamt) z.push({ t: 'Jetons (jetzt / verdient)', w: (S.jetons || 0) + ' / ' + S.jetonsGesamt });
     if (S.merke.automat) z.push({ t: 'Münzen im Automaten', w: String(S.merke.automat) });
     if (S.merke.korbRekord || S.merke.freiwurf) z.push({ t: 'Freiwurf-Rekord', w: Math.max(S.merke.korbRekord || 0, S.merke.freiwurf || 0) + ' von 5' });
     return z;
@@ -1435,6 +1438,11 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   async function spindAuf() {
     const dinge = alleDinge().filter((d) => (S.besitz || []).includes(d.id));
     const w = await ui.spind({ dinge, lampe: S.spindLampe || '', deck: S.deck || '', jetons: S.jetons || 0, gesamt: S.jetonsGesamt || 0, lernkarten: (S.lernkarten || []).length });
+    if (w && w.art === 'spiegel') {
+      const neu = await ui.editor({ aussehen: { ...(FIGUREN[S.figur] || FIGUREN[0]), ...(S.aussehen || {}) } });
+      if (neu) { S.aussehen = neu; sichern(); const p = steuerung.pos.clone(), y = spieler.group.rotation.y; await spielerFigur(S.figur); spieler.group.position.copy(p); spieler.group.rotation.y = y; ui.toast('<b>Spiegel</b><span>Passt. Sieht nach dir aus.</span>'); }
+      return;
+    }
     if (w && w.art === 'song') ton(w.wert);
     if (w && w.art === 'deck') { S.deck = w.wert; sichern(); ui.toast('<b>' + esc(w.name) + '</b><span>Ab jetzt dein Brett an der Skate-Ecke.</span>'); }
     if (w && w.art === 'lampe') { S.spindLampe = w.wert; sichern(); }

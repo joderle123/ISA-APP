@@ -352,3 +352,26 @@ kbd { display: inline-block; min-width: 1.5em; padding: 0 .35em; margin-right: .
 .ly-sticker { font-size: 34px; transform: rotate(-6deg); filter: drop-shadow(0 2px 0 #fff) drop-shadow(0 -1px 0 #fff); }
 .ly-sticker:nth-child(2n) { transform: rotate(7deg); }
 .ly-d-optionen button[disabled] { opacity: .5; cursor: default; }
+
+/* Einstellungen */
+.ly-einst { display: flex; flex-direction: column; gap: 10px; margin: 8px 0 14px; }
+.ly-einst > div, .ly-einst > label { display: flex; align-items: center; justify-content: space-between; gap: 10px; font-weight: 700; }
+.ly-einst > div > span, .ly-einst > label > span { flex: 1; }
+.ly-einst button { border: 1px solid var(--rand); background: #fff; border-radius: 999px; padding: 6px 14px; font: inherit; font-weight: 800; cursor: pointer; min-width: 52px; }
+.ly-einst button.an { background: var(--blau); color: #fff; border-color: var(--blau); }
+.ly-einst input[type=range] { flex: 1.2; }
+.ly-text-gross .ly-d-text, .ly-text-gross .ly-d-optionen button, .ly-text-gross .ly-toasts { font-size: 21px; }
+.ly-text-sehrgross .ly-d-text, .ly-text-sehrgross .ly-d-optionen button, .ly-text-sehrgross .ly-toasts { font-size: 24px; }
+.ly-wenig-bewegung *, .ly-wenig-bewegung *::before, .ly-wenig-bewegung *::after { animation-duration: 0.01s !important; transition-duration: 0.01s !important; }
+.ly-akt.ly-akt-wort { font-size: 14px; font-weight: 900; letter-spacing: -.2px; padding: 0 4px; line-height: 1.05; overflow: hidden; text-overflow: ellipsis; }
+.ly-linkshaendig .ly-akt { right: auto; left: max(22px, env(safe-area-inset-left)); }
+
+/* Editor (Spiegel) */
+.ly-ed { display: flex; flex-direction: column; gap: 10px; margin: 6px 0 14px; }
+.ly-ed-reihe { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.ly-ed-reihe > span { width: 72px; font-weight: 800; font-size: 14px; }
+.ly-ed-farbe { width: 34px; height: 34px; border-radius: 50%; border: 3px solid #fff; box-shadow: 0 0 0 1px var(--rand); cursor: pointer; }
+.ly-ed-farbe.an { box-shadow: 0 0 0 3px var(--blau); }
+.ly-ed-wort { border: 1px solid var(--rand); background: #fff; border-radius: 999px; padding: 6px 12px; font: inherit; font-weight: 700; font-size: 14px; cursor: pointer; }
+.ly-ed-wort.an { background: var(--blau); color: #fff; border-color: var(--blau); }
+.ly-d-optionen kbd[style] { width: 22px; height: 22px; min-width: 22px; border-radius: 50%; border: 2px solid #fff; box-shadow: 0 0 0 1px var(--rand); }

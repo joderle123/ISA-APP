@@ -40,10 +40,10 @@ So knüpft eine neue Sitzung an: diese Datei lesen, dann ENTSCHEIDUNGEN.md, dann
   - [~] Klassenchat mit Tippen, Reaktionen, „gelesen von“; Kap. 2 Foto und Kap. 5 Rauswurf im Handy. Offen: Handy als Zentrale (Freundes-Nachrichten, Antworten im Chat)
   - [ ] Gegenlesen: drei Rollen per Subagent, Regel-Skript grün, Durchspielen 1–7 grün
 - [ ] **2 Welt** – Tagesablauf je Figur, Szenen ohne Spielfigur, Körpersprache/Comic-Zeichen, Comic-Look, Licht/Wetter/Herbst, Kamera, Ton
-- [ ] **3 Lernen und Belohnungen** – Hoffmanns Methoden, Stoff in der Welt, Jetons, Einlösen bei Figuren, Spind, Editor, Hilfe-Leiter
+- [~] **3 Lernen und Belohnungen** – erledigt: Jetons fürs Lernen, Einlösen bei Kenan/Lina/Ayla/Chiara, Spind 117 als Ort; offen: Hoffmanns Methoden als Lernform, Stoff in der Welt (Werkstatt messen, Wechselgeld, Fahrplan), Editor (Hauttöne, Kopftuch, Brille), Hilfe-Leiter, Erklären für Noah
 - [ ] **4 Soziales Spiel** – Puls, Vertrauen/Reparatur, Gerüchte-Spur, Zuschauer-Momente, Freundschafts-Bögen, Seitenwechsel, Wiederholen, Klassenfoto, Comic
 - [ ] **5 Minispiele** – Skaten (Wischen, Kombos, Grinds, Duell), Korbball, Tischtennis, Bandprobe, Küche, Werkstatt
-- [ ] **6 Feinschliff** – iPad-Tempo, Touch (Tätigkeitswort statt E, Joystick am Daumen), drei Spielstände mit Version und Sicherungscode, Einstellungen, Wort-Hilfe, BEGLEITKARTEN.md
+- [~] **6 Feinschliff** – erledigt: Einstellungen (Textgröße, Vorlesen aus, weniger Bewegung, Linkshänder, ruhiger Modus, Lautstärke/Musik), Tätigkeitswort auf dem Knopf, Sicherungscode, BEGLEITKARTEN.md; offen: drei Spielstände, Wort-Hilfe, Blips, iPad-Tempo am Gerät
 
 ## Offen / bekannt
 - fps nur im Headless-Browser messbar (Software-Grafik); echtes iPad-Tempo muss auf dem Gerät geprüft werden.

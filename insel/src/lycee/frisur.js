@@ -72,6 +72,13 @@ export function baueFrisur(look = {}, mat) {
   } else if (kopf === 'stirnband' || kopf === 'bandana') {
     g.add(form(new THREE.CylinderGeometry(K.r * 1.19, K.r * 1.19, kopf === 'bandana' ? 0.05 : 0.034, 12, 1, true), tuch, mat, [0, K.y + 0.05, K.z]));
   }
+  // Brille: zwei Ringe und ein Steg vor den Augen
+  if (look.glasses) {
+    const fb = look.glasses === true ? '#2b2b33' : look.glasses;
+    for (const sx of [-1, 1]) { const r = form(new THREE.TorusGeometry(0.028, 0.0055, 6, 14), fb, mat, [sx * 0.04, K.y - 0.012, K.z + 0.104]); g.add(r); }
+    g.add(form(new THREE.BoxGeometry(0.026, 0.006, 0.006), fb, mat, [0, K.y - 0.008, K.z + 0.106]));
+    for (const sx of [-1, 1]) g.add(form(new THREE.BoxGeometry(0.006, 0.006, 0.1), fb, mat, [sx * 0.067, K.y - 0.008, K.z + 0.055]));
+  }
   return g.children.length ? g : null;
 }
 
