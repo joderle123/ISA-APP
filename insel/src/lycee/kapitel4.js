@@ -32,7 +32,7 @@ export const SCHRITTE4 = [
     fertig: { reden: 'noah', gespraech: 'abschreiben' } },
   { id: 'k4_baecker', kap: 4, tag: 'Dienstag', uhr: 10.0, titel: 'Große Pause', ziel: 'Ayla und Noah stehen am Brunnen.', marker: 'ayla',
     start: { teleport: 'eingangHof' },
-    leute: { ayla: [-7, 16.6, 2.4, 'redet'], noah: [-8.6, 16.2, -2.2, 'redet'], ben: [4, 22, 0] },
+    leute: { ayla: [-6.9, 14.0, 2.4, 'redet'], noah: [-8.5, 13.6, -2.2, 'redet'], ben: [4, 22, 0] },
     fertig: { reden: 'ayla', gespraech: 'baecker' } },
   { id: 'k4_skate', kap: 4, tag: 'Dienstag', uhr: 12.6, titel: 'Die Skate-Ecke', ziel: 'Mittagspause. An der Rampe ist was los.', marker: 'kenan',
     start: { teleport: 'eingangHof' },

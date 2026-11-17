@@ -44,7 +44,7 @@ export const ORTE6 = {
 export const SCHRITTE6 = [
   { id: 'k6_tor', kap: 6, tag: 'Montag', uhr: 7.75, titel: 'Montagmorgen', ziel: 'Geh zum Schultor.', marker: 'tor',
     start: { teleport: 'busAnkunft', gespraech: 'k6_intro' },
-    leute: { mila: [-10.4, 16.4, 2.6] },
+    leute: { mila: [-11.7, 14.3, 2.6] },
     fertig: { ort: 'tor', r: 4, gespraech: 'k6_tor' } },
   { id: 'k6_kaya', kap: 6, tag: 'Dienstag', uhr: 7.9, titel: 'Fünf Minuten', ziel: 'Herr Kaya hat geschrieben: „Kurz vorbeikommen?“', marker: 'kaya',
     start: { teleport: 'eingang' },

@@ -1,0 +1,58 @@
+{
+ "tag": "vorher",
+ "qualitaet": "high",
+ "groesse": "1180x820",
+ "startMs": 4769,
+ "dateiMB": 6.97,
+ "blicke": {
+  "hof": {
+   "calls": 954,
+   "dreiecke": 710387,
+   "geometrien": 605,
+   "texturen": 487
+  },
+  "skate": {
+   "calls": 942,
+   "dreiecke": 709221,
+   "geometrien": 605,
+   "texturen": 487
+  },
+  "bus": {
+   "calls": 936,
+   "dreiecke": 706629,
+   "geometrien": 606,
+   "texturen": 487
+  },
+  "gang": {
+   "calls": 965,
+   "dreiecke": 712949,
+   "geometrien": 609,
+   "texturen": 488
+  },
+  "saal": {
+   "calls": 936,
+   "dreiecke": 700079,
+   "geometrien": 609,
+   "texturen": 488
+  },
+  "kantine": {
+   "calls": 971,
+   "dreiecke": 709075,
+   "geometrien": 609,
+   "texturen": 488
+  },
+  "werkstatt": {
+   "calls": 939,
+   "dreiecke": 705111,
+   "geometrien": 609,
+   "texturen": 488
+  },
+  "bibliothek": {
+   "calls": 988,
+   "dreiecke": 709017,
+   "geometrien": 610,
+   "texturen": 488
+  }
+ },
+ "fehler": []
+}

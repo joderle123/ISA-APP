@@ -439,7 +439,7 @@ export function baueWelt({ material, materialInnen }) {
   for (const [x, z] of [[-40, 4], [-40, 14], [-30, 34], [-16, 34], [14, 34], [42, 34], [-26, 2.5], [-14, 2.5], [6, 30], [42, 4]]) P('haus/tree-large', x, z, Math.random() * 6, { h: 7.5 + Math.random() * 2, fest: 0.6 });
   for (const [x, z] of [[-34, 30], [-6, 30], [40, 12], [-44, -6], [68, -4], [-66, -14], [-34, -34], [34, -36]]) P('haus/tree-small', x, z, Math.random() * 6, { h: 4.5, fest: 0.4 });
   for (const [x, z, r] of [[-20, 11, 0], [-14, 11, 0], [-26, 18, Math.PI / 2], [6, 12, 0], [6, 24, 0]]) P('skate/bench', x, z, r, { h: 0.55, fest: true });
-  P('platz/fountain-round-detail', -8, 18, 0, { h: 1.6, fest: 1.6 });
+  P('platz/fountain-round-detail', -8, 18, 0, { h: 1.6, fest: true });   // ganzer Grundriss: nicht ins Wasser laufen
   for (const [x, z] of [[-44, 38], [-30, 38], [30, 38], [44, 38]]) P('platz/hedge-large', x, z, 0, { h: 1.2, fest: true });
   for (const x of [-60, -36, -12, 12, 36, 60]) P('strasse/Streetlight_Single', x, 40.8, Math.PI, { h: 5.5 });
   // ---- Skate-Ecke (Westen des Hofs): Betonfläche, Half-Pipe, Rampe, Rail, Box, Graffiti-Wand ----

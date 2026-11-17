@@ -1,5 +1,6 @@
 // Lycée-Simulator – Start: Ladebalken, dann das Spiel (spiel.js). Eigene Datei dist/lycee.html (build-lycee.mjs).
 import { startLycee } from './spiel.js';
+import { debugWerkzeuge } from './debug.js';
 
 const $ = (id) => document.getElementById(id);
 async function boot() {
@@ -20,3 +21,4 @@ async function boot() {
 // Ton erst nach dem ersten Klick (Browser-Regel)
 document.addEventListener('pointerdown', () => { try { window.LYCEE && window.LYCEE.audio && window.LYCEE.audio.unlock(); } catch (e) { /* egal */ } }, { once: true });
 boot();
+if (new URLSearchParams(location.search).has('debug')) debugWerkzeuge();   // Testwerkzeuge nur mit ?debug

@@ -230,6 +230,76 @@ class TiefePass extends ShaderPass {
 // ---- Abschluss-Pass: Tone-Mapping + sRGB (wie OutputPass), danach Farbkorrektur (dieselbe Formel wie lumoGrade in den
 // Materialien, aber fürs ganze Bild inkl. Sprites/Partikel), weiche S-Kurve (gemalter Kontrast: satte Schatten, klare
 // Lichter, Mitten unverändert), weiche Vignette, Dithering.
+
+// ---- Look-Pass (Annexe, Grafik-Etappe 1 „Look-Probe“): ein Durchgang nach der Farbkorrektur, im Bildraum.
+//   A „comic“:    kräftige Konturen (Kontur-Pass), Farbflächen (Helligkeit in Stufen), Rasterpunkte in den Schatten
+//   B „skizze“:   dünne Linie, Schraffur in den Schatten, Papierkorn und warmer Papierton, gedeckte Farben
+//   C „weich“:    keine Konturen, weiche Toon-Stufen, hellere Farben
+// Werte als Uniforms → Look-Regler im Debug-Modus. Leistung: ein Vollbild-Durchgang, ein Texturzugriff.
+export const LOOKS = {
+  aus: { kontur: 1, konturDicke: 1, stufen: 0, raster: 0, schraffur: 0, papier: 0, korn: 0, saett: 1, hell: 1, weich: 0, ao: 1, pastell: 0 },
+  comic: { kontur: 1, konturDicke: 3, stufen: 3, raster: 4.2, schraffur: 0, papier: 0, korn: 0, saett: 1.3, hell: 1.06, weich: 0.06, ao: 0.6, pastell: 0 },
+  skizze: { kontur: 0.9, konturDicke: 0.8, stufen: 0, raster: 0, schraffur: 4.5, papier: 0.9, korn: 0.1, saett: 0.55, hell: 1.04, weich: 0, ao: 0.5, pastell: 0.05 },
+  weich: { kontur: 0, konturDicke: 1, stufen: 4, raster: 0, schraffur: 0, papier: 0, korn: 0, saett: 1.12, hell: 1.08, weich: 0.9, ao: 0.25, pastell: 0.1 },
+};
+const LOOK_SHADER = {
+  uniforms: {
+    tDiffuse: { value: null }, uStufen: { value: 0 }, uRaster: { value: 0 }, uSchraffur: { value: 0 }, uPapier: { value: 0 },
+    uKorn: { value: 0 }, uSaett: { value: 1 }, uHell: { value: 1 }, uWeich: { value: 0 }, uDpr: { value: 1 }, uPastell: { value: 0 },
+  },
+  vertexShader: /* glsl */`
+    varying vec2 vUv;
+    void main() { vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0); }`,
+  fragmentShader: /* glsl */`
+    uniform sampler2D tDiffuse; uniform float uStufen; uniform float uRaster; uniform float uSchraffur; uniform float uPapier;
+    uniform float uKorn; uniform float uSaett; uniform float uHell; uniform float uWeich; uniform float uDpr; uniform float uPastell;
+    varying vec2 vUv;
+    float hash(vec2 p) { p = fract(p * vec2(123.34, 456.21)); p += dot(p, p + 45.32); return fract(p.x * p.y); }
+    void main() {
+      vec4 c = texture2D(tDiffuse, vUv);
+      vec3 col = c.rgb;
+      float l = dot(col, vec3(0.299, 0.587, 0.114));
+      col = mix(vec3(l), col, uSaett) * uHell;
+      l = dot(col, vec3(0.299, 0.587, 0.114));
+      // Farbflächen: Helligkeit in Stufen, der Farbton bleibt (weich = Übergänge geglättet)
+      if (uStufen > 0.5) {
+        float x = l * uStufen;
+        float f = fract(x);
+        float b = floor(x) + smoothstep(0.5 - 0.5 * uWeich - 0.02, 0.5 + 0.5 * uWeich + 0.02, f);
+        float lq = b / uStufen;
+        col *= clamp(mix(lq, l, 0.25) / max(l, 0.002), 0.0, 2.0);
+        l = dot(col, vec3(0.299, 0.587, 0.114));
+      }
+      vec2 px = gl_FragCoord.xy / uDpr;
+      // Rasterpunkte in den Schatten (45° gedrehtes Punktraster)
+      if (uRaster > 0.0) {
+        vec2 p = mat2(0.7071, -0.7071, 0.7071, 0.7071) * px / uRaster;
+        float d = length(fract(p) - 0.5);
+        float dunkel = 1.0 - smoothstep(0.18, 0.5, l);
+        float r = sqrt(dunkel) * 0.52;
+        float punkt = 1.0 - smoothstep(r - 0.05, r + 0.05, d);
+        col *= 1.0 - punkt * 0.5;
+      }
+      // Schraffur in den Schatten (diagonal, zweite Lage im Tiefschatten), leicht unruhig
+      if (uSchraffur > 0.0) {
+        float wob = (hash(floor(px / 23.0)) - 0.5) * 1.6;
+        float s1 = abs(fract((px.x + px.y + wob) / uSchraffur) - 0.5);
+        float s2 = abs(fract((px.x - px.y - wob) / (uSchraffur * 1.3)) - 0.5);
+        float a1 = (1.0 - smoothstep(0.08, 0.16, s1)) * (1.0 - smoothstep(0.28, 0.5, l));
+        float a2 = (1.0 - smoothstep(0.08, 0.16, s2)) * (1.0 - smoothstep(0.12, 0.3, l));
+        col *= 1.0 - (a1 * 0.45 + a2 * 0.38);
+      }
+      // Papier: warmer Ton und Korn
+      if (uPapier > 0.0) {
+        float g = hash(floor(px / 1.5)) * 0.6 + hash(floor(px / 7.0)) * 0.4;
+        col = mix(col, col * vec3(1.0, 0.955, 0.86) + vec3(0.035, 0.03, 0.02), uPapier);
+        col += (g - 0.5) * uKorn;
+      }
+      col = mix(col, vec3(1.0, 0.97, 0.94), uPastell);
+      gl_FragColor = vec4(clamp(col, 0.0, 1.0), c.a);
+    }`,
+};
+
 const FINAL_SHADER = {
   uniforms: {
     tDiffuse: { value: null }, toneMappingExposure: { value: 1 },
@@ -302,9 +372,24 @@ export function createRenderer({ canvas, quality: qInfo, events }) {
       for (const p of post.composer.passes) if (p.dispose) p.dispose();
       post.composer.renderTarget1.dispose(); post.composer.renderTarget2.dispose();
     }
-    post.composer = null; post.outline = null; post.tiefe = null; post.bloom = null; post.final = null; post.fxaa = null;
+    post.composer = null; post.outline = null; post.tiefe = null; post.bloom = null; post.final = null; post.look = null; post.fxaa = null;
     post.active = false;
     if (post.veil) post.veil.uniforms.uLumoPost.value = 0;
+  }
+  // Look (Annexe): aus der Adresse (?look=comic|skizze|weich) oder per rr.setLook(); Werte einzeln per rr.lookWerte
+  let aktLook = (new URLSearchParams(location.search).get('look') || 'aus');
+  if (!LOOKS[aktLook]) aktLook = 'aus';
+  const lookWerte = { ...LOOKS[aktLook] };
+  function wendeLook() {
+    const w = lookWerte;
+    if (post.outline) { post.outline.uniforms.uStrength.value = q.outline > 0 ? w.kontur : 0; post.outline.uniforms.uThick.value = outlinePx(q, renderer.getPixelRatio()) * w.konturDicke; post.outline.enabled = q.outline > 0 && w.kontur > 0; }
+    if (post.look) {
+      const u = post.look.uniforms;
+      u.uStufen.value = w.stufen; u.uRaster.value = w.raster; u.uSchraffur.value = w.schraffur; u.uPapier.value = w.papier;
+      u.uKorn.value = w.korn; u.uSaett.value = w.saett; u.uHell.value = w.hell; u.uWeich.value = w.weich; u.uPastell.value = w.pastell || 0;
+      if (post.tiefe) post.tiefe.uniforms.uAO.value = (q.ao || 0) * (w.ao == null ? 1 : w.ao);
+      post.look.enabled = aktLook !== 'aus' || Object.keys(LOOKS.aus).some((k) => w[k] !== LOOKS.aus[k]);
+    }
   }
   function buildPost() {
     disposePost();
@@ -348,10 +433,15 @@ export function createRenderer({ canvas, quality: qInfo, events }) {
     final.material.toneMapped = false;
     outline.material.toneMapped = false;
     composer.addPass(final);
+    const look = new ShaderPass(LOOK_SHADER);
+    look.material.toneMapped = false;
+    look.enabled = aktLook !== 'aus';
+    composer.addPass(look);
     const fxaa = new FXAAPass();
     composer.addPass(fxaa);
     composer.setSize(size.w, size.h);
-    Object.assign(post, { composer, outline, tiefe, bloom, final, fxaa, active: true });
+    Object.assign(post, { composer, outline, tiefe, bloom, final, look, fxaa, active: true });
+    wendeLook(); look.uniforms.uDpr.value = dpr;
     if (post.veil) post.veil.uniforms.uLumoPost.value = 1;
     return composer;
   }
@@ -372,6 +462,8 @@ export function createRenderer({ canvas, quality: qInfo, events }) {
       post.composer.setPixelRatio(dpr);
       post.composer.setSize(m.w, m.h);
       if (post.outline) post.outline.uniforms.uThick.value = outlinePx(q, dpr);
+      if (post.look) post.look.uniforms.uDpr.value = dpr;
+      wendeLook();
     }
     resizeCbs.forEach((cb) => cb(size));
     events && events.emit('resize', size);
@@ -446,6 +538,11 @@ export function createRenderer({ canvas, quality: qInfo, events }) {
 
   const r = {
     renderer,
+    // Look (Annexe): 'aus' | 'comic' | 'skizze' | 'weich'; lookWerte einzeln ändern, dann wendeLook()
+    setLook(name) { if (!LOOKS[name]) return; aktLook = name; Object.assign(lookWerte, LOOKS[name]); wendeLook(); },
+    get look() { return aktLook; },
+    lookWerte,
+    wendeLook,
     // Schärfentiefe für Szenen: amount 0..1, focus = Abstand der scharfen Ebene in Metern (0 = aus)
     setDof(amount = 0, focus = 6) { dof.amount = Math.max(0, Math.min(1, amount)); if (focus > 0) dof.focus = focus; },
     get dof() { return dof; },

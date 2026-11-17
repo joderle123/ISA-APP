@@ -17,6 +17,7 @@ import { ladePerson, namensschild, SITZ } from './figuren.js';
 import { fussSchatten } from './texturen.js';
 import { createInteraktionen } from './interaktion.js';
 import { FAEDEN } from './faeden.js';
+import { PLAUDERN } from './stimmen.js';
 import { DEUTSCH, deutschBlatt } from './deutsch.js';
 import { LEKTIONEN } from './lektionen.js';
 import { CHARAKTER, GLEICHALTRIGE, GRUSS, GRUENDE, nachricht, profil, stufe } from './freunde.js';
@@ -45,28 +46,7 @@ const FIGUREN = [
   { titel: 'Figur 4', modell: 'frauen', stil: 'Adventurer', haut: '#f3d2b5', haar: '#8a5a3a', oben: '#4f88c8', unten: '#3a3f4b', schuhe: '#6b4e3a' },
 ];
 
-// Kleine Sätze, wenn man jemanden außerhalb der Geschichte anspricht
-const PLAUDERN = {
-  noah: ['Sorry. Ich steh im Weg, oder?', 'Hast du schon die neue Gruppe gesehen? … Egal.', 'Ich bin nicht mehr „der Neue“, oder?'],
-  mila: ['41 Sekunden. Mein Rekord. Mit dem Würfel.', 'Das stimmt nicht ganz. Aber egal.', '(Sie dreht weiter an ihrem Würfel.)'],
-  lina: ['(flüstert) Jo hat Senf am Kinn. Seit der Pause.', '(zeichnet weiter)', '…'],
-  jo: ['Was?', 'Ich hab nix gemacht. Diesmal echt.', 'Samstag arbeite ich. Bin also müde. Lass mich.'],
-  ben: ['Hast du zwei Euro? Kriegst du morgen.', 'Korbball in der Pause?', 'Keks hat heute mein Ladekabel gefressen.'],
-  chiara: ['Ich helf dir, wenn du mir hilfst. Deal?', 'Ich muss noch Französisch. Und Bio. Und leben.', 'Hast du die Hausaufgaben? Ich vergleiche nur.'],
-  yusuf: ['Hm.', 'Judo ist dienstags. Und freitags. Und manchmal sonntags.', 'Schwimmen? … Nächstes Thema.'],
-  ayla: ['Unsere Band probt Samstag. Zweite Probe!', 'Kommst du zum Konzert? Wenn es eins gibt?', 'Ich les alles in der Gruppe. Ich schreib nur nie.'],
-  luca: ['Na, Kantinen-Polizei?', 'Hast du Kohle? … War ein Witz. Halb.', 'Kenan sagt, ich soll dich in Ruhe lassen. Mal sehen.'],
-  kenan: ['„Zweimal messen, einmal sägen.“ Sagt Becker.', 'Ich hab mich für den CCP beworben. Zweimal schon.', 'Was guckst du?'],
-  dario: ['Lass, alles gut.', 'Kenan soll aufhören zu rauchen. Sag’s ihm nicht.', 'Bäcker? Nur bis zehn nach.'],
-  weber: ['Bis 16 Uhr. Nicht 16:05.', '(telefoniert) … Moment … Was brauchst du?', 'Ausreden kenn ich alle. Nur so.'],
-  hoffmann: ['Äh … du bist … richtig. Hallo.', 'Heute machen wir eine neue Methode!', 'Wenn du was brauchst: Nach der Stunde.'],
-  kaya: ['(kaut) Moment … So. Was gibt’s?', 'Ich hab zehn Minuten. Dann kommt die Nächste.', 'Was ich weitersagen muss, sag ich dir vorher.'],
-  sommer: ['(pfeift) Nicht rennen im Gang!', 'Schuhe dabei? Gut.', 'Einmal sind alle umgezogen. Einmal.'],
-  becker: ['Morgen.', 'Zweimal messen.', '(zeigt auf die Schutzbrille)'],
-  kremer: ['Zack, zack.', 'Curry ist heute gut. Ehrlich.', 'Karte leer? … Geht heute. Sag zuhause Bescheid.'],
-  laurent: ['„Vieleicht“ schreibt man mit zwei l. Nur so.', 'Donnerstags ist der Club. Komm vorbei.', 'Ich war auch mal in einer kleinen Klasse.'],
-  fahrer: ['Abfahrt ist pünktlich. Immer.'],
-};
+// Kleine Sätze, wenn man jemanden außerhalb der Geschichte anspricht: stimmen.js (PLAUDERN)
 
 export async function startLycee({ canvas, root, onProgress = () => {} }) {
   const params = new URLSearchParams(location.search);
@@ -1507,7 +1487,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   // Tests
   window.LYCEE = {
     get zustand() { return S; }, get schritt() { return SCHRITTE[S ? S.schritt : 0].id; }, get imGespraech() { return imGespraech; },
-    welt, steuerung, leute, sky, camera, scene, req, ui,
+    welt, steuerung, leute, sky, camera, scene, req, ui, rr,
     springe: async (i) => { await starteSchritt(typeof i === 'number' ? i : SCHRITTE.findIndex((s) => s.id === i), true); },
     teleport: (ort, yaw) => { const o = typeof ort === 'string' ? welt.orte[ort] : ort; steuerung.teleport(o.x, o.z, yaw !== undefined ? yaw : o.yaw); },
     rede, los, audio, SITZ, input, get naechste() { return naechste && naechste.id; },
