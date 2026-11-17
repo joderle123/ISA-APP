@@ -76,6 +76,7 @@ export const GESPRAECHE4 = {
   abschreiben: [
     ['noah', 'Hast du Mathe? Schnell, bitte.'],
     ['noah', 'Hoffmann sammelt ein. Ich hab schon zwei Striche.'],
+    { tu: 'noahSchuld' },
     { wahl: [
       { t: '„Hier. Aber änder ein paar Sachen.“', herz: { noah: 2 }, merke: 'abgeschrieben', dann: [
         ['noah', 'Danke. Du rettest mich.'],
@@ -257,6 +258,7 @@ export const GESPRAECHE4 = {
     ] },
   ],
   ziel: [
+    { tu: 'torGespraech' },
     ['hoffmann', 'Drei Wochen sind um. Jeder sucht sich ein Ziel für nächste Woche.'],
     ['hoffmann', 'Klein und machbar. Was nimmst du dir vor, {name}?'],
     { wahl: [

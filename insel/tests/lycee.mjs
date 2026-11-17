@@ -87,7 +87,7 @@ await klick();   // Einleitung
 check('Schritt 1: Bushaltestelle, Auftrag „Sprich mit Noah“', (await schritt()) === 'ankunft' && /Noah/.test(await page.textContent('.ly-auftrag')));
 await bild('1-start');
 await rede('noah');
-check('Noah: „Ich bin Robin“ → Stärke „Kontakt aufnehmen“, Herz für Noah', (await L(() => LYCEE.zustand.staerken.kontakt)) === 1 && (await L(() => LYCEE.zustand.herz.noah)) >= 3);
+check('Noah: „Ja. Robin. 7P2. Du?“ → Stärke „Kontakt aufnehmen“, Herz für Noah', (await L(() => LYCEE.zustand.staerken.kontakt)) === 1 && (await L(() => LYCEE.zustand.herz.noah)) >= 3);
 check('Schritt 2: Sekretariat', (await schritt()) === 'sekretariat');
 await page.waitForFunction(() => LYCEE.leute.weber && LYCEE.leute.weber.f.group.visible); await L(() => LYCEE.teleport({ x: -21, z: -12.4 }, 0));
 await page.waitForFunction(() => LYCEE.imGespraech || (/Mme Weber/.test(document.querySelector('.ly-hinweis').textContent) && !document.querySelector('.ly-hinweis').hidden), null, { polling: 300 });
@@ -107,7 +107,7 @@ const bingo = await L(() => LYCEE.zustand.bingo);
 check('Bingo: Ben (Tier, Sport), Ayla (Musik), Chiara (Kochen) – alle vier Felder', bingo.tier === 'ben' && bingo.sport === 'ben' && bingo.musik === 'ayla' && bingo.kochen === 'chiara', bingo);
 check('Schritt 6: Große Pause', (await schritt()) === 'pause');
 await rede('mila', 0);
-check('Mila: Herzen, Stärke „Zuhören“', (await L(() => LYCEE.zustand.herz.mila)) >= 4 && (await L(() => LYCEE.zustand.staerken.zuhoeren)) >= 1);
+check('Mila auf der Bank: „Ist hier frei?“ → Herz für Mila', (await L(() => LYCEE.zustand.herz.mila)) >= 2 && (await L(() => LYCEE.zustand.staerken.kontakt)) >= 5);
 check('Pause geht weiter (noch nicht beides gemacht)', (await schritt()) === 'pause');
 await rede('ben', 0);
 check('Freiwürfe gespielt (0–5 Treffer)', typeof (await L(() => LYCEE.zustand.merke.freiwurf)) === 'number');

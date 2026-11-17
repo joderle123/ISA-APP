@@ -46,7 +46,7 @@ alles zusammenpasst.
   Kantine bei Frau Kremer (Zwiebeln mit Luca, Kasse: Lucas Karte ist leer) · Bewertungsbogen am Freitag. Viele frühere
   Entscheidungen kommen zurück (Portemonnaie, Kenan am Tor, Gerücht mit Mila, Screenshot, Garage bei Jos Onkel).
 - **„Kurz raus“ (⏸ / P):** jederzeit (außer mitten im Gespräch, aber während einer Mutprobe): Atmen oder 5-4-3-2-1.
-- **Zweite Jugend-Kritik (17.11.2026, Schnitt 3,2):** Logikfehler behoben (Mila im Klassenrat, Folgen zu früh gefragt,
+- **Zweite Jugend-Kritik (17.11.2026, Schnitt 3,2):** 15 schwache Szenen neu (Noah am Bus, Sekretariat, Hoffmann, Bingo je Person verschieden, Mila auf der Bank, Kantinentische, Mathe-Test, Wochenende mit Doppel-Zusage, Telefon, zu spät, Werkstatt-Regeln, Sägen, Rückmeldung, Kenan am Bus); Logikfehler behoben (Mila im Klassenrat, Folgen zu früh gefragt,
   Weggehen bei Mila, Kenan am Bus, Hoffmann und „Zuhause“, Bens Schulden, Nudeln, unsichtbare Sprecher, männliche
   Anreden). Antworten können jetzt von früheren Entscheidungen abhängen (`wenn` auch je Antwort).
 - **Jugend-Kritik (17.11.2026, Panel K./S./D., Schnitt vorher 1,8 von 5)** umgesetzt: keine Glocke und keine Herzen
@@ -73,4 +73,4 @@ Sitzen) · `steuerung.js` Laufen und Kamera · `geschichte.js` Kapitel, Gespräc
 `ui.js` Oberfläche · `spiel.js` Kern · `main.js`, `shell.html`, `stil.css`.
 
 ## Nächste Schritte
-15 Szenen aus der zweiten Kritik neu schreiben; Phase 2 ausbauen (Aufgaben aus dem Hub, mehr Lernmomente); Phase 3 (Werkstatt: Arbeitssimulator DAP/CCP).
+Phase 2 ausbauen (Aufgaben aus dem Hub, mehr Lernmomente); Phase 3 (Werkstatt: Arbeitssimulator DAP/CCP).

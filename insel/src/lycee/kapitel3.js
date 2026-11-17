@@ -47,7 +47,7 @@ export const SCHRITTE3 = [
     fertig: { reden: 'kenan', gespraech: 'tor' } },
   { id: 'k3_heim', kap: 3, tag: 'Montag', uhr: 15.5, titel: 'Heimweg', ziel: 'Geh zur Bushaltestelle. Diesmal bist du pünktlich.', marker: 'bus',
     start: { teleport: 'eingang' },
-    leute: { noah: [-21.5, 42.2, 0.3], mila: [-23.5, 42.4, -0.3], kenan: [-27, 41.6, 0.4], fahrer: [-11.2, 44.6, -Math.PI / 2] },
+    leute: { noah: [-21.5, 42.2, 0.3], mila: [-23.5, 42.4, -0.3], kenan: [-27, 41.6, 0.4], dario: [-28.4, 41.4, 0.6], fahrer: [-11.2, 44.6, -Math.PI / 2] },
     fertig: { ort: 'bus', r: 3.2, gespraech: 'k3_ende' } },
 ];
 
@@ -57,52 +57,45 @@ export const GESPRAECHE3 = {
     ['erzaehler', 'Du rennst zur Haltestelle. Der Bus fährt gerade los.'],
     ['erzaehler', 'Ohne dich. Der nächste kommt in 40 Minuten.'],
     ['noah', 'Mist! Ich hab ihn auch verpasst.'],
+    { tu: 'samstag' },
   ],
   telefon: [
-    ['noah', 'Wir müssen im Sekretariat Bescheid sagen. Ich hab die Nummer.'],
-    ['noah', 'Rufst du an? Ich bin schlecht im Telefonieren.'],
+    ['noah', 'Wir müssen im Sekretariat anrufen. Ich hab die Nummer.'],
+    ['noah', 'Machst du? Am Telefon krieg ich kein Wort raus.'],
     { wahl: [
-      { t: 'Okay, ich mach das.', dann: [] },
-      { t: 'Ich auch … aber ich versuch’s.', dann: [['noah', 'Danke. Ich sag dir, was wichtig ist.']] },
+      { t: '„Okay. Gib her.“', staerke: 'telefon', merke: 'angerufen', dann: [{ tu: 'anruf' }] },
+      { t: '„Du hast die Nummer. Du rufst.“', herz: { noah: -1 }, merke: 'noahRuft', dann: [
+        ['noah', '(wählt) Äh … Noah. Bus. Weg. … Ja. Tschüss.'],
+        ['noah', 'Aufgelegt. Hab ich deinen Namen gesagt? Weiß nicht.'] ] },
+      { t: '„Wir kommen halt später. Merkt keiner.“', herz: { noah: 1 }, merke: 'nichtAngerufen', dann: [
+        ['noah', 'Sicher? … Okay. Dann nicht.'],
+        ['erzaehler', 'Noah teilt seine Chips mit dir. Ganz entspannt.'] ] },
     ] },
-    ['erzaehler', 'Es klingelt. Einmal. Zweimal.'],
-    ['weber', 'Lycée des Collines, Sekretariat, Weber. Guten Morgen.'],
-    { wahl: [
-      { t: 'Guten Morgen, hier ist {name} aus der 7P2.', staerke: 'telefon', herz: { weber: 1 }, dann: [['weber', 'Hallo {name}. Was gibt’s?']] },
-      { t: 'Äh … hallo? Ich bin’s.', dann: [['weber', 'Wer ist denn „ich“? Sag mir bitte Namen und Klasse.'], ['du', '{name}, 7P2.']] },
-    ] },
-    { wahl: [
-      { t: 'Ich habe den Bus verpasst. Noah auch.', dann: [] },
-      { t: 'Der Bus war zu früh!', dann: [['weber', 'Hm. Der fährt eigentlich immer pünktlich.'], ['du', 'Okay … wir waren zu spät.']] },
-    ] },
-    ['weber', 'Danke, dass ihr anruft. Wann seid ihr da?'],
-    { wahl: [
-      { t: 'Mit dem nächsten Bus, gegen halb neun.', dann: [['weber', 'Gut. Ich sag M. Hoffmann Bescheid. Bis gleich.']] },
-      { t: 'Weiß nicht.', dann: [['weber', 'Schau mal auf den Fahrplan an der Haltestelle.'], ['du', '… Um 8:17 kommt der nächste. Wir sind halb neun da.'], ['weber', 'Gut. Ich sag M. Hoffmann Bescheid.']] },
-    ] },
-    ['noah', 'Wow. Das war gut.'],
     { tu: 'warten' },
   ],
   spaet: [
-    ['erzaehler', 'Du klopfst und gehst rein. Alle schauen.'],
-    ['hoffmann', 'Ah, da seid ihr. Mme Weber hat Bescheid gesagt.'],
-    { wahl: [
-      { t: 'Entschuldigung. Wir haben den Bus verpasst.', staerke: 'ehrlich', herz: { hoffmann: 1 }, dann: [['hoffmann', 'Passiert. Danke fürs Anrufen.']] },
-      { t: '(Schnell hinsetzen.)', dann: [['jo', 'Guten Morgen, Hoheit.'], ['erzaehler', 'Ein paar lachen. Hoffmann schreibt weiter.']] },
-    ] },
-    ['hoffmann', 'Heute ist Schnuppertag im Atelier. Ihr geht gleich zu Meister Becker.'],
-    ['hoffmann', 'Wer später eine Ausbildung machen will: gut hinschauen.'],
+    ['erzaehler', 'Du klopfst. Alle schauen. Noah steht hinter dir.'],
+    { tu: 'spaetFolge' },
+    ['hoffmann', 'Heute ist Schnuppertag. Gleich in der Werkstatt, bei Meister Becker.'],
   ],
   regeln: [
     ['becker', 'Morgen. Becker. Hier wird gearbeitet.'],
+    ['erzaehler', 'Er verteilt Schutzbrillen. Zerkratzt. Sie riechen nach Gummi.'],
     ['erzaehler', 'Er hebt die linke Hand. Ein Finger ist kürzer.'],
-    ['becker', 'Bevor jemand eine Säge anfasst: Was machst du zuerst?'],
+    ['becker', 'Brille auf. Haare zusammen. Handy in die Kiste.'],
+    ['erzaehler', 'Jo schiebt seine Brille auf die Stirn. Ein paar grinsen.'],
     { wahl: [
-      { t: 'Schutzbrille auf und Haare zusammen.', staerke: 'sicher', herz: { becker: 2 }, dann: [['becker', 'Genau. Und das Handy?'], ['du', 'In die Tasche.'], ['becker', 'Gut. Du darfst gleich anfangen.']] },
-      { t: 'Gleich loslegen.', dann: [['becker', 'Stopp. Erst die Brille. Augen hat man nur zwei.'], ['becker', 'Und lange Haare zusammenbinden.']] },
-      { t: 'Weiß ich nicht.', staerke: 'hilfe', herz: { becker: 1 }, dann: [['becker', 'Gut, dass du fragst. Brille auf, Haare zusammen, Handy weg.']] },
+      { t: '(Brille richtig auf.)', staerke: 'sicher', herz: { becker: 1 }, dann: [['jo', 'Steht dir. Wie ein Taucher.']] },
+      { t: '(Brille auf die Stirn. Wie Jo.)', herz: { jo: 1 }, merke: 'brilleStirn', dann: [
+        ['jo', '(nickt dir zu)'],
+        ['erzaehler', 'Becker sieht es. Er sagt nichts. Noch nicht.'] ] },
+      { t: '„Gibt’s eine, die nicht zerkratzt ist?“', staerke: 'klar', herz: { becker: 1 }, dann: [
+        ['becker', 'Schrank. Oben. Bring gleich für alle mit.'],
+        ['jo', 'Extrawurst.'] ] },
+      { t: '(Handy nicht in die Kiste. In die Tasche.)', merke: 'handyBehalten', dann: [
+        ['erzaehler', 'Keiner merkt es. Es vibriert zweimal.'] ] },
     ] },
-    ['kenan', '(grinst) Er ist streng. Aber fair.'],
+    ['kenan', '(grinst) Er ist streng. Und er sieht alles.'],
     { tu: 'kenanErinnert' },
   ],
   saegen: [
@@ -117,23 +110,26 @@ export const GESPRAECHE3 = {
       { t: 'Klar, kein Problem.', dann: [['erzaehler', 'Die erste Schraube geht schief.'], ['kenan', 'Halt. Erst vorbohren. Ich zeig’s dir.']] },
       { t: 'Mach du. Ich halte.', dann: [['kenan', 'Okay. Dann lernst du halt nix. Mir egal.'], ['erzaehler', 'Kenan schraubt. Du hältst. Es geht schnell.']] },
     ] },
-    ['erzaehler', 'Nach einer halben Stunde steht das Regal. Es wackelt kaum.'],
+    ['erzaehler', 'Nach einer halben Stunde steht das Regal.'],
+    { tu: 'regalWackelt' },
     ['kenan', 'Nicht schlecht für den ersten Tag.'],
   ],
   feedback: [
-    ['becker', 'So. Kurze Rückmeldung für dich.'],
+    ['becker', 'So. Kurz. Ich hab nicht viel Zeit.'],
     { tu: 'beckerLob' },
-    ['becker', 'Was ich mir wünsche: langsamer. Erst messen, dann sägen.'],
+    ['becker', 'Und: langsamer. Erst messen, dann sägen.'],
     { wahl: [
-      { t: 'Okay. Langsamer.', staerke: 'rueckmeldung', herz: { becker: 1 }, dann: [['becker', 'Gut.']] },
-      { t: 'Aber die anderen waren auch schnell!', dann: [['becker', 'Ich rede gerade mit dir. Nicht mit den anderen.'], ['erzaehler', 'Er geht zur nächsten Werkbank.']] },
-      { t: '(Nicken.)', herz: { becker: 1 }, dann: [['becker', 'Gut.']] },
+      { t: '„Okay.“', staerke: 'rueckmeldung', dann: [['becker', 'Gut.']] },
+      { t: '„Sie sagten: Hier wird gearbeitet.“', staerke: 'humor', herz: { becker: 1 }, dann: [['becker', '(fast ein Lachen) Gearbeitet. Nicht gerannt.']] },
+      { t: '„Kenan war auch schnell.“', herz: { becker: -1, kenan: -1 }, dann: [['becker', 'Stimmt. Kenan kriegt das gleich auch.'], ['kenan', '(von hinten) Was krieg ich?']] },
     ] },
-    ['becker', 'Und? Wär so was was für dich – später?'],
+    ['becker', 'Samstag ist offene Werkstatt. Zwei Plätze sind noch frei.'],
     { wahl: [
-      { t: 'Ja! Holz macht mir Spaß.', staerke: 'entscheiden', merke: 'berufHolz', dann: [['becker', 'Dann komm zum Tag der offenen Werkstatt. Ich schreib dich auf.']] },
-      { t: 'Weiß ich noch nicht.', merke: 'berufOffen', dann: [['becker', 'Musst du auch noch nicht. Schau dir vieles an.']] },
-      { t: 'Eher was anderes. Vielleicht mit Menschen.', staerke: 'entscheiden', merke: 'berufMenschen', dann: [['becker', 'Auch gut. Dann frag mal beim SePAS nach Praktika.']] },
+      { t: '„Ich komm.“', staerke: 'entscheiden', herz: { becker: 1 }, merke: 'berufHolz', dann: [
+        ['becker', 'Neun Uhr. Nicht fünf nach.'], ['kenan', 'Samstag? Freiwillig? Du bist komisch.']] },
+      { t: '„Samstag ist schwierig.“', merke: 'berufOffen', dann: [['becker', 'Musst nicht sagen, warum. Der Zettel hängt an der Tür.']] },
+      { t: '„Holz ist nicht meins. Eher Menschen.“', staerke: 'entscheiden', merke: 'berufMenschen', dann: [['becker', 'Gut zu wissen. Frag beim SePAS nach Praktika.']] },
+      { t: '„Gibt’s da was zu essen?“', staerke: 'humor', dann: [['becker', 'Brötchen. Um zehn.'], ['erzaehler', 'Er schreibt deinen Namen auf. Mit Fragezeichen.']] },
     ] },
   ],
   tor: [
@@ -188,16 +184,21 @@ export const GESPRAECHE3 = {
 };
 
 // Messen und sägen: Ergebnis in Zentimetern Abweichung → Folgen
-export function saegeFolgen(abw) {
-  if (abw <= 1) return { gut: true, zeilen: [['becker', 'Genau 30. Sauber gemessen.']] };
-  return { gut: false, zeilen: [
-    ['becker', abw <= 3 ? 'Das sind ' + (30 + abw) + ' Zentimeter. Fast.' : 'Hm. Das Brett ist viel zu kurz.'],
-    ['becker', 'Was ist passiert?'],
+export function saegeFolgen(abw, m = {}) {
+  const z = [];
+  if (m.brilleStirn) z.push(['erzaehler', 'Späne fliegen. Einer ins Auge. Es brennt.'], ['becker', 'Darum. Waschbecken. Auge spülen. Fünf Minuten.']);
+  if (m.handyBehalten) z.push(['erzaehler', 'Beim Sägen vibriert die Tasche. Du zuckst.'], ['becker', '(streckt die Hand aus) Handy. Bis 16 Uhr.']);
+  if (abw <= 1) return { gut: true, zeilen: z.concat([['becker', 'Genau 30. Sauber.'], ['kenan', '(von drüben) Anfängerglück.']]) };
+  return { gut: false, zeilen: z.concat([
+    ['becker', abw <= 3 ? 'Das sind ' + (30 + abw) + ' Zentimeter. Fast.' : 'Das Brett ist viel zu kurz.'],
     { wahl: [
-      { t: 'Ich war zu schnell. Mein Fehler.', staerke: 'ehrlich', herz: { becker: 2 }, dann: [['becker', 'Ehrlich. Gut. Fehler passieren hier jeden Tag.'], ['becker', 'Nimm ein neues Brett. Diesmal zweimal messen.']] },
-      { t: 'Das Maßband ist kaputt.', herz: { becker: -1 }, dann: [['becker', '(prüft das Maßband) Das Maßband ist in Ordnung.'], ['becker', 'Nimm ein neues Brett. Zweimal messen, einmal sägen.']] },
-      { t: '(Nichts sagen.)', dann: [['becker', 'Nimm ein neues Brett. Zweimal messen, einmal sägen.']] },
+      { t: '„Zu schnell. Mein Fehler.“', staerke: 'ehrlich', herz: { becker: 1 }, dann: [
+        ['becker', 'Neues Brett. Zweimal messen.'], ['erzaehler', 'Die anderen fangen schon das Regal an.']] },
+      { t: '„Das Maßband ist kaputt.“', herz: { becker: -1 }, dann: [
+        ['becker', '(prüft) Der Haken wackelt. Einen Millimeter.'], ['becker', 'Nicht ' + abw + ' Zentimeter. Neues Brett.']] },
+      { t: '(Brett umdrehen. Unauffällig zurück zum Stapel.)', merke: 'brettVersteckt', dann: [
+        ['erzaehler', 'Becker schaut gerade woanders hin.'], ['kenan', '(leise) Das merkt er beim Regal.']] },
     ] },
-    ['erzaehler', 'Beim zweiten Brett nimmst du dir Zeit. Es passt.'],
-  ] };
+    ['erzaehler', 'Das nächste Brett passt.'],
+  ]) };
 }

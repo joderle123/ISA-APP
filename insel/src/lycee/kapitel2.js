@@ -257,16 +257,22 @@ export const GESPRAECHE2 = {
   ],
   test: [
     { tu: 'setzen' },
-    ['hoffmann', 'Handys weg, bitte. Ihr habt 30 Minuten.'],
-    ['erzaehler', 'Dein Herz klopft. Deine Hände sind kalt.'],
+    ['hoffmann', 'Handys weg. 30 Minuten. Ich schau nicht weg.'],
+    ['erzaehler', 'Deine Hände sind kalt. Aufgabe 3: Brüche.'],
+    ['erzaehler', 'Chiaras Blatt liegt offen. Sie ist schon bei Aufgabe 4.'],
     { wahl: [
-      { t: '(Augen zu. Vier rein, vier raus.)', dann: [{ tu: 'atem' }] },
-      { t: '(Einfach anfangen.)', dann: [] },
-      { t: '(Zu Noah rüberschauen. Der schwitzt auch.)', staerke: 'lesen', dann: [['noah', '(flüstert) Ich hab nix gelernt.']] },
+      { t: '(Augen zu. Vier rein, vier raus.)', dann: [{ tu: 'atem' }, ['erzaehler', 'Zwei Minuten weg. Die Hände sind wärmer.']] },
+      { t: '(Zu Chiara rüberschauen.)', merke: 'testGeguckt', dann: [
+        ['erzaehler', 'Drei Viertel. Du schreibst es hin.'],
+        ['hoffmann', '{name}. Augen auf dein Blatt.'],
+        ['erzaehler', 'Ab jetzt steht er hinter dir. Bis zum Schluss.'] ] },
+      { t: '(Noah zuflüstern: „Aufgabe 3?“)', herz: { noah: 1, hoffmann: -1 }, dann: [
+        ['noah', '(flüstert) Keine Ahnung. Echt.'],
+        ['hoffmann', 'Ihr zwei. Noch ein Wort, dann null Punkte.'] ] },
+      { t: '(Mit der leichten anfangen.)', staerke: 'ruhig', dann: [['erzaehler', 'Aufgabe 1 kennst du. Dann 2.']] },
     ] },
-    ['erzaehler', 'Du liest die erste Aufgabe. Okay. Die kennst du.'],
     { tu: 'testPizza' },
-    ['hoffmann', 'Zeit ist um. Danke euch. Ihr bekommt ihn Montag zurück.'],
+    ['hoffmann', 'Zeit. Ihr bekommt ihn Montag zurück.'],
   ],
   klassenrat: [
     { tu: 'milaFehlt' },
@@ -301,15 +307,13 @@ export const GESPRAECHE2 = {
   ],
   woche: [
     ['erzaehler', 'Freitag, 15:30 Uhr. Die erste Woche ist geschafft.'],
-    ['noah', 'Endlich Wochenende! Was machst du?'],
+    ['noah', 'Samstag Fußball mit meinem Bruder. Um zwei. Kommst du?'],
+    ['ayla', 'Samstag um zwei probt meine Band. Kommst du zuhören?'],
     { wahl: [
-      { t: 'Weiß noch nicht. Und du?', staerke: 'zuhoeren', herz: { noah: 1 }, dann: [
-        ['noah', 'Fußball mit meinem Bruder. Kommst du Samstag mit?'],
-        { wahl: [
-          { t: 'Gern!', herz: { noah: 2 }, dann: [['noah', 'Cool! Ich schreib dir die Uhrzeit.']] },
-          { t: 'Diesmal nicht. Vielleicht nächstes Mal.', staerke: 'klar', dann: [['noah', 'Okay, kein Problem.']] },
-        ] } ] },
-      { t: 'Ausschlafen!', herz: { noah: 1 }, dann: [['noah', 'Gute Idee, haha.']] },
+      { t: '„Noah. Fußball.“', herz: { noah: 2, ayla: -1 }, merke: 'samstagNoah', dann: [['ayla', 'Ah. Okay. Nächstes Mal.']] },
+      { t: '„Ayla. Band.“', herz: { ayla: 2, noah: -1 }, merke: 'samstagAyla', dann: [['noah', 'Klar. Band ist cooler. Schon gut.']] },
+      { t: '„Ich kann Samstag nicht.“', staerke: 'klar', dann: [['noah', 'Okay.'], ['ayla', 'Schade.'], ['erzaehler', 'Keiner fragt, warum.']] },
+      { t: '„Ich versuch, beides zu schaffen.“', herz: { noah: 1, ayla: 1 }, merke: 'doppeltZugesagt', dann: [['noah', 'Cool!'], ['ayla', 'Cool! Ich sag’s den anderen.']] },
     ] },
     { tu: 'milaWoche' },
     ['erzaehler', 'Der Bus kommt. Bis Montag, Lycée des Collines.'],
