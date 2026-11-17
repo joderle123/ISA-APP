@@ -53,7 +53,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   const test = params.has('test');
   const schritt = async (p, t) => { onProgress(p, t); await new Promise((r) => requestAnimationFrame(() => r())); };
   const events = createEvents();
-  const rr = createRenderer({ canvas, quality: detectQuality(), events });
+  const rr = createRenderer({ canvas, quality: detectQuality(), events, look: 'comic' });
   const q = rr.quality;
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(52, 1, 0.12, 700);
@@ -371,11 +371,17 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     stundenplanTipp: () => { ui.toast('<b>Tipp</b><span>Mit Tab oder ☰ öffnest du dein Journal.</span>'); },
     weberTelefon: () => { const w = leute.weber; if (w) w.f.spiele('Interact', { tempo: 0.5 }); },
     stundenplan: () => { S.stundenplan = true; ui.toast('📄 Stundenplan bekommen – steht im Journal.'); },
+    // Freischaltung in den ersten fünf Minuten: der eigene Spind (Code steht auf dem Stundenplan)
+    spindFrei: () => { S.frei = { ...(S.frei || {}), spind: true }; setTimeout(() => ui.toast('<b>Neu: Spind 117</b><span>Im Gang. Der Code steht auf deinem Plan.</span>', 'ly-t-ent'), 2600); },
+    // Running Gag: Ben leiht sich Geld. Der Zähler steht im Journal und wird nie kleiner.
+    benSchuld: () => { S.benSchuld = (S.benSchuld || 0) + 2; ui.toast('<b>Ben schuldet dir ' + S.benSchuld + ' €</b><span>Steht im Journal. Für immer, vermutlich.</span>'); },
+    benZahlt: () => { S.benZurueck = (S.benZurueck || 0) + 2; ui.toast('<b>Ben hat 2 € zurückgezahlt</b><span>Ein historischer Moment. Steht im Journal.</span>', 'ly-t-ent'); },
+    benSchuld4: () => { S.benSchuld = (S.benSchuld || 0) + 4; ui.toast('<b>Ben schuldet dir ' + S.benSchuld + ' €</b><span>Der Zähler im Journal läuft.</span>'); },
     zuSpaet: () => {
       const m = S.merke, z = [];
-      if (m.weberGewartet && m.gewartet) z.push(['hoffmann', 'Zehn Minuten. Am ersten Tag. Ich schreib’s mal auf.'], ['jo', '(halblaut) Guter Start.']);
-      else if (m.gewartet) z.push(['hoffmann', 'Gerade noch. Setz dich.']);
-      if (m.falscherPlan) z.push(['hoffmann', 'Zeig mal deinen Plan … das ist die 7P1.'], ['jo', 'Falsche Klasse? Tür ist da hinten.'], ['erzaehler', 'Ein paar lachen. Hoffmann gibt dir seine Kopie.']);
+      if (m.weberGewartet && m.gewartet) z.push(['hoffmann', 'Zehn Minuten. Am ersten Tag. Rekord.'], ['jo', '(halblaut) Starker Auftritt.']);
+      else if (m.gewartet) z.push(['hoffmann', 'Gerade noch. Setz dich. Schnell.']);
+      if (m.falscherPlan) z.push(['hoffmann', 'Zeig mal deinen Plan … das ist die 7P1.'], ['jo', 'Falsche Klasse. Tür ist da hinten.'], ['erzaehler', 'Gelächter. Hoffmann gibt dir seine Kopie. Mit Kaffeefleck.']);
       return z;
     },
     bingoStart: () => { zeigeBingo(); },
@@ -383,50 +389,52 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       input.setEnabled(false);
       const t = await ui.freiwurf();
       S.merke.freiwurf = t; ui.toast('Freiwürfe: ' + t + ' von 5 getroffen');
-      return t >= 3 ? [['yusuf', t + ' von 5! Respekt.']] : [['ben', t + ' von 5. Passt. Übung macht’s.']];
+      return t >= 4 ? [['yusuf', t + ' von 5. Hm. Respekt.'], ['ben', 'Okay, du zahlst trotzdem nicht.']]
+        : t >= 2 ? [['ben', t + ' von 5. Ich hatte drei. Glaub ich.'], ['yusuf', 'Zwei.']]
+        : [['ben', t + ' von 5. Der Korb ist schief. Ehrlich.'], ['yusuf', 'Ist er nicht.']];
     },
-    tablett: () => { ui.toast('🍽 Mit Tablett. Such dir einen Platz.'); },
+    tablett: () => { ui.toast('🍽 Tablett in der Hand. Jetzt der schwerste Teil: ein Platz.'); },
     gegessen: async () => {   // Spielfigur setzt sich mit an den Tisch (gegenüber)
       const sitz = S.merke.tisch === 'mila' ? [19.55, -4.9, Math.PI / 2] : [12.25, -10.1, -Math.PI / 2];
       steuerung.setzen(sitz[0] - Math.sin(sitz[2]) * 0.1, sitz[1] - Math.cos(sitz[2]) * 0.1, sitz[2]);
       await new Promise((r) => setTimeout(r, 1400));
-      await ui.bild('Mittagspause', S.merke.tisch === 'mila' ? 'Ihr esst. Mila erzählt von ihrem Puzzle-Spiel. Es ist ruhig und gut.' : 'Ihr esst und lacht. Ayla erzählt von ihrer Band.', 3);
+      await ui.bild('Mittagspause', S.merke.tisch === 'mila' ? 'Mila zeigt dir einen Würfel-Trick. Du schaffst ihn nicht. Sie lacht fast.' : 'Ayla trommelt den Takt auf das Tablett. Noah verschluckt sich vor Lachen.', 3);
     },
     plakat: async () => {
       const m = S.merke;
-      const text = m.linaGefragt ? 'Orte, an denen man sich wohlfühlt. Jo malt das Gebäude, Lina die Orte.' : m.ideeGeklaut ? 'Orte zum Wohlfühlen. Jo malt. Lina malt aus. Sie schaut dich nicht an.' : m.joMacht ? 'Jo malt das Gebäude. Lina malt aus. Du scrollst.' : 'Jo malt das Gebäude. Ihr malt aus.';
+      const text = m.linaGefragt ? 'Lina malt die Orte. Klein, aber man erkennt jeden. Jo malt das Gebäude. Riesig.' : m.ideeGeklaut ? 'Jo malt. Lina malt aus. Sie guckt dich kein einziges Mal an.' : m.joMacht ? 'Jo malt das Gebäude. Lina malt aus. Dein Handy-Akku: 12 %.' : 'Jo malt das Gebäude. Das Gebäude hat jetzt einen Drachen.';
       await ui.bild('20 Minuten später …', text, 3);
     },
     plakatEnde: () => {
       const m = S.merke;
-      if (m.hoffmannGelaestert) return [['hoffmann', '(zu dir, trocken) Schräg, aber pünktlich fertig.'], ...TUN.plakatEndeKern()];
+      if (m.hoffmannGelaestert) return [['hoffmann', '(zu dir, trocken) Schräg. Aber pünktlich fertig.'], ...TUN.plakatEndeKern()];
       return TUN.plakatEndeKern();
     },
     plakatEndeKern: () => {
       const m = S.merke;
       if (m.ideeGeklaut) return [['hoffmann', 'Orte zum Wohlfühlen. Gute Idee. Von wem?'],
         { wahl: [
-          { t: '„Von mir.“', herz: { hoffmann: 1, lina: -2 }, merke: 'ideeBehalten', dann: [['hoffmann', 'Stark, {name}.'], ['erzaehler', 'Lina schaut aus dem Fenster.']] },
-          { t: '„Eigentlich von Lina.“', staerke: 'ehrlich', herz: { lina: 1 }, dann: [['jo', 'Hä? Du hast doch gesagt …'], ['hoffmann', 'Aha. Dann: gut, Lina.'], ['lina', '(ganz leise) Danke.']] },
+          { t: '„Von mir.“', herz: { hoffmann: 1, lina: -2 }, merke: 'ideeBehalten', dann: [['hoffmann', 'Stark, {name}.'], ['erzaehler', 'Lina guckt aus dem Fenster. Sehr lange.']] },
+          { t: '„Eigentlich von Lina.“', staerke: 'ehrlich', herz: { lina: 1 }, dann: [['jo', 'Hä? Du hast doch gesagt …'], ['hoffmann', 'Aha. Dann: gut, Lina.'], ['erzaehler', 'Unter dem Tisch: ein Zettel. Ein gezeichneter Daumen.']] },
         ] }];
-      if (m.linaGefragt) return [['hoffmann', 'Orte zum Wohlfühlen. Wessen Idee?'], ['jo', 'Linas. Das Gebäude ist von mir.']];
-      if (m.joMacht) return [['hoffmann', 'Schönes Gebäude. Und ihr zwei?'], ['jo', 'Ausgemalt. Und {name} war am Handy.'], ['hoffmann', '{name}. Handy. Auf mein Pult. Bis 16 Uhr.']];
-      return [['hoffmann', 'Schönes Gebäude, Jo. Und ihr?'], ['lina', '… ausgemalt.']];
+      if (m.linaGefragt) return [['hoffmann', 'Orte zum Wohlfühlen. Wessen Idee?'], ['jo', 'Linas. Das Gebäude ist von mir. Und der Drache.']];
+      if (m.joMacht) return [['hoffmann', 'Schönes Gebäude. Und ihr zwei?'], ['jo', 'Ausgemalt. Und {name} war am Handy.'], ['hoffmann', '{name}. Handy. Mein Pult. Bis 16 Uhr.'], ['weber', '(durch die Tür) 16 Uhr. Nicht 16:05.']];
+      return [['hoffmann', 'Schönes Gebäude, Jo. Warum hat es einen Drachen?'], ['jo', 'Weil es geht.'], ['lina', '(ganz leise) … ausgemalt.']];
     },
     // ---------- Zweite Jugend-Kritik: neue Folgen (Kapitel 1–3) ----------
     noahTisch: () => {
       const m = S.merke;
-      if (m.noahKlebt) return [['noah', 'Hier! Ich hab dir einen Platz frei gehalten.'], ['ayla', 'Seit zehn Minuten. Er hat Ben weggeschickt.']];
-      if (m.noahGeneckt) return [['noah', '(zu Ayla) Das ist die Person mit „Sieht man“.'], ['ayla', '(lacht) Stimmt aber.']];
-      if (m.noahKopfhoerer) return [['noah', 'Oh. Hi. Heute ohne Kopfhörer?']];
-      return [['noah', 'Hey! Setz dich.']];
+      if (m.noahKlebt) return [['noah', 'Hier! Platz frei gehalten. Mit meiner Jacke.'], ['ayla', 'Seit zehn Minuten. Er hat Ben weggeschickt.']];
+      if (m.noahGeneckt) return [['noah', '(zu Ayla) Das ist die Person mit dem Prospekt.'], ['ayla', '(guckt Noah an. Lacht.) Stimmt aber.']];
+      if (m.noahKopfhoerer) return [['noah', 'Oh. Ohne Kopfhörer. Du kannst also hören.']];
+      return [['noah', 'Hey! Setz dich. Der Stuhl wackelt. Alle wackeln.']];
     },
     aylaTisch: () => [{ wahl: [
-      ...(S.gefragt.includes('ayla') ? [{ t: '„Ja. Und du spielst Gitarre.“', staerke: 'zuhoeren', herz: { ayla: 2 }, merke: 'aylaBand', dann: [
-        ['ayla', 'Du weißt es noch! Ich hab eine Band.'], ['erzaehler', 'Sie erzählt. Die ganze Pause. Noah gähnt.']] }] : []),
+      ...(S.gefragt.includes('ayla') ? [{ t: '„Ja. Und du spielst Bass.“', staerke: 'zuhoeren', herz: { ayla: 2 }, merke: 'aylaBand', dann: [
+        ['ayla', 'Du hast zugehört? Wow. Ich hab eine Band.'], ['ayla', 'Wir haben noch keinen Namen. Und keinen Proberaum.'], ['erzaehler', 'Sie erzählt. Die ganze Pause. Noah gähnt.']] }] : []),
       { t: '„Ja. Hoffmann ist schräg, oder?“', staerke: 'humor', herz: { ayla: 1, noah: 1 }, merke: 'hoffmannGelaestert', dann: [
-        ['ayla', '(lacht) Total. „Du bist … äh …“'], ['noah', '(wird blass) Er steht hinter dir.'], ['hoffmann', '(mit Tablett) Guten Appetit.']] },
-      { t: '(Nicken. Essen.)', dann: [['erzaehler', 'Ayla redet mit Noah weiter. Du isst in Ruhe.']] },
+        ['ayla', '(lacht) Total. „Neue Methode!“'], ['noah', '(wird blass) Er steht hinter dir.'], ['hoffmann', '(mit Tablett) Guten Appetit. Schräg grüßt.']] },
+      { t: '(Nicken. Essen.)', dann: [['erzaehler', 'Ayla redet mit Noah weiter. Du isst. Das Curry ist okay.']] },
     ] }],
     samstag: () => {
       const m = S.merke;
@@ -900,13 +908,14 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         { t: '„Nee, lass. Ich will nix schulden.“', dann: [['noah', 'Ist doch nicht schulden …'], ['erzaehler', 'Du bleibst am Brunnen. Allein.']] },
       ] }],
     benLeihen: () => [{ wahl: [
-      ...(S.merke.kantinengeldWeg ? [] : [{ t: '„Hier. Vier Euro.“ (Das Kantinengeld.)', herz: { ben: 1 }, merke: 'kantinengeldWeg', dann: [['ben', 'Du rettest mich. Morgen. Versprochen.']] }]),
+      ...(S.merke.kantinengeldWeg ? [] : [{ t: '„Hier. Zwei Euro.“ (Das Kantinengeld.)', herz: { ben: 1 }, merke: 'kantinengeldWeg', dann: [{ tu: 'benSchuld' }, ['ben', 'Du rettest mich. Morgen. Versprochen. Wirklich morgen.']] }]),
       { t: '„Hab nix. Wirklich.“', staerke: 'neinsagen', dann: [['ben', 'Okay, okay.'], ['erzaehler', 'Er fragt Yusuf. Yusuf gibt.']] },
       { t: '„Du gibst Yusuf auch nie was zurück.“', staerke: 'klar', herz: { ben: -1 }, merke: 'benSchulden', dann: [['ben', 'Wie kleinlich bist du denn?'], ['yusuf', '(grinst) Stimmt aber.']] },
       ...(S.merke.lucaAngelegt ? [{ t: '(Luca kommt dazu.)', dann: [['luca', 'Die Kantinen-Polizei hat Geld? Ich nehm auch zwei.'], ['erzaehler', 'Jetzt wollen zwei was von dir.']] }] : []),
     ] }],
 
-    benSchuldet: () => (S.merke.kantinengeldWeg ? [['erzaehler', 'Ben schuldet dir vier Euro. Seit Dienstag.']] : []),
+    benMorgen: () => (S.benSchuld ? [['erzaehler', 'Er schuldet dir schon ' + S.benSchuld + ' Euro. „Morgen“ war vor einer Woche.']] : [['erzaehler', 'Das mit „morgen“ hat er heute schon zweimal gesagt.']]),
+    benSchuldet: () => (S.benSchuld ? [['erzaehler', 'Ben schuldet dir ' + S.benSchuld + ' Euro. Er hat es nicht vergessen. Sagt er.']] : []),
 
     zuhauseFolge: () => (S.merke.angeblafft && !S.merke.hoffmannReden ? [
       ['erzaehler', 'Nach der Stunde. Alle sind raus.'],
@@ -961,7 +970,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         ] }];
       if (m.portiWeber) return [['ben', 'Weber sagt, jemand hat mein Portemonnaie abgegeben. Warst du das?'],
         { wahl: [{ t: '„Ja.“', herz: { ben: 1 }, dann: [['ben', 'Danke. Echt.']] }, { t: '„Nö. Glück gehabt.“', dann: [['ben', 'Ja, voll.']] }] }];
-      if (m.portiZurueck && m.kantinengeldWeg) return [['ben', 'Hier. Die vier Euro. Diesmal echt.']];
+      if (m.portiZurueck && m.kantinengeldWeg) return [['ben', 'Hier. Zwei Euro. Diesmal echt.'], ['erzaehler', 'Er gibt sie dir. Dann fragt er nach einem Kaugummi.'], { tu: 'benZahlt' }];
       return [];
     },
     // Kapitel 5: Hoffmann erinnert sich an den Klassenrat
@@ -1164,8 +1173,17 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   ui.onJournal = () => {
     if (!S || imGespraech) return;
     const b = bilanz();
-    ui.journal({ name: S.name, stundenplan: S.stundenplan, leute: b.leute, freunde: b.freunde, staerken: b.staerken, geheimnisse: GEHEIMNISSE.filter((g) => S.entdeckt.includes(g.id)), gesamt: GEHEIMNISSE.length, lernkarten: S.lernkarten || [], leiter: leiterJournal() });
+    ui.journal({ name: S.name, stundenplan: S.stundenplan, leute: b.leute, freunde: b.freunde, staerken: b.staerken, geheimnisse: GEHEIMNISSE.filter((g) => S.entdeckt.includes(g.id)), gesamt: GEHEIMNISSE.length, lernkarten: S.lernkarten || [], leiter: leiterJournal(), zaehler: zaehler() });
   };
+  // Running Gags als Zähler im Journal (werden nie kleiner)
+  function zaehler() {
+    const z = [];
+    if (S.benSchuld) z.push({ t: 'Ben hat sich geliehen', w: S.benSchuld + ' €' });
+    if (S.benZurueck) z.push({ t: 'Ben hat zurückgezahlt', w: S.benZurueck + ' €' });
+    if (S.merke.automat) z.push({ t: 'Münzen im Automaten', w: String(S.merke.automat) });
+    if (S.merke.korbRekord || S.merke.freiwurf) z.push({ t: 'Freiwurf-Rekord', w: Math.max(S.merke.korbRekord || 0, S.merke.freiwurf || 0) + ' von 5' });
+    return z;
+  }
   ui.onRaus = () => { if (!S || (imGespraech && !probe)) return; ui.kurzRaus(); };
 
   // ---------- Nähe: wen kann man ansprechen? ----------

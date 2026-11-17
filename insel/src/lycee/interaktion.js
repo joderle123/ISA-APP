@@ -69,7 +69,8 @@ export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton
         return;
       }
       case 'brunnen': ton('platsch'); ui.toast('<b>Kalt!</b><span>Kurz wach. Jemand hinter dir lacht – nicht über dich, über den Spritzer.</span>'); return;
-      case 'spind': ui.toast('<b>Spind 117</b><span>Turnbeutel, Mathebuch, dein Stundenplan mit Kaffeefleck. Und eine sehr alte Banane.</span>'); return;
+      case 'spind': if (!s.stundenplan && !(s.frei && s.frei.spind)) { ton('klack'); ui.toast('<b>Spind 117</b><span>Zahlenschloss. Den Code gibt’s im Sekretariat.</span>'); return; }
+        ui.toast('<b>Spind 117</b><span>Turnbeutel, Mathebuch, dein Stundenplan mit Kaffeefleck. Und eine sehr alte Banane.</span>'); return;
       case 'klavier': ton('melodie'); ui.toast('<b>Klavier</b><span>Drei Töne. Dann noch drei. Im Saal klingt alles größer.</span>'); return;
       case 'keyboard': ton('melodie2'); ui.toast('<b>Keyboard</b><span>Du findest den Knopf „Demo“. Jetzt spielt es Samba.</span>'); return;
       case 'schlagzeug': ton('trommel'); ui.toast('<b>Bumm-tschak</b><span>Laut. Sehr laut. Es fühlt sich gut an.</span>'); return;

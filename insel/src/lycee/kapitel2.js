@@ -73,7 +73,7 @@ export const GESPRAECHE2 = {
     ['erzaehler', 'Du öffnest deine Tasche. Die Turnschuhe … liegen zu Hause.'],
   ],
   sommer1: [
-    ['sommer', 'Moien! Alle umgezogen? … {name}, Schuhe?'],
+    ['sommer', 'Allez! Alle umgezogen? … {name}, Schuhe?'],
     { wahl: [
       { t: '„Vergessen. Sorry.“', staerke: 'ehrlich', herz: { sommer: 1 }, merke: 'fundkiste', dann: [
         ['sommer', 'Fundkiste. Neben der Tür.'],

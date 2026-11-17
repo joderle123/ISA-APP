@@ -72,9 +72,12 @@ export const GESPRAECHE5 = {
     ['du', 'Was?'],
     ['ayla', 'Luca sagt, ihr seid zusammen. Weil ihr ständig redet.'],
     ['erzaehler', 'Zwei Tische weiter: Mila. Sie hat es gehört.'],
+    ['stolz', 'Sag schnell nein. Laut. Sonst glaubt’s jeder.'],
+    ['bauch', 'Mila guckt. Mila guckt genau jetzt.'],
+    ['kopf', 'Egal was du sagst: Luca macht was draus.'],
     { wahl: [
       { t: '„Mila? Niemals. Ernsthaft.“', herz: { ayla: 1, mila: -2 }, merke: 'milaVerleugnet', dann: [
-        ['ayla', 'Dacht ich mir. Haha.'],
+        ['ayla', 'Dacht ich mir. (lacht zu laut)'],
         ['erzaehler', 'Mila steht auf. Ihr Tablett ist noch halb voll.'] ] },
       { t: '„Und wenn? Was geht’s Luca an?“', staerke: 'mut', herz: { mila: 1 }, merke: 'geruechtStehen', dann: [
         ['ayla', 'Oh. Also doch?'],
@@ -100,7 +103,7 @@ export const GESPRAECHE5 = {
   ],
   zuhause: [
     { tu: 'setzen' },
-    ['hoffmann', 'Moien. Hausaufgaben auf den Tisch. Ich komm rum.'],
+    ['hoffmann', 'Ça va? Hausaufgaben auf den Tisch. Ich komm rum.'],
     ['hoffmann', '{name}?'],
     { wahl: [
       { t: '„Vergessen.“', merke: 'haVergessen', dann: [
@@ -137,6 +140,9 @@ export const GESPRAECHE5 = {
     ['erzaehler', 'Ayla prustet. Du auch. Kurz.'],
     ['hoffmann', '(dreht sich um) {name}. Das reicht. Raus.'],
     ['erzaehler', 'Jo schaut in sein Heft. Ganz brav.'],
+    ['stolz', 'Das war JO. Sag das. Jetzt.'],
+    ['bauch', 'Heiß im Gesicht. Alle gucken.'],
+    ['kopf', 'Hoffmann hat sich schon entschieden. Später ist besser.'],
     { wahl: [
       { t: '„Ich war’s nicht! Echt jetzt!“', herz: { hoffmann: -1 }, merke: 'laut', dann: [
         ['hoffmann', 'Diskutieren kannst du draußen. Raus.'],

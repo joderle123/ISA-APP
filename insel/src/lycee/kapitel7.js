@@ -74,7 +74,7 @@ export const GESPRAECHE7 = {
     ['erzaehler', 'Keine Schule heute. Arbeit. Bis 16 Uhr.'],
   ],
   k7_kueche: [
-    ['kremer', 'Moien. Haube auf. Hände waschen. Zack, zack.'],
+    ['kremer', 'Gudden Appetit gibt’s später. Haube auf. Hände waschen. Zack, zack.'],
     { tu: 'lucaHaube' },
     ['kremer', 'Zwiebeln. Zwei Kisten. Bis neun.'],
     { wahl: [

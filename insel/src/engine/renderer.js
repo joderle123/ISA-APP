@@ -238,7 +238,7 @@ class TiefePass extends ShaderPass {
 // Werte als Uniforms → Look-Regler im Debug-Modus. Leistung: ein Vollbild-Durchgang, ein Texturzugriff.
 export const LOOKS = {
   aus: { kontur: 1, konturDicke: 1, stufen: 0, raster: 0, schraffur: 0, papier: 0, korn: 0, saett: 1, hell: 1, weich: 0, ao: 1, pastell: 0 },
-  comic: { kontur: 1, konturDicke: 3, stufen: 3, raster: 4.2, schraffur: 0, papier: 0, korn: 0, saett: 1.3, hell: 1.06, weich: 0.06, ao: 0.6, pastell: 0 },
+  comic: { kontur: 1, konturDicke: 2.4, stufen: 4, raster: 4.2, schraffur: 0, papier: 0, korn: 0, saett: 1.2, hell: 1.08, weich: 0.08, ao: 0.6, pastell: 0 },   // A „Comic“, leichter gestimmt (Entscheidung 17.11.)
   skizze: { kontur: 0.9, konturDicke: 0.8, stufen: 0, raster: 0, schraffur: 4.5, papier: 0.9, korn: 0.1, saett: 0.55, hell: 1.04, weich: 0, ao: 0.5, pastell: 0.05 },
   weich: { kontur: 0, konturDicke: 1, stufen: 4, raster: 0, schraffur: 0, papier: 0, korn: 0, saett: 1.12, hell: 1.08, weich: 0.9, ao: 0.25, pastell: 0.1 },
 };
@@ -342,7 +342,7 @@ const FINAL_SHADER = {
     }`,
 };
 
-export function createRenderer({ canvas, quality: qInfo, events }) {
+export function createRenderer({ canvas, quality: qInfo, events, look: startLook }) {
   let q = QUALITY[qInfo.name];
   const renderer = new THREE.WebGLRenderer({
     canvas,
@@ -377,7 +377,7 @@ export function createRenderer({ canvas, quality: qInfo, events }) {
     if (post.veil) post.veil.uniforms.uLumoPost.value = 0;
   }
   // Look (Annexe): aus der Adresse (?look=comic|skizze|weich) oder per rr.setLook(); Werte einzeln per rr.lookWerte
-  let aktLook = (new URLSearchParams(location.search).get('look') || 'aus');
+  let aktLook = (new URLSearchParams(location.search).get('look') || startLook || 'aus');
   if (!LOOKS[aktLook]) aktLook = 'aus';
   const lookWerte = { ...LOOKS[aktLook] };
   function wendeLook() {

@@ -136,6 +136,9 @@ export const GESPRAECHE3 = {
     ['erzaehler', 'Am Tor. Kenan und Dario rauchen. Einen Schritt draußen.'],
     ['kenan', 'Hey. Regal-Team. Willst du?'],
     ['erzaehler', 'Er hält dir die Schachtel hin. Dario schaut zu.'],
+    ['stolz', 'Nicht wie ein Baby aussehen. Bitte.'],
+    ['bauch', 'Das riecht wie Opas Auto.'],
+    ['kopf', 'Die zwei sind okay. Die Kippe ist egal.'],
     { wahl: [
       { t: '„Nee. Schmeckt wie Aschenbecher.“', staerke: 'neinsagen', dann: [
         ['dario', 'Schon mal Aschenbecher gegessen, oder was?'],
@@ -175,7 +178,7 @@ export const GESPRAECHE3 = {
     { tu: 'kenanBus' },
     ['noah', 'Und, wie war die Werkstatt?'],
     { wahl: [
-      { t: 'Anstrengend. Aber gut.', herz: { noah: 1 }, dann: [['noah', 'Ich hab mir fast in den Finger gesägt, haha.']] },
+      { t: 'Anstrengend. Aber gut.', herz: { noah: 1 }, dann: [['noah', 'Ich hab mir fast den Finger abgesägt. Fast.']] },
       { t: 'Ich hab mich beim Sägen verhauen.', herz: { noah: 1 }, dann: [['noah', 'Ich auch. Zweimal. Becker hat nur geseufzt.']] },
     ] },
     ['fahrer', 'Pünktlich. Wie immer. Applaus ist erlaubt.'],

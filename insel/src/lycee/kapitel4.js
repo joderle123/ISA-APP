@@ -101,6 +101,9 @@ export const GESPRAECHE4 = {
     ['dario', 'Wir gehen zum Bäcker. Sport ist eh nur Zirkeltraining.'],
     ['luca', 'Die Sommer zählt nie durch. Ehrlich.'],
     ['dario', 'Kommst du? Wir laden dich ein.'],
+    ['stolz', 'Die fragen DICH. Nicht Noah. Dich.'],
+    ['bauch', 'Croissant. Warm. Mit Schokolade.'],
+    ['kopf', 'Sommer zählt durch. Immer. Luca lügt.'],
     { wahl: [
       { t: '„Nee. Heute gibt’s Noten.“', staerke: 'neinsagen', dann: [
         ['luca', 'Noten. Wow.'],
@@ -152,7 +155,7 @@ export const GESPRAECHE4 = {
     ] },
     ['erzaehler', 'Später, im Gang. Ben kommt angelaufen.'],
     ['ben', 'Hast du zwei Euro? Kriegst du morgen.'],
-    ['erzaehler', 'Das mit „morgen“ hat er schon zweimal gesagt.'],
+    { tu: 'benMorgen' },
     { tu: 'benLeihen' },
   ],
   skate: [
@@ -161,6 +164,8 @@ export const GESPRAECHE4 = {
     ['luca', 'Hey. Einmal über die Box. Mit Kenans Board. Ich film.'],
     ['kenan', 'Lass. Kann ja nicht jeder.'],
     ['luca', 'Eben. Darum ist es ja lustig.'],
+    ['stolz', 'Zeig’s ihm. Einmal. Wie schwer kann das sein?'],
+    ['kopf', 'Luca will kein Video von dir. Er will ein lustiges.'],
     { wahl: [
       { t: 'Board nehmen. Fahren.', herz: { luca: 1, kenan: 1 }, merke: 'gefahren', dann: [
         ['erzaehler', 'Anlauf. Box. Das Board fliegt. Du auch.'],
@@ -221,8 +226,8 @@ export const GESPRAECHE4 = {
     ['erzaehler', 'Donnerstag, 14 Uhr. Im CDI gibt es den Hausaufgaben-Club.'],
   ],
   club: [
-    ['laurent', 'Setzen. Ich bin Mme Laurent. Drei Aufgaben, dann dürft ihr gehen.'],
-    ['laurent', 'Heute habe ich Aufgaben von euren Lehrern. Drei Stück.'],
+    ['laurent', 'Setzen. Mme Laurent. Drei Aufgaben, dann seid ihr frei.'],
+    ['laurent', 'Von euren Lehrern. Sie haben sich Mühe gegeben. Leider.'],
     ['laurent', 'Kekse in der Dose. Erst nach Aufgabe drei.'],
     { tu: 'lernmoment' },
     ['laurent', 'Fertig? Donnerstag wieder. Kekse auch.'],
@@ -259,7 +264,7 @@ export const GESPRAECHE4 = {
   ],
   ziel: [
     { tu: 'torGespraech' },
-    ['hoffmann', 'Drei Wochen sind um. Jeder sucht sich ein Ziel für nächste Woche.'],
+    ['hoffmann', 'Neue Methode: das Wochenziel. Eins. Klein. Kein Aufsatz.'],
     ['hoffmann', 'Klein und machbar. Was nimmst du dir vor, {name}?'],
     { wahl: [
       { t: 'Einmal im Unterricht etwas fragen.', staerke: 'ziel', merke: 'zielFragen', dann: [['hoffmann', 'Notiert. Ich frag Freitag nach.']] },

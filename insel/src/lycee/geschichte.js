@@ -122,160 +122,169 @@ export const SCHRITTE = [
 // ---------- Gespräche ----------
 export const GESPRAECHE = {
   intro: [
-    ['erzaehler', 'Montag, 7:33 Uhr. Dein erster Tag in der Annexe Junglinster.'],
-    ['erzaehler', 'Neue Schule. Dein Rucksack ist zu neu. Das sieht man.'],
-    ['erzaehler', 'An der Haltestelle wartet ein Junge. Er sieht genauso neu aus.'],
+    ['erzaehler', 'Montag, 7:33. Erster Tag. Annexe Junglinster.'],
+    ['erzaehler', 'Dein Rucksack ist so neu, dass er noch riecht.'],
+    ['erzaehler', 'An der Haltestelle reserviert ein Junge eine Bank. Mit seiner Jacke.'],
   ],
   noah1: [
-    ['noah', 'Oh … hi. Bist du auch neu hier?'],
+    ['noah', 'Kurze Frage. Bist du neu, oder guckst du immer so?'],
     { wahl: [
-      { t: 'Ja. {name}. 7P2. Du?', staerke: 'kontakt', herz: { noah: 2 }, merke: 'noahKlebt', dann: [
-        ['noah', 'Noah. Auch 7P2! Dann bleib ich bei dir, okay?'],
-        ['erzaehler', 'Er stellt sich neben dich. Sehr nah.'] ] },
-      { t: '„Neu? Sieht man.“', staerke: 'humor', merke: 'noahGeneckt', dann: [
-        ['noah', '(schaut an sich runter) Echt? Wieso?'],
-        ['noah', '… Okay. Noah. 7P2.'],
-        ['erzaehler', 'Drüben grinst einer von den Älteren.'] ] },
+      { t: 'Neu. {name}. 7P2. Und du?', staerke: 'kontakt', herz: { noah: 2 }, merke: 'noahKlebt', dann: [
+        ['noah', 'Noah. Auch 7P2. Gut. Dann sind wir schon zwei.'],
+        ['noah', 'Ich bleib in deiner Nähe. Ganz unauffällig.'],
+        ['erzaehler', 'Er stellt sich neben dich. Sehr auffällig nah.'] ] },
+      { t: '„Und du? Du siehst aus wie ein Prospekt.“', staerke: 'humor', merke: 'noahGeneckt', dann: [
+        ['noah', '(guckt an sich runter) … Ist das schlecht?'],
+        ['noah', 'Okay. Noah. 7P2. Prospekt.'],
+        ['erzaehler', 'Drüben lacht einer von den Älteren. Laut.'] ] },
       { t: 'Ja. Weißt du, wo wir hinmüssen?', staerke: 'hilfe', herz: { noah: 1 }, dann: [
-        ['noah', 'Nee. Ich dachte, du weißt es.'],
-        ['noah', 'Noah übrigens. 7P2.'] ] },
+        ['noah', 'Nein. Ich dachte, du weißt es. Du siehst so aus.'],
+        ['noah', 'Noah. 7P2. Wir sind beide verloren.'] ] },
       { t: '(Kopfhörer drin lassen. Nicken.)', merke: 'noahKopfhoerer', dann: [
-        ['noah', '(sagt was. Du hörst nur Musik.)'],
-        ['erzaehler', 'Er gibt auf. Du hast deine Ruhe.'] ] },
+        ['erzaehler', 'Er sagt etwas. Du hörst nur Bass.'],
+        ['erzaehler', 'Er nickt zurück. Lange. Dann gibt er auf.'] ] },
     ] },
-    ['erzaehler', 'Noah verschwindet Richtung Klo.'],
+    ['noah', 'Ich muss kurz … wohin. Bleib hier. Also, nicht hier. Egal.'],
     { tu: 'stundenplanTipp' },
   ],
   weber: [
     { tu: 'weberTelefon' },
-    ['weber', '„… nein, die Liste kommt heute. Ja. Nein …“'],
-    ['erzaehler', 'Mme Weber telefoniert. Auf der Theke: ein Stapel Stundenpläne.'],
+    ['weber', '„… nein, die Liste kommt heute. Ja. Nein. JA.“'],
+    ['erzaehler', 'Mme Weber telefoniert. Auf der Theke: ein Berg Stundenpläne.'],
     { wahl: [
       { t: '(Warten. Handy raus.)', staerke: 'warten', herz: { weber: 1 }, merke: 'weberGewartet', dann: [
-        ['erzaehler', 'Drei Minuten. Vier. Dann legt sie auf.'],
-        ['weber', 'So. Name? … {name}, 7P2. Hier. Saal 1.04.'],
-        ['weber', 'Bis 16 Uhr bin ich da. Nicht 16:05.'] ] },
+        ['erzaehler', 'Drei Minuten. Vier. Du kennst jetzt jedes Plakat auswendig.'],
+        ['weber', 'So. Name? … {name}, 7P2. Saal 1.04.'],
+        ['weber', 'Moien übrigens. Ich bin bis 16 Uhr da. Nicht 16:05.'] ] },
       { t: '„Entschuldigung. Ich bin neu. 7P2.“', staerke: 'klar', herz: { weber: -1 }, dann: [
-        ['weber', '(hält das Telefon zu) Siehst du nicht, dass ich telefoniere?'],
-        ['erzaehler', 'Sie schiebt dir trotzdem ein Blatt hin. Ohne Blick.'],
-        ['weber', '(ins Telefon) Nein, nicht Sie. … Saal 1.04!'] ] },
+        ['weber', '(hält den Hörer zu) Siehst du das? Das ist ein Telefon.'],
+        ['erzaehler', 'Sie schiebt dir trotzdem ein Blatt hin. Ohne hinzusehen.'],
+        ['weber', '(ins Telefon) Nein, nicht Sie.'] ] },
       { t: '(Einen Plan vom Stapel nehmen. Gehen.)', merke: 'falscherPlan', dann: [
-        ['erzaehler', 'Keiner sieht es. Zehn Sekunden. Fertig.'],
-        ['erzaehler', 'Oben steht eine Klasse. Du liest nicht genau hin.'] ] },
+        ['erzaehler', 'Keiner sieht es. Zehn Sekunden. Perfekter Plan.'],
+        ['erzaehler', 'Fast perfekt. Du hast nicht gelesen, was oben steht.'] ] },
     ] },
     { tu: 'stundenplan' },
+    { tu: 'spindFrei' },
   ],
   gang: [
-    ['erzaehler', 'Vor Saal 1.04 stehen zwei Ältere. Mitten vor der Tür.'],
-    ['kenan', '… und dann hat er einfach aufgelegt, Mann.'],
+    ['erzaehler', 'Vor Saal 1.04 stehen zwei Ältere. Genau in der Tür.'],
+    ['kenan', '… und Becker sagt: Zweimal messen. Ich so: Hab ich doch.'],
     { wahl: [
-      { t: '„Pardon, darf ich mal durch?“', staerke: 'klar', herz: { kenan: 1, dario: 1 }, dann: [
-        ['dario', 'Oh, sorry. Klar.'],
-        ['kenan', 'Neu hier? Viel Glück bei Hoffmann. Der ist okay.'] ] },
+      { t: '„Darf ich mal durch?“', staerke: 'klar', herz: { kenan: 1, dario: 1 }, dann: [
+        ['dario', 'Oh. Klar. Sorry.'],
+        ['kenan', 'Neu? Hoffmann ist okay. Nur seine Krawatten nicht.'] ] },
       { t: '(Einfach durchdrängeln.)', herz: { kenan: -1, dario: -1 }, merke: 'gedraengelt', dann: [
         ['kenan', 'Ey! Geht’s noch?'],
-        ['dario', 'Lass. Neu hier.'],
-        ['erzaehler', 'Sie schauen dir nach. Kenan merkt sich dein Gesicht.'] ] },
+        ['dario', 'Lass. Erster Tag.'],
+        ['erzaehler', 'Kenan merkt sich dein Gesicht. Man sieht es.'] ] },
       { t: '(Warten, bis sie weggehen.)', merke: 'gewartet', dann: [
-        ['erzaehler', 'Sie reden weiter. Dann klingelt es.'],
-        ['dario', 'Oh – wir müssen. Komm, Kenan.'],
-        ['erzaehler', 'Jetzt ist die Tür frei. Aber du bist spät dran.'] ] },
+        ['erzaehler', 'Sie reden weiter. Über Kommas. Dann klingelt es.'],
+        ['dario', 'Mist, wir müssen. Komm.'],
+        ['erzaehler', 'Die Tür ist frei. Du bist trotzdem zu spät.'] ] },
     ] },
   ],
   hoffmann1: [
-    ['hoffmann', 'Guten Morgen! Du bist … (schaut auf die Liste) … {name}.'],
+    ['hoffmann', 'Guten Morgen! Du bist … (sucht auf der Liste) … {name}!'],
     { tu: 'zuSpaet' },
-    ['hoffmann', 'Ich bin M. Hoffmann. Euer Klassenlehrer.'],
-    ['hoffmann', 'Zum Start: Klassen-Bingo! Vier Felder. Einfach rumfragen.'],
-    ['erzaehler', 'Ein paar stöhnen. Jo am lautesten.'],
+    ['hoffmann', 'M. Hoffmann. Klassenlehrer. Und heute: mit Methode.'],
+    ['hoffmann', 'Neue Methode: Klassen-Bingo! Vier Felder. Rumfragen!'],
+    ['erzaehler', 'Die ganze Klasse stöhnt. Jo stöhnt mit Echo.'],
     { wahl: [
       { t: 'Okay.', dann: [] },
-      { t: '„Muss ich?“', staerke: 'humor', herz: { jo: 1, hoffmann: -1 }, merke: 'mussIch', dann: [
+      { t: '„Muss das sein?“', staerke: 'humor', herz: { jo: 1, hoffmann: -1 }, merke: 'mussIch', dann: [
         ['jo', 'Danke. Endlich sagt’s wer.'],
-        ['hoffmann', 'Ja. Und du liest die Felder vor. Laut.'],
-        ['erzaehler', 'Alle schauen. Du liest. Deine Stimme klingt komisch.'] ] },
+        ['hoffmann', 'Muss nicht. Darf. Und du liest die Felder vor. Laut.'],
+        ['erzaehler', 'Alle gucken. Du liest. Deine Stimme klingt fremd.'] ] },
       { t: '„Muss ich was über mich erzählen?“', staerke: 'hilfe', herz: { hoffmann: 1 }, dann: [
-        ['hoffmann', 'Nein. Du darfst auch nur fragen.'],
-        ['jo', '(äfft nach) „Muss ich was erzählen?“'] ] },
+        ['hoffmann', 'Nein. Fragen reicht.'],
+        ['jo', '(äfft nach) „Muss ich was erzählen?“'],
+        ['hoffmann', 'Jo. Du fängst an.'] ] },
     ] },
     { tu: 'bingoStart' },
   ],
   bingoFertig: [
-    ['hoffmann', 'Bingo! Schneller als die 7P1. Setzen.'],
-    ['hoffmann', 'So, setzt euch. Gleich ist große Pause.'],
+    ['hoffmann', 'Bingo! Schneller als die 7P1. Das schreib ich an die Tafel.'],
+    ['hoffmann', 'Pause. Und die Methode hat funktioniert. Notiert.'],
   ],
-  // Bingo-Gespräche: je Person. Die Wahl ist, WIE man fragt. Antwort sagt, auf welches Feld sie passt.
-  bingo_ayla: { felder: ['musik'], zeilen: [['ayla', 'Ich spiel Gitarre. Seit drei Jahren.'], ['ayla', 'Und du so?']] },
-  bingo_ben: { felder: ['sport', 'tier'], zeilen: [['ben', 'Basketball im Verein! Und wir haben einen Hund.'], ['ben', 'Er heißt Keks.']] },
-  bingo_chiara: { felder: ['kochen'], zeilen: [['chiara', 'Ich koch total gern. Am liebsten Pasta.'], ['chiara', 'Mit viel zu viel Knoblauch. Absichtlich.']] },
-  bingo_yusuf: { felder: ['sport'], zeilen: [['yusuf', 'Ich mach Judo. Zweimal die Woche.']] },
-  bingo_jo: { felder: ['tier'], zeilen: [['jo', 'Zwei Katzen. Die sind chaotisch.'], ['jo', 'Was steht da noch? Zeig mal.']] },
-  bingo_lina: { felder: ['musik', 'kochen'], zeilen: [['lina', '(leise) Ich … spiel Klavier.'], ['lina', 'Und ich back manchmal. Kuchen.']] },
-  bingo_noah: { felder: [], zeilen: [['noah', 'Ich hab leider nichts davon. Frag die anderen!'], ['noah', 'Lina hat bestimmt zwei Felder. Sie sagt’s nur nicht.']] },
+  // Bingo-Gespräche: je Person. Die Antwort sagt, auf welches Feld sie passt.
+  bingo_ayla: { felder: ['musik'], zeilen: [['ayla', 'Bass. Das ist Gitarre mit Selbstbewusstsein.'], ['ayla', 'Und du?']] },
+  bingo_ben: { felder: ['sport', 'tier'], zeilen: [['ben', 'Korbball im Verein. Und ich hab einen Hund.'], ['ben', 'Er heißt Keks. Er hat mein Ladekabel gegessen.']] },
+  bingo_chiara: { felder: ['kochen'], zeilen: [['chiara', 'Ich koche. Plan: mehr Knoblauch als Pasta.'], ['chiara', 'Voilà. Ein Feld für dich.']] },
+  bingo_yusuf: { felder: ['sport'], zeilen: [['yusuf', 'Hm. Judo.'], ['yusuf', 'Zweimal die Woche. Manchmal dreimal.']] },
+  bingo_jo: { felder: ['tier'], zeilen: [['jo', 'Zwei Katzen. Beide komplett verrückt.'], ['jo', 'Gib mal her. Was steht da noch?']] },
+  bingo_lina: { felder: ['musik', 'kochen'], zeilen: [['lina', '(leise) Klavier.'], ['lina', 'Und … Kuchen. Manchmal. Sag’s keinem.']] },
+  bingo_noah: { felder: [], zeilen: [['noah', 'Kurze Frage. Zählt ein Kaktus als Haustier?'], ['noah', 'Nein? Dann hab ich nichts. Lina hat zwei Felder.']] },
   mila: [
-    ['erzaehler', 'Mila sitzt allein auf der Bank. Sie dreht an einem Zauberwürfel.'],
+    ['erzaehler', 'Mila sitzt allein auf der Bank. Klack, klack. Zauberwürfel.'],
     { wahl: [
       { t: '„Ist hier frei?“', staerke: 'kontakt', herz: { mila: 1 }, dann: [
-        ['mila', '(nimmt die Tasche weg) … Ja.'],
-        ['erzaehler', 'Dann sagt keiner was. Eine ganze Minute.'],
-        ['mila', 'Du bist auch 7P2. Platz an der Tür.'] ] },
-      { t: '(Hinsetzen. Handy raus. Nichts sagen.)', staerke: 'warten', herz: { mila: 1 }, merke: 'milaStill', dann: [
-        ['erzaehler', 'Klick, klick, klick. Sie legt den Würfel hin. Fertig.'],
-        ['mila', '(ohne aufzuschauen) 41 Sekunden. Rekord.'] ] },
+        ['mila', '(nimmt die Tasche weg) Jetzt ja.'],
+        ['erzaehler', 'Dann sagt keiner was. Eine ganze Minute. Keiner stirbt.'],
+        ['mila', 'Du sitzt in 1.04 an der Tür. Platz drei.'] ] },
+      { t: '(Hinsetzen. Nichts sagen.)', staerke: 'warten', herz: { mila: 1 }, merke: 'milaStill', dann: [
+        ['erzaehler', 'Klack, klack, klack. Sie legt den Würfel hin. Fertig.'],
+        ['mila', '(ohne aufzusehen) 41 Sekunden. Merk dir die Zahl.'] ] },
       { t: '„Gib mal. Ich kann das auch.“', staerke: 'humor', dann: [
-        ['erzaehler', 'Du drehst dreimal. Jetzt ist alles durcheinander.'],
-        ['mila', 'Toll. Zwei Minuten Arbeit.'],
-        ['mila', '(nimmt ihn zurück. Fast ein Grinsen.)'] ] },
+        ['erzaehler', 'Du drehst dreimal. Jetzt ist alles bunt durcheinander.'],
+        ['mila', 'Zwei Minuten Arbeit. Weg.'],
+        ['mila', '(nimmt ihn zurück) Du drehst falsch rum. Komplett.'] ] },
       { t: '„Komm mit zum Korb. Ben spielt.“', staerke: 'einbeziehen', dann: [
-        ['mila', 'Nee. Zu viele Leute.'],
-        ['mila', 'Geh ruhig.'],
-        ['erzaehler', 'Du stehst da. Ben ruft schon zum zweiten Mal.'] ] },
+        ['mila', 'Zu viele Leute. Zu viele Bälle.'],
+        ['mila', 'Geh ruhig. Ich zähl hier die Tauben.'],
+        ['erzaehler', 'Ben ruft schon zum zweiten Mal.'] ] },
     ] },
   ],
   freiwurf: [
-    ['ben', 'Hey, du! Spielst du mit? Freiwürfe!'],
-    ['yusuf', 'Wer die meisten trifft, gewinnt. Fünf Würfe.'],
+    ['ben', 'Du! Freiwürfe! Wer verliert, zahlt.'],
+    ['yusuf', 'Er meint: Wer verliert, verliert. Fünf Würfe.'],
     { tu: 'freiwurf' },
   ],
   freiwurfDanach: [
-    ['ben', 'Nicht schlecht! Morgen wieder?'],
+    ['ben', 'Nicht schlecht. Ach so: Hast du zwei Euro? Kriegst du morgen.'],
     { wahl: [
-      { t: 'Klar, bin dabei.', staerke: 'kontakt', herz: { ben: 2, yusuf: 1 }, dann: [['yusuf', 'Cool. Wir sind immer hier in der Pause.']] },
-      { t: 'Mal sehen.', herz: { ben: 1 }, dann: [['ben', 'Okay. Du weißt, wo wir sind.']] },
+      { t: '(Zwei Euro geben.)', staerke: 'kontakt', herz: { ben: 2, yusuf: 1 }, dann: [{ tu: 'benSchuld' }, ['ben', 'Du bist mein erster Investor. Morgen. Ehrenwort.'], ['yusuf', 'Hm. Das sagt er jeden Tag.']] },
+      { t: '„Morgen. Vielleicht.“', herz: { ben: 1 }, dann: [['ben', 'Respekt. Du lernst schnell.']] },
+      { t: '„Was krieg ich dafür?“', staerke: 'humor', herz: { ben: 1 }, dann: [['ben', 'Zinsen. In Witzen. Täglich.'], ['yusuf', '(leise) Lass es.']] },
     ] },
   ],
   kantine: [
     ['kremer', 'Nächster! Nudeln oder Curry? Zack, zack.'],
-    ['erzaehler', 'Luca schiebt sich vor dich. Zwei Kumpels hinter ihm.'],
-    ['luca', 'Dreimal Nudeln. Wir haben’s eilig.'],
+    ['erzaehler', 'Luca schiebt sich vor dich. Zwei Kumpels im Schlepptau.'],
+    ['luca', 'Dreimal Nudeln. Wir haben’s eilig. Sehr.'],
+    ['stolz', 'Sag was. Sonst machen die das jeden Tag.'],
+    ['bauch', 'Nudeln sind eh überbewertet. Lass einfach.'],
+    ['kopf', 'Ein Satz. Ruhig. Oder gar keiner.'],
     { wahl: [
-      { t: '„Ey. Ich war dran.“', staerke: 'klar', herz: { luca: -1 }, merke: 'lucaAngelegt', dann: [
+      { t: '„Ich war dran.“', staerke: 'klar', herz: { luca: -1 }, merke: 'lucaAngelegt', dann: [
         ['luca', '(dreht sich langsam um) Und?'],
         ['erzaehler', 'Die Kumpels grinsen. Hinter dir wird es still.'],
         { wahl: [
           { t: '„Und hinten ist noch Platz.“', staerke: 'mut', herz: { kremer: 1 }, dann: [
-            ['kremer', 'Stimmt. Luca, nach hinten. Jeden Tag dasselbe.'],
-            ['luca', '(leise, im Vorbeigehen) Merk ich mir.'] ] },
+            ['kremer', 'Stimmt. Luca, nach hinten. Wie jeden Tag.'],
+            ['luca', '(im Vorbeigehen) Merk ich mir.'] ] },
           { t: '„… Schon gut.“', dann: [
             ['luca', 'Dacht ich mir.'],
             ['erzaehler', 'Die Kumpels lachen. Du bist trotzdem gleich dran.'] ] },
         ] } ] },
-      { t: '(Nichts sagen. Aufs Handy schauen.)', staerke: 'ruhig', merke: 'nudelnAus', dann: [
-        ['kremer', 'So. Nudeln sind aus. Nur noch Curry.'] ] },
+      { t: '(Nichts sagen. Aufs Handy gucken.)', staerke: 'ruhig', merke: 'nudelnAus', dann: [
+        ['kremer', 'So. Nudeln sind aus. Curry für alle.'],
+        ['luca', '(mit drei Tellern Nudeln) Tja.'] ] },
       { t: '„Nimmst du mir eine mit?“', staerke: 'humor', herz: { luca: 1 }, merke: 'lucaWitz', dann: [
         ['luca', '(kurzes Grinsen) Frech.'],
+        ['luca', 'Nimm das Curry. Die Nudeln haben zu wenig Salz.'],
         ['erzaehler', 'Er bleibt vor dir. Aber er nickt dir zu.'] ] },
-      { t: '(Frau Kremer anschauen. Augen verdrehen.)', herz: { kremer: 1, luca: -1 }, merke: 'lucaGepetzt', dann: [
+      { t: '(Frau Kremer angucken. Augen verdrehen.)', herz: { kremer: 1, luca: -1 }, merke: 'lucaGepetzt', dann: [
         ['kremer', 'Ich seh’s. Luca. Hinten anstellen.'],
         ['luca', 'Echt jetzt? Petze.'],
-        ['erzaehler', 'Er rempelt dich an. Wie aus Versehen.'] ] },
+        ['erzaehler', 'Er rempelt dich an. Ganz aus Versehen.'] ] },
     ] },
     { wahl: [
       { t: 'Nudeln, bitte.', wenn: (m) => !m.nudelnAus, dann: [] },
       { t: 'Das Curry, bitte.', dann: [] },
-      { t: '(Auf das zeigen, was noch da ist.)', dann: [['kremer', 'Gute Wahl. Ist eh das Einzige.']] },
+      { t: '(Auf das zeigen, was noch da ist.)', dann: [['kremer', 'Gute Wahl. Ist auch das Einzige.']] },
     ] },
-    ['kremer', 'Guten Appetit.'],
+    ['kremer', 'Gudden Appetit. Nächster!'],
     { tu: 'tablett' },
   ],
   tisch_noah: [
@@ -285,38 +294,38 @@ export const GESPRAECHE = {
     { tu: 'gegessen' },
   ],
   tisch_mila: [
-    ['mila', 'Oh. Hi.'],
+    ['mila', 'Oh. Du.'],
     ['erzaehler', 'Drüben winkt Noah. Neben ihm ist noch Platz.'],
     { wahl: [
       { t: '„Darf ich?“', staerke: 'kontakt', herz: { mila: 1, noah: -1 }, dann: [
         ['mila', 'Ist ein Tisch. Kein Klub.'],
-        ['erzaehler', 'Noah hört auf zu winken.'] ] },
+        ['erzaehler', 'Noah hört auf zu winken. Langsam.'] ] },
       { t: '(Hinsetzen. Essen. Nichts sagen.)', staerke: 'warten', herz: { mila: 1 }, dann: [
-        ['erzaehler', 'Ihr esst. Niemand redet.'],
+        ['erzaehler', 'Ihr esst. Keiner redet. Nur Gabeln.'],
         ['luca', '(im Vorbeigehen) Oh. Der Schweige-Tisch.'] ] },
       { t: '„Sitzt du immer allein?“', staerke: 'lesen', herz: { mila: -1 }, dann: [
-        ['mila', 'Erster Tag. Wie soll das schon „immer“ sein?'],
+        ['mila', 'Erster Tag. Wie soll das „immer“ sein?'],
         ['erzaehler', 'Sie isst weiter. Aber sie schiebt dir den Pfeffer hin.'] ] },
     ] },
     { tu: 'gegessen' },
   ],
   gruppe: [
-    ['hoffmann', 'Plakat: „Unsere Schule“. Ihr drei. 20 Minuten. Los.'],
-    ['jo', 'Ich mal das Gebäude. Ihr malt aus. Fertig.'],
+    ['hoffmann', 'Neue Methode: Plakat „Unsere Schule“. Ihr drei. 20 Minuten!'],
+    ['jo', 'Ich mal das Gebäude. Ihr malt aus. Allez, fertig.'],
     ['erzaehler', 'Lina schiebt dir einen Zettel rüber.'],
     ['erzaehler', 'Darauf steht: „Orte, wo man sich wohlfühlt?“'],
     { wahl: [
       { t: '„Jo, Lina hat ’ne bessere Idee.“', staerke: 'einbeziehen', herz: { lina: 1, jo: -1 }, merke: 'linaGefragt', dann: [
         ['lina', '(wird rot) Ist nicht so wichtig …'],
         ['jo', 'Welche Idee? Zeig.'],
-        ['jo', '… Hm. Okay. Aber das Gebäude mal ich.'] ] },
-      { t: 'Die Idee laut sagen. Als deine.', herz: { jo: 1 }, merke: 'ideeGeklaut', dann: [
+        ['jo', '… Okay. Gut. Aber das Gebäude mal ich.'] ] },
+      { t: '(Die Idee laut sagen. Als deine.)', herz: { jo: 1 }, merke: 'ideeGeklaut', dann: [
         ['jo', 'Okay, das ist gut. Machen wir.'],
-        ['erzaehler', 'Lina nimmt den Zettel zurück. Sie knüllt ihn klein.'] ] },
-      { t: 'Zurückschreiben: „Gut. Sag du’s.“', herz: { lina: 1 }, merke: 'zettel', dann: [
+        ['erzaehler', 'Lina nimmt den Zettel zurück. Knüllt ihn ganz klein.'] ] },
+      { t: '(Zurückschreiben: „Gut. Sag du’s.“)', herz: { lina: 1 }, merke: 'zettel', dann: [
         ['erzaehler', 'Lina liest. Schüttelt den Kopf.'],
         ['jo', 'Was schreibt ihr da? Liebesbriefe?'],
-        ['erzaehler', 'Jo malt das Gebäude.'] ] },
+        ['erzaehler', 'Jo malt das Gebäude. Riesig.'] ] },
       { t: '(Jo machen lassen. Handy unterm Tisch.)', merke: 'joMacht', dann: [
         ['erzaehler', '18 Minuten Ruhe. Jo malt. Lina malt aus. Du scrollst.'] ] },
     ] },
@@ -325,18 +334,18 @@ export const GESPRAECHE = {
     { tu: 'plakatEnde' },
   ],
   heimweg: [
-    ['erzaehler', '15:30 Uhr. Der erste Tag ist vorbei.'],
+    ['erzaehler', '15:30. Tag eins: überlebt.'],
     ['noah', 'Hey! Gleicher Bus?'],
     { wahl: [
-      { t: 'Ja. Wollen wir morgen zusammen fahren?', staerke: 'kontakt', herz: { noah: 2 }, dann: [['noah', 'Gern! Ich steig eine Haltestelle vor dir ein.'], ['noah', 'Ich halt dir einen Platz frei.']] },
-      { t: 'Ja. War ein langer Tag.', herz: { noah: 1 }, dann: [['noah', 'Total. Aber besser als gedacht.']] },
+      { t: 'Ja. Morgen zusammen?', staerke: 'kontakt', herz: { noah: 2 }, dann: [['noah', 'Ich steig eine Station vor dir ein.'], ['noah', 'Ich halt dir einen Platz frei. Mit irgendwas.']] },
+      { t: 'Ja. Langer Tag.', herz: { noah: 1 }, dann: [['noah', 'Total. Aber besser als die letzte Schule.']] },
     ] },
     { tu: 'milaAbschied' },
     ['fahrer', 'Einsteigen. Ich warte nicht. Nie.'],
     { tu: 'kapitelEnde' },
   ],
   milaAbschied_ja: [
-    ['mila', 'Tschüss, {name}. Bis morgen.'],
+    ['mila', 'Tschüss, {name}. Bis morgen. 7:35, nicht 7:36.'],
   ],
 };
 
@@ -355,4 +364,4 @@ Object.assign(LEUTE, LEUTE2, LEUTE3, LEUTE4, LEUTE6);
 Object.assign(STAERKEN, STAERKEN2, STAERKEN3, STAERKEN4, STAERKEN5, STAERKEN6);
 
 // Sprecher-Namen und Farben (Erzähler, du)
-export const SPRECHER = { erzaehler: { name: '', farbe: '#5b6472' }, du: { name: 'Du', farbe: '#2b3a55' }, kopf: { name: 'Dein Kopf', farbe: '#7d8796' }, kritiker: { name: 'Die fiese Stimme', farbe: '#a34a4a' } };
+export const SPRECHER = { erzaehler: { name: '', farbe: '#5b6472' }, du: { name: 'Du', farbe: '#2b3a55' }, kopf: { name: 'Kopf', farbe: '#5f7d9e' }, bauch: { name: 'Bauch', farbe: '#b0784a' }, stolz: { name: 'Stolz', farbe: '#8a5fa8' }, kritiker: { name: 'Die fiese Stimme', farbe: '#a34a4a' } };

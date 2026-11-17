@@ -111,6 +111,9 @@ kbd { display: inline-block; min-width: 1.5em; padding: 0 .35em; margin-right: .
 .ly-herzen i { font-style: normal; color: rgba(45, 61, 92, .15); }
 .ly-j-staerken li { padding: 10px 12px; border-radius: 12px; background: #fff; border: 1px solid var(--rand); border-left: 5px solid var(--gold); }
 .ly-j-staerken b { display: block; color: var(--blau); }
+.ly-j-zaehler { list-style: none; margin: 14px 0 0; padding: 10px 12px; display: flex; flex-direction: column; gap: 4px; border-radius: 12px; background: #fff7e8; border: 1px dashed var(--rand); }
+.ly-j-zaehler li { display: flex; justify-content: space-between; gap: 12px; font-size: 15px; }
+.ly-j-zaehler b { color: var(--blau); font-variant-numeric: tabular-nums; }
 .ly-j-staerken b span { color: var(--leise); font-size: 13px; }
 .ly-j-staerken small { color: var(--ink2); font-weight: 600; font-size: 14px; }
 .ly-plan { width: 100%; border-collapse: collapse; font-size: 14px; font-weight: 700; }

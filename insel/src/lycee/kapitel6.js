@@ -122,11 +122,11 @@ export const GESPRAECHE6 = {
       { t: '„Weiß nicht. Alles irgendwie.“', merke: 'schwerAlles', dann: [['kaya', 'Auch eine Antwort. Dann fangen wir klein an.']] },
     ] },
     ['kaya', 'Ich hab einen Trick. Klingt blöd. Geht aber.'],
-    ['kaya', 'Wie beim Zahnarzt: Die ersten Minuten sind die schlimmsten.'],
-    ['kaya', 'Wer vorher geht, merkt nie, dass es leichter wird.'],
+    ['kaya', 'Wie kaltes Wasser im Freibad. Erst furchtbar.'],
+    ['kaya', 'Wer gleich rausspringt, merkt nie, dass es warm wird.'],
     ['kaya', 'Wir machen eine Liste. Unten das Leichteste.'],
     { tu: 'leiterBauen' },
-    ['kaya', 'Also: bleiben, bis es nachlässt.'],
+    ['kaya', 'Also: drinbleiben, bis es warm wird.'],
     ['kaya', 'Geht gar nicht? Dann kleinere Stufe. Kein Drama.'],
     { tu: 'leiterStart' },
     ['kaya', 'Und das hier. Eine Karte. Steht „Gleich“ drauf.'],
@@ -157,7 +157,7 @@ export const GESPRAECHE6 = {
         ['kopf', '…'],
         { tu: 'sicherNachher' } ] },
       { t: 'Stehen bleiben. Genauer hinschauen.', staerke: 'pruefen', merke: 'lachenGeschaut', dann: [
-        ['erzaehler', 'Was siehst du wirklich?'],
+        ['erzaehler', 'Du guckst nochmal hin. Genauer.'],
         ['erzaehler', 'Bens Handy liegt quer. Alle drei starren drauf.'],
         ['erzaehler', 'Luca hält sich den Bauch. Er zeigt aufs Display.'],
         ['erzaehler', 'Ben hat kurz geschaut. Jetzt wieder nur aufs Handy.'],
@@ -204,7 +204,7 @@ export const GESPRAECHE6 = {
         { wahl: [
           { t: 'Den ersten Satz lesen.', staerke: 'mut6', merke: 'tafelGelesen', dann: [
             ['erzaehler', '„Je m’appelle Léa et j’ai treize ans.“'],
-            ['hoffmann', 'Merci.'],
+            ['hoffmann', 'Danke.'],
             ['erzaehler', 'Das war’s. Fünf Sekunden.'] ] },
           { t: 'Kopf schütteln.', dann: [['hoffmann', 'Okay. Nächstes Mal.']] },
         ] } ] },
@@ -226,7 +226,7 @@ export const GESPRAECHE6 = {
         ['erzaehler', 'Zehn Minuten später.'],
         ['hoffmann', 'Nur der erste Satz?'],
         { wahl: [
-          { t: 'Lesen.', staerke: 'mut6', merke: 'tafelGelesen', dann: [['erzaehler', '„Je m’appelle Léa …“'], ['hoffmann', 'Merci.']] },
+          { t: 'Lesen.', staerke: 'mut6', merke: 'tafelGelesen', dann: [['erzaehler', '„Je m’appelle Léa …“'], ['hoffmann', 'Gut. Danke.']] },
           { t: 'Nochmal auf die Karte tippen.', dann: [['hoffmann', 'Okay. Morgen.']] },
         ] } ] },
     ] },
@@ -266,7 +266,7 @@ export const GESPRAECHE6 = {
       { t: 'Bäcker: selbst bestellen.', merke: 'stufeBaecker', dann: [['kaya', 'Gut. Zehn Uhr fünfzehn ist die Schlange kurz.']] },
       { t: 'Kantine: zu den anderen setzen.', merke: 'stufeKantine', dann: [['kaya', 'Gut. Du musst nicht reden. Nur sitzen.']] },
       { t: '„Heute keine. Bin durch.“', merke: 'stufeKeine', dann: [
-        ['kaya', 'Okay. Danke, dass du’s sagst. Wochenende. Handy mal weg.'],
+        ['kaya', 'Okay. Dann Wochenende. Ich ess dein Brötchen mit.'],
         ['kaya', 'Montag dann. Schönes Wochenende.'] ] },
     ] },
   ],
