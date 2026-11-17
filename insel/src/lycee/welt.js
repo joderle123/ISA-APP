@@ -5,6 +5,7 @@
 // Rückgabe: { gruppe, kasten (Kollision, Liste {x0,x1,z0,z1,y1}), raeume, raumBei(x,z), orte, schilder, plaetze (Möbel) }
 import * as THREE from 'three';
 import { pflaster, rasen, asphalt, flaeche, fliesen as fliesenTex, dielen } from './texturen.js';
+import { baueCampus, baueCampus2, ORTE_CAMPUS, ORTE_CAMPUS2 } from './campus.js';
 
 export const DECKE = 3.6;            // Deckenhöhe innen
 const HAUS_H = 8.6;                 // Außenwand Haupthaus (zwei Stockwerke)
@@ -118,10 +119,10 @@ export function baueWelt({ material, materialInnen }) {
     box(a, b, 0.9, 1.0, 39.5, 40.3, C.gesims);
   }
   for (const x of [-8.4, 8.4]) { box(x - 0.45, x + 0.45, 0, 2.4, 39.45, 40.35, C.sandsteinDunkel, { stoss: true }); box(x - 0.55, x + 0.55, 2.4, 2.6, 39.35, 40.45, C.gesims); }
-  box(-46.4, -45.8, 0, 0.9, -2, 40.2, C.sockel, { stoss: true });
+  box(-46.4, -45.8, 0, 0.9, -2, 4, C.sockel, { stoss: true }); box(-46.4, -45.8, 0, 0.9, 8, 40.2, C.sockel, { stoss: true });   // Durchgang zum Sportplatz
   box(45.8, 46.4, 0, 0.9, 6, 40.2, C.sockel, { stoss: true });
   // Torbogen-Schild
-  const torSchild = schild('LYCÉE DES COLLINES', 9, 1.1, { bg: '#2d3d5c', rand: '#e9c46a', schrift: 'bold 150px Georgia, serif' });
+  const torSchild = schild('ANNEXE JUNGLINSTER', 9, 1.1, { bg: '#2d3d5c', rand: '#e9c46a', schrift: 'bold 150px Georgia, serif' });
   torSchild.position.set(0, 3.25, 40.0); torSchild.rotation.y = 0; schilder.push(torSchild);
   box(-8.4, 8.4, 2.6, 2.75, 39.85, 40.15, C.metallDunkel);
   box(-4.6, 4.6, 2.65, 3.9, 39.93, 40.07, C.metallDunkel);
@@ -134,7 +135,7 @@ export function baueWelt({ material, materialInnen }) {
   box(-25.8, -18.2, 0.24, 2.4, 41.15, 41.25, C.glas, { art: 'glas', stoss: true });
   box(-26.1, -17.9, 2.6, 2.75, 40.9, 43.4, C.metallDunkel);
   box(-24, -20, 0.24, 0.7, 41.3, 41.8, C.holz);
-  const busSchild = schild('Arrêt · Lycée', 1.6, 0.5, { bg: '#2fb8a8', schrift: 'bold 110px system-ui' });
+  const busSchild = schild('Arrêt · Annexe', 1.6, 0.5, { bg: '#2fb8a8', schrift: 'bold 110px system-ui' });
   busSchild.position.set(-18.2, 2.2, 43.3); busSchild.rotation.y = -Math.PI / 2; schilder.push(busSchild);
   box(-18.25, -18.15, 0.24, 2.5, 43.2, 43.4, C.metallDunkel);
 
@@ -180,7 +181,7 @@ export function baueWelt({ material, materialInnen }) {
   box(-4.2, 4.2, 0, 0.16, -2, -0.6, C.beton); box(-3.8, 3.8, 0, 0.32, -2, -1.2, C.beton);
   for (const x of [-3.6, 3.6]) { box(x - 0.3, x + 0.3, 0, 3.6, -1.6, -1.0, C.gesims, { stoss: true }); }
   box(-4.4, 4.4, 3.6, 3.95, -2.2, -0.4, C.schiefer);
-  const hausSchild = schild('LYCÉE DES COLLINES', 6.4, 0.75, { bg: '#2d3d5c', rand: '#e9c46a', schrift: 'bold 150px Georgia, serif' });
+  const hausSchild = schild('ANNEXE JUNGLINSTER', 6.4, 0.75, { bg: '#2d3d5c', rand: '#e9c46a', schrift: 'bold 150px Georgia, serif' });
   hausSchild.position.set(0, 4.45, -1.6); schilder.push(hausSchild);
   // Dach: Satteldach (First längs x) aus zwei schrägen Platten + Giebel
   const dachH = 4.4, tief = (Z1 - Z0) / 2 + 0.8;
@@ -434,7 +435,7 @@ export function baueWelt({ material, materialInnen }) {
   };
   // Bäume, Hecken, Bänke, Brunnen, Laternen, Skate-Teile, Autos (Kenney „stadt“)
   for (const [x, z] of [[-40, 4], [-40, 14], [-30, 34], [-16, 34], [14, 34], [42, 34], [-26, 2.5], [-14, 2.5], [6, 30], [42, 4]]) P('haus/tree-large', x, z, Math.random() * 6, { h: 7.5 + Math.random() * 2, fest: 0.6 });
-  for (const [x, z] of [[-34, 30], [-6, 30], [40, 12], [-44, -6], [68, -4], [-66, -14], [-34, -34], [0, -36], [34, -36]]) P('haus/tree-small', x, z, Math.random() * 6, { h: 4.5, fest: 0.4 });
+  for (const [x, z] of [[-34, 30], [-6, 30], [40, 12], [-44, -6], [68, -4], [-66, -14], [-34, -34], [34, -36]]) P('haus/tree-small', x, z, Math.random() * 6, { h: 4.5, fest: 0.4 });
   for (const [x, z, r] of [[-20, 11, 0], [-14, 11, 0], [-26, 18, Math.PI / 2], [6, 12, 0], [6, 24, 0]]) P('skate/bench', x, z, r, { h: 0.55, fest: true });
   P('platz/fountain-round-detail', -8, 18, 0, { h: 1.6, fest: 1.6 });
   for (const [x, z] of [[-44, 38], [-30, 38], [30, 38], [44, 38]]) P('platz/hedge-large', x, z, 0, { h: 1.2, fest: true });
@@ -475,6 +476,15 @@ export function baueWelt({ material, materialInnen }) {
   P('strasse/dumpster', 27.5, -4.2, 0, { h: 1.4, fest: true });
   P('platz/lantern', -4, 36, 0, { h: 2.6 }); P('platz/lantern', 4, 36, 0, { h: 2.6 });
 
+  // ================= Annexe Junglinster: Innenhof, Nordflügel, Glockenturm, Ecktürmchen (campus.js) =================
+  const extras = [];
+  baueCampus({ B, P, R, schilder, C, schild, uhrTextur, stuhl, D: 0.35, TUER_H,
+    boden: (x0, x1, z0, z1, art) => boeden.push(art === 'pflaster' ? { x0, x1, z0, z1, pflaster: true } : art === 'holz' ? { x0, x1, z0, z1, holz: true } : { x0, x1, z0, z1, c1: new THREE.Color(art.c1), c2: new THREE.Color(art.c2), s: art.s || 1.2 }),
+    extra: (m) => extras.push(m) });
+  baueCampus2({ B, P, R, schilder, C, schild, stuhl, D: 0.35, TUER_H,
+    boden: (x0, x1, z0, z1, art) => boeden.push(art === 'pflaster' ? { x0, x1, z0, z1, pflaster: true } : art === 'holz' ? { x0, x1, z0, z1, holz: true } : { x0, x1, z0, z1, c1: new THREE.Color(art.c1), c2: new THREE.Color(art.c2), s: art.s || 1.2 }),
+    extra: (m) => extras.push(m) });
+
   // Netze zusammenfassen: fest (wirft Schatten), innen (Innenausbau, Böden, kein Schatten), glas
   for (const [art, mat] of [['fest', material], ['innen', materialInnen || material], ['glas', null], ['licht', new THREE.MeshBasicMaterial({ vertexColors: true, toneMapped: false })]]) {
     if (!B.teile[art].length) continue;
@@ -485,6 +495,7 @@ export function baueWelt({ material, materialInnen }) {
     gruppe.add(m);
   }
   for (const s of schilder) gruppe.add(s);
+  for (const m of extras) gruppe.add(m);
   // Gemalte Oberflächen: Verbundpflaster auf Hof und Wegen, Rasen, Asphalt (texturen.js)
   const tP = pflaster(), tR = rasen(), tA = asphalt();
   gruppe.add(flaeche(tR, -110, 110, -120, 80, 0.003, 6));
@@ -496,11 +507,13 @@ export function baueWelt({ material, materialInnen }) {
   for (const b of boeden) {
     const x0 = Math.min(b.x0, b.x1), x1 = Math.max(b.x0, b.x1), z0 = Math.min(b.z0, b.z1), z1 = Math.max(b.z0, b.z1);
     if (b.holz) { gruppe.add(flaeche(tD, x0, x1, z0, z1, 0.1015, 4)); continue; }
+    if (b.pflaster) { gruppe.add(flaeche(tP, x0, x1, z0, z1, 0.0615, 8)); continue; }
     const k = '#' + b.c1.getHexString() + '#' + b.c2.getHexString();
     fl[k] = fl[k] || fliesenTex('#' + b.c1.getHexString(), '#' + b.c2.getHexString());
     gruppe.add(flaeche(fl[k], x0, x1, z0, z1, 0.1015, b.s * 2));
   }
 
+  Object.assign(orte, ORTE_CAMPUS, ORTE_CAMPUS2);
   const raumBei = (x, z) => raeume.find((r) => x > r.x0 && x < r.x1 && z > r.z0 && z < r.z1) || null;
   return { gruppe, kasten: B.kasten, raeume, raumBei, orte, plaetze, schilder };
 }

@@ -63,6 +63,17 @@ export const GEHEIMNISSE = [
   { id: 'raucher', x: 60.4, z: -17, r: 3, titel: 'Hinter der Turnhalle', text: 'Kippen am Boden. Die Aufsicht kommt selten hierher.' },
   { id: 'baecker', x: 2, z: 54, r: 3, titel: 'Der Bäcker gegenüber', text: 'Kirsch-Teilchen bis 10:15. Danach ist die Schlange zu lang.' },
   { id: 'automat', x: -6.4, z: -3.1, r: 1.3, titel: 'Der Snackautomat', text: 'Frisst 50-Cent-Stücke. Alle wissen es. Alle versuchen es trotzdem.' },
+  { id: 'innenhof', x: -27.5, z: -40.5, r: 3, titel: 'Der Innenhof', text: 'Hinter dem Haupthaus: Bogengänge, Blumen, Ruhe. Viele kennen ihn gar nicht.' },
+  { id: 'linde', x: 2, z: -40, r: 4, titel: 'Die alte Linde', text: 'Älter als die Schule. In der Rinde: Initialen und ein Herz.' },
+  { id: 'aula', x: -14, z: -60, r: 4, titel: 'Die Aula', text: 'Bühne, roter Vorhang, ein Klavier. Im Juni ist hier die Abschlussfeier.' },
+  { id: 'lesesaal', x: 14, z: -62, r: 4, titel: 'Der Lesesaal', text: 'Zwei Etagen Bücher. Oben auf der Galerie ist es ganz still.' },
+  { id: 'gewaechshaus', x: 15, z: -46.5, r: 2.5, titel: 'Das Gewächshaus', text: 'Tomaten, Kräuter und ein Kaktus mit Namensschild: Kevin.' },
+  { id: 'turm', x: 34, z: -53.6, r: 2.6, titel: 'Der Glockenturm', text: 'Um zwölf läutet er. Angeblich war noch nie jemand oben.' },
+  { id: 'sitzstufen', x: -16, z: -44.8, r: 3, titel: 'Die Sitzstufen', text: 'Im Sommer ist hier Unterricht draußen. Und Pause sowieso.' },
+  { id: 'musik', x: 56, z: -58, r: 3, titel: 'Der Musikraum', text: 'Ein Schlagzeug, ein Keyboard, vier Gitarren. Mittwochs probt hier eine Band.' },
+  { id: 'kunst', x: 54, z: -50, r: 3, titel: 'Der Kunstraum', text: 'Staffeleien, Farbtöpfe, ein Waschbecken voller Pinsel. Es riecht nach Farbe.' },
+  { id: 'informatik', x: 54, z: -42, r: 3, titel: 'Der Informatikraum', text: 'Achtzehn Bildschirme. Das WLAN-Passwort steht angeblich unter einem Tisch.' },
+  { id: 'sportplatz', x: -66, z: -6, r: 4, titel: 'Der Sportplatz', text: '400-Meter-Bahn. Beim Sportfest läuft sogar M. Hoffmann mit.' },
 ];
 
 // Wer im Saal 1.04 sitzt (Pulte: x = −24.8 + r·2.1 + 0.55, z = −27.2 + c·3.4 ± 0.62)
@@ -111,7 +122,7 @@ export const SCHRITTE = [
 // ---------- Gespräche ----------
 export const GESPRAECHE = {
   intro: [
-    ['erzaehler', 'Montag, 7:33 Uhr. Dein erster Tag am Lycée des Collines.'],
+    ['erzaehler', 'Montag, 7:33 Uhr. Dein erster Tag in der Annexe Junglinster.'],
     ['erzaehler', 'Neue Schule. Neue Leute. Niemand kennt dich hier.'],
     ['erzaehler', 'An der Haltestelle wartet ein Junge. Er sieht genauso neu aus.'],
   ],
@@ -290,7 +301,7 @@ export const GESPRAECHE = {
     { tu: 'gegessen' },
   ],
   gruppe: [
-    ['hoffmann', 'Plakat: „Unser Lycée“. Ihr drei. 20 Minuten. Los.'],
+    ['hoffmann', 'Plakat: „Unsere Schule“. Ihr drei. 20 Minuten. Los.'],
     ['jo', 'Ich mal das Gebäude. Ihr malt aus. Fertig.'],
     ['erzaehler', 'Lina schiebt dir einen Zettel rüber.'],
     ['erzaehler', 'Darauf steht: „Orte, wo man sich wohlfühlt?“'],

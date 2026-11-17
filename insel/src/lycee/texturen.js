@@ -118,3 +118,65 @@ export function dielen(wdh = [1, 1]) {
   }
   return textur(c, wdh);
 }
+
+// Schieferdach: überlappende Reihen kleiner Platten, leicht verschiedene Blautöne. Eine Kachel = 4 × 4 m.
+export function schiefer(wdh = [1, 1]) {
+  const N = 512, c = leinwand(N), g = c.getContext('2d'), r = zufall(21);
+  g.fillStyle = '#2c3146'; g.fillRect(0, 0, N, N);
+  const reihe = N / 16, platte = N / 12;
+  for (let y = 0; y < 16; y++) {
+    const off = (y % 2) * platte / 2;
+    for (let x = -1; x < 13; x++) {
+      const t = 0.85 + r() * 0.3;
+      g.fillStyle = hex(70 * t, 78 * t, 104 * t);
+      g.beginPath();
+      const x0 = x * platte + off + 1, y0 = y * reihe + 1, w = platte - 2, h = reihe * 1.25;
+      g.moveTo(x0, y0); g.lineTo(x0 + w, y0); g.lineTo(x0 + w, y0 + h - 4); g.quadraticCurveTo(x0 + w / 2, y0 + h + 3, x0, y0 + h - 4); g.closePath(); g.fill();
+      g.fillStyle = 'rgba(255,255,255,0.06)'; g.fillRect(x0, y0, w, 2);
+    }
+  }
+  return textur(c, wdh);
+}
+
+// Bücherrücken für hohe Regale (statt tausender Kästen): Reihen bunter Rücken auf dunklem Holz. Eine Kachel = 2 × 2 m.
+export function buecher(wdh = [1, 1]) {
+  const N = 512, c = leinwand(N), g = c.getContext('2d'), r = zufall(31);
+  const farben = ['#8e2f2a', '#2f5d8a', '#c9a227', '#2e7d4f', '#5b3f78', '#b35a2a', '#e8e1cf', '#22324e', '#7a2b48', '#3b6e6a'];
+  g.fillStyle = '#5a3a22'; g.fillRect(0, 0, N, N);
+  const fach = N / 5;
+  for (let f = 0; f < 5; f++) {
+    let x = 3; const boden = (f + 1) * fach - 10;
+    g.fillStyle = '#7a5232'; g.fillRect(0, boden, N, 10);
+    while (x < N - 6) {
+      const w = 7 + r() * 13, h = fach * (0.55 + r() * 0.35);
+      if (r() < 0.06) { x += 10; continue; }   // Lücke
+      g.fillStyle = farben[Math.floor(r() * farben.length)]; g.fillRect(x, boden - h, w, h);
+      g.fillStyle = 'rgba(255,230,150,0.55)'; if (r() < 0.6) g.fillRect(x + 1, boden - h * 0.75, w - 2, 2);
+      g.fillStyle = 'rgba(0,0,0,0.18)'; g.fillRect(x + w - 1.5, boden - h, 1.5, h);
+      x += w + 0.8;
+    }
+  }
+  return textur(c, wdh);
+}
+
+// Senkrechte Fläche mit Textur (z. B. Bücherwand). achse 'x': Fläche längs x bei z = fest, blickt nach +z (s = 1) oder −z (s = −1).
+export function wandFlaeche(tex, achse, fest, a0, a1, y0, y1, s, kachel) {
+  const t = tex.clone(); t.needsUpdate = true; t.repeat.set(Math.abs(a1 - a0) / kachel, (y1 - y0) / kachel);
+  const m = new THREE.Mesh(new THREE.PlaneGeometry(Math.abs(a1 - a0), y1 - y0), new THREE.MeshLambertMaterial({ map: t }));
+  if (achse === 'x') { m.position.set((a0 + a1) / 2, (y0 + y1) / 2, fest); m.rotation.y = s > 0 ? 0 : Math.PI; }
+  else { m.position.set(fest, (y0 + y1) / 2, (a0 + a1) / 2); m.rotation.y = s > 0 ? Math.PI / 2 : -Math.PI / 2; }
+  m.receiveShadow = true; m.name = 'wandbild';
+  return m;
+}
+
+// Schräge Dachfläche mit Textur (für Satteldächer): von der Traufe (y0, z0) bis zum First (y1, z1), Breite x0 … x1.
+export function dachFlaeche(tex, x0, x1, zTraufe, yTraufe, zFirst, yFirst, kachel = 4) {
+  const lang = Math.hypot(zFirst - zTraufe, yFirst - yTraufe);
+  const t = tex.clone(); t.needsUpdate = true; t.repeat.set((x1 - x0) / kachel, lang / kachel);
+  const m = new THREE.Mesh(new THREE.PlaneGeometry(x1 - x0, lang), new THREE.MeshLambertMaterial({ map: t, side: THREE.DoubleSide }));
+  m.position.set((x0 + x1) / 2, (yTraufe + yFirst) / 2, (zTraufe + zFirst) / 2);
+  const neig = Math.atan2(yFirst - yTraufe, Math.abs(zFirst - zTraufe));
+  m.rotation.order = 'YXZ'; m.rotation.y = zFirst > zTraufe ? Math.PI : 0; m.rotation.x = -Math.PI / 2 + neig;
+  m.castShadow = false; m.receiveShadow = true; m.name = 'dach';
+  return m;
+}

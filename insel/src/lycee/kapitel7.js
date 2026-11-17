@@ -62,7 +62,7 @@ export const GESPRAECHE7 = {
     { tu: 'weberKennt' },
     ['erzaehler', 'Es klingelt. „Boulangerie, ja?“ Hinten klappert es.'],
     { wahl: [
-      { t: '„Guten Tag. {name}, Lycée des Collines. Praktikum?“', staerke: 'telefon', dann: [['erzaehler', '„Praktikum? Haben schon zwei. Nein. Tschüss.“']] },
+      { t: '„Guten Tag. {name}, Annexe Junglinster. Praktikum?“', staerke: 'telefon', dann: [['erzaehler', '„Praktikum? Haben schon zwei. Nein. Tschüss.“']] },
       { t: '„Hallo … ich wollt fragen … also …“', dann: [['erzaehler', '„Ich hab Kundschaft. Was denn?“'], ['erzaehler', '„… Nein. Tschüss.“']] },
       { t: '(Auflegen, bevor jemand was sagt.)', staerke: 'abstand', merke: 'aufgelegt', dann: [['weber', 'Besetzt?'], ['du', '… Ja.'], ['weber', '(hebt eine Augenbraue)']] },
     ] },

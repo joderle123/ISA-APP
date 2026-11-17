@@ -28,7 +28,7 @@ const SPEICHER = 'lycee.stand';
 const lies = () => { try { return JSON.parse(localStorage.getItem(SPEICHER) || 'null'); } catch (e) { return null; } };
 const schreib = (v) => { try { if (v) localStorage.setItem(SPEICHER, JSON.stringify(v)); else localStorage.removeItem(SPEICHER); } catch (e) { /* privat/voll */ } };
 const kapName = (k) => 'Kapitel ' + k + ' · ' + KAPITEL[k];
-const FREI = { titel: 'Freies Herumlaufen', ziel: 'Schau dich im Lycée um. Das nächste Kapitel kommt bald.' };
+const FREI = { titel: 'Freies Herumlaufen', ziel: 'Schau dich in der Schule um. Das nächste Kapitel kommt bald.' };
 
 // Spielfiguren zur Wahl
 const FIGUREN = [
@@ -75,7 +75,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   const audio = createAudio();
   const speech = createSpeech({ events, audio });
 
-  await schritt(0.1, 'Das Lycée wird gebaut …');
+  await schritt(0.1, 'Die Annexe wird gebaut …');
   const veil = createVeil({ events, audio, zones: [] });
   veil.setBaseOverride(0); veil.uniforms.uVeilStrength.value = 0;
   const material = lambertVC(veil, 'lycee', { ramp: 'props' });
@@ -90,6 +90,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   scene.fog.near = 90; scene.fog.far = 420;
   // Innenräume: weiches Raumlicht, sobald man drin ist (das Dach wirft sonst alles in Schatten)
   const raumLicht = new THREE.HemisphereLight(0xfff6e6, 0xe8dcc6, 0); scene.add(raumLicht);
+  // Aufhelllicht von Norden: Schattenseiten der Gebäude (Hofseite) werden nicht fast schwarz
+  const fuellLicht = new THREE.DirectionalLight(0xfff1dc, 0.9); fuellLicht.position.set(-30, 40, -90); scene.add(fuellLicht);
 
   await schritt(0.35, 'Tische und Stühle …');
   const req = await baueRequisiten({ welt, material, scene });
@@ -153,6 +155,11 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     // Schlange beim Bäcker gegenüber
     { modell: 'frauen', stil: 'Casual', haut: '#f3d2b5', haar: '#c9a15a', oben: '#9b7bc8', unten: '#3a3f4b', schuhe: '#f2f2f2', hoehe: 1.62, steht: [3.2, 55.6, Math.PI, 'handy'] },
     { modell: 'menschen', stil: 'Beach', haut: '#c99a72', haar: '#2b1d14', oben: '#4f88c8', unten: '#2d3748', schuhe: '#ffffff', hoehe: 1.7, steht: [3.4, 54.4, Math.PI, 'redet'] },
+    // Innenhof: Sitzstufen, Linde, ein Rundgang durch die Tore
+    { modell: 'frauen', stil: 'Adventurer', haut: '#c68e64', haar: '#2b1d14', oben: '#e9c46a', unten: '#3a3f4b', schuhe: '#f2f2f2', hoehe: 1.6, steht: [-19.5, -46.25, 0, 'sitzt'] },
+    { modell: 'menschen', stil: 'Casual', haut: '#e0b48c', haar: '#6b4e3a', oben: '#4f88c8', unten: '#2d3748', schuhe: '#ffffff', hoehe: 1.72, steht: [-14.2, -46.25, 0, 'sitzt'] },
+    { modell: 'frauen', stil: 'Casual', haut: '#f3d2b5', haar: '#8a5a3a', oben: '#e85d75', unten: '#2b2b33', schuhe: '#2b2b2b', hoehe: 1.62, steht: [4.6, -42.4, 2.6, 'handy'] },
+    { modell: 'menschen', stil: 'Casual2', haut: '#9b6a45', haar: '#1b1410', oben: '#3fa66b', unten: '#3a3f4b', schuhe: '#f2f2f2', hoehe: 1.7, weg: [[-33, -20], [-33, -40.5], [-18, -40.5], [0, -34], [18, -40.5], [33, -40.5], [33, -20], [33, -40.5], [0, -34], [-33, -40.5]], tempo: 1.1 },
     // Raucherecke hinter der Turnhalle
     { modell: 'menschen', stil: 'Punk', haut: '#e0b48c', haar: '#2b1d14', oben: '#2b2b33', unten: '#4a4f5c', schuhe: '#2b2b2b', hoehe: 1.78, kopf: 'muetze', kopfFarbe: '#5a5a5a', steht: [60.2, -19.4, 1.9, 'raucht'] },
     { modell: 'frauen', stil: 'Punk', haut: '#f0c9a8', haar: '#8a5a3a', oben: '#6b4e8a', unten: '#2b2b33', schuhe: '#f2f2f2', hoehe: 1.66, steht: [61.3, -18.1, -2.6, 'handy'] },
@@ -394,7 +401,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       return [];
     },
     anruf: () => [
-      ['weber', 'Lycée des Collines, Sekretariat. Weber.'],
+      ['weber', 'Annexe Junglinster, Sekretariat. Weber.'],
       { wahl: [
         { t: '„Guten Morgen. {name}, 7P2. Bus verpasst.“', herz: { weber: 1 }, dann: [['weber', 'Mit Noah? Gut. Wann seid ihr da?']] },
         { t: '„Der Bus war zu früh!“', merke: 'busAusrede', dann: [['weber', 'Der 7:35? Der ist seit Jahren pünktlich.'], ['weber', 'Aber gut. Wann seid ihr da?']] },
@@ -986,7 +993,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (mitStart !== false && vorher && (vorher.tag !== st.tag || vorher.kap !== st.kap) && i > 0) {
       const eintraege = Object.entries(tagHerz).filter(([id, n]) => n && LEUTE[id]).map(([id, n]) => ({ name: LEUTE[id].name, farbe: LEUTE[id].farbe, n })).sort((a, b) => b.n - a.n);
       tagHerz = {};
-      await ui.rueckblick(st.tag, st.kap !== vorher.kap ? kapName(st.kap) : 'Ein neuer Tag am Lycée des Collines.', eintraege);
+      await ui.rueckblick(st.tag, st.kap !== vorher.kap ? kapName(st.kap) : 'Ein neuer Tag in der Annexe Junglinster.', eintraege);
     }
     sky.time.setTimeOfDay(st.uhr); ui.uhr(st.uhr, st.tag);
     ui.bingo(null);
@@ -1175,7 +1182,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     }
     ui.update();
   }, { order: -10, always: true });
-  loop.add((dt, t) => { camera.updateMatrixWorld(); sky.update(dt, t, camera, steuerung.pos, veil); sky.cloudMat.emissiveIntensity = 0.62; veil.update(dt, t); }, { order: 0, always: true });   // Wolken heller: keine dunklen Unterseiten
+  loop.add((dt, t) => { camera.updateMatrixWorld(); sky.update(dt, t, camera, steuerung.pos, veil); sky.cloudMat.emissiveIntensity = 0.62; fuellLicht.intensity = 0.95 * Math.max(0, Math.min(1, sky.sunDir.y * 3)); veil.update(dt, t); }, { order: 0, always: true });   // Wolken heller: keine dunklen Unterseiten
   loop.add(() => input.endFrame(), { order: 100, always: true });
   loop.start();
 

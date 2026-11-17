@@ -481,12 +481,12 @@ function Spiele({ aktiv }: { aktiv: boolean }) {
       {/* Lycée des Collines: Schulsimulator (insel/src/lycee), ebenfalls im eigenen Tab. */}
       <div className="mb-4 flex flex-wrap items-center justify-between gap-3 rounded-[var(--r-md)] border border-line bg-surface p-4" id="lycee-karte">
         <div className="min-w-0 flex-1" style={{ minWidth: 240 }}>
-          <h2 className="disp text-xl text-ink">Lycée des Collines – der Schulsimulator</h2>
-          <p className="text-sm text-muted">Ein großes Lycée zum Herumlaufen, mit einer Geschichte über die ersten Schulwochen (sieben Kapitel): jemanden ansprechen, um Hilfe bitten, Nein sagen, für andere einstehen, Mut in kleinen Schritten, das erste Praktikum. Ohne Noten – man sammelt Stärken und Herzen. Für Lehrpersonen: Auf dem Titelbild lassen sich eigene Aufgaben aus dem Unterricht eintragen.</p>
+          <h2 className="disp text-xl text-ink">Annexe Junglinster – der Schulsimulator</h2>
+          <p className="text-sm text-muted">Eine große Schule zum Herumlaufen – Innenhof mit Bogengängen, Aula, Lesesaal, Glockenturm –, mit einer Geschichte über die ersten Schulwochen (sieben Kapitel): jemanden ansprechen, um Hilfe bitten, Nein sagen, für andere einstehen, Mut in kleinen Schritten, das erste Praktikum. Ohne Noten – man sammelt Stärken und Herzen. Für Lehrpersonen: Auf dem Titelbild lassen sich eigene Aufgaben aus dem Unterricht eintragen.</p>
         </div>
         <a className="btn btn-primary" href="lycee.html" target="_blank" rel="noopener">
           <Icon name="external" />
-          Lycée spielen
+          Annexe spielen
         </a>
         <p className="w-full text-xs text-muted">Öffnet in einem eigenen Tab. Gespeichert wird nur auf diesem Gerät, mit einem ausgedachten Namen.</p>
       </div>

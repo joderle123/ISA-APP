@@ -316,7 +316,7 @@ export const GESPRAECHE2 = {
       { t: '„Ich versuch, beides zu schaffen.“', herz: { noah: 1, ayla: 1 }, merke: 'doppeltZugesagt', dann: [['noah', 'Cool!'], ['ayla', 'Cool! Ich sag’s den anderen.']] },
     ] },
     { tu: 'milaWoche' },
-    ['erzaehler', 'Der Bus kommt. Bis Montag, Lycée des Collines.'],
+    ['erzaehler', 'Der Bus kommt. Bis Montag, Annexe Junglinster.'],
     { tu: 'kapitelEnde' },
   ],
 };

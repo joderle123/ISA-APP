@@ -14,7 +14,7 @@ async function boot() {
     });
   } catch (e) {
     console.error(e);
-    status.textContent = 'Das Lycée konnte nicht laden. (' + (e && e.message ? e.message : e) + ')';
+    status.textContent = 'Das Spiel konnte nicht laden. (' + (e && e.message ? e.message : e) + ')';
   }
 }
 // Ton erst nach dem ersten Klick (Browser-Regel)

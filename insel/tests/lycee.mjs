@@ -25,7 +25,7 @@ const bild = (n) => page.screenshot({ path: join(SHOTS, 'lycee-' + n + '.png'), 
 
 await page.goto('file://' + DIST + '?test');
 await page.waitForSelector('.ly-k-titel', { timeout: 240000 });
-check('Titelbild „Lycée des Collines“', /Lycée/.test(await page.textContent('.ly-k-titel')));
+check('Titelbild „Annexe Junglinster“', /Annexe/.test(await page.textContent('.ly-k-titel')));
 // Für Lehrpersonen: eine eigene Aufgabe anlegen (Phase 2)
 await page.click('.ly-k-titel [data-a="lehrer"]');
 await page.waitForSelector('.ly-k-lehrer');

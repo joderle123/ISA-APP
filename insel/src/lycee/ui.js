@@ -123,7 +123,7 @@ export function createUI({ root, input, speech }) {
   // Titelbild: Weiter / Neu, Figur und Name wählen
   ui.titel = ({ gespeichert, figuren, lehrer }) => new Promise((ok) => {
    const zeigeTitel = () => {
-    const k = ebeneAuf('titel', '<div class="ly-t-kicker">Ein Schulsimulator</div><h1 class="ly-t-name">Lycée<br><span>des Collines</span></h1>' +
+    const k = ebeneAuf('titel', '<div class="ly-t-kicker">Ein Schulsimulator</div><h1 class="ly-t-name">Annexe<br><span>Junglinster</span></h1>' +
       '<p class="ly-t-sub">Vier Kapitel · Rentrée · Die erste Woche · Der Schnuppertag · Nein sagen</p><div class="ly-t-knoepfe">' +
       (gespeichert ? '<button type="button" class="ly-btn ly-primaer" data-a="weiter">Weiterspielen</button><button type="button" class="ly-btn" data-a="neu">Neu anfangen</button>' : '<button type="button" class="ly-btn ly-primaer" data-a="neu">Los geht’s</button>') +
       '</div><p class="ly-t-fuss">' + (matchMedia('(pointer: coarse)').matches ? 'Links wischen = laufen · rechts wischen = umschauen · E = reden · ☰ = Journal' : 'WASD / Pfeile laufen · Maus ziehen = umschauen · E = reden · Tab = Journal') + '</p>' +
@@ -402,7 +402,7 @@ export function createUI({ root, input, speech }) {
       const f = e.target.files && e.target.files[0]; if (!f) return;
       if (f.size > 200000) { meldung('Die Datei ist zu groß.'); return; }
       f.text().then((t) => { let b = null; try { b = bereinige(JSON.parse(t)); } catch (x) { b = null; }
-        if (!b) { meldung('Diese Datei enthält keine Aufgaben für das Lycée.'); return; }
+        if (!b) { meldung('Diese Datei enthält keine Aufgaben für das Spiel.'); return; }
         p = b; $('[data-f="titel"]').value = p.titel; $('[data-f="pflicht"]').checked = p.pflicht; bearbeite = -1; liste(); formular(); meldung('Geladen: ' + p.aufgaben.length + ' Aufgaben. „Speichern“ übernimmt sie.'); });
     };
     $('[data-a="beispiel"]').onclick = () => { zuruecksetzen(); p = JSON.parse(JSON.stringify(paket.eigen ? paket : paket)); meldung('Beispiel-Aufgaben wieder aktiv. Eigene Aufgaben auf diesem Gerät gelöscht.'); ebeneZu(); ok(); };
