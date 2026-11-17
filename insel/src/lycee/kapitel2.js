@@ -22,7 +22,7 @@ export const LEUTE2 = {
 };
 
 export const ORTE2 = {
-  turnhalleTuer: { x: 46, z: -3.4, yaw: Math.PI },
+  turnhalleTuer: { x: 46, z: -0.5, yaw: Math.PI },
   meinPlatz: { x: -22.1, z: -24.4 },
 };
 
