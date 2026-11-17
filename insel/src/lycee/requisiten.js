@@ -1,17 +1,18 @@
 // Lycée-Simulator – Möbel, Bäume, Fahrzeuge und Essen aus den Modell-Paketen (CC0):
 //   lycee.glb  – Quaternius (Möbel, Einrichtung, Innenräume, Verkehr, Straße, Essen), Farben linear in den Eckpunkten
-//   stadt.glb  – Kenney (Bäume, Hecken, Bänke, Brunnen, Skate-Teile, Autos), Farben sRGB in den Eckpunkten
+//   kenney.glb – Kenney (Bäume, Hecken, Bänke, Brunnen, Skate-Teile, Autos), Farben sRGB in den Eckpunkten
 // welt.js legt fest, was wo steht (plaetze: { m, x, z, rot, h | s, y, fest, id }); hier wird jedes Modell auf seine Zielhöhe
 // gebracht, mittig auf den Punkt gestellt und alles Feste zu EINEM Netz mit dem Toon-Material zusammengefasst.
 // fest: true = Grundriss als Kollisionskasten · Zahl = kleiner Kasten dieser halben Breite (Baumstamm) · id = eigenes Netz.
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+import { MeshoptDecoder } from 'three/examples/jsm/libs/meshopt_decoder.module.js';
 import lyceeBin from './modelle/lycee.glb';
-import stadtBin from '../respawn/modelle/stadt.glb';
+import stadtBin from './modelle/kenney.glb';   // Auswahl aus respawn/modelle/stadt.glb (tools/lycee/kenney-auswahl.mjs)
 import { mergeAll } from './welt.js';
 
 const puffer = (b) => b.buffer.slice(b.byteOffset, b.byteOffset + b.byteLength);
-function parse(buf) { return new Promise((ok, nein) => new GLTFLoader().parse(buf, '', ok, nein)); }
+function parse(buf) { return new Promise((ok, nein) => new GLTFLoader().setMeshoptDecoder(MeshoptDecoder).parse(buf, '', ok, nein)); }
 
 async function lade(bin, srgb) {
   const gltf = await parse(puffer(bin));

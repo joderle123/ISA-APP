@@ -34,6 +34,7 @@ await page.waitForFunction(() => window.LYCEE && window.LYCEE.zustand && window.
 check('Figur 2 und Name gewählt', (await L(() => [LYCEE.zustand.figur, LYCEE.zustand.name])).join() === '1,Robin');
 
 // Gespräche durchklicken: immer die erste Antwort (Index wahl), sonst weiter; Freiwurf: werfen; Ende: weiter herumlaufen
+let ichWahl = [];
 async function klick(wahl = 0, max = 80) {
   for (let i = 0; i < max; i++) {
     const z = await L(() => {
@@ -49,6 +50,10 @@ async function klick(wahl = 0, max = 80) {
     else if (z === 'ebene:spiel') { await page.keyboard.press('KeyE'); await page.waitForTimeout(900); }
     else if (z === 'ebene:ende') return 'ende';
     else if (z === 'ebene:bild') await page.waitForTimeout(600);
+    else if (z === 'ebene:handy') await page.keyboard.press('KeyE');
+    else if (z === 'ebene:saege') { await page.keyboard.press('KeyE'); await page.waitForTimeout(900); }
+    else if (z === 'ebene:atem') { if (await page.isVisible('.ly-k-atem [data-a="weiter"]')) await page.keyboard.press('KeyE'); else await page.waitForTimeout(400); }
+    else if (z === 'ebene:ich') { if (await page.isVisible('.ly-k-ich [data-a="sagen"]')) await page.keyboard.press('KeyE'); else await page.keyboard.press('Digit' + (ichWahl.shift() || 1)); }
     await page.waitForTimeout(120);
   }
 }
@@ -113,10 +118,68 @@ await page.keyboard.press('Escape');
 await L(() => LYCEE.teleport({ x: -8, z: 16 })); await page.waitForFunction(() => LYCEE.zustand.entdeckt.includes('brunnen'), null, { timeout: 30000, polling: 300 }).catch(() => {});
 check('Entdeckt: Der Brunnen', (await L(() => LYCEE.zustand.entdeckt)).includes('brunnen'));
 const e = await geh('bus', 0);
-check('Kapitel-Ende mit Bilanz', e === 'ende' && /Dein erster Tag/.test(await page.textContent('.ly-k-ende')));
+check('Kapitel-Ende mit Bilanz und „Weiter: Kapitel 2“', e === 'ende' && /Dein erster Tag/.test(await page.textContent('.ly-k-ende')) && await page.isVisible('.ly-k-ende [data-a="weiter"]'));
 await bild('6-ende');
+await page.click('.ly-k-ende [data-a="weiter"]');
+await page.waitForFunction(() => LYCEE.schritt === 'di_sport' && LYCEE.leute.sommer && LYCEE.leute.sommer.f.group.visible);
+await klick();
+check('Kapitel 2, Dienstag: Sport, Uhr zeigt „Di“', /Kapitel 2/.test(await page.textContent('.ly-auftrag')) && /^Di /.test(await page.textContent('.ly-uhr')));
+await bild('7-turnhalle');
+await rede('sommer', 0);
+check('Turnschuhe vergessen: ehrlich gesagt → Stärke „Ehrlich sein“', (await L(() => LYCEE.zustand.staerken.ehrlich)) === 1);
+check('Teams wählen', (await schritt()) === 'di_teams');
+await rede('jo', 0);
+check('Lina ins Team geholt, Korbwurf gespielt', (await L(() => LYCEE.zustand.merke.linaTeam)) === true && typeof (await L(() => LYCEE.zustand.merke.korb)) === 'number');
+check('Mittwoch: Mathe im CDI', (await schritt()) === 'mi_cdi');
+await klick();
+await rede('chiara', 0);
+check('Mathe: um Hilfe gebeten, ½ + ¼ = ¾ gelernt (Lernkarte)', (await L(() => LYCEE.zustand.merke.matheRichtig)) === true && (await L(() => (LYCEE.zustand.lernkarten || []).length)) === 1);
+check('AG wählen', (await schritt()) === 'mi_ag');
+await geh('pinnwand', 2);
+check('Schulgarten-AG gewählt → „Selbst entscheiden“', (await L(() => LYCEE.zustand.merke.agGarten)) === true && (await L(() => LYCEE.zustand.staerken.entscheiden)) === 1);
+check('Donnerstag: Klassenchat', (await schritt()) === 'do_chat');
+await klick();
+await geh('preau', 0);
+check('Chat: „Lösch das bitte“ → Stärke „Für andere einstehen“', (await L(() => LYCEE.zustand.merke.chatMut)) === true && (await L(() => LYCEE.zustand.staerken.mut)) === 1);
+await rede('mila', 0);
+check('Mila getröstet, zusammen zum SePAS', (await schritt()) === 'do_sepas');
+await rede('kaya', 0);
+check('Freitag: Mathe-Test', (await schritt()) === 'fr_test');
+await L(() => { LYCEE.ui.atemMs = 250; });
+await klick();
+await geh('meinPlatz', 0);
+check('Am Platz gesessen, geatmet → Stärke „Sich beruhigen“', (await L(() => LYCEE.zustand.staerken.atmen)) === 1);
+check('Klassenrat', (await schritt()) === 'fr_rat');
+ichWahl = [4, 1, 1, 1];   // erst die Du-Botschaft (Tipp erscheint), dann richtig
+await rede('hoffmann', 0);
+check('Ich-Botschaft gebaut (nach dem Tipp)', /^Ich fühle mich unwohl, wenn Fotos ohne Fragen geteilt werden\. Ich wünsche mir, dass wir vorher fragen\.$/.test(await L(() => LYCEE.zustand.merke.ichSatz)), await L(() => LYCEE.zustand.merke.ichSatz));
+check('Wochenende', (await schritt()) === 'fr_heim');
+const e2 = await geh('bus', 0);
+check('Kapitel 2 geschafft: „Deine erste Woche“', e2 === 'ende' && /Deine erste Woche/.test(await page.textContent('.ly-k-ende')));
+await bild('8-woche');
+await page.click('.ly-k-ende [data-a="weiter"]');
+await page.waitForFunction(() => LYCEE.schritt === 'k3_bus');
+await klick();
+check('Kapitel 3 „Der Schnuppertag“: Bus verpasst', /Kapitel 3/.test(await page.textContent('.ly-auftrag')));
+await rede('noah', 0);
+check('Im Sekretariat angerufen → Stärke „Telefonieren“', (await L(() => LYCEE.zustand.staerken.telefon)) === 1);
+check('Zu spät in die Klasse', (await schritt()) === 'k3_spaet');
+await rede('hoffmann', 0);
+check('Werkstatt', (await schritt()) === 'k3_atelier');
+await bild('9-werkstatt');
+await rede('becker', 0);
+check('Sicherheitsregeln → „Auf Sicherheit achten“', (await L(() => LYCEE.zustand.staerken.sicher)) === 1);
+await geh('werkbank', 0);
+check('Gemessen und gesägt (Abweichung in cm)', typeof (await L(() => LYCEE.zustand.merke.saege)) === 'number');
+check('Zu zweit mit Kenan', (await schritt()) === 'k3_kenan');
+await rede('kenan', 0);
+await rede('becker', 0);
+check('Rückmeldung angenommen, Beruf: Holz', (await L(() => LYCEE.zustand.staerken.rueckmeldung)) === 1 && (await L(() => LYCEE.zustand.merke.berufHolz)) === true);
+check('Heimweg', (await schritt()) === 'k3_heim');
+const e3 = await geh('bus', 0);
+check('Kapitel 3 geschafft: „Dein Schnuppertag“', e3 === 'ende' && /Dein Schnuppertag/.test(await page.textContent('.ly-k-ende')));
 await page.click('.ly-k-ende [data-a="frei"]'); await page.waitForTimeout(500);
-check('Danach frei herumlaufen, Kapitel als geschafft gespeichert', (await L(() => LYCEE.zustand.fertig)) === true && /Freies Herumlaufen/.test(await page.textContent('.ly-auftrag')));
+check('Danach frei herumlaufen, als geschafft gespeichert', (await L(() => LYCEE.zustand.fertig)) === true && /Freies Herumlaufen/.test(await page.textContent('.ly-auftrag')));
 check('Keine Fehler in der Konsole', fehler.length === 0, fehler.slice(0, 5));
 check('Kein Netz', netz.length === 0, netz.slice(0, 5));
 console.log(`lycee :: ${ok} ok, ${bad} Fehler  (Bilder in ${SHOTS})`);

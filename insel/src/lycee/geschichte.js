@@ -311,5 +311,15 @@ export const GESPRAECHE = {
   ],
 };
 
+// ---------- Kapitel 2 und folgende ----------
+import { SCHRITTE2, GESPRAECHE2, LEUTE2, STAERKEN2 } from './kapitel2.js';
+import { SCHRITTE3, GESPRAECHE3, LEUTE3, STAERKEN3 } from './kapitel3.js';
+export const KAPITEL = { 1: 'Rentrée', 2: 'Die erste Woche', 3: 'Der Schnuppertag' };
+for (const st of SCHRITTE) { st.kap = st.kap || 1; st.tag = st.tag || 'Montag'; }
+SCHRITTE.push(...SCHRITTE2, ...SCHRITTE3);
+Object.assign(GESPRAECHE, GESPRAECHE2, GESPRAECHE3);
+Object.assign(LEUTE, LEUTE2, LEUTE3);
+Object.assign(STAERKEN, STAERKEN2, STAERKEN3);
+
 // Sprecher-Namen und Farben (Erzähler, du)
 export const SPRECHER = { erzaehler: { name: '', farbe: '#5b6472' }, du: { name: 'Du', farbe: '#2b3a55' } };

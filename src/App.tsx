@@ -267,7 +267,7 @@ export default function App() {
     { id: 'bibliothek', name: 'Blätter', icon: 'book' },
     // „Skills“ statt „Kurs“: neben dem Reiter „Kurse“ (Kurs-Bibliothek) sonst verwechselbar
     ...(kurs ? [{ id: 'kurs' as const, name: 'Skills', icon: 'stairs' as const }] : []),
-    { id: 'spiele', name: 'Spiele', zusatz: 'CREW · RESPAWN', icon: 'game' },
+    { id: 'spiele', name: 'Spiele', zusatz: 'CREW · RESPAWN · Lycée', icon: 'game' },
     { id: 'beruf', name: 'Beruf', zusatz: 'CCP · DAP', icon: 'briefcase' },
     { id: 'team', name: 'Team', icon: 'folder', n: teamMaterial.length },
   ]
@@ -477,6 +477,18 @@ function Spiele({ aktiv }: { aktiv: boolean }) {
           RESPAWN spielen
         </a>
         <p className="w-full text-xs text-muted">Öffnet in einem eigenen Tab. Gespeichert wird nur auf diesem Gerät, ohne Namen.</p>
+      </div>
+      {/* Lycée des Collines: Schulsimulator (insel/src/lycee), ebenfalls im eigenen Tab. */}
+      <div className="mb-4 flex flex-wrap items-center justify-between gap-3 rounded-[var(--r-md)] border border-line bg-surface p-4" id="lycee-karte">
+        <div className="min-w-0 flex-1" style={{ minWidth: 240 }}>
+          <h2 className="disp text-xl text-ink">Lycée des Collines – der Schulsimulator</h2>
+          <p className="text-sm text-muted">Ein großes Lycée zum Herumlaufen, mit einer Geschichte über die ersten Schultage: jemanden ansprechen, um Hilfe bitten, Nein sagen, für andere einstehen. Ohne Noten – man sammelt Stärken und Herzen.</p>
+        </div>
+        <a className="btn btn-primary" href="lycee.html" target="_blank" rel="noopener">
+          <Icon name="external" />
+          Lycée spielen
+        </a>
+        <p className="w-full text-xs text-muted">Öffnet in einem eigenen Tab. Gespeichert wird nur auf diesem Gerät, mit einem ausgedachten Namen.</p>
       </div>
       <iframe
         src="crew/start.html"

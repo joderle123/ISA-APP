@@ -22,5 +22,13 @@ und mit `@gltf-transform/cli`: `merge`, `weld`, `quantize --quantize-position 14
 dasselbe Skelett (62 Knochen) wie `src/respawn/modelle/menschen.glb` – und den Bewegungen Idle, Idle_Neutral, Walk, Run,
 Wave, Interact, HitRecieve, Death, Roll. Erzeugen: `python tools/lycee/frauen.py -- <ordner mit den .gltf> frauen.glb`.
 
-Dazu nutzt der Lycée-Simulator aus RESPAWN: `menschen.glb` (Männer, Quaternius, CC0) und `stadt.glb` (Kenney, CC0:
-Bäume, Hecken, Bänke, Brunnen, Skate-Elemente, Autos, Straßenteile).
+## menschen.glb, kenney.glb
+- `menschen.glb` = `src/respawn/modelle/menschen.glb` („Ultimate Modular Men“, Quaternius, CC0), nur gepackt.
+- `kenney.glb` = Auswahl aus `src/respawn/modelle/stadt.glb` (Kenney, CC0): Bäume, Hecken, Bänke, Brunnen,
+  Skate-Elemente, Autos, Blumen, Kisten, Werkbank. Erzeugen:
+  `node tools/lycee/kenney-auswahl.mjs stadt.glb kenney-roh.glb haus/tree-large haus/tree-small …`
+
+## Gepackt (17.11.2026)
+Alle vier Dateien sind mit Meshopt gepackt (`gltf-transform meshopt <ein> <aus> --level medium`, Erweiterung
+EXT_meshopt_compression; das Spiel entpackt mit `three/examples/jsm/libs/meshopt_decoder.module.js`).
+Das Spiel wird so von 22 MB auf rund 6 MB kleiner.

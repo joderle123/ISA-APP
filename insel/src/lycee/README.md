@@ -3,7 +3,7 @@
 Ein offenes Lycée zum Herumlaufen mit einer klaren Hauptgeschichte. Ziel: soziale Situationen
 des Schulalltags üben, ruhig und ohne Bewertung. Für Jugendliche der Annexe.
 
-**Spielen:** `dist/lycee.html` im Browser öffnen (eine Datei, läuft ohne Internet).
+**Spielen:** `dist/lycee.html` im Browser öffnen (eine Datei, rund 6,6 MB, läuft ohne Internet).
 Bauen: `node build-lycee.mjs` · Test: `node tests/lycee.mjs` (spielt Kapitel 1 ganz durch).
 
 ## Stil
@@ -18,6 +18,15 @@ alles zusammenpasst.
   Schulhof mit Brunnen, Korbballfeld, Fahrradständern, Bushaltestelle und Straße.
 - **Kapitel 1 „Rentrée“** (geschichte.js): Bus · Sekretariat · Gang · Klasse · Klassen-Bingo ·
   Pause (Mila oder Freiwürfe) · Kantine (Vordrängeln) · Tischwahl · Gruppenarbeit · Heimweg.
+- **Kapitel 2 „Die erste Woche“** (kapitel2.js): Dienstag Sport (Turnschuhe vergessen, Teams wählen, Korbwurf,
+  Kritik aushalten) · Mittwoch Mathe im CDI (um Hilfe bitten; kleine Bruch-Aufgabe als Vorgeschmack auf Phase 2) und
+  AG wählen · Donnerstag gemeines Foto im Klassenchat, Mila trösten, gemeinsam zum SePAS · Freitag Mathe-Test mit
+  Atemübung, Klassenrat mit Ich-Botschaft (Baukasten; ein Vorwurf wird freundlich zurückgegeben), Wochenende.
+- **Kapitel 3 „Der Schnuppertag“** (kapitel3.js): Bus verpasst – im Sekretariat anrufen (Telefonat mit Name,
+  Klasse, Grund, Ankunft) · zu spät in die Klasse · Werkstatt mit Meister Becker: Sicherheitsregeln, Messen und
+  Sägen (Spiel), Fehler zugeben, Regal zu zweit mit Kenan (erinnert sich an Kapitel 1), Rückmeldung annehmen,
+  sagen, was einen beruflich interessiert. Brücke zu Phase 3 (DAP/CCP).
+- **Lebendiger Hof:** Statisten laufen über Hof und Gang.
 - **Ohne Bewertung:** Jede Wahl hat eine ruhige Folge bei den Menschen (Herzen). Gezeigte
   Stärken werden gesammelt (Kontakt aufnehmen, Freundlich und klar, Zuhören, Ruhig bleiben …).
 - **Journal (Tab / ☰):** Menschen, Stärken, Stundenplan, Entdeckungen (8 Orte).
@@ -29,5 +38,5 @@ Sitzen) · `steuerung.js` Laufen und Kamera · `geschichte.js` Kapitel, Gespräc
 `ui.js` Oberfläche · `spiel.js` Kern · `main.js`, `shell.html`, `stil.css`.
 
 ## Nächste Schritte
-Kapitel 2 „Die erste Woche“, Sitzen auch für die Spielfigur, Phase 2 (eigenes Unterrichtsmaterial
+Kapitel 4, Phase 2 (eigenes Unterrichtsmaterial
 als Aufgaben in der Hauptgeschichte), Phase 3 (Werkstatt: Arbeitssimulator DAP/CCP).

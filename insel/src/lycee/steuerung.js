@@ -49,7 +49,11 @@ export function createSteuerung({ camera, input, welt, figur = null }) {
     return [x, z];
   }
   s.loese = loese;
-  s.teleport = (x, z, yaw) => { pos.set(x, 0, z); if (yaw !== undefined) { s.yaw = yaw; s.cam.yaw = yaw; } s.tempo = 0; if (s.figur) { s.figur.group.position.copy(pos); s.figur.group.rotation.y = s.yaw; } kamera(1, true); };
+  // Hinsetzen (Stuhl): Figur sitzt, bis man sich bewegt
+  s.sitzt = false;
+  s.setzen = (x, z, yaw) => { s.teleport(x, z, yaw); s.sitzt = true; if (s.figur && s.figur.sitzen) s.figur.sitzen(true); };
+  const aufstehen = () => { if (!s.sitzt) return; s.sitzt = false; if (s.figur && s.figur.sitzen) s.figur.sitzen(false); pos.x += Math.sin(s.yaw) * -0.5; pos.z += Math.cos(s.yaw) * -0.5; };
+  s.teleport = (x, z, yaw) => { if (s.sitzt) { s.sitzt = false; if (s.figur && s.figur.sitzen) s.figur.sitzen(false); } pos.set(x, 0, z); if (yaw !== undefined) { s.yaw = yaw; s.cam.yaw = yaw; } s.tempo = 0; if (s.figur) { s.figur.group.position.copy(pos); s.figur.group.rotation.y = s.yaw; } kamera(1, true); };
 
   // Strahl gegen Kästen (für die Kamera): kleinster Treffer-Abstand t in [0, maxT]
   const alle = welt.kasten.filter((k) => k.y1 - k.y0 > 0.5);
@@ -103,7 +107,8 @@ export function createSteuerung({ camera, input, welt, figur = null }) {
     // Blick drehen
     c.yaw -= st.look.dx * 0.0052; c.pitch = Math.max(c.minPitch, Math.min(c.maxPitch, c.pitch + st.look.dy * 0.0036));
     c.ziel = Math.max(2.4, Math.min(9, c.ziel + st.zoom * 0.6));
-    const mx = s.frei ? st.move.x : 0, my = s.frei ? st.move.y : 0;
+    let mx = s.frei ? st.move.x : 0, my = s.frei ? st.move.y : 0;
+    if (s.sitzt) { if (Math.hypot(mx, my) > 0.3) aufstehen(); else { mx = 0; my = 0; } }
     const staerke = Math.min(1, Math.hypot(mx, my));
     const will = staerke > 0.05 ? (st.run && staerke > 0.6 ? RENNEN : GEHEN * Math.max(0.5, staerke)) : 0;
     s.tempo += (will - s.tempo) * Math.min(1, dt * (will > s.tempo ? 8 : 12));
@@ -125,7 +130,7 @@ export function createSteuerung({ camera, input, welt, figur = null }) {
     pos.y = (pos.z > -2 && pos.z < -0.6 && Math.abs(pos.x) < 4.2) ? 0.16 : 0;
     if (s.figur) {
       s.figur.group.position.copy(pos); s.figur.group.rotation.y = s.yaw;
-      const lauf = s.tempo > 3.2 ? 'Run' : s.tempo > 0.3 ? 'Walk' : 'Idle';
+      const lauf = s.sitzt ? 'Idle' : s.tempo > 3.2 ? 'Run' : s.tempo > 0.3 ? 'Walk' : 'Idle';
       s.figur.spiele(lauf, { tempo: lauf === 'Walk' ? Math.max(0.7, s.tempo / GEHEN) : 1 });
     }
     s.laeuft = s.tempo > 0.3;

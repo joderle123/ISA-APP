@@ -141,3 +141,35 @@ kbd { display: inline-block; min-width: 1.5em; padding: 0 .35em; margin-right: .
   .ly-w-figuren { grid-template-columns: repeat(2, 1fr); }
   .ly-toasts { top: 70px; }
 }
+
+/* Im Gespräch: Aktionsknopf und Hinweis weg (das Gespräch hat „Weiter“), auf schmalen Bildschirmen auch die Bingo-Karte */
+.ly-im-dialog .ly-akt, .ly-im-dialog .ly-hinweis { display: none !important; }
+@media (max-width: 640px) {
+  .ly-im-dialog .ly-bingo { display: none; }
+  .ly-toasts { top: auto; bottom: 200px; right: 12px; left: 12px; align-items: stretch; }
+  .ly-toast { max-width: none; }
+  .ly-d-text { font-size: 18px; }
+  .ly-bingo { left: 12px; right: 112px; width: auto; bottom: 28px; }
+}
+@media (max-width: 640px) { .ly-touch .ly-hinweis { bottom: 236px; } }
+
+/* Kapitel 2: Handy, Atmen, Ich-Botschaft */
+.ly-k-handy { width: min(360px, 100%); padding: 0; overflow: hidden; border-radius: 34px; border: 8px solid #1f2a3d; background: #eef1f6; }
+.ly-h-kopf { padding: 16px 18px 12px; background: #2d3d5c; color: #fff; font-weight: 900; }
+.ly-h-verlauf { display: flex; flex-direction: column; gap: 10px; padding: 16px 14px; min-height: 260px; }
+.ly-h-msg { align-self: flex-start; max-width: 85%; padding: 8px 12px; border-radius: 4px 16px 16px 16px; background: #fff; box-shadow: 0 1px 2px rgba(0,0,0,.08); font-size: 15px; font-weight: 600; }
+.ly-h-msg b { display: block; font-size: 12.5px; color: #8a5a3a; }
+.ly-h-bild { margin: 6px 0; height: 90px; border-radius: 10px; display: grid; place-items: center; background: linear-gradient(135deg, #c9d6e8, #e9dcc8); color: var(--ink2); font-weight: 800; filter: blur(.4px); }
+.ly-k-handy .ly-btn { display: block; width: calc(100% - 28px); margin: 0 14px 18px; }
+.ly-k-atem { text-align: center; }
+.ly-atem { position: relative; height: 230px; display: grid; place-items: center; }
+.ly-atem-kreis { position: absolute; width: 90px; height: 90px; border-radius: 50%; background: radial-gradient(circle at 40% 35%, #bfe3f5, #6fa9d6); box-shadow: 0 0 0 10px rgba(111, 169, 214, .18); transition: transform 4s ease-in-out; }
+.ly-atem-kreis.ein { transform: scale(2.2); }
+.ly-atem-kreis.aus { transform: scale(1); }
+.ly-atem-text { position: relative; font-size: 22px; font-weight: 900; color: var(--blau); }
+.ly-ich-satz { min-height: 64px; padding: 12px 14px; margin-bottom: 14px; border-radius: 14px; background: #fff; border: 2px dashed var(--rand); font-size: 18px; font-weight: 800; line-height: 1.45; color: var(--blau); }
+.ly-ich-tipp { margin: 0 0 10px; padding: 10px 12px; border-radius: 12px; background: #fff6dc; color: #6b4e1e; font-weight: 700; }
+.ly-ich-gut { font-weight: 800; color: var(--gruen); }
+@media (prefers-reduced-motion: reduce) { .ly-atem-kreis { transition-duration: 1s; } }
+.ly-k-saege { text-align: center; }
+.ly-k-saege canvas { width: 100%; max-width: 560px; border-radius: 16px; background: #eef1f6; touch-action: none; }

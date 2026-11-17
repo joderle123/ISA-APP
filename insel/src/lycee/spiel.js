@@ -16,12 +16,15 @@ import { baueRequisiten } from './requisiten.js';
 import { ladePerson, namensschild, SITZ } from './figuren.js';
 import { createSteuerung } from './steuerung.js';
 import { createUI } from './ui.js';
-import { SCHRITTE, GESPRAECHE, LEUTE, STAERKEN, BINGO, GEHEIMNISSE, SPRECHER } from './geschichte.js';
+import { SCHRITTE, GESPRAECHE, LEUTE, STAERKEN, BINGO, GEHEIMNISSE, SPRECHER, KAPITEL } from './geschichte.js';
+import { ORTE2, CHAT, ichBotschaftThema } from './kapitel2.js';
+import { ORTE3, saegeFolgen } from './kapitel3.js';
 
 const SPEICHER = 'lycee.stand';
 const lies = () => { try { return JSON.parse(localStorage.getItem(SPEICHER) || 'null'); } catch (e) { return null; } };
 const schreib = (v) => { try { if (v) localStorage.setItem(SPEICHER, JSON.stringify(v)); else localStorage.removeItem(SPEICHER); } catch (e) { /* privat/voll */ } };
-const KAPITEL = 'Kapitel 1 · Rentrée';
+const kapName = (k) => 'Kapitel ' + k + ' · ' + KAPITEL[k];
+const FREI = { titel: 'Freies Herumlaufen', ziel: 'Schau dich im Lycée um. Das nächste Kapitel kommt bald.' };
 
 // Spielfiguren zur Wahl
 const FIGUREN = [
@@ -63,6 +66,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   const material = lambertVC(veil, 'lycee', { ramp: 'props' });
   const materialInnen = lambertVC(veil, 'lycee-innen', { ramp: 'props' });
   const welt = baueWelt({ material, materialInnen });
+  Object.assign(welt.orte, ORTE2, ORTE3);
   scene.add(welt.gruppe);
   const sky = createSky({ scene, renderer: rr.renderer, audio, quality: q, events });
   sky.time.paused = true;
@@ -112,7 +116,43 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       p.f.group.position.copy(p.pos); p.f.group.rotation.y = yaw;
       p.f.spiele(haltung === 'redet' ? 'Interact' : 'Idle', { tempo: haltung === 'redet' ? 0.35 : 1 });
     }
-    steuerung.hindernisse = Object.values(leute).filter((p) => p.f.group.visible).map((p) => ({ x: p.pos.x, z: p.pos.z, r: 0.3 }));
+    feste = Object.values(leute).filter((p) => p.f.group.visible).map((p) => ({ x: p.pos.x, z: p.pos.z, r: 0.3 }));
+    steuerung.hindernisse = feste.concat(statisten.map((x) => x.h));
+  }
+
+  // ---------- Statisten: andere Schülerinnen und Schüler, die über Hof und Gang laufen (nur Kulisse) ----------
+  let feste = [];
+  const statisten = [];
+  const STATISTEN = [
+    { modell: 'menschen', stil: 'Casual', haut: '#e8bf9a', haar: '#5a3a24', oben: '#7b8794', unten: '#2d3748', schuhe: '#ffffff', weg: [[-36, 22], [-10, 28], [16, 24], [8, 12], [-24, 8]], tempo: 1.25 },
+    { modell: 'frauen', stil: 'Casual', haut: '#c68e64', haar: '#1b1410', oben: '#e9c46a', unten: '#3a3f4b', schuhe: '#f2f2f2', weg: [[12, 34], [40, 32], [42, 6], [14, 10]], tempo: 1.15 },
+    { modell: 'frauen', stil: 'Punk', haut: '#f0c9a8', haar: '#8a5a3a', oben: '#4f88c8', unten: '#2b2b33', schuhe: '#2b2b2b', weg: [[-40, 30], [-40, 4], [-30, 16]], tempo: 1.05 },
+    { modell: 'menschen', stil: 'Beach', haut: '#9b6a45', haar: '#1b1410', oben: '#e85d75', unten: '#4a4f5c', schuhe: '#f2f2f2', weg: [[-27, -15.0], [27, -15.0]], tempo: 1.2 },
+    { modell: 'frauen', stil: 'Adventurer', haut: '#e0b48c', haar: '#2b1d14', oben: '#3fa66b', unten: '#2d3748', schuhe: '#6b4e3a', weg: [[25, -15.3], [-25, -15.3]], tempo: 1.1 },
+    { modell: 'menschen', stil: 'Casual2', haut: '#f1c7a2', haar: '#d9b36a', oben: '#2fb8a8', unten: '#3a3f4b', schuhe: '#2b2b2b', weg: [[-4.5, 38], [-4.5, 3], [-1, 3], [-1, 38]], tempo: 1.3 },
+  ];
+  async function statistenLaden() {
+    for (const d of STATISTEN) {
+      const f = await ladePerson(veil, d);
+      scene.add(f.group); f.spiele('Walk', { tempo: d.tempo / 1.4 });
+      const p = new THREE.Vector3(d.weg[0][0], 0, d.weg[0][1]);
+      statisten.push({ d, f, p, i: 1, warte: Math.random() * 3, h: { x: p.x, z: p.z, r: 0.3 } });
+    }
+  }
+  function statistenBewegen(dt) {
+    for (const x of statisten) {
+      x.f.update(dt);
+      if (x.warte > 0) { x.warte -= dt; if (x.warte <= 0) x.f.spiele('Walk', { tempo: x.d.tempo / 1.4 }); continue; }
+      const [zx, zz] = x.d.weg[x.i];
+      const dx = zx - x.p.x, dz = zz - x.p.z, d = Math.hypot(dx, dz);
+      if (d < 0.3) { x.i = (x.i + 1) % x.d.weg.length; if (Math.random() < 0.35) { x.warte = 2 + Math.random() * 4; x.f.spiele('Idle'); } continue; }
+      // dem Spieler ausweichen: kurz stehen bleiben, wenn er direkt davor steht
+      const sp = steuerung.pos; if (Math.hypot(sp.x - x.p.x, sp.z - x.p.z) < 0.9) continue;
+      x.p.x += dx / d * x.d.tempo * dt; x.p.z += dz / d * x.d.tempo * dt;
+      const yaw = Math.atan2(dx, dz); let dy = yaw - x.f.group.rotation.y; dy = Math.atan2(Math.sin(dy), Math.cos(dy));
+      x.f.group.rotation.y += dy * Math.min(1, dt * 6);
+      x.f.group.position.copy(x.p); x.h.x = x.p.x; x.h.z = x.p.z;
+    }
   }
 
   // ---------- Spielfigur ----------
@@ -148,7 +188,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   }
 
   // ---------- Gespräche ----------
-  let imGespraech = false, sperreBis = 0;   // nach einem Gespräch kurz kein neues (Echtzeit, auch auf langsamen Geräten)
+  let imGespraech = false, sperreBis = 0, danach = null;   // nach einem Gespräch kurz kein neues (Echtzeit, auch auf langsamen Geräten)
   const gesperrt = () => performance.now() < sperreBis;
   const ersetze = (t) => String(t).replace(/\{name\}/g, S ? S.name : 'Sam');
   function sprecher(wer) {
@@ -193,6 +233,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     imGespraech = true; input.setEnabled(false); steuerung.frei = false; ui.hinweis(null);
     try { await spiele(zeilen); } finally {
       ui.dialogZu(); imGespraech = false; input.setEnabled(true); steuerung.frei = true; steuerung.fokus = null; gegenueber = null; sperreBis = performance.now() + 350; sichern();
+      if (danach) { const d = danach; danach = null; await d(); }
     }
   }
 
@@ -210,7 +251,12 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       return t >= 3 ? [['yusuf', t + ' von 5! Respekt.']] : [['ben', t + ' von 5. Passt. Übung macht’s.']];
     },
     tablett: () => { ui.toast('🍽 Mit Tablett. Such dir einen Platz.'); },
-    gegessen: () => {},
+    gegessen: async () => {   // Spielfigur setzt sich mit an den Tisch (gegenüber)
+      const sitz = S.merke.tisch === 'mila' ? [19.55, -4.9, Math.PI / 2] : [12.25, -10.1, -Math.PI / 2];
+      steuerung.setzen(sitz[0] - Math.sin(sitz[2]) * 0.1, sitz[1] - Math.cos(sitz[2]) * 0.1, sitz[2]);
+      await new Promise((r) => setTimeout(r, 1400));
+      await ui.bild('Mittagspause', S.merke.tisch === 'mila' ? 'Ihr esst. Mila erzählt von ihrem Puzzle-Spiel. Es ist ruhig und gut.' : 'Ihr esst und lacht. Ayla erzählt von ihrer Band.', 3);
+    },
     plakat: async () => {
       const m = S.merke;
       const text = m.linaGefragt ? 'Ihr malt die Orte, an denen man sich wohlfühlt. Lina schreibt die Namen.' : m.aufgeteilt ? 'Jo malt das Gebäude, Lina schreibt, du machst die Bilder vom Hof.' : 'Jo malt das Gebäude. Ihr malt aus.';
@@ -226,11 +272,74 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     kapitelEnde: async () => {
       busFaehrt = -1;
       await new Promise((r) => setTimeout(r, 1200));
-      S.fertig = true; sichern();
-      const wahl = await ui.ende(bilanz());
-      if (wahl === 'neu') { S = neuerStand(S.name, S.figur); sichern(); await starteSchritt(0, true); }
-      else { ui.auftrag({ kapitel: KAPITEL, titel: 'Freies Herumlaufen', ziel: 'Schau dich im Lycée um. Kapitel 2 kommt bald.' }); }
+      const kap = SCHRITTE[S.schritt].kap, weiterIdx = SCHRITTE.findIndex((x) => x.kap === kap + 1), startIdx = SCHRITTE.findIndex((x) => x.kap === kap);
+      S.kapitelFertig = Math.max(S.kapitelFertig || 0, kap);
+      if (weiterIdx < 0) S.fertig = true;
+      sichern();
+      const wahl = await ui.ende({ ...bilanz(), kap, ueberschrift: ({ 1: 'Dein erster Tag', 2: 'Deine erste Woche', 3: 'Dein Schnuppertag' })[kap] || KAPITEL[kap],
+        weiter: weiterIdx >= 0 ? 'Weiter: Kapitel ' + (kap + 1) + ' „' + KAPITEL[kap + 1] + '“' : '' });
+      if (wahl === 'weiter') danach = () => starteSchritt(weiterIdx, true);
+      else if (wahl === 'neu') { S.fertig = false; danach = () => starteSchritt(startIdx, true); }
+      else ui.auftrag({ kapitel: kapName(kap), ...FREI });
     },
+    korbRunde: async () => {
+      input.setEnabled(false);
+      const t = await ui.freiwurf();
+      S.merke.korb = t; ui.toast('Dein Team: ' + t + ' von 5 getroffen');
+      if (t >= 3) return [['sommer', 'Super Teamarbeit!'], ['jo', 'Gewonnen! Gut geworfen, {name}.']];
+      const wen = S.merke.linaTeam ? 'lina' : 'du';
+      return [
+        ['jo', wen === 'lina' ? 'Verloren. Wegen dir, Lina.' : 'Verloren. Wegen dir, {name}!'],
+        { wahl: wen === 'lina' ? [
+          { t: '„Wir haben alle zusammen verloren.“', staerke: 'fair', herz: { lina: 2 }, dann: [['jo', '… Ja. Okay. Stimmt.']] },
+          { t: '„Nächstes Mal klappt es, Lina.“', herz: { lina: 1 }, dann: [['lina', '(lächelt) Danke.']] },
+          { t: '(Nichts sagen.)', dann: [['erzaehler', 'Lina geht schnell in die Umkleide.']] },
+        ] : [
+          { t: '„Ich hab mein Bestes gegeben.“', staerke: 'ruhig', herz: { jo: 1 }, dann: [['jo', '… Ja. Ich hab ja auch danebengeworfen.']] },
+          { t: '„Halt die Klappe, Jo.“', herz: { jo: -1 }, dann: [['sommer', 'Hey. Ruhig, ihr zwei.'], ['erzaehler', 'Ihr schaut euch nicht mehr an.']] },
+          { t: '(Tief durchatmen. Weggehen.)', staerke: 'ruhig', dann: [['erzaehler', 'Du gehst trinken. Danach ist es leichter.']] },
+        ] },
+      ];
+    },
+    lernkarte: () => { S.lernkarten = (S.lernkarten || []).concat(['½ + ¼ = ¾ (Pizza: zwei Viertel + ein Viertel)']); ui.toast('<b>Gelernt</b><span>½ + ¼ = ¾ – steht im Journal.</span>', 'ly-t-ent'); },
+    chat: async () => { await ui.handy(CHAT); },
+    milaGelacht: () => (S.merke.chatGelacht ? [
+      ['mila', 'Du hast auch gelacht. Ich hab’s gesehen.'],
+      { wahl: [
+        { t: 'Ja. Das war blöd von mir. Tut mir leid.', staerke: 'ehrlich', herz: { mila: 2 }, dann: [['mila', '… Okay. Danke, dass du es sagst.']] },
+        { t: 'War doch nur Spaß.', herz: { mila: -1 }, dann: [['mila', 'Für mich nicht.']] },
+      ] }] : S.merke.chatMut ? [['mila', 'Du hast geschrieben, dass Jo es löschen soll. Danke.']] : []),
+    setzen: () => { steuerung.setzen(-22.18, -24.42, -Math.PI / 2); },
+    atem: async () => { input.setEnabled(false); await ui.atem(); staerke('atmen'); },
+    testPizza: () => (S.merke.matheGefragt || S.merke.matheRichtig ? [['erzaehler', 'Aufgabe 3: Brüche. Du denkst an Chiaras Pizza.'], ['erzaehler', 'Zwei Viertel plus ein Viertel. Drei Viertel!']] : [['erzaehler', 'Aufgabe 3: Brüche. Hm. Du lässt sie erst mal aus.']]),
+    ichBotschaft: async () => {
+      input.setEnabled(false);
+      const satz = await ui.ichBotschaft(ichBotschaftThema(S.merke));
+      staerke('ichbotschaft'); S.merke.ichSatz = satz;
+      return [['du', satz], ['hoffmann', 'Danke, {name}. Das war eine echte Ich-Botschaft.'],
+        S.merke.chatGelacht ? ['jo', '… Ich lösch so was in Zukunft. Und frag vorher.'] : ['jo', '… Okay. Ich frag nächstes Mal vorher.'],
+        ['hoffmann', 'Dann schreiben wir das als Klassenregel auf.']];
+    },
+    // Kapitel 3
+    warten: async () => { await ui.bild('40 Minuten später …', 'Der nächste Bus kommt um 8:17. Ihr steigt ein.', 2.6); },
+    kenanErinnert: () => (S.merke.gedraengelt ? [
+      ['kenan', 'Moment. Du bist doch der vom Gang. Der gedrängelt hat.'],
+      { wahl: [
+        { t: 'Ja. Sorry, das war nicht cool.', staerke: 'ehrlich', herz: { kenan: 3 }, dann: [['kenan', 'Schon okay. Vergessen.']] },
+        { t: 'Ja, und?', herz: { kenan: -1 }, dann: [['kenan', 'Nix. War nur ’ne Frage.']] },
+      ] }] : S.merke.gewartet ? [['kenan', 'Du bist der Neue vom Gang, oder? Sorry, wir standen im Weg.']] : [['kenan', 'Ah, der Neue vom Gang. Hi.']]),
+    saege: async () => {
+      input.setEnabled(false);
+      const abw = await ui.saege();
+      S.merke.saege = abw;
+      return saegeFolgen(abw).zeilen;
+    },
+    beckerLob: () => [
+      ['becker', (S.merke.saege || 0) <= 1 ? 'Sauber gemessen. Das war richtig gut.' : 'Gut war: Du hast es ein zweites Mal versucht.'],
+      ...((S.staerken.sicher || 0) ? [['becker', 'Und du hast sofort an die Brille gedacht.']] : []),
+    ],
+    kenanBus: () => ((S.herz.kenan || 0) >= 3 ? [['kenan', 'Hey, {name}! Gute Arbeit heute.']] : []),
+    milaWoche: () => ((S.herz.mila || 0) >= 4 ? [['mila', 'Danke für Donnerstag, {name}. Wirklich.']] : []),
   };
 
   // ---------- Bingo ----------
@@ -260,15 +369,19 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   // ---------- Schritte ----------
   let busFaehrt = 0;   // 0 steht, 1 fährt los (weg), −1 fährt am Ende ab
   async function starteSchritt(i, mitStart) {
-    S.schritt = i; sichern();
+    const vorher = SCHRITTE[S.schritt];
+    S.schritt = i; S.fertig = false; sichern();
     const st = SCHRITTE[i];
-    sky.time.setTimeOfDay(st.uhr); ui.uhr(st.uhr);
+    if (mitStart !== false && vorher && (vorher.tag !== st.tag || vorher.kap !== st.kap) && i > 0) {
+      await ui.bild(st.tag, st.kap !== vorher.kap ? kapName(st.kap) : 'Ein neuer Tag am Lycée des Collines.', 2.4);
+    }
+    sky.time.setTimeOfDay(st.uhr); ui.uhr(st.uhr, st.tag);
     ui.bingo(null);
     await stelleLeute(st.leute || {});
     const ort = st.start && st.start.teleport ? welt.orte[st.start.teleport] : null;
     if (ort && mitStart !== false) steuerung.teleport(ort.x, ort.z, ort.yaw);
-    if (bus) { bus.position.x = st.id === 'ankunft' || st.id === 'heimweg' ? -12 : 300; busFaehrt = 0; }
-    ui.auftrag({ kapitel: KAPITEL, titel: st.titel, ziel: st.ziel });
+    if (bus) { bus.position.x = st.id === 'ankunft' || st.fertig.ort === 'bus' ? -12 : 300; busFaehrt = 0; }
+    ui.auftrag({ kapitel: kapName(st.kap), titel: st.titel, ziel: st.ziel });
     if (st.id === 'bingo') zeigeBingo();
     if (st.start && st.start.gespraech && mitStart !== false) {
       await gespraech(GESPRAECHE[st.start.gespraech]);
@@ -316,7 +429,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   ui.onJournal = () => {
     if (!S || imGespraech) return;
     const b = bilanz();
-    ui.journal({ name: S.name, stundenplan: S.stundenplan, leute: b.leute, staerken: b.staerken, geheimnisse: GEHEIMNISSE.filter((g) => S.entdeckt.includes(g.id)), gesamt: GEHEIMNISSE.length });
+    ui.journal({ name: S.name, stundenplan: S.stundenplan, leute: b.leute, staerken: b.staerken, geheimnisse: GEHEIMNISSE.filter((g) => S.entdeckt.includes(g.id)), gesamt: GEHEIMNISSE.length, lernkarten: S.lernkarten || [] });
   };
 
   // ---------- Nähe: wen kann man ansprechen? ----------
@@ -356,6 +469,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       x.schild.visible = d < 9 && laeuft && camera.position.distanceTo(x.pos) > 2.6;
       x.schild.material.opacity = Math.max(0, Math.min(1, (9 - d) / 3));
     }
+    statistenBewegen(dt);
     // Bus
     if (bus && busFaehrt) { bus.position.x += dt * 9; if (bus.position.x > 140) { bus.position.x = 300; busFaehrt = 0; } }
     // Marker
@@ -383,7 +497,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     const st = SCHRITTE[S.schritt];
     if (!imGespraech && st && !S.fertig && st.fertig.ort) {
       const o = welt.orte[st.fertig.ort];
-      if (Math.hypot(o.x - p.x, o.z - p.z) < st.fertig.r) { gespraech(GESPRAECHE[st.fertig.gespraech]).then(() => { if (st.id === 'heimweg') return; naechster(); }); }
+      if (Math.hypot(o.x - p.x, o.z - p.z) < st.fertig.r) { const g = GESPRAECHE[st.fertig.gespraech]; gespraech(g).then(() => { if (g.some((z) => z && z.tu === 'kapitelEnde')) return; naechster(); }); }
     }
     // Entdeckungen
     geheimT -= dt;
@@ -403,6 +517,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   await schritt(0.8, 'Die Klasse kommt …');
   // alle Menschen schon beim Laden vorbereiten (sonst ruckelt es, wenn jemand zum ersten Mal auftaucht)
   for (const id of Object.keys(LEUTE)) { const x = await person(id); x.f.group.visible = false; }
+  await statistenLaden();
   await schritt(0.9, 'Gleich klingelt es …');
   // Start
   async function los(neu, figur, name) {
@@ -412,7 +527,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (S.fertig) {
       await starteSchritt(SCHRITTE.length - 1, false);
       steuerung.teleport(welt.orte.hof.x, welt.orte.hof.z, Math.PI);
-      ui.auftrag({ kapitel: KAPITEL, titel: 'Freies Herumlaufen', ziel: 'Schau dich im Lycée um. Kapitel 2 kommt bald.' });
+      ui.auftrag({ kapitel: kapName(SCHRITTE[SCHRITTE.length - 1].kap), ...FREI });
       return;
     }
     // weiterspielen: an den Anfang des Schritts (mit Ort, ohne Einleitung)

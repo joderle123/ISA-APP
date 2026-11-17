@@ -11,10 +11,10 @@ export function createUI({ root, input, speech }) {
   const uhr = el('div', 'ly-uhr'); hud.appendChild(uhr);
   const hinweis = el('button', 'ly-hinweis'); hinweis.type = 'button'; hinweis.hidden = true; hud.appendChild(hinweis);
   const toastBox = el('div', 'ly-toasts'); hud.appendChild(toastBox);
-  const bingo = el('div', 'ly-bingo'); bingo.hidden = true; hud.appendChild(bingo);
+  const bingo = el('div', 'ly-bingo hud-interactive'); bingo.hidden = true; hud.appendChild(bingo);
   const knoepfe = el('div', 'ly-knoepfe', '<button type="button" data-k="journal" title="Journal (Tab)" aria-label="Journal">☰</button>'); hud.appendChild(knoepfe);
-  const dialog = el('div', 'ly-dialog'); dialog.hidden = true; root.appendChild(dialog);
-  const ebene = el('div', 'ly-ebene'); ebene.hidden = true; root.appendChild(ebene);
+  const dialog = el('div', 'ly-dialog hud-interactive'); dialog.hidden = true; root.appendChild(dialog);
+  const ebene = el('div', 'ly-ebene hud-interactive'); ebene.hidden = true; root.appendChild(ebene);
   // Touch: Joystick-Bild und Aktionsknopf
   const stick = el('div', 'ly-stick', '<span></span>'); hud.appendChild(stick);
   const akt = el('button', 'ly-akt', 'E'); akt.type = 'button'; akt.setAttribute('aria-label', 'Reden / weiter'); hud.appendChild(akt);
@@ -31,7 +31,7 @@ export function createUI({ root, input, speech }) {
   ui.dist = (d) => { const s = auftrag.querySelector('.ly-a-dist'); const z = auftrag.querySelector('.ly-a-ziel'); if (!z) return; if (d == null) { if (s) s.remove(); return; } if (s) s.textContent = Math.round(d) + ' m'; else z.insertAdjacentHTML('beforeend', ' <span class="ly-a-dist">' + Math.round(d) + ' m</span>'); };
   let raumT = 0;
   ui.raum = (name) => { raum.textContent = name; raum.classList.remove('an'); void raum.offsetWidth; raum.classList.add('an'); clearTimeout(raumT); raumT = setTimeout(() => raum.classList.remove('an'), 2600); };
-  ui.uhr = (h) => { const hh = Math.floor(h), mm = Math.floor((h - hh) * 60); uhr.textContent = String(hh).padStart(2, '0') + ':' + String(mm).padStart(2, '0'); };
+  ui.uhr = (h, tag) => { const hh = Math.floor(h), mm = Math.floor((h - hh) * 60); uhr.textContent = (tag ? tag.slice(0, 2) + ' ' : '') + String(hh).padStart(2, '0') + ':' + String(mm).padStart(2, '0'); };
   ui.hinweis = (t) => { if (!t) { hinweis.hidden = true; return; } hinweis.hidden = false; hinweis.innerHTML = '<kbd>E</kbd>' + esc(t); };
   hinweis.addEventListener('click', () => ui.onAktion && ui.onAktion());
   ui.toast = (t, art = '') => {
@@ -44,8 +44,8 @@ export function createUI({ root, input, speech }) {
   // ---------- Gespräch ----------
   // zeile: { wer, farbe, text } → wartet auf „weiter“
   ui.sprich = ({ wer = '', farbe = '#2b3a55', text = '' }) => new Promise((ok) => {
-    dialogOffen = true; dialog.hidden = false;
-    dialog.className = 'ly-dialog' + (wer ? '' : ' ly-erz');
+    dialogOffen = true; dialog.hidden = false; root.classList.add('ly-im-dialog');
+    dialog.className = 'ly-dialog hud-interactive' + (wer ? '' : ' ly-erz');
     dialog.innerHTML = (wer ? '<div class="ly-d-wer" style="--f:' + esc(farbe) + '">' + esc(wer) + '</div>' : '') +
       '<div class="ly-d-text">' + esc(text) + '</div><div class="ly-d-fuss"><button type="button" class="ly-d-vor" aria-label="Vorlesen" title="Vorlesen">🔊</button><button type="button" class="ly-d-weiter">Weiter <kbd>E</kbd></button></div>';
     let fertig = false;
@@ -56,14 +56,14 @@ export function createUI({ root, input, speech }) {
   });
   // optionen: [text] → Index
   ui.waehle = (optionen, frage = '') => new Promise((ok) => {
-    dialogOffen = true; dialog.hidden = false; dialog.className = 'ly-dialog ly-wahl';
+    dialogOffen = true; dialog.hidden = false; root.classList.add('ly-im-dialog'); dialog.className = 'ly-dialog hud-interactive ly-wahl';
     dialog.innerHTML = (frage ? '<div class="ly-d-text">' + esc(frage) + '</div>' : '<div class="ly-d-frage">Was machst du?</div>') +
       '<div class="ly-d-optionen">' + optionen.map((o, i) => '<button type="button" data-i="' + i + '"><kbd>' + (i + 1) + '</kbd><span>' + esc(o) + '</span></button>').join('') + '</div>';
     wahlFn = (i) => { if (i < 0 || i >= optionen.length) return; wahlFn = null; ok(i); };
     dialog.querySelectorAll('[data-i]').forEach((b) => { b.onclick = () => wahlFn && wahlFn(+b.dataset.i); });
     const b0 = dialog.querySelector('[data-i]'); if (b0) setTimeout(() => { try { b0.focus({ preventScroll: true }); } catch (e) { /* egal */ } }, 30);
   });
-  ui.dialogZu = () => { dialogOffen = false; dialog.hidden = true; weiterFn = null; wahlFn = null; if (speech) speech.cancel(); };
+  ui.dialogZu = () => { dialogOffen = false; dialog.hidden = true; root.classList.remove('ly-im-dialog'); weiterFn = null; wahlFn = null; if (speech) speech.cancel(); };
   function vorlesen(t) { if (speech && speech.available) speech.speak(t, { interrupt: true }); }
 
   // Tasten: im Gespräch E/Enter/Leertaste = weiter, 1–3 = Antwort; sonst Tab = Journal
@@ -93,7 +93,7 @@ export function createUI({ root, input, speech }) {
   function ebeneZu() { ebene.hidden = true; ebene.innerHTML = ''; ebene.dataset.art = ''; }
   ui.ebeneZu = ebeneZu;
 
-  ui.journal = ({ name, stundenplan, leute, staerken, geheimnisse, gesamt }) => {
+  ui.journal = ({ name, stundenplan, leute, staerken, geheimnisse, gesamt, lernkarten = [] }) => {
     const k = ebeneAuf('journal', '<button type="button" class="ly-zu" aria-label="Schließen">✕</button><h2>Journal von ' + esc(name) + '</h2>' +
       '<div class="ly-j-reiter"><button type="button" data-r="leute" class="an">Menschen</button><button type="button" data-r="staerken">Stärken</button><button type="button" data-r="plan">Stundenplan</button><button type="button" data-r="ent">Entdeckt ' + geheimnisse.length + '/' + gesamt + '</button></div><div class="ly-j-inhalt"></div>');
     const inhalt = k.querySelector('.ly-j-inhalt');
@@ -101,7 +101,7 @@ export function createUI({ root, input, speech }) {
       k.querySelectorAll('[data-r]').forEach((b) => b.classList.toggle('an', b.dataset.r === r));
       if (r === 'leute') inhalt.innerHTML = leute.length ? '<ul class="ly-j-leute">' + leute.map((l) => '<li><span class="ly-j-name" style="--f:' + esc(l.farbe) + '">' + esc(l.name) + '</span><span class="ly-herzen" aria-label="' + l.herz + ' von 5">' + '♥'.repeat(Math.max(0, Math.min(5, l.herz))) + '<i>' + '♥'.repeat(5 - Math.max(0, Math.min(5, l.herz))) + '</i></span><small>' + esc(l.notiz || '') + '</small></li>').join('') + '</ul>' : '<p class="ly-leer">Noch niemanden kennengelernt.</p>';
       if (r === 'staerken') inhalt.innerHTML = staerken.length ? '<ul class="ly-j-staerken">' + staerken.map((s) => '<li><b>' + esc(s.name) + (s.n > 1 ? ' <span>×' + s.n + '</span>' : '') + '</b><small>' + esc(s.text) + '</small></li>').join('') + '</ul>' : '<p class="ly-leer">Stärken erscheinen hier, sobald du sie zeigst.</p>';
-      if (r === 'plan') inhalt.innerHTML = stundenplan ? '<table class="ly-plan"><tr><th></th><th>Mo</th><th>Di</th><th>Mi</th></tr><tr><td>8:00</td><td>Klassenstunde</td><td>Mathe</td><td>Deutsch</td></tr><tr><td>10:15</td><td>Französisch</td><td>Sport</td><td>Atelier</td></tr><tr><td>13:30</td><td>Projekt</td><td>Englisch</td><td>–</td></tr></table><p class="ly-leer">Saal 1.04 · Klassenlehrer M. Hoffmann</p>' : '<p class="ly-leer">Den Stundenplan gibt es im Sekretariat.</p>';
+      if (r === 'plan') inhalt.innerHTML = stundenplan ? '<table class="ly-plan"><tr><th></th><th>Mo</th><th>Di</th><th>Mi</th></tr><tr><td>8:00</td><td>Klassenstunde</td><td>Mathe</td><td>Deutsch</td></tr><tr><td>10:15</td><td>Französisch</td><td>Sport</td><td>Atelier</td></tr><tr><td>13:30</td><td>Projekt</td><td>Englisch</td><td>–</td></tr></table><p class="ly-leer">Saal 1.04 · Klassenlehrer M. Hoffmann</p>' + (lernkarten.length ? '<h3>Gelernt</h3><ul class="ly-j-staerken">' + lernkarten.map((l) => '<li><b>' + esc(l) + '</b></li>').join('') + '</ul>' : '') : '<p class="ly-leer">Den Stundenplan gibt es im Sekretariat.</p>';
       if (r === 'ent') inhalt.innerHTML = geheimnisse.length ? '<ul class="ly-j-staerken">' + geheimnisse.map((g) => '<li><b>' + esc(g.titel) + '</b><small>' + esc(g.text) + '</small></li>').join('') + '</ul>' : '<p class="ly-leer">Schau dich um! Im Lycée gibt es einiges zu entdecken.</p>';
     };
     k.querySelectorAll('[data-r]').forEach((b) => { b.onclick = () => zeige(b.dataset.r); });
@@ -114,7 +114,7 @@ export function createUI({ root, input, speech }) {
     const k = ebeneAuf('titel', '<div class="ly-t-kicker">Ein Schulsimulator</div><h1 class="ly-t-name">Lycée<br><span>des Collines</span></h1>' +
       '<p class="ly-t-sub">Kapitel 1 · Rentrée</p><div class="ly-t-knoepfe">' +
       (gespeichert ? '<button type="button" class="ly-btn ly-primaer" data-a="weiter">Weiterspielen</button><button type="button" class="ly-btn" data-a="neu">Neu anfangen</button>' : '<button type="button" class="ly-btn ly-primaer" data-a="neu">Los geht’s</button>') +
-      '</div><p class="ly-t-fuss">WASD / Pfeile laufen · Maus ziehen = umschauen · E = reden · Tab = Journal</p>');
+      '</div><p class="ly-t-fuss">' + (matchMedia('(pointer: coarse)').matches ? 'Links wischen = laufen · rechts wischen = umschauen · E = reden · ☰ = Journal' : 'WASD / Pfeile laufen · Maus ziehen = umschauen · E = reden · Tab = Journal') + '</p>');
     k.querySelectorAll('[data-a]').forEach((b) => { b.onclick = () => {
       if (b.dataset.a === 'weiter') { ebeneZu(); ok({ weiter: true }); return; }
       // Figur und Name
@@ -128,12 +128,14 @@ export function createUI({ root, input, speech }) {
     }; });
   });
 
-  ui.ende = ({ name, leute, staerken, entdeckt, gesamt }) => new Promise((ok) => {
-    const k = ebeneAuf('ende', '<div class="ly-t-kicker">Kapitel 1 geschafft</div><h2>Dein erster Tag</h2>' +
+  ui.ende = ({ leute, staerken, entdeckt, gesamt, kap = 1, ueberschrift = 'Geschafft', weiter = '' }) => new Promise((ok) => {
+    const k = ebeneAuf('ende', '<div class="ly-t-kicker">Kapitel ' + kap + ' geschafft</div><h2>' + esc(ueberschrift) + '</h2>' +
       '<div class="ly-e-spalten"><section><h3>Menschen</h3><ul class="ly-j-leute">' + leute.map((l) => '<li><span class="ly-j-name" style="--f:' + esc(l.farbe) + '">' + esc(l.name) + '</span><span class="ly-herzen">' + '♥'.repeat(Math.max(0, Math.min(5, l.herz))) + '<i>' + '♥'.repeat(5 - Math.max(0, Math.min(5, l.herz))) + '</i></span></li>').join('') + '</ul></section>' +
       '<section><h3>Deine Stärken heute</h3><ul class="ly-j-staerken">' + (staerken.length ? staerken.map((s) => '<li><b>' + esc(s.name) + '</b><small>' + esc(s.text) + '</small></li>').join('') : '<li><small>Morgen ist ein neuer Tag.</small></li>') + '</ul>' +
       '<p class="ly-leer">Entdeckt: ' + entdeckt + ' von ' + gesamt + ' Orten</p></section></div>' +
-      '<p class="ly-e-weiter">Kapitel 2 „Die erste Woche“ kommt bald.</p><div class="ly-t-knoepfe"><button type="button" class="ly-btn ly-primaer" data-a="frei">Weiter herumlaufen</button><button type="button" class="ly-btn" data-a="neu">Kapitel neu spielen</button></div>');
+      (weiter ? '' : '<p class="ly-e-weiter">Das nächste Kapitel kommt bald.</p>') + '<div class="ly-t-knoepfe">' +
+      (weiter ? '<button type="button" class="ly-btn ly-primaer" data-a="weiter">' + esc(weiter) + '</button>' : '<button type="button" class="ly-btn ly-primaer" data-a="frei">Weiter herumlaufen</button>') +
+      '<button type="button" class="ly-btn" data-a="neu">Kapitel nochmal spielen</button></div>');
     k.querySelectorAll('[data-a]').forEach((b) => { b.onclick = () => { ebeneZu(); ok(b.dataset.a); }; });
   });
 
@@ -146,7 +148,7 @@ export function createUI({ root, input, speech }) {
     const ZONE = [0.62, 0.78];
     const draw = (now) => {
       if (fertig) return;
-      const dt = Math.min(0.05, (now - last) / 1000); last = now; t += dt;
+      const dt = Math.min(0.25, (now - last) / 1000); last = now; t += dt;   // Echtzeit: auch auf langsamen Geräten gleich schnell
       const p = fliegt ? fliegt.p : (Math.sin(t * (2.2 + wurf * 0.35)) + 1) / 2;
       x.clearRect(0, 0, 520, 300);
       x.fillStyle = '#d8693f'; x.fillRect(0, 250, 520, 50);
@@ -178,6 +180,110 @@ export function createUI({ root, input, speech }) {
     wurfBtn.onclick = wirf; cv.onpointerdown = wirf;
     const taste = (e) => { if (e.code === 'KeyE' || e.code === 'Space' || e.code === 'Enter') { e.preventDefault(); e.stopPropagation(); wirf(); } if (fertig) document.removeEventListener('keydown', taste, true); };
     document.addEventListener('keydown', taste, true);
+    requestAnimationFrame(draw);
+  });
+
+  // Handy: Klassenchat ansehen (nur lesen), „Handy weg“
+  ui.handy = (nachrichten) => new Promise((ok) => {
+    const k = ebeneAuf('handy', '<div class="ly-h-kopf">7P2 Klasse 💬</div><div class="ly-h-verlauf">' + nachrichten.map((n) =>
+      '<div class="ly-h-msg"><b>' + esc(n.wer) + '</b>' + (n.bild ? '<div class="ly-h-bild" aria-label="Foto">📷 Foto</div>' : '') + '<span>' + esc(n.text) + '</span></div>').join('') +
+      '</div><button type="button" class="ly-btn ly-primaer" data-a="weg">Handy weg <kbd>E</kbd></button>');
+    const zu = () => { document.removeEventListener('keydown', taste, true); ebeneZu(); ok(); };
+    const taste = (e) => { if (e.code === 'KeyE' || e.code === 'Enter' || e.code === 'Space') { e.preventDefault(); e.stopPropagation(); zu(); } };
+    document.addEventListener('keydown', taste, true);
+    k.querySelector('[data-a="weg"]').onclick = zu;
+  });
+
+  // Atmen gegen Aufregung: Kreis wird groß (einatmen, 4 s) und klein (ausatmen, 4 s), drei Mal. Nichts kann schiefgehen.
+  ui.atem = () => new Promise((ok) => {
+    const k = ebeneAuf('atem', '<h2>Ruhig atmen</h2><div class="ly-atem"><div class="ly-atem-kreis"></div><div class="ly-atem-text">Bereit?</div></div><p class="ly-leer ly-atem-zahl">Atme mit dem Kreis.</p><button type="button" class="ly-btn" data-a="weiter" hidden>Weiter <kbd>E</kbd></button>');
+    const kreis = k.querySelector('.ly-atem-kreis'), text = k.querySelector('.ly-atem-text'), zahl = k.querySelector('.ly-atem-zahl'), btn = k.querySelector('[data-a="weiter"]');
+    let runde = 0, fertig = false;
+    const fertigMachen = () => { if (fertig) return; fertig = true; document.removeEventListener('keydown', taste, true); ebeneZu(); ok(); };
+    const taste = (e) => { if (!btn.hidden && (e.code === 'KeyE' || e.code === 'Enter' || e.code === 'Space')) { e.preventDefault(); e.stopPropagation(); fertigMachen(); } };
+    document.addEventListener('keydown', taste, true);
+    btn.onclick = fertigMachen;
+    const schritt = () => {
+      if (fertig) return;
+      if (runde >= 3) { text.textContent = 'Gut so.'; zahl.textContent = 'Dein Herz ist ruhiger.'; btn.hidden = false; return; }
+      kreis.className = 'ly-atem-kreis ein'; text.textContent = 'Einatmen …'; zahl.textContent = 'Runde ' + (runde + 1) + ' von 3';
+      setTimeout(() => { if (fertig) return; kreis.className = 'ly-atem-kreis aus'; text.textContent = 'Ausatmen …'; setTimeout(() => { runde++; schritt(); }, ui.atemMs || 4000); }, ui.atemMs || 4000);
+    };
+    setTimeout(schritt, 600);
+  });
+
+  // Ich-Botschaft bauen: drei Teile; ein Vorwurf wird freundlich zurückgegeben (Tipp), dann neu wählen
+  ui.ichBotschaft = (thema) => new Promise((ok) => {
+    const k = ebeneAuf('ich', '<div class="ly-t-kicker">Ich-Botschaft</div><h2>' + esc(thema.thema) + '</h2><div class="ly-ich-satz"></div><div class="ly-ich-teil"></div>');
+    const satzEl = k.querySelector('.ly-ich-satz'), teilEl = k.querySelector('.ly-ich-teil');
+    const gewaehlt = [];
+    const zeige = (i, tipp) => {
+      satzEl.innerHTML = gewaehlt.map((g) => '<span>' + esc(g) + '</span>').join(' ') || '<span class="ly-leer">Dein Satz entsteht hier.</span>';
+      if (i >= thema.teile.length) {
+        const satz = gewaehlt.join(' ');
+        teilEl.innerHTML = '<p class="ly-ich-gut">So klingt eine Ich-Botschaft.</p><button type="button" class="ly-btn ly-primaer" data-a="sagen">Laut sagen <kbd>E</kbd></button>';
+        const sag = () => { document.removeEventListener('keydown', taste, true); ebeneZu(); ok(satz); };
+        const taste = (e) => { if (e.code === 'KeyE' || e.code === 'Enter') { e.preventDefault(); e.stopPropagation(); sag(); } };
+        document.addEventListener('keydown', taste, true);
+        teilEl.querySelector('[data-a]').onclick = sag;
+        return;
+      }
+      const t = thema.teile[i];
+      teilEl.innerHTML = '<div class="ly-d-frage">' + esc(t.start) + '</div>' + (tipp ? '<p class="ly-ich-tipp">💡 ' + esc(tipp) + '</p>' : '') +
+        '<div class="ly-d-optionen">' + t.optionen.map((o, j) => '<button type="button" data-j="' + j + '"><kbd>' + (j + 1) + '</kbd><span>' + esc(o.t) + '</span></button>').join('') + '</div>';
+      const waehle = (j) => {
+        const o = t.optionen[j]; if (!o) return;
+        document.removeEventListener('keydown', taste, true);
+        if (!o.gut) { zeige(i, o.tipp); return; }
+        gewaehlt.push(i === 0 ? 'Ich fühle mich ' + o.t + ',' : i === 1 ? 'wenn ' + o.t : 'Ich wünsche mir, ' + o.t);
+        zeige(i + 1);
+      };
+      const taste = (e) => { if (/^Digit[1-4]$/.test(e.code)) { e.preventDefault(); e.stopPropagation(); waehle(+e.code.slice(5) - 1); } };
+      document.addEventListener('keydown', taste, true);
+      teilEl.querySelectorAll('[data-j]').forEach((b) => { b.onclick = () => waehle(+b.dataset.j); });
+    };
+    zeige(0);
+  });
+
+  // Messen und sägen: Bleistift wandert am Zollstock hin und her; bei 30 cm E drücken (oder tippen). Ergebnis: Abweichung in cm.
+  ui.saege = () => new Promise((ok) => {
+    const k = ebeneAuf('saege', '<h2>Messen: 30 cm</h2><p class="ly-leer">Drück <kbd>E</kbd> (oder tippe), wenn der Bleistift genau bei 30 steht.</p>' +
+      '<canvas width="560" height="220"></canvas><div class="ly-fw-stand">Ganz ruhig. Erst messen, dann sägen.</div><button type="button" class="ly-btn ly-primaer" data-a="mark">Anzeichnen</button>');
+    const cv = k.querySelector('canvas'), x = cv.getContext('2d'), stand = k.querySelector('.ly-fw-stand'), btn = k.querySelector('[data-a="mark"]');
+    const L = 40, X0 = 40, BREIT = 480, cm = (c) => X0 + c / L * BREIT;
+    let t = 0, last = performance.now(), wert = null, fertig = false, saegeT = 0;
+    const pos = () => 20 + Math.sin(t * 1.15) * 18;   // 2 … 38 cm
+    const draw = (now) => {
+      if (fertig) return;
+      const dt = Math.min(0.25, (now - last) / 1000); last = now; t += dt;
+      x.clearRect(0, 0, 560, 220);
+      x.fillStyle = '#d4a373'; x.fillRect(X0, 90, BREIT, 70);   // Brett
+      x.fillStyle = '#c08a5a'; for (let i = 0; i < 6; i++) x.fillRect(X0, 98 + i * 11, BREIT, 2);
+      x.fillStyle = '#ffd166'; x.fillRect(X0, 50, BREIT, 30);   // Zollstock
+      x.fillStyle = '#2b3a55'; x.font = 'bold 12px system-ui'; x.textAlign = 'center';
+      for (let c = 0; c <= L; c++) { const px = cm(c); x.fillRect(px, 50, 1, c % 5 ? 8 : 14); if (c % 10 === 0) x.fillText(String(c), px, 76); }
+      x.fillStyle = 'rgba(63,166,107,.25)'; x.fillRect(cm(29), 84, cm(31) - cm(29), 82);
+      const p = wert == null ? pos() : wert;
+      x.fillStyle = '#c0392b'; x.beginPath(); x.moveTo(cm(p), 86); x.lineTo(cm(p) - 7, 70); x.lineTo(cm(p) + 7, 70); x.fill();
+      x.fillRect(cm(p) - 4, 20, 8, 50);
+      if (wert != null) {
+        x.strokeStyle = '#2b3a55'; x.setLineDash([5, 4]); x.beginPath(); x.moveTo(cm(wert), 90); x.lineTo(cm(wert), 160); x.stroke(); x.setLineDash([]);
+        saegeT += dt;
+        x.fillStyle = '#8d96a3'; x.fillRect(cm(wert) - 2, 160 - Math.min(70, saegeT * 90), 4, 70);   // Sägeblatt
+        if (saegeT > 1.1 && !fertig) { fertig = true; setTimeout(() => { document.removeEventListener('keydown', taste, true); ebeneZu(); ok(Math.round(Math.abs(wert - 30))); }, 600); }
+      }
+      requestAnimationFrame(draw);
+    };
+    const markieren = () => {
+      if (wert != null) return;
+      wert = Math.round(pos() * 2) / 2;
+      const a = Math.abs(wert - 30);
+      stand.textContent = 'Angezeichnet bei ' + String(wert).replace('.', ',') + ' cm' + (a <= 1 ? ' – genau!' : '') + '. Jetzt wird gesägt …';
+      btn.hidden = true;
+    };
+    const taste = (e) => { if (e.code === 'KeyE' || e.code === 'Space' || e.code === 'Enter') { e.preventDefault(); e.stopPropagation(); markieren(); } };
+    document.addEventListener('keydown', taste, true);
+    btn.onclick = markieren; cv.onpointerdown = markieren;
     requestAnimationFrame(draw);
   });
 

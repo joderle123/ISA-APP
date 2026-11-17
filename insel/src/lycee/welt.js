@@ -400,6 +400,11 @@ export function baueWelt({ material, materialInnen }) {
     for (let i = 0; i < 3; i++) { const x = -56 + i * 6; box(x, x + 3.6, 0, 0.9, -22, -20.8, C.holz, { art: 'innen', stoss: true }); box(x - 0.05, x + 3.65, 0.9, 0.98, -22.05, -20.75, C.holzHell, { art: 'innen' }); box(x + 0.4, x + 0.7, 0.98, 1.3, -21.8, -21.2, C.rot, { art: 'innen' }); }
     box(WX0 + 0.3, WX0 + 0.9, 0, 2.2, -26, -10, C.metall, { art: 'innen', stoss: true });
     const zu = schild('Hier fängt bald die Ausbildung an', 3.2, 0.42, { bg: '#2b3a55', schrift: 'bold 72px system-ui' }); zu.position.set(-48, 2.2, -27.6); schilder.push(zu);
+    // Holz, Kisten, Eimer (Kenney): die Werkstatt sieht nach Arbeit aus
+    P('lager/resource-planks', -57.6, -26.4, 0.2, { h: 0.5, fest: true }); P('lager/resource-planks', -55.2, -26.6, -0.1, { h: 0.4, fest: true });
+    P('lager/box-large', -39.4, -26.6, 0.3, { h: 0.9, fest: true }); P('lager/box-large', -38.2, -26.4, -0.2, { h: 0.7, fest: true });
+    P('lager/bucket', -41.2, -26.8, 0, { h: 0.4 }); P('markt/shelf-boxes', -37.2, -16, -Math.PI / 2, { h: 1.9, fest: true });
+    P('strasse/construction-cone', -46.5, -9.4, 0, { h: 0.6 });
     R('werkstatt', 'Atelier', WX0, WX1, WZ0, WZ1, { decke: WH - 0.3 }); }
 
   // ================= Schulhof: Korbballfeld, Bänke, Bäume, Fahrradständer, Skate-Ecke =================

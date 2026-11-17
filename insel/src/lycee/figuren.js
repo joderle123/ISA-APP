@@ -6,9 +6,10 @@
 //   f.group · f.spiele('Walk') · f.update(dt)
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+import { MeshoptDecoder } from 'three/examples/jsm/libs/meshopt_decoder.module.js';
 import { clone as skClone } from 'three/examples/jsm/utils/SkeletonUtils.js';
 import { getMaterial } from '../actors/humanoid/base.js';
-import menschenBin from '../respawn/modelle/menschen.glb';
+import menschenBin from './modelle/menschen.glb';   // = respawn/modelle/menschen.glb, mit Meshopt gepackt
 import frauenBin from './modelle/frauen.glb';
 
 const DATEN = { menschen: menschenBin, frauen: frauenBin };
@@ -27,7 +28,7 @@ function baustein(o) {
 }
 
 export async function ladePerson(veil, { modell = 'menschen', stil = 'Casual', haut, haar, oben, unten, schuhe, hoehe = 1.72 } = {}) {
-  if (!cache.has(modell)) cache.set(modell, new Promise((ok, nein) => new GLTFLoader().parse(puffer(DATEN[modell]), '', ok, nein)));
+  if (!cache.has(modell)) cache.set(modell, new Promise((ok, nein) => new GLTFLoader().setMeshoptDecoder(MeshoptDecoder).parse(puffer(DATEN[modell]), '', ok, nein)));
   const gltf = await cache.get(modell);
   const mat = getMaterial(veil);
   const group = skClone(gltf.scene);
