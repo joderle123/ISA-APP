@@ -1,0 +1,143 @@
+/* Lycée-Simulator – Oberfläche. Ruhig, warm, gut lesbar (große Schrift, klare Knöpfe). Schrift: Nunito (OFL). */
+@font-face { font-family: "Nunito"; font-style: normal; font-weight: 200 1000; font-display: swap; src: url(fonts/nunito-latin-wght-normal.woff2) format("woff2"); }
+:root {
+  --ink: #1f2a3d; --ink2: #4a5568; --leise: #6b7280; --papier: #fffaf0; --karte: rgba(255, 251, 242, 0.96);
+  --blau: #2d3d5c; --gold: #e9b949; --gruen: #3fa66b; --rot: #c8553d; --rand: rgba(45, 61, 92, 0.14);
+  --schatten: 0 10px 30px rgba(20, 28, 45, 0.22), 0 2px 6px rgba(20, 28, 45, 0.12);
+  --font: "Nunito", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html, body { margin: 0; height: 100%; overflow: hidden; background: #2d3d5c; color: var(--ink); font-family: var(--font); -webkit-tap-highlight-color: transparent; }
+#ly-root { position: fixed; inset: 0; overflow: hidden; touch-action: none; user-select: none; -webkit-user-select: none; }
+#ly-canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+button { font-family: inherit; }
+kbd { display: inline-block; min-width: 1.5em; padding: 0 .35em; margin-right: .45em; border: 1px solid var(--rand); border-bottom-width: 2px; border-radius: 6px; background: #fff; font: 700 .8em/1.5 var(--font); text-align: center; color: var(--ink2); }
+.ly-touch kbd { display: none; }
+
+/* Laden */
+.ly-boot { position: absolute; inset: 0; z-index: 50; display: grid; place-items: center; background: linear-gradient(180deg, #8fb8de 0%, #f3d9b1 62%, #e9c99a 100%); transition: opacity .6s; }
+.ly-boot.weg { opacity: 0; pointer-events: none; }
+.ly-boot-karte { text-align: center; padding: 32px 40px; }
+.ly-boot-balken { width: min(320px, 70vw); height: 8px; margin: 22px auto 10px; border-radius: 99px; background: rgba(45, 61, 92, .18); overflow: hidden; }
+#ly-boot-bar { height: 100%; width: 4%; background: var(--blau); border-radius: 99px; transition: width .3s; }
+.ly-boot-status { color: var(--ink2); font-weight: 700; }
+.ly-t-kicker { font-size: 13px; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; color: var(--ink2); }
+.ly-t-name { margin: 8px 0 0; font: 900 clamp(44px, 9vw, 84px)/.92 Georgia, "Times New Roman", serif; color: var(--blau); letter-spacing: -.01em; }
+.ly-t-name span { font-size: .5em; font-style: italic; font-weight: 700; color: #8a5a3a; }
+
+/* HUD */
+.ly-hud { position: absolute; inset: 0; pointer-events: none; z-index: 10; }
+.ly-hud > * { pointer-events: auto; }
+.ly-auftrag { position: absolute; left: max(16px, env(safe-area-inset-left)); top: max(14px, env(safe-area-inset-top)); max-width: min(380px, 70vw); padding: 12px 16px 13px; border-radius: 16px; background: var(--karte); box-shadow: var(--schatten); pointer-events: none; }
+.ly-a-kap { font-size: 11px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: #8a5a3a; }
+.ly-a-titel { margin-top: 2px; font-size: 19px; font-weight: 900; color: var(--blau); }
+.ly-a-ziel { margin-top: 4px; font-size: 15.5px; line-height: 1.35; font-weight: 600; color: var(--ink); }
+.ly-a-punkt { display: inline-block; width: 9px; height: 9px; margin-right: 8px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 0 3px rgba(233, 185, 73, .3); vertical-align: 1px; }
+.ly-a-dist { margin-left: 4px; padding: 1px 7px; border-radius: 99px; background: rgba(45, 61, 92, .08); font-size: 12.5px; font-weight: 800; color: var(--ink2); white-space: nowrap; }
+.ly-uhr { position: absolute; right: max(70px, calc(env(safe-area-inset-right) + 70px)); top: max(16px, env(safe-area-inset-top)); padding: 8px 13px; border-radius: 99px; background: var(--karte); box-shadow: var(--schatten); font-weight: 900; font-size: 16px; color: var(--blau); font-variant-numeric: tabular-nums; pointer-events: none; }
+.ly-knoepfe { position: absolute; right: max(14px, env(safe-area-inset-right)); top: max(12px, env(safe-area-inset-top)); }
+.ly-knoepfe button { width: 46px; height: 46px; border: 0; border-radius: 14px; background: var(--karte); box-shadow: var(--schatten); font-size: 22px; color: var(--blau); cursor: pointer; }
+.ly-raum { position: absolute; left: 50%; top: 18%; transform: translate(-50%, -8px); padding: 8px 22px; border-radius: 99px; background: rgba(31, 42, 61, .78); color: #fff; font-size: 20px; font-weight: 900; letter-spacing: .02em; opacity: 0; transition: opacity .4s, transform .4s; pointer-events: none; white-space: nowrap; }
+.ly-raum.an { opacity: 1; transform: translate(-50%, 0); }
+.ly-hinweis { position: absolute; left: 50%; bottom: 120px; transform: translateX(-50%); display: inline-flex; align-items: center; gap: 2px; padding: 10px 18px; border: 0; border-radius: 99px; background: var(--karte); box-shadow: var(--schatten); font-size: 16px; font-weight: 800; color: var(--blau); cursor: pointer; }
+.ly-toasts { position: absolute; right: max(16px, env(safe-area-inset-right)); top: 76px; display: flex; flex-direction: column; align-items: flex-end; gap: 8px; pointer-events: none; }
+.ly-toast { max-width: 320px; padding: 10px 14px; border-radius: 14px; background: var(--karte); box-shadow: var(--schatten); font-size: 14.5px; font-weight: 700; color: var(--ink); animation: ly-rein .35s ease-out; transition: opacity .5s, transform .5s; }
+.ly-toast b { display: block; color: var(--blau); }
+.ly-toast span { display: block; font-weight: 600; color: var(--ink2); font-size: 13.5px; }
+.ly-toast.weg { opacity: 0; transform: translateX(20px); }
+.ly-t-staerke { border-left: 5px solid var(--gold); }
+.ly-t-herz { border-left: 5px solid #e85d75; color: #a33a52; }
+.ly-t-kalt { border-left: 5px solid #8aa0b8; color: var(--ink2); }
+.ly-t-ent { border-left: 5px solid var(--gruen); }
+@keyframes ly-rein { from { opacity: 0; transform: translateX(24px); } to { opacity: 1; transform: none; } }
+
+/* Bingo */
+.ly-bingo { position: absolute; left: max(16px, env(safe-area-inset-left)); top: 150px; width: min(300px, 62vw); padding: 10px 12px 12px; border-radius: 16px; background: var(--karte); box-shadow: var(--schatten); }
+.ly-b-kopf { font-size: 12.5px; font-weight: 800; color: #8a5a3a; margin-bottom: 8px; }
+.ly-b-feld { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+.ly-b-feld > div { padding: 8px; border-radius: 10px; border: 2px dashed var(--rand); font-size: 13px; font-weight: 700; line-height: 1.25; }
+.ly-b-feld > div b { display: block; margin-top: 3px; color: var(--leise); }
+.ly-b-feld > div.ok { border-style: solid; border-color: var(--gruen); background: rgba(63, 166, 107, .08); }
+.ly-b-feld > div.ok b { color: var(--gruen); }
+
+/* Gespräch */
+.ly-dialog { position: absolute; z-index: 20; left: 50%; bottom: max(18px, env(safe-area-inset-bottom)); transform: translateX(-50%); width: min(720px, calc(100vw - 24px)); padding: 16px 20px 12px; border-radius: 20px; background: var(--karte); box-shadow: var(--schatten); animation: ly-hoch .25s ease-out; cursor: pointer; }
+@keyframes ly-hoch { from { opacity: 0; transform: translate(-50%, 12px); } to { opacity: 1; transform: translate(-50%, 0); } }
+.ly-d-wer { display: inline-block; margin: -30px 0 6px -4px; padding: 4px 14px; border-radius: 99px; background: var(--f, var(--blau)); color: #fff; font-weight: 900; font-size: 15px; box-shadow: 0 4px 10px rgba(0, 0, 0, .18); }
+.ly-d-text { font-size: clamp(18px, 2.3vw, 21px); line-height: 1.42; font-weight: 700; color: var(--ink); }
+.ly-erz .ly-d-text { font-style: italic; font-weight: 600; color: var(--ink2); }
+.ly-d-fuss { display: flex; justify-content: space-between; align-items: center; margin-top: 8px; }
+.ly-d-vor { border: 0; background: none; font-size: 18px; cursor: pointer; opacity: .7; padding: 6px; }
+.ly-d-weiter { border: 0; background: none; font-weight: 800; font-size: 14px; color: var(--ink2); cursor: pointer; padding: 6px 2px; }
+.ly-wahl { cursor: default; }
+.ly-d-frage { font-size: 13px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: #8a5a3a; margin-bottom: 8px; }
+.ly-d-optionen { display: flex; flex-direction: column; gap: 8px; margin-top: 4px; }
+.ly-d-optionen button { display: flex; align-items: center; text-align: left; min-height: 50px; padding: 10px 14px; border: 2px solid var(--rand); border-radius: 14px; background: #fff; font-size: 17px; font-weight: 700; color: var(--ink); cursor: pointer; transition: border-color .15s, transform .1s; }
+.ly-d-optionen button:hover, .ly-d-optionen button:focus-visible { border-color: var(--blau); outline: none; }
+.ly-d-optionen button:active { transform: scale(.99); }
+
+/* Ebenen: Titel, Journal, Ende, Spiele */
+.ly-ebene { position: absolute; inset: 0; z-index: 30; display: grid; place-items: center; padding: 16px; background: rgba(31, 42, 61, .38); backdrop-filter: blur(3px); }
+.ly-karte { position: relative; width: min(640px, 100%); max-height: calc(100vh - 32px); overflow: auto; padding: 26px 26px 22px; border-radius: 24px; background: var(--papier); box-shadow: var(--schatten); }
+.ly-karte h2 { margin: 0 0 12px; font-size: 26px; font-weight: 900; color: var(--blau); }
+.ly-karte h3 { margin: 0 0 8px; font-size: 15px; font-weight: 900; color: #8a5a3a; text-transform: uppercase; letter-spacing: .08em; }
+.ly-k-titel { text-align: center; background: linear-gradient(180deg, rgba(255, 250, 240, .97), rgba(255, 244, 222, .97)); }
+.ly-ebene[data-art="titel"] { background: linear-gradient(180deg, rgba(45, 61, 92, .05), rgba(45, 61, 92, .35)); backdrop-filter: none; }
+.ly-t-sub { margin: 10px 0 0; font-weight: 800; color: var(--ink2); }
+.ly-t-knoepfe { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 22px; }
+.ly-t-fuss { margin: 18px 0 0; font-size: 13px; color: var(--leise); font-weight: 600; }
+.ly-btn { min-height: 50px; padding: 0 24px; border: 2px solid var(--rand); border-radius: 14px; background: #fff; font-size: 17px; font-weight: 800; color: var(--blau); cursor: pointer; }
+.ly-primaer { border-color: var(--blau); background: var(--blau); color: #fff; }
+.ly-zu { position: absolute; right: 14px; top: 14px; width: 40px; height: 40px; border: 0; border-radius: 12px; background: rgba(45, 61, 92, .08); font-size: 18px; cursor: pointer; color: var(--ink2); }
+.ly-leer { color: var(--leise); font-weight: 600; font-size: 14.5px; }
+.ly-w-figuren { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 6px 0 18px; }
+.ly-w-figuren button { padding: 10px 4px 8px; border: 2px solid var(--rand); border-radius: 16px; background: #fff; font-weight: 800; font-size: 13px; color: var(--ink2); cursor: pointer; }
+.ly-w-figuren button.an { border-color: var(--blau); box-shadow: 0 0 0 3px rgba(45, 61, 92, .15); color: var(--blau); }
+.ly-w-bild { display: block; position: relative; width: 52px; height: 72px; margin: 0 auto 6px; }
+.ly-w-bild::before { content: ''; position: absolute; left: 13px; top: 4px; width: 26px; height: 26px; border-radius: 50%; background: var(--h); box-shadow: inset 0 9px 0 var(--r); }
+.ly-w-bild::after { content: ''; position: absolute; left: 6px; top: 32px; width: 40px; height: 38px; border-radius: 16px 16px 6px 6px; background: var(--o); }
+.ly-w-name { display: flex; flex-direction: column; gap: 6px; font-weight: 800; color: var(--ink2); }
+.ly-w-name input { height: 50px; padding: 0 14px; border: 2px solid var(--rand); border-radius: 14px; font: 700 18px var(--font); color: var(--ink); user-select: text; -webkit-user-select: text; }
+.ly-k-wer .ly-btn { margin-top: 8px; width: 100%; }
+.ly-j-reiter { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+.ly-j-reiter button { padding: 8px 14px; border: 0; border-radius: 99px; background: rgba(45, 61, 92, .07); font-weight: 800; font-size: 14px; color: var(--ink2); cursor: pointer; }
+.ly-j-reiter button.an { background: var(--blau); color: #fff; }
+.ly-j-leute, .ly-j-staerken { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+.ly-j-leute li { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; padding: 9px 12px; border-radius: 12px; background: #fff; border: 1px solid var(--rand); }
+.ly-j-leute small { flex-basis: 100%; color: var(--leise); }
+.ly-j-name { font-weight: 900; color: var(--f); min-width: 110px; }
+.ly-herzen { color: #e85d75; letter-spacing: 2px; font-size: 15px; }
+.ly-herzen i { font-style: normal; color: rgba(45, 61, 92, .15); }
+.ly-j-staerken li { padding: 10px 12px; border-radius: 12px; background: #fff; border: 1px solid var(--rand); border-left: 5px solid var(--gold); }
+.ly-j-staerken b { display: block; color: var(--blau); }
+.ly-j-staerken b span { color: var(--leise); font-size: 13px; }
+.ly-j-staerken small { color: var(--ink2); font-weight: 600; font-size: 14px; }
+.ly-plan { width: 100%; border-collapse: collapse; font-size: 14px; font-weight: 700; }
+.ly-plan th, .ly-plan td { padding: 8px; border-bottom: 1px solid var(--rand); text-align: left; }
+.ly-plan th { color: #8a5a3a; }
+.ly-e-spalten { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.ly-e-weiter { margin: 16px 0 0; font-weight: 800; color: var(--blau); text-align: center; }
+.ly-k-ende { width: min(760px, 100%); }
+.ly-k-spiel { text-align: center; }
+.ly-k-spiel canvas { width: 100%; max-width: 520px; border-radius: 16px; background: linear-gradient(180deg, #bfe0f5, #f2e6cf); touch-action: none; }
+.ly-fw-stand { margin: 8px 0 10px; font-weight: 800; color: var(--ink2); }
+.ly-k-bild { text-align: center; }
+.ly-k-bild p { font-size: 19px; font-weight: 700; line-height: 1.45; }
+
+/* Touch */
+.ly-stick { position: absolute; width: 124px; height: 124px; margin: -62px 0 0 -62px; border-radius: 50%; border: 3px solid rgba(255, 255, 255, .6); background: rgba(31, 42, 61, .14); display: none; pointer-events: none; }
+.ly-stick.an { display: block; }
+.ly-stick span { position: absolute; left: 37px; top: 37px; width: 50px; height: 50px; border-radius: 50%; background: rgba(255, 255, 255, .85); }
+.ly-akt { display: none; position: absolute; right: max(22px, env(safe-area-inset-right)); bottom: max(28px, env(safe-area-inset-bottom)); width: 76px; height: 76px; border: 0; border-radius: 50%; background: var(--karte); box-shadow: var(--schatten); font: 900 26px var(--font); color: var(--blau); }
+.ly-touch .ly-akt { display: block; }
+.ly-touch .ly-hinweis { bottom: 124px; }
+@media (max-width: 640px) {
+  .ly-auftrag { max-width: calc(100vw - 150px); padding: 10px 12px; }
+  .ly-a-titel { font-size: 16px; } .ly-a-ziel { font-size: 14px; }
+  .ly-uhr { display: none; }
+  .ly-bingo { top: auto; bottom: 120px; }
+  .ly-e-spalten { grid-template-columns: 1fr; }
+  .ly-w-figuren { grid-template-columns: repeat(2, 1fr); }
+  .ly-toasts { top: 70px; }
+}
