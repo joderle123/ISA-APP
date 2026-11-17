@@ -1,4 +1,4 @@
-# Lycée des Collines – Schulsimulator (Phase 1)
+# Annexe Junglinster – Schulsimulator (früher „Lycée des Collines“)
 
 Ein offenes Lycée zum Herumlaufen mit einer klaren Hauptgeschichte. Ziel: soziale Situationen
 des Schulalltags üben, ruhig und ohne Bewertung. Für Jugendliche der Annexe.
@@ -45,6 +45,19 @@ alles zusammenpasst.
   Meister Becker mit Kenan als Betreuer (falsches Loch: wer nimmt es auf sich?) oder Anruf beim Bäcker (Absage), dann
   Kantine bei Frau Kremer (Zwiebeln mit Luca, Kasse: Lucas Karte ist leer) · Bewertungsbogen am Freitag. Viele frühere
   Entscheidungen kommen zurück (Portemonnaie, Kenan am Tor, Gerücht mit Mila, Screenshot, Garage bei Jos Onkel).
+- **Annexe Junglinster – Campus (campus.js, Auftrag 17.11.2026):** Name überall (Speicher-Schlüssel lycee.* bleiben).
+  Hinter dem Haupthaus ein Innenhof mit Bogengängen, alter Linde mit Rundbank, Beeten, Sitzstufen und Gewächshaus;
+  Nordflügel mit Aula (Bühne, Vorhang, Klavier, Kronleuchter) und Lesesaal (Bücherwände über zwei Etagen, Galerie);
+  Glockenturm; Ecktürmchen, Gauben, Schornsteine und Schieferdach am Haupthaus; Neubau aus Holz und Glas mit Musik-,
+  Kunst- und Informatikraum; Sportplatz mit Laufbahn, Fußballfeld und Tribüne. Gebäude erfunden – nur der Name ist echt.
+  Oberflächen werden im Browser gemalt (texturen.js): Pflaster, Fliesen, Dielen, Rasen, Asphalt, Schiefer, Bücherrücken.
+- **Mit Dingen etwas machen (interaktion.js):** Knopf bei nahen Dingen. Hinsetzen auf jedem Stuhl und jeder Bank,
+  Snackautomat, Brunnen, Spind, Klavier, Keyboard, Schlagzeug, Bücher, Pinnwand, Gießkanne, Freiwürfe, Computer.
+  **Arbeitsblatt am eigenen Platz** (Saal 1.04, Lesesaal): Blatt wählen → Papier mit Merkkasten, Lücken und < = >,
+  prüfen, falsche nochmal; Fortschritt im Spielstand. Aufgaben aus den Kernkompetenz-Blättern der Toolbox
+  (tools/lycee/blaetter-auszug.mjs → blaetter.js, nur eindeutige Lösungen) und das Paket der Lehrperson.
+- **Fehler-Rundgang:** automatische Prüfung (Figuren in Wänden, Laufwege, große Dinge ohne Kollision); Stühle,
+  Pflanzen, Laternen, Fahrräder, Bushaltestellen-Bank sind jetzt fest. Test: tests/lycee-interaktion.mjs.
 - **„Kurz raus“ (⏸ / P):** jederzeit (außer mitten im Gespräch, aber während einer Mutprobe): Atmen oder 5-4-3-2-1.
 - **Zweite Jugend-Kritik (17.11.2026, Schnitt 3,2):** 15 schwache Szenen neu (Noah am Bus, Sekretariat, Hoffmann, Bingo je Person verschieden, Mila auf der Bank, Kantinentische, Mathe-Test, Wochenende mit Doppel-Zusage, Telefon, zu spät, Werkstatt-Regeln, Sägen, Rückmeldung, Kenan am Bus); Logikfehler behoben (Mila im Klassenrat, Folgen zu früh gefragt,
   Weggehen bei Mila, Kenan am Bus, Hoffmann und „Zuhause“, Bens Schulden, Nudeln, unsichtbare Sprecher, männliche

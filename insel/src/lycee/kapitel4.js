@@ -49,7 +49,7 @@ export const SCHRITTE4 = [
   { id: 'k4_hoffmann', kap: 4, tag: 'Donnerstag', uhr: 9.9, titel: 'Bleibt kurz da', ziel: 'M. Hoffmann will mit dir reden. Saal 1.04.', marker: 'hoffmann',
     wenn: (m) => m.abgeschrieben,
     start: { teleport: 'saal104Tuer' },
-    leute: { hoffmann: [-26.4, -22.6, Math.PI / 2], noah: [-25.2, -20.8, -Math.PI / 2] },
+    leute: { hoffmann: [-26.4, -22.6, Math.PI / 2], noah: [-25.85, -20.8, -Math.PI / 2] },
     fertig: { reden: 'hoffmann', gespraech: 'abschreibSzene' } },
   { id: 'k4_club', kap: 4, tag: 'Donnerstag', uhr: 14.1, titel: 'Hausaufgaben-Club', ziel: 'Hausaufgaben-Club im CDI. Sprich mit Mme Laurent.', marker: 'laurent',
     start: { teleport: 'halle', gespraech: 'k4_do' },

@@ -43,7 +43,7 @@ export const SCHRITTE3 = [
     fertig: { reden: 'becker', gespraech: 'feedback' } },
   { id: 'k3_tor', kap: 3, tag: 'Montag', uhr: 12.65, titel: 'Am Tor', ziel: 'Mittagspause. Kenan winkt dir vom Tor.', marker: 'kenan',
     start: { teleport: 'eingangHof' },
-    leute: { kenan: [1.2, 38.6, Math.PI, 'winkt'], dario: [-0.6, 39.2, 2.8, 'redet'], hoffmann: [6, 24, -2.4] },
+    leute: { kenan: [1.2, 38.6, Math.PI, 'winkt'], dario: [-0.6, 39.2, 2.8, 'redet'], hoffmann: [4.2, 25.6, -2.4] },
     fertig: { reden: 'kenan', gespraech: 'tor' } },
   { id: 'k3_heim', kap: 3, tag: 'Montag', uhr: 15.5, titel: 'Heimweg', ziel: 'Geh zur Bushaltestelle. Diesmal bist du pünktlich.', marker: 'bus',
     start: { teleport: 'eingang' },

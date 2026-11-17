@@ -133,10 +133,11 @@ export function baueCampus({ B, P, R, schilder, C, schild, uhrTextur, stuhl, bod
     const a = i / 10 * Math.PI * 2, x = 2 + Math.sin(a) * 2.5, z = -40 + Math.cos(a) * 2.5;
     const g = new THREE.BoxGeometry(1.5, 0.12, 0.5); g.rotateY(a); g.translate(x, 0.48, z); geo(g, C.holz);
     const f = new THREE.BoxGeometry(0.12, 0.42, 0.12); f.translate(x, 0.21, z); geo(f, C.metallDunkel);
+    B.sitze.push({ x: 2 + Math.sin(a) * 2.75, z: -40 + Math.cos(a) * 2.75, rot: a, bank: true });
   }
   hart(-0.9, 4.9, -42.9, -37.1, 1);
   // Blumenbeete an den Ecken des Hofs
-  for (const [x, z] of [[-20, -34], [20, -34], [-20, -50.5], [8, -36]]) {
+  for (const [x, z] of [[-20, -34], [20, -34], [-20, -50.5], [10, -33]]) {
     box(x - 2, x + 2, 0, 0.45, z - 1, z + 1, C.sandsteinDunkel, { stoss: true }); box(x - 1.85, x + 1.85, 0.45, 0.5, z - 0.85, z + 0.85, erde);
     for (let i = 0; i < 6; i++) { const g = new THREE.IcosahedronGeometry(0.42 + (i % 3) * 0.06, 0); g.scale(1, 0.7, 1); g.translate(x - 1.4 + (i % 3) * 1.4, 0.72, z - 0.4 + Math.floor(i / 3) * 0.8); geo(g, i % 2 ? C.gruen : hex('#2e7d4f')); }
     for (let i = 0; i < 26; i++) { const g = new THREE.IcosahedronGeometry(0.075, 0); g.translate(x - 1.7 + ((i * 37) % 34) / 10, 0.98 + ((i * 13) % 5) * 0.03, z - 0.75 + ((i * 17) % 15) / 10); geo(g, [C.rot, C.gelb, hex('#e85d75'), hex('#f2efe6'), hex('#9b7bc8')][i % 5]); }
@@ -147,6 +148,7 @@ export function baueCampus({ B, P, R, schilder, C, schild, uhrTextur, stuhl, bod
     box(-22, -10, 0.42 * (i + 1), 0.42 * (i + 1) + 0.06, -46 - 1.5 * i - 0.55, -46 - 1.5 * i - 0.05, C.holzHell);
   }
   hart(-22, -10, -52, -46, 1.7);
+  for (let x = -21.2; x < -10.5; x += 1.2) B.sitze.push({ x, z: -46.25, rot: 0, bank: true });
   // Gewächshaus (Schulgarten-AG): Glas, Metallrahmen, Beete
   { const X0 = 10, X1 = 20, Z0 = -50, Z1 = -43, W = 2.6, F = 3.8;
     for (let x = X0; x <= X1 + 0.01; x += 2.5) for (const z of [Z0, Z1]) box(x - 0.05, x + 0.05, 0, W, z - 0.05, z + 0.05, C.metall);
@@ -357,7 +359,13 @@ export function baueCampus2({ B, P, R, schilder, C, schild, stuhl, boden, extra,
     box(48, 50.6, 0.75, 0.86, -61.2, -60.6, schwarz, { art: 'innen' }); for (let i = 0; i < 22; i++) box(48.06 + i * 0.115, 48.16 + i * 0.115, 0.86, 0.88, -60.95, -60.62, weiss, { art: 'innen' });
     for (let i = 0; i < 22; i++) if ([0, 1, 3, 4, 5].includes(i % 7) && i < 21) box(48.14 + i * 0.115, 48.2 + i * 0.115, 0.88, 0.9, -60.95, -60.78, schwarz, { art: 'innen' });
     for (const x of [48.2, 50.4]) box(x - 0.03, x + 0.03, 0.1, 0.75, -61, -60.8, C.metall, { art: 'innen' }); hart(48, 50.6, -61.2, -60.6, 0.9);
-    for (let i = 0; i < 4; i++) { const x = 47 + i * 1.3; const g = new THREE.CylinderGeometry(0.24, 0.3, 0.12, 10); g.scale(1, 1, 0.7); g.rotateX(Math.PI / 2); g.translate(x, 1.7, -61.75); geo(g, [hex('#b35a2a'), hex('#2f5d8a'), lack, hex('#e9b949')][i], 'innen'); box(x - 0.04, x + 0.04, 1.85, 2.5, -61.78, -61.72, schwarz, { art: 'innen' }); }
+    for (let i = 0; i < 4; i++) {   // Gitarren an der Wand: Korpus aus zwei Rundungen, langer Hals, Kopf
+      const x = 47 + i * 1.3, f = [hex('#b35a2a'), hex('#2f5d8a'), lack, hex('#e9b949')][i];
+      for (const [r, y] of [[0.27, 1.38], [0.2, 1.72]]) { const g = new THREE.CylinderGeometry(r, r, 0.1, 16); g.rotateX(Math.PI / 2); g.translate(x, y, -61.72); geo(g, f, 'innen'); }
+      { const g = new THREE.CylinderGeometry(0.075, 0.075, 0.11, 12); g.rotateX(Math.PI / 2); g.translate(x, 1.55, -61.7); geo(g, schwarz, 'innen'); }
+      box(x - 0.035, x + 0.035, 1.85, 2.55, -61.74, -61.68, hex('#5a3a22'), { art: 'innen' }); box(x - 0.06, x + 0.06, 2.55, 2.72, -61.74, -61.68, schwarz, { art: 'innen' });
+      box(x - 0.08, x + 0.08, 2.74, 2.78, -61.79, -61.74, C.metall, { art: 'innen' });
+    }
     for (let i = 0; i < 7; i++) { const a = -0.9 + i * 0.3, x = 54 + Math.sin(a) * 4, z = -56.6 - Math.cos(a) * 0.1 + Math.abs(a) * 1.5; stuhl(B, x, z, Math.PI + a * 0.6, C.stuhl[i % C.stuhl.length]); }
     for (let x = 45; x < 63; x += 1.2) box(x, x + 1, 2.2, 3.2, -61.82, -61.76, hex('#4a4f5c'), { art: 'innen' });
     R('musik', 'Musikraum', 44, X1, Z0, -54, { decke: Y - 0.3 }); }
@@ -399,6 +407,7 @@ export function baueCampus2({ B, P, R, schilder, C, schild, stuhl, boden, extra,
   // Tribüne (Osten des Platzes, Blick nach Westen)
   for (let i = 0; i < 5; i++) { box(SX1 + 0.4 + i * 0.9, SX1 + 1.3 + i * 0.9, 0, 0.45 * (i + 1), -22, 6, C.beton); box(SX1 + 0.45 + i * 0.9, SX1 + 0.9 + i * 0.9, 0.45 * (i + 1), 0.45 * (i + 1) + 0.08, -22, 6, [C.blau, C.gelb][i % 2]); }
   hart(SX1 + 0.4, SX1 + 4.9, -22, 6, 2.3);
+  for (let z = -21; z < 5.5; z += 1.3) B.sitze.push({ x: SX1 + 0.55, z, rot: -Math.PI / 2, bank: true });
   box(SX1 + 4.4, SX1 + 4.7, 0, 4.4, -22, -21.7, C.metall); box(SX1 + 4.4, SX1 + 4.7, 0, 4.4, 5.7, 6, C.metall);
   box(SX1 - 0.4, SX1 + 5.2, 4.4, 4.6, -22.3, 6.3, C.metallDunkel);
   { const t = schild('Stade Annexe', 3.6, 0.6, { bg: '#2fb8a8', schrift: 'bold 110px system-ui' }); t.position.set(SX1 + 5.0, 3.6, -8); t.rotation.y = -Math.PI / 2; schilder.push(t); const t2 = t.clone(); t2.rotation.y = Math.PI / 2; t2.position.x = SX1 + 4.38; schilder.push(t2); }

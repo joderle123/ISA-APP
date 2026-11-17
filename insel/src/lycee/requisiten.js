@@ -46,6 +46,11 @@ async function lade(bin, srgb) {
 }
 
 let _alle = null;
+// Kollision für Modelle, die oft ohne „fest“ aufgestellt werden (Fehler-Rundgang 17.11.)
+const AUTOFEST = { 'einrichtung/Plant': 0.5, 'strasse/Streetlight_Single': 0.3, 'platz/lantern': 0.3, 'moebel/OfficeChair': 0.5,
+  'einrichtung/CoffeeTable': true, 'einrichtung/ChairCushioned': true, 'verkehr/Bicycle': true, 'verkehr/SquareFrameBicycle': true,
+  'lager/bucket': 0.35, 'strasse/construction-cone': 0.35 };
+
 export function ladeRequisiten() {
   if (!_alle) _alle = Promise.all([lade(lyceeBin, false), lade(stadtBin, true)]).then(([a, b]) => ({ ...b, ...a }));
   return _alle;
@@ -76,6 +81,7 @@ export async function baueRequisiten({ welt, material, scene }) {
     if (!quelle) { fehlt.push(p.m); continue; }
     const g = stelle(quelle, p);
     const bb = g.boundingBox;
+    if (p.fest === undefined && AUTOFEST[p.m] !== undefined) p.fest = AUTOFEST[p.m];   // Dinge, durch die man nicht laufen soll
     if (p.fest === true) welt.kasten.push({ x0: bb.min.x + 0.05, x1: bb.max.x - 0.05, z0: bb.min.z + 0.05, z1: bb.max.z - 0.05, y0: bb.min.y, y1: bb.max.y });
     else if (typeof p.fest === 'number') welt.kasten.push({ x0: p.x - p.fest / 2, x1: p.x + p.fest / 2, z0: p.z - p.fest / 2, z1: p.z + p.fest / 2, y0: 0, y1: 3 });
     if (p.id) {

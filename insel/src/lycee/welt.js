@@ -32,7 +32,7 @@ for (const [k, v] of Object.entries(F)) C[k] = Array.isArray(v) ? v.map((x) => n
 // ---------- Baukasten ----------
 function baukasten() {
   const teile = { fest: [], innen: [], glas: [], licht: [] };   // fest: wirft Schatten · innen: Innenausbau (kein Schatten)
-  const kasten = [];
+  const kasten = [], alle = [], sitze = [];   // sitze: wo man sich hinsetzen kann { x, z, rot }   // alle: jeder Kasten (für die Prüfung „Kann man durchlaufen?“)
   function box(x0, x1, y0, y1, z0, z1, farbe, { art = 'fest', stoss = false, kanten = null } = {}) {
     if (x1 - x0 < 0.001 || y1 - y0 < 0.001 || z1 - z0 < 0.001) return;
     const g = new THREE.BoxGeometry(x1 - x0, y1 - y0, z1 - z0).toNonIndexed();
@@ -48,6 +48,7 @@ function baukasten() {
     g.setAttribute('color', new THREE.BufferAttribute(col, 3));
     g.deleteAttribute('uv');
     teile[art].push(g);
+    alle.push({ x0, x1, z0, z1, y0, y1, stoss, art });
     if (stoss) kasten.push({ x0, x1, z0, z1, y0, y1 });
   }
   // senkrechte Wand längs x (z fest) oder längs z (x fest) mit Öffnungen {von, bis, unten, oben}
@@ -67,7 +68,7 @@ function baukasten() {
     }
     stueck(pos, a1, y0, y1);
   }
-  return { teile, kasten, box, wand };
+  return { teile, kasten, alle, sitze, box, wand };
 }
 
 // Schilder: Text auf einer Leinwand, als Fläche an die Wand
@@ -134,7 +135,7 @@ export function baueWelt({ material, materialInnen }) {
   for (const x of [-25.6, -18.4]) box(x - 0.08, x + 0.08, 0.24, 2.6, 41.2, 41.4, C.metallDunkel, { stoss: true });
   box(-25.8, -18.2, 0.24, 2.4, 41.15, 41.25, C.glas, { art: 'glas', stoss: true });
   box(-26.1, -17.9, 2.6, 2.75, 40.9, 43.4, C.metallDunkel);
-  box(-24, -20, 0.24, 0.7, 41.3, 41.8, C.holz);
+  box(-24, -20, 0.24, 0.7, 41.3, 41.8, C.holz, { stoss: true });
   const busSchild = schild('Arrêt · Annexe', 1.6, 0.5, { bg: '#2fb8a8', schrift: 'bold 110px system-ui' });
   busSchild.position.set(-18.2, 2.2, 43.3); busSchild.rotation.y = -Math.PI / 2; schilder.push(busSchild);
   box(-18.25, -18.15, 0.24, 2.5, 43.2, 43.4, C.metallDunkel);
@@ -514,8 +515,14 @@ export function baueWelt({ material, materialInnen }) {
   }
 
   Object.assign(orte, ORTE_CAMPUS, ORTE_CAMPUS2);
+  // Bänke (Modelle): zwei Plätze je Bank, Blick weg von der Lehne
+  for (const p of plaetze) if (p.m === 'skate/bench') {
+    const yaw = p.rot + Math.PI, fx = Math.sin(yaw), fz = Math.cos(yaw);
+    for (const q of [-0.55, 0.55]) B.sitze.push({ x: p.x - fx * 0.6 + fz * q, z: p.z - fz * 0.6 - fx * q, rot: yaw, bank: true });
+  }
+  for (const x of [-23.2, -22, -20.8]) B.sitze.push({ x, z: 41.85, rot: 0, bank: true });   // Bushaltestelle
   const raumBei = (x, z) => raeume.find((r) => x > r.x0 && x < r.x1 && z > r.z0 && z < r.z1) || null;
-  return { gruppe, kasten: B.kasten, raeume, raumBei, orte, plaetze, schilder };
+  return { gruppe, kasten: B.kasten, alleKaesten: B.alle, sitze: B.sitze, raeume, raumBei, orte, plaetze, schilder };
 }
 
 // Bücherregal: von a0 bis a1 längs x (achse 1/-1 = Rückwand im Norden/Süden, z = Wandlinie) oder längs z (s = 0: x = a0, z von z bis a2)
@@ -548,6 +555,8 @@ function stuhl(B, x, z, rot, farbe) {
     const hx = Math.abs(c) * w / 2 + Math.abs(s) * d / 2, hz = Math.abs(s) * w / 2 + Math.abs(c) * d / 2;
     B.box(wx - hx, wx + hx, y0, y1, wz - hz, wz + hz, f, { art: 'innen' });
   };
+  B.kasten.push({ x0: x - 0.2, x1: x + 0.2, z0: z - 0.2, z1: z + 0.2, y0: 0, y1: 0.95 });   // Stuhl: nicht hindurchlaufen
+  if (B.sitze) B.sitze.push({ x, z, rot });
   const m = new THREE.Color('#8d96a3');
   for (const [lx, lz] of [[-0.19, -0.17], [0.19, -0.17], [-0.19, 0.17], [0.19, 0.17]]) teil(lx, lz, 0.035, 0.035, 0.06, 0.45, m);
   teil(0, 0, 0.44, 0.42, 0.45, 0.5, farbe);

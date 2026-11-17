@@ -15,6 +15,9 @@ import { baueWelt } from './welt.js';
 import { baueRequisiten, stelle } from './requisiten.js';
 import { ladePerson, namensschild, SITZ } from './figuren.js';
 import { fussSchatten } from './texturen.js';
+import { createInteraktionen } from './interaktion.js';
+import { BLAETTER } from './blaetter.js';
+import { MATHE, matheBlatt } from './mathe.js';
 import { createSteuerung } from './steuerung.js';
 import { createUI } from './ui.js';
 import { SCHRITTE, GESPRAECHE, LEUTE, STAERKEN, BINGO, GEHEIMNISSE, SPRECHER, KAPITEL } from './geschichte.js';
@@ -146,19 +149,19 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   // weg: läuft eine Runde · steht: [x, z, yaw, haltung] mit haltung 'redet' | 'sitzt' | 'raucht' | 'handy' · skate: [x0, x1, z]
   const STATISTEN = [
     { modell: 'menschen', stil: 'Casual', haut: '#e8bf9a', haar: '#5a3a24', oben: '#7b8794', unten: '#2d3748', schuhe: '#ffffff', hoehe: 1.7, weg: [[-24, 22], [-10, 28], [16, 24], [8, 12], [-20, 8]], tempo: 1.25 },
-    { modell: 'frauen', stil: 'Casual', haut: '#c68e64', haar: '#1b1410', oben: '#e9c46a', unten: '#3a3f4b', schuhe: '#f2f2f2', hoehe: 1.63, weg: [[12, 34], [40, 32], [43, 8], [14, 10]], tempo: 1.15 },
+    { modell: 'frauen', stil: 'Casual', haut: '#c68e64', haar: '#1b1410', oben: '#e9c46a', unten: '#3a3f4b', schuhe: '#f2f2f2', hoehe: 1.63, weg: [[12, 32.4], [40, 32], [43, 8], [14, 10]], tempo: 1.15 },
     { modell: 'menschen', stil: 'Beach', haut: '#9b6a45', haar: '#1b1410', oben: '#e85d75', unten: '#4a4f5c', schuhe: '#f2f2f2', hoehe: 1.74, kopf: 'cap', kopfFarbe: '#2b2b33', weg: [[-27, -15.0], [27, -15.0]], tempo: 1.2 },
     { modell: 'frauen', stil: 'Adventurer', haut: '#e0b48c', haar: '#2b1d14', oben: '#3fa66b', unten: '#2d3748', schuhe: '#6b4e3a', hoehe: 1.6, weg: [[25, -15.3], [-25, -15.3]], tempo: 1.1 },
     { modell: 'menschen', stil: 'Casual2', haut: '#f1c7a2', haar: '#d9b36a', oben: '#2fb8a8', unten: '#3a3f4b', schuhe: '#2b2b2b', hoehe: 1.68, frisur: 'locken', weg: [[-4.5, 38], [-4.5, 3], [-1, 3], [-1, 38]], tempo: 1.3 },
     // Pausenaufsicht in Warnweste: läuft ihre Runde über den Hof
-    { modell: 'menschen', stil: 'Worker', haut: '#e8bf9a', haar: '#7a7a7a', oben: '#ffd166', unten: '#2d3748', schuhe: '#2b2b2b', hoehe: 1.8, weg: [[-20, 30], [20, 30], [30, 6], [0, 4], [-26, 6]], tempo: 0.95 },
+    { modell: 'menschen', stil: 'Worker', haut: '#e8bf9a', haar: '#7a7a7a', oben: '#ffd166', unten: '#2d3748', schuhe: '#2b2b2b', hoehe: 1.8, weg: [[-20, 28.4], [20, 28.4], [30, 6], [0, 4], [-26, 6]], tempo: 0.95 },
     // Schlange beim Bäcker gegenüber
     { modell: 'frauen', stil: 'Casual', haut: '#f3d2b5', haar: '#c9a15a', oben: '#9b7bc8', unten: '#3a3f4b', schuhe: '#f2f2f2', hoehe: 1.62, steht: [3.2, 55.6, Math.PI, 'handy'] },
     { modell: 'menschen', stil: 'Beach', haut: '#c99a72', haar: '#2b1d14', oben: '#4f88c8', unten: '#2d3748', schuhe: '#ffffff', hoehe: 1.7, steht: [3.4, 54.4, Math.PI, 'redet'] },
     // Innenhof: Sitzstufen, Linde, ein Rundgang durch die Tore
     { modell: 'frauen', stil: 'Adventurer', haut: '#c68e64', haar: '#2b1d14', oben: '#e9c46a', unten: '#3a3f4b', schuhe: '#f2f2f2', hoehe: 1.6, steht: [-19.5, -46.25, 0, 'sitzt'] },
     { modell: 'menschen', stil: 'Casual', haut: '#e0b48c', haar: '#6b4e3a', oben: '#4f88c8', unten: '#2d3748', schuhe: '#ffffff', hoehe: 1.72, steht: [-14.2, -46.25, 0, 'sitzt'] },
-    { modell: 'frauen', stil: 'Casual', haut: '#f3d2b5', haar: '#8a5a3a', oben: '#e85d75', unten: '#2b2b33', schuhe: '#2b2b2b', hoehe: 1.62, steht: [4.6, -42.4, 2.6, 'handy'] },
+    { modell: 'frauen', stil: 'Casual', haut: '#f3d2b5', haar: '#8a5a3a', oben: '#e85d75', unten: '#2b2b33', schuhe: '#2b2b2b', hoehe: 1.62, steht: [6.4, -43.2, 2.6, 'handy'] },
     { modell: 'menschen', stil: 'Casual2', haut: '#9b6a45', haar: '#1b1410', oben: '#3fa66b', unten: '#3a3f4b', schuhe: '#f2f2f2', hoehe: 1.7, weg: [[-33, -20], [-33, -40.5], [-18, -40.5], [0, -34], [18, -40.5], [33, -40.5], [33, -20], [33, -40.5], [0, -34], [-33, -40.5]], tempo: 1.1 },
     // Raucherecke hinter der Turnhalle
     { modell: 'menschen', stil: 'Punk', haut: '#e0b48c', haar: '#2b1d14', oben: '#2b2b33', unten: '#4a4f5c', schuhe: '#2b2b2b', hoehe: 1.78, kopf: 'muetze', kopfFarbe: '#5a5a5a', steht: [60.2, -19.4, 1.9, 'raucht'] },
@@ -1111,7 +1114,61 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     }
     return best;
   }
-  ui.onAktion = () => { if (naechste && !imGespraech && !gesperrt() && laeuft) rede(naechste.id); };
+  ui.onAktion = () => { if (!imGespraech && !gesperrt() && laeuft) { if (naechste) rede(naechste.id); else if (iaNah) aktion(iaNah); } };
+
+  // ---------- Mit Dingen etwas machen (interaktion.js) ----------
+  let tonCtx = null;
+  function ton(art) {   // kleine Töne ohne Dateien: Klavier, Keyboard, Trommel, Klack, Pling, Platsch
+    try {
+      tonCtx = tonCtx || new (window.AudioContext || window.webkitAudioContext)();
+      const c = tonCtx, t0 = c.currentTime;
+      const note = (f, t, d = 0.35, typ = 'triangle', v = 0.18) => { const o = c.createOscillator(), g = c.createGain(); o.type = typ; o.frequency.value = f; g.gain.setValueAtTime(v, t0 + t); g.gain.exponentialRampToValueAtTime(0.001, t0 + t + d); o.connect(g).connect(c.destination); o.start(t0 + t); o.stop(t0 + t + d + 0.05); };
+      const rausch = (t, d = 0.12, v = 0.25) => { const b = c.createBuffer(1, c.sampleRate * d, c.sampleRate), a = b.getChannelData(0); for (let i = 0; i < a.length; i++) a[i] = (Math.random() * 2 - 1) * (1 - i / a.length); const q = c.createBufferSource(), g = c.createGain(); g.gain.value = v; q.buffer = b; q.connect(g).connect(c.destination); q.start(t0 + t); };
+      if (art === 'melodie') [523, 659, 784, 659, 698, 880].forEach((f, i) => note(f, i * 0.28, 0.5));
+      else if (art === 'melodie2') [392, 392, 523, 494, 440, 523, 587].forEach((f, i) => note(f, i * 0.18, 0.25, 'square', 0.08));
+      else if (art === 'trommel') [0, 0.25, 0.5, 0.62, 0.75].forEach((t, i) => (i % 2 ? rausch(t, 0.08, 0.3) : note(70, t, 0.25, 'sine', 0.5)));
+      else if (art === 'klack') { rausch(0, 0.05, 0.4); note(140, 0.05, 0.2, 'square', 0.1); }
+      else if (art === 'pling') { note(1046, 0, 0.3, 'sine', 0.15); note(1318, 0.1, 0.4, 'sine', 0.12); }
+      else if (art === 'platsch') rausch(0, 0.35, 0.2);
+    } catch (e) { /* kein Ton – egal */ }
+  }
+  async function blattWahl() {
+    S.blaetter = S.blaetter || {};
+    S.mathe = S.mathe || { modul: 1, stand: {} };
+    const w = await ui.blattWahl({ blaetter: BLAETTER, stand: S.blaetter, lehrer: paket && paket.eigen ? { titel: paket.titel } : null,
+      mathe: { module: MATHE, modul: S.mathe.modul, stand: S.mathe.stand } });
+    if (w === 'nix') return;
+    if (w.startsWith('mathe:')) {   // Mathe-Modul: Blatt mit Erklärung, immer neue Zahlen
+      const [, nr, id] = w.split(':'); S.mathe.modul = +nr;
+      for (let runde = 0; runde < 20; runde++) {
+        const b = matheBlatt(+nr, id, Date.now() + runde * 977); if (!b) return;
+        const st = SCHRITTE[S.schritt];
+        const r = await ui.arbeitsblatt({ blatt: b, name: S.name, datum: st ? st.tag : '', neu: true });
+        const alt = S.mathe.stand[id] || { richtig: 0, gesamt: r.gesamt, mal: 0 };
+        S.mathe.stand[id] = { richtig: Math.max(alt.richtig, r.richtig), gesamt: r.gesamt, mal: (alt.mal || 0) + 1 };
+        if (r.richtig === r.gesamt) staerke('dranbleiben');
+        sichern();
+        if (!r.neu) break;
+      }
+      return;
+    }
+    if (w === 'lehrer') { await TUN.lernmoment(); return; }
+    const b = BLAETTER.find((x) => x.id === w); if (!b) return;
+    const st = SCHRITTE[S.schritt];
+    const r = await ui.arbeitsblatt({ blatt: b, name: S.name, datum: st ? st.tag : '' });
+    const alt = S.blaetter[b.id];
+    if (!alt || r.richtig > alt.richtig) S.blaetter[b.id] = r;
+    if (r.richtig === r.gesamt) staerke('dranbleiben');
+    sichern();
+  }
+  const ia = createInteraktionen({ welt, steuerung, ui, zustand: () => S, sichern: () => sichern(), ton, blattWahl,
+    freiwurf: async () => ui.freiwurf() });
+  let iaNah = null;
+  async function aktion(i) {
+    if (i.tu === 'sitzen') { await ia.tu(i); sperreBis = performance.now() + 350; return; }
+    imGespraech = true; input.setEnabled(false); steuerung.frei = false; ui.hinweis(null);
+    try { await ia.tu(i); } finally { imGespraech = false; input.setEnabled(true); steuerung.frei = true; sperreBis = performance.now() + 350; }
+  }
 
   // ---------- Schleife ----------
   let laeuft = false, raumAlt = undefined, geheimT = 0;
@@ -1162,8 +1219,9 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     raumLicht.intensity += ((raum ? 1.15 : 0) - raumLicht.intensity) * Math.min(1, dt * 3);
     // Ansprechen
     naechste = imGespraech ? null : wenNah();
-    ui.hinweis(naechste ? 'Mit ' + naechste.def.name + ' reden' : null);
-    if (!imGespraech && !gesperrt() && (input.state.actionTap || input.state.action) && naechste) rede(naechste.id);
+    iaNah = !naechste && !imGespraech && !probe ? ia.naechste(p) : null;
+    ui.hinweis(naechste ? 'Mit ' + naechste.def.name + ' reden' : iaNah ? iaNah.text : null);
+    if (!imGespraech && !gesperrt() && (input.state.actionTap || input.state.action)) { if (naechste) rede(naechste.id); else if (iaNah) aktion(iaNah); }
     // Orte, die etwas auslösen
     const st = SCHRITTE[S.schritt];
     if (probe) probeSchritt(dt, p);
@@ -1217,6 +1275,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     teleport: (ort, yaw) => { const o = typeof ort === 'string' ? welt.orte[ort] : ort; steuerung.teleport(o.x, o.z, yaw !== undefined ? yaw : o.yaw); },
     rede, los, audio, SITZ, input, get naechste() { return naechste && naechste.id; },
     get probe() { return probe; }, set mutTempo(v) { mutTempo = v; },
+    daten: { SCHRITTE, STATISTEN, LEUTE, BLAETTER, MATHE }, ia, aktion, get iaNah() { return iaNah && iaNah.tu; },
   };
 
   onProgress(1, '');

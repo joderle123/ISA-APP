@@ -518,6 +518,82 @@ export function createUI({ root, input, speech }) {
     k.querySelector('[data-a]').onclick = fertig;
   });
 
+  // ---------- Arbeitsblatt am eigenen Platz (Aufgaben aus den Kernkompetenz-Blättern der Toolbox) ----------
+  // Wahl: welches Blatt? (mit Fortschritt) – eigene Aufgaben der Lehrperson zuerst
+  ui.blattWahl = ({ blaetter, stand = {}, lehrer = null, mathe = null }) => new Promise((ok) => {
+    const k = ebeneAuf('blattwahl', '<button type="button" class="ly-zu" aria-label="Schließen">✕</button><div class="ly-t-kicker">Dein Platz</div><h2>Was machst du?</h2><div class="ly-bw-liste"></div>');
+    const liste = k.querySelector('.ly-bw-liste');
+    const knopf = (wert, titel, unter, fertig) => '<button type="button" data-b="' + esc(wert) + '"><b>' + esc(titel) + '</b><small>' + esc(unter) + '</small>' + (fertig ? '<i class="' + (fertig.richtig === fertig.gesamt ? 'voll' : '') + '">' + fertig.richtig + '/' + fertig.gesamt + '</i>' : '') + '</button>';
+    let modul = mathe ? mathe.modul : 1;
+    const zeige = () => {
+      let h = '';
+      if (lehrer) h += '<h3 class="ly-bw-h">Von deiner Lehrperson</h3>' + knopf('lehrer', lehrer.titel, 'Aufgaben aus dem Unterricht', null);
+      if (mathe) {
+        const m = mathe.module.find((x) => x.nr === modul);
+        h += '<h3 class="ly-bw-h">Mathe – in welchem Modul bist du?</h3><div class="ly-bw-module">' + mathe.module.map((x) => '<button type="button" data-m="' + x.nr + '" class="' + (x.nr === modul ? 'an' : '') + '">' + x.nr + '</button>').join('') + '</div>' +
+          '<p class="ly-bw-ziel"><b>Modul ' + m.nr + ': ' + esc(m.titel) + '</b> · ' + esc(m.ziele.join(' · ')) + '</p>' +
+          m.blaetter.map((b) => knopf('mathe:' + m.nr + ':' + b.id, b.titel, 'Mit Erklärung · neue Zahlen bei jedem Mal', (mathe.stand || {})[b.id])).join('');
+      }
+      h += '<h3 class="ly-bw-h">Kernkompetenzen (Toolbox)</h3>' + blaetter.map((b) => knopf(b.id, b.modul + ' · ' + b.titel, b.aufgaben.length + ' Aufgaben', stand[b.id])).join('');
+      h += knopf('nix', 'Nur sitzen', 'Kurz durchatmen. Niemand will was.', null);
+      liste.innerHTML = h;
+      liste.querySelectorAll('[data-b]').forEach((b) => { b.onclick = () => fertig(b.dataset.b); });
+      liste.querySelectorAll('[data-m]').forEach((b) => { b.onclick = () => { modul = +b.dataset.m; zeige(); }; });
+    };
+    const fertig = (w) => { document.removeEventListener('keydown', taste, true); ebeneZu(); ok(w === 'nix' ? 'nix' : w + (w.startsWith('mathe:') ? '' : '')); };
+    const taste = (e) => { if (e.code === 'Escape') { e.preventDefault(); e.stopPropagation(); fertig('nix'); } };
+    document.addEventListener('keydown', taste, true);
+    k.querySelector('.ly-zu').onclick = () => fertig('nix');
+    zeige();
+  });
+
+  // Das Blatt: Papier, Kopfzeile, Merkkasten, Aufgaben mit Lücken (Zahlenfeld) oder Zeichen (< = >). Prüfen → richtig ist
+  // grün und bleibt, falsch darf man nochmal. Keine Noten.
+  ui.arbeitsblatt = ({ blatt, name = '', datum = '', neu = false }) => new Promise((ok) => {
+    const aufg = blatt.aufgaben;
+    const zeile = (a, i) => {
+      if (a.wahl) return '<li data-i="' + i + '"><span class="ly-ab-nr">' + (i + 1) + '</span><span class="ly-ab-t">' + esc(a.t).replace('◻', '<span class="ly-ab-zeichen" data-z="">?</span>') + '</span><span class="ly-ab-wahl">' + a.wahl.map((w) => '<button type="button" data-w="' + esc(w) + '">' + esc(w) + '</button>').join('') + '</span><span class="ly-ab-ok"></span></li>';
+      let n = 0;
+      const t = esc(a.t).replace(/_{2,}/g, () => '<input type="text" inputmode="decimal" autocomplete="off" data-l="' + (n++) + '" aria-label="Lücke">');
+      return '<li data-i="' + i + '"><span class="ly-ab-nr">' + (i + 1) + '</span><span class="ly-ab-t">' + t + '</span><span class="ly-ab-ok"></span>' + (a.tipp ? '<small class="ly-ab-tipp" hidden>💡 ' + esc(a.tipp) + '</small>' : '') + '</li>';
+    };
+    const fragen = []; aufg.forEach((a) => { if (a.frage && !fragen.includes(a.frage)) fragen.push(a.frage); });
+    const k = ebeneAuf('blatt', '<div class="ly-ab-papier"><div class="ly-ab-kopf"><span>Annexe Junglinster · ' + esc(blatt.modul) + '</span><span>Name: <u>' + esc(name) + '</u></span><span>' + esc(datum) + '</span></div>' +
+      '<h2>' + esc(blatt.titel) + '</h2><p class="ly-ab-unter">' + esc(blatt.untertitel || '') + '</p>' +
+      (blatt.erkl ? '<details class="ly-ab-erkl" open><summary>So geht\'s</summary><p class="ly-ab-idee">' + esc(blatt.erkl.idee) + '</p><ol>' + blatt.erkl.schritte.map((x) => '<li>' + esc(x) + '</li>').join('') + '</ol><p class="ly-ab-bsp"><b>Beispiel:</b> ' + esc(blatt.erkl.beispiel) + '</p></details>' : '') +
+      (blatt.info && blatt.info.length ? '<div class="ly-ab-merke"><b>Merke</b>' + blatt.info.map((p) => '<span>' + esc(p) + '</span>').join('') + '</div>' : '') +
+      (fragen.length ? '<p class="ly-ab-frage">' + esc(fragen.join(' · ')) + '</p>' : '') +
+      '<ol class="ly-ab-liste">' + aufg.map(zeile).join('') + '</ol>' +
+      '<div class="ly-ab-fuss"><span class="ly-ab-stand"></span><button type="button" class="ly-btn" data-a="weg">Weglegen</button>' + (neu ? '<button type="button" class="ly-btn" data-a="neu">Neue Zahlen</button>' : '') + '<button type="button" class="ly-btn ly-primaer" data-a="pruefen">Prüfen</button></div></div>');
+    const stand = k.querySelector('.ly-ab-stand');
+    k.querySelectorAll('.ly-ab-wahl').forEach((w) => w.querySelectorAll('[data-w]').forEach((b) => { b.onclick = () => { const z = w.parentNode.querySelector('.ly-ab-zeichen'); z.textContent = b.dataset.w; z.dataset.z = b.dataset.w; w.querySelectorAll('[data-w]').forEach((x) => x.classList.toggle('an', x === b)); }; }));
+    const norm = (v) => String(v || '').trim().replace(/\s/g, '').replace('.', ',');
+    const gleich = (v, soll) => { const a = norm(v), b = norm(soll); if (a === b) return true; const x = parseFloat(a.replace(',', '.')), y = parseFloat(b.replace(',', '.')); return a !== '' && /^-?[\d,]+$/.test(a) && !isNaN(x) && x === y; };
+    let richtig = 0;
+    const pruefen = () => {
+      richtig = 0;
+      aufg.forEach((a, i) => {
+        const li = k.querySelector('li[data-i="' + i + '"]'), okEl = li.querySelector('.ly-ab-ok');
+        let gut;
+        if (a.wahl) gut = li.querySelector('.ly-ab-zeichen').dataset.z === a.a;
+        else { const f = [...li.querySelectorAll('input')]; gut = f.length === a.a.length && f.every((x, j) => gleich(x.value, a.a[j])); if (gut) f.forEach((x) => { x.readOnly = true; }); }
+        li.classList.toggle('gut', gut); li.classList.toggle('nochmal', !gut);
+        okEl.textContent = gut ? '✓' : '·';
+        const tp = li.querySelector('.ly-ab-tipp'); if (tp) tp.hidden = gut;
+        if (gut) richtig++;
+      });
+      stand.textContent = richtig + ' von ' + aufg.length + (richtig === aufg.length ? ' – alles richtig!' : ' – die anderen nochmal?');
+      if (richtig === aufg.length) k.querySelector('[data-a="pruefen"]').textContent = 'Fertig';
+    };
+    const ende = () => { document.removeEventListener('keydown', taste, true); ebeneZu(); ok({ richtig, gesamt: aufg.length }); };
+    const taste = (e) => { if (e.code === 'Escape') { e.preventDefault(); e.stopPropagation(); ende(); } };
+    document.addEventListener('keydown', taste, true);
+    k.querySelector('[data-a="weg"]').onclick = ende;
+    const nb = k.querySelector('[data-a="neu"]'); if (nb) nb.onclick = () => { document.removeEventListener('keydown', taste, true); ebeneZu(); ok({ richtig, gesamt: aufg.length, neu: true }); };
+    k.querySelector('[data-a="pruefen"]').onclick = () => { if (richtig === aufg.length && k.querySelector('[data-a="pruefen"]').textContent === 'Fertig') ende(); else pruefen(); };
+    const f0 = k.querySelector('input'); if (f0) setTimeout(() => { try { f0.focus({ preventScroll: true }); } catch (e) { /* egal */ } }, 60);
+  });
+
   // Tagesrückblick beim Tageswechsel: wer dir näher oder ferner ist (statt sofortiger Herzen nach jeder Antwort)
   ui.rueckblick = (titel, untertitel, eintraege) => new Promise((ok) => {
     const k = ebeneAuf('bild', '<h2>' + esc(titel) + '</h2><p>' + esc(untertitel) + '</p>' + (eintraege.length ? '<div class="ly-t-kicker">Was hängen bleibt</div><ul class="ly-rb">' +

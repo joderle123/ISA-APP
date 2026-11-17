@@ -79,7 +79,7 @@ export const GEHEIMNISSE = [
 // Wer im Saal 1.04 sitzt (Pulte: x = −24.8 + r·2.1 + 0.55, z = −27.2 + c·3.4 ± 0.62)
 const pult = (r, c, s) => [-24.25 + r * 2.1, -27.2 + c * 3.4 + s * 0.62, -Math.PI / 2, 'sitzt'];
 const KLASSE = { ayla: pult(0, 0, -1), ben: pult(1, 2, 1), chiara: pult(2, 1, -1), yusuf: pult(1, 0, 1), jo: pult(3, 2, -1), lina: pult(3, 0, 1) };
-const KLASSE_STEHT = { ayla: [-24, -27, 0.4], ben: [-21.5, -22.5, -2.6], chiara: [-19.5, -25.5, 1.8], yusuf: [-23.6, -20.2, 2.4], jo: [-18.6, -21, -1.5], lina: [-18.2, -27.8, -0.6] };
+const KLASSE_STEHT = { ayla: [-24, -27, 0.4], ben: [-21.5, -22.5, -2.6], chiara: [-19.5, -25.5, 1.8], yusuf: [-23.6, -20.2, 2.4], jo: [-19.55, -21, -1.5], lina: [-19.55, -27.8, -0.6] };
 
 export const SCHRITTE = [
   { id: 'ankunft', uhr: 7.55, titel: 'Der erste Morgen', ziel: 'Sprich mit Noah an der Bushaltestelle.', marker: 'noah',
@@ -96,7 +96,7 @@ export const SCHRITTE = [
     leute: { hoffmann: [-27, -24, Math.PI / 2], noah: pult(0, 1, 1), ...KLASSE },
     fertig: { reden: 'hoffmann', gespraech: 'hoffmann1' } },
   { id: 'bingo', uhr: 8.3, titel: 'Klassen-Bingo', ziel: 'Finde für jedes Feld jemanden. Frag herum!', marker: 'bingo',
-    leute: { hoffmann: [-27, -24, Math.PI / 2], noah: [-22.2, -23.3, 2.2], ...KLASSE_STEHT },
+    leute: { hoffmann: [-27, -24, Math.PI / 2], noah: [-22.75, -23.3, 2.2], ...KLASSE_STEHT },
     fertig: { bingo: 4, gespraech: 'bingoFertig' } },
   { id: 'pause', uhr: 10.0, titel: 'Große Pause', ziel: 'Pause! Geh zu Mila auf der Bank – oder zum Korbballfeld.', marker: ['mila', 'ben'],
     start: { teleport: 'eingangHof' },
