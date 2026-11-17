@@ -9,7 +9,7 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { MeshoptDecoder } from 'three/examples/jsm/libs/meshopt_decoder.module.js';
 import lyceeBin from './modelle/lycee.glb';
 import stadtBin from './modelle/kenney.glb';   // Auswahl aus respawn/modelle/stadt.glb (tools/lycee/kenney-auswahl.mjs)
-import { mergeAll } from './welt.js';
+import { mergeAll, zellenMerge } from './welt.js';
 
 const puffer = (b) => b.buffer.slice(b.byteOffset, b.byteOffset + b.byteLength);
 function parse(buf) { return new Promise((ok, nein) => new GLTFLoader().setMeshoptDecoder(MeshoptDecoder).parse(buf, '', ok, nein)); }
@@ -93,8 +93,9 @@ export async function baueRequisiten({ welt, material, scene }) {
       scene.add(mesh); eigene[p.id] = mesh;
     } else fest.push(g);
   }
-  const mesh = new THREE.Mesh(mergeAll(fest), material);
-  mesh.name = 'requisiten'; mesh.castShadow = true; mesh.receiveShadow = true;
+  // nach Zellen zusammengefasst (Kamera-Ausschnitt schneidet ganze Zellen weg); mesh = Gruppe für Aufrufer
+  const mesh = new THREE.Group(); mesh.name = 'requisiten';
+  for (const g of zellenMerge(fest, 24)) { const m = new THREE.Mesh(g, material); m.name = 'requisiten-zelle'; m.castShadow = true; m.receiveShadow = true; mesh.add(m); }
   scene.add(mesh);
   if (fehlt.length) console.warn('Lycée: Modelle fehlen', [...new Set(fehlt)]);
   return { mesh, eigene, fehlt, geo };

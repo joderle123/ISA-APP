@@ -40,3 +40,18 @@ export const PLAUDERN = {
   laurent: ['„Vielleicht“ mit zwei l. Nur so.', 'Donnerstag ist Club. Mit Keksen.', 'Leise, bitte. Die Bücher schlafen.'],
   fahrer: ['Abfahrt 7:35. Nicht 7:36.', 'Wer im Bus isst, putzt den Bus.'],
 };
+
+// Bank-Momente: Spielfigur sitzt eine Weile neben jemandem. Keiner muss reden. Einmal je Kapitel und Person.
+export const BANK = {
+  mila: 'Ihr sitzt. Klack, klack. Sie hält dir den Würfel hin. Kurz.',
+  noah: 'Noah sagt zwölf Minuten nichts. Für Noah ein Rekord.',
+  lina: 'Lina zeichnet. Du guckst nicht hin. Sie dreht das Heft ein Stück zu dir.',
+  ayla: 'Ayla gibt dir einen Ohrstöpsel. Bass. Sehr viel Bass.',
+  jo: 'Jo sitzt neben dir und tut, als wäre das Zufall.',
+  ben: 'Ben bietet dir einen Kaugummi an. Von dir. Aus deiner Tasche.',
+  chiara: 'Chiara sortiert ihre Stifte. Nach Farbe. Du darfst den gelben halten.',
+  yusuf: 'Yusuf nickt einmal. Dann sitzt ihr einfach. Gut.',
+  luca: 'Luca scrollt. Er zeigt dir ein Video. Es ist wirklich lustig. Mist.',
+  kenan: 'Kenan nimmt den Bleistift vom Ohr. Er zeichnet ein Regal. Schief.',
+  dario: 'Dario zeigt dir Fotos von Autos. Sehr viele Autos.',
+};

@@ -239,7 +239,7 @@ export function createSky({ scene, renderer, audio, quality, events }) {
   sun.shadow.normalBias = 0.05;
   // Schattenrand knapp weich (Toon: klare Schattenformen statt Blob), Feinheit über die Rampe in veil.js
   sun.shadow.radius = quality.name === 'high' ? 2 : 1.5;
-  const shadowSpan = { v: quality.name === 'high' ? 60 : 44 };
+  const shadowSpan = { v: quality.shadowSpan || (quality.name === 'high' ? 60 : 44) };
   const sc = sun.shadow.camera;
   sc.near = 1; sc.far = 420;
   sc.left = -shadowSpan.v; sc.right = shadowSpan.v; sc.top = shadowSpan.v; sc.bottom = -shadowSpan.v;
@@ -542,7 +542,7 @@ export function createSky({ scene, renderer, audio, quality, events }) {
     setQuality(q) {
       sun.castShadow = q.shadows;
       if (q.shadows) {
-        const s = q.shadowSize;
+        const s = quality.shadowSpan ? Math.min(q.shadowSize, 2048) : q.shadowSize;   // Annexe: höchstens 2048
         if (sun.shadow.mapSize.x !== s) {
           sun.shadow.mapSize.set(s, s);
           if (sun.shadow.map) { sun.shadow.map.dispose(); sun.shadow.map = null; }

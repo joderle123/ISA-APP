@@ -128,7 +128,7 @@ export const GESPRAECHE3 = {
       { t: '„Ich komm.“', staerke: 'entscheiden', herz: { becker: 1 }, merke: 'berufHolz', dann: [
         ['becker', 'Neun Uhr. Nicht fünf nach.'], ['kenan', 'Samstag? Freiwillig? Du bist komisch.']] },
       { t: '„Samstag ist schwierig.“', merke: 'berufOffen', dann: [['becker', 'Musst nicht sagen, warum. Der Zettel hängt an der Tür.']] },
-      { t: '„Holz ist nicht meins. Eher Menschen.“', staerke: 'entscheiden', merke: 'berufMenschen', dann: [['becker', 'Gut zu wissen. Frag beim SePAS nach Praktika.']] },
+      { t: '„Holz ist nicht meins. Zu viel Staub.“', staerke: 'entscheiden', merke: 'berufMenschen', dann: [['becker', 'Gut zu wissen. Frag beim SePAS nach Praktika.']] },
       { t: '„Gibt’s da was zu essen?“', staerke: 'humor', dann: [['becker', 'Brötchen. Um zehn.'], ['erzaehler', 'Er schreibt deinen Namen auf. Mit Fragezeichen.']] },
     ] },
   ],

@@ -178,7 +178,7 @@ export const GESPRAECHE4 = {
             ['luca', '… Langweiler. (löscht)'] ] },
           { t: 'Mitlachen. „Nochmal. Diesmal richtig.“', staerke: 'humor', herz: { kenan: 2, luca: 1 }, merke: 'nochmal', dann: [
             ['erzaehler', 'Zweiter Versuch. Wackelig. Aber du stehst.'],
-            ['kenan', 'Okay. Respekt.'],
+            ['kenan', 'Okay. Hätt ich nicht gedacht.'],
             ['luca', 'Den ersten poste ich trotzdem.'] ] },
           { t: '(Board liegen lassen. Gehen.)', staerke: 'abstand', merke: 'skateWeg', dann: [
             ['luca', 'Ey, beleidigt?'],
@@ -265,7 +265,7 @@ export const GESPRAECHE4 = {
   ziel: [
     { tu: 'torGespraech' },
     ['hoffmann', 'Neue Methode: das Wochenziel. Eins. Klein. Kein Aufsatz.'],
-    ['hoffmann', 'Klein und machbar. Was nimmst du dir vor, {name}?'],
+    ['hoffmann', '{name}? Was nimmst du dir vor? Kein Weltfrieden.'],
     { wahl: [
       { t: 'Einmal im Unterricht etwas fragen.', staerke: 'ziel', merke: 'zielFragen', dann: [['hoffmann', 'Notiert. Ich frag Freitag nach.']] },
       { t: 'Jemanden ansprechen, der allein ist.', staerke: 'ziel', merke: 'zielAnsprechen', dann: [['hoffmann', 'Notiert. Lina sitzt übrigens immer am Fenster.']] },

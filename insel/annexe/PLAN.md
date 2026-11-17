@@ -14,6 +14,7 @@ So knüpft eine neue Sitzung an: diese Datei lesen, dann ENTSCHEIDUNGEN.md, dann
   (3 Gespräche je Figur), `freunde.js` (Charaktere, Gruß, Nachrichten), `lektionen.js` (erzeugt aus `tools/sprachen`),
   `mathe.js`, `deutsch.js`. Noch in `spiel.js`: Plauder-Sätze, Statisten, Szenen-Funktionen (TUN) mit eingebetteten Zeilen.
 - Speichern: `localStorage` „lycee.stand“ (ein Stand, ohne Versionsnummer), Aufgaben der Lehrperson „lycee.aufgaben“.
+- Drehbuch: `node tools/annexe/drehbuch.mjs` schreibt `annexe/DREHBUCH.md` (nie von Hand ändern).
 - Tests: `tests/lycee.mjs` (Gesamtlauf, 101 Prüfungen), `tests/lycee-interaktion.mjs` (42 Prüfungen).
 
 ## Werkzeuge (Etappe 0)
@@ -26,17 +27,17 @@ So knüpft eine neue Sitzung an: diese Datei lesen, dann ENTSCHEIDUNGEN.md, dann
 ## Etappen
 - [x] **0 Vorbereiten** – Sicherung (Commit b1ec109, Kopie der Ausgangsdatei), Debug-Leiste, Regel-Skript, Autoplay-Durchlauf, Geräte-Fotos, PLAN.md, ENTSCHEIDUNGEN.md
 - [ ] **1 Stimme** – FIGUREN.md, alle Gespräche neu, DREHBUCH.md (erzeugt), Kapitel 1 erfüllt den Fünf-Minuten-Maßstab
-  - [ ] Figurenbibel (will, Widerspruch, wunder Punkt, Sprechweise, Running Gag, Zuneigung durch Taten, nervt, Einwurf)
-  - [ ] `stimmen.js`: Einwürfe je Figur, Plauder-Sätze aus spiel.js als Daten
-  - [ ] Kapitel 1 neu, mit Lacher < 1 min, echter Entscheidung < 3 min, Freischaltung < 5 min
-  - [ ] Kapitel 2–7 neu (Zwickmühlen behalten, Sprache neu), Szenen-Funktionen in spiel.js
-  - [ ] Freundschafts-Gespräche, Plaudern, Grüße, Nachrichten
-  - [ ] Kopfkino (Kopf, Bauch, Stolz) in Druckmomenten
-  - [ ] Ben-Schulden als Zähler, weitere Running Gags (Automat, Uhr, Methoden, Busfahrer)
-  - [ ] Knopf „Sagt keiner so“ (lokal, ohne Namen, im Pausenmenü kopierbar)
-  - [ ] Bank-Momente (gemeinsam schweigen)
-  - [ ] Welttexte (Zettel, Kritzeleien, Durchsagen, Fundkiste)
-  - [ ] Handy als Zentrale mit Klassenchat (Tippen, gelesen, Reaktionen, Nicht-Antworten zählt)
+  - [x] Figurenbibel (will, Widerspruch, wunder Punkt, Sprechweise, Running Gag, Zuneigung durch Taten, nervt, Einwurf)
+  - [x] `stimmen.js`: Einwürfe je Figur, Plauder-Sätze aus spiel.js als Daten
+  - [x] Kapitel 1 neu, mit Lacher < 1 min, echter Entscheidung < 3 min, Freischaltung < 5 min
+  - [~] Kapitel 2–7 überarbeitet (35 Kritik-Stellen + Kopfkino + flache Sätze); Gegenlesen folgt
+  - [x] Freundschafts-Gespräche, Plaudern, Grüße, Nachrichten
+  - [x] Kopfkino (Kopf, Bauch, Stolz) in Druckmomenten: Kantine, Tor, Schwänzen, Skate, Gerücht, Rauswurf
+  - [x] Ben-Schulden als Zähler (Journal), Automat-Zähler, Webers „16 Uhr, nicht 16:05“, Hoffmanns „Neue Methode“, Busfahrer
+  - [x] Knopf „Sagt keiner so“ (lokal `lycee.sagtkeiner`, ohne Namen, im Pausenmenü ⏸ kopierbar)
+  - [x] Bank-Momente (9 s neben jemandem sitzen → Toast + Freundschaft, je Kapitel einmal)
+  - [x] Welttexte (`welttexte.js`: Pinnwand wechselt, Kritzeleien Bus/Tisch, Durchsagen, Fundkiste)
+  - [~] Klassenchat mit Tippen, Reaktionen, „gelesen von“; Kap. 2 Foto und Kap. 5 Rauswurf im Handy. Offen: Handy als Zentrale (Freundes-Nachrichten, Antworten im Chat)
   - [ ] Gegenlesen: drei Rollen per Subagent, Regel-Skript grün, Durchspielen 1–7 grün
 - [ ] **2 Welt** – Tagesablauf je Figur, Szenen ohne Spielfigur, Körpersprache/Comic-Zeichen, Comic-Look, Licht/Wetter/Herbst, Kamera, Ton
 - [ ] **3 Lernen und Belohnungen** – Hoffmanns Methoden, Stoff in der Welt, Jetons, Einlösen bei Figuren, Spind, Editor, Hilfe-Leiter
@@ -64,7 +65,7 @@ Vorher-Bilder und Messwerte: `annexe/bilder/vorher-*` (17.11.2026, q=high, 1180�
 ## Etappen
 - [x] **G0 Bestandsaufnahme** – Modelle gesichtet (Quaternius Men/Women, Kenney-Auswahl, Quaternius-Requisiten), KayKit geladen (CC0),
       Quaternius UBC/UAL/Nature und Kenney/Poly Pizza nicht erreichbar (Liste in LIZENZEN.md), Vorher-Bilder, Messwerte
-- [x] **G1 Look-Probe** – A Comic, B Skizzenbuch, C Weich als ein Bild (`annexe/bilder/look-vergleich.jpg`) → **wartet auf Auswahl**
+- [x] **G1 Look-Probe** – A Comic, B Skizzenbuch, C Weich als ein Bild (`annexe/bilder/look-vergleich.jpg`) → vorläufig **A Comic, leichter** (siehe ENTSCHEIDUNGEN)
 - [ ] **G2 Fundament** – Material-System (ein Toon-Material + Palette für alle Modelle), Palette 12–16 Farben, Licht/Tageszeiten, Schatten ≤ 2048 eng um die Kamera, Himmel, Nachbearbeitung in einem Durchgang, Qualitätsstufen
 - [ ] **G3 Figuren** – Probe Mila/Kenan/Frau Kremer (Halt), dann alle; Baukasten für Skins, Gesichter, Bewegung, Sport-Posen
 - [ ] **G4 Welt** – Hof, Skate-Ecke, Bushaltestelle, Gänge, Saal, Kantine, Werkstatt, Bibliothek, Büro (Postkarten-Test)

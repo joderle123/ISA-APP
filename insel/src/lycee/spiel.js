@@ -17,7 +17,7 @@ import { ladePerson, namensschild, SITZ } from './figuren.js';
 import { fussSchatten } from './texturen.js';
 import { createInteraktionen } from './interaktion.js';
 import { FAEDEN } from './faeden.js';
-import { PLAUDERN } from './stimmen.js';
+import { PLAUDERN, BANK } from './stimmen.js';
 import { DEUTSCH, deutschBlatt } from './deutsch.js';
 import { LEKTIONEN } from './lektionen.js';
 import { CHARAKTER, GLEICHALTRIGE, GRUSS, GRUENDE, nachricht, profil, stufe } from './freunde.js';
@@ -26,10 +26,12 @@ import { MATHE, matheBlatt } from './mathe.js';
 import { createSteuerung } from './steuerung.js';
 import { createUI } from './ui.js';
 import { SCHRITTE, GESPRAECHE, LEUTE, STAERKEN, BINGO, GEHEIMNISSE, SPRECHER, KAPITEL } from './geschichte.js';
-import { ORTE2, CHAT, ichBotschaftThema } from './kapitel2.js';
+import { ORTE2, CHAT, CHAT5, ichBotschaftThema } from './kapitel2.js';
 import { ORTE3, saegeFolgen } from './kapitel3.js';
 import { ORTE4, IMMER, SCHLICHTEN } from './kapitel4.js';
 import { ORTE6, LEITER } from './kapitel6.js';
+import { DURCHSAGEN } from './welttexte.js';
+import { JETON, ANGEBOTE, alleDinge } from './belohnungen.js';
 import { ladePaket, speicherePaket, bereinige, waehle, GRUNDPAKET } from './lernen.js';
 
 const SPEICHER = 'lycee.stand';
@@ -81,7 +83,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   Object.assign(welt.orte, ORTE2, ORTE3, ORTE4, ORTE6);
   let paket = ladePaket();   // Aufgaben der Lehrperson (Phase 2) oder Grundaufgaben
   scene.add(welt.gruppe);
-  const sky = createSky({ scene, renderer: rr.renderer, audio, quality: q, events });
+  const sky = createSky({ scene, renderer: rr.renderer, audio, quality: { ...q, shadowSize: Math.min(q.shadowSize || 0, 2048), shadowSpan: 40 }, events });
   sky.time.paused = true;
   sky.setStorm(0);   // der Himmel der Insel hat ein Gewitter am Rand – im Lycée nicht
   scene.fog.near = 90; scene.fog.far = 420;
@@ -183,7 +185,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     { modell: 'frauen', stil: 'Suit', haut: '#eec09a', haar: '#5a3a24', oben: '#e85d75', unten: '#2f3a4a', schuhe: '#2b2b2b', hoehe: 1.64, steht: [14.2, 9.6, 0.9, 'redet'] },
     { modell: 'menschen', stil: 'Worker', haut: '#d8a982', haar: '#3a2a1c', oben: '#5f8fc8', unten: '#2d3748', schuhe: '#f2f2f2', hoehe: 1.75, steht: [15.6, 10.6, -2.4, 'handy'] },
     { modell: 'frauen', stil: 'Formal', haut: '#c68e64', haar: '#2b1d14', oben: '#3fa66b', unten: '#3a3f4b', schuhe: '#ffffff', hoehe: 1.6, steht: [6, 23.6, 0, 'sitzt'] },
-    { modell: 'menschen', stil: 'Farmer', haut: '#f1c7a2', haar: '#d9b36a', oben: '#e9c46a', unten: '#4f88c8', schuhe: '#ffffff', hoehe: 1.7, steht: [6, 24.6, 0, 'handy'] },
+    { modell: 'menschen', stil: 'Beach', haut: '#f1c7a2', haar: '#d9b36a', oben: '#e9c46a', unten: '#4f88c8', schuhe: '#ffffff', hoehe: 1.7, steht: [6, 24.6, 0, 'handy'] },
     // Mehr Leben auf dem Hof (Details 17.11.): Dreiergruppe am Brunnen, zwei an der Tischtennisplatte, eine auf dem Kübelrand, ein Rundgang
     { modell: 'frauen', stil: 'Casual', haut: '#8d5a3b', haar: '#1b1410', oben: '#2fb8a8', unten: '#2d3748', schuhe: '#ffffff', hoehe: 1.61, steht: [-14.0, 21.2, 0.52, 'redet'] },
     { modell: 'menschen', stil: 'Casual2', haut: '#f1c7a2', haar: '#6b4e3a', oben: '#e85d75', unten: '#3a3f4b', schuhe: '#2b2b2b', hoehe: 1.73, steht: [-12.9, 21.9, -1.57, 'handy'] },
@@ -232,9 +234,18 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     return { z, wolken };
   }
   const _wp = new THREE.Vector3();
+  // Figuren außerhalb des Bildausschnitts oder weiter als 70 m: nicht zeichnen und nicht animieren (Leistung)
+  const _fr = new THREE.Frustum(), _pm = new THREE.Matrix4(), _sp = new THREE.Sphere(new THREE.Vector3(), 1.4);
+  function ausschnittNeu() { camera.updateMatrixWorld(); _pm.multiplyMatrices(camera.projectionMatrix, camera.matrixWorldInverse); _fr.setFromProjectionMatrix(_pm); }
+  function imBild(f, pos) {
+    _sp.center.set(pos.x, 0.9, pos.z);
+    const v = camera.position.distanceTo(_sp.center) < 70 && _fr.intersectsSphere(_sp);
+    const innen = f.group.children[0]; if (innen && innen.visible !== v) innen.visible = v;
+    return v;
+  }
   function statistenBewegen(dt) {
     for (const x of statisten) {
-      x.f.update(dt);
+      if (imBild(x.f, x.f.group.position)) x.f.update(dt);
       if (x.rauch) {
         x.rauch.z.getWorldPosition(_wp);
         for (const r of x.rauch.wolken) {
@@ -328,6 +339,12 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (grund !== 'wahl' && neu > alt && stufe(neu) !== stufe(alt)) ui.toast('<b>' + LEUTE[id].name + ': ' + stufe(neu) + '</b><span>Hat dich jetzt auf dem Schirm.</span>', 'ly-t-herz');
   }
   const besteFreunde = () => { if (!S) return []; sicherFreund(); return Object.entries(S.freund).filter(([id, p]) => CHARAKTER[id] && p >= 20).sort((a, b) => b[1] - a[1]).map(([id]) => id); }
+  // Jetons fürs Lernen: werden nie weniger, außer man löst sie bei einer Figur ein (das Ding bleibt dann für immer)
+  function jetons(n, warum) {
+    if (!n) return;
+    S.jetons = (S.jetons || 0) + n; S.jetonsGesamt = (S.jetonsGesamt || 0) + n; sichern();
+    ui.toast('<b>+' + n + ' Jeton' + (n > 1 ? 's' : '') + '</b><span>' + warum + ' · Du hast ' + S.jetons + '.</span>', 'ly-t-ent');
+  }
   function staerke(k) {
     if (!STAERKEN[k]) return;
     S.staerken[k] = (S.staerken[k] || 0) + 1;
@@ -402,7 +419,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     },
     plakat: async () => {
       const m = S.merke;
-      const text = m.linaGefragt ? 'Lina malt die Orte. Klein, aber man erkennt jeden. Jo malt das Gebäude. Riesig.' : m.ideeGeklaut ? 'Jo malt. Lina malt aus. Sie guckt dich kein einziges Mal an.' : m.joMacht ? 'Jo malt das Gebäude. Lina malt aus. Dein Handy-Akku: 12 %.' : 'Jo malt das Gebäude. Das Gebäude hat jetzt einen Drachen.';
+      const text = m.linaGefragt ? 'Lina malt die Orte, wo einen keiner nervt. Jeden erkennt man. Jo malt das Gebäude. Riesig.' : m.ideeGeklaut ? 'Jo malt. Lina malt aus. Sie guckt dich kein einziges Mal an.' : m.joMacht ? 'Jo malt das Gebäude. Lina malt aus. Dein Handy-Akku: 12 %.' : 'Jo malt das Gebäude. Das Gebäude hat jetzt einen Drachen.';
       await ui.bild('20 Minuten später …', text, 3);
     },
     plakatEnde: () => {
@@ -412,12 +429,12 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     },
     plakatEndeKern: () => {
       const m = S.merke;
-      if (m.ideeGeklaut) return [['hoffmann', 'Orte zum Wohlfühlen. Gute Idee. Von wem?'],
+      if (m.ideeGeklaut) return [['hoffmann', 'Orte, wo einen keiner nervt. Gut. Von wem?'],
         { wahl: [
           { t: '„Von mir.“', herz: { hoffmann: 1, lina: -2 }, merke: 'ideeBehalten', dann: [['hoffmann', 'Stark, {name}.'], ['erzaehler', 'Lina guckt aus dem Fenster. Sehr lange.']] },
           { t: '„Eigentlich von Lina.“', staerke: 'ehrlich', herz: { lina: 1 }, dann: [['jo', 'Hä? Du hast doch gesagt …'], ['hoffmann', 'Aha. Dann: gut, Lina.'], ['erzaehler', 'Unter dem Tisch: ein Zettel. Ein gezeichneter Daumen.']] },
         ] }];
-      if (m.linaGefragt) return [['hoffmann', 'Orte zum Wohlfühlen. Wessen Idee?'], ['jo', 'Linas. Das Gebäude ist von mir. Und der Drache.']];
+      if (m.linaGefragt) return [['hoffmann', 'Orte ohne Nerverei. Wessen Idee?'], ['jo', 'Linas. Das Gebäude ist von mir. Und der Drache.']];
       if (m.joMacht) return [['hoffmann', 'Schönes Gebäude. Und ihr zwei?'], ['jo', 'Ausgemalt. Und {name} war am Handy.'], ['hoffmann', '{name}. Handy. Mein Pult. Bis 16 Uhr.'], ['weber', '(durch die Tür) 16 Uhr. Nicht 16:05.']];
       return [['hoffmann', 'Schönes Gebäude, Jo. Warum hat es einen Drachen?'], ['jo', 'Weil es geht.'], ['lina', '(ganz leise) … ausgemalt.']];
     },
@@ -645,8 +662,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       const nachher = await ui.skala({ frage: r.geblieben ? 'Und jetzt, am Ende?' : 'Und jetzt, wo du weg bist?' });
       logMut('pause', 'Pause bei der Gruppe', vorher, nachher, r);
       if (r.geblieben) { staerke('bleiben'); return [['erzaehler', 'Vorher: ' + vorher + '. Am Ende: ' + nachher + '.'], ...(nachher < vorher ? [['erzaehler', 'Irgendwann lachst du übers Katzenvideo mit. Gemerkt hat’s keiner.']] : [['erzaehler', 'Heute ging’s kaum runter. Kommt vor.']]), ['noah', 'Kommst du morgen wieder her?'], { wahl: [{ t: '„Mal sehen.“', dann: [] }, { t: '„Ja.“', herz: { noah: 1 }, dann: [['noah', 'Cool.']] }] }]; }
-      return [['erzaehler', 'Du bist nach ' + r.sek + ' Sekunden gegangen.'], ['erzaehler', 'Später, Handy. Herr Kaya: „Wie lang warst du da?“'],
-        { wahl: [{ t: '„' + r.sek + ' Sekunden.“', dann: [['kaya', 'Zählt. Nächstes Mal: so lang plus fünf.']] }, { t: '„Kaum. Bringt eh nix.“', dann: [['kaya', 'Bringt mehr, als es sich anfühlt. Morgen nochmal?']] }] }];
+      return [['erzaehler', 'Du bist nach ' + r.sek + ' Sekunden gegangen.'], ['erzaehler', 'Später, im Gang. Herr Kaya: „Wie lang warst du da?“'],
+        { wahl: [{ t: '„' + r.sek + ' Sekunden.“', dann: [['kaya', 'Zählt. Nächstes Mal: so lang plus fünf.']] }, { t: '„Kaum. Bringt eh nix.“', dann: [['kaya', 'Notiert. Morgen nochmal? Ich wette einen Keks.']] }] }];
     },
     sicherVorher: async () => { S.merke.sicherV = await ui.skala({ kicker: 'Dein Kopf', frage: 'Wie sicher bist du, dass es um dich geht?', links: 'gar nicht', rechts: 'total sicher' }); sichern(); },
     sicherNachher: async () => {
@@ -748,7 +765,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       ]);
     },
     lernkarte: () => { S.lernkarten = (S.lernkarten || []).concat(['½ + ¼ = ¾ (Pizza: zwei Viertel + ein Viertel)']); ui.toast('<b>Gelernt</b><span>½ + ¼ = ¾ – steht im Journal.</span>', 'ly-t-ent'); },
-    chat: async () => { await ui.handy(CHAT); },
+    chat: async () => { await ui.handy(CHAT, { gelesen: 14, mitglieder: 19 }); },
     milaGelacht: () => (S.merke.chatGelacht ? [
       ['mila', 'Dein Smiley war der dritte. Ich hab gezählt.'],
       { wahl: [
@@ -859,7 +876,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       await ui.reihenfolge(SCHLICHTEN);
       staerke('schlichten');
       return [['ben', 'Okay … wir wollten beide spielen.'], ['jo', 'Dann halbe Pause ihr, halbe Pause wir?'], ['ben', 'Deal.'],
-        ...(S.merke.sommerGeholt ? [['sommer', 'Gut gemacht, ihr drei.']] : [['lina', '(leise) Das war cool, {name}.']])];
+        ...(S.merke.sommerGeholt ? [['sommer', '(pfeift) Gut. Und jetzt Korbball.']] : [['lina', '(leise) Das war cool, {name}.']])];
     },
     noahWoche: () => (S.merke.erklaert ? [['noah', 'Hoffmann hat mich drangenommen. Ich wusste es. Er war geschockt.']] : S.merke.abgeschrieben ? [['noah', 'Sorry wegen der Hausaufgabe. Das hat dir Ärger gemacht.']] : [['noah', 'Schönes Wochenende, {name}.']]),
     matheErklaeren: () => (S.merke.matheGefragt ? [
@@ -881,7 +898,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     milaFehlt: () => (S.merke.keinKaya || S.merke.abgewiegelt || S.merke.milaWeg
       ? [['erzaehler', 'Mila sitzt da. Kapuze auf. Sie schaut niemanden an.']] : []),
     milaRest: () => (S.merke.milaWeg ? [['erzaehler', 'Du gehst. Hinter dir: nichts.']] : GESPRAECHE.milaChatRest),
-    entfernt: () => [['erzaehler', 'Dein Handy: „' + (S.merke.chatGelacht ? 'Ben' : 'Jo') + ' hat dich entfernt.“']],
+    entfernt: async () => { const wer = S.merke.chatGelacht ? 'Ben' : 'Jo'; await ui.handy(CHAT5.map((n) => (n.system ? { ...n, text: n.text.replace('{wer}', wer) } : n)), { titel: '7P2 ohne Lehrer 🚫👨‍🏫', mitglieder: 19 }); return []; },
 
     skateLuca: () => (S.merke.lucaAngelegt || S.merke.lucaGepetzt ? [['luca', 'Ah. Die Kantinen-Polizei.']]
       : S.merke.lucaWitz ? [['luca', 'Ah. Die Nudel-Nummer. Hi.']]
@@ -1095,6 +1112,25 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         return;
       }
     }
+    // Jetons einlösen: bei Kenan, Lina, Ayla, Chiara – einmal je Abschnitt angeboten, nur wenn es reicht
+    const ang = ANGEBOTE[id];
+    if (ang && S.jetons && S.merke['laden_' + id] !== String(S.schritt)) {
+      const offen = ang.dinge.filter((d) => !(S.besitz || []).includes(d.id));
+      if (offen.length && Math.min(...offen.map((d) => d.preis)) <= S.jetons) {
+        S.merke['laden_' + id] = String(S.schritt);
+        await gespraech([[id, ang.hallo]]);
+        const d = await ui.laden({ wer: (LEUTE[id] || {}).name || id, dinge: ang.dinge, besitz: S.besitz || [], jetons: S.jetons });
+        if (d) {
+          S.jetons -= d.preis; S.besitz = [...(S.besitz || []), d.id];
+          if (d.art === 'deck') S.deck = d.wert;
+          if (d.art === 'lampe') S.spindLampe = d.wert;
+          sichern(); freund(id, 2, 'gespraech');
+          await gespraech([[id, d.satz]]);
+          ui.toast('<b>' + esc(d.name) + '</b><span>Liegt jetzt in deinem Spind 117.</span>', 'ly-t-ent');
+        } else await gespraech([[id, 'Okay. Das Angebot bleibt.']]);
+        return;
+      }
+    }
     // sonst: kurz plaudern – zählt für die Freundschaft (einmal je Person und Abschnitt)
     if (CHARAKTER[id] && S.merke['fg_' + id] !== String(S.schritt)) { S.merke['fg_' + id] = String(S.schritt); freund(id, 3, 'gespraech'); }
     if (CHARAKTER[id] && S.lektionen && S.merke['wn_' + id] !== String(S.schritt) && Math.random() < 0.4) { S.merke['wn_' + id] = String(S.schritt); if (await weisstDuNoch(id)) return; }
@@ -1170,6 +1206,15 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       entdeckt: S.entdeckt.length, gesamt: GEHEIMNISSE.length,
     };
   }
+  // Durchsagen von Mme Weber, ab und zu beim Herumlaufen (nicht im Test, nicht im Gespräch)
+  if (!new URLSearchParams(location.search).has('test')) {
+    let durchsage = 0;
+    setInterval(() => {
+      if (!S || imGespraech || !steuerung.frei || document.hidden || Math.random() < 0.5) return;
+      ui.toast('<b>📢 Durchsage</b><span>' + DURCHSAGEN[durchsage++ % DURCHSAGEN.length] + '</span>');
+    }, 140000);
+  }
+  ui.ohneName = (t) => (S && S.name && S.name.length > 1 ? t.split(S.name).join('{name}') : t);
   ui.onJournal = () => {
     if (!S || imGespraech) return;
     const b = bilanz();
@@ -1270,6 +1315,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (best && best.richtig === best.gesamt) staerke('dranbleiben');
     sichern();
     ui.toast('<b>Lernkarte: ' + esc(l.titel) + '</b><span>' + esc(l.karte) + '</span>', 'ly-t-ent');
+    jetons(alt.mal ? JETON.lektion : JETON.lektionNeu, 'Lektion geschafft');
   }
   // Wegsuche im Schulhaus: nur nach der gesagten Beschreibung laufen (kein Marker); jede Station gibt die nächste Anweisung
   let wegTick = null;
@@ -1325,6 +1371,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         fs.stand[id] = { richtig: Math.max(alt.richtig, r.richtig), gesamt: r.gesamt, mal: (alt.mal || 0) + 1 };
         if (r.richtig === r.gesamt) staerke('dranbleiben');
         sichern();
+        jetons(r.richtig === r.gesamt ? JETON.runde : JETON.blatt, r.richtig === r.gesamt ? 'Alles richtig' : 'Geübt');
         if (!r.neu) break;
       }
       return;
@@ -1337,6 +1384,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (!alt || r.richtig > alt.richtig) S.blaetter[b.id] = r;
     if (r.richtig === r.gesamt) staerke('dranbleiben');
     sichern();
+    jetons(r.richtig === r.gesamt ? JETON.blattAlles : JETON.blatt, r.richtig === r.gesamt ? 'Blatt alles richtig' : 'Blatt geübt');
   }
   // ---------- Skateboard fahren (Skate-Ecke): 60 Sekunden, Punkte für Ollies und Sprünge über Rail, Box, Bank ----------
   let skateTick = null;
@@ -1344,10 +1392,11 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   // Gruppe (die Gruppe ist beim Fahren um 90° gedreht), also längs der Fahrtrichtung.
   function skateboard() {
     const b = new THREE.Group(), mat = (c) => new THREE.MeshLambertMaterial({ color: c });
-    const deck = new THREE.Mesh(new THREE.BoxGeometry(0.62, 0.022, 0.23), mat('#d9693f')); deck.position.y = 0.085; b.add(deck);
+    const df = (S && S.deck) || '#d9693f';
+    const deck = new THREE.Mesh(new THREE.BoxGeometry(0.62, 0.022, 0.23), mat(df)); deck.position.y = 0.085; b.add(deck);
     const grip = new THREE.Mesh(new THREE.BoxGeometry(0.6, 0.004, 0.215), mat('#2b2b33')); grip.position.y = 0.098; b.add(grip);
     for (const s of [-1, 1]) {
-      const n = new THREE.Mesh(new THREE.BoxGeometry(0.14, 0.022, 0.23), mat('#d9693f')); n.position.set(s * 0.37, 0.1, 0); n.rotation.z = s * 0.38; b.add(n);
+      const n = new THREE.Mesh(new THREE.BoxGeometry(0.14, 0.022, 0.23), mat(df)); n.position.set(s * 0.37, 0.1, 0); n.rotation.z = s * 0.38; b.add(n);
       const ng = new THREE.Mesh(new THREE.BoxGeometry(0.13, 0.004, 0.215), mat('#2b2b33')); ng.position.set(s * 0.37, 0.112, 0); ng.rotation.z = s * 0.38; b.add(ng);
       const achse = new THREE.Mesh(new THREE.BoxGeometry(0.05, 0.035, 0.2), mat('#b8c0ca')); achse.position.set(s * 0.21, 0.055, 0); b.add(achse);
       for (const q of [-1, 1]) { const r = new THREE.Mesh(new THREE.CylinderGeometry(0.03, 0.03, 0.035, 12), mat('#f4f1ea')); r.rotation.x = Math.PI / 2; r.position.set(s * 0.21, 0.03, q * 0.115); b.add(r); }
@@ -1383,7 +1432,14 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       };
     });
   }
-  const ia = createInteraktionen({ welt, steuerung, ui, zustand: () => S, sichern: () => sichern(), ton, blattWahl,
+  async function spindAuf() {
+    const dinge = alleDinge().filter((d) => (S.besitz || []).includes(d.id));
+    const w = await ui.spind({ dinge, lampe: S.spindLampe || '', deck: S.deck || '', jetons: S.jetons || 0, gesamt: S.jetonsGesamt || 0, lernkarten: (S.lernkarten || []).length });
+    if (w && w.art === 'song') ton(w.wert);
+    if (w && w.art === 'deck') { S.deck = w.wert; sichern(); ui.toast('<b>' + esc(w.name) + '</b><span>Ab jetzt dein Brett an der Skate-Ecke.</span>'); }
+    if (w && w.art === 'lampe') { S.spindLampe = w.wert; sichern(); }
+  }
+  const ia = createInteraktionen({ welt, steuerung, ui, zustand: () => S, sichern: () => sichern(), ton, blattWahl, spindAuf: () => spindAuf(),
     freiwurf: async () => ui.freiwurf(), skate: () => skaten(), freund: (id, n, g) => freund(id, n, g),
     partner: () => { const b = besteFreunde()[0] || GLEICHALTRIGE.find((id) => S.herz[id] != null); return b ? { id: b, name: LEUTE[b].name } : null; } });
   let iaNah = null;
@@ -1395,7 +1451,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   }
 
   // ---------- Schleife ----------
-  let laeuft = false, raumAlt = undefined, geheimT = 0, klangT = 1;
+  let laeuft = false, raumAlt = undefined, geheimT = 0, klangT = 1, bankT = 0;
   const loop = createLoop({ render: () => rr.render({ night: sky.night, time: loop.time, sun: sky.sunDir, sunColor: sky.colors && sky.colors.light }) });
   loop.add(() => input.beginFrame(), { order: -100, always: true });
   loop.add((dt) => {
@@ -1408,9 +1464,10 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   loop.add((dt, t) => {
     // Menschen: Bewegungen, zum Spieler drehen, Schilder nur nah
     const p = steuerung.pos;
+    ausschnittNeu();
     for (const x of Object.values(leute)) {
       if (!x.f.group.visible) continue;
-      x.f.update(dt);
+      if (imBild(x.f, x.pos)) x.f.update(dt);
       const d = Math.hypot(x.pos.x - p.x, x.pos.z - p.z);
       const zuMir = ((d < 2.6 && laeuft) || x === gegenueber) && x.haltung !== 'sitzt';
       // Wer dich mag, winkt kurz, wenn du zum ersten Mal in diesem Abschnitt näherkommst
@@ -1424,6 +1481,13 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       x.schild.material.opacity = Math.max(0, Math.min(1, (9 - d) / 3));
     }
     statistenBewegen(dt);
+    // Bank-Momente: neben jemandem sitzen, nichts sagen. Nach 9 Sekunden zählt das.
+    if (laeuft && S && steuerung.sitzt && !imGespraech) {
+      const nah = Object.values(leute).find((x) => x.f.group.visible && BANK[x.id] && Math.hypot(x.pos.x - p.x, x.pos.z - p.z) < 1.9);
+      const kap = (SCHRITTE[S.schritt] || {}).kap || 1, key = nah ? 'bank_' + nah.id + '_' + kap : '';
+      if (nah && !S.merke[key]) { bankT += dt; if (bankT > 9) { bankT = 0; S.merke[key] = true; S.herz[nah.id] = (S.herz[nah.id] || 0) + 1; sichern(); ui.toast('<b>Zusammen sitzen</b><span>' + BANK[nah.id] + '</span>', 'ly-t-ent'); } }
+      else bankT = 0;
+    } else bankT = 0;
     // Bus
     if (bus && busFaehrt) { bus.position.x += dt * 9; if (bus.position.x > 140) { bus.position.x = 300; busFaehrt = 0; } }
     // Marker

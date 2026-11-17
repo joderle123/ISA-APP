@@ -29,7 +29,7 @@ export function texte() {
       if (t.startsWith('//')) return;
       const b = z.match(BLOCK); if (b) block = b[1];
       const k = z.match(/^(?:export\s+)?const\s+([A-Za-z0-9_]+)\s*=/); if (k) block = k[1];
-      const ohneKomm = z.replace(/\s\/\/ .*$/, '');
+      const ohneKomm = z.replace(/\s\/\/ .*$/, '').replace(/\b(marker|eins|felder|reden|fach|weg)\s*:\s*\[[^\]]*\]/g, '');   // Daten-Listen sind keine Sprechzeilen
       let m;
       ZEILE.lastIndex = 0;
       while ((m = ZEILE.exec(ohneKomm))) {

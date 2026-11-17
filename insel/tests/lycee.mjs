@@ -70,6 +70,7 @@ async function klick(wahl = 0, max = 80) {
     else if (z === 'ebene:ende') return 'ende';
     else if (z === 'ebene:bild') await page.waitForTimeout(600);
     else if (z === 'ebene:handy') await page.keyboard.press('KeyE');
+    else if (z === 'ebene:laden' || z === 'ebene:spind') await page.keyboard.press('KeyE');
     else if (z === 'ebene:quiz') { if (await page.isVisible('.ly-k-quiz [data-j]')) await page.keyboard.press('Digit1'); else await page.keyboard.press('KeyE'); }
     else if (z === 'ebene:reihe') { if (await page.isVisible('.ly-k-reihe [data-a="w"]')) await page.keyboard.press('KeyE'); else { const n = await page.$$eval('.ly-r-fertig li', (l) => l.length); await page.click('.ly-k-reihe [data-k="' + n + '"]'); } }
     else if (z === 'ebene:saege') { await page.keyboard.press('KeyE'); await page.waitForTimeout(900); }

@@ -114,19 +114,19 @@ export const GESPRAECHE6 = {
   ],
   k6_kaya: [
     { tu: 'kayaStart' },
-    ['kaya', 'Ich frag nur eins. Was ist gerade am schwersten?'],
+    ['kaya', 'Eine Frage, dann Keks. Was nervt gerade am meisten?'],
     { wahl: [
-      { t: '„Wenn alle schauen.“', merke: 'schwerSchauen', dann: [['kaya', 'Kenn ich. Dann wird der Kopf leer, oder?']] },
+      { t: '„Wenn alle schauen.“', merke: 'schwerSchauen', dann: [['kaya', 'Alle gucken, das Hirn macht Mittagspause. Klassiker.']] },
       { t: '„Die Pausen. Wo soll ich hin?“', merke: 'schwerPause', dann: [['kaya', 'Pausen. Die längsten fünfzehn Minuten der Welt.']] },
-      { t: '„Fehler. Der ganze Rotstift.“', merke: 'schwerFehler', dann: [['kaya', 'Lieber gar nicht anfangen als falsch. Kenn ich.']] },
+      { t: '„Fehler. Der ganze Rotstift.“', merke: 'schwerFehler', dann: [['kaya', 'Der Rotstift. Erfunden von jemandem ohne Freunde.']] },
       { t: '„Weiß nicht. Alles irgendwie.“', merke: 'schwerAlles', dann: [['kaya', 'Auch eine Antwort. Dann fangen wir klein an.']] },
     ] },
     ['kaya', 'Ich hab einen Trick. Klingt blöd. Geht aber.'],
     ['kaya', 'Wie kaltes Wasser im Freibad. Erst furchtbar.'],
-    ['kaya', 'Wer gleich rausspringt, merkt nie, dass es warm wird.'],
+    ['kaya', 'Dann geht’s. Frag nicht, warum.'],
     ['kaya', 'Wir machen eine Liste. Unten das Leichteste.'],
     { tu: 'leiterBauen' },
-    ['kaya', 'Also: drinbleiben, bis es warm wird.'],
+    ['kaya', 'Also: unten anfangen. Bei jeder Stufe gibt’s Keks.'],
     ['kaya', 'Geht gar nicht? Dann kleinere Stufe. Kein Drama.'],
     { tu: 'leiterStart' },
     ['kaya', 'Und das hier. Eine Karte. Steht „Gleich“ drauf.'],
@@ -145,16 +145,16 @@ export const GESPRAECHE6 = {
   k6_lachen: [
     ['erzaehler', 'Jo, Ben und Luca. Lautes Lachen.'],
     ['erzaehler', 'Ben schaut kurz rüber. Dann wieder weg.'],
-    ['kopf', 'Die lachen über dich. Wegen dem Bild.'],
+    ['bauch', 'Die lachen über dich. Wegen dem Bild.'],
     { tu: 'sicherVorher' },
     { wahl: [
       { t: 'Schnell vorbei. Nicht hinschauen.', merke: 'lachenWeg', dann: [
         ['erzaehler', 'Treppe hoch. Der Gedanke kommt mit.'],
-        ['kopf', 'Bestimmt reden die jetzt weiter.'],
+        ['bauch', 'Bestimmt reden die jetzt weiter.'],
         ['erzaehler', 'Zweite Stunde. Mila hält dir ihr Handy hin.'],
         ['mila', 'Schon gesehen? Die Katze mit dem Toast?'],
         ['mila', 'Ben zeigt’s seit heute früh allen.'],
-        ['kopf', '…'],
+        ['bauch', '…'],
         { tu: 'sicherNachher' } ] },
       { t: 'Stehen bleiben. Genauer hinschauen.', staerke: 'pruefen', merke: 'lachenGeschaut', dann: [
         ['erzaehler', 'Du guckst nochmal hin. Genauer.'],
@@ -163,8 +163,8 @@ export const GESPRAECHE6 = {
         ['erzaehler', 'Ben hat kurz geschaut. Jetzt wieder nur aufs Handy.'],
         { wahl: [
           { t: '„Die lachen über ein Video.“', dann: [] },
-          { t: '„Die lachen trotzdem über mich.“', dann: [['kopf', 'Ganz sicher. Oder?']] },
-          { t: '„Kann beides sein.“', dann: [] },
+          { t: '„Die lachen trotzdem über mich.“', dann: [['bauch', 'Ganz sicher. Oder?']] },
+          { t: '„Wer lacht so laut über eine Katze?“', dann: [] },
         ] },
         { tu: 'sicherNachher' },
         { wahl: [
@@ -180,7 +180,7 @@ export const GESPRAECHE6 = {
         ['jo', 'Chill. Katzenvideo.'],
         ['ben', 'Bisschen empfindlich, oder?'],
         ['erzaehler', 'Sie zeigen es dir. Es ist wirklich eine Katze.'],
-        ['kopf', 'Jetzt halten die dich für komisch.'],
+        ['bauch', 'Jetzt halten die dich für komisch.'],
         { tu: 'sicherNachher' } ] },
     ] },
   ],
@@ -198,7 +198,7 @@ export const GESPRAECHE6 = {
         ['erzaehler', 'Ayla liest. Langsam wird dein Gesicht wieder kühl.'] ] },
       { t: '„Gleich. Ich brauch kurz.“', staerke: 'zeit', merke: 'tafelGleich', dann: [
         ['hoffmann', 'Okay. Ich komm zu dir zurück.'],
-        ['kopf', 'Super. Jetzt wartest du die ganze Stunde darauf.'],
+        ['bauch', 'Super. Jetzt wartest du die ganze Stunde darauf.'],
         ['erzaehler', 'Zehn Minuten später.'],
         ['hoffmann', '{name}? Nur der erste Satz.'],
         { wahl: [
@@ -218,11 +218,11 @@ export const GESPRAECHE6 = {
         ['hoffmann', '… Geh.'],
         ['erzaehler', 'Auf dem Klo ist es still. Zwölf Minuten.'],
         ['erzaehler', 'Zurück. Die Stunde ist fast rum.'],
-        ['kopf', 'Geschafft. Fürs Erste.'],
+        ['bauch', 'Geschafft. Fürs Erste.'],
         ['erzaehler', 'Morgen ist wieder Französisch.'] ] },
       { t: '(Die „Gleich“-Karte hinlegen.)', wenn: (m) => m.karte, staerke: 'zeit', merke: 'tafelKarte', dann: [
         ['hoffmann', '(nickt) Ich komm später zu dir.'],
-        ['erzaehler', 'Niemand hat’s gemerkt. Nur er.'],
+        ['erzaehler', 'Jo hat’s gesehen. Er sagt nichts. Noch nicht.'],
         ['erzaehler', 'Zehn Minuten später.'],
         ['hoffmann', 'Nur der erste Satz?'],
         { wahl: [
@@ -256,7 +256,7 @@ export const GESPRAECHE6 = {
         ['mila', 'Zwölf.'],
         ['kritiker', 'Siehst du. Alle besser als du.'],
         ['mila', 'Ich hab Nachhilfe. Seit zwei Jahren.'],
-        ['mila', 'Davor hatte ich auch sieben.'] ] },
+        ['mila', 'Ohne Nachhilfe: geschätzt 7,5. Plus minus 0,5.'] ] },
     ] },
   ],
   k6_stufe: [
@@ -282,8 +282,8 @@ export const GESPRAECHE6 = {
   k6_ende: [
     ['erzaehler', 'Freitag. Bus.'],
     { tu: 'wocheZeigen' },
-    ['erzaehler', 'Handy. Herr Kaya: „Schönes Wochenende.“'],
-    ['erzaehler', 'Kaya schreibt: „Montag gleiche Zeit? Ich bring Brötchen.“'],
+    ['erzaehler', 'Im Rucksack: die „Gleich“-Karte. Leicht zerknickt.'],
+    ['erzaehler', 'Auf Kayas Zettel: „Montag. Gleiche Zeit. Brötchen.“'],
     { tu: 'kapitelEnde' },
   ],
 };

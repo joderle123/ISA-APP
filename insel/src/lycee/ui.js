@@ -44,17 +44,29 @@ export function createUI({ root, input, speech }) {
   ui.staerke = (s) => ui.toast('<b>Stärke: ' + esc(s.name) + '</b><span>' + esc(s.text) + '</span>', 'ly-t-staerke');
   ui.herz = (name, n) => ui.toast((n > 0 ? '♥ ' : '') + esc(name) + (n > 0 ? ' mag dich ein bisschen mehr' : ' ist etwas verstimmt'), n > 0 ? 'ly-t-herz' : 'ly-t-kalt');
 
+  // ---------- „Sagt keiner so“: Sätze, die falsch klingen, nur auf diesem Gerät merken (ohne Spielernamen) ----------
+  const SAGT = 'lycee.sagtkeiner';
+  const sagtListe = () => { try { return JSON.parse(localStorage.getItem(SAGT) || '[]'); } catch (e) { return []; } };
+  function sagtKeiner(wer, text) {
+    const l = sagtListe(); const t = ui.ohneName ? ui.ohneName(text) : text;
+    if (!l.some((x) => x.wer === wer && x.text === t)) l.push({ wer, text: t });
+    try { localStorage.setItem(SAGT, JSON.stringify(l.slice(-200))); } catch (e) { /* privat: egal */ }
+  }
+  ui.sagtKeinerListe = sagtListe;
+
   // ---------- Gespräch ----------
   // zeile: { wer, farbe, text } → wartet auf „weiter“
   ui.sprich = ({ wer = '', farbe = '#2b3a55', text = '' }) => new Promise((ok) => {
     dialogOffen = true; dialog.hidden = false; root.classList.add('ly-im-dialog');
     dialog.className = 'ly-dialog hud-interactive' + (wer ? '' : ' ly-erz');
     dialog.innerHTML = (wer ? '<div class="ly-d-wer" style="--f:' + esc(farbe) + '">' + esc(wer) + '</div>' : '') +
-      '<div class="ly-d-text">' + esc(text) + '</div><div class="ly-d-fuss"><button type="button" class="ly-d-vor" aria-label="Vorlesen" title="Vorlesen">🔊</button><button type="button" class="ly-d-weiter">Weiter <kbd>E</kbd></button></div>';
+      '<div class="ly-d-text">' + esc(text) + '</div><div class="ly-d-fuss"><button type="button" class="ly-d-vor" aria-label="Vorlesen" title="Vorlesen">🔊</button>' + (wer ? '<button type="button" class="ly-d-sagt" title="Dieser Satz klingt falsch? Merken (bleibt auf diesem Gerät, ohne Namen).">Sagt keiner so</button>' : '') + '<button type="button" class="ly-d-weiter">Weiter <kbd>E</kbd></button></div>';
     let fertig = false;
     weiterFn = () => { if (fertig) return; fertig = true; weiterFn = null; ok(); };
     dialog.querySelector('.ly-d-weiter').onclick = () => weiterFn && weiterFn();
     dialog.querySelector('.ly-d-vor').onclick = (e) => { e.stopPropagation(); vorlesen(text); };
+    const sk = dialog.querySelector('.ly-d-sagt');
+    if (sk) sk.onclick = (e) => { e.stopPropagation(); sagtKeiner(wer, text); sk.textContent = 'Gemerkt ✓'; sk.disabled = true; };
     if (ui.autoVorlesen) vorlesen(text);
   });
   // optionen: [text] → Index
@@ -256,15 +268,61 @@ export function createUI({ root, input, speech }) {
     zeige(); requestAnimationFrame(draw);
   });
 
-  // Handy: Klassenchat ansehen (nur lesen), „Handy weg“
-  ui.handy = (nachrichten) => new Promise((ok) => {
-    const k = ebeneAuf('handy', '<div class="ly-h-kopf">7P2 Klasse 💬</div><div class="ly-h-verlauf">' + nachrichten.map((n) =>
-      '<div class="ly-h-msg"><b>' + esc(n.wer) + '</b>' + (n.bild ? '<div class="ly-h-bild" aria-label="Foto">📷 Foto</div>' : '') + '<span>' + esc(n.text) + '</span></div>').join('') +
-      '</div><button type="button" class="ly-btn ly-primaer" data-a="weg">Handy weg <kbd>E</kbd></button>');
-    const zu = () => { document.removeEventListener('keydown', taste, true); ebeneZu(); ok(); };
-    const taste = (e) => { if (e.code === 'KeyE' || e.code === 'Enter' || e.code === 'Space') { e.preventDefault(); e.stopPropagation(); zu(); } };
+  // Handy: Klassenchat. Nachrichten kommen nacheinander („… tippt“), mit Reaktionen und „gelesen von N“.
+  // n: { wer, text, bild?, reakt?: '😂 4', system?: true } · opts: { titel, gelesen, tempo } · E/Knopf = Handy weg (zeigt sofort alles)
+  ui.handy = (nachrichten, opts = {}) => new Promise((ok) => {
+    const titel = opts.titel || '7P2 Klasse 💬';
+    const k = ebeneAuf('handy', '<div class="ly-h-kopf">' + esc(titel) + '<small>' + (opts.mitglieder ? esc(opts.mitglieder) + ' Mitglieder' : 'online') + '</small></div><div class="ly-h-verlauf" aria-live="polite"></div>' +
+      '<div class="ly-h-tippt" hidden></div><button type="button" class="ly-btn ly-primaer" data-a="weg">Handy weg <kbd>E</kbd></button>');
+    const verlauf = k.querySelector('.ly-h-verlauf'), tippt = k.querySelector('.ly-h-tippt');
+    const msg = (n) => n.system ? '<div class="ly-h-sys">' + esc(n.text) + '</div>'
+      : '<div class="ly-h-msg' + (n.ich ? ' ich' : '') + '"><b>' + esc(n.wer) + '</b>' + (n.bild ? '<div class="ly-h-bild" aria-label="Foto">📷 Foto</div>' : '') + '<span>' + esc(n.text) + '</span>' + (n.reakt ? '<i class="ly-h-reakt">' + esc(n.reakt) + '</i>' : '') + '</div>';
+    let i = 0, zu = false, timer = null;
+    const fuss = () => { if (opts.gelesen) verlauf.insertAdjacentHTML('beforeend', '<div class="ly-h-gelesen">Gelesen von ' + esc(String(opts.gelesen)) + '</div>'); };
+    const alles = () => { clearTimeout(timer); tippt.hidden = true; while (i < nachrichten.length) verlauf.insertAdjacentHTML('beforeend', msg(nachrichten[i++])); if (!verlauf.querySelector('.ly-h-gelesen')) fuss(); };
+    const naechste = () => {
+      if (zu) return;
+      if (i >= nachrichten.length) { tippt.hidden = true; fuss(); return; }
+      const n = nachrichten[i];
+      if (!n.system && n.wer) { tippt.hidden = false; tippt.textContent = n.wer + ' tippt …'; }
+      timer = setTimeout(() => { if (zu) return; tippt.hidden = true; verlauf.insertAdjacentHTML('beforeend', msg(n)); i++; verlauf.scrollTop = verlauf.scrollHeight; timer = setTimeout(naechste, 350 * (opts.tempo || 1)); }, (n.system ? 500 : 650 + Math.min(1200, (n.text || '').length * 35)) * (opts.tempo || 1));
+    };
+    const fertig = () => { zu = true; alles(); document.removeEventListener('keydown', taste, true); ebeneZu(); ok(); };
+    const taste = (e) => { if (e.code === 'KeyE' || e.code === 'Enter' || e.code === 'Space') { e.preventDefault(); e.stopPropagation(); fertig(); } };
     document.addEventListener('keydown', taste, true);
-    k.querySelector('[data-a="weg"]').onclick = zu;
+    k.querySelector('[data-a="weg"]').onclick = fertig;
+    if (ui.wenigBewegung) alles(); else naechste();
+  });
+
+  // Einlösen bei einer Figur: Liste mit Preis; Besitz ist markiert. Rückgabe: gewähltes Ding oder null
+  ui.laden = ({ wer, dinge, besitz, jetons }) => new Promise((ok) => {
+    const k = ebeneAuf('laden', '<div class="ly-t-kicker">Bei ' + esc(wer) + '</div><h2>Du hast ' + jetons + ' Jeton' + (jetons === 1 ? '' : 's') + '</h2><div class="ly-d-optionen">' +
+      dinge.map((d, i) => { const hab = besitz.includes(d.id), geht = !hab && d.preis <= jetons;
+        return '<button type="button" data-l="' + i + '"' + (geht ? '' : ' disabled') + '><kbd>' + (hab ? '✓' : d.preis) + '</kbd><span>' + esc(d.name) + (hab ? ' · hast du' : geht ? '' : ' · später') + '</span></button>'; }).join('') +
+      '<button type="button" data-l="-1"><kbd>✕</kbd><span>Nichts. Ich spar.</span></button></div>');
+    const taste = (e) => { if (e.code === 'KeyE' || e.code === 'Escape') { e.preventDefault(); e.stopPropagation(); fertig(null); } };
+    const fertig = (d) => { document.removeEventListener('keydown', taste, true); ebeneZu(); ok(d); };
+    document.addEventListener('keydown', taste, true);
+    k.querySelectorAll('[data-l]').forEach((b) => { b.onclick = () => fertig(+b.dataset.l >= 0 ? dinge[+b.dataset.l] : null); });
+  });
+
+  // Spind 117: eigener Ort. Zeigt Sticker, Lampe, Decks, Songs. Rückgabe: angeklicktes Ding (Song abspielen, Deck/Lampe wählen) oder null
+  ui.spind = ({ dinge, lampe, deck, jetons, gesamt, lernkarten }) => new Promise((ok) => {
+    const nach = (art) => dinge.filter((d) => d.art === art);
+    const st = nach('sticker'), so = nach('song'), de = nach('deck'), la = nach('lampe');
+    const k = ebeneAuf('spind', '<div class="ly-spind" style="--lampe:' + esc(lampe || '#fff4d6') + '"><div class="ly-t-kicker">Spind 117</div>' +
+      '<h2>Deins.</h2><div class="ly-spind-tuer">' + (st.length ? st.map((d) => '<span class="ly-sticker" title="' + esc(d.name) + '">' + d.wert + '</span>').join('') : '<small>Noch keine Sticker. Lina hat welche.</small>') + '</div>' +
+      '<p class="ly-leer">Jetons: <b>' + jetons + '</b> · insgesamt verdient: ' + gesamt + ' · Lernkarten: ' + lernkarten + '</p>' +
+      '<div class="ly-d-optionen">' +
+      so.map((d) => '<button type="button" data-d="' + esc(d.id) + '"><kbd>♪</kbd><span>' + esc(d.name) + '</span></button>').join('') +
+      de.map((d) => '<button type="button" data-d="' + esc(d.id) + '"><kbd style="background:' + esc(d.wert) + '"></kbd><span>' + esc(d.name) + (d.wert === deck ? ' · aufs Brett ✓' : ' · aufs Brett') + '</span></button>').join('') +
+      la.map((d) => '<button type="button" data-d="' + esc(d.id) + '"><kbd style="background:' + esc(d.wert) + '"></kbd><span>' + esc(d.name) + (d.wert === lampe ? ' · an ✓' : ' · anmachen') + '</span></button>').join('') +
+      '<button type="button" data-d=""><kbd>✕</kbd><span>Zumachen</span></button></div>' +
+      (dinge.length ? '' : '<p class="ly-leer">Turnbeutel, Mathebuch, eine sehr alte Banane. Jetons gibt es fürs Lernen – einlösen bei Kenan, Lina, Ayla und Chiara.</p>') + '</div>');
+    const fertig = (d) => { document.removeEventListener('keydown', taste, true); ebeneZu(); ok(d); };
+    const taste = (e) => { if (e.code === 'KeyE' || e.code === 'Escape') { e.preventDefault(); e.stopPropagation(); fertig(null); } };
+    document.addEventListener('keydown', taste, true);
+    k.querySelectorAll('[data-d]').forEach((b) => { b.onclick = () => fertig(dinge.find((d) => d.id === b.dataset.d) || null); });
   });
 
   // Atmen gegen Aufregung: Kreis wird groß (einatmen, 4 s) und klein (ausatmen, 4 s), drei Mal. Nichts kann schiefgehen.
@@ -567,7 +625,8 @@ export function createUI({ root, input, speech }) {
       const k = ebeneAuf('raus', '<div class="ly-t-kicker">Kurz raus</div><h2>Das Spiel wartet.</h2><p class="ly-leer">Was hilft dir gerade?</p><div class="ly-d-optionen">' +
         '<button type="button" data-w="atem"><kbd>1</kbd><span>Atmen mit dem Kreis</span></button>' +
         '<button type="button" data-w="sinne"><kbd>2</kbd><span>5-4-3-2-1: zurück ins Hier</span></button>' +
-        '<button type="button" data-w="zu"><kbd>3</kbd><span>Zurück ins Spiel</span></button></div>');
+        '<button type="button" data-w="zu"><kbd>3</kbd><span>Zurück ins Spiel</span></button>' +
+        (sagtListe().length ? '<button type="button" data-w="sagt"><kbd>4</kbd><span>„Sagt keiner so“ – ' + sagtListe().length + ' Sätze</span></button>' : '') + '</div>');
       k.querySelectorAll('[data-w]').forEach((b) => { b.onclick = () => wahl(b.dataset.w); });
     };
     const sinne = (i) => {
@@ -578,6 +637,14 @@ export function createUI({ root, input, speech }) {
     const wahl = async (w) => {
       if (w === 'atem') { await ui.atem(); if (!zu) start(); }
       else if (w === 'sinne') sinne(0);
+      else if (w === 'sagt') {
+        const l = sagtListe(); const text = l.map((x) => '[' + x.wer + ', ' + x.text + ']').join('\n');
+        const k = ebeneAuf('raus', '<div class="ly-t-kicker">Sagt keiner so</div><h2>' + l.length + ' Sätze klingen falsch</h2><p class="ly-leer">Nur auf diesem Gerät. Ohne Namen. Kopieren und an die Lehrperson geben.</p>' +
+          '<textarea class="ly-sagt-text" readonly rows="8">' + esc(text) + '</textarea><div class="ly-t-knoepfe"><button type="button" class="ly-btn ly-primaer" data-a="kopie">Kopieren</button><button type="button" class="ly-btn" data-a="leeren">Liste leeren</button><button type="button" class="ly-btn" data-a="w">Zurück</button></div>');
+        k.querySelector('[data-a="kopie"]').onclick = async (e) => { const ta = k.querySelector('textarea'); ta.select(); try { await navigator.clipboard.writeText(text); } catch (x) { try { document.execCommand('copy'); } catch (y) { /* egal */ } } e.target.textContent = 'Kopiert ✓'; };
+        k.querySelector('[data-a="leeren"]').onclick = () => { try { localStorage.removeItem(SAGT); } catch (x) { /* egal */ } start(); };
+        k.querySelector('[data-a="w"]').onclick = start;
+      }
       else ende();
     };
     start();

@@ -196,7 +196,7 @@ export const GESPRAECHE2 = {
       { t: '(Hinsetzen. Nichts sagen.)', staerke: 'warten', herz: { mila: 1 }, dann: [
         ['erzaehler', 'Eine Minute. Zwei.'],
         ['mila', 'Er macht einen Sticker draus. Hat er geschrieben.'] ] },
-      { t: '„Jo ist ein Idiot.“', herz: { mila: 1 }, dann: [
+      { t: '„Jo ist wie der Automat. Laut und kaputt.“', herz: { mila: 1 }, dann: [
         ['mila', 'Toll. Und? Alle haben’s trotzdem.'] ] },
       { t: '„Ehrlich, man sieht fast nix.“', dann: [
         ['mila', 'Lüg nicht. Ich hab’s gesehen.'] ] },
@@ -261,7 +261,7 @@ export const GESPRAECHE2 = {
     ['erzaehler', 'Deine Hände sind kalt. Aufgabe 3: Brüche.'],
     ['erzaehler', 'Chiaras Blatt liegt offen. Sie ist schon bei Aufgabe 4.'],
     { wahl: [
-      { t: '(Augen zu. Vier rein, vier raus.)', dann: [{ tu: 'atem' }, ['erzaehler', 'Zwei Minuten weg. Die Hände sind wärmer.']] },
+      { t: '(Stift hinlegen. Decke anstarren.)', dann: [{ tu: 'atem' }, ['erzaehler', 'An der Decke klebt ein Kaugummi. Seit Jahren, schätzt du.']] },
       { t: '(Zu Chiara rüberschauen.)', merke: 'testGeguckt', dann: [
         ['erzaehler', 'Drei Viertel. Du schreibst es hin.'],
         ['hoffmann', '{name}. Augen auf dein Blatt.'],
@@ -278,7 +278,7 @@ export const GESPRAECHE2 = {
     { tu: 'milaFehlt' },
     ['hoffmann', 'Klassenrat. Erster Punkt: der Klassenchat.'],
     ['erzaehler', 'Alle schauen zu Mila. Dann zu Jo.'],
-    ['hoffmann', 'Mila, magst du erzählen, wie das für dich war?'],
+    ['hoffmann', 'Mila. Willst du was sagen? Musst du nicht.'],
     ['erzaehler', 'Mila wird rot. Sie sagt nichts.'],
     { wahl: [
       { t: '„Muss sie das jetzt vor allen sagen?“', staerke: 'mut', herz: { mila: 2, hoffmann: -1 }, merke: 'hoffmannGestoppt', dann: [
@@ -297,7 +297,7 @@ export const GESPRAECHE2 = {
     { wahl: [
       { t: '„Dann schick ich mal eins von dir.“', herz: { jo: -1, ben: 1 }, dann: [
         ['ben', 'Uuuh.'], ['jo', 'Mach doch.'], ['hoffmann', 'Stopp. Beide.'] ] },
-      { t: '„Fotos nur, wenn der andere Ja sagt.“', staerke: 'klar', herz: { hoffmann: 1 }, merke: 'regelVorschlag', dann: [
+      { t: '„Neue Regel: Jo darf nur Fotos von Jo schicken.“', staerke: 'klar', herz: { hoffmann: 1 }, merke: 'regelVorschlag', dann: [
         ['jo', 'Oh Mann. Streberalarm.'], ['ayla', 'Nee. Ich bin dafür.'] ] },
       { t: '(Nichts sagen. Soll Hoffmann machen.)', dann: [
         ['hoffmann', 'Dann schlag ich was vor: Fotos nur mit Ja.'], ['jo', '(verdreht die Augen)'] ] },
@@ -323,11 +323,19 @@ export const GESPRAECHE2 = {
 
 // Klassenchat (Handy-Bild): Absender, Text
 export const CHAT = [
-  { wer: 'Jo', text: 'mila beim essen 💀', bild: true },
+  { wer: 'Chiara', text: 'hat jemand die mathe seite 34?' },
+  { wer: 'Jo', text: 'mila beim essen 💀', bild: true, reakt: '😂 6' },
   { wer: 'Ben', text: '😂😂' },
   { wer: 'Luca', text: 'nein bitte 😭' },
   { wer: 'Jo', text: 'sticker kommt gleich' },
   { wer: 'Ayla', text: 'hä' },
+  { wer: 'Chiara', text: 'also hat jemand seite 34 oder nicht' },
+];
+// Kapitel 5: Die Gruppe ohne Lehrer – und dann bist du raus
+export const CHAT5 = [
+  { wer: 'Ben', text: 'wer hat bio hausi' },
+  { wer: 'Jo', text: 'ich mach mal platz hier' },
+  { system: true, text: '{wer} hat dich entfernt.' },
 ];
 
 // Ich-Botschaft im Klassenrat: drei Teile; was ein Vorwurf ist, wird freundlich zurückgegeben

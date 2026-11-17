@@ -493,11 +493,13 @@ export function baueWelt({ material, materialInnen }) {
   // Netze zusammenfassen: fest (wirft Schatten), innen (Innenausbau, Böden, kein Schatten), glas
   for (const [art, mat] of [['fest', material], ['innen', materialInnen || material], ['glas', null], ['licht', new THREE.MeshBasicMaterial({ vertexColors: true, toneMapped: false })]]) {
     if (!B.teile[art].length) continue;
-    const g = mergeAll(B.teile[art]);
-    const m = new THREE.Mesh(g, mat || glasMaterial());
-    m.name = 'welt-' + art;
-    m.castShadow = art === 'fest'; m.receiveShadow = art === 'fest' || art === 'innen';
-    gruppe.add(m);
+    const mm = mat || glasMaterial();
+    for (const g of zellenMerge(B.teile[art], 28)) {
+      const m = new THREE.Mesh(g, mm);
+      m.name = 'welt-' + art;
+      m.castShadow = art === 'fest'; m.receiveShadow = art === 'fest' || art === 'innen';
+      gruppe.add(m);
+    }
   }
   for (const s of schilder) gruppe.add(s);
   for (const m of extras) gruppe.add(m);
@@ -508,15 +510,16 @@ export function baueWelt({ material, materialInnen }) {
   gruppe.add(flaeche(tP, -46, 46, -2, 40.5, 0.0615, 8));
   gruppe.add(flaeche(tP, 46, 62, -4, 2, 0.0615, 8));
   gruppe.add(flaeche(tP, -62, -46, -4, 2, 0.0615, 8));
-  const tD = dielen(), fl = {};
+  const tD = dielen(), fl = {}, bl = [];
   for (const b of boeden) {
     const x0 = Math.min(b.x0, b.x1), x1 = Math.max(b.x0, b.x1), z0 = Math.min(b.z0, b.z1), z1 = Math.max(b.z0, b.z1);
-    if (b.holz) { gruppe.add(flaeche(tD, x0, x1, z0, z1, 0.1015, 4)); continue; }
-    if (b.pflaster) { gruppe.add(flaeche(tP, x0, x1, z0, z1, 0.0615, 8)); continue; }
+    if (b.holz) { bl.push({ tex: tD, x0, x1, z0, z1, y: 0.1015, kachel: 4 }); continue; }
+    if (b.pflaster) { bl.push({ tex: tP, x0, x1, z0, z1, y: 0.0615, kachel: 8 }); continue; }
     const k = '#' + b.c1.getHexString() + '#' + b.c2.getHexString();
     fl[k] = fl[k] || fliesenTex('#' + b.c1.getHexString(), '#' + b.c2.getHexString());
-    gruppe.add(flaeche(fl[k], x0, x1, z0, z1, 0.1015, b.s * 2));
+    bl.push({ tex: fl[k], x0, x1, z0, z1, y: 0.1015, kachel: b.s * 2 });
   }
+  for (const m of boedenMerge(bl)) gruppe.add(m);   // Böden je Textur und Zelle ein Netz (vorher eins je Raum)
 
   Object.assign(orte, ORTE_CAMPUS, ORTE_CAMPUS2);
   // Bänke (Modelle): zwei Plätze je Bank, Blick weg von der Lehne
@@ -632,4 +635,50 @@ export function mergeAll(geos) {
   out.setAttribute('color', new THREE.BufferAttribute(col, 3));
   out.computeBoundingSphere();
   return out;
+}
+
+// Zusammenfassen nach Zellen (Raster in Metern): pro Zelle ein Netz, damit unsichtbare Zellen nicht gezeichnet werden
+// (Kamera-Ausschnitt). Teile werden nach der Mitte ihres Kastens einsortiert.
+export function zellenMerge(geos, groesse = 24) {
+  const zellen = new Map();
+  for (const g of geos) {
+    if (!g.boundingBox) g.computeBoundingBox();
+    const b = g.boundingBox, k = Math.floor((b.min.x + b.max.x) / 2 / groesse) + ':' + Math.floor((b.min.z + b.max.z) / 2 / groesse);
+    if (!zellen.has(k)) zellen.set(k, []);
+    zellen.get(k).push(g);
+  }
+  return [...zellen.values()].map((l) => mergeAll(l));
+}
+
+// Böden mit gleicher Textur zu einem Netz: Kacheln über die UV-Koordinaten statt über texture.repeat
+export function boedenMerge(liste) {
+  const gruppen = new Map();
+  for (const { tex, x0, x1, z0, z1, y, kachel } of liste) {
+    const g = new THREE.PlaneGeometry(x1 - x0, z1 - z0);
+    const uv = g.attributes.uv; for (let i = 0; i < uv.count; i++) uv.setXY(i, uv.getX(i) * (x1 - x0) / kachel, uv.getY(i) * (z1 - z0) / kachel);
+    g.rotateX(-Math.PI / 2); g.translate((x0 + x1) / 2, y, (z0 + z1) / 2);
+    if (!gruppen.has(tex)) gruppen.set(tex, []);
+    gruppen.get(tex).push(g);
+  }
+  const netze = [];
+  for (const [tex, geos] of gruppen) {
+    const t = tex.clone(); t.wrapS = t.wrapT = THREE.RepeatWrapping; t.needsUpdate = true;
+    const mat = new THREE.MeshLambertMaterial({ map: t });
+    for (const g of zellenMergeUV(geos, 32)) { const m = new THREE.Mesh(g, mat); m.receiveShadow = true; m.name = 'boden'; netze.push(m); }
+  }
+  return netze;
+}
+function zellenMergeUV(geos, groesse) {
+  const zellen = new Map();
+  for (const g of geos) { g.computeBoundingBox(); const b = g.boundingBox, k = Math.floor((b.min.x + b.max.x) / 2 / groesse) + ':' + Math.floor((b.min.z + b.max.z) / 2 / groesse); if (!zellen.has(k)) zellen.set(k, []); zellen.get(k).push(g); }
+  return [...zellen.values()].map((l) => {
+    let n = 0, ni = 0; for (const g of l) { n += g.attributes.position.count; ni += g.index.count; }
+    const pos = new Float32Array(n * 3), nor = new Float32Array(n * 3), uv = new Float32Array(n * 2), idx = new Uint32Array(ni);
+    let o = 0, oi = 0;
+    for (const g of l) { pos.set(g.attributes.position.array, o * 3); nor.set(g.attributes.normal.array, o * 3); uv.set(g.attributes.uv.array, o * 2); const ix = g.index.array; for (let i = 0; i < ix.length; i++) idx[oi + i] = ix[i] + o; oi += ix.length; o += g.attributes.position.count; g.dispose(); }
+    const out = new THREE.BufferGeometry();
+    out.setAttribute('position', new THREE.BufferAttribute(pos, 3)); out.setAttribute('normal', new THREE.BufferAttribute(nor, 3)); out.setAttribute('uv', new THREE.BufferAttribute(uv, 2)); out.setIndex(new THREE.BufferAttribute(idx, 1));
+    out.computeBoundingSphere(); out.computeBoundingBox();
+    return out;
+  });
 }

@@ -37,7 +37,7 @@ export const LEUTE = {
   chiara: { hoehe: 1.63, name: 'Chiara', modell: 'frauen', stil: 'Suit', haut: '#eec09a', haar: '#5a3a24', oben: '#3fa66b', unten: '#2f3a4a', schuhe: '#2b2b2b', farbe: '#3fa66b' },
   yusuf: { hoehe: 1.69, name: 'Yusuf', modell: 'menschen', stil: 'Casual', haut: '#9b6a45', haar: '#1b1410', oben: '#5fa0d0', unten: '#2d3748', schuhe: '#f2f2f2', farbe: '#5fa0d0' },
   kremer: { hoehe: 1.65, reich: 3.4, name: 'Frau Kremer', modell: 'frauen', stil: 'Worker', haut: '#f0c9a8', haar: '#a0522d', oben: '#ffffff', unten: '#4a4f5c', schuhe: '#ffffff', farbe: '#2f4f45', erwachsen: true },
-  luca: { hoehe: 1.74, kopf: 'cap', kopfFarbe: '#2b2b33', name: 'Luca', modell: 'menschen', stil: 'Farmer', haut: '#e8bf9a', haar: '#2b1d14', oben: '#7b8794', unten: '#3a3f4b', schuhe: '#2b2b2b', farbe: '#7b8794' },
+  luca: { hoehe: 1.74, kopf: 'cap', kopfFarbe: '#2b2b33', name: 'Luca', modell: 'menschen', stil: 'Casual2', haut: '#e8bf9a', haar: '#2b1d14', oben: '#7b8794', unten: '#3a3f4b', schuhe: '#2b2b2b', farbe: '#7b8794' },
   fahrer: { hoehe: 1.78, kopf: 'cap', kopfFarbe: '#2fb8a8', name: 'Busfahrer', modell: 'menschen', stil: 'Worker', haut: '#d8a982', haar: '#5a5a5a', oben: '#2fb8a8', unten: '#2d3748', schuhe: '#2b2b2b', farbe: '#2fb8a8', erwachsen: true },
 };
 
@@ -211,8 +211,8 @@ export const GESPRAECHE = {
   bingo_ayla: { felder: ['musik'], zeilen: [['ayla', 'Bass. Das ist Gitarre mit Selbstbewusstsein.'], ['ayla', 'Und du?']] },
   bingo_ben: { felder: ['sport', 'tier'], zeilen: [['ben', 'Korbball im Verein. Und ich hab einen Hund.'], ['ben', 'Er heißt Keks. Er hat mein Ladekabel gegessen.']] },
   bingo_chiara: { felder: ['kochen'], zeilen: [['chiara', 'Ich koche. Plan: mehr Knoblauch als Pasta.'], ['chiara', 'Voilà. Ein Feld für dich.']] },
-  bingo_yusuf: { felder: ['sport'], zeilen: [['yusuf', 'Hm. Judo.'], ['yusuf', 'Zweimal die Woche. Manchmal dreimal.']] },
-  bingo_jo: { felder: ['tier'], zeilen: [['jo', 'Zwei Katzen. Beide komplett verrückt.'], ['jo', 'Gib mal her. Was steht da noch?']] },
+  bingo_yusuf: { felder: ['sport'], zeilen: [['yusuf', 'Hm. Judo.'], ['yusuf', 'Zweimal die Woche. Willst du’s sehen? … Nein? Gut.']] },
+  bingo_jo: { felder: ['tier'], zeilen: [['jo', 'Zwei Katzen. Turbo und Diesel. Diesel ist schneller.'], ['jo', 'Gib mal her. Was steht da noch?']] },
   bingo_lina: { felder: ['musik', 'kochen'], zeilen: [['lina', '(leise) Klavier.'], ['lina', 'Und … Kuchen. Manchmal. Sag’s keinem.']] },
   bingo_noah: { felder: [], zeilen: [['noah', 'Kurze Frage. Zählt ein Kaktus als Haustier?'], ['noah', 'Nein? Dann hab ich nichts. Lina hat zwei Felder.']] },
   mila: [
@@ -313,7 +313,7 @@ export const GESPRAECHE = {
     ['hoffmann', 'Neue Methode: Plakat „Unsere Schule“. Ihr drei. 20 Minuten!'],
     ['jo', 'Ich mal das Gebäude. Ihr malt aus. Allez, fertig.'],
     ['erzaehler', 'Lina schiebt dir einen Zettel rüber.'],
-    ['erzaehler', 'Darauf steht: „Orte, wo man sich wohlfühlt?“'],
+    ['erzaehler', 'Darauf steht: „Orte, wo einen keiner nervt?“'],
     { wahl: [
       { t: '„Jo, Lina hat ’ne bessere Idee.“', staerke: 'einbeziehen', herz: { lina: 1, jo: -1 }, merke: 'linaGefragt', dann: [
         ['lina', '(wird rot) Ist nicht so wichtig …'],
@@ -338,7 +338,7 @@ export const GESPRAECHE = {
     ['noah', 'Hey! Gleicher Bus?'],
     { wahl: [
       { t: 'Ja. Morgen zusammen?', staerke: 'kontakt', herz: { noah: 2 }, dann: [['noah', 'Ich steig eine Station vor dir ein.'], ['noah', 'Ich halt dir einen Platz frei. Mit irgendwas.']] },
-      { t: 'Ja. Langer Tag.', herz: { noah: 1 }, dann: [['noah', 'Total. Aber besser als die letzte Schule.']] },
+      { t: 'Ja. Langer Tag.', herz: { noah: 1 }, dann: [['noah', 'Total. Ich schlaf gleich im Stehen. Wie ein Pferd.']] },
     ] },
     { tu: 'milaAbschied' },
     ['fahrer', 'Einsteigen. Ich warte nicht. Nie.'],
