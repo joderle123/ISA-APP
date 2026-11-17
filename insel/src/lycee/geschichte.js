@@ -24,21 +24,21 @@ export const STAERKEN = {
 };
 
 export const LEUTE = {
-  noah: { name: 'Noah', modell: 'menschen', stil: 'Casual', haut: '#c99a72', haar: '#2b1d14', oben: '#3f78b8', unten: '#3a3f4b', schuhe: '#f2f2f2', farbe: '#3f78b8' },
-  weber: { reich: 3.4, name: 'Mme Weber', modell: 'frauen', stil: 'Formal', haut: '#f0c9a8', haar: '#8a5a3a', oben: '#6b4e8a', unten: '#2f2f3a', schuhe: '#2b2b2b', farbe: '#6b4e8a', erwachsen: true },
-  hoffmann: { name: 'M. Hoffmann', modell: 'menschen', stil: 'Suit', haut: '#e8bf9a', haar: '#6d6d6d', oben: '#4a5568', unten: '#2d3748', schuhe: '#3a2a1c', farbe: '#4a5568', erwachsen: true },
-  kenan: { name: 'Kenan', modell: 'menschen', stil: 'Punk', haut: '#a8754f', haar: '#1b1410', oben: '#2b2b33', unten: '#4a4f5c', schuhe: '#d9523c', farbe: '#2b2b33' },
-  dario: { name: 'Dario', modell: 'menschen', stil: 'Casual2', haut: '#e0b48c', haar: '#4a3020', oben: '#d9693f', unten: '#2d3748', schuhe: '#ffffff', farbe: '#d9693f' },
-  mila: { name: 'Mila', modell: 'frauen', stil: 'Casual', haut: '#8d5a3b', haar: '#1b1410', oben: '#2fb8a8', unten: '#3a3f4b', schuhe: '#f2f2f2', farbe: '#2fb8a8' },
-  lina: { name: 'Lina', modell: 'frauen', stil: 'Adventurer', haut: '#f3d2b5', haar: '#c9a15a', oben: '#9b7bc8', unten: '#4a4f5c', schuhe: '#6b4e3a', farbe: '#9b7bc8' },
-  jo: { name: 'Jo', modell: 'menschen', stil: 'Adventurer', haut: '#d8a982', haar: '#3a2a1c', oben: '#c0392b', unten: '#3a3f4b', schuhe: '#2b2b2b', farbe: '#c0392b' },
-  ayla: { name: 'Ayla', modell: 'frauen', stil: 'Punk', haut: '#c68e64', haar: '#2b1d14', oben: '#e85d75', unten: '#2b2b33', schuhe: '#2b2b2b', farbe: '#e85d75' },
-  ben: { name: 'Ben', modell: 'menschen', stil: 'Beach', haut: '#f1c7a2', haar: '#d9b36a', oben: '#ffd166', unten: '#4f88c8', schuhe: '#ffffff', farbe: '#d9a21b' },
-  chiara: { name: 'Chiara', modell: 'frauen', stil: 'Suit', haut: '#eec09a', haar: '#5a3a24', oben: '#3fa66b', unten: '#2f3a4a', schuhe: '#2b2b2b', farbe: '#3fa66b' },
-  yusuf: { name: 'Yusuf', modell: 'menschen', stil: 'Casual', haut: '#9b6a45', haar: '#1b1410', oben: '#5fa0d0', unten: '#2d3748', schuhe: '#f2f2f2', farbe: '#5fa0d0' },
-  kremer: { reich: 3.4, name: 'Frau Kremer', modell: 'frauen', stil: 'Worker', haut: '#f0c9a8', haar: '#a0522d', oben: '#ffffff', unten: '#4a4f5c', schuhe: '#ffffff', farbe: '#2f4f45', erwachsen: true },
-  luca: { name: 'Luca', modell: 'menschen', stil: 'Farmer', haut: '#e8bf9a', haar: '#2b1d14', oben: '#7b8794', unten: '#3a3f4b', schuhe: '#2b2b2b', farbe: '#7b8794' },
-  fahrer: { name: 'Busfahrer', modell: 'menschen', stil: 'Worker', haut: '#d8a982', haar: '#5a5a5a', oben: '#2fb8a8', unten: '#2d3748', schuhe: '#2b2b2b', farbe: '#2fb8a8', erwachsen: true },
+  noah: { hoehe: 1.66, frisur: 'locken', name: 'Noah', modell: 'menschen', stil: 'Casual', haut: '#c99a72', haar: '#2b1d14', oben: '#3f78b8', unten: '#3a3f4b', schuhe: '#f2f2f2', farbe: '#3f78b8' },
+  weber: { hoehe: 1.66, reich: 3.4, name: 'Mme Weber', modell: 'frauen', stil: 'Formal', haut: '#f0c9a8', haar: '#8a5a3a', oben: '#6b4e8a', unten: '#2f2f3a', schuhe: '#2b2b2b', farbe: '#6b4e8a', erwachsen: true },
+  hoffmann: { hoehe: 1.82, name: 'M. Hoffmann', modell: 'menschen', stil: 'Suit', haut: '#e8bf9a', haar: '#6d6d6d', oben: '#4a5568', unten: '#2d3748', schuhe: '#3a2a1c', farbe: '#4a5568', erwachsen: true },
+  kenan: { hoehe: 1.8, kopf: 'muetze', kopfFarbe: '#3a3f4b', name: 'Kenan', modell: 'menschen', stil: 'Punk', haut: '#a8754f', haar: '#1b1410', oben: '#2b2b33', unten: '#4a4f5c', schuhe: '#d9523c', farbe: '#2b2b33' },
+  dario: { hoehe: 1.77, frisur: 'stachel', name: 'Dario', modell: 'menschen', stil: 'Casual2', haut: '#e0b48c', haar: '#4a3020', oben: '#d9693f', unten: '#2d3748', schuhe: '#ffffff', farbe: '#d9693f' },
+  mila: { hoehe: 1.61, name: 'Mila', modell: 'frauen', stil: 'Casual', haut: '#8d5a3b', haar: '#1b1410', oben: '#2fb8a8', unten: '#3a3f4b', schuhe: '#f2f2f2', farbe: '#2fb8a8' },
+  lina: { hoehe: 1.58, name: 'Lina', modell: 'frauen', stil: 'Adventurer', haut: '#f3d2b5', haar: '#c9a15a', oben: '#9b7bc8', unten: '#4a4f5c', schuhe: '#6b4e3a', farbe: '#9b7bc8' },
+  jo: { hoehe: 1.71, kopf: 'cap', kopfFarbe: '#c0392b', name: 'Jo', modell: 'menschen', stil: 'Adventurer', haut: '#d8a982', haar: '#3a2a1c', oben: '#c0392b', unten: '#3a3f4b', schuhe: '#2b2b2b', farbe: '#c0392b' },
+  ayla: { hoehe: 1.64, name: 'Ayla', modell: 'frauen', stil: 'Punk', haut: '#c68e64', haar: '#2b1d14', oben: '#e85d75', unten: '#2b2b33', schuhe: '#2b2b2b', farbe: '#e85d75' },
+  ben: { hoehe: 1.76, name: 'Ben', modell: 'menschen', stil: 'Beach', haut: '#f1c7a2', haar: '#d9b36a', oben: '#ffd166', unten: '#4f88c8', schuhe: '#ffffff', farbe: '#d9a21b' },
+  chiara: { hoehe: 1.63, name: 'Chiara', modell: 'frauen', stil: 'Suit', haut: '#eec09a', haar: '#5a3a24', oben: '#3fa66b', unten: '#2f3a4a', schuhe: '#2b2b2b', farbe: '#3fa66b' },
+  yusuf: { hoehe: 1.69, name: 'Yusuf', modell: 'menschen', stil: 'Casual', haut: '#9b6a45', haar: '#1b1410', oben: '#5fa0d0', unten: '#2d3748', schuhe: '#f2f2f2', farbe: '#5fa0d0' },
+  kremer: { hoehe: 1.65, reich: 3.4, name: 'Frau Kremer', modell: 'frauen', stil: 'Worker', haut: '#f0c9a8', haar: '#a0522d', oben: '#ffffff', unten: '#4a4f5c', schuhe: '#ffffff', farbe: '#2f4f45', erwachsen: true },
+  luca: { hoehe: 1.74, kopf: 'cap', kopfFarbe: '#2b2b33', name: 'Luca', modell: 'menschen', stil: 'Farmer', haut: '#e8bf9a', haar: '#2b1d14', oben: '#7b8794', unten: '#3a3f4b', schuhe: '#2b2b2b', farbe: '#7b8794' },
+  fahrer: { hoehe: 1.78, kopf: 'cap', kopfFarbe: '#2fb8a8', name: 'Busfahrer', modell: 'menschen', stil: 'Worker', haut: '#d8a982', haar: '#5a5a5a', oben: '#2fb8a8', unten: '#2d3748', schuhe: '#2b2b2b', farbe: '#2fb8a8', erwachsen: true },
 };
 
 // Klassen-Bingo: wer passt auf welches Feld (die Antworten sagen es)

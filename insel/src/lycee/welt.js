@@ -428,17 +428,32 @@ export function baueWelt({ material, materialInnen }) {
     pinnwand: { x: -6.8, z: -9, yaw: -Math.PI / 2 }, sekretariat: { x: -21, z: -12.4, yaw: 0 }, sekretariatTheke: { x: -21, z: -9.6 },
     saal104Tuer: { x: -21, z: -16, yaw: Math.PI }, saal104: { x: -22, z: -24, yaw: -Math.PI / 2 }, cdi: { x: -9, z: -23 },
     kantineTuer: { x: 12, z: -16 }, kantineAusgabe: { x: 24.2, z: -8.8, yaw: -Math.PI / 2 }, kantine: { x: 16, z: -8 },
-    hof: { x: 0, z: 18 }, bank: { x: -20, z: 12 }, korbfeld: { x: 29, z: 19 }, turnhalle: { x: 46, z: -3 }, werkstatt: { x: -48, z: -5 },
+    hof: { x: 0, z: 18 }, bank: { x: -20, z: 12 }, raucherecke: { x: 60.4, z: -17 }, skateEcke: { x: -36, z: 12 }, korbfeld: { x: 29, z: 19 }, turnhalle: { x: 46, z: -3 }, werkstatt: { x: -48, z: -5 },
     sepas: { x: -12, z: -10 }, fahrrad: { x: -38, z: 22 }, preau: { x: 19, z: 4 },
   };
   // Bäume, Hecken, Bänke, Brunnen, Laternen, Skate-Teile, Autos (Kenney „stadt“)
   for (const [x, z] of [[-40, 4], [-40, 14], [-30, 34], [-16, 34], [14, 34], [42, 34], [-26, 2.5], [-14, 2.5], [6, 30], [42, 4]]) P('haus/tree-large', x, z, Math.random() * 6, { h: 7.5 + Math.random() * 2, fest: 0.6 });
-  for (const [x, z] of [[-34, 30], [-6, 30], [40, 12], [-44, -6], [62, -14], [-66, -14], [-34, -34], [0, -36], [34, -36]]) P('haus/tree-small', x, z, Math.random() * 6, { h: 4.5, fest: 0.4 });
+  for (const [x, z] of [[-34, 30], [-6, 30], [40, 12], [-44, -6], [68, -4], [-66, -14], [-34, -34], [0, -36], [34, -36]]) P('haus/tree-small', x, z, Math.random() * 6, { h: 4.5, fest: 0.4 });
   for (const [x, z, r] of [[-20, 11, 0], [-14, 11, 0], [-26, 18, Math.PI / 2], [6, 12, 0], [6, 24, 0]]) P('skate/bench', x, z, r, { h: 0.55, fest: true });
   P('platz/fountain-round-detail', -8, 18, 0, { h: 1.6, fest: 1.6 });
   for (const [x, z] of [[-44, 38], [-30, 38], [30, 38], [44, 38]]) P('platz/hedge-large', x, z, 0, { h: 1.2, fest: true });
   for (const x of [-60, -36, -12, 12, 36, 60]) P('strasse/Streetlight_Single', x, 40.8, Math.PI, { h: 5.5 });
-  P('skate/rail-low', -34, 8, 0, { h: 0.5, fest: true }); P('skate/ramp', -32, 12, Math.PI / 2, { h: 0.8, fest: true }); P('skate/obstacle-box', -36, 14, 0, { h: 0.5, fest: true });
+  // ---- Skate-Ecke (Westen des Hofs): Betonfläche, Half-Pipe, Rampe, Rail, Box, Graffiti-Wand ----
+  box(-45.6, -28, 0.06, 0.1, 3.2, 19, C.beton, { art: 'innen' });
+  P('skate/half-pipe-low', -41.5, 6.2, 0, { s: 5.2, fest: true });
+  P('skate/ramp', -31.6, 12.4, Math.PI / 2, { h: 0.8, fest: true }); P('skate/rail-low', -36, 9.6, 0, { h: 0.5, fest: true }); P('skate/obstacle-box', -36.4, 15.8, 0, { h: 0.5, fest: true });
+  P('skate/bench', -44.6, 13, Math.PI / 2, { h: 0.55, fest: true });
+  box(-45.9, -45.5, 0, 2.6, 9, 18.4, C.beton, { stoss: true }); box(-46, -45.4, 2.6, 2.7, 8.9, 18.5, C.sockel);
+  { const g = graffiti(['SKATE', 'K+D', '7P2'], 9.4, 2.4, 3); g.position.set(-45.45, 1.3, 13.7); g.rotation.y = Math.PI / 2; schilder.push(g); }
+
+  // ---- Raucherecke hinter der Turnhalle (Osten): da, wo die Aufsicht selten hinschaut ----
+  box(58.2, 64, 0.06, 0.1, -26, -9, C.pflaster2, { art: 'innen' });
+  P('skate/bench', 61.8, -20.5, -Math.PI / 2, { h: 0.55, fest: true });
+  box(62.6, 62.75, 0, 0.9, -16.2, -16.05, C.metallDunkel, { stoss: true }); box(62.45, 62.9, 0.9, 1.05, -16.35, -15.9, C.metall);   // Standaschenbecher
+  P('strasse/dumpster', 63, -23.5, -Math.PI / 2, { h: 1.3, fest: true });
+  for (let i = 0; i < 26; i++) { const x = 59 + ((i * 37) % 47) / 10, z = -24 + ((i * 53) % 130) / 10; box(x, x + 0.08, 0.1, 0.12, z, z + 0.025, i % 4 ? C.zettel[4] : C.gelb, { art: 'innen' }); }   // Kippen
+  { const g = graffiti(['NO FUTURE?', 'L.', 'chill'], 8, 2.2, 7); g.position.set(58.22, 1.5, -18.5); g.rotation.y = Math.PI / 2; schilder.push(g); }
+  { const v = schild('Rauchen und Vapen auf dem Schulgelände verboten', 2.8, 0.42, { bg: '#ffffff', fg: '#c0392b', rand: '#c0392b', schrift: 'bold 66px system-ui' }); v.position.set(58.22, 2.6, -12.4); v.rotation.y = Math.PI / 2; schilder.push(v); }
   P('verkehr/Bus', -12, 46, Math.PI / 2, { h: 3.2, fest: true, id: 'bus' });
   for (const [x, m] of [[24, 'auto/sedan'], [32, 'auto/hatchback-sports'], [52, 'auto/suv'], [-50, 'auto/van']]) P(m, x, 54.2, -Math.PI / 2, { h: 1.6, fest: true });
   P('strasse/dumpster', 27.5, -4.2, 0, { h: 1.4, fest: true });
@@ -507,6 +522,24 @@ function korb(B, x, z, s, achse = 'x') {
     box(x - 0.9, x + 0.9, 2.9, 3.95, z - 0.25 * s - 0.05, z - 0.25 * s + 0.05, new THREE.Color('#ffffff'), { art: 'fest' });
     box(x - 0.25, x + 0.25, 3.03, 3.07, z + 0.05 * s - 0.25, z + 0.05 * s + 0.25, new THREE.Color('#d9523c'), { art: 'fest' });
   }
+}
+
+// Graffiti: Schriftzüge in Sprühfarben auf transparenter Fläche (Wand dahinter)
+function graffiti(woerter, breite, hoehe, seed) {
+  const cv = document.createElement('canvas'); cv.width = Math.round(256 * breite / hoehe); cv.height = 256;
+  const x = cv.getContext('2d'), F2 = ['#e85d75', '#2fb8a8', '#e9c46a', '#6b4e8a', '#3fa66b', '#d9693f', '#ffffff'];
+  let r = seed; const zuf = () => { r = (r * 9301 + 49297) % 233280; return r / 233280; };
+  for (let i = 0; i < 5; i++) { x.fillStyle = F2[Math.floor(zuf() * F2.length)] + '55'; x.beginPath(); x.ellipse(zuf() * cv.width, 60 + zuf() * 140, 60 + zuf() * 120, 20 + zuf() * 40, zuf(), 0, 7); x.fill(); }
+  woerter.forEach((w, i) => {
+    const px = (i + 0.5) * cv.width / woerter.length, py = 90 + zuf() * 100, gr = 60 + zuf() * 50;
+    x.save(); x.translate(px, py); x.rotate((zuf() - 0.5) * 0.4);
+    x.font = '900 ' + gr + 'px Impact, system-ui, sans-serif'; x.textAlign = 'center'; x.textBaseline = 'middle';
+    x.lineWidth = 12; x.strokeStyle = '#1f2a3d'; x.strokeText(w, 0, 0);
+    x.fillStyle = F2[Math.floor(zuf() * F2.length)]; x.fillText(w, 0, 0); x.restore();
+  });
+  const t = new THREE.CanvasTexture(cv); t.colorSpace = THREE.SRGBColorSpace;
+  const m = new THREE.Mesh(new THREE.PlaneGeometry(breite, hoehe), new THREE.MeshBasicMaterial({ map: t, transparent: true, toneMapped: false, depthWrite: false }));
+  m.name = 'graffiti'; return m;
 }
 
 function uhrTextur() {

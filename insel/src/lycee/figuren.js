@@ -9,6 +9,7 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { MeshoptDecoder } from 'three/examples/jsm/libs/meshopt_decoder.module.js';
 import { clone as skClone } from 'three/examples/jsm/utils/SkeletonUtils.js';
 import { getMaterial } from '../actors/humanoid/base.js';
+import { baueFrisur } from './frisur.js';
 import menschenBin from './modelle/menschen.glb';   // = respawn/modelle/menschen.glb, mit Meshopt gepackt
 import frauenBin from './modelle/frauen.glb';
 
@@ -27,7 +28,7 @@ function baustein(o) {
   return null;
 }
 
-export async function ladePerson(veil, { modell = 'menschen', stil = 'Casual', haut, haar, oben, unten, schuhe, hoehe = 1.72 } = {}) {
+export async function ladePerson(veil, { modell = 'menschen', stil = 'Casual', haut, haar, oben, unten, schuhe, hoehe = 1.72, frisur = null, kopf = null, kopfFarbe = null } = {}) {
   if (!cache.has(modell)) cache.set(modell, new Promise((ok, nein) => new GLTFLoader().setMeshoptDecoder(MeshoptDecoder).parse(puffer(DATEN[modell]), '', ok, nein)));
   const gltf = await cache.get(modell);
   const mat = getMaterial(veil);
@@ -74,6 +75,20 @@ export async function ladePerson(veil, { modell = 'menschen', stil = 'Casual', h
   const h = kasten.max.y - kasten.min.y;
   if (h > 0.1) group.scale.multiplyScalar(hoehe / h);
   const huelle = new THREE.Group(); huelle.add(group);
+  // Frisur und Kopfbedeckung (wie RESPAWN): an den Kopfknochen, in Ruhelage ausgerichtet; deckt sie den Kopf, fällt das kurze Haar weg
+  if (frisur || kopf) {
+    let kb = null; group.traverse((o) => { if (o.isBone && /^head$/i.test(o.name)) kb = o; });
+    const fr = kb ? baueFrisur({ hair: haar, hairStyle: frisur, head: kopf, headColor: kopfFarbe || oben }, mat) : null;
+    if (fr) {
+      huelle.updateMatrixWorld(true);
+      const wq = new THREE.Quaternion(), bq = new THREE.Quaternion(), bs = new THREE.Vector3(), gs = new THREE.Vector3();
+      huelle.getWorldQuaternion(wq); kb.getWorldQuaternion(bq); kb.getWorldScale(bs); huelle.getWorldScale(gs);
+      fr.quaternion.copy(bq.invert().multiply(wq));
+      fr.scale.setScalar(gs.x / (bs.x || 1));
+      kb.add(fr);
+      if (fr.userData.deckt) for (const t of teile) if (t.bau.teil === 'Head' && /^Hair/.test(t.name)) t.mesh.visible = false;
+    }
+  }
   const mixer = new THREE.AnimationMixer(group);
   const aktionen = {};
   for (const clip of gltf.animations) aktionen[clip.name] = mixer.clipAction(clip);

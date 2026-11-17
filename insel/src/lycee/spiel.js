@@ -12,7 +12,7 @@ import { createVeil } from '../world/veil.js';
 import { createSky } from '../world/sky.js';
 import { lambertVC } from '../world/landmarks.js';
 import { baueWelt } from './welt.js';
-import { baueRequisiten } from './requisiten.js';
+import { baueRequisiten, stelle } from './requisiten.js';
 import { ladePerson, namensschild, SITZ } from './figuren.js';
 import { createSteuerung } from './steuerung.js';
 import { createUI } from './ui.js';
@@ -73,6 +73,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   scene.add(welt.gruppe);
   const sky = createSky({ scene, renderer: rr.renderer, audio, quality: q, events });
   sky.time.paused = true;
+  sky.setStorm(0);   // der Himmel der Insel hat ein Gewitter am Rand – im Lycée nicht
   scene.fog.near = 90; scene.fog.far = 420;
   // Innenräume: weiches Raumlicht, sobald man drin ist (das Dach wirft sonst alles in Schatten)
   const raumLicht = new THREE.HemisphereLight(0xfff6e6, 0xe8dcc6, 0); scene.add(raumLicht);
@@ -127,30 +128,87 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   // ---------- Statisten: andere Schülerinnen und Schüler, die über Hof und Gang laufen (nur Kulisse) ----------
   let feste = [];
   const statisten = [];
+  // weg: läuft eine Runde · steht: [x, z, yaw, haltung] mit haltung 'redet' | 'sitzt' | 'raucht' | 'handy' · skate: [x0, x1, z]
   const STATISTEN = [
-    { modell: 'menschen', stil: 'Casual', haut: '#e8bf9a', haar: '#5a3a24', oben: '#7b8794', unten: '#2d3748', schuhe: '#ffffff', weg: [[-36, 22], [-10, 28], [16, 24], [8, 12], [-24, 8]], tempo: 1.25 },
-    { modell: 'frauen', stil: 'Casual', haut: '#c68e64', haar: '#1b1410', oben: '#e9c46a', unten: '#3a3f4b', schuhe: '#f2f2f2', weg: [[12, 34], [40, 32], [42, 6], [14, 10]], tempo: 1.15 },
-    { modell: 'frauen', stil: 'Punk', haut: '#f0c9a8', haar: '#8a5a3a', oben: '#4f88c8', unten: '#2b2b33', schuhe: '#2b2b2b', weg: [[-40, 30], [-40, 4], [-30, 16]], tempo: 1.05 },
-    { modell: 'menschen', stil: 'Beach', haut: '#9b6a45', haar: '#1b1410', oben: '#e85d75', unten: '#4a4f5c', schuhe: '#f2f2f2', weg: [[-27, -15.0], [27, -15.0]], tempo: 1.2 },
-    { modell: 'frauen', stil: 'Adventurer', haut: '#e0b48c', haar: '#2b1d14', oben: '#3fa66b', unten: '#2d3748', schuhe: '#6b4e3a', weg: [[25, -15.3], [-25, -15.3]], tempo: 1.1 },
-    { modell: 'menschen', stil: 'Casual2', haut: '#f1c7a2', haar: '#d9b36a', oben: '#2fb8a8', unten: '#3a3f4b', schuhe: '#2b2b2b', weg: [[-4.5, 38], [-4.5, 3], [-1, 3], [-1, 38]], tempo: 1.3 },
+    { modell: 'menschen', stil: 'Casual', haut: '#e8bf9a', haar: '#5a3a24', oben: '#7b8794', unten: '#2d3748', schuhe: '#ffffff', hoehe: 1.7, weg: [[-24, 22], [-10, 28], [16, 24], [8, 12], [-20, 8]], tempo: 1.25 },
+    { modell: 'frauen', stil: 'Casual', haut: '#c68e64', haar: '#1b1410', oben: '#e9c46a', unten: '#3a3f4b', schuhe: '#f2f2f2', hoehe: 1.63, weg: [[12, 34], [40, 32], [43, 8], [14, 10]], tempo: 1.15 },
+    { modell: 'menschen', stil: 'Beach', haut: '#9b6a45', haar: '#1b1410', oben: '#e85d75', unten: '#4a4f5c', schuhe: '#f2f2f2', hoehe: 1.74, kopf: 'cap', kopfFarbe: '#2b2b33', weg: [[-27, -15.0], [27, -15.0]], tempo: 1.2 },
+    { modell: 'frauen', stil: 'Adventurer', haut: '#e0b48c', haar: '#2b1d14', oben: '#3fa66b', unten: '#2d3748', schuhe: '#6b4e3a', hoehe: 1.6, weg: [[25, -15.3], [-25, -15.3]], tempo: 1.1 },
+    { modell: 'menschen', stil: 'Casual2', haut: '#f1c7a2', haar: '#d9b36a', oben: '#2fb8a8', unten: '#3a3f4b', schuhe: '#2b2b2b', hoehe: 1.68, frisur: 'locken', weg: [[-4.5, 38], [-4.5, 3], [-1, 3], [-1, 38]], tempo: 1.3 },
+    // Raucherecke hinter der Turnhalle
+    { modell: 'menschen', stil: 'Punk', haut: '#e0b48c', haar: '#2b1d14', oben: '#2b2b33', unten: '#4a4f5c', schuhe: '#2b2b2b', hoehe: 1.78, kopf: 'muetze', kopfFarbe: '#5a5a5a', steht: [60.2, -19.4, 1.9, 'raucht'] },
+    { modell: 'frauen', stil: 'Punk', haut: '#f0c9a8', haar: '#8a5a3a', oben: '#6b4e8a', unten: '#2b2b33', schuhe: '#f2f2f2', hoehe: 1.66, steht: [61.3, -18.1, -2.6, 'handy'] },
+    // Skate-Ecke
+    { modell: 'menschen', stil: 'Casual', haut: '#a8754f', haar: '#1b1410', oben: '#d9693f', unten: '#2d3748', schuhe: '#ffffff', hoehe: 1.72, kopf: 'cap', kopfFarbe: '#ffd166', skate: [-39, -29.5, 16.4] },
+    { modell: 'menschen', stil: 'Casual2', haut: '#e8bf9a', haar: '#6b4e3a', oben: '#4f88c8', unten: '#3a3f4b', schuhe: '#2b2b2b', hoehe: 1.69, frisur: 'stachel', steht: [-34.2, 18.2, -2.6, 'redet'] },
+    { modell: 'frauen', stil: 'Casual', haut: '#8d5a3b', haar: '#1b1410', oben: '#ffffff', unten: '#2d3748', schuhe: '#2b2b2b', hoehe: 1.62, steht: [-44.6, 13.6, Math.PI / 2, 'sitzt'] },
+    // Gruppe unter dem Vordach und zwei auf der Bank im Hof
+    { modell: 'frauen', stil: 'Suit', haut: '#eec09a', haar: '#5a3a24', oben: '#e85d75', unten: '#2f3a4a', schuhe: '#2b2b2b', hoehe: 1.64, steht: [14.2, 9.6, 0.9, 'redet'] },
+    { modell: 'menschen', stil: 'Worker', haut: '#d8a982', haar: '#3a2a1c', oben: '#5f8fc8', unten: '#2d3748', schuhe: '#f2f2f2', hoehe: 1.75, steht: [15.6, 10.6, -2.4, 'handy'] },
+    { modell: 'frauen', stil: 'Formal', haut: '#c68e64', haar: '#2b1d14', oben: '#3fa66b', unten: '#3a3f4b', schuhe: '#ffffff', hoehe: 1.6, steht: [6, 23.6, 0, 'sitzt'] },
+    { modell: 'menschen', stil: 'Farmer', haut: '#f1c7a2', haar: '#d9b36a', oben: '#e9c46a', unten: '#4f88c8', schuhe: '#ffffff', hoehe: 1.7, steht: [6, 24.6, 0, 'handy'] },
   ];
+  let brett = null;
   async function statistenLaden() {
     for (const d of STATISTEN) {
       const f = await ladePerson(veil, d);
-      scene.add(f.group); f.spiele('Walk', { tempo: d.tempo / 1.4 });
-      const p = new THREE.Vector3(d.weg[0][0], 0, d.weg[0][1]);
-      statisten.push({ d, f, p, i: 1, warte: Math.random() * 3, h: { x: p.x, z: p.z, r: 0.3 } });
+      scene.add(f.group);
+      const st = d.steht || (d.skate ? [d.skate[0], d.skate[2], Math.PI / 2] : null);
+      const p = new THREE.Vector3(st ? st[0] : d.weg[0][0], 0, st ? st[1] : d.weg[0][1]);
+      const x = { d, f, p, i: 1, warte: Math.random() * 3, h: { x: p.x, z: p.z, r: 0.3 }, richtung: 1 };
+      f.group.position.copy(p);
+      if (st) f.group.rotation.y = st[2];
+      const halt = d.steht && d.steht[3];
+      if (halt === 'sitzt') { f.sitzen(true); f.spiele('Idle'); }
+      else if (halt === 'redet') f.spiele('Interact', { tempo: 0.35 });
+      else if (halt === 'raucht') { f.spiele('Idle'); x.rauch = zigarette(f); }
+      else if (halt === 'handy') { f.spiele('Idle_Neutral'); }
+      else if (d.skate) {
+        f.spiele('Idle');
+        if (!brett && req.geo['skate/skateboard']) brett = req.geo['skate/skateboard'];
+        if (brett) { const m = new THREE.Mesh(stelle(brett, { x: 0, z: 0, s: 0.8, rot: Math.PI / 2 }), material); m.position.y = -0.05; f.group.add(m); f.group.children[0].position.y = 0.12; }
+      } else f.spiele('Walk', { tempo: d.tempo / 1.4 });
+      statisten.push(x);
     }
   }
+  // Zigarette in der rechten Hand, kleine Rauchwölkchen steigen auf
+  const rauchMat = new THREE.MeshBasicMaterial({ color: '#e8e8ee', transparent: true, opacity: 0.4, depthWrite: false });
+  function zigarette(f) {
+    let hand = null; f.group.traverse((o) => { if (o.isBone && o.name === 'Wrist.R') hand = o; });
+    if (!hand) return null;
+    const z = new THREE.Mesh(new THREE.CylinderGeometry(0.006, 0.006, 0.08, 6), new THREE.MeshBasicMaterial({ color: '#f4f1ea' }));
+    z.rotation.z = Math.PI / 2; z.position.set(0.03, 0.09, 0.03);
+    hand.updateMatrixWorld(true); const sk = new THREE.Vector3(); hand.getWorldScale(sk); z.scale.setScalar(1 / (sk.x || 1));
+    hand.add(z);
+    const wolken = [];
+    for (let i = 0; i < 6; i++) { const w = new THREE.Mesh(new THREE.SphereGeometry(0.05, 6, 4), rauchMat.clone()); w.visible = false; scene.add(w); wolken.push({ w, t: i * 0.5 }); }
+    return { z, wolken };
+  }
+  const _wp = new THREE.Vector3();
   function statistenBewegen(dt) {
     for (const x of statisten) {
       x.f.update(dt);
+      if (x.rauch) {
+        x.rauch.z.getWorldPosition(_wp);
+        for (const r of x.rauch.wolken) {
+          r.t += dt; if (r.t > 3) { r.t = 0; r.w.position.copy(_wp); }
+          r.w.visible = r.t < 2.8; r.w.position.y += dt * 0.35; r.w.position.x += dt * 0.08;
+          r.w.scale.setScalar(0.6 + r.t * 0.9); r.w.material.opacity = Math.max(0, 0.35 * (1 - r.t / 2.8));
+        }
+      }
+      if (x.d.steht) continue;
+      if (x.d.skate) {   // hin und her rollen, an den Enden kurz stehen
+        if (x.warte > 0) { x.warte -= dt; continue; }
+        const [a, b] = x.d.skate; x.p.x += x.richtung * 3.2 * dt;
+        if (x.p.x > Math.max(a, b) || x.p.x < Math.min(a, b)) { x.richtung *= -1; x.p.x = Math.max(Math.min(a, b), Math.min(Math.max(a, b), x.p.x)); x.warte = 1.5 + Math.random() * 2; }
+        x.f.group.rotation.y = x.richtung > 0 ? Math.PI / 2 : -Math.PI / 2;
+        x.f.group.position.copy(x.p); x.h.x = x.p.x; x.h.z = x.p.z;
+        continue;
+      }
       if (x.warte > 0) { x.warte -= dt; if (x.warte <= 0) x.f.spiele('Walk', { tempo: x.d.tempo / 1.4 }); continue; }
       const [zx, zz] = x.d.weg[x.i];
       const dx = zx - x.p.x, dz = zz - x.p.z, d = Math.hypot(dx, dz);
       if (d < 0.3) { x.i = (x.i + 1) % x.d.weg.length; if (Math.random() < 0.35) { x.warte = 2 + Math.random() * 4; x.f.spiele('Idle'); } continue; }
-      // dem Spieler ausweichen: kurz stehen bleiben, wenn er direkt davor steht
       const sp = steuerung.pos; if (Math.hypot(sp.x - x.p.x, sp.z - x.p.z) < 0.9) continue;
       x.p.x += dx / d * x.d.tempo * dt; x.p.z += dz / d * x.d.tempo * dt;
       const yaw = Math.atan2(dx, dz); let dy = yaw - x.f.group.rotation.y; dy = Math.atan2(Math.sin(dy), Math.cos(dy));
