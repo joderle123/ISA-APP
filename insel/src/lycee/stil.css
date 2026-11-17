@@ -173,3 +173,26 @@ kbd { display: inline-block; min-width: 1.5em; padding: 0 .35em; margin-right: .
 @media (prefers-reduced-motion: reduce) { .ly-atem-kreis { transition-duration: 1s; } }
 .ly-k-saege { text-align: center; }
 .ly-k-saege canvas { width: 100%; max-width: 560px; border-radius: 16px; background: #eef1f6; touch-action: none; }
+
+/* Phase 2: Lernmoment und Lehrpersonen-Editor */
+.ly-link { border: 0; background: none; padding: 6px 4px; font: 700 14px var(--font); color: var(--blau); text-decoration: underline; cursor: pointer; }
+.ly-k-titel .ly-link { margin-top: 10px; }
+.ly-q-fort { margin: 4px 0 8px; font-size: 13px; font-weight: 800; color: var(--leise); }
+.ly-q-frage { font-size: 22px !important; line-height: 1.35; }
+.ly-q-loesung b { color: var(--gruen); }
+.ly-k-quiz .ly-btn { margin-top: 12px; }
+.ly-k-lehrer { width: min(780px, 100%); text-align: left; }
+.ly-k-lehrer label { display: flex; flex-direction: column; gap: 4px; margin: 8px 0; font-weight: 800; font-size: 14px; color: var(--ink2); }
+.ly-k-lehrer input:not([type]), .ly-k-lehrer textarea { padding: 9px 11px; border: 2px solid var(--rand); border-radius: 10px; font: 600 15px var(--font); color: var(--ink); background: #fff; user-select: text; -webkit-user-select: text; resize: vertical; }
+.ly-k-lehrer label.ly-l-pflicht { flex-direction: row; align-items: center; gap: 8px; }
+.ly-k-lehrer label.ly-l-ant { flex-direction: row; align-items: center; gap: 8px; margin: 5px 0; }
+.ly-l-ant input:not([type]) { flex: 1; }
+.ly-l-liste { margin: 10px 0; padding-left: 22px; display: flex; flex-direction: column; gap: 6px; }
+.ly-l-liste li { padding: 6px 0; border-bottom: 1px solid var(--rand); }
+.ly-l-liste li span { display: block; font-size: 14.5px; }
+.ly-l-liste small { display: block; color: var(--gruen); font-weight: 700; }
+.ly-l-form { margin-top: 10px; padding: 12px 14px; border-radius: 14px; background: #fff; border: 1px solid var(--rand); }
+.ly-l-knoepfe { justify-content: flex-start; }
+.ly-l-datei { display: inline-flex; align-items: center; cursor: pointer; }
+.ly-l-meldung { min-height: 1.4em; font-weight: 800; color: var(--blau); }
+.ly-r-fertig { margin: 0 0 12px; padding-left: 24px; display: flex; flex-direction: column; gap: 6px; font-weight: 800; color: var(--gruen); }

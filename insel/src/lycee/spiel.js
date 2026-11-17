@@ -19,6 +19,8 @@ import { createUI } from './ui.js';
 import { SCHRITTE, GESPRAECHE, LEUTE, STAERKEN, BINGO, GEHEIMNISSE, SPRECHER, KAPITEL } from './geschichte.js';
 import { ORTE2, CHAT, ichBotschaftThema } from './kapitel2.js';
 import { ORTE3, saegeFolgen } from './kapitel3.js';
+import { ORTE4, IMMER, SCHLICHTEN } from './kapitel4.js';
+import { ladePaket, speicherePaket, bereinige, waehle, GRUNDPAKET } from './lernen.js';
 
 const SPEICHER = 'lycee.stand';
 const lies = () => { try { return JSON.parse(localStorage.getItem(SPEICHER) || 'null'); } catch (e) { return null; } };
@@ -66,7 +68,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   const material = lambertVC(veil, 'lycee', { ramp: 'props' });
   const materialInnen = lambertVC(veil, 'lycee-innen', { ramp: 'props' });
   const welt = baueWelt({ material, materialInnen });
-  Object.assign(welt.orte, ORTE2, ORTE3);
+  Object.assign(welt.orte, ORTE2, ORTE3, ORTE4);
+  let paket = ladePaket();   // Aufgaben der Lehrperson (Phase 2) oder Grundaufgaben
   scene.add(welt.gruppe);
   const sky = createSky({ scene, renderer: rr.renderer, audio, quality: q, events });
   sky.time.paused = true;
@@ -102,6 +105,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     return p;
   }
   async function stelleLeute(plan) {
+    plan = { ...IMMER, ...plan };   // Mme Laurent steht immer an der Ausleihe, wenn die Geschichte sie nicht braucht
     const ids = Object.keys(plan);
     await Promise.all(ids.map(person));
     for (const [id, p] of Object.entries(leute)) {
@@ -276,7 +280,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       S.kapitelFertig = Math.max(S.kapitelFertig || 0, kap);
       if (weiterIdx < 0) S.fertig = true;
       sichern();
-      const wahl = await ui.ende({ ...bilanz(), kap, ueberschrift: ({ 1: 'Dein erster Tag', 2: 'Deine erste Woche', 3: 'Dein Schnuppertag' })[kap] || KAPITEL[kap],
+      const wahl = await ui.ende({ ...bilanz(), kap, ueberschrift: ({ 1: 'Dein erster Tag', 2: 'Deine erste Woche', 3: 'Dein Schnuppertag', 4: 'Deine dritte Woche' })[kap] || KAPITEL[kap],
         weiter: weiterIdx >= 0 ? 'Weiter: Kapitel ' + (kap + 1) + ' „' + KAPITEL[kap + 1] + '“' : '' });
       if (wahl === 'weiter') danach = () => starteSchritt(weiterIdx, true);
       else if (wahl === 'neu') { S.fertig = false; danach = () => starteSchritt(startIdx, true); }
@@ -339,6 +343,37 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       ...((S.staerken.sicher || 0) ? [['becker', 'Und du hast sofort an die Brille gedacht.']] : []),
     ],
     kenanBus: () => ((S.herz.kenan || 0) >= 3 ? [['kenan', 'Hey, {name}! Gute Arbeit heute.']] : []),
+    // Kapitel 4 und Phase 2
+    lernmoment: async () => {
+      input.setEnabled(false);
+      const r = await ui.quiz(waehle(paket, S.geloest || [], 3), { titel: paket.eigen ? paket.titel : 'Hausaufgaben-Club', pflicht: !!paket.pflicht });
+      S.geloest = [...new Set((S.geloest || []).concat(r.geloest))]; S.lernzeit = (S.lernzeit || 0) + 1;
+      if (r.geloest.length) staerke('dranbleiben');
+      sichern();
+    },
+    abschreibFolge: () => (S.merke.abgeschrieben ? [
+      ['laurent', 'Kurz vorher: M. Hoffmann hat etwas gemerkt.'],
+      ['laurent', 'Bei Noah und dir waren die gleichen Fehler im Heft.'],
+      { wahl: [
+        { t: 'Ja. Er hat bei mir abgeschrieben. Ich hab es erlaubt.', staerke: 'ehrlich', herz: { laurent: 1 }, dann: [['laurent', 'Danke für die Ehrlichkeit. Erklären hilft ihm mehr als Abschreiben.'], ['laurent', 'Bringt ihn doch nächstes Mal mit hierher.']] },
+        { t: 'Keine Ahnung, Zufall.', dann: [['laurent', 'Hm. Zufälle gibt’s.'], ['erzaehler', 'Sie schaut dich kurz an. Dann lächelt sie.']] },
+      ] }] : []),
+    schwaenzFolge: () => (S.merke.geschwaenzt ? [
+      ['erzaehler', 'Nach der Stunde steht Frau Sommer vor dir.'],
+      ['sommer', 'Ich hab dich vermisst. Wo warst du?'],
+      { wahl: [
+        { t: 'Ich war hinter der Turnhalle. Sorry.', staerke: 'ehrlich', herz: { sommer: 1 }, dann: [['sommer', 'Danke, dass du es sagst. Nächste Woche bist du dabei, okay?'], ['du', 'Okay.']] },
+        { t: 'Mir war schlecht.', dann: [['sommer', 'Dann sag mir das nächstes Mal vorher. Ich mache mir sonst Sorgen.']] },
+      ] }] : []),
+    sommerFrage: () => [],
+    schlichten: async () => {
+      input.setEnabled(false);
+      await ui.reihenfolge(SCHLICHTEN);
+      staerke('schlichten');
+      return [['ben', 'Okay … wir wollten beide spielen.'], ['jo', 'Dann halbe Pause ihr, halbe Pause wir?'], ['ben', 'Deal.'],
+        ...(S.merke.sommerGeholt ? [['sommer', 'Gut gemacht, ihr drei.']] : [['lina', '(leise) Das war cool, {name}.']])];
+    },
+    noahWoche: () => (S.merke.erklaert ? [['noah', 'Danke fürs Erklären am Dienstag. Ich hab’s im Test gekonnt!']] : S.merke.abgeschrieben ? [['noah', 'Sorry wegen der Hausaufgabe. Das hat dir Ärger gemacht.']] : [['noah', 'Schönes Wochenende, {name}.']]),
     milaWoche: () => ((S.herz.mila || 0) >= 4 ? [['mila', 'Danke für Donnerstag, {name}. Wirklich.']] : []),
   };
 
@@ -401,6 +436,11 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       if (st.id === 'pause' && id === 'mila' && !S.merke.pauseMila) { S.merke.pauseMila = true; await gespraech(GESPRAECHE.mila); await nachPause(); return; }
       if (st.id === 'pause' && (id === 'ben' || id === 'yusuf') && !S.merke.pauseKorb) { S.merke.pauseKorb = true; await gespraech(GESPRAECHE.freiwurf); await gespraech(GESPRAECHE.freiwurfDanach); await nachPause(); return; }
       if (st.id === 'tisch' && (id === 'noah' || id === 'mila')) { S.merke.tisch = id; await gespraech(GESPRAECHE['tisch_' + id]); await naechster(); return; }
+    }
+    // Lernstation: Mme Laurent außerhalb der Geschichte
+    if (id === 'laurent') {
+      await gespraech([['laurent', 'Hallo {name}! Lust auf ein paar Aufgaben?'], { wahl: [{ t: 'Ja, gern.', dann: [{ tu: 'lernmoment' }, ['laurent', 'Schön. Komm wieder, wann du willst.']] }, { t: 'Heute nicht.', dann: [['laurent', 'Kein Problem. Ich bin da.']] }] }]);
+      return;
     }
     // sonst: kurz plaudern
     const l = PLAUDERN[id] || ['Hi.'];
@@ -548,7 +588,10 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
 
   onProgress(1, '');
   if (test && params.get('start')) { await los(true, +(params.get('figur') || 0), 'Sam'); return window.LYCEE; }
-  const w = await ui.titel({ gespeichert: !!(S && S.name), figuren: FIGUREN });
+  const lehrer = () => ui.lehrer({ paket, bereinige,
+    speichern: (b) => { speicherePaket(b); paket = b; },
+    zuruecksetzen: () => { speicherePaket(null); paket = GRUNDPAKET; } });
+  const w = await ui.titel({ gespeichert: !!(S && S.name), figuren: FIGUREN, lehrer });
   if (w.weiter) await los(false); else await los(true, w.figur, w.name);
   return window.LYCEE;
 }

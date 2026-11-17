@@ -26,6 +26,14 @@ alles zusammenpasst.
   Klasse, Grund, Ankunft) · zu spät in die Klasse · Werkstatt mit Meister Becker: Sicherheitsregeln, Messen und
   Sägen (Spiel), Fehler zugeben, Regal zu zweit mit Kenan (erinnert sich an Kapitel 1), Rückmeldung annehmen,
   sagen, was einen beruflich interessiert. Brücke zu Phase 3 (DAP/CCP).
+- **Kapitel 4 „Nein sagen“** (kapitel4.js): Noah will abschreiben (Nein sagen und erklären) · Schwänzen und Vape
+  hinter der Turnhalle · Hausaufgaben-Club mit den Aufgaben der Lehrperson · Streit zwischen Ben und Jo schlichten
+  (Reihenfolge-Spiel) · ein Ziel für nächste Woche · Folgen kommen von Menschen (gleiche Fehler im Heft, Frau Sommer fragt).
+- **Phase 2 – eigene Aufgaben** (lernen.js): Auf dem Titelbild „Für Lehrpersonen: eigene Aufgaben“ – Aufgabenpaket
+  anlegen (Fach, Frage, 2–4 Antworten, richtige Antwort, Erklärung), als Datei speichern oder laden, auf Wunsch
+  „Geschichte geht erst weiter, wenn gelöst“. Gespielt an der Lernstation im CDI (Mme Laurent, immer da) und im
+  Hausaufgaben-Club. Falsch → Erklärung und neuer Versuch. Speicher „lycee.aufgaben“, nur Aufgaben, keine Namen.
+  Ohne eigenes Paket kommen acht Beispiel-Aufgaben (Mathe, Deutsch, Französisch, Werkstatt).
 - **Lebendiger Hof:** Statisten laufen über Hof und Gang.
 - **Ohne Bewertung:** Jede Wahl hat eine ruhige Folge bei den Menschen (Herzen). Gezeigte
   Stärken werden gesammelt (Kontakt aufnehmen, Freundlich und klar, Zuhören, Ruhig bleiben …).
@@ -38,5 +46,4 @@ Sitzen) · `steuerung.js` Laufen und Kamera · `geschichte.js` Kapitel, Gespräc
 `ui.js` Oberfläche · `spiel.js` Kern · `main.js`, `shell.html`, `stil.css`.
 
 ## Nächste Schritte
-Kapitel 4, Phase 2 (eigenes Unterrichtsmaterial
-als Aufgaben in der Hauptgeschichte), Phase 3 (Werkstatt: Arbeitssimulator DAP/CCP).
+Kapitel 5; Phase 2 ausbauen (Aufgaben aus dem Hub, mehr Lernmomente); Phase 3 (Werkstatt: Arbeitssimulator DAP/CCP).

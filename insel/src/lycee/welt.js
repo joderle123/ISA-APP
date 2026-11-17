@@ -314,6 +314,7 @@ export function baueWelt({ material, materialInnen }) {
     box(-10.4, -8.6, 0.72, 0.77, -23.4, -21.4, C.holzHell, { art: 'innen' }); for (const [lx, lz] of [[-10.3, -23.3], [-8.7, -23.3], [-10.3, -21.5], [-8.7, -21.5]]) box(lx - 0.03, lx + 0.03, 0.08, 0.72, lz - 0.03, lz + 0.03, C.metall, { art: 'innen' });
     B.kasten.push({ x0: -10.4, x1: -8.6, z0: -23.4, z1: -21.4, y0: 0, y1: 0.8 });
     stuhl(B, -11.0, -22.9, Math.PI / 2, C.stuhl[1]); stuhl(B, -11.0, -21.9, Math.PI / 2, C.stuhl[2]); stuhl(B, -8.0, -22.9, -Math.PI / 2, C.stuhl[0]); stuhl(B, -8.0, -21.9, -Math.PI / 2, C.stuhl[4]);
+    box(-5.4, -3.0, 0, 1.0, -27.4, -26.8, C.theke, { art: 'innen', stoss: true }); box(-5.5, -2.9, 1.0, 1.07, -27.5, -26.7, C.thekeOben, { art: 'innen' });   // Ausleihe (Mme Laurent, Lernstation)
     P('einrichtung/Plant', -2.8, -29, 0, { h: 1.3 }); P('innen/Carpet_1', -6.2, -21.4, 0, { s: 3.2 }); }
   // Lehrerzimmer (verschlossen)
   { const sl = schild('Salle des profs', 1.4, 0.36, { bg: '#6b4e8a', schrift: 'bold 100px system-ui' }); sl.position.set(3, 2.85, -17.85); schilder.push(sl);

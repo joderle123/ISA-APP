@@ -26,6 +26,19 @@ const bild = (n) => page.screenshot({ path: join(SHOTS, 'lycee-' + n + '.png'), 
 await page.goto('file://' + DIST + '?test');
 await page.waitForSelector('.ly-k-titel', { timeout: 240000 });
 check('Titelbild „Lycée des Collines“', /Lycée/.test(await page.textContent('.ly-k-titel')));
+// Für Lehrpersonen: eine eigene Aufgabe anlegen (Phase 2)
+await page.click('.ly-k-titel [data-a="lehrer"]');
+await page.waitForSelector('.ly-k-lehrer');
+await page.fill('.ly-k-lehrer [data-f="titel"]', 'Mathe 7P2');
+await page.fill('.ly-k-lehrer [data-f="fach"]', 'Mathe');
+await page.fill('.ly-k-lehrer [data-f="frage"]', '3 · 4 = ?');
+await page.fill('.ly-k-lehrer [data-f="a0"]', '12'); await page.fill('.ly-k-lehrer [data-f="a1"]', '7'); await page.fill('.ly-k-lehrer [data-f="a2"]', '');
+await page.click('.ly-k-lehrer [data-a="aufnehmen"]');
+await page.click('.ly-k-lehrer [data-a="speichern"]');
+const pk = await L(() => JSON.parse(localStorage.getItem('lycee.aufgaben') || 'null'));
+check('Lehrpersonen-Editor: Paket „Mathe 7P2“ gespeichert (8 Beispiel-Aufgaben + 1 eigene, nur Aufgaben)', pk && pk.titel === 'Mathe 7P2' && pk.aufgaben.length === 9 && pk.aufgaben[8].frage === '3 · 4 = ?' && pk.aufgaben[8].antworten.join('|') === '12|7' && pk.aufgaben[8].richtig === 0, pk && pk.aufgaben.length);
+await page.click('.ly-k-lehrer .ly-zu');
+await page.waitForSelector('.ly-k-titel');
 await page.click('[data-a="neu"]');
 await page.click('[data-f="1"]');
 await page.fill('.ly-w-name input', 'Robin');
@@ -51,6 +64,8 @@ async function klick(wahl = 0, max = 80) {
     else if (z === 'ebene:ende') return 'ende';
     else if (z === 'ebene:bild') await page.waitForTimeout(600);
     else if (z === 'ebene:handy') await page.keyboard.press('KeyE');
+    else if (z === 'ebene:quiz') { if (await page.isVisible('.ly-k-quiz [data-j]')) await page.keyboard.press('Digit1'); else await page.keyboard.press('KeyE'); }
+    else if (z === 'ebene:reihe') { if (await page.isVisible('.ly-k-reihe [data-a="w"]')) await page.keyboard.press('KeyE'); else { const n = await page.$$eval('.ly-r-fertig li', (l) => l.length); await page.click('.ly-k-reihe [data-k="' + n + '"]'); } }
     else if (z === 'ebene:saege') { await page.keyboard.press('KeyE'); await page.waitForTimeout(900); }
     else if (z === 'ebene:atem') { if (await page.isVisible('.ly-k-atem [data-a="weiter"]')) await page.keyboard.press('KeyE'); else await page.waitForTimeout(400); }
     else if (z === 'ebene:ich') { if (await page.isVisible('.ly-k-ich [data-a="sagen"]')) await page.keyboard.press('KeyE'); else await page.keyboard.press('Digit' + (ichWahl.shift() || 1)); }
@@ -178,7 +193,32 @@ check('Rückmeldung angenommen, Beruf: Holz', (await L(() => LYCEE.zustand.staer
 check('Heimweg', (await schritt()) === 'k3_heim');
 const e3 = await geh('bus', 0);
 check('Kapitel 3 geschafft: „Dein Schnuppertag“', e3 === 'ende' && /Dein Schnuppertag/.test(await page.textContent('.ly-k-ende')));
+await page.click('.ly-k-ende [data-a="weiter"]');
+await page.waitForFunction(() => LYCEE.schritt === 'k4_noah');
+await klick();
+check('Kapitel 4 „Nein sagen“', /Kapitel 4/.test(await page.textContent('.ly-auftrag')));
+await rede('noah', 0);
+check('Abschreiben: Nein, aber erklärt → „Nein sagen“', (await L(() => LYCEE.zustand.staerken.neinsagen)) === 1 && (await L(() => LYCEE.zustand.merke.erklaert)) === true);
+await klick();
+await rede('dario', 0);
+check('Schwänzen und Vape: zweimal Nein gesagt', (await L(() => LYCEE.zustand.staerken.neinsagen)) === 3 && !(await L(() => LYCEE.zustand.merke.geschwaenzt)));
+await klick();
+await bild('10-club');
+await rede('laurent', 0);
+check('Hausaufgaben-Club: drei Aufgaben aus dem Paket gelöst → „Dranbleiben“', (await L(() => (LYCEE.zustand.geloest || []).length)) === 3 && (await L(() => LYCEE.zustand.staerken.dranbleiben)) === 1);
+await klick();
+await rede('ben', 0);
+check('Streit geschlichtet (Reihenfolge, mit Tipp bei falscher Wahl)', (await L(() => LYCEE.zustand.staerken.schlichten)) === 1);
+await rede('hoffmann', 0);
+check('Wochenziel gewählt', (await L(() => LYCEE.zustand.merke.zielFragen)) === true);
+const e4 = await geh('bus', 0);
+check('Kapitel 4 geschafft: „Deine dritte Woche“', e4 === 'ende' && /Deine dritte Woche/.test(await page.textContent('.ly-k-ende')));
 await page.click('.ly-k-ende [data-a="frei"]'); await page.waitForTimeout(500);
+// Lernstation außerhalb der Geschichte: die eigene Aufgabe kommt dran (noch nicht gelöst)
+await L(() => LYCEE.teleport({ x: -4.2, z: -26 })); await page.waitForTimeout(600);
+L(() => LYCEE.rede('laurent')); await page.waitForTimeout(400);
+await klick(0);
+check('Lernstation (Mme Laurent): weitere Aufgaben gelöst, auch die eigene', (await L(() => LYCEE.zustand.geloest)).includes(pk.aufgaben[8].id), await L(() => LYCEE.zustand.geloest));
 check('Danach frei herumlaufen, als geschafft gespeichert', (await L(() => LYCEE.zustand.fertig)) === true && /Freies Herumlaufen/.test(await page.textContent('.ly-auftrag')));
 check('Keine Fehler in der Konsole', fehler.length === 0, fehler.slice(0, 5));
 check('Kein Netz', netz.length === 0, netz.slice(0, 5));

@@ -68,7 +68,10 @@ export function createUI({ root, input, speech }) {
 
   // Tasten: im Gespräch E/Enter/Leertaste = weiter, 1–3 = Antwort; sonst Tab = Journal
   document.addEventListener('keydown', (e) => {
-    if (!ebene.hidden && e.code === 'Escape') { ebeneZu(); e.preventDefault(); return; }
+    const art = ebene.hidden ? '' : ebene.dataset.art;
+    if (art && e.code === 'Escape') { if (art === 'journal') { ebeneZu(); e.preventDefault(); } return; }
+    if (e.target && e.target.closest && e.target.closest('input, textarea, select')) return;   // Tippen in Feldern (Name, Lehrpersonen-Editor)
+    if (art === 'lehrer') return;
     if (e.code === 'Tab') { e.preventDefault(); if (ebene.hidden && !dialogOffen) ui.onJournal && ui.onJournal(); else if (ebene.dataset.art === 'journal') ebeneZu(); return; }
     if (!dialogOffen) return;
     // Taste hier verbrauchen: sonst sieht die Spielsteuerung dasselbe E und startet gleich das nächste Gespräch
@@ -110,13 +113,16 @@ export function createUI({ root, input, speech }) {
   };
 
   // Titelbild: Weiter / Neu, Figur und Name wählen
-  ui.titel = ({ gespeichert, figuren }) => new Promise((ok) => {
+  ui.titel = ({ gespeichert, figuren, lehrer }) => new Promise((ok) => {
+   const zeigeTitel = () => {
     const k = ebeneAuf('titel', '<div class="ly-t-kicker">Ein Schulsimulator</div><h1 class="ly-t-name">Lycée<br><span>des Collines</span></h1>' +
-      '<p class="ly-t-sub">Kapitel 1 · Rentrée</p><div class="ly-t-knoepfe">' +
+      '<p class="ly-t-sub">Vier Kapitel · Rentrée · Die erste Woche · Der Schnuppertag · Nein sagen</p><div class="ly-t-knoepfe">' +
       (gespeichert ? '<button type="button" class="ly-btn ly-primaer" data-a="weiter">Weiterspielen</button><button type="button" class="ly-btn" data-a="neu">Neu anfangen</button>' : '<button type="button" class="ly-btn ly-primaer" data-a="neu">Los geht’s</button>') +
-      '</div><p class="ly-t-fuss">' + (matchMedia('(pointer: coarse)').matches ? 'Links wischen = laufen · rechts wischen = umschauen · E = reden · ☰ = Journal' : 'WASD / Pfeile laufen · Maus ziehen = umschauen · E = reden · Tab = Journal') + '</p>');
+      '</div><p class="ly-t-fuss">' + (matchMedia('(pointer: coarse)').matches ? 'Links wischen = laufen · rechts wischen = umschauen · E = reden · ☰ = Journal' : 'WASD / Pfeile laufen · Maus ziehen = umschauen · E = reden · Tab = Journal') + '</p>' +
+      (lehrer ? '<button type="button" class="ly-link" data-a="lehrer">Für Lehrpersonen: eigene Aufgaben</button>' : ''));
     k.querySelectorAll('[data-a]').forEach((b) => { b.onclick = () => {
       if (b.dataset.a === 'weiter') { ebeneZu(); ok({ weiter: true }); return; }
+      if (b.dataset.a === 'lehrer') { lehrer().then(zeigeTitel); return; }
       // Figur und Name
       const k2 = ebeneAuf('wer', '<h2>Wer bist du?</h2><div class="ly-w-figuren">' + figuren.map((f, i) => '<button type="button" data-f="' + i + '" class="' + (i === 0 ? 'an' : '') + '"><span class="ly-w-bild" style="--o:' + f.oben + ';--h:' + f.haut + ';--r:' + f.haar + '"><i></i></span>' + esc(f.titel) + '</button>').join('') + '</div>' +
         '<label class="ly-w-name">Dein Name im Spiel<input maxlength="16" value="Sam" autocomplete="off"></label><p class="ly-leer">Du kannst einen ausgedachten Namen nehmen.</p><button type="button" class="ly-btn ly-primaer" data-a="start">Starten</button>');
@@ -126,6 +132,8 @@ export function createUI({ root, input, speech }) {
       k2.querySelector('[data-a="start"]').onclick = () => { const name = inp.value.replace(/[<>]/g, '').trim().slice(0, 16) || 'Sam'; ebeneZu(); ok({ neu: true, figur: wahl, name }); };
       inp.addEventListener('keydown', (e) => { e.stopPropagation(); if (e.key === 'Enter') k2.querySelector('[data-a="start"]').click(); });
     }; });
+   };
+   zeigeTitel();
   });
 
   ui.ende = ({ leute, staerken, entdeckt, gesamt, kap = 1, ueberschrift = 'Geschafft', weiter = '' }) => new Promise((ok) => {
@@ -285,6 +293,139 @@ export function createUI({ root, input, speech }) {
     document.addEventListener('keydown', taste, true);
     btn.onclick = markieren; cv.onpointerdown = markieren;
     requestAnimationFrame(draw);
+  });
+
+  // Lernmoment (Phase 2): Aufgaben nacheinander. Falsch → Erklärung, neuer Versuch. pflicht: erst weiter, wenn richtig;
+  // sonst nach zwei Fehlversuchen die Lösung zeigen. Ergebnis: { geloest: [ids], richtigErsterVersuch }
+  ui.quiz = (aufgaben, { titel = 'Lernzeit', pflicht = false } = {}) => new Promise((ok) => {
+    const geloest = []; let erster = 0, i = 0;
+    const k = ebeneAuf('quiz', '<div class="ly-t-kicker">' + esc(titel) + '</div><div class="ly-q-fort"></div><div class="ly-q-inhalt"></div>');
+    const fort = k.querySelector('.ly-q-fort'), inhalt = k.querySelector('.ly-q-inhalt');
+    let taste = null;
+    const setzeTaste = (fn) => { if (taste) document.removeEventListener('keydown', taste, true); taste = fn; if (fn) document.addEventListener('keydown', fn, true); };
+    const ende = () => { setzeTaste(null); ebeneZu(); ok({ geloest, richtigErsterVersuch: erster }); };
+    const zeige = () => {
+      if (i >= aufgaben.length) {
+        fort.textContent = '';
+        inhalt.innerHTML = '<h2>Geschafft!</h2><p class="ly-ich-gut">' + geloest.length + ' von ' + aufgaben.length + ' Aufgaben gelöst.</p><button type="button" class="ly-btn ly-primaer" data-a="ende">Weiter <kbd>E</kbd></button>';
+        inhalt.querySelector('[data-a]').onclick = ende;
+        setzeTaste((e) => { if (e.code === 'KeyE' || e.code === 'Enter') { e.preventDefault(); e.stopPropagation(); ende(); } });
+        return;
+      }
+      const a = aufgaben[i]; let fehler = 0;
+      fort.textContent = 'Aufgabe ' + (i + 1) + ' von ' + aufgaben.length + ' · ' + a.fach;
+      const frage = (hinweis) => {
+        inhalt.innerHTML = '<h2 class="ly-q-frage">' + esc(a.frage) + '</h2>' + (hinweis ? '<p class="ly-ich-tipp">💡 ' + esc(hinweis) + '</p>' : '') +
+          '<div class="ly-d-optionen">' + a.antworten.map((t, j) => '<button type="button" data-j="' + j + '"><kbd>' + (j + 1) + '</kbd><span>' + esc(t) + '</span></button>').join('') + '</div>';
+        const antwort = (j) => {
+          if (j < 0 || j >= a.antworten.length) return;
+          if (j === a.richtig) {
+            if (!fehler) erster++;
+            geloest.push(a.id);
+            weiter('<p class="ly-ich-gut">✓ Richtig!</p>' + (a.erklaerung ? '<p>' + esc(a.erklaerung) + '</p>' : ''));
+            return;
+          }
+          fehler++;
+          if (fehler >= 2 && !pflicht) { weiter('<p class="ly-q-loesung">Die Lösung ist: <b>' + esc(a.antworten[a.richtig]) + '</b></p>' + (a.erklaerung ? '<p>' + esc(a.erklaerung) + '</p>' : '')); return; }
+          frage(fehler === 1 ? 'Noch nicht. Schau nochmal genau hin.' + (a.erklaerung && fehler >= 1 && pflicht ? '' : '') : (a.erklaerung || 'Probier eine andere Antwort.'));
+        };
+        inhalt.querySelectorAll('[data-j]').forEach((b) => { b.onclick = () => antwort(+b.dataset.j); });
+        setzeTaste((e) => { if (/^Digit[1-4]$/.test(e.code)) { e.preventDefault(); e.stopPropagation(); antwort(+e.code.slice(5) - 1); } });
+      };
+      const weiter = (html) => {
+        inhalt.innerHTML = '<h2 class="ly-q-frage">' + esc(a.frage) + '</h2>' + html + '<button type="button" class="ly-btn ly-primaer" data-a="w">Weiter <kbd>E</kbd></button>';
+        const w = () => { i++; zeige(); };
+        inhalt.querySelector('[data-a]').onclick = w;
+        setzeTaste((e) => { if (e.code === 'KeyE' || e.code === 'Enter') { e.preventDefault(); e.stopPropagation(); w(); } });
+      };
+      frage('');
+    };
+    zeige();
+  });
+
+  // Editor für Lehrpersonen: Aufgabenpaket anlegen, ändern, als Datei speichern oder laden
+  ui.lehrer = ({ paket, speichern, zuruecksetzen, bereinige }) => new Promise((ok) => {
+    let p = JSON.parse(JSON.stringify(paket)); if (!p.eigen) { p = { v: 1, titel: 'Meine Aufgaben', pflicht: false, eigen: true, aufgaben: p.aufgaben.slice() }; }
+    let bearbeite = -1;
+    const k = ebeneAuf('lehrer', '<button type="button" class="ly-zu" aria-label="Schließen">✕</button><div class="ly-t-kicker">Für Lehrpersonen</div><h2>Aufgaben aus dem Unterricht</h2>' +
+      '<p class="ly-leer">Die Aufgaben kommen an der Lernstation im CDI (Mme Laurent) und in Lernmomenten der Geschichte. Nur Aufgaben – keine Namen, keine Daten. Gespeichert auf diesem Gerät; mit „Als Datei speichern“ auf andere Geräte bringen.</p>' +
+      '<div class="ly-l-kopf"><label>Titel <input data-f="titel" maxlength="60"></label><label class="ly-l-pflicht"><input type="checkbox" data-f="pflicht"> Geschichte geht erst weiter, wenn die Aufgaben richtig gelöst sind</label></div>' +
+      '<ol class="ly-l-liste"></ol><div class="ly-l-form"></div>' +
+      '<div class="ly-t-knoepfe ly-l-knoepfe"><button type="button" class="ly-btn ly-primaer" data-a="speichern">Speichern</button><button type="button" class="ly-btn" data-a="export">Als Datei speichern</button>' +
+      '<label class="ly-btn ly-l-datei">Datei laden<input type="file" accept=".json,application/json" hidden></label><button type="button" class="ly-btn" data-a="beispiel">Beispiel-Aufgaben</button></div><p class="ly-l-meldung" role="status"></p>');
+    const $ = (s2) => k.querySelector(s2), meldung = (t) => { $('.ly-l-meldung').textContent = t; };
+    $('[data-f="titel"]').value = p.titel; $('[data-f="pflicht"]').checked = !!p.pflicht;
+    const liste = () => {
+      $('.ly-l-liste').innerHTML = p.aufgaben.map((a, i) => '<li><span><b>' + esc(a.fach) + '</b> · ' + esc(a.frage) + '<small>✓ ' + esc(a.antworten[a.richtig]) + '</small></span>' +
+        '<button type="button" class="ly-link" data-e="' + i + '">Ändern</button><button type="button" class="ly-link" data-d="' + i + '">Löschen</button></li>').join('') || '<li class="ly-leer">Noch keine Aufgaben.</li>';
+      k.querySelectorAll('[data-e]').forEach((b) => { b.onclick = () => { bearbeite = +b.dataset.e; formular(); }; });
+      k.querySelectorAll('[data-d]').forEach((b) => { b.onclick = () => { p.aufgaben.splice(+b.dataset.d, 1); bearbeite = -1; liste(); formular(); }; });
+    };
+    const formular = () => {
+      const a = bearbeite >= 0 ? p.aufgaben[bearbeite] : { fach: 'Mathe', frage: '', antworten: ['', '', ''], richtig: 0, erklaerung: '' };
+      const ant = [0, 1, 2, 3].map((j) => a.antworten[j] || '');
+      $('.ly-l-form').innerHTML = '<h3>' + (bearbeite >= 0 ? 'Aufgabe ändern' : 'Neue Aufgabe') + '</h3>' +
+        '<label>Fach <input data-f="fach" maxlength="30" value="' + esc(a.fach) + '"></label>' +
+        '<label>Frage <textarea data-f="frage" maxlength="220" rows="2">' + esc(a.frage) + '</textarea></label>' +
+        ant.map((t, j) => '<label class="ly-l-ant"><input type="radio" name="ly-richtig" value="' + j + '"' + (a.richtig === j ? ' checked' : '') + ' aria-label="Antwort ' + (j + 1) + ' ist richtig"><input data-f="a' + j + '" maxlength="90" placeholder="Antwort ' + (j + 1) + (j > 1 ? ' (frei lassen = keine)' : '') + '" value="' + esc(t) + '"></label>').join('') +
+        '<p class="ly-leer">Den Punkt vor die richtige Antwort setzen.</p>' +
+        '<label>Erklärung (kommt nach der Antwort) <textarea data-f="erklaerung" maxlength="260" rows="2">' + esc(a.erklaerung) + '</textarea></label>' +
+        '<button type="button" class="ly-btn" data-a="aufnehmen">' + (bearbeite >= 0 ? 'Änderung übernehmen' : 'Aufgabe hinzufügen') + '</button>';
+      $('[data-a="aufnehmen"]').onclick = () => {
+        const roh = [0, 1, 2, 3].map((j) => $('[data-f="a' + j + '"]').value.trim());
+        const r = +((k.querySelector('input[name="ly-richtig"]:checked') || {}).value || 0);
+        if (!roh[r]) { meldung('Die richtige Antwort darf nicht leer sein.'); return; }
+        const antworten = [], richtigText = roh[r];
+        roh.forEach((t) => { if (t) antworten.push(t); });
+        const neu = { id: bearbeite >= 0 ? p.aufgaben[bearbeite].id : 'l' + Date.now().toString(36), fach: $('[data-f="fach"]').value.trim() || 'Unterricht', frage: $('[data-f="frage"]').value.trim(), antworten, richtig: antworten.indexOf(richtigText), erklaerung: $('[data-f="erklaerung"]').value.trim() };
+        if (!neu.frage || antworten.length < 2) { meldung('Bitte eine Frage und mindestens zwei Antworten eintragen.'); return; }
+        if (bearbeite >= 0) p.aufgaben[bearbeite] = neu; else p.aufgaben.push(neu);
+        bearbeite = -1; meldung('Aufgabe übernommen. „Speichern“ nicht vergessen.'); liste(); formular();
+      };
+    };
+    const holen = () => { p.titel = $('[data-f="titel"]').value.trim() || 'Meine Aufgaben'; p.pflicht = $('[data-f="pflicht"]').checked; return bereinige(p); };
+    $('[data-a="speichern"]').onclick = () => { const b = holen(); if (!b) { meldung('Es braucht mindestens eine vollständige Aufgabe.'); return; } speichern(b); meldung('Gespeichert: ' + b.aufgaben.length + ' Aufgaben.'); };
+    $('[data-a="export"]').onclick = () => {
+      const b = holen(); if (!b) { meldung('Es braucht mindestens eine vollständige Aufgabe.'); return; }
+      const url = URL.createObjectURL(new Blob([JSON.stringify(b, null, 1)], { type: 'application/json' }));
+      const a = document.createElement('a'); a.href = url; a.download = 'lycee-aufgaben.json'; document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(url), 2000);
+    };
+    k.querySelector('.ly-l-datei input').onchange = (e) => {
+      const f = e.target.files && e.target.files[0]; if (!f) return;
+      if (f.size > 200000) { meldung('Die Datei ist zu groß.'); return; }
+      f.text().then((t) => { let b = null; try { b = bereinige(JSON.parse(t)); } catch (x) { b = null; }
+        if (!b) { meldung('Diese Datei enthält keine Aufgaben für das Lycée.'); return; }
+        p = b; $('[data-f="titel"]').value = p.titel; $('[data-f="pflicht"]').checked = p.pflicht; bearbeite = -1; liste(); formular(); meldung('Geladen: ' + p.aufgaben.length + ' Aufgaben. „Speichern“ übernimmt sie.'); });
+    };
+    $('[data-a="beispiel"]').onclick = () => { zuruecksetzen(); p = JSON.parse(JSON.stringify(paket.eigen ? paket : paket)); meldung('Beispiel-Aufgaben wieder aktiv. Eigene Aufgaben auf diesem Gerät gelöscht.'); ebeneZu(); ok(); };
+    $('.ly-zu').onclick = () => { ebeneZu(); ok(); };
+    liste(); formular();
+  });
+
+  // Reihenfolge-Spiel (z. B. Streit schlichten): Schritte in eine gute Reihenfolge bringen. Falsch → freundlicher Tipp.
+  ui.reihenfolge = (def) => new Promise((ok) => {
+    const ord = def.schritte.map((s2, i) => i); for (let i = ord.length - 1; i > 0; i--) { const j = (i * 7 + 3) % (i + 1); const t = ord[i]; ord[i] = ord[j]; ord[j] = t; }
+    const k = ebeneAuf('reihe', '<div class="ly-t-kicker">' + esc(def.titel) + '</div><h2>' + esc(def.frage) + '</h2><ol class="ly-r-fertig"></ol><p class="ly-ich-tipp" hidden></p><div class="ly-d-optionen"></div>');
+    let n = 0;
+    const liste = k.querySelector('.ly-r-fertig'), tipp = k.querySelector('.ly-ich-tipp'), opt = k.querySelector('.ly-d-optionen');
+    const zeige = () => {
+      opt.innerHTML = ord.filter((i) => i >= n).map((i, j) => '<button type="button" data-k="' + i + '"><kbd>' + (j + 1) + '</kbd><span>' + esc(def.schritte[i].t) + '</span></button>').join('');
+      opt.querySelectorAll('[data-k]').forEach((b) => { b.onclick = () => waehle(+b.dataset.k); });
+    };
+    const fertig = () => { document.removeEventListener('keydown', taste, true); ebeneZu(); ok(); };
+    const waehle = (i) => {
+      if (n >= def.schritte.length) return;
+      if (i !== n) { tipp.hidden = false; tipp.textContent = '💡 ' + (def.schritte[i].tipp || 'Probier einen anderen Schritt zuerst.'); return; }
+      tipp.hidden = true; liste.insertAdjacentHTML('beforeend', '<li>' + esc(def.schritte[i].t) + '</li>'); n++;
+      if (n >= def.schritte.length) { opt.innerHTML = '<p class="ly-ich-gut">So klappt es.</p><button type="button" class="ly-btn ly-primaer" data-a="w">Weiter <kbd>E</kbd></button>'; opt.querySelector('[data-a]').onclick = fertig; return; }
+      zeige();
+    };
+    const taste = (e) => {
+      if (n >= def.schritte.length) { if (e.code === 'KeyE' || e.code === 'Enter') { e.preventDefault(); e.stopPropagation(); fertig(); } return; }
+      if (/^Digit[1-4]$/.test(e.code)) { e.preventDefault(); e.stopPropagation(); const b = opt.querySelectorAll('[data-k]')[+e.code.slice(5) - 1]; if (b) waehle(+b.dataset.k); }
+    };
+    document.addEventListener('keydown', taste, true);
+    zeige();
   });
 
   // Plakat-Arbeit: kurzes Zwischenbild
