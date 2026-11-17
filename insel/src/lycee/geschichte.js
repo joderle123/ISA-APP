@@ -334,10 +334,11 @@ import { SCHRITTE3, GESPRAECHE3, LEUTE3, STAERKEN3 } from './kapitel3.js';
 import { SCHRITTE4, GESPRAECHE4, LEUTE4, STAERKEN4 } from './kapitel4.js';
 import { SCHRITTE5, GESPRAECHE5, STAERKEN5 } from './kapitel5.js';
 import { SCHRITTE6, GESPRAECHE6, STAERKEN6, LEUTE6 } from './kapitel6.js';
-export const KAPITEL = { 1: 'Rentrée', 2: 'Die erste Woche', 3: 'Der Schnuppertag', 4: 'Nein sagen', 5: 'Gerüchte', 6: 'Kleine Schritte' };
+import { SCHRITTE7, GESPRAECHE7 } from './kapitel7.js';
+export const KAPITEL = { 1: 'Rentrée', 2: 'Die erste Woche', 3: 'Der Schnuppertag', 4: 'Nein sagen', 5: 'Gerüchte', 6: 'Kleine Schritte', 7: 'Praktikum' };
 for (const st of SCHRITTE) { st.kap = st.kap || 1; st.tag = st.tag || 'Montag'; }
-SCHRITTE.push(...SCHRITTE2, ...SCHRITTE3, ...SCHRITTE4, ...SCHRITTE5, ...SCHRITTE6);
-Object.assign(GESPRAECHE, GESPRAECHE2, GESPRAECHE3, GESPRAECHE4, GESPRAECHE5, GESPRAECHE6);
+SCHRITTE.push(...SCHRITTE2, ...SCHRITTE3, ...SCHRITTE4, ...SCHRITTE5, ...SCHRITTE6, ...SCHRITTE7);
+Object.assign(GESPRAECHE, GESPRAECHE2, GESPRAECHE3, GESPRAECHE4, GESPRAECHE5, GESPRAECHE6, GESPRAECHE7);
 Object.assign(LEUTE, LEUTE2, LEUTE3, LEUTE4, LEUTE6);
 Object.assign(STAERKEN, STAERKEN2, STAERKEN3, STAERKEN4, STAERKEN5, STAERKEN6);
 

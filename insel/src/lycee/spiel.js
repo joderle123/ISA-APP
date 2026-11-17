@@ -354,6 +354,140 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       if (m.joMacht) return [['hoffmann', 'Schönes Gebäude. Und ihr zwei?'], ['jo', 'Ausgemalt. Und {name} war am Handy.'], ['hoffmann', '{name}. Handy. Auf mein Pult. Bis 16 Uhr.']];
       return [['hoffmann', 'Schönes Gebäude, Jo. Und ihr?'], ['lina', '… ausgemalt.']];
     },
+    // ---------- Kapitel 7: Praktikum ----------
+    k7Platz: () => (S.merke.berufHolz
+      ? [['erzaehler', 'Dein Name: „Werkstatt, M. Becker“. Mit Stern.'], ['noah', 'Wieso hast du schon was? … Ah. Becker.']]
+      : [['erzaehler', 'Dein Name. Daneben: nichts. „Bitte zum SePAS.“'], ['noah', 'Bei mir auch. Wir sind die Reste.']]),
+    k7Jo: () => {
+      const m = S.merke;
+      if (m.berufHolz) return [['jo', 'Werkstatt? Viel Spaß mit der Taucherbrille.']];
+      if (m.joVerpetzt || m.racheJo) return [['jo', 'Mein Onkel sucht noch wen. Garage.'], ['jo', '(schaut dich an) Keinen, der petzt.'], ['noah', '(leise) Mich hat er auch nicht gefragt.']];
+      return [['jo', 'Mein Onkel sucht noch wen. Garage. Reifen schleppen.'],
+        { wahl: [
+          { t: '„Ernsthaft? Ich komm.“', staerke: 'entscheiden', herz: { jo: 1, noah: -1 }, merke: 'garageJo', dann: [['jo', 'Sieben Uhr. Bist du zu spät, bin ich dran.'], ['noah', '(leise) Und ich?']] },
+          { t: '„Frag Noah. Der hat auch nix.“', staerke: 'einbeziehen', herz: { noah: 2 }, merke: 'garageNoah', dann: [['jo', 'Noah? Der hebt keinen Reifen.'], ['noah', 'Doch! … Vielleicht.'], ['jo', '… Okay. Noah.']] },
+          { t: '„Bei dir? Nee, danke.“', herz: { jo: -1 }, dann: [['jo', 'Dann Kantine. Viel Spaß mit Kremer.']] },
+        ] }];
+    },
+    k7Unterschrift: () => {
+      const m = S.merke;
+      if (m.gefaelscht) return [['kaya', 'Hoffmann hat mir deinen Zettel gezeigt. Von neulich.'], ['kaya', 'Die Unterschrift sieht aus wie Noahs Schrift.'], ['erzaehler', 'Noah, an der Tür, wird ganz still.'],
+        { wahl: [
+          { t: '„Die ist echt.“', merke: 'kayaRuftAn', dann: [['kaya', 'Okay. Dann ruf ich kurz zuhause an. Zum Prüfen.']] },
+          { t: '„Hat Noah gemacht. Ich hab ihn gefragt.“', staerke: 'ehrlich', herz: { noah: -1 }, merke: 'faelschungZu', dann: [['kaya', 'Danke. Hoffmann muss ich’s sagen. Nur das.'], ['noah', '(leise) Super. Danke.']] },
+          { t: '„Hat Noah gemacht. Ohne mich zu fragen.“', herz: { noah: -3 }, merke: 'noahGeopfert', dann: [['noah', 'Was?!'], ['kaya', 'Noah. Bleib mal kurz hier.']] },
+          { t: '(Schweigen.)', dann: [['kaya', 'Okay. Donnerstag ist Elternabend. Ich frag dort.']] },
+        ] }];
+      if (m.zettelVerloren) return [['kaya', 'Hoffmann sagt, dein Zettel ist „verloren“.'], ['kaya', 'Der hier geht nicht verloren. Ja?']];
+      if (m.haStress || m.hoffmannReden) return [['kaya', 'Wenn unterschreiben zuhause schwer ist: sag nur das.'], ['kaya', 'Warum, musst du nicht sagen.'],
+        { wahl: [
+          { t: '„Geht schon. Ich bring’s.“', dann: [['kaya', 'Okay.']] },
+          { t: '„Rufen Sie an. Morgens ist es ruhig.“', staerke: 'hilfe', dann: [['kaya', 'Morgens. Notiert.']] },
+        ] }];
+      return [];
+    },
+    k7Garage: () => {
+      const m = S.merke;
+      if (m.berufHolz) return [['kaya', 'Werkstatt. Becker. Morgen 7:30. Nicht 7:35.']];
+      if (m.garageJo) return [['kaya', 'Garage? Der Onkel will dich erst sehen. Samstag.'], ['kaya', 'Diese Woche: Kantine. Oder du findest heute was.']];
+      if (m.garageNoah) return [['kaya', 'Noah, Jos Onkel will dich Samstag sehen.'], ['noah', '(strahlt) Echt?'], ['kaya', '{name}: Bäcker anrufen. Sonst Kantine.']];
+      if (m.berufMenschen) return [['kaya', 'Du wolltest was mit Menschen. Kantine sind viele Menschen.'], ['kaya', 'Ruf vorher noch beim Bäcker an.']];
+      return [['kaya', 'Bei dir ist noch nichts. Ruf heute beim Bäcker an.'], ['kaya', 'Sonst bleibt die Kantine.']];
+    },
+    weberKennt: () => (S.merke.portiWeber ? [['weber', 'Du hast mal Bens Portemonnaie gebracht. Weiß ich noch.']]
+      : S.merke.diebstahlGelogen ? [['weber', '(schaut dich lange an) Ich bleib so lange hier.']] : []),
+    lucaHaube: () => (S.merke.lucaAngelegt || S.merke.lucaGepetzt ? [['luca', '(mit Haube) Kantinen-Polizei. Jetzt in echt.']]
+      : S.merke.lucaBeschuldigt ? [['luca', 'Kenan sagt, du hast mich verdächtigt. Danke auch.']]
+      : [['luca', '(mit Haube) Sag nix. Ich weiß, wie ich aussehe.']]),
+    lucaTeilt: () => (S.merke.lucaWitz
+      ? [['luca', 'Deal. Ich hasse schälen.'], ['erzaehler', 'Zwei Kisten um Viertel vor neun.'], ['kremer', '(nickt nur)']]
+      : [['luca', 'Ich bin seit gestern hier. Ich sag, wer schält.'], ['erzaehler', 'Du schälst. Er schaut zu. Kremer sieht es nicht.']]),
+    kenanBetreuer: () => {
+      const m = S.merke;
+      if (m.kenanVerpfiffen) return [['kenan', 'Ausgerechnet du.'], ['kenan', 'Wegen dir kam ein Brief nach Hause.'],
+        { wahl: [
+          { t: '„Am Tor hätte ich die Klappe halten können.“', staerke: 'ehrlich', herz: { kenan: 1 }, dann: [['kenan', 'Hättest du. … Okay. Brille auf.']] },
+          { t: '„Du hast die Kippe vor mich geworfen.“', staerke: 'klar', dann: [['kenan', '(Pause) … Stimmt.'], ['kenan', 'Trotzdem. Ich zeig’s einmal.']] },
+          { t: '(Nichts sagen. Brille auf.)', dann: [['kenan', 'Bohren. Schrauben. Fertig. Mehr sag ich nicht.']] },
+        ] }];
+      if (m.schuldGenommen || m.kenanSchuldet) return [['kenan', 'Becker sagt, ich bin für dich verantwortlich.'], ['kenan', 'Passt. Ich schulde dir eh was.']];
+      if (m.torWeg) return [['kenan', 'Ah. Tor. Weggerannt. Ich erinnere mich.']];
+      return [['kenan', 'Becker sagt, ich bin für dich verantwortlich. Also: zuhören.']];
+    },
+    quitt: () => (S.merke.kenanVerpfiffen && S.merke.kenanGerettet ? [['kenan', '(leise) Tor und Bohrer. Jetzt sind wir quitt.']]
+      : S.merke.kenanVerpfiffen && S.merke.kenanVerraten2 ? [['kenan', 'Zweimal. Merk ich mir.']] : []),
+    k7Mila: () => {
+      const m = S.merke;
+      const z = [['mila', m.berufHolz ? 'Du hast Sägemehl in den Haaren.' : 'Du riechst nach Zwiebel. Stark.'], ['mila', 'Freitag präsentieren wir zwei. Hat Hoffmann so verteilt.']];
+      if (m.milaVerleugnet) z.push(['mila', 'Keine Sorge. Ich sag allen, wir sind „niemals“ was.'],
+        { wahl: [
+          { t: '„Das in der Kantine war feige.“', staerke: 'ehrlich', herz: { mila: 2 }, merke: 'milaVersoehnt', dann: [['mila', '… Ja. War es.'], ['mila', 'Freitag redest du zuerst.']] },
+          { t: '„Ich frag Hoffmann, ob ich allein darf.“', staerke: 'abstand', herz: { mila: -1 }, merke: 'alleinPraesentieren', dann: [['mila', 'Mach. Ich frag nicht für dich.']] },
+          { t: '„Luca hat genervt. Mehr war nicht.“', herz: { mila: -1 }, dann: [['mila', 'Luca hat nicht „niemals“ gesagt.']] },
+        ] });
+      else if (m.geruechtStehen) z.push(['mila', 'Die fragen immer noch, ob wir … du weißt.'], ['mila', 'Ich sag jetzt einfach ja. Spart Zeit.'],
+        { wahl: [
+          { t: '„Dann sag ich auch ja.“', staerke: 'humor', herz: { mila: 1 }, dann: [['mila', '(lacht. Laut.)']] },
+          { t: '„Lieber nicht. Ernsthaft.“', staerke: 'klar', dann: [['mila', 'Okay. Dann: geht keinen was an.']] },
+        ] });
+      else z.push(['mila', 'Ich mach die Folien. Du redest. Deal?'],
+        { wahl: [
+          { t: '„Deal.“', herz: { mila: 1 }, dann: [] },
+          { t: '„Andersrum. Ich red nicht gern.“', staerke: 'klar', dann: [['mila', 'Ich auch nicht. Dann jeder die Hälfte.']] },
+        ] });
+      return z;
+    },
+    k7Noah: () => {
+      const m = S.merke;
+      if (m.noahGeopfert) return [['erzaehler', 'Noah steht auf, als du kommst. Er geht.']];
+      if (m.beweisDu) return [['noah', 'Der Screenshot von dir. Für Kaya.'], ['noah', 'Ich hab ihn nie geschickt. Sorry.'],
+        { wahl: [
+          { t: '„Weiß ich. Hab’s gemerkt.“', staerke: 'lesen', dann: [['noah', 'Jo hätte sofort gewusst, dass ich’s war.']] },
+          { t: '„Dann schick ihn jetzt.“', staerke: 'klar', dann: [['noah', 'Geht nicht. Jo hat die Gruppe gelöscht.'], ['noah', 'Alles weg. Auch das Bild.']] },
+          { t: '„Feige, Noah.“', herz: { noah: -2 }, dann: [['noah', 'Ja.'], ['erzaehler', 'Er steht auf. Er geht zum Brunnen.']] },
+        ] }];
+      return [['noah', m.garageNoah ? 'Samstag Garage. Ich hab jetzt schon Angst.' : 'Ich hab immer noch nix. Nur Kaya.']];
+    },
+    benKasse: () => {
+      const m = S.merke;
+      if (m.zwanzigGenommen && m.diebstahlGelogen) return [['ben', '(in der Schlange) Echt jetzt? {name} an der Kasse?'], ['kremer', 'Wieso?'],
+        { wahl: [
+          { t: '„Ich hab damals Bens Geld genommen.“', staerke: 'ehrlich', herz: { ben: 1 }, merke: 'diebstahlSpaet', dann: [['kremer', '(lange Pause) Dann heute Tabletts. Morgen sehen wir.'], ['ben', '… Okay. Wenigstens jetzt.']] },
+          { t: '„Ben spinnt. Frag ihn, was er meint.“', herz: { ben: -1 }, merke: 'kasseBeobachtet', dann: [['ben', 'Frag Hoffmann.'], ['kremer', 'Ich zähl heute Abend. Auf den Cent.']] },
+          { t: '(Kremer die Kasse geben. Wortlos.)', staerke: 'abstand', merke: 'keineKasse', dann: [['kremer', 'Hm. Dann Tabletts.']] },
+        ] }];
+      if (m.diebstahlZugegeben) return [['ben', 'An die Kasse? Mutig, Frau Kremer.'], ['kremer', 'Weiß ich. Ist geklärt.'], ['ben', '… Hm.']];
+      if (m.vierGenommen && m.benMisstrauen) return [['ben', '(zu Yusuf, laut genug) Zähl dein Wechselgeld.']];
+      return [['ben', 'Krieg ich Rabatt? … Nein? Okay.']];
+    },
+    lucaKarte: () => {
+      if (S.merke.diebstahlSpaet || S.merke.keineKasse) return [['erzaehler', 'An der Kasse: Luca. Rotes Licht. Karte leer.'], ['kremer', '(leise) Geht heute.'], ['erzaehler', 'Luca sieht, dass du es gesehen hast.']];
+      return [['erzaehler', 'Luca ist dran. Karte drauf. Rotes Licht.'], ['luca', '(leise) Leer. Lass mich durch. Merkt keiner.'],
+        { wahl: [
+          { t: '„Karte leer. Geht nicht.“', staerke: 'klar', herz: { luca: -2 }, dann: [['luca', 'Eine Woche hier und schon Chef.'], ['erzaehler', 'Er stellt das Tablett hin. Und geht.']] },
+          { t: '(Durchwinken.)', herz: { luca: 2 }, merke: 'lucaDurch', dann: [['luca', '(nickt. Sagt nichts.)'], ['erzaehler', 'Keiner hat’s gesehen. Glaubst du.']] },
+          { t: '„Frau Kremer? Lucas Karte ist leer.“', staerke: 'hilfe', herz: { luca: -1, kremer: 1 }, dann: [['kremer', '(leise) Geht heute. Sag zuhause Bescheid.'], ['luca', '(rot) Musst du das so laut sagen?']] },
+          { t: '(Zwei Euro aus deiner Tasche drauflegen.)', staerke: 'loyal', herz: { luca: 1 }, merke: 'lucaBezahlt', dann: [['luca', 'Was soll das? … Okay. Danke.'], ['erzaehler', 'Zwei Euro weg. Deine.']] },
+        ] }];
+    },
+    k7Bogen: () => {
+      const m = S.merke;
+      if (m.berufHolz) return [['erzaehler', m.kenanGerettet ? 'Becker: „Pünktlich. Der Bohrer? Glaub ich nicht ganz.“' : 'Becker: „Pünktlich. Tempo üben.“']];
+      return [['erzaehler', m.lucaDurch ? 'Kremer: „Fleißig. Kasse: ein Essen fehlt. Wir reden.“'
+        : m.diebstahlSpaet ? 'Kremer: „Spüle gut. Kasse später.“' : 'Kremer: „Zack, zack. Geht doch.“']];
+    },
+    k7Folgen: () => {
+      const m = S.merke, z = [];
+      if (m.garageNoah) z.push(['noah', 'Jos Onkel nimmt mich. Ab nächstem Monat.'], ['noah', 'Wegen dir. Weißt du, oder?']);
+      if (m.garageJo) z.push(['jo', 'Samstag, sieben Uhr. Mein Onkel wartet nicht.']);
+      if (m.noahGeopfert) z.push(['erzaehler', 'Noah setzt sich ganz vorne hin. Neben den Fahrer.']);
+      if (m.kayaRuftAn) z.push(['erzaehler', 'Dein Handy: drei verpasste Anrufe. Von zuhause.']);
+      if (m.milaVersoehnt) z.push(['mila', 'Präsentation war okay. Du hast zu schnell geredet.']);
+      else if (m.alleinPraesentieren) z.push(['erzaehler', 'Mila steigt hinten ein. Ohne zu schauen.']);
+      if (m.kenanGerettet && m.kenanVerpfiffen) z.push(['kenan', '(im Vorbeigehen) Quitt.']);
+      if (!z.length) z.push(['noah', 'Erste Arbeitswoche. Ich bin so müde.']);
+      return z;
+    },
     // ---------- Kapitel 6: kleine Schritte ----------
     torCheck: async () => { const v = await ui.skala({ frage: 'Wie stark ist es gerade?', links: 'ganz ruhig', rechts: 'sehr stark' }); S.merke.torWert = v; sichern(); },
     kayaStart: () => (S.merke.torHeim ? [['kaya', 'Gestern warst du nicht da. Kein Verhör.'], ['kaya', 'Bauch?'], { wahl: [{ t: '(Nicken.)', dann: [] }, { t: '„Geht schon.“', dann: [['kaya', 'Okay.']] }] }]
@@ -452,7 +586,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       S.kapitelFertig = Math.max(S.kapitelFertig || 0, kap);
       if (weiterIdx < 0) S.fertig = true;
       sichern();
-      const wahl = await ui.ende({ ...bilanz(), kap, ueberschrift: ({ 1: 'Dein erster Tag', 2: 'Deine erste Woche', 3: 'Dein Schnuppertag', 4: 'Deine dritte Woche', 5: 'Deine vierte Woche', 6: 'Deine fünfte Woche' })[kap] || KAPITEL[kap],
+      const wahl = await ui.ende({ ...bilanz(), kap, ueberschrift: ({ 1: 'Dein erster Tag', 2: 'Deine erste Woche', 3: 'Dein Schnuppertag', 4: 'Deine dritte Woche', 5: 'Deine vierte Woche', 6: 'Deine fünfte Woche', 7: 'Deine erste Arbeitswoche' })[kap] || KAPITEL[kap],
         weiter: weiterIdx >= 0 ? 'Weiter: Kapitel ' + (kap + 1) + ' „' + KAPITEL[kap + 1] + '“' : '' });
       if (wahl === 'weiter') danach = () => starteSchritt(weiterIdx, true);
       else if (wahl === 'neu') { S.fertig = false; danach = () => starteSchritt(startIdx, true); }
@@ -813,11 +947,11 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   function mutprobe(def) {
     return new Promise((ok) => {
       ui.dialogZu(); input.setEnabled(true); steuerung.frei = true; steuerung.fokus = null;
-      probe = { ...def, t: 0, verlauf: [], ok, gesagt: 0, uiT: 0 };
+      probe = { ...def, t: 0, t0: performance.now(), verlauf: [], ok, gesagt: 0, uiT: 0 };
     });
   }
   function probeSchritt(dt, p) {
-    const pr = probe; pr.t += dt * mutTempo;
+    const pr = probe; pr.t = (performance.now() - pr.t0) / 1000 * mutTempo;   // Echtzeit: auf langsamen Geräten nicht länger
     const f = Math.min(1, pr.t / pr.dauer), hoch = pr.start * 2, tief = Math.max(1, hoch * 0.45);
     const wert = Math.max(0, Math.min(10, f < 0.2 ? hoch + 1.2 * Math.sin(f / 0.2 * Math.PI / 2) : tief + (hoch + 1.2 - tief) * Math.exp(-(f - 0.2) * 4.2)));
     const s = pr.saetze && pr.saetze[pr.gesagt];

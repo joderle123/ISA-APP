@@ -40,6 +40,11 @@ alles zusammenpasst.
   und nachher) · Drangenommen: Erstarren, „Gleich“, Karte, Klo – jede Wahl mit echter Folge · Test mit viel Rot und dem
   „Kritiker“ · Freitag: eigene Stufe (Bäcker oder Kantine) oder ehrlich „heute keine“ · Wochenrückblick vorher/nachher.
   Ansätze: gestufte Exposition, kognitive Umstrukturierung, nonverbales Hilfesignal, Selbstbeobachtung, feste Bezugsperson.
+- **Kapitel 7 „Praktikum“** (kapitel7.js, Entwurf der zweiten Jugend-Kritik): Praktikumsliste · drei Unterschriften bei
+  Herrn Kaya (gefälschte Unterschrift von früher kommt zurück; „Warum, musst du nicht sagen“) · zwei Wege: Werkstatt bei
+  Meister Becker mit Kenan als Betreuer (falsches Loch: wer nimmt es auf sich?) oder Anruf beim Bäcker (Absage), dann
+  Kantine bei Frau Kremer (Zwiebeln mit Luca, Kasse: Lucas Karte ist leer) · Bewertungsbogen am Freitag. Viele frühere
+  Entscheidungen kommen zurück (Portemonnaie, Kenan am Tor, Gerücht mit Mila, Screenshot, Garage bei Jos Onkel).
 - **„Kurz raus“ (⏸ / P):** jederzeit (außer mitten im Gespräch, aber während einer Mutprobe): Atmen oder 5-4-3-2-1.
 - **Zweite Jugend-Kritik (17.11.2026, Schnitt 3,2):** Logikfehler behoben (Mila im Klassenrat, Folgen zu früh gefragt,
   Weggehen bei Mila, Kenan am Bus, Hoffmann und „Zuhause“, Bens Schulden, Nudeln, unsichtbare Sprecher, männliche
@@ -68,4 +73,4 @@ Sitzen) · `steuerung.js` Laufen und Kamera · `geschichte.js` Kapitel, Gespräc
 `ui.js` Oberfläche · `spiel.js` Kern · `main.js`, `shell.html`, `stil.css`.
 
 ## Nächste Schritte
-Kapitel 7 „Praktikum“ (Vorschlag der zweiten Kritik, nutzt viele alte Folgen); 15 Szenen aus der zweiten Kritik neu schreiben; Phase 2 ausbauen (Aufgaben aus dem Hub, mehr Lernmomente); Phase 3 (Werkstatt: Arbeitssimulator DAP/CCP).
+15 Szenen aus der zweiten Kritik neu schreiben; Phase 2 ausbauen (Aufgaben aus dem Hub, mehr Lernmomente); Phase 3 (Werkstatt: Arbeitssimulator DAP/CCP).
