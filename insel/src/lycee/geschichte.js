@@ -355,4 +355,4 @@ Object.assign(LEUTE, LEUTE2, LEUTE3, LEUTE4, LEUTE6);
 Object.assign(STAERKEN, STAERKEN2, STAERKEN3, STAERKEN4, STAERKEN5, STAERKEN6);
 
 // Sprecher-Namen und Farben (Erzähler, du)
-export const SPRECHER = { erzaehler: { name: '', farbe: '#5b6472' }, du: { name: 'Du', farbe: '#2b3a55' }, kopf: { name: 'Dein Kopf', farbe: '#7d8796' }, kritiker: { name: 'Der Kritiker', farbe: '#a34a4a' } };
+export const SPRECHER = { erzaehler: { name: '', farbe: '#5b6472' }, du: { name: 'Du', farbe: '#2b3a55' }, kopf: { name: 'Dein Kopf', farbe: '#7d8796' }, kritiker: { name: 'Die fiese Stimme', farbe: '#a34a4a' } };
