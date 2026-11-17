@@ -295,3 +295,6 @@ kbd { display: inline-block; min-width: 1.5em; padding: 0 .35em; margin-right: .
 .ly-fr-kreis { margin: 0 0 12px; padding: 10px 14px; border-radius: 14px; background: #fff3f0; font-size: 14px; }
 .ly-fr-kreis p { margin: 4px 0 0; }
 .ly-e-brief { margin: 4px 0 12px; padding: 10px 14px; border-radius: 14px; background: #e9f6f4; font-size: 15px; }
+.ly-bw-faecher { display: flex; gap: 8px; margin: 2px 0 6px; }
+.ly-bw-faecher button { padding: 8px 18px; border-radius: 999px; border: 1px solid var(--rand); background: #fff; font: inherit; font-weight: 800; cursor: pointer; }
+.ly-bw-faecher button.an { background: var(--ink); color: #fff; }

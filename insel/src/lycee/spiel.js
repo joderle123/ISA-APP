@@ -17,6 +17,7 @@ import { ladePerson, namensschild, SITZ } from './figuren.js';
 import { fussSchatten } from './texturen.js';
 import { createInteraktionen } from './interaktion.js';
 import { FAEDEN } from './faeden.js';
+import { DEUTSCH, deutschBlatt } from './deutsch.js';
 import { CHARAKTER, GLEICHALTRIGE, GRUSS, GRUENDE, nachricht, profil, stufe } from './freunde.js';
 import { BLAETTER } from './blaetter.js';
 import { MATHE, matheBlatt } from './mathe.js';
@@ -124,12 +125,27 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
 
   // ---------- Menschen ----------
   const leute = {};   // id → { def, f, pos, yaw, haltung, schild, ziel }
+  // Erkennungszeichen: jede Figur trägt etwas, das zu ihr passt (Charakter auf einen Blick)
+  function zubehoer(f, id) {
+    const knochen = (...namen) => { let k = null; f.group.traverse((o) => { if (!k && o.isBone && namen.includes(o.name)) k = o; }); return k; };
+    const an = (k, mesh, x, y, z) => { if (!k) return; k.updateMatrixWorld(true); const sk = new THREE.Vector3(); k.getWorldScale(sk); mesh.scale.multiplyScalar(1 / (sk.x || 1)); mesh.position.set(x / (sk.x || 1), y / (sk.x || 1), z / (sk.x || 1)); k.add(mesh); };
+    const lam = (c) => new THREE.MeshLambertMaterial({ color: c });
+    const links = knochen('Wrist.L', 'Hand.L'), rechts = knochen('Wrist.R', 'Hand.R'), hals = knochen('Neck', 'Head');
+    if (id === 'mila') { const w = new THREE.Mesh(new THREE.BoxGeometry(0.055, 0.055, 0.055), ['#e85d75', '#ffd166', '#3fa66b', '#4f88c8', '#ffffff', '#f28c38'].map(lam)); w.rotation.set(0.4, 0.6, 0); an(links, w, -0.03, 0.08, 0.03); }
+    if (id === 'lina') { const b = new THREE.Mesh(new THREE.BoxGeometry(0.2, 0.018, 0.26), [lam('#2b2b33'), lam('#2b2b33'), lam('#f4f1ea'), lam('#f4f1ea'), lam('#9b7bc8'), lam('#9b7bc8')]); b.rotation.z = Math.PI / 2; an(links, b, -0.02, 0.1, 0.06); }
+    if (id === 'chiara') { const b = new THREE.Mesh(new THREE.BoxGeometry(0.17, 0.03, 0.23), lam('#2f6db0')); b.rotation.z = Math.PI / 2; an(links, b, -0.02, 0.1, 0.05); }
+    if (id === 'ben') { const ball = new THREE.Mesh(new THREE.SphereGeometry(0.12, 16, 12), lam('#e07b39')); an(rechts, ball, 0.04, 0.14, 0.06); }
+    if (id === 'dario') { const h = new THREE.Mesh(new THREE.BoxGeometry(0.07, 0.14, 0.012), lam('#2b2b33')); an(rechts, h, 0.02, 0.09, 0.04); }
+    if (id === 'ayla' && hals) { const g = new THREE.Group(); const bg = new THREE.Mesh(new THREE.TorusGeometry(0.11, 0.016, 8, 20, Math.PI), lam('#2b2b33')); bg.rotation.x = -Math.PI / 2; g.add(bg);
+      for (const sx of [-0.11, 0.11]) { const m = new THREE.Mesh(new THREE.CylinderGeometry(0.045, 0.045, 0.035, 14), lam('#e85d75')); m.rotation.z = Math.PI / 2; m.position.x = sx; g.add(m); } an(hals, g, 0, hals.name === 'Neck' ? 0.02 : -0.12, 0.04); }
+  }
   async function person(id) {
     if (leute[id]) return leute[id];
     const def = LEUTE[id];
     const f = await ladePerson(veil, def);
     const schild = namensschild(def.name, def.farbe); f.group.add(schild); f.group.add(fussSchatten());
     scene.add(f.group);
+    zubehoer(f, id);
     const p = { id, def, f, pos: new THREE.Vector3(), yaw: 0, haltung: '', schild, dreh: 0 };
     f.spiele('Idle');
     leute[id] = p;
@@ -1200,20 +1216,23 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       else if (art === 'platsch') rausch(0, 0.35, 0.2);
     } catch (e) { /* kein Ton – egal */ }
   }
+  // Fächer am eigenen Platz: Mathe (mathe.js) und Deutsch (deutsch.js), je Modul Blätter mit Erklärung und neuen Aufgaben
+  const FAECHER = { mathe: { name: 'Mathe', module: MATHE, blatt: matheBlatt }, deutsch: { name: 'Deutsch', module: DEUTSCH, blatt: deutschBlatt } };
+  const fachStand = (id) => { if (id === 'mathe') return (S.mathe = S.mathe || { modul: 1, stand: {} }); S.fach = S.fach || {}; return (S.fach[id] = S.fach[id] || { modul: 1, stand: {} }); };
   async function blattWahl() {
     S.blaetter = S.blaetter || {};
-    S.mathe = S.mathe || { modul: 1, stand: {} };
     const w = await ui.blattWahl({ blaetter: BLAETTER, stand: S.blaetter, lehrer: paket && paket.eigen ? { titel: paket.titel } : null,
-      mathe: { module: MATHE, modul: S.mathe.modul, stand: S.mathe.stand } });
+      faecher: Object.entries(FAECHER).map(([id, f]) => ({ id, name: f.name, module: f.module, modul: fachStand(id).modul, stand: fachStand(id).stand })), fach: S.letztesFach || 'mathe' });
     if (w === 'nix') return;
-    if (w.startsWith('mathe:')) {   // Mathe-Modul: Blatt mit Erklärung, immer neue Zahlen
-      const [, nr, id] = w.split(':'); S.mathe.modul = +nr;
+    const fid = w.split(':')[0];
+    if (FAECHER[fid]) {   // Modul-Blatt: Erklärung, immer neue Aufgaben
+      const [, nr, id] = w.split(':'), fs = fachStand(fid); fs.modul = +nr; S.letztesFach = fid;
       for (let runde = 0; runde < 20; runde++) {
-        const b = matheBlatt(+nr, id, Date.now() + runde * 977); if (!b) return;
+        const b = FAECHER[fid].blatt(+nr, id, Date.now() + runde * 977); if (!b) return;
         const st = SCHRITTE[S.schritt];
         const r = await ui.arbeitsblatt({ blatt: b, name: S.name, datum: st ? st.tag : '', neu: true });
-        const alt = S.mathe.stand[id] || { richtig: 0, gesamt: r.gesamt, mal: 0 };
-        S.mathe.stand[id] = { richtig: Math.max(alt.richtig, r.richtig), gesamt: r.gesamt, mal: (alt.mal || 0) + 1 };
+        const alt = fs.stand[id] || { richtig: 0, gesamt: r.gesamt, mal: 0 };
+        fs.stand[id] = { richtig: Math.max(alt.richtig, r.richtig), gesamt: r.gesamt, mal: (alt.mal || 0) + 1 };
         if (r.richtig === r.gesamt) staerke('dranbleiben');
         sichern();
         if (!r.neu) break;

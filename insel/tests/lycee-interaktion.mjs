@@ -97,6 +97,20 @@ await page.click('[data-a="neu"]'); await page.waitForFunction((alt) => document
 check('„Neue Zahlen“: frisches Blatt', true);
 await page.click('[data-a="weg"]');
 check('Mathe-Fortschritt gespeichert (Modul 4)', (await L(() => LYCEE.zustand.mathe.modul)) === 4 && (await L(() => LYCEE.zustand.mathe.stand['m4-rueckgeld'].richtig)) === mf.length);
+// Deutsch: Fach wechseln, neun Module, Blatt „der, die oder das?“ mit Auswahl-Knöpfen
+await page.waitForFunction(() => !LYCEE.imGespraech);
+await geheZu({ tu: 'arbeiten', near: [-22.1, -24.4] }); await page.waitForFunction(() => LYCEE.iaNah === 'arbeiten', null, { timeout: 30000 }).catch(() => {}); await page.keyboard.press('KeyE');
+await page.waitForSelector('.ly-k-blattwahl');
+await page.click('.ly-bw-faecher [data-fach="deutsch"]');
+check('Deutsch: neun Module zur Wahl', (await page.$$eval('.ly-bw-module [data-m]', (l) => l.length)) === 9);
+await page.click('.ly-bw-module [data-m="3"]');
+await page.click('.ly-bw-liste [data-b="deutsch:3:d3-artikel"]'); await page.waitForSelector('.ly-ab-erkl');
+check('Deutsch-Blatt: 8 Aufgaben mit der/die/das', (await page.$$eval('.ly-ab-liste li', (l) => l.length)) === 8 && (await page.$$eval('.ly-ab-liste li [data-w="das"]', (l) => l.length)) === 8);
+await bild('i8-deutsch');
+await page.click('[data-a="weg"]');
+await page.waitForFunction(() => !LYCEE.imGespraech);
+check('Deutsch-Fortschritt im Spielstand (Modul 3)', (await L(() => LYCEE.zustand.fach.deutsch.modul)) === 3);
+
 // Gesprächsfaden: Ben mag dich (2 Herzen) → beim Ansprechen ein tieferes Gespräch; danach im selben Abschnitt nur Plaudern
 await page.waitForFunction(() => !LYCEE.imGespraech);
 await L(() => { LYCEE.zustand.herz.ben = 2; LYCEE.rede('ben'); });

@@ -596,25 +596,27 @@ export function createUI({ root, input, speech }) {
 
   // ---------- Arbeitsblatt am eigenen Platz (Aufgaben aus den Kernkompetenz-Blättern der Toolbox) ----------
   // Wahl: welches Blatt? (mit Fortschritt) – eigene Aufgaben der Lehrperson zuerst
-  ui.blattWahl = ({ blaetter, stand = {}, lehrer = null, mathe = null }) => new Promise((ok) => {
+  ui.blattWahl = ({ blaetter, stand = {}, lehrer = null, faecher = [], fach = 'mathe' }) => new Promise((ok) => {
     const k = ebeneAuf('blattwahl', '<button type="button" class="ly-zu" aria-label="Schließen">✕</button><div class="ly-t-kicker">Dein Platz</div><h2>Was machst du?</h2><div class="ly-bw-liste"></div>');
     const liste = k.querySelector('.ly-bw-liste');
     const knopf = (wert, titel, unter, fertig) => '<button type="button" data-b="' + esc(wert) + '"><b>' + esc(titel) + '</b><small>' + esc(unter) + '</small>' + (fertig ? '<i class="' + (fertig.richtig === fertig.gesamt ? 'voll' : '') + '">' + fertig.richtig + '/' + fertig.gesamt + '</i>' : '') + '</button>';
-    let modul = mathe ? mathe.modul : 1;
+    let f = faecher.find((x) => x.id === fach) || faecher[0], modul = f ? f.modul : 1;
     const zeige = () => {
       let h = '';
       if (lehrer) h += '<h3 class="ly-bw-h">Von deiner Lehrperson</h3>' + knopf('lehrer', lehrer.titel, 'Aufgaben aus dem Unterricht', null);
-      if (mathe) {
-        const m = mathe.module.find((x) => x.nr === modul);
-        h += '<h3 class="ly-bw-h">Mathe – in welchem Modul bist du?</h3><div class="ly-bw-module">' + mathe.module.map((x) => '<button type="button" data-m="' + x.nr + '" class="' + (x.nr === modul ? 'an' : '') + '">' + x.nr + '</button>').join('') + '</div>' +
+      if (f) {
+        const m = f.module.find((x) => x.nr === modul) || f.module[0];
+        h += '<div class="ly-bw-faecher">' + faecher.map((x) => '<button type="button" data-fach="' + x.id + '" class="' + (x === f ? 'an' : '') + '">' + esc(x.name) + '</button>').join('') + '</div>' +
+          '<h3 class="ly-bw-h">' + esc(f.name) + ' – in welchem Modul bist du?</h3><div class="ly-bw-module">' + f.module.map((x) => '<button type="button" data-m="' + x.nr + '" class="' + (x.nr === m.nr ? 'an' : '') + '">' + x.nr + '</button>').join('') + '</div>' +
           '<p class="ly-bw-ziel"><b>Modul ' + m.nr + ': ' + esc(m.titel) + '</b> · ' + esc(m.ziele.join(' · ')) + '</p>' +
-          m.blaetter.map((b) => knopf('mathe:' + m.nr + ':' + b.id, b.titel, 'Mit Erklärung · neue Zahlen bei jedem Mal', (mathe.stand || {})[b.id])).join('');
+          m.blaetter.map((b) => knopf(f.id + ':' + m.nr + ':' + b.id, b.titel, f.id === 'mathe' ? 'Mit Erklärung · neue Zahlen bei jedem Mal' : 'Mit Erklärung · neue Aufgaben bei jedem Mal', (f.stand || {})[b.id])).join('');
       }
       h += '<h3 class="ly-bw-h">Kernkompetenzen (Toolbox)</h3>' + blaetter.map((b) => knopf(b.id, b.modul + ' · ' + b.titel, b.aufgaben.length + ' Aufgaben', stand[b.id])).join('');
       h += knopf('nix', 'Nur sitzen', 'Kurz durchatmen. Niemand will was.', null);
       liste.innerHTML = h;
       liste.querySelectorAll('[data-b]').forEach((b) => { b.onclick = () => fertig(b.dataset.b); });
       liste.querySelectorAll('[data-m]').forEach((b) => { b.onclick = () => { modul = +b.dataset.m; zeige(); }; });
+      liste.querySelectorAll('[data-fach]').forEach((b) => { b.onclick = () => { f = faecher.find((x) => x.id === b.dataset.fach); modul = f.modul; zeige(); }; });
     };
     const fertig = (w) => { document.removeEventListener('keydown', taste, true); ebeneZu(); ok(w === 'nix' ? 'nix' : w + (w.startsWith('mathe:') ? '' : '')); };
     const taste = (e) => { if (e.code === 'Escape') { e.preventDefault(); e.stopPropagation(); fertig('nix'); } };
@@ -640,7 +642,7 @@ export function createUI({ root, input, speech }) {
       (blatt.info && blatt.info.length ? '<div class="ly-ab-merke"><b>Merke</b>' + blatt.info.map((p) => '<span>' + esc(p) + '</span>').join('') + '</div>' : '') +
       (fragen.length ? '<p class="ly-ab-frage">' + esc(fragen.join(' · ')) + '</p>' : '') +
       '<ol class="ly-ab-liste">' + aufg.map(zeile).join('') + '</ol>' +
-      '<div class="ly-ab-fuss"><span class="ly-ab-stand"></span><button type="button" class="ly-btn" data-a="weg">Weglegen</button>' + (neu ? '<button type="button" class="ly-btn" data-a="neu">Neue Zahlen</button>' : '') + '<button type="button" class="ly-btn ly-primaer" data-a="pruefen">Prüfen</button></div></div>');
+      '<div class="ly-ab-fuss"><span class="ly-ab-stand"></span><button type="button" class="ly-btn" data-a="weg">Weglegen</button>' + (neu ? '<button type="button" class="ly-btn" data-a="neu">' + (/^Mathe/.test(blatt.modul || '') ? 'Neue Zahlen' : 'Neue Aufgaben') + '</button>' : '') + '<button type="button" class="ly-btn ly-primaer" data-a="pruefen">Prüfen</button></div></div>');
     const stand = k.querySelector('.ly-ab-stand');
     k.querySelectorAll('.ly-ab-wahl').forEach((w) => w.querySelectorAll('[data-w]').forEach((b) => { b.onclick = () => { const z = w.parentNode.querySelector('.ly-ab-zeichen'); z.textContent = b.dataset.w; z.dataset.z = b.dataset.w; w.querySelectorAll('[data-w]').forEach((x) => x.classList.toggle('an', x === b)); }; }));
     const norm = (v) => String(v || '').trim().replace(/\s/g, '').replace('.', ',');
