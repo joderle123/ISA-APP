@@ -6,6 +6,7 @@
 import * as THREE from 'three';
 import { pflaster, rasen, asphalt, flaeche, fliesen as fliesenTex, dielen } from './texturen.js';
 import { baueCampus, baueCampus2, ORTE_CAMPUS, ORTE_CAMPUS2 } from './campus.js';
+import { baueDetails } from './details.js';
 
 export const DECKE = 3.6;            // Deckenhöhe innen
 const HAUS_H = 8.6;                 // Außenwand Haupthaus (zwei Stockwerke)
@@ -485,6 +486,8 @@ export function baueWelt({ material, materialInnen }) {
   baueCampus2({ B, P, R, schilder, C, schild, stuhl, D: 0.35, TUER_H,
     boden: (x0, x1, z0, z1, art) => boeden.push(art === 'pflaster' ? { x0, x1, z0, z1, pflaster: true } : art === 'holz' ? { x0, x1, z0, z1, holz: true } : { x0, x1, z0, z1, c1: new THREE.Color(art.c1), c2: new THREE.Color(art.c2), s: art.s || 1.2 }),
     extra: (m) => extras.push(m) });
+  // Details und Atmosphäre: Plakate, Kreide, Uhren, Ranzen, Lampen, Kübel mit Bäumen, Kontaktschatten (details.js)
+  baueDetails({ B, P, schilder, C, uhrTextur, raeume, plaetze, DECKE, extra: (m) => extras.push(m) });
 
   // Netze zusammenfassen: fest (wirft Schatten), innen (Innenausbau, Böden, kein Schatten), glas
   for (const [art, mat] of [['fest', material], ['innen', materialInnen || material], ['glas', null], ['licht', new THREE.MeshBasicMaterial({ vertexColors: true, toneMapped: false })]]) {

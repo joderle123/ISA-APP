@@ -175,6 +175,16 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     { modell: 'menschen', stil: 'Worker', haut: '#d8a982', haar: '#3a2a1c', oben: '#5f8fc8', unten: '#2d3748', schuhe: '#f2f2f2', hoehe: 1.75, steht: [15.6, 10.6, -2.4, 'handy'] },
     { modell: 'frauen', stil: 'Formal', haut: '#c68e64', haar: '#2b1d14', oben: '#3fa66b', unten: '#3a3f4b', schuhe: '#ffffff', hoehe: 1.6, steht: [6, 23.6, 0, 'sitzt'] },
     { modell: 'menschen', stil: 'Farmer', haut: '#f1c7a2', haar: '#d9b36a', oben: '#e9c46a', unten: '#4f88c8', schuhe: '#ffffff', hoehe: 1.7, steht: [6, 24.6, 0, 'handy'] },
+    // Mehr Leben auf dem Hof (Details 17.11.): Dreiergruppe am Brunnen, zwei an der Tischtennisplatte, eine auf dem Kübelrand, ein Rundgang
+    { modell: 'frauen', stil: 'Casual', haut: '#8d5a3b', haar: '#1b1410', oben: '#2fb8a8', unten: '#2d3748', schuhe: '#ffffff', hoehe: 1.61, steht: [-14.0, 21.2, 0.52, 'redet'] },
+    { modell: 'menschen', stil: 'Casual2', haut: '#f1c7a2', haar: '#6b4e3a', oben: '#e85d75', unten: '#3a3f4b', schuhe: '#2b2b2b', hoehe: 1.73, steht: [-12.9, 21.9, -1.57, 'handy'] },
+    { modell: 'frauen', stil: 'Adventurer', haut: '#e0b48c', haar: '#c9a15a', oben: '#4f88c8', unten: '#3a3f4b', schuhe: '#f2f2f2', hoehe: 1.64, steht: [-13.9, 22.6, 2.74, 'redet'] },
+    { modell: 'menschen', stil: 'Beach', haut: '#c68e64', haar: '#1b1410', oben: '#ffd166', unten: '#2d3748', schuhe: '#ffffff', hoehe: 1.69, steht: [-20, 29.9, 0, 'redet'] },
+    { modell: 'menschen', stil: 'Casual', haut: '#e8bf9a', haar: '#2b1d14', oben: '#3fa66b', unten: '#4a4f5c', schuhe: '#f2f2f2', hoehe: 1.75, kopf: 'cap', kopfFarbe: '#d9523c', steht: [-20, 34.1, Math.PI, 'redet'] },
+    { modell: 'frauen', stil: 'Formal', haut: '#f3d2b5', haar: '#5a3a24', oben: '#9b7bc8', unten: '#2b2b33', schuhe: '#2b2b2b', hoehe: 1.6, steht: [5.6, 18.62, 0, 'sitzt'] },
+    { modell: 'menschen', stil: 'Worker', haut: '#9b6a45', haar: '#1b1410', oben: '#d9693f', unten: '#2d3748', schuhe: '#ffffff', hoehe: 1.71, weg: [[-30, 20], [-6, 32], [10, 32], [-30, 20]], tempo: 1.1 },
+    // Halle: liest an der Pinnwand
+    { modell: 'frauen', stil: 'Casual', haut: '#c99a72', haar: '#2b1d14', oben: '#e9c46a', unten: '#3a3f4b', schuhe: '#f2f2f2', hoehe: 1.62, steht: [-6.7, -12.4, -Math.PI / 2, 'handy'] },
   ];
   let brett = null;
   async function statistenLaden() {
