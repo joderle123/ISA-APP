@@ -169,7 +169,10 @@ export const MATHE_MODUL_3: Modul = {
   ],
 }
 
-export const MODULE: Modul[] = [MATHE_MODUL_2, MATHE_MODUL_3]
+// Deutsch und Französisch (Voie de préparation, Modul 1–9): erzeugt von tools/sprachen/baue.mjs
+import SPRACH_MODULE from './module-sprachen.json'
+
+export const MODULE: Modul[] = [MATHE_MODUL_2, MATHE_MODUL_3, ...(SPRACH_MODULE as Modul[])]
 
 /** Anzahl der Lektionen (Blätter) eines Moduls */
 export function lektionenZahl(modul: Modul): number {

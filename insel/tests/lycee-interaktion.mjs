@@ -111,6 +111,34 @@ await page.click('[data-a="weg"]');
 await page.waitForFunction(() => !LYCEE.imGespraech);
 check('Deutsch-Fortschritt im Spielstand (Modul 3)', (await L(() => LYCEE.zustand.fach.deutsch.modul)) === 3);
 
+// Unterricht: Deutsch Modul 1, Lektion 1 „Das bin ich“ – Tafelkarte, Rollenspiel (einmal falsch, dann richtig), Übungsblatt, Lernkarte
+await geheZu({ tu: 'arbeiten', near: [-22.1, -24.4] }); await page.waitForFunction(() => LYCEE.iaNah === 'arbeiten', null, { timeout: 30000 }).catch(() => {}); await page.keyboard.press('KeyE');
+await page.waitForSelector('.ly-k-blattwahl');
+await page.click('.ly-bw-faecher [data-fach="deutsch"]'); await page.click('.ly-bw-module [data-m="1"]');
+check('Deutsch Modul 1: acht Lektionen zur Wahl', (await page.$$eval('.ly-bw-liste [data-b^="lektion:deutsch:1:"]', (l) => l.length)) === 8);
+await page.click('[data-b="lektion:deutsch:1:de-m1-das-bin-ich"]');
+const lek = await L(() => LYCEE.daten.LEKTIONEN.deutsch[0].lektionen[0]);
+let tafel = false, falsch = false, blattOk = false;
+for (let i = 0; i < 80 && await L(() => LYCEE.imGespraech); i++) {
+  if (await page.isVisible('.ly-k-merke')) { tafel = true; await bild('i9-tafel'); await page.click('.ly-k-merke [data-a="ok"]'); }
+  else if (await page.isVisible('.ly-ab-papier')) {
+    const texte = await page.$$eval('.ly-ab-liste li .ly-ab-t', (l) => l.map((x) => x.textContent));
+    const felder = await page.$$('.ly-ab-liste input');
+    for (let k = 0; k < texte.length; k++) { const u = lek.uebung.find((x) => x[0].replace(/___/g, '') === texte[k]); if (u && felder[k]) await felder[k].fill(u[1]); }
+    await page.waitForTimeout(200); await page.click('[data-a="pruefen"]');
+    blattOk = /alles richtig/.test(await page.textContent('.ly-ab-stand')); await bild('i10-lektion-blatt');
+    await page.click('[data-a="weg"]');
+  } else if (await page.isVisible('.ly-d-optionen button')) {
+    const frage = await page.textContent('.ly-dialog .ly-d-text');
+    const r = lek.rolle.find((x) => frage.includes(x.sagt.replace('{name}', 'Sam')));
+    if (r && !falsch) { falsch = true; await page.click('.ly-d-optionen button[data-i="' + ((r.richtig + 1) % r.optionen.length) + '"]'); }
+    else await page.click('.ly-d-optionen button[data-i="' + (r ? r.richtig : 0) + '"]');
+  } else await page.keyboard.press('KeyE');
+  await page.waitForTimeout(200);
+}
+check('Lektion: Tafelkarte gezeigt, Fehler korrigiert, Übungsblatt alles richtig', tafel && falsch && blattOk, [tafel, falsch, blattOk]);
+check('Lektion gespeichert, Lernkarte im Journal', (await L(() => (LYCEE.zustand.lektionen || {})['de-m1-das-bin-ich']?.richtig)) === 8 && (await L(() => (LYCEE.zustand.lernkarten || []).some((k) => k.startsWith('Das bin ich')))), await L(() => [LYCEE.zustand.lektionen, LYCEE.zustand.lernkarten]));
+
 // Gesprächsfaden: Ben mag dich (2 Herzen) → beim Ansprechen ein tieferes Gespräch; danach im selben Abschnitt nur Plaudern
 await page.waitForFunction(() => !LYCEE.imGespraech);
 await L(() => { LYCEE.zustand.herz.ben = 2; LYCEE.rede('ben'); });

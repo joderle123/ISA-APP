@@ -1,0 +1,227 @@
+[
+ {
+  "id": "deutsch-m1",
+  "nr": 1,
+  "bereich": "deutsch",
+  "fach": {
+   "de": "Deutsch",
+   "fr": "Allemand"
+  },
+  "klasse": "VP",
+  "titel": {
+   "de": "Ich und die anderen",
+   "fr": "Moi et les autres"
+  },
+  "untertitel": {
+   "de": "8 Lektionen mit Regel, Beispiel und Übungen in drei Stufen – sich vorstellen, fragen, verabreden, Wege finden.",
+   "fr": "8 leçons avec règle, exemple et exercices sur trois niveaux – se présenter, poser des questions, se donner rendez-vous, trouver son chemin."
+  },
+  "themen": [
+   {
+    "titel": {
+     "de": "Ich und die anderen",
+     "fr": "Moi et les autres"
+    },
+    "bild": "icon:users",
+    "lektionen": [
+     "de-m1-das-bin-ich",
+     "de-m1-hobbys",
+     "de-m1-w-fragen"
+    ]
+   },
+   {
+    "titel": {
+     "de": "Sätze bauen",
+     "fr": "Construire des phrases"
+    },
+    "bild": "icon:puzzle",
+    "lektionen": [
+     "de-m1-nicht",
+     "de-m1-koennen"
+    ]
+   },
+   {
+    "titel": {
+     "de": "Zeit und Wege",
+     "fr": "Le temps et le chemin"
+    },
+    "bild": "icon:clock",
+    "lektionen": [
+     "de-m1-uhrzeit",
+     "de-m1-weg"
+    ]
+   },
+   {
+    "titel": {
+     "de": "Schreiben",
+     "fr": "Écrire"
+    },
+    "bild": "icon:pencil",
+    "lektionen": [
+     "de-m1-einladung"
+    ]
+   }
+  ],
+  "wortschatz": [
+   {
+    "thema": 0,
+    "de": "sich vorstellen",
+    "fr": "se présenter"
+   },
+   {
+    "thema": 0,
+    "de": "heißen",
+    "fr": "s’appeler"
+   },
+   {
+    "thema": 0,
+    "de": "wohnen",
+    "fr": "habiter"
+   },
+   {
+    "thema": 0,
+    "de": "das Hobby, die Freizeit",
+    "fr": "le loisir, le temps libre"
+   },
+   {
+    "thema": 0,
+    "de": "gern",
+    "fr": "volontiers, aimer (faire)"
+   },
+   {
+    "thema": 0,
+    "de": "der Freund, die Freundin",
+    "fr": "l’ami, l’amie"
+   },
+   {
+    "thema": 0,
+    "de": "die Frage, fragen",
+    "fr": "la question, demander"
+   },
+   {
+    "thema": 0,
+    "de": "wer? wo? wann? was? wie?",
+    "fr": "qui ? où ? quand ? quoi ? comment ?"
+   },
+   {
+    "thema": 1,
+    "de": "nicht",
+    "fr": "ne … pas"
+   },
+   {
+    "thema": 1,
+    "de": "kein, keine",
+    "fr": "pas de"
+   },
+   {
+    "thema": 1,
+    "de": "können",
+    "fr": "pouvoir, savoir"
+   },
+   {
+    "thema": 1,
+    "de": "wollen",
+    "fr": "vouloir"
+   },
+   {
+    "thema": 1,
+    "de": "müssen",
+    "fr": "devoir"
+   },
+   {
+    "thema": 1,
+    "de": "der Satz",
+    "fr": "la phrase"
+   },
+   {
+    "thema": 1,
+    "de": "das Verb",
+    "fr": "le verbe"
+   },
+   {
+    "thema": 2,
+    "de": "die Uhrzeit",
+    "fr": "l’heure"
+   },
+   {
+    "thema": 2,
+    "de": "Viertel nach, halb, Viertel vor",
+    "fr": "et quart, et demie, moins le quart"
+   },
+   {
+    "thema": 2,
+    "de": "der Tagesablauf",
+    "fr": "le déroulement de la journée"
+   },
+   {
+    "thema": 2,
+    "de": "links, rechts, geradeaus",
+    "fr": "à gauche, à droite, tout droit"
+   },
+   {
+    "thema": 2,
+    "de": "neben, hinter, vor, zwischen",
+    "fr": "à côté de, derrière, devant, entre"
+   },
+   {
+    "thema": 2,
+    "de": "die Treppe, der Gang",
+    "fr": "l’escalier, le couloir"
+   },
+   {
+    "thema": 3,
+    "de": "die Einladung, einladen",
+    "fr": "l’invitation, inviter"
+   },
+   {
+    "thema": 3,
+    "de": "die Glückwunschkarte",
+    "fr": "la carte de vœux"
+   },
+   {
+    "thema": 3,
+    "de": "groß schreiben",
+    "fr": "écrire avec une majuscule"
+   },
+   {
+    "thema": 3,
+    "de": "das Nomen",
+    "fr": "le nom"
+   }
+  ],
+  "lernziele": {
+   "de-m1-das-bin-ich": {
+    "de": "Ich stelle mich mit Name, Alter, Wohnort und Vorlieben vor.",
+    "fr": "Je me présente : nom, âge, lieu d’habitation, ce que j’aime."
+   },
+   "de-m1-hobbys": {
+    "de": "Ich bilde Verben im Präsens und sage, was ich gern mache.",
+    "fr": "Je conjugue les verbes au présent et je dis ce que j’aime faire."
+   },
+   "de-m1-w-fragen": {
+    "de": "Ich stelle W-Fragen und weiß, wo das Verb steht.",
+    "fr": "Je pose des questions avec un mot interrogatif et je sais où se place le verbe."
+   },
+   "de-m1-nicht": {
+    "de": "Ich verneine Sätze mit „nicht“ und „kein“.",
+    "fr": "Je mets des phrases à la forme négative avec « nicht » et « kein »."
+   },
+   "de-m1-koennen": {
+    "de": "Ich benutze können, wollen und müssen mit dem Infinitiv am Satzende.",
+    "fr": "J’utilise können, wollen et müssen avec l’infinitif en fin de phrase."
+   },
+   "de-m1-uhrzeit": {
+    "de": "Ich frage höflich nach der Uhrzeit und erzähle meinen Schultag.",
+    "fr": "Je demande poliment l’heure et je raconte ma journée d’école."
+   },
+   "de-m1-weg": {
+    "de": "Ich frage nach dem Weg und beschreibe einen Weg in der Schule.",
+    "fr": "Je demande le chemin et je décris un trajet dans l’école."
+   },
+   "de-m1-einladung": {
+    "de": "Ich schreibe eine kurze Einladung und schreibe Nomen groß.",
+    "fr": "J’écris une courte invitation et je mets une majuscule aux noms."
+   }
+  }
+ }
+]

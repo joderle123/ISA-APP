@@ -18,6 +18,7 @@ import { fussSchatten } from './texturen.js';
 import { createInteraktionen } from './interaktion.js';
 import { FAEDEN } from './faeden.js';
 import { DEUTSCH, deutschBlatt } from './deutsch.js';
+import { LEKTIONEN } from './lektionen.js';
 import { CHARAKTER, GLEICHALTRIGE, GRUSS, GRUENDE, nachricht, profil, stufe } from './freunde.js';
 import { BLAETTER } from './blaetter.js';
 import { MATHE, matheBlatt } from './mathe.js';
@@ -1107,6 +1108,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     }
     // sonst: kurz plaudern – zählt für die Freundschaft (einmal je Person und Abschnitt)
     if (CHARAKTER[id] && S.merke['fg_' + id] !== String(S.schritt)) { S.merke['fg_' + id] = String(S.schritt); freund(id, 3, 'gespraech'); }
+    if (CHARAKTER[id] && S.lektionen && S.merke['wn_' + id] !== String(S.schritt) && Math.random() < 0.4) { S.merke['wn_' + id] = String(S.schritt); if (await weisstDuNoch(id)) return; }
     const l = PLAUDERN[id] || ['Hi.'];
     const n = (S.merke['p_' + id] = ((S.merke['p_' + id] || 0) + 1));
     await gespraech([[id, l[(n - 1) % l.length]]]);
@@ -1216,13 +1218,70 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       else if (art === 'platsch') rausch(0, 0.35, 0.2);
     } catch (e) { /* kein Ton – egal */ }
   }
+  // ---------- Unterricht (lektionen.js, aus tools/sprachen): eine Lektion als Spiel ----------
+  // Lehrperson erklärt kurz → Tafelkarte mit Regel → Rollenspiel mit der Klasse (richtig: Freundschaft wächst; falsch: freundlich
+  // korrigiert, nochmal) → Übungsblatt mit wechselnden Aufgaben → Lernkarte ins Journal. Später fragen Freunde „Weißt du noch?“.
+  const esc = (t) => String(t).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
+  const LOB = ['Genau!', 'Richtig so.', 'Stimmt!', 'Perfekt.', 'Ja, so geht’s.'];
+  const FACHNAME = { deutsch: 'Deutsch', francais: 'Français', mathe: 'Mathe' };
+  const alleLektionen = () => Object.values(LEKTIONEN).flat().flatMap((m) => m.lektionen.map((l) => ({ ...l, modulNr: m.nr, modulTitel: m.titel })));
+  async function unterricht(fach, nr, id) {
+    const m = (LEKTIONEN[fach] || []).find((x) => x.nr === nr), l = m && m.lektionen.find((x) => x.id === id);
+    if (!l) return;
+    S.lektionen = S.lektionen || {};
+    const lp = l.lehrer;
+    await spiele([[lp, FACHNAME[fach] + ', Modul ' + nr + ': „' + l.titel + '“.'], ...l.intro.map((t) => [lp, t])]);
+    if (l.merke) await ui.merke({ titel: l.merke.titel, punkte: l.merke.punkte, ziel: l.ziel, fach: FACHNAME[fach] + ' · Modul ' + nr });
+    await spiele([[lp, 'Jetzt ihr. Redet miteinander!']]);
+    let gleich = 0;
+    for (const r of l.rolle) {
+      for (let versuch = 0; versuch < 3; versuch++) {
+        const i = await ui.waehle(r.optionen.map((o) => ersetze(o)), sprecher(r.wer).wer + ': ' + ersetze(r.sagt));
+        if (i === r.richtig) { if (!versuch) gleich++; await spiele([[r.wer, LOB[(gleich + versuch) % LOB.length]]]); freund(r.wer, 2, 'lernen'); break; }
+        await spiele([[r.wer, r.korrektur]]);
+      }
+    }
+    await spiele([[lp, gleich === l.rolle.length ? 'Alles beim ersten Mal. Stark!' : 'Gut. Jetzt noch üben.']]);
+    const pool = l.uebung.map((u) => (u.length === 3 ? { t: u[0], wahl: u[1], a: u[2] } : { t: u[0], a: [u[1]] }));
+    let best = null;
+    for (let runde = 0; runde < 10; runde++) {
+      const a = pool.slice(); for (let k = a.length - 1; k > 0; k--) { const j = Math.floor(Math.random() * (k + 1)); [a[k], a[j]] = [a[j], a[k]]; }
+      const st = SCHRITTE[S.schritt];
+      const r = await ui.arbeitsblatt({ blatt: { id, modul: FACHNAME[fach] + ' · Modul ' + nr, titel: l.titel, untertitel: m.titel, erkl: { idee: l.ziel, schritte: l.merke ? l.merke.punkte : [], beispiel: l.karte }, info: [], aufgaben: a.slice(0, 8) }, name: S.name, datum: st ? st.tag : '', neu: true });
+      if (!best || r.richtig > best.richtig) best = r;
+      if (!r.neu) break;
+    }
+    const alt = S.lektionen[id] || { mal: 0 };
+    S.lektionen[id] = { fach, nr, rolle: gleich + '/' + l.rolle.length, richtig: Math.max(alt.richtig || 0, best ? best.richtig : 0), gesamt: best ? best.gesamt : 8, mal: (alt.mal || 0) + 1 };
+    const karte = l.titel + ': ' + l.karte;
+    S.lernkarten = S.lernkarten || []; if (!S.lernkarten.includes(karte)) S.lernkarten.push(karte);
+    if (best && best.richtig === best.gesamt) staerke('dranbleiben');
+    sichern();
+    ui.toast('<b>Lernkarte: ' + esc(l.titel) + '</b><span>' + esc(l.karte) + '</span>', 'ly-t-ent');
+  }
+  // „Weißt du noch?“ – Freunde fragen Gelerntes ab (verteilte Wiederholung, höchstens einmal je Person und Abschnitt)
+  async function weisstDuNoch(id) {
+    const gelernt = Object.keys(S.lektionen || {}); if (!gelernt.length) return false;
+    const l = alleLektionen().find((x) => x.id === gelernt[Math.floor(Math.random() * gelernt.length)]); if (!l) return false;
+    const eigene = l.rolle.filter((r) => r.wer === id), wahl = l.uebung.filter((u) => u.length === 3);
+    let frage = null;
+    if (eigene.length) { const r = eigene[0]; frage = { t: r.sagt, o: r.optionen, i: r.richtig, k: r.korrektur }; }
+    else if (wahl.length) { const u = wahl[Math.floor(Math.random() * wahl.length)]; frage = { t: 'Weißt du noch? ' + u[0].replace('◻', '…'), o: u[1], i: u[1].indexOf(u[2]), k: 'Richtig wäre: ' + u[2] + '.' }; }
+    if (!frage) return false;
+    await spiele([[id, 'Hey, „' + l.titel + '“ – weißt du das noch?']]);
+    const i = await ui.waehle(frage.o.map((o) => ersetze(o)), LEUTE[id].name + ': ' + ersetze(frage.t));
+    if (i === frage.i) { await spiele([[id, 'Gewusst! Respekt.']]); freund(id, 3, 'lernen'); S.merke.gewusst = (S.merke.gewusst || 0) + 1; }
+    else await spiele([[id, frage.k]]);
+    sichern(); return true;
+  }
   // Fächer am eigenen Platz: Mathe (mathe.js) und Deutsch (deutsch.js), je Modul Blätter mit Erklärung und neuen Aufgaben
   const FAECHER = { mathe: { name: 'Mathe', module: MATHE, blatt: matheBlatt }, deutsch: { name: 'Deutsch', module: DEUTSCH, blatt: deutschBlatt } };
   const fachStand = (id) => { if (id === 'mathe') return (S.mathe = S.mathe || { modul: 1, stand: {} }); S.fach = S.fach || {}; return (S.fach[id] = S.fach[id] || { modul: 1, stand: {} }); };
   async function blattWahl() {
     S.blaetter = S.blaetter || {};
     const w = await ui.blattWahl({ blaetter: BLAETTER, stand: S.blaetter, lehrer: paket && paket.eigen ? { titel: paket.titel } : null,
-      faecher: Object.entries(FAECHER).map(([id, f]) => ({ id, name: f.name, module: f.module, modul: fachStand(id).modul, stand: fachStand(id).stand })), fach: S.letztesFach || 'mathe' });
+      faecher: Object.entries(FAECHER).map(([id, f]) => ({ id, name: f.name, module: f.module, modul: fachStand(id).modul, stand: fachStand(id).stand, lektionen: LEKTIONEN[id] || [], lstand: S.lektionen || {} })), fach: S.letztesFach || 'mathe' });
+    if (w.startsWith('lektion:')) { const [, fid, nr, id] = w.split(':'); fachStand(fid).modul = +nr; S.letztesFach = fid; await unterricht(fid, +nr, id); return; }
     if (w === 'nix') return;
     const fid = w.split(':')[0];
     if (FAECHER[fid]) {   // Modul-Blatt: Erklärung, immer neue Aufgaben
@@ -1419,7 +1478,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     teleport: (ort, yaw) => { const o = typeof ort === 'string' ? welt.orte[ort] : ort; steuerung.teleport(o.x, o.z, yaw !== undefined ? yaw : o.yaw); },
     rede, los, audio, SITZ, input, get naechste() { return naechste && naechste.id; },
     get probe() { return probe; }, set mutTempo(v) { mutTempo = v; },
-    daten: { SCHRITTE, STATISTEN, LEUTE, BLAETTER, MATHE }, ia, aktion, get iaNah() { return iaNah && iaNah.tu; },
+    daten: { SCHRITTE, STATISTEN, LEUTE, BLAETTER, MATHE, LEKTIONEN }, ia, aktion, get iaNah() { return iaNah && iaNah.tu; },
   };
 
   onProgress(1, '');

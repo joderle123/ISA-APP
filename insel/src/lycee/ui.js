@@ -609,6 +609,8 @@ export function createUI({ root, input, speech }) {
         h += '<div class="ly-bw-faecher">' + faecher.map((x) => '<button type="button" data-fach="' + x.id + '" class="' + (x === f ? 'an' : '') + '">' + esc(x.name) + '</button>').join('') + '</div>' +
           '<h3 class="ly-bw-h">' + esc(f.name) + ' – in welchem Modul bist du?</h3><div class="ly-bw-module">' + f.module.map((x) => '<button type="button" data-m="' + x.nr + '" class="' + (x.nr === m.nr ? 'an' : '') + '">' + x.nr + '</button>').join('') + '</div>' +
           '<p class="ly-bw-ziel"><b>Modul ' + m.nr + ': ' + esc(m.titel) + '</b> · ' + esc(m.ziele.join(' · ')) + '</p>' +
+          ((f.lektionen || []).find((x) => x.nr === m.nr) ? '<h3 class="ly-bw-h">Unterricht – Lektionen</h3>' + (f.lektionen.find((x) => x.nr === m.nr).lektionen.map((l, i) => { const st = (f.lstand || {})[l.id];
+            return knopf('lektion:' + f.id + ':' + m.nr + ':' + l.id, 'Lektion ' + (i + 1) + ': ' + l.titel, l.ziel, st ? { richtig: st.richtig, gesamt: st.gesamt } : null); }).join('')) + '<h3 class="ly-bw-h">Training</h3>' : '') +
           m.blaetter.map((b) => knopf(f.id + ':' + m.nr + ':' + b.id, b.titel, f.id === 'mathe' ? 'Mit Erklärung · neue Zahlen bei jedem Mal' : 'Mit Erklärung · neue Aufgaben bei jedem Mal', (f.stand || {})[b.id])).join('');
       }
       h += '<h3 class="ly-bw-h">Kernkompetenzen (Toolbox)</h3>' + blaetter.map((b) => knopf(b.id, b.modul + ' · ' + b.titel, b.aufgaben.length + ' Aufgaben', stand[b.id])).join('');
@@ -623,6 +625,16 @@ export function createUI({ root, input, speech }) {
     document.addEventListener('keydown', taste, true);
     k.querySelector('.ly-zu').onclick = () => fertig('nix');
     zeige();
+  });
+
+  // Tafelkarte im Unterricht: Ziel und Regel der Lektion, „Verstanden“ (E/Enter)
+  ui.merke = ({ titel, punkte = [], ziel = '', fach = '' }) => new Promise((ok) => {
+    const k = ebeneAuf('merke', '<div class="ly-mk-tafel"><div class="ly-mk-fach">' + esc(fach) + '</div>' + (ziel ? '<p class="ly-mk-ziel">Mein Ziel: ' + esc(ziel) + '</p>' : '') +
+      '<h2>' + esc(titel) + '</h2><ul>' + punkte.map((x) => '<li>' + esc(x) + '</li>').join('') + '</ul></div><button type="button" class="ly-btn ly-primaer" data-a="ok">Verstanden <kbd>E</kbd></button>');
+    const zu = () => { document.removeEventListener('keydown', taste, true); ebeneZu(); ok(); };
+    const taste = (e) => { if (e.code === 'KeyE' || e.code === 'Enter' || e.code === 'Space') { e.preventDefault(); e.stopPropagation(); zu(); } };
+    document.addEventListener('keydown', taste, true);
+    k.querySelector('[data-a="ok"]').onclick = zu;
   });
 
   // Das Blatt: Papier, Kopfzeile, Merkkasten, Aufgaben mit Lücken (Zahlenfeld) oder Zeichen (< = >). Prüfen → richtig ist

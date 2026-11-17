@@ -15,7 +15,7 @@ export const STUFEN = [
 ];
 export const stufe = (p) => { let s = STUFEN[0]; for (const x of STUFEN) if ((p || 0) >= x.ab) s = x; return s.name; };
 
-export const GRUENDE = { kennen: 'kennengelernt', gespraech: 'Gespräche', tief: 'tiefe Gespräche', wahl: 'Entscheidungen', spiel: 'zusammen gespielt', teilen: 'geteilt' };
+export const GRUENDE = { kennen: 'kennengelernt', gespraech: 'Gespräche', tief: 'tiefe Gespräche', wahl: 'Entscheidungen', spiel: 'zusammen gespielt', teilen: 'geteilt', lernen: 'zusammen gelernt' };
 
 // Charaktere der Mitschülerinnen und Mitschüler: Typ, Hobby, was sie mögen, Eigenschaften (für das Freundes-Profil)
 export const CHARAKTER = {

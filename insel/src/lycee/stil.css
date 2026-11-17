@@ -298,3 +298,11 @@ kbd { display: inline-block; min-width: 1.5em; padding: 0 .35em; margin-right: .
 .ly-bw-faecher { display: flex; gap: 8px; margin: 2px 0 6px; }
 .ly-bw-faecher button { padding: 8px 18px; border-radius: 999px; border: 1px solid var(--rand); background: #fff; font: inherit; font-weight: 800; cursor: pointer; }
 .ly-bw-faecher button.an { background: var(--ink); color: #fff; }
+/* Tafelkarte im Unterricht */
+.ly-k-merke { max-width: 620px; }
+.ly-mk-tafel { background: #2f4f45; color: #f5f3ea; border: 10px solid #8a6a4a; border-radius: 10px; padding: 16px 22px 18px; font-family: "Comic Sans MS", "Chalkboard SE", system-ui, sans-serif; }
+.ly-mk-fach { font: 800 12px system-ui, sans-serif; letter-spacing: 0.08em; text-transform: uppercase; color: #cfe6dc; }
+.ly-mk-ziel { margin: 4px 0 8px; font-size: 15px; color: #fff3a8; }
+.ly-mk-tafel h2 { margin: 6px 0 8px; font-size: 22px; color: #fff; }
+.ly-mk-tafel ul { margin: 0; padding-left: 20px; font-size: 18px; line-height: 1.5; }
+.ly-k-merke .ly-btn { margin-top: 14px; }

@@ -108,6 +108,24 @@ export const BEREICHE: BereichDef[] = [
     beschreibung: 'Mathe für die Voie préparatoire (5e PF), Modul für Modul: Dezimalzahlen, Brüche, Größen, Geometrie und Statistik mit Aufgaben aus dem Alltag Jugendlicher – Regel, Beispiel, Übungen in drei Stufen und Lösungen für die Lehrperson.',
   },
   {
+    id: 'deutsch',
+    kuerzel: 'DE',
+    de: 'Deutsch',
+    fr: 'Allemand',
+    icon: 'alphabet-latin',
+    farben: { tief: '#A2442E', mittel: '#EBC2B5', zart: '#FBEFEA' },
+    beschreibung: 'Deutsch für die Voie de préparation, Modul 1 bis 9: Lektionen mit Regel, Beispiel und Übungen in drei Stufen – Themen und Grammatik nach den Bildungsstandards, Aufgaben aus dem Alltag Jugendlicher. Auch als Heft und im Spiel Annexe Junglinster.',
+  },
+  {
+    id: 'francais',
+    kuerzel: 'FR',
+    de: 'Französisch',
+    fr: 'Français',
+    icon: 'message-2',
+    farben: { tief: '#1F5E8C', mittel: '#B7D3E8', zart: '#EAF3FA' },
+    beschreibung: 'Französisch für die Voie de préparation, Modul 1 bis 9: Lektionen mit Regel, Beispiel und Übungen in drei Stufen – nach dem Référentiel de compétences, mit Aufgaben aus dem Alltag Jugendlicher. Auch als Heft und im Spiel Annexe Junglinster.',
+  },
+  {
     id: 'spielschule',
     kuerzel: 'SP',
     de: 'Spielschule',
@@ -228,6 +246,18 @@ export const THEMEN: ThemaDef[] = [
   T('mathe', 'geometrie', 'Geometrie', 'Géométrie'),
   T('mathe', 'daten', 'Daten & Statistik', 'Données et statistiques'),
   T('mathe', 'rechnen', 'Zahlen & Rechnen', 'Nombres et calcul'),
+
+  T('deutsch', 'sprechen', 'Sprechen & Zuhören', 'Parler et écouter'),
+  T('deutsch', 'lesen', 'Lesen', 'Lire'),
+  T('deutsch', 'schreiben', 'Schreiben', 'Écrire'),
+  T('deutsch', 'grammatik', 'Grammatik', 'Grammaire'),
+  T('deutsch', 'wortschatz', 'Wortschatz', 'Vocabulaire'),
+
+  T('francais', 'sprechen', 'Sprechen & Zuhören', 'Parler et écouter'),
+  T('francais', 'lesen', 'Lesen', 'Lire'),
+  T('francais', 'schreiben', 'Schreiben', 'Écrire'),
+  T('francais', 'grammatik', 'Grammatik', 'Grammaire'),
+  T('francais', 'wortschatz', 'Wortschatz', 'Vocabulaire'),
 
   T('kern', 'sprechen', 'Sprechen & Zuhören', 'Parler et écouter'),
   T('kern', 'lesen', 'Lesen', 'Lire'),

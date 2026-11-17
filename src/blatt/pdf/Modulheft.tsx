@@ -352,6 +352,26 @@ function DekoText3() {
   )
 }
 
+// Deckblatt für Sprachen: Sprechblasen mit Grüßen und große Buchstaben (Deutsch: Aa Ää ß · Französisch: Éé Çç)
+function DekoSprache({ p, fr, nr }: { p: Palette; fr: boolean; nr: number }) {
+  const weiss = (o: number) => `rgba(255,255,255,${o})`
+  const blasen = fr ? ['Salut !', 'Ça va ?', 'À demain !'] : ['Hallo!', 'Wie geht’s?', 'Bis morgen!']
+  const buchstaben = fr ? ['É', 'ç', 'à'] : ['Ä', 'ß', 'ö']
+  return (
+    <View style={{ position: 'absolute', right: 36, top: 52, width: 220, height: 380 }}>
+      {blasen.map((b, i) => (
+        <View key={i} style={{ position: 'absolute', left: [10, 80, 24][i], top: [10, 120, 236][i], backgroundColor: i === 1 ? WARM : weiss(0.94), borderRadius: 14, paddingHorizontal: 14, paddingVertical: 9 }}>
+          <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 17, color: i === 1 ? '#1F2A44' : p.tief }}>{b}</Text>
+        </View>
+      ))}
+      {buchstaben.map((b, i) => (
+        <Text key={'b' + i} style={{ position: 'absolute', left: [150, 4, 168][i], top: [58, 178, 300][i], fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: [54, 46, 40][i], color: weiss(0.22 + i * 0.06) }}>{b}</Text>
+      ))}
+      <Text style={{ position: 'absolute', left: 120, top: 318, fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 64, color: weiss(0.12) }}>{String(nr)}</Text>
+    </View>
+  )
+}
+
 function Deckblatt({ modul, sprache, p, loesungen }: { modul: Modul; sprache: Sprache; p: Palette; loesungen: boolean }) {
   const t: Tx = TX[sprache]
   const band = loesungen ? '#1F2A44' : p.tief
@@ -365,7 +385,7 @@ function Deckblatt({ modul, sprache, p, loesungen }: { modul: Modul; sprache: Sp
   return (
     <Page size="A4" style={{ padding: 0 }}>
       <View style={{ height: 470, backgroundColor: band }}>
-        {modul.nr === 3 ? <Deko3 p={p} /> : <Deko p={p} />}
+        {modul.bereich === 'deutsch' || modul.bereich === 'francais' ? <DekoSprache p={p} fr={modul.bereich === 'francais'} nr={modul.nr} /> : modul.nr === 3 ? <Deko3 p={p} /> : <Deko p={p} />}
         <View style={{ position: 'absolute', left: 48, top: 56, width: 300 }}>
           <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 9.5, letterSpacing: 1.6, color: p.mittel }}>{`${modul.fach[sprache].toUpperCase()} · ${modul.klasse}`}</Text>
           <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 54, lineHeight: 1.05, color: '#FFFFFF', marginTop: 10, letterSpacing: -1 }}>{`${t.modul} ${modul.nr}`}</Text>
@@ -377,7 +397,7 @@ function Deckblatt({ modul, sprache, p, loesungen }: { modul: Modul; sprache: Sp
             </View>
           ) : null}
         </View>
-        {modul.nr === 3 ? <DekoText3 /> : <DekoText2 />}
+        {modul.bereich === 'deutsch' || modul.bereich === 'francais' ? null : modul.nr === 3 ? <DekoText3 /> : <DekoText2 />}
       </View>
 
       <View style={{ paddingHorizontal: 48, paddingTop: 24 }}>
