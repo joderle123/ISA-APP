@@ -17,7 +17,7 @@ const BUECHER = [
 ];
 const SNACKS = ['Schokoriegel', 'Chips (Paprika)', 'Gummibärchen', 'Kekse', 'Wasser'];
 
-export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton, blattWahl, freiwurf, skate }) {
+export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton, blattWahl, freiwurf, skate, partner = () => null, freund = () => {} }) {
   const tt = welt.orte.tischtennis;
   const liste = [];
   const dazu = (x, z, r, text, tu, extra = {}) => liste.push({ x, z, r, text, tu, ...extra });
@@ -83,7 +83,10 @@ export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton
         return;
       }
       case 'tischtennis': {
-        const b = await ui.tischtennis(); s.merke.ttRekord = Math.max(s.merke.ttRekord || 0, b); sichern();
+        const pa = partner();   // spielt mit dir: am liebsten dein bester Freund / deine beste Freundin
+        const b = await ui.tischtennis({ gegner: pa ? pa.name : '' }); s.merke.ttRekord = Math.max(s.merke.ttRekord || 0, b);
+        if (pa) freund(pa.id, 4, 'spiel');
+        sichern();
         ui.toast('<b>' + b + ' Ballwechsel</b><span>' + (b && b >= s.merke.ttRekord ? 'Dein bester bisher!' : 'Dein Rekord: ' + s.merke.ttRekord + '.') + '</span>');
         return;
       }

@@ -17,6 +17,7 @@ import { ladePerson, namensschild, SITZ } from './figuren.js';
 import { fussSchatten } from './texturen.js';
 import { createInteraktionen } from './interaktion.js';
 import { FAEDEN } from './faeden.js';
+import { CHARAKTER, GLEICHALTRIGE, GRUSS, GRUENDE, nachricht, profil, stufe } from './freunde.js';
 import { BLAETTER } from './blaetter.js';
 import { MATHE, matheBlatt } from './mathe.js';
 import { createSteuerung } from './steuerung.js';
@@ -78,6 +79,16 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   const input = createInput({ root, events });
   const audio = createAudio();
   const speech = createSpeech({ events, audio });
+  // Schulgeräusche (synthetisch, leise): Stimmengewirr auf dem Hof, Geschirr in der Kantine. Wind und Vögel: engine/audio.js
+  audio.register('stimmen', (ctx, bus) => {
+    const t = ctx.currentTime, h = audio.helpers;
+    for (let i = 0; i < 3; i++) h.burst(t + Math.random() * 0.7, 0.25 + Math.random() * 0.4, 'bandpass', 320 + Math.random() * 800, 6 + Math.random() * 5, 0.005 + Math.random() * 0.007, bus);
+  });
+  audio.register('geschirr', (ctx, bus) => {
+    const t = ctx.currentTime, h = audio.helpers, n = 1 + Math.floor(Math.random() * 3);
+    for (let i = 0; i < n; i++) h.tone('triangle', 2600 + Math.random() * 1800, t + i * (0.07 + Math.random() * 0.08), 0.002, 0.008, 0.16, bus);
+    h.burst(t, 0.05, 'highpass', 5200, 1, 0.004, bus);
+  });
 
   await schritt(0.1, 'Die Annexe wird gebaut …');
   const veil = createVeil({ events, audio, zones: [] });
@@ -298,10 +309,28 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   }
   let tagHerz = {};
   function herz(id, n) {
-    if (!LEUTE[id] || !n) { if (LEUTE[id] && S.herz[id] == null) S.herz[id] = 1; return; }
+    if (!LEUTE[id] || !n) { if (LEUTE[id] && S.herz[id] == null) { S.herz[id] = 1; freund(id, 5, 'kennen'); } return; }
+    if (S.herz[id] == null) freund(id, 5, 'kennen');
     S.herz[id] = Math.max(0, Math.min(5, (S.herz[id] == null ? 1 : S.herz[id]) + n));
     tagHerz[id] = (tagHerz[id] || 0) + n;   // erst im Tagesrückblick sichtbar, nicht sofort
+    freund(id, n * 6, 'wahl');
   }
+  // ---------- Freundschaften (freunde.js): Punkte 0–100 mit Gründen, Stufen, Profil; die engsten Freunde bekommen Rollen ----------
+  function sicherFreund() {
+    if (S.freund) return;
+    S.freund = {}; S.freundGrund = {};
+    for (const [id, h] of Object.entries(S.herz || {})) if (CHARAKTER[id]) S.freund[id] = Math.max(5, (h - 1) * 15 + 5);   // alter Spielstand
+  }
+  function freund(id, n, grund) {
+    if (!CHARAKTER[id] || !n || !S) return;
+    sicherFreund();
+    const alt = S.freund[id] || 0, neu = Math.max(0, Math.min(100, alt + n));
+    S.freund[id] = neu;
+    const g = (S.freundGrund[id] = S.freundGrund[id] || {}); g[grund] = (g[grund] || 0) + 1;
+    // Stufe gestiegen: sofort zeigen – außer bei Entscheidungen (die zeigt erst der Tagesrückblick, sonst verrät es die „richtige“ Antwort)
+    if (grund !== 'wahl' && neu > alt && stufe(neu) !== stufe(alt)) ui.toast('<b>' + LEUTE[id].name + ': ' + stufe(neu) + '</b><span>Eure Freundschaft ist gewachsen.</span>', 'ly-t-herz');
+  }
+  const besteFreunde = () => { if (!S) return []; sicherFreund(); return Object.entries(S.freund).filter(([id, p]) => CHARAKTER[id] && p >= 20).sort((a, b) => b[1] - a[1]).map(([id]) => id); }
   function staerke(k) {
     if (!STAERKEN[k]) return;
     S.staerken[k] = (S.staerken[k] || 0) + 1;
@@ -313,7 +342,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     for (const z of zeilen) {
       if (Array.isArray(z)) {
         const [wer, text] = z;
-        if (LEUTE[wer] && S.herz[wer] == null) S.herz[wer] = 1;
+        if (LEUTE[wer] && S.herz[wer] == null) { S.herz[wer] = 1; freund(wer, 5, 'kennen'); }
         if (leute[wer] && leute[wer].f.group.visible && wer !== 'du') { gegenueber = leute[wer]; steuerung.fokus = gegenueber.pos; }
         await ui.sprich({ ...sprecher(wer), text: ersetze(text) });
       } else if (z.wahl) {
@@ -685,7 +714,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       S.kapitelFertig = Math.max(S.kapitelFertig || 0, kap);
       if (weiterIdx < 0) S.fertig = true;
       sichern();
-      const wahl = await ui.ende({ ...bilanz(), kap, ueberschrift: ({ 1: 'Dein erster Tag', 2: 'Deine erste Woche', 3: 'Dein Schnuppertag', 4: 'Deine dritte Woche', 5: 'Deine vierte Woche', 6: 'Deine fünfte Woche', 7: 'Deine erste Arbeitswoche' })[kap] || KAPITEL[kap],
+      const bf = besteFreunde()[0];
+      const wahl = await ui.ende({ ...bilanz(), kap, brief: bf ? { von: LEUTE[bf].name, farbe: LEUTE[bf].farbe, text: nachricht(bf, kap) } : null, ueberschrift: ({ 1: 'Dein erster Tag', 2: 'Deine erste Woche', 3: 'Dein Schnuppertag', 4: 'Deine dritte Woche', 5: 'Deine vierte Woche', 6: 'Deine fünfte Woche', 7: 'Deine erste Arbeitswoche' })[kap] || KAPITEL[kap],
         weiter: weiterIdx >= 0 ? 'Weiter: Kapitel ' + (kap + 1) + ' „' + KAPITEL[kap + 1] + '“' : '' });
       if (wahl === 'weiter') danach = () => starteSchritt(weiterIdx, true);
       else if (wahl === 'neu') { S.fertig = false; danach = () => starteSchritt(startIdx, true); }
@@ -1008,6 +1038,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       const eintraege = Object.entries(tagHerz).filter(([id, n]) => n && LEUTE[id]).map(([id, n]) => ({ name: LEUTE[id].name, farbe: LEUTE[id].farbe, n })).sort((a, b) => b.n - a.n);
       tagHerz = {};
       await ui.rueckblick(st.tag, st.kap !== vorher.kap ? kapName(st.kap) : 'Ein neuer Tag in der Annexe Junglinster.', eintraege);
+      const b = besteFreunde()[0];
+      if (b && st.kap !== vorher.kap) setTimeout(() => ui.toast('<b>' + LEUTE[b].name + ' (' + stufe(S.freund[b]) + ')</b><span>„' + GRUSS[b] + '“</span>', 'ly-t-herz'), 2500);
     }
     sky.time.setTimeOfDay(st.uhr); ui.uhr(st.uhr, st.tag);
     ui.bingo(null);
@@ -1049,14 +1081,16 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (fd) {
       S.faeden = S.faeden || {};
       const n = S.faeden[id] || 0, fa = fd[n], abschnitt = S.fertig ? 'e' + Math.floor(Date.now() / 600000) : String(S.schritt);
-      if (fa && (S.herz[id] == null ? 1 : S.herz[id]) >= fa.herz && S.merke['fd_' + id] !== abschnitt) {
-        S.merke['fd_' + id] = abschnitt; S.faeden[id] = n + 1; sichern();
+      sicherFreund();
+      if (fa && ((S.herz[id] == null ? 1 : S.herz[id]) >= fa.herz || (S.freund[id] || 0) >= fa.herz * 15) && S.merke['fd_' + id] !== abschnitt) {
+        S.merke['fd_' + id] = abschnitt; S.faeden[id] = n + 1; freund(id, 8, 'tief'); sichern();
         await gespraech(fa.g);
-        ui.toast('<b>' + LEUTE[id].name + ': „' + fa.titel + '“</b><span>Gesprächsfaden ' + (n + 1) + ' von ' + fd.length + '</span>');
+        ui.toast('<b>' + ((LEUTE[id] || {}).name || id) + ': „' + fa.titel + '“</b><span>Gesprächsfaden ' + (n + 1) + ' von ' + fd.length + '</span>');
         return;
       }
     }
-    // sonst: kurz plaudern
+    // sonst: kurz plaudern – zählt für die Freundschaft (einmal je Person und Abschnitt)
+    if (CHARAKTER[id] && S.merke['fg_' + id] !== String(S.schritt)) { S.merke['fg_' + id] = String(S.schritt); freund(id, 3, 'gespraech'); }
     const l = PLAUDERN[id] || ['Hi.'];
     const n = (S.merke['p_' + id] = ((S.merke['p_' + id] || 0) + 1));
     await gespraech([[id, l[(n - 1) % l.length]]]);
@@ -1112,9 +1146,19 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   }
   // ---------- Bilanz ----------
   function bilanz() {
+    sicherFreund();
+    const faeden = (id) => (FAEDEN[id] ? FAEDEN[id].slice(0, (S.faeden || {})[id] || 0).map((f) => f.titel).join(' · ') : '');
+    const gruende = (id) => Object.entries((S.freundGrund || {})[id] || {}).map(([g, n]) => n + '× ' + (GRUENDE[g] || g)).join(' · ');
+    const leute = Object.entries(S.herz).filter(([id]) => LEUTE[id]).map(([id, h]) => {
+      const c = CHARAKTER[id], p = c ? (S.freund[id] || 0) : null;
+      return { id, name: LEUTE[id].name, farbe: LEUTE[id].farbe, herz: h, punkte: p, stufe: c ? stufe(p) : '', typ: c ? c.typ : '', hobby: c ? c.hobby : '', mag: c && p >= 20 ? c.mag : '',
+        gruende: c ? gruende(id) : '', notiz: faeden(id) };
+    }).sort((a, b) => (b.punkte ?? -1) - (a.punkte ?? -1) || b.herz - a.herz);
+    const beste = besteFreunde().slice(0, 3);
     return {
-      name: S.name,
-      leute: Object.entries(S.herz).filter(([id]) => LEUTE[id]).map(([id, h]) => ({ name: LEUTE[id].name, farbe: LEUTE[id].farbe, herz: h, notiz: FAEDEN[id] ? FAEDEN[id].slice(0, (S.faeden || {})[id] || 0).map((f) => f.titel).join(' · ') + ((S.faeden || {})[id] >= FAEDEN[id].length ? '' : ((S.faeden || {})[id] ? ' · …' : '')) : '' })).sort((a, b) => b.herz - a.herz),
+      name: S.name, leute,
+      freunde: { beste: beste.map((id) => ({ name: LEUTE[id].name, farbe: LEUTE[id].farbe, punkte: S.freund[id], stufe: stufe(S.freund[id]), typ: CHARAKTER[id].typ })), profil: profil(S.freund),
+        unbekannt: GLEICHALTRIGE.filter((id) => S.herz[id] == null).length },
       staerken: Object.entries(S.staerken).map(([k, n]) => ({ ...STAERKEN[k], n })),
       entdeckt: S.entdeckt.length, gesamt: GEHEIMNISSE.length,
     };
@@ -1122,7 +1166,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   ui.onJournal = () => {
     if (!S || imGespraech) return;
     const b = bilanz();
-    ui.journal({ name: S.name, stundenplan: S.stundenplan, leute: b.leute, staerken: b.staerken, geheimnisse: GEHEIMNISSE.filter((g) => S.entdeckt.includes(g.id)), gesamt: GEHEIMNISSE.length, lernkarten: S.lernkarten || [], leiter: leiterJournal() });
+    ui.journal({ name: S.name, stundenplan: S.stundenplan, leute: b.leute, freunde: b.freunde, staerken: b.staerken, geheimnisse: GEHEIMNISSE.filter((g) => S.entdeckt.includes(g.id)), gesamt: GEHEIMNISSE.length, lernkarten: S.lernkarten || [], leiter: leiterJournal() });
   };
   ui.onRaus = () => { if (!S || (imGespraech && !probe)) return; ui.kurzRaus(); };
 
@@ -1187,16 +1231,35 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   }
   // ---------- Skateboard fahren (Skate-Ecke): 60 Sekunden, Punkte für Ollies und Sprünge über Rail, Box, Bank ----------
   let skateTick = null;
+  // Eigenes Skateboard: flaches Deck mit hochgezogener Nase und Tail, Griptape, zwei Achsen, vier Rollen. Liegt quer zur
+  // Gruppe (die Gruppe ist beim Fahren um 90° gedreht), also längs der Fahrtrichtung.
+  function skateboard() {
+    const b = new THREE.Group(), mat = (c) => new THREE.MeshLambertMaterial({ color: c });
+    const deck = new THREE.Mesh(new THREE.BoxGeometry(0.62, 0.022, 0.23), mat('#d9693f')); deck.position.y = 0.085; b.add(deck);
+    const grip = new THREE.Mesh(new THREE.BoxGeometry(0.6, 0.004, 0.215), mat('#2b2b33')); grip.position.y = 0.098; b.add(grip);
+    for (const s of [-1, 1]) {
+      const n = new THREE.Mesh(new THREE.BoxGeometry(0.14, 0.022, 0.23), mat('#d9693f')); n.position.set(s * 0.37, 0.1, 0); n.rotation.z = s * 0.38; b.add(n);
+      const ng = new THREE.Mesh(new THREE.BoxGeometry(0.13, 0.004, 0.215), mat('#2b2b33')); ng.position.set(s * 0.37, 0.112, 0); ng.rotation.z = s * 0.38; b.add(ng);
+      const achse = new THREE.Mesh(new THREE.BoxGeometry(0.05, 0.035, 0.2), mat('#b8c0ca')); achse.position.set(s * 0.21, 0.055, 0); b.add(achse);
+      for (const q of [-1, 1]) { const r = new THREE.Mesh(new THREE.CylinderGeometry(0.03, 0.03, 0.035, 12), mat('#f4f1ea')); r.rotation.x = Math.PI / 2; r.position.set(s * 0.21, 0.03, q * 0.115); b.add(r); }
+    }
+    // Länge längs x der Gruppe: nach der 90°-Drehung der Gruppe zeigt das Brett in Fahrtrichtung
+    return b;
+  }
   function skaten() {
     return new Promise((ok) => {
       let m = null;
       const g = req.geo['skate/skateboard'];
-      if (g && spieler) { m = new THREE.Mesh(stelle(g, { x: 0, z: 0, s: 0.8, rot: Math.PI / 2 }), material); m.position.y = -0.08; spieler.group.add(m); }
+      // Brett längs der Fahrtrichtung, Figur steht seitlich darauf (Gruppe ist um 90° gedreht, steuerung.js) und oben auf dem Brett
+      const koerper = spieler && spieler.group.children[0], hoch = koerper ? koerper.position.y : 0;
+      if (spieler) { m = skateboard(); spieler.group.add(m); }
+      if (koerper) koerper.position.y = hoch + 0.1;
       let punkte = 0, rest = 60, fertig = false;
       const ende = () => {
         if (fertig) return; fertig = true; skateTick = null;
         steuerung.brett = null; steuerung.tempo = 0; steuerung.pos.y = 0;
         if (m) spieler.group.remove(m);
+        if (koerper) koerper.position.y = hoch;
         ui.skate(null); input.release('jump'); ok(punkte);
       };
       steuerung.brett = { y: 0, vy: 0, ueber: new Set(), start: 0, bereich: [-45.3, -28.3, 3.5, 18.7],
@@ -1212,7 +1275,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     });
   }
   const ia = createInteraktionen({ welt, steuerung, ui, zustand: () => S, sichern: () => sichern(), ton, blattWahl,
-    freiwurf: async () => ui.freiwurf(), skate: () => skaten() });
+    freiwurf: async () => ui.freiwurf(), skate: () => skaten(), freund: (id, n, g) => freund(id, n, g),
+    partner: () => { const b = besteFreunde()[0] || GLEICHALTRIGE.find((id) => S.herz[id] != null); return b ? { id: b, name: LEUTE[b].name } : null; } });
   let iaNah = null;
   async function aktion(i) {
     if (i.tu === 'sitzen') { await ia.tu(i); sperreBis = performance.now() + 350; return; }
@@ -1222,7 +1286,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   }
 
   // ---------- Schleife ----------
-  let laeuft = false, raumAlt = undefined, geheimT = 0;
+  let laeuft = false, raumAlt = undefined, geheimT = 0, klangT = 1;
   const loop = createLoop({ render: () => rr.render({ night: sky.night, time: loop.time, sun: sky.sunDir, sunColor: sky.colors && sky.colors.light }) });
   loop.add(() => input.beginFrame(), { order: -100, always: true });
   loop.add((dt) => {
@@ -1269,6 +1333,15 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     const rid = raum ? raum.id : null;
     if (rid !== raumAlt) { if (raumAlt !== undefined) ui.raum(raum ? raum.name : 'Schulhof'); raumAlt = rid; }
     raumLicht.intensity += ((raum ? 1.15 : 0) - raumLicht.intensity) * Math.min(1, dt * 3);
+    // Geräusche: draußen Wind und Vögel (am Tag), auf dem Hof Stimmen; drinnen leise, in der Kantine Geschirr. Kein Meer.
+    audio.setAmbience({ waves: 0, wind: raum ? 0 : 0.35, birds: raum ? 0 : 1, day: 1 - (sky.night || 0), night: raum ? 0 : (sky.night || 0) });
+    audio.update();
+    klangT -= dt;
+    if (klangT <= 0) {
+      klangT = 0.7 + Math.random() * 0.9;
+      if (!raum && p.z > -2 && p.z < 40 && Math.abs(p.x) < 46 && !(sky.night > 0.5)) audio.play('stimmen');
+      else if (rid === 'kantine') audio.play('geschirr');
+    }
     // Ansprechen
     naechste = imGespraech || steuerung.brett ? null : wenNah();
     iaNah = !naechste && !imGespraech && !probe && !steuerung.brett ? ia.naechste(p) : null;

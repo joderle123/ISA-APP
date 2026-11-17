@@ -69,6 +69,8 @@ export function stelle(geo, p) {
     .multiply(new THREE.Matrix4().makeTranslation(-(bb.min.x + bb.max.x) / 2, -bb.min.y, -(bb.min.z + bb.max.z) / 2));
   g.applyMatrix4(m);
   if (p.farbe) { const c = new THREE.Color(p.farbe), a = g.attributes.color; for (let i = 0; i < a.count; i++) a.setXYZ(i, a.getX(i) * c.r, a.getY(i) * c.g, a.getZ(i) * c.b); }
+  // einfarbig: Farbe ersetzen (z. B. Beton für die Skate-Rampen), oben heller, Seiten dunkler
+  if (p.einfarbig) { const c = new THREE.Color(p.einfarbig), a = g.attributes.color, n = g.attributes.normal; for (let i = 0; i < a.count; i++) { const k = 0.78 + 0.22 * Math.max(0, n.getY(i)); a.setXYZ(i, c.r * k, c.g * k, c.b * k); } }
   g.computeBoundingBox();
   return g;
 }

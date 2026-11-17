@@ -82,7 +82,7 @@ export function createSteuerung({ camera, input, welt, figur = null }) {
     const [x0, x1, z0, z1] = b.bereich;
     if (pos.x < x0 || pos.x > x1 || pos.z < z0 || pos.z > z1) b.onRaus();
     pos.y = b.y;
-    if (s.figur) { s.figur.group.position.set(pos.x, b.y + 0.1, pos.z); s.figur.group.rotation.y = s.yaw; s.figur.spiele('Idle'); }
+    if (s.figur) { s.figur.group.position.set(pos.x, b.y, pos.z); s.figur.group.rotation.y = s.yaw + Math.PI / 2; s.figur.spiele('Idle'); }   // seitlich auf dem Brett
     if (!st.look.dx && s.tempo > 0.5) { let d = s.yaw - c.yaw; d = Math.atan2(Math.sin(d), Math.cos(d)); c.yaw += d * Math.min(1, dt * 1.4); }
     s.laeuft = s.tempo > 0.3;
   }

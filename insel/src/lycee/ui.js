@@ -105,13 +105,21 @@ export function createUI({ root, input, speech }) {
   function ebeneZu() { ebene.hidden = true; ebene.innerHTML = ''; ebene.dataset.art = ''; }
   ui.ebeneZu = ebeneZu;
 
-  ui.journal = ({ name, stundenplan, leute, staerken, geheimnisse, gesamt, lernkarten = [], leiter = null }) => {
+  // Menschen im Journal: Freundschaft als Balken (0–100) mit Stufe, Typ, Hobby und Gründen; oben dein Freundeskreis und Profil
+  const menschenListe = (leute) => '<ul class="ly-j-leute ly-j-freunde">' + leute.map((l) => '<li><span class="ly-j-name" style="--f:' + esc(l.farbe) + '">' + esc(l.name) + (l.typ ? ' <em>' + esc(l.typ) + '</em>' : '') + '</span>' +
+    (l.punkte != null ? '<span class="ly-fr-balken" title="' + l.punkte + ' von 100"><i style="width:' + l.punkte + '%"></i></span><b class="ly-fr-stufe">' + esc(l.stufe) + '</b>' : '<span class="ly-herzen" aria-label="' + l.herz + ' von 5">' + '♥'.repeat(Math.max(0, Math.min(5, l.herz))) + '<i>' + '♥'.repeat(5 - Math.max(0, Math.min(5, l.herz))) + '</i></span>') +
+    '<small>' + [l.hobby ? 'Hobby: ' + esc(l.hobby) : '', l.mag ? 'Mag: ' + esc(l.mag) : '', l.gruende ? esc(l.gruende) : '', l.notiz ? 'Gespräche: ' + esc(l.notiz) : ''].filter(Boolean).join('<br>') + '</small></li>').join('') + '</ul>';
+  const freundesKreis = (f) => !f ? '' : '<div class="ly-fr-kreis"><b>Dein Freundeskreis</b>' +
+    (f.beste.length ? '<p>' + f.beste.map((b) => '<span class="ly-j-name" style="--f:' + esc(b.farbe) + '">' + esc(b.name) + '</span> ' + esc(b.stufe)).join(' · ') + '</p>' : '<p>Noch niemand über „Kumpel“. Reden, helfen, zusammen spielen – das zählt.</p>') +
+    (f.profil.length ? '<p>Du verstehst dich vor allem mit Leuten, die <b>' + f.profil.map(esc).join('</b>, <b>') + '</b> sind.</p>' : '') +
+    (f.unbekannt ? '<p class="ly-leer">' + f.unbekannt + ' aus der Klasse kennst du noch nicht.</p>' : '') + '</div>';
+  ui.journal = ({ name, stundenplan, leute, freunde = null, staerken, geheimnisse, gesamt, lernkarten = [], leiter = null }) => {
     const k = ebeneAuf('journal', '<button type="button" class="ly-zu" aria-label="Schließen">✕</button><h2>Journal von ' + esc(name) + '</h2>' +
       '<div class="ly-j-reiter"><button type="button" data-r="leute" class="an">Menschen</button><button type="button" data-r="staerken">Stärken</button><button type="button" data-r="plan">Stundenplan</button><button type="button" data-r="ent">Entdeckt ' + geheimnisse.length + '/' + gesamt + '</button>' + (leiter ? '<button type="button" data-r="leiter">Mutleiter</button>' : '') + '</div><div class="ly-j-inhalt"></div>');
     const inhalt = k.querySelector('.ly-j-inhalt');
     const zeige = (r) => {
       k.querySelectorAll('[data-r]').forEach((b) => b.classList.toggle('an', b.dataset.r === r));
-      if (r === 'leute') inhalt.innerHTML = leute.length ? '<ul class="ly-j-leute">' + leute.map((l) => '<li><span class="ly-j-name" style="--f:' + esc(l.farbe) + '">' + esc(l.name) + '</span><span class="ly-herzen" aria-label="' + l.herz + ' von 5">' + '♥'.repeat(Math.max(0, Math.min(5, l.herz))) + '<i>' + '♥'.repeat(5 - Math.max(0, Math.min(5, l.herz))) + '</i></span><small>' + esc(l.notiz || '') + '</small></li>').join('') + '</ul>' : '<p class="ly-leer">Noch niemanden kennengelernt.</p>';
+      if (r === 'leute') inhalt.innerHTML = freundesKreis(freunde) + (leute.length ? menschenListe(leute) : '<p class="ly-leer">Noch niemanden kennengelernt.</p>');
       if (r === 'staerken') inhalt.innerHTML = staerken.length ? '<ul class="ly-j-staerken">' + staerken.map((s) => '<li><b>' + esc(s.name) + (s.n > 1 ? ' <span>×' + s.n + '</span>' : '') + '</b><small>' + esc(s.text) + '</small></li>').join('') + '</ul>' : '<p class="ly-leer">Stärken erscheinen hier, sobald du sie zeigst.</p>';
       if (r === 'plan') inhalt.innerHTML = stundenplan ? '<table class="ly-plan"><tr><th></th><th>Mo</th><th>Di</th><th>Mi</th></tr><tr><td>8:00</td><td>Klassenstunde</td><td>Mathe</td><td>Deutsch</td></tr><tr><td>10:15</td><td>Französisch</td><td>Sport</td><td>Atelier</td></tr><tr><td>13:30</td><td>Projekt</td><td>Englisch</td><td>–</td></tr></table><p class="ly-leer">Saal 1.04 · Klassenlehrer M. Hoffmann</p>' + (lernkarten.length ? '<h3>Gelernt</h3><ul class="ly-j-staerken">' + lernkarten.map((l) => '<li><b>' + esc(l) + '</b></li>').join('') + '</ul>' : '') : '<p class="ly-leer">Den Stundenplan gibt es im Sekretariat.</p>';
       if (r === 'leiter' && leiter) inhalt.innerHTML = '<ol class="ly-leiter">' + leiter.stufen.slice().reverse().map((l) => '<li class="' + (l.status || '') + '"><b>' + esc(l.t) + '</b><small>' + esc(l.notiz || '') + '</small></li>').join('') + '</ol><p class="ly-leer">Oben das Schwerste. ✓ = geschafft, ◐ = probiert. Probiert zählt.</p>';
@@ -146,9 +154,9 @@ export function createUI({ root, input, speech }) {
    zeigeTitel();
   });
 
-  ui.ende = ({ leute, staerken, entdeckt, gesamt, kap = 1, ueberschrift = 'Geschafft', weiter = '' }) => new Promise((ok) => {
+  ui.ende = ({ leute, freunde = null, brief = null, staerken, entdeckt, gesamt, kap = 1, ueberschrift = 'Geschafft', weiter = '' }) => new Promise((ok) => {
     const k = ebeneAuf('ende', '<div class="ly-t-kicker">Kapitel ' + kap + ' geschafft</div><h2>' + esc(ueberschrift) + '</h2>' +
-      '<div class="ly-e-spalten"><section><h3>Menschen</h3><ul class="ly-j-leute">' + leute.map((l) => '<li><span class="ly-j-name" style="--f:' + esc(l.farbe) + '">' + esc(l.name) + '</span><span class="ly-herzen">' + '♥'.repeat(Math.max(0, Math.min(5, l.herz))) + '<i>' + '♥'.repeat(5 - Math.max(0, Math.min(5, l.herz))) + '</i></span></li>').join('') + '</ul></section>' +
+      (brief ? '<div class="ly-e-brief"><span class="ly-j-name" style="--f:' + esc(brief.farbe) + '">' + esc(brief.von) + '</span> schreibt dir: „' + esc(brief.text) + '“</div>' : '') + freundesKreis(freunde) + '<div class="ly-e-spalten"><section><h3>Menschen</h3><ul class="ly-j-leute">' + leute.map((l) => '<li><span class="ly-j-name" style="--f:' + esc(l.farbe) + '">' + esc(l.name) + '</span><span class="ly-herzen">' + '♥'.repeat(Math.max(0, Math.min(5, l.herz))) + '<i>' + '♥'.repeat(5 - Math.max(0, Math.min(5, l.herz))) + '</i></span></li>').join('') + '</ul></section>' +
       '<section><h3>Deine Stärken heute</h3><ul class="ly-j-staerken">' + (staerken.length ? staerken.map((s) => '<li><b>' + esc(s.name) + '</b><small>' + esc(s.text) + '</small></li>').join('') : '<li><small>Morgen ist ein neuer Tag.</small></li>') + '</ul>' +
       '<p class="ly-leer">Entdeckt: ' + entdeckt + ' von ' + gesamt + ' Orten</p></section></div>' +
       (weiter ? '' : '<p class="ly-e-weiter">Das nächste Kapitel kommt bald.</p>') + '<div class="ly-t-knoepfe">' +
@@ -203,8 +211,8 @@ export function createUI({ root, input, speech }) {
 
   // Tischtennis (Hof): von oben gesehen. Tippen / E / Leertaste, wenn der Ball in deiner Zone ist. Drei Bälle; es zählt der
   // längste Ballwechsel. Der Ball wird mit jedem Treffer etwas schneller. Echtzeit (gleich schnell auf jedem Gerät).
-  ui.tischtennis = () => new Promise((ok) => {
-    const k = ebeneAuf('spiel', '<h2>Tischtennis</h2><p class="ly-leer">Tippe (oder <kbd>E</kbd>), wenn der Ball im hellen Feld vor deinem Schläger ist.</p>' +
+  ui.tischtennis = ({ gegner = '' } = {}) => new Promise((ok) => {
+    const k = ebeneAuf('spiel', '<h2>Tischtennis' + (gegner ? ' mit ' + esc(gegner) : '') + '</h2><p class="ly-leer">Tippe (oder <kbd>E</kbd>), wenn der Ball im hellen Feld vor deinem Schläger ist.</p>' +
       '<canvas width="520" height="300"></canvas><div class="ly-fw-stand"></div><button type="button" class="ly-btn ly-primaer ly-fw-wurf">Schlagen</button>');
     const cv = k.querySelector('canvas'), x = cv.getContext('2d'), stand = k.querySelector('.ly-fw-stand'), btn = k.querySelector('.ly-fw-wurf');
     const ZONE = [34, 104];

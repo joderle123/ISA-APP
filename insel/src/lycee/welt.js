@@ -444,8 +444,8 @@ export function baueWelt({ material, materialInnen }) {
   for (const x of [-60, -36, -12, 12, 36, 60]) P('strasse/Streetlight_Single', x, 40.8, Math.PI, { h: 5.5 });
   // ---- Skate-Ecke (Westen des Hofs): Betonfläche, Half-Pipe, Rampe, Rail, Box, Graffiti-Wand ----
   box(-45.6, -28, 0.06, 0.1, 3.2, 19, C.beton, { art: 'innen' });
-  P('skate/half-pipe-low', -41.5, 6.2, 0, { s: 5.2, fest: true });
-  P('skate/ramp', -31.6, 12.4, Math.PI / 2, { h: 0.8, fest: true }); P('skate/rail-low', -36, 9.6, 0, { h: 0.5, fest: true }); P('skate/obstacle-box', -36.4, 15.8, 0, { h: 0.5, fest: true });
+  P('skate/half-pipe-low', -41.5, 6.2, 0, { s: 5.2, fest: true, einfarbig: '#bdb7ad' });
+  P('skate/ramp', -31.6, 12.4, Math.PI / 2, { h: 0.8, fest: true, einfarbig: '#bdb7ad' }); P('skate/rail-low', -36, 9.6, 0, { h: 0.5, fest: true }); P('skate/obstacle-box', -36.4, 15.8, 0, { h: 0.5, fest: true, einfarbig: '#a9a39a' });
   P('skate/bench', -44.6, 13, Math.PI / 2, { h: 0.55, fest: true });
   box(-45.9, -45.5, 0, 2.6, 9, 18.4, C.beton, { stoss: true }); box(-46, -45.4, 2.6, 2.7, 8.9, 18.5, C.sockel);
   { const g = graffiti(['SKATE', 'K+D', '7P2'], 9.4, 2.4, 3); g.position.set(-45.45, 1.3, 13.7); g.rotation.y = Math.PI / 2; schilder.push(g); }

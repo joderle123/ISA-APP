@@ -285,3 +285,13 @@ kbd { display: inline-block; min-width: 1.5em; padding: 0 .35em; margin-right: .
 .ly-skate-knoepfe button { min-width: 128px; min-height: 60px; border: 0; border-radius: 18px; background: #d9693f; color: #fff; font: 800 18px system-ui, sans-serif; box-shadow: var(--schatten); touch-action: none; cursor: pointer; }
 .ly-skate-knoepfe button[data-s="weg"] { min-height: 44px; background: var(--karte); color: var(--ink); font-size: 15px; }
 .ly-skate-knoepfe kbd { display: block; font: 600 11px system-ui, sans-serif; opacity: 0.75; }
+
+/* Freundschaften (Journal, Kapitelende) */
+.ly-j-freunde li { align-items: center; }
+.ly-j-freunde em { font-style: normal; font-weight: 600; font-size: 12px; color: var(--leise); margin-left: 4px; }
+.ly-fr-balken { display: inline-block; width: 110px; height: 9px; border-radius: 6px; background: #e8edf3; overflow: hidden; vertical-align: middle; }
+.ly-fr-balken i { display: block; height: 100%; background: linear-gradient(90deg, #e85d75, #f4a261); border-radius: 6px; }
+.ly-fr-stufe { font-size: 12px; color: #b5485c; margin-left: 6px; }
+.ly-fr-kreis { margin: 0 0 12px; padding: 10px 14px; border-radius: 14px; background: #fff3f0; font-size: 14px; }
+.ly-fr-kreis p { margin: 4px 0 0; }
+.ly-e-brief { margin: 4px 0 12px; padding: 10px 14px; border-radius: 14px; background: #e9f6f4; font-size: 15px; }

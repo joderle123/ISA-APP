@@ -279,4 +279,123 @@ export const FAEDEN = {
       ] },
     ] },
   ],
+
+  // Erwachsene: zwei Gespräche je Person – über ihren Beruf und wie sie selbst Schule erlebt haben, nichts Privates
+  kaya: [
+    { herz: 2, titel: 'Was SePAS heißt', g: [
+      ['kaya', 'Viele denken, hier kommt nur hin, wer Ärger hat.'],
+      ['kaya', 'Stimmt nicht. Man kann auch einfach mal reden.'],
+      { wahl: [
+        { t: 'Und was erzählen Sie weiter?', staerke: 'hilfe', herz: nett('kaya'), dann: [['kaya', 'Nichts, ohne dass du es vorher weißt.'], ['kaya', 'Nur wenn jemand in Gefahr ist. Dann sag ich es dir zuerst.']] },
+        { t: 'Gut zu wissen.', herz: nett('kaya'), dann: [['kaya', 'Die Tür ist offen. Auch für Kleinigkeiten.']] },
+      ] },
+    ] },
+    { herz: 3, titel: 'Zehn Minuten', g: [
+      ['kaya', 'Weißt du, was ich am liebsten mag? Wenn jemand wiederkommt.'],
+      ['kaya', 'Dann weiß ich: Es hat ein bisschen geholfen.'],
+      { wahl: [
+        { t: 'Was hilft den meisten?', staerke: 'zuhoeren', herz: nett('kaya'), dann: [['kaya', 'Ein Plan mit kleinen Schritten. Und jemand, der fragt, wie es lief.']] },
+        { t: 'Vielleicht komm ich mal.', herz: nett('kaya'), dann: [['kaya', 'Gern. Ohne Termin geht auch. Klopf einfach.']] },
+      ] },
+    ] },
+  ],
+  laurent: [
+    { herz: 2, titel: 'Zwei l', g: [
+      ['laurent', 'Ich hab früher „vieleicht“ geschrieben. Jahrelang.'],
+      { wahl: [
+        { t: 'Sie? Echt?', herz: nett('laurent'), dann: [['laurent', 'Echt. Rechtschreibung war mein Feind. Heute unterrichte ich sie.']] },
+        { t: 'Was hat geholfen?', staerke: 'zuhoeren', herz: nett('laurent'), dann: [['laurent', 'Eine Lehrerin, die nicht rot angestrichen hat. Sondern gefragt hat.']] },
+      ] },
+    ] },
+    { herz: 3, titel: 'Der Club', g: [
+      ['laurent', 'Im Hausaufgaben-Club macht keiner alles richtig. Das ist der Trick.'],
+      ['laurent', 'Fehler sind dort erlaubt. Sogar erwünscht.'],
+      { wahl: [
+        { t: 'Warum erwünscht?', staerke: 'zuhoeren', herz: nett('laurent'), dann: [['laurent', 'Weil man an Fehlern sieht, wie jemand denkt. Dann kann ich helfen.']] },
+        { t: 'Dann komm ich Donnerstag.', herz: nett('laurent'), dann: [['laurent', 'Schön. Kekse gibt’s auch. Manchmal.']] },
+      ] },
+    ] },
+  ],
+  becker: [
+    { herz: 2, titel: 'Der erste Fehler', g: [
+      ['becker', 'Mein erstes Werkstück war krumm. Mein Meister hat es aufgehoben.'],
+      { wahl: [
+        { t: 'Warum?', staerke: 'zuhoeren', herz: nett('becker'), dann: [['becker', 'Damit ich später sehe, wie weit ich gekommen bin.'], ['becker', 'Es hängt heute noch bei mir.']] },
+        { t: 'Ihres war auch krumm?', herz: nett('becker'), dann: [['becker', 'Sehr krumm. Zweimal messen hab ich danach gelernt.']] },
+      ] },
+    ] },
+    { herz: 3, titel: 'Handwerk', g: [
+      ['becker', 'Hier zählt nicht, wie schnell du redest. Sondern wie genau du arbeitest.'],
+      { wahl: [
+        { t: 'Das gefällt mir.', herz: nett('becker'), dann: [['becker', 'Dann komm mal in die Werkstatt. Schutzbrille liegt bereit.']] },
+        { t: 'Und wenn man langsam ist?', staerke: 'hilfe', herz: nett('becker'), dann: [['becker', 'Langsam und genau schlägt schnell und schief. Jedes Mal.']] },
+      ] },
+    ] },
+  ],
+  sommer: [
+    { herz: 2, titel: 'Nicht jeder mag Sport', g: [
+      ['sommer', 'Ich weiß, nicht jeder mag Sport. Ich mochte Mathe nicht.'],
+      { wahl: [
+        { t: 'Und jetzt?', herz: nett('sommer'), dann: [['sommer', 'Mathe mag ich immer noch nicht. Aber ich kann zählen: Runden!']] },
+        { t: 'Was machen Sie mit denen, die Sport hassen?', staerke: 'zuhoeren', herz: nett('sommer'), dann: [['sommer', 'Ich such was, das passt. Seilspringen. Tischtennis. Irgendwas geht immer.']] },
+      ] },
+    ] },
+    { herz: 3, titel: 'Die Pfeife', g: [
+      ['sommer', 'Die Pfeife hab ich nur, weil die Halle so laut ist.'],
+      ['sommer', 'Schreien mag ich nicht. Pfeifen ist netter.'],
+      { wahl: [
+        { t: 'Klingt trotzdem streng.', herz: nett('sommer'), dann: [['sommer', 'Ich üb noch, freundlich zu pfeifen.']] },
+        { t: 'Gut, dass Sie nicht schreien.', staerke: 'klar', herz: nett('sommer'), dann: [['sommer', 'Danke. Sagt mir sonst keiner.']] },
+      ] },
+    ] },
+  ],
+  kremer: [
+    { herz: 2, titel: 'Dreihundert Teller', g: [
+      ['kremer', 'Dreihundert Teller am Tag. Und jeder will was anderes.'],
+      { wahl: [
+        { t: 'Wie schaffen Sie das?', staerke: 'zuhoeren', herz: nett('kremer'), dann: [['kremer', 'Zack, zack. Und ein Plan am Kühlschrank.'], ['kremer', 'Und ich merk mir, wer keine Erbsen mag.']] },
+        { t: 'Danke fürs Kochen.', herz: nett('kremer', 2), dann: [['kremer', '(lacht) Das sagt fast keiner. Merk ich mir.']] },
+      ] },
+    ] },
+    { herz: 3, titel: 'Die Karte', g: [
+      ['kremer', 'Wenn eine Karte leer ist, frag ich nicht laut nach. Nie.'],
+      ['kremer', 'Hunger hat mit Noten nichts zu tun.'],
+      { wahl: [
+        { t: 'Das ist nett von Ihnen.', herz: nett('kremer'), dann: [['kremer', 'Nett nicht. Normal. Zack, zack.']] },
+        { t: 'Was macht man, wenn die Karte leer ist?', staerke: 'hilfe', herz: nett('kremer'), dann: [['kremer', 'Zu mir sagen. Leise reicht. Dann klären wir das.']] },
+      ] },
+    ] },
+  ],
+  weber: [
+    { herz: 2, titel: 'Streng', g: [
+      ['weber', 'Ich weiß, dass ihr mich streng findet.'],
+      { wahl: [
+        { t: 'Ein bisschen.', staerke: 'klar', herz: nett('weber'), dann: [['weber', 'Gut. Ehrlich ist gut.'], ['weber', 'Streng heißt bei mir: Ich nehm euch ernst.']] },
+        { t: 'Warum sind Sie so?', staerke: 'zuhoeren', herz: nett('weber'), dann: [['weber', 'Weil Regeln Sicherheit geben. Mir auch.']] },
+      ] },
+    ] },
+    { herz: 3, titel: 'Die Klasse', g: [
+      ['weber', 'Diese Klasse ist anders als alle davor.'],
+      { wahl: [
+        { t: 'Besser oder schlechter?', herz: nett('weber'), dann: [['weber', 'Lauter. Und ehrlicher. Das mag ich.']] },
+        { t: 'Inwiefern?', staerke: 'zuhoeren', herz: nett('weber'), dann: [['weber', 'Ihr helft euch. Das sieht man nicht in jeder Klasse.']] },
+      ] },
+    ] },
+  ],
+  hoffmann: [
+    { herz: 2, titel: 'Neue Methoden', g: [
+      ['hoffmann', 'Ehrlich gesagt: Ich bin vor jeder Stunde nervös.'],
+      { wahl: [
+        { t: 'Sie? Warum?', staerke: 'zuhoeren', herz: nett('hoffmann'), dann: [['hoffmann', 'Erstes Jahr als Lehrer. Ich will es richtig machen.']] },
+        { t: 'Merkt man gar nicht.', herz: nett('hoffmann'), dann: [['hoffmann', 'Danke. Das hilft mehr, als du denkst.']] },
+      ] },
+    ] },
+    { herz: 3, titel: 'Was klappt', g: [
+      ['hoffmann', 'Was war in meinem Unterricht gut? Sag ruhig ehrlich.'],
+      { wahl: [
+        { t: 'Die Gruppenarbeit.', herz: nett('hoffmann'), dann: [['hoffmann', 'Gut. Dann mehr davon. Und weniger Folien.']] },
+        { t: 'Wenn Sie Beispiele erklären.', staerke: 'klar', herz: nett('hoffmann'), dann: [['hoffmann', 'Beispiele. Notiert. Danke, {name}.']] },
+      ] },
+    ] },
+  ],
 };

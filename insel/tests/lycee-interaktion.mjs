@@ -122,6 +122,15 @@ await page.waitForFunction(() => !document.querySelector('.ly-k-spiel'), null, {
 check('Tischtennis endet nach drei Bällen, Rekord gespeichert', (await L(() => LYCEE.zustand.merke.ttRekord)) === 0);
 await page.waitForFunction(() => !LYCEE.imGespraech);
 
+// Freundschaft messbar: Ben hat Punkte und eine Stufe; das Journal zeigt Freundeskreis, Typ und Gründe
+check('Freundschaftspunkte für Ben (mind. „Kumpel“)', (await L(() => LYCEE.zustand.freund.ben)) >= 20, await L(() => [LYCEE.zustand.freund, LYCEE.zustand.freundGrund && LYCEE.zustand.freundGrund.ben]));
+await L(() => LYCEE.ui.onJournal());
+await page.waitForSelector('.ly-fr-kreis', { timeout: 10000 }).catch(() => {});
+const jt = await page.textContent('.ly-ebene');
+check('Journal: Freundeskreis, Typ „Der Spaßvogel“, Stufe und Gründe', /Dein Freundeskreis/.test(jt) && /Der Spaßvogel/.test(jt) && /^(Kumpel|Freund|Enge Freundschaft)$/.test(await page.textContent('.ly-fr-stufe')) && /tiefe Gespräche/.test(jt), jt.slice(0, 300));
+await bild('i7-freunde');
+await page.click('.ly-ebene .ly-zu');
+
 // Skateboard in der Skate-Ecke: aufsteigen, mit Schwung springen (Ollie = 1 Punkt), absteigen, Rekord gespeichert
 await page.waitForFunction(() => !LYCEE.imGespraech);
 await geheZu({ tu: 'skate' }); await page.waitForFunction(() => LYCEE.iaNah === 'skate', null, { timeout: 30000 }).catch(() => {});
