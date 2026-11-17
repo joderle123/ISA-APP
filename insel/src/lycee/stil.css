@@ -35,8 +35,8 @@ kbd { display: inline-block; min-width: 1.5em; padding: 0 .35em; margin-right: .
 .ly-a-ziel { margin-top: 4px; font-size: 15.5px; line-height: 1.35; font-weight: 600; color: var(--ink); }
 .ly-a-punkt { display: inline-block; width: 9px; height: 9px; margin-right: 8px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 0 3px rgba(233, 185, 73, .3); vertical-align: 1px; }
 .ly-a-dist { margin-left: 4px; padding: 1px 7px; border-radius: 99px; background: rgba(45, 61, 92, .08); font-size: 12.5px; font-weight: 800; color: var(--ink2); white-space: nowrap; }
-.ly-uhr { position: absolute; right: max(70px, calc(env(safe-area-inset-right) + 70px)); top: max(16px, env(safe-area-inset-top)); padding: 8px 13px; border-radius: 99px; background: var(--karte); box-shadow: var(--schatten); font-weight: 900; font-size: 16px; color: var(--blau); font-variant-numeric: tabular-nums; pointer-events: none; }
-.ly-knoepfe { position: absolute; right: max(14px, env(safe-area-inset-right)); top: max(12px, env(safe-area-inset-top)); }
+.ly-uhr { position: absolute; right: max(124px, calc(env(safe-area-inset-right) + 124px)); top: max(16px, env(safe-area-inset-top)); padding: 8px 13px; border-radius: 99px; background: var(--karte); box-shadow: var(--schatten); font-weight: 900; font-size: 16px; color: var(--blau); font-variant-numeric: tabular-nums; pointer-events: none; }
+.ly-knoepfe { position: absolute; right: max(14px, env(safe-area-inset-right)); top: max(12px, env(safe-area-inset-top)); display: flex; gap: 8px; }
 .ly-knoepfe button { width: 46px; height: 46px; border: 0; border-radius: 14px; background: var(--karte); box-shadow: var(--schatten); font-size: 22px; color: var(--blau); cursor: pointer; }
 .ly-raum { position: absolute; left: 50%; top: 18%; transform: translate(-50%, -8px); padding: 8px 22px; border-radius: 99px; background: rgba(31, 42, 61, .78); color: #fff; font-size: 20px; font-weight: 900; letter-spacing: .02em; opacity: 0; transition: opacity .4s, transform .4s; pointer-events: none; white-space: nowrap; }
 .ly-raum.an { opacity: 1; transform: translate(-50%, 0); }
@@ -199,3 +199,33 @@ kbd { display: inline-block; min-width: 1.5em; padding: 0 .35em; margin-right: .
 .ly-rb { list-style: none; margin: 8px 0 0; padding: 0; display: flex; flex-direction: column; gap: 6px; text-align: left; }
 .ly-rb li { display: flex; justify-content: space-between; gap: 10px; padding: 8px 12px; border-radius: 12px; background: #fff; border: 1px solid var(--rand); }
 .ly-rb b.auf { color: #a33a52; } .ly-rb b.ab { color: var(--leise); }
+
+/* Kapitel 6: Skala, Mutleiter, Anspannung, Kurz raus, Woche */
+.ly-skala { display: flex; gap: 8px; justify-content: center; margin: 14px 0 6px; }
+.ly-skala button { width: 52px; height: 52px; border-radius: 50%; border: 0; cursor: pointer; font: inherit; font-size: 20px; font-weight: 800; color: #fff;
+  background: color-mix(in srgb, #6fa9d6 calc(100% - (var(--n) - 1) * 25%), #d9693f); box-shadow: var(--schatten); }
+.ly-skala button kbd { background: none; border: 0; color: inherit; font: inherit; padding: 0; }
+.ly-skala-ende { display: flex; justify-content: space-between; color: var(--leise); font-size: 14px; max-width: 300px; margin: 0 auto; }
+.ly-mut { position: absolute; bottom: max(18px, env(safe-area-inset-bottom)); left: 50%; transform: translateX(-50%); width: min(300px, 58vw); padding: 10px 14px; border-radius: 16px; background: var(--karte); box-shadow: var(--schatten); pointer-events: none; }
+.ly-mut-kopf { font-weight: 800; font-size: 15px; margin-bottom: 4px; }
+.ly-mut-zeile { display: flex; align-items: center; gap: 8px; font-size: 14px; }
+.ly-mut-zeile b { font-size: 20px; min-width: 22px; text-align: right; }
+.ly-mut-bar { flex: 1; height: 10px; border-radius: 6px; background: #e8edf3; overflow: hidden; }
+.ly-mut-bar i { display: block; height: 100%; background: linear-gradient(90deg, #6fa9d6, #d9693f); transition: width .25s; }
+.ly-mut-kurve { width: 100%; height: 36px; display: block; margin: 4px 0 2px; }
+.ly-mut-kurve polyline { fill: none; stroke: #d9693f; stroke-width: 2.2; stroke-linejoin: round; stroke-linecap: round; }
+.ly-mut-fuss { font-size: 13px; color: var(--leise); }
+.ly-leiter { list-style: none; padding: 0; margin: 6px 0; display: flex; flex-direction: column; gap: 6px; }
+.ly-leiter li { padding: 8px 12px 8px 36px; border-radius: 12px; background: #fff; border: 1px solid var(--rand); position: relative; }
+.ly-leiter li::before { content: ''; position: absolute; left: 12px; top: 11px; width: 14px; height: 14px; border-radius: 50%; border: 2px solid var(--rand); }
+.ly-leiter li.ok::before { content: '✓'; border-color: #3fa66b; color: #3fa66b; font-size: 11px; line-height: 14px; text-align: center; font-weight: 900; }
+.ly-leiter li.halb::before { content: '◐'; border: 0; color: #d9a21b; top: 7px; font-size: 16px; }
+.ly-leiter small { display: block; color: var(--leise); }
+.ly-woche { list-style: none; padding: 0; margin: 8px 0 14px; display: flex; flex-direction: column; gap: 10px; text-align: left; }
+.ly-woche li { padding: 10px 12px; border-radius: 12px; background: #fff; border: 1px solid var(--rand); }
+.ly-woche li > div { display: flex; align-items: center; gap: 8px; font-size: 14px; margin-top: 4px; }
+.ly-woche small { color: var(--leise); min-width: 52px; }
+.ly-w-bar { flex: 1; height: 8px; border-radius: 5px; background: #e8edf3; overflow: hidden; }
+.ly-w-bar i { display: block; height: 100%; background: linear-gradient(90deg, #6fa9d6, #d9693f); }
+.ly-woche em { font-style: normal; font-weight: 800; min-width: 14px; }
+.ly-w-notiz { display: block; margin-top: 4px; }

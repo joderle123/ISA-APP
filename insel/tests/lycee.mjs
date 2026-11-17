@@ -47,7 +47,8 @@ await page.waitForFunction(() => window.LYCEE && window.LYCEE.zustand && window.
 check('Figur 2 und Name gewählt', (await L(() => [LYCEE.zustand.figur, LYCEE.zustand.name])).join() === '1,Robin');
 
 // Gespräche durchklicken: immer die erste Antwort (Index wahl), sonst weiter; Freiwurf: werfen; Ende: weiter herumlaufen
-let ichWahl = [];
+let ichWahl = [], skalaWahl = [];
+let warteN = 0;
 async function klick(wahl = 0, max = 80) {
   for (let i = 0; i < max; i++) {
     const z = await L(() => {
@@ -61,6 +62,10 @@ async function klick(wahl = 0, max = 80) {
     // Antworten stehen gemischt da: nach dem Platz in den Daten wählen (data-i). wahl = Zahl oder Liste (eine Zahl je Auswahl)
     if (z === 'wahl') { const k = Array.isArray(wahl) ? (wahl.length > 1 ? wahl.shift() : wahl[0]) : wahl; const n = await page.$$eval('.ly-d-optionen button', (l) => l.length); await page.click('.ly-d-optionen [data-i="' + Math.min(k, n - 1) + '"]'); }
     else if (z === 'zeile') await page.keyboard.press('KeyE');
+    else if (z === 'ebene:skala') await page.keyboard.press('Digit' + (skalaWahl.shift() || 3));
+    else if (z === 'ebene:sort') { if (await page.isVisible('.ly-k-sort [data-a="w"]')) await page.keyboard.press('KeyE'); else await page.keyboard.press('Digit1'); }
+    else if (z === 'ebene:woche') await page.keyboard.press('KeyE');
+    else if (z === 'warten') { await page.waitForTimeout(400); if (warteN++ < 600) i--; }   // Mutprobe läuft: stehen bleiben
     else if (z === 'ebene:spiel') { await page.keyboard.press('KeyE'); await page.waitForTimeout(900); }
     else if (z === 'ebene:ende') return 'ende';
     else if (z === 'ebene:bild') await page.waitForTimeout(600);
@@ -205,7 +210,7 @@ await rede('noah', 2);
 check('Abschreiben: Nein, aber erklärt → „Nein sagen“', (await L(() => LYCEE.zustand.staerken.neinsagen)) === 1 && (await L(() => LYCEE.zustand.merke.erklaert)) === true);
 check('Bäcker: kein Geld (neue Szene)', (await schritt()) === 'k4_baecker');
 await rede('ayla', [2, 0, 2]);
-check('„Bin pleite“ – Noah zahlt; Ben will leihen: „Erst die vier von letzter Woche“', (await L(() => LYCEE.zustand.merke.noahGezahlt)) === true && (await L(() => LYCEE.zustand.merke.benSchulden)) === true);
+check('„Bin pleite“ – Noah zahlt; Ben will leihen: „Du gibst Yusuf auch nie was zurück.“', (await L(() => LYCEE.zustand.merke.noahGezahlt)) === true && (await L(() => LYCEE.zustand.merke.benSchulden)) === true);
 check('Skate-Ecke (neue Szene)', (await schritt()) === 'k4_skate');
 await rede('kenan', 2);
 check('Skate-Ecke: „Nur ohne Kamera.“', (await schritt()) === 'k4_halle');
@@ -242,7 +247,48 @@ check('Zu Unrecht rausgeschickt: rausgehen, nichts sagen', (await L(() => LYCEE.
 const e5 = await geh('bus', 0);
 check('Kapitel 5 geschafft: „Deine vierte Woche“', e5 === 'ende' && /Deine vierte Woche/.test(await page.textContent('.ly-k-ende')));
 await bild('11-ende5');
+// Kapitel 6 „Kleine Schritte“: Mutleiter, Anspannung live, Gedanken prüfen, „Gleich“-Karte, Kritiker, eigene Stufe
+await page.click('.ly-k-ende [data-a="weiter"]');
+await page.waitForFunction(() => LYCEE.schritt === 'k6_tor');
+await L(() => { LYCEE.mutTempo = 30; });
+await klick();
+check('Kapitel 6 „Kleine Schritte“', /Kapitel 6/.test(await page.textContent('.ly-auftrag')));
+skalaWahl = [4];
+await geh('tor', 0);
+const m6 = () => L(() => LYCEE.zustand.merke);
+check('Am Tor: Anspannung eingeschätzt (4), reingegangen', (await m6()).torWert === 4 && (await m6()).torRein === true);
+await rede('kaya', [0, 0]);
+const z6 = () => L(() => LYCEE.zustand);
+check('Herr Kaya: eigene Mutleiter sortiert (5 Stufen), Karte genommen', (await z6()).leiter.length === 5 && (await m6()).karte === true, (await z6()).leiter);
+skalaWahl = [4, 2];
+await geh('preau', 1);
+await bild('12-mutprobe');
+const log6 = async (id) => ((await z6()).mutLog || []).find((x) => x.id === id);
+check('Stufe 1: bei der Gruppe geblieben, Anspannung 4 → 2, Stärke „Dabeibleiben“', (await log6('pause'))?.geblieben === true && (await log6('pause')).nachher === 2 && (await z6()).staerken.bleiben >= 1, await log6('pause'));
+skalaWahl = [4, 2];
+await geh('gangLachen', [1, 0, 1]);
+check('Lachen im Gang: hingeschaut, „wie sicher“ 4 → 2', (await m6()).lachenGeschaut === true && (await log6('lachen'))?.nachher === 2);
+await geh('meinPlatz', [4, 0]);
+check('Drangenommen: „Gleich“-Karte hingelegt, dann gelesen → Leiter „Vorlesen“ geschafft', (await m6()).tafelKarte === true && (await z6()).leiterStatus.tafel === 'ok');
+await rede('laurent', 2);
+check('Viel Rot: Mme Laurent gefragt, Komma-Fehler geübt → Leiter „Frage stellen“', (await m6()).testFrage === true && (await z6()).leiterStatus.frage === 'ok');
+await rede('kaya', 1);
+check('Freitag: Stufe selbst gewählt (Kantine)', (await m6()).stufeKantine === true);
+skalaWahl = [3, 1];
+await geh('kantinePlatz', 1);
+check('Kantine: sitzen geblieben, Bäcker-Szene übersprungen', (await log6('kantine'))?.geblieben === true && !(await log6('baecker')));
+const e6 = await geh('bus', 0);
+check('Kapitel 6 geschafft: „Deine fünfte Woche“', e6 === 'ende' && /Deine fünfte Woche/.test(await page.textContent('.ly-k-ende')));
 await page.click('.ly-k-ende [data-a="frei"]'); await page.waitForTimeout(500);
+await page.keyboard.press('Tab'); await page.waitForSelector('.ly-k-journal'); await page.click('.ly-k-journal [data-r="leiter"]');
+check('Journal: Mutleiter mit Häkchen', (await page.$$eval('.ly-leiter li.ok', (l) => l.length)) >= 3);
+await bild('13-leiter');
+await page.keyboard.press('Escape');
+await page.keyboard.press('KeyP'); await page.waitForSelector('.ly-k-raus');
+await page.click('.ly-k-raus [data-w="sinne"]');
+check('„Kurz raus“ (P): 5-4-3-2-1 startet', /5 Dinge/.test(await page.textContent('.ly-k-raus')));
+await page.keyboard.press('Escape'); await page.waitForTimeout(300);
+check('„Kurz raus“ mit Escape geschlossen', !(await page.isVisible('.ly-k-raus')));
 // Lernstation außerhalb der Geschichte: die eigene Aufgabe kommt dran (noch nicht gelöst)
 await L(() => LYCEE.teleport({ x: -4.2, z: -26 })); await page.waitForTimeout(600);
 L(() => LYCEE.rede('laurent')); await page.waitForTimeout(400);

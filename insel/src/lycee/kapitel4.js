@@ -57,7 +57,7 @@ export const SCHRITTE4 = [
     fertig: { reden: 'laurent', gespraech: 'club' } },
   { id: 'k4_streit', kap: 4, tag: 'Freitag', uhr: 10.1, titel: 'Streit auf dem Hof', ziel: 'Ben und Jo streiten sich. Geh hin.', marker: 'ben',
     start: { teleport: 'eingangHof', gespraech: 'k4_fr' },
-    leute: { ben: [27.6, 18.4, 1.2, 'redet'], jo: [29.2, 18.9, -1.9, 'redet'], yusuf: [26.2, 21.4, 0.8], lina: [30.8, 21.8, -0.8], sommer: [16, 4, 0.4], mila: [-20, 11.6, Math.PI, 'sitzt'] },
+    leute: { ben: [27.6, 18.4, 1.2, 'redet'], jo: [29.2, 18.9, -1.9, 'redet'], yusuf: [26.2, 21.4, 0.8], lina: [30.8, 21.8, -0.8], sommer: [16, 4, 0.4], mila: [-20, 11.6, Math.PI, 'sitzt'], hoffmann: [22, 14, 0.8], noah: [25, 20.6, -0.4], luca: [31.6, 19.8, -1.6] },
     fertig: { reden: 'ben', gespraech: 'streit' } },
   { id: 'k4_ziel', kap: 4, tag: 'Freitag', uhr: 13.6, titel: 'Ein Ziel für nächste Woche', ziel: 'M. Hoffmann fragt nach euren Zielen. Sprich mit ihm.', marker: 'hoffmann',
     start: { teleport: 'saal104Tuer' },
@@ -187,7 +187,7 @@ export const GESPRAECHE4 = {
         ['kenan', 'Komm. Ich zeig’s dir. Ohne den.'],
         ['erzaehler', 'Kenan hält dich am Arm. Dreimal. Beim vierten geht es.'] ] },
       { t: '„Kein Bock heute.“ (Handy raus)', dann: [
-        ['luca', 'Feigling.'],
+        ['luca', 'Schiss, oder?'],
         ['erzaehler', 'Dario sagt nichts. Kenan fährt weiter.'] ] },
     ] },
   ],
@@ -241,7 +241,7 @@ export const GESPRAECHE4 = {
         ['erzaehler', 'Sein Ellbogen trifft deine Schulter. Aus Versehen. Wohl.'],
         ['sommer', 'Was ist hier los? Ben, Jo, {name}: mitkommen!'],
         ['sommer', 'Mir egal, wer angefangen hat. Alle drei nachsitzen.'] ] },
-      { t: 'Frau Sommer holen. Sie ist am Brunnen.', staerke: 'hilfe', merke: 'sommerGeholt', dann: [
+      { t: 'Frau Sommer holen. Sie steht am Vordach.', staerke: 'hilfe', merke: 'sommerGeholt', dann: [
         ['erzaehler', 'Du rennst. Sommer telefoniert. Sie hebt einen Finger.'],
         ['erzaehler', 'Als sie kommt, ist es vorbei.'],
         ['luca', '(im Vorbeigehen) Petze.'] ] },

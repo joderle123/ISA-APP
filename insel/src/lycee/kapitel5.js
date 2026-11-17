@@ -34,7 +34,7 @@ export const SCHRITTE5 = [
     fertig: { ort: 'meinPlatz', r: 1.1, gespraech: 'unfair' } },
   { id: 'k5_heim', kap: 5, tag: 'Freitag', uhr: 15.5, titel: 'Freitag', ziel: 'Geh zur Bushaltestelle.', marker: 'bus',
     start: { teleport: 'eingang' },
-    leute: { noah: [-21.5, 42.2, 0.3], mila: [-25.6, 42.0, -0.3], lina: [-17.4, 42.6, -1.2], fahrer: [-11.2, 44.6, -Math.PI / 2] },
+    leute: { noah: [-21.5, 42.2, 0.3], mila: [-25.6, 42.0, -0.3], lina: [-16.2, 42.8, -1.2], jo: [-17.6, 42.6, -1.2], fahrer: [-11.2, 44.6, -Math.PI / 2] },
     fertig: { ort: 'bus', r: 3.2, gespraech: 'k5_ende' } },
 ];
 
@@ -43,7 +43,7 @@ export const GESPRAECHE5 = {
     ['erzaehler', 'Vierte Woche. Montag, Mittagspause.'],
   ],
   rausgeworfen: [
-    ['erzaehler', 'Dein Handy: „Jo hat dich entfernt.“'],
+    { tu: 'entfernt' },
     ['erzaehler', 'Gruppe: „7P2 ohne Lehrer“. 19 Leute. Jetzt 18.'],
     ['erzaehler', 'Drüben lachen Jo und Ben über ein Handy.'],
     ['erzaehler', 'Noah schaut zu dir. Dann schnell weg.'],
@@ -70,7 +70,7 @@ export const GESPRAECHE5 = {
   geruecht: [
     ['ayla', '(leise) Stimmt das mit dir und Mila?'],
     ['du', 'Was?'],
-    ['ayla', 'Luca sagt, ihr seid zusammen. Ihr sitzt ja immer zusammen.'],
+    ['ayla', 'Luca sagt, ihr seid zusammen. Weil ihr ständig redet.'],
     ['erzaehler', 'Zwei Tische weiter: Mila. Sie hat es gehört.'],
     { wahl: [
       { t: '„Mila? Niemals. Ernsthaft.“', herz: { ayla: 1, mila: -2 }, merke: 'milaVerleugnet', dann: [
@@ -104,7 +104,7 @@ export const GESPRAECHE5 = {
     ['hoffmann', '{name}?'],
     { wahl: [
       { t: '„Vergessen.“', merke: 'haVergessen', dann: [
-        ['hoffmann', 'Das dritte Mal. Zettel nach Hause. Unterschrieben zurück.'] ] },
+        ['hoffmann', 'Schon wieder. Zettel nach Hause. Unterschrieben zurück.'] ] },
       { t: '„Zuhause war Stress.“', staerke: 'ehrlich', merke: 'haStress', dann: [
         ['erzaehler', 'Hinter dir wird es still. Ben dreht sich um.'],
         ['hoffmann', '(leiser) Okay. Nach der Stunde kurz?'],
@@ -149,7 +149,7 @@ export const GESPRAECHE5 = {
       { t: '„Klar. Ich lach ja auch so laut.“', herz: { hoffmann: -1, ayla: 1 }, merke: 'sarkasmus', dann: [
         ['erzaehler', 'Ein paar lachen. Hoffmann nicht.'],
         ['hoffmann', 'Jetzt erst recht. Raus.'] ] },
-      { t: '„Kann ich nach der Stunde was sagen?“', staerke: 'klar', dann: [
+      { t: '„Kann ich nach der Stunde was sagen?“', staerke: 'klar', merke: 'nachDerStunde', dann: [
         ['hoffmann', '… Okay. Aber jetzt raus.'] ] },
     ] },
     { tu: 'unfairDanach' },

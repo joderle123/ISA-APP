@@ -6,7 +6,7 @@
 // Gleicher Aufbau wie Kapitel 1 (geschichte.js). Kurze Sätze, keine Moral-Stimme, erfundene Namen.
 
 const pult = (r, c, s) => [-24.25 + r * 2.1, -27.2 + c * 3.4 + s * 0.62, -Math.PI / 2, 'sitzt'];
-const KLASSE_SITZT = { ayla: pult(0, 0, -1), ben: pult(1, 2, 1), chiara: pult(2, 1, -1), yusuf: pult(1, 0, 1), jo: pult(3, 2, -1), lina: pult(3, 0, 1), noah: pult(0, 1, 1) };
+const KLASSE_SITZT = { ayla: pult(0, 0, -1), ben: pult(1, 2, 1), chiara: pult(2, 1, -1), yusuf: pult(1, 0, 1), jo: pult(3, 2, -1), lina: pult(3, 0, 1), noah: pult(0, 1, 1), mila: pult(2, 0, 1) };
 
 export const STAERKEN2 = {
   ehrlich: { name: 'Ehrlich sein', text: 'Du hast gesagt, wie es wirklich ist.' },
@@ -116,10 +116,10 @@ export const GESPRAECHE2 = {
       { t: '„Ben, mit Lina gewinnst du eh.“', staerke: 'einbeziehen', herz: { lina: 1 }, merke: 'linaTeam', dann: [
         ['ben', 'Na hoffentlich.'],
         ['lina', '(schaut kurz hoch)'],
-        ['jo', 'Was bist du, ihr Trainer?'] ] },
+        ['jo', 'Seit wann bist du ihr Fanclub?'] ] },
       { t: '„Können wir nicht einfach abzählen?“', staerke: 'klar', herz: { sommer: 1, jo: -1 }, dann: [
         ['sommer', 'Nächstes Mal. Heute keine Zeit.'],
-        ['jo', '(leise) Streber.'] ] },
+        ['jo', '(leise) Streberalarm.'] ] },
       { t: '(Nichts sagen. Zu Jo gehen.)', dann: [['erzaehler', 'Lina geht zu Ben. Langsam.']] },
     ] },
     { tu: 'korbRunde' },
@@ -188,6 +188,9 @@ export const GESPRAECHE2 = {
   milaChat: [
     ['erzaehler', 'Mila auf der Bank. Kapuze auf. Handy in der Hand.'],
     { tu: 'milaGelacht' },
+    { tu: 'milaRest' },
+  ],
+  milaChatRest: [
     ['mila', 'Was willst du?'],
     { wahl: [
       { t: '(Hinsetzen. Nichts sagen.)', staerke: 'warten', herz: { mila: 1 }, dann: [
@@ -230,7 +233,7 @@ export const GESPRAECHE2 = {
     ['erzaehler', 'Mila schaut auf den Boden.'],
     { wahl: [
       { t: '„Ein Foto von Mila. Im Klassenchat.“', staerke: 'klar', herz: { kaya: 1, mila: 1 }, dann: [] },
-      { t: '„Mila, sag du.“', herz: { mila: -1 }, dann: [['mila', '(leise) Ein Foto. Im Chat. Von mir.']] },
+      { t: '„Mila, sag du.“', wenn: (m) => !m.ichMelde, herz: { mila: -1 }, dann: [['mila', '(leise) Ein Foto. Im Chat. Von mir.']] },
     ] },
     { tu: 'kayaBeweis' },
     ['kaya', 'Okay. Ich sag euch gleich, wie das läuft.'],
@@ -289,7 +292,7 @@ export const GESPRAECHE2 = {
       { t: '„Dann schick ich mal eins von dir.“', herz: { jo: -1, ben: 1 }, dann: [
         ['ben', 'Uuuh.'], ['jo', 'Mach doch.'], ['hoffmann', 'Stopp. Beide.'] ] },
       { t: '„Fotos nur, wenn der andere Ja sagt.“', staerke: 'klar', herz: { hoffmann: 1 }, merke: 'regelVorschlag', dann: [
-        ['jo', 'Oh Mann. Streber.'], ['ayla', 'Nee. Ich bin dafür.'] ] },
+        ['jo', 'Oh Mann. Streberalarm.'], ['ayla', 'Nee. Ich bin dafür.'] ] },
       { t: '(Nichts sagen. Soll Hoffmann machen.)', dann: [
         ['hoffmann', 'Dann schlag ich was vor: Fotos nur mit Ja.'], ['jo', '(verdreht die Augen)'] ] },
     ] },

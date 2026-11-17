@@ -59,6 +59,10 @@ export const GEHEIMNISSE = [
   { id: 'turnhalle', x: 46, z: -10, r: 3, titel: 'Die Turnhalle', text: 'Dienstags Sport. Turnschuhe nicht vergessen.' },
   { id: 'brunnen', x: -8, z: 18, r: 2.4, titel: 'Der Brunnen', text: 'Treffpunkt auf dem Hof. Hier warten viele morgens.' },
   { id: 'fahrrad', x: -38, z: 24, r: 2.4, titel: 'Die Fahrradständer', text: 'Wer mit dem Rad kommt, schließt hier ab.' },
+  { id: 'skate', x: -36, z: 12, r: 3, titel: 'Die Skate-Ecke', text: 'Rampe, Rail, Half-Pipe. Wer hinfällt, wird gefilmt.' },
+  { id: 'raucher', x: 60.4, z: -17, r: 3, titel: 'Hinter der Turnhalle', text: 'Kippen am Boden. Die Aufsicht kommt selten hierher.' },
+  { id: 'baecker', x: 2, z: 54, r: 3, titel: 'Der Bäcker gegenüber', text: 'Kirsch-Teilchen bis 10:15. Danach ist die Schlange zu lang.' },
+  { id: 'automat', x: -6.4, z: -3.1, r: 1.3, titel: 'Der Snackautomat', text: 'Frisst 50-Cent-Stücke. Alle wissen es. Alle versuchen es trotzdem.' },
 ];
 
 // Wer im Saal 1.04 sitzt (Pulte: x = −24.8 + r·2.1 + 0.55, z = −27.2 + c·3.4 ± 0.62)
@@ -249,7 +253,7 @@ export const GESPRAECHE = {
             ['luca', 'Dacht ich mir.'],
             ['erzaehler', 'Die Kumpels lachen. Du bist trotzdem gleich dran.'] ] },
         ] } ] },
-      { t: '(Nichts sagen. Aufs Handy schauen.)', staerke: 'ruhig', dann: [
+      { t: '(Nichts sagen. Aufs Handy schauen.)', staerke: 'ruhig', merke: 'nudelnAus', dann: [
         ['kremer', 'So. Nudeln sind aus. Nur noch Curry.'] ] },
       { t: '„Nimmst du mir eine mit?“', staerke: 'humor', herz: { luca: 1 }, merke: 'lucaWitz', dann: [
         ['luca', '(kurzes Grinsen) Frech.'],
@@ -260,7 +264,7 @@ export const GESPRAECHE = {
         ['erzaehler', 'Er rempelt dich an. Wie aus Versehen.'] ] },
     ] },
     { wahl: [
-      { t: 'Nudeln, bitte.', dann: [] },
+      { t: 'Nudeln, bitte.', wenn: (m) => !m.nudelnAus, dann: [] },
       { t: 'Das Curry, bitte.', dann: [] },
       { t: '(Auf das zeigen, was noch da ist.)', dann: [['kremer', 'Gute Wahl. Ist eh das Einzige.']] },
     ] },
@@ -329,12 +333,13 @@ import { SCHRITTE2, GESPRAECHE2, LEUTE2, STAERKEN2 } from './kapitel2.js';
 import { SCHRITTE3, GESPRAECHE3, LEUTE3, STAERKEN3 } from './kapitel3.js';
 import { SCHRITTE4, GESPRAECHE4, LEUTE4, STAERKEN4 } from './kapitel4.js';
 import { SCHRITTE5, GESPRAECHE5, STAERKEN5 } from './kapitel5.js';
-export const KAPITEL = { 1: 'Rentrée', 2: 'Die erste Woche', 3: 'Der Schnuppertag', 4: 'Nein sagen', 5: 'Gerüchte' };
+import { SCHRITTE6, GESPRAECHE6, STAERKEN6, LEUTE6 } from './kapitel6.js';
+export const KAPITEL = { 1: 'Rentrée', 2: 'Die erste Woche', 3: 'Der Schnuppertag', 4: 'Nein sagen', 5: 'Gerüchte', 6: 'Kleine Schritte' };
 for (const st of SCHRITTE) { st.kap = st.kap || 1; st.tag = st.tag || 'Montag'; }
-SCHRITTE.push(...SCHRITTE2, ...SCHRITTE3, ...SCHRITTE4, ...SCHRITTE5);
-Object.assign(GESPRAECHE, GESPRAECHE2, GESPRAECHE3, GESPRAECHE4, GESPRAECHE5);
-Object.assign(LEUTE, LEUTE2, LEUTE3, LEUTE4);
-Object.assign(STAERKEN, STAERKEN2, STAERKEN3, STAERKEN4, STAERKEN5);
+SCHRITTE.push(...SCHRITTE2, ...SCHRITTE3, ...SCHRITTE4, ...SCHRITTE5, ...SCHRITTE6);
+Object.assign(GESPRAECHE, GESPRAECHE2, GESPRAECHE3, GESPRAECHE4, GESPRAECHE5, GESPRAECHE6);
+Object.assign(LEUTE, LEUTE2, LEUTE3, LEUTE4, LEUTE6);
+Object.assign(STAERKEN, STAERKEN2, STAERKEN3, STAERKEN4, STAERKEN5, STAERKEN6);
 
 // Sprecher-Namen und Farben (Erzähler, du)
-export const SPRECHER = { erzaehler: { name: '', farbe: '#5b6472' }, du: { name: 'Du', farbe: '#2b3a55' } };
+export const SPRECHER = { erzaehler: { name: '', farbe: '#5b6472' }, du: { name: 'Du', farbe: '#2b3a55' }, kopf: { name: 'Dein Kopf', farbe: '#7d8796' }, kritiker: { name: 'Der Kritiker', farbe: '#a34a4a' } };

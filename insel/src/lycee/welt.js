@@ -446,6 +446,21 @@ export function baueWelt({ material, materialInnen }) {
   box(-45.9, -45.5, 0, 2.6, 9, 18.4, C.beton, { stoss: true }); box(-46, -45.4, 2.6, 2.7, 8.9, 18.5, C.sockel);
   { const g = graffiti(['SKATE', 'K+D', '7P2'], 9.4, 2.4, 3); g.position.set(-45.45, 1.3, 13.7); g.rotation.y = Math.PI / 2; schilder.push(g); }
 
+  // ---- Bäcker gegenüber (Südseite der Straße): Schaufenster, Markise, Schild – in der Pause stehen sie hier an ----
+  box(-6, 10, 0, 4.2, 57, 64, C.gesims, { stoss: true });
+  box(-6.2, 10.2, 4.2, 4.5, 56.8, 64.2, C.schiefer);
+  box(-5, 2.2, 0.5, 2.6, 56.92, 57.0, C.glas, { art: 'glas' }); box(4.2, 9, 0.5, 2.6, 56.92, 57.0, C.glas, { art: 'glas' });
+  box(2.6, 3.8, 0, 2.4, 56.9, 57.0, C.holz);
+  for (let i = 0; i < 8; i++) box(-6 + i * 2, -4 + i * 2, 2.8, 2.95, 55.8, 57, i % 2 ? C.rot : C.zettel[4]);   // Markise
+  box(-5, 2.2, 0.5, 0.9, 57.0, 57.6, C.holzHell); for (let i = 0; i < 6; i++) box(-4.6 + i * 1.1, -4.0 + i * 1.1, 0.9, 1.05, 57.1, 57.5, i % 2 ? C.gelb : C.holz);   // Auslage
+  { const b = schild('Boulangerie des Collines', 6.2, 0.7, { bg: '#2f4f45', rand: '#e9c46a', schrift: 'bold 120px Georgia, serif' }); b.position.set(2, 3.5, 56.78); b.rotation.y = Math.PI; schilder.push(b); }
+  { const z = schild('Kirsch-Teilchen 1,50 €', 1.6, 0.5, { bg: '#ffffff', fg: '#c0392b', rand: '#c0392b', schrift: 'bold 80px system-ui' }); z.position.set(6.6, 1.7, 56.9); z.rotation.y = Math.PI; schilder.push(z); }
+
+  // ---- Snackautomat in der Halle (frisst Münzen) ----
+  box(-7.85, -7.0, 0, 1.9, -3.6, -2.6, C.metallDunkel, { art: 'innen', stoss: true });
+  box(-7.02, -6.98, 0.7, 1.75, -3.5, -2.7, C.glas, { art: 'glas' });
+  for (let r = 0; r < 4; r++) for (let c = 0; c < 3; c++) box(-7.3, -7.05, 0.8 + r * 0.24, 0.95 + r * 0.24, -3.4 + c * 0.25, -3.25 + c * 0.25, [C.rot, C.gelb, C.blau, C.gruen][(r + c) % 4], { art: 'innen' });
+
   // ---- Raucherecke hinter der Turnhalle (Osten): da, wo die Aufsicht selten hinschaut ----
   box(58.2, 64, 0.06, 0.1, -26, -9, C.pflaster2, { art: 'innen' });
   P('skate/bench', 61.8, -20.5, -Math.PI / 2, { h: 0.55, fest: true });

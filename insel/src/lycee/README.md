@@ -32,6 +32,18 @@ alles zusammenpasst.
 - **Kapitel 5 „Gerüchte“** (kapitel5.js): aus der Klassengruppe geworfen, ein Bild von dir geht rum (welches, hängt von
   früher ab: Sturz an der Skate-Ecke, Fundkiste-Schuhe …) · Gerücht „du und Mila“ · schlechter Morgen nach Stress
   zuhause (niemand muss erzählen) · zu Unrecht rausgeschickt · Freitag: was hängen bleibt (gefälschte Unterschrift?).
+- **Kapitel 6 „Kleine Schritte“** (kapitel6.js): zugeschnitten auf die Jugendlichen der Förderklasse (Angst vor Blicken
+  und Bewertung, Einfrieren, Rückzug, Fehlerangst – nur verallgemeinerte Muster, keine Einzelheiten aus Unterlagen).
+  Montagmorgen am Tor (Umdrehen tut sofort gut und macht den nächsten Morgen schwerer) · Herr Kaya: kurzer Check-in,
+  eigene **Mutleiter** sortieren, „Gleich“-Karte · Stufe 1 in der Pause: **Mutprobe** mit Anspannung live (steigt erst,
+  fällt beim Bleiben; Weggehen erlaubt und zählt) · Lachen im Gang: „Dein Kopf“ und Gedanken prüfen (wie sicher? vorher
+  und nachher) · Drangenommen: Erstarren, „Gleich“, Karte, Klo – jede Wahl mit echter Folge · Test mit viel Rot und dem
+  „Kritiker“ · Freitag: eigene Stufe (Bäcker oder Kantine) oder ehrlich „heute keine“ · Wochenrückblick vorher/nachher.
+  Ansätze: gestufte Exposition, kognitive Umstrukturierung, nonverbales Hilfesignal, Selbstbeobachtung, feste Bezugsperson.
+- **„Kurz raus“ (⏸ / P):** jederzeit (außer mitten im Gespräch, aber während einer Mutprobe): Atmen oder 5-4-3-2-1.
+- **Zweite Jugend-Kritik (17.11.2026, Schnitt 3,2):** Logikfehler behoben (Mila im Klassenrat, Folgen zu früh gefragt,
+  Weggehen bei Mila, Kenan am Bus, Hoffmann und „Zuhause“, Bens Schulden, Nudeln, unsichtbare Sprecher, männliche
+  Anreden). Antworten können jetzt von früheren Entscheidungen abhängen (`wenn` auch je Antwort).
 - **Jugend-Kritik (17.11.2026, Panel K./S./D., Schnitt vorher 1,8 von 5)** umgesetzt: keine Glocke und keine Herzen
   nach jeder Antwort (Tagesrückblick beim Tageswechsel, Stärken still im Journal), Antworten in gemischter
   Reihenfolge, echte Versuchungen (Witz, Handy, Lügen, Decken, Screenshot, Mitlachen, Weggehen), Erwachsene mit
@@ -47,7 +59,7 @@ alles zusammenpasst.
 - **Lebendiger Hof:** Statisten laufen über Hof und Gang.
 - **Ohne Bewertung:** Jede Wahl hat eine ruhige Folge bei den Menschen (Herzen). Gezeigte
   Stärken werden gesammelt (Kontakt aufnehmen, Freundlich und klar, Zuhören, Ruhig bleiben …).
-- **Journal (Tab / ☰):** Menschen, Stärken, Stundenplan, Entdeckungen (8 Orte).
+- **Journal (Tab / ☰):** Menschen, Stärken, Stundenplan, Entdeckungen (12 Orte), Mutleiter (ab Kapitel 6).
 - Vorlesen jeder Sprechblase (🔊). Gespeichert nur im Browser (`lycee.stand`).
 
 ## Dateien
@@ -56,4 +68,4 @@ Sitzen) · `steuerung.js` Laufen und Kamera · `geschichte.js` Kapitel, Gespräc
 `ui.js` Oberfläche · `spiel.js` Kern · `main.js`, `shell.html`, `stil.css`.
 
 ## Nächste Schritte
-Kapitel 6; Phase 2 ausbauen (Aufgaben aus dem Hub, mehr Lernmomente); Phase 3 (Werkstatt: Arbeitssimulator DAP/CCP).
+Kapitel 7 „Praktikum“ (Vorschlag der zweiten Kritik, nutzt viele alte Folgen); 15 Szenen aus der zweiten Kritik neu schreiben; Phase 2 ausbauen (Aufgaben aus dem Hub, mehr Lernmomente); Phase 3 (Werkstatt: Arbeitssimulator DAP/CCP).

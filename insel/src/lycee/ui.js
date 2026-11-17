@@ -12,14 +12,15 @@ export function createUI({ root, input, speech }) {
   const hinweis = el('button', 'ly-hinweis'); hinweis.type = 'button'; hinweis.hidden = true; hud.appendChild(hinweis);
   const toastBox = el('div', 'ly-toasts'); hud.appendChild(toastBox);
   const bingo = el('div', 'ly-bingo hud-interactive'); bingo.hidden = true; hud.appendChild(bingo);
-  const knoepfe = el('div', 'ly-knoepfe', '<button type="button" data-k="journal" title="Journal (Tab)" aria-label="Journal">☰</button>'); hud.appendChild(knoepfe);
+  const knoepfe = el('div', 'ly-knoepfe', '<button type="button" data-k="raus" title="Kurz raus (P)" aria-label="Kurz raus">⏸</button><button type="button" data-k="journal" title="Journal (Tab)" aria-label="Journal">☰</button>'); hud.appendChild(knoepfe);
+  const mutEl = el('div', 'ly-mut'); mutEl.hidden = true; hud.appendChild(mutEl);   // Anspannung während einer Mutprobe
   const dialog = el('div', 'ly-dialog hud-interactive'); dialog.hidden = true; root.appendChild(dialog);
   const ebene = el('div', 'ly-ebene hud-interactive'); ebene.hidden = true; root.appendChild(ebene);
   // Touch: Joystick-Bild und Aktionsknopf
   const stick = el('div', 'ly-stick', '<span></span>'); hud.appendChild(stick);
   const akt = el('button', 'ly-akt', 'E'); akt.type = 'button'; akt.setAttribute('aria-label', 'Reden / weiter'); hud.appendChild(akt);
   let dialogOffen = false, weiterFn = null, wahlFn = null, wahlReihe = [];
-  const ui = { dialogOffen: () => dialogOffen || !ebene.hidden, onJournal: null, onAktion: null };
+  const ui = { dialogOffen: () => dialogOffen || !ebene.hidden, onJournal: null, onAktion: null, onRaus: null };
 
   // ---------- Auftrag, Raum, Uhr, Hinweis, Toasts ----------
   ui.auftrag = ({ kapitel, titel, ziel, dist } = {}) => {
@@ -73,10 +74,11 @@ export function createUI({ root, input, speech }) {
   // Tasten: im Gespräch E/Enter/Leertaste = weiter, 1–3 = Antwort; sonst Tab = Journal
   document.addEventListener('keydown', (e) => {
     const art = ebene.hidden ? '' : ebene.dataset.art;
-    if (art && e.code === 'Escape') { if (art === 'journal') { ebeneZu(); e.preventDefault(); } return; }
+    if (art && e.code === 'Escape') { if (art === 'journal') { ebeneZu(); e.preventDefault(); } else if (art === 'raus' && ui.rausZu) { ui.rausZu(); e.preventDefault(); } return; }
     if (e.target && e.target.closest && e.target.closest('input, textarea, select')) return;   // Tippen in Feldern (Name, Lehrpersonen-Editor)
     if (art === 'lehrer') return;
     if (e.code === 'Tab') { e.preventDefault(); if (ebene.hidden && !dialogOffen) ui.onJournal && ui.onJournal(); else if (ebene.dataset.art === 'journal') ebeneZu(); return; }
+    if (e.code === 'KeyP' && ebene.hidden && !dialogOffen) { e.preventDefault(); ui.onRaus && ui.onRaus(); return; }
     if (!dialogOffen) return;
     // Taste hier verbrauchen: sonst sieht die Spielsteuerung dasselbe E und startet gleich das nächste Gespräch
     if (wahlFn && /^Digit[1-5]$/.test(e.code)) { e.preventDefault(); e.stopPropagation(); const i = wahlReihe[+e.code.slice(5) - 1]; if (i !== undefined) wahlFn(i); return; }
@@ -85,6 +87,7 @@ export function createUI({ root, input, speech }) {
   }, true);
   dialog.addEventListener('click', (e) => { if (weiterFn && !e.target.closest('button')) weiterFn(); });
   akt.addEventListener('pointerdown', (e) => { e.preventDefault(); e.stopPropagation(); if (weiterFn) weiterFn(); else if (ui.onAktion) ui.onAktion(); });
+  knoepfe.querySelector('[data-k="raus"]').onclick = () => { if (ebene.hidden && !dialogOffen) ui.onRaus && ui.onRaus(); else if (ebene.dataset.art === 'raus' && ui.rausZu) ui.rausZu(); };
   knoepfe.querySelector('[data-k="journal"]').onclick = () => { if (ebene.hidden) ui.onJournal && ui.onJournal(); else ebeneZu(); };
 
   // ---------- Bingo-Karte ----------
@@ -100,15 +103,16 @@ export function createUI({ root, input, speech }) {
   function ebeneZu() { ebene.hidden = true; ebene.innerHTML = ''; ebene.dataset.art = ''; }
   ui.ebeneZu = ebeneZu;
 
-  ui.journal = ({ name, stundenplan, leute, staerken, geheimnisse, gesamt, lernkarten = [] }) => {
+  ui.journal = ({ name, stundenplan, leute, staerken, geheimnisse, gesamt, lernkarten = [], leiter = null }) => {
     const k = ebeneAuf('journal', '<button type="button" class="ly-zu" aria-label="Schließen">✕</button><h2>Journal von ' + esc(name) + '</h2>' +
-      '<div class="ly-j-reiter"><button type="button" data-r="leute" class="an">Menschen</button><button type="button" data-r="staerken">Stärken</button><button type="button" data-r="plan">Stundenplan</button><button type="button" data-r="ent">Entdeckt ' + geheimnisse.length + '/' + gesamt + '</button></div><div class="ly-j-inhalt"></div>');
+      '<div class="ly-j-reiter"><button type="button" data-r="leute" class="an">Menschen</button><button type="button" data-r="staerken">Stärken</button><button type="button" data-r="plan">Stundenplan</button><button type="button" data-r="ent">Entdeckt ' + geheimnisse.length + '/' + gesamt + '</button>' + (leiter ? '<button type="button" data-r="leiter">Mutleiter</button>' : '') + '</div><div class="ly-j-inhalt"></div>');
     const inhalt = k.querySelector('.ly-j-inhalt');
     const zeige = (r) => {
       k.querySelectorAll('[data-r]').forEach((b) => b.classList.toggle('an', b.dataset.r === r));
       if (r === 'leute') inhalt.innerHTML = leute.length ? '<ul class="ly-j-leute">' + leute.map((l) => '<li><span class="ly-j-name" style="--f:' + esc(l.farbe) + '">' + esc(l.name) + '</span><span class="ly-herzen" aria-label="' + l.herz + ' von 5">' + '♥'.repeat(Math.max(0, Math.min(5, l.herz))) + '<i>' + '♥'.repeat(5 - Math.max(0, Math.min(5, l.herz))) + '</i></span><small>' + esc(l.notiz || '') + '</small></li>').join('') + '</ul>' : '<p class="ly-leer">Noch niemanden kennengelernt.</p>';
       if (r === 'staerken') inhalt.innerHTML = staerken.length ? '<ul class="ly-j-staerken">' + staerken.map((s) => '<li><b>' + esc(s.name) + (s.n > 1 ? ' <span>×' + s.n + '</span>' : '') + '</b><small>' + esc(s.text) + '</small></li>').join('') + '</ul>' : '<p class="ly-leer">Stärken erscheinen hier, sobald du sie zeigst.</p>';
       if (r === 'plan') inhalt.innerHTML = stundenplan ? '<table class="ly-plan"><tr><th></th><th>Mo</th><th>Di</th><th>Mi</th></tr><tr><td>8:00</td><td>Klassenstunde</td><td>Mathe</td><td>Deutsch</td></tr><tr><td>10:15</td><td>Französisch</td><td>Sport</td><td>Atelier</td></tr><tr><td>13:30</td><td>Projekt</td><td>Englisch</td><td>–</td></tr></table><p class="ly-leer">Saal 1.04 · Klassenlehrer M. Hoffmann</p>' + (lernkarten.length ? '<h3>Gelernt</h3><ul class="ly-j-staerken">' + lernkarten.map((l) => '<li><b>' + esc(l) + '</b></li>').join('') + '</ul>' : '') : '<p class="ly-leer">Den Stundenplan gibt es im Sekretariat.</p>';
+      if (r === 'leiter' && leiter) inhalt.innerHTML = '<ol class="ly-leiter">' + leiter.stufen.slice().reverse().map((l) => '<li class="' + (l.status || '') + '"><b>' + esc(l.t) + '</b><small>' + esc(l.notiz || '') + '</small></li>').join('') + '</ol><p class="ly-leer">Oben das Schwerste. ✓ = geschafft, ◐ = probiert. Probiert zählt.</p>';
       if (r === 'ent') inhalt.innerHTML = geheimnisse.length ? '<ul class="ly-j-staerken">' + geheimnisse.map((g) => '<li><b>' + esc(g.titel) + '</b><small>' + esc(g.text) + '</small></li>').join('') + '</ul>' : '<p class="ly-leer">Schau dich um! Im Lycée gibt es einiges zu entdecken.</p>';
     };
     k.querySelectorAll('[data-r]').forEach((b) => { b.onclick = () => zeige(b.dataset.r); });
@@ -430,6 +434,88 @@ export function createUI({ root, input, speech }) {
     };
     document.addEventListener('keydown', taste, true);
     zeige();
+  });
+
+  // ---------- Kapitel 6: kleine Schritte ----------
+  // Skala 1–5 („Wie stark ist es gerade?“): kein Richtig oder Falsch, nur ein kurzer Blick nach innen
+  ui.skala = ({ kicker = 'Kurzer Check', frage, links = 'ganz ruhig', rechts = 'sehr stark' }) => new Promise((ok) => {
+    const k = ebeneAuf('skala', '<div class="ly-t-kicker">' + esc(kicker) + '</div><h2>' + esc(frage) + '</h2><div class="ly-skala">' +
+      [1, 2, 3, 4, 5].map((n) => '<button type="button" data-s="' + n + '" style="--n:' + n + '"><kbd>' + n + '</kbd></button>').join('') +
+      '</div><div class="ly-skala-ende"><span>' + esc(links) + '</span><span>' + esc(rechts) + '</span></div>');
+    const fertig = (n) => { document.removeEventListener('keydown', taste, true); ebeneZu(); ok(n); };
+    const taste = (e) => { if (/^Digit[1-5]$/.test(e.code)) { e.preventDefault(); e.stopPropagation(); fertig(+e.code.slice(5)); } };
+    document.addEventListener('keydown', taste, true);
+    k.querySelectorAll('[data-s]').forEach((b) => { b.onclick = () => fertig(+b.dataset.s); });
+  });
+
+  // Eigene Reihenfolge (Mutleiter): leichtestes zuerst antippen. Es gibt keine richtige Reihenfolge.
+  ui.sortieren = ({ titel, frage, teile }) => new Promise((ok) => {
+    const k = ebeneAuf('sort', '<div class="ly-t-kicker">' + esc(titel) + '</div><h2>' + esc(frage) + '</h2><ol class="ly-r-fertig"></ol><div class="ly-d-optionen"></div>');
+    const liste = k.querySelector('.ly-r-fertig'), opt = k.querySelector('.ly-d-optionen'), gewaehlt = [];
+    const fertig = () => { document.removeEventListener('keydown', taste, true); ebeneZu(); ok(gewaehlt.slice()); };
+    const rest = () => teile.filter((t) => !gewaehlt.includes(t.id));
+    const zeige = () => {
+      liste.innerHTML = gewaehlt.map((id, i) => '<li>' + (i === 0 ? '<b>Unten:</b> ' : '') + esc(teile.find((t) => t.id === id).t) + '</li>').join('');
+      if (!rest().length) { opt.innerHTML = '<p class="ly-ich-gut">Deine Leiter. Oben das Schwerste.</p><button type="button" class="ly-btn ly-primaer" data-a="w">Weiter <kbd>E</kbd></button>'; opt.querySelector('[data-a]').onclick = fertig; return; }
+      opt.innerHTML = rest().map((t, j) => '<button type="button" data-k="' + esc(t.id) + '"><kbd>' + (j + 1) + '</kbd><span>' + esc(t.t) + '</span></button>').join('');
+      opt.querySelectorAll('[data-k]').forEach((b) => { b.onclick = () => { gewaehlt.push(b.dataset.k); zeige(); }; });
+    };
+    const taste = (e) => {
+      if (!rest().length) { if (e.code === 'KeyE' || e.code === 'Enter') { e.preventDefault(); e.stopPropagation(); fertig(); } return; }
+      if (/^Digit[1-5]$/.test(e.code)) { e.preventDefault(); e.stopPropagation(); const t = rest()[+e.code.slice(5) - 1]; if (t) { gewaehlt.push(t.id); zeige(); } }
+    };
+    document.addEventListener('keydown', taste, true);
+    zeige();
+  });
+
+  // Anspannung live (oben in der Mitte): Zahl, Balken und Verlauf. Sie steigt erst und fällt dann – wenn man bleibt.
+  ui.mut = (m) => {
+    if (!m) { mutEl.hidden = true; mutEl.innerHTML = ''; return; }
+    mutEl.hidden = false;
+    const v = m.verlauf || [], n = Math.max(2, v.length);
+    const pkt = v.map((w, i) => (i / (n - 1) * 120).toFixed(1) + ',' + (34 - w / 10 * 32).toFixed(1)).join(' ');
+    mutEl.innerHTML = '<div class="ly-mut-kopf">' + esc(m.titel) + '</div>' +
+      '<div class="ly-mut-zeile"><span class="ly-mut-wort">Anspannung</span><b>' + Math.round(m.wert) + '</b><span class="ly-mut-bar"><i style="width:' + Math.round(m.wert * 10) + '%"></i></span></div>' +
+      '<svg class="ly-mut-kurve" viewBox="0 0 120 36" aria-hidden="true"><polyline points="' + pkt + '"/></svg>' +
+      '<div class="ly-mut-fuss">' + esc(m.hinweis || '') + (m.rest > 0 ? ' · noch ' + m.rest + ' s' : '') + '</div>';
+  };
+
+  // „Kurz raus“: Das Spiel wartet. Atmen, 5-4-3-2-1 oder einfach zurück. Jederzeit, außer mitten im Gespräch.
+  ui.kurzRaus = () => new Promise((ok) => {
+    const SINNE = ['Schau dich um. Finde 5 Dinge, die du siehst.', 'Hör hin. 4 Geräusche, ganz egal welche.', 'Spür 3 Dinge: Füße am Boden, Stuhl, Ärmel.', '2 Dinge, die du riechst. Oder 2 Lieblingsgerüche.', 'Ein Atemzug. Ganz langsam aus.'];
+    let zu = false;
+    const ende = () => { if (zu) return; zu = true; ui.rausZu = null; ebeneZu(); ok(); };
+    ui.rausZu = ende;
+    const start = () => {
+      const k = ebeneAuf('raus', '<div class="ly-t-kicker">Kurz raus</div><h2>Das Spiel wartet.</h2><p class="ly-leer">Was hilft dir gerade?</p><div class="ly-d-optionen">' +
+        '<button type="button" data-w="atem"><kbd>1</kbd><span>Atmen mit dem Kreis</span></button>' +
+        '<button type="button" data-w="sinne"><kbd>2</kbd><span>5-4-3-2-1: zurück ins Hier</span></button>' +
+        '<button type="button" data-w="zu"><kbd>3</kbd><span>Zurück ins Spiel</span></button></div>');
+      k.querySelectorAll('[data-w]').forEach((b) => { b.onclick = () => wahl(b.dataset.w); });
+    };
+    const sinne = (i) => {
+      if (i >= SINNE.length) { start(); return; }
+      const k = ebeneAuf('raus', '<div class="ly-t-kicker">5-4-3-2-1</div><h2>' + esc(SINNE[i]) + '</h2><p class="ly-leer">Lass dir Zeit. Niemand wartet.</p><button type="button" class="ly-btn ly-primaer" data-a="w">Weiter</button>');
+      k.querySelector('[data-a]').onclick = () => sinne(i + 1);
+    };
+    const wahl = async (w) => {
+      if (w === 'atem') { await ui.atem(); if (!zu) start(); }
+      else if (w === 'sinne') sinne(0);
+      else ende();
+    };
+    start();
+  });
+
+  // Wochenrückblick: vorher und nachher, ohne Bewertung
+  ui.woche = (eintraege) => new Promise((ok) => {
+    const balken = (n, max) => '<span class="ly-w-bar"><i style="width:' + Math.round(n / max * 100) + '%"></i></span>';
+    const k = ebeneAuf('woche', '<div class="ly-t-kicker">Deine Woche</div><h2>Vorher und nachher</h2>' + (eintraege.length ? '<ul class="ly-woche">' + eintraege.map((e) =>
+      '<li><b>' + esc(e.titel) + '</b><div><small>vorher</small>' + balken(e.vorher, 5) + '<em>' + e.vorher + '</em></div><div><small>nachher</small>' + balken(e.nachher, 5) + '<em>' + e.nachher + '</em></div><small class="ly-w-notiz">' + esc(e.notiz || '') + '</small></li>').join('') + '</ul>' : '<p class="ly-leer">Diese Woche gab es keine Stufe. Auch okay.</p>') +
+      '<button type="button" class="ly-btn ly-primaer" data-a="w">Weiter <kbd>E</kbd></button>');
+    const fertig = () => { document.removeEventListener('keydown', taste, true); ebeneZu(); ok(); };
+    const taste = (e) => { if (e.code === 'KeyE' || e.code === 'Enter') { e.preventDefault(); e.stopPropagation(); fertig(); } };
+    document.addEventListener('keydown', taste, true);
+    k.querySelector('[data-a]').onclick = fertig;
   });
 
   // Tagesrückblick beim Tageswechsel: wer dir näher oder ferner ist (statt sofortiger Herzen nach jeder Antwort)

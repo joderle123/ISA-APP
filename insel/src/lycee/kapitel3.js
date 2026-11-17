@@ -26,7 +26,7 @@ export const SCHRITTE3 = [
     fertig: { reden: 'noah', gespraech: 'telefon' } },
   { id: 'k3_spaet', kap: 3, tag: 'Montag', uhr: 8.45, titel: 'Zu spät', ziel: 'Geh in Saal 1.04 zu M. Hoffmann.', marker: 'hoffmann',
     start: { teleport: 'eingang' },
-    leute: { hoffmann: [-27, -24, Math.PI / 2], ayla: [-24.25, -27.82, -Math.PI / 2, 'sitzt'], ben: [-22.15, -19.78, -Math.PI / 2, 'sitzt'], chiara: [-20.05, -24.42, -Math.PI / 2, 'sitzt'], yusuf: [-22.15, -26.58, -Math.PI / 2, 'sitzt'], jo: [-17.95, -21.02, -Math.PI / 2, 'sitzt'], lina: [-17.95, -26.58, -Math.PI / 2, 'sitzt'], mila: [-20.05, -23.18, -Math.PI / 2, 'sitzt'] },
+    leute: { hoffmann: [-27, -24, Math.PI / 2], ayla: [-24.25, -27.82, -Math.PI / 2, 'sitzt'], ben: [-22.15, -19.78, -Math.PI / 2, 'sitzt'], chiara: [-20.05, -24.42, -Math.PI / 2, 'sitzt'], yusuf: [-22.15, -26.58, -Math.PI / 2, 'sitzt'], jo: [-17.95, -21.02, -Math.PI / 2, 'sitzt'], lina: [-17.95, -26.58, -Math.PI / 2, 'sitzt'], mila: [-20.05, -23.18, -Math.PI / 2, 'sitzt'], noah: [-20.6, -17.2, Math.PI] },
     fertig: { reden: 'hoffmann', gespraech: 'spaet' } },
   { id: 'k3_atelier', kap: 3, tag: 'Montag', uhr: 9.6, titel: 'Die Werkstatt', ziel: 'Geh zur Werkstatt. Meister Becker wartet.', marker: 'becker',
     start: { teleport: 'eingangHof' },
@@ -138,7 +138,7 @@ export const GESPRAECHE3 = {
   ],
   tor: [
     ['erzaehler', 'Am Tor. Kenan und Dario rauchen. Einen Schritt draußen.'],
-    ['kenan', 'Hey, Regal-Partner. Willst du?'],
+    ['kenan', 'Hey. Regal-Team. Willst du?'],
     ['erzaehler', 'Er hält dir die Schachtel hin. Dario schaut zu.'],
     { wahl: [
       { t: '„Nee. Schmeckt wie Aschenbecher.“', staerke: 'neinsagen', dann: [
