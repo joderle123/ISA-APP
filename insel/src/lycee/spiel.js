@@ -16,6 +16,7 @@ import { baueRequisiten, stelle } from './requisiten.js';
 import { ladePerson, namensschild, SITZ } from './figuren.js';
 import { fussSchatten } from './texturen.js';
 import { createInteraktionen } from './interaktion.js';
+import { FAEDEN } from './faeden.js';
 import { BLAETTER } from './blaetter.js';
 import { MATHE, matheBlatt } from './mathe.js';
 import { createSteuerung } from './steuerung.js';
@@ -1042,6 +1043,19 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       await gespraech([['laurent', 'Hallo {name}! Lust auf ein paar Aufgaben?'], { wahl: [{ t: 'Ja, gern.', dann: [{ tu: 'lernmoment' }, ['laurent', 'Schön. Komm wieder, wann du willst.']] }, { t: 'Heute nicht.', dann: [['laurent', 'Kein Problem. Ich bin da.']] }] }]);
       return;
     }
+    // Gesprächsfaden (faeden.js): ein tieferes Gespräch, wenn die Freundschaft gewachsen ist – je Person höchstens eins
+    // pro Abschnitt der Geschichte (nach dem Ende: alle zehn Minuten), damit sie sich über die Wochen verteilen
+    const fd = FAEDEN[id];
+    if (fd) {
+      S.faeden = S.faeden || {};
+      const n = S.faeden[id] || 0, fa = fd[n], abschnitt = S.fertig ? 'e' + Math.floor(Date.now() / 600000) : String(S.schritt);
+      if (fa && (S.herz[id] == null ? 1 : S.herz[id]) >= fa.herz && S.merke['fd_' + id] !== abschnitt) {
+        S.merke['fd_' + id] = abschnitt; S.faeden[id] = n + 1; sichern();
+        await gespraech(fa.g);
+        ui.toast('<b>' + LEUTE[id].name + ': „' + fa.titel + '“</b><span>Gesprächsfaden ' + (n + 1) + ' von ' + fd.length + '</span>');
+        return;
+      }
+    }
     // sonst: kurz plaudern
     const l = PLAUDERN[id] || ['Hi.'];
     const n = (S.merke['p_' + id] = ((S.merke['p_' + id] || 0) + 1));
@@ -1100,7 +1114,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   function bilanz() {
     return {
       name: S.name,
-      leute: Object.entries(S.herz).filter(([id]) => LEUTE[id]).map(([id, h]) => ({ name: LEUTE[id].name, farbe: LEUTE[id].farbe, herz: h, notiz: '' })).sort((a, b) => b.herz - a.herz),
+      leute: Object.entries(S.herz).filter(([id]) => LEUTE[id]).map(([id, h]) => ({ name: LEUTE[id].name, farbe: LEUTE[id].farbe, herz: h, notiz: FAEDEN[id] ? FAEDEN[id].slice(0, (S.faeden || {})[id] || 0).map((f) => f.titel).join(' · ') + ((S.faeden || {})[id] >= FAEDEN[id].length ? '' : ((S.faeden || {})[id] ? ' · …' : '')) : '' })).sort((a, b) => b.herz - a.herz),
       staerken: Object.entries(S.staerken).map(([k, n]) => ({ ...STAERKEN[k], n })),
       entdeckt: S.entdeckt.length, gesamt: GEHEIMNISSE.length,
     };
@@ -1171,11 +1185,38 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (r.richtig === r.gesamt) staerke('dranbleiben');
     sichern();
   }
+  // ---------- Skateboard fahren (Skate-Ecke): 60 Sekunden, Punkte für Ollies und Sprünge über Rail, Box, Bank ----------
+  let skateTick = null;
+  function skaten() {
+    return new Promise((ok) => {
+      let m = null;
+      const g = req.geo['skate/skateboard'];
+      if (g && spieler) { m = new THREE.Mesh(stelle(g, { x: 0, z: 0, s: 0.8, rot: Math.PI / 2 }), material); m.position.y = -0.08; spieler.group.add(m); }
+      let punkte = 0, rest = 60, fertig = false;
+      const ende = () => {
+        if (fertig) return; fertig = true; skateTick = null;
+        steuerung.brett = null; steuerung.tempo = 0; steuerung.pos.y = 0;
+        if (m) spieler.group.remove(m);
+        ui.skate(null); input.release('jump'); ok(punkte);
+      };
+      steuerung.brett = { y: 0, vy: 0, ueber: new Set(), start: 0, bereich: [-45.3, -28.3, 3.5, 18.7],
+        onTrick: (name, p) => { punkte += p; ton('pling'); ui.skate({ punkte, trick: name + ' +' + p }); },
+        onRaus: ende };
+      ui.skate({ rest, punkte, weg: ende });
+      skateTick = (dt) => {
+        rest -= dt;
+        if (rest <= 0 || imGespraech) { ende(); return; }
+        if (rest < 59.4 && input.state.action) { ende(); return; }   // E noch einmal = absteigen (nicht das Loslassen vom Start)
+        ui.skate({ rest: Math.ceil(rest) });
+      };
+    });
+  }
   const ia = createInteraktionen({ welt, steuerung, ui, zustand: () => S, sichern: () => sichern(), ton, blattWahl,
-    freiwurf: async () => ui.freiwurf() });
+    freiwurf: async () => ui.freiwurf(), skate: () => skaten() });
   let iaNah = null;
   async function aktion(i) {
     if (i.tu === 'sitzen') { await ia.tu(i); sperreBis = performance.now() + 350; return; }
+    if (i.tu === 'skate') { ui.hinweis(null); await ia.tu(i); sperreBis = performance.now() + 500; return; }
     imGespraech = true; input.setEnabled(false); steuerung.frei = false; ui.hinweis(null);
     try { await ia.tu(i); } finally { imGespraech = false; input.setEnabled(true); steuerung.frei = true; sperreBis = performance.now() + 350; }
   }
@@ -1187,6 +1228,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   loop.add((dt) => {
     if (!laeuft) { camera.position.set(-36, 16, 64); camera.lookAt(0, 6, -10); return; }
     steuerung.update(dt);
+    if (skateTick) skateTick(dt);
     if (spieler) spieler.update(dt);
   }, { order: -50, always: true });
   loop.add((dt, t) => {
@@ -1228,14 +1270,14 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (rid !== raumAlt) { if (raumAlt !== undefined) ui.raum(raum ? raum.name : 'Schulhof'); raumAlt = rid; }
     raumLicht.intensity += ((raum ? 1.15 : 0) - raumLicht.intensity) * Math.min(1, dt * 3);
     // Ansprechen
-    naechste = imGespraech ? null : wenNah();
-    iaNah = !naechste && !imGespraech && !probe ? ia.naechste(p) : null;
+    naechste = imGespraech || steuerung.brett ? null : wenNah();
+    iaNah = !naechste && !imGespraech && !probe && !steuerung.brett ? ia.naechste(p) : null;
     ui.hinweis(naechste ? 'Mit ' + naechste.def.name + ' reden' : iaNah ? iaNah.text : null);
     if (!imGespraech && !gesperrt() && (input.state.actionTap || input.state.action)) { if (naechste) rede(naechste.id); else if (iaNah) aktion(iaNah); }
     // Orte, die etwas auslösen
     const st = SCHRITTE[S.schritt];
     if (probe) probeSchritt(dt, p);
-    if (!imGespraech && !startet && st && !S.fertig && st.fertig.ort) {
+    if (!imGespraech && !startet && !steuerung.brett && st && !S.fertig && st.fertig.ort) {
       const o = welt.orte[st.fertig.ort];
       if (Math.hypot(o.x - p.x, o.z - p.z) < st.fertig.r) { const g = GESPRAECHE[st.fertig.gespraech]; gespraech(g).then(() => { if (g.some((z) => z && z.tu === 'kapitelEnde')) return; naechster(); }); }
     }

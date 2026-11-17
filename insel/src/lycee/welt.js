@@ -487,7 +487,8 @@ export function baueWelt({ material, materialInnen }) {
     boden: (x0, x1, z0, z1, art) => boeden.push(art === 'pflaster' ? { x0, x1, z0, z1, pflaster: true } : art === 'holz' ? { x0, x1, z0, z1, holz: true } : { x0, x1, z0, z1, c1: new THREE.Color(art.c1), c2: new THREE.Color(art.c2), s: art.s || 1.2 }),
     extra: (m) => extras.push(m) });
   // Details und Atmosphäre: Plakate, Kreide, Uhren, Ranzen, Lampen, Kübel mit Bäumen, Kontaktschatten (details.js)
-  baueDetails({ B, P, schilder, C, uhrTextur, raeume, plaetze, DECKE, extra: (m) => extras.push(m) });
+  const details = baueDetails({ B, P, schilder, C, uhrTextur, raeume, plaetze, DECKE, extra: (m) => extras.push(m) });
+  if (details.tischtennis) orte.tischtennis = { ...details.tischtennis, yaw: Math.PI / 2 };
 
   // Netze zusammenfassen: fest (wirft Schatten), innen (Innenausbau, Böden, kein Schatten), glas
   for (const [art, mat] of [['fest', material], ['innen', materialInnen || material], ['glas', null], ['licht', new THREE.MeshBasicMaterial({ vertexColors: true, toneMapped: false })]]) {

@@ -79,11 +79,23 @@ alles zusammenpasst.
   Stärken werden gesammelt (Kontakt aufnehmen, Freundlich und klar, Zuhören, Ruhig bleiben …).
 - **Journal (Tab / ☰):** Menschen, Stärken, Stundenplan, Entdeckungen (12 Orte), Mutleiter (ab Kapitel 6).
 - Vorlesen jeder Sprechblase (🔊). Gespeichert nur im Browser (`lycee.stand`).
+- **Details und Atmosphäre** (details.js): eigene Plakate (eine Leinwand, ein Netz), Kreide auf den Tafeln, Wanduhren,
+  Ranzen und Hefte in den Sälen, Hängelampen und Tabletts in der Kantine, Mülleimer, Pflanzkübel mit Sitzkante und
+  Laubbäumen, Tischtennisplatte, weiche Kontaktschatten unter Möbeln, Fassade mit Fensterfaschen, Lisenen und Gauben.
+  Neue Teile nur dort, wo nichts steht (`frei()`); die Prüfung (Figuren/Wege gegen Kästen) bleibt sauber.
+- **Minispiele:** Freiwürfe am Korb; **Skateboard** in der Skate-Ecke (60 s, Schwung, Sprung mit Leertaste oder
+  Knopf, Punkte für Ollies und Sprünge über Rail/Box/Bank, Rekord); **Tischtennis** an der Platte (im richtigen Moment
+  tippen, drei Bälle, längster Ballwechsel zählt).
+- **Gesprächsfäden** (faeden.js): elf Mitschülerinnen und Mitschüler mit je drei tieferen Gesprächen (Hobbys, Sorgen
+  um Schule und Zukunft, Lampenfieber, Wut, zu laut, neu sein). Sie öffnen sich, wenn die Freundschaft wächst, höchstens
+  eins pro Abschnitt. Niemand erzählt Privates aus der Familie. Im Journal unter „Menschen“ sichtbar.
+- **Mathe-Training** (mathe.js): sechs vorläufige Module, 21 Blätter mit Erklärung, Tipps und immer neuen Zahlen am
+  eigenen Platz. Dieselben Blätter als PDF in der Toolbox (tools/lycee/mathe-toolbox.mjs → mathe-3.json, DE/FR).
 
 ## Dateien
 `welt.js` Gebäude und Gelände · `requisiten.js` Modelle aufstellen · `figuren.js` Menschen (Skelett,
 Sitzen) · `steuerung.js` Laufen und Kamera · `geschichte.js` Kapitel, Gespräche, Stärken ·
-`ui.js` Oberfläche · `spiel.js` Kern · `main.js`, `shell.html`, `stil.css`.
+`ui.js` Oberfläche · `spiel.js` Kern · `details.js` Ausstattung · `faeden.js` Gesprächsfäden · `interaktion.js` Dinge benutzen · `mathe.js` Mathe-Training · `main.js`, `shell.html`, `stil.css`.
 
 ## Nächste Schritte
 Phase 2 ausbauen (Aufgaben aus dem Hub, mehr Lernmomente); Phase 3 (Werkstatt: Arbeitssimulator DAP/CCP).

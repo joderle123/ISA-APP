@@ -272,3 +272,16 @@ kbd { display: inline-block; min-width: 1.5em; padding: 0 .35em; margin-right: .
 .ly-ab-bsp { margin: 4px 0; background: #fff; border-radius: 8px; padding: 6px 10px; font-family: 'Nunito', system-ui; }
 .ly-ab-liste li { flex-wrap: wrap; }
 .ly-ab-tipp { flex-basis: 100%; margin: -4px 0 4px 32px; color: #8a6a1a; font-size: 14px; }
+
+/* Skate-Session (Minispiel in der Skate-Ecke) */
+.ly-skate { position: absolute; top: max(14px, env(safe-area-inset-top)); left: 50%; transform: translateX(-50%); min-width: 210px; padding: 8px 18px 9px; border-radius: 16px; background: var(--karte); box-shadow: var(--schatten); text-align: center; pointer-events: none; }
+.ly-skate-kopf { font-weight: 800; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #d9693f; }
+.ly-skate-werte { display: flex; gap: 16px; justify-content: center; align-items: baseline; font-size: 15px; color: var(--ink2); }
+.ly-skate-werte b { font-size: 24px; color: var(--ink); }
+.ly-skate-trick { min-height: 20px; font-weight: 800; font-size: 15px; color: #2f6db0; }
+.ly-skate-trick.neu { animation: lySkateTrick 1.4s ease-out; }
+@keyframes lySkateTrick { 0% { transform: scale(0.7); opacity: 0; } 15% { transform: scale(1.2); opacity: 1; } 70% { transform: scale(1); opacity: 1; } 100% { opacity: 0.35; } }
+.ly-skate-knoepfe { position: absolute; right: max(18px, env(safe-area-inset-right)); bottom: max(22px, env(safe-area-inset-bottom)); display: flex; flex-direction: column; gap: 10px; pointer-events: auto; }
+.ly-skate-knoepfe button { min-width: 128px; min-height: 60px; border: 0; border-radius: 18px; background: #d9693f; color: #fff; font: 800 18px system-ui, sans-serif; box-shadow: var(--schatten); touch-action: none; cursor: pointer; }
+.ly-skate-knoepfe button[data-s="weg"] { min-height: 44px; background: var(--karte); color: var(--ink); font-size: 15px; }
+.ly-skate-knoepfe kbd { display: block; font: 600 11px system-ui, sans-serif; opacity: 0.75; }

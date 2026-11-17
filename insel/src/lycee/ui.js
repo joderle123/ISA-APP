@@ -14,6 +14,8 @@ export function createUI({ root, input, speech }) {
   const bingo = el('div', 'ly-bingo hud-interactive'); bingo.hidden = true; hud.appendChild(bingo);
   const knoepfe = el('div', 'ly-knoepfe', '<button type="button" data-k="raus" title="Kurz raus (P)" aria-label="Kurz raus">⏸</button><button type="button" data-k="journal" title="Journal (Tab)" aria-label="Journal">☰</button>'); hud.appendChild(knoepfe);
   const mutEl = el('div', 'ly-mut'); mutEl.hidden = true; hud.appendChild(mutEl);   // Anspannung während einer Mutprobe
+  const skateEl = el('div', 'ly-skate'); skateEl.hidden = true; hud.appendChild(skateEl);   // Skate-Session: Zeit, Punkte, Trick
+  const skateKn = el('div', 'ly-skate-knoepfe hud-interactive'); skateKn.hidden = true; hud.appendChild(skateKn);
   const dialog = el('div', 'ly-dialog hud-interactive'); dialog.hidden = true; root.appendChild(dialog);
   const ebene = el('div', 'ly-ebene hud-interactive'); ebene.hidden = true; root.appendChild(ebene);
   // Touch: Joystick-Bild und Aktionsknopf
@@ -197,6 +199,53 @@ export function createUI({ root, input, speech }) {
     const taste = (e) => { if (e.code === 'KeyE' || e.code === 'Space' || e.code === 'Enter') { e.preventDefault(); e.stopPropagation(); wirf(); } if (fertig) document.removeEventListener('keydown', taste, true); };
     document.addEventListener('keydown', taste, true);
     requestAnimationFrame(draw);
+  });
+
+  // Tischtennis (Hof): von oben gesehen. Tippen / E / Leertaste, wenn der Ball in deiner Zone ist. Drei Bälle; es zählt der
+  // längste Ballwechsel. Der Ball wird mit jedem Treffer etwas schneller. Echtzeit (gleich schnell auf jedem Gerät).
+  ui.tischtennis = () => new Promise((ok) => {
+    const k = ebeneAuf('spiel', '<h2>Tischtennis</h2><p class="ly-leer">Tippe (oder <kbd>E</kbd>), wenn der Ball im hellen Feld vor deinem Schläger ist.</p>' +
+      '<canvas width="520" height="300"></canvas><div class="ly-fw-stand"></div><button type="button" class="ly-btn ly-primaer ly-fw-wurf">Schlagen</button>');
+    const cv = k.querySelector('canvas'), x = cv.getContext('2d'), stand = k.querySelector('.ly-fw-stand'), btn = k.querySelector('.ly-fw-wurf');
+    const ZONE = [34, 104];
+    let bx = 470, by = 150, vx = -260, vy = 60, ballwechsel = 0, best = 0, baelle = 3, pause = 0.8, fertig = false, last = performance.now(), meldung = '', mT = 0, schlag = 0;
+    const zeige = () => { stand.textContent = 'Ballwechsel: ' + ballwechsel + ' · Bester: ' + best + ' · Bälle: ' + '●'.repeat(baelle) + '○'.repeat(3 - baelle); };
+    const neu = () => { bx = 470; by = 90 + Math.random() * 120; vx = -260; vy = (Math.random() - 0.5) * 140; ballwechsel = 0; pause = 0.9; };
+    const fehler = (t) => { meldung = t; mT = 1.2; baelle--; zeige(); if (baelle <= 0) { fertig = true; setTimeout(() => { document.removeEventListener('keydown', taste, true); ebeneZu(); ok(best); }, 900); } else neu(); };
+    const draw = (now) => {
+      const dt = Math.min(0.25, (now - last) / 1000); last = now;   // Echtzeit, auch auf langsamen Geräten
+      if (!fertig && pause <= 0) {
+        bx += vx * dt; by += vy * dt;
+        if (by < 40 || by > 260) { vy = -vy; by = Math.max(40, Math.min(260, by)); }
+        if (vx > 0 && bx > 478) { vx = -Math.abs(vx); vy = (Math.random() - 0.5) * 220; }   // das Gegenüber spielt zurück
+        if (vx < 0 && bx < 22) fehler('Vorbei!');
+      } else pause -= dt;
+      schlag = Math.max(0, schlag - dt * 4); mT -= dt;
+      x.clearRect(0, 0, 520, 300);
+      x.fillStyle = '#2f6b57'; x.fillRect(20, 30, 480, 240); x.strokeStyle = '#ffffff'; x.lineWidth = 3; x.strokeRect(20, 30, 480, 240);
+      x.beginPath(); x.moveTo(20, 150); x.lineTo(500, 150); x.lineWidth = 1.5; x.stroke();
+      x.fillStyle = '#2b2b33'; x.fillRect(258, 22, 4, 256);   // Netz
+      x.fillStyle = 'rgba(255,255,255,0.16)'; x.fillRect(ZONE[0], 30, ZONE[1] - ZONE[0], 240);
+      const py = Math.max(60, Math.min(240, by));
+      x.fillStyle = '#d9523c'; x.beginPath(); x.ellipse(28 + schlag * 14, py, 9, 26, 0, 0, 7); x.fill();      // dein Schläger
+      x.fillStyle = '#2f6db0'; x.beginPath(); x.ellipse(492, Math.max(60, Math.min(240, by)), 9, 26, 0, 0, 7); x.fill();
+      x.fillStyle = '#fff6e0'; x.beginPath(); x.arc(bx, by, 8, 0, 7); x.fill();
+      if (mT > 0) { x.fillStyle = '#ffffff'; x.font = 'bold 30px system-ui'; x.textAlign = 'center'; x.fillText(meldung, 260, 160); }
+      if (!fertig || mT > 0) requestAnimationFrame(draw);
+    };
+    const schlagen = () => {
+      if (fertig || pause > 0) return;
+      schlag = 1;
+      if (vx < 0 && bx >= ZONE[0] && bx <= ZONE[1]) {
+        ballwechsel++; best = Math.max(best, ballwechsel);
+        vx = Math.min(900, Math.abs(vx) * 1.07); vy = (by - 150) * 1.6 + (Math.random() - 0.5) * 80;
+        meldung = ballwechsel % 5 === 0 ? ballwechsel + '!' : ''; mT = meldung ? 0.8 : 0; zeige();
+      } else if (vx < 0 && bx > ZONE[1] && bx < 200) fehler('Zu früh!');
+    };
+    const taste = (e) => { if (e.code === 'KeyE' || e.code === 'Space' || e.code === 'Enter') { e.preventDefault(); e.stopPropagation(); schlagen(); } };
+    btn.onclick = schlagen; cv.onpointerdown = schlagen;
+    document.addEventListener('keydown', taste, true);
+    zeige(); requestAnimationFrame(draw);
   });
 
   // Handy: Klassenchat ansehen (nur lesen), „Handy weg“
@@ -467,6 +516,25 @@ export function createUI({ root, input, speech }) {
     document.addEventListener('keydown', taste, true);
     zeige();
   });
+
+  // Skate-Session: oben Zeit, Punkte und der letzte Trick; unten rechts große Knöpfe „Sprung“ und „Absteigen“ (Tablet)
+  let skateWeg = null;
+  ui.skate = (z) => {
+    if (!z) { skateEl.hidden = true; skateKn.hidden = true; skateEl.innerHTML = ''; skateKn.innerHTML = ''; skateWeg = null; return; }
+    if (skateEl.hidden) {
+      skateEl.hidden = false; skateKn.hidden = false;
+      skateEl.innerHTML = '<div class="ly-skate-kopf">Skate-Session</div><div class="ly-skate-werte"><span data-s="zeit"></span><b data-s="punkte"></b></div><div class="ly-skate-trick" data-s="trick">Springen: Leertaste oder Knopf</div>';
+      skateKn.innerHTML = '<button type="button" data-s="sprung">Sprung<kbd>Leertaste</kbd></button><button type="button" data-s="weg">Absteigen<kbd>E</kbd></button>';
+      const sp = skateKn.querySelector('[data-s="sprung"]');
+      sp.addEventListener('pointerdown', (e) => { e.preventDefault(); input.press('jump'); });
+      for (const t of ['pointerup', 'pointerleave', 'pointercancel']) sp.addEventListener(t, () => input.release('jump'));
+      skateKn.querySelector('[data-s="weg"]').onclick = () => { if (skateWeg) skateWeg(); };
+    }
+    if (z.weg) skateWeg = z.weg;
+    if (z.rest != null) skateEl.querySelector('[data-s="zeit"]').textContent = '⏱ ' + Math.max(0, Math.ceil(z.rest)) + ' s';
+    if (z.punkte != null) skateEl.querySelector('[data-s="punkte"]').textContent = z.punkte + (z.punkte === 1 ? ' Punkt' : ' Punkte');
+    if (z.trick) { const t = skateEl.querySelector('[data-s="trick"]'); t.textContent = z.trick; t.classList.remove('neu'); void t.offsetWidth; t.classList.add('neu'); }
+  };
 
   // Anspannung live (oben in der Mitte): Zahl, Balken und Verlauf. Sie steigt erst und fällt dann – wenn man bleibt.
   ui.mut = (m) => {

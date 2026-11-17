@@ -29,9 +29,10 @@ export function createSteuerung({ camera, input, welt, figur = null }) {
     for (let i = i0; i <= i1; i++) for (let j = j0; j <= j1; j++) { const l = gitter.get(key(i, j)); if (l) for (const k of l) out.add(k); }
     return out;
   };
-  function loese(x, z) {
+  function loese(x, z, h = 0) {
     for (let iter = 0; iter < 3; iter++) {
       for (const k of nahe(x, z)) {
+        if (h > 0.05 && k.y1 <= h + 0.05) continue;   // im Sprung (Skateboard) darüber hinweg
         const cx = Math.max(k.x0, Math.min(x, k.x1)), cz = Math.max(k.z0, Math.min(z, k.z1));
         const dx = x - cx, dz = z - cz, d2 = dx * dx + dz * dz;
         if (d2 >= R * R) continue;
@@ -49,6 +50,42 @@ export function createSteuerung({ camera, input, welt, figur = null }) {
     return [x, z];
   }
   s.loese = loese;
+
+  // ---------- Skateboard (Minispiel in der Skate-Ecke) ----------
+  // s.brett = { y, vy, ueber: Set, start, bereich: [x0, x1, z0, z1], onTrick(name, punkte), onRaus() }. Das Brett rollt
+  // weiter (Schwung), lenkt träger als Laufen, Sprung mit Leertaste/Knopf; niedrige Hindernisse im Sprung überwinden = Punkte.
+  s.brett = null;
+  function brettUpdate(dt, st) {
+    const b = s.brett, c = s.cam;
+    const mx = s.frei ? st.move.x : 0, my = s.frei ? st.move.y : 0, staerke = Math.min(1, Math.hypot(mx, my));
+    const will = staerke > 0.05 ? 5.4 * staerke : 0;
+    s.tempo += (will - s.tempo) * Math.min(1, dt * (will > s.tempo ? 1.8 : 0.45));
+    if (staerke > 0.05) {
+      const fx = Math.sin(c.yaw), fz = Math.cos(c.yaw);
+      let d = Math.atan2(fx * my - fz * mx, fz * my + fx * mx) - s.yaw; d = Math.atan2(Math.sin(d), Math.cos(d));
+      s.yaw += d * Math.min(1, dt * 3.2);
+    }
+    if (b.y <= 0 && b.vy <= 0 && st.jump && s.frei) { b.vy = 4.3; b.ueber = new Set(); b.start = s.tempo; }
+    if (b.y > 0 || b.vy > 0) { b.vy -= 11 * dt; b.y = Math.max(0, b.y + b.vy * dt); }
+    const nx = pos.x + Math.sin(s.yaw) * s.tempo * dt, nz = pos.z + Math.cos(s.yaw) * s.tempo * dt;
+    const [x, z] = loese(nx, nz, b.y);
+    const soll = s.tempo * dt;
+    if (soll > 0.001 && Math.hypot(x - pos.x, z - pos.z) < soll * 0.5) s.tempo *= 0.5;   // gegen etwas gerollt: bremst
+    pos.x = x; pos.z = z;
+    if (b.y > 0.2) for (const k of nahe(x, z)) if (k.y1 > 0.2 && k.y1 <= b.y + 0.05 && x > k.x0 - 0.1 && x < k.x1 + 0.1 && z > k.z0 - 0.1 && z < k.z1 + 0.1) b.ueber.add(k);
+    if (b.y <= 0 && b.vy < 0) {   // gelandet
+      b.vy = 0;
+      if (b.ueber.size) b.onTrick(b.ueber.size > 1 ? 'Doppelsprung' : 'Über das Hindernis', 3 * b.ueber.size);
+      else if (b.start > 1.5) b.onTrick('Ollie', 1);
+      b.ueber = new Set();
+    }
+    const [x0, x1, z0, z1] = b.bereich;
+    if (pos.x < x0 || pos.x > x1 || pos.z < z0 || pos.z > z1) b.onRaus();
+    pos.y = b.y;
+    if (s.figur) { s.figur.group.position.set(pos.x, b.y + 0.1, pos.z); s.figur.group.rotation.y = s.yaw; s.figur.spiele('Idle'); }
+    if (!st.look.dx && s.tempo > 0.5) { let d = s.yaw - c.yaw; d = Math.atan2(Math.sin(d), Math.cos(d)); c.yaw += d * Math.min(1, dt * 1.4); }
+    s.laeuft = s.tempo > 0.3;
+  }
   // Hinsetzen (Stuhl): Figur sitzt, bis man sich bewegt
   s.sitzt = false;
   s.setzen = (x, z, yaw) => { s.teleport(x, z, yaw); s.sitzt = true; if (s.figur && s.figur.sitzen) s.figur.sitzen(true); };
@@ -107,6 +144,7 @@ export function createSteuerung({ camera, input, welt, figur = null }) {
     // Blick drehen
     c.yaw -= st.look.dx * 0.0052; c.pitch = Math.max(c.minPitch, Math.min(c.maxPitch, c.pitch + st.look.dy * 0.0036));
     c.ziel = Math.max(2.4, Math.min(9, c.ziel + st.zoom * 0.6));
+    if (s.brett) { brettUpdate(dt, st); kamera(dt, false); return; }
     let mx = s.frei ? st.move.x : 0, my = s.frei ? st.move.y : 0;
     if (s.sitzt) { if (Math.hypot(mx, my) > 0.3) aufstehen(); else { mx = 0; my = 0; } }
     const staerke = Math.min(1, Math.hypot(mx, my));

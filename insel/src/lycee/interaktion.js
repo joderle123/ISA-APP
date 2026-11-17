@@ -17,7 +17,8 @@ const BUECHER = [
 ];
 const SNACKS = ['Schokoriegel', 'Chips (Paprika)', 'Gummibärchen', 'Kekse', 'Wasser'];
 
-export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton, blattWahl, freiwurf }) {
+export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton, blattWahl, freiwurf, skate }) {
+  const tt = welt.orte.tischtennis;
   const liste = [];
   const dazu = (x, z, r, text, tu, extra = {}) => liste.push({ x, z, r, text, tu, ...extra });
   // Sitzen: alle Stühle und Bänke
@@ -40,6 +41,8 @@ export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton
   dazu(29, 12.5, 2.2, 'Freiwürfe werfen', 'korb', { prio: 1 });
   dazu(29, 25.5, 2.2, 'Freiwürfe werfen', 'korb', { prio: 1 });
   for (const x of [47.4, 52.6, 57.8]) dazu(x, -43.85, 0.9, 'Am Computer', 'computer', { prio: 1 });
+  if (skate) dazu(-29.6, 5.2, 1.5, 'Skateboard fahren', 'skate', { prio: 1 });
+  if (tt) dazu(tt.x - 1.3, tt.z, 1.2, 'Tischtennis spielen', 'tischtennis', { prio: 1 });
 
   function naechste(p) {
     if (steuerung.sitzt) return null;
@@ -74,6 +77,16 @@ export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton
       case 'pinnwand': await ui.bild('Pinnwand', 'Theater-AG sucht Leute. · Fundsache: blaue Jacke. · „Wer hat mein Ladekabel?“ · Sportfest am 12. Juni.', 4); return;
       case 'giessen': s.merke.gegossen = (s.merke.gegossen || 0) + 1; sichern(); ui.toast(s.merke.gegossen > 3 ? '<b>Kevin, der Kaktus</b><span>Braucht kein Wasser. Er schaut dich vorwurfsvoll an.</span>' : '<b>Gegossen</b><span>Die Tomaten danken. Glaubst du.</span>'); return;
       case 'korb': { const t = await freiwurf(); s.merke.korbRekord = Math.max(s.merke.korbRekord || 0, t); sichern(); ui.toast('<b>' + t + ' von 5</b><span>Dein Rekord: ' + s.merke.korbRekord + ' von 5.</span>'); return; }
+      case 'skate': {
+        const p = await skate(); s.merke.skateRekord = Math.max(s.merke.skateRekord || 0, p); sichern();
+        ui.toast('<b>' + p + (p === 1 ? ' Punkt' : ' Punkte') + '</b><span>' + (p && p >= s.merke.skateRekord ? 'Neuer Rekord!' : 'Dein Rekord: ' + s.merke.skateRekord + ' Punkte.') + '</span>');
+        return;
+      }
+      case 'tischtennis': {
+        const b = await ui.tischtennis(); s.merke.ttRekord = Math.max(s.merke.ttRekord || 0, b); sichern();
+        ui.toast('<b>' + b + ' Ballwechsel</b><span>' + (b && b >= s.merke.ttRekord ? 'Dein bester bisher!' : 'Dein Rekord: ' + s.merke.ttRekord + '.') + '</span>');
+        return;
+      }
       case 'computer': ui.toast('<b>Anmelden</b><span>Passwort vergessen. Das Passwort für „Passwort vergessen“ auch.</span>'); return;
     }
   }

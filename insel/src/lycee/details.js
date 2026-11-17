@@ -237,8 +237,10 @@ export function baueDetails({ B, P, schilder, C, uhrTextur, extra, raeume, plaet
     baum(x, z, 4.8 + (nr % 3) * 0.6, nr);
   }
   // Tischtennisplatte (Beton, wie auf vielen Schulhöfen)
+  let tischtennis = null;
   for (const [x, z] of [[-20, 32], [-34, 30], [24, 34]]) {
     if (!frei(x, z, 2.2)) continue;
+    tischtennis = { x, z };
     box(x - 0.9, x + 0.9, 0, 0.66, z - 0.2, z + 0.2, C.beton, { stoss: true });
     box(x - 0.76, x + 0.76, 0.66, 0.76, z - 1.37, z + 1.37, hex('#2f6b57'));
     box(x - 0.76, x + 0.76, 0.761, 0.765, z - 0.015, z + 0.015, hex('#ffffff'));
@@ -249,6 +251,35 @@ export function baueDetails({ B, P, schilder, C, uhrTextur, extra, raeume, plaet
   }
 
   ersetzeBaeume();
+
+  // ---------- Fassade des Haupthauses (x −30 … 30, z −30 … −2): Fensterfaschen, Schlusssteine, Lisenen, Dachgauben ----------
+  {
+    const HAUS_H = 8.6, dunkel = C.sandsteinDunkel, hell = C.gesims;
+    for (const [z, s] of [[-2, 1], [-30, -1]]) {
+      const za = Math.min(z + s * 0.16, z + s * 0.24), zb = Math.max(z + s * 0.16, z + s * 0.24);
+      for (let x = -26; x <= 26.01; x += 4) {
+        const tuer = s === 1 && (Math.abs(x) < 3 || (x > 17 && x < 21));
+        for (const [y0, y1, eg] of [[1.0, 2.7, true], [4.7, 7.0, false]]) {
+          if (eg && tuer) continue;
+          box(x - 0.99, x - 0.82, y0 - 0.06, y1 + 0.02, za, zb, dunkel); box(x + 0.82, x + 0.99, y0 - 0.06, y1 + 0.02, za, zb, dunkel);
+          box(x - 0.2, x + 0.2, y1 + 0.12, y1 + 0.42, Math.min(za, za + s * 0.03), Math.max(zb, zb + s * 0.03), hell);   // Schlussstein
+        }
+      }
+      for (const x of [-29.75, -24, -16, -8, 8, 16, 24, 29.75]) {   // Lisenen (flache Wandpfeiler)
+        if (s === 1 && Math.abs(x) === 8) continue;                    // neben dem Portal frei lassen
+        box(x - 0.26, x + 0.26, 0.7, HAUS_H - 0.25, Math.min(z + s * 0.17, z + s * 0.3), Math.max(z + s * 0.17, z + s * 0.3), dunkel);
+      }
+      // Dachgauben: kleiner Kasten mit Fenster und Pyramidendach, sitzt im Dach
+      for (const x of [-20, -12, 12, 20]) {
+        const zf = s === 1 ? -3.6 : -28.4, zi = zf - s * 1.8, yb = 9.1;
+        box(x - 0.9, x + 0.9, yb, yb + 1.7, Math.min(zf, zi), Math.max(zf, zi), C.sandstein);
+        box(x - 0.55, x + 0.55, yb + 0.3, yb + 1.4, Math.min(zf, zf + s * 0.04), Math.max(zf, zf + s * 0.04), C.glas, { art: 'glas' });
+        box(x - 0.62, x + 0.62, yb + 0.22, yb + 0.3, Math.min(zf, zf + s * 0.1), Math.max(zf, zf + s * 0.1), hell);
+        box(x - 0.03, x + 0.03, yb + 0.3, yb + 1.4, Math.min(zf, zf + s * 0.06), Math.max(zf, zf + s * 0.06), C.rahmen);
+        const d = new THREE.ConeGeometry(1.42, 0.95, 4); d.rotateY(Math.PI / 4); d.translate(x, yb + 1.7 + 0.47, (zf + zi) / 2); geo(d, C.schiefer);
+      }
+    }
+  }
 
   // ---------- Weiche Kontaktschatten unter Tischen, Stühlen, Bänken, Theken ----------
   const flecken = [];
@@ -263,7 +294,7 @@ export function baueDetails({ B, P, schilder, C, uhrTextur, extra, raeume, plaet
     const m = new THREE.Mesh(mergePlakate(flecken), fleckMaterial());
     m.name = 'kontaktschatten'; m.renderOrder = 1; extra(m);
   }
-  return { plakate: plakatGeos.length, flecken: flecken.length };
+  return { plakate: plakatGeos.length, flecken: flecken.length, tischtennis };
 }
 
 // Ebenen mit uv zusammenlegen (Plakate, Schatten)

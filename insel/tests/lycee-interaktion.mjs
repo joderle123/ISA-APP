@@ -97,6 +97,47 @@ await page.click('[data-a="neu"]'); await page.waitForFunction((alt) => document
 check('„Neue Zahlen“: frisches Blatt', true);
 await page.click('[data-a="weg"]');
 check('Mathe-Fortschritt gespeichert (Modul 4)', (await L(() => LYCEE.zustand.mathe.modul)) === 4 && (await L(() => LYCEE.zustand.mathe.stand['m4-rueckgeld'].richtig)) === mf.length);
+// Gesprächsfaden: Ben mag dich (2 Herzen) → beim Ansprechen ein tieferes Gespräch; danach im selben Abschnitt nur Plaudern
+await page.waitForFunction(() => !LYCEE.imGespraech);
+await L(() => { LYCEE.zustand.herz.ben = 2; LYCEE.rede('ben'); });
+await page.waitForFunction(() => /Witze/.test((document.querySelector('.ly-dialog:not([hidden])') || {}).textContent || ''), null, { timeout: 20000 }).catch(() => {});
+check('Gesprächsfaden mit Ben startet („Witze“)', /Witze/.test(await page.textContent('.ly-dialog')));
+for (let i = 0; i < 12 && await L(() => LYCEE.imGespraech); i++) {
+  if (await page.isVisible('.ly-d-optionen button')) await page.click('.ly-d-optionen button[data-i="1"]'); else await page.keyboard.press('KeyE');
+  await page.waitForTimeout(250);
+}
+check('Faden gespeichert, Freundschaft gewachsen', (await L(() => LYCEE.zustand.faeden.ben)) === 1 && (await L(() => LYCEE.zustand.herz.ben)) >= 3, await L(() => [LYCEE.zustand.faeden, LYCEE.zustand.herz.ben]));
+await L(() => { LYCEE.rede('ben'); });
+await page.waitForFunction(() => LYCEE.imGespraech, null, { timeout: 10000 }).catch(() => {});
+check('Im selben Abschnitt: nur kurz plaudern', !/Bauch|Test/.test(await page.textContent('.ly-dialog')) && (await L(() => LYCEE.zustand.faeden.ben)) === 1);
+for (let i = 0; i < 8 && await L(() => LYCEE.imGespraech); i++) { await page.keyboard.press('KeyE'); await page.waitForTimeout(250); }
+
+// Tischtennis auf dem Hof: Spiel öffnet sich; ohne Schlag sind die drei Bälle weg, das Spiel endet von selbst
+await geheZu({ tu: 'tischtennis' }); await page.waitForFunction(() => LYCEE.iaNah === 'tischtennis', null, { timeout: 30000 }).catch(() => {});
+await page.keyboard.press('KeyE');
+await page.waitForSelector('.ly-k-spiel canvas', { timeout: 20000 }).catch(() => {});
+check('Tischtennis: Spielfeld offen', /Tischtennis/.test(await page.textContent('.ly-ebene')));
+await page.waitForTimeout(1500); await bild('i6-tischtennis');
+await page.waitForFunction(() => !document.querySelector('.ly-k-spiel'), null, { timeout: 60000 }).catch(() => {});
+check('Tischtennis endet nach drei Bällen, Rekord gespeichert', (await L(() => LYCEE.zustand.merke.ttRekord)) === 0);
+await page.waitForFunction(() => !LYCEE.imGespraech);
+
+// Skateboard in der Skate-Ecke: aufsteigen, mit Schwung springen (Ollie = 1 Punkt), absteigen, Rekord gespeichert
+await page.waitForFunction(() => !LYCEE.imGespraech);
+await geheZu({ tu: 'skate' }); await page.waitForFunction(() => LYCEE.iaNah === 'skate', null, { timeout: 30000 }).catch(() => {});
+check('Hinweis „Skateboard fahren“', /Skateboard/.test(await page.textContent('.ly-hinweis')));
+await page.keyboard.press('KeyE');
+await page.waitForFunction(() => !!LYCEE.steuerung.brett, null, { timeout: 20000 }).catch(() => {});
+check('Auf dem Brett: Anzeige mit Zeit und Punkten, Knöpfe Sprung/Absteigen', !!(await L(() => LYCEE.steuerung.brett)) && await page.isVisible('.ly-skate') && await page.isVisible('.ly-skate-knoepfe [data-s="sprung"]'));
+await L(() => { LYCEE.steuerung.yaw = 0; LYCEE.steuerung.tempo = 3.5; });
+await page.waitForTimeout(200);
+await page.keyboard.down('Space'); await page.waitForTimeout(150); await page.keyboard.up('Space');
+await page.waitForFunction(() => /^1 Punkt$/.test(document.querySelector('.ly-skate [data-s="punkte"]').textContent), null, { timeout: 30000 }).catch(() => {});
+check('Ollie mit Schwung: 1 Punkt', /^1 Punkt$/.test(await page.textContent('.ly-skate [data-s="punkte"]')), await page.textContent('.ly-skate'));
+await bild('i5-skate');
+await page.click('.ly-skate-knoepfe [data-s="weg"]');
+await page.waitForFunction(() => !LYCEE.steuerung.brett, null, { timeout: 20000 }).catch(() => {});
+check('Abgestiegen: Rekord gespeichert', !(await L(() => LYCEE.steuerung.brett)) && (await L(() => LYCEE.zustand.merke.skateRekord)) >= 1);
 check('Keine Fehler in der Konsole', fehler.length === 0, fehler.slice(0, 4));
 console.log(`lycee-interaktion :: ${ok} ok, ${bad} Fehler`);
 await browser.close();
