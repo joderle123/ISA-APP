@@ -69,6 +69,7 @@ export const LEKTIONEN = [
       },
     },
     spiel: {
+      ablauf: [{ art: 'rollenspiel' }, { art: 'blatt' }],
       lehrer: 'hoffmann', intro: ['Heute: sich vorstellen.', 'Ich heiße … Ich bin … Ich wohne in …', 'Bei „ich“ endet das Verb meistens auf -e.'],
       rolle: [
         { wer: 'noah', sagt: 'Hi! Ich bin Noah. Und du?', optionen: ['Ich heiße {name}.', 'Ich heißt {name}.', 'Ich heißen {name}.'], richtig: 0, korrektur: 'Ich heiße – mit -e am Ende.' },
@@ -123,6 +124,7 @@ export const LEKTIONEN = [
       },
     },
     spiel: {
+      ablauf: [{ art: 'paare', frage: 'Wer? – Welche Verbform passt?', paare: [['ich', 'höre'], ['du', 'tanzt'], ['Lina', 'zeichnet'], ['wir', 'kochen'], ['ihr', 'lacht'], ['Ben und Jo', 'trainieren']] }, { art: 'rollenspiel' }, { art: 'blatt' }],
       lehrer: 'hoffmann', intro: ['Thema heute: Hobbys.', 'ich spiele, du spielst, er spielt.', 'Und „gern“ kommt nach dem Verb.'],
       rolle: [
         { wer: 'ben', sagt: 'Was machst du gern in der Pause?', optionen: ['Ich spiele gern Basketball.', 'Ich gern spiele Basketball.', 'Ich spielst gern Basketball.'], richtig: 0, korrektur: 'Erst das Verb, dann „gern“: Ich spiele gern …' },
@@ -176,6 +178,8 @@ export const LEKTIONEN = [
       },
     },
     spiel: {
+      ablauf: [{ art: 'satzbau', saetze: [{ woerter: ['Wo', 'wohnst', 'du?'], tipp: 'Zuerst das W-Wort, dann das Verb.' }, { woerter: ['Wann', 'beginnt', 'die', 'Pause?'], tipp: 'W-Wort – Verb – Rest.' }, { woerter: ['Was', 'machst', 'du', 'gern?'], tipp: 'Das Verb steht an Stelle 2.' }, { woerter: ['Wer', 'spielt', 'Bass?'], tipp: 'Wer? fragt nach der Person.' }] },
+        { art: 'hoeren', items: [{ sagen: 'Ich wohne in Junglinster.', frage: 'Welche Frage passt zu der Antwort?', optionen: ['Wo wohnst du?', 'Wann wohnst du?', 'Wer wohnt du?'], richtig: 0 }, { sagen: 'Die Pause beginnt um zehn Uhr.', frage: 'Welche Frage passt?', optionen: ['Wo ist die Pause?', 'Wann beginnt die Pause?', 'Was ist die Pause?'], richtig: 1 }, { sagen: 'Das ist Mme Weber, unsere Klassenlehrerin.', frage: 'Welche Frage passt?', optionen: ['Wie ist das?', 'Wo ist sie?', 'Wer ist das?'], richtig: 2 }] }, { art: 'blatt' }],
       lehrer: 'hoffmann', intro: ['Wer fragt, erfährt mehr.', 'Wer? Was? Wo? Wann? Wie?', 'Das Verb steht an Stelle 2.'],
       rolle: [
         { wer: 'jo', sagt: 'Frag mich was. Aber richtig.', optionen: ['Wo du wohnst?', 'Wo wohnst du?', 'Wohnst wo du?'], richtig: 1, korrektur: 'Verb an Stelle 2: Wo wohnst du?' },
@@ -230,6 +234,7 @@ export const LEKTIONEN = [
       },
     },
     spiel: {
+      ablauf: [{ art: 'rollenspiel' }, { art: 'blatt' }],
       lehrer: 'hoffmann', intro: ['Nein sagen – freundlich und klar.', '„nicht“ für Verben: Ich komme nicht.', '„kein“ für Nomen: Ich habe keine Zeit.'],
       rolle: [
         { wer: 'luca', sagt: 'Kommst du mit zum Bäcker?', optionen: ['Nein, ich komme nicht.', 'Nein, ich komme kein.', 'Nein, ich nicht komme.'], richtig: 0, korrektur: 'Verb verneinen → „nicht“, am Ende.' },
@@ -283,6 +288,7 @@ export const LEKTIONEN = [
       },
     },
     spiel: {
+      ablauf: [{ art: 'satzbau', saetze: [{ woerter: ['Ich', 'kann', 'gut', 'zeichnen.'], tipp: 'kann vorne, das zweite Verb ganz am Ende.' }, { woerter: ['Wir', 'müssen', 'heute', 'lernen.'], tipp: 'Das Modalverb an Stelle 2.' }, { woerter: ['Sie', 'will', 'Musikerin', 'werden.'], tipp: '„werden“ kommt ans Ende.' }, { woerter: ['Kannst', 'du', 'schwimmen?'], tipp: 'Ja/Nein-Frage: Das Verb steht vorne.' }] }, { art: 'rollenspiel' }, { art: 'blatt' }],
       lehrer: 'hoffmann', intro: ['können, wollen, müssen.', 'Das zweite Verb steht ganz am Ende.', 'Ich kann gut zeichnen.'],
       rolle: [
         { wer: 'yusuf', sagt: 'Kannst du schwimmen?', optionen: ['Ja, ich kann schwimmen.', 'Ja, ich kann schwimme.', 'Ja, ich schwimmen kann.'], richtig: 0, korrektur: 'kann + Infinitiv am Ende: schwimmen.' },
@@ -336,6 +342,8 @@ export const LEKTIONEN = [
       },
     },
     spiel: {
+      ablauf: [{ art: 'uhr', items: [{ zeit: '7:30', optionen: ['halb acht', 'halb sieben', 'acht Uhr dreißig'], richtig: 0, hinweis: 'halb = eine halbe Stunde vor' }, { zeit: '8:15', optionen: ['Viertel vor acht', 'Viertel nach acht', 'halb neun'], richtig: 1 }, { zeit: '9:45', optionen: ['Viertel nach neun', 'halb zehn', 'Viertel vor zehn'], richtig: 2 }, { zeit: '12:30', optionen: ['halb eins', 'halb zwölf', 'zwölf Uhr'], richtig: 0 }, { zeit: '4:10', optionen: ['zehn vor vier', 'zehn nach vier', 'zehn nach fünf'], richtig: 1 }] },
+        { art: 'hoeren', items: [{ sagen: 'Achtung: Der Bus nach Junglinster fährt heute um Viertel nach vier.', frage: 'Wann fährt der Bus?', optionen: ['4:15', '3:45', '4:30'], richtig: 0 }, { sagen: 'Die Kantine ist von halb zwölf bis halb zwei geöffnet.', frage: 'Ab wann ist die Kantine offen?', optionen: ['12:30', '11:30', '11:00'], richtig: 1 }, { sagen: 'Der Mathetest beginnt um Viertel vor neun.', frage: 'Wann beginnt der Test?', optionen: ['9:15', '9:45', '8:45'], richtig: 2 }] }, { art: 'blatt' }],
       lehrer: 'hoffmann', intro: ['Wie spät ist es?', 'Achtung: halb acht ist 7:30!', 'Höflich: Entschuldigung, wie spät ist es?'],
       rolle: [
         { wer: 'noah', sagt: 'Der Bus kommt um 7:30. Wie sagt man das?', optionen: ['Um halb acht.', 'Um halb sieben.', 'Um acht und halb.'], richtig: 0, korrektur: '7:30 = halb acht. Halb zur nächsten Stunde.' },
@@ -390,6 +398,7 @@ export const LEKTIONEN = [
       },
     },
     spiel: {
+      ablauf: [{ art: 'weg', schritte: [{ sagen: 'Geh aus dem Saal in den Gang.', x: -21, z: -16, r: 1.8 }, { sagen: 'Geh im Gang nach links bis zur Halle.', x: 0, z: -15.5, r: 3 }, { sagen: 'Geh geradeaus weiter. Die erste Tür rechts ist die Kantine.', x: 12, z: -11.5, r: 2.6 }], ende: [['noah', 'Da bist du ja! Danke für die Wegbeschreibung.']] }, { art: 'rollenspiel' }, { art: 'blatt' }],
       lehrer: 'hoffmann', intro: ['Heute: Wege beschreiben.', 'links, rechts, geradeaus.', 'neben, hinter, zwischen.'],
       rolle: [
         { wer: 'noah', sagt: 'Ich finde die Kantine nicht …', optionen: ['Geh geradeaus, dann rechts.', 'Gehen geradeaus, rechts dann.', 'Du geradeaus rechts.'], richtig: 0, korrektur: 'Geh geradeaus, dann rechts.' },
@@ -444,6 +453,7 @@ export const LEKTIONEN = [
       },
     },
     spiel: {
+      ablauf: [{ art: 'gross', saetze: [{ woerter: ['Am', 'Samstag', 'ist', 'die', 'Party', 'im', 'Hof.'] }, { woerter: ['Ben', 'bringt', 'den', 'Ball', 'und', 'Wasser', 'mit.'] }, { woerter: ['Wir', 'treffen', 'uns', 'um', 'vier', 'am', 'Tor.'] }, { woerter: ['Das', 'Konzert', 'ist', 'schön', 'und', 'laut.'] }] }, { art: 'rollenspiel' }, { art: 'blatt' }],
       lehrer: 'hoffmann', intro: ['Eine Einladung: Was? Wann? Wo? Wer?', 'Nomen schreibt man groß.', 'die Party, der Samstag, das Spiel.'],
       rolle: [
         { wer: 'ayla', sagt: 'Ich lade zum Konzert ein. Was fehlt noch?', optionen: ['Wann und wo.', 'Nichts.', 'Mein Lieblingsessen.'], richtig: 0, korrektur: 'Ohne Zeit und Ort kommt keiner.' },

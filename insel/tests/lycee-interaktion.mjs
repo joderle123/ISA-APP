@@ -111,39 +111,79 @@ await page.click('[data-a="weg"]');
 await page.waitForFunction(() => !LYCEE.imGespraech);
 check('Deutsch-Fortschritt im Spielstand (Modul 3)', (await L(() => LYCEE.zustand.fach.deutsch.modul)) === 3);
 
-// Unterricht: Deutsch Modul 1, Lektion 1 „Das bin ich“ – Tafelkarte, Rollenspiel (einmal falsch, dann richtig), Übungsblatt, Lernkarte
-await geheZu({ tu: 'arbeiten', near: [-22.1, -24.4] }); await page.waitForFunction(() => LYCEE.iaNah === 'arbeiten', null, { timeout: 30000 }).catch(() => {}); await page.keyboard.press('KeyE');
-await page.waitForSelector('.ly-k-blattwahl');
-await page.click('.ly-bw-faecher [data-fach="deutsch"]'); await page.click('.ly-bw-module [data-m="1"]');
-check('Deutsch Modul 1: acht Lektionen zur Wahl', (await page.$$eval('.ly-bw-liste [data-b^="lektion:deutsch:1:"]', (l) => l.length)) === 8);
-await page.click('[data-b="lektion:deutsch:1:de-m1-das-bin-ich"]');
-const lek = await L(() => LYCEE.daten.LEKTIONEN.deutsch[0].lektionen[0]);
-let tafel = false, falsch = false, blattOk = false;
-for (let i = 0; i < 80 && await L(() => LYCEE.imGespraech); i++) {
-  if (await page.isVisible('.ly-k-merke')) { tafel = true; await bild('i9-tafel'); await page.click('.ly-k-merke [data-a="ok"]'); }
-  else if (await page.isVisible('.ly-ab-papier')) {
-    const texte = await page.$$eval('.ly-ab-liste li .ly-ab-t', (l) => l.map((x) => x.textContent));
-    const felder = await page.$$('.ly-ab-liste input');
-    for (let k = 0; k < texte.length; k++) { const u = lek.uebung.find((x) => x[0].replace(/___/g, '') === texte[k]); if (u && felder[k]) await felder[k].fill(u[1]); }
-    await page.waitForTimeout(200); await page.click('[data-a="pruefen"]');
-    blattOk = /alles richtig/.test(await page.textContent('.ly-ab-stand')); await bild('i10-lektion-blatt');
-    await page.click('[data-a="weg"]');
-  } else if (await page.isVisible('.ly-d-optionen button')) {
-    const frage = await page.textContent('.ly-dialog .ly-d-text');
-    const r = lek.rolle.find((x) => frage.includes(x.sagt.replace('{name}', 'Sam')));
-    if (r && !falsch) { falsch = true; await page.click('.ly-d-optionen button[data-i="' + ((r.richtig + 1) % r.optionen.length) + '"]'); }
-    else await page.click('.ly-d-optionen button[data-i="' + (r ? r.richtig : 0) + '"]');
-  } else await page.keyboard.press('KeyE');
-  await page.waitForTimeout(200);
+// Unterricht: Deutsch Modul 1 – jede Lernform einmal durchspielen (Tafel, Rollenspiel, Paare, Satzbau, Hören, Uhr, Groß/klein, Wegsuche, Blatt)
+const LEKS = await L(() => LYCEE.daten.LEKTIONEN.deutsch[0].lektionen);
+const oeffneModul1 = async () => {
+  await page.waitForFunction(() => !LYCEE.imGespraech);
+  for (let i = 0; i < 30 && await L(() => LYCEE.imGespraech); i++) { await page.keyboard.press('KeyE'); await page.waitForTimeout(200); }
+  await geheZu({ tu: 'arbeiten', near: [-22.1, -24.4] }); await page.waitForTimeout(400);
+  await L(() => { LYCEE.aktion(LYCEE.ia.liste.find((i) => i.tu === 'arbeiten' && Math.hypot(i.x + 22.1, i.z + 24.4) < 3)); });
+  await page.waitForSelector('.ly-k-blattwahl'); await page.click('.ly-bw-faecher [data-fach="deutsch"]'); await page.click('.ly-bw-module [data-m="1"]');
+};
+const fussNr = async () => +(((await page.textContent('.ly-sb-fuss')) || '').match(/(\d+) von/) || [0, 1])[1] - 1;
+const gesehen = new Set();
+async function spieleLektion(lid, einmalFalsch) {
+  const lek = LEKS.find((x) => x.id === lid), abl = (art) => (lek.ablauf || []).find((x) => x.art === art), formen = new Set();
+  await oeffneModul1(); await page.click('[data-b="lektion:deutsch:1:' + lid + '"]');
+  let falsch = !einmalFalsch, blattOk = false;
+  const foto = async (n) => { if (!gesehen.has(n)) { gesehen.add(n); await bild(n); } };
+  for (let i = 0; i < 200 && await L(() => LYCEE.imGespraech); i++) {
+    if (await page.isVisible('.ly-k-lern [data-a="w"]')) await page.click('.ly-k-lern [data-a="w"]');
+    else if (await page.isVisible('.ly-k-merke')) { formen.add('tafel'); await foto('i9-tafel'); await page.click('.ly-k-merke [data-a="ok"]'); }
+    else if (await page.isVisible('.ly-sb-teile button:not([disabled])')) {
+      formen.add('satzbau'); await foto('i11-satzbau'); const st = abl('satzbau').saetze[await fussNr()];
+      for (const w of st.woerter) { const bs = await page.$$('.ly-sb-teile button:not([disabled])'); for (const b of bs) if ((await b.textContent()) === w) { await b.click(); break; } }
+      await page.waitForTimeout(900);
+    } else if (await page.isVisible('.ly-pa button:not([disabled])')) {
+      formen.add('paare'); await foto('i12-paare'); const n = abl('paare').paare.length;
+      for (let k = 0; k < n; k++) { await page.click('.ly-pa [data-l="' + k + '"]'); await page.click('.ly-pa [data-r="' + k + '"]'); }
+    } else if (await page.isVisible('.ly-ho .ly-d-optionen button:not([disabled])')) {
+      formen.add('hoeren'); await foto('i13-hoeren'); const it = abl('hoeren').items[await fussNr()]; await page.click('.ly-ho [data-i="' + it.richtig + '"]'); await page.waitForTimeout(900);
+    } else if (await page.isVisible('.ly-uh .ly-d-optionen button:not([disabled])')) {
+      formen.add('uhr'); await foto('i14-uhr'); const it = abl('uhr').items[await fussNr()]; await page.click('.ly-uh [data-i="' + it.richtig + '"]'); await page.waitForTimeout(850);
+    } else if (await page.isVisible('.ly-gk button:not([disabled])')) {
+      formen.add('gross'); await foto('i15-gross'); const st = abl('gross').saetze[await fussNr()];
+      for (let k = 0; k < st.woerter.length; k++) if (st.woerter[k][0] !== st.woerter[k][0].toLowerCase()) await page.click('.ly-gk [data-i="' + k + '"]');
+      await page.click('.ly-sb-fuss [data-a="p"]'); await page.waitForTimeout(1100);
+    } else if (await page.isVisible('.ly-ab-papier')) {
+      formen.add('blatt');
+      for (const li of await page.$$('.ly-ab-liste li')) {
+        const t = await li.$eval('.ly-ab-t', (x) => x.textContent);
+        const u = lek.uebung.find((x) => x[0].replace(/_{2,}/g, '').replace('◻', '?') === t);
+        if (!u) continue;
+        if (u.length === 3) await (await li.$('[data-w="' + u[2] + '"]')).click(); else await (await li.$('input')).fill(u[1]);
+      }
+      await page.click('[data-a="pruefen"]'); blattOk = /alles richtig/.test(await page.textContent('.ly-ab-stand'));
+      if (lid === 'de-m1-das-bin-ich') await foto('i10-lektion-blatt');
+      await page.click('[data-a="weg"]');
+    } else if ((await page.textContent('.ly-a-titel').catch(() => '')) === 'Folge der Beschreibung' && !(await page.isVisible('.ly-dialog:not([hidden])'))) {
+      formen.add('weg'); await foto('i16-weg'); const ziel = await page.textContent('.ly-a-ziel'), sch = abl('weg').schritte.find((x) => ziel.includes(x.sagen));
+      if (sch) await L((z) => LYCEE.teleport({ x: z.x, z: z.z }), sch); await page.waitForTimeout(400);
+    } else if (await page.isVisible('.ly-d-optionen button')) {
+      formen.add('rollenspiel'); const frage = await page.textContent('.ly-dialog .ly-d-text');
+      const r = lek.rolle.find((x) => frage.includes(x.sagt.replace('{name}', 'Sam')));
+      if (r && !falsch) { falsch = true; await page.click('.ly-d-optionen button[data-i="' + ((r.richtig + 1) % r.optionen.length) + '"]'); }
+      else await page.click('.ly-d-optionen button[data-i="' + (r ? r.richtig : 0) + '"]');
+    } else await page.keyboard.press('KeyE');
+    await page.waitForTimeout(150);
+  }
+  return { formen: [...formen], blattOk, falsch, stand: await L((id) => (LYCEE.zustand.lektionen || {})[id], lid) };
 }
-check('Lektion: Tafelkarte gezeigt, Fehler korrigiert, Übungsblatt alles richtig', tafel && falsch && blattOk, [tafel, falsch, blattOk]);
-check('Lektion gespeichert, Lernkarte im Journal', (await L(() => (LYCEE.zustand.lektionen || {})['de-m1-das-bin-ich']?.richtig)) === 8 && (await L(() => (LYCEE.zustand.lernkarten || []).some((k) => k.startsWith('Das bin ich')))), await L(() => [LYCEE.zustand.lektionen, LYCEE.zustand.lernkarten]));
+await oeffneModul1();
+check('Deutsch Modul 1: acht Lektionen zur Wahl', (await page.$$eval('.ly-bw-liste [data-b^="lektion:deutsch:1:"]', (l) => l.length)) === 8);
+await page.click('.ly-k-blattwahl .ly-zu');
+for (const [lid, erwartet, einmalFalsch] of [['de-m1-das-bin-ich', ['tafel', 'rollenspiel', 'blatt'], true], ['de-m1-hobbys', ['paare', 'rollenspiel', 'blatt']], ['de-m1-w-fragen', ['satzbau', 'hoeren', 'blatt']],
+  ['de-m1-uhrzeit', ['uhr', 'hoeren', 'blatt']], ['de-m1-weg', ['weg', 'rollenspiel', 'blatt']], ['de-m1-einladung', ['gross', 'rollenspiel', 'blatt']]]) {
+  const r = await spieleLektion(lid, einmalFalsch);
+  check('Lektion ' + lid + ': ' + erwartet.join(' + ') + ', Blatt alles richtig, gespeichert', erwartet.every((f) => r.formen.includes(f)) && r.blattOk && r.falsch && r.stand && r.stand.richtig === 8, r);
+}
+check('Lernkarten im Journal', (await L(() => (LYCEE.zustand.lernkarten || []).length)) >= 6, await L(() => LYCEE.zustand.lernkarten));
 
 // Gesprächsfaden: Ben mag dich (2 Herzen) → beim Ansprechen ein tieferes Gespräch; danach im selben Abschnitt nur Plaudern
 await page.waitForFunction(() => !LYCEE.imGespraech);
 await L(() => { LYCEE.zustand.herz.ben = 2; LYCEE.rede('ben'); });
-await page.waitForFunction(() => /Witze/.test((document.querySelector('.ly-dialog:not([hidden])') || {}).textContent || ''), null, { timeout: 20000 }).catch(() => {});
-check('Gesprächsfaden mit Ben startet („Witze“)', /Witze/.test(await page.textContent('.ly-dialog')));
+await page.waitForFunction(() => /Geschäftsmodell/.test((document.querySelector('.ly-dialog:not([hidden])') || {}).textContent || ''), null, { timeout: 20000 }).catch(() => {});
+check('Gesprächsfaden mit Ben startet („Geschäftsmodell“)', /Geschäftsmodell/.test(await page.textContent('.ly-dialog')));
 for (let i = 0; i < 12 && await L(() => LYCEE.imGespraech); i++) {
   if (await page.isVisible('.ly-d-optionen button')) await page.click('.ly-d-optionen button[data-i="1"]'); else await page.keyboard.press('KeyE');
   await page.waitForTimeout(250);
@@ -151,7 +191,7 @@ for (let i = 0; i < 12 && await L(() => LYCEE.imGespraech); i++) {
 check('Faden gespeichert, Freundschaft gewachsen', (await L(() => LYCEE.zustand.faeden.ben)) === 1 && (await L(() => LYCEE.zustand.herz.ben)) >= 3, await L(() => [LYCEE.zustand.faeden, LYCEE.zustand.herz.ben]));
 await L(() => { LYCEE.rede('ben'); });
 await page.waitForFunction(() => LYCEE.imGespraech, null, { timeout: 10000 }).catch(() => {});
-check('Im selben Abschnitt: nur kurz plaudern', !/Bauch|Test/.test(await page.textContent('.ly-dialog')) && (await L(() => LYCEE.zustand.faeden.ben)) === 1);
+check('Im selben Abschnitt: nur kurz plaudern', !/Geschäftsmodell|Investor/.test(await page.textContent('.ly-dialog')) && (await L(() => LYCEE.zustand.faeden.ben)) === 1);
 for (let i = 0; i < 8 && await L(() => LYCEE.imGespraech); i++) { await page.keyboard.press('KeyE'); await page.waitForTimeout(250); }
 
 // Tischtennis auf dem Hof: Spiel öffnet sich; ohne Schlag sind die drei Bälle weg, das Spiel endet von selbst

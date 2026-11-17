@@ -9,7 +9,7 @@ const KLASSE_SITZT = { ayla: pult(0, 0, -1), ben: pult(1, 2, 1), chiara: pult(2,
 
 // Neue Stärken: nicht nur die „brave“ Antwort zählt (Vorschlag der Kritiker)
 export const STAERKEN5 = {
-  humor: { name: 'Die Lage entschärfen', text: 'Ein Witz zur richtigen Zeit. Alle konnten kurz atmen.' },
+  humor: { name: 'Die Lage entschärfen', text: 'Ein Spruch, und die Luft war raus.' },
   loyal: { name: 'Zu jemandem halten', text: 'Du hast jemanden nicht hängen lassen.' },
   abstand: { name: 'Abstand nehmen', text: 'Du bist gegangen, bevor es knallt.' },
   lesen: { name: 'Die Lage lesen', text: 'Du hast gemerkt, was gerade wirklich los ist.' },
@@ -157,7 +157,7 @@ export const GESPRAECHE5 = {
   k5_ende: [
     ['erzaehler', 'Freitag, 15:30 Uhr. Vierte Woche.'],
     { tu: 'k5Folgen' },
-    ['erzaehler', 'Der Bus kommt. Wochenende.'],
+    ['fahrer', 'Dein Platz ist frei. Noah hat ihn mit einer Banane reserviert.'],
     { tu: 'kapitelEnde' },
   ],
 };

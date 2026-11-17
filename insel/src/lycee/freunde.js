@@ -39,7 +39,7 @@ export const GRUSS = {
   mila: 'Neue Woche. Gleicher Platz? Gut.',
   lina: '(winkt mit dem Stift) Hi.',
   jo: 'Na endlich. Ohne dich ist es langweilig.',
-  ben: 'Hast du zwei Euro? … Spaß. Schön, dass du da bist.',
+  ben: 'Hast du zwei Euro? … Spaß. Oder?',
   chiara: 'Ich hab einen Plan für die Woche. Du bist drin.',
   yusuf: 'Hm. Morgen. (nickt)',
   ayla: 'Ich hab einen neuen Song gelernt. Später?',
@@ -50,15 +50,15 @@ export const GRUSS = {
 
 // Nachricht am Ende eines Kapitels (je nach Kapitel)
 const ENDE = {
-  1: 'Erster Tag geschafft. Morgen wieder?',
-  2: 'Die Woche war lang. Gut, dass du da warst.',
-  3: 'Schnuppertag überlebt. Du warst gut.',
-  4: 'Du hast heute Nein gesagt. Respekt.',
-  5: 'Krasse Woche. Wir halten zusammen, oder?',
-  6: 'Kleine Schritte. Du machst das echt gut.',
-  7: 'Erste Arbeitswoche! Erzähl mir alles.',
+  1: 'Tag eins überlebt. Morgen Revanche gegen die Kantine.',
+  2: 'Woche rum. Ich schlaf jetzt bis Montag.',
+  3: 'Schnuppertag abgehakt. Du warst besser als ich.',
+  4: 'Hab gesehen, wie du Nein gesagt hast. Stark.',
+  5: 'Was für eine Woche. Morgen Korbball?',
+  6: 'Wochenende! Schreib, wenn was ist.',
+  7: 'Erste Arbeitswoche! Erzähl alles. Mit Details.',
 };
-const ZUSATZ = { noah: ' 🙂', mila: ' (Rekord: 38 Sekunden.)', lina: ' (Ich hab dich gezeichnet.)', jo: ' 💪', ben: ' 😂', chiara: ' Plan steht.', yusuf: '', ayla: ' 🎵', luca: '', kenan: '', dario: ' Alles gut.' };
+const ZUSATZ = { noah: ' (Pizza war übrigens okay.)', mila: ' (Rekord: 38 Sekunden.)', lina: ' (Du bist auf Seite 14.)', jo: ' Kakao steht noch aus.', ben: ' Du schuldest mir nix. Ich dir zwei Euro.', chiara: ' Plan für Montag steht.', yusuf: '', ayla: ' 🎸', luca: ' Salz war zu wenig. Wie immer.', kenan: '', dario: ' Zombie-Team forever.' };
 export const nachricht = (id, kap) => (ENDE[kap] || 'Bis morgen.') + (ZUSATZ[id] || '');
 
 // Freundes-Profil: Eigenschaften gewichtet mit den Freundschaftspunkten → die drei häufigsten

@@ -115,7 +115,7 @@ export function createUI({ root, input, speech }) {
     (f.unbekannt ? '<p class="ly-leer">' + f.unbekannt + ' aus der Klasse kennst du noch nicht.</p>' : '') + '</div>';
   ui.journal = ({ name, stundenplan, leute, freunde = null, staerken, geheimnisse, gesamt, lernkarten = [], leiter = null }) => {
     const k = ebeneAuf('journal', '<button type="button" class="ly-zu" aria-label="Schließen">✕</button><h2>Journal von ' + esc(name) + '</h2>' +
-      '<div class="ly-j-reiter"><button type="button" data-r="leute" class="an">Menschen</button><button type="button" data-r="staerken">Stärken</button><button type="button" data-r="plan">Stundenplan</button><button type="button" data-r="ent">Entdeckt ' + geheimnisse.length + '/' + gesamt + '</button>' + (leiter ? '<button type="button" data-r="leiter">Mutleiter</button>' : '') + '</div><div class="ly-j-inhalt"></div>');
+      '<div class="ly-j-reiter"><button type="button" data-r="leute" class="an">Menschen</button><button type="button" data-r="staerken">Stärken</button><button type="button" data-r="plan">Stundenplan</button><button type="button" data-r="ent">Entdeckt ' + geheimnisse.length + '/' + gesamt + '</button>' + (leiter ? '<button type="button" data-r="leiter">Meine Liste</button>' : '') + '</div><div class="ly-j-inhalt"></div>');
     const inhalt = k.querySelector('.ly-j-inhalt');
     const zeige = (r) => {
       k.querySelectorAll('[data-r]').forEach((b) => b.classList.toggle('an', b.dataset.r === r));
@@ -157,7 +157,7 @@ export function createUI({ root, input, speech }) {
   ui.ende = ({ leute, freunde = null, brief = null, staerken, entdeckt, gesamt, kap = 1, ueberschrift = 'Geschafft', weiter = '' }) => new Promise((ok) => {
     const k = ebeneAuf('ende', '<div class="ly-t-kicker">Kapitel ' + kap + ' geschafft</div><h2>' + esc(ueberschrift) + '</h2>' +
       (brief ? '<div class="ly-e-brief"><span class="ly-j-name" style="--f:' + esc(brief.farbe) + '">' + esc(brief.von) + '</span> schreibt dir: „' + esc(brief.text) + '“</div>' : '') + freundesKreis(freunde) + '<div class="ly-e-spalten"><section><h3>Menschen</h3><ul class="ly-j-leute">' + leute.map((l) => '<li><span class="ly-j-name" style="--f:' + esc(l.farbe) + '">' + esc(l.name) + '</span><span class="ly-herzen">' + '♥'.repeat(Math.max(0, Math.min(5, l.herz))) + '<i>' + '♥'.repeat(5 - Math.max(0, Math.min(5, l.herz))) + '</i></span></li>').join('') + '</ul></section>' +
-      '<section><h3>Deine Stärken heute</h3><ul class="ly-j-staerken">' + (staerken.length ? staerken.map((s) => '<li><b>' + esc(s.name) + '</b><small>' + esc(s.text) + '</small></li>').join('') : '<li><small>Morgen ist ein neuer Tag.</small></li>') + '</ul>' +
+      '<section><h3>Deine Stärken heute</h3><ul class="ly-j-staerken">' + (staerken.length ? staerken.map((s) => '<li><b>' + esc(s.name) + '</b><small>' + esc(s.text) + '</small></li>').join('') : '<li><small>Heute nix Besonderes. Passiert.</small></li>') + '</ul>' +
       '<p class="ly-leer">Entdeckt: ' + entdeckt + ' von ' + gesamt + ' Orten</p></section></div>' +
       (weiter ? '' : '<p class="ly-e-weiter">Das nächste Kapitel kommt bald.</p>') + '<div class="ly-t-knoepfe">' +
       (weiter ? '<button type="button" class="ly-btn ly-primaer" data-a="weiter">' + esc(weiter) + '</button>' : '<button type="button" class="ly-btn ly-primaer" data-a="frei">Weiter herumlaufen</button>') +
@@ -287,14 +287,14 @@ export function createUI({ root, input, speech }) {
 
   // Ich-Botschaft bauen: drei Teile; ein Vorwurf wird freundlich zurückgegeben (Tipp), dann neu wählen
   ui.ichBotschaft = (thema) => new Promise((ok) => {
-    const k = ebeneAuf('ich', '<div class="ly-t-kicker">Ich-Botschaft</div><h2>' + esc(thema.thema) + '</h2><div class="ly-ich-satz"></div><div class="ly-ich-teil"></div>');
+    const k = ebeneAuf('ich', '<div class="ly-t-kicker">Klartext</div><h2>' + esc(thema.thema) + '</h2><div class="ly-ich-satz"></div><div class="ly-ich-teil"></div>');
     const satzEl = k.querySelector('.ly-ich-satz'), teilEl = k.querySelector('.ly-ich-teil');
     const gewaehlt = [];
     const zeige = (i, tipp) => {
       satzEl.innerHTML = gewaehlt.map((g) => '<span>' + esc(g) + '</span>').join(' ') || '<span class="ly-leer">Dein Satz entsteht hier.</span>';
       if (i >= thema.teile.length) {
         const satz = gewaehlt.join(' ');
-        teilEl.innerHTML = '<p class="ly-ich-gut">So klingt eine Ich-Botschaft.</p><button type="button" class="ly-btn ly-primaer" data-a="sagen">Laut sagen <kbd>E</kbd></button>';
+        teilEl.innerHTML = '<p class="ly-ich-gut">Sitzt. Da kann Jo nichts gegen sagen.</p><button type="button" class="ly-btn ly-primaer" data-a="sagen">Laut sagen <kbd>E</kbd></button>';
         const sag = () => { document.removeEventListener('keydown', taste, true); ebeneZu(); ok(satz); };
         const taste = (e) => { if (e.code === 'KeyE' || e.code === 'Enter') { e.preventDefault(); e.stopPropagation(); sag(); } };
         document.addEventListener('keydown', taste, true);
@@ -513,7 +513,7 @@ export function createUI({ root, input, speech }) {
     const rest = () => teile.filter((t) => !gewaehlt.includes(t.id));
     const zeige = () => {
       liste.innerHTML = gewaehlt.map((id, i) => '<li>' + (i === 0 ? '<b>Unten:</b> ' : '') + esc(teile.find((t) => t.id === id).t) + '</li>').join('');
-      if (!rest().length) { opt.innerHTML = '<p class="ly-ich-gut">Deine Leiter. Oben das Schwerste.</p><button type="button" class="ly-btn ly-primaer" data-a="w">Weiter <kbd>E</kbd></button>'; opt.querySelector('[data-a]').onclick = fertig; return; }
+      if (!rest().length) { opt.innerHTML = '<p class="ly-ich-gut">Deine Liste. Oben das Härteste.</p><button type="button" class="ly-btn ly-primaer" data-a="w">Weiter <kbd>E</kbd></button>'; opt.querySelector('[data-a]').onclick = fertig; return; }
       opt.innerHTML = rest().map((t, j) => '<button type="button" data-k="' + esc(t.id) + '"><kbd>' + (j + 1) + '</kbd><span>' + esc(t.t) + '</span></button>').join('');
       opt.querySelectorAll('[data-k]').forEach((b) => { b.onclick = () => { gewaehlt.push(b.dataset.k); zeige(); }; });
     };
@@ -627,6 +627,125 @@ export function createUI({ root, input, speech }) {
     zeige();
   });
 
+  // ---------- Lernformen im Unterricht (am eigenen Platz). Alle geben { fehler } zurück; Fehler sind erlaubt, es geht weiter. ----------
+  const mische = (l) => { const a = l.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+  const lernKopf = (kicker, titel, hilfe) => '<div class="ly-t-kicker">' + esc(kicker) + '</div><h2>' + esc(titel) + '</h2>' + (hilfe ? '<p class="ly-leer">' + esc(hilfe) + '</p>' : '');
+  const weiterKnopf = '<button type="button" class="ly-btn ly-primaer" data-a="w">Weiter <kbd>E</kbd></button>';
+  const mitWeiter = (k, zu) => { const t = (e) => { if (e.code === 'KeyE' || e.code === 'Enter') { e.preventDefault(); e.stopPropagation(); document.removeEventListener('keydown', t, true); zu(); } }; document.addEventListener('keydown', t, true); k.querySelector('[data-a="w"]').onclick = () => { document.removeEventListener('keydown', t, true); zu(); }; };
+
+  // Satzbau-Puzzle: Wörter in die richtige Reihenfolge tippen (Satzstellung sichtbar machen)
+  ui.satzbau = ({ titel = 'Satzbau', saetze }) => new Promise((ok) => {
+    const k = ebeneAuf('lern', lernKopf(titel, 'Tippe die Wörter in der richtigen Reihenfolge.', '') + '<div class="ly-sb-satz"></div><div class="ly-sb-teile"></div><p class="ly-ich-tipp" hidden></p><div class="ly-sb-fuss"></div>');
+    let nr = 0, pos = 0, fehler = 0, teile = [];
+    const satz = k.querySelector('.ly-sb-satz'), box = k.querySelector('.ly-sb-teile'), tipp = k.querySelector('.ly-ich-tipp'), fuss = k.querySelector('.ly-sb-fuss');
+    const zeige = () => {
+      const s = saetze[nr]; pos = 0; tipp.hidden = true; fuss.innerHTML = '<small>Satz ' + (nr + 1) + ' von ' + saetze.length + '</small>';
+      satz.innerHTML = s.woerter.map(() => '<span class="ly-sb-luecke"></span>').join('');
+      teile = mische(s.woerter.map((w, i) => ({ w, i })));
+      box.innerHTML = teile.map((t, j) => '<button type="button" data-j="' + j + '">' + esc(t.w) + '</button>').join('');
+      box.querySelectorAll('[data-j]').forEach((b) => { b.onclick = () => tippe(+b.dataset.j, b); });
+    };
+    const tippe = (j, b) => {
+      const s = saetze[nr], t = teile[j];
+      if (s.woerter[pos] !== t.w) { fehler++; b.classList.remove('falsch'); void b.offsetWidth; b.classList.add('falsch'); tipp.hidden = false; tipp.textContent = '💡 ' + (s.tipp || 'Welches Wort kommt jetzt?'); return; }
+      satz.children[pos].textContent = t.w; satz.children[pos].classList.add('gut'); b.disabled = true; pos++; tipp.hidden = true;
+      if (pos === s.woerter.length) {
+        nr++;
+        if (nr < saetze.length) { fuss.innerHTML = '<p class="ly-ich-gut">✓ Richtig!</p>'; setTimeout(zeige, 800); }
+        else { fuss.innerHTML = '<p class="ly-ich-gut">✓ Alle Sätze gebaut.</p>' + weiterKnopf; mitWeiter(k, () => { ebeneZu(); ok({ fehler }); }); }
+      }
+    };
+    zeige();
+  });
+
+  // Paare finden: links antippen, dann das passende rechts
+  ui.paare = ({ titel = 'Paare finden', frage = 'Was gehört zusammen?', paare }) => new Promise((ok) => {
+    const rechts = mische(paare.map((p, i) => i));
+    const k = ebeneAuf('lern', lernKopf(titel, frage, 'Erst links tippen, dann rechts.') + '<div class="ly-pa"><div class="ly-pa-sp">' + paare.map((p, i) => '<button type="button" data-l="' + i + '">' + esc(p[0]) + '</button>').join('') +
+      '</div><div class="ly-pa-sp">' + rechts.map((i) => '<button type="button" data-r="' + i + '">' + esc(paare[i][1]) + '</button>').join('') + '</div></div><div class="ly-sb-fuss"></div>');
+    let links = null, fertig = 0, fehler = 0;
+    k.querySelectorAll('[data-l]').forEach((b) => { b.onclick = () => { if (b.disabled) return; k.querySelectorAll('[data-l]').forEach((x) => x.classList.remove('an')); b.classList.add('an'); links = +b.dataset.l; }; });
+    k.querySelectorAll('[data-r]').forEach((b) => { b.onclick = () => {
+      if (links == null || b.disabled) return;
+      const lb = k.querySelector('[data-l="' + links + '"]');
+      if (+b.dataset.r === links) { b.disabled = lb.disabled = true; b.classList.add('gut'); lb.classList.add('gut'); lb.classList.remove('an'); links = null; fertig++;
+        if (fertig === paare.length) { k.querySelector('.ly-sb-fuss').innerHTML = '<p class="ly-ich-gut">✓ Alle Paare gefunden.</p>' + weiterKnopf; mitWeiter(k, () => { ebeneZu(); ok({ fehler }); }); } }
+      else { fehler++; b.classList.remove('falsch'); void b.offsetWidth; b.classList.add('falsch'); }
+    }; });
+  });
+
+  // Hörübung: der Satz wird vorgelesen (🔊, nochmal möglich); ohne Sprachausgabe steht er da. Dann die Frage beantworten.
+  ui.hoeren = ({ titel = 'Hören', items }) => new Promise((ok) => {
+    const k = ebeneAuf('lern', lernKopf(titel, 'Hör gut zu.', '') + '<div class="ly-ho"><button type="button" class="ly-ho-play" data-a="play">🔊 Anhören</button><p class="ly-ho-text" hidden></p><h3 class="ly-ho-frage"></h3><div class="ly-d-optionen"></div></div><div class="ly-sb-fuss"></div>');
+    let nr = 0, fehler = 0, versucht = false;
+    const kannSprechen = !!(speech && speech.available);
+    const sag = () => { const it = items[nr]; if (kannSprechen) speech.speak(it.sagen, { interrupt: true }); else { const t = k.querySelector('.ly-ho-text'); t.hidden = false; t.textContent = '„' + it.sagen + '“'; } };
+    const zeige = () => {
+      const it = items[nr]; versucht = false;
+      k.querySelector('.ly-ho-text').hidden = true; k.querySelector('.ly-ho-frage').textContent = it.frage;
+      k.querySelector('.ly-sb-fuss').innerHTML = '<small>' + (nr + 1) + ' von ' + items.length + (kannSprechen ? '' : ' · ohne Ton: lies den Satz') + '</small>';
+      const opt = k.querySelector('.ly-d-optionen'), reihe = mische(it.optionen.map((o, i) => i));
+      opt.innerHTML = reihe.map((i, p) => '<button type="button" data-i="' + i + '"><kbd>' + (p + 1) + '</kbd><span>' + esc(it.optionen[i]) + '</span></button>').join('');
+      opt.querySelectorAll('[data-i]').forEach((b) => { b.onclick = () => antwort(+b.dataset.i, b); });
+      setTimeout(sag, 350);
+    };
+    const antwort = (i, b) => {
+      const it = items[nr];
+      if (i !== it.richtig) { fehler++; versucht = true; b.classList.add('falsch'); b.disabled = true; const t = k.querySelector('.ly-ho-text'); t.hidden = false; t.textContent = '„' + it.sagen + '“'; return; }
+      b.classList.add('gut'); nr++;
+      if (nr < items.length) setTimeout(zeige, 700);
+      else { k.querySelector('.ly-sb-fuss').innerHTML = '<p class="ly-ich-gut">✓ Gut zugehört.</p>' + weiterKnopf; mitWeiter(k, () => { if (speech) speech.cancel(); ebeneZu(); ok({ fehler }); }); }
+    };
+    k.querySelector('[data-a="play"]').onclick = sag;
+    zeige();
+  });
+
+  // Uhr lesen: analoge Uhr, die passende Uhrzeit in Worten wählen
+  ui.uhrspiel = ({ titel = 'Uhr lesen', items }) => new Promise((ok) => {
+    const k = ebeneAuf('lern', lernKopf(titel, 'Wie spät ist es?', '') + '<div class="ly-uh"><svg viewBox="-110 -110 220 220" class="ly-uh-uhr"></svg><div class="ly-d-optionen"></div></div><div class="ly-sb-fuss"></div>');
+    let nr = 0, fehler = 0;
+    const zeichne = (zeit) => {
+      const [h, m] = zeit.split(':').map(Number), aw = (m / 60) * 360, hw = ((h % 12) / 12) * 360 + m / 2;
+      const zeiger = (w, l, d, f) => { const r = (w - 90) * Math.PI / 180; return '<line x1="0" y1="0" x2="' + (Math.cos(r) * l).toFixed(1) + '" y2="' + (Math.sin(r) * l).toFixed(1) + '" stroke="' + f + '" stroke-width="' + d + '" stroke-linecap="round"/>'; };
+      let striche = ''; for (let i = 0; i < 60; i++) { const r = i * 6 * Math.PI / 180, a = i % 5 ? 92 : 84; striche += '<line x1="' + (Math.cos(r) * a).toFixed(1) + '" y1="' + (Math.sin(r) * a).toFixed(1) + '" x2="' + (Math.cos(r) * 98).toFixed(1) + '" y2="' + (Math.sin(r) * 98).toFixed(1) + '" stroke="#2b3a55" stroke-width="' + (i % 5 ? 1.5 : 4) + '"/>'; }
+      let zahlen = ''; for (let i = 1; i <= 12; i++) { const r = (i * 30 - 90) * Math.PI / 180; zahlen += '<text x="' + (Math.cos(r) * 70).toFixed(1) + '" y="' + (Math.sin(r) * 70 + 7).toFixed(1) + '" text-anchor="middle" font-size="19" font-weight="800" fill="#2b3a55">' + i + '</text>'; }
+      k.querySelector('.ly-uh-uhr').innerHTML = '<circle r="104" fill="#fffaf0" stroke="#2b3a55" stroke-width="6"/>' + striche + zahlen + zeiger(hw, 50, 9, '#2b3a55') + zeiger(aw, 80, 5, '#d9523c') + '<circle r="7" fill="#2b3a55"/>';
+    };
+    const zeige = () => {
+      const it = items[nr]; zeichne(it.zeit);
+      k.querySelector('.ly-sb-fuss').innerHTML = '<small>Uhr ' + (nr + 1) + ' von ' + items.length + (it.hinweis ? ' · ' + esc(it.hinweis) : '') + '</small>';
+      const opt = k.querySelector('.ly-d-optionen'), reihe = mische(it.optionen.map((o, i) => i));
+      opt.innerHTML = reihe.map((i, p) => '<button type="button" data-i="' + i + '"><kbd>' + (p + 1) + '</kbd><span>' + esc(it.optionen[i]) + '</span></button>').join('');
+      opt.querySelectorAll('[data-i]').forEach((b) => { b.onclick = () => { if (+b.dataset.i !== it.richtig) { fehler++; b.classList.add('falsch'); b.disabled = true; return; } b.classList.add('gut'); nr++;
+        if (nr < items.length) setTimeout(zeige, 650); else { k.querySelector('.ly-sb-fuss').innerHTML = '<p class="ly-ich-gut">✓ Alle Uhren gelesen.</p>' + weiterKnopf; mitWeiter(k, () => { ebeneZu(); ok({ fehler }); }); } }; });
+    };
+    zeige();
+  });
+
+  // Groß oder klein: die Wörter antippen, die man großschreibt (Nomen, Namen, Satzanfang), dann prüfen
+  ui.grossKlein = ({ titel = 'Groß oder klein?', saetze }) => new Promise((ok) => {
+    const k = ebeneAuf('lern', lernKopf(titel, 'Tippe alle Wörter an, die man großschreibt.', 'Nomen (der/die/das passt davor), Namen und der Satzanfang.') + '<div class="ly-gk"></div><div class="ly-sb-fuss"></div>');
+    let nr = 0, fehler = 0;
+    const zeige = () => {
+      const s = saetze[nr], box = k.querySelector('.ly-gk');
+      box.innerHTML = s.woerter.map((w, i) => '<button type="button" data-i="' + i + '">' + esc(w.toLowerCase()) + '</button>').join(' ');
+      box.querySelectorAll('[data-i]').forEach((b) => { b.onclick = () => b.classList.toggle('an'); });
+      k.querySelector('.ly-sb-fuss').innerHTML = '<small>Satz ' + (nr + 1) + ' von ' + saetze.length + '</small> <button type="button" class="ly-btn ly-primaer" data-a="p">Prüfen</button>';
+      k.querySelector('[data-a="p"]').onclick = pruefe;
+    };
+    const pruefe = () => {
+      const s = saetze[nr], box = k.querySelector('.ly-gk'); let ok2 = true;
+      box.querySelectorAll('[data-i]').forEach((b) => { const w = s.woerter[+b.dataset.i], gross = w[0] !== w[0].toLowerCase(), an = b.classList.contains('an');
+        if (gross !== an) { ok2 = false; b.classList.add('falsch'); } else b.classList.remove('falsch'); });
+      if (!ok2) { fehler++; return; }
+      box.querySelectorAll('[data-i]').forEach((b) => { b.textContent = s.woerter[+b.dataset.i]; b.classList.add('gut'); b.disabled = true; });
+      nr++;
+      if (nr < saetze.length) { k.querySelector('.ly-sb-fuss').innerHTML = '<p class="ly-ich-gut">✓ Richtig!</p>'; setTimeout(zeige, 900); }
+      else { k.querySelector('.ly-sb-fuss').innerHTML = '<p class="ly-ich-gut">✓ Alles richtig geschrieben.</p>' + weiterKnopf; mitWeiter(k, () => { ebeneZu(); ok({ fehler }); }); }
+    };
+    zeige();
+  });
+
   // Tafelkarte im Unterricht: Ziel und Regel der Lektion, „Verstanden“ (E/Enter)
   ui.merke = ({ titel, punkte = [], ziel = '', fach = '' }) => new Promise((ok) => {
     const k = ebeneAuf('merke', '<div class="ly-mk-tafel"><div class="ly-mk-fach">' + esc(fach) + '</div>' + (ziel ? '<p class="ly-mk-ziel">Mein Ziel: ' + esc(ziel) + '</p>' : '') +
@@ -642,7 +761,7 @@ export function createUI({ root, input, speech }) {
   ui.arbeitsblatt = ({ blatt, name = '', datum = '', neu = false }) => new Promise((ok) => {
     const aufg = blatt.aufgaben;
     const zeile = (a, i) => {
-      if (a.wahl) return '<li data-i="' + i + '"><span class="ly-ab-nr">' + (i + 1) + '</span><span class="ly-ab-t">' + esc(a.t).replace('◻', '<span class="ly-ab-zeichen" data-z="">?</span>') + '</span><span class="ly-ab-wahl">' + a.wahl.map((w) => '<button type="button" data-w="' + esc(w) + '">' + esc(w) + '</button>').join('') + '</span><span class="ly-ab-ok"></span></li>';
+      if (a.wahl) return '<li data-i="' + i + '"><span class="ly-ab-nr">' + (i + 1) + '</span><span class="ly-ab-t">' + esc(a.t).replace('◻', '<span class="ly-ab-zeichen" data-z="">' + (a.wahl.includes('?') ? '…' : '?') + '</span>') + '</span><span class="ly-ab-wahl">' + a.wahl.map((w) => '<button type="button" data-w="' + esc(w) + '">' + esc(w) + '</button>').join('') + '</span><span class="ly-ab-ok"></span></li>';
       let n = 0;
       const t = esc(a.t).replace(/_{2,}/g, () => '<input type="text" inputmode="decimal" autocomplete="off" data-l="' + (n++) + '" aria-label="Lücke">');
       return '<li data-i="' + i + '"><span class="ly-ab-nr">' + (i + 1) + '</span><span class="ly-ab-t">' + t + '</span><span class="ly-ab-ok"></span>' + (a.tipp ? '<small class="ly-ab-tipp" hidden>💡 ' + esc(a.tipp) + '</small>' : '') + '</li>';

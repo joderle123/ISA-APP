@@ -5,7 +5,7 @@
 // Kurze Sätze, keine Moral-Stimme, keine Strafe vom Spiel. Erfundene Namen.
 
 export const STAERKEN4 = {
-  neinsagen: { name: 'Nein sagen', text: 'Du hast Nein gesagt und bist freundlich geblieben.' },
+  neinsagen: { name: 'Nein sagen', text: 'Nein gesagt. Und trotzdem noch gegrüßt worden.' },
   schlichten: { name: 'Streit schlichten', text: 'Du hast geholfen, dass zwei wieder reden.' },
   ziel: { name: 'Ein Ziel setzen', text: 'Du hast dir etwas für nächste Woche vorgenommen.' },
   dranbleiben: { name: 'Dranbleiben', text: 'Du hast Aufgaben gelöst, auch wenn es schwer war.' },
@@ -221,11 +221,11 @@ export const GESPRAECHE4 = {
     ['erzaehler', 'Donnerstag, 14 Uhr. Im CDI gibt es den Hausaufgaben-Club.'],
   ],
   club: [
-    ['laurent', 'Willkommen im Club! Ich bin Mme Laurent.'],
+    ['laurent', 'Setzen. Ich bin Mme Laurent. Drei Aufgaben, dann dürft ihr gehen.'],
     ['laurent', 'Heute habe ich Aufgaben von euren Lehrern. Drei Stück.'],
-    ['laurent', 'Fehler sind hier erlaubt. Dafür ist der Club da.'],
+    ['laurent', 'Kekse in der Dose. Erst nach Aufgabe drei.'],
     { tu: 'lernmoment' },
-    ['laurent', 'Gut gemacht. Donnerstags bin ich immer hier.'],
+    ['laurent', 'Fertig? Donnerstag wieder. Kekse auch.'],
   ],
   k4_fr: [
     ['erzaehler', 'Freitag, Pause. Vom Korbballfeld hörst du Geschrei.'],
@@ -262,9 +262,9 @@ export const GESPRAECHE4 = {
     ['hoffmann', 'Drei Wochen sind um. Jeder sucht sich ein Ziel für nächste Woche.'],
     ['hoffmann', 'Klein und machbar. Was nimmst du dir vor, {name}?'],
     { wahl: [
-      { t: 'Einmal im Unterricht etwas fragen.', staerke: 'ziel', merke: 'zielFragen', dann: [['hoffmann', 'Gutes Ziel. Ich achte darauf.']] },
-      { t: 'Jemanden ansprechen, der allein ist.', staerke: 'ziel', merke: 'zielAnsprechen', dann: [['hoffmann', 'Schön. Das hilft der ganzen Klasse.']] },
-      { t: 'Jeden Tag pünktlich am Bus sein.', staerke: 'ziel', merke: 'zielPuenktlich', dann: [['hoffmann', 'Gut. Wecker stellen hilft.']] },
+      { t: 'Einmal im Unterricht etwas fragen.', staerke: 'ziel', merke: 'zielFragen', dann: [['hoffmann', 'Notiert. Ich frag Freitag nach.']] },
+      { t: 'Jemanden ansprechen, der allein ist.', staerke: 'ziel', merke: 'zielAnsprechen', dann: [['hoffmann', 'Notiert. Lina sitzt übrigens immer am Fenster.']] },
+      { t: 'Jeden Tag pünktlich am Bus sein.', staerke: 'ziel', merke: 'zielPuenktlich', dann: [['hoffmann', 'Der 7:35 wartet nicht. Frau Weber auch nicht.']] },
       { t: 'Donnerstags in den Hausaufgaben-Club.', staerke: 'ziel', merke: 'zielClub', dann: [['hoffmann', 'Mme Laurent freut sich.']] },
       { t: '„Weiß nicht. Die Woche überleben.“', merke: 'zielUeberleben', dann: [['hoffmann', '(kurzes Lachen) Ehrlich. Nehm ich auch.'], ['jo', 'Gleiches Ziel.']] },
     ] },
@@ -273,7 +273,7 @@ export const GESPRAECHE4 = {
   k4_ende: [
     ['erzaehler', 'Freitag, 15:30 Uhr. Die dritte Woche ist vorbei.'],
     { tu: 'noahWoche' },
-    ['erzaehler', 'Der Bus kommt. Schönes Wochenende.'],
+    ['fahrer', 'Wer hat den Kaugummi unter Sitz vier geklebt? Ich find dich.'],
     { tu: 'kapitelEnde' },
   ],
 };

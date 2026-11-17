@@ -19,7 +19,7 @@ export const STAERKEN6 = {
   zeit: { name: 'Zeit holen', text: 'Du hast gezeigt: Ich brauch kurz. Statt zu erstarren.' },
   fehler: { name: 'Fehler anschauen', text: 'Du hast hingesehen, statt das Blatt wegzustecken.' },
   pruefen: { name: 'Gedanken prüfen', text: 'Du hast geschaut, was wirklich los ist.' },
-  mut6: { name: 'Sich trauen', text: 'Du hast es gemacht, obwohl der Kopf Nein gesagt hat.' },
+  mut6: { name: 'Sich trauen', text: 'Durchgezogen. Obwohl alles in dir „bloß nicht“ rief.' },
 };
 
 // Die Mutleiter: Die Jugendlichen sortieren selbst, was leicht und was schwer ist.
@@ -89,7 +89,7 @@ export const SCHRITTE6 = [
 export const GESPRAECHE6 = {
   k6_intro: [
     ['erzaehler', 'Fünfte Woche. Montag.'],
-    ['erzaehler', 'Seit Freitag zieht es im Bauch.'],
+    ['erzaehler', 'Sonntag hast du dreimal den Wecker gecheckt.'],
   ],
   k6_tor: [
     ['erzaehler', 'Das Tor. Dahinter: Lärm, Leute, Blicke.'],
@@ -117,17 +117,17 @@ export const GESPRAECHE6 = {
     ['kaya', 'Ich frag nur eins. Was ist gerade am schwersten?'],
     { wahl: [
       { t: '„Wenn alle schauen.“', merke: 'schwerSchauen', dann: [['kaya', 'Kenn ich. Dann wird der Kopf leer, oder?']] },
-      { t: '„Die Pausen. Wo soll ich hin?“', merke: 'schwerPause', dann: [['kaya', 'Pausen sind für viele das Schlimmste. Echt.']] },
+      { t: '„Die Pausen. Wo soll ich hin?“', merke: 'schwerPause', dann: [['kaya', 'Pausen. Die längsten fünfzehn Minuten der Welt.']] },
       { t: '„Fehler. Der ganze Rotstift.“', merke: 'schwerFehler', dann: [['kaya', 'Lieber gar nicht anfangen als falsch. Kenn ich.']] },
       { t: '„Weiß nicht. Alles irgendwie.“', merke: 'schwerAlles', dann: [['kaya', 'Auch eine Antwort. Dann fangen wir klein an.']] },
     ] },
-    ['kaya', 'Kein Vortrag. Nur ein Trick, der wirklich hilft.'],
-    ['kaya', 'Angst ist wie eine Welle. Sie steigt. Dann fällt sie.'],
-    ['kaya', 'Wer vorher abhaut, merkt das nie.'],
-    ['kaya', 'Wir bauen eine Leiter. Unten das Leichteste.'],
+    ['kaya', 'Ich hab einen Trick. Klingt blöd. Geht aber.'],
+    ['kaya', 'Wie beim Zahnarzt: Die ersten Minuten sind die schlimmsten.'],
+    ['kaya', 'Wer vorher geht, merkt nie, dass es leichter wird.'],
+    ['kaya', 'Wir machen eine Liste. Unten das Leichteste.'],
     { tu: 'leiterBauen' },
-    ['kaya', 'Regel eins: Bleib, bis es runtergeht.'],
-    ['kaya', 'Regel zwei: Abbrechen ist erlaubt. Dann wird die Stufe kleiner.'],
+    ['kaya', 'Also: bleiben, bis es nachlässt.'],
+    ['kaya', 'Geht gar nicht? Dann kleinere Stufe. Kein Drama.'],
     { tu: 'leiterStart' },
     ['kaya', 'Und das hier. Eine Karte. Steht „Gleich“ drauf.'],
     ['kaya', 'Leg sie hin, wenn du drankommst und nichts geht.'],
@@ -139,7 +139,7 @@ export const GESPRAECHE6 = {
   ],
   k6_pause: [
     ['erzaehler', 'Noah, Ayla, Yusuf. Sie reden über irgendwas.'],
-    ['erzaehler', 'Du musst nichts sagen. Nur da sein.'],
+    ['erzaehler', 'Yusuf zeigt ein Video rum. Keiner guckt dich an.'],
     { tu: 'probePause' },
   ],
   k6_lachen: [
@@ -235,7 +235,7 @@ export const GESPRAECHE6 = {
   k6_test: [
     ['laurent', 'Eure Tests. Schaut erst mal selbst.'],
     ['erzaehler', '7 von 20. Viel Rot.'],
-    ['kritiker', 'Siehst du. Kannst du nicht. Konntest du nie.'],
+    ['kritiker', 'Wow. Eine Sieben. Rahm’s dir ein.'],
     ['kritiker', 'Steck’s weg. Bevor’s einer sieht.'],
     { wahl: [
       { t: 'Blatt in den Rucksack. Nie wieder anschauen.', merke: 'testWeg', dann: [
@@ -266,7 +266,7 @@ export const GESPRAECHE6 = {
       { t: 'Bäcker: selbst bestellen.', merke: 'stufeBaecker', dann: [['kaya', 'Gut. Zehn Uhr fünfzehn ist die Schlange kurz.']] },
       { t: 'Kantine: zu den anderen setzen.', merke: 'stufeKantine', dann: [['kaya', 'Gut. Du musst nicht reden. Nur sitzen.']] },
       { t: '„Heute keine. Bin durch.“', merke: 'stufeKeine', dann: [
-        ['kaya', 'Okay. Ehrlich sagen ist besser als wegbleiben.'],
+        ['kaya', 'Okay. Danke, dass du’s sagst. Wochenende. Handy mal weg.'],
         ['kaya', 'Montag dann. Schönes Wochenende.'] ] },
     ] },
   ],
@@ -283,7 +283,7 @@ export const GESPRAECHE6 = {
     ['erzaehler', 'Freitag. Bus.'],
     { tu: 'wocheZeigen' },
     ['erzaehler', 'Handy. Herr Kaya: „Schönes Wochenende.“'],
-    ['erzaehler', '„Montag: nächste Stufe. Oder dieselbe nochmal. Beides zählt.“'],
+    ['erzaehler', 'Kaya schreibt: „Montag gleiche Zeit? Ich bring Brötchen.“'],
     { tu: 'kapitelEnde' },
   ],
 };

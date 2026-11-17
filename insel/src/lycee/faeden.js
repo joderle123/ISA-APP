@@ -1,400 +1,464 @@
-// Annexe Junglinster – Gesprächsfäden (Auftrag 17.11.: „deepe Conversations … coolere NPCs“).
-// Jede Mitschülerin, jeder Mitschüler hat drei tiefere Gespräche. Sie öffnen sich nacheinander, wenn die Freundschaft
-// wächst (herz) – höchstens eins pro Abschnitt der Geschichte, damit sie sich über die Wochen verteilen.
-// Inhalt: Hobbys, Sorgen um Schule und Zukunft, Gefühle im Alltag (Lampenfieber, Wut, zu laut, neu sein). Niemand erzählt
-// Privates aus der Familie. Keine Moral. Höchstens ~12 Wörter pro Sprechblase. Gute Antworten: zuhören, nicht drängen.
-// Format wie GESPRAECHE: ['wer', 'Text'] · { wahl: [{ t, staerke?, herz?, dann: [...] }] }.
+// Annexe Junglinster – Gesprächsfäden. Neu geschrieben nach der Rückmeldung „die Gespräche sind maximal cringe“ (17.11.).
+// Jede Mitschülerin, jeder Mitschüler hat drei Gespräche, die nacheinander aufgehen, wenn die Freundschaft wächst (herz) –
+// höchstens eins pro Abschnitt der Geschichte.
+//
+// Stil-Regeln (gelten für alle neuen Texte):
+// · Es geht um Sachen, über die Jugendliche wirklich reden: Wetten, Pläne, Pannen, Lehrkräfte, Handy, Essen, Musik, Autos.
+// · Humor zuerst. Gefühle kommen nur nebenbei vor (ein Halbsatz, ein Witz drüber) – nie als Geständnis.
+// · Keine Sozialarbeiter-Sätze („Wie war das für dich?“, „Was denkst du selbst?“). Nachfragen klingen normal: „Und dann?“
+// · Antworten: meist eine freche, eine lockere, eine daneben. Die daneben bekommt eine Reaktion, keine Moral.
+// · Erwachsene beichten nichts; sie haben trockenen Humor und eine Macke.
+// · Klares Deutsch, keine aufgesetzte Jugendsprache, höchstens ~12 Wörter pro Sprechblase, nichts aus Familien.
+// Format: ['wer', 'Text'] · { wahl: [{ t, staerke?, herz?, dann: [...] }] }.
 
 const nett = (id, n = 1) => ({ [id]: n });
 
 export const FAEDEN = {
   noah: [
-    { herz: 2, titel: 'Neu sein', g: [
-      ['noah', 'Darf ich was fragen? Wie lange ist man „der Neue“?'],
+    { herz: 2, titel: 'Die Pizza-Frage', g: [
+      ['noah', 'Kurze Frage. Ist die Kantinen-Pizza … legal?'],
       { wahl: [
-        { t: 'Bis jemand Neueres kommt. Also: bald.', herz: nett('noah'), dann: [['noah', 'Haha. Okay. Das ist ein Plan.']] },
-        { t: 'Fühlst du dich noch neu?', staerke: 'zuhoeren', herz: nett('noah', 2), dann: [['noah', 'Manchmal. Im Gang geht’s. In der Kantine nicht.'], ['noah', 'Da weiß ich nie, wo ich sitzen soll.']] },
-        { t: 'Keine Ahnung.', dann: [['noah', 'Ja. Ich auch nicht.']] },
+        { t: 'Legal ja. Essbar ist eine andere Frage.', staerke: 'humor', herz: nett('noah', 2), dann: [['noah', 'Gut. Dann bin ich nicht der Einzige, der fragt.']] },
+        { t: 'Nimm das Curry. Vertrau mir.', herz: nett('noah'), dann: [['noah', 'Curry. Notiert. Wenn ich sterbe, bist du schuld.']] },
+        { t: 'Keine Ahnung. Frag wen anders.', dann: [['noah', 'Okay. Ich frag die Pizza selbst.']] },
       ] },
     ] },
-    { herz: 3, titel: 'Die Kantine', g: [
-      ['noah', 'Ich hab heute einfach gefragt: „Ist da frei?“'],
-      ['noah', 'Und es war frei. Einfach so.'],
+    { herz: 3, titel: '47 Sticker', g: [
+      ['noah', 'Ich bin seit gestern in der Klassengruppe.'],
+      ['noah', 'Ben hat 47 Sticker geschickt. In einer Minute. Ist das normal?'],
       { wahl: [
-        { t: 'Wie war das für dich?', staerke: 'zuhoeren', herz: nett('noah'), dann: [['noah', 'Vorher: Herz rast. Nachher: Warum hab ich so lange gewartet?']] },
-        { t: 'Siehst du. War doch easy.', dann: [['noah', 'Für dich vielleicht. Für mich war das ein Berg.']] },
+        { t: 'Willkommen. Stummschalten ist dein Freund.', herz: nett('noah', 2), dann: [['noah', 'Stumm … das gibt’s? Mein Leben ist gerettet.']] },
+        { t: 'Schick einen zurück. Den hässlichsten.', staerke: 'einbeziehen', herz: nett('noah', 2), dann: [['erzaehler', 'Noah tippt. Sein Handy brummt sofort.'], ['noah', 'Ben hat drei Herzen geschickt. Bin ich jetzt verheiratet?']] },
+        { t: 'Ist halt Ben.', herz: nett('noah'), dann: [['noah', 'Ist halt Ben. Okay. Das erklärt ziemlich viel.']] },
       ] },
     ] },
-    { herz: 4, titel: 'Was hilft', g: [
-      ['noah', 'Weißt du, was mir hilft? Ich zähl Fenster.'],
-      ['noah', 'Wenn alles zu viel ist. Zwölf Fenster in der Halle.'],
+    { herz: 4, titel: 'Der Plan', g: [
+      ['noah', 'Ich hab einen Plan. Morgen setz ich mich zu Mila.'],
+      ['noah', 'Sie redet nicht. Ich rede nicht. Perfekt, oder?'],
       { wahl: [
-        { t: 'Ich mach so was mit Atmen.', herz: nett('noah'), dann: [['noah', 'Zeig mal. Vier ein, vier halten?'], ['noah', 'Okay. Fenster plus Atmen. Doppelt hält besser.']] },
-        { t: 'Gut, dass du was gefunden hast.', staerke: 'zuhoeren', herz: nett('noah'), dann: [['noah', 'Ja. Hätte ich nie gedacht, dass ich das jemandem sag.']] },
+        { t: 'Das wird das ruhigste Mittagessen der Geschichte.', staerke: 'humor', herz: nett('noah', 2), dann: [['noah', 'Genau. Endlich mal Essen ohne Stress.']] },
+        { t: 'Leih dir ihren Würfel. Dann muss sie reden.', staerke: 'einbeziehen', herz: nett('noah', 2), dann: [['noah', 'Fies. Und clever. Ich mach das.']] },
+        { t: 'Und wenn sie Nein sagt?', herz: nett('noah'), dann: [['noah', 'Dann ess ich mit dir. Plan B ist auch gut.']] },
       ] },
     ] },
   ],
   mila: [
-    { herz: 2, titel: 'Der Würfel', g: [
-      ['mila', 'Willst du wissen, wie der Würfel geht? Ehrlich?'],
+    { herz: 2, titel: 'Stoppuhr', g: [
+      ['mila', 'Stopp die Zeit. Jetzt.'],
+      ['erzaehler', 'Klack, klack, klack. Der Würfel dreht sich so schnell, dass er verschwimmt.'],
+      ['mila', 'Wie viel?'],
       { wahl: [
-        { t: 'Ja, zeig mal.', staerke: 'zuhoeren', herz: nett('mila', 2), dann: [['mila', 'Erst ein Kreuz oben. Immer erst das Kreuz.'], ['mila', 'Der Rest sind Regeln. Regeln mag ich.']] },
-        { t: 'Später vielleicht.', dann: [['mila', 'Okay. Das Angebot gilt.']] },
+        { t: '39 Sekunden. Neuer Rekord!', herz: nett('mila'), dann: [['mila', 'Lüg nicht. Ich hab mitgezählt. 41.'], ['mila', 'Aber danke. Das war nett gelogen.']] },
+        { t: 'Äh … ich hab vergessen zu drücken.', staerke: 'ehrlich', herz: nett('mila', 2), dann: [['mila', '(starrt dich an) … Nochmal. Diesmal drückst du.']] },
+        { t: 'Gefühlt eine Minute.', dann: [['mila', 'Gefühle sind keine Stoppuhr.']] },
       ] },
     ] },
-    { herz: 3, titel: 'Zu laut', g: [
-      ['mila', 'Die Kantine ist mir zu laut. Wie ein Föhn im Kopf.'],
-      ['mila', 'Darum ess ich manchmal draußen.'],
+    { herz: 3, titel: 'Die Schuhe', g: [
+      ['mila', 'Darf ich was Ehrliches sagen?'],
+      ['mila', 'Dein Schuh ist offen. Seit drei Stunden.'],
       { wahl: [
-        { t: 'Soll ich mal mitkommen?', staerke: 'einbeziehen', herz: nett('mila', 2), dann: [['mila', 'Wenn du nicht so viel redest. Dann ja.']] },
-        { t: 'Kopfhörer helfen manchmal.', herz: nett('mila'), dann: [['mila', 'Hab ich. Darf ich hier aber nicht. Mal fragen.']] },
-        { t: 'Ist doch nicht so laut.', dann: [['mila', 'Für dich. Ich hör auch das Brummen vom Kühlschrank.']] },
+        { t: 'Und das sagst du JETZT?', staerke: 'humor', herz: nett('mila', 2), dann: [['mila', 'Ich wollte sehen, ob du es selbst merkst. Experiment.'], ['mila', 'Ergebnis: nein.']] },
+        { t: 'Das ist Style.', herz: nett('mila'), dann: [['mila', 'Ein Style zum Hinfallen. Okay. Deine Entscheidung.']] },
+        { t: 'Danke.', herz: nett('mila'), dann: [['mila', 'Gern. Ich sag immer Bescheid. Manche finden das nervig.']] },
       ] },
     ] },
-    { herz: 4, titel: 'Anders denken', g: [
-      ['mila', 'Ich hab Mme Laurent gefragt, ob ich anders lerne.'],
-      ['mila', 'Sie hat gesagt: „Anders ist kein Fehler. Nur ein anderer Weg.“'],
+    { herz: 4, titel: 'Draußen essen', g: [
+      ['mila', 'Ich ess draußen. Da ist es leiser.'],
+      ['mila', 'Du darfst mit. Regel: Reden nur zwischen zwei Bissen.'],
       { wahl: [
-        { t: 'Was ist dein Weg?', staerke: 'zuhoeren', herz: nett('mila'), dann: [['mila', 'Bilder statt Text. Und Pausen. Kurze, viele.']] },
-        { t: 'Find ich auch.', herz: nett('mila'), dann: [['mila', 'Gut. Dann sind wir schon zwei.']] },
+        { t: 'Deal. Ich sag pro Bissen ein Wort.', staerke: 'einbeziehen', herz: nett('mila', 2), dann: [['mila', 'Ein Wort pro Bissen. Akzeptabel.'], ['erzaehler', 'Ihr esst draußen. Du sagst „lecker“. Mila nickt. Passt.']] },
+        { t: 'Wer hat die Regeln gemacht?', herz: nett('mila'), dann: [['mila', 'Ich. Ich bin die Chefin von draußen.']] },
+        { t: 'Klingt wie Gefängnis.', dann: [['mila', 'Gefängnis mit Sonne. Deine Entscheidung.']] },
       ] },
     ] },
   ],
   lina: [
     { herz: 2, titel: 'Das Heft', g: [
-      ['lina', '(klappt schnell ihr Heft zu)'],
+      ['erzaehler', 'Lina klappt ihr Heft zu, als du kommst. Zu spät: Da war ein Lehrer mit Hörnern.'],
       { wahl: [
-        { t: 'Du musst es nicht zeigen.', staerke: 'warten', herz: nett('lina', 2), dann: [['lina', '…Danke.'], ['lina', '(macht es wieder ein Stück auf)']] },
-        { t: 'Was malst du?', herz: nett('lina'), dann: [['lina', 'Nichts. Also … Comics. Keine guten.']] },
+        { t: 'War das Hoffmann? Mit Hörnern?', staerke: 'humor', herz: nett('lina', 2), dann: [['lina', '… Du sagst es keinem.'], ['lina', 'Dann zeichne ich dich ohne Hörner.']] },
+        { t: 'Ich hab nichts gesehen.', staerke: 'warten', herz: nett('lina', 2), dann: [['lina', '(macht das Heft ein Stück auf) Gut. Dann siehst du jetzt was.']] },
+        { t: 'Zeig mal her!', dann: [['lina', 'Nein.'], ['lina', '(grinst kurz) Irgendwann. Vielleicht.']] },
       ] },
     ] },
-    { herz: 3, titel: 'Der Comic', g: [
-      ['lina', 'Okay. Du darfst eine Seite sehen.'],
-      ['erzaehler', 'Ein Mädchen mit Rucksack. Ein riesiger Gang. Die Spinde haben Augen.'],
+    { herz: 3, titel: 'Der Bösewicht', g: [
+      ['erzaehler', 'Linas Comic: Die Schule ist ein Raumschiff. Frau Kremer ist die Kapitänin.'],
+      ['lina', 'Mir fehlt ein Bösewicht.'],
       { wahl: [
-        { t: 'Die Spinde mit Augen sind genial.', herz: nett('lina', 2), dann: [['lina', 'So fühlt sich der erste Tag an. Fand ich.']] },
-        { t: 'Wie lange brauchst du für eine Seite?', staerke: 'zuhoeren', herz: nett('lina'), dann: [['lina', 'Zwei Tage. Wenn keiner guckt.']] },
+        { t: 'Die Pausenklingel. Überall. Alle hassen sie.', staerke: 'humor', herz: nett('lina', 2), dann: [['lina', '… Das ist gut. Das ist richtig gut.']] },
+        { t: 'Der Automat, der nie Wechselgeld gibt.', herz: nett('lina', 2), dann: [['lina', 'Der Automat. Er frisst Münzen. Und Seelen.']] },
+        { t: 'Ich. Ich wär ein guter Bösewicht.', herz: nett('lina'), dann: [['lina', 'Du hast zu nette Augenbrauen. Abgelehnt.']] },
       ] },
     ] },
-    { herz: 4, titel: 'Laut werden', g: [
-      ['lina', 'Ich hab heute im Unterricht was gesagt. Einen ganzen Satz.'],
-      ['lina', 'Meine Stimme hat gezittert. Aber er war draußen.'],
+    { herz: 4, titel: 'Seite 12', g: [
+      ['lina', 'Du bist im Comic. Seite 12.'],
+      ['erzaehler', 'Du bist ein Roboter. Er läuft mit Kakao.'],
       { wahl: [
-        { t: 'Ich hab’s gehört. Er war gut.', herz: nett('lina', 2), dann: [['lina', 'Echt? … Morgen vielleicht zwei Sätze.']] },
-        { t: 'Zittern ist okay. Gesagt ist gesagt.', staerke: 'zuhoeren', herz: nett('lina'), dann: [['lina', 'Gesagt ist gesagt. Schreib ich mir auf.']] },
+        { t: 'Endlich erkennt jemand mein wahres Ich.', staerke: 'humor', herz: nett('lina', 2), dann: [['lina', 'Ich beobachte. Das ist mein Job.']] },
+        { t: 'Warum ein Roboter?', herz: nett('lina'), dann: [['lina', 'Du sagst jeden Morgen genau gleich „Hi“. Wie programmiert.']] },
+        { t: 'Krieg ich Laserstrahlen?', herz: nett('lina', 2), dann: [['lina', 'Seite 13. Wenn du nett bist.']] },
       ] },
     ] },
   ],
   jo: [
-    { herz: 2, titel: 'Samstag', g: [
-      ['jo', 'Samstags helf ich in der Werkstatt. Reifen wechseln.'],
+    { herz: 2, titel: 'Der Golf', g: [
+      ['jo', 'Guck. (hält dir das Handy hin) Den hab ich Samstag repariert.'],
+      ['jo', 'Lief nicht. Jetzt läuft er. Wegen mir.'],
       { wahl: [
-        { t: 'Macht dir das Spaß?', staerke: 'zuhoeren', herz: nett('jo', 2), dann: [['jo', 'Ja. Da sagt keiner, ich bin zu laut.'], ['jo', 'Da bin ich einfach schnell. Und gut.']] },
-        { t: 'Klingt anstrengend.', herz: nett('jo'), dann: [['jo', 'Ist es. Aber ehrlich anstrengend. Nicht Schule-anstrengend.']] },
+        { t: 'Was war kaputt?', staerke: 'zuhoeren', herz: nett('jo', 2), dann: [['jo', 'Zündkerzen. Klingt langweilig. Fühlt sich an wie Zaubern.']] },
+        { t: 'Nimmst du mich mal mit in die Werkstatt?', herz: nett('jo'), dann: [['jo', 'Du darfst Reifen tragen. Sonst fasst du nix an.']] },
+        { t: 'Ist doch nur ein altes Auto.', dann: [['jo', 'NUR ein altes Auto?!'], ['jo', '(atmet durch) Du hast keine Ahnung. Ist okay.']] },
       ] },
     ] },
-    { herz: 3, titel: 'Wut', g: [
-      ['jo', 'Ich bin heute fast wieder explodiert. Wegen nichts.'],
+    { herz: 3, titel: 'Einmal ums Feld', g: [
+      ['jo', 'Luca hat heute mein Heft vorgelesen. Vor allen. Meine Schrift.'],
+      ['jo', 'Ich bin raus. Einmal ums Korbballfeld. Dann wieder rein.'],
       { wahl: [
-        { t: 'Was war los?', staerke: 'zuhoeren', herz: nett('jo', 2), dann: [['jo', 'Einer hat gelacht. Ich dachte, über mich.'], ['jo', 'War nicht so. Hab ich dann gemerkt.']] },
-        { t: 'Fast ist besser als ganz.', herz: nett('jo'), dann: [['jo', 'Hm. Stimmt eigentlich. Fast.']] },
-        { t: 'Du musst dich halt beherrschen.', dann: [['jo', 'Danke. Wär ich nie drauf gekommen.']] },
+        { t: 'Einmal ums Feld. Dein neuer Sport.', staerke: 'humor', herz: nett('jo', 2), dann: [['jo', 'Haha. Wenn das so weitergeht, werd ich Weltmeister.']] },
+        { t: 'Und Luca?', herz: nett('jo'), dann: [['jo', 'Hat später „sorry“ gemurmelt. Ganz leise. Zählt trotzdem.']] },
+        { t: 'Ich hätte ihm eine reingehauen.', dann: [['jo', 'Ja, und dann bin wieder ich der Böse. Nein danke.']] },
       ] },
     ] },
-    { herz: 4, titel: 'Der Trick', g: [
-      ['jo', 'M. Becker hat gesagt: „Erst Hände in die Taschen. Dann reden.“'],
-      ['jo', 'Klingt dumm. Hat aber zweimal geklappt.'],
+    { herz: 4, titel: 'Die Wette', g: [
+      ['jo', 'Wette: Ich werd eine ganze Woche nicht laut.'],
+      ['jo', 'Wenn ich’s schaffe, zahlst du Kakao.'],
       { wahl: [
-        { t: 'Zweimal ist ein Anfang.', staerke: 'ruhig', herz: nett('jo'), dann: [['jo', 'Nächste Woche drei. Wetten?']] },
-        { t: 'Was machst du danach?', staerke: 'zuhoeren', herz: nett('jo'), dann: [['jo', 'Rausgehen. Eine Runde um die Turnhalle. Dann geht’s.']] },
+        { t: 'Die Wette gilt. Ich spar schon mal.', herz: nett('jo', 2), dann: [['jo', 'Gut. Und wehe, du provozierst mich.']] },
+        { t: 'Heute ist erst Montag.', staerke: 'humor', herz: nett('jo', 2), dann: [['jo', 'Sei still. … Siehst du? Nicht laut. Läuft.']] },
+        { t: 'Du schaffst keinen Tag.', dann: [['jo', '(laut) WAS?'], ['jo', '… Okay. Montag zählt nicht.']] },
       ] },
     ] },
   ],
   ben: [
-    { herz: 2, titel: 'Der Klassenclown', g: [
-      ['ben', 'Weißt du, warum ich immer Witze mach?'],
+    { herz: 2, titel: 'Das Geschäftsmodell', g: [
+      ['ben', 'Ich hab ein Geschäftsmodell. Ich leih mir von allen zwei Euro.'],
+      ['ben', 'Dann hab ich 40 Euro. Dann zahl ich alle zurück.'],
       { wahl: [
-        { t: 'Weil du witzig bist?', herz: nett('ben'), dann: [['ben', 'Auch. Aber vor allem vor Tests.']] },
-        { t: 'Sag du es mir.', staerke: 'zuhoeren', herz: nett('ben', 2), dann: [['ben', 'Wenn alle lachen, merkt keiner, dass ich nervös bin.']] },
+        { t: 'Und was bleibt dir?', herz: nett('ben', 2), dann: [['ben', 'Ruhm. Respekt. Und vielleicht ein Keks.']] },
+        { t: 'Bei mir kriegst du keinen Cent.', staerke: 'klar', herz: nett('ben'), dann: [['ben', 'Hart. Ehrlich. Mag ich.']] },
+        { t: '(gibt ihm zwei Euro)', herz: nett('ben'), dann: [['ben', 'Ich wusste es! Du bist mein erster Investor.'], ['ben', 'Morgen kriegst du sie wieder. Vielleicht. Wahrscheinlich.']] },
       ] },
     ] },
-    { herz: 3, titel: 'Vor dem Test', g: [
-      ['ben', 'Morgen ist Mathe. Mein Bauch weiß es schon.'],
+    { herz: 3, titel: 'Der Meteorit', g: [
+      ['ben', 'Morgen Mathe. Mein Plan: Ein Meteorit fällt auf die Schule.'],
+      ['ben', 'Nur auf den Mathe-Saal. Ich bin ja kein Monster.'],
       { wahl: [
-        { t: 'Wollen wir zusammen üben?', staerke: 'fair', herz: nett('ben', 2), dann: [['ben', 'Zehn Minuten. Dann Korbball. Deal.'], ['erzaehler', 'Ihr rechnet drei Aufgaben. Die dritte schafft Ben allein.']] },
-        { t: 'Ich bin auch nervös.', herz: nett('ben'), dann: [['ben', 'Echt? Gut. Also … nicht gut. Aber gut zu wissen.']] },
+        { t: 'Oder: zehn Minuten üben, dann Korbball.', staerke: 'fair', herz: nett('ben', 2), dann: [['ben', 'Zehn Minuten. Ich stopp mit.'], ['erzaehler', 'Ihr rechnet drei Aufgaben. Die dritte schafft Ben allein.'], ['ben', 'Hast du das gesehen? Ich bin ein Genie. Ein müdes.']] },
+        { t: 'Der Meteorit ist realistischer.', staerke: 'humor', herz: nett('ben'), dann: [['ben', 'Danke für dein Vertrauen. Wirklich.']] },
+        { t: 'Mir ist auch schlecht wegen morgen.', herz: nett('ben'), dann: [['ben', 'Gut. Dann gehen wir zusammen unter. Wie Helden.']] },
       ] },
     ] },
-    { herz: 4, titel: 'Ohne Witz', g: [
-      ['ben', 'Heute im Test hab ich keinen Witz gemacht.'],
-      ['ben', 'Ich hab einfach angefangen. Mit der leichtesten Aufgabe.'],
+    { herz: 4, titel: 'Null Witze', g: [
+      ['ben', 'Heute im Test hab ich null Witze gemacht.'],
+      ['ben', 'Hoffmann hat gefragt, ob ich krank bin.'],
       { wahl: [
-        { t: 'Und?', staerke: 'zuhoeren', herz: nett('ben'), dann: [['ben', 'Hat geklappt. Bauch war trotzdem da. Aber leiser.']] },
-        { t: 'Witze sind trotzdem gut. Nur nicht als Versteck.', herz: nett('ben'), dann: [['ben', 'Das klau ich. Das ist gut.']] },
+        { t: 'Und? Lief’s?', herz: nett('ben', 2), dann: [['ben', 'Ich hab mit der leichten Aufgabe angefangen. Lief. Unheimlich.']] },
+        { t: 'Du warst krank. Vor Langeweile.', staerke: 'humor', herz: nett('ben', 2), dann: [['ben', 'Endlich versteht mich jemand.']] },
+        { t: 'Mach lieber wieder Witze.', herz: nett('ben'), dann: [['ben', 'Nach dem Test immer. Vorher bin ich jetzt seriös. Eine Stunde lang.']] },
       ] },
     ] },
   ],
   chiara: [
-    { herz: 2, titel: 'Perfekt', g: [
-      ['chiara', 'Ich hab eine 48 von 60. Ich ärgere mich total.'],
+    { herz: 2, titel: '48 von 60', g: [
+      ['chiara', '48 von 60. Ich bin nicht sauer. Ich bin enttäuscht.'],
+      ['chiara', 'Von mir. Das ist schlimmer.'],
       { wahl: [
-        { t: '48 ist richtig gut.', herz: nett('chiara'), dann: [['chiara', 'Sagen alle. In meinem Kopf zählt nur die 60.']] },
-        { t: 'Was sagt dein Kopf genau?', staerke: 'zuhoeren', herz: nett('chiara', 2), dann: [['chiara', '„Du hättest mehr lernen müssen.“ Immer derselbe Satz.']] },
+        { t: 'Hilft es, wenn ich sag, ich hab 31?', staerke: 'humor', herz: nett('chiara', 2), dann: [['chiara', 'Ein bisschen. Danke für dein Opfer.']] },
+        { t: 'Wo sind die 12 Punkte hin?', herz: nett('chiara'), dann: [['chiara', 'Aufgabe vier. Komma vergessen. Ein KOMMA.']] },
+        { t: 'Du klingst wie eine Lehrerin.', dann: [['chiara', 'Nimm das zurück.'], ['chiara', '… Okay. Vielleicht ein bisschen.']] },
       ] },
     ] },
-    { herz: 3, titel: 'Was ich will', g: [
-      ['chiara', 'Darf ich dir was sagen? Ich bau gern Sachen.'],
-      ['chiara', 'Regale. Lampen. Ich hab eine Lampe aus einem Glas gebaut.'],
+    { herz: 3, titel: 'Die Gurkenlampe', g: [
+      ['chiara', 'Ich hab eine Lampe gebaut. Aus einem Gurkenglas.'],
+      ['chiara', 'Sie leuchtet. Und riecht nur noch ein bisschen.'],
       { wahl: [
-        { t: 'Wie ging das?', staerke: 'zuhoeren', herz: nett('chiara', 2), dann: [['chiara', 'Fassung, Kabel, Glas. Und viel YouTube.'], ['chiara', 'Sie leuchtet. Ich hab’s selbst gemacht.']] },
-        { t: 'Das klingt nach Werkstatt.', herz: nett('chiara'), dann: [['chiara', 'Vielleicht. Ich hab mal ins Atelier geschaut. Heimlich.']] },
+        { t: 'Nach Gurke?', staerke: 'humor', herz: nett('chiara', 2), dann: [['chiara', 'Nach Erfolg. Mit Gurke.']] },
+        { t: 'Wie geht so was?', herz: nett('chiara', 2), dann: [['chiara', 'Fassung, Kabel, viel YouTube. Und Becker hat geprüft, ob sie sicher ist.']] },
+        { t: 'Kann man das verkaufen?', herz: nett('chiara'), dann: [['chiara', 'Du bist jetzt mein Geschäftspartner. Zehn Prozent.'], ['chiara', 'Okay, fünf.']] },
       ] },
     ] },
-    { herz: 4, titel: 'Gut genug', g: [
-      ['chiara', 'Ich hab heute was abgegeben, das nicht perfekt war.'],
-      ['chiara', 'Absichtlich. Als Übung.'],
+    { herz: 4, titel: 'Mit Absicht', g: [
+      ['chiara', 'Ich hab heute was abgegeben, das nicht perfekt war. Mit Absicht.'],
+      ['chiara', 'Ich wollte sehen, ob die Welt untergeht.'],
       { wahl: [
-        { t: 'Wie war das?', staerke: 'zuhoeren', herz: nett('chiara'), dann: [['chiara', 'Schrecklich. Dann okay. Dann fast egal.']] },
-        { t: 'Mutig.', herz: nett('chiara'), dann: [['chiara', 'Klingt komisch. Aber ja. Für mich war’s mutig.']] },
+        { t: 'Und? Geht sie unter?', herz: nett('chiara', 2), dann: [['chiara', 'Hoffmann hat nur „gut“ gesagt. Nur „gut“.'], ['chiara', 'Und ich lebe noch. Verrückt.']] },
+        { t: 'Wer bist du und wo ist Chiara?', staerke: 'humor', herz: nett('chiara', 2), dann: [['chiara', 'Keine Sorge. Morgen bin ich wieder anstrengend.']] },
+        { t: 'Perfekt wäre besser gewesen.', dann: [['chiara', 'Danke. Genau die Stimme hab ich im Kopf. Jetzt auch draußen.']] },
       ] },
     ] },
   ],
   yusuf: [
-    { herz: 2, titel: 'Judo', g: [
-      ['yusuf', 'Hm. Du fragst nach Judo?'],
+    { herz: 2, titel: 'Ein Wurf', g: [
+      ['yusuf', 'Hm. Du guckst auf meine Tasche.'],
+      ['yusuf', 'Judo. Willst du einen Wurf sehen? Langsam.'],
       { wahl: [
-        { t: 'Ja. Was magst du daran?', staerke: 'zuhoeren', herz: nett('yusuf', 2), dann: [['yusuf', 'Man fällt. Und lernt, wie man richtig fällt.'], ['yusuf', 'Dann tut es nicht weh.']] },
-        { t: 'Ist das nicht gefährlich?', herz: nett('yusuf'), dann: [['yusuf', 'Nicht, wenn man die Regeln kennt. Wie überall.']] },
+        { t: 'Ja. Aber nicht an mir.', staerke: 'humor', herz: nett('yusuf', 2), dann: [['yusuf', 'Feigling. (grinst kurz) Okay. An der Luft.'], ['erzaehler', 'Yusuf dreht sich, zieht – und ein unsichtbarer Gegner fliegt.']] },
+        { t: 'Wie oft fällst du da hin?', herz: nett('yusuf'), dann: [['yusuf', 'Hundertmal pro Training. Man lernt, richtig zu fallen.']] },
+        { t: 'Klar, wirf mich!', herz: nett('yusuf'), dann: [['erzaehler', 'Yusuf stellt sich hin. Dann lacht er.'], ['yusuf', 'Auf Beton? Ich bin doch nicht verrückt.']] },
       ] },
     ] },
-    { herz: 3, titel: 'Wenig reden', g: [
-      ['yusuf', 'Die Leute denken, ich bin unfreundlich. Weil ich wenig rede.'],
+    { herz: 3, titel: 'Der böse Blick', g: [
+      ['yusuf', 'Ben sagt, ich gucke immer böse.'],
       { wahl: [
-        { t: 'Ich find dich nicht unfreundlich.', herz: nett('yusuf', 2), dann: [['yusuf', 'Gut. Ich überlege nur lange. Bevor ich was sage.']] },
-        { t: 'Was würdest du ihnen gern sagen?', staerke: 'zuhoeren', herz: nett('yusuf'), dann: [['yusuf', '„Wartet kurz. Ich bin noch beim Denken.“']] },
+        { t: 'Du guckst wie jemand, der nachdenkt.', herz: nett('yusuf', 2), dann: [['yusuf', 'Genau. Ich denke. Nur langsam.']] },
+        { t: 'Ein bisschen schon, ehrlich.', staerke: 'ehrlich', herz: nett('yusuf'), dann: [['yusuf', 'Hm.'], ['yusuf', 'Ich üb mal Lächeln. Vor dem Spiegel. Keinem sagen.']] },
+        { t: 'Guck doch einfach nett.', dann: [['erzaehler', 'Yusuf guckt „nett“. Es ist das Gruseligste, was du heute gesehen hast.'], ['yusuf', 'Besser?']] },
       ] },
     ] },
-    { herz: 4, titel: 'Der Wettkampf', g: [
-      ['yusuf', 'Samstag ist Wettkampf. Ich hab zum ersten Mal Lampenfieber.'],
+    { herz: 4, titel: 'Samstag', g: [
+      ['yusuf', 'Samstag ist Wettkampf. Willst du kommen?'],
+      ['yusuf', 'Ist langweilig. Viel Warten. Dann vier Minuten Kampf.'],
       { wahl: [
-        { t: 'Was machst du dagegen?', staerke: 'zuhoeren', herz: nett('yusuf'), dann: [['yusuf', 'Der Trainer sagt: Atme in den Bauch. Dann die Füße spüren.']] },
-        { t: 'Lampenfieber heißt: Es ist dir wichtig.', herz: nett('yusuf'), dann: [['yusuf', '… So hab ich das nie gesehen.']] },
+        { t: 'Ich komm. Ich bring Snacks.', staerke: 'einbeziehen', herz: nett('yusuf', 2), dann: [['yusuf', 'Snacks sind in der Halle verboten.'], ['yusuf', 'Bring trotzdem.']] },
+        { t: 'Bist du nervös?', herz: nett('yusuf'), dann: [['yusuf', 'Nein.'], ['yusuf', '… Mein Bauch macht komische Sachen. Das ist alles.']] },
+        { t: 'Langweilig klingt nicht so gut.', dann: [['yusuf', 'Ehrlich. Mag ich. Dann komm halt nicht.']] },
       ] },
     ] },
   ],
   ayla: [
-    { herz: 2, titel: 'Die Band', g: [
-      ['ayla', 'Wir haben einen Namen für die Band. Fast.'],
+    { herz: 2, titel: 'Abstimmung', g: [
+      ['ayla', 'Abstimmung! Bandname: „Kein WLAN“ oder „Pausenklingel“?'],
       { wahl: [
-        { t: 'Sag schon!', herz: nett('ayla', 2), dann: [['ayla', '„Kein WLAN“. Oder „Pausenklingel“. Wir streiten noch.']] },
-        { t: 'Was spielst du?', staerke: 'zuhoeren', herz: nett('ayla'), dann: [['ayla', 'Bass. Man hört ihn nicht. Aber ohne ihn fällt alles um.']] },
+        { t: '„Kein WLAN“. Das versteht jeder.', herz: nett('ayla', 2), dann: [['ayla', 'Zwei zu eins. Jo war für Pausenklingel. Jo hat nichts zu sagen.']] },
+        { t: '„Pausenklingel“. Klingt nach Ärger.', herz: nett('ayla', 2), dann: [['ayla', 'Gute Begründung. Ich schreib’s auf.']] },
+        { t: 'Beides schlimm. Nehmt „Bass im Gesicht“.', staerke: 'humor', herz: nett('ayla', 2), dann: [['ayla', '(lacht) Das ist so schlimm, dass es schon wieder gut ist.']] },
       ] },
     ] },
-    { herz: 3, titel: 'Nie schreiben', g: [
-      ['ayla', 'In der Klassengruppe les ich alles. Ich schreib nie.'],
-      ['ayla', 'Ich hab Angst, dass es komisch klingt.'],
+    { herz: 3, titel: 'Ein Daumen', g: [
+      ['ayla', 'Ich hab heute zum ersten Mal in die Klassengruppe geschrieben.'],
+      ['ayla', 'Einen Daumen. Neunzehn Leute haben ihn gesehen. Keiner reagiert.'],
       { wahl: [
-        { t: 'Fang mit einem Emoji an.', herz: nett('ayla', 2), dann: [['ayla', 'Ein Daumen? Das schaff ich. Vielleicht.']] },
-        { t: 'Was wäre das Schlimmste?', staerke: 'zuhoeren', herz: nett('ayla'), dann: [['ayla', 'Dass keiner antwortet. … Das passiert ja eh oft.']] },
+        { t: '(reagiert mit einem Feuer-Emoji)', staerke: 'einbeziehen', herz: nett('ayla', 2), dann: [['ayla', '(guckt aufs Handy) … Okay. Jetzt bin ich berühmt.']] },
+        { t: 'Neunzehn Leute. Das ist ein Publikum.', herz: nett('ayla'), dann: [['ayla', 'So gesehen … erstes Konzert. Ein Daumen. Ausverkauft.']] },
+        { t: 'Wer schreibt denn nur einen Daumen?', dann: [['ayla', 'Ich. Danke. Ich lösch die App.']] },
       ] },
     ] },
-    { herz: 4, titel: 'Die Probe', g: [
-      ['ayla', 'Wir haben vor Leuten geprobt. Fünf Leute. Mein Bein hat gezittert.'],
-      ['ayla', 'Aber der Bass war da. Die ganze Zeit.'],
+    { herz: 4, titel: 'Der Auftritt', g: [
+      ['ayla', 'Freitag spielen wir. In der Pause. Unter dem Préau. Vor Leuten.'],
       { wahl: [
-        { t: 'Beim nächsten Mal komm ich.', staerke: 'einbeziehen', herz: nett('ayla', 2), dann: [['ayla', 'Dann sind es sechs. Okay. Sechs geht.']] },
-        { t: 'Zittern und spielen. Beides geht.', herz: nett('ayla'), dann: [['ayla', 'Ja. Das hab ich heute gelernt.']] },
+        { t: 'Ich steh ganz vorne und schrei.', staerke: 'einbeziehen', herz: nett('ayla', 2), dann: [['ayla', 'Bitte nicht.'], ['ayla', '… Doch. Mach.']] },
+        { t: 'Wie viele Lieder?', herz: nett('ayla'), dann: [['ayla', 'Zwei. Eins davon kann Jo.']] },
+        { t: 'Und wenn keiner kommt?', dann: [['ayla', 'Dann spielen wir für die Tauben. Die sind ehrlich.']] },
       ] },
     ] },
   ],
   luca: [
-    { herz: 2, titel: 'Hart tun', g: [
-      ['luca', 'Was willst du? … Sorry. Gewohnheit.'],
+    { herz: 2, titel: 'Zu wenig Salz', g: [
+      ['luca', 'Na, Kantinen-Polizei? Was guckst du?'],
       { wahl: [
-        { t: 'Schon okay. Wie geht’s?', staerke: 'klar', herz: nett('luca', 2), dann: [['luca', 'Fragt keiner. … Müde. Lange Woche.']] },
-        { t: 'Gewohnheit von was?', staerke: 'zuhoeren', herz: nett('luca'), dann: [['luca', 'Wenn man hart tut, lassen einen alle in Ruhe.']] },
+        { t: 'Ob du heute wieder das Curry kritisierst.', staerke: 'humor', herz: nett('luca', 2), dann: [['luca', 'Zu wenig Salz. Jeden Tag. Ich sag nur die Wahrheit.']] },
+        { t: 'Nix. Chill.', staerke: 'klar', herz: nett('luca'), dann: [['luca', '… Okay. Du bist okay.']] },
+        { t: 'Lass mich in Ruhe.', dann: [['luca', 'Gern. Mein Lieblingsspiel.']] },
       ] },
     ] },
-    { herz: 3, titel: 'Kochen', g: [
-      ['luca', 'Sag’s keinem. Ich koch gern.'],
-      ['luca', 'Frau Kremer hat mich mal das Curry abschmecken lassen.'],
+    { herz: 3, titel: 'Das Geheimnis', g: [
+      ['luca', 'Wenn du das jemandem sagst, bist du erledigt. Klar?'],
+      ['luca', 'Ich koche. Gern. Und gut.'],
       { wahl: [
-        { t: 'Warum soll das keiner wissen?', staerke: 'zuhoeren', herz: nett('luca', 2), dann: [['luca', 'Passt nicht zu mir. Denken die. Vielleicht passt es doch.']] },
-        { t: 'Was kochst du am liebsten?', herz: nett('luca'), dann: [['luca', 'Nudeln mit Tomatensoße. Aber richtig. Mit Basilikum.']] },
+        { t: 'Was ist dein bestes Gericht?', herz: nett('luca', 2), dann: [['luca', 'Tomatensoße. Richtig. Mit Basilikum. Nicht aus dem Glas.']] },
+        { t: 'Ich schweige. Wenn du einmal für mich kochst.', staerke: 'humor', herz: nett('luca', 2), dann: [['luca', 'Erpressung. Respekt.'], ['luca', 'Okay. Einmal.']] },
+        { t: 'Kochen? DU?', dann: [['luca', 'Ja. Ich. Problem?'], ['luca', 'Siehst du. Deshalb sag ich’s keinem.']] },
       ] },
     ] },
-    { herz: 4, titel: 'Praktikum', g: [
-      ['luca', 'Ich will ein Praktikum in einer Küche. Ehrlich.'],
+    { herz: 4, titel: 'Die Kostprobe', g: [
+      ['luca', 'Frau Kremer lässt mich Freitag eine Stunde in die Küche.'],
+      ['luca', 'Probier. Und sag ehrlich, wenn’s Müll ist.'],
+      ['erzaehler', 'Du probierst. Es ist richtig, richtig gut.'],
       { wahl: [
-        { t: 'Frag Frau Kremer, wie man anfängt.', staerke: 'hilfe', herz: nett('luca'), dann: [['luca', 'Hab ich schon. Sie hat gelacht. Freundlich gelacht.']] },
-        { t: 'Das passt zu dir.', herz: nett('luca', 2), dann: [['luca', '… Danke. Das hat noch keiner gesagt.']] },
+        { t: 'Das ist besser als alles in der Kantine.', herz: nett('luca', 2), dann: [['luca', 'Nicht so laut. Kremer hat Ohren überall.'], ['luca', '(grinst) Aber ja. Ich weiß.']] },
+        { t: 'Interessant.', herz: nett('luca'), dann: [['luca', '„Interessant“ heißt Müll. Jeder weiß das.'], ['erzaehler', 'Du isst trotzdem alles auf. Luca sieht es. Er sagt nichts mehr.']] },
+        { t: 'Zu wenig Salz.', staerke: 'humor', herz: nett('luca', 2), dann: [['luca', '(starrt dich an) …'], ['luca', 'Okay. Das hab ich verdient.']] },
       ] },
     ] },
   ],
   kenan: [
-    { herz: 2, titel: 'Zweimal abgelehnt', g: [
-      ['kenan', 'Zweimal hab ich mich beworben. Zweimal nein.'],
+    { herz: 2, titel: 'Brief Nummer drei', g: [
+      ['kenan', 'Zwei Betriebe. Zwei Absagen. Brief Nummer drei ist fertig.'],
       { wahl: [
-        { t: 'Und jetzt?', staerke: 'zuhoeren', herz: nett('kenan', 2), dann: [['kenan', 'Jetzt das dritte Mal. Becker hilft mit dem Brief.']] },
-        { t: 'Die wissen nicht, was sie verpassen.', herz: nett('kenan'), dann: [['kenan', 'Haha. Schreib ich so in den Brief.']] },
+        { t: 'Lass mal lesen.', staerke: 'hilfe', herz: nett('kenan', 2), dann: [['erzaehler', 'Der Brief ist gut. Ein Komma fehlt.'], ['kenan', 'Ein Komma. Ich hasse Kommas. Danke.']] },
+        { t: 'Dritter Versuch. Wie im Film.', herz: nett('kenan'), dann: [['kenan', 'Im Film klappt’s beim dritten Mal. Wehe nicht.']] },
+        { t: 'Mach doch was anderes als Holz.', dann: [['kenan', 'Will ich nicht. Ich will Holz. Punkt.']] },
       ] },
     ] },
-    { herz: 3, titel: 'Das Holz', g: [
-      ['kenan', 'Weißt du, was ich an Holz mag? Es verzeiht nichts.'],
-      ['kenan', 'Falsch gesägt ist falsch gesägt. Da kann man nicht reden.'],
+    { herz: 3, titel: 'Das Regal', g: [
+      ['kenan', 'Becker hat heute mein Regal gelobt. Vor allen.'],
+      ['kenan', 'Ich wusste nicht, wo ich hingucken soll.'],
       { wahl: [
-        { t: 'Und das magst du?', staerke: 'zuhoeren', herz: nett('kenan', 2), dann: [['kenan', 'Ja. Es ist ehrlich. Wie Becker.']] },
-        { t: 'Zweimal messen, einmal sägen.', herz: nett('kenan'), dann: [['kenan', 'Du hast aufgepasst. Respekt.']] },
+        { t: 'Aufs Regal. Es hat’s verdient.', staerke: 'humor', herz: nett('kenan', 2), dann: [['kenan', 'Haha. Ja. Es ist auch ziemlich gerade.']] },
+        { t: 'Zweimal messen, einmal sägen.', herz: nett('kenan'), dann: [['kenan', 'Du hast aufgepasst. Gefällt mir.']] },
+        { t: 'Lob ist voll peinlich.', herz: nett('kenan'), dann: [['kenan', 'Total. Aber auch … nicht schlecht.']] },
       ] },
     ] },
-    { herz: 4, titel: 'Aufhören', g: [
-      ['kenan', 'Dario nervt. Ich soll aufhören zu rauchen.'],
+    { herz: 4, titel: 'Die Treppe', g: [
+      ['kenan', 'Dario nervt wegen dem Rauchen. Jeden Tag.'],
       { wahl: [
-        { t: 'Er mag dich halt.', herz: nett('kenan'), dann: [['kenan', '… Ja. Weiß ich. Deshalb nervt es ja.']] },
-        { t: 'Was denkst du selbst?', staerke: 'zuhoeren', herz: nett('kenan', 2), dann: [['kenan', 'Treppe zur Werkstatt. Ich keuche. Mit siebzehn.'], ['kenan', 'Ich überleg’s mir. Sag’s ihm noch nicht.']] },
+        { t: 'Und? Hat er recht?', staerke: 'ehrlich', herz: nett('kenan', 2), dann: [['kenan', 'Die Treppe zur Werkstatt. Ich keuche. Mit siebzehn.'], ['kenan', 'Sag’s ihm nicht. Ich überleg’s mir.']] },
+        { t: 'Er nervt, weil er dich mag.', herz: nett('kenan'), dann: [['kenan', '… Ja. Genau deshalb nervt es ja.']] },
+        { t: 'Mach doch, was du willst.', dann: [['kenan', 'Mach ich auch.']] },
       ] },
     ] },
   ],
   dario: [
-    { herz: 2, titel: 'Alles gut', g: [
-      ['dario', 'Ich sag immer „alles gut“. Ist es nicht immer.'],
+    { herz: 2, titel: 'Seife', g: [
+      ['dario', 'Alles gut? … Bei mir? Klar.'],
+      ['dario', 'Okay, nein. Handy bis drei Uhr nachts.'],
       { wahl: [
-        { t: 'Heute auch nicht?', staerke: 'zuhoeren', herz: nett('dario', 2), dann: [['dario', 'Heute so mittel. Zu wenig geschlafen. Zu viel Handy.']] },
-        { t: 'Musst du ja nicht immer sagen.', herz: nett('dario'), dann: [['dario', 'Stimmt. Ist nur einfacher als die lange Version.']] },
+        { t: 'Bis drei?! Was hast du geguckt?', herz: nett('dario', 2), dann: [['dario', 'Videos von Leuten, die Seife schneiden. Frag nicht.']] },
+        { t: 'Willkommen im Zombie-Team.', staerke: 'humor', herz: nett('dario', 2), dann: [['dario', 'Zombie-Team. Wir brauchen T-Shirts.']] },
+        { t: 'Selbst schuld.', dann: [['dario', 'Danke, Frau Weber.']] },
       ] },
     ] },
-    { herz: 3, titel: 'Der Freund', g: [
-      ['dario', 'Kenan ist mein bester Freund. Seit der Grundschule.'],
-      ['dario', 'Ich mach mir Sorgen. Wegen dem Rauchen.'],
+    { herz: 3, titel: 'Der Pirat', g: [
+      ['dario', 'Kenan ist der Einzige, der meine Witze nie lustig findet.'],
+      ['dario', 'Und trotzdem bleibt er. Seit der Grundschule.'],
       { wahl: [
-        { t: 'Hast du ihm das gesagt?', staerke: 'klar', herz: nett('dario', 2), dann: [['dario', 'Hundertmal. Vielleicht sag ich es mal ohne zu nerven.']] },
-        { t: 'Das zeigt, dass er dir wichtig ist.', herz: nett('dario'), dann: [['dario', 'Ja. Aber er soll das nicht wissen. Zu peinlich.']] },
+        { t: 'Erzähl einen. Ich sag ehrlich.', staerke: 'humor', herz: nett('dario', 2), dann: [['dario', 'Was macht ein Pirat am Computer?'], ['dario', 'Er drückt die Enter-Taste.'], ['dario', '… Siehst du? Kenan hat recht.']] },
+        { t: 'Vielleicht hört er einfach schlecht.', herz: nett('dario', 2), dann: [['dario', 'Haha. Beides möglich.']] },
+        { t: 'Deine Witze sind auch schlecht.', dann: [['dario', 'Jetzt sind es zwei. Ich brauch neue Freunde.']] },
       ] },
     ] },
-    { herz: 4, titel: 'Handy weg', g: [
-      ['dario', 'Ich hab das Handy nachts in die Küche gelegt. Drei Nächte.'],
+    { herz: 4, titel: 'Die Challenge', g: [
+      ['dario', 'Challenge: Handy nachts in die Küche. Eine Woche.'],
+      ['dario', 'Wer zuerst schwach wird, zahlt Kakao.'],
       { wahl: [
-        { t: 'Und?', staerke: 'zuhoeren', herz: nett('dario'), dann: [['dario', 'Erste Nacht: schrecklich. Dritte Nacht: geschlafen wie ein Stein.']] },
-        { t: 'Das probier ich auch.', herz: nett('dario', 2), dann: [['dario', 'Dann machen wir das zusammen. Wer’s zuerst bricht, zahlt Kakao.']] },
+        { t: 'Ich bin dabei.', staerke: 'einbeziehen', herz: nett('dario', 2), dann: [['dario', 'Nacht eins. Ich schreib dir, wie’s … ach so. Geht ja nicht.']] },
+        { t: 'Wie lange hältst du schon durch?', herz: nett('dario'), dann: [['dario', 'Drei Nächte. Erste: Horror. Dritte: geschlafen wie ein Stein.']] },
+        { t: 'Ohne Handy? Niemals.', dann: [['dario', 'Okay. Dann zahl ich nix. Und schlaf wie ein Baby.']] },
       ] },
     ] },
   ],
 
-  // Erwachsene: zwei Gespräche je Person – über ihren Beruf und wie sie selbst Schule erlebt haben, nichts Privates
+  // Erwachsene: zwei Gespräche je Person. Keine Beichten, nichts Privates – Humor und eine Macke.
   kaya: [
-    { herz: 2, titel: 'Was SePAS heißt', g: [
-      ['kaya', 'Viele denken, hier kommt nur hin, wer Ärger hat.'],
-      ['kaya', 'Stimmt nicht. Man kann auch einfach mal reden.'],
+    { herz: 2, titel: 'Das Schild', g: [
+      ['kaya', 'Du guckst auf mein Schild. „SePAS“. Klingt nach Ärger, oder?'],
       { wahl: [
-        { t: 'Und was erzählen Sie weiter?', staerke: 'hilfe', herz: nett('kaya'), dann: [['kaya', 'Nichts, ohne dass du es vorher weißt.'], ['kaya', 'Nur wenn jemand in Gefahr ist. Dann sag ich es dir zuerst.']] },
-        { t: 'Gut zu wissen.', herz: nett('kaya'), dann: [['kaya', 'Die Tür ist offen. Auch für Kleinigkeiten.']] },
+        { t: 'Ein bisschen. Wie Schulpolizei.', staerke: 'ehrlich', herz: nett('kaya'), dann: [['kaya', 'Schulpolizei mit Keksen. Hier kann man auch einfach reden.']] },
+        { t: 'Und was erzählen Sie weiter?', staerke: 'hilfe', herz: nett('kaya'), dann: [['kaya', 'Nichts, ohne dass du es vorher weißt.'], ['kaya', 'Nur bei Gefahr. Dann sag ich es dir zuerst.']] },
+        { t: 'Brauch ich nicht.', dann: [['kaya', 'Musst du auch nicht. Die Kekse gibt’s trotzdem.']] },
       ] },
     ] },
-    { herz: 3, titel: 'Zehn Minuten', g: [
-      ['kaya', 'Weißt du, was ich am liebsten mag? Wenn jemand wiederkommt.'],
-      ['kaya', 'Dann weiß ich: Es hat ein bisschen geholfen.'],
+    { herz: 3, titel: 'Statistik', g: [
+      ['kaya', 'Statistik: Achtzig Prozent kommen wegen der Kekse.'],
+      ['kaya', 'Die anderen zwanzig auch. Sie sagen es nur nicht.'],
       { wahl: [
-        { t: 'Was hilft den meisten?', staerke: 'zuhoeren', herz: nett('kaya'), dann: [['kaya', 'Ein Plan mit kleinen Schritten. Und jemand, der fragt, wie es lief.']] },
-        { t: 'Vielleicht komm ich mal.', herz: nett('kaya'), dann: [['kaya', 'Gern. Ohne Termin geht auch. Klopf einfach.']] },
+        { t: 'Welche Sorte?', herz: nett('kaya'), dann: [['kaya', 'Schoko. Ich bin ja kein Unmensch.']] },
+        { t: 'Das ist Bestechung.', staerke: 'humor', herz: nett('kaya'), dann: [['kaya', 'Nennen wir es Willkommenskultur.']] },
+        { t: 'Und dann reden die einfach?', herz: nett('kaya'), dann: [['kaya', 'Meistens. Mit Keks im Mund redet es sich leichter.']] },
       ] },
     ] },
   ],
   laurent: [
-    { herz: 2, titel: 'Zwei l', g: [
-      ['laurent', 'Ich hab früher „vieleicht“ geschrieben. Jahrelang.'],
+    { herz: 2, titel: 'Die Wette', g: [
+      ['laurent', 'Wette: Du schreibst „vielleicht“ falsch.'],
       { wahl: [
-        { t: 'Sie? Echt?', herz: nett('laurent'), dann: [['laurent', 'Echt. Rechtschreibung war mein Feind. Heute unterrichte ich sie.']] },
-        { t: 'Was hat geholfen?', staerke: 'zuhoeren', herz: nett('laurent'), dann: [['laurent', 'Eine Lehrerin, die nicht rot angestrichen hat. Sondern gefragt hat.']] },
+        { t: 'Viel-leicht. Zwei l.', herz: nett('laurent'), dann: [['laurent', 'Respekt. Das schaffen drei von zehn.']] },
+        { t: 'Wetten, Sie früher auch?', staerke: 'humor', herz: nett('laurent'), dann: [['laurent', 'Jahrelang. Rechtschreibung war mein Feind. Jetzt sind wir Kollegen.']] },
+        { t: 'Egal, gibt doch Autokorrektur.', dann: [['laurent', 'Die hat mal „Liebe Grüße“ zu „Liebe Gurke“ gemacht.'], ['laurent', 'An den Direktor.']] },
       ] },
     ] },
     { herz: 3, titel: 'Der Club', g: [
-      ['laurent', 'Im Hausaufgaben-Club macht keiner alles richtig. Das ist der Trick.'],
-      ['laurent', 'Fehler sind dort erlaubt. Sogar erwünscht.'],
+      ['laurent', 'Donnerstag ist Club. Es gibt Kekse und keine Noten.'],
+      ['laurent', 'Ach ja – und Hilfe bei Hausaufgaben. Fast vergessen.'],
       { wahl: [
-        { t: 'Warum erwünscht?', staerke: 'zuhoeren', herz: nett('laurent'), dann: [['laurent', 'Weil man an Fehlern sieht, wie jemand denkt. Dann kann ich helfen.']] },
-        { t: 'Dann komm ich Donnerstag.', herz: nett('laurent'), dann: [['laurent', 'Schön. Kekse gibt’s auch. Manchmal.']] },
+        { t: 'Welche Kekse genau?', staerke: 'humor', herz: nett('laurent'), dann: [['laurent', 'Die guten. Ich bin Bibliothekarin, keine Barbarin.']] },
+        { t: 'Ich komm Donnerstag.', herz: nett('laurent'), dann: [['laurent', 'Schön. Bring deine schlimmste Aufgabe mit.']] },
+        { t: 'Hausaufgaben in der Freizeit? Nein.', dann: [['laurent', 'Verstehe. Die Kekse warten trotzdem.']] },
       ] },
     ] },
   ],
   becker: [
-    { herz: 2, titel: 'Der erste Fehler', g: [
-      ['becker', 'Mein erstes Werkstück war krumm. Mein Meister hat es aufgehoben.'],
+    { herz: 2, titel: 'Die Banane', g: [
+      ['becker', 'Siehst du das Brett an der Wand? Mein erstes Werkstück.'],
+      ['becker', 'Krumm wie eine Banane. Hängt da als Warnung.'],
       { wahl: [
-        { t: 'Warum?', staerke: 'zuhoeren', herz: nett('becker'), dann: [['becker', 'Damit ich später sehe, wie weit ich gekommen bin.'], ['becker', 'Es hängt heute noch bei mir.']] },
-        { t: 'Ihres war auch krumm?', herz: nett('becker'), dann: [['becker', 'Sehr krumm. Zweimal messen hab ich danach gelernt.']] },
+        { t: 'Als Warnung für wen?', herz: nett('becker'), dann: [['becker', 'Für mich. Falls ich mal angebe.']] },
+        { t: 'Darf ich es halten?', herz: nett('becker'), dann: [['becker', 'Vorsichtig. Es ist älter als du.']] },
+        { t: 'Sieht echt schlecht aus.', staerke: 'ehrlich', herz: nett('becker'), dann: [['becker', 'Danke. Endlich sagt’s mal jemand.']] },
       ] },
     ] },
-    { herz: 3, titel: 'Handwerk', g: [
-      ['becker', 'Hier zählt nicht, wie schnell du redest. Sondern wie genau du arbeitest.'],
+    { herz: 3, titel: 'Zwei Augen', g: [
+      ['becker', '(zeigt auf deine Augen) Brille?'],
+      ['becker', 'Du hast zwei Augen. Ich mag beide.'],
       { wahl: [
-        { t: 'Das gefällt mir.', herz: nett('becker'), dann: [['becker', 'Dann komm mal in die Werkstatt. Schutzbrille liegt bereit.']] },
-        { t: 'Und wenn man langsam ist?', staerke: 'hilfe', herz: nett('becker'), dann: [['becker', 'Langsam und genau schlägt schnell und schief. Jedes Mal.']] },
+        { t: 'Ich auch. Wo liegt die Brille?', herz: nett('becker'), dann: [['becker', 'Da. Gut. Jetzt dürfen wir Spaß haben.']] },
+        { t: 'Ist doch nur ganz kurz.', dann: [['becker', 'Ein Splitter ist auch nur ganz kurz. Brille.']] },
+        { t: 'Steht mir die überhaupt?', staerke: 'humor', herz: nett('becker'), dann: [['becker', 'Niemandem steht die. Darum geht’s nicht.']] },
       ] },
     ] },
   ],
   sommer: [
-    { herz: 2, titel: 'Nicht jeder mag Sport', g: [
-      ['sommer', 'Ich weiß, nicht jeder mag Sport. Ich mochte Mathe nicht.'],
+    { herz: 2, titel: 'Die Pfeife', g: [
+      ['sommer', 'Weißt du, warum ich pfeife?'],
       { wahl: [
-        { t: 'Und jetzt?', herz: nett('sommer'), dann: [['sommer', 'Mathe mag ich immer noch nicht. Aber ich kann zählen: Runden!']] },
-        { t: 'Was machen Sie mit denen, die Sport hassen?', staerke: 'zuhoeren', herz: nett('sommer'), dann: [['sommer', 'Ich such was, das passt. Seilspringen. Tischtennis. Irgendwas geht immer.']] },
+        { t: 'Weil Sie Macht lieben.', staerke: 'humor', herz: nett('sommer'), dann: [['sommer', '(pfeift) Falsch. Weil Schreien heiser macht.'], ['sommer', '… Ein bisschen Macht auch.']] },
+        { t: 'Weil die Halle so laut ist.', herz: nett('sommer'), dann: [['sommer', 'Genau. Pfeife statt Schreien. Mein Markenzeichen.']] },
+        { t: 'Ist mir egal.', dann: [['sommer', '(pfeift direkt neben dir) Jetzt nicht mehr, oder?']] },
       ] },
     ] },
-    { herz: 3, titel: 'Die Pfeife', g: [
-      ['sommer', 'Die Pfeife hab ich nur, weil die Halle so laut ist.'],
-      ['sommer', 'Schreien mag ich nicht. Pfeifen ist netter.'],
+    { herz: 3, titel: 'Der Deal', g: [
+      ['sommer', 'Ich weiß, nicht jeder mag Sport. Ich mochte Mathe nie.'],
+      ['sommer', 'Deal: Du gibst Sport eine Chance. Ich gebe Mathe eine.'],
       { wahl: [
-        { t: 'Klingt trotzdem streng.', herz: nett('sommer'), dann: [['sommer', 'Ich üb noch, freundlich zu pfeifen.']] },
-        { t: 'Gut, dass Sie nicht schreien.', staerke: 'klar', herz: nett('sommer'), dann: [['sommer', 'Danke. Sagt mir sonst keiner.']] },
+        { t: 'Deal. Sie zuerst: sieben mal acht?', staerke: 'humor', herz: nett('sommer'), dann: [['sommer', '(überlegt lange) … Sechsundfünfzig. Siehst du? Ich liefere.']] },
+        { t: 'Und wenn ich alles hasse?', herz: nett('sommer'), dann: [['sommer', 'Dann suchen wir, was du am wenigsten hasst. Tischtennis?']] },
+        { t: 'Kein Deal.', dann: [['sommer', 'Okay. Dann bleib ich bei meinem Taschenrechner.']] },
       ] },
     ] },
   ],
   kremer: [
     { herz: 2, titel: 'Dreihundert Teller', g: [
-      ['kremer', 'Dreihundert Teller am Tag. Und jeder will was anderes.'],
+      ['kremer', 'Dreihundert Teller am Tag. Und jeder sagt: zu wenig Soße.'],
       { wahl: [
-        { t: 'Wie schaffen Sie das?', staerke: 'zuhoeren', herz: nett('kremer'), dann: [['kremer', 'Zack, zack. Und ein Plan am Kühlschrank.'], ['kremer', 'Und ich merk mir, wer keine Erbsen mag.']] },
-        { t: 'Danke fürs Kochen.', herz: nett('kremer', 2), dann: [['kremer', '(lacht) Das sagt fast keiner. Merk ich mir.']] },
+        { t: 'Bei mir passt die Soße immer.', herz: nett('kremer', 2), dann: [['kremer', 'Lieblingsgast. Zack, zack. Extra Soße.']] },
+        { t: 'Wie schaffen Sie das?', herz: nett('kremer'), dann: [['kremer', 'Plan am Kühlschrank. Und ich weiß, wer keine Erbsen mag.'], ['kremer', 'Du zum Beispiel. Ich seh alles.']] },
+        { t: 'Ein bisschen mehr Soße wär schon gut.', staerke: 'ehrlich', herz: nett('kremer'), dann: [['kremer', '(seufzt) Dreihunderteins.']] },
       ] },
     ] },
     { herz: 3, titel: 'Die Karte', g: [
-      ['kremer', 'Wenn eine Karte leer ist, frag ich nicht laut nach. Nie.'],
-      ['kremer', 'Hunger hat mit Noten nichts zu tun.'],
+      ['kremer', 'Wenn deine Karte mal leer ist: leise sagen. Ich frag nie laut.'],
+      ['kremer', 'Hunger ist kein Drama. Wird geklärt.'],
       { wahl: [
-        { t: 'Das ist nett von Ihnen.', herz: nett('kremer'), dann: [['kremer', 'Nett nicht. Normal. Zack, zack.']] },
-        { t: 'Was macht man, wenn die Karte leer ist?', staerke: 'hilfe', herz: nett('kremer'), dann: [['kremer', 'Zu mir sagen. Leise reicht. Dann klären wir das.']] },
+        { t: 'Gut zu wissen.', staerke: 'hilfe', herz: nett('kremer'), dann: [['kremer', 'Zack, zack. Nächster!']] },
+        { t: 'Machen Sie das für alle?', herz: nett('kremer'), dann: [['kremer', 'Für alle. Ich hab ein gutes Gedächtnis. Und schlechte Ohren. Absichtlich.']] },
+        { t: 'Kann ich dann zweimal Nachtisch?', staerke: 'humor', herz: nett('kremer'), dann: [['kremer', 'Netter Versuch. Einmal. Zack, zack.']] },
       ] },
     ] },
   ],
   weber: [
-    { herz: 2, titel: 'Streng', g: [
-      ['weber', 'Ich weiß, dass ihr mich streng findet.'],
+    { herz: 2, titel: 'Der Spitzname', g: [
+      ['weber', 'Ich weiß, wie ihr mich nennt.'],
       { wahl: [
-        { t: 'Ein bisschen.', staerke: 'klar', herz: nett('weber'), dann: [['weber', 'Gut. Ehrlich ist gut.'], ['weber', 'Streng heißt bei mir: Ich nehm euch ernst.']] },
-        { t: 'Warum sind Sie so?', staerke: 'zuhoeren', herz: nett('weber'), dann: [['weber', 'Weil Regeln Sicherheit geben. Mir auch.']] },
+        { t: 'Wie denn?', herz: nett('weber'), dann: [['weber', '„Die Uhr.“ Weil ich um 16 Uhr zumache. Nicht 16:05.'], ['weber', 'Ich nehm das als Kompliment.']] },
+        { t: 'Wir nennen Sie gar nicht.', dann: [['weber', 'Lügen musst du noch üben.']] },
+        { t: 'Ich sag nix. Ich will leben.', staerke: 'humor', herz: nett('weber'), dann: [['weber', 'Kluge Entscheidung. (Ihr Mundwinkel zuckt.)']] },
       ] },
     ] },
-    { herz: 3, titel: 'Die Klasse', g: [
-      ['weber', 'Diese Klasse ist anders als alle davor.'],
+    { herz: 3, titel: 'Eure Klasse', g: [
+      ['weber', 'Eure Klasse ist die lauteste seit Jahren.'],
+      ['weber', 'Und die ehrlichste. Das bleibt unter uns.'],
       { wahl: [
-        { t: 'Besser oder schlechter?', herz: nett('weber'), dann: [['weber', 'Lauter. Und ehrlicher. Das mag ich.']] },
-        { t: 'Inwiefern?', staerke: 'zuhoeren', herz: nett('weber'), dann: [['weber', 'Ihr helft euch. Das sieht man nicht in jeder Klasse.']] },
+        { t: 'Kriegen wir dafür früher frei?', staerke: 'humor', herz: nett('weber'), dann: [['weber', 'Nein. Um 16 Uhr. Wie alle.']] },
+        { t: 'Ehrlich wie?', herz: nett('weber'), dann: [['weber', 'Ihr sagt, wenn was blöd ist. Das spart Zeit.']] },
+        { t: 'Laut ist doch gut.', dann: [['weber', 'Für dich. Ich hab Ohren.']] },
       ] },
     ] },
   ],
   hoffmann: [
-    { herz: 2, titel: 'Neue Methoden', g: [
-      ['hoffmann', 'Ehrlich gesagt: Ich bin vor jeder Stunde nervös.'],
+    { herz: 2, titel: 'Neue Methode', g: [
+      ['hoffmann', 'Neue Methode! Lernen mit Bewegung!'],
       { wahl: [
-        { t: 'Sie? Warum?', staerke: 'zuhoeren', herz: nett('hoffmann'), dann: [['hoffmann', 'Erstes Jahr als Lehrer. Ich will es richtig machen.']] },
-        { t: 'Merkt man gar nicht.', herz: nett('hoffmann'), dann: [['hoffmann', 'Danke. Das hilft mehr, als du denkst.']] },
+        { t: 'Bitte nicht wieder Tanzen.', staerke: 'humor', herz: nett('hoffmann'), dann: [['hoffmann', 'Kein Tanzen.'], ['hoffmann', '… Nur ein bisschen Klatschen.']] },
+        { t: 'Was genau?', herz: nett('hoffmann'), dann: [['hoffmann', 'Wer antwortet, wirft den Ball weiter. Gut, oder?'], ['hoffmann', 'Sag ehrlich. Besser als Folien?']] },
+        { t: 'Gibt’s auch eine Methode ohne Lernen?', dann: [['hoffmann', 'Heißt Pause. Kommt um zehn.']] },
       ] },
     ] },
-    { herz: 3, titel: 'Was klappt', g: [
-      ['hoffmann', 'Was war in meinem Unterricht gut? Sag ruhig ehrlich.'],
+    { herz: 3, titel: 'Ehrlich', g: [
+      ['hoffmann', 'Was war diese Woche das Beste in meinem Unterricht?'],
       { wahl: [
-        { t: 'Die Gruppenarbeit.', herz: nett('hoffmann'), dann: [['hoffmann', 'Gut. Dann mehr davon. Und weniger Folien.']] },
-        { t: 'Wenn Sie Beispiele erklären.', staerke: 'klar', herz: nett('hoffmann'), dann: [['hoffmann', 'Beispiele. Notiert. Danke, {name}.']] },
+        { t: 'Als der Beamer kaputt war.', staerke: 'humor', herz: nett('hoffmann'), dann: [['hoffmann', 'Autsch. Aber gut. Weniger Beamer. Notiert.']] },
+        { t: 'Die Gruppenarbeit.', staerke: 'ehrlich', herz: nett('hoffmann'), dann: [['hoffmann', 'Dann mehr davon. Danke, {name}.']] },
+        { t: 'Ihre Krawatte am Montag.', herz: nett('hoffmann'), dann: [['hoffmann', 'Die mit den Enten? Die bleibt.']] },
       ] },
     ] },
   ],

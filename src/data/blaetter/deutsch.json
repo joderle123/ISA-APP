@@ -3774,5 +3774,6766 @@
     ]
    }
   }
+ },
+ {
+  "id": "de-m2-stadt",
+  "bereich": "deutsch",
+  "thema": "lesen",
+  "stufen": [
+   "ES"
+  ],
+  "sozialform": [
+   "einzeln",
+   "klasse"
+  ],
+  "dauer": "45–60 Min.",
+  "eldib": [],
+  "schlagworte": [
+   "Stadtplan",
+   "Symbole",
+   "Orte in der Stadt",
+   "neben",
+   "zwischen",
+   "Modul 2"
+  ],
+  "bild": "icon:map",
+  "de": {
+   "titel": "Unterwegs in der Stadt",
+   "untertitel": "Einen Stadtplan lesen – Modul 2, Lektion 1",
+   "bausteine": [
+    {
+     "art": "bilder",
+     "klein": true,
+     "spalten": 3,
+     "bilder": [
+      {
+       "bild": "icon:map",
+       "text": "der Stadtplan"
+      },
+      {
+       "bild": "icon:train",
+       "text": "der Bahnhof"
+      },
+      {
+       "bild": "icon:info-circle",
+       "text": "die Information"
+      }
+     ]
+    },
+    {
+     "art": "text",
+     "text": "Ein Ausflug, ein Praktikum, eine fremde Stadt: Mit einem Stadtplan findest du dich zurecht. Die Symbole und die Felder helfen dir."
+    },
+    {
+     "art": "spalten",
+     "verhaeltnis": "2:1",
+     "links": [
+      {
+       "art": "info",
+       "symbol": "merke",
+       "titel": "Einen Stadtplan lesen",
+       "punkte": [
+        "Die Legende erklärt die Symbole: H = Haltestelle, P = Parkplatz, i = Information.",
+        "Das Straßenverzeichnis nennt das Feld: Bahnhofstraße → C2.",
+        "Buchstabe = Spalte, Zahl = Zeile. Wo sie sich treffen, suchst du.",
+        "Wo ist es? neben dem Bahnhof · zwischen dem Park und dem Bahnhof."
+       ]
+      }
+     ],
+     "rechts": [
+      {
+       "art": "tabelle",
+       "spalten": [
+        "",
+        "A",
+        "B",
+        "C"
+       ],
+       "zeilen": 0,
+       "werte": [
+        [
+         "1",
+         "Museum",
+         "Kirche",
+         "Schwimmbad"
+        ],
+        [
+         "2",
+         "Park",
+         "Rathaus",
+         "Bahnhof"
+        ],
+        [
+         "3",
+         "Schule",
+         "Post",
+         "Apotheke"
+        ]
+       ],
+       "breiten": [
+        0.35,
+        1.2,
+        1.2,
+        1.8
+       ]
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "Lies den Plan. In welchem Feld ist …?"
+    },
+    {
+     "art": "paeckchen",
+     "items": [
+      "das Museum: ___",
+      "der Bahnhof: ___",
+      "die Post: ___",
+      "das Schwimmbad: ___",
+      "die Apotheke: ___",
+      "In B2 ist das ___."
+     ],
+     "spalten": 2,
+     "buchstaben": true
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "Wo kann man das machen? Verbinde."
+    },
+    {
+     "art": "zuordnen",
+     "links": [
+      "Briefe abschicken",
+      "einen Zug nehmen",
+      "Pflaster kaufen",
+      "Bilder ansehen"
+     ],
+     "rechts": [
+      "im Museum",
+      "in der Apotheke",
+      "auf der Post",
+      "am Bahnhof"
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 2,
+     "text": "neben oder zwischen? Schreib Sätze zum Plan."
+    },
+    {
+     "art": "tabelle",
+     "spalten": [
+      "Orte",
+      "Satz"
+     ],
+     "zeilen": 0,
+     "werte": [
+      [
+       "Rathaus – Park – Bahnhof",
+       "Das Rathaus ist zwischen dem Park und dem Bahnhof."
+      ],
+      [
+       "Kirche – Museum",
+       ""
+      ],
+      [
+       "Post – Schule – Apotheke",
+       ""
+      ],
+      [
+       "Schwimmbad – Kirche",
+       ""
+      ]
+     ],
+     "breiten": [
+      2.2,
+      3.8
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 3,
+     "text": "Dein Lieblingsort in einer Stadt (echt oder ausgedacht): Was ist dort? Was ist daneben?"
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Mein Ort heißt …",
+      "Dort gibt es …",
+      "Daneben ist …",
+      "Ich gehe gern dorthin, weil …"
+     ],
+     "linien": 1
+    },
+    {
+     "art": "text",
+     "text": "Kurz-Check: Wie sicher bist du?",
+     "klein": true
+    },
+    {
+     "art": "einschaetzung",
+     "items": [
+      "Ich lese Symbole und Felder auf einem Stadtplan.",
+      "Ich kenne wichtige Orte in einer Stadt.",
+      "Ich sage, wo etwas ist: neben, zwischen."
+     ],
+     "optionen": [
+      "sicher",
+      "geht so",
+      "noch nicht"
+     ]
+    }
+   ],
+   "lehrer": {
+    "ziel": "Die Jugendlichen lesen einen einfachen Stadtplan (Legende, Felder, Straßenverzeichnis), benennen wichtige Orte einer Stadt und beschreiben die Lage mit „neben“ und „zwischen“.",
+    "ablauf": [
+     "Einstieg (5 Min.): Ein echter Stadtplan (z. B. Luxemburg-Stadt, Trier) liegt aus. „Wo ist der Bahnhof?“ – Wer findet ihn zuerst?",
+     "Regel (10 Min.): Legende und Feld-System gemeinsam lesen; an der Tafel ein 3×3-Raster mit Orten.",
+     "Übung (20 Min.): Aufgaben 1–3 allein oder zu zweit; Aufgabe 4 für alle, die fertig sind.",
+     "Abschluss (10 Min.): „Ich sehe was, was du nicht siehst“ mit dem Plan: „Es ist zwischen dem Park und dem Bahnhof.“ Kurz-Check."
+    ],
+    "hintergrund": "Sich in einer fremden Stadt orientieren gehört im Modul 2 zu den Themenvorschlägen; Stadtpläne und Straßenverzeichnisse lesen ist eine ausdrücklich genannte Lerntechnik. Für die Praktika in 6P und 5P ist das eine sehr praktische Fähigkeit (Weg zum Betrieb). „neben“ und „zwischen“ stehen hier als feste Wendungen mit Dativ (dem/der); die Regel zu den Wechselpräpositionen kommt später.",
+    "differenzierung": {
+     "leichter": "Nur Aufgaben 1 und 2; Orte an der Tafel mit Bild.",
+     "schwerer": "Einen echten Online-Stadtplan nutzen und den Weg von der Schule zum Bahnhof in Feldern beschreiben."
+    },
+    "loesungen": [
+     "1) A1 · C2 · B3 · C1 · C3 · Rathaus",
+     "2) Briefe abschicken – auf der Post · einen Zug nehmen – am Bahnhof · Pflaster kaufen – in der Apotheke · Bilder ansehen – im Museum",
+     "3) Die Kirche ist neben dem Museum. · Die Post ist zwischen der Schule und der Apotheke. · Das Schwimmbad ist neben der Kirche.",
+     "4) freie Antworten"
+    ]
+   }
+  },
+  "fr": {
+   "titel": "Unterwegs in der Stadt",
+   "untertitel": "Einen Stadtplan lesen – Modul 2, Lektion 1",
+   "bausteine": [
+    {
+     "art": "bilder",
+     "klein": true,
+     "spalten": 3,
+     "bilder": [
+      {
+       "bild": "icon:map",
+       "text": "der Stadtplan"
+      },
+      {
+       "bild": "icon:train",
+       "text": "der Bahnhof"
+      },
+      {
+       "bild": "icon:info-circle",
+       "text": "die Information"
+      }
+     ]
+    },
+    {
+     "art": "text",
+     "text": "Ein Ausflug, ein Praktikum, eine fremde Stadt: Mit einem Stadtplan findest du dich zurecht. Die Symbole und die Felder helfen dir."
+    },
+    {
+     "art": "spalten",
+     "verhaeltnis": "2:1",
+     "links": [
+      {
+       "art": "info",
+       "symbol": "merke",
+       "titel": "Einen Stadtplan lesen",
+       "punkte": [
+        "Die Legende erklärt die Symbole: H = Haltestelle, P = Parkplatz, i = Information.",
+        "Das Straßenverzeichnis nennt das Feld: Bahnhofstraße → C2.",
+        "Buchstabe = Spalte, Zahl = Zeile. Wo sie sich treffen, suchst du.",
+        "Wo ist es? neben dem Bahnhof · zwischen dem Park und dem Bahnhof."
+       ]
+      }
+     ],
+     "rechts": [
+      {
+       "art": "tabelle",
+       "spalten": [
+        "",
+        "A",
+        "B",
+        "C"
+       ],
+       "zeilen": 0,
+       "werte": [
+        [
+         "1",
+         "Museum",
+         "Kirche",
+         "Schwimmbad"
+        ],
+        [
+         "2",
+         "Park",
+         "Rathaus",
+         "Bahnhof"
+        ],
+        [
+         "3",
+         "Schule",
+         "Post",
+         "Apotheke"
+        ]
+       ],
+       "breiten": [
+        0.35,
+        1.2,
+        1.2,
+        1.8
+       ]
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "Lies den Plan. In welchem Feld ist …?"
+    },
+    {
+     "art": "paeckchen",
+     "items": [
+      "das Museum: ___",
+      "der Bahnhof: ___",
+      "die Post: ___",
+      "das Schwimmbad: ___",
+      "die Apotheke: ___",
+      "In B2 ist das ___."
+     ],
+     "spalten": 2,
+     "buchstaben": true
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "Wo kann man das machen? Verbinde."
+    },
+    {
+     "art": "zuordnen",
+     "links": [
+      "Briefe abschicken",
+      "einen Zug nehmen",
+      "Pflaster kaufen",
+      "Bilder ansehen"
+     ],
+     "rechts": [
+      "im Museum",
+      "in der Apotheke",
+      "auf der Post",
+      "am Bahnhof"
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 2,
+     "text": "neben oder zwischen? Schreib Sätze zum Plan."
+    },
+    {
+     "art": "tabelle",
+     "spalten": [
+      "Orte",
+      "Satz"
+     ],
+     "zeilen": 0,
+     "werte": [
+      [
+       "Rathaus – Park – Bahnhof",
+       "Das Rathaus ist zwischen dem Park und dem Bahnhof."
+      ],
+      [
+       "Kirche – Museum",
+       ""
+      ],
+      [
+       "Post – Schule – Apotheke",
+       ""
+      ],
+      [
+       "Schwimmbad – Kirche",
+       ""
+      ]
+     ],
+     "breiten": [
+      2.2,
+      3.8
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 3,
+     "text": "Dein Lieblingsort in einer Stadt (echt oder ausgedacht): Was ist dort? Was ist daneben?"
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Mein Ort heißt …",
+      "Dort gibt es …",
+      "Daneben ist …",
+      "Ich gehe gern dorthin, weil …"
+     ],
+     "linien": 1
+    },
+    {
+     "art": "text",
+     "text": "Kurz-Check: Wie sicher bist du?",
+     "klein": true
+    },
+    {
+     "art": "einschaetzung",
+     "items": [
+      "Ich lese Symbole und Felder auf einem Stadtplan.",
+      "Ich kenne wichtige Orte in einer Stadt.",
+      "Ich sage, wo etwas ist: neben, zwischen."
+     ],
+     "optionen": [
+      "sicher",
+      "geht so",
+      "noch nicht"
+     ]
+    }
+   ],
+   "lehrer": {
+    "ziel": "Les jeunes lisent un plan de ville simple (légende, cases, index des rues), nomment les lieux importants d’une ville et décrivent leur position avec « neben » et « zwischen ».",
+    "ablauf": [
+     "Entrée (5 min) : un vrai plan (p. ex. Luxembourg-ville, Trèves) est posé sur la table. « Où est la gare ? » – Qui la trouve en premier ?",
+     "Règle (10 min) : lire ensemble la légende et le système de cases ; au tableau, une grille 3×3 avec des lieux.",
+     "Exercices (20 min) : exercices 1–3 seul ou à deux ; exercice 4 pour celles et ceux qui ont fini.",
+     "Clôture (10 min) : « Je vois quelque chose que tu ne vois pas » avec le plan : « C’est entre le parc et la gare. » Mini-bilan."
+    ],
+    "hintergrund": "S’orienter dans une ville inconnue fait partie des thèmes proposés pour le module 2 ; lire des plans et des index de rues est une technique d’apprentissage explicitement citée. Pour les stages en 6P et 5P, c’est une compétence très concrète (le chemin vers l’entreprise). « neben » et « zwischen » sont présentés ici comme expressions figées avec le datif (dem/der) ; la règle des prépositions mixtes viendra plus tard.",
+    "differenzierung": {
+     "leichter": "Seulement les exercices 1 et 2 ; les lieux au tableau avec image.",
+     "schwerer": "Utiliser un vrai plan en ligne et décrire le chemin de l’école à la gare en cases."
+    },
+    "loesungen": [
+     "1) A1 · C2 · B3 · C1 · C3 · Rathaus",
+     "2) Briefe abschicken – auf der Post · einen Zug nehmen – am Bahnhof · Pflaster kaufen – in der Apotheke · Bilder ansehen – im Museum",
+     "3) Die Kirche ist neben dem Museum. · Die Post ist zwischen der Schule und der Apotheke. · Das Schwimmbad ist neben der Kirche.",
+     "4) réponses libres"
+    ]
+   }
+  }
+ },
+ {
+  "id": "de-m2-imperativ",
+  "bereich": "deutsch",
+  "thema": "sprechen",
+  "stufen": [
+   "ES"
+  ],
+  "sozialform": [
+   "einzeln",
+   "klasse"
+  ],
+  "dauer": "45–60 Min.",
+  "eldib": [],
+  "schlagworte": [
+   "Imperativ",
+   "Wegbeschreibung",
+   "links",
+   "rechts",
+   "geradeaus",
+   "höflich",
+   "Modul 2"
+  ],
+  "bild": "icon:route",
+  "de": {
+   "titel": "Geh geradeaus!",
+   "untertitel": "Der Imperativ – Modul 2, Lektion 2",
+   "bausteine": [
+    {
+     "art": "bilder",
+     "klein": true,
+     "spalten": 3,
+     "bilder": [
+      {
+       "bild": "icon:arrow-right",
+       "text": "Geh rechts!"
+      },
+      {
+       "bild": "icon:walk",
+       "text": "Geht geradeaus!"
+      },
+      {
+       "bild": "icon:hand-finger",
+       "text": "Gehen Sie links!"
+      }
+     ]
+    },
+    {
+     "art": "text",
+     "text": "Wer einen Weg erklärt, gibt Anweisungen. Dafür hat das Deutsche eine eigene Verbform: den Imperativ."
+    },
+    {
+     "art": "spalten",
+     "verhaeltnis": "2:1",
+     "links": [
+      {
+       "art": "info",
+       "symbol": "merke",
+       "titel": "Der Imperativ",
+       "punkte": [
+        "du: du gehst → Geh! (ohne du, ohne -st)",
+        "ihr: ihr geht → Geht! (ohne ihr)",
+        "Sie: Gehen Sie! (Sie bleibt – höflich)",
+        "Mit „bitte“ klingt es freundlich: Komm bitte mit!"
+       ]
+      }
+     ],
+     "rechts": [
+      {
+       "art": "info",
+       "symbol": "tipp",
+       "titel": "Achtung",
+       "text": "e → i bleibt: du nimmst → Nimm! · du liest → Lies! · ä → a: du fährst → Fahr! · sein → Sei leise!"
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "Bilde den Imperativ für „du“."
+    },
+    {
+     "art": "paeckchen",
+     "items": [
+      "gehen: ___ geradeaus!",
+      "kommen: ___ bitte mit!",
+      "nehmen: ___ den Bus!",
+      "fahren: ___ langsam!",
+      "warten: ___ an der Ampel!",
+      "lesen: ___ den Plan!"
+     ],
+     "spalten": 2,
+     "buchstaben": true
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "Zu wem sagt man das? Verbinde."
+    },
+    {
+     "art": "zuordnen",
+     "links": [
+      "Gehen Sie bitte links.",
+      "Geht zusammen zum Bus!",
+      "Geh schon vor!"
+     ],
+     "rechts": [
+      "zu einem Freund",
+      "zu zwei Freundinnen",
+      "zu einer fremden Person"
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 2,
+     "text": "Wegbeschreibung: Schreib die Notizen als Imperativ (du)."
+    },
+    {
+     "art": "tabelle",
+     "spalten": [
+      "Notiz",
+      "Imperativ"
+     ],
+     "zeilen": 0,
+     "werte": [
+      [
+       "aus der Schule gehen",
+       "Geh aus der Schule."
+      ],
+      [
+       "an der Ampel links gehen",
+       ""
+      ],
+      [
+       "über die Brücke fahren",
+       ""
+      ],
+      [
+       "an der Post rechts abbiegen",
+       ""
+      ],
+      [
+       "den Bus 110 nehmen",
+       ""
+      ]
+     ],
+     "breiten": [
+      2.6,
+      3.4
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 2,
+     "text": "Höflich: Schreib die Sätze für „Sie“."
+    },
+    {
+     "art": "tabelle",
+     "spalten": [
+      "du",
+      "Sie"
+     ],
+     "zeilen": 0,
+     "werte": [
+      [
+       "Geh geradeaus.",
+       "Gehen Sie geradeaus."
+      ],
+      [
+       "Nimm die erste Straße rechts.",
+       ""
+      ],
+      [
+       "Warte an der Haltestelle.",
+       ""
+      ],
+      [
+       "Komm bitte mit.",
+       ""
+      ]
+     ],
+     "breiten": [
+      2.8,
+      3.2
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 3,
+     "text": "Beschreib den Weg von der Schule zur Bushaltestelle (oder zu einem Ort deiner Wahl). Mindestens vier Sätze im Imperativ."
+    },
+    {
+     "art": "linien",
+     "anzahl": 5
+    },
+    {
+     "art": "text",
+     "text": "Kurz-Check: Wie sicher bist du?",
+     "klein": true
+    },
+    {
+     "art": "einschaetzung",
+     "items": [
+      "Ich bilde den Imperativ für du, ihr und Sie.",
+      "Ich beschreibe einen Weg mit links, rechts, geradeaus.",
+      "Ich bin höflich mit „bitte“ und „Sie“."
+     ],
+     "optionen": [
+      "sicher",
+      "geht so",
+      "noch nicht"
+     ]
+    }
+   ],
+   "lehrer": {
+    "ziel": "Die Jugendlichen bilden den Imperativ (du, ihr, Sie) regelmäßiger und wichtiger unregelmäßiger Verben und beschreiben damit einen Weg.",
+    "ablauf": [
+     "Einstieg (5 Min.): „Roboter-Spiel“ – eine Person ist Roboter und macht nur, was man sagt: „Geh drei Schritte! Dreh dich!“",
+     "Regel (10 Min.): Merkkasten; du-Form aus dem Präsens ableiten (du gehst → Geh!); Sonderfälle nimm, lies, fahr, sei.",
+     "Übung (20 Min.): Aufgaben 1–4; Aufgabe 5 mit einem echten Weg aus der Umgebung.",
+     "Abschluss (10 Min.): Blinde Führung im Klassenraum (freiwillig, sicher): Eine Person führt eine andere nur mit Imperativen. Kurz-Check."
+    ],
+    "hintergrund": "Der Imperativ wird in den Bildungsstandards für Modul 2 ausdrücklich im Zusammenhang mit Wegbeschreibungen genannt. Häufige Fehler: „Nehm!“ statt „Nimm!“, „Gehst!“ mit Endung, „Du geh!“ mit Pronomen. Die Sie-Form ist für Praktikum und Alltag wichtig (fremde Personen, Ämter, Betrieb). Bei der blinden Führung gilt: Freiwilligkeit, langsames Tempo, freier Raum.",
+    "differenzierung": {
+     "leichter": "Nur die du-Form; Verben mit Bild an der Tafel.",
+     "schwerer": "Trennbare Verben im Imperativ: Bieg ab! Steig aus! Ruf an!"
+    },
+    "loesungen": [
+     "1) Geh · Komm · Nimm · Fahr · Warte · Lies",
+     "2) Geh schon vor! – zu einem Freund · Geht zusammen zum Bus! – zu zwei Freundinnen · Gehen Sie bitte links. – zu einer fremden Person",
+     "3) Geh an der Ampel links. · Fahr über die Brücke. · Bieg an der Post rechts ab. · Nimm den Bus 110.",
+     "4) Nehmen Sie die erste Straße rechts. · Warten Sie an der Haltestelle. · Kommen Sie bitte mit.",
+     "5) freie Antworten (Imperativ und Richtungswörter)"
+    ]
+   }
+  },
+  "fr": {
+   "titel": "Geh geradeaus!",
+   "untertitel": "Der Imperativ – Modul 2, Lektion 2",
+   "bausteine": [
+    {
+     "art": "bilder",
+     "klein": true,
+     "spalten": 3,
+     "bilder": [
+      {
+       "bild": "icon:arrow-right",
+       "text": "Geh rechts!"
+      },
+      {
+       "bild": "icon:walk",
+       "text": "Geht geradeaus!"
+      },
+      {
+       "bild": "icon:hand-finger",
+       "text": "Gehen Sie links!"
+      }
+     ]
+    },
+    {
+     "art": "text",
+     "text": "Wer einen Weg erklärt, gibt Anweisungen. Dafür hat das Deutsche eine eigene Verbform: den Imperativ."
+    },
+    {
+     "art": "spalten",
+     "verhaeltnis": "2:1",
+     "links": [
+      {
+       "art": "info",
+       "symbol": "merke",
+       "titel": "Der Imperativ",
+       "punkte": [
+        "du: du gehst → Geh! (ohne du, ohne -st)",
+        "ihr: ihr geht → Geht! (ohne ihr)",
+        "Sie: Gehen Sie! (Sie bleibt – höflich)",
+        "Mit „bitte“ klingt es freundlich: Komm bitte mit!"
+       ]
+      }
+     ],
+     "rechts": [
+      {
+       "art": "info",
+       "symbol": "tipp",
+       "titel": "Achtung",
+       "text": "e → i bleibt: du nimmst → Nimm! · du liest → Lies! · ä → a: du fährst → Fahr! · sein → Sei leise!"
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "Bilde den Imperativ für „du“."
+    },
+    {
+     "art": "paeckchen",
+     "items": [
+      "gehen: ___ geradeaus!",
+      "kommen: ___ bitte mit!",
+      "nehmen: ___ den Bus!",
+      "fahren: ___ langsam!",
+      "warten: ___ an der Ampel!",
+      "lesen: ___ den Plan!"
+     ],
+     "spalten": 2,
+     "buchstaben": true
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "Zu wem sagt man das? Verbinde."
+    },
+    {
+     "art": "zuordnen",
+     "links": [
+      "Gehen Sie bitte links.",
+      "Geht zusammen zum Bus!",
+      "Geh schon vor!"
+     ],
+     "rechts": [
+      "zu einem Freund",
+      "zu zwei Freundinnen",
+      "zu einer fremden Person"
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 2,
+     "text": "Wegbeschreibung: Schreib die Notizen als Imperativ (du)."
+    },
+    {
+     "art": "tabelle",
+     "spalten": [
+      "Notiz",
+      "Imperativ"
+     ],
+     "zeilen": 0,
+     "werte": [
+      [
+       "aus der Schule gehen",
+       "Geh aus der Schule."
+      ],
+      [
+       "an der Ampel links gehen",
+       ""
+      ],
+      [
+       "über die Brücke fahren",
+       ""
+      ],
+      [
+       "an der Post rechts abbiegen",
+       ""
+      ],
+      [
+       "den Bus 110 nehmen",
+       ""
+      ]
+     ],
+     "breiten": [
+      2.6,
+      3.4
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 2,
+     "text": "Höflich: Schreib die Sätze für „Sie“."
+    },
+    {
+     "art": "tabelle",
+     "spalten": [
+      "du",
+      "Sie"
+     ],
+     "zeilen": 0,
+     "werte": [
+      [
+       "Geh geradeaus.",
+       "Gehen Sie geradeaus."
+      ],
+      [
+       "Nimm die erste Straße rechts.",
+       ""
+      ],
+      [
+       "Warte an der Haltestelle.",
+       ""
+      ],
+      [
+       "Komm bitte mit.",
+       ""
+      ]
+     ],
+     "breiten": [
+      2.8,
+      3.2
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 3,
+     "text": "Beschreib den Weg von der Schule zur Bushaltestelle (oder zu einem Ort deiner Wahl). Mindestens vier Sätze im Imperativ."
+    },
+    {
+     "art": "linien",
+     "anzahl": 5
+    },
+    {
+     "art": "text",
+     "text": "Kurz-Check: Wie sicher bist du?",
+     "klein": true
+    },
+    {
+     "art": "einschaetzung",
+     "items": [
+      "Ich bilde den Imperativ für du, ihr und Sie.",
+      "Ich beschreibe einen Weg mit links, rechts, geradeaus.",
+      "Ich bin höflich mit „bitte“ und „Sie“."
+     ],
+     "optionen": [
+      "sicher",
+      "geht so",
+      "noch nicht"
+     ]
+    }
+   ],
+   "lehrer": {
+    "ziel": "Les jeunes forment l’impératif (du, ihr, Sie) des verbes réguliers et de verbes irréguliers fréquents et décrivent ainsi un chemin.",
+    "ablauf": [
+     "Entrée (5 min) : « jeu du robot » – une personne est le robot et ne fait que ce qu’on lui dit : « Geh drei Schritte! Dreh dich! »",
+     "Règle (10 min) : encadré ; dériver la forme du à partir du présent (du gehst → Geh!) ; cas particuliers nimm, lies, fahr, sei.",
+     "Exercices (20 min) : exercices 1–4 ; exercice 5 avec un vrai chemin du quartier.",
+     "Clôture (10 min) : guidage à l’aveugle dans la classe (volontaire, en sécurité) : une personne en guide une autre uniquement avec des impératifs. Mini-bilan."
+    ],
+    "hintergrund": "L’impératif est explicitement cité dans les standards du module 2 en lien avec la description d’un chemin. Erreurs fréquentes : « Nehm! » au lieu de « Nimm! », « Gehst! » avec terminaison, « Du geh! » avec pronom. La forme Sie est importante pour le stage et la vie quotidienne (inconnus, administrations, entreprise). Pour le guidage à l’aveugle : volontariat, rythme lent, espace dégagé.",
+    "differenzierung": {
+     "leichter": "Seulement la forme du ; verbes avec image au tableau.",
+     "schwerer": "Verbes à particule séparable à l’impératif : Bieg ab! Steig aus! Ruf an!"
+    },
+    "loesungen": [
+     "1) Geh · Komm · Nimm · Fahr · Warte · Lies",
+     "2) Geh schon vor! – à un ami · Geht zusammen zum Bus! – à deux amies · Gehen Sie bitte links. – à une personne inconnue",
+     "3) Geh an der Ampel links. · Fahr über die Brücke. · Bieg an der Post rechts ab. · Nimm den Bus 110.",
+     "4) Nehmen Sie die erste Straße rechts. · Warten Sie an der Haltestelle. · Kommen Sie bitte mit.",
+     "5) réponses libres (impératif et mots de direction)"
+    ]
+   }
+  }
+ },
+ {
+  "id": "de-m2-komposita",
+  "bereich": "deutsch",
+  "thema": "wortschatz",
+  "stufen": [
+   "ES"
+  ],
+  "sozialform": [
+   "einzeln",
+   "klasse"
+  ],
+  "dauer": "45–60 Min.",
+  "eldib": [],
+  "schlagworte": [
+   "zusammengesetzte Nomen",
+   "Komposita",
+   "Artikel",
+   "Wortbildung",
+   "Modul 2"
+  ],
+  "bild": "icon:puzzle",
+  "de": {
+   "titel": "Bahn + Hof = Bahnhof",
+   "untertitel": "Zusammengesetzte Nomen – Modul 2, Lektion 3",
+   "bausteine": [
+    {
+     "art": "bilder",
+     "klein": true,
+     "spalten": 3,
+     "bilder": [
+      {
+       "bild": "icon:train",
+       "text": "die Bahn + der Hof"
+      },
+      {
+       "bild": "icon:ball-football",
+       "text": "der Fuß + der Ball"
+      },
+      {
+       "bild": "icon:map",
+       "text": "die Stadt + der Plan"
+      }
+     ]
+    },
+    {
+     "art": "text",
+     "text": "Im Deutschen baut man Nomen zusammen wie Bausteine. So entstehen lange Wörter – mit einer einfachen Regel für den Artikel."
+    },
+    {
+     "art": "spalten",
+     "verhaeltnis": "2:1",
+     "links": [
+      {
+       "art": "info",
+       "symbol": "merke",
+       "titel": "Zusammengesetzte Nomen",
+       "punkte": [
+        "Das erste Wort sagt, welche Art: der Fußball = ein Ball für den Fuß.",
+        "Das letzte Wort bestimmt den Artikel: die Bahn + der Hof = der Bahnhof.",
+        "Manchmal kommt ein -s- oder -n- dazwischen: die Geburtstagskarte, das Klassenzimmer.",
+        "Man schreibt sie zusammen und groß."
+       ]
+      }
+     ],
+     "rechts": [
+      {
+       "art": "tabelle",
+       "spalten": [
+        "Wort 1",
+        "+ Wort 2",
+        "= neues Wort"
+       ],
+       "zeilen": 0,
+       "werte": [
+        [
+         "die Schule",
+         "der Hof",
+         "der Schulhof"
+        ],
+        [
+         "das Haus",
+         "die Aufgabe",
+         "die Hausaufgabe"
+        ],
+        [
+         "der Tisch",
+         "das Tennis",
+         "das Tischtennis"
+        ]
+       ],
+       "breiten": [
+        1.3,
+        1.3,
+        1.7
+       ]
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "Bau das Wort und schreib den Artikel dazu."
+    },
+    {
+     "art": "paeckchen",
+     "items": [
+      "der Fuß + der Ball = ___",
+      "die Stadt + der Plan = ___",
+      "die Klasse + das Zimmer = ___",
+      "turnen + die Halle = ___",
+      "der Bus + die Haltestelle = ___",
+      "das Handy + die Hülle = ___"
+     ],
+     "spalten": 2,
+     "buchstaben": true
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "Welche Teile gehören zusammen? Verbinde."
+    },
+    {
+     "art": "zuordnen",
+     "links": [
+      "Tisch",
+      "Sport",
+      "Mittag",
+      "Haus"
+     ],
+     "rechts": [
+      "tür",
+      "essen",
+      "tennis",
+      "lehrer"
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 2,
+     "text": "Zerlege die Wörter. Welches Wort bestimmt den Artikel?"
+    },
+    {
+     "art": "tabelle",
+     "spalten": [
+      "Wort",
+      "Teile",
+      "Artikel"
+     ],
+     "zeilen": 0,
+     "werte": [
+      [
+       "Schulbus",
+       "die Schule + der Bus",
+       "der"
+      ],
+      [
+       "Fahrkarte",
+       "",
+       ""
+      ],
+      [
+       "Kopfhörer",
+       "",
+       ""
+      ],
+      [
+       "Lieblingsessen",
+       "",
+       ""
+      ],
+      [
+       "Sportschuh",
+       "",
+       ""
+      ]
+     ],
+     "breiten": [
+      1.8,
+      3,
+      1.2
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 3,
+     "text": "Erfinde drei neue Wörter für deine Schule (z. B. der Pausenkiosk). Mit Artikel und Erklärung!"
+    },
+    {
+     "art": "tabelle",
+     "spalten": [
+      "Wort mit Artikel",
+      "Teile",
+      "Was ist das?"
+     ],
+     "zeilen": 3,
+     "breiten": [
+      2,
+      2,
+      2.4
+     ]
+    },
+    {
+     "art": "text",
+     "text": "Kurz-Check: Wie sicher bist du?",
+     "klein": true
+    },
+    {
+     "art": "einschaetzung",
+     "items": [
+      "Ich baue Wörter aus zwei Nomen.",
+      "Ich weiß: Das letzte Wort bestimmt den Artikel.",
+      "Ich schreibe zusammengesetzte Nomen zusammen und groß."
+     ],
+     "optionen": [
+      "sicher",
+      "geht so",
+      "noch nicht"
+     ]
+    }
+   ],
+   "lehrer": {
+    "ziel": "Die Jugendlichen bilden und zerlegen zusammengesetzte Nomen und bestimmen den Artikel nach dem Grundwort (letztes Wort).",
+    "ablauf": [
+     "Einstieg (5 Min.): Das längste Wort, das ihr kennt? An die Tafel – und zerlegen.",
+     "Regel (10 Min.): Merkkasten; Wortkarten (Bestimmungswort/Grundwort) an der Tafel zusammenschieben; Artikel-Farben (blau, rot, grün).",
+     "Übung (20 Min.): Aufgaben 1–3; Aufgabe 4 in Paaren mit Vorstellen.",
+     "Abschluss (10 Min.): Wort-Kette: Fußball → Ballspiel → Spielplatz → … Wer schafft die längste Kette? Kurz-Check."
+    ],
+    "hintergrund": "Zusammengesetzte Nomen sind in den Bildungsstandards für Modul 2 als Sprachbetrachtung genannt. Die Grundwort-Regel ist für Jugendliche mit Französisch als stärkerer Sprache besonders hilfreich, weil das Französische die Reihenfolge umkehrt (le terrain de foot – der Fußballplatz) – ein Vergleich lohnt sich. Fugenelemente (-s-, -n-) werden nur erkannt, nicht als Regel gelernt.",
+    "differenzierung": {
+     "leichter": "Nur Wörter aus zwei kurzen Teilen; Artikel-Farben als Hilfe.",
+     "schwerer": "Wörter aus drei Teilen (die Tischtennisplatte, der Schulbusfahrer) und Vergleich mit dem Französischen."
+    },
+    "loesungen": [
+     "1) der Fußball · der Stadtplan · das Klassenzimmer · die Turnhalle · die Bushaltestelle · die Handyhülle",
+     "2) Tischtennis · Sportlehrer · Mittagessen · Haustür",
+     "3) Fahrkarte: fahren + die Karte → die · Kopfhörer: der Kopf + der Hörer → der · Lieblingsessen: der Liebling + das Essen → das · Sportschuh: der Sport + der Schuh → der",
+     "4) freie Antworten (Artikel nach dem letzten Wort)"
+    ]
+   }
+  },
+  "fr": {
+   "titel": "Bahn + Hof = Bahnhof",
+   "untertitel": "Zusammengesetzte Nomen – Modul 2, Lektion 3",
+   "bausteine": [
+    {
+     "art": "bilder",
+     "klein": true,
+     "spalten": 3,
+     "bilder": [
+      {
+       "bild": "icon:train",
+       "text": "die Bahn + der Hof"
+      },
+      {
+       "bild": "icon:ball-football",
+       "text": "der Fuß + der Ball"
+      },
+      {
+       "bild": "icon:map",
+       "text": "die Stadt + der Plan"
+      }
+     ]
+    },
+    {
+     "art": "text",
+     "text": "Im Deutschen baut man Nomen zusammen wie Bausteine. So entstehen lange Wörter – mit einer einfachen Regel für den Artikel."
+    },
+    {
+     "art": "spalten",
+     "verhaeltnis": "2:1",
+     "links": [
+      {
+       "art": "info",
+       "symbol": "merke",
+       "titel": "Zusammengesetzte Nomen",
+       "punkte": [
+        "Das erste Wort sagt, welche Art: der Fußball = ein Ball für den Fuß.",
+        "Das letzte Wort bestimmt den Artikel: die Bahn + der Hof = der Bahnhof.",
+        "Manchmal kommt ein -s- oder -n- dazwischen: die Geburtstagskarte, das Klassenzimmer.",
+        "Man schreibt sie zusammen und groß."
+       ]
+      }
+     ],
+     "rechts": [
+      {
+       "art": "tabelle",
+       "spalten": [
+        "Wort 1",
+        "+ Wort 2",
+        "= neues Wort"
+       ],
+       "zeilen": 0,
+       "werte": [
+        [
+         "die Schule",
+         "der Hof",
+         "der Schulhof"
+        ],
+        [
+         "das Haus",
+         "die Aufgabe",
+         "die Hausaufgabe"
+        ],
+        [
+         "der Tisch",
+         "das Tennis",
+         "das Tischtennis"
+        ]
+       ],
+       "breiten": [
+        1.3,
+        1.3,
+        1.7
+       ]
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "Bau das Wort und schreib den Artikel dazu."
+    },
+    {
+     "art": "paeckchen",
+     "items": [
+      "der Fuß + der Ball = ___",
+      "die Stadt + der Plan = ___",
+      "die Klasse + das Zimmer = ___",
+      "turnen + die Halle = ___",
+      "der Bus + die Haltestelle = ___",
+      "das Handy + die Hülle = ___"
+     ],
+     "spalten": 2,
+     "buchstaben": true
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "Welche Teile gehören zusammen? Verbinde."
+    },
+    {
+     "art": "zuordnen",
+     "links": [
+      "Tisch",
+      "Sport",
+      "Mittag",
+      "Haus"
+     ],
+     "rechts": [
+      "tür",
+      "essen",
+      "tennis",
+      "lehrer"
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 2,
+     "text": "Zerlege die Wörter. Welches Wort bestimmt den Artikel?"
+    },
+    {
+     "art": "tabelle",
+     "spalten": [
+      "Wort",
+      "Teile",
+      "Artikel"
+     ],
+     "zeilen": 0,
+     "werte": [
+      [
+       "Schulbus",
+       "die Schule + der Bus",
+       "der"
+      ],
+      [
+       "Fahrkarte",
+       "",
+       ""
+      ],
+      [
+       "Kopfhörer",
+       "",
+       ""
+      ],
+      [
+       "Lieblingsessen",
+       "",
+       ""
+      ],
+      [
+       "Sportschuh",
+       "",
+       ""
+      ]
+     ],
+     "breiten": [
+      1.8,
+      3,
+      1.2
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 3,
+     "text": "Erfinde drei neue Wörter für deine Schule (z. B. der Pausenkiosk). Mit Artikel und Erklärung!"
+    },
+    {
+     "art": "tabelle",
+     "spalten": [
+      "Wort mit Artikel",
+      "Teile",
+      "Was ist das?"
+     ],
+     "zeilen": 3,
+     "breiten": [
+      2,
+      2,
+      2.4
+     ]
+    },
+    {
+     "art": "text",
+     "text": "Kurz-Check: Wie sicher bist du?",
+     "klein": true
+    },
+    {
+     "art": "einschaetzung",
+     "items": [
+      "Ich baue Wörter aus zwei Nomen.",
+      "Ich weiß: Das letzte Wort bestimmt den Artikel.",
+      "Ich schreibe zusammengesetzte Nomen zusammen und groß."
+     ],
+     "optionen": [
+      "sicher",
+      "geht so",
+      "noch nicht"
+     ]
+    }
+   ],
+   "lehrer": {
+    "ziel": "Les jeunes forment et décomposent des noms composés et déterminent l’article d’après le mot de base (le dernier mot).",
+    "ablauf": [
+     "Entrée (5 min) : le mot le plus long que vous connaissez ? Au tableau – et on le décompose.",
+     "Règle (10 min) : encadré ; rapprocher des cartes-mots (déterminant/mot de base) au tableau ; couleurs des articles (bleu, rouge, vert).",
+     "Exercices (20 min) : exercices 1–3 ; exercice 4 à deux avec présentation.",
+     "Clôture (10 min) : chaîne de mots : Fußball → Ballspiel → Spielplatz → … Qui fait la plus longue chaîne ? Mini-bilan."
+    ],
+    "hintergrund": "Les noms composés sont cités dans les standards du module 2 (observation de la langue). La règle du mot de base est particulièrement utile aux jeunes dont le français est la langue plus forte, car le français inverse l’ordre (le terrain de foot – der Fußballplatz) – la comparaison vaut la peine. Les éléments de liaison (-s-, -n-) sont seulement reconnus, pas appris comme règle.",
+    "differenzierung": {
+     "leichter": "Seulement des mots de deux parties courtes ; couleurs des articles comme aide.",
+     "schwerer": "Mots de trois parties (die Tischtennisplatte, der Schulbusfahrer) et comparaison avec le français."
+    },
+    "loesungen": [
+     "1) der Fußball · der Stadtplan · das Klassenzimmer · die Turnhalle · die Bushaltestelle · die Handyhülle",
+     "2) Tischtennis · Sportlehrer · Mittagessen · Haustür",
+     "3) Fahrkarte : fahren + die Karte → die · Kopfhörer : der Kopf + der Hörer → der · Lieblingsessen : der Liebling + das Essen → das · Sportschuh : der Sport + der Schuh → der",
+     "4) réponses libres (article d’après le dernier mot)"
+    ]
+   }
+  }
+ },
+ {
+  "id": "de-m2-satzzeichen",
+  "bereich": "deutsch",
+  "thema": "schreiben",
+  "stufen": [
+   "ES"
+  ],
+  "sozialform": [
+   "einzeln",
+   "klasse"
+  ],
+  "dauer": "45–60 Min.",
+  "eldib": [],
+  "schlagworte": [
+   "Satzzeichen",
+   "Satzmelodie",
+   "Aussage",
+   "Frage",
+   "Aufforderung",
+   "Großschreibung",
+   "Modul 2"
+  ],
+  "bild": "icon:speakerphone",
+  "de": {
+   "titel": "Punkt, Frage, Ausruf",
+   "untertitel": "Satzmelodie und Satzzeichen – Modul 2, Lektion 4",
+   "bausteine": [
+    {
+     "art": "bilder",
+     "klein": true,
+     "spalten": 3,
+     "bilder": [
+      {
+       "bild": "icon:pencil",
+       "text": "Aussage."
+      },
+      {
+       "bild": "icon:question-mark",
+       "text": "Frage?"
+      },
+      {
+       "bild": "icon:speakerphone",
+       "text": "Aufforderung!"
+      }
+     ]
+    },
+    {
+     "art": "text",
+     "text": "Hör gut hin: Bei einer Frage geht die Stimme nach oben, bei einer Aussage nach unten. Beim Schreiben zeigen das die Satzzeichen."
+    },
+    {
+     "art": "spalten",
+     "verhaeltnis": "2:1",
+     "links": [
+      {
+       "art": "info",
+       "symbol": "merke",
+       "titel": "Satzmelodie und Satzzeichen",
+       "punkte": [
+        "Aussage: Die Stimme geht am Ende nach unten. Am Ende steht ein Punkt (.)",
+        "Frage: Die Stimme geht am Ende nach oben. Am Ende steht ein Fragezeichen (?)",
+        "Aufforderung oder starkes Gefühl: Ausrufezeichen (!)",
+        "Nach . ? ! schreibt man groß weiter."
+       ]
+      }
+     ],
+     "rechts": [
+      {
+       "art": "dialog",
+       "zeilen": [
+        {
+         "wer": "Ben",
+         "text": "Kommst du mit zum Training?"
+        },
+        {
+         "wer": "Sam",
+         "text": "Ja, klar."
+        },
+        {
+         "wer": "Ben",
+         "text": "Dann beeil dich!"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "Setz das richtige Satzzeichen: . ? !"
+    },
+    {
+     "art": "paeckchen",
+     "items": [
+      "Wann beginnt das Training ___",
+      "Ich spiele gern Korbball ___",
+      "Pass auf ___",
+      "Hast du deine Sportschuhe ___",
+      "Das Spiel ist um vier ___",
+      "Wow, was für ein Wurf ___"
+     ],
+     "spalten": 2,
+     "buchstaben": true
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "Lies laut. Was ist es? Verbinde."
+    },
+    {
+     "art": "zuordnen",
+     "links": [
+      "Du kommst mit.",
+      "Kommst du mit?",
+      "Komm mit!"
+     ],
+     "rechts": [
+      "Frage",
+      "Aufforderung",
+      "Aussage"
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 2,
+     "text": "Hier fehlen alle Satzzeichen und Großbuchstaben. Schreib den Text richtig ab."
+    },
+    {
+     "art": "tabelle",
+     "spalten": [
+      "Text ohne Zeichen"
+     ],
+     "zeilen": 0,
+     "werte": [
+      [
+       "gestern war das spiel kommst du nächstes mal mit es war super"
+      ]
+     ],
+     "breiten": [
+      6
+     ]
+    },
+    {
+     "art": "linien",
+     "anzahl": 3
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 3,
+     "text": "Thema Sport: Schreib eine Aussage, eine Frage und eine Aufforderung."
+    },
+    {
+     "art": "tabelle",
+     "spalten": [
+      "Aussage .",
+      "Frage ?",
+      "Aufforderung !"
+     ],
+     "zeilen": 2,
+     "breiten": [
+      2,
+      2,
+      2
+     ]
+    },
+    {
+     "art": "text",
+     "text": "Kurz-Check: Wie sicher bist du?",
+     "klein": true
+    },
+    {
+     "art": "einschaetzung",
+     "items": [
+      "Ich höre, ob ein Satz eine Frage oder eine Aussage ist.",
+      "Ich setze . ? ! richtig.",
+      "Ich schreibe nach dem Satzzeichen groß weiter."
+     ],
+     "optionen": [
+      "sicher",
+      "geht so",
+      "noch nicht"
+     ]
+    }
+   ],
+   "lehrer": {
+    "ziel": "Die Jugendlichen unterscheiden Aussage, Frage und Aufforderung an der Satzmelodie und setzen Punkt, Fragezeichen und Ausrufezeichen; nach dem Satzzeichen schreiben sie groß weiter.",
+    "ablauf": [
+     "Einstieg (5 Min.): Ein Satz, dreimal gesprochen: „Du kommst mit.“ / „Du kommst mit?“ / „Komm mit!“ – Was ist anders?",
+     "Regel (10 Min.): Pfeile für die Satzmelodie an die Tafel (nach oben, nach unten); Zeichen zuordnen.",
+     "Übung (20 Min.): Aufgaben 1–3; Aufgabe 4 mit Vorlesen in Paaren.",
+     "Abschluss (10 Min.): Satzzeichen-Gymnastik: Punkt = hinsetzen, Frage = Hand hoch, Ausruf = aufstehen. Kurz-Check."
+    ],
+    "hintergrund": "Satzmelodie (Aussage, Frage, Befehl) und Satzzeichen sind in den Bildungsstandards für Modul 2 als Sprachbetrachtung genannt. Viele Texte der Jugendlichen bestehen aus einem langen Satz ohne Zeichen; die Verbindung von Hören und Schreiben macht die Grenze hörbar. Die Großschreibung nach dem Satzzeichen wiederholt Modul 1.",
+    "differenzierung": {
+     "leichter": "Nur Punkt und Fragezeichen; Sätze vorlesen lassen.",
+     "schwerer": "Einen eigenen Dialog (6 Zeilen) mit allen drei Zeichen schreiben und mit Betonung vorlesen."
+    },
+    "loesungen": [
+     "1) ? · . · ! · ? · . · !",
+     "2) Du kommst mit. – Aussage · Kommst du mit? – Frage · Komm mit! – Aufforderung",
+     "3) Gestern war das Spiel. Kommst du nächstes Mal mit? Es war super!",
+     "4) freie Antworten"
+    ]
+   }
+  },
+  "fr": {
+   "titel": "Punkt, Frage, Ausruf",
+   "untertitel": "Satzmelodie und Satzzeichen – Modul 2, Lektion 4",
+   "bausteine": [
+    {
+     "art": "bilder",
+     "klein": true,
+     "spalten": 3,
+     "bilder": [
+      {
+       "bild": "icon:pencil",
+       "text": "Aussage."
+      },
+      {
+       "bild": "icon:question-mark",
+       "text": "Frage?"
+      },
+      {
+       "bild": "icon:speakerphone",
+       "text": "Aufforderung!"
+      }
+     ]
+    },
+    {
+     "art": "text",
+     "text": "Hör gut hin: Bei einer Frage geht die Stimme nach oben, bei einer Aussage nach unten. Beim Schreiben zeigen das die Satzzeichen."
+    },
+    {
+     "art": "spalten",
+     "verhaeltnis": "2:1",
+     "links": [
+      {
+       "art": "info",
+       "symbol": "merke",
+       "titel": "Satzmelodie und Satzzeichen",
+       "punkte": [
+        "Aussage: Die Stimme geht am Ende nach unten. Am Ende steht ein Punkt (.)",
+        "Frage: Die Stimme geht am Ende nach oben. Am Ende steht ein Fragezeichen (?)",
+        "Aufforderung oder starkes Gefühl: Ausrufezeichen (!)",
+        "Nach . ? ! schreibt man groß weiter."
+       ]
+      }
+     ],
+     "rechts": [
+      {
+       "art": "dialog",
+       "zeilen": [
+        {
+         "wer": "Ben",
+         "text": "Kommst du mit zum Training?"
+        },
+        {
+         "wer": "Sam",
+         "text": "Ja, klar."
+        },
+        {
+         "wer": "Ben",
+         "text": "Dann beeil dich!"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "Setz das richtige Satzzeichen: . ? !"
+    },
+    {
+     "art": "paeckchen",
+     "items": [
+      "Wann beginnt das Training ___",
+      "Ich spiele gern Korbball ___",
+      "Pass auf ___",
+      "Hast du deine Sportschuhe ___",
+      "Das Spiel ist um vier ___",
+      "Wow, was für ein Wurf ___"
+     ],
+     "spalten": 2,
+     "buchstaben": true
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "Lies laut. Was ist es? Verbinde."
+    },
+    {
+     "art": "zuordnen",
+     "links": [
+      "Du kommst mit.",
+      "Kommst du mit?",
+      "Komm mit!"
+     ],
+     "rechts": [
+      "Frage",
+      "Aufforderung",
+      "Aussage"
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 2,
+     "text": "Hier fehlen alle Satzzeichen und Großbuchstaben. Schreib den Text richtig ab."
+    },
+    {
+     "art": "tabelle",
+     "spalten": [
+      "Text ohne Zeichen"
+     ],
+     "zeilen": 0,
+     "werte": [
+      [
+       "gestern war das spiel kommst du nächstes mal mit es war super"
+      ]
+     ],
+     "breiten": [
+      6
+     ]
+    },
+    {
+     "art": "linien",
+     "anzahl": 3
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 3,
+     "text": "Thema Sport: Schreib eine Aussage, eine Frage und eine Aufforderung."
+    },
+    {
+     "art": "tabelle",
+     "spalten": [
+      "Aussage .",
+      "Frage ?",
+      "Aufforderung !"
+     ],
+     "zeilen": 2,
+     "breiten": [
+      2,
+      2,
+      2
+     ]
+    },
+    {
+     "art": "text",
+     "text": "Kurz-Check: Wie sicher bist du?",
+     "klein": true
+    },
+    {
+     "art": "einschaetzung",
+     "items": [
+      "Ich höre, ob ein Satz eine Frage oder eine Aussage ist.",
+      "Ich setze . ? ! richtig.",
+      "Ich schreibe nach dem Satzzeichen groß weiter."
+     ],
+     "optionen": [
+      "sicher",
+      "geht so",
+      "noch nicht"
+     ]
+    }
+   ],
+   "lehrer": {
+    "ziel": "Les jeunes distinguent affirmation, question et injonction grâce à l’intonation et mettent le point, le point d’interrogation et le point d’exclamation ; après le signe, ils continuent avec une majuscule.",
+    "ablauf": [
+     "Entrée (5 min) : une phrase dite trois fois : « Du kommst mit. » / « Du kommst mit? » / « Komm mit! » – Qu’est-ce qui change ?",
+     "Règle (10 min) : flèches d’intonation au tableau (vers le haut, vers le bas) ; associer les signes.",
+     "Exercices (20 min) : exercices 1–3 ; exercice 4 avec lecture à deux.",
+     "Clôture (10 min) : gym de la ponctuation : point = s’asseoir, question = main levée, exclamation = se lever. Mini-bilan."
+    ],
+    "hintergrund": "L’intonation (affirmation, question, ordre) et la ponctuation sont citées dans les standards du module 2 (observation de la langue). Beaucoup de textes des jeunes sont une seule longue phrase sans signe ; relier l’écoute et l’écrit rend la limite audible. La majuscule après le signe reprend le module 1.",
+    "differenzierung": {
+     "leichter": "Seulement le point et le point d’interrogation ; faire lire les phrases à voix haute.",
+     "schwerer": "Écrire un dialogue (6 lignes) avec les trois signes et le lire avec l’intonation."
+    },
+    "loesungen": [
+     "1) ? · . · ! · ? · . · !",
+     "2) Du kommst mit. – affirmation · Kommst du mit? – question · Komm mit! – injonction",
+     "3) Gestern war das Spiel. Kommst du nächstes Mal mit? Es war super!",
+     "4) réponses libres"
+    ]
+   }
+  }
+ },
+ {
+  "id": "de-m2-perfekt-haben",
+  "bereich": "deutsch",
+  "thema": "grammatik",
+  "stufen": [
+   "ES"
+  ],
+  "sozialform": [
+   "einzeln",
+   "klasse"
+  ],
+  "dauer": "45–60 Min.",
+  "eldib": [],
+  "schlagworte": [
+   "Perfekt",
+   "haben",
+   "Partizip",
+   "Vergangenheit",
+   "Satzklammer",
+   "Modul 2"
+  ],
+  "bild": "icon:calendar",
+  "de": {
+   "titel": "Was hast du gemacht?",
+   "untertitel": "Perfekt mit haben – Modul 2, Lektion 5",
+   "bausteine": [
+    {
+     "art": "bilder",
+     "klein": true,
+     "spalten": 3,
+     "bilder": [
+      {
+       "bild": "icon:ball-basketball",
+       "text": "Ich habe gespielt."
+      },
+      {
+       "bild": "icon:headphones",
+       "text": "Ich habe Musik gehört."
+      },
+      {
+       "bild": "icon:shirt",
+       "text": "Ich habe Schuhe gekauft."
+      }
+     ]
+    },
+    {
+     "art": "text",
+     "text": "Am Montag fragen alle: Was hast du am Wochenende gemacht? Wenn man von früher erzählt, nimmt man beim Sprechen meistens das Perfekt."
+    },
+    {
+     "art": "spalten",
+     "verhaeltnis": "2:1",
+     "links": [
+      {
+       "art": "info",
+       "symbol": "merke",
+       "titel": "Perfekt mit haben",
+       "punkte": [
+        "haben an Stelle 2, das Partizip ganz am Ende: Ich habe Korbball gespielt.",
+        "Regelmäßige Verben: ge- + Stamm + -t: spielen → gespielt.",
+        "Stamm auf -t oder -d: ge- … -et: arbeiten → gearbeitet.",
+        "Verben auf -ieren ohne ge-: telefonieren → telefoniert."
+       ]
+      }
+     ],
+     "rechts": [
+      {
+       "art": "tabelle",
+       "spalten": [
+        "1",
+        "2 (haben)",
+        "…",
+        "Ende"
+       ],
+       "zeilen": 0,
+       "werte": [
+        [
+         "Ich",
+         "habe",
+         "Musik",
+         "gehört."
+        ],
+        [
+         "Wir",
+         "haben",
+         "Pasta",
+         "gekocht."
+        ],
+        [
+         "Am Samstag",
+         "hat",
+         "Kenan",
+         "gearbeitet."
+        ]
+       ],
+       "breiten": [
+        1.3,
+        1.3,
+        1.2,
+        1.5
+       ]
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "Bilde das Partizip."
+    },
+    {
+     "art": "paeckchen",
+     "items": [
+      "spielen → ___",
+      "hören → ___",
+      "machen → ___",
+      "kaufen → ___",
+      "arbeiten → ___",
+      "telefonieren → ___"
+     ],
+     "spalten": 3,
+     "buchstaben": true
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "Ergänze habe – hast – hat – haben – habt."
+    },
+    {
+     "art": "paeckchen",
+     "items": [
+      "Ich ___ Musik gehört.",
+      "Du ___ viel gelernt.",
+      "Ben ___ Korbball gespielt.",
+      "Wir ___ Pasta gekocht.",
+      "Ihr ___ getanzt.",
+      "Mila und Lina ___ gezeichnet."
+     ],
+     "spalten": 2,
+     "buchstaben": true
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 2,
+     "text": "Schreib die Sätze im Perfekt."
+    },
+    {
+     "art": "tabelle",
+     "spalten": [
+      "Präsens",
+      "Perfekt"
+     ],
+     "zeilen": 0,
+     "werte": [
+      [
+       "Ich spiele Fußball.",
+       "Ich habe Fußball gespielt."
+      ],
+      [
+       "Ayla übt Bass.",
+       ""
+      ],
+      [
+       "Wir machen Hausaufgaben.",
+       ""
+      ],
+      [
+       "Kenan baut ein Regal.",
+       ""
+      ],
+      [
+       "Du kaufst neue Schuhe.",
+       ""
+      ]
+     ],
+     "breiten": [
+      2.4,
+      3.6
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 3,
+     "text": "Mein Wochenende (echt oder ausgedacht): Schreib fünf Sätze im Perfekt mit haben."
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Am Samstag habe ich …",
+      "Danach habe ich …",
+      "Am Sonntag …",
+      "Am Abend …"
+     ],
+     "linien": 1
+    },
+    {
+     "art": "text",
+     "text": "Kurz-Check: Wie sicher bist du?",
+     "klein": true
+    },
+    {
+     "art": "einschaetzung",
+     "items": [
+      "Ich bilde das Partizip von regelmäßigen Verben.",
+      "Ich stelle haben an Stelle 2 und das Partizip ans Ende.",
+      "Ich erzähle, was ich gemacht habe."
+     ],
+     "optionen": [
+      "sicher",
+      "geht so",
+      "noch nicht"
+     ]
+    }
+   ],
+   "lehrer": {
+    "ziel": "Die Jugendlichen bilden das Perfekt regelmäßiger Verben mit „haben“ und stellen Hilfsverb und Partizip richtig (Satzklammer).",
+    "ablauf": [
+     "Einstieg (5 Min.): Montags-Blitzlicht: „Am Wochenende habe ich … gespielt / gehört / gemacht.“ (echt oder ausgedacht).",
+     "Regel (10 Min.): Satzklammer mit zwei Händen zeigen (haben vorne, Partizip hinten); Partizip-Bildung ge-…-t.",
+     "Übung (20 Min.): Aufgaben 1–3; Aufgabe 4 für alle, die fertig sind.",
+     "Abschluss (10 Min.): Lügen-Spiel: Drei Sätze im Perfekt, einer ist erfunden. Kurz-Check."
+    ],
+    "hintergrund": "Das Perfekt regelmäßiger Verben steht in den Bildungsstandards für Modul 2. Mündlich ist es im Deutschen die wichtigste Vergangenheitsform; Luxemburgisch bildet die Vergangenheit ebenfalls mit Hilfsverb und Partizip, was viele Jugendliche nutzen können. Typische Fehler: Partizip nicht am Satzende, „gespielen“, „getelefoniert“. Wochenend-Erzählungen sind freiwillig; Ausgedachtes ist erlaubt.",
+    "differenzierung": {
+     "leichter": "Nur Ich-Sätze; Partizipien an der Tafel.",
+     "schwerer": "Perfekt mit trennbaren Verben: eingekauft, aufgeräumt, angerufen."
+    },
+    "loesungen": [
+     "1) gespielt · gehört · gemacht · gekauft · gearbeitet · telefoniert",
+     "2) habe · hast · hat · haben · habt · haben",
+     "3) Ayla hat Bass geübt. · Wir haben Hausaufgaben gemacht. · Kenan hat ein Regal gebaut. · Du hast neue Schuhe gekauft.",
+     "4) freie Antworten"
+    ]
+   }
+  },
+  "fr": {
+   "titel": "Was hast du gemacht?",
+   "untertitel": "Perfekt mit haben – Modul 2, Lektion 5",
+   "bausteine": [
+    {
+     "art": "bilder",
+     "klein": true,
+     "spalten": 3,
+     "bilder": [
+      {
+       "bild": "icon:ball-basketball",
+       "text": "Ich habe gespielt."
+      },
+      {
+       "bild": "icon:headphones",
+       "text": "Ich habe Musik gehört."
+      },
+      {
+       "bild": "icon:shirt",
+       "text": "Ich habe Schuhe gekauft."
+      }
+     ]
+    },
+    {
+     "art": "text",
+     "text": "Am Montag fragen alle: Was hast du am Wochenende gemacht? Wenn man von früher erzählt, nimmt man beim Sprechen meistens das Perfekt."
+    },
+    {
+     "art": "spalten",
+     "verhaeltnis": "2:1",
+     "links": [
+      {
+       "art": "info",
+       "symbol": "merke",
+       "titel": "Perfekt mit haben",
+       "punkte": [
+        "haben an Stelle 2, das Partizip ganz am Ende: Ich habe Korbball gespielt.",
+        "Regelmäßige Verben: ge- + Stamm + -t: spielen → gespielt.",
+        "Stamm auf -t oder -d: ge- … -et: arbeiten → gearbeitet.",
+        "Verben auf -ieren ohne ge-: telefonieren → telefoniert."
+       ]
+      }
+     ],
+     "rechts": [
+      {
+       "art": "tabelle",
+       "spalten": [
+        "1",
+        "2 (haben)",
+        "…",
+        "Ende"
+       ],
+       "zeilen": 0,
+       "werte": [
+        [
+         "Ich",
+         "habe",
+         "Musik",
+         "gehört."
+        ],
+        [
+         "Wir",
+         "haben",
+         "Pasta",
+         "gekocht."
+        ],
+        [
+         "Am Samstag",
+         "hat",
+         "Kenan",
+         "gearbeitet."
+        ]
+       ],
+       "breiten": [
+        1.3,
+        1.3,
+        1.2,
+        1.5
+       ]
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "Bilde das Partizip."
+    },
+    {
+     "art": "paeckchen",
+     "items": [
+      "spielen → ___",
+      "hören → ___",
+      "machen → ___",
+      "kaufen → ___",
+      "arbeiten → ___",
+      "telefonieren → ___"
+     ],
+     "spalten": 3,
+     "buchstaben": true
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "Ergänze habe – hast – hat – haben – habt."
+    },
+    {
+     "art": "paeckchen",
+     "items": [
+      "Ich ___ Musik gehört.",
+      "Du ___ viel gelernt.",
+      "Ben ___ Korbball gespielt.",
+      "Wir ___ Pasta gekocht.",
+      "Ihr ___ getanzt.",
+      "Mila und Lina ___ gezeichnet."
+     ],
+     "spalten": 2,
+     "buchstaben": true
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 2,
+     "text": "Schreib die Sätze im Perfekt."
+    },
+    {
+     "art": "tabelle",
+     "spalten": [
+      "Präsens",
+      "Perfekt"
+     ],
+     "zeilen": 0,
+     "werte": [
+      [
+       "Ich spiele Fußball.",
+       "Ich habe Fußball gespielt."
+      ],
+      [
+       "Ayla übt Bass.",
+       ""
+      ],
+      [
+       "Wir machen Hausaufgaben.",
+       ""
+      ],
+      [
+       "Kenan baut ein Regal.",
+       ""
+      ],
+      [
+       "Du kaufst neue Schuhe.",
+       ""
+      ]
+     ],
+     "breiten": [
+      2.4,
+      3.6
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 3,
+     "text": "Mein Wochenende (echt oder ausgedacht): Schreib fünf Sätze im Perfekt mit haben."
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Am Samstag habe ich …",
+      "Danach habe ich …",
+      "Am Sonntag …",
+      "Am Abend …"
+     ],
+     "linien": 1
+    },
+    {
+     "art": "text",
+     "text": "Kurz-Check: Wie sicher bist du?",
+     "klein": true
+    },
+    {
+     "art": "einschaetzung",
+     "items": [
+      "Ich bilde das Partizip von regelmäßigen Verben.",
+      "Ich stelle haben an Stelle 2 und das Partizip ans Ende.",
+      "Ich erzähle, was ich gemacht habe."
+     ],
+     "optionen": [
+      "sicher",
+      "geht so",
+      "noch nicht"
+     ]
+    }
+   ],
+   "lehrer": {
+    "ziel": "Les jeunes forment le parfait des verbes réguliers avec « haben » et placent correctement l’auxiliaire et le participe (construction en tenaille).",
+    "ablauf": [
+     "Entrée (5 min) : tour du lundi : « Am Wochenende habe ich … gespielt / gehört / gemacht. » (vrai ou inventé).",
+     "Règle (10 min) : montrer la tenaille avec les deux mains (haben devant, participe à la fin) ; formation ge-…-t.",
+     "Exercices (20 min) : exercices 1–3 ; exercice 4 pour celles et ceux qui ont fini.",
+     "Clôture (10 min) : jeu du mensonge : trois phrases au parfait, une est inventée. Mini-bilan."
+    ],
+    "hintergrund": "Le parfait des verbes réguliers figure dans les standards du module 2. À l’oral, c’est le temps du passé le plus important en allemand ; le luxembourgeois forme aussi le passé avec auxiliaire et participe, ce dont beaucoup de jeunes peuvent profiter. Erreurs fréquentes : participe pas à la fin, « gespielen », « getelefoniert ». Raconter son week-end reste volontaire ; l’inventé est permis.",
+    "differenzierung": {
+     "leichter": "Seulement des phrases avec « ich » ; participes au tableau.",
+     "schwerer": "Parfait des verbes à particule séparable : eingekauft, aufgeräumt, angerufen."
+    },
+    "loesungen": [
+     "1) gespielt · gehört · gemacht · gekauft · gearbeitet · telefoniert",
+     "2) habe · hast · hat · haben · habt · haben",
+     "3) Ayla hat Bass geübt. · Wir haben Hausaufgaben gemacht. · Kenan hat ein Regal gebaut. · Du hast neue Schuhe gekauft.",
+     "4) réponses libres"
+    ]
+   }
+  }
+ },
+ {
+  "id": "de-m2-perfekt-sein",
+  "bereich": "deutsch",
+  "thema": "grammatik",
+  "stufen": [
+   "ES"
+  ],
+  "sozialform": [
+   "einzeln",
+   "klasse"
+  ],
+  "dauer": "45–60 Min.",
+  "eldib": [],
+  "schlagworte": [
+   "Perfekt",
+   "sein",
+   "unregelmäßige Verben",
+   "Partizip",
+   "Ausflug",
+   "Modul 2"
+  ],
+  "bild": "icon:bus",
+  "de": {
+   "titel": "Ich bin gefahren",
+   "untertitel": "Perfekt mit sein und unregelmäßige Verben – Modul 2, Lektion 6",
+   "bausteine": [
+    {
+     "art": "bilder",
+     "klein": true,
+     "spalten": 3,
+     "bilder": [
+      {
+       "bild": "icon:bus",
+       "text": "Ich bin gefahren."
+      },
+      {
+       "bild": "icon:run",
+       "text": "Ich bin gelaufen."
+      },
+      {
+       "bild": "icon:coffee",
+       "text": "Ich habe getrunken."
+      }
+     ]
+    },
+    {
+     "art": "text",
+     "text": "Manche Verben bilden das Perfekt mit „sein“. Und viele wichtige Verben sind unregelmäßig – die lernst du am besten als Paar."
+    },
+    {
+     "art": "spalten",
+     "verhaeltnis": "2:1",
+     "links": [
+      {
+       "art": "info",
+       "symbol": "merke",
+       "titel": "sein oder haben?",
+       "punkte": [
+        "sein bei Bewegung von A nach B: gehen, fahren, kommen, laufen, fliegen → Ich bin gefahren.",
+        "sein auch bei bleiben: Ich bin zu Hause geblieben.",
+        "Fast alle anderen Verben: haben.",
+        "Unregelmäßig: oft ge- … -en: essen → gegessen, sehen → gesehen."
+       ]
+      }
+     ],
+     "rechts": [
+      {
+       "art": "tabelle",
+       "spalten": [
+        "Infinitiv",
+        "Perfekt"
+       ],
+       "zeilen": 0,
+       "werte": [
+        [
+         "fahren",
+         "ist gefahren"
+        ],
+        [
+         "gehen",
+         "ist gegangen"
+        ],
+        [
+         "essen",
+         "hat gegessen"
+        ],
+        [
+         "trinken",
+         "hat getrunken"
+        ],
+        [
+         "schreiben",
+         "hat geschrieben"
+        ]
+       ],
+       "breiten": [
+        1.4,
+        2
+       ]
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "sein oder haben? Ergänze bin – bist – ist – habe – hat."
+    },
+    {
+     "art": "paeckchen",
+     "items": [
+      "Ich ___ nach Trier gefahren.",
+      "Er ___ eine Pizza gegessen.",
+      "Du ___ spät gekommen.",
+      "Ich ___ einen Film gesehen.",
+      "Sie ___ zu Hause geblieben.",
+      "Ich ___ zur Schule gelaufen."
+     ],
+     "spalten": 2,
+     "buchstaben": true
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "Verbinde Infinitiv und Partizip."
+    },
+    {
+     "art": "zuordnen",
+     "links": [
+      "lesen",
+      "schreiben",
+      "trinken",
+      "gehen"
+     ],
+     "rechts": [
+      "gegangen",
+      "gelesen",
+      "getrunken",
+      "geschrieben"
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 2,
+     "text": "Lies Milas Nachricht. Schreib alle Perfekt-Formen in die Tabelle."
+    },
+    {
+     "art": "text",
+     "text": "„Am Samstag bin ich mit dem Bus nach Luxemburg gefahren. Ich habe ein Eis gegessen und bin lange durch die Altstadt gegangen. Am Abend habe ich eine Serie gesehen.“"
+    },
+    {
+     "art": "tabelle",
+     "spalten": [
+      "mit sein",
+      "mit haben"
+     ],
+     "zeilen": 2,
+     "breiten": [
+      3,
+      3
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 3,
+     "text": "Ein Ausflug (echt oder ausgedacht): Schreib fünf Sätze im Perfekt. Mindestens zwei mit „sein“."
+    },
+    {
+     "art": "linien",
+     "anzahl": 5
+    },
+    {
+     "art": "text",
+     "text": "Kurz-Check: Wie sicher bist du?",
+     "klein": true
+    },
+    {
+     "art": "einschaetzung",
+     "items": [
+      "Ich weiß, wann das Perfekt mit „sein“ gebildet wird.",
+      "Ich kenne zehn unregelmäßige Partizipien.",
+      "Ich erzähle von einem Ausflug im Perfekt."
+     ],
+     "optionen": [
+      "sicher",
+      "geht so",
+      "noch nicht"
+     ]
+    }
+   ],
+   "lehrer": {
+    "ziel": "Die Jugendlichen bilden das Perfekt von Bewegungsverben und „bleiben“ mit „sein“ und verwenden häufige unregelmäßige Partizipien (gegessen, getrunken, gesehen, gelesen, geschrieben, gegangen).",
+    "ablauf": [
+     "Einstieg (5 Min.): Pantomime: Eine Person geht, fährt Rad, isst. Alle sagen, was sie gemacht hat – mit „ist“ oder „hat“?",
+     "Regel (10 Min.): Bewegung von A nach B = sein (Pfeil an der Tafel); Partizip-Paare als Karten.",
+     "Übung (20 Min.): Aufgaben 1–3; Aufgabe 4 als Ausflugsbericht.",
+     "Abschluss (10 Min.): Memory mit Infinitiv-/Partizip-Karten in Gruppen. Kurz-Check."
+    ],
+    "hintergrund": "Die Bildungsstandards nennen für Modul 2 das Perfekt regelmäßiger und einiger unregelmäßiger Verben. Die Unterscheidung haben/sein über die Bewegung (Ortswechsel) ist eine verlässliche Faustregel für dieses Niveau. Französischsprachige Jugendliche kennen die Unterscheidung avoir/être, die sich zum Teil deckt (je suis allé – ich bin gegangen) – ein guter Anknüpfungspunkt.",
+    "differenzierung": {
+     "leichter": "Nur fahren, gehen, kommen (sein) und essen, trinken (haben).",
+     "schwerer": "Liste mit 20 unregelmäßigen Verben anlegen und einen Ausflugsbericht mit mindestens acht davon schreiben."
+    },
+    "loesungen": [
+     "1) bin · hat · bist · habe · ist · bin",
+     "2) lesen – gelesen · schreiben – geschrieben · trinken – getrunken · gehen – gegangen",
+     "3) mit sein: bin gefahren, bin gegangen · mit haben: habe gegessen, habe gesehen",
+     "4) freie Antworten"
+    ]
+   }
+  },
+  "fr": {
+   "titel": "Ich bin gefahren",
+   "untertitel": "Perfekt mit sein und unregelmäßige Verben – Modul 2, Lektion 6",
+   "bausteine": [
+    {
+     "art": "bilder",
+     "klein": true,
+     "spalten": 3,
+     "bilder": [
+      {
+       "bild": "icon:bus",
+       "text": "Ich bin gefahren."
+      },
+      {
+       "bild": "icon:run",
+       "text": "Ich bin gelaufen."
+      },
+      {
+       "bild": "icon:coffee",
+       "text": "Ich habe getrunken."
+      }
+     ]
+    },
+    {
+     "art": "text",
+     "text": "Manche Verben bilden das Perfekt mit „sein“. Und viele wichtige Verben sind unregelmäßig – die lernst du am besten als Paar."
+    },
+    {
+     "art": "spalten",
+     "verhaeltnis": "2:1",
+     "links": [
+      {
+       "art": "info",
+       "symbol": "merke",
+       "titel": "sein oder haben?",
+       "punkte": [
+        "sein bei Bewegung von A nach B: gehen, fahren, kommen, laufen, fliegen → Ich bin gefahren.",
+        "sein auch bei bleiben: Ich bin zu Hause geblieben.",
+        "Fast alle anderen Verben: haben.",
+        "Unregelmäßig: oft ge- … -en: essen → gegessen, sehen → gesehen."
+       ]
+      }
+     ],
+     "rechts": [
+      {
+       "art": "tabelle",
+       "spalten": [
+        "Infinitiv",
+        "Perfekt"
+       ],
+       "zeilen": 0,
+       "werte": [
+        [
+         "fahren",
+         "ist gefahren"
+        ],
+        [
+         "gehen",
+         "ist gegangen"
+        ],
+        [
+         "essen",
+         "hat gegessen"
+        ],
+        [
+         "trinken",
+         "hat getrunken"
+        ],
+        [
+         "schreiben",
+         "hat geschrieben"
+        ]
+       ],
+       "breiten": [
+        1.4,
+        2
+       ]
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "sein oder haben? Ergänze bin – bist – ist – habe – hat."
+    },
+    {
+     "art": "paeckchen",
+     "items": [
+      "Ich ___ nach Trier gefahren.",
+      "Er ___ eine Pizza gegessen.",
+      "Du ___ spät gekommen.",
+      "Ich ___ einen Film gesehen.",
+      "Sie ___ zu Hause geblieben.",
+      "Ich ___ zur Schule gelaufen."
+     ],
+     "spalten": 2,
+     "buchstaben": true
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "Verbinde Infinitiv und Partizip."
+    },
+    {
+     "art": "zuordnen",
+     "links": [
+      "lesen",
+      "schreiben",
+      "trinken",
+      "gehen"
+     ],
+     "rechts": [
+      "gegangen",
+      "gelesen",
+      "getrunken",
+      "geschrieben"
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 2,
+     "text": "Lies Milas Nachricht. Schreib alle Perfekt-Formen in die Tabelle."
+    },
+    {
+     "art": "text",
+     "text": "„Am Samstag bin ich mit dem Bus nach Luxemburg gefahren. Ich habe ein Eis gegessen und bin lange durch die Altstadt gegangen. Am Abend habe ich eine Serie gesehen.“"
+    },
+    {
+     "art": "tabelle",
+     "spalten": [
+      "mit sein",
+      "mit haben"
+     ],
+     "zeilen": 2,
+     "breiten": [
+      3,
+      3
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 3,
+     "text": "Ein Ausflug (echt oder ausgedacht): Schreib fünf Sätze im Perfekt. Mindestens zwei mit „sein“."
+    },
+    {
+     "art": "linien",
+     "anzahl": 5
+    },
+    {
+     "art": "text",
+     "text": "Kurz-Check: Wie sicher bist du?",
+     "klein": true
+    },
+    {
+     "art": "einschaetzung",
+     "items": [
+      "Ich weiß, wann das Perfekt mit „sein“ gebildet wird.",
+      "Ich kenne zehn unregelmäßige Partizipien.",
+      "Ich erzähle von einem Ausflug im Perfekt."
+     ],
+     "optionen": [
+      "sicher",
+      "geht so",
+      "noch nicht"
+     ]
+    }
+   ],
+   "lehrer": {
+    "ziel": "Les jeunes forment le parfait des verbes de déplacement et de « bleiben » avec « sein » et utilisent des participes irréguliers fréquents (gegessen, getrunken, gesehen, gelesen, geschrieben, gegangen).",
+    "ablauf": [
+     "Entrée (5 min) : mime : une personne marche, fait du vélo, mange. Tout le monde dit ce qu’elle a fait – avec « ist » ou « hat » ?",
+     "Règle (10 min) : déplacement de A à B = sein (flèche au tableau) ; paires de participes sur cartes.",
+     "Exercices (20 min) : exercices 1–3 ; exercice 4 comme récit d’excursion.",
+     "Clôture (10 min) : memory infinitif/participe en groupes. Mini-bilan."
+    ],
+    "hintergrund": "Les standards citent pour le module 2 le parfait des verbes réguliers et de quelques verbes irréguliers. Distinguer haben/sein par le déplacement (changement de lieu) est une règle simple et fiable à ce niveau. Les jeunes francophones connaissent la distinction avoir/être, qui correspond en partie (je suis allé – ich bin gegangen) – un bon point d’appui.",
+    "differenzierung": {
+     "leichter": "Seulement fahren, gehen, kommen (sein) et essen, trinken (haben).",
+     "schwerer": "Établir une liste de 20 verbes irréguliers et écrire un récit d’excursion avec au moins huit d’entre eux."
+    },
+    "loesungen": [
+     "1) bin · hat · bist · habe · ist · bin",
+     "2) lesen – gelesen · schreiben – geschrieben · trinken – getrunken · gehen – gegangen",
+     "3) avec sein : bin gefahren, bin gegangen · avec haben : habe gegessen, habe gesehen",
+     "4) réponses libres"
+    ]
+   }
+  }
+ },
+ {
+  "id": "de-m2-erfinder",
+  "bereich": "deutsch",
+  "thema": "lesen",
+  "stufen": [
+   "ES"
+  ],
+  "sozialform": [
+   "einzeln",
+   "klasse"
+  ],
+  "dauer": "45–60 Min.",
+  "eldib": [],
+  "schlagworte": [
+   "Biografie",
+   "Lebenslauf",
+   "Erfindungen",
+   "Jahreszahlen",
+   "Lesen",
+   "Modul 2"
+  ],
+  "bild": "icon:bulb",
+  "de": {
+   "titel": "Wer hat das erfunden?",
+   "untertitel": "Kurze Biografien – Modul 2, Lektion 7",
+   "bausteine": [
+    {
+     "art": "bilder",
+     "klein": true,
+     "spalten": 3,
+     "bilder": [
+      {
+       "bild": "icon:car",
+       "text": "das Auto"
+      },
+      {
+       "bild": "icon:coffee",
+       "text": "der Kaffeefilter"
+      },
+      {
+       "bild": "icon:device-desktop",
+       "text": "der Computer"
+      }
+     ]
+    },
+    {
+     "art": "text",
+     "text": "Hinter vielen Dingen im Alltag steckt ein Mensch mit einer Idee. Eine kurze Biografie erzählt sein Leben – der Reihe nach."
+    },
+    {
+     "art": "spalten",
+     "verhaeltnis": "2:1",
+     "links": [
+      {
+       "art": "info",
+       "symbol": "merke",
+       "titel": "Eine kurze Biografie",
+       "punkte": [
+        "Name, Geburtsjahr, Ort: Melitta Bentz wurde 1873 in Dresden geboren.",
+        "Was hat die Person gemacht? 1908 hat sie den Kaffeefilter erfunden.",
+        "Der Reihe nach: zuerst … dann … später …",
+        "Jahreszahlen: 1908 = neunzehnhundertacht."
+       ]
+      }
+     ],
+     "rechts": [
+      {
+       "art": "info",
+       "symbol": "tipp",
+       "titel": "Lebenslauf",
+       "text": "Ein Lebenslauf ist eine Biografie in Stichworten: Jahr – was passiert ist. So einen schreibst du später für deine Bewerbung."
+      }
+     ]
+    },
+    {
+     "art": "text",
+     "text": "Bertha Benz (1849–1944) wurde in Pforzheim geboren. Carl Benz hat das erste Auto gebaut. 1888 ist Bertha Benz damit über 100 Kilometer von Mannheim nach Pforzheim gefahren – die erste lange Autofahrt der Welt."
+    },
+    {
+     "art": "text",
+     "text": "Melitta Bentz (1873–1950) kam aus Dresden. Ihr Kaffee war oft bitter und voller Krümel. 1908 hat sie aus Löschpapier und einem Topf mit Löchern den ersten Kaffeefilter gebaut."
+    },
+    {
+     "art": "text",
+     "text": "Konrad Zuse (1910–1995) war Ingenieur in Berlin. Lange Rechnungen fand er langweilig. 1941 hat er die Z3 gebaut: den ersten programmierbaren Computer, der funktioniert hat."
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "Lies die drei Biografien. Wer hat was gemacht? Verbinde."
+    },
+    {
+     "art": "zuordnen",
+     "links": [
+      "Bertha Benz",
+      "Melitta Bentz",
+      "Konrad Zuse"
+     ],
+     "rechts": [
+      "Kaffeefilter",
+      "lange Autofahrt",
+      "Computer Z3"
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 2,
+     "text": "Richtig oder falsch? Korrigiere die falschen Sätze."
+    },
+    {
+     "art": "tabelle",
+     "spalten": [
+      "Satz",
+      "r / f",
+      "Richtig ist …"
+     ],
+     "zeilen": 0,
+     "werte": [
+      [
+       "Melitta Bentz kam aus Berlin.",
+       "",
+       ""
+      ],
+      [
+       "Bertha Benz ist 1888 nach Pforzheim gefahren.",
+       "",
+       ""
+      ],
+      [
+       "Konrad Zuse hat 1941 die Z3 gebaut.",
+       "",
+       ""
+      ],
+      [
+       "Den Kaffeefilter gibt es seit 1980.",
+       "",
+       ""
+      ]
+     ],
+     "breiten": [
+      3,
+      0.8,
+      2.4
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 2,
+     "text": "Mach einen Lebenslauf in Stichworten für eine der drei Personen."
+    },
+    {
+     "art": "tabelle",
+     "spalten": [
+      "Jahr",
+      "Was ist passiert?"
+     ],
+     "zeilen": 4,
+     "breiten": [
+      1.2,
+      4.8
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 3,
+     "text": "Recherche: Wer hat … erfunden? (z. B. das Fahrrad, die Jeans). Schreib eine Kurz-Biografie mit drei bis fünf Sätzen."
+    },
+    {
+     "art": "linien",
+     "anzahl": 5
+    },
+    {
+     "art": "text",
+     "text": "Kurz-Check: Wie sicher bist du?",
+     "klein": true
+    },
+    {
+     "art": "einschaetzung",
+     "items": [
+      "Ich verstehe eine kurze Biografie.",
+      "Ich ordne Ereignisse nach der Zeit.",
+      "Ich lese und schreibe Jahreszahlen."
+     ],
+     "optionen": [
+      "sicher",
+      "geht so",
+      "noch nicht"
+     ]
+    }
+   ],
+   "lehrer": {
+    "ziel": "Die Jugendlichen entnehmen kurzen Biografien die wichtigsten Informationen (wer, wann, wo, was), ordnen sie zeitlich und notieren sie als Lebenslauf in Stichworten.",
+    "ablauf": [
+     "Einstieg (5 Min.): Drei Dinge auf dem Tisch (Kaffeefilter, Spielzeugauto, Handy): „Wer hat das erfunden?“ – Vermutungen sammeln.",
+     "Regel (10 Min.): Merkkasten; Jahreszahlen laut lesen; Zeitstrahl an der Tafel.",
+     "Übung (20 Min.): Texte lesen, Aufgaben 1–3; Aufgabe 4 als Recherche (Bibliothek oder Internet).",
+     "Abschluss (10 Min.): Erfinder-Quiz: Eine Person liest drei Stichworte vor, die anderen raten. Kurz-Check."
+    ],
+    "hintergrund": "Erfindungen und Entdeckungen sowie kurze Biografien sind Themenvorschläge der Bildungsstandards für Modul 2; der Aufbau eines Lebenslaufs ist als Sprachbetrachtung genannt. Der Lebenslauf in Stichworten bereitet die Bewerbungsunterlagen in Modul 6 vor. Die drei Biografien sind bewusst kurz; die Jahreszahlen sind belegt (Bertha Benz 1888, Melitta Bentz 1908, Konrad Zuse 1941). Zur Recherche: Karl Drais (Laufmaschine, 1817); Levi Strauss und Jacob Davis (Jeans, 1873).",
+    "differenzierung": {
+     "leichter": "Nur eine Biografie lesen; Aufgabe 1 und 2.",
+     "schwerer": "Eine Erfinderin oder einen Erfinder aus Luxemburg oder der Großregion recherchieren und vorstellen."
+    },
+    "loesungen": [
+     "1) Bertha Benz – lange Autofahrt · Melitta Bentz – Kaffeefilter · Konrad Zuse – Computer Z3",
+     "2) f – Sie kam aus Dresden. · r · r · f – Den Kaffeefilter gibt es seit 1908.",
+     "3) z. B. Bertha Benz: 1849 in Pforzheim geboren · 1888 erste lange Autofahrt (Mannheim – Pforzheim) · 1944 gestorben",
+     "4) freie Antworten"
+    ]
+   }
+  },
+  "fr": {
+   "titel": "Wer hat das erfunden?",
+   "untertitel": "Kurze Biografien – Modul 2, Lektion 7",
+   "bausteine": [
+    {
+     "art": "bilder",
+     "klein": true,
+     "spalten": 3,
+     "bilder": [
+      {
+       "bild": "icon:car",
+       "text": "das Auto"
+      },
+      {
+       "bild": "icon:coffee",
+       "text": "der Kaffeefilter"
+      },
+      {
+       "bild": "icon:device-desktop",
+       "text": "der Computer"
+      }
+     ]
+    },
+    {
+     "art": "text",
+     "text": "Hinter vielen Dingen im Alltag steckt ein Mensch mit einer Idee. Eine kurze Biografie erzählt sein Leben – der Reihe nach."
+    },
+    {
+     "art": "spalten",
+     "verhaeltnis": "2:1",
+     "links": [
+      {
+       "art": "info",
+       "symbol": "merke",
+       "titel": "Eine kurze Biografie",
+       "punkte": [
+        "Name, Geburtsjahr, Ort: Melitta Bentz wurde 1873 in Dresden geboren.",
+        "Was hat die Person gemacht? 1908 hat sie den Kaffeefilter erfunden.",
+        "Der Reihe nach: zuerst … dann … später …",
+        "Jahreszahlen: 1908 = neunzehnhundertacht."
+       ]
+      }
+     ],
+     "rechts": [
+      {
+       "art": "info",
+       "symbol": "tipp",
+       "titel": "Lebenslauf",
+       "text": "Ein Lebenslauf ist eine Biografie in Stichworten: Jahr – was passiert ist. So einen schreibst du später für deine Bewerbung."
+      }
+     ]
+    },
+    {
+     "art": "text",
+     "text": "Bertha Benz (1849–1944) wurde in Pforzheim geboren. Carl Benz hat das erste Auto gebaut. 1888 ist Bertha Benz damit über 100 Kilometer von Mannheim nach Pforzheim gefahren – die erste lange Autofahrt der Welt."
+    },
+    {
+     "art": "text",
+     "text": "Melitta Bentz (1873–1950) kam aus Dresden. Ihr Kaffee war oft bitter und voller Krümel. 1908 hat sie aus Löschpapier und einem Topf mit Löchern den ersten Kaffeefilter gebaut."
+    },
+    {
+     "art": "text",
+     "text": "Konrad Zuse (1910–1995) war Ingenieur in Berlin. Lange Rechnungen fand er langweilig. 1941 hat er die Z3 gebaut: den ersten programmierbaren Computer, der funktioniert hat."
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "Lies die drei Biografien. Wer hat was gemacht? Verbinde."
+    },
+    {
+     "art": "zuordnen",
+     "links": [
+      "Bertha Benz",
+      "Melitta Bentz",
+      "Konrad Zuse"
+     ],
+     "rechts": [
+      "Kaffeefilter",
+      "lange Autofahrt",
+      "Computer Z3"
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 2,
+     "text": "Richtig oder falsch? Korrigiere die falschen Sätze."
+    },
+    {
+     "art": "tabelle",
+     "spalten": [
+      "Satz",
+      "r / f",
+      "Richtig ist …"
+     ],
+     "zeilen": 0,
+     "werte": [
+      [
+       "Melitta Bentz kam aus Berlin.",
+       "",
+       ""
+      ],
+      [
+       "Bertha Benz ist 1888 nach Pforzheim gefahren.",
+       "",
+       ""
+      ],
+      [
+       "Konrad Zuse hat 1941 die Z3 gebaut.",
+       "",
+       ""
+      ],
+      [
+       "Den Kaffeefilter gibt es seit 1980.",
+       "",
+       ""
+      ]
+     ],
+     "breiten": [
+      3,
+      0.8,
+      2.4
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 2,
+     "text": "Mach einen Lebenslauf in Stichworten für eine der drei Personen."
+    },
+    {
+     "art": "tabelle",
+     "spalten": [
+      "Jahr",
+      "Was ist passiert?"
+     ],
+     "zeilen": 4,
+     "breiten": [
+      1.2,
+      4.8
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 3,
+     "text": "Recherche: Wer hat … erfunden? (z. B. das Fahrrad, die Jeans). Schreib eine Kurz-Biografie mit drei bis fünf Sätzen."
+    },
+    {
+     "art": "linien",
+     "anzahl": 5
+    },
+    {
+     "art": "text",
+     "text": "Kurz-Check: Wie sicher bist du?",
+     "klein": true
+    },
+    {
+     "art": "einschaetzung",
+     "items": [
+      "Ich verstehe eine kurze Biografie.",
+      "Ich ordne Ereignisse nach der Zeit.",
+      "Ich lese und schreibe Jahreszahlen."
+     ],
+     "optionen": [
+      "sicher",
+      "geht so",
+      "noch nicht"
+     ]
+    }
+   ],
+   "lehrer": {
+    "ziel": "Les jeunes relèvent dans de courtes biographies les informations essentielles (qui, quand, où, quoi), les ordonnent dans le temps et les notent sous forme de CV en mots-clés.",
+    "ablauf": [
+     "Entrée (5 min) : trois objets sur la table (filtre à café, petite voiture, téléphone) : « Qui a inventé cela ? » – recueillir des hypothèses.",
+     "Règle (10 min) : encadré ; lire les dates à voix haute ; frise chronologique au tableau.",
+     "Exercices (20 min) : lire les textes, exercices 1–3 ; exercice 4 en recherche (CDI ou internet).",
+     "Clôture (10 min) : quiz des inventeurs : une personne lit trois mots-clés, les autres devinent. Mini-bilan."
+    ],
+    "hintergrund": "Inventions, découvertes et courtes biographies sont des thèmes proposés par les standards pour le module 2 ; la structure d’un CV y est citée (observation de la langue). Le CV en mots-clés prépare le dossier de candidature du module 6. Les trois biographies sont volontairement courtes ; les dates sont attestées (Bertha Benz 1888, Melitta Bentz 1908, Konrad Zuse 1941). Pour la recherche : Karl Drais (draisienne, 1817) ; Levi Strauss et Jacob Davis (jeans, 1873).",
+    "differenzierung": {
+     "leichter": "Lire une seule biographie ; exercices 1 et 2.",
+     "schwerer": "Rechercher et présenter une inventrice ou un inventeur du Luxembourg ou de la Grande Région."
+    },
+    "loesungen": [
+     "1) Bertha Benz – lange Autofahrt · Melitta Bentz – Kaffeefilter · Konrad Zuse – Computer Z3",
+     "2) f – Sie kam aus Dresden. · r · r · f – Den Kaffeefilter gibt es seit 1908.",
+     "3) p. ex. Bertha Benz : 1849 in Pforzheim geboren · 1888 erste lange Autofahrt (Mannheim – Pforzheim) · 1944 gestorben",
+     "4) réponses libres"
+    ]
+   }
+  }
+ },
+ {
+  "id": "de-m2-sport",
+  "bereich": "deutsch",
+  "thema": "grammatik",
+  "stufen": [
+   "ES"
+  ],
+  "sozialform": [
+   "einzeln",
+   "klasse"
+  ],
+  "dauer": "45–60 Min.",
+  "eldib": [],
+  "schlagworte": [
+   "Personalpronomen",
+   "Akkusativ",
+   "Dativ",
+   "Sport",
+   "ihn",
+   "ihm",
+   "Modul 2"
+  ],
+  "bild": "icon:trophy",
+  "de": {
+   "titel": "Gib ihm den Ball!",
+   "untertitel": "Pronomen: wen oder wem? – Modul 2, Lektion 8",
+   "bausteine": [
+    {
+     "art": "bilder",
+     "klein": true,
+     "spalten": 3,
+     "bilder": [
+      {
+       "bild": "icon:ball-basketball",
+       "text": "Ich sehe ihn."
+      },
+      {
+       "bild": "icon:users",
+       "text": "Ich helfe ihr."
+      },
+      {
+       "bild": "icon:trophy",
+       "text": "Wir gratulieren ihnen."
+      }
+     ]
+    },
+    {
+     "art": "text",
+     "text": "Im Sport geht alles schnell: „Gib ihm den Ball!“ Damit man Namen nicht immer wiederholt, gibt es Pronomen. Lern sie erkennen!"
+    },
+    {
+     "art": "spalten",
+     "verhaeltnis": "2:1",
+     "links": [
+      {
+       "art": "info",
+       "symbol": "merke",
+       "titel": "Pronomen: wen oder wem?",
+       "punkte": [
+        "Wen? (Akkusativ): mich, dich, ihn, sie, es, uns, euch, sie",
+        "Wem? (Dativ): mir, dir, ihm, ihr, ihm, uns, euch, ihnen",
+        "Ich sehe den Trainer. → Ich sehe ihn.",
+        "Ich gebe dem Trainer den Ball. → Ich gebe ihm den Ball."
+       ]
+      }
+     ],
+     "rechts": [
+      {
+       "art": "tabelle",
+       "spalten": [
+        "",
+        "wen?",
+        "wem?"
+       ],
+       "zeilen": 0,
+       "werte": [
+        [
+         "der Trainer",
+         "ihn",
+         "ihm"
+        ],
+        [
+         "die Trainerin",
+         "sie",
+         "ihr"
+        ],
+        [
+         "das Team",
+         "es",
+         "ihm"
+        ],
+        [
+         "die Fans",
+         "sie",
+         "ihnen"
+        ]
+       ],
+       "breiten": [
+        1.6,
+        1,
+        1
+       ]
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "Ersetze das Nomen durch ihn, sie oder es."
+    },
+    {
+     "art": "paeckchen",
+     "items": [
+      "Ich sehe den Ball. → Ich sehe ___.",
+      "Wir fragen die Trainerin. → Wir fragen ___.",
+      "Ben ruft das Team. → Ben ruft ___.",
+      "Ich kenne den Schiedsrichter. → Ich kenne ___.",
+      "Du findest die Halle. → Du findest ___.",
+      "Sie trifft den Korb. → Sie trifft ___."
+     ],
+     "spalten": 1,
+     "buchstaben": true
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "ihm oder ihr? Verbinde."
+    },
+    {
+     "art": "zuordnen",
+     "links": [
+      "Ich gebe Ben den Ball.",
+      "Ich helfe Ayla.",
+      "Wir danken dem Trainer.",
+      "Ich schreibe Mila."
+     ],
+     "rechts": [
+      "Ich helfe ihr.",
+      "Ich gebe ihm den Ball.",
+      "Ich schreibe ihr.",
+      "Wir danken ihm."
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 2,
+     "text": "Unterstreiche das Pronomen. Fragt man wen? oder wem? Kreuze an."
+    },
+    {
+     "art": "tabelle",
+     "spalten": [
+      "Satz",
+      "wen?",
+      "wem?"
+     ],
+     "zeilen": 0,
+     "werte": [
+      [
+       "Pass ihm den Ball!",
+       "",
+       ""
+      ],
+      [
+       "Ich sehe dich beim Spiel.",
+       "",
+       ""
+      ],
+      [
+       "Hilf mir bitte!",
+       "",
+       ""
+      ],
+      [
+       "Der Trainer lobt uns.",
+       "",
+       ""
+      ]
+     ],
+     "breiten": [
+      3.6,
+      1,
+      1
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 3,
+     "text": "Schreib einen kurzen Spielbericht (echt oder ausgedacht) mit mindestens drei Pronomen."
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Das Spiel war …",
+      "Ben war frei, also habe ich ihm …",
+      "Die Trainerin hat uns …"
+     ],
+     "linien": 1
+    },
+    {
+     "art": "text",
+     "text": "Kurz-Check: Wie sicher bist du?",
+     "klein": true
+    },
+    {
+     "art": "einschaetzung",
+     "items": [
+      "Ich erkenne Pronomen im Satz.",
+      "Ich unterscheide wen? (ihn) und wem? (ihm).",
+      "Ich benutze Pronomen, statt Namen zu wiederholen."
+     ],
+     "optionen": [
+      "sicher",
+      "geht so",
+      "noch nicht"
+     ]
+    }
+   ],
+   "lehrer": {
+    "ziel": "Die Jugendlichen erkennen Personalpronomen im Akkusativ und Dativ, unterscheiden sie über die Fragen „wen?“ und „wem?“ und ersetzen Nomen durch Pronomen.",
+    "ablauf": [
+     "Einstieg (5 Min.): Ball im Kreis: „Ich gebe dir den Ball.“ – „Ich gebe ihm den Ball.“ (auf eine dritte Person zeigen).",
+     "Regel (10 Min.): Tabelle wen?/wem?; Verben mit Dativ sammeln (helfen, danken, gratulieren, geben).",
+     "Übung (20 Min.): Aufgaben 1–3; Aufgabe 4 für alle, die fertig sind.",
+     "Abschluss (10 Min.): Pronomen-Ping-Pong: Eine Person sagt einen Satz mit Namen, die nächste wiederholt ihn mit Pronomen. Kurz-Check."
+    ],
+    "hintergrund": "Die Bildungsstandards nennen für Modul 2 das Erkennen der Personalpronomen im Dativ und Akkusativ; das sichere Anwenden folgt in Modul 5. Im Vordergrund steht deshalb das Verstehen und Ersetzen, nicht das Auswendiglernen der ganzen Tabelle. Sport-Situationen machen die Pronomen sinnvoll: Wer schnell spricht, ersetzt Namen.",
+    "differenzierung": {
+     "leichter": "Nur ihn/sie/es und ihm/ihr; Tabelle als Hilfe liegen lassen.",
+     "schwerer": "Sätze mit zwei Pronomen: Ich gebe ihn ihm. Gib ihn mir!"
+    },
+    "loesungen": [
+     "1) ihn · sie · es · ihn · sie · ihn",
+     "2) Ich gebe Ben den Ball. – Ich gebe ihm den Ball. · Ich helfe Ayla. – Ich helfe ihr. · Wir danken dem Trainer. – Wir danken ihm. · Ich schreibe Mila. – Ich schreibe ihr.",
+     "3) ihm – wem? · dich – wen? · mir – wem? · uns – wen?",
+     "4) freie Antworten"
+    ]
+   }
+  },
+  "fr": {
+   "titel": "Gib ihm den Ball!",
+   "untertitel": "Pronomen: wen oder wem? – Modul 2, Lektion 8",
+   "bausteine": [
+    {
+     "art": "bilder",
+     "klein": true,
+     "spalten": 3,
+     "bilder": [
+      {
+       "bild": "icon:ball-basketball",
+       "text": "Ich sehe ihn."
+      },
+      {
+       "bild": "icon:users",
+       "text": "Ich helfe ihr."
+      },
+      {
+       "bild": "icon:trophy",
+       "text": "Wir gratulieren ihnen."
+      }
+     ]
+    },
+    {
+     "art": "text",
+     "text": "Im Sport geht alles schnell: „Gib ihm den Ball!“ Damit man Namen nicht immer wiederholt, gibt es Pronomen. Lern sie erkennen!"
+    },
+    {
+     "art": "spalten",
+     "verhaeltnis": "2:1",
+     "links": [
+      {
+       "art": "info",
+       "symbol": "merke",
+       "titel": "Pronomen: wen oder wem?",
+       "punkte": [
+        "Wen? (Akkusativ): mich, dich, ihn, sie, es, uns, euch, sie",
+        "Wem? (Dativ): mir, dir, ihm, ihr, ihm, uns, euch, ihnen",
+        "Ich sehe den Trainer. → Ich sehe ihn.",
+        "Ich gebe dem Trainer den Ball. → Ich gebe ihm den Ball."
+       ]
+      }
+     ],
+     "rechts": [
+      {
+       "art": "tabelle",
+       "spalten": [
+        "",
+        "wen?",
+        "wem?"
+       ],
+       "zeilen": 0,
+       "werte": [
+        [
+         "der Trainer",
+         "ihn",
+         "ihm"
+        ],
+        [
+         "die Trainerin",
+         "sie",
+         "ihr"
+        ],
+        [
+         "das Team",
+         "es",
+         "ihm"
+        ],
+        [
+         "die Fans",
+         "sie",
+         "ihnen"
+        ]
+       ],
+       "breiten": [
+        1.6,
+        1,
+        1
+       ]
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "Ersetze das Nomen durch ihn, sie oder es."
+    },
+    {
+     "art": "paeckchen",
+     "items": [
+      "Ich sehe den Ball. → Ich sehe ___.",
+      "Wir fragen die Trainerin. → Wir fragen ___.",
+      "Ben ruft das Team. → Ben ruft ___.",
+      "Ich kenne den Schiedsrichter. → Ich kenne ___.",
+      "Du findest die Halle. → Du findest ___.",
+      "Sie trifft den Korb. → Sie trifft ___."
+     ],
+     "spalten": 1,
+     "buchstaben": true
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "ihm oder ihr? Verbinde."
+    },
+    {
+     "art": "zuordnen",
+     "links": [
+      "Ich gebe Ben den Ball.",
+      "Ich helfe Ayla.",
+      "Wir danken dem Trainer.",
+      "Ich schreibe Mila."
+     ],
+     "rechts": [
+      "Ich helfe ihr.",
+      "Ich gebe ihm den Ball.",
+      "Ich schreibe ihr.",
+      "Wir danken ihm."
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 2,
+     "text": "Unterstreiche das Pronomen. Fragt man wen? oder wem? Kreuze an."
+    },
+    {
+     "art": "tabelle",
+     "spalten": [
+      "Satz",
+      "wen?",
+      "wem?"
+     ],
+     "zeilen": 0,
+     "werte": [
+      [
+       "Pass ihm den Ball!",
+       "",
+       ""
+      ],
+      [
+       "Ich sehe dich beim Spiel.",
+       "",
+       ""
+      ],
+      [
+       "Hilf mir bitte!",
+       "",
+       ""
+      ],
+      [
+       "Der Trainer lobt uns.",
+       "",
+       ""
+      ]
+     ],
+     "breiten": [
+      3.6,
+      1,
+      1
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 3,
+     "text": "Schreib einen kurzen Spielbericht (echt oder ausgedacht) mit mindestens drei Pronomen."
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Das Spiel war …",
+      "Ben war frei, also habe ich ihm …",
+      "Die Trainerin hat uns …"
+     ],
+     "linien": 1
+    },
+    {
+     "art": "text",
+     "text": "Kurz-Check: Wie sicher bist du?",
+     "klein": true
+    },
+    {
+     "art": "einschaetzung",
+     "items": [
+      "Ich erkenne Pronomen im Satz.",
+      "Ich unterscheide wen? (ihn) und wem? (ihm).",
+      "Ich benutze Pronomen, statt Namen zu wiederholen."
+     ],
+     "optionen": [
+      "sicher",
+      "geht so",
+      "noch nicht"
+     ]
+    }
+   ],
+   "lehrer": {
+    "ziel": "Les jeunes reconnaissent les pronoms personnels à l’accusatif et au datif, les distinguent avec les questions « wen ? » et « wem ? » et remplacent des noms par des pronoms.",
+    "ablauf": [
+     "Entrée (5 min) : ballon en cercle : « Ich gebe dir den Ball. » – « Ich gebe ihm den Ball. » (en montrant une troisième personne).",
+     "Règle (10 min) : tableau wen?/wem? ; collecter des verbes avec datif (helfen, danken, gratulieren, geben).",
+     "Exercices (20 min) : exercices 1–3 ; exercice 4 pour celles et ceux qui ont fini.",
+     "Clôture (10 min) : ping-pong des pronoms : une personne dit une phrase avec un nom, la suivante la répète avec un pronom. Mini-bilan."
+    ],
+    "hintergrund": "Les standards citent pour le module 2 la reconnaissance des pronoms personnels au datif et à l’accusatif ; l’emploi sûr suit au module 5. L’accent est donc mis sur la compréhension et le remplacement, pas sur l’apprentissage par cœur de tout le tableau. Les situations de sport rendent les pronoms utiles : qui parle vite remplace les noms.",
+    "differenzierung": {
+     "leichter": "Seulement ihn/sie/es et ihm/ihr ; laisser le tableau comme aide.",
+     "schwerer": "Phrases avec deux pronoms : Ich gebe ihn ihm. Gib ihn mir!"
+    },
+    "loesungen": [
+     "1) ihn · sie · es · ihn · sie · ihn",
+     "2) Ich gebe Ben den Ball. – Ich gebe ihm den Ball. · Ich helfe Ayla. – Ich helfe ihr. · Wir danken dem Trainer. – Wir danken ihm. · Ich schreibe Mila. – Ich schreibe ihr.",
+     "3) ihm – wem ? · dich – wen ? · mir – wem ? · uns – wen ?",
+     "4) réponses libres"
+    ]
+   }
+  }
+ },
+ {
+  "id": "de-m3-laender",
+  "bereich": "deutsch",
+  "thema": "lesen",
+  "stufen": [
+   "ES"
+  ],
+  "sozialform": [
+   "einzeln",
+   "klasse"
+  ],
+  "dauer": "45–60 Min.",
+  "eldib": [],
+  "schlagworte": [
+   "Länder",
+   "Sprachen",
+   "Hauptstadt",
+   "Recherche",
+   "Steckbrief",
+   "Modul 3"
+  ],
+  "bild": "icon:world",
+  "de": {
+   "titel": "Länder entdecken",
+   "untertitel": "Länder, Sprachen, Hauptstädte – Modul 3, Lektion 1",
+   "bausteine": [
+    {
+     "art": "bilder",
+     "klein": true,
+     "spalten": 3,
+     "bilder": [
+      {
+       "bild": "icon:world",
+       "text": "das Land"
+      },
+      {
+       "bild": "icon:building-community",
+       "text": "die Hauptstadt"
+      },
+      {
+       "bild": "icon:message",
+       "text": "die Sprache"
+      }
+     ]
+    },
+    {
+     "art": "text",
+     "text": "In deiner Klasse sprechen viele Menschen viele Sprachen. Über ein Land kann man viel erzählen: Wo liegt es? Was spricht man dort? Was isst man gern?"
+    },
+    {
+     "art": "spalten",
+     "verhaeltnis": "2:1",
+     "links": [
+      {
+       "art": "info",
+       "symbol": "merke",
+       "titel": "Über ein Land sprechen",
+       "punkte": [
+        "Das Land heißt … · Die Hauptstadt ist …",
+        "In … spricht man … (In Portugal spricht man Portugiesisch.)",
+        "Das Land liegt in … (Europa, Afrika …) – neben …",
+        "Ein typisches Essen ist …"
+       ]
+      }
+     ],
+     "rechts": [
+      {
+       "art": "tabelle",
+       "spalten": [
+        "Land",
+        "Sprache(n)",
+        "Hauptstadt"
+       ],
+       "zeilen": 0,
+       "werte": [
+        [
+         "Luxemburg",
+         "Luxemburgisch, Französisch, Deutsch",
+         "Luxemburg"
+        ],
+        [
+         "Portugal",
+         "Portugiesisch",
+         "Lissabon"
+        ],
+        [
+         "Italien",
+         "Italienisch",
+         "Rom"
+        ]
+       ],
+       "breiten": [
+        1.6,
+        2.2,
+        1.6
+       ]
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "Ergänze die Sprache."
+    },
+    {
+     "art": "paeckchen",
+     "items": [
+      "In Frankreich spricht man ___.",
+      "In Italien spricht man ___.",
+      "In Portugal spricht man ___.",
+      "In Deutschland spricht man ___.",
+      "In Spanien spricht man ___.",
+      "In England spricht man ___."
+     ],
+     "spalten": 2,
+     "buchstaben": true
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "Verbinde Land und Hauptstadt."
+    },
+    {
+     "art": "zuordnen",
+     "links": [
+      "Frankreich",
+      "Belgien",
+      "Deutschland",
+      "Portugal"
+     ],
+     "rechts": [
+      "Berlin",
+      "Lissabon",
+      "Paris",
+      "Brüssel"
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 2,
+     "text": "Lies den Steckbrief und beantworte die Fragen in ganzen Sätzen."
+    },
+    {
+     "art": "text",
+     "text": "Steckbrief Kap Verde: Inselstaat im Atlantik, vor der Küste Westafrikas · Hauptstadt: Praia · Sprachen: Portugiesisch (Amtssprache) und Kapverdisch (Kreol) · typisches Essen: Cachupa, ein Eintopf mit Mais und Bohnen · bekannt für: Musik (Morna)"
+    },
+    {
+     "art": "tabelle",
+     "spalten": [
+      "Frage",
+      "Antwort"
+     ],
+     "zeilen": 0,
+     "werte": [
+      [
+       "Wo liegt Kap Verde?",
+       ""
+      ],
+      [
+       "Wie heißt die Hauptstadt?",
+       ""
+      ],
+      [
+       "Welche Sprachen spricht man dort?",
+       ""
+      ],
+      [
+       "Was ist Cachupa?",
+       ""
+      ]
+     ],
+     "breiten": [
+      2.6,
+      3.4
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 3,
+     "text": "Recherche: Mach einen Steckbrief über ein Land deiner Wahl (Buch oder Internet)."
+    },
+    {
+     "art": "tabelle",
+     "spalten": [
+      "Land",
+      "Hauptstadt",
+      "Sprache(n)",
+      "Essen",
+      "Besonders"
+     ],
+     "zeilen": 1,
+     "breiten": [
+      1.2,
+      1.2,
+      1.4,
+      1.2,
+      1.6
+     ]
+    },
+    {
+     "art": "text",
+     "text": "Kurz-Check: Wie sicher bist du?",
+     "klein": true
+    },
+    {
+     "art": "einschaetzung",
+     "items": [
+      "Ich sage, welche Sprache man in einem Land spricht.",
+      "Ich lese einen kurzen Steckbrief.",
+      "Ich recherchiere Informationen über ein Land."
+     ],
+     "optionen": [
+      "sicher",
+      "geht so",
+      "noch nicht"
+     ]
+    }
+   ],
+   "lehrer": {
+    "ziel": "Die Jugendlichen verstehen und schreiben kurze Sachinformationen über ein Land (Lage, Hauptstadt, Sprachen, Essen) und recherchieren dazu selbstständig.",
+    "ablauf": [
+     "Einstieg (5 Min.): Weltkarte. „Wie viele Sprachen sprechen wir zusammen in dieser Klasse?“ – Zählen, ohne dass jemand die eigene Herkunft nennen muss.",
+     "Regel (10 Min.): Redemittel aus dem Merkkasten; Länder und Sprachen an der Karte zuordnen.",
+     "Übung (20 Min.): Aufgaben 1–3; Aufgabe 4 als Recherche (Atlas, Internet).",
+     "Abschluss (10 Min.): Ratespiel: Eine Person liest ihren Steckbrief ohne den Ländernamen vor. Kurz-Check."
+    ],
+    "hintergrund": "Andere Länder sind ein Themenvorschlag der Bildungsstandards für Modul 3; Recherche und Internet sind als Lerntechniken genannt. Viele Jugendliche in der Voie de préparation haben Bezüge zu mehreren Ländern. Das kann eine Ressource sein – aber niemand muss über die eigene Herkunft sprechen. Deshalb wählen alle frei ein Land. Die Länder-Sprachen-Paare sind bewusst einfach; Mehrsprachigkeit (Luxemburg, Belgien, Kap Verde) wird als Normalfall gezeigt.",
+    "differenzierung": {
+     "leichter": "Steckbrief mit vorgegebenen Satzanfängen; nur drei Felder.",
+     "schwerer": "Zwei Länder vergleichen (größer, wärmer, mehr Einwohner) – Vorgriff auf Lektion 5."
+    },
+    "loesungen": [
+     "1) Französisch · Italienisch · Portugiesisch · Deutsch · Spanisch · Englisch",
+     "2) Frankreich – Paris · Belgien – Brüssel · Deutschland – Berlin · Portugal – Lissabon",
+     "3) Kap Verde liegt im Atlantik, vor der Küste Westafrikas. · Die Hauptstadt heißt Praia. · Man spricht Portugiesisch und Kapverdisch. · Cachupa ist ein Eintopf mit Mais und Bohnen.",
+     "4) freie Antworten"
+    ]
+   }
+  },
+  "fr": {
+   "titel": "Länder entdecken",
+   "untertitel": "Länder, Sprachen, Hauptstädte – Modul 3, Lektion 1",
+   "bausteine": [
+    {
+     "art": "bilder",
+     "klein": true,
+     "spalten": 3,
+     "bilder": [
+      {
+       "bild": "icon:world",
+       "text": "das Land"
+      },
+      {
+       "bild": "icon:building-community",
+       "text": "die Hauptstadt"
+      },
+      {
+       "bild": "icon:message",
+       "text": "die Sprache"
+      }
+     ]
+    },
+    {
+     "art": "text",
+     "text": "In deiner Klasse sprechen viele Menschen viele Sprachen. Über ein Land kann man viel erzählen: Wo liegt es? Was spricht man dort? Was isst man gern?"
+    },
+    {
+     "art": "spalten",
+     "verhaeltnis": "2:1",
+     "links": [
+      {
+       "art": "info",
+       "symbol": "merke",
+       "titel": "Über ein Land sprechen",
+       "punkte": [
+        "Das Land heißt … · Die Hauptstadt ist …",
+        "In … spricht man … (In Portugal spricht man Portugiesisch.)",
+        "Das Land liegt in … (Europa, Afrika …) – neben …",
+        "Ein typisches Essen ist …"
+       ]
+      }
+     ],
+     "rechts": [
+      {
+       "art": "tabelle",
+       "spalten": [
+        "Land",
+        "Sprache(n)",
+        "Hauptstadt"
+       ],
+       "zeilen": 0,
+       "werte": [
+        [
+         "Luxemburg",
+         "Luxemburgisch, Französisch, Deutsch",
+         "Luxemburg"
+        ],
+        [
+         "Portugal",
+         "Portugiesisch",
+         "Lissabon"
+        ],
+        [
+         "Italien",
+         "Italienisch",
+         "Rom"
+        ]
+       ],
+       "breiten": [
+        1.6,
+        2.2,
+        1.6
+       ]
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "Ergänze die Sprache."
+    },
+    {
+     "art": "paeckchen",
+     "items": [
+      "In Frankreich spricht man ___.",
+      "In Italien spricht man ___.",
+      "In Portugal spricht man ___.",
+      "In Deutschland spricht man ___.",
+      "In Spanien spricht man ___.",
+      "In England spricht man ___."
+     ],
+     "spalten": 2,
+     "buchstaben": true
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "Verbinde Land und Hauptstadt."
+    },
+    {
+     "art": "zuordnen",
+     "links": [
+      "Frankreich",
+      "Belgien",
+      "Deutschland",
+      "Portugal"
+     ],
+     "rechts": [
+      "Berlin",
+      "Lissabon",
+      "Paris",
+      "Brüssel"
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 2,
+     "text": "Lies den Steckbrief und beantworte die Fragen in ganzen Sätzen."
+    },
+    {
+     "art": "text",
+     "text": "Steckbrief Kap Verde: Inselstaat im Atlantik, vor der Küste Westafrikas · Hauptstadt: Praia · Sprachen: Portugiesisch (Amtssprache) und Kapverdisch (Kreol) · typisches Essen: Cachupa, ein Eintopf mit Mais und Bohnen · bekannt für: Musik (Morna)"
+    },
+    {
+     "art": "tabelle",
+     "spalten": [
+      "Frage",
+      "Antwort"
+     ],
+     "zeilen": 0,
+     "werte": [
+      [
+       "Wo liegt Kap Verde?",
+       ""
+      ],
+      [
+       "Wie heißt die Hauptstadt?",
+       ""
+      ],
+      [
+       "Welche Sprachen spricht man dort?",
+       ""
+      ],
+      [
+       "Was ist Cachupa?",
+       ""
+      ]
+     ],
+     "breiten": [
+      2.6,
+      3.4
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 3,
+     "text": "Recherche: Mach einen Steckbrief über ein Land deiner Wahl (Buch oder Internet)."
+    },
+    {
+     "art": "tabelle",
+     "spalten": [
+      "Land",
+      "Hauptstadt",
+      "Sprache(n)",
+      "Essen",
+      "Besonders"
+     ],
+     "zeilen": 1,
+     "breiten": [
+      1.2,
+      1.2,
+      1.4,
+      1.2,
+      1.6
+     ]
+    },
+    {
+     "art": "text",
+     "text": "Kurz-Check: Wie sicher bist du?",
+     "klein": true
+    },
+    {
+     "art": "einschaetzung",
+     "items": [
+      "Ich sage, welche Sprache man in einem Land spricht.",
+      "Ich lese einen kurzen Steckbrief.",
+      "Ich recherchiere Informationen über ein Land."
+     ],
+     "optionen": [
+      "sicher",
+      "geht so",
+      "noch nicht"
+     ]
+    }
+   ],
+   "lehrer": {
+    "ziel": "Les jeunes comprennent et écrivent de courtes informations sur un pays (situation, capitale, langues, cuisine) et font des recherches de manière autonome.",
+    "ablauf": [
+     "Entrée (5 min) : carte du monde. « Combien de langues parlons-nous ensemble dans cette classe ? » – compter, sans que personne doive dire son origine.",
+     "Règle (10 min) : expressions de l’encadré ; associer pays et langues sur la carte.",
+     "Exercices (20 min) : exercices 1–3 ; exercice 4 en recherche (atlas, internet).",
+     "Clôture (10 min) : devinette : une personne lit sa fiche sans le nom du pays. Mini-bilan."
+    ],
+    "hintergrund": "Les autres pays sont un thème proposé par les standards pour le module 3 ; la recherche et internet y sont cités comme techniques d’apprentissage. Beaucoup de jeunes de la voie de préparation ont des liens avec plusieurs pays. C’est une ressource – mais personne ne doit parler de ses origines. Chacun choisit donc librement un pays. Les paires pays-langue sont volontairement simples ; le plurilinguisme (Luxembourg, Belgique, Cap-Vert) est montré comme normal.",
+    "differenzierung": {
+     "leichter": "Fiche avec débuts de phrase donnés ; seulement trois rubriques.",
+     "schwerer": "Comparer deux pays (größer, wärmer, mehr Einwohner) – anticipation de la leçon 5."
+    },
+    "loesungen": [
+     "1) Französisch · Italienisch · Portugiesisch · Deutsch · Spanisch · Englisch",
+     "2) Frankreich – Paris · Belgien – Brüssel · Deutschland – Berlin · Portugal – Lissabon",
+     "3) Kap Verde liegt im Atlantik, vor der Küste Westafrikas. · Die Hauptstadt heißt Praia. · Man spricht Portugiesisch und Kapverdisch. · Cachupa ist ein Eintopf mit Mais und Bohnen.",
+     "4) réponses libres"
+    ]
+   }
+  }
+ },
+ {
+  "id": "de-m3-artikel",
+  "bereich": "deutsch",
+  "thema": "grammatik",
+  "stufen": [
+   "ES"
+  ],
+  "sozialform": [
+   "einzeln",
+   "klasse"
+  ],
+  "dauer": "45–60 Min.",
+  "eldib": [],
+  "schlagworte": [
+   "Artikel",
+   "bestimmt",
+   "unbestimmt",
+   "ein",
+   "der",
+   "Modul 3"
+  ],
+  "bild": "icon:puzzle",
+  "de": {
+   "titel": "Ein Café – das Café",
+   "untertitel": "Bestimmter und unbestimmter Artikel – Modul 3, Lektion 2",
+   "bausteine": [
+    {
+     "art": "bilder",
+     "klein": true,
+     "spalten": 3,
+     "bilder": [
+      {
+       "bild": "icon:coffee",
+       "text": "ein Café"
+      },
+      {
+       "bild": "icon:map-pin",
+       "text": "das Café am Markt"
+      },
+      {
+       "bild": "icon:users",
+       "text": "eine Freundin"
+      }
+     ]
+    },
+    {
+     "art": "text",
+     "text": "Wenn du etwas zum ersten Mal nennst, ist es neu: ein Café. Wenn alle wissen, welches gemeint ist, sagst du: das Café."
+    },
+    {
+     "art": "spalten",
+     "verhaeltnis": "2:1",
+     "links": [
+      {
+       "art": "info",
+       "symbol": "merke",
+       "titel": "ein oder der?",
+       "punkte": [
+        "Neu, irgendein, zum ersten Mal: ein, eine, ein – In Lissabon gibt es ein Café.",
+        "Bekannt, genau dieses: der, die, das – Das Café ist sehr alt.",
+        "Im Akkusativ (wen? was?) wird nur der/ein anders: den, einen – Ich sehe einen Turm.",
+        "Mehrzahl: ohne Artikel oder die – Dort gibt es Märkte. Die Märkte sind bunt."
+       ]
+      }
+     ],
+     "rechts": [
+      {
+       "art": "tabelle",
+       "spalten": [
+        "",
+        "unbestimmt",
+        "bestimmt"
+       ],
+       "zeilen": 0,
+       "werte": [
+        [
+         "der",
+         "ein Turm",
+         "der Turm"
+        ],
+        [
+         "die",
+         "eine Brücke",
+         "die Brücke"
+        ],
+        [
+         "das",
+         "ein Café",
+         "das Café"
+        ]
+       ],
+       "breiten": [
+        0.8,
+        1.6,
+        1.6
+       ]
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "ein oder eine? Ergänze."
+    },
+    {
+     "art": "paeckchen",
+     "items": [
+      "In Rom gibt es ___ Brunnen. (der)",
+      "Ich kaufe ___ Postkarte. (die)",
+      "Das ist ___ Museum. (das)",
+      "Dort steht ___ Kirche. (die)",
+      "Wir essen ___ Pizza. (die)",
+      "Er hat ___ Stadtplan. (der)"
+     ],
+     "spalten": 2,
+     "buchstaben": true
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "Erst neu, dann bekannt: Verbinde die Sätze."
+    },
+    {
+     "art": "zuordnen",
+     "links": [
+      "Dort ist ein Turm.",
+      "Ich sehe eine Brücke.",
+      "Wir finden ein Café."
+     ],
+     "rechts": [
+      "Das Café ist sehr klein.",
+      "Der Turm ist 100 Meter hoch.",
+      "Die Brücke ist sehr lang."
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 2,
+     "text": "Ergänze den richtigen Artikel: ein, eine, der, die, das."
+    },
+    {
+     "art": "tabelle",
+     "spalten": [
+      "Text"
+     ],
+     "zeilen": 0,
+     "werte": [
+      [
+       "In Trier gibt es ___ altes Tor. ___ Tor heißt Porta Nigra. Daneben ist ___ Platz. Auf ___ Platz gibt es ___ Café. ___ Café hat leckeres Eis."
+      ]
+     ],
+     "breiten": [
+      6
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 3,
+     "text": "Beschreib einen Ort, den du kennst (echt oder ausgedacht). Erst „ein“, dann „der, die, das“."
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "In … gibt es ein / eine …",
+      "Der / Die / Das … ist …",
+      "Daneben ist …"
+     ],
+     "linien": 1
+    },
+    {
+     "art": "text",
+     "text": "Kurz-Check: Wie sicher bist du?",
+     "klein": true
+    },
+    {
+     "art": "einschaetzung",
+     "items": [
+      "Ich benutze „ein“ für etwas Neues.",
+      "Ich benutze „der, die, das“ für etwas Bekanntes.",
+      "Ich kenne „einen“ im Akkusativ."
+     ],
+     "optionen": [
+      "sicher",
+      "geht so",
+      "noch nicht"
+     ]
+    }
+   ],
+   "lehrer": {
+    "ziel": "Die Jugendlichen unterscheiden den unbestimmten Artikel (Neues) und den bestimmten Artikel (Bekanntes) und wenden beide in kurzen Beschreibungen an.",
+    "ablauf": [
+     "Einstieg (5 Min.): „In meiner Tasche ist ein Gegenstand.“ – zeigen – „Der Gegenstand ist ein Schlüssel.“ Was hat sich geändert?",
+     "Regel (10 Min.): Merkkasten; Tabelle mit Farben (der blau, die rot, das grün).",
+     "Übung (20 Min.): Aufgaben 1–3; Aufgabe 4 für alle, die fertig sind.",
+     "Abschluss (10 Min.): Kofferpacken-Kette: „Ich packe einen Pullover ein. Der Pullover ist rot.“ Kurz-Check."
+    ],
+    "hintergrund": "Bestimmter und unbestimmter Artikel sind in den Bildungsstandards für Modul 3 als Sprachbetrachtung genannt. Das Französische kennt die gleiche Unterscheidung (un/le), was hilft. Schwierig ist das Genus; deshalb steht es in den Aufgaben in Klammern dabei. Der Akkusativ (einen/den) wird nur bei maskulinen Nomen sichtbar und hier nur erwähnt.",
+    "differenzierung": {
+     "leichter": "Nur Nominativ; Genus immer angegeben.",
+     "schwerer": "Akkusativ üben: Ich sehe einen Turm / den Turm; einen eigenen Reisebericht schreiben."
+    },
+    "loesungen": [
+     "1) einen (gibt es + Akkusativ) · eine · ein · eine · eine · einen",
+     "2) Dort ist ein Turm. – Der Turm ist 100 Meter hoch. · Ich sehe eine Brücke. – Die Brücke ist sehr lang. · Wir finden ein Café. – Das Café ist sehr klein.",
+     "3) ein altes Tor · Das Tor · ein Platz · dem Platz (auch akzeptiert: dem) · ein Café · Das Café",
+     "4) freie Antworten"
+    ]
+   }
+  },
+  "fr": {
+   "titel": "Ein Café – das Café",
+   "untertitel": "Bestimmter und unbestimmter Artikel – Modul 3, Lektion 2",
+   "bausteine": [
+    {
+     "art": "bilder",
+     "klein": true,
+     "spalten": 3,
+     "bilder": [
+      {
+       "bild": "icon:coffee",
+       "text": "ein Café"
+      },
+      {
+       "bild": "icon:map-pin",
+       "text": "das Café am Markt"
+      },
+      {
+       "bild": "icon:users",
+       "text": "eine Freundin"
+      }
+     ]
+    },
+    {
+     "art": "text",
+     "text": "Wenn du etwas zum ersten Mal nennst, ist es neu: ein Café. Wenn alle wissen, welches gemeint ist, sagst du: das Café."
+    },
+    {
+     "art": "spalten",
+     "verhaeltnis": "2:1",
+     "links": [
+      {
+       "art": "info",
+       "symbol": "merke",
+       "titel": "ein oder der?",
+       "punkte": [
+        "Neu, irgendein, zum ersten Mal: ein, eine, ein – In Lissabon gibt es ein Café.",
+        "Bekannt, genau dieses: der, die, das – Das Café ist sehr alt.",
+        "Im Akkusativ (wen? was?) wird nur der/ein anders: den, einen – Ich sehe einen Turm.",
+        "Mehrzahl: ohne Artikel oder die – Dort gibt es Märkte. Die Märkte sind bunt."
+       ]
+      }
+     ],
+     "rechts": [
+      {
+       "art": "tabelle",
+       "spalten": [
+        "",
+        "unbestimmt",
+        "bestimmt"
+       ],
+       "zeilen": 0,
+       "werte": [
+        [
+         "der",
+         "ein Turm",
+         "der Turm"
+        ],
+        [
+         "die",
+         "eine Brücke",
+         "die Brücke"
+        ],
+        [
+         "das",
+         "ein Café",
+         "das Café"
+        ]
+       ],
+       "breiten": [
+        0.8,
+        1.6,
+        1.6
+       ]
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "ein oder eine? Ergänze."
+    },
+    {
+     "art": "paeckchen",
+     "items": [
+      "In Rom gibt es ___ Brunnen. (der)",
+      "Ich kaufe ___ Postkarte. (die)",
+      "Das ist ___ Museum. (das)",
+      "Dort steht ___ Kirche. (die)",
+      "Wir essen ___ Pizza. (die)",
+      "Er hat ___ Stadtplan. (der)"
+     ],
+     "spalten": 2,
+     "buchstaben": true
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "Erst neu, dann bekannt: Verbinde die Sätze."
+    },
+    {
+     "art": "zuordnen",
+     "links": [
+      "Dort ist ein Turm.",
+      "Ich sehe eine Brücke.",
+      "Wir finden ein Café."
+     ],
+     "rechts": [
+      "Das Café ist sehr klein.",
+      "Der Turm ist 100 Meter hoch.",
+      "Die Brücke ist sehr lang."
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 2,
+     "text": "Ergänze den richtigen Artikel: ein, eine, der, die, das."
+    },
+    {
+     "art": "tabelle",
+     "spalten": [
+      "Text"
+     ],
+     "zeilen": 0,
+     "werte": [
+      [
+       "In Trier gibt es ___ altes Tor. ___ Tor heißt Porta Nigra. Daneben ist ___ Platz. Auf ___ Platz gibt es ___ Café. ___ Café hat leckeres Eis."
+      ]
+     ],
+     "breiten": [
+      6
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 3,
+     "text": "Beschreib einen Ort, den du kennst (echt oder ausgedacht). Erst „ein“, dann „der, die, das“."
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "In … gibt es ein / eine …",
+      "Der / Die / Das … ist …",
+      "Daneben ist …"
+     ],
+     "linien": 1
+    },
+    {
+     "art": "text",
+     "text": "Kurz-Check: Wie sicher bist du?",
+     "klein": true
+    },
+    {
+     "art": "einschaetzung",
+     "items": [
+      "Ich benutze „ein“ für etwas Neues.",
+      "Ich benutze „der, die, das“ für etwas Bekanntes.",
+      "Ich kenne „einen“ im Akkusativ."
+     ],
+     "optionen": [
+      "sicher",
+      "geht so",
+      "noch nicht"
+     ]
+    }
+   ],
+   "lehrer": {
+    "ziel": "Les jeunes distinguent l’article indéfini (nouveau) et l’article défini (connu) et utilisent les deux dans de courtes descriptions.",
+    "ablauf": [
+     "Entrée (5 min) : « Dans mon sac, il y a un objet. » – montrer – « L’objet est une clé. » Qu’est-ce qui a changé ?",
+     "Règle (10 min) : encadré ; tableau en couleurs (der bleu, die rouge, das vert).",
+     "Exercices (20 min) : exercices 1–3 ; exercice 4 pour celles et ceux qui ont fini.",
+     "Clôture (10 min) : chaîne de la valise : « Ich packe einen Pullover ein. Der Pullover ist rot. » Mini-bilan."
+    ],
+    "hintergrund": "Article défini et indéfini sont cités dans les standards du module 3 (observation de la langue). Le français connaît la même distinction (un/le), ce qui aide. Le genre est difficile ; c’est pourquoi il est indiqué entre parenthèses. L’accusatif (einen/den) n’est visible qu’au masculin et seulement mentionné ici.",
+    "differenzierung": {
+     "leichter": "Seulement le nominatif ; genre toujours indiqué.",
+     "schwerer": "Exercer l’accusatif : Ich sehe einen Turm / den Turm ; écrire un récit de voyage."
+    },
+    "loesungen": [
+     "1) einen (gibt es + accusatif) · eine · ein · eine · eine · einen",
+     "2) Dort ist ein Turm. – Der Turm ist 100 Meter hoch. · Ich sehe eine Brücke. – Die Brücke ist sehr lang. · Wir finden ein Café. – Das Café ist sehr klein.",
+     "3) ein altes Tor · Das Tor · ein Platz · dem Platz · ein Café · Das Café",
+     "4) réponses libres"
+    ]
+   }
+  }
+ },
+ {
+  "id": "de-m3-kantine",
+  "bereich": "deutsch",
+  "thema": "sprechen",
+  "stufen": [
+   "ES"
+  ],
+  "sozialform": [
+   "einzeln",
+   "klasse"
+  ],
+  "dauer": "45–60 Min.",
+  "eldib": [],
+  "schlagworte": [
+   "Essen und Trinken",
+   "bestellen",
+   "höflich",
+   "ich hätte gern",
+   "Preise",
+   "Modul 3"
+  ],
+  "bild": "icon:coffee",
+  "de": {
+   "titel": "Ich hätte gern …",
+   "untertitel": "Höflich bestellen – Modul 3, Lektion 3",
+   "bausteine": [
+    {
+     "art": "bilder",
+     "klein": true,
+     "spalten": 3,
+     "bilder": [
+      {
+       "bild": "icon:coffee",
+       "text": "ein Kakao"
+      },
+      {
+       "bild": "icon:cash",
+       "text": "Was kostet das?"
+      },
+      {
+       "bild": "icon:hand-love-you",
+       "text": "Danke schön!"
+      }
+     ]
+    },
+    {
+     "art": "text",
+     "text": "In der Kantine, im Café, im Praktikum: Wer höflich bestellt, bekommt oft ein Lächeln dazu."
+    },
+    {
+     "art": "spalten",
+     "verhaeltnis": "2:1",
+     "links": [
+      {
+       "art": "info",
+       "symbol": "merke",
+       "titel": "Höflich bestellen",
+       "punkte": [
+        "Ich hätte gern … · Ich möchte … · Für mich bitte …",
+        "Was kostet …? · Das macht 4,50 Euro.",
+        "Mit „bitte“ und „danke“ – und zu Erwachsenen „Sie“: Haben Sie …?",
+        "„Ich will …“ klingt unhöflich."
+       ]
+      }
+     ],
+     "rechts": [
+      {
+       "art": "dialog",
+       "zeilen": [
+        {
+         "wer": "Frau Kremer",
+         "text": "Hallo! Was darf’s sein?"
+        },
+        {
+         "wer": "Sam",
+         "text": "Ich hätte gern das Curry, bitte."
+        },
+        {
+         "wer": "Frau Kremer",
+         "text": "Gern. Und zu trinken?"
+        },
+        {
+         "wer": "Sam",
+         "text": "Ein Wasser, bitte. Was kostet das?"
+        },
+        {
+         "wer": "Frau Kremer",
+         "text": "Zusammen 4,80 Euro."
+        },
+        {
+         "wer": "Sam",
+         "text": "Danke schön!"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "Höflich oder unhöflich? Schreib h oder u."
+    },
+    {
+     "art": "paeckchen",
+     "items": [
+      "Ich will Pommes. ___",
+      "Ich hätte gern eine Suppe, bitte. ___",
+      "Gib mir Wasser! ___",
+      "Für mich bitte ein Sandwich. ___",
+      "Haben Sie auch Tee? ___",
+      "Pizza. Schnell. ___"
+     ],
+     "spalten": 2,
+     "buchstaben": true
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "Was passt zusammen? Verbinde Frage und Antwort."
+    },
+    {
+     "art": "zuordnen",
+     "links": [
+      "Was darf’s sein?",
+      "Und zu trinken?",
+      "Was kostet das?",
+      "Sonst noch etwas?"
+     ],
+     "rechts": [
+      "Nein, danke. Das ist alles.",
+      "Ein Apfelsaft, bitte.",
+      "Ich hätte gern die Pasta.",
+      "3,20 Euro."
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 2,
+     "text": "Schreib die Bestellung höflich."
+    },
+    {
+     "art": "tabelle",
+     "spalten": [
+      "unhöflich",
+      "höflich"
+     ],
+     "zeilen": 0,
+     "werte": [
+      [
+       "Ich will einen Kakao.",
+       "Ich hätte gern einen Kakao, bitte."
+      ],
+      [
+       "Gib mir das Curry!",
+       ""
+      ],
+      [
+       "Was kostet? Sag!",
+       ""
+      ],
+      [
+       "Hast du Wasser?  (zur Köchin)",
+       ""
+      ]
+     ],
+     "breiten": [
+      2.6,
+      3.4
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 3,
+     "text": "Spielt zu zweit: im Café bestellen und bezahlen. Schreibt zuerst den Dialog (6 Zeilen)."
+    },
+    {
+     "art": "linien",
+     "anzahl": 6
+    },
+    {
+     "art": "text",
+     "text": "Kurz-Check: Wie sicher bist du?",
+     "klein": true
+    },
+    {
+     "art": "einschaetzung",
+     "items": [
+      "Ich bestelle mit „Ich hätte gern …“.",
+      "Ich frage nach dem Preis.",
+      "Ich spreche Erwachsene mit „Sie“ an."
+     ],
+     "optionen": [
+      "sicher",
+      "geht so",
+      "noch nicht"
+     ]
+    }
+   ],
+   "lehrer": {
+    "ziel": "Die Jugendlichen bestellen höflich Essen und Getränke, fragen nach dem Preis und wählen die passende Anrede (du/Sie).",
+    "ablauf": [
+     "Einstieg (5 Min.): Zwei Bestellungen vorspielen – „Ich will Pommes!“ und „Ich hätte gern Pommes, bitte.“ Wer bekommt schneller sein Essen?",
+     "Regel (10 Min.): Redemittel; Unterschied „ich will“ / „ich hätte gern“; du oder Sie?",
+     "Übung (20 Min.): Aufgaben 1–3; Aufgabe 4 als Rollenspiel mit Speisekarte.",
+     "Abschluss (10 Min.): Klassen-Café: Speisekarte an der Tafel, Spielgeld; jede Gruppe bestellt einmal. Kurz-Check."
+    ],
+    "hintergrund": "Essen und Trinken ist ein Themenvorschlag für Modul 3, Höflichkeit in der Anrede ist als Sprachbetrachtung genannt. „Ich hätte gern“ wird hier als feste Wendung gelernt, nicht als Konjunktiv. Für Praktikum und Alltag ist die Sie-Form wichtig. Speisen ohne Wertung („gesund/ungesund“) nennen; keine Kalorien oder Gewichtsangaben.",
+    "differenzierung": {
+     "leichter": "Nur „Ich hätte gern … bitte.“ und „Danke.“; Speisekarte mit Bildern.",
+     "schwerer": "Reklamieren üben: „Entschuldigung, das ist kalt. Können Sie …?“"
+    },
+    "loesungen": [
+     "1) u · h · u · h · h · u",
+     "2) Was darf’s sein? – Ich hätte gern die Pasta. · Und zu trinken? – Ein Apfelsaft, bitte. · Was kostet das? – 3,20 Euro. · Sonst noch etwas? – Nein, danke. Das ist alles.",
+     "3) Ich hätte gern das Curry, bitte. · Was kostet das, bitte? · Haben Sie Wasser, bitte?",
+     "4) freie Antworten"
+    ]
+   }
+  },
+  "fr": {
+   "titel": "Ich hätte gern …",
+   "untertitel": "Höflich bestellen – Modul 3, Lektion 3",
+   "bausteine": [
+    {
+     "art": "bilder",
+     "klein": true,
+     "spalten": 3,
+     "bilder": [
+      {
+       "bild": "icon:coffee",
+       "text": "ein Kakao"
+      },
+      {
+       "bild": "icon:cash",
+       "text": "Was kostet das?"
+      },
+      {
+       "bild": "icon:hand-love-you",
+       "text": "Danke schön!"
+      }
+     ]
+    },
+    {
+     "art": "text",
+     "text": "In der Kantine, im Café, im Praktikum: Wer höflich bestellt, bekommt oft ein Lächeln dazu."
+    },
+    {
+     "art": "spalten",
+     "verhaeltnis": "2:1",
+     "links": [
+      {
+       "art": "info",
+       "symbol": "merke",
+       "titel": "Höflich bestellen",
+       "punkte": [
+        "Ich hätte gern … · Ich möchte … · Für mich bitte …",
+        "Was kostet …? · Das macht 4,50 Euro.",
+        "Mit „bitte“ und „danke“ – und zu Erwachsenen „Sie“: Haben Sie …?",
+        "„Ich will …“ klingt unhöflich."
+       ]
+      }
+     ],
+     "rechts": [
+      {
+       "art": "dialog",
+       "zeilen": [
+        {
+         "wer": "Frau Kremer",
+         "text": "Hallo! Was darf’s sein?"
+        },
+        {
+         "wer": "Sam",
+         "text": "Ich hätte gern das Curry, bitte."
+        },
+        {
+         "wer": "Frau Kremer",
+         "text": "Gern. Und zu trinken?"
+        },
+        {
+         "wer": "Sam",
+         "text": "Ein Wasser, bitte. Was kostet das?"
+        },
+        {
+         "wer": "Frau Kremer",
+         "text": "Zusammen 4,80 Euro."
+        },
+        {
+         "wer": "Sam",
+         "text": "Danke schön!"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "Höflich oder unhöflich? Schreib h oder u."
+    },
+    {
+     "art": "paeckchen",
+     "items": [
+      "Ich will Pommes. ___",
+      "Ich hätte gern eine Suppe, bitte. ___",
+      "Gib mir Wasser! ___",
+      "Für mich bitte ein Sandwich. ___",
+      "Haben Sie auch Tee? ___",
+      "Pizza. Schnell. ___"
+     ],
+     "spalten": 2,
+     "buchstaben": true
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "Was passt zusammen? Verbinde Frage und Antwort."
+    },
+    {
+     "art": "zuordnen",
+     "links": [
+      "Was darf’s sein?",
+      "Und zu trinken?",
+      "Was kostet das?",
+      "Sonst noch etwas?"
+     ],
+     "rechts": [
+      "Nein, danke. Das ist alles.",
+      "Ein Apfelsaft, bitte.",
+      "Ich hätte gern die Pasta.",
+      "3,20 Euro."
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 2,
+     "text": "Schreib die Bestellung höflich."
+    },
+    {
+     "art": "tabelle",
+     "spalten": [
+      "unhöflich",
+      "höflich"
+     ],
+     "zeilen": 0,
+     "werte": [
+      [
+       "Ich will einen Kakao.",
+       "Ich hätte gern einen Kakao, bitte."
+      ],
+      [
+       "Gib mir das Curry!",
+       ""
+      ],
+      [
+       "Was kostet? Sag!",
+       ""
+      ],
+      [
+       "Hast du Wasser?  (zur Köchin)",
+       ""
+      ]
+     ],
+     "breiten": [
+      2.6,
+      3.4
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 3,
+     "text": "Spielt zu zweit: im Café bestellen und bezahlen. Schreibt zuerst den Dialog (6 Zeilen)."
+    },
+    {
+     "art": "linien",
+     "anzahl": 6
+    },
+    {
+     "art": "text",
+     "text": "Kurz-Check: Wie sicher bist du?",
+     "klein": true
+    },
+    {
+     "art": "einschaetzung",
+     "items": [
+      "Ich bestelle mit „Ich hätte gern …“.",
+      "Ich frage nach dem Preis.",
+      "Ich spreche Erwachsene mit „Sie“ an."
+     ],
+     "optionen": [
+      "sicher",
+      "geht so",
+      "noch nicht"
+     ]
+    }
+   ],
+   "lehrer": {
+    "ziel": "Les jeunes commandent poliment à manger et à boire, demandent le prix et choisissent la forme d’adresse adaptée (du/Sie).",
+    "ablauf": [
+     "Entrée (5 min) : jouer deux commandes – « Ich will Pommes! » et « Ich hätte gern Pommes, bitte. » Qui est servi plus vite ?",
+     "Règle (10 min) : expressions ; différence « ich will » / « ich hätte gern » ; du ou Sie ?",
+     "Exercices (20 min) : exercices 1–3 ; exercice 4 en jeu de rôle avec une carte.",
+     "Clôture (10 min) : café de la classe : carte au tableau, argent fictif ; chaque groupe commande une fois. Mini-bilan."
+    ],
+    "hintergrund": "Manger et boire est un thème proposé pour le module 3 ; la politesse dans l’adresse est citée (observation de la langue). « Ich hätte gern » est appris comme expression figée, pas comme subjonctif. Pour le stage et la vie quotidienne, la forme Sie est importante. Nommer les plats sans jugement (« sain/malsain ») ; pas de calories ni de poids.",
+    "differenzierung": {
+     "leichter": "Seulement « Ich hätte gern … bitte. » et « Danke. » ; carte avec images.",
+     "schwerer": "S’exercer à réclamer : « Entschuldigung, das ist kalt. Können Sie …? »"
+    },
+    "loesungen": [
+     "1) u · h · u · h · h · u",
+     "2) Was darf’s sein? – Ich hätte gern die Pasta. · Und zu trinken? – Ein Apfelsaft, bitte. · Was kostet das? – 3,20 Euro. · Sonst noch etwas? – Nein, danke. Das ist alles.",
+     "3) Ich hätte gern das Curry, bitte. · Was kostet das, bitte? · Haben Sie Wasser, bitte?",
+     "4) réponses libres"
+    ]
+   }
+  }
+ },
+ {
+  "id": "de-m3-kleidung",
+  "bereich": "deutsch",
+  "thema": "wortschatz",
+  "stufen": [
+   "ES"
+  ],
+  "sozialform": [
+   "einzeln",
+   "klasse"
+  ],
+  "dauer": "45–60 Min.",
+  "eldib": [],
+  "schlagworte": [
+   "Kleidung",
+   "Adjektive",
+   "Farben",
+   "zu groß",
+   "einkaufen",
+   "Modul 3"
+  ],
+  "bild": "icon:shirt",
+  "de": {
+   "titel": "Die Jacke ist zu groß",
+   "untertitel": "Kleidung und Adjektive – Modul 3, Lektion 4",
+   "bausteine": [
+    {
+     "art": "bilder",
+     "klein": true,
+     "spalten": 3,
+     "bilder": [
+      {
+       "bild": "icon:shirt",
+       "text": "das T-Shirt"
+      },
+      {
+       "bild": "icon:shoe",
+       "text": "die Schuhe"
+      },
+      {
+       "bild": "icon:cash",
+       "text": "teuer – billig"
+      }
+     ]
+    },
+    {
+     "art": "text",
+     "text": "Neue Schuhe, eine warme Jacke, ein Pulli für das Praktikum: Beim Einkaufen musst du sagen, was du suchst – und was nicht passt."
+    },
+    {
+     "art": "spalten",
+     "verhaeltnis": "2:1",
+     "links": [
+      {
+       "art": "info",
+       "symbol": "merke",
+       "titel": "Kleidung beschreiben",
+       "punkte": [
+        "Die Jacke ist warm. Die Hose ist blau. Die Schuhe sind neu.",
+        "Gegenteile: groß – klein, lang – kurz, eng – weit, teuer – billig, neu – alt.",
+        "„zu“ heißt: mehr als gut ist – Die Hose ist zu eng.",
+        "Fragen: Haben Sie das in Größe M? Kann ich das anprobieren?"
+       ]
+      }
+     ],
+     "rechts": [
+      {
+       "art": "tabelle",
+       "spalten": [
+        "Kleidung",
+        "Artikel"
+       ],
+       "zeilen": 0,
+       "werte": [
+        [
+         "Jacke, Hose, Mütze",
+         "die"
+        ],
+        [
+         "Pullover, Schuh, Rock",
+         "der"
+        ],
+        [
+         "T-Shirt, Hemd, Kleid",
+         "das"
+        ]
+       ],
+       "breiten": [
+        2.4,
+        1
+       ]
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "Schreib das Gegenteil."
+    },
+    {
+     "art": "paeckchen",
+     "items": [
+      "groß – ___",
+      "lang – ___",
+      "eng – ___",
+      "teuer – ___",
+      "neu – ___",
+      "warm – ___"
+     ],
+     "spalten": 3,
+     "buchstaben": true
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "Was passt? Verbinde."
+    },
+    {
+     "art": "zuordnen",
+     "links": [
+      "Die Hose ist zu lang.",
+      "Die Jacke ist zu teuer.",
+      "Die Schuhe sind zu klein.",
+      "Das T-Shirt ist zu weit."
+     ],
+     "rechts": [
+      "Ich brauche eine kleinere Größe.",
+      "Ich brauche eine größere Größe.",
+      "Ich brauche sie kürzer.",
+      "Haben Sie etwas Billigeres?"
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 2,
+     "text": "Beschreib die Kleidung mit zwei Adjektiven."
+    },
+    {
+     "art": "tabelle",
+     "spalten": [
+      "Kleidung",
+      "Beschreibung"
+     ],
+     "zeilen": 0,
+     "werte": [
+      [
+       "die Jacke",
+       "Die Jacke ist schwarz und warm."
+      ],
+      [
+       "der Pullover",
+       ""
+      ],
+      [
+       "die Schuhe",
+       ""
+      ],
+      [
+       "das T-Shirt",
+       ""
+      ]
+     ],
+     "breiten": [
+      2,
+      4
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 3,
+     "text": "Im Geschäft: Schreib einen kurzen Dialog. Etwas passt nicht – was sagst du?"
+    },
+    {
+     "art": "linien",
+     "anzahl": 6
+    },
+    {
+     "art": "text",
+     "text": "Kurz-Check: Wie sicher bist du?",
+     "klein": true
+    },
+    {
+     "art": "einschaetzung",
+     "items": [
+      "Ich kenne zehn Kleidungsstücke mit Artikel.",
+      "Ich beschreibe Kleidung mit Adjektiven.",
+      "Ich sage höflich, was nicht passt."
+     ],
+     "optionen": [
+      "sicher",
+      "geht so",
+      "noch nicht"
+     ]
+    }
+   ],
+   "lehrer": {
+    "ziel": "Die Jugendlichen benennen Kleidungsstücke mit Artikel, beschreiben sie mit Adjektiven (prädikativ) und drücken mit „zu“ aus, was nicht passt.",
+    "ablauf": [
+     "Einstieg (5 Min.): Bilder aus einem Prospekt (ohne Marken): „Was ist das? Wie ist es?“",
+     "Regel (10 Min.): Gegenteil-Paare mit Gesten; „zu“ + Adjektiv vorspielen (zu großer Pullover über dem eigenen).",
+     "Übung (20 Min.): Aufgaben 1–3; Aufgabe 4 als Rollenspiel im Geschäft.",
+     "Abschluss (10 Min.): „Ich sehe was, was du nicht siehst“ mit Kleidung im Raum: „Es ist blau und weit.“ Kurz-Check."
+    ],
+    "hintergrund": "Kleidung ist ein Themenvorschlag der Bildungsstandards für Modul 3; Adjektive sind als Grammatikschwerpunkt genannt. Hier stehen Adjektive nur prädikativ (Die Jacke ist warm.); die Deklination folgt später. Kleidung und Geld können sensibel sein: Es geht um Sprache, nicht um Marken oder Preise der eigenen Kleidung. Keine Kommentare zu Körpern – „zu eng“ bezieht sich immer auf das Kleidungsstück.",
+    "differenzierung": {
+     "leichter": "Nur fünf Kleidungsstücke und Farben; Bildkarten.",
+     "schwerer": "Steigerung vorwegnehmen: Haben Sie die Jacke eine Nummer größer?"
+    },
+    "loesungen": [
+     "1) klein · kurz · weit · billig · alt · kalt",
+     "2) Die Hose ist zu lang. – Ich brauche sie kürzer. · Die Jacke ist zu teuer. – Haben Sie etwas Billigeres? · Die Schuhe sind zu klein. – Ich brauche eine größere Größe. · Das T-Shirt ist zu weit. – Ich brauche eine kleinere Größe.",
+     "3) z. B. Der Pullover ist grau und weich. · Die Schuhe sind neu und bequem. · Das T-Shirt ist weiß und kurz.",
+     "4) freie Antworten"
+    ]
+   }
+  },
+  "fr": {
+   "titel": "Die Jacke ist zu groß",
+   "untertitel": "Kleidung und Adjektive – Modul 3, Lektion 4",
+   "bausteine": [
+    {
+     "art": "bilder",
+     "klein": true,
+     "spalten": 3,
+     "bilder": [
+      {
+       "bild": "icon:shirt",
+       "text": "das T-Shirt"
+      },
+      {
+       "bild": "icon:shoe",
+       "text": "die Schuhe"
+      },
+      {
+       "bild": "icon:cash",
+       "text": "teuer – billig"
+      }
+     ]
+    },
+    {
+     "art": "text",
+     "text": "Neue Schuhe, eine warme Jacke, ein Pulli für das Praktikum: Beim Einkaufen musst du sagen, was du suchst – und was nicht passt."
+    },
+    {
+     "art": "spalten",
+     "verhaeltnis": "2:1",
+     "links": [
+      {
+       "art": "info",
+       "symbol": "merke",
+       "titel": "Kleidung beschreiben",
+       "punkte": [
+        "Die Jacke ist warm. Die Hose ist blau. Die Schuhe sind neu.",
+        "Gegenteile: groß – klein, lang – kurz, eng – weit, teuer – billig, neu – alt.",
+        "„zu“ heißt: mehr als gut ist – Die Hose ist zu eng.",
+        "Fragen: Haben Sie das in Größe M? Kann ich das anprobieren?"
+       ]
+      }
+     ],
+     "rechts": [
+      {
+       "art": "tabelle",
+       "spalten": [
+        "Kleidung",
+        "Artikel"
+       ],
+       "zeilen": 0,
+       "werte": [
+        [
+         "Jacke, Hose, Mütze",
+         "die"
+        ],
+        [
+         "Pullover, Schuh, Rock",
+         "der"
+        ],
+        [
+         "T-Shirt, Hemd, Kleid",
+         "das"
+        ]
+       ],
+       "breiten": [
+        2.4,
+        1
+       ]
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "Schreib das Gegenteil."
+    },
+    {
+     "art": "paeckchen",
+     "items": [
+      "groß – ___",
+      "lang – ___",
+      "eng – ___",
+      "teuer – ___",
+      "neu – ___",
+      "warm – ___"
+     ],
+     "spalten": 3,
+     "buchstaben": true
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "Was passt? Verbinde."
+    },
+    {
+     "art": "zuordnen",
+     "links": [
+      "Die Hose ist zu lang.",
+      "Die Jacke ist zu teuer.",
+      "Die Schuhe sind zu klein.",
+      "Das T-Shirt ist zu weit."
+     ],
+     "rechts": [
+      "Ich brauche eine kleinere Größe.",
+      "Ich brauche eine größere Größe.",
+      "Ich brauche sie kürzer.",
+      "Haben Sie etwas Billigeres?"
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 2,
+     "text": "Beschreib die Kleidung mit zwei Adjektiven."
+    },
+    {
+     "art": "tabelle",
+     "spalten": [
+      "Kleidung",
+      "Beschreibung"
+     ],
+     "zeilen": 0,
+     "werte": [
+      [
+       "die Jacke",
+       "Die Jacke ist schwarz und warm."
+      ],
+      [
+       "der Pullover",
+       ""
+      ],
+      [
+       "die Schuhe",
+       ""
+      ],
+      [
+       "das T-Shirt",
+       ""
+      ]
+     ],
+     "breiten": [
+      2,
+      4
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 3,
+     "text": "Im Geschäft: Schreib einen kurzen Dialog. Etwas passt nicht – was sagst du?"
+    },
+    {
+     "art": "linien",
+     "anzahl": 6
+    },
+    {
+     "art": "text",
+     "text": "Kurz-Check: Wie sicher bist du?",
+     "klein": true
+    },
+    {
+     "art": "einschaetzung",
+     "items": [
+      "Ich kenne zehn Kleidungsstücke mit Artikel.",
+      "Ich beschreibe Kleidung mit Adjektiven.",
+      "Ich sage höflich, was nicht passt."
+     ],
+     "optionen": [
+      "sicher",
+      "geht so",
+      "noch nicht"
+     ]
+    }
+   ],
+   "lehrer": {
+    "ziel": "Les jeunes nomment des vêtements avec leur article, les décrivent avec des adjectifs (attributs) et expriment avec « zu » ce qui ne va pas.",
+    "ablauf": [
+     "Entrée (5 min) : images d’un prospectus (sans marques) : « Qu’est-ce que c’est ? Comment est-ce ? »",
+     "Règle (10 min) : paires de contraires avec gestes ; jouer « zu » + adjectif (un pull trop grand par-dessus le sien).",
+     "Exercices (20 min) : exercices 1–3 ; exercice 4 en jeu de rôle dans un magasin.",
+     "Clôture (10 min) : « Je vois quelque chose que tu ne vois pas » avec les vêtements de la salle : « Es ist blau und weit. » Mini-bilan."
+    ],
+    "hintergrund": "Les vêtements sont un thème proposé par les standards pour le module 3 ; les adjectifs y sont cités comme point de grammaire. Ici, les adjectifs sont seulement attributs (Die Jacke ist warm.) ; la déclinaison viendra plus tard. Vêtements et argent peuvent être sensibles : il s’agit de langue, pas de marques ni du prix de ses propres vêtements. Aucun commentaire sur les corps – « zu eng » se rapporte toujours au vêtement.",
+    "differenzierung": {
+     "leichter": "Seulement cinq vêtements et les couleurs ; cartes-images.",
+     "schwerer": "Anticiper le comparatif : Haben Sie die Jacke eine Nummer größer?"
+    },
+    "loesungen": [
+     "1) klein · kurz · weit · billig · alt · kalt",
+     "2) Die Hose ist zu lang. – Ich brauche sie kürzer. · Die Jacke ist zu teuer. – Haben Sie etwas Billigeres? · Die Schuhe sind zu klein. – Ich brauche eine größere Größe. · Das T-Shirt ist zu weit. – Ich brauche eine kleinere Größe.",
+     "3) p. ex. Der Pullover ist grau und weich. · Die Schuhe sind neu und bequem. · Das T-Shirt ist weiß und kurz.",
+     "4) réponses libres"
+    ]
+   }
+  }
+ },
+ {
+  "id": "de-m3-steigerung",
+  "bereich": "deutsch",
+  "thema": "grammatik",
+  "stufen": [
+   "ES"
+  ],
+  "sozialform": [
+   "einzeln",
+   "klasse"
+  ],
+  "dauer": "45–60 Min.",
+  "eldib": [],
+  "schlagworte": [
+   "Steigerung",
+   "Komparativ",
+   "Superlativ",
+   "als",
+   "am besten",
+   "Modul 3"
+  ],
+  "bild": "icon:chart-bar",
+  "de": {
+   "titel": "Schneller, höher, am besten",
+   "untertitel": "Adjektive steigern – Modul 3, Lektion 5",
+   "bausteine": [
+    {
+     "art": "bilder",
+     "klein": true,
+     "spalten": 3,
+     "bilder": [
+      {
+       "bild": "icon:run",
+       "text": "schnell – schneller"
+      },
+      {
+       "bild": "icon:trophy",
+       "text": "am schnellsten"
+      },
+      {
+       "bild": "icon:star",
+       "text": "gut – besser – am besten"
+      }
+     ]
+    },
+    {
+     "art": "text",
+     "text": "Wer ist schneller? Was ist am teuersten? Welche Stadt ist am größten? Zum Vergleichen steigert man Adjektive."
+    },
+    {
+     "art": "spalten",
+     "verhaeltnis": "2:1",
+     "links": [
+      {
+       "art": "info",
+       "symbol": "merke",
+       "titel": "Adjektive steigern",
+       "punkte": [
+        "schnell – schneller – am schnellsten",
+        "Vergleich mit „als“: Ben ist schneller als Jo.",
+        "Gleich mit „so … wie“: Mila ist so alt wie Lina.",
+        "Oft mit Umlaut: groß – größer – am größten · alt – älter – am ältesten"
+       ]
+      }
+     ],
+     "rechts": [
+      {
+       "art": "tabelle",
+       "spalten": [
+        "Grundform",
+        "mehr",
+        "am meisten"
+       ],
+       "zeilen": 0,
+       "werte": [
+        [
+         "gut",
+         "besser",
+         "am besten"
+        ],
+        [
+         "viel",
+         "mehr",
+         "am meisten"
+        ],
+        [
+         "gern",
+         "lieber",
+         "am liebsten"
+        ],
+        [
+         "hoch",
+         "höher",
+         "am höchsten"
+        ]
+       ],
+       "breiten": [
+        1.2,
+        1.2,
+        1.6
+       ]
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "Ergänze die Tabelle."
+    },
+    {
+     "art": "tabelle",
+     "spalten": [
+      "Grundform",
+      "Komparativ",
+      "Superlativ"
+     ],
+     "zeilen": 0,
+     "werte": [
+      [
+       "klein",
+       "kleiner",
+       ""
+      ],
+      [
+       "schnell",
+       "",
+       "am schnellsten"
+      ],
+      [
+       "alt",
+       "",
+       ""
+      ],
+      [
+       "teuer",
+       "teurer",
+       ""
+      ],
+      [
+       "gut",
+       "",
+       ""
+      ]
+     ],
+     "breiten": [
+      1.6,
+      1.6,
+      2
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "als oder wie? Ergänze."
+    },
+    {
+     "art": "paeckchen",
+     "items": [
+      "Ben ist größer ___ Jo.",
+      "Mila ist so alt ___ Lina.",
+      "Der Bus ist langsamer ___ der Zug.",
+      "Pizza mag ich lieber ___ Pasta.",
+      "Heute ist es so kalt ___ gestern.",
+      "Paris ist größer ___ Luxemburg."
+     ],
+     "spalten": 2,
+     "buchstaben": true
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 2,
+     "text": "Vergleiche. Schreib zwei Sätze."
+    },
+    {
+     "art": "tabelle",
+     "spalten": [
+      "Info",
+      "Vergleich"
+     ],
+     "zeilen": 0,
+     "werte": [
+      [
+       "Zug: 160 km/h · Bus: 80 km/h",
+       "Der Zug ist schneller als der Bus."
+      ],
+      [
+       "Jacke: 60 € · Pulli: 25 €",
+       ""
+      ],
+      [
+       "Luxemburg: ca. 680 000 Menschen · Belgien: ca. 12 Millionen",
+       ""
+      ],
+      [
+       "Turm A: 50 m · Turm B: 80 m · Turm C: 120 m",
+       ""
+      ]
+     ],
+     "breiten": [
+      3,
+      3
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 3,
+     "text": "Meine Rangliste: Was machst du gern, lieber, am liebsten? Schreib drei Sätze (Sport, Essen, Musik …)."
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Ich … gern …",
+      "Ich … lieber …",
+      "Am liebsten …"
+     ],
+     "linien": 1
+    },
+    {
+     "art": "text",
+     "text": "Kurz-Check: Wie sicher bist du?",
+     "klein": true
+    },
+    {
+     "art": "einschaetzung",
+     "items": [
+      "Ich steigere Adjektive: schnell – schneller – am schnellsten.",
+      "Ich vergleiche mit „als“ und „so … wie“.",
+      "Ich kenne gut – besser – am besten."
+     ],
+     "optionen": [
+      "sicher",
+      "geht so",
+      "noch nicht"
+     ]
+    }
+   ],
+   "lehrer": {
+    "ziel": "Die Jugendlichen bilden Komparativ und Superlativ regelmäßiger und wichtiger unregelmäßiger Adjektive und vergleichen mit „als“ und „so … wie“.",
+    "ablauf": [
+     "Einstieg (5 Min.): Drei Stifte unterschiedlicher Länge: „lang – länger – am längsten“. Wer findet drei Dinge im Raum?",
+     "Regel (10 Min.): Merkkasten; Treppe an die Tafel (Grundform – Komparativ – Superlativ); Ausnahmen gut, viel, gern, hoch.",
+     "Übung (20 Min.): Aufgaben 1–3; Aufgabe 4 als Rangliste.",
+     "Abschluss (10 Min.): „Rekorde der Klasse“ (nur Sachen, keine Menschen bewerten): Welcher Rucksack ist am schwersten? Welcher Stift ist am längsten? Kurz-Check."
+    ],
+    "hintergrund": "Adjektive mit Steigerung sind in den Bildungsstandards für Modul 3 als Grammatikschwerpunkt genannt. Häufige Fehler: „mehr schnell“ (aus dem Französischen „plus vite“), „besser wie“, fehlender Umlaut. Vergleiche zwischen Menschen nur bei neutralen Dingen (Alter mit ausgedachten Figuren, Geschwindigkeit von Fahrzeugen) – keine Vergleiche von Körpern, Noten oder Leistungen in der Klasse. Die Einwohnerzahlen sind gerundet (Luxemburg rund 680 000, Belgien rund 12 Millionen).",
+    "differenzierung": {
+     "leichter": "Nur Komparativ mit „als“; regelmäßige Adjektive ohne Umlaut.",
+     "schwerer": "Eine Statistik (z. B. Länder und Einwohner) mit allen drei Stufen beschreiben."
+    },
+    "loesungen": [
+     "1) klein – kleiner – am kleinsten · schnell – schneller – am schnellsten · alt – älter – am ältesten · teuer – teurer – am teuersten · gut – besser – am besten",
+     "2) als · wie · als · als · wie · als",
+     "3) Die Jacke ist teurer als der Pulli. · Belgien hat mehr Einwohner als Luxemburg. · Turm C ist am höchsten. (Turm B ist höher als Turm A.)",
+     "4) freie Antworten"
+    ]
+   }
+  },
+  "fr": {
+   "titel": "Schneller, höher, am besten",
+   "untertitel": "Adjektive steigern – Modul 3, Lektion 5",
+   "bausteine": [
+    {
+     "art": "bilder",
+     "klein": true,
+     "spalten": 3,
+     "bilder": [
+      {
+       "bild": "icon:run",
+       "text": "schnell – schneller"
+      },
+      {
+       "bild": "icon:trophy",
+       "text": "am schnellsten"
+      },
+      {
+       "bild": "icon:star",
+       "text": "gut – besser – am besten"
+      }
+     ]
+    },
+    {
+     "art": "text",
+     "text": "Wer ist schneller? Was ist am teuersten? Welche Stadt ist am größten? Zum Vergleichen steigert man Adjektive."
+    },
+    {
+     "art": "spalten",
+     "verhaeltnis": "2:1",
+     "links": [
+      {
+       "art": "info",
+       "symbol": "merke",
+       "titel": "Adjektive steigern",
+       "punkte": [
+        "schnell – schneller – am schnellsten",
+        "Vergleich mit „als“: Ben ist schneller als Jo.",
+        "Gleich mit „so … wie“: Mila ist so alt wie Lina.",
+        "Oft mit Umlaut: groß – größer – am größten · alt – älter – am ältesten"
+       ]
+      }
+     ],
+     "rechts": [
+      {
+       "art": "tabelle",
+       "spalten": [
+        "Grundform",
+        "mehr",
+        "am meisten"
+       ],
+       "zeilen": 0,
+       "werte": [
+        [
+         "gut",
+         "besser",
+         "am besten"
+        ],
+        [
+         "viel",
+         "mehr",
+         "am meisten"
+        ],
+        [
+         "gern",
+         "lieber",
+         "am liebsten"
+        ],
+        [
+         "hoch",
+         "höher",
+         "am höchsten"
+        ]
+       ],
+       "breiten": [
+        1.2,
+        1.2,
+        1.6
+       ]
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "Ergänze die Tabelle."
+    },
+    {
+     "art": "tabelle",
+     "spalten": [
+      "Grundform",
+      "Komparativ",
+      "Superlativ"
+     ],
+     "zeilen": 0,
+     "werte": [
+      [
+       "klein",
+       "kleiner",
+       ""
+      ],
+      [
+       "schnell",
+       "",
+       "am schnellsten"
+      ],
+      [
+       "alt",
+       "",
+       ""
+      ],
+      [
+       "teuer",
+       "teurer",
+       ""
+      ],
+      [
+       "gut",
+       "",
+       ""
+      ]
+     ],
+     "breiten": [
+      1.6,
+      1.6,
+      2
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "als oder wie? Ergänze."
+    },
+    {
+     "art": "paeckchen",
+     "items": [
+      "Ben ist größer ___ Jo.",
+      "Mila ist so alt ___ Lina.",
+      "Der Bus ist langsamer ___ der Zug.",
+      "Pizza mag ich lieber ___ Pasta.",
+      "Heute ist es so kalt ___ gestern.",
+      "Paris ist größer ___ Luxemburg."
+     ],
+     "spalten": 2,
+     "buchstaben": true
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 2,
+     "text": "Vergleiche. Schreib zwei Sätze."
+    },
+    {
+     "art": "tabelle",
+     "spalten": [
+      "Info",
+      "Vergleich"
+     ],
+     "zeilen": 0,
+     "werte": [
+      [
+       "Zug: 160 km/h · Bus: 80 km/h",
+       "Der Zug ist schneller als der Bus."
+      ],
+      [
+       "Jacke: 60 € · Pulli: 25 €",
+       ""
+      ],
+      [
+       "Luxemburg: ca. 680 000 Menschen · Belgien: ca. 12 Millionen",
+       ""
+      ],
+      [
+       "Turm A: 50 m · Turm B: 80 m · Turm C: 120 m",
+       ""
+      ]
+     ],
+     "breiten": [
+      3,
+      3
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 3,
+     "text": "Meine Rangliste: Was machst du gern, lieber, am liebsten? Schreib drei Sätze (Sport, Essen, Musik …)."
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Ich … gern …",
+      "Ich … lieber …",
+      "Am liebsten …"
+     ],
+     "linien": 1
+    },
+    {
+     "art": "text",
+     "text": "Kurz-Check: Wie sicher bist du?",
+     "klein": true
+    },
+    {
+     "art": "einschaetzung",
+     "items": [
+      "Ich steigere Adjektive: schnell – schneller – am schnellsten.",
+      "Ich vergleiche mit „als“ und „so … wie“.",
+      "Ich kenne gut – besser – am besten."
+     ],
+     "optionen": [
+      "sicher",
+      "geht so",
+      "noch nicht"
+     ]
+    }
+   ],
+   "lehrer": {
+    "ziel": "Les jeunes forment le comparatif et le superlatif d’adjectifs réguliers et d’irréguliers fréquents et comparent avec « als » et « so … wie ».",
+    "ablauf": [
+     "Entrée (5 min) : trois crayons de longueur différente : « lang – länger – am längsten ». Qui trouve trois objets dans la salle ?",
+     "Règle (10 min) : encadré ; escalier au tableau (forme de base – comparatif – superlatif) ; exceptions gut, viel, gern, hoch.",
+     "Exercices (20 min) : exercices 1–3 ; exercice 4 en classement.",
+     "Clôture (10 min) : « records de la classe » (seulement des objets, ne pas évaluer les personnes) : quel sac est le plus lourd ? quel crayon est le plus long ? Mini-bilan."
+    ],
+    "hintergrund": "Les adjectifs et leurs degrés sont cités dans les standards du module 3 comme point de grammaire. Erreurs fréquentes : « mehr schnell » (calque de « plus vite »), « besser wie », oubli du Umlaut. Comparer des personnes seulement sur des choses neutres (âge de personnages inventés, vitesse de véhicules) – pas de comparaison de corps, de notes ou de performances dans la classe. Les populations sont arrondies (Luxembourg environ 680 000, Belgique environ 12 millions).",
+    "differenzierung": {
+     "leichter": "Seulement le comparatif avec « als » ; adjectifs réguliers sans Umlaut.",
+     "schwerer": "Décrire une statistique (p. ex. pays et habitants) avec les trois degrés."
+    },
+    "loesungen": [
+     "1) klein – kleiner – am kleinsten · schnell – schneller – am schnellsten · alt – älter – am ältesten · teuer – teurer – am teuersten · gut – besser – am besten",
+     "2) als · wie · als · als · wie · als",
+     "3) Die Jacke ist teurer als der Pulli. · Belgien hat mehr Einwohner als Luxemburg. · Turm C ist am höchsten. (Turm B ist höher als Turm A.)",
+     "4) réponses libres"
+    ]
+   }
+  }
+ },
+ {
+  "id": "de-m3-modalverben",
+  "bereich": "deutsch",
+  "thema": "grammatik",
+  "stufen": [
+   "ES"
+  ],
+  "sozialform": [
+   "einzeln",
+   "klasse"
+  ],
+  "dauer": "45–60 Min.",
+  "eldib": [],
+  "schlagworte": [
+   "Modalverben",
+   "müssen",
+   "dürfen",
+   "Regeln",
+   "Verbot",
+   "Modul 3"
+  ],
+  "bild": "icon:hand-stop",
+  "de": {
+   "titel": "Muss ich? Darf ich?",
+   "untertitel": "müssen, dürfen, nicht müssen, nicht dürfen – Modul 3, Lektion 6",
+   "bausteine": [
+    {
+     "art": "bilder",
+     "klein": true,
+     "spalten": 3,
+     "bilder": [
+      {
+       "bild": "icon:shoe",
+       "text": "Sportschuhe muss man mitbringen."
+      },
+      {
+       "bild": "icon:device-mobile",
+       "text": "Im Unterricht darf man das Handy nicht benutzen."
+      },
+      {
+       "bild": "icon:clock",
+       "text": "Am Samstag muss ich nicht kommen."
+      }
+     ]
+    },
+    {
+     "art": "text",
+     "text": "In der Schule, im Bus, im Praktikum: Überall gibt es Regeln. Damit du sie richtig verstehst, musst du vier kleine Unterschiede kennen."
+    },
+    {
+     "art": "spalten",
+     "verhaeltnis": "2:1",
+     "links": [
+      {
+       "art": "info",
+       "symbol": "merke",
+       "titel": "Regeln verstehen",
+       "punkte": [
+        "müssen = Pflicht: Man muss pünktlich sein.",
+        "nicht müssen = nicht nötig: Am Samstag muss ich nicht kommen. (Ich darf aber.)",
+        "dürfen = erlaubt: In der Pause darf man Musik hören.",
+        "nicht dürfen = verboten: Im Gang darf man nicht rennen."
+       ]
+      }
+     ],
+     "rechts": [
+      {
+       "art": "info",
+       "symbol": "tipp",
+       "titel": "Achtung, Falle!",
+       "text": "„Du musst nicht“ heißt NICHT „Du darfst nicht“. Auf Französisch: tu ne dois pas = du darfst nicht · tu n’es pas obligé = du musst nicht."
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "Pflicht, erlaubt, nicht nötig oder verboten? Schreib P, E, N oder V."
+    },
+    {
+     "art": "paeckchen",
+     "items": [
+      "Man muss die Hausaufgaben machen. ___",
+      "Im Gang darf man nicht rennen. ___",
+      "In der Pause darf man Musik hören. ___",
+      "Am Mittwoch muss ich keine Sportschuhe mitbringen. ___",
+      "In der Werkstatt muss man eine Schutzbrille tragen. ___",
+      "Im Unterricht darf man nicht essen. ___"
+     ],
+     "spalten": 1,
+     "buchstaben": true
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "Was bedeutet das Schild? Verbinde."
+    },
+    {
+     "art": "zuordnen",
+     "links": [
+      "Rauchen verboten",
+      "Schutzbrille tragen",
+      "Eintritt frei",
+      "Handy aus"
+     ],
+     "rechts": [
+      "Man muss eine Schutzbrille tragen.",
+      "Man darf hier nicht rauchen.",
+      "Man muss nichts bezahlen.",
+      "Man darf das Handy nicht benutzen."
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 2,
+     "text": "Schreib die Regeln für deine Schule (echt oder ausgedacht): zwei mit „muss“, zwei mit „darf nicht“."
+    },
+    {
+     "art": "tabelle",
+     "spalten": [
+      "Man muss …",
+      "Man darf nicht …"
+     ],
+     "zeilen": 2,
+     "breiten": [
+      3,
+      3
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 3,
+     "text": "Erfinde eine gute Regel für die Pause. Warum ist sie gut? Schreib drei Sätze."
+    },
+    {
+     "art": "linien",
+     "anzahl": 4
+    },
+    {
+     "art": "text",
+     "text": "Kurz-Check: Wie sicher bist du?",
+     "klein": true
+    },
+    {
+     "art": "einschaetzung",
+     "items": [
+      "Ich weiß, was „müssen“ und „dürfen“ bedeuten.",
+      "Ich unterscheide „muss nicht“ und „darf nicht“.",
+      "Ich verstehe Regeln und Schilder."
+     ],
+     "optionen": [
+      "sicher",
+      "geht so",
+      "noch nicht"
+     ]
+    }
+   ],
+   "lehrer": {
+    "ziel": "Die Jugendlichen unterscheiden die Bedeutung von müssen, nicht müssen, dürfen und nicht dürfen und verstehen damit Regeln und Schilder.",
+    "ablauf": [
+     "Einstieg (5 Min.): Vier echte Schilder aus der Schule (fotografiert): Was heißt das?",
+     "Regel (10 Min.): Vierfeldertafel (Pflicht, erlaubt, nicht nötig, verboten); die Falle „muss nicht“ – „darf nicht“ mit dem Französischen vergleichen.",
+     "Übung (20 Min.): Aufgaben 1–3; Aufgabe 4 in Gruppen.",
+     "Abschluss (10 Min.): Die besten Pausenregeln vorstellen und abstimmen. Kurz-Check."
+    ],
+    "hintergrund": "Die Bildungsstandards nennen für Modul 3 ausdrücklich die Bedeutung der Modalverben, auch in der Verneinung (müssen/dürfen). Die Falle „ne pas devoir“ (= nicht dürfen) gegenüber „nicht müssen“ (= ne pas être obligé) führt bei frankophonen Jugendlichen oft zu Missverständnissen – bis hin zu Konflikten über Regeln im Praktikum. Die Schutzbrillen-Regel verbindet mit der Werkstatt.",
+    "differenzierung": {
+     "leichter": "Nur müssen und nicht dürfen; Schilder mit Bildern.",
+     "schwerer": "sollen und können ergänzen: Was ist ein Rat, was eine Möglichkeit?"
+    },
+    "loesungen": [
+     "1) P · V · E · N · P · V",
+     "2) Rauchen verboten – Man darf hier nicht rauchen. · Schutzbrille tragen – Man muss eine Schutzbrille tragen. · Eintritt frei – Man muss nichts bezahlen. · Handy aus – Man darf das Handy nicht benutzen.",
+     "3) freie Antworten",
+     "4) freie Antworten"
+    ]
+   }
+  },
+  "fr": {
+   "titel": "Muss ich? Darf ich?",
+   "untertitel": "müssen, dürfen, nicht müssen, nicht dürfen – Modul 3, Lektion 6",
+   "bausteine": [
+    {
+     "art": "bilder",
+     "klein": true,
+     "spalten": 3,
+     "bilder": [
+      {
+       "bild": "icon:shoe",
+       "text": "Sportschuhe muss man mitbringen."
+      },
+      {
+       "bild": "icon:device-mobile",
+       "text": "Im Unterricht darf man das Handy nicht benutzen."
+      },
+      {
+       "bild": "icon:clock",
+       "text": "Am Samstag muss ich nicht kommen."
+      }
+     ]
+    },
+    {
+     "art": "text",
+     "text": "In der Schule, im Bus, im Praktikum: Überall gibt es Regeln. Damit du sie richtig verstehst, musst du vier kleine Unterschiede kennen."
+    },
+    {
+     "art": "spalten",
+     "verhaeltnis": "2:1",
+     "links": [
+      {
+       "art": "info",
+       "symbol": "merke",
+       "titel": "Regeln verstehen",
+       "punkte": [
+        "müssen = Pflicht: Man muss pünktlich sein.",
+        "nicht müssen = nicht nötig: Am Samstag muss ich nicht kommen. (Ich darf aber.)",
+        "dürfen = erlaubt: In der Pause darf man Musik hören.",
+        "nicht dürfen = verboten: Im Gang darf man nicht rennen."
+       ]
+      }
+     ],
+     "rechts": [
+      {
+       "art": "info",
+       "symbol": "tipp",
+       "titel": "Achtung, Falle!",
+       "text": "„Du musst nicht“ heißt NICHT „Du darfst nicht“. Auf Französisch: tu ne dois pas = du darfst nicht · tu n’es pas obligé = du musst nicht."
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "Pflicht, erlaubt, nicht nötig oder verboten? Schreib P, E, N oder V."
+    },
+    {
+     "art": "paeckchen",
+     "items": [
+      "Man muss die Hausaufgaben machen. ___",
+      "Im Gang darf man nicht rennen. ___",
+      "In der Pause darf man Musik hören. ___",
+      "Am Mittwoch muss ich keine Sportschuhe mitbringen. ___",
+      "In der Werkstatt muss man eine Schutzbrille tragen. ___",
+      "Im Unterricht darf man nicht essen. ___"
+     ],
+     "spalten": 1,
+     "buchstaben": true
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "Was bedeutet das Schild? Verbinde."
+    },
+    {
+     "art": "zuordnen",
+     "links": [
+      "Rauchen verboten",
+      "Schutzbrille tragen",
+      "Eintritt frei",
+      "Handy aus"
+     ],
+     "rechts": [
+      "Man muss eine Schutzbrille tragen.",
+      "Man darf hier nicht rauchen.",
+      "Man muss nichts bezahlen.",
+      "Man darf das Handy nicht benutzen."
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 2,
+     "text": "Schreib die Regeln für deine Schule (echt oder ausgedacht): zwei mit „muss“, zwei mit „darf nicht“."
+    },
+    {
+     "art": "tabelle",
+     "spalten": [
+      "Man muss …",
+      "Man darf nicht …"
+     ],
+     "zeilen": 2,
+     "breiten": [
+      3,
+      3
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 3,
+     "text": "Erfinde eine gute Regel für die Pause. Warum ist sie gut? Schreib drei Sätze."
+    },
+    {
+     "art": "linien",
+     "anzahl": 4
+    },
+    {
+     "art": "text",
+     "text": "Kurz-Check: Wie sicher bist du?",
+     "klein": true
+    },
+    {
+     "art": "einschaetzung",
+     "items": [
+      "Ich weiß, was „müssen“ und „dürfen“ bedeuten.",
+      "Ich unterscheide „muss nicht“ und „darf nicht“.",
+      "Ich verstehe Regeln und Schilder."
+     ],
+     "optionen": [
+      "sicher",
+      "geht so",
+      "noch nicht"
+     ]
+    }
+   ],
+   "lehrer": {
+    "ziel": "Les jeunes distinguent le sens de müssen, nicht müssen, dürfen et nicht dürfen et comprennent ainsi des règles et des panneaux.",
+    "ablauf": [
+     "Entrée (5 min) : quatre vrais panneaux de l’école (photographiés) : qu’est-ce que cela veut dire ?",
+     "Règle (10 min) : tableau en quatre cases (obligation, permis, pas nécessaire, interdit) ; le piège « muss nicht » – « darf nicht » comparé au français.",
+     "Exercices (20 min) : exercices 1–3 ; exercice 4 en groupes.",
+     "Clôture (10 min) : présenter les meilleures règles pour la récréation et voter. Mini-bilan."
+    ],
+    "hintergrund": "Les standards citent expressément pour le module 3 le sens des verbes de modalité, y compris à la forme négative (müssen/dürfen). Le piège « ne pas devoir » (= nicht dürfen) face à « nicht müssen » (= ne pas être obligé) provoque souvent des malentendus chez les jeunes francophones – jusqu’à des conflits sur les règles en stage. La règle des lunettes de protection fait le lien avec l’atelier.",
+    "differenzierung": {
+     "leichter": "Seulement müssen et nicht dürfen ; panneaux avec images.",
+     "schwerer": "Ajouter sollen et können : qu’est-ce qui est un conseil, une possibilité ?"
+    },
+    "loesungen": [
+     "1) P · V · E · N · P · V",
+     "2) Rauchen verboten – Man darf hier nicht rauchen. · Schutzbrille tragen – Man muss eine Schutzbrille tragen. · Eintritt frei – Man muss nichts bezahlen. · Handy aus – Man darf das Handy nicht benutzen.",
+     "3) réponses libres",
+     "4) réponses libres"
+    ]
+   }
+  }
+ },
+ {
+  "id": "de-m3-frueher",
+  "bereich": "deutsch",
+  "thema": "lesen",
+  "stufen": [
+   "ES"
+  ],
+  "sozialform": [
+   "einzeln",
+   "klasse"
+  ],
+  "dauer": "45–60 Min.",
+  "eldib": [],
+  "schlagworte": [
+   "früher und heute",
+   "Zeitangaben",
+   "seit",
+   "vor",
+   "Präteritum",
+   "musste",
+   "durfte",
+   "Modul 3"
+  ],
+  "bild": "icon:calendar",
+  "de": {
+   "titel": "Schule früher und heute",
+   "untertitel": "Zeitangaben und Modalverben im Präteritum – Modul 3, Lektion 7",
+   "bausteine": [
+    {
+     "art": "bilder",
+     "klein": true,
+     "spalten": 3,
+     "bilder": [
+      {
+       "bild": "icon:pencil",
+       "text": "früher: Schiefertafel"
+      },
+      {
+       "bild": "icon:device-laptop",
+       "text": "heute: Laptop"
+      },
+      {
+       "bild": "icon:calendar",
+       "text": "vor 100 Jahren"
+      }
+     ]
+    },
+    {
+     "art": "text",
+     "text": "Vor hundert Jahren sah die Schule ganz anders aus. Was mussten Kinder damals machen? Was durften sie nicht?"
+    },
+    {
+     "art": "spalten",
+     "verhaeltnis": "2:1",
+     "links": [
+      {
+       "art": "info",
+       "symbol": "merke",
+       "titel": "Früher und heute",
+       "punkte": [
+        "Zeitangaben: gestern, heute, morgen · früher, damals, jetzt",
+        "vor + Zeit (Vergangenheit): vor 100 Jahren · seit + Zeit (bis jetzt): seit drei Jahren",
+        "nach / in: nach der Schule · in einer Stunde",
+        "Modalverben im Präteritum: ich musste, durfte, konnte, wollte"
+       ]
+      }
+     ],
+     "rechts": [
+      {
+       "art": "tabelle",
+       "spalten": [
+        "Präsens",
+        "Präteritum"
+       ],
+       "zeilen": 0,
+       "werte": [
+        [
+         "ich muss",
+         "ich musste"
+        ],
+        [
+         "ich darf",
+         "ich durfte"
+        ],
+        [
+         "ich kann",
+         "ich konnte"
+        ],
+        [
+         "ich will",
+         "ich wollte"
+        ]
+       ],
+       "breiten": [
+        1.6,
+        1.6
+       ]
+      }
+     ]
+    },
+    {
+     "art": "text",
+     "text": "Vor ungefähr hundert Jahren gab es in vielen Dörfern nur eine Klasse für alle Kinder. Die Kinder schrieben auf kleinen Schiefertafeln, denn Papier war teuer. Sie mussten still sitzen und durften im Unterricht nicht sprechen. Viele Kinder konnten nach der Schule nicht spielen, sie mussten auf dem Hof oder im Haus helfen. Heute arbeiten wir oft in Gruppen, mit Laptops – und wir dürfen Fragen stellen."
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "Lies den Text. Früher oder heute? Schreib F oder H."
+    },
+    {
+     "art": "paeckchen",
+     "items": [
+      "Die Kinder schrieben auf Schiefertafeln. ___",
+      "Wir arbeiten mit Laptops. ___",
+      "Alle Kinder waren in einer Klasse. ___",
+      "Wir dürfen Fragen stellen. ___",
+      "Papier war teuer. ___",
+      "Wir arbeiten oft in Gruppen. ___"
+     ],
+     "spalten": 2,
+     "buchstaben": true
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "Präsens → Präteritum. Verbinde."
+    },
+    {
+     "art": "zuordnen",
+     "links": [
+      "ich muss",
+      "ich darf",
+      "ich kann",
+      "ich will"
+     ],
+     "rechts": [
+      "ich konnte",
+      "ich wollte",
+      "ich musste",
+      "ich durfte"
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 2,
+     "text": "vor, seit, nach oder in? Ergänze."
+    },
+    {
+     "art": "tabelle",
+     "spalten": [
+      "Satz"
+     ],
+     "zeilen": 0,
+     "werte": [
+      [
+       "___ hundert Jahren schrieben Kinder auf Tafeln. · Ich gehe ___ zwei Jahren auf diese Schule. · ___ der Schule gehe ich zum Training. · ___ einer Woche beginnen die Ferien."
+      ]
+     ],
+     "breiten": [
+      6
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 3,
+     "text": "Früher und heute: Was war anders? Schreib vier Sätze mit musste, durfte oder konnte (Schule, Handy, Musik …)."
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Früher mussten die Kinder …",
+      "Damals durften sie nicht …",
+      "Heute …",
+      "Ich finde, …"
+     ],
+     "linien": 1
+    },
+    {
+     "art": "text",
+     "text": "Kurz-Check: Wie sicher bist du?",
+     "klein": true
+    },
+    {
+     "art": "einschaetzung",
+     "items": [
+      "Ich verstehe einen Text über früher.",
+      "Ich benutze vor, seit, nach und in.",
+      "Ich kenne musste, durfte, konnte, wollte."
+     ],
+     "optionen": [
+      "sicher",
+      "geht so",
+      "noch nicht"
+     ]
+    }
+   ],
+   "lehrer": {
+    "ziel": "Die Jugendlichen verstehen einen Sachtext über die Schule früher, benutzen Zeitangaben (vor, seit, nach, in; gestern, heute, damals) und die Modalverben im Präteritum.",
+    "ablauf": [
+     "Einstieg (5 Min.): Altes Schulfoto (gemeinfrei) zeigen: „Was ist anders als heute?“",
+     "Regel (10 Min.): Zeitstrahl an der Tafel mit vor/seit/nach/in; Präteritum der Modalverben.",
+     "Übung (20 Min.): Text lesen, Aufgaben 1–3; Aufgabe 4 als Vergleich.",
+     "Abschluss (10 Min.): „Was ich früher nicht durfte“ (aus der Kindheit, freiwillig und harmlos: z. B. allein Bus fahren). Kurz-Check."
+    ],
+    "hintergrund": "Schule früher und heute ist ein Themenvorschlag der Bildungsstandards für Modul 3; Zeitangaben und Modalverben im Präteritum sind dort als Grammatik genannt. Der Text ist allgemein gehalten (Dorfschule, Schiefertafel) und lässt sich gut mit Großeltern-Interviews ergänzen – das ist aber freiwillig, weil nicht alle Jugendlichen solche Kontakte haben. „seit“ wird im Französischen mit „depuis“ (Präsens) ausgedrückt – gleiche Logik.",
+    "differenzierung": {
+     "leichter": "Nur Aufgaben 1 und 2; Zeitstrahl als Bild.",
+     "schwerer": "Ein kurzes Interview mit einer älteren Person (Nachbarin, Hausmeister, Lehrperson) führen und im Präteritum berichten."
+    },
+    "loesungen": [
+     "1) F · H · F · H · F · H",
+     "2) ich muss – ich musste · ich darf – ich durfte · ich kann – ich konnte · ich will – ich wollte",
+     "3) Vor · seit · Nach · In",
+     "4) freie Antworten"
+    ]
+   }
+  },
+  "fr": {
+   "titel": "Schule früher und heute",
+   "untertitel": "Zeitangaben und Modalverben im Präteritum – Modul 3, Lektion 7",
+   "bausteine": [
+    {
+     "art": "bilder",
+     "klein": true,
+     "spalten": 3,
+     "bilder": [
+      {
+       "bild": "icon:pencil",
+       "text": "früher: Schiefertafel"
+      },
+      {
+       "bild": "icon:device-laptop",
+       "text": "heute: Laptop"
+      },
+      {
+       "bild": "icon:calendar",
+       "text": "vor 100 Jahren"
+      }
+     ]
+    },
+    {
+     "art": "text",
+     "text": "Vor hundert Jahren sah die Schule ganz anders aus. Was mussten Kinder damals machen? Was durften sie nicht?"
+    },
+    {
+     "art": "spalten",
+     "verhaeltnis": "2:1",
+     "links": [
+      {
+       "art": "info",
+       "symbol": "merke",
+       "titel": "Früher und heute",
+       "punkte": [
+        "Zeitangaben: gestern, heute, morgen · früher, damals, jetzt",
+        "vor + Zeit (Vergangenheit): vor 100 Jahren · seit + Zeit (bis jetzt): seit drei Jahren",
+        "nach / in: nach der Schule · in einer Stunde",
+        "Modalverben im Präteritum: ich musste, durfte, konnte, wollte"
+       ]
+      }
+     ],
+     "rechts": [
+      {
+       "art": "tabelle",
+       "spalten": [
+        "Präsens",
+        "Präteritum"
+       ],
+       "zeilen": 0,
+       "werte": [
+        [
+         "ich muss",
+         "ich musste"
+        ],
+        [
+         "ich darf",
+         "ich durfte"
+        ],
+        [
+         "ich kann",
+         "ich konnte"
+        ],
+        [
+         "ich will",
+         "ich wollte"
+        ]
+       ],
+       "breiten": [
+        1.6,
+        1.6
+       ]
+      }
+     ]
+    },
+    {
+     "art": "text",
+     "text": "Vor ungefähr hundert Jahren gab es in vielen Dörfern nur eine Klasse für alle Kinder. Die Kinder schrieben auf kleinen Schiefertafeln, denn Papier war teuer. Sie mussten still sitzen und durften im Unterricht nicht sprechen. Viele Kinder konnten nach der Schule nicht spielen, sie mussten auf dem Hof oder im Haus helfen. Heute arbeiten wir oft in Gruppen, mit Laptops – und wir dürfen Fragen stellen."
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "Lies den Text. Früher oder heute? Schreib F oder H."
+    },
+    {
+     "art": "paeckchen",
+     "items": [
+      "Die Kinder schrieben auf Schiefertafeln. ___",
+      "Wir arbeiten mit Laptops. ___",
+      "Alle Kinder waren in einer Klasse. ___",
+      "Wir dürfen Fragen stellen. ___",
+      "Papier war teuer. ___",
+      "Wir arbeiten oft in Gruppen. ___"
+     ],
+     "spalten": 2,
+     "buchstaben": true
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "Präsens → Präteritum. Verbinde."
+    },
+    {
+     "art": "zuordnen",
+     "links": [
+      "ich muss",
+      "ich darf",
+      "ich kann",
+      "ich will"
+     ],
+     "rechts": [
+      "ich konnte",
+      "ich wollte",
+      "ich musste",
+      "ich durfte"
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 2,
+     "text": "vor, seit, nach oder in? Ergänze."
+    },
+    {
+     "art": "tabelle",
+     "spalten": [
+      "Satz"
+     ],
+     "zeilen": 0,
+     "werte": [
+      [
+       "___ hundert Jahren schrieben Kinder auf Tafeln. · Ich gehe ___ zwei Jahren auf diese Schule. · ___ der Schule gehe ich zum Training. · ___ einer Woche beginnen die Ferien."
+      ]
+     ],
+     "breiten": [
+      6
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 3,
+     "text": "Früher und heute: Was war anders? Schreib vier Sätze mit musste, durfte oder konnte (Schule, Handy, Musik …)."
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Früher mussten die Kinder …",
+      "Damals durften sie nicht …",
+      "Heute …",
+      "Ich finde, …"
+     ],
+     "linien": 1
+    },
+    {
+     "art": "text",
+     "text": "Kurz-Check: Wie sicher bist du?",
+     "klein": true
+    },
+    {
+     "art": "einschaetzung",
+     "items": [
+      "Ich verstehe einen Text über früher.",
+      "Ich benutze vor, seit, nach und in.",
+      "Ich kenne musste, durfte, konnte, wollte."
+     ],
+     "optionen": [
+      "sicher",
+      "geht so",
+      "noch nicht"
+     ]
+    }
+   ],
+   "lehrer": {
+    "ziel": "Les jeunes comprennent un texte documentaire sur l’école d’autrefois, utilisent des indications de temps (vor, seit, nach, in ; gestern, heute, damals) et les verbes de modalité au prétérit.",
+    "ablauf": [
+     "Entrée (5 min) : montrer une ancienne photo de classe (libre de droits) : « Qu’est-ce qui est différent d’aujourd’hui ? »",
+     "Règle (10 min) : frise au tableau avec vor/seit/nach/in ; prétérit des verbes de modalité.",
+     "Exercices (20 min) : lire le texte, exercices 1–3 ; exercice 4 en comparaison.",
+     "Clôture (10 min) : « Ce que je n’avais pas le droit de faire avant » (de l’enfance, volontaire et anodin : p. ex. prendre le bus seul). Mini-bilan."
+    ],
+    "hintergrund": "L’école autrefois et aujourd’hui est un thème proposé par les standards pour le module 3 ; les indications de temps et les verbes de modalité au prétérit y sont cités. Le texte reste général (école de village, ardoise) et peut être complété par des interviews de grands-parents – mais c’est volontaire, car tous les jeunes n’ont pas ces contacts. « seit » correspond au français « depuis » (avec le présent) – même logique.",
+    "differenzierung": {
+     "leichter": "Seulement les exercices 1 et 2 ; frise en image.",
+     "schwerer": "Mener une courte interview avec une personne âgée (voisine, concierge, enseignant·e) et la raconter au prétérit."
+    },
+    "loesungen": [
+     "1) F · H · F · H · F · H",
+     "2) ich muss – ich musste · ich darf – ich durfte · ich kann – ich konnte · ich will – ich wollte",
+     "3) Vor · seit · Nach · In",
+     "4) réponses libres"
+    ]
+   }
+  }
+ },
+ {
+  "id": "de-m3-brief",
+  "bereich": "deutsch",
+  "thema": "schreiben",
+  "stufen": [
+   "ES"
+  ],
+  "sozialform": [
+   "einzeln",
+   "klasse"
+  ],
+  "dauer": "45–60 Min.",
+  "eldib": [],
+  "schlagworte": [
+   "Brief",
+   "E-Mail",
+   "Anrede",
+   "Grußformel",
+   "Höflichkeit",
+   "Sie",
+   "Modul 3"
+  ],
+  "bild": "icon:mail",
+  "de": {
+   "titel": "Liebe Mila, …",
+   "untertitel": "Einen persönlichen Brief schreiben – Modul 3, Lektion 8",
+   "bausteine": [
+    {
+     "art": "bilder",
+     "klein": true,
+     "spalten": 3,
+     "bilder": [
+      {
+       "bild": "icon:mail",
+       "text": "der Brief"
+      },
+      {
+       "bild": "icon:users",
+       "text": "Liebe Mila,"
+      },
+      {
+       "bild": "icon:school",
+       "text": "Sehr geehrte Frau Weber,"
+      }
+     ]
+    },
+    {
+     "art": "text",
+     "text": "Eine Nachricht an eine Freundin klingt anders als eine E-Mail an die Lehrerin. Anrede und Gruß zeigen, wie nah man sich ist."
+    },
+    {
+     "art": "spalten",
+     "verhaeltnis": "2:1",
+     "links": [
+      {
+       "art": "info",
+       "symbol": "merke",
+       "titel": "Brief und E-Mail",
+       "punkte": [
+        "Persönlich: Liebe Mila, / Lieber Ben, … Viele Grüße / Bis bald! Dein Sam",
+        "Höflich: Sehr geehrte Frau Weber, / Sehr geehrter Herr Hoffmann, … Mit freundlichen Grüßen, Sam Muster",
+        "Nach der Anrede: Komma – dann klein weiter: Liebe Mila, wie geht es dir?",
+        "Höflich schreibt man Sie, Ihnen, Ihr groß."
+       ]
+      }
+     ],
+     "rechts": [
+      {
+       "art": "dialog",
+       "zeilen": [
+        {
+         "wer": "",
+         "text": "Liebe Mila,"
+        },
+        {
+         "wer": "",
+         "text": "danke für deine Karte! Am Samstag habe ich Ayla getroffen. Wir sind ins Kino gegangen. Kommst du nächstes Mal mit?"
+        },
+        {
+         "wer": "",
+         "text": "Viele Grüße"
+        },
+        {
+         "wer": "",
+         "text": "Sam"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "Persönlich oder höflich? Schreib p oder h."
+    },
+    {
+     "art": "paeckchen",
+     "items": [
+      "Liebe Mila, ___",
+      "Sehr geehrte Frau Weber, ___",
+      "Mit freundlichen Grüßen ___",
+      "Bis bald! ___",
+      "Hallo Ben, ___",
+      "Sehr geehrter Herr Hoffmann, ___"
+     ],
+     "spalten": 2,
+     "buchstaben": true
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "Welcher Gruß passt zur Anrede? Verbinde."
+    },
+    {
+     "art": "zuordnen",
+     "links": [
+      "Liebe Ayla,",
+      "Sehr geehrte Frau Kremer,",
+      "Hi Jo,"
+     ],
+     "rechts": [
+      "Mit freundlichen Grüßen",
+      "Bis morgen!",
+      "Viele Grüße"
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 2,
+     "text": "Schreib die E-Mail richtig: Großschreibung, Komma nach der Anrede, Sie groß."
+    },
+    {
+     "art": "tabelle",
+     "spalten": [
+      "so nicht",
+      "so ist es richtig"
+     ],
+     "zeilen": 0,
+     "werte": [
+      [
+       "sehr geehrte frau weber",
+       ""
+      ],
+      [
+       "ich bin morgen krank. können sie mir die hausaufgaben schicken?",
+       ""
+      ],
+      [
+       "ich danke ihnen.",
+       ""
+      ],
+      [
+       "mit freundlichen grüßen sam",
+       ""
+      ]
+     ],
+     "breiten": [
+      3,
+      3
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 3,
+     "text": "Schreib einen kurzen Brief (5–6 Sätze) an eine Freundin oder einen Freund: Was hast du am Wochenende gemacht? (echt oder ausgedacht)"
+    },
+    {
+     "art": "linien",
+     "anzahl": 7
+    },
+    {
+     "art": "text",
+     "text": "Kurz-Check: Wie sicher bist du?",
+     "klein": true
+    },
+    {
+     "art": "einschaetzung",
+     "items": [
+      "Ich wähle die passende Anrede und den passenden Gruß.",
+      "Ich setze ein Komma nach der Anrede und schreibe klein weiter.",
+      "Ich schreibe Sie, Ihnen, Ihr groß."
+     ],
+     "optionen": [
+      "sicher",
+      "geht so",
+      "noch nicht"
+     ]
+    }
+   ],
+   "lehrer": {
+    "ziel": "Die Jugendlichen verstehen und schreiben kurze persönliche Briefe und E-Mails mit passender Anrede, Grußformel und Höflichkeitsform.",
+    "ablauf": [
+     "Einstieg (5 Min.): Zwei Nachrichten nebeneinander (an einen Freund und an eine Lehrerin) – was ist anders?",
+     "Regel (10 Min.): Aufbau eines Briefs an der Tafel (Anrede – Text – Gruß – Name); Komma nach der Anrede; Sie groß.",
+     "Übung (20 Min.): Aufgaben 1–3; Aufgabe 4 als Brief an eine echte oder ausgedachte Person.",
+     "Abschluss (10 Min.): Briefe tauschen und eine kurze Antwort schreiben. Kurz-Check."
+    ],
+    "hintergrund": "Einen einfachen persönlichen Brief verstehen und schreiben ist eine Kompetenz der Bildungsstandards für Modul 3; Höflichkeit in der Anrede ist als Sprachbetrachtung genannt. Die E-Mail an die Lehrperson ist für viele Jugendliche die wichtigste Form – und später für Praktikum und Bewerbung. Die Groß- und Kleinschreibung nach der Anrede („Liebe Mila, wie …“) wiederholt Modul 1 und 2.",
+    "differenzierung": {
+     "leichter": "Briefvorlage mit Lücken (Anrede, zwei Sätze, Gruß).",
+     "schwerer": "Eine höfliche E-Mail an einen Praktikumsbetrieb schreiben (Frage nach einem Termin)."
+    },
+    "loesungen": [
+     "1) p · h · h · p · p · h",
+     "2) Liebe Ayla, – Viele Grüße · Sehr geehrte Frau Kremer, – Mit freundlichen Grüßen · Hi Jo, – Bis morgen!",
+     "3) Sehr geehrte Frau Weber, · ich bin morgen krank. Können Sie mir die Hausaufgaben schicken? · Ich danke Ihnen. · Mit freundlichen Grüßen, Sam",
+     "4) freie Antworten"
+    ]
+   }
+  },
+  "fr": {
+   "titel": "Liebe Mila, …",
+   "untertitel": "Einen persönlichen Brief schreiben – Modul 3, Lektion 8",
+   "bausteine": [
+    {
+     "art": "bilder",
+     "klein": true,
+     "spalten": 3,
+     "bilder": [
+      {
+       "bild": "icon:mail",
+       "text": "der Brief"
+      },
+      {
+       "bild": "icon:users",
+       "text": "Liebe Mila,"
+      },
+      {
+       "bild": "icon:school",
+       "text": "Sehr geehrte Frau Weber,"
+      }
+     ]
+    },
+    {
+     "art": "text",
+     "text": "Eine Nachricht an eine Freundin klingt anders als eine E-Mail an die Lehrerin. Anrede und Gruß zeigen, wie nah man sich ist."
+    },
+    {
+     "art": "spalten",
+     "verhaeltnis": "2:1",
+     "links": [
+      {
+       "art": "info",
+       "symbol": "merke",
+       "titel": "Brief und E-Mail",
+       "punkte": [
+        "Persönlich: Liebe Mila, / Lieber Ben, … Viele Grüße / Bis bald! Dein Sam",
+        "Höflich: Sehr geehrte Frau Weber, / Sehr geehrter Herr Hoffmann, … Mit freundlichen Grüßen, Sam Muster",
+        "Nach der Anrede: Komma – dann klein weiter: Liebe Mila, wie geht es dir?",
+        "Höflich schreibt man Sie, Ihnen, Ihr groß."
+       ]
+      }
+     ],
+     "rechts": [
+      {
+       "art": "dialog",
+       "zeilen": [
+        {
+         "wer": "",
+         "text": "Liebe Mila,"
+        },
+        {
+         "wer": "",
+         "text": "danke für deine Karte! Am Samstag habe ich Ayla getroffen. Wir sind ins Kino gegangen. Kommst du nächstes Mal mit?"
+        },
+        {
+         "wer": "",
+         "text": "Viele Grüße"
+        },
+        {
+         "wer": "",
+         "text": "Sam"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "Persönlich oder höflich? Schreib p oder h."
+    },
+    {
+     "art": "paeckchen",
+     "items": [
+      "Liebe Mila, ___",
+      "Sehr geehrte Frau Weber, ___",
+      "Mit freundlichen Grüßen ___",
+      "Bis bald! ___",
+      "Hallo Ben, ___",
+      "Sehr geehrter Herr Hoffmann, ___"
+     ],
+     "spalten": 2,
+     "buchstaben": true
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 1,
+     "text": "Welcher Gruß passt zur Anrede? Verbinde."
+    },
+    {
+     "art": "zuordnen",
+     "links": [
+      "Liebe Ayla,",
+      "Sehr geehrte Frau Kremer,",
+      "Hi Jo,"
+     ],
+     "rechts": [
+      "Mit freundlichen Grüßen",
+      "Bis morgen!",
+      "Viele Grüße"
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 2,
+     "text": "Schreib die E-Mail richtig: Großschreibung, Komma nach der Anrede, Sie groß."
+    },
+    {
+     "art": "tabelle",
+     "spalten": [
+      "so nicht",
+      "so ist es richtig"
+     ],
+     "zeilen": 0,
+     "werte": [
+      [
+       "sehr geehrte frau weber",
+       ""
+      ],
+      [
+       "ich bin morgen krank. können sie mir die hausaufgaben schicken?",
+       ""
+      ],
+      [
+       "ich danke ihnen.",
+       ""
+      ],
+      [
+       "mit freundlichen grüßen sam",
+       ""
+      ]
+     ],
+     "breiten": [
+      3,
+      3
+     ]
+    },
+    {
+     "art": "aufgabe",
+     "stufe": 3,
+     "text": "Schreib einen kurzen Brief (5–6 Sätze) an eine Freundin oder einen Freund: Was hast du am Wochenende gemacht? (echt oder ausgedacht)"
+    },
+    {
+     "art": "linien",
+     "anzahl": 7
+    },
+    {
+     "art": "text",
+     "text": "Kurz-Check: Wie sicher bist du?",
+     "klein": true
+    },
+    {
+     "art": "einschaetzung",
+     "items": [
+      "Ich wähle die passende Anrede und den passenden Gruß.",
+      "Ich setze ein Komma nach der Anrede und schreibe klein weiter.",
+      "Ich schreibe Sie, Ihnen, Ihr groß."
+     ],
+     "optionen": [
+      "sicher",
+      "geht so",
+      "noch nicht"
+     ]
+    }
+   ],
+   "lehrer": {
+    "ziel": "Les jeunes comprennent et écrivent de courtes lettres et e-mails personnels avec la formule d’appel, la formule de salutation et la forme de politesse qui conviennent.",
+    "ablauf": [
+     "Entrée (5 min) : deux messages côte à côte (à un ami et à une enseignante) – qu’est-ce qui change ?",
+     "Règle (10 min) : structure d’une lettre au tableau (appel – texte – salutation – nom) ; virgule après l’appel ; Sie avec majuscule.",
+     "Exercices (20 min) : exercices 1–3 ; exercice 4 comme lettre à une personne réelle ou inventée.",
+     "Clôture (10 min) : échanger les lettres et écrire une courte réponse. Mini-bilan."
+    ],
+    "hintergrund": "Comprendre et écrire une lettre personnelle simple est une compétence des standards du module 3 ; la politesse dans l’adresse y est citée (observation de la langue). L’e-mail à l’enseignant·e est pour beaucoup de jeunes la forme la plus importante – et plus tard pour le stage et la candidature. Minuscule après l’appel (« Liebe Mila, wie … ») : reprise des modules 1 et 2.",
+    "differenzierung": {
+     "leichter": "Modèle de lettre à trous (appel, deux phrases, salutation).",
+     "schwerer": "Écrire un e-mail poli à une entreprise de stage (demande de rendez-vous)."
+    },
+    "loesungen": [
+     "1) p · h · h · p · p · h",
+     "2) Liebe Ayla, – Viele Grüße · Sehr geehrte Frau Kremer, – Mit freundlichen Grüßen · Hi Jo, – Bis morgen!",
+     "3) Sehr geehrte Frau Weber, · ich bin morgen krank. Können Sie mir die Hausaufgaben schicken? · Ich danke Ihnen. · Mit freundlichen Grüßen, Sam",
+     "4) réponses libres"
+    ]
+   }
+  }
  }
 ]

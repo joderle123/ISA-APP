@@ -12,7 +12,7 @@ export const STAERKEN2 = {
   ehrlich: { name: 'Ehrlich sein', text: 'Du hast gesagt, wie es wirklich ist.' },
   mut: { name: 'Für andere einstehen', text: 'Du hast gesagt: Das ist nicht okay.' },
   entscheiden: { name: 'Selbst entscheiden', text: 'Du hast dir etwas ausgesucht.' },
-  ichbotschaft: { name: 'Ich-Botschaft', text: 'Du hast von dir gesprochen, ohne Vorwurf.' },
+  ichbotschaft: { name: 'Klartext', text: 'Klar gesagt, was nervt. Ohne rumzubrüllen.' },
   atmen: { name: 'Sich beruhigen', text: 'Du hast geatmet, bis es ruhiger wurde.' },
 };
 
@@ -153,9 +153,9 @@ export const GESPRAECHE2 = {
     ['erzaehler', 'An der Pinnwand hängen Zettel für die AGs. Mittwochs ab 14 Uhr.'],
     { wahl: [
       { t: 'Theater-AG', staerke: 'entscheiden', merke: 'agTheater', herz: { ayla: 1 }, dann: [
-        ['ayla', 'Theater? Da bin ich auch!'], ['du', 'Ich bin aber nicht so gut im Reden.'], ['ayla', 'Musst du nicht. Man kann auch Licht und Musik machen.'] ] },
+        ['ayla', 'Theater? Da bin ich auch!'], ['du', 'Ich spiel aber keinen Baum.'], ['ayla', 'Musst du nicht. Du kannst Licht machen. Und Nebel!'] ] },
       { t: 'Robotik-AG', staerke: 'entscheiden', merke: 'agRobotik', herz: { yusuf: 1 }, dann: [
-        ['yusuf', 'Robotik ist cool. Wir bauen einen Roboter-Arm.'], ['yusuf', 'Komm einfach mit, ich zeig dir alles.'] ] },
+        ['yusuf', 'Roboter-Arm. Kann schon winken.'], ['yusuf', 'Sonst nix. Noch. Komm mit.'] ] },
       { t: 'Schulgarten-AG', staerke: 'entscheiden', merke: 'agGarten', herz: { mila: 1 }, dann: [
         ['erzaehler', 'Auf der Liste steht schon ein Name: Mila.'], ['erzaehler', 'Du schreibst deinen Namen darunter.'] ] },
       { t: 'Erst mal keine.', dann: [['erzaehler', 'Kein Problem. Die Zettel hängen noch bis Oktober.']] },
@@ -282,7 +282,7 @@ export const GESPRAECHE2 = {
     ['erzaehler', 'Mila wird rot. Sie sagt nichts.'],
     { wahl: [
       { t: '„Muss sie das jetzt vor allen sagen?“', staerke: 'mut', herz: { mila: 2, hoffmann: -1 }, merke: 'hoffmannGestoppt', dann: [
-        ['hoffmann', '… Nein. Stimmt. Sorry, Mila.'],
+        ['hoffmann', '(Pause) … Nein. Muss sie nicht.'],
         ['hoffmann', 'Dann anders: Was soll im Chat gelten?'] ] },
       { t: '(Auf den Tisch schauen. Abwarten.)', dann: [
         ['erzaehler', 'Zehn lange Sekunden.'],
@@ -307,7 +307,7 @@ export const GESPRAECHE2 = {
   ],
   woche: [
     ['erzaehler', 'Freitag, 15:30 Uhr. Die erste Woche ist geschafft.'],
-    ['noah', 'Samstag Fußball mit meinem Bruder. Um zwei. Kommst du?'],
+    ['noah', 'Samstag Fußball am Bolzplatz. Um zwei. Kommst du?'],
     ['ayla', 'Samstag um zwei probt meine Band. Kommst du zuhören?'],
     { wahl: [
       { t: '„Noah. Fußball.“', herz: { noah: 2, ayla: -1 }, merke: 'samstagNoah', dann: [['ayla', 'Ah. Okay. Nächstes Mal.']] },
@@ -316,7 +316,7 @@ export const GESPRAECHE2 = {
       { t: '„Ich versuch, beides zu schaffen.“', herz: { noah: 1, ayla: 1 }, merke: 'doppeltZugesagt', dann: [['noah', 'Cool!'], ['ayla', 'Cool! Ich sag’s den anderen.']] },
     ] },
     { tu: 'milaWoche' },
-    ['erzaehler', 'Der Bus kommt. Bis Montag, Annexe Junglinster.'],
+    ['fahrer', 'Wochenende. Wer im Bus isst, putzt den Bus.'],
     { tu: 'kapitelEnde' },
   ],
 };
@@ -335,7 +335,7 @@ export function ichBotschaftThema() {
   return {
     thema: 'Das Foto im Klassenchat',
     teile: [
-      { start: 'Ich fühle mich …', optionen: [{ t: 'unwohl', gut: true }, { t: 'traurig', gut: true }, { t: 'wütend', gut: true }, { t: 'Du bist gemein, Jo.', gut: false, tipp: 'Das ist eine Du-Botschaft. Wie fühlst DU dich?' }] },
+      { start: 'Ich fühle mich …', optionen: [{ t: 'unwohl', gut: true }, { t: 'traurig', gut: true }, { t: 'wütend', gut: true }, { t: 'Du bist gemein, Jo.', gut: false, tipp: 'So gesagt, gibt’s Krieg. Wie geht’s DIR damit?' }] },
       { start: '… wenn …', optionen: [{ t: 'Fotos ohne Fragen geteilt werden.', gut: true }, { t: 'Jo immer alles kaputt macht.', gut: false, tipp: 'Das klingt nach Vorwurf. Was genau ist passiert?' }, { t: 'alle darüber lachen.', gut: true }] },
       { start: 'Ich wünsche mir, …', optionen: [{ t: 'dass wir vorher fragen.', gut: true }, { t: 'dass Jo Ärger bekommt.', gut: false, tipp: 'Was soll in Zukunft anders sein?' }, { t: 'dass wir so etwas löschen.', gut: true }] },
     ],

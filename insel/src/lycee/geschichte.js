@@ -14,7 +14,7 @@
 
 export const STAERKEN = {
   kontakt: { name: 'Kontakt aufnehmen', text: 'Du hast jemanden angesprochen.' },
-  klar: { name: 'Freundlich und klar', text: 'Du hast gesagt, was du brauchst – ohne Druck.' },
+  klar: { name: 'Freundlich und klar', text: 'Gesagt, was Sache ist. Keiner war sauer.' },
   warten: { name: 'Den Moment abwarten', text: 'Du hast gewartet, bis der andere Zeit hatte.' },
   zuhoeren: { name: 'Zuhören', text: 'Du hast nachgefragt und zugehört.' },
   ruhig: { name: 'Ruhig bleiben', text: 'Es war ärgerlich. Du bist ruhig geblieben.' },
@@ -123,7 +123,7 @@ export const SCHRITTE = [
 export const GESPRAECHE = {
   intro: [
     ['erzaehler', 'Montag, 7:33 Uhr. Dein erster Tag in der Annexe Junglinster.'],
-    ['erzaehler', 'Neue Schule. Neue Leute. Niemand kennt dich hier.'],
+    ['erzaehler', 'Neue Schule. Dein Rucksack ist zu neu. Das sieht man.'],
     ['erzaehler', 'An der Haltestelle wartet ein Junge. Er sieht genauso neu aus.'],
   ],
   noah1: [
@@ -175,7 +175,7 @@ export const GESPRAECHE = {
       { t: '(Einfach durchdrängeln.)', herz: { kenan: -1, dario: -1 }, merke: 'gedraengelt', dann: [
         ['kenan', 'Ey! Geht’s noch?'],
         ['dario', 'Lass. Neu hier.'],
-        ['erzaehler', 'Sie schauen dir nach. Ein komisches Gefühl.'] ] },
+        ['erzaehler', 'Sie schauen dir nach. Kenan merkt sich dein Gesicht.'] ] },
       { t: '(Warten, bis sie weggehen.)', merke: 'gewartet', dann: [
         ['erzaehler', 'Sie reden weiter. Dann klingelt es.'],
         ['dario', 'Oh – wir müssen. Komm, Kenan.'],
@@ -201,17 +201,17 @@ export const GESPRAECHE = {
     { tu: 'bingoStart' },
   ],
   bingoFertig: [
-    ['hoffmann', 'Bingo! Sehr gut. Jetzt kennst du schon ein paar.'],
+    ['hoffmann', 'Bingo! Schneller als die 7P1. Setzen.'],
     ['hoffmann', 'So, setzt euch. Gleich ist große Pause.'],
   ],
   // Bingo-Gespräche: je Person. Die Wahl ist, WIE man fragt. Antwort sagt, auf welches Feld sie passt.
   bingo_ayla: { felder: ['musik'], zeilen: [['ayla', 'Ich spiel Gitarre. Seit drei Jahren.'], ['ayla', 'Und du so?']] },
   bingo_ben: { felder: ['sport', 'tier'], zeilen: [['ben', 'Basketball im Verein! Und wir haben einen Hund.'], ['ben', 'Er heißt Keks.']] },
-  bingo_chiara: { felder: ['kochen'], zeilen: [['chiara', 'Ich koch total gern. Am liebsten Pasta.'], ['chiara', 'Meine Oma hat’s mir gezeigt.']] },
+  bingo_chiara: { felder: ['kochen'], zeilen: [['chiara', 'Ich koch total gern. Am liebsten Pasta.'], ['chiara', 'Mit viel zu viel Knoblauch. Absichtlich.']] },
   bingo_yusuf: { felder: ['sport'], zeilen: [['yusuf', 'Ich mach Judo. Zweimal die Woche.']] },
   bingo_jo: { felder: ['tier'], zeilen: [['jo', 'Zwei Katzen. Die sind chaotisch.'], ['jo', 'Was steht da noch? Zeig mal.']] },
   bingo_lina: { felder: ['musik', 'kochen'], zeilen: [['lina', '(leise) Ich … spiel Klavier.'], ['lina', 'Und ich back manchmal. Kuchen.']] },
-  bingo_noah: { felder: [], zeilen: [['noah', 'Ich hab leider nichts davon. Frag die anderen!'], ['noah', 'Lina da hinten ist noch ganz allein.']] },
+  bingo_noah: { felder: [], zeilen: [['noah', 'Ich hab leider nichts davon. Frag die anderen!'], ['noah', 'Lina hat bestimmt zwei Felder. Sie sagt’s nur nicht.']] },
   mila: [
     ['erzaehler', 'Mila sitzt allein auf der Bank. Sie dreht an einem Zauberwürfel.'],
     { wahl: [
@@ -332,7 +332,7 @@ export const GESPRAECHE = {
       { t: 'Ja. War ein langer Tag.', herz: { noah: 1 }, dann: [['noah', 'Total. Aber besser als gedacht.']] },
     ] },
     { tu: 'milaAbschied' },
-    ['erzaehler', 'Der Bus kommt. Morgen geht es weiter.'],
+    ['fahrer', 'Einsteigen. Ich warte nicht. Nie.'],
     { tu: 'kapitelEnde' },
   ],
   milaAbschied_ja: [

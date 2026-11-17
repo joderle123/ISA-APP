@@ -178,7 +178,7 @@ export const GESPRAECHE3 = {
       { t: 'Anstrengend. Aber gut.', herz: { noah: 1 }, dann: [['noah', 'Ich hab mir fast in den Finger gesägt, haha.']] },
       { t: 'Ich hab mich beim Sägen verhauen.', herz: { noah: 1 }, dann: [['noah', 'Ich auch. Zweimal. Becker hat nur geseufzt.']] },
     ] },
-    ['erzaehler', 'Der Bus kommt. Pünktlich.'],
+    ['fahrer', 'Pünktlich. Wie immer. Applaus ist erlaubt.'],
     { tu: 'kapitelEnde' },
   ],
 };

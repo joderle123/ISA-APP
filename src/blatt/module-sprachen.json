@@ -223,5 +223,445 @@
     "fr": "J’écris une courte invitation et je mets une majuscule aux noms."
    }
   }
+ },
+ {
+  "id": "deutsch-m2",
+  "nr": 2,
+  "bereich": "deutsch",
+  "fach": {
+   "de": "Deutsch",
+   "fr": "Allemand"
+  },
+  "klasse": "VP",
+  "titel": {
+   "de": "Stadt, Sport und große Ideen",
+   "fr": "Ville, sport et grandes idées"
+  },
+  "untertitel": {
+   "de": "8 Lektionen mit Regel, Beispiel und Übungen in drei Stufen – sich in der Stadt zurechtfinden, Wege erklären, von früher erzählen, Erfinder kennenlernen.",
+   "fr": "8 leçons avec règle, exemple et exercices sur trois niveaux – s’orienter en ville, expliquer un chemin, raconter le passé, découvrir des inventeurs."
+  },
+  "themen": [
+   {
+    "titel": {
+     "de": "Unterwegs in der Stadt",
+     "fr": "En ville"
+    },
+    "bild": "icon:map",
+    "lektionen": [
+     "de-m2-stadt",
+     "de-m2-imperativ"
+    ]
+   },
+   {
+    "titel": {
+     "de": "Wörter und Sätze",
+     "fr": "Mots et phrases"
+    },
+    "bild": "icon:puzzle",
+    "lektionen": [
+     "de-m2-komposita",
+     "de-m2-satzzeichen"
+    ]
+   },
+   {
+    "titel": {
+     "de": "Was war? – Perfekt",
+     "fr": "Qu’est-ce qui s’est passé ? – le parfait"
+    },
+    "bild": "icon:calendar",
+    "lektionen": [
+     "de-m2-perfekt-haben",
+     "de-m2-perfekt-sein"
+    ]
+   },
+   {
+    "titel": {
+     "de": "Menschen und Sport",
+     "fr": "Des gens et du sport"
+    },
+    "bild": "icon:trophy",
+    "lektionen": [
+     "de-m2-erfinder",
+     "de-m2-sport"
+    ]
+   }
+  ],
+  "wortschatz": [
+   {
+    "thema": 0,
+    "de": "der Stadtplan, die Legende",
+    "fr": "le plan de la ville, la légende"
+   },
+   {
+    "thema": 0,
+    "de": "der Bahnhof, die Haltestelle",
+    "fr": "la gare, l’arrêt"
+   },
+   {
+    "thema": 0,
+    "de": "das Rathaus, die Post",
+    "fr": "la mairie, la poste"
+   },
+   {
+    "thema": 0,
+    "de": "die Apotheke, das Museum",
+    "fr": "la pharmacie, le musée"
+   },
+   {
+    "thema": 0,
+    "de": "neben, zwischen, gegenüber",
+    "fr": "à côté de, entre, en face de"
+   },
+   {
+    "thema": 0,
+    "de": "abbiegen, die Ampel, die Kreuzung",
+    "fr": "tourner, le feu, le carrefour"
+   },
+   {
+    "thema": 0,
+    "de": "Geh! Geht! Gehen Sie!",
+    "fr": "Va ! Allez ! (pluriel) Allez ! (politesse)"
+   },
+   {
+    "thema": 1,
+    "de": "das zusammengesetzte Nomen",
+    "fr": "le nom composé"
+   },
+   {
+    "thema": 1,
+    "de": "der Punkt, das Fragezeichen",
+    "fr": "le point, le point d’interrogation"
+   },
+   {
+    "thema": 1,
+    "de": "das Ausrufezeichen",
+    "fr": "le point d’exclamation"
+   },
+   {
+    "thema": 1,
+    "de": "die Aussage, die Frage, die Aufforderung",
+    "fr": "l’affirmation, la question, l’injonction"
+   },
+   {
+    "thema": 1,
+    "de": "die Satzmelodie",
+    "fr": "l’intonation de la phrase"
+   },
+   {
+    "thema": 2,
+    "de": "das Perfekt",
+    "fr": "le parfait (passé composé)"
+   },
+   {
+    "thema": 2,
+    "de": "das Partizip: gespielt, gefahren",
+    "fr": "le participe : joué, allé (en véhicule)"
+   },
+   {
+    "thema": 2,
+    "de": "gestern, am Wochenende",
+    "fr": "hier, le week-end"
+   },
+   {
+    "thema": 2,
+    "de": "fahren – ist gefahren",
+    "fr": "aller (en véhicule) – est allé"
+   },
+   {
+    "thema": 2,
+    "de": "essen – hat gegessen",
+    "fr": "manger – a mangé"
+   },
+   {
+    "thema": 2,
+    "de": "bleiben – ist geblieben",
+    "fr": "rester – est resté"
+   },
+   {
+    "thema": 3,
+    "de": "erfinden, die Erfindung",
+    "fr": "inventer, l’invention"
+   },
+   {
+    "thema": 3,
+    "de": "die Biografie, der Lebenslauf",
+    "fr": "la biographie, le CV"
+   },
+   {
+    "thema": 3,
+    "de": "geboren, gestorben",
+    "fr": "né, mort"
+   },
+   {
+    "thema": 3,
+    "de": "der Trainer, die Trainerin",
+    "fr": "l’entraîneur, l’entraîneuse"
+   },
+   {
+    "thema": 3,
+    "de": "ihn, sie, es (wen?)",
+    "fr": "le, la (complément d’objet direct)"
+   },
+   {
+    "thema": 3,
+    "de": "ihm, ihr, ihnen (wem?)",
+    "fr": "lui, leur (complément d’objet indirect)"
+   }
+  ],
+  "lernziele": {
+   "de-m2-stadt": {
+    "de": "Ich lese einen Stadtplan und sage, wo etwas ist.",
+    "fr": "Je lis un plan de ville et je dis où se trouve quelque chose."
+   },
+   "de-m2-imperativ": {
+    "de": "Ich erkläre einen Weg mit dem Imperativ – für du, ihr und Sie.",
+    "fr": "J’explique un chemin à l’impératif – pour du, ihr et Sie."
+   },
+   "de-m2-komposita": {
+    "de": "Ich baue Wörter aus zwei Nomen und finde den richtigen Artikel.",
+    "fr": "Je forme des mots à partir de deux noms et je trouve le bon article."
+   },
+   "de-m2-satzzeichen": {
+    "de": "Ich höre, ob ein Satz eine Aussage, eine Frage oder eine Aufforderung ist, und setze . ? ! richtig.",
+    "fr": "J’entends si une phrase est une affirmation, une question ou une injonction, et je mets . ? ! correctement."
+   },
+   "de-m2-perfekt-haben": {
+    "de": "Ich erzähle mit dem Perfekt, was ich gemacht habe.",
+    "fr": "Je raconte au parfait ce que j’ai fait."
+   },
+   "de-m2-perfekt-sein": {
+    "de": "Ich weiß, wann das Perfekt mit „sein“ gebildet wird, und kenne wichtige unregelmäßige Partizipien.",
+    "fr": "Je sais quand le parfait se forme avec « sein » et je connais des participes irréguliers importants."
+   },
+   "de-m2-erfinder": {
+    "de": "Ich verstehe kurze Biografien und ordne ein Leben nach der Zeit.",
+    "fr": "Je comprends de courtes biographies et j’ordonne une vie dans le temps."
+   },
+   "de-m2-sport": {
+    "de": "Ich erkenne Pronomen im Akkusativ und Dativ und benutze sie statt Namen.",
+    "fr": "Je reconnais les pronoms à l’accusatif et au datif et je les utilise à la place des noms."
+   }
+  }
+ },
+ {
+  "id": "deutsch-m3",
+  "nr": 3,
+  "bereich": "deutsch",
+  "fach": {
+   "de": "Deutsch",
+   "fr": "Allemand"
+  },
+  "klasse": "VP",
+  "titel": {
+   "de": "Andere Länder, andere Sitten",
+   "fr": "Autres pays, autres mœurs"
+  },
+  "untertitel": {
+   "de": "8 Lektionen mit Regel, Beispiel und Übungen in drei Stufen – Länder entdecken, höflich bestellen, Kleidung kaufen, Regeln verstehen, von früher erzählen, Briefe schreiben.",
+   "fr": "8 leçons avec règle, exemple et exercices sur trois niveaux – découvrir des pays, commander poliment, acheter des vêtements, comprendre des règles, raconter le passé, écrire des lettres."
+  },
+  "themen": [
+   {
+    "titel": {
+     "de": "Länder und Leute",
+     "fr": "Pays et gens"
+    },
+    "bild": "icon:world",
+    "lektionen": [
+     "de-m3-laender",
+     "de-m3-artikel"
+    ]
+   },
+   {
+    "titel": {
+     "de": "Essen und Kleidung",
+     "fr": "Repas et vêtements"
+    },
+    "bild": "icon:shirt",
+    "lektionen": [
+     "de-m3-kantine",
+     "de-m3-kleidung",
+     "de-m3-steigerung"
+    ]
+   },
+   {
+    "titel": {
+     "de": "Regeln und Zeit",
+     "fr": "Règles et temps"
+    },
+    "bild": "icon:clock",
+    "lektionen": [
+     "de-m3-modalverben",
+     "de-m3-frueher"
+    ]
+   },
+   {
+    "titel": {
+     "de": "Schreiben",
+     "fr": "Écrire"
+    },
+    "bild": "icon:mail",
+    "lektionen": [
+     "de-m3-brief"
+    ]
+   }
+  ],
+  "wortschatz": [
+   {
+    "thema": 0,
+    "de": "das Land, die Länder",
+    "fr": "le pays, les pays"
+   },
+   {
+    "thema": 0,
+    "de": "die Hauptstadt",
+    "fr": "la capitale"
+   },
+   {
+    "thema": 0,
+    "de": "die Sprache, sprechen",
+    "fr": "la langue, parler"
+   },
+   {
+    "thema": 0,
+    "de": "ein, eine – der, die, das",
+    "fr": "un, une – le, la"
+   },
+   {
+    "thema": 0,
+    "de": "die Recherche, recherchieren",
+    "fr": "la recherche, rechercher"
+   },
+   {
+    "thema": 1,
+    "de": "Ich hätte gern … · Ich möchte …",
+    "fr": "Je voudrais …"
+   },
+   {
+    "thema": 1,
+    "de": "das Getränk, das Gericht",
+    "fr": "la boisson, le plat"
+   },
+   {
+    "thema": 1,
+    "de": "Was kostet …?",
+    "fr": "Combien coûte … ?"
+   },
+   {
+    "thema": 1,
+    "de": "die Jacke, die Hose, der Pullover",
+    "fr": "la veste, le pantalon, le pull"
+   },
+   {
+    "thema": 1,
+    "de": "zu groß, zu klein, zu eng",
+    "fr": "trop grand, trop petit, trop serré"
+   },
+   {
+    "thema": 1,
+    "de": "teuer – billig",
+    "fr": "cher – bon marché"
+   },
+   {
+    "thema": 1,
+    "de": "größer als, am größten",
+    "fr": "plus grand que, le plus grand"
+   },
+   {
+    "thema": 1,
+    "de": "gut – besser – am besten",
+    "fr": "bon – meilleur – le meilleur"
+   },
+   {
+    "thema": 2,
+    "de": "müssen – nicht müssen",
+    "fr": "devoir – ne pas être obligé"
+   },
+   {
+    "thema": 2,
+    "de": "dürfen – nicht dürfen",
+    "fr": "avoir le droit – ne pas avoir le droit"
+   },
+   {
+    "thema": 2,
+    "de": "die Regel, das Verbot",
+    "fr": "la règle, l’interdiction"
+   },
+   {
+    "thema": 2,
+    "de": "früher, damals, heute",
+    "fr": "autrefois, à l’époque, aujourd’hui"
+   },
+   {
+    "thema": 2,
+    "de": "seit, vor, nach, in",
+    "fr": "depuis, il y a, après, dans"
+   },
+   {
+    "thema": 2,
+    "de": "musste, durfte, konnte",
+    "fr": "devait, avait le droit, pouvait"
+   },
+   {
+    "thema": 3,
+    "de": "der Brief, die E-Mail",
+    "fr": "la lettre, l’e-mail"
+   },
+   {
+    "thema": 3,
+    "de": "Liebe …, Lieber …",
+    "fr": "Chère …, Cher …"
+   },
+   {
+    "thema": 3,
+    "de": "Sehr geehrte Frau …",
+    "fr": "Madame …"
+   },
+   {
+    "thema": 3,
+    "de": "Viele Grüße · Mit freundlichen Grüßen",
+    "fr": "Bises · Salutations distinguées"
+   },
+   {
+    "thema": 3,
+    "de": "Sie, Ihnen, Ihr (höflich)",
+    "fr": "vous, votre (politesse)"
+   }
+  ],
+  "lernziele": {
+   "de-m3-laender": {
+    "de": "Ich lese und schreibe einen kurzen Steckbrief über ein Land.",
+    "fr": "Je lis et j’écris une courte fiche sur un pays."
+   },
+   "de-m3-artikel": {
+    "de": "Ich weiß, wann ich „ein“ und wann ich „der, die, das“ benutze.",
+    "fr": "Je sais quand j’utilise « ein » et quand j’utilise « der, die, das »."
+   },
+   "de-m3-kantine": {
+    "de": "Ich bestelle höflich Essen und Trinken und frage nach dem Preis.",
+    "fr": "Je commande poliment à manger et à boire et je demande le prix."
+   },
+   "de-m3-kleidung": {
+    "de": "Ich beschreibe Kleidung mit Adjektiven und sage, was nicht passt.",
+    "fr": "Je décris des vêtements avec des adjectifs et je dis ce qui ne va pas."
+   },
+   "de-m3-steigerung": {
+    "de": "Ich vergleiche mit „größer als“ und „am größten“.",
+    "fr": "Je compare avec « größer als » et « am größten »."
+   },
+   "de-m3-modalverben": {
+    "de": "Ich verstehe Regeln: müssen, nicht müssen, dürfen, nicht dürfen.",
+    "fr": "Je comprends des règles : müssen, nicht müssen, dürfen, nicht dürfen."
+   },
+   "de-m3-frueher": {
+    "de": "Ich erzähle, wie etwas früher war, und benutze Zeitangaben.",
+    "fr": "Je raconte comment c’était autrefois et j’utilise des indications de temps."
+   },
+   "de-m3-brief": {
+    "de": "Ich schreibe einen kurzen Brief oder eine E-Mail mit passender Anrede und passendem Gruß.",
+    "fr": "J’écris une courte lettre ou un e-mail avec la formule d’appel et de salutation qui conviennent."
+   }
+  }
  }
 ]

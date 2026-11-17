@@ -52,7 +52,7 @@ const PLAUDERN = {
   lina: ['(flüstert) Jo hat Senf am Kinn. Seit der Pause.', '(zeichnet weiter)', '…'],
   jo: ['Was?', 'Ich hab nix gemacht. Diesmal echt.', 'Samstag arbeite ich. Bin also müde. Lass mich.'],
   ben: ['Hast du zwei Euro? Kriegst du morgen.', 'Korbball in der Pause?', 'Keks hat heute mein Ladekabel gefressen.'],
-  chiara: ['Ich helf dir, wenn du mir hilfst. Deal?', 'Ich muss noch Französisch. Und Bio.', 'Ärztin. Sagen jedenfalls meine Eltern.'],
+  chiara: ['Ich helf dir, wenn du mir hilfst. Deal?', 'Ich muss noch Französisch. Und Bio. Und leben.', 'Hast du die Hausaufgaben? Ich vergleiche nur.'],
   yusuf: ['Hm.', 'Judo ist dienstags. Und freitags. Und manchmal sonntags.', 'Schwimmen? … Nächstes Thema.'],
   ayla: ['Unsere Band probt Samstag. Zweite Probe!', 'Kommst du zum Konzert? Wenn es eins gibt?', 'Ich les alles in der Gruppe. Ich schreib nur nie.'],
   luca: ['Na, Kantinen-Polizei?', 'Hast du Kohle? … War ein Witz. Halb.', 'Kenan sagt, ich soll dich in Ruhe lassen. Mal sehen.'],
@@ -345,7 +345,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     S.freund[id] = neu;
     const g = (S.freundGrund[id] = S.freundGrund[id] || {}); g[grund] = (g[grund] || 0) + 1;
     // Stufe gestiegen: sofort zeigen – außer bei Entscheidungen (die zeigt erst der Tagesrückblick, sonst verrät es die „richtige“ Antwort)
-    if (grund !== 'wahl' && neu > alt && stufe(neu) !== stufe(alt)) ui.toast('<b>' + LEUTE[id].name + ': ' + stufe(neu) + '</b><span>Eure Freundschaft ist gewachsen.</span>', 'ly-t-herz');
+    if (grund !== 'wahl' && neu > alt && stufe(neu) !== stufe(alt)) ui.toast('<b>' + LEUTE[id].name + ': ' + stufe(neu) + '</b><span>Hat dich jetzt auf dem Schirm.</span>', 'ly-t-herz');
   }
   const besteFreunde = () => { if (!S) return []; sicherFreund(); return Object.entries(S.freund).filter(([id, p]) => CHARAKTER[id] && p >= 20).sort((a, b) => b[1] - a[1]).map(([id]) => id); }
   function staerke(k) {
@@ -456,7 +456,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
           { t: '„Mir ist was dazwischengekommen.“', dann: [['noah', 'Hm. Okay.']] },
           { t: '(Schulterzucken.)', herz: { noah: -1 }, dann: [['noah', '… Ja. Okay.']] },
         ] }];
-      if (m.samstagNoah) return [['noah', 'Mein Bruder fragt, ob du wieder kommst.']];
+      if (m.samstagNoah) return [['noah', 'Die vom Bolzplatz fragen, ob du wieder kommst.']];
       if (m.samstagAyla) return [['noah', 'Und? Die Band?'], ['erzaehler', 'Drei Leute. Zwei Lieder. Eins davon zweimal.']];
       return [];
     },
@@ -475,7 +475,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       const m = S.merke;
       if (m.nichtAngerufen) return [['hoffmann', 'Unentschuldigt, ihr zwei. Mme Weber hat zuhause angerufen.'],
         { wahl: [
-          { t: '„Wir haben nicht angerufen. Stimmt.“', staerke: 'ehrlich', dann: [['hoffmann', 'Zettel. Unterschrieben. Beide.'], ['noah', '(leise) Meine Mutter flippt aus.']] },
+          { t: '„Wir haben nicht angerufen. Stimmt.“', staerke: 'ehrlich', dann: [['hoffmann', 'Zettel. Unterschrieben. Beide.'], ['noah', '(leise) Das gibt Ärger. Großen.']] },
           { t: '„Noah sollte anrufen.“', herz: { noah: -2 }, merke: 'noahGeschoben', dann: [['noah', 'Was? Das …'], ['hoffmann', 'Noah: Zettel. {name}: setzen.'], ['erzaehler', 'Noah sagt bis Mittag kein Wort.']] },
           { t: '„Mein Akku war leer.“', dann: [['hoffmann', 'Und Noahs auch. Klar. Zettel, beide.']] },
         ] }];
@@ -638,7 +638,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     kayaStart: () => (S.merke.torHeim ? [['kaya', 'Gestern warst du nicht da. Kein Verhör.'], ['kaya', 'Bauch?'], { wahl: [{ t: '(Nicken.)', dann: [] }, { t: '„Geht schon.“', dann: [['kaya', 'Okay.']] }] }]
       : [['kaya', 'Gestern war zäh, oder? Sah man dir an.']]),
     leiterBauen: async () => {
-      const ord = await ui.sortieren({ titel: 'Deine Mutleiter', frage: 'Tipp zuerst an, was für dich am leichtesten wäre.', teile: LEITER });
+      const ord = await ui.sortieren({ titel: 'Was geht, was ist hart?', frage: 'Tipp zuerst an, was für dich am leichtesten wäre.', teile: LEITER });
       S.leiter = ord; sichern();
       const t = (id) => LEITER.find((l) => l.id === id).t;
       return [['kaya', 'Unten: „' + t(ord[0]) + '“.'], ['kaya', 'Oben: „' + t(ord[ord.length - 1]) + '“. Das kommt später.']];
@@ -656,7 +656,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         saetze: [{ bei: 0.3, wer: 'yusuf', text: 'Hat wer Bio gemacht?' }, { bei: 0.55, wer: 'ayla', text: '(lacht über was auf Noahs Handy)' }, { bei: 0.8, wer: 'noah', text: '(nickt dir zu)' }] });
       const nachher = await ui.skala({ frage: r.geblieben ? 'Und jetzt, am Ende?' : 'Und jetzt, wo du weg bist?' });
       logMut('pause', 'Pause bei der Gruppe', vorher, nachher, r);
-      if (r.geblieben) { staerke('bleiben'); return [['erzaehler', 'Vorher: ' + vorher + '. Am Ende: ' + nachher + '.'], ...(nachher < vorher ? [['erzaehler', 'Runter. Obwohl du nichts gemacht hast. Nur geblieben.']] : [['erzaehler', 'Heute ging’s kaum runter. Kommt vor.']]), ['noah', 'Kommst du morgen wieder her?'], { wahl: [{ t: '„Mal sehen.“', dann: [] }, { t: '„Ja.“', herz: { noah: 1 }, dann: [['noah', 'Cool.']] }] }]; }
+      if (r.geblieben) { staerke('bleiben'); return [['erzaehler', 'Vorher: ' + vorher + '. Am Ende: ' + nachher + '.'], ...(nachher < vorher ? [['erzaehler', 'Irgendwann lachst du übers Katzenvideo mit. Gemerkt hat’s keiner.']] : [['erzaehler', 'Heute ging’s kaum runter. Kommt vor.']]), ['noah', 'Kommst du morgen wieder her?'], { wahl: [{ t: '„Mal sehen.“', dann: [] }, { t: '„Ja.“', herz: { noah: 1 }, dann: [['noah', 'Cool.']] }] }]; }
       return [['erzaehler', 'Du bist nach ' + r.sek + ' Sekunden gegangen.'], ['erzaehler', 'Später, Handy. Herr Kaya: „Wie lang warst du da?“'],
         { wahl: [{ t: '„' + r.sek + ' Sekunden.“', dann: [['kaya', 'Zählt. Nächstes Mal: so lang plus fünf.']] }, { t: '„Kaum. Bringt eh nix.“', dann: [['kaya', 'Bringt mehr, als es sich anfühlt. Morgen nochmal?']] }] }];
     },
@@ -670,7 +670,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       const m = S.merke;
       if (m.tafelGelesen) logLeiter('tafel', 'ok');
       else if (m.tafelGleich || m.tafelKarte) logLeiter('tafel', 'halb');
-      if (m.tafelStumm && !m.karte) return [['erzaehler', 'Nach der Stunde.'], ['hoffmann', 'Ich hab dich vorhin überrumpelt. Sorry.'], ['hoffmann', 'Nächstes Mal sag einfach „gleich“. Dann komm ich zurück.']];
+      if (m.tafelStumm && !m.karte) return [['erzaehler', 'Nach der Stunde.'], ['hoffmann', '(packt ein) Vorhin. Blöd gelaufen.'], ['hoffmann', 'Nächstes Mal sag einfach „gleich“. Dann komm ich zurück.']];
       if (m.tafelStumm) return [['erzaehler', 'Nach der Stunde.'], ['hoffmann', 'Die Karte darfst du echt benutzen. Ich mein das so.']];
       if (m.tafelKlo) return [['erzaehler', 'Nach der Stunde. M. Hoffmann sagt nichts. Er nickt nur.']];
       return [];
@@ -682,7 +682,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     stufeVorschlag: () => {
       const l = S.leiter || [], b = l.indexOf('baecker'), k = l.indexOf('kantine');
       const leichter = b >= 0 && k >= 0 ? (b < k ? 'der Bäcker' : 'die Kantine') : 'der Bäcker';
-      return [['kaya', 'Auf deiner Leiter ist ' + leichter + ' weiter unten.'], ['kaya', 'Du entscheidest.']];
+      return [['kaya', 'Auf deiner Liste ist ' + leichter + ' leichter.'], ['kaya', 'Du entscheidest.']];
     },
     probeBaecker: async () => {
       const vorher = await ui.skala({ frage: 'Wie stark ist die Anspannung jetzt?' });
@@ -695,7 +695,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       }
       const z = [['baeckerin', 'Und für dich?'], { wahl: [
         { t: '„Ein Kirsch-Teilchen, bitte.“', staerke: 'mut6', merke: 'bestellt', dann: [['baeckerin', 'Eins fünfzig.'], ['erzaehler', 'Du zahlst. Sie sagt „Schönen Tag“. Das war’s.']] },
-        { t: '(Aufs Teilchen zeigen.) „Das da.“', merke: 'bestellt', dann: [['baeckerin', 'Kirsch? Eins fünfzig.'], ['erzaehler', 'Zeigen zählt auch. Du hast eins.']] },
+        { t: '(Aufs Teilchen zeigen.) „Das da.“', merke: 'bestellt', dann: [['baeckerin', 'Kirsch? Eins fünfzig.'], ['erzaehler', 'Du hast ein Teilchen. Keiner hat was gemerkt.']] },
         { t: '„Ähm … nichts. Sorry.“', dann: [['baeckerin', 'Kein Problem. Der Nächste.']] },
       ] }, { tu: 'baeckerNachher', v: vorher, r }];
       S.merke.baeckerVorher = vorher;
@@ -781,8 +781,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       input.setEnabled(false);
       const satz = await ui.ichBotschaft(ichBotschaftThema(S.merke));
       staerke('ichbotschaft'); S.merke.ichSatz = satz;
-      return [['du', satz], ['hoffmann', 'Danke, {name}. Das war eine echte Ich-Botschaft.'],
-        S.merke.chatGelacht ? ['jo', '… Ich lösch so was in Zukunft. Und frag vorher.'] : ['jo', '… Okay. Ich frag nächstes Mal vorher.'],
+      return [['du', satz], ['hoffmann', 'Danke, {name}. Jo?'],
+        S.merke.chatGelacht ? ['jo', '(verdreht die Augen) Jaja. Gelöscht. Zufrieden?'] : ['jo', '(verdreht die Augen) Jaja. Ich frag vorher. Zufrieden?'],
         ['hoffmann', 'Dann schreiben wir das als Klassenregel auf.']];
     },
     // Kapitel 3
@@ -873,7 +873,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       return [['ben', 'Okay … wir wollten beide spielen.'], ['jo', 'Dann halbe Pause ihr, halbe Pause wir?'], ['ben', 'Deal.'],
         ...(S.merke.sommerGeholt ? [['sommer', 'Gut gemacht, ihr drei.']] : [['lina', '(leise) Das war cool, {name}.']])];
     },
-    noahWoche: () => (S.merke.erklaert ? [['noah', 'Danke fürs Erklären. Hoffmann hat mich drangenommen. Ich konnte es!']] : S.merke.abgeschrieben ? [['noah', 'Sorry wegen der Hausaufgabe. Das hat dir Ärger gemacht.']] : [['noah', 'Schönes Wochenende, {name}.']]),
+    noahWoche: () => (S.merke.erklaert ? [['noah', 'Hoffmann hat mich drangenommen. Ich wusste es. Er war geschockt.']] : S.merke.abgeschrieben ? [['noah', 'Sorry wegen der Hausaufgabe. Das hat dir Ärger gemacht.']] : [['noah', 'Schönes Wochenende, {name}.']]),
     matheErklaeren: () => (S.merke.matheGefragt ? [
       ['chiara', 'Halbe Pizza plus Viertel Pizza. Wie viel?'],
       { wahl: [
@@ -1003,7 +1003,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       if (!z.length) z.push(['noah', 'Was für eine Woche.']);
       return z;
     },
-    milaWoche: () => ((S.herz.mila || 0) >= 4 ? [['mila', 'Danke für Donnerstag, {name}. Wirklich.']] : []),
+    milaWoche: () => ((S.herz.mila || 0) >= 4 ? [['mila', 'Donnerstag. Du weißt schon.'], ['mila', '… Okay. Tschüss.']] : []),
   };
 
   // ---------- Bingo ----------
@@ -1222,7 +1222,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   // Lehrperson erklärt kurz → Tafelkarte mit Regel → Rollenspiel mit der Klasse (richtig: Freundschaft wächst; falsch: freundlich
   // korrigiert, nochmal) → Übungsblatt mit wechselnden Aufgaben → Lernkarte ins Journal. Später fragen Freunde „Weißt du noch?“.
   const esc = (t) => String(t).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
-  const LOB = ['Genau!', 'Richtig so.', 'Stimmt!', 'Perfekt.', 'Ja, so geht’s.'];
+  const LOB = ['Okay, verstanden.', 'Passt.', 'Alles klar.', 'Ah, okay.', 'Gut. Weiter.'];
   const FACHNAME = { deutsch: 'Deutsch', francais: 'Français', mathe: 'Mathe' };
   const alleLektionen = () => Object.values(LEKTIONEN).flat().flatMap((m) => m.lektionen.map((l) => ({ ...l, modulNr: m.nr, modulTitel: m.titel })));
   async function unterricht(fach, nr, id) {
@@ -1231,33 +1231,66 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     S.lektionen = S.lektionen || {};
     const lp = l.lehrer;
     await spiele([[lp, FACHNAME[fach] + ', Modul ' + nr + ': „' + l.titel + '“.'], ...l.intro.map((t) => [lp, t])]);
-    if (l.merke) await ui.merke({ titel: l.merke.titel, punkte: l.merke.punkte, ziel: l.ziel, fach: FACHNAME[fach] + ' · Modul ' + nr });
-    await spiele([[lp, 'Jetzt ihr. Redet miteinander!']]);
-    let gleich = 0;
-    for (const r of l.rolle) {
-      for (let versuch = 0; versuch < 3; versuch++) {
-        const i = await ui.waehle(r.optionen.map((o) => ersetze(o)), sprecher(r.wer).wer + ': ' + ersetze(r.sagt));
-        if (i === r.richtig) { if (!versuch) gleich++; await spiele([[r.wer, LOB[(gleich + versuch) % LOB.length]]]); freund(r.wer, 2, 'lernen'); break; }
-        await spiele([[r.wer, r.korrektur]]);
+    if (l.merke) { ui.dialogZu(); await ui.merke({ titel: l.merke.titel, punkte: l.merke.punkte, ziel: l.ziel, fach: FACHNAME[fach] + ' · Modul ' + nr }); }
+    // Lernformen je Lektion (tools/sprachen): Rollenspiel, Satzbau, Paare, Hören, Uhr, Groß/klein, Wegsuche im Haus, Blatt
+    const ablauf = l.ablauf || [{ art: 'rollenspiel' }, { art: 'blatt' }];
+    let gleich = 0, fehler = 0, best = null;
+    for (const sch of ablauf) {
+      ui.dialogZu();
+      if (sch.art === 'rollenspiel') {
+        await spiele([[lp, 'Jetzt ihr. Redet miteinander!']]);
+        for (const r of l.rolle) {
+          for (let versuch = 0; versuch < 3; versuch++) {
+            const i = await ui.waehle(r.optionen.map((o) => ersetze(o)), sprecher(r.wer).wer + ': ' + ersetze(r.sagt));
+            if (i === r.richtig) { if (!versuch) gleich++; await spiele([[r.wer, LOB[(gleich + versuch) % LOB.length]]]); freund(r.wer, 2, 'lernen'); break; }
+            fehler++; await spiele([[r.wer, r.korrektur]]);
+          }
+        }
+      } else if (sch.art === 'satzbau') fehler += (await ui.satzbau({ titel: l.titel, saetze: sch.saetze })).fehler;
+      else if (sch.art === 'paare') fehler += (await ui.paare({ titel: l.titel, frage: sch.frage, paare: sch.paare })).fehler;
+      else if (sch.art === 'hoeren') fehler += (await ui.hoeren({ titel: l.titel, items: sch.items })).fehler;
+      else if (sch.art === 'uhr') fehler += (await ui.uhrspiel({ titel: l.titel, items: sch.items })).fehler;
+      else if (sch.art === 'gross') fehler += (await ui.grossKlein({ titel: l.titel, saetze: sch.saetze })).fehler;
+      else if (sch.art === 'weg') { await spiele([[lp, sch.intro || 'Noah wartet in der Kantine. Lauf hin, nur nach Beschreibung!']]); await wegsuche(sch); if (sch.ende) await spiele(sch.ende); }
+      else if (sch.art === 'blatt') {
+        await spiele([[lp, 'Zum Schluss: üben.']]); ui.dialogZu();
+        const pool = l.uebung.map((u) => (u.length === 3 ? { t: u[0], wahl: u[1], a: u[2] } : { t: u[0], a: [u[1]] }));
+        for (let runde = 0; runde < 10; runde++) {
+          const a = pool.slice(); for (let k = a.length - 1; k > 0; k--) { const j = Math.floor(Math.random() * (k + 1)); [a[k], a[j]] = [a[j], a[k]]; }
+          const st = SCHRITTE[S.schritt];
+          const r = await ui.arbeitsblatt({ blatt: { id, modul: FACHNAME[fach] + ' · Modul ' + nr, titel: l.titel, untertitel: m.titel, erkl: { idee: l.ziel, schritte: l.merke ? l.merke.punkte : [], beispiel: l.karte }, info: [], aufgaben: a.slice(0, 8) }, name: S.name, datum: st ? st.tag : '', neu: true });
+          if (!best || r.richtig > best.richtig) best = r;
+          if (!r.neu) break;
+        }
       }
     }
-    await spiele([[lp, gleich === l.rolle.length ? 'Alles beim ersten Mal. Stark!' : 'Gut. Jetzt noch üben.']]);
-    const pool = l.uebung.map((u) => (u.length === 3 ? { t: u[0], wahl: u[1], a: u[2] } : { t: u[0], a: [u[1]] }));
-    let best = null;
-    for (let runde = 0; runde < 10; runde++) {
-      const a = pool.slice(); for (let k = a.length - 1; k > 0; k--) { const j = Math.floor(Math.random() * (k + 1)); [a[k], a[j]] = [a[j], a[k]]; }
-      const st = SCHRITTE[S.schritt];
-      const r = await ui.arbeitsblatt({ blatt: { id, modul: FACHNAME[fach] + ' · Modul ' + nr, titel: l.titel, untertitel: m.titel, erkl: { idee: l.ziel, schritte: l.merke ? l.merke.punkte : [], beispiel: l.karte }, info: [], aufgaben: a.slice(0, 8) }, name: S.name, datum: st ? st.tag : '', neu: true });
-      if (!best || r.richtig > best.richtig) best = r;
-      if (!r.neu) break;
-    }
+    await spiele([[lp, fehler === 0 ? 'Null Fehler. Fast unheimlich.' : 'Hat gedauert. Sitzt aber.']]);
     const alt = S.lektionen[id] || { mal: 0 };
-    S.lektionen[id] = { fach, nr, rolle: gleich + '/' + l.rolle.length, richtig: Math.max(alt.richtig || 0, best ? best.richtig : 0), gesamt: best ? best.gesamt : 8, mal: (alt.mal || 0) + 1 };
+    S.lektionen[id] = { fach, nr, formen: ablauf.map((x) => x.art), fehler, rolle: gleich + '/' + l.rolle.length, richtig: Math.max(alt.richtig || 0, best ? best.richtig : 0), gesamt: best ? best.gesamt : 8, mal: (alt.mal || 0) + 1 };
     const karte = l.titel + ': ' + l.karte;
     S.lernkarten = S.lernkarten || []; if (!S.lernkarten.includes(karte)) S.lernkarten.push(karte);
     if (best && best.richtig === best.gesamt) staerke('dranbleiben');
     sichern();
     ui.toast('<b>Lernkarte: ' + esc(l.titel) + '</b><span>' + esc(l.karte) + '</span>', 'ly-t-ent');
+  }
+  // Wegsuche im Schulhaus: nur nach der gesagten Beschreibung laufen (kein Marker); jede Station gibt die nächste Anweisung
+  let wegTick = null;
+  function wegsuche(sch) {
+    return new Promise((ok) => {
+      ui.dialogZu(); input.setEnabled(true); steuerung.frei = true; steuerung.fokus = null;
+      let i = 0;
+      const zeige = () => { ui.auftrag({ kapitel: 'Wege finden', titel: 'Folge der Beschreibung', ziel: sch.schritte[i].sagen }); ui.toast('<b>' + esc(sch.schritte[i].sagen) + '</b>'); };
+      zeige();
+      wegTick = () => {
+        const p = steuerung.pos, z = sch.schritte[i];
+        if (Math.hypot(p.x - z.x, p.z - z.z) > z.r) return;
+        i++; ton('pling');
+        if (i < sch.schritte.length) { zeige(); return; }
+        wegTick = null; input.setEnabled(false); steuerung.frei = false;
+        const st = SCHRITTE[S.schritt]; if (st && !S.fertig) ui.auftrag({ kapitel: kapName(st.kap), titel: st.titel, ziel: st.ziel });
+        ok();
+      };
+    });
   }
   // „Weißt du noch?“ – Freunde fragen Gelerntes ab (verteilte Wiederholung, höchstens einmal je Person und Abschnitt)
   async function weisstDuNoch(id) {
@@ -1371,6 +1404,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (!laeuft) { camera.position.set(-36, 16, 64); camera.lookAt(0, 6, -10); return; }
     steuerung.update(dt);
     if (skateTick) skateTick(dt);
+    if (wegTick) wegTick();
     if (spieler) spieler.update(dt);
   }, { order: -50, always: true });
   loop.add((dt, t) => {

@@ -66,7 +66,7 @@ export const GESPRAECHE7 = {
       { t: '„Hallo … ich wollt fragen … also …“', dann: [['erzaehler', '„Ich hab Kundschaft. Was denn?“'], ['erzaehler', '„… Nein. Tschüss.“']] },
       { t: '(Auflegen, bevor jemand was sagt.)', staerke: 'abstand', merke: 'aufgelegt', dann: [['weber', 'Besetzt?'], ['du', '… Ja.'], ['weber', '(hebt eine Augenbraue)']] },
     ] },
-    ['weber', 'Mein erstes Praktikum? Elf Absagen. Dann eine Druckerei.'],
+    ['weber', 'Erste Absage? Ab der elften wird’s langweilig. Versprochen.'],
     ['weber', 'Frau Kremer nimmt Leute. Morgen, 7:30. Ich sag’s ihr.'],
   ],
   k7_di: [
@@ -121,7 +121,7 @@ export const GESPRAECHE7 = {
     ['erzaehler', 'Freitag, 15:30 Uhr. Im Rucksack: der Bewertungsbogen.'],
     { tu: 'k7Bogen' },
     { tu: 'k7Folgen' },
-    ['erzaehler', 'Der Bus kommt.'],
+    ['fahrer', 'Praktikum, hm? Ich hab auch klein angefangen. Mit einem Dreirad.'],
     { tu: 'kapitelEnde' },
   ],
 };
