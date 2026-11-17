@@ -14,6 +14,7 @@ import { lambertVC } from '../world/landmarks.js';
 import { baueWelt } from './welt.js';
 import { baueRequisiten, stelle } from './requisiten.js';
 import { ladePerson, namensschild, SITZ } from './figuren.js';
+import { fussSchatten } from './texturen.js';
 import { createSteuerung } from './steuerung.js';
 import { createUI } from './ui.js';
 import { SCHRITTE, GESPRAECHE, LEUTE, STAERKEN, BINGO, GEHEIMNISSE, SPRECHER, KAPITEL } from './geschichte.js';
@@ -110,7 +111,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (leute[id]) return leute[id];
     const def = LEUTE[id];
     const f = await ladePerson(veil, def);
-    const schild = namensschild(def.name, def.farbe); f.group.add(schild);
+    const schild = namensschild(def.name, def.farbe); f.group.add(schild); f.group.add(fussSchatten());
     scene.add(f.group);
     const p = { id, def, f, pos: new THREE.Vector3(), yaw: 0, haltung: '', schild, dreh: 0 };
     f.spiele('Idle');
@@ -169,7 +170,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   async function statistenLaden() {
     for (const d of STATISTEN) {
       const f = await ladePerson(veil, d);
-      scene.add(f.group);
+      f.group.add(fussSchatten()); scene.add(f.group);
       const st = d.steht || (d.skate ? [d.skate[0], d.skate[2], Math.PI / 2] : null);
       const p = new THREE.Vector3(st ? st[0] : d.weg[0][0], 0, st ? st[1] : d.weg[0][1]);
       const x = { d, f, p, i: 1, warte: Math.random() * 3, h: { x: p.x, z: p.z, r: 0.3 }, richtung: 1 };
@@ -239,7 +240,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   async function spielerFigur(i) {
     if (spieler) { scene.remove(spieler.group); }
     spieler = await ladePerson(veil, FIGUREN[i] || FIGUREN[0]);
-    scene.add(spieler.group); steuerung.figur = spieler;
+    spieler.group.add(fussSchatten()); scene.add(spieler.group); steuerung.figur = spieler;
     spieler.spiele('Idle');
   }
 
@@ -1174,7 +1175,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     }
     ui.update();
   }, { order: -10, always: true });
-  loop.add((dt, t) => { camera.updateMatrixWorld(); sky.update(dt, t, camera, steuerung.pos, veil); veil.update(dt, t); }, { order: 0, always: true });
+  loop.add((dt, t) => { camera.updateMatrixWorld(); sky.update(dt, t, camera, steuerung.pos, veil); sky.cloudMat.emissiveIntensity = 0.62; veil.update(dt, t); }, { order: 0, always: true });   // Wolken heller: keine dunklen Unterseiten
   loop.add(() => input.endFrame(), { order: 100, always: true });
   loop.start();
 

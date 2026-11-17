@@ -4,6 +4,7 @@
 // Maße in Metern: x nach Osten, z nach Süden, y nach oben. Ein Stockwerk ist innen 3,6 m hoch; begehbar ist das Erdgeschoss.
 // Rückgabe: { gruppe, kasten (Kollision, Liste {x0,x1,z0,z1,y1}), raeume, raumBei(x,z), orte, schilder, plaetze (Möbel) }
 import * as THREE from 'three';
+import { pflaster, rasen, asphalt, flaeche, fliesen as fliesenTex, dielen } from './texturen.js';
 
 export const DECKE = 3.6;            // Deckenhöhe innen
 const HAUS_H = 8.6;                 // Außenwand Haupthaus (zwei Stockwerke)
@@ -107,10 +108,7 @@ export function baueWelt({ material, materialInnen }) {
   // Zebrastreifen vor dem Tor
   for (let i = 0; i < 6; i++) box(-6 + i * 2.2, -6 + i * 2.2 + 1.2, 0.02, 0.035, 44.2, 51.8, C.streifen, { art: 'innen' });
   // Schulhof (gepflastert) zwischen Haus und Straße, mit Muster
-  for (let x = -46; x < 46; x += 2) for (let z = -2; z < 40.5; z += 2) {
-    const k = (Math.abs(x * 7 + z * 13) >> 1) % 3;
-    box(x, x + 2, 0, 0.06, z, Math.min(z + 2, 40.5), k === 0 ? C.pflaster : k === 1 ? C.pflaster2 : C.pflaster3, { art: 'innen' });
-  }
+  box(-46, 46, 0, 0.06, -2, 40.5, C.pflaster, { art: 'innen' });   // Unterbau; die Steine liegen als Textur darauf (unten)
   // Weg zur Turnhalle (Osten) und zur Werkstatt (Westen)
   box(46, 62, 0, 0.06, -4, 2, C.pflaster, { art: 'innen' });
   box(-62, -46, 0, 0.06, -4, 2, C.pflaster, { art: 'innen' });
@@ -216,16 +214,19 @@ export function baueWelt({ material, materialInnen }) {
   const Y = DECKE;
   box(X0 + D / 2, X1 - D / 2, Y, Y + 0.12, Z0 + D / 2, Z1 - D / 2, C.deckeHell, { art: 'licht' });
   // Halle x −8 … 8, z −14 … −2 · Gang z −18 … −14 (x −29.8 … 29.8) · Räume nördlich (z −30 … −18) und südlich (z −14 … −2)
-  const fliesen = (x0, x1, z0, z1, c1, c2, s = 1.2) => { for (let x = x0; x < x1 - 0.01; x += s) for (let z = z0; z < z1 - 0.01; z += s) box(x, Math.min(x + s, x1), 0.06, 0.1, z, Math.min(z + s, z1), (Math.round((x - x0) / s) + Math.round((z - z0) / s)) % 2 ? c2 : c1, { art: 'innen' }); };
+  // Böden: Unterbau als Kasten, Fliesen bzw. Dielen als Textur darauf (texturen.js, unten beim Zusammenbau)
+  const boeden = [];
+  const fliesen = (x0, x1, z0, z1, c1, c2, s = 1.2) => { box(x0, x1, 0.06, 0.1, z0, z1, c1, { art: 'innen' }); boeden.push({ x0, x1, z0, z1, c1, c2, s }); };
+  const dielenBoden = (x0, x1, z0, z1) => boeden.push({ x0, x1, z0, z1, holz: true });
   fliesen(-8, 8, -14, -2.2, C.bodenHalle, C.bodenHalle2, 1.6);
   fliesen(-29.8, 29.8, -18, -14, C.bodenGang, C.bodenGang2, 2);
-  box(-29.8, -16, 0.06, 0.1, -29.8, -18, C.bodenSaal, { art: 'innen' });     // Saal 1.04
-  box(-16, -2, 0.06, 0.1, -29.8, -18, C.bodenSaal, { art: 'innen' });        // Bibliothek
-  box(-2, 8, 0.06, 0.1, -29.8, -18, C.bodenSaal, { art: 'innen' });          // Lehrerzimmer
-  box(8, 20, 0.06, 0.1, -29.8, -18, C.bodenSaal, { art: 'innen' });          // Saal 1.06
+  box(-29.8, -16, 0.06, 0.1, -29.8, -18, C.bodenSaal, { art: 'innen' }); dielenBoden(-29.8, -16, -29.8, -18);     // Saal 1.04
+  box(-16, -2, 0.06, 0.1, -29.8, -18, C.bodenSaal, { art: 'innen' }); dielenBoden(-16, -2, -29.8, -18);        // Bibliothek
+  box(-2, 8, 0.06, 0.1, -29.8, -18, C.bodenSaal, { art: 'innen' }); dielenBoden(-2, 8, -29.8, -18);          // Lehrerzimmer
+  box(8, 20, 0.06, 0.1, -29.8, -18, C.bodenSaal, { art: 'innen' }); dielenBoden(8, 20, -29.8, -18);          // Saal 1.06
   fliesen(20, 29.8, -29.8, -18, C.bodenGang, C.bodenGang2, 0.8);              // WC
   box(-29.8, -16, 0.06, 0.1, -14, -2.2, C.bodenHalle2, { art: 'innen' });     // Sekretariat
-  box(-16, -8, 0.06, 0.1, -14, -2.2, C.bodenSaal, { art: 'innen' });          // SePAS
+  box(-16, -8, 0.06, 0.1, -14, -2.2, C.bodenSaal, { art: 'innen' }); dielenBoden(-16, -8, -14, -2.2);          // SePAS
   fliesen(8, 29.8, -14, -2.2, C.bodenKantine, C.bodenKantine2, 1.4);          // Kantine
   // Innenwände (3,6 m), Türen 1,3 m breit
   const IW = 0.2, ih = Y;
@@ -427,7 +428,7 @@ export function baueWelt({ material, materialInnen }) {
     tor: { x: 0, z: 38, yaw: Math.PI }, eingang: { x: 0, z: 1.5, yaw: 0 }, eingangHof: { x: 0, z: 3.5, yaw: 0 }, halle: { x: 0, z: -6, yaw: Math.PI },
     pinnwand: { x: -6.8, z: -9, yaw: -Math.PI / 2 }, sekretariat: { x: -21, z: -12.4, yaw: 0 }, sekretariatTheke: { x: -21, z: -9.6 },
     saal104Tuer: { x: -21, z: -16, yaw: Math.PI }, saal104: { x: -22, z: -24, yaw: -Math.PI / 2 }, cdi: { x: -9, z: -23 },
-    kantineTuer: { x: 12, z: -16 }, kantineAusgabe: { x: 24.2, z: -8.8, yaw: -Math.PI / 2 }, kantine: { x: 16, z: -8 },
+    kantineTuer: { x: 12, z: -16 }, kantineAusgabe: { x: 24.2, z: -8.8, yaw: Math.PI / 2 }, kantine: { x: 16, z: -8 },
     hof: { x: 0, z: 18 }, bank: { x: -20, z: 12 }, raucherecke: { x: 60.4, z: -17 }, skateEcke: { x: -36, z: 12 }, korbfeld: { x: 29, z: 19 }, turnhalle: { x: 46, z: -3 }, werkstatt: { x: -48, z: -5 },
     sepas: { x: -12, z: -10 }, fahrrad: { x: -38, z: 22 }, preau: { x: 19, z: 4 },
   };
@@ -484,6 +485,21 @@ export function baueWelt({ material, materialInnen }) {
     gruppe.add(m);
   }
   for (const s of schilder) gruppe.add(s);
+  // Gemalte Oberflächen: Verbundpflaster auf Hof und Wegen, Rasen, Asphalt (texturen.js)
+  const tP = pflaster(), tR = rasen(), tA = asphalt();
+  gruppe.add(flaeche(tR, -110, 110, -120, 80, 0.003, 6));
+  gruppe.add(flaeche(tA, -110, 110, 44, 52, 0.021, 4));
+  gruppe.add(flaeche(tP, -46, 46, -2, 40.5, 0.0615, 8));
+  gruppe.add(flaeche(tP, 46, 62, -4, 2, 0.0615, 8));
+  gruppe.add(flaeche(tP, -62, -46, -4, 2, 0.0615, 8));
+  const tD = dielen(), fl = {};
+  for (const b of boeden) {
+    const x0 = Math.min(b.x0, b.x1), x1 = Math.max(b.x0, b.x1), z0 = Math.min(b.z0, b.z1), z1 = Math.max(b.z0, b.z1);
+    if (b.holz) { gruppe.add(flaeche(tD, x0, x1, z0, z1, 0.1015, 4)); continue; }
+    const k = '#' + b.c1.getHexString() + '#' + b.c2.getHexString();
+    fl[k] = fl[k] || fliesenTex('#' + b.c1.getHexString(), '#' + b.c2.getHexString());
+    gruppe.add(flaeche(fl[k], x0, x1, z0, z1, 0.1015, b.s * 2));
+  }
 
   const raumBei = (x, z) => raeume.find((r) => x > r.x0 && x < r.x1 && z > r.z0 && z < r.z1) || null;
   return { gruppe, kasten: B.kasten, raeume, raumBei, orte, plaetze, schilder };
