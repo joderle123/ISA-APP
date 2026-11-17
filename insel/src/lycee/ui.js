@@ -528,6 +528,7 @@ export function createUI({ root, input, speech }) {
   // Skate-Session: oben Zeit, Punkte und der letzte Trick; unten rechts große Knöpfe „Sprung“ und „Absteigen“ (Tablet)
   let skateWeg = null;
   ui.skate = (z) => {
+    skateEl.parentNode.classList.toggle('ly-minispiel', !!z);   // Auftragsbox ausblenden, solange man skatet (Handy: sonst überdeckt)
     if (!z) { skateEl.hidden = true; skateKn.hidden = true; skateEl.innerHTML = ''; skateKn.innerHTML = ''; skateWeg = null; return; }
     if (skateEl.hidden) {
       skateEl.hidden = false; skateKn.hidden = false;
@@ -661,7 +662,7 @@ export function createUI({ root, input, speech }) {
   // Paare finden: links antippen, dann das passende rechts
   ui.paare = ({ titel = 'Paare finden', frage = 'Was gehört zusammen?', paare }) => new Promise((ok) => {
     const rechts = mische(paare.map((p, i) => i));
-    const k = ebeneAuf('lern', lernKopf(titel, frage, 'Erst links tippen, dann rechts.') + '<div class="ly-pa"><div class="ly-pa-sp">' + paare.map((p, i) => '<button type="button" data-l="' + i + '">' + esc(p[0]) + '</button>').join('') +
+    const k = ebeneAuf('lern', lernKopf(titel, frage, 'Erst links tippen, dann rechts.') + '<div class="ly-pa"><div class="ly-pa-sp">' + paare.map((p, i) => '<button type="button" data-l="' + i + '"' + ([...p[0]].length <= 3 ? ' class="symbol"' : '') + '>' + esc(p[0]) + '</button>').join('') +
       '</div><div class="ly-pa-sp">' + rechts.map((i) => '<button type="button" data-r="' + i + '">' + esc(paare[i][1]) + '</button>').join('') + '</div></div><div class="ly-sb-fuss"></div>');
     let links = null, fertig = 0, fehler = 0;
     k.querySelectorAll('[data-l]').forEach((b) => { b.onclick = () => { if (b.disabled) return; k.querySelectorAll('[data-l]').forEach((x) => x.classList.remove('an')); b.classList.add('an'); links = +b.dataset.l; }; });

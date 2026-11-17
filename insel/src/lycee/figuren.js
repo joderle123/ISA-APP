@@ -94,11 +94,12 @@ export async function ladePerson(veil, { modell = 'menschen', stil = 'Casual', h
   for (const clip of gltf.animations) aktionen[clip.name] = mixer.clipAction(clip);
   let jetzt = null, jetztName = '';
   // Sitzen: das Paket hat keine Sitz-Bewegung – Beine nach jedem Bild (nach der Idle-Bewegung) anwinkeln
-  const knochen = {}; group.traverse((o) => { if (o.isBone) knochen[o.name] = o; });
+  // Der Lader entfernt Punkte aus Knochennamen („UpperLeg.L“ → „UpperLegL“) – darum ohne Punkt nachschlagen
+  const knochen = {}; group.traverse((o) => { if (o.isBone) knochen[o.name.replace(/\./g, '')] = o; });
   let sitzt = false;
   const _q = new THREE.Quaternion(), _ax = new THREE.Vector3(1, 0, 0);
   const winkel = (b, a) => { if (!b) return; _q.setFromAxisAngle(_ax, a); b.quaternion.multiply(_q); };
-  const BEINE = ['UpperLeg.L', 'UpperLeg.R', 'LowerLeg.L', 'LowerLeg.R'].map((n) => knochen[n]).filter(Boolean);
+  const BEINE = ['UpperLegL', 'UpperLegR', 'LowerLegL', 'LowerLegR'].map((n) => knochen[n]).filter(Boolean);
   const ruhe = BEINE.map((b) => b.quaternion.clone());
   return {
     group: huelle, mixer, namen: Object.keys(aktionen),
@@ -117,8 +118,8 @@ export async function ladePerson(veil, { modell = 'menschen', stil = 'Casual', h
       if (sitzt) BEINE.forEach((b, i) => b.quaternion.copy(ruhe[i]));   // nicht aufaddieren, falls Idle die Beine nicht bewegt
       mixer.update(dt);
       if (sitzt) {
-        winkel(knochen['UpperLeg.L'], SITZ.ober); winkel(knochen['UpperLeg.R'], SITZ.ober);
-        winkel(knochen['LowerLeg.L'], SITZ.unter); winkel(knochen['LowerLeg.R'], SITZ.unter);
+        winkel(knochen.UpperLegL, SITZ.ober); winkel(knochen.UpperLegR, SITZ.ober);
+        winkel(knochen.LowerLegL, SITZ.unter); winkel(knochen.LowerLegR, SITZ.unter);
         group.position.y = SITZ.tief;
       }
     },

@@ -274,6 +274,7 @@ kbd { display: inline-block; min-width: 1.5em; padding: 0 .35em; margin-right: .
 .ly-ab-tipp { flex-basis: 100%; margin: -4px 0 4px 32px; color: #8a6a1a; font-size: 14px; }
 
 /* Skate-Session (Minispiel in der Skate-Ecke) */
+.ly-minispiel .ly-auftrag { display: none; }
 .ly-skate { position: absolute; top: max(14px, env(safe-area-inset-top)); left: 50%; transform: translateX(-50%); min-width: 210px; padding: 8px 18px 9px; border-radius: 16px; background: var(--karte); box-shadow: var(--schatten); text-align: center; pointer-events: none; }
 .ly-skate-kopf { font-weight: 800; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #d9693f; }
 .ly-skate-werte { display: flex; gap: 16px; justify-content: center; align-items: baseline; font-size: 15px; color: var(--ink2); }
@@ -328,3 +329,5 @@ kbd { display: inline-block; min-width: 1.5em; padding: 0 .35em; margin-right: .
 .ly-uh { display: grid; grid-template-columns: 220px 1fr; gap: 20px; align-items: center; }
 .ly-uh-uhr { width: 220px; height: 220px; }
 @media (max-width: 640px) { .ly-uh { grid-template-columns: 1fr; justify-items: center; } }
+
+.ly-pa button.symbol { font-size: 30px; line-height: 1; padding-top: 6px; padding-bottom: 6px; }

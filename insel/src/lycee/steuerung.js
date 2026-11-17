@@ -129,11 +129,15 @@ export function createSteuerung({ camera, input, welt, figur = null }) {
       _o.set(pos.x, 1.45, pos.z);
       _d.set(-Math.sin(c.yaw) * Math.cos(pitch), Math.sin(pitch), -Math.cos(c.yaw) * Math.cos(pitch)).normalize();
       const frei = strahl(_o, _d, ziel);
-      const will = Math.max(0.9, frei - 0.25);
+      // Wand oder Regal dicht hinter der Figur: Kamera nicht hineinschieben, sondern näher heran und etwas höher (über die Schulter)
+      const will = Math.max(0.3, frei - 0.25);
       camDist = sofort ? will : (will < camDist ? will : camDist + (will - camDist) * Math.min(1, dt * 3));
       _ziel.copy(_o).addScaledVector(_d, camDist);
+      if (camDist < 0.9) _ziel.y += (0.9 - camDist) * 0.4;
+      if (s.figur && !s.brett) s.figur.group.visible = camDist > 0.5;
       if (innen) _ziel.y = Math.min(_ziel.y, decke - 0.3);
       _blick.set(pos.x, 1.3 + (innen ? 0.05 : 0.15), pos.z);
+      if (camDist < 0.9) { const vor = (0.9 - camDist) * 4; _blick.x -= _d.x * vor; _blick.z -= _d.z * vor; _blick.y = 1.35; }   // dicht an der Wand: nach vorn schauen
     }
     if (sofort) camera.position.copy(_ziel); else camera.position.lerp(_ziel, Math.min(1, dt * (s.fokus ? 4 : 12)));
     camera.lookAt(_blick);

@@ -128,7 +128,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   const leute = {};   // id → { def, f, pos, yaw, haltung, schild, ziel }
   // Erkennungszeichen: jede Figur trägt etwas, das zu ihr passt (Charakter auf einen Blick)
   function zubehoer(f, id) {
-    const knochen = (...namen) => { let k = null; f.group.traverse((o) => { if (!k && o.isBone && namen.includes(o.name)) k = o; }); return k; };
+    const knochen = (...namen) => { namen = namen.map((n) => n.replace(/\./g, '')); let k = null; f.group.traverse((o) => { if (!k && o.isBone && namen.includes(o.name.replace(/\./g, ''))) k = o; }); return k; };
     const an = (k, mesh, x, y, z) => { if (!k) return; k.updateMatrixWorld(true); const sk = new THREE.Vector3(); k.getWorldScale(sk); mesh.scale.multiplyScalar(1 / (sk.x || 1)); mesh.position.set(x / (sk.x || 1), y / (sk.x || 1), z / (sk.x || 1)); k.add(mesh); };
     const lam = (c) => new THREE.MeshLambertMaterial({ color: c });
     const links = knochen('Wrist.L', 'Hand.L'), rechts = knochen('Wrist.R', 'Hand.R'), hals = knochen('Neck', 'Head');
@@ -241,7 +241,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   // Zigarette in der rechten Hand, kleine Rauchwölkchen steigen auf
   const rauchMat = new THREE.MeshBasicMaterial({ color: '#e8e8ee', transparent: true, opacity: 0.4, depthWrite: false });
   function zigarette(f) {
-    let hand = null; f.group.traverse((o) => { if (o.isBone && o.name === 'Wrist.R') hand = o; });
+    let hand = null; f.group.traverse((o) => { if (o.isBone && o.name.replace(/\./g, '') === 'WristR') hand = o; });
     if (!hand) return null;
     const z = new THREE.Mesh(new THREE.CylinderGeometry(0.006, 0.006, 0.08, 6), new THREE.MeshBasicMaterial({ color: '#f4f1ea' }));
     z.rotation.z = Math.PI / 2; z.position.set(0.03, 0.09, 0.03);
