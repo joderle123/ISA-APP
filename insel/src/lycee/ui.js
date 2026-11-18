@@ -176,6 +176,7 @@ export function createUI({ root, input, speech }) {
   function ebeneAuf(art, html) { ebene.hidden = false; ebene.dataset.art = art; ebene.innerHTML = '<div class="ly-karte ly-k-' + art + '">' + html + '</div>'; return ebene.firstChild; }
   function ebeneZu() { ebene.hidden = true; ebene.innerHTML = ''; ebene.dataset.art = ''; }
   ui.ebeneZu = ebeneZu;
+  ui.ebeneAuf = ebeneAuf;
   ui.ebeneArt = () => (ebene.hidden ? '' : ebene.dataset.art || '');
 
   // Menschen im Journal: Freundschaft als Balken (0–100) mit Stufe, Typ, Hobby und Gründen; oben dein Freundeskreis und Profil

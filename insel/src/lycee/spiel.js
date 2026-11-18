@@ -25,6 +25,8 @@ import { BLAETTER } from './blaetter.js';
 import { MATHE, matheBlatt } from './mathe.js';
 import { createSteuerung } from './steuerung.js';
 import { createUI } from './ui.js';
+import { situationen } from './situation.js';
+import { FACHLEHRER } from './story/personal.js';
 import { SCHRITTE, GESPRAECHE, LEUTE, STAERKEN, BINGO, GEHEIMNISSE, SPRECHER, KAPITEL } from './geschichte.js';
 import { ORTE2, CHAT, CHAT5, ichBotschaftThema } from './kapitel2.js';
 import { ORTE3, saegeFolgen } from './kapitel3.js';
@@ -101,12 +103,16 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
 
   await schritt(0.6, 'Die Klasse kommt …');
   const ui = createUI({ root, input, speech });
+  situationen(ui, { name: () => 'Du', ersetze: (t) => ersetze(t) });
   const steuerung = createSteuerung({ camera, input, welt });
   rr.attachPost({ scene, camera, veil });
 
   // ---------- Zustand ----------
   let S = lies();
-  const neuerStand = (name, figur) => ({ v: 1, name, figur, schritt: 0, herz: {}, staerken: {}, merke: {}, entdeckt: [], stundenplan: false, bingo: {}, gefragt: [], fertig: false });
+  // Neue Geschichte (v2): alte Spielstände starten beim neuen Kapitel 1 – Freundschaften, Jetons, Dinge, Aussehen bleiben
+  const neuStart = (x) => { if (x && (x.v || 1) < 2) { Object.assign(x, { v: 2, schritt: 0, fertig: false, kapitelFertig: 0, bingo: {}, gefragt: [], szenen: {} }); } return x; };
+  neuStart(S);
+  const neuerStand = (name, figur) => ({ v: 2, name, figur, schritt: 0, herz: {}, staerken: {}, merke: {}, entdeckt: [], stundenplan: false, bingo: {}, gefragt: [], fertig: false });
   const sichern = () => schreib(S);
 
   // ---------- Menschen ----------
@@ -371,6 +377,20 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         if (w.merke) S.merke[w.merke] = true;
         sichern();
         if (w.dann && w.dann.length) await spiele(w.dann);
+      } else if (z.szene) {
+        // Situations-Spiel (situation.js): Ausgang → Folgen (wie eine Wahl: staerke, herz, merke, dann)
+        const def = typeof z.def === 'function' ? z.def(S.merke) : z.def;
+        ui.dialogZu();
+        const SZ = { hitze: 'hitzeDuell', chat: 'liveChat', checkin: 'checkIn', namen: 'namenRekord', zwei: 'zweiWahrheiten', blind: 'blindParcours', stempel: 'skillsStempel', tanks: 'tankRaten', linie: 'linie', staerken: 'staerkenSchenken', pult: 'gefuehlsPult', lesen: 'gesichterLesen', mischpult: 'mischpult' };
+        const r = (await ui[SZ[z.szene] || z.szene](def)) || {};
+        const key = z.ausgang ? z.ausgang(r, S.merke) : 'standard';
+        S.szenen = S.szenen || {}; if (z.id) S.szenen[z.id] = key;
+        const f = (z.folgen && (z.folgen[key] || z.folgen.standard)) || {};
+        if (f.staerke) [].concat(f.staerke).forEach(staerke);
+        if (f.herz) for (const [id, n] of Object.entries(f.herz)) herz(id, n);
+        if (f.merke) [].concat(f.merke).forEach((m) => { S.merke[m] = true; });
+        sichern();
+        if (f.dann && f.dann.length) await spiele(f.dann);
       } else if (z.tu) {
         const mehr = await TUN[z.tu]?.();
         if (Array.isArray(mehr) && mehr.length) await spiele(mehr);
@@ -1278,7 +1298,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     const m = (LEKTIONEN[fach] || []).find((x) => x.nr === nr), l = m && m.lektionen.find((x) => x.id === id);
     if (!l) return;
     S.lektionen = S.lektionen || {};
-    const lp = l.lehrer;
+    const lp = FACHLEHRER[fach] || l.lehrer;
     await spiele([[lp, FACHNAME[fach] + ', Modul ' + nr + ': „' + l.titel + '“.'], ...l.intro.map((t) => [lp, t])]);
     if (l.merke) { ui.dialogZu(); await ui.merke({ titel: l.merke.titel, punkte: l.merke.punkte, ziel: l.ziel, fach: FACHNAME[fach] + ' · Modul ' + nr }); }
     // Lernformen je Lektion (tools/sprachen): Rollenspiel, Satzbau, Paare, Hören, Uhr, Groß/klein, Wegsuche im Haus, Blatt
@@ -1466,7 +1486,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   // Während eines Minispiels auf eigener Fläche (Bandprobe, Tischtennis, Freiwurf) ruht die 3D-Welt fast ganz:
   // sie ist ohnehin verdeckt, und der Takt im Spiel braucht die Rechenzeit.
   let ruheN = 0;
-  const loop = createLoop({ render: () => { if (ui.ebeneArt && ui.ebeneArt() === 'spiel' && (ruheN++ % 20)) return; rr.render({ night: sky.night, time: loop.time, sun: sky.sunDir, sunColor: sky.colors && sky.colors.light }); } });
+  const loop = createLoop({ render: () => { if (ui.ebeneArt && ['spiel', 'szene'].includes(ui.ebeneArt()) && (ruheN++ % 20)) return; rr.render({ night: sky.night, time: loop.time, sun: sky.sunDir, sunColor: sky.colors && sky.colors.light }); } });
   loop.add(() => input.beginFrame(), { order: -100, always: true });
   loop.add((dt) => {
     if (!laeuft) { camera.position.set(-36, 16, 64); camera.lookAt(0, 6, -10); return; }
@@ -1588,7 +1608,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     teleport: (ort, yaw) => { const o = typeof ort === 'string' ? welt.orte[ort] : ort; steuerung.teleport(o.x, o.z, yaw !== undefined ? yaw : o.yaw); },
     rede, los, audio, SITZ, input, get naechste() { return naechste && naechste.id; },
     get probe() { return probe; }, set mutTempo(v) { mutTempo = v; },
-    daten: { SCHRITTE, STATISTEN, LEUTE, BLAETTER, MATHE, LEKTIONEN }, ia, aktion, get iaNah() { return iaNah && iaNah.tu; },
+    daten: { SCHRITTE, STATISTEN, LEUTE, BLAETTER, MATHE, LEKTIONEN, GESPRAECHE }, ia, aktion, get iaNah() { return iaNah && iaNah.tu; },
   };
 
   onProgress(1, '');
@@ -1599,7 +1619,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   ui.speicherName = () => speicherName();
   const plaetze = () => [1, 2, 3].map((p) => { const s2 = lies(p); return s2 && s2.name ? { name: s2.name, kap: (SCHRITTE[s2.schritt] || {}).kap || 1, fertig: !!s2.fertig, zeit: s2.zeit || 0 } : null; });
   const w = await ui.titel({ gespeichert: !!(S && S.name), figuren: FIGUREN, lehrer, platz, plaetze,
-    wechsle: (p) => { platz = p; try { localStorage.setItem('lycee.platz', String(p)); } catch (e) { /* privat */ } S = lies(); return !!(S && S.name); } });
+    wechsle: (p) => { platz = p; try { localStorage.setItem('lycee.platz', String(p)); } catch (e) { /* privat */ } S = neuStart(lies()); return !!(S && S.name); } });
   if (w.weiter) await los(false); else await los(true, w.figur, w.name);
   return window.LYCEE;
 }

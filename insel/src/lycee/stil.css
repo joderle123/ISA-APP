@@ -391,3 +391,75 @@ kbd { display: inline-block; min-width: 1.5em; padding: 0 .35em; margin-right: .
 /* Bandprobe */
 .ly-bp-knoepfe { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 8px 0 4px; }
 .ly-bp-knoepfe .ly-btn { background: var(--f); color: #fff; border: 0; min-height: 56px; font-weight: 900; touch-action: manipulation; }
+
+/* ---------- Situations-Spiele (situation.js) ---------- */
+.ly-k-szene { max-width: 560px; padding: 0 !important; overflow: hidden; }
+.sz { display: flex; flex-direction: column; gap: 10px; padding: 14px 16px 16px; }
+.sz-kopf { display: flex; justify-content: space-between; align-items: baseline; }
+.sz-kopf b { font-size: 13px; letter-spacing: 1.5px; text-transform: uppercase; color: #b5485d; }
+.sz-wo { font-weight: 900; font-size: 18px; color: var(--ink); }
+.sz-leute { display: flex; justify-content: space-between; align-items: center; }
+.sz-person { display: flex; align-items: center; gap: 8px; font-weight: 900; }
+.sz-ava { display: grid; place-items: center; width: 42px; height: 42px; border-radius: 50%; background: var(--f); color: #fff; font-style: normal; font-size: 20px; box-shadow: 0 0 0 3px #fff, 0 0 0 5px var(--f); }
+.sz-mimik { font-style: normal; font-size: 26px; transition: transform .2s; }
+.sz-publikum { font-size: 13px; font-weight: 700; color: var(--ink2); background: #f1f3f6; border-radius: 999px; padding: 4px 10px; }
+.sz-balken { position: relative; height: 16px; border-radius: 999px; background: #eceff3; overflow: hidden; }
+.sz-balken-f { height: 100%; width: 35%; border-radius: 999px; transition: width .6s cubic-bezier(.3,1.4,.5,1), background .4s; }
+.sz-balken span { position: absolute; right: 8px; top: 0; font-size: 11px; font-weight: 800; line-height: 16px; color: #5b6472; }
+.sz-heiss { animation: sz-wackeln .25s infinite; }
+@keyframes sz-wackeln { 0%,100% { transform: translateX(0); } 50% { transform: translateX(1.5px); } }
+.sz-bühne { display: flex; flex-direction: column; gap: 6px; min-height: 132px; justify-content: flex-end; }
+.sz-blase { align-self: flex-start; max-width: 85%; background: #fff; border: 2.5px solid var(--f); border-radius: 4px 16px 16px 16px; padding: 7px 12px; font-weight: 700; font-size: 16px; line-height: 1.3; box-shadow: 0 2px 0 var(--f); animation: sz-rein .18s ease-out; }
+.sz-blase.ich { align-self: flex-end; border-radius: 16px 4px 16px 16px; background: #eef4ff; }
+.sz-blase b { display: block; font-size: 11.5px; text-transform: uppercase; letter-spacing: .8px; color: var(--f); }
+@keyframes sz-rein { from { transform: scale(.85); opacity: 0; } }
+.sz-knall { align-self: center; font: 900 46px/1 system-ui; color: #d6452f; -webkit-text-stroke: 3px #1b1d26; transform: rotate(-7deg); animation: sz-rein .2s; }
+.sz-zeit { height: 5px; background: #eceff3; border-radius: 999px; overflow: hidden; }
+.sz-zeit i { display: block; height: 100%; width: 0; background: #2b3a55; }
+.sz-karten { display: grid; gap: 8px; }
+.sz-karten button { text-align: left; border: 2px solid var(--f, #2b3a55); background: #fff; border-radius: 14px; padding: 9px 12px; font: inherit; font-weight: 800; font-size: 15.5px; cursor: pointer; display: flex; flex-direction: column; gap: 2px; }
+.sz-karten button small { font-size: 11px; text-transform: uppercase; letter-spacing: .8px; color: var(--f); }
+.sz-karten button:hover { background: #f6f8fb; }
+.sz-karten .sz-weiter { align-items: center; background: var(--blau, #2b3a55); color: #fff; border: 0; }
+.sz-chat { padding: 0; }
+.sz-handy { display: flex; flex-direction: column; background: #e9edf3; }
+.sz-verlauf { height: 42vh; max-height: 420px; }
+.sz-foto { height: 110px; filter: blur(.4px); }
+.sz-aktionen { display: flex !important; flex-wrap: wrap; gap: 6px; padding: 8px 10px; background: #fff; border-top: 1px solid #dde2ea; }
+.sz-aktionen button { flex: 1 1 auto; min-width: 46%; border: 1px solid #dde2ea; background: #f8fafc; border-radius: 12px; padding: 8px 10px; font: inherit; font-weight: 800; font-size: 14px; display: flex; align-items: center; gap: 6px; cursor: pointer; }
+.sz-aktionen kbd { background: none; border: 0; font-size: 18px; }
+.sz-unten { display: flex; justify-content: space-between; align-items: center; padding: 6px 12px 10px; background: #fff; font-size: 12px; color: #6b7280; }
+
+.sz-info { margin: 0; font-size: 14px; color: var(--ink2); font-weight: 600; }
+.sz-stand { font-size: 13px; font-weight: 800; color: var(--ink2); text-align: center; min-height: 18px; }
+.sz-sys { align-self: center; font-size: 13px; font-weight: 800; color: #5b6472; background: #f1f3f6; padding: 5px 12px; border-radius: 999px; text-align: center; }
+.sz-zeichen { display: block; font-style: italic; font-weight: 600; font-size: 12.5px; color: #6b7280; margin-top: 2px; }
+.sz-raster { grid-template-columns: 1fr 1fr; }
+.sz-rueck { grid-column: 1 / -1; text-align: center; font-weight: 900; font-size: 18px; color: #b5485d; padding: 10px; }
+.sz-rueck.gut { color: #3fa66b; }
+.sz-kreis { position: relative; height: 230px; border-radius: 16px; background: radial-gradient(circle, #f6efe2, #eadfca); }
+.sz-platz { position: absolute; transform: translate(-50%, -50%); display: flex; flex-direction: column; align-items: center; gap: 2px; opacity: .55; transition: opacity .2s, transform .2s; }
+.sz-platz i { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; background: var(--f); font-style: normal; font-size: 22px; box-shadow: 0 0 0 3px #fff; }
+.sz-platz span { font-size: 12px; font-weight: 900; background: #fff; padding: 1px 6px; border-radius: 999px; }
+.sz-platz.an { opacity: 1; }
+.sz-platz.fang { opacity: 1; transform: translate(-50%, -50%) scale(1.15); }
+.sz-kreis.verdeckt .sz-platz span { visibility: hidden; }
+.sz-ball { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -110%); font-size: 26px; transition: left .35s ease-out, top .35s ease-out; pointer-events: none; }
+.sz canvas { width: 100%; height: auto; border-radius: 14px; touch-action: none; }
+.sz-steuer { display: grid !important; grid-template-columns: repeat(4, 1fr); gap: 6px; }
+.sz-steuer button { border: 0; border-radius: 12px; background: #2b3a55; color: #fff; font: inherit; font-weight: 900; padding: 12px 4px; cursor: pointer; touch-action: manipulation; }
+.sz-steuer button[data-k="s"] { background: #d6452f; }
+.sz-kurz { height: auto; min-height: 120px; max-height: 30vh; }
+.sz-wort { display: inline-block; background: var(--f); color: #fff; padding: 2px 10px; border-radius: 999px; font-weight: 900; }
+.sz-rad { padding: 10px 12px 14px; background: #fff; display: flex; flex-direction: column; gap: 6px; }
+.sz-rad p { margin: 0 0 2px; font-weight: 800; font-size: 14px; }
+.sz-rad-reihe { display: flex; flex-wrap: wrap; align-items: center; gap: 5px; }
+.sz-rad-reihe b { width: 88px; font-size: 12px; color: var(--f); text-transform: uppercase; letter-spacing: .6px; }
+.sz-rad-reihe button { border: 2px solid var(--f); background: #fff; color: var(--ink); border-radius: 999px; padding: 4px 10px; font: inherit; font-size: 13.5px; font-weight: 800; cursor: pointer; }
+.sz-rad-reihe button:hover { background: var(--f); color: #fff; }
+.sz-pass .sz-stempel { align-self: center; position: relative; border: 4px solid #b5485d; color: #b5485d; border-radius: 14px; padding: 12px 22px; font: 900 22px/1.2 system-ui; transform: rotate(-4deg); text-transform: uppercase; letter-spacing: 1px; }
+.sz-stempel i { position: absolute; right: -14px; top: -14px; background: #b5485d; color: #fff; border-radius: 50%; width: 30px; height: 30px; display: grid; place-items: center; font-style: normal; font-size: 16px; }
+.sz-gelernt { margin: 4px 0; padding-left: 18px; font-weight: 700; font-size: 14.5px; }
+.sz-mission { background: #fff7e6; border-left: 4px solid #e9a23b; padding: 8px 12px; border-radius: 8px; font-weight: 700; font-size: 14px; }
+.sz-mission b { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: #b07a1a; }
+@media (max-width: 640px) { .sz-raster { grid-template-columns: 1fr 1fr; } .sz-rad-reihe b { width: 100%; } .sz-kreis { height: 200px; } }

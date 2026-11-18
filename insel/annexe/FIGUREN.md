@@ -149,3 +149,33 @@ Erwachsene haben Grenzen, sind manchmal müde oder ungerecht, aber nie gemein. S
 - **Bauch:** will weg, hat Hunger, übertreibt.
 - **Stolz:** will gewinnen, große Worte.
 Keine hat immer recht. Höchstens drei Zeilen, dann entscheidet die Spielfigur.
+
+## Slang je Figur (ab 18.11.2026)
+| Figur | So klingt sie | Beispiele |
+|---|---|---|
+| Jo | laut, Auto-Vergleiche, „digga“, „wallah“ | „Digga, wallah, das war Motorschaden.“ |
+| Ben | Memes, Aura-Rechnung, „sein Vater“ | „Minus 1000 Aura, Bruder.“ · „Er hat bezahlt? Sein Vater.“ |
+| Luca | cool, knapp, „lowkey“, „ehrenlos“, „safe“ | „Lowkey ehrenlos, was du da machst.“ |
+| Kenan | Handwerker, „ich schwör“, „Brudi“ | „Ich schwör, zweimal gemessen, Brudi.“ |
+| Dario | Handy in der Hand, „real“, „sus“, „bro“ | „Real. Das ist sus, bro.“ |
+| Ayla | trocken, Musik, „digga“, „Fixe“ | „Digga, das war kein Takt. Das war ein Unfall.“ |
+| Chiara | ironisch, korrekt, „okay, wow“ | „Okay, wow. Hast du überhaupt gelesen?“ |
+| Yusuf | wenige Worte, „safe“, „hm“ | „Safe.“ · „Hm. Nein.“ |
+| Lina | leise, schreibt mehr als sie redet, Emojis | „lowkey traurig 🫠“ (im Chat) |
+| Mila | gar kein Slang, wörtlich, genau – das ist ihr Witz | „Was bedeutet ‚sein Vater‘? Wessen Vater?“ |
+| Noah | versucht Slang, liegt daneben | „Das ist voll … sus? Sagt man das?“ |
+| Erwachsene | normal; Hoffmann versucht es manchmal | „Das ist … wie sagt ihr … lit?“ (Klasse stöhnt) |
+
+## Erwachsene ab 18.11.2026 (Spiel-Namen von der Auftraggeberin)
+| Spiel-Name | Rolle | Kennung im Code |
+|---|---|---|
+| Mme Tidderich | Deutsch, Klassenlehrerin 7P2 („Neue Methode!“, versucht Jugendsprache) | hoffmann |
+| Herr Kuedes | SePAS, leitet die Skills-Stunde | kaya |
+| Herr Mesenberg | SePAS | mesenberg |
+| Mme Nouvelle | Deutsch (Lern-Lektionen) | nouvelle |
+| Mme Kiesser | Kunst | kiesser |
+| Mme Sabli | Französisch (Lern-Lektionen) | sabli |
+| Mme Lenning | Mathe (Lern-Lektionen) | lenning |
+| Mme Rantini | Viso / Geschichte | rantini |
+Regel: Erwachsene erzählen nichts Privates, werden nie lächerlich gemacht – der Witz liegt in ihren Ritualen
+(Methoden, Kaffee, Kekse), nicht in der Person.

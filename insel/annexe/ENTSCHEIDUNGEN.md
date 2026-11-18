@@ -131,3 +131,12 @@ Ziel war ≤ 200 Aufrufe und ≤ 400k Dreiecke – überall erreicht. Was es geb
 - **Frisuren** sind ein Netz statt bis zu 20 Kugeln.
 - **Schattenbereich** enger um die Kamera (28 m statt 40 m) – weniger Schattenwerfer, schärfere Schatten.
 - Bildrate am echten iPad ist damit noch nicht gemessen (im Test läuft die Grafik in Software).
+
+## Neustart der Geschichte (18.11.2026, Wunsch der Auftraggeberin)
+- „Kapitel sind lahm, man läuft von A nach B und klickt sich durch.“ → **Ganze Geschichte neu** (STORY.md: „@annexe.cam“).
+- **Situations-Spiele** in jedem wichtigen Moment, angelehnt an CREW, aber eigene Spiele nur für Annexe:
+  Hitze-Duell, Live-Chat, Gerücht-Staffel, Druck-Runde, Gesichter lesen, Spuren-Wand, Mut-Balken.
+  Ausgang und Entscheidungen verändern die Geschichte. Fähigkeiten werden still mitgezählt.
+- **Jugendsprache ausdrücklich erwünscht** („wallah“, „sein Vater“, „digga“, „ich schwör“, „lowkey“, „Aura“ …).
+  Die alte Regel „keine Jugendsprache“ ist aufgehoben. Jede Figur hat ihren eigenen Slang (FIGUREN.md, „Slang“).
+  Erwachsene reden ohne (Ausnahme: Hoffmann versucht es – als Witz). Derb, sexuell, gegen Herkunft bleibt tabu.

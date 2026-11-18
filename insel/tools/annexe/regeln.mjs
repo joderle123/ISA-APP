@@ -1,6 +1,6 @@
 // Annexe Junglinster – Regel-Prüfung aller Spieltexte (vor jeder Abgabe laufen lassen).
 // Aufruf (aus insel/): node tools/annexe/regeln.mjs [--alle]   (ohne --alle: nur Fehler und die ersten Hinweise)
-// Prüft: Wortzahl je Sprechblase/Antwort (max. 12), verbotene Wörter (aufgesetzte Jugendsprache, derbe Wörter),
+// Prüft: Wortzahl je Sprechblase/Antwort (max. 12), verbotene Wörter (derb, sexuell); Jugendsprache nur bei Jugendlichen,
 // Therapie- und Moralsprache, Einwürfe aus anderen Sprachen (nur aus der Liste, höchstens einer je Gespräch, nur die
 // der Figur), Telefonnummern (nur 112 und 116 111), Gewichts- und Kalorienangaben.
 import { texte } from './texte.mjs';
@@ -16,12 +16,15 @@ const MAX_WOERTER = 12;
 export const EINWUERFE = ['Moien', 'Äddi', 'Merci', 'Wéi geet et?', 'Bis muer', 'Gudden Appetit', 'Salut', 'Ça va?', 'Voilà', 'Allez', 'Tudo bem?', 'Fixe', 'Obrigado', 'Obrigada'];
 const EINWURF_RE = new RegExp('(^|[^\\p{L}])(' + EINWUERFE.map((e) => e.replace(/[?.]/g, '\\$&').replace(/\\\?$/, '\\??')).join('|') + ')(?=$|[^\\p{L}])', 'giu');
 // Fremdwörter, die wie Einwürfe klingen, aber nicht auf der Liste stehen
-const FREMD = /(^|[^\p{L}])(hola|ciao|bonjour|bonsoir|olá|oi|bom dia|gracias|grazie|thanks|sorry bro|yalla|wallah|inshallah|pardon|bisou|bisous|tschau|addi|moin|servus|grüezi|merci vill|okidoki)(?=$|[^\p{L}])/iu;
+const FREMD = /(^|[^\p{L}])(hola|ciao|bonjour|bonsoir|olá|oi|bom dia|gracias|grazie|thanks|sorry bro|inshallah|pardon|bisou|bisous|tschau|addi|moin|servus|grüezi|merci vill|okidoki)(?=$|[^\p{L}])/iu;
 const VERBOTEN = [
-  ['Jugendsprache', /(^|[^\p{L}])(digga|diggah|digger|bro|bruh|cringe|wallah|yolo|sheesh|lowkey|ehrenmann|ehrenfrau|lost|sus|slay|bae|alta|alda|vallah|krass krass|mashallah)(?=$|[^\p{L}])/iu],
   ['derb', /(scheiß|scheiss|scheiße|arsch|fick|fuck|wichs|hure|fotze|schlampe|bastard|spast|behindert|mongo|schwuchtel|missgeburt|hurensohn|kacke|pisse)/iu],
   ['sexuell', /(sex|nackt|titten|porno)/iu],
 ];
+// Jugendsprache (Entscheidung 18.11.: ausdrücklich erwünscht – so reden Jugendliche heute). Nur Erwachsene und Erzähler
+// sollen sie nicht benutzen; tun sie es doch, ist es ein Hinweis (kann ein gewollter Witz sein: Hoffmann versucht „Jugendsprache“).
+const SLANG = /(^|[^\p{L}])(digga|diggah|bro|brudi|bruh|cringe|wallah|vallah|yolo|sheesh|lowkey|ehrenmann|ehrenlos|lost|sus|slay|aura|sein vater|ich schwör|safe|goofy|no cap|real talk|wyld|lit|rizz)(?=$|[^\p{L}])/iu;
+const ERWACHSEN = ['hoffmann', 'weber', 'kremer', 'becker', 'sommer', 'laurent', 'kaya', 'fahrer', 'baeckerin', 'erzaehler', 'mesenberg', 'nouvelle', 'kiesser', 'sabli', 'lenning', 'rantini'];
 const THERAPIE = [
   /wie war das für dich/i, /was denkst du selbst/i, /es ist okay,? (angst|traurig|wütend)/i, /danke,? dass du so ehrlich/i, /ich merke,? dass/i,
   /das macht mich (traurig|wütend)/i, /du hast gelernt/i, /lohnt sich/i, /ich-botschaft/i, /mutleiter/i, /gefühle? (sind|ist) (okay|normal)/i,
@@ -45,6 +48,7 @@ for (const x of T) {
   const n = woerter(x.text);
   if (n > MAX_WOERTER) (x.wer === 'erzaehler' ? hinweise : fehler).push(['Wortzahl ' + n, ort(x)]);
   for (const [name, re] of VERBOTEN) if (re.test(x.text)) fehler.push(['verboten (' + name + ')', ort(x)]);
+  if (ERWACHSEN.includes(x.wer) && SLANG.test(x.text)) hinweise.push(['Jugendsprache bei Erwachsenen (gewollt?)', ort(x)]);
   for (const re of THERAPIE) if (re.test(x.text)) fehler.push(['Therapie/Moral', ort(x)]);
   if (FREMD.test(x.text)) fehler.push(['Einwurf nicht auf der Liste', ort(x)]);
   const ein = [...x.text.matchAll(EINWURF_RE)].map((m) => m[2]);

@@ -365,3 +365,22 @@ Object.assign(STAERKEN, STAERKEN2, STAERKEN3, STAERKEN4, STAERKEN5, STAERKEN6);
 
 // Sprecher-Namen und Farben (Erzähler, du)
 export const SPRECHER = { erzaehler: { name: '', farbe: '#5b6472' }, du: { name: 'Du', farbe: '#2b3a55' }, kopf: { name: 'Kopf', farbe: '#5f7d9e' }, bauch: { name: 'Bauch', farbe: '#b0784a' }, stolz: { name: 'Stolz', farbe: '#8a5fa8' }, kritiker: { name: 'Die fiese Stimme', farbe: '#a34a4a' } };
+
+// ---------- Neue Geschichte „Drei Jahre Annexe“ (annexe/KONZEPT-SPIEL.md): 1 Kurs-Modul = 1 Kapitel ----------
+// Die alten Kapitel bleiben als Datei (Texte, Folgen), laufen aber nicht mehr. Kapitel kommen nach und nach dazu.
+import { SCHRITTE_N1, GESPRAECHE_N1 } from './story/kapitel1.js';
+import { PERSONAL } from './story/personal.js';
+Object.assign(LEUTE, PERSONAL);
+SCHRITTE.length = 0;
+SCHRITTE.push(...SCHRITTE_N1);
+Object.assign(GESPRAECHE, GESPRAECHE_N1);
+Object.assign(KAPITEL, { 1: 'Ankommen', 2: 'Wer bin ich?', 3: 'Gefühle verstehen', 4: 'Gefühle regulieren', 5: 'Meine Gedanken', 6: 'Kommunikation und Grenzen', 7: 'Wenn es schwierig wird', 8: 'Digitale Welt', 9: 'Gesund und stark', 10: 'Abschluss' });
+Object.assign(STAERKEN, {
+  humor: STAERKEN.humor || { name: 'Humor', text: 'Du hast die Lage mit einem Witz entspannt.' },
+  mut: STAERKEN.mut || { name: 'Für andere einstehen', text: 'Du hast etwas gesagt, als es unbequem war.' },
+  lesen: STAERKEN.lesen || { name: 'Leute lesen', text: 'Du hast gemerkt, was los ist – ohne Worte.' },
+  abstand: STAERKEN.abstand || { name: 'Abstand nehmen', text: 'Du bist rausgegangen, bevor es kracht.' },
+  neinsagen: STAERKEN.neinsagen || { name: 'Nein sagen', text: 'Du hast Nein gesagt und bist trotzdem geblieben.' },
+  fuehren: { name: 'Führen', text: 'Du hast jemanden ruhig und klar gelotst.' },
+  vertrauen: { name: 'Vertrauen schaffen', text: 'Du hast dafür gesorgt, dass sich andere sicher fühlen.' },
+});
