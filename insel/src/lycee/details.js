@@ -288,6 +288,74 @@ export function baueDetails({ B, P, schilder, C, uhrTextur, extra, raeume, plaet
     }
   }
 
+  // ---------- Basketballplatz mit echten Markierungen (Mittelkreis, Zonen, Dreierlinie) ----------
+  {
+    const weiss = hex('#ffffff'), zone = hex('#2f6db0'), y = 0.102;
+    const flach = (g, f) => { g.rotateX(-Math.PI / 2); g.translate(0, y, 0); return g; };
+    const ring = (x, z, r, start = 0, len = Math.PI * 2) => { const g = flach(new THREE.RingGeometry(r - 0.06, r + 0.06, 40, 1, start, len)); g.translate(x, 0, z); geo(g, weiss); };
+    for (const [z0, dir] of [[8.12, 1], [29.88, -1]]) {
+      const zk = z0 + dir * 5.8;
+      box(26.6, 31.4, y - 0.004, y - 0.001, Math.min(z0, zk), Math.max(z0, zk), zone);   // Zone (blau)
+      for (const [a0, a1, b0, b1] of [[26.6, 26.7, Math.min(z0, zk), Math.max(z0, zk)], [31.3, 31.4, Math.min(z0, zk), Math.max(z0, zk)], [26.6, 31.4, zk - 0.05, zk + 0.05]]) box(a0, a1, y, y + 0.002, b0, b1, weiss);
+      ring(29, zk, 1.8);
+      ring(29, z0, 6.75, dir > 0 ? Math.PI : 0, Math.PI);   // Dreierlinie
+    }
+    ring(29, 19, 1.8);
+    const punkt = flach(new THREE.CircleGeometry(0.5, 24)); punkt.translate(29, 0.001, 19); geo(punkt, hex('#f2b134'));
+  }
+
+  // ---------- Mehr Farbe auf dem Hof: Wimpelketten zwischen Masten, Twister-Punkte, Pfütze ----------
+  {
+    const FARBEN = ['#e85d75', '#f2b134', '#2fb8a8', '#5fa0d0', '#8a7bc8', '#3fa66b', '#e9734a'];
+    const mast = (x, z, h) => { const g = new THREE.CylinderGeometry(0.06, 0.07, h, 8); g.translate(x, h / 2, z); geo(g, hex('#6f7a86')); B.kasten.push({ x0: x - 0.1, x1: x + 0.1, z0: z - 0.1, z1: z + 0.1, y0: 0, y1: h }); };
+    const kette = (a, b, h, n) => {
+      for (let i = 0; i < n; i++) {
+        const t0 = i / n, t1 = (i + 0.7) / n;
+        const p = (t) => [a[0] + (b[0] - a[0]) * t, h - Math.sin(Math.PI * t) * 0.9, a[1] + (b[1] - a[1]) * t];
+        const [x0, y0, z0] = p(t0), [x1, y1, z1] = p(t1), xm = (x0 + x1) / 2, zm = (z0 + z1) / 2, ym = (y0 + y1) / 2 - 0.42;
+        const g = new THREE.BufferGeometry(); g.setAttribute('position', new THREE.Float32BufferAttribute([x0, y0, z0, x1, y1, z1, xm, ym, zm, x1, y1, z1, x0, y0, z0, xm, ym, zm], 3)); g.computeVertexNormals();
+        geo(g, hex(FARBEN[i % FARBEN.length]));
+      }
+      // die Schnur
+      const l = Math.hypot(b[0] - a[0], b[1] - a[1]), seg = 16;
+      for (let i = 0; i < seg; i++) { const t = (i + 0.5) / seg, x = a[0] + (b[0] - a[0]) * t, z = a[1] + (b[1] - a[1]) * t, y = h - Math.sin(Math.PI * t) * 0.9; const g = new THREE.BoxGeometry(l / seg + 0.05, 0.02, 0.02); g.rotateY(-Math.atan2(b[1] - a[1], b[0] - a[0])); g.translate(x, y, z); geo(g, hex('#f4f1e8')); }
+    };
+    const masten = [[-24, 14], [-6, 16.5], [12, 14], [-6, 32.5]];
+    for (const [x, z] of masten) if (frei(x, z, 0.6)) mast(x, z, 5.6);
+    kette([-24, 14], [-6, 16.5], 5.5, 16); kette([-6, 16.5], [12, 14], 5.5, 16); kette([-6, 16.5], [-6, 32.5], 5.5, 14);
+    // Twister-Punkte (vier Reihen Farbe) – jemand hat sie auf den Hof gemalt
+    for (const [x0, z0] of [[14, 30], [-28, 30], [2, 30]]) {
+      if (!frei(x0 + 1.5, z0 + 1.2, 2)) continue;
+      ['#e85d75', '#f2b134', '#3fa66b', '#5fa0d0'].forEach((f, r) => { for (let c = 0; c < 5; c++) { const g = new THREE.CircleGeometry(0.26, 16); g.rotateX(-Math.PI / 2); g.translate(x0 + c * 0.75, 0.066, z0 + r * 0.75); geo(g, hex(f)); } });
+      break;
+    }
+    // Pfütze nach dem Regen (hellblau, leicht glänzend)
+    const pf = new THREE.CircleGeometry(1, 20); pf.scale(1.3, 1, 0.8); pf.rotateX(-Math.PI / 2); pf.translate(-16, 0.064, 34); geo(pf, hex('#a9c8dc'));
+  }
+
+  // ---------- Fassade mit Charakter: Blumenkästen, Kübel am Eingang, Willkommens-Banner in drei Sprachen ----------
+  {
+    const BLUMEN = ['#e85d75', '#f2b134', '#ffffff', '#8a7bc8', '#e9734a'];
+    let n = 0;
+    for (let x = -26; x <= 26.01; x += 4) {
+      if (Math.abs(x) < 3 || (n++ % 3 === 1)) continue;
+      box(x - 0.75, x + 0.75, 4.72, 4.98, -1.7, -1.42, hex('#8a5a3a'));
+      for (let i = 0; i < 7; i++) { const g = new THREE.IcosahedronGeometry(0.11 + (i % 2) * 0.03, 0); g.translate(x - 0.6 + i * 0.2, 5.05 + (i % 3) * 0.04, -1.56); geo(g, i % 2 ? hex('#3f8f4f') : hex(BLUMEN[(i + n) % BLUMEN.length])); }
+    }
+    for (const sx of [-3.4, 3.4]) {
+      const k = new THREE.CylinderGeometry(0.42, 0.32, 0.7, 12); k.translate(sx, 0.4, -1.2); geo(k, hex('#c46a3c'));
+      for (let i = 0; i < 6; i++) { const g = new THREE.IcosahedronGeometry(0.28, 0); g.translate(sx + Math.cos(i) * 0.18, 0.95 + (i % 3) * 0.18, -1.2 + Math.sin(i) * 0.18); geo(g, hex(i % 2 ? '#2e7d4f' : '#3fa66b')); }
+      B.kasten.push({ x0: sx - 0.45, x1: sx + 0.45, z0: -1.65, z1: -0.75, y0: 0, y1: 1.3 });
+    }
+    // Banner über dem Eingang
+    const c = document.createElement('canvas'); c.width = 1024; c.height = 160; const g2 = c.getContext('2d');
+    g2.fillStyle = '#2fb8a8'; g2.fillRect(0, 0, 1024, 160); g2.fillStyle = '#f2b134'; for (let i = 0; i < 1024; i += 64) { g2.beginPath(); g2.moveTo(i, 160); g2.lineTo(i + 32, 130); g2.lineTo(i + 64, 160); g2.fill(); }
+    g2.fillStyle = '#ffffff'; g2.font = 'bold 74px system-ui, sans-serif'; g2.textAlign = 'center'; g2.textBaseline = 'middle'; g2.fillText('Wëllkomm · Bienvenue · Willkommen', 512, 70);
+    const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = 4;
+    const banner = new THREE.Mesh(new THREE.PlaneGeometry(9, 1.4), new THREE.MeshBasicMaterial({ map: t }));
+    banner.position.set(0, 7.75, -1.62); extra(banner);
+  }
+
   ersetzeBaeume();
 
   // ---------- Fassade des Haupthauses (x −30 … 30, z −30 … −2): Fensterfaschen, Schlusssteine, Lisenen, Dachgauben ----------

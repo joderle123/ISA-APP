@@ -2,6 +2,7 @@
 // lässt die Geschichte laufen (geschichte.js). Gespeichert wird nur im Browser („lycee.stand“), nichts geht ins Netz.
 // Für Tests: window.LYCEE (zustand, schritt(i), teleport(ort), rede(id), gespraechLaeuft).
 import { ABZEICHEN, neuePassAbzeichen } from './pass.js';
+import { createTiere } from './tiere.js';
 import * as THREE from 'three';
 import { createEvents } from '../engine/events.js';
 import { createLoop } from '../engine/loop.js';
@@ -134,6 +135,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     }).observe(root, { childList: true, subtree: true });
   })();
   const steuerung = createSteuerung({ camera, input, welt });
+  const tiere = createTiere({ scene, steuerung });
   rr.attachPost({ scene, camera, veil });
 
   // ---------- Zustand ----------
@@ -237,6 +239,16 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     { modell: 'menschen', stil: 'Casual', haut: '#e8bf9a', haar: '#2b1d14', oben: '#3fa66b', unten: '#4a4f5c', schuhe: '#f2f2f2', hoehe: 1.75, kopf: 'cap', kopfFarbe: '#d9523c', steht: [-20, 34.1, Math.PI, 'redet'] },
     { modell: 'frauen', stil: 'Formal', haut: '#f3d2b5', haar: '#5a3a24', oben: '#9b7bc8', unten: '#2b2b33', schuhe: '#2b2b2b', hoehe: 1.6, steht: [5.6, 18.62, 0, 'sitzt'] },
     { modell: 'menschen', stil: 'Worker', haut: '#9b6a45', haar: '#1b1410', oben: '#d9693f', unten: '#2d3748', schuhe: '#ffffff', hoehe: 1.71, weg: [[-30, 20], [-6, 32], [10, 32], [-30, 20]], tempo: 1.1 },
+    // Qualitätsrunde Grafik: Kantine nicht mehr leer, Innenhof, Basketball-Rand, Gang
+    { modell: 'frauen', stil: 'Casual', haut: '#e0b48c', haar: '#5a3a24', oben: '#e85d75', unten: '#3a3f4b', schuhe: '#ffffff', hoehe: 1.6, steht: [10.75, -5.9, 1.57, 'sitzt'] },
+    { modell: 'menschen', stil: 'Casual2', haut: '#9b6a45', haar: '#1b1410', oben: '#ffd166', unten: '#2d3748', schuhe: '#2b2b2b', hoehe: 1.72, steht: [12.25, -5.9, -1.57, 'sitzt'] },
+    { modell: 'frauen', stil: 'Adventurer', haut: '#f3d2b5', haar: '#c9a15a', oben: '#4f88c8', unten: '#2b2b33', schuhe: '#f2f2f2', hoehe: 1.62, steht: [15.15, -4.9, 1.57, 'sitzt'] },
+    { modell: 'menschen', stil: 'Beach', haut: '#c68e64', haar: '#2b1d14', oben: '#2fb8a8', unten: '#4a4f5c', schuhe: '#ffffff', hoehe: 1.7, steht: [-21.2, -46.25, 0, 'sitzt'] },
+    { modell: 'frauen', stil: 'Formal', haut: '#8d5a3b', haar: '#1b1410', oben: '#d9693f', unten: '#2d3748', schuhe: '#2b2b2b', hoehe: 1.62, steht: [-6, -38, 2.2, 'redet'] },
+    { modell: 'menschen', stil: 'Casual', haut: '#e8bf9a', haar: '#3a2a1c', oben: '#6b4e8a', unten: '#3a3f4b', schuhe: '#f2f2f2', hoehe: 1.74, steht: [-7.1, -39.2, -0.9, 'redet'] },
+    { modell: 'menschen', stil: 'Worker', haut: '#d8a982', haar: '#1b1410', oben: '#3f78b8', unten: '#2d3748', schuhe: '#ffffff', hoehe: 1.76, steht: [40.8, 18.4, -1.57, 'redet'] },
+    { modell: 'frauen', stil: 'Casual', haut: '#f1c7a2', haar: '#2b1d14', oben: '#e9c46a', unten: '#3a3f4b', schuhe: '#ffffff', hoehe: 1.63, steht: [40.9, 20.2, -1.9, 'handy'] },
+    { modell: 'menschen', stil: 'Casual2', haut: '#c99a72', haar: '#2b1d14', oben: '#e85d75', unten: '#2d3748', schuhe: '#2b2b2b', hoehe: 1.7, steht: [4.2, -17.2, Math.PI, 'handy'] },
     // Halle: liest an der Pinnwand
     { modell: 'frauen', stil: 'Casual', haut: '#c99a72', haar: '#2b1d14', oben: '#e9c46a', unten: '#3a3f4b', schuhe: '#f2f2f2', hoehe: 1.62, steht: [-6.7, -12.4, -Math.PI / 2, 'handy'] },
   ];
@@ -316,6 +328,38 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       x.f.group.rotation.y += dy * Math.min(1, dt * 6);
       x.f.group.position.copy(x.p); x.h.x = x.p.x; x.h.z = x.p.z;
     }
+  }
+
+  // ---------- Sprüche im Vorbeigehen: Statisten sagen kurz etwas, manche winken (Lebendigkeit) ----------
+  const SPRUECHE = {
+    draussen: ['Moien! 👋', 'Wer hat Seite 12?', 'Pause ist zu kurz. Fakt.', 'Ich hab Hunger. Seit 1998.', 'Gerd ist wieder da 🐦', 'Eins gegen eins? Am Korb?', 'Ich hab mein Ladekabel vergessen. Schon wieder.',
+      'Lowkey müde.', 'Hast du Mathe gemacht? … Ich auch nicht.', 'Salut! Ça va?', 'Wer hat meinen Ball?', 'Heute ist so ein Tag. Du weißt.', 'Bro, dein Schuh ist offen. … Reingefallen.', 'Noch 12 Minuten bis zum Klingeln!'],
+    kantine: ['Das Curry ist heute okay!', 'Nudeln. Schon wieder.', 'Wer isst seinen Nachtisch nicht?', 'Frau Kremer hat mir extra Soße gegeben 🙏', 'Zu wenig Salz. Sagt Luca immer.', 'Ich hol mir Nachschlag. Wünsch mir Glück.'],
+    gang: ['Mein Spind klemmt. Wie immer.', 'Wo ist Saal 1.06?', 'Hast du den Plan für morgen?', 'Pssst. Da kommt wer.', 'Ich renn nicht. Ich gehe schnell.'],
+    innenhof: ['Hier ist es so ruhig. Ich liebe das.', 'Hast du das Plakat für die Aula gesehen?', 'Ich übe meinen Text. Leise.'],
+    skate: ['Kickflip! … fast.', 'Guck! … Nee, warte. Nochmal.', 'Das Board ist von meinem Cousin.'],
+  };
+  const sprueche_el = document.createElement('div'); sprueche_el.className = 'ly-bark'; sprueche_el.hidden = true; root.appendChild(sprueche_el);
+  const _bv = new THREE.Vector3();
+  let spruchNaechst = performance.now() + 4000, spruchWer = null, spruchBis = 0;
+  function sprueche(dt) {
+    const offen = !imGespraech && !ui.ebeneArt() && laeuft;
+    if (spruchWer && performance.now() < spruchBis && offen) {
+      _bv.copy(spruchWer.f.group.position); _bv.y += (spruchWer.d.steht && spruchWer.d.steht[3] === 'sitzt') ? 1.55 : 2.05; _bv.project(camera);
+      const sicht = _bv.z < 1 && Math.abs(_bv.x) < 1 && Math.abs(_bv.y) < 1;
+      sprueche_el.hidden = !sicht;
+      if (sicht) { sprueche_el.style.left = ((_bv.x + 1) * 50) + '%'; sprueche_el.style.top = ((1 - _bv.y) * 50) + '%'; }
+    } else if (spruchWer) { sprueche_el.hidden = true; spruchWer = null; }
+    if (performance.now() < spruchNaechst || !offen) return;
+    spruchNaechst = performance.now() + 5000 + Math.random() * 6000;
+    const p = steuerung.pos; let best = null, bd = 7.5;
+    for (const x of statisten) { const d = Math.hypot(x.f.group.position.x - p.x, x.f.group.position.z - p.z); const sichtbar = x.f.group.children[0] && x.f.group.children[0].visible; if (d < bd && d > 1.2 && sichtbar) { bd = d; best = x; } }
+    if (!best) return;
+    const r = welt.raumBei(best.p.x, best.p.z), rid = r ? r.id : 'draussen';
+    const pool = best.d.skate ? SPRUECHE.skate : SPRUECHE[rid === 'kantine' || rid === 'gang' ? rid : best.p.z < -32 && best.p.z > -50 && !r ? 'innenhof' : 'draussen'] || SPRUECHE.draussen;
+    sprueche_el.textContent = pool[Math.floor(Math.random() * pool.length)];
+    spruchWer = best; spruchBis = performance.now() + 3400;
+    if (bd < 3.5 && best.d.steht && best.d.steht[3] === 'redet' && Math.random() < 0.6) { best.f.spiele('Wave'); setTimeout(() => best.f.spiele('Interact', { tempo: 0.35 }), 2400); }
   }
 
   // ---------- Spielfigur ----------
@@ -1608,6 +1652,13 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       x.schild.material.opacity = Math.max(0, Math.min(1, (9 - d) / 3));
     }
     statistenBewegen(dt);
+    sprueche(dt);
+    tiere.update(dt, t, { night: sky.night || 0, onGerd: () => {
+      if (!S || imGespraech) return;
+      const n = S.merke.gerd = (S.merke.gerd || 0) + 1; sichern();
+      const G = ['Gerd. Die Taube. Mit Partyhut. Niemand weiß, warum.', 'Gerd guckt dich an. Du guckst Gerd an. Gerd gewinnt.', 'Gerd fliegt nie weg. Gerd hat keine Angst. Vor nichts.', 'Gerd pickt an deinem Schuh. Ihr seid jetzt Freunde.', 'Gerd hat heute einen schlechten Tag. Man sieht es am Hut.', 'Lina hat Gerd schon 40-mal gezeichnet. Gerd weiß das.'];
+      ui.toast('<b>🐦 Gerd</b><span>' + G[(n - 1) % G.length] + '</span>', 'ly-t-herz'); ton('pling');
+    } });
     // Bank-Momente: neben jemandem sitzen, nichts sagen. Nach 9 Sekunden zählt das.
     if (laeuft && S && steuerung.sitzt && !imGespraech) {
       const nah = Object.values(leute).find((x) => x.f.group.visible && BANK[x.id] && Math.hypot(x.pos.x - p.x, x.pos.z - p.z) < 1.9);
@@ -1716,7 +1767,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     welt, steuerung, leute, sky, camera, scene, req, ui, rr,
     springe: async (i) => { await starteSchritt(typeof i === 'number' ? i : SCHRITTE.findIndex((s) => s.id === i), true); },
     teleport: (ort, yaw) => { const o = typeof ort === 'string' ? welt.orte[ort] : ort; steuerung.teleport(o.x, o.z, yaw !== undefined ? yaw : o.yaw); },
-    rede, los, audio, SITZ, input, get naechste() { return naechste && naechste.id; },
+    rede, los, audio, SITZ, input, get spruch() { return { wer: !!spruchWer }; }, get naechste() { return naechste && naechste.id; },
     get probe() { return probe; }, set mutTempo(v) { mutTempo = v; },
     daten: { SCHRITTE, STATISTEN, LEUTE, BLAETTER, MATHE, LEKTIONEN, GESPRAECHE }, ia, aktion, get iaNah() { return iaNah && iaNah.tu; },
   };

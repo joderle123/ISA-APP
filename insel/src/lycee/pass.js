@@ -13,6 +13,7 @@ export const ABZEICHEN = [
   { id: 'snack', sy: '🍫', t: 'Snack-Profi', hinweis: 'Der Automat kennt dich', test: (S) => (m(S).automat || 0) >= 3 },
   { id: 'kevin', sy: '🌵', t: 'Kevins Freund', hinweis: 'Gieß die Pflanzen. Oft.', test: (S) => (m(S).gegossen || 0) > 3 },
   { id: 'pinn', sy: '📌', t: 'Gut informiert', hinweis: 'Die Pinnwand dreimal lesen', test: (S) => (m(S).pinnwand || 0) >= 3 },
+  { id: 'gerd', sy: '🐦', t: 'Gerds Freund', hinweis: 'Eine Taube fliegt nie weg. Besuch sie dreimal.', test: (S) => (m(S).gerd || 0) >= 3 },
   { id: 'entdeck5', sy: '🔭', t: 'Entdecker', hinweis: '5 geheime Orte finden', test: (S) => (S.entdeckt || []).length >= 5 },
   // Menschen
   { id: 'freund', sy: '🤝', t: 'Echte Freundschaft', hinweis: 'Mit jemandem richtig befreundet sein', test: (S) => Object.values(S.freund || {}).some((p) => p >= 60) },
