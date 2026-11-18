@@ -275,10 +275,10 @@ const LOOK_SHADER = {
       if (uRaster > 0.0) {
         vec2 p = mat2(0.7071, -0.7071, 0.7071, 0.7071) * px / uRaster;
         float d = length(fract(p) - 0.5);
-        float dunkel = 1.0 - smoothstep(0.18, 0.5, l);
-        float r = sqrt(dunkel) * 0.52;
+        float dunkel = 1.0 - smoothstep(0.06, 0.3, l);   // nur in echten Schatten, nicht auf mittleren Farben
+        float r = sqrt(dunkel) * 0.5;
         float punkt = 1.0 - smoothstep(r - 0.05, r + 0.05, d);
-        col *= 1.0 - punkt * 0.5;
+        col *= 1.0 - punkt * 0.32;
       }
       // Schraffur in den Schatten (diagonal, zweite Lage im Tiefschatten), leicht unruhig
       if (uSchraffur > 0.0) {
@@ -385,7 +385,7 @@ export function createRenderer({ canvas, quality: qInfo, events, look: startLook
     if (post.outline) { post.outline.uniforms.uStrength.value = q.outline > 0 ? w.kontur : 0; post.outline.uniforms.uThick.value = outlinePx(q, renderer.getPixelRatio()) * w.konturDicke; post.outline.enabled = q.outline > 0 && w.kontur > 0; }
     if (post.look) {
       const u = post.look.uniforms;
-      u.uStufen.value = w.stufen; u.uRaster.value = w.raster; u.uSchraffur.value = w.schraffur; u.uPapier.value = w.papier;
+      u.uStufen.value = w.stufen; u.uRaster.value = renderer.getPixelRatio() >= 2 ? w.raster : 0;   // Punkte nur bei scharfem Bild – sonst wirken sie wie Schmutz (Handy) u.uSchraffur.value = w.schraffur; u.uPapier.value = w.papier;
       u.uKorn.value = w.korn; u.uSaett.value = w.saett; u.uHell.value = w.hell; u.uWeich.value = w.weich; u.uPastell.value = w.pastell || 0;
       if (post.tiefe) post.tiefe.uniforms.uAO.value = (q.ao || 0) * (w.ao == null ? 1 : w.ao);
       post.look.enabled = aktLook !== 'aus' || Object.keys(LOOKS.aus).some((k) => w[k] !== LOOKS.aus[k]);

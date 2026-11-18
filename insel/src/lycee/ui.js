@@ -37,7 +37,7 @@ export function createUI({ root, input, speech }) {
   ui.uhr = (h, tag) => { const hh = Math.floor(h), mm = Math.floor((h - hh) * 60); uhr.textContent = (tag ? tag.slice(0, 2) + ' ' : '') + String(hh).padStart(2, '0') + ':' + String(mm).padStart(2, '0'); };
   // Tätigkeitswort für den runden Knopf (Finger): letztes Wort auf „-en“ („Spind öffnen“ → „Öffnen“), sonst das erste
   const verb = (t) => { const w = String(t).replace(/\(.*?\)/g, '').trim().split(/\s+/); const v = [...w].reverse().find((x) => /en$/.test(x)) || w[0] || 'Los'; return v.charAt(0).toUpperCase() + v.slice(1); };
-  ui.hinweis = (t) => { if (!t) { hinweis.hidden = true; akt.textContent = 'Los'; akt.classList.remove('ly-akt-wort'); return; } hinweis.hidden = false; hinweis.innerHTML = '<kbd>E</kbd>' + esc(t); akt.textContent = verb(t); akt.classList.add('ly-akt-wort'); };
+  ui.hinweis = (t) => { if (!t) { hinweis.hidden = true; akt.textContent = ''; akt.classList.remove('ly-akt-wort'); akt.classList.add('ly-akt-leer'); return; } akt.classList.remove('ly-akt-leer'); hinweis.hidden = false; hinweis.innerHTML = '<kbd>E</kbd>' + esc(t); akt.textContent = verb(t); akt.classList.add('ly-akt-wort'); };
   hinweis.addEventListener('click', () => ui.onAktion && ui.onAktion());
   ui.toast = (t, art = '') => {
     const x = el('div', 'ly-toast ' + art, t); toastBox.appendChild(x);
@@ -82,7 +82,7 @@ export function createUI({ root, input, speech }) {
   // Sicherungscode: der ganze Spielstand als Text (zum Aufschreiben/Kopieren) – und zurück. Nichts geht ins Netz.
   const sicherung = (zurueck) => {
     let code = '';
-    try { const roh = localStorage.getItem('lycee.stand') || ''; code = roh ? 'AJ1.' + btoa(unescape(encodeURIComponent(roh))) : ''; } catch (e) { code = ''; }
+    try { const roh = localStorage.getItem(ui.speicherName ? ui.speicherName() : 'lycee.stand') || ''; code = roh ? 'AJ1.' + btoa(unescape(encodeURIComponent(roh))) : ''; } catch (e) { code = ''; }
     const k = ebeneAuf('raus', '<div class="ly-t-kicker">Sicherungscode</div><h2>Dein Spielstand als Code</h2><p class="ly-leer">Kopieren und gut aufheben. Auf einem anderen Gerät hier einfügen.</p>' +
       '<textarea class="ly-sagt-text" rows="4" readonly>' + esc(code || '(noch kein Spielstand)') + '</textarea>' +
       '<p class="ly-leer">Code einfügen (ersetzt den Spielstand auf diesem Gerät):</p><textarea class="ly-sagt-text" rows="3" data-ein></textarea>' +
@@ -95,8 +95,9 @@ export function createUI({ root, input, speech }) {
         const t = ein.value.trim(); if (!t.startsWith('AJ1.')) throw new Error('form');
         const roh = decodeURIComponent(escape(atob(t.slice(4)))); const st = JSON.parse(roh);
         if (!st || typeof st.name !== 'string' || typeof st.schritt !== 'number') throw new Error('inhalt');
-        try { const alt = localStorage.getItem('lycee.stand'); if (alt) localStorage.setItem('lycee.stand.vorher', alt); } catch (x) { /* egal */ }
-        localStorage.setItem('lycee.stand', roh);
+        const sn = ui.speicherName ? ui.speicherName() : 'lycee.stand';
+        try { const alt = localStorage.getItem(sn); if (alt) localStorage.setItem(sn + '.vorher', alt); } catch (x) { /* egal */ }
+        localStorage.setItem(sn, roh);
         meld.textContent = 'Geladen. Das Spiel startet neu …'; setTimeout(() => location.reload(), 900);
       } catch (e) { meld.textContent = 'Der Code passt nicht. Ganz kopiert?'; }
     };
@@ -202,13 +203,16 @@ export function createUI({ root, input, speech }) {
   };
 
   // Titelbild: Weiter / Neu, Figur und Name wählen
-  ui.titel = ({ gespeichert, figuren, lehrer }) => new Promise((ok) => {
+  ui.titel = ({ gespeichert, figuren, lehrer, platz = 1, plaetze = null, wechsle = null }) => new Promise((ok) => {
    const zeigeTitel = () => {
     const k = ebeneAuf('titel', '<div class="ly-t-kicker">Ein Schulsimulator</div><h1 class="ly-t-name">Annexe<br><span>Junglinster</span></h1>' +
-      '<p class="ly-t-sub">Vier Kapitel · Rentrée · Die erste Woche · Der Schnuppertag · Nein sagen</p><div class="ly-t-knoepfe">' +
+      '<p class="ly-t-sub">Sieben Kapitel · eine Schule · ganz viel Pause</p>' +
+      (plaetze ? '<div class="ly-t-plaetze">' + plaetze().map((x, i) => '<button type="button" data-p="' + (i + 1) + '" class="' + (i + 1 === platz ? 'an' : '') + '"><b>' + (i + 1) + '</b><span>' + (x ? esc(x.name) + ' · ' + (x.fertig ? 'fertig' : 'Kapitel ' + x.kap) : 'frei') + '</span></button>').join('') + '</div>' : '') +
+      '<div class="ly-t-knoepfe">' +
       (gespeichert ? '<button type="button" class="ly-btn ly-primaer" data-a="weiter">Weiterspielen</button><button type="button" class="ly-btn" data-a="neu">Neu anfangen</button>' : '<button type="button" class="ly-btn ly-primaer" data-a="neu">Los geht’s</button>') +
       '</div><p class="ly-t-fuss">' + (matchMedia('(pointer: coarse)').matches ? 'Links wischen = laufen · rechts wischen = umschauen · E = reden · ☰ = Journal' : 'WASD / Pfeile laufen · Maus ziehen = umschauen · E = reden · Tab = Journal') + '</p>' +
       (lehrer ? '<button type="button" class="ly-link" data-a="lehrer">Für Lehrpersonen: eigene Aufgaben</button>' : ''));
+    k.querySelectorAll('[data-p]').forEach((b) => { b.onclick = () => { platz = +b.dataset.p; gespeichert = wechsle(platz); zeigeTitel(); }; });
     k.querySelectorAll('[data-a]').forEach((b) => { b.onclick = () => {
       if (b.dataset.a === 'weiter') { ebeneZu(); ok({ weiter: true }); return; }
       if (b.dataset.a === 'lehrer') { lehrer().then(zeigeTitel); return; }

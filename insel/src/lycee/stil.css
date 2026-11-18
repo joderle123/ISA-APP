@@ -155,7 +155,11 @@ kbd { display: inline-block; min-width: 1.5em; padding: 0 .35em; margin-right: .
   .ly-toasts { top: auto; bottom: 200px; right: 12px; left: 12px; align-items: stretch; }
   .ly-toast { max-width: none; }
   .ly-d-text { font-size: 18px; }
-  .ly-bingo { left: 12px; right: 112px; width: auto; bottom: 28px; }
+  .ly-bingo { left: 12px; right: 112px; width: auto; bottom: 28px; padding: 7px 8px 8px; }
+  .ly-b-kopf { font-size: 11px; margin-bottom: 5px; }
+  .ly-b-feld { gap: 4px; }
+  .ly-b-feld > div { padding: 4px 6px; font-size: 11.5px; border-width: 1.5px; }
+  .ly-b-feld > div b { display: inline; margin: 0 0 0 4px; }
 }
 @media (max-width: 640px) { .ly-touch .ly-hinweis { bottom: 236px; } }
 
@@ -375,3 +379,11 @@ kbd { display: inline-block; min-width: 1.5em; padding: 0 .35em; margin-right: .
 .ly-ed-wort { border: 1px solid var(--rand); background: #fff; border-radius: 999px; padding: 6px 12px; font: inherit; font-weight: 700; font-size: 14px; cursor: pointer; }
 .ly-ed-wort.an { background: var(--blau); color: #fff; border-color: var(--blau); }
 .ly-d-optionen kbd[style] { width: 22px; height: 22px; min-width: 22px; border-radius: 50%; border: 2px solid #fff; box-shadow: 0 0 0 1px var(--rand); }
+
+/* Drei Spielstände auf dem Titelbild */
+.ly-t-plaetze { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin: 4px 0 12px; }
+.ly-t-plaetze button { display: flex; align-items: center; gap: 8px; border: 1px solid var(--rand); background: #fff; border-radius: 12px; padding: 8px 12px; font: inherit; font-size: 14px; font-weight: 700; cursor: pointer; min-width: 120px; }
+.ly-t-plaetze button b { display: grid; place-items: center; width: 24px; height: 24px; border-radius: 50%; background: var(--rand); }
+.ly-t-plaetze button.an { border-color: var(--blau); box-shadow: 0 0 0 2px var(--blau); }
+.ly-t-plaetze button.an b { background: var(--blau); color: #fff; }
+.ly-akt.ly-akt-leer { opacity: .35; pointer-events: none; }

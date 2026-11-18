@@ -34,9 +34,12 @@ import { DURCHSAGEN } from './welttexte.js';
 import { JETON, ANGEBOTE, alleDinge } from './belohnungen.js';
 import { ladePaket, speicherePaket, bereinige, waehle, GRUNDPAKET } from './lernen.js';
 
-const SPEICHER = 'lycee.stand';
-const lies = () => { try { return JSON.parse(localStorage.getItem(SPEICHER) || 'null'); } catch (e) { return null; } };
-const schreib = (v) => { try { if (v) localStorage.setItem(SPEICHER, JSON.stringify(v)); else localStorage.removeItem(SPEICHER); } catch (e) { /* privat/voll */ } };
+// Drei Spielstände: Platz 1 = „lycee.stand“ (wie immer), Platz 2/3 = „lycee.stand.2/.3“. Welcher gerade spielt: „lycee.platz“.
+let platz = 1;
+try { platz = Math.min(3, Math.max(1, +localStorage.getItem('lycee.platz') || 1)); } catch (e) { /* privat */ }
+const speicherName = (p = platz) => (p === 1 ? 'lycee.stand' : 'lycee.stand.' + p);
+const lies = (p = platz) => { try { return JSON.parse(localStorage.getItem(speicherName(p)) || 'null'); } catch (e) { return null; } };
+const schreib = (v) => { try { if (v) { v.zeit = Date.now(); localStorage.setItem(speicherName(), JSON.stringify(v)); } else localStorage.removeItem(speicherName()); } catch (e) { /* privat/voll */ } };
 const kapName = (k) => 'Kapitel ' + k + ' · ' + KAPITEL[k];
 const FREI = { titel: 'Freies Herumlaufen', ziel: 'Schau dich in der Schule um. Das nächste Kapitel kommt bald.' };
 
@@ -1590,7 +1593,10 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   const lehrer = () => ui.lehrer({ paket, bereinige,
     speichern: (b) => { speicherePaket(b); paket = b; },
     zuruecksetzen: () => { speicherePaket(null); paket = GRUNDPAKET; } });
-  const w = await ui.titel({ gespeichert: !!(S && S.name), figuren: FIGUREN, lehrer });
+  ui.speicherName = () => speicherName();
+  const plaetze = () => [1, 2, 3].map((p) => { const s2 = lies(p); return s2 && s2.name ? { name: s2.name, kap: (SCHRITTE[s2.schritt] || {}).kap || 1, fertig: !!s2.fertig, zeit: s2.zeit || 0 } : null; });
+  const w = await ui.titel({ gespeichert: !!(S && S.name), figuren: FIGUREN, lehrer, platz, plaetze,
+    wechsle: (p) => { platz = p; try { localStorage.setItem('lycee.platz', String(p)); } catch (e) { /* privat */ } S = lies(); return !!(S && S.name); } });
   if (w.weiter) await los(false); else await los(true, w.figur, w.name);
   return window.LYCEE;
 }

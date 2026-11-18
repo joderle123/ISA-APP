@@ -99,3 +99,13 @@ Ein Subagent hat das Drehbuch als (1) 13-jährige Person, die Schule hasst, (2) 
 - **Sicherungscode** (Einstellungen → Sicherungscode): Spielstand als Text „AJ1.…“ zum Kopieren und auf einem anderen Gerät
   Einlösen. Der alte Stand wird vorher unter `lycee.stand.vorher` aufgehoben. Drei Spielstände: noch offen.
 - Luca und ein Statist tragen keine „Farmer“-Kleidung (Strohhut/Latzhose) mehr.
+
+## Handy-Rückmeldung (18.11.2026)
+Bild vom Handy (Kapitel 1, Bingo): Punktraster wirkte wie Schmutz, Knopf zeigte „Los“, Bingo-Karte zu groß.
+- **Punktraster nur bei scharfem Bild** (Pixelverhältnis ≥ 2) und nur in echten Schatten, schwächer (0,32 statt 0,5).
+  Bei weniger Auflösung verschwimmen die Punkte – dann lieber keine.
+- **Runder Knopf leer und blass**, wenn man gerade nichts tun kann (statt „Los“).
+- **Bingo-Karte auf schmalen Bildschirmen kompakt** (kleinere Schrift, Fragezeichen in der Zeile).
+- **Drei Spielstände** auf dem Titelbild (Platz 1 = bisheriger Speicher, nichts geht verloren).
+- Leistung jetzt (high, 1180×820): Dreiecke 123k–281k (Ziel ≤ 400k ✓), Zeichenaufrufe 101–391.
+  Davon ist fast die Hälfte die Schattenkarte; ohne Schatten 146–212. Nächster Schritt: Schattenwerfer auf Nahbereich begrenzen.

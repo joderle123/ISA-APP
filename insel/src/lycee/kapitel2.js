@@ -69,16 +69,16 @@ export const SCHRITTE2 = [
 
 export const GESPRAECHE2 = {
   di_intro: [
-    ['erzaehler', 'Dienstag. Erste Stunde: Sport.'],
-    ['erzaehler', 'Du öffnest deine Tasche. Die Turnschuhe … liegen zu Hause.'],
+    ['erzaehler', 'Dienstag, 7:58. Erste Stunde: Sport.'],
+    ['erzaehler', 'Tasche auf. Die Turnschuhe stehen zu Hause. Schön ordentlich.'],
   ],
   sommer1: [
-    ['sommer', 'Allez! Alle umgezogen? … {name}, Schuhe?'],
+    ['sommer', '(pfeift) Allez! Umziehen war vor zwei Minuten. {name}? Schuhe?'],
     { wahl: [
       { t: '„Vergessen. Sorry.“', staerke: 'ehrlich', herz: { sommer: 1 }, merke: 'fundkiste', dann: [
         ['sommer', 'Fundkiste. Neben der Tür.'],
         ['erzaehler', 'Ein Paar passt halb. Pink. Riecht nach Keller.'],
-        ['jo', 'Schicke Schuhe, {name}.'],
+        ['jo', 'Pink. Wie ein Tuning-Unfall. Steht dir, {name}.'],
         ['erzaehler', 'Ben lacht. Yusuf nicht.'] ] },
       { t: '„Mir ist schlecht.“', merke: 'bank', dann: [
         ['sommer', '(schaut dich lange an) … Bank.'],
@@ -125,8 +125,8 @@ export const GESPRAECHE2 = {
     { tu: 'korbRunde' },
   ],
   mi_intro: [
-    ['erzaehler', 'Mittwoch. In der Pause musst du noch Mathe machen.'],
-    ['erzaehler', 'Brüche. Du verstehst die Aufgabe nicht.'],
+    ['erzaehler', 'Mittwoch. Mathe-Hausaufgabe. Fällig in 20 Minuten.'],
+    ['erzaehler', 'Brüche. Du liest Aufgabe 2 dreimal. Sie wird nicht besser.'],
   ],
   mathe: [
     ['erzaehler', 'CDI. Chiara sitzt da. Ihr Heft ist voll.'],
@@ -158,7 +158,7 @@ export const GESPRAECHE2 = {
         ['yusuf', 'Roboter-Arm. Kann schon winken.'], ['yusuf', 'Sonst nix. Noch. Komm mit.'] ] },
       { t: 'Schulgarten-AG', staerke: 'entscheiden', merke: 'agGarten', herz: { mila: 1 }, dann: [
         ['erzaehler', 'Auf der Liste steht schon ein Name: Mila.'], ['erzaehler', 'Du schreibst deinen Namen darunter.'] ] },
-      { t: 'Erst mal keine.', dann: [['erzaehler', 'Kein Problem. Die Zettel hängen noch bis Oktober.']] },
+      { t: 'Erst mal keine.', dann: [['erzaehler', 'Die Zettel hängen bis Oktober. Einer hängt seit 2019.']] },
     ] },
   ],
   chat: [
@@ -257,7 +257,7 @@ export const GESPRAECHE2 = {
   ],
   test: [
     { tu: 'setzen' },
-    ['hoffmann', 'Handys weg. 30 Minuten. Ich schau nicht weg.'],
+    ['hoffmann', 'Neue Methode: ein Test. Kennt ihr schon. Handys weg.'],
     ['erzaehler', 'Deine Hände sind kalt. Aufgabe 3: Brüche.'],
     ['erzaehler', 'Chiaras Blatt liegt offen. Sie ist schon bei Aufgabe 4.'],
     { wahl: [
@@ -307,8 +307,8 @@ export const GESPRAECHE2 = {
   ],
   woche: [
     ['erzaehler', 'Freitag, 15:30 Uhr. Die erste Woche ist geschafft.'],
-    ['noah', 'Samstag Fußball am Bolzplatz. Um zwei. Kommst du?'],
-    ['ayla', 'Samstag um zwei probt meine Band. Kommst du zuhören?'],
+    ['noah', 'Kurze Frage. Samstag, zwei Uhr, Bolzplatz. Fußball. Du?'],
+    ['ayla', 'Samstag um zwei: Bandprobe. Du darfst zuhören. Und Kabel tragen.'],
     { wahl: [
       { t: '„Noah. Fußball.“', herz: { noah: 2, ayla: -1 }, merke: 'samstagNoah', dann: [['ayla', 'Ah. Okay. Nächstes Mal.']] },
       { t: '„Ayla. Band.“', herz: { ayla: 2, noah: -1 }, merke: 'samstagAyla', dann: [['noah', 'Klar. Band ist cooler. Schon gut.']] },
