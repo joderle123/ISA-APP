@@ -194,6 +194,21 @@ export function baueDetails({ B, P, schilder, C, uhrTextur, extra, raeume, plaet
     }
   }
 
+  // ---------- Kantine: Speiseplan-Tafel hinter der Theke (mit Humor) ----------
+  {
+    const c = document.createElement('canvas'); c.width = 512; c.height = 384; const g = c.getContext('2d');
+    g.fillStyle = '#2b3a33'; g.fillRect(0, 0, 512, 384); g.strokeStyle = '#c99a5b'; g.lineWidth = 18; g.strokeRect(9, 9, 494, 366);
+    g.textAlign = 'left'; g.textBaseline = 'middle'; g.fillStyle = '#ffe28a'; g.font = 'bold 40px system-ui, sans-serif'; g.fillText('MENÜ DER WOCHE', 40, 52);
+    [['MO', 'Nudeln mit Soße'], ['DI', 'Soße mit Nudeln'], ['MI', 'Überraschung (frag nicht)'], ['DO', 'PIZZA!!! ♥'], ['FR', 'Fisch. Sorry.']].forEach(([t, w], k) => {
+      g.fillStyle = '#9fe0c9'; g.font = 'bold 30px system-ui, sans-serif'; g.fillText(t, 40, 112 + k * 52);
+      g.fillStyle = '#ffffff'; g.font = '28px system-ui, sans-serif'; g.fillText(w, 110, 112 + k * 52);
+    });
+    g.fillStyle = '#ffb3c1'; g.font = 'italic 21px system-ui, sans-serif'; g.fillText('Tablett stehen lassen = spülen. – Die Küche', 40, 350);
+    const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = 4;
+    const tafel = new THREE.Mesh(new THREE.PlaneGeometry(2.6, 1.95), new THREE.MeshBasicMaterial({ map: t }));
+    tafel.position.set(29.72, 2.0, -11.9); tafel.rotation.y = -Math.PI / 2; extra(tafel);
+  }
+
   // ---------- Mülleimer (drinnen und draußen) ----------
   const eimer = (x, z, f = hex('#3d5a52')) => {
     if (!frei(x, z, 0.35)) return;
@@ -350,7 +365,7 @@ export function baueDetails({ B, P, schilder, C, uhrTextur, extra, raeume, plaet
     // Banner über dem Eingang
     const c = document.createElement('canvas'); c.width = 1024; c.height = 160; const g2 = c.getContext('2d');
     g2.fillStyle = '#2fb8a8'; g2.fillRect(0, 0, 1024, 160); g2.fillStyle = '#f2b134'; for (let i = 0; i < 1024; i += 64) { g2.beginPath(); g2.moveTo(i, 160); g2.lineTo(i + 32, 130); g2.lineTo(i + 64, 160); g2.fill(); }
-    g2.fillStyle = '#ffffff'; g2.font = 'bold 74px system-ui, sans-serif'; g2.textAlign = 'center'; g2.textBaseline = 'middle'; g2.fillText('Wëllkomm · Bienvenue · Willkommen', 512, 70);
+    g2.fillStyle = '#ffffff'; g2.textAlign = 'center'; g2.textBaseline = 'middle'; { const tx = 'Wëllkomm · Bienvenue · Willkommen'; let fs = 74; do { g2.font = 'bold ' + fs + 'px system-ui, sans-serif'; fs -= 2; } while (fs > 30 && g2.measureText(tx).width > 960); g2.fillText(tx, 512, 66); }
     const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = 4;
     const banner = new THREE.Mesh(new THREE.PlaneGeometry(9, 1.4), new THREE.MeshBasicMaterial({ map: t }));
     banner.position.set(0, 7.75, -1.62); extra(banner);

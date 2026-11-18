@@ -12,6 +12,7 @@ export const PINNWAND = [
 
 // Kritzeleien (Tisch, Klowand, Bushaltestelle): eine pro Besuch
 export const KRITZELEIEN = {
+  wc: ['„Hier war Ben. Ben hatte Hunger.“', 'Ein Pfeil nach oben: „Gerd wohnt hier.“', '„Wer das liest, ist cool.“ Darunter, andere Schrift: „Danke.“', 'Eine gezeichnete Ente mit Krawatte. Sehr detailliert.', '„7P2 > 7P1“. Darunter: „Beweis?“ Darunter: „Sportfest.“', 'Ein Sudoku. Halb fertig. Mit Kuli.'],
   tisch: ['„Hier saß niemand Wichtiges.“', 'Ein Pferd. Oder ein Hund. Mit Hut.', '„7P1 war hier.“ Darunter: „Und?“', 'Eine Rechnung: 3 + 4 = 8. Durchgestrichen. 7.', '„Langweilig“ – sehr ordentlich, mit Lineal.'],
   bus: ['„Bus kommt nie.“ Darunter: „Doch. Ohne dich.“', 'Ein Herz mit zwei Buchstaben. Einer ist weggekratzt.', 'Telefonnummer? Nein. Nur „112“ und ein Smiley.', '„Fahrer ist ein Held“ – vermutlich vom Fahrer.'],
 };

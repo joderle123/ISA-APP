@@ -15,7 +15,12 @@ export const ABZEICHEN = [
   { id: 'pinn', sy: '📌', t: 'Gut informiert', hinweis: 'Die Pinnwand dreimal lesen', test: (S) => (m(S).pinnwand || 0) >= 3 },
   { id: 'gerd', sy: '🐦', t: 'Gerds Freund', hinweis: 'Eine Taube fliegt nie weg. Besuch sie dreimal.', test: (S) => (m(S).gerd || 0) >= 3 },
   { id: 'entdeck5', sy: '🔭', t: 'Entdecker', hinweis: '5 geheime Orte finden', test: (S) => (S.entdeckt || []).length >= 5 },
+  { id: 'kabel', sy: '🔌', t: 'Kabelsalat', hinweis: 'Jemand verliert ständig Ladekabel. Fünf liegen herum.', test: (S) => (m(S).kabel || []).length >= 5 },
+  { id: 'ente', sy: '🦆', t: 'Enten-Retter', hinweis: 'Im Brunnen schwimmt etwas. Hand rein. Öfter.', test: (S) => !!m(S).ente },
+  { id: 'geheim', sy: '🤫', t: 'Geheimwort', hinweis: 'Tipp den Namen der berühmtesten Taube.', test: (S) => !!m(S).geheimwort },
   // Menschen
+  { id: 'winken', sy: '🙋', t: 'Winke-Welle', hinweis: 'Taste H auf dem Hof. Zehnmal winkt jemand zurück.', test: (S) => (m(S).gewunken || 0) >= 10 },
+  { id: 'gruss', sy: '👋', t: 'Hallo an alle', hinweis: '10 Leute auf dem Schulgelände grüßen', test: (S) => (m(S).gegruesst || 0) >= 10 },
   { id: 'freund', sy: '🤝', t: 'Echte Freundschaft', hinweis: 'Mit jemandem richtig befreundet sein', test: (S) => Object.values(S.freund || {}).some((p) => p >= 60) },
   { id: 'viele', sy: '💬', t: 'Kennt alle', hinweis: 'Mit 8 Leuten aus der Klasse reden', test: (S) => Object.keys(S.herz || {}).length >= 8 },
   { id: 'staerken', sy: '💪', t: 'Stark', hinweis: '20 Stärken zeigen', test: (S) => Object.values(S.staerken || {}).reduce((a, b) => a + b, 0) >= 20 },

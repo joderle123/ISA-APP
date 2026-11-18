@@ -342,8 +342,20 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   const sprueche_el = document.createElement('div'); sprueche_el.className = 'ly-bark'; sprueche_el.hidden = true; root.appendChild(sprueche_el);
   const _bv = new THREE.Vector3();
   let spruchNaechst = performance.now() + 4000, spruchWer = null, spruchBis = 0;
+  // Schul-Durchsagen: selten, kurz, mit Humor (Lautsprecher-Gong)
+  const DURCHSAGEN = ['Ein roter Turnbeutel liegt im Gang. Er riecht schon. Bitte abholen.', 'Wer füttert die Tauben mit Pommes? Gerd braucht Gemüse.',
+    'Der Automat ist nicht kaputt. Er hat nur Gefühle.', 'Bitte nicht im Gang rennen. Sehr schnelles Gehen auch nicht.', 'Die Pflanze Kevin hat Durst. Danke an alle, die gießen.',
+    'Heute in der Kantine: Pizza. … Kleiner Scherz. Nudeln.', 'Fundbüro: drei Jacken, ein Schuh, null Hausaufgaben.', 'Der Brunnen ist kein Schwimmbad. Auch nicht für Enten.',
+    'Wer hat den Schlüssel vom Musikraum? Ayla wartet. Laut.', 'Das war ein Test. Bitte weitermachen. Danke.'];
+  let durchsageNaechst = performance.now() + 100000;
   function sprueche(dt) {
     const offen = !imGespraech && !ui.ebeneArt() && laeuft;
+    if (offen && performance.now() > durchsageNaechst && S && S.merke) {
+      durchsageNaechst = performance.now() + 170000 + Math.random() * 120000;
+      const pool = DURCHSAGEN.concat((S.merke.kabel || []).length < 5 ? ['Herr Mesenberg sucht sein Ladekabel. Schon wieder. Finderlohn: Dankbarkeit.'] : []);
+      const n = S.merke.durchsage = ((S.merke.durchsage || 0) + 1 + Math.floor(Math.random() * 3)) % pool.length;
+      ui.toast('<b>📢 Durchsage</b><span>' + pool[n] + '</span>'); audio.play('chime');
+    }
     if (spruchWer && performance.now() < spruchBis && offen) {
       _bv.copy(spruchWer.f.group.position); _bv.y += (spruchWer.d.steht && spruchWer.d.steht[3] === 'sitzt') ? 1.55 : 2.05; _bv.project(camera);
       const sicht = _bv.z < 1 && Math.abs(_bv.x) < 1 && Math.abs(_bv.y) < 1;
@@ -362,9 +374,50 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (bd < 3.5 && best.d.steht && best.d.steht[3] === 'redet' && Math.random() < 0.6) { best.f.spiele('Wave'); setTimeout(() => best.f.spiele('Interact', { tempo: 0.35 }), 2400); }
   }
 
+  // Statisten ansprechen: kurzer, witziger Gruß (zählt für den Schul-Pass)
+  const GRUSS = ['Hey! Neu hier, oder?', 'Salut! Coole Schuhe.', 'Moien! Hast du Gerd gesehen? Die Taube mit Hut.', 'Yo. Kennst du Ben? Der schuldet mir 2 €.', 'Hi! … Sorry, ich dachte, du bist wer anders.',
+    'Hallo! Ich bin in der 7P1. Wir sind besser. Spaß.', 'Bonjour! Ich übe Französisch. Das war alles.', 'Moien. Ich hab Hunger. Hast du was?', 'Oh! Du bist doch die neue Person vom Foto!', 'Hey. Frag nicht nach Mathe. Bitte.',
+    'Hi! Weißt du, wo der Automat Chips hat? Unten links. Immer.', 'Salut! Hab dich beim Sportfest gesehen. Respekt.', 'Yo! Eins gegen eins am Korb? Später?', 'Moien! Schönen Tag noch. Echt jetzt.'];
+  const GRUSS_SITZ = ['Mmmh. Willst du probieren? … Nee, Spaß.', '(mit vollem Mund) Hmpf. Hallo.', 'Psst. Ich lern gerade. Also … tu ich so.'];
+  function statistNah(p) { let best = null, bd = 1.7; for (const x of statisten) { const d = Math.hypot(x.f.group.position.x - p.x, x.f.group.position.z - p.z); if (d < bd) { bd = d; best = x; } } return best; }
+  function gruss(x) {
+    const sitzt = x.d.steht && x.d.steht[3] === 'sitzt', pool = sitzt ? GRUSS_SITZ : GRUSS;
+    const n = S.merke.gegruesst = (S.merke.gegruesst || 0) + 1; sichern();
+    sprueche_el.textContent = pool[(n * 7 + Math.floor(Math.random() * pool.length)) % pool.length];
+    spruchWer = x; spruchBis = performance.now() + 3600; spruchNaechst = performance.now() + 6000; sprueche_el.hidden = false;
+    audio.play('bubble');
+    if (!sitzt) zurueckWinken(x);
+  }
+  function zurueckWinken(x) {
+    {
+      const p = steuerung.pos; x.f.group.rotation.y = Math.atan2(p.x - x.f.group.position.x, p.z - x.f.group.position.z);
+      x.f.spiele('Wave'); const w = x.warte; x.warte = Math.max(x.warte || 0, 2.6);
+      setTimeout(() => { const h = x.d.steht && x.d.steht[3]; if (h === 'redet') x.f.spiele('Interact', { tempo: 0.35 }); else if (h === 'handy') x.f.spiele('Idle_Neutral'); else if (x.d.weg) { x.f.spiele('Walk', { tempo: x.d.tempo / 1.4 }); x.warte = w > 0 ? w : 0; if (x.d.steht) x.f.group.rotation.y = x.d.steht[2]; } else x.f.spiele('Idle'); if (x.d.steht) x.f.group.rotation.y = x.d.steht[2]; }, 2500);
+    }
+  }
+
+  // Geheimwort: wer „gerd“ tippt, lässt alle Tauben auffliegen (Schul-Pass „Geheimwort“)
+  { let puffer = '';
+    document.addEventListener('keydown', (e) => {
+      if (e.target && e.target.closest && e.target.closest('input, textarea')) return;
+      if (!/^Key[A-Z]$/.test(e.code)) return;
+      puffer = (puffer + e.code.slice(3).toLowerCase()).slice(-4);
+      // H = winken: die Spielfigur winkt, Leute in der Nähe winken zurück
+      if (e.code === 'KeyH' && laeuft && !imGespraech && !ui.ebeneArt() && spieler && steuerung.tempo < 0.3 && !steuerung.sitzt && !steuerung.brett) {
+        steuerung.emote = 'Wave'; steuerung.emoteBis = performance.now() + 2200;
+        const p = steuerung.pos; let n = 0;
+        for (const x of statisten) { const d = Math.hypot(x.f.group.position.x - p.x, x.f.group.position.z - p.z), sitzt = x.d.steht && x.d.steht[3] === 'sitzt';
+          if (d < 9 && !sitzt && x.f.group.children[0] && x.f.group.children[0].visible && n < 4) { n++; setTimeout(() => zurueckWinken(x), 350 + Math.random() * 700); } }
+        if (n) { S.merke.gewunken = (S.merke.gewunken || 0) + n; sichern(); }
+      }
+      if (puffer === 'gerd' && S && S.merke) { puffer = ''; tiere.alleAuf(); const neu = !S.merke.geheimwort; S.merke.geheimwort = true; sichern(); ui.toast('<b>🐦 GERD!</b><span>' + (neu ? 'Du kennst das Geheimwort. Die Tauben auch.' : 'Alle Tauben fliegen. Gerd bleibt sitzen. Natürlich.') + '</span>', 'ly-t-ent'); ton('pling'); }
+    });
+  }
+
   // ---------- Spielfigur ----------
   let spieler = null;
   async function spielerFigur(i) {
+    tiere.kabelSync((S && S.merke && S.merke.kabel) || []);
     if (spieler) { scene.remove(spieler.group); }
     spieler = await ladePerson(veil, { ...(FIGUREN[i] || FIGUREN[0]), ...((S && S.aussehen) || {}) });   // Aussehen aus dem Spind-Spiegel
     spieler.group.add(fussSchatten()); scene.add(spieler.group); steuerung.figur = spieler;
@@ -1595,7 +1648,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (w && w.art === 'lampe') { S.spindLampe = w.wert; sichern(); }
     if (w && w.art === 'anhaenger') { S.anhaenger = S.anhaenger === w.wert ? null : w.wert; sichern(); anhaengerDran(); ui.toast('<b>' + esc(w.name) + '</b><span>' + (S.anhaenger ? 'Hängt jetzt an dir.' : 'Bleibt im Spind.') + '</span>'); }
   }
-  const ia = createInteraktionen({ welt, steuerung, ui, zustand: () => S, sichern: () => sichern(), ton, blattWahl, spindAuf: () => spindAuf(),
+  const ia = createInteraktionen({ welt, steuerung, ui, zustand: () => S, sichern: () => sichern(), ton, blattWahl, spindAuf: () => spindAuf(), onKabel: (id) => tiere.kabelWeg(id),
     freiwurf: async (o) => ui.freiwurf(o), skate: () => skaten(), freund: (id, n, g) => freund(id, n, g),
     partner: () => { const b = besteFreunde()[0] || GLEICHALTRIGE.find((id) => S.herz[id] != null); return b ? { id: b, name: LEUTE[b].name } : null; } });
   let iaNah = null;
@@ -1612,6 +1665,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   async function aktion(i) {
     setTimeout(() => missionTank(i.tu), 0);
     if (i.tu === 'sitzen') { await ia.tu(i); sperreBis = performance.now() + 350; return; }
+    if (i.tu === 'statist') { gruss(i.st); sperreBis = performance.now() + 1200; return; }
     if (i.tu === 'skate') { ui.hinweis(null); await ia.tu(i); sperreBis = performance.now() + 500; return; }
     imGespraech = true; input.setEnabled(false); steuerung.frei = false; ui.hinweis(null);
     try { await ia.tu(i); } finally { imGespraech = false; input.setEnabled(true); steuerung.frei = true; sperreBis = performance.now() + 350; }
@@ -1714,6 +1768,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     // Ansprechen
     naechste = imGespraech || steuerung.brett ? null : wenNah();
     iaNah = !naechste && !imGespraech && !probe && !steuerung.brett ? ia.naechste(p) : null;
+    if (!naechste && !iaNah && !imGespraech && !probe && !steuerung.brett) { const st = statistNah(p); if (st) iaNah = { tu: 'statist', text: 'Hallo sagen', st, x: st.p.x, z: st.p.z }; }
     ui.hinweis(naechste ? 'Mit ' + naechste.def.name + ' reden' : iaNah ? iaNah.text : null);
     if (!imGespraech && !gesperrt() && (input.state.actionTap || input.state.action)) { if (naechste) rede(naechste.id); else if (iaNah) aktion(iaNah); }
     // Orte, die etwas auslösen

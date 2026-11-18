@@ -71,6 +71,8 @@ export function stelle(geo, p) {
   if (p.farbe) { const c = new THREE.Color(p.farbe), a = g.attributes.color; for (let i = 0; i < a.count; i++) a.setXYZ(i, a.getX(i) * c.r, a.getY(i) * c.g, a.getZ(i) * c.b); }
   // einfarbig: Farbe ersetzen (z. B. Beton für die Skate-Rampen), oben heller, Seiten dunkler
   if (p.einfarbig) { const c = new THREE.Color(p.einfarbig), a = g.attributes.color, n = g.attributes.normal; for (let i = 0; i < a.count; i++) { const k = 0.78 + 0.22 * Math.max(0, n.getY(i)); a.setXYZ(i, c.r * k, c.g * k, c.b * k); } }
+  // stein: nur blasse Lila/Grau-Töne ersetzen (Brunnen-Rand), kräftiges Wasserblau bleibt
+  if (p.stein) { const c = new THREE.Color(p.stein), a = g.attributes.color; for (let i = 0; i < a.count; i++) { const r = a.getX(i), gg = a.getY(i), b = a.getZ(i); if (b >= r && b - r < 0.4 && r > 0.12) { const l = (r + gg + b) / 3 / 0.62; a.setXYZ(i, c.r * l, c.g * l, c.b * l); } } }
   g.computeBoundingBox();
   return g;
 }

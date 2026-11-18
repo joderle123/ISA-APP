@@ -1,6 +1,7 @@
 // Annexe Junglinster – Leben über und auf dem Hof: Tauben (mit Gerd, der einen Partyhut trägt und nie wegfliegt)
 // und Wolken, die langsam über den Himmel ziehen. Alles selbst gebaut, keine Dateien.
 import * as THREE from 'three';
+import { KABEL } from './interaktion.js';
 
 const mat = (c) => new THREE.MeshLambertMaterial({ color: c });
 const GRAU = mat('#8d939c'), DUNKEL = mat('#5f6873'), HALS = mat('#4f8f7a'), SCHNABEL = mat('#e9b949'), BEIN = mat('#d9523c'), AUGE = mat('#1b1b1f');
@@ -63,9 +64,68 @@ export function createTiere({ scene, steuerung }) {
     g.position.set(zentrum[0], 1.2, zentrum[1]); scene.add(g);
     falter.push({ g, fl, c: zentrum, ph: Math.random() * 10, r: 0.8 + Math.random() * 1.2 });
   }
+  // ---- Kleine Zufallsereignisse: Papierflieger aus einem Fenster, ein Ball rollt über den Hof ----
+  const flieger = new THREE.Mesh((() => { const g = new THREE.BufferGeometry(); g.setAttribute('position', new THREE.Float32BufferAttribute([0, 0, 0.25, -0.16, 0.02, -0.2, 0, -0.03, -0.2, 0, 0, 0.25, 0, -0.03, -0.2, 0.16, 0.02, -0.2], 3)); g.computeVertexNormals(); return g; })(), new THREE.MeshLambertMaterial({ color: '#ffffff', side: THREE.DoubleSide }));
+  flieger.visible = false; scene.add(flieger);
+  const ball = new THREE.Mesh(new THREE.SphereGeometry(0.12, 12, 8), new THREE.MeshLambertMaterial({ color: '#e9734a' })); ball.visible = false; scene.add(ball);
+  let ereignisNaechst = performance.now() + 25000, ereignis = null;
+  // ---- Easter Eggs in 3D: Gummiente mit Krawatte im Brunnen, Herrn Mesenbergs Ladekabel ----
+  const ente = new THREE.Group();
+  { const gelb = mat('#ffd23f'); const k = new THREE.Mesh(new THREE.SphereGeometry(0.16, 10, 8), gelb); k.scale.set(1, 0.75, 1.25); ente.add(k);
+    const kopf = new THREE.Mesh(new THREE.SphereGeometry(0.1, 10, 8), gelb); kopf.position.set(0, 0.15, 0.12); ente.add(kopf);
+    const sn = new THREE.Mesh(new THREE.BoxGeometry(0.07, 0.03, 0.08), mat('#e9734a')); sn.position.set(0, 0.13, 0.23); ente.add(sn);
+    const kr = new THREE.Mesh(new THREE.BoxGeometry(0.05, 0.12, 0.02), mat('#2f6db0')); kr.position.set(0, 0.03, 0.18); kr.rotation.x = -0.3; ente.add(kr);
+    for (const sx of [-1, 1]) { const a = new THREE.Mesh(new THREE.SphereGeometry(0.014, 6, 4), AUGE); a.position.set(sx * 0.05, 0.18, 0.2); ente.add(a); } }
+  scene.add(ente);
+  // Brunnen: Wasserstrahl (Tropfen-Bögen) und Wellenringe, wo sie landen
+  const TROPFEN = 44, tropfen = new THREE.InstancedMesh(new THREE.SphereGeometry(0.07, 6, 4), new THREE.MeshBasicMaterial({ color: '#e6f8ff', transparent: true, opacity: 0.92 }), TROPFEN);
+  tropfen.frustumCulled = false; scene.add(tropfen);
+  const ringe = [0, 1, 2, 3, 4].map((k) => { const r = new THREE.Mesh(new THREE.RingGeometry(0.1, 0.14, 20), new THREE.MeshBasicMaterial({ color: '#e8f8ff', transparent: true, opacity: 0, depthWrite: false })); r.rotation.x = -Math.PI / 2; r.userData.k = k; scene.add(r); return r; });
+  const dummy = new THREE.Object3D();
+  const kabel = {};
+  for (const [id, x, z] of KABEL) {
+    const g = new THREE.Group();
+    const kc = mat('#ff7a2f');
+    const r = new THREE.Mesh(new THREE.TorusGeometry(0.2, 0.03, 6, 20), kc); r.rotation.x = Math.PI / 2; g.add(r);
+    const r2 = new THREE.Mesh(new THREE.TorusGeometry(0.14, 0.03, 6, 20), kc); r2.rotation.x = Math.PI / 2; r2.position.y = 0.05; g.add(r2);
+    const st = new THREE.Mesh(new THREE.BoxGeometry(0.1, 0.07, 0.16), mat('#ffffff')); st.position.set(0.26, 0.035, 0.08); g.add(st);
+    g.position.set(x, (/kantine|gang|cdi/.test(id) ? 0.1 : 0.06) + 0.03, z); scene.add(g); kabel[id] = g;
+  }
   let gerdGemeldet = false;
   return {
+    kabelWeg(id) { if (kabel[id]) { kabel[id].visible = false; } },
+    kabelSync(liste = []) { for (const id of Object.keys(kabel)) kabel[id].visible = !liste.includes(id); },
+    alleAuf() { for (const d of tauben) if (!d.gerd) { d.zustand = 'flug'; d.flugZeit = 0; d.v.set((Math.random() - 0.5) * 4, 3.5 + Math.random(), (Math.random() - 0.5) * 4); } },
     update(dt, t, { night = 0, onGerd } = {}) {
+      { const w = t * 0.18; ente.position.set(-8 + Math.cos(w) * 2.05, 0.6 + Math.sin(t * 2) * 0.012, 18 + Math.sin(w) * 2.05); ente.rotation.y = -w; }
+      for (const g of Object.values(kabel)) if (g.visible) g.rotation.y += dt * 0.3;
+      { const sp0 = steuerung.pos, nah = Math.hypot(sp0.x + 8, sp0.z - 18) < 45; tropfen.visible = nah;
+        if (nah) { const T = 0.9, v0 = 3.19;
+          for (let k = 0; k < TROPFEN; k++) { const u = (t / T + k / TROPFEN * 3.7) % 1, a = k * 2.399, tt = u * T, r = 0.12 + u * 1.25;
+            dummy.position.set(-8 + Math.cos(a) * r, 1.7 + v0 * tt - 4.9 * tt * tt, 18 + Math.sin(a) * r); dummy.scale.setScalar(1 - u * 0.35); dummy.updateMatrix(); tropfen.setMatrixAt(k, dummy.matrix); }
+          tropfen.instanceMatrix.needsUpdate = true; }
+        for (const r of ringe) { const zyk = 1.7, ph = (t + r.userData.k * zyk / ringe.length) / zyk, u = ph % 1, n = Math.floor(ph);
+          if (u < dt / zyk * 1.5 || r.userData.n !== n) { r.userData.n = n; const a = (n * 7 + r.userData.k * 13) * 0.917; r.position.set(-8 + Math.cos(a) * 1.4, 0.615, 18 + Math.sin(a) * 1.4); }
+          r.visible = nah; r.scale.setScalar(1 + u * 3.2); r.material.opacity = 0.55 * (1 - u); } }
+      // Ereignisse (echte Zeit, damit es auch auf langsamen Geräten passiert)
+      const jetzt = performance.now(), sp = steuerung.pos;
+      if (!ereignis && jetzt > ereignisNaechst && sp.z > 2 && sp.z < 38 && Math.abs(sp.x) < 40 && night < 0.5) {
+        if (Math.random() < 0.55) { ereignis = { art: 'flieger', t: 0, von: new THREE.Vector3(sp.x - 6 + Math.random() * 12, 6.2, -1.5), nach: new THREE.Vector3(sp.x + (Math.random() - 0.5) * 4, 0.05, sp.z + 3 + Math.random() * 3) }; flieger.visible = true; }
+        else { const r = Math.random() < 0.5 ? -1 : 1; ereignis = { art: 'ball', t: 0, von: new THREE.Vector3(sp.x - r * 12, 0.12, sp.z + 2), nach: new THREE.Vector3(sp.x + r * 12, 0.12, sp.z + 3) }; ball.visible = true; }
+      }
+      if (ereignis) {
+        ereignis.t += dt;
+        if (ereignis.art === 'flieger') {
+          const u = Math.min(1, ereignis.t / 5);
+          flieger.position.lerpVectors(ereignis.von, ereignis.nach, u); flieger.position.y += Math.sin(u * Math.PI * 3) * 0.4 * (1 - u);
+          flieger.lookAt(ereignis.nach.x, flieger.position.y - 0.3, ereignis.nach.z); flieger.rotation.z += Math.sin(t * 3) * 0.2;
+          if (u >= 1 && ereignis.t > 14) { flieger.visible = false; ereignis = null; ereignisNaechst = jetzt + 60000 + Math.random() * 60000; }
+        } else {
+          const u = Math.min(1, ereignis.t / 6);
+          ball.position.lerpVectors(ereignis.von, ereignis.nach, 1 - (1 - u) * (1 - u)); ball.rotation.z -= dt * 8;
+          if (u >= 1) { ball.visible = false; ereignis = null; ereignisNaechst = jetzt + 60000 + Math.random() * 60000; }
+        }
+      }
       for (const f of falter) {
         f.g.visible = night < 0.5;
         const a = t * 0.6 + f.ph;

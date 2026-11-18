@@ -19,7 +19,8 @@ import { PINNWAND, KRITZELEIEN, FUNDKISTE } from './welttexte.js';
 import { leseEcke, HEFTE } from './lesestoff.js';
 const SNACKS = ['Schokoriegel', 'Chips (Paprika)', 'Gummibärchen', 'Kekse', 'Wasser'];
 
-export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton, blattWahl, freiwurf, skate, spindAuf = null, partner = () => null, freund = () => {} }) {
+export const KABEL = [['cdi', 14, -62.4], ['kantine', 18.6, -8.2], ['gang', -15.5, -15.8], ['innenhof', -17.2, -44.9], ['skate', -36.4, 6.4]];
+export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton, blattWahl, freiwurf, skate, spindAuf = null, partner = () => null, freund = () => {}, onKabel = null }) {
   const tt = welt.orte.tischtennis;
   const liste = [];
   const dazu = (x, z, r, text, tu, extra = {}) => liste.push({ x, z, r, text, tu, ...extra });
@@ -48,12 +49,16 @@ export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton
   for (const x of [47.4, 52.6, 57.8]) dazu(x, -43.85, 0.9, 'Am Computer', 'computer', { prio: 1 });
   if (skate) dazu(-29.6, 5.2, 1.5, 'Skateboard fahren', 'skate', { prio: 1 });
   if (tt) dazu(tt.x - 1.3, tt.z, 1.2, 'Tischtennis spielen', 'tischtennis', { prio: 1 });
+  // Easter Eggs: Herrn Mesenbergs verlorene Ladekabel (5 Stück), Kritzeleien im WC, die Ente im Brunnen
+  for (const [id, x, z] of KABEL) dazu(x, z, 1.0, 'Ein Ladekabel? Aufheben', 'kabel', { prio: 2, kabel: id });
+  dazu(25.2, -26.4, 1.1, 'Kritzeleien an der Wand', 'kritzelei', { prio: 0, wo: 'wc' });
 
   function naechste(p) {
     if (steuerung.sitzt) return null;
     let best = null, bd = Infinity;
     for (const i of liste) {
-      if (i.tu === 'sitzen' && steuerung.tempo > 1.2) continue;   // beim Laufen kein Flackern von „Hinsetzen“ an jedem Stuhl
+      if (i.tu === 'sitzen' && steuerung.tempo > 1.2) continue;
+      if (i.tu === 'kabel' && ((zustand().merke || {}).kabel || []).includes(i.kabel)) continue;   // beim Laufen kein Flackern von „Hinsetzen“ an jedem Stuhl
       const d = Math.hypot(i.x - p.x, i.z - p.z);
       if (d > i.r) continue;
       const w = d - (i.prio || 0) * 0.4;   // Dinge mit Vorrang (Arbeitsblatt, Automat) vor dem Stuhl daneben
@@ -68,13 +73,23 @@ export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton
     switch (i.tu) {
       case 'sitzen': steuerung.setzen(i.x, i.z, i.yaw); return;
       case 'arbeiten': steuerung.setzen(i.sitz.x, i.sitz.z, i.sitz.yaw); await blattWahl(); return;
+      case 'kabel': {
+        const k = s.merke.kabel = (s.merke.kabel || []); if (!k.includes(i.kabel)) k.push(i.kabel); sichern(); ton('pling'); onKabel && onKabel(i.kabel);
+        ui.toast('<b>🔌 Ladekabel ' + k.length + ' von ' + KABEL.length + '</b><span>' + (k.length >= KABEL.length ? 'Alle! Herr Mesenberg wird weinen. Vor Freude.' : 'Auf dem Kabel steht: „Eigentum M.“ Schon wieder.') + '</span>', 'ly-t-ent');
+        return;
+      }
       case 'automat': {
         s.merke.automat = (s.merke.automat || 0) + 1; sichern();
+        if (s.merke.automat % 7 === 0) { ton('pling'); setTimeout(() => ton('pling'), 250); ui.toast('<b>🎰 Doppelt!</b><span>Zwei Snacks auf einmal. Der Automat mag dich heute.</span>', 'ly-t-ent'); return; }
         if ((s.merke.automat * 7) % 10 < 4) { ton('klack'); ui.toast('<b>Klack.</b><span>Die Münze ist weg. Der Automat brummt zufrieden.</span>'); }
         else { ton('pling'); ui.toast('<b>' + SNACKS[s.merke.automat % SNACKS.length] + '</b><span>Fällt. Gerettet.</span>'); }
         return;
       }
-      case 'brunnen': ton('platsch'); ui.toast('<b>Kalt!</b><span>Kurz wach. Jemand hinter dir lacht – nicht über dich, über den Spritzer.</span>'); return;
+      case 'brunnen': {
+        ton('platsch'); const n = s.merke.brunnen = (s.merke.brunnen || 0) + 1;
+        if (n === 3 && !s.merke.ente) { s.merke.ente = true; sichern(); ui.toast('<b>🦆 Eine Gummiente!</b><span>Sie trägt eine Krawatte. Mit Punkten. Kommt dir bekannt vor.</span>', 'ly-t-ent'); return; }
+        sichern(); ui.toast(n > 3 ? '<b>Die Ente nickt dir zu.</b><span>Sie schwimmt weiter ihre Runden. Würdevoll.</span>' : '<b>Kalt!</b><span>Kurz wach. Jemand hinter dir lacht – nicht über dich, über den Spritzer.</span>'); return;
+      }
       case 'spind': if (!s.stundenplan && !(s.frei && s.frei.spind)) { ton('klack'); ui.toast('<b>Spind 117</b><span>Zahlenschloss. Den Code gibt’s im Sekretariat.</span>'); return; }
         if (spindAuf) { ton('klack'); await spindAuf(); return; }
         ui.toast('<b>Spind 117</b><span>Turnbeutel, Mathebuch, dein Stundenplan mit Kaffeefleck. Und eine sehr alte Banane.</span>'); return;

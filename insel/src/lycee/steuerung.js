@@ -173,7 +173,7 @@ export function createSteuerung({ camera, input, welt, figur = null }) {
     pos.y = (pos.z > -2 && pos.z < -0.6 && Math.abs(pos.x) < 4.2) ? 0.16 : 0;
     if (s.figur) {
       s.figur.group.position.copy(pos); s.figur.group.rotation.y = s.yaw;
-      const lauf = s.sitzt ? 'Idle' : s.tempo > 3.2 ? 'Run' : s.tempo > 0.3 ? 'Walk' : 'Idle';
+      const lauf = s.sitzt ? 'Idle' : s.tempo > 3.2 ? 'Run' : s.tempo > 0.3 ? 'Walk' : (s.emote && performance.now() < s.emoteBis) ? s.emote : 'Idle';
       s.figur.spiele(lauf, { tempo: lauf === 'Walk' ? Math.max(0.7, s.tempo / GEHEN) : 1 });
     }
     s.laeuft = s.tempo > 0.3;

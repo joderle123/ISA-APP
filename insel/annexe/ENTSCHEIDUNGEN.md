@@ -234,3 +234,16 @@ Ziel war ≤ 200 Aufrufe und ≤ 400k Dreiecke – überall erreicht. Was es geb
   Skateboard: zwei Sekunden zum Zurückrollen; weniger Rechenlast hinter Menüs.
 - Neu: **Schul-Pass** mit 19 Abzeichen (Pause, Entdecken, Menschen, Story) als Reiter im Journal. Abzeichen nur für Dinge,
   die man bewusst tut – nie für „richtige“ Antworten.
+
+## 19.11. (nachts) – Vier Runden Grafik, Lebendigkeit, Spaß, Easter Eggs
+- Runde 1 (Grafik): Basketballplatz mit Zonen, Kreisen und Dreierlinie; Wimpelketten über dem Hof; Twister-Punkte,
+  Pfütze; Blumenkästen und Kübel an der Fassade; Banner „Wëllkomm · Bienvenue · Willkommen“ über dem Eingang.
+- Runde 2 (Lebendigkeit): Wolken, Tauben (Gerd mit Partyhut fliegt nie weg), Schmetterlinge; Leute auf dem Hof sagen
+  kleine Sätze (Sprechblasen je Ort); „Hallo sagen“ bei Leuten auf dem Hof (zählt für den Pass); ab und zu fliegt ein
+  Papierflieger oder rollt ein Ball vorbei; mehr Leute in Kantine, Innenhof und Gang.
+- Runde 3 (Easter Eggs): Gummiente mit Krawatte im Brunnen (beim dritten Mal „Hand rein“ gefunden); fünf Ladekabel
+  von Herrn Mesenberg im ganzen Gebäude; Kritzeleien im WC; Automat mit Jackpot beim 7. Mal; Geheimwort „gerd“ tippen.
+- Runde 4 (kritischer Feinschliff): Brunnen in Steinfarbe mit Wasserstrahl und Wellenringen; Banner-Text passt jetzt
+  ganz; Speiseplan mit Humor in der Kantine; seltene Schul-Durchsagen (Fundbüro, Turnbeutel, Gerd); Taste H = winken,
+  Leute in der Nähe winken zurück; Ladekabel größer und orange (vorher unsichtbar). Neue Pass-Abzeichen: Kabelsalat,
+  Enten-Retter, Geheimwort, Hallo an alle, Winke-Welle.
