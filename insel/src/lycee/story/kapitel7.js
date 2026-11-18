@@ -40,7 +40,7 @@ const WER_BLEIBT = (m) => ({
     { nach: 0.5, wer: 'Ben', text: 'bin raus aus „7P2 echte“. sofort. ich bleib bei dir' },
     { nach: 3, wer: 'Mila', text: 'Ich war nie drin. Ich mag keine Gruppen mit 💯 im Namen.' },
     { nach: 6, wer: 'Noah', text: m.noahGefragtFoto || m.noahRunter ? 'Ich bin auch raus. Du warst immer da. Jetzt ich.' : 'Ich bin raus. Glaub ich. Ja. Raus.' },
-    { nach: 9.5, wer: 'Jo', text: 'ich bin noch drin. soll ich raus? luca sagt dann bin ich auch weg vom fenster', setzt: 'joFragt' },
+    { nach: 9.5, wer: 'Jo', text: 'bin noch drin. raus? luca sagt, dann bin ich weg', setzt: 'joFragt' },
     { nach: 14, wer: 'Ayla', text: 'ich bin drin, aber nur um zu sehen was die schreiben. spionin 🕵️' },
     { nach: 18, wer: 'Luca', text: 'komm zurück wenn du sorry sagst. für alles 😇' },
     { nach: 22, wer: 'Lina', text: '(schickt eine Zeichnung: Gerd die Taube mit einem Schild „Team du“)' },
@@ -83,8 +83,8 @@ const DRUCK = {
       { t: '„Welche?“', art: 'frage', druck: 4, ich: 0, antwort: 'Ein Foto von Noah. Beim Essen. Für die Story. Lustig.' },
       { t: '„Kein Interesse.“', art: 'nein', druck: -4, ich: 10, antwort: 'Hör doch erstmal zu, bro.' },
     ] },
-    { wer: 'kenan', sagt: '(leise) Ist nur ein Foto. Alle machen das.', karten: [
-      { t: '„Nein. Ich weiß, wie sich das anfühlt.“', art: 'nein', druck: -8, ich: 14, antwort: '(guckt weg) … Ja. Okay.' },
+    { wer: 'kenan', sagt: '(leise, guckt weg) Luca sagt, ist nur ein Foto.', karten: [
+      { t: '„Nein. Ich weiß, wie sich das anfühlt.“', art: 'nein', druck: -8, ich: 14, antwort: '(nickt) … Hast recht. Ohne mich, Luca.' },
       { t: '„Vielleicht. Ich überleg’s mir.“', art: 'ausrede', druck: 8, ich: -6, antwort: 'Überleg nicht so lang.' },
       { t: '„Okay. Eins.“', art: 'ja', druck: -10, ich: -20, wer: 'luca', antwort: 'Na also. Geht doch.' },
     ] },
@@ -108,11 +108,11 @@ const TREPPE = {
       { t: '„Jo, komm. Wir spielen auf dem anderen Korb.“', wirkt: true, antwort: ['l', '(atmet aus) … Ja. Ist eh besser da.'] },
     ] },
     { titel: 'Sticheln', sagt: [['r', 'Wer zuerst geht, verliert, oder?'], ['l', 'Wer andere fakt, ist ein Feigling.']], ausstiege: [
-      { t: '„Stopp. Ihr seid beide bei Gelb. Pause.“', wirkt: true, antwort: ['r', '… Pff. Okay. Pause.'] },
+      { t: '„Leute. Pause. Sonst kracht’s gleich.“', wirkt: true, antwort: ['r', '… Pff. Okay. Pause.'] },
       { t: '„Jo, lass ihn reden. Der will das.“', wirkt: false, antwort: ['l', 'Ich lass mich nicht beleidigen!'] },
     ] },
     { titel: 'Beleidigen', sagt: [['r', 'Du warst doch schon immer der Clown.'], ['l', 'Und du der Lügner!']], ausstiege: [
-      { t: '(Zwischen die beiden gehen. Ruhig.) „Fünf Sekunden. Beide.“', wirkt: true, antwort: ['l', '(zittert) … Fünf. Okay.'] },
+      { t: '(Zwei Schritte zurück. Laut:) „Jo! Komm her. Jetzt.“', wirkt: true, antwort: ['l', '(zittert) … Okay. Ich komm.'] },
       { t: '„Hört auf, Leute gucken!“', wirkt: false, antwort: ['r', 'Sollen sie doch!'] },
     ] },
     { titel: 'Drohen', sagt: [['r', 'Noch ein Wort und …'], ['l', 'Und WAS?']], ausstiege: [
@@ -184,7 +184,7 @@ export const GESPRAECHE_N7 = {
     ['kaya', 'Wéi geet et? Heute: Streit. Jeder streitet. Die Frage ist nur: wie?'],
     ['kaya', 'Vier Tiere. Hai, Schildkröte, Teddy, Eule. Wer reagiert wie?'],
     { szene: 'sort', id: 'tiere', def: TIERE, ausgang: (r) => (r.antworten[5] === 'schildi' ? 'schildi' : 'eule'),
-      folgen: { schildi: { dann: [['ayla', 'Pause ist nicht abtauchen. Das sag ich jetzt zum dritten Mal.']] }, eule: {} } },
+      folgen: { schildi: { dann: [['ayla', 'Pause ist wie beim Trommeln. Gehört zum Takt.']] }, eule: {} } },
     ['kaya', 'Und dann die Treppe. Jeder Streit hat Stufen.'],
     ['kaya', 'Je höher, desto schwerer der Ausstieg.'],
     ['mesenberg', 'Meinung, Sticheln, Beleidigen, Drohen, Knall. Merkt euch die Stufen.'],
@@ -219,7 +219,7 @@ export const GESPRAECHE_N7 = {
       folgen: {
         gekippt: { staerke: 'mut', herz: { noah: 3, ayla: 1, ben: 1 }, merke: 'buehneGekippt', dann: [['erzaehler', 'Luca steht plötzlich allein. Er steckt das Handy weg. Und geht.']] },
         halb: { staerke: 'mut', herz: { noah: 2 }, merke: 'buehneHalb', dann: [['erzaehler', 'Luca lacht noch. Aber leiser. Dann geht er.']] },
-        wenig: { herz: { noah: 1 }, merke: 'buehneWenig', dann: [['erzaehler', 'Es ist schwer, allein anzufangen. Aber du hast angefangen.']] },
+        wenig: { herz: { noah: 1 }, merke: 'buehneWenig', dann: [['erzaehler', 'Luca filmt noch kurz. Dann klingelt es.']] },
       } },
     { tu: 'n7_noahDanach' },
   ],
@@ -235,13 +235,13 @@ export const GESPRAECHE_N7 = {
 export const tunN7 = (c) => ({
   n7_benStart: () => (c.S.merke.lucaSorry ? [['ben', 'Du hast Luca „sorry“ geschrieben? Bro. Für NICHTS?'], ['ben', 'Egal. Passiert. Er hat eh nein gesagt.']] : []),
   n7_darioDanach: () => (c.S.merke.druckNein ? [['erzaehler', 'Hinter dir Schritte. Dario.'], ['dario', '(leise) Das war … stark. Ich kann das nicht. Nein sagen. Zu ihm.']] : []),
-  n7_noahDanach: () => [
+  n7_noahDanach: () => (!c.S.merke.buehneHalb && !c.S.merke.buehneGekippt ? [['noah', '(später, leise) Morgen sitz ich wieder da. Gleicher Tisch.']] : [
     ['noah', '(später, draußen) Du bist gekommen. Zu meinem Tisch.'],
     { wahl: [
       { t: '„Immer.“', herz: { noah: 1 }, dann: [['noah', 'Sag nicht immer. Sag: heute. Heute reicht.']] },
       { t: '„Sollen wir es Herrn Kuedes sagen? Zusammen?“', staerke: 'hilfe', herz: { noah: 1, kaya: 1 }, merke: 'mobbingGemeldet', dann: [['noah', 'Zusammen. Ja. Allein schaff ich das nicht.']] },
     ] },
-  ],
+  ]),
   n7_schluss: () => [
     { szene: 'stempel', def: { modul: 'Modul 6 · Wenn es schwierig wird', titel: 'Standgehalten',
       gelernt: ['Vier Tiere im Streit – und welches gerade hilft', 'Die Konflikt-Treppe und ihre Ausstiege', 'Nein sagen, wenn die Gruppe drückt', 'Spaß, Streit und Mobbing unterscheiden', 'Die Bühne kippen: ein Schritt reicht'],

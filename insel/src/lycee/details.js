@@ -250,6 +250,44 @@ export function baueDetails({ B, P, schilder, C, uhrTextur, extra, raeume, plaet
     break;
   }
 
+  // ---------- Hof lebendiger (Qualitätsrunde): Kreide-Hüpfspiel, Fahrradständer mit Rädern, Kreide-Sonne ----------
+  {
+    const kreideFarben = ['#f4f1e8', '#f7c6d0', '#bfe3f2', '#fff0a8', '#c8ecc4'];
+    // Himmel und Hölle: 1 – 2|3 – 4 – 5|6 – 7 – Himmel (Halbkreis aus Feldern)
+    for (const [x0, z0] of [[-15, 23], [6, 24], [-3, 30]]) {
+      if (!frei(x0, z0 + 2, 1.6) || Math.hypot(x0 + 8, z0 + 2 - 18) < 5.5) continue;   // nicht unter den Brunnen (−8, 18)
+      const feld = (x, z, f) => { box(x - 0.29, x + 0.29, 0.065, 0.069, z - 0.29, z + 0.29, hex(kreideFarben[f % kreideFarben.length])); };
+      const reihen = [[0], [-0.31, 0.31], [0], [-0.31, 0.31], [0], [0]];
+      reihen.forEach((r, i) => r.forEach((dx, j) => feld(x0 + dx, z0 + i * 0.62, i + j)));
+      const h = new THREE.CircleGeometry(0.42, 12, 0, Math.PI); h.rotateX(-Math.PI / 2); h.translate(x0, 0.069, z0 + 6 * 0.62 - 0.28); geo(h, hex('#fff0a8'));
+      break;
+    }
+    // Kreide-Sonne mit Strahlen (jemand hat gemalt)
+    for (const [x, z] of [[-4, 27], [12, 26], [-16, 26]]) {
+      if (!frei(x, z, 1.3)) continue;
+      const c = new THREE.CircleGeometry(0.55, 14); c.rotateX(-Math.PI / 2); c.translate(x, 0.068, z); geo(c, hex('#ffe27a'));
+      for (let k = 0; k < 10; k++) { const w = (k / 10) * Math.PI * 2, g = new THREE.BoxGeometry(0.42, 0.004, 0.07); g.rotateY(-w); g.translate(x + Math.cos(w) * 0.85, 0.068, z + Math.sin(w) * 0.85); geo(g, hex('#ffd04a')); }
+      break;
+    }
+    // Fahrradständer mit drei Rädern (Rahmen, Reifen, Lenker) neben dem Eingang
+    for (const [x0, z0] of [[8.5, 5.5], [-12, 5.5], [14, 8]]) {
+      if (!frei(x0 + 1.5, z0, 2.2)) continue;
+      box(x0 - 0.2, x0 + 3.4, 0.06, 0.1, z0 - 0.03, z0 + 0.03, C.beton);
+      for (let i = 0; i < 6; i++) { const t = new THREE.TorusGeometry(0.28, 0.02, 4, 12, Math.PI); t.rotateY(Math.PI / 2); t.translate(x0 + i * 0.62, 0.05, z0); geo(t, hex('#9aa3ad')); }
+      const farben = ['#d9693f', '#3f78b8', '#2fb8a8'];
+      [0, 1, 3].forEach((i, n) => {
+        const x = x0 + i * 0.62, f = hex(farben[n]);
+        for (const dz of [-0.48, 0.48]) { const r = new THREE.TorusGeometry(0.31, 0.035, 6, 16); r.rotateY(Math.PI / 2); r.translate(x, 0.34, z0 + dz); geo(r, hex('#2b2b33')); }
+        const rahmen = (z1, y1, z2, y2) => { const l = Math.hypot(z2 - z1, y2 - y1), g = new THREE.BoxGeometry(0.04, 0.04, l); g.rotateX(-Math.atan2(y2 - y1, z2 - z1)); g.translate(x, (y1 + y2) / 2, (z1 + z2) / 2); geo(g, f); };
+        rahmen(z0 - 0.48, 0.34, z0 + 0.05, 0.62); rahmen(z0 + 0.05, 0.62, z0 + 0.48, 0.34); rahmen(z0 - 0.48, 0.34, z0, 0.34); rahmen(z0 + 0.4, 0.66, z0 + 0.48, 0.34);
+        box(x - 0.05, x + 0.05, 0.66, 0.7, z0 - 0.1, z0 + 0.05, hex('#2b2b33'));
+        box(x - 0.22, x + 0.22, 0.78, 0.81, z0 + 0.38, z0 + 0.42, hex('#2b2b33'));
+      });
+      B.kasten.push({ x0: x0 - 0.3, x1: x0 + 3.5, z0: z0 - 0.6, z1: z0 + 0.6, y0: 0, y1: 0.9 });
+      break;
+    }
+  }
+
   ersetzeBaeume();
 
   // ---------- Fassade des Haupthauses (x −30 … 30, z −30 … −2): Fensterfaschen, Schlusssteine, Lisenen, Dachgauben ----------

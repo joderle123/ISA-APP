@@ -1,5 +1,7 @@
 # Annexe Junglinster – die neue Geschichte: „@annexe.cam“
 
+> **Hinweis (19.11.):** Verbindlich ist jetzt KONZEPT-SPIEL.md – zehn Kapitel pro Schuljahr (1 Modul = 1 Kapitel), Auflösung von @annexe.cam in Kapitel 9–10. Dieses Dokument beschreibt die ältere Fassung mit sieben Kapiteln und bleibt als Ideen-Sammlung.
+
 Stand 18.11.2026 · ersetzt die alte Kapitel-Folge (Rentrée … Praktikum). Alles erfunden.
 
 ## Der rote Faden

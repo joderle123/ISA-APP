@@ -197,7 +197,8 @@ check('Faden gespeichert, Freundschaft gewachsen', (await L(() => LYCEE.zustand.
 await L(() => { LYCEE.rede('ben'); });
 await page.waitForFunction(() => LYCEE.imGespraech, null, { timeout: 10000 }).catch(() => {});
 check('Im selben Abschnitt: nur kurz plaudern', !/Geschäftsmodell|Investor/.test(await page.textContent('.ly-dialog')) && (await L(() => LYCEE.zustand.faeden.ben)) === 1);
-for (let i = 0; i < 8 && await L(() => LYCEE.imGespraech); i++) { await page.keyboard.press('KeyE'); await page.waitForTimeout(250); }
+// (manchmal fragt Ben zufällig „Weißt du noch?“ – dann eine Antwort anklicken)
+for (let i = 0; i < 14 && await L(() => LYCEE.imGespraech); i++) { if (await page.isVisible('.ly-d-optionen button')) await page.click('.ly-d-optionen button'); else await page.keyboard.press('KeyE'); await page.waitForTimeout(250); }
 
 // Tischtennis auf dem Hof: Spiel öffnet sich; ohne Schlag sind die drei Bälle weg, das Spiel endet von selbst
 await geheZu({ tu: 'tischtennis' }); await page.waitForFunction(() => LYCEE.iaNah === 'tischtennis', null, { timeout: 30000 }).catch(() => {});

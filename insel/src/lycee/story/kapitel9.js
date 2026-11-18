@@ -32,10 +32,10 @@ export const SCHRITTE_N9 = [
 const DARIOS_RUCKSACK = {
   wo: 'Haltestelle · mit Dario', titel: 'Darios Rucksack',
   dinge: [
-    { t: 'Das Geheimnis: Ich hab @annexe.cam angefangen.', sy: '🤐', kg: 6, passt: ['teilen'], warum: 'Ein Geheimnis wird schwerer, je länger man es trägt. Teilen mit einem Erwachsenen macht es leichter.' },
+    { t: 'Das Geheimnis: Ich hab @annexe.cam angefangen.', sy: '🤐', kg: 6, passt: ['teilen'], warum: 'Geheimnisse werden schwerer. Mit einem Erwachsenen teilen macht leichter.' },
     { t: 'Luca hat das Passwort. Ich komm nicht mehr rein.', sy: '🔑', kg: 4, passt: ['nicht', 'teilen'], warum: 'Was Luca postet, ist Lucas Verantwortung. Nicht alles davon gehört Dario.' },
     { t: 'Nachts guck ich jede Stunde, was gepostet wird.', sy: '📱', kg: 4, passt: ['warten', 'teilen'], warum: 'Nachts kann man nichts ändern. Das kann bis morgen warten.' },
-    { t: 'Angst, von der Schule zu fliegen.', sy: '😰', kg: 3, passt: ['teilen'], warum: 'Angst wird kleiner, wenn jemand sie mitträgt. Herr Kuedes kennt sich aus.' },
+    { t: 'Angst, von der Schule zu fliegen.', sy: '😰', kg: 3, passt: ['teilen'], warum: 'Angst wird kleiner, wenn jemand mitträgt. Zum Beispiel Herr Kuedes.' },
     { t: 'Mathe-Nachprüfung am Freitag.', sy: '📐', kg: 2, passt: ['tragen'], warum: 'Das ist echt seins. Aber es ist klein, wenn der Rest leichter ist.' },
     { t: '„Alle denken, ich bin cool. Ich muss cool bleiben.“', sy: '😎', kg: 3, passt: ['nicht'], warum: 'Das ist ein Satz, kein Gewicht. Den darf er ablegen.' },
   ],
@@ -91,12 +91,12 @@ const ECKEN_G = {
 const WUERFEL = {
   wo: 'Hof · Bens Pappwürfel', runden: 3,
   aufgaben: [
-    { t: '10 Hampelmänner. Jetzt.', sy: '🤸', wer: F.ben, sagt: 'Neun. Zählt fast.' },
-    { t: 'Ein großes Glas Wasser trinken.', sy: '💧', wer: F.noah, sagt: 'Ich hol uns zwei.' },
-    { t: 'Drei Minuten ohne Handy. Alle.', sy: '📵', wer: F.jo, sagt: 'Drei Minuten. Digga. Das ist Folter. … Okay, geht.' },
-    { t: 'Jemandem was Nettes sagen. In echt.', sy: '💬', wer: F.ben, sagt: 'Du hast heute schöne Schuhe. Ich mein’s ernst.' },
-    { t: 'Fünf Körbe werfen.', sy: '🏀', wer: F.jo, sagt: 'Ich zähl mit. Drei. Respekt.' },
-    { t: 'Eine Minute in den Himmel gucken.', sy: '☁️', wer: F.noah, sagt: 'Die Wolke sieht aus wie Gerd.' },
+    { t: '10 Hampelmänner. Jetzt. Tippen!', sy: '🤸', art: 'tippen', n: 10, wer: F.ben, sagt: 'Neun. Zählt fast.' },
+    { t: 'Ein großes Glas Wasser. Austrinken!', sy: '💧', art: 'halten', n: 3, wer: F.noah, sagt: 'Ich hol uns zwei.' },
+    { t: 'Ohne Handy. Nichts anfassen.', sy: '📵', art: 'still', n: 5, wer: F.jo, sagt: 'Drei Minuten. Digga. Das ist Folter. … Okay, geht.' },
+    { t: 'Jemandem was Nettes sagen. In echt.', sy: '💬', art: 'wahl', optionen: ['„Ben, du machst jede Pause besser.“', '„Jo, dein Wurf vorhin war krass.“', '„Noah, danke für den Platz im Bus.“'], wer: F.ben, sagt: 'Du hast heute schöne Schuhe. Ich mein’s ernst.' },
+    { t: 'Fünf Körbe. Schnell!', sy: '🏀', art: 'tippen', n: 5, zeit: 5, wer: F.jo, sagt: 'Ich zähl mit. Drei. Respekt.' },
+    { t: 'In den Himmel gucken. Nichts anfassen.', sy: '☁️', art: 'still', n: 5, wer: F.noah, sagt: 'Die Wolke sieht aus wie Gerd.' },
   ],
 };
 
@@ -106,14 +106,17 @@ export const GESPRAECHE_N9 = {
     ['erzaehler', 'Er sitzt schon da. Kapuze auf. Augenringe bis zum Kinn.'],
   ],
   n9_dario: [
-    ['dario', 'Danke, dass du gekommen bist. Ich hab seit Wochen nicht richtig geschlafen.'],
+    ['dario', 'Danke, dass du kommst. Willkommen im Zombie-Team.'],
+    ['dario', 'Ich bin Kapitän. Seit Wochen kein Schlaf.'],
     ['dario', 'Ich hab @annexe.cam angefangen. Im Herbst. Ich.'],
     ['dario', 'Erst nur Tauben. Lustige Sachen. Luca fand’s gut. Ich war plötzlich wer.'],
     ['dario', 'Dann wollte er das Passwort. Und dann wurden die Posts gemein.'],
+    ['dario', 'Das Foto von dir. Erster Tag. Die Umfrage. Das war ich.'],
     { wahl: [
+      { t: '„Ich weiß es schon. Der Winkel. Von links unten.“', wenn: (m) => m.spurDario || m.spurDarioAngst || m.spurSkate, staerke: 'lesen', herz: { dario: 1 }, merke: 'spurGeloest', dann: [['dario', '(starrt dich an) … Seit wann?'], ['dario', 'Und du hast es trotzdem nicht gepostet. Krass.']] },
       { t: '(Zuhören. Nicken. Nichts sagen.)', staerke: 'zuhoeren', herz: { dario: 2 }, dann: [['dario', 'Ich hab nicht gedacht, dass du einfach zuhörst. Nach allem.']] },
       { t: '„Und das Foto von Noah? War das auch du?“', staerke: 'mut', herz: { dario: 1 }, dann: [['dario', '(nickt) Das erste. Ja. Ohne Text. Den Text hat Luca dazugemacht.'], ['dario', 'Ich schäm mich. Jeden Tag.']] },
-      { t: '„Warum erzählst du das ausgerechnet mir?“', staerke: 'lesen', herz: { dario: 1 }, dann: [['dario', 'Weil du am Korb was gesagt hast.'], ['dario', '„Kenn ich. Einmal Mist, und alle gucken.“']] },
+      { t: '„Warum erzählst du das ausgerechnet mir?“', staerke: 'lesen', herz: { dario: 1 }, dann: [['dario', 'Weil du weißt, wie das ist. Gepostet werden.']] },
     ] },
     ['dario', 'Kannst du … das für dich behalten?'],
     { wahl: [
@@ -153,9 +156,8 @@ export const GESPRAECHE_N9 = {
       { t: '(Hand auf die Lehne neben ihm. Warten.)', staerke: 'warten', herz: { dario: 2 }, dann: [
         ['dario', '(nach einer langen Minute) Ich bin @annexe.cam. Also … ich war es.'] ] },
     ] },
-    ['kaya', 'Danke, Dario. Das war sehr mutig. Wirklich.'],
-    ['kaya', 'Das ist ernst. Und es wird Folgen haben.'],
-    ['kaya', 'Aber du bist nicht allein damit.'],
+    ['kaya', 'Okay. Gut, dass ihr zu zweit seid.'],
+    ['kaya', 'Das ist ernst. Aber du bist nicht allein damit.'],
     ['kaya', 'Ich rede mit der Direktion. Und mit deinen Eltern. Mit dir zusammen.'],
     ['dario', 'Und Luca?'],
     ['kaya', 'Um Luca kümmern sich auch Erwachsene. Nicht ihr.'],
@@ -192,6 +194,7 @@ export const tunN9 = (c) => ({
     ] }] : []),
   n9_kuedesStart: () => (c.S.merke.darioBegleiten ? [['dario', 'Du bist gekommen. Okay. Okay. Wir gehen rein.']] : [['dario', 'Ich hab gewartet. Ich dachte, vielleicht kommst du.']]),
   n9_kuedesEnde: () => [
+    ...(c.S.merke.geheimnisGetragen ? [['kaya', '(zu dir, leise) So was trägt man nicht allein. Du auch nicht.']] : []),
     ['erzaehler', 'Draußen setzt sich Dario auf die Treppe. Er zittert. Dann lacht er. Kurz.'],
     ['dario', 'Ich glaub, heute Nacht schlaf ich.'],
   ],

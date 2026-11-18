@@ -243,6 +243,22 @@ export function baueWelt({ material, materialInnen }) {
   for (const x of [-8, 8]) box(x - 0.35, x + 0.35, 0, Y, -14.35, -13.65, C.gesims, { art: 'innen', stoss: true });
   // Sockelleisten im Gang
   box(-29.8, 29.8, 0.1, 0.3, -17.88, -17.84, C.sockelLeiste, { art: 'innen' }); box(-29.8, -8, 0.1, 0.3, -14.16, -14.12, C.sockelLeiste, { art: 'innen' }); box(8, 29.8, 0.1, 0.3, -14.16, -14.12, C.sockelLeiste, { art: 'innen' });
+  // Farbband im Gang (Qualitätsrunde): zwei Streifen über den Spinden, Farbe wechselt zwischen den Türen
+  {
+    const BAND = ['#e9734a', '#2fb8a8', '#f2b134', '#5fa0d0', '#e85d75'];
+    const band = (zA, zB, x0, x1, tueren, start) => {
+      const kanten = [x0].concat(...tueren.map((t) => [t - 0.8, t + 0.8]), [x1]);
+      for (let i = 0; i + 1 < kanten.length; i += 2) {
+        if (kanten[i + 1] - kanten[i] < 0.3) continue;
+        const f = BAND[(start + i / 2) % BAND.length];
+        box(kanten[i], kanten[i + 1], 2.0, 2.14, zA, zB, f, { art: 'innen' });
+        box(kanten[i], kanten[i + 1], 2.18, 2.22, zA, zB, f, { art: 'innen' });
+      }
+    };
+    band(-17.885, -17.855, -29.8, 29.8, [-21, -9, 3, 14, 24], 0);
+    band(-14.145, -14.115, -29.8, -8, [-21, -12], 2);
+    band(-14.145, -14.115, 8, 29.8, [12, 25], 3);
+  }
   // Innenseite der Außenwände (Farbe innen)
   box(X0 + D / 2, X0 + D / 2 + 0.02, 0.1, Y, Z0, Z1, C.innenWand, { art: 'innen' });
   box(X1 - D / 2 - 0.02, X1 - D / 2, 0.1, Y, Z0, Z1, C.innenWand, { art: 'innen' });

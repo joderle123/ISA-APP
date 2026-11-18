@@ -35,7 +35,7 @@ const VIDEO = {
   titel: '7P2 😎 (offiziell)', mitglieder: 18, dauer: 34,
   nachrichten: [
     { nach: 0.5, system: true, text: 'Ayla hat dich wieder zur Gruppe hinzugefügt.' },
-    { nach: 1.6, wer: 'Chiara', bild: 'Mme Tidderich tanzt auf dem Pult, Enten-Krawatte', text: 'habt ihr DAS gesehen 😳', lacher: { start: 6, proSek: 0.6, stopp: 'gebremst' } },
+    { nach: 1.6, wer: 'Chiara', bild: 'Mme Tidderich tanzt, Enten-Krawatte. KI-Stimme: „7P2 ist meine dümmste Klasse.“', text: 'habt ihr DAS gesehen 😳', lacher: { start: 6, proSek: 0.6, stopp: 'gebremst' } },
     { nach: 4, wer: 'Jo', text: 'wallah das ist so lustig 💀' },
     { nach: 6, wer: 'Ben', text: 'DAS IST KI. GUCKT DIE HÄNDE AN. sechs finger!!' },
     { nach: 8.5, wer: 'Yusuf', text: 'echt jetzt? sieht echt aus' },
@@ -43,6 +43,7 @@ const VIDEO = {
     { nach: 13.5, wer: 'Lina', text: 'Sie hat heute Morgen ganz rote Augen gehabt.', wennNicht: 'stumm' },
     { nach: 17, wer: 'Jo', text: '… oh. okay. ich lösch mein ❤️' },
     { nach: 20, wer: 'Mila', text: 'Teilen-Bremse: Wer hat es gemacht? Ist es echt? Wem schadet es?' },
+    { nach: 23, wer: 'Ayla', text: 'spionin-bericht: luca schrieb samstag „video kommt 🎬“' },
   ],
   aktionen: [
     { id: 'teilen', t: 'Teilen', symbol: '↗️', wahl: [
@@ -111,11 +112,14 @@ const BDAY = {
   nachrichten: [
     { nach: 0.5, system: true, text: 'Freitag, 9:48. @annexe.cam hat eine Story gepostet.' },
     { nach: 1.8, wer: '@annexe.cam', bild: 'Ben am Korb, von hinten', text: 'happy bday ben 🎂📷 alt wirst du' },
-    { nach: 5, wer: 'Mila (privat)', text: 'Das wusste nur Luca. Niemand sonst. Nicht mal Bens Mutter weiß, dass er heute feiert.' },
+    { nach: 5, wer: 'Mila (privat)', text: 'Das wusste nur Luca. Ben hat es sonst niemandem gesagt.' },
     { nach: 9, wer: 'Ben (privat)', text: 'ICH HAB GEBURTSTAG UND HABE EINEN TÄTER. bestes geschenk' },
     { nach: 12, wer: 'Mila (privat)', text: 'Jetzt: nicht posten. Nicht drohen. Herr Kuedes. Heute noch.' },
   ],
-  aktionen: [{ id: 'weg', t: 'Zu Herrn Kuedes', symbol: '🚪', setzt: 'zuKuedes', sys: 'Du steckst das Handy ein. Dein Herz klopft. Aber du weißt, wohin.', ende: true }],
+  aktionen: [
+    { id: 'laut', t: 'In den Klassenchat: LUCA IST ES', symbol: '📣', setzt: 'chatLuca', ich: 'LUCA IST ES. beweis kommt', folgen: [{ nach: 1.6, wer: 'Mila (privat)', text: 'Lösch das. Sonst bist du jetzt der Account.' }] },
+    { id: 'luca', t: 'Luca privat schreiben', symbol: '✉️', setzt: 'lucaPrivat', ich: 'ich weiß, dass du es bist', folgen: [{ nach: 1.6, wer: 'Luca (privat)', text: 'beweis es 😇' }] },
+    { id: 'weg', t: 'Zu Herrn Kuedes', symbol: '🚪', setzt: 'zuKuedes', sys: 'Du steckst das Handy ein. Dein Herz klopft. Aber du weißt, wohin.', ende: true }],
 };
 
 export const GESPRAECHE_N8 = {
@@ -156,8 +160,8 @@ export const GESPRAECHE_N8 = {
   n8_tidderich: [
     ['hoffmann', 'Ça va? … Ich sag es einfach. Ich hab das Video gesehen.'],
     ['hoffmann', 'Ich hab zuerst gelacht. Die Ente ist wirklich lustig.'],
-    ['hoffmann', 'Und dann hab ich geweint.'],
-    ['hoffmann', 'Weil 300 Leute glauben, dass ich so bin.'],
+    ['hoffmann', 'Und dann hab ich nicht mehr gelacht.'],
+    ['hoffmann', 'Weil 300 Leute das jetzt für echt halten.'],
     ['erzaehler', 'Es ist ganz still. Jo guckt auf seinen Tisch.'],
     { wahl: [
       { t: '„Es tut mir leid. Ich hab’s nicht geteilt. Aber gesehen.“', staerke: 'zuhoeren', herz: { hoffmann: 2 }, dann: [['hoffmann', 'Danke. Sehen ist nicht schlimm. Weiterschicken tut weh.']] },
@@ -171,10 +175,11 @@ export const GESPRAECHE_N8 = {
   n8_falle: [
     ['mila', 'Wir wissen: Luca hat den Fake gebaut. Aber wer hat das Passwort?'],
     ['ben', 'Ich hab eine Idee. Eine Falle. Wie im Film.'],
+    ['ben', 'Und Ermittlungs-Kekse. Einer pro Hinweis.'],
     { wahl: [
       { t: '„Wir erfinden was und sagen es nur Luca.“', merke: 'falleLuege', dann: [['mila', 'Nein. Wir fangen keine Fakes mit Fakes.'], ['mila', 'Dann sind wir wie er.']] },
       { t: '„Wir sagen Luca was Wahres. Nur ihm.“', staerke: 'lesen', herz: { mila: 1 }, merke: 'falleEhrlich', dann: [['mila', 'Etwas Wahres. Harmlos. Und mit Erlaubnis.']] },
-      { t: '„Lasst es. Das ist Sache von Herrn Kuedes.“', staerke: 'hilfe', merke: 'falleKuedes', dann: [['mila', 'Er weiß Bescheid. Er hat gesagt: Wenn ihr was wisst, kommt.'], ['mila', 'Eine Spur, die keinem schadet, ist okay.']] },
+      { t: '„Lasst es. Das ist Sache von Herrn Kuedes.“', staerke: 'hilfe', merke: 'falleKuedes', dann: [['mila', 'Okay. Dann sagen wir Herrn Kuedes den Plan. Vorher.'], ['mila', 'Eine Spur, die keinem schadet. Mit ihm zusammen.']] },
     ] },
     ['ben', 'Ich hab Freitag Geburtstag. Das weiß keiner. Ich sag’s nur Luca.'],
     ['mila', 'Bist du sicher? Dann postet er vielleicht was über dich.'],
@@ -186,21 +191,23 @@ export const GESPRAECHE_N8 = {
   ],
   n8_post: [
     ['erzaehler', 'Freitag. 9:48. Auf dem Weg in die Aula. Dein Handy vibriert.'],
-    { szene: 'chat', id: 'bday', def: BDAY, ausgang: () => 'zu', folgen: { zu: { merke: 'falleZu' } } },
+    { szene: 'chat', id: 'bday', def: BDAY, ausgang: (r) => (r.flags.chatLuca ? 'laut' : 'zu'),
+      folgen: { zu: { merke: 'falleZu' }, laut: { merke: ['falleZu', 'chatLuca'], dann: [['mila', '(an der Tür) Gelöscht? Gut. Fakten zu Erwachsenen. Nicht in den Chat.']] } } },
   ],
   n8_ende: [
     ['kaya', '(leise zu dir, Ben und Mila) Ich hab’s gesehen.'],
     ['kaya', 'Danke, dass ihr gekommen seid.'],
     ['kaya', 'Ab jetzt ist das meine Aufgabe.'],
     ['kaya', 'Mit der Direktion. Und mit Lucas Eltern.'],
-    ['kaya', 'Ihr habt nichts erfunden. Niemand bloßgestellt. Das war richtig.'],
+    ['kaya', 'Und die fremde Nummer mit 77 am Ende? Auch Luca.'],
+    ['kaya', 'Ab hier übernehme ich. Ihr macht jetzt Pause. Wirklich.'],
     { tu: 'n8_schluss' },
   ],
 };
 
 export const tunN8 = (c) => ({
   n8_milaStart: () => (c.S.merke.videoGeteilt ? [['mila', '(guckt dich an) Du hast es geteilt. Ich hab’s gesehen.'], ['mila', 'Du kannst es noch löschen. Jetzt.']] : []),
-  n8_joSorry: () => (c.S.merke.joIchBotschaft || c.S.merke.joGehoert ? [['jo', '(steht auf) Mme Tidderich … ich hab’s geliked. Sorry. Echt.'], ['hoffmann', 'Danke, Jo. Das braucht Mut.']] : []),
+  n8_joSorry: () => (c.S.merke.joIchBotschaft || c.S.merke.joGehoert ? [['jo', '(steht auf) Mme Tidderich … ich hab’s geliked. Sorry. Echt.'], ['hoffmann', 'Okay, Jo. Angekommen.']] : []),
   n8_schluss: () => [
     { szene: 'stempel', def: { modul: 'Modul 7 · Digitale Welt', titel: 'Erst bremsen',
       gelernt: ['Echt oder KI? Hände, Schrift, Schatten', 'Die Teilen-Bremse: Wer? Echt? Wem schadet es?', 'Der Feed folgt dir – und schubst dich', 'KI: geht klar oder gar nicht', 'Fakes fängt man nicht mit Fakes'],
@@ -208,6 +215,10 @@ export const tunN8 = (c) => ({
     ['erzaehler', 'Samstag, 2:14 Uhr. Eine Nachricht von Dario.'],
     ['dario', '(Nachricht) bist du wach? ich kann nicht schlafen. seit wochen nicht.'],
     ['dario', '(Nachricht) kann ich dir was erzählen? morgen? bitte'],
+    { wahl: [
+      { t: '„Morgen früh. Haltestelle. Ich bin da.“', herz: { dario: 1 }, dann: [['dario', '(Nachricht) ok. danke 🙏']] },
+      { t: '„Morgen früh, Haltestelle. Wenn’s jetzt zu schlimm ist: 116 111.“', staerke: 'hilfe', herz: { dario: 1 }, dann: [['dario', '(Nachricht) geht schon. aber gut zu wissen. bis morgen']] },
+    ] },
     { tu: 'kapitelEnde' },
   ],
 });

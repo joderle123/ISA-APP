@@ -116,6 +116,22 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   await schritt(0.6, 'Die Klasse kommt …');
   const ui = createUI({ root, input, speech });
   situationen(ui, { name: () => 'Du', ersetze: (t) => ersetze(t) });
+  // Ton und Vorlesen für alle Situations-Spiele an einer Stelle: Klick auf Karten, Sprechblasen, Stempel, neue Karten
+  (() => {
+    let zuletzt = 0;
+    const ton = (n) => { const t = performance.now(); if (t - zuletzt < 90) return; zuletzt = t; audio.play(n); };
+    root.addEventListener('click', (e) => { const b = e.target.closest('.sz button'); if (b) ton(b.classList.contains('sz-weiter') ? 'pickup' : 'click'); }, true);
+    const lies = (el) => { if (!ui.autoVorlesen || !speech || !speech.available) return; const k = el.cloneNode(true); k.querySelectorAll('b, small').forEach((x) => x.remove()); const t = k.textContent.trim(); if (t) speech.speak(t, { interrupt: false }); };
+    new MutationObserver((ms) => {
+      for (const m of ms) for (const n of m.addedNodes) {
+        if (n.nodeType !== 1) continue;
+        if (n.querySelector && n.querySelector('.sz-stempel')) { ton('unlock'); continue; }
+        const blasen = n.classList.contains('sz-blase') ? [n] : n.querySelectorAll ? [...n.querySelectorAll('.sz-blase')] : [];
+        if (blasen.length) { ton('bubble'); blasen.forEach(lies); continue; }
+        if (n.classList.contains('sz-fall') || (n.querySelector && n.querySelector('.sz-fall p'))) lies(n.classList.contains('sz-fall') ? n : n.querySelector('.sz-fall p'));
+      }
+    }).observe(root, { childList: true, subtree: true });
+  })();
   const steuerung = createSteuerung({ camera, input, welt });
   rr.attachPost({ scene, camera, veil });
 
@@ -400,8 +416,11 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         await ui.sprich({ ...sprecher(wer), text: ersetze(text) });
       } else if (z.wahl) {
         const opt = z.wahl.filter((w) => !w.wenn || w.wenn(S.merke));   // manche Antworten gibt es nur nach früheren Entscheidungen
-        const i = await ui.waehle(opt.map((w) => ersetze(w.t)));
-        const w = opt[i];
+        // Reihenfolge mischen, wenn eine Antwort eine Stärke zeigt – sonst wäre „die erste ist die gute“ zu leicht
+        const ord = opt.map((_, k) => k);
+        if (opt.some((w) => w.staerke) && !z.fest) for (let k = ord.length - 1; k > 0; k--) { const r = Math.floor(Math.random() * (k + 1)); [ord[k], ord[r]] = [ord[r], ord[k]]; }
+        const i = await ui.waehle(ord.map((k) => ersetze(opt[k].t)));
+        const w = opt[ord[i]];
         if (w.staerke) staerke(w.staerke);
         if (w.herz) for (const [id, n] of Object.entries(w.herz)) herz(id, n);
         if (w.merke) [].concat(w.merke).forEach((m) => { S.merke[m] = true; });

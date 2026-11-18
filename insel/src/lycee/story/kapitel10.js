@@ -32,14 +32,14 @@ export const SCHRITTE_N10 = [
 
 // ---------- Zurück im Klassenchat ----------
 const ZURUECK = {
-  titel: 'Klasse 7P2', mitglieder: 21, dauer: 24,
+  titel: '7P2 ohne Kamera', mitglieder: 21, dauer: 24,
   nachrichten: [
-    { nach: 0.5, system: true, text: 'Ayla hat dich hinzugefügt.' },
-    { nach: 1.6, wer: 'Ayla', text: 'zurück wo du hingehörst 💅' },
-    { nach: 3.6, wer: 'Ben', text: 'ENDLICH. ich hab 6 wochen memes an mich selbst geschickt' },
+    { nach: 0.5, system: true, text: 'Mila hat die Gruppe umbenannt: „7P2 ohne Kamera“.' },
+    { nach: 1.6, wer: 'Ayla', text: 'besserer name. ich hab abgestimmt 💅' },
+    { nach: 3.6, wer: 'Ben', text: 'neuer name. alte memes. ich hab 400 gespeichert' },
     { nach: 6.6, wer: 'Mila', text: 'Info: @annexe.cam ist gelöscht. 0 Beiträge. Ich hab nachgezählt.' },
     { nach: 9.6, wer: 'Jo', text: 'willkommen zurück. sorry nochmal wegen der sprachnachricht', setzt: 'joSorry' },
-    { nach: 13, wer: 'Noah', text: 'Ich hab dir einen Platz im Chat freigehalten. Witz. Oder?' },
+    { nach: 13, wer: 'Noah', text: 'Bus in 5 Minuten. Ich halt dir Platz. Mit Kaktus.' },
     { nach: 17, wer: 'Lina', text: '(schickt eine Zeichnung: Gerd die Taube mit Partyhut)' },
   ],
   aktionen: [
@@ -62,7 +62,7 @@ const KURVE = (m) => ({
     { sy: '📐', t: 'Mathe-Test mit Puls 140.', dein: m.testSkills ? 'Du hast deinen Skills-Koffer benutzt.' : m.noahAtem ? 'Du hast mit Noah geatmet.' : 'Blackout. Und danach wieder Luft.' },
     { sy: '🖼️', t: 'Der Fake-Screenshot. Alle dachten, du warst es.', dein: m.fakeKuedes ? 'Du bist ruhig zu Herrn Kuedes gegangen.' : m.neuerSatz ? 'Du hast einen neuen Satz für dich gefunden.' : 'Die Gedanken waren laut.' },
     { sy: '✋', t: 'Klassenfoto. Und Luca filmt Mila.', dein: m.stoppKlar ? 'Dein Stopp war klar.' : m.joGehoert ? 'Du hast Jo wirklich zugehört.' : 'Danach: raus aus dem Klassenchat.' },
-    { sy: '🧩', t: 'Allein. Wer bleibt?', dein: m.druckNein ? 'Du hast Nein gesagt. Drei gegen dich.' : m.buehneGekippt ? 'Du hast die Bühne gekippt. Für Noah.' : 'Ben ist geblieben. Sofort.' },
+    { sy: '🧩', t: 'Allein. Wer bleibt?', dein: m.druckNein ? 'Du hast Nein gesagt. Drei gegen dich.' : m.druckJa ? 'Du hast unter Druck Ja gesagt. Und viel nachgedacht.' : m.buehneGekippt ? 'Du hast die Bühne gekippt. Für Noah.' : 'Ben ist geblieben. Sofort.' },
     { sy: '🤖', t: 'Das KI-Video von Mme Tidderich.', dein: m.videoGebremst ? 'Du hast nicht geteilt.' : m.falleEhrlich ? 'Ihr habt eine ehrliche Falle gestellt.' : 'Und dann schnappte die Falle zu.' },
     { sy: '🎒', t: 'Dario an der Haltestelle.', dein: m.darioBegleiten ? 'Du bist mit zu Herrn Kuedes gegangen.' : 'Du hast zugehört.' },
   ],
@@ -102,7 +102,7 @@ const RUECKEN = (m) => ({
       { t: 'Du bist cool.', antwort: 'Bin ich nicht. Aber ich arbeite dran.' } ] },
   ],
   bekommen: [
-    { wer: F.noah, t: m.noahGerettet ? 'Du hast mir am ersten Tag geholfen. Nie vergessen.' : 'Du redest mit mir. Auch wenn andere gucken.' },
+    { wer: F.noah, t: m.mobbingGemeldet ? 'Du bist mit mir zu Herrn Kuedes. Zusammen.' : m.noahGerettet ? 'Du hast mir am ersten Tag geholfen. Nie vergessen.' : 'Du redest mit mir. Auch wenn andere gucken.' },
     { wer: F.mila, t: m.milaGestoppt || m.stoppKlar ? 'Du sagst Stopp. Laut genug. Das können wenige.' : 'Du stellst echte Fragen.' },
     { wer: F.ben, t: 'Lieblings-Mensch für Pausen. Platz zwei: Kekse.' },
     { wer: F.jo, t: m.joFrei || m.joIchBotschaft ? 'Du hast mir nie Druck gemacht. Auch nicht, als du durftest.' : 'Du bist okay. Das heißt bei mir viel.' },
@@ -141,8 +141,8 @@ export const GESPRAECHE_N10 = {
         achterbahn: { staerke: 'lesen', merke: 'kurveAchterbahn', dann: [['kaya', 'Ganz unten und ganz oben. Beides war echt.']] },
         ruhig: { merke: 'kurveRuhig', dann: [['kaya', 'Eine ruhigere Kurve. Auch das ist ein Jahr.']] },
       } },
-    ['ben', 'Meine Kurve sieht aus wie ein Basketball-Feld. Von oben.'],
-    ['jo', 'Das ist nicht mal eine Kurve, Ben. Das ist ein Kreis.'],
+    ['ben', 'Meine Kurve: vor Tests unten. Bei Nuggets oben.'],
+    ['jo', 'Digga, das ist keine Kurve. Das ist ein Motorschaden.'],
     ['kaya', 'Und jetzt: ein Brief. An dich. In einem Jahr.'],
     ['kaya', 'Ich hebe ihn auf. Versprochen. Ich lese ihn nicht.'],
     { szene: 'brief', id: 'brief', def: (m, S) => BRIEF(S), ausgang: () => 'ok', folgen: { ok: { merke: 'briefGeschrieben' } } },
@@ -164,30 +164,34 @@ export const GESPRAECHE_N10 = {
     { wahl: [
       { t: '„Nein. Nur fragen, wie’s dir geht.“', staerke: 'kontakt', herz: { luca: 1 }, merke: 'lucaGefragt', dann: [
         ['luca', 'Mies. Handy weg bis zu den Ferien. Gespräche mit allen.'],
-        ['luca', 'Und alle gucken mich an. So wie ich euch angeguckt hab.'],
+        ['luca', 'Jetzt bin ich der Content. Lowkey verdient.'],
         { tu: 'n10_lucaMehr' } ] },
       { t: '(Weitergehen. Du musst nicht mit ihm reden.)', staerke: 'klar', merke: 'lucaAbstand', dann: [
-        ['erzaehler', 'Du gehst weiter. Abstand halten ist auch eine Antwort.'] ] },
+        ['erzaehler', 'Luca guckt dir nach. Er sagt nichts.'] ] },
     ] },
   ],
   n10_festStart: [
     ['erzaehler', 'Freitag. Sommerfest. Lampions über dem Hof. Ben verkauft Kekse.'],
     ['ben', 'Ein Euro. Für Freunde zwei. Weil Freunde mehr essen.'],
+    ['erzaehler', 'Luca steht bei Frau Kremer am Grill. Ohne Handy.'],
+    ['luca', '(probiert) Zu wenig Salz.'],
+    ['kenan', 'Bewerbung Nummer sechs. Null Kommafehler. Fast.'],
   ],
   n10_fest: [
     ['dario', 'Meine Hände zittern. Mein Kopf ist komplett weg.'],
     { wahl: [
       { t: '„Fünf Sachen, die du siehst. Sag sie laut.“', staerke: 'ruhig', herz: { dario: 1 }, dann: [
-        ['dario', 'Die Bühne. Die Lampions. Ben. Kekse. … Dein Gesicht.'],
+        ['dario', 'Die Lampions. Der Grill. Ben. Kekse. … Dein Gesicht.'],
         ['dario', 'Okay. Ich bin hier. Ich bin hier.'] ] },
       { t: '„Atmen. Mit mir. Vier rein, vier raus.“', staerke: 'ruhig', herz: { dario: 1 }, dann: [['dario', '(atmet mit dir) … Besser. Ein bisschen.']] },
       { t: '„Du schaffst das.“', dann: [['dario', 'Sagt man so. … Okay.']] },
     ] },
-    ['erzaehler', 'Dario steigt auf die Bühne. Das Mikro pfeift. Alle drehen sich um.'],
+    ['kaya', 'Noah und Mila wissen es schon. Sie wollten das so.'],
+    ['erzaehler', 'Am Rand vom Fest. Nur die 7P2, im Kreis. Dario in der Mitte.'],
     ['dario', 'Ähm. Hallo. Ich bin Dario. Das wisst ihr.'],
     ['dario', 'Ich hab @annexe.cam angefangen. Im Herbst.'],
     ['dario', 'Ich wollte dazugehören. Dann ist es mir weggelaufen.'],
-    ['dario', 'Es tut mir leid. Noah. Mila. Mme Tidderich. Allen.'],
+    ['dario', 'Es tut mir leid. {name}. Noah. Mila. Allen.'],
     { tu: 'n10_festDario' },
     ['dario', 'Ab September mach ich einen Foto-Club. Fotos nur mit Fragen vorher.'],
     ['erzaehler', 'Stille. Drei Sekunden. Sehr lange drei Sekunden.'],
@@ -198,9 +202,12 @@ export const GESPRAECHE_N10 = {
     ['mila', 'Noch eine Frage, Dario. Darf ich in den Foto-Club?'],
     ['dario', '(lacht, halb weinend) Du bist Vorsitzende. Sofort.'],
     ['kaya', 'Das war groß, Dario. Wiedergutmachen geht in kleinen Schritten.'],
-    ['hoffmann', 'Ça va? … Ich hab mit Dario gesprochen. Lange.'],
+    ['hoffmann', 'Ça va? … Ich hab mit Luca gesprochen. Lange.'],
     ['hoffmann', 'Das Video ist weg. Und ich bin noch da.'],
+    ['hoffmann', 'Das war … wie sagt ihr … sus?'],
+    ['erzaehler', 'Die Klasse stöhnt. Erleichtert.'],
     { tu: 'n10_festLuca' },
+    ['lina', '(gibt dir ein Heft: „Gerd ermittelt. Fall gelöst.“)'],
     ['rantini', 'Klassenfoto. Teil zwei. Alle rücken zusammen.'],
     ['noah', 'Diesmal frag ich vorher. Darf ich den Arm auf deine Schulter?'],
     { wahl: [
@@ -232,6 +239,7 @@ const ENDEN = {
     ['mila', 'Ich hab eine Liste gemacht. Menschen, denen ich vertraue.'],
     ['mila', 'Du bist Nummer eins. Die Liste ist kurz. Das ist ein Kompliment.'],
     ['mila', '(gibt dir den Würfel) Für die Ferien. Bring ihn gelöst zurück.'],
+    ['mila', 'Neuer Rekord übrigens: 29 Sekunden. Du bist Zeuge.'],
   ],
   ben: [
     ['erzaehler', 'Später. Ben zählt Münzen. Ein Euro. Noch ein Euro.'],
@@ -260,13 +268,12 @@ export const tunN10 = (c) => ({
       { t: '„Dann sag das Noah und Mila. Nicht mir.“', staerke: 'klar', herz: { luca: 1 }, merke: 'lucaSorryNoah', dann: [['luca', 'Morgen. Beim Fest. Wenn ich mich trau.']] },
       { t: '„Schon gut.“', dann: [['luca', 'Ist es nicht. Weiß ich selber.']] },
     ] },
-    ['erzaehler', 'Verzeihen musst du nicht. Fair bleiben kannst du trotzdem.'],
   ],
   n10_festDario: () => (c.S.merke.darioBegleiten
     ? [['dario', 'Und jemand ist mit mir zu Herrn Kuedes gegangen.'], ['dario', 'Ohne {name} würde ich hier nicht stehen.']]
     : [['dario', 'Ich hab lange gebraucht. Aber jetzt sag ich es. Selbst.']]),
   n10_festLuca: () => (c.S.merke.lucaSorryNoah
-    ? [['erzaehler', 'Luca geht zu Noah und Mila. Er guckt auf seine Schuhe.'], ['luca', 'Sorry. Für die Posts. Für alles.'], ['mila', 'Notiert.'], ['noah', '… Okay.']]
+    ? [['erzaehler', 'Luca geht zu Noah und Mila. Er guckt auf seine Schuhe.'], ['luca', 'Sorry. Für die Posts. Für alles.'], ['mila', 'Notiert.'], ['noah', '… Okay.'], ['luca', 'Und {name}: der Admin-Fake. War ich. Ehrenlos.']]
     : [['erzaehler', 'Luca steht am Rand. Er sieht zu. Er sagt nichts.']]),
   n10_ende: () => [
     ...ENDEN[bester(c.S) || 'keiner'],
@@ -275,6 +282,7 @@ export const tunN10 = (c) => ({
       mission: 'In den Ferien: Lies dein Blatt vom Stärken-Rücken. Einmal pro Woche.' }, folgen: {} },
     ['erzaehler', 'Ende der 7ème.'],
     ['ayla', '(Nachricht) nächstes jahr gründen wir eine band. du bist drin. keine widerrede 🎸'],
+    ['ayla', '(Nachricht) bandname: „Kein WLAN“ oder „Gerd und die Zombies“?'],
     { tu: 'kapitelEnde' },
   ],
 });

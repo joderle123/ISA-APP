@@ -203,3 +203,16 @@ Ziel war ≤ 200 Aufrufe und ≤ 400k Dreiecke – überall erreicht. Was es geb
 - **Kapitel 10 „Abschluss“** (M9): Jahres-Kurve aus den eigenen Entscheidungen, Brief an mich (wird für die 6ème
   gespeichert: `S.sz.brief`), Stärken-Rücken, Erden mit fünf Sinnen. Dario sagt es beim Sommerfest selbst; Luca trägt
   Folgen, man darf Abstand halten („Verzeihen musst du nicht“). Vier Enden je nach bester Freundschaft, sonst Lina.
+
+## 19.11. – Qualitätsrunde Jahr 1 (Reihenfolge laut Auftrag: Qualität → alle Fach-Module → 6ème/5ème)
+- Zwei Kritiken (Story, Minispiele) ausgewertet. Story: Man selbst war das erste Opfer von @annexe.cam – Dario und Luca
+  sagen das jetzt; Spuren aus Kapitel 1–5 zahlen sich aus (Winkel, Nummer mit 77); im Finale eine echte Wahl im Chat
+  („LUCA IST ES“ posten, privat schreiben oder zu Herrn Kuedes); Darios Entschuldigung im Klassenkreis statt vor der
+  ganzen Schule (Noah und Mila wollten das so); weniger Erwachsenen-Moral; Running Gags von Ben, Lina, Mila, Ayla, Luca, Kenan.
+- Minispiele: Ton bei Karten, Blasen und Stempel; Vorlesen auch in Spielen (wenn eingeschaltet); große Emoji-Rückmeldung
+  statt kleiner grauer Texte; Countdown startet erst nach der Lesezeit; Druck-Runde: Anker hält die Zeit an;
+  Treppe mit sichtbarer Zeit; Bühne kippen ohne verratene „Stufe“; Feed zeigt die Blickzeit; Sortieren mit Serie und
+  fliegender Karte; Gesund-Würfel mit echten Mini-Aufgaben (tippen, halten, still sein); Check-in in zwei Schritten
+  (Gesicht, dann Wort); Skills-Koffer mit Rot-Test; Warnlicht mit Tank-Anzeigen; Rucksack mit Steinen statt Kilo.
+- Antworten, die eine Stärke zeigen, erscheinen in gemischter Reihenfolge (die gute Antwort war zu oft die erste).
+- Grafik: Kreide-Hüpfspiel, Kreide-Sonne und Fahrradständer auf dem Hof; Farbband in den Gängen; Stempel „knallt“.
