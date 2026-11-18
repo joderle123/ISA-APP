@@ -109,3 +109,25 @@ Bild vom Handy (Kapitel 1, Bingo): Punktraster wirkte wie Schmutz, Knopf zeigte 
 - **Drei Spielstände** auf dem Titelbild (Platz 1 = bisheriger Speicher, nichts geht verloren).
 - Leistung jetzt (high, 1180×820): Dreiecke 123k–281k (Ziel ≤ 400k ✓), Zeichenaufrufe 101–391.
   Davon ist fast die Hälfte die Schattenkarte; ohne Schatten 146–212. Nächster Schritt: Schattenwerfer auf Nahbereich begrenzen.
+
+## Grafik G2: Leistung im Ziel (18.11.2026)
+Gemessen mit `tools/annexe/blickpunkte.mjs` (high, 1180×820), Zeichenaufrufe / Dreiecke:
+
+| Ort | vorher (17.11.) | jetzt |
+|---|---|---|
+| Hof | 954 / 710k | 182 / 251k |
+| Skate | 942 / 709k | 123 / 184k |
+| Bus | 936 / 707k | 100 / 129k |
+| Gang | 965 / 713k | 162 / 212k |
+| Saal | – | 116 / 161k |
+| Kantine | – | 146 / 145k |
+| Werkstatt | – | 80 / 103k |
+| Bibliothek | – | 174 / 199k |
+
+Ziel war ≤ 200 Aufrufe und ≤ 400k Dreiecke – überall erreicht. Was es gebracht hat:
+- **Figuren nur zeichnen, wenn sie im Bild sind** (vorher immer, auch in der Schattenkarte). Großzügige Kugel je Figur.
+- **Figur-Teile zusammengefasst:** Teile mit gleicher Ruhelage werden ein Netz (1–3 statt 4–8 je Person).
+  Jede Zusammenfassung wird nachgeprüft (Stichproben vorher/nachher ≤ 1 cm), sonst bleibt alles einzeln.
+- **Frisuren** sind ein Netz statt bis zu 20 Kugeln.
+- **Schattenbereich** enger um die Kamera (28 m statt 40 m) – weniger Schattenwerfer, schärfere Schatten.
+- Bildrate am echten iPad ist damit noch nicht gemessen (im Test läuft die Grafik in Software).

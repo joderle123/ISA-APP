@@ -2,6 +2,7 @@
 // nicht mit in die Datei zieht). Einfache Formen am Kopfknochen: lang, Bob, Dutt, Zöpfe, Locken, Irokese, Stacheln,
 // Kopftuch, Mütze, Cap, Stirnband.
 import * as THREE from 'three';
+import { mergeGeometries } from 'three/examples/jsm/utils/BufferGeometryUtils.js';
 
 // ---------- Frisuren und Kopfbedeckungen ----------
 // Das Paket hat nur kurze Männerfrisuren. Damit jede Figur ihr eigenes Haar behält (Aussehen der Insel-Figuren:
@@ -79,6 +80,19 @@ export function baueFrisur(look = {}, mat) {
     g.add(form(new THREE.BoxGeometry(0.026, 0.006, 0.006), fb, mat, [0, K.y - 0.008, K.z + 0.106]));
     for (const sx of [-1, 1]) g.add(form(new THREE.BoxGeometry(0.006, 0.006, 0.1), fb, mat, [sx * 0.067, K.y - 0.008, K.z + 0.055]));
   }
-  return g.children.length ? g : null;
+  if (!g.children.length) return null;
+  // Alle Teile zu EINEM Netz zusammenfassen (vorher bis zu 20 Zeichenaufrufe je Frisur, z. B. bei Locken)
+  try {
+    const geos = g.children.map((m) => { m.updateMatrix(); const x = m.geometry.index ? m.geometry.toNonIndexed() : m.geometry.clone(); x.applyMatrix4(m.matrix); return x; });
+    const ein = mergeGeometries(geos);
+    if (ein) {
+      ein.computeBoundingSphere();
+      const m = new THREE.Mesh(ein, mat); m.castShadow = true; m.name = 'frisur-teil';
+      const g2 = new THREE.Group(); g2.name = 'frisur'; g2.userData.deckt = g.userData.deckt; g2.add(m);
+      g.children.forEach((c) => c.geometry.dispose());
+      return g2;
+    }
+  } catch (e) { /* dann eben einzeln */ }
+  return g;
 }
 

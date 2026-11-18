@@ -10,6 +10,7 @@ import { MeshoptDecoder } from 'three/examples/jsm/libs/meshopt_decoder.module.j
 import { clone as skClone } from 'three/examples/jsm/utils/SkeletonUtils.js';
 import { getMaterial } from '../actors/humanoid/base.js';
 import { baueFrisur } from './frisur.js';
+import { mergeGeometries } from 'three/examples/jsm/utils/BufferGeometryUtils.js';
 import menschenBin from './modelle/menschen.glb';   // = respawn/modelle/menschen.glb, mit Meshopt gepackt
 import frauenBin from './modelle/frauen.glb';
 
@@ -73,6 +74,18 @@ export async function ladePerson(veil, { modell = 'menschen', stil = 'Casual', h
   const kasten = new THREE.Box3();
   for (const t of teile) { t.mesh.computeBoundingBox(); kasten.union(t.mesh.boundingBox.clone().applyMatrix4(t.mesh.matrixWorld)); }
   const h = kasten.max.y - kasten.min.y;
+  // Sichtprüfung je Teil: großzügige Kugel um die ganze Figur (Arme, Sitzen, Sprünge passen hinein). Vorher wurden alle
+  // Figuren immer gezeichnet – auch hinter der Kamera und in der Schattenkarte.
+  {
+    const kugel = new THREE.Sphere(); kasten.getBoundingSphere(kugel); kugel.radius *= 1.45;
+    const inv = new THREE.Matrix4(), sk = new THREE.Vector3();
+    for (const t of teile) {
+      inv.copy(t.mesh.matrixWorld).invert(); t.mesh.getWorldScale(sk);
+      const lokal = new THREE.Sphere(kugel.center.clone().applyMatrix4(inv), kugel.radius / Math.max(sk.x, sk.y, sk.z, 1e-6));
+      if (t.mesh.isSkinnedMesh) t.mesh.boundingSphere = lokal; else t.mesh.geometry.boundingSphere = lokal;
+      t.mesh.frustumCulled = true;
+    }
+  }
   if (h > 0.1) group.scale.multiplyScalar(hoehe / h);
   const huelle = new THREE.Group(); huelle.add(group);
   // Frisur und Kopfbedeckung (wie RESPAWN): an den Kopfknochen, in Ruhelage ausgerichtet; deckt sie den Kopf, fällt das kurze Haar weg
@@ -89,6 +102,57 @@ export async function ladePerson(veil, { modell = 'menschen', stil = 'Casual', h
       if (fr.userData.deckt) for (const t of teile) if (t.bau.teil === 'Head' && /^Hair/.test(t.name)) t.mesh.visible = false;
     }
   }
+  // Teile mit gleicher Ruhelage (gleiche inverseBindMatrices) zu EINEM Netz zusammenfassen (gleiches Material):
+  // statt 4–8 nur noch 1–3 Zeichenaufrufe je Figur. Jede Gruppe wird nachgeprüft (Stichproben vorher/nachher).
+  try {
+    const sicht = teile.filter((t) => t.mesh.visible && t.mesh.isSkinnedMesh && !Object.keys(t.mesh.geometry.morphAttributes || {}).length);
+    const gleich = (a, b) => a.elements.every((v, i) => Math.abs(v - b.elements[i]) < 1e-4 * Math.max(1, Math.abs(v)));
+    const gruppen = [];
+    for (const t of sicht) {
+      let g = null;
+      for (const gr of gruppen) {
+        const idx = gr.idx, ib = gr.leit.mesh.skeleton.boneInverses;
+        if (t.mesh.skeleton.bones.every((b, k) => idx.has(b) && gleich(ib[idx.get(b)], t.mesh.skeleton.boneInverses[k])) && gleich(gr.leit.mesh.bindMatrix, t.mesh.bindMatrix)) { g = gr; break; }
+      }
+      if (g) g.teile.push(t); else gruppen.push({ leit: t, idx: new Map(t.mesh.skeleton.bones.map((b, k) => [b, k])), teile: [t] });
+    }
+    const NAMEN = ['position', 'normal', 'skinIndex', 'skinWeight', 'color', 'aWind'];
+    const va = new THREE.Vector3(), vb = new THREE.Vector3();
+    for (const gr of gruppen) {
+      if (gr.teile.length < 2) continue;
+      const geos = gr.teile.map((t) => {
+        const g = t.mesh.geometry.index ? t.mesh.geometry.toNonIndexed() : t.mesh.geometry.clone();
+        for (const k of Object.keys(g.attributes)) if (!NAMEN.includes(k)) g.deleteAttribute(k);
+        if (!NAMEN.every((k) => g.attributes[k])) throw new Error('attr');
+        const karte = t.mesh.skeleton.bones.map((b) => gr.idx.get(b));
+        const si = g.attributes.skinIndex, neuIdx = new Uint16Array(si.count * 4);
+        for (let i = 0; i < si.count; i++) for (let j = 0; j < 4; j++) neuIdx[i * 4 + j] = karte[si.getComponent(i, j)];
+        g.setAttribute('skinIndex', new THREE.BufferAttribute(neuIdx, 4));
+        return g;
+      });
+      const ein = mergeGeometries(geos); geos.forEach((g) => g.dispose());
+      if (!ein) continue;
+      const leit = gr.leit.mesh, m = new THREE.SkinnedMesh(ein, mat);
+      m.name = 'figur'; m.castShadow = true; m.receiveShadow = false;
+      leit.parent.add(m); m.position.copy(leit.position); m.quaternion.copy(leit.quaternion); m.scale.copy(leit.scale);
+      m.bind(leit.skeleton, leit.bindMatrix.clone());
+      huelle.updateMatrixWorld(true);
+      let off = 0, fehler = 0;
+      for (const t of gr.teile) {
+        const ix = t.mesh.geometry.index, nn = ix ? ix.count : t.mesh.geometry.attributes.position.count;
+        for (let k = 0; k < nn; k += Math.max(1, Math.floor(nn / 30))) {
+          t.mesh.getVertexPosition(ix ? ix.getX(k) : k, va).applyMatrix4(t.mesh.matrixWorld);
+          m.getVertexPosition(off + k, vb).applyMatrix4(m.matrixWorld);
+          fehler = Math.max(fehler, va.distanceTo(vb));
+        }
+        off += nn;
+      }
+      if (fehler > 0.01) { m.parent.remove(m); ein.dispose(); continue; }
+      ein.computeBoundingSphere(); m.boundingSphere = ein.boundingSphere.clone(); m.boundingSphere.radius *= 1.6;
+      m.frustumCulled = true;
+      for (const t of gr.teile) { t.mesh.parent.remove(t.mesh); t.mesh.geometry.dispose(); }
+    }
+  } catch (e) { /* dann bleiben die Teile einzeln */ }
   const mixer = new THREE.AnimationMixer(group);
   const aktionen = {};
   for (const clip of gltf.animations) aktionen[clip.name] = mixer.clipAction(clip);

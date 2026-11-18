@@ -66,7 +66,7 @@ Vorher-Bilder und Messwerte: `annexe/bilder/vorher-*` (17.11.2026, q=high, 1180�
 - [x] **G0 Bestandsaufnahme** – Modelle gesichtet (Quaternius Men/Women, Kenney-Auswahl, Quaternius-Requisiten), KayKit geladen (CC0),
       Quaternius UBC/UAL/Nature und Kenney/Poly Pizza nicht erreichbar (Liste in LIZENZEN.md), Vorher-Bilder, Messwerte
 - [x] **G1 Look-Probe** – A Comic, B Skizzenbuch, C Weich als ein Bild (`annexe/bilder/look-vergleich.jpg`) → vorläufig **A Comic, leichter** (siehe ENTSCHEIDUNGEN)
-- [ ] **G2 Fundament** – Material-System (ein Toon-Material + Palette für alle Modelle), Palette 12–16 Farben, Licht/Tageszeiten, Schatten ≤ 2048 eng um die Kamera, Himmel, Nachbearbeitung in einem Durchgang, Qualitätsstufen
+- [~] **G2 Fundament** – Leistung im Ziel (≤200 Aufrufe, ≤400k Dreiecke, Schatten ≤2048); offen: Material-Palette, Stimmungen, Debug-Regler – Material-System (ein Toon-Material + Palette für alle Modelle), Palette 12–16 Farben, Licht/Tageszeiten, Schatten ≤ 2048 eng um die Kamera, Himmel, Nachbearbeitung in einem Durchgang, Qualitätsstufen
 - [ ] **G3 Figuren** – Probe Mila/Kenan/Frau Kremer (Halt), dann alle; Baukasten für Skins, Gesichter, Bewegung, Sport-Posen
 - [ ] **G4 Welt** – Hof, Skate-Ecke, Bushaltestelle, Gänge, Saal, Kantine, Werkstatt, Bibliothek, Büro (Postkarten-Test)
 - [ ] **G5 Effekte, Kamera, Oberfläche**

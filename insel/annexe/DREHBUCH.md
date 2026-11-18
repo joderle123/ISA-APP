@@ -1,6 +1,6 @@
 # Annexe Junglinster – Drehbuch
 
-Erzeugt mit `node tools/annexe/drehbuch.mjs` am 2026-11-17. Nicht von Hand ändern: Texte stehen in `src/lycee/*.js`.
+Erzeugt mit `node tools/annexe/drehbuch.mjs` am 2026-11-18. Nicht von Hand ändern: Texte stehen in `src/lycee/*.js`.
 Format: **[Sprecher]** Text · Antworten als „→“. Zeilennummer in Klammern.
 
 ## geschichte.js
@@ -246,16 +246,16 @@ Format: **[Sprecher]** Text · Antworten als „→“. Zeilennummer in Klammern
 
 ### di_intro
 
-- **[Erzähler]** Dienstag. Erste Stunde: Sport. <sub>(72)</sub>
-- **[Erzähler]** Du öffnest deine Tasche. Die Turnschuhe … liegen zu Hause. <sub>(73)</sub>
+- **[Erzähler]** Dienstag, 7:58. Erste Stunde: Sport. <sub>(72)</sub>
+- **[Erzähler]** Tasche auf. Die Turnschuhe stehen zu Hause. Schön ordentlich. <sub>(73)</sub>
 
 ### sommer1
 
-- **[Sommer]** Allez! Alle umgezogen? … {name}, Schuhe? <sub>(76)</sub>
+- **[Sommer]** (pfeift) Allez! Umziehen war vor zwei Minuten. {name}? Schuhe? <sub>(76)</sub>
 - → „Vergessen. Sorry.“ <sub>(78)</sub>
 - **[Sommer]** Fundkiste. Neben der Tür. <sub>(79)</sub>
 - **[Erzähler]** Ein Paar passt halb. Pink. Riecht nach Keller. <sub>(80)</sub>
-- **[Jo]** Schicke Schuhe, {name}. <sub>(81)</sub>
+- **[Jo]** Pink. Wie ein Tuning-Unfall. Steht dir, {name}. <sub>(81)</sub>
 - **[Erzähler]** Ben lacht. Yusuf nicht. <sub>(82)</sub>
 - → „Mir ist schlecht.“ <sub>(83)</sub>
 - **[Sommer]** (schaut dich lange an) … Bank. <sub>(84)</sub>
@@ -301,8 +301,8 @@ Format: **[Sprecher]** Text · Antworten als „→“. Zeilennummer in Klammern
 
 ### mi_intro
 
-- **[Erzähler]** Mittwoch. In der Pause musst du noch Mathe machen. <sub>(128)</sub>
-- **[Erzähler]** Brüche. Du verstehst die Aufgabe nicht. <sub>(129)</sub>
+- **[Erzähler]** Mittwoch. Mathe-Hausaufgabe. Fällig in 20 Minuten. <sub>(128)</sub>
+- **[Erzähler]** Brüche. Du liest Aufgabe 2 dreimal. Sie wird nicht besser. <sub>(129)</sub>
 
 ### mathe
 
@@ -334,7 +334,7 @@ Format: **[Sprecher]** Text · Antworten als „→“. Zeilennummer in Klammern
 - → Schulgarten-AG <sub>(159)</sub>
 - **[Erzähler]** Auf der Liste steht schon ein Name: Mila. <sub>(160)</sub>
 - **[Erzähler]** Du schreibst deinen Namen darunter. <sub>(160)</sub>
-- **[Erzähler]** Kein Problem. Die Zettel hängen noch bis Oktober. <sub>(161)</sub>
+- **[Erzähler]** Die Zettel hängen bis Oktober. Einer hängt seit 2019. <sub>(161)</sub>
 - → Erst mal keine. <sub>(161)</sub>
 
 ### chat
@@ -422,7 +422,7 @@ Format: **[Sprecher]** Text · Antworten als „→“. Zeilennummer in Klammern
 
 ### test
 
-- **[Hoffmann]** Handys weg. 30 Minuten. Ich schau nicht weg. <sub>(260)</sub>
+- **[Hoffmann]** Neue Methode: ein Test. Kennt ihr schon. Handys weg. <sub>(260)</sub>
 - **[Erzähler]** Deine Hände sind kalt. Aufgabe 3: Brüche. <sub>(261)</sub>
 - **[Erzähler]** Chiaras Blatt liegt offen. Sie ist schon bei Aufgabe 4. <sub>(262)</sub>
 - **[Erzähler]** An der Decke klebt ein Kaugummi. Seit Jahren, schätzt du. <sub>(264)</sub>
@@ -472,8 +472,8 @@ Format: **[Sprecher]** Text · Antworten als „→“. Zeilennummer in Klammern
 ### woche
 
 - **[Erzähler]** Freitag, 15:30 Uhr. Die erste Woche ist geschafft. <sub>(309)</sub>
-- **[Noah]** Samstag Fußball am Bolzplatz. Um zwei. Kommst du? <sub>(310)</sub>
-- **[Ayla]** Samstag um zwei probt meine Band. Kommst du zuhören? <sub>(311)</sub>
+- **[Noah]** Kurze Frage. Samstag, zwei Uhr, Bolzplatz. Fußball. Du? <sub>(310)</sub>
+- **[Ayla]** Samstag um zwei: Bandprobe. Du darfst zuhören. Und Kabel tragen. <sub>(311)</sub>
 - **[Ayla]** Ah. Okay. Nächstes Mal. <sub>(313)</sub>
 - → „Noah. Fußball.“ <sub>(313)</sub>
 - **[Noah]** Klar. Band ist cooler. Schon gut. <sub>(314)</sub>
@@ -524,7 +524,7 @@ Format: **[Sprecher]** Text · Antworten als „→“. Zeilennummer in Klammern
 ### spaet
 
 - **[Erzähler]** Du klopfst. Alle schauen. Noah steht hinter dir. <sub>(77)</sub>
-- **[Hoffmann]** Heute ist Schnuppertag. Gleich in der Werkstatt, bei Meister Becker. <sub>(79)</sub>
+- **[Hoffmann]** Neue Methode: Schnuppertag! Werkstatt, bei Meister Becker. Viel Glück. <sub>(79)</sub>
 
 ### regeln
 
@@ -543,7 +543,7 @@ Format: **[Sprecher]** Text · Antworten als „→“. Zeilennummer in Klammern
 - **[Jo]** Extrawurst. <sub>(94)</sub>
 - → (Handy nicht in die Kiste. In die Tasche.) <sub>(95)</sub>
 - **[Erzähler]** Keiner merkt es. Es vibriert zweimal. <sub>(96)</sub>
-- **[Kenan]** (grinst) Er ist streng. Und er sieht alles. <sub>(98)</sub>
+- **[Kenan]** (flüstert) Der sieht alles. Sogar Gedanken, glaub ich. <sub>(98)</sub>
 
 ### saegen
 
@@ -552,7 +552,7 @@ Format: **[Sprecher]** Text · Antworten als „→“. Zeilennummer in Klammern
 ### kenanTeam
 
 - **[Becker]** Jetzt ein kleines Regal. Immer zu zweit. {name}, du mit Kenan. <sub>(106)</sub>
-- **[Kenan]** Okay. Kannst du schrauben? <sub>(107)</sub>
+- **[Kenan]** (nimmt den Bleistift hinterm Ohr) Okay. Kannst du schrauben? <sub>(107)</sub>
 - **[Kenan]** Klar. Erst vorbohren, dann schrauben. Schau. <sub>(109)</sub>
 - **[Erzähler]** Kenan zeigt es dir. Beim dritten Mal kannst du es. <sub>(109)</sub>
 - → Nicht so gut. Zeigst du es mir? <sub>(109)</sub>
@@ -563,7 +563,7 @@ Format: **[Sprecher]** Text · Antworten als „→“. Zeilennummer in Klammern
 - **[Erzähler]** Kenan schraubt. Du hältst. Es geht schnell. <sub>(111)</sub>
 - → Mach du. Ich halte. <sub>(111)</sub>
 - **[Erzähler]** Nach einer halben Stunde steht das Regal. <sub>(113)</sub>
-- **[Kenan]** Nicht schlecht für den ersten Tag. <sub>(115)</sub>
+- **[Kenan]** Wackelt kaum. Für den ersten Tag: ein Kunstwerk. <sub>(115)</sub>
 
 ### feedback
 
@@ -709,7 +709,7 @@ Format: **[Sprecher]** Text · Antworten als „→“. Zeilennummer in Klammern
 - **[Erzähler]** Er pustet dir eine Wolke ins Gesicht. <sub>(128)</sub>
 - → Einmal ziehen. Nicht husten. <sub>(129)</sub>
 - **[Erzähler]** Süß. Dann kratzt es. Du hustest nicht. Fast. <sub>(130)</sub>
-- **[Luca]** Respekt. Die meisten husten. <sub>(131)</sub>
+- **[Luca]** Oha. Die meisten husten. <sub>(131)</sub>
 - → „Ich hab Asthma.“ (Stimmt nicht.) <sub>(132)</sub>
 - **[Luca]** Ah. Okay. Sorry. <sub>(133)</sub>
 - → (Handy raus. Tun, als ob du schreibst.) <sub>(134)</sub>
@@ -834,8 +834,8 @@ Format: **[Sprecher]** Text · Antworten als „→“. Zeilennummer in Klammern
 - **[Hoffmann]** {name}? Was nimmst du dir vor? Kein Weltfrieden. <sub>(268)</sub>
 - **[Hoffmann]** Notiert. Ich frag Freitag nach. <sub>(270)</sub>
 - → Einmal im Unterricht etwas fragen. <sub>(270)</sub>
-- **[Hoffmann]** Notiert. Lina sitzt übrigens immer am Fenster. <sub>(271)</sub>
-- → Jemanden ansprechen, der allein ist. <sub>(271)</sub>
+- **[Hoffmann]** Notiert. Mutig. Sie zählt jede Portion. <sub>(271)</sub>
+- → Frau Kremer nach Nachschlag fragen. <sub>(271)</sub>
 - **[Hoffmann]** Der 7:35 wartet nicht. Frau Weber auch nicht. <sub>(272)</sub>
 - → Jeden Tag pünktlich am Bus sein. <sub>(272)</sub>
 - **[Hoffmann]** Mme Laurent freut sich. <sub>(273)</sub>
@@ -1646,7 +1646,7 @@ Format: **[Sprecher]** Text · Antworten als „→“. Zeilennummer in Klammern
 - → Weil die Halle so laut ist. <sub>(395)</sub>
 - **[Sommer]** (pfeift direkt neben dir) Jetzt nicht mehr, oder? <sub>(396)</sub>
 - → Ist mir egal. <sub>(396)</sub>
-- **[Sommer]** Ich weiß, nicht jeder mag Sport. Nicht jeder mag Sport. Ich mag keine Zahlen. Quitt. <sub>(400)</sub>
+- **[Sommer]** Nicht jeder mag Sport. Ich mag keine Zahlen. Quitt. <sub>(400)</sub>
 - **[Sommer]** Deal: Du gibst Sport eine Chance. Ich gebe Mathe eine. <sub>(401)</sub>
 - **[Sommer]** (überlegt lange) … Sechsundfünfzig. Siehst du? Ich liefere. <sub>(403)</sub>
 - → Deal. Sie zuerst: sieben mal acht? <sub>(403)</sub>
@@ -1782,747 +1782,748 @@ Format: **[Sprecher]** Text · Antworten als „→“. Zeilennummer in Klammern
 
 ### zuSpaet
 
-- **[Hoffmann]** Zehn Minuten. Am ersten Tag. Rekord. <sub>(399)</sub>
-- **[Jo]** (halblaut) Starker Auftritt. <sub>(399)</sub>
-- **[Hoffmann]** Gerade noch. Setz dich. Schnell. <sub>(400)</sub>
-- **[Hoffmann]** Zeig mal deinen Plan … das ist die 7P1. <sub>(401)</sub>
-- **[Jo]** Falsche Klasse. Tür ist da hinten. <sub>(401)</sub>
-- **[Erzähler]** Gelächter. Hoffmann gibt dir seine Kopie. Mit Kaffeefleck. <sub>(401)</sub>
+- **[Hoffmann]** Zehn Minuten. Am ersten Tag. Rekord. <sub>(402)</sub>
+- **[Jo]** (halblaut) Starker Auftritt. <sub>(402)</sub>
+- **[Hoffmann]** Gerade noch. Setz dich. Schnell. <sub>(403)</sub>
+- **[Hoffmann]** Zeig mal deinen Plan … das ist die 7P1. <sub>(404)</sub>
+- **[Jo]** Falsche Klasse. Tür ist da hinten. <sub>(404)</sub>
+- **[Erzähler]** Gelächter. Hoffmann gibt dir seine Kopie. Mit Kaffeefleck. <sub>(404)</sub>
 
 ### freiwurf
 
-- **[Ben]** Okay, du zahlst trotzdem nicht. <sub>(409)</sub>
-- **[Yusuf]** Zwei. <sub>(410)</sub>
-- **[Yusuf]** Ist er nicht. <sub>(411)</sub>
+- **[Ben]** Okay, du zahlst trotzdem nicht. <sub>(412)</sub>
+- **[Yusuf]** Zwei. <sub>(413)</sub>
+- **[Yusuf]** Ist er nicht. <sub>(414)</sub>
 
 ### plakatEnde
 
-- **[Hoffmann]** (zu dir, trocken) Schräg. Aber pünktlich fertig. <sub>(427)</sub>
+- **[Hoffmann]** (zu dir, trocken) Schräg. Aber pünktlich fertig. <sub>(430)</sub>
 
 ### plakatEndeKern
 
-- **[Hoffmann]** Orte, wo einen keiner nervt. Gut. Von wem? <sub>(432)</sub>
-- **[Hoffmann]** Stark, {name}. <sub>(434)</sub>
-- **[Erzähler]** Lina guckt aus dem Fenster. Sehr lange. <sub>(434)</sub>
-- → „Von mir.“ <sub>(434)</sub>
-- **[Jo]** Hä? Du hast doch gesagt … <sub>(435)</sub>
-- **[Hoffmann]** Aha. Dann: gut, Lina. <sub>(435)</sub>
-- **[Erzähler]** Unter dem Tisch: ein Zettel. Ein gezeichneter Daumen. <sub>(435)</sub>
-- → „Eigentlich von Lina.“ <sub>(435)</sub>
-- **[Hoffmann]** Orte ohne Nerverei. Wessen Idee? <sub>(437)</sub>
-- **[Jo]** Linas. Das Gebäude ist von mir. Und der Drache. <sub>(437)</sub>
-- **[Hoffmann]** Schönes Gebäude. Und ihr zwei? <sub>(438)</sub>
-- **[Jo]** Ausgemalt. Und {name} war am Handy. <sub>(438)</sub>
-- **[Hoffmann]** {name}. Handy. Mein Pult. Bis 16 Uhr. <sub>(438)</sub>
-- **[Weber]** (durch die Tür) 16 Uhr. Nicht 16:05. <sub>(438)</sub>
-- **[Hoffmann]** Schönes Gebäude, Jo. Warum hat es einen Drachen? <sub>(439)</sub>
-- **[Jo]** Weil es geht. <sub>(439)</sub>
-- **[Lina]** (ganz leise) … ausgemalt. <sub>(439)</sub>
+- **[Hoffmann]** Orte, wo einen keiner nervt. Gut. Von wem? <sub>(435)</sub>
+- **[Hoffmann]** Stark, {name}. <sub>(437)</sub>
+- **[Erzähler]** Lina guckt aus dem Fenster. Sehr lange. <sub>(437)</sub>
+- → „Von mir.“ <sub>(437)</sub>
+- **[Jo]** Hä? Du hast doch gesagt … <sub>(438)</sub>
+- **[Hoffmann]** Aha. Dann: gut, Lina. <sub>(438)</sub>
+- **[Erzähler]** Unter dem Tisch: ein Zettel. Ein gezeichneter Daumen. <sub>(438)</sub>
+- → „Eigentlich von Lina.“ <sub>(438)</sub>
+- **[Hoffmann]** Orte ohne Nerverei. Wessen Idee? <sub>(440)</sub>
+- **[Jo]** Linas. Das Gebäude ist von mir. Und der Drache. <sub>(440)</sub>
+- **[Hoffmann]** Schönes Gebäude. Und ihr zwei? <sub>(441)</sub>
+- **[Jo]** Ausgemalt. Und {name} war am Handy. <sub>(441)</sub>
+- **[Hoffmann]** {name}. Handy. Mein Pult. Bis 16 Uhr. <sub>(441)</sub>
+- **[Weber]** (durch die Tür) 16 Uhr. Nicht 16:05. <sub>(441)</sub>
+- **[Hoffmann]** Schönes Gebäude, Jo. Warum hat es einen Drachen? <sub>(442)</sub>
+- **[Jo]** Weil es geht. <sub>(442)</sub>
+- **[Lina]** (ganz leise) … ausgemalt. <sub>(442)</sub>
 
 ### noahTisch
 
-- **[Noah]** Hier! Platz frei gehalten. Mit meiner Jacke. <sub>(444)</sub>
-- **[Ayla]** Seit zehn Minuten. Er hat Ben weggeschickt. <sub>(444)</sub>
-- **[Noah]** (zu Ayla) Das ist die Person mit dem Prospekt. <sub>(445)</sub>
-- **[Ayla]** (guckt Noah an. Lacht.) Stimmt aber. <sub>(445)</sub>
-- **[Noah]** Oh. Ohne Kopfhörer. Du kannst also hören. <sub>(446)</sub>
-- **[Noah]** Hey! Setz dich. Der Stuhl wackelt. Alle wackeln. <sub>(447)</sub>
+- **[Noah]** Hier! Platz frei gehalten. Mit meiner Jacke. <sub>(447)</sub>
+- **[Ayla]** Seit zehn Minuten. Er hat Ben weggeschickt. <sub>(447)</sub>
+- **[Noah]** (zu Ayla) Das ist die Person mit dem Prospekt. <sub>(448)</sub>
+- **[Ayla]** (guckt Noah an. Lacht.) Stimmt aber. <sub>(448)</sub>
+- **[Noah]** Oh. Ohne Kopfhörer. Du kannst also hören. <sub>(449)</sub>
+- **[Noah]** Hey! Setz dich. Der Stuhl wackelt. Alle wackeln. <sub>(450)</sub>
 
 ### aylaTisch
 
-- → „Ja. Und du spielst Bass.“ <sub>(450)</sub>
-- **[Ayla]** Du hast zugehört? Wow. Ich hab eine Band. <sub>(451)</sub>
-- **[Ayla]** Wir haben noch keinen Namen. Und keinen Proberaum. <sub>(451)</sub>
-- **[Erzähler]** Sie erzählt. Die ganze Pause. Noah gähnt. <sub>(451)</sub>
-- → „Ja. Hoffmann ist schräg, oder?“ <sub>(452)</sub>
-- **[Ayla]** (lacht) Total. „Neue Methode!“ <sub>(453)</sub>
-- **[Noah]** (wird blass) Er steht hinter dir. <sub>(453)</sub>
-- **[Hoffmann]** (mit Tablett) Guten Appetit. Schräg grüßt. <sub>(453)</sub>
-- **[Erzähler]** Ayla redet mit Noah weiter. Du isst. Das Curry ist okay. <sub>(454)</sub>
-- → (Nicken. Essen.) <sub>(454)</sub>
+- → „Ja. Und du spielst Bass.“ <sub>(453)</sub>
+- **[Ayla]** Du hast zugehört? Wow. Ich hab eine Band. <sub>(454)</sub>
+- **[Ayla]** Wir haben noch keinen Namen. Und keinen Proberaum. <sub>(454)</sub>
+- **[Erzähler]** Sie erzählt. Die ganze Pause. Noah gähnt. <sub>(454)</sub>
+- → „Ja. Hoffmann ist schräg, oder?“ <sub>(455)</sub>
+- **[Ayla]** (lacht) Total. „Neue Methode!“ <sub>(456)</sub>
+- **[Noah]** (wird blass) Er steht hinter dir. <sub>(456)</sub>
+- **[Hoffmann]** (mit Tablett) Guten Appetit. Schräg grüßt. <sub>(456)</sub>
+- **[Erzähler]** Ayla redet mit Noah weiter. Du isst. Das Curry ist okay. <sub>(457)</sub>
+- → (Nicken. Essen.) <sub>(457)</sub>
 
 ### samstag
 
-- **[Noah]** Samstag. Wir haben bis halb drei gewartet. <sub>(458)</sub>
-- **[Noah]** Ayla sagt, bei ihr warst du auch nicht. <sub>(458)</sub>
-- **[Noah]** Hättest schreiben können. <sub>(460)</sub>
-- → „Hab’s nicht geschafft. Sorry.“ <sub>(460)</sub>
-- **[Noah]** Hm. Okay. <sub>(461)</sub>
-- → „Mir ist was dazwischengekommen.“ <sub>(461)</sub>
-- **[Noah]** … Ja. Okay. <sub>(462)</sub>
-- → (Schulterzucken.) <sub>(462)</sub>
-- **[Noah]** Die vom Bolzplatz fragen, ob du wieder kommst. <sub>(464)</sub>
-- **[Noah]** Und? Die Band? <sub>(465)</sub>
-- **[Erzähler]** Drei Leute. Zwei Lieder. Eins davon zweimal. <sub>(465)</sub>
+- **[Noah]** Samstag. Wir haben bis halb drei gewartet. <sub>(461)</sub>
+- **[Noah]** Ayla sagt, bei ihr warst du auch nicht. <sub>(461)</sub>
+- **[Noah]** Hättest schreiben können. <sub>(463)</sub>
+- → „Hab’s nicht geschafft. Sorry.“ <sub>(463)</sub>
+- **[Noah]** Hm. Okay. <sub>(464)</sub>
+- → „Mir ist was dazwischengekommen.“ <sub>(464)</sub>
+- **[Noah]** … Ja. Okay. <sub>(465)</sub>
+- → (Schulterzucken.) <sub>(465)</sub>
+- **[Noah]** Die vom Bolzplatz fragen, ob du wieder kommst. <sub>(467)</sub>
+- **[Noah]** Und? Die Band? <sub>(468)</sub>
+- **[Erzähler]** Drei Leute. Zwei Lieder. Eins davon zweimal. <sub>(468)</sub>
 
 ### anruf
 
-- **[Weber]** Annexe Junglinster, Sekretariat. Weber. <sub>(469)</sub>
-- **[Weber]** Mit Noah? Gut. Wann seid ihr da? <sub>(471)</sub>
-- → „Guten Morgen. {name}, 7P2. Bus verpasst.“ <sub>(471)</sub>
-- **[Weber]** Der 7:35? Der ist seit Jahren pünktlich. <sub>(472)</sub>
-- **[Weber]** Aber gut. Wann seid ihr da? <sub>(472)</sub>
-- → „Der Bus war zu früh!“ <sub>(472)</sub>
-- **[Weber]** Wer ist „ich“? Name, Klasse. <sub>(473)</sub>
-- **[Du]** {name}. 7P2. Bus weg. <sub>(473)</sub>
-- **[Weber]** Wann seid ihr da? <sub>(473)</sub>
-- → „Äh … hallo? Ich bin’s.“ <sub>(473)</sub>
-- **[Du]** Halb neun. Mit dem nächsten. <sub>(475)</sub>
-- **[Weber]** Ich sag’s M. Hoffmann. <sub>(476)</sub>
-- **[Noah]** (flüstert) Wie machst du das? <sub>(477)</sub>
+- **[Weber]** Annexe Junglinster, Sekretariat. Weber. <sub>(472)</sub>
+- **[Weber]** Mit Noah? Gut. Wann seid ihr da? <sub>(474)</sub>
+- → „Guten Morgen. {name}, 7P2. Bus verpasst.“ <sub>(474)</sub>
+- **[Weber]** Der 7:35? Der ist seit Jahren pünktlich. <sub>(475)</sub>
+- **[Weber]** Aber gut. Wann seid ihr da? <sub>(475)</sub>
+- → „Der Bus war zu früh!“ <sub>(475)</sub>
+- **[Weber]** Wer ist „ich“? Name, Klasse. <sub>(476)</sub>
+- **[Du]** {name}. 7P2. Bus weg. <sub>(476)</sub>
+- **[Weber]** Wann seid ihr da? <sub>(476)</sub>
+- → „Äh … hallo? Ich bin’s.“ <sub>(476)</sub>
+- **[Du]** Halb neun. Mit dem nächsten. <sub>(478)</sub>
+- **[Weber]** Ich sag’s M. Hoffmann. <sub>(479)</sub>
+- **[Noah]** (flüstert) Wie machst du das? <sub>(480)</sub>
 
 ### spaetFolge
 
-- **[Hoffmann]** Unentschuldigt, ihr zwei. Mme Weber hat zuhause angerufen. <sub>(481)</sub>
-- **[Hoffmann]** Zettel. Unterschrieben. Beide. <sub>(483)</sub>
-- **[Noah]** (leise) Das gibt Ärger. Großen. <sub>(483)</sub>
-- → „Wir haben nicht angerufen. Stimmt.“ <sub>(483)</sub>
-- **[Noah]** Was? Das … <sub>(484)</sub>
-- **[Hoffmann]** Noah: Zettel. {name}: setzen. <sub>(484)</sub>
-- **[Erzähler]** Noah sagt bis Mittag kein Wort. <sub>(484)</sub>
-- → „Noah sollte anrufen.“ <sub>(484)</sub>
-- **[Hoffmann]** Und Noahs auch. Klar. Zettel, beide. <sub>(485)</sub>
-- → „Mein Akku war leer.“ <sub>(485)</sub>
-- **[Hoffmann]** Noah ist entschuldigt. Du stehst nicht auf meinem Zettel. <sub>(487)</sub>
-- **[Noah]** Sorry! Ich war so nervös. <sub>(489)</sub>
-- **[Hoffmann]** Okay. Ich trag dich nach. <sub>(489)</sub>
-- → „Ich war mit Noah. Er hat mich vergessen.“ <sub>(489)</sub>
-- **[Jo]** Jetzt? Live? Bitte, ja. <sub>(490)</sub>
-- **[Hoffmann]** Lass. Ich geh in der Pause zu Weber. <sub>(490)</sub>
-- → „Dann ruf ich jetzt an.“ <sub>(490)</sub>
-- **[Hoffmann]** Dann steht da „unentschuldigt“. <sub>(491)</sub>
-- → (Schulterzucken. Hinsetzen.) <sub>(491)</sub>
-- **[Hoffmann]** Ah, da seid ihr. Mme Weber hat Bescheid gesagt. <sub>(493)</sub>
-- **[Jo]** Guten Morgen, Hoheit. <sub>(493)</sub>
-- **[Jo]** (grinst) Keine Sekunde. <sub>(495)</sub>
-- → „Morgen, Jo. Hast mich vermisst?“ <sub>(495)</sub>
-- **[Erzähler]** Ein paar lachen. Dann ist es vorbei. <sub>(496)</sub>
-- → (Hinsetzen. Nicht hinschauen.) <sub>(496)</sub>
+- **[Hoffmann]** Unentschuldigt, ihr zwei. Mme Weber hat zuhause angerufen. <sub>(484)</sub>
+- **[Hoffmann]** Zettel. Unterschrieben. Beide. <sub>(486)</sub>
+- **[Noah]** (leise) Das gibt Ärger. Großen. <sub>(486)</sub>
+- → „Wir haben nicht angerufen. Stimmt.“ <sub>(486)</sub>
+- **[Noah]** Was? Das … <sub>(487)</sub>
+- **[Hoffmann]** Noah: Zettel. {name}: setzen. <sub>(487)</sub>
+- **[Erzähler]** Noah sagt bis Mittag kein Wort. <sub>(487)</sub>
+- → „Noah sollte anrufen.“ <sub>(487)</sub>
+- **[Hoffmann]** Und Noahs auch. Klar. Zettel, beide. <sub>(488)</sub>
+- → „Mein Akku war leer.“ <sub>(488)</sub>
+- **[Hoffmann]** Noah ist entschuldigt. Du stehst nicht auf meinem Zettel. <sub>(490)</sub>
+- **[Noah]** Sorry! Ich war so nervös. <sub>(492)</sub>
+- **[Hoffmann]** Okay. Ich trag dich nach. <sub>(492)</sub>
+- → „Ich war mit Noah. Er hat mich vergessen.“ <sub>(492)</sub>
+- **[Jo]** Jetzt? Live? Bitte, ja. <sub>(493)</sub>
+- **[Hoffmann]** Lass. Ich geh in der Pause zu Weber. <sub>(493)</sub>
+- → „Dann ruf ich jetzt an.“ <sub>(493)</sub>
+- **[Hoffmann]** Dann steht da „unentschuldigt“. <sub>(494)</sub>
+- → (Schulterzucken. Hinsetzen.) <sub>(494)</sub>
+- **[Hoffmann]** Ah, da seid ihr. Mme Weber hat Bescheid gesagt. <sub>(496)</sub>
+- **[Jo]** Guten Morgen, Hoheit. <sub>(496)</sub>
+- **[Jo]** (grinst) Keine Sekunde. <sub>(498)</sub>
+- → „Morgen, Jo. Hast mich vermisst?“ <sub>(498)</sub>
+- **[Erzähler]** Ein paar lachen. Dann ist es vorbei. <sub>(499)</sub>
+- → (Hinsetzen. Nicht hinschauen.) <sub>(499)</sub>
 
 ### regalWackelt
 
-- **[Erzähler]** Das Regal wackelt. Ein Brett ist kürzer. <sub>(499)</sub>
-- **[Becker]** (misst) Wer hat das auf den Stapel gelegt? <sub>(499)</sub>
-- **[Becker]** Nächstes Mal: Restekiste. Nicht Stapel. <sub>(501)</sub>
-- → „Ich. War zu kurz.“ <sub>(501)</sub>
-- **[Becker]** Kenan? <sub>(502)</sub>
-- **[Kenan]** … Ja. Meins. <sub>(502)</sub>
-- **[Erzähler]** Kenan sagt den Rest der Stunde nichts. <sub>(502)</sub>
-- → (Kenan anschauen.) <sub>(502)</sub>
-- **[Kenan]** (schaut dich an. Sagt nichts.) <sub>(503)</sub>
-- **[Becker]** Dann neu. Zu zweit. <sub>(503)</sub>
-- → „Keine Ahnung.“ <sub>(503)</sub>
-- **[Kenan]** Nicht schlecht für den ersten Tag. <sub>(504)</sub>
+- **[Erzähler]** Das Regal wackelt. Ein Brett ist kürzer. <sub>(502)</sub>
+- **[Becker]** (misst) Wer hat das auf den Stapel gelegt? <sub>(502)</sub>
+- **[Becker]** Nächstes Mal: Restekiste. Nicht Stapel. <sub>(504)</sub>
+- → „Ich. War zu kurz.“ <sub>(504)</sub>
+- **[Becker]** Kenan? <sub>(505)</sub>
+- **[Kenan]** … Ja. Meins. <sub>(505)</sub>
+- **[Erzähler]** Kenan sagt den Rest der Stunde nichts. <sub>(505)</sub>
+- → (Kenan anschauen.) <sub>(505)</sub>
+- **[Kenan]** (schaut dich an. Sagt nichts.) <sub>(506)</sub>
+- **[Becker]** Dann neu. Zu zweit. <sub>(506)</sub>
+- → „Keine Ahnung.“ <sub>(506)</sub>
+- **[Kenan]** Nicht schlecht für den ersten Tag. <sub>(507)</sub>
 
 ### noahSchuld
 
-- **[Noah]** Du schuldest mir was. Wegen dem Zettel. <sub>(505)</sub>
+- **[Noah]** Du schuldest mir was. Wegen dem Zettel. <sub>(508)</sub>
 
 ### torGespraech
 
-- **[Hoffmann]** Montag, Tor. Wir reden noch. <sub>(506)</sub>
+- **[Hoffmann]** Montag, Tor. Wir reden noch. <sub>(509)</sub>
 
 ### k7Platz
 
-- **[Erzähler]** Dein Name: „Werkstatt, M. Becker“. Mit Stern. <sub>(509)</sub>
-- **[Noah]** Wieso hast du schon was? … Ah. Becker. <sub>(509)</sub>
-- **[Erzähler]** Dein Name. Daneben: nichts. „Bitte zum SePAS.“ <sub>(510)</sub>
-- **[Noah]** Bei mir auch. Wir sind die Reste. <sub>(510)</sub>
+- **[Erzähler]** Dein Name: „Werkstatt, M. Becker“. Mit Stern. <sub>(512)</sub>
+- **[Noah]** Wieso hast du schon was? … Ah. Becker. <sub>(512)</sub>
+- **[Erzähler]** Dein Name. Daneben: nichts. „Bitte zum SePAS.“ <sub>(513)</sub>
+- **[Noah]** Bei mir auch. Wir sind die Reste. <sub>(513)</sub>
 
 ### k7Jo
 
-- **[Jo]** Werkstatt? Viel Spaß mit der Taucherbrille. <sub>(513)</sub>
-- **[Jo]** Mein Onkel sucht noch wen. Garage. <sub>(514)</sub>
-- **[Jo]** (schaut dich an) Keinen, der petzt. <sub>(514)</sub>
-- **[Noah]** (leise) Mich hat er auch nicht gefragt. <sub>(514)</sub>
-- **[Jo]** Mein Onkel sucht noch wen. Garage. Reifen schleppen. <sub>(515)</sub>
-- **[Jo]** Sieben Uhr. Bist du zu spät, bin ich dran. <sub>(517)</sub>
-- **[Noah]** (leise) Und ich? <sub>(517)</sub>
-- → „Ernsthaft? Ich komm.“ <sub>(517)</sub>
-- **[Jo]** Noah? Der hebt keinen Reifen. <sub>(518)</sub>
-- **[Noah]** Doch! … Vielleicht. <sub>(518)</sub>
-- **[Jo]** … Okay. Noah. <sub>(518)</sub>
-- → „Frag Noah. Der hat auch nix.“ <sub>(518)</sub>
-- **[Jo]** Dann Kantine. Viel Spaß mit Kremer. <sub>(519)</sub>
-- → „Bei dir? Nee, danke.“ <sub>(519)</sub>
+- **[Jo]** Werkstatt? Viel Spaß mit der Taucherbrille. <sub>(516)</sub>
+- **[Jo]** Mein Onkel sucht noch wen. Garage. <sub>(517)</sub>
+- **[Jo]** (schaut dich an) Keinen, der petzt. <sub>(517)</sub>
+- **[Noah]** (leise) Mich hat er auch nicht gefragt. <sub>(517)</sub>
+- **[Jo]** Mein Onkel sucht noch wen. Garage. Reifen schleppen. <sub>(518)</sub>
+- **[Jo]** Sieben Uhr. Bist du zu spät, bin ich dran. <sub>(520)</sub>
+- **[Noah]** (leise) Und ich? <sub>(520)</sub>
+- → „Ernsthaft? Ich komm.“ <sub>(520)</sub>
+- **[Jo]** Noah? Der hebt keinen Reifen. <sub>(521)</sub>
+- **[Noah]** Doch! … Vielleicht. <sub>(521)</sub>
+- **[Jo]** … Okay. Noah. <sub>(521)</sub>
+- → „Frag Noah. Der hat auch nix.“ <sub>(521)</sub>
+- **[Jo]** Dann Kantine. Viel Spaß mit Kremer. <sub>(522)</sub>
+- → „Bei dir? Nee, danke.“ <sub>(522)</sub>
 
 ### k7Unterschrift
 
-- **[Kaya]** Hoffmann hat mir deinen Zettel gezeigt. Von neulich. <sub>(524)</sub>
-- **[Kaya]** Die Unterschrift sieht aus wie Noahs Schrift. <sub>(524)</sub>
-- **[Erzähler]** Noah, an der Tür, wird ganz still. <sub>(524)</sub>
-- **[Kaya]** Okay. Dann ruf ich kurz zuhause an. Zum Prüfen. <sub>(526)</sub>
-- → „Die ist echt.“ <sub>(526)</sub>
-- **[Kaya]** Danke. Hoffmann muss ich’s sagen. Nur das. <sub>(527)</sub>
-- **[Noah]** (leise) Super. Danke. <sub>(527)</sub>
-- → „Hat Noah gemacht. Ich hab ihn gefragt.“ <sub>(527)</sub>
-- **[Noah]** Was?! <sub>(528)</sub>
-- **[Kaya]** Noah. Bleib mal kurz hier. <sub>(528)</sub>
-- → „Hat Noah gemacht. Ohne mich zu fragen.“ <sub>(528)</sub>
-- **[Kaya]** Okay. Donnerstag ist Elternabend. Ich frag dort. <sub>(529)</sub>
-- → (Schweigen.) <sub>(529)</sub>
-- **[Kaya]** Hoffmann sagt, dein Zettel ist „verloren“. <sub>(531)</sub>
-- **[Kaya]** Der hier geht nicht verloren. Ja? <sub>(531)</sub>
-- **[Kaya]** Wenn unterschreiben zuhause schwer ist: sag nur das. <sub>(532)</sub>
-- **[Kaya]** Warum, musst du nicht sagen. <sub>(532)</sub>
-- **[Kaya]** Okay. <sub>(534)</sub>
-- → „Geht schon. Ich bring’s.“ <sub>(534)</sub>
-- **[Kaya]** Morgens. Notiert. <sub>(535)</sub>
-- → „Rufen Sie an. Morgens ist es ruhig.“ <sub>(535)</sub>
+- **[Kaya]** Hoffmann hat mir deinen Zettel gezeigt. Von neulich. <sub>(527)</sub>
+- **[Kaya]** Die Unterschrift sieht aus wie Noahs Schrift. <sub>(527)</sub>
+- **[Erzähler]** Noah, an der Tür, wird ganz still. <sub>(527)</sub>
+- **[Kaya]** Okay. Dann ruf ich kurz zuhause an. Zum Prüfen. <sub>(529)</sub>
+- → „Die ist echt.“ <sub>(529)</sub>
+- **[Kaya]** Danke. Hoffmann muss ich’s sagen. Nur das. <sub>(530)</sub>
+- **[Noah]** (leise) Super. Danke. <sub>(530)</sub>
+- → „Hat Noah gemacht. Ich hab ihn gefragt.“ <sub>(530)</sub>
+- **[Noah]** Was?! <sub>(531)</sub>
+- **[Kaya]** Noah. Bleib mal kurz hier. <sub>(531)</sub>
+- → „Hat Noah gemacht. Ohne mich zu fragen.“ <sub>(531)</sub>
+- **[Kaya]** Okay. Donnerstag ist Elternabend. Ich frag dort. <sub>(532)</sub>
+- → (Schweigen.) <sub>(532)</sub>
+- **[Kaya]** Hoffmann sagt, dein Zettel ist „verloren“. <sub>(534)</sub>
+- **[Kaya]** Der hier geht nicht verloren. Ja? <sub>(534)</sub>
+- **[Kaya]** Wenn unterschreiben zuhause schwer ist: sag nur das. <sub>(535)</sub>
+- **[Kaya]** Warum, musst du nicht sagen. <sub>(535)</sub>
+- **[Kaya]** Okay. <sub>(537)</sub>
+- → „Geht schon. Ich bring’s.“ <sub>(537)</sub>
+- **[Kaya]** Morgens. Notiert. <sub>(538)</sub>
+- → „Rufen Sie an. Morgens ist es ruhig.“ <sub>(538)</sub>
 
 ### k7Garage
 
-- **[Kaya]** Werkstatt. Becker. Morgen 7:30. Nicht 7:35. <sub>(541)</sub>
-- **[Kaya]** Garage? Der Onkel will dich erst sehen. Samstag. <sub>(542)</sub>
-- **[Kaya]** Diese Woche: Kantine. Oder du findest heute was. <sub>(542)</sub>
-- **[Kaya]** Noah, Jos Onkel will dich Samstag sehen. <sub>(543)</sub>
-- **[Noah]** (strahlt) Echt? <sub>(543)</sub>
-- **[Kaya]** {name}: Bäcker anrufen. Sonst Kantine. <sub>(543)</sub>
-- **[Kaya]** Du wolltest was mit Menschen. Kantine sind viele Menschen. <sub>(544)</sub>
-- **[Kaya]** Ruf vorher noch beim Bäcker an. <sub>(544)</sub>
-- **[Kaya]** Bei dir ist noch nichts. Ruf heute beim Bäcker an. <sub>(545)</sub>
-- **[Kaya]** Sonst bleibt die Kantine. <sub>(545)</sub>
+- **[Kaya]** Werkstatt. Becker. Morgen 7:30. Nicht 7:35. <sub>(544)</sub>
+- **[Kaya]** Garage? Der Onkel will dich erst sehen. Samstag. <sub>(545)</sub>
+- **[Kaya]** Diese Woche: Kantine. Oder du findest heute was. <sub>(545)</sub>
+- **[Kaya]** Noah, Jos Onkel will dich Samstag sehen. <sub>(546)</sub>
+- **[Noah]** (strahlt) Echt? <sub>(546)</sub>
+- **[Kaya]** {name}: Bäcker anrufen. Sonst Kantine. <sub>(546)</sub>
+- **[Kaya]** Du wolltest was mit Menschen. Kantine sind viele Menschen. <sub>(547)</sub>
+- **[Kaya]** Ruf vorher noch beim Bäcker an. <sub>(547)</sub>
+- **[Kaya]** Bei dir ist noch nichts. Ruf heute beim Bäcker an. <sub>(548)</sub>
+- **[Kaya]** Sonst bleibt die Kantine. <sub>(548)</sub>
 
 ### weberKennt
 
-- **[Weber]** Du hast mal Bens Portemonnaie gebracht. Weiß ich noch. <sub>(547)</sub>
-- **[Weber]** (schaut dich lange an) Ich bleib so lange hier. <sub>(548)</sub>
+- **[Weber]** Du hast mal Bens Portemonnaie gebracht. Weiß ich noch. <sub>(550)</sub>
+- **[Weber]** (schaut dich lange an) Ich bleib so lange hier. <sub>(551)</sub>
 
 ### lucaHaube
 
-- **[Luca]** (mit Haube) Kantinen-Polizei. Jetzt in echt. <sub>(549)</sub>
-- **[Luca]** Kenan sagt, du hast mich verdächtigt. Danke auch. <sub>(550)</sub>
-- **[Luca]** (mit Haube) Sag nix. Ich weiß, wie ich aussehe. <sub>(551)</sub>
+- **[Luca]** (mit Haube) Kantinen-Polizei. Jetzt in echt. <sub>(552)</sub>
+- **[Luca]** Kenan sagt, du hast mich verdächtigt. Danke auch. <sub>(553)</sub>
+- **[Luca]** (mit Haube) Sag nix. Ich weiß, wie ich aussehe. <sub>(554)</sub>
 
 ### lucaTeilt
 
-- **[Luca]** Deal. Ich hasse schälen. <sub>(553)</sub>
-- **[Erzähler]** Zwei Kisten um Viertel vor neun. <sub>(553)</sub>
-- **[Kremer]** (nickt nur) <sub>(553)</sub>
-- **[Luca]** Ich bin seit gestern hier. Ich sag, wer schält. <sub>(554)</sub>
-- **[Erzähler]** Du schälst. Er schaut zu. Kremer sieht es nicht. <sub>(554)</sub>
+- **[Luca]** Deal. Ich hasse schälen. <sub>(556)</sub>
+- **[Erzähler]** Zwei Kisten um Viertel vor neun. <sub>(556)</sub>
+- **[Kremer]** (nickt nur) <sub>(556)</sub>
+- **[Luca]** Ich bin seit gestern hier. Ich sag, wer schält. <sub>(557)</sub>
+- **[Erzähler]** Du schälst. Er schaut zu. Kremer sieht es nicht. <sub>(557)</sub>
 
 ### kenanBetreuer
 
-- **[Kenan]** Ausgerechnet du. <sub>(557)</sub>
-- **[Kenan]** Wegen dir kam ein Brief nach Hause. <sub>(557)</sub>
-- **[Kenan]** Hättest du. … Okay. Brille auf. <sub>(559)</sub>
-- → „Am Tor hätte ich die Klappe halten können.“ <sub>(559)</sub>
-- **[Kenan]** (Pause) … Stimmt. <sub>(560)</sub>
-- **[Kenan]** Trotzdem. Ich zeig’s einmal. <sub>(560)</sub>
-- → „Du hast die Kippe vor mich geworfen.“ <sub>(560)</sub>
-- **[Kenan]** Bohren. Schrauben. Fertig. Mehr sag ich nicht. <sub>(561)</sub>
-- → (Nichts sagen. Brille auf.) <sub>(561)</sub>
-- **[Kenan]** Becker sagt, ich bin für dich verantwortlich. <sub>(563)</sub>
-- **[Kenan]** Passt. Ich schulde dir eh was. <sub>(563)</sub>
-- **[Kenan]** Ah. Tor. Weggerannt. Ich erinnere mich. <sub>(564)</sub>
-- **[Kenan]** Becker sagt, ich bin für dich verantwortlich. Also: zuhören. <sub>(565)</sub>
+- **[Kenan]** Ausgerechnet du. <sub>(560)</sub>
+- **[Kenan]** Wegen dir kam ein Brief nach Hause. <sub>(560)</sub>
+- **[Kenan]** Hättest du. … Okay. Brille auf. <sub>(562)</sub>
+- → „Am Tor hätte ich die Klappe halten können.“ <sub>(562)</sub>
+- **[Kenan]** (Pause) … Stimmt. <sub>(563)</sub>
+- **[Kenan]** Trotzdem. Ich zeig’s einmal. <sub>(563)</sub>
+- → „Du hast die Kippe vor mich geworfen.“ <sub>(563)</sub>
+- **[Kenan]** Bohren. Schrauben. Fertig. Mehr sag ich nicht. <sub>(564)</sub>
+- → (Nichts sagen. Brille auf.) <sub>(564)</sub>
+- **[Kenan]** Becker sagt, ich bin für dich verantwortlich. <sub>(566)</sub>
+- **[Kenan]** Passt. Ich schulde dir eh was. <sub>(566)</sub>
+- **[Kenan]** Ah. Tor. Weggerannt. Ich erinnere mich. <sub>(567)</sub>
+- **[Kenan]** Becker sagt, ich bin für dich verantwortlich. Also: zuhören. <sub>(568)</sub>
 
 ### quitt
 
-- **[Kenan]** (leise) Tor und Bohrer. Jetzt sind wir quitt. <sub>(567)</sub>
-- **[Kenan]** Zweimal. Merk ich mir. <sub>(568)</sub>
+- **[Kenan]** (leise) Tor und Bohrer. Jetzt sind wir quitt. <sub>(570)</sub>
+- **[Kenan]** Zweimal. Merk ich mir. <sub>(571)</sub>
 
 ### k7Mila
 
-- **[Mila]** Freitag präsentieren wir zwei. Hat Hoffmann so verteilt. <sub>(571)</sub>
-- **[Mila]** Keine Sorge. Ich sag allen, wir sind „niemals“ was. <sub>(572)</sub>
-- **[Mila]** … Ja. War es. <sub>(574)</sub>
-- **[Mila]** Freitag redest du zuerst. <sub>(574)</sub>
-- → „Das in der Kantine war feige.“ <sub>(574)</sub>
-- **[Mila]** Mach. Ich frag nicht für dich. <sub>(575)</sub>
-- → „Ich frag Hoffmann, ob ich allein darf.“ <sub>(575)</sub>
-- **[Mila]** Luca hat nicht „niemals“ gesagt. <sub>(576)</sub>
-- → „Luca hat genervt. Mehr war nicht.“ <sub>(576)</sub>
-- **[Mila]** Die fragen immer noch, ob wir … du weißt. <sub>(578)</sub>
-- **[Mila]** Ich sag jetzt einfach ja. Spart Zeit. <sub>(578)</sub>
-- **[Mila]** (lacht. Laut.) <sub>(580)</sub>
-- → „Dann sag ich auch ja.“ <sub>(580)</sub>
-- **[Mila]** Okay. Dann: geht keinen was an. <sub>(581)</sub>
-- → „Lieber nicht. Ernsthaft.“ <sub>(581)</sub>
-- **[Mila]** Ich mach die Folien. Du redest. Deal? <sub>(583)</sub>
-- → „Deal.“ <sub>(585)</sub>
-- **[Mila]** Ich auch nicht. Dann jeder die Hälfte. <sub>(586)</sub>
-- → „Andersrum. Ich red nicht gern.“ <sub>(586)</sub>
+- **[Mila]** Freitag präsentieren wir zwei. Hat Hoffmann so verteilt. <sub>(574)</sub>
+- **[Mila]** Keine Sorge. Ich sag allen, wir sind „niemals“ was. <sub>(575)</sub>
+- **[Mila]** … Ja. War es. <sub>(577)</sub>
+- **[Mila]** Freitag redest du zuerst. <sub>(577)</sub>
+- → „Das in der Kantine war feige.“ <sub>(577)</sub>
+- **[Mila]** Mach. Ich frag nicht für dich. <sub>(578)</sub>
+- → „Ich frag Hoffmann, ob ich allein darf.“ <sub>(578)</sub>
+- **[Mila]** Luca hat nicht „niemals“ gesagt. <sub>(579)</sub>
+- → „Luca hat genervt. Mehr war nicht.“ <sub>(579)</sub>
+- **[Mila]** Die fragen immer noch, ob wir … du weißt. <sub>(581)</sub>
+- **[Mila]** Ich sag jetzt einfach ja. Spart Zeit. <sub>(581)</sub>
+- **[Mila]** (lacht. Laut.) <sub>(583)</sub>
+- → „Dann sag ich auch ja.“ <sub>(583)</sub>
+- **[Mila]** Okay. Dann: geht keinen was an. <sub>(584)</sub>
+- → „Lieber nicht. Ernsthaft.“ <sub>(584)</sub>
+- **[Mila]** Ich mach die Folien. Du redest. Deal? <sub>(586)</sub>
+- → „Deal.“ <sub>(588)</sub>
+- **[Mila]** Ich auch nicht. Dann jeder die Hälfte. <sub>(589)</sub>
+- → „Andersrum. Ich red nicht gern.“ <sub>(589)</sub>
 
 ### k7Noah
 
-- **[Erzähler]** Noah steht auf, als du kommst. Er geht. <sub>(592)</sub>
-- **[Noah]** Der Screenshot von dir. Für Kaya. <sub>(593)</sub>
-- **[Noah]** Ich hab ihn nie geschickt. Sorry. <sub>(593)</sub>
-- **[Noah]** Jo hätte sofort gewusst, dass ich’s war. <sub>(595)</sub>
-- → „Weiß ich. Hab’s gemerkt.“ <sub>(595)</sub>
-- **[Noah]** Geht nicht. Jo hat die Gruppe gelöscht. <sub>(596)</sub>
-- **[Noah]** Alles weg. Auch das Bild. <sub>(596)</sub>
-- → „Dann schick ihn jetzt.“ <sub>(596)</sub>
-- **[Noah]** Ja. <sub>(597)</sub>
-- **[Erzähler]** Er steht auf. Er geht zum Brunnen. <sub>(597)</sub>
-- → „Feige, Noah.“ <sub>(597)</sub>
+- **[Erzähler]** Noah steht auf, als du kommst. Er geht. <sub>(595)</sub>
+- **[Noah]** Der Screenshot von dir. Für Kaya. <sub>(596)</sub>
+- **[Noah]** Ich hab ihn nie geschickt. Sorry. <sub>(596)</sub>
+- **[Noah]** Jo hätte sofort gewusst, dass ich’s war. <sub>(598)</sub>
+- → „Weiß ich. Hab’s gemerkt.“ <sub>(598)</sub>
+- **[Noah]** Geht nicht. Jo hat die Gruppe gelöscht. <sub>(599)</sub>
+- **[Noah]** Alles weg. Auch das Bild. <sub>(599)</sub>
+- → „Dann schick ihn jetzt.“ <sub>(599)</sub>
+- **[Noah]** Ja. <sub>(600)</sub>
+- **[Erzähler]** Er steht auf. Er geht zum Brunnen. <sub>(600)</sub>
+- → „Feige, Noah.“ <sub>(600)</sub>
 
 ### benKasse
 
-- **[Ben]** (in der Schlange) Echt jetzt? {name} an der Kasse? <sub>(603)</sub>
-- **[Kremer]** Wieso? <sub>(603)</sub>
-- **[Kremer]** (lange Pause) Dann heute Tabletts. Morgen sehen wir. <sub>(605)</sub>
-- **[Ben]** … Okay. Wenigstens jetzt. <sub>(605)</sub>
-- → „Ich hab damals Bens Geld genommen.“ <sub>(605)</sub>
-- **[Ben]** Frag Hoffmann. <sub>(606)</sub>
-- **[Kremer]** Ich zähl heute Abend. Auf den Cent. <sub>(606)</sub>
-- → „Ben spinnt. Frag ihn, was er meint.“ <sub>(606)</sub>
-- **[Kremer]** Hm. Dann Tabletts. <sub>(607)</sub>
-- → (Kremer die Kasse geben. Wortlos.) <sub>(607)</sub>
-- **[Ben]** An die Kasse? Mutig, Frau Kremer. <sub>(609)</sub>
-- **[Kremer]** Weiß ich. Ist geklärt. <sub>(609)</sub>
-- **[Ben]** … Hm. <sub>(609)</sub>
-- **[Ben]** (zu Yusuf, laut genug) Zähl dein Wechselgeld. <sub>(610)</sub>
-- **[Ben]** Krieg ich Rabatt? … Nein? Okay. <sub>(611)</sub>
+- **[Ben]** (in der Schlange) Echt jetzt? {name} an der Kasse? <sub>(606)</sub>
+- **[Kremer]** Wieso? <sub>(606)</sub>
+- **[Kremer]** (lange Pause) Dann heute Tabletts. Morgen sehen wir. <sub>(608)</sub>
+- **[Ben]** … Okay. Wenigstens jetzt. <sub>(608)</sub>
+- → „Ich hab damals Bens Geld genommen.“ <sub>(608)</sub>
+- **[Ben]** Frag Hoffmann. <sub>(609)</sub>
+- **[Kremer]** Ich zähl heute Abend. Auf den Cent. <sub>(609)</sub>
+- → „Ben spinnt. Frag ihn, was er meint.“ <sub>(609)</sub>
+- **[Kremer]** Hm. Dann Tabletts. <sub>(610)</sub>
+- → (Kremer die Kasse geben. Wortlos.) <sub>(610)</sub>
+- **[Ben]** An die Kasse? Mutig, Frau Kremer. <sub>(612)</sub>
+- **[Kremer]** Weiß ich. Ist geklärt. <sub>(612)</sub>
+- **[Ben]** … Hm. <sub>(612)</sub>
+- **[Ben]** (zu Yusuf, laut genug) Zähl dein Wechselgeld. <sub>(613)</sub>
+- **[Ben]** Krieg ich Rabatt? … Nein? Okay. <sub>(614)</sub>
 
 ### lucaKarte
 
-- **[Erzähler]** An der Kasse: Luca. Rotes Licht. Karte leer. <sub>(614)</sub>
-- **[Kremer]** (leise) Geht heute. <sub>(614)</sub>
-- **[Erzähler]** Luca sieht, dass du es gesehen hast. <sub>(614)</sub>
-- **[Erzähler]** Luca ist dran. Karte drauf. Rotes Licht. <sub>(615)</sub>
-- **[Luca]** (leise) Leer. Lass mich durch. Merkt keiner. <sub>(615)</sub>
-- **[Luca]** Eine Woche hier und schon Chef. <sub>(617)</sub>
-- **[Erzähler]** Er stellt das Tablett hin. Und geht. <sub>(617)</sub>
-- → „Karte leer. Geht nicht.“ <sub>(617)</sub>
-- **[Luca]** (nickt. Sagt nichts.) <sub>(618)</sub>
-- **[Erzähler]** Keiner hat’s gesehen. Glaubst du. <sub>(618)</sub>
-- → (Durchwinken.) <sub>(618)</sub>
-- **[Kremer]** (leise) Geht heute. Sag zuhause Bescheid. <sub>(619)</sub>
-- **[Luca]** (rot) Musst du das so laut sagen? <sub>(619)</sub>
-- → „Frau Kremer? Lucas Karte ist leer.“ <sub>(619)</sub>
-- **[Luca]** Was soll das? … Okay. Danke. <sub>(620)</sub>
-- **[Erzähler]** Zwei Euro weg. Deine. <sub>(620)</sub>
-- → (Zwei Euro aus deiner Tasche drauflegen.) <sub>(620)</sub>
+- **[Erzähler]** An der Kasse: Luca. Rotes Licht. Karte leer. <sub>(617)</sub>
+- **[Kremer]** (leise) Geht heute. <sub>(617)</sub>
+- **[Erzähler]** Luca sieht, dass du es gesehen hast. <sub>(617)</sub>
+- **[Erzähler]** Luca ist dran. Karte drauf. Rotes Licht. <sub>(618)</sub>
+- **[Luca]** (leise) Leer. Lass mich durch. Merkt keiner. <sub>(618)</sub>
+- **[Luca]** Eine Woche hier und schon Chef. <sub>(620)</sub>
+- **[Erzähler]** Er stellt das Tablett hin. Und geht. <sub>(620)</sub>
+- → „Karte leer. Geht nicht.“ <sub>(620)</sub>
+- **[Luca]** (nickt. Sagt nichts.) <sub>(621)</sub>
+- **[Erzähler]** Keiner hat’s gesehen. Glaubst du. <sub>(621)</sub>
+- → (Durchwinken.) <sub>(621)</sub>
+- **[Kremer]** (leise) Geht heute. Sag zuhause Bescheid. <sub>(622)</sub>
+- **[Luca]** (rot) Musst du das so laut sagen? <sub>(622)</sub>
+- → „Frau Kremer? Lucas Karte ist leer.“ <sub>(622)</sub>
+- **[Luca]** Was soll das? … Okay. Danke. <sub>(623)</sub>
+- **[Erzähler]** Zwei Euro weg. Deine. <sub>(623)</sub>
+- → (Zwei Euro aus deiner Tasche drauflegen.) <sub>(623)</sub>
 
 ### k7Folgen
 
-- **[Noah]** Jos Onkel nimmt mich. Ab nächstem Monat. <sub>(631)</sub>
-- **[Noah]** Wegen dir. Weißt du, oder? <sub>(631)</sub>
-- **[Jo]** Samstag, sieben Uhr. Mein Onkel wartet nicht. <sub>(632)</sub>
-- **[Erzähler]** Noah setzt sich ganz vorne hin. Neben den Fahrer. <sub>(633)</sub>
-- **[Erzähler]** Dein Handy: drei verpasste Anrufe. Von zuhause. <sub>(634)</sub>
-- **[Mila]** Präsentation war okay. Du hast zu schnell geredet. <sub>(635)</sub>
-- **[Erzähler]** Mila steigt hinten ein. Ohne zu schauen. <sub>(636)</sub>
-- **[Kenan]** (im Vorbeigehen) Quitt. <sub>(637)</sub>
-- **[Noah]** Erste Arbeitswoche. Ich bin so müde. <sub>(638)</sub>
+- **[Noah]** Jos Onkel nimmt mich. Ab nächstem Monat. <sub>(634)</sub>
+- **[Noah]** Wegen dir. Weißt du, oder? <sub>(634)</sub>
+- **[Jo]** Samstag, sieben Uhr. Mein Onkel wartet nicht. <sub>(635)</sub>
+- **[Erzähler]** Noah setzt sich ganz vorne hin. Neben den Fahrer. <sub>(636)</sub>
+- **[Erzähler]** Dein Handy: drei verpasste Anrufe. Von zuhause. <sub>(637)</sub>
+- **[Mila]** Präsentation war okay. Du hast zu schnell geredet. <sub>(638)</sub>
+- **[Erzähler]** Mila steigt hinten ein. Ohne zu schauen. <sub>(639)</sub>
+- **[Kenan]** (im Vorbeigehen) Quitt. <sub>(640)</sub>
+- **[Noah]** Erste Arbeitswoche. Ich bin so müde. <sub>(641)</sub>
 
 ### kayaStart
 
-- **[Kaya]** Gestern warst du nicht da. Kein Verhör. <sub>(643)</sub>
-- **[Kaya]** Bauch? <sub>(643)</sub>
-- **[Kaya]** Okay. <sub>(643)</sub>
-- → (Nicken.) <sub>(643)</sub>
-- → „Geht schon.“ <sub>(643)</sub>
-- **[Kaya]** Gestern war zäh, oder? Sah man dir an. <sub>(644)</sub>
+- **[Kaya]** Gestern warst du nicht da. Kein Verhör. <sub>(646)</sub>
+- **[Kaya]** Bauch? <sub>(646)</sub>
+- **[Kaya]** Okay. <sub>(646)</sub>
+- → (Nicken.) <sub>(646)</sub>
+- → „Geht schon.“ <sub>(646)</sub>
+- **[Kaya]** Gestern war zäh, oder? Sah man dir an. <sub>(647)</sub>
 
 ### leiterStart
 
-- **[Kaya]** Die Pause kommt sowieso jeden Tag. Da fangen wir an. <sub>(654)</sub>
+- **[Kaya]** Die Pause kommt sowieso jeden Tag. Da fangen wir an. <sub>(657)</sub>
 
 ### probePause
 
-- **[Erzähler]** Irgendwann lachst du übers Katzenvideo mit. Gemerkt hat’s keiner. <sub>(664)</sub>
-- **[Erzähler]** Heute ging’s kaum runter. Kommt vor. <sub>(664)</sub>
-- **[Noah]** Kommst du morgen wieder her? <sub>(664)</sub>
-- **[Noah]** Cool. <sub>(664)</sub>
-- → „Mal sehen.“ <sub>(664)</sub>
-- → „Ja.“ <sub>(664)</sub>
-- **[Erzähler]** Später, im Gang. Herr Kaya: „Wie lang warst du da?“ <sub>(665)</sub>
-- **[Kaya]** Zählt. Nächstes Mal: so lang plus fünf. <sub>(666)</sub>
-- **[Kaya]** Notiert. Morgen nochmal? Ich wette einen Keks. <sub>(666)</sub>
-- → „ <sub>(666)</sub>
-- → „Kaum. Bringt eh nix.“ <sub>(666)</sub>
+- **[Erzähler]** Irgendwann lachst du übers Katzenvideo mit. Gemerkt hat’s keiner. <sub>(667)</sub>
+- **[Erzähler]** Heute ging’s kaum runter. Kommt vor. <sub>(667)</sub>
+- **[Noah]** Kommst du morgen wieder her? <sub>(667)</sub>
+- **[Noah]** Cool. <sub>(667)</sub>
+- → „Mal sehen.“ <sub>(667)</sub>
+- → „Ja.“ <sub>(667)</sub>
+- **[Erzähler]** Später, im Gang. Herr Kaya: „Wie lang warst du da?“ <sub>(668)</sub>
+- **[Kaya]** Zählt. Nächstes Mal: so lang plus fünf. <sub>(669)</sub>
+- **[Kaya]** Notiert. Morgen nochmal? Ich wette einen Keks. <sub>(669)</sub>
+- → „ <sub>(669)</sub>
+- → „Kaum. Bringt eh nix.“ <sub>(669)</sub>
 
 ### tafelFolge
 
-- **[Erzähler]** Nach der Stunde. <sub>(678)</sub>
-- **[Hoffmann]** (packt ein) Vorhin. Blöd gelaufen. <sub>(678)</sub>
-- **[Hoffmann]** Nächstes Mal sag einfach „gleich“. Dann komm ich zurück. <sub>(678)</sub>
-- **[Erzähler]** Nach der Stunde. <sub>(679)</sub>
-- **[Hoffmann]** Die Karte darfst du echt benutzen. Ich mein das so. <sub>(679)</sub>
-- **[Erzähler]** Nach der Stunde. M. Hoffmann sagt nichts. Er nickt nur. <sub>(680)</sub>
+- **[Erzähler]** Nach der Stunde. <sub>(681)</sub>
+- **[Hoffmann]** (packt ein) Vorhin. Blöd gelaufen. <sub>(681)</sub>
+- **[Hoffmann]** Nächstes Mal sag einfach „gleich“. Dann komm ich zurück. <sub>(681)</sub>
+- **[Erzähler]** Nach der Stunde. <sub>(682)</sub>
+- **[Hoffmann]** Die Karte darfst du echt benutzen. Ich mein das so. <sub>(682)</sub>
+- **[Erzähler]** Nach der Stunde. M. Hoffmann sagt nichts. Er nickt nur. <sub>(683)</sub>
 
 ### stufeVorschlag
 
-- **[Kaya]** Du entscheidest. <sub>(690)</sub>
+- **[Kaya]** Du entscheidest. <sub>(693)</sub>
 
 ### probeBaecker
 
-- **[Erzähler]** Du gehst zurück. Ohne Teilchen. <sub>(699)</sub>
-- **[Baeckerin]** Und für dich? <sub>(701)</sub>
-- **[Baeckerin]** Eins fünfzig. <sub>(702)</sub>
-- **[Erzähler]** Du zahlst. Sie sagt „Schönen Tag“. Das war’s. <sub>(702)</sub>
-- → „Ein Kirsch-Teilchen, bitte.“ <sub>(702)</sub>
-- **[Baeckerin]** Kirsch? Eins fünfzig. <sub>(703)</sub>
-- **[Erzähler]** Du hast ein Teilchen. Keiner hat was gemerkt. <sub>(703)</sub>
-- → (Aufs Teilchen zeigen.) „Das da.“ <sub>(703)</sub>
-- **[Baeckerin]** Kein Problem. Der Nächste. <sub>(704)</sub>
-- → „Ähm … nichts. Sorry.“ <sub>(704)</sub>
+- **[Erzähler]** Du gehst zurück. Ohne Teilchen. <sub>(702)</sub>
+- **[Baeckerin]** Und für dich? <sub>(704)</sub>
+- **[Baeckerin]** Eins fünfzig. <sub>(705)</sub>
+- **[Erzähler]** Du zahlst. Sie sagt „Schönen Tag“. Das war’s. <sub>(705)</sub>
+- → „Ein Kirsch-Teilchen, bitte.“ <sub>(705)</sub>
+- **[Baeckerin]** Kirsch? Eins fünfzig. <sub>(706)</sub>
+- **[Erzähler]** Du hast ein Teilchen. Keiner hat was gemerkt. <sub>(706)</sub>
+- → (Aufs Teilchen zeigen.) „Das da.“ <sub>(706)</sub>
+- **[Baeckerin]** Kein Problem. Der Nächste. <sub>(707)</sub>
+- → „Ähm … nichts. Sorry.“ <sub>(707)</sub>
 
 ### probeKantine
 
-- **[Ayla]** Schon fertig? <sub>(722)</sub>
-- **[Erzähler]** Es klang nicht böse. Nur erstaunt. <sub>(722)</sub>
-- **[Yusuf]** Und du? Samstag Skatepark? <sub>(724)</sub>
-- **[Yusuf]** Vielleicht ist kein Nein. <sub>(725)</sub>
-- **[Yusuf]** Ich auch nicht. Ich fall nur hin. <sub>(725)</sub>
-- → „Vielleicht.“ <sub>(725)</sub>
-- → „Ich kann nicht skaten.“ <sub>(725)</sub>
-- → (Schultern zucken.) <sub>(725)</sub>
+- **[Ayla]** Schon fertig? <sub>(725)</sub>
+- **[Erzähler]** Es klang nicht böse. Nur erstaunt. <sub>(725)</sub>
+- **[Yusuf]** Und du? Samstag Skatepark? <sub>(727)</sub>
+- **[Yusuf]** Vielleicht ist kein Nein. <sub>(728)</sub>
+- **[Yusuf]** Ich auch nicht. Ich fall nur hin. <sub>(728)</sub>
+- → „Vielleicht.“ <sub>(728)</sub>
+- → „Ich kann nicht skaten.“ <sub>(728)</sub>
+- → (Schultern zucken.) <sub>(728)</sub>
 
 ### korbRunde
 
-- **[Erzähler]** Jo passt dir den Ball kein einziges Mal. <sub>(751)</sub>
-- **[Jo]** Gewonnen. Siehste. <sub>(752)</sub>
-- **[Sommer]** (pfeift) Gut. Umziehen. <sub>(752)</sub>
-- **[Jo]** Und? <sub>(757)</sub>
-- **[Ben]** (grinst) Stimmt aber. <sub>(757)</sub>
-- → „Du hast dreimal danebengeworfen.“ <sub>(757)</sub>
-- **[Erzähler]** Lina geht schnell in die Umkleide. <sub>(758)</sub>
-- → „War halt Pech.“ <sub>(758)</sub>
-- **[Lina]** (nickt zurück) <sub>(759)</sub>
-- → (Lina zunicken. Nichts sagen.) <sub>(759)</sub>
-- **[Jo]** Ich war gedeckt. <sub>(761)</sub>
-- **[Ben]** Klar, Jo. <sub>(761)</sub>
-- → „Und du? Drei daneben.“ <sub>(761)</sub>
-- **[Jo]** Wenn du dann noch im Team bist. <sub>(762)</sub>
-- → (Schulterzucken.) „Nächstes Mal.“ <sub>(762)</sub>
-- **[Jo]** Uuh. Sensibel. <sub>(763)</sub>
-- → „Halt die Klappe, Jo.“ <sub>(763)</sub>
+- **[Erzähler]** Jo passt dir den Ball kein einziges Mal. <sub>(754)</sub>
+- **[Jo]** Gewonnen. Siehste. <sub>(755)</sub>
+- **[Sommer]** (pfeift) Gut. Umziehen. <sub>(755)</sub>
+- **[Jo]** Und? <sub>(760)</sub>
+- **[Ben]** (grinst) Stimmt aber. <sub>(760)</sub>
+- → „Du hast dreimal danebengeworfen.“ <sub>(760)</sub>
+- **[Erzähler]** Lina geht schnell in die Umkleide. <sub>(761)</sub>
+- → „War halt Pech.“ <sub>(761)</sub>
+- **[Lina]** (nickt zurück) <sub>(762)</sub>
+- → (Lina zunicken. Nichts sagen.) <sub>(762)</sub>
+- **[Jo]** Ich war gedeckt. <sub>(764)</sub>
+- **[Ben]** Klar, Jo. <sub>(764)</sub>
+- → „Und du? Drei daneben.“ <sub>(764)</sub>
+- **[Jo]** Wenn du dann noch im Team bist. <sub>(765)</sub>
+- → (Schulterzucken.) „Nächstes Mal.“ <sub>(765)</sub>
+- **[Jo]** Uuh. Sensibel. <sub>(766)</sub>
+- → „Halt die Klappe, Jo.“ <sub>(766)</sub>
 
 ### milaGelacht
 
-- **[Mila]** Dein Smiley war der dritte. Ich hab gezählt. <sub>(770)</sub>
-- **[Mila]** Ja. War es. <sub>(772)</sub>
-- **[Mila]** … Setz dich halt. <sub>(772)</sub>
-- → „Sorry. War dumm.“ <sub>(772)</sub>
-- **[Mila]** Weiß ich. Darum ist es ja so schlimm. <sub>(773)</sub>
-- → „Alle haben gelacht. Nicht nur ich.“ <sub>(773)</sub>
-- → (Umdrehen. Gehen.) <sub>(774)</sub>
-- **[Mila]** Jetzt machen sie sich über dich lustig. Wegen mir. <sub>(776)</sub>
-- **[Mila]** Du warst online. Ich hab’s gesehen. <sub>(777)</sub>
-- **[Mila]** Hab deine Nachricht gesehen. Konnte nicht antworten. <sub>(778)</sub>
+- **[Mila]** Dein Smiley war der dritte. Ich hab gezählt. <sub>(773)</sub>
+- **[Mila]** Ja. War es. <sub>(775)</sub>
+- **[Mila]** … Setz dich halt. <sub>(775)</sub>
+- → „Sorry. War dumm.“ <sub>(775)</sub>
+- **[Mila]** Weiß ich. Darum ist es ja so schlimm. <sub>(776)</sub>
+- → „Alle haben gelacht. Nicht nur ich.“ <sub>(776)</sub>
+- → (Umdrehen. Gehen.) <sub>(777)</sub>
+- **[Mila]** Jetzt machen sie sich über dich lustig. Wegen mir. <sub>(779)</sub>
+- **[Mila]** Du warst online. Ich hab’s gesehen. <sub>(780)</sub>
+- **[Mila]** Hab deine Nachricht gesehen. Konnte nicht antworten. <sub>(781)</sub>
 
 ### testPizza
 
-- **[Erzähler]** Aufgabe 3 steht da. Wie man drauf kommt, weißt du nicht. <sub>(781)</sub>
-- **[Erzähler]** Aufgabe 3: Brüche. Du erinnerst dich an das Foto. Nicht an den Weg. <sub>(782)</sub>
-- **[Erzähler]** Aufgabe 3: Brüche. Halbe Pizza, Viertel Pizza. Drei Viertel. <sub>(783)</sub>
-- **[Erzähler]** Aufgabe 3: Brüche. Leer. <sub>(784)</sub>
+- **[Erzähler]** Aufgabe 3 steht da. Wie man drauf kommt, weißt du nicht. <sub>(784)</sub>
+- **[Erzähler]** Aufgabe 3: Brüche. Du erinnerst dich an das Foto. Nicht an den Weg. <sub>(785)</sub>
+- **[Erzähler]** Aufgabe 3: Brüche. Halbe Pizza, Viertel Pizza. Drei Viertel. <sub>(786)</sub>
+- **[Erzähler]** Aufgabe 3: Brüche. Leer. <sub>(787)</sub>
 
 ### ichBotschaft
 
-- **[Hoffmann]** Danke, {name}. Jo? <sub>(789)</sub>
-- **[Jo]** (verdreht die Augen) Jaja. Gelöscht. Zufrieden? <sub>(790)</sub>
-- **[Jo]** (verdreht die Augen) Jaja. Ich frag vorher. Zufrieden? <sub>(790)</sub>
-- **[Hoffmann]** Dann schreiben wir das als Klassenregel auf. <sub>(791)</sub>
+- **[Hoffmann]** Danke, {name}. Jo? <sub>(792)</sub>
+- **[Jo]** (verdreht die Augen) Jaja. Gelöscht. Zufrieden? <sub>(793)</sub>
+- **[Jo]** (verdreht die Augen) Jaja. Ich frag vorher. Zufrieden? <sub>(793)</sub>
+- **[Hoffmann]** Dann schreiben wir das als Klassenregel auf. <sub>(794)</sub>
 
 ### kenanErinnert
 
-- **[Kenan]** Moment. Dich kenn ich. Gang. Erster Tag. Gedrängelt. <sub>(796)</sub>
-- **[Kenan]** Hm. Okay. Vergessen. <sub>(798)</sub>
-- → „Ja. War nicht cool.“ <sub>(798)</sub>
-- **[Kenan]** Stimmt sogar. Trotzdem. <sub>(799)</sub>
-- → „Ihr standet halt im Weg.“ <sub>(799)</sub>
-- **[Kenan]** Wie du meinst. <sub>(800)</sub>
-- → (Schulterzucken.) <sub>(800)</sub>
-- **[Kenan]** Dich kenn ich vom Gang. Wir standen im Weg. Sorry. <sub>(801)</sub>
-- **[Kenan]** Ah. Gang. Erster Tag. Hi. <sub>(801)</sub>
+- **[Kenan]** Moment. Dich kenn ich. Gang. Erster Tag. Gedrängelt. <sub>(799)</sub>
+- **[Kenan]** Hm. Okay. Vergessen. <sub>(801)</sub>
+- → „Ja. War nicht cool.“ <sub>(801)</sub>
+- **[Kenan]** Stimmt sogar. Trotzdem. <sub>(802)</sub>
+- → „Ihr standet halt im Weg.“ <sub>(802)</sub>
+- **[Kenan]** Wie du meinst. <sub>(803)</sub>
+- → (Schulterzucken.) <sub>(803)</sub>
+- **[Kenan]** Dich kenn ich vom Gang. Wir standen im Weg. Sorry. <sub>(804)</sub>
+- **[Kenan]** Ah. Gang. Erster Tag. Hi. <sub>(804)</sub>
 
 ### beckerLob
 
-- **[Becker]** Und du hast sofort an die Brille gedacht. <sub>(810)</sub>
+- **[Becker]** Und du hast sofort an die Brille gedacht. <sub>(813)</sub>
 
 ### kenanBus
 
-- **[Erzähler]** Kenan steigt ein. Er setzt sich weit weg. <sub>(814)</sub>
-- **[Dario]** (im Vorbeigehen) Mutig. Oder dumm. Mal sehen. <sub>(814)</sub>
-- **[Kenan]** Brief nach Hause. Wegen mir. <sub>(815)</sub>
-- **[Kenan]** Warum hast du das gemacht? <sub>(815)</sub>
-- **[Kenan]** Woher weißt du das? <sub>(817)</sub>
-- **[Kenan]** … Okay. Danke. <sub>(817)</sub>
-- → „Du hast schon genug Ärger.“ <sub>(817)</sub>
-- **[Kenan]** (lacht kurz) Du bist komisch. <sub>(818)</sub>
-- → „Weiß ich auch nicht.“ <sub>(818)</sub>
-- **[Kenan]** Okay. Merk ich mir. Echt. <sub>(819)</sub>
-- → „Du schuldest mir was.“ <sub>(819)</sub>
-- **[Kenan]** Abgehauen. Hoffmann hat dich trotzdem erkannt. <sub>(821)</sub>
-- **[Kenan]** Er hat drei Namen. Deiner ist dabei. <sub>(821)</sub>
-- **[Kenan]** Hoffmann kam genau zu uns. Als ob er’s wusste. <sub>(822)</sub>
-- **[Kenan]** Hast du vorher was gesagt? <sub>(822)</sub>
-- **[Kenan]** Hm. Okay. <sub>(824)</sub>
-- → „Nein.“ <sub>(824)</sub>
-- **[Kenan]** Luca? … Hm. <sub>(825)</sub>
-- → „Frag lieber Luca.“ <sub>(825)</sub>
-- **[Kenan]** (schaut zu Dario) … Lass das. <sub>(826)</sub>
-- **[Erzähler]** Dario schaut auf sein Handy. Sehr lange. <sub>(826)</sub>
-- → „Frag Dario.“ <sub>(826)</sub>
+- **[Erzähler]** Kenan steigt ein. Er setzt sich weit weg. <sub>(817)</sub>
+- **[Dario]** (im Vorbeigehen) Mutig. Oder dumm. Mal sehen. <sub>(817)</sub>
+- **[Kenan]** Brief nach Hause. Wegen mir. <sub>(818)</sub>
+- **[Kenan]** Warum hast du das gemacht? <sub>(818)</sub>
+- **[Kenan]** Woher weißt du das? <sub>(820)</sub>
+- **[Kenan]** … Okay. Danke. <sub>(820)</sub>
+- → „Du hast schon genug Ärger.“ <sub>(820)</sub>
+- **[Kenan]** (lacht kurz) Du bist komisch. <sub>(821)</sub>
+- → „Weiß ich auch nicht.“ <sub>(821)</sub>
+- **[Kenan]** Okay. Merk ich mir. Echt. <sub>(822)</sub>
+- → „Du schuldest mir was.“ <sub>(822)</sub>
+- **[Kenan]** Abgehauen. Hoffmann hat dich trotzdem erkannt. <sub>(824)</sub>
+- **[Kenan]** Er hat drei Namen. Deiner ist dabei. <sub>(824)</sub>
+- **[Kenan]** Hoffmann kam genau zu uns. Als ob er’s wusste. <sub>(825)</sub>
+- **[Kenan]** Hast du vorher was gesagt? <sub>(825)</sub>
+- **[Kenan]** Hm. Okay. <sub>(827)</sub>
+- → „Nein.“ <sub>(827)</sub>
+- **[Kenan]** Luca? … Hm. <sub>(828)</sub>
+- → „Frag lieber Luca.“ <sub>(828)</sub>
+- **[Kenan]** (schaut zu Dario) … Lass das. <sub>(829)</sub>
+- **[Erzähler]** Dario schaut auf sein Handy. Sehr lange. <sub>(829)</sub>
+- → „Frag Dario.“ <sub>(829)</sub>
 
 ### abschreibFolge
 
-- **[Hoffmann]** {name}, Noah. Bleibt kurz da. <sub>(837)</sub>
-- **[Hoffmann]** Gleiche Fehler. Gleiche Reihenfolge. Wer von wem? <sub>(838)</sub>
-- **[Hoffmann]** Beim Test hast du auch schon rübergeschaut. <sub>(839)</sub>
-- **[Erzähler]** Noah schaut dich an. <sub>(840)</sub>
-- → „Er hat bei mir. Ich hab’s erlaubt.“ <sub>(842)</sub>
-- **[Hoffmann]** Beide nochmal. Bis Freitag. <sub>(843)</sub>
-- **[Noah]** (draußen) Danke auch. <sub>(843)</sub>
-- → „Wir haben zusammen gelernt.“ <sub>(844)</sub>
-- **[Hoffmann]** Zusammen gelernt. Mit denselben Fehlern. <sub>(845)</sub>
-- **[Hoffmann]** Dann erklärt mir Noah Aufgabe 3. Jetzt. <sub>(846)</sub>
-- **[Erzähler]** Noah kann es nicht. Hoffmann sagt nichts mehr. Er schreibt was auf. <sub>(847)</sub>
-- → (Schweigen.) <sub>(848)</sub>
-- **[Hoffmann]** Okay. Dann beide null Punkte. <sub>(849)</sub>
-- **[Noah]** Warte. {name} kann nix dafür. Ich war’s. <sub>(850)</sub>
-- **[Hoffmann]** … Gut. Noah, du machst sie nochmal. <sub>(851)</sub>
+- **[Hoffmann]** {name}, Noah. Bleibt kurz da. <sub>(840)</sub>
+- **[Hoffmann]** Gleiche Fehler. Gleiche Reihenfolge. Wer von wem? <sub>(841)</sub>
+- **[Hoffmann]** Beim Test hast du auch schon rübergeschaut. <sub>(842)</sub>
+- **[Erzähler]** Noah schaut dich an. <sub>(843)</sub>
+- → „Er hat bei mir. Ich hab’s erlaubt.“ <sub>(845)</sub>
+- **[Hoffmann]** Beide nochmal. Bis Freitag. <sub>(846)</sub>
+- **[Noah]** (draußen) Danke auch. <sub>(846)</sub>
+- → „Wir haben zusammen gelernt.“ <sub>(847)</sub>
+- **[Hoffmann]** Zusammen gelernt. Mit denselben Fehlern. <sub>(848)</sub>
+- **[Hoffmann]** Dann erklärt mir Noah Aufgabe 3. Jetzt. <sub>(849)</sub>
+- **[Erzähler]** Noah kann es nicht. Hoffmann sagt nichts mehr. Er schreibt was auf. <sub>(850)</sub>
+- → (Schweigen.) <sub>(851)</sub>
+- **[Hoffmann]** Okay. Dann beide null Punkte. <sub>(852)</sub>
+- **[Noah]** Warte. {name} kann nix dafür. Ich war’s. <sub>(853)</sub>
+- **[Hoffmann]** … Gut. Noah, du machst sie nochmal. <sub>(854)</sub>
 
 ### schwaenzFolge
 
-- **[Erzähler]** Nach der Stunde. Frau Sommer hält ihre Liste hoch. <sub>(854)</sub>
-- **[Sommer]** Unentschuldigt. Steht schon drin. <sub>(855)</sub>
-- **[Sommer]** Vor zwei Wochen schlecht. Heute weg. Interessant. <sub>(856)</sub>
-- **[Sommer]** Hoffmann sagt, du hattest schon eine Fehlstunde. <sub>(857)</sub>
-- **[Sommer]** Wo warst du? Und mit wem? <sub>(858)</sub>
-- → „Beim Bäcker. Mit Dario und Luca.“ <sub>(860)</sub>
-- **[Sommer]** Danke. Die zwei hol ich mir. <sub>(861)</sub>
-- **[Sommer]** Zettel von zuhause bis Freitag. Unterschrieben. <sub>(861)</sub>
-- → „Beim Bäcker. Allein.“ <sub>(862)</sub>
-- **[Sommer]** Allein. Mit drei Croissants. Klar. <sub>(863)</sub>
-- **[Sommer]** Zettel von zuhause bis Freitag. <sub>(863)</sub>
-- → „Mir war schlecht.“ <sub>(864)</sub>
-- **[Sommer]** Dann bring morgen einen Zettel. Von zuhause. <sub>(865)</sub>
-- **[Sommer]** Hast du Dario und Luca gesehen? <sub>(868)</sub>
-- **[Sommer]** Hm. <sub>(870)</sub>
-- → „Nö.“ <sub>(870)</sub>
-- **[Sommer]** Danke. <sub>(871)</sub>
-- → „Die sind beim Bäcker.“ <sub>(871)</sub>
+- **[Erzähler]** Nach der Stunde. Frau Sommer hält ihre Liste hoch. <sub>(857)</sub>
+- **[Sommer]** Unentschuldigt. Steht schon drin. <sub>(858)</sub>
+- **[Sommer]** Vor zwei Wochen schlecht. Heute weg. Interessant. <sub>(859)</sub>
+- **[Sommer]** Hoffmann sagt, du hattest schon eine Fehlstunde. <sub>(860)</sub>
+- **[Sommer]** Wo warst du? Und mit wem? <sub>(861)</sub>
+- → „Beim Bäcker. Mit Dario und Luca.“ <sub>(863)</sub>
+- **[Sommer]** Danke. Die zwei hol ich mir. <sub>(864)</sub>
+- **[Sommer]** Zettel von zuhause bis Freitag. Unterschrieben. <sub>(864)</sub>
+- → „Beim Bäcker. Allein.“ <sub>(865)</sub>
+- **[Sommer]** Allein. Mit drei Croissants. Klar. <sub>(866)</sub>
+- **[Sommer]** Zettel von zuhause bis Freitag. <sub>(866)</sub>
+- → „Mir war schlecht.“ <sub>(867)</sub>
+- **[Sommer]** Dann bring morgen einen Zettel. Von zuhause. <sub>(868)</sub>
+- **[Sommer]** Hast du Dario und Luca gesehen? <sub>(871)</sub>
+- **[Sommer]** Hm. <sub>(873)</sub>
+- → „Nö.“ <sub>(873)</sub>
+- **[Sommer]** Danke. <sub>(874)</sub>
+- → „Die sind beim Bäcker.“ <sub>(874)</sub>
 
 ### schlichten
 
-- **[Ben]** Okay … wir wollten beide spielen. <sub>(878)</sub>
-- **[Jo]** Dann halbe Pause ihr, halbe Pause wir? <sub>(878)</sub>
-- **[Ben]** Deal. <sub>(878)</sub>
-- **[Sommer]** (pfeift) Gut. Und jetzt Korbball. <sub>(879)</sub>
-- **[Lina]** (leise) Das war cool, {name}. <sub>(879)</sub>
+- **[Ben]** Okay … wir wollten beide spielen. <sub>(881)</sub>
+- **[Jo]** Dann halbe Pause ihr, halbe Pause wir? <sub>(881)</sub>
+- **[Ben]** Deal. <sub>(881)</sub>
+- **[Sommer]** (pfeift) Gut. Und jetzt Korbball. <sub>(882)</sub>
+- **[Lina]** (leise) Das war cool, {name}. <sub>(882)</sub>
 
 ### noahWoche
 
-- **[Noah]** Hoffmann hat mich drangenommen. Ich wusste es. Er war geschockt. <sub>(881)</sub>
-- **[Noah]** Sorry wegen der Hausaufgabe. Das hat dir Ärger gemacht. <sub>(881)</sub>
-- **[Noah]** Schönes Wochenende, {name}. <sub>(881)</sub>
+- **[Noah]** Hoffmann hat mich drangenommen. Ich wusste es. Er war geschockt. <sub>(884)</sub>
+- **[Noah]** Sorry wegen der Hausaufgabe. Das hat dir Ärger gemacht. <sub>(884)</sub>
+- **[Noah]** Schönes Wochenende, {name}. <sub>(884)</sub>
 
 ### matheErklaeren
 
-- **[Chiara]** Halbe Pizza plus Viertel Pizza. Wie viel? <sub>(883)</sub>
-- **[Chiara]** Ja. Siehst du. Jetzt lass mich. <sub>(885)</sub>
-- → 3/4 <sub>(885)</sub>
-- **[Chiara]** Nein. Die Stücke müssen gleich groß sein. <sub>(886)</sub>
-- **[Chiara]** Halbe sind zwei Viertel. Plus eins. Drei Viertel. <sub>(886)</sub>
-- **[Chiara]** Wenn’s nicht klickt: Laurent. Donnerstags. <sub>(886)</sub>
-- → 2/6 <sub>(886)</sub>
-- **[Chiara]** (muss lachen) Konzentrier dich. Drei Viertel. <sub>(887)</sub>
-- → „Jetzt hab ich Hunger.“ <sub>(887)</sub>
+- **[Chiara]** Halbe Pizza plus Viertel Pizza. Wie viel? <sub>(886)</sub>
+- **[Chiara]** Ja. Siehst du. Jetzt lass mich. <sub>(888)</sub>
+- → 3/4 <sub>(888)</sub>
+- **[Chiara]** Nein. Die Stücke müssen gleich groß sein. <sub>(889)</sub>
+- **[Chiara]** Halbe sind zwei Viertel. Plus eins. Drei Viertel. <sub>(889)</sub>
+- **[Chiara]** Wenn’s nicht klickt: Laurent. Donnerstags. <sub>(889)</sub>
+- → 2/6 <sub>(889)</sub>
+- **[Chiara]** (muss lachen) Konzentrier dich. Drei Viertel. <sub>(890)</sub>
+- → „Jetzt hab ich Hunger.“ <sub>(890)</sub>
 
 ### kayaBeweis
 
-- **[Kaya]** (schaut lange) Okay. Schick mir das. An die Schuladresse. <sub>(894)</sub>
-- → (Den Screenshot zeigen.) <sub>(894)</sub>
-- → (Handy in der Tasche lassen.) <sub>(895)</sub>
+- **[Kaya]** (schaut lange) Okay. Schick mir das. An die Schuladresse. <sub>(897)</sub>
+- → (Den Screenshot zeigen.) <sub>(897)</sub>
+- → (Handy in der Tasche lassen.) <sub>(898)</sub>
 
 ### milaFehlt
 
-- **[Erzähler]** Mila sitzt da. Kapuze auf. Sie schaut niemanden an. <sub>(899)</sub>
+- **[Erzähler]** Mila sitzt da. Kapuze auf. Sie schaut niemanden an. <sub>(902)</sub>
 
 ### milaRest
 
-- **[Erzähler]** Du gehst. Hinter dir: nichts. <sub>(900)</sub>
+- **[Erzähler]** Du gehst. Hinter dir: nichts. <sub>(903)</sub>
 
 ### skateLuca
 
-- **[Luca]** Ah. Die Kantinen-Polizei. <sub>(903)</sub>
-- **[Luca]** Ah. Die Nudel-Nummer. Hi. <sub>(904)</sub>
-- **[Luca]** Du rauchst mit Kenan am Tor, hab ich gehört. <sub>(905)</sub>
+- **[Luca]** Ah. Die Kantinen-Polizei. <sub>(906)</sub>
+- **[Luca]** Ah. Die Nudel-Nummer. Hi. <sub>(907)</sub>
+- **[Luca]** Du rauchst mit Kenan am Tor, hab ich gehört. <sub>(908)</sub>
 
 ### screenshotDu
 
-- **[Noah]** Sorry. Ich hab nicht gelacht. Glaub ich. <sub>(913)</sub>
-- **[Noah]** Dann weiß Jo, dass ich’s war … <sub>(915)</sub>
-- **[Noah]** … Okay. Mach ich. Später. <sub>(915)</sub>
-- → „Leite mir das weiter. Für Kaya.“ <sub>(915)</sub>
-- **[Noah]** (erleichtert) Ja, oder? <sub>(916)</sub>
-- → „Ist doch lustig.“ (Ist es nicht.) <sub>(916)</sub>
-- **[Noah]** Lass das. Bitte. Dann geht’s nie zu Ende. <sub>(917)</sub>
-- → „Ich mach was über Jo.“ <sub>(917)</sub>
+- **[Noah]** Sorry. Ich hab nicht gelacht. Glaub ich. <sub>(916)</sub>
+- **[Noah]** Dann weiß Jo, dass ich’s war … <sub>(918)</sub>
+- **[Noah]** … Okay. Mach ich. Später. <sub>(918)</sub>
+- → „Leite mir das weiter. Für Kaya.“ <sub>(918)</sub>
+- **[Noah]** (erleichtert) Ja, oder? <sub>(919)</sub>
+- → „Ist doch lustig.“ (Ist es nicht.) <sub>(919)</sub>
+- **[Noah]** Lass das. Bitte. Dann geht’s nie zu Ende. <sub>(920)</sub>
+- → „Ich mach was über Jo.“ <sub>(920)</sub>
 
 ### noahZahlt
 
-- **[Erzähler]** Noah zahlt. Du merkst dir den Betrag. <sub>(924)</sub>
-- → „Danke. Nächstes Mal ich.“ <sub>(924)</sub>
-- **[Noah]** Ist doch nicht schulden … <sub>(925)</sub>
-- **[Erzähler]** Du bleibst am Brunnen. Allein. <sub>(925)</sub>
-- → „Nee, lass. Ich will nix schulden.“ <sub>(925)</sub>
+- **[Erzähler]** Noah zahlt. Du merkst dir den Betrag. <sub>(927)</sub>
+- → „Danke. Nächstes Mal ich.“ <sub>(927)</sub>
+- **[Noah]** Ist doch nicht schulden … <sub>(928)</sub>
+- **[Erzähler]** Du bleibst am Brunnen. Allein. <sub>(928)</sub>
+- → „Nee, lass. Ich will nix schulden.“ <sub>(928)</sub>
 
 ### benLeihen
 
-- **[Ben]** Du rettest mich. Morgen. Versprochen. Wirklich morgen. <sub>(928)</sub>
-- → „Hier. Zwei Euro.“ (Das Kantinengeld.) <sub>(928)</sub>
-- **[Ben]** Okay, okay. <sub>(929)</sub>
-- **[Erzähler]** Er fragt Yusuf. Yusuf gibt. <sub>(929)</sub>
-- → „Hab nix. Wirklich.“ <sub>(929)</sub>
-- **[Ben]** Wie kleinlich bist du denn? <sub>(930)</sub>
-- **[Yusuf]** (grinst) Stimmt aber. <sub>(930)</sub>
-- → „Du gibst Yusuf auch nie was zurück.“ <sub>(930)</sub>
-- **[Luca]** Die Kantinen-Polizei hat Geld? Ich nehm auch zwei. <sub>(931)</sub>
-- **[Erzähler]** Jetzt wollen zwei was von dir. <sub>(931)</sub>
-- → (Luca kommt dazu.) <sub>(931)</sub>
+- **[Ben]** Du rettest mich. Morgen. Versprochen. Wirklich morgen. <sub>(931)</sub>
+- → „Hier. Zwei Euro.“ (Das Kantinengeld.) <sub>(931)</sub>
+- **[Ben]** Okay, okay. <sub>(932)</sub>
+- **[Erzähler]** Er fragt Yusuf. Yusuf gibt. <sub>(932)</sub>
+- → „Hab nix. Wirklich.“ <sub>(932)</sub>
+- **[Ben]** Wie kleinlich bist du denn? <sub>(933)</sub>
+- **[Yusuf]** (grinst) Stimmt aber. <sub>(933)</sub>
+- → „Du gibst Yusuf auch nie was zurück.“ <sub>(933)</sub>
+- **[Luca]** Die Kantinen-Polizei hat Geld? Ich nehm auch zwei. <sub>(934)</sub>
+- **[Erzähler]** Jetzt wollen zwei was von dir. <sub>(934)</sub>
+- → (Luca kommt dazu.) <sub>(934)</sub>
 
 ### benMorgen
 
-- **[Erzähler]** Das mit „morgen“ hat er heute schon zweimal gesagt. <sub>(934)</sub>
+- **[Erzähler]** Das mit „morgen“ hat er heute schon zweimal gesagt. <sub>(937)</sub>
 
 ### zuhauseFolge
 
-- **[Erzähler]** Nach der Stunde. Alle sind raus. <sub>(938)</sub>
-- **[Hoffmann]** Der Ton gerade. Was war los? <sub>(939)</sub>
-- **[Hoffmann]** Okay. Hausaufgabe bis Freitag. <sub>(941)</sub>
-- → „Müde.“ <sub>(941)</sub>
-- **[Hoffmann]** Okay. Nichts. <sub>(942)</sub>
-- → „Nichts.“ <sub>(942)</sub>
-- **[Hoffmann]** Okay. Geh ruhig. <sub>(943)</sub>
-- → (Schweigen.) <sub>(943)</sub>
-- **[Erzähler]** Nach der Stunde. Alle sind raus. <sub>(945)</sub>
-- **[Hoffmann]** Ich frag nicht nach Details. Musst du nicht erzählen. <sub>(946)</sub>
-- **[Hoffmann]** Hausaufgabe bis Freitag. Und wenn’s öfter so ist: Kaya. <sub>(947)</sub>
-- → „Okay.“ <sub>(949)</sub>
-- **[Hoffmann]** Manches muss er. Er sagt dir vorher, was. <sub>(950)</sub>
-- → „Kaya erzählt eh alles weiter.“ <sub>(950)</sub>
-- **[Hoffmann]** (ruft nach) Freitag, {name}! <sub>(951)</sub>
-- → (Gehen, ohne was zu sagen.) <sub>(951)</sub>
+- **[Erzähler]** Nach der Stunde. Alle sind raus. <sub>(941)</sub>
+- **[Hoffmann]** Der Ton gerade. Was war los? <sub>(942)</sub>
+- **[Hoffmann]** Okay. Hausaufgabe bis Freitag. <sub>(944)</sub>
+- → „Müde.“ <sub>(944)</sub>
+- **[Hoffmann]** Okay. Nichts. <sub>(945)</sub>
+- → „Nichts.“ <sub>(945)</sub>
+- **[Hoffmann]** Okay. Geh ruhig. <sub>(946)</sub>
+- → (Schweigen.) <sub>(946)</sub>
+- **[Erzähler]** Nach der Stunde. Alle sind raus. <sub>(948)</sub>
+- **[Hoffmann]** Ich frag nicht nach Details. Musst du nicht erzählen. <sub>(949)</sub>
+- **[Hoffmann]** Hausaufgabe bis Freitag. Und wenn’s öfter so ist: Kaya. <sub>(950)</sub>
+- → „Okay.“ <sub>(952)</sub>
+- **[Hoffmann]** Manches muss er. Er sagt dir vorher, was. <sub>(953)</sub>
+- → „Kaya erzählt eh alles weiter.“ <sub>(953)</sub>
+- **[Hoffmann]** (ruft nach) Freitag, {name}! <sub>(954)</sub>
+- → (Gehen, ohne was zu sagen.) <sub>(954)</sub>
 
 ### unfairDanach
 
-- **[Erzähler]** Nach zehn Minuten geht die Tür auf. <sub>(955)</sub>
-- **[Hoffmann]** Ayla sagt, du warst es nicht. <sub>(956)</sub>
-- **[Hoffmann]** Ich hab mich vertan. Sorry. <sub>(956)</sub>
-- **[Hoffmann]** Komm rein. Und ab jetzt: ruhig. <sub>(957)</sub>
-- **[Hoffmann]** Der Ton steht trotzdem im Klassenbuch. <sub>(958)</sub>
-- **[Erzähler]** In der Pause. Jo steht neben dir. <sub>(959)</sub>
-- **[Jo]** Danke. Ehrlich. Hast was gut. <sub>(959)</sub>
-- **[Erzähler]** Nach der Stunde. <sub>(960)</sub>
-- **[Hoffmann]** Du wolltest was sagen. Zwei Minuten. <sub>(960)</sub>
-- **[Hoffmann]** Ich red mit ihm. Und: War unfair. Sorry. <sub>(961)</sub>
-- → „Das war Jo.“ <sub>(961)</sub>
-- **[Hoffmann]** … Kann sein. Ich schau nächstes Mal genauer. <sub>(962)</sub>
-- → „Sie haben nur mich gesehen.“ <sub>(962)</sub>
-- **[Hoffmann]** Okay. <sub>(963)</sub>
-- → „Schon gut.“ <sub>(963)</sub>
-- **[Jo]** (leise) Das kriegst du zurück. <sub>(965)</sub>
+- **[Erzähler]** Nach zehn Minuten geht die Tür auf. <sub>(958)</sub>
+- **[Hoffmann]** Ayla sagt, du warst es nicht. <sub>(959)</sub>
+- **[Hoffmann]** Ich hab mich vertan. Sorry. <sub>(959)</sub>
+- **[Hoffmann]** Komm rein. Und ab jetzt: ruhig. <sub>(960)</sub>
+- **[Hoffmann]** Der Ton steht trotzdem im Klassenbuch. <sub>(961)</sub>
+- **[Erzähler]** In der Pause. Jo steht neben dir. <sub>(962)</sub>
+- **[Jo]** Danke. Ehrlich. Hast was gut. <sub>(962)</sub>
+- **[Erzähler]** Nach der Stunde. <sub>(963)</sub>
+- **[Hoffmann]** Du wolltest was sagen. Zwei Minuten. <sub>(963)</sub>
+- **[Hoffmann]** Ich red mit ihm. Und: War unfair. Sorry. <sub>(964)</sub>
+- → „Das war Jo.“ <sub>(964)</sub>
+- **[Hoffmann]** … Kann sein. Ich schau nächstes Mal genauer. <sub>(965)</sub>
+- → „Sie haben nur mich gesehen.“ <sub>(965)</sub>
+- **[Hoffmann]** Okay. <sub>(966)</sub>
+- → „Schon gut.“ <sub>(966)</sub>
+- **[Jo]** (leise) Das kriegst du zurück. <sub>(968)</sub>
 
 ### portiFolge
 
-- **[Ben]** Komisch. Da waren zwanzig drin. Jetzt sechzehn. <sub>(971)</sub>
-- **[Ben]** Hättest fragen können. <sub>(973)</sub>
-- **[Ben]** … Okay. Quitt. <sub>(973)</sub>
-- → „Du schuldest mir vier. Jetzt quitt.“ <sub>(973)</sub>
-- **[Ben]** Finderlohn? Aus meinem Portemonnaie? <sub>(974)</sub>
-- **[Erzähler]** Er redet den Rest des Tages nicht mit dir. <sub>(974)</sub>
-- → „Hab vier genommen. Finderlohn.“ <sub>(974)</sub>
-- **[Ben]** Hm. <sub>(975)</sub>
-- **[Erzähler]** Er schaut dich einen Moment zu lang an. <sub>(975)</sub>
-- → „Keine Ahnung.“ <sub>(975)</sub>
-- **[Hoffmann]** Bens Portemonnaie lag im Müll. Das Geld ist weg. <sub>(977)</sub>
-- **[Hoffmann]** Wer war nach Sport im WC? <sub>(977)</sub>
-- **[Noah]** (leise) Ich hab {name} reingehen sehen … <sub>(977)</sub>
-- **[Hoffmann]** Gut, dass du es sagst. Das geht trotzdem nach Hause. <sub>(979)</sub>
-- **[Ben]** (sagt nichts mehr) <sub>(979)</sub>
-- → „Ich war’s. Ich geb’s zurück.“ <sub>(979)</sub>
-- **[Hoffmann]** Hm. Ich frag weiter. <sub>(980)</sub>
-- **[Erzähler]** Noah redet in der Pause nicht mit dir. <sub>(980)</sub>
-- → „Da waren viele drin.“ <sub>(980)</sub>
-- **[Noah]** Ich hab nur gesagt, was ich gesehen hab. <sub>(981)</sub>
-- → „Danke auch, Noah.“ <sub>(981)</sub>
-- **[Ben]** Mein Portemonnaie ist weg. Mit allem. <sub>(983)</sub>
-- **[Ben]** Du warst doch im WC, oder? <sub>(983)</sub>
-- **[Ben]** Und dann? Einfach liegen lassen? <sub>(985)</sub>
-- **[Ben]** … Okay. Nicht deine Schuld. Trotzdem. <sub>(985)</sub>
-- → „Ja. Es lag da. Ich hab’s liegen lassen.“ <sub>(985)</sub>
-- **[Ben]** Okay. <sub>(986)</sub>
-- → „Nö.“ <sub>(986)</sub>
-- **[Ben]** Weber sagt, jemand hat mein Portemonnaie abgegeben. Warst du das? <sub>(988)</sub>
-- **[Ben]** Danke. Echt. <sub>(989)</sub>
-- **[Ben]** Ja, voll. <sub>(989)</sub>
-- → „Ja.“ <sub>(989)</sub>
-- → „Nö. Glück gehabt.“ <sub>(989)</sub>
-- **[Ben]** Hier. Zwei Euro. Diesmal echt. <sub>(990)</sub>
-- **[Erzähler]** Er gibt sie dir. Dann fragt er nach einem Kaugummi. <sub>(990)</sub>
+- **[Ben]** Komisch. Da waren zwanzig drin. Jetzt sechzehn. <sub>(974)</sub>
+- **[Ben]** Hättest fragen können. <sub>(976)</sub>
+- **[Ben]** … Okay. Quitt. <sub>(976)</sub>
+- → „Du schuldest mir vier. Jetzt quitt.“ <sub>(976)</sub>
+- **[Ben]** Finderlohn? Aus meinem Portemonnaie? <sub>(977)</sub>
+- **[Erzähler]** Er redet den Rest des Tages nicht mit dir. <sub>(977)</sub>
+- → „Hab vier genommen. Finderlohn.“ <sub>(977)</sub>
+- **[Ben]** Hm. <sub>(978)</sub>
+- **[Erzähler]** Er schaut dich einen Moment zu lang an. <sub>(978)</sub>
+- → „Keine Ahnung.“ <sub>(978)</sub>
+- **[Hoffmann]** Bens Portemonnaie lag im Müll. Das Geld ist weg. <sub>(980)</sub>
+- **[Hoffmann]** Wer war nach Sport im WC? <sub>(980)</sub>
+- **[Noah]** (leise) Ich hab {name} reingehen sehen … <sub>(980)</sub>
+- **[Hoffmann]** Gut, dass du es sagst. Das geht trotzdem nach Hause. <sub>(982)</sub>
+- **[Ben]** (sagt nichts mehr) <sub>(982)</sub>
+- → „Ich war’s. Ich geb’s zurück.“ <sub>(982)</sub>
+- **[Hoffmann]** Hm. Ich frag weiter. <sub>(983)</sub>
+- **[Erzähler]** Noah redet in der Pause nicht mit dir. <sub>(983)</sub>
+- → „Da waren viele drin.“ <sub>(983)</sub>
+- **[Noah]** Ich hab nur gesagt, was ich gesehen hab. <sub>(984)</sub>
+- → „Danke auch, Noah.“ <sub>(984)</sub>
+- **[Ben]** Mein Portemonnaie ist weg. Mit allem. <sub>(986)</sub>
+- **[Ben]** Du warst doch im WC, oder? <sub>(986)</sub>
+- **[Ben]** Und dann? Einfach liegen lassen? <sub>(988)</sub>
+- **[Ben]** … Okay. Nicht deine Schuld. Trotzdem. <sub>(988)</sub>
+- → „Ja. Es lag da. Ich hab’s liegen lassen.“ <sub>(988)</sub>
+- **[Ben]** Okay. <sub>(989)</sub>
+- → „Nö.“ <sub>(989)</sub>
+- **[Ben]** Weber sagt, jemand hat mein Portemonnaie abgegeben. Warst du das? <sub>(991)</sub>
+- **[Ben]** Danke. Echt. <sub>(992)</sub>
+- **[Ben]** Ja, voll. <sub>(992)</sub>
+- → „Ja.“ <sub>(992)</sub>
+- → „Nö. Glück gehabt.“ <sub>(992)</sub>
+- **[Ben]** Hier. Zwei Euro. Diesmal echt. <sub>(993)</sub>
+- **[Erzähler]** Er gibt sie dir. Dann fragt er nach einem Kaugummi. <sub>(993)</sub>
 
 ### hoffmannGemerkt
 
-- **[Hoffmann]** (im Vorbeigehen) Das mit Mila neulich. Hab’s mir gemerkt. Danke. <sub>(994)</sub>
+- **[Hoffmann]** (im Vorbeigehen) Das mit Mila neulich. Hab’s mir gemerkt. Danke. <sub>(997)</sub>
 
 ### k5Folgen
 
-- **[Erzähler]** Mila setzt sich in die letzte Reihe. Weit weg. <sub>(998)</sub>
-- **[Erzähler]** Abends eine Nachricht: „niemals, ja? gut zu wissen“ <sub>(998)</sub>
-- **[Mila]** Jetzt denken alle, wir … egal. <sub>(999)</sub>
-- **[Mila]** Danke. Glaub ich. <sub>(999)</sub>
-- **[Lina]** (leise, im Vorbeigehen) Das mit Mila hat Ben rumgeschickt. Nicht Luca. <sub>(1000)</sub>
-- **[Noah]** Hast du den Zettel unterschrieben? Für Hoffmann? <sub>(1001)</sub>
-- **[Noah]** Ich kann Unterschriften. Gut sogar. <sub>(1001)</sub>
-- **[Erzähler]** Zwei Sekunden. Sieht echt aus. <sub>(1003)</sub>
-- **[Noah]** Montag abgeben. Nicht vorher zeigen. <sub>(1003)</sub>
-- → „Mach.“ <sub>(1003)</sub>
-- **[Noah]** Okay. Viel Glück. <sub>(1004)</sub>
-- → „Ich zeig’s zuhause. Wenn’s ruhig ist.“ <sub>(1004)</sub>
-- **[Noah]** Das klappt genau einmal. <sub>(1005)</sub>
-- → „Ich sag, ich hab ihn verloren.“ <sub>(1005)</sub>
-- **[Jo]** (schreibt) „bist wieder drin“ <sub>(1007)</sub>
-- **[Erzähler]** Gruppe: „7P2 ohne Lehrer“. 19 Leute. <sub>(1007)</sub>
-- **[Erzähler]** Jo geht an dir vorbei. Rempelt. Wie aus Versehen. <sub>(1008)</sub>
-- **[Noah]** Was für eine Woche. <sub>(1009)</sub>
+- **[Erzähler]** Mila setzt sich in die letzte Reihe. Weit weg. <sub>(1001)</sub>
+- **[Erzähler]** Abends eine Nachricht: „niemals, ja? gut zu wissen“ <sub>(1001)</sub>
+- **[Mila]** Jetzt denken alle, wir … egal. <sub>(1002)</sub>
+- **[Mila]** Danke. Glaub ich. <sub>(1002)</sub>
+- **[Lina]** (leise, im Vorbeigehen) Das mit Mila hat Ben rumgeschickt. Nicht Luca. <sub>(1003)</sub>
+- **[Noah]** Hast du den Zettel unterschrieben? Für Hoffmann? <sub>(1004)</sub>
+- **[Noah]** Ich kann Unterschriften. Gut sogar. <sub>(1004)</sub>
+- **[Erzähler]** Zwei Sekunden. Sieht echt aus. <sub>(1006)</sub>
+- **[Noah]** Montag abgeben. Nicht vorher zeigen. <sub>(1006)</sub>
+- → „Mach.“ <sub>(1006)</sub>
+- **[Noah]** Okay. Viel Glück. <sub>(1007)</sub>
+- → „Ich zeig’s zuhause. Wenn’s ruhig ist.“ <sub>(1007)</sub>
+- **[Noah]** Das klappt genau einmal. <sub>(1008)</sub>
+- → „Ich sag, ich hab ihn verloren.“ <sub>(1008)</sub>
+- **[Jo]** (schreibt) „bist wieder drin“ <sub>(1010)</sub>
+- **[Erzähler]** Gruppe: „7P2 ohne Lehrer“. 19 Leute. <sub>(1010)</sub>
+- **[Erzähler]** Jo geht an dir vorbei. Rempelt. Wie aus Versehen. <sub>(1011)</sub>
+- **[Noah]** Was für eine Woche. <sub>(1012)</sub>
 
 ### milaWoche
 
-- **[Mila]** Donnerstag. Du weißt schon. <sub>(1012)</sub>
-- **[Mila]** … Okay. Tschüss. <sub>(1012)</sub>
-- **[Jo]** Du schon wieder. Okay, frag. <sub>(1023)</sub>
-- **[Jo]** Frag wen anders. … Na gut. <sub>(1023)</sub>
-- **[Jo]** Was? Red halt. <sub>(1023)</sub>
-- **[Jo]** (grinst) Endlich mal ehrlich. <sub>(1023)</sub>
-- **[Lina]** (nickt nur) <sub>(1024)</sub>
-- **[Lina]** (zeigt auf ein Feld. Lächelt kurz.) <sub>(1024)</sub>
-- **[Lina]** (zuckt zusammen) … okay. <sub>(1024)</sub>
-- **[Ayla]** Klar! Frag! <sub>(1025)</sub>
-- **[Ayla]** Du redest nicht so gern, oder? <sub>(1025)</sub>
-- **[Ayla]** Haha. Ja. Los. <sub>(1025)</sub>
-- **[Ben]** Klar. <sub>(1026)</sub>
-- **[Ben]** Zeig. Oh, das bin ich zweimal! <sub>(1026)</sub>
-- **[Ben]** Hinter uns bringen? Ich liebe Bingo. <sub>(1026)</sub>
-- **[Chiara]** Kurz. Ich hab noch was vor. <sub>(1027)</sub>
-- **[Chiara]** Was soll ich damit? <sub>(1027)</sub>
-- **[Chiara]** Deal. Aber nichts Peinliches. <sub>(1027)</sub>
-- **[Yusuf]** Hm. <sub>(1028)</sub>
-- **[Yusuf]** (liest. Tippt auf „Sport“.) <sub>(1028)</sub>
-- **[Yusuf]** Hm. (Fast ein Grinsen.) <sub>(1028)</sub>
-- → Darf ich dich was fürs Bingo fragen? <sub>(1033)</sub>
-- → (Die Karte hinhalten. Nichts sagen.) <sub>(1034)</sub>
-- → „Ich muss. Du musst. Hinter uns bringen?“ <sub>(1035)</sub>
-- **[Laurent]** Hallo {name}! Lust auf ein paar Aufgaben? <sub>(1098)</sub>
-- **[Laurent]** Schön. Komm wieder, wann du willst. <sub>(1098)</sub>
-- **[Laurent]** Kein Problem. Ich bin da. <sub>(1098)</sub>
-- → Ja, gern. <sub>(1098)</sub>
-- → Heute nicht. <sub>(1098)</sub>
-- **[Erzähler]** Es klingelt. Die Pause ist vorbei. <sub>(1143)</sub>
-- → Noch etwas Pause machen. <sub>(1144)</sub>
-- → Weiter: zum Mittagessen. <sub>(1144)</sub>
-- → Ben hat sich geliehen <sub>(1226)</sub>
-- → Ben hat zurückgezahlt <sub>(1227)</sub>
-- → Münzen im Automaten <sub>(1228)</sub>
-- → Freiwurf-Rekord <sub>(1229)</sub>
-- → Weißt du noch?  <sub>(1346)</sub>
+- **[Mila]** Donnerstag. Du weißt schon. <sub>(1015)</sub>
+- **[Mila]** … Okay. Tschüss. <sub>(1015)</sub>
+- **[Jo]** Du schon wieder. Okay, frag. <sub>(1026)</sub>
+- **[Jo]** Frag wen anders. … Na gut. <sub>(1026)</sub>
+- **[Jo]** Was? Red halt. <sub>(1026)</sub>
+- **[Jo]** (grinst) Endlich mal ehrlich. <sub>(1026)</sub>
+- **[Lina]** (nickt nur) <sub>(1027)</sub>
+- **[Lina]** (zeigt auf ein Feld. Lächelt kurz.) <sub>(1027)</sub>
+- **[Lina]** (zuckt zusammen) … okay. <sub>(1027)</sub>
+- **[Ayla]** Klar! Frag! <sub>(1028)</sub>
+- **[Ayla]** Du redest nicht so gern, oder? <sub>(1028)</sub>
+- **[Ayla]** Haha. Ja. Los. <sub>(1028)</sub>
+- **[Ben]** Klar. <sub>(1029)</sub>
+- **[Ben]** Zeig. Oh, das bin ich zweimal! <sub>(1029)</sub>
+- **[Ben]** Hinter uns bringen? Ich liebe Bingo. <sub>(1029)</sub>
+- **[Chiara]** Kurz. Ich hab noch was vor. <sub>(1030)</sub>
+- **[Chiara]** Was soll ich damit? <sub>(1030)</sub>
+- **[Chiara]** Deal. Aber nichts Peinliches. <sub>(1030)</sub>
+- **[Yusuf]** Hm. <sub>(1031)</sub>
+- **[Yusuf]** (liest. Tippt auf „Sport“.) <sub>(1031)</sub>
+- **[Yusuf]** Hm. (Fast ein Grinsen.) <sub>(1031)</sub>
+- → Darf ich dich was fürs Bingo fragen? <sub>(1036)</sub>
+- → (Die Karte hinhalten. Nichts sagen.) <sub>(1037)</sub>
+- → „Ich muss. Du musst. Hinter uns bringen?“ <sub>(1038)</sub>
+- **[Laurent]** Hallo {name}! Lust auf ein paar Aufgaben? <sub>(1101)</sub>
+- **[Laurent]** Schön. Komm wieder, wann du willst. <sub>(1101)</sub>
+- **[Laurent]** Kein Problem. Ich bin da. <sub>(1101)</sub>
+- → Ja, gern. <sub>(1101)</sub>
+- → Heute nicht. <sub>(1101)</sub>
+- **[Erzähler]** Es klingelt. Die Pause ist vorbei. <sub>(1146)</sub>
+- → Noch etwas Pause machen. <sub>(1147)</sub>
+- → Weiter: zum Mittagessen. <sub>(1147)</sub>
+- → Ben hat sich geliehen <sub>(1231)</sub>
+- → Ben hat zurückgezahlt <sub>(1232)</sub>
+- → Jetons (jetzt / verdient) <sub>(1233)</sub>
+- → Münzen im Automaten <sub>(1234)</sub>
+- → Freiwurf-Rekord <sub>(1235)</sub>
+- → Weißt du noch?  <sub>(1352)</sub>
 
 ## stimmen.js
 

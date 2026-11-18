@@ -128,7 +128,7 @@ export const GESPRAECHE4 = {
         ['erzaehler', 'Er pustet dir eine Wolke ins Gesicht.'] ] },
       { t: 'Einmal ziehen. Nicht husten.', herz: { luca: 1 }, merke: 'gezogen', dann: [
         ['erzaehler', 'Süß. Dann kratzt es. Du hustest nicht. Fast.'],
-        ['luca', 'Respekt. Die meisten husten.'] ] },
+        ['luca', 'Oha. Die meisten husten.'] ] },
       { t: '„Ich hab Asthma.“ (Stimmt nicht.)', merke: 'asthmaLuege', dann: [
         ['luca', 'Ah. Okay. Sorry.'] ] },
       { t: '(Handy raus. Tun, als ob du schreibst.)', staerke: 'lesen', dann: [
@@ -268,7 +268,7 @@ export const GESPRAECHE4 = {
     ['hoffmann', '{name}? Was nimmst du dir vor? Kein Weltfrieden.'],
     { wahl: [
       { t: 'Einmal im Unterricht etwas fragen.', staerke: 'ziel', merke: 'zielFragen', dann: [['hoffmann', 'Notiert. Ich frag Freitag nach.']] },
-      { t: 'Jemanden ansprechen, der allein ist.', staerke: 'ziel', merke: 'zielAnsprechen', dann: [['hoffmann', 'Notiert. Lina sitzt übrigens immer am Fenster.']] },
+      { t: 'Frau Kremer nach Nachschlag fragen.', staerke: 'ziel', merke: 'zielAnsprechen', dann: [['hoffmann', 'Notiert. Mutig. Sie zählt jede Portion.']] },
       { t: 'Jeden Tag pünktlich am Bus sein.', staerke: 'ziel', merke: 'zielPuenktlich', dann: [['hoffmann', 'Der 7:35 wartet nicht. Frau Weber auch nicht.']] },
       { t: 'Donnerstags in den Hausaufgaben-Club.', staerke: 'ziel', merke: 'zielClub', dann: [['hoffmann', 'Mme Laurent freut sich.']] },
       { t: '„Weiß nicht. Die Woche überleben.“', merke: 'zielUeberleben', dann: [['hoffmann', '(kurzes Lachen) Ehrlich. Nehm ich auch.'], ['jo', 'Gleiches Ziel.']] },

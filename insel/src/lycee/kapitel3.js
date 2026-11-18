@@ -76,7 +76,7 @@ export const GESPRAECHE3 = {
   spaet: [
     ['erzaehler', 'Du klopfst. Alle schauen. Noah steht hinter dir.'],
     { tu: 'spaetFolge' },
-    ['hoffmann', 'Heute ist Schnuppertag. Gleich in der Werkstatt, bei Meister Becker.'],
+    ['hoffmann', 'Neue Methode: Schnuppertag! Werkstatt, bei Meister Becker. Viel Glück.'],
   ],
   regeln: [
     ['becker', 'Morgen. Becker. Hier wird gearbeitet.'],
@@ -95,7 +95,7 @@ export const GESPRAECHE3 = {
       { t: '(Handy nicht in die Kiste. In die Tasche.)', merke: 'handyBehalten', dann: [
         ['erzaehler', 'Keiner merkt es. Es vibriert zweimal.'] ] },
     ] },
-    ['kenan', '(grinst) Er ist streng. Und er sieht alles.'],
+    ['kenan', '(flüstert) Der sieht alles. Sogar Gedanken, glaub ich.'],
     { tu: 'kenanErinnert' },
   ],
   saegen: [
@@ -104,7 +104,7 @@ export const GESPRAECHE3 = {
   ],
   kenanTeam: [
     ['becker', 'Jetzt ein kleines Regal. Immer zu zweit. {name}, du mit Kenan.'],
-    ['kenan', 'Okay. Kannst du schrauben?'],
+    ['kenan', '(nimmt den Bleistift hinterm Ohr) Okay. Kannst du schrauben?'],
     { wahl: [
       { t: 'Nicht so gut. Zeigst du es mir?', staerke: 'hilfe', herz: { kenan: 2 }, dann: [['kenan', 'Klar. Erst vorbohren, dann schrauben. Schau.'], ['erzaehler', 'Kenan zeigt es dir. Beim dritten Mal kannst du es.']] },
       { t: 'Klar, kein Problem.', dann: [['erzaehler', 'Die erste Schraube geht schief.'], ['kenan', 'Halt. Erst vorbohren. Ich zeig’s dir.']] },
@@ -112,7 +112,7 @@ export const GESPRAECHE3 = {
     ] },
     ['erzaehler', 'Nach einer halben Stunde steht das Regal.'],
     { tu: 'regalWackelt' },
-    ['kenan', 'Nicht schlecht für den ersten Tag.'],
+    ['kenan', 'Wackelt kaum. Für den ersten Tag: ein Kunstwerk.'],
   ],
   feedback: [
     ['becker', 'So. Kurz. Ich hab nicht viel Zeit.'],

@@ -86,7 +86,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   Object.assign(welt.orte, ORTE2, ORTE3, ORTE4, ORTE6);
   let paket = ladePaket();   // Aufgaben der Lehrperson (Phase 2) oder Grundaufgaben
   scene.add(welt.gruppe);
-  const sky = createSky({ scene, renderer: rr.renderer, audio, quality: { ...q, shadowSize: Math.min(q.shadowSize || 0, 2048), shadowSpan: 40 }, events });
+  const sky = createSky({ scene, renderer: rr.renderer, audio, quality: { ...q, shadowSize: Math.min(q.shadowSize || 0, 2048), shadowSpan: 28 }, events });
   sky.time.paused = true;
   sky.setStorm(0);   // der Himmel der Insel hat ein Gewitter am Rand – im Lycée nicht
   scene.fog.near = 90; scene.fog.far = 420;
