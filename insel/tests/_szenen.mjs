@@ -12,14 +12,15 @@ const fehler = []; page.on('pageerror', (e) => fehler.push(String(e)));
 await page.goto('file://' + DIST + '?test&start=1&figur=1');
 await page.waitForFunction(() => window.LYCEE && LYCEE.zustand && LYCEE.ui);
 for (let i = 0; i < 40 && await page.evaluate(() => LYCEE.imGespraech); i++) { await page.keyboard.press('KeyE'); await page.waitForTimeout(150); }
+await page.evaluate((n) => { window.__nur = n; }, process.argv[4] || 'n');
 const liste = await page.evaluate(() => {
   const out = []; const G = LYCEE.daten.GESPRAECHE;
   const such = (arr, key, pfad) => (arr || []).forEach((z, i) => { if (z && z.szene) out.push({ key, pfad: pfad.concat(i), szene: z.szene, id: z.id || '' });
     if (z && z.wahl) z.wahl.forEach((w, j) => such(w.dann, key, pfad.concat(i, 'w', j))); });
-  for (const k of Object.keys(G)) if (Array.isArray(G[k]) && k.startsWith('n')) such(G[k], k, []);
+  for (const k of Object.keys(G)) if (Array.isArray(G[k]) && k.startsWith(window.__nur || 'n')) such(G[k], k, []);
   return out;
 });
-const SZ = { hitze: 'hitzeDuell', chat: 'liveChat', checkin: 'checkIn', namen: 'namenRekord', zwei: 'zweiWahrheiten', blind: 'blindParcours', stempel: 'skillsStempel', tanks: 'tankRaten', meinetanks: 'meineTanks', nachhaken: 'nachhaken', teams: 'teamsWaehlen', linie: 'linie', staerken: 'staerkenSchenken', pult: 'gefuehlsPult', lesen: 'gesichterLesen', mischpult: 'mischpult' };
+const SZ = { hitze: 'hitzeDuell', chat: 'liveChat', checkin: 'checkIn', namen: 'namenRekord', zwei: 'zweiWahrheiten', blind: 'blindParcours', stempel: 'skillsStempel', tanks: 'tankRaten', meinetanks: 'meineTanks', nachhaken: 'nachhaken', teams: 'teamsWaehlen', linie: 'linie', staerken: 'staerkenSchenken', sort: 'sortSprint', platz: 'platzwechsel', koerper: 'koerperKarte', synchron: 'synchron', spuren: 'spurenWand', pult: 'gefuehlsPult', lesen: 'gesichterLesen', mischpult: 'mischpult' };
 const gesehen = new Set();
 for (const s of liste) {
   const name = s.szene + (s.id ? '-' + s.id : '');

@@ -140,3 +140,14 @@ Ziel war ≤ 200 Aufrufe und ≤ 400k Dreiecke – überall erreicht. Was es geb
 - **Jugendsprache ausdrücklich erwünscht** („wallah“, „sein Vater“, „digga“, „ich schwör“, „lowkey“, „Aura“ …).
   Die alte Regel „keine Jugendsprache“ ist aufgehoben. Jede Figur hat ihren eigenen Slang (FIGUREN.md, „Slang“).
   Erwachsene reden ohne (Ausnahme: Hoffmann versucht es – als Witz). Derb, sexuell, gegen Herkunft bleibt tabu.
+
+## 18.11. (Nachmittag) – Kapitel 2 und 3 auf rund 30 Minuten, Lese-Ecke, Basketball-Modi
+- **Fünf neue Situations-Spiele**: Sortier-Sprint (Bedürfnis/Wunsch, Gefühlswörter in sechs Ecken), Platzwechsel
+  „Alle, die …“, Körper-Karte (Wo spüre ich das?), Synchronstudio („Wir sind Letzte.“ in fünf Gefühlen), Spuren-Wand
+  (Fakten pinnen, falsche Fährten wackeln, nur belegbare Schlüsse wählbar). Strittige Karten sind ausdrücklich erlaubt.
+- **Kapitel 2** neu dazu: Gruppe „Projekt #3“ am Handy (Noah fragen statt einfach adden; Jo beim Raten stoppen),
+  Kantinen-Szene (Dario hält das Handy tief), Platzwechsel, „Bedürfnis oder Wunsch?“, Kompliment annehmen.
+- **Kapitel 3** neu dazu: Sechs Ecken, „Welches Gefühl fliegt raus?“, Spuren-Wand mit Mila im CDI, Körper-Karte vor der
+  Staffel, Synchronstudio nach dem Sportfest. Faden: Skate-Ecke, links sitzend, postet nur in Pausen.
+- **Lese-Ecke im CDI** (Open World): 4 Comics aus der Klasse, 2 Kurzgeschichten. Blättern, ✓ gelesen, keine Fragen.
+- **Basketball** am Hof: Freiwürfe, Dreier (Streifen schmaler) und H-O-R-S-E gegen Ben, Rekorde je Modus.

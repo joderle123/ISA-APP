@@ -30,6 +30,7 @@ import { FACHLEHRER } from './story/personal.js';
 import { tunN2 } from './story/kapitel2.js';
 import { tunN1 } from './story/kapitel1.js';
 import { tunN3, ORTE_N3 } from './story/kapitel3.js';
+import { baerAnhaenger } from './anhaenger.js';
 import { SCHRITTE, GESPRAECHE, LEUTE, STAERKEN, BINGO, GEHEIMNISSE, SPRECHER, KAPITEL } from './geschichte.js';
 import { ORTE2, CHAT, CHAT5, ichBotschaftThema } from './kapitel2.js';
 import { ORTE3, saegeFolgen } from './kapitel3.js';
@@ -294,6 +295,21 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     spieler = await ladePerson(veil, { ...(FIGUREN[i] || FIGUREN[0]), ...((S && S.aussehen) || {}) });   // Aussehen aus dem Spind-Spiegel
     spieler.group.add(fussSchatten()); scene.add(spieler.group); steuerung.figur = spieler;
     spieler.spiele('Idle');
+    anhaengerDran();
+  }
+  // Anhänger (Lila Bär) an der Hüfte der Spielfigur
+  function anhaengerDran() {
+    if (!spieler) return;
+    const alt = spieler.group.getObjectByName('anhaenger-baer'); if (alt) alt.parent.remove(alt);
+    if (!S || S.anhaenger !== 'baer') return;
+    let h = null; spieler.group.traverse((o) => { if (!h && o.isBone && /hips|pelvis/i.test(o.name)) h = o; });
+    const b = baerAnhaenger();
+    if (h) {
+      spieler.group.updateMatrixWorld(true);
+      const ws = new THREE.Vector3(); h.getWorldScale(ws); b.scale.setScalar(1 / (ws.x || 1));
+      const wq = new THREE.Quaternion(); h.getWorldQuaternion(wq); b.quaternion.copy(wq.invert().multiply(spieler.group.getWorldQuaternion(new THREE.Quaternion())));
+      b.position.set(0.16 / (ws.x || 1), -0.02 / (ws.x || 1), 0.02 / (ws.x || 1)); h.add(b);
+    } else { b.position.set(0.17, 0.95, 0.02); spieler.group.add(b); }
   }
 
   // ---------- Markierungen ----------
@@ -384,7 +400,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         // Situations-Spiel (situation.js): Ausgang → Folgen (wie eine Wahl: staerke, herz, merke, dann)
         const def = typeof z.def === 'function' ? z.def(S.merke, S) : z.def;
         ui.dialogZu();
-        const SZ = { hitze: 'hitzeDuell', chat: 'liveChat', checkin: 'checkIn', namen: 'namenRekord', zwei: 'zweiWahrheiten', blind: 'blindParcours', stempel: 'skillsStempel', tanks: 'tankRaten', meinetanks: 'meineTanks', nachhaken: 'nachhaken', teams: 'teamsWaehlen', pult: 'gefuehlsPult', lesen: 'gesichterLesen', mischpult: 'mischpult', linie: 'linie', staerken: 'staerkenSchenken', pult: 'gefuehlsPult', lesen: 'gesichterLesen', mischpult: 'mischpult' };
+        const SZ = { hitze: 'hitzeDuell', chat: 'liveChat', checkin: 'checkIn', namen: 'namenRekord', zwei: 'zweiWahrheiten', blind: 'blindParcours', stempel: 'skillsStempel', tanks: 'tankRaten', meinetanks: 'meineTanks', nachhaken: 'nachhaken', teams: 'teamsWaehlen', pult: 'gefuehlsPult', lesen: 'gesichterLesen', mischpult: 'mischpult', linie: 'linie', staerken: 'staerkenSchenken', sort: 'sortSprint', platz: 'platzwechsel', koerper: 'koerperKarte', synchron: 'synchron', spuren: 'spurenWand' };
         const r = (await ui[SZ[z.szene] || z.szene](def)) || {};
         const key = z.ausgang ? z.ausgang(r, S.merke) : 'standard';
         S.szenen = S.szenen || {}; if (z.id) S.szenen[z.id] = key;
@@ -1154,6 +1170,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
           S.jetons -= d.preis; S.besitz = [...(S.besitz || []), d.id];
           if (d.art === 'deck') S.deck = d.wert;
           if (d.art === 'lampe') S.spindLampe = d.wert;
+          if (d.art === 'anhaenger') { S.anhaenger = d.wert; anhaengerDran(); }
           sichern(); freund(id, 2, 'gespraech');
           await gespraech([[id, d.satz]]);
           ui.toast('<b>' + esc(d.name) + '</b><span>Liegt jetzt in deinem Spind 117.</span>', 'ly-t-ent');
@@ -1467,7 +1484,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   }
   async function spindAuf() {
     const dinge = alleDinge().filter((d) => (S.besitz || []).includes(d.id));
-    const w = await ui.spind({ dinge, lampe: S.spindLampe || '', deck: S.deck || '', jetons: S.jetons || 0, gesamt: S.jetonsGesamt || 0, lernkarten: (S.lernkarten || []).length });
+    const w = await ui.spind({ dinge, lampe: S.spindLampe || '', deck: S.deck || '', jetons: S.jetons || 0, gesamt: S.jetonsGesamt || 0, lernkarten: (S.lernkarten || []).length, anhaenger: S.anhaenger || null });
     if (w && w.art === 'spiegel') {
       const neu = await ui.editor({ aussehen: { ...(FIGUREN[S.figur] || FIGUREN[0]), ...(S.aussehen || {}) } });
       if (neu) { S.aussehen = neu; sichern(); const p = steuerung.pos.clone(), y = spieler.group.rotation.y; await spielerFigur(S.figur); spieler.group.position.copy(p); spieler.group.rotation.y = y; ui.toast('<b>Spiegel</b><span>Passt. Sieht nach dir aus.</span>'); }
@@ -1476,9 +1493,10 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (w && w.art === 'song') ton(w.wert);
     if (w && w.art === 'deck') { S.deck = w.wert; sichern(); ui.toast('<b>' + esc(w.name) + '</b><span>Ab jetzt dein Brett an der Skate-Ecke.</span>'); }
     if (w && w.art === 'lampe') { S.spindLampe = w.wert; sichern(); }
+    if (w && w.art === 'anhaenger') { S.anhaenger = S.anhaenger === w.wert ? null : w.wert; sichern(); anhaengerDran(); ui.toast('<b>' + esc(w.name) + '</b><span>' + (S.anhaenger ? 'Hängt jetzt an dir.' : 'Bleibt im Spind.') + '</span>'); }
   }
   const ia = createInteraktionen({ welt, steuerung, ui, zustand: () => S, sichern: () => sichern(), ton, blattWahl, spindAuf: () => spindAuf(),
-    freiwurf: async () => ui.freiwurf(), skate: () => skaten(), freund: (id, n, g) => freund(id, n, g),
+    freiwurf: async (o) => ui.freiwurf(o), skate: () => skaten(), freund: (id, n, g) => freund(id, n, g),
     partner: () => { const b = besteFreunde()[0] || GLEICHALTRIGE.find((id) => S.herz[id] != null); return b ? { id: b, name: LEUTE[b].name } : null; } });
   let iaNah = null;
   // Mission „Tank auffüllen“ (Kurs-Ritual nach Modul 1): passende Tätigkeiten in der Welt zählen

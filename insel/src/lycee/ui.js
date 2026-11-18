@@ -1,6 +1,7 @@
 // Lycée-Simulator – Oberfläche: Auftrag oben links, Raumname, Hinweis „E – reden“, Gespräche mit Auswahl, Stärken-Abzeichen,
 // Bingo-Karte, Journal (Tab), Titelbild mit Figur und Name, Kapitel-Ende, Freiwurf-Spiel. Alles im DOM über der 3D-Ansicht.
 // Bedienung: Maus/Tastatur (E, Enter, Leertaste = weiter; 1–3 = Antwort) und Finger (Joystick links, Knopf rechts).
+import { BAER_SVG } from './anhaenger.js';
 const esc = (s) => String(s == null ? '' : s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const el = (tag, cls, html) => { const e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; };
 
@@ -243,51 +244,138 @@ export function createUI({ root, input, speech }) {
   });
 
   // Freiwurf: Kraft-Balken pendelt, im grünen Bereich drücken. 5 Würfe.
-  ui.freiwurf = () => new Promise((ok) => {
-    const k = ebeneAuf('spiel', '<h2>Freiwürfe</h2><p class="ly-leer">Drück <kbd>E</kbd> (oder tippe), wenn der Strich im grünen Bereich ist.</p>' +
-      '<canvas width="520" height="300"></canvas><div class="ly-fw-stand"></div><button type="button" class="ly-btn ly-primaer ly-fw-wurf">Werfen</button>');
-    const cv = k.querySelector('canvas'), x = cv.getContext('2d'), stand = k.querySelector('.ly-fw-stand'), wurfBtn = k.querySelector('.ly-fw-wurf');
-    let wurf = 0, treffer = 0, t = 0, fliegt = null, fertig = false, last = performance.now();
-    const ZONE = [0.62, 0.78];
+  // Freiwürfe wie in einem Basketball-Spiel: Finger auf den Ball, halten (Wurf-Messer füllt sich), nach oben wischen
+  // und loslassen. Richtung des Wischens = Ziel, Loslassen im grünen Streifen = perfekter Wurf („grün“ → Swish).
+  // Tastatur: E / Leertaste halten und loslassen (gerade nach vorn). Rückgabe: Treffer von 5.
+  // Basketball: modus 'frei' (5 Freiwürfe), 'dreier' (5 Dreier, grüner Streifen schmaler), 'horse' (H-O-R-S-E gegen eine Figur).
+  // Rückgabe: Treffer (Zahl); bei 'horse' zusätzlich ui.letzteRunde = { sieg, ich, er }.
+  ui.freiwurf = ({ modus = 'frei', gegner = 'Ben' } = {}) => new Promise((ok) => {
+    const HORSE = modus === 'horse', DREIER = modus === 'dreier', MAX = HORSE ? 10 : 5;
+    const titel = HORSE ? 'H-O-R-S-E gegen ' + esc(gegner) : DREIER ? 'Dreier' : 'Freiwürfe';
+    const k = ebeneAuf('spiel', '<h2>' + titel + '</h2><p class="ly-leer">Finger auf den Ball · halten · nach oben wischen · loslassen, wenn der Balken im <b style="color:#3fa66b">grünen Streifen</b> ist.</p>' +
+      '<canvas width="520" height="420" class="ly-bb"></canvas><div class="ly-fw-stand"></div>');
+    const cv = k.querySelector('canvas'), x = cv.getContext('2d'), stand = k.querySelector('.ly-fw-stand');
+    const W = 520, H = 420, KORB = { x: 260, y: 118, r: 26 }, BALL0 = { x: 260, y: 372 };
+    const GRUEN = DREIER ? [0.83, 0.89] : [0.8, 0.9];
+    let zug = 'ich', ichRein = false, buchI = 0, buchE = 0, erTreffer = 0;
+    let wurf = 0, treffer = 0, serie = 0, fertig = false, halten = null, fliegt = null, meldung = '', mT = 0, mF = '#fff', netz = 0, last = performance.now();
+    const pos = (e) => { const r = cv.getBoundingClientRect(); return { x: (e.clientX - r.left) / r.width * W, y: (e.clientY - r.top) / r.height * H }; };
+    const meter = (now) => { if (!halten) return 0; const u = (now - halten.t0) / 1000 / 0.95; return u <= 1 ? u : Math.max(0, 1 - (u - 1) * 2.2); };   // füllt sich, fällt danach schnell
+    const start = (p) => { if (fliegt || fertig || halten || zug !== 'ich' || wurf >= MAX) return; halten = { t0: performance.now(), x0: p.x, y0: p.y, x: p.x, y: p.y }; };
+    const los = () => {
+      if (!halten) return;
+      const now = performance.now(), m = meter(now);
+      const dx = halten.x - halten.x0, dy = halten.y0 - halten.y, lang = Math.hypot(dx, dy);
+      const ziel = lang > 25 ? Math.max(-1, Math.min(1, dx / Math.max(60, dy))) : 0;   // Wisch-Richtung; ohne Wischen: gerade
+      halten = null; wurf++;
+      const zeit = m >= GRUEN[0] && m <= GRUEN[1] ? 0 : m < GRUEN[0] ? (m - GRUEN[0]) : (m - GRUEN[1]);   // <0 zu früh, >0 zu spät
+      const fehler = (Math.abs(zeit) * 2.2 + Math.abs(ziel) * 1.1) * (DREIER ? 1.25 : 1);
+      let art;
+      if (fehler < 0.06) art = 'swish'; else if (fehler < 0.22) art = Math.random() < 0.62 - fehler ? 'ring-rein' : 'ring-raus'; else if (fehler < 0.45) art = 'ring-raus'; else art = 'daneben';
+      const rein = art === 'swish' || art === 'ring-rein';
+      if (rein) { treffer++; serie++; } else serie = 0;
+      ichRein = rein;
+      fliegt = { u: 0, wer: 'ich', art, ziel, kurz: zeit < -0.25, lang: zeit > 0.2, rein, tipp: zeit < 0 ? 'Zu früh losgelassen' : zeit > 0 ? 'Zu spät losgelassen' : Math.abs(ziel) > 0.2 ? (ziel < 0 ? 'Zu weit links' : 'Zu weit rechts') : '' };
+    };
+    cv.addEventListener('pointerdown', (e) => { e.preventDefault(); cv.setPointerCapture(e.pointerId); start(pos(e)); });
+    cv.addEventListener('pointermove', (e) => { if (halten) { const p = pos(e); halten.x = p.x; halten.y = p.y; } });
+    cv.addEventListener('pointerup', (e) => { e.preventDefault(); los(); });
+    cv.addEventListener('pointercancel', () => { halten = null; });
+    const runter = (e) => { if (['KeyE', 'Space', 'Enter'].includes(e.code)) { e.preventDefault(); e.stopPropagation(); if (!e.repeat) start({ x: BALL0.x, y: BALL0.y }); } };
+    const hoch = (e) => { if (['KeyE', 'Space', 'Enter'].includes(e.code)) { e.preventDefault(); e.stopPropagation(); los(); } };
+    document.addEventListener('keydown', runter, true); document.addEventListener('keyup', hoch, true);
+    const WORT = 'HORSE';
+    const zeige = () => { stand.textContent = HORSE ? 'Runde ' + Math.min(MAX, wurf + (zug === 'ich' && !fliegt ? 1 : 0)) + ' · Du: ' + (WORT.slice(0, buchI) || '–') + ' · ' + gegner + ': ' + (WORT.slice(0, buchE) || '–')
+      : 'Wurf ' + Math.min(MAX, wurf + (fliegt ? 0 : 1)) + ' von ' + MAX + ' · Treffer: ' + treffer + (serie >= 2 ? ' · Serie ' + serie + ' 🔥' : ''); };
+    const gegnerWurf = () => {
+      const r = Math.random(), art = r < 0.34 ? 'swish' : r < 0.55 ? 'ring-rein' : r < 0.8 ? 'ring-raus' : 'daneben';
+      const rein = art === 'swish' || art === 'ring-rein'; if (rein) erTreffer++;
+      fliegt = { u: 0, wer: 'gegner', art, ziel: (Math.random() - 0.5) * (rein ? 0.1 : 0.5), rein, tipp: '' };
+    };
+    const ende = () => { fertig = true; setTimeout(() => { document.removeEventListener('keydown', runter, true); document.removeEventListener('keyup', hoch, true); ebeneZu(); if (HORSE) ui.letzteRunde = { sieg: buchE > buchI, ich: buchI, er: buchE }; ok(treffer); }, HORSE ? 1800 : 900); };
+    // Zeichnen: Blick von hinten auf den Korb (Feld in Perspektive)
+    const feld = () => {
+      const g = x.createLinearGradient(0, 160, 0, H); g.addColorStop(0, '#c9874f'); g.addColorStop(1, '#e0a066'); x.fillStyle = '#2b3245'; x.fillRect(0, 0, W, 170); x.fillStyle = '#9a6a45'; x.fillRect(0, 170, W, H - 170);
+      x.fillStyle = '#39415a'; for (let i = 0; i < 9; i++) x.fillRect(i * 62, 120 + (i % 2) * 6, 40, 50);   // Zuschauer-Schatten
+      x.fillStyle = g; x.beginPath(); x.moveTo(0, H); x.lineTo(W, H); x.lineTo(W * 0.78, 170); x.lineTo(W * 0.22, 170); x.closePath(); x.fill();
+      x.strokeStyle = 'rgba(255,255,255,.75)'; x.lineWidth = 3;
+      x.beginPath(); x.moveTo(W * 0.34, 170); x.lineTo(W * 0.24, H); x.moveTo(W * 0.66, 170); x.lineTo(W * 0.76, H); x.stroke();   // Zone
+      if (DREIER) { x.beginPath(); x.ellipse(W / 2, 175, 230, 205, 0, 0.12, Math.PI - 0.12); x.stroke(); }   // Dreierlinie
+      else { x.beginPath(); x.ellipse(W / 2, 330, 92, 26, 0, 0, Math.PI * 2); x.stroke();   // Freiwurf-Kreis
+        x.beginPath(); x.moveTo(W * 0.27, 330); x.lineTo(W * 0.73, 330); x.stroke(); }
+      // Brett, Korb, Netz
+      x.fillStyle = 'rgba(255,255,255,.92)'; x.fillRect(KORB.x - 64, 42, 128, 80); x.strokeStyle = '#d6452f'; x.lineWidth = 3; x.strokeRect(KORB.x - 64, 42, 128, 80); x.strokeRect(KORB.x - 22, 78, 44, 32);
+      x.fillStyle = '#9aa3ad'; x.fillRect(KORB.x - 4, 122, 8, 50);
+    };
+    const korbVorn = () => {
+      x.strokeStyle = '#e9573a'; x.lineWidth = 4; x.beginPath(); x.ellipse(KORB.x, KORB.y, KORB.r, 7, 0, 0, Math.PI); x.stroke();
+      x.strokeStyle = 'rgba(255,255,255,.9)'; x.lineWidth = 1.5; const s = netz > 0 ? Math.sin(netz * 20) * 3 * netz : 0;
+      for (let i = -4; i <= 4; i++) { x.beginPath(); x.moveTo(KORB.x + i * 6, KORB.y + 4); x.lineTo(KORB.x + i * 3.2 + s, KORB.y + 30 + netz * 6); x.stroke(); }
+      x.beginPath(); x.moveTo(KORB.x - 22, KORB.y + 14); x.lineTo(KORB.x + 22, KORB.y + 14); x.moveTo(KORB.x - 15, KORB.y + 24); x.lineTo(KORB.x + 15, KORB.y + 24); x.stroke();
+    };
+    const korbHinten = () => { x.strokeStyle = '#c4442c'; x.lineWidth = 4; x.beginPath(); x.ellipse(KORB.x, KORB.y, KORB.r, 7, 0, Math.PI, Math.PI * 2); x.stroke(); };
+    const ball = (bx, by, r, dreh = 0) => {
+      x.fillStyle = 'rgba(0,0,0,.18)'; x.beginPath(); x.ellipse(bx, Math.max(by + r * 0.9, 180), r * 0.9, r * 0.25, 0, 0, 7); if (by > 170) x.fill();
+      const g = x.createRadialGradient(bx - r * 0.35, by - r * 0.35, r * 0.2, bx, by, r); g.addColorStop(0, '#f3a25a'); g.addColorStop(1, '#c75f1e');
+      x.fillStyle = g; x.beginPath(); x.arc(bx, by, r, 0, 7); x.fill();
+      x.strokeStyle = '#5a2a0e'; x.lineWidth = Math.max(1, r * 0.09); x.beginPath(); x.arc(bx, by, r, 0, 7); x.stroke();
+      x.beginPath(); x.ellipse(bx, by, r * Math.abs(Math.cos(dreh)), r, 0, 0, 7); x.moveTo(bx - r, by); x.lineTo(bx + r, by); x.stroke();
+    };
     const draw = (now) => {
-      if (fertig) return;
-      const dt = Math.min(0.25, (now - last) / 1000); last = now; t += dt;   // Echtzeit: auch auf langsamen Geräten gleich schnell
-      const p = fliegt ? fliegt.p : (Math.sin(t * (2.2 + wurf * 0.35)) + 1) / 2;
-      x.clearRect(0, 0, 520, 300);
-      x.fillStyle = '#d8693f'; x.fillRect(0, 250, 520, 50);
-      // Korb
-      x.fillStyle = '#ffffff'; x.fillRect(430, 40, 10, 90); x.fillStyle = '#d9523c'; x.fillRect(372, 98, 60, 6);
-      x.strokeStyle = '#ffffff'; x.lineWidth = 2; for (let i = 0; i < 5; i++) { x.beginPath(); x.moveTo(374 + i * 14, 104); x.lineTo(380 + i * 10, 130); x.stroke(); }
-      // Balken
-      x.fillStyle = '#e8e1d4'; x.fillRect(30, 30, 24, 200); x.fillStyle = '#3fa66b'; x.fillRect(30, 30 + (1 - ZONE[1]) * 200, 24, (ZONE[1] - ZONE[0]) * 200);
-      x.fillStyle = '#2b3a55'; x.fillRect(24, 30 + (1 - p) * 200 - 2, 36, 5);
-      // Ball
-      let bx = 110, by = 210;
+      const dt = Math.min(0.1, (now - last) / 1000); last = now;
+      x.clearRect(0, 0, W, H); feld(); korbHinten();
+      let vorn = true;
       if (fliegt) {
-        fliegt.u = Math.min(1, fliegt.u + dt * 1.4);
-        const u = fliegt.u, weit = 0.55 + fliegt.p * 0.62;
-        bx = 110 + u * 290 * weit; by = 210 - Math.sin(u * Math.PI) * (150 + fliegt.p * 40) + u * (fliegt.drin ? -110 : -60) * 0.9;
-        if (u >= 1) { fliegt = null; if (wurf >= 5) { fertig = true; setTimeout(() => { ebeneZu(); ok(treffer); }, 700); } }
+        const f = fliegt; if (!f.t0) f.t0 = now; f.u = Math.min(1.6, (now - f.t0) / 1000 * (f.wer === 'gegner' ? 1.25 : 1.05));   // nach Uhrzeit, nicht nach Bildern: auch auf langsamen Geräten gleich schnell
+        const u = Math.min(1, f.u), zielX = KORB.x + f.ziel * 90 + (f.art === 'ring-raus' ? (f.ziel >= 0 ? 10 : -10) : 0);
+        const endY = f.kurz ? KORB.y + 40 : f.lang ? KORB.y - 30 : KORB.y;
+        let bx = BALL0.x + (zielX - BALL0.x) * u, by = BALL0.y + (endY - BALL0.y) * u - Math.sin(u * Math.PI) * 190;
+        const r = 26 - u * 15;
+        if (f.u > 1) {   // nach dem Korb
+          const v = f.u - 1;
+          if (f.rein) { bx = zielX; by = KORB.y + v * 160; vorn = false; if (!f.netz) { f.netz = 1; netz = 1; } }
+          else if (f.art === 'ring-raus') { bx = zielX + (f.ziel >= 0 ? 1 : -1) * v * 140; by = KORB.y - Math.sin(v * 5) * 30 + v * 120; }
+          else { bx = zielX + f.ziel * v * 40; by = endY + v * 220; }
+        }
+        if (f.u > 1 && !f.gemeldet) {
+          f.gemeldet = true;
+          meldung = f.art === 'swish' ? 'SWISH! 💚' : f.art === 'ring-rein' ? 'Drin! (über den Ring)' : f.art === 'ring-raus' ? 'Ring … raus.' : 'Daneben';
+          if (f.wer === 'gegner') meldung = gegner + ': ' + (f.rein ? 'drin.' : 'daneben.');
+          if (!f.rein && f.tipp) meldung += ' · ' + f.tipp;
+          mF = f.art === 'swish' ? '#3fa66b' : f.rein ? '#f2b134' : '#ffffff'; mT = 1.6; zeige();
+        }
+        if (vorn) { korbVorn(); ball(bx, by, Math.max(9, r), u * 9); } else { ball(bx, by, 11, u * 9); korbVorn(); }
+        if (f.u >= 1.6) {
+          fliegt = null;
+          if (!HORSE) { zeige(); if (wurf >= MAX) ende(); }
+          else if (f.wer === 'ich') { zug = 'gegner'; zeige(); setTimeout(() => { if (!fertig) gegnerWurf(); }, 450); }
+          else {
+            if (ichRein && !f.rein) buchE++; else if (!ichRein && f.rein) buchI++;
+            zug = 'ich'; zeige();
+            if (buchI >= 5 || buchE >= 5 || wurf >= MAX) { meldung = buchE > buchI ? 'Gewonnen! 🏆' : buchI > buchE ? gegner + ' gewinnt.' : 'Unentschieden.'; mF = '#f2b134'; mT = 2; ende(); }
+          }
+        }
+      } else {
+        korbVorn();
+        const lift = halten ? Math.min(14, (now - halten.t0) / 40) : 0;
+        if (HORSE && zug === 'gegner') { x.fillStyle = 'rgba(255,255,255,.9)'; x.font = 'bold 16px system-ui'; x.textAlign = 'center'; x.fillText(gegner + ' ist dran …', W / 2, H - 10); }
+        ball(BALL0.x + (halten ? Math.max(-30, Math.min(30, (halten.x - halten.x0) * 0.2)) : 0), BALL0.y - lift, 26);
+        // Wurf-Messer rechts neben dem Ball
+        const m = meter(now), mx = BALL0.x + 52, my = BALL0.y - 70;
+        x.fillStyle = 'rgba(0,0,0,.35)'; x.fillRect(mx, my, 14, 90);
+        x.fillStyle = '#3fa66b'; x.fillRect(mx, my + (1 - GRUEN[1]) * 90, 14, (GRUEN[1] - GRUEN[0]) * 90);
+        x.fillStyle = m >= GRUEN[0] && m <= GRUEN[1] ? '#7CFC9A' : '#ffffff'; x.fillRect(mx - 3, my + (1 - m) * 90 - 2, 20, 4);
+        if (halten) { x.strokeStyle = 'rgba(255,255,255,.6)'; x.setLineDash([6, 6]); x.lineWidth = 2; x.beginPath(); x.moveTo(halten.x0, halten.y0); x.lineTo(halten.x, halten.y); x.stroke(); x.setLineDash([]); }
+        else if (!fertig) { x.fillStyle = 'rgba(255,255,255,.85)'; x.font = 'bold 14px system-ui'; x.textAlign = 'center'; x.fillText('Ball halten und nach oben wischen', W / 2, H - 8); }
       }
-      x.fillStyle = '#e07b39'; x.beginPath(); x.arc(bx, by, 13, 0, 7); x.fill(); x.strokeStyle = '#7a3a12'; x.lineWidth = 1.5; x.beginPath(); x.arc(bx, by, 13, 0, 7); x.moveTo(bx - 13, by); x.lineTo(bx + 13, by); x.stroke();
-      requestAnimationFrame(draw);
+      netz = Math.max(0, netz - dt * 1.4);
+      if (mT > 0) { mT -= dt; x.save(); x.translate(W / 2, 205); x.rotate(-0.05); x.font = '900 30px system-ui'; x.textAlign = 'center'; x.lineWidth = 6; x.strokeStyle = '#1b1d26'; x.strokeText(meldung, 0, 0); x.fillStyle = mF; x.fillText(meldung, 0, 0); x.restore(); }
+      cv.dataset.bereit = !fliegt && !halten && !fertig && zug === 'ich' ? '1' : ''; cv.dataset.wurf = wurf; cv.dataset.zustand = zug + '|' + (fliegt ? fliegt.wer + ':' + fliegt.u.toFixed(2) : '-') + '|' + (halten ? 'h' : '') + '|' + Math.round(now);
+      if (!fertig || mT > 0) requestAnimationFrame(draw);
     };
-    const wirf = () => {
-      if (fliegt || fertig || wurf >= 5) return;
-      const p = (Math.sin(t * (2.2 + wurf * 0.35)) + 1) / 2, drin = p >= ZONE[0] && p <= ZONE[1];
-      wurf++; if (drin) treffer++;
-      fliegt = { p, u: 0, drin };
-      stand.textContent = 'Wurf ' + wurf + ' von 5 · Treffer: ' + treffer + (drin ? ' – drin!' : '');
-    };
-    stand.textContent = 'Wurf 0 von 5';
-    wurfBtn.onclick = wirf; cv.onpointerdown = wirf;
-    const taste = (e) => { if (e.code === 'KeyE' || e.code === 'Space' || e.code === 'Enter') { e.preventDefault(); e.stopPropagation(); wirf(); } if (fertig) document.removeEventListener('keydown', taste, true); };
-    document.addEventListener('keydown', taste, true);
-    requestAnimationFrame(draw);
+    zeige(); requestAnimationFrame(draw);
   });
 
-  // Tischtennis (Hof): von oben gesehen. Tippen / E / Leertaste, wenn der Ball in deiner Zone ist. Drei Bälle; es zählt der
-  // längste Ballwechsel. Der Ball wird mit jedem Treffer etwas schneller. Echtzeit (gleich schnell auf jedem Gerät).
   ui.tischtennis = ({ gegner = '' } = {}) => new Promise((ok) => {
     const k = ebeneAuf('spiel', '<h2>Tischtennis' + (gegner ? ' mit ' + esc(gegner) : '') + '</h2><p class="ly-leer">Tippe (oder <kbd>E</kbd>), wenn der Ball im hellen Feld vor deinem Schläger ist.</p>' +
       '<canvas width="520" height="300"></canvas><div class="ly-fw-stand"></div><button type="button" class="ly-btn ly-primaer ly-fw-wurf">Schlagen</button>');
@@ -463,13 +551,14 @@ export function createUI({ root, input, speech }) {
   });
 
   // Spind 117: eigener Ort. Zeigt Sticker, Lampe, Decks, Songs. Rückgabe: angeklicktes Ding (Song abspielen, Deck/Lampe wählen) oder null
-  ui.spind = ({ dinge, lampe, deck, jetons, gesamt, lernkarten }) => new Promise((ok) => {
+  ui.spind = ({ dinge, lampe, deck, jetons, gesamt, lernkarten, anhaenger = null }) => new Promise((ok) => {
     const nach = (art) => dinge.filter((d) => d.art === art);
-    const st = nach('sticker'), so = nach('song'), de = nach('deck'), la = nach('lampe');
+    const st = nach('sticker'), so = nach('song'), de = nach('deck'), la = nach('lampe'), an = nach('anhaenger');
     const k = ebeneAuf('spind', '<div class="ly-spind" style="--lampe:' + esc(lampe || '#fff4d6') + '"><div class="ly-t-kicker">Spind 117</div>' +
       '<h2>Deins.</h2><div class="ly-spind-tuer">' + (st.length ? st.map((d) => '<span class="ly-sticker" title="' + esc(d.name) + '">' + d.wert + '</span>').join('') : '<small>Noch keine Sticker. Lina hat welche.</small>') + '</div>' +
       '<p class="ly-leer">Jetons: <b>' + jetons + '</b> · insgesamt verdient: ' + gesamt + ' · Lernkarten: ' + lernkarten + '</p>' +
       '<div class="ly-d-optionen">' +
+      an.map((d) => '<button type="button" data-d="' + esc(d.id) + '" class="ly-spind-baer">' + BAER_SVG + '<span>' + esc(d.name) + (d.wert === anhaenger ? ' · hängt an dir ✓' : ' · anhängen') + '</span></button>').join('') +
       so.map((d) => '<button type="button" data-d="' + esc(d.id) + '"><kbd>♪</kbd><span>' + esc(d.name) + '</span></button>').join('') +
       de.map((d) => '<button type="button" data-d="' + esc(d.id) + '"><kbd style="background:' + esc(d.wert) + '"></kbd><span>' + esc(d.name) + (d.wert === deck ? ' · aufs Brett ✓' : ' · aufs Brett') + '</span></button>').join('') +
       la.map((d) => '<button type="button" data-d="' + esc(d.id) + '"><kbd style="background:' + esc(d.wert) + '"></kbd><span>' + esc(d.name) + (d.wert === lampe ? ' · an ✓' : ' · anmachen') + '</span></button>').join('') +

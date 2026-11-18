@@ -517,3 +517,66 @@ kbd { display: inline-block; min-width: 1.5em; padding: 0 .35em; margin-right: .
 .sz-fremd { position: absolute; right: 4px; width: 18px; height: 18px; border-radius: 50%; background: var(--w, transparent); color: #fff; font-style: normal; font-size: 10px; font-weight: 900; display: grid; place-items: center; margin-bottom: 52px; }
 .sz-fremd:empty { display: none; }
 @media (max-width: 640px) { .sz-pult, .sz-mischpult { grid-template-columns: repeat(3, 1fr); } .sz-mischpult input { height: 90px; } }
+.ly-d-optionen .ly-spind-baer { align-items: center; } .ly-spind-baer svg { width: 34px; height: 41px; flex: none; }
+.ly-bb { touch-action: none; cursor: grab; width: min(100%, calc(58vh * 520 / 420)) !important; height: auto !important; box-sizing: border-box; display: block; margin: 0 auto; border-radius: 14px; }
+/* Neue Situations-Spiele: Sortier-Sprint, Platzwechsel, Körper-Karte, Synchronstudio, Spuren-Wand */
+.sz-sort-zahl { align-self: center; font-size: 12px; font-weight: 900; color: #8a93a3; letter-spacing: 1px; }
+.sz .sz-sort-karte { align-self: center; min-width: 220px; max-width: 92%; text-align: center; background: #fff; border: 3px solid #2b3a55; border-radius: 16px; padding: 18px 20px; font-size: 21px; font-weight: 900; box-shadow: 0 5px 0 #2b3a55; touch-action: none; user-select: none; cursor: grab; }
+.sz .sz-sort-karte:empty { display: none; }
+.sz-sort-karte i { font-style: normal; }
+.sz-sort-rede { min-height: 34px; }
+.sz-sort-faecher { grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); display: grid; }
+.sz-sort-faecher.zwei { grid-template-columns: 1fr 1fr; }
+.sz-sort-faecher button { align-items: center; text-align: center; min-height: 54px; }
+.sz-sort-faecher kbd, .sz-karten kbd { font-size: 11px; opacity: .55; margin-left: 4px; }
+.sz-kreis-leute { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; padding: 6px 0; }
+.sz-kreis-leute i { position: relative; width: 40px; height: 40px; border-radius: 50%; background: var(--f); color: #fff; font-style: normal; font-weight: 900; display: grid; place-items: center; transition: transform .25s; opacity: .55; }
+.sz-kreis-leute i small { position: absolute; top: 42px; font-size: 10.5px; color: #5b6472; white-space: nowrap; }
+.sz-kreis-leute i.steht { transform: translateY(-10px) scale(1.12); opacity: 1; box-shadow: 0 6px 0 rgba(0,0,0,.15); }
+.sz-kreis-leute { margin-bottom: 12px; }
+.sz-koerper { position: relative; width: min(300px, 80vw); aspect-ratio: 1; margin: 0 auto; }
+.sz-koerper svg { position: absolute; inset: 0; width: 100%; height: 100%; fill: #e4e8f0; stroke: #b9c1cf; stroke-width: .8; }
+.sz-koerper button { position: absolute; transform: translate(-50%, -50%); border: 2px solid #8a7bc8; background: rgba(255,255,255,.92); border-radius: 999px; padding: 3px 9px; font: inherit; font-size: 12.5px; font-weight: 800; cursor: pointer; }
+.sz-koerper button.an { background: #8a7bc8; color: #fff; box-shadow: 0 0 0 5px rgba(138,123,200,.25); }
+.sz-k-fremd i { position: absolute; transform: translate(-50%, -50%); width: 20px; height: 20px; border-radius: 50%; background: var(--f); color: #fff; font-style: normal; font-size: 11px; font-weight: 900; display: grid; place-items: center; }
+.sz-take { display: flex; flex-direction: column; align-items: center; gap: 6px; background: #1d2333; color: #fff; border-radius: 14px; padding: 14px; text-align: center; }
+.sz-take small { font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: #ff6b6b; font-weight: 900; }
+.sz-take small::before { content: '● REC  '; }
+.sz-take b { font-size: 24px; display: inline-block; }
+.sz-take em { font-size: 13.5px; color: #c9d1e0; font-style: normal; }
+.sz-take-wut { color: #ff7a66; font-size: 30px !important; letter-spacing: 1px; animation: sz-wackel .12s infinite alternate; }
+.sz-take-trauer { color: #9ec3f0; font-size: 19px !important; opacity: .8; letter-spacing: 3px; }
+.sz-take-angst { color: #c8bdf2; font-size: 19px !important; animation: sz-zitter .07s infinite alternate; }
+.sz-take-freude { color: #ffd166; animation: sz-huepf .5s infinite alternate ease-in-out; }
+.sz-take-ueberraschung { color: #ffb38a; font-size: 30px !important; transform: scale(1.05); }
+.sz-take-ekel { color: #a8d88f; transform: skewX(-12deg); }
+@keyframes sz-wackel { to { transform: translateX(2px) rotate(-1deg); } }
+@keyframes sz-zitter { to { transform: translate(1px, -1px); } }
+@keyframes sz-huepf { to { transform: translateY(-5px); } }
+.sz-wand { display: flex; flex-wrap: wrap; gap: 6px; min-height: 40px; background: #c9a77a; border-radius: 10px; padding: 8px; box-shadow: inset 0 0 0 3px #a8855a; }
+.sz-wand:empty::before { content: 'Pinnwand – noch leer'; color: rgba(255,255,255,.8); font-weight: 800; font-size: 12px; }
+.sz-zettel { background: #fff8c4; padding: 4px 8px; font-size: 12.5px; font-weight: 800; border-radius: 3px; transform: rotate(-1.5deg); box-shadow: 0 2px 3px rgba(0,0,0,.18); }
+.sz-zettel:nth-child(even) { transform: rotate(1.5deg); background: #ffe6ef; }
+.sz-spur { font-size: 17px; }
+.sz-karten button[disabled] { opacity: .45; cursor: not-allowed; }
+@media (prefers-reduced-motion: reduce) { .sz-take b { animation: none !important; } }
+/* Lese-Ecke */
+.le-regal { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 8px; }
+.le-regal button { text-align: left; border: 2px solid var(--f); border-left-width: 9px; background: #fff; border-radius: 10px; padding: 9px 12px; font: inherit; cursor: pointer; display: flex; flex-direction: column; gap: 2px; }
+.le-regal button b { font-size: 15.5px; } .le-regal button small { font-size: 12px; color: #6b7482; font-weight: 700; }
+.le-zu { margin-top: 10px; }
+.le-heft { border: 3px solid var(--f); border-radius: 14px; background: #fffdf6; padding: 10px 12px; display: flex; flex-direction: column; gap: 8px; touch-action: pan-y; user-select: none; }
+.le-kopf { display: flex; justify-content: space-between; font-size: 13px; color: var(--f); font-weight: 900; text-transform: uppercase; letter-spacing: .6px; }
+.le-panel { border: 2.5px solid #1d2333; border-radius: 6px; background: linear-gradient(#e8f3ff, #fff7e6); padding: 8px; min-height: 210px; display: flex; flex-direction: column; gap: 6px; }
+.le-panel small { font-size: 11px; font-weight: 900; background: #ffe680; align-self: flex-start; padding: 1px 6px; border: 1.5px solid #1d2333; }
+.le-bild { font-size: 46px; text-align: center; letter-spacing: 4px; padding: 6px 0; line-height: 1.2; }
+.le-blase { align-self: flex-start; background: #fff; border: 2px solid #1d2333; border-radius: 14px 14px 14px 3px; padding: 5px 10px; font-weight: 700; font-size: 15px; max-width: 90%; }
+.le-blase:nth-of-type(even) { align-self: flex-end; border-radius: 14px 14px 3px 14px; }
+.le-blase b { display: block; font-size: 11px; text-transform: uppercase; color: var(--f); }
+.le-blase.erz { background: #fff3c4; border-radius: 3px; align-self: stretch; max-width: none; font-style: italic; }
+.le-unten { margin: 0; font-weight: 900; text-align: center; color: var(--f); }
+.le-text { font-family: Georgia, 'Times New Roman', serif; font-size: 19px; line-height: 1.55; padding: 18px 8px; min-height: 160px; }
+.le-nav { display: flex; justify-content: space-between; gap: 8px; }
+.ly-bb-wahl { display: grid; gap: 8px; }
+.ly-bb-wahl button { text-align: left; display: flex; flex-direction: column; gap: 2px; }
+.ly-bb-wahl small { font-size: 12px; opacity: .75; font-weight: 700; }

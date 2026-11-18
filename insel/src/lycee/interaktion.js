@@ -16,6 +16,7 @@ const BUECHER = [
   ['„Mut ist, wenn …“', 'Ein dünnes Heft. Jemand hat Sätze unterstrichen.'],
 ];
 import { PINNWAND, KRITZELEIEN, FUNDKISTE } from './welttexte.js';
+import { leseEcke, HEFTE } from './lesestoff.js';
 const SNACKS = ['Schokoriegel', 'Chips (Paprika)', 'Gummibärchen', 'Kekse', 'Wasser'];
 
 export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton, blattWahl, freiwurf, skate, spindAuf = null, partner = () => null, freund = () => {} }) {
@@ -35,8 +36,8 @@ export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton
   dazu(-7.3, -65.6, 1.6, 'Klavier spielen', 'klavier', { prio: 1 });
   dazu(49.3, -60.0, 1.3, 'Keyboard spielen', 'keyboard', { prio: 1 });
   dazu(58, -58.8, 1.4, 'Bandprobe mit Ayla', 'schlagzeug', { prio: 1 });
-  for (let x = 4; x < 28; x += 4) dazu(x, -71.0, 1.2, 'Ein Buch nehmen', 'buch', { prio: 1 });
-  for (let z = -70; z < -58; z += 4) dazu(29.0, z, 1.2, 'Ein Buch nehmen', 'buch', { prio: 1 });
+  for (let x = 4; x < 28; x += 4) dazu(x, -71.0, 1.2, 'Lese-Ecke: Comics und Geschichten', 'buch', { prio: 1 });
+  for (let z = -70; z < -58; z += 4) dazu(29.0, z, 1.2, 'Lese-Ecke: Comics und Geschichten', 'buch', { prio: 1 });
   dazu(-6.8, -9, 1.4, 'Pinnwand lesen', 'pinnwand', { prio: 1 });
   dazu(45, -1.8, 1.3, 'In die Fundkiste schauen', 'fundkiste', { prio: 1 });
   dazu(-24.5, 42.6, 1.2, 'Kritzeleien lesen', 'kritzelei', { prio: 0, wo: 'bus' });
@@ -87,12 +88,29 @@ export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton
         ui.toast('<b>' + pz + ' % im Takt</b><span>Ayla: „' + satz + '“ · ' + (pz > alt ? 'Neuer Rekord!' : 'Dein Rekord: ' + s.merke.bandRekord + ' %') + '</span>', 'ly-t-herz');
         return;
       }
-      case 'buch': { s.merke.buecher = (s.merke.buecher || 0) + 1; sichern(); const b = BUECHER[(s.merke.buecher * 3) % BUECHER.length]; await ui.bild(b[0], b[1], 3.2); return; }
+      case 'buch': {
+        s.merke.buecher = (s.merke.buecher || 0) + 1;
+        const r = await leseEcke(ui, s.merke.gelesen || []); s.merke.gelesen = r.gelesen; sichern();
+        if (r.neu) { const h = HEFTE.find((x) => x.id === r.neu); ui.toast('<b>Gelesen: ' + h.titel + '</b><span>' + r.gelesen.length + ' von ' + HEFTE.length + ' Heften in der Lese-Ecke.</span>'); }
+        else if (!r.gelesen.length) { const b = BUECHER[(s.merke.buecher * 3) % BUECHER.length]; await ui.bild(b[0], b[1], 3.2); }
+        return; }
       case 'pinnwand': { const n = s.merke.pinnwand = ((s.merke.pinnwand || 0) + 1); sichern(); await ui.bild('Pinnwand', PINNWAND[(n - 1) % PINNWAND.length].join(' · '), 4.5); return; }
       case 'fundkiste': { const n = s.merke.fundkisteBlick = ((s.merke.fundkisteBlick || 0) + 1); sichern(); ui.toast('<b>Fundkiste</b><span>' + FUNDKISTE[(n - 1) % FUNDKISTE.length] + '</span>'); return; }
       case 'kritzelei': { const l = KRITZELEIEN[i.wo] || KRITZELEIEN.tisch; const k = 'kritzel_' + i.wo; const n = s.merke[k] = ((s.merke[k] || 0) + 1); sichern(); ui.toast('<b>Kritzelei</b><span>' + l[(n - 1) % l.length] + '</span>'); return; }
       case 'giessen': s.merke.gegossen = (s.merke.gegossen || 0) + 1; sichern(); ui.toast(s.merke.gegossen > 3 ? '<b>Kevin, der Kaktus</b><span>Braucht kein Wasser. Er schaut dich vorwurfsvoll an.</span>' : '<b>Gegossen</b><span>Die Tomaten danken. Glaubst du.</span>'); return;
-      case 'korb': { const t = await freiwurf(); s.merke.korbRekord = Math.max(s.merke.korbRekord || 0, t); sichern(); ui.toast('<b>' + t + ' von 5</b><span>Dein Rekord: ' + s.merke.korbRekord + ' von 5.</span>'); return; }
+      case 'korb': {
+        const modus = await new Promise((fertig) => {
+          const k = ui.ebeneAuf('spiel', '<h2>🏀 Korb am Hof</h2><p class="ly-leer">Was spielst du?</p><div class="ly-d-optionen ly-bb-wahl">' +
+            '<button type="button" data-m="frei"><b>Freiwürfe</b><small>5 Würfe · Rekord: ' + (s.merke.korbRekord || 0) + ' von 5</small></button>' +
+            '<button type="button" data-m="dreier"><b>Dreier</b><small>weiter weg, grüner Streifen schmaler · Rekord: ' + (s.merke.dreierRekord || 0) + ' von 5</small></button>' +
+            '<button type="button" data-m="horse"><b>H-O-R-S-E gegen Ben</b><small>Wer trifft, wenn der andere verfehlt, gibt einen Buchstaben · ' + (s.merke.horseSiege || 0) + ' Siege</small></button></div>');
+          k.querySelectorAll('[data-m]').forEach((b) => { b.onclick = () => { ui.ebeneZu(); fertig(b.dataset.m); }; });
+        });
+        const t = await freiwurf({ modus, gegner: 'Ben' });
+        if (modus === 'horse') { const r = ui.letzteRunde || {}; if (r.sieg) s.merke.horseSiege = (s.merke.horseSiege || 0) + 1; sichern(); freund('ben', 3, 'spiel');
+          ui.toast('<b>' + (r.sieg ? 'Du gewinnst H-O-R-S-E!' : 'Ben gewinnt H-O-R-S-E') + '</b><span>Ben: „' + (r.sieg ? 'Revanche. Morgen. Gleiche Zeit.' : 'Ich bin einfach zu gut. Sagt mein Bauch.') + '“</span>', 'ly-t-herz'); return; }
+        const key = modus === 'dreier' ? 'dreierRekord' : 'korbRekord';
+        s.merke[key] = Math.max(s.merke[key] || 0, t); sichern(); ui.toast('<b>' + t + ' von 5' + (modus === 'dreier' ? ' Dreier' : '') + '</b><span>Dein Rekord: ' + s.merke[key] + ' von 5.</span>'); return; }
       case 'skate': {
         const p = await skate(); s.merke.skateRekord = Math.max(s.merke.skateRekord || 0, p); sichern();
         ui.toast('<b>' + p + (p === 1 ? ' Punkt' : ' Punkte') + '</b><span>' + (p && p >= s.merke.skateRekord ? 'Neuer Rekord!' : 'Dein Rekord: ' + s.merke.skateRekord + ' Punkte.') + '</span>');

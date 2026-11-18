@@ -18,10 +18,10 @@ die reagieren.
 - Kapitel öffnen der Reihe nach; Lehrpersonen können mit ihrem Code ein Kapitel direkt öffnen (passend zur Kursstunde).
 - Jugendsprache wie heute, je Figur eigener Slang (FIGUREN.md). Erwachsene reden normal.
 
-## So ist jedes Kapitel gebaut (10–20 Minuten, jederzeit unterbrechbar)
+## So ist jedes Kapitel gebaut (rund 30 Minuten, jederzeit unterbrechbar)
 1. **Check-in am Handy** (Kurs-Ritual Gefühlsrad): Die Klasse postet morgens ihr „Wetter“. Man wählt ein Wort.
    Freund:innen reagieren darauf – nie eine Bewertung.
-2. **Skills-Stunde** bei Herrn Kaya (in der Aula oder im Saal): 1–2 Übungen aus dem Kurs als Spiel.
+2. **Skills-Stunde** bei Herrn Kuedes (in der Aula oder im Saal): 1–2 Übungen aus dem Kurs als Spiel.
 3. **Alltag**: Das Thema passiert in echt – im Klassenchat, in der Kantine, auf dem Hof. 2–3 Situations-Spiele.
    Hier läuft der rote Faden weiter.
 4. **Freie Zeit (Open World)**: Basketball, Skaten, Bibliothek, Bandprobe, Spind, Freundschafts-Gespräche.
@@ -43,7 +43,12 @@ die reagieren.
 | Gesichter lesen | E07 Pantomime, E09 Statuen | Szene friert ein, man liest Hände, Blick, Haltung |
 | Frühwarn-Radar | E09 | Im Streit tauchen Körpersignale auf; wer das erste Warnsignal erwischt, bekommt eine Extra-Karte |
 | Mischpult | E10 | Nach einem Ereignis mehrere Gefühle 0–10 einstellen und mit einem Freund vergleichen |
-| Gerücht-Staffel, Druck-Runde, Spuren-Wand, Mut-Balken | E25–E28, E18, E11 | wie in STORY.md beschrieben |
+| Sortier-Sprint | E04 Bedürfnis/Wunsch, E07 Gefühlswörter | Karten kommen schnell, man wischt sie in Fächer; strittige Karten sind erlaubt und werden besprochen |
+| Platzwechsel „Alle, die …“ | E01/E05 | Wer den Satz für sich passend findet, steht auf; man sieht, mit wem man etwas gemeinsam hat; am Ende eigener Satz |
+| Körper-Karte | E09 | Wo spüre ich das Gefühl? Stellen am Körper antippen, dann mit Freund:innen vergleichen |
+| Synchronstudio | E07 | Ein Satz, fünf Stimmen: Gefühl am Ton erkennen, dann selbst einsprechen |
+| Spuren-Wand | E28 | Hinweise an die Wand pinnen oder wegwerfen; falsche Fährten wackeln; nur belegbare Schlüsse sind wählbar |
+| Gerücht-Staffel, Druck-Runde, Mut-Balken | E25–E27, E18, E11 | wie in STORY.md beschrieben |
 
 Fähigkeiten werden still mitgezählt (Journal „Was du kannst“), nie als Note.
 
@@ -54,13 +59,13 @@ Aufgelöst wird es in Kapitel 10. (Hinter dem Account: Dario, der dazugehören w
 | Kap. | Modul | Thema im Alltag | Spiele | Faden |
 |---|---|---|---|---|
 | 1 | M0 Ankommen | Erster Tag, Klassenchat, Kantine | Live-Chat, Namen-Rekord, Zwei Wahrheiten, Hitze-Duell, Blind-Parcours | Man wird gepostet |
-| 2 | M1 Wer bin ich? | Talenttag, „Top 5 langweiligste Leute“ | Tank-Anzeige, Warnlicht-Raten, Die Linie, Zehn Sekunden Ruhm, Stärken verschenken | Noah und Mila werden gepostet |
-| 3 | M2 Gefühle verstehen | Sportfest, das Mila-Foto | Gefühls-Pult, Gesichter lesen, Frühwarn-Radar, Mischpult, Live-Chat | Erste Spur: der Winkel von links |
+| 2 | M1 Wer bin ich? | Talenttag, „Top 5 langweiligste Leute“, Gruppe „Projekt #3“ | Live-Chat, Warnlicht-Raten, Bedürfnis oder Wunsch?, Platzwechsel, Die Linie, Zehn Sekunden Ruhm, Stärken verschenken, Kompliment annehmen | Noah und Mila werden gepostet |
+| 3 | M2 Gefühle verstehen | Sportfest, das Mila-Foto | Pantomime, Sechs Ecken, Live-Chat, Spuren-Wand, Körper-Karte, Gefühls-Pult, Frühwarn-Radar, Synchronstudio, Mischpult | Erste Spur: der Winkel von links |
 | 4 | M3 Gefühle regulieren | Mathe-Test, Bus verpasst | Anspannungs-Leiter, Skills-Koffer packen | Handy-Kiste: wer hatte seins? |
 | 5 | M4 Meine Gedanken | „Ich kann das eh nicht“ | Kritischer Detektiv, Gedanken-Weiche | Gefälschter Screenshot: angeblich bist DU der Account |
 | 6 | M5 Kommunikation & Grenzen | Foto ohne Frage, Umarmung | Stopp-Jury, Ich-Botschaft-Bau, Abstand | Wer glaubt dir? |
 | 7 | M6 Wenn es schwierig wird | Rauswurf aus dem Chat | Konflikt-Treppe, Druck-Runde, Bühne kippen | Allein – wer bleibt? |
-| 8 | M7 Digitale Welt | Fake-Bild von Hoffmann | Echt oder KI?, Algorithmus-Duell, Spuren-Wand | Die Falle wird gestellt |
+| 8 | M7 Digitale Welt | Fake-Bild von Mme Tidderich | Echt oder KI?, Algorithmus-Duell, Spuren-Wand | Die Falle wird gestellt |
 | 9 | M8 Gesund & stark | Nächte am Handy, Akku leer | Rucksack-Rennen, Akku-Tag | Dario wird unruhig |
 | 10 | M9 Abschluss | Klassenfoto, Sommerfest | Rückblick-Spiel, Brief an dich | Auflösung, vier Enden |
 
@@ -81,7 +86,7 @@ M8 Respekt in Beziehungen (behutsam) · M9 Medien und KI · M10 Abschluss nach d
 ## Open World (immer offen, außerhalb der Kapitel)
 - **Basketball wie in einem echten Basketball-Spiel**: Wischen nach oben = Wurf; Länge und Richtung bestimmen Kraft und Ziel,
   ein Wurf-Messer belohnt das perfekte Loslassen. Freiwurf, Dreier, H-O-R-S-E gegen Ben oder Yusuf.
-- **Skaten** (Tricks per Wischen, Combos), **Bibliothek** (kurze Comics und Geschichten zum Lesen, Linas Hefte),
+- **Skaten** (Tricks per Wischen, Combos), **Lese-Ecke im CDI** (steht: 4 Comics aus der Klasse, 2 Geschichten aus der Schreibwerkstatt; blättern, ✓ gelesen),
   **Bandprobe**, **Tischtennis**, **Spind** mit Spiegel, **Lernen** am eigenen Platz (Jetons).
 - Bestwerte nur gegen sich selbst oder gegen Figuren. Nichts läuft ab, nichts geht verloren.
 

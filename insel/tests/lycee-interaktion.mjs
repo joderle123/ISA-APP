@@ -19,7 +19,7 @@ const bild = (n) => page.screenshot({ path: join(SHOTS, 'lycee-' + n + '.png') }
 
 await page.goto('file://' + DIST + '?test&start=1&figur=1');
 await page.waitForFunction(() => window.LYCEE && LYCEE.zustand && LYCEE.ia);
-for (let i = 0; i < 40 && await L(() => !!document.querySelector('.ly-dialog:not([hidden])')); i++) { await page.keyboard.press('KeyE'); await page.waitForTimeout(150); }
+for (let i = 0; i < 120 && await L(() => LYCEE.imGespraech || !!document.querySelector('.ly-dialog:not([hidden]), .ly-ebene:not([hidden])')); i++) { const w = await L(() => { const b = document.querySelector('.ly-ebene:not([hidden]) [data-a="w"], .ly-ebene:not([hidden]) [data-a="weg"]'); if (b) { b.click(); return true; } return false; }); if (!w) await page.keyboard.press('KeyE'); await page.waitForTimeout(250); }
 await page.waitForFunction(() => !LYCEE.imGespraech);
 const geheZu = (f) => L((f) => {
   const i = LYCEE.ia.liste.find((x) => x.tu === f.tu && (!f.near || Math.hypot(x.x - f.near[0], x.z - f.near[1]) < 3));
@@ -39,9 +39,14 @@ check('Snackautomat: gezählt, Toast', (await L(() => (LYCEE.zustand.merke || {}
 await page.waitForFunction(() => !LYCEE.imGespraech);
 
 await geheZu({ tu: 'buch' }); await page.waitForFunction(() => LYCEE.iaNah === 'buch', null, { timeout: 30000 }).catch(() => {});
-await page.keyboard.press('KeyE'); await page.waitForSelector('.ly-ebene[data-art="bild"]');
-check('Lesesaal: Buch genommen', (await page.textContent('.ly-ebene')).length > 10);
-await page.waitForFunction(() => !LYCEE.imGespraech, null, { timeout: 20000 });
+await page.keyboard.press('KeyE'); await page.waitForSelector('.le-regal');
+check('Lese-Ecke: Regal mit Heften', (await page.$$('.le-regal [data-h]')).length >= 6);
+await page.click('.le-regal [data-h="1"]');
+for (let i = 0; i < 10 && await page.$('.le-heft'); i++) { await page.keyboard.press('ArrowRight'); await page.waitForTimeout(120); }
+check('Lese-Ecke: Heft zu Ende, zurück im Regal', !!(await page.$('.le-regal')));
+await page.click('.le-box [data-a="weg"]');
+await page.waitForFunction(() => !document.querySelector('.ly-ebene:not([hidden])') && !LYCEE.imGespraech, null, { timeout: 20000 });
+check('Lese-Ecke: gemerkt', ((await L(() => LYCEE.zustand.merke.gelesen)) || []).includes('kevin'));
 
 // Arbeitsblatt am eigenen Platz
 await geheZu({ tu: 'arbeiten', near: [-22.1, -24.4] }); await page.waitForFunction(() => LYCEE.iaNah === 'arbeiten', null, { timeout: 30000 }).catch(() => {});

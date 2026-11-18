@@ -156,7 +156,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
         if ((m.wenn && !flags[m.wenn]) || (m.wennNicht && flags[m.wennNicht])) continue;
         zeig(m); leisteNeu();
       }
-      for (const l of lach) { if (l.stopp && flags[l.stopp]) continue; l.n += l.proSek * dt * (1 + lacher); if (l.el) l.el.textContent = '😂 ' + Math.round(l.n); }
+      for (const l of lach) { if (l.stopp && [].concat(l.stopp).some((f) => flags[f])) continue; l.n += l.proSek * dt * (1 + lacher); if (l.el) l.el.textContent = '😂 ' + Math.round(l.n); }
       k.querySelector('.sz-uhr').textContent = 'gesehen von ' + Math.min(def.mitglieder || 19, Math.round(3 + t * 0.6));
       if (t > dauer && !schlange.length) { fertig(); return; }
       requestAnimationFrame(loop);
@@ -169,7 +169,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
   const RAD = [
     ['Freude', '#f2b134', ['gut drauf', 'aufgeregt', 'stolz']], ['Ruhe', '#5fb07a', ['entspannt', 'müde', 'okay']],
     ['Angst', '#8a7bc8', ['nervös', 'unsicher', 'mulmig']], ['Wut', '#d6452f', ['genervt', 'sauer', 'gereizt']],
-    ['Trauer', '#4f88c8', ['down', 'leer', 'enttäuscht']], ['Überraschung', '#e9734a', ['verwirrt', 'neugierig', 'baff']],
+    ['Trauer', '#4f88c8', ['down', 'leer', 'enttäuscht']], ['Ekel', '#5fa04a', ['angeekelt', 'bäh', 'zu viel']], ['Überraschung', '#e9734a', ['verwirrt', 'neugierig', 'baff']],
   ];
   ui.checkIn = (def = {}) => new Promise((ok) => {
     const k = ui.ebeneAuf('szene', '<div class="sz sz-chat"><div class="sz-handy"><div class="ly-h-kopf">7P2 😎 · Check-in<small>Wetter von heute</small></div>' +
@@ -199,15 +199,16 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
     const kreis = k.querySelector('.sz-kreis'), karten = k.querySelector('.sz-karten'), stand = k.querySelector('.sz-stand'), zeitEl = k.querySelector('.sz-zeit i');
     kreis.innerHTML = L.map((p, i) => { const w = i / L.length * Math.PI * 2 - Math.PI / 2; return '<div class="sz-platz" data-p="' + p.id + '" style="--f:' + p.farbe + ';left:' + (50 + Math.cos(w) * 40) + '%;top:' + (50 + Math.sin(w) * 38) + '%"><i>' + p.geste + '</i><span>' + esc(p.name) + '</span></div>'; }).join('') + '<div class="sz-ball">🏐</div>';
     const ball = k.querySelector('.sz-ball');
-    let treffer = 0, gesamt = 0; const zeiten = [], richtig = {};
+    let treffer = 0, gesamt = 0; const zeiten = [], richtig = {}, rundenZeit = [];
     const zuBall = (id) => { const el = kreis.querySelector('[data-p="' + id + '"]'); ball.style.left = el.style.left; ball.style.top = el.style.top; };
     (async () => {
       // Vorstellung
       for (const p of L) { kreis.querySelector('[data-p="' + p.id + '"]').classList.add('an'); zuBall(p.id); stand.textContent = p.name + ': ' + p.geste; await warte(950); }
       kreis.classList.add('verdeckt');
       for (let r = 0; r < runden; r++) {
-        const zeit = (4.2 - r * 0.8) * 1000 * zeitFaktor();
-        stand.textContent = 'Runde ' + (r + 1) + ' von ' + runden + ' · ' + (zeit / 1000).toFixed(1) + ' s pro Wurf';
+        const zeit = 4 * 1000 * zeitFaktor();   // gleiche Zeit jede Runde – man sieht, wie man selbst schneller wird (Üben wirkt)
+        stand.textContent = 'Runde ' + (r + 1) + ' von ' + runden + (rundenZeit.length ? ' · bisher: ' + rundenZeit.map((z) => z.toFixed(1) + ' s').join(' → ') : '');
+        const vorher = zeiten.length;
         await warte(900);
         let letzte = null;
         for (let n = 0; n < pro; n++) {
@@ -228,10 +229,11 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
           karten.innerHTML = '<div class="sz-rueck ' + (ok2 ? 'gut' : '') + '">' + (ok2 ? p.name + '! Gefangen.' : 'Das war ' + p.name + '.') + '</div>';
           await warte(650);
         }
+        const neu = zeiten.slice(vorher); if (neu.length) rundenZeit.push(neu.reduce((a, b) => a + b, 0) / neu.length / 1000);
       }
       kreis.classList.remove('verdeckt');
       const schnitt = zeiten.length ? zeiten.reduce((a, b) => a + b, 0) / zeiten.length / 1000 : 0;
-      stand.textContent = treffer + ' von ' + gesamt + ' Namen' + (schnitt ? ' · im Schnitt ' + schnitt.toFixed(1) + ' s' : '');
+      stand.textContent = treffer + ' von ' + gesamt + ' Namen' + (rundenZeit.length ? ' · Zeit je Wurf: ' + rundenZeit.map((z) => z.toFixed(1) + ' s').join(' → ') : '');
       karten.innerHTML = '<button type="button" class="sz-weiter" data-a="w">Weiter <kbd>E</kbd></button>';
       const zu = () => { loesche(); ui.ebeneZu(); ok({ treffer, gesamt, schnitt, gelernt: Object.keys(richtig) }); };
       karten.querySelector('[data-a="w"]').onclick = zu;
@@ -411,7 +413,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
         phase = 1; loesche(); zeig(true);
         const abw = []; P.forEach((p, i) => def.fremd.forEach((f) => { const d = f.werte[i] - selbst[i]; if (Math.abs(d) >= 2) abw.push({ paar: i, wer: f.wer.name, diff: d }); }));
         const top = abw.sort((a, b) => Math.abs(b.diff) - Math.abs(a.diff))[0];
-        karten.innerHTML = '<div class="sz-sys">' + (top ? esc(top.wer + ' sieht dich viel ' + (top.diff > 0 ? P[top.paar][1] : P[top.paar][0]) + ', als du denkst.') : 'Die anderen sehen dich ziemlich so wie du dich.') + '</div><button type="button" class="sz-weiter" data-a="w">Weiter <kbd>E</kbd></button>';
+        karten.innerHTML = '<div class="sz-sys">' + (top ? esc(top.wer + ' sieht dich mehr bei „' + (top.diff > 0 ? P[top.paar][1] : P[top.paar][0]) + '“ als du dich.') : 'Die anderen sehen dich ziemlich so wie du dich.') + '</div><button type="button" class="sz-weiter" data-a="w">Weiter <kbd>E</kbd></button>';
         karten.querySelector('[data-a="w"]').onclick = () => { loesche(); ui.ebeneZu(); ok({ selbst, abweichung: abw }); };
         halte((e) => { if (e.code === 'KeyE' || e.code === 'Enter') { e.preventDefault(); e.stopPropagation(); loesche(); ui.ebeneZu(); ok({ selbst, abweichung: abw }); } });
       }
@@ -584,7 +586,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
         });
         const passt = [].concat(p.gefuehl).includes(g); (passt ? richtig : falsch).push(p.wer.id);
         karten.innerHTML = '';
-        bühne.insertAdjacentHTML('beforeend', '<div class="sz-sys">' + (passt ? 'Gut gelesen. ' : 'Eher nicht. ') + esc(ersetze(p.aufloesung || '')) + '</div>');
+        bühne.insertAdjacentHTML('beforeend', '<div class="sz-sys">Du: ' + GEF[g][2] + ' ' + GEF[g][0] + ' · ' + esc(ersetze(p.aufloesung || '')) + '</div>');
         await warte(2300);
       }
       karten.innerHTML = '<button type="button" class="sz-weiter" data-a="w">Weiter <kbd>E</kbd></button>';
@@ -625,11 +627,203 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
   // ---------- Stempel im Skills-Pass (Kurs-Ritual am Ende jedes Kapitels) ----------
   ui.skillsStempel = ({ modul, titel, gelernt = [], mission }) => new Promise((ok) => {
     const k = ui.ebeneAuf('szene', '<div class="sz sz-pass"><div class="sz-kopf"><span class="sz-wo">Skills-Pass</span><b>' + esc(modul) + '</b></div>' +
-      '<div class="sz-stempel">' + esc(titel) + '<i>✔</i></div>' + (gelernt.length ? '<ul class="sz-gelernt">' + gelernt.map((g) => '<li>' + esc(g) + '</li>').join('') + '</ul>' : '') +
+      '<div class="sz-stempel">' + esc(titel) + '<i>✔</i></div>' + (gelernt.length ? '<p class="sz-info">Diese Woche:</p><ul class="sz-gelernt">' + gelernt.map((g) => '<li>' + esc(g) + '</li>').join('') + '</ul>' : '') +
       (mission ? '<div class="sz-mission"><b>Mission</b>' + esc(mission) + '</div>' : '') + '<div class="sz-karten"><button type="button" class="sz-weiter" data-a="w">Weiter <kbd>E</kbd></button></div></div>');
     const zu = () => { loesche(); ui.ebeneZu(); ok(); };
     k.querySelector('[data-a="w"]').onclick = zu;
     halte((e) => { if (e.code === 'KeyE' || e.code === 'Enter') { e.preventDefault(); e.stopPropagation(); zu(); } });
+  });
+
+  // Kleine Helfer für die neuen Spiele: Auswahl-Karten (Klick, Ziffern, E = erste) und „Weiter“
+  const karteWahl = (box, html, n, { zeit = 0, still = null, zeitEl = null } = {}) => new Promise((fertig) => {
+    box.innerHTML = html; let aus = false, tm = null;
+    const ende = (j) => { if (aus) return; aus = true; clearTimeout(tm); if (zeitEl) zeitEl.style.width = '0%'; loesche(); fertig(j); };
+    box.querySelectorAll('[data-i]').forEach((b) => { b.onclick = () => ende(+b.dataset.i); });
+    halte((e) => { const m = /^Digit([1-9])$/.exec(e.code); if (m && +m[1] <= n) { e.preventDefault(); e.stopPropagation(); ende(+m[1] - 1); } else if (e.code === 'KeyE' || e.code === 'Enter') { e.preventDefault(); e.stopPropagation(); ende(0); } });
+    if (zeit) { const ms = zeit * 1000 * zeitFaktor(), t0 = performance.now();
+      const tick = () => { if (aus) return; const f = 1 - (performance.now() - t0) / ms; if (zeitEl) zeitEl.style.width = Math.max(0, f * 100) + '%'; if (f <= 0) ende(still); else requestAnimationFrame(tick); }; tick(); }
+  });
+  const weiterKnopf = (box, ergebnis, ok, vorher = '') => {
+    box.innerHTML = vorher + '<button type="button" class="sz-weiter" data-a="w">Weiter <kbd>E</kbd></button>';
+    const zu = () => { loesche(); ui.ebeneZu(); ok(ergebnis); };
+    box.querySelector('[data-a="w"]').onclick = zu;
+    halte((e) => { if (e.code === 'KeyE' || e.code === 'Enter') { e.preventDefault(); e.stopPropagation(); zu(); } });
+  };
+  const blaseHtml = (wer, t, ich = false) => '<div class="sz-blase' + (ich ? ' ich' : '') + '" style="--f:' + esc(wer ? wer.farbe : '#2b3a55') + '"><b>' + esc(wer ? wer.name : 'Du') + '</b>' + esc(ersetze(t)) + '</div>';
+
+  // ---------- Sortier-Sprint (Kurs E04 „Bedürfnis oder Wunsch?“, Modul 2 Gefühlswörter) ----------
+  // Karten kommen schnell; man wischt/tippt sie in ein Fach. Strittige Karten (ziel: null) sind ausdrücklich erlaubt –
+  // dann redet die Klasse kurz darüber. Keine Punkte, nur Zählen. def: { wo, titel, info, faecher: [{ id, t, sy, f }],
+  // karten: [{ t, ziel: id|[ids]|null, wer?, sagt? }], zeit } → { antworten: [id|null], passend, strittig, offen }
+  ui.sortSprint = (def) => new Promise((ok) => {
+    const F = def.faecher, zwei = F.length === 2;
+    const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || '') + '</span><b>' + esc(def.titel || 'Sortier-Sprint') + '</b></div>' +
+      '<p class="sz-info">' + esc(ersetze(def.info || 'Schnell entscheiden. Bauchgefühl zählt.')) + (zwei ? ' Wischen geht auch: ← links, rechts →.' : '') + '</p>' +
+      '<div class="sz-sort-zahl"></div><div class="sz-sort-karte"></div><div class="sz-zeit"><i></i></div><div class="sz-bühne sz-sort-rede"></div>' +
+      '<div class="sz-karten sz-sort-faecher ly-d-optionen' + (zwei ? ' zwei' : '') + '"></div></div>');
+    const karte = k.querySelector('.sz-sort-karte'), faecher = k.querySelector('.sz-sort-faecher'), rede = k.querySelector('.sz-sort-rede'), zahl = k.querySelector('.sz-sort-zahl'), zeitEl = k.querySelector('.sz-zeit i');
+    const antworten = []; let passend = 0, strittig = 0, offen = 0;
+    let wisch = null;
+    karte.addEventListener('pointerdown', (e) => { wisch = { x: e.clientX }; karte.setPointerCapture(e.pointerId); });
+    karte.addEventListener('pointermove', (e) => { if (wisch && zwei) karte.style.transform = 'translateX(' + (e.clientX - wisch.x) * 0.6 + 'px) rotate(' + (e.clientX - wisch.x) * 0.05 + 'deg)'; });
+    karte.addEventListener('pointerup', (e) => { if (!wisch) return; const dx = e.clientX - wisch.x; wisch = null; karte.style.transform = ''; if (zwei && Math.abs(dx) > 60) { const b = faecher.querySelector('[data-i="' + (dx < 0 ? 0 : 1) + '"]'); if (b) b.click(); } });
+    (async () => {
+      for (let n = 0; n < def.karten.length; n++) {
+        const c = def.karten[n];
+        zahl.textContent = (n + 1) + ' / ' + def.karten.length;
+        karte.textContent = ersetze(c.t); if (karte.animate) karte.animate([{ transform: 'scale(.7) translateY(20px)', opacity: 0 }, { transform: 'none', opacity: 1 }], { duration: 180, easing: 'ease-out' });
+        const html = F.map((f, j) => '<button type="button" data-i="' + j + '" style="--f:' + esc(f.f || '#2b3a55') + '"><span>' + (f.sy ? f.sy + ' ' : '') + esc(f.t) + (F.length <= 9 ? ' <kbd>' + (zwei ? (j ? '→' : '←') : j + 1) + '</kbd>' : '') + '</span></button>').join('');
+        const pfeil = zwei ? halte((e) => { if (e.code === 'ArrowLeft' || e.code === 'ArrowRight') { e.preventDefault(); e.stopPropagation(); const b = faecher.querySelector('[data-i="' + (e.code === 'ArrowLeft' ? 0 : 1) + '"]'); if (b) b.click(); } }) : null;
+        const j = await karteWahl(faecher, html, F.length, { zeit: def.zeit || 6, still: null, zeitEl });
+        if (pfeil) { document.removeEventListener('keydown', pfeil, true); tasten.delete(pfeil); }
+        const id = j == null ? null : F[j].id; antworten.push(id);
+        const ziele = c.ziel == null ? null : [].concat(c.ziel);
+        let sys;
+        if (id == null) { offen++; sys = '⏱ Zu langsam – liegt jetzt auf dem Stapel „später“.'; }
+        else if (!ziele) { strittig++; sys = '🤔 Strittig. Kann man so oder so sehen.'; }
+        else if (ziele.includes(id)) { passend++; sys = '✓ ' + F[j].t; }
+        else sys = 'Hm. Die meisten legen das zu „' + F.find((f) => f.id === ziele[0]).t + '“.';
+        faecher.innerHTML = '';
+        rede.innerHTML = '<div class="sz-sys">' + esc(sys) + '</div>' + (c.sagt ? blaseHtml(c.wer, c.sagt) : '');
+        await warte(c.sagt ? 1900 : 950);
+        rede.innerHTML = '';
+      }
+      karte.textContent = ''; zahl.textContent = '';
+      weiterKnopf(faecher, { antworten, passend, strittig, offen }, ok, '<div class="sz-sys">' + esc(def.ende ? ersetze(def.ende) : 'Fertig. ' + strittig + ' strittige Karten – darüber kann man reden.') + '</div>');
+    })();
+  });
+
+  // ---------- Platzwechsel „Alle, die …“ (Kurs E01/E05) ----------
+  // Ein Satz wird gerufen; wer ihn für sich passend findet, steht auf und wechselt den Platz. Man sieht, wer noch aufsteht.
+  // def: { wo, leute: { id: { name, farbe } }, saetze: [{ t, stehen: [ids] }], eigene: [{ t, stehen: [ids], sagt? }] }
+  // → { gemeinsam: { id: n }, top: id, aufgestanden: n, eigener: index }
+  ui.platzwechsel = (def) => new Promise((ok) => {
+    const L = def.leute, ids = Object.keys(L);
+    const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || 'Stuhlkreis') + '</span><b>Platzwechsel: Alle, die …</b></div>' +
+      '<p class="sz-info">Wenn der Satz auf dich passt: aufstehen und Platz wechseln. Wenn nicht: sitzen bleiben. Niemand muss etwas erklären.</p>' +
+      '<div class="sz-fall sz-pw-satz" style="--f:#2b3a55"><p></p></div><div class="sz-kreis-leute">' + ids.map((id) => '<i data-p="' + id + '" style="--f:' + esc(L[id].farbe) + '">' + esc(L[id].name[0]) + '<small>' + esc(L[id].name) + '</small></i>').join('') + '<i data-p="du" class="du" style="--f:#2b3a55">●<small>Du</small></i></div>' +
+      '<div class="sz-zeit"><i></i></div><div class="sz-bühne"></div><div class="sz-karten ly-d-optionen"></div></div>');
+    const satz = k.querySelector('.sz-pw-satz p'), karten = k.querySelector('.sz-karten'), bühne = k.querySelector('.sz-bühne'), zeitEl = k.querySelector('.sz-zeit i');
+    const gemeinsam = Object.fromEntries(ids.map((id) => [id, 0])); let auf = 0, eigener = -1;
+    const zeigeStehen = (wer, ich) => { k.querySelectorAll('[data-p]').forEach((el) => { el.classList.toggle('steht', el.dataset.p === 'du' ? ich : wer.includes(el.dataset.p)); }); };
+    (async () => {
+      for (const s of def.saetze) {
+        zeigeStehen([], false); bühne.innerHTML = '';
+        satz.textContent = 'Alle, die ' + ersetze(s.t);
+        const j = await karteWahl(karten, '<button type="button" data-i="0"><span>🧍 Aufstehen</span></button><button type="button" data-i="1"><span>🪑 Sitzen bleiben</span></button>', 2, { zeit: def.zeit || 6, still: 1, zeitEl });
+        karten.innerHTML = '';
+        const ich = j === 0; if (ich) { auf++; s.stehen.forEach((id) => { gemeinsam[id]++; }); }
+        zeigeStehen(s.stehen, ich);
+        const namen = s.stehen.map((id) => L[id].name);
+        bühne.innerHTML = '<div class="sz-sys">' + esc(namen.length ? (ich ? 'Mit dir stehen auf: ' : 'Es stehen auf: ') + namen.join(', ') + '.' : (ich ? 'Nur du stehst. Mutig.' : 'Niemand steht auf.')) + '</div>' + (s.sagt ? blaseHtml(L[s.sagt[0]] || null, s.sagt[1]) : '');
+        await warte(s.sagt ? 2300 : 1500);
+      }
+      if (def.eigene && def.eigene.length) {
+        zeigeStehen([], false); bühne.innerHTML = ''; satz.textContent = 'Du stehst in der Mitte. Dein Satz: „Alle, die …“';
+        eigener = await karteWahl(karten, def.eigene.map((e, i) => '<button type="button" data-i="' + i + '"><span>„… ' + esc(ersetze(e.t)) + '“</span></button>').join(''), def.eigene.length);
+        const e = def.eigene[eigener]; karten.innerHTML = ''; satz.textContent = 'Alle, die ' + ersetze(e.t);
+        e.stehen.forEach((id) => { gemeinsam[id]++; }); zeigeStehen(e.stehen, true);
+        bühne.innerHTML = '<div class="sz-sys">' + esc(e.stehen.length ? 'Es stehen auf: ' + e.stehen.map((id) => L[id].name).join(', ') + '.' : 'Niemand steht auf. Dafür lacht Ben.') + '</div>' + (e.sagt ? blaseHtml(L[e.sagt[0]] || null, e.sagt[1]) : '');
+        await warte(2300);
+      }
+      const top = Object.entries(gemeinsam).sort((a, b) => b[1] - a[1])[0];
+      weiterKnopf(karten, { gemeinsam, top: top && top[1] ? top[0] : null, aufgestanden: auf, eigener }, ok,
+        '<div class="sz-sys">' + esc(top && top[1] ? 'Am meisten gemeinsam: ' + L[top[0]].name + ' (' + top[1] + '×). Hättest du das gedacht?' : 'Du bist sitzen geblieben. Auch eine Antwort.') + '</div>');
+    })();
+  });
+
+  // ---------- Körper-Karte (Kurs E09 Frühwarn-System: Wo spüre ich das Gefühl?) ----------
+  // def: { wo, frage, vergleich: [{ wer: { name, farbe }, zonen: [ids], satz }] } → { zonen: [ids] }
+  const ZONEN = { kopf: ['Kopf', 50, 13], hals: ['Hals', 50, 24], brust: ['Brust', 50, 34], bauch: ['Bauch', 50, 47], haende: ['Hände', 20, 50], beine: ['Knie / Beine', 50, 75], nirgends: ['Weiß nicht', 85, 92] };
+  ui.koerperKarte = (def) => new Promise((ok) => {
+    const an = new Set();
+    const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || '') + '</span><b>Körper-Karte</b></div>' +
+      '<div class="sz-fall" style="--f:#8a7bc8"><p>' + esc(ersetze(def.frage)) + '</p></div><p class="sz-info">Tippe an, wo du es spürst. Mehrere Stellen gehen. Privat – bis du es zeigst.</p>' +
+      '<div class="sz-koerper"><svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="13" r="8"/><path d="M38 24h24l6 28-8 2-3-16v26l4 32h-9l-2-26-2 26h-9l4-32V38l-3 16-8-2z"/></svg>' +
+      Object.entries(ZONEN).map(([id, [n, x, y]]) => '<button type="button" data-z="' + id + '" style="left:' + x + '%;top:' + y + '%"><span>' + esc(n) + '</span></button>').join('') + '<div class="sz-k-fremd"></div></div>' +
+      '<div class="sz-bühne"></div><div class="sz-karten"><button type="button" class="sz-weiter" data-a="w">Zeigen <kbd>E</kbd></button></div></div>');
+    k.querySelectorAll('[data-z]').forEach((b) => { b.onclick = () => { const z = b.dataset.z; if (an.has(z)) an.delete(z); else an.add(z); b.classList.toggle('an', an.has(z)); }; });
+    let phase = 0;
+    const weiter = () => {
+      if (phase === 0) {
+        phase = 1; loesche();
+        if (!an.size) { an.add('nirgends'); k.querySelector('[data-z="nirgends"]').classList.add('an'); }
+        k.querySelectorAll('[data-z]').forEach((b) => { b.disabled = true; });
+        const fremd = k.querySelector('.sz-k-fremd');
+        (def.vergleich || []).forEach((v, i) => v.zonen.forEach((z) => { const Z = ZONEN[z]; if (Z) fremd.insertAdjacentHTML('beforeend', '<i style="--f:' + esc(v.wer.farbe) + ';left:calc(' + Z[1] + '% + ' + (18 + i * 14) + 'px);top:' + Z[2] + '%">' + esc(v.wer.name[0]) + '</i>'); }));
+        k.querySelector('.sz-bühne').innerHTML = (def.vergleich || []).map((v) => blaseHtml(v.wer, v.satz)).join('');
+        const gleich = (def.vergleich || []).filter((v) => v.zonen.some((z) => an.has(z))).map((v) => v.wer.name);
+        weiterKnopf(k.querySelector('.sz-karten'), { zonen: [...an] }, ok, '<div class="sz-sys">' + esc(gleich.length ? 'Gleiche Stelle wie du: ' + gleich.join(', ') + '.' : 'Bei allen woanders. Jeder Körper meldet sich anders.') + '</div>');
+      }
+    };
+    k.querySelector('[data-a="w"]').onclick = weiter;
+    halte((e) => { if (e.code === 'KeyE' || e.code === 'Enter') { e.preventDefault(); e.stopPropagation(); weiter(); } });
+  });
+
+  // ---------- Synchronstudio (Kurs E07: derselbe Satz, andere Gefühle) ----------
+  // def: { wo, satz, takes: [{ wer, gefuehl, regie }], reaktion: { gefuehlId: [wer, text] } } → { richtig, falsch, eigene }
+  ui.synchron = (def) => new Promise((ok) => {
+    const ids = Object.keys(GEF);
+    const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || 'Synchronstudio') + '</span><b>🎙️ Synchronstudio</b></div>' +
+      '<p class="sz-info">Immer derselbe Satz. Hör auf Tempo, Lautstärke, Pausen. Welches Gefühl spricht?</p>' +
+      '<div class="sz-take"></div><div class="sz-bühne"></div><div class="sz-karten sz-raster ly-d-optionen"></div></div>');
+    const take = k.querySelector('.sz-take'), bühne = k.querySelector('.sz-bühne'), karten = k.querySelector('.sz-karten');
+    let richtig = 0, falsch = 0;
+    const gefKnoepfe = () => ids.map((id, j) => '<button type="button" data-i="' + j + '" style="--f:' + GEF[id][1] + '"><span>' + GEF[id][2] + ' ' + GEF[id][0] + '</span></button>').join('');
+    (async () => {
+      for (let n = 0; n < def.takes.length; n++) {
+        const t = def.takes[n];
+        take.innerHTML = '<small>Take ' + (n + 1) + ' · ' + esc(t.wer.name) + '</small><b class="sz-take-' + t.gefuehl + '">„' + esc(def.satz) + '“</b><em>' + esc(ersetze(t.regie)) + '</em>';
+        bühne.innerHTML = '';
+        const j = await karteWahl(karten, gefKnoepfe(), 6);
+        const g = ids[j]; karten.innerHTML = '';
+        if (g === t.gefuehl) richtig++; else falsch++;
+        bühne.innerHTML = '<div class="sz-sys">Du: ' + GEF[g][2] + ' ' + GEF[g][0] + ' · ' + esc(t.wer.name) + ' meinte: ' + GEF[t.gefuehl][2] + ' ' + GEF[t.gefuehl][0] + (g === t.gefuehl ? ' ✓' : '') + '</div>';
+        await warte(1700);
+      }
+      take.innerHTML = '<small>Dein Take</small><b>„' + esc(def.satz) + '“</b><em>Jetzt du. Mit welchem Gefühl sprichst du ihn?</em>'; bühne.innerHTML = '';
+      const j = await karteWahl(karten, gefKnoepfe(), 6);
+      const eigene = ids[j]; karten.innerHTML = '';
+      take.innerHTML = '<small>Dein Take</small><b class="sz-take-' + eigene + '">„' + esc(def.satz) + '“</b>';
+      const r = (def.reaktion || {})[eigene];
+      bühne.innerHTML = r ? blaseHtml(r[0], r[1]) : '';
+      await warte(1200);
+      weiterKnopf(karten, { richtig, falsch, eigene }, ok, '<div class="sz-sys">' + esc('Gleicher Satz, ' + def.takes.length + ' Gefühle. Die Wörter sagen wenig – die Stimme sagt viel.') + '</div>');
+    })();
+  });
+
+  // ---------- Spuren-Wand (Kurs E28: Fakten prüfen, mit falschen Fährten) ----------
+  // def: { wo, frage, helfer: { name, farbe }, spuren: [{ id, t, sy, echt, kommentar }], schluesse: [{ key, t, braucht: [ids] }] }
+  // → { gepinnt: [ids], heringe: n, schluss: key }
+  ui.spurenWand = (def) => new Promise((ok) => {
+    const h = def.helfer;
+    const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || '') + '</span><b>🧷 Spuren-Wand</b></div>' +
+      '<div class="sz-fall" style="--f:' + esc(h.farbe) + '"><p>' + esc(ersetze(def.frage)) + '</p></div><div class="sz-wand"></div>' +
+      '<div class="sz-sort-karte sz-spur"></div><div class="sz-bühne"></div><div class="sz-karten ly-d-optionen"></div></div>');
+    const wand = k.querySelector('.sz-wand'), spur = k.querySelector('.sz-spur'), bühne = k.querySelector('.sz-bühne'), karten = k.querySelector('.sz-karten');
+    const gepinnt = []; let heringe = 0;
+    (async () => {
+      for (const s of def.spuren) {
+        spur.innerHTML = (s.sy ? '<i>' + s.sy + '</i> ' : '') + esc(ersetze(s.t)); bühne.innerHTML = '';
+        const j = await karteWahl(karten, '<button type="button" data-i="0"><span>📌 An die Wand – das zählt</span></button><button type="button" data-i="1"><span>🗑️ Weg – das beweist nichts</span></button>', 2);
+        karten.innerHTML = '';
+        if (j === 0) { gepinnt.push(s.id); if (!s.echt) heringe++; wand.insertAdjacentHTML('beforeend', '<span class="sz-zettel' + (s.echt ? '' : ' wackelt') + '">' + (s.sy || '📄') + ' ' + esc(ersetze(s.kurz || s.t)) + '</span>'); }
+        bühne.innerHTML = blaseHtml(h, (j === 0) === s.echt ? s.kommentar[0] : s.kommentar[1]);
+        await warte(2200);
+      }
+      spur.innerHTML = ''; spur.style.display = 'none'; bühne.innerHTML = blaseHtml(h, def.frageEnde || 'Und? Was sagt die Wand?');
+      const moegl = def.schluesse.map((s) => ({ ...s, geht: s.braucht.every((b) => gepinnt.includes(b)) }));
+      const html = moegl.map((s, i) => '<button type="button" data-i="' + i + '"' + (s.geht ? '' : ' disabled') + '><span>' + esc(ersetze(s.t)) + (s.geht ? '' : ' <small>– dafür fehlt eine Spur</small>') + '</span></button>').join('');
+      const erste = moegl.findIndex((s) => s.geht);
+      let j = await new Promise((fertig) => { karten.innerHTML = html; let aus = false; const ende = (x) => { if (aus) return; aus = true; loesche(); fertig(x); };
+        karten.querySelectorAll('[data-i]:not([disabled])').forEach((b) => { b.onclick = () => ende(+b.dataset.i); });
+        halte((e) => { if (e.code === 'KeyE' || e.code === 'Enter') { e.preventDefault(); e.stopPropagation(); ende(erste); } }); });
+      if (j < 0) j = moegl.length - 1;
+      const sch = moegl[j]; karten.innerHTML = '';
+      bühne.innerHTML = '<div class="sz-sys">' + esc(ersetze(sch.t)) + '</div>' + (sch.antwort ? blaseHtml(h, sch.antwort) : '');
+      await warte(1500);
+      weiterKnopf(karten, { gepinnt, heringe, schluss: sch.key }, ok);
+    })();
   });
 
   return ui;

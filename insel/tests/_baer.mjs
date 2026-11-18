@@ -1,0 +1,24 @@
+import { launch } from './lib.mjs';
+import { join, dirname } from 'node:path';
+import { fileURLToPath } from 'node:url';
+const DIST = join(dirname(fileURLToPath(import.meta.url)), '..', 'dist', 'lycee.html');
+const OUT = process.argv[2];
+const browser = await launch();
+const page = await (await browser.newContext({ viewport: { width: 1180, height: 820 } })).newPage();
+page.setDefaultTimeout(120000);
+const fehler = []; page.on('pageerror', (e) => fehler.push(String(e)));
+await page.goto('file://' + DIST + '?test&start=1&figur=1&q=high');
+await page.waitForFunction(() => window.LYCEE && LYCEE.zustand && LYCEE.ia);
+for (let i = 0; i < 60 && await page.evaluate(() => LYCEE.imGespraech || !!document.querySelector('.ly-ebene:not([hidden])')); i++) { await page.keyboard.press('KeyE'); await page.waitForTimeout(200); }
+await page.evaluate(() => { const S = LYCEE.zustand; S.stundenplan = true; S.besitz = ['anh_baer', 'st_taube']; });
+page.evaluate(() => LYCEE.aktion(LYCEE.ia.liste.find((x) => x.tu === 'spind')));
+await page.waitForSelector('.ly-spind-baer');
+await page.screenshot({ path: join(OUT, 'baer-spind.png') });
+await page.click('.ly-spind-baer');
+await page.waitForTimeout(1500);
+console.log('anhaenger', await page.evaluate(() => LYCEE.zustand.anhaenger), 'im Bild', await page.evaluate(() => !!LYCEE.scene.getObjectByName('anhaenger-baer')));
+await page.evaluate(() => { const c = LYCEE.steuerung.cam; c.ziel = 1.3; c.pitch = 0.05; c.yaw += Math.PI * 0.75; });
+await page.waitForTimeout(2500);
+await page.screenshot({ path: join(OUT, 'baer-figur.png') });
+console.log('Fehler', fehler);
+await browser.close();
