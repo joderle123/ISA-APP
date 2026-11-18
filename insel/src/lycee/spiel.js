@@ -31,6 +31,7 @@ import { tunN2 } from './story/kapitel2.js';
 import { tunN1 } from './story/kapitel1.js';
 import { tunN3, ORTE_N3 } from './story/kapitel3.js';
 import { tunN4 } from './story/kapitel4.js';
+import { createKorbSpiel } from './korb3d.js';
 import { baerAnhaenger } from './anhaenger.js';
 import { SCHRITTE, GESPRAECHE, LEUTE, STAERKEN, BINGO, GEHEIMNISSE, SPRECHER, KAPITEL } from './geschichte.js';
 import { ORTE2, CHAT, CHAT5, ichBotschaftThema } from './kapitel2.js';
@@ -1440,6 +1441,16 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   }
   // ---------- Skateboard fahren (Skate-Ecke): 60 Sekunden, Punkte für Ollies und Sprünge über Rail, Box, Bank ----------
   let skateTick = null;
+  // ---------- Basketball direkt am Korb im Hof (korb3d.js) – ersetzt das flache Freiwurf-Fenster ----------
+  const korbSpiel = createKorbSpiel({ scene, camera, steuerung, input, root, ton: (a) => ton(a) });
+  ui.freiwurf2d = ui.freiwurf;
+  ui.freiwurf = async (o) => {
+    const imG = imGespraech;
+    const t = await korbSpiel.spiel(o || {});
+    ui.letzteRunde = korbSpiel.letzteRunde;
+    if (imG) { input.setEnabled(false); steuerung.frei = false; }
+    return t;
+  };
   // Eigenes Skateboard: flaches Deck mit hochgezogener Nase und Tail, Griptape, zwei Achsen, vier Rollen. Liegt quer zur
   // Gruppe (die Gruppe ist beim Fahren um 90° gedreht), also längs der Fahrtrichtung.
   function skateboard() {
@@ -1529,6 +1540,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   loop.add((dt) => {
     if (!laeuft) { camera.position.set(-36, 16, 64); camera.lookAt(0, 6, -10); return; }
     steuerung.update(dt);
+    if (korbSpiel) korbSpiel.tick(dt);
     if (skateTick) skateTick(dt);
     if (wegTick) wegTick();
     if (spieler) spieler.update(dt);

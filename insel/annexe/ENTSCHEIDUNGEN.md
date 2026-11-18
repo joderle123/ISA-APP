@@ -163,3 +163,10 @@ Ziel war ≤ 200 Aufrufe und ≤ 400k Dreiecke – überall erreicht. Was es geb
   in Auswahlspielen nicht mehr aus Versehen; Lesezeit statt fester Zeiten; Synchronstudio erst neutral, Farbe nach dem
   Tipp; Erwachsene benoten das Kompliment-Annehmen nicht mehr; Belohnungen nur an echten Entscheidungen; „Bus“-Satz
   entschärft; Markennamen raus; Synchronstudio und Mischpult als eigener Schritt „Im Schatten“; Lese-Ecke mit ✕ Regal.
+
+## 18.11. (spät) – Basketball neu: direkt am echten Korb (Rückmeldung „Korbball ist noch immer nicht gut“)
+- Kein flaches Extra-Fenster mehr: Man wirft in der 3D-Welt am Korb (Hof oder Turnhalle, der nächste Korb zählt),
+  Kamera über der Schulter, runder Ring mit Netz, Ball mit Schwerkraft, Abpraller an Ring und Brett, Netz schwingt.
+- Bedienung wie in Basketball-Spielen: halten = Wurf aufbauen (Balken rechts), loslassen im grünen Bereich, nach oben
+  wischen = Richtung (PC: Leertaste halten, Pfeile). Rückmeldung „Perfekter Release“, „Etwas früh/spät“, „Swish“.
+- Modi: Freiwürfe, Dreier (drei Positionen), H-O-R-S-E gegen Ben. Das alte flache Spiel bleibt im Code (ui.freiwurf2d).

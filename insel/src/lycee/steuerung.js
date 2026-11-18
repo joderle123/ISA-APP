@@ -112,6 +112,7 @@ export function createSteuerung({ camera, input, welt, figur = null }) {
   const _o = new THREE.Vector3(), _d = new THREE.Vector3(), _ziel = new THREE.Vector3(), _blick = new THREE.Vector3();
   let camDist = 5.2;
   function kamera(dt, sofort) {
+    if (s.kameraAus) return;   // Minispiel (Basketball) führt die Kamera selbst
     const c = s.cam;
     const raum = welt.raumBei(pos.x, pos.z);
     const decke = raum ? (raum.decke || 3.6) : 40;

@@ -576,11 +576,10 @@ function korb(B, x, z, s, achse = 'x') {
   if (achse === 'x') {
     box(x - 0.08 * s, x + 0.08 * s, 0, 3.4, z - 0.1, z + 0.1, new THREE.Color('#5d6573'), { art: 'innen' });
     box(x + 0.3 * s - 0.05, x + 0.3 * s + 0.05, 2.9, 3.95, z - 0.9, z + 0.9, new THREE.Color('#ffffff'), { art: 'innen' });
-    box(x + 0.6 * s - 0.25, x + 0.6 * s + 0.25, 3.03, 3.07, z - 0.25, z + 0.25, new THREE.Color('#d9523c'), { art: 'innen' });
   } else {
     box(x - 0.1, x + 0.1, 0, 3.4, z - 0.6 * s - 0.08, z - 0.6 * s + 0.08, new THREE.Color('#5d6573'), { art: 'fest', stoss: true });
     box(x - 0.9, x + 0.9, 2.9, 3.95, z - 0.25 * s - 0.05, z - 0.25 * s + 0.05, new THREE.Color('#ffffff'), { art: 'fest' });
-    box(x - 0.25, x + 0.25, 3.03, 3.07, z + 0.05 * s - 0.25, z + 0.05 * s + 0.25, new THREE.Color('#d9523c'), { art: 'fest' });
+    // Ring und Netz: korb3d.js (echter runder Ring, damit der Ball hindurchfallen kann)
   }
 }
 

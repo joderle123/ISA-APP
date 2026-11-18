@@ -623,3 +623,18 @@ kbd { display: inline-block; min-width: 1.5em; padding: 0 .35em; margin-right: .
 .sz-fach button.an { border-color: #3fa66b; background: #e9f7ee; } .sz-fach button.an::before { content: '✓ '; color: #3fa66b; }
 @media (max-width: 640px) { .sz-thermo-rohr, .sz-thermo-skala { height: 150px; } .sz-t-aufgabe { font-size: 24px; } }
 .le-x { margin-left: 8px; border: 1.5px solid var(--f); background: #fff; color: var(--f); border-radius: 999px; padding: 1px 8px; font: inherit; font-size: 11px; font-weight: 900; cursor: pointer; }
+/* Basketball am Korb (korb3d.js): Bedienfläche über dem 3D-Bild */
+.ly-wurfmodus .ly-hud, .ly-wurfmodus .ly-dialog { visibility: hidden !important; }
+.ly-wurf { position: absolute; inset: 0; z-index: 40; touch-action: none; user-select: none; -webkit-user-select: none; cursor: grab; }
+.ly-wurf-kopf { position: absolute; top: max(12px, env(safe-area-inset-top)); left: 50%; transform: translateX(-50%); background: rgba(20,24,36,.78); color: #fff; border-radius: 14px; padding: 7px 16px; text-align: center; pointer-events: none; white-space: nowrap; }
+.ly-wurf-kopf b { display: block; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: #ffb38a; }
+.ly-wurf-kopf span { font-weight: 800; font-size: 16px; }
+.ly-wurf-meter { position: absolute; right: max(18px, 8vw); top: 50%; transform: translateY(-50%); width: 18px; height: min(220px, 34vh); border-radius: 10px; background: rgba(20,24,36,.6); border: 2px solid rgba(255,255,255,.8); pointer-events: none; }
+.ly-wurf-meter i { position: absolute; left: 0; right: 0; background: #3fa66b; }
+.ly-wurf-meter b { position: absolute; left: -7px; right: -7px; height: 5px; border-radius: 3px; background: #fff; transform: translateY(50%); box-shadow: 0 0 6px rgba(0,0,0,.5); }
+.ly-wurf-msg { position: absolute; top: 24%; left: 0; right: 0; text-align: center; font-weight: 900; font-size: clamp(24px, 5vw, 40px); text-shadow: 0 3px 0 #1b1d26, 0 0 12px rgba(0,0,0,.6); pointer-events: none; }
+.ly-wurf-msg.neu { animation: ly-wurf-pop .35s ease-out; }
+@keyframes ly-wurf-pop { from { transform: scale(.6); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+.ly-wurf-tipp { position: absolute; bottom: max(84px, calc(env(safe-area-inset-bottom) + 70px)); left: 50%; transform: translateX(-50%); width: min(92vw, 520px); text-align: center; background: rgba(20,24,36,.72); color: #fff; font-weight: 700; font-size: 14px; padding: 8px 12px; border-radius: 12px; pointer-events: none; transition: opacity .3s; }
+.ly-wurf-tipp b { color: #7CFC9A; } .ly-wurf-tipp small { opacity: .7; font-size: 11.5px; }
+.ly-wurf-weg { position: absolute; bottom: max(18px, env(safe-area-inset-bottom)); left: 50%; transform: translateX(-50%); border: 0; border-radius: 999px; background: #fff; font: inherit; font-weight: 800; padding: 9px 18px; cursor: pointer; box-shadow: 0 3px 0 rgba(0,0,0,.25); }

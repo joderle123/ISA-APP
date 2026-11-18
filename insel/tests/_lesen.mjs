@@ -25,7 +25,7 @@ for (const [tag, vp] of [['handy', { width: 390, height: 844 }], ['quer', { widt
   await page.keyboard.press('Escape'); await page.waitForTimeout(200); await page.keyboard.press('Escape');
   await page.waitForTimeout(800);
   console.log(tag, 'gelesen', await page.evaluate(() => LYCEE.zustand.merke.gelesen), 'offen', await page.evaluate(() => !!document.querySelector('.ly-ebene:not([hidden])')));
-  if (tag === 'handy') { page.evaluate(() => { LYCEE.ui.freiwurf(); }); await page.waitForSelector('canvas.ly-bb'); await page.waitForTimeout(600); await page.screenshot({ path: join(OUT, 'basket-handy-neu.png') }); }
+  if (tag === 'handy') { page.evaluate(() => { LYCEE.ui.freiwurf2d(); }); await page.waitForSelector('canvas.ly-bb'); await page.waitForTimeout(600); await page.screenshot({ path: join(OUT, 'basket-handy-neu.png') }); }
   console.log(tag, 'Fehler', fehler);
   await ctx.close();
 }

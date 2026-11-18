@@ -49,6 +49,7 @@ export function debugWerkzeuge() {
   const tick = () => {
     const l = L();
     if (!l || (!$('auto').checked && !$('lauf').checked)) return;
+    if (document.querySelector('.ly-wurf')) { taste('Space'); return; }   // Basketball am Korb: einfach werfen
     const eb = document.querySelector('.ly-ebene:not([hidden])');
     if (eb) {
       // Karten: erst „Weiter/Fertig/Verstanden“, sonst eine Auswahl, sonst Taste E

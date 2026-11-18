@@ -12,7 +12,7 @@ for (const [tag, vp] of [['quer', { width: 1180, height: 820 }], ['handy', { wid
   await page.goto('file://' + DIST + '?test&start=1&figur=1');
   await page.waitForFunction(() => window.LYCEE && LYCEE.zustand && LYCEE.ui);
   for (let i = 0; i < 60 && await page.evaluate(() => LYCEE.imGespraech || !!document.querySelector('.ly-ebene:not([hidden])')); i++) { await page.keyboard.press('KeyE'); await page.waitForTimeout(200); }
-  console.log(tag, 'start'); await page.evaluate((m) => { window.__fw = null; LYCEE.ui.freiwurf({ modus: m }).then((t) => { window.__fw = t; }); }, MODUS);
+  console.log(tag, 'start'); await page.evaluate((m) => { window.__fw = null; LYCEE.ui.freiwurf2d({ modus: m }).then((t) => { window.__fw = t; }); }, MODUS);
   await page.waitForSelector('canvas.ly-bb');
   const box = await page.$eval('canvas.ly-bb', (c) => { c.scrollIntoView({ block: 'center' }); const r = c.getBoundingClientRect(); return { x: r.left, y: r.top, w: r.width, h: r.height }; });
   const P = (x, y) => ({ x: box.x + x / 520 * box.w, y: box.y + y / 420 * box.h });
