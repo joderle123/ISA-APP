@@ -61,7 +61,7 @@ Aufgelöst wird es in Kapitel 10. (Hinter dem Account: Dario, der dazugehören w
 | 1 | M0 Ankommen | Erster Tag, Klassenchat, Kantine | Live-Chat, Namen-Rekord, Zwei Wahrheiten, Hitze-Duell, Blind-Parcours | Man wird gepostet |
 | 2 | M1 Wer bin ich? | Talenttag, „Top 5 langweiligste Leute“, Gruppe „Projekt #3“ | Live-Chat, Warnlicht-Raten, Bedürfnis oder Wunsch?, Platzwechsel, Die Linie, Zehn Sekunden Ruhm, Stärken verschenken, Kompliment annehmen | Noah und Mila werden gepostet |
 | 3 | M2 Gefühle verstehen | Sportfest, das Mila-Foto | Pantomime, Sechs Ecken, Live-Chat, Spuren-Wand, Körper-Karte, Gefühls-Pult, Frühwarn-Radar, Synchronstudio, Mischpult | Erste Spur: der Winkel von links |
-| 4 | M3 Gefühle regulieren | Mathe-Test, Bus verpasst | Anspannungs-Leiter, Skills-Koffer packen | Handy-Kiste: wer hatte seins? |
+| 4 | M3 Gefühle regulieren | Bus verpasst, Mathe-Test, Noah bei Rot | Anspannungs-Thermometer, Zonen-Wette, Skills-Koffer, Test mit Puls, Gemeinsam atmen, Hitze-Duell mit Dario | Handy-Kiste: alle Handys der 7P2 waren weg – wer war um 8:34 im Flur? Ende: gefälschter Screenshot macht DICH zum Admin |
 | 5 | M4 Meine Gedanken | „Ich kann das eh nicht“ | Kritischer Detektiv, Gedanken-Weiche | Gefälschter Screenshot: angeblich bist DU der Account |
 | 6 | M5 Kommunikation & Grenzen | Foto ohne Frage, Umarmung | Stopp-Jury, Ich-Botschaft-Bau, Abstand | Wer glaubt dir? |
 | 7 | M6 Wenn es schwierig wird | Rauswurf aus dem Chat | Konflikt-Treppe, Druck-Runde, Bühne kippen | Allein – wer bleibt? |

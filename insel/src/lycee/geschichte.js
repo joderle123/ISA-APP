@@ -372,10 +372,11 @@ import { SCHRITTE_N1, GESPRAECHE_N1 } from './story/kapitel1.js';
 import { PERSONAL } from './story/personal.js';
 import { SCHRITTE_N2, GESPRAECHE_N2 } from './story/kapitel2.js';
 import { SCHRITTE_N3, GESPRAECHE_N3 } from './story/kapitel3.js';
+import { SCHRITTE_N4, GESPRAECHE_N4 } from './story/kapitel4.js';
 Object.assign(LEUTE, PERSONAL);
 SCHRITTE.length = 0;
-SCHRITTE.push(...SCHRITTE_N1, ...SCHRITTE_N2, ...SCHRITTE_N3);
-Object.assign(GESPRAECHE, GESPRAECHE_N1, GESPRAECHE_N2, GESPRAECHE_N3);
+SCHRITTE.push(...SCHRITTE_N1, ...SCHRITTE_N2, ...SCHRITTE_N3, ...SCHRITTE_N4);
+Object.assign(GESPRAECHE, GESPRAECHE_N1, GESPRAECHE_N2, GESPRAECHE_N3, GESPRAECHE_N4);
 Object.assign(KAPITEL, { 1: 'Ankommen', 2: 'Wer bin ich?', 3: 'Gefühle verstehen', 4: 'Gefühle regulieren', 5: 'Meine Gedanken', 6: 'Kommunikation und Grenzen', 7: 'Wenn es schwierig wird', 8: 'Digitale Welt', 9: 'Gesund und stark', 10: 'Abschluss' });
 Object.assign(STAERKEN, {
   humor: STAERKEN.humor || { name: 'Humor', text: 'Du hast die Lage mit einem Witz entspannt.' },

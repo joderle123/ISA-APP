@@ -553,10 +553,12 @@ kbd { display: inline-block; min-width: 1.5em; padding: 0 .35em; margin-right: .
 @keyframes sz-wackel { to { transform: translateX(2px) rotate(-1deg); } }
 @keyframes sz-zitter { to { transform: translate(1px, -1px); } }
 @keyframes sz-huepf { to { transform: translateY(-5px); } }
-.sz-wand { display: flex; flex-wrap: wrap; gap: 6px; min-height: 40px; background: #c9a77a; border-radius: 10px; padding: 8px; box-shadow: inset 0 0 0 3px #a8855a; }
-.sz-wand:empty::before { content: 'Pinnwand – noch leer'; color: rgba(255,255,255,.8); font-weight: 800; font-size: 12px; }
+.sz-pinnwand { display: flex; flex-wrap: wrap; gap: 6px; min-height: 40px; background: #c9a77a; border-radius: 10px; padding: 8px; box-shadow: inset 0 0 0 3px #a8855a; }
+.sz-pinnwand:empty::before { content: 'Pinnwand – noch leer'; color: rgba(255,255,255,.8); font-weight: 800; font-size: 12px; }
 .sz-zettel { background: #fff8c4; padding: 4px 8px; font-size: 12.5px; font-weight: 800; border-radius: 3px; transform: rotate(-1.5deg); box-shadow: 0 2px 3px rgba(0,0,0,.18); }
 .sz-zettel:nth-child(even) { transform: rotate(1.5deg); background: #ffe6ef; }
+.sz-zettel.wackelt { animation: sz-zettelwackel .35s infinite alternate ease-in-out; }
+@keyframes sz-zettelwackel { from { transform: rotate(-4deg); } to { transform: rotate(4deg); } }
 .sz-spur { font-size: 17px; }
 .sz-karten button[disabled] { opacity: .45; cursor: not-allowed; }
 @media (prefers-reduced-motion: reduce) { .sz-take b { animation: none !important; } }
@@ -580,3 +582,44 @@ kbd { display: inline-block; min-width: 1.5em; padding: 0 .35em; margin-right: .
 .ly-bb-wahl { display: grid; gap: 8px; }
 .ly-bb-wahl button { text-align: left; display: flex; flex-direction: column; gap: 2px; }
 .ly-bb-wahl small { font-size: 12px; opacity: .75; font-weight: 700; }
+/* Kapitel 4: Thermometer, Zonen-Wette, Test mit Puls, Gemeinsam atmen, Skills-Koffer */
+.sz-thermo-reihe { display: flex; gap: 14px; align-items: stretch; }
+.sz-thermo-text { flex: 1; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.sz-thermo { display: flex; gap: 4px; align-items: stretch; }
+.sz-thermo small { font-size: 9.5px; color: #8a93a3; font-weight: 800; line-height: 1.05; }
+.sz-thermo-rohr { position: relative; width: 26px; height: 190px; border-radius: 13px; background: linear-gradient(to top, rgba(63,166,107,.18) 0 30%, rgba(233,162,59,.18) 30% 70%, rgba(214,69,47,.18) 70%); border: 2px solid #c9d0db; overflow: visible; }
+.sz-thermo-f { position: absolute; left: 3px; right: 3px; bottom: 3px; border-radius: 10px; }
+.sz-thermo-skala { position: relative; width: 24px; height: 190px; } .sz-thermo-skala i { position: absolute; left: 0; transform: translateY(50%); font-size: 9.5px; color: #8a93a3; font-weight: 800; font-style: normal; }
+.sz-thermo-z { position: absolute; left: 52px; font-size: 15px; font-weight: 900; color: #2b3a55; }
+.sz-zw-linie { position: relative; height: 14px; border-radius: 999px; overflow: visible; margin: 6px 4px 54px; }
+.sz-zw-linie > i { position: absolute; top: 0; height: 100%; opacity: .75; }
+.sz-zw-linie > i:first-child { border-radius: 999px 0 0 999px; } .sz-zw-linie > i:nth-child(3) { border-radius: 0 999px 999px 0; }
+.sz-zw-punkte i { position: absolute; transform: translate(-50%, 18px); width: 22px; height: 22px; border-radius: 50%; background: var(--f); color: #fff; font-style: normal; font-size: 11px; font-weight: 900; display: grid; place-items: center; animation: sz-rein .25s ease-out; }
+.sz-zw-punkte i.du { background: #2b3a55; }
+.sz-test .sz-puls { display: flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 900; color: #5b6472; }
+.sz-puls div { flex: 1; height: 12px; background: #eceff3; border-radius: 999px; overflow: hidden; } .sz-puls i { display: block; height: 100%; width: 0; }
+.sz-t-feld { position: relative; min-height: 150px; background: #fff; border: 2px solid #dde2ea; border-radius: 12px; display: grid; place-items: center; overflow: hidden; transition: filter .3s; }
+.sz-t-aufgabe { font-size: 30px; font-weight: 900; text-align: center; transition: filter .3s; }
+.sz-t-aufgabe small { display: block; font-size: 11px; color: #8a93a3; letter-spacing: 1px; text-transform: uppercase; }
+.sz-t-feld.verschwommen .sz-t-aufgabe { filter: blur(3px); }
+.sz-t-feld.blackout { background: #1d2333; } .sz-t-feld.blackout .sz-t-aufgabe { filter: blur(7px); opacity: .3; }
+.sz-t-feld.blackout::after { content: 'Blackout. Alles ist laut. Nimm einen Skill aus dem Koffer.'; position: absolute; color: #fff; font-weight: 800; font-size: 14px; padding: 0 16px; text-align: center; }
+.sz-gedanke { position: absolute; background: #3a2f4f; color: #fff; border: 0; border-radius: 14px; padding: 5px 10px; font: inherit; font-size: 12.5px; font-weight: 800; cursor: pointer; animation: sz-rein .3s ease-out; z-index: 2; }
+.sz-gedanke::after { content: ' ⛵'; } .sz-gedanke.weg { transition: transform .6s, opacity .6s; transform: translateX(120px) translateY(-20px); opacity: 0; }
+.sz-t-skills { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; } .sz-t-skills small { font-size: 11px; font-weight: 900; color: #8a93a3; }
+.sz-t-skills button { border: 2px solid #3fa66b; background: #effaf3; border-radius: 999px; padding: 6px 11px; font: inherit; font-weight: 800; font-size: 13.5px; cursor: pointer; }
+.sz-t-skills button[disabled] { opacity: .4; cursor: default; }
+.sz-atem { position: relative; height: 210px; display: grid; place-items: center; }
+.sz-atem-ring { position: absolute; width: 190px; height: 190px; border-radius: 50%; border: 3px dashed #c9d0db; }
+.sz-atem-ich { position: absolute; width: 190px; height: 190px; border-radius: 50%; background: radial-gradient(circle, rgba(95,180,255,.45), rgba(95,180,255,.12)); transform: scale(.3); }
+.sz-atem-er { position: absolute; width: 54px; height: 54px; border-radius: 50%; background: var(--f); color: #fff; font-weight: 900; font-size: 22px; display: grid; place-items: center; }
+.sz-atem-z { position: absolute; right: 8px; top: 6px; font-size: 26px; font-weight: 900; }
+.sz-atem-knopf { width: 100%; min-height: 58px; border: 3px solid #2b3a55; border-radius: 16px; background: #fff; font: inherit; font-weight: 900; font-size: 16px; cursor: pointer; touch-action: none; user-select: none; }
+.sz-atem-knopf.an { background: #dbeeff; }
+.sz-koffer { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 8px; }
+.sz-fach { background: #f6f3ea; border: 2px solid #c9b48a; border-radius: 12px; padding: 7px; display: flex; flex-direction: column; gap: 5px; }
+.sz-fach b { font-size: 13px; }
+.sz-fach button { text-align: left; border: 2px solid #d8dde6; background: #fff; border-radius: 9px; padding: 5px 8px; font: inherit; font-size: 13px; font-weight: 700; cursor: pointer; }
+.sz-fach button.an { border-color: #3fa66b; background: #e9f7ee; } .sz-fach button.an::before { content: '✓ '; color: #3fa66b; }
+@media (max-width: 640px) { .sz-thermo-rohr, .sz-thermo-skala { height: 150px; } .sz-t-aufgabe { font-size: 24px; } }
+.le-x { margin-left: 8px; border: 1.5px solid var(--f); background: #fff; color: var(--f); border-radius: 999px; padding: 1px 8px; font: inherit; font-size: 11px; font-weight: 900; cursor: pointer; }

@@ -108,11 +108,11 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
           (n.lacher ? '<i class="ly-h-reakt" data-l="' + lach.length + '">😂 ' + n.lacher.start + '</i>' : '') + '</div>';
       verlauf.insertAdjacentHTML('beforeend', html); verlauf.scrollTop = verlauf.scrollHeight;
       if (n.lacher) lach.push({ ...n.lacher, n: n.lacher.start, el: verlauf.querySelector('[data-l="' + (lach.length) + '"]') });
-      if (n.setzt) flags[n.setzt] = true;
+      if (n.setzt) { flags[n.setzt] = true; leisteNeu(); }
     };
     const leisteNeu = () => {
       if (wahlOffen) return;
-      leiste.innerHTML = def.aktionen.filter((a) => !gemacht.includes(a.id) && (!a.wenn || flags[a.wenn])).map((a) => '<button type="button" data-ak="' + a.id + '"><kbd>' + a.symbol + '</kbd><span>' + esc(a.t) + '</span></button>').join('');
+      leiste.innerHTML = def.aktionen.filter((a) => !gemacht.includes(a.id) && (!a.wenn || flags[a.wenn]) && (!a.wennNicht || !flags[a.wennNicht])).map((a) => '<button type="button" data-ak="' + a.id + '"><kbd>' + a.symbol + '</kbd><span>' + esc(a.t) + '</span></button>').join('');
       leiste.querySelectorAll('[data-ak]').forEach((b) => { b.onclick = () => aktion(def.aktionen.find((a) => a.id === b.dataset.ak)); });
     };
     const ausfuehren = (a, w) => {
@@ -635,11 +635,11 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
   });
 
   // Kleine Helfer für die neuen Spiele: Auswahl-Karten (Klick, Ziffern, E = erste) und „Weiter“
-  const karteWahl = (box, html, n, { zeit = 0, still = null, zeitEl = null } = {}) => new Promise((fertig) => {
-    box.innerHTML = html; let aus = false, tm = null;
+  const karteWahl = (box, html, n, { zeit = 0, still = null, zeitEl = null, eTaste = null } = {}) => new Promise((fertig) => {
+    box.innerHTML = html; let aus = false, tm = null; const ab = performance.now() + 400;
     const ende = (j) => { if (aus) return; aus = true; clearTimeout(tm); if (zeitEl) zeitEl.style.width = '0%'; loesche(); fertig(j); };
     box.querySelectorAll('[data-i]').forEach((b) => { b.onclick = () => ende(+b.dataset.i); });
-    halte((e) => { const m = /^Digit([1-9])$/.exec(e.code); if (m && +m[1] <= n) { e.preventDefault(); e.stopPropagation(); ende(+m[1] - 1); } else if (e.code === 'KeyE' || e.code === 'Enter') { e.preventDefault(); e.stopPropagation(); ende(0); } });
+    halte((e) => { if (e.repeat || performance.now() < ab) { e.stopPropagation(); return; } const m = /^Digit([1-9])$/.exec(e.code); if (m && +m[1] <= n) { e.preventDefault(); e.stopPropagation(); ende(+m[1] - 1); } else if ((e.code === 'KeyE' || e.code === 'Enter') && eTaste != null) { e.preventDefault(); e.stopPropagation(); ende(eTaste); } else if (e.code === 'KeyE' || e.code === 'Enter') { e.preventDefault(); e.stopPropagation(); } });
     if (zeit) { const ms = zeit * 1000 * zeitFaktor(), t0 = performance.now();
       const tick = () => { if (aus) return; const f = 1 - (performance.now() - t0) / ms; if (zeitEl) zeitEl.style.width = Math.max(0, f * 100) + '%'; if (f <= 0) ende(still); else requestAnimationFrame(tick); }; tick(); }
   });
@@ -649,6 +649,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
     box.querySelector('[data-a="w"]').onclick = zu;
     halte((e) => { if (e.code === 'KeyE' || e.code === 'Enter') { e.preventDefault(); e.stopPropagation(); zu(); } });
   };
+  const lesezeit = (...t) => Math.max(1600, t.join(' ').split(/\s+/).length * 330) * zeitFaktor();
   const blaseHtml = (wer, t, ich = false) => '<div class="sz-blase' + (ich ? ' ich' : '') + '" style="--f:' + esc(wer ? wer.farbe : '#2b3a55') + '"><b>' + esc(wer ? wer.name : 'Du') + '</b>' + esc(ersetze(t)) + '</div>';
 
   // ---------- Sortier-Sprint (Kurs E04 „Bedürfnis oder Wunsch?“, Modul 2 Gefühlswörter) ----------
@@ -680,12 +681,13 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
         const ziele = c.ziel == null ? null : [].concat(c.ziel);
         let sys;
         if (id == null) { offen++; sys = '⏱ Zu langsam – liegt jetzt auf dem Stapel „später“.'; }
+        else if (c.hinter) { if (!ziele) strittig++; else if (ziele.includes(id)) passend++; sys = '🫙 Dahinter steckt: ' + c.hinter; }
         else if (!ziele) { strittig++; sys = '🤔 Strittig. Kann man so oder so sehen.'; }
         else if (ziele.includes(id)) { passend++; sys = '✓ ' + F[j].t; }
         else sys = 'Hm. Die meisten legen das zu „' + F.find((f) => f.id === ziele[0]).t + '“.';
         faecher.innerHTML = '';
         rede.innerHTML = '<div class="sz-sys">' + esc(sys) + '</div>' + (c.sagt ? blaseHtml(c.wer, c.sagt) : '');
-        await warte(c.sagt ? 1900 : 950);
+        await warte(lesezeit(sys, c.sagt || ''));
         rede.innerHTML = '';
       }
       karte.textContent = ''; zahl.textContent = '';
@@ -716,7 +718,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
         zeigeStehen(s.stehen, ich);
         const namen = s.stehen.map((id) => L[id].name);
         bühne.innerHTML = '<div class="sz-sys">' + esc(namen.length ? (ich ? 'Mit dir stehen auf: ' : 'Es stehen auf: ') + namen.join(', ') + '.' : (ich ? 'Nur du stehst. Mutig.' : 'Niemand steht auf.')) + '</div>' + (s.sagt ? blaseHtml(L[s.sagt[0]] || null, s.sagt[1]) : '');
-        await warte(s.sagt ? 2300 : 1500);
+        await warte(lesezeit(s.sagt ? s.sagt[1] : '', 'Es stehen auf: x y z'));
       }
       if (def.eigene && def.eigene.length) {
         zeigeStehen([], false); bühne.innerHTML = ''; satz.textContent = 'Du stehst in der Mitte. Dein Satz: „Alle, die …“';
@@ -765,7 +767,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
   ui.synchron = (def) => new Promise((ok) => {
     const ids = Object.keys(GEF);
     const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || 'Synchronstudio') + '</span><b>🎙️ Synchronstudio</b></div>' +
-      '<p class="sz-info">Immer derselbe Satz. Hör auf Tempo, Lautstärke, Pausen. Welches Gefühl spricht?</p>' +
+      '<p class="sz-info">Immer derselbe Satz. Lies, WIE er gesagt wird: Tempo, Lautstärke, Pausen. Welches Gefühl spricht?</p>' +
       '<div class="sz-take"></div><div class="sz-bühne"></div><div class="sz-karten sz-raster ly-d-optionen"></div></div>');
     const take = k.querySelector('.sz-take'), bühne = k.querySelector('.sz-bühne'), karten = k.querySelector('.sz-karten');
     let richtig = 0, falsch = 0;
@@ -773,13 +775,14 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
     (async () => {
       for (let n = 0; n < def.takes.length; n++) {
         const t = def.takes[n];
-        take.innerHTML = '<small>Take ' + (n + 1) + ' · ' + esc(t.wer.name) + '</small><b class="sz-take-' + t.gefuehl + '">„' + esc(def.satz) + '“</b><em>' + esc(ersetze(t.regie)) + '</em>';
+        take.innerHTML = '<small>Take ' + (n + 1) + ' · ' + esc(t.wer.name) + '</small><b>„' + esc(def.satz) + '“</b><em>🔊 ' + esc(ersetze(t.regie)) + '</em>';
         bühne.innerHTML = '';
         const j = await karteWahl(karten, gefKnoepfe(), 6);
         const g = ids[j]; karten.innerHTML = '';
         if (g === t.gefuehl) richtig++; else falsch++;
+        take.querySelector('b').className = 'sz-take-' + t.gefuehl;
         bühne.innerHTML = '<div class="sz-sys">Du: ' + GEF[g][2] + ' ' + GEF[g][0] + ' · ' + esc(t.wer.name) + ' meinte: ' + GEF[t.gefuehl][2] + ' ' + GEF[t.gefuehl][0] + (g === t.gefuehl ? ' ✓' : '') + '</div>';
-        await warte(1700);
+        await warte(lesezeit('x x x x x x x x x'));
       }
       take.innerHTML = '<small>Dein Take</small><b>„' + esc(def.satz) + '“</b><em>Jetzt du. Mit welchem Gefühl sprichst du ihn?</em>'; bühne.innerHTML = '';
       const j = await karteWahl(karten, gefKnoepfe(), 6);
@@ -798,9 +801,9 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
   ui.spurenWand = (def) => new Promise((ok) => {
     const h = def.helfer;
     const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || '') + '</span><b>🧷 Spuren-Wand</b></div>' +
-      '<div class="sz-fall" style="--f:' + esc(h.farbe) + '"><p>' + esc(ersetze(def.frage)) + '</p></div><div class="sz-wand"></div>' +
+      '<div class="sz-fall" style="--f:' + esc(h.farbe) + '"><p>' + esc(ersetze(def.frage)) + '</p></div><div class="sz-pinnwand"></div>' +
       '<div class="sz-sort-karte sz-spur"></div><div class="sz-bühne"></div><div class="sz-karten ly-d-optionen"></div></div>');
-    const wand = k.querySelector('.sz-wand'), spur = k.querySelector('.sz-spur'), bühne = k.querySelector('.sz-bühne'), karten = k.querySelector('.sz-karten');
+    const wand = k.querySelector('.sz-pinnwand'), spur = k.querySelector('.sz-spur'), bühne = k.querySelector('.sz-bühne'), karten = k.querySelector('.sz-karten');
     const gepinnt = []; let heringe = 0;
     (async () => {
       for (const s of def.spuren) {
@@ -808,8 +811,9 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
         const j = await karteWahl(karten, '<button type="button" data-i="0"><span>📌 An die Wand – das zählt</span></button><button type="button" data-i="1"><span>🗑️ Weg – das beweist nichts</span></button>', 2);
         karten.innerHTML = '';
         if (j === 0) { gepinnt.push(s.id); if (!s.echt) heringe++; wand.insertAdjacentHTML('beforeend', '<span class="sz-zettel' + (s.echt ? '' : ' wackelt') + '">' + (s.sy || '📄') + ' ' + esc(ersetze(s.kurz || s.t)) + '</span>'); }
-        bühne.innerHTML = blaseHtml(h, (j === 0) === s.echt ? s.kommentar[0] : s.kommentar[1]);
-        await warte(2200);
+        const kom = (j === 0) === s.echt ? s.kommentar[0] : s.kommentar[1];
+        bühne.innerHTML = blaseHtml(h, kom);
+        await warte(lesezeit(kom));
       }
       spur.innerHTML = ''; spur.style.display = 'none'; bühne.innerHTML = blaseHtml(h, def.frageEnde || 'Und? Was sagt die Wand?');
       const moegl = def.schluesse.map((s) => ({ ...s, geht: s.braucht.every((b) => gepinnt.includes(b)) }));
@@ -817,13 +821,213 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
       const erste = moegl.findIndex((s) => s.geht);
       let j = await new Promise((fertig) => { karten.innerHTML = html; let aus = false; const ende = (x) => { if (aus) return; aus = true; loesche(); fertig(x); };
         karten.querySelectorAll('[data-i]:not([disabled])').forEach((b) => { b.onclick = () => ende(+b.dataset.i); });
-        halte((e) => { if (e.code === 'KeyE' || e.code === 'Enter') { e.preventDefault(); e.stopPropagation(); ende(erste); } }); });
+        halte((e) => { if (e.code === 'KeyE' || e.code === 'Enter') { e.preventDefault(); e.stopPropagation(); if (!e.repeat) ende(moegl.length - 1); } }); });
       if (j < 0) j = moegl.length - 1;
       const sch = moegl[j]; karten.innerHTML = '';
       bühne.innerHTML = '<div class="sz-sys">' + esc(ersetze(sch.t)) + '</div>' + (sch.antwort ? blaseHtml(h, sch.antwort) : '');
       await warte(1500);
       weiterKnopf(karten, { gepinnt, heringe, schluss: sch.key }, ok);
     })();
+  });
+
+  // ---------- Kurs Modul 3 (Gefühle regulieren): Anspannung 0–100, drei Zonen ----------
+  const ZONE = (z) => (z < 30 ? ['gruen', 'Grün', '#3fa66b'] : z < 70 ? ['gelb', 'Gelb', '#e9a23b'] : ['rot', 'Rot', '#d6452f']);
+  const thermoHtml = '<div class="sz-thermo"><div class="sz-thermo-rohr"><i class="sz-thermo-f"></i><b class="sz-thermo-z">0</b></div><div class="sz-thermo-skala"><i style="bottom:100%">100</i><i style="bottom:70%">70</i><i style="bottom:30%">30</i><i style="bottom:0">0</i></div></div>';
+  const setzeThermo = (k, z) => { const f = k.querySelector('.sz-thermo-f'), b = k.querySelector('.sz-thermo-z'); const Z = ZONE(z); f.style.height = Math.max(3, z) + '%'; f.style.background = Z[2]; b.textContent = Math.round(z); b.style.bottom = Math.max(0, Math.min(92, z - 4)) + '%'; };
+
+  // Anspannungs-Leiter (E11): Ein Morgen wird schlimmer. Nach jedem Ereignis eine Reaktion – Skills senken die Zahl.
+  // Bei Rot (ab 70) helfen Kopf-Skills kaum („Deckel weg“), Körper und Sinne schon.
+  // def: { wo, titel, start, ereignisse: [{ t, plus, karten: [{ t, typ: 'koerper'|'sinne'|'kopf'|'menschen'|'gegen'|'nix', wirkung, antwort? }] }] }
+  // → { wert, max, rot, typen: [..] }
+  ui.thermometer = (def) => new Promise((ok) => {
+    let z = def.start || 15, max = z; const typen = [];
+    const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || '') + '</span><b>' + esc(def.titel || 'Anspannung 0–100') + '</b></div>' +
+      '<div class="sz-thermo-reihe">' + thermoHtml + '<div class="sz-thermo-text"><div class="sz-fall" style="--f:#2b3a55"><p class="sz-ereignis"></p></div><div class="sz-bühne"></div></div></div>' +
+      '<div class="sz-zeit"><i></i></div><div class="sz-karten ly-d-optionen"></div></div>');
+    const ereignis = k.querySelector('.sz-ereignis'), bühne = k.querySelector('.sz-bühne'), karten = k.querySelector('.sz-karten'), zeitEl = k.querySelector('.sz-zeit i');
+    const geh = async (ziel) => { const a = z, n = 14; for (let i = 1; i <= n; i++) { z = a + (ziel - a) * i / n; setzeThermo(k, z); await warte(35); } z = ziel; max = Math.max(max, z); setzeThermo(k, z); };
+    setzeThermo(k, z);
+    (async () => {
+      for (const e of def.ereignisse) {
+        ereignis.textContent = ersetze(e.t); bühne.innerHTML = '';
+        await geh(Math.min(100, z + e.plus));
+        const Z = ZONE(z);
+        bühne.innerHTML = '<div class="sz-sys" style="background:' + Z[2] + ';color:#fff">Du bist bei ' + Math.round(z) + ' · Zone ' + Z[1] + '</div>';
+        const j = await karteWahl(karten, e.karten.map((c, i) => '<button type="button" data-i="' + i + '"><span>' + esc(ersetze(c.t)) + '</span></button>').join(''), e.karten.length, { zeit: def.zeit || 9, still: -1, zeitEl });
+        karten.innerHTML = '';
+        const c = j < 0 ? { typ: 'nix', wirkung: 4, antwort: 'Du machst nichts. Die Zahl wartet nicht.' } : e.karten[j];
+        typen.push(c.typ);
+        let w = c.wirkung || 0, hinweis = c.antwort || '';
+        if (c.typ === 'kopf' && z >= 70) { w = Math.round(w * 0.2); hinweis = 'Bei Rot hört der Kopf schlecht zu. Erst den Körper runterbringen, dann denken.'; }
+        if (hinweis) bühne.insertAdjacentHTML('beforeend', '<div class="sz-sys">' + esc(ersetze(hinweis)) + '</div>');
+        await geh(Math.max(0, Math.min(100, z + w)));
+        await warte(1300);
+      }
+      const Z = ZONE(z);
+      weiterKnopf(karten, { wert: Math.round(z), max: Math.round(max), rot: max >= 70, typen }, ok, '<div class="sz-sys">Höchster Wert: ' + Math.round(max) + ' · jetzt: ' + Math.round(z) + ' (' + Z[1] + ')</div>');
+    })();
+  });
+
+  // Zonen-Wette (E11): Bei welcher Zahl stehst DU – und wo stehen die meisten? Dann zeigen alle ihre Zahl.
+  // def: { wo, leute: { id: { name, farbe } }, karten: [{ t, zahlen: { id: 0–100 } }] } → { eigene: [zonen], treffer, anders: [namen] }
+  ui.zonenWette = (def) => new Promise((ok) => {
+    const L = def.leute, ids = Object.keys(L), ZN = [['gruen', 'Grün (0–30)', '#3fa66b', 15], ['gelb', 'Gelb (30–70)', '#e9a23b', 50], ['rot', 'Rot (70–100)', '#d6452f', 85]];
+    const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || '') + '</span><b>Zonen-Wette</b></div>' +
+      '<div class="sz-fall" style="--f:#2b3a55"><p class="sz-zw-karte"></p></div><div class="sz-zw-linie"><i style="left:0;width:30%;background:#3fa66b"></i><i style="left:30%;width:40%;background:#e9a23b"></i><i style="left:70%;width:30%;background:#d6452f"></i><div class="sz-zw-punkte"></div></div>' +
+      '<p class="sz-info sz-zw-frage"></p><div class="sz-bühne"></div><div class="sz-karten sz-raster ly-d-optionen"></div></div>');
+    const karte = k.querySelector('.sz-zw-karte'), frage = k.querySelector('.sz-zw-frage'), punkte = k.querySelector('.sz-zw-punkte'), bühne = k.querySelector('.sz-bühne'), karten = k.querySelector('.sz-karten');
+    const eigene = [], anders = []; let treffer = 0;
+    const knoepfe = () => ZN.map(([, n, f], i) => '<button type="button" data-i="' + i + '" style="--f:' + f + '"><span>' + n + '</span></button>').join('');
+    (async () => {
+      for (const c of def.karten) {
+        karte.textContent = ersetze(c.t); punkte.innerHTML = ''; bühne.innerHTML = '';
+        frage.textContent = 'Wo stehst DU bei diesem Satz?';
+        const ich = await karteWahl(karten, knoepfe(), 3);
+        frage.textContent = 'Und die meisten aus der Klasse? Wette!';
+        const wette = await karteWahl(karten, knoepfe(), 3);
+        karten.innerHTML = '';
+        eigene.push(ZN[ich][0]);
+        const zonen = ids.map((id) => (c.zahlen[id] < 30 ? 0 : c.zahlen[id] < 70 ? 1 : 2));
+        const zaehl = [0, 1, 2].map((q) => zonen.filter((x) => x === q).length), meist = zaehl.indexOf(Math.max(...zaehl));
+        if (meist === wette) treffer++;
+        punkte.innerHTML = ids.map((id, i) => '<i style="--f:' + esc(L[id].farbe) + ';left:' + c.zahlen[id] + '%;top:' + ((i % 3) * 12) + 'px" title="' + esc(L[id].name) + '">' + esc(L[id].name[0]) + '</i>').join('') +
+          '<i class="du" style="left:' + ZN[ich][3] + '%;top:36px">●</i>';
+        const weit = ids.filter((id) => Math.abs(c.zahlen[id] - ZN[ich][3]) >= 50).map((id) => L[id].name);
+        anders.push(...weit);
+        bühne.innerHTML = '<div class="sz-sys">' + (meist === wette ? '✓ Gewettet richtig. ' : '') + 'Die meisten: ' + ZN[meist][1].split(' ')[0] + '.' + (weit.length ? ' Ganz woanders als du: ' + weit.join(', ') + '.' : '') + '</div>' +
+          (c.sagt ? blaseHtml(L[c.sagt[0]] || null, c.sagt[1]) : '');
+        await warte(c.sagt ? 2600 : 1800);
+      }
+      weiterKnopf(karten, { eigene, treffer, anders: [...new Set(anders)] }, ok, '<div class="sz-sys">Gleicher Satz – ganz andere Zahlen. Das ist normal.</div>');
+    })();
+  });
+
+  // Test mit Puls (E11–E14): Aufgaben lösen, während die Anspannung steigt. Grübel-Gedanken tauchen auf (antippen = ziehen
+  // lassen). Skills aus dem Koffer senken die Zahl. Ab 70 verschwimmt die Aufgabe, ab 90 Blackout (der Körper kommt von selbst
+  // nur langsam runter). Keine Note. def: { wo, aufgaben: [{ f, a: [..], r }], gedanken: [..], skills: [{ id, t, sy, wirkung }], zeit }
+  // → { beantwortet, richtig, max, skills: [ids], gedankenWeg }
+  ui.mathTest = (def) => new Promise((ok) => {
+    const k = ui.ebeneAuf('szene', '<div class="sz sz-test"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || 'Mathe-Test') + '</span><b>Test · <span class="sz-t-uhr"></span></b></div>' +
+      '<div class="sz-puls"><span>Anspannung</span><div><i></i></div><b>0</b></div>' +
+      '<div class="sz-t-feld"><div class="sz-t-aufgabe"></div><div class="sz-t-gedanken"></div></div>' +
+      '<div class="sz-karten sz-raster ly-d-optionen sz-t-antw"></div><div class="sz-t-skills"></div><div class="sz-t-fuss"></div></div>');
+    const auf = k.querySelector('.sz-t-aufgabe'), antw = k.querySelector('.sz-t-antw'), ged = k.querySelector('.sz-t-gedanken'), sk = k.querySelector('.sz-t-skills'), fuss = k.querySelector('.sz-t-fuss');
+    const pulsF = k.querySelector('.sz-puls i'), pulsZ = k.querySelector('.sz-puls b'), uhr = k.querySelector('.sz-t-uhr'), feld = k.querySelector('.sz-t-feld');
+    let puls = def.start || 35, max = puls, n = 0, richtig = 0, gedankenWeg = 0, ende = false, sperre = 0;
+    const benutzt = [], t0 = performance.now(), ZEIT = (def.zeit || 80) * zeitFaktor() * 1000;
+    const zeigPuls = () => { const Z = ZONE(puls); pulsF.style.width = puls + '%'; pulsF.style.background = Z[2]; pulsZ.textContent = Math.round(puls); max = Math.max(max, puls);
+      feld.classList.toggle('verschwommen', puls >= 70 && puls < 90); feld.classList.toggle('blackout', puls >= 90); };
+    const aufgabe = () => {
+      if (n >= def.aufgaben.length) return fertig();
+      const a = def.aufgaben[n];
+      auf.innerHTML = '<small>Aufgabe ' + (n + 1) + ' von ' + def.aufgaben.length + '</small>' + esc(a.f);
+      antw.innerHTML = a.a.map((x, i) => '<button type="button" data-i="' + i + '"><span>' + esc(x) + '</span></button>').join('');
+      antw.querySelectorAll('[data-i]').forEach((b) => { b.onclick = () => { if (ende || puls >= 90 || performance.now() < sperre) return; const gut = +b.dataset.i === a.r; if (gut) richtig++; else puls = Math.min(100, puls + 6); n++; zeigPuls(); aufgabe(); }; });
+    };
+    sk.innerHTML = '<small>Dein Koffer:</small>' + def.skills.map((s) => '<button type="button" data-s="' + esc(s.id) + '">' + (s.sy || '') + ' ' + esc(s.t) + '</button>').join('');
+    sk.querySelectorAll('[data-s]').forEach((b) => { b.onclick = () => {
+      if (ende || b.disabled) return; const s = def.skills.find((x) => x.id === b.dataset.s); b.disabled = true; benutzt.push(s.id);
+      sperre = performance.now() + 2500; fuss.innerHTML = '<div class="sz-sys">' + esc(ersetze(s.wie || s.t)) + ' …</div>';
+      const ziel = Math.max(10, puls - (s.wirkung || 25)); const a = puls; let i = 0;
+      const sinke = () => { if (ende) return; i++; puls = a + (ziel - a) * i / 25; zeigPuls(); if (i < 25) setTimeout(sinke, 100); else fuss.innerHTML = ''; }; sinke();
+    }; });
+    const gedanke = () => {
+      if (ende) return;
+      const t = def.gedanken[Math.floor(Math.random() * def.gedanken.length)];
+      const el = document.createElement('button'); el.type = 'button'; el.className = 'sz-gedanke'; el.textContent = t;
+      el.style.left = (5 + Math.random() * 55) + '%'; el.style.top = (10 + Math.random() * 60) + '%';
+      el.onclick = () => { gedankenWeg++; el.classList.add('weg'); puls = Math.max(5, puls - 4); zeigPuls(); setTimeout(() => el.remove(), 600); };
+      ged.appendChild(el); puls = Math.min(100, puls + 5); zeigPuls();
+      setTimeout(() => { if (el.isConnected) el.remove(); }, 6000);
+      setTimeout(gedanke, 3500 + Math.random() * 3000);
+    };
+    const tick = () => {
+      if (ende) return; const t = performance.now() - t0;
+      uhr.textContent = Math.max(0, Math.ceil((ZEIT - t) / 1000)) + ' s';
+      if (puls >= 90) { puls = Math.max(75, puls - 0.06); }   // Blackout: kommt von selbst nur langsam runter
+      else puls = Math.min(100, puls + 0.035);   // die Uhr läuft, die Zahl steigt leise
+      zeigPuls();
+      if (t >= ZEIT) fertig(); else requestAnimationFrame(tick);
+    };
+    function fertig() {
+      if (ende) return; ende = true; ged.innerHTML = ''; feld.classList.remove('verschwommen', 'blackout');
+      auf.innerHTML = '<small>Abgabe</small>Du hast ' + n + ' von ' + def.aufgaben.length + ' Aufgaben bearbeitet.'; antw.innerHTML = '';
+      sk.querySelectorAll('button').forEach((b) => { b.disabled = true; });
+      weiterKnopf(fuss, { beantwortet: n, richtig, max: Math.round(max), skills: benutzt, gedankenWeg }, ok, '<div class="sz-sys">Höchste Anspannung: ' + Math.round(max) + (benutzt.length ? ' · Skills benutzt: ' + benutzt.length : '') + '</div>');
+    }
+    halte((e) => { const m = /^Digit([1-9])$/.exec(e.code); if (m && !ende) { const b = antw.querySelector('[data-i="' + (+m[1] - 1) + '"]'); if (b) { e.preventDefault(); e.stopPropagation(); if (!e.repeat) b.click(); } } });
+    zeigPuls(); aufgabe(); setTimeout(gedanke, 2500); requestAnimationFrame(tick);
+  });
+
+  // Gemeinsam atmen (E12 Partneratmung): Jemand ist bei Rot. Halten = einatmen (Kreis wird groß), loslassen = ausatmen.
+  // Ruhiger, gleichmäßiger Takt bringt die andere Person mit runter. def: { wer: { name, farbe }, start, ziel, saetze: { zahl: text } }
+  // → { zahl, gut, runden }
+  ui.atemSync = (def) => new Promise((ok) => {
+    const w = def.wer;
+    const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || '') + '</span><b>Gemeinsam atmen</b></div>' +
+      '<p class="sz-info">' + esc(w.name) + ' atmet sehr schnell. Atme ruhig vor – er macht mit. <b>Halten</b> = einatmen (bis der Ring voll ist), <b>loslassen</b> = langsam ausatmen.</p>' +
+      '<div class="sz-atem"><div class="sz-atem-ring"></div><div class="sz-atem-ich"></div><div class="sz-atem-er" style="--f:' + esc(w.farbe) + '">' + esc(w.name[0]) + '</div><b class="sz-atem-z"></b></div>' +
+      '<div class="sz-bühne"></div><div class="sz-karten"><button type="button" class="sz-atem-knopf">Halten zum Einatmen <kbd>Leertaste</kbd></button></div></div>');
+    const ich = k.querySelector('.sz-atem-ich'), er = k.querySelector('.sz-atem-er'), zEl = k.querySelector('.sz-atem-z'), bühne = k.querySelector('.sz-bühne'), knopf = k.querySelector('.sz-atem-knopf'), karten = k.querySelector('.sz-karten');
+    let zahl = def.start || 95, gut = 0, runden = 0, ein = null, aus = null, groesse = 0.3, ende = false; const gesagt = new Set();
+    const zeig = () => { zEl.textContent = Math.round(zahl); zEl.style.color = ZONE(zahl)[2]; };
+    const sag = () => { for (const [g, t] of Object.entries(def.saetze || {}).sort((a, b) => b[0] - a[0])) if (zahl <= +g && !gesagt.has(g)) { gesagt.add(g); bühne.innerHTML = blaseHtml(w, t); break; } };
+    const runter = () => { if (ende || ein) return; const jetzt = performance.now(); if (aus) { const d = (jetzt - aus) / 1000; runden++; const passt = d >= 3 && d <= 8; const einD = aus - (ein0 || aus); const einOk = einD >= 2500 && einD <= 6000;
+        if (passt && einOk) { gut++; zahl = Math.max(def.ziel || 35, zahl - 12); bühne.insertAdjacentHTML('afterbegin', '<div class="sz-sys">Ruhig. ' + esc(w.name) + ' atmet mit.</div>'); }
+        else { zahl = Math.max(def.ziel || 35, zahl - 3); bühne.insertAdjacentHTML('afterbegin', '<div class="sz-sys">' + (einD < 2500 ? 'Etwas länger einatmen.' : d < 3 ? 'Langsamer ausatmen. Länger als einatmen.' : 'Nicht zu lange warten.') + '</div>'); }
+        while (bühne.children.length > 2) bühne.lastChild.remove();
+        zeig(); sag(); if (zahl <= (def.ziel || 35) || runden >= 8) return fertig(); }
+      ein = jetzt; ein0 = jetzt; aus = null; knopf.classList.add('an'); knopf.firstChild.textContent = 'Einatmen … ';
+    };
+    let ein0 = 0;
+    const hoch = () => { if (ende || !ein) return; aus = performance.now(); ein = null; knopf.classList.remove('an'); knopf.firstChild.textContent = 'Ausatmen … (dann wieder halten) '; };
+    knopf.addEventListener('pointerdown', (e) => { e.preventDefault(); runter(); }); knopf.addEventListener('pointerup', hoch); knopf.addEventListener('pointerleave', hoch);
+    halte((e) => { if (['Space', 'KeyE', 'Enter'].includes(e.code)) { e.preventDefault(); e.stopPropagation(); if (!e.repeat) runter(); } });
+    const los = (e) => { if (['Space', 'KeyE', 'Enter'].includes(e.code)) { e.preventDefault(); e.stopPropagation(); hoch(); } };
+    document.addEventListener('keyup', los, true);
+    const anim = () => {
+      if (ende) return; const t = performance.now() / 1000;
+      if (ein && performance.now() - ein > 7000) hoch();   // nicht ewig halten
+      if (ein) groesse = Math.min(1, groesse + 0.006); else groesse = Math.max(0.3, groesse - 0.004);
+      ich.style.transform = 'scale(' + groesse.toFixed(3) + ')';
+      const tempo = 0.6 + (zahl / 100) * 2.4;   // je höher die Zahl, desto schneller atmet er
+      er.style.transform = 'scale(' + (0.75 + 0.2 * Math.sin(t * tempo * 2)).toFixed(3) + ')';
+      requestAnimationFrame(anim);
+    };
+    function fertig() { if (ende) return; ende = true; loesche(); document.removeEventListener('keyup', los, true); weiterKnopf(karten, { zahl: Math.round(zahl), gut, runden }, ok, '<div class="sz-sys">' + esc(w.name) + ' ist bei ' + Math.round(zahl) + '. ' + (gut >= 3 ? 'Ihr habt zusammen runtergeatmet.' : 'Langsam wird es besser.') + '</div>'); }
+    zeig(); sag(); anim();
+  });
+
+  // Skills-Koffer (E15): Aus fünf Fächern je bis zu zwei Skills einpacken, dann drei für die Notfallkarte (Rot) wählen.
+  // def: { faecher: [{ id, t, sy }], karten: [{ id, t, fach }] } → { koffer: [ids], notfall: [ids] }
+  ui.koffer = (def) => new Promise((ok) => {
+    const drin = new Set(), not = new Set();
+    const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || 'Aula · Koffer-Markt') + '</span><b>Mein Skills-Koffer</b></div>' +
+      '<p class="sz-info sz-k-info">Pack ein, was bei DIR wirkt. Bis zu zwei pro Fach. Niemand bewertet das.</p><div class="sz-koffer"></div><div class="sz-karten"></div></div>');
+    const box = k.querySelector('.sz-koffer'), karten = k.querySelector('.sz-karten'), info = k.querySelector('.sz-k-info');
+    let phase = 0;
+    const zeig = () => {
+      box.innerHTML = def.faecher.map((f) => '<div class="sz-fach"><b>' + f.sy + ' ' + esc(f.t) + '</b>' + def.karten.filter((c) => c.fach === f.id && (phase === 0 || drin.has(c.id))).map((c) =>
+        '<button type="button" data-c="' + c.id + '" class="' + ((phase === 0 ? drin : not).has(c.id) ? 'an' : '') + '">' + esc(c.t) + '</button>').join('') + '</div>').join('');
+      box.querySelectorAll('[data-c]').forEach((b) => { b.onclick = () => {
+        const c = def.karten.find((x) => x.id === b.dataset.c);
+        if (phase === 0) { if (drin.has(c.id)) drin.delete(c.id); else if (def.karten.filter((x) => x.fach === c.fach && drin.has(x.id)).length < 2) drin.add(c.id); }
+        else { if (not.has(c.id)) not.delete(c.id); else if (not.size < 3) not.add(c.id); }
+        zeig();
+      }; });
+    };
+    const weiter = () => {
+      if (phase === 0) {
+        if (drin.size < 3) def.karten.filter((c) => !drin.has(c.id)).slice(0, 3 - drin.size).forEach((c) => drin.add(c.id));
+        phase = 1; info.textContent = 'Jetzt die Notfallkarte: Welche drei helfen dir bei ROT? Tipp: Bei Rot wirken Körper, Sinne und Menschen am besten.'; zeig();
+        karten.innerHTML = '<button type="button" class="sz-weiter" data-a="w">Notfallkarte fertig <kbd>E</kbd></button>'; karten.querySelector('[data-a="w"]').onclick = weiter; return;
+      }
+      if (!not.size) [...drin].slice(0, 3).forEach((id) => not.add(id));
+      loesche(); ui.ebeneZu(); ok({ koffer: [...drin], notfall: [...not] });
+    };
+    zeig();
+    karten.innerHTML = '<button type="button" class="sz-weiter" data-a="w">Koffer zu <kbd>E</kbd></button>'; karten.querySelector('[data-a="w"]').onclick = weiter;
+    halte((e) => { if (e.code === 'KeyE' || e.code === 'Enter') { e.preventDefault(); e.stopPropagation(); weiter(); } });
   });
 
   return ui;

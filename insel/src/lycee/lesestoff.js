@@ -49,7 +49,7 @@ export const HEFTE = [
     { text: 'Ich hab nicht weggehört. Ich hab zu ihm gesagt: Danke. Ich weiß. Es ist wichtig. Jetzt sei kurz still.' },
     { text: 'Dann hab ich angefangen. Eins. Zwei. Bei fünf war es leichter. Bei acht hat jemand gelächelt.' },
     { text: 'Bei zehn war es vorbei. Der Wachhund hat sich hingelegt. Ich mich auch. Auf meinen Stuhl.' },
-    { text: 'Mut ist nicht, keine Angst zu haben. Mut ist, mit dem Wachhund zusammen loszugehen.' },
+    { text: 'Nachher hab ich Ben gesagt: Mein Herz war eine Stunde lang. Er hat gesagt: „Meins zwei.“' },
   ] },
 ];
 
@@ -74,7 +74,7 @@ export function leseEcke(ui, gelesen = []) {
       weg(); let n = 0;
       const seite = () => {
         const s = h.seiten[n], letzte = n === h.seiten.length - 1;
-        box.innerHTML = '<div class="le-heft" style="--f:' + h.farbe + '"><div class="le-kopf"><b>' + esc(h.titel) + '</b><span>' + (n + 1) + ' / ' + h.seiten.length + '</span></div>' +
+        box.innerHTML = '<div class="le-heft" style="--f:' + h.farbe + '"><div class="le-kopf"><b>' + esc(h.titel) + '</b><span>' + (n + 1) + ' / ' + h.seiten.length + ' <button type="button" class="le-x" data-a="regal">✕ Regal</button></span></div>' +
           (h.art === 'comic'
             ? '<div class="le-panel"><small>' + esc(s.ort || '') + '</small><div class="le-bild">' + esc(s.bild) + '</div>' + (s.blasen || []).map(([w, t]) => '<div class="le-blase' + (w === 'Erzähler' ? ' erz' : '') + '">' + (w === 'Erzähler' ? '' : '<b>' + esc(w) + '</b>') + esc(t) + '</div>').join('') + '</div>' + (s.unten ? '<p class="le-unten">' + esc(s.unten) + '</p>' : '')
             : '<div class="le-text">' + esc(s.text) + '</div>') +
@@ -84,6 +84,7 @@ export function leseEcke(ui, gelesen = []) {
         const zur = () => { if (n) { n--; seite(); } };
         box.querySelector('[data-a="w"]').onclick = vor;
         const z = box.querySelector('[data-a="z"]'); if (z) z.onclick = zur;
+        box.querySelector('[data-a="regal"]').onclick = () => regal();
         const heft = box.querySelector('.le-heft'); let x0 = null;
         heft.addEventListener('pointerdown', (e) => { x0 = e.clientX; });
         heft.addEventListener('pointerup', (e) => { if (x0 == null) return; const dx = e.clientX - x0; x0 = null; if (dx < -60) vor(); else if (dx > 60) zur(); });

@@ -151,3 +151,15 @@ Ziel war ≤ 200 Aufrufe und ≤ 400k Dreiecke – überall erreicht. Was es geb
   Staffel, Synchronstudio nach dem Sportfest. Faden: Skate-Ecke, links sitzend, postet nur in Pausen.
 - **Lese-Ecke im CDI** (Open World): 4 Comics aus der Klasse, 2 Kurzgeschichten. Blättern, ✓ gelesen, keine Fragen.
 - **Basketball** am Hof: Freiwürfe, Dreier (Streifen schmaler) und H-O-R-S-E gegen Ben, Rekorde je Modus.
+
+## 18.11. (Abend) – Kapitel 4 „Gefühle regulieren“ und zweite Kritik zu Kapitel 2–3
+- **Kapitel 4** (Modul 3, E11–E15): Montagmorgen als Anspannungs-Thermometer (Zonen Grün/Gelb/Rot, bei Rot wirken
+  Kopf-Skills kaum), Handmodell „Deckel weg“, Zonen-Wette, Skills-Koffer mit Notfallkarte, Mathe-Test mit Puls
+  (Grübel-Gedanken antippen = ziehen lassen, Skills aus dem eigenen Koffer, Blackout ab 90), Noah bei Rot: gemeinsam
+  atmen statt reden, Hitze-Duell mit Dario. Hilfe-Weg 116 111 auf der Notfallkarte. Faden: Handy-Kiste entlastet die
+  7P2, Spur Flur 8:34 (Dario rausgeflogen, Luca „auf Toilette“), Cliffhanger zu Kapitel 5: gefälschter Screenshot.
+- **Kritik umgesetzt**: Mehrfach-Merker bei Wahlen repariert; Chat-Knöpfe erscheinen erst, wenn sie passen; Spuren-Wand
+  widerspruchsfrei (Luca hat geteilt, Jo hat gelacht; „nie im Unterricht“); keine Beschämung („Jo-Logik“ weg); E wählt
+  in Auswahlspielen nicht mehr aus Versehen; Lesezeit statt fester Zeiten; Synchronstudio erst neutral, Farbe nach dem
+  Tipp; Erwachsene benoten das Kompliment-Annehmen nicht mehr; Belohnungen nur an echten Entscheidungen; „Bus“-Satz
+  entschärft; Markennamen raus; Synchronstudio und Mischpult als eigener Schritt „Im Schatten“; Lese-Ecke mit ✕ Regal.
