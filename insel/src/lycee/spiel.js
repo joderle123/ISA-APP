@@ -29,6 +29,7 @@ import { situationen } from './situation.js';
 import { FACHLEHRER } from './story/personal.js';
 import { tunN2 } from './story/kapitel2.js';
 import { tunN1 } from './story/kapitel1.js';
+import { tunN3, ORTE_N3 } from './story/kapitel3.js';
 import { SCHRITTE, GESPRAECHE, LEUTE, STAERKEN, BINGO, GEHEIMNISSE, SPRECHER, KAPITEL } from './geschichte.js';
 import { ORTE2, CHAT, CHAT5, ichBotschaftThema } from './kapitel2.js';
 import { ORTE3, saegeFolgen } from './kapitel3.js';
@@ -87,7 +88,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   const material = lambertVC(veil, 'lycee', { ramp: 'props' });
   const materialInnen = lambertVC(veil, 'lycee-innen', { ramp: 'props' });
   const welt = baueWelt({ material, materialInnen });
-  Object.assign(welt.orte, ORTE2, ORTE3, ORTE4, ORTE6);
+  Object.assign(welt.orte, ORTE2, ORTE3, ORTE4, ORTE6, ORTE_N3);
   let paket = ladePaket();   // Aufgaben der Lehrperson (Phase 2) oder Grundaufgaben
   scene.add(welt.gruppe);
   const sky = createSky({ scene, renderer: rr.renderer, audio, quality: { ...q, shadowSize: Math.min(q.shadowSize || 0, 2048), shadowSpan: 28 }, events });
@@ -383,10 +384,11 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         // Situations-Spiel (situation.js): Ausgang → Folgen (wie eine Wahl: staerke, herz, merke, dann)
         const def = typeof z.def === 'function' ? z.def(S.merke, S) : z.def;
         ui.dialogZu();
-        const SZ = { hitze: 'hitzeDuell', chat: 'liveChat', checkin: 'checkIn', namen: 'namenRekord', zwei: 'zweiWahrheiten', blind: 'blindParcours', stempel: 'skillsStempel', tanks: 'tankRaten', meinetanks: 'meineTanks', nachhaken: 'nachhaken', teams: 'teamsWaehlen', linie: 'linie', staerken: 'staerkenSchenken', pult: 'gefuehlsPult', lesen: 'gesichterLesen', mischpult: 'mischpult' };
+        const SZ = { hitze: 'hitzeDuell', chat: 'liveChat', checkin: 'checkIn', namen: 'namenRekord', zwei: 'zweiWahrheiten', blind: 'blindParcours', stempel: 'skillsStempel', tanks: 'tankRaten', meinetanks: 'meineTanks', nachhaken: 'nachhaken', teams: 'teamsWaehlen', pult: 'gefuehlsPult', lesen: 'gesichterLesen', mischpult: 'mischpult', linie: 'linie', staerken: 'staerkenSchenken', pult: 'gefuehlsPult', lesen: 'gesichterLesen', mischpult: 'mischpult' };
         const r = (await ui[SZ[z.szene] || z.szene](def)) || {};
         const key = z.ausgang ? z.ausgang(r, S.merke) : 'standard';
         S.szenen = S.szenen || {}; if (z.id) S.szenen[z.id] = key;
+        S.sz = S.sz || {}; if (z.id) { const kurz = {}; for (const [a, v] of Object.entries(r)) if (typeof v !== 'object' || Array.isArray(v)) kurz[a] = v; S.sz[z.id] = kurz; }
         const f = (z.folgen && (z.folgen[key] || z.folgen.standard)) || {};
         if (f.staerke) [].concat(f.staerke).forEach(staerke);
         if (f.herz) for (const [id, n] of Object.entries(f.herz)) herz(id, n);
@@ -412,6 +414,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   const TUN = {
     ...tunN1({ get S() { return S; }, ui }),
     ...tunN2({ get S() { return S; }, ui }),
+    ...tunN3({ get S() { return S; }, ui }),
     stundenplanTipp: () => { ui.toast('<b>Tipp</b><span>Mit Tab oder ☰ öffnest du dein Journal.</span>'); },
     weberTelefon: () => { const w = leute.weber; if (w) w.f.spiele('Interact', { tempo: 0.5 }); },
     stundenplan: () => { S.stundenplan = true; ui.toast('📄 Stundenplan bekommen – steht im Journal.'); },

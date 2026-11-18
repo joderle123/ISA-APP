@@ -506,7 +506,8 @@ export const GESPRAECHE_N1 = {
       { t: '„Weiß noch nicht. Bin ja neu.“', herz: { lina: 1 }, dann: [['lina', 'Ehrlich. Gut. Schreib ich so.']] },
     ] },
     ['kiesser', 'Wunderbar! Und jetzt: malen. Schnell, nicht schön.'],
-    ['erzaehler', 'Du malst Lina. Es sieht aus wie ein Kartoffel-Mensch. Lina malt dich. Es sieht aus wie du. Unfair.'],
+    ['erzaehler', 'Du malst Lina. Es sieht aus wie ein Kartoffel-Mensch.'],
+    ['erzaehler', 'Lina malt dich. Es sieht aus wie du. Unfair.'],
   ],
   n1_checkin: [
     ['erzaehler', 'Mittwoch. Zwei Tage Annexe. Dein Handy: „Check-in“.'],

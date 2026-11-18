@@ -26,7 +26,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
       '<div class="sz-balken"><div class="sz-balken-f"></div><span>Hitze</span></div>' +
       '<div class="sz-bühne"></div><div class="sz-zeit"><i></i></div><div class="sz-karten ly-d-optionen"></div></div>');
     const bühne = k.querySelector('.sz-bühne'), karten = k.querySelector('.sz-karten'), fill = k.querySelector('.sz-balken-f'), mimik = k.querySelector('.sz-mimik'), zeitEl = k.querySelector('.sz-zeit i');
-    let hitze = def.hitze == null ? 35 : def.hitze, respekt = 0, knall = false;
+    let hitze = def.hitze == null ? 35 : def.hitze, respekt = 0, knall = false, bemerkt = 0;
     const arten = {}, wege = [];
     const zeigeHitze = () => {
       fill.style.width = Math.max(3, Math.min(100, hitze)) + '%';
@@ -46,7 +46,18 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
       const tick = () => { if (aus) return; const f = 1 - (performance.now() - t0) / ms; zeitEl.style.width = Math.max(0, f * 100) + '%'; if (f <= 0) ende(-1); else requestAnimationFrame(tick); };
       const ende = (i) => { if (aus) return; aus = true; karten.innerHTML = ''; zeitEl.style.width = '0%'; fertig(i); };
       karten.querySelectorAll('[data-i]').forEach((b) => { b.onclick = () => ende(+b.dataset.i); });
-      halte((e) => { if (aus) return; const n = { Digit1: 0, Digit2: 1, Digit3: 2, Digit4: 3 }[e.code]; if (n != null && n < r.karten.length) { e.preventDefault(); e.stopPropagation(); ende(n); } else if (e.code === 'KeyE' || e.code === 'Enter') { e.preventDefault(); e.stopPropagation(); ende(0); } });
+      halte((e) => { if (aus) return; const n = { Digit1: 0, Digit2: 1, Digit3: 2, Digit4: 3, Digit5: 4 }[e.code]; if (n != null && n < r.karten.length) { e.preventDefault(); e.stopPropagation(); ende(n); } else if (e.code === 'KeyE' || e.code === 'Enter') { e.preventDefault(); e.stopPropagation(); ende(0); } });
+      // Frühwarn-Signal (Kurs E09): kurz sichtbar; wer es antippt, merkt es rechtzeitig und bekommt eine ruhige Extra-Karte
+      if (r.warn) setTimeout(() => {
+        if (aus) return;
+        const w = document.createElement('button'); w.type = 'button'; w.className = 'sz-warn'; w.innerHTML = '⚠ <b>' + esc(r.warn) + '</b><small>Tippen, wenn du es merkst</small>';
+        karten.before(w);
+        const weg = setTimeout(() => w.remove(), 2600 * zeitFaktor());
+        w.onclick = () => { clearTimeout(weg); w.remove(); bemerkt++; hitze = Math.max(0, hitze - 10); zeigeHitze();
+          r.karten.push({ t: r.skill || '(Kurz weggucken. Ausatmen. Dann reden.)', art: 'skill', hitze: -18, respekt: 1, antwort: r.skillAntwort || '(wartet) … Okay. Was?' });
+          const j = r.karten.length - 1; karten.insertAdjacentHTML('beforeend', '<button type="button" data-i="' + j + '" class="sz-skill" style="--f:#5fb07a"><small>Skill</small><span>' + esc(ersetze(r.karten[j].t)) + '</span></button>');
+          karten.querySelector('[data-i="' + j + '"]').onclick = () => ende(j); };
+      }, 1300);
       requestAnimationFrame(tick);
     });
     (async () => {
@@ -57,6 +68,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
         await warte(500);
         const i = await wahl(r);
         loesche();
+        k.querySelectorAll('.sz-warn').forEach((w) => w.remove());
         const c = i >= 0 ? r.karten[i] : { t: '(… nichts sagen)', art: 'still', ...(r.still || {}) };
         arten[c.art] = (arten[c.art] || 0) + 1; wege.push(c.art);
         blase(name(), c.t, '#2b3a55', true);
@@ -68,7 +80,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
       }
       if (knall) { bühne.insertAdjacentHTML('beforeend', '<div class="sz-knall">KRACH!</div>'); await warte(1400); }
       karten.innerHTML = '<button type="button" class="sz-weiter" data-a="w">Weiter <kbd>E</kbd></button>';
-      const zu = () => { loesche(); ui.ebeneZu(); ok({ hitze, respekt, knall, arten, wege }); };
+      const zu = () => { loesche(); ui.ebeneZu(); ok({ hitze, respekt, knall, arten, wege, bemerkt }); };
       karten.querySelector('[data-a="w"]').onclick = zu;
       halte((e) => { if (e.code === 'KeyE' || e.code === 'Enter') { e.preventDefault(); e.stopPropagation(); zu(); } });
     })();
@@ -505,6 +517,109 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
       k.querySelector('[data-a="w"]').onclick = zu;
       halte((e) => { if (e.code === 'KeyE' || e.code === 'Enter') { e.preventDefault(); e.stopPropagation(); zu(); } });
     })();
+  });
+
+  // ---------- Gefühle (Kurs Modul 2): sechs Grundgefühle mit Farbe und Zeichen ----------
+  const GEF = { freude: ['Freude', '#f2b134', '😄'], trauer: ['Trauer', '#4f88c8', '😢'], wut: ['Wut', '#d6452f', '😠'], angst: ['Angst', '#8a7bc8', '😨'], ekel: ['Ekel', '#5fa04a', '🤢'], ueberraschung: ['Überraschung', '#e9734a', '😲'] };
+  ui.GEF = GEF;
+
+  // ---------- Gefühls-Pult (Kurs E08: Wer greift zum Steuer?) ----------
+  // def: { wo, szene, versionen: { wut: [ ['wer', 'Text'] … ], … }, maxSehen: 2 } → { gesehen: [ids], final: id }
+  ui.gefuehlsPult = (def) => new Promise((ok) => {
+    const ids = Object.keys(def.versionen);
+    const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || '') + '</span><b>Gefühls-Pult</b></div>' +
+      '<div class="sz-fall" style="--f:#2b3a55"><p>' + esc(ersetze(def.szene)) + '</p></div><p class="sz-info">Welches Gefühl greift zum Steuer? Du kannst zurückspulen und eine zweite Version ansehen.</p>' +
+      '<div class="sz-pult"></div><div class="sz-bühne"></div><div class="sz-karten ly-d-optionen"></div></div>');
+    const pultEl = k.querySelector('.sz-pult'), bühne = k.querySelector('.sz-bühne'), karten = k.querySelector('.sz-karten');
+    const gesehen = [];
+    const pult = (nur, text) => new Promise((fertig) => {
+      pultEl.innerHTML = ids.map((id) => '<button type="button" data-g="' + id + '" style="--f:' + GEF[id][1] + '"' + (nur && !nur.includes(id) ? ' disabled' : '') + (gesehen.includes(id) ? ' class="gesehen"' : '') + '><i>' + GEF[id][2] + '</i><span>' + GEF[id][0] + '</span></button>').join('');
+      karten.innerHTML = text ? '<div class="sz-sys">' + esc(text) + '</div>' : '';
+      let aus = false; const ende = (id) => { if (aus) return; aus = true; loesche(); fertig(id); };
+      pultEl.querySelectorAll('[data-g]:not([disabled])').forEach((b) => { b.onclick = () => ende(b.dataset.g); });
+      halte((e) => { if (e.code === 'KeyE' || e.code === 'Enter') { e.preventDefault(); e.stopPropagation(); ende((nur || ids).find((x) => !gesehen.includes(x)) || (nur || ids)[0]); } });
+    });
+    const spiele = async (id) => {
+      bühne.innerHTML = '<div class="sz-sys" style="background:' + GEF[id][1] + ';color:#fff">' + GEF[id][2] + ' ' + GEF[id][0] + ' am Steuer</div>';
+      for (const [wer, t] of def.versionen[id]) { await warte(1000); bühne.insertAdjacentHTML('beforeend', '<div class="sz-blase' + (wer === 'du' ? ' ich' : '') + '" style="--f:' + (wer === 'du' ? '#2b3a55' : GEF[id][1]) + '"><b>' + esc(wer === 'du' ? 'Du' : wer === 'erzaehler' ? '' : wer) + '</b>' + esc(ersetze(t)) + '</div>'); }
+      await warte(1300);
+    };
+    (async () => {
+      const a = await pult(null); gesehen.push(a); pultEl.innerHTML = ''; await spiele(a);
+      const nochmal = await new Promise((fertig) => {
+        karten.innerHTML = '<button type="button" data-i="0"><span>⏪ Zurückspulen: anderes Gefühl ans Steuer</span></button><button type="button" data-i="1"><span>So lassen</span></button>';
+        let aus = false; const ende = (j) => { if (aus) return; aus = true; loesche(); fertig(j); };
+        karten.querySelectorAll('[data-i]').forEach((b) => { b.onclick = () => ende(+b.dataset.i); });
+        halte((e) => { if (e.code === 'KeyE' || e.code === 'Enter') { e.preventDefault(); e.stopPropagation(); ende(0); } });
+      });
+      let final = a;
+      if (nochmal === 0) {
+        const b2 = await pult(ids.filter((x) => x !== a)); gesehen.push(b2); pultEl.innerHTML = ''; await spiele(b2);
+        final = await pult([a, b2], 'Welche Version passiert wirklich?');
+      }
+      pultEl.innerHTML = ''; bühne.innerHTML = '<div class="sz-sys" style="background:' + GEF[final][1] + ';color:#fff">So passiert es: ' + GEF[final][0] + ' war am Steuer.</div>';
+      karten.innerHTML = '<button type="button" class="sz-weiter" data-a="w">Weiter <kbd>E</kbd></button>';
+      const zu = () => { loesche(); ui.ebeneZu(); ok({ gesehen, final }); };
+      karten.querySelector('[data-a="w"]').onclick = zu;
+      halte((e) => { if (e.code === 'KeyE' || e.code === 'Enter') { e.preventDefault(); e.stopPropagation(); zu(); } });
+    })();
+  });
+
+  // ---------- Gesichter lesen (Kurs E07 Pantomime, E09 Statuen) ----------
+  // def: { wo, titel, leute: [ { wer: { id, name, farbe }, zeichen: [..], gefuehl: id, aufloesung } ] } → { richtig: [ids], falsch: [ids] }
+  ui.gesichterLesen = (def) => new Promise((ok) => {
+    const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || '') + '</span><b>' + esc(def.titel || 'Gesichter lesen') + '</b></div>' +
+      '<p class="sz-info">Die Szene friert ein. Schau auf Hände, Blick, Haltung. Was fühlt die Person?</p><div class="sz-bühne"></div><div class="sz-karten sz-raster ly-d-optionen"></div></div>');
+    const bühne = k.querySelector('.sz-bühne'), karten = k.querySelector('.sz-karten');
+    const richtig = [], falsch = [];
+    (async () => {
+      for (const p of def.leute) {
+        bühne.innerHTML = '<div class="sz-statue" style="--f:' + p.wer.farbe + '"><i>' + esc(p.wer.name[0]) + '</i><div><b>' + esc(p.wer.name) + '</b>' + p.zeichen.map((z) => '<em>' + esc(z) + '</em>').join('') + '</div></div>';
+        const ids = Object.keys(GEF);
+        const g = await new Promise((fertig) => {
+          karten.innerHTML = ids.map((id, j) => '<button type="button" data-i="' + j + '" style="--f:' + GEF[id][1] + '"><span>' + GEF[id][2] + ' ' + GEF[id][0] + '</span></button>').join('');
+          let aus = false; const ende = (j) => { if (aus) return; aus = true; loesche(); fertig(ids[j]); };
+          karten.querySelectorAll('[data-i]').forEach((b) => { b.onclick = () => ende(+b.dataset.i); });
+          halte((e) => { const m = { Digit1: 0, Digit2: 1, Digit3: 2, Digit4: 3, Digit5: 4, Digit6: 5 }[e.code]; if (m != null) { e.preventDefault(); e.stopPropagation(); ende(m); } else if (e.code === 'KeyE') { e.preventDefault(); e.stopPropagation(); ende(0); } });
+        });
+        const passt = [].concat(p.gefuehl).includes(g); (passt ? richtig : falsch).push(p.wer.id);
+        karten.innerHTML = '';
+        bühne.insertAdjacentHTML('beforeend', '<div class="sz-sys">' + (passt ? 'Gut gelesen. ' : 'Eher nicht. ') + esc(ersetze(p.aufloesung || '')) + '</div>');
+        await warte(2300);
+      }
+      karten.innerHTML = '<button type="button" class="sz-weiter" data-a="w">Weiter <kbd>E</kbd></button>';
+      const zu = () => { loesche(); ui.ebeneZu(); ok({ richtig, falsch }); };
+      karten.querySelector('[data-a="w"]').onclick = zu;
+      halte((e) => { if (e.code === 'KeyE' || e.code === 'Enter') { e.preventDefault(); e.stopPropagation(); zu(); } });
+    })();
+  });
+
+  // ---------- Mischpult (Kurs E10: gemischte Gefühle, 0–10) ----------
+  // def: { wo, ereignis, gefuehle: [ids], vergleich: { wer: { name, farbe }, werte: { id: n }, satz } } → { werte, staerkstes, gemischt }
+  ui.mischpult = (def) => new Promise((ok) => {
+    const ids = def.gefuehle || Object.keys(GEF), werte = Object.fromEntries(ids.map((id) => [id, 0]));
+    const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || '') + '</span><b>Mischpult</b></div>' +
+      '<div class="sz-fall" style="--f:#2b3a55"><p>' + esc(ersetze(def.ereignis)) + '</p></div><p class="sz-info">Was ist alles da? Mehrere Gefühle gleichzeitig sind normal. Schieb jeden Regler von 0 bis 10.</p>' +
+      '<div class="sz-mischpult">' + ids.map((id) => '<label style="--f:' + GEF[id][1] + '"><span>' + GEF[id][2] + '</span><input type="range" min="0" max="10" step="1" value="0" data-g="' + id + '"><b data-z="' + id + '">0</b><small>' + GEF[id][0] + '</small><i class="sz-fremd" data-f="' + id + '"></i></label>').join('') + '</div>' +
+      '<div class="sz-karten"><button type="button" class="sz-weiter" data-a="w">So ist es <kbd>E</kbd></button></div></div>');
+    k.querySelectorAll('[data-g]').forEach((r) => { r.addEventListener('keydown', (e) => e.stopPropagation()); r.oninput = () => { werte[r.dataset.g] = +r.value; k.querySelector('[data-z="' + r.dataset.g + '"]').textContent = r.value; }; });
+    let phase = 0;
+    const weiter = () => {
+      if (phase === 0 && def.vergleich) {
+        phase = 1; loesche();
+        for (const id of ids) { const v = def.vergleich.werte[id] || 0; const el = k.querySelector('[data-f="' + id + '"]'); el.style.bottom = (v * 10) + '%'; el.textContent = def.vergleich.wer.name[0]; el.style.setProperty('--w', def.vergleich.wer.farbe); el.title = def.vergleich.wer.name + ': ' + v; }
+        k.querySelectorAll('[data-g]').forEach((r) => { r.disabled = true; });
+        k.querySelector('.sz-karten').innerHTML = '<div class="sz-sys">' + esc(def.vergleich.wer.name) + ': „' + esc(ersetze(def.vergleich.satz || 'Bei mir war es anders.')) + '“</div><button type="button" class="sz-weiter" data-a="w">Weiter <kbd>E</kbd></button>';
+        k.querySelector('[data-a="w"]').onclick = weiter;
+        halte((e) => { if (e.code === 'KeyE' || e.code === 'Enter') { e.preventDefault(); e.stopPropagation(); weiter(); } });
+        return;
+      }
+      loesche(); ui.ebeneZu();
+      const sort = Object.entries(werte).sort((a, b) => b[1] - a[1]);
+      ok({ werte, staerkstes: sort[0][1] ? sort[0][0] : null, gemischt: sort.filter(([, v]) => v >= 3).length >= 2 });
+    };
+    k.querySelector('[data-a="w"]').onclick = weiter;
+    halte((e) => { if (e.code === 'KeyE' || e.code === 'Enter') { e.preventDefault(); e.stopPropagation(); weiter(); } });
   });
 
   // ---------- Stempel im Skills-Pass (Kurs-Ritual am Ende jedes Kapitels) ----------
