@@ -177,3 +177,10 @@ Ziel war ≤ 200 Aufrufe und ≤ 400k Dreiecke – überall erreicht. Was es geb
   allein“), Kritischer Detektiv mit Beweis-Waage (Tatsache, Gefühl, Spruch), neuer Satz nach Regeln (realistisch, ohne
   „alle/nie“, freundlich, nächster Schritt), Mutprobe in der Kantine gegen Luca. Die kleine Lüge mit dem Handy aus
   Kapitel 4 hat Folgen (kein Alibi). Fakten gehen an Erwachsene, nicht in den Chat.
+
+## 19.11. – Rückmeldung: Bingo im Klassensaal raus, Konturen feiner
+- Das Aura-Bingo (herumlaufen, Felder abhaken) ist ersetzt durch den **Zettel-Krimi** am Platz: Mme Tidderich liest
+  anonyme Zettel vor, man rät an kleinen Hinweisen (Hundehaare, Plektrum, Kaktus-Sticker), von wem sie sind.
+- **Konturen** im Comic-Look: halb so dick, deutlich heller (dunklere Farbe des Gegenstands statt fast Schwarz), weniger
+  Linien an Knicken. Nur in Annexe; andere Spiele unverändert.
+- Spielstand merkt sich den Schritt jetzt auch beim Namen (Kapitel können wachsen, ohne alte Stände zu verschieben).

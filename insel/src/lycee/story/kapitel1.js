@@ -3,6 +3,27 @@
 // Höchstens rund 12 Wörter je Blase. Kein richtig/falsch – die Leute reagieren.
 const pult = (r, c, s) => [-24.25 + r * 2.1, -27.2 + c * 3.4 + s * 0.62, -Math.PI / 2, 'sitzt'];
 const KLASSE = { ayla: pult(0, 0, -1), ben: pult(1, 2, 1), chiara: pult(2, 1, -1), yusuf: pult(1, 0, 1), jo: pult(3, 2, -1), lina: pult(3, 0, 1), noah: pult(0, 1, 1) };
+// ---------- Zettel-Krimi (statt Bingo): Wer hat welchen Zettel geschrieben? ----------
+const P = { ben: ['Ben', '#d9a21b'], jo: ['Jo', '#c0392b'], lina: ['Lina', '#9b7bc8'], ayla: ['Ayla', '#e85d75'], noah: ['Noah', '#3f78b8'], yusuf: ['Yusuf', '#5fa0d0'], chiara: ['Chiara', '#3fa66b'] };
+const ZETTEL = {
+  wo: 'Saal 1.04 · Mme Tidderich liest vor',
+  leute: [
+    { id: 'ben', hinweis: 'Hundehaare auf dem Pulli', falsch: 'Ich? Leider nein. Aber gute Idee.' },
+    { id: 'jo', hinweis: 'Schlüsselanhänger: kleines Auto', falsch: 'Digga, nein. Guck richtig hin.' },
+    { id: 'lina', hinweis: 'Finger tippen leise auf den Tisch', falsch: '(schüttelt nur den Kopf)' },
+    { id: 'ayla', hinweis: 'Plektrum an der Kette', falsch: 'Nope. Aber ich mag deinen Mut.' },
+    { id: 'noah', hinweis: 'Kaktus-Sticker auf dem Heft', falsch: 'Ich? Nein. Ich glaub nicht. Nein.' },
+    { id: 'yusuf', hinweis: 'Sporttasche mit Gürtel drin', falsch: 'Nein.' },
+    { id: 'chiara', hinweis: 'Brotdose mit Pasta', falsch: 'Non. Falscher Zettel.' },
+  ].map((p) => ({ ...p, name: P[p.id][0], farbe: P[p.id][1] })),
+  zettel: [
+    { von: 'ben', t: 'Mein Hund hat mein Ladekabel gegessen.', sagt: [['ben', 'Keks heißt er. Er hat das Kabel komplett gegessen.'], ['ben', 'Sein Vater ist auch so. Also der Hund-Vater.']] },
+    { von: 'jo', t: 'Meine zwei Katzen heißen wie Autos.', sagt: [['jo', 'Turbo und Diesel.'], ['jo', 'Diesel ist schneller. Wie im echten Leben.']] },
+    { von: 'lina', t: 'Ich spiele Klavier. Aber nur, wenn keiner zuhört.', sagt: [['lina', '(leise) … Ja. Das war meiner.']] },
+    { von: 'ayla', t: 'Ich spiele Bass. Laut. Sehr laut.', sagt: [['ayla', 'Bass ist Gitarre mit Selbstbewusstsein. Merk dir das.']] },
+    { von: 'noah', t: 'Mein Kaktus heißt Kevin. Er hat eine Sonnenbrille.', sagt: [['noah', 'Zählt ein Kaktus als Haustier? Für mich schon.']] },
+  ],
+};
 const KLASSE_STEHT = { ayla: [-24, -27, 0.4], ben: [-21.5, -22.5, -2.6], chiara: [-19.5, -25.5, 1.8], yusuf: [-23.6, -20.2, 2.4], jo: [-19.55, -21, -1.5], lina: [-19.55, -27.8, -0.6] };
 
 export const SCHRITTE_N1 = [
@@ -17,9 +38,6 @@ export const SCHRITTE_N1 = [
   { id: 'klasse', kap: 1, tag: 'Montag', uhr: 7.95, titel: 'Saal 1.04', ziel: 'Geh in Saal 1.04 zu Mme Tidderich.', marker: 'hoffmann',
     leute: { hoffmann: [-27, -24, Math.PI / 2], ...KLASSE },
     fertig: { reden: 'hoffmann', gespraech: 'n1_hoffmann' } },
-  { id: 'bingo', kap: 1, tag: 'Montag', uhr: 8.3, titel: 'Aura-Bingo', ziel: 'Finde für jedes Feld jemanden. Frag herum!', marker: 'bingo',
-    leute: { hoffmann: [-27, -24, Math.PI / 2], noah: [-22.75, -23.3, 2.2], ...KLASSE_STEHT },
-    fertig: { bingo: 4, gespraech: 'bingoFertig' } },
   { id: 'pause', kap: 1, tag: 'Montag', uhr: 10.0, titel: 'Große Pause', ziel: 'Pause! Zu Mila auf die Bank – oder zum Korb, wo Ben wettet.', marker: ['mila', 'ben'],
     start: { teleport: 'eingangHof' },
     leute: { mila: [-20, 11.6, Math.PI, 'sitzt'], ben: [27.5, 21, 0.8], yusuf: [30.8, 22.2, -0.9], noah: [2, 14, 0.6, 'redet'], ayla: [3, 15.3, -2.5, 'redet'], kenan: [-34, 9, 1], dario: [-32.6, 10.2, -2] },
@@ -348,17 +366,26 @@ export const GESPRAECHE_N1 = {
     ['hoffmann', 'Das wird ein Jahr … wie sagt ihr … lit.'],
     ['erzaehler', 'Die ganze Klasse stöhnt. Jo stöhnt mit Echo.'],
     ['ben', '(flüstert) Minus 5000 Aura. Für sie. Nicht für dich.'],
-    ['hoffmann', 'Neue Methode: Aura-Bingo! Vier Felder. Rumfragen!'],
+    ['hoffmann', 'Neue Methode! Jeder hat mir letzte Woche einen Zettel geschrieben.'],
+    ['hoffmann', 'Ohne Namen. Eine Sache über sich. Du bist neu – du rätst.'],
     { wahl: [
-      { t: '„Sie haben „Aura“ gesagt. Das darf man nicht.“', staerke: 'humor', herz: { ben: 1, jo: 1, hoffmann: -1 }, dann: [
+      { t: '„Sie haben „lit“ gesagt. Das darf man nicht.“', staerke: 'humor', herz: { ben: 1, jo: 1, hoffmann: -1 }, dann: [
         ['jo', 'WALLAH. Endlich sagt’s wer.'],
         ['hoffmann', 'Ich darf alles. Ich hab einen Kaffee.'] ] },
-      { t: '„Muss ich was über mich erzählen?“', staerke: 'hilfe', herz: { hoffmann: 1 }, dann: [
-        ['hoffmann', 'Nein. Nur fragen. Erzählen machen die anderen.'],
-        ['jo', '(äfft nach) „Muss ich was erzählen?“'], ['hoffmann', 'Jo. Du fängst an.'] ] },
+      { t: '„Muss ich auch einen Zettel schreiben?“', staerke: 'hilfe', herz: { hoffmann: 1 }, dann: [
+        ['hoffmann', 'Nächste Woche. Wenn du willst. Heute nur raten.'],
+        ['jo', '(äfft nach) „Muss ich auch einen Zettel?“'], ['hoffmann', 'Jo. Benimm dich. Oder rate mit.'] ] },
       { t: 'Okay.', dann: [] },
     ] },
-    { tu: 'bingoStart' },
+    { szene: 'zettel', id: 'zettel', def: ZETTEL,
+      ausgang: (r) => (r.richtig.length >= 4 ? 'gut' : r.richtig.length >= 2 ? 'mittel' : 'schwer'),
+      folgen: {
+        gut: { staerke: 'lesen', herz: { ben: 1, lina: 1, noah: 1 }, merke: 'zettelGut', dann: [['hoffmann', 'Detektivin! Oder Detektiv. Jedenfalls: Wow.']] },
+        mittel: { herz: { ben: 1 }, dann: [['ben', 'Nicht schlecht für Tag eins. Ich hab bei mir selbst falsch geraten.']] },
+        schwer: { herz: { noah: 1 }, dann: [['noah', '(flüstert) Ich hätte auch nix erraten. Ehrlich.']] },
+      } },
+    ['hoffmann', 'Schneller als die 7P1. Das schreib ich an die Tafel.'],
+    ['ben', 'Schneller als die 7P1. Sein Vater, ehrlich.'],
   ],
   bingoFertig: [
     ['hoffmann', 'Bingo! Schneller als die 7P1. Das schreib ich an die Tafel.'],

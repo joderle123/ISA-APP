@@ -117,7 +117,10 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   // ---------- Zustand ----------
   let S = lies();
   // Neue Geschichte (v2): alte Spielstände starten beim neuen Kapitel 1 – Freundschaften, Jetons, Dinge, Aussehen bleiben
-  const neuStart = (x) => { if (x && (x.v || 1) < 2) { Object.assign(x, { v: 2, schritt: 0, fertig: false, kapitelFertig: 0, bingo: {}, gefragt: [], szenen: {} }); } return x; };
+  const neuStart = (x) => {
+    // Spielstand merkt sich den Schritt auch beim Namen: kommen Schritte dazu oder fallen weg, stimmt die Nummer trotzdem
+    if (x && x.schrittId) { const j = SCHRITTE.findIndex((s) => s.id === x.schrittId); if (j >= 0) x.schritt = j; }
+    if (x && (x.v || 1) < 2) { Object.assign(x, { v: 2, schritt: 0, fertig: false, kapitelFertig: 0, bingo: {}, gefragt: [], szenen: {} }); } return x; };
   neuStart(S);
   const neuerStand = (name, figur) => ({ v: 2, name, figur, schritt: 0, herz: {}, staerken: {}, merke: {}, entdeckt: [], stundenplan: false, bingo: {}, gefragt: [], fertig: false });
   const sichern = () => schreib(S);
@@ -403,7 +406,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         // Situations-Spiel (situation.js): Ausgang → Folgen (wie eine Wahl: staerke, herz, merke, dann)
         const def = typeof z.def === 'function' ? z.def(S.merke, S) : z.def;
         ui.dialogZu();
-        const SZ = { hitze: 'hitzeDuell', chat: 'liveChat', checkin: 'checkIn', namen: 'namenRekord', zwei: 'zweiWahrheiten', blind: 'blindParcours', stempel: 'skillsStempel', tanks: 'tankRaten', meinetanks: 'meineTanks', nachhaken: 'nachhaken', teams: 'teamsWaehlen', pult: 'gefuehlsPult', lesen: 'gesichterLesen', mischpult: 'mischpult', linie: 'linie', staerken: 'staerkenSchenken', sort: 'sortSprint', platz: 'platzwechsel', koerper: 'koerperKarte', synchron: 'synchron', spuren: 'spurenWand', thermo: 'thermometer', zonen: 'zonenWette', test: 'mathTest', atem: 'atemSync', koffer: 'koffer', weiche: 'gedankenWeiche', bohnen: 'bohnenWette', waage: 'beweisWaage', satz: 'satzBau' };
+        const SZ = { hitze: 'hitzeDuell', chat: 'liveChat', checkin: 'checkIn', namen: 'namenRekord', zwei: 'zweiWahrheiten', blind: 'blindParcours', stempel: 'skillsStempel', tanks: 'tankRaten', meinetanks: 'meineTanks', nachhaken: 'nachhaken', teams: 'teamsWaehlen', pult: 'gefuehlsPult', lesen: 'gesichterLesen', mischpult: 'mischpult', linie: 'linie', staerken: 'staerkenSchenken', sort: 'sortSprint', platz: 'platzwechsel', koerper: 'koerperKarte', synchron: 'synchron', spuren: 'spurenWand', thermo: 'thermometer', zonen: 'zonenWette', test: 'mathTest', atem: 'atemSync', koffer: 'koffer', weiche: 'gedankenWeiche', bohnen: 'bohnenWette', waage: 'beweisWaage', satz: 'satzBau', zettel: 'wenRaten' };
         const r = (await ui[SZ[z.szene] || z.szene](def)) || {};
         const key = z.ausgang ? z.ausgang(r, S.merke) : 'standard';
         S.szenen = S.szenen || {}; if (z.id) S.szenen[z.id] = key;
@@ -1106,7 +1109,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   }
   async function starteSchrittJetzt(i, mitStart) {
     const vorher = SCHRITTE[S.schritt];
-    S.schritt = i; S.fertig = false; sichern();
+    S.schritt = i; S.schrittId = SCHRITTE[i] && SCHRITTE[i].id; S.fertig = false; sichern();
     const st = SCHRITTE[i];
     if (mitStart !== false && vorher && (vorher.tag !== st.tag || vorher.kap !== st.kap) && i > 0) {
       const eintraege = Object.entries(tagHerz).filter(([id, n]) => n && LEUTE[id]).map(([id, n]) => ({ name: LEUTE[id].name, farbe: LEUTE[id].farbe, n })).sort((a, b) => b.n - a.n);

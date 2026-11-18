@@ -71,14 +71,14 @@ export function detectQuality() {
 const OUTLINE_SHADER = {
   uniforms: {
     tDiffuse: { value: null }, tDepth: { value: null }, uTexel: { value: new THREE.Vector2(1 / 1024, 1 / 1024) },
-    uNear: { value: 0.3 }, uFar: { value: 1600 }, uThick: { value: 1 }, uStrength: { value: 1 }, uNight: { value: 0 },
+    uNear: { value: 0.3 }, uFar: { value: 1600 }, uThick: { value: 1 }, uStrength: { value: 1 }, uNight: { value: 0 }, uDunkel: { value: 0.12 }, uKnick: { value: 0.65 },
   },
   vertexShader: /* glsl */`
     varying vec2 vUv;
     void main() { vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0); }`,
   fragmentShader: /* glsl */`
     uniform sampler2D tDiffuse; uniform sampler2D tDepth; uniform vec2 uTexel;
-    uniform float uNear; uniform float uFar; uniform float uThick; uniform float uStrength; uniform float uNight;
+    uniform float uNear; uniform float uFar; uniform float uThick; uniform float uStrength; uniform float uNight; uniform float uDunkel; uniform float uKnick;
     varying vec2 vUv;
     float linD(vec2 uv) {
       float z = texture2D(tDepth, uv).x;
@@ -100,13 +100,13 @@ const OUTLINE_SHADER = {
       float d2 = abs(dl + dr - 2.0 * dc) + abs(du + dd - 2.0 * dc);
       float d1 = abs(dr - dl) + abs(du - dd);
       float crease = d2 / (d1 * 0.35 + dc * 0.012 + 0.02);
-      edge = max(edge, smoothstep(1.5, 2.8, crease) * 0.65);
+      edge = max(edge, smoothstep(1.5, 2.8, crease) * uKnick);
       float fade = 1.0 - smoothstep(60.0, 110.0, dc);
       edge *= fade * uStrength;
       // Wolken, Rauch und Gewitterturm schreiben Alpha < 0.995 (Marker): keine Kontur (§5.2 – keine Ballon-Ränder)
       edge *= step(0.995, c.a);
       float l = dot(c.rgb, vec3(0.299, 0.587, 0.114));
-      vec3 oc = max(mix(vec3(l), c.rgb, 1.25), vec3(0.0)) * 0.12;
+      vec3 oc = max(mix(vec3(l), c.rgb, 1.25), vec3(0.0)) * uDunkel;
       oc = max(oc, vec3(0.0025));
       oc = mix(oc, vec3(0.0052, 0.0070, 0.0273), uNight * 0.4);
       // Leuchtendes (über 1.0) bekommt keine Kontur
@@ -238,7 +238,7 @@ class TiefePass extends ShaderPass {
 // Werte als Uniforms → Look-Regler im Debug-Modus. Leistung: ein Vollbild-Durchgang, ein Texturzugriff.
 export const LOOKS = {
   aus: { kontur: 1, konturDicke: 1, stufen: 0, raster: 0, schraffur: 0, papier: 0, korn: 0, saett: 1, hell: 1, weich: 0, ao: 1, pastell: 0 },
-  comic: { kontur: 1, konturDicke: 2.4, stufen: 4, raster: 4.2, schraffur: 0, papier: 0, korn: 0, saett: 1.2, hell: 1.08, weich: 0.08, ao: 0.6, pastell: 0 },   // A „Comic“, leichter gestimmt (Entscheidung 17.11.)
+  comic: { kontur: 0.7, konturDicke: 1.25, konturDunkel: 0.45, konturKnick: 0.3, stufen: 4, raster: 4.2, schraffur: 0, papier: 0, korn: 0, saett: 1.2, hell: 1.08, weich: 0.08, ao: 0.6, pastell: 0 },   // A „Comic“, leichter gestimmt (Entscheidung 17.11.)
   skizze: { kontur: 0.9, konturDicke: 0.8, stufen: 0, raster: 0, schraffur: 4.5, papier: 0.9, korn: 0.1, saett: 0.55, hell: 1.04, weich: 0, ao: 0.5, pastell: 0.05 },
   weich: { kontur: 0, konturDicke: 1, stufen: 4, raster: 0, schraffur: 0, papier: 0, korn: 0, saett: 1.12, hell: 1.08, weich: 0.9, ao: 0.25, pastell: 0.1 },
 };
@@ -382,7 +382,7 @@ export function createRenderer({ canvas, quality: qInfo, events, look: startLook
   const lookWerte = { ...LOOKS[aktLook] };
   function wendeLook() {
     const w = lookWerte;
-    if (post.outline) { post.outline.uniforms.uStrength.value = q.outline > 0 ? w.kontur : 0; post.outline.uniforms.uThick.value = outlinePx(q, renderer.getPixelRatio()) * w.konturDicke; post.outline.enabled = q.outline > 0 && w.kontur > 0; }
+    if (post.outline) { post.outline.uniforms.uStrength.value = q.outline > 0 ? w.kontur : 0; post.outline.uniforms.uThick.value = outlinePx(q, renderer.getPixelRatio()) * w.konturDicke; post.outline.uniforms.uDunkel.value = w.konturDunkel ?? 0.12; post.outline.uniforms.uKnick.value = w.konturKnick ?? 0.65; post.outline.enabled = q.outline > 0 && w.kontur > 0; }
     if (post.look) {
       const u = post.look.uniforms;
       u.uStufen.value = w.stufen; u.uRaster.value = renderer.getPixelRatio() >= 2 ? w.raster : 0;   // Punkte nur bei scharfem Bild – sonst wirken sie wie Schmutz (Handy) u.uSchraffur.value = w.schraffur; u.uPapier.value = w.papier;

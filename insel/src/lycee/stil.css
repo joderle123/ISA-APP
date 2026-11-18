@@ -670,3 +670,13 @@ kbd { display: inline-block; min-width: 1.5em; padding: 0 .35em; margin-right: .
 
 .sz .sz-sort-karte.neu { animation: sz-kartein .2s ease-out; }
 @keyframes sz-kartein { from { transform: scale(.85) translateY(12px); } to { transform: none; } }
+
+/* Zettel-Krimi */
+.sz-zettel-gross { align-self: center; max-width: 94%; background: #fff8c4; transform: rotate(-1.2deg); box-shadow: 0 4px 10px rgba(0,0,0,.15); padding: 12px 18px; font-size: 20px; font-weight: 900; text-align: center; border-radius: 3px; }
+.sz-zettel-gross:empty { display: none; }
+.sz-zettel-gross small { display: block; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: #8a7a3a; margin-bottom: 4px; }
+.sz-wr-leute { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 8px; }
+.sz-wr-leute button { display: grid; grid-template-columns: 34px 1fr; grid-template-rows: auto auto; column-gap: 8px; align-items: center; text-align: left; border: 2px solid var(--f); background: #fff; border-radius: 12px; padding: 7px 9px; font: inherit; cursor: pointer; }
+.sz-wr-leute button i { grid-row: span 2; width: 34px; height: 34px; border-radius: 50%; background: var(--f); color: #fff; font-style: normal; font-weight: 900; display: grid; place-items: center; }
+.sz-wr-leute button b { font-size: 14.5px; } .sz-wr-leute button small { font-size: 12px; color: #5b6472; font-weight: 700; line-height: 1.2; }
+.sz-wr-leute button[disabled] { opacity: .35; cursor: default; }

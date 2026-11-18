@@ -1163,5 +1163,38 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
     halte((e) => { if (e.code === 'KeyE' || e.code === 'Enter') { e.preventDefault(); e.stopPropagation(); if (wahl.every((w) => w >= 0) || e.code === 'KeyE') fertig(); } });
   });
 
+  // ---------- Zettel-Krimi (Kurs M0 Ankommen, ersetzt das Bingo): Wer hat welchen Zettel geschrieben? ----------
+  // Die Lehrerin liest anonyme Zettel vor. Man schaut sich die Leute an (kleine Hinweise) und tippt, von wem er ist.
+  // Falsch geraten: die Person reagiert, man darf nochmal. Richtig: die Person erzählt kurz.
+  // def: { wo, leute: [{ id, name, farbe, hinweis, falsch }], zettel: [{ von, t, sagt: [[wer, text]…] }] } → { richtig: [ids], versuche }
+  ui.wenRaten = (def) => new Promise((ok) => {
+    const L = Object.fromEntries(def.leute.map((p) => [p.id, p]));
+    const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || '') + '</span><b>📝 Zettel-Krimi</b></div>' +
+      '<div class="sz-zettel-gross"></div><p class="sz-info sz-wr-info">Von wem ist der Zettel? Schau genau hin.</p>' +
+      '<div class="sz-wr-leute ly-d-optionen"></div><div class="sz-bühne"></div><div class="sz-karten"></div></div>');
+    const zettel = k.querySelector('.sz-zettel-gross'), leute = k.querySelector('.sz-wr-leute'), bühne = k.querySelector('.sz-bühne'), karten = k.querySelector('.sz-karten'), info = k.querySelector('.sz-wr-info');
+    const richtig = []; let versuche = 0;
+    const raster = (weg = []) => def.leute.map((p, i) => '<button type="button" data-i="' + i + '" style="--f:' + esc(p.farbe) + '"' + (weg.includes(p.id) ? ' disabled' : '') + '><i>' + esc(p.name[0]) + '</i><b>' + esc(p.name) + '</b><small>' + esc(p.hinweis) + '</small></button>').join('');
+    (async () => {
+      for (let n = 0; n < def.zettel.length; n++) {
+        const z = def.zettel[n]; const falschGetippt = [];
+        zettel.innerHTML = '<small>Zettel ' + (n + 1) + ' von ' + def.zettel.length + '</small>„' + esc(ersetze(z.t)) + '“'; bühne.innerHTML = ''; info.textContent = 'Von wem ist der Zettel? Schau genau hin.';
+        let geschafft = false;
+        for (let v = 0; v < 2 && !geschafft; v++) {
+          const i = await karteWahl(leute, raster([...richtig, ...falschGetippt]), def.leute.length);
+          const p = def.leute[i]; versuche++;
+          if (p.id === z.von) { geschafft = true; richtig.push(p.id); }
+          else { falschGetippt.push(p.id); bühne.innerHTML = blaseHtml(p, p.falsch || 'Ich? Nein.'); info.textContent = v === 0 ? 'Nochmal!' : ''; await warte(lesezeit(p.falsch || 'x x x')); }
+        }
+        leute.innerHTML = '';
+        const von = L[z.von];
+        bühne.innerHTML = '<div class="sz-sys">' + (geschafft ? '✓ ' : 'Aufgelöst: ') + esc(von.name) + '</div>' + z.sagt.map(([w, t]) => blaseHtml(L[w] || von, t)).join('');
+        await warte(lesezeit(...z.sagt.map((s) => s[1])) + 400);
+      }
+      zettel.innerHTML = ''; info.textContent = '';
+      weiterKnopf(karten, { richtig, versuche }, ok, '<div class="sz-sys">' + richtig.length + ' von ' + def.zettel.length + ' gleich erkannt. Jetzt kennst du schon ein bisschen von allen.</div>');
+    })();
+  });
+
   return ui;
 }
