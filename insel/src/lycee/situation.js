@@ -325,6 +325,188 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
     zeige(); sprech('Ich seh nix. Gar nix. Okay. Los.'); requestAnimationFrame(draw);
   });
 
+  // ---------- Tank-Raten (Kurs E04: Glas der Bedürfnisse, Warnlicht-Raten) ----------
+  // Die sechs Tanks aus dem Kurs. def: { faelle: [ { wer: { id, name, farbe }, szene, zeichen: [..], tank, tankstellen: [ { t, passt, antwort } ], falsch } ] }
+  // → { richtig: [ids], geholfen: [ids] }
+  const TANKS = [['koerper', 'Körper', '🍎'], ['sicherheit', 'Sicherheit', '🛡️'], ['dazu', 'Dazugehören', '🤝'], ['ernst', 'Ernst genommen werden', '👂'], ['selbst', 'Selbst entscheiden', '🧭'], ['spass', 'Spaß und Neues', '🎉']];
+  ui.TANKS = TANKS;
+  ui.tankRaten = (def) => new Promise((ok) => {
+    const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || 'Skills-Stunde') + '</span><b>Warnlicht: Welcher Tank ist leer?</b></div>' +
+      '<div class="sz-bühne"></div><div class="sz-karten sz-raster ly-d-optionen"></div><div class="sz-stand"></div></div>');
+    const bühne = k.querySelector('.sz-bühne'), karten = k.querySelector('.sz-karten'), stand = k.querySelector('.sz-stand');
+    const richtig = [], geholfen = [];
+    const wahl = (html, n) => new Promise((fertig) => { karten.innerHTML = html; let aus = false; const ende = (j) => { if (aus) return; aus = true; loesche(); fertig(j); };
+      karten.querySelectorAll('[data-i]').forEach((b) => { b.onclick = () => ende(+b.dataset.i); });
+      halte((e) => { const m = { Digit1: 0, Digit2: 1, Digit3: 2, Digit4: 3, Digit5: 4, Digit6: 5 }[e.code]; if (m != null && m < n) { e.preventDefault(); e.stopPropagation(); ende(m); } else if (e.code === 'KeyE') { e.preventDefault(); e.stopPropagation(); ende(0); } }); });
+    (async () => {
+      for (const f of def.faelle) {
+        bühne.innerHTML = '<div class="sz-fall" style="--f:' + f.wer.farbe + '"><b>' + esc(f.wer.name) + '</b><p>' + esc(ersetze(f.szene)) + '</p>' + f.zeichen.map((z) => '<em>' + esc(z) + '</em>').join('') + '</div>';
+        stand.textContent = 'Welcher Tank blinkt bei ' + f.wer.name + '?';
+        const i = await wahl(TANKS.map(([id, n, sy], j) => '<button type="button" data-i="' + j + '"><span>' + sy + ' ' + esc(n) + '</span></button>').join(''), 6);
+        const treffer = TANKS[i] && TANKS[i][0] === f.tank;
+        if (treffer) richtig.push(f.wer.id);
+        bühne.insertAdjacentHTML('beforeend', '<div class="sz-sys">' + (treffer ? 'Ja. ' + TANKS.find((t) => t[0] === f.tank)[1] + ' ist leer.' : esc(ersetze(f.falsch || 'Hm. Eher nicht.'))) + '</div>');
+        await warte(900);
+        stand.textContent = 'Was würde ' + f.wer.name + ' in zehn Minuten helfen?';
+        const j = await wahl(f.tankstellen.map((t, m) => '<button type="button" data-i="' + m + '"><span>' + esc(ersetze(t.t)) + '</span></button>').join(''), f.tankstellen.length);
+        const t = f.tankstellen[j] || f.tankstellen[0];
+        if (t.passt) geholfen.push(f.wer.id);
+        bühne.insertAdjacentHTML('beforeend', '<div class="sz-blase" style="--f:' + f.wer.farbe + '"><b>' + esc(f.wer.name) + '</b>' + esc(ersetze(t.antwort)) + '</div>');
+        karten.innerHTML = ''; await warte(2300);
+      }
+      stand.textContent = '';
+      karten.innerHTML = '<button type="button" class="sz-weiter" data-a="w">Weiter <kbd>E</kbd></button>';
+      const zu = () => { loesche(); ui.ebeneZu(); ok({ richtig, geholfen }); };
+      karten.querySelector('[data-a="w"]').onclick = zu;
+      halte((e) => { if (e.code === 'KeyE' || e.code === 'Enter') { e.preventDefault(); e.stopPropagation(); zu(); } });
+    })();
+  });
+
+  // Meine Tanks: privat einschätzen (wird nie gezeigt oder bewertet). → { werte: { id: 0–4 }, blinkt: id }
+  ui.meineTanks = () => new Promise((ok) => {
+    const werte = Object.fromEntries(TANKS.map(([id]) => [id, 2]));
+    const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">Meine Tanks</span><b>Privat · sieht niemand</b></div>' +
+      '<p class="sz-info">Wie voll ist jeder Tank heute? Tippe so oft, bis es passt.</p><div class="sz-tanks"></div>' +
+      '<div class="sz-karten"><button type="button" class="sz-weiter" data-a="w">Fertig <kbd>E</kbd></button></div></div>');
+    const box = k.querySelector('.sz-tanks');
+    const zeig = () => { box.innerHTML = TANKS.map(([id, n, sy]) => '<button type="button" data-t="' + id + '" class="sz-tank"><i style="height:' + (werte[id] * 25) + '%"></i><span>' + sy + '<br>' + esc(n) + '</span></button>').join('');
+      box.querySelectorAll('[data-t]').forEach((b) => { b.onclick = () => { werte[b.dataset.t] = (werte[b.dataset.t] + 1) % 5; zeig(); }; }); };
+    zeig();
+    const zu = () => { loesche(); ui.ebeneZu(); const blinkt = Object.entries(werte).sort((a, b) => a[1] - b[1])[0][0]; ok({ werte, blinkt }); };
+    k.querySelector('[data-a="w"]').onclick = zu;
+    halte((e) => { if (e.code === 'KeyE' || e.code === 'Enter') { e.preventDefault(); e.stopPropagation(); zu(); } });
+  });
+
+  // ---------- Die Linie (Kurs E05: Zwischen laut und leise, Selbst- und Fremdbild) ----------
+  // def: { paare: [ [links, rechts] … ], fremd: [ { wer: { name, farbe }, werte: [0–4 …] } ] } → { selbst: [0–4], abweichung: [ { paar, wer, diff } ] }
+  ui.linie = (def) => new Promise((ok) => {
+    const P = def.paare, selbst = P.map(() => 2);
+    const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">Aula · Die Linie</span><b>Wo stehst du?</b></div>' +
+      '<p class="sz-info">Stell dich auf jede Linie. Es gibt kein Besser. Danach zeigen drei aus der Klasse, wo SIE dich sehen.</p><div class="sz-linien"></div>' +
+      '<div class="sz-karten"><button type="button" class="sz-weiter" data-a="w">So steh ich <kbd>E</kbd></button></div></div>');
+    const box = k.querySelector('.sz-linien'), karten = k.querySelector('.sz-karten');
+    const zeig = (mitFremd) => {
+      box.innerHTML = P.map(([l, r], i) => '<div class="sz-linie"><span>' + esc(l) + '</span><div class="sz-strich">' +
+        [0, 1, 2, 3, 4].map((v) => '<button type="button" data-p="' + i + '" data-v="' + v + '" class="' + (selbst[i] === v ? 'ich' : '') + '"></button>').join('') +
+        (mitFremd ? def.fremd.map((f, j) => '<i class="sz-punkt" style="--f:' + f.wer.farbe + ';left:' + (f.werte[i] * 25) + '%;top:' + (-6 + j * 6) + 'px" title="' + esc(f.wer.name) + '">' + esc(f.wer.name[0]) + '</i>').join('') : '') +
+        '</div><span>' + esc(r) + '</span></div>').join('') + (mitFremd ? '<div class="sz-legende">' + def.fremd.map((f) => '<i style="--f:' + f.wer.farbe + '">' + esc(f.wer.name[0]) + '</i> ' + esc(f.wer.name)).join(' · ') + ' · <b>●</b> du</div>' : '');
+      if (!mitFremd) box.querySelectorAll('[data-p]').forEach((b) => { b.onclick = () => { selbst[+b.dataset.p] = +b.dataset.v; zeig(false); }; });
+    };
+    zeig(false);
+    let phase = 0;
+    const weiter = () => {
+      if (phase === 0) {
+        phase = 1; loesche(); zeig(true);
+        const abw = []; P.forEach((p, i) => def.fremd.forEach((f) => { const d = f.werte[i] - selbst[i]; if (Math.abs(d) >= 2) abw.push({ paar: i, wer: f.wer.name, diff: d }); }));
+        const top = abw.sort((a, b) => Math.abs(b.diff) - Math.abs(a.diff))[0];
+        karten.innerHTML = '<div class="sz-sys">' + (top ? esc(top.wer + ' sieht dich viel ' + (top.diff > 0 ? P[top.paar][1] : P[top.paar][0]) + ', als du denkst.') : 'Die anderen sehen dich ziemlich so wie du dich.') + '</div><button type="button" class="sz-weiter" data-a="w">Weiter <kbd>E</kbd></button>';
+        karten.querySelector('[data-a="w"]').onclick = () => { loesche(); ui.ebeneZu(); ok({ selbst, abweichung: abw }); };
+        halte((e) => { if (e.code === 'KeyE' || e.code === 'Enter') { e.preventDefault(); e.stopPropagation(); loesche(); ui.ebeneZu(); ok({ selbst, abweichung: abw }); } });
+      }
+    };
+    karten.querySelector('[data-a="w"]').onclick = weiter;
+    halte((e) => { if (e.code === 'KeyE' || e.code === 'Enter') { e.preventDefault(); e.stopPropagation(); weiter(); } });
+  });
+
+  // ---------- Stärken verschenken (Kurs E06: Baum der Stärke) ----------
+  // def: { an: [ { wer: { id, name, farbe }, karten: [ { t, konkret, antwort } ] } ], bekommen: [ { wer: { name, farbe }, t } ] } → { konkret: [ids], allgemein: [ids] }
+  ui.staerkenSchenken = (def) => new Promise((ok) => {
+    const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">Aula · Baum der Stärke</span><b>Stärken verschenken</b></div>' +
+      '<p class="sz-info">Eine Karte für jede Person. Am besten mit etwas, das du wirklich gesehen hast.</p><div class="sz-bühne"></div><div class="sz-karten ly-d-optionen"></div></div>');
+    const bühne = k.querySelector('.sz-bühne'), karten = k.querySelector('.sz-karten');
+    const konkret = [], allgemein = [];
+    const wahl = (html, n) => new Promise((fertig) => { karten.innerHTML = html; let aus = false; const ende = (j) => { if (aus) return; aus = true; loesche(); fertig(j); };
+      karten.querySelectorAll('[data-i]').forEach((b) => { b.onclick = () => ende(+b.dataset.i); });
+      halte((e) => { const m = { Digit1: 0, Digit2: 1, Digit3: 2 }[e.code]; if (m != null && m < n) { e.preventDefault(); e.stopPropagation(); ende(m); } else if (e.code === 'KeyE') { e.preventDefault(); e.stopPropagation(); ende(0); } }); });
+    (async () => {
+      for (const a of def.an) {
+        bühne.innerHTML = '<div class="sz-sys">Karte für ' + esc(a.wer.name) + '</div>';
+        const i = await wahl(a.karten.map((c, j) => '<button type="button" data-i="' + j + '" class="sz-skarte"><small>Stärken-Karte für ' + esc(a.wer.name) + '</small><span>' + esc(ersetze(c.t)) + '</span></button>').join(''), a.karten.length);
+        const c = a.karten[i] || a.karten[0];
+        (c.konkret ? konkret : allgemein).push(a.wer.id);
+        bühne.insertAdjacentHTML('beforeend', '<div class="sz-blase" style="--f:' + a.wer.farbe + '"><b>' + esc(a.wer.name) + '</b>' + esc(ersetze(c.antwort)) + '</div>');
+        karten.innerHTML = ''; await warte(2200);
+      }
+      bühne.innerHTML = '<div class="sz-sys">Und du bekommst auch Karten.</div>';
+      for (const g of def.bekommen || []) { await warte(900); bühne.insertAdjacentHTML('beforeend', '<div class="sz-skarte sz-bekommen" style="--f:' + g.wer.farbe + '"><small>von ' + esc(g.wer.name) + '</small><span>' + esc(ersetze(g.t)) + '</span></div>'); }
+      await warte(600);
+      karten.innerHTML = '<button type="button" class="sz-weiter" data-a="w">Weiter <kbd>E</kbd></button>';
+      const zu = () => { loesche(); ui.ebeneZu(); ok({ konkret, allgemein }); };
+      karten.querySelector('[data-a="w"]').onclick = zu;
+      halte((e) => { if (e.code === 'KeyE' || e.code === 'Enter') { e.preventDefault(); e.stopPropagation(); zu(); } });
+    })();
+  });
+
+  // ---------- Nachhaken (Kurs E02: Fragen stellen und nachhaken) ----------
+  // def: { wo, wer: { id, name, farbe }, start, runden: [ { fragen: [ { t, art: 'offen'|'zu'|'nachhaken'|'ueber-mich', antwort, offen: +n } ] } ], stufen: [ 'Text bei 0', '…bei 1', … ] }
+  // Die Person „öffnet“ sich mit guten Fragen (Balken). → { offen, arten }
+  ui.nachhaken = (def) => new Promise((ok) => {
+    const W = def.wer;
+    const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || 'Interview') + '</span><b>Nachhaken</b></div>' +
+      '<div class="sz-leute"><div class="sz-person" style="--f:' + esc(W.farbe) + '"><i class="sz-ava">' + esc(W.name[0]) + '</i><span>' + esc(W.name) + '</span></div><div class="sz-publikum">Steckbrief: <b class="sz-zeilen">0</b> Zeilen</div></div>' +
+      '<div class="sz-balken"><div class="sz-balken-f"></div><span>erzählt</span></div><div class="sz-bühne"></div><div class="sz-karten ly-d-optionen"></div></div>');
+    const bühne = k.querySelector('.sz-bühne'), karten = k.querySelector('.sz-karten'), fill = k.querySelector('.sz-balken-f'), zeilen = k.querySelector('.sz-zeilen');
+    let offen = 0, z = 0; const arten = {};
+    const zeige = () => { fill.style.width = Math.max(4, Math.min(100, offen * 20)) + '%'; fill.style.background = '#5fa0d0'; zeilen.textContent = z; };
+    const blase = (wer, text, farbe, ich) => { bühne.insertAdjacentHTML('beforeend', '<div class="sz-blase' + (ich ? ' ich' : '') + '" style="--f:' + farbe + '"><b>' + esc(wer) + '</b>' + esc(ersetze(text)) + '</div>'); while (bühne.children.length > 4) bühne.firstChild.remove(); };
+    (async () => {
+      zeige(); blase(W.name, def.start, W.farbe); await warte(700);
+      for (const r of def.runden) {
+        const opt = typeof r.fragen === 'function' ? r.fragen(offen) : r.fragen;
+        const i = await new Promise((fertig) => {
+          karten.innerHTML = opt.map((f, j) => '<button type="button" data-i="' + j + '"><span>' + esc(ersetze(f.t)) + '</span></button>').join('');
+          let aus = false; const ende = (j) => { if (aus) return; aus = true; loesche(); fertig(j); };
+          karten.querySelectorAll('[data-i]').forEach((b) => { b.onclick = () => ende(+b.dataset.i); });
+          halte((e) => { const m = { Digit1: 0, Digit2: 1, Digit3: 2, Digit4: 3 }[e.code]; if (m != null && m < opt.length) { e.preventDefault(); e.stopPropagation(); ende(m); } else if (e.code === 'KeyE') { e.preventDefault(); e.stopPropagation(); ende(0); } });
+        });
+        const f = opt[i]; arten[f.art] = (arten[f.art] || 0) + 1;
+        karten.innerHTML = '';
+        blase('Du', f.t, '#2b3a55', true); await warte(600);
+        offen = Math.max(0, offen + (f.offen || 0)); if ((f.offen || 0) > 0) z += f.offen; zeige();
+        blase(W.name, typeof f.antwort === 'function' ? f.antwort(offen) : f.antwort, W.farbe); await warte(1500);
+      }
+      karten.innerHTML = '<div class="sz-sys">' + esc((def.stufen || [])[Math.min((def.stufen || []).length - 1, offen)] || '') + '</div><button type="button" class="sz-weiter" data-a="w">Weiter <kbd>E</kbd></button>';
+      const zu = () => { loesche(); ui.ebeneZu(); ok({ offen, arten, zeilen: z }); };
+      karten.querySelector('[data-a="w"]').onclick = zu;
+      halte((e) => { if (e.code === 'KeyE' || e.code === 'Enter') { e.preventDefault(); e.stopPropagation(); zu(); } });
+    })();
+  });
+
+  // ---------- Teams wählen (Sport): du bist Kapitän:in, abwechselnd mit jemand anderem ----------
+  // def: { gegner: { name, farbe }, leute: [ { id, name, farbe, info } ], gegnerWahl: [ids in Reihenfolge] } → { team: [ids], letzte: id, zuerst: id }
+  ui.teamsWaehlen = (def) => new Promise((ok) => {
+    const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">Turnhalle · Korbball</span><b>Teams wählen</b></div>' +
+      '<p class="sz-info">Du und ' + esc(def.gegner.name) + ' wählt abwechselnd. Alle stehen an der Wand und warten.</p><div class="sz-wand"></div><div class="sz-teams"><div><b>Dein Team</b><span data-t="ich"></span></div><div><b>' + esc(def.gegner.name) + '</b><span data-t="er"></span></div></div><div class="sz-stand"></div></div>');
+    const wand = k.querySelector('.sz-wand'), stand = k.querySelector('.sz-stand');
+    const frei = def.leute.slice(), team = [], gegner = []; let zuerst = null;
+    const zeig = (meinZug) => {
+      wand.innerHTML = frei.map((p) => '<button type="button" data-p="' + p.id + '" style="--f:' + p.farbe + '"' + (meinZug ? '' : ' disabled') + '><i>' + esc(p.name[0]) + '</i><span>' + esc(p.name) + '</span><small>' + esc(p.info || '') + '</small></button>').join('');
+      k.querySelector('[data-t="ich"]').textContent = team.map((id) => def.leute.find((p) => p.id === id).name).join(', ');
+      k.querySelector('[data-t="er"]').textContent = gegner.map((id) => def.leute.find((p) => p.id === id).name).join(', ');
+    };
+    const meinZug = () => new Promise((fertig) => {
+      zeig(true); stand.textContent = 'Du wählst.' + (frei.length === 2 ? ' Noch zwei an der Wand.' : '');
+      let aus = false; const ende = (id) => { if (aus) return; aus = true; loesche(); fertig(id); };
+      wand.querySelectorAll('[data-p]').forEach((b) => { b.onclick = () => ende(b.dataset.p); });
+      halte((e) => { if (e.code === 'KeyE' || e.code === 'Enter') { e.preventDefault(); e.stopPropagation(); ende(frei[0].id); } });
+    });
+    (async () => {
+      let ich = true;
+      while (frei.length > 1) {
+        if (ich) { const id = await meinZug(); if (!zuerst) zuerst = id; team.push(id); frei.splice(frei.findIndex((p) => p.id === id), 1); }
+        else { zeig(false); stand.textContent = def.gegner.name + ' wählt …'; await warte(1100); const id = def.gegnerWahl.find((x) => frei.some((p) => p.id === x)) || frei[0].id; gegner.push(id); frei.splice(frei.findIndex((p) => p.id === id), 1); }
+        ich = !ich;
+      }
+      const letzte = frei[0]; (ich ? team : gegner).push(letzte.id); frei.length = 0; zeig(false);
+      stand.textContent = letzte.name + ' bleibt übrig – und geht ' + (ich ? 'in dein Team.' : 'zu ' + def.gegner.name + '.');
+      await warte(1400);
+      k.insertAdjacentHTML('beforeend', '<div class="sz-karten"><button type="button" class="sz-weiter" data-a="w">Weiter <kbd>E</kbd></button></div>');
+      const zu = () => { loesche(); ui.ebeneZu(); ok({ team, letzte: letzte.id, zuerst }); };
+      k.querySelector('[data-a="w"]').onclick = zu;
+      halte((e) => { if (e.code === 'KeyE' || e.code === 'Enter') { e.preventDefault(); e.stopPropagation(); zu(); } });
+    })();
+  });
+
   // ---------- Stempel im Skills-Pass (Kurs-Ritual am Ende jedes Kapitels) ----------
   ui.skillsStempel = ({ modul, titel, gelernt = [], mission }) => new Promise((ok) => {
     const k = ui.ebeneAuf('szene', '<div class="sz sz-pass"><div class="sz-kopf"><span class="sz-wo">Skills-Pass</span><b>' + esc(modul) + '</b></div>' +

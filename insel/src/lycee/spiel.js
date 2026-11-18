@@ -27,6 +27,8 @@ import { createSteuerung } from './steuerung.js';
 import { createUI } from './ui.js';
 import { situationen } from './situation.js';
 import { FACHLEHRER } from './story/personal.js';
+import { tunN2 } from './story/kapitel2.js';
+import { tunN1 } from './story/kapitel1.js';
 import { SCHRITTE, GESPRAECHE, LEUTE, STAERKEN, BINGO, GEHEIMNISSE, SPRECHER, KAPITEL } from './geschichte.js';
 import { ORTE2, CHAT, CHAT5, ichBotschaftThema } from './kapitel2.js';
 import { ORTE3, saegeFolgen } from './kapitel3.js';
@@ -379,9 +381,9 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         if (w.dann && w.dann.length) await spiele(w.dann);
       } else if (z.szene) {
         // Situations-Spiel (situation.js): Ausgang → Folgen (wie eine Wahl: staerke, herz, merke, dann)
-        const def = typeof z.def === 'function' ? z.def(S.merke) : z.def;
+        const def = typeof z.def === 'function' ? z.def(S.merke, S) : z.def;
         ui.dialogZu();
-        const SZ = { hitze: 'hitzeDuell', chat: 'liveChat', checkin: 'checkIn', namen: 'namenRekord', zwei: 'zweiWahrheiten', blind: 'blindParcours', stempel: 'skillsStempel', tanks: 'tankRaten', linie: 'linie', staerken: 'staerkenSchenken', pult: 'gefuehlsPult', lesen: 'gesichterLesen', mischpult: 'mischpult' };
+        const SZ = { hitze: 'hitzeDuell', chat: 'liveChat', checkin: 'checkIn', namen: 'namenRekord', zwei: 'zweiWahrheiten', blind: 'blindParcours', stempel: 'skillsStempel', tanks: 'tankRaten', meinetanks: 'meineTanks', nachhaken: 'nachhaken', teams: 'teamsWaehlen', linie: 'linie', staerken: 'staerkenSchenken', pult: 'gefuehlsPult', lesen: 'gesichterLesen', mischpult: 'mischpult' };
         const r = (await ui[SZ[z.szene] || z.szene](def)) || {};
         const key = z.ausgang ? z.ausgang(r, S.merke) : 'standard';
         S.szenen = S.szenen || {}; if (z.id) S.szenen[z.id] = key;
@@ -408,6 +410,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
 
   // ---------- Besondere Momente ----------
   const TUN = {
+    ...tunN1({ get S() { return S; }, ui }),
+    ...tunN2({ get S() { return S; }, ui }),
     stundenplanTipp: () => { ui.toast('<b>Tipp</b><span>Mit Tab oder ☰ öffnest du dein Journal.</span>'); },
     weberTelefon: () => { const w = leute.weber; if (w) w.f.spiele('Interact', { tempo: 0.5 }); },
     stundenplan: () => { S.stundenplan = true; ui.toast('📄 Stundenplan bekommen – steht im Journal.'); },
@@ -1474,7 +1478,18 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     freiwurf: async () => ui.freiwurf(), skate: () => skaten(), freund: (id, n, g) => freund(id, n, g),
     partner: () => { const b = besteFreunde()[0] || GLEICHALTRIGE.find((id) => S.herz[id] != null); return b ? { id: b, name: LEUTE[b].name } : null; } });
   let iaNah = null;
+  // Mission „Tank auffüllen“ (Kurs-Ritual nach Modul 1): passende Tätigkeiten in der Welt zählen
+  const TANKSTELLE = { korb: 'koerper', automat: 'koerper', skate: 'spass', tischtennis: 'spass', buch: 'sicherheit', sitzen: 'sicherheit', schlagzeug: 'dazu', keyboard: 'spass', spind: 'selbst', giessen: 'selbst', klavier: 'sicherheit' };
+  function missionTank(tu) {
+    const m = S && S.mission; if (!m || m.fertig || TANKSTELLE[tu] !== m.tank) return;
+    const jetzt = Date.now(); if (m.zuletzt && jetzt - m.zuletzt < 20000) return;   // nicht dreimal hintereinander am selben Ort
+    m.zuletzt = jetzt; m.mal = (m.mal || 0) + 1;
+    if (m.mal >= 3) { m.fertig = true; S.missionen = (S.missionen || 0) + 1; ui.toast('<b>Mission geschafft</b><span>Tank dreimal gefüllt. Sticker für den Spind: 🫙</span>', 'ly-t-ent'); jetons(2, 'Mission'); }
+    else ui.toast('<b>Tank +1</b><span>Mission: ' + m.mal + ' von 3.</span>');
+    sichern();
+  }
   async function aktion(i) {
+    setTimeout(() => missionTank(i.tu), 0);
     if (i.tu === 'sitzen') { await ia.tu(i); sperreBis = performance.now() + 350; return; }
     if (i.tu === 'skate') { ui.hinweis(null); await ia.tu(i); sperreBis = performance.now() + 500; return; }
     imGespraech = true; input.setEnabled(false); steuerung.frei = false; ui.hinweis(null);

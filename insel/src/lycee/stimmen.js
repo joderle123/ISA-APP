@@ -5,6 +5,7 @@
 // Geprüft von tools/annexe/regeln.mjs.
 
 export const EINWURF = {
+  mesenberg: ['Moien'], nouvelle: ['Moien'], kiesser: ['Salut'], sabli: ['Ça va?'], lenning: ['Moien'], rantini: ['Voilà'],
   noah: ['Moien', 'Bis muer'], mila: ['Merci'], lina: ['Salut'], jo: ['Allez'], ben: ['Ça va?'], chiara: ['Voilà'],
   yusuf: ['Äddi'], ayla: ['Tudo bem?'], luca: ['Fixe'], kenan: ['Wéi geet et?'], dario: ['Obrigado'],
   hoffmann: ['Ça va?'], weber: ['Moien'], kremer: ['Gudden Appetit'], becker: ['Moien'], sommer: ['Allez'],

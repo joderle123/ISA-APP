@@ -39,6 +39,14 @@ export const SCHRITTE_N1 = [
     start: { teleport: 'eingang' },
     leute: { noah: [-21.5, 42.2, 0.3], mila: [-23.5, 42.4, -0.3], ben: [8, 36, 2.6], yusuf: [9.2, 35.4, -2.2], fahrer: [-11.2, 44.6, -Math.PI / 2] },
     fertig: { ort: 'bus', r: 3.2, gespraech: 'n1_heimweg' } },
+  // ---------- Dienstag: Sport (Teams wählen) und Kunst (Interview mit Nachhaken) ----------
+  { id: 'k1_sport', kap: 1, tag: 'Dienstag', uhr: 8.0, titel: 'Sport', ziel: 'Turnhalle. Frau Sommer pfeift schon.', marker: 'sommer',
+    start: { teleport: 'turnhalleTuer', gespraech: 'n1_diMorgen' },
+    leute: { sommer: [45.2, -12.6, Math.PI], ben: [42, -16, 0.4], yusuf: [43.2, -17.2, 0.2], jo: [49, -16, -0.4], lina: [51.4, -11.5, -0.8], noah: [40.5, -14, 0.6], ayla: [50.2, -17.4, -0.3], chiara: [47.6, -18.4, 0], mila: [52.4, -14.6, -1.2] },
+    fertig: { reden: 'sommer', gespraech: 'n1_sport' } },
+  { id: 'k1_kunst', kap: 1, tag: 'Dienstag', uhr: 10.4, titel: 'Kunst', ziel: 'Kunstraum im Neubau. Mme Kiesser verteilt Steckbriefe.', marker: 'kiesser',
+    leute: { kiesser: [54, -50.6, Math.PI], lina: [51.6, -50.2, -0.4], noah: [56.2, -50.1, 0.5, 'redet'], ayla: [57.4, -50.4, -2.6, 'redet'], ben: [49.2, -50.4, 0.3, 'redet'], jo: [48.0, -50.6, 2.8, 'redet'] },
+    fertig: { reden: 'kiesser', gespraech: 'n1_kunst' } },
   // ---------- Mittwoch: Skills-Stunde ----------
   { id: 'k1_skills', kap: 1, tag: 'Mittwoch', uhr: 9.9, titel: 'Skills-Stunde', ziel: 'Geh in die Aula. Herr Kuedes wartet mit einem Ball.', marker: 'kaya',
     start: { teleport: 'eingangHof', gespraech: 'n1_checkin' },
@@ -161,6 +169,40 @@ const postChat = (m) => ({
     { id: 'stumm', t: 'Stummschalten', symbol: '🔕', setzt: 'stumm', sys: 'Stumm. Dein Handy vibriert trotzdem in deinem Kopf.', ende: true },
   ],
 });
+
+const TEAMS = {
+  gegner: { name: 'Jo', farbe: '#c0392b' },
+  leute: [
+    { id: 'ben', name: 'Ben', farbe: '#d9a21b', info: 'trifft fast alles' }, { id: 'yusuf', name: 'Yusuf', farbe: '#5fa0d0', info: 'Judo, stark' },
+    { id: 'chiara', name: 'Chiara', farbe: '#3fa66b', info: 'schnell, will gewinnen' }, { id: 'ayla', name: 'Ayla', farbe: '#e85d75', info: 'ganz okay' },
+    { id: 'noah', name: 'Noah', farbe: '#3f78b8', info: 'wirft daneben' }, { id: 'mila', name: 'Mila', farbe: '#2fb8a8', info: 'zählt die Würfe' },
+    { id: 'lina', name: 'Lina', farbe: '#9b7bc8', info: 'steht ganz hinten' },
+  ],
+  gegnerWahl: ['ben', 'yusuf', 'chiara', 'ayla', 'mila', 'noah', 'lina'],
+};
+const LINA_INTERVIEW = {
+  wo: 'Kunstraum · Steckbrief', wer: { id: 'lina', name: 'Lina', farbe: '#9b7bc8' },
+  start: '(leise) Hi. Wir sollen uns interviewen. Du fragst zuerst.',
+  runden: [
+    { fragen: [
+      { t: 'Was machst du am liebsten?', art: 'offen', offen: 1, antwort: 'Zeichnen. Comics.' },
+      { t: 'Magst du Kunst?', art: 'zu', offen: 0, antwort: 'Ja.' },
+      { t: 'Ich kann gar nicht zeichnen, haha.', art: 'ueber-mich', offen: 0, antwort: '(lächelt kurz) Okay.' },
+      { t: 'Warum redest du eigentlich so wenig?', art: 'bohren', offen: -1, antwort: '(zuckt mit den Schultern. Guckt aufs Blatt.)' },
+    ] },
+    { fragen: (o) => [
+      { t: 'Was für Comics? Worüber?', art: 'nachhaken', offen: 2, antwort: o >= 1 ? 'Über eine Taube. Sie ist Detektivin. Sie heißt Gerd.' : 'Verschiedenes.' },
+      { t: 'Cool.', art: 'zu', offen: 0, antwort: 'Mhm.' },
+      { t: 'Zeigst du mir mal eins?', art: 'offen', offen: 1, antwort: 'Vielleicht. Später. Nicht hier.' },
+    ] },
+    { fragen: (o) => [
+      { t: o >= 2 ? 'Warum ausgerechnet eine Taube?' : 'Und was machst du noch so?', art: 'nachhaken', offen: 2, antwort: o >= 2 ? 'Weil keiner auf Tauben achtet. Die sehen alles.' : 'Klavier. Und … nichts Besonderes.' },
+      { t: 'Ich mag eher Videospiele.', art: 'ueber-mich', offen: 0, antwort: 'Oh. Okay.' },
+      { t: 'Was soll ich in den Steckbrief schreiben?', art: 'offen', offen: 1, antwort: (x) => (x >= 3 ? 'Schreib: Lina. Zeichnet. Sieht mehr, als sie sagt.' : 'Schreib einfach „zeichnet“.') },
+    ] },
+  ],
+  stufen: ['Lina hat fast nichts gesagt. Der Steckbrief hat zwei Wörter.', 'Ein Anfang. Lina hat ein bisschen erzählt.', 'Lina hat erzählt. Mehr als sonst.', 'Lina hat mehr erzählt als in der ganzen Woche.', 'Lina hat mehr erzählt als in der ganzen Woche.', 'Lina zeigt dir am Ende ihr Heft. Eine Seite. Mit Gerd.'],
+};
 
 const UNBEKANNT = {
   titel: '+352 6•• ••• •77', mitglieder: 2, dauer: 14,
@@ -424,6 +466,48 @@ export const GESPRAECHE_N1 = {
         ['hoffmann', '(Pause) Ein Account? Ich schau mir das an.'], ['hoffmann', 'Und ich sag Herrn Kuedes Bescheid.'], ['jo', 'Sie weiß nicht mal, was ein Account ist, digga.']] },
     ] },
   ],
+  n1_diMorgen: [
+    ['erzaehler', 'Dienstag. Sport. Deine Turnschuhe sind dabei. Diesmal.'],
+    ['ben', 'Neue Person! Gestern noch auf @annexe.cam, heute im Trikot. Karriere.'],
+  ],
+  n1_sport: [
+    ['sommer', '(pfeift) Allez! Korbball. Kapitäne: Jo und … die neue Person.'],
+    ['jo', 'Wallah, okay. Ich fang an? Nein? Du fängst an. Großzügig.'],
+    { szene: 'teams', id: 'teams', def: TEAMS,
+      ausgang: (r) => (['lina', 'noah', 'mila'].includes(r.zuerst) ? 'erstwahl' : r.team.includes('lina') && r.letzte !== 'lina' ? 'linaFrueh' : r.letzte === 'lina' ? 'linaLetzte' : 'normal'),
+      folgen: {
+        erstwahl: { staerke: 'einbeziehen', herz: { noah: 1, mila: 1, lina: 2, jo: -1 }, merke: 'teamErstwahl', dann: [
+          ['jo', 'Digga, du nimmst zuerst …? Okay. Mutig. Ich nehm Ben.'], ['erzaehler', 'Wen du zuerst genommen hast, steht ein Stück gerader.'] ] },
+        linaFrueh: { staerke: 'einbeziehen', herz: { lina: 2 }, dann: [['erzaehler', 'Lina muss nicht bis zum Schluss an der Wand stehen. Diesmal nicht.']] },
+        linaLetzte: { herz: { lina: -1 }, merke: 'linaLetzte', dann: [
+          ['jo', '(laut) Okay, die Letzte kriegt die neue Person. Fair.'], ['erzaehler', 'Lina zieht die Ärmel über die Hände. Geht langsam rüber.'] ] },
+        normal: { dann: [['sommer', 'Gut. Teams stehen. Ab aufs Feld.']] },
+      } },
+    ['sommer', 'Jeder wirft fünfmal. Die Summe zählt fürs Team.'],
+    { tu: 'freiwurf' },
+    ['sommer', '(pfeift) Gut gespielt. Alle. Duschen, zack.'],
+    { tu: 'n1_sportNach' },
+  ],
+  n1_kunst: [
+    ['kiesser', 'Salut! Mme Kiesser. Hier wird gemalt, gekleckert und geredet.'],
+    ['kiesser', 'Heute: Steckbriefe. Zu zweit. Ihr interviewt euch. Dann malt ihr euch.'],
+    ['kiesser', '{name}, du gehst zu Lina. Sie wartet schon.'],
+    { szene: 'nachhaken', id: 'linaInterview', def: LINA_INTERVIEW,
+      ausgang: (r) => (r.offen >= 4 ? 'offen' : r.offen >= 2 ? 'etwas' : 'zu'),
+      folgen: {
+        offen: { staerke: 'zuhoeren', herz: { lina: 3 }, merke: ['linaGerd', 'linaOffen'], dann: [['erzaehler', 'Lina zeigt dir ihr Heft. Eine Seite. Eine Taube mit Lupe.'], ['lina', 'Gerd. Sie ermittelt. Gerade gegen … Kameras.']] },
+        etwas: { staerke: 'zuhoeren', herz: { lina: 1 }, dann: [['lina', 'Jetzt ich. Du musst nicht alles sagen.']] },
+        zu: { dann: [['erzaehler', 'Lina zeichnet. Du guckst. Es ist sehr still.']] },
+      } },
+    ['lina', 'Was ist … dein Lieblingsort hier?'],
+    { wahl: [
+      { t: '„Die Bank am Hof. Da ist es ruhig.“', herz: { lina: 1, mila: 1 }, dann: [['lina', 'Da sitzt Mila immer. Ihr wärt ein gutes Team.']] },
+      { t: '„Die Kantine. Wegen der Nudeln. Und dem Drama.“', staerke: 'humor', herz: { lina: 1 }, dann: [['lina', '(lacht leise) Das Drama hab ich gezeichnet. Mit dir.']] },
+      { t: '„Weiß noch nicht. Bin ja neu.“', herz: { lina: 1 }, dann: [['lina', 'Ehrlich. Gut. Schreib ich so.']] },
+    ] },
+    ['kiesser', 'Wunderbar! Und jetzt: malen. Schnell, nicht schön.'],
+    ['erzaehler', 'Du malst Lina. Es sieht aus wie ein Kartoffel-Mensch. Lina malt dich. Es sieht aus wie du. Unfair.'],
+  ],
   n1_checkin: [
     ['erzaehler', 'Mittwoch. Zwei Tage Annexe. Dein Handy: „Check-in“.'],
     { szene: 'checkin', id: 'checkin1', def: CHECKIN_MI, ausgang: (r) => r.gefuehl, folgen: {} },
@@ -510,3 +594,16 @@ export const GESPRAECHE_N1 = {
       } },
   ],
 };
+
+// TUN für Kapitel 1 (in spiel.js eingehängt)
+export const tunN1 = (c) => ({
+  n1_sportNach: () => {
+    const m = c.S.merke, t = m.freiwurf || 0, gewonnen = t >= 3;
+    return [
+      ['erzaehler', gewonnen ? 'Dein Team gewinnt. Knapp. Ben schreit, als wäre es ein Finale.' : 'Jos Team gewinnt. Jo macht eine Ehrenrunde. Allein.'],
+      ...(m.teamErstwahl ? [['noah', 'Du hast mich nicht als Letzten genommen. Das hatte ich noch nie.']] : []),
+      ...(m.linaLetzte ? [['erzaehler', 'Lina sitzt danach allein auf der Bank. Zieht die Schuhe sehr langsam aus.']] : []),
+      ['jo', gewonnen ? 'Revanche, digga. Nächste Woche. Wallah.' : 'Gut gespielt, neue Person. Echt jetzt.'],
+    ];
+  },
+});

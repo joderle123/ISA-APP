@@ -370,10 +370,11 @@ export const SPRECHER = { erzaehler: { name: '', farbe: '#5b6472' }, du: { name:
 // Die alten Kapitel bleiben als Datei (Texte, Folgen), laufen aber nicht mehr. Kapitel kommen nach und nach dazu.
 import { SCHRITTE_N1, GESPRAECHE_N1 } from './story/kapitel1.js';
 import { PERSONAL } from './story/personal.js';
+import { SCHRITTE_N2, GESPRAECHE_N2 } from './story/kapitel2.js';
 Object.assign(LEUTE, PERSONAL);
 SCHRITTE.length = 0;
-SCHRITTE.push(...SCHRITTE_N1);
-Object.assign(GESPRAECHE, GESPRAECHE_N1);
+SCHRITTE.push(...SCHRITTE_N1, ...SCHRITTE_N2);
+Object.assign(GESPRAECHE, GESPRAECHE_N1, GESPRAECHE_N2);
 Object.assign(KAPITEL, { 1: 'Ankommen', 2: 'Wer bin ich?', 3: 'Gefühle verstehen', 4: 'Gefühle regulieren', 5: 'Meine Gedanken', 6: 'Kommunikation und Grenzen', 7: 'Wenn es schwierig wird', 8: 'Digitale Welt', 9: 'Gesund und stark', 10: 'Abschluss' });
 Object.assign(STAERKEN, {
   humor: STAERKEN.humor || { name: 'Humor', text: 'Du hast die Lage mit einem Witz entspannt.' },
