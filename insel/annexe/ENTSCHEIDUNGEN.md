@@ -191,3 +191,15 @@ Ziel war ≤ 200 Aufrufe und ≤ 400k Dreiecke – überall erreicht. Was es geb
   Jos Sprachnachricht (Fakten: Witz, danach „mach das nicht“), Gespräch mit Jo (Du- vs. Ich-Botschaft, Zuhören),
   Stopp bauen gegen Luca, der Mila filmt (klar, ruhig, ohne Lächeln; Angriff kippt in Streit). Abschluss-Ritual:
   Stopp-Satz – alle antworten „Okay.“ Nichts Sexuelles; Grenzen = Umarmung, Foto, Nachricht.
+
+## 19.11. – Kapitel 7 bis 10: das erste Jahr (7ème) ist fertig
+- **Kapitel 7 „Wenn es schwierig wird“** (M6): Wer bleibt nach dem Rauswurf? Druck-Runde an der Skate-Ecke, Konflikt-Treppe
+  zwischen Jo und Luca (früh aussteigen), Bühne kippen (Noah wird in der Kantine ausgelacht), Spaß/Streit/Mobbing sortieren.
+- **Kapitel 8 „Digitale Welt“** (M7): KI-Video von Mme Tidderich. Teilen-Bremse im Chat, Echt oder KI? mit „Dahinter steckt“,
+  Feed gegen den Algorithmus, Empathie-Szene mit Mme Tidderich. Die Falle ist ehrlich (mit Bens Einverständnis, keine Lüge).
+- **Kapitel 9 „Gesund und stark“** (M8): Dario erzählt alles. Bewusst **kein** Schweige-Versprechen als „gute“ Antwort –
+  zu schwere Geheimnisse gehören zu Erwachsenen. Stress-Rucksack (tragen, warten, teilen, nicht meins), Akku-Tag
+  (Schlaf, Essen, Bewegung, Handy am Abend), Gesund-Würfel mit Ben, Bodyscan. Hilfe: Herr Kuedes, 116 111.
+- **Kapitel 10 „Abschluss“** (M9): Jahres-Kurve aus den eigenen Entscheidungen, Brief an mich (wird für die 6ème
+  gespeichert: `S.sz.brief`), Stärken-Rücken, Erden mit fünf Sinnen. Dario sagt es beim Sommerfest selbst; Luca trägt
+  Folgen, man darf Abstand halten („Verzeihen musst du nicht“). Vier Enden je nach bester Freundschaft, sonst Lina.

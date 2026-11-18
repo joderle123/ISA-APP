@@ -64,10 +64,10 @@ Aufgelöst wird es in Kapitel 10. (Hinter dem Account: Dario, der dazugehören w
 | 4 | M3 Gefühle regulieren | Bus verpasst, Mathe-Test, Noah bei Rot | Anspannungs-Thermometer, Zonen-Wette, Skills-Koffer, Test mit Puls, Gemeinsam atmen, Hitze-Duell mit Dario | Handy-Kiste: alle Handys der 7P2 waren weg – wer war um 8:34 im Flur? Ende: gefälschter Screenshot macht DICH zum Admin |
 | 5 | M4 Meine Gedanken | Der Fake-Screenshot: „Alle halten mich dafür“ | Live-Chat, Gedanken-Weiche, Sortier-Duell, Bohnen-Wette, Beweis-Waage, Satz-Bau, Hitze-Duell mit Luca | Spur „Handy von L.“, Dario: „Der Screenshot war nicht von mir.“ Ende: Mila weiß, wer den Fake gebaut hat |
 | 6 | M5 Kommunikation & Grenzen | Klassenfoto, Gruppenumarmung, Luca filmt Mila | Stopp-Abstand, Ich-Botschaft bauen, Live-Chat (Sprachnachricht), Zuhören mit Jo, Stopp bauen | Luca hat den Fake gebaut, die Idee kam aus Jos Witz-Sprachnachricht. Ende: Rauswurf aus dem Klassenchat |
-| 7 | M6 Wenn es schwierig wird | Rauswurf aus dem Chat | Konflikt-Treppe, Druck-Runde, Bühne kippen | Allein – wer bleibt? |
-| 8 | M7 Digitale Welt | Fake-Bild von Mme Tidderich | Echt oder KI?, Algorithmus-Duell, Spuren-Wand | Die Falle wird gestellt |
-| 9 | M8 Gesund & stark | Nächte am Handy, Akku leer | Rucksack-Rennen, Akku-Tag | Dario wird unruhig |
-| 10 | M9 Abschluss | Klassenfoto, Sommerfest | Rückblick-Spiel, Brief an dich | Auflösung, vier Enden |
+| 7 | M6 Wenn es schwierig wird | Rauswurf aus dem Chat, Druck an der Skate-Ecke, Noah wird in der Kantine ausgelacht | Live-Chat „Wer bleibt?“, Tier-Sortieren, Druck-Runde, Konflikt-Treppe, Bühne kippen, Ecken-Lauf (Spaß/Streit/Mobbing) | Ende: KI-Video von Mme Tidderich |
+| 8 | M7 Digitale Welt | KI-Video von Mme Tidderich | Live-Chat mit Teilen-Bremse, Echt oder KI? (mit „Dahinter steckt“), Du gegen den Algorithmus, Grenzen-Sortieren | Ehrliche Falle: Bens Geburtstag nur Luca erzählt → Luca hat das Passwort. Ende: Dario um 2:14 „kann ich dir was erzählen?“ |
+| 9 | M8 Gesund & stark | Dario erzählt an der Haltestelle, Akku leer, zu zweit zu Herrn Kuedes | Stress-Rucksack, Akku-Tag, Vier Ecken mit Tipp, Gesund-Würfel, Bodyscan | Kein unsicheres Schweige-Versprechen; Hilfe: Herr Kuedes, 116 111. Ende: Dario will beim Sommerfest reden |
+| 10 | M9 Abschluss | Zurück im Klassenchat, Luca allein, Sommerfest, Klassenfoto Teil zwei | Live-Chat, Jahres-Kurve, Brief an mich, Stärken-Rücken, Erden in fünf Sinnen | Dario sagt es vor allen; Luca trägt Folgen (Verzeihen muss niemand). Vier Enden je nach bester Freundschaft (Noah, Mila, Ben, Jo) + Lina. Ausblick: die Band |
 
 ## 6ème · „Stark im Alltag“ · roter Faden: **Die Band**
 Ayla gründet eine Band für das Schulfest im Juni. Wer spielt mit, wer zerstreitet sich, wer fliegt raus?

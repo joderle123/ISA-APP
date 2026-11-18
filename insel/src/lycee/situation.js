@@ -425,8 +425,8 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
   // ---------- Stärken verschenken (Kurs E06: Baum der Stärke) ----------
   // def: { an: [ { wer: { id, name, farbe }, karten: [ { t, konkret, antwort } ] } ], bekommen: [ { wer: { name, farbe }, t } ] } → { konkret: [ids], allgemein: [ids] }
   ui.staerkenSchenken = (def) => new Promise((ok) => {
-    const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">Aula · Baum der Stärke</span><b>Stärken verschenken</b></div>' +
-      '<p class="sz-info">Eine Karte für jede Person. Am besten mit etwas, das du wirklich gesehen hast.</p><div class="sz-bühne"></div><div class="sz-karten ly-d-optionen"></div></div>');
+    const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || 'Aula · Baum der Stärke') + '</span><b>' + esc(def.titel || 'Stärken verschenken') + '</b></div>' +
+      '<p class="sz-info">' + esc(def.info || 'Eine Karte für jede Person. Am besten mit etwas, das du wirklich gesehen hast.') + '</p><div class="sz-bühne"></div><div class="sz-karten ly-d-optionen"></div></div>');
     const bühne = k.querySelector('.sz-bühne'), karten = k.querySelector('.sz-karten');
     const konkret = [], allgemein = [];
     const wahl = (html, n) => new Promise((fertig) => { karten.innerHTML = html; let aus = false; const ende = (j) => { if (aus) return; aus = true; loesche(); fertig(j); };
@@ -1261,6 +1261,292 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
     };
     zeig();
     halte((e) => { if (e.code === 'KeyE' || e.code === 'Enter') { e.preventDefault(); e.stopPropagation(); sagen(); } });
+  });
+
+  // ---------- Kurs Modul 6 (Wenn es schwierig wird) ----------
+  // Konflikt-Treppe (E24): Ein Streit steigt Stufe für Stufe. Auf jeder Stufe kannst du einen Ausstieg versuchen –
+  // oder weiter zuschauen. Je früher der Ausstieg, desto weniger kaputt. def: { wo, links, rechts, stufen: [{ titel, sagt: [[seite, text]…],
+  // ausstiege: [{ t, wirkt, antwort: [seite, text] }] }] } → { stufe, ausgestiegen }
+  ui.treppe = (def) => new Promise((ok) => {
+    const P = { l: def.links, r: def.rechts };
+    const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || '') + '</span><b>🪜 Konflikt-Treppe</b></div>' +
+      '<div class="sz-treppe">' + def.stufen.map((s, i) => '<div class="sz-stufe" data-i="' + i + '" style="--h:' + (i + 1) + '"><span>' + esc(s.titel) + '</span></div>').join('') + '</div>' +
+      '<div class="sz-bühne"></div><div class="sz-karten ly-d-optionen"></div></div>');
+    const bühne = k.querySelector('.sz-bühne'), karten = k.querySelector('.sz-karten');
+    let stufe = 0, ausgestiegen = false;
+    (async () => {
+      for (let i = 0; i < def.stufen.length && !ausgestiegen; i++) {
+        stufe = i + 1; const s = def.stufen[i];
+        k.querySelectorAll('.sz-stufe').forEach((el) => el.classList.toggle('an', +el.dataset.i <= i));
+        bühne.innerHTML = '';
+        for (const [seite, t] of s.sagt) { bühne.insertAdjacentHTML('beforeend', blaseHtml(P[seite], t)); while (bühne.children.length > 3) bühne.firstChild.remove(); await warte(lesezeit(t)); }
+        const opts = s.ausstiege.concat([{ t: '(Weiter zuschauen.)', zusehen: true }]);
+        const j = await karteWahl(karten, opts.map((o, n) => '<button type="button" data-i="' + n + '"><span>' + esc(ersetze(o.t)) + '</span></button>').join(''), opts.length, { zeit: def.zeit || 12, still: opts.length - 1, zeitEl: null });
+        karten.innerHTML = '';
+        const o = opts[j];
+        if (!o.zusehen) {
+          bühne.insertAdjacentHTML('beforeend', blaseHtml(null, ersetze(o.t), true));
+          if (o.antwort) { await warte(500); bühne.insertAdjacentHTML('beforeend', blaseHtml(P[o.antwort[0]] || null, o.antwort[1])); }
+          await warte(lesezeit(o.antwort ? o.antwort[1] : 'x x x x'));
+          if (o.wirkt) ausgestiegen = true;
+        }
+      }
+      const txt = ausgestiegen ? 'Ausgestiegen auf Stufe ' + stufe + ' von ' + def.stufen.length + '.' : 'Oben angekommen. Jetzt knallt es.';
+      k.querySelectorAll('.sz-stufe').forEach((el) => el.classList.toggle('knall', !ausgestiegen && +el.dataset.i === def.stufen.length - 1));
+      weiterKnopf(karten, { stufe, ausgestiegen }, ok, '<div class="sz-sys">' + esc(txt) + '</div>');
+    })();
+  });
+
+  // Druck-Runde (E25 Gruppendruck): Mehrere reden auf dich ein. Zwei Balken: Druck der Gruppe und dein Ich.
+  // Einmal darfst du den Anker werfen (Atmen, Füße, Nein-Satz): Die Zeit hält an. def: { wo, gruppe: { id: { name, farbe } },
+  // runden: [{ wer, sagt, karten: [{ t, art, druck, ich, antwort }] }], anker } → { druck, ich, ja, nein }
+  ui.druckRunde = (def) => new Promise((ok) => {
+    const G = def.gruppe;
+    const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || '') + '</span><b>🌀 Druck-Runde</b></div>' +
+      '<div class="sz-druck"><div><small>Druck</small><i class="d"></i></div><div><small>Dein Ich</small><i class="i"></i></div></div>' +
+      '<div class="sz-kreis-leute">' + Object.entries(G).map(([id, p]) => '<i data-p="' + id + '" style="--f:' + esc(p.farbe) + '">' + esc(p.name[0]) + '<small>' + esc(p.name) + '</small></i>').join('') + '</div>' +
+      '<div class="sz-bühne"></div><div class="sz-zeit"><i></i></div><div class="sz-karten ly-d-optionen"></div><button type="button" class="ly-link sz-anker">⚓ Anker werfen (einmal)</button></div>');
+    const bühne = k.querySelector('.sz-bühne'), karten = k.querySelector('.sz-karten'), zeitEl = k.querySelector('.sz-zeit i'), anker = k.querySelector('.sz-anker');
+    let druck = 30, ich = 60, ja = 0, nein = 0, ankerDa = true;
+    const zeig = () => { k.querySelector('.sz-druck .d').style.width = druck + '%'; k.querySelector('.sz-druck .i').style.width = ich + '%'; };
+    zeig();
+    (async () => {
+      for (const r of def.runden) {
+        k.querySelectorAll('[data-p]').forEach((el) => el.classList.toggle('steht', el.dataset.p === r.wer));
+        bühne.innerHTML = blaseHtml(G[r.wer], r.sagt); druck = Math.min(100, druck + 8); zeig();
+        await warte(lesezeit(r.sagt) * 0.7);
+        let j;
+        const wahl = karteWahl(karten, r.karten.map((c, n) => '<button type="button" data-i="' + n + '"><span>' + esc(ersetze(c.t)) + '</span></button>').join(''), r.karten.length, { zeit: def.zeit || 9, still: -1, zeitEl });
+        if (ankerDa) anker.hidden = false;
+        anker.onclick = () => { if (!ankerDa) return; ankerDa = false; anker.hidden = true; ich = Math.min(100, ich + 10); zeig(); bühne.insertAdjacentHTML('beforeend', '<div class="sz-sys">⚓ ' + esc(ersetze(def.anker)) + '</div>'); };
+        j = await wahl; anker.hidden = true; karten.innerHTML = '';
+        const c = j < 0 ? { t: '(…)', art: 'still', druck: 6, ich: -6, antwort: 'Keine Antwort ist für die Gruppe ein Ja.' } : r.karten[j];
+        if (c.art === 'ja') ja++; if (c.art === 'nein') nein++;
+        druck = Math.max(0, Math.min(100, druck + (c.druck || 0))); ich = Math.max(0, Math.min(100, ich + (c.ich || 0))); zeig();
+        if (j >= 0) bühne.insertAdjacentHTML('beforeend', blaseHtml(null, ersetze(c.t), true));
+        if (c.antwort) { await warte(450); bühne.insertAdjacentHTML('beforeend', j < 0 ? '<div class="sz-sys">' + esc(c.antwort) + '</div>' : blaseHtml(G[c.wer || r.wer], c.antwort)); }
+        await warte(lesezeit(c.antwort || 'x x'));
+        if (c.art === 'gehen') break;
+      }
+      anker.hidden = true;
+      weiterKnopf(karten, { druck, ich, ja, nein }, ok, '<div class="sz-sys">Dein Ich: ' + ich + ' · Druck: ' + druck + '</div>');
+    })();
+  });
+
+  // Bühne kippen (E26 Mobbing und Zivilcourage): Jemand wird vor Publikum fertiggemacht. Mit jeder Stufe der Zivilcourage-
+  // Leiter wechseln Zuschauende die Seite. Die Bühne kippt. def: { wo, opfer, taeter, publikum: [{ name, farbe, mut }],
+  // aktionen: [{ t, stufe, wirkt, antwort: [wer, text] }], runden } → { gekippt, stufen: [..] }
+  ui.buehneKippen = (def) => new Promise((ok) => {
+    const pub = def.publikum.map((p) => ({ ...p, seite: 'l' }));
+    const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || '') + '</span><b>⚖️ Kipp die Bühne</b></div>' +
+      '<div class="sz-buehne-k"><div class="sz-bk-brett"><div class="sz-bk-l"><b>' + esc(def.taeter.name) + '</b><div></div></div><div class="sz-bk-r"><b>' + esc(def.opfer.name) + '</b><div></div></div></div><i class="sz-bk-fuss"></i></div>' +
+      '<div class="sz-bühne"></div><div class="sz-karten ly-d-optionen"></div></div>');
+    const brett = k.querySelector('.sz-bk-brett'), L = k.querySelector('.sz-bk-l div'), R = k.querySelector('.sz-bk-r div'), bühne = k.querySelector('.sz-bühne'), karten = k.querySelector('.sz-karten');
+    const zeig = () => {
+      L.innerHTML = pub.filter((p) => p.seite === 'l').map((p) => '<i style="--f:' + esc(p.farbe) + '" title="' + esc(p.name) + '">' + esc(p.name[0]) + '</i>').join('');
+      R.innerHTML = '<i class="du">●</i>' + pub.filter((p) => p.seite === 'r').map((p) => '<i style="--f:' + esc(p.farbe) + '" title="' + esc(p.name) + '">' + esc(p.name[0]) + '</i>').join('');
+      const n = pub.filter((p) => p.seite === 'r').length + 1, m = pub.filter((p) => p.seite === 'l').length + 1;
+      brett.style.transform = 'rotate(' + Math.max(-12, Math.min(12, (n - m) * 3)) + 'deg)';
+    };
+    zeig();
+    const stufen = []; const benutzt = new Set();
+    (async () => {
+      for (const [w, t] of def.start || []) { bühne.insertAdjacentHTML('beforeend', blaseHtml(w === 'opfer' ? def.opfer : def.taeter, t)); await warte(lesezeit(t)); }
+      for (let r = 0; r < (def.runden || 3); r++) {
+        const offen = def.aktionen.map((a, i) => ({ a, i })).filter((x) => !benutzt.has(x.i));
+        const j = await karteWahl(karten, offen.map((x, n) => '<button type="button" data-i="' + n + '"><small>Stufe ' + x.a.stufe + '</small><span>' + esc(ersetze(x.a.t)) + '</span></button>').join(''), offen.length);
+        karten.innerHTML = ''; const { a, i } = offen[j]; benutzt.add(i); stufen.push(a.stufe);
+        bühne.innerHTML = blaseHtml(null, ersetze(a.t), true);
+        let n = a.wirkt || 0; for (const p of pub) { if (n > 0 && p.seite === 'l' && p.mut <= a.stufe + r) { p.seite = 'r'; n--; } }
+        await warte(400); zeig();
+        if (a.antwort) { bühne.insertAdjacentHTML('beforeend', blaseHtml(a.antwort[0] === 'opfer' ? def.opfer : a.antwort[0] === 'taeter' ? def.taeter : (pub.find((p) => p.name === a.antwort[0]) || null), a.antwort[1])); await warte(lesezeit(a.antwort[1])); }
+      }
+      const gekippt = pub.filter((p) => p.seite === 'r').length;
+      weiterKnopf(karten, { gekippt, stufen }, ok, '<div class="sz-sys">' + esc(gekippt >= pub.length / 2 ? 'Die Bühne ist gekippt. ' + gekippt + ' stehen jetzt auf der anderen Seite.' : gekippt + ' sind rübergekommen. Jeder einzelne zählt.') + '</div>');
+    })();
+  });
+
+  // ---------- Kurs Modul 7 (Digitale Welt) ----------
+  // Feed-Duell gegen den Algorithmus (E27): Du wischst durch einen Feed. Was du likest – und wo du hängen bleibst –
+  // bekommst du öfter. Am Ende siehst du, woraus dein Feed geworden ist. def: { arten: { id: [name, farbe] }, posts: [{ art, t, sy }], runden }
+  // → { anteile: { art: % }, top, geliked: n }
+  ui.feedSim = (def) => new Promise((ok) => {
+    const A = def.arten, ids = Object.keys(A), gewicht = Object.fromEntries(ids.map((a) => [a, 1])), gezeigt = Object.fromEntries(ids.map((a) => [a, 0]));
+    const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || '') + '</span><b>📱 Du gegen den Algorithmus</b></div>' +
+      '<p class="sz-info">Wisch durch deinen Feed. ❤️ = gefällt mir, ⏭ = weiter. Wer lange guckt, sagt dem Algorithmus auch was.</p>' +
+      '<div class="sz-feed"></div><div class="sz-feed-balken"></div><div class="sz-karten ly-d-optionen sz-raster"></div></div>');
+    const feed = k.querySelector('.sz-feed'), balken = k.querySelector('.sz-feed-balken'), karten = k.querySelector('.sz-karten');
+    const benutzt = new Set(); let geliked = 0;
+    const zieh = () => {
+      const summe = ids.reduce((s, a) => s + gewicht[a], 0); let r = Math.random() * summe, art = ids[0];
+      for (const a of ids) { r -= gewicht[a]; if (r <= 0) { art = a; break; } }
+      const p = def.posts.find((x) => x.art === art && !benutzt.has(x)) || def.posts.find((x) => !benutzt.has(x)) || def.posts[0];
+      benutzt.add(p); return p;
+    };
+    const zeigBalken = () => { const n = ids.reduce((s, a) => s + gezeigt[a], 0) || 1;
+      balken.innerHTML = ids.map((a) => '<i style="width:' + (gezeigt[a] / n * 100) + '%;background:' + A[a][1] + '" title="' + esc(A[a][0]) + '"></i>').join(''); };
+    (async () => {
+      for (let n = 0; n < (def.runden || 10); n++) {
+        const p = zieh(); gezeigt[p.art]++;
+        feed.innerHTML = '<div class="sz-post" style="--f:' + A[p.art][1] + '"><small>' + esc(A[p.art][0]) + '</small><i>' + (p.sy || '📷') + '</i><b>' + esc(ersetze(p.t)) + '</b></div>';
+        zeigBalken();
+        const t0 = performance.now();
+        const j = await karteWahl(karten, '<button type="button" data-i="0"><span>❤️ Gefällt mir</span></button><button type="button" data-i="1"><span>⏭ Weiter</span></button>', 2, { zeit: 6, still: 2 });
+        const verweilt = (performance.now() - t0) / 1000;
+        if (j === 0) { gewicht[p.art] += 2; geliked++; } else if (j === 2 || verweilt > 3.5) gewicht[p.art] += 1;   // Hängenbleiben zählt auch
+        else gewicht[p.art] = Math.max(0.4, gewicht[p.art] - 0.3);
+        karten.innerHTML = '';
+        await warte(250);
+      }
+      const n = ids.reduce((s, a) => s + gezeigt[a], 0) || 1;
+      const anteile = Object.fromEntries(ids.map((a) => [a, Math.round(gezeigt[a] / n * 100)]));
+      const top = ids.reduce((m, a) => (gewicht[a] > gewicht[m] ? a : m), ids[0]);
+      feed.innerHTML = '<div class="sz-post" style="--f:' + A[top][1] + '"><small>Dein nächster Feed</small><i>🔮</i><b>Ab jetzt vor allem: ' + esc(A[top][0]) + '</b></div>';
+      weiterKnopf(karten, { anteile, top, geliked }, ok, '<div class="sz-sys">Du hast den Feed gebaut. Mit jedem ❤️ – und mit jedem langen Blick.</div>');
+    })();
+  });
+
+  // ---------- Kurs Modul 8 (Gesund und stark) ----------
+  // Stress-Rucksack (E29): Dinge kommen in den Rucksack. Für jedes entscheidest du: selbst tragen, kann warten, mit jemandem
+  // teilen – oder: gehört gar nicht mir. Der Rucksack wird leichter oder schwerer; die Figur läuft schneller oder langsamer.
+  // def: { wo, wer, dinge: [{ t, sy, kg, passt: [arten], warum }] } → { kg, geteilt, richtig }
+  ui.rucksack = (def) => new Promise((ok) => {
+    const ARTEN = [['tragen', '💪 Trag ich'], ['warten', '⏳ Kann warten'], ['teilen', '🤝 Teil ich'], ['nicht', '🚫 Nicht meins']];
+    const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || '') + '</span><b>🎒 ' + esc(def.titel || 'Stress-Rucksack') + '</b></div>' +
+      '<div class="sz-rs"><div class="sz-rs-sack"><i></i><b>0 kg</b></div><div class="sz-rs-lauf"><span class="sz-rs-figur">🚶</span></div></div>' +
+      '<div class="sz-sort-karte sz-spur"></div><div class="sz-bühne"></div><div class="sz-karten sz-raster ly-d-optionen"></div></div>');
+    const sack = k.querySelector('.sz-rs-sack i'), kgEl = k.querySelector('.sz-rs-sack b'), figur = k.querySelector('.sz-rs-figur'), karte = k.querySelector('.sz-spur'), bühne = k.querySelector('.sz-bühne'), karten = k.querySelector('.sz-karten');
+    let kg = 0, geteilt = 0, richtig = 0; const max = def.dinge.reduce((s, d) => s + d.kg, 0);
+    const zeig = () => { sack.style.height = Math.min(100, kg / max * 100) + '%'; kgEl.textContent = kg + ' kg'; figur.style.animationDuration = (0.6 + kg / max * 2.4) + 's'; figur.textContent = kg / max > 0.6 ? '🧍' : '🚶'; };
+    zeig();
+    (async () => {
+      for (const d of def.dinge) {
+        karte.innerHTML = '<i>' + (d.sy || '📦') + '</i> ' + esc(ersetze(d.t)) + ' <small>(' + d.kg + ' kg)</small>'; bühne.innerHTML = '';
+        kg += d.kg; zeig(); await warte(350);
+        const j = await karteWahl(karten, ARTEN.map(([, n], i) => '<button type="button" data-i="' + i + '"><span>' + n + '</span></button>').join(''), 4);
+        karten.innerHTML = ''; const art = ARTEN[j][0];
+        if (art === 'warten') kg -= Math.ceil(d.kg / 2); else if (art === 'teilen') { kg -= Math.ceil(d.kg * 0.6); geteilt++; } else if (art === 'nicht') kg -= d.kg;
+        kg = Math.max(0, kg); zeig();
+        if ((d.passt || []).includes(art)) richtig++;
+        bühne.innerHTML = '<div class="sz-sys">' + ((d.passt || []).includes(art) ? '✓ ' : '') + esc(ersetze(d.warum || '')) + '</div>';
+        await warte(lesezeit(d.warum || 'x x x'));
+      }
+      karte.style.display = 'none';
+      weiterKnopf(karten, { kg, geteilt, richtig }, ok, '<div class="sz-sys">Im Rucksack: ' + kg + ' von ' + max + ' kg. Was man teilt, wird leichter.</div>');
+    })();
+  });
+
+  // Akku-Tag (E29): Ein Tag von morgens bis nachts. Jede Entscheidung lädt den Akku – oder zieht ihn leer.
+  // Am Ende: Wie voll startest du in den nächsten Morgen? def: { start, stationen: [{ zeit, t, wahl: [{ t, akku, antwort }] }] } → { akku, morgen }
+  ui.akkuTag = (def) => new Promise((ok) => {
+    let akku = def.start || 70;
+    const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || '') + '</span><b>🔋 Dein Akku-Tag</b></div>' +
+      '<div class="sz-akku"><div class="sz-akku-k"><i></i></div><b>70 %</b></div><div class="sz-tag"></div>' +
+      '<div class="sz-fall" style="--f:#2b3a55"><b class="sz-akku-zeit"></b><p class="sz-akku-t"></p></div><div class="sz-bühne"></div><div class="sz-karten ly-d-optionen"></div></div>');
+    const fuell = k.querySelector('.sz-akku-k i'), proz = k.querySelector('.sz-akku b'), zeit = k.querySelector('.sz-akku-zeit'), text = k.querySelector('.sz-akku-t'), tag = k.querySelector('.sz-tag'), bühne = k.querySelector('.sz-bühne'), karten = k.querySelector('.sz-karten');
+    const zeig = () => { fuell.style.width = akku + '%'; fuell.style.background = akku < 25 ? '#d6452f' : akku < 55 ? '#e9a23b' : '#3fa66b'; proz.textContent = Math.round(akku) + ' %'; };
+    tag.innerHTML = def.stationen.map((s, i) => '<i data-i="' + i + '">' + esc(s.zeit) + '</i>').join('');
+    zeig();
+    (async () => {
+      for (let n = 0; n < def.stationen.length; n++) {
+        const s = def.stationen[n];
+        tag.querySelectorAll('i').forEach((el) => el.classList.toggle('an', +el.dataset.i <= n));
+        zeit.textContent = s.zeit; text.textContent = ersetze(s.t); bühne.innerHTML = '';
+        akku = Math.max(0, akku - (s.verbrauch || 6)); zeig();
+        const j = await karteWahl(karten, s.wahl.map((w, i) => '<button type="button" data-i="' + i + '"><span>' + esc(ersetze(w.t)) + '</span></button>').join(''), s.wahl.length);
+        karten.innerHTML = ''; const w = s.wahl[j];
+        akku = Math.max(0, Math.min(100, akku + w.akku)); zeig();
+        bühne.innerHTML = '<div class="sz-sys">' + (w.akku >= 0 ? '+' : '') + w.akku + ' % · ' + esc(ersetze(w.antwort || '')) + '</div>';
+        await warte(lesezeit(w.antwort || 'x x x'));
+      }
+      const morgen = Math.round(Math.min(100, akku + (def.nacht || 0)));
+      zeit.textContent = 'Nächster Morgen'; text.textContent = morgen >= 60 ? 'Du wachst auf, bevor der Wecker klingelt. Fast.' : morgen >= 35 ? 'Müde. Aber es geht.' : 'Der Wecker klingelt. Du hörst ihn erst beim dritten Mal.';
+      akku = morgen; zeig();
+      weiterKnopf(karten, { akku: morgen, morgen }, ok, '<div class="sz-sys">Du startest mit ' + morgen + ' % in den Tag.</div>');
+    })();
+  });
+
+  // Gesund-Würfel (E29): Würfeln, kleine Aufgabe, erledigt. Man darf eine Aufgabe tauschen. def: { aufgaben: [6× { t, sy, wer?, sagt? }], runden }
+  // → { erledigt, getauscht }
+  ui.gesundWuerfel = (def) => new Promise((ok) => {
+    const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || '') + '</span><b>🎲 Gesund-Würfel</b></div>' +
+      '<div class="sz-wuerfel">🎲</div><div class="sz-sort-karte sz-spur"></div><div class="sz-bühne"></div><div class="sz-karten ly-d-optionen"></div></div>');
+    const w = k.querySelector('.sz-wuerfel'), karte = k.querySelector('.sz-spur'), bühne = k.querySelector('.sz-bühne'), karten = k.querySelector('.sz-karten');
+    let erledigt = 0, getauscht = 0, tausch = 1;
+    const AUGEN = ['⚀', '⚁', '⚂', '⚃', '⚄', '⚅'];
+    (async () => {
+      for (let r = 0; r < (def.runden || 3); r++) {
+        karte.textContent = ''; bühne.innerHTML = '';
+        await karteWahl(karten, '<button type="button" data-i="0"><span>🎲 Würfeln</span></button>', 1);
+        karten.innerHTML = ''; let z = 0;
+        for (let i = 0; i < 8; i++) { z = Math.floor(Math.random() * 6); w.textContent = AUGEN[z]; await warte(70 + i * 15); }
+        let a = def.aufgaben[z];
+        karte.innerHTML = '<i>' + a.sy + '</i> ' + esc(ersetze(a.t));
+        let j = await karteWahl(karten, '<button type="button" data-i="0"><span>✅ Gemacht</span></button>' + (tausch ? '<button type="button" data-i="1"><span>🔁 Tauschen (einmal)</span></button>' : ''), tausch ? 2 : 1);
+        if (j === 1) { tausch = 0; getauscht++; z = (z + 3) % 6; w.textContent = AUGEN[z]; a = def.aufgaben[z]; karte.innerHTML = '<i>' + a.sy + '</i> ' + esc(ersetze(a.t)); j = await karteWahl(karten, '<button type="button" data-i="0"><span>✅ Gemacht</span></button>', 1); }
+        karten.innerHTML = ''; erledigt++;
+        if (a.sagt) { bühne.innerHTML = blaseHtml(a.wer, a.sagt); await warte(lesezeit(a.sagt)); } else await warte(500);
+      }
+      karte.style.display = 'none';
+      weiterKnopf(karten, { erledigt, getauscht }, ok, '<div class="sz-sys">' + erledigt + ' kleine Schritte. Klein zählt.</div>');
+    })();
+  });
+
+  // ---------- Kurs Modul 9 (Abschluss) ----------
+  // Jahres-Kurve (Rückblick): Momente des Jahres kommen als Polaroids. Für jeden sagst du, wie es sich angefühlt hat.
+  // Daraus wird deine Kurve. Kein Jahr ist eine gerade Linie. def: { wo, momente: [{ t, sy, dein }] } → { werte: [0..3], hoch, tief }
+  ui.jahresKurve = (def) => new Promise((ok) => {
+    const M = def.momente, GES = [['😣', 'schwer'], ['😕', 'gemischt'], ['🙂', 'okay'], ['😄', 'richtig gut']];
+    const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || '') + '</span><b>📈 Deine Jahres-Kurve</b></div>' +
+      '<div class="sz-kurve"><svg viewBox="0 0 100 40" preserveAspectRatio="none" aria-hidden="true"><path class="sz-kurve-l" d=""/></svg><div class="sz-kurve-p"></div></div>' +
+      '<div class="sz-polaroid"></div><div class="sz-bühne"></div><div class="sz-karten sz-raster ly-d-optionen"></div></div>');
+    const pfad = k.querySelector('.sz-kurve-l'), punkte = k.querySelector('.sz-kurve-p'), pol = k.querySelector('.sz-polaroid'), bühne = k.querySelector('.sz-bühne'), karten = k.querySelector('.sz-karten');
+    const werte = [];
+    const x = (i) => (M.length < 2 ? 50 : 4 + i * 92 / (M.length - 1)), y = (v) => 34 - v * 10;
+    const zeichne = () => {
+      pfad.setAttribute('d', werte.map((v, i) => (i ? 'L' : 'M') + x(i).toFixed(1) + ' ' + y(v)).join(' '));
+      punkte.innerHTML = werte.map((v, i) => '<i style="left:' + x(i) + '%;top:' + (y(v) / 40 * 100) + '%">' + GES[v][0] + '</i>').join('');
+    };
+    (async () => {
+      for (let n = 0; n < M.length; n++) {
+        const m = M[n]; bühne.innerHTML = '';
+        pol.innerHTML = '<i>' + (m.sy || '📷') + '</i><b>' + esc(ersetze(m.t)) + '</b>' + (m.dein ? '<small>' + esc(ersetze(m.dein)) + '</small>' : '');
+        pol.classList.remove('neu'); void pol.offsetWidth; pol.classList.add('neu');
+        await warte(Math.min(2600, lesezeit(m.t, m.dein || '') * 0.5));
+        const j = await karteWahl(karten, GES.map(([sy, t], i) => '<button type="button" data-i="' + i + '"><span>' + sy + ' ' + t + '</span></button>').join(''), 4);
+        karten.innerHTML = ''; werte.push(j); zeichne();
+        await warte(350);
+      }
+      const hoch = werte.indexOf(Math.max(...werte)), tief = werte.indexOf(Math.min(...werte));
+      pol.innerHTML = '<i>🗓️</i><b>Dein Jahr</b><small>Oben: ' + esc(ersetze(M[hoch].t)) + ' · Unten: ' + esc(ersetze(M[tief].t)) + '</small>';
+      weiterKnopf(karten, { werte, hoch, tief }, ok, '<div class="sz-sys">Rauf und runter. So sieht ein echtes Jahr aus.</div>');
+    })();
+  });
+
+  // Brief an mich (Abschluss): Du baust einen Brief an dein Ich in einem Jahr. Satz für Satz, aus Bausteinen.
+  // Der Brief wird verschlossen – und kommt in der 6ème zurück. def: { wo, an, teile: [{ frage, optionen: [t] }], gruss } → { saetze, text }
+  ui.briefAnMich = (def) => new Promise((ok) => {
+    const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || '') + '</span><b>✉️ Brief an mich</b></div>' +
+      '<div class="sz-brief"><p class="sz-brief-an">' + esc(ersetze(def.an || 'Liebes Ich,')) + '</p><div class="sz-brief-t"></div><p class="sz-brief-gruss"></p></div>' +
+      '<p class="sz-info sz-brief-frage"></p><div class="sz-karten ly-d-optionen"></div></div>');
+    const brief = k.querySelector('.sz-brief'), text = k.querySelector('.sz-brief-t'), frage = k.querySelector('.sz-brief-frage'), karten = k.querySelector('.sz-karten'), gruss = k.querySelector('.sz-brief-gruss');
+    const saetze = [];
+    (async () => {
+      for (const t of def.teile) {
+        frage.textContent = ersetze(t.frage);
+        const j = await karteWahl(karten, t.optionen.map((o, i) => '<button type="button" data-i="' + i + '"><span>' + esc(ersetze(o)) + '</span></button>').join(''), t.optionen.length);
+        karten.innerHTML = ''; const s = ersetze(t.optionen[j]); saetze.push(s);
+        const p = document.createElement('p'); text.appendChild(p);
+        for (let i = 1; i <= s.length; i += 2) { p.textContent = s.slice(0, i); await warte(18); }
+        p.textContent = s; await warte(500);
+      }
+      frage.textContent = '';
+      gruss.textContent = ersetze(def.gruss || 'Bis in einem Jahr. Dein {name}');
+      await warte(1300);
+      brief.classList.add('zu');
+      await warte(900);
+      weiterKnopf(karten, { saetze, text: saetze.join(' ') }, ok, '<div class="sz-sys">Verschlossen. Du bekommst ihn in der 6ème zurück.</div>');
+    })();
   });
 
   return ui;

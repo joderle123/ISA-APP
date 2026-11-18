@@ -375,10 +375,14 @@ import { SCHRITTE_N3, GESPRAECHE_N3 } from './story/kapitel3.js';
 import { SCHRITTE_N4, GESPRAECHE_N4 } from './story/kapitel4.js';
 import { SCHRITTE_N5, GESPRAECHE_N5 } from './story/kapitel5.js';
 import { SCHRITTE_N6, GESPRAECHE_N6 } from './story/kapitel6.js';
+import { SCHRITTE_N7, GESPRAECHE_N7 } from './story/kapitel7.js';
+import { SCHRITTE_N8, GESPRAECHE_N8 } from './story/kapitel8.js';
+import { SCHRITTE_N9, GESPRAECHE_N9 } from './story/kapitel9.js';
+import { SCHRITTE_N10, GESPRAECHE_N10 } from './story/kapitel10.js';
 Object.assign(LEUTE, PERSONAL);
 SCHRITTE.length = 0;
-SCHRITTE.push(...SCHRITTE_N1, ...SCHRITTE_N2, ...SCHRITTE_N3, ...SCHRITTE_N4, ...SCHRITTE_N5, ...SCHRITTE_N6);
-Object.assign(GESPRAECHE, GESPRAECHE_N1, GESPRAECHE_N2, GESPRAECHE_N3, GESPRAECHE_N4, GESPRAECHE_N5, GESPRAECHE_N6);
+SCHRITTE.push(...SCHRITTE_N1, ...SCHRITTE_N2, ...SCHRITTE_N3, ...SCHRITTE_N4, ...SCHRITTE_N5, ...SCHRITTE_N6, ...SCHRITTE_N7, ...SCHRITTE_N8, ...SCHRITTE_N9, ...SCHRITTE_N10);
+Object.assign(GESPRAECHE, GESPRAECHE_N1, GESPRAECHE_N2, GESPRAECHE_N3, GESPRAECHE_N4, GESPRAECHE_N5, GESPRAECHE_N6, GESPRAECHE_N7, GESPRAECHE_N8, GESPRAECHE_N9, GESPRAECHE_N10);
 Object.assign(KAPITEL, { 1: 'Ankommen', 2: 'Wer bin ich?', 3: 'Gefühle verstehen', 4: 'Gefühle regulieren', 5: 'Meine Gedanken', 6: 'Kommunikation und Grenzen', 7: 'Wenn es schwierig wird', 8: 'Digitale Welt', 9: 'Gesund und stark', 10: 'Abschluss' });
 Object.assign(STAERKEN, {
   humor: STAERKEN.humor || { name: 'Humor', text: 'Du hast die Lage mit einem Witz entspannt.' },

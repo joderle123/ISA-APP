@@ -1,0 +1,253 @@
+// Drei Jahre Annexe – 7ème, Kapitel 7 „Wenn es schwierig wird“ (Kurs Jahr 1, Modul 6: E24 Konflikte lösen,
+// E25 Gruppendruck und Nein sagen, E26 Mobbing und Zivilcourage). Faden @annexe.cam: Rauswurf aus dem Klassenchat,
+// Luca baut eine Gegen-Gruppe. Wer bleibt? Ende: Ein KI-Fake von Mme Tidderich (Kapitel 8).
+const AULA = { noah: [-16.2, -54, 1.1], mila: [-11.8, -54.2, -1.1], ben: [-12.6, -52.4, -2.2], jo: [-15.6, -52.2, 2.2], ayla: [-17.2, -56.4, 1.6], lina: [-10.9, -56.6, -1.5], chiara: [-14.4, -51.6, 3.1], yusuf: [-13.0, -57.4, -0.4] };
+const F = { noah: { id: 'noah', name: 'Noah', farbe: '#3f78b8' }, mila: { id: 'mila', name: 'Mila', farbe: '#2fb8a8' }, ben: { id: 'ben', name: 'Ben', farbe: '#d9a21b' }, jo: { id: 'jo', name: 'Jo', farbe: '#c0392b' },
+  ayla: { id: 'ayla', name: 'Ayla', farbe: '#e85d75' }, luca: { id: 'luca', name: 'Luca', farbe: '#7a6fb0' }, kenan: { id: 'kenan', name: 'Kenan', farbe: '#4a8f7a' }, dario: { id: 'dario', name: 'Dario', farbe: '#d9693f' },
+  lina: { id: 'lina', name: 'Lina', farbe: '#9b7bc8' }, chiara: { id: 'chiara', name: 'Chiara', farbe: '#3fa66b' }, yusuf: { id: 'yusuf', name: 'Yusuf', farbe: '#5fa0d0' } };
+
+export const SCHRITTE_N7 = [
+  { id: 'k7_sonntag', kap: 7, tag: 'Montag', uhr: 7.55, titel: 'Wer bleibt?', ziel: 'Ben wartet an der Haltestelle. Mit zwei Brötchen.', marker: 'ben',
+    start: { teleport: 'busAnkunft', gespraech: 'n7_chat' },
+    leute: { ben: [-20.5, 42.3, -1.9] },
+    fertig: { reden: 'ben', gespraech: 'n7_ben' } },
+  { id: 'k7_skills', kap: 7, tag: 'Montag', uhr: 9.9, titel: 'Skills: Welches Tier bist du im Streit?', ziel: 'Aula. Auf dem Boden liegen vier Tierbilder.', marker: 'kaya',
+    start: { teleport: 'eingangHof' },
+    leute: { kaya: [-14, -55.5, Math.PI], mesenberg: [-12.2, -55.8, -2.8], ...AULA },
+    fertig: { reden: 'kaya', gespraech: 'n7_skills' } },
+  { id: 'k7_druck', kap: 7, tag: 'Dienstag', uhr: 12.4, titel: 'Das Angebot', ziel: 'Luca winkt dich zur Skate-Ecke. „Lass reden.“', marker: 'luca',
+    start: { teleport: 'eingangHof' },
+    leute: { luca: [-34.4, 11.4, 1.9], kenan: [-35, 10.4, 0.6], dario: [-33.4, 12.4, 1.2] },
+    fertig: { reden: 'luca', gespraech: 'n7_druck' } },
+  { id: 'k7_streit', kap: 7, tag: 'Mittwoch', uhr: 10.0, titel: 'Jo gegen Luca', ziel: 'Am Korb wird es laut. Jo und Luca.', marker: 'jo',
+    start: { teleport: 'eingangHof' },
+    leute: { jo: [28.4, 13.6, 2.6], luca: [29.6, 12.4, -0.6], ben: [26, 15.6, 1.4] },
+    fertig: { reden: 'jo', gespraech: 'n7_streit' } },
+  { id: 'k7_kantine', kap: 7, tag: 'Donnerstag', uhr: 12.3, titel: 'Die Bühne', ziel: 'Kantine. An Noahs Tisch ist es plötzlich sehr laut.', marker: 'noah',
+    start: { teleport: 'kantineTuer' },
+    leute: { noah: [10.75, -11.1, Math.PI / 2, 'sitzt'], luca: [12.4, -12.6, -2.2], kenan: [13.6, -12.0, -2.0], ben: [16.65, -11.1, Math.PI / 2, 'sitzt'], ayla: [16.65, -10.1, Math.PI / 2, 'sitzt'], dario: [21.4, -13.2, 0.9] },
+    fertig: { reden: 'noah', gespraech: 'n7_kantine' } },
+  { id: 'k7_ende', kap: 7, tag: 'Freitag', uhr: 10.0, titel: 'Spaß, Streit oder Mobbing?', ziel: 'Letzte Skills-Stunde der Woche. Aula.', marker: 'kaya',
+    start: { teleport: 'eingangHof' },
+    leute: { kaya: [-14, -55.5, Math.PI], ...AULA },
+    fertig: { reden: 'kaya', gespraech: 'n7_ende' } },
+];
+
+// ---------- Sonntagabend: Wer bleibt? (privat) ----------
+const WER_BLEIBT = (m) => ({
+  titel: 'Nachrichten', mitglieder: 2, dauer: 30,
+  nachrichten: [
+    { nach: 0.5, wer: 'Ben', text: 'bin raus aus „7P2 echte“. sofort. ich bleib bei dir' },
+    { nach: 3, wer: 'Mila', text: 'Ich war nie drin. Ich mag keine Gruppen mit 💯 im Namen.' },
+    { nach: 6, wer: 'Noah', text: m.noahGefragtFoto || m.noahRunter ? 'Ich bin auch raus. Du warst immer da. Jetzt ich.' : 'Ich bin raus. Glaub ich. Ja. Raus.' },
+    { nach: 9.5, wer: 'Jo', text: 'ich bin noch drin. soll ich raus? luca sagt dann bin ich auch weg vom fenster', setzt: 'joFragt' },
+    { nach: 14, wer: 'Ayla', text: 'ich bin drin, aber nur um zu sehen was die schreiben. spionin 🕵️' },
+    { nach: 18, wer: 'Luca', text: 'komm zurück wenn du sorry sagst. für alles 😇' },
+    { nach: 22, wer: 'Lina', text: '(schickt eine Zeichnung: Gerd die Taube mit einem Schild „Team du“)' },
+  ],
+  aktionen: [
+    { id: 'jo', t: 'Jo antworten', symbol: '💬', wenn: 'joFragt', wahl: [
+      { t: '„Mach, was du für richtig hältst. Ich bin dir nicht böse.“', setzt: 'joFrei', ich: 'mach was du für richtig hältst. ich bin dir nicht böse', folgen: [{ nach: 2, wer: 'Jo', text: '… bin raus. 🫡' }] },
+      { t: '„Wenn du drin bleibst, sind wir keine Freunde mehr.“', setzt: 'joDruck', ich: 'wenn du drin bleibst sind wir keine freunde mehr', folgen: [{ nach: 2, wer: 'Jo', text: 'okay. raus. aber das war jetzt auch druck, digga' }] },
+    ] },
+    { id: 'luca', t: 'Luca antworten', symbol: '↩️', wahl: [
+      { t: '„Ich sag nicht sorry für etwas, das ich nicht gemacht hab.“', setzt: 'lucaNein', ich: 'ich sag nicht sorry für etwas das ich nicht gemacht hab', folgen: [{ nach: 1.6, wer: 'Luca', text: 'dann viel spaß allein 👋' }] },
+      { t: '„Okay sorry“', setzt: 'lucaSorry', ich: 'okay sorry', folgen: [{ nach: 1.6, wer: 'Luca', text: 'haha. wusste ich. trotzdem nein 😂' }] },
+    ] },
+    { id: 'stumm', t: 'Handy weg, schlafen', symbol: '🌙', setzt: 'schlafen', sys: 'Handy weg. Du schläfst schlecht. Aber du schläfst.', ende: true },
+  ],
+});
+
+// ---------- Konflikt-Tiere (E24 Tier-Ecken) ----------
+const TIERE = {
+  wo: 'Aula · Tier-Ecken', titel: 'Welches Tier reagiert so?', zeit: 9,
+  info: 'Vier Tiere, vier Arten zu streiten. Keine ist immer falsch.',
+  faecher: [{ id: 'hai', t: 'Hai: durchsetzen', sy: '🦈', f: '#4f88c8' }, { id: 'schildi', t: 'Schildkröte: abtauchen', sy: '🐢', f: '#5fa04a' }, { id: 'teddy', t: 'Teddy: nachgeben', sy: '🧸', f: '#d9a21b' }, { id: 'eule', t: 'Eule: zusammen lösen', sy: '🦉', f: '#8a7bc8' }],
+  karten: [
+    { t: '„Ich hab recht. Punkt.“', ziel: 'hai' },
+    { t: '(Kopfhörer rein. Ist mir zu viel.)', ziel: 'schildi', wer: F.noah, sagt: 'Das bin ich. Meistens.' },
+    { t: '„Okay, okay, du kriegst den Platz.“', ziel: 'teddy', wer: F.ben, sagt: 'Ich. Immer. Für Frieden. Und Nuggets.' },
+    { t: '„Was brauchst du? Was brauch ich? Gibt’s was für beide?“', ziel: 'eule', wer: F.mila, sagt: 'Eule. Effizient.' },
+    { t: '„Lauter als du kann ich auch.“', ziel: 'hai', wer: F.jo, sagt: '… Ja gut. Ich bin manchmal Hai.' },
+    { t: '„Lass uns morgen reden. Heute bin ich zu wütend.“', ziel: ['eule', 'schildi'], wer: F.ayla, sagt: 'Pause ist kein Abtauchen. Pause ist klug.' },
+  ],
+  ende: 'Jedes Tier hat seinen Moment. Nur wer immer Hai oder immer Teddy ist, hat ein Problem.',
+};
+
+// ---------- Druck-Runde an der Skate-Ecke (E25) ----------
+const DRUCK = {
+  wo: 'Skate-Ecke', gruppe: { luca: F.luca, kenan: F.kenan, dario: F.dario }, zeit: 9,
+  anker: 'Füße auf den Boden. Ausatmen. Dein Satz: „Nein. Das mach ich nicht.“',
+  runden: [
+    { wer: 'luca', sagt: 'Ganz easy. Du kommst zurück in die Gruppe. Eine Bedingung.', karten: [
+      { t: '„Welche?“', art: 'frage', druck: 4, ich: 0, antwort: 'Ein Foto von Noah. Beim Essen. Für die Story. Lustig.' },
+      { t: '„Kein Interesse.“', art: 'nein', druck: -4, ich: 10, antwort: 'Hör doch erstmal zu, bro.' },
+    ] },
+    { wer: 'kenan', sagt: '(leise) Ist nur ein Foto. Alle machen das.', karten: [
+      { t: '„Nein. Ich weiß, wie sich das anfühlt.“', art: 'nein', druck: -8, ich: 14, antwort: '(guckt weg) … Ja. Okay.' },
+      { t: '„Vielleicht. Ich überleg’s mir.“', art: 'ausrede', druck: 8, ich: -6, antwort: 'Überleg nicht so lang.' },
+      { t: '„Okay. Eins.“', art: 'ja', druck: -10, ich: -20, wer: 'luca', antwort: 'Na also. Geht doch.' },
+    ] },
+    { wer: 'luca', sagt: 'Sonst bleibst du halt allein. Für immer. Deine Wahl.', karten: [
+      { t: '„Ich bin nicht allein.“', art: 'nein', druck: -10, ich: 16, antwort: '(lacht kurz. Hört dann auf.)' },
+      { t: '„Lieber allein als so.“', art: 'nein', druck: -6, ich: 14, antwort: 'Dramatisch. Okay.' },
+      { t: '(Gehen.)', art: 'gehen', druck: -14, ich: 12, antwort: '(ruft hinterher) Dein Verlust!' },
+    ] },
+    { wer: 'dario', sagt: '(ganz leise) … Luca. Lass es.', karten: [
+      { t: '(Dario anschauen. Nicken.)', art: 'nein', druck: -6, ich: 8, wer: 'dario', antwort: '(nickt kaum sichtbar zurück)' },
+      { t: '„Hörst du, Luca? Sogar Dario sagt es.“', art: 'nein', druck: 4, ich: 6, wer: 'luca', antwort: '(zu Dario, scharf) Halt du dich raus.' },
+    ] },
+  ],
+};
+
+// ---------- Konflikt-Treppe am Korb (E24) ----------
+const TREPPE = {
+  wo: 'Hof · am Korb', links: F.jo, rechts: F.luca, zeit: 12,
+  stufen: [
+    { titel: 'Meinung', sagt: [['r', 'Na, Verräter? Schon neue Freunde?'], ['l', 'Lass mich, Luca.']], ausstiege: [
+      { t: '„Jo, komm. Wir spielen auf dem anderen Korb.“', wirkt: true, antwort: ['l', '(atmet aus) … Ja. Ist eh besser da.'] },
+    ] },
+    { titel: 'Sticheln', sagt: [['r', 'Wer zuerst geht, verliert, oder?'], ['l', 'Wer andere fakt, ist ein Feigling.']], ausstiege: [
+      { t: '„Stopp. Ihr seid beide bei Gelb. Pause.“', wirkt: true, antwort: ['r', '… Pff. Okay. Pause.'] },
+      { t: '„Jo, lass ihn reden. Der will das.“', wirkt: false, antwort: ['l', 'Ich lass mich nicht beleidigen!'] },
+    ] },
+    { titel: 'Beleidigen', sagt: [['r', 'Du warst doch schon immer der Clown.'], ['l', 'Und du der Lügner!']], ausstiege: [
+      { t: '(Zwischen die beiden gehen. Ruhig.) „Fünf Sekunden. Beide.“', wirkt: true, antwort: ['l', '(zittert) … Fünf. Okay.'] },
+      { t: '„Hört auf, Leute gucken!“', wirkt: false, antwort: ['r', 'Sollen sie doch!'] },
+    ] },
+    { titel: 'Drohen', sagt: [['r', 'Noch ein Wort und …'], ['l', 'Und WAS?']], ausstiege: [
+      { t: '(Ben holen. Und Herrn Mesenberg.)', wirkt: true, antwort: ['l', '(Mesenberg kommt. Beide gehen auseinander.)'] },
+    ] },
+    { titel: 'Knall', sagt: [['l', '(schubst)'], ['r', '(schubst zurück)']], ausstiege: [
+      { t: '(Laut: „STOPP!“ und Hilfe holen.)', wirkt: true, antwort: ['r', '(Herr Mesenberg rennt über den Hof.)'] },
+    ] },
+  ],
+};
+
+// ---------- Kipp die Bühne (E26) ----------
+const BUEHNE = {
+  wo: 'Kantine', opfer: F.noah, taeter: F.luca, runden: 3,
+  start: [['taeter', 'Noah, du baust doch so gern. Bau dir mal Freunde!'], ['taeter', '(hält das Handy hoch) Lächeln für die Story!'], ['opfer', '(starrt auf sein Tablett)']],
+  publikum: [
+    { name: 'Kenan', farbe: '#4a8f7a', mut: 4 }, { name: 'Chiara', farbe: '#3fa66b', mut: 1 }, { name: 'Yusuf', farbe: '#5fa0d0', mut: 2 },
+    { name: 'Lina', farbe: '#9b7bc8', mut: 2 }, { name: 'Ayla', farbe: '#e85d75', mut: 1 }, { name: 'Ben', farbe: '#d9a21b', mut: 1 }, { name: 'Dario', farbe: '#d9693f', mut: 3 },
+  ],
+  aktionen: [
+    { t: '(Nicht mitlachen. Ernst gucken.)', stufe: 1, wirkt: 1, antwort: ['Chiara', '(hört auf zu grinsen)'] },
+    { t: '(Mit dem Tablett zu Noah setzen.)', stufe: 2, wirkt: 2, antwort: ['opfer', '(guckt hoch. Ganz kurz.)'] },
+    { t: '„Hör auf, Luca. Das ist nicht lustig.“', stufe: 3, wirkt: 2, antwort: ['taeter', 'Chill. War nur Spaß.'] },
+    { t: '(Zur Aufsicht gehen und es sagen.)', stufe: 4, wirkt: 2, antwort: ['Ayla', '(steht auf und geht mit dir)'] },
+    { t: '(Das Video melden, wenn es online ist.)', stufe: 2, wirkt: 1, antwort: ['Yusuf', '„Ich melde auch.“'] },
+    { t: '„Noah, kommst du mit raus? Korb werfen?“', stufe: 2, wirkt: 1, antwort: ['opfer', '(steht auf) … Ja.'] },
+  ],
+};
+
+// ---------- Spaß, Streit oder Mobbing? (E26 Ecken-Lauf) ----------
+const ECKEN_M = {
+  wo: 'Aula · Ecken-Lauf', titel: 'Spaß, Streit oder Mobbing?', zeit: 9,
+  info: 'Mobbing heißt: immer wieder, gegen eine Person, die sich nicht wehren kann.',
+  faecher: [{ id: 'spass', t: 'Spaß', sy: '😄', f: '#3fa66b' }, { id: 'streit', t: 'Streit', sy: '⚡', f: '#e9a23b' }, { id: 'mobbing', t: 'Mobbing', sy: '🚨', f: '#d6452f' }],
+  karten: [
+    { t: 'Ben und Jo ärgern sich gegenseitig. Beide lachen.', ziel: 'spass' },
+    { t: 'Jo und Luca streiten einmal heftig am Korb.', ziel: 'streit' },
+    { t: 'Seit Wochen postet jemand Fotos von Noah. Alle lachen, er nie.', ziel: 'mobbing' },
+    { t: 'Jemand wird aus jeder Gruppe rausgeworfen. Immer dieselbe Person.', ziel: 'mobbing' },
+    { t: 'Ayla und Lina sind sauer wegen einer Bandprobe.', ziel: 'streit' },
+    { t: 'Ein Spitzname. Die Person lacht. Aber nur, wenn alle gucken.', ziel: null, wer: F.mila, sagt: 'Schwer. Lachen heißt nicht, dass es okay ist.' },
+  ],
+  ende: 'Bei Mobbing reicht Zuschauen nicht. Jeder kleine Schritt kippt die Bühne.',
+};
+
+export const GESPRAECHE_N7 = {
+  n7_chat: [
+    ['erzaehler', 'Sonntagabend. Dein Handy ist still. Zu still. Dann kommt eine Nachricht. Dann noch eine.'],
+    { szene: 'chat', id: 'werBleibt', def: (m) => WER_BLEIBT(m),
+      ausgang: (r) => (r.flags.joFrei ? 'joFrei' : r.flags.joDruck ? 'joDruck' : r.flags.lucaSorry ? 'sorry' : 'still'),
+      folgen: {
+        joFrei: { staerke: 'klar', herz: { jo: 2 }, merke: 'joFrei' },
+        joDruck: { herz: { jo: -1 }, merke: 'joDruck' },
+        sorry: { merke: 'lucaSorry' },
+        still: {},
+      } },
+  ],
+  n7_ben: [
+    ['ben', 'Brötchen? Eins für dich. Das andere auch.'],
+    ['ben', 'Ich hab schon gegessen. Zwei.'],
+    { tu: 'n7_benStart' },
+    ['ben', 'Die neue Gruppe hat elf Leute. Die alte hat zwölf. Wir gewinnen.'],
+    { wahl: [
+      { t: '„Danke, dass du geblieben bist.“', herz: { ben: 2 }, dann: [['ben', 'Bro. Du hast mir am ersten Tag zugehört. Bei den Nuggets. Ehrenschuld.']] },
+      { t: '„Es geht nicht ums Gewinnen.“', staerke: 'klar', herz: { ben: 1 }, dann: [['ben', 'Weiß ich. Aber es fühlt sich besser an, wenn man’s zählt.']] },
+    ] },
+  ],
+  n7_skills: [
+    ['kaya', 'Wéi geet et? Heute: Streit. Jeder streitet. Die Frage ist nur: wie?'],
+    ['kaya', 'Vier Tiere. Hai, Schildkröte, Teddy, Eule. Wer reagiert wie?'],
+    { szene: 'sort', id: 'tiere', def: TIERE, ausgang: (r) => (r.antworten[5] === 'schildi' ? 'schildi' : 'eule'),
+      folgen: { schildi: { dann: [['ayla', 'Pause ist nicht abtauchen. Das sag ich jetzt zum dritten Mal.']] }, eule: {} } },
+    ['kaya', 'Und dann die Treppe. Jeder Streit hat Stufen.'],
+    ['kaya', 'Je höher, desto schwerer der Ausstieg.'],
+    ['mesenberg', 'Meinung, Sticheln, Beleidigen, Drohen, Knall. Merkt euch die Stufen.'],
+    { wahl: [
+      { t: '„Was, wenn man schon oben ist?“', staerke: 'lesen', dann: [['kaya', 'Dann zuerst runter unter 70. Abstand. Atmen. Reden kommt später.']] },
+      { t: '„Und als Zuschauer? Was kann man da machen?“', staerke: 'mut', herz: { kaya: 1 }, dann: [['kaya', 'Viel. Auf jeder Stufe gibt es einen Ausstieg. Auch für Zuschauer.']] },
+    ] },
+  ],
+  n7_druck: [
+    ['luca', 'Hey. Kein Stress. Ich will reden. Ehrlich.'],
+    ['erzaehler', 'Kenan und Dario stehen dicht dabei. Dario guckt auf seine Schuhe.'],
+    { szene: 'druck', id: 'druck', def: DRUCK, ausgang: (r) => (r.ja ? 'ja' : r.nein >= 2 ? 'nein' : 'wackel'),
+      folgen: {
+        nein: { staerke: 'neinsagen', herz: { dario: 1, kenan: 1 }, merke: 'druckNein', dann: [['erzaehler', 'Du gehst. Deine Knie sind weich. Aber du gehst.']] },
+        wackel: { merke: 'druckWackel', dann: [['erzaehler', 'Kein Ja. Kein klares Nein. Luca grinst. Er wird wiederkommen.']] },
+        ja: { herz: { noah: -2, dario: -1 }, merke: 'druckJa', dann: [['erzaehler', 'Du hast Ja gesagt. Dein Bauch sagt was anderes. Laut.'], ['erzaehler', 'Du machst das Foto nicht. Aber du hast Ja gesagt.']] },
+      } },
+    { tu: 'n7_darioDanach' },
+  ],
+  n7_streit: [
+    ['erzaehler', 'Jo hat die Gruppe verlassen. Luca hat es gemerkt.'],
+    { szene: 'treppe', id: 'treppe', def: TREPPE, ausgang: (r) => (!r.ausgestiegen ? 'knall' : r.stufe <= 2 ? 'frueh' : 'spaet'),
+      folgen: {
+        frueh: { staerke: 'ruhig', herz: { jo: 2, ben: 1 }, merke: 'treppeFrueh', dann: [['jo', 'Danke. Ich war bei 80. Mindestens.']] },
+        spaet: { staerke: 'mut', herz: { jo: 1 }, merke: 'treppeSpaet', dann: [['jo', 'Fast hätt ich … Egal. Danke.']] },
+        knall: { herz: { jo: -1 }, merke: 'treppeKnall', dann: [['mesenberg', 'Jo, Luca: mitkommen. Beide. Jetzt.'], ['erzaehler', 'Später sagt Jo: „Du hast nur zugeguckt.“ Es tut weh, weil es stimmt.']] },
+      } },
+  ],
+  n7_kantine: [
+    ['erzaehler', 'Luca steht an Noahs Tisch. Mit Handy. Kenan daneben. Alle gucken. Manche lachen.'],
+    { szene: 'buehne', id: 'buehne', def: BUEHNE, ausgang: (r) => (r.gekippt >= 4 ? 'gekippt' : r.gekippt >= 2 ? 'halb' : 'wenig'),
+      folgen: {
+        gekippt: { staerke: 'mut', herz: { noah: 3, ayla: 1, ben: 1 }, merke: 'buehneGekippt', dann: [['erzaehler', 'Luca steht plötzlich allein. Er steckt das Handy weg. Und geht.']] },
+        halb: { staerke: 'mut', herz: { noah: 2 }, merke: 'buehneHalb', dann: [['erzaehler', 'Luca lacht noch. Aber leiser. Dann geht er.']] },
+        wenig: { herz: { noah: 1 }, merke: 'buehneWenig', dann: [['erzaehler', 'Es ist schwer, allein anzufangen. Aber du hast angefangen.']] },
+      } },
+    { tu: 'n7_noahDanach' },
+  ],
+  n7_ende: [
+    ['kaya', 'Letzte Stunde der Woche. Spaß, Streit oder Mobbing? Ab in die Ecken.'],
+    { szene: 'sort', id: 'mobbing', def: ECKEN_M, ausgang: () => 'ok', folgen: { ok: {} } },
+    ['kaya', 'Wenn ihr Mobbing seht: Ihr müsst kein Held sein. Ein Schritt reicht.'],
+    ['kaya', 'Nicht mitlachen. Dazusetzen. Hilfe holen. Das sind alles Schritte.'],
+    { tu: 'n7_schluss' },
+  ],
+};
+
+export const tunN7 = (c) => ({
+  n7_benStart: () => (c.S.merke.lucaSorry ? [['ben', 'Du hast Luca „sorry“ geschrieben? Bro. Für NICHTS?'], ['ben', 'Egal. Passiert. Er hat eh nein gesagt.']] : []),
+  n7_darioDanach: () => (c.S.merke.druckNein ? [['erzaehler', 'Hinter dir Schritte. Dario.'], ['dario', '(leise) Das war … stark. Ich kann das nicht. Nein sagen. Zu ihm.']] : []),
+  n7_noahDanach: () => [
+    ['noah', '(später, draußen) Du bist gekommen. Zu meinem Tisch.'],
+    { wahl: [
+      { t: '„Immer.“', herz: { noah: 1 }, dann: [['noah', 'Sag nicht immer. Sag: heute. Heute reicht.']] },
+      { t: '„Sollen wir es Herrn Kuedes sagen? Zusammen?“', staerke: 'hilfe', herz: { noah: 1, kaya: 1 }, merke: 'mobbingGemeldet', dann: [['noah', 'Zusammen. Ja. Allein schaff ich das nicht.']] },
+    ] },
+  ],
+  n7_schluss: () => [
+    { szene: 'stempel', def: { modul: 'Modul 6 · Wenn es schwierig wird', titel: 'Standgehalten',
+      gelernt: ['Vier Tiere im Streit – und welches gerade hilft', 'Die Konflikt-Treppe und ihre Ausstiege', 'Nein sagen, wenn die Gruppe drückt', 'Spaß, Streit und Mobbing unterscheiden', 'Die Bühne kippen: ein Schritt reicht'],
+      mission: 'Wenn du diese Woche siehst, dass jemand fertiggemacht wird: einen Schritt machen. Nicht mitlachen zählt auch.' }, folgen: {} },
+    ['erzaehler', 'Samstag. @annexe.cam postet ein Video. Mme Tidderich tanzt. Auf dem Pult. Mit Enten-Krawatte.'],
+    ['erzaehler', 'Es hat schon 300 Herzen. Ben schreibt: „DAS IST KI. GUCKT DIE HÄNDE AN.“'],
+    { tu: 'kapitelEnde' },
+  ],
+});

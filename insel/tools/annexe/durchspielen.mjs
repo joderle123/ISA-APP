@@ -9,10 +9,10 @@ const DIST = join(dirname(fileURLToPath(import.meta.url)), '..', '..', 'dist', '
 const args = process.argv.slice(2);
 const wahl = (args.find((a) => a.startsWith('--wahl=')) || '--wahl=zufall').slice(7);
 const bilder = (args.find((a) => a.startsWith('--bilder=')) || '').slice(9);
-const KAP = args.filter((a) => /^\d$/.test(a)).map(Number);
+const KAP = args.filter((a) => /^\d+$/.test(a)).map(Number);
 const browser = await launch();
 let gesamtFehler = 0;
-for (const kap of KAP.length ? KAP : [1, 2, 3, 4, 5, 6, 7]) {
+for (const kap of KAP.length ? KAP : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) {
   const page = await (await browser.newContext({ viewport: { width: 1000, height: 640 } })).newPage();
   page.setDefaultTimeout(120000);
   const fehler = []; page.on('pageerror', (e) => fehler.push(String(e))); page.on('console', (m) => { if (m.type() === 'error') fehler.push(m.text()); });
@@ -28,7 +28,7 @@ for (const kap of KAP.length ? KAP : [1, 2, 3, 4, 5, 6, 7]) {
     const z = await page.evaluate(() => ({ s: LYCEE.schritt, kap: (LYCEE.daten.SCHRITTE.find((x) => x.id === LYCEE.schritt) || {}).kap || 1, fertig: !!LYCEE.zustand.fertig, ende: !!document.querySelector('.ly-ebene[data-art="ende"]:not([hidden])') }));
     if (z.s !== letzter) { besucht.push(z.s); letzter = z.s; seit = Date.now(); if (bilder) await page.screenshot({ path: join(bilder, 'k' + kap + '-' + besucht.length + '-' + z.s + '.png') }); }
     if (z.kap !== kap || z.ende || z.fertig) { ende = true; break; }
-    if (Date.now() - seit > 90000) { haengt = z.s; break; }
+    if (Date.now() - seit > 90000) { haengt = z.s; if (bilder) await page.screenshot({ path: join(bilder, 'k' + kap + '-haengt.png') }); break; }
   }
   gesamtFehler += fehler.length;
   console.log('Kapitel ' + kap + ': ' + (ende ? '✓ bis zum Ende' : '✗ nicht fertig' + (haengt ? ' – hängt bei „' + haengt + '“' : '')) + ' · ' + besucht.length + ' Schritte · ' + Math.round((Date.now() - t0) / 1000) + ' s · Konsolenfehler: ' + fehler.length + (fehler.length ? ' → ' + JSON.stringify(fehler.slice(0, 3)) : ''));

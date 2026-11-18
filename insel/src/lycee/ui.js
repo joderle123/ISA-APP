@@ -1146,14 +1146,14 @@ export function createUI({ root, input, speech }) {
   ui.rueckblick = (titel, untertitel, eintraege) => new Promise((ok) => {
     const k = ebeneAuf('bild', '<h2>' + esc(titel) + '</h2><p>' + esc(untertitel) + '</p>' + (eintraege.length ? '<div class="ly-t-kicker">Was hängen bleibt</div><ul class="ly-rb">' +
       eintraege.map((e) => '<li><span class="ly-j-name" style="--f:' + esc(e.farbe) + '">' + esc(e.name) + '</span><b class="' + (e.n > 0 ? 'auf' : 'ab') + '">' + (e.n > 0 ? (e.n > 1 ? 'mag dich mehr' : 'mag dich ein bisschen mehr') : (e.n < -1 ? 'ist sauer auf dich' : 'ist etwas kühler')) + '</b></li>').join('') + '</ul>' : ''));
-    let zu = false; const fertig = () => { if (zu) return; zu = true; ebeneZu(); ok(); };
+    let zu = false; const fertig = () => { if (zu) return; zu = true; if (ebene.contains(k)) ebeneZu(); ok(); };   // nur schließen, wenn noch die eigene Karte offen ist
     k.onclick = fertig; setTimeout(fertig, eintraege.length ? 4200 : 2400);
   });
 
   // Plakat-Arbeit: kurzes Zwischenbild
   ui.bild = (titel, text, sek = 2.4) => new Promise((ok) => {
-    ebeneAuf('bild', '<h2>' + esc(titel) + '</h2><p>' + esc(text) + '</p>');
-    setTimeout(() => { ebeneZu(); ok(); }, sek * 1000);
+    const k = ebeneAuf('bild', '<h2>' + esc(titel) + '</h2><p>' + esc(text) + '</p>');
+    setTimeout(() => { if (ebene.contains(k)) ebeneZu(); ok(); }, sek * 1000);
   });
 
   // Joystick-Bild (Touch)
