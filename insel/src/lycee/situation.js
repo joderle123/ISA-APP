@@ -104,7 +104,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
     const zeig = (n) => {
       const ich = n.ich;
       const html = n.system ? '<div class="ly-h-sys">' + esc(ersetze(n.text)) + '</div>'
-        : '<div class="ly-h-msg' + (ich ? ' ich' : '') + '"><b>' + esc(ich ? 'Du' : n.wer) + '</b>' + (n.bild ? '<div class="ly-h-bild sz-foto">📷 ' + esc(n.bild) + '</div>' : '') + '<span>' + esc(ersetze(n.text)) + '</span>' +
+        : '<div class="ly-h-msg' + (ich ? ' ich' : '') + '"><b>' + esc(ich ? 'Du' : n.wer) + '</b>' + (n.bild ? '<div class="ly-h-bild sz-foto">📷 ' + esc(ersetze(n.bild)) + '</div>' : '') + '<span>' + esc(ersetze(n.text)) + '</span>' +
           (n.lacher ? '<i class="ly-h-reakt" data-l="' + lach.length + '">😂 ' + n.lacher.start + '</i>' : '') + '</div>';
       verlauf.insertAdjacentHTML('beforeend', html); verlauf.scrollTop = verlauf.scrollHeight;
       if (n.lacher) lach.push({ ...n.lacher, n: n.lacher.start, el: verlauf.querySelector('[data-l="' + (lach.length) + '"]') });
@@ -672,7 +672,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
       for (let n = 0; n < def.karten.length; n++) {
         const c = def.karten[n];
         zahl.textContent = (n + 1) + ' / ' + def.karten.length;
-        karte.textContent = ersetze(c.t); if (karte.animate) karte.animate([{ transform: 'scale(.7) translateY(20px)', opacity: 0 }, { transform: 'none', opacity: 1 }], { duration: 180, easing: 'ease-out' });
+        karte.textContent = ersetze(c.t); karte.classList.remove('neu'); void karte.offsetWidth; karte.classList.add('neu');
         const html = F.map((f, j) => '<button type="button" data-i="' + j + '" style="--f:' + esc(f.f || '#2b3a55') + '"><span>' + (f.sy ? f.sy + ' ' : '') + esc(f.t) + (F.length <= 9 ? ' <kbd>' + (zwei ? (j ? '→' : '←') : j + 1) + '</kbd>' : '') + '</span></button>').join('');
         const pfeil = zwei ? halte((e) => { if (e.code === 'ArrowLeft' || e.code === 'ArrowRight') { e.preventDefault(); e.stopPropagation(); const b = faecher.querySelector('[data-i="' + (e.code === 'ArrowLeft' ? 0 : 1) + '"]'); if (b) b.click(); } }) : null;
         const j = await karteWahl(faecher, html, F.length, { zeit: def.zeit || 6, still: null, zeitEl });
@@ -1028,6 +1028,139 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
     zeig();
     karten.innerHTML = '<button type="button" class="sz-weiter" data-a="w">Koffer zu <kbd>E</kbd></button>'; karten.querySelector('[data-a="w"]').onclick = weiter;
     halte((e) => { if (e.code === 'KeyE' || e.code === 'Enter') { e.preventDefault(); e.stopPropagation(); weiter(); } });
+  });
+
+  // ---------- Kurs Modul 4 (Meine Gedanken) ----------
+  // Gedanken-Weiche (E16 Kopfkino): Eine Situation fährt auf eine Weiche zu. Du stellst sie auf einen Gedanken –
+  // und siehst, wohin der Zug fährt: Gefühl → Körper → was du tust → was passiert. Danach darfst du zurückspulen.
+  // def: { wo, situation, gedanken: [{ t, gefuehl, koerper, tun, folge }] } → { gewaehlt: [i…], final: i }
+  ui.gedankenWeiche = (def) => new Promise((ok) => {
+    const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || '') + '</span><b>🚂 Gedanken-Weiche</b></div>' +
+      '<div class="sz-fall" style="--f:#2b3a55"><p>' + esc(ersetze(def.situation)) + '</p></div><p class="sz-info sz-gw-info">Welcher Gedanke kommt? Stell die Weiche.</p>' +
+      '<div class="sz-gleis"></div><div class="sz-karten ly-d-optionen"></div></div>');
+    const gleis = k.querySelector('.sz-gleis'), karten = k.querySelector('.sz-karten'), info = k.querySelector('.sz-gw-info');
+    const gewaehlt = [];
+    const fahre = async (g) => {
+      const st = [['💭 Gedanke', g.t], ['❤️ Gefühl', g.gefuehl], ['🫀 Körper', g.koerper], ['🏃 Du', g.tun], ['➡️ Dann', g.folge]];
+      gleis.innerHTML = st.map(([a, b], i) => '<div class="sz-station" data-i="' + i + '"><small>' + a + '</small><span>' + esc(ersetze(b)) + '</span></div>').join('<i class="sz-schiene"></i>');
+      for (let i = 0; i < st.length; i++) { await warte(i ? lesezeit(st[i - 1][1]) * 0.8 : 300); gleis.querySelector('[data-i="' + i + '"]').classList.add('an'); }
+      await warte(lesezeit(st[st.length - 1][1]));
+    };
+    const wahlHtml = (nur) => def.gedanken.map((g, i) => (nur && !nur.includes(i)) ? '' : '<button type="button" data-i="' + i + '"><small>Gedanke ' + 'ABC'[i] + '</small><span>„' + esc(ersetze(g.t)) + '“</span></button>').join('');
+    (async () => {
+      let i = await karteWahl(karten, wahlHtml(), def.gedanken.length); karten.innerHTML = ''; gewaehlt.push(i); info.textContent = 'Der Zug fährt …';
+      await fahre(def.gedanken[i]);
+      info.textContent = 'Zurückspulen? Gleiche Situation, anderer Gedanke.';
+      const rest = def.gedanken.map((_, j) => j).filter((j) => j !== i);
+      const j = await karteWahl(karten, '<button type="button" data-i="0"><span>⏪ Anderen Gedanken ausprobieren</span></button><button type="button" data-i="1"><span>So lassen</span></button>', 2);
+      let final = i;
+      if (j === 0) {
+        info.textContent = 'Welcher andere Gedanke?';
+        const w = await karteWahl(karten, rest.map((r, n) => '<button type="button" data-i="' + n + '"><small>Gedanke ' + 'ABC'[r] + '</small><span>„' + esc(ersetze(def.gedanken[r].t)) + '“</span></button>').join(''), rest.length);
+        const b = rest[w]; karten.innerHTML = ''; gewaehlt.push(b); info.textContent = 'Der Zug fährt …'; await fahre(def.gedanken[b]);
+        info.textContent = 'Mit welchem Gedanken gehst du wirklich rein?';
+        const f = await karteWahl(karten, [i, b].map((x, n) => '<button type="button" data-i="' + n + '"><span>„' + esc(ersetze(def.gedanken[x].t)) + '“</span></button>').join(''), 2);
+        final = [i, b][f];
+      }
+      karten.innerHTML = ''; info.textContent = 'Gleiche Situation. Anderer Gedanke. Anderer Tag.';
+      weiterKnopf(karten, { gewaehlt, final }, ok);
+    })();
+  });
+
+  // Bohnen-Wette (E17): Fünf Bohnen, anonym auf bremsende Sätze verteilen, die man von sich kennt. Dann sieht man die Becher
+  // der ganzen Klasse. Botschaft: Viele kennen dieselben Sätze. def: { saetze: [t…], klasse: [n…] } → { bohnen: [n…], top }
+  ui.bohnenWette = (def) => new Promise((ok) => {
+    const b = def.saetze.map(() => 0); let frei = 5;
+    const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || 'Aula') + '</span><b>🫘 Bohnen-Wette</b></div>' +
+      '<p class="sz-info">Anonym. Niemand sieht, wo deine Bohnen landen. Leg sie zu Sätzen, die du von dir selbst kennst. Antippen = Bohne rein, noch mal = raus.</p>' +
+      '<div class="sz-becher"></div><div class="sz-karten"></div></div>');
+    const box = k.querySelector('.sz-becher'), karten = k.querySelector('.sz-karten');
+    let zeigeKlasse = false;
+    const zeig = () => {
+      const max = Math.max(1, ...def.klasse.map((n, i) => n + b[i]));
+      box.innerHTML = def.saetze.map((t, i) => '<button type="button" data-i="' + i + '"' + (zeigeKlasse ? ' disabled' : '') + '><span>„' + esc(t) + '“</span><i>' + '🫘'.repeat(b[i]) + '</i>' +
+        (zeigeKlasse ? '<em style="width:' + Math.round((def.klasse[i] + b[i]) / max * 100) + '%"></em><b>' + (def.klasse[i] + b[i]) + '</b>' : '') + '</button>').join('');
+      box.querySelectorAll('[data-i]').forEach((x) => { x.onclick = () => { const i = +x.dataset.i; if (frei > 0) { b[i]++; frei--; } else if (b[i]) { b[i]--; frei++; } zeig(); }; });
+      if (!zeigeKlasse) { karten.innerHTML = '<div class="sz-sys">Noch ' + frei + ' 🫘' + (frei ? '' : ' · antippen nimmt eine zurück') + '</div><button type="button" class="ly-link" data-a="neu">Alle zurück</button><button type="button" class="sz-weiter" data-a="w">Becher leeren <kbd>E</kbd></button>'; karten.querySelector('[data-a="neu"]').onclick = () => { b.fill(0); frei = 5; zeig(); }; }
+      const w = karten.querySelector('[data-a="w"]'); if (w) w.onclick = weiter;
+    };
+    const weiter = () => {
+      if (!zeigeKlasse) {
+        zeigeKlasse = true; loesche(); zeig();
+        const top = def.klasse.map((n, i) => n + b[i]).reduce((m, n, i, a) => (n > a[m] ? i : m), 0);
+        weiterKnopf(karten, { bohnen: b, top }, ok, '<div class="sz-sys">' + esc('Die meisten Bohnen: „' + def.saetze[top] + '“. Du bist mit keinem Satz allein.') + '</div>');
+        return;
+      }
+    };
+    zeig();
+    halte((e) => { if ((e.code === 'KeyE' || e.code === 'Enter') && !zeigeKlasse) { e.preventDefault(); e.stopPropagation(); weiter(); } });
+  });
+
+  // Beweis-Waage (E18 Kritischer Detektiv): Ein Satz steht auf dem Prüfstand. Hinweise kommen; jeder ist ein Beweis DAFÜR,
+  // DAGEGEN oder KEIN Beweis (nur Gefühl, Spruch, Vermutung). Die Waage kippt. Am Ende: Wie sehr glaubst du den Satz jetzt?
+  // def: { wo, satz, vorher, hinweise: [{ t, art: 'dafuer'|'dagegen'|'kein', warum }] } → { vorher, nachher, richtig, dafuer, dagegen }
+  ui.beweisWaage = (def) => new Promise((ok) => {
+    const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || '') + '</span><b>🔍 Kritischer Detektiv</b></div>' +
+      '<div class="sz-fall" style="--f:#b5485d"><b>Auf dem Prüfstand</b><p>„' + esc(ersetze(def.satz)) + '“</p></div>' +
+      '<div class="sz-waage"><div class="sz-w-balken"><div class="sz-w-schale l"><small>dafür</small><div></div></div><div class="sz-w-schale r"><small>dagegen</small><div></div></div></div><i class="sz-w-fuss"></i></div>' +
+      '<div class="sz-sort-karte sz-spur"></div><div class="sz-bühne"></div><div class="sz-karten sz-raster ly-d-optionen"></div></div>');
+    const balken = k.querySelector('.sz-w-balken'), L = k.querySelector('.sz-w-schale.l div'), R = k.querySelector('.sz-w-schale.r div'), spur = k.querySelector('.sz-spur'), bühne = k.querySelector('.sz-bühne'), karten = k.querySelector('.sz-karten');
+    let dafuer = 0, dagegen = 0, richtig = 0;
+    const kipp = () => { balken.style.transform = 'rotate(' + Math.max(-14, Math.min(14, (dagegen - dafuer) * 4)) + 'deg)'; };
+    const regler = (text) => new Promise((fertig) => {
+      karten.innerHTML = '<label class="sz-glaube"><span>' + esc(text) + '</span><input type="range" min="0" max="100" step="10" value="' + (def.vorher || 80) + '"><b>' + (def.vorher || 80) + ' %</b></label><button type="button" class="sz-weiter" data-a="w">So sehr <kbd>E</kbd></button>';
+      const r = karten.querySelector('input'), z = karten.querySelector('.sz-glaube b');
+      r.addEventListener('keydown', (e) => e.stopPropagation()); r.oninput = () => { z.textContent = r.value + ' %'; };
+      const fertig2 = () => { loesche(); fertig(+r.value); };
+      karten.querySelector('[data-a="w"]').onclick = fertig2;
+      halte((e) => { if (e.code === 'KeyE' || e.code === 'Enter') { e.preventDefault(); e.stopPropagation(); fertig2(); } });
+    });
+    (async () => {
+      const vorher = await regler('Wie sehr glaubst du den Satz gerade?');
+      for (const h of def.hinweise) {
+        spur.textContent = ersetze(h.t); bühne.innerHTML = '';
+        const j = await karteWahl(karten, '<button type="button" data-i="0" style="--f:#b5485d"><span>⚖️ Beweis dafür</span></button><button type="button" data-i="1" style="--f:#3fa66b"><span>⚖️ Beweis dagegen</span></button><button type="button" data-i="2" style="--f:#8a93a3"><span>💨 Kein Beweis</span></button>', 3);
+        karten.innerHTML = '';
+        const art = ['dafuer', 'dagegen', 'kein'][j];
+        if (art === h.art) richtig++;
+        if (h.art === 'dafuer') { dafuer++; L.insertAdjacentHTML('beforeend', '<i>■</i>'); } else if (h.art === 'dagegen') { dagegen++; R.insertAdjacentHTML('beforeend', '<i>■</i>'); }
+        kipp();
+        bühne.innerHTML = '<div class="sz-sys">' + (art === h.art ? '✓ ' : '') + esc(ersetze(h.warum)) + '</div>';
+        await warte(lesezeit(h.warum, 'x x x'));
+      }
+      spur.textContent = ''; spur.style.display = 'none';
+      bühne.innerHTML = '<div class="sz-sys">Dafür: ' + dafuer + ' · Dagegen: ' + dagegen + '</div>';
+      const nachher = await regler('Und jetzt? Wie sehr glaubst du den Satz noch?');
+      weiterKnopf(karten, { vorher, nachher, richtig, dafuer, dagegen }, ok, '<div class="sz-sys">Vorher ' + vorher + ' % · jetzt ' + nachher + ' %</div>');
+    })();
+  });
+
+  // Satz-Bau (E18 Prüfstand): Aus Bausteinen einen neuen, hilfreichen Satz bauen. Sechs Regeln werden live geprüft
+  // (realistisch, keine „immer/nie“, freundlich, Ich-Form, ein nächster Schritt, man glaubt ihn wenigstens ein bisschen).
+  // def: { alt, teile: [[{ t, regeln: { … } }…] × 3] } → { satz, regeln: n }
+  ui.satzBau = (def) => new Promise((ok) => {
+    const wahl = def.teile.map(() => -1);
+    const REG = [['real', 'realistisch'], ['ohneImmer', 'kein „immer/nie/alle“'], ['freundlich', 'freundlich zu dir'], ['schritt', 'mit einem nächsten Schritt']];
+    const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || '') + '</span><b>🔧 Neuer Satz</b></div>' +
+      '<div class="sz-fall" style="--f:#8a93a3"><b>Alter Satz</b><p>„' + esc(ersetze(def.alt)) + '“</p></div>' +
+      '<div class="sz-satz"></div><div class="sz-regeln"></div><div class="sz-teile"></div><div class="sz-karten"></div></div>');
+    const satz = k.querySelector('.sz-satz'), regeln = k.querySelector('.sz-regeln'), teile = k.querySelector('.sz-teile'), karten = k.querySelector('.sz-karten');
+    const pruef = () => { const r = {}; REG.forEach(([id]) => { r[id] = wahl.every((w, i) => w >= 0 && def.teile[i][w].regeln[id] !== false) && wahl.some((w, i) => w >= 0 && def.teile[i][w].regeln[id]); }); return r; };
+    const zeig = () => {
+      satz.innerHTML = wahl.map((w, i) => '<span class="' + (w < 0 ? 'leer' : '') + '">' + (w < 0 ? '…' : esc(ersetze(def.teile[i][w].t))) + '</span>').join(' ');
+      const r = pruef(); regeln.innerHTML = REG.map(([id, n]) => '<i class="' + (r[id] ? 'ok' : '') + '">' + (r[id] ? '✓' : '○') + ' ' + n + '</i>').join('');
+      teile.innerHTML = def.teile.map((reihe, i) => '<div>' + reihe.map((t, j) => '<button type="button" data-i="' + i + '" data-j="' + j + '" class="' + (wahl[i] === j ? 'an' : '') + '">' + esc(ersetze(t.t)) + '</button>').join('') + '</div>').join('');
+      teile.querySelectorAll('[data-j]').forEach((b) => { b.onclick = () => { wahl[+b.dataset.i] = +b.dataset.j; zeig(); }; });
+      karten.innerHTML = wahl.every((w) => w >= 0) ? '<button type="button" class="sz-weiter" data-a="w">Das ist mein Satz <kbd>E</kbd></button>' : '';
+      const w = karten.querySelector('[data-a="w"]'); if (w) w.onclick = fertig;
+    };
+    const fertig = () => {
+      if (wahl.some((w) => w < 0)) wahl.forEach((w, i) => { if (w < 0) wahl[i] = def.teile[i].findIndex((t) => Object.values(t.regeln).every(Boolean)); });
+      loesche(); ui.ebeneZu(); const r = pruef();
+      ok({ satz: wahl.map((w, i) => ersetze(def.teile[i][w].t)).join(' '), regeln: Object.values(r).filter(Boolean).length, wahl });
+    };
+    zeig();
+    halte((e) => { if (e.code === 'KeyE' || e.code === 'Enter') { e.preventDefault(); e.stopPropagation(); if (wahl.every((w) => w >= 0) || e.code === 'KeyE') fertig(); } });
   });
 
   return ui;

@@ -6,7 +6,7 @@ import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 export const LYCEE = join(dirname(fileURLToPath(import.meta.url)), '..', '..', 'src', 'lycee');
-export const DATEIEN = ['story/kapitel1.js', 'story/kapitel2.js', 'story/kapitel3.js', 'story/kapitel4.js', 'geschichte.js', 'kapitel2.js', 'kapitel3.js', 'kapitel4.js', 'kapitel5.js', 'kapitel6.js', 'kapitel7.js', 'faeden.js', 'freunde.js', 'spiel.js', 'stimmen.js', 'welttexte.js'];
+export const DATEIEN = ['story/kapitel1.js', 'story/kapitel2.js', 'story/kapitel3.js', 'story/kapitel4.js', 'story/kapitel5.js', 'geschichte.js', 'kapitel2.js', 'kapitel3.js', 'kapitel4.js', 'kapitel5.js', 'kapitel6.js', 'kapitel7.js', 'faeden.js', 'freunde.js', 'spiel.js', 'stimmen.js', 'welttexte.js'];
 
 const ZEILE = /\[\s*'([a-z][a-z0-9_]*)'\s*,\s*'((?:[^'\\]|\\.)*)'\s*\]/g;   // ['wer', 'Text']
 const WAHL = /\bt:\s*'((?:[^'\\]|\\.)*)'/g;                                   // { t: 'Antwort' }

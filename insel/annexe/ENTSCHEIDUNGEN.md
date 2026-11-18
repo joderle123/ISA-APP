@@ -170,3 +170,10 @@ Ziel war ≤ 200 Aufrufe und ≤ 400k Dreiecke – überall erreicht. Was es geb
 - Bedienung wie in Basketball-Spielen: halten = Wurf aufbauen (Balken rechts), loslassen im grünen Bereich, nach oben
   wischen = Richtung (PC: Leertaste halten, Pfeile). Rückmeldung „Perfekter Release“, „Etwas früh/spät“, „Swish“.
 - Modi: Freiwürfe, Dreier (drei Positionen), H-O-R-S-E gegen Ben. Das alte flache Spiel bleibt im Code (ui.freiwurf2d).
+
+## 18.11. (Nacht) – Kapitel 5 „Meine Gedanken“
+- Modul 4 (E16–E19) als Kapitel: Der gefälschte Screenshot macht einen selbst zum „Admin“. Gedanken-Weiche vor der Tür
+  (gleiche Situation, drei Gedanken, drei Tage), Sortier-Duell hilfreich/bremsend, anonyme Bohnen-Wette („mit keinem Satz
+  allein“), Kritischer Detektiv mit Beweis-Waage (Tatsache, Gefühl, Spruch), neuer Satz nach Regeln (realistisch, ohne
+  „alle/nie“, freundlich, nächster Schritt), Mutprobe in der Kantine gegen Luca. Die kleine Lüge mit dem Handy aus
+  Kapitel 4 hat Folgen (kein Alibi). Fakten gehen an Erwachsene, nicht in den Chat.
