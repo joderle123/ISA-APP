@@ -21,10 +21,11 @@ await page.goto('file://' + DIST + '?test&start=1&figur=1');
 await page.waitForFunction(() => window.LYCEE && LYCEE.zustand && LYCEE.ia);
 for (let i = 0; i < 120 && await L(() => LYCEE.imGespraech || !!document.querySelector('.ly-dialog:not([hidden]), .ly-ebene:not([hidden])')); i++) { const w = await L(() => { const b = document.querySelector('.ly-ebene:not([hidden]) [data-a="w"], .ly-ebene:not([hidden]) [data-a="weg"]'); if (b) { b.click(); return true; } return false; }); if (!w) await page.keyboard.press('KeyE'); await page.waitForTimeout(250); }
 await page.waitForFunction(() => !LYCEE.imGespraech);
-const geheZu = (f) => L((f) => {
+// Nach jeder Aktion ist E 0,35 s gesperrt (gegen Doppeldrücken) – darum kurz warten, bevor der Test E drückt
+const geheZu = async (f) => { const r = await L((f) => {
   const i = LYCEE.ia.liste.find((x) => x.tu === f.tu && (!f.near || Math.hypot(x.x - f.near[0], x.z - f.near[1]) < 3));
   LYCEE.steuerung.sitzt = false; LYCEE.teleport({ x: i.x + 0.15, z: i.z + 0.15 }); return [i.x, i.z];
-}, f);
+}, f); await page.waitForTimeout(500); return r; };
 
 check('Viele Sitzplätze (Stühle und Bänke)', (await L(() => LYCEE.ia.liste.filter((i) => i.tu === 'sitzen').length)) > 150);
 await geheZu({ tu: 'sitzen', near: [2, -37.3] }); await page.waitForFunction(() => LYCEE.iaNah === 'sitzen', null, { timeout: 30000 }).catch(() => {});
@@ -198,7 +199,7 @@ await L(() => { LYCEE.rede('ben'); });
 await page.waitForFunction(() => LYCEE.imGespraech, null, { timeout: 10000 }).catch(() => {});
 check('Im selben Abschnitt: nur kurz plaudern', !/Geschäftsmodell|Investor/.test(await page.textContent('.ly-dialog')) && (await L(() => LYCEE.zustand.faeden.ben)) === 1);
 // (manchmal fragt Ben zufällig „Weißt du noch?“ – dann eine Antwort anklicken)
-for (let i = 0; i < 14 && await L(() => LYCEE.imGespraech); i++) { if (await page.isVisible('.ly-d-optionen button')) await page.click('.ly-d-optionen button'); else await page.keyboard.press('KeyE'); await page.waitForTimeout(250); }
+for (let i = 0; i < 20 && await L(() => LYCEE.imGespraech); i++) { const opt = await page.$$('.ly-d-optionen button'); if (opt.length) await opt[i % opt.length].click(); else await page.keyboard.press('KeyE'); await page.waitForTimeout(300); }
 
 // Tischtennis auf dem Hof: Spiel öffnet sich; ohne Schlag sind die drei Bälle weg, das Spiel endet von selbst
 await geheZu({ tu: 'tischtennis' }); await page.waitForFunction(() => LYCEE.iaNah === 'tischtennis', null, { timeout: 30000 }).catch(() => {});
