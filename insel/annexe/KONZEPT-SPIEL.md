@@ -63,7 +63,7 @@ Aufgelöst wird es in Kapitel 10. (Hinter dem Account: Dario, der dazugehören w
 | 3 | M2 Gefühle verstehen | Sportfest, das Mila-Foto | Pantomime, Sechs Ecken, Live-Chat, Spuren-Wand, Körper-Karte, Gefühls-Pult, Frühwarn-Radar, Synchronstudio, Mischpult | Erste Spur: der Winkel von links |
 | 4 | M3 Gefühle regulieren | Bus verpasst, Mathe-Test, Noah bei Rot | Anspannungs-Thermometer, Zonen-Wette, Skills-Koffer, Test mit Puls, Gemeinsam atmen, Hitze-Duell mit Dario | Handy-Kiste: alle Handys der 7P2 waren weg – wer war um 8:34 im Flur? Ende: gefälschter Screenshot macht DICH zum Admin |
 | 5 | M4 Meine Gedanken | Der Fake-Screenshot: „Alle halten mich dafür“ | Live-Chat, Gedanken-Weiche, Sortier-Duell, Bohnen-Wette, Beweis-Waage, Satz-Bau, Hitze-Duell mit Luca | Spur „Handy von L.“, Dario: „Der Screenshot war nicht von mir.“ Ende: Mila weiß, wer den Fake gebaut hat |
-| 6 | M5 Kommunikation & Grenzen | Foto ohne Frage, Umarmung | Stopp-Jury, Ich-Botschaft-Bau, Abstand | Wer glaubt dir? |
+| 6 | M5 Kommunikation & Grenzen | Klassenfoto, Gruppenumarmung, Luca filmt Mila | Stopp-Abstand, Ich-Botschaft bauen, Live-Chat (Sprachnachricht), Zuhören mit Jo, Stopp bauen | Luca hat den Fake gebaut, die Idee kam aus Jos Witz-Sprachnachricht. Ende: Rauswurf aus dem Klassenchat |
 | 7 | M6 Wenn es schwierig wird | Rauswurf aus dem Chat | Konflikt-Treppe, Druck-Runde, Bühne kippen | Allein – wer bleibt? |
 | 8 | M7 Digitale Welt | Fake-Bild von Mme Tidderich | Echt oder KI?, Algorithmus-Duell, Spuren-Wand | Die Falle wird gestellt |
 | 9 | M8 Gesund & stark | Nächte am Handy, Akku leer | Rucksack-Rennen, Akku-Tag | Dario wird unruhig |

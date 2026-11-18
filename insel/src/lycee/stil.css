@@ -680,3 +680,15 @@ kbd { display: inline-block; min-width: 1.5em; padding: 0 .35em; margin-right: .
 .sz-wr-leute button i { grid-row: span 2; width: 34px; height: 34px; border-radius: 50%; background: var(--f); color: #fff; font-style: normal; font-weight: 900; display: grid; place-items: center; }
 .sz-wr-leute button b { font-size: 14.5px; } .sz-wr-leute button small { font-size: 12px; color: #5b6472; font-weight: 700; line-height: 1.2; }
 .sz-wr-leute button[disabled] { opacity: .35; cursor: default; }
+
+/* Kapitel 6: Stopp-Abstand, Stopp bauen */
+.sz-bahn { position: relative; height: 64px; background: linear-gradient(90deg, #eef1f6, #dfe5ee); border-radius: 14px; margin: 4px 0; }
+.sz-bahn i { position: absolute; top: 12px; width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; color: #fff; font-style: normal; font-weight: 900; }
+.sz-bahn-ich { right: 10px; background: #2b3a55; font-size: 12px; }
+.sz-bahn-er { left: 0; background: var(--f, #888); }
+.sz-bahn-m { position: absolute; left: 50%; bottom: -20px; transform: translateX(-50%); font-weight: 900; font-size: 13px; color: #5b6472; }
+.sz-karten .sz-stopp, .sz-stopp { width: 100%; align-items: center; justify-content: center; text-align: center; color: #fff !important; min-height: 58px; border: 0; border-radius: 16px; background: #d6452f; color: #fff; font: inherit; font-weight: 900; font-size: 20px; cursor: pointer; box-shadow: 0 4px 0 #9e2f1f; }
+.sz-abstaende { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; }
+.sz-abstaende span { border: 2px solid var(--f); border-radius: 999px; padding: 4px 12px; font-weight: 800; font-size: 14px; background: #fff; }
+.sz-abstaende b { color: var(--f); margin-right: 6px; }
+.sz-teil-t { display: block; width: 100%; font-size: 11px; font-weight: 900; letter-spacing: .8px; text-transform: uppercase; color: #8a93a3; }

@@ -1140,9 +1140,9 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
   // def: { alt, teile: [[{ t, regeln: { … } }…] × 3] } → { satz, regeln: n }
   ui.satzBau = (def) => new Promise((ok) => {
     const wahl = def.teile.map(() => -1);
-    const REG = [['real', 'realistisch'], ['ohneImmer', 'kein „immer/nie/alle“'], ['freundlich', 'freundlich zu dir'], ['schritt', 'mit einem nächsten Schritt']];
-    const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || '') + '</span><b>🔧 Neuer Satz</b></div>' +
-      '<div class="sz-fall" style="--f:#8a93a3"><b>Alter Satz</b><p>„' + esc(ersetze(def.alt)) + '“</p></div>' +
+    const REG = def.regeln || [['real', 'realistisch'], ['ohneImmer', 'kein „immer/nie/alle“'], ['freundlich', 'freundlich zu dir'], ['schritt', 'mit einem nächsten Schritt']];
+    const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || '') + '</span><b>' + esc(def.titel || '🔧 Neuer Satz') + '</b></div>' +
+      '<div class="sz-fall" style="--f:#8a93a3"><b>' + esc(def.altTitel || 'Alter Satz') + '</b><p>„' + esc(ersetze(def.alt)) + '“</p></div>' +
       '<div class="sz-satz"></div><div class="sz-regeln"></div><div class="sz-teile"></div><div class="sz-karten"></div></div>');
     const satz = k.querySelector('.sz-satz'), regeln = k.querySelector('.sz-regeln'), teile = k.querySelector('.sz-teile'), karten = k.querySelector('.sz-karten');
     const pruef = () => { const r = {}; REG.forEach(([id]) => { r[id] = wahl.every((w, i) => w >= 0 && def.teile[i][w].regeln[id] !== false) && wahl.some((w, i) => w >= 0 && def.teile[i][w].regeln[id]); }); return r; };
@@ -1194,6 +1194,73 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
       zettel.innerHTML = ''; info.textContent = '';
       weiterKnopf(karten, { richtig, versuche }, ok, '<div class="sz-sys">' + richtig.length + ' von ' + def.zettel.length + ' gleich erkannt. Jetzt kennst du schon ein bisschen von allen.</div>');
     })();
+  });
+
+  // ---------- Kurs Modul 5 (Kommunikation und Grenzen) ----------
+  // Stopp-Abstand (E22): Jemand geht langsam auf dich zu. Du sagst „Stopp“, wenn es sich richtig anfühlt.
+  // Danach siehst du: Der Abstand ist bei jedem Menschen anders – und jeder ist okay. Die Person nimmt das Stopp an.
+  // def: { wo, leute: [{ id, name, farbe, okay, zuNah }] } → { abstaende: { id: Meter } }
+  ui.stoppAbstand = (def) => new Promise((ok) => {
+    const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || '') + '</span><b>✋ Stopp-Abstand</b></div>' +
+      '<p class="sz-info">Die Person kommt langsam auf dich zu. Sag „Stopp“, sobald es sich richtig anfühlt. Es gibt kein Falsch.</p>' +
+      '<div class="sz-bahn"><i class="sz-bahn-ich">Du</i><i class="sz-bahn-er"></i><div class="sz-bahn-m"></div></div>' +
+      '<div class="sz-bühne"></div><div class="sz-karten"><button type="button" class="sz-stopp" data-a="stopp">✋ Stopp <kbd>Leertaste</kbd></button></div></div>');
+    const er = k.querySelector('.sz-bahn-er'), mEl = k.querySelector('.sz-bahn-m'), bühne = k.querySelector('.sz-bühne'), karten = k.querySelector('.sz-karten');
+    const abstaende = {}; const MAX = 6;
+    const runde = (p) => new Promise((fertig) => {
+      er.textContent = p.name[0]; er.style.setProperty('--f', p.farbe); bühne.innerHTML = '<div class="sz-sys">' + esc(p.name) + ' kommt …</div>';
+      karten.innerHTML = '<button type="button" class="sz-stopp" data-a="stopp">✋ Stopp <kbd>Leertaste</kbd></button>';
+      const t0 = performance.now(), dauer = 5200 * zeitFaktor(); let aus = false, d = MAX;
+      const ende = (gestoppt) => { if (aus) return; aus = true; loesche(); fertig({ d, gestoppt }); };
+      karten.querySelector('[data-a="stopp"]').onclick = () => ende(true);
+      halte((e) => { if (['Space', 'KeyE', 'Enter'].includes(e.code)) { e.preventDefault(); e.stopPropagation(); if (!e.repeat) ende(true); } });
+      const tick = () => { if (aus) return; const u = Math.min(1, (performance.now() - t0) / dauer); d = MAX - u * (MAX - 0.3);
+        er.style.left = (u * 82) + '%'; mEl.textContent = d.toFixed(1).replace('.', ',') + ' m'; if (u >= 1) ende(false); else requestAnimationFrame(tick); };
+      tick();
+    });
+    (async () => {
+      for (const p of def.leute) {
+        const r = await runde(p);
+        abstaende[p.id] = Math.round(r.d * 10) / 10;
+        karten.innerHTML = '';
+        bühne.innerHTML = blaseHtml(p, r.gestoppt ? p.okay : p.zuNah);
+        await warte(lesezeit(r.gestoppt ? p.okay : p.zuNah) + 300);
+      }
+      er.style.left = '-40px';
+      bühne.innerHTML = '<div class="sz-abstaende">' + def.leute.map((p) => '<span style="--f:' + esc(p.farbe) + '"><b>' + esc(p.name) + '</b>' + String(abstaende[p.id]).replace('.', ',') + ' m</span>').join('') + '</div>';
+      weiterKnopf(karten, { abstaende }, ok, '<div class="sz-sys">Jeder Abstand ist okay. Er ist nur bei jedem Menschen anders.</div>');
+    })();
+  });
+
+  // Stopp bauen (E23 Stopp-Jury): Blick, Stimme und Worte wählen. Wie klar kommt das Stopp an? Die andere Person reagiert.
+  // def: { wo, situation, gegner: { name, farbe }, teile: [{ titel, optionen: [{ t, klar: 0–2, angriff? }] }], reaktion: { klar, mittel, unklar, angriff } }
+  // → { klarheit, art }
+  ui.stoppBau = (def) => new Promise((ok) => {
+    const wahl = def.teile.map(() => -1);
+    const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || '') + '</span><b>🛑 Dein Stopp</b></div>' +
+      '<div class="sz-fall" style="--f:#b5485d"><p>' + esc(ersetze(def.situation)) + '</p></div><p class="sz-info">Bau dein Stopp. Was macht es klar?</p>' +
+      '<div class="sz-teile"></div><div class="sz-bühne"></div><div class="sz-karten"></div></div>');
+    const teile = k.querySelector('.sz-teile'), bühne = k.querySelector('.sz-bühne'), karten = k.querySelector('.sz-karten');
+    let fertig = false;
+    const zeig = () => {
+      teile.innerHTML = def.teile.map((tl, i) => '<div><small class="sz-teil-t">' + esc(tl.titel) + '</small>' + tl.optionen.map((o, j) => '<button type="button" data-i="' + i + '" data-j="' + j + '" class="' + (wahl[i] === j ? 'an' : '') + '">' + esc(ersetze(o.t)) + '</button>').join('') + '</div>').join('');
+      teile.querySelectorAll('[data-j]').forEach((b) => { b.onclick = () => { if (fertig) return; wahl[+b.dataset.i] = +b.dataset.j; zeig(); }; });
+      karten.innerHTML = wahl.every((w) => w >= 0) ? '<button type="button" class="sz-weiter" data-a="w">Stopp sagen <kbd>E</kbd></button>' : '';
+      const w = karten.querySelector('[data-a="w"]'); if (w) w.onclick = sagen;
+    };
+    const sagen = async () => {
+      if (fertig) return; fertig = true; loesche();
+      wahl.forEach((w, i) => { if (w < 0) wahl[i] = 0; });
+      const o = wahl.map((w, i) => def.teile[i].optionen[w]);
+      const klarheit = o.reduce((s, x) => s + (x.klar || 0), 0), angriff = o.some((x) => x.angriff);
+      const art = angriff ? 'angriff' : klarheit >= def.teile.length * 2 - 1 ? 'klar' : klarheit >= def.teile.length ? 'mittel' : 'unklar';
+      teile.innerHTML = '<div class="sz-sys">Du: ' + esc(o.map((x) => ersetze(x.t)).join(' · ')) + '</div>';
+      const r = def.reaktion[art] || [];
+      for (const t of r) { bühne.insertAdjacentHTML('beforeend', blaseHtml(def.gegner, t)); await warte(lesezeit(t)); }
+      weiterKnopf(karten, { klarheit, art }, ok, '<div class="sz-sys">' + ({ klar: 'Klar. Ruhig. Ernst genommen.', mittel: 'Halb angekommen. Ein Teil hat gewackelt.', unklar: 'Das Lächeln hat das Stopp weggenommen.', angriff: 'Angekommen – aber als Angriff. Jetzt geht es um den Streit, nicht ums Foto.' })[art] + '</div>');
+    };
+    zeig();
+    halte((e) => { if (e.code === 'KeyE' || e.code === 'Enter') { e.preventDefault(); e.stopPropagation(); sagen(); } });
   });
 
   return ui;

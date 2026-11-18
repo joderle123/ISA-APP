@@ -364,7 +364,7 @@ Object.assign(LEUTE, LEUTE2, LEUTE3, LEUTE4, LEUTE6);
 Object.assign(STAERKEN, STAERKEN2, STAERKEN3, STAERKEN4, STAERKEN5, STAERKEN6);
 
 // Sprecher-Namen und Farben (Erzähler, du)
-export const SPRECHER = { erzaehler: { name: '', farbe: '#5b6472' }, du: { name: 'Du', farbe: '#2b3a55' }, kopf: { name: 'Kopf', farbe: '#5f7d9e' }, bauch: { name: 'Bauch', farbe: '#b0784a' }, stolz: { name: 'Stolz', farbe: '#8a5fa8' }, kritiker: { name: 'Die fiese Stimme', farbe: '#a34a4a' } };
+export const SPRECHER = { erzaehler: { name: '', farbe: '#5b6472' }, alle: { name: 'Alle', farbe: '#5b6472' }, du: { name: 'Du', farbe: '#2b3a55' }, kopf: { name: 'Kopf', farbe: '#5f7d9e' }, bauch: { name: 'Bauch', farbe: '#b0784a' }, stolz: { name: 'Stolz', farbe: '#8a5fa8' }, kritiker: { name: 'Die fiese Stimme', farbe: '#a34a4a' } };
 
 // ---------- Neue Geschichte „Drei Jahre Annexe“ (annexe/KONZEPT-SPIEL.md): 1 Kurs-Modul = 1 Kapitel ----------
 // Die alten Kapitel bleiben als Datei (Texte, Folgen), laufen aber nicht mehr. Kapitel kommen nach und nach dazu.
@@ -374,10 +374,11 @@ import { SCHRITTE_N2, GESPRAECHE_N2 } from './story/kapitel2.js';
 import { SCHRITTE_N3, GESPRAECHE_N3 } from './story/kapitel3.js';
 import { SCHRITTE_N4, GESPRAECHE_N4 } from './story/kapitel4.js';
 import { SCHRITTE_N5, GESPRAECHE_N5 } from './story/kapitel5.js';
+import { SCHRITTE_N6, GESPRAECHE_N6 } from './story/kapitel6.js';
 Object.assign(LEUTE, PERSONAL);
 SCHRITTE.length = 0;
-SCHRITTE.push(...SCHRITTE_N1, ...SCHRITTE_N2, ...SCHRITTE_N3, ...SCHRITTE_N4, ...SCHRITTE_N5);
-Object.assign(GESPRAECHE, GESPRAECHE_N1, GESPRAECHE_N2, GESPRAECHE_N3, GESPRAECHE_N4, GESPRAECHE_N5);
+SCHRITTE.push(...SCHRITTE_N1, ...SCHRITTE_N2, ...SCHRITTE_N3, ...SCHRITTE_N4, ...SCHRITTE_N5, ...SCHRITTE_N6);
+Object.assign(GESPRAECHE, GESPRAECHE_N1, GESPRAECHE_N2, GESPRAECHE_N3, GESPRAECHE_N4, GESPRAECHE_N5, GESPRAECHE_N6);
 Object.assign(KAPITEL, { 1: 'Ankommen', 2: 'Wer bin ich?', 3: 'Gefühle verstehen', 4: 'Gefühle regulieren', 5: 'Meine Gedanken', 6: 'Kommunikation und Grenzen', 7: 'Wenn es schwierig wird', 8: 'Digitale Welt', 9: 'Gesund und stark', 10: 'Abschluss' });
 Object.assign(STAERKEN, {
   humor: STAERKEN.humor || { name: 'Humor', text: 'Du hast die Lage mit einem Witz entspannt.' },

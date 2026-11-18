@@ -184,3 +184,10 @@ Ziel war ≤ 200 Aufrufe und ≤ 400k Dreiecke – überall erreicht. Was es geb
 - **Konturen** im Comic-Look: halb so dick, deutlich heller (dunklere Farbe des Gegenstands statt fast Schwarz), weniger
   Linien an Knicken. Nur in Annexe; andere Spiele unverändert.
 - Spielstand merkt sich den Schritt jetzt auch beim Namen (Kapitel können wachsen, ohne alte Stände zu verschieben).
+
+## 19.11. – Kapitel 6 „Kommunikation und Grenzen“ (behutsam)
+- Modul 5 (E20–E23): Klassenfoto mit Stopp-Abstand (jeder Abstand ist okay; Ben nimmt das Stopp an), Noah will nicht
+  aufs Foto (fragen statt drängen; Foto bleibt in der Schule), drei Kanäle (Worte, Stimme, Körper), Ich-Botschaft bauen,
+  Jos Sprachnachricht (Fakten: Witz, danach „mach das nicht“), Gespräch mit Jo (Du- vs. Ich-Botschaft, Zuhören),
+  Stopp bauen gegen Luca, der Mila filmt (klar, ruhig, ohne Lächeln; Angriff kippt in Streit). Abschluss-Ritual:
+  Stopp-Satz – alle antworten „Okay.“ Nichts Sexuelles; Grenzen = Umarmung, Foto, Nachricht.
