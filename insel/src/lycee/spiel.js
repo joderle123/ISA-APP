@@ -1,6 +1,7 @@
 // Lycée-Simulator – Kern: baut Bild (Renderer mit Kontur/Bloom, gemalter Himmel, Toon-Material), Welt, Möbel, Menschen und
 // lässt die Geschichte laufen (geschichte.js). Gespeichert wird nur im Browser („lycee.stand“), nichts geht ins Netz.
 // Für Tests: window.LYCEE (zustand, schritt(i), teleport(ort), rede(id), gespraechLaeuft).
+import { ABZEICHEN, neuePassAbzeichen } from './pass.js';
 import * as THREE from 'three';
 import { createEvents } from '../engine/events.js';
 import { createLoop } from '../engine/loop.js';
@@ -144,7 +145,9 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (x && (x.v || 1) < 2) { Object.assign(x, { v: 2, schritt: 0, fertig: false, kapitelFertig: 0, bingo: {}, gefragt: [], szenen: {} }); } return x; };
   neuStart(S);
   const neuerStand = (name, figur) => ({ v: 2, name, figur, schritt: 0, herz: {}, staerken: {}, merke: {}, entdeckt: [], stundenplan: false, bingo: {}, gefragt: [], fertig: false });
-  const sichern = () => schreib(S);
+  // Schul-Pass: neue Abzeichen beim Speichern prüfen (Toast + Ton, nie mehr als drei auf einmal anzeigen)
+  const passPruefen = () => { const neu = neuePassAbzeichen(S); neu.slice(0, 3).forEach((x, n) => setTimeout(() => { ui.toast('<b>🏅 ' + x.sy + ' ' + x.t + '</b><span>Neues Abzeichen im Schul-Pass.</span>', 'ly-t-ent'); audio.play('unlock'); }, n * 900)); };
+  const sichern = () => { if (S && S.merke) passPruefen(); schreib(S); };
 
   // ---------- Menschen ----------
   const leute = {};   // id → { def, f, pos, yaw, haltung, schild, ziel }
@@ -343,6 +346,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   const markerMat = new THREE.MeshBasicMaterial({ color: '#ffcf4a', toneMapped: false, transparent: true, opacity: 0.95 });
   const ringMat = new THREE.MeshBasicMaterial({ color: '#ffcf4a', toneMapped: false, transparent: true, opacity: 0.5, side: THREE.DoubleSide, depthWrite: false });
   const marker = [];
+  const zielV = new THREE.Vector3();
+  const zielPfeil = document.createElement('div'); zielPfeil.className = 'ly-zielpfeil'; zielPfeil.hidden = true; zielPfeil.innerHTML = '<i>➜</i>'; root.appendChild(zielPfeil);
   for (let i = 0; i < 6; i++) {
     const g = new THREE.Group();
     const spitze = new THREE.Mesh(new THREE.ConeGeometry(0.12, 0.26, 4), markerMat); spitze.rotation.x = Math.PI; g.add(spitze);
@@ -820,6 +825,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       if (weiterIdx < 0) S.fertig = true;
       sichern();
       const bf = besteFreunde()[0];
+      audio.play('unlock'); setTimeout(() => audio.play('chime'), 350);
       const wahl = await ui.ende({ ...bilanz(), kap, brief: bf ? { von: LEUTE[bf].name, farbe: LEUTE[bf].farbe, text: nachricht(bf, kap) } : null, ueberschrift: ({ 1: 'Dein erster Tag', 2: 'Deine erste Woche', 3: 'Die Sportfest-Woche', 4: 'Die Test-Woche', 5: 'Die Fake-Woche', 6: 'Die Woche der Grenzen' , 7: 'Die Woche danach', 8: 'Die KI-Woche' , 9: 'Die Akku-Woche' , 10: 'Das Sommerfest' })[kap] || KAPITEL[kap],
         weiter: weiterIdx >= 0 ? 'Weiter: Kapitel ' + (kap + 1) + ' „' + KAPITEL[kap + 1] + '“' : '' });
       if (wahl === 'weiter') danach = () => starteSchritt(weiterIdx, true);
@@ -1304,7 +1310,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   ui.onJournal = () => {
     if (!S || imGespraech) return;
     const b = bilanz();
-    ui.journal({ name: S.name, stundenplan: S.stundenplan, leute: b.leute, freunde: b.freunde, staerken: b.staerken, geheimnisse: GEHEIMNISSE.filter((g) => S.entdeckt.includes(g.id)), gesamt: GEHEIMNISSE.length, lernkarten: S.lernkarten || [], leiter: leiterJournal(), zaehler: zaehler() });
+    ui.journal({ name: S.name, stundenplan: S.stundenplan, leute: b.leute, freunde: b.freunde, staerken: b.staerken, geheimnisse: GEHEIMNISSE.filter((g) => S.entdeckt.includes(g.id)), gesamt: GEHEIMNISSE.length, lernkarten: S.lernkarten || [], leiter: leiterJournal(), zaehler: zaehler(), pass: ABZEICHEN.map((x) => ({ sy: x.sy, t: x.t, hinweis: x.hinweis, hat: (S.pass || []).includes(x.id) })) });
   };
   // Running Gags als Zähler im Journal (werden nie kleiner)
   function zaehler() {
@@ -1338,8 +1344,9 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     try {
       tonCtx = tonCtx || new (window.AudioContext || window.webkitAudioContext)();
       const c = tonCtx, t0 = c.currentTime;
-      const note = (f, t, d = 0.35, typ = 'triangle', v = 0.18) => { const o = c.createOscillator(), g = c.createGain(); o.type = typ; o.frequency.value = f; g.gain.setValueAtTime(v, t0 + t); g.gain.exponentialRampToValueAtTime(0.001, t0 + t + d); o.connect(g).connect(c.destination); o.start(t0 + t); o.stop(t0 + t + d + 0.05); };
-      const rausch = (t, d = 0.12, v = 0.25) => { const b = c.createBuffer(1, c.sampleRate * d, c.sampleRate), a = b.getChannelData(0); for (let i = 0; i < a.length; i++) a[i] = (Math.random() * 2 - 1) * (1 - i / a.length); const q = c.createBufferSource(), g = c.createGain(); g.gain.value = v; q.buffer = b; q.connect(g).connect(c.destination); q.start(t0 + t); };
+      const laut = (ui.einstellungen ? ui.einstellungen().laut : 0.8) ?? 0.8;
+      const note = (f, t, d = 0.35, typ = 'triangle', v0 = 0.18) => { const v = Math.max(0.0001, v0 * laut); const o = c.createOscillator(), g = c.createGain(); o.type = typ; o.frequency.value = f; g.gain.setValueAtTime(v, t0 + t); g.gain.exponentialRampToValueAtTime(0.001, t0 + t + d); o.connect(g).connect(c.destination); o.start(t0 + t); o.stop(t0 + t + d + 0.05); };
+      const rausch = (t, d = 0.12, v0 = 0.25) => { const v = Math.max(0.0001, v0 * laut); const b = c.createBuffer(1, c.sampleRate * d, c.sampleRate), a = b.getChannelData(0); for (let i = 0; i < a.length; i++) a[i] = (Math.random() * 2 - 1) * (1 - i / a.length); const q = c.createBufferSource(), g = c.createGain(); g.gain.value = v; q.buffer = b; q.connect(g).connect(c.destination); q.start(t0 + t); };
       if (art === 'melodie') [523, 659, 784, 659, 698, 880].forEach((f, i) => note(f, i * 0.28, 0.5));
       else if (art === 'melodie2') [392, 392, 523, 494, 440, 523, 587].forEach((f, i) => note(f, i * 0.18, 0.25, 'square', 0.08));
       else if (art === 'trommel') [0, 0.25, 0.5, 0.62, 0.75].forEach((t, i) => (i % 2 ? rausch(t, 0.08, 0.3) : note(70, t, 0.25, 'sine', 0.5)));
@@ -1509,7 +1516,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       const koerper = spieler && spieler.group.children[0], hoch = koerper ? koerper.position.y : 0;
       if (spieler) { m = skateboard(); spieler.group.add(m); }
       if (koerper) koerper.position.y = hoch + 0.1;
-      let punkte = 0, rest = 60, fertig = false;
+      let punkte = 0, rest = 60, fertig = false, draussen = 0, aussen = 0;
       const ende = () => {
         if (fertig) return; fertig = true; skateTick = null;
         steuerung.brett = null; steuerung.tempo = 0; steuerung.pos.y = 0;
@@ -1519,12 +1526,14 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       };
       steuerung.brett = { y: 0, vy: 0, ueber: new Set(), start: 0, bereich: [-45.3, -28.3, 3.5, 18.7],
         onTrick: (name, p) => { punkte += p; ton('pling'); ui.skate({ punkte, trick: name + ' +' + p }); },
-        onRaus: ende };
+        onRaus: () => { draussen = performance.now(); } };
       ui.skate({ rest, punkte, weg: ende });
       skateTick = (dt) => {
         rest -= dt;
         if (rest <= 0 || imGespraech) { ende(); return; }
         if (rest < 59.4 && input.state.action) { ende(); return; }   // E noch einmal = absteigen (nicht das Loslassen vom Start)
+        // aus der Skate-Ecke gerollt: zwei Sekunden Zeit zum Umdrehen, dann erst absteigen
+        if (performance.now() - draussen < 150) { aussen += dt; if (aussen > 2) { ende(); return; } if (aussen < dt * 1.5) ui.skate({ punkte, trick: '↩ Zurück zur Rampe!' }); } else aussen = 0;
         ui.skate({ rest: Math.ceil(rest) });
       };
     });
@@ -1569,7 +1578,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   // Während eines Minispiels auf eigener Fläche (Bandprobe, Tischtennis, Freiwurf) ruht die 3D-Welt fast ganz:
   // sie ist ohnehin verdeckt, und der Takt im Spiel braucht die Rechenzeit.
   let ruheN = 0;
-  const loop = createLoop({ render: () => { if (ui.ebeneArt && ['spiel', 'szene'].includes(ui.ebeneArt()) && (ruheN++ % 20)) return; rr.render({ night: sky.night, time: loop.time, sun: sky.sunDir, sunColor: sky.colors && sky.colors.light }); } });
+  const loop = createLoop({ render: () => { if (ui.ebeneArt && ['spiel', 'szene', 'journal', 'handy', 'raus', 'ende', 'laden'].includes(ui.ebeneArt()) && (ruheN++ % 20)) return; rr.render({ night: sky.night, time: loop.time, sun: sky.sunDir, sunColor: sky.colors && sky.colors.light }); } });
   loop.add(() => input.beginFrame(), { order: -100, always: true });
   loop.add((dt) => {
     if (!laeuft) { camera.position.set(-36, 16, 64); camera.lookAt(0, 6, -10); return; }
@@ -1619,6 +1628,23 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       r.visible = !z.person;
     });
     if (ziele.length) { let dmin = Infinity; for (const z of ziele) dmin = Math.min(dmin, Math.hypot(z.x - p.x, z.z - p.z)); ui.dist(dmin > 4 ? dmin : null); } else ui.dist(null);
+    // Richtungspfeil am Bildschirmrand, wenn das Ziel nicht im Bild ist (gegen Verlaufen)
+    {
+      let zn = null, dn = Infinity; for (const z of ziele) { const d = Math.hypot(z.x - p.x, z.z - p.z); if (d < dn) { dn = d; zn = z; } }
+      let zeigen = false;
+      if (zn && laeuft && !imGespraech && !ui.ebeneArt() && dn > 4) {
+        zielV.set(zn.x, (zn.y || 1) + 0.5, zn.z).project(camera);
+        let x = zielV.x, y = zielV.y; const hinten = zielV.z > 1;
+        if (hinten) { x = -x; y = -y; if (Math.abs(x) < 0.05 && Math.abs(y) < 0.05) y = -1; }
+        if (hinten || Math.abs(x) > 0.92 || Math.abs(y) > 0.92) {
+          const m = Math.max(Math.abs(x), Math.abs(y)) || 1; x = x / m * 0.86; y = y / m * 0.8;
+          zielPfeil.style.left = ((x + 1) * 50) + '%'; zielPfeil.style.top = ((1 - y) * 50) + '%';
+          zielPfeil.style.transform = 'translate(-50%,-50%) rotate(' + Math.atan2(-y, x) + 'rad)';
+          zeigen = true;
+        }
+      }
+      zielPfeil.hidden = !zeigen;
+    }
     if (!laeuft) return;
     // Raum
     const raum = welt.raumBei(p.x, p.z);

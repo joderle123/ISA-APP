@@ -361,10 +361,10 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
   ui.TANKS = TANKS;
   ui.tankRaten = (def) => new Promise((ok) => {
     const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || 'Skills-Stunde') + '</span><b>Warnlicht: Welcher Tank ist leer?</b></div>' +
-      '<div class="sz-bühne"></div><div class="sz-tanks">' + TANKS.map(([id, n, sy]) => '<div data-t="' + id + '"><span><i></i></span><b>' + sy + '</b></div>').join('') + '</div><div class="sz-karten sz-raster ly-d-optionen"></div><div class="sz-stand"></div></div>');
+      '<div class="sz-bühne"></div><div class="sz-warn-tanks">' + TANKS.map(([id, n, sy]) => '<div data-t="' + id + '"><span><i></i></span><b>' + sy + '</b></div>').join('') + '</div><div class="sz-karten sz-raster ly-d-optionen"></div><div class="sz-stand"></div></div>');
     const bühne = k.querySelector('.sz-bühne'), karten = k.querySelector('.sz-karten'), stand = k.querySelector('.sz-stand');
     const richtig = [], geholfen = [];
-    const tank = (id, voll, farbe, blink) => { const el = k.querySelector('.sz-tanks [data-t="' + id + '"]'); if (!el) return; el.querySelector('i').style.height = voll + '%'; el.querySelector('i').style.background = farbe; el.classList.toggle('blink', !!blink); };
+    const tank = (id, voll, farbe, blink) => { const el = k.querySelector('.sz-warn-tanks [data-t="' + id + '"]'); if (!el) return; el.querySelector('i').style.height = voll + '%'; el.querySelector('i').style.background = farbe; el.classList.toggle('blink', !!blink); };
     const tanksReset = () => TANKS.forEach(([id]) => tank(id, 60, '#c9d2de', false));
     const wahl = (html, n) => new Promise((fertig) => { karten.innerHTML = html; let aus = false; const ende = (j) => { if (aus) return; aus = true; loesche(); fertig(j); };
       karten.querySelectorAll('[data-i]').forEach((b) => { b.onclick = () => ende(+b.dataset.i); });
@@ -588,30 +588,56 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
 
   // ---------- Gesichter lesen (Kurs E07 Pantomime, E09 Statuen) ----------
   // def: { wo, titel, leute: [ { wer: { id, name, farbe }, zeichen: [..], gefuehl: id, aufloesung } ] } → { richtig: [ids], falsch: [ids] }
+  // Gesichter lesen (Kurs E07/E09): eine gezeichnete Figur friert ein. Gesicht, Hände und Haltung sind verdeckt –
+  // man deckt so wenig wie möglich auf und rät dann das Gefühl. Wenig aufgedeckt + richtig = 🔍.
+  // def: { wo, titel, leute: [{ wer, zeichen: [Gesicht, Hände, Haltung], gefuehl, aufloesung }] } → { richtig, falsch, lupen }
+  const FIG = {
+    freude: { brauen: 'M41 18 Q45 15 48 18 M52 18 Q55 15 59 18', mund: 'M43 30 Q50 38 57 30', augen: 1.8, arme: [[32, 20], [68, 20]], dy: -5, rot: 0 },
+    trauer: { brauen: 'M41 20 L47 17 M53 17 L59 20', mund: 'M44 34 Q50 28 56 34', augen: 1.6, arme: [[39, 76], [61, 76]], dy: 4, rot: 0, kopf: 5 },
+    wut: { brauen: 'M40 17 L48 21 M52 21 L60 17', mund: 'M44 32 L56 32', augen: 1.7, arme: [[33, 60], [67, 60]], faust: true, dy: 0, rot: 0 },
+    angst: { brauen: 'M41 16 Q45 14 48 16 M52 16 Q55 14 59 16', mund: 'M47 32 Q50 29 53 32 Q50 35 47 32', augen: 2.8, arme: [[45, 33], [55, 33]], dy: 2, rot: 0, schultern: -4 },
+    ekel: { brauen: 'M41 18 L48 19 M52 17 L59 15', mund: 'M43 31 Q47 28 51 32 Q54 34 57 29', augen: 1.5, arme: [[50, 31], [62, 74]], dy: 0, rot: 7, nase: true },
+    ueberraschung: { brauen: 'M41 14 Q45 11 48 14 M52 14 Q55 11 59 14', mund: 'M46 31 Q50 25 54 31 Q50 38 46 31', augen: 3, arme: [[27, 46], [73, 46]], dy: 0, rot: -6 },
+  };
+  const figurSvg = (gef, farbe, offen) => {
+    const f = FIG[gef] || FIG.freude, h = offen.haltung, a = offen.haende, g = offen.gesicht;
+    const dy = h ? f.dy : 0, rot = h ? f.rot : 0, sch = h ? (f.schultern || 0) : 0, kopf = h ? (f.kopf || 0) : 0;
+    const arm = (x, y, sx) => '<path d="M' + sx + ' ' + (46 + sch) + ' L' + x + ' ' + y + '" stroke="' + farbe + '" stroke-width="6" stroke-linecap="round" fill="none"/>' + (f.faust ? '<circle cx="' + x + '" cy="' + y + '" r="4.2" fill="#e0b48c" stroke="#2b3a55" stroke-width="1.2"/>' : '<circle cx="' + x + '" cy="' + y + '" r="3.4" fill="#e0b48c"/>');
+    const arme = a ? arm(f.arme[0][0], f.arme[0][1], 42) + arm(f.arme[1][0], f.arme[1][1], 58) : '<path d="M42 46 L38 72 M58 46 L62 72" stroke="#c9d2de" stroke-width="6" stroke-linecap="round"/>';
+    const gesicht = g ? '<g stroke="#2b3a55" stroke-width="1.6" fill="none" stroke-linecap="round"><path d="' + f.brauen + '"/><path d="' + f.mund + '"/>' + (f.nase ? '<path d="M48 26 l2 -1.5 l2 1.5"/>' : '') + '</g><circle cx="45" cy="23" r="' + f.augen + '" fill="#2b3a55"/><circle cx="55" cy="23" r="' + f.augen + '" fill="#2b3a55"/>'
+      : '<text x="50" y="30" text-anchor="middle" font-size="14" font-weight="900" fill="#9aa3ad">?</text>';
+    return '<svg viewBox="0 0 100 120" class="sz-figur"><g transform="translate(0 ' + dy + ') rotate(' + rot + ' 50 100)">' +
+      '<path d="M44 76 L41 108 M56 76 L59 108" stroke="#3a3f4b" stroke-width="7" stroke-linecap="round"/>' +
+      '<rect x="39" y="' + (42 + sch) + '" width="22" height="' + (36 - sch) + '" rx="8" fill="' + (h ? farbe : '#c9d2de') + '"/>' + arme +
+      '<g transform="translate(0 ' + (kopf + sch) + ')"><circle cx="50" cy="25" r="15" fill="' + (g ? '#e0b48c' : '#e4e8ee') + '"/>' + gesicht + '</g></g></svg>';
+  };
   ui.gesichterLesen = (def) => new Promise((ok) => {
     const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || '') + '</span><b>' + esc(def.titel || 'Gesichter lesen') + '</b></div>' +
-      '<p class="sz-info">Die Szene friert ein. Schau auf Hände, Blick, Haltung. Was fühlt die Person?</p><div class="sz-bühne"></div><div class="sz-karten sz-raster ly-d-optionen"></div></div>');
-    const bühne = k.querySelector('.sz-bühne'), karten = k.querySelector('.sz-karten');
-    const richtig = [], falsch = [];
+      '<p class="sz-info">Die Szene friert ein. Deck so wenig wie möglich auf – dann rate das Gefühl.</p>' +
+      '<div class="sz-lesen"><div class="sz-lesen-fig"></div><div class="sz-lesen-tipps"></div></div><div class="sz-bühne"></div><div class="sz-karten sz-raster ly-d-optionen"></div></div>');
+    const fig = k.querySelector('.sz-lesen-fig'), tipps = k.querySelector('.sz-lesen-tipps'), bühne = k.querySelector('.sz-bühne'), karten = k.querySelector('.sz-karten');
+    const richtig = [], falsch = []; let lupen = 0;
+    const TEILE = [['gesicht', '👀 Gesicht'], ['haende', '✋ Hände'], ['haltung', '🧍 Haltung']];
     (async () => {
       for (const p of def.leute) {
-        bühne.innerHTML = '<div class="sz-statue" style="--f:' + p.wer.farbe + '"><i>' + esc(p.wer.name[0]) + '</i><div><b>' + esc(p.wer.name) + '</b>' + p.zeichen.map((z) => '<em>' + esc(z) + '</em>').join('') + '</div></div>';
+        const ziel = [].concat(p.gefuehl)[0], offen = {}; let auf = 0;
+        const zeig = () => {
+          fig.innerHTML = '<b style="color:' + esc(p.wer.farbe) + '">' + esc(p.wer.name) + '</b>' + figurSvg(ziel, p.wer.farbe, offen);
+          tipps.innerHTML = TEILE.map(([id, t], n) => offen[id] ? '<em>' + esc(ersetze((p.zeichen || [])[n] || '')) + '</em>' : '<button type="button" class="sz-tipp-auf" data-t="' + id + '">' + t + '</button>').join('');
+          tipps.querySelectorAll('[data-t]').forEach((b) => { b.onclick = () => { offen[b.dataset.t] = true; auf++; zeig(); }; });
+        };
+        zeig(); bühne.innerHTML = '';
         const ids = Object.keys(GEF);
-        const g = await new Promise((fertig) => {
-          karten.innerHTML = ids.map((id, j) => '<button type="button" data-i="' + j + '" style="--f:' + GEF[id][1] + '"><span>' + GEF[id][2] + ' ' + GEF[id][0] + '</span></button>').join('');
-          let aus = false; const ende = (j) => { if (aus) return; aus = true; loesche(); fertig(ids[j]); };
-          karten.querySelectorAll('[data-i]').forEach((b) => { b.onclick = () => ende(+b.dataset.i); });
-          halte((e) => { const m = { Digit1: 0, Digit2: 1, Digit3: 2, Digit4: 3, Digit5: 4, Digit6: 5 }[e.code]; if (m != null) { e.preventDefault(); e.stopPropagation(); ende(m); } else if (e.code === 'KeyE') { e.preventDefault(); e.stopPropagation(); ende(0); } });
-        });
+        const j = await karteWahl(karten, ids.map((id, n) => '<button type="button" data-i="' + n + '" style="--f:' + GEF[id][1] + '"><span>' + GEF[id][2] + ' ' + GEF[id][0] + '</span></button>').join(''), ids.length, { eTaste: 0 });
+        const g = ids[j]; karten.innerHTML = '';
         const passt = [].concat(p.gefuehl).includes(g); (passt ? richtig : falsch).push(p.wer.id);
-        karten.innerHTML = '';
-        bühne.insertAdjacentHTML('beforeend', '<div class="sz-sys">Du: ' + GEF[g][2] + ' ' + GEF[g][0] + ' · ' + esc(ersetze(p.aufloesung || '')) + '</div>');
-        await warte(2300);
+        TEILE.forEach(([id]) => { offen[id] = true; }); zeig();
+        const lupe = passt && auf <= 1; if (lupe) lupen++;
+        pop(k, lupe ? '🔍' : passt ? '✅' : '🤔');
+        bühne.innerHTML = '<div class="sz-sys">' + (passt ? (lupe ? '🔍 Mit ' + auf + ' Hinweis' + (auf === 1 ? '' : 'en') + '! ' : '✓ ') : 'Du: ' + GEF[g][2] + ' ' + GEF[g][0] + ' · ') + esc(ersetze(p.aufloesung || '')) + '</div>';
+        await warte(lesezeit(p.aufloesung || 'x x x x'));
       }
-      karten.innerHTML = '<button type="button" class="sz-weiter" data-a="w">Weiter <kbd>E</kbd></button>';
-      const zu = () => { loesche(); ui.ebeneZu(); ok({ richtig, falsch }); };
-      karten.querySelector('[data-a="w"]').onclick = zu;
-      halte((e) => { if (e.code === 'KeyE' || e.code === 'Enter') { e.preventDefault(); e.stopPropagation(); zu(); } });
+      weiterKnopf(karten, { richtig, falsch, lupen }, ok, '<div class="sz-sys">' + richtig.length + ' von ' + def.leute.length + ' gelesen' + (lupen ? ' · ' + lupen + '× 🔍' : '') + '.</div>');
     })();
   });
 
@@ -624,6 +650,10 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
       '<div class="sz-mischpult">' + ids.map((id) => '<label style="--f:' + GEF[id][1] + '"><span>' + GEF[id][2] + '</span><input type="range" min="0" max="10" step="1" value="0" data-g="' + id + '"><b data-z="' + id + '">0</b><small>' + GEF[id][0] + '</small><i class="sz-fremd" data-f="' + id + '"></i></label>').join('') + '</div>' +
       '<div class="sz-karten"><button type="button" class="sz-weiter" data-a="w">So ist es <kbd>E</kbd></button></div></div>');
     k.querySelectorAll('[data-g]').forEach((r) => { r.addEventListener('keydown', (e) => e.stopPropagation()); r.oninput = () => { werte[r.dataset.g] = +r.value; k.querySelector('[data-z="' + r.dataset.g + '"]').textContent = r.value; }; });
+    // −/+ für Finger (senkrechte Regler sind auf Handys schwer zu treffen)
+    k.querySelectorAll('.sz-mischpult label').forEach((l) => { const r = l.querySelector('[data-g]');
+      l.insertAdjacentHTML('beforeend', '<div class="sz-mp-knopf"><button type="button" data-d="-1">−</button><button type="button" data-d="1">+</button></div>');
+      l.querySelectorAll('[data-d]').forEach((b) => { b.onclick = (e) => { e.preventDefault(); if (r.disabled) return; r.value = Math.max(0, Math.min(10, +r.value + +b.dataset.d)); r.oninput(); }; }); });
     let phase = 0;
     const weiter = () => {
       if (phase === 0 && def.vergleich) {
@@ -901,22 +931,37 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
       '<p class="sz-info sz-zw-frage"></p><div class="sz-bühne"></div><div class="sz-karten sz-raster ly-d-optionen"></div></div>');
     const karte = k.querySelector('.sz-zw-karte'), frage = k.querySelector('.sz-zw-frage'), punkte = k.querySelector('.sz-zw-punkte'), bühne = k.querySelector('.sz-bühne'), karten = k.querySelector('.sz-karten');
     const eigene = [], anders = []; let treffer = 0;
-    const knoepfe = () => ZN.map(([, n, f], i) => '<button type="button" data-i="' + i + '" style="--f:' + f + '"><span>' + n + '</span></button>').join('');
     (async () => {
       for (const c of def.karten) {
         karte.textContent = ersetze(c.t); punkte.innerHTML = ''; bühne.innerHTML = '';
-        frage.textContent = 'Wo stehst DU bei diesem Satz?';
-        const ich = await karteWahl(karten, knoepfe(), 3);
+        // Schritt 1: den eigenen Stein auf die Linie setzen (tippen oder ziehen)
+        frage.textContent = 'Wo stehst DU? Tipp auf die Linie.';
+        let wert = 50; const linie = k.querySelector('.sz-zw-linie');
+        punkte.innerHTML = '<i class="du" style="left:50%;top:-20px"></i>';
+        const setze = (e) => { const r = linie.getBoundingClientRect(); wert = Math.round(Math.max(2, Math.min(98, (e.clientX - r.left) / r.width * 100))); punkte.querySelector('.du').style.left = wert + '%'; };
+        let zieht = false;
+        linie.onpointerdown = (e) => { zieht = true; linie.setPointerCapture(e.pointerId); setze(e); };
+        linie.onpointermove = (e) => { if (zieht) setze(e); };
+        linie.onpointerup = () => { zieht = false; };
+        halte((e) => { if (e.code === 'ArrowLeft' || e.code === 'ArrowRight') { e.preventDefault(); e.stopPropagation(); wert = Math.max(2, Math.min(98, wert + (e.code === 'ArrowLeft' ? -5 : 5))); punkte.querySelector('.du').style.left = wert + '%'; } });
+        await karteWahl(karten, '<button type="button" data-i="0"><span>✔ Hier stehe ich</span></button>', 1, { eTaste: 0 });
+        linie.onpointerdown = linie.onpointermove = linie.onpointerup = null;
+        const ich = wert < 30 ? 0 : wert < 70 ? 1 : 2;
+        // Schritt 2: Wette auf die Klasse
         frage.textContent = 'Und die meisten aus der Klasse? Wette!';
-        const wette = await karteWahl(karten, knoepfe(), 3);
+        const wette = await karteWahl(karten, ZN.map(([, n, f], q) => '<button type="button" data-i="' + q + '" style="--f:' + f + '"><span>' + ['🟢', '🟡', '🔴'][q] + ' Die meisten: ' + n.split(' ')[0] + '</span></button>').join(''), 3);
         karten.innerHTML = '';
         eigene.push(ZN[ich][0]);
         const zonen = ids.map((id) => (c.zahlen[id] < 30 ? 0 : c.zahlen[id] < 70 ? 1 : 2));
         const zaehl = [0, 1, 2].map((q) => zonen.filter((x) => x === q).length), meist = zaehl.indexOf(Math.max(...zaehl));
         if (meist === wette) treffer++;
-        punkte.innerHTML = ids.map((id, i) => '<i style="--f:' + esc(L[id].farbe) + ';left:' + c.zahlen[id] + '%;top:' + ((i % 3) * 12) + 'px" title="' + esc(L[id].name) + '">' + esc(L[id].name[0]) + '</i>').join('') +
-          '<i class="du" style="left:' + ZN[ich][3] + '%;top:36px">●</i>';
-        const weit = ids.filter((id) => Math.abs(c.zahlen[id] - ZN[ich][3]) >= 50).map((id) => L[id].name);
+        // die anderen fliegen nacheinander auf ihren Platz
+        for (const [n, id] of ids.entries()) {
+          punkte.insertAdjacentHTML('beforeend', '<i style="--f:' + esc(L[id].farbe) + ';left:50%;top:' + ((n % 3) * 12) + 'px;transition:left .45s ease-out" title="' + esc(L[id].name) + '">' + esc(L[id].name[0]) + '</i>');
+          const el = punkte.lastElementChild; void el.offsetWidth; el.style.left = c.zahlen[id] + '%'; await warte(170);
+        }
+        pop(k, meist === wette ? '🎯' : '😮');
+        const weit = ids.filter((id) => Math.abs(c.zahlen[id] - wert) >= 50).map((id) => L[id].name);
         anders.push(...weit);
         bühne.innerHTML = '<div class="sz-sys">' + (meist === wette ? '✓ Gewettet richtig. ' : '') + 'Die meisten: ' + ZN[meist][1].split(' ')[0] + '.' + (weit.length ? ' Ganz woanders als du: ' + weit.join(', ') + '.' : '') + '</div>' +
           (c.sagt ? blaseHtml(L[c.sagt[0]] || null, c.sagt[1]) : '');
@@ -1130,7 +1175,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
     const zeig = () => {
       const max = Math.max(1, ...def.klasse.map((n, i) => n + b[i]));
       box.innerHTML = def.saetze.map((t, i) => '<button type="button" data-i="' + i + '"' + (zeigeKlasse ? ' disabled' : '') + '><span>„' + esc(t) + '“</span><i>' + '🫘'.repeat(b[i]) + '</i>' +
-        (zeigeKlasse ? '<em style="width:' + Math.round((def.klasse[i] + b[i]) / max * 100) + '%"></em><b>' + (def.klasse[i] + b[i]) + '</b>' : '') + '</button>').join('');
+        (zeigeKlasse ? '<em style="width:0;transition:width .7s ease-out ' + (i * 0.35) + 's" data-w="' + Math.round((def.klasse[i] + b[i]) / max * 100) + '"></em><b>' + (def.klasse[i] + b[i]) + '</b>' : '') + '</button>').join('');
       box.querySelectorAll('[data-i]').forEach((x) => { x.onclick = () => { const i = +x.dataset.i; if (frei > 0) { b[i]++; frei--; } else if (b[i]) { b[i]--; frei++; } zeig(); }; });
       if (!zeigeKlasse) { karten.innerHTML = '<div class="sz-sys">Noch ' + frei + ' 🫘' + (frei ? '' : ' · antippen nimmt eine zurück') + '</div><button type="button" class="ly-link" data-a="neu">Alle zurück</button><button type="button" class="sz-weiter" data-a="w">Becher leeren <kbd>E</kbd></button>'; karten.querySelector('[data-a="neu"]').onclick = () => { b.fill(0); frei = 5; zeig(); }; }
       const w = karten.querySelector('[data-a="w"]'); if (w) w.onclick = weiter;
@@ -1138,7 +1183,9 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
     const weiter = () => {
       if (!zeigeKlasse) {
         zeigeKlasse = true; loesche(); zeig();
+        requestAnimationFrame(() => requestAnimationFrame(() => box.querySelectorAll('em[data-w]').forEach((em) => { em.style.width = em.dataset.w + '%'; })));
         const top = def.klasse.map((n, i) => n + b[i]).reduce((m, n, i, a) => (n > a[m] ? i : m), 0);
+        setTimeout(() => pop(k, '🫘'), def.saetze.length * 350 + 400);
         weiterKnopf(karten, { bohnen: b, top }, ok, '<div class="sz-sys">' + esc('Die meisten Bohnen: „' + def.saetze[top] + '“. Du bist mit keinem Satz allein.') + '</div>');
         return;
       }

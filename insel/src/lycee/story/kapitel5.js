@@ -57,7 +57,7 @@ const FAKE = (m) => ({
       { t: '„Wer hat das gemacht? Sagt’s mir ins Gesicht.“', setzt: ['angriff'], ich: 'wer hat das gemacht? sagt’s mir ins gesicht', folgen: [{ nach: 1.4, wer: 'Luca', text: 'chill. ist doch nur ne frage' }] },
     ] },
     { id: 'raus', t: 'Gruppe verlassen', symbol: '🚪', setzt: 'raus', sys: 'Du hast die Gruppe verlassen. Jetzt reden sie ohne dich.', ende: true },
-    { id: 'beweis', t: 'Screenshot an Herrn Kuedes', symbol: '📸', setzt: 'kuedes', sys: 'Gesendet an Herrn Kuedes.', folgen: [{ nach: 2.4, wer: 'Herr Kuedes (privat)', text: 'Danke. Ich hab’s. Wir reden heute. Du bist nicht allein damit.' }] },
+    { id: 'beweis', t: 'Screenshot an Herrn Kuedes', symbol: '📸', setzt: 'kuedes', sys: 'Gesendet an Herrn Kuedes.', folgen: [{ nach: 2.4, wer: 'Herr Kuedes (privat)', text: 'Hab’s. Komm um zehn in mein Büro. Kekse sind da.' }] },
     { id: 'stumm', t: 'Handy weg', symbol: '🔕', setzt: 'stumm', sys: 'Handy in der Tasche. Es vibriert weiter. Du spürst jedes Mal.', ende: true },
   ],
 });
@@ -188,21 +188,14 @@ export const GESPRAECHE_N5 = {
       } },
   ],
   n5_saal: [
-    ['hoffmann', 'Ça va? Ich hab den Screenshot gesehen.'],
-    ['hoffmann', 'Das sag ich jetzt einmal. Für alle.'],
-    ['hoffmann', 'Ich urteile nicht ohne Fakten. Herr Kuedes kümmert sich.'],
-    ['hoffmann', 'Wer das Bild weiterschickt, kommt bitte nach der Stunde zu mir.'],
+    ['hoffmann', 'Ça va? Screenshot gesehen. Ich urteile nicht ohne Fakten.'],
+    ['hoffmann', 'Wer ihn weiterschickt: nach der Stunde zu mir.'],
     ['erzaehler', 'Drei Handys verschwinden ganz schnell in drei Taschen.'],
     { tu: 'n5_saalBilanz' },
   ],
   n5_skills: [
-    ['kaya', 'Wéi geet et? Heute geht es um Sätze. Die im Kopf.'],
-    ['kaya', 'Wie laut ist es gerade in eurem Kopf? Leise, mittel, laut?'],
-    { wahl: [
-      { t: '„Laut.“', staerke: 'lesen', merke: 'kopfLaut', dann: [['kaya', 'Danke. Laut ist okay. Wir gucken heute, was da so redet.']] },
-      { t: '„Mittel.“', dann: [['kaya', 'Mittel. Gut zu wissen.']] },
-      { t: '(Nur mit den Schultern zucken.)', dann: [['kaya', '(nickt) Auch eine Antwort.']] },
-    ] },
+    ['kaya', '(schreibt an die Tafel: „Ich bin zu blöd.“) Wer kennt den Satz?'],
+    ['erzaehler', 'Keiner meldet sich. Alle gucken auf den Tisch. Alle kennen ihn.'],
     ['kaya', 'Jeder hat Sätze über sich. Manche helfen. Manche bremsen.'],
     ['kaya', 'Die bremsenden heißen Glaubenssätze. Weil man sie glaubt.'],
     ['kaya', 'Auch wenn sie falsch sind.'],
@@ -216,6 +209,7 @@ export const GESPRAECHE_N5 = {
     ['ben', 'Einunddreißig Bohnen bei „Die anderen sind besser“. Wer sind denn die anderen?'],
     ['mila', 'Statistisch: wir alle. Gegenseitig.'],
     ['kaya', 'Genau. Ihr seid mit keinem Satz allein. Mission: Fangt einen Satz ein.'],
+    ['mesenberg', 'Wenn ein Satz sehr laut ist: Bürotür ist offen. Oder 116 111.'],
   ],
   n5_detektiv: [
     ['mila', 'Setz dich. Wir arbeiten wie Detektive. Nur Fakten.'],
@@ -226,20 +220,18 @@ export const GESPRAECHE_N5 = {
       folgen: {
         leichter: { staerke: 'lesen', herz: { mila: 2 }, merke: 'waageLeichter', dann: [['mila', 'Siehst du? Der Satz war lauter als die Beweise.']] },
         etwas: { staerke: 'lesen', herz: { mila: 1 }, dann: [['mila', 'Ein bisschen leichter. Das reicht für heute.']] },
-        gleich: { herz: { mila: 1 }, dann: [['mila', 'Manchmal glaubt der Bauch trotzdem. Das ist kein Fehler. Das braucht Zeit.']] },
+        gleich: { herz: { mila: 1 }, dann: [['mila', 'Dein Bauch ignoriert Daten. Typisch Bauch. Er braucht Zeit.']] },
       } },
     { tu: 'n5_detektivSpur' },
   ],
   n5_satz: [
-    ['noah', 'Hab dir einen Platz frei gehalten. Wie immer.'],
-    ['noah', 'Also … seit zwei Wochen. Also wie immer.'],
+    ['noah', 'Platz frei gehalten. Mit einer Banane. Sie hat Respekt.'],
     ['noah', 'Was würdest du mir sagen, wenn ICH auf dem Screenshot wäre?'],
     { wahl: [
       { t: '„Dass ich weiß, dass du so was nie machen würdest.“', staerke: 'zuhoeren', herz: { noah: 1 }, dann: [['noah', 'Genau. Und jetzt sag das mal zu dir selbst.']] },
       { t: '„Keine Ahnung.“', dann: [['noah', 'Doch. Du würdest sagen: Wir kriegen das raus.'], ['noah', 'Das sagst du immer zu mir.']] },
     ] },
-    ['noah', 'Herr Kuedes sagt: Ein neuer Satz muss echt sein.'],
-    ['noah', 'Nicht einfach „Alles ist super“.'],
+    ['noah', 'Aber kein „Alles super“-Satz. Den glaubt nicht mal Ben.'],
     { szene: 'satz', id: 'neuerSatz', def: NEUER_SATZ, ausgang: (r) => (r.regeln >= 4 ? 'stark' : r.regeln >= 2 ? 'mittel' : 'schwach'),
       folgen: {
         stark: { staerke: 'ruhig', herz: { noah: 2 }, merke: 'neuerSatz', dann: [['noah', 'Den würde ich glauben. Schreib ihn auf eine Karte.']] },
@@ -301,7 +293,8 @@ export const tunN5 = (c) => ({
     ['erzaehler', 'Abends. Eine Nachricht von Mila.'],
     ['mila', '(Nachricht) Ich glaube, ich weiß, wer den Fake gebaut hat.'],
     ['mila', '(Nachricht) Es wird dir nicht gefallen.'],
-    ['mila', '(Nachricht) Und noch was. Am Montag ist Klassenfoto. Ohne Fragen. Für alle.'],
+    ['erzaehler', 'Mila tippt. Hört auf. Tippt.'],
+    ['mila', '(Nachricht) Nicht am Handy. Montag. Mit Beweis.'],
     { tu: 'kapitelEnde' },
   ],
 });

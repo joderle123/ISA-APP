@@ -35,12 +35,12 @@ export const SCHRITTE_N3 = [
 const PANTOMIME = {
   wo: 'Aula · Pantomime-Duell', titel: 'Welches Gefühl spielt die Person?',
   leute: [
-    { wer: F.ben, zeichen: ['reißt die Arme hoch', 'springt', 'riesiges Grinsen'], gefuehl: 'freude', aufloesung: 'Ben spielt Freude. Er hat an Nuggets gedacht.' },
-    { wer: F.ayla, zeichen: ['zieht die Nase kraus', 'dreht den Kopf weg', 'Hand vor dem Mund'], gefuehl: 'ekel', aufloesung: 'Ekel. Sie hat an Kantinen-Fisch gedacht.' },
-    { wer: F.jo, zeichen: ['Fäuste', 'Kiefer fest', 'stampft einmal auf'], gefuehl: 'wut', aufloesung: 'Wut. „Wie wenn einer dein Auto zerkratzt, digga.“' },
-    { wer: F.lina, zeichen: ['Schultern hoch', 'macht sich klein', 'guckt zur Tür'], gefuehl: 'angst', aufloesung: 'Angst. Lina spielt sie sehr echt. Alle sind leise.' },
-    { wer: F.yusuf, zeichen: ['Kopf runter', 'Schultern hängen', 'langsame Schritte'], gefuehl: 'trauer', aufloesung: 'Trauer. Yusuf: „Wie wenn das Training ausfällt.“' },
-    { wer: F.noah, zeichen: ['Augen riesig', 'Mund offen', 'springt einen Schritt zurück'], gefuehl: 'ueberraschung', aufloesung: 'Überraschung. Noah: „Wie wenn ich mal treffe.“' },
+    { wer: F.ben, zeichen: ['riesiges Grinsen', 'reißt die Arme hoch', 'springt hoch'], gefuehl: 'freude', aufloesung: 'Ben spielt Freude. Er hat an Nuggets gedacht.' },
+    { wer: F.ayla, zeichen: ['zieht die Nase kraus', 'Hand vor dem Mund', 'dreht sich weg'], gefuehl: 'ekel', aufloesung: 'Ekel. Sie hat an Kantinen-Fisch gedacht.' },
+    { wer: F.jo, zeichen: ['Kiefer fest, Augenbrauen runter', 'Fäuste', 'stampft einmal auf'], gefuehl: 'wut', aufloesung: 'Wut. „Wie wenn einer dein Auto zerkratzt, digga.“' },
+    { wer: F.lina, zeichen: ['Augen weit, guckt zur Tür', 'Hände nah am Gesicht', 'Schultern hoch, ganz klein'], gefuehl: 'angst', aufloesung: 'Angst. Lina spielt sie sehr echt. Alle sind leise.' },
+    { wer: F.yusuf, zeichen: ['Mundwinkel runter', 'Arme hängen', 'Kopf runter, langsame Schritte'], gefuehl: 'trauer', aufloesung: 'Trauer. Yusuf: „Wie wenn das Training ausfällt.“' },
+    { wer: F.noah, zeichen: ['Augen riesig, Mund offen', 'Hände nach vorn', 'springt einen Schritt zurück'], gefuehl: 'ueberraschung', aufloesung: 'Überraschung. Noah: „Wie wenn ich mal treffe.“' },
   ],
 };
 
@@ -58,7 +58,7 @@ const ECKEN = {
     { t: 'angewidert', ziel: 'ekel' },
     { t: 'peinlich berührt', ziel: null, wer: F.ayla, sagt: 'Scham. Die hat keine eigene Ecke. Unfair.' },
     { t: 'gelangweilt', ziel: null, wer: F.ben, sagt: 'Gefühl oder Zustand? Das ist Philosophie.' },
-    { t: 'beleidigt', ziel: ['wut', 'trauer'], wer: F.jo, sagt: 'Beleidigt ist Wut, die nicht laut sein darf.' },
+    { t: 'beleidigt', ziel: ['wut', 'trauer'], wer: F.jo, sagt: 'Beleidigt ist Wut mit Handbremse, digga.' },
   ],
   ende: 'Viele Wörter, sechs Ecken. Je genauer das Wort, desto besser weiß man, was man braucht.',
 };
@@ -159,9 +159,9 @@ const MILA_FOTO = {
 const KLASSE_LESEN = {
   wo: 'Saal 1.04 · Standbild', titel: 'Wer fühlt was?',
   leute: [
-    { wer: F.mila, zeichen: ['Kapuze auf', 'dreht den Würfel nicht', 'Gesicht rot'], gefuehl: ['wut', 'trauer'], aufloesung: 'Mila: Wut und Scham gleichzeitig. Man sieht beides.' },
-    { wer: F.jo, zeichen: ['grinst noch', 'guckt dann weg', 'trommelt mit dem Stift'], gefuehl: ['freude', 'angst'], aufloesung: 'Jo: erst lustig, jetzt mulmig. Er hat über den Sticker gelacht.' },
-    { wer: F.dario, zeichen: ['steht in der Tür', 'Handy in der Faust', 'Bein wippt schnell', 'schaut nie zu Mila'], gefuehl: 'angst', aufloesung: 'Dario hat Angst. Wovor? Er ist nicht mal in dieser Klasse.' },
+    { wer: F.mila, zeichen: ['Gesicht rot', 'dreht den Würfel nicht', 'Kapuze auf'], gefuehl: ['wut', 'trauer'], aufloesung: 'Mila: Wut und Scham gleichzeitig. Man sieht beides.' },
+    { wer: F.jo, zeichen: ['grinst noch, guckt dann weg', 'trommelt mit dem Stift', 'rutscht auf dem Stuhl'], gefuehl: ['freude', 'angst'], aufloesung: 'Jo: erst lustig, jetzt mulmig. Er hat über den Sticker gelacht.' },
+    { wer: F.dario, zeichen: ['schaut nie zu Mila', 'Handy in der Faust', 'steht in der Tür, Bein wippt'], gefuehl: 'angst', aufloesung: 'Dario hat Angst. Wovor? Er ist nicht mal in dieser Klasse.' },
   ],
 };
 
@@ -233,11 +233,10 @@ export const GESPRAECHE_N3 = {
     { wahl: [
       { t: 'Angst. Die nervt am meisten.', merke: 'rausAngst', dann: [['noah', 'Dann wär ich ganz ruhig. Und würde Jos Fahrrad ohne Bremsen testen.']] },
       { t: 'Wut. Die macht nur Stress.', merke: 'rausWut', dann: [['jo', 'Ohne Wut hätte ich mich nie gewehrt. Nie.']] },
-      { t: 'Trauer. Die braucht keiner.', merke: 'rausTrauer', dann: [['ayla', 'Ohne Trauer merkt keiner, dass du jemanden vermisst.']] },
+      { t: 'Trauer. Die braucht keiner.', merke: 'rausTrauer', dann: [['ayla', 'Ohne Trauer gäb’s keine guten Songs. Null.']] },
       { t: 'Keins.', merke: 'rausKeins', dann: [['kaya', 'Ihr ahnt es. Jedes hat einen Job. Auch die unbequemen.']] },
     ] },
-    ['kaya', 'Angst zum Beispiel ist ein Wachhund. Sie sagt: Pass auf.'],
-    ['kaya', 'Manchmal bellt sie zu laut. Aber rauswerfen? Nein.'],
+    ['kaya', 'Angst ist ein Wachhund. Manchmal bellt er den Postboten an.'],
     ['kaya', 'Mission: Achtet diese Woche drauf, wo ihr Gefühle im Körper spürt.'],
   ],
   n3_foto: [
@@ -363,16 +362,11 @@ export const tunN3 = (c) => ({
   },
   n3_ende: () => [
     ['sommer', 'Letzte. Aber mit der lautesten Fankurve. Ben, du bist heiser.'],
-    ['erzaehler', 'Auf dem Weg vom Platz läuft Dario neben dir. Augenringe. Board unterm Arm.'],
-    ['dario', '(leise, ohne dich anzusehen) Ist … alles gut bei Mila?'],
-    { wahl: [
-      { t: '„Warum fragst du?“', staerke: 'lesen', merke: 'darioFragtMila', dann: [['dario', 'Nur so. Egal. Vergiss es.'], ['erzaehler', 'Er geht schneller. Kenan wartet am Tor.']] },
-      { t: '„Frag sie selbst.“', merke: 'darioFragtMila', dann: [['dario', '… Ja. Vielleicht.'], ['erzaehler', 'Er fragt sie nicht.']] },
-    ] },
     ['erzaehler', 'Mila zieht dich am Ärmel.'],
-    ['mila', 'Guck. @annexe.cam hat vor fünf Minuten gepostet. Das Siegerteam.'],
+    ['mila', 'Guck. #3 ist da. Vor fünf Minuten.'],
+    ['mila', '„#3 der langweiligsten: die 7P2-Staffel. Letzte. 💀“'],
     ['mila', 'Von links unten. Links von uns standen drei.'],
-    ['erzaehler', 'Dario. Kenan. Luca. Einer guckt weg.'],
+    ['erzaehler', 'Dario. Kenan. Luca. Luca grinst. Dario nicht.'],
     { szene: 'stempel', def: { modul: 'Modul 2 · Gefühle verstehen', titel: 'Gefühle gelesen',
       gelernt: ['Sechs Grundgefühle und ihre Botschaft', 'Gefühle ohne Worte erkannt', 'Gesehen: Wer am Steuer sitzt, ändert alles', 'Warnsignale im Körper bemerkt', 'Gefühle im Körper gefunden', 'Fakten von Gerüchten getrennt', 'Mehrere Gefühle gleichzeitig eingestellt'],
       mission: 'Merk dir diese Woche einmal, wo du ein Gefühl im Körper spürst – bevor du reagierst.' }, folgen: {} },

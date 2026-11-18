@@ -49,7 +49,10 @@ const TOP5 = {
     { nach: 18.2, system: true, text: 'Noah hat die Gruppe verlassen.', wennNicht: 'gestoppt' },
     { nach: 18.2, wer: 'Noah', text: '… danke', wenn: 'gestoppt' },
     { nach: 21, wer: 'Ayla', text: 'wer auch immer das macht. das ist nicht lustig', wennNicht: 'stumm' },
+    { nach: 22.6, wer: 'Yusuf', text: 'hm.' },
+    { nach: 23.4, wer: 'Yusuf', text: 'hm, nein. das ist mies.' },
     { nach: 24, wer: 'Dario', text: 'chillt mal. ist nur ne liste' },
+    { nach: 27, wer: 'Chiara', text: 'Plan: Erstens essen. Zweitens Seite 12. Drittens die Liste ignorieren.' },
     { nach: 27, wer: 'Chiara', text: 'Ich war nicht auf der Liste. Ich weiß nicht, ob ich mich freuen soll.' },
   ],
   aktionen: [
@@ -168,6 +171,7 @@ const PROJEKT3 = (m) => {
       { nach: 23.5, wer: 'Mila', text: 'Ich mache eine Tabelle. Niemand verdächtigt jemanden ohne Beweis. Auch Jo nicht.' },
       { nach: 26, wer: 'Jo', text: 'warum „auch jo nicht“ 💀' },
       { nach: 29, wer: 'Ben', text: 'ok tabelle. ich mach die nuggets' },
+      { nach: 32, wer: 'Ayla', text: 'off topic: bandname „Kein WLAN“. abstimmung bis freitag 🎸' },
     ],
     aktionen: [
       { id: 'jo', t: 'Jo stoppen', symbol: '✋', wenn: 'joRaet', setzt: 'joGestoppt', ich: 'jo raten wir nicht. so fängt das an', folgen: [{ nach: 1.4, wer: 'Jo', text: 'ok ok. sorry. chiara ist eigentlich lustig' }, { nach: 2.8, wer: 'Ayla', text: '👏' }] },
@@ -242,6 +246,7 @@ export const GESPRAECHE_N2 = {
     ['noah', 'Hey. Ich lese. Also … das Buch ist zu. Aber ich lese.'],
     { tu: 'n2_noahChat' },
     { wahl: [
+      { t: '„Platz eins? Bisschen verdient.“ (grinsen)', herz: { noah: -2, ben: 1 }, dann: [['noah', '(lacht. Zu lang.) Haha. Ja.'], ['erzaehler', 'Er macht das Buch auf. Seite eins. Er liest nicht.']] },
       { t: '„Die Liste ist Müll. Wer macht so was?“', staerke: 'klar', herz: { noah: 1 }, dann: [
         ['noah', 'Jemand, der mich kennt. Das ist das Schlimme.'],
         ['noah', 'Ich dachte, ich bin hier neu. Jetzt bin ich langweilig neu.'] ] },
@@ -305,7 +310,7 @@ export const GESPRAECHE_N2 = {
   n2_mittag: [
     ['ben', 'Detektiv! Setz dich. Wir haben einen Plan. Also: Mila hat einen Plan.'],
     ['mila', 'Kein Plan. Eine Beobachtung. Wer sitzt beim Essen links von Noah?'],
-    ['erzaehler', 'Am Nachbartisch: Dario und Kenan. Dario hält sein Handy sehr tief.'],
+    ['erzaehler', 'Am Nachbartisch: Dario, Kenan, Luca. Ein Handy liegt sehr tief.'],
     { wahl: [
       { t: '(Hinschauen. Nichts sagen. Merken.)', staerke: 'lesen', merke: 'darioTief', dann: [['mila', 'Du hast es auch gesehen. Gut. Kein Wort. Noch nicht.']] },
       { t: '„Leute, wir starren. Das ist auch komisch.“', staerke: 'klar', herz: { ayla: 1 }, dann: [['ayla', 'Stimmt. Wir sind gerade selbst @annexe.cam. Nur ohne Handy.'], ['ben', '(guckt sofort auf sein Curry)']] },

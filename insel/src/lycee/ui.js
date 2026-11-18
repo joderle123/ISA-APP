@@ -26,11 +26,15 @@ export function createUI({ root, input, speech }) {
   const ui = { dialogOffen: () => dialogOffen || !ebene.hidden, onJournal: null, onAktion: null, onRaus: null };
 
   // ---------- Auftrag, Raum, Uhr, Hinweis, Toasts ----------
+  let letztesZiel = '';
   ui.auftrag = ({ kapitel, titel, ziel, dist } = {}) => {
     if (!titel) { auftrag.hidden = true; return; }
     auftrag.hidden = false;
-    auftrag.innerHTML = '<div class="ly-a-kap">' + esc(kapitel) + '</div><div class="ly-a-titel">' + esc(titel) + '</div><div class="ly-a-ziel"><span class="ly-a-punkt"></span>' + esc(ziel) +
+    auftrag.innerHTML = '<div class="ly-a-kap">' + esc(kapitel) + ' <button type="button" class="ly-a-vor" aria-label="Ziel vorlesen">🔊</button></div><div class="ly-a-titel">' + esc(titel) + '</div><div class="ly-a-ziel"><span class="ly-a-punkt"></span>' + esc(ziel) +
       (dist != null ? ' <span class="ly-a-dist">' + Math.round(dist) + ' m</span>' : '') + '</div>';
+    auftrag.querySelector('.ly-a-vor').onclick = (e) => { e.stopPropagation(); vorlesen(titel + '. ' + ziel); };
+    if (ui.autoVorlesen && ziel && ziel !== letztesZiel) vorlesen(ziel);
+    letztesZiel = ziel;
   };
   ui.dist = (d) => { const s = auftrag.querySelector('.ly-a-dist'); const z = auftrag.querySelector('.ly-a-ziel'); if (!z) return; if (d == null) { if (s) s.remove(); return; } if (s) s.textContent = Math.round(d) + ' m'; else z.insertAdjacentHTML('beforeend', ' <span class="ly-a-dist">' + Math.round(d) + ' m</span>'); };
   let raumT = 0;
@@ -42,7 +46,9 @@ export function createUI({ root, input, speech }) {
   hinweis.addEventListener('click', () => ui.onAktion && ui.onAktion());
   ui.toast = (t, art = '') => {
     const x = el('div', 'ly-toast ' + art, t); toastBox.appendChild(x);
-    setTimeout(() => x.classList.add('weg'), 3200); setTimeout(() => x.remove(), 3800);
+    const ms = Math.min(9000, 2600 + x.textContent.length * 45);   // Länge bestimmt die Zeit; Antippen hält fest
+    let tw = setTimeout(() => x.classList.add('weg'), ms), tr = setTimeout(() => x.remove(), ms + 600);
+    x.addEventListener('click', () => { clearTimeout(tw); clearTimeout(tr); x.classList.toggle('fest'); if (!x.classList.contains('fest')) { x.classList.add('weg'); setTimeout(() => x.remove(), 600); } });
   };
   ui.staerke = (s) => ui.toast('<b>Stärke: ' + esc(s.name) + '</b><span>' + esc(s.text) + '</span>', 'ly-t-staerke');
   ui.herz = (name, n) => ui.toast((n > 0 ? '♥ ' : '') + esc(name) + (n > 0 ? ' mag dich ein bisschen mehr' : ' ist etwas verstimmt'), n > 0 ? 'ly-t-herz' : 'ly-t-kalt');
@@ -188,9 +194,9 @@ export function createUI({ root, input, speech }) {
     (f.beste.length ? '<p>' + f.beste.map((b) => '<span class="ly-j-name" style="--f:' + esc(b.farbe) + '">' + esc(b.name) + '</span> ' + esc(b.stufe)).join(' · ') + '</p>' : '<p>Noch niemand über „Kumpel“. Reden, helfen, zusammen spielen – das zählt.</p>') +
     (f.profil.length ? '<p>Du verstehst dich vor allem mit Leuten, die <b>' + f.profil.map(esc).join('</b>, <b>') + '</b> sind.</p>' : '') +
     (f.unbekannt ? '<p class="ly-leer">' + f.unbekannt + ' aus der Klasse kennst du noch nicht.</p>' : '') + '</div>';
-  ui.journal = ({ name, stundenplan, leute, freunde = null, staerken, geheimnisse, gesamt, lernkarten = [], leiter = null, zaehler = [] }) => {
+  ui.journal = ({ name, stundenplan, leute, freunde = null, staerken, geheimnisse, gesamt, lernkarten = [], leiter = null, zaehler = [], pass = [] }) => {
     const k = ebeneAuf('journal', '<button type="button" class="ly-zu" aria-label="Schließen">✕</button><h2>Journal von ' + esc(name) + '</h2>' +
-      '<div class="ly-j-reiter"><button type="button" data-r="leute" class="an">Menschen</button><button type="button" data-r="staerken">Stärken</button><button type="button" data-r="plan">Stundenplan</button><button type="button" data-r="ent">Entdeckt ' + geheimnisse.length + '/' + gesamt + '</button>' + (leiter ? '<button type="button" data-r="leiter">Meine Liste</button>' : '') + '</div><div class="ly-j-inhalt"></div>');
+      '<div class="ly-j-reiter"><button type="button" data-r="leute" class="an">Menschen</button><button type="button" data-r="staerken">Stärken</button><button type="button" data-r="plan">Stundenplan</button><button type="button" data-r="ent">Entdeckt ' + geheimnisse.length + '/' + gesamt + '</button><button type="button" data-r="pass">🏅 Pass ' + pass.filter((x) => x.hat).length + '/' + pass.length + '</button>' + (leiter ? '<button type="button" data-r="leiter">Meine Liste</button>' : '') + '</div><div class="ly-j-inhalt"></div>');
     const inhalt = k.querySelector('.ly-j-inhalt');
     const zeige = (r) => {
       k.querySelectorAll('[data-r]').forEach((b) => b.classList.toggle('an', b.dataset.r === r));
@@ -198,6 +204,7 @@ export function createUI({ root, input, speech }) {
       if (r === 'staerken') inhalt.innerHTML = staerken.length ? '<ul class="ly-j-staerken">' + staerken.map((s) => '<li><b>' + esc(s.name) + (s.n > 1 ? ' <span>×' + s.n + '</span>' : '') + '</b><small>' + esc(s.text) + '</small></li>').join('') + '</ul>' : '<p class="ly-leer">Stärken erscheinen hier, sobald du sie zeigst.</p>';
       if (r === 'plan') inhalt.innerHTML = stundenplan ? '<table class="ly-plan"><tr><th></th><th>Mo</th><th>Di</th><th>Mi</th></tr><tr><td>8:00</td><td>Klassenstunde</td><td>Mathe</td><td>Deutsch</td></tr><tr><td>10:15</td><td>Französisch</td><td>Sport</td><td>Atelier</td></tr><tr><td>13:30</td><td>Projekt</td><td>Englisch</td><td>–</td></tr></table><p class="ly-leer">Saal 1.04 · Klassenlehrer M. Hoffmann</p>' + (lernkarten.length ? '<h3>Gelernt</h3><ul class="ly-j-staerken">' + lernkarten.map((l) => '<li><b>' + esc(l) + '</b></li>').join('') + '</ul>' : '') : '<p class="ly-leer">Den Stundenplan gibt es im Sekretariat.</p>';
       if (r === 'leiter' && leiter) inhalt.innerHTML = '<ol class="ly-leiter">' + leiter.stufen.slice().reverse().map((l) => '<li class="' + (l.status || '') + '"><b>' + esc(l.t) + '</b><small>' + esc(l.notiz || '') + '</small></li>').join('') + '</ol><p class="ly-leer">Oben das Schwerste. ✓ = geschafft, ◐ = probiert. Probiert zählt.</p>';
+      if (r === 'pass') inhalt.innerHTML = '<ul class="ly-pass">' + pass.map((x) => '<li class="' + (x.hat ? 'hat' : '') + '"><i>' + (x.hat ? x.sy : '❔') + '</i><b>' + esc(x.hat ? x.t : '???') + '</b><small>' + esc(x.hinweis) + '</small></li>').join('') + '</ul>';
       if (r === 'ent') inhalt.innerHTML = geheimnisse.length ? '<ul class="ly-j-staerken">' + geheimnisse.map((g) => '<li><b>' + esc(g.titel) + '</b><small>' + esc(g.text) + '</small></li>').join('') + '</ul>' : '<p class="ly-leer">Schau dich um! Im Lycée gibt es einiges zu entdecken.</p>';
     };
     k.querySelectorAll('[data-r]').forEach((b) => { b.onclick = () => zeige(b.dataset.r); });
@@ -209,16 +216,27 @@ export function createUI({ root, input, speech }) {
   ui.titel = ({ gespeichert, figuren, lehrer, platz = 1, plaetze = null, wechsle = null }) => new Promise((ok) => {
    const zeigeTitel = () => {
     const k = ebeneAuf('titel', '<div class="ly-t-kicker">Ein Schulsimulator</div><h1 class="ly-t-name">Annexe<br><span>Junglinster</span></h1>' +
-      '<p class="ly-t-sub">Sieben Kapitel · eine Schule · ganz viel Pause</p>' +
+      '<p class="ly-t-sub">Zehn Kapitel · eine Schule · ganz viel Pause</p>' +
       (plaetze ? '<div class="ly-t-plaetze">' + plaetze().map((x, i) => '<button type="button" data-p="' + (i + 1) + '" class="' + (i + 1 === platz ? 'an' : '') + '"><b>' + (i + 1) + '</b><span>' + (x ? esc(x.name) + ' · ' + (x.fertig ? 'fertig' : 'Kapitel ' + x.kap) : 'frei') + '</span></button>').join('') + '</div>' : '') +
       '<div class="ly-t-knoepfe">' +
       (gespeichert ? '<button type="button" class="ly-btn ly-primaer" data-a="weiter">Weiterspielen</button><button type="button" class="ly-btn" data-a="neu">Neu anfangen</button>' : '<button type="button" class="ly-btn ly-primaer" data-a="neu">Los geht’s</button>') +
       '</div><p class="ly-t-fuss">' + (matchMedia('(pointer: coarse)').matches ? 'Links wischen = laufen · rechts wischen = umschauen · E = reden · ☰ = Journal' : 'WASD / Pfeile laufen · Maus ziehen = umschauen · E = reden · Tab = Journal') + '</p>' +
+      '<button type="button" class="ly-link" data-a="einst">⚙ Einstellungen (Textgröße, Vorlesen)</button>' +
       (lehrer ? '<button type="button" class="ly-link" data-a="lehrer">Für Lehrpersonen: eigene Aufgaben</button>' : ''));
     k.querySelectorAll('[data-p]').forEach((b) => { b.onclick = () => { platz = +b.dataset.p; gespeichert = wechsle(platz); zeigeTitel(); }; });
     k.querySelectorAll('[data-a]').forEach((b) => { b.onclick = () => {
       if (b.dataset.a === 'weiter') { ebeneZu(); ok({ weiter: true }); return; }
       if (b.dataset.a === 'lehrer') { lehrer().then(zeigeTitel); return; }
+      if (b.dataset.a === 'einst') { einstPanel(zeigeTitel); return; }
+      // Belegter Platz: erst nachfragen (auf geteilten Tablets löscht sonst ein Kind den Stand eines anderen)
+      const belegt = plaetze ? plaetze()[platz - 1] : null;
+      if (b.dataset.a === 'neu' && belegt && !b.dataset.ok) {
+        const k3 = ebeneAuf('titel', '<h2>Platz ' + platz + ' ist belegt</h2><p>Spielstand von <b>' + esc(belegt.name) + '</b> (' + (belegt.fertig ? 'fertig' : 'Kapitel ' + (belegt.kap || 1)) + ') wird gelöscht.</p>' +
+          '<div class="ly-t-knoepfe"><button type="button" class="ly-btn" data-x="nein">Abbrechen</button><button type="button" class="ly-btn ly-primaer" data-x="ja">Ja, neu anfangen</button></div>');
+        k3.querySelector('[data-x="nein"]').onclick = zeigeTitel;
+        k3.querySelector('[data-x="ja"]').onclick = () => { b.dataset.ok = '1'; b.onclick(); };
+        return;
+      }
       // Figur und Name
       const k2 = ebeneAuf('wer', '<h2>Wer bist du?</h2><div class="ly-w-figuren">' + figuren.map((f, i) => '<button type="button" data-f="' + i + '" class="' + (i === 0 ? 'an' : '') + '"><span class="ly-w-bild" style="--o:' + f.oben + ';--h:' + f.haut + ';--r:' + f.haar + '"><i></i></span>' + esc(f.titel) + '</button>').join('') + '</div>' +
         '<label class="ly-w-name">Dein Name im Spiel<input maxlength="16" value="Sam" autocomplete="off"></label><p class="ly-leer">Du kannst einen ausgedachten Namen nehmen.</p><button type="button" class="ly-btn ly-primaer" data-a="start">Starten</button>');
@@ -233,7 +251,8 @@ export function createUI({ root, input, speech }) {
   });
 
   ui.ende = ({ leute, freunde = null, brief = null, staerken, entdeckt, gesamt, kap = 1, ueberschrift = 'Geschafft', weiter = '' }) => new Promise((ok) => {
-    const k = ebeneAuf('ende', '<div class="ly-t-kicker">Kapitel ' + kap + ' geschafft</div><h2>' + esc(ueberschrift) + '</h2>' +
+    const konfetti = ui.wenigBewegung ? '' : '<div class="ly-konfetti" aria-hidden="true">' + Array.from({ length: 24 }, (_, n) => '<i style="left:' + ((n * 41) % 100) + '%;--d:' + (n % 6) * 0.18 + 's;--f:' + ['#e9734a', '#2fb8a8', '#f2b134', '#5fa0d0', '#e85d75', '#8a7bc8'][n % 6] + ';--r:' + (n * 37 % 360) + 'deg"></i>').join('') + '</div>';
+    const k = ebeneAuf('ende', konfetti + '<div class="ly-e-stempel">Kapitel ' + kap + ' ✓</div><h2>' + esc(ueberschrift) + '</h2>' +
       (brief ? '<div class="ly-e-brief"><span class="ly-j-name" style="--f:' + esc(brief.farbe) + '">' + esc(brief.von) + '</span> schreibt dir: „' + esc(brief.text) + '“</div>' : '') + freundesKreis(freunde) + '<div class="ly-e-spalten"><section><h3>Menschen</h3><ul class="ly-j-leute">' + leute.map((l) => '<li><span class="ly-j-name" style="--f:' + esc(l.farbe) + '">' + esc(l.name) + '</span><span class="ly-herzen">' + '♥'.repeat(Math.max(0, Math.min(5, l.herz))) + '<i>' + '♥'.repeat(5 - Math.max(0, Math.min(5, l.herz))) + '</i></span></li>').join('') + '</ul></section>' +
       '<section><h3>Deine Stärken heute</h3><ul class="ly-j-staerken">' + (staerken.length ? staerken.map((s) => '<li><b>' + esc(s.name) + '</b><small>' + esc(s.text) + '</small></li>').join('') : '<li><small>Heute nix Besonderes. Passiert.</small></li>') + '</ul>' +
       '<p class="ly-leer">Entdeckt: ' + entdeckt + ' von ' + gesamt + ' Orten</p></section></div>' +
@@ -531,8 +550,12 @@ export function createUI({ root, input, speech }) {
       if (!n.system && n.wer) { tippt.hidden = false; tippt.textContent = n.wer + ' tippt …'; }
       timer = setTimeout(() => { if (zu) return; tippt.hidden = true; verlauf.insertAdjacentHTML('beforeend', msg(n)); i++; verlauf.scrollTop = verlauf.scrollHeight; timer = setTimeout(naechste, 350 * (opts.tempo || 1)); }, (n.system ? 500 : 650 + Math.min(1200, (n.text || '').length * 35)) * (opts.tempo || 1));
     };
-    const fertig = () => { zu = true; alles(); document.removeEventListener('keydown', taste, true); ebeneZu(); ok(); };
-    const taste = (e) => { if (e.code === 'KeyE' || e.code === 'Enter' || e.code === 'Space') { e.preventDefault(); e.stopPropagation(); fertig(); } };
+    // Erster Druck zeigt den Rest (damit niemand Story-Nachrichten verpasst), zweiter Druck legt das Handy weg
+    const fertig = () => {
+      if (i < nachrichten.length) { zu = true; alles(); verlauf.scrollTop = verlauf.scrollHeight; k.querySelector('[data-a="weg"]').innerHTML = 'Fertig gelesen <kbd>E</kbd>'; return; }
+      zu = true; alles(); document.removeEventListener('keydown', taste, true); ebeneZu(); ok();
+    };
+    const taste = (e) => { if (!ebene.contains(k)) { document.removeEventListener('keydown', taste, true); return; } if (e.code === 'KeyE' || e.code === 'Enter' || e.code === 'Space') { e.preventDefault(); e.stopPropagation(); fertig(); } };
     document.addEventListener('keydown', taste, true);
     k.querySelector('[data-a="weg"]').onclick = fertig;
     if (ui.wenigBewegung) alles(); else naechste();
@@ -898,6 +921,10 @@ export function createUI({ root, input, speech }) {
         '<button type="button" data-w="einst"><kbd>⚙</kbd><span>Einstellungen</span></button>' +
         (sagtListe().length ? '<button type="button" data-w="sagt"><kbd>4</kbd><span>„Sagt keiner so“ – ' + sagtListe().length + ' Sätze</span></button>' : '') + '</div>');
       k.querySelectorAll('[data-w]').forEach((b) => { b.onclick = () => wahl(b.dataset.w); });
+      // Die Ziffern auf den Knöpfen funktionieren auch wirklich (vorher nur Dekoration)
+      const ziffer = (e) => { if (!ebene.contains(k)) { document.removeEventListener('keydown', ziffer, true); return; }
+        const w = { Digit1: 'atem', Digit2: 'sinne', Digit3: 'zu', Digit4: 'sagt' }[e.code]; if (w && k.querySelector('[data-w="' + w + '"]')) { e.preventDefault(); e.stopPropagation(); document.removeEventListener('keydown', ziffer, true); wahl(w); } };
+      document.addEventListener('keydown', ziffer, true);
     };
     const sinne = (i) => {
       if (i >= SINNE.length) { start(); return; }
@@ -1146,14 +1173,22 @@ export function createUI({ root, input, speech }) {
   ui.rueckblick = (titel, untertitel, eintraege) => new Promise((ok) => {
     const k = ebeneAuf('bild', '<h2>' + esc(titel) + '</h2><p>' + esc(untertitel) + '</p>' + (eintraege.length ? '<div class="ly-t-kicker">Was hängen bleibt</div><ul class="ly-rb">' +
       eintraege.map((e) => '<li><span class="ly-j-name" style="--f:' + esc(e.farbe) + '">' + esc(e.name) + '</span><b class="' + (e.n > 0 ? 'auf' : 'ab') + '">' + (e.n > 0 ? (e.n > 1 ? 'mag dich mehr' : 'mag dich ein bisschen mehr') : (e.n < -1 ? 'ist sauer auf dich' : 'ist etwas kühler')) + '</b></li>').join('') + '</ul>' : ''));
-    let zu = false; const fertig = () => { if (zu) return; zu = true; if (ebene.contains(k)) ebeneZu(); ok(); };   // nur schließen, wenn noch die eigene Karte offen ist
-    k.onclick = fertig; setTimeout(fertig, eintraege.length ? 4200 : 2400);
+    // Kein Auto-Schließen mehr, wenn es etwas zu lesen gibt (schwache Leser): Weiter-Knopf, Einträge nacheinander
+    let zu = false; const fertig = () => { if (zu) return; zu = true; document.removeEventListener('keydown', taste, true); if (ebene.contains(k)) ebeneZu(); ok(); };
+    const taste = (e) => { if (!ebene.contains(k)) { document.removeEventListener('keydown', taste, true); return; } if (e.code === 'KeyE' || e.code === 'Enter' || e.code === 'Space') { e.preventDefault(); e.stopPropagation(); fertig(); } };
+    if (eintraege.length) {
+      k.querySelectorAll('.ly-rb li').forEach((li, n) => { li.style.animation = 'sz-kartein .35s ease-out ' + (0.3 + n * 0.3) + 's both'; });
+      k.insertAdjacentHTML('beforeend', '<button type="button" class="ly-btn ly-primaer" data-a="w">Weiter <kbd>E</kbd></button>');
+      k.querySelector('[data-a="w"]').onclick = fertig; document.addEventListener('keydown', taste, true);
+    } else { k.onclick = fertig; setTimeout(fertig, 2400); }
   });
 
   // Plakat-Arbeit: kurzes Zwischenbild
   ui.bild = (titel, text, sek = 2.4) => new Promise((ok) => {
     const k = ebeneAuf('bild', '<h2>' + esc(titel) + '</h2><p>' + esc(text) + '</p>');
-    setTimeout(() => { if (ebene.contains(k)) ebeneZu(); ok(); }, sek * 1000);
+    const dauer = Math.max(sek, (String(titel) + ' ' + String(text)).split(/\s+/).length * 0.42) * 1000;   // Lesezeit nach Wortzahl
+    let fertig = false; const zu = () => { if (fertig) return; fertig = true; if (ebene.contains(k)) ebeneZu(); ok(); };
+    k.onclick = zu; setTimeout(zu, dauer);
   });
 
   // Joystick-Bild (Touch)

@@ -188,18 +188,13 @@ export const GESPRAECHE_N4 = {
     ['noah', 'Ich bin gerade bei 70. Mindestens.'],
   ],
   n4_skills: [
-    ['kaya', 'Wéi geet et? Heute eine Zahl. Von 0 bis 100.'],
-    ['kaya', 'Macht eine Faust. Daumen nach innen.'],
-    ['kaya', 'Der Daumen ist das Gefühl. Die Finger sind der Kopf.'],
-    ['kaya', 'Bis 30: Grün. Alles läuft. Bis 70: Gelb. Man merkt was.'],
-    ['kaya', 'Ab 70: Rot.'],
-    ['kaya', '(klappt die Finger hoch) Bei Rot geht der Deckel weg.'],
-    ['kaya', 'Der Kopf hört dann nicht mehr zu.'],
+    ['kaya', '(hält eine Faust hoch) Faust. Daumen rein. Der Daumen ist das Gefühl.'],
+    ['kaya', '(klappt die Finger hoch) Ab 70: Deckel weg. Kopf taub.'],
     ['ben', 'Mein Deckel ist bei Nuggets immer weg.'],
     ['mesenberg', 'Das ist eher Begeisterung, Ben. Andere Zone.'],
     { wahl: [
       { t: '„Was hilft bei Rot, wenn der Kopf nicht zuhört?“', staerke: 'lesen', herz: { kaya: 1 }, dann: [['kaya', 'Gute Frage. Der Körper. Atmen, Bewegen, Kälte. Erst runter, dann reden.']] },
-      { t: '„Ich war heute Morgen bei Rot. Wegen dem Bus.“', wenn: (m) => m.thermoRot, staerke: 'zuhoeren', herz: { kaya: 1, noah: 1 }, dann: [['kaya', 'Danke, dass du das sagst. Was hat dich runtergebracht?'], ['du', 'Rennen. Glaub ich.'], ['kaya', 'Bewegung. Der Körper verbraucht den Stress. Genau so.']] },
+      { t: '„Ich war heute Morgen bei Rot. Wegen dem Bus.“', wenn: (m) => m.thermoRot, staerke: 'zuhoeren', herz: { kaya: 1, noah: 1 }, dann: [['kaya', 'Rot am Montagmorgen. Klassiker. Was hat geholfen?'], ['du', 'Rennen. Glaub ich.'], ['kaya', 'Bewegung. Der Körper verbraucht den Stress. Genau so.']] },
       { t: '(Faust machen. Daumen fühlen. Nichts sagen.)', dann: [['erzaehler', 'Deine Finger klappen hoch. Wieder runter. Komisch, wie gut das passt.']] },
     ] },
     ['kaya', 'Jetzt die Linie. Ich lese Sätze. Ihr stellt euch hin.'],
@@ -262,7 +257,7 @@ export const GESPRAECHE_N4 = {
     ['erzaehler', 'Die Bank. Noah sitzt da, nach vorne gebeugt. Seine Hände zittern. Er atmet schnell. Zu schnell.'],
     ['noah', 'Alle – haben das – gesehen. Ich krieg – keine Luft.'],
     { wahl: [
-      { t: '„Hey, ist doch nur ein Foto. Morgen ist das vergessen.“', herz: { noah: -1 }, merke: 'noahGeredet', dann: [['noah', 'Nicht – reden. Bitte. Ich kann nicht – denken.'], ['erzaehler', 'Er ist bei Rot. Der Deckel ist weg. Worte kommen nicht an.']] },
+      { t: '„Ich schreib Luca. Sofort.“ (Handy raus)', herz: { noah: -1 }, merke: 'noahGeredet', dann: [['noah', 'Nicht – weggehen. Bitte. Bleib.'], ['erzaehler', 'Er ist bei Rot. Der Deckel ist weg. Worte kommen nicht an.']] },
       { t: '(Hinsetzen.) „Atme mit mir. Ich zähl.“', staerke: 'ruhig', herz: { noah: 1 }, merke: 'noahAtem' },
       { t: '„Soll ich Herrn Kuedes holen?“', staerke: 'hilfe', herz: { noah: 1, kaya: 1 }, merke: 'kuedesGeholt', dann: [['noah', '(nickt. Schüttelt den Kopf. Nickt.)'], ['erzaehler', 'Ben rennt los. Du bleibst. Bis er kommt, atmet ihr zusammen.']] },
     ] },
@@ -270,7 +265,7 @@ export const GESPRAECHE_N4 = {
       saetze: { 92: '(atmet in kurzen Stößen)', 75: 'Okay – okay. Langsamer.', 60: 'Ich – hör den Regen wieder.', 45: 'Puh. Ich war bei 95. Mindestens.' } },
       ausgang: (r) => (r.gut >= 3 ? 'zusammen' : 'langsam'),
       folgen: {
-        zusammen: { staerke: 'ruhig', herz: { noah: 3 }, merke: 'noahRunter', dann: [['noah', 'Du hast nicht geredet. Du hast nur geatmet. Das war … genau richtig.']] },
+        zusammen: { staerke: 'ruhig', herz: { noah: 3 }, merke: 'noahRunter', dann: [['noah', 'Du hast einfach mitgeatmet. Wie so ein Atem-Navi.']] },
         langsam: { herz: { noah: 1 }, merke: 'noahRunter', dann: [['noah', 'Es wird. Langsam. Danke, dass du geblieben bist.']] },
       } },
     { tu: 'n4_kuedesKommt' },
@@ -279,7 +274,8 @@ export const GESPRAECHE_N4 = {
     ['mila', 'Wer im Flur war, steht auf einer kurzen Liste.'],
   ],
   n4_dario: [
-    ['kenan', 'Yo. Kurz. Aber du hast das nicht von mir.'],
+    ['kenan', 'Yo. Zweimal messen, einmal reden, Brudi.'],
+    ['kenan', 'Du hast das nicht von mir.'],
     ['kenan', 'Dario ist gestern bei Rantini rausgeflogen. 8:30. Zwanzig Minuten im Flur.'],
     ['kenan', 'Und Luca war „auf Toilette“. Auch zwanzig Minuten. Lustige Toilette.'],
     { wahl: [
@@ -311,9 +307,9 @@ export const GESPRAECHE_N4 = {
 };
 
 export const tunN4 = (c) => ({
-  n4_testStart: () => (c.S.merke.kofferGepackt ? [['erzaehler', 'Du denkst an deinen Koffer. Er ist nicht aus Leder. Er ist in deinem Kopf. Und in deinen Händen.']] : []),
-  n4_handyBilanz: () => (c.S.merke.handyGelogen ? [['erzaehler', 'Dein Handy war in der Jacke. Aus. Aber wenn jemand fragt, wo es war, musst du lügen. Schon wieder.']] : []),
-  n4_kuedesKommt: () => (c.S.merke.kuedesGeholt ? [['kaya', '(kommt mit Ben) Ich bin da. Ihr habt das gut gemacht.'], ['kaya', 'Noah, magst du kurz mit in mein Büro? Nur Tee.'], ['noah', '… Okay. Mit Tee.']] : []),
+  n4_testStart: () => (c.S.merke.kofferGepackt ? [['erzaehler', 'Du denkst an deinen Koffer. Er ist in deinen Händen.']] : []),
+  n4_handyBilanz: () => (c.S.merke.handyGelogen ? [['erzaehler', 'Dein Handy war in der Jacke. Gelogen. Für nichts.']] : []),
+  n4_kuedesKommt: () => (c.S.merke.kuedesGeholt ? [['kaya', '(kommt mit Ben) Ich bin da. Ben war schneller als beim Sportfest.'], ['kaya', 'Noah, magst du kurz mit in mein Büro? Nur Tee.'], ['noah', '… Okay. Mit Tee.']] : []),
   n4_darioBilanz: () => {
     const n = ((c.S.sz || {}).darioDuell || {}).bemerkt || 0;
     return n >= 2 ? [['erzaehler', 'Kiefer. Herz. Hände. Du hast es gemerkt, bevor es kracht. Dario nicht. Noch nicht.']] : [];
@@ -333,7 +329,8 @@ export const tunN4 = (c) => ({
       mission: 'Miss deine Zahl diese Woche dreimal. Und probier einmal einen Skill aus deinem Koffer – bevor es Rot wird.' }, folgen: {} },
     ['erzaehler', 'Freitagabend. Eine unbekannte Nummer schickt dir ein Bild.'],
     ['erzaehler', 'Ein Screenshot. Profil von @annexe.cam. Unter „Admin“ steht: {name}.'],
-    ['erzaehler', 'Das bist du. Du warst das nie. Darunter: „Wie lange glaubst du, bleibt das geheim? 😈“'],
+    ['erzaehler', 'Das bist du. Du warst das nie.'],
+    ['erzaehler', 'Darunter: „Wie lange bleibt das geheim? 😈“'],
     ['erzaehler', 'Deine Zahl springt auf 90. Du weißt, wo dein Koffer ist.'],
     { tu: 'kapitelEnde' },
   ],

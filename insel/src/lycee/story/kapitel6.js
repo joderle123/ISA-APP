@@ -92,7 +92,7 @@ const STOPP = {
 export const GESPRAECHE_N6 = {
   n6_morgen: [
     ['erzaehler', 'Montag. Klassenfoto. Ben hat seinen besten Pulli an. Er hat nur einen.'],
-    ['mila', '(leise) Ich erklär’s dir morgen. Mit Beweis. Nicht hier.'],
+    ['mila', '(leise) Nach der Skills-Stunde. Bibliothek. Mit Beweis.'],
   ],
   n6_foto: [
     ['rantini', 'Voilà, 7P2! Alle zusammen! Näher! Noch näher!'],
@@ -121,7 +121,7 @@ export const GESPRAECHE_N6 = {
     ['ben', '(Schultern hängen, ganz leise) … Mir geht’s super.'],
     ['kaya', 'Was glaubt ihr? Den Worten – oder dem Rest?'],
     { wahl: [
-      { t: '„Dem Rest. Stimme und Körper sagen: Nein.“', staerke: 'lesen', herz: { kaya: 1 }, dann: [['kaya', 'Genau. Wenn Worte und Körper streiten, glauben wir meist dem Körper.']] },
+      { t: '„Dem Rest. Stimme und Körper sagen: Nein.“', staerke: 'lesen', herz: { kaya: 1 }, dann: [['kaya', 'Genau. Bens Mund lügt. Die Schultern nicht.']] },
       { t: '„Den Worten. Er hat’s ja gesagt.“', dann: [['ben', 'Bro. Ich hab gespielt, als wär mein Hund weg.'], ['kaya', 'Darum fragen wir nach, wenn es nicht passt.']] },
     ] },
     ['kaya', 'Darum ist Schreiben so schwierig. Im Chat fehlen Stimme und Körper.'],
@@ -143,7 +143,7 @@ export const GESPRAECHE_N6 = {
     ['mila', 'Danach hat Jo geschrieben: „Mach das nicht.“ Das ist auch ein Fakt.'],
     { wahl: [
       { t: '„Ich red mit Jo. Allein.“', staerke: 'mut', herz: { mila: 1 }, merke: 'mitJoReden', dann: [['mila', 'Gut. Mit „Ich“ anfangen. Nicht mit den Fäusten.']] },
-      { t: '„Ich stell das in den Klassenchat. Alle sollen es wissen.“', herz: { mila: -1 }, merke: 'chatGedroht', dann: [['mila', 'Dann bist du der nächste Account. Erst reden. Bitte.'], ['du', '… Okay. Erst reden.']] },
+      { t: '„Ich stell das in den Klassenchat. Alle sollen es wissen.“', herz: { mila: -1 }, merke: 'chatGedroht', dann: [['mila', 'Dann bist du der nächste Account.'], ['mila', 'Mach. Aber ohne mich.'], ['erzaehler', 'Mila packt ihren Laptop ein. Langsam.']] },
       { t: '„Ich geh damit zu Herrn Kuedes.“', staerke: 'hilfe', herz: { mila: 1, kaya: 1 }, merke: ['kuedesBeweis', 'mitJoReden'], dann: [['mila', 'Ja. Und mit Jo reden. Beides geht.']] },
     ] },
   ],
@@ -155,7 +155,7 @@ export const GESPRAECHE_N6 = {
         ['jo', 'VERRÄTER? Ich hab geschrieben: Mach das nicht!'],
         ['erzaehler', 'Jo wirft den Ball gegen das Brett. Sehr hart.'],
         ['jo', '… Sorry. Okay. Du hast recht, sauer zu sein.'] ] },
-      { t: '„Als ich das gehört hab, war ich verletzt. Wir sind doch Freunde.“', staerke: 'klar', herz: { jo: 2 }, merke: 'joIchBotschaft', dann: [
+      { t: '„Ey. Von dir? Das hat echt reingehauen.“', staerke: 'klar', herz: { jo: 2 }, merke: 'joIchBotschaft', dann: [
         ['jo', '(lässt den Ball fallen) … Wir SIND Freunde.'],
         ['jo', 'Das war ein dummer Witz. Ich hab nicht gedacht, dass er’s macht.'] ] },
       { t: '(Nichts sagen. Warten.)', staerke: 'warten', herz: { jo: 1 }, dann: [['erzaehler', 'Jo dribbelt. Einmal. Zweimal. Dann redet er von allein.'], ['jo', 'Ich hab Mist gebaut. Mit einem Satz.']] },
@@ -164,7 +164,7 @@ export const GESPRAECHE_N6 = {
     ['jo', 'Also hab ich gelacht.'],
     ['jo', 'Und dann hab ich den Satz gesagt. Damit ich nicht langweilig bin.'],
     { wahl: [
-      { t: '„Du wolltest dazugehören. Und dann ist es eskaliert.“', staerke: 'zuhoeren', herz: { jo: 2 }, merke: 'joGehoert', dann: [['jo', '(nickt langsam) … Ja. Genau so. Krass, dass du das checkst.']] },
+      { t: '„Du wolltest bei Luca nicht langweilig sein.“', staerke: 'zuhoeren', herz: { jo: 2 }, merke: 'joGehoert', dann: [['jo', '(nickt) … Ja. Wie ein Idiot. Wallah.']] },
       { t: '„Mir egal, warum. Es war mies.“', herz: { jo: -1 }, dann: [['jo', 'Ja. War es. Okay. Ich sag nix mehr.']] },
       { t: '„Ich hätte auch gelacht. Wahrscheinlich.“', staerke: 'zuhoeren', herz: { jo: 1 }, dann: [['jo', 'Echt? … Okay. Das hilft irgendwie.']] },
     ] },
@@ -201,7 +201,8 @@ export const GESPRAECHE_N6 = {
 };
 
 export const tunN6 = (c) => ({
-  n6_joStart: () => (c.S.merke.kuedesBeweis ? [['jo', 'Herr Kuedes hat mich heute schon angesprochen. Ich weiß, worum es geht.']] : []),
+  n6_joStart: () => [...(c.S.merke.joKnall ? [['jo', 'Erst Sportfest, jetzt das. Wir zwei haben echt Talent.']] : []), ...(c.S.merke.chatGedroht ? [['jo', 'Mila sagt, du willst es in den Klassenchat stellen. Echt jetzt?']] : []),
+    ...(c.S.merke.kuedesBeweis ? [['jo', 'Herr Kuedes hat mich heute schon angesprochen. Ich weiß, worum es geht.']] : [])],
   n6_joEnde: () => {
     const m = c.S.merke;
     const gut = m.joIchBotschaft || m.joGehoert;
@@ -209,7 +210,7 @@ export const tunN6 = (c) => ({
       : [['jo', 'Ich red mit Herrn Kuedes. Allein. Ich muss das selbst machen.']];
   },
   n6_cdiEnde: () => (c.S.merke.stoppKlar ? [['mila', '(nimmt die Kapuze ab) Du hast nicht gelächelt. Darum hat er’s geglaubt.'], ['mila', 'Danke. Ich üb das auch. Für mich.']]
-    : [['mila', 'Ich hab heute gelernt: Ein Stopp mit Lächeln ist kein Stopp.']]),
+    : [['mila', 'Nächstes Mal ohne Lächeln. Ich übe am Spiegel.']]),
   n6_schluss: () => [
     { szene: 'stempel', def: { modul: 'Modul 5 · Kommunikation und Grenzen', titel: 'Klar gesagt',
       gelernt: ['Worte, Stimme, Körper – und wem man glaubt', 'Jeder hat einen anderen Wohlfühl-Abstand', 'Ich-Botschaften statt Vorwürfe', 'Zuhören, bis man es wirklich verstanden hat', 'Stopp sagen: klar, ruhig, ohne Lächeln – und ein Stopp annehmen'],
@@ -217,7 +218,7 @@ export const tunN6 = (c) => ({
     ['erzaehler', 'Samstag, 21:40. Dein Handy vibriert.'],
     ['erzaehler', '„Luca hat dich aus der Gruppe 7P2 😎 (offiziell) entfernt.“'],
     ['erzaehler', 'Eine Minute später: „Luca hat die Gruppe 7P2 echte 💯 erstellt.“ Du bist nicht drin.'],
-    ['erzaehler', 'Wer ist drin? Wer bleibt bei dir?'],
+    ['erzaehler', 'Dein Handy bleibt still. Lange. Dann vibriert es. Einmal.'],
     { tu: 'kapitelEnde' },
   ],
 });

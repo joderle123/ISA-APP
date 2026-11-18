@@ -53,6 +53,7 @@ export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton
     if (steuerung.sitzt) return null;
     let best = null, bd = Infinity;
     for (const i of liste) {
+      if (i.tu === 'sitzen' && steuerung.tempo > 1.2) continue;   // beim Laufen kein Flackern von „Hinsetzen“ an jedem Stuhl
       const d = Math.hypot(i.x - p.x, i.z - p.z);
       if (d > i.r) continue;
       const w = d - (i.prio || 0) * 0.4;   // Dinge mit Vorrang (Arbeitsblatt, Automat) vor dem Stuhl daneben
@@ -103,9 +104,14 @@ export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton
           const k = ui.ebeneAuf('spiel', '<h2>🏀 Korb am Hof</h2><p class="ly-leer">Was spielst du?</p><div class="ly-d-optionen ly-bb-wahl">' +
             '<button type="button" data-m="frei"><b>Freiwürfe</b><small>5 Würfe · Rekord: ' + (s.merke.korbRekord || 0) + ' von 5</small></button>' +
             '<button type="button" data-m="dreier"><b>Dreier</b><small>weiter weg, grüner Streifen schmaler · Rekord: ' + (s.merke.dreierRekord || 0) + ' von 5</small></button>' +
-            '<button type="button" data-m="horse"><b>H-O-R-S-E gegen Ben</b><small>Wer trifft, wenn der andere verfehlt, gibt einen Buchstaben · ' + (s.merke.horseSiege || 0) + ' Siege</small></button></div>');
-          k.querySelectorAll('[data-m]').forEach((b) => { b.onclick = () => { ui.ebeneZu(); fertig(b.dataset.m); }; });
+            '<button type="button" data-m="horse"><b>H-O-R-S-E gegen Ben</b><small>Wer trifft, wenn der andere verfehlt, gibt einen Buchstaben · ' + (s.merke.horseSiege || 0) + ' Siege</small></button></div>' +
+            '<button type="button" class="ly-link" data-m="">✕ Doch nicht</button>');
+          const zu = (m) => { document.removeEventListener('keydown', esc, true); ui.ebeneZu(); fertig(m); };
+          const esc = (e) => { if (e.code === 'Escape') { e.preventDefault(); e.stopPropagation(); zu(''); } };
+          document.addEventListener('keydown', esc, true);
+          k.querySelectorAll('[data-m]').forEach((b) => { b.onclick = () => zu(b.dataset.m); });
         });
+        if (!modus) return;
         const t = await freiwurf({ modus, gegner: 'Ben' });
         if (modus === 'horse') { const r = ui.letzteRunde || {}; if (r.sieg) s.merke.horseSiege = (s.merke.horseSiege || 0) + 1; sichern(); freund('ben', 3, 'spiel');
           ui.toast('<b>' + (r.sieg ? 'Du gewinnst H-O-R-S-E!' : 'Ben gewinnt H-O-R-S-E') + '</b><span>Ben: „' + (r.sieg ? 'Revanche. Morgen. Gleiche Zeit.' : 'Ich bin einfach zu gut. Sagt mein Bauch.') + '“</span>', 'ly-t-herz'); return; }

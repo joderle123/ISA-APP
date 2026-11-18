@@ -216,3 +216,21 @@ Ziel war ≤ 200 Aufrufe und ≤ 400k Dreiecke – überall erreicht. Was es geb
   (Gesicht, dann Wort); Skills-Koffer mit Rot-Test; Warnlicht mit Tank-Anzeigen; Rucksack mit Steinen statt Kilo.
 - Antworten, die eine Stärke zeigen, erscheinen in gemischter Reihenfolge (die gute Antwort war zu oft die erste).
 - Grafik: Kreide-Hüpfspiel, Kreide-Sonne und Fahrradständer auf dem Hof; Farbband in den Gängen; Stempel „knallt“.
+
+## 19.11. (abends) – Qualitätsrunde 2 („sei noch kritischer“)
+- Zwei weitere Kritiken: harte Story-Kritik Kapitel 1–6 und Spielgefühl/Bedienung.
+- Story 1–6: Hook in den ersten Minuten (man ist schon gepostet, als man ankommt); Dario nicht mehr Hauptverdächtiger in
+  jeder Szene (Luca hat das Handy oben, die Spur bleibt offen); „#3“ wird beim Sportfest aufgelöst; lange Klick-Strecken
+  gekürzt (Kuedes-Faust, Tidderich-Ansage, „Wie laut ist dein Kopf?“ gestrichen); verlockende „schlechte“ Antworten mit
+  echten Folgen; Folgen aus früheren Entscheidungen (zu spät, Lina als Letzte, Jos Knall, Klassenchat-Drohung);
+  Sicherheitsnetze (116 111 nach der Bohnen-Wette, „Einem Erwachsenen zeigen“ bei fremder Nummer, Teams werden gelost);
+  eigene Stimmen für Yusuf, Chiara, Kenan, Ayla.
+- Minispiele: Gesichter lesen mit gezeichneter Figur und Aufdecken (🔍 bei wenig Hinweisen); Zonen-Wette mit eigenem Stein
+  auf der Linie; Bohnen-Wette mit wachsenden Balken; Mischpult mit −/+; Linie mit größeren Tippflächen.
+- Bedienung: Richtungspfeil zum Ziel am Bildschirmrand; Konfetti, Stempel und Ton am Kapitelende; Nachfrage vor dem
+  Überschreiben eines belegten Spielstands; Korb-Menü mit „Doch nicht“; Lautstärke gilt für alle Töne; Handy zeigt erst
+  alle Nachrichten; Tagesrückblick ohne Auto-Schließen; Toasts bleiben länger (nach Länge) und lassen sich festhalten;
+  Ziel-Box mit 🔊; Textgröße wirkt auch auf Ziel, Handy und Spiele; ⚙ auf dem Startbildschirm; Ziffern im Pause-Menü;
+  Skateboard: zwei Sekunden zum Zurückrollen; weniger Rechenlast hinter Menüs.
+- Neu: **Schul-Pass** mit 19 Abzeichen (Pause, Entdecken, Menschen, Story) als Reiter im Journal. Abzeichen nur für Dinge,
+  die man bewusst tut – nie für „richtige“ Antworten.
