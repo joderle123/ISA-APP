@@ -34,7 +34,7 @@ export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton
   dazu(-25.3, -17.2, 1.0, 'Deinen Spind öffnen', 'spind', { prio: 1 });
   dazu(-7.3, -65.6, 1.6, 'Klavier spielen', 'klavier', { prio: 1 });
   dazu(49.3, -60.0, 1.3, 'Keyboard spielen', 'keyboard', { prio: 1 });
-  dazu(58, -58.8, 1.4, 'Schlagzeug spielen', 'schlagzeug', { prio: 1 });
+  dazu(58, -58.8, 1.4, 'Bandprobe mit Ayla', 'schlagzeug', { prio: 1 });
   for (let x = 4; x < 28; x += 4) dazu(x, -71.0, 1.2, 'Ein Buch nehmen', 'buch', { prio: 1 });
   for (let z = -70; z < -58; z += 4) dazu(29.0, z, 1.2, 'Ein Buch nehmen', 'buch', { prio: 1 });
   dazu(-6.8, -9, 1.4, 'Pinnwand lesen', 'pinnwand', { prio: 1 });
@@ -78,7 +78,15 @@ export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton
         ui.toast('<b>Spind 117</b><span>Turnbeutel, Mathebuch, dein Stundenplan mit Kaffeefleck. Und eine sehr alte Banane.</span>'); return;
       case 'klavier': ton('melodie'); ui.toast('<b>Klavier</b><span>Drei Töne. Dann noch drei. Im Saal klingt alles größer.</span>'); return;
       case 'keyboard': ton('melodie2'); ui.toast('<b>Keyboard</b><span>Du findest den Knopf „Demo“. Jetzt spielt es Samba.</span>'); return;
-      case 'schlagzeug': ton('trommel'); ui.toast('<b>Bumm-tschak</b><span>Laut. Sehr laut. Es fühlt sich gut an.</span>'); return;
+      case 'schlagzeug': {
+        if (!ui.bandprobe) { ton('trommel'); return; }
+        const r = await ui.bandprobe(); const pz = Math.round(r.treffer / Math.max(1, r.gesamt) * 100);
+        const alt = s.merke.bandRekord || 0; s.merke.bandRekord = Math.max(alt, pz); s.merke.bandMal = (s.merke.bandMal || 0) + 1; sichern();
+        freund('ayla', 4, 'spiel');
+        const satz = pz >= 90 ? 'Okay. Du bist jetzt in der Band. Kein Witz.' : pz >= 70 ? 'Fast tight. Noch zwei Proben, dann Bühne.' : pz >= 40 ? 'Laut warst du. Das ist schon mal was.' : 'Wir nennen es Jazz. Nochmal?';
+        ui.toast('<b>' + pz + ' % im Takt</b><span>Ayla: „' + satz + '“ · ' + (pz > alt ? 'Neuer Rekord!' : 'Dein Rekord: ' + s.merke.bandRekord + ' %') + '</span>', 'ly-t-herz');
+        return;
+      }
       case 'buch': { s.merke.buecher = (s.merke.buecher || 0) + 1; sichern(); const b = BUECHER[(s.merke.buecher * 3) % BUECHER.length]; await ui.bild(b[0], b[1], 3.2); return; }
       case 'pinnwand': { const n = s.merke.pinnwand = ((s.merke.pinnwand || 0) + 1); sichern(); await ui.bild('Pinnwand', PINNWAND[(n - 1) % PINNWAND.length].join(' · '), 4.5); return; }
       case 'fundkiste': { const n = s.merke.fundkisteBlick = ((s.merke.fundkisteBlick || 0) + 1); sichern(); ui.toast('<b>Fundkiste</b><span>' + FUNDKISTE[(n - 1) % FUNDKISTE.length] + '</span>'); return; }

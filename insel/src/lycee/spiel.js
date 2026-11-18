@@ -1463,7 +1463,10 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
 
   // ---------- Schleife ----------
   let laeuft = false, raumAlt = undefined, geheimT = 0, klangT = 1, bankT = 0;
-  const loop = createLoop({ render: () => rr.render({ night: sky.night, time: loop.time, sun: sky.sunDir, sunColor: sky.colors && sky.colors.light }) });
+  // Während eines Minispiels auf eigener Fläche (Bandprobe, Tischtennis, Freiwurf) ruht die 3D-Welt fast ganz:
+  // sie ist ohnehin verdeckt, und der Takt im Spiel braucht die Rechenzeit.
+  let ruheN = 0;
+  const loop = createLoop({ render: () => { if (ui.ebeneArt && ui.ebeneArt() === 'spiel' && (ruheN++ % 20)) return; rr.render({ night: sky.night, time: loop.time, sun: sky.sunDir, sunColor: sky.colors && sky.colors.light }); } });
   loop.add(() => input.beginFrame(), { order: -100, always: true });
   loop.add((dt) => {
     if (!laeuft) { camera.position.set(-36, 16, 64); camera.lookAt(0, 6, -10); return; }

@@ -176,6 +176,7 @@ export function createUI({ root, input, speech }) {
   function ebeneAuf(art, html) { ebene.hidden = false; ebene.dataset.art = art; ebene.innerHTML = '<div class="ly-karte ly-k-' + art + '">' + html + '</div>'; return ebene.firstChild; }
   function ebeneZu() { ebene.hidden = true; ebene.innerHTML = ''; ebene.dataset.art = ''; }
   ui.ebeneZu = ebeneZu;
+  ui.ebeneArt = () => (ebene.hidden ? '' : ebene.dataset.art || '');
 
   // Menschen im Journal: Freundschaft als Balken (0–100) mit Stufe, Typ, Hobby und Gründen; oben dein Freundeskreis und Profil
   const menschenListe = (leute) => '<ul class="ly-j-leute ly-j-freunde">' + leute.map((l) => '<li><span class="ly-j-name" style="--f:' + esc(l.farbe) + '">' + esc(l.name) + (l.typ ? ' <em>' + esc(l.typ) + '</em>' : '') + '</span>' +
@@ -328,6 +329,97 @@ export function createUI({ root, input, speech }) {
     const taste = (e) => { if (e.code === 'KeyE' || e.code === 'Space' || e.code === 'Enter') { e.preventDefault(); e.stopPropagation(); schlagen(); } };
     btn.onclick = schlagen; cv.onpointerdown = schlagen;
     document.addEventListener('keydown', taste, true);
+    zeige(); requestAnimationFrame(draw);
+  });
+
+  // Bandprobe (Musikraum): Ayla spielt Bass, du trommelst. Drei Spuren – Kick, Snare, Becken. Noten fallen,
+  // tippen, wenn sie auf der Linie sind (Tasten 1/2/3, A/S/D, Pfeile; E = Snare). Ton mit WebAudio, ohne Dateien.
+  // Bewertet wird nur gegen dich selbst. Rückgabe: { treffer, gesamt, combo }
+  ui.bandprobe = () => new Promise((ok) => {
+    const SP = [{ n: 'Kick', f: '#e9734a', w: 'BUMM' }, { n: 'Snare', f: '#4f88c8', w: 'TSCHAK' }, { n: 'Becken', f: '#e9c46a', w: 'TSSS' }];
+    const k = ebeneAuf('spiel', '<h2>Bandprobe mit Ayla</h2><p class="ly-leer">Tippe die Spur, wenn der Punkt auf der Linie ist. <kbd>1</kbd> <kbd>2</kbd> <kbd>3</kbd> oder <kbd>A</kbd> <kbd>S</kbd> <kbd>D</kbd>.</p>' +
+      '<canvas width="520" height="330"></canvas><div class="ly-fw-stand"></div><div class="ly-bp-knoepfe">' + SP.map((x, i) => '<button type="button" class="ly-btn" data-sp="' + i + '" style="--f:' + x.f + '">' + x.n + '</button>').join('') + '</div>' +
+      '<button type="button" class="ly-link" data-a="stopp">Aufhören</button>');
+    const cv = k.querySelector('canvas'), x = cv.getContext('2d'), stand = k.querySelector('.ly-fw-stand');
+    let ctx = null; try { ctx = new (window.AudioContext || window.webkitAudioContext)(); if (ctx.state === 'suspended') ctx.resume(); } catch (e) { ctx = null; }
+    // Zeit über die normale Uhr (läuft immer); Töne werden in die Ton-Uhr umgerechnet
+    const jetzt = () => performance.now() / 1000;
+    const tAud = (t) => (ctx ? ctx.currentTime + Math.max(0, t - jetzt()) : 0);
+    const BPM = 96, B = 60 / BPM, TAKTE = 14, LINIE = 270, VOR = 1.6;   // VOR: so viele Sekunden sieht man eine Note kommen
+    // Muster je Takt (8 Achtel): Teil A nur Bass+Snare, Teil B mit Becken, Teil C kleine Wirbel
+    const noten = [];
+    for (let t = 0; t < TAKTE; t++) {
+      const teil = t < 4 ? 'A' : t < 9 ? 'B' : t < 12 ? 'C' : 'B';
+      for (let a = 0; a < 8; a++) {
+        const zeit = (t * 8 + a) * B / 2;
+        if (a === 0 || a === 4 || (teil !== 'A' && a === 5 && t % 2)) noten.push({ zeit, sp: 0 });
+        if (a === 2 || a === 6) noten.push({ zeit, sp: 1 });
+        if (teil === 'C' && a === 7) noten.push({ zeit, sp: 1 });
+        if (teil !== 'A' && (a === 1 || a === 3 || (teil === 'C' && a === 5))) noten.push({ zeit, sp: 2 });
+      }
+    }
+    noten.forEach((n) => { n.st = null; });
+    const ENDE = TAKTE * 4 * B + 1.2;
+    let start = jetzt() + 1.8, treffer = 0, combo = 0, best = 0, fertig = false, meldung = '', mT = 0, mF = '#fff', blitz = [0, 0, 0];
+    // Ton: Ayla am Bass (eigenes kleines Motiv), dazu deine Trommeln
+    const ton = (f, t, d, typ, v) => { if (!ctx) return; const o = ctx.createOscillator(), g = ctx.createGain(); o.type = typ; o.frequency.setValueAtTime(f, t); g.gain.setValueAtTime(v, t); g.gain.exponentialRampToValueAtTime(0.001, t + d); o.connect(g); g.connect(ctx.destination); o.start(t); o.stop(t + d + 0.05); };
+    const rausch = (t, d, v, hp) => { if (!ctx) return; const b = ctx.createBuffer(1, Math.ceil(ctx.sampleRate * d), ctx.sampleRate), a = b.getChannelData(0); for (let i = 0; i < a.length; i++) a[i] = (Math.random() * 2 - 1) * (1 - i / a.length); const q = ctx.createBufferSource(), g = ctx.createGain(), fl = ctx.createBiquadFilter(); fl.type = 'highpass'; fl.frequency.value = hp; q.buffer = b; g.gain.value = v; q.connect(fl); fl.connect(g); g.connect(ctx.destination); q.start(t); };
+    const trommel = (sp, t = ctx ? ctx.currentTime : 0) => { if (sp === 0) { ton(110, t, 0.18, 'sine', 0.6); ton(55, t, 0.25, 'sine', 0.5); } else if (sp === 1) { rausch(t, 0.14, 0.35, 900); ton(190, t, 0.08, 'triangle', 0.2); } else rausch(t, 0.06, 0.18, 6000); };
+    const BASS = [55, 55, 65.4, 73.4, 49, 49, 58.3, 65.4];   // Aylas Motiv (A, A, C, D | G, G, Bb, C)
+    if (ctx) for (let t = 0; t < TAKTE; t++) for (let a = 0; a < 4; a++) { const f = BASS[(t % 2) * 4 + a]; ton(f, tAud(start + (t * 4 + a) * B), B * 0.9, 'sawtooth', 0.09); ton(f * 2, tAud(start + (t * 4 + a) * B), B * 0.6, 'triangle', 0.05); }
+    if (ctx) for (let i = 0; i < 4; i++) rausch(tAud(start - 1.6 + i * 0.4), 0.04, 0.25, 4000);   // Einzählen: tick tick tick tick
+    const zeige = () => { stand.textContent = 'Treffer: ' + treffer + ' von ' + noten.length + ' · Serie: ' + combo + ' · beste Serie: ' + best; };
+    const schluss = () => {
+      if (fertig) return; fertig = true;
+      document.removeEventListener('keydown', taste, true);
+      setTimeout(() => { try { ctx && ctx.close(); } catch (e) { /* egal */ } ebeneZu(); ok({ treffer, gesamt: noten.length, combo: best }); }, 700);
+    };
+    const schlag = (sp) => {
+      if (fertig) return;
+      trommel(sp); blitz[sp] = 1;
+      const t = jetzt() - start;
+      let n = null, dbest = 0.22;
+      for (const q of noten) if (q.sp === sp && !q.st) { const d = Math.abs(q.zeit - t); if (d < dbest) { dbest = d; n = q; } }
+      if (n) { n.st = dbest < 0.09 ? 'sauber' : 'ok'; treffer++; combo++; best = Math.max(best, combo); meldung = SP[sp].w + (n.st === 'sauber' ? '!' : ''); mF = SP[sp].f; mT = 0.5; }
+      else { combo = 0; }
+      zeige();
+    };
+    const taste = (e) => {
+      const m = { Digit1: 0, KeyA: 0, ArrowLeft: 0, Digit2: 1, KeyS: 1, ArrowDown: 1, KeyE: 1, Space: 1, Digit3: 2, KeyD: 2, ArrowRight: 2 }[e.code];
+      if (e.code === 'Escape') { e.preventDefault(); e.stopPropagation(); schluss(); return; }
+      if (m === undefined) return; e.preventDefault(); e.stopPropagation(); if (!e.repeat) schlag(m);
+    };
+    document.addEventListener('keydown', taste, true);
+    k.querySelectorAll('[data-sp]').forEach((b) => { b.onpointerdown = (e) => { e.preventDefault(); schlag(+b.dataset.sp); }; });
+    cv.onpointerdown = (e) => { const r = cv.getBoundingClientRect(); schlag(Math.max(0, Math.min(2, Math.floor((e.clientX - r.left) / r.width * 3)))); };
+    k.querySelector('[data-a="stopp"]').onclick = schluss;
+    const BR = 520 / 3;
+    const draw = () => {
+      const t = jetzt() - start;
+      x.clearRect(0, 0, 520, 330);
+      x.fillStyle = '#23262f'; x.fillRect(0, 0, 520, 330);
+      for (let i = 0; i < 3; i++) {
+        x.fillStyle = i % 2 ? '#2a2e39' : '#262a34'; x.fillRect(i * BR, 0, BR, 330);
+        if (blitz[i] > 0) { x.fillStyle = 'rgba(255,255,255,' + (blitz[i] * 0.18) + ')'; x.fillRect(i * BR, 0, BR, 330); blitz[i] = Math.max(0, blitz[i] - 0.08); }
+        x.fillStyle = SP[i].f; x.globalAlpha = 0.9; x.beginPath(); x.arc(i * BR + BR / 2, LINIE, 24, 0, 7); x.lineWidth = 4; x.strokeStyle = SP[i].f; x.stroke(); x.globalAlpha = 1;
+        x.fillStyle = '#ffffff99'; x.font = 'bold 13px system-ui'; x.textAlign = 'center'; x.fillText(SP[i].n, i * BR + BR / 2, 318);
+      }
+      x.fillStyle = '#ffffff55'; x.fillRect(0, LINIE - 1, 520, 2);
+      for (const n of noten) {
+        const d = n.zeit - t;
+        if (!n.st && d < -0.22) { n.st = 'weg'; combo = 0; zeige(); }
+        if (n.st || d > VOR || d < -0.3) continue;
+        const y = LINIE - d / VOR * (LINIE + 20);
+        x.fillStyle = SP[n.sp].f; x.beginPath(); x.arc(n.sp * BR + BR / 2, y, 17, 0, 7); x.fill();
+        x.strokeStyle = '#1b1d26'; x.lineWidth = 3; x.stroke();
+      }
+      if (t < 0) { x.fillStyle = '#fff'; x.font = 'bold 34px system-ui'; x.textAlign = 'center'; x.fillText(String(Math.min(4, Math.ceil(-t / 0.4))), 260, 150); }
+      if (mT > 0) { x.save(); x.translate(260, 120); x.rotate(-0.08); x.font = '900 40px system-ui'; x.textAlign = 'center'; x.lineWidth = 6; x.strokeStyle = '#1b1d26'; x.strokeText(meldung, 0, 0); x.fillStyle = mF; x.fillText(meldung, 0, 0); x.restore(); mT -= 0.016; }
+      if (combo >= 8) { x.fillStyle = '#ffd166'; x.font = 'bold 16px system-ui'; x.textAlign = 'left'; x.fillText('Serie ' + combo, 12, 24); }
+      if (t > ENDE) { schluss(); return; }
+      if (!fertig) requestAnimationFrame(draw);
+    };
+    if (/[?&]test/.test(location.search)) window.__band = { start: () => start, noten };   // nur für Tests
     zeige(); requestAnimationFrame(draw);
   });
 
