@@ -18,6 +18,7 @@ import { baueWelt } from './welt.js';
 import { baueRequisiten, stelle } from './requisiten.js';
 import { baueNatur } from './natur.js';
 import { STAMM, stammSzene } from './stammgaeste.js';
+import { createHund, HUND_ERSTMAL, HUND_MOMENTE } from './hund.js';
 import { ladePerson, namensschild, SITZ } from './figuren.js';
 import { fussSchatten, WOLKEN } from './texturen.js';
 import { createHandschlag, HANDSCHLAEGE } from './handschlag.js';
@@ -211,6 +212,9 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     try { audio.footstep(holz ? 'wood' : r ? 'tile' : pflaster ? 'rock' : 'grass', rennt ? 0.55 : 0.38); } catch (e) { /* Ton noch nicht bereit */ }
   };
   const tiere = createTiere({ scene, steuerung });
+  // Bonbon, der Schulhund der SePAS (hund.js): Körbchen neben dem Regal
+  const hund = createHund({ scene, x: -13.6, z: -9.6, rot: 0.6 });
+  welt.kasten.push({ x0: -14.25, x1: -12.95, z0: -10.25, z1: -8.95, y0: 0, y1: 0.5 });
   rr.attachPost({ scene, camera, veil });
 
   // ---------- Zustand ----------
@@ -1987,6 +1991,28 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     else ui.toast('<b>Tank +1</b><span>Mission: ' + m.mal + ' von 3.</span>');
     sichern();
   }
+  // Bonbon besuchen: beim ersten Mal (und bis es klappt) die Wahl „Hand hinhalten“ oder „einfach streicheln“
+  async function hundBesuch() {
+    if (imGespraech) return;
+    imGespraech = true; input.setEnabled(false); steuerung.frei = false; ui.hinweis(null); steuerung.fokus = hund.pos;
+    const erz = (t) => ui.sprich({ ...sprecher('erzaehler'), text: t });
+    try {
+      if (!S.merke.hundFreund) {
+        await erz(HUND_ERSTMAL.frage);
+        const i = await ui.waehle(HUND_ERSTMAL.opt.map((o) => o.t)), o = HUND_ERSTMAL.opt[i] || HUND_ERSTMAL.opt[0];
+        for (const t of o.dann) await erz(t);
+        if (o.gut) { S.merke.hundFreund = true; hund.freude(); ui.toast('<b>🐕 Bonbon mag dich</b><span>Du hast gefragt und gewartet. Er hat entschieden.</span>', 'ly-t-herz'); }
+        else S.merke.hundZuSchnell = (S.merke.hundZuSchnell || 0) + 1;
+      } else {
+        const n = S.merke.hundBesuche = (S.merke.hundBesuche || 0) + 1;
+        hund.freude(); await erz(HUND_MOMENTE[n % HUND_MOMENTE.length]);
+        if (n === 5) ui.toast('<b>🐕 Fünfmal bei Bonbon</b><span>Manche Pausen sind am besten mit Hund.</span>', 'ly-t-ent');
+      }
+      setTimeout(() => missionTank('sitzen'), 0);
+    } finally {
+      ui.dialogZu(); imGespraech = false; input.setEnabled(true); steuerung.frei = true; steuerung.fokus = null; sperreBis = performance.now() + 600; sichern();
+    }
+  }
   // Gespräch mit einem Stammgast: einmal je Kapitel eine neue Szene, sonst ein kurzer Satz
   async function stammRede(x) {
     const st = STAMM.find((q) => q.id === x.d.stamm); if (!st || imGespraech) return;
@@ -2024,6 +2050,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   async function aktion(i) {
     setTimeout(() => missionTank(i.tu), 0);
     if (i.tu === 'sitzen') { await ia.tu(i); sperreBis = performance.now() + 350; return; }
+    if (i.tu === 'hund') { await hundBesuch(); return; }
     if (i.tu === 'statist' && i.st.d.stamm) { await stammRede(i.st); return; }
     if (i.tu === 'statist') { gruss(i.st); sperreBis = performance.now() + 1200; return; }
     if (i.tu === 'zufall') { imGespraech = true; input.setEnabled(false); steuerung.frei = false; ui.hinweis(null);
@@ -2257,6 +2284,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     }
     statistenBewegen(dt);
     sprueche(dt);
+    hund.tick(dt, Math.hypot(steuerung.pos.x - hund.pos.x, steuerung.pos.z - hund.pos.z) < 3.2);
     tiere.update(dt, t, { night: sky.night || 0, onGerd: () => {
       if (!S || imGespraech) return;
       const n = S.merke.gerd = (S.merke.gerd || 0) + 1; sichern();
@@ -2334,6 +2362,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     naechste = imGespraech || steuerung.brett ? null : wenNah();
     iaNah = !naechste && !imGespraech && !probe && !steuerung.brett ? ia.naechste(p) : null;
     if (!naechste && !iaNah && !imGespraech && !probe && !steuerung.brett) iaNah = zufall.naechste(p);
+    if (!naechste && !iaNah && !imGespraech && !probe && !steuerung.brett && Math.hypot(p.x - hund.pos.x, p.z - hund.pos.z) < 1.9) iaNah = { tu: 'hund', text: S.merke.hundFreund ? 'Bonbon streicheln' : 'Zu Bonbon gehen', x: hund.pos.x, z: hund.pos.z };
     if (!naechste && !iaNah && !imGespraech && !probe && !steuerung.brett) { const st = statistNah(p); if (st) { const sg = st.d.stamm && STAMM.find((q) => q.id === st.d.stamm); iaNah = { tu: 'statist', text: sg ? 'Mit ' + sg.name.split(' ')[0] + ' reden' : 'Hallo sagen', st, x: st.p.x, z: st.p.z }; } }
     ui.hinweis(naechste ? 'Mit ' + naechste.def.name + ' reden' : iaNah ? iaNah.text : null);
     if (!imGespraech && !gesperrt() && (input.state.actionTap || input.state.action)) { if (naechste) rede(naechste.id); else if (iaNah) aktion(iaNah); }

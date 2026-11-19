@@ -391,7 +391,7 @@ export function baueWelt({ material, materialInnen, materialLaub }) {
     P('einrichtung/ChairCushioned', -14.6, -6.2, Math.PI / 2, { h: 0.95 }); P('einrichtung/Plant', -9, -12.8, 0, { h: 1.3 });
     // Ein Raum, in dem man reden möchte: Sessel, Stehlampe, Bilder, Regal mit Büchern, Kaktus auf dem Tisch
     P('kk/armchair_pillows', -9.6, -6.2, -Math.PI / 2, { h: 0.9, fest: true }); P('kk/lamp_standing', -9.0, -3.2, 0, { h: 1.75, fest: 0.2 });
-    P('kk/shelf_B_small_decorated', -15.55, -9.6, Math.PI / 2, { h: 1.0, fest: true }); P('kk/book_set', -15.5, -9.6, Math.PI / 2, { h: 0.26, y: 1.0 });
+    P('kk/shelf_B_small_decorated', -15.62, -9.6, Math.PI / 2, { h: 0.75, y: 1.15 }); P('kk/shelf_B_small_decorated', -15.62, -11.2, Math.PI / 2, { h: 0.75, y: 1.6 });
     P('kk/pictureframe_large_B', -8.12, -7.0, -Math.PI / 2, { s: 1.6, y: 1.35 }); P('kk/pictureframe_small_A', -8.12, -9.4, -Math.PI / 2, { s: 0.45, y: 1.5 });
     P('kk/cactus_small_A', -12.2, -5.4, 0, { h: 0.25, y: 0.45 }); }
   // Kantine (x 8 … 29.8, z −14 … −2): Ausgabe-Theke an der Ostwand, Tische
