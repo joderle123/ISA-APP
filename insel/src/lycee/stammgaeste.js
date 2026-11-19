@@ -4,6 +4,8 @@
 //
 // Aufbau je Figur: name, farbe, aussehen (wie STATISTEN in spiel.js), steht [x, z, yaw, haltung],
 // besuch[kap] = Szene (die letzte mit kap ≤ aktuellem Kapitel gilt), nochmal = kurze Sätze für weitere Besuche im selben Kapitel.
+// plan (optional) = Tagesablauf: [{ ab: Uhrzeit, ort, steht, saetze? }] – ab dieser Uhrzeit steht die Figur dort (spiel.js setzt sie bei jedem
+// Schritt der Geschichte um); saetze ersetzen dort die „nochmal“-Sätze.
 // Szene: Liste aus ['s', text] (Stammgast), ['du', text] (Spielfigur), ['e', text] (Erzähler)
 //        oder { wahl: [{ t, merke?, dann: [...] }] }.  {name} wird ersetzt.
 // Rückblick: eine Szene kann eine Funktion (merke) => Liste sein, um frühere Antworten aufzugreifen.
@@ -34,6 +36,8 @@ export const STAMM = [
     id: 'gilles', ort: 'Innenhof, Sitzstufen', steckbrief: '5ème. Schreibt ein Lied über die Annexe. Jede Woche ein Vers.', name: 'Gilles (5ème)', farbe: '#6b4e8a',
     aussehen: { modell: 'menschen', stil: 'Casual2', haut: '#e0b48c', haar: '#2b1d14', oben: '#6b4e8a', unten: '#2d3748', schuhe: '#f2f2f2', hoehe: 1.8, frisur: 'locken' },
     steht: [-11.6, -46.25, 0, 'sitzt'],
+    plan: [{ ab: 0, ort: 'Innenhof, Sitzstufen', steht: [-11.6, -46.25, 0, 'sitzt'] },
+      { ab: 15.0, ort: 'Nach der Schule: Musikraum (Bandprobe)', steht: [54.6, -60.6, 0.64, 'redet'], saetze: ['Bandprobe! Noor gibt den Takt an. Ich halte kaum mit.', 'Wir suchen immer noch einen Bass. Kannst du Bass?'] }],
     besuch: {
       1: [['s', 'Neu? Sieht man. Du schaust noch nach oben.'], ['s', 'Ich bin Gilles. 5ème. Ich schreib ein Lied über die Annexe.'],
         { wahl: [{ t: '„Wie geht es?“', dann: [['s', '(singt) „Der Bus fährt um sieben. Ich steh um zehn nach da.“'], ['s', 'Ist noch nicht fertig. Ist ein Jahresprojekt.']] },
@@ -165,6 +169,9 @@ export const STAMM = [
     id: 'fernand', ort: 'Gang, beim WC', steckbrief: 'Repariert alles. Nur die Uhr in der Halle nicht.', name: 'Fernand · Hausmeister', farbe: '#3d5a80',
     aussehen: { modell: 'menschen', stil: { alle: 'Worker', Head: 'Casual' }, haut: '#f1c7a2', haar: '#9a9a9a', oben: '#3d5a80', unten: '#2d3748', schuhe: '#3a2a1c', hoehe: 1.74 },
     steht: [26.6, -15.0, -Math.PI / 2, 'redet'],
+    plan: [{ ab: 0, ort: 'Gang, beim WC', steht: [26.6, -15.0, -Math.PI / 2, 'redet'] },
+      { ab: 12.0, ort: 'Mittags: Hinterhof, bei Paulo', steht: [32.6, -12.7, -0.6, 'redet'], saetze: ['Mittagspause. Paulo bringt mir immer eine Karotte.', 'Hier hinten ist es ruhig. Nur die Kisten klappern.'] },
+      { ab: 13.5, ort: 'Gang, beim WC', steht: [26.6, -15.0, -Math.PI / 2, 'redet'] }],
     besuch: {
       1: [['s', 'Moien. Fernand. Hausmeister.'], ['s', 'Wenn was kaputt ist: Ich bin der, der kommt.'], ['s', 'Wenn DU es kaputt gemacht hast: Sag es einfach.'],
         { wahl: [{ t: '„Und wenn ich dann Ärger krieg?“', dann: [['s', 'Kaputt ist kaputt. Verstecken macht es nicht heil.'], ['s', 'Ehrlich sagen: halber Ärger. Versprochen.']] },
@@ -186,6 +193,9 @@ export const STAMM = [
     id: 'noor', ort: 'Neubau, Musikraum', steckbrief: 'Trommelt nur, wenn keiner zuschaut. Noch.', name: 'Noor (6ème)', farbe: '#2fb8a8',
     aussehen: { modell: 'frauen', stil: 'Casual', haut: '#a0694a', haar: '#1b1410', oben: '#2fb8a8', unten: '#2d3748', schuhe: '#f2f2f2', hoehe: 1.56 },
     steht: [55.8, -59.0, -Math.PI / 2, 'redet'],
+    plan: [{ ab: 0, ort: 'Neubau, Musikraum', steht: [55.8, -59.0, -Math.PI / 2, 'redet'] },
+      { ab: 12.0, ort: 'Mittags: Innenhof, bei Gilles', steht: [-12.8, -46.25, 0, 'sitzt'], saetze: ['Gilles summt. Ich trommle auf der Stufe mit.', 'Mittags ist der Musikraum zu. Also trommle ich hier.'] },
+      { ab: 13.5, ort: 'Neubau, Musikraum', steht: [55.8, -59.0, -Math.PI / 2, 'redet'] }],
     besuch: {
       1: [['e', 'Bumm. Tschak. Bumm-bumm. Tschak.'], ['s', 'Oh! Sorry. Zu laut? Die Ampel sagt „BAND!“.'], ['s', 'Ich bin Noor. Ich spiel nur, wenn keiner da ist.'],
         { wahl: [{ t: '„Spiel ruhig weiter. Ich hör zu.“', merke: 'noorZuhoeren', dann: [['e', 'Noor spielt einen kurzen Rhythmus. Dann hört sie auf.'], ['s', 'Das war mein erstes Publikum. Ein Mensch. Zählt das?'], ['du', 'Zählt.']] },
@@ -210,6 +220,9 @@ export const STAMM = [
     id: 'tiago', ort: 'Neubau, Informatik', steckbrief: 'Baut ein Spiel. Sucht Testpersonen. Ehrliche.', name: 'Tiago (6ème) · Coding-Club', farbe: '#2b3a55',
     aussehen: { modell: 'menschen', stil: 'Casual2', haut: '#d7a97f', haar: '#3a2a1c', oben: '#2b3a55', unten: '#3a3f4b', schuhe: '#e9b949', hoehe: 1.58 },
     steht: [60.4, -39.45, Math.PI, 'sitzt'],
+    plan: [{ ab: 0, ort: 'Neubau, Informatik', steht: [60.4, -39.45, Math.PI, 'sitzt'] },
+      { ab: 12.0, ort: 'Mittags: CDI, an den Computern', steht: [-13.7, -19.5, 0, 'redet'], saetze: ['Im CDI ist das WLAN besser. Verrat es keinem.', 'Ich teste mein Spiel. Ganz leise.'] },
+      { ab: 13.5, ort: 'Neubau, Informatik', steht: [60.4, -39.45, Math.PI, 'sitzt'] }],
     besuch: {
       1: [['s', 'Hey. Kurze Frage: Läuft deine Figur rückwärts?'], ['du', '… Nein?'], ['s', 'Meine schon. In meinem Spiel. Ich bau ein Spiel.'], ['s', 'Das ist kein Fehler. Das ist ein Extra. Sag ich mir.']],
       2: [['s', 'Testest du mein Spiel? Sag ehrlich, was du denkst.'], ['e', 'Ein Kreis hüpft über Kästen. Manchmal fällt er durch den Boden.'],
@@ -235,7 +248,7 @@ export const STAMM = [
 ];
 
 // Szene für einen Besuch: Kapitel-Szene (einmal je Kapitel), danach kurze „nochmal“-Sätze
-export function stammSzene(st, kap, merke) {
+export function stammSzene(st, kap, merke, ortSaetze) {
   const ks = Object.keys(st.besuch).map(Number).filter((k) => k <= kap).sort((a, b) => b - a);
   const k = ks[0];
   const key = 'stb_' + st.id + '_' + k;
@@ -244,5 +257,14 @@ export function stammSzene(st, kap, merke) {
     return { neu: true, key, zeilen: typeof sz === 'function' ? sz(merke) : sz };
   }
   const n = (merke['stn_' + st.id] = (merke['stn_' + st.id] || 0) + 1);
-  return { neu: false, zeilen: [['s', st.nochmal[n % st.nochmal.length]]] };
+  const pool = ortSaetze && ortSaetze.length ? ortSaetze : st.nochmal;
+  return { neu: false, zeilen: [['s', pool[n % pool.length]]] };
+}
+
+// Wo ist die Figur um diese Uhrzeit? (letzter Plan-Eintrag mit ab ≤ uhr; ohne Plan: fester Ort)
+export function stammPlan(st, uhr) {
+  if (!st.plan) return { ab: 0, ort: st.ort, steht: st.steht };
+  let e = st.plan[0];
+  for (const q of st.plan) if (uhr >= q.ab) e = q;
+  return e;
 }

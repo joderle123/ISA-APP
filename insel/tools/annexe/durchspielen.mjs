@@ -1,6 +1,6 @@
 // Annexe Junglinster – jedes Kapitel per Autoplay (?debug, „Durchspielen“) bis zum Ende laufen lassen.
 // Aufruf (aus insel/): node tools/annexe/durchspielen.mjs [kapitel …] [--wahl=zufall|0|letzte] [--bilder=ORDNER]
-// Bericht: je Kapitel Schritte, Zeit, ob das Ende erreicht wurde, Konsolenfehler. Hängt ein Schritt > 90 s, wird er gemeldet.
+// Bericht: je Kapitel Schritte, Zeit, ob das Ende erreicht wurde, Konsolenfehler. Hängt ein Schritt > 150 s, wird er gemeldet (ohne Grafikkarte laufen Minispiele mit 1 Bild/s).
 import { launch } from '../../tests/lib.mjs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -28,7 +28,7 @@ for (const kap of KAP.length ? KAP : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) {
     const z = await page.evaluate(() => ({ s: LYCEE.schritt, kap: (LYCEE.daten.SCHRITTE.find((x) => x.id === LYCEE.schritt) || {}).kap || 1, fertig: !!LYCEE.zustand.fertig, ende: !!document.querySelector('.ly-ebene[data-art="ende"]:not([hidden])') }));
     if (z.s !== letzter) { besucht.push(z.s); letzter = z.s; seit = Date.now(); if (bilder) await page.screenshot({ path: join(bilder, 'k' + kap + '-' + besucht.length + '-' + z.s + '.png') }); }
     if (z.kap !== kap || z.ende || z.fertig) { ende = true; break; }
-    if (Date.now() - seit > 90000) { haengt = z.s; if (bilder) await page.screenshot({ path: join(bilder, 'k' + kap + '-haengt.png') }); break; }
+    if (Date.now() - seit > 150000) { haengt = z.s; if (bilder) await page.screenshot({ path: join(bilder, 'k' + kap + '-haengt.png') }); break; }
   }
   gesamtFehler += fehler.length;
   console.log('Kapitel ' + kap + ': ' + (ende ? '✓ bis zum Ende' : '✗ nicht fertig' + (haengt ? ' – hängt bei „' + haengt + '“' : '')) + ' · ' + besucht.length + ' Schritte · ' + Math.round((Date.now() - t0) / 1000) + ' s · Konsolenfehler: ' + fehler.length + (fehler.length ? ' → ' + JSON.stringify(fehler.slice(0, 3)) : ''));

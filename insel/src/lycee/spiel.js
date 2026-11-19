@@ -17,7 +17,7 @@ import { lambertVC } from '../world/landmarks.js';
 import { baueWelt } from './welt.js';
 import { baueRequisiten, stelle } from './requisiten.js';
 import { baueNatur } from './natur.js';
-import { STAMM, stammSzene } from './stammgaeste.js';
+import { STAMM, stammSzene, stammPlan } from './stammgaeste.js';
 import { createHund, HUND_ERSTMAL, HUND_MOMENTE } from './hund.js';
 import { ladePerson, namensschild, SITZ } from './figuren.js';
 import { fussSchatten, WOLKEN } from './texturen.js';
@@ -344,7 +344,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     // Halle: liest an der Pinnwand
     { modell: 'frauen', stil: 'Casual', haut: '#c99a72', haar: '#2b1d14', oben: '#e9c46a', unten: '#3a3f4b', schuhe: '#f2f2f2', hoehe: 1.62, steht: [-6.7, -12.4, -Math.PI / 2, 'handy'] },
     // Neubau: malt an der Staffelei, sitzt am PC; Lesesaal: zwei lesen
-    { modell: 'frauen', stil: 'Casual', haut: '#e0b48c', haar: '#7a4a2a', oben: '#e9b949', unten: '#2d3748', schuhe: '#f2f2f2', hoehe: 1.6, steht: [54.0, -51.3, Math.PI, 'redet'] },
+    { modell: 'frauen', stil: 'Casual', haut: '#e0b48c', haar: '#7a4a2a', oben: '#e9b949', unten: '#2d3748', schuhe: '#f2f2f2', hoehe: 1.6, steht: [60.0, -51.3, Math.PI, 'redet'] },
     { modell: 'menschen', stil: 'Casual2', haut: '#c68e64', haar: '#1b1410', oben: '#4f88c8', unten: '#3a3f4b', schuhe: '#ffffff', hoehe: 1.66, steht: [50.0, -43.85, Math.PI, 'sitzt'] },
     { modell: 'frauen', stil: 'Adventurer', haut: '#f1c7a2', haar: '#c9a15a', oben: '#3fa66b', unten: '#3a3f4b', schuhe: '#f2f2f2', hoehe: 1.6, steht: [8.25, -65.65, 0, 'sitzt'] },
     { modell: 'menschen', stil: 'Casual', haut: '#9b6a45', haar: '#1b1410', oben: '#d9693f', unten: '#2d3748', schuhe: '#2b2b2b', hoehe: 1.7, steht: [19.7, -58.35, Math.PI, 'sitzt'] },
@@ -408,6 +408,29 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       x.weg = weg; x.f.group.visible = !weg; if (x.f.group.children[0]) x.f.group.children[0].visible = !weg;
       x.h.x = weg ? 1e5 : x.p.x; x.h.z = weg ? 1e5 : x.p.z;
     });
+    stammUmsetzen(uhr);
+  }
+  // Tagesablauf der Stammgäste (stammgaeste.js: plan): bei jedem Schritt der Geschichte an den Ort der Uhrzeit setzen
+  let uhrJetzt = 8;
+  function stammUmsetzen(uhr) {
+    uhrJetzt = uhr;
+    for (const x of statisten) {
+      if (!x.d.stamm) continue;
+      const st = STAMM.find((q) => q.id === x.d.stamm), e = st && stammPlan(st, uhr);
+      if (!e || !st.plan) continue;
+      x.planSaetze = e.saetze || null;
+      if (x.planAb === e.ab) continue;
+      const neuOrt = x.planAb !== undefined || e.steht[0] !== st.steht[0] || e.steht[1] !== st.steht[1];
+      x.planAb = e.ab;
+      if (!neuOrt) continue;
+      const [px, pz, rot, halt] = e.steht, f = x.f;
+      let q = { x: px, z: pz, rot, h: 0.47 };
+      if (halt === 'sitzt') { const sp = sitzSuche(px, pz); if (sp) q = { x: sp.x, z: sp.z, rot: sp.rot, h: sp.h || 0.47 }; }
+      f.group.position.set(q.x, 0, q.z); f.group.rotation.y = q.rot; x.p.set(q.x, 0, q.z); x.h.x = q.x; x.h.z = q.z;
+      x.d.steht = [q.x, q.z, q.rot, halt];
+      f.sitzen(halt === 'sitzt', q.h);
+      f.spiele(halt === 'redet' ? 'Interact' : halt === 'handy' ? 'Idle_Neutral' : 'Idle', halt === 'redet' ? { tempo: 0.35 } : undefined);
+    }
   }
   function statistenBewegen(dt) {
     for (const x of statisten) {
@@ -1630,7 +1653,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   ui.onJournal = () => {
     if (!S || imGespraech) return;
     const b = bilanz();
-    ui.journal({ name: S.name, stundenplan: S.stundenplan, leute: b.leute, freunde: b.freunde, staerken: b.staerken, geheimnisse: GEHEIMNISSE.filter((g) => S.entdeckt.includes(g.id)), gesamt: GEHEIMNISSE.length, lernkarten: S.lernkarten || [], heft: S.skillsHeft || [], erinnerungen: S.erinnerungen || [], stamm: STAMM.map((q) => ({ name: q.name, farbe: q.farbe, ort: q.ort || '', text: q.steckbrief || '', kennt: !!S.merke['stk_' + q.id], besuche: Object.keys(S.merke).filter((k) => k.startsWith('stb_' + q.id + '_')).length })), leiter: leiterJournal(), zaehler: zaehler(), pass: ABZEICHEN.map((x) => ({ sy: x.sy, t: x.t, hinweis: x.hinweis, hat: (S.pass || []).includes(x.id) })) });
+    ui.journal({ name: S.name, stundenplan: S.stundenplan, leute: b.leute, freunde: b.freunde, staerken: b.staerken, geheimnisse: GEHEIMNISSE.filter((g) => S.entdeckt.includes(g.id)), gesamt: GEHEIMNISSE.length, lernkarten: S.lernkarten || [], heft: S.skillsHeft || [], erinnerungen: S.erinnerungen || [], stamm: STAMM.map((q) => ({ name: q.name, farbe: q.farbe, ort: stammPlan(q, uhrJetzt).ort || q.ort || '', text: q.steckbrief || '', kennt: !!S.merke['stk_' + q.id], besuche: Object.keys(S.merke).filter((k) => k.startsWith('stb_' + q.id + '_')).length })), leiter: leiterJournal(), zaehler: zaehler(), pass: ABZEICHEN.map((x) => ({ sy: x.sy, t: x.t, hinweis: x.hinweis, hat: (S.pass || []).includes(x.id) })) });
   };
   // Running Gags als Zähler im Journal (werden nie kleiner)
   function zaehler() {
@@ -1657,7 +1680,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     const MARKE = { bus: '🚌 Bus', hof: 'Schulhof', skateEcke: '🛹 Skate-Ecke', korbfeld: '🏀 Korb', tischtennis: '🏓 Tischtennis', sportplatz: '🏃 Sportplatz', innenhof: 'Innenhof', fahrrad: '🚲 Fahrräder', bank: 'Bank' };
     // Stammgäste: mit 💬, solange diese Woche noch nicht besucht, bekannte mit Namen
     const kapK = (st && st.kap) || 1;
-    const stammMarken = STAMM.map((q) => { const neu = !S.merke['stb_' + q.id + '_' + (Object.keys(q.besuch).map(Number).filter((k) => k <= kapK).sort((a, b) => b - a)[0])]; return { x: q.steht[0], z: q.steht[1], t: (neu ? '💬 ' : '') + (S.merke['stk_' + q.id] ? q.name.split(' ')[0] : '?') }; });
+    const stammMarken = STAMM.map((q) => { const neu = !S.merke['stb_' + q.id + '_' + (Object.keys(q.besuch).map(Number).filter((k) => k <= kapK).sort((a, b) => b - a)[0])]; const wo = stammPlan(q, uhrJetzt).steht; return { x: wo[0], z: wo[1], t: (neu ? '💬 ' : '') + (S.merke['stk_' + q.id] ? q.name.split(' ')[0] : '?') }; });
     stammMarken.push({ x: hund.pos.x, z: hund.pos.z, t: '🐕' + (S.merke.hundFreund ? ' Bonbon' : '') });
     ui.karte({ marken: Object.entries(MARKE).filter(([id]) => welt.orte[id]).map(([id, t]) => ({ x: welt.orte[id].x, z: welt.orte[id].z, t })).concat(stammMarken), raeume: welt.raeume.filter((r) => r.x1 - r.x0 < 120), ich: { x: p.x, z: p.z, yaw: steuerung.yaw }, ziele: zielPunkte().map((z) => ({ x: z.x, z: z.z })), titel: st && !S.fertig ? st.titel : 'Freie Zeit' });
   };
@@ -2040,7 +2063,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (!sitzt) { x.f.group.rotation.y = Math.atan2(p.x - gp.x, p.z - gp.z); x.f.spiele('Interact', { tempo: 0.55 }); }
     const neuBekannt = !S.merke['stk_' + st.id];
     try {
-      const sz = stammSzene(st, kap, S.merke);
+      const sz = stammSzene(st, kap, S.merke, x.planSaetze);
       const spiel = async (zeilen) => {
         for (const z of zeilen) {
           if (Array.isArray(z)) {
