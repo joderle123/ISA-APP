@@ -193,7 +193,7 @@ export async function ladePerson(veil, { modell = 'menschen', stil = 'Casual', h
   let blinzelIn = 1 + Math.random() * 4, lidZu = 0;
   let nickT = 0; const NICK = 0.6;   // Zuhören: einmal kurz nicken
   // Gesten zum Gesagten (prozedural, die Modelle haben keine eigenen Clips): Kopf schütteln, neigen (Frage), lachen, senken
-  const GESTE = { schuetteln: 0.95, neigen: 1.5, lachen: 1.0, senken: 1.5 };
+  const GESTE = { schuetteln: 0.95, neigen: 1.5, lachen: 1.0, senken: 1.5, zucken: 1.4 };   // zucken: Schulterzucken mit offenen Händen
   let gesteArt = null, gesteT = 0; const _ay = new THREE.Vector3(0, 1, 0), _az = new THREE.Vector3(0, 0, 1);
   const kopfVor = new THREE.Quaternion(), nackenVor = new THREE.Quaternion();
   const _hp = new THREE.Vector3(), _fw = new THREE.Vector3(), _rt = new THREE.Vector3(), _up = new THREE.Vector3(0, 1, 0);
@@ -315,6 +315,20 @@ export async function ladePerson(veil, { modell = 'menschen', stil = 'Casual', h
     beinIK('L', boden); beinIK('R', boden);
   };
   let sitzHand = false; const _o1 = new THREE.Vector3(), _o2 = new THREE.Vector3();
+  // Schulterzucken: beide Hände seitlich auf Hüfthöhe, Handflächen nach oben, Ellbogen hängen (Gewicht w = Hülle der Geste)
+  let zuckW = 0; const _zr = new THREE.Vector3(), _zk = new THREE.Vector3();
+  const zuckHaende = () => {
+    huelle.getWorldQuaternion(_kq); _fw.set(0, 0, 1).applyQuaternion(_kq);
+    wp(NACKEN || KOPF, _zk);
+    for (const s of ['R', 'L']) {
+      const H = HAND[s], A = ARM[s]; if (H.w && !H.zuck) continue;   // Handschlag o. Ä. hat Vorrang
+      wp(A.O, _o1); _zr.copy(_o1).sub(_zk).setY(0).normalize();   // nach außen (weg vom Hals)
+      H.ziel = (H.ziel || new THREE.Vector3()).copy(_o1).addScaledVector(_zr, 0.26).addScaledVector(_fw, 0.24); H.ziel.y -= 0.4;
+      H.richtung = (H.richtung || new THREE.Vector3()).copy(_fw).addScaledVector(_zr, 0.6).normalize();
+      H.flaeche = (H.flaeche || new THREE.Vector3()).set(0, 1, 0); H.pol = (H.pol || new THREE.Vector3()).copy(_zr).multiplyScalar(0.3).setY(-1);
+      H.faust = 0; H.zeige = 0; H.daumenHoch = false; H.w = zuckW; H.zuck = true;
+    }
+  };
   const sitzHaende = () => {
     huelle.getWorldQuaternion(_kq); _fw.set(0, 0, 1).applyQuaternion(_kq);
     for (const s of ['R', 'L']) {
@@ -392,6 +406,7 @@ export async function ladePerson(veil, { modell = 'menschen', stil = 'Casual', h
           else if (gesteArt === 'neigen') { _q.setFromAxisAngle(_az, 0.15 * h); KOPF.quaternion.multiply(_q); winkel(KOPF, -0.04 * h); }
           else if (gesteArt === 'lachen') winkel(KOPF, -(0.07 + Math.abs(Math.sin(p * Math.PI * 5)) * 0.06) * h);
           else if (gesteArt === 'senken') winkel(KOPF, 0.24 * h);
+          else if (gesteArt === 'zucken') { _q.setFromAxisAngle(_az, 0.09 * h); KOPF.quaternion.multiply(_q); winkel(KOPF, -0.05 * h); }
         } }
       if (!AUGEN) augenSuchen();
       if (AUGEN.length) {
@@ -399,6 +414,8 @@ export async function ladePerson(veil, { modell = 'menschen', stil = 'Casual', h
         else if ((blinzelIn -= dt) <= 0) { augenSetzen(true); lidZu = 0.12; blinzelIn = Math.random() < 0.15 ? 0.25 : 2.2 + Math.random() * 4.5; }
       }
       // Sitzen: Hände liegen auf den Oberschenkeln (statt durch Beine und Stuhl zu hängen) – nur, wenn niemand sonst die Hände führt
+      zuckW = gesteT > 0 && gesteArt === 'zucken' && !sitzt && ARMOK ? Math.sin(Math.PI * (1 - gesteT / GESTE.zucken)) * 0.9 : 0;
+      if (zuckW > 0.01) zuckHaende(); else for (const s of ['R', 'L']) if (HAND[s].zuck) { HAND[s].w = 0; HAND[s].zuck = false; }
       if (sitzt && ARMOK) sitzHaende(); else if (sitzHand) { for (const s of ['R', 'L']) if (HAND[s].sitz) { HAND[s].w = 0; HAND[s].sitz = false; } sitzHand = false; }
       armAnwenden('R'); armAnwenden('L');
     },

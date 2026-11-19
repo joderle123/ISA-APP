@@ -715,6 +715,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (/\((lacht|grinst|kichert)|haha|😂|😭/.test(s)) return 'lachen';
     if (/\((seufzt|leise|sehr leise|guckt weg|guckt auf|schaut auf den)/.test(s)) return 'senken';
     if (/^(„)?(nein|nee|nö|nope|auf keinen fall|niemals)\b/.test(s)) return 'schuetteln';
+    if (/\((zuckt|schulterzucken)|^(„)?(keine ahnung|weiß nicht|weiss nicht|egal|vielleicht|mal sehen)\b/.test(s)) return 'zucken';
     if (/\?(“|\))?\s*$/.test(s) && s.length < 90) return 'neigen';
     return null;
   }
