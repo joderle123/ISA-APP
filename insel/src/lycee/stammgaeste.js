@@ -128,7 +128,7 @@ export const STAMM = [
     aussehen: { modell: 'menschen', stil: 'Casual', haut: '#c68e64', haar: '#1b1410', oben: '#2f6b57', unten: '#2d3748', schuhe: '#3a2a1c', hoehe: 1.76, kopf: 'cap', kopfFarbe: '#2f6b57' },
     steht: [31.7, -11.4, 0, 'redet'],
     besuch: {
-      1: [['s', 'Bom dia! Ich bring das Gemüse für die Kantine. Jeden Montag.'], ['s', 'Wort der Woche, auf Portugiesisch: „Bom dia“. Heißt: Guten Tag.'], ['s', 'Nächste Woche ein neues. Versprochen.']],
+      1: [['s', 'Bom dia! Ich bring das Gemüse für die Kantine. Jeden Morgen.'], ['s', 'Wort der Woche, auf Portugiesisch: „Bom dia“. Heißt: Guten Tag.'], ['s', 'Nächste Woche ein neues. Versprochen.']],
       2: [['s', 'Wort der Woche: „Obrigado“. Danke.'], ['s', 'Sagt man viel zu selten. Probier es heute dreimal.']],
       3: [['s', 'Wort der Woche: „Saudade“. Schwer zu übersetzen.'], ['s', 'Wenn du jemanden vermisst. Oder etwas.'], ['s', 'Traurig und schön zugleich.']],
       4: [['s', 'Fogo, die Kisten sind schwer heute!'], ['s', 'Wort der Woche: „Calma“. Ruhig. Erst atmen, dann tragen.']],

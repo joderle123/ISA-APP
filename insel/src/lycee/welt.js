@@ -8,6 +8,7 @@ import { pflaster, rasen, asphalt, flaeche, fliesen as fliesenTex, dielen, sport
 import { baueCampus, baueCampus2, ORTE_CAMPUS, ORTE_CAMPUS2 } from './campus.js';
 import { baueDetails } from './details.js';
 import { baueEinrichtung } from './einrichtung.js';
+import { baueDorf } from './dorf.js';
 
 export const DECKE = 3.6;            // Deckenhöhe innen
 const HAUS_H = 8.6;                 // Außenwand Haupthaus (zwei Stockwerke)
@@ -719,6 +720,7 @@ export function baueWelt({ material, materialInnen, materialLaub }) {
     boden: (x0, x1, z0, z1, art) => boeden.push(art === 'pflaster' ? { x0, x1, z0, z1, pflaster: true } : art === 'holz' ? { x0, x1, z0, z1, holz: true } : { x0, x1, z0, z1, c1: new THREE.Color(art.c1), c2: new THREE.Color(art.c2), s: art.s || 1.2 }),
     extra: (m) => extras.push(m) });
   // Details und Atmosphäre: Plakate, Kreide, Uhren, Ranzen, Lampen, Kübel mit Bäumen, Kontaktschatten (details.js)
+  baueDorf({ B, C, schild, schilder });   // vor details.js: Bäume und Gras weichen den Häusern aus
   const details = baueDetails({ B, P, schilder, C, uhrTextur, raeume, plaetze, DECKE, extra: (m) => extras.push(m) });
   baueEinrichtung({ B, P, C, schild, schilder, stuhl, DECKE });
   if (details.tischtennis) orte.tischtennis = { ...details.tischtennis, yaw: Math.PI / 2 };
