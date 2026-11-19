@@ -99,25 +99,25 @@ const SPUREN = (m) => ({
   wo: 'CDI · Leseecke', helfer: F.mila,
   frage: 'Mila holt Post-its aus der Tasche. „Was wissen wir WIRKLICH? Nur Fakten an die Wand.“',
   spuren: [
-    { id: 'winkel', sy: '📐', t: 'Beide Fotos sind von links unten gemacht. Sitzhöhe.', kurz: 'Winkel: links unten', echt: true,
+    { id: 'winkel', sy: '📐', t: 'Alle Fotos sind von links unten gemacht. Sitzhöhe.', kurz: 'Winkel: links unten', echt: true,
       kommentar: ['Fakt. Zweimal derselbe Winkel. Das ist ein Muster.', 'Doch. Das ist das Wichtigste. Zweimal derselbe Winkel.'] },
     { id: 'jo', sy: '😂', t: 'Jo hat den Sticker mit „wallah“ gefeiert.', kurz: 'Jo hat gelacht', echt: false,
       kommentar: ['Richtig. Lachen ist mies. Aber Lachen ist nicht Machen.', 'Lachen ist nicht Machen. Das gehört nicht an diese Wand.'] },
-    { id: 'skate', sy: '🛹', t: 'Im Mila-Foto spiegelt sich ein Stück Griptape in der Fensterscheibe.', kurz: 'Griptape im Fenster', echt: true,
+    { id: 'skate', sy: '🛹', t: 'Im Fenster auf dem Mila-Foto: ein Stück Skateboard.', kurz: 'Griptape im Fenster', echt: true,
       kommentar: ['Griptape. Skateboard. Gut gesehen.', 'Doch, das zählt. Griptape ist ein Skateboard. Wer hat eins in der Kantine?'] },
     { id: 'luca', sy: '💬', t: 'Luca schreibt unter jeden Post „lowkey stimmt“.', kurz: 'Luca kommentiert', echt: false,
       kommentar: ['Kommentieren ist nicht Posten. Nervig. Aber kein Beweis.', 'Kommentieren ist nicht Posten. Weg damit.'] },
-    { id: 'zeit', sy: '🕐', t: 'Der Account postet nie während des Unterrichts.', kurz: 'nie im Unterricht', echt: true,
+    { id: 'zeit', sy: '🕐', t: 'Der Account postet nie im Unterricht.', kurz: 'nie im Unterricht', echt: true,
       kommentar: ['Fakt. Bis jetzt. Jemand, der im Unterricht nicht ans Handy kann.', 'Doch. Das heißt: jemand mit Stundenplan. Jemand von hier.'] },
     ...(m.spurFoto || m.darioGefragt || m.darioKonfrontiert || m.fotoGeschickt || m.darioTief ? [
-      { id: 'dario', sy: '📱', t: 'Dario hatte das Original – ohne den Listen-Text.', kurz: 'Dario hatte das Original', echt: true,
-        kommentar: ['Nicht den Post. Das Original. Das beweist nichts. Aber es ist eine Spur.', 'Doch. Nicht den Post – das Original. Das ist eine Spur.'] }] : []),
+      { id: 'dario', sy: '📱', t: 'Dario hatte das Noah-Foto. Er sagt: Es ging rum.', kurz: 'Dario hatte das Foto', echt: true,
+        kommentar: ['Fakt: Er hatte es. Ob es rumging, wissen wir nicht.', 'Doch. Er hatte es. Das ist eine Spur. Kein Beweis.'] }] : []),
     { id: 'chiara', sy: '🤐', t: 'Chiara war nicht auf der Liste.', kurz: 'Chiara nicht auf der Liste', echt: false,
       kommentar: ['Nicht auf der Liste sein beweist nichts. Sonst wär die halbe Annexe verdächtig.', 'Weg damit. Nicht auf einer Liste sein beweist gar nichts.'] },
   ],
   frageEnde: 'Okay. Was sagt die Wand? Nur, was wir belegen können.',
   schluesse: [
-    { key: 'skate', t: 'Jemand von der Skate-Ecke. Sitzt links. Postet in Pausen.', braucht: ['winkel', 'skate', 'zeit'], antwort: 'Das ist eingegrenzt. Nicht bewiesen. Wir beobachten. Wir beschuldigen niemanden.' },
+    { key: 'skate', t: 'Jemand von der Skate-Ecke. Sitzt links. Postet in Pausen.', braucht: ['winkel', 'skate', 'zeit'], antwort: 'Das ist eine Spur. Kein Beweis. Wir zeigen auf niemanden.' },
     { key: 'dario', t: 'Dario. Fertig. Wir sagen es allen.', braucht: ['dario'], antwort: '(schüttelt den Kopf) Wenn wir falsch liegen, sind WIR @annexe.cam.' },
     { key: 'jo', t: 'Jo. Er hat zuerst geteilt.', braucht: ['jo'], antwort: 'Jo ist laut. Laut ist nicht schuldig.' },
     { key: 'offen', t: 'Wir wissen es noch nicht. Weiter Fakten sammeln.', braucht: [], antwort: 'Langweilig. Aber richtig.' },
@@ -129,7 +129,7 @@ const MILA_FOTO = {
   titel: '7P2 😎 (offiziell)', mitglieder: 19, dauer: 34,
   nachrichten: [
     { nach: 0.5, system: true, text: 'Luca hat einen Beitrag von @annexe.cam geteilt.' },
-    { nach: 1.4, wer: '@annexe.cam', bild: 'Mila redet mit Tauben', text: 'mila interviewt tauben 💀 sticker kommt gleich', lacher: { start: 5, proSek: 0.5, stopp: 'gestoppt' } },
+    { nach: 1.4, wer: '@annexe.cam', bild: 'Mila allein am Kantinentisch, Würfel am Ohr', text: 'mila telefoniert mit ihrem würfel 💀 sticker kommt gleich', lacher: { start: 5, proSek: 0.5, stopp: 'gestoppt' } },
     { nach: 3.4, wer: 'Jo', text: 'NEIN 😭😭' },
     { nach: 5.0, wer: 'Ben', text: 'ok das ist bisschen hart' },
     { nach: 6.8, wer: 'Luca', text: 'sticker wann' },
@@ -144,7 +144,7 @@ const MILA_FOTO = {
   ],
   aktionen: [
     { id: 'schreiben', t: 'Schreiben', symbol: '💬', wahl: [
-      { t: '„Löscht das. Jetzt. Das ist kein Spaß mehr.“', setzt: ['gestoppt', 'klartext'], ich: 'löscht das. jetzt. das ist kein spaß mehr', folgen: [{ nach: 1.2, wer: 'Ben', text: 'real. ich hab gemeldet' }] },
+      { t: '„Löscht das. Jetzt. Das ist kein Spaß mehr.“', setzt: ['gestoppt', 'klartext'], ich: 'löscht das. jetzt. das ist kein spaß mehr', folgen: [{ nach: 1.2, wer: 'Ben', text: 'minus 1000 aura für den account. hab gemeldet' }] },
       { t: '„Wer das teilt, ist genauso dabei.“', setzt: ['gestoppt', 'teilen'], ich: 'wer das teilt ist genauso dabei', folgen: [{ nach: 1.3, wer: 'Luca', text: 'oha. moralpolizei' }, { nach: 2.6, system: true, text: 'Luca hat den Beitrag gelöscht.' }] },
       { t: '„Haha der Sticker“', setzt: 'mitgemacht', ich: 'haha der sticker', folgen: [{ nach: 1, wer: 'Jo', text: 'endlich wer mit humor' }] },
     ] },
@@ -161,7 +161,7 @@ const KLASSE_LESEN = {
   leute: [
     { wer: F.mila, zeichen: ['Gesicht rot', 'dreht den Würfel nicht', 'Kapuze auf'], gefuehl: ['wut', 'trauer'], aufloesung: 'Mila: Wut und Scham gleichzeitig. Man sieht beides.' },
     { wer: F.jo, zeichen: ['grinst noch, guckt dann weg', 'trommelt mit dem Stift', 'rutscht auf dem Stuhl'], gefuehl: ['freude', 'angst'], aufloesung: 'Jo: erst lustig, jetzt mulmig. Er hat über den Sticker gelacht.' },
-    { wer: F.dario, zeichen: ['schaut nie zu Mila', 'Handy in der Faust', 'steht in der Tür, Bein wippt'], gefuehl: 'angst', aufloesung: 'Dario hat Angst. Wovor? Er ist nicht mal in dieser Klasse.' },
+    { wer: F.dario, zeichen: ['schaut nie zu Mila', 'Handy in der Faust', 'steht in der Tür, Bein wippt'], gefuehl: 'angst', aufloesung: 'Dario wirkt angespannt. Warum, sieht man nicht. Nervös heißt nicht schuldig.' },
   ],
 };
 
@@ -171,7 +171,7 @@ const STAFFEL_PULT = {
   szene: 'Letzter Wechsel. Noah kommt angerannt. Du greifst nach dem Stab. Er fällt. Alle Teams laufen vorbei.',
   versionen: {
     wut: [['du', '(reißt den Stab hoch) MANN! … LAUF, NOAH! LAUF!'], ['erzaehler', 'Ihr rennt wie verrückt. Ihr überholt eine Gruppe.'], ['jo', 'Digga, was war DAS? Weiter!']],
-    trauer: [['erzaehler', 'Du hebst den Stab auf. Gehst. Ins Ziel. Als Letzte Person.'], ['noah', '(leise) Hey. Ist nur ein Stab.']],
+    trauer: [['erzaehler', 'Du hebst den Stab auf. Gehst. Ins Ziel. Als letzte Person.'], ['noah', '(leise) Hey. Ist nur ein Stab.']],
     angst: [['erzaehler', 'Alle gucken. Du willst unsichtbar sein. Du läufst trotzdem.'], ['ben', '(von der Seite) WEITER! WEITER!']],
     freude: [['du', '(lachst) Okay! Neuer Plan: Wir gewinnen den Stil-Preis!'], ['noah', '(lacht mit) Wir sind so schlecht!'], ['ben', 'Stil-Preis! Sein Vater!']],
   },
@@ -185,7 +185,7 @@ const JO_DUELL = {
       karten: [
         { t: '„Ja. Der Stab ist mir runtergefallen. Passiert.“', stimme: 'kopf', art: 'klar', hitze: -8, respekt: 1, antwort: 'Passiert? Das war Sportfest!' },
         { t: '„Wegen MIR? Du bist doch gestolpert!“', stimme: 'stolz', art: 'angriff', hitze: 25, antwort: 'Ich? ICH? Sag das nochmal.' },
-        { t: '(Weggehen.)', stimme: 'bauch', art: 'rueckzug', hitze: -4, respekt: -1, antwort: 'Ja, lauf weg. Typisch.' },
+        { t: '„Ich geh kurz. Reden wir gleich.“', stimme: 'kopf', art: 'rueckzug', hitze: -8, respekt: 0, antwort: '(ruft) Ja, geh! … (leiser) Okay. Gleich.' },
       ], still: { hitze: 6, antwort: 'Sagst nix? Okay. Wow.' } },
     { sagt: 'Ich hab die ganze Woche trainiert, digga.', warn: 'Deine Hände ballen sich', skill: '(Hände aufmachen. Schultern runter.)', skillAntwort: '(guckt auf deine Hände) … Okay.',
       karten: [
@@ -214,13 +214,12 @@ export const GESPRAECHE_N3 = {
     ['erzaehler', 'Montag. Check-in. Heute will Herr Kuedes das genauere Wort.'],
     { szene: 'checkin', id: 'checkin3', def: { frage: 'Nicht „gut“ oder „schlecht“. Das genauere Wort?', posts: [
       { wer: 'Mila', wort: 'angespannt', farbe: '#8a7bc8' }, { wer: 'Ben', wort: 'aufgeregt (sportfest!!)', farbe: '#f2b134' }, { wer: 'Lina', wort: 'okay', farbe: '#5fb07a' } ],
-      reaktion: (w, g) => (g === 'Wut' ? [{ wer: 'Jo', text: 'same, aber ich weiß nicht warum' }] : g === 'Angst' ? [{ wer: 'Mila', text: 'Gleiche Kategorie. Interessant.' }] : [{ wer: 'Ben', text: '{name} hat ein genaues wort. respekt' }]) }, folgen: {} },
+      reaktion: (w, g) => (g === 'Wut' ? [{ wer: 'Jo', text: 'same, aber ich weiß nicht warum' }] : g === 'Angst' ? [{ wer: 'Mila', text: 'Gleiche Ecke wie ich. Interessant.' }] : [{ wer: 'Ben', text: 'notiert. danke' }]) }, folgen: {} },
   ],
   n3_pantomime: [
     ['kaya', 'Wéi geet et? Heute: Gefühle. Wie viele kennt ihr?'],
     ['ben', 'Hunger. Ist das eins?'],
     ['kaya', 'Fast. Sechs große: Freude, Trauer, Wut, Angst, Ekel, Überraschung.'],
-    ['kaya', 'Und jedes schickt eine Botschaft. Auch die unangenehmen.'],
     ['kaya', 'Erst: Pantomime-Duell. Ohne Worte. Ihr ratet.'],
     { szene: 'lesen', id: 'pantomime', def: PANTOMIME,
       ausgang: (r) => (r.richtig.length >= 3 ? 'gut' : 'mittel'),
@@ -231,13 +230,13 @@ export const GESPRAECHE_N3 = {
       folgen: { genau: { merke: 'eckenGenau' }, schnell: { dann: [['kaya', 'Manche Wörter passen in keine Ecke. Das ist kein Fehler.']] } } },
     ['kaya', 'Abstimmung. Wenn ein Gefühl rausfliegen müsste – welches?'],
     { wahl: [
-      { t: 'Angst. Die nervt am meisten.', merke: 'rausAngst', dann: [['noah', 'Dann wär ich ganz ruhig. Und würde Jos Fahrrad ohne Bremsen testen.']] },
-      { t: 'Wut. Die macht nur Stress.', merke: 'rausWut', dann: [['jo', 'Ohne Wut hätte ich mich nie gewehrt. Nie.']] },
-      { t: 'Trauer. Die braucht keiner.', merke: 'rausTrauer', dann: [['ayla', 'Ohne Trauer gäb’s keine guten Songs. Null.']] },
-      { t: 'Keins.', merke: 'rausKeins', dann: [['kaya', 'Ihr ahnt es. Jedes hat einen Job. Auch die unbequemen.']] },
+      { t: 'Angst. Die nervt am meisten.', merke: 'rausAngst', dann: [['noah', 'Ja! Dann würd ich im Test einfach … schlafen.']] },
+      { t: 'Wut. Die macht nur Stress.', merke: 'rausWut', dann: [['jo', 'Dann tret ich nie mehr gegen den Automaten. … Schade.']] },
+      { t: 'Trauer. Die braucht keiner.', merke: 'rausTrauer', dann: [['ayla', 'Dann sind meine Songs plötzlich fröhlich. Horror.']] },
+      { t: 'Keins.', merke: 'rausKeins', dann: [['ben', 'Keins? … Ohne Angst wär ich längst mit dem Board die Treppe runter.']] },
     ] },
-    ['kaya', 'Angst ist ein Wachhund. Manchmal bellt er den Postboten an.'],
-    ['kaya', 'Mission: Achtet diese Woche drauf, wo ihr Gefühle im Körper spürt.'],
+    ['kaya', 'Angst passt auf. Trauer holt Trost. Wut sagt: Stopp.'],
+    ['kaya', 'Fünf Stimmen für Angst. Freitag ist Sportfest. Mal sehen.'],
   ],
   n3_foto: [
     ['erzaehler', 'Mittwoch, Kantine. Plötzlich vibrieren zwanzig Handys gleichzeitig.'],
@@ -264,17 +263,17 @@ export const GESPRAECHE_N3 = {
         ['erzaehler', 'Eine Minute. Mila atmet laut. Dann leiser.'],
         ['mila', 'Ich weiß nicht, was ich fühle. Alles gleichzeitig.'] ] },
       { t: '„Das Foto ist widerlich. Nicht du.“', staerke: 'klar', herz: { mila: 2 }, dann: [
-        ['mila', 'Ekel. Gute Kategorie. Ich nehme sie.'], ['mila', 'Und Wut. Und … dass ich nicht mehr reingehen will.'] ] },
+        ['mila', 'Ekel. Gutes Wort. Ich nehme es.'], ['mila', 'Und Wut. Und … dass ich nicht mehr reingehen will.'] ] },
       { t: '„Komm, ist nur ein Foto. Morgen ist es vergessen.“', herz: { mila: -2 }, merke: 'milaAbgewiegelt', dann: [
         ['mila', 'Im Internet wird nichts vergessen. Das ist ein Fakt.'], ['erzaehler', 'Sie zieht die Kapuze tiefer.'] ] },
       { t: '„Willst du, dass ich wem Bescheid sag? Herrn Kuedes?“', staerke: 'hilfe', herz: { mila: 1, kaya: 1 }, merke: 'kuedesAngeboten', dann: [
-        ['mila', 'Nicht jetzt. Vielleicht später. Wenn ich weiß, wer es war.'] ] },
+        ['mila', 'Nicht jetzt. Erst atmen. Dann gehen wir zusammen. Okay?'] ] },
     ] },
     ['mila', 'Das Foto ist von links unten. Wieder. Wie aus einer Tasche.'],
-    ['mila', 'Links von mir saßen heute: Kenan. Und Dario.'],
+    ['mila', 'Links von mir saßen: Kenan und Dario. Jo kam vorbei. Mit Handy.'],
     { wahl: [
       { t: '„Dario hatte schon das Noah-Foto auf dem Handy.“', wenn: (m) => m.spurFoto || m.darioGefragt || m.darioKonfrontiert || m.fotoGeschickt, staerke: 'lesen', herz: { mila: 2 }, merke: 'spurDario2', dann: [
-        ['mila', '(setzt sich gerade hin) Zwei Datenpunkte. Das ist ein Muster.'], ['mila', 'Aber kein Beweis. Noch nicht.'] ] },
+        ['mila', '(setzt sich gerade hin) Zwei Hinweise. Zweimal gleich. Das ist ein Muster.'], ['mila', 'Aber kein Beweis. Noch nicht.'] ] },
       { t: '„Wir finden raus, wer das ist. Zusammen.“', staerke: 'einbeziehen', herz: { mila: 2 }, merke: 'teamMila', dann: [
         ['mila', 'Ein Ermittlungsteam. Ich mache die Tabelle.'] ] },
       { t: '„Lass uns das nicht selbst machen. Zu riskant.“', herz: { mila: 1 }, merke: 'nichtSelbst', dann: [['mila', 'Vielleicht hast du recht. Vielleicht.'], ['mila', 'Aber Fakten sortieren ist nicht gefährlich. Nur denken.']] },
@@ -289,9 +288,11 @@ export const GESPRAECHE_N3 = {
     { tu: 'n3_wandBilanz' },
   ],
   n3_klasse: [
-    ['hoffmann', 'Ich hab das Foto gesehen. Ich hab’s Herrn Kuedes gegeben. Heute noch.'],
-    ['hoffmann', 'Jetzt Deutsch. Ja, Chiara: Seite 12.'],
-    ['erzaehler', 'Keiner redet. Die Luft ist dick. Du guckst dich um.'],
+    ['hoffmann', 'Ich hab das Foto gesehen. Herr Kuedes auch.'],
+    ['hoffmann', 'Mila ist bei ihm. Sie kommt, wenn sie will.'],
+    ['hoffmann', 'Der Account ist gemeldet. Von der Schule. Heute.'],
+    ['hoffmann', 'Wer mehr weiß: Bürotür. Nicht der Chat.'],
+    ['erzaehler', 'Keiner redet. Alle sind angespannt. Du guckst dich um.'],
     { szene: 'lesen', id: 'klasseLesen', def: KLASSE_LESEN,
       ausgang: (r) => (r.richtig.includes('dario') ? 'dario' : r.richtig.length >= 2 ? 'gut' : 'schwer'),
       folgen: {
@@ -304,8 +305,8 @@ export const GESPRAECHE_N3 = {
     ['erzaehler', 'Freitag. Sportfest. Die ganze Annexe auf dem Platz.'],
     ['ben', 'Staffel, Leute! Wir sind die 7P2! Wir sind … schnell? Hoffentlich.'],
     ['jo', 'Ich hab trainiert. Die ganze Woche. Wir gewinnen.'],
-    ['noah', 'Ich laufe als Dritter. Ich hab Angst. Das ist Angst, oder? Wachhund?'],
-    ['ayla', 'Herr Kuedes hat gesagt: Achtet drauf, wo ihr es spürt. Also?'],
+    ['noah', 'Ich laufe als Dritter. Meine Knie haben schon gekündigt.'],
+    ['ayla', 'Ich spür’s im Bauch. Wie Bass. Und du?'],
     { szene: 'koerper', id: 'koerper', def: KOERPER_STAFFEL, ausgang: (r) => (r.zonen.includes('nirgends') ? 'unklar' : 'gespuert'),
       folgen: {
         gespuert: { staerke: 'lesen', herz: { noah: 1 }, merke: 'koerperGespuert', dann: [['noah', 'Wenn man’s weiß, ist es ein bisschen weniger. Komisch.']] },
@@ -337,7 +338,7 @@ export const GESPRAECHE_N3 = {
     { szene: 'synchron', id: 'synchron', def: SYNCHRON, ausgang: (r) => (r.richtig >= 3 ? 'gut' : 'mittel'),
       folgen: {
         gut: { staerke: 'lesen', herz: { ayla: 1, ben: 1 }, merke: 'synchronGut', dann: [['ayla', 'Du hörst, wie was gesagt wird. Nicht nur was. Band-Ohr.']] },
-        mittel: { herz: { ayla: 1 }, dann: [['ben', 'Stimmen sind schwer. Ich hab bei mir selbst falsch geraten.']] },
+        mittel: { herz: { ayla: 1 }, dann: [['ben', 'Stimmen sind schwer. Meine klingt immer nach Hunger.']] },
       } },
     { szene: 'mischpult', id: 'misch', def: (m) => MISCH(m), ausgang: (r) => (r.gemischt ? 'gemischt' : 'eins'),
       folgen: {
@@ -365,11 +366,11 @@ export const tunN3 = (c) => ({
     ['erzaehler', 'Mila zieht dich am Ärmel.'],
     ['mila', 'Guck. #3 ist da. Vor fünf Minuten.'],
     ['mila', '„#3 der langweiligsten: die 7P2-Staffel. Letzte. 💀“'],
-    ['mila', 'Von links unten. Links von uns standen drei.'],
-    ['erzaehler', 'Dario. Kenan. Luca. Luca grinst. Dario nicht.'],
+    ['mila', 'Von links unten. Links von uns standen viele.'],
+    ['erzaehler', 'Die Skate-Ecke. Zwei aus der 7P1. Jo mit Handy. Dario.'],
     { szene: 'stempel', def: { modul: 'Modul 2 · Gefühle verstehen', titel: 'Gefühle gelesen',
-      gelernt: ['Sechs Grundgefühle und ihre Botschaft', 'Gefühle ohne Worte erkannt', 'Gesehen: Wer am Steuer sitzt, ändert alles', 'Warnsignale im Körper bemerkt', 'Gefühle im Körper gefunden', 'Fakten von Gerüchten getrennt', 'Mehrere Gefühle gleichzeitig eingestellt'],
-      mission: 'Merk dir diese Woche einmal, wo du ein Gefühl im Körper spürst – bevor du reagierst.' }, folgen: {} },
+      gelernt: ['Gefühle ohne Worte erkannt', 'Gefühle im Körper gefunden', 'Fakten statt Gerüchte', 'Mehrere Gefühle auf einmal gespürt'],
+      mission: 'Merk dir einmal: Wo spürst du Wut?' }, folgen: {} },
     { tu: 'kapitelEnde' },
   ],
 });

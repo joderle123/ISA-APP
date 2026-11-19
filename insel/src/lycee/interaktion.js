@@ -4,11 +4,11 @@
 // Klavier, Keyboard, Schlagzeug, Bücher, Pinnwand, Gießkanne, Freiwürfe. Kleine Folgen, keine Bewertung.
 
 const BUECHER = [
-  ['„Die Welle“', 'Ein Lehrer startet ein Experiment. Es läuft aus dem Ruder.'],
-  ['„Wunder“', 'Auggie kommt zum ersten Mal in eine Schule. Alle schauen.'],
-  ['„Tschick“', 'Zwei Jungs, ein geklautes Auto, ein Sommer.'],
+  ['„Klasse ohne Lehrer“', 'Ein Tag ohne Lehrer. Ab Seite 9 Chaos.'],
+  ['„Der Neue“', 'Ein Junge kommt in eine neue Klasse. Alle schauen.'],
+  ['„Zwei Wochen Sommer“', 'Zwei Freunde, ein Zelt, kein Plan.'],
   ['Atlas Luxemburg', 'Auf Seite 12 hat jemand Junglinster eingekreist.'],
-  ['„Rico, Oskar und die Tieferschatten“', 'Rico denkt anders. Und findet trotzdem alles raus.'],
+  ['„Tom findet alles“', 'Tom denkt anders. Und findet trotzdem alles raus.'],
   ['Kochbuch „Schnell und billig“', 'Eselsohr bei: Nudeln mit Tomatensoße.'],
   ['Comic-Band 7', 'Band 6 fehlt. Seit 2019.'],
   ['„Fußball-Regeln für Anfänger“', 'Abseits wird auf Seite 4 erklärt. Ganz ehrlich: dreimal lesen.'],
@@ -87,7 +87,7 @@ export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton
       }
       case 'brunnen': {
         ton('platsch'); const n = s.merke.brunnen = (s.merke.brunnen || 0) + 1;
-        if (n === 3 && !s.merke.ente) { s.merke.ente = true; sichern(); ui.toast('<b>🦆 Eine Gummiente!</b><span>Sie trägt eine Krawatte. Mit Punkten. Kommt dir bekannt vor.</span>', 'ly-t-ent'); return; }
+        if (n === 3 && !s.merke.ente) { s.merke.ente = true; sichern(); ui.toast('<b>🦆 Eine Gummiente!</b><span>Sie trägt eine Krawatte. Mit kleinen Enten drauf. Kommt dir bekannt vor.</span>', 'ly-t-ent'); return; }
         sichern(); ui.toast(n > 3 ? '<b>Die Ente nickt dir zu.</b><span>Sie schwimmt weiter ihre Runden. Würdevoll.</span>' : '<b>Kalt!</b><span>Kurz wach. Jemand hinter dir lacht – nicht über dich, über den Spritzer.</span>'); return;
       }
       case 'spind': if (!s.stundenplan && !(s.frei && s.frei.spind)) { ton('klack'); ui.toast('<b>Spind 117</b><span>Zahlenschloss. Den Code gibt’s im Sekretariat.</span>'); return; }
@@ -100,7 +100,7 @@ export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton
         const r = await ui.bandprobe(); const pz = Math.round(r.treffer / Math.max(1, r.gesamt) * 100);
         const alt = s.merke.bandRekord || 0; s.merke.bandRekord = Math.max(alt, pz); s.merke.bandMal = (s.merke.bandMal || 0) + 1; sichern();
         freund('ayla', 4, 'spiel');
-        const satz = pz >= 90 ? 'Okay. Du bist jetzt in der Band. Kein Witz.' : pz >= 70 ? 'Fast tight. Noch zwei Proben, dann Bühne.' : pz >= 40 ? 'Laut warst du. Das ist schon mal was.' : 'Wir nennen es Jazz. Nochmal?';
+        const satz = pz >= 90 ? 'Okay. Du bist jetzt in der Band. Kein Witz.' : pz >= 70 ? 'Fast tight. Noch zwei Proben, dann Bühne.' : pz >= 40 ? 'Laut warst du. Das ist schon mal was.' : 'Das war kein Takt. Das war ein Unfall. Nochmal?';
         ui.toast('<b>' + pz + ' % im Takt</b><span>Ayla: „' + satz + '“ · ' + (pz > alt ? 'Neuer Rekord!' : 'Dein Rekord: ' + s.merke.bandRekord + ' %') + '</span>', 'ly-t-herz');
         return;
       }
@@ -113,7 +113,7 @@ export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton
       case 'pinnwand': { const n = s.merke.pinnwand = ((s.merke.pinnwand || 0) + 1); sichern(); await ui.bild('Pinnwand', PINNWAND[(n - 1) % PINNWAND.length].join(' · '), 4.5); return; }
       case 'fundkiste': { const n = s.merke.fundkisteBlick = ((s.merke.fundkisteBlick || 0) + 1); sichern(); ui.toast('<b>Fundkiste</b><span>' + FUNDKISTE[(n - 1) % FUNDKISTE.length] + '</span>'); return; }
       case 'kritzelei': { const l = KRITZELEIEN[i.wo] || KRITZELEIEN.tisch; const k = 'kritzel_' + i.wo; const n = s.merke[k] = ((s.merke[k] || 0) + 1); sichern(); ui.toast('<b>Kritzelei</b><span>' + l[(n - 1) % l.length] + '</span>'); return; }
-      case 'giessen': s.merke.gegossen = (s.merke.gegossen || 0) + 1; sichern(); ui.toast(s.merke.gegossen > 3 ? '<b>Kevin, der Kaktus</b><span>Braucht kein Wasser. Er schaut dich vorwurfsvoll an.</span>' : '<b>Gegossen</b><span>Die Tomaten danken. Glaubst du.</span>'); return;
+      case 'giessen': s.merke.gegossen = (s.merke.gegossen || 0) + 1; sichern(); ui.toast(s.merke.gegossen > 3 ? '<b>Kevin, der Kaktus</b><span>Schon wieder Wasser? Kevin guckt sehr böse.</span>' : '<b>Gegossen</b><span>Die Tomaten danken. Glaubst du.</span>'); return;
       case 'korb': {
         const modus = await new Promise((fertig) => {
           const k = ui.ebeneAuf('spiel', '<h2>🏀 Korb am Hof</h2><p class="ly-leer">Was spielst du?</p><div class="ly-d-optionen ly-bb-wahl">' +

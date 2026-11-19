@@ -19,14 +19,14 @@ export const HEFTE = [
     { ort: 'Fensterbank', bild: '🌵🤗   🧍‍♂️', blasen: [['Kevin', 'Umarmung?'], ['Ben', 'Äh. Nein danke. Du bist … stachelig.']] },
     { ort: 'Fensterbank', bild: '🌵😢', blasen: [['Kevin', 'Keiner will mich umarmen.']] },
     { ort: 'Fensterbank', bild: '🌵  🧤✋', blasen: [['Mila', 'Umarmung nein. High five mit Handschuh: ja.'], ['Kevin', 'Das geht?']] },
-    { ort: 'Fensterbank', bild: '🌵✨🧤', blasen: [['Kevin', 'Abstand ist nicht „ich mag dich nicht“.'], ['Mila', 'Genau. Abstand ist „so passt es“.']], unten: 'ENDE. Kevin hat jetzt drei Handschuh-Freunde.' },
+    { ort: 'Fensterbank', bild: '🌵✨🧤', blasen: [['Kevin', 'High five? Mit mir?'], ['Mila', 'Mit Handschuh. Ich bin ja nicht verrückt.']], unten: 'ENDE. Kevin hat jetzt drei Handschuh-Freunde.' },
   ] },
   { id: 'bus', titel: 'Der Bus', von: 'Comic von Chiara, 7P2', farbe: '#e9734a', art: 'comic', seiten: [
     { ort: 'Haltestelle, 7:31', bild: '🚌💨      🏃', blasen: [['Erzähler', 'Montag. Der Bus fährt weg.']] },
     { ort: 'Haltestelle, 7:31', bild: '🚌💨      🏃', blasen: [['Erzähler', 'Dienstag. Der Bus fährt weg.']] },
     { ort: 'Haltestelle, 7:31', bild: '🚌💨      🏃💦', blasen: [['Erzähler', 'Mittwoch. Er fährt weg. Natürlich.']] },
     { ort: 'Haltestelle, 7:31', bild: '🚌   🏃', blasen: [['Busfahrer', 'Ich warte. Aber nur heute.'], ['Erzähler', 'Donnerstag.']] },
-    { ort: 'Im Bus', bild: '🚌🙂', blasen: [['Erzähler', 'Manchmal wartet die Welt. Selten. Aber manchmal.']], unten: 'Freitag fuhr er wieder weg.' },
+    { ort: 'Im Bus', bild: '🚌🙂', blasen: [['Erzähler', 'Der Fahrer hat gewartet. Er sagt, es war Zufall.']], unten: 'Freitag fuhr er wieder weg.' },
   ] },
   { id: 'nuggets', titel: 'Ben gegen 40 Nuggets', von: 'Comic von Yusuf, 7P2', farbe: '#d9a21b', art: 'comic', seiten: [
     { ort: 'Kantine', bild: '🍗×40   😤', blasen: [['Ben', 'Heute. Heute schaff ich es.']] },
@@ -45,10 +45,10 @@ export const HEFTE = [
   ] },
   { id: 'zehn', titel: 'Zehn Sekunden', von: 'Kurzgeschichte · Schreibwerkstatt der Annexe', farbe: '#8a7bc8', art: 'geschichte', seiten: [
     { text: 'Vor der Klasse stehen. Zehn Sekunden. Mehr nicht. Mein Herz klopfte, als wäre es eine Stunde.' },
-    { text: 'Meine Knie waren Pudding. Meine Hände waren nass. Mein Kopf sagte: Lauf weg. Der Wachhund bellte.' },
-    { text: 'Ich hab nicht weggehört. Ich hab zu ihm gesagt: Danke. Ich weiß. Es ist wichtig. Jetzt sei kurz still.' },
+    { text: 'Meine Knie waren Pudding. Meine Hände waren nass. Mein Kopf sagte: Lauf weg. Meine Füße blieben stehen.' },
+    { text: 'Ich hab zu meinem Kopf gesagt: Ja, ja. Gleich.' },
     { text: 'Dann hab ich angefangen. Eins. Zwei. Bei fünf war es leichter. Bei acht hat jemand gelächelt.' },
-    { text: 'Bei zehn war es vorbei. Der Wachhund hat sich hingelegt. Ich mich auch. Auf meinen Stuhl.' },
+    { text: 'Bei zehn war es vorbei. Ich hab mich hingesetzt. Schnell.' },
     { text: 'Nachher hab ich Ben gesagt: Mein Herz war eine Stunde lang. Er hat gesagt: „Meins zwei.“' },
   ] },
 ];

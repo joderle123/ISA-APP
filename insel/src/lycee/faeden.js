@@ -28,17 +28,17 @@ export const FAEDEN = {
       ['noah', 'Ben hat 47 Sticker geschickt. In einer Minute. Ist das normal?'],
       { wahl: [
         { t: 'Willkommen. Stummschalten ist dein Freund.', herz: nett('noah', 2), dann: [['noah', 'Stumm … das gibt’s? Mein Leben ist gerettet.']] },
-        { t: 'Schick einen zurück. Den hässlichsten.', staerke: 'einbeziehen', herz: nett('noah', 2), dann: [['erzaehler', 'Noah tippt. Sein Handy brummt sofort.'], ['noah', 'Ben hat drei Herzen geschickt. Bin ich jetzt verheiratet?']] },
+        { t: 'Schick einen zurück. Den hässlichsten.', staerke: 'einbeziehen', herz: nett('noah', 2), dann: [['erzaehler', 'Noah tippt. Sein Handy brummt sofort.'], ['noah', 'Ben hat drei Herzen geschickt. Ist das … sus? Sagt man das?']] },
         { t: 'Ist halt Ben.', herz: nett('noah'), dann: [['noah', 'Ist halt Ben. Okay. Das erklärt ziemlich viel.']] },
       ] },
     ] },
     { herz: 4, titel: 'Der Plan', g: [
       ['noah', 'Ich hab einen Plan. Morgen setz ich mich zu Mila.'],
-      ['noah', 'Sie redet nicht. Ich rede nicht. Perfekt, oder?'],
+      ['noah', 'Sie redet wenig. Ich rede wenig. Perfekt, oder?'],
       { wahl: [
         { t: 'Das wird das ruhigste Mittagessen der Geschichte.', staerke: 'humor', herz: nett('noah', 2), dann: [['noah', 'Genau. Endlich mal Essen ohne Stress.']] },
         { t: 'Leih dir ihren Würfel. Dann muss sie reden.', staerke: 'einbeziehen', herz: nett('noah', 2), dann: [['noah', 'Fies. Und clever. Ich mach das.']] },
-        { t: 'Und wenn sie Nein sagt?', herz: nett('noah'), dann: [['noah', 'Dann ess ich mit dir. Plan B ist auch gut.']] },
+        { t: 'Und wenn sie Nein sagt?', herz: nett('noah'), dann: [['noah', 'Dann sitz ich daneben. Mit Abstand. Strategisch.']] },
       ] },
     ] },
   ],
@@ -54,8 +54,8 @@ export const FAEDEN = {
       ] },
     ] },
     { herz: 3, titel: 'Die Schuhe', g: [
-      ['mila', 'Darf ich was Ehrliches sagen?'],
-      ['mila', 'Dein Schuh ist offen. Seit drei Stunden.'],
+      ['mila', 'Information.'],
+      ['mila', 'Dein Schuh ist offen. Seit drei Stunden, zwölf Minuten.'],
       { wahl: [
         { t: 'Und das sagst du JETZT?', staerke: 'humor', herz: nett('mila', 2), dann: [['mila', 'Ich wollte sehen, ob du es selbst merkst. Experiment.'], ['mila', 'Ergebnis: nein.']] },
         { t: 'Das ist Style.', herz: nett('mila'), dann: [['mila', 'Ein Style zum Hinfallen. Okay. Deine Entscheidung.']] },
@@ -67,26 +67,26 @@ export const FAEDEN = {
       ['mila', 'Du darfst mit. Regel: Reden nur zwischen zwei Bissen.'],
       { wahl: [
         { t: 'Deal. Ich sag pro Bissen ein Wort.', staerke: 'einbeziehen', herz: nett('mila', 2), dann: [['mila', 'Ein Wort pro Bissen. Akzeptabel.'], ['erzaehler', 'Ihr esst draußen. Du sagst „lecker“. Mila nickt. Passt.']] },
-        { t: 'Wer hat die Regeln gemacht?', herz: nett('mila'), dann: [['mila', 'Ich. Ich bin die Chefin von draußen.']] },
-        { t: 'Klingt wie Gefängnis.', dann: [['mila', 'Gefängnis mit Sonne. Deine Entscheidung.']] },
+        { t: 'Wer hat die Regeln gemacht?', herz: nett('mila'), dann: [['mila', 'Ich. Bisher allein. Einstimmig.']] },
+        { t: 'Klingt wie Gefängnis.', dann: [['mila', 'Gefängnis mit Sonne. Und ohne Jo.']] },
       ] },
     ] },
   ],
   lina: [
     { herz: 2, titel: 'Das Heft', g: [
-      ['erzaehler', 'Lina klappt ihr Heft zu. Zu spät: ein Lehrer mit Hörnern.'],
+      ['erzaehler', 'Lina klappt ihr Heft zu. Zu spät: Ben als Hamster.'],
       { wahl: [
-        { t: 'War das Hoffmann? Mit Hörnern?', staerke: 'humor', herz: nett('lina', 2), dann: [['lina', '… Du sagst es keinem.'], ['lina', 'Dann zeichne ich dich ohne Hörner.']] },
+        { t: 'War das Ben? Als Hamster?', staerke: 'humor', herz: nett('lina', 2), dann: [['lina', '… Du sagst es keinem.'], ['lina', 'Dann zeichne ich dich nicht als Hamster.']] },
         { t: 'Ich hab nichts gesehen.', staerke: 'warten', herz: nett('lina', 2), dann: [['lina', '(macht das Heft ein Stück auf) Gut. Dann siehst du jetzt was.']] },
         { t: 'Zeig mal her!', dann: [['lina', 'Nein.'], ['lina', '(grinst kurz) Irgendwann. Vielleicht.']] },
       ] },
     ] },
     { herz: 3, titel: 'Der Bösewicht', g: [
-      ['erzaehler', 'Linas Comic: Die Schule ist ein Raumschiff. Frau Kremer ist die Kapitänin.'],
-      ['lina', 'Mir fehlt ein Bösewicht.'],
+      ['erzaehler', 'Linas Comic: Gerd die Taube ermittelt. Fall drei.'],
+      ['lina', 'Mir fehlt ein Täter.'],
       { wahl: [
-        { t: 'Die Pausenklingel. Überall. Alle hassen sie.', staerke: 'humor', herz: nett('lina', 2), dann: [['lina', '… Das ist gut. Das ist richtig gut.']] },
-        { t: 'Der Automat, der nie Wechselgeld gibt.', herz: nett('lina', 2), dann: [['lina', 'Der Automat. Er frisst Münzen. Und Seelen.']] },
+        { t: 'Die Pausenklingel. Überall. Alle hassen sie.', staerke: 'humor', herz: nett('lina', 2), dann: [['lina', '… Gut. Gerd verhaftet sie. Richtig gut.']] },
+        { t: 'Der Automat, der nie Wechselgeld gibt.', herz: nett('lina', 2), dann: [['lina', 'Der Automat. Frisst Münzen. Gerd hat Beweise.']] },
         { t: 'Ich. Ich wär ein guter Bösewicht.', herz: nett('lina'), dann: [['lina', 'Du hast zu nette Augenbrauen. Abgelehnt.']] },
       ] },
     ] },
@@ -94,18 +94,18 @@ export const FAEDEN = {
       ['lina', 'Du bist im Comic. Seite 12.'],
       ['erzaehler', 'Du bist ein Roboter. Er läuft mit Kakao.'],
       { wahl: [
-        { t: 'Endlich erkennt jemand mein wahres Ich.', staerke: 'humor', herz: nett('lina', 2), dann: [['lina', 'Ich beobachte. Das ist mein Job.']] },
+        { t: 'Kakao-Antrieb? Das erklärt einiges.', staerke: 'humor', herz: nett('lina', 2), dann: [['lina', 'Seite 13: Kakao alle. Drama.']] },
         { t: 'Warum ein Roboter?', herz: nett('lina'), dann: [['lina', 'Du sagst jeden Morgen genau gleich „Hi“. Wie programmiert.']] },
         { t: 'Krieg ich Laserstrahlen?', herz: nett('lina', 2), dann: [['lina', 'Seite 13. Wenn du nett bist.']] },
       ] },
     ] },
   ],
   jo: [
-    { herz: 2, titel: 'Der Golf', g: [
-      ['jo', 'Guck. (hält dir das Handy hin) Den hab ich Samstag repariert.'],
+    { herz: 2, titel: 'Der Kombi', g: [
+      ['jo', 'Guck. (hält dir das Handy hin) Den Kombi hab ich repariert.'],
       ['jo', 'Lief nicht. Jetzt läuft er. Wegen mir.'],
       { wahl: [
-        { t: 'Was war kaputt?', staerke: 'zuhoeren', herz: nett('jo', 2), dann: [['jo', 'Zündkerzen. Klingt langweilig. Fühlt sich an wie Zaubern.']] },
+        { t: 'Was war kaputt?', staerke: 'zuhoeren', herz: nett('jo', 2), dann: [['jo', 'Zündkerzen, digga. Billigteil. Jetzt schnurrt er wie Diesel.']] },
         { t: 'Nimmst du mich mal mit in die Werkstatt?', herz: nett('jo'), dann: [['jo', 'Du darfst Reifen tragen. Sonst fasst du nix an.']] },
         { t: 'Ist doch nur ein altes Auto.', dann: [['jo', 'NUR ein altes Auto?!'], ['jo', '(laut) Du fährst später Fahrrad. Für immer.']] },
       ] },
@@ -135,7 +135,7 @@ export const FAEDEN = {
       ['ben', 'Dann hab ich 40 Euro. Dann zahl ich alle zurück.'],
       { wahl: [
         { t: 'Und was bleibt dir?', herz: nett('ben', 2), dann: [['ben', 'Ruhm. Respekt. Und vielleicht ein Keks.']] },
-        { t: 'Bei mir kriegst du keinen Cent.', staerke: 'klar', herz: nett('ben'), dann: [['ben', 'Hart. Ehrlich. Mag ich.']] },
+        { t: 'Bei mir kriegst du keinen Cent.', staerke: 'klar', herz: nett('ben'), dann: [['ben', 'Hart, Bruder. Minus tausend Aura. Für mich.']] },
         { t: '(gibt ihm zwei Euro)', herz: nett('ben'), dann: [['ben', 'Ich wusste es! Du bist mein erster Investor.'], ['ben', 'Morgen kriegst du sie wieder. Vielleicht. Wahrscheinlich.']] },
       ] },
     ] },
@@ -143,16 +143,16 @@ export const FAEDEN = {
       ['ben', 'Morgen Mathe. Mein Plan: Ein Meteorit fällt auf die Schule.'],
       ['ben', 'Nur auf den Mathe-Saal. Ich bin ja kein Monster.'],
       { wahl: [
-        { t: 'Oder: zehn Minuten üben, dann Korbball.', staerke: 'fair', herz: nett('ben', 2), dann: [['ben', 'Zehn Minuten. Ich stopp mit.'], ['erzaehler', 'Ihr rechnet drei Aufgaben. Die dritte schafft Ben allein.'], ['ben', 'Hast du das gesehen? Ich bin ein Genie. Ein müdes.']] },
+        { t: 'Ich bring Popcorn. Für den Meteoriten.', staerke: 'humor', herz: nett('ben', 2), dann: [['ben', 'Endlich wer mit Plan.'], ['ben', '… Okay. Zehn Minuten Mathe. Du fragst ab.']] },
         { t: 'Der Meteorit ist realistischer.', staerke: 'humor', herz: nett('ben'), dann: [['ben', 'Danke für dein Vertrauen. Wirklich.']] },
         { t: 'Mir ist auch schlecht wegen morgen.', herz: nett('ben'), dann: [['ben', 'Gut. Dann gehen wir zusammen unter. Wie Helden.']] },
       ] },
     ] },
     { herz: 4, titel: 'Null Witze', g: [
       ['ben', 'Heute im Test hab ich null Witze gemacht.'],
-      ['ben', 'Hoffmann hat gefragt, ob ich krank bin.'],
+      ['ben', 'Mme Tidderich hat gefragt, ob ich krank bin.'],
       { wahl: [
-        { t: 'Und? Lief’s?', herz: nett('ben', 2), dann: [['ben', 'Ich hab mit der leichten Aufgabe angefangen. Lief. Unheimlich.']] },
+        { t: 'Und? Lief’s?', herz: nett('ben', 2), dann: [['ben', 'Weiß ich Freitag. Bis dahin: minus tausend Aura.']] },
         { t: 'Du warst krank. Vor Langeweile.', staerke: 'humor', herz: nett('ben', 2), dann: [['ben', 'Endlich versteht mich jemand.']] },
         { t: 'Mach lieber wieder Witze.', herz: nett('ben'), dann: [['ben', 'Nach dem Test immer. Vorher bin ich jetzt seriös. Eine Stunde lang.']] },
       ] },
@@ -164,7 +164,7 @@ export const FAEDEN = {
       ['chiara', 'Von mir. Das ist schlimmer.'],
       { wahl: [
         { t: 'Hilft es, wenn ich sag, ich hab 31?', staerke: 'humor', herz: nett('chiara', 2), dann: [['chiara', 'Ein bisschen. Danke für dein Opfer.']] },
-        { t: 'Wo sind die 12 Punkte hin?', herz: nett('chiara'), dann: [['chiara', 'Aufgabe vier. Komma vergessen. Ein KOMMA.']] },
+        { t: 'Wo sind die 12 Punkte hin?', herz: nett('chiara'), dann: [['chiara', 'Aufgabe vier. Einheit vergessen. Lampe zwei Kilometer hoch.']] },
         { t: 'Du klingst wie eine Lehrerin.', dann: [['chiara', 'Nimm das zurück.'], ['chiara', '… Okay. Vielleicht ein bisschen.']] },
       ] },
     ] },
@@ -173,17 +173,17 @@ export const FAEDEN = {
       ['chiara', 'Sie leuchtet. Und riecht nur noch ein bisschen.'],
       { wahl: [
         { t: 'Nach Gurke?', staerke: 'humor', herz: nett('chiara', 2), dann: [['chiara', 'Nach Erfolg. Mit Gurke.']] },
-        { t: 'Wie geht so was?', herz: nett('chiara', 2), dann: [['chiara', 'Fassung, Kabel, viel YouTube. Und Becker hat geprüft, ob sie sicher ist.']] },
+        { t: 'Wie geht so was?', herz: nett('chiara', 2), dann: [['chiara', 'Fassung, Kabel, viele Videos. Und Becker hat geprüft.']] },
         { t: 'Kann man das verkaufen?', herz: nett('chiara'), dann: [['chiara', 'Du bist jetzt mein Geschäftspartner. Zehn Prozent.'], ['chiara', 'Okay, fünf.']] },
       ] },
     ] },
     { herz: 4, titel: 'Der Kleber', g: [
-      ['chiara', 'Ich hab was schief abgegeben. Der Kleber war alle.'],
-      ['chiara', 'Drei Stunden auf den Weltuntergang gewartet. Nichts.'],
+      ['chiara', 'Plan A: perfekte Lampe. Plan B: improvisieren.'],
+      ['chiara', 'Plan B ist schief. Und heller. Ich hasse das.'],
       { wahl: [
-        { t: 'Und? Geht sie unter?', herz: nett('chiara', 2), dann: [['chiara', 'Hoffmann hat nur „gut“ gesagt. Nur „gut“.'], ['chiara', 'Und ich lebe noch. Verrückt.']] },
+        { t: 'Plan B gewinnt. Wie immer.', herz: nett('chiara', 2), dann: [['chiara', 'Sag’s keinem. Ich hab einen Ruf.']] },
         { t: 'Wer bist du und wo ist Chiara?', staerke: 'humor', herz: nett('chiara', 2), dann: [['chiara', 'Keine Sorge. Morgen bin ich wieder anstrengend.']] },
-        { t: 'Perfekt wäre besser gewesen.', dann: [['chiara', 'Danke. Danke. Du klingst wie mein Mathebuch. Jetzt auch draußen.']] },
+        { t: 'Schief ist halt schief.', dann: [['chiara', 'Okay, wow. Du klingst wie mein Lineal.']] },
       ] },
     ] },
   ],
@@ -211,7 +211,7 @@ export const FAEDEN = {
       { wahl: [
         { t: 'Ich komm. Ich bring Snacks.', staerke: 'einbeziehen', herz: nett('yusuf', 2), dann: [['yusuf', 'Snacks sind in der Halle verboten.'], ['yusuf', 'Bring trotzdem.']] },
         { t: 'Bist du nervös?', herz: nett('yusuf'), dann: [['yusuf', 'Nein.'], ['yusuf', '… Mein Bauch macht komische Sachen. Das ist alles.']] },
-        { t: 'Langweilig klingt nicht so gut.', dann: [['yusuf', 'Ehrlich. Mag ich. Dann komm halt nicht.']] },
+        { t: 'Langweilig klingt nicht so gut.', dann: [['yusuf', 'Hm.'], ['erzaehler', 'Samstag schickt er dir ein Foto: leere Tribüne.']] },
       ] },
     ] },
   ],
@@ -285,7 +285,7 @@ export const FAEDEN = {
       ['kenan', 'Ich wusste nicht, wo ich hingucken soll.'],
       { wahl: [
         { t: 'Aufs Regal. Es hat’s verdient.', staerke: 'humor', herz: nett('kenan', 2), dann: [['kenan', 'Haha. Ja. Es ist auch ziemlich gerade.']] },
-        { t: 'Zweimal messen, einmal sägen.', herz: nett('kenan'), dann: [['kenan', 'Du hast aufgepasst. Gefällt mir.']] },
+        { t: 'Zweimal messen, einmal sägen.', herz: nett('kenan'), dann: [['kenan', 'Ich schwör, du klingst wie Becker. Gruselig, Brudi.']] },
         { t: 'Lob ist voll peinlich.', herz: nett('kenan'), dann: [['kenan', 'Total. Aber auch … nicht schlecht.']] },
       ] },
     ] },
@@ -342,7 +342,7 @@ export const FAEDEN = {
       ['kaya', 'Statistik: Achtzig Prozent kommen wegen der Kekse.'],
       ['kaya', 'Die anderen zwanzig auch. Sie sagen es nur nicht.'],
       { wahl: [
-        { t: 'Welche Sorte?', herz: nett('kaya'), dann: [['kaya', 'Schoko. Ich bin ja kein Unmensch.']] },
+        { t: 'Welche Sorte?', herz: nett('kaya'), dann: [['kaya', 'Schoko. Die anderen isst keiner. Statistik.']] },
         { t: 'Das ist Bestechung.', staerke: 'humor', herz: nett('kaya'), dann: [['kaya', 'Nennen wir es Willkommenskultur.']] },
         { t: 'Und dann reden die einfach?', herz: nett('kaya'), dann: [['kaya', 'Meistens. Mit Keks im Mund redet es sich leichter.']] },
       ] },
@@ -358,12 +358,12 @@ export const FAEDEN = {
       ] },
     ] },
     { herz: 3, titel: 'Der Club', g: [
-      ['laurent', 'Donnerstag ist Club. Es gibt Kekse und keine Noten.'],
-      ['laurent', 'Ach ja – und Hilfe bei Hausaufgaben. Fast vergessen.'],
+      ['laurent', 'Donnerstag ist Club. Hausaufgaben, keine Noten.'],
+      ['laurent', 'Autokorrektur ist aus. Ich trau ihr nicht mehr.'],
       { wahl: [
-        { t: 'Welche Kekse genau?', staerke: 'humor', herz: nett('laurent'), dann: [['laurent', 'Die guten. Ich bin Bibliothekarin, keine Barbarin.']] },
+        { t: 'Gibt’s da was zu essen?', staerke: 'humor', herz: nett('laurent'), dann: [['laurent', 'Wasser. Das ist eine Bibliothek, kein Café.']] },
         { t: 'Ich komm Donnerstag.', herz: nett('laurent'), dann: [['laurent', 'Schön. Bring deine schlimmste Aufgabe mit.']] },
-        { t: 'Hausaufgaben in der Freizeit? Nein.', dann: [['laurent', 'Verstehe. Die Kekse warten trotzdem.']] },
+        { t: 'Hausaufgaben in der Freizeit? Nein.', dann: [['laurent', 'Okay. Ich frag nächste Woche wieder. Und dann wieder.']] },
       ] },
     ] },
   ],
@@ -378,11 +378,11 @@ export const FAEDEN = {
       ] },
     ] },
     { herz: 3, titel: 'Zwei Augen', g: [
-      ['becker', '(zeigt auf deine Augen) Brille?'],
-      ['becker', 'Du hast zwei Augen. Ich mag beide.'],
+      ['becker', '(tippt auf die Brille an deiner Stirn) Die gehört tiefer.'],
+      ['becker', 'Da oben schützt sie nur deine Gedanken.'],
       { wahl: [
         { t: 'Ich auch. Wo liegt die Brille?', herz: nett('becker'), dann: [['becker', 'Da. Gut. Jetzt dürfen wir Spaß haben.']] },
-        { t: 'Ist doch nur ganz kurz.', dann: [['becker', 'Ein Splitter ist auch nur ganz kurz. Brille.']] },
+        { t: 'Ist doch nur ganz kurz.', dann: [['becker', '(zeigt aufs krumme Brett) Das war auch nur kurz.']] },
         { t: 'Steht mir die überhaupt?', staerke: 'humor', herz: nett('becker'), dann: [['becker', 'Niemandem steht die. Darum geht’s nicht.']] },
       ] },
     ] },
@@ -435,8 +435,8 @@ export const FAEDEN = {
       ] },
     ] },
     { herz: 3, titel: 'Eure Klasse', g: [
-      ['weber', 'Eure Klasse ist die lauteste seit Jahren.'],
-      ['weber', 'Und die ehrlichste. Das bleibt unter uns.'],
+      ['weber', 'Eure Klasse: vierzehn Ausreden diese Woche. Rekord.'],
+      ['weber', 'Die beste: „Der Bus war zu pünktlich.“'],
       { wahl: [
         { t: 'Kriegen wir dafür früher frei?', staerke: 'humor', herz: nett('weber'), dann: [['weber', 'Nein. Um 16 Uhr. Wie alle.']] },
         { t: 'Ehrlich wie?', herz: nett('weber'), dann: [['weber', 'Ihr sagt, wenn was blöd ist. Das spart Zeit.']] },
@@ -448,7 +448,7 @@ export const FAEDEN = {
     { herz: 2, titel: 'Neue Methode', g: [
       ['hoffmann', 'Neue Methode! Lernen mit Bewegung!'],
       { wahl: [
-        { t: 'Bitte nicht wieder Tanzen.', staerke: 'humor', herz: nett('hoffmann'), dann: [['hoffmann', 'Kein Tanzen.'], ['hoffmann', '… Nur ein bisschen Klatschen.']] },
+        { t: 'Bitte nicht wieder Klatschen.', staerke: 'humor', herz: nett('hoffmann'), dann: [['hoffmann', 'Kein Klatschen.'], ['hoffmann', '… Nur ein bisschen Stampfen.']] },
         { t: 'Was genau?', herz: nett('hoffmann'), dann: [['hoffmann', 'Wer antwortet, wirft den Ball weiter. Gut, oder?'], ['hoffmann', 'Sag ehrlich. Besser als Folien?']] },
         { t: 'Gibt’s auch eine Methode ohne Lernen?', dann: [['hoffmann', 'Heißt Pause. Kommt um zehn.']] },
       ] },

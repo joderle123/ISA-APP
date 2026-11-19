@@ -2,7 +2,7 @@
 // Aufruf (aus insel/): node tools/annexe/regeln.mjs [--alle]   (ohne --alle: nur Fehler und die ersten Hinweise)
 // Prüft: Wortzahl je Sprechblase/Antwort (max. 12), verbotene Wörter (derb, sexuell); Jugendsprache nur bei Jugendlichen,
 // Therapie- und Moralsprache, Einwürfe aus anderen Sprachen (nur aus der Liste, höchstens einer je Gespräch, nur die
-// der Figur), Telefonnummern (nur 112 und 116 111), Gewichts- und Kalorienangaben.
+// der Figur), Telefonnummern (nur 112, 116 111 und BEE SECURE 8002 1234 aus der Kurs-Vorlage), Gewichts- und Kalorienangaben.
 import { texte } from './texte.mjs';
 import { existsSync } from 'node:fs';
 import { join } from 'node:path';
@@ -61,7 +61,7 @@ for (const x of T) {
   }
   for (const m of x.text.matchAll(TELEFON)) {
     const z = m[1].replace(/\D/g, '');
-    if (z.length >= 5 && z !== '116111' && !/^(19|20)\d\d$/.test(z)) fehler.push(['Telefonnummer?', ort(x)]);
+    if (z.length >= 5 && z !== '116111' && z !== '80021234' && !/^(19|20)\d\d$/.test(z)) fehler.push(['Telefonnummer?', ort(x)]);
   }
   if (/\b112\b/.test(x.text) === false && /\b11[0-9]\b/.test(x.text) && /ruf|tel|nummer/i.test(x.text)) hinweise.push(['Nummer prüfen', ort(x)]);
   if (GEWICHT.test(x.text)) fehler.push(['Gewicht/Kalorien', ort(x)]);

@@ -39,7 +39,7 @@ const ABSTAND = {
   leute: [
     { ...F.ben, okay: 'Okay! Hier bleib ich. Respekt-Abstand.', zuNah: 'Uff, zu nah? Sorry. Ich bin so ein Umarmer.' },
     { ...F.ayla, okay: 'Passt. So stehen Bands auf Fotos.', zuNah: 'Oh. Zu nah? Sag einfach Stopp.' },
-    { ...F.luca, okay: '(bleibt stehen) Chill. Ich wollte nur aufs Foto.', zuNah: '(grinst) Na? Kein Stopp? Mutig.' },
+    { ...F.luca, okay: '(bleibt stehen) Chill. Ich wollte nur aufs Foto.', zuNah: '(geht einen Schritt zurück) Okay. Zu nah. Chill.' },
     { ...F.noah, okay: 'Gut. Ich mag auch Abstand.', zuNah: 'Sorry. Ich hätte fragen sollen.' },
   ],
 };
@@ -51,7 +51,7 @@ const ICH = {
   regeln: [['ich', 'Ich statt Du'], ['gefuehl', 'Gefühl gesagt'], ['grund', 'Grund gesagt'], ['wunsch', 'klarer Wunsch']],
   teile: [
     [{ t: 'Wenn du mein Kabel ohne Fragen nimmst,', regeln: { ich: true } }, { t: 'Du nimmst immer alles,', regeln: { ich: false } }, { t: 'Du Dieb,', regeln: { ich: false, gefuehl: false } }],
-    [{ t: 'ärgere ich mich,', regeln: { gefuehl: true } }, { t: 'bist du echt nervig,', regeln: { ich: false, gefuehl: false } }, { t: 'ist mir das egal,', regeln: { gefuehl: false } }],
+    [{ t: 'ärgere ich mich,', regeln: { gefuehl: true } }, { t: 'fühl ich mich von dir veräppelt,', regeln: { ich: false, gefuehl: false } }, { t: 'ist mir das egal,', regeln: { gefuehl: false } }],
     [{ t: 'weil mein Handy dann leer ist.', regeln: { grund: true } }, { t: 'weil du halt so bist.', regeln: { grund: false, ich: false } }, { t: 'weil das alle sagen.', regeln: { grund: false } }],
     [{ t: 'Frag mich bitte vorher.', regeln: { wunsch: true } }, { t: 'Hör einfach auf!', regeln: { wunsch: false } }, { t: 'Mach doch, was du willst.', regeln: { wunsch: false } }],
   ],
@@ -61,7 +61,7 @@ const ICH = {
 const BEWEIS = {
   titel: 'Team Chaos 🌀', mitglieder: 4, dauer: 22,
   nachrichten: [
-    { nach: 0.4, system: true, text: 'Mila zeigt dir einen alten Chat. Weitergeleitet von Kenan.' },
+    { nach: 0.4, system: true, text: 'Mila zeigt dir einen alten Chat. Weitergeleitet von jemandem aus der Gruppe.' },
     { nach: 1.5, wer: 'Luca', text: 'wen machen wir als nächstes zum opfer 😂' },
     { nach: 4, wer: 'Jo', text: '🎤 Sprachnachricht (0:06)' },
     { nach: 5.5, system: true, text: '▶ Jo: „Mach doch {name} zum Admin, wär lustig, haha.“' },
@@ -92,7 +92,7 @@ const STOPP = {
 export const GESPRAECHE_N6 = {
   n6_morgen: [
     ['erzaehler', 'Montag. Klassenfoto. Ben hat seinen besten Pulli an. Er hat nur einen.'],
-    ['mila', '(leise) Nach der Skills-Stunde. Bibliothek. Mit Beweis.'],
+    ['mila', '(leise) Morgen Mittag. CDI. Mit Beweis.'],
   ],
   n6_foto: [
     ['rantini', 'Voilà, 7P2! Alle zusammen! Näher! Noch näher!'],
@@ -121,7 +121,7 @@ export const GESPRAECHE_N6 = {
     ['ben', '(Schultern hängen, ganz leise) … Mir geht’s super.'],
     ['kaya', 'Was glaubt ihr? Den Worten – oder dem Rest?'],
     { wahl: [
-      { t: '„Dem Rest. Stimme und Körper sagen: Nein.“', staerke: 'lesen', herz: { kaya: 1 }, dann: [['kaya', 'Genau. Bens Mund lügt. Die Schultern nicht.']] },
+      { t: '„Dem Rest. Stimme und Körper sagen: Nein.“', staerke: 'lesen', herz: { kaya: 1 }, dann: [['kaya', 'Worte und Körper passen nicht. Dann fragt man nach.']] },
       { t: '„Den Worten. Er hat’s ja gesagt.“', dann: [['ben', 'Bro. Ich hab gespielt, als wär mein Hund weg.'], ['kaya', 'Darum fragen wir nach, wenn es nicht passt.']] },
     ] },
     ['kaya', 'Darum ist Schreiben so schwierig. Im Chat fehlen Stimme und Körper.'],
@@ -133,10 +133,10 @@ export const GESPRAECHE_N6 = {
         mittel: { merke: 'ichBotschaft', dann: [['mesenberg', 'Fast. Ein Teil klingt noch wie ein Vorwurf. Vorwürfe machen Ohren zu.']] },
         schwach: { dann: [['mesenberg', 'Hm. Da würde ich mein Kabel festhalten und gehen.'], ['mesenberg', 'Probier’s nochmal im Kopf.']] },
       } },
-    ['kaya', 'Mission der Woche: einmal mit „Ich“ anfangen statt mit „Du“.'],
+    ['kaya', 'Mission: Einmal sagen, was du fühlst. Und was du dir wünschst.'],
   ],
   n6_mila: [
-    ['mila', 'Ich hab Beweise. Du musst stark sein. Also … ich bleib hier.'],
+    ['mila', 'Ich hab einen Beweis. Er gefällt dir nicht. Ich bleib sitzen.'],
     { szene: 'chat', id: 'beweis', def: BEWEIS, ausgang: () => 'gesehen', folgen: { gesehen: { merke: 'joSprachnachricht' } } },
     ['erzaehler', 'Jos Stimme. Er lacht. „Mach doch {name} zum Admin.“'],
     ['mila', 'Luca hat den Fake gebaut. Die Idee kam von Jo. Als Witz.'],
@@ -155,18 +155,17 @@ export const GESPRAECHE_N6 = {
         ['jo', 'VERRÄTER? Ich hab geschrieben: Mach das nicht!'],
         ['erzaehler', 'Jo wirft den Ball gegen das Brett. Sehr hart.'],
         ['jo', '… Sorry. Okay. Du hast recht, sauer zu sein.'] ] },
-      { t: '„Ey. Von dir? Das hat echt reingehauen.“', staerke: 'klar', herz: { jo: 2 }, merke: 'joIchBotschaft', dann: [
+      { t: '„Ey. Das hat mich echt verletzt. Ich will’s verstehen.“', staerke: 'klar', herz: { jo: 2 }, merke: 'joIchBotschaft', dann: [
         ['jo', '(lässt den Ball fallen) … Wir SIND Freunde.'],
         ['jo', 'Das war ein dummer Witz. Ich hab nicht gedacht, dass er’s macht.'] ] },
       { t: '(Nichts sagen. Warten.)', staerke: 'warten', herz: { jo: 1 }, dann: [['erzaehler', 'Jo dribbelt. Einmal. Zweimal. Dann redet er von allein.'], ['jo', 'Ich hab Mist gebaut. Mit einem Satz.']] },
     ] },
-    ['jo', 'Luca sagt, ich bin langweilig, wenn ich nicht mitlache.'],
-    ['jo', 'Also hab ich gelacht.'],
-    ['jo', 'Und dann hab ich den Satz gesagt. Damit ich nicht langweilig bin.'],
+    ['jo', 'Luca hat gelacht. Alle haben gelacht. Ich auch.'],
+    ['jo', 'Dann war der Satz draußen. Zack. Fehlstart.'],
     { wahl: [
-      { t: '„Du wolltest bei Luca nicht langweilig sein.“', staerke: 'zuhoeren', herz: { jo: 2 }, merke: 'joGehoert', dann: [['jo', '(nickt) … Ja. Wie ein Idiot. Wallah.']] },
+      { t: '„Wer bei Luca nicht lacht, ist der Nächste. Oder?“', staerke: 'zuhoeren', herz: { jo: 2 }, merke: 'joGehoert', dann: [['jo', '(wirft. Trifft.) … Genau so. Wallah.']] },
       { t: '„Mir egal, warum. Es war mies.“', herz: { jo: -1 }, dann: [['jo', 'Ja. War es. Okay. Ich sag nix mehr.']] },
-      { t: '„Ich hätte auch gelacht. Wahrscheinlich.“', staerke: 'zuhoeren', herz: { jo: 1 }, dann: [['jo', 'Echt? … Okay. Das hilft irgendwie.']] },
+      { t: '„Ich hätte auch gelacht. Wahrscheinlich.“', staerke: 'zuhoeren', herz: { jo: 1 }, dann: [['jo', 'Echt? … (wirft daneben) Okay. Trotzdem mies von mir.']] },
     ] },
     { tu: 'n6_joEnde' },
   ],
@@ -180,7 +179,7 @@ export const GESPRAECHE_N6 = {
         klar: { staerke: 'klar', herz: { mila: 3, luca: -1 }, merke: 'stoppKlar' },
         mittel: { herz: { mila: 1 }, merke: 'stoppMittel', dann: [['mila', 'Danke. Er hat nichts gelöscht. Ich sag’s Herrn Kuedes.']] },
         unklar: { herz: { mila: 1 }, merke: 'stoppUnklar', dann: [['mila', '(steht auf) STOPP. Lösch das.'], ['erzaehler', 'Luca löscht. Mila zittert. Du auch.']] },
-        angriff: { herz: { luca: -2, mila: -1 }, merke: 'stoppAngriff', dann: [['mesenberg', '(kommt rein) Hier wird nicht gefilmt. Und nicht gebrüllt. Ihr drei: mitkommen.']] },
+        angriff: { herz: { luca: -2, mila: -1 }, merke: 'stoppAngriff', dann: [['mesenberg', '(kommt rein) Hier wird nicht gefilmt. Luca und du: mitkommen.'], ['mesenberg', 'Mila, alles okay? Du darfst hierbleiben.']] },
       } },
     { tu: 'n6_cdiEnde' },
   ],
@@ -209,8 +208,8 @@ export const tunN6 = (c) => ({
     return gut ? [['jo', 'Ich geh mit dir zu Herrn Kuedes.'], ['jo', 'Und ich sag Luca, dass Schluss ist. Ohne Witz diesmal.']]
       : [['jo', 'Ich red mit Herrn Kuedes. Allein. Ich muss das selbst machen.']];
   },
-  n6_cdiEnde: () => (c.S.merke.stoppKlar ? [['mila', '(nimmt die Kapuze ab) Du hast nicht gelächelt. Darum hat er’s geglaubt.'], ['mila', 'Danke. Ich üb das auch. Für mich.']]
-    : [['mila', 'Nächstes Mal ohne Lächeln. Ich übe am Spiegel.']]),
+  n6_cdiEnde: () => (c.S.merke.stoppKlar ? [['mila', '(nimmt die Kapuze ab) Danke. Du hast was gemacht.'], ['mila', 'Ich hab „Hör auf“ gesagt. Das hätte reichen müssen.']]
+    : [['mila', 'Ich hab „Hör auf“ gesagt. Das hätte reichen müssen.'], ['mila', 'Danke, dass du was gemacht hast.']]),
   n6_schluss: () => [
     { szene: 'stempel', def: { modul: 'Modul 5 · Kommunikation und Grenzen', titel: 'Klar gesagt',
       gelernt: ['Worte, Stimme, Körper – und wem man glaubt', 'Jeder hat einen anderen Wohlfühl-Abstand', 'Ich-Botschaften statt Vorwürfe', 'Zuhören, bis man es wirklich verstanden hat', 'Stopp sagen: klar, ruhig, ohne Lächeln – und ein Stopp annehmen'],

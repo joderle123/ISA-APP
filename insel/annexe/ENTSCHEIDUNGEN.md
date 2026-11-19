@@ -247,3 +247,68 @@ Ziel war ≤ 200 Aufrufe und ≤ 400k Dreiecke – überall erreicht. Was es geb
   ganz; Speiseplan mit Humor in der Kantine; seltene Schul-Durchsagen (Fundbüro, Turnbeutel, Gerd); Taste H = winken,
   Leute in der Nähe winken zurück; Ladekabel größer und orange (vorher unsichtbar). Neue Pass-Abzeichen: Kabelsalat,
   Enten-Retter, Geheimwort, Hallo an alle, Winke-Welle.
+
+## 19.11. – Vier inhaltliche Runden („immer kritischer“)
+### Runde 1: Story-Bogen und Figuren (zwei harte Kritiken, Kap. 1–5 und 6–10)
+- Krimi war ab Kapitel 3 gelöst (alle Spuren zeigten auf Dario): Dario zieht das Handy nicht mehr weg, sagt „ging in drei
+  Gruppen rum“; Jo und die 7P1 sind jetzt Mitverdächtige; Faktenwand: „Dario hatte das Foto“ ist Spur, kein Beweis.
+- Erwachsene handeln sichtbar: Kuedes weiß ab Tag 3 von @annexe.cam; Tidderich: „Account gemeldet. Bürotür, nicht Chat.“;
+  Kuedes’ Antwort im Chat: „Liegt schon bei der Direktion.“ (vorher: Termin, der nie kam).
+- Kapitel 5: Ben löst den Fake nicht mehr in 7 Sekunden („warte. was?“) – die Uhrzeit 25:14 findet Mila beim Prüfen.
+- Weniger Lehrer- und Therapie-Sätze: Noah coacht nicht mehr, Kuedes erklärt „Glaubenssätze“ nicht mehr, die
+  Gefühls-Abstimmung hat keine Musterlösung, Moral-Schlüsse in Kap. 7 und 10 durch eine Frage/Handlung ersetzt.
+- Kontinuität: Top-5-Liste wird am Mittwoch angekündigt, am Montag gepostet; Mila-Foto spielt in der Kantine; Bus/Zeit in
+  Kap. 4; Bohnen-Zahlen passen zur Klassengröße; Darios Nachricht Sonntag 23:14 statt Samstag 2:14; Zeitlinie des Accounts.
+- Finale (Kap. 10): Dario sagt vor der Klasse „{name} war nie Admin“ und löscht den Account live; Mila macht die Regeln im
+  Foto-Club statt „Vorsitzende“-Kitsch; Kenan bekommt seinen Moment; die vier Enden greifen frühere Entscheidungen auf;
+  Linas Ende ist kein Trostpreis mehr. Bens Falle: Luca soll einen Kuchen backen (passt zu Lucas Koch-Traum).
+- Slang je Figur bereinigt („real/sus“ nur Dario, Ben sagt „Bruder“), schwere Wörter ersetzt, lange Stempel gekürzt.
+### Runde 2: Lerninhalte fachlich (zwei schulpsychologische Kritiken mit Abgleich gegen die Kurs-Vorlage)
+- Selbstschutz wird nicht mehr bestraft: Weggehen im Hitze-Duell („Ich geh kurz. Reden wir gleich.“), Gruppe verlassen,
+  Handy weglegen – keine Respekt-Minuspunkte und keine Vorwürfe mehr.
+- Opfer-Verantwortung entfernt: Milas „Stopp“ wirkt nicht wegen ihres Lächelns nicht – „Weitermachen war seine
+  Entscheidung“; Schweigen ist kein Ja; Zuschauer:in ist nicht schuld am Schubsen („Ich hab geschubst. Nicht du.“).
+- Kapitel 5: Echtes Cybermobbing ist kein Denkfehler. Geprüft wird nur der Gedanke „Mir glaubt eh keiner.“; Mila sagt:
+  „Der Fake ist gemein. Das ist echt.“ Gleiche Herzen für jedes Ergebnis der Waage.
+- Atmen bei Panik: lange ausatmen statt tief einatmen; Herr Mesenberg kommt, wenn niemand Hilfe geholt hat.
+- Klassenregel „bleibt hier – außer bei Gefahr“ (Kinderschutz). Keine Selbstoffenbarung vor der Klasse („Nicht melden.
+  Nur denken.“). Kuedes spricht Noah allein an, nicht vor allen. Darios Entschuldigung nur mit Einverständnis von Noah
+  und Mila, im Klassenraum statt auf dem Fest; kein Klatsch-Druck.
+- Fachlich genauer: Handmodell (Finger bremsen, ab etwa 90), Funktion der Gefühle („Angst passt auf. Trauer holt Trost.
+  Wut sagt: Stopp.“), Mobbing-Definition (Absicht, Kräfte-Ungleichgewicht), Konflikt-Treppe auch als Weg nach unten,
+  Fuchs (Kompromiss) bei den Streit-Tieren, Ich-Botschaft mit verkleideter Du-Botschaft, erster Gedanke kommt von allein.
+- Medien/KI 2026: „Woher kommt das Bild?“ statt Fehler-Suche; Fach „Weiß ich nicht“; 20 statt 9 Sekunden; KI-Erklärungen
+  nachprüfen, Gesicht in Apps; „Fake-Videos von echten Menschen sind Mobbing“. BEE SECURE Helpline (aus der Kurs-Vorlage).
+- Gesundheit ohne Essens-Bewertung (keine Chips-Abwertung), Handy nicht der Feind, keine Einschlaf-Versprechen;
+  Geheimnisse, die Angst machen oder schaden, darf man weitersagen. Nachts bei Gefahr 112 (116 111 ist nicht rund um die Uhr).
+- Übungen ohne Musterlösung: Neuer Satz zeigt die Regeln erst nach „Das ist mein Satz“ (dann reparieren); mehrere gute
+  Teile; Bohnen: alle fünf legen (anonym); Warnlicht-Raten und Sortier-Karten ohne verratene Lösung; Thermometer ohne
+  Strafe fürs Langsam-Lesen; Check-in ohne Bewertung; Stärken-Rücken: Komplimente werden nicht korrigiert.
+- Doppelte Durchsagen (alte + neue aus Grafik-Runde 4) zu einem System zusammengelegt.
+### Runde 3: Neben-Inhalte (Jugend-Panel: Clown, schwache Leserin, Skeptiker)
+- Regelverstöße behoben: echte Buchtitel in der Lese-Ecke durch erfundene ersetzt; Automarke („Golf“) und Plattform-Name
+  („YouTube“, „google“) entfernt.
+- Alter Lehrername „M. Hoffmann“ war noch sichtbar (Stundenplan, Pinnwand, Fäden) – jetzt überall Mme Tidderich.
+- Freundschafts-Fäden an Story und Slang angepasst: Linas Comic ist „Gerd die Taube ermittelt“; Jo sagt „digga“ und
+  repariert einen Kombi; Ben rechnet in Aura; Kenan sagt „Brudi“; Noah versucht Slang („sus? Sagt man das?“);
+  Tidderich tanzt nicht in echt (das Tanz-Video ist der Fake aus Kapitel 8). Weniger Lehrer-Antworten und Therapie-Sätze
+  (Chiaras „Kleber“, Bens Lerntipp, Beckers Opa-Witz, Webers Schleim), weniger gleiche Gags (Kekse, „kein Monster“).
+- Welt-Texte: Kevin der Kaktus widerspricht sich nicht mehr; weniger Geruchs-Witze; Durchsagen ohne Kunstpausen-Witze;
+  Lesegeschichte ohne „Wachhund“-Bild; Titel „Ein Jahr in der 7P2“; Touch-Hilfe ohne Taste E; „Kurz raus“ widerspricht
+  sich nicht mehr; 5-4-3-2-1 ohne „riechen“ (Lach-Gefahr in der Klasse); Abzeichen-Hinweise verständlich.
+- Nachrichten am Kapitelende passen zu den neuen Kapiteln 3–10 (vorher: Schnuppertag, Arbeitswoche).
+### Runde 4: härteste Schluss-Prüfung (Zusammenhänge/Technik + Leichte Sprache/Kinderschutz)
+- Kinderschutz: Bens Witz „vom Dach gesprungen“ (Suizid-Bild) ersetzt; Noah nennt sich nicht mehr „kaputt“; Ben ruft
+  die Mobbing-Liste nicht mehr über den Hof; Dario wird nach dem Geständnis nicht vor den Opfern gefeiert (Kekse für alle,
+  „Wieder gut machen dauert noch“); Option „Auslachen ist auch bei Luca nicht okay“; nach Druck-„Sorry“ keine Beschämung;
+  die Falle nur mit Herrn Kuedes’ Ja; Mila will erst atmen und dann mit Erwachsenen reden, nicht erst den Täter finden;
+  Hilfe auch zu Hause („Heute zu Hause zeigen“); gefilmte Mila muss nicht mit ins Büro.
+- Technik-Fehler: Entscheidungen, die nie gespeichert wurden (Chat-Flags sind lokal), wirken jetzt: ruhige Reaktion
+  im Fake-Chat → leichtere Waage; „Luca privat geschrieben“ → Herr Kuedes reagiert; Kantinen-Ausgang → passende
+  Bildunterschrift und Luca-Kommentar. Bens Schulden werden nicht doppelt gezählt; sein Ende passt zum Kontostand.
+- Zeitlinie: Kuedes erst am Mittwoch (nicht „morgen“); #3 „diese Woche“; Sportfest „nächsten Freitag“; CDI am Dienstag;
+  „letzte Skills-Stunde der Woche“; Kreis „kurz darauf“ statt „vor dem Fest“; 19 statt 21 Leute im Klassenchat;
+  Kenan wird in Kapitel 6 nicht mehr namentlich verraten; fünf statt „vier“ Tiere.
+- Leichte Sprache: „statistisch“, „Kriterien“, „Kategorie“, „effizient“, „Algorithmus“, „Datenpunkte“,
+  „unwissenschaftlich“, Genitiv/Passiv und Redewendungen durch einfache Wörter ersetzt; SePAS beim ersten Mal erklärt.
+- Doppelte Zeilen und Pointen entfernt (Ben „Respekt. Du lernst schnell“, „falsch geraten“, Kaktus, Rückzug-Karte).

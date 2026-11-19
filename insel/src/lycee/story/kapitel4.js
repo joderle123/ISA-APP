@@ -54,10 +54,10 @@ const MORGEN = {
       { t: '(Handy weg. 5 Dinge sehen, 4 hören, 3 spüren …)', typ: 'sinne', wirkung: -18, antwort: 'Ein Kran. Eine Taube mit Mütze. Regen auf dem Dach.' },
       { t: '„Das ist morgen. Jetzt ist jetzt.“', typ: 'kopf', wirkung: -14 },
     ] },
-    { t: '7:58. Regen. Kein Schirm. Die erste Stunde hat schon angefangen.', plus: 24, karten: [
-      { t: '(Rennen. Richtig schnell. Den ganzen Weg.)', typ: 'koerper', wirkung: -22, antwort: 'Du bist nass. Aber die Zahl ist runter. Rennen verbraucht den Stress.' },
-      { t: '„Positiv denken. Positiv denken.“', typ: 'kopf', wirkung: -12 },
-      { t: '(Noah anrufen. Er steht auch noch da.)', typ: 'menschen', wirkung: -16, antwort: 'Noah: „Ich bin auch zu spät. Wir sind ein Team.“' },
+    { t: '7:44. Regen. Kein Schirm. Der nächste Bus ist voll.', plus: 24, karten: [
+      { t: '(Zügig zur nächsten Haltestelle gehen. Arme schwingen.)', typ: 'koerper', wirkung: -14, antwort: 'Erst klopft das Herz. Dann wird es ruhiger.' },
+      { t: '„Nass ist nur nass. Ich komm an.“', typ: 'kopf', wirkung: -12 },
+      { t: '(Noah schreiben. Er sitzt im nächsten Bus.)', typ: 'menschen', wirkung: -16, antwort: 'Noah: „Ich halt dir einen Platz frei. Mit einem Kaktus.“' },
     ] },
   ],
 };
@@ -83,7 +83,7 @@ const KOFFER = {
     { id: 'sinne54321', t: 'Fünf sehen, vier hören, drei spüren', fach: 'sinne' }, { id: 'kalt', t: 'Kalte Flasche an die Hand', fach: 'sinne' }, { id: 'duft', t: 'Duft aus der Hosentasche', fach: 'sinne' },
     { id: 'schiff', t: 'Gedanken-Schiffchen', fach: 'kopf' }, { id: 'satz', t: 'Mutsatz: Eins nach dem anderen', fach: 'kopf' }, { id: 'ort', t: 'Sicherer Ort im Kopf', fach: 'kopf' },
     { id: 'freund', t: 'Mit einer Person reden', fach: 'menschen' }, { id: 'kuedes', t: 'Zu Herrn Kuedes gehen', fach: 'menschen' }, { id: 'blick', t: 'Kurz zu jemandem gucken, den ich mag', fach: 'menschen' },
-    { id: 'musik', t: 'Musik', fach: 'aktiv' }, { id: 'korb', t: 'Körbe werfen', fach: 'aktiv' }, { id: 'zeichnen', t: 'Zeichnen', fach: 'aktiv' },
+    { id: 'musik', t: 'Musik', fach: 'sinne' }, { id: 'korb', t: 'Körbe werfen', fach: 'koerper' }, { id: 'zeichnen', t: 'Zeichnen', fach: 'aktiv' },
   ],
 };
 // Welche Skills gehen im Test (im Saal, ohne aufzustehen)?
@@ -146,7 +146,7 @@ const DARIO_DUELL = {
       karten: [
         { t: '„Ich denk gar nix. Ich frag nur.“', stimme: 'kopf', art: 'klar', hitze: -10, respekt: 1, antwort: 'Fragen. Klar. Alle fragen nur.' },
         { t: '„Wer sonst? Du warst im Flur!“', stimme: 'stolz', art: 'angriff', hitze: 28, antwort: 'BEWEIS es. Los. Beweis es!' },
-        { t: '(Weggehen.)', stimme: 'bauch', art: 'rueckzug', hitze: -4, respekt: -1, antwort: 'Ja, geh. Wie alle.' },
+        { t: '„Ich geh kurz. Du auch.“', stimme: 'kopf', art: 'rueckzug', hitze: -8, respekt: 0, antwort: '(tritt gegen die Wand) … Geh halt.' },
       ], still: { hitze: 6, antwort: 'Sagst nix. Heißt ja.' } },
     { sagt: 'Ich flieg EINMAL raus, und schon bin ich der Böse.', warn: 'Dein Herz klopft schneller', skill: '(Zehn Sekunden. Nichts sagen.)', skillAntwort: '(schnaubt) … Okay.',
       karten: [
@@ -165,7 +165,7 @@ const darioAusgang = (r) => (r.knall ? 'knall' : r.hitze <= 25 ? 'ruhig' : r.hit
 
 export const GESPRAECHE_N4 = {
   n4_bus: [
-    ['erzaehler', 'Montag. Du rennst. Die Haltestelle ist da. Der Bus auch. Noch.'],
+    ['erzaehler', 'Montag. Du rennst. Der Bus fährt los. Ohne dich.'],
     { szene: 'thermo', id: 'morgen', def: MORGEN,
       ausgang: (r) => (r.rot ? (r.wert < 60 ? 'runter' : 'rot') : 'gelb'),
       folgen: {
@@ -180,21 +180,21 @@ export const GESPRAECHE_N4 = {
     ['noah', 'Morgen ist der Test. Beim letzten Test war plötzlich alles weg.'],
     ['noah', 'Weiß. Wie ein Bildschirm ohne Strom.'],
     { wahl: [
-      { t: '„Das nennt man Blackout. Das passiert bei Rot.“', staerke: 'lesen', herz: { noah: 1 }, merke: 'blackoutErklaert', dann: [['noah', 'Es hat einen Namen? Dann bin ich nicht kaputt.'], ['noah', 'Gut. Das ist irgendwie gut.']] },
-      { t: '„Mir passiert das auch.“', staerke: 'zuhoeren', herz: { noah: 2 }, merke: 'auchBlackout', dann: [['noah', 'Echt? Du wirkst immer so … normal.'], ['noah', 'Okay. Dann sind wir zwei normale Kaputte.']] },
+      { t: '„Weiß wie ein Bildschirm? Hast du neu gestartet?“', staerke: 'humor', herz: { noah: 1 }, merke: 'blackoutErklaert', dann: [['noah', 'Ich hab’s versucht. Ich hab auf mein Ohr gedrückt.'], ['noah', '(grinst) Hat nicht geholfen. Aber jetzt lach ich.']] },
+      { t: '„Mir passiert das auch.“', staerke: 'zuhoeren', herz: { noah: 2 }, merke: 'auchBlackout', dann: [['noah', 'Echt? Du wirkst immer so … normal.'], ['noah', 'Okay. Dann sind wir das Team Weißer Bildschirm.']] },
       { t: '„Lern einfach mehr. Dann passiert das nicht.“', herz: { noah: -1 }, dann: [['noah', 'Ich hab gelernt. Drei Tage. Es war trotzdem weg.'], ['erzaehler', 'Noah zieht die Kapuze hoch.']] },
     ] },
     ['noah', 'Herr Kuedes macht heute was mit Zahlen. 0 bis 100.'],
     ['noah', 'Ich bin gerade bei 70. Mindestens.'],
   ],
   n4_skills: [
-    ['kaya', '(hält eine Faust hoch) Faust. Daumen rein. Der Daumen ist das Gefühl.'],
-    ['kaya', '(klappt die Finger hoch) Ab 70: Deckel weg. Kopf taub.'],
+    ['kaya', '(hält eine Faust hoch) Daumen rein. Daumen ist der Alarm. Finger bremsen.'],
+    ['kaya', '(klappt die Finger hoch) Ab etwa 90: Deckel weg.'],
     ['ben', 'Mein Deckel ist bei Nuggets immer weg.'],
     ['mesenberg', 'Das ist eher Begeisterung, Ben. Andere Zone.'],
     { wahl: [
       { t: '„Was hilft bei Rot, wenn der Kopf nicht zuhört?“', staerke: 'lesen', herz: { kaya: 1 }, dann: [['kaya', 'Gute Frage. Der Körper. Atmen, Bewegen, Kälte. Erst runter, dann reden.']] },
-      { t: '„Ich war heute Morgen bei Rot. Wegen dem Bus.“', wenn: (m) => m.thermoRot, staerke: 'zuhoeren', herz: { kaya: 1, noah: 1 }, dann: [['kaya', 'Rot am Montagmorgen. Klassiker. Was hat geholfen?'], ['du', 'Rennen. Glaub ich.'], ['kaya', 'Bewegung. Der Körper verbraucht den Stress. Genau so.']] },
+      { t: '„Ich war heute Morgen bei Rot. Wegen dem Bus.“', wenn: (m) => m.thermoRot, staerke: 'zuhoeren', herz: { kaya: 1, noah: 1 }, dann: [['kaya', 'Rot am Montagmorgen. Klassiker. Was hat geholfen?'], ['du', 'Weiß nicht genau. Irgendwas hat geholfen.'], ['kaya', 'Gut gemerkt. Was war es? Das kommt in den Koffer.']] },
       { t: '(Faust machen. Daumen fühlen. Nichts sagen.)', dann: [['erzaehler', 'Deine Finger klappen hoch. Wieder runter. Komisch, wie gut das passt.']] },
     ] },
     ['kaya', 'Jetzt die Linie. Ich lese Sätze. Ihr stellt euch hin.'],
@@ -203,11 +203,11 @@ export const GESPRAECHE_N4 = {
       ausgang: (r) => (r.treffer >= 3 ? 'leser' : 'ueberrascht'),
       folgen: {
         leser: { staerke: 'lesen', herz: { mila: 1, jo: 1 }, merke: 'zonenLeser', dann: [['mesenberg', 'Du liest die Klasse gut. Und trotzdem waren Überraschungen dabei.']] },
-        ueberrascht: { herz: { ayla: 1 }, dann: [['kaya', 'Überrascht? Gut. Was für dich 20 ist, ist für jemand anderes 90.']] },
+        ueberrascht: { herz: { ayla: 1 }, dann: [['kaya', 'Überrascht? Gut. Deine 20 kann für andere 90 sein.']] },
       } },
     ['jo', 'Digga, ich dachte, Mila ist nie gestresst.'],
     ['jo', 'Die ist bei 85 wegen einem RAUM.'],
-    ['mila', 'Und du bei 90 wegen einem Lachen. Wir haben alle unseren Raum.'],
+    ['mila', 'Und du bei 90 wegen einem Lachen. Gleichstand.'],
     ['kaya', 'Letzte Übung. Koffer-Markt. Jeder packt ein, was bei ihm wirkt.'],
     ['kaya', 'Morgen ist Test. Nehmt den Koffer mit.'],
     { szene: 'koffer', id: 'koffer', def: KOFFER, ausgang: (r) => (r.notfall.some((id) => ['schiff', 'satz', 'ort'].includes(id)) && r.notfall.every((id) => ['schiff', 'satz', 'ort'].includes(id)) ? 'nurKopf' : 'gemischt'),
@@ -254,10 +254,11 @@ export const GESPRAECHE_N4 = {
     { tu: 'n4_handyBilanz' },
   ],
   n4_noahRot: [
-    ['erzaehler', 'Die Bank. Noah sitzt da, nach vorne gebeugt. Seine Hände zittern. Er atmet schnell. Zu schnell.'],
+    ['erzaehler', 'Die Bank. Noah sitzt da, nach vorne gebeugt.'],
+    ['erzaehler', 'Seine Hände zittern. Er atmet schnell. Zu schnell.'],
     ['noah', 'Alle – haben das – gesehen. Ich krieg – keine Luft.'],
     { wahl: [
-      { t: '„Ich schreib Luca. Sofort.“ (Handy raus)', herz: { noah: -1 }, merke: 'noahGeredet', dann: [['noah', 'Nicht – weggehen. Bitte. Bleib.'], ['erzaehler', 'Er ist bei Rot. Der Deckel ist weg. Worte kommen nicht an.']] },
+      { t: '„Ich hol dir Wasser. Bin gleich da.“', merke: 'noahGeredet', dann: [['noah', 'Nicht – weggehen. Bitte. Bleib.'], ['erzaehler', 'Du bleibst. Das Wasser kann warten.']] },
       { t: '(Hinsetzen.) „Atme mit mir. Ich zähl.“', staerke: 'ruhig', herz: { noah: 1 }, merke: 'noahAtem' },
       { t: '„Soll ich Herrn Kuedes holen?“', staerke: 'hilfe', herz: { noah: 1, kaya: 1 }, merke: 'kuedesGeholt', dann: [['noah', '(nickt. Schüttelt den Kopf. Nickt.)'], ['erzaehler', 'Ben rennt los. Du bleibst. Bis er kommt, atmet ihr zusammen.']] },
     ] },
@@ -269,12 +270,12 @@ export const GESPRAECHE_N4 = {
         langsam: { herz: { noah: 1 }, merke: 'noahRunter', dann: [['noah', 'Es wird. Langsam. Danke, dass du geblieben bist.']] },
       } },
     { tu: 'n4_kuedesKommt' },
-    ['noah', 'Wer macht so was? Durchs Fenster. Mitten im Test.'],
-    ['mila', '(kommt dazu, außer Atem) Um 8:34 war fast jeder im Unterricht.'],
+    ['mila', '(kommt dazu, außer Atem) Ich hab’s gesehen. Alles okay bei euch?'],
+    ['mila', 'Um 8:34 war fast jeder im Unterricht.'],
     ['mila', 'Wer im Flur war, steht auf einer kurzen Liste.'],
   ],
   n4_dario: [
-    ['kenan', 'Yo. Zweimal messen, einmal reden, Brudi.'],
+    ['kenan', 'Yo. Erst gucken, dann reden, Brudi.'],
     ['kenan', 'Du hast das nicht von mir.'],
     ['kenan', 'Dario ist gestern bei Rantini rausgeflogen. 8:30. Zwanzig Minuten im Flur.'],
     ['kenan', 'Und Luca war „auf Toilette“. Auch zwanzig Minuten. Lustige Toilette.'],
@@ -309,7 +310,7 @@ export const GESPRAECHE_N4 = {
 export const tunN4 = (c) => ({
   n4_testStart: () => (c.S.merke.kofferGepackt ? [['erzaehler', 'Du denkst an deinen Koffer. Er ist in deinen Händen.']] : []),
   n4_handyBilanz: () => (c.S.merke.handyGelogen ? [['erzaehler', 'Dein Handy war in der Jacke. Gelogen. Für nichts.']] : []),
-  n4_kuedesKommt: () => (c.S.merke.kuedesGeholt ? [['kaya', '(kommt mit Ben) Ich bin da. Ben war schneller als beim Sportfest.'], ['kaya', 'Noah, magst du kurz mit in mein Büro? Nur Tee.'], ['noah', '… Okay. Mit Tee.']] : []),
+  n4_kuedesKommt: () => (c.S.merke.kuedesGeholt ? [['kaya', '(kommt mit Ben) Ich bin da. Ben war schneller als beim Sportfest.'], ['kaya', 'Noah, magst du kurz mit in mein Büro? Nur Tee.'], ['noah', '… Okay. Mit Tee.']] : [['mesenberg', '(kommt über den Hof) Noah? Ich bleib bei euch.'], ['mesenberg', 'Gut gemacht, ihr zwei. Jetzt übernehm ich.']]),
   n4_darioBilanz: () => {
     const n = ((c.S.sz || {}).darioDuell || {}).bemerkt || 0;
     return n >= 2 ? [['erzaehler', 'Kiefer. Herz. Hände. Du hast es gemerkt, bevor es kracht. Dario nicht. Noch nicht.']] : [];
@@ -325,8 +326,8 @@ export const tunN4 = (c) => ({
   },
   n4_schluss: () => [
     { szene: 'stempel', def: { modul: 'Modul 3 · Gefühle regulieren', titel: 'Runterkommen',
-      gelernt: ['Anspannung von 0 bis 100 und die drei Zonen', 'Bei Rot: erst Körper, dann Kopf', 'Gleicher Satz, andere Zahl – bei allen anders', 'Einen Skills-Koffer und eine Notfallkarte gepackt', 'Mit jemandem zusammen runtergeatmet'],
-      mission: 'Miss deine Zahl diese Woche dreimal. Und probier einmal einen Skill aus deinem Koffer – bevor es Rot wird.' }, folgen: {} },
+      gelernt: ['Deine Zahl von 0 bis 100', 'Bei Rot: erst Körper, dann Kopf', 'Für jeden ist etwas anderes Rot', 'Mit jemandem runtergeatmet'],
+      mission: 'Probier einen Skill aus deinem Koffer. Bevor es Rot wird.' }, folgen: {} },
     ['erzaehler', 'Freitagabend. Eine unbekannte Nummer schickt dir ein Bild.'],
     ['erzaehler', 'Ein Screenshot. Profil von @annexe.cam. Unter „Admin“ steht: {name}.'],
     ['erzaehler', 'Das bist du. Du warst das nie.'],

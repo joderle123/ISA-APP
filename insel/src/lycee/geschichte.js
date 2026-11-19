@@ -173,7 +173,7 @@ export const GESPRAECHE = {
     { wahl: [
       { t: '„Darf ich mal durch?“', staerke: 'klar', herz: { kenan: 1, dario: 1 }, dann: [
         ['dario', 'Oh. Klar. Sorry.'],
-        ['kenan', 'Neu? Hoffmann ist okay. Nur seine Krawatten nicht.'] ] },
+        ['kenan', 'Neu? Mme Tidderich ist okay. Nur ihre Krawatten nicht.'] ] },
       { t: '(Einfach durchdrängeln.)', herz: { kenan: -1, dario: -1 }, merke: 'gedraengelt', dann: [
         ['kenan', 'Ey! Geht’s noch?'],
         ['dario', 'Lass. Erster Tag.'],

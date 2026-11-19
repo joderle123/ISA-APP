@@ -52,7 +52,7 @@ export const BANK = {
   ben: 'Ben bietet dir einen Kaugummi an. Von dir. Aus deiner Tasche.',
   chiara: 'Chiara sortiert ihre Stifte. Nach Farbe. Du darfst den gelben halten.',
   yusuf: 'Yusuf nickt einmal. Dann sitzt ihr einfach. Gut.',
-  luca: 'Luca scrollt. Er zeigt dir ein Video. Es ist wirklich lustig. Mist.',
+  luca: 'Luca stellt eine Dose zwischen euch. Kein Kommentar.',
   kenan: 'Kenan nimmt den Bleistift vom Ohr. Er zeichnet ein Regal. Schief.',
-  dario: 'Dario zeigt dir Fotos von Autos. Sehr viele Autos.',
+  dario: 'Dario zeigt dir ein Seifen-Video. Du guckst zu lange. Mist.',
 };

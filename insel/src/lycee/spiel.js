@@ -332,30 +332,18 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
 
   // ---------- Sprüche im Vorbeigehen: Statisten sagen kurz etwas, manche winken (Lebendigkeit) ----------
   const SPRUECHE = {
-    draussen: ['Moien! 👋', 'Wer hat Seite 12?', 'Pause ist zu kurz. Fakt.', 'Ich hab Hunger. Seit 1998.', 'Gerd ist wieder da 🐦', 'Eins gegen eins? Am Korb?', 'Ich hab mein Ladekabel vergessen. Schon wieder.',
-      'Lowkey müde.', 'Hast du Mathe gemacht? … Ich auch nicht.', 'Salut! Ça va?', 'Wer hat meinen Ball?', 'Heute ist so ein Tag. Du weißt.', 'Bro, dein Schuh ist offen. … Reingefallen.', 'Noch 12 Minuten bis zum Klingeln!'],
+    draussen: ['Moien! 👋', 'Wer hat Seite 12?', 'Pause ist zu kurz. Fakt.', 'Ich hab Hunger. Seit der ersten Stunde.', 'Gerd ist wieder da 🐦', 'Eins gegen eins? Am Korb?', 'Ich hab mein Ladekabel vergessen. Schon wieder.',
+      'Lowkey müde.', 'Hast du Mathe gemacht? … Ich auch nicht.', 'Salut! Wer hat heute Aufsicht?', 'Wer hat meinen Ball?', 'Heute ist so ein Tag. Du weißt.', 'Bro, mein Akku hat zwei Prozent. Rette mich.', 'Noch 12 Minuten bis zum Klingeln!'],
     kantine: ['Das Curry ist heute okay!', 'Nudeln. Schon wieder.', 'Wer isst seinen Nachtisch nicht?', 'Frau Kremer hat mir extra Soße gegeben 🙏', 'Zu wenig Salz. Sagt Luca immer.', 'Ich hol mir Nachschlag. Wünsch mir Glück.'],
     gang: ['Mein Spind klemmt. Wie immer.', 'Wo ist Saal 1.06?', 'Hast du den Plan für morgen?', 'Pssst. Da kommt wer.', 'Ich renn nicht. Ich gehe schnell.'],
-    innenhof: ['Hier ist es so ruhig. Ich liebe das.', 'Hast du das Plakat für die Aula gesehen?', 'Ich übe meinen Text. Leise.'],
+    innenhof: ['Psst. Hier findet uns keiner. Bleib leise.', 'Hast du das Plakat für die Aula gesehen?', 'Ich übe meinen Text. Leise.'],
     skate: ['Kickflip! … fast.', 'Guck! … Nee, warte. Nochmal.', 'Das Board ist von meinem Cousin.'],
   };
   const sprueche_el = document.createElement('div'); sprueche_el.className = 'ly-bark'; sprueche_el.hidden = true; root.appendChild(sprueche_el);
   const _bv = new THREE.Vector3();
   let spruchNaechst = performance.now() + 4000, spruchWer = null, spruchBis = 0;
-  // Schul-Durchsagen: selten, kurz, mit Humor (Lautsprecher-Gong)
-  const DURCHSAGEN = ['Ein roter Turnbeutel liegt im Gang. Er riecht schon. Bitte abholen.', 'Wer füttert die Tauben mit Pommes? Gerd braucht Gemüse.',
-    'Der Automat ist nicht kaputt. Er hat nur Gefühle.', 'Bitte nicht im Gang rennen. Sehr schnelles Gehen auch nicht.', 'Die Pflanze Kevin hat Durst. Danke an alle, die gießen.',
-    'Heute in der Kantine: Pizza. … Kleiner Scherz. Nudeln.', 'Fundbüro: drei Jacken, ein Schuh, null Hausaufgaben.', 'Der Brunnen ist kein Schwimmbad. Auch nicht für Enten.',
-    'Wer hat den Schlüssel vom Musikraum? Ayla wartet. Laut.', 'Das war ein Test. Bitte weitermachen. Danke.'];
-  let durchsageNaechst = performance.now() + 100000;
   function sprueche(dt) {
     const offen = !imGespraech && !ui.ebeneArt() && laeuft;
-    if (offen && performance.now() > durchsageNaechst && S && S.merke) {
-      durchsageNaechst = performance.now() + 170000 + Math.random() * 120000;
-      const pool = DURCHSAGEN.concat((S.merke.kabel || []).length < 5 ? ['Herr Mesenberg sucht sein Ladekabel. Schon wieder. Finderlohn: Dankbarkeit.'] : []);
-      const n = S.merke.durchsage = ((S.merke.durchsage || 0) + 1 + Math.floor(Math.random() * 3)) % pool.length;
-      ui.toast('<b>📢 Durchsage</b><span>' + pool[n] + '</span>'); audio.play('chime');
-    }
     if (spruchWer && performance.now() < spruchBis && offen) {
       _bv.copy(spruchWer.f.group.position); _bv.y += (spruchWer.d.steht && spruchWer.d.steht[3] === 'sitzt') ? 1.55 : 2.05; _bv.project(camera);
       const sicht = _bv.z < 1 && Math.abs(_bv.x) < 1 && Math.abs(_bv.y) < 1;
@@ -376,8 +364,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
 
   // Statisten ansprechen: kurzer, witziger Gruß (zählt für den Schul-Pass)
   const GRUSS = ['Hey! Neu hier, oder?', 'Salut! Coole Schuhe.', 'Moien! Hast du Gerd gesehen? Die Taube mit Hut.', 'Yo. Kennst du Ben? Der schuldet mir 2 €.', 'Hi! … Sorry, ich dachte, du bist wer anders.',
-    'Hallo! Ich bin in der 7P1. Wir sind besser. Spaß.', 'Bonjour! Ich übe Französisch. Das war alles.', 'Moien. Ich hab Hunger. Hast du was?', 'Oh! Du bist doch die neue Person vom Foto!', 'Hey. Frag nicht nach Mathe. Bitte.',
-    'Hi! Weißt du, wo der Automat Chips hat? Unten links. Immer.', 'Salut! Hab dich beim Sportfest gesehen. Respekt.', 'Yo! Eins gegen eins am Korb? Später?', 'Moien! Schönen Tag noch. Echt jetzt.'];
+    'Hallo! Ich bin in der 7P1. Wir sind besser. Spaß.', 'Salut! Gleich Französisch. Ohne Hausaufgaben. Hilfe.', 'Moien. Ich hab Hunger. Hast du was?', 'Ey, du bist doch aus der 7P2. Ihr seid laut.', 'Hey. Frag nicht nach Mathe. Bitte.',
+    'Der Automat hat Chips. Unten links. Gern geschehen.', 'Salut! Hab dich beim Sportfest gesehen. Respekt.', 'Yo! Eins gegen eins am Korb? Später?', 'Moien. Noch drei Stunden. Ich zähl mit.'];
   const GRUSS_SITZ = ['Mmmh. Willst du probieren? … Nee, Spaß.', '(mit vollem Mund) Hmpf. Hallo.', 'Psst. Ich lern gerade. Also … tu ich so.'];
   function statistNah(p) { let best = null, bd = 1.7; for (const x of statisten) { const d = Math.hypot(x.f.group.position.x - p.x, x.f.group.position.z - p.z); if (d < bd) { bd = d; best = x; } } return best; }
   function gruss(x) {
@@ -583,7 +571,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       const m = S.merke, z = [];
       if (m.weberGewartet && m.gewartet) z.push(['hoffmann', 'Zehn Minuten. Am ersten Tag. Rekord.'], ['jo', '(halblaut) Starker Auftritt.']);
       else if (m.gewartet) z.push(['hoffmann', 'Gerade noch. Setz dich. Schnell.']);
-      if (m.falscherPlan) z.push(['hoffmann', 'Zeig mal deinen Plan … das ist die 7P1.'], ['jo', 'Falsche Klasse. Tür ist da hinten.'], ['erzaehler', 'Gelächter. Hoffmann gibt dir seine Kopie. Mit Kaffeefleck.']);
+      if (m.falscherPlan) z.push(['hoffmann', 'Zeig mal deinen Plan … das ist die 7P1.'], ['jo', 'Falsche Klasse. Tür ist da hinten.'], ['erzaehler', 'Gelächter. Mme Tidderich gibt dir ihre Kopie. Mit Kaffeefleck.']);
       return z;
     },
     bingoStart: () => { zeigeBingo(); },
@@ -1398,7 +1386,9 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     let durchsage = 0;
     setInterval(() => {
       if (!S || imGespraech || ui.ruhig || !steuerung.frei || document.hidden || Math.random() < 0.5) return;
-      ui.toast('<b>📢 Durchsage</b><span>' + DURCHSAGEN[durchsage++ % DURCHSAGEN.length] + '</span>');
+      const pool = DURCHSAGEN.concat((S.merke && (S.merke.kabel || []).length < 5) ? ['Herr Mesenberg sucht sein Ladekabel. Schon wieder. Finderlohn: Dankbarkeit.'] : []);
+      durchsage += 1 + Math.floor(Math.random() * 3);
+      ui.toast('<b>📢 Durchsage</b><span>' + pool[durchsage % pool.length] + '</span>'); audio.play('chime');
     }, 140000);
   }
   ui.onEinstellungen = (e) => { try { audio.setVolume(e.laut); audio.setMusicVolume(e.musik); } catch (x) { /* Ton noch nicht bereit */ } };

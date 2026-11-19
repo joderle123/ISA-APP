@@ -52,6 +52,9 @@ export function debugWerkzeuge() {
     if (document.querySelector('.ly-wurf')) { taste('Space'); return; }   // Basketball am Korb: einfach werfen
     const eb = document.querySelector('.ly-ebene:not([hidden])');
     if (eb) {
+      // Bohnen-Wette: erst alle fünf Bohnen legen (der Knopf kommt erst danach)
+      const becher = [...document.querySelectorAll('.ly-ebene .sz-becher [data-i]:not([disabled])')];
+      if (becher.length && !sichtbar('.ly-ebene [data-a="w"]')) { klick(becher[Math.floor(Math.random() * becher.length)]); return; }
       // Karten: erst „Weiter/Fertig/Verstanden“, sonst eine Auswahl, sonst Taste E
       const weiter = sichtbar('.ly-ebene [data-a="w"]') || sichtbar('.ly-ebene [data-a="ok"]') || sichtbar('.ly-ebene [data-a="weiter"]') || sichtbar('.ly-ebene [data-a="sagen"]') || sichtbar('.ly-ebene [data-a="weg"]');
       if (klick(weiter)) return;

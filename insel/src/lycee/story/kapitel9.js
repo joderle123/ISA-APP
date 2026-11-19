@@ -22,7 +22,7 @@ export const SCHRITTE_N9 = [
     start: { teleport: 'eingangHof' },
     leute: { ben: [28.4, 13.6, 2.6], jo: [26.8, 14.6, 1.6], noah: [27.2, 16.2, 0.8] },
     fertig: { reden: 'ben', gespraech: 'n9_ben' } },
-  { id: 'k9_ende', kap: 9, tag: 'Freitag', uhr: 10.0, titel: 'Mein Gesund-Plan', ziel: 'Letzte Skills-Stunde vor dem Sommerfest. Aula.', marker: 'kaya',
+  { id: 'k9_ende', kap: 9, tag: 'Freitag', uhr: 10.0, titel: 'Mein Gesund-Plan', ziel: 'Letzte Skills-Stunde der Woche. Aula.', marker: 'kaya',
     start: { teleport: 'eingangHof' },
     leute: { kaya: [-14, -55.5, Math.PI], ...AULA, dario: [-9.8, -55.2, -1.4] },
     fertig: { reden: 'kaya', gespraech: 'n9_ende' } },
@@ -32,12 +32,12 @@ export const SCHRITTE_N9 = [
 const DARIOS_RUCKSACK = {
   wo: 'Haltestelle · mit Dario', titel: 'Darios Rucksack',
   dinge: [
-    { t: 'Das Geheimnis: Ich hab @annexe.cam angefangen.', sy: '🤐', kg: 6, passt: ['teilen'], warum: 'Geheimnisse werden schwerer. Mit einem Erwachsenen teilen macht leichter.' },
-    { t: 'Luca hat das Passwort. Ich komm nicht mehr rein.', sy: '🔑', kg: 4, passt: ['nicht', 'teilen'], warum: 'Was Luca postet, ist Lucas Verantwortung. Nicht alles davon gehört Dario.' },
+    { t: 'Das Geheimnis: Ich hab @annexe.cam angefangen.', sy: '🤐', kg: 6, passt: ['teilen'], warum: '„Wenn ich’s sage, ist es raus. Nicht mehr nur bei mir.“' },
+    { t: 'Luca hat das Passwort. Ich komm nicht mehr rein.', sy: '🔑', kg: 4, passt: ['teilen'], warum: 'Das Passwort zurückholen: Das machen Erwachsene.' },
     { t: 'Nachts guck ich jede Stunde, was gepostet wird.', sy: '📱', kg: 4, passt: ['warten', 'teilen'], warum: 'Nachts kann man nichts ändern. Das kann bis morgen warten.' },
     { t: 'Angst, von der Schule zu fliegen.', sy: '😰', kg: 3, passt: ['teilen'], warum: 'Angst wird kleiner, wenn jemand mitträgt. Zum Beispiel Herr Kuedes.' },
-    { t: 'Mathe-Nachprüfung am Freitag.', sy: '📐', kg: 2, passt: ['tragen'], warum: 'Das ist echt seins. Aber es ist klein, wenn der Rest leichter ist.' },
-    { t: '„Alle denken, ich bin cool. Ich muss cool bleiben.“', sy: '😎', kg: 3, passt: ['nicht'], warum: 'Das ist ein Satz, kein Gewicht. Den darf er ablegen.' },
+    { t: 'Mathe-Test, zweiter Versuch, am Freitag.', sy: '📐', kg: 2, passt: ['tragen'], warum: 'Das ist echt seins. Aber es ist klein, wenn der Rest leichter ist.' },
+    { t: '„Alle denken, ich bin cool. Ich muss cool bleiben.“', sy: '😎', kg: 3, passt: ['nicht'], warum: '„Cool sein ist anstrengend. Seit Monaten.“' },
   ],
 };
 
@@ -51,12 +51,12 @@ const AKKU = {
     ] },
     { zeit: '10:00', t: 'Große Pause.', wahl: [
       { t: 'Körbe werfen mit Ben.', akku: 8, antwort: 'Bewegung lädt. Komisch, aber wahr.' },
-      { t: 'In der Ecke am Handy.', akku: -4, antwort: 'Zwanzig Minuten weg. Erholt? Nicht wirklich.' },
+      { t: 'Kopfhörer, Musik, Ecke.', akku: 3, antwort: 'Etwas Ruhe. Mehr als Scrollen.' },
       { t: 'Auf der Bank mit Noah. Einfach sitzen.', akku: 6, antwort: 'Stille lädt auch.' },
     ] },
     { zeit: '12:30', t: 'Mittagessen.', wahl: [
       { t: 'Curry mit allen.', akku: 8, antwort: 'Essen plus Leute. Doppelt geladen.' },
-      { t: 'Nur Chips aus dem Automaten.', akku: 2, antwort: 'Kurz gut. Um 14 Uhr leer.' },
+      { t: 'Schnell essen, dann allein raus.', akku: 5, antwort: 'Satt. Und ein bisschen Ruhe.' },
     ] },
     { zeit: '17:00', t: 'Nachmittag zu Hause.', wahl: [
       { t: 'Erst Hausaufgaben, dann frei.', akku: 4, antwort: 'Der Kopf ist leichter, wenn es erledigt ist.' },
@@ -64,7 +64,7 @@ const AKKU = {
       { t: 'Rausgehen. Skaten. Oder spazieren.', akku: 9, antwort: 'Frische Luft. Der Tag wird länger.' },
     ] },
     { zeit: '22:00', t: 'Bettzeit. Eigentlich.', wahl: [
-      { t: 'Handy außerhalb vom Bett. Licht aus.', akku: 15, antwort: 'Du schläfst nach 20 Minuten ein.' },
+      { t: 'Handy außerhalb vom Bett. Licht aus.', akku: 15, antwort: 'Einschlafen dauert. Aber es geht leichter.' },
       { t: '„Nur noch ein Video.“ Bis 1 Uhr.', akku: -20, antwort: 'Es waren 34 Videos.' },
     ] },
   ],
@@ -102,16 +102,18 @@ const WUERFEL = {
 
 export const GESPRAECHE_N9 = {
   n9_morgen: [
-    ['erzaehler', 'Montag, 7:12. Du hast Dario gestern geschrieben: „Morgen, Haltestelle, früh.“'],
+    ['erzaehler', 'Montag, 7:12. Gestern Nacht hast du geschrieben: „Haltestelle, früh.“'],
     ['erzaehler', 'Er sitzt schon da. Kapuze auf. Augenringe bis zum Kinn.'],
   ],
   n9_dario: [
     ['dario', 'Danke, dass du kommst. Willkommen im Zombie-Team.'],
     ['dario', 'Ich bin Kapitän. Seit Wochen kein Schlaf.'],
     ['dario', 'Ich hab @annexe.cam angefangen. Im Herbst. Ich.'],
-    ['dario', 'Erst nur Tauben. Lustige Sachen. Luca fand’s gut. Ich war plötzlich wer.'],
-    ['dario', 'Dann wollte er das Passwort. Und dann wurden die Posts gemein.'],
-    ['dario', 'Das Foto von dir. Erster Tag. Die Umfrage. Das war ich.'],
+    ['dario', 'Am ersten Tag hab ich dich fotografiert. Luca hat gelacht.'],
+    ['dario', 'Ich war plötzlich wer. Also hab ich weitergemacht.'],
+    ['dario', 'Dann wollte Luca das Passwort. Ich hab’s ihm gegeben.'],
+    ['dario', 'Ab da wurden die Texte gemein. Seine Texte.'],
+    { tu: 'n9_nummer' },
     { wahl: [
       { t: '„Ich weiß es schon. Der Winkel. Von links unten.“', wenn: (m) => m.spurDario || m.spurDarioAngst || m.spurSkate, staerke: 'lesen', herz: { dario: 1 }, merke: 'spurGeloest', dann: [['dario', '(starrt dich an) … Seit wann?'], ['dario', 'Und du hast es trotzdem nicht gepostet. Krass.']] },
       { t: '(Zuhören. Nicken. Nichts sagen.)', staerke: 'zuhoeren', herz: { dario: 2 }, dann: [['dario', 'Ich hab nicht gedacht, dass du einfach zuhörst. Nach allem.']] },
@@ -136,7 +138,7 @@ export const GESPRAECHE_N9 = {
     ['kaya', 'Wéi geet et? Heute: euer Akku. Wie voll ist er?'],
     ['mesenberg', '(stellt einen Rucksack hin) Voller Steine. Wer will ihn tragen?'],
     ['ben', 'Ich! … Oh. Nein. Doch nicht.'],
-    ['kaya', 'Stress ist wie dieser Rucksack. Und Schlaf, Essen, Bewegung laden euch auf.'],
+    ['kaya', 'Tragen kann man viel. Aber nicht mit leerem Akku.'],
     { szene: 'akku', id: 'akku', def: AKKU, ausgang: (r) => (r.akku >= 60 ? 'voll' : r.akku >= 35 ? 'mittel' : 'leer'),
       folgen: {
         voll: { staerke: 'ruhig', merke: 'akkuVoll', dann: [['kaya', 'Gut geladen. Und das ohne Zaubertrick.']] },
@@ -161,7 +163,7 @@ export const GESPRAECHE_N9 = {
     ['kaya', 'Ich rede mit der Direktion. Und mit deinen Eltern. Mit dir zusammen.'],
     ['dario', 'Und Luca?'],
     ['kaya', 'Um Luca kümmern sich auch Erwachsene. Nicht ihr.'],
-    ['kaya', 'Und wenn es nachts zu schwer wird: 116 111. Anonym. Gratis.'],
+    ['kaya', 'Und heute Nacht: Handy aus. Ich bin morgen um acht da.'],
     { tu: 'n9_kuedesEnde' },
   ],
   n9_ben: [
@@ -170,9 +172,15 @@ export const GESPRAECHE_N9 = {
     ['ben', 'Beweis von Bewegung. Würfel!'],
     { szene: 'wuerfel', id: 'wuerfel', def: WUERFEL, ausgang: () => 'ok', folgen: { ok: { herz: { ben: 1, jo: 1, noah: 1 }, merke: 'wuerfelGespielt' } } },
     ['noah', 'Das war … schön. Einfach so. Ohne Grund.'],
+    ['erzaehler', 'Dario kommt über den Hof. Allein. Er bleibt stehen.'],
+    ['jo', '(leise) Was will der hier?'],
+    { wahl: [
+      { t: '„Dario. Würfelst du mit?“', staerke: 'einbeziehen', herz: { dario: 1, jo: -1 }, merke: 'darioWuerfel', dann: [['dario', '… Real? Eine Runde.'], ['jo', '(guckt weg) Eine. Dann sehen wir.']] },
+      { t: '(Weiterspielen.)', dann: [['erzaehler', 'Dario guckt kurz zu. Dann geht er.']] },
+    ] },
   ],
   n9_ende: [
-    ['kaya', 'Letzte Stunde vor dem Sommerfest. Jeder schreibt einen Gesund-Plan.'],
+    ['kaya', 'Letzte Stunde der Woche. Jeder schreibt einen Gesund-Plan.'],
     ['kaya', 'Klein. Ein Schritt für den Schlaf, einer für den Körper.'],
     { wahl: [
       { t: 'Mein Plan: Handy um 22 Uhr in die Küche.', staerke: 'ruhig', merke: 'planSchlaf', dann: [['kaya', 'Klar und machbar. Genau so.']] },
@@ -187,6 +195,7 @@ export const GESPRAECHE_N9 = {
 };
 
 export const tunN9 = (c) => ({
+  n9_nummer: () => (c.S.merke.spurNummer ? [['dario', 'Die Nachricht mit der 77. „Ich seh alles.“ Auch ich.']] : []),
   n9_hilfe: () => (c.S.merke.darioVersprochen ? [['erzaehler', 'Abends kannst du nicht schlafen. Das Geheimnis ist jetzt auch in deinem Rucksack.'],
     { wahl: [
       { t: '(Dario schreiben: „Zu schwer für mich allein. Gehen wir zu Herrn Kuedes?“)', staerke: 'hilfe', herz: { dario: 1 }, merke: 'darioBegleiten', dann: [['dario', '(Nachricht) … ok. du hast recht. morgen. zusammen.']] },
@@ -200,11 +209,13 @@ export const tunN9 = (c) => ({
   ],
   n9_schluss: () => [
     { szene: 'stempel', def: { modul: 'Modul 8 · Gesund und stark', titel: 'Akku geladen',
-      gelernt: ['Ein Stress-Rucksack: tragen, warten, teilen, ablegen', 'Schlaf, Bewegung, Essen und Pausen laden den Akku', 'Ein Geheimnis, das zu schwer ist, gehört zu einem Erwachsenen', 'Kleine Schritte zählen – auch zehn Hampelmänner', 'Hilfe holen: Herr Kuedes, 116 111'],
+      gelernt: ['Ein Stress-Rucksack: tragen, warten, teilen, ablegen', 'Schlaf, Bewegung, Essen und Pausen laden den Akku', 'Macht ein Geheimnis Angst oder schadet es? Dann darfst du es sagen.', 'Kleine Schritte zählen – auch zehn Hampelmänner', 'Hilfe holen: Herr Kuedes, 116 111'],
       mission: 'Dein Gesund-Plan: ein Schritt. Eine Woche. Und einmal den Akku fragen, bevor er leer ist.' }, folgen: {} },
     ['erzaehler', 'Abends. Eine Nachricht von Herrn Kuedes an die ganze Klasse:'],
     ['kaya', '(Nachricht) Freitag ist Sommerfest.'],
-    ['kaya', 'Dario möchte vor allen etwas sagen. Wer mag, steht dabei.'],
+    ['kaya', 'Dario will sich entschuldigen. Noah und Mila sind einverstanden.'],
+    ['kaya', 'Vor dem Fest, nur die Klasse. Wer nicht will, muss nicht.'],
+    ['kaya', 'Und du? Sag mir, wenn du nicht willst.'],
     { tu: 'kapitelEnde' },
   ],
 });

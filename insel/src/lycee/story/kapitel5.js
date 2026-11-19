@@ -42,7 +42,7 @@ const FAKE = (m) => ({
     { nach: 1.4, wer: 'Luca', bild: 'Profil @annexe.cam · Admin: {name}', text: 'wer ist admin?? 👀👀', lacher: { start: 3, proSek: 0.5, stopp: 'gestoppt' } },
     { nach: 3.4, wer: 'Jo', text: 'NEIN. wallah?? 😳' },
     { nach: 5.4, wer: 'Luca', text: 'wusst ich’s. lowkey hab ich’s immer gewusst' },
-    { nach: 7.6, wer: 'Ben', text: 'das ist fake. guckt die uhrzeit an. 25:14???', wennNicht: 'benZweifelt' },
+    { nach: 7.6, wer: 'Ben', text: 'warte. was? 😶', wennNicht: 'benZweifelt' },
     m.testGelacht || m.top5Gelacht ? { nach: 10, wer: 'Noah', text: '…', setzt: 'noahStill' } : { nach: 10, wer: 'Noah', text: 'Ich glaub das nicht. Einfach nicht.' },
     { nach: 12.5, wer: 'Ayla', text: 'leute. erst fragen, dann urteilen' },
     { nach: 15, wer: 'Luca', text: 'fragen? der screenshot IST die frage 😂', wennNicht: 'gestoppt' },
@@ -53,12 +53,12 @@ const FAKE = (m) => ({
   aktionen: [
     { id: 'schreiben', t: 'Schreiben', symbol: '💬', wahl: [
       { t: '„Das bin ich nicht. Der Screenshot ist gefälscht.“', setzt: ['gestoppt', 'ruhigGesagt'], ich: 'das bin ich nicht. der screenshot ist gefälscht', folgen: [{ nach: 1.4, wer: 'Ayla', text: 'ok. ich glaub dir' }, { nach: 2.8, wer: 'Luca', text: 'würde der admin auch sagen 😂' }] },
-      { t: '„Luca, du bist so ein Lügner!!“', setzt: ['angriff'], ich: 'luca du bist so ein lügner!!', folgen: [{ nach: 1.2, wer: 'Luca', text: 'oha. getroffene hunde bellen 🐶' }, { nach: 2.6, wer: 'Jo', text: 'uff' }] },
+      { t: '„Luca, du bist so ein Lügner!!“', setzt: ['angriff'], ich: 'luca du bist so ein lügner!!', folgen: [{ nach: 1.2, wer: 'Luca', text: 'oha. so laut? klingt schuldig 😂' }, { nach: 2.6, wer: 'Jo', text: 'uff' }] },
       { t: '„Wer hat das gemacht? Sagt’s mir ins Gesicht.“', setzt: ['angriff'], ich: 'wer hat das gemacht? sagt’s mir ins gesicht', folgen: [{ nach: 1.4, wer: 'Luca', text: 'chill. ist doch nur ne frage' }] },
     ] },
-    { id: 'raus', t: 'Gruppe verlassen', symbol: '🚪', setzt: 'raus', sys: 'Du hast die Gruppe verlassen. Jetzt reden sie ohne dich.', ende: true },
-    { id: 'beweis', t: 'Screenshot an Herrn Kuedes', symbol: '📸', setzt: 'kuedes', sys: 'Gesendet an Herrn Kuedes.', folgen: [{ nach: 2.4, wer: 'Herr Kuedes (privat)', text: 'Hab’s. Komm um zehn in mein Büro. Kekse sind da.' }] },
-    { id: 'stumm', t: 'Handy weg', symbol: '🔕', setzt: 'stumm', sys: 'Handy in der Tasche. Es vibriert weiter. Du spürst jedes Mal.', ende: true },
+    { id: 'raus', t: 'Gruppe verlassen', symbol: '🚪', setzt: 'raus', sys: 'Du hast die Gruppe verlassen. Erst mal Ruhe.', ende: true },
+    { id: 'beweis', t: 'Screenshot an Herrn Kuedes', symbol: '📸', setzt: 'kuedes', sys: 'Gesendet an Herrn Kuedes.', folgen: [{ nach: 2.4, wer: 'Herr Kuedes (privat)', text: 'Hab’s. Liegt schon bei der Direktion. Du bist nicht allein.' }] },
+    { id: 'stumm', t: 'Handy weg', symbol: '🔕', setzt: 'stumm', sys: 'Handy in der Tasche. Es vibriert. Du lässt es.', ende: true },
   ],
 });
 
@@ -67,7 +67,7 @@ const TUER = {
   wo: 'Vor Saal 1.04',
   situation: 'Du machst die Tür auf. Drinnen wird es plötzlich still. Ein paar gucken zu dir.',
   gedanken: [
-    { t: 'Alle denken, ich bin’s.', gefuehl: 'Angst und Scham, sehr stark', koerper: 'Bauch zu, Gesicht heiß', tun: 'Kapuze auf, Blick nach unten, schnell auf den Platz', folge: 'Keiner traut sich, dich anzusprechen. Es sieht aus, als hättest du was zu verstecken.' },
+    { t: 'Alle denken, ich bin’s.', gefuehl: 'Angst und Scham, sehr stark', koerper: 'Bauch zu, Gesicht heiß', tun: 'Kapuze auf, Blick nach unten, schnell auf den Platz', folge: 'Du sitzt allein mit dem Gedanken. Keiner merkt, wie es dir geht.' },
     { t: 'Die reden über den Screenshot. Nicht unbedingt über mich.', gefuehl: 'Unsicher, aber wach', koerper: 'Herz klopft, Kopf bleibt klar', tun: 'Du sagst „Moien“ und setzt dich normal hin', folge: 'Ben nickt dir zu. Jo sagt: „Morgen.“ Der Raum wird wieder laut.' },
     { t: 'Die können mich alle mal.', gefuehl: 'Wut', koerper: 'Fäuste, schnelle Atmung', tun: 'Du knallst die Tasche auf den Tisch', folge: 'Alle schrecken zusammen. Luca grinst. Jetzt reden wirklich alle über dich.' },
   ],
@@ -82,7 +82,7 @@ const SAETZE = {
     { t: '„Ich bin zu dumm für Mathe.“', ziel: 'bremst', wer: F.noah, sagt: '(leise) Den kenn ich.' },
     { t: '„Ich darf auch mal danebenliegen.“', ziel: 'hilft' },
     { t: '„Ich muss immer perfekt sein.“', ziel: 'bremst', wer: F.mila, sagt: 'Bremst. Aber er fühlt sich an wie ein Motor.' },
-    { t: '„Ich darf um Hilfe fragen.“', ziel: 'hilft' },
+    { t: '„Mir ist alles egal.“', ziel: null, wer: F.ben, sagt: 'Klingt stark. Aber dann fragt man nie.' },
     { t: '„Wenn mich einer nicht mag, mögen mich alle nicht.“', ziel: 'bremst' },
     { t: '„Ich muss stark sein.“', ziel: null, wer: F.jo, sagt: 'Manchmal hilft der. Manchmal macht er alles kaputt.' },
     { t: '„Ich kann Sachen lernen, die ich noch nicht kann.“', ziel: 'hilft', wer: F.ben, sagt: 'Ich lerne gerade Spagat. Seit drei Jahren.' },
@@ -93,39 +93,37 @@ const SAETZE = {
 const BOHNEN = {
   wo: 'Aula · anonym',
   saetze: ['Ich bin nicht gut genug.', 'Die anderen sind besser.', 'Mich mag eh keiner.', 'Ich darf keine Fehler machen.', 'Ich bin zu viel.', 'Ich schaff das nie.'],
-  klasse: [24, 31, 12, 27, 9, 19],
+  klasse: [7, 9, 4, 8, 3, 6],
 };
 
 // ---------- Kritischer Detektiv: „Alle halten mich für @annexe.cam.“ (E18) ----------
 const WAAGE = (m) => ({
-  wo: 'CDI · mit Mila', satz: 'Alle halten mich für @annexe.cam.', vorher: m.ruhigGesagt ? 60 : 80,
+  wo: 'CDI · mit Mila', satz: 'Mir glaubt eh keiner.', vorher: m.fakeRuhig ? 60 : 80,
   hinweise: [
     { t: 'Luca hat geschrieben: „wusst ich’s“.', art: 'dafuer', warum: 'Ein Beweis dafür. Aber nur für EINE Person: Luca.' },
-    { t: 'Ben hat sofort geschrieben: „Das ist fake.“', art: 'dagegen', warum: 'Dagegen. Ben glaubt es nicht.' },
+    { t: 'Ben schrieb: „warte. was?“', art: 'kein', warum: 'Kein Beweis. Geschockt ist nicht überzeugt.' },
+    { t: 'Ayla schrieb: „erst fragen, dann urteilen“.', art: 'dagegen', warum: 'Dagegen. Ayla glaubt den Fake nicht einfach.' },
+    { t: 'Jo hat gesagt: „Ich glaub’s nicht. Echt nicht.“', art: 'dagegen', warum: 'Dagegen. Jo glaubt dir.' },
     { t: 'Dein Bauch fühlt sich an wie ein Stein.', art: 'kein', warum: 'Kein Beweis. Ein Gefühl ist echt – aber es ist keine Tatsache.' },
-    { t: 'Luca sagt: „Alle reden darüber.“', art: 'kein', warum: 'Kein Beweis. „Alle“ ist ein Spruch, keine Zählung.' },
+    { t: 'Luca schrieb: „der screenshot IST die frage“.', art: 'kein', warum: 'Kein Beweis. Nur ein Spruch.' },
     { t: 'Mme Tidderich hat gesagt: „Ich urteile nicht ohne Fakten.“', art: 'dagegen', warum: 'Dagegen. Eine Erwachsene hält dich NICHT für schuldig.' },
-    m.handyGelogen
-      ? { t: 'Beim Post um 8:34 war dein Handy in der Jacke.', art: 'dafuer', warum: 'Leider dafür. Die kleine Lüge vom Test macht es jetzt schwerer.' }
-      : { t: 'Beim Post um 8:34 lag dein Handy in der Kiste.', art: 'dagegen', warum: 'Dagegen. Das ist ein Alibi. Ein echtes.' },
-    { t: 'Vier Leute haben das Bild weitergeleitet.', art: 'kein', warum: 'Kein Beweis. Weiterleiten heißt nicht glauben.' },
-    { t: 'Auf dem Screenshot steht die Uhrzeit 25:14.', art: 'dagegen', warum: 'Dagegen. 25 Uhr gibt es nicht. Der Screenshot ist gebaut.' },
+    { t: 'Vier Leute haben das Bild weitergeleitet.', art: 'kein', warum: 'Weiterleiten heißt nicht glauben. Gemein ist es trotzdem.' },
   ],
 });
 
 // ---------- Neuer Satz (E18 Prüfstand) ----------
 const NEUER_SATZ = {
-  wo: 'Bank am Hof · mit Noah', alt: 'Alle halten mich für den Account.',
+  wo: 'Bank am Hof · mit Noah', alt: 'Mir glaubt eh keiner.',
   teile: [
-    [{ t: 'Ein paar Leute zweifeln gerade.', regeln: { real: true, ohneImmer: true } },
-      { t: 'Alle hassen mich jetzt.', regeln: { real: false, ohneImmer: false, freundlich: false } },
-      { t: 'Niemand zweifelt an mir.', regeln: { real: false, ohneImmer: false } }],
-    [{ t: 'Die, die mich kennen, fragen nach.', regeln: { real: true, freundlich: true } },
-      { t: 'Das ist mir komplett egal.', regeln: { real: false } },
-      { t: 'Ich bin halt so ein Typ, dem man so was glaubt.', regeln: { freundlich: false } }],
-    [{ t: 'Ich zeig Herrn Kuedes die Fakten.', regeln: { schritt: true, freundlich: true } },
-      { t: 'Irgendwann geht das von selbst weg.', regeln: { schritt: false } },
-      { t: 'Ich sag einfach gar nichts mehr.', regeln: { schritt: false, freundlich: false } }],
+    [{ t: 'Keiner glaubt mir. Nie.', regeln: { real: false, ohneImmer: false, freundlich: false } },
+      { t: 'Ein paar glauben mir schon.', regeln: { real: true, ohneImmer: true } },
+      { t: 'Ein paar glauben den Fake. Das tut weh.', regeln: { real: true, ohneImmer: true, freundlich: true } }],
+    [{ t: 'Das ist mir komplett egal.', regeln: { real: false } },
+      { t: 'Ich bin halt so ein Typ, dem man so was glaubt.', regeln: { freundlich: false } },
+      { t: 'Die, die mich kennen, fragen nach.', regeln: { real: true, freundlich: true } }],
+    [{ t: 'Ich sag Ben und Jo, was ich weiß.', regeln: { schritt: true, freundlich: true } },
+      { t: 'Ich zeig Herrn Kuedes die Fakten.', regeln: { schritt: true, freundlich: true } },
+      { t: 'Ich stell Luca vor allen zur Rede.', regeln: { schritt: false } }],
   ],
 };
 
@@ -138,7 +136,7 @@ const LUCA_DUELL = {
         { t: '„Der Screenshot ist fake. 25:14 gibt’s nicht.“', stimme: 'kopf', art: 'klar', hitze: -10, respekt: 2, antwort: '(zuckt) … Kann ja jeder sagen.' },
         { t: '„Du warst doch selbst im Flur. Um 8:34.“', stimme: 'stolz', art: 'angriff', hitze: 22, antwort: '(wird blass, dann laut) Was soll DAS jetzt heißen?' },
         { t: '(Weggucken. Weiteressen.)', stimme: 'bauch', art: 'rueckzug', hitze: 2, respekt: -1, antwort: 'Siehste. Keine Antwort ist auch eine Antwort.' },
-      ], still: { hitze: 6, antwort: 'Admin hat Funkstille 😂' } },
+      ], still: { hitze: 6, antwort: 'Admin sagt nix mehr 😂' } },
     { sagt: 'Jeder sagt, du warst es.', warn: 'Dein Gesicht wird heiß', skill: '(Füße auf den Boden. „Jeder“ ist ein Spruch.)', skillAntwort: '… Okay, nicht jeder.',
       karten: [
         { t: '„Wer ist jeder? Nenn mir drei Namen.“', stimme: 'kopf', art: 'klar', hitze: -12, respekt: 2, antwort: '(sucht) … Leute halt.' },
@@ -168,10 +166,10 @@ export const GESPRAECHE_N5 = {
       } },
   ],
   n5_ben: [
-    ['ben', 'Bro. Ich hab sofort geschrieben, dass das fake ist. Hast du gesehen?'],
+    ['ben', 'Bruder. Ich hab nix Gutes geschrieben. Ich war baff.'],
     { tu: 'n5_benStart' },
     { wahl: [
-      { t: '„Danke. Echt.“', herz: { ben: 2 }, dann: [['ben', 'Klar. Du bist nicht der Typ für so was.'], ['ben', 'Du bist der Typ für Nuggets.']] },
+      { t: '„Und? Glaubst du’s?“', herz: { ben: 2 }, dann: [['ben', 'Nee. Du bist nicht der Typ für so was.'], ['ben', 'Du bist der Typ für Nuggets.']] },
       { t: '„Aber was, wenn die anderen es glauben?“', staerke: 'zuhoeren', herz: { ben: 1 }, merke: 'sorgeGesagt', dann: [['ben', 'Welche anderen? Luca? Luca glaubt auch, dass Pizza Gemüse ist.']] },
       { t: '„Lass mich. Ich will nicht drüber reden.“', dann: [['ben', 'Okay. Ich lauf trotzdem neben dir. Ohne reden.']] },
     ] },
@@ -179,7 +177,8 @@ export const GESPRAECHE_N5 = {
     ['jo', 'Ich glaub’s nicht. Echt nicht.'],
   ],
   n5_tuer: [
-    ['erzaehler', 'Saal 1.04. Die Tür ist zu. Dahinter ist es laut. Deine Hand liegt auf der Klinke.'],
+    ['erzaehler', 'Saal 1.04. Die Tür ist zu. Dahinter ist es laut.'],
+    ['erzaehler', 'Deine Hand liegt auf der Klinke.'],
     { szene: 'weiche', id: 'tuer', def: TUER, ausgang: (r) => ['angst', 'klar', 'wut'][r.final],
       folgen: {
         angst: { merke: 'tuerAngst' },
@@ -194,54 +193,56 @@ export const GESPRAECHE_N5 = {
     { tu: 'n5_saalBilanz' },
   ],
   n5_skills: [
-    ['kaya', '(schreibt an die Tafel: „Ich bin zu blöd.“) Wer kennt den Satz?'],
-    ['erzaehler', 'Keiner meldet sich. Alle gucken auf den Tisch. Alle kennen ihn.'],
-    ['kaya', 'Jeder hat Sätze über sich. Manche helfen. Manche bremsen.'],
-    ['kaya', 'Die bremsenden heißen Glaubenssätze. Weil man sie glaubt.'],
-    ['kaya', 'Auch wenn sie falsch sind.'],
+    ['kaya', '(schreibt: „Ich bin zu blöd.“) Nicht melden. Nur denken.'],
+    ['erzaehler', 'Keiner meldet sich. Ein paar nicken ganz leicht.'],
+    ['kaya', 'Den Satz kennen sehr viele. Heute prüfen wir solche Sätze.'],
+    ['kaya', 'Sortiert mal. Hilft der Satz? Oder bremst er?'],
     { szene: 'sort', id: 'saetze', def: SAETZE, ausgang: (r) => (r.antworten[5] === 'kommt' ? 'kommt' : 'klar'),
-      folgen: { kommt: { herz: { jo: 1 }, dann: [['jo', '„Kommt drauf an“ bei „stark sein“.'], ['jo', 'Das hat noch keiner zu mir gesagt.']] }, klar: {} } },
+      folgen: { kommt: { herz: { jo: 1 }, dann: [['jo', '„Kommt drauf an“ bei „stark sein“.'], ['jo', '(guckt lange auf die Karte. Sagt nichts.)']] }, klar: {} } },
     ['mesenberg', 'Jetzt anonym. Jeder bekommt fünf Bohnen.'],
-    ['mesenberg', 'Leg sie zu Sätzen, die du von dir kennst.'],
+    ['mesenberg', 'Leg sie zu Sätzen, die du kennst. Von dir oder anderen.'],
     ['mesenberg', 'Keiner guckt. Ich auch nicht. Ich dreh mich um.'],
     { szene: 'bohnen', id: 'bohnen', def: BOHNEN, ausgang: (r) => (r.bohnen.some((n) => n > 0) ? 'gelegt' : 'leer'),
       folgen: { gelegt: { merke: 'bohnenGelegt' }, leer: { merke: 'bohnenLeer' } } },
-    ['ben', 'Einunddreißig Bohnen bei „Die anderen sind besser“. Wer sind denn die anderen?'],
+    ['ben', 'Neun Bohnen bei „Die anderen sind besser“. Wer sind die?'],
     ['mila', 'Statistisch: wir alle. Gegenseitig.'],
-    ['kaya', 'Genau. Ihr seid mit keinem Satz allein. Mission: Fangt einen Satz ein.'],
+    ['kaya', 'Mission: Fangt einen Satz ein. Wie eine Fliege.'],
     ['mesenberg', 'Wenn ein Satz sehr laut ist: Bürotür ist offen. Oder 116 111.'],
   ],
   n5_detektiv: [
     ['mila', 'Setz dich. Wir arbeiten wie Detektive. Nur Fakten.'],
-    ['mila', 'Ich bin übrigens wütend. Auf den Fake.'],
-    ['mila', 'Wut rät schnell. Darum prüfen wir.'],
+    ['mila', 'Ich hab den Fake 40 Mal angeguckt. Guck oben.'],
+    ['mila', '25:14. Diese Uhrzeit gibt es nicht.'],
+    ['mila', 'Der Fake ist gemein. Das ist echt, kein Denkfehler.'],
+    ['mila', 'Wir prüfen nur einen Satz in deinem Kopf.'],
     { szene: 'waage', id: 'waage', def: (m) => WAAGE(m),
       ausgang: (r) => (r.nachher <= r.vorher - 30 ? 'leichter' : r.nachher < r.vorher ? 'etwas' : 'gleich'),
       folgen: {
-        leichter: { staerke: 'lesen', herz: { mila: 2 }, merke: 'waageLeichter', dann: [['mila', 'Siehst du? Der Satz war lauter als die Beweise.']] },
+        leichter: { staerke: 'lesen', herz: { mila: 1 }, merke: 'waageLeichter', dann: [['mila', 'Siehst du? Der Satz war lauter als die Beweise.']] },
         etwas: { staerke: 'lesen', herz: { mila: 1 }, dann: [['mila', 'Ein bisschen leichter. Das reicht für heute.']] },
-        gleich: { herz: { mila: 1 }, dann: [['mila', 'Dein Bauch ignoriert Daten. Typisch Bauch. Er braucht Zeit.']] },
+        gleich: { herz: { mila: 1 }, dann: [['mila', 'Dein Bauch hört nicht auf Fakten. Typisch Bauch. Er braucht Zeit.']] },
       } },
     { tu: 'n5_detektivSpur' },
   ],
   n5_satz: [
     ['noah', 'Platz frei gehalten. Mit einer Banane. Sie hat Respekt.'],
-    ['noah', 'Was würdest du mir sagen, wenn ICH auf dem Screenshot wäre?'],
+    ['noah', 'Kurze Frage. Wenn ICH Admin wär. Was würdest du denken?'],
     { wahl: [
-      { t: '„Dass ich weiß, dass du so was nie machen würdest.“', staerke: 'zuhoeren', herz: { noah: 1 }, dann: [['noah', 'Genau. Und jetzt sag das mal zu dir selbst.']] },
-      { t: '„Keine Ahnung.“', dann: [['noah', 'Doch. Du würdest sagen: Wir kriegen das raus.'], ['noah', 'Das sagst du immer zu mir.']] },
+      { t: '„Du weißt ja nicht mal dein Passwort.“', staerke: 'humor', herz: { noah: 1 }, dann: [['noah', 'Stimmt. Es steht auf meiner Hand.'], ['noah', '(guckt dich an) Bei dir ist das übrigens genauso. Nur so.']] },
+      { t: '„Dass du so was nie machen würdest.“', staerke: 'zuhoeren', herz: { noah: 1 }, dann: [['noah', 'Eben. (guckt dich an) Und bei dir?']] },
     ] },
     ['noah', 'Aber kein „Alles super“-Satz. Den glaubt nicht mal Ben.'],
     { szene: 'satz', id: 'neuerSatz', def: NEUER_SATZ, ausgang: (r) => (r.regeln >= 4 ? 'stark' : r.regeln >= 2 ? 'mittel' : 'schwach'),
       folgen: {
         stark: { staerke: 'ruhig', herz: { noah: 2 }, merke: 'neuerSatz', dann: [['noah', 'Den würde ich glauben. Schreib ihn auf eine Karte.']] },
-        mittel: { herz: { noah: 1 }, merke: 'neuerSatz', dann: [['noah', 'Fast. Ein Teil klingt noch wie der alte Satz in Verkleidung.']] },
-        schwach: { merke: 'neuerSatz', dann: [['noah', 'Hm. Den glaubst du selbst nicht, oder? Probier morgen nochmal.']] },
+        mittel: { herz: { noah: 1 }, merke: 'neuerSatz', dann: [['noah', 'Fast. Das Ende klingt noch nach Luca.']] },
+        schwach: { merke: 'neuerSatz', dann: [['noah', 'Hm. Das glaubst du selbst nicht. Ich seh’s.']] },
       } },
     { tu: 'n5_satzKarte' },
   ],
   n5_kantineVor: [
-    ['erzaehler', 'Freitag. Kantine. Der Tisch der 7P2 ist voll. Der Kopf sagt: Setz dich woanders hin.'],
+    ['erzaehler', 'Freitag. Kantine. Der Tisch der 7P2 ist voll.'],
+    ['erzaehler', 'Dein Kopf sagt: Setz dich woanders hin.'],
     { tu: 'n5_kopfSatz' },
   ],
   n5_kantine: [
@@ -261,7 +262,7 @@ export const GESPRAECHE_N5 = {
 
 export const tunN5 = (c) => ({
   n5_benStart: () => (c.S.merke.fakeAngriff ? [['ben', 'Du hast Luca im Chat angeschrien. Verständlich.'], ['ben', 'Aber er feiert das jetzt.']]
-    : c.S.merke.fakeRaus ? [['ben', 'Du bist raus aus der Gruppe. Jetzt reden sie ohne dich.'], ['ben', 'Komm wieder rein, Bro.']] : []),
+    : c.S.merke.fakeRaus ? [['ben', 'Du bist raus. Verstehe ich.'], ['ben', 'Ich sag dir, was läuft. Wenn du willst.']] : []),
   n5_saalBilanz: () => (c.S.merke.fakeKuedes ? [['hoffmann', '(leise zu dir) Herr Kuedes sagt, du hast ihm geschrieben.'], ['hoffmann', 'Gut gemacht.']] : []),
   n5_detektivSpur: () => [
     ['mila', 'Und noch was. Der Fake ist mit einer App gebaut.'],
@@ -288,8 +289,8 @@ export const tunN5 = (c) => ({
   ],
   n5_ende: () => [
     { szene: 'stempel', def: { modul: 'Modul 4 · Meine Gedanken', titel: 'Gedanken geprüft',
-      gelernt: ['Gleiche Situation, anderer Gedanke: anderer Tag', 'Hilfreiche und bremsende Sätze unterschieden', 'Mit keinem Satz allein (Bohnen-Wette)', 'Beweise dafür und dagegen gesammelt', 'Einen neuen, echten Satz gebaut – und ausprobiert'],
-      mission: 'Fang diese Woche einen bremsenden Satz ein. Frag: Ist das eine Tatsache? Und was würde ein Freund dazu sagen?' }, folgen: {} },
+      gelernt: ['Sätze, die helfen – und Sätze, die bremsen', 'Viele kennen die gleichen fiesen Sätze', 'Beweise dafür und dagegen gesammelt', 'Einen neuen, echten Satz gebaut'],
+      mission: 'Fang einen fiesen Satz über dich ein. Ist er wahr?' }, folgen: {} },
     ['erzaehler', 'Abends. Eine Nachricht von Mila.'],
     ['mila', '(Nachricht) Ich glaube, ich weiß, wer den Fake gebaut hat.'],
     ['mila', '(Nachricht) Es wird dir nicht gefallen.'],

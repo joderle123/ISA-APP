@@ -52,13 +52,16 @@ export const GRUSS = {
 const ENDE = {
   1: 'Tag eins überlebt. Morgen Revanche gegen die Kantine.',
   2: 'Woche rum. Ich schlaf jetzt bis Montag.',
-  3: 'Schnuppertag abgehakt. Du warst besser als ich.',
-  4: 'Woche drei rum. Ben schuldet mir jetzt vier Euro.',
+  3: 'Sportfest-Woche rum. Meine Beine schlafen schon.',
+  4: 'Test-Woche rum. Kopf leer. Endlich.',
   5: 'Was für eine Woche. Morgen Korbball?',
   6: 'Wochenende! Schreib, wenn was ist.',
-  7: 'Erste Arbeitswoche! Erzähl alles. Mit Details.',
+  7: 'Harte Woche. Morgen bitte langweilig.',
+  8: 'KI-Woche rum. Ich glaub nur noch Tauben.',
+  9: 'Handy liegt in der Küche. Schreib trotzdem. Gute Nacht.',
+  10: 'Ferien! Halt mir im September den Platz frei.',
 };
-const ZUSATZ = { noah: ' (Pizza war übrigens okay.)', mila: ' (Rekord: 38 Sekunden.)', lina: ' (Du bist auf Seite 14.)', jo: ' Kakao steht noch aus.', ben: ' Du schuldest mir nix. Ich dir zwei Euro.', chiara: ' Plan für Montag steht.', yusuf: '', ayla: ' 🎸', luca: ' Salz war zu wenig. Wie immer.', kenan: '', dario: ' Zombie-Team forever.' };
+const ZUSATZ = { noah: ' (Pizza war übrigens okay.)', mila: ' (Rekord: 38 Sekunden.)', lina: ' (Du bist auf Seite 14.)', jo: ' Kakao steht noch aus.', ben: ' Ich schulde dir noch zwei Euro. Wahrscheinlich.', chiara: ' Plan für Montag steht.', yusuf: '', ayla: ' 🎸', luca: ' Salz war zu wenig. Wie immer.', kenan: '', dario: ' Zombie-Team forever.' };
 export const nachricht = (id, kap) => (ENDE[kap] || 'Bis morgen.') + (ZUSATZ[id] || '');
 
 // Freundes-Profil: Eigenschaften gewichtet mit den Freundschaftspunkten → die drei häufigsten

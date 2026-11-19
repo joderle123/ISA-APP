@@ -169,8 +169,8 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
   // def: { frage, posts: [ { wer, wort, farbe } ], reaktion: (wort) => [ { wer, text } ] } → { wort, gefuehl }
   const RAD = [
     ['Freude', '#f2b134', ['gut drauf', 'aufgeregt', 'stolz']], ['Ruhe', '#5fb07a', ['entspannt', 'müde', 'okay']],
-    ['Angst', '#8a7bc8', ['nervös', 'unsicher', 'mulmig']], ['Wut', '#d6452f', ['genervt', 'sauer', 'gereizt']],
-    ['Trauer', '#4f88c8', ['down', 'leer', 'enttäuscht']], ['Ekel', '#5fa04a', ['angeekelt', 'bäh', 'zu viel']], ['Überraschung', '#e9734a', ['verwirrt', 'neugierig', 'baff']],
+    ['Angst', '#8a7bc8', ['nervös', 'unsicher', 'überfordert']], ['Wut', '#d6452f', ['genervt', 'sauer', 'gereizt']],
+    ['Trauer', '#4f88c8', ['down', 'leer', 'enttäuscht']], ['Ekel', '#5fa04a', ['angeekelt', 'bäh', 'abgestoßen']], ['Überraschung', '#e9734a', ['verwirrt', 'neugierig', 'baff']],
   ];
   ui.checkIn = (def = {}) => new Promise((ok) => {
     const k = ui.ebeneAuf('szene', '<div class="sz sz-chat"><div class="sz-handy"><div class="ly-h-kopf">7P2 😎 · Check-in<small>Wetter von heute</small></div>' +
@@ -209,7 +209,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
   ui.namenRekord = (def) => new Promise((ok) => {
     const L = def.leute, runden = def.runden || 3, pro = def.proRunde || 5;
     const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">Skills-Stunde · Aula</span><b>Namen-Rekord</b></div>' +
-      '<p class="sz-info">Erst stellt sich jede:r mit einer Geste vor. Dann fliegt der Ball – du rufst, wer ihn fängt. Jede Runde schneller.</p>' +
+      '<p class="sz-info">Erst zeigt jeder eine Geste. Dann fliegt der Ball. Du rufst den Namen. Jede Runde schneller.</p>' +
       '<div class="sz-kreis"></div><div class="sz-zeit"><i></i></div><div class="sz-karten sz-raster ly-d-optionen"></div><div class="sz-stand"></div></div>');
     const kreis = k.querySelector('.sz-kreis'), karten = k.querySelector('.sz-karten'), stand = k.querySelector('.sz-stand'), zeitEl = k.querySelector('.sz-zeit i');
     kreis.innerHTML = L.map((p, i) => { const w = i / L.length * Math.PI * 2 - Math.PI / 2; return '<div class="sz-platz" data-p="' + p.id + '" style="--f:' + p.farbe + ';left:' + (50 + Math.cos(w) * 40) + '%;top:' + (50 + Math.sin(w) * 38) + '%"><i>' + p.geste + '</i><span>' + esc(p.name) + '</span></div>'; }).join('') + '<div class="sz-ball">🏐</div>';
@@ -261,7 +261,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
   // → { erraten: [ids], eigeneLuege, reingelegt: [ids] }
   ui.zweiWahrheiten = (def) => new Promise((ok) => {
     const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">Skills-Stunde · Aula</span><b>Zwei Wahrheiten, eine Lüge</b></div>' +
-      '<p class="sz-info">Achte auf die kleinen Zeichen. Wer lügt, verrät sich manchmal – manchmal auch nicht.</p><div class="sz-bühne"></div><div class="sz-karten ly-d-optionen"></div></div>');
+      '<p class="sz-info">Ein Kennenlern-Spiel. Lügen sieht man schwer. Rate einfach.</p><div class="sz-bühne"></div><div class="sz-karten ly-d-optionen"></div></div>');
     const bühne = k.querySelector('.sz-bühne'), karten = k.querySelector('.sz-karten');
     const erraten = [], reingelegt = [];
     const klick = (n, inhalt) => new Promise((fertig) => {
@@ -646,7 +646,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
   ui.mischpult = (def) => new Promise((ok) => {
     const ids = def.gefuehle || Object.keys(GEF), werte = Object.fromEntries(ids.map((id) => [id, 0]));
     const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || '') + '</span><b>Mischpult</b></div>' +
-      '<div class="sz-fall" style="--f:#2b3a55"><p>' + esc(ersetze(def.ereignis)) + '</p></div><p class="sz-info">Was ist alles da? Mehrere Gefühle gleichzeitig sind normal. Schieb jeden Regler von 0 bis 10.</p>' +
+      '<div class="sz-fall" style="--f:#2b3a55"><p>' + esc(ersetze(def.ereignis)) + '</p></div><p class="sz-info">Was ist alles da? Was ist alles da? Schieb jeden Regler. Schieb jeden Regler von 0 bis 10.</p>' +
       '<div class="sz-mischpult">' + ids.map((id) => '<label style="--f:' + GEF[id][1] + '"><span>' + GEF[id][2] + '</span><input type="range" min="0" max="10" step="1" value="0" data-g="' + id + '"><b data-z="' + id + '">0</b><small>' + GEF[id][0] + '</small><i class="sz-fremd" data-f="' + id + '"></i></label>').join('') + '</div>' +
       '<div class="sz-karten"><button type="button" class="sz-weiter" data-a="w">So ist es <kbd>E</kbd></button></div></div>');
     k.querySelectorAll('[data-g]').forEach((r) => { r.addEventListener('keydown', (e) => e.stopPropagation()); r.oninput = () => { werte[r.dataset.g] = +r.value; k.querySelector('[data-z="' + r.dataset.g + '"]').textContent = r.value; }; });
@@ -737,7 +737,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
         else if (c.hinter) { if (!ziele) strittig++; else if (ziele.includes(id)) passend++; sys = '🫙 Dahinter steckt: ' + c.hinter; }
         else if (!ziele) { strittig++; sys = '🤔 Strittig. Kann man so oder so sehen.'; }
         else if (ziele.includes(id)) { passend++; serie++; sys = '✓ ' + F[j].t; pop(k, serie >= 3 ? '🔥' : '✅'); }
-        else { serie = 0; sys = 'Hm. Die meisten legen das zu „' + F.find((f) => f.id === ziele[0]).t + '“.'; pop(k, '🤨'); }
+        else { serie = 0; sys = 'Hm. Andere würden das zu „' + F.find((f) => f.id === ziele[0]).t + '“ legen.'; pop(k, '🤨'); }
         if (id == null) serie = 0;
         faecher.innerHTML = '';
         rede.innerHTML = '<div class="sz-sys">' + esc(sys) + '</div>' + (c.sagt ? blaseHtml(c.wer, c.sagt) : '');
@@ -909,7 +909,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
         bühne.innerHTML = '<div class="sz-sys" style="background:' + Z[2] + ';color:#fff">Du bist bei ' + Math.round(z) + ' · Zone ' + Z[1] + '</div>';
         const j = await karteWahl(karten, e.karten.map((c, i) => '<button type="button" data-i="' + i + '"><span>' + esc(ersetze(c.t)) + '</span></button>').join(''), e.karten.length, { zeit: def.zeit || 9, still: -1, zeitEl });
         karten.innerHTML = '';
-        const c = j < 0 ? { typ: 'nix', wirkung: 4, antwort: 'Du machst nichts. Die Zahl wartet nicht.' } : e.karten[j];
+        const c = j < 0 ? { typ: 'nix', wirkung: 0, antwort: 'Du wartest. Die Zahl bleibt.' } : e.karten[j];
         typen.push(c.typ);
         let w = c.wirkung || 0, hinweis = c.antwort || '';
         if (c.typ === 'kopf' && z >= 70) { w = Math.round(w * 0.2); hinweis = 'Bei Rot hört der Kopf schlecht zu. Erst den Körper runterbringen, dann denken.'; }
@@ -1034,16 +1034,16 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
   ui.atemSync = (def) => new Promise((ok) => {
     const w = def.wer;
     const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || '') + '</span><b>Gemeinsam atmen</b></div>' +
-      '<p class="sz-info">' + esc(w.name) + ' atmet sehr schnell. Atme ruhig vor – er macht mit. <b>Halten</b> = einatmen (bis der Ring voll ist), <b>loslassen</b> = langsam ausatmen.</p>' +
+      '<p class="sz-info">' + esc(w.name) + ' atmet sehr schnell. Atme ruhig vor – er macht mit. <b>Halten</b> = normal ein. <b>Loslassen</b> = lange aus.</p>' +
       '<div class="sz-atem"><div class="sz-atem-ring"></div><div class="sz-atem-ich"></div><div class="sz-atem-er" style="--f:' + esc(w.farbe) + '">' + esc(w.name[0]) + '</div><b class="sz-atem-z"></b></div>' +
       '<div class="sz-bühne"></div><div class="sz-karten"><button type="button" class="sz-atem-knopf">Halten zum Einatmen <kbd>Leertaste</kbd></button></div></div>');
     const ich = k.querySelector('.sz-atem-ich'), er = k.querySelector('.sz-atem-er'), zEl = k.querySelector('.sz-atem-z'), bühne = k.querySelector('.sz-bühne'), knopf = k.querySelector('.sz-atem-knopf'), karten = k.querySelector('.sz-karten');
     let zahl = def.start || 95, gut = 0, runden = 0, ein = null, aus = null, groesse = 0.3, ende = false; const gesagt = new Set();
     const zeig = () => { zEl.textContent = Math.round(zahl); zEl.style.color = ZONE(zahl)[2]; };
     const sag = () => { for (const [g, t] of Object.entries(def.saetze || {}).sort((a, b) => b[0] - a[0])) if (zahl <= +g && !gesagt.has(g)) { gesagt.add(g); bühne.innerHTML = blaseHtml(w, t); break; } };
-    const runter = () => { if (ende || ein) return; const jetzt = performance.now(); if (aus) { const d = (jetzt - aus) / 1000; runden++; const passt = d >= 3 && d <= 8; const einD = aus - (ein0 || aus); const einOk = einD >= 2500 && einD <= 6000;
+    const runter = () => { if (ende || ein) return; const jetzt = performance.now(); if (aus) { const d = (jetzt - aus) / 1000; runden++; const passt = d >= 3 && d <= 8; const einD = aus - (ein0 || aus); const einOk = einD >= 1800 && einD <= 6000;
         if (passt && einOk) { gut++; zahl = Math.max(def.ziel || 35, zahl - 12); bühne.insertAdjacentHTML('afterbegin', '<div class="sz-sys">Ruhig. ' + esc(w.name) + ' atmet mit.</div>'); }
-        else { zahl = Math.max(def.ziel || 35, zahl - 3); bühne.insertAdjacentHTML('afterbegin', '<div class="sz-sys">' + (einD < 2500 ? 'Etwas länger einatmen.' : d < 3 ? 'Langsamer ausatmen. Länger als einatmen.' : 'Nicht zu lange warten.') + '</div>'); }
+        else { zahl = Math.max(def.ziel || 35, zahl - 3); bühne.insertAdjacentHTML('afterbegin', '<div class="sz-sys">' + (einD < 1800 ? 'Ruhig weiter. Normal einatmen.' : d < 3 ? 'Das Ausatmen darf länger sein.' : 'Nicht zu lange warten.') + '</div>'); }
         while (bühne.children.length > 2) bühne.lastChild.remove();
         zeig(); sag(); if (zahl <= (def.ziel || 35) || runden >= 8) return fertig(); }
       ein = jetzt; ein0 = jetzt; aus = null; knopf.classList.add('an'); knopf.firstChild.textContent = 'Einatmen … ';
@@ -1072,7 +1072,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
   ui.koffer = (def) => new Promise((ok) => {
     const drin = new Set(), not = new Set();
     const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || 'Aula · Koffer-Markt') + '</span><b>Mein Skills-Koffer</b></div>' +
-      '<p class="sz-info sz-k-info">Pack ein, was bei DIR wirkt. Bis zu zwei pro Fach. Niemand bewertet das.</p><div class="sz-koffer"></div><div class="sz-karten"></div></div>');
+      '<p class="sz-info sz-k-info">Pack ein, was bei DIR wirkt. Bis zu zwei pro Fach. Danach testen wir.</p><div class="sz-koffer"></div><div class="sz-karten"></div></div>');
     const box = k.querySelector('.sz-koffer'), karten = k.querySelector('.sz-karten'), info = k.querySelector('.sz-k-info');
     let phase = 0;
     const zeig = () => {
@@ -1088,7 +1088,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
     const weiter = () => {
       if (phase === 0) {
         if (drin.size < 3) def.karten.filter((c) => !drin.has(c.id)).slice(0, 3 - drin.size).forEach((c) => drin.add(c.id));
-        phase = 1; info.textContent = 'Jetzt die Notfallkarte: Welche drei helfen dir bei ROT? Tipp: Bei Rot wirken Körper, Sinne und Menschen am besten.'; zeig();
+        phase = 1; info.textContent = 'Welche drei helfen dir bei Rot? Wähl. Dann testen wir.'; zeig();
         karten.innerHTML = '<button type="button" class="sz-weiter" data-a="w">Notfallkarte fertig <kbd>E</kbd></button>'; karten.querySelector('[data-a="w"]').onclick = weiter; return;
       }
       if (!not.size) [...drin].slice(0, 3).forEach((id) => not.add(id));
@@ -1107,7 +1107,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
         const c = karteN[j]; karten.innerHTML = '';
         const puls = box.querySelector('.sz-puls i');
         let t;
-        if (c.fach === 'kopf') { t = '💥 Deckel weg. Bei Rot kommt der Kopf nicht dran.'; pop(k, '💥'); }
+        if (c.fach === 'kopf') { t = '🤔 Bei Rot ist das für viele schwer. Bei dir auch?'; puls.style.width = '82%'; pop(k, '🤔'); }
         else if (c.fach === 'aktiv') { t = '⏳ Hilft später. Aber nicht hier, nicht jetzt.'; puls.style.width = '75%'; pop(k, '⏳'); }
         else { t = '✅ Wirkt. Der Puls geht runter.'; puls.style.width = '40%'; puls.style.background = '#3fa66b'; treffer++; pop(k, '✅'); }
         box.insertAdjacentHTML('beforeend', '<div class="sz-sys">' + esc(t) + '</div>');
@@ -1132,7 +1132,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
   // def: { wo, situation, gedanken: [{ t, gefuehl, koerper, tun, folge }] } → { gewaehlt: [i…], final: i }
   ui.gedankenWeiche = (def) => new Promise((ok) => {
     const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || '') + '</span><b>🚂 Gedanken-Weiche</b></div>' +
-      '<div class="sz-fall" style="--f:#2b3a55"><p>' + esc(ersetze(def.situation)) + '</p></div><p class="sz-info sz-gw-info">Welcher Gedanke kommt? Stell die Weiche.</p>' +
+      '<div class="sz-fall" style="--f:#2b3a55"><p>' + esc(ersetze(def.situation)) + '</p></div><p class="sz-info sz-gw-info">Welcher Gedanke kommt zuerst? Der kommt von allein.</p>' +
       '<div class="sz-gleis"></div><div class="sz-karten ly-d-optionen"></div></div>');
     const gleis = k.querySelector('.sz-gleis'), karten = k.querySelector('.sz-karten'), info = k.querySelector('.sz-gw-info');
     const gewaehlt = [];
@@ -1158,7 +1158,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
         const f = await karteWahl(karten, [i, b].map((x, n) => '<button type="button" data-i="' + n + '"><span>„' + esc(ersetze(def.gedanken[x].t)) + '“</span></button>').join(''), 2);
         final = [i, b][f];
       }
-      karten.innerHTML = ''; info.textContent = 'Gleiche Situation. Anderer Gedanke. Anderer Tag.';
+      karten.innerHTML = ''; info.textContent = 'Den ersten Gedanken wählt man nicht. Den zweiten kann man prüfen.';
       weiterKnopf(karten, { gewaehlt, final }, ok);
     })();
   });
@@ -1168,7 +1168,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
   ui.bohnenWette = (def) => new Promise((ok) => {
     const b = def.saetze.map(() => 0); let frei = 5;
     const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || 'Aula') + '</span><b>🫘 Bohnen-Wette</b></div>' +
-      '<p class="sz-info">Anonym. Niemand sieht, wo deine Bohnen landen. Leg sie zu Sätzen, die du von dir selbst kennst. Antippen = Bohne rein, noch mal = raus.</p>' +
+      '<p class="sz-info">Anonym. Leg alle fünf Bohnen zu Sätzen, die du kennst. Von dir oder anderen.</p>' +
       '<div class="sz-becher"></div><div class="sz-karten"></div></div>');
     const box = k.querySelector('.sz-becher'), karten = k.querySelector('.sz-karten');
     let zeigeKlasse = false;
@@ -1177,7 +1177,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
       box.innerHTML = def.saetze.map((t, i) => '<button type="button" data-i="' + i + '"' + (zeigeKlasse ? ' disabled' : '') + '><span>„' + esc(t) + '“</span><i>' + '🫘'.repeat(b[i]) + '</i>' +
         (zeigeKlasse ? '<em style="width:0;transition:width .7s ease-out ' + (i * 0.35) + 's" data-w="' + Math.round((def.klasse[i] + b[i]) / max * 100) + '"></em><b>' + (def.klasse[i] + b[i]) + '</b>' : '') + '</button>').join('');
       box.querySelectorAll('[data-i]').forEach((x) => { x.onclick = () => { const i = +x.dataset.i; if (frei > 0) { b[i]++; frei--; } else if (b[i]) { b[i]--; frei++; } zeig(); }; });
-      if (!zeigeKlasse) { karten.innerHTML = '<div class="sz-sys">Noch ' + frei + ' 🫘' + (frei ? '' : ' · antippen nimmt eine zurück') + '</div><button type="button" class="ly-link" data-a="neu">Alle zurück</button><button type="button" class="sz-weiter" data-a="w">Becher leeren <kbd>E</kbd></button>'; karten.querySelector('[data-a="neu"]').onclick = () => { b.fill(0); frei = 5; zeig(); }; }
+      if (!zeigeKlasse) { karten.innerHTML = '<div class="sz-sys">Noch ' + frei + ' 🫘' + (frei ? '' : ' · antippen nimmt eine zurück') + '</div><button type="button" class="ly-link" data-a="neu">Alle zurück</button>' + (frei ? '' : '<button type="button" class="sz-weiter" data-a="w">Becher leeren <kbd>E</kbd></button>'); karten.querySelector('[data-a="neu"]').onclick = () => { b.fill(0); frei = 5; zeig(); }; }
       const w = karten.querySelector('[data-a="w"]'); if (w) w.onclick = weiter;
     };
     const weiter = () => {
@@ -1191,7 +1191,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
       }
     };
     zeig();
-    halte((e) => { if ((e.code === 'KeyE' || e.code === 'Enter') && !zeigeKlasse) { e.preventDefault(); e.stopPropagation(); weiter(); } });
+    halte((e) => { if ((e.code === 'KeyE' || e.code === 'Enter') && !zeigeKlasse && !frei) { e.preventDefault(); e.stopPropagation(); weiter(); } });
   });
 
   // Beweis-Waage (E18 Kritischer Detektiv): Ein Satz steht auf dem Prüfstand. Hinweise kommen; jeder ist ein Beweis DAFÜR,
@@ -1237,7 +1237,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
   // (realistisch, keine „immer/nie“, freundlich, Ich-Form, ein nächster Schritt, man glaubt ihn wenigstens ein bisschen).
   // def: { alt, teile: [[{ t, regeln: { … } }…] × 3] } → { satz, regeln: n }
   ui.satzBau = (def) => new Promise((ok) => {
-    const wahl = def.teile.map(() => -1);
+    const wahl = def.teile.map(() => -1); let gezeigt = false;
     const REG = def.regeln || [['real', 'realistisch'], ['ohneImmer', 'kein „immer/nie/alle“'], ['freundlich', 'freundlich zu dir'], ['schritt', 'mit einem nächsten Schritt']];
     const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || '') + '</span><b>' + esc(def.titel || '🔧 Neuer Satz') + '</b></div>' +
       '<div class="sz-fall" style="--f:#8a93a3"><b>' + esc(def.altTitel || 'Alter Satz') + '</b><p>„' + esc(ersetze(def.alt)) + '“</p></div>' +
@@ -1246,14 +1246,15 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
     const pruef = () => { const r = {}; REG.forEach(([id]) => { r[id] = wahl.every((w, i) => w >= 0 && def.teile[i][w].regeln[id] !== false) && wahl.some((w, i) => w >= 0 && def.teile[i][w].regeln[id]); }); return r; };
     const zeig = () => {
       satz.innerHTML = wahl.map((w, i) => '<span class="' + (w < 0 ? 'leer' : '') + '">' + (w < 0 ? '…' : esc(ersetze(def.teile[i][w].t))) + '</span>').join(' ');
-      const r = pruef(); regeln.innerHTML = REG.map(([id, n]) => '<i class="' + (r[id] ? 'ok' : '') + '">' + (r[id] ? '✓' : '○') + ' ' + n + '</i>').join('');
+      const r = pruef(); regeln.innerHTML = gezeigt ? REG.map(([id, n]) => '<i class="' + (r[id] ? 'ok' : '') + '">' + (r[id] ? '✓' : '○') + ' ' + n + '</i>').join('') : '';
       teile.innerHTML = def.teile.map((reihe, i) => '<div>' + reihe.map((t, j) => '<button type="button" data-i="' + i + '" data-j="' + j + '" class="' + (wahl[i] === j ? 'an' : '') + '">' + esc(ersetze(t.t)) + '</button>').join('') + '</div>').join('');
       teile.querySelectorAll('[data-j]').forEach((b) => { b.onclick = () => { wahl[+b.dataset.i] = +b.dataset.j; zeig(); }; });
-      karten.innerHTML = wahl.every((w) => w >= 0) ? '<button type="button" class="sz-weiter" data-a="w">Das ist mein Satz <kbd>E</kbd></button>' : '';
+      karten.innerHTML = wahl.every((w) => w >= 0) ? '<button type="button" class="sz-weiter" data-a="w">' + (gezeigt ? 'Fertig' : 'Das ist mein Satz') + ' <kbd>E</kbd></button>' + (gezeigt ? '<div class="sz-sys">Ändern geht noch. Tipp einen Teil an.</div>' : '') : '';
       const w = karten.querySelector('[data-a="w"]'); if (w) w.onclick = fertig;
     };
     const fertig = () => {
       if (wahl.some((w) => w < 0)) wahl.forEach((w, i) => { if (w < 0) wahl[i] = def.teile[i].findIndex((t) => Object.values(t.regeln).every(Boolean)); });
+      if (!gezeigt) { gezeigt = true; zeig(); return; }
       loesche(); ui.ebeneZu(); const r = pruef();
       ok({ satz: wahl.map((w, i) => ersetze(def.teile[i][w].t)).join(' '), regeln: Object.values(r).filter(Boolean).length, wahl });
     };
@@ -1326,7 +1327,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
       }
       er.style.left = '-40px';
       bühne.innerHTML = '<div class="sz-abstaende">' + def.leute.map((p) => '<span style="--f:' + esc(p.farbe) + '"><b>' + esc(p.name) + '</b>' + String(abstaende[p.id]).replace('.', ',') + ' m</span>').join('') + '</div>';
-      weiterKnopf(karten, { abstaende }, ok, '<div class="sz-sys">Jeder Abstand ist okay. Er ist nur bei jedem Menschen anders.</div>');
+      weiterKnopf(karten, { abstaende }, ok, '<div class="sz-sys">Abstand ist bei jedem anders. Bei Mila wär’s mehr.</div>');
     })();
   });
 
@@ -1355,7 +1356,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
       teile.innerHTML = '<div class="sz-sys">Du: ' + esc(o.map((x) => ersetze(x.t)).join(' · ')) + '</div>';
       const r = def.reaktion[art] || [];
       for (const t of r) { bühne.insertAdjacentHTML('beforeend', blaseHtml(def.gegner, t)); await warte(lesezeit(t)); }
-      weiterKnopf(karten, { klarheit, art }, ok, '<div class="sz-sys">' + ({ klar: 'Klar. Ruhig. Ernst genommen.', mittel: 'Halb angekommen. Ein Teil hat gewackelt.', unklar: 'Das Lächeln hat das Stopp weggenommen.', angriff: 'Angekommen – aber als Angriff. Jetzt geht es um den Streit, nicht ums Foto.' })[art] + '</div>');
+      weiterKnopf(karten, { klarheit, art }, ok, '<div class="sz-sys">' + ({ klar: 'Klar. Ruhig. Ernst genommen.', mittel: 'Halb angekommen. Ein Teil hat gewackelt.', unklar: 'Er hat es gehört. Weitermachen war seine Entscheidung.', angriff: 'Angekommen – aber als Angriff. Jetzt geht es um den Streit, nicht ums Foto.' })[art] + '</div>');
     };
     zeig();
     halte((e) => { if (e.code === 'KeyE' || e.code === 'Enter') { e.preventDefault(); e.stopPropagation(); sagen(); } });
@@ -1418,7 +1419,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
         if (ankerDa) anker.hidden = false;
         anker.onclick = () => { if (!ankerDa) return; ankerDa = false; anker.hidden = true; ich = Math.min(100, ich + 10); zeig(); if (steuer.pause) steuer.pause(5000); pop(k, '⚓'); bühne.insertAdjacentHTML('beforeend', '<div class="sz-sys">⚓ ' + esc(ersetze(def.anker)) + '</div>'); };
         j = await wahl; anker.hidden = true; karten.innerHTML = '';
-        const c = j < 0 ? { t: '(…)', art: 'still', druck: 6, ich: -6, antwort: 'Keine Antwort ist für die Gruppe ein Ja.' } : r.karten[j];
+        const c = j < 0 ? { t: '(…)', art: 'still', druck: 6, ich: -6, antwort: 'Du schweigst. Die Gruppe tut so, als wär das ein Ja.' } : r.karten[j];
         if (c.art === 'ja') ja++; if (c.art === 'nein') nein++;
         druck = Math.max(0, Math.min(100, druck + (c.druck || 0))); ich = Math.max(0, Math.min(100, ich + (c.ich || 0))); zeig();
         if (j >= 0) bühne.insertAdjacentHTML('beforeend', blaseHtml(null, ersetze(c.t), true));
@@ -1427,7 +1428,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
         if (c.art === 'gehen') break;
       }
       anker.hidden = true;
-      weiterKnopf(karten, { druck, ich, ja, nein }, ok, '<div class="sz-sys">Dein Ich: ' + ich + ' · Druck: ' + druck + '</div>');
+      weiterKnopf(karten, { druck, ich, ja, nein }, ok, '<div class="sz-sys">' + (ich >= druck ? 'Du bist bei dir geblieben.' : 'Der Druck war stark. Das passiert. Ein Nein geht auch später.') + '</div>');
     })();
   });
 
@@ -1473,7 +1474,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
   ui.feedSim = (def) => new Promise((ok) => {
     const A = def.arten, ids = Object.keys(A), gewicht = Object.fromEntries(ids.map((a) => [a, 1])), gezeigt = Object.fromEntries(ids.map((a) => [a, 0]));
     const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || '') + '</span><b>📱 Du gegen den Algorithmus</b></div>' +
-      '<p class="sz-info">Wisch durch deinen Feed. ❤️ = gefällt mir, ⏭ = weiter. Wer lange guckt, sagt dem Algorithmus auch was.</p>' +
+      '<p class="sz-info">Wisch durch deinen Feed. ❤️ = gefällt mir, ⏭ = weiter. Langes Gucken merkt sich die App auch.</p>' +
       '<div class="sz-feed"></div><div class="sz-feed-balken"></div><div class="sz-karten ly-d-optionen sz-raster"></div></div>');
     const feed = k.querySelector('.sz-feed'), balken = k.querySelector('.sz-feed-balken'), karten = k.querySelector('.sz-karten');
     const benutzt = new Set(); let geliked = 0;
