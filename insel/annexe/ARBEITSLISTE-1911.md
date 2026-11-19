@@ -79,3 +79,10 @@ freundliche Fehlermeldung · WebGL-Kontextverlust · Pause bei Fokusverlust · B
 - C: K2 Likes/Selbstwert · K3 anonyme Fragen · K4 „Gesehen 21:04“ · K5 30 Kommentare = 3 Konten · K6 verschwindende
   Nachricht „antworte JETZT“ · K7 Screenshots aus der fremden Gruppe · K8 KI-Angst + Profil-Einstellungen · K9 Serie 214 Tage
   + KI-Chat um 3 Uhr → Mensch · K10 Zustimmung vor dem Posten des Klassenfotos.
+
+## D – Stand 19.11. (Abend, Teil 3)
+Erledigt: Hilfe-Seite, Ich-stecke-fest, Was-soll-ich-tun, Rückblick, Speichern bei Wegklicken, WebGL-Kontextverlust,
+Vibration, Minispiele leichter, Fotomodus, Abzeichen, Gesprächsverlauf, Glossar, Inhaltshinweise, Credits/Lizenzen/Datenschutz,
+Kapitelwahl für Lehrpersonen, Bildschirm wach halten, Sicherungscode (Export/Import), Textgröße, Vorlesen, weniger Bewegung.
+Offen (bewusst später): UI-Skalierung getrennt von Textgröße, Lautstärke je Kanal (Stimme/Effekte), Blitz-Schutz-Prüfung,
+„Weiter zur Geschichte“ nach Fehlversuchen in Minispielen.

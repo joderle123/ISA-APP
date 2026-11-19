@@ -398,3 +398,12 @@ reparieren, jede Sequenz auf Sinn prüfen, AAA-Funktionen. Grundlage: Kritik all
 - Lebendige Welt: Lehrkräfte ermahnen freundlich, wer im Gang an ihnen vorbeirennt (eigener Spruch je Person, max. alle 45 s).
 - Sitzen: Figuren rasten auf echte Sitzflächen ein (Stuhl, Bank, Kübelrand, Stufen), Becken auf Sitzhöhe, Beine per IK auf
   den Boden. Geprüft im Klassenzimmer, auf der Bank und am Kübelrand.
+
+## 19.11. (Abend, Teil 3) – AAA-Liste: Komfort und Zugänglichkeit
+- „Kurz raus“ hat jetzt: „Was wurde gesagt?“ (die letzten 30 Sätze zum Nachlesen) und „Was bedeutet …?“ (21 Wörter
+  aus dem Spiel, z. B. Story, Serie, Lesebestätigung, Ich-Botschaft, 116 111). Hilft beim langsamen Lesen.
+- Inhaltshinweise am Kapitelanfang (sachlich, ein Satz, mit Hinweis auf „Kurz raus“).
+- Einstellungen → „Über das Spiel“: Datenschutz (alles bleibt auf dem Gerät), erfundene Personen, Lizenzen (CC0, MIT), echte Hilfe.
+- Für Lehrpersonen: beim neuen Spiel direkt in einem Kapitel starten (ein Kapitel = ein Modul des Skills-Kurses).
+- Bildschirm bleibt beim Spielen an (Handy/Tablet).
+- Die Welt redet über die Geschichte: Statisten erwähnen Ereignisse des aktuellen Kapitels (Fake, Sportfest, Serie …).

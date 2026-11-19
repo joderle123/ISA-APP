@@ -126,8 +126,19 @@ export function createUI({ root, input, speech }) {
         '<div><span>' + t + '</span><button type="button" data-b="' + k2 + '" class="' + (einst[k2] ? 'an' : '') + '">' + an(einst[k2]) + '</button></div>').join('') +
       '<label><span>Lautstärke</span><input type="range" min="0" max="1" step="0.05" data-v="laut" value="' + einst.laut + '"></label>' +
       '<label><span>Musik</span><input type="range" min="0" max="1" step="0.05" data-v="musik" value="' + einst.musik + '"></label>' +
-      '</div><div class="ly-t-knoepfe"><button type="button" class="ly-btn ly-primaer" data-a="w">Fertig</button><button type="button" class="ly-btn" data-a="code">Sicherungscode</button></div>');
+      '</div><div class="ly-t-knoepfe"><button type="button" class="ly-btn ly-primaer" data-a="w">Fertig</button><button type="button" class="ly-btn" data-a="code">Sicherungscode</button><button type="button" class="ly-btn" data-a="ueber">Über das Spiel</button></div>');
     k.querySelector('[data-a="code"]').onclick = () => sicherung(() => einstPanel(zurueck));
+    k.querySelector('[data-a="ueber"]').onclick = () => {
+      const k2 = ebeneAuf('raus', '<div class="ly-t-kicker">Über das Spiel</div><h2>Annexe Junglinster</h2>' +
+        '<p class="ly-leer"><b>Datenschutz:</b> Alles bleibt auf diesem Gerät. Kein Konto, keine Werbung, nichts geht ins Internet. ' +
+        'Vorlesen nutzt die Stimme deines Geräts.</p>' +
+        '<p class="ly-leer"><b>Alle Personen sind erfunden.</b> Ähnlichkeiten mit echten Menschen sind Zufall.</p>' +
+        '<p class="ly-leer"><b>3D-Modelle:</b> Quaternius (Figuren), Kenney (Bäume, Bänke, Stadt), KayKit (Möbel) – alle CC0 (gemeinfrei). ' +
+        '<b>3D-Technik:</b> three.js (MIT-Lizenz).</p>' +
+        '<p class="ly-leer"><b>Echte Hilfe:</b> 116 111 (Kanner- a Jugendtelefon) · BEE SECURE 8002 1234 · Notruf 112.</p>' +
+        '<button type="button" class="ly-btn ly-primaer" data-a="w">Zurück</button>');
+      k2.querySelector('[data-a="w"]').onclick = () => einstPanel(zurueck);
+    };
     k.querySelectorAll('[data-t]').forEach((b) => { b.onclick = () => { einst.text = b.dataset.t; einstSpeichern(); einstPanel(zurueck); }; });
     k.querySelectorAll('[data-b]').forEach((b) => { b.onclick = () => { einst[b.dataset.b] = !einst[b.dataset.b]; einstSpeichern(); einstPanel(zurueck); }; });
     k.querySelectorAll('[data-v]').forEach((r) => { r.addEventListener('keydown', (e) => e.stopPropagation()); r.oninput = () => { einst[r.dataset.v] = +r.value; einstSpeichern(); }; });
@@ -171,7 +182,10 @@ export function createUI({ root, input, speech }) {
 
   // ---------- Gespräch ----------
   // zeile: { wer, farbe, text } → wartet auf „weiter“
+  // Gesprächsverlauf (wie in großen Rollenspielen): die letzten 60 Zeilen, nachlesbar unter „Kurz raus“ → „Was wurde gesagt?“
+  const VERLAUF = [];
   ui.sprich = ({ wer = '', farbe = '#2b3a55', text = '' }) => new Promise((ok) => {
+    if (text) { VERLAUF.push({ wer, farbe, text }); if (VERLAUF.length > 60) VERLAUF.shift(); }
     dialogOffen = true; dialog.hidden = false; root.classList.add('ly-im-dialog');
     dialog.className = 'ly-dialog hud-interactive' + (wer ? '' : ' ly-erz');
     dialog.innerHTML = (wer ? '<div class="ly-d-wer" style="--f:' + esc(farbe) + '">' + esc(wer) + '</div>' : '') +
@@ -289,11 +303,16 @@ export function createUI({ root, input, speech }) {
       }
       // Figur und Name
       const k2 = ebeneAuf('wer', '<h2>Wer bist du?</h2><div class="ly-w-figuren">' + figuren.map((f, i) => '<button type="button" data-f="' + i + '" class="' + (i === 0 ? 'an' : '') + '"><span class="ly-w-bild" style="--o:' + f.oben + ';--h:' + f.haut + ';--r:' + f.haar + '"><i></i></span>' + esc(f.titel) + '</button>').join('') + '</div>' +
-        '<label class="ly-w-name">Dein Name im Spiel<input maxlength="16" value="Sam" autocomplete="off"></label><p class="ly-leer">Du kannst einen ausgedachten Namen nehmen.</p><button type="button" class="ly-btn ly-primaer" data-a="start">Starten</button>');
+        '<label class="ly-w-name">Dein Name im Spiel<input maxlength="16" value="Sam" autocomplete="off"></label><p class="ly-leer">Du kannst einen ausgedachten Namen nehmen.</p>' +
+        // Für den Unterricht: direkt in ein Kapitel einsteigen (ein Kapitel = ein Modul des Skills-Kurses)
+        '<details class="ly-w-kap"><summary>Für Lehrpersonen: in einem Kapitel starten</summary><select data-kap>' +
+        ['Kapitel 1 – von Anfang an', 'Kapitel 2', 'Kapitel 3', 'Kapitel 4', 'Kapitel 5', 'Kapitel 6', 'Kapitel 7', 'Kapitel 8', 'Kapitel 9', 'Kapitel 10'].map((t, i) => '<option value="' + (i + 1) + '">' + t + '</option>').join('') +
+        '</select><small>Frühere Entscheidungen gelten dann als „nicht getroffen“.</small></details>' +
+        '<button type="button" class="ly-btn ly-primaer" data-a="start">Starten</button>');
       let wahl = 0;
       k2.querySelectorAll('[data-f]').forEach((x) => { x.onclick = () => { wahl = +x.dataset.f; k2.querySelectorAll('[data-f]').forEach((y) => y.classList.toggle('an', y === x)); }; });
       const inp = k2.querySelector('input');
-      k2.querySelector('[data-a="start"]').onclick = () => { const name = inp.value.replace(/[<>]/g, '').trim().slice(0, 16) || 'Sam'; ebeneZu(); ok({ neu: true, figur: wahl, name }); };
+      k2.querySelector('[data-a="start"]').onclick = () => { const name = inp.value.replace(/[<>]/g, '').trim().slice(0, 16) || 'Sam'; ebeneZu(); ok({ neu: true, figur: wahl, name, kapitel: +(k2.querySelector('[data-kap]').value || 1) }); };
       inp.addEventListener('keydown', (e) => { e.stopPropagation(); if (e.key === 'Enter') k2.querySelector('[data-a="start"]').click(); });
     }; });
    };
@@ -962,6 +981,29 @@ export function createUI({ root, input, speech }) {
   };
 
   // „Kurz raus“: Das Spiel wartet. Atmen, 5-4-3-2-1 oder einfach zurück. Jederzeit, außer mitten im Gespräch.
+  const LEXIKON = [
+    ['Aura', 'Jugendwort: wie cool jemand wirkt. Hat keine Regeln – darum kann man es nicht messen.'],
+    ['Story', 'Bilder oder Videos, die nach 24 Stunden verschwinden. Screenshots davon bleiben aber.'],
+    ['Screenshot', 'Ein Foto vom Bildschirm. Gut als Beweis. Nicht gut, um andere bloßzustellen.'],
+    ['Fake', 'Etwas Gefälschtes: ein Bild, ein Chat, ein Konto. Erst prüfen: Wer? Woher? Wem schadet es?'],
+    ['KI-Fake', 'Ein Bild, Video oder eine Stimme, die ein Computer erfunden hat. Oft sieht man es nicht.'],
+    ['Serie', 'Wenn zwei Leute jeden Tag etwas schicken, zählt die App die Tage. Eine Zahl ist keine Freundschaft.'],
+    ['Lesebestätigung', '„Gesehen 21:04“: nur gelesen. Heißt nicht, dass jemand dich nicht mag.'],
+    ['Anonyme Fragen', 'Man sieht nicht, wer fragt. Gemeine Fragen darf man löschen und melden.'],
+    ['Stummschalten', 'Der Chat bleibt, aber er klingelt nicht mehr. Ruhe, ohne jemanden zu blockieren.'],
+    ['Blockieren', 'Die Person kann dir nicht mehr schreiben. Erlaubt, wenn dir etwas nicht guttut.'],
+    ['Melden', 'Der App sagen, dass etwas gegen die Regeln ist. Die Person erfährt nicht, wer gemeldet hat.'],
+    ['SePAS', 'Das Team in der Schule für Sorgen und Fragen: Herr Kuedes, Herr Mesenberg. Die Tür ist offen.'],
+    ['Ich-Botschaft', '„Ich fühle mich …, wenn …“ statt „Du bist …“. Sagt, was los ist, ohne anzugreifen.'],
+    ['Stopp', 'Ein klares Nein. Gilt immer. Ruhig und klar kommt es am besten an.'],
+    ['Wenn-dann-Plan', '„Wenn das passiert, dann mache ich das.“ So klappen kleine Vorhaben viel öfter.'],
+    ['Bodyscan', 'Von den Füßen bis zum Kopf spüren, wie es dem Körper geht. Hilft, ruhig zu werden.'],
+    ['5-4-3-2-1', '5 Dinge sehen, 4 hören, 3 spüren, 2 Farben, 1 Atemzug. Holt dich ins Hier zurück.'],
+    ['Cringe', 'Jugendwort: peinlich, zum Fremdschämen.'],
+    ['Lowkey', 'Jugendwort: ein bisschen, heimlich, „eigentlich schon“.'],
+    ['116 111', 'Kanner- a Jugendtelefon. Anonym und gratis. Echt, nicht im Spiel.'],
+    ['BEE SECURE 8002 1234', 'Hilfe bei Problemen im Internet. Gratis. Echt, nicht im Spiel.'],
+  ];
   ui.kurzRaus = () => new Promise((ok) => {
     const SINNE = ['Schau dich um. Finde 5 Dinge, die du siehst.', 'Hör hin. 4 Geräusche, ganz egal welche.', 'Spür 3 Dinge: Füße am Boden, Stuhl, Ärmel.', '2 Farben im Raum, die dir gefallen.', 'Ein Atemzug. Ganz langsam aus.'];
     let zu = false;
@@ -974,6 +1016,8 @@ export function createUI({ root, input, speech }) {
         (ui.bodyscanFrei && ui.bodyscanFrei() ? '<button type="button" data-w="scan"><kbd>🧍</kbd><span>Bodyscan: Füße bis Kopf</span></button>' : '') +
         '<button type="button" data-w="zu"><kbd>3</kbd><span>Zurück ins Spiel</span></button>' +
         '<button type="button" data-w="ziel"><kbd>📍</kbd><span>Was soll ich gerade tun?</span></button>' +
+        (VERLAUF.length ? '<button type="button" data-w="verlauf"><kbd>💬</kbd><span>Was wurde gesagt?</span></button>' : '') +
+        '<button type="button" data-w="lexikon"><kbd>📖</kbd><span>Was bedeutet …?</span></button>' +
         '<button type="button" data-w="hilfe"><kbd>🆘</kbd><span>Hilfe holen (echt, nicht im Spiel)</span></button>' +
         '<button type="button" data-w="fest"><kbd>↺</kbd><span>Ich stecke fest</span></button>' +
         '<button type="button" data-w="einst"><kbd>⚙</kbd><span>Einstellungen</span></button>' +
@@ -1001,6 +1045,17 @@ export function createUI({ root, input, speech }) {
     const wahl = async (w) => {
       if (w === 'atem') { await ui.atem(); if (!zu) start(); }
       else if (w === 'scan') scan(0);
+      else if (w === 'verlauf') {
+        const zeilen = VERLAUF.slice(-30).map((z) => '<p class="ly-vl-z">' + (z.wer ? '<b style="color:' + esc(z.farbe) + '">' + esc(z.wer) + '</b> ' : '<i>') + esc(z.text) + (z.wer ? '' : '</i>') + '</p>').join('');
+        const k = ebeneAuf('raus', '<div class="ly-t-kicker">Was wurde gesagt?</div><h2>Die letzten Sätze</h2><div class="ly-vl">' + zeilen + '</div><button type="button" class="ly-btn ly-primaer" data-a="w">Zurück</button>');
+        const box = k.querySelector('.ly-vl'); box.scrollTop = box.scrollHeight;
+        k.querySelector('[data-a="w"]').onclick = start;
+      }
+      else if (w === 'lexikon') {
+        const k = ebeneAuf('raus', '<div class="ly-t-kicker">Was bedeutet …?</div><h2>Wörter aus dem Spiel</h2><dl class="ly-lex">' +
+          LEXIKON.map(([a, b]) => '<dt>' + esc(a) + '</dt><dd>' + esc(b) + '</dd>').join('') + '</dl><button type="button" class="ly-btn ly-primaer" data-a="w">Zurück</button>');
+        k.querySelector('[data-a="w"]').onclick = start;
+      }
       else if (w === 'sinne') sinne(0);
       else if (w === 'einst') einstPanel(start);
       else if (w === 'ziel') {

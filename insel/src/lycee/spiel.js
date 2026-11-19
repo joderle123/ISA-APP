@@ -402,6 +402,18 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     innenhof: ['Psst. Hier findet uns keiner. Bleib leise.', 'Hast du das Plakat für die Aula gesehen?', 'Ich übe meinen Text. Leise.'],
     skate: ['Kickflip! … fast.', 'Guck! … Nee, warte. Nochmal.', 'Das Board ist von meinem Cousin.'],
   };
+  const TAGESGESPRAECH = {
+    1: ['Habt ihr die Neuen gesehen? In der 7P2?', 'Dieser @annexe.cam-Account … wer ist das?', 'Heute Umfrage im Chat. Cringe.'],
+    2: ['Schon wieder ein Foto von @annexe.cam. Krass.', 'Talenttag in der 7P2? Gibt’s das bei uns auch?', 'Wer ist #3? Alle raten.'],
+    3: ['Sportfest Freitag! Ich lauf als Erster.', 'Die 7P2 war Letzte. Aber mit Stil, sagen sie.', 'Hast du das mit dem Foto gehört? Voll fies.'],
+    4: ['Test morgen. Ich hab null gelernt.', 'Raumwechsel ohne Ansage. Typisch.', 'Atmen hilft. Hab ich im Skills-Kurs gelernt.'],
+    5: ['Dieser Fake-Screenshot … glaubt das echt wer?', 'Drei Konten, dreißig Kommentare. Lächerlich.', 'Ich teil nix mehr ohne Quelle.'],
+    6: ['Klassenfoto heute! Ich hab meinen besten Pulli an.', 'Ich hab mich heute was getraut. Ganz klein.', 'Hast du schon mal Stopp gesagt? Echt jetzt?'],
+    7: ['Die 7P2 hat jetzt zwei Gruppen. Drama.', 'Luca hat eine neue Gruppe gemacht. Elf Leute.', 'Praktikum nächstes Jahr. Ich will in eine Bäckerei.'],
+    8: ['Das Video von Mme Tidderich ist KI! Hundert Pro.', 'Echt oder KI? Ich erkenn das nicht mehr.', 'Ich hab mein Konto auf privat gestellt.'],
+    9: ['Ich schlaf so schlecht. Handy bis zwei Uhr.', 'Ben hat einen Riesen-Würfel gebaut. Aus Pappe!', 'Meine Serie ist gerissen. Und? Lebe noch.'],
+    10: ['Letzte Woche! Ferien!', 'Sommerfest Freitag. Mit Lampions.', 'Nächstes Jahr 6ème. Wir sind dann die Großen.'],
+  };
   const sprueche_el = document.createElement('div'); sprueche_el.className = 'ly-bark'; sprueche_el.hidden = true; root.appendChild(sprueche_el);
   const _bv = new THREE.Vector3();
   let spruchNaechst = performance.now() + 4000, spruchWer = null, spruchBis = 0;
@@ -420,7 +432,10 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (!best) return;
     const r = welt.raumBei(best.p.x, best.p.z), rid = r ? r.id : 'draussen';
     const pool = best.d.skate ? SPRUECHE.skate : SPRUECHE[rid === 'kantine' || rid === 'gang' ? rid : best.p.z < -32 && best.p.z > -50 && !r ? 'innenhof' : 'draussen'] || SPRUECHE.draussen;
-    sprueche_el.textContent = pool[Math.floor(Math.random() * pool.length)];
+    // Die Welt redet über die Geschichte (Gerüchte, Ereignisse der Woche) – passend zum Kapitel, nicht nur Kulisse
+    const kap = (S && SCHRITTE[S.schritt] && SCHRITTE[S.schritt].kap) || 1, tk = TAGESGESPRAECH[kap];
+    const tpool = tk && !best.d.skate && rid !== 'kantine' && Math.random() < 0.35 ? tk : pool;
+    sprueche_el.textContent = tpool[Math.floor(Math.random() * tpool.length)];
     spruchWer = best; spruchBis = performance.now() + 3400;
     if (bd < 3.5 && best.d.steht && best.d.steht[3] === 'redet' && Math.random() < 0.6) { best.f.spiele('Wave'); setTimeout(() => best.f.spiele('Interact', { tempo: 0.35 }), 2400); }
   }
@@ -1302,6 +1317,10 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   // ---------- Schritte ----------
   let busFaehrt = 0;   // 0 steht, 1 fährt los (weg), −1 fährt am Ende ab
   let startet = false;   // solange ein Schritt startet (Tagesrückblick, Teleport), lösen Orte nichts aus
+  // Inhaltshinweise je Kapitel (wie in großen Spielen): kurz, sachlich, mit Weg nach draußen
+  const INHALT = { 2: 'Heimliche Fotos, Auslachen im Klassenchat.', 3: 'Bloßstellen mit Fotos, Wut und Streit.', 4: 'Stress, Prüfungsangst, eine Panik-Situation.',
+    5: 'Ein gefälschter Chat, Gerüchte, harte Gedanken über sich selbst.', 6: 'Angst und kleine Mutproben, Grenzen setzen.', 7: 'Gruppendruck, Streit, Ausgrenzung.',
+    8: 'KI-Fakes, Bloßstellen im Netz, Likes und Selbstwert.', 9: 'Erschöpfung, Schlafmangel, ein Freund in einer Krise.', 10: 'Abschied, Entschuldigung, Versöhnung.' };
   async function starteSchritt(i, mitStart) {
     startet = true;
     try { await starteSchrittJetzt(i, mitStart); } finally { startet = false; }
@@ -1316,6 +1335,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       await ui.rueckblick(st.tag, st.kap !== vorher.kap ? kapName(st.kap) : 'Ein neuer Tag in der Annexe Junglinster.', eintraege);
       const b = besteFreunde()[0];
       if (b && st.kap !== vorher.kap) setTimeout(() => ui.toast('<b>' + LEUTE[b].name + ' (' + stufe(S.freund[b]) + ')</b><span>„' + GRUSS[b] + '“</span>', 'ly-t-herz'), 2500);
+      if (st.kap !== vorher.kap && INHALT[st.kap]) ui.toast('<b>ℹ️ In diesem Kapitel</b><span>' + INHALT[st.kap] + ' Wenn es zu viel wird: ☰ → Kurz raus.</span>');
     }
     sky.time.setTimeOfDay(st.uhr); ui.uhr(st.uhr, st.tag);
     // Schulklingel, wenn am selben Tag eine neue Stunde/Pause beginnt
@@ -1682,6 +1702,10 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   const sag = (wer, text) => ui.sprich({ ...sprecher(wer), text: ersetze(text) });
   ui.onHandschlag = () => { if (hsPartner) handschlagMit(hsPartner); };
   // Kleine Begegnungen (zufall.js): helfen, ehrlich sein, dazusetzen
+  // Bildschirm wach halten (Handy/Tablet), solange die Seite sichtbar ist – sonst geht beim Lesen das Licht aus
+  let wach = null;
+  const wachHalten = () => { try { if (document.visibilityState === 'visible' && navigator.wakeLock && !wach) navigator.wakeLock.request('screen').then((w) => { wach = w; w.addEventListener('release', () => { wach = null; }); }).catch(() => {}); } catch (e) { /* nicht unterstützt */ } };
+  document.addEventListener('visibilitychange', wachHalten); document.addEventListener('pointerdown', wachHalten, { once: true });
   const blase = (x, t, ms = 3200) => { sprueche_el.textContent = t; spruchWer = x; spruchBis = performance.now() + ms; spruchNaechst = performance.now() + ms + 2500; sprueche_el.hidden = false; try { audio.play('bubble'); } catch (e) { /* Ton */ } };
   const zufall = createZufall({ scene, steuerung, welt, statisten: () => statisten, blase, sag, waehle: (o) => ui.waehle(o), dialogZu: () => ui.dialogZu(), ton: (a) => ton(a), zustand: () => S, sichern: () => sichern(), toast: (t, a) => ui.toast(t, a) });
   async function handschlagMit(x) {
@@ -2085,8 +2109,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   await statistenLaden();
   await schritt(0.9, 'Gleich klingelt es …');
   // Start
-  async function los(neu, figur, name) {
-    if (neu) { S = neuerStand(name, figur); sichern(); }
+  async function los(neu, figur, name, abKap) {
+    if (neu) { S = neuerStand(name, figur); if (abKap > 1) S.schritt = Math.max(0, SCHRITTE.findIndex((x) => (x.kap || 1) === abKap)); sichern(); }
     await spielerFigur(S.figur);
     laeuft = true;
     if (S.fertig) {
@@ -2118,7 +2142,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     rede, los, audio, SITZ, input, get spruch() { return { wer: !!spruchWer }; }, get naechste() { return naechste && naechste.id; },
     get probe() { return probe; }, set mutTempo(v) { mutTempo = v; },
     daten: { SCHRITTE, STATISTEN, LEUTE, BLAETTER, MATHE, LEKTIONEN, GESPRAECHE }, ia, aktion, get iaNah() { return iaNah && iaNah.tu; },
-    hs, tt3d, zufall, get spieler() { return spieler; }, handschlagMit,
+    hs, tt3d, zufall, get spieler() { return spieler; }, handschlagMit, get statisten() { return statisten; },
   };
 
   onProgress(1, '');
@@ -2130,6 +2154,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   const plaetze = () => [1, 2, 3].map((p) => { const s2 = lies(p); return s2 && s2.name ? { name: s2.name, kap: (SCHRITTE[s2.schritt] || {}).kap || 1, fertig: !!s2.fertig, zeit: s2.zeit || 0 } : null; });
   const w = await ui.titel({ gespeichert: !!(S && S.name), figuren: FIGUREN, lehrer, platz, plaetze,
     wechsle: (p) => { platz = p; try { localStorage.setItem('lycee.platz', String(p)); } catch (e) { /* privat */ } S = neuStart(lies()); return !!(S && S.name); } });
-  if (w.weiter) await los(false); else await los(true, w.figur, w.name);
+  if (w.weiter) await los(false);
+  else await los(true, w.figur, w.name, w.kapitel);   // Lehrperson kann direkt in einem Kapitel starten
   return window.LYCEE;
 }
