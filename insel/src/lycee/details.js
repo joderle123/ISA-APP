@@ -254,7 +254,8 @@ export function baueDetails({ B, P, schilder, C, uhrTextur, extra, raeume, plaet
       && !plaetze.some((q) => Math.hypot(q.x - x, q.z - z) < r + 0.6) && !imRaum(x, z)
       && !(x > -108 && x < -64 && z > -38 && z < 22)            // Sportplatz mit Laufbahn
       && !(x > -47 && x < 47 && z > -3 && z < 41)              // gepflasterter Hof
-      && !(z > 39 && z < 57);                                   // Straße und Gehwege
+      && !(z > 39 && z < 57)                                    // Straße und Gehwege
+      && !(B.frei || []).some((f) => x + r > f.x0 && x - r < f.x1 && z + r > f.z0 && z - r < f.z1);   // Wege, Lichtung, Rue du Moulin (dorf.js)
     const setze = (m, x, z, h, opt = {}) => plaetze.push({ m, x, z, rot: rnd() * Math.PI * 2, h, ...opt });
     // Waldgürtel im Norden und Osten: hinten Kiefern, davor Laubbäume – die Schule liegt am Waldrand wie viele Schulen im Ösling/Müllerthal
     const wald = [];

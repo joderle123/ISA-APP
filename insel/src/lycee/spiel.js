@@ -18,6 +18,7 @@ import { baueWelt } from './welt.js';
 import { baueRequisiten, stelle } from './requisiten.js';
 import { baueNatur } from './natur.js';
 import { STAMM, stammSzene, stammPlan } from './stammgaeste.js';
+import { ORTE_UMLAND } from './dorf.js';
 import { createHund, HUND_ERSTMAL, HUND_MOMENTE } from './hund.js';
 import { ladePerson, namensschild, SITZ } from './figuren.js';
 import { fussSchatten, WOLKEN } from './texturen.js';
@@ -165,7 +166,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   const welt = baueWelt({ material, materialInnen, materialLaub });
   // Nächster echter Sitz (Stuhl, Bank, Kübelrand): Figuren sitzen AUF etwas – mit dessen Höhe und Richtung
   const sitzSuche = (x, z, r = 1.3) => { let best = null, bd = r; for (const q of welt.sitze || []) { const d = Math.hypot(q.x - x, q.z - z); if (d < bd) { bd = d; best = q; } } return best; };
-  Object.assign(welt.orte, ORTE2, ORTE3, ORTE4, ORTE6, ORTE_N3);
+  Object.assign(welt.orte, ORTE2, ORTE3, ORTE4, ORTE6, ORTE_N3, ORTE_UMLAND);
   let paket = ladePaket();   // Aufgaben der Lehrperson (Phase 2) oder Grundaufgaben
   scene.add(welt.gruppe);
   const sky = createSky({ scene, renderer: rr.renderer, audio, quality: { ...q, shadowSize: Math.min(q.shadowSize || 0, 2048), shadowSpan: 28 }, events });
@@ -1705,7 +1706,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (!S || imGespraech || !laeuft) return;
     const st = SCHRITTE[S.schritt], p = steuerung.pos;
     // Nur das Erdgeschoss-Gelände: Räume ohne „Stockwerk“-Angabe; doppelte Namen zusammen lassen
-    const MARKE = { bus: '🚌 Bus', hof: 'Schulhof', skateEcke: '🛹 Skate-Ecke', korbfeld: '🏀 Korb', tischtennis: '🏓 Tischtennis', sportplatz: '🏃 Sportplatz', innenhof: 'Innenhof', fahrrad: '🚲 Fahrräder', bank: 'Bank' };
+    const MARKE = { bus: '🚌 Bus', hof: 'Schulhof', skateEcke: '🛹 Skate-Ecke', korbfeld: '🏀 Korb', tischtennis: '🏓 Tischtennis', sportplatz: '🏃 Sportplatz', innenhof: 'Innenhof', fahrrad: '🚲 Fahrräder', bank: 'Bank', lichtung: '🌲 Lichtung', epicerie: '🛒 Épicerie', spielplatz: '🛝 Spielplatz', rueMoulin: 'Rue du Moulin' };
     // Stammgäste: mit 💬, solange diese Woche noch nicht besucht, bekannte mit Namen
     const kapK = (st && st.kap) || 1;
     const stammMarken = STAMM.map((q) => { const neu = !S.merke['stb_' + q.id + '_' + (Object.keys(q.besuch).map(Number).filter((k) => k <= kapK).sort((a, b) => b - a)[0])]; const wo = stammPlan(q, uhrJetzt).steht; return { x: wo[0], z: wo[1], t: (neu ? '💬 ' : '') + (S.merke['stk_' + q.id] ? q.name.split(' ')[0] : '?') }; });
