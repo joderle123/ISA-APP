@@ -317,7 +317,7 @@ export function baueCampus({ B, P, R, schilder, C, schild, uhrTextur, stuhl, bod
     box(x + 0.06, x + 1.5, h + 15.2, h + 16.1, z - 0.02, z + 0.02, hex('#e9c46a'));   // Fahne
     for (const [px, pz, ry] of [[x, z + b + 0.03, 0], [x - b - 0.03, z, -Math.PI / 2]]) {
       const u = new THREE.Mesh(new THREE.CircleGeometry(1.35, 32), new THREE.MeshBasicMaterial({ map: uhrTextur(), toneMapped: false }));
-      u.position.set(px, 16.4, pz); u.rotation.y = ry; schilder.push(u);
+      u.position.set(px, 16.4, pz); u.rotation.y = ry; u.name = 'wanduhr'; schilder.push(u);
       const ring = new THREE.TorusGeometry(1.42, 0.12, 6, 28); ring.rotateY(ry); ring.translate(px, 16.4, pz); geo(ring, C.gesims);
     }
   }

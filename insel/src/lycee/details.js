@@ -147,15 +147,15 @@ export function baueDetails({ B, P, schilder, C, uhrTextur, extra, raeume, plaet
   }
 
   // ---------- Wanduhren ----------
-  const uhr = (x, y, z, rot, r = 0.3) => {
+  const uhr = (x, y, z, rot, r = 0.3, name = 'wanduhr') => {   // Zeiger stellt spiel.js nach der Spielzeit (Hallenuhr: 3 Minuten nach)
     const t = uhrTextur();
     const face = new THREE.Mesh(new THREE.CircleGeometry(r, 32), new THREE.MeshBasicMaterial({ map: t, toneMapped: false }));
-    face.position.set(x, y, z); face.rotation.y = rot; face.translateZ(0.035); extra(face);
+    face.position.set(x, y, z); face.rotation.y = rot; face.translateZ(0.035); face.name = name; extra(face);
     const ring = new THREE.CylinderGeometry(r + 0.04, r + 0.04, 0.06, 28); ring.rotateX(Math.PI / 2); ring.rotateY(rot); ring.translate(x, y, z); geo(ring, hex('#2b3a55'), 'innen');
   };
   uhr(-29.76, 2.85, -23.9, Math.PI / 2); uhr(8.14, 2.85, -23.9, Math.PI / 2);   // über den Tafeln
   uhr(8.12, 2.6, -8, Math.PI / 2, 0.36);                                      // Kantine
-  uhr(0, 3.1, -2.24, Math.PI, 0.34);                                          // Halle über der Tür
+  uhr(0, 3.1, -2.24, Math.PI, 0.34, 'wanduhr-halle');                         // Halle über der Tür (Fernands Uhr, geht nach)
 
   // ---------- Säle: Ranzen an den Stühlen, Hefte und Mäppchen auf den Tischen ----------
   const ranzenFarben = ['#2b3a55', '#e85d75', '#3fa66b', '#2b2b33', '#e9b949', '#4f88c8', '#9b7bc8'].map(hex);

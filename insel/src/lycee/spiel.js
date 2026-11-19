@@ -410,6 +410,27 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     });
     stammUmsetzen(uhr);
   }
+  // Wanduhren zeigen die Spielzeit; die Uhr in der Halle geht drei Minuten nach – bis Fernand sie stellt (Stammgast, Kapitel 10)
+  const uhrBild = { jetzt: null, halle: null }, uhrFlaechen = [];
+  function zifferblatt(tex, h) {
+    const cv = tex.image, x = cv.getContext('2d'), m = ((h % 12) + 12) % 12;
+    x.clearRect(0, 0, 256, 256);
+    x.fillStyle = '#f4e8cc'; x.beginPath(); x.arc(128, 128, 124, 0, 7); x.fill(); x.strokeStyle = '#2d3d5c'; x.lineWidth = 10; x.stroke();
+    x.fillStyle = '#2d3d5c'; for (let i = 0; i < 12; i++) { const a = i / 12 * Math.PI * 2; x.fillRect(128 + Math.sin(a) * 100 - 4, 128 - Math.cos(a) * 100 - 4, 8, 8); }
+    const zeiger = (a, l, w) => { x.lineWidth = w; x.lineCap = 'round'; x.beginPath(); x.moveTo(128, 128); x.lineTo(128 + Math.sin(a) * l, 128 - Math.cos(a) * l); x.stroke(); };
+    x.strokeStyle = '#2d3d5c'; zeiger(m / 12 * Math.PI * 2, 55, 9); zeiger((h % 1) * Math.PI * 2, 92, 6);
+    x.fillStyle = '#c0392b'; x.beginPath(); x.arc(128, 128, 7, 0, 7); x.fill();
+    tex.needsUpdate = true;
+  }
+  function uhrenStellen(h, kap) {
+    if (!uhrBild.jetzt) {
+      for (const k of ['jetzt', 'halle']) { const cv = document.createElement('canvas'); cv.width = cv.height = 256; const t = new THREE.CanvasTexture(cv); t.colorSpace = THREE.SRGBColorSpace; uhrBild[k] = t; }
+      scene.traverse((o) => { if (o.isMesh && (o.name === 'wanduhr' || o.name === 'wanduhr-halle')) uhrFlaechen.push(o); });
+      for (const o of uhrFlaechen) { o.material.map = o.name === 'wanduhr-halle' ? uhrBild.halle : uhrBild.jetzt; o.material.needsUpdate = true; }
+    }
+    const gestellt = S && S.merke && S.merke.stb_fernand_10;
+    zifferblatt(uhrBild.jetzt, h); zifferblatt(uhrBild.halle, gestellt ? h : h - 3 / 60);
+  }
   // Tagesablauf der Stammgäste (stammgaeste.js: plan): bei jedem Schritt der Geschichte an den Ort der Uhrzeit setzen
   let uhrJetzt = 8;
   function stammUmsetzen(uhr) {
@@ -1468,7 +1489,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       if (b && st.kap !== vorher.kap) setTimeout(() => ui.toast('<b>' + LEUTE[b].name + ' (' + stufe(S.freund[b]) + ')</b><span>„' + GRUSS[b] + '“</span>', 'ly-t-herz'), 2500);
       if (st.kap !== vorher.kap && INHALT[st.kap]) ui.toast('<b>ℹ️ In diesem Kapitel</b><span>' + INHALT[st.kap] + ' Wenn es zu viel wird: ☰ → Kurz raus.</span>');
     }
-    sky.time.setTimeOfDay(st.uhr); ui.uhr(st.uhr, st.tag);
+    sky.time.setTimeOfDay(st.uhr); ui.uhr(st.uhr, st.tag); uhrenStellen(st.uhr, st.kap);
     // Schulklingel, wenn am selben Tag eine neue Stunde/Pause beginnt
     if (mitStart !== false && vorher && vorher.tag === st.tag && Math.abs(st.uhr - vorher.uhr) >= 0.4 && st.uhr < 16.5) setTimeout(() => { ui.toast('🔔 Es klingelt.'); try { audio.play('klingel'); } catch (e) { /* kein Ton */ } }, 600);
     ui.bingo(null);

@@ -213,7 +213,7 @@ export function baueWelt({ material, materialInnen, materialLaub }) {
   const turmDach = new THREE.ConeGeometry(2.6, 3.4, 4).toNonIndexed(); turmDach.rotateY(Math.PI / 4); turmDach.translate(0, HAUS_H + 8.2, Z1 - 1.7);
   { const n = turmDach.attributes.position.count, col = new Float32Array(n * 3); for (let i = 0; i < n; i++) { col[i * 3] = C.schiefer.r; col[i * 3 + 1] = C.schiefer.g; col[i * 3 + 2] = C.schiefer.b; } turmDach.setAttribute('color', new THREE.BufferAttribute(col, 3)); turmDach.deleteAttribute('uv'); B.teile.fest.push(turmDach); }
   const uhr = new THREE.Mesh(new THREE.CircleGeometry(1.0, 32), new THREE.MeshBasicMaterial({ map: uhrTextur(), toneMapped: false }));
-  uhr.position.set(0, HAUS_H + 3.6, Z1 - 0.17); schilder.push(uhr);
+  uhr.position.set(0, HAUS_H + 3.6, Z1 - 0.17); uhr.name = 'wanduhr'; schilder.push(uhr);
 
   // Innen: Boden, Decke, Innenwände (Erdgeschoss)
   const Y = DECKE;
