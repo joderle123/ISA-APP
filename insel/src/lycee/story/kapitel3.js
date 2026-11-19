@@ -90,7 +90,7 @@ const SYNCHRON = {
     wut: [F.jo, 'Siehste. So hab ich’s gemeint. Danke.'],
     angst: [F.mila, 'Angst? Wovor? … Vor Montag. Verstehe. Alle reden darüber.'],
     ekel: [F.ayla, 'Haha, wie Kantinen-Fisch. Perfekt.'],
-    ueberraschung: [F.mila, 'Überraschung ist statistisch falsch. Wir waren immer Letzte.'],
+    ueberraschung: [F.mila, 'Überraschung passt nicht. Wir waren immer Letzte.'],
   },
 };
 
@@ -289,7 +289,7 @@ export const GESPRAECHE_N3 = {
   ],
   n3_klasse: [
     ['hoffmann', 'Ich hab das Foto gesehen. Herr Kuedes auch.'],
-    ['hoffmann', 'Mila ist bei ihm. Sie kommt, wenn sie will.'],
+    ['hoffmann', 'Mila war bei ihm. Sie wollte wieder rein. Das entscheidet sie.'],
     ['hoffmann', 'Der Account ist gemeldet. Von der Schule. Heute.'],
     ['hoffmann', 'Wer mehr weiß: Bürotür. Nicht der Chat.'],
     ['erzaehler', 'Keiner redet. Alle sind angespannt. Du guckst dich um.'],
@@ -300,6 +300,20 @@ export const GESPRAECHE_N3 = {
         gut: { staerke: 'lesen' },
         schwer: { dann: [['erzaehler', 'Gesichter sind schwer heute. Alle tragen eine Maske.']] },
       } },
+    // Der leere Platz ist wieder besetzt – aber Mila ist noch nicht „da“. Kleine Geste statt großer Rede.
+    ['erzaehler', 'Mila sitzt zwei Plätze weiter. Kapuze auf. Sie schaut auf den Tisch.'],
+    { wahl: [
+      { t: '(Den Würfel zurückschieben. Nichts sagen.)', wenn: (m) => m.wuerfelMit, staerke: 'einbeziehen', herz: { mila: 2 }, merke: 'wuerfelZurueck', dann: [
+        ['erzaehler', 'Der Würfel rollt über den Tisch. Bleibt bei der Sechs liegen.'],
+        ['erzaehler', 'Mila nimmt ihn. Dreht ihn einmal. Die Kapuze bleibt auf. Aber ihre Schultern gehen runter.']] },
+      { t: '(Ein Zettel: „Keine Antwort nötig. Ich bin auf deiner Seite.“)', staerke: 'einbeziehen', herz: { mila: 1 }, merke: 'milaZettel', dann: [
+        ['erzaehler', 'Sie liest ihn unter dem Tisch. Faltet ihn klein. Steckt ihn ein.']] },
+      { t: '(In Ruhe lassen. Sie hat genug Blicke heute.)', staerke: 'lesen', merke: 'milaRuhe', dann: [
+        ['erzaehler', 'Du schaust nach vorne. Wie alle anderen auch. Das ist manchmal das Netteste.']] },
+      { t: '„Mila, alles okay?“ (laut, vor allen)', merke: 'milaLaut', dann: [
+        ['erzaehler', 'Zwanzig Köpfe drehen sich um. Mila zieht die Kapuze tiefer.'],
+        ['mila', '(leise) Ja. Alles super.']] },
+    ] },
   ],
   n3_sportMorgen: [
     ['erzaehler', 'Freitag. Sportfest. Die ganze Annexe auf dem Platz.'],
@@ -346,10 +360,31 @@ export const GESPRAECHE_N3 = {
         eins: { dann: [['noah', 'Nur eins? Bei mir ist alles gleichzeitig. Wie Ben in der Pause.']] },
       } },
     { tu: 'n3_ende' },
+    { tu: 'n3_fragen' },
   ],
 };
 
 export const tunN3 = (c) => ({
+  // Jugendwelt heute: anonyme Fragen in der Story. Erst Spaß, dann ein Satz, der trifft.
+  n3_fragen: () => {
+    const m = c.S.merke;
+    const vorher = m.aylaPostBleibt ? [['ayla', 'Übrigens: Mein Schlagzeug-Video hat jetzt 31. Egal. Ich hab ein neues.']]
+      : m.aylaPostWeg ? [['ayla', 'Ich hab mein Video neu hochgeladen. Nur für enge Freunde.'], ['ayla', 'Fühlt sich besser an.']] : [];
+    return [...vorher,
+      ['erzaehler', 'Jo hält sein Handy hoch. In seiner Story: „Stell mir eine Frage 👀 anonym“.'],
+      ['jo', 'Zwölf Fragen schon! Ich bin berühmt.'],
+      ['erzaehler', 'Er scrollt. Sein Grinsen wird kleiner.'],
+      ['erzaehler', 'Anonym: „warum bist du so peinlich lol“'],
+      ['erzaehler', 'Anonym: „keiner mag dich wirklich“'],
+      ['jo', '(lacht zu laut) Haha. Spaßvögel.'],
+      { wahl: [
+        { t: '„Anonym heißt: Die trauen sich nicht mit Namen.“', staerke: 'klar', herz: { jo: 2 }, merke: 'joAnonymKlar', dann: [['jo', '(guckt hoch) … Stimmt eigentlich. Feige.'], ['jo', 'Ich lösch den Sticker.']] },
+        { t: '(leise) „Das Zweite. Das tut weh, oder?“', staerke: 'zuhoeren', herz: { jo: 2 }, merke: 'joAnonymGefragt', dann: [['jo', '(lange Pause) … Bisschen.'], ['jo', 'Melden geht, oder? Mach ich.']] },
+        { t: '(Mitlachen.)', merke: 'joAnonymGelacht', dann: [['erzaehler', 'Jo lacht mit. Dann steckt er das Handy weg.'], ['erzaehler', 'Den Rest der Pause sagt er fast nichts.']] },
+      ] },
+      ['ayla', 'Anonyme Fragen sind wie Tauben. Meistens harmlos. Manchmal lassen sie was fallen.'],
+    ];
+  },
   n3_milaStart: () => (c.S.merke.milaPrivat ? [['mila', 'Du bist allein gekommen. Gut.']] : c.S.merke.milaGestoppt ? [['mila', 'Du hast im Chat was geschrieben. Ayla hat es mir gezeigt.']]
     : c.S.merke.milaGelacht ? [['mila', 'Du hast gelacht. Warum bist du hier?'], ['erzaehler', 'Sie guckt dich nicht an.']] : [['mila', '(guckt kurz hoch) Oh. Du.']]),
   n3_wandBilanz: () => {

@@ -32,7 +32,7 @@ for (const [k, v] of Object.entries(F)) C[k] = Array.isArray(v) ? v.map((x) => n
 
 // ---------- Baukasten ----------
 function baukasten() {
-  const teile = { fest: [], innen: [], glas: [], licht: [] };   // fest: wirft Schatten · innen: Innenausbau (kein Schatten)
+  const teile = { fest: [], innen: [], glas: [], licht: [], laub: [] };   // fest: wirft Schatten · innen: Innenausbau (kein Schatten)
   const kasten = [], alle = [], sitze = [];   // sitze: wo man sich hinsetzen kann { x, z, rot }   // alle: jeder Kasten (für die Prüfung „Kann man durchlaufen?“)
   function box(x0, x1, y0, y1, z0, z1, farbe, { art = 'fest', stoss = false, kanten = null } = {}) {
     if (x1 - x0 < 0.001 || y1 - y0 < 0.001 || z1 - z0 < 0.001) return;
@@ -91,7 +91,7 @@ export function schild(text, breite, hoehe, opt = {}) {
   return m;
 }
 
-export function baueWelt({ material, materialInnen }) {
+export function baueWelt({ material, materialInnen, materialLaub }) {
   const B = baukasten();
   const { box, wand } = B;
   const gruppe = new THREE.Group(); gruppe.name = 'lycee-welt';
@@ -507,13 +507,13 @@ export function baueWelt({ material, materialInnen }) {
   if (details.tischtennis) orte.tischtennis = { ...details.tischtennis, yaw: Math.PI / 2 };
 
   // Netze zusammenfassen: fest (wirft Schatten), innen (Innenausbau, Böden, kein Schatten), glas
-  for (const [art, mat] of [['fest', material], ['innen', materialInnen || material], ['glas', null], ['licht', new THREE.MeshBasicMaterial({ vertexColors: true, toneMapped: false })]]) {
+  for (const [art, mat] of [['fest', material], ['laub', materialLaub || material], ['innen', materialInnen || material], ['glas', null], ['licht', new THREE.MeshBasicMaterial({ vertexColors: true, toneMapped: false })]]) {
     if (!B.teile[art].length) continue;
     const mm = mat || glasMaterial();
     for (const g of zellenMerge(B.teile[art], 28)) {
       const m = new THREE.Mesh(g, mm);
       m.name = 'welt-' + art;
-      m.castShadow = art === 'fest'; m.receiveShadow = art === 'fest' || art === 'innen';
+      m.castShadow = art === 'fest' || art === 'laub'; m.receiveShadow = art === 'fest' || art === 'innen' || art === 'laub';
       gruppe.add(m);
     }
   }
@@ -521,9 +521,9 @@ export function baueWelt({ material, materialInnen }) {
   for (const m of extras) gruppe.add(m);
   // Gemalte Oberflächen: Verbundpflaster auf Hof und Wegen, Rasen, Asphalt (texturen.js)
   const tP = pflaster(), tR = rasen(), tA = asphalt();
-  gruppe.add(flaeche(tR, -110, 110, -120, 80, 0.003, 6));
-  gruppe.add(flaeche(tA, -110, 110, 44, 52, 0.021, 4));
-  gruppe.add(flaeche(tP, -46, 46, -2, 40.5, 0.0615, 8));
+  gruppe.add(flaeche(tR, -110, 110, -120, 80, 0.003, 6, { wolken: true }));
+  gruppe.add(flaeche(tA, -110, 110, 44, 52, 0.021, 4, { wolken: true }));
+  gruppe.add(flaeche(tP, -46, 46, -2, 40.5, 0.0615, 8, { wolken: true }));
   gruppe.add(flaeche(tP, 46, 62, -4, 2, 0.0615, 8));
   gruppe.add(flaeche(tP, -62, -46, -4, 2, 0.0615, 8));
   const tD = dielen(), fl = {}, bl = [];
@@ -541,7 +541,7 @@ export function baueWelt({ material, materialInnen }) {
   // Bänke (Modelle): zwei Plätze je Bank, Blick weg von der Lehne
   for (const p of plaetze) if (p.m === 'skate/bench') {
     const yaw = p.rot + Math.PI, fx = Math.sin(yaw), fz = Math.cos(yaw);
-    for (const q of [-0.55, 0.55]) B.sitze.push({ x: p.x - fx * 0.6 + fz * q, z: p.z - fz * 0.6 - fx * q, rot: yaw, bank: true });
+    for (const q of [-0.55, 0.55]) B.sitze.push({ x: p.x + fz * q, z: p.z - fx * q, rot: yaw, bank: true, h: 0.46 });   // Sitzpunkt AUF der Bank (vorher 60 cm dahinter)
   }
   for (const x of [-23.2, -22, -20.8]) B.sitze.push({ x, z: 41.85, rot: 0, bank: true });   // Bushaltestelle
   const raumBei = (x, z) => raeume.find((r) => x > r.x0 && x < r.x1 && z > r.z0 && z < r.z1) || null;
@@ -579,7 +579,7 @@ function stuhl(B, x, z, rot, farbe) {
     B.box(wx - hx, wx + hx, y0, y1, wz - hz, wz + hz, f, { art: 'innen' });
   };
   B.kasten.push({ x0: x - 0.2, x1: x + 0.2, z0: z - 0.2, z1: z + 0.2, y0: 0, y1: 0.95 });   // Stuhl: nicht hindurchlaufen
-  if (B.sitze) B.sitze.push({ x, z, rot });
+  if (B.sitze) B.sitze.push({ x, z, rot, h: 0.49 });
   const m = new THREE.Color('#8d96a3');
   for (const [lx, lz] of [[-0.19, -0.17], [0.19, -0.17], [-0.19, 0.17], [0.19, 0.17]]) teil(lx, lz, 0.035, 0.035, 0.06, 0.45, m);
   teil(0, 0, 0.44, 0.42, 0.45, 0.5, farbe);

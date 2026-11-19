@@ -38,8 +38,8 @@ export const SCHRITTE_N5 = [
 const FAKE = (m) => ({
   titel: '7P2 😎 (offiziell)', mitglieder: 19, dauer: 38,
   nachrichten: [
-    { nach: 0.5, system: true, text: 'Luca hat ein Bild geteilt.' },
-    { nach: 1.4, wer: 'Luca', bild: 'Profil @annexe.cam · Admin: {name}', text: 'wer ist admin?? 👀👀', lacher: { start: 3, proSek: 0.5, stopp: 'gestoppt' } },
+    { nach: 0.5, system: true, text: 'Ein neues Konto „7p2.news“ ist der Gruppe beigetreten. Es teilt ein Bild.' },
+    { nach: 1.4, wer: '7p2.news', bild: 'Profil @annexe.cam · Admin: {name}', text: 'wer ist admin?? 👀👀', lacher: { start: 3, proSek: 0.5, stopp: 'gestoppt' } },
     { nach: 3.4, wer: 'Jo', text: 'NEIN. wallah?? 😳' },
     { nach: 5.4, wer: 'Luca', text: 'wusst ich’s. lowkey hab ich’s immer gewusst' },
     { nach: 7.6, wer: 'Ben', text: 'warte. was? 😶', wennNicht: 'benZweifelt' },
@@ -57,7 +57,7 @@ const FAKE = (m) => ({
       { t: '„Wer hat das gemacht? Sagt’s mir ins Gesicht.“', setzt: ['angriff'], ich: 'wer hat das gemacht? sagt’s mir ins gesicht', folgen: [{ nach: 1.4, wer: 'Luca', text: 'chill. ist doch nur ne frage' }] },
     ] },
     { id: 'raus', t: 'Gruppe verlassen', symbol: '🚪', setzt: 'raus', sys: 'Du hast die Gruppe verlassen. Erst mal Ruhe.', ende: true },
-    { id: 'beweis', t: 'Screenshot an Herrn Kuedes', symbol: '📸', setzt: 'kuedes', sys: 'Gesendet an Herrn Kuedes.', folgen: [{ nach: 2.4, wer: 'Herr Kuedes (privat)', text: 'Hab’s. Liegt schon bei der Direktion. Du bist nicht allein.' }] },
+    { id: 'beweis', t: 'Screenshot an Herrn Kuedes', symbol: '📸', setzt: 'kuedes', sys: 'Gesendet an Herrn Kuedes.', folgen: [{ nach: 2.4, wer: 'Herr Kuedes (Schul-Postfach)', text: 'Eingang bestätigt. Liegt morgen früh bei der Direktion. Du bist nicht allein.' }] },
     { id: 'stumm', t: 'Handy weg', symbol: '🔕', setzt: 'stumm', sys: 'Handy in der Tasche. Es vibriert. Du lässt es.', ende: true },
   ],
 });
@@ -187,6 +187,14 @@ export const GESPRAECHE_N5 = {
       } },
   ],
   n5_saal: [
+    // „Wohin setzen?“ – nach dem Fake (Montag früh): Körpersprache lesen, Platz wählen. Die Stimmung an der Tür färbt den Blick.
+    { tu: 'n5_saalBlick' },
+    { wahl: [
+      { t: '(Zu Ben. Er nimmt schon seine Jacke vom Stuhl.)', staerke: 'kontakt', herz: { ben: 1 }, merke: 'saalBen', dann: [['ben', '(leise) Platz für Nuggets-Typen. Reserviert.']] },
+      { t: '(Zu Mila. Sie schiebt dir wortlos ihr Lineal rüber.)', staerke: 'lesen', herz: { mila: 1 }, merke: 'saalMila', dann: [['mila', '(flüstert) Nicht umdrehen. Luca guckt. Lass ihn gucken.']] },
+      { t: '(Hinten allein. Rücken zur Wand.)', merke: 'saalHinten', dann: [['erzaehler', 'Von hier siehst du alle. Und keiner sieht dich an. Das ist sicher. Und einsam.'], ['noah', '(dreht sich um, formt mit dem Mund) Alles okay?']] },
+      { t: '(Direkt neben Luca. Sollen alle sehen, dass du keine Angst hast.)', wenn: (m) => m.tuerWut || m.tuerKlar, staerke: 'mut', merke: 'saalLuca', dann: [['luca', '(rutscht ein Stück weg) … Was?'], ['erzaehler', 'Er sagt die ganze Stunde nichts mehr.']] },
+    ] },
     ['hoffmann', 'Ça va? Screenshot gesehen. Ich urteile nicht ohne Fakten.'],
     ['hoffmann', 'Wer ihn weiterschickt: nach der Stunde zu mir.'],
     ['erzaehler', 'Drei Handys verschwinden ganz schnell in drei Taschen.'],
@@ -205,7 +213,7 @@ export const GESPRAECHE_N5 = {
     { szene: 'bohnen', id: 'bohnen', def: BOHNEN, ausgang: (r) => (r.bohnen.some((n) => n > 0) ? 'gelegt' : 'leer'),
       folgen: { gelegt: { merke: 'bohnenGelegt' }, leer: { merke: 'bohnenLeer' } } },
     ['ben', 'Neun Bohnen bei „Die anderen sind besser“. Wer sind die?'],
-    ['mila', 'Statistisch: wir alle. Gegenseitig.'],
+    ['mila', 'Ich hab gezählt: wir alle. Gegenseitig.'],
     ['kaya', 'Mission: Fangt einen Satz ein. Wie eine Fliege.'],
     ['mesenberg', 'Wenn ein Satz sehr laut ist: Bürotür ist offen. Oder 116 111.'],
   ],
@@ -223,6 +231,14 @@ export const GESPRAECHE_N5 = {
         gleich: { herz: { mila: 1 }, dann: [['mila', 'Dein Bauch hört nicht auf Fakten. Typisch Bauch. Er braucht Zeit.']] },
       } },
     { tu: 'n5_detektivSpur' },
+    // Jugendwelt heute: 30 Kommentare fühlen sich an wie „alle“. Mila zählt die Konten.
+    ['mila', 'Noch was. Unter dem Fake stehen 30 Kommentare.'],
+    ['mila', 'Es wirkt, als wäre die ganze Schule gegen dich.'],
+    ['mila', 'Ich hab sie sortiert. Es sind drei Konten. Drei.'],
+    { wahl: [
+      { t: '„Drei? Es hat sich angefühlt wie alle.“', staerke: 'lesen', herz: { mila: 1 }, merke: 'lawineGezaehlt', dann: [['mila', 'So funktioniert das. Laut sein ist nicht viele sein.']] },
+      { t: '„Und die 200, die nichts geschrieben haben?“', staerke: 'klar', herz: { mila: 1 }, merke: 'lawineGezaehlt', dann: [['mila', 'Genau. Die meisten schweigen. Schweigen ist nicht Zustimmung.']] },
+    ] },
   ],
   n5_satz: [
     ['noah', 'Platz frei gehalten. Mit einer Banane. Sie hat Respekt.'],
@@ -263,6 +279,16 @@ export const GESPRAECHE_N5 = {
 export const tunN5 = (c) => ({
   n5_benStart: () => (c.S.merke.fakeAngriff ? [['ben', 'Du hast Luca im Chat angeschrien. Verständlich.'], ['ben', 'Aber er feiert das jetzt.']]
     : c.S.merke.fakeRaus ? [['ben', 'Du bist raus. Verstehe ich.'], ['ben', 'Ich sag dir, was läuft. Wenn du willst.']] : []),
+  n5_saalBlick: () => {
+    const m = c.S.merke;
+    const blick = m.tuerAngst ? [['erzaehler', 'Die Tür geht auf. Es wird still. Alle schauen. Zumindest fühlt es sich so an.'], ['erzaehler', 'Angst macht jeden Blick größer. Schau genauer hin.']]
+      : m.tuerWut ? [['erzaehler', 'Die Tür knallt gegen die Wand. Ups. Jetzt schauen wirklich alle.']]
+      : [['erzaehler', 'Du gehst rein. Ruhig. Ein paar schauen kurz hoch. Dann wieder runter.']];
+    return [...blick,
+      ['erzaehler', 'Luca grinst ins Handy. Ayla stellt ihre Tasche auf den freien Stuhl. Und nimmt sie wieder runter.'],
+      ['erzaehler', 'Ben hebt die Jacke von seinem Nebenplatz. Mila schaut nicht hoch. Aber sie rückt ein Stück.'],
+      ['erzaehler', 'Wohin setzt du dich?']];
+  },
   n5_saalBilanz: () => (c.S.merke.fakeKuedes ? [['hoffmann', '(leise zu dir) Herr Kuedes sagt, du hast ihm geschrieben.'], ['hoffmann', 'Gut gemacht.']] : []),
   n5_detektivSpur: () => [
     ['mila', 'Und noch was. Der Fake ist mit einer App gebaut.'],

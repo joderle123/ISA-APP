@@ -228,7 +228,7 @@ export function baueDetails({ B, P, schilder, C, uhrTextur, extra, raeume, plaet
     for (let k = 0; k < n; k++) {
       const a = (k + seed) * 2.1, rr = (k === 0 ? 0 : 0.75 + ((k * 7 + seed) % 3) * 0.15) * s;
       const g = new THREE.IcosahedronGeometry((k === 0 ? 1.3 : 0.95 + ((k + seed) % 3) * 0.12) * s, 1);
-      g.translate(x + Math.sin(a) * rr, h * 0.62 + (k === 0 ? 0.5 : ((k * 3 + seed) % 4) * 0.28) * s, z + Math.cos(a) * rr); geo(g, blatt[(k + seed) % blatt.length]);
+      g.translate(x + Math.sin(a) * rr, h * 0.62 + (k === 0 ? 0.5 : ((k * 3 + seed) % 4) * 0.28) * s, z + Math.cos(a) * rr); geo(g, blatt[(k + seed) % blatt.length], 'laub');
     }
   };
   // Die kantigen Kegelbäume aus dem Paket durch diese Laubbäume ersetzen (gleicher Ort, Stamm bleibt fest)
@@ -247,7 +247,7 @@ export function baueDetails({ B, P, schilder, C, uhrTextur, extra, raeume, plaet
     box(x - 1.3, x + 1.3, 0, 0.5, z - 1.3, z + 1.3, C.sandsteinDunkel, { stoss: true });
     box(x - 1.15, x + 1.15, 0.5, 0.54, z - 1.15, z + 1.15, C.erde);
     box(x - 1.42, x + 1.42, 0.5, 0.56, z - 1.42, z - 1.18, C.holz); box(x - 1.42, x + 1.42, 0.5, 0.56, z + 1.18, z + 1.42, C.holz);   // Sitzkante
-    for (const s of [-1, 1]) for (const q of [-0.6, 0.6]) B.sitze.push({ x: x + q, z: z + s * 1.62, rot: s > 0 ? 0 : Math.PI, bank: true });
+    for (const s of [-1, 1]) for (const q of [-0.6, 0.6]) B.sitze.push({ x: x + q, z: z + s * 1.3, rot: s > 0 ? 0 : Math.PI, bank: true, h: 0.56 });   // Sitzkante 0,5–0,56 m
     for (let k = 0; k < 6; k++) { const g = new THREE.IcosahedronGeometry(0.22 + (k % 3) * 0.05, 0); g.translate(x - 0.8 + (k % 3) * 0.8, 0.66, z + (k < 3 ? -0.7 : 0.7)); geo(g, k % 2 ? C.gruen : hex('#2e7d4f')); }
     baum(x, z, 4.8 + (nr % 3) * 0.6, nr);
   }

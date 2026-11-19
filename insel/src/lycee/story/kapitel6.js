@@ -46,14 +46,14 @@ const ABSTAND = {
 
 // ---------- Ich-Botschaft bauen (E21) ----------
 const ICH = {
-  wo: 'Aula · Ich-Botschaft', titel: '🧩 Ich-Botschaft', altTitel: 'Situation',
-  alt: 'Jemand nimmt dauernd dein Ladekabel. Ohne zu fragen.',
+  wo: 'Aula · Nur im Kopf', titel: '🧩 Was würdest du Jo sagen?', altTitel: 'Situation',
+  alt: 'Jo hat eine Sprachnachricht über dich gemacht. Zum Lachen. In einer fremden Gruppe.',
   regeln: [['ich', 'Ich statt Du'], ['gefuehl', 'Gefühl gesagt'], ['grund', 'Grund gesagt'], ['wunsch', 'klarer Wunsch']],
   teile: [
-    [{ t: 'Wenn du mein Kabel ohne Fragen nimmst,', regeln: { ich: true } }, { t: 'Du nimmst immer alles,', regeln: { ich: false } }, { t: 'Du Dieb,', regeln: { ich: false, gefuehl: false } }],
-    [{ t: 'ärgere ich mich,', regeln: { gefuehl: true } }, { t: 'fühl ich mich von dir veräppelt,', regeln: { ich: false, gefuehl: false } }, { t: 'ist mir das egal,', regeln: { gefuehl: false } }],
-    [{ t: 'weil mein Handy dann leer ist.', regeln: { grund: true } }, { t: 'weil du halt so bist.', regeln: { grund: false, ich: false } }, { t: 'weil das alle sagen.', regeln: { grund: false } }],
-    [{ t: 'Frag mich bitte vorher.', regeln: { wunsch: true } }, { t: 'Hör einfach auf!', regeln: { wunsch: false } }, { t: 'Mach doch, was du willst.', regeln: { wunsch: false } }],
+    [{ t: 'Als ich die Sprachnachricht gehört hab,', regeln: { ich: true } }, { t: 'Du machst immer Witze über mich,', regeln: { ich: false } }, { t: 'Du Verräter,', regeln: { ich: false, gefuehl: false } }],
+    [{ t: 'war ich echt verletzt,', regeln: { gefuehl: true } }, { t: 'hast du mich voll blamiert,', regeln: { ich: false, gefuehl: false } }, { t: 'war mir das egal,', regeln: { gefuehl: false } }],
+    [{ t: 'weil ich dachte, wir sind Freunde.', regeln: { grund: true } }, { t: 'weil du halt so bist.', regeln: { grund: false, ich: false } }, { t: 'weil das alle sagen.', regeln: { grund: false } }],
+    [{ t: 'Sag mir, was da los war.', regeln: { wunsch: true } }, { t: 'Lösch dich einfach.', regeln: { wunsch: false } }, { t: 'Mach doch, was du willst.', regeln: { wunsch: false } }],
   ],
 };
 
@@ -91,6 +91,16 @@ const STOPP = {
 
 export const GESPRAECHE_N6 = {
   n6_morgen: [
+    // Jugendwelt heute: Nachrichten, die sich selbst löschen – und künstliche Eile um 23:40.
+    ['erzaehler', 'Sonntag, 23:40. Eine Nachricht, die sich nach dem Lesen löscht.'],
+    ['erzaehler', 'Kenan: „antworte JETZT. wer nicht antwortet, ist raus.“'],
+    ['erzaehler', 'Darunter ein Zähler. 10 … 9 … 8 …'],
+    { wahl: [
+      { t: '(Schnell antworten: „bin da!!“)', merke: 'jetztGeantwortet', dann: [['erzaehler', 'Kenan: „gut 😂 test bestanden“.'], ['erzaehler', 'Du liegst noch eine Stunde wach.']] },
+      { t: '(Handy umdrehen. Schlafen.)', staerke: 'abstand', merke: 'jetztGeschlafen', dann: [['erzaehler', 'Morgens ist die Nachricht weg. Du bist nicht raus. Es war ein Test.']] },
+      { t: '(Screenshot machen.)', staerke: 'hilfe', merke: 'jetztScreenshot', dann: [['erzaehler', '„Du hast einen Screenshot gemacht.“ Kenan sieht das.'], ['erzaehler', 'Er schreibt nichts mehr.']] },
+    ] },
+    ['erzaehler', 'Was um 23:40 „dringend“ ist, ist es fast nie.'],
     ['erzaehler', 'Montag. Klassenfoto. Ben hat seinen besten Pulli an. Er hat nur einen.'],
     ['mila', '(leise) Morgen Mittag. CDI. Mit Beweis.'],
   ],
@@ -125,13 +135,13 @@ export const GESPRAECHE_N6 = {
       { t: '„Den Worten. Er hat’s ja gesagt.“', dann: [['ben', 'Bro. Ich hab gespielt, als wär mein Hund weg.'], ['kaya', 'Darum fragen wir nach, wenn es nicht passt.']] },
     ] },
     ['kaya', 'Darum ist Schreiben so schwierig. Im Chat fehlen Stimme und Körper.'],
-    ['kaya', 'Jetzt kommt ein Ladekabel ins Spiel. Ein geklautes.'],
-    ['mesenberg', 'Es ist meins. Und es wird ständig geklaut. Echte Situation.'],
+    ['kaya', 'Jetzt üben wir an etwas Echtem.'],
+    ['kaya', 'Nur im Kopf. Niemand muss es sagen.'],
     { szene: 'satz', id: 'ichSatz', def: ICH, ausgang: (r) => (r.regeln >= 4 ? 'stark' : r.regeln >= 2 ? 'mittel' : 'schwach'),
       folgen: {
-        stark: { staerke: 'klar', merke: 'ichBotschaft', dann: [['mesenberg', '(gibt dir das Kabel) Das würde ich sofort verstehen. Und mich entschuldigen.']] },
+        stark: { staerke: 'klar', merke: 'ichBotschaft', dann: [['mesenberg', 'Diesen Satz könnte man genau so sagen. Vielleicht sogar heute.']] },
         mittel: { merke: 'ichBotschaft', dann: [['mesenberg', 'Fast. Ein Teil klingt noch wie ein Vorwurf. Vorwürfe machen Ohren zu.']] },
-        schwach: { dann: [['mesenberg', 'Hm. Da würde ich mein Kabel festhalten und gehen.'], ['mesenberg', 'Probier’s nochmal im Kopf.']] },
+        schwach: { dann: [['mesenberg', 'Hm. Da würde Jo dichtmachen. Vorwürfe machen Ohren zu.'], ['mesenberg', 'Probier’s nochmal im Kopf.']] },
       } },
     ['kaya', 'Mission: Einmal sagen, was du fühlst. Und was du dir wünschst.'],
   ],
@@ -150,16 +160,7 @@ export const GESPRAECHE_N6 = {
   n6_jo: [
     ['jo', '(wirft. Daneben.) … Mila hat dir die Sprachnachricht gezeigt. Oder?'],
     { tu: 'n6_joStart' },
-    { wahl: [
-      { t: '„Du bist so ein Verräter. Echt jetzt.“', herz: { jo: -2 }, merke: 'joDuBotschaft', dann: [
-        ['jo', 'VERRÄTER? Ich hab geschrieben: Mach das nicht!'],
-        ['erzaehler', 'Jo wirft den Ball gegen das Brett. Sehr hart.'],
-        ['jo', '… Sorry. Okay. Du hast recht, sauer zu sein.'] ] },
-      { t: '„Ey. Das hat mich echt verletzt. Ich will’s verstehen.“', staerke: 'klar', herz: { jo: 2 }, merke: 'joIchBotschaft', dann: [
-        ['jo', '(lässt den Ball fallen) … Wir SIND Freunde.'],
-        ['jo', 'Das war ein dummer Witz. Ich hab nicht gedacht, dass er’s macht.'] ] },
-      { t: '(Nichts sagen. Warten.)', staerke: 'warten', herz: { jo: 1 }, dann: [['erzaehler', 'Jo dribbelt. Einmal. Zweimal. Dann redet er von allein.'], ['jo', 'Ich hab Mist gebaut. Mit einem Satz.']] },
-    ] },
+    { tu: 'n6_joWahl' },
     ['jo', 'Luca hat gelacht. Alle haben gelacht. Ich auch.'],
     ['jo', 'Dann war der Satz draußen. Zack. Fehlstart.'],
     { wahl: [
@@ -200,6 +201,19 @@ export const GESPRAECHE_N6 = {
 };
 
 export const tunN6 = (c) => ({
+  // Wer in Skills einen guten Satz gebaut hat, kann ihn jetzt wirklich sagen
+  n6_joWahl: () => { const r = (c.S.sz || {}).ichSatz; const eigen = r && r.regeln >= 3 && r.satz ? [
+    { t: '„' + r.satz + '“ (dein Satz)', staerke: 'klar', herz: { jo: 3 }, merke: ['joIchBotschaft', 'eigenerSatz'], dann: [['jo', '(lässt den Ball fallen) … Okay. Das sitzt.'], ['jo', 'Wir SIND Freunde. Das war ein dummer Witz.'], ['jo', 'Ich hab nicht gedacht, dass er’s macht.']] }] : [];
+    return [{ wahl: [...eigen,
+      { t: '„Du bist so ein Verräter. Echt jetzt.“', herz: { jo: -2 }, merke: 'joDuBotschaft', dann: [
+        ['jo', 'VERRÄTER? Ich hab geschrieben: Mach das nicht!'],
+        ['erzaehler', 'Jo wirft den Ball gegen das Brett. Sehr hart.'],
+        ['jo', '… Sorry. Okay. Du hast recht, sauer zu sein.'] ] },
+      { t: '„Ey. Das hat mich echt verletzt. Ich will’s verstehen.“', staerke: 'klar', herz: { jo: 2 }, merke: 'joIchBotschaft', dann: [
+        ['jo', '(lässt den Ball fallen) … Wir SIND Freunde.'],
+        ['jo', 'Das war ein dummer Witz. Ich hab nicht gedacht, dass er’s macht.'] ] },
+      { t: '(Nichts sagen. Warten.)', staerke: 'warten', herz: { jo: 1 }, dann: [['erzaehler', 'Jo dribbelt. Einmal. Zweimal. Dann redet er von allein.'], ['jo', 'Ich hab Mist gebaut. Mit einem Satz.']] },
+    ] }]; },
   n6_joStart: () => [...(c.S.merke.joKnall ? [['jo', 'Erst Sportfest, jetzt das. Wir zwei haben echt Talent.']] : []), ...(c.S.merke.chatGedroht ? [['jo', 'Mila sagt, du willst es in den Klassenchat stellen. Echt jetzt?']] : []),
     ...(c.S.merke.kuedesBeweis ? [['jo', 'Herr Kuedes hat mich heute schon angesprochen. Ich weiß, worum es geht.']] : [])],
   n6_joEnde: () => {
@@ -212,7 +226,7 @@ export const tunN6 = (c) => ({
     : [['mila', 'Ich hab „Hör auf“ gesagt. Das hätte reichen müssen.'], ['mila', 'Danke, dass du was gemacht hast.']]),
   n6_schluss: () => [
     { szene: 'stempel', def: { modul: 'Modul 5 · Kommunikation und Grenzen', titel: 'Klar gesagt',
-      gelernt: ['Worte, Stimme, Körper – und wem man glaubt', 'Jeder hat einen anderen Wohlfühl-Abstand', 'Ich-Botschaften statt Vorwürfe', 'Zuhören, bis man es wirklich verstanden hat', 'Stopp sagen: klar, ruhig, ohne Lächeln – und ein Stopp annehmen'],
+      gelernt: ['Worte, Stimme, Körper – und wem man glaubt', 'Jeder hat einen anderen Wohlfühl-Abstand', 'Ich-Botschaften statt Vorwürfe', 'Zuhören, bis man es wirklich verstanden hat', 'Ein Stopp gilt immer – klar und ruhig kommt es besser an. Und ein Stopp annehmen'],
       mission: 'Sag diese Woche einmal deinen Stopp-Satz. Und wenn jemand dir Stopp sagt: „Okay.“ Ohne Diskussion.' }, folgen: {} },
     ['erzaehler', 'Samstag, 21:40. Dein Handy vibriert.'],
     ['erzaehler', '„Luca hat dich aus der Gruppe 7P2 😎 (offiziell) entfernt.“'],

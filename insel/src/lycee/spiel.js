@@ -16,7 +16,12 @@ import { lambertVC } from '../world/landmarks.js';
 import { baueWelt } from './welt.js';
 import { baueRequisiten, stelle } from './requisiten.js';
 import { ladePerson, namensschild, SITZ } from './figuren.js';
-import { fussSchatten } from './texturen.js';
+import { fussSchatten, WOLKEN } from './texturen.js';
+import { createHandschlag, HANDSCHLAEGE } from './handschlag.js';
+import { createTischtennis } from './tt3d.js';
+import { createZufall } from './zufall.js';
+// Das Schuljahr vergeht: Monat auf der Zeitkarte (die Kapitel liegen Wochen auseinander, nicht direkt hintereinander)
+const MONAT = { 1: 'September', 2: 'September', 3: 'Oktober', 4: 'November', 5: 'Dezember', 6: 'Februar', 7: 'März', 8: 'April', 9: 'Juni', 10: 'Juli' };
 import { createInteraktionen } from './interaktion.js';
 import { FAEDEN } from './faeden.js';
 import { PLAUDERN, BANK } from './stimmen.js';
@@ -98,7 +103,19 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   veil.setBaseOverride(0); veil.uniforms.uVeilStrength.value = 0;
   const material = lambertVC(veil, 'lycee', { ramp: 'props' });
   const materialInnen = lambertVC(veil, 'lycee-innen', { ramp: 'props' });
-  const welt = baueWelt({ material, materialInnen });
+  // Laub wiegt sich im Wind: je höher, desto mehr (Hauptbiegung), dazu feines Flattern. Kostet fast nichts (nur Vertex-Shader).
+  const windZeit = { value: 0 };
+  const materialLaub = veil.patch(new THREE.MeshLambertMaterial({ vertexColors: true, flatShading: true }), { key: 'lm-lycee-laub', ramp: 'props', uniforms: { uWind: windZeit },
+    vertex: (vs) => vs.replace('void main() {', 'uniform float uWind;\nvoid main() {').replace('#include <begin_vertex>', `#include <begin_vertex>
+    float wH = max(position.y - 1.6, 0.0);
+    float wP = position.x * 0.31 + position.z * 0.23;
+    float wS = sin(uWind * 1.1 + wP) * 0.6 + sin(uWind * 2.3 + wP * 1.7) * 0.4;
+    transformed.x += wS * 0.03 * wH;
+    transformed.z += cos(uWind * 0.9 + wP) * 0.018 * wH;
+    transformed.y += sin(uWind * 3.7 + position.x * 3.0 + position.z * 2.0) * 0.012 * min(wH, 1.0);`) });
+  const welt = baueWelt({ material, materialInnen, materialLaub });
+  // Nächster echter Sitz (Stuhl, Bank, Kübelrand): Figuren sitzen AUF etwas – mit dessen Höhe und Richtung
+  const sitzSuche = (x, z, r = 1.3) => { let best = null, bd = r; for (const q of welt.sitze || []) { const d = Math.hypot(q.x - x, q.z - z); if (d < bd) { bd = d; best = q; } } return best; };
   Object.assign(welt.orte, ORTE2, ORTE3, ORTE4, ORTE6, ORTE_N3);
   let paket = ladePaket();   // Aufgaben der Lehrperson (Phase 2) oder Grundaufgaben
   scene.add(welt.gruppe);
@@ -117,7 +134,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
 
   await schritt(0.6, 'Die Klasse kommt …');
   const ui = createUI({ root, input, speech });
-  situationen(ui, { name: () => 'Du', ersetze: (t) => ersetze(t) });
+  situationen(ui, { name: () => 'Du', ersetze: (t) => ersetze(t), speech });
   // Ton und Vorlesen für alle Situations-Spiele an einer Stelle: Klick auf Karten, Sprechblasen, Stempel, neue Karten
   (() => {
     let zuletzt = 0;
@@ -147,10 +164,13 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     });
   } catch (e) { /* Ton nicht verfügbar */ }
   // Schritte hörbar: Holz in Sälen, CDI, SePAS, Turnhalle; sonst Fliesen/Pflaster
+  const vib = (m) => { try { if (navigator.vibrate && matchMedia('(pointer: coarse)').matches && !(ui.wenigBewegung) && ui.vibration !== false) navigator.vibrate(m); } catch (e) { /* egal */ } };
   steuerung.onSchritt = (rennt) => {
     if (imGespraech || !laeuft) return;
-    const r = welt.raumBei(steuerung.pos.x, steuerung.pos.z), holz = r && /saal|cdi|profs|sepas|turnhalle/.test(r.id);
-    try { audio.footstep(holz ? 'wood' : 'rock', rennt ? 0.55 : 0.38); } catch (e) { /* Ton noch nicht bereit */ }
+    const p = steuerung.pos, r = welt.raumBei(p.x, p.z), holz = r && /saal|cdi|profs|sepas|turnhalle/.test(r.id);
+    // Boden bestimmt den Klang: Holz, Fliesen (drinnen), Pflaster (Hof und Wege), Rasen (außerhalb)
+    const pflaster = (Math.abs(p.x) < 46 && p.z > -2 && p.z < 40.5) || (Math.abs(p.x) < 62 && p.z > -4 && p.z < 2) || (p.z > 44 && p.z < 52);
+    try { audio.footstep(holz ? 'wood' : r ? 'tile' : pflaster ? 'rock' : 'grass', rennt ? 0.55 : 0.38); } catch (e) { /* Ton noch nicht bereit */ }
   };
   const tiere = createTiere({ scene, steuerung });
   rr.attachPost({ scene, camera, veil });
@@ -166,7 +186,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   const neuerStand = (name, figur) => ({ v: 2, name, figur, schritt: 0, herz: {}, staerken: {}, merke: {}, entdeckt: [], stundenplan: false, bingo: {}, gefragt: [], fertig: false });
   // Schul-Pass: neue Abzeichen beim Speichern prüfen (Toast + Ton, nie mehr als drei auf einmal anzeigen)
   const passPruefen = () => { const neu = neuePassAbzeichen(S); neu.slice(0, 3).forEach((x, n) => setTimeout(() => { ui.toast('<b>🏅 ' + x.sy + ' ' + x.t + '</b><span>Neues Abzeichen im Schul-Pass.</span>', 'ly-t-ent'); audio.play('unlock'); }, n * 900)); };
-  const sichern = () => { if (S && S.merke) passPruefen(); schreib(S); };
+  const sichern = () => { if (S && S.merke) passPruefen(); if (S) S.zuletzt = Date.now(); schreib(S); };
 
   // ---------- Menschen ----------
   const leute = {};   // id → { def, f, pos, yaw, haltung, schild, ziel }
@@ -206,8 +226,9 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       if (!w) continue;
       let [x, z, yaw, haltung] = w;
       // „sitzt“: auf dem Stuhl, Blick zum Tisch (Stuhl steht 0,62 m hinter der Tischmitte – Figur etwas nach hinten)
-      if (haltung === 'sitzt') { x -= Math.sin(yaw) * 0.1; z -= Math.cos(yaw) * 0.1; }
-      p.f.sitzen(haltung === 'sitzt');
+      const sp = haltung === 'sitzt' ? sitzSuche(x, z) : null;
+      if (sp) { x = sp.x; z = sp.z; yaw = sp.rot; }
+      p.f.sitzen(haltung === 'sitzt', sp ? sp.h || 0.47 : 0.47);
       p.pos.set(x, 0, z); p.yaw = yaw; p.basisYaw = yaw; p.haltung = haltung || ''; p.gegruesst = false;
       p.f.group.position.copy(p.pos); p.f.group.rotation.y = yaw;
       p.f.spiele(haltung === 'redet' ? 'Interact' : haltung === 'winkt' ? 'Wave' : 'Idle', { tempo: haltung === 'redet' ? 0.35 : 1 });
@@ -280,7 +301,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       f.group.position.copy(p);
       if (st) f.group.rotation.y = st[2];
       const halt = d.steht && d.steht[3];
-      if (halt === 'sitzt') { f.sitzen(true); f.spiele('Idle'); }
+      if (halt === 'sitzt') { const sp = sitzSuche(f.group.position.x, f.group.position.z); if (sp) { f.group.position.set(sp.x, 0, sp.z); f.group.rotation.y = sp.rot; d.steht = [sp.x, sp.z, sp.rot, 'sitzt']; } f.sitzen(true, sp ? sp.h || 0.47 : 0.47); f.spiele('Idle'); }
       else if (halt === 'redet') f.spiele('Interact', { tempo: 0.35 });
       else if (halt === 'raucht') { f.spiele('Idle'); x.rauch = zigarette(f); }
       else if (halt === 'handy') { f.spiele('Idle_Neutral'); }
@@ -329,7 +350,13 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   function statistenBewegen(dt) {
     for (const x of statisten) {
       if (x.weg) continue;
-      if (imBild(x.f, x.f.group.position)) x.f.update(dt);
+      if (imBild(x.f, x.f.group.position)) {
+        const sp = steuerung.pos, gp = x.f.group.position, dd = Math.hypot(sp.x - gp.x, sp.z - gp.z);
+        x.blickV = x.blickV || new THREE.Vector3();
+        if (dd < 4 && dd > 0.7) { const jz = performance.now(); x.nahSeit = x.nahSeit || jz; x.f.blick((jz - x.nahSeit) % 8000 < 2600 ? x.blickV.set(sp.x, 1.45, sp.z) : null); }
+        else { x.nahSeit = 0; x.f.blick(null); }
+        x.f.update(dt);
+      }
       if (x.rauch) {
         x.rauch.z.getWorldPosition(_wp);
         for (const r of x.rauch.wolken) {
@@ -427,6 +454,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       if (!/^Key[A-Z]$/.test(e.code)) return;
       puffer = (puffer + e.code.slice(3).toLowerCase()).slice(-4);
       // H = winken: die Spielfigur winkt, Leute in der Nähe winken zurück
+      if (e.code === 'KeyG' && hsPartner) { e.preventDefault(); handschlagMit(hsPartner); return; }
       if (e.code === 'KeyH' && laeuft && !imGespraech && !ui.ebeneArt() && spieler && steuerung.tempo < 0.3 && !steuerung.sitzt && !steuerung.brett) {
         steuerung.emote = 'Wave'; steuerung.emoteBis = performance.now() + 2200;
         const p = steuerung.pos; let n = 0;
@@ -444,7 +472,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     tiere.kabelSync((S && S.merke && S.merke.kabel) || []);
     if (spieler) { scene.remove(spieler.group); }
     spieler = await ladePerson(veil, { ...(FIGUREN[i] || FIGUREN[0]), ...((S && S.aussehen) || {}) });   // Aussehen aus dem Spind-Spiegel
-    spieler.group.add(fussSchatten()); scene.add(spieler.group); steuerung.figur = spieler;
+    spieler.group.add(fussSchatten()); scene.add(spieler.group); steuerung.figur = spieler; steuerung.sitzSuche = sitzSuche;
     spieler.spiele('Idle');
     anhaengerDran();
   }
@@ -517,7 +545,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     S.freund[id] = neu;
     const g = (S.freundGrund[id] = S.freundGrund[id] || {}); g[grund] = (g[grund] || 0) + 1;
     // Stufe gestiegen: sofort zeigen – außer bei Entscheidungen (die zeigt erst der Tagesrückblick, sonst verrät es die „richtige“ Antwort)
-    if (grund !== 'wahl' && neu > alt && stufe(neu) !== stufe(alt)) ui.toast('<b>' + LEUTE[id].name + ': ' + stufe(neu) + '</b><span>Hat dich jetzt auf dem Schirm.</span>', 'ly-t-herz');
+    if (grund !== 'wahl' && neu > alt && stufe(neu) !== stufe(alt)) ui.toast('<b>' + LEUTE[id].name + ': ' + stufe(neu) + '</b><span>Hat dich jetzt auf dem Schirm.' + (HANDSCHLAEGE[id] && alt < 20 && neu >= 20 ? ' Neu: euer eigener Handschlag (🤝 oder Taste G).' : '') + '</span>', 'ly-t-herz');
   }
   const besteFreunde = () => { if (!S) return []; sicherFreund(); return Object.entries(S.freund).filter(([id, p]) => CHARAKTER[id] && p >= 20).sort((a, b) => b[1] - a[1]).map(([id]) => id); }
   // Jetons fürs Lernen: werden nie weniger, außer man löst sie bei einer Figur ein (das Ding bleibt dann für immer)
@@ -532,20 +560,28 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     // still: keine Glocke, keine Karte – sonst verrät das Spiel die „richtige“ Antwort. Sichtbar im Journal und am Kapitelende.
   }
   // Blick: die beteiligte Person dreht sich zum Spieler
-  let gegenueber = null;
+  let gegenueber = null, sprichtJetzt = null;
+  // Sprechende Figur gestikuliert (wie in Story-Spielen), danach zurück in ihre Haltung
+  const haltungAnim = (x) => (x.haltung === 'redet' ? ['Interact', 0.35] : x.haltung === 'handy' ? ['Idle_Neutral', 1] : ['Idle', 1]);
   async function spiele(zeilen) {
     for (const z of zeilen) {
       if (Array.isArray(z)) {
         const [wer, text] = z;
         if (LEUTE[wer] && S.herz[wer] == null) { S.herz[wer] = 1; freund(wer, 5, 'kennen'); }
         if (leute[wer] && leute[wer].f.group.visible && wer !== 'du') { gegenueber = leute[wer]; steuerung.fokus = gegenueber.pos; }
+        sprichtJetzt = wer;
+        steuerung.gegenSchuss = wer === 'du' && !!gegenueber;   // du sprichst: Kamera schaut dich an
+        const redner = leute[wer] && leute[wer].f.group.visible && leute[wer].haltung !== 'sitzt' ? leute[wer] : null;
+        if (redner && redner.f.aktion !== 'Wave') redner.f.spiele('Interact', { tempo: 0.55 + Math.random() * 0.2, blende: 0.35 });
         await ui.sprich({ ...sprecher(wer), text: ersetze(text) });
+        if (redner) { const [a, tp] = haltungAnim(redner); redner.f.spiele(a, { tempo: tp, blende: 0.4 }); }
       } else if (z.wahl) {
         const opt = z.wahl.filter((w) => !w.wenn || w.wenn(S.merke));   // manche Antworten gibt es nur nach früheren Entscheidungen
         // Reihenfolge mischen, wenn eine Antwort eine Stärke zeigt – sonst wäre „die erste ist die gute“ zu leicht
         const ord = opt.map((_, k) => k);
         if (opt.some((w) => w.staerke) && !z.fest) for (let k = ord.length - 1; k > 0; k--) { const r = Math.floor(Math.random() * (k + 1)); [ord[k], ord[r]] = [ord[r], ord[k]]; }
         const i = await ui.waehle(ord.map((k) => ersetze(opt[k].t)));
+        vib(10);
         const w = opt[ord[i]];
         if (w.staerke) staerke(w.staerke);
         if (w.herz) for (const [id, n] of Object.entries(w.herz)) herz(id, n);
@@ -577,7 +613,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (imGespraech) return;
     imGespraech = true; input.setEnabled(false); steuerung.frei = false; ui.hinweis(null);
     try { await spiele(zeilen); } finally {
-      ui.dialogZu(); imGespraech = false; input.setEnabled(true); steuerung.frei = true; steuerung.fokus = null; gegenueber = null; sperreBis = performance.now() + 350; sichern();
+      ui.dialogZu(); imGespraech = false; input.setEnabled(true); steuerung.frei = true; steuerung.fokus = null; steuerung.gegenSchuss = false; gegenueber = null; sprichtJetzt = null; sperreBis = performance.now() + 350; sichern();
       if (danach) { const d = danach; danach = null; await d(); }
     }
   }
@@ -619,12 +655,13 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         : t >= 2 ? [['ben', t + ' von 5. Ich hatte drei. Glaub ich.'], ['yusuf', 'Zwei.']]
         : [['ben', t + ' von 5. Der Korb ist schief. Ehrlich.'], ['yusuf', 'Ist er nicht.']];
     },
+    n1_kunstLina: () => (S.merke.linaTisch ? [['lina', '(leise) Du. Von der Kantine.'], ['lina', 'Okay. Mit dir geht das.'], ['erzaehler', 'Lina setzt sich ein Stück näher. Das ist bei ihr viel.']] : []),
     tablett: () => { ui.toast('🍽 Tablett in der Hand. Jetzt der schwerste Teil: ein Platz.'); },
     gegessen: async () => {   // Spielfigur setzt sich mit an den Tisch (gegenüber)
-      const sitz = S.merke.tisch === 'mila' ? [19.55, -4.9, Math.PI / 2] : [12.25, -10.1, -Math.PI / 2];
+      const sitz = S.merke.tisch === 'mila' ? [19.55, -4.9, Math.PI / 2] : S.merke.tisch === 'lina' ? [16.65, -5.9, -Math.PI / 2] : [12.25, -10.1, -Math.PI / 2];
       steuerung.setzen(sitz[0] - Math.sin(sitz[2]) * 0.1, sitz[1] - Math.cos(sitz[2]) * 0.1, sitz[2]);
       await new Promise((r) => setTimeout(r, 1400));
-      await ui.bild('Mittagspause', S.merke.tisch === 'mila' ? 'Mila zeigt dir einen Würfel-Trick. Du schaffst ihn nicht. Sie lacht fast.' : 'Ayla trommelt den Takt auf das Tablett. Noah verschluckt sich vor Lachen.', 3);
+      await ui.bild('Mittagspause', S.merke.tisch === 'mila' ? 'Mila zeigt dir einen Würfel-Trick. Du schaffst ihn nicht. Sie lacht fast.' : S.merke.tisch === 'lina' ? 'Lina zeichnet weiter. Am Ende schiebt sie dir die Serviette rüber. Du bist auch drauf. Als Taube.' : 'Ayla trommelt den Takt auf das Tablett. Noah verschluckt sich vor Lachen.', 3);
     },
     plakat: async () => {
       const m = S.merke;
@@ -947,7 +984,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       sichern();
       const bf = besteFreunde()[0];
       audio.play('unlock'); setTimeout(() => audio.play('chime'), 350);
-      const wahl = await ui.ende({ ...bilanz(), kap, brief: bf ? { von: LEUTE[bf].name, farbe: LEUTE[bf].farbe, text: nachricht(bf, kap) } : null, ueberschrift: ({ 1: 'Dein erster Tag', 2: 'Deine erste Woche', 3: 'Die Sportfest-Woche', 4: 'Die Test-Woche', 5: 'Die Fake-Woche', 6: 'Die Woche der Grenzen' , 7: 'Die Woche danach', 8: 'Die KI-Woche' , 9: 'Die Akku-Woche' , 10: 'Das Sommerfest' })[kap] || KAPITEL[kap],
+      const wahl = await ui.ende({ ...bilanz(), kap, brief: bf ? { von: LEUTE[bf].name, farbe: LEUTE[bf].farbe, text: nachricht(bf, kap) } : null, ueberschrift: ({ 1: 'Deine ersten Tage', 2: 'Die zweite Woche', 3: 'Die Sportfest-Woche', 4: 'Die Test-Woche', 5: 'Die Fake-Woche', 6: 'Die Woche der Grenzen' , 7: 'Die Woche danach', 8: 'Die KI-Woche' , 9: 'Die Akku-Woche' , 10: 'Das Sommerfest' })[kap] || KAPITEL[kap],
         weiter: weiterIdx >= 0 ? 'Weiter: Kapitel ' + (kap + 1) + ' „' + KAPITEL[kap + 1] + '“' : '',
         // Haken fürs nächste Kapitel (kein Spoiler, nur die Frage)
         vorschau: weiterIdx >= 0 ? ({ 1: 'Montag. Eine Liste. Und Noah ist Platz 1.', 2: 'Sportfest. #3 kommt. Und es trifft jemanden, den du magst.',
@@ -1286,7 +1323,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     ui.bingo(null);
     const ort = st.start && st.start.teleport ? welt.orte[st.start.teleport] : null;
     const mitBlende = !!(ort && mitStart !== false && vorher && i > 0);
-    if (mitBlende) { const hh = Math.floor(st.uhr), mm = Math.round((st.uhr - hh) * 60); await ui.blende((st.tag || '') + ' · ' + hh + ':' + String(mm).padStart(2, '0') + ' · ' + st.titel); }
+    if (mitBlende) { const hh = Math.floor(st.uhr), mm = Math.round((st.uhr - hh) * 60); await ui.blende((MONAT[st.kap] ? MONAT[st.kap] + ' · ' : '') + (st.tag || '') + ' · ' + hh + ':' + String(mm).padStart(2, '0') + ' · ' + st.titel); }
     statistenNachZeit(st.uhr);
     await stelleLeute(st.leute || {});
     if (ort && mitStart !== false) steuerung.teleport(ort.x, ort.z, ort.yaw);
@@ -1313,7 +1350,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (f && f.eins) {
       if (st.id === 'pause' && id === 'mila' && !S.merke.pauseMila) { S.merke.pauseMila = true; await gespraech(GESPRAECHE.mila); await nachPause(); return; }
       if (st.id === 'pause' && (id === 'ben' || id === 'yusuf') && !S.merke.pauseKorb) { S.merke.pauseKorb = true; await gespraech(GESPRAECHE.freiwurf); await gespraech(GESPRAECHE.freiwurfDanach); await nachPause(); return; }
-      if (st.id === 'tisch' && (id === 'noah' || id === 'mila')) { S.merke.tisch = id; await gespraech(GESPRAECHE['tisch_' + id]); await naechster(); return; }
+      if (st.id === 'tisch' && (id === 'noah' || id === 'mila' || id === 'lina')) { S.merke.tisch = id; await gespraech(GESPRAECHE['tisch_' + id]); await naechster(); return; }
     }
     // Lernstation: Mme Laurent außerhalb der Geschichte
     if (id === 'laurent') {
@@ -1327,7 +1364,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       S.faeden = S.faeden || {};
       const n = S.faeden[id] || 0, fa = fd[n], abschnitt = S.fertig ? 'e' + Math.floor(Date.now() / 600000) : String(S.schritt);
       sicherFreund();
-      if (fa && ((S.herz[id] == null ? 1 : S.herz[id]) >= fa.herz || (S.freund[id] || 0) >= fa.herz * 15) && S.merke['fd_' + id] !== abschnitt) {
+      const kapJetzt = (SCHRITTE[S.schritt] || {}).kap || 1;   // zeitgebunden: z. B. keine Luca-Plaudereien, solange er der Gegenspieler ist
+      if (fa && !(fa.nichtKap && !S.fertig && fa.nichtKap.includes(kapJetzt)) && ((S.herz[id] == null ? 1 : S.herz[id]) >= fa.herz || (S.freund[id] || 0) >= fa.herz * 15) && S.merke['fd_' + id] !== abschnitt) {
         S.merke['fd_' + id] = abschnitt; S.faeden[id] = n + 1; freund(id, 8, 'tief'); sichern();
         await gespraech(fa.g);
         ui.toast('<b>' + ((LEUTE[id] || {}).name || id) + ': „' + fa.titel + '“</b><span>Gesprächsfaden ' + (n + 1) + ' von ' + fd.length + '</span>');
@@ -1356,7 +1394,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     }
     // sonst: kurz plaudern – zählt für die Freundschaft (einmal je Person und Abschnitt)
     if (CHARAKTER[id] && S.merke['fg_' + id] !== String(S.schritt)) { S.merke['fg_' + id] = String(S.schritt); freund(id, 3, 'gespraech'); }
-    if (CHARAKTER[id] && S.lektionen && S.merke['wn_' + id] !== String(S.schritt) && Math.random() < 0.4) { S.merke['wn_' + id] = String(S.schritt); if (await weisstDuNoch(id)) return; }
+    if (CHARAKTER[id] && S.lektionen && S.merke['wn_' + id] !== String(S.schritt) && Math.random() < 0.15) { S.merke['wn_' + id] = String(S.schritt); if (await weisstDuNoch(id)) return; }
     const l = PLAUDERN[id] || ['Hi.'];
     const n = (S.merke['p_' + id] = ((S.merke['p_' + id] || 0) + 1));
     await gespraech([[id, l[(n - 1) % l.length]]]);
@@ -1458,6 +1496,21 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     return z;
   }
   ui.onRaus = () => { if (!S || (imGespraech && !probe)) return; ui.kurzRaus(); };
+  // Pausenmenü: aktuelles Ziel und „Ich stecke fest“ (zurück an den Anfang des Abschnitts, nichts geht verloren)
+  ui.zielJetzt = () => { const st = S && SCHRITTE[S.schritt]; return st && !S.fertig ? { titel: st.titel, ziel: st.ziel } : null; };
+  ui.bodyscanFrei = () => !!(S && S.merke && S.merke.bodyscanGemacht);
+  ui.onFest = () => {
+    if (!S || imGespraech) return;
+    const st = SCHRITTE[S.schritt]; const ort = st && st.start && st.start.teleport ? welt.orte[st.start.teleport] : welt.orte.eingangHof;
+    if (steuerung.brett) return;
+    if (ort) steuerung.teleport(ort.x, ort.z, ort.yaw);
+    ui.toast('<b>↺ Zurückgesetzt</b><span>Du stehst wieder am Anfang dieses Abschnitts. Nichts ist verloren.</span>');
+  };
+  // Speichern, wenn das Fenster weggeklickt oder geschlossen wird (Tablets schließen Tabs gern ohne Vorwarnung)
+  document.addEventListener('visibilitychange', () => { if (document.hidden && S) { try { sichern(); } catch (e) { /* egal */ } } });
+  window.addEventListener('pagehide', () => { if (S) { try { sichern(); } catch (e) { /* egal */ } } });
+  // Grafik verloren (Tablet wechselt App): freundlich melden statt schwarzer Fläche
+  rr.renderer.domElement.addEventListener('webglcontextlost', (e) => { e.preventDefault(); try { sichern(); } catch (x) { /* egal */ } ui.toast('<b>Grafik kurz weg</b><span>Dein Spielstand ist gesichert. Bitte die Seite neu laden.</span>'); });
 
   // ---------- Nähe: wen kann man ansprechen? ----------
   let naechste = null;
@@ -1576,7 +1629,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (!frage) return false;
     await spiele([[id, 'Hey, „' + l.titel + '“ – weißt du das noch?']]);
     const i = await ui.waehle(frage.o.map((o) => ersetze(o)), LEUTE[id].name + ': ' + ersetze(frage.t));
-    if (i === frage.i) { await spiele([[id, 'Gewusst! Respekt.']]); freund(id, 3, 'lernen'); S.merke.gewusst = (S.merke.gewusst || 0) + 1; }
+    if (i === frage.i) { await spiele([[id, 'Gewusst! Respekt.']]); S.merke.gewusst = (S.merke.gewusst || 0) + 1; }
     else await spiele([[id, frage.k]]);
     sichern(); return true;
   }
@@ -1619,6 +1672,74 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   let skateTick = null;
   // ---------- Basketball direkt am Korb im Hof (korb3d.js) – ersetzt das flache Freiwurf-Fenster ----------
   const korbSpiel = createKorbSpiel({ scene, camera, steuerung, input, root, ton: (a) => ton(a) });
+  // ---------- Handschläge (handschlag.js): mit Freundinnen und Freunden ab „Kumpel“ ----------
+  const hs = createHandschlag({ steuerung, camera, root, audio, rr, ton: (a) => ton(a), vib });
+  // Tischtennis in 3D an der Platte (tt3d.js); das Gegenüber wird als eigene Figur geladen
+  const ttFiguren = {};
+  const tt3d = createTischtennis({ scene, camera, steuerung, root, audio, rr, vib,
+    holeGegner: async (id) => { const k = LEUTE[id] ? id : 'ben'; if (!ttFiguren[k]) { ttFiguren[k] = await ladePerson(veil, { ...LEUTE[k] }); ttFiguren[k].group.add(fussSchatten()); } return ttFiguren[k]; } });
+  const hsKannMit = (x) => !!(x && HANDSCHLAEGE[x.id] && S && ((S.freund && S.freund[x.id] >= 20) || (S.herz[x.id] || 0) >= 3) && x.f.armOk && x.haltung !== 'sitzt');
+  const sag = (wer, text) => ui.sprich({ ...sprecher(wer), text: ersetze(text) });
+  ui.onHandschlag = () => { if (hsPartner) handschlagMit(hsPartner); };
+  // Kleine Begegnungen (zufall.js): helfen, ehrlich sein, dazusetzen
+  const blase = (x, t, ms = 3200) => { sprueche_el.textContent = t; spruchWer = x; spruchBis = performance.now() + ms; spruchNaechst = performance.now() + ms + 2500; sprueche_el.hidden = false; try { audio.play('bubble'); } catch (e) { /* Ton */ } };
+  const zufall = createZufall({ scene, steuerung, welt, statisten: () => statisten, blase, sag, waehle: (o) => ui.waehle(o), dialogZu: () => ui.dialogZu(), ton: (a) => ton(a), zustand: () => S, sichern: () => sichern(), toast: (t, a) => ui.toast(t, a) });
+  async function handschlagMit(x) {
+    if (hs.aktiv || imGespraech || !laeuft || !spieler || !spieler.armOk || ui.ebeneArt() || steuerung.brett || steuerung.sitzt || foto) return;
+    const id = x.id, H = HANDSCHLAEGE[id];
+    S.handschlag = S.handschlag || {};
+    const st = S.handschlag[id] = S.handschlag[id] || {};
+    imGespraech = true; gegenueber = x; input.setEnabled(false); steuerung.frei = false; ui.hinweis(null); hsPartner = null; ui.hsKnopf && ui.hsKnopf(null);
+    const name = LEUTE[id].name;
+    try {
+      hs.start(spieler, x);
+      let folge = st.eigen || H.folge;
+      const ueben = async (titel, opt) => { const l = hs.leiste({ titel, laenge: folge.length }); const ok = await hs.mitmachen(folge, l, opt); await new Promise((r) => setTimeout(r, 350)); l.zu(); return ok; };
+      const vormachen = async () => { const l = hs.leiste({ titel: 'Schau genau hin: ' + name + 's Handschlag', laenge: folge.length, modus: 'zeigen' }); await hs.zeigen(folge, l); l.zu(); };
+      if (!st.gelernt) {
+        await sag(id, H.intro); ui.dialogZu();
+        await vormachen();
+        let versuch = 0, hilfe = false;
+        while (true) {
+          versuch++;
+          const ok = await ueben(hilfe ? 'Mit Spickzettel: drück die Teile nacheinander (1–9)' : 'Jetzt du! Aus dem Kopf – in der richtigen Reihenfolge (1–9)', { zeit: (hilfe ? 3 : 2.2) * (ui.leicht ? 1.6 : 1), hilfe });
+          if (ok) {
+            st.gelernt = true; st.mal = 1; await sag(id, H.klappt); ui.dialogZu();
+            freund(id, 6, 'handschlag'); ui.toast('<b>🤝 Handschlag mit ' + name + '</b><span>Gelernt! Ab jetzt: Taste G oder 🤝, wenn ihr euch trefft.</span>', 'ly-t-ent'); break;
+          }
+          await sag(id, H.daneben);
+          const w = await ui.waehle(['Nochmal versuchen', 'Zeig ihn mir nochmal', versuch >= 2 ? 'Mit Spickzettel' : 'Später']);
+          ui.dialogZu();
+          if (w === 1) await vormachen();
+          else if (w === 2) { if (versuch >= 2) hilfe = true; else break; }
+        }
+      } else {
+        const GRUESSE = ['Na? Handschlag?', 'Hey! Du weißt, was jetzt kommt.', 'Da bist du ja. Los.', 'Kannst du ihn noch?'];
+        await sag(id, GRUESSE[(st.mal || 0) % GRUESSE.length]);
+        const w = await ui.waehle(['Unser Handschlag', 'Einen neuen erfinden', 'Doch nicht']);
+        ui.dialogZu();
+        if (w === 0) {
+          // jedes Mal etwas weniger Zeit – wer ihn oft macht, wird schneller
+          const zeit = Math.max(1.05, 1.9 - (st.mal || 0) * 0.08) * (ui.leicht ? 1.7 : 1);
+          const ok = await ueben('Euer Handschlag – ohne Hilfe! (1–9)', { zeit });
+          if (ok) { st.mal = (st.mal || 0) + 1; const kap = (SCHRITTE[S.schritt] || {}).kap || 1, key = 'hs_' + id + '_' + kap; if (!S.merke[key]) { S.merke[key] = true; freund(id, 3, 'handschlag'); }
+            ui.toast('<b>🤝 ' + name + '</b><span>' + (st.mal % 5 === 0 ? st.mal + '-mal geschafft. Ihr seid ein eingespieltes Team.' : H.klappt) + '</span>', 'ly-t-herz'); }
+          else { await sag(id, H.daneben); ui.dialogZu(); }
+        } else if (w === 1) {
+          const l = hs.leiste({ titel: 'Neuer Handschlag: wähle 3 bis 5 Teile (1–9)', laenge: 3, modus: 'bauen' });
+          const neu = await l.bauen(); l.zu();
+          const satz = neu.includes('ran') ? 'Mit Ranziehen? Okay. Für dich.' : neu.length >= 5 ? 'Fünf Teile?! Das ist ja ein Tanz. Okay, ich lern das.' : neu.includes('pistole') && neu.includes('boom') ? 'Explosion UND Peng? Du übertreibst. Ich lieb es.' : 'Okay. Langsam, ich lern das.';
+          await sag(id, satz); ui.dialogZu();
+          folge = neu; st.eigen = neu; st.mal = 0;
+          await vormachen();
+          ui.toast('<b>🤝 Neuer Handschlag</b><span>' + name + ' kennt ihn jetzt. Beim nächsten Mal machst du ihn aus dem Kopf.</span>', 'ly-t-ent');
+        }
+      }
+    } finally {
+      ui.dialogZu(); await hs.ende();
+      imGespraech = false; gegenueber = null; input.setEnabled(true); steuerung.frei = true; sperreBis = performance.now() + 500; sichern();
+    }
+  }
   ui.freiwurf2d = ui.freiwurf;
   ui.freiwurf = async (o) => {
     const imG = imGespraech;
@@ -1651,20 +1772,35 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       const koerper = spieler && spieler.group.children[0], hoch = koerper ? koerper.position.y : 0;
       if (spieler) { m = skateboard(); spieler.group.add(m); }
       if (koerper) koerper.position.y = hoch + 0.1;
-      let punkte = 0, rest = 60, fertig = false, draussen = 0, aussen = 0;
+      let punkte = 0, rest = 90, fertig = false, draussen = 0, aussen = 0, combo = 0, letzteLandung = -9, uhr = 0, stuerze = 0;
+      const rekord = (S.merke && S.merke.skateRekord) || 0;
+      const ZIELE = [[10, 'Bronze'], [25, 'Silber'], [45, 'Gold']];
+      const zielText = () => { const z = ZIELE.find(([p]) => punkte < p); return z ? 'Nächstes Ziel: ' + z[1] + ' (' + z[0] + ')' : '🥇 Gold geschafft!'; };
+      const trickTaste = (e) => { const t = { Digit1: 'kickflip', Digit2: 'shove', Digit3: 'dreh' }[e.code]; if (t && steuerung.brett) { e.preventDefault(); e.stopPropagation(); steuerung.brett.trickWunsch = t; } };
+      document.addEventListener('keydown', trickTaste, true);
+      ui.onSkateTrick = (t) => { if (steuerung.brett) steuerung.brett.trickWunsch = t; };
       const ende = () => {
         if (fertig) return; fertig = true; skateTick = null;
         steuerung.brett = null; steuerung.tempo = 0; steuerung.pos.y = 0;
         if (m) spieler.group.remove(m);
         if (koerper) koerper.position.y = hoch;
+        document.removeEventListener('keydown', trickTaste, true); ui.onSkateTrick = null;
+        if (spieler) { spieler.group.rotation.set(0, steuerung.yaw, 0); spieler.lehnen && spieler.lehnen(0); }
+        const medaille = ZIELE.filter(([p]) => punkte >= p).pop();
+        if (medaille) { S.merke.skateMedaille = Math.max(S.merke.skateMedaille || 0, ZIELE.indexOf(medaille) + 1); }
         ui.skate(null); input.release('jump'); ok(punkte);
       };
-      steuerung.brett = { y: 0, vy: 0, ueber: new Set(), start: 0, bereich: [-45.3, -28.3, 3.5, 18.7],
-        onTrick: (name, p) => { punkte += p; ton('pling'); ui.skate({ punkte, trick: name + ' +' + p }); },
+      steuerung.brett = { y: 0, vy: 0, ueber: new Set(), start: 0, bereich: [-45.3, -28.3, 3.5, 18.7], mesh: m,
+        // Kombo: Tricks kurz nacheinander (innerhalb 1,6 s) zählen mehr – ×2, ×3 …
+        onTrick: (name, p) => { combo = uhr - letzteLandung < 1.6 ? Math.min(5, combo + 1) : 1; letzteLandung = uhr; const g = p * combo; punkte += g; ton('pling'); vib(p >= 3 ? 18 : 8);
+          ui.skate({ punkte, combo, ziel: zielText(), trick: name + ' +' + g + (combo > 1 ? ' (×' + combo + ')' : '') }); },
+        onSturz: (grund) => { combo = 0; stuerze++; ton('klack'); vib([30, 40, 30]); ui.skate({ combo: 0, bal: null, trick: '💥 ' + grund }); },
+        onGrind: (dt, bal) => { ui.skate({ bal }); },
         onRaus: () => { draussen = performance.now(); } };
-      ui.skate({ rest, punkte, weg: ende });
+      ui.skate({ rest, punkte, weg: ende, ziel: zielText() + (rekord ? ' · Rekord ' + rekord : '') });
       skateTick = (dt) => {
-        rest -= dt;
+        rest -= dt; uhr += dt;
+        if (steuerung.brett && !steuerung.brett.grind) ui.skate({ bal: null });
         if (rest <= 0 || imGespraech) { ende(); return; }
         if (rest < 59.4 && input.state.action) { ende(); return; }   // E noch einmal = absteigen (nicht das Loslassen vom Start)
         // aus der Skate-Ecke gerollt: zwei Sekunden Zeit zum Umdrehen, dann erst absteigen
@@ -1687,7 +1823,13 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (w && w.art === 'anhaenger') { S.anhaenger = S.anhaenger === w.wert ? null : w.wert; sichern(); anhaengerDran(); ui.toast('<b>' + esc(w.name) + '</b><span>' + (S.anhaenger ? 'Hängt jetzt an dir.' : 'Bleibt im Spind.') + '</span>'); }
   }
   const ia = createInteraktionen({ welt, steuerung, ui, zustand: () => S, sichern: () => sichern(), ton, blattWahl, spindAuf: () => spindAuf(), onKabel: (id) => tiere.kabelWeg(id),
-    freiwurf: async (o) => ui.freiwurf(o), skate: () => skaten(), freund: (id, n, g) => freund(id, n, g),
+    freiwurf: async (o) => ui.freiwurf(o), skate: () => skaten(),
+    tt3d: welt.orte.tischtennis ? async (pa) => { ui.hinweis(null); const STAERKE = { ben: 1.4, jo: 1.6, ayla: 1.3, dario: 1.2, yusuf: 1.1 };
+      // Leute direkt an der Platte gehen kurz zur Seite (sie stehen sonst im Spielfeld)
+      const T = welt.orte.tischtennis, platz = statisten.filter((x) => !x.weg && Math.hypot(x.f.group.position.x - T.x, x.f.group.position.z - T.z) < 3.6);
+      platz.forEach((x) => { x.f.group.visible = false; });
+      try { return await tt3d.spiel({ tisch: T, gegnerId: pa ? pa.id : 'ben', gegnerName: pa ? pa.name : 'Ben', staerke: (pa ? STAERKE[pa.id] || 0.9 : 1.2) * (ui.leicht ? 0.6 : 1), leicht: !!ui.leicht }); }
+      finally { platz.forEach((x) => { if (!x.weg) x.f.group.visible = true; }); } } : null, freund: (id, n, g) => freund(id, n, g),
     partner: () => { const b = besteFreunde()[0] || GLEICHALTRIGE.find((id) => S.herz[id] != null); return b ? { id: b, name: LEUTE[b].name } : null; } });
   let iaNah = null;
   // Mission „Tank auffüllen“ (Kurs-Ritual nach Modul 1): passende Tätigkeiten in der Welt zählen
@@ -1704,13 +1846,80 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     setTimeout(() => missionTank(i.tu), 0);
     if (i.tu === 'sitzen') { await ia.tu(i); sperreBis = performance.now() + 350; return; }
     if (i.tu === 'statist') { gruss(i.st); sperreBis = performance.now() + 1200; return; }
+    if (i.tu === 'zufall') { imGespraech = true; input.setEnabled(false); steuerung.frei = false; ui.hinweis(null);
+      try { await zufall.tu(); } finally { ui.dialogZu(); imGespraech = false; input.setEnabled(true); steuerung.frei = true; sperreBis = performance.now() + 500; } return; }
     if (i.tu === 'skate') { ui.hinweis(null); await ia.tu(i); sperreBis = performance.now() + 500; return; }
-    imGespraech = true; input.setEnabled(false); steuerung.frei = false; ui.hinweis(null);
+    imGespraech = true; input.setEnabled(false); steuerung.frei = false; ui.hinweis(null); vib(12);
     try { await ia.tu(i); } finally { imGespraech = false; input.setEnabled(true); steuerung.frei = true; sperreBis = performance.now() + 350; }
   }
 
   // ---------- Schleife ----------
-  let laufZeit = 0;
+  let laufZeit = 0, spielerBlickV = null, hsPartner = null;
+  // ---------- Staub im Licht: drinnen am Tag schweben feine Teilchen um die Kamera (wie in großen Spielen, kostet fast nichts) ----------
+  const STAUB_N = 160, STAUB_R = 4;
+  const staubPos = new Float32Array(STAUB_N * 3), staubPhase = new Float32Array(STAUB_N);
+  for (let k = 0; k < STAUB_N; k++) { staubPos[k * 3] = (Math.random() * 2 - 1) * STAUB_R; staubPos[k * 3 + 1] = 0.4 + Math.random() * 2.6; staubPos[k * 3 + 2] = (Math.random() * 2 - 1) * STAUB_R; staubPhase[k] = Math.random() * 6.28; }
+  const staubGeo = new THREE.BufferGeometry(); staubGeo.setAttribute('position', new THREE.BufferAttribute(staubPos, 3));
+  const staubMat = new THREE.PointsMaterial({ size: 0.028, color: 0xfff1d0, transparent: true, opacity: 0, depthWrite: false, blending: THREE.AdditiveBlending, toneMapped: false });
+  const staub = new THREE.Points(staubGeo, staubMat); staub.frustumCulled = false; staub.visible = false; scene.add(staub);
+  let staubT = 0;
+  // Lebendige Welt: Wer im Haus an einer Lehrkraft vorbeirennt, wird ermahnt – freundlich, mit Persönlichkeit, höchstens
+  // alle 45 Sekunden (Systeme, die auf den Spieler reagieren, statt nur Kulisse zu sein).
+  const GANG_SPRUCH = { hoffmann: ['Hé! Doucement! Das ist kein Sportfest.', 'Langsam! Ich hab noch Kaffee in der Hand.'], kaya: ['Hey, Tempo raus. Die Treppe läuft nicht weg.', 'Rennen im Gang? Dein Puls sagt danke.'],
+    mesenberg: ['Langsam. Wer rennt, sieht nichts.'], rantini: ['Pas de course dans le couloir!', 'Rennen? Gerne. Draußen.'], weber: ['Nicht rennen! Ich hab hier gerade gewischt.'],
+    kremer: ['Langsam, sonst landest du in der Suppe!'], sommer: ['Schöner Sprint! Aber bitte auf dem Platz.'], laurent: ['Chut! Und langsam. Beides.'] };
+  let gangPause = 25;
+  function gangRegel(dt) {
+    gangPause -= dt;
+    if (gangPause > 0 || !laeuft || !S || imGespraech || steuerung.brett || steuerung.tempo < 4.2) return;
+    const p = steuerung.pos, r = welt.raumBei(p.x, p.z); if (!r || !/gang|halle/.test(r.id)) return;
+    for (const [id, l] of Object.entries(leute)) {
+      if (!GANG_SPRUCH[id] || !l.f.group.visible || Math.hypot(l.pos.x - p.x, l.pos.z - p.z) > 7) continue;
+      const T = GANG_SPRUCH[id]; blase({ f: l.f, d: {} }, T[Math.floor(Math.random() * T.length)], 2800); gangPause = 45; return;
+    }
+  }
+  function staubTick(dt) {
+    const r = welt.raumBei(steuerung.pos.x, steuerung.pos.z), ziel = r && !(sky.night > 0.5) ? 0.5 : 0;
+    staubMat.opacity += (ziel - staubMat.opacity) * Math.min(1, dt * 1.5);
+    staub.visible = staubMat.opacity > 0.01; if (!staub.visible) return;
+    staubT += dt; const c = camera.position, D = STAUB_R * 2;
+    for (let k = 0; k < STAUB_N; k++) {
+      const i = k * 3, ph = staubPhase[k];
+      staubPos[i] += Math.sin(staubT * 0.3 + ph) * 0.05 * dt; staubPos[i + 1] += (Math.sin(staubT * 0.21 + ph * 2) * 0.03 - 0.008) * dt; staubPos[i + 2] += Math.cos(staubT * 0.26 + ph) * 0.05 * dt;
+      // um die Kamera herum halten (Teilchen, die zu weit weg sind, tauchen auf der anderen Seite wieder auf)
+      let dx = staubPos[i] - c.x; if (dx > STAUB_R) staubPos[i] -= D; else if (dx < -STAUB_R) staubPos[i] += D;
+      let dz = staubPos[i + 2] - c.z; if (dz > STAUB_R) staubPos[i + 2] -= D; else if (dz < -STAUB_R) staubPos[i + 2] += D;
+      if (staubPos[i + 1] < 0.3) staubPos[i + 1] = 3; else if (staubPos[i + 1] > 3.1) staubPos[i + 1] = 0.4;
+    }
+    staubGeo.attributes.position.needsUpdate = true;
+  }
+  // ---------- Fotomodus ----------
+  let foto = null;
+  const FOTO_FILTER = { warm: 'sepia(.22) saturate(1.25) hue-rotate(-8deg) brightness(1.04)', kalt: 'saturate(.9) hue-rotate(12deg) brightness(1.03) contrast(1.05)', sw: 'grayscale(1) contrast(1.18)', retro: 'sepia(.45) contrast(.9) saturate(1.35) brightness(1.06)' };
+  ui.onFoto = () => {
+    if (foto || !laeuft || imGespraech || ui.ebeneArt() || !spieler || steuerung.brett || steuerung.kameraAus) return;
+    const canvas = rr.renderer.domElement;
+    foto = { yaw: steuerung.cam.yaw + Math.PI, pitch: 0.18, dist: 3.2, dof: 0.35, filter: '' };   // von vorn auf die Figur
+    input.setEnabled(false); steuerung.frei = false; steuerung.kameraAus = true;
+    ui.fotoAuf({
+      dreh: (dx, dy) => { foto.yaw -= dx * 0.006; foto.pitch = Math.max(-0.12, Math.min(1.25, foto.pitch + dy * 0.004)); },
+      zoom: (d) => { foto.dist = Math.max(1.1, Math.min(9, foto.dist + d)); },
+      pose: (a) => { steuerung.emote = a === 'Idle' ? null : a; steuerung.emoteBis = performance.now() + 1e9; },
+      filter: (f) => { foto.filter = f; canvas.style.filter = FOTO_FILTER[f] || ''; },
+      dof: (v) => { foto.dof = v; },
+      knips: () => {
+        rr.render({ night: sky.night, time: loop.time, sun: sky.sunDir, sunColor: sky.colors && sky.colors.light });
+        const c2 = document.createElement('canvas'); c2.width = canvas.width; c2.height = canvas.height;
+        const x = c2.getContext('2d'); x.filter = FOTO_FILTER[foto.filter] || 'none'; x.drawImage(canvas, 0, 0); x.filter = 'none';
+        const fs = Math.round(c2.height * 0.026); x.font = '800 ' + fs + 'px system-ui, sans-serif'; x.textAlign = 'right';
+        x.fillStyle = 'rgba(0,0,0,.35)'; x.fillText('Annexe · 7P2', c2.width - fs * 1.1 + 1, c2.height - fs * 0.9 + 1);
+        x.fillStyle = 'rgba(255,255,255,.88)'; x.fillText('Annexe · 7P2', c2.width - fs * 1.1, c2.height - fs * 0.9);
+        try { const a = document.createElement('a'); a.download = 'annexe-foto-' + new Date().toISOString().slice(0, 16).replace(/[:T]/g, '-') + '.png'; a.href = c2.toDataURL('image/png'); document.body.appendChild(a); a.click(); a.remove(); } catch (e) { /* manche Browser erlauben kein Speichern */ }
+        ton('pling'); S.merke.fotos = (S.merke.fotos || 0) + 1; sichern();
+      },
+      zu: () => { canvas.style.filter = ''; steuerung.emote = null; steuerung.kameraAus = false; steuerung.frei = true; input.setEnabled(true); foto = null; rr.setDof(0); steuerung.kamera(0.016, true); },
+    });
+  };
   let laeuft = false, raumAlt = undefined, geheimT = 0, klangT = 1, bankT = 0;
   // Während eines Minispiels auf eigener Fläche (Bandprobe, Tischtennis, Freiwurf) ruht die 3D-Welt fast ganz:
   // sie ist ohnehin verdeckt, und der Takt im Spiel braucht die Rechenzeit.
@@ -1719,11 +1928,32 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   loop.add(() => input.beginFrame(), { order: -100, always: true });
   loop.add((dt) => {
     if (!laeuft) { camera.position.set(-36, 16, 64); camera.lookAt(0, 6, -10); return; }
+    windZeit.value += dt; WOLKEN.value += dt; staubTick(dt); gangRegel(dt);
+    zufall.tick(dt, laeuft && S && !imGespraech && !ui.ebeneArt() && !steuerung.brett && !hs.aktiv && !foto && !steuerung.kameraAus && !steuerung.sitzt && !probe);
     steuerung.update(dt);
+    // Schärfentiefe im Gespräch: scharf auf die Person im Bild, Hintergrund weich (wie Kino-Szenen)
+    if (foto) {   // Fotomodus: Kamera kreist um die eigene Figur
+      const p = steuerung.pos, cp = Math.cos(foto.pitch);
+      camera.position.set(p.x - Math.sin(foto.yaw) * cp * foto.dist, Math.max(0.25, 1.15 + Math.sin(foto.pitch) * foto.dist), p.z - Math.cos(foto.yaw) * cp * foto.dist);
+      camera.lookAt(p.x, 1.15 - Math.min(0.3, foto.dist * 0.04), p.z);
+      rr.setDof(foto.dof, foto.dist);
+    } else if (steuerung.fokus && imGespraech) { const fz = steuerung.gegenSchussIst ? steuerung.pos : steuerung.fokus; rr.setDof(0.7, Math.max(1.2, Math.hypot(camera.position.x - fz.x, camera.position.z - fz.z))); }
+    else rr.setDof(0);
+    hs.tick(dt);
+    tt3d.tick(dt);
     if (korbSpiel) korbSpiel.tick(dt);
     if (skateTick) skateTick(dt);
     if (wegTick) wegTick();
-    if (spieler) spieler.update(dt);
+    if (spieler) {
+      // die eigene Figur schaut, wer spricht – oder zur nächsten Person vor ihr (nicht beim Skaten)
+      spielerBlickV = spielerBlickV || new THREE.Vector3();
+      let ziel = null;
+      if (imGespraech && sprichtJetzt && leute[sprichtJetzt] && leute[sprichtJetzt].f.group.visible) ziel = leute[sprichtJetzt].pos;
+      else if (imGespraech && gegenueber) ziel = gegenueber.pos;
+      else if (!steuerung.brett) { let bd = 4.5; for (const x of Object.values(leute)) { if (!x.f.group.visible) continue; const dd = Math.hypot(x.pos.x - steuerung.pos.x, x.pos.z - steuerung.pos.z); if (dd < bd) { bd = dd; ziel = x.pos; } } }
+      spieler.blick(ziel ? spielerBlickV.set(ziel.x, 1.5, ziel.z) : null);
+      spieler.update(dt);
+    }
   }, { order: -50, always: true });
   loop.add((dt, t) => {
     // Menschen: Bewegungen, zum Spieler drehen, Schilder nur nah
@@ -1738,10 +1968,16 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       if (laeuft && !imGespraech && d < 6 && d > 2.5 && !x.gegruesst && x.haltung !== 'sitzt' && (S && (S.herz[x.id] || 0) >= 3)) {
         x.gegruesst = true; x.f.spiele('Wave', { einmal: true }); setTimeout(() => { if (x.f.aktion === 'Wave') x.f.spiele(x.haltung === 'redet' ? 'Interact' : 'Idle', { tempo: x.haltung === 'redet' ? 0.35 : 1 }); }, 2200);
       }
+      // Blick: im Gespräch zur sprechenden Person (der Sprecher selbst zu dir), sonst zu dir, wenn du nah bist
+      x.blickV = x.blickV || new THREE.Vector3();
+      const sp2 = imGespraech && sprichtJetzt && leute[sprichtJetzt] && leute[sprichtJetzt] !== x ? leute[sprichtJetzt].pos : null;
+      if (sp2 && Math.hypot(sp2.x - x.pos.x, sp2.z - x.pos.z) < 7) x.f.blick(x.blickV.set(sp2.x, 1.5, sp2.z));
+      else if (d < 7 && (laeuft || x === gegenueber)) x.f.blick(x.blickV.set(p.x, 1.45 + (steuerung.sitzt ? -0.4 : 0), p.z));
+      else x.f.blick(null);
       const will = zuMir ? Math.atan2(p.x - x.pos.x, p.z - x.pos.z) : x.basisYaw;
       let dd = will - x.yaw; dd = Math.atan2(Math.sin(dd), Math.cos(dd)); x.yaw += dd * Math.min(1, dt * 5);
       x.f.group.rotation.y = x.yaw;
-      x.schild.visible = d < 9 && laeuft && camera.position.distanceTo(x.pos) > 2.6;
+      x.schild.visible = d < 9 && laeuft && !imGespraech && camera.position.distanceTo(x.pos) > 2.6;
       x.schild.material.opacity = Math.max(0, Math.min(1, (9 - d) / 3));
     }
     statistenBewegen(dt);
@@ -1773,6 +2009,11 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     });
     if (ziele.length) { let dmin = Infinity; for (const z of ziele) dmin = Math.min(dmin, Math.hypot(z.x - p.x, z.z - p.z)); ui.dist(dmin > 4 ? dmin : null); } else ui.dist(null);
     laufZeit = steuerung.laeuft ? laufZeit + dt : Math.max(0, laufZeit - dt * 4);
+    // Handschlag möglich? Nächste befreundete Person in Reichweite (nicht im Gespräch, nicht beim Skaten)
+    { let best = null, bd = 2.3;
+      if (laeuft && !imGespraech && !hs.aktiv && !foto && !steuerung.brett && !steuerung.sitzt && !ui.ebeneArt() && spieler && spieler.armOk)
+        for (const x of Object.values(leute)) { if (!x.f.group.visible || !hsKannMit(x)) continue; const d = Math.hypot(x.pos.x - p.x, x.pos.z - p.z); if (d < bd) { bd = d; best = x; } }
+      if (best !== hsPartner) { hsPartner = best; ui.hsKnopf && ui.hsKnopf(best ? LEUTE[best.id].name : null); } }
     ui.auftragRuhe && ui.auftragRuhe(laufZeit > 5 && !ui.einstellungen().vorlesen);
     // Richtungspfeil am Bildschirmrand, wenn das Ziel nicht im Bild ist (gegen Verlaufen)
     {
@@ -1812,6 +2053,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     // Ansprechen
     naechste = imGespraech || steuerung.brett ? null : wenNah();
     iaNah = !naechste && !imGespraech && !probe && !steuerung.brett ? ia.naechste(p) : null;
+    if (!naechste && !iaNah && !imGespraech && !probe && !steuerung.brett) iaNah = zufall.naechste(p);
     if (!naechste && !iaNah && !imGespraech && !probe && !steuerung.brett) { const st = statistNah(p); if (st) iaNah = { tu: 'statist', text: 'Hallo sagen', st, x: st.p.x, z: st.p.z }; }
     ui.hinweis(naechste ? 'Mit ' + naechste.def.name + ' reden' : iaNah ? iaNah.text : null);
     if (!imGespraech && !gesperrt() && (input.state.actionTap || input.state.action)) { if (naechste) rede(naechste.id); else if (iaNah) aktion(iaNah); }
@@ -1856,8 +2098,15 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     // weiterspielen: an den Anfang des Schritts (mit Ort, ohne Einleitung)
     const st = SCHRITTE[S.schritt];
     const ort = welt.orte[(st.start && st.start.teleport) || (S.schritt ? 'halle' : 'busAnkunft')];
+    const pause = !neu && S.zuletzt ? Date.now() - S.zuletzt : 0;
     await starteSchritt(S.schritt, neu ? true : false);
     if (!neu && ort) steuerung.teleport(ort.x, ort.z, ort.yaw);
+    // Länger nicht gespielt (Unterricht ist oft eine Woche später): kurzer Rückblick, wo man steht
+    if (pause > 18 * 3600 * 1000 && st) {
+      const tage = Math.round(pause / 86400000), kap = st.kap || 1;
+      const freunde = besteFreunde().slice(0, 2).map((id) => LEUTE[id] && LEUTE[id].name).filter(Boolean);
+      setTimeout(() => ui.bild('Was bisher geschah', 'Kapitel ' + kap + ' „' + (KAPITEL[kap] || '') + '“. ' + (freunde.length ? 'Dir nahe: ' + freunde.join(' und ') + '. ' : '') + 'Jetzt: ' + st.titel + ' – ' + st.ziel + (tage >= 2 ? ' (Du warst ' + tage + ' Tage weg.)' : ''), 7), 900);
+    }
   }
 
   // Tests
@@ -1869,6 +2118,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     rede, los, audio, SITZ, input, get spruch() { return { wer: !!spruchWer }; }, get naechste() { return naechste && naechste.id; },
     get probe() { return probe; }, set mutTempo(v) { mutTempo = v; },
     daten: { SCHRITTE, STATISTEN, LEUTE, BLAETTER, MATHE, LEKTIONEN, GESPRAECHE }, ia, aktion, get iaNah() { return iaNah && iaNah.tu; },
+    hs, tt3d, zufall, get spieler() { return spieler; }, handschlagMit,
   };
 
   onProgress(1, '');

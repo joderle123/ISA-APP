@@ -209,7 +209,8 @@ export function createAudio({ context = null, destination = null } = {}) {
       if (s === 'sand') burst(t, 0.09, 'bandpass', 1500 + Math.random() * 400, 0.8, 0.07 * v);
       else if (s === 'wood') { tone('sine', 150 + Math.random() * 30, t, 0.003, 0.14 * v, 0.08); burst(t, 0.03, 'highpass', 2500, 0.7, 0.03 * v); }
       else if (s === 'water') burst(t, 0.16, 'bandpass', 900 + Math.random() * 500, 0.9, 0.09 * v);
-      else if (s === 'rock') { burst(t, 0.05, 'bandpass', 2400, 1.2, 0.06 * v); tone('sine', 110, t, 0.002, 0.05 * v, 0.05); }
+      else if (s === 'rock') { burst(t, 0.05, 'bandpass', 2000 + Math.random() * 800, 1.2, 0.06 * v); tone('sine', 100 + Math.random() * 25, t, 0.002, 0.05 * v, 0.05); burst(t + 0.045 + Math.random() * 0.02, 0.03, 'bandpass', 3000 + Math.random() * 600, 1.4, 0.025 * v); }
+      else if (s === 'tile') { burst(t, 0.035, 'highpass', 2800 + Math.random() * 900, 0.9, 0.05 * v); tone('sine', 170 + Math.random() * 40, t, 0.002, 0.06 * v, 0.06); burst(t + 0.05 + Math.random() * 0.02, 0.025, 'highpass', 3600, 0.9, 0.022 * v); }
       else burst(t, 0.07, 'lowpass', 900 + Math.random() * 300, 0.7, 0.07 * v);
     },
     jump() {

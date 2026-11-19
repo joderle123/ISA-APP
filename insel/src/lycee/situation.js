@@ -8,7 +8,7 @@ const esc = (s) => String(s == null ? '' : s).replace(/[&<>"]/g, (c) => ({ '&': 
 const warte = (ms) => new Promise((ok) => setTimeout(ok, ms));
 const STIMME = { kopf: ['Kopf', '#5f7d9e'], bauch: ['Bauch', '#b0784a'], stolz: ['Stolz', '#b5485d'] };
 
-export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) {
+export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech = null } = {}) {
   const tasten = new Set();
   const halte = (f) => { const h = (e) => f(e); document.addEventListener('keydown', h, true); tasten.add(h); return h; };
   const loesche = () => { tasten.forEach((h) => document.removeEventListener('keydown', h, true)); tasten.clear(); };
@@ -141,10 +141,17 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
       if (zu) return; zu = true; loesche();
       ui.ebeneZu(); ok({ flags, aktionen: gemacht, lacher: lach.reduce((s, l) => s + Math.round(l.n), 0), ich: lacher });
     };
-    halte((e) => { if (e.code === 'KeyE' || e.code === 'Escape') { e.preventDefault(); e.stopPropagation(); if (!flags.__weg) { flags.weg = true; } fertig(); } });
+    // E = schneller (nächste Nachricht sofort; am Ende: weiter). Nur Esc oder der Knopf legen das Handy weg – sonst
+    // würde, wer aus Gewohnheit E drückt, still eine Entscheidung verlieren.
+    halte((e) => {
+      if (e.code === 'Escape') { e.preventDefault(); e.stopPropagation(); flags.weg = true; fertig(); return; }
+      if (e.code === 'KeyE' || e.code === 'Enter' || e.code === 'Space') { e.preventDefault(); e.stopPropagation();
+        const n = schlange.slice().sort((a, b) => a.at - b.at)[0];
+        if (n) { if (n.at > t) beginn -= (n.at - t) * 1000; } else fertig(); }
+    });
     k.querySelector('[data-x="weg"]').onclick = () => { flags.weg = true; fertig(); };
     leisteNeu();
-    let tipptBis = 0; const beginn = performance.now();
+    let tipptBis = 0, beginn = performance.now();
     const loop = () => {
       if (zu) return;
       const jetzt = performance.now(), dt = Math.min(0.25, (jetzt - letzt) / 1000); letzt = jetzt; t = (jetzt - beginn) / 1000;   // echte Uhr, auch auf langsamen Geräten
@@ -479,7 +486,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
       '<div class="sz-leute"><div class="sz-person" style="--f:' + esc(W.farbe) + '"><i class="sz-ava">' + esc(W.name[0]) + '</i><span>' + esc(W.name) + '</span></div><div class="sz-publikum">Steckbrief: <b class="sz-zeilen">0</b> Zeilen</div></div>' +
       '<div class="sz-balken"><div class="sz-balken-f"></div><span>erzählt</span></div><div class="sz-bühne"></div><div class="sz-karten ly-d-optionen"></div></div>');
     const bühne = k.querySelector('.sz-bühne'), karten = k.querySelector('.sz-karten'), fill = k.querySelector('.sz-balken-f'), zeilen = k.querySelector('.sz-zeilen');
-    let offen = 0, z = 0; const arten = {};
+    let offen = def.startOffen || 0, z = 0; const arten = {};
     const zeige = () => { fill.style.width = Math.max(4, Math.min(100, offen * 20)) + '%'; fill.style.background = '#5fa0d0'; zeilen.textContent = z; };
     const blase = (wer, text, farbe, ich) => { bühne.insertAdjacentHTML('beforeend', '<div class="sz-blase' + (ich ? ' ich' : '') + '" style="--f:' + farbe + '"><b>' + esc(wer) + '</b>' + esc(ersetze(text)) + '</div>'); while (bühne.children.length > 4) bühne.firstChild.remove(); };
     (async () => {
@@ -825,12 +832,20 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
       '<div class="sz-take"></div><div class="sz-bühne"></div><div class="sz-karten sz-raster ly-d-optionen"></div></div>');
     const take = k.querySelector('.sz-take'), bühne = k.querySelector('.sz-bühne'), karten = k.querySelector('.sz-karten');
     let richtig = 0, falsch = 0;
+    // Echte Stimme (Vorlese-Stimme des Geräts): Tempo und Tonhöhe je Gefühl, Pausen über „…“. Ohne Stimme: nur Regie-Text.
+    const STIMMLAGE = { freude: { rate: 1.35, pitch: 1.5, txt: (x) => x + '!' }, trauer: { rate: 0.6, pitch: 0.7, txt: (x) => x.replace(/ (\S+)\.?$/, ' … $1.') },
+      wut: { rate: 1.15, pitch: 0.75, txt: (x) => x.split(' ').join('. ') + '!' }, angst: { rate: 1.25, pitch: 1.3, txt: (x) => x.replace(/ /, ' … ') + '?' },
+      ekel: { rate: 0.7, pitch: 0.6, txt: (x) => x.replace(/e/, 'eee') }, ueberraschung: { rate: 1.05, pitch: 1.7, txt: (x) => x.replace(/ (\S+)\.?$/, ' … $1?!') } };
+    const kannHoeren = !!(speech && speech.available);
+    const sprich = (g) => { if (!kannHoeren) return; const v = STIMMLAGE[g] || {}; speech.speak((v.txt || ((x) => x))(def.satz.replace(/\.$/, '')), { interrupt: true, voice: { rate: v.rate, pitch: v.pitch } }); };
+    const hoerKnopf = (g) => (kannHoeren ? '<button type="button" class="sz-hoer" data-g="' + g + '">🔊 Nochmal hören</button>' : '');
+    take.addEventListener('click', (e) => { const b = e.target.closest('.sz-hoer'); if (b) { e.stopPropagation(); sprich(b.dataset.g); } });
     const gefKnoepfe = () => ids.map((id, j) => '<button type="button" data-i="' + j + '" style="--f:' + GEF[id][1] + '"><span>' + GEF[id][2] + ' ' + GEF[id][0] + '</span></button>').join('');
     (async () => {
       for (let n = 0; n < def.takes.length; n++) {
         const t = def.takes[n];
-        take.innerHTML = '<small>Take ' + (n + 1) + ' · ' + esc(t.wer.name) + '</small><b>„' + esc(def.satz) + '“</b><em>🔊 ' + esc(ersetze(t.regie)) + '</em>';
-        bühne.innerHTML = '';
+        take.innerHTML = '<small>Take ' + (n + 1) + ' · ' + esc(t.wer.name) + '</small><b>„' + esc(def.satz) + '“</b><em>🔊 ' + esc(ersetze(t.regie)) + '</em>' + hoerKnopf(t.gefuehl);
+        bühne.innerHTML = ''; sprich(t.gefuehl);
         const j = await karteWahl(karten, gefKnoepfe(), 6);
         const g = ids[j]; karten.innerHTML = '';
         if (g === t.gefuehl) richtig++; else falsch++;
@@ -841,11 +856,12 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
       take.innerHTML = '<small>Dein Take</small><b>„' + esc(def.satz) + '“</b><em>Jetzt du. Mit welchem Gefühl sprichst du ihn?</em>'; bühne.innerHTML = '';
       const j = await karteWahl(karten, gefKnoepfe(), 6);
       const eigene = ids[j]; karten.innerHTML = '';
-      take.innerHTML = '<small>Dein Take</small><b class="sz-take-' + eigene + '">„' + esc(def.satz) + '“</b>';
+      take.innerHTML = '<small>Dein Take</small><b class="sz-take-' + eigene + '">„' + esc(def.satz) + '“</b>' + hoerKnopf(eigene); sprich(eigene);
       const r = (def.reaktion || {})[eigene];
       bühne.innerHTML = r ? blaseHtml(r[0], r[1]) : '';
       await warte(1200);
-      weiterKnopf(karten, { richtig, falsch, eigene }, ok, '<div class="sz-sys">' + esc('Gleicher Satz, ' + def.takes.length + ' Gefühle. Die Wörter sagen wenig – die Stimme sagt viel.') + '</div>');
+      await warte(kannHoeren ? 1800 : 0);
+      weiterKnopf(karten, { richtig, falsch, eigene }, (r) => { if (speech) speech.cancel(); ok(r); }, '<div class="sz-sys">' + esc('Gleicher Satz, ' + def.takes.length + ' Gefühle. Die Wörter sagen wenig – die Stimme sagt viel.') + '</div>');
     })();
   });
 
@@ -1473,7 +1489,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
   // → { anteile: { art: % }, top, geliked: n }
   ui.feedSim = (def) => new Promise((ok) => {
     const A = def.arten, ids = Object.keys(A), gewicht = Object.fromEntries(ids.map((a) => [a, 1])), gezeigt = Object.fromEntries(ids.map((a) => [a, 0]));
-    const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || '') + '</span><b>📱 Du gegen den Algorithmus</b></div>' +
+    const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || '') + '</span><b>📱 Du gegen die App</b></div>' +
       '<p class="sz-info">Wisch durch deinen Feed. ❤️ = gefällt mir, ⏭ = weiter. Langes Gucken merkt sich die App auch.</p>' +
       '<div class="sz-feed"></div><div class="sz-feed-balken"></div><div class="sz-karten ly-d-optionen sz-raster"></div></div>');
     const feed = k.querySelector('.sz-feed'), balken = k.querySelector('.sz-feed-balken'), karten = k.querySelector('.sz-karten');
@@ -1491,12 +1507,14 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
         const p = zieh(); gezeigt[p.art]++;
         feed.innerHTML = '<div class="sz-post" style="--f:' + A[p.art][1] + '"><small>' + esc(A[p.art][0]) + '</small><i>' + (p.sy || '📷') + '</i><b>' + esc(ersetze(p.t)) + '</b></div>';
         zeigBalken();
+        // Lesezeit zählt nicht als Interesse: erst wer NACH dem Lesen hängen bleibt, „füttert“ die App (langsames Lesen ist okay)
+        const grenze = 3.5 + ersetze(p.t).split(/\s+/).length * 0.4 + (ui.autoVorlesen ? 2 : 0);
         const t0 = performance.now(); const auge = document.createElement('em'); auge.className = 'sz-auge'; feed.firstChild.appendChild(auge);
-        const blick = setInterval(() => { const s = (performance.now() - t0) / 1000; auge.textContent = '👁 ' + s.toFixed(1) + ' s' + (s > 3.5 ? ' · Algorithmus merkt sich das' : ''); auge.classList.toggle('merkt', s > 3.5); }, 100);
-        const j = await karteWahl(karten, '<button type="button" data-i="0"><span>❤️ Gefällt mir</span></button><button type="button" data-i="1"><span>⏭ Weiter</span></button>', 2, { zeit: 6, still: 2 });
+        const blick = setInterval(() => { const s = (performance.now() - t0) / 1000; auge.textContent = '👁 ' + s.toFixed(1) + ' s' + (s > grenze ? ' · die App merkt sich das' : ''); auge.classList.toggle('merkt', s > grenze); }, 100);
+        const j = await karteWahl(karten, '<button type="button" data-i="0"><span>❤️ Gefällt mir</span></button><button type="button" data-i="1"><span>⏭ Weiter</span></button>', 2, { zeit: Math.max(6, grenze + 2.5), still: 2 });
         clearInterval(blick);
         const verweilt = (performance.now() - t0) / 1000;
-        if (j === 0) { gewicht[p.art] += 2; geliked++; } else if (j === 2 || verweilt > 3.5) gewicht[p.art] += 1;   // Hängenbleiben zählt auch
+        if (j === 0) { gewicht[p.art] += 2; geliked++; } else if (j === 2 || verweilt > grenze) gewicht[p.art] += 1;   // Hängenbleiben zählt auch
         else gewicht[p.art] = Math.max(0.4, gewicht[p.art] - 0.3);
         karten.innerHTML = '';
         await warte(250);
@@ -1543,7 +1561,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t } = {}) 
   // Am Ende: Wie voll startest du in den nächsten Morgen? def: { start, stationen: [{ zeit, t, wahl: [{ t, akku, antwort }] }] } → { akku, morgen }
   ui.akkuTag = (def) => new Promise((ok) => {
     let akku = def.start || 70;
-    const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || '') + '</span><b>🔋 Dein Akku-Tag</b></div>' +
+    const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || '') + '</span><b>🔋 ' + esc(def.titel || 'Dein Akku-Tag') + '</b></div>' +
       '<div class="sz-akku"><div class="sz-akku-k"><i></i></div><b>70 %</b></div><div class="sz-tag"></div>' +
       '<div class="sz-fall" style="--f:#2b3a55"><b class="sz-akku-zeit"></b><p class="sz-akku-t"></p></div><div class="sz-bühne"></div><div class="sz-karten ly-d-optionen"></div></div>');
     const fuell = k.querySelector('.sz-akku-k i'), proz = k.querySelector('.sz-akku b'), zeit = k.querySelector('.sz-akku-zeit'), text = k.querySelector('.sz-akku-t'), tag = k.querySelector('.sz-tag'), bühne = k.querySelector('.sz-bühne'), karten = k.querySelector('.sz-karten');

@@ -11,7 +11,7 @@ export const SCHRITTE_N7 = [
     start: { teleport: 'busAnkunft', gespraech: 'n7_chat' },
     leute: { ben: [-20.5, 42.3, -1.9] },
     fertig: { reden: 'ben', gespraech: 'n7_ben' } },
-  { id: 'k7_skills', kap: 7, tag: 'Montag', uhr: 9.9, titel: 'Skills: Welches Tier bist du im Streit?', ziel: 'Aula. Auf dem Boden liegen vier Tierbilder.', marker: 'kaya',
+  { id: 'k7_skills', kap: 7, tag: 'Montag', uhr: 9.9, titel: 'Skills: Welches Tier bist du im Streit?', ziel: 'Aula. Auf dem Boden liegen fünf Tierbilder.', marker: 'kaya',
     start: { teleport: 'eingangHof' },
     leute: { kaya: [-14, -55.5, Math.PI], mesenberg: [-12.2, -55.8, -2.8], ...AULA },
     fertig: { reden: 'kaya', gespraech: 'n7_skills' } },
@@ -143,22 +143,6 @@ const BUEHNE = {
   ],
 };
 
-// ---------- Spaß, Streit oder Mobbing? (E26 Ecken-Lauf) ----------
-const ECKEN_M = {
-  wo: 'Aula · Ecken-Lauf', titel: 'Spaß, Streit oder Mobbing?', zeit: 9,
-  info: 'Mobbing: immer wieder, mit Absicht, Stärkere gegen eine Person.',
-  faecher: [{ id: 'spass', t: 'Spaß', sy: '😄', f: '#3fa66b' }, { id: 'streit', t: 'Streit', sy: '⚡', f: '#e9a23b' }, { id: 'mobbing', t: 'Mobbing', sy: '🚨', f: '#d6452f' }],
-  karten: [
-    { t: 'Ben und Jo ärgern sich gegenseitig. Beide lachen.', ziel: 'spass' },
-    { t: 'Jo und Luca streiten einmal heftig am Korb.', ziel: 'streit' },
-    { t: 'Seit Wochen postet jemand Fotos von Noah. Alle lachen, er nie.', ziel: 'mobbing' },
-    { t: 'Jemand wird aus jeder Gruppe rausgeworfen. Immer dieselbe Person.', ziel: 'mobbing' },
-    { t: 'Ayla und Lina sind sauer wegen einer Bandprobe.', ziel: 'streit' },
-    { t: 'Ein Spitzname. Die Person lacht. Aber nur, wenn alle gucken.', ziel: null, wer: F.mila, sagt: 'Schwer. Lachen heißt nicht, dass es okay ist.' },
-  ],
-  ende: 'Mobbing hört selten von allein auf. Hilfe holen wirkt.',
-};
-
 export const GESPRAECHE_N7 = {
   n7_chat: [
     ['erzaehler', 'Sonntagabend. Dein Handy ist still. Zu still. Dann kommt eine Nachricht. Dann noch eine.'],
@@ -170,6 +154,16 @@ export const GESPRAECHE_N7 = {
         sorry: { merke: 'lucaSorry' },
         still: {},
       } },
+    // Jugendwelt heute: Screenshots aus der anderen Gruppe – Schutz oder neue Spirale?
+    ['erzaehler', 'Später. Eine private Nachricht. Lina.'],
+    ['lina', '(Nachricht) ich bin auch in Lucas neuer Gruppe. hab nicht nein gesagt.'],
+    ['lina', '(Nachricht) soll ich dir Screenshots schicken? von allem?'],
+    { wahl: [
+      { t: '„Nein. Dann machen wir genau das, was sie machen.“', staerke: 'klar', herz: { lina: 1 }, merke: 'spionNein', dann: [['lina', '(Nachricht) ok. ehrlich gesagt bin ich erleichtert.']] },
+      { t: '„Nur wenn jemand in Gefahr ist. Dann zu Herrn Kuedes.“', staerke: 'hilfe', herz: { lina: 2 }, merke: 'spionGefahr', dann: [['lina', '(Nachricht) deal. wir müssen nicht alles wissen.']] },
+      { t: '„Ja. Schick alles.“', merke: 'spionJa', dann: [['lina', '(Nachricht) ok …'], ['erzaehler', 'Bis Mitternacht kommen 46 Screenshots. Du liest alle.'], ['erzaehler', 'Danach geht es dir schlechter. Nicht besser.']] },
+    ] },
+    ['lina', '(Nachricht) vielleicht verlass ich die Gruppe einfach. 🕊️'],
   ],
   n7_ben: [
     ['ben', 'Brötchen? Eins für dich. Das andere auch.'],
@@ -186,6 +180,7 @@ export const GESPRAECHE_N7 = {
     ['kaya', 'Fünf Tiere. Hai, Schildkröte, Teddy, Fuchs, Eule. Wer reagiert wie?'],
     { szene: 'sort', id: 'tiere', def: TIERE, ausgang: (r) => (r.antworten[5] === 'schildi' ? 'schildi' : 'eule'),
       folgen: { schildi: { dann: [['ayla', 'Schildkröte. Digga. Ohne Pause kein Takt.']] }, eule: {} } },
+    { tu: 'n7_tierWechsel' },
     ['kaya', 'Und dann die Treppe. Jeder Streit hat Stufen.'],
     ['kaya', 'Oben kommt man schwerer raus.'],
     ['mesenberg', 'Meinung, Sticheln, Beleidigen, Drohen, Knall. Merkt euch die Stufen.'],
@@ -203,12 +198,16 @@ export const GESPRAECHE_N7 = {
       folgen: {
         nein: { staerke: 'neinsagen', herz: { dario: 1, kenan: 1 }, merke: 'druckNein', dann: [['erzaehler', 'Du gehst. Deine Knie sind weich. Aber du gehst.']] },
         wackel: { merke: 'druckWackel', dann: [['erzaehler', 'Kein Ja. Kein klares Nein. Luca grinst. Er wird wiederkommen.']] },
-        ja: { herz: { noah: -2, dario: -1 }, merke: 'druckJa', dann: [['erzaehler', 'Du hast Ja gesagt. Passiert unter Druck.'], ['erzaehler', 'Ein Nein geht auch später. Du schreibst: „Doch nicht.“']] },
+        ja: { herz: { noah: -2, dario: -1 }, merke: 'druckJa', dann: [['erzaehler', 'Du hast Ja gesagt. Passiert unter Druck.'], ['erzaehler', 'Im Bauch fühlt es sich falsch an. Noch kannst du was tun.'],
+          { wahl: [
+            { t: '(„Doch nicht.“ schreiben.)', staerke: 'neinsagen', merke: 'druckZurueck', dann: [['erzaehler', 'Ein Nein geht auch später. Das zählt genauso.'], ['noah', '(schreibt dir) gut gemacht.']] },
+            { t: '(Dabei bleiben. Nichts schreiben.)', merke: 'druckGeblieben', dann: [['erzaehler', 'Du bleibst dabei. Es bleibt schwer im Bauch.'], ['erzaehler', 'Morgen kannst du immer noch Nein sagen. Oder mit jemandem reden.']] },
+          ] }] },
       } },
     { tu: 'n7_darioDanach' },
   ],
   n7_streit: [
-    ['erzaehler', 'Jo hat die Gruppe verlassen. Luca hat es gemerkt.'],
+    ['erzaehler', 'Jo ist inzwischen raus aus „7P2 echte“. Luca hat es gemerkt.'],
     { szene: 'treppe', id: 'treppe', def: TREPPE, ausgang: (r) => (!r.ausgestiegen ? 'knall' : r.stufe <= 2 ? 'frueh' : 'spaet'),
       folgen: {
         frueh: { staerke: 'ruhig', herz: { jo: 2, ben: 1 }, merke: 'treppeFrueh', dann: [['jo', 'Danke. Ich war bei 80. Mindestens.']] },
@@ -226,18 +225,80 @@ export const GESPRAECHE_N7 = {
       } },
     { tu: 'n7_noahDanach' },
   ],
+  // „Zurückspulen“ (statt Ecken-Lauf): vier Bilder dieser Woche, ohne Namen – was war es, wo standest DU, was tust du nächstes Mal
   n7_ende: [
-    ['kaya', 'Letzte Stunde der Woche. Spaß, Streit oder Mobbing? Ab in die Ecken.'],
-    { szene: 'sort', id: 'mobbing', def: ECKEN_M, ausgang: () => 'ok', folgen: { ok: {} } },
-    ['kaya', 'Donnerstag, Kantine. Ihr wart alle da. Nur eine Frage.'],
-    ['kaya', 'Wo steht ihr, wenn es wieder passiert? Nur denken.'],
-    ['kaya', '(nach der Stunde, leise) Noah, kurz Zeit? Nur wir zwei.'],
-    ['erzaehler', 'Noah nickt. Die beiden gehen raus.'],
+    ['kaya', 'Letzte Stunde der Woche. Heute spulen wir zurück. Vier Bilder. Ohne Namen.'],
+    ['kaya', 'Vorher hab ich Noah gefragt, ob wir über Donnerstag reden dürfen.'],
+    ['kaya', 'Er hat Ja gesagt. Danke, Noah.'],
+    ['erzaehler', 'Bild 1: Sonntagabend. Eine neue Gruppe. Einer nach dem anderen fliegt raus.'],
+    { wahl: [
+      { t: 'Spaß.', dann: [['kaya', 'Für wen? Für die drin. Nicht für die, die rausfliegen.']] },
+      { t: 'Streit.', dann: [['kaya', 'Streit ist zwischen zwei, die sich wehren können. Hier wurde ausgesucht.']] },
+      { t: 'Mobbing.', staerke: 'lesen', dann: [['kaya', 'Ja. Immer wieder, mit Absicht, gegen Einzelne.']] },
+    ] },
+    ['erzaehler', 'Bild 2: Skate-Ecke. Drei gegen einen. „Mach mit oder du bist raus.“'],
+    { wahl: [
+      { t: 'Gruppendruck.', staerke: 'lesen', dann: [['kaya', 'Genau. Druck ist noch kein Mobbing. Aber der Anfang davon.']] },
+      { t: 'Spaß unter Freunden.', dann: [['kaya', 'Freunde drohen nicht mit „raus“.']] },
+    ] },
+    { tu: 'n7_rolle2' },
+    ['erzaehler', 'Bild 3: Kantine. Einer filmt. Einer sitzt allein. Viele lachen.'],
+    { wahl: [
+      { t: 'Mobbing.', staerke: 'lesen', dann: [['kaya', 'Ja. Und das Lachen gehört dazu. Ohne Publikum keine Bühne.']] },
+      { t: 'Ein dummer Witz.', dann: [['kaya', 'Für den, der allein sitzt, ist es kein Witz. Seit Wochen nicht.']] },
+    ] },
+    { tu: 'n7_rolle3' },
+    ['erzaehler', 'Bild 4: Am Korb. Ben und Jo ärgern sich. Beide lachen. Dann tauschen sie.'],
+    { wahl: [
+      { t: 'Spaß.', staerke: 'lesen', dann: [['kaya', 'Ja. Beide lachen, beide dürfen. Und beide können aufhören.']] },
+      { t: 'Mobbing.', dann: [['ben', 'Hey! Ich ärger ihn. Er ärgert mich. Das ist Liebe.'], ['kaya', 'Stimmt. Gleich stark, beide lachen: Spaß.']] },
+    ] },
+    ['kaya', 'Und nächstes Mal? Ein Schritt. Nur einer.'],
+    { wahl: [
+      { t: '„Ich setz mich dazu.“', staerke: 'mut', merke: 'planDazu', dann: [['noah', '(leise) Das hilft mehr, als man denkt.']] },
+      { t: '„Ich lach nicht mit. Und sag Stopp, wenn ich kann.“', staerke: 'klar', merke: 'planStopp', dann: [] },
+      { t: '„Ich hol Hilfe. Herrn Kuedes oder das SePAS.“', staerke: 'hilfe', merke: 'planHilfe', dann: [['kaya', 'Das ist kein Petzen.'], ['kaya', 'Petzen will Ärger machen. Hilfe holen will Ärger beenden.']] },
+      { t: '„Ich schreib danach privat: Alles okay?“', staerke: 'einbeziehen', merke: 'planPrivat', dann: [] },
+    ] },
+    ['kaya', 'Mobbing hört selten von allein auf. Hilfe holen wirkt.'],
+    ['kaya', 'Und einer, der sich dazusetzt, auch.'],
     { tu: 'n7_schluss' },
   ],
 };
 
 export const tunN7 = (c) => ({
+  // Wo standest DU? Kein Urteil – nur ein Spiegel
+  n7_rolle2: () => { const m = c.S.merke;
+    return [['erzaehler', m.druckNein ? 'Du warst da. Du hast Nein gesagt. Drei gegen dich.' : m.druckZurueck ? 'Du hast erst Ja gesagt. Dann „doch nicht“. Das zählt.' : m.druckJa ? 'Du hast Ja gesagt. Unter Druck passiert das. Du weißt jetzt, wie es sich anfühlt.' : 'Du warst nicht dabei. Aber du hast davon gehört.']]; },
+  n7_rolle3: () => { const m = c.S.merke;
+    return [['erzaehler', m.buehneGekippt ? 'Du bist zu seinem Tisch gegangen. Die Bühne ist gekippt.' : m.buehneHalb ? 'Du hast nicht mitgelacht. Das hat jemand gemerkt.' : 'Du warst im Publikum. Wie die meisten. Publikum kann eine Bühne kippen.']]; },
+  // Tier-Wechsel: Der Streit mit Jo vom Sportfest (Kap. 3) – als welches Tier warst du? Jetzt nochmal, als ein anderes.
+  // Sinn: „Gut ist, wechseln zu können“ wird erlebt, nicht nur gesagt.
+  n7_tierWechsel: () => {
+    const m = c.S.merke;
+    const war = m.joKnall || m.joSauer ? 'hai' : m.joVersoehnt ? 'eule' : 'teddy';
+    const NAME = { hai: '🦈 Hai', eule: '🦉 Eule', teddy: '🧸 Teddy', schildi: '🐢 Schildkröte', fuchs: '🦊 Fuchs' };
+    const REAKT = {
+      hai: [['du', '„Du hast den Stab verloren. Nicht ich. Punkt.“'], ['jo', '(Spiel-Jo, laut) Ach JA? Dann lauf doch allein!'], ['kaya', 'Hai gegen Hai. Beide oben auf der Treppe.']],
+      schildi: [['du', '(Schultern hoch. Weggehen. Nichts sagen.)'], ['jo', '(Spiel-Jo) … Hallo? Ich red mit dir!'], ['kaya', 'Abtauchen schützt kurz. Aber Jo bleibt allein mit seiner Wut.']],
+      teddy: [['du', '„Okay, okay. Meine Schuld. Alles meine Schuld.“'], ['jo', '(Spiel-Jo, leiser) … So hab ich’s auch nicht gemeint.'], ['kaya', 'Frieden schnell. Aber war es wirklich deine Schuld?']],
+      fuchs: [['du', '„Wir waren beide zu schnell. Nächstes Mal üben wir den Wechsel.“'], ['jo', '(Spiel-Jo) … Fair. Halbe-halbe.'], ['kaya', 'Fuchs. Jeder gibt ein Stück. Oft gut genug.']],
+      eule: [['du', '„Du wolltest gewinnen. Ich auch. Was hilft uns beiden fürs nächste Mal?“'], ['jo', '(Spiel-Jo, überrascht) … Training. Zusammen?'], ['kaya', 'Eule. Dauert länger. Hält länger.']],
+    };
+    const andere = Object.keys(REAKT).filter((t) => t !== war);
+    return [
+      ['kaya', 'Jetzt ihr. Erinnert euch an einen Streit. Vom Sportfest vielleicht.'],
+      ['erzaehler', 'Der Stab fällt. Jo brüllt. Du weißt noch, was du gemacht hast.'],
+      ['erzaehler', 'Damals warst du eher: ' + NAME[war] + '.'],
+      ['kaya', 'Gleiche Szene. Anderes Tier. Jo spielt mit.'],
+      ['jo', '(grinst) Ich bin ein sehr guter Wütender. Ich hab Erfahrung.'],
+      { wahl: andere.map((t) => ({ t: NAME[t] + ' ausprobieren', merke: 'tierNeu_' + t, staerke: t === 'eule' || t === 'fuchs' ? 'klar' : undefined, dann: [
+        ...REAKT[t],
+        ['jo', t === 'eule' || t === 'fuchs' ? '(echt jetzt, leise) Hätten wir damals auch so machen können.' : '(lacht) Okay. Das war ein anderes Ende.'],
+      ] })) },
+      ['kaya', 'Niemand ist ein Tier. Ihr könnt wechseln. Das ist der Trick.'],
+    ];
+  },
   n7_benStart: () => (c.S.merke.lucaSorry ? [['ben', 'Du hast Luca „sorry“ geschrieben? Versteh ich. Druck macht das.'], ['ben', 'Aber du schuldest ihm nichts. Gar nichts.']] : []),
   n7_darioDanach: () => (c.S.merke.druckNein ? [['erzaehler', 'Hinter dir Schritte. Dario.'], ['dario', '(leise) Das war … stark. Ich kann das nicht. Nein sagen. Zu ihm.']] : []),
   n7_noahDanach: () => (!c.S.merke.buehneHalb && !c.S.merke.buehneGekippt ? [['noah', '(später, leise) Morgen sitz ich wieder da. Gleicher Tisch.']] : [

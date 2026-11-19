@@ -330,3 +330,71 @@ Ziel war ≤ 200 Aufrufe und ≤ 400k Dreiecke – überall erreicht. Was es geb
   Gruß „beim Sportfest gesehen“ nicht mehr vor dem Sportfest.
 - Offen für später (aus der Analyse): pro Kapitel ein Schritt mit Wahl des Weges und einer zum Hinlaufen; Finale und
   Darios Geständnis interaktiver; Freunde laufen mit; Freunde an Stammplätzen; laufende Uhr.
+
+## 19.11. – AAA-Techniken übertragen (Techniken großer Spiele, keine Inhalte, Figuren oder Bilder kopiert)
+Quellen der Recherche: GDC-Vorträge und Fachartikel zu Kamera, Animation, Vegetation, Dialogen, Game Feel.
+- Blick: Kopf und Nacken drehen sich weich zum Ziel (Grenzen wie beim Menschen, Nacken 40 %, Kopf 60 %). Im Gespräch
+  schauen alle zur sprechenden Person, die Spielfigur schaut, wer redet oder wer in der Nähe ist. Leute am Rand schauen
+  nur kurz her (2–3 s) und dann wieder weg – Dauerstarren wirkt unheimlich.
+- Gesten: Wer spricht, bewegt die Hände; danach zurück in die eigene Haltung.
+- Gesprächskamera nach Regeln: Schuss/Gegenschuss über die Schulter, beide auf derselben Seite (180°-Regel), harter
+  Schnitt, nie durch Wände (sonst normale Einstellung). Hintergrund wird weich (Schärfentiefe, mit feinem Korn statt
+  Treppenkanten), Namensschilder blenden im Gespräch aus, die Kamera „atmet“ kaum merklich.
+- Bewegung: Körper neigt sich in Kurven und beim Anlaufen; Kamera dreht erst 1,2 s nach eigener Kamera-Bewegung wieder
+  von selbst nach (die Absicht des Spielers geht vor) und schaut leicht in Laufrichtung voraus.
+- Figuren: Atmung (Brustkorb), jede Figur mit eigenem Ruhe-Tempo und eigenem Einstieg in die Animation – niemand
+  wippt im Gleichtakt.
+- Welt: Baumkronen wiegen sich im Wind (nur im Vertex-Shader, kostet fast nichts); weiche Wolkenschatten ziehen über
+  Hof, Rasen und Straße; drinnen schwebt am Tag feiner Staub im Licht.
+- Klang: Schritte mit Ferse und Ballen, je nach Boden Holz, Fliesen, Pflaster oder Rasen, jedes Mal etwas anders.
+- Gefühl: kurze Vibration auf Handys beim Reden und bei Antworten (nicht bei „weniger Bewegung“); erledigte Ziele werden
+  sichtbar abgehakt, das neue Ziel gleitet hinein.
+- Fotomodus (📷 oder Taste C): HUD weg, Kamera um die eigene Figur drehen, Pose (stehen, winken, reden, schauen),
+  Filter (normal, warm, kühl, S/W, Retro), Unschärfe, Raster für den Bildaufbau, Bild als PNG speichern.
+- Bewusst nicht übernommen: Kamera-Wackeln bei Treffern (passt nicht zu einem ruhigen Schulspiel), Sammel-Objekte ohne
+  Bedeutung, Lichtschächte als Flächen (wirken auf Tablets schnell falsch).
+
+## 19.11. (Abend) – Handschläge, Tischtennis 3D, Skaten 2, Sitzen, Begegnungen, Sequenzen umgebaut
+Auftrag: Charakter und Spaß, echte Handschläge (pro Person eigener), Tischtennis/Skaten schwerer und genauer, Sitzen
+reparieren, jede Sequenz auf Sinn prüfen, AAA-Funktionen. Grundlage: Kritik aller Sequenzen und AAA-Funktionsliste
+(annexe/ARBEITSLISTE-1911.md, dort steht auch, was noch offen ist).
+- Arm- und Hand-IK in figuren.js (Ellbogen, Handfläche, Finger, Faust, Zeigefinger); damit:
+  - Handschläge (handschlag.js): 9 Bausteine (Einschlagen, Faust, Explosion, oben/unten abklatschen, Schnipsen,
+    Ranziehen, Fingerpistolen, Ellbogen). Jede Freundin/jeder Freund hat einen eigenen Handschlag, der zur Person passt.
+    Ab „Kumpel“: Taste G oder 🤝. Erst vormachen, dann aus dem Kopf nachmachen (Zeitbalken, Tasten 1–9, vorgemerkt
+    während der Bewegung); daneben = Hände verfehlen sich. Nach zwei Fehlversuchen Spickzettel. Später zusammen einen
+    neuen erfinden (3–5 Teile). Sinn: Zugehörigkeit, Rituale unter Freunden. Kamera von der Seite, nie durch Wände.
+  - Sitzen: Hände liegen auf den Oberschenkeln statt durch Beine und Stuhl zu hängen.
+- Tischtennis neu in 3D an der echten Platte (tt3d.js): Ballphysik mit Aufsprung, Netz, Netzkante, Topspin;
+  Ballschatten und Spur; Schläger in der Hand; gezählt bis 11 mit 2 Punkten Abstand, Aufschlag alle 2 Punkte.
+  Laufen (A/D, links ziehen), Schlagen mit Zielen (Richtung halten / Tippstelle), lang drücken = Schmetterball
+  (aus tiefem Ball riskant). Gegner mit Reaktionszeit, Laufweg, Fehlern bei schnellen/weiten Bällen; wird stärker.
+- Skaten 2: Anschieben baut Schwung langsam auf, Sprung aufladen (Pop), Tricks in der Luft (Kickflip, Shove-it, 180),
+  müssen vor der Landung fertig sein; schief gelandet = Sturz; saubere Landung (Sprung kurz vor dem Boden) = Bonus;
+  Grind auf Kanten mit Gleichgewicht; Kombo ×2…×5; 90 s mit Zielen Bronze/Silber/Gold.
+- Kleine Begegnungen (zufall.js): Bücher fallen (helfen), Handy auf der Bank (ehrlich abgeben, nicht reinschauen),
+  jemand sitzt allein (dazusetzen). Pinnwand reagiert auf Kapitel und auf das, was man getan hat.
+- 8 neue Abzeichen; Pausenmenü: „Was soll ich tun?“, „Hilfe holen“ (116 111, 8002 1234, 112), „Ich stecke fest“;
+  Speichern beim Wegklicken; „Was bisher geschah“ nach längerer Pause; Einstellungen „Minispiele leichter“, „Vibration“.
+- Sequenzen umgebaut: Kapitel 8 „ehrliche Falle“ (Ben als Köder) → Beweis-Mappe (Fakten rein, Gerüchte und Privates
+  raus, Erwachsene entscheiden); Kapitel 4 Notfallkarte → Ernstfall mit Mila (eigene Karte, bei Rot wirkt der Körper);
+  Kapitel 9 Akku-Tag → Akku-Abend für einen Freund (helfen braucht selbst Akku, Grenzen sind erlaubt);
+  Kapitel 10 Chat → Abstimmung über Chat-Regeln (Regel aus dem Klassenvertrag kehrt zurück); Druck-Runde: die
+  Spielfigur entscheidet selbst, ob sie das Ja zurücknimmt; Finale: eigener Satz zu Darios Entschuldigung.
+- Logik: Zettel am ersten Tag, Kantine/Tipp, Mila im Saal, Busstelle, Monat auf der Zeitkarte, Kuedes schreibt nicht
+  privat abends, Fake über neues Konto, Passwort zurückgeholt, Jo verlässt Gruppe, fünf Tierbilder, „ohne Lächeln“,
+  Live-Chat: E beendet nicht mehr (nur Esc/Knopf), Feed: Lesezeit zählt nicht als Interesse, Freundschaft wächst nicht
+  durch Grammatik, „Erst bremsen“ zählt auch Klartext, „gewartet“ wird gesetzt, „statistisch“/„Algorithmus“ ersetzt.
+
+## 19.11. (Abend, Teil 2) – letzte schwache Sequenzen, Jugendwelt heute
+- Jede umgebaute Sequenz hat eine Folge, die man später merkt (Mila Kap. 4, Plan Kap. 10, Lina im Kunst-Interview, Ayla in Kap. 3).
+- Jugendwelt: je Kapitel ein Online-Moment, immer mit mindestens einer Wahl, die nicht belehrt, sondern etwas tun lässt
+  (zählen, fragen, Einstellungen ändern, Screenshot, Erwachsenen zeigen). Keine Marken- oder App-Namen.
+- KI wird nicht verteufelt: Der KI-Chat in Kap. 9 schickt Dario zu einem Menschen. Angst vor KI-Fakes wird ernst genommen
+  und mit konkreten Schritten beantwortet (Konto privat, Markieren aus, alte Gesichtsfotos archivieren, BEE SECURE).
+- Synchronstudio nutzt die Vorlese-Stimme des Geräts (ohne Stimme: nur Regie-Text wie bisher).
+- Fehler behoben: Beim Skaten wurde „Sprung halten“ nur im ersten Bild erkannt (Eingabe „jump“ statt „jumpHeld“) – der
+  Pop lud nie auf, ein Ollie gab nie Punkte. Jetzt: halten lädt auf, loslassen springt.
+- Lebendige Welt: Lehrkräfte ermahnen freundlich, wer im Gang an ihnen vorbeirennt (eigener Spruch je Person, max. alle 45 s).
+- Sitzen: Figuren rasten auf echte Sitzflächen ein (Stuhl, Bank, Kübelrand, Stufen), Becken auf Sitzhöhe, Beine per IK auf
+  den Boden. Geprüft im Klassenzimmer, auf der Bank und am Kübelrand.

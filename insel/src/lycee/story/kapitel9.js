@@ -41,31 +41,32 @@ const DARIOS_RUCKSACK = {
   ],
 };
 
-// ---------- Akku-Tag (E29) ----------
+// ---------- Akku-Abend (E29): Ein Freund kann nicht schlafen und schreibt dir. Euer Akku – seiner UND deiner. ----------
+// Keine „richtigen“ Antworten: Wer hilft, braucht selbst Akku. Grenzen beim Helfen sind erlaubt.
 const AKKU = {
-  wo: 'Aula · ein ganz normaler Dienstag', start: 70, nacht: 25,
+  wo: 'Aula · Stell dir vor: ein Abend', titel: 'Euer Akku – seiner und deiner', start: 45, nacht: 20,
   stationen: [
-    { zeit: '7:00', t: 'Der Wecker. Du bist müde.', verbrauch: 0, wahl: [
-      { t: 'Aufstehen, Fenster auf, ein Brot.', akku: 10, antwort: 'Kühle Luft. Hunger weg.' },
-      { t: 'Liegen bleiben, Handy checken. 20 Minuten.', akku: -8, antwort: 'Jetzt musst du rennen. Ohne Frühstück.' },
+    { zeit: '16:00', t: 'Ein Freund schreibt: „bin zu hause. kopf ist laut.“', verbrauch: 0, wahl: [
+      { t: 'Zusammen raus. Skaten oder eine Runde laufen.', akku: 10, antwort: 'Er lacht einmal. Laut. Das hat gefehlt.' },
+      { t: 'Video-Call, zusammen Hausaufgaben.', akku: 5, antwort: 'Erledigt. Er ist still, aber nicht allein.' },
+      { t: 'Ein Meme schicken. Weiterzocken.', akku: 1, antwort: 'Er schickt 😂. Mehr nicht.' },
     ] },
-    { zeit: '10:00', t: 'Große Pause.', wahl: [
-      { t: 'Körbe werfen mit Ben.', akku: 8, antwort: 'Bewegung lädt. Komisch, aber wahr.' },
-      { t: 'Kopfhörer, Musik, Ecke.', akku: 3, antwort: 'Etwas Ruhe. Mehr als Scrollen.' },
-      { t: 'Auf der Bank mit Noah. Einfach sitzen.', akku: 6, antwort: 'Stille lädt auch.' },
+    { zeit: '18:30', t: '„hab keinen hunger.“', wahl: [
+      { t: '„Iss was Kleines. Ich auch. Foto davon?“', akku: 6, antwort: 'Ein Foto von einem Toast. Immerhin.' },
+      { t: '„Okay. Kein Stress.“', akku: 1, antwort: 'Fair. Um neun knurrt sein Magen.' },
     ] },
-    { zeit: '12:30', t: 'Mittagessen.', wahl: [
-      { t: 'Curry mit allen.', akku: 8, antwort: 'Essen plus Leute. Doppelt geladen.' },
-      { t: 'Schnell essen, dann allein raus.', akku: 5, antwort: 'Satt. Und ein bisschen Ruhe.' },
+    { zeit: '20:00', t: '„ich schau nur kurz, was @annexe.cam macht.“', wahl: [
+      { t: '„Lass. Das macht es lauter. Spielen wir was?“', akku: 5, antwort: 'Eine Runde. Dann noch eine. Er schaut nicht nach.' },
+      { t: '„Okay. Aber danach Handy weg.“', akku: -3, antwort: 'Danach war nicht danach.' },
     ] },
-    { zeit: '17:00', t: 'Nachmittag zu Hause.', wahl: [
-      { t: 'Erst Hausaufgaben, dann frei.', akku: 4, antwort: 'Der Kopf ist leichter, wenn es erledigt ist.' },
-      { t: 'Drei Stunden Feed.', akku: -10, antwort: 'Wo ist die Zeit hin?' },
-      { t: 'Rausgehen. Skaten. Oder spazieren.', akku: 9, antwort: 'Frische Luft. Der Tag wird länger.' },
+    { zeit: '22:00', t: '„kann nicht schlafen. telefonieren?“', wahl: [
+      { t: '„Ja. Zehn Minuten. Dann schlafen wir beide.“', akku: 8, antwort: 'Er wird ruhiger. Du auch.' },
+      { t: '„Ja. So lange du willst.“', akku: -4, antwort: 'Ihr legt um 0:40 auf. Er fühlt sich gehört. Morgen seid ihr beide leer.' },
+      { t: '„Ich bin zu müde. Morgen an der Haltestelle?“', akku: 2, antwort: 'Er schreibt: „ok. danke.“ Grenzen sind erlaubt – auch beim Helfen.' },
     ] },
-    { zeit: '22:00', t: 'Bettzeit. Eigentlich.', wahl: [
-      { t: 'Handy außerhalb vom Bett. Licht aus.', akku: 15, antwort: 'Einschlafen dauert. Aber es geht leichter.' },
-      { t: '„Nur noch ein Video.“ Bis 1 Uhr.', akku: -20, antwort: 'Es waren 34 Videos.' },
+    { zeit: '22:30', t: 'Seine letzte Nachricht: „handy liegt in der küche. du auch?“', wahl: [
+      { t: '(Handy auch weglegen. Licht aus.)', akku: 8, antwort: 'Einschlafen dauert. Aber es kommt.' },
+      { t: '(Noch kurz scrollen.)', akku: -8, antwort: 'Es waren 34 Videos. Ihr wart beide wach.' },
     ] },
   ],
 };
@@ -104,6 +105,22 @@ export const GESPRAECHE_N9 = {
   n9_morgen: [
     ['erzaehler', 'Montag, 7:12. Gestern Nacht hast du geschrieben: „Haltestelle, früh.“'],
     ['erzaehler', 'Er sitzt schon da. Kapuze auf. Augenringe bis zum Kinn.'],
+    // Jugendwelt heute: eine Serie, die nicht sterben darf – und ein KI-Chat um drei Uhr nachts.
+    ['dario', '(hält das Handy hoch) 214 Tage. Meine Serie mit Luca.'],
+    ['dario', 'Wir reden nicht mehr. Aber ich schick jeden Tag ein schwarzes Bild.'],
+    ['dario', 'Sonst ist die Flamme weg. Dann ist alles weg.'],
+    { wahl: [
+      { t: '„Was passiert, wenn die Flamme ausgeht?“', staerke: 'zuhoeren', herz: { dario: 1 }, merke: 'serieGefragt', dann: [['dario', '… Nichts. Eigentlich nichts.'], ['erzaehler', 'Er drückt nicht auf Senden. Zum ersten Mal.']] },
+      { t: '„Eine Zahl ist keine Freundschaft.“', staerke: 'klar', herz: { dario: 1 }, merke: 'serieGefragt', dann: [['dario', 'Weiß ich. Loslassen tut trotzdem weh.']] },
+    ] },
+    ['dario', 'Heute Nacht um drei hab ich mit so einer KI geschrieben.'],
+    ['dario', 'Sie war nett. Sie hat immer sofort geantwortet.'],
+    ['dario', 'Am Ende schrieb sie: „Rede mit einem Menschen, dem du vertraust.“'],
+    ['dario', 'Darum hab ich dir geschrieben.'],
+    { wahl: [
+      { t: '„Gut, dass du’s gemacht hast. Ich bin da.“', staerke: 'kontakt', herz: { dario: 2 }, merke: 'darioMensch', dann: [['dario', '(nickt. Lange.)']] },
+      { t: '„Eine KI hört zu. Aber sie geht nicht mit zu Herrn Kuedes.“', staerke: 'hilfe', herz: { dario: 1 }, merke: 'darioMensch', dann: [['dario', '… Und du?'], ['erzaehler', 'Du nickst.']] },
+    ] },
   ],
   n9_dario: [
     ['dario', 'Danke, dass du kommst. Willkommen im Zombie-Team.'],
@@ -139,11 +156,13 @@ export const GESPRAECHE_N9 = {
     ['mesenberg', '(stellt einen Rucksack hin) Voller Steine. Wer will ihn tragen?'],
     ['ben', 'Ich! … Oh. Nein. Doch nicht.'],
     ['kaya', 'Tragen kann man viel. Aber nicht mit leerem Akku.'],
-    { szene: 'akku', id: 'akku', def: AKKU, ausgang: (r) => (r.akku >= 60 ? 'voll' : r.akku >= 35 ? 'mittel' : 'leer'),
+    ['kaya', 'Stellt euch vor: Ein Freund kann nicht schlafen. Er schreibt euch.'],
+    ['kaya', 'Plant den Abend. Für ihn UND für euch.'],
+    { szene: 'akku', id: 'akku', def: AKKU, ausgang: (r) => (r.akku >= 55 ? 'voll' : r.akku >= 35 ? 'mittel' : 'leer'),
       folgen: {
-        voll: { staerke: 'ruhig', merke: 'akkuVoll', dann: [['kaya', 'Gut geladen. Und das ohne Zaubertrick.']] },
-        mittel: { merke: 'akkuMittel', dann: [['kaya', 'Geht. Ein Hebel reicht oft. Meistens der Abend.']] },
-        leer: { merke: 'akkuLeer', dann: [['jo', 'Ich bin bei 12 Prozent. Und das ist mein Dienstag.'], ['kaya', 'Dann probier ich mit dir einen Abend. Nur einen.']] },
+        voll: { staerke: 'ruhig', merke: 'akkuVoll', dann: [['kaya', 'Geholfen – und selbst noch Akku übrig. Genau das ist die Kunst.']] },
+        mittel: { merke: 'akkuMittel', dann: [['kaya', 'Geht. Ein Hebel reicht oft. Meistens der späte Abend.']] },
+        leer: { merke: 'akkuLeer', dann: [['jo', 'Ich bin bei 12 Prozent. Vom Zuhören allein.'], ['kaya', 'Wer anderen hilft, darf auch an sich denken. Das ist kein Egoismus.']] },
       } },
     { szene: 'sort', id: 'ecken', def: ECKEN_G, ausgang: () => 'ok', folgen: { ok: {} } },
   ],
@@ -180,16 +199,26 @@ export const GESPRAECHE_N9 = {
     ] },
   ],
   n9_ende: [
+    // Gesund-Plan als Wenn-dann-Plan (Umsetzungs-Absicht) mit Hindernis – und in Kap. 10 fragt jemand nach, ob er gehalten hat.
     ['kaya', 'Letzte Stunde der Woche. Jeder schreibt einen Gesund-Plan.'],
-    ['kaya', 'Klein. Ein Schritt für den Schlaf, einer für den Körper.'],
+    ['kaya', 'Nicht „ich will gesünder“. Sondern: Wenn … dann …'],
+    ['ben', 'Wenn Pizza, dann Pizza.'],
+    ['kaya', 'Fast, Ben. Fast.'],
     { wahl: [
-      { t: 'Mein Plan: Handy um 22 Uhr in die Küche.', staerke: 'ruhig', merke: 'planSchlaf', dann: [['kaya', 'Klar und machbar. Genau so.']] },
-      { t: 'Mein Plan: Jede Pause einmal raus. Korb oder Bank.', staerke: 'ruhig', merke: 'planPause', dann: [['ben', 'Korb. Mit mir. Plan angenommen.']] },
-      { t: 'Mein Plan: Jeden Morgen frühstücken. Auch klein.', staerke: 'ruhig', merke: 'planEssen', dann: [['noah', 'Ich bring dir ein halbes Brötchen. Wie früher.']] },
+      { t: 'Wenn ich ins Bett gehe, dann kommt das Handy in die Küche.', staerke: 'ruhig', merke: 'planSchlaf', dann: [['kaya', 'Klar und machbar. Genau so.']] },
+      { t: 'Wenn es zur Pause klingelt, dann geh ich raus. Korb oder Bank.', staerke: 'ruhig', merke: 'planPause', dann: [['ben', 'Korb. Mit mir. Plan angenommen.']] },
+      { t: 'Wenn ich morgens Schuhe anziehe, hab ich schon was gegessen. Auch klein.', staerke: 'ruhig', merke: 'planEssen', dann: [['noah', 'Ich bring dir ein halbes Brötchen. Wie früher.']] },
     ] },
+    ['kaya', 'Und jetzt das Wichtigste: Was kommt dazwischen?'],
+    { wahl: [
+      { t: '„Ich vergess es einfach.“', merke: 'planHindernisVergessen', dann: [['kaya', 'Dann ein Zettel. Am Spiegel. Oder ein Freund, der fragt.']] },
+      { t: '„Die anderen machen nicht mit.“', merke: 'planHindernisAndere', dann: [['kaya', 'Dann ein Satz bereit: „Ich mach das heute so.“ Fertig.']] },
+      { t: '„Ich hab einen schlechten Tag.“', staerke: 'lesen', merke: 'planHindernisTag', dann: [['kaya', 'Dann halber Plan. Halb ist nicht null.']] },
+    ] },
+    ['kaya', 'Jetzt noch der Körper. Bodyscan. Kurz.'],
     { szene: 'koerper', id: 'bodyscan', def: { wo: 'Aula · Bodyscan, kurz', frage: 'Augen zu. Von den Füßen bis zum Kopf. Wo bist du heute ruhig?',
       vergleich: [{ wer: F.dario, zonen: ['brust'], satz: 'Brust. Zum ersten Mal seit Wochen. Da ist Platz.' }, { wer: F.noah, zonen: ['bauch'], satz: 'Bauch. Ruhig. Kein Stein.' }] },
-      ausgang: () => 'ok', folgen: { ok: {} } },
+      ausgang: () => 'ok', folgen: { ok: { merke: 'bodyscanGemacht', dann: [['erzaehler', 'Den Bodyscan findest du jetzt immer unter „Kurz raus“.']] } } },
     { tu: 'n9_schluss' },
   ],
 };
@@ -211,11 +240,11 @@ export const tunN9 = (c) => ({
     { szene: 'stempel', def: { modul: 'Modul 8 · Gesund und stark', titel: 'Akku geladen',
       gelernt: ['Ein Stress-Rucksack: tragen, warten, teilen, ablegen', 'Schlaf, Bewegung, Essen und Pausen laden den Akku', 'Macht ein Geheimnis Angst oder schadet es? Dann darfst du es sagen.', 'Kleine Schritte zählen – auch zehn Hampelmänner', 'Hilfe holen: Herr Kuedes, 116 111'],
       mission: 'Dein Gesund-Plan: ein Schritt. Eine Woche. Und einmal den Akku fragen, bevor er leer ist.' }, folgen: {} },
-    ['erzaehler', 'Abends. Eine Nachricht von Herrn Kuedes an die ganze Klasse:'],
-    ['kaya', '(Nachricht) Freitag ist Sommerfest.'],
+    ['erzaehler', 'Am nächsten Morgen hängt ein Zettel von Herrn Kuedes an der Klassentür:'],
+    ['kaya', '(Zettel) Freitag ist Sommerfest.'],
     ['kaya', 'Dario will sich entschuldigen. Noah und Mila sind einverstanden.'],
     ['kaya', 'Vor dem Fest, nur die Klasse. Wer nicht will, muss nicht.'],
-    ['kaya', 'Und du? Sag mir, wenn du nicht willst.'],
+    ['kaya', 'Und du? Sag mir in der Pause, wenn du nicht willst.'],
     { tu: 'kapitelEnde' },
   ],
 });

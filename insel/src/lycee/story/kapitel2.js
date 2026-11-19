@@ -213,7 +213,7 @@ const DM_CAM = {
   nachrichten: [
     { nach: 0.6, wer: '@annexe.cam', text: 'hey 👀' },
     { nach: 2.6, wer: '@annexe.cam', text: 'willst du wissen, wer #3 ist?' },
-    { nach: 6.5, wer: '@annexe.cam', text: 'tipp: jemand, der heute in der kantine war 📷', wennNicht: 'blockiert' },
+    { nach: 6.5, wer: '@annexe.cam', text: 'tipp: jemand aus deiner klasse 📷', wennNicht: 'blockiert' },
     { nach: 11, wer: '@annexe.cam', text: 'oder bist du es vielleicht selbst 😈', wennNicht: 'blockiert' },
     { nach: 16, wer: '@annexe.cam', text: 'gute nacht. ich seh dich morgen. du mich nicht.', wennNicht: 'blockiert' },
   ],
@@ -321,6 +321,17 @@ export const GESPRAECHE_N2 = {
     ['jo', 'Ich sag ja nur: Ich war’s nicht. Falls wer fragt.'],
     ['ben', 'Keiner hat gefragt, Jo.'],
     ['jo', 'Eben. Darum sag ich’s.'],
+    // Jugendwelt heute: Likes als Zeugnis. Ayla will ihr Video nach sechs Likes löschen.
+    ['erzaehler', 'Ayla scrollt. Dann dreht sie das Handy um. Bildschirm nach unten.'],
+    ['ayla', 'Mein Schlagzeug-Video. Seit einer Stunde online. Sechs Likes.'],
+    ['ayla', 'Ein Selfie aus der 6P1 hat 200. In zehn Minuten.'],
+    ['ayla', 'Ich lösch es. Ist eh peinlich.'],
+    { wahl: [
+      { t: '„Sechs echte Leute fanden es gut. Das ist nicht nichts.“', staerke: 'lesen', herz: { ayla: 1 }, merke: 'aylaPostBleibt', dann: [['ayla', '… So hab ich das nie gezählt.'], ['erzaehler', 'Sie dreht das Handy wieder um.']] },
+      { t: '(Liken. Kommentar: „Der Wirbel bei Sekunde 12 🔥“)', staerke: 'kontakt', herz: { ayla: 2 }, merke: 'aylaPostBleibt', dann: [['ayla', '(liest. Grinst.) Du hast es dir echt angehört?'], ['ayla', 'Okay. Es bleibt.']] },
+      { t: '„Wenn du dich damit schlecht fühlst: Lösch es.“', staerke: 'zuhoeren', merke: 'aylaPostWeg', dann: [['ayla', '… Ja. Ist besser so.'], ['erzaehler', 'Gelöscht. Ayla isst weiter. Langsamer als vorher.']] },
+    ] },
+    ['mila', 'Likes zeigen, wer gerade scrollt. Nicht, wie gut du bist.'],
   ],
   n2_morgen: [
     ['erzaehler', 'Donnerstag. An der Tafel steht: „TALENTTAG – 10 Sekunden Ruhm!“'],
@@ -411,7 +422,7 @@ export const tunN2 = (c) => ({
     const top = (((c.S.sz || {}).platz) || {}).top; const N = { noah: 'Noah', mila: 'Mila', ben: 'Ben', jo: 'Jo', ayla: 'Ayla', lina: 'Lina', chiara: 'Chiara', yusuf: 'Yusuf' };
     if (!top) return [];
     if (top === 'jo') return [['jo', 'Ich und du? Am meisten gemeinsam? … Sag’s keinem.']];
-    if (top === 'mila') return [['mila', 'Wir haben die meisten Übereinstimmungen. Statistisch sind wir jetzt ein Team.']];
+    if (top === 'mila') return [['mila', 'Wir haben am meisten gemeinsam. Laut Liste: Team.']];
     if (top === 'noah') return [['noah', 'Wir sind zusammen aufgestanden. Oft. Das ist … schön.']];
     return [['erzaehler', N[top] + ' guckt zu dir rüber und nickt. Das hättest du nicht gedacht.']];
   },
@@ -429,7 +440,16 @@ export const tunN2 = (c) => ({
     c.ui.toast('<b>Mission: Tank auffüllen</b><span>' + T[b] + ' – dreimal, je zehn Minuten.</span>', 'ly-t-ent');
   },
   n2_noahTalent: () => (c.S.merke.noahTalent ? [['noah', '(steht auf) Ich … hab Fotos. Von meinem Glockenturm. Aus Bausteinen.'], ['ben', 'Mit GLOCKE? Bruder. Das ist Aura.'], ['erzaehler', 'Die Klasse guckt. Wirklich. Noah wird rot. Diesmal gut rot.']]
-    : [['noah', '(zeigt nichts. Guckt auf den Tisch.)']]),
+    // Ohne Vorbereitung: Noah traut sich nur, wenn man ihn ermutigt – ohne Druck. Druck macht zu.
+    : [['erzaehler', 'Noah ist dran. Er guckt auf den Tisch. Sein Bein wippt.'], ['hoffmann', 'Noah? Du darfst auch passen.'],
+      { wahl: [
+        { t: '(leise) „Du kannst. Musst aber nicht.“', staerke: 'einbeziehen', herz: { noah: 2 }, merke: 'noahErmutigt', dann: [
+          ['noah', '(atmet aus) … Okay. Klein.'], ['noah', 'Ich kann das Alphabet rückwärts. In sieben Sekunden.'],
+          ['erzaehler', 'Er schafft es in sechs. Ben klatscht als Erster. Dann alle.'], ['noah', '(rot, aber grinst) Hab ich noch nie wem gezeigt.']] },
+        { t: '„Los, Noah! Mach einfach! Alle warten!“', merke: 'noahGedraengt', dann: [
+          ['erzaehler', 'Noah wird blass. Jetzt schauen wirklich alle.'], ['noah', '(sehr leise) … Ich pass.'], ['ben', '(zu dir, leise) Bruder. Zu viel Gas.']] },
+        { t: '(Nichts sagen. Ist seine Sache.)', dann: [['noah', '(schüttelt den Kopf) Pass.'], ['hoffmann', 'Passen ist erlaubt. Danke, Noah.']] },
+      ] }]),
   n2_ruhmKorb: async () => {
     const t = await c.ui.freiwurf(); c.S.merke.ruhmTreffer = t;
     return t >= 3 ? [['ben', t + ' von 5! Vor allen! Aura plus 1000.'], ['jo', 'Okay. Respekt.']] : [['ben', t + ' von 5. Aber mit Stil. Das zählt auch.'], ['hoffmann', 'Zehn Sekunden Ruhm. Erfüllt.']];
@@ -444,8 +464,11 @@ export const tunN2 = (c) => ({
     ['erzaehler', 'Abends. Kein #3. Nur eine Story von @annexe.cam:'], ['erzaehler', '„#3 kommt, wenn ihr’s nicht erwartet 📷 Sportfest nächsten Freitag 🏃“'],
     ['erzaehler', '22:14. Eine Nachricht. Nicht im Klassenchat. Privat.'],
     { szene: 'chat', id: 'dmCam', def: DM_CAM,
-      ausgang: (r) => (r.flags.beweis ? 'beweis' : r.flags.blockiert ? 'blockiert' : r.flags.geantwortet ? 'geantwortet' : 'ignoriert'),
+      ausgang: (r) => (r.flags.erwachsen ? 'erwachsen' : r.flags.beweis ? 'beweis' : r.flags.blockiert ? 'blockiert' : r.flags.geantwortet ? 'geantwortet' : 'ignoriert'),
       folgen: {
+        erwachsen: { staerke: ['hilfe', 'abstand'], herz: { kaya: 1 }, merke: ['dmBeweis', 'dmCam', 'dmErwachsen'], dann: [
+          ['erzaehler', 'Du zeigst es noch am Abend jemandem, dem du traust.'],
+          ['erzaehler', '„Das ist nicht okay. Und nicht deine Schuld. Morgen gehen wir zu Herrn Kuedes.“']] },
         beweis: { staerke: 'hilfe', herz: { mila: 1 }, merke: ['dmBeweis', 'dmCam'] },
         blockiert: { staerke: 'klar', merke: ['dmBlockiert', 'dmCam'] },
         geantwortet: { merke: ['dmGeantwortet', 'dmCam'], dann: [['erzaehler', 'Du liegst noch lange wach. Wer sieht mehr als du?']] },

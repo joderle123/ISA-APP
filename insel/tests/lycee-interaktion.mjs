@@ -206,11 +206,12 @@ for (let i = 0; i < 20 && await L(() => LYCEE.imGespraech); i++) { const opt = a
 for (let i = 0; i < 40 && await L(() => LYCEE.imGespraech || !!document.querySelector('.ly-dialog:not([hidden]), .ly-ebene:not([hidden])')); i++) { const opt = await page.$$('.ly-d-optionen button'); if (opt.length) await opt[0].click(); else await page.keyboard.press('KeyE'); await page.waitForTimeout(300); }
 await page.waitForTimeout(800);
 await geheZu({ tu: 'tischtennis' }); await page.waitForFunction(() => LYCEE.iaNah === 'tischtennis', null, { timeout: 30000 }).catch(() => {});
-for (let v = 0; v < 3 && !(await page.$('.ly-k-spiel canvas')); v++) { await page.keyboard.press('KeyE'); await page.waitForSelector('.ly-k-spiel canvas', { timeout: 7000 }).catch(() => {}); }
-check('Tischtennis: Spielfeld offen', /Tischtennis/.test(await page.textContent('.ly-ebene')), await L(() => ({ iaNah: LYCEE.iaNah, gespr: LYCEE.imGespraech, ebene: LYCEE.ui.ebeneArt(), dlg: ((document.querySelector('.ly-dialog:not([hidden])') || {}).textContent || '').slice(0, 100), hinweis: (document.querySelector('.ly-hinweis') || {}).textContent, pos: [LYCEE.steuerung.pos.x, LYCEE.steuerung.pos.z], frei: LYCEE.steuerung.frei, sitzt: LYCEE.steuerung.sitzt, tt: LYCEE.zustand.merke.ttRekord })));
-await page.waitForTimeout(1500); await bild('i6-tischtennis');
-await page.waitForFunction(() => !document.querySelector('.ly-k-spiel'), null, { timeout: 60000 }).catch(() => {});
-check('Tischtennis endet nach drei Bällen, Rekord gespeichert', (await L(() => LYCEE.zustand.merke.ttRekord)) === 0);
+for (let v = 0; v < 3 && !(await page.$('.ly-tt')); v++) { await page.keyboard.press('KeyE'); await page.waitForSelector('.ly-tt', { timeout: 15000 }).catch(() => {}); }
+check('Tischtennis 3D: Spiel an der Platte offen (Anzeige Du : Gegner)', !!(await page.$('.ly-tt')) && /Du/.test(await page.textContent('.ly-tt-tafel')), await L(() => ({ iaNah: LYCEE.iaNah, gespr: LYCEE.imGespraech, tt: !!document.querySelector('.ly-tt') })));
+await page.waitForTimeout(2500); await bild('i6-tischtennis');
+await page.click('.ly-tt [data-t="weg"]');
+await page.waitForFunction(() => !document.querySelector('.ly-tt'), null, { timeout: 60000 }).catch(() => {});
+check('Tischtennis: Aufhören beendet das Spiel, Rekord gespeichert', (await L(() => LYCEE.zustand.merke.ttRekord)) === 0 && (await L(() => LYCEE.steuerung.frei && !LYCEE.steuerung.kameraAus)));
 await page.waitForFunction(() => !LYCEE.imGespraech);
 
 // Freundschaft messbar: Ben hat Punkte und eine Stufe; das Journal zeigt Freundeskreis, Typ und Gründe
@@ -231,9 +232,13 @@ await page.waitForFunction(() => !!LYCEE.steuerung.brett, null, { timeout: 20000
 check('Auf dem Brett: Anzeige mit Zeit und Punkten, Knöpfe Sprung/Absteigen', !!(await L(() => LYCEE.steuerung.brett)) && await page.isVisible('.ly-skate') && await page.isVisible('.ly-skate-knoepfe [data-s="sprung"]'));
 await L(() => { LYCEE.steuerung.yaw = 0; LYCEE.steuerung.tempo = 3.5; });
 await page.waitForTimeout(200);
-await page.keyboard.down('Space'); await page.waitForTimeout(150); await page.keyboard.up('Space');
+// Sprung aufladen (Pop): halten, bis die Ladung reicht – im langsamen Test-Browser zählen Bilder, nicht Millisekunden
+await page.keyboard.down('Space');
+await page.waitForFunction(() => LYCEE.steuerung.brett && (LYCEE.steuerung.brett.lade || 0) >= 0.3, null, { timeout: 20000 }).catch(() => {});
+await L(() => { LYCEE.steuerung.tempo = 3.5; });
+await page.keyboard.up('Space');
 await page.waitForFunction(() => /^1 Punkt$/.test(document.querySelector('.ly-skate [data-s="punkte"]').textContent), null, { timeout: 30000 }).catch(() => {});
-check('Ollie mit Schwung: 1 Punkt', /^1 Punkt$/.test(await page.textContent('.ly-skate [data-s="punkte"]')), await page.textContent('.ly-skate'));
+check('Ollie mit Schwung (aufgeladen): 1 Punkt', /^1 Punkt$/.test(await page.textContent('.ly-skate [data-s="punkte"]')), await page.textContent('.ly-skate'));
 await bild('i5-skate');
 await page.click('.ly-skate-knoepfe [data-s="weg"]');
 await page.waitForFunction(() => !LYCEE.steuerung.brett, null, { timeout: 20000 }).catch(() => {});

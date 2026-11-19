@@ -165,27 +165,198 @@ export async function ladePerson(veil, { modell = 'menschen', stil = 'Casual', h
   const winkel = (b, a) => { if (!b) return; _q.setFromAxisAngle(_ax, a); b.quaternion.multiply(_q); };
   const BEINE = ['UpperLegL', 'UpperLegR', 'LowerLegL', 'LowerLegR'].map((n) => knochen[n]).filter(Boolean);
   const ruhe = BEINE.map((b) => b.quaternion.clone());
+  // Blick (wie in großen Story-Spielen): Kopf und Nacken drehen sich weich zu einem Ziel – Grenzen wie beim Menschen
+  // (seitlich ±65°, hoch/runter −25°…+20°), Nacken 40 %, Kopf 60 %. Ziel hinter dem Rücken: geradeaus schauen.
+  const KOPF = knochen.Head, NACKEN = knochen.Neck;
+  // Jede Figur ein bisschen anders: eigenes Ruhe-Tempo, eigene Atem-Phase (sonst wippen alle im Gleichtakt)
+  const RUHIG = { Idle: 1, Idle_Neutral: 1, Interact: 1 };
+  const eigenTempo = 0.9 + Math.random() * 0.2, atemPhase = Math.random() * 6.28, atemHz = 0.2 + Math.random() * 0.08;
+  const BRUST = knochen.Chest, brustVor = new THREE.Quaternion(); let atemT = 0, atemAn = false;
+  let blickZiel = null, bYaw = 0, bPitch = 0, bAktiv = false;
+  const kopfVor = new THREE.Quaternion(), nackenVor = new THREE.Quaternion();
+  const _hp = new THREE.Vector3(), _fw = new THREE.Vector3(), _rt = new THREE.Vector3(), _up = new THREE.Vector3(0, 1, 0);
+  const _kq = new THREE.Quaternion(), _bw = new THREE.Quaternion(), _pw = new THREE.Quaternion(), _qy = new THREE.Quaternion(), _qp = new THREE.Quaternion();
+  const drehe = (b, anteil) => {
+    if (!b || !b.parent) return;
+    _qy.setFromAxisAngle(_up, bYaw * anteil); _qp.setFromAxisAngle(_rt, -bPitch * anteil);
+    b.getWorldQuaternion(_bw); b.parent.getWorldQuaternion(_pw);
+    _bw.premultiply(_qp).premultiply(_qy);
+    b.quaternion.copy(_pw.invert().multiply(_bw)); b.updateMatrixWorld(true);
+  };
+  // ---------- Arme und Hände per IK (Handschläge): Ziel für die Hand, Ellbogen-Richtung, Handfläche, Faust/Finger ----------
+  // Alles in Weltkoordinaten über Richtungen zwischen den Knochen – unabhängig davon, wie die Achsen im Modell liegen.
+  const ARM = {}; for (const s of ['R', 'L']) {
+    const k = (n) => knochen[n + s];
+    ARM[s] = { O: k('UpperArm'), U: k('LowerArm'), W: k('Wrist'), M: k('Middle1'), I: k('Index1'), P: k('Pinky1'),
+      finger: ['Index', 'Middle', 'Ring', 'Pinky'].map((f) => [1, 2, 3].map((n) => k(f + n)).filter(Boolean)), daumen: [1, 2, 3].map((n) => k('Thumb' + n)).filter(Boolean) };
+  }
+  const ARMOK = !!(ARM.R.O && ARM.R.U && ARM.R.W && ARM.R.M && ARM.L.O && ARM.L.U && ARM.L.W && ARM.L.M);
+  // Wunsch je Hand: { w: Gewicht 0..1, ziel: Vector3 (Welt), pol: Vector3 (Ellbogen zeigt dorthin), richtung: Vector3 (Hand zeigt dorthin),
+  //   flaeche: Vector3 (Handfläche zeigt dorthin), faust: 0..1, zeige: 0..1 (Zeigefinger bleibt gestreckt), daumenHoch: bool }
+  const HAND = { R: { w: 0 }, L: { w: 0 } };
+  const ikVor = new Map();   // Knochen → Lage vor der IK (vor dem nächsten Mixer-Schritt zurücksetzen)
+  const _v1 = new THREE.Vector3(), _v2 = new THREE.Vector3(), _v3 = new THREE.Vector3(), _v4 = new THREE.Vector3(), _v5 = new THREE.Vector3(), _v6 = new THREE.Vector3();
+  const _qa = new THREE.Quaternion(), _q1 = new THREE.Quaternion(), _qi = new THREE.Quaternion();
+  const wp = (b, v) => { b.updateWorldMatrix(true, false); return b.getWorldPosition(v); };
+  const merk = (b) => { if (b && !ikVor.has(b)) ikVor.set(b, b.quaternion.clone()); };
+  // Knochen in Weltrichtung drehen: Weltrotation q (anteilig w) auf den Knochen anwenden
+  const weltDreh = (b, q, w) => {
+    merk(b); _q1.copy(_qi).slerp(q, w);
+    b.getWorldQuaternion(_bw); b.parent.getWorldQuaternion(_pw);
+    _bw.premultiply(_q1); b.quaternion.copy(_pw.invert().multiply(_bw)); b.updateMatrixWorld(true);
+  };
+  const richte = (b, von, zu, w) => { _qa.setFromUnitVectors(_v5.copy(von).normalize(), _v6.copy(zu).normalize()); weltDreh(b, _qa, w); };
+  // Handfläche: Normale aus Zeige- und Kleinfinger-Ansatz; Vorzeichen je Seite (rechte/linke Hand gespiegelt)
+  const FL_VZ = { R: 1, L: -1 };
+  const handBasis = (A, s, dir, nor) => {
+    wp(A.W, _v1); wp(A.M, dir).sub(_v1).normalize();
+    wp(A.I, _v2); wp(A.P, _v3); _v2.sub(_v3);
+    nor.crossVectors(dir, _v2).normalize().multiplyScalar(FL_VZ[s]);
+  };
+  const _hd = new THREE.Vector3(), _hn = new THREE.Vector3(), _achse = new THREE.Vector3();
+  const armAnwenden = (s) => {
+    const h = HAND[s], A = ARM[s];
+    if (!ARMOK || !h.w || h.w < 0.002 || !h.ziel) return;
+    const w = Math.min(1, h.w);
+    const pO = wp(A.O, new THREE.Vector3()), pU = wp(A.U, _v1).clone(), pW = wp(A.W, _v2).clone();
+    const a = pO.distanceTo(pU), b = pU.distanceTo(pW);
+    const zuZiel = _v3.copy(h.ziel).sub(pO); let d = zuZiel.length(); const dir = zuZiel.normalize().clone();
+    d = Math.max(0.05, Math.min(d, (a + b) * 0.995));
+    const pol = (h.pol ? _v4.copy(h.pol) : _v4.set(0, -1, 0)); pol.addScaledVector(dir, -pol.dot(dir)); if (pol.lengthSq() < 1e-6) pol.set(0, -1, 0); pol.normalize();
+    const cosA = Math.max(-1, Math.min(1, (a * a + d * d - b * b) / (2 * a * d))), sinA = Math.sqrt(1 - cosA * cosA);
+    const ell = pO.clone().addScaledVector(dir, a * cosA).addScaledVector(pol, a * sinA);
+    richte(A.O, pU.clone().sub(pO), ell.clone().sub(pO), w);
+    const pU2 = wp(A.U, new THREE.Vector3()), pW2 = wp(A.W, new THREE.Vector3());
+    const ziel = pO.clone().addScaledVector(dir, d);
+    richte(A.U, pW2.clone().sub(pU2), ziel.sub(pU2), w);
+    // Hand ausrichten: erst die Richtung, dann um diese Achse drehen, bis die Handfläche stimmt
+    if (h.richtung) { handBasis(A, s, _hd, _hn); richte(A.W, _hd, h.richtung, w); }
+    if (h.flaeche) {
+      handBasis(A, s, _hd, _hn);
+      const f = _v3.copy(h.flaeche).addScaledVector(_hd, -h.flaeche.dot(_hd)); if (f.lengthSq() > 1e-5) { f.normalize(); const n = _hn.addScaledVector(_hd, -_hn.dot(_hd)).normalize();
+        let ang = Math.acos(Math.max(-1, Math.min(1, n.dot(f)))); if (_achse.crossVectors(n, f).dot(_hd) < 0) ang = -ang; _qa.setFromAxisAngle(_hd, ang); weltDreh(A.W, _qa, w); }
+    }
+    // Finger krümmen (Faust): jedes Glied um die Achse quer zu Finger und Handfläche – zur Handfläche hin
+    const faust = (h.faust || 0) * w;
+    if (faust > 0.01 || h.zeige) {
+      handBasis(A, s, _hd, _hn);
+      A.finger.forEach((kette, fi) => {
+        const krumm = fi === 0 && h.zeige ? faust * (1 - h.zeige) : faust;
+        if (krumm < 0.01) return;
+        kette.forEach((g, gi) => {
+          const nach = g.children.find((c) => c.isBone); if (!nach) return;
+          const fd = wp(nach, _v1).sub(wp(g, _v2)).normalize();
+          _achse.crossVectors(fd, _hn).normalize(); if (_achse.lengthSq() < 1e-6) return;
+          _qa.setFromAxisAngle(_achse, krumm * [1.35, 1.45, 1.1][gi]); weltDreh(g, _qa, 1);
+        });
+      });
+      if (A.daumen.length && !h.daumenHoch) A.daumen.forEach((g, gi) => { if (gi === 0) return; const nach = g.children.find((c) => c.isBone); if (!nach) return;
+        const fd = wp(nach, _v1).sub(wp(g, _v2)).normalize(); _achse.crossVectors(fd, _hn).normalize(); if (_achse.lengthSq() < 1e-6) return; _qa.setFromAxisAngle(_achse, faust * 0.7); weltDreh(g, _qa, 1); });
+    }
+  };
+  // Körper: kleine Neigung nach vorn (zum Partner), in Weltrichtung um die Hüfte
+  let lehnW = 0; const HUEFTE = knochen.Hips, BAUCH = knochen.Abdomen, _lehn = new THREE.Vector3();
+  const lehnAnwenden = () => {
+    if (Math.abs(lehnW) < 0.002 || !BAUCH) return;
+    huelle.getWorldQuaternion(_kq); _lehn.set(1, 0, 0).applyQuaternion(_kq); _qa.setFromAxisAngle(_lehn, lehnW); weltDreh(BAUCH, _qa, 1);
+  };
+  // ---------- Sitzen (Auftrag 19.11.: „kein natürliches Sitzen“): Hüfte auf der Sitzfläche, Oberschenkel waagrecht,
+  // Unterschenkel senkrecht, Füße auf dem Boden – per Bein-IK, passend zur Höhe des Sitzes (Stuhl ≈ 0,47 m, Kübelrand 0,56 m)
+  let sitzH = 0.47;
+  const _b1 = new THREE.Vector3(), _b2 = new THREE.Vector3(), _b3 = new THREE.Vector3(), _bz = new THREE.Vector3(), _bp = new THREE.Vector3(), _bg = new THREE.Vector3();
+  const beinIK = (s, boden) => {
+    const O = knochen['UpperLeg' + s], U = knochen['LowerLeg' + s], F = knochen['Foot' + s]; if (!O || !U || !F) return;
+    wp(O, _b1); wp(U, _b2); wp(F, _b3);
+    const a = _b1.distanceTo(_b2), b = _b2.distanceTo(_b3);
+    huelle.getWorldQuaternion(_kq); _fw.set(0, 0, 1).applyQuaternion(_kq);
+    // Fuß: eine Oberschenkellänge vor der Hüfte, auf dem Boden (Knöchel ≈ 8 cm hoch)
+    _bz.copy(_b1).addScaledVector(_fw, a * 0.95); _bz.y = boden + 0.08 * (a / 0.42);
+    const dir = _bp.copy(_bz).sub(_b1); let d = dir.length(); dir.normalize(); d = Math.max(0.05, Math.min(d, (a + b) * 0.995));
+    const pol = _bg.copy(_fw).addScaledVector(_up, 0.6); pol.addScaledVector(dir, -pol.dot(dir)).normalize();
+    const cosA = Math.max(-1, Math.min(1, (a * a + d * d - b * b) / (2 * a * d))), sinA = Math.sqrt(1 - cosA * cosA);
+    const knie = _b1.clone().addScaledVector(dir, a * cosA).addScaledVector(pol, a * sinA);
+    richte(O, _b2.clone().sub(_b1), knie.clone().sub(_b1), 1);
+    wp(U, _b2); wp(F, _b3);
+    richte(U, _b3.clone().sub(_b2), _b1.clone().addScaledVector(dir, d).sub(_b2), 1);
+    // Fuß flach: Richtung Ferse→Zehen waagrecht nach vorn
+    const Z = knochen['PT' + s]; if (Z) { wp(F, _b3); wp(Z, _b2); const zu = _bp.copy(_fw).setY(-0.15); richte(F, _b2.clone().sub(_b3), zu, 1); }
+  };
+  const sitzPose = () => {
+    if (!knochen.UpperLegL) { group.position.y = SITZ.tief; return; }
+    // erst gerade hinstellen, Hüfthöhe messen, dann so weit absenken, dass die Hüfte auf dem Sitz liegt
+    group.position.y = 0; group.position.z = 0; huelle.updateMatrixWorld(true);
+    huelle.getWorldPosition(_bg); const boden = _bg.y;
+    const hy = (wp(knochen.UpperLegL, _b1).y + wp(knochen.UpperLegR, _b2).y) / 2 - boden;
+    const sk = huelle.scale.y || 1;
+    group.position.y = (sitzH + 0.07 - hy) / sk; group.position.z = 0.07 / sk;   // Gesäß hinter dem Hüftgelenk: etwas nach vorn
+    huelle.updateMatrixWorld(true);
+    beinIK('L', boden); beinIK('R', boden);
+  };
+  let sitzHand = false; const _o1 = new THREE.Vector3(), _o2 = new THREE.Vector3();
+  const sitzHaende = () => {
+    huelle.getWorldQuaternion(_kq); _fw.set(0, 0, 1).applyQuaternion(_kq);
+    for (const s of ['R', 'L']) {
+      const H = HAND[s]; if (H.w && !H.sitz) continue;   // jemand anderes führt die Hand (z. B. Handschlag)
+      const O = knochen['UpperLeg' + s], U = knochen['LowerLeg' + s]; if (!O || !U) continue;
+      wp(O, _o1); wp(U, _o2);
+      H.ziel = (H.ziel || new THREE.Vector3()).copy(_o1).lerp(_o2, 0.62); H.ziel.y += 0.07;
+      H.richtung = (H.richtung || new THREE.Vector3()).copy(_fw).setY(-0.35).normalize();
+      H.flaeche = (H.flaeche || new THREE.Vector3()).set(0, -1, 0); H.pol = (H.pol || new THREE.Vector3()).copy(_fw).multiplyScalar(-0.4).setY(-1);
+      H.faust = 0.35; H.zeige = 0; H.daumenHoch = false; H.w = 1; H.sitz = true;
+    }
+    sitzHand = true;
+  };
+  const blickAnwenden = (dt) => {
+    if (!KOPF) return;
+    let zy = 0, zp = 0;
+    if (blickZiel) {
+      KOPF.updateWorldMatrix(true, false); KOPF.getWorldPosition(_hp);
+      huelle.getWorldQuaternion(_kq); _fw.set(0, 0, 1).applyQuaternion(_kq);
+      const dx = blickZiel.x - _hp.x, dz = blickZiel.z - _hp.z, dy = blickZiel.y - _hp.y;
+      let a = Math.atan2(dx, dz) - Math.atan2(_fw.x, _fw.z); a = Math.atan2(Math.sin(a), Math.cos(a));
+      if (Math.abs(a) < 2.1) { zy = Math.max(-1.13, Math.min(1.13, a)); zp = Math.max(-0.44, Math.min(0.35, Math.atan2(dy, Math.hypot(dx, dz)))); }
+    }
+    const k = 1 - Math.exp(-dt * 5); bYaw += (zy - bYaw) * k; bPitch += (zp - bPitch) * k;
+    bAktiv = Math.abs(bYaw) > 0.002 || Math.abs(bPitch) > 0.002;
+    if (!bAktiv) return;
+    nackenVor.copy(NACKEN ? NACKEN.quaternion : KOPF.quaternion); kopfVor.copy(KOPF.quaternion);
+    huelle.getWorldQuaternion(_kq); _rt.set(1, 0, 0).applyQuaternion(_kq);
+    drehe(NACKEN, 0.4); drehe(KOPF, NACKEN ? 0.6 : 1);
+  };
   return {
     group: huelle, mixer, namen: Object.keys(aktionen),
     spiele(name, { einmal = false, tempo = 1, blende = 0.25 } = {}) {
       const a = aktionen[name] || aktionen.Idle;
       if (!a) return;
-      a.timeScale = tempo;
+      a.timeScale = tempo * (RUHIG[name] ? eigenTempo : 1);
       if (a === jetzt) return;
       a.reset(); a.setLoop(einmal ? THREE.LoopOnce : THREE.LoopRepeat, Infinity); a.clampWhenFinished = einmal;
+      if (!einmal && RUHIG[name]) a.time = Math.random() * a.getClip().duration;   // irgendwo im Ablauf einsteigen
       if (jetzt) a.crossFadeFrom(jetzt, blende, true);
       a.play(); jetzt = a; jetztName = name;
     },
     get aktion() { return jetztName; },
-    sitzen(v) { sitzt = !!v; group.position.y = 0; },
+    blick(ziel) { blickZiel = ziel || null; },
+    hand: HAND, armOk: ARMOK,
+    lehnen(w) { lehnW = w || 0; },
+    handPos(s, v) { const A = ARM[s]; if (!A || !A.M) return null; return wp(A.M, v); },
+    schulter(s, v) { const A = ARM[s]; if (!A || !A.O) return null; return wp(A.O, v); },
+    sitzen(v, h) { sitzt = !!v; if (h) sitzH = h; group.position.y = 0; group.position.z = 0; },
     update(dt) {
       if (sitzt) BEINE.forEach((b, i) => b.quaternion.copy(ruhe[i]));   // nicht aufaddieren, falls Idle die Beine nicht bewegt
+      if (atemAn) BRUST.quaternion.copy(brustVor);
+      if (ikVor.size) { for (const [b, q] of ikVor) b.quaternion.copy(q); ikVor.clear(); }   // IK nicht aufaddieren
+      if (bAktiv) { if (NACKEN) NACKEN.quaternion.copy(nackenVor); KOPF.quaternion.copy(kopfVor); }   // Blick nicht aufaddieren, falls ein Clip den Kopf nicht bewegt
       mixer.update(dt);
-      if (sitzt) {
-        winkel(knochen.UpperLegL, SITZ.ober); winkel(knochen.UpperLegR, SITZ.ober);
-        winkel(knochen.LowerLegL, SITZ.unter); winkel(knochen.LowerLegR, SITZ.unter);
-        group.position.y = SITZ.tief;
-      }
+      if (sitzt) sitzPose();
+      // Atmen: Brustkorb hebt sich kaum sichtbar (≈1°, alle 4–5 s) – nur im Stehen/Sitzen
+      atemT += dt; atemAn = !!BRUST && !!RUHIG[jetztName];
+      if (atemAn) { brustVor.copy(BRUST.quaternion); winkel(BRUST, Math.sin(atemT * 6.2832 * atemHz + atemPhase) * 0.02 - 0.005); }
+      lehnAnwenden();
+      blickAnwenden(dt);
+      // Sitzen: Hände liegen auf den Oberschenkeln (statt durch Beine und Stuhl zu hängen) – nur, wenn niemand sonst die Hände führt
+      if (sitzt && ARMOK) sitzHaende(); else if (sitzHand) { for (const s of ['R', 'L']) if (HAND[s].sitz) { HAND[s].w = 0; HAND[s].sitz = false; } sitzHand = false; }
+      armAnwenden('R'); armAnwenden('L');
     },
   };
 }

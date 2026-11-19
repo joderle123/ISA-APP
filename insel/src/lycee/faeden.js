@@ -24,7 +24,7 @@ export const FAEDEN = {
       ] },
     ] },
     { herz: 3, titel: '47 Sticker', g: [
-      ['noah', 'Ich bin seit gestern in der Klassengruppe.'],
+      ['noah', 'Weißt du noch? Mein erster Abend in der Klassengruppe.'],
       ['noah', 'Ben hat 47 Sticker geschickt. In einer Minute. Ist das normal?'],
       { wahl: [
         { t: 'Willkommen. Stummschalten ist dein Freund.', herz: nett('noah', 2), dann: [['noah', 'Stumm … das gibt’s? Mein Leben ist gerettet.']] },
@@ -243,7 +243,7 @@ export const FAEDEN = {
     ] },
   ],
   luca: [
-    { herz: 2, titel: 'Zu wenig Salz', g: [
+    { herz: 2, titel: 'Zu wenig Salz', nichtKap: [7, 8, 9], g: [
       ['luca', 'Na, Kantinen-Polizei? Was guckst du?'],
       { wahl: [
         { t: 'Ob du heute wieder das Curry kritisierst.', staerke: 'humor', herz: nett('luca', 2), dann: [['luca', 'Zu wenig Salz. Jeden Tag. Ich sag nur die Wahrheit.']] },
@@ -251,7 +251,7 @@ export const FAEDEN = {
         { t: 'Lass mich in Ruhe.', dann: [['luca', 'Gern. Mein Lieblingsspiel.']] },
       ] },
     ] },
-    { herz: 3, titel: 'Das Geheimnis', g: [
+    { herz: 3, titel: 'Das Geheimnis', nichtKap: [7, 8, 9], g: [
       ['luca', 'Wenn du das jemandem sagst, bist du erledigt. Klar?'],
       ['luca', 'Ich koche. Gern. Und gut.'],
       { wahl: [
@@ -260,7 +260,7 @@ export const FAEDEN = {
         { t: 'Kochen? DU?', dann: [['luca', 'Ja. Ich. Problem?'], ['luca', 'Siehst du. Deshalb sag ich’s keinem.']] },
       ] },
     ] },
-    { herz: 4, titel: 'Die Kostprobe', g: [
+    { herz: 4, titel: 'Die Kostprobe', nichtKap: [7, 8, 9], g: [
       ['luca', 'Frau Kremer lässt mich Freitag eine Stunde in die Küche.'],
       ['luca', 'Probier. Und sag ehrlich, wenn’s Müll ist.'],
       ['erzaehler', 'Du probierst. Es ist richtig, richtig gut.'],

@@ -186,9 +186,11 @@ const TIEFE_SHADER = {
         if (coc > 0.01) {
           vec2 px = uTexel * coc * 11.0;
           vec3 acc = col; float wsum = 1.0;
+          // pro Pixel gedrehtes Muster (Interleaved Gradient Noise): statt Treppenkanten ein feines, filmartiges Korn
+          float jit = fract(52.9829189 * fract(dot(gl_FragCoord.xy, vec2(0.06711056, 0.00583715)))) * 6.2832;
           for (int i = 0; i < 12; i++) {
             float fi = float(i);
-            float ang = fi * 2.39996, rad = sqrt((fi + 0.5) / 12.0);
+            float ang = fi * 2.39996 + jit, rad = sqrt((fi + 0.5) / 12.0);
             vec2 uv = vUv + vec2(cos(ang), sin(ang)) * rad * px;
             // Scharfes aus dem Vordergrund darf nicht in den unscharfen Hintergrund bluten
             float ds = linD(uv);

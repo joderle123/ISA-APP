@@ -15,12 +15,12 @@ const BUECHER = [
   ['Lexikon der Tiere', 'Ein Lesezeichen bei „Axolotl“. Die können Beine nachwachsen lassen.'],
   ['„Mut ist, wenn …“', 'Ein dünnes Heft. Jemand hat Sätze unterstrichen.'],
 ];
-import { PINNWAND, KRITZELEIEN, FUNDKISTE } from './welttexte.js';
+import { PINNWAND, PINNWAND_KAPITEL, pinnwandFuerDich, KRITZELEIEN, FUNDKISTE } from './welttexte.js';
 import { leseEcke, HEFTE } from './lesestoff.js';
 const SNACKS = ['Schokoriegel', 'Chips (Paprika)', 'Gummibärchen', 'Kekse', 'Wasser'];
 
 export const KABEL = [['cdi', 14, -62.4], ['kantine', 18.6, -8.2], ['gang', -15.5, -15.8], ['innenhof', -17.2, -44.9], ['skate', -36.4, 6.4]];
-export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton, blattWahl, freiwurf, skate, spindAuf = null, partner = () => null, freund = () => {}, onKabel = null }) {
+export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton, blattWahl, freiwurf, skate, tt3d = null, spindAuf = null, partner = () => null, freund = () => {}, onKabel = null }) {
   const tt = welt.orte.tischtennis;
   const liste = [];
   const dazu = (x, z, r, text, tu, extra = {}) => liste.push({ x, z, r, text, tu, ...extra });
@@ -110,7 +110,12 @@ export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton
         if (r.neu) { const h = HEFTE.find((x) => x.id === r.neu); ui.toast('<b>Gelesen: ' + h.titel + '</b><span>' + r.gelesen.length + ' von ' + HEFTE.length + ' Heften in der Lese-Ecke.</span>'); }
         else if (!r.gelesen.length) { const b = BUECHER[(s.merke.buecher * 3) % BUECHER.length]; await ui.bild(b[0], b[1], 3.2); }
         return; }
-      case 'pinnwand': { const n = s.merke.pinnwand = ((s.merke.pinnwand || 0) + 1); sichern(); await ui.bild('Pinnwand', PINNWAND[(n - 1) % PINNWAND.length].join(' · '), 4.5); return; }
+      case 'pinnwand': {
+        // zuerst, was neu ist: der Zettel dieses Kapitels und Zettel, die auf dich reagieren – dann die alten
+        const kap = Math.min(10, (s.kapitelFertig || 0) + 1), gesehen = s.merke.pinnGesehen = s.merke.pinnGesehen || [];
+        const neu = [PINNWAND_KAPITEL[kap], ...pinnwandFuerDich(s.merke, s)].filter((t) => t && !gesehen.includes(t));
+        if (neu.length) { gesehen.push(...neu.slice(0, 2)); sichern(); await ui.bild('📌 Pinnwand · neu', neu.slice(0, 2).join(' · '), 5); return; }
+        const n = s.merke.pinnwand = ((s.merke.pinnwand || 0) + 1); sichern(); await ui.bild('Pinnwand', PINNWAND[(n - 1) % PINNWAND.length].join(' · '), 4.5); return; }
       case 'fundkiste': { const n = s.merke.fundkisteBlick = ((s.merke.fundkisteBlick || 0) + 1); sichern(); ui.toast('<b>Fundkiste</b><span>' + FUNDKISTE[(n - 1) % FUNDKISTE.length] + '</span>'); return; }
       case 'kritzelei': { const l = KRITZELEIEN[i.wo] || KRITZELEIEN.tisch; const k = 'kritzel_' + i.wo; const n = s.merke[k] = ((s.merke[k] || 0) + 1); sichern(); ui.toast('<b>Kritzelei</b><span>' + l[(n - 1) % l.length] + '</span>'); return; }
       case 'giessen': s.merke.gegossen = (s.merke.gegossen || 0) + 1; sichern(); ui.toast(s.merke.gegossen > 3 ? '<b>Kevin, der Kaktus</b><span>Schon wieder Wasser? Kevin guckt sehr böse.</span>' : '<b>Gegossen</b><span>Die Tomaten danken. Glaubst du.</span>'); return;
@@ -139,6 +144,14 @@ export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton
       }
       case 'tischtennis': {
         const pa = partner();   // spielt mit dir: am liebsten dein bester Freund / deine beste Freundin
+        if (tt3d) {   // echtes Spiel an der Platte: bis 11
+          const r = await tt3d(pa); if (!r) return;
+          s.merke.ttRekord = Math.max(s.merke.ttRekord || 0, r.laengster); s.merke.ttSiege = (s.merke.ttSiege || 0) + (r.sieg ? 1 : 0);
+          if (pa) freund(pa.id, r.ich + r.er >= 6 ? 4 : 1, 'spiel');
+          sichern();
+          ui.toast('<b>' + (r.sieg ? 'Gewonnen ' : r.ich + r.er ? 'Spiel ' : 'Aufgehört ') + r.ich + ':' + r.er + '</b><span>Längster Ballwechsel: ' + r.laengster + (r.laengster && r.laengster >= s.merke.ttRekord ? ' – dein Rekord!' : ' · Rekord: ' + s.merke.ttRekord) + '</span>');
+          return;
+        }
         const b = await ui.tischtennis({ gegner: pa ? pa.name : '' }); s.merke.ttRekord = Math.max(s.merke.ttRekord || 0, b);
         if (pa) freund(pa.id, 4, 'spiel');
         sichern();

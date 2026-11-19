@@ -1,6 +1,7 @@
 // Drei Jahre Annexe – 7ème, Kapitel 8 „Digitale Welt“ (Kurs Jahr 1, Modul 7: E27 Social Media und ich – Algorithmus,
 // Wenn-dann-Satz; E28 Echt oder fake? KI und Fake News – Bilder-Wette, Teilen-Bremse, Grenz-Linie).
-// Faden @annexe.cam: Ein KI-Video von Mme Tidderich. Die Klasse stellt eine ehrliche Falle (keine Lüge, mit Erlaubnis).
+// Faden @annexe.cam: Ein KI-Video von Mme Tidderich. Der Account verrät sich selbst („lowkey“); Mila und du legt eine
+// Beweis-Mappe an (Fakten rein, Gerüchte und Privates raus) und gebt sie Herrn Kuedes. Kinder ermitteln nicht, niemand ist Köder.
 const pult = (r, c, s) => [-24.25 + r * 2.1, -27.2 + c * 3.4 + s * 0.62, -Math.PI / 2, 'sitzt'];
 const KLASSE = { ayla: pult(0, 0, -1), ben: pult(1, 2, 1), chiara: pult(2, 1, -1), yusuf: pult(1, 0, 1), jo: pult(3, 2, -1), lina: pult(3, 0, 1), noah: pult(0, 1, 1), mila: pult(2, 2, 1) };
 const AULA = { noah: [-16.2, -54, 1.1], mila: [-11.8, -54.2, -1.1], ben: [-12.6, -52.4, -2.2], jo: [-15.6, -52.2, 2.2], ayla: [-17.2, -56.4, 1.6], lina: [-10.9, -56.6, -1.5], chiara: [-14.4, -51.6, 3.1], yusuf: [-13.0, -57.4, -0.4] };
@@ -20,11 +21,11 @@ export const SCHRITTE_N8 = [
     start: { teleport: 'saal104Tuer' },
     leute: { hoffmann: [-27, -24, Math.PI / 2], ...KLASSE },
     fertig: { reden: 'hoffmann', gespraech: 'n8_tidderich' } },
-  { id: 'k8_falle', kap: 8, tag: 'Mittwoch', uhr: 12.4, titel: 'Die ehrliche Falle', ziel: 'CDI. Mila und Ben haben einen Plan. Ben hat Kekse.', marker: 'mila',
+  { id: 'k8_falle', kap: 8, tag: 'Mittwoch', uhr: 12.4, titel: 'Die Beweis-Mappe', ziel: 'CDI. Mila hat eine Mappe dabei. Ben hat Kekse.', marker: 'mila',
     start: { teleport: 'kantineTuer' },
     leute: { mila: [-6.2, -21.6, 0.4, 'sitzt'], ben: [-4.8, -22.4, -1.2] },
     fertig: { reden: 'mila', gespraech: 'n8_falle' } },
-  { id: 'k8_freitag', kap: 8, tag: 'Freitag', uhr: 10.0, titel: 'Die Falle schnappt zu', ziel: 'Aula. Herr Kuedes will alle sehen. Dein Handy vibriert.', marker: 'kaya',
+  { id: 'k8_freitag', kap: 8, tag: 'Freitag', uhr: 10.0, titel: 'Der Account wird still', ziel: 'Aula. Herr Kuedes will alle sehen. Dein Handy vibriert.', marker: 'kaya',
     start: { teleport: 'eingangHof', gespraech: 'n8_post' },
     leute: { kaya: [-14, -55.5, Math.PI], ...AULA },
     fertig: { reden: 'kaya', gespraech: 'n8_ende' } },
@@ -40,7 +41,7 @@ const VIDEO = {
     { nach: 6, wer: 'Ben', text: 'DAS IST KI. in 1.04 steht gar kein pult am fenster!!' },
     { nach: 8.5, wer: 'Yusuf', text: 'echt jetzt? sieht echt aus' },
     { nach: 11, system: true, text: 'Das Video wurde 312-mal geteilt.' },
-    { nach: 13.5, wer: 'Lina', text: 'Sie hatte Freitag ganz rote Augen.', wennNicht: 'stumm' },
+    { nach: 13.5, wer: 'Lina', text: 'das ist gemein. auch wenn es fake ist.', wennNicht: 'stumm' },
     { nach: 17, wer: 'Jo', text: '… oh. okay. ich lösch mein ❤️' },
     { nach: 20, wer: 'Mila', text: 'Fakt: Das ist KI. Fakt: Sie ist echt. Teilen = mitmachen.' },
     { nach: 23, wer: 'Ayla', text: 'spionin-bericht: luca schrieb samstag „video kommt 🎬“' },
@@ -57,23 +58,6 @@ const VIDEO = {
     { id: 'melden', t: 'Video melden', symbol: '🚩', setzt: ['gemeldet', 'gebremst'], sys: 'Gemeldet als „gefälschter Inhalt“.' },
     { id: 'stumm', t: 'Stummschalten', symbol: '🔕', setzt: 'stumm', sys: 'Stumm.', ende: true },
   ],
-};
-
-// ---------- Echt oder KI? (E28 Bilder-Wette) ----------
-const ECHT_KI = {
-  wo: 'Aula · Bilder-Wette', titel: 'Echt oder KI?', zeit: 20,
-  info: 'Woher kommt das Bild? Das zählt mehr als Hingucken.',
-  faecher: [{ id: 'echt', t: 'Echt', sy: '📷', f: '#3fa66b' }, { id: 'ki', t: 'KI', sy: '🤖', f: '#8a7bc8' }, { id: 'offen', t: 'Weiß ich nicht', sy: '❓', f: '#8a93a3' }],
-  karten: [
-    { t: '🎥 Ein Star sagt was Krasses. Kein Sender. Keine Quelle.', ziel: 'offen', hinter: 'Ohne Quelle weißt du es nicht. Erst prüfen.' },
-    { t: '🏫 Die Annexe im Regen. Ein Fenster ist schief, die Pfütze spiegelt richtig.', ziel: 'echt', hinter: 'Spiegelung passt. Schiefe Fenster gibt’s auch echt.' },
-    { t: '🪧 Ein Schild: „ANNXEE JUNGLNSTR“.', ziel: 'ki', hinter: 'Kann KI sein. Gute KI schreibt aber richtig. Quelle prüfen.' },
-    { t: '🐦 Gerd die Taube. Eine Feder steht ab. Hinten ein unscharfer Mülleimer.', ziel: 'echt', hinter: 'Kleine Unordnung. Echte Fotos sind selten perfekt.' },
-    { t: '😀 Ein Gesicht. Der Ohrring links ist rund, rechts eckig.', ziel: 'ki', hinter: 'Kann KI sein. Oder Mode. Ohne Quelle: offen.' },
-    { t: '🌇 Sonnenuntergang. Drei Schatten zeigen in drei Richtungen.', ziel: 'ki', hinter: 'Eine Sonne, ein Schattenwurf. Hier stimmt’s nicht.' },
-    { t: '🍝 Chiaras Pasta. Ein Fleck auf dem Tisch.', ziel: 'echt', hinter: 'Echte Flecken. Echte Pasta.' },
-  ],
-  ende: 'Nicht jedes KI-Bild erkennt man. Darum: erst bremsen, dann teilen.',
 };
 
 // ---------- Feed (E27) ----------
@@ -99,28 +83,56 @@ const GRENZE = {
     { t: 'Den Aufsatz von KI schreiben lassen und abgeben.', ziel: ['nein', 'kommt'], wer: F.mila, sagt: 'Dann lernt die KI. Nicht ich.' },
     { t: 'Ein Bild von mir selbst als Astronaut.', ziel: ['kommt', 'klar'], wer: F.ben, sagt: 'Mein Gesicht in eine App? Erst fragen, wer es behält.' },
     { t: 'Ein Foto von einer Mitschülerin verändern. Ohne zu fragen.', ziel: 'nein' },
-    { t: 'Die Stimme einer Lehrerin nachmachen. Für einen Witz.', ziel: 'nein', wer: F.lina, sagt: 'Mme Tidderich hatte rote Augen. Kein Witz.' },
+    { t: 'Die Stimme einer Lehrerin nachmachen. Für einen Witz.', ziel: 'nein', wer: F.lina, sagt: 'Eine Stimme gehört der Person. Kein Witz.' },
     { t: 'Einen Text übersetzen lassen.', ziel: ['kommt', 'klar'] },
     { t: 'Ein KI-Bild posten und dazuschreiben: „mit KI gemacht“.', ziel: ['kommt', 'klar'] },
   ],
   ende: 'Fake-Videos von echten Menschen sind Mobbing. Oft auch verboten.',
 };
 
-// ---------- Die Falle schnappt zu ----------
+// ---------- Freitag: Die Mappe liegt bei der Direktion. Der Account wird still. ----------
 const BDAY = {
   titel: '@annexe.cam · Story', mitglieder: 0, dauer: 18,
   nachrichten: [
     { nach: 0.5, system: true, text: 'Freitag, 9:48. @annexe.cam hat eine Story gepostet.' },
-    { nach: 1.8, wer: '@annexe.cam', bild: 'Ben am Korb, von hinten', text: 'happy bday ben 🎂📷 alt wirst du' },
-    { nach: 5, wer: 'Mila (privat)', text: 'Das wusste nur Luca. Ben hat es sonst niemandem gesagt.' },
-    { nach: 9, wer: 'Ben (privat)', text: 'ICH HAB GEBURTSTAG UND HABE EINEN TÄTER. bestes geschenk' },
-    { nach: 12, wer: 'Mila (privat)', text: 'Jetzt: nicht posten. Nicht drohen. Herr Kuedes. Heute noch.' },
+    { nach: 1.8, wer: '@annexe.cam', text: 'bin dann mal weg 👋 war eh nur spaß' },
+    { nach: 4.5, system: true, text: 'Das Profil ist jetzt privat. 0 Beiträge sichtbar.' },
+    { nach: 7, wer: 'Mila (privat)', text: 'Herr Kuedes war gestern mit der Mappe bei der Direktion. Heute früh: das.' },
+    { nach: 10, wer: 'Ben (privat)', text: 'ich hab heute geburtstag und der account ist weg. bestes geschenk 🎂' },
+    { nach: 13, wer: 'Mila (privat)', text: 'Weg heißt nicht gelöscht. Nicht posten. Nicht drohen. Aula.' },
   ],
   aktionen: [
-    { id: 'laut', t: 'In den Klassenchat: LUCA IST ES', symbol: '📣', setzt: 'chatLuca', ich: 'LUCA IST ES. beweis kommt', folgen: [{ nach: 1.6, wer: 'Mila (privat)', text: 'Lösch das. Sonst bist du jetzt der Account.' }] },
+    { id: 'laut', t: 'In den Klassenchat: LUCA IST ES', symbol: '📣', setzt: 'chatLuca', ich: 'LUCA IST ES. beweis kommt', folgen: [{ nach: 1.6, wer: 'Mila (privat)', text: 'Lösch das. Die Direktion ist dran. Sonst bist du jetzt der Pranger.' }] },
     { id: 'luca', t: 'Luca privat schreiben', symbol: '✉️', setzt: 'lucaPrivat', ich: 'ich weiß, dass du es bist', folgen: [{ nach: 1.6, wer: 'Luca (privat)', text: 'beweis es 😇' }] },
     { id: 'weg', t: 'Zu Herrn Kuedes', symbol: '🚪', setzt: 'zuKuedes', sys: 'Du steckst das Handy ein. Dein Herz klopft. Aber du weißt, wohin.', ende: true }],
 };
+
+// ---------- Mittwoch: Die Beweis-Mappe mit Mila (Spuren-Wand von Kapitel 3, jetzt mit Privatsphäre) ----------
+const MAPPE = (m) => ({
+  wo: 'CDI · Leseecke', helfer: F.mila,
+  frage: 'Mila legt eine Mappe auf den Tisch. „Nur, was wir belegen können. Und nichts Privates von Leuten, die nichts damit zu tun haben.“',
+  spuren: [
+    { id: 'lowkey', sy: '💬', t: 'Der Account kommentiert selbst: „lowkey stimmt“. Mila hat einen Screenshot mit Uhrzeit.', kurz: '„lowkey“ vom Account', echt: true,
+      kommentar: ['Fakt. Mit Uhrzeit. Allein kein Beweis – „lowkey“ sagen viele.', 'Doch, das kommt rein. Mit Uhrzeit ist es ein Fakt.'] },
+    { id: 'uhr', sy: '🕐', t: 'Der Fake-Screenshot aus dem Herbst zeigt die Uhrzeit 25:14.', kurz: 'Fake: 25:14', echt: true,
+      kommentar: ['Fakt. Die Uhrzeit gibt es nicht. Das Bild ist gebaut.', 'Doch. 25:14 gibt es nicht. Das zeigt: gefälscht.'] },
+    { id: 'geraet', sy: '📱', t: 'In der Bild-Info vom Video steht: „Handy von L.“', kurz: '„Handy von L.“', echt: true,
+      kommentar: ['Fakt. Ein Gerätename. Wer L. ist, klärt die Schule.', 'Doch, rein damit. Das ist eine echte Angabe im Bild.'] },
+    { id: 'grinsen', sy: '😏', t: 'Luca grinst immer, wenn jemand über das Video redet.', kurz: 'Luca grinst', echt: false,
+      kommentar: ['Grinsen ist ein Gefühl von uns. Kein Fakt.', 'Raus. Grinsen beweist nichts.'] },
+    { id: 'gehoert', sy: '👂', t: 'Jo hat gehört, dass Luca zu Hause zwei Handys hat.', kurz: 'Jo hat gehört …', echt: false,
+      kommentar: ['Gehört ist Gerücht. Raus.', 'Raus. Das ist Hörensagen.'] },
+    { id: 'privat', sy: '🖼️', t: 'Ben hat ein Foto von Lucas kleinem Bruder. „Für die Mappe?“', kurz: 'Foto vom Bruder', echt: false,
+      kommentar: ['Nein. Der Bruder hat damit nichts zu tun. Privates bleibt raus.', 'Richtig, raus. Unbeteiligte schützen wir. Auch hier.'] },
+  ],
+  frageEnde: 'Drei Blätter in der Mappe. Und jetzt?',
+  schluesse: [
+    { key: 'kuedes', t: 'Die Mappe geht zu Herrn Kuedes. Er und die Direktion entscheiden.', braucht: ['lowkey', 'uhr', 'geraet'], antwort: 'Genau. Wir sammeln. Erwachsene entscheiden. Nicht wir.' },
+    { key: 'chat', t: 'Wir posten die Mappe in den Klassenchat. Dann wissen es alle.', braucht: [], antwort: 'Dann ist es ein Pranger. Auch wenn es stimmt. Nein.' },
+    { key: 'luca', t: 'Wir zeigen sie Luca. Mal sehen, was er sagt.', braucht: [], antwort: 'Dann löscht er alles. Und wir haben nichts mehr.' },
+    { key: 'offen', t: 'Noch nicht genug. Wir warten.', braucht: [], antwort: 'Für ein Urteil ist es nie genug – das machen wir auch nicht. Für einen Erwachsenen reicht es.' },
+  ],
+});
 
 export const GESPRAECHE_N8 = {
   n8_chat: [
@@ -140,14 +152,54 @@ export const GESPRAECHE_N8 = {
     ['ben', 'Kein Pult am Fenster! Und die Ente blinzelt komisch.'],
     ['mila', 'Enten blinzeln anders. Aber ja.'],
     { tu: 'n8_milaStart' },
+    // Jugendwelt heute: KI-Angst. Nicht wegreden – etwas tun, das man selbst in der Hand hat.
+    ['noah', '(sehr leise) Wenn die das mit der Ente können …'],
+    ['noah', '… können die das auch mit meinem Gesicht?'],
+    ['noah', 'Ich hab Fotos online. Vom Glockenturm. Mit mir drauf.'],
+    { wahl: [
+      { t: '„Schauen wir nach der Stunde deine Einstellungen an? Zusammen.“', staerke: 'einbeziehen', herz: { noah: 2 }, merke: 'noahProfil', dann: [
+        ['erzaehler', 'Informatikraum. Noah tippt. Du liest vor.'],
+        ['erzaehler', 'Konto auf privat. ✔ Wer darf mich markieren? Niemand. ✔'],
+        ['erzaehler', 'Alte Fotos mit Gesicht: archiviert. Der Glockenturm bleibt. Ohne Noah.'],
+        ['noah', 'Fühlt sich an wie Fenster zumachen. Bei Sturm.']] },
+      { t: '„Können sie. Aber dann ist es deren Schuld. Nicht deine.“', staerke: 'klar', herz: { noah: 1 }, merke: 'noahSchuld', dann: [
+        ['noah', '… Und dann?'], ['mila', 'Screenshot, melden, Herr Kuedes. Und BEE SECURE: 8002 1234.']] },
+      { t: '„Mach dir keinen Kopf. Passiert eh nicht.“', merke: 'noahBeruhigt', dann: [['erzaehler', 'Noah nickt. Er glaubt es nicht.']] },
+    ] },
   ],
   n8_skills: [
     ['kaya', 'Wéi geet et? Heute: Was ist echt?'],
     ['kaya', 'Und wer entscheidet, was ihr seht?'],
-    ['mesenberg', 'Zuerst eine Wette. Echt oder KI?'],
-    ['mesenberg', 'Ich hab sie alle selbst gemacht. Also … gesammelt.'],
-    { szene: 'sort', id: 'echtKi', def: ECHT_KI, ausgang: (r) => (r.passend >= 5 ? 'gut' : 'mittel'),
-      folgen: { gut: { staerke: 'lesen', merke: 'kiProfi' }, mittel: { dann: [['mesenberg', 'Schwer, oder? Darum zählt nicht nur das Hingucken. Auch das Bremsen.']] } } },
+    // „Quellen-Detektiv“ (statt Fehlersuche im Bild): Man sieht einem Bild oft nicht an, ob es echt ist – aber man kann
+    // immer prüfen, woher es kommt, und bremsen. Am Ende: teilen, nicht teilen oder nachfragen.
+    ['mesenberg', 'Echt oder KI? Ehrlich: Oft sieht man es nicht.'],
+    ['mesenberg', 'Aber man kann prüfen, woher etwas kommt.'],
+    ['mesenberg', 'Drei Posts. Ihr seid die Detektive.'],
+    ['erzaehler', 'Post 1: „Schule morgen zu! Wasserrohrbruch!“ Konto: @annexe_news2. Seit gestern.'],
+    { wahl: [
+      { t: '(Woanders nachschauen: Schul-Website, Mme Weber.)', staerke: 'lesen', merke: 'quelleGeprueft', dann: [
+        ['erzaehler', 'Schul-Website: nichts. Mme Weber am Telefon: „Wasserrohr? Hier ist alles trocken.“'],
+        { wahl: [
+          { t: '(Nicht teilen.)', staerke: 'lesen', dann: [['mesenberg', 'Genau. Ein Konto von gestern ist keine Quelle.']] },
+          { t: '(Trotzdem teilen. Sicher ist sicher.)', dann: [['mesenberg', 'Dann bleiben morgen fünf Leute zu Hause. Wegen nichts.']] },
+        ] }] },
+      { t: '(Sofort teilen. Alle sollen es wissen!)', dann: [['mesenberg', 'Schnell geteilt, schnell falsch. Am nächsten Tag war ganz normal Schule.']] },
+    ] },
+    ['erzaehler', 'Post 2: Gerd die Taube. Mit einer goldenen Krone. Sehr glänzend.'],
+    { wahl: [
+      { t: '(Teilen – mit dem Satz „bearbeitet, nur Spaß“.)', staerke: 'humor', dann: [['ben', 'Ehrlich UND lustig. Geht also doch.'], ['mesenberg', 'Wer sagt, dass es bearbeitet ist, lügt niemanden an.']] },
+      { t: '(Teilen, als wäre es echt.)', dann: [['lina', 'Meine kleine Schwester glaubt jetzt, Gerd ist ein König.'], ['mesenberg', 'Harmlos. Diesmal. Bei Menschen ist es das nicht.']] },
+      { t: '(Nicht teilen. Einfach lachen.)', dann: [['mesenberg', 'Auch gut. Nicht alles muss weiter.']] },
+    ] },
+    ['erzaehler', 'Post 3: Ein Video, 8 Sekunden. „Lehrerin schreit Schüler an!!“ Ohne Anfang. Ohne Ende.'],
+    { wahl: [
+      { t: '(Nachfragen: Wer hat das gefilmt? Was war davor?)', staerke: 'lesen', merke: 'quelleNachgefragt', dann: [
+        ['erzaehler', 'Antwort vom Konto: „egal was davor war 😂“.'],
+        ['mesenberg', 'Wenn jemand den Anfang nicht zeigen will, gibt es einen Grund.'] ] },
+      { t: '(Nicht teilen. Es ist eine echte Person.)', staerke: 'klar', dann: [['mesenberg', 'Genau. Acht Sekunden sind kein Mensch. Und kein Urteil.']] },
+      { t: '(Teilen. Ist doch krass.)', dann: [['mila', 'Krass ist, dass sie das nie wieder löschen kann.'], ['mesenberg', 'Bremsen heißt: erst fragen, wem es schadet.']] },
+    ] },
+    ['mesenberg', 'Drei Fragen vor dem Teilen: Wer? Woher? Wem schadet es?'],
     ['mesenberg', 'Fake über euch? BEE SECURE Helpline: 8002 1234. Gratis.'],
     ['kaya', 'Und jetzt euer Feed. Wer bestimmt eigentlich, was ihr seht?'],
     ['ben', 'Ich. Ich drück einfach auf Katzen.'],
@@ -173,29 +225,32 @@ export const GESPRAECHE_N8 = {
     { szene: 'sort', id: 'grenze', def: GRENZE, ausgang: () => 'ok', folgen: { ok: {} } },
   ],
   n8_falle: [
-    ['mila', 'Wir wissen: Luca hat den Fake gebaut. Aber wer hat das Passwort?'],
-    ['ben', 'Ich hab eine Idee. Eine Falle. Wie im Film.'],
-    ['ben', 'Und Ermittlungs-Kekse. Einer pro Hinweis.'],
+    ['mila', 'Gestern Abend. Unter dem Video. Der Account hat selbst kommentiert.'],
+    ['mila', '„lowkey stimmt“. Nach 40 Sekunden gelöscht. Ich hab einen Screenshot.'],
+    ['ben', 'Lowkey. Wer sagt lowkey? … Okay, ich sag lowkey. Aber ich war’s nicht.'],
+    ['mila', 'Eben. Ein Wort ist kein Beweis. Mehrere Fakten zusammen: vielleicht.'],
     { wahl: [
-      { t: '„Wir erfinden was und sagen es nur Luca.“', merke: 'falleLuege', dann: [['mila', 'Nein. Wir fangen keine Fakes mit Fakes.'], ['mila', 'Dann sind wir wie er.']] },
-      { t: '„Wir sagen Luca was Wahres. Nur ihm.“', staerke: 'lesen', herz: { mila: 1 }, merke: 'falleEhrlich', dann: [['mila', 'Etwas Wahres. Harmlos. Nur wenn Herr Kuedes Ja sagt.']] },
-      { t: '„Lasst es. Das ist Sache von Herrn Kuedes.“', staerke: 'hilfe', merke: 'falleKuedes', dann: [['mila', 'Okay. Dann sagen wir Herrn Kuedes den Plan. Vorher.'], ['mila', 'Eine Spur, die keinem schadet. Mit ihm zusammen.']] },
+      { t: '„Wir stellen Luca eine Falle.“', merke: 'falleLuege', dann: [['mila', 'Nein. Wir fangen keine Fakes mit Fakes.'], ['mila', 'Und niemand von uns spielt Köder. Auch Ben nicht.']] },
+      { t: '„Wir sammeln, was wir sicher wissen. Und geben es ab.“', staerke: 'lesen', herz: { mila: 1 }, merke: 'falleEhrlich', dann: [['mila', 'Genau das. Eine Mappe. Für Herrn Kuedes.']] },
+      { t: '„Das ist Sache von Herrn Kuedes.“', staerke: 'hilfe', merke: 'falleKuedes', dann: [['mila', 'Ja. Aber er braucht Fakten, keine Gerüchte. Wir sortieren nur. Er entscheidet.']] },
     ] },
-    ['ben', 'Ich frag Luca, ob er mir einen Kuchen backt. Für Freitag.'],
-    ['ben', 'Da hab ich Geburtstag. Das weiß sonst keiner.'],
-    ['mila', 'Luca backt?'],
-    ['ben', 'Er steht jeden Morgen bei Frau Kremer. Ich hab’s gesehen.'],
-    ['mila', 'Bist du sicher? Dann postet er vielleicht was über dich.'],
-    ['ben', 'Was Nettes, hoffentlich. „Happy Birthday, Legende.“'],
+    { szene: 'spuren', id: 'mappe', def: (m) => MAPPE(m), ausgang: (r) => r.schluss,
+      folgen: {
+        kuedes: { staerke: 'hilfe', herz: { mila: 2 }, merke: ['mappeKuedes', 'falleKuedes'], dann: [['erzaehler', 'Nach der Stunde. Ihr klopft an die Bürotür. Herr Kuedes nimmt die Mappe.'], ['kaya', 'Danke. Ab hier ist das meine Aufgabe. Und eure Pause ist eure.']] },
+        chat: { herz: { mila: -1 }, merke: 'mappeChat', dann: [['mila', 'Ich bring sie trotzdem zu Herrn Kuedes. Kommst du mit?'], ['erzaehler', 'Du gehst mit. Die Mappe ist schwerer, als sie aussieht.']] },
+        luca: { herz: { mila: -1 }, merke: 'mappeLuca', dann: [['mila', 'Nein. Herr Kuedes. Heute.'], ['erzaehler', 'Ihr bringt die Mappe ins Büro.']] },
+        offen: { merke: 'mappeOffen', dann: [['mila', 'Ich bring sie trotzdem hin. Er entscheidet, nicht wir.'], ['erzaehler', 'Ihr geht zusammen. Du klopfst.']] },
+      } },
+    ['ben', 'Übrigens. Freitag hab ich Geburtstag. Die Kekse sind schon Teil davon.'],
     { wahl: [
-      { t: '„Ben, nur wenn du wirklich willst.“', staerke: 'einbeziehen', herz: { ben: 2 }, merke: 'benGefragt', dann: [['ben', 'Ich will. Für Noah. Für Mme Tidderich. Und für dich.']] },
-      { t: '„Okay, machen wir.“', herz: { ben: 1 }, dann: [['ben', 'Deal. Aber erst fragen wir Herrn Kuedes. Ohne sein Ja: nix.']] },
+      { t: '„Freitag bring ich was mit.“', herz: { ben: 2 }, merke: 'benGefragt', dann: [['ben', 'Echt jetzt? … Okay. Ich tu so, als wär ich nicht gerührt.']] },
+      { t: '„Wie alt wirst du? Hundert?“', herz: { ben: 1 }, dann: [['ben', 'Innerlich: ja. Äußerlich: dreizehn. Und schuldenfrei. Fast.']] },
     ] },
   ],
   n8_post: [
     ['erzaehler', 'Freitag. 9:48. Auf dem Weg in die Aula. Dein Handy vibriert.'],
     { szene: 'chat', id: 'bday', def: BDAY, ausgang: (r) => (r.flags.chatLuca ? 'laut' : r.flags.lucaPrivat ? 'privat' : 'zu'),
-      folgen: { zu: { merke: 'falleZu' }, privat: { merke: ['falleZu', 'lucaPrivat'] }, laut: { merke: ['falleZu', 'chatLuca'], dann: [['mila', '(an der Tür) Lösch es. Jetzt. Fakten zu Erwachsenen.']] } } },
+      folgen: { zu: { merke: 'falleZu' }, privat: { merke: ['falleZu', 'lucaPrivat'] }, laut: { merke: ['falleZu', 'chatLuca'], dann: [['mila', '(an der Tür) Lösch es. Jetzt. Die Mappe ist bei Erwachsenen.']] } } },
   ],
   n8_ende: [
     ['kaya', '(leise zu dir, Ben und Mila) Ich hab’s gesehen.'],
@@ -209,12 +264,12 @@ export const GESPRAECHE_N8 = {
 
 export const tunN8 = (c) => ({
   n8_kuedesFolge: () => [...(c.S.merke.lucaPrivat ? [['kaya', 'Schreib ihm nicht mehr. Ab jetzt machen wir das.']] : []),
-    ...(c.S.merke.falleKuedes ? [['kaya', 'Euer Plan von Mittwoch. Er hat funktioniert.']] : [])],
+    ...(c.S.merke.mappeKuedes || c.S.merke.falleKuedes ? [['kaya', 'Eure Mappe von Mittwoch. Sauber. Keine Gerüchte, nichts Privates. Das hat geholfen.']] : [])],
   n8_milaStart: () => (c.S.merke.videoGeteilt ? [['mila', '(guckt dich an) Du hast es geteilt. Ich hab’s gesehen.'], ['mila', 'Du kannst es noch löschen. Jetzt.']] : []),
   n8_joSorry: () => (c.S.merke.joIchBotschaft || c.S.merke.joGehoert ? [['jo', '(steht auf) Mme Tidderich … ich hab’s geliked. Sorry. Echt.'], ['hoffmann', 'Okay, Jo. Angekommen.']] : []),
   n8_schluss: () => [
     { szene: 'stempel', def: { modul: 'Modul 7 · Digitale Welt', titel: 'Erst bremsen',
-      gelernt: ['Echt oder KI? Erst die Quelle prüfen', 'Die Teilen-Bremse: Wer? Echt? Wem schadet es?', 'Der Feed folgt dir – und schubst dich', 'KI: geht klar oder gar nicht', 'Fakes fängt man nicht mit Fakes'],
+      gelernt: ['Echt oder KI? Erst die Quelle prüfen', 'Die Teilen-Bremse: Wer? Echt? Wem schadet es?', 'Der Feed folgt dir – und schubst dich', 'KI: geht klar oder gar nicht', 'Fakes fängt man nicht mit Fakes – Fakten gehören zu Erwachsenen'],
       mission: 'Ein Wenn-dann-Satz für dein Handy. Und einmal bremsen, bevor du teilst.' }, folgen: {} },
     ['erzaehler', 'Sonntag, 23:14 Uhr. Eine Nachricht von Dario.'],
     ['dario', '(Nachricht) bist du wach? ich kann nicht schlafen. seit wochen nicht.'],

@@ -148,7 +148,7 @@ export function baueCampus({ B, P, R, schilder, C, schild, uhrTextur, stuhl, bod
     box(-22, -10, 0.42 * (i + 1), 0.42 * (i + 1) + 0.06, -46 - 1.5 * i - 0.55, -46 - 1.5 * i - 0.05, C.holzHell);
   }
   hart(-22, -10, -52, -46, 1.7);
-  for (let x = -21.2; x < -10.5; x += 1.2) B.sitze.push({ x, z: -46.25, rot: 0, bank: true });
+  for (let x = -21.2; x < -10.5; x += 1.2) B.sitze.push({ x, z: -46.3, rot: 0, bank: true, h: 0.48 });
   // Gewächshaus (Schulgarten-AG): Glas, Metallrahmen, Beete
   { const X0 = 10, X1 = 20, Z0 = -50, Z1 = -43, W = 2.6, F = 3.8;
     for (let x = X0; x <= X1 + 0.01; x += 2.5) for (const z of [Z0, Z1]) box(x - 0.05, x + 0.05, 0, W, z - 0.05, z + 0.05, C.metall);

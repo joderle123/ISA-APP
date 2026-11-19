@@ -63,9 +63,25 @@ export function asphalt(wdh = [1, 1]) {
 }
 
 // Fläche mit Textur (liegt flach, empfängt Schatten). Kachelgröße in Metern.
-export function flaeche(tex, x0, x1, z0, z1, y, kachel) {
+export const WOLKEN = { value: 0 };
+const WOLKEN_GLSL = `
+float wkH(vec2 p) { return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453); }
+float wkN(vec2 p) { vec2 i = floor(p), f = fract(p); f = f * f * (3.0 - 2.0 * f);
+  return mix(mix(wkH(i), wkH(i + vec2(1.0, 0.0)), f.x), mix(wkH(i + vec2(0.0, 1.0)), wkH(i + vec2(1.0, 1.0)), f.x), f.y); }
+float wolke(vec2 p) { p = p * 0.04 + vec2(uWolken * 0.03, uWolken * 0.012);
+  float n = wkN(p) * 0.65 + wkN(p * 2.3 + 7.1) * 0.35; return mix(1.0, 0.8, smoothstep(0.455, 0.53, n)); }
+`;
+export function flaeche(tex, x0, x1, z0, z1, y, kachel, { wolken = false } = {}) {
   const t = tex.clone(); t.needsUpdate = true; t.repeat.set((x1 - x0) / kachel, (z1 - z0) / kachel);
   const m = new THREE.Mesh(new THREE.PlaneGeometry(x1 - x0, z1 - z0), new THREE.MeshLambertMaterial({ map: t }));
+  if (wolken) {
+    m.material.onBeforeCompile = (sh) => {
+      sh.uniforms.uWolken = WOLKEN;
+      sh.vertexShader = sh.vertexShader.replace('#include <common>', '#include <common>\nvarying vec2 vWkPos;').replace('#include <worldpos_vertex>', '#include <worldpos_vertex>\nvWkPos = (modelMatrix * vec4(transformed, 1.0)).xz;');
+      sh.fragmentShader = sh.fragmentShader.replace('#include <common>', '#include <common>\nvarying vec2 vWkPos;\nuniform float uWolken;' + WOLKEN_GLSL).replace('#include <map_fragment>', '#include <map_fragment>\ndiffuseColor.rgb *= wolke(vWkPos);');
+    };
+    m.material.customProgramCacheKey = () => 'boden-wolken';
+  }
   m.rotation.x = -Math.PI / 2; m.position.set((x0 + x1) / 2, y, (z0 + z1) / 2);
   m.receiveShadow = true; m.name = 'boden';
   return m;

@@ -29,6 +29,10 @@ export const SCHRITTE_N4 = [
     start: { teleport: 'eingangHof' },
     leute: { kenan: [-34, 9, 1], dario: [-33.4, 12, 1.2, 'redet'], luca: [-36.4, 11.6, 1.9, 'redet'], mila: [-20, 11.6, Math.PI, 'sitzt'] },
     fertig: { reden: 'kenan', gespraech: 'n4_dario' } },
+  { id: 'k4_ernstfall', kap: 4, tag: 'Freitag', uhr: 8.0, titel: 'Ernstfall', ziel: 'Gang vor Saal 1.04. Mila steht da und bewegt sich nicht.', marker: 'mila',
+    start: { teleport: 'saal104Tuer', gespraech: 'n4_durchsage' },
+    leute: { mila: [-19.4, -14.6, -2.2] },
+    fertig: { reden: 'mila', gespraech: 'n4_ernstfall' } },
   { id: 'k4_ende', kap: 4, tag: 'Freitag', uhr: 10.0, titel: 'Notfallkarte', ziel: 'Letzte Skills-Stunde der Woche. Aula.', marker: 'kaya',
     start: { teleport: 'eingangHof' },
     leute: { kaya: [-14, -55.5, Math.PI], ...AULA },
@@ -57,9 +61,36 @@ const MORGEN = {
     { t: '7:44. Regen. Kein Schirm. Der nächste Bus ist voll.', plus: 24, karten: [
       { t: '(Zügig zur nächsten Haltestelle gehen. Arme schwingen.)', typ: 'koerper', wirkung: -14, antwort: 'Erst klopft das Herz. Dann wird es ruhiger.' },
       { t: '„Nass ist nur nass. Ich komm an.“', typ: 'kopf', wirkung: -12 },
-      { t: '(Noah schreiben. Er sitzt im nächsten Bus.)', typ: 'menschen', wirkung: -16, antwort: 'Noah: „Ich halt dir einen Platz frei. Mit einem Kaktus.“' },
+      { t: '(Noah schreiben. Vielleicht wartet er auch.)', typ: 'menschen', wirkung: -16, antwort: 'Noah: „Dreh dich um. Ich steh hinter dir. Auch zu spät.“' },
     ] },
   ],
+};
+
+// ---------- Ernstfall (Freitag): Raumwechsel ohne Ansage – genau Milas 85 aus der Zonen-Wette ----------
+// Die Karten kommen aus DEINER Notfallkarte (Koffer, Dienstag). Bei Rot kommt der Kopf kaum an; Körper und Sinne wirken.
+const KARTE = {
+  atem: ['(Mit Mila atmen: 4 ein, 6 aus.)', 'koerper'], faust: ['(„Mach Fäuste. Ganz fest. Und los.“)', 'koerper'], fuesse: ['(„Drück die Füße in den Boden. Spürst du ihn?“)', 'koerper'],
+  kalt: ['(Ihr deine kalte Wasserflasche geben.)', 'koerper'], sinne54321: ['(„Nenn mir 5 Dinge, die du siehst.“)', 'sinne'], duft: ['(„Riech mal an deinem Ärmel. Waschmittel.“)', 'sinne'],
+  musik: ['(Ihr einen Kopfhörer geben. Leise Musik.)', 'sinne'], schiff: ['(„Lass den Gedanken wegfahren wie ein Schiff.“)', 'kopf'], satz: ['(„Eins nach dem anderen.“)', 'kopf'],
+  ort: ['(„Denk an deinen sicheren Ort.“)', 'kopf'], freund: ['(„Ich bin da. Ich bleib hier.“)', 'menschen'], kuedes: ['(„Soll ich Herrn Kuedes holen?“)', 'menschen'],
+  blick: ['(Ruhig neben ihr stehen. Kurz in die Augen schauen.)', 'menschen'], korb: ['(„Nachher werfen wir Körbe. Versprochen.“)', 'kopf'], zeichnen: ['(„Zeichne mit dem Finger einen Kreis in die Hand.“)', 'sinne'],
+};
+const ERNSTFALL = (m, S = {}) => {
+  const eigene = (((S.sz || {}).koffer || {}).notfall || []).filter((id) => KARTE[id]);
+  const liste = eigene.length ? eigene : ['satz', 'freund', 'atem'];
+  // Wirkung je nach Lage: oben im Rot fast nur Körper/Sinne/Menschen, später geht auch der Kopf
+  const karten = (rot) => liste.slice(0, 3).map((id) => { const [t, typ] = KARTE[id];
+    const w = typ === 'kopf' ? (rot ? -3 : -12) : typ === 'menschen' ? -14 : -16;
+    return { t, typ, wirkung: w, antwort: typ === 'kopf' && rot ? 'Mila schüttelt den Kopf. Bei Rot kommen Worte kaum an.' : undefined }; });
+  const mehr = eigene.length ? [] : [{ t: '(Einfach neben ihr stehen bleiben.)', typ: 'menschen', wirkung: -8 }];
+  return {
+    wo: 'Gang · Freitag, 8:00', titel: 'Milas Zahl von 0 bis 100', start: 55, zeit: 12,
+    ereignisse: [
+      { t: 'Durchsage: „7P2 – heute Saal 2.11. Sofort.“ Mila bleibt stehen.', plus: 30, karten: karten(true).concat(mehr) },
+      { t: 'Alle laufen an euch vorbei. Jemand rempelt Mila an. „Sorry!“', plus: 12, karten: karten(true).concat(mehr) },
+      { t: 'Mila, leise: „Wo ist 2.11? Ich weiß gar nichts mehr.“', plus: 8, karten: karten(false).concat([{ t: '(„Ich weiß es. Wir gehen zusammen. Schritt für Schritt.“)', typ: 'menschen', wirkung: -18, antwort: 'Mila nickt. Ganz klein.' }]) },
+    ],
+  };
 };
 
 // ---------- Zonen-Wette (E11): gleicher Satz, ganz andere Zahlen ----------
@@ -217,8 +248,19 @@ export const GESPRAECHE_N4 = {
       } },
     ['ben', 'Mein Koffer: Atmen, Körbe werfen, Mila fragen. Mila ist ein Skill.'],
     ['mila', 'Ich bin kein Skill. … Okay. Ein bisschen.'],
+    { tu: 'n4_milaDanke' },
   ],
   n4_morgen: [
+    // Jugendwelt heute: Lesebestätigung ohne Antwort – und was der Kopf daraus macht.
+    ['erzaehler', 'Gestern Abend hast du Ben geschrieben: „bist du morgen nervös?“'],
+    ['erzaehler', '„Gesehen 21:04“. Keine Antwort. Bis jetzt.'],
+    { wahl: [
+      { t: '(Denken: Er findet die Frage bestimmt dumm.)', merke: 'gesehenGruebeln', dann: [['erzaehler', 'Du hast schlecht geschlafen. Wegen zwei Wörtern.']] },
+      { t: '(Denken: Vielleicht war sein Akku leer. Ich frag ihn einfach.)', staerke: 'lesen', merke: 'gesehenPruefen', dann: [['erzaehler', 'Du steckst das Handy weg. Du fragst ihn gleich.']] },
+    ] },
+    ['ben', '(kommt rein) Sorry! Bei uns ist ab neun Handy-Hotel.'], ['ben', 'Hab’s nur kurz gesehen.'],
+    ['ben', 'Und ja. Sehr nervös. Ich hab von Brüchen geträumt.'],
+    ['erzaehler', '„Gesehen“ heißt nur: gesehen. Nicht: Ich mag dich nicht.'],
     ['erzaehler', 'Dienstag. 8:03. Auf dem Pult steht eine Kiste. Darauf: HANDYS.'],
     ['jo', 'Gefängnis für Handys. Wallah, das ist Menschenrechtsverletzung.'],
   ],
@@ -293,6 +335,17 @@ export const GESPRAECHE_N4 = {
       } },
     { tu: 'n4_darioBilanz' },
   ],
+  n4_durchsage: [
+    ['erzaehler', 'Freitag. 7:58. Im Gang rauscht der Lautsprecher.'],
+  ],
+  n4_ernstfall: [
+    { szene: 'thermo', id: 'ernstfall', def: (m, S) => ERNSTFALL(m, S),
+      ausgang: (r) => (r.wert < 50 ? 'runter' : 'schwer'),
+      folgen: {
+        runter: { staerke: 'ruhig', herz: { mila: 3 }, merke: 'ernstfallGut', dann: [['mila', '… Okay. 2.11. Zweiter Stock. Ich weiß es wieder.'], ['mila', 'Du hast deine Karte benutzt. Für mich.'], { tu: 'n4_nurKopf' }] },
+        schwer: { herz: { mila: 1 }, merke: 'ernstfallSchwer', dann: [['erzaehler', 'Mila zittert noch. Du holst Mme Rantini aus dem Lehrerzimmer.'], ['rantini', 'Danke. Gut, dass du geblieben bist.'], ['rantini', 'Ich bleib jetzt bei ihr.'], { tu: 'n4_nurKopf' }] },
+      } },
+  ],
   n4_ende: [
     ['kaya', 'Letzte Stunde der Woche. Wer will, zeigt seine Notfallkarte.'],
     ['kaya', 'Wer nicht will, nicht.'],
@@ -308,6 +361,16 @@ export const GESPRAECHE_N4 = {
 };
 
 export const tunN4 = (c) => ({
+  // Folge aus Kap. 3 (Saal nach der Pause): Was hast du für Mila getan, als die Kapuze auf war?
+  n4_milaDanke: () => {
+    const m = c.S.merke;
+    if (m.wuerfelZurueck) return [['mila', '(im Rausgehen, leise) Der Würfel. Danke. Ich hab ihn seitdem immer dabei.']];
+    if (m.milaZettel) return [['mila', '(im Rausgehen) Dein Zettel. Hab ich noch. Keine Antwort nötig, oder?'], ['mila', '(grinst kurz) Trotzdem: danke.']];
+    if (m.milaRuhe) return [['mila', '(im Rausgehen) Mittwoch hat mich keiner angestarrt.'], ['mila', 'Du auch nicht. Das war gut.']];
+    if (m.milaLaut) return [['mila', '(im Rausgehen) Mittwoch, das „alles okay“ vor allen …'], ['mila', 'War lieb gemeint. Nächstes Mal lieber leise, ja?']];
+    return [];
+  },
+  n4_nurKopf: () => (c.S.merke.kofferNurKopf ? [['erzaehler', 'Auf deiner Karte stand nur Kopf. Heute hast du gesehen: Bei Rot hilft zuerst der Körper.'], ['erzaehler', 'Du kannst die Karte umpacken. Jederzeit.']] : []),
   n4_testStart: () => (c.S.merke.kofferGepackt ? [['erzaehler', 'Du denkst an deinen Koffer. Er ist in deinen Händen.']] : []),
   n4_handyBilanz: () => (c.S.merke.handyGelogen ? [['erzaehler', 'Dein Handy war in der Jacke. Gelogen. Für nichts.']] : []),
   n4_kuedesKommt: () => (c.S.merke.kuedesGeholt ? [['kaya', '(kommt mit Ben) Ich bin da. Ben war schneller als beim Sportfest.'], ['kaya', 'Noah, magst du kurz mit in mein Büro? Nur Tee.'], ['noah', '… Okay. Mit Tee.']] : [['mesenberg', '(kommt über den Hof) Noah? Ich bleib bei euch.'], ['mesenberg', 'Gut gemacht, ihr zwei. Jetzt übernehm ich.']]),
@@ -326,7 +389,7 @@ export const tunN4 = (c) => ({
   },
   n4_schluss: () => [
     { szene: 'stempel', def: { modul: 'Modul 3 · Gefühle regulieren', titel: 'Runterkommen',
-      gelernt: ['Deine Zahl von 0 bis 100', 'Bei Rot: erst Körper, dann Kopf', 'Für jeden ist etwas anderes Rot', 'Mit jemandem runtergeatmet'],
+      gelernt: ['Deine Zahl von 0 bis 100', 'Bei Rot: erst Körper, dann Kopf', 'Für jeden ist etwas anderes Rot', 'Mit jemandem runtergeatmet', 'Die Notfallkarte im Ernstfall benutzt'],
       mission: 'Probier einen Skill aus deinem Koffer. Bevor es Rot wird.' }, folgen: {} },
     ['erzaehler', 'Freitagabend. Eine unbekannte Nummer schickt dir ein Bild.'],
     ['erzaehler', 'Ein Screenshot. Profil von @annexe.cam. Unter „Admin“ steht: {name}.'],

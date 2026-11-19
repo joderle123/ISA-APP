@@ -30,9 +30,9 @@ export const SCHRITTE_N10 = [
     fertig: { reden: 'dario', gespraech: 'n10_fest' } },
 ];
 
-// ---------- Zurück im Klassenchat ----------
-const ZURUECK = {
-  titel: '7P2 ohne Kamera', mitglieder: 19, dauer: 24,
+// ---------- Zurück im Klassenchat: die 7P2 gibt sich eigene Chat-Regeln (Abstimmung, eine aus dem Klassenvertrag) ----------
+const ZURUECK = (m) => ({
+  titel: '7P2 ohne Kamera', mitglieder: 19, dauer: 42,
   nachrichten: [
     { nach: 0.5, system: true, text: 'Mila hat die Gruppe umbenannt: „7P2 ohne Kamera“.' },
     { nach: 1.6, wer: 'Ayla', text: 'besserer name. ich hab abgestimmt 💅' },
@@ -41,16 +41,27 @@ const ZURUECK = {
     { nach: 9.6, wer: 'Jo', text: 'neuer name, gleiche leute. sorry nochmal wegen der sprachnachricht', setzt: 'joSorry' },
     { nach: 13, wer: 'Noah', text: 'Bus in 5 Minuten. Platz ist frei. Kevin passt auf.' },
     { nach: 17, wer: 'Lina', text: '(schickt eine Zeichnung: Gerd die Taube mit Partyhut)' },
+    { nach: 20, wer: 'Mila', text: 'Vorschlag: Wir geben uns Chat-Regeln. Eine pro Person. Abstimmen unten 👇', setzt: 'abstimmung' },
+    { nach: 23, wer: 'Ayla', text: 'meine: keine umfragen über menschen. nie wieder.' },
+    { nach: 26, wer: 'Noah', text: 'Meine: Wer Stopp sagt, wird nicht ausgelacht.' },
   ],
   aktionen: [
     { id: 'jo', t: 'Jo antworten', symbol: '💬', wenn: 'joSorry', wahl: [
       { t: '„Schon okay. Du hast es ja nicht gepostet.“', setzt: 'joVerziehen', ich: 'schon okay. du hast es ja nicht gepostet', folgen: [{ nach: 1.6, wer: 'Jo', text: 'trotzdem. war dumm 🫡' }] },
       { t: '„Okay. Aber das war echt nicht cool.“', setzt: 'joEhrlich', ich: 'okay. aber das war echt nicht cool', folgen: [{ nach: 1.6, wer: 'Jo', text: 'weiß ich. deshalb sag ichs ja' }] },
     ] },
+    { id: 'regel', t: 'Abstimmen: deine Chat-Regel', symbol: '🗳️', wenn: 'abstimmung', wahl: [
+      ...(m.regelFotos ? [{ t: '„Keine Fotos von Leuten ohne Ja.“ (aus unserem Klassenvertrag)', setzt: 'regelVertrag', ich: 'meine regel: keine fotos von leuten ohne ja. stand schon im klassenvertrag', folgen: [{ nach: 1.6, wer: 'Mila', text: 'Stimmt! September. Du hast dir das gemerkt.' }, { nach: 3.4, system: true, text: 'Mila hat die Regeln oben angepinnt. 17 von 19 haben abgestimmt.' }] }] : []),
+      ...(m.regelPersoenlich ? [{ t: '„Niemand muss was Persönliches posten.“ (aus unserem Klassenvertrag)', setzt: 'regelVertrag', ich: 'meine regel: niemand muss was persönliches posten. aus dem klassenvertrag', folgen: [{ nach: 1.6, wer: 'Noah', text: 'Danke. Wirklich.' }, { nach: 3.4, system: true, text: 'Mila hat die Regeln oben angepinnt. 17 von 19 haben abgestimmt.' }] }] : []),
+      ...(m.regelVertraulich ? [{ t: '„Privat bleibt privat. Außer bei Gefahr.“ (aus unserem Klassenvertrag)', setzt: 'regelVertrag', ich: 'meine regel: privat bleibt privat. außer bei gefahr. wie im klassenvertrag', folgen: [{ nach: 1.6, wer: 'Lina', text: '🤍' }, { nach: 3.4, system: true, text: 'Mila hat die Regeln oben angepinnt. 17 von 19 haben abgestimmt.' }] }] : []),
+      ...(m.regelKekse ? [{ t: '„Jede Woche Kekse. Pflicht.“ (aus unserem Klassenvertrag)', setzt: 'regelKekse2', ich: 'meine regel: jede woche kekse. steht im vertrag. ist gesetz', folgen: [{ nach: 1.4, wer: 'Ben', text: 'ENDLICH vernunft 🍪🍪🍪' }, { nach: 3.4, system: true, text: 'Mila hat die Regeln oben angepinnt. 17 von 19 haben abgestimmt.' }] }] : []),
+      { t: '„Keine Screenshots von privaten Nachrichten ohne Ja.“', setzt: 'regelScreens', ich: 'meine regel: keine screenshots von privaten nachrichten ohne ja', folgen: [{ nach: 1.6, wer: 'Jo', text: 'ok das trifft mich. aber fair 🫡' }, { nach: 3.4, system: true, text: 'Mila hat die Regeln oben angepinnt. 17 von 19 haben abgestimmt.' }] },
+      { t: '„Sprachnachrichten über Leute nur, wenn sie es okay finden.“', setzt: 'regelSprach', ich: 'meine regel: sprachnachrichten über leute nur mit ok', folgen: [{ nach: 1.6, wer: 'Mila', text: 'Notiert. Kommt in die Beschreibung.' }, { nach: 3.4, system: true, text: 'Mila hat die Regeln oben angepinnt. 17 von 19 haben abgestimmt.' }] },
+    ] },
     { id: 'hallo', t: 'Hallo sagen', symbol: '👋', setzt: 'hallo', ich: 'hi 👋 danke euch', folgen: [{ nach: 1.4, wer: 'Ben', text: 'die legende spricht 🎉🎉' }] },
     { id: 'weg', t: 'Handy weg, Bus kommt', symbol: '🚌', sys: 'Der Bus kommt. Du lächelst. Ein bisschen.', ende: true },
   ],
-};
+});
 
 // ---------- Jahres-Kurve ----------
 const KURVE = (m) => ({
@@ -63,7 +74,7 @@ const KURVE = (m) => ({
     { sy: '🖼️', t: 'Der Fake-Screenshot. Alle dachten, du warst es.', dein: m.fakeKuedes ? 'Du bist ruhig zu Herrn Kuedes gegangen.' : m.neuerSatz ? 'Du hast einen neuen Satz für dich gefunden.' : 'Die Gedanken waren laut.' },
     { sy: '✋', t: 'Klassenfoto. Und Luca filmt Mila.', dein: m.stoppKlar ? 'Dein Stopp war klar.' : m.joGehoert ? 'Du hast Jo wirklich zugehört.' : 'Danach: raus aus dem Klassenchat.' },
     { sy: '🧩', t: 'Allein. Wer bleibt?', dein: m.druckNein ? 'Du hast Nein gesagt. Drei gegen dich.' : m.druckJa ? 'Du hast unter Druck Ja gesagt. Und viel nachgedacht.' : m.buehneGekippt ? 'Du hast die Bühne gekippt. Für Noah.' : 'Ben ist geblieben. Sofort.' },
-    { sy: '🤖', t: 'Das KI-Video von Mme Tidderich.', dein: m.videoGebremst ? 'Du hast nicht geteilt.' : m.falleEhrlich ? 'Ihr habt eine ehrliche Falle gestellt.' : 'Und dann schnappte die Falle zu.' },
+    { sy: '🤖', t: 'Das KI-Video von Mme Tidderich.', dein: m.videoGebremst || m.videoKlartext ? 'Du hast nicht geteilt.' : m.mappeKuedes ? 'Ihr habt eine saubere Beweis-Mappe gemacht.' : 'Die Mappe ging zu Herrn Kuedes.' },
     { sy: '🎒', t: 'Dario an der Haltestelle.', dein: m.darioBegleiten ? 'Du bist mit zu Herrn Kuedes gegangen.' : 'Du hast zugehört.' },
   ],
 });
@@ -113,9 +124,12 @@ const RUECKEN = (m) => ({
 export const GESPRAECHE_N10 = {
   n10_chat: [
     ['erzaehler', 'Montag, 7:20. Letzte Schulwoche. Dein Handy vibriert.'],
-    { szene: 'chat', id: 'zurueck', def: ZURUECK,
-      ausgang: (r) => (r.flags.joVerziehen ? 'verziehen' : r.flags.joEhrlich ? 'ehrlich' : 'still'),
+    { szene: 'chat', id: 'zurueck', def: (m) => ZURUECK(m),
+      // Eigene Regel eingebracht? Zählt mehr als Jo (die Gruppe macht ihre Regeln selbst)
+      ausgang: (r) => (r.flags.regelVertrag || r.flags.regelScreens || r.flags.regelSprach || r.flags.regelKekse2 ? (r.flags.joVerziehen || r.flags.joEhrlich ? 'beides' : 'regel') : r.flags.joVerziehen ? 'verziehen' : r.flags.joEhrlich ? 'ehrlich' : 'still'),
       folgen: {
+        beides: { staerke: 'einbeziehen', herz: { jo: 1, mila: 1 }, merke: ['chatRegel', 'joVerziehen'] },
+        regel: { staerke: 'einbeziehen', herz: { mila: 1 }, merke: 'chatRegel' },
         verziehen: { herz: { jo: 1 }, merke: 'joVerziehen' },
         ehrlich: { staerke: 'klar', herz: { jo: 1 }, merke: 'joEhrlich' },
         still: {},
@@ -130,6 +144,7 @@ export const GESPRAECHE_N10 = {
       { t: '„Für wen denn?“', staerke: 'zuhoeren', herz: { noah: 1 }, dann: [['noah', 'Für irgendwen. Dann kamst du. Passt.']] },
       { t: '(Grinsen. Neben ihn setzen.)', herz: { noah: 1 }, dann: [['noah', '(schiebt dir einen Ohrstöpsel rüber)']] },
     ] },
+    { tu: 'n10_planCheck' },
   ],
   n10_skills: [
     ['kaya', 'Wéi geet et? Letzte Skills-Stunde mit Fotos.'],
@@ -197,6 +212,7 @@ export const GESPRAECHE_N10 = {
     ['dario', 'Ich wollte dazugehören. Dann wurde es größer als ich.'],
     ['dario', 'Es tut mir leid. {name}. Noah. Mila. Allen.'],
     ['dario', 'Und {name} war nie Admin. Der Screenshot war fake.'],
+    ['erzaehler', 'Herr Kuedes hat mit der Direktion das Passwort zurückgeholt. Dario darf das Konto selbst löschen.'],
     ['erzaehler', 'Dario hält das Handy hoch. Er tippt. Alle sehen zu.'],
     ['erzaehler', '@annexe.cam – Konto gelöscht.'],
     ['mila', 'Null Beiträge. Ich hab nachgezählt.'],
@@ -206,6 +222,8 @@ export const GESPRAECHE_N10 = {
     { wahl: [
       { t: '(Still bleiben. Schauen, was Noah und Mila sagen.)', staerke: 'zuhoeren', herz: { noah: 1, mila: 1 }, dann: [['erzaehler', 'Noah nickt. Mila auch. Sonst nichts. Das reicht.']] },
       { t: '(Dario kurz zunicken.)', herz: { dario: 2 }, merke: 'darioGenickt', dann: [['erzaehler', 'Dario sieht dich. Er atmet aus.']] },
+      { t: '„Ich nehm deine Entschuldigung an.“', herz: { dario: 2 }, merke: 'darioAngenommen', dann: [['dario', '… Danke. Echt.'], ['erzaehler', 'Es ist nicht alles gut. Aber es ist ein Anfang.']] },
+      { t: '„Ich brauch noch Zeit. Heute nicht.“', staerke: 'klar', merke: 'darioZeit', dann: [['dario', 'Okay. Das ist fair.'], ['kaya', '(leise) Beides ist in Ordnung. Verzeihen ist freiwillig.']] },
     ] },
     ['mila', 'Eine Frage, Dario. Wer macht im Foto-Club die Regeln?'],
     ['dario', '… Du? Bitte du.'],
@@ -226,6 +244,16 @@ export const GESPRAECHE_N10 = {
     ['rantini', 'Drei, zwei, eins … Käsebrötchen!'],
     ['ben', 'Wer sagt denn Käsebrötchen?!'],
     ['erzaehler', 'Klick. Auf dem Foto lachen alle. Sogar Lina. Sogar du.'],
+    // Jugendwelt heute: Wer darf ein Foto posten, auf dem andere sind? Fragen – am Ende des Jahres ganz selbstverständlich.
+    ['ben', '(hat das Handy schon draußen) Das kommt in meine Story. Sofort.'],
+    ['mila', '(guckt aufs Foto) Ich will in keine Story. Nicht nach diesem Jahr.'],
+    { wahl: [
+      { t: '„Ben, frag erst alle. Wer nicht will, kriegt einen Sticker.“', staerke: 'klar', herz: { mila: 2, ben: 1 }, merke: 'fotoZustimmung', dann: [
+        ['ben', '(fragt rum. Drei wollen nicht.) Okay. Drei Gerd-Sticker.'], ['mila', '(lacht) Ich bin eine Taube. Perfekt.']] },
+      { t: '„Nur ins Klassen-Album. Nicht öffentlich.“', staerke: 'abstand', herz: { mila: 1 }, merke: 'fotoZustimmung', dann: [['ben', 'Album. Für uns. Auch gut.']] },
+      { t: '„Ist doch ein schönes Foto. Poste es.“', merke: 'fotoOhneFrage', dann: [
+        ['erzaehler', 'Mila geht ein Stück weg.'], ['ben', '(steckt das Handy ein) … Nee.'], ['ben', 'Wir haben ein Jahr lang gelernt zu fragen.']] },
+    ] },
     { tu: 'n10_ende' },
   ],
 };
@@ -255,7 +283,7 @@ const ENDEN = {
   ],
   ben: (m, S = {}) => [
     ['erzaehler', 'Später. Ben zählt Münzen. Ein Euro. Noch ein Euro.'],
-    ['ben', m.benGefragt ? 'Du hast gefragt, ob ich die Falle will. Keiner fragt mich sowas.' : 'Mission Geburtstag. Bester Geburtstag. Mit Täter.'],
+    ['ben', m.benGefragt ? 'Du hast mir was zum Geburtstag mitgebracht. Keiner bringt mir was mit.' : 'Bester Geburtstag. Der Account war weg. Und Kekse.'],
     ['ben', (S.benSchuld || 0) > (S.benZurueck || 0) ? 'Ich schulde dir noch Geld. Ich zahl in Keksen. Plus extra.' : 'Wir sind quitt. Historisch. Ich hab’s aufgeschrieben.'],
     ['ben', 'Nächstes Jahr wieder nebeneinander. Hab schon gefragt.'],
   ],
@@ -273,6 +301,19 @@ const ENDEN = {
 };
 
 export const tunN10 = (c) => ({
+  // Kap. 9: Hat der Wenn-dann-Plan gehalten? Ehrlich sein darf man – Pläne wackeln, man passt sie an.
+  n10_planCheck: () => {
+    const m = c.S.merke; const plan = m.planSchlaf ? 'schlaf' : m.planPause ? 'pause' : m.planEssen ? 'essen' : null;
+    if (!plan) return [];
+    const frage = { schlaf: ['noah', 'Und? Handy in der Küche? Du siehst ausgeschlafen aus. Bisschen.'], pause: ['noah', 'Ben sagt, du warst jede Pause am Korb. Fast jede.'], essen: ['noah', '(hält ein halbes Brötchen hoch) Hab’s versprochen. Hat dein Plan gehalten?'] }[plan];
+    return [frage, { wahl: [
+      { t: '„Meistens. Vier von fünf Tagen.“', staerke: 'ruhig', merke: 'planGehalten', dann: [['noah', 'Vier von fünf ist super. Ehrlich.']] },
+      { t: '„Nö. Zwei Tage. Dann vergessen.“', merke: 'planGewackelt', dann: m.planHindernisVergessen
+        ? [['noah', 'Du hast gesagt, du vergisst es. Hast du recht gehabt.'], ['noah', 'Soll ich dich erinnern? Ich bin gut im Nerven.']]
+        : [['noah', 'Zwei ist mehr als null. Neuer Versuch nach den Ferien?']] },
+      { t: '„Ich hab ihn geändert. Der alte war zu groß.“', staerke: 'lesen', merke: 'planAngepasst', dann: [['noah', 'Plan ändern ist auch Plan. Sagt Herr Kuedes, glaub ich.']] },
+    ] }];
+  },
   n10_lucaMehr: () => [
     ['luca', 'Ich hab’s übertrieben. Mit allem.'],
     { wahl: [

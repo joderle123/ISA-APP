@@ -46,9 +46,9 @@ export const SCHRITTE_N1 = [
     start: { teleport: 'kantineTuer' },
     leute: { kremer: [26.8, -9, -Math.PI / 2], luca: [22.6, -10.6, -Math.PI / 2], dario: [21.4, -13.2, 0.9], kenan: [21.0, -12.0, 1.2], noah: [10.75, -11.1, Math.PI / 2, 'sitzt'], ayla: [10.75, -10.1, Math.PI / 2, 'sitzt'], mila: [21.05, -4.9, -Math.PI / 2, 'sitzt'], ben: [16.65, -11.1, Math.PI / 2, 'sitzt'] },
     fertig: { ort: 'kantineAusgabe', r: 1.8, gespraech: 'n1_kantine' } },
-  { id: 'tisch', kap: 1, tag: 'Montag', uhr: 12.3, titel: 'Wohin setzen?', ziel: 'Such dir einen Platz.', marker: ['noah', 'mila'],
-    leute: { kremer: [26.8, -9, -Math.PI / 2], luca: [24.6, -7.4, 2.6], noah: [10.75, -11.1, Math.PI / 2, 'sitzt'], ayla: [10.75, -10.1, Math.PI / 2, 'sitzt'], mila: [21.05, -4.9, -Math.PI / 2, 'sitzt'], ben: [16.65, -11.1, Math.PI / 2, 'sitzt'] },
-    fertig: { eins: ['noah', 'mila'] } },
+  { id: 'tisch', kap: 1, tag: 'Montag', uhr: 12.3, titel: 'Wohin setzen?', ziel: 'Such dir einen Platz. Drei Tische, drei Leute.', marker: ['noah', 'mila', 'lina'],
+    leute: { kremer: [26.8, -9, -Math.PI / 2], luca: [24.6, -7.4, 2.6], noah: [10.75, -11.1, Math.PI / 2, 'sitzt'], ayla: [10.75, -10.1, Math.PI / 2, 'sitzt'], mila: [21.05, -4.9, -Math.PI / 2, 'sitzt'], ben: [16.65, -11.1, Math.PI / 2, 'sitzt'], lina: [15.15, -5.9, Math.PI / 2, 'sitzt'] },
+    fertig: { eins: ['noah', 'mila', 'lina'] } },
   { id: 'post', kap: 1, tag: 'Montag', uhr: 13.6, titel: 'Handys vibrieren', ziel: 'Zurück in Saal 1.04. Mme Tidderich wartet.', marker: 'hoffmann',
     start: { teleport: 'saal104Tuer' },
     leute: { hoffmann: [-27, -24, Math.PI / 2], ...KLASSE },
@@ -350,7 +350,7 @@ export const GESPRAECHE_N1 = {
     ['weber', '„… nein, die Liste kommt heute. Ja. Nein. JA.“'],
     ['erzaehler', 'Mme Weber telefoniert. Auf der Theke: ein Berg Stundenpläne.'],
     { wahl: [
-      { t: '(Warten.)', staerke: 'warten', herz: { weber: 1 }, dann: [
+      { t: '(Warten.)', staerke: 'warten', merke: 'gewartet', herz: { weber: 1 }, dann: [
         ['weber', 'So. Name? … {name}, 7P2. Saal 1.04. Spind 117.'],
         ['weber', 'Moien übrigens. Ich bin bis 16 Uhr da. Nicht 16:05.'] ] },
       { t: '„Entschuldigung, ich bin neu!“', staerke: 'klar', herz: { weber: -1 }, dann: [
@@ -369,8 +369,9 @@ export const GESPRAECHE_N1 = {
     ['hoffmann', 'Das wird ein Jahr … wie sagt ihr … lit.'],
     ['erzaehler', 'Die ganze Klasse stöhnt. Jo stöhnt mit Echo.'],
     ['ben', '(flüstert) Minus 5000 Aura. Für sie. Nicht für dich.'],
-    ['hoffmann', 'Neue Methode! Jeder hat mir letzte Woche einen Zettel geschrieben.'],
-    ['hoffmann', 'Ohne Namen. Eine Sache über sich. Du bist neu – du rätst.'],
+    ['hoffmann', 'Neue Methode! Jeder schreibt mir jetzt einen Zettel. Zwei Minuten.'],
+    ['hoffmann', 'Ohne Namen. Eine Sache über sich. Ich mische.'],
+    ['hoffmann', 'Du bist neu – du rätst.'],
     { wahl: [
       { t: '„Sie haben „lit“ gesagt. Das darf man nicht.“', staerke: 'humor', herz: { ben: 1, jo: 1, hoffmann: -1 }, dann: [
         ['jo', 'WALLAH. Endlich sagt’s wer.'],
@@ -437,7 +438,7 @@ export const GESPRAECHE_N1 = {
   n1_kantine: [
     ['kremer', 'Nächster! Nudeln oder Curry? Zack, zack.'],
     ['erzaehler', 'Luca schiebt sich vor dich. Kenan und Dario dahinter.'],
-    ['erzaehler', 'Luca hat das Handy oben. Hinter ihm lacht jemand.'],
+    ['erzaehler', 'Luca lacht. Hinter ihm hat jemand das Handy oben. Du siehst nur die Hand.'],
     { szene: 'hitze', id: 'kantine', def: KANTINE_DUELL, ausgang: kantineAusgang,
       folgen: {
         knall: { herz: { luca: -3, kenan: -1, kremer: -1 }, merke: ['lucaFeind', 'kantineKnall'], dann: [
@@ -476,6 +477,15 @@ export const GESPRAECHE_N1 = {
       { t: '„Hab ich auch gesehen.“', staerke: 'lesen', herz: { mila: 2 }, merke: 'spurDario', dann: [['mila', 'Gut. Dann sind wir zwei Zeugen.'], ['mila', 'Zeugen wovon, weiß ich noch nicht.']] },
       { t: '„Und? Alle filmen alles.“', herz: { mila: -1 }, dann: [['mila', 'Nicht alle. Ich hab gezählt. Aber okay. Aber okay.']] },
       { t: '„Iss erst mal. Wird kalt.“', staerke: 'humor', herz: { mila: 1 }, dann: [['mila', 'Kalt ist auch essbar. Aber gut.']] },
+    ] },
+    { tu: 'gegessen' },
+  ],
+  // Dritter Tisch: Lina allein, Kopfhörer, Skizzenbuch. Wer sich hier hinsetzt, muss nichts reden – und hat es Dienstag in Kunst leichter.
+  tisch_lina: [
+    ['erzaehler', 'Lina sitzt allein. Ein Kopfhörer drin. Sie zeichnet etwas auf eine Serviette.'],
+    { wahl: [
+      { t: '„Ist hier frei?“', staerke: 'kontakt', herz: { lina: 2 }, merke: 'linaTisch', dann: [['lina', '(nimmt den Kopfhörer raus) … Ja. Klar.'], ['erzaehler', 'Sie dreht die Serviette um. Dann wieder zurück. Eine Taube. Mit Lupe.']] },
+      { t: '(Einfach hinsetzen. Nichts sagen.)', staerke: 'lesen', herz: { lina: 1 }, merke: 'linaTisch', dann: [['erzaehler', 'Ihr esst. Schweigend. Es ist nicht komisch. Fast angenehm.'], ['lina', '(nach einer Weile, leise) Danke. Dass du nicht fragst.']] },
     ] },
     { tu: 'gegessen' },
   ],
@@ -525,7 +535,8 @@ export const GESPRAECHE_N1 = {
     ['kiesser', 'Salut! Mme Kiesser. Hier wird gemalt, gekleckert und geredet.'],
     ['kiesser', 'Heute: Steckbriefe. Zu zweit. Ihr interviewt euch. Dann malt ihr euch.'],
     ['kiesser', '{name}, du gehst zu Lina. Sie wartet schon.'],
-    { szene: 'nachhaken', id: 'linaInterview', def: LINA_INTERVIEW,
+    { tu: 'n1_kunstLina' },
+    { szene: 'nachhaken', id: 'linaInterview', def: (m) => ({ ...LINA_INTERVIEW, startOffen: m.linaTisch ? 1 : 0 }),
       ausgang: (r) => (r.offen >= 4 ? 'offen' : r.offen >= 2 ? 'etwas' : 'zu'),
       folgen: {
         offen: { staerke: 'zuhoeren', herz: { lina: 3 }, merke: ['linaGerd', 'linaOffen'], dann: [['erzaehler', 'Lina zeigt dir ihr Heft. Eine Seite. Eine Taube mit Lupe.'], ['lina', 'Gerd. Sie ermittelt. Gerade gegen … Kameras.']] },
@@ -621,8 +632,13 @@ export const GESPRAECHE_N1 = {
     ['fahrer', 'Einsteigen. Ich warte nicht. Nie. Heute schon gar nicht.'],
     ['erzaehler', 'Im Bus. Eine Nachricht. Unbekannte Nummer.'],
     { szene: 'chat', id: 'unbekannt', def: UNBEKANNT,
-      ausgang: (r) => (r.flags.beweis ? 'beweis' : r.flags.blockiert ? 'blockiert' : r.flags.gefragt ? 'gefragt' : 'nichts'),
+      ausgang: (r) => (r.flags.erwachsen ? 'erwachsen' : r.flags.beweis ? 'beweis' : r.flags.blockiert ? 'blockiert' : r.flags.gefragt ? 'gefragt' : 'nichts'),
       folgen: {
+        // Eigene Folge (vorher wie „Screenshot“ gewertet): Nicht allein damit bleiben ist der stärkste Weg.
+        erwachsen: { staerke: ['hilfe', 'abstand'], herz: { kaya: 1 }, merke: ['unbekanntBeweis', 'spurNummer', 'unbekanntErwachsen'], dann: [
+          ['erzaehler', 'Zu Hause zeigst du es jemandem, dem du traust.'],
+          ['erzaehler', '„Gut, dass du’s zeigst. Nicht antworten. Wir sagen es der Schule.“'],
+          ['erzaehler', 'Du schläfst besser als gedacht. Die Nummer endet auf 77.']] },
         gefragt: { merke: 'unbekanntGefragt', dann: [['erzaehler', 'Keine Antwort mehr. Nur zwei Haken.']] },
         blockiert: { staerke: 'abstand', merke: 'unbekanntBlockiert' },
         beweis: { staerke: 'hilfe', herz: { mila: 1 }, merke: ['unbekanntBeweis', 'spurNummer'], dann: [['erzaehler', 'Gespeichert. Die Nummer endet auf 77.']] },

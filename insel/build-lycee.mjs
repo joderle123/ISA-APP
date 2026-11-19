@@ -20,5 +20,5 @@ const css = readFileSync(join(root, 'src/lycee/stil.css'), 'utf8').replace(/url\
 });
 const html = readFileSync(join(root, 'src/lycee/shell.html'), 'utf8').replace('/*__STYLE__*/', () => css).replace('/*__SCRIPT__*/', () => js);
 mkdirSync(join(root, 'dist'), { recursive: true });
-writeFileSync(join(root, 'dist/lycee.html'), html);
+writeFileSync(process.env.LYCEE_OUT || join(root, 'dist/lycee.html'), html);
 console.log('dist/lycee.html', (Buffer.byteLength(html) / 1048576).toFixed(1) + ' MB');

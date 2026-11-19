@@ -27,7 +27,7 @@ export const CHARAKTER = {
   chiara: { typ: 'Die Ehrgeizige', hobby: 'Lampen und Regale bauen', mag: 'Pläne, gute Noten', eig: ['ehrgeizig', 'handwerklich'] },
   yusuf: { typ: 'Der Ruhige', hobby: 'Judo', mag: 'Zeit zum Nachdenken', eig: ['ruhig', 'sportlich'] },
   ayla: { typ: 'Die Musikerin', hobby: 'Bass in einer Band', mag: 'Musik, kleine Runden', eig: ['musikalisch', 'Bandname offen'] },
-  luca: { typ: 'Der Harte', hobby: 'Kochen (heimlich)', mag: 'Respekt, gutes Essen', eig: ['rebellisch', 'hilfsbereit'] },
+  luca: { typ: 'Der Harte', hobby: 'Kochen (heimlich)', mag: 'Respekt, gutes Essen', eig: ['rebellisch', 'stolz', 'kocht gut'] },
   kenan: { typ: 'Der Handwerker', hobby: 'Holz, Werkstatt', mag: 'Genauigkeit, Ehrlichkeit', eig: ['handwerklich', 'rebellisch'] },
   dario: { typ: 'Der Treue', hobby: 'Handy, Fußball', mag: 'seine Leute', eig: ['loyal', 'witzig'] },
 };

@@ -2,6 +2,28 @@
 // Regeln wie überall: kurz, Alltagsdeutsch, keine Moral, keine echten Namen. Kein Text erklärt etwas „Pädagogisches“.
 
 // Pinnwand: bei jedem Lesen der nächste Stapel (drei Zettel)
+// Die Pinnwand lebt mit dem Schuljahr: pro Kapitel ein neuer Zettel – und Zettel, die auf DICH reagieren
+export const PINNWAND_KAPITEL = {
+  1: 'Willkommen, neue 7P2! Fragen? Bürotür von Herrn Kuedes. Klopfen reicht.',
+  2: 'Talenttag Freitag: 10 Sekunden Ruhm. Zuschauen zählt auch.',
+  3: 'Sportfest-Staffel: 7P2 auf Platz 6 von 6. Applaus trotzdem. – Frau Sommer',
+  4: 'Neu im CDI: die Ruhe-Ecke. Kissen. Keine Fragen.',
+  5: 'Bitte keine Screenshots von Gerüchten weiterleiten. Danke. – Die Direktion',
+  6: 'Plakat der 7P2: „Fotos nur mit Ja. Immer.“ Darunter 19 Unterschriften.',
+  7: 'Konflikt-Lotsen gesucht. Ausbildung bei Herrn Kuedes. Kekse inklusive.',
+  8: 'Medienwoche: Erst bremsen, dann teilen. 🛑',
+  9: 'Foto-Club ab September? Regeln macht Mila. Infos bei ihr.',
+  10: 'Sommerfest Freitag! Kuchen erwünscht. Auch schiefe.',
+};
+export const pinnwandFuerDich = (m = {}, S = {}) => [
+  m.handyAbgegeben ? 'Danke an die Person, die ein Handy im Sekretariat abgegeben hat! – Mme Weber' : '',
+  (m.geholfen || 0) >= 2 ? 'Jemand hat im Gang Bücher mit aufgesammelt. Danke, wer auch immer du bist.' : '',
+  (m.ttSiege || 0) >= 1 ? 'Tischtennis-Rangliste: ' + (S.name || 'Jemand') + ' aus der 7P2 ist neu dabei. 🏓' : '',
+  (m.skateMedaille || 0) >= 2 ? 'Skate-Ecke: Wer hat den Kickflip über die Bank gestanden? Respekt. – Kenan' : '',
+  m.dazugesetzt ? 'Ein Zettel ohne Namen: „Danke, dass du dich neben mich gesetzt hast.“' : '',
+  Object.values(S.handschlag || {}).some((h) => h.eigen) ? 'Gerücht: In der 7P2 gibt es einen Handschlag mit FÜNF Teilen. Unbestätigt.' : '',
+].filter(Boolean);
+
 export const PINNWAND = [
   ['Theater-AG sucht Leute. Auch für Licht. Und Nebel.', 'Fundsache: blaue Jacke. Mit Pommes in der Tasche.', '„Wer hat mein Ladekabel?“ – darunter: „Keks.“'],
   ['Verkaufe Fahrradschloss. Code vergessen. 2 €.', 'Robotik-AG: Der Arm kann jetzt winken. Und fast greifen.', 'Bitte keine Kaugummis unter die Tische. – Die Tische'],
