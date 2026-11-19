@@ -32,3 +32,16 @@ Wave, Interact, HitRecieve, Death, Roll. Erzeugen: `python tools/lycee/frauen.py
 Alle vier Dateien sind mit Meshopt gepackt (`gltf-transform meshopt <ein> <aus> --level medium`, Erweiterung
 EXT_meshopt_compression; das Spiel entpackt mit `three/examples/jsm/libs/meshopt_decoder.module.js`).
 Das Spiel wird so von 22 MB auf rund 6 MB kleiner.
+
+## kaykit.glb
+KayKit „Furniture Bits“, „City Builder Bits“ und „Restaurant Bits“ von Kay Lousberg (www.kaylousberg.com), **CC0 1.0**.
+Geladen am 19.11.2026 von den öffentlichen GitHub-Archiven (github.com/KayKit-Game-Assets). Die Farben werden aus dem
+Farbatlas in die Eckpunkte übernommen (sRGB), ein Netz je Modell, Namen `kk/<modell>`.
+Erzeugen: `python -I tools/lycee/kaykit.py kaykit.glb <Furniture-Ordner> <City-Ordner> <Restaurant-Ordner> -- armchair couch_pillows …`
+(braucht numpy und Pillow).
+
+## natur.glb
+„Stylized Nature MegaKit“ (Standard, kostenlos) von Quaternius, **CC0 1.0**. Geladen am 19.11.2026 über quaternius.itch.io
+(`tools/lycee/itch-laden.sh`). 17 Modelle (Laubbäume, Kiefern, Büsche, Blumen, Gras, Farn, Klee, Steine, Pilze) mit
+eingebetteten, verkleinerten Texturen (Blätter 512 px, sonst 256 px), Normalen als int8 (KHR_mesh_quantization).
+Erzeugen: `python -I tools/lycee/natur-pack.py natur.glb <glTF-Ordner> CommonTree_1 CommonTree_3 …`

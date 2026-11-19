@@ -9,6 +9,7 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { MeshoptDecoder } from 'three/examples/jsm/libs/meshopt_decoder.module.js';
 import lyceeBin from './modelle/lycee.glb';
 import stadtBin from './modelle/kenney.glb';   // Auswahl aus respawn/modelle/stadt.glb (tools/lycee/kenney-auswahl.mjs)
+import kaykitBin from './modelle/kaykit.glb';   // KayKit (CC0): Möbel, Küche, Straße – Namen kk/<modell> (tools/lycee/kaykit.py)
 import { mergeAll, zellenMerge } from './welt.js';
 
 const puffer = (b) => b.buffer.slice(b.byteOffset, b.byteOffset + b.byteLength);
@@ -52,7 +53,7 @@ const AUTOFEST = { 'einrichtung/Plant': 0.5, 'strasse/Streetlight_Single': 0.3, 
   'lager/bucket': 0.35, 'strasse/construction-cone': 0.35 };
 
 export function ladeRequisiten() {
-  if (!_alle) _alle = Promise.all([lade(lyceeBin, false), lade(stadtBin, true)]).then(([a, b]) => ({ ...b, ...a }));
+  if (!_alle) _alle = Promise.all([lade(lyceeBin, false), lade(stadtBin, true), lade(kaykitBin, true)]).then(([a, b, k]) => ({ ...k, ...b, ...a }));
   return _alle;
 }
 
@@ -81,6 +82,7 @@ export async function baueRequisiten({ welt, material, scene }) {
   const geo = await ladeRequisiten();
   const fest = [], eigene = {}, fehlt = [];
   for (const p of welt.plaetze) {
+    if (p.m.startsWith('natur/')) continue;   // natur.js (Texturen, Instanzen)
     const quelle = geo[p.m];
     if (!quelle) { fehlt.push(p.m); continue; }
     const g = stelle(quelle, p);

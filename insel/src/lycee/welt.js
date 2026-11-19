@@ -364,7 +364,11 @@ export function baueWelt({ material, materialInnen, materialLaub }) {
     B.kasten.push({ x0: -10.4, x1: -8.6, z0: -23.4, z1: -21.4, y0: 0, y1: 0.8 });
     stuhl(B, -11.0, -22.9, Math.PI / 2, C.stuhl[1]); stuhl(B, -11.0, -21.9, Math.PI / 2, C.stuhl[2]); stuhl(B, -8.0, -22.9, -Math.PI / 2, C.stuhl[0]); stuhl(B, -8.0, -21.9, -Math.PI / 2, C.stuhl[4]);
     box(-5.4, -3.0, 0, 1.0, -27.4, -26.8, C.theke, { art: 'innen', stoss: true }); box(-5.5, -2.9, 1.0, 1.07, -27.5, -26.7, C.thekeOben, { art: 'innen' });   // Ausleihe (Mme Laurent, Lernstation)
-    P('einrichtung/Plant', -2.8, -29, 0, { h: 1.3 }); P('innen/Carpet_1', -6.2, -21.4, 0, { s: 3.2 }); }
+    P('einrichtung/Plant', -2.8, -29, 0, { h: 1.3 }); P('innen/Carpet_1', -6.2, -21.4, 0, { s: 3.2 });
+    // Leseecke an der Ostwand: zwei Sessel, Stehlampe, gestreifter Teppich – der ruhigste Platz der Schule
+    P('kk/rug_rectangle_stripes_A', -3.9, -23.9, Math.PI / 2, { s: 2.6 });
+    P('kk/armchair_pillows', -2.95, -23.0, -Math.PI / 2, { h: 0.88, fest: true }); P('kk/armchair', -2.95, -24.8, -Math.PI / 2, { h: 0.88, fest: true });
+    P('kk/lamp_standing', -2.7, -21.7, 0, { h: 1.7, fest: 0.2 }); P('kk/cactus_medium_A', -2.7, -25.9, 0, { h: 0.5 }); }
   // Lehrerzimmer (verschlossen)
   { const sl = schild('Salle des profs', 1.4, 0.36, { bg: '#6b4e8a', schrift: 'bold 100px system-ui' }); sl.position.set(3, 2.85, -17.85); schilder.push(sl);
     box(2.35, 3.65, 0.1, TUER_H, -18.1, -17.95, C.holz, { art: 'innen', stoss: true }); }
@@ -377,11 +381,18 @@ export function baueWelt({ material, materialInnen, materialLaub }) {
     box(-25, -17, 0, 1.05, -11.2, -10.6, C.theke, { art: 'innen', stoss: true }); box(-25.1, -16.9, 1.05, 1.12, -11.3, -10.5, C.thekeOben, { art: 'innen' });
     P('moebel/Desk', -21, -8, 0, { h: 0.78, fest: true }); P('moebel/OfficeChair', -21, -7.2, Math.PI, { h: 1.05 });
     P('moebel/Closet', -28.8, -6, Math.PI / 2, { h: 2.0, fest: true }); P('innen/Drawer_1', -28.9, -9, Math.PI / 2, { h: 1.0, fest: true });
-    P('einrichtung/Plant', -17, -3, 0, { h: 1.3 }); stuhl(B, -23.5, -12.6, 0, C.stuhl[0]); stuhl(B, -22.3, -12.6, 0, C.stuhl[1]); }
+    P('einrichtung/Plant', -17, -3, 0, { h: 1.3 }); stuhl(B, -23.5, -12.6, 0, C.stuhl[0]); stuhl(B, -22.3, -12.6, 0, C.stuhl[1]);
+    P('kk/cabinet_medium_decorated', -16.6, -6.4, -Math.PI / 2, { h: 1.75, fest: true }); P('kk/lamp_table', -21.5, -8.1, 0, { h: 0.42, y: 0.78 });
+    P('kk/cactus_small_A', -18.2, -10.9, 0, { h: 0.28, y: 1.12 }); P('kk/book_set', -23.8, -10.9, 0, { h: 0.22, y: 1.12 }); P('kk/pictureframe_medium', -24, -2.14, Math.PI, { s: 0.6, y: 1.5 }); }
   // SePAS (Beratung) x −16 … −8
   { const sp = schild('SePAS', 0.9, 0.36, { bg: '#2fb8a8', schrift: 'bold 120px system-ui' }); sp.position.set(-12, 2.85, -14.15); sp.rotation.y = Math.PI; schilder.push(sp);
     P('innen/Couch_Medium1', -12, -3.2, Math.PI, { h: 0.85, fest: true }); P('einrichtung/CoffeeTable', -12, -5.4, 0, { h: 0.45 }); P('innen/Carpet_1', -12, -5.2, 0, { s: 2.8 });
-    P('einrichtung/ChairCushioned', -14.6, -6.2, Math.PI / 2, { h: 0.95 }); P('einrichtung/Plant', -9, -12.8, 0, { h: 1.3 }); }
+    P('einrichtung/ChairCushioned', -14.6, -6.2, Math.PI / 2, { h: 0.95 }); P('einrichtung/Plant', -9, -12.8, 0, { h: 1.3 });
+    // Ein Raum, in dem man reden möchte: Sessel, Stehlampe, Bilder, Regal mit Büchern, Kaktus auf dem Tisch
+    P('kk/armchair_pillows', -9.6, -6.2, -Math.PI / 2, { h: 0.9, fest: true }); P('kk/lamp_standing', -9.0, -3.2, 0, { h: 1.75, fest: 0.2 });
+    P('kk/shelf_B_small_decorated', -15.55, -9.6, Math.PI / 2, { h: 1.0, fest: true }); P('kk/book_set', -15.5, -9.6, Math.PI / 2, { h: 0.26, y: 1.0 });
+    P('kk/pictureframe_large_B', -8.12, -7.0, -Math.PI / 2, { s: 1.6, y: 1.35 }); P('kk/pictureframe_small_A', -8.12, -9.4, -Math.PI / 2, { s: 0.45, y: 1.5 });
+    P('kk/cactus_small_A', -12.2, -5.4, 0, { h: 0.25, y: 0.45 }); }
   // Kantine (x 8 … 29.8, z −14 … −2): Ausgabe-Theke an der Ostwand, Tische
   { const sk = schild('Cantine', 1.2, 0.36, { bg: '#d9693f', schrift: 'bold 110px system-ui' }); sk.position.set(18.5, 2.85, -14.15); sk.rotation.y = Math.PI; schilder.push(sk);
     box(25.2, 26.2, 0, 1.0, -13.4, -4.2, C.theke, { art: 'innen', stoss: true }); box(25.1, 26.3, 1.0, 1.08, -13.5, -4.1, C.metall, { art: 'innen' });
@@ -399,7 +410,19 @@ export function baueWelt({ material, materialInnen, materialLaub }) {
       B.kasten.push({ x0: x - 0.5, x1: x + 0.5, z0: z - 1.1, z1: z + 1.1, y0: 0, y1: 0.8 });
       for (const [dx, dz, rot] of [[-0.75, -0.5, Math.PI / 2], [-0.75, 0.5, Math.PI / 2], [0.75, -0.5, -Math.PI / 2], [0.75, 0.5, -Math.PI / 2]]) stuhl(B, x + dx, z + dz, rot, C.stuhl[(r * 2 + c + (dx > 0 ? 1 : 0)) % C.stuhl.length]);
     }
-    P('einrichtung/Plant', 9, -3, 0, { h: 1.3 }); P('einrichtung/Plant', 22.6, -3, 0, { h: 1.3 }); }
+    P('einrichtung/Plant', 9, -3, 0, { h: 1.3 }); P('einrichtung/Plant', 22.6, -3, 0, { h: 1.3 });
+    // Küche (KayKit Restaurant Bits, CC0): Arbeitsplatte, Spüle, Herd, Kühlschrank an der Ostwand – man sieht über die Theke hinein
+    const KX = 28.9, KR = -Math.PI / 2;
+    P('kk/kitchencounter_straight_A_backsplash', KX, -9.0, KR, { h: 1.1, fest: true });
+    P('kk/kitchencounter_sink_backsplash', KX, -7.16, KR, { h: 1.65, fest: true });
+    P('kk/stove_multi_decorated', KX, -5.32, KR, { h: 1.58, fest: true });
+    P('kk/fridge_A_decorated', KX, -3.4, KR, { h: 2.25, fest: true });
+    P('kk/pot_large', KX - 0.1, -9.25, 0.3, { h: 0.42, y: 0.92 }); P('kk/cuttingboard', KX - 0.25, -8.55, 0.2, { s: 0.55, y: 0.92 });
+    P('kk/dishrack_plates', 27.0, -13.1, 0, { h: 0.55, y: 0.94 });
+    P('kk/crate_tomatoes', 27.0, -11.6, 0.1, { h: 0.42, fest: true }); P('kk/crate_carrots', 27.0, -12.4, -0.1, { h: 0.42, fest: true });
+    P('kk/crate_potatoes', 27.05, -12.0, 0.2, { h: 0.4, y: 0.42 });
+    for (let i = 0; i < 4; i++) P('kk/plate', 25.7, -4.6 + i * 0.001, 0, { s: 0.26, y: 1.08 + i * 0.025 });   // Tellerstapel an der Ausgabe
+    P('kk/bowl', 25.7, -5.2, 0, { s: 0.2, y: 1.08 }); P('kk/ketchup', 25.6, -13.0, 0, { h: 0.2, y: 1.08 }); P('kk/mustard', 25.8, -13.0, 0, { h: 0.2, y: 1.08 }); }
 
   R('halle', 'Eingangshalle', -8, 8, -14, -2);
   R('gang', 'Gang', -30, 30, -18, -14);
@@ -664,6 +687,12 @@ export function baueWelt({ material, materialInnen, materialLaub }) {
   { const v = schild('Rauchen und Vapen auf dem Schulgelände verboten', 2.8, 0.42, { bg: '#ffffff', fg: '#c0392b', rand: '#c0392b', schrift: 'bold 66px system-ui' }); v.position.set(58.22, 2.6, -12.4); v.rotation.y = Math.PI / 2; schilder.push(v); }
   P('verkehr/Bus', -12, 46, Math.PI / 2, { h: 3.2, fest: true, id: 'bus' });
   for (const [x, m] of [[24, 'auto/sedan'], [32, 'auto/hatchback-sports'], [52, 'auto/suv'], [-50, 'auto/van']]) P(m, x, 54.2, -Math.PI / 2, { h: 1.6, fest: true });
+  // mehr Leben an der Straße (KayKit City Bits): Autos am Parkstreifen in verschiedenen Farben, Richtung gemischt
+  for (const [x, m, f, d] of [[-38, 'kk/car_hatchback', null, 1], [-30, 'kk/car_stationwagon', '#d8e2ea', -1], [12, 'kk/car_sedan', null, 1], [40, 'kk/car_hatchback', '#e6c8a0', -1], [64, 'kk/car_sedan', '#a8c8e8', 1], [-64, 'kk/car_stationwagon', null, 1]])
+    P(m, x, 54.2, d * Math.PI / 2, { s: 4.1, fest: true, ...(f ? { farbe: f } : {}) });
+  // Hinterhof der Kantine (zwischen Haus und Turnhalle): Container an der Küchentür, Kisten, Mülltonnen
+  P('kk/dumpster', 32.6, -8.6, -Math.PI / 2, { s: 2.0, fest: true }); P('kk/dumpster', 32.6, -15.0, -Math.PI / 2, { s: 2.0, fest: true, farbe: '#9fc2a0' });
+  P('kk/box_A', 31.0, -14.0, 0.3, { s: 0.6, fest: true }); P('kk/box_A', 31.1, -14.0, 1.1, { s: 0.5, y: 0.6 }); P('kk/trash_A', 31.0, -9.6, 0, { s: 0.6, fest: true });
   P('strasse/dumpster', 27.5, -4.2, 0, { h: 1.4, fest: true });
   P('platz/lantern', -4, 36, 0, { h: 2.6 }); P('platz/lantern', 4, 36, 0, { h: 2.6 });
 

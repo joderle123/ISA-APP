@@ -16,6 +16,7 @@ import { createSky } from '../world/sky.js';
 import { lambertVC } from '../world/landmarks.js';
 import { baueWelt } from './welt.js';
 import { baueRequisiten, stelle } from './requisiten.js';
+import { baueNatur } from './natur.js';
 import { ladePerson, namensschild, SITZ } from './figuren.js';
 import { fussSchatten, WOLKEN } from './texturen.js';
 import { createHandschlag, HANDSCHLAEGE } from './handschlag.js';
@@ -164,6 +165,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
 
   await schritt(0.35, 'Tische und Stühle …');
   const req = await baueRequisiten({ welt, material, scene });
+  try { await baueNatur({ welt, scene, veil, windZeit, wenig: q.name === 'low' }); } catch (e) { console.warn('Natur', e); }
   const bus = req.eigene.bus;
 
   await schritt(0.6, 'Die Klasse kommt …');

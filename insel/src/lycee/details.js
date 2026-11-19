@@ -221,15 +221,10 @@ export function baueDetails({ B, P, schilder, C, uhrTextur, extra, raeume, plaet
   // ---------- Hof: Pflanzkübel mit Baum und Sitzkante, Tischtennisplatte ----------
   const blatt = [hex('#3f8f4a'), hex('#4fa556'), hex('#367d43'), hex('#5cb860')];
   // Laubbaum: Stamm, zwei Äste, Krone aus 7–9 Ballen in vier Grüntönen; s skaliert die Krone (große Linde im Innenhof)
+  // Laubbaum: gemalter Baum aus dem Naturpaket (natur.js, Textur-Blätter, Wind). Sorte und Drehung je Ort verschieden.
+  const BAUM = ['natur/CommonTree_1', 'natur/CommonTree_3', 'natur/CommonTree_5'];
   const baum = (x, z, h = 5.2, seed = 1) => {
-    const s = Math.max(1, h / 5.6), n = s > 1.6 ? 9 : 7;
-    const st = new THREE.CylinderGeometry(0.13 * s, 0.21 * s, h * 0.55, 8); st.translate(x, h * 0.275, z); geo(st, hex('#7a5638'));
-    for (const q of [-1, 1]) { const a = new THREE.CylinderGeometry(0.05 * s, 0.08 * s, 1.1 * s, 6); a.rotateZ(q * 0.7); a.rotateY(seed); a.translate(x + Math.cos(seed) * q * 0.35 * s, h * 0.5, z - Math.sin(seed) * q * 0.35 * s); geo(a, hex('#6b4a30')); }
-    for (let k = 0; k < n; k++) {
-      const a = (k + seed) * 2.1, rr = (k === 0 ? 0 : 0.75 + ((k * 7 + seed) % 3) * 0.15) * s;
-      const g = new THREE.IcosahedronGeometry((k === 0 ? 1.3 : 0.95 + ((k + seed) % 3) * 0.12) * s, 1);
-      g.translate(x + Math.sin(a) * rr, h * 0.62 + (k === 0 ? 0.5 : ((k * 3 + seed) % 4) * 0.28) * s, z + Math.cos(a) * rr); geo(g, blatt[(k + seed) % blatt.length], 'laub');
-    }
+    plaetze.push({ m: BAUM[Math.abs(seed) % BAUM.length], x, z, rot: (seed * 2.39) % (Math.PI * 2), h: h > 8 ? h * 0.95 : h * 1.28 });
   };
   // Die kantigen Kegelbäume aus dem Paket durch diese Laubbäume ersetzen (gleicher Ort, Stamm bleibt fest)
   const ersetzeBaeume = () => { for (let i = plaetze.length - 1; i >= 0; i--) {
@@ -251,6 +246,48 @@ export function baueDetails({ B, P, schilder, C, uhrTextur, extra, raeume, plaet
     for (let k = 0; k < 6; k++) { const g = new THREE.IcosahedronGeometry(0.22 + (k % 3) * 0.05, 0); g.translate(x - 0.8 + (k % 3) * 0.8, 0.66, z + (k < 3 ? -0.7 : 0.7)); geo(g, k % 2 ? C.gruen : hex('#2e7d4f')); }
     baum(x, z, 4.8 + (nr % 3) * 0.6, nr);
   }
+  // ---------- Natur rund um die Schule (natur.js): Waldgürtel, Straßenbäume, Beete an der Fassade, Gras am Rasenrand ----------
+  // Feste Zufallsfolge, damit die Welt bei jedem Start gleich aussieht. Nur dort, wo nichts gebaut ist.
+  { let sz = 7919; const rnd = () => { sz = (sz * 16807) % 2147483647; return sz / 2147483647; };
+    const bauten = B.alle.filter((k) => k.y1 > 0.3 && (k.x1 - k.x0) * (k.z1 - k.z0) < 4000);
+    const leer = (x, z, r) => !bauten.some((k) => x + r > k.x0 && x - r < k.x1 && z + r > k.z0 && z - r < k.z1)
+      && !plaetze.some((q) => Math.hypot(q.x - x, q.z - z) < r + 0.6) && !imRaum(x, z)
+      && !(x > -108 && x < -64 && z > -38 && z < 22)            // Sportplatz mit Laufbahn
+      && !(x > -47 && x < 47 && z > -3 && z < 41)              // gepflasterter Hof
+      && !(z > 39 && z < 57);                                   // Straße und Gehwege
+    const setze = (m, x, z, h, opt = {}) => plaetze.push({ m, x, z, rot: rnd() * Math.PI * 2, h, ...opt });
+    // Waldgürtel im Norden und Osten: hinten Kiefern, davor Laubbäume – die Schule liegt am Waldrand wie viele Schulen im Ösling/Müllerthal
+    const wald = [];
+    for (let x = -106; x <= 106; x += 8.5) for (let z = -116; z <= -86; z += 8.5) wald.push([x + (rnd() - 0.5) * 5, z + (rnd() - 0.5) * 5]);
+    for (let x = 72; x <= 106; x += 9) for (let z = -80; z <= 34; z += 9) wald.push([x + (rnd() - 0.5) * 5, z + (rnd() - 0.5) * 5]);
+    for (let z = -80; z <= -44; z += 9) for (let x = -106; x <= -78; x += 9) wald.push([x + (rnd() - 0.5) * 5, z + (rnd() - 0.5) * 5]);
+    for (const [x, z] of wald) {
+      if (!leer(x, z, 2.2)) continue;
+      const tief = z < -96 || x > 90 || x < -96;
+      const m = tief ? (rnd() < 0.6 ? 'natur/Pine_5' : 'natur/Pine_1') : (rnd() < 0.4 ? 'natur/CommonTree_5' : rnd() < 0.5 ? 'natur/CommonTree_3' : 'natur/Pine_5');
+      setze(m, x, z, (tief ? 9 : 8) + rnd() * 4, { fest: 0.35 });
+      if (rnd() < 0.55 && leer(x + 2.4, z + 1.2, 0.8)) setze(rnd() < 0.5 ? 'natur/Bush_Common' : 'natur/Fern_1', x + 2.4, z + 1.2, 0.9 + rnd() * 0.6);
+    }
+    // Straßenbäume auf der Südseite (Allee), Abstand 12 m
+    for (let x = -96; x <= 96; x += 12) if (Math.abs(x - 0) > 8 && leer(x, 57.6, 1.2)) setze(BAUM[(x / 12 + 20) % 3 | 0], x, 57.6, 7 + rnd() * 1.5, { fest: 0.3 });
+    // Beete an der Hof-Fassade: Bordstein, Erde, Büsche mit Blüten im Wechsel
+    for (const [a0, a1] of [[-27.4, -3.2], [3.2, 16.8], [21.6, 27.4]]) {
+      box(a0, a1, 0, 0.32, -1.75, -0.95, C.sandsteinDunkel, { stoss: true }); box(a0 + 0.08, a1 - 0.08, 0.32, 0.35, -1.67, -1.03, C.erde);
+      for (let x = a0 + 0.9; x < a1 - 0.6; x += 1.7) plaetze.push({ m: (Math.round(x * 3) % 2) ? 'natur/Bush_Common_Flowers' : 'natur/Bush_Common', x, z: -1.35, rot: rnd() * 6.28, h: 0.85 + rnd() * 0.25, y: 0.3 });
+    }
+    // Rasenrand: Grasbüschel, Klee, Blumen – locker gestreut, nie auf Wegen
+    const tuffs = ['natur/Grass_Common_Short', 'natur/Grass_Wispy_Tall', 'natur/Clover_1', 'natur/Flower_3_Group', 'natur/Flower_4_Group', 'natur/Grass_Common_Short'];
+    for (let i = 0; i < 420; i++) {
+      const x = -108 + rnd() * 216, z = -84 + rnd() * 160;
+      if (!(x < -47 || x > 47 || z < -76 || z > 57) || !leer(x, z, 0.5)) continue;   // nur auf Rasen außen herum
+      const m = tuffs[(rnd() * tuffs.length) | 0];
+      setze(m, x, z, /Flower/.test(m) ? 0.55 + rnd() * 0.3 : 0.4 + rnd() * 0.35);
+    }
+    // ein paar Findlinge und Pilze am Waldrand
+    for (let i = 0; i < 14; i++) { const x = -100 + rnd() * 200, z = -84 + rnd() * 6; if (leer(x, z, 1.4)) setze(rnd() < 0.5 ? 'natur/Rock_Medium_1' : 'natur/Rock_Medium_3', x, z, 0.8 + rnd() * 0.9, { fest: true }); }
+    for (let i = 0; i < 18; i++) { const x = -100 + rnd() * 200, z = -86 - rnd() * 20; if (leer(x, z, 0.4)) setze('natur/Mushroom_Common', x, z, 0.22 + rnd() * 0.12); }
+  }
+
   // Tischtennisplatte (Beton, wie auf vielen Schulhöfen)
   let tischtennis = null;
   for (const [x, z] of [[-20, 32], [-34, 30], [24, 34]]) {
