@@ -34,8 +34,9 @@ EXT_meshopt_compression; das Spiel entpackt mit `three/examples/jsm/libs/meshopt
 Das Spiel wird so von 22 MB auf rund 6 MB kleiner.
 
 ## kaykit.glb
-KayKit „Furniture Bits“, „City Builder Bits“ und „Restaurant Bits“ von Kay Lousberg (www.kaylousberg.com), **CC0 1.0**.
-Geladen am 19.11.2026 von den öffentlichen GitHub-Archiven (github.com/KayKit-Game-Assets). Die Farben werden aus dem
+KayKit „Furniture Bits“, „City Builder Bits“, „Restaurant Bits“, „Holiday Bits“, „Halloween Bits“, „Mixed Bag 1“ und „Mixed Bag 2“
+von Kay Lousberg (www.kaylousberg.com), **CC0 1.0**. 120 Modelle.
+Geladen am 19.11.2026 von den öffentlichen GitHub-Archiven (github.com/KayKit-Game-Assets) und über kaylousberg.itch.io (`tools/lycee/itch-laden.sh`). Die Farben werden aus dem
 Farbatlas in die Eckpunkte übernommen (sRGB), ein Netz je Modell, Namen `kk/<modell>`.
 Erzeugen: `python -I tools/lycee/kaykit.py kaykit.glb <Furniture-Ordner> <City-Ordner> <Restaurant-Ordner> -- armchair couch_pillows …`
 (braucht numpy und Pillow).

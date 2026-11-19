@@ -129,6 +129,13 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     const t = ctx.currentTime, h = audio.helpers;
     for (let i = 0; i < 3; i++) h.burst(t + Math.random() * 0.7, 0.25 + Math.random() * 0.4, 'bandpass', 320 + Math.random() * 800, 6 + Math.random() * 5, 0.005 + Math.random() * 0.007, bus);
   });
+  // Bumm. Tschak. Bumm-bumm. Tschak. – Noor am Schlagzeug (Bassdrum, Snare, Hi-Hat)
+  const trommel = (laut) => (ctx, bus) => {
+    const t = ctx.currentTime, h = audio.helpers, b = 0.3;
+    const kick = (z) => h.tone('sine', 62, t + z, 0.004, 0.06 * laut, 0.2, bus), snare = (z) => h.burst(t + z, 0.13, 'bandpass', 1900, 0.8, 0.028 * laut, bus), hat = (z) => h.burst(t + z, 0.035, 'highpass', 7200, 1, 0.009 * laut, bus);
+    kick(0); snare(2 * b); kick(4 * b); kick(5 * b); snare(6 * b); for (let i = 0; i < 8; i++) hat(i * b);
+  };
+  audio.register('trommel', trommel(1)); audio.register('trommelLeise', trommel(0.35));
   audio.register('geschirr', (ctx, bus) => {
     const t = ctx.currentTime, h = audio.helpers, n = 1 + Math.floor(Math.random() * 3);
     for (let i = 0; i < n; i++) h.tone('triangle', 2600 + Math.random() * 1800, t + i * (0.07 + Math.random() * 0.08), 0.002, 0.008, 0.16, bus);
@@ -291,8 +298,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   const STATISTEN = [
     { modell: 'menschen', stil: 'Casual', haut: '#e8bf9a', haar: '#5a3a24', oben: '#7b8794', unten: '#2d3748', schuhe: '#ffffff', hoehe: 1.7, weg: [[-24, 22], [-10, 28], [16, 24], [8, 12], [-20, 8]], tempo: 1.25 },
     { modell: 'frauen', stil: 'Casual', haut: '#c68e64', haar: '#1b1410', oben: '#e9c46a', unten: '#3a3f4b', schuhe: '#f2f2f2', hoehe: 1.63, weg: [[12, 32.4], [40, 32], [43, 8], [14, 10]], tempo: 1.15 },
-    { modell: 'menschen', stil: 'Beach', haut: '#9b6a45', haar: '#1b1410', oben: '#e85d75', unten: '#4a4f5c', schuhe: '#f2f2f2', hoehe: 1.74, kopf: 'cap', kopfFarbe: '#2b2b33', weg: [[-27, -15.0], [27, -15.0]], tempo: 1.2 },
-    { modell: 'frauen', stil: 'Adventurer', haut: '#e0b48c', haar: '#2b1d14', oben: '#3fa66b', unten: '#2d3748', schuhe: '#6b4e3a', hoehe: 1.6, weg: [[25, -15.3], [-25, -15.3]], tempo: 1.1 },
+    { modell: 'menschen', stil: 'Beach', haut: '#9b6a45', haar: '#1b1410', oben: '#e85d75', unten: '#4a4f5c', schuhe: '#f2f2f2', hoehe: 1.74, kopf: 'cap', kopfFarbe: '#2b2b33', weg: [[-27, -15.0], [23.5, -15.0]], tempo: 1.2 },
+    { modell: 'frauen', stil: 'Adventurer', haut: '#e0b48c', haar: '#2b1d14', oben: '#3fa66b', unten: '#2d3748', schuhe: '#6b4e3a', hoehe: 1.6, weg: [[23, -15.3], [-25, -15.3]], tempo: 1.1 },
     { modell: 'menschen', stil: 'Casual2', haut: '#f1c7a2', haar: '#d9b36a', oben: '#2fb8a8', unten: '#3a3f4b', schuhe: '#2b2b2b', hoehe: 1.68, frisur: 'locken', weg: [[-4.5, 38], [-4.5, 3], [-1, 3], [-1, 38]], tempo: 1.3 },
     // Pausenaufsicht in Warnweste: läuft ihre Runde über den Hof
     { modell: 'menschen', stil: 'Worker', haut: '#e8bf9a', haar: '#7a7a7a', oben: '#ffd166', unten: '#2d3748', schuhe: '#2b2b2b', hoehe: 1.8, weg: [[-20, 28.4], [20, 28.4], [30, 6], [0, 4], [-26, 6]], tempo: 0.95 },
@@ -336,6 +343,11 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     { modell: 'menschen', stil: 'Casual2', haut: '#c99a72', haar: '#2b1d14', oben: '#e85d75', unten: '#2d3748', schuhe: '#2b2b2b', hoehe: 1.7, steht: [4.2, -17.2, Math.PI, 'handy'] },
     // Halle: liest an der Pinnwand
     { modell: 'frauen', stil: 'Casual', haut: '#c99a72', haar: '#2b1d14', oben: '#e9c46a', unten: '#3a3f4b', schuhe: '#f2f2f2', hoehe: 1.62, steht: [-6.7, -12.4, -Math.PI / 2, 'handy'] },
+    // Neubau: malt an der Staffelei, sitzt am PC; Lesesaal: zwei lesen
+    { modell: 'frauen', stil: 'Casual', haut: '#e0b48c', haar: '#7a4a2a', oben: '#e9b949', unten: '#2d3748', schuhe: '#f2f2f2', hoehe: 1.6, steht: [54.0, -51.3, Math.PI, 'redet'] },
+    { modell: 'menschen', stil: 'Casual2', haut: '#c68e64', haar: '#1b1410', oben: '#4f88c8', unten: '#3a3f4b', schuhe: '#ffffff', hoehe: 1.66, steht: [50.0, -43.85, Math.PI, 'sitzt'] },
+    { modell: 'frauen', stil: 'Adventurer', haut: '#f1c7a2', haar: '#c9a15a', oben: '#3fa66b', unten: '#3a3f4b', schuhe: '#f2f2f2', hoehe: 1.6, steht: [8.25, -65.65, 0, 'sitzt'] },
+    { modell: 'menschen', stil: 'Casual', haut: '#9b6a45', haar: '#1b1410', oben: '#d9693f', unten: '#2d3748', schuhe: '#2b2b2b', hoehe: 1.7, steht: [19.7, -58.35, Math.PI, 'sitzt'] },
   ];
   // Stammgäste (stammgaeste.js): feste Orte, Namensschild, eigene Geschichte über das Jahr
   for (const st of STAMM) STATISTEN.push({ ...st.aussehen, steht: [...st.steht], stamm: st.id });
@@ -2220,7 +2232,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       zu: () => { canvas.style.filter = ''; steuerung.emote = null; steuerung.kameraAus = false; steuerung.frei = true; input.setEnabled(true); foto = null; rr.setDof(0); steuerung.kamera(0.016, true); },
     });
   };
-  let laeuft = false, raumAlt = undefined, geheimT = 0, klangT = 1, bankT = 0;
+  let laeuft = false, raumAlt = undefined, geheimT = 0, klangT = 1, bankT = 0, trommelT = 1;
   // Während eines Minispiels auf eigener Fläche (Bandprobe, Tischtennis, Freiwurf) ruht die 3D-Welt fast ganz:
   // sie ist ohnehin verdeckt, und der Takt im Spiel braucht die Rechenzeit.
   let ruheN = 0, titelT = 0;
@@ -2400,6 +2412,9 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       if (!raum && p.z > -2 && p.z < 40 && Math.abs(p.x) < 46 && !(sky.night > 0.5)) audio.play('stimmen');
       else if (rid === 'kantine') audio.play('geschirr');
     }
+    // Noor übt im Musikraum (Stammgast): leiser Rhythmus, im Flur des Neubaus noch zu hören
+    trommelT -= dt;
+    if (trommelT <= 0) { trommelT = 2.4 + (Math.random() < 0.35 ? 2.4 : 0); if ((rid === 'musik' || rid === 'neubauFlur') && !(sky.night > 0.5)) audio.play(rid === 'musik' ? 'trommel' : 'trommelLeise'); }
     // Ansprechen
     naechste = imGespraech || steuerung.brett ? null : wenNah();
     iaNah = !naechste && !imGespraech && !probe && !steuerung.brett ? ia.naechste(p) : null;

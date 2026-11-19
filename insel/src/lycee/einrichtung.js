@@ -202,4 +202,211 @@ export function baueEinrichtung({ B, P, C, schild, schilder, stuhl, DECKE }) {
   D('kk/hot_chocolate_decorated', 25.65, -6.2, { h: 0.16, y: 1.08, saison: 'weihnacht' }); D('kk/cookie', 25.7, -6.6, { s: 0.12, y: 1.08, saison: 'weihnacht' });
   D('kk/candycane_small', 25.7, -7.0, { h: 0.14, y: 1.08, saison: 'weihnacht' });
   D('kk/pumpkin_orange_jackolantern', 25.7, -9.5, { s: 0.4, y: 1.08, saison: 'halloween', rot: -Math.PI / 2 });
+
+  // ---------- Neubau (x 44 … 64): Musik (z −62 … −54), Kunst (−54 … −46), Informatik (−46 … −38) – Räume, in denen gerade noch jemand war ----------
+  // Plakat aus Leinwand: zeichne(g, w, h); licht = wie Schilder (leuchtet), sonst beleuchtet und durchscheinend (Farbkleckse am Boden)
+  function plakat(W, H, zeichne, { px = 512, licht = true } = {}) {
+    const cv = document.createElement('canvas'); cv.width = px; cv.height = Math.round(px * H / W);
+    zeichne(cv.getContext('2d'), cv.width, cv.height);
+    const tex = new THREE.CanvasTexture(cv); tex.colorSpace = THREE.SRGBColorSpace; tex.anisotropy = 4;
+    const mat = licht ? new THREE.MeshBasicMaterial({ map: tex, toneMapped: false }) : new THREE.MeshLambertMaterial({ map: tex, transparent: true, depthWrite: false });
+    const m = new THREE.Mesh(new THREE.PlaneGeometry(W, H), mat); m.name = 'schild'; schilders(m); return m;
+  }
+  const text = (g, t, x, y, f, c = '#2b3a55', a = 'center') => { g.font = f; g.fillStyle = c; g.textAlign = a; g.fillText(t, x, y); };
+  const PAPIER = (bg) => (g, w, h) => { g.fillStyle = bg; g.fillRect(0, 0, w, h); };
+  // ein einfaches Plakat: farbige Kante oben, Kopfzeile(n), Zeilen darunter
+  const zettel = (W, H, bg, kopf, zeilen, { fg = '#2b3a55', kf = 'bold 64px system-ui', zf = '40px system-ui', akz = '#e85d75' } = {}) => plakat(W, H, (g, w, h) => {
+    PAPIER(bg)(g, w, h); g.fillStyle = akz; g.fillRect(0, 0, w, 16);
+    const zk = kopf.split('\n'); zk.forEach((t, i) => text(g, t, w / 2, 90 + i * 70, kf, fg));
+    zeilen.forEach((t, i) => text(g, t, w / 2, 110 + zk.length * 70 + i * 56, zf, fg));
+  });
+  const SW = hex('#2b2b33'), STAHL = hex('#9aa3ad');
+
+  // Musikraum: Teppich unterm Schlagzeug, Verstärker, Notenständer, Cajón, Sofa, Gitarre am Fenster, Bandprobe-Plakat, Notentafel, Lautstärke-Ampel
+  { D('kk/rug_oval_A', 58, -59.7, { s: 3.4, rot: 0 });
+    box(52.4, 53.2, 0.06, 0.66, -61.6, -61.0, SW, { art: 'innen', stoss: true }); box(52.48, 53.12, 0.12, 0.5, -61.0, -60.98, hex('#4a4f5c'), { art: 'innen' });
+    box(52.5, 53.1, 0.54, 0.6, -61.0, -60.97, hex('#d4af37'), { art: 'innen' }); box(53.0, 53.06, 0.56, 0.58, -60.97, -60.96, hex('#ff3b30'), { art: 'licht' });
+    D('kk/pumpkin_yellow_jackolantern', 52.8, -61.3, { h: 0.26, y: 0.66, rot: 0, saison: 'halloween' }); D('kk/lantern_decorated', 52.8, -61.3, { h: 0.3, y: 0.66, rot: 0, saison: 'weihnacht' });
+    for (const [x, z] of [[51.6, -57.7], [54, -58.1], [56.4, -57.7]]) {   // Notenständer mit Blatt
+      box(x - 0.015, x + 0.015, 0.06, 1.0, z - 0.015, z + 0.015, SW, { art: 'innen' }); box(x - 0.2, x + 0.2, 0.06, 0.09, z - 0.02, z + 0.02, SW, { art: 'innen' }); box(x - 0.02, x + 0.02, 0.06, 0.09, z - 0.2, z + 0.2, SW, { art: 'innen' });
+      box(x - 0.26, x + 0.26, 0.95, 1.3, z - 0.02, z + 0.0, SW, { art: 'innen' }); box(x - 0.2, x + 0.2, 0.98, 1.27, z + 0.0, z + 0.01, hex('#f4f4f2'), { art: 'innen' });
+    }
+    box(50.1, 50.42, 0.06, 0.54, -55.7, -55.38, hex('#b5793e'), { art: 'innen', stoss: true }); box(50.18, 50.34, 0.2, 0.36, -55.38, -55.37, hex('#3a2a1c'), { art: 'innen' });   // Cajón
+    D('kk/couch', 63.0, -56.3, { s: 2.6, rot: -Math.PI / 2, fest: true }); D('kk/pillow_A', 63.15, -55.6, { s: 0.42, y: 0.5, rot: -1.3 }); D('kk/cat_headphones_B', 62.9, -57.0, { s: 0.2, y: 0.5 });
+    box(63.0, 63.7, 0.06, 0.1, -61.0, -60.2, SW, { art: 'innen' }); D('kk/guitar_B', 63.45, -60.6, { h: 1.1, rot: -Math.PI / 2 });
+    const bp = zettel(1.0, 1.4, '#ffd166', 'BANDPROBE', ['Donnerstag · 13:00', 'hier im Musikraum', '', 'Wir suchen: BASS!', 'Keine Ahnung? Egal.', 'Wir lernen zusammen.', '', '– Gilles 🎸'], { akz: '#2b3a55' });
+    bp.position.set(44.12, 1.65, -55.3); bp.rotation.y = Math.PI / 2;
+    const nt = plakat(2.4, 1.1, (g, w, h) => {   // Notentafel: fünf Linien, Noten, Rhythmus
+      PAPIER('#fbfbf8')(g, w, h); g.strokeStyle = '#2b3a55'; g.lineWidth = 3;
+      for (let i = 0; i < 5; i++) { g.beginPath(); g.moveTo(40, 70 + i * 22); g.lineTo(w - 40, 70 + i * 22); g.stroke(); }
+      g.fillStyle = '#2b3a55'; [[120, 136], [200, 114], [280, 103], [360, 92], [440, 114], [520, 136], [600, 125], [680, 103], [760, 81], [840, 114], [920, 136]].forEach(([x, y]) => { g.beginPath(); g.ellipse(x, y, 13, 9, -0.4, 0, 7); g.fill(); g.fillRect(x + 10, y - 62, 4, 62); });
+      text(g, 'Rhythmus:  ta   ta   ti-ti   ta   ·   Stille zählt auch.', w / 2, 230, 'bold 34px "Comic Sans MS", cursive', '#e85d75');
+    }, { px: 1024 });
+    nt.position.set(51.5, 1.6, -54.12); nt.rotation.y = Math.PI;
+    const amp = plakat(0.5, 1.0, (g, w, h) => {   // Lautstärke-Ampel
+      PAPIER('#2b3a55')(g, w, h); [['#3fa66b', 'flüstern'], ['#e9b949', 'normal'], ['#d9523c', 'BAND!']].forEach(([c, t], i) => { g.fillStyle = c; g.beginPath(); g.arc(w / 2, 110 + i * 300, 80, 0, 7); g.fill(); text(g, t, w / 2, 240 + i * 300, 'bold 46px system-ui', '#ffffff'); });
+    }, { px: 512 });
+    amp.position.set(44.12, 1.7, -60.6); amp.rotation.y = Math.PI / 2;
+  }
+
+  // Kunstraum: Hocker am Werktisch, Pinselgläser, Paletten, Farbkleckse am Boden, Trockengestell, Schürzen, Spiegel, Ton-Regal, Plakate
+  { const FARBEN = ['#d9523c', '#2f6db0', '#e9b949', '#3fa66b', '#6b4e8a', '#e85d75'];
+    for (const z of [-47.3, -49.9]) for (let i = 0; i < 6; i++) { const x = 48.2 + i * 2.3, c = hex(FARBEN[i % FARBEN.length]);   // Hocker
+      box(x - 0.19, x + 0.19, 0.58, 0.62, z - 0.19, z + 0.19, c, { art: 'innen' });
+      for (const [dx, dz] of [[-0.14, -0.14], [0.14, -0.14], [-0.14, 0.14], [0.14, 0.14]]) box(x + dx - 0.02, x + dx + 0.02, 0.06, 0.58, z + dz - 0.02, z + dz + 0.02, STAHL, { art: 'innen' });
+      box(x - 0.15, x + 0.15, 0.24, 0.26, z - 0.15, z + 0.15, STAHL, { art: 'innen' });
+    }
+    for (const x of [49.6, 54.0, 58.4]) {   // Pinselglas mit Pinseln
+      D('kk/jar_A_medium', x, -48.55, { h: 0.17, y: 0.8, rot: 0 });
+      for (let k = 0; k < 4; k++) { const bx = x - 0.045 + k * 0.03, bz = -48.57 + (k % 2) * 0.03; box(bx, bx + 0.012, 0.86, 1.09, bz, bz + 0.012, hex('#c9a46a'), { art: 'innen' }); box(bx - 0.003, bx + 0.015, 1.09, 1.12, bz - 0.003, bz + 0.015, hex(FARBEN[k]), { art: 'innen' }); }
+    }
+    for (const [x, z] of [[51.2, -48.2], [56.4, -49.0], [60.1, -48.3]]) {   // Paletten mit Farbtupfen
+      box(x - 0.17, x + 0.17, 0.8, 0.81, z - 0.12, z + 0.12, hex('#e9d8b4'), { art: 'innen' });
+      FARBEN.forEach((f, k) => box(x - 0.13 + (k % 3) * 0.1, x - 0.09 + (k % 3) * 0.1, 0.81, 0.818, z - 0.07 + Math.floor(k / 3) * 0.1, z - 0.03 + Math.floor(k / 3) * 0.1, hex(f), { art: 'innen' }));
+    }
+    let ks = 31; const kr = () => { ks = (ks * 16807) % 2147483647; return ks / 2147483647; };
+    for (const [x, z] of [[49.4, -51.0], [54.6, -50.8], [58.8, -51.2], [62.2, -49.6]]) {   // Farbkleckse auf dem Boden
+      const k = plakat(2.0, 1.4, (g, w, h) => { for (let i = 0; i < 16; i++) { g.fillStyle = FARBEN[Math.floor(kr() * FARBEN.length)]; g.globalAlpha = 0.5 + kr() * 0.4; const cx = 60 + kr() * (w - 120), cy = 40 + kr() * (h - 80), r = 4 + kr() * 22; g.beginPath(); g.arc(cx, cy, r, 0, 7); g.fill(); for (let j = 0; j < 4; j++) { g.beginPath(); g.arc(cx + (kr() - 0.5) * r * 4, cy + (kr() - 0.5) * r * 4, 2 + kr() * 5, 0, 7); g.fill(); } } }, { px: 256, licht: false });
+      k.rotation.x = -Math.PI / 2; k.position.set(x, 0.115, z);
+    }
+    box(44.3, 45.1, 0.06, 0.08, -53.7, -52.3, STAHL, { art: 'innen' });   // Trockengestell mit Bildern
+    for (const [x, z] of [[44.3, -53.7], [45.08, -53.7], [44.3, -52.32], [45.08, -52.32]]) box(x, x + 0.02, 0.06, 1.45, z, z + 0.02, STAHL, { art: 'innen', stoss: true });
+    for (let i = 0; i < 9; i++) { const y = 0.2 + i * 0.14; box(44.32, 45.08, y, y + 0.012, -53.68, -52.34, STAHL, { art: 'innen' }); box(44.36 + (i % 3) * 0.04, 45.0, y + 0.012, y + 0.016, -53.6, -52.42, hex(['#fbe9d0', '#dfeaf2', '#f2e2e2', '#e3efe0'][i % 4]), { art: 'innen' }); }
+    box(44.1, 44.16, 1.62, 1.68, -48.7, -46.4, STAHL, { art: 'innen' });   // Hakenleiste mit Schürzen
+    [-48.3, -47.7, -47.1].forEach((z, i) => { box(44.12, 44.17, 0.95, 1.6, z - 0.22, z + 0.22, hex(['#2f6db0', '#3fa66b', '#2b3a55'][i]), { art: 'innen' }); for (let k = 0; k < 3; k++) box(44.17, 44.175, 1.0 + kr() * 0.5, 1.04 + kr() * 0.5, z - 0.15 + kr() * 0.25, z - 0.11 + kr() * 0.25, hex(FARBEN[(i + k) % 6]), { art: 'innen' }); });
+    D('kk/ghost_tote', 44.35, -46.6, { h: 0.55, y: 1.05, rot: Math.PI / 2, saison: 'halloween' });
+    D('kk/ornate_mirror', 61.0, -53.62, { h: 1.6, rot: 0 });
+    const sp = zettel(0.9, 0.5, '#ffffff', 'Selbstporträt-Woche', ['Schau genau hin.', 'Du bist interessant.'], { kf: 'bold 56px system-ui', zf: '38px system-ui', akz: '#6b4e8a' });
+    sp.position.set(61.0, 2.05, -53.88);
+    const fm = plakat(2.2, 0.8, (g, w, h) => { PAPIER('#2b3a55')(g, w, h); text(g, 'FEHLER?', w / 2, 120, 'bold 110px system-ui', '#ffd166'); text(g, 'Mach Kunst draus.', w / 2, 220, 'bold 72px "Comic Sans MS", cursive', '#ffffff'); }, { px: 1024 });
+    fm.position.set(49.2, 2.45, -53.88);
+    const au = zettel(1.1, 0.8, '#fff5e1', 'AUSSTELLUNG\nim Dezember', ['Thema: Ich in 10 Jahren', 'Alle machen mit. Auch du.'], { kf: 'bold 60px Georgia, serif', zf: '40px system-ui', akz: '#d9693f' });
+    au.position.set(55.2, 2.3, -53.88);
+    const fk = plakat(0.9, 0.9, (g, w, h) => { PAPIER('#ffffff')(g, w, h); for (let i = 0; i < 12; i++) { g.fillStyle = `hsl(${i * 30},70%,55%)`; g.beginPath(); g.moveTo(w / 2, h / 2 + 10); g.arc(w / 2, h / 2 + 10, 190, (i / 12) * Math.PI * 2, ((i + 1) / 12) * Math.PI * 2); g.fill(); } g.fillStyle = '#ffffff'; g.beginPath(); g.arc(w / 2, h / 2 + 10, 70, 0, 7); g.fill(); text(g, 'Farbkreis', w / 2, 50, 'bold 44px system-ui'); });
+    fk.position.set(58.6, 2.3, -53.88);
+    // Ton-Regal am Fenster: Töpfe, Vasen, kantige Ton-Köpfe zum Trocknen
+    for (const y of [0.45, 0.95, 1.45]) box(63.25, 63.78, y, y + 0.04, -51.0, -48.4, hex('#c9a46a'), { art: 'innen' });
+    for (const z of [-51.0, -48.44]) box(63.25, 63.78, 0.06, 1.5, z, z + 0.04, hex('#a07a4a'), { art: 'innen', stoss: true });
+    const TON = hex('#c96f4a'), TONH = hex('#d99a74');
+    D('kk/pot_A', 63.5, -50.5, { h: 0.18, y: 0.49 }); D('kk/jar_C_large', 63.5, -49.0, { h: 0.3, y: 0.49, farbe: '#d99a74' }); D('kk/jar_B_small', 63.5, -49.7, { h: 0.16, y: 0.99, farbe: '#c96f4a' });
+    for (const [z, y, c] of [[-50.4, 0.99, TON], [-48.9, 0.99, TONH], [-50.0, 1.49, TON], [-49.0, 1.49, TONH]]) {
+      box(63.38, 63.66, y, y + 0.06, z - 0.14, z + 0.14, c, { art: 'innen' }); box(63.42, 63.62, y + 0.06, y + 0.3, z - 0.1, z + 0.1, c, { art: 'innen' });
+      box(63.36, 63.42, y + 0.15, y + 0.21, z - 0.025, z + 0.025, c, { art: 'innen' }); for (const dz of [-0.05, 0.05]) box(63.405, 63.42, y + 0.22, y + 0.24, z + dz - 0.015, z + dz + 0.015, hex('#3a2a1c'), { art: 'innen' });
+    }
+    D('kk/lantern_hanging', 54, -50, { h: 0.7, y: 2.9, rot: 0, saison: 'weihnacht' });
+  }
+
+  // Informatik: Mäuse, Kopfhörer, Bildschirme mit Inhalt (Code, Blöcke, Passwort-Check, Pixelbild, Lernplattform), 3D-Drucker, Roboter, Plakate zu Netz und KI
+  { const BILD = [
+      (g, w, h) => { PAPIER('#1e2230')(g, w, h); const L = ['let punkte = 0;', 'if (korb) {', '  punkte += 2;', '  jubel();', '}', '// TODO: Dreier?']; L.forEach((t, i) => text(g, t, 24, 46 + i * 38, '28px monospace', ['#7fc4ff', '#ffd166', '#a5d6a7', '#f48fb1', '#ffd166', '#8d96a3'][i], 'left')); },
+      (g, w, h) => { PAPIER('#f4f4f2')(g, w, h); [['wenn Taste ↑', '#e9b949'], ['gehe 10 Schritte', '#2f6db0'], ['sage „Hallo!“', '#6b4e8a'], ['warte 1 Sek.', '#e9b949'], ['wiederhole 3 ×', '#e9b949']].forEach(([t, c], i) => { g.fillStyle = c; g.fillRect(30 + (i > 0 ? 24 : 0), 24 + i * 44, 300, 38); text(g, t, 44 + (i > 0 ? 24 : 0), 52 + i * 44, 'bold 24px system-ui', '#ffffff', 'left'); }); },
+      (g, w, h) => { PAPIER('#2b3a55')(g, w, h); text(g, 'Passwort-Check', w / 2, 52, 'bold 34px system-ui', '#ffffff'); g.fillStyle = '#ffffff'; g.fillRect(40, 80, w - 80, 50); text(g, '●●●●●●●●●●●●', w / 2, 116, '30px system-ui', '#2b3a55'); g.fillStyle = '#3fa66b'; g.fillRect(40, 150, w - 80, 22); text(g, 'stark ✓  · nicht teilen!', w / 2, 200, 'bold 28px system-ui', '#a5d6a7'); },
+      (g, w, h) => { PAPIER('#dfeaf2')(g, w, h); const P = ['....YY....', '...YYYY...', '..YKYYKY..', '..YYYYYY..', '..YRRRRY..', '...YYYY...']; P.forEach((r, j) => [...r].forEach((c, i) => { if (c === '.') return; g.fillStyle = { Y: '#e9b949', K: '#2b2b33', R: '#d9523c' }[c]; g.fillRect(70 + i * 24, 20 + j * 24, 23, 23); })); text(g, 'mein Pixel-Ich', w / 2, 194, 'bold 26px system-ui', '#2b3a55'); },
+      (g, w, h) => { PAPIER('#ffffff')(g, w, h); g.fillStyle = '#2fb8a8'; g.fillRect(0, 0, w, 44); text(g, 'Annexe · Lernplattform', 20, 31, 'bold 24px system-ui', '#ffffff', 'left'); ['✓ Aufgabe 1', '✓ Aufgabe 2', '○ Aufgabe 3'].forEach((t, i) => text(g, t, 30, 90 + i * 40, '26px system-ui', i < 2 ? '#3fa66b' : '#8d96a3', 'left')); },
+    ];
+    let bi = 0;
+    for (let r = 0; r < 3; r++) { const z = -44.6 + r * 2.2;
+      for (let i = 0; i < 6; i++) { const x = 47.4 + i * 2.6;
+        box(x + 0.36, x + 0.44, 0.8, 0.825, z + 0.0, z + 0.12, SW, { art: 'innen' });   // Maus
+        if (rnd() < 0.3) D('kk/cat_headphones_B', x - 0.6, z + 0.12, { s: 0.18, y: 0.8 });
+        if (rnd() < 0.2) D('kk/waterbottle_B', x + 0.75, z - 0.1, { h: 0.22, y: 0.8 });
+        if (rnd() < 0.35) box(x + 0.26, x + 0.36, 1.32, 1.42, z - 0.28, z - 0.275, hex(['#fff59d', '#f48fb1', '#a5d6a7'][i % 3]), { art: 'innen' });   // Klebezettel am Bildschirm
+        if ((r * 6 + i) % 3 === 1) { const s = plakat(0.74, 0.4, BILD[bi++ % BILD.length], { px: 384 }); s.position.set(x, 1.2, z - 0.275); }
+      } }
+    // 3D-Drucker auf eigenem Tisch, druckt gerade einen kleinen Hund
+    box(62.3, 63.7, 0.74, 0.8, -45.4, -44.2, hex('#f4f4f2'), { art: 'innen', stoss: true }); for (const [x, z] of [[62.35, -45.35], [63.6, -45.35], [62.35, -44.3], [63.6, -44.3]]) box(x, x + 0.05, 0.06, 0.74, z, z + 0.05, STAHL, { art: 'innen' });
+    for (const [x, z] of [[62.6, -45.1], [63.36, -45.1], [62.6, -44.5], [63.36, -44.5]]) box(x, x + 0.04, 0.8, 1.42, z, z + 0.04, SW, { art: 'innen' });
+    box(62.6, 63.4, 1.38, 1.42, -45.1, -44.46, SW, { art: 'innen' }); box(62.7, 63.3, 0.8, 0.86, -45.0, -44.56, SW, { art: 'innen' }); box(62.72, 63.28, 0.86, 0.87, -44.98, -44.58, hex('#5d6573'), { art: 'innen' });
+    box(62.9, 63.1, 1.12, 1.2, -44.85, -44.7, hex('#e9b949'), { art: 'innen' }); box(62.98, 63.02, 1.02, 1.12, -44.8, -44.76, STAHL, { art: 'innen' });   // Druckkopf
+    box(62.88, 63.12, 0.87, 0.97, -44.84, -44.72, hex('#d9693f'), { art: 'innen' }); box(63.05, 63.15, 0.97, 1.04, -44.82, -44.74, hex('#d9693f'), { art: 'innen' });   // halber Hund
+    { const t = zettel(0.7, 0.3, '#ffffff', '3D-Drucker', ['Nicht anfassen. Er denkt nach.'], { kf: 'bold 60px system-ui', zf: '36px system-ui', akz: '#d9693f' }); t.position.set(63.0, 0.6, -44.18); }
+    // kleiner Roboter vom Coding-Club
+    { const x = 61.5, z = -40.15; box(x - 0.08, x + 0.08, 0.8, 0.98, z - 0.06, z + 0.06, hex('#c9ccd2'), { art: 'innen' }); box(x - 0.06, x + 0.06, 0.98, 1.08, z - 0.05, z + 0.05, hex('#c9ccd2'), { art: 'innen' });
+      for (const dx of [-0.03, 0.03]) box(x + dx - 0.012, x + dx + 0.012, 1.02, 1.045, z + 0.05, z + 0.055, hex('#7fc4ff'), { art: 'licht' });
+      box(x - 0.005, x + 0.005, 1.08, 1.16, z - 0.005, z + 0.005, STAHL, { art: 'innen' }); box(x - 0.015, x + 0.015, 1.16, 1.19, z - 0.015, z + 0.015, hex('#ff3b30'), { art: 'licht' });
+      for (const dx of [-0.11, 0.11]) box(x + dx - 0.025, x + dx + 0.025, 0.86, 0.96, z - 0.02, z + 0.02, hex('#9aa3ad'), { art: 'innen' }); }
+    // Plakate an der Nordwand
+    for (const [x, kopf, z1, z2, bg, akz] of [
+      [47.6, 'PASSWORT\n= ZAHNBÜRSTE', 'Nicht teilen.', 'Oft wechseln.', '#ffffff', '#2fb8a8'],
+      [51.0, 'ERST DENKEN,\nDANN POSTEN.', 'Was online ist,', 'bleibt online.', '#fff5e1', '#e85d75'],
+      [54.4, 'KI ist ein\nWerkzeug.', 'Den Kopf', 'hast du.', '#eef3fb', '#6b4e8a'],
+      [57.8, 'CODING-CLUB', 'Mittwoch · 13:00', 'Wir bauen ein Mini-Spiel!', '#ffd166', '#2b3a55'],
+    ]) { const p = zettel(1.1, 0.95, bg, kopf, ['', z1, z2], { akz, kf: 'bold 62px system-ui', zf: '42px system-ui' }); p.position.set(x, 2.1, -45.88); }
+  }
+
+  // ---------- Lesesaal (Nordflügel, x 0 … 30, z −72 … −55): Bücher auf den Tischen, Bücherwagen, Sitzsäcke, Buch des Monats, „Psst“-Aufsteller ----------
+  { const SEITE = hex('#fbf7ee'), EINBAND = ['#2f6db0', '#c0392b', '#3fa66b', '#6b4e8a', '#e9b949'];
+    for (const [x, z] of [[9, -64.5], [19, -64.5], [9, -59.5], [19, -59.5]]) {
+      for (const [dx, dz, rot] of [[-2.2, -0.3, 0.2], [0.7, 0.35, Math.PI - 0.15], [2.2, -0.3, 0.1]]) {   // aufgeschlagene Bücher
+        if (rnd() < 0.25) continue;
+        const c = Math.cos(rot), s = Math.sin(rot), bx = x + dx, bz = z + dz, f = hex(EINBAND[Math.floor(rnd() * EINBAND.length)]);
+        const ax = Math.abs(c) > 0.5;   // nur grob gedreht: Kästen bleiben achsparallel
+        box(bx - 0.2, bx + 0.2, 0.8, 0.81, bz - 0.14, bz + 0.14, f, { art: 'innen' }); box(bx - 0.19, bx - 0.005, 0.81, 0.825, bz - 0.13, bz + 0.13, SEITE, { art: 'innen' }); box(bx + 0.005, bx + 0.19, 0.81, 0.825, bz - 0.13, bz + 0.13, SEITE, { art: 'innen' });
+        if (ax) for (let k = 0; k < 4; k++) box(bx - 0.16, bx - 0.04, 0.826, 0.828, bz - 0.08 + k * 0.05, bz - 0.07 + k * 0.05, hex('#8d96a3'), { art: 'innen' });
+      }
+      if (rnd() < 0.7) D('kk/book_set', x - 1.0 + rnd() * 2, z + 0.4, { h: 0.16, y: 0.8, rot: rnd() < 0.5 ? 0 : Math.PI / 2 });
+      if (rnd() < 0.5) D('kk/waterbottle_A', x + 1.2, z - 0.45, { h: 0.22, y: 0.8 });
+      if (rnd() < 0.4) D('kk/cat_headphones_A', x - 1.3, z + 0.45, { s: 0.18, y: 0.8 });
+      D('kk/candle_melted', x + 0.55, z, { h: 0.18, y: 0.8, saison: 'halloween' }); D('kk/lantern_decorated', x + 0.55, z, { h: 0.26, y: 0.8, saison: 'weihnacht' });
+      for (const [s, ry] of [[1, 0], [-1, Math.PI]]) { const t = zettel(0.36, 0.18, '#ffffff', '🤫 Psst!', [], { kf: 'bold 120px system-ui', akz: '#3d5a52' }); t.position.set(x, 0.92, z + s * 0.004); t.rotation.y = ry; }
+    }
+    // Bücherwagen mit zwei Böden
+    { const x = 25.4, z = -66.2; box(x - 0.6, x + 0.6, 0.3, 0.34, z - 0.3, z + 0.3, C.holz, { art: 'innen', stoss: true }); box(x - 0.6, x + 0.6, 0.85, 0.89, z - 0.3, z + 0.3, C.holz, { art: 'innen' });
+      for (const dx of [-0.58, 0.54]) for (const dz of [-0.28, 0.24]) { box(x + dx, x + dx + 0.04, 0.12, 0.95, z + dz, z + dz + 0.04, STAHL, { art: 'innen' }); box(x + dx - 0.02, x + dx + 0.06, 0.06, 0.12, z + dz - 0.02, z + dz + 0.06, SW, { art: 'innen' }); }
+      for (const y of [0.34, 0.89]) for (let i = 0; i < 9; i++) { const bx = x - 0.54 + i * 0.12, hb = 0.18 + rnd() * 0.08; box(bx, bx + 0.09, y, y + hb, z - 0.12, z + 0.12, hex(EINBAND[i % EINBAND.length]), { art: 'innen' }); }
+      const t = zettel(0.5, 0.18, '#ffffff', 'Rückgabe', [], { kf: 'bold 90px system-ui', akz: '#3d5a52' }); t.position.set(x, 0.6, z + 0.31); }
+    // Sitzsäcke in der Leseecke
+    for (const [x, z, c] of [[25.9, -60.9, '#2fb8a8'], [26.1, -62.4, '#d9693f'], [24.9, -61.6, '#e9b949']]) {
+      const m = new THREE.Mesh(new THREE.SphereGeometry(0.42, 16, 10), new THREE.MeshLambertMaterial({ color: c })); m.scale.set(1, 0.6, 1); m.position.set(x, 0.32, z); m.castShadow = true; m.receiveShadow = true; schilders(m);
+      B.kasten.push({ x0: x - 0.35, x1: x + 0.35, z0: z - 0.35, z1: z + 0.35, y0: 0, y1: 0.5 });
+    }
+    D('kk/comicbooks_stacked', 25.4, -61.2, { s: 0.28, y: 0.1 });
+    // Buch des Monats: kleiner Tisch mit Aufsteller
+    { const x = 24.6, z = -57.6; box(x - 0.5, x + 0.5, 0.7, 0.75, z - 0.35, z + 0.35, C.holz, { art: 'innen', stoss: true }); for (const dx of [-0.45, 0.41]) box(x + dx, x + dx + 0.04, 0.1, 0.7, z - 0.02, z + 0.02, C.holz, { art: 'innen' });
+      D('kk/book_set', x - 0.25, z, { h: 0.16, y: 0.75, rot: 0 });
+      const t = plakat(0.5, 0.66, (g, w, h) => { PAPIER('#2b3a55')(g, w, h); text(g, 'BUCH DES MONATS', w / 2, 64, 'bold 42px system-ui', '#ffd166'); g.fillStyle = '#e85d75'; g.fillRect(110, 100, w - 220, 380); text(g, 'Mut braucht', w / 2, 260, 'bold 46px Georgia, serif', '#ffffff'); text(g, 'keine Muskeln', w / 2, 316, 'bold 46px Georgia, serif', '#ffffff'); text(g, '„Ich hab’s in zwei Tagen', w / 2, 560, 'italic 34px system-ui', '#ffffff'); text(g, 'gelesen.“ – Lou ★★★★★', w / 2, 606, 'italic 34px system-ui', '#ffffff'); });
+      t.position.set(x + 0.18, 1.08, z); t.rotation.y = 0; }
+  }
+
+  // ---------- Neubau-Flur (x 40 … 44): Pinnwand mit Zetteln, Bank unter dem Fenster, Pflanzen ----------
+  { const W = 2.4, H = 1.3, cv = document.createElement('canvas'); cv.width = 1024; cv.height = Math.round(1024 * H / W);
+    const g = cv.getContext('2d'); g.fillStyle = '#c9a46a'; g.fillRect(0, 0, cv.width, cv.height);
+    for (let i = 0; i < 400; i++) { g.fillStyle = 'rgba(90,60,30,0.18)'; g.fillRect(Math.random() * cv.width, Math.random() * cv.height, 3, 3); }   // Kork
+    const Z = [
+      ['#ffffff', '#e85d75', ['SCHULFEST', 'im Juni', 'Bühne frei für alle!']],
+      ['#fff59d', '#2b3a55', ['VERLOREN:', 'grüne Flasche', '„Wasserfall“', '– Jeff (6ème)']],
+      ['#a5d6a7', '#2b3a55', ['Bonbon hat', 'Geburtstag! 🐕', 'Leckerli nur', 'über die SePAS']],
+      ['#90caf9', '#2b3a55', ['Fußball-AG', 'Dienstag 13:00', 'Alle Niveaus']],
+      ['#ffcc80', '#2b3a55', ['Hilfe bei', 'Hausaufgaben?', 'CDI · Mo + Do']],
+      ['#f48fb1', '#2b3a55', ['Wer leiht mir', 'einen Bass?', '– Gilles 🎸']],
+    ];
+    Z.forEach(([bg, fg, zeilen], i) => {
+      const c = i % 3, r = Math.floor(i / 3), x = 40 + c * 330 + (i * 37 % 40), y = 40 + r * 270 + (i * 53 % 30);
+      g.save(); g.translate(x + 140, y + 105); g.rotate(((i * 7) % 5 - 2) * 0.03);
+      g.fillStyle = 'rgba(0,0,0,0.2)'; g.fillRect(-134, -96, 280, 214); g.fillStyle = bg; g.fillRect(-140, -102, 280, 214);
+      g.fillStyle = '#d9523c'; g.beginPath(); g.arc(0, -88, 9, 0, 7); g.fill();
+      g.fillStyle = fg; g.textAlign = 'center'; zeilen.forEach((t, k) => { g.font = k === 0 ? 'bold 40px system-ui' : '34px "Comic Sans MS", cursive'; g.fillText(t, 0, -44 + k * 46); });
+      g.restore();
+    });
+    const tex = new THREE.CanvasTexture(cv); tex.colorSpace = THREE.SRGBColorSpace; tex.anisotropy = 4;
+    const m = new THREE.Mesh(new THREE.PlaneGeometry(W, H), new THREE.MeshBasicMaterial({ map: tex, toneMapped: false }));
+    m.position.set(43.83, 1.6, -46.2); m.rotation.y = -Math.PI / 2; m.name = 'schild'; schilders(m);
+    box(43.84, 43.9, 0.92, 2.28, -47.47, -44.93, hex('#6b4a32'), { art: 'innen' });   // Rahmen
+    box(40.4, 40.85, 0.42, 0.48, -46.4, -44.2, C.holz, { art: 'innen', stoss: true }); for (const z of [-46.2, -44.4]) box(40.45, 40.8, 0.06, 0.42, z - 0.05, z + 0.05, STAHL, { art: 'innen' });
+    D('kk/cactus_medium_B', 40.6, -53.2, { h: 0.9, fest: 0.2 }); D('kk/cactus_medium_A', 40.6, -40.0, { h: 0.8, fest: 0.2 });
+    D('kk/rollerskate_pair', 40.7, -45.6, { s: 0.36, y: 0.48, rot: 0.4 });
+  }
+
+  // ---------- Gang Ost: Fernands Ecke (Hausmeister) – Leiter an der Wand, Werkzeugkiste, Eimer ----------
+  { const RAHM = hex('#c9a227');
+    for (const x of [27.3, 27.84]) box(x, x + 0.06, 0.06, 2.6, -14.32, -14.24, RAHM, { art: 'innen', stoss: true });
+    for (let y = 0.35; y < 2.5; y += 0.3) box(27.36, 27.84, y, y + 0.04, -14.31, -14.25, RAHM, { art: 'innen' });
+    box(25.9, 26.42, 0.06, 0.32, -14.52, -14.24, hex('#c0392b'), { art: 'innen', stoss: true }); box(25.9, 26.42, 0.32, 0.34, -14.5, -14.26, hex('#8a2a1f'), { art: 'innen' });
+    box(26.1, 26.22, 0.34, 0.42, -14.39, -14.37, SW, { art: 'innen' });
+    box(26.6, 26.92, 0.06, 0.4, -14.5, -14.22, hex('#5d6573'), { art: 'innen' }); box(26.62, 26.9, 0.4, 0.42, -14.48, -14.24, hex('#9aa3ad'), { art: 'innen' });
+    const z = zettel(0.5, 0.36, '#ffffff', 'Kaputt?', ['Sag Fernand Bescheid.', 'Ohne Ärger. Versprochen.'], { kf: 'bold 70px system-ui', zf: '38px system-ui', akz: '#3d5a80' }); z.position.set(28.0, 1.55, -14.16); z.rotation.y = Math.PI; }
+
+  // ---------- Halloween: Spinnweben in Ecken (Gang, Werkstatt, CDI, Kantine, Neubau) ----------
+  for (const [x, z, y] of [[-28.7, -17.75, DECKE], [28.7, -17.75, DECKE], [-28.7, -14.25, DECKE], [-59.6, -27.6, 5.2], [-36.4, -8.4, 5.2], [-14.6, -29.6, DECKE], [28.6, -2.4, DECKE], [63.6, -61.6, 3.9], [44.4, -45.8, 3.9]])
+    D('kk/cobweb_B', x, z, { s: 1.4, y: y - 0.52, saison: 'halloween' });
 }
