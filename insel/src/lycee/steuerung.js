@@ -222,7 +222,7 @@ export function createSteuerung({ camera, input, welt, figur = null }) {
       const weit = Math.max(0.7, Math.min(2.4, strahl(_o, _d, 2.4) - 0.2));   // nicht durch Wände filmen
       _ziel.set(von.x + Math.sin(seit) * weit, Math.min(decke - 0.35, 1.75), von.z + Math.cos(seit) * weit);
       atem += dt;
-      _blick.set(mx * 0.35 + zu.x * 0.65, 1.45 + Math.sin(atem * 0.9) * 0.012, mz * 0.35 + zu.z * 0.65);   // Kamera „atmet“ kaum merklich
+      _blick.set(mx * 0.35 + zu.x * 0.65, 1.45 + (s.wenigBewegung ? 0 : Math.sin(atem * 0.9) * 0.012), mz * 0.35 + zu.z * 0.65);   // Kamera „atmet“ kaum merklich
       schnitt = letzterSchuss !== null && letzterSchuss !== gs;
       letzterSchuss = gs;
     } else {
@@ -248,7 +248,7 @@ export function createSteuerung({ camera, input, welt, figur = null }) {
     if (sofort || schnitt) camera.position.copy(_ziel); else camera.position.lerp(_ziel, Math.min(1, dt * (s.fokus ? 4 : 12)));
     // Sichtfeld: beim Rennen ein paar Grad weiter (Gefühl von Tempo), im Gespräch etwas enger
     const basis = camera.userData.baseFov;
-    if (basis) { const ziel = s.fokus ? -4 : (s.tempo > 3.2 && !s.brett ? 5 : s.brett && s.tempo > 3 ? 7 : 0); fovJetzt += (ziel - fovJetzt) * Math.min(1, dt * (sofort ? 99 : 3)); camera.fov = basis + fovJetzt; camera.updateProjectionMatrix(); }
+    if (basis) { const ziel = s.wenigBewegung ? 0 : s.fokus ? -4 : (s.tempo > 3.2 && !s.brett ? 5 : s.brett && s.tempo > 3 ? 7 : 0);   /* „Weniger Bewegung“: kein Zoomen */ fovJetzt += (ziel - fovJetzt) * Math.min(1, dt * (sofort ? 99 : 3)); camera.fov = basis + fovJetzt; camera.updateProjectionMatrix(); }
     camera.lookAt(_blick);
   }
 

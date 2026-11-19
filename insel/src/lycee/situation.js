@@ -12,7 +12,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
   const tasten = new Set();
   const halte = (f) => { const h = (e) => f(e); document.addEventListener('keydown', h, true); tasten.add(h); return h; };
   const loesche = () => { tasten.forEach((h) => document.removeEventListener('keydown', h, true)); tasten.clear(); };
-  const zeitFaktor = () => (ui.ruhig ? 1.8 : 1) * (ui.einstellungen && ui.einstellungen().text !== 'normal' ? 1.3 : 1);
+  const zeitFaktor = () => (ui.zeitlos ? 60 : 1) * (ui.ruhig ? 1.8 : 1) * (ui.einstellungen && ui.einstellungen().text !== 'normal' ? 1.3 : 1);
 
   // ---------- Hitze-Duell ----------
   // def: { gegner: { name, farbe }, wo, hitze: 0–100, zeit: s, publikum?: 'Text', runden: [ { sagt, karten: [ { t, stimme?, hitze, respekt?, art, antwort } ], still: { antwort, hitze, respekt? } } ] }

@@ -153,7 +153,7 @@ export function createTischtennis({ scene, camera, steuerung, root, audio, rr, h
         // Platte
         if (vorY >= TH + BR && p.y < TH + BR && Math.abs(p.x) <= HB && Math.abs(p.z) <= HL && v.y < 0) {
           p.y = TH + BR; v.y = -v.y * 0.86; v.x *= 0.97; v.z *= 0.97 + (b.spin > 0 ? 0.05 : 0); b.spin *= 0.4;
-          audio.play('tt_tisch'); ruck = Math.max(ruck, 0.15);
+          audio.play('tt_tisch'); ruck = steuerung.wenigBewegung ? 0 : Math.max(ruck, 0.15);
           const seite = p.z < 0 ? 'ich' : 'er';
           if (seite === 'ich') b.aufIch++; else b.aufEr++;
           if (b.aufschlag) {   // Aufschlag: erste Berührung auf der eigenen Seite, dann auf der anderen
@@ -220,6 +220,7 @@ export function createTischtennis({ scene, camera, steuerung, root, audio, rr, h
       const _c = new THREE.Vector3(), _z = new THREE.Vector3();
       const kamera = (dt) => {
         welt(ich.s * 0.5 - 0.3, 2.45, LP - 1.35, _c);   // hoch und leicht links: die eigene Figur verdeckt die Platte nicht
+        if (steuerung.wenigBewegung) ruck = 0;
         if (ruck > 0) { _c.x += (Math.random() - 0.5) * ruck * 0.025; _c.y += (Math.random() - 0.5) * ruck * 0.025; ruck = Math.max(0, ruck - dt * 5); }
         camera.position.lerp(_c, Math.min(1, dt * 6));
         welt(ich.s * 0.2, TH - 0.1, 0.45, _z); camera.lookAt(_z);

@@ -73,7 +73,7 @@ export const GEHEIMNISSE = [
   { id: 'musik', x: 56, z: -58, r: 3, titel: 'Der Musikraum', text: 'Ein Schlagzeug, ein Keyboard, vier Gitarren. Mittwochs probt hier eine Band.' },
   { id: 'kunst', x: 54, z: -50, r: 3, titel: 'Der Kunstraum', text: 'Staffeleien, Farbtöpfe, ein Waschbecken voller Pinsel. Es riecht nach Farbe.' },
   { id: 'informatik', x: 54, z: -42, r: 3, titel: 'Der Informatikraum', text: 'Achtzehn Bildschirme. Das WLAN-Passwort steht angeblich unter einem Tisch.' },
-  { id: 'sportplatz', x: -66, z: -6, r: 4, titel: 'Der Sportplatz', text: '400-Meter-Bahn. Beim Sportfest läuft sogar M. Hoffmann mit.' },
+  { id: 'sportplatz', x: -66, z: -6, r: 4, titel: 'Der Sportplatz', text: '400-Meter-Bahn. Beim Sportfest läuft sogar Herr Mesenberg mit.' },
 ];
 
 // Wer im Saal 1.04 sitzt (Pulte: x = −24.8 + r·2.1 + 0.55, z = −27.2 + c·3.4 ± 0.62)

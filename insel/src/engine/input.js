@@ -262,6 +262,36 @@ export function createInput({ root, events, clock = null }) {
   }, opt);
   document.addEventListener('selectstart', (e) => e.preventDefault());
 
+  // Gamepad (Standard-Belegung): linker Stick laufen, rechter Stick schauen, A = Aktion/Weiter (bzw. fokussierten Knopf drücken),
+  // B = Esc, Y = Tab (Journal), X = H (winken), Start = P (Pause), Steuerkreuz = durch Knöpfe in Menüs springen.
+  // Tasten werden als Tastatur-Ereignisse weitergegeben – so funktioniert alles, was schon mit der Tastatur geht.
+  const padAlt = {};
+  const PAD_TASTE = { 1: 'Escape', 3: 'Tab', 2: 'KeyH', 9: 'KeyP', 8: 'KeyM' };
+  const taste = (code, art) => { try { document.dispatchEvent(new KeyboardEvent(art, { code, key: code === 'Escape' ? 'Escape' : code === 'Tab' ? 'Tab' : code.replace(/^Key/, '').toLowerCase(), bubbles: true, cancelable: true })); } catch (e) { /* alt */ } };
+  const knoepfe = () => [...document.querySelectorAll('.ly-ebene:not([hidden]) button:not([disabled]), .ly-dialog:not([hidden]) .ly-d-optionen button, .ly-dialog:not([hidden]) .ly-d-weiter')].filter((b) => b.offsetParent);
+  function padTick() {
+    const pads = typeof navigator !== 'undefined' && navigator.getGamepads ? navigator.getGamepads() : [];
+    const p = pads && [...pads].find((g) => g && g.connected);
+    if (!p) return null;
+    const dz = (v) => (Math.abs(v) < 0.18 ? 0 : (v - Math.sign(v) * 0.18) / 0.82);
+    const gedrueckt = (i) => !!(p.buttons[i] && p.buttons[i].pressed);
+    for (let i = 0; i < Math.min(16, p.buttons.length); i++) {
+      const jetzt = gedrueckt(i), vorher = !!padAlt[i]; padAlt[i] = jetzt;
+      if (jetzt === vorher) continue;
+      if (i === 0) {   // A: in Menüs den fokussierten Knopf drücken, sonst Aktion (E)
+        const f = document.activeElement;
+        if (jetzt && f && f.tagName === 'BUTTON' && knoepfe().includes(f)) { f.click(); continue; }
+        if (jetzt) { taste('KeyE', 'keydown'); press('action'); } else { taste('KeyE', 'keyup'); release('action'); }
+        continue;
+      }
+      if (i === 12 || i === 13) { if (jetzt) { const l = knoepfe(); if (l.length) { const k = l.indexOf(document.activeElement); const n = k < 0 ? 0 : (k + (i === 13 ? 1 : -1) + l.length) % l.length; l[n].focus(); } } continue; }
+      if (i === 5 || i === 7) { if (jetzt) press('jump'); else release('jump'); continue; }   // RB/RT = Sprung (Skaten)
+      if (PAD_TASTE[i]) taste(PAD_TASTE[i], jetzt ? 'keydown' : 'keyup');
+    }
+    state.look.dx += dz(p.axes[2] || 0) * 14; state.look.dy += dz(p.axes[3] || 0) * 10;
+    return { x: dz(p.axes[0] || 0), y: -dz(p.axes[1] || 0) };
+  }
+
   const input = {
     state,
     HOLD_TIME,
@@ -271,8 +301,10 @@ export function createInput({ root, events, clock = null }) {
     beginFrame() {
       checkHolds();
       const k = keyMove();
+      const g = padTick();   // auch im Gespräch (A = weiter), darum vor der Sperre
       if (!state.enabled) { state.move.x = 0; state.move.y = 0; state.run = false; return; }
       if (k.any) { state.move.x = k.x; state.move.y = k.y; state.run = true; }
+      else if (g && Math.hypot(g.x, g.y) > 0.01) { state.move.x = g.x; state.move.y = g.y; state.run = Math.hypot(g.x, g.y) > 0.75; state.device = 'pad'; }
       else { state.move.x = joyMove.x; state.move.y = joyMove.y; state.run = Math.hypot(joyMove.x, joyMove.y) > 0.65; }
     },
     // Wird am Ende jedes Frames aufgerufen: Deltas und Klick-Flanken zurücksetzen

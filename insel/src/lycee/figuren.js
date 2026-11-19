@@ -70,6 +70,21 @@ export async function ladePerson(veil, { modell = 'menschen', stil = 'Casual', h
     g.setAttribute('aWind', new THREE.BufferAttribute(new Float32Array(n).fill(FLAGGE[t.name] || 0), 1));
     t.mesh.material = mat; t.mesh.castShadow = true; t.mesh.receiveShadow = false; t.mesh.frustumCulled = false;
   }
+  // Blinzeln (AAA: Augen leben): Die Augen sind eigene Farbflächen – für 0,12 s nehmen sie die Hautfarbe an (Lid zu).
+  // Die gepackten Modelle haben die Augen als kleine dunkle Farbinsel im Kopf (rund 72 Eckpunkte) – beim ersten Bild suchen.
+  let AUGEN = null;   // [{ attr, idx: [..], auge: [r,g,b], lid: [r,g,b] }]
+  const augenSuchen = () => {
+    AUGEN = [];
+    group.traverse((o) => {
+      if (!o.isMesh || !o.geometry || !o.geometry.attributes.color) return;
+      const c = o.geometry.attributes.color, gruppen = new Map();
+      for (let i = 0; i < c.count; i++) { const k = c.getX(i).toFixed(2) + ',' + c.getY(i).toFixed(2) + ',' + c.getZ(i).toFixed(2); if (!gruppen.has(k)) gruppen.set(k, []); gruppen.get(k).push(i); }
+      let haut = null, hautN = 0; for (const [k, idx] of gruppen) { const [r, g, b] = k.split(',').map(Number); if (r > g && g > b && r > 0.15 && idx.length > hautN) { haut = [r, g, b]; hautN = idx.length; } }
+      if (!haut) return;
+      for (const [k, idx] of gruppen) { const [r, g, b] = k.split(',').map(Number); if (r + g + b < 0.2 && idx.length >= 24 && idx.length <= 80) AUGEN.push({ attr: c, idx, auge: [r, g, b], lid: haut.map((v) => v * 0.85) }); }
+    });
+  };
+  const augenSetzen = (zu) => { for (const A of AUGEN) { const f = zu ? A.lid : A.auge; for (const i of A.idx) A.attr.setXYZ(i, f[0], f[1], f[2]); A.attr.needsUpdate = true; } };
   group.updateMatrixWorld(true);
   const kasten = new THREE.Box3();
   for (const t of teile) { t.mesh.computeBoundingBox(); kasten.union(t.mesh.boundingBox.clone().applyMatrix4(t.mesh.matrixWorld)); }
@@ -173,6 +188,10 @@ export async function ladePerson(veil, { modell = 'menschen', stil = 'Casual', h
   const eigenTempo = 0.9 + Math.random() * 0.2, atemPhase = Math.random() * 6.28, atemHz = 0.2 + Math.random() * 0.08;
   const BRUST = knochen.Chest, brustVor = new THREE.Quaternion(); let atemT = 0, atemAn = false;
   let blickZiel = null, bYaw = 0, bPitch = 0, bAktiv = false;
+  // Sprechen: leichtes Kopfnicken im Rhythmus der Sätze (statt Mund – die Modelle haben kein Gesicht zum Bewegen)
+  let redetZiel = 0, redetW = 0, redeT = Math.random() * 10, redeAn = false; const kopfRedeVor = new THREE.Quaternion();
+  let blinzelIn = 1 + Math.random() * 4, lidZu = 0;
+  let nickT = 0; const NICK = 0.6;   // Zuhören: einmal kurz nicken
   const kopfVor = new THREE.Quaternion(), nackenVor = new THREE.Quaternion();
   const _hp = new THREE.Vector3(), _fw = new THREE.Vector3(), _rt = new THREE.Vector3(), _up = new THREE.Vector3(0, 1, 0);
   const _kq = new THREE.Quaternion(), _bw = new THREE.Quaternion(), _pw = new THREE.Quaternion(), _qy = new THREE.Quaternion(), _qp = new THREE.Quaternion();
@@ -337,6 +356,9 @@ export async function ladePerson(veil, { modell = 'menschen', stil = 'Casual', h
     },
     get aktion() { return jetztName; },
     blick(ziel) { blickZiel = ziel || null; },
+    redet(v) { redetZiel = v ? 1 : 0; },
+    nicken() { nickT = NICK; },
+    get augen() { return AUGEN ? AUGEN.map((a) => a.idx.length + '@' + a.idx[0] + '=' + a.attr.getX(a.idx[0]).toFixed(2) + ' n' + blinzelIn.toFixed(1)) : null; },
     hand: HAND, armOk: ARMOK,
     lehnen(w) { lehnW = w || 0; },
     handPos(s, v) { const A = ARM[s]; if (!A || !A.M) return null; return wp(A.M, v); },
@@ -346,6 +368,7 @@ export async function ladePerson(veil, { modell = 'menschen', stil = 'Casual', h
       if (sitzt) BEINE.forEach((b, i) => b.quaternion.copy(ruhe[i]));   // nicht aufaddieren, falls Idle die Beine nicht bewegt
       if (atemAn) BRUST.quaternion.copy(brustVor);
       if (ikVor.size) { for (const [b, q] of ikVor) b.quaternion.copy(q); ikVor.clear(); }   // IK nicht aufaddieren
+      if (redeAn) KOPF.quaternion.copy(kopfRedeVor);
       if (bAktiv) { if (NACKEN) NACKEN.quaternion.copy(nackenVor); KOPF.quaternion.copy(kopfVor); }   // Blick nicht aufaddieren, falls ein Clip den Kopf nicht bewegt
       mixer.update(dt);
       if (sitzt) sitzPose();
@@ -354,6 +377,15 @@ export async function ladePerson(veil, { modell = 'menschen', stil = 'Casual', h
       if (atemAn) { brustVor.copy(BRUST.quaternion); winkel(BRUST, Math.sin(atemT * 6.2832 * atemHz + atemPhase) * 0.02 - 0.005); }
       lehnAnwenden();
       blickAnwenden(dt);
+      redetW += (redetZiel - redetW) * Math.min(1, dt * 6);
+      if (nickT > 0) nickT = Math.max(0, nickT - dt);
+      redeAn = !!KOPF && (redetW > 0.02 || nickT > 0);
+      if (redeAn) { kopfRedeVor.copy(KOPF.quaternion); redeT += dt; winkel(KOPF, (Math.sin(redeT * 7.1) * 0.6 + Math.sin(redeT * 2.9 + 1.3) * 0.4) * 0.075 * redetW + (nickT > 0 ? Math.sin(Math.PI * (1 - nickT / NICK)) * 0.16 : 0)); }
+      if (!AUGEN) augenSuchen();
+      if (AUGEN.length) {
+        if (lidZu > 0) { lidZu -= dt; if (lidZu <= 0) augenSetzen(false); }
+        else if ((blinzelIn -= dt) <= 0) { augenSetzen(true); lidZu = 0.12; blinzelIn = Math.random() < 0.15 ? 0.25 : 2.2 + Math.random() * 4.5; }
+      }
       // Sitzen: Hände liegen auf den Oberschenkeln (statt durch Beine und Stuhl zu hängen) – nur, wenn niemand sonst die Hände führt
       if (sitzt && ARMOK) sitzHaende(); else if (sitzHand) { for (const s of ['R', 'L']) if (HAND[s].sitz) { HAND[s].w = 0; HAND[s].sitz = false; } sitzHand = false; }
       armAnwenden('R'); armAnwenden('L');

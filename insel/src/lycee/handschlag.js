@@ -132,6 +132,7 @@ export function createHandschlag({ steuerung, camera, root, audio, rr, ton, vib 
     const dx = B.basis.x - A.basis.x, dz = B.basis.z - A.basis.z, l = Math.hypot(dx, dz) || 1;
     const nx = -dz / l * paar.seite, nz = dx / l * paar.seite;
     _c.set(_m.x + nx * paar.weit - dx / l * 0.55 * paar.weit / 2.1, paar.yh + 0.45, _m.z + nz * paar.weit - dz / l * 0.55 * paar.weit / 2.1);
+    if (steuerung.wenigBewegung) ruck = 0;   // „Weniger Bewegung“: kein Kamera-Ruck
     if (ruck > 0) { _c.x += (Math.random() - 0.5) * ruck * 0.03; _c.y += (Math.random() - 0.5) * ruck * 0.03; ruck = Math.max(0, ruck - dt * 6); }
     camera.position.lerp(_c, Math.min(1, dt * (paar.kamFrisch ? 99 : 4))); paar.kamFrisch = false;
     camera.lookAt(_m);
