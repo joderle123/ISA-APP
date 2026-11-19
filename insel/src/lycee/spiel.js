@@ -514,16 +514,16 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     skate: ['Kickflip! … fast.', 'Guck! … Nee, warte. Nochmal.', 'Das Board ist von meinem Cousin.'],
   };
   const TAGESGESPRAECH = {
-    1: ['Habt ihr die Neuen gesehen? In der 7P2?', 'Dieser @annexe.cam-Account … wer ist das?', 'Heute Umfrage im Chat. Cringe.'],
-    2: ['Schon wieder ein Foto von @annexe.cam. Krass.', 'Talenttag in der 7P2? Gibt’s das bei uns auch?', 'Wer ist #3? Alle raten.'],
-    3: ['Sportfest Freitag! Ich lauf als Erster.', 'Die 7P2 war Letzte. Aber mit Stil, sagen sie.', 'Hast du das mit dem Foto gehört? Voll fies.'],
-    4: ['Test morgen. Ich hab null gelernt.', 'Raumwechsel ohne Ansage. Typisch.', 'Atmen hilft. Hab ich im Skills-Kurs gelernt.'],
-    5: ['Dieser Fake-Screenshot … glaubt das echt wer?', 'Drei Konten, dreißig Kommentare. Lächerlich.', 'Ich teil nix mehr ohne Quelle.'],
-    6: ['Klassenfoto heute! Ich hab meinen besten Pulli an.', 'Ich hab mich heute was getraut. Ganz klein.', 'Hast du schon mal Stopp gesagt? Echt jetzt?'],
-    7: ['Die 7P2 hat jetzt zwei Gruppen. Drama.', 'Luca hat eine neue Gruppe gemacht. Elf Leute.', 'Praktikum nächstes Jahr. Ich will in eine Bäckerei.'],
-    8: ['Das Video von Mme Tidderich ist KI! Hundert Pro.', 'Echt oder KI? Ich erkenn das nicht mehr.', 'Ich hab mein Konto auf privat gestellt.'],
-    9: ['Ich schlaf so schlecht. Handy bis zwei Uhr.', 'Ben hat einen Riesen-Würfel gebaut. Aus Pappe!', 'Meine Serie ist gerissen. Und? Lebe noch.'],
-    10: ['Letzte Woche! Ferien!', 'Sommerfest Freitag. Mit Lampions.', 'Nächstes Jahr 6ème. Wir sind dann die Großen.'],
+    1: ['Habt ihr die Neuen gesehen? In der 7P2?', 'Dieser @annexe.cam-Account … wer ist das?', 'Heute Umfrage im Chat. Cringe.', 'Die Hallenuhr geht falsch. Seit immer.'],
+    2: ['Schon wieder ein Foto von @annexe.cam. Krass.', 'Talenttag in der 7P2? Gibt’s das bei uns auch?', 'Wer ist #3? Alle raten.', 'Im Musikraum trommelt wer. Hörst du’s?'],
+    3: ['Sportfest Freitag! Ich lauf als Erster.', 'Die 7P2 war Letzte. Aber mit Stil, sagen sie.', 'Hast du das mit dem Foto gehört? Voll fies.', 'Wo sind die zwei Hütchen hin? Fernand sucht.'],
+    4: ['Test morgen. Ich hab null gelernt.', 'Raumwechsel ohne Ansage. Typisch.', 'Atmen hilft. Hab ich im Skills-Kurs gelernt.', 'Ich hab Tiagos Spiel getestet. Die Figur fällt durch den Boden.'],
+    5: ['Dieser Fake-Screenshot … glaubt das echt wer?', 'Drei Konten, dreißig Kommentare. Lächerlich.', 'Ich teil nix mehr ohne Quelle.', 'Rosa hat Boxemännercher! Schnell, bevor sie weg sind.'],
+    6: ['Klassenfoto heute! Ich hab meinen besten Pulli an.', 'Ich hab mich heute was getraut. Ganz klein.', 'Hast du schon mal Stopp gesagt? Echt jetzt?', 'Bonbon hat heute gegähnt. Süßester Moment der Woche.'],
+    7: ['Die 7P2 hat jetzt zwei Gruppen. Drama.', 'Luca hat eine neue Gruppe gemacht. Elf Leute.', 'Praktikum nächstes Jahr. Ich will in eine Bäckerei.', 'Noor hat vor der Klasse getrommelt. Alle haben geklatscht.'],
+    8: ['Das Video von Mme Tidderich ist KI! Hundert Pro.', 'Echt oder KI? Ich erkenn das nicht mehr.', 'Ich hab mein Konto auf privat gestellt.', 'Der Roboter im Informatikraum sagt „HALLO MENSCH“. Gruselig.'],
+    9: ['Ich schlaf so schlecht. Handy bis zwei Uhr.', 'Ben hat einen Riesen-Würfel gebaut. Aus Pappe!', 'Meine Serie ist gerissen. Und? Lebe noch.', 'Fernand sagt, um sechs ist die Schule ganz still.'],
+    10: ['Letzte Woche! Ferien!', 'Sommerfest Freitag. Mit Lampions.', 'Nächstes Jahr 6ème. Wir sind dann die Großen.', 'Schulfest! Noor und Gilles spielen. Erste Reihe!'],
   };
   const sprueche_el = document.createElement('div'); sprueche_el.className = 'ly-bark'; sprueche_el.hidden = true; root.appendChild(sprueche_el);
   const _bv = new THREE.Vector3();
