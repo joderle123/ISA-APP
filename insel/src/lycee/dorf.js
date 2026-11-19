@@ -15,8 +15,8 @@ export const ORTE_UMLAND = {
 export const DORF_DEKO = {};
 
 // Wandbild im Bushäuschen der Rue du Moulin – gemalt von der 7ème vom letzten Jahr (Noor hat die Trommel gemalt)
-function wandbild(THREE) {
-  const cv = document.createElement('canvas'); cv.width = 1024; cv.height = 420; const g = cv.getContext('2d');
+export function wandbild(THREE, variante = '', cv0 = null) {
+  const cv = cv0 || document.createElement('canvas'); cv.width = 1024; cv.height = 420; const g = cv.getContext('2d');
   const h = g.createLinearGradient(0, 0, 0, 420); h.addColorStop(0, '#7fc4ff'); h.addColorStop(0.62, '#cfeaff'); h.addColorStop(0.63, '#7cc47a'); h.addColorStop(1, '#4f9a55');
   g.fillStyle = h; g.fillRect(0, 0, 1024, 420);
   g.fillStyle = '#ffd34d'; g.beginPath(); g.arc(880, 78, 46, 0, Math.PI * 2); g.fill();
@@ -30,10 +30,16 @@ function wandbild(THREE) {
   ['#e85d75', '#2fb8a8', '#e9b949', '#9b7bc8', '#4f88c8'].forEach((c, i) => kind(330 + i * 62, c));
   g.strokeStyle = '#f1c7a2'; g.lineWidth = 6; g.beginPath(); g.moveTo(345, 334); g.lineTo(625, 334); g.stroke();
   g.fillStyle = '#c99a5b'; g.beginPath(); g.ellipse(700, 372, 38, 20, 0, 0, Math.PI * 2); g.fill(); g.beginPath(); g.arc(735, 350, 16, 0, Math.PI * 2); g.fill();
-  g.fillStyle = '#d9523c'; g.fillRect(820, 318, 92, 72); g.fillStyle = '#f4e8cc'; g.beginPath(); g.ellipse(866, 318, 46, 13, 0, 0, Math.PI * 2); g.fill();
-  g.strokeStyle = '#a0743e'; g.lineWidth = 7; g.beginPath(); g.moveTo(800, 270); g.lineTo(850, 312); g.moveTo(935, 270); g.lineTo(885, 312); g.stroke();
+  if (variante === 'leer') {   // weggeschrubbt: heller Fleck, wo die Trommel war
+    g.fillStyle = 'rgba(232,228,214,0.92)'; g.beginPath(); g.ellipse(866, 330, 120, 95, 0.1, 0, Math.PI * 2); g.fill();
+  } else {
+    g.fillStyle = variante === 'neu' ? '#2fb8a8' : '#d9523c'; g.fillRect(820, 318, 92, 72); g.fillStyle = '#f4e8cc'; g.beginPath(); g.ellipse(866, 318, 46, 13, 0, 0, Math.PI * 2); g.fill();
+    if (variante === 'neu') { g.fillStyle = '#e9b949'; for (let i = 0; i < 4; i++) g.fillRect(826 + i * 22, 340, 10, 44); }   // neue Trommel mit Streifen
+    g.strokeStyle = '#a0743e'; g.lineWidth = 7; g.beginPath(); g.moveTo(800, 270); g.lineTo(850, 312); g.moveTo(935, 270); g.lineTo(885, 312); g.stroke();
+    if (variante === 'rosa') { g.fillStyle = 'rgba(232,93,117,0.28)'; g.beginPath(); g.ellipse(860, 335, 110, 70, -0.1, 0, Math.PI * 2); g.fill(); }
+  }
   g.fillStyle = '#2b3a55'; g.font = 'bold 44px Georgia, serif'; g.textAlign = 'left'; g.fillText('Junglinster a Faarf', 28, 60);
-  g.font = 'italic 24px Georgia, serif'; g.fillText('7ème B · Annexe · Trommel: Noor', 30, 96);
+  g.font = 'italic 24px Georgia, serif'; g.fillText('7ème B · Annexe · Trommel: Noor' + (variante === 'neu' ? ' (neu gemalt)' : ''), 30, 96);
   const t = new THREE.CanvasTexture(cv); t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = 4; return t;
 }
 // Ein Sprüh-Tag (Kürzel) als durchsichtige Fläche
@@ -223,7 +229,7 @@ export function baueDorf({ B, C, schild, schilder, P = null, R = null }) {
     box(X0 + 0.7, X1 - 0.7, 0.55, 0.61, Z + 0.1, Z + 0.5, hex('#a0743e'), { stoss: true }); for (const x of [X0 + 0.9, X1 - 1.0]) box(x, x + 0.1, 0.14, 0.55, Z + 0.15, Z + 0.45, GR);
     if (B.sitze) for (const x of [3.9, 5.5]) B.sitze.push({ x, z: Z + 0.3, rot: 0, bank: true, h: 0.61 });
     { const t = schild('Arrêt · Rue du Moulin', 1.4, 0.3, { bg: '#2fb8a8', schrift: 'bold 84px system-ui' }); t.position.set(X1 + 0.12, 2.25, Z + 1.3); t.rotation.y = Math.PI / 2; schilder.push(t); }
-    const bild = new THREE.Mesh(new THREE.PlaneGeometry(4.9, 2.0), new THREE.MeshLambertMaterial({ map: wandbild(THREE) })); bild.position.set((X0 + X1) / 2, 1.42, Z + 0.006); bild.name = 'schild'; schilders(bild);
+    const bild = new THREE.Mesh(new THREE.PlaneGeometry(4.9, 2.0), new THREE.MeshLambertMaterial({ map: wandbild(THREE) })); DORF_DEKO.wandbild = bild; bild.position.set((X0 + X1) / 2, 1.42, Z + 0.006); bild.name = 'schild'; schilders(bild);
     const tag = (text, farbe, x, y, b) => { const cv = document.createElement('canvas'); const m = new THREE.Mesh(new THREE.PlaneGeometry(b, b / 2), new THREE.MeshLambertMaterial({ map: tagTextur(THREE, text, farbe, cv), transparent: true, depthWrite: false }));
       m.position.set(x, y, Z + 0.012); m.name = 'schild'; m.visible = false; m.userData.cv = cv; schilders(m); return m; };
     DORF_DEKO.tagDex = tag('D3X', '#e85d75', 6.0, 1.15, 1.6);        // über Noors Trommel

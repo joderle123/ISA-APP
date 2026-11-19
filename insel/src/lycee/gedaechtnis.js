@@ -267,6 +267,13 @@ export const GEDAECHTNIS = [
 // Ruf: Was Fremde auf dem Hof über dich sagen (Statisten-Sprüche). Gute und weniger gute Taten.
 // { id, ab, bis, wenn, t: [Sätze] }
 export const RUF = [
+  // Situationen (situationen.js): was Fremde auf dem Hof gehört haben
+  { id: 'rufBezahlt', ab: 5, bis: 7, wenn: (x) => x.sit_laden === 'bezahlt', t: ['Bist du die Person, die vor der Kamera bezahlt hat? Lol. Respekt.'] },
+  { id: 'rufGeklaut', ab: 5, bis: 7, wenn: (x) => x.sit_laden === 'geklaut' && !x.zurueckgebracht, t: ['Das Épicerie-Video … warst du das?'] },
+  { id: 'rufMitgemacht', ab: 5, bis: 6, wenn: (x) => x.sit_wald === 'mitgemacht', t: ['Neu im Wald, das Video. Du, oder?'] },
+  { id: 'rufHandys', ab: 7, bis: 9, wenn: (x) => x.sit_halle === 'handys', t: ['„Handys runter.“ Hast du das echt gesagt? Vor allen?'] },
+  { id: 'rufGefilmt', ab: 7, bis: 9, wenn: (x) => x.sit_halle === 'gefilmt' && !x.halleGeloescht, t: ['Das Turnhallen-Video hat jemand aus der 7ème gemacht. Weißt du, wer?'] },
+  { id: 'rufWippe', ab: 5, bis: 7, wenn: (x) => x.sit_wette === 'wippe', t: ['Wippen-Turnier statt Dosen? Wer kommt auf so was? … Gute Idee eigentlich.'] },
   { id: 'kantineKnall', ab: 1, bis: 2, wenn: m('kantineKnall'), t: ['Du bist doch die Person aus der Kantine. Mit Luca.', 'Kantinen-Krieg, erster Tag. Legendär. Oder peinlich.'] },
   { id: 'top5Gelacht', ab: 2, bis: 3, wenn: m('top5Gelacht'), t: ['Du hast über die Top-5-Liste gelacht, oder? … Okay.'] },
   { id: 'milaGestoppt', ab: 3, bis: 5, wenn: m('milaGestoppt'), t: ['Du hast im Chat was gegen das Foto geschrieben. Respekt.', 'Das mit dem Mila-Foto … gut, dass das einer gesagt hat.'] },

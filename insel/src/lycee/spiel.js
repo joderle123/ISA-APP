@@ -18,7 +18,7 @@ import { baueWelt } from './welt.js';
 import { baueRequisiten, stelle } from './requisiten.js';
 import { baueNatur } from './natur.js';
 import { STAMM, stammSzene, stammPlan } from './stammgaeste.js';
-import { ORTE_UMLAND, DORF_DEKO, tagTextur } from './dorf.js';
+import { ORTE_UMLAND, DORF_DEKO, tagTextur, wandbild } from './dorf.js';
 import { SIT_LEUTE, SZENEN, sitSichtbar, SIT_ZONEN, lichtung, laden, graffiti, halle, wette, kiste, vape, link, video, fest, zurueckbringen, sitSaetze, sitRueckblick } from './situationen.js';
 const SIT_FN = { wald: lichtung, laden, graffiti, halle, wette, kiste, vape, link, video, fest };
 import { createHund, HUND_ERSTMAL, HUND_MOMENTE } from './hund.js';
@@ -360,7 +360,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   // Stammgäste (stammgaeste.js): feste Orte, Namensschild, eigene Geschichte über das Jahr
   // Leben im Dorf: Leute auf der Rue du Moulin, in der Gasse und eine Joggerin auf dem Waldweg
   STATISTEN.push(
-    { modell: 'menschen', stil: 'Casual', haut: '#f0c9a8', haar: '#9a9a9a', oben: '#5a6b7a', unten: '#3a3f4b', schuhe: '#3a2a1c', hoehe: 1.72, weg: [[-24, 83], [26, 83.2], [52, 83], [96, 83.1]], tempo: 0.8 },
+    { modell: 'menschen', stil: 'Casual', haut: '#f0c9a8', haar: '#9a9a9a', oben: '#5a6b7a', unten: '#3a3f4b', schuhe: '#3a2a1c', hoehe: 1.72, weg: [[-24, 83.3], [0.8, 83.3], [1.2, 84.5], [8.4, 84.5], [8.8, 83.3], [26, 83.3], [52, 83.3], [96, 83.3], [52, 83.3], [26, 83.3], [8.8, 83.3], [8.4, 84.5], [1.2, 84.5], [0.8, 83.3]], tempo: 0.8 },   // um das Bushäuschen herum
     { modell: 'frauen', stil: 'Casual', haut: '#c68e64', haar: '#2b1d14', oben: '#c0392b', unten: '#2d3748', schuhe: '#f2f2f2', hoehe: 1.64, weg: [[90, 91], [50, 91.1], [20, 91], [-20, 91.1]], tempo: 1.0 },
     { modell: 'menschen', stil: 'Casual2', haut: '#a0694a', haar: '#1b1410', oben: '#e9b949', unten: '#2d3748', schuhe: '#2b2b2b', hoehe: 1.76, weg: [[32, 47], [32.2, 70], [32, 82.6], [40, 83], [32, 82.6], [32.2, 70]], tempo: 1.05 },
     { modell: 'frauen', stil: 'Adventurer', haut: '#f1c7a2', haar: '#c9a15a', oben: '#2fb8a8', unten: '#2b2b33', schuhe: '#e85d75', hoehe: 1.66, weg: [[-64, -8], [-63.8, -50], [-64, -88], [-63.8, -50]], tempo: 1.6 },
@@ -456,6 +456,10 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     const m = S.merke || {}, an = (id) => statisten.some((q) => q.d.sitPerson === id && !q.weg);
     if (DORF_DEKO.dosen) DORF_DEKO.dosen.visible = an('lenny');
     if (DORF_DEKO.tagDex) DORF_DEKO.tagDex.visible = an('dexWand') || (['gegangen', 'verstanden', 'reden', 'kiesser', 'papier'].includes(m.sit_graffiti) && m.sitKap_graffiti === kap);
+    // Das Wandbild zeigt, was aus Noors Trommel geworden ist
+    const wb = DORF_DEKO.wandbild, var_ = m.graffitiGesagt || ((m.sit_graffiti === 'reden' || m.graffitiGeholfen) && (m.sitKap_graffiti || 0) < kap) ? 'neu'
+      : m.sit_graffiti === 'weggemacht' ? 'rosa' : m.sit_graffiti === 'gespruht' ? 'leer' : '';
+    if (wb && wb.userData.variante !== var_) { wb.userData.variante = var_; const alt = wb.material.map; wb.material.map = wandbild(THREE, var_); wb.material.needsUpdate = true; if (alt) alt.dispose(); }
     if (DORF_DEKO.tagDu && !DORF_DEKO.tagDu.userData.gemalt && S.name) { DORF_DEKO.tagDu.userData.gemalt = true; const t = DORF_DEKO.tagDu.material.map; DORF_DEKO.tagDu.material.map = tagTextur(THREE, S.name.slice(0, 3).toUpperCase(), '#e9b949'); t.dispose(); }
   }
   // Wanduhren zeigen die Spielzeit; die Uhr in der Halle geht drei Minuten nach – bis Fernand sie stellt (Stammgast, Kapitel 10)
@@ -2349,6 +2353,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       : m.sit_graffiti === 'kiesser' && kap > (m.sitKap_graffiti || 99) ? 'Neubau: Die große Wand bekommt Farbe. Ein 5ème zeichnet vor.'
       : m.sit_halle && kap === (m.sitKap_halle || 0) + 1 ? 'Streit gefilmt? Nicht teilen. Melden. Die Redaktion.'
       : m.lenningGesagt && kap === (m.sitKap_video || 0) + 1 ? 'Der Account „annexe.memes“ ist weg. Danke an alle, die ihn gemeldet haben.'
+      : m.vapeKuedes && kap === (m.sitKap_vape || 0) + 1 ? 'SePAS: Neue Sprechstunde „Weg vom Vape“. Anonym. Dienstags.'
       : m.sit_link && kap === (m.sitKap_link || 0) + 1 ? 'Gratis-Diamanten? Fake! Drei Fragen: Wer? Wohin? Wer hat was davon?'
       : m.sit_kiste && kap === (m.sitKap_kiste || 0) + 1 ? 'Coding-Club: Tiagos Spiel hat jetzt einen Knopf „Keine Kisten“.'
       : m.sit_wald && kap >= 5 && kap % 2 === 1 ? 'Forstverwaltung: Bitte keinen Müll an der Lichtung. Fernand dankt.'
