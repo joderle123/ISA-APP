@@ -129,6 +129,11 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     const t = ctx.currentTime, h = audio.helpers;
     for (let i = 0; i < 3; i++) h.burst(t + Math.random() * 0.7, 0.25 + Math.random() * 0.4, 'bandpass', 320 + Math.random() * 800, 6 + Math.random() * 5, 0.005 + Math.random() * 0.007, bus);
   });
+  // Unterricht hinter geschlossenen Türen: tiefes, gedämpftes Murmeln im Gang (nur während der Stunden)
+  audio.register('unterricht', (ctx, bus) => {
+    const t = ctx.currentTime, h = audio.helpers;
+    for (let i = 0; i < 2; i++) h.burst(t + Math.random() * 0.9, 0.35 + Math.random() * 0.5, 'bandpass', 180 + Math.random() * 260, 4 + Math.random() * 3, 0.004 + Math.random() * 0.004, bus);
+  });
   // Bumm. Tschak. Bumm-bumm. Tschak. – Noor am Schlagzeug (Bassdrum, Snare, Hi-Hat)
   const trommel = (laut) => (ctx, bus) => {
     const t = ctx.currentTime, h = audio.helpers, b = 0.3;
@@ -2187,6 +2192,10 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   const DEKO_KAP = { herbst: [3, 4], halloween: [3], weihnacht: [5], winter: [5, 6], fruehling: [7, 8], sommer: [9, 10] };
   let dekoKap = -1;
   // Annexe News an der Pinnwand: jede Woche eine neue Ausgabe; Zoés Umfrage-Ergebnis mit deiner Antwort
+  const KURZ_NOTIERT = { 1: 'Die Hallenuhr geht drei Minuten nach. Fernand arbeitet dran. Seit 1998.', 2: 'Coding-Club sucht Testpersonen. Informatik, mittwochs 13 Uhr.',
+    3: 'Nach dem Sportfest fehlen zwei orange Hütchen. Hinweise an Fernand.', 4: 'Bonbon hat Geburtstag. Leckerli nur über die SePAS!', 5: 'Bandprobe: Noor und Gilles suchen immer noch einen Bass.',
+    6: 'Lou bewertet jetzt auch Menschen. Bisher nur gute Noten.', 7: 'Paulo bringt Karotten. Fernand isst sie. Mittags im Hinterhof.', 8: 'Gerumpel im Informatikraum: Der Roboter sagt jetzt „HALLO MENSCH“.',
+    9: 'Tiagos Spiel ist fast fertig. Version 0.9. Wer testet?', 10: 'Schulfest: Noor am Schlagzeug, Gilles singt. Erste Reihe freihalten!' };
   const ZEITUNG_TITEL = { 1: 'Willkommen, neue 7ème!', 2: 'Talenttag: Wer wackelt mit den Ohren?', 3: 'Sportfest: Alle sind angekommen', 4: 'Test-Woche: 5 Tipps gegen Stress',
     5: 'De Kleeschen kommt am 6.!', 6: 'Fuesend in der Aula', 7: 'Praktikum: Was wir gelernt haben', 8: 'Fake oder echt? 3 Fragen', 9: 'Schlaf-Spezial', 10: 'Letzte Ausgabe: Danke!' };
   const zeitung = (() => {
@@ -2213,6 +2222,17 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       g.fillStyle = '#2b3a55'; y = zeilen(U[v][0], y, '26px system-ui', 30) + 6;
       U[v][1].forEach((o, i) => { const p = U[v][2][i]; g.fillStyle = a === i ? '#e85d75' : '#9fb3c8'; g.fillRect(60, y - 22, (W - 220) * p / 60, 28); g.fillStyle = '#2b2b33'; g.textAlign = 'left'; g.font = (a === i ? 'bold ' : '') + '22px system-ui'; g.fillText(o + ' · ' + p + ' %' + (a === i ? '  ← du' : ''), 64, y + 34); g.textAlign = 'center'; y += 74; });
     } else { g.fillStyle = '#5b6472'; g.font = 'italic 24px system-ui'; g.fillText('Mach mit! Zoé fragt in der Halle.', W / 2, y + 20); }
+    // Kurz notiert: Neues von den Stammgästen – manches reagiert auf das, was du getan hast
+    const m = (S && S.merke) || {};
+    const kurz = m.huetchen >= 2 && kap >= 3 ? 'Beide Sportfest-Hütchen sind zurück! Fernand dankt der unbekannten Person.'
+      : m.huetchen === 1 && kap >= 3 ? 'Ein Hütchen ist zurück. Eins ist noch auf der Flucht. Hinweise an Fernand.'
+      : m.handyAbgegeben && kap >= 2 && kap % 2 === 0 ? 'Gefundenes Handy im Sekretariat abgegeben. Ehrlich ist cool.'
+      : KURZ_NOTIERT[kap];
+    if (kurz) {
+      const yk = Math.max(y + 24, 575); g.textAlign = 'center';
+      g.fillStyle = '#2b3a55'; g.fillRect(40, yk - 30, W - 80, 2); g.font = 'bold 20px system-ui'; g.fillText('KURZ NOTIERT', W / 2, yk);
+      g.fillStyle = '#2b2b33'; zeilen(kurz, yk + 30, '20px system-ui', 40);
+    }
     zeitung.tex.needsUpdate = true;
   }
   function saisonTick(dt) {
@@ -2455,6 +2475,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       klangT = 0.7 + Math.random() * 0.9;
       if (!raum && p.z > -2 && p.z < 40 && Math.abs(p.x) < 46 && !(sky.night > 0.5)) audio.play('stimmen');
       else if (rid === 'kantine') audio.play('geschirr');
+      else if (rid === 'gang' && ((uhrJetzt >= 8.0 && uhrJetzt < 9.85) || (uhrJetzt >= 10.4 && uhrJetzt < 11.95) || (uhrJetzt >= 13.6 && uhrJetzt < 15.4)) && Math.random() < 0.6) audio.play('unterricht');
     }
     // Noor übt im Musikraum (Stammgast): leiser Rhythmus, im Flur des Neubaus noch zu hören
     trommelT -= dt;
