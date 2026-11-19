@@ -8,11 +8,48 @@ import * as THREE from 'three';
 export const ORTE_UMLAND = {
   waldweg: { x: -64, z: -30, yaw: Math.PI }, lichtung: { x: -60, z: -93, yaw: Math.PI },
   gasse: { x: 32, z: 58, yaw: 0 }, rueMoulin: { x: 20, z: 87, yaw: Math.PI / 2 }, epicerie: { x: 42, z: 89.5, yaw: 0 }, epicerieInnen: { x: 41.5, z: 93.4, yaw: 0 },
-  spielplatz: { x: 63, z: 80.5, yaw: Math.PI },
+  spielplatz: { x: 63, z: 80.5, yaw: Math.PI }, arretMoulin: { x: 4.7, z: 86.5, yaw: Math.PI },
 };
+
+// Dinge, die Situationen sichtbar machen (situationen.js / spiel.js schalten sie an und aus)
+export const DORF_DEKO = {};
+
+// Wandbild im Bushäuschen der Rue du Moulin – gemalt von der 7ème vom letzten Jahr (Noor hat die Trommel gemalt)
+function wandbild(THREE) {
+  const cv = document.createElement('canvas'); cv.width = 1024; cv.height = 420; const g = cv.getContext('2d');
+  const h = g.createLinearGradient(0, 0, 0, 420); h.addColorStop(0, '#7fc4ff'); h.addColorStop(0.62, '#cfeaff'); h.addColorStop(0.63, '#7cc47a'); h.addColorStop(1, '#4f9a55');
+  g.fillStyle = h; g.fillRect(0, 0, 1024, 420);
+  g.fillStyle = '#ffd34d'; g.beginPath(); g.arc(880, 78, 46, 0, Math.PI * 2); g.fill();
+  g.strokeStyle = '#ffd34d'; g.lineWidth = 6; for (let i = 0; i < 10; i++) { const a = i / 10 * Math.PI * 2; g.beginPath(); g.moveTo(880 + Math.cos(a) * 58, 78 + Math.sin(a) * 58); g.lineTo(880 + Math.cos(a) * 78, 78 + Math.sin(a) * 78); g.stroke(); }
+  g.fillStyle = '#6aa86a'; g.beginPath(); g.moveTo(0, 270); g.quadraticCurveTo(260, 170, 520, 262); g.quadraticCurveTo(760, 190, 1024, 258); g.lineTo(1024, 420); g.lineTo(0, 420); g.fill();
+  // Sendemasten (rot-weiß) und Kirchturm
+  for (const [x, hh] of [[150, 210], [235, 170]]) { for (let y = 0; y < hh; y += 24) { g.fillStyle = (y / 24) % 2 ? '#ffffff' : '#d9523c'; g.fillRect(x - 5, 262 - hh + y, 10, 24); } g.strokeStyle = '#8d96a3'; g.lineWidth = 2; g.beginPath(); g.moveTo(x, 262 - hh); g.lineTo(x - 50, 262); g.moveTo(x, 262 - hh); g.lineTo(x + 50, 262); g.stroke(); }
+  g.fillStyle = '#efe2b8'; g.fillRect(470, 150, 60, 120); g.fillStyle = '#5a6b7a'; g.beginPath(); g.moveTo(462, 150); g.lineTo(500, 82); g.lineTo(538, 150); g.fill();
+  // Kinder an der Hand, Hund Bonbon, Trommel (Noor)
+  const kind = (x, c) => { g.fillStyle = '#f1c7a2'; g.beginPath(); g.arc(x, 300, 15, 0, Math.PI * 2); g.fill(); g.fillStyle = c; g.fillRect(x - 15, 316, 30, 46); g.fillStyle = '#2d3748'; g.fillRect(x - 13, 362, 10, 34); g.fillRect(x + 3, 362, 10, 34); };
+  ['#e85d75', '#2fb8a8', '#e9b949', '#9b7bc8', '#4f88c8'].forEach((c, i) => kind(330 + i * 62, c));
+  g.strokeStyle = '#f1c7a2'; g.lineWidth = 6; g.beginPath(); g.moveTo(345, 334); g.lineTo(625, 334); g.stroke();
+  g.fillStyle = '#c99a5b'; g.beginPath(); g.ellipse(700, 372, 38, 20, 0, 0, Math.PI * 2); g.fill(); g.beginPath(); g.arc(735, 350, 16, 0, Math.PI * 2); g.fill();
+  g.fillStyle = '#d9523c'; g.fillRect(820, 318, 92, 72); g.fillStyle = '#f4e8cc'; g.beginPath(); g.ellipse(866, 318, 46, 13, 0, 0, Math.PI * 2); g.fill();
+  g.strokeStyle = '#a0743e'; g.lineWidth = 7; g.beginPath(); g.moveTo(800, 270); g.lineTo(850, 312); g.moveTo(935, 270); g.lineTo(885, 312); g.stroke();
+  g.fillStyle = '#2b3a55'; g.font = 'bold 44px Georgia, serif'; g.textAlign = 'left'; g.fillText('Junglinster a Faarf', 28, 60);
+  g.font = 'italic 24px Georgia, serif'; g.fillText('7ème B · Annexe · Trommel: Noor', 30, 96);
+  const t = new THREE.CanvasTexture(cv); t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = 4; return t;
+}
+// Ein Sprüh-Tag (Kürzel) als durchsichtige Fläche
+export function tagTextur(THREE, text, farbe, cv0) {
+  const cv = cv0 || document.createElement('canvas'); cv.width = 512; cv.height = 256; const g = cv.getContext('2d');
+  g.clearRect(0, 0, 512, 256); g.save(); g.translate(256, 140); g.rotate(-0.12);
+  g.font = 'bold 120px Impact, system-ui'; g.textAlign = 'center'; g.lineJoin = 'round';
+  g.lineWidth = 16; g.strokeStyle = '#1b1b1f'; g.strokeText(text, 0, 0); g.fillStyle = farbe; g.fillText(text, 0, 0);
+  g.fillStyle = farbe; for (let i = 0; i < 6; i++) g.fillRect(-150 + i * 55, 20, 5, 30 + (i * 37) % 50);   // Farbnasen
+  g.restore();
+  const t = new THREE.CanvasTexture(cv); t.colorSpace = THREE.SRGBColorSpace; return t;
+}
 
 export function baueDorf({ B, C, schild, schilder, P = null, R = null }) {
   const { box, wand } = B;
+  const schilders = (m) => schilder.push(m);
   const hex = (h) => new THREE.Color(h);
   const geo = (g, c, art = 'fest') => {
     g = g.index ? g.toNonIndexed() : g;
@@ -178,6 +215,21 @@ export function baueDorf({ B, C, schild, schilder, P = null, R = null }) {
     if (!(x + w > 33 && x < 51) && haus(x + w / 2, 95.5 + d / 2, w, d, 2, -1)) anz++;
     x += w + 3 + rnd() * 4;
   }
+  // Bushäuschen „Arrêt Rue du Moulin“ (Nordseite, auf dem Gehweg): Rückwand mit Wandbild, Bank, Dach
+  { const X0 = 2, X1 = 7.4, Z = 82.2, GR = hex('#3a3f4a');
+    box(X0, X1, 0.14, 2.5, Z - 0.14, Z, hex('#d8d2c4'), { stoss: true });
+    for (const x of [X0, X1 - 0.1]) box(x, x + 0.1, 0.14, 2.6, Z - 0.14, Z + 1.5, GR, { stoss: true });
+    box(X0 - 0.1, X1 + 0.1, 2.6, 2.72, Z - 0.25, Z + 1.7, GR);
+    box(X0 + 0.7, X1 - 0.7, 0.55, 0.61, Z + 0.1, Z + 0.5, hex('#a0743e'), { stoss: true }); for (const x of [X0 + 0.9, X1 - 1.0]) box(x, x + 0.1, 0.14, 0.55, Z + 0.15, Z + 0.45, GR);
+    if (B.sitze) for (const x of [3.9, 5.5]) B.sitze.push({ x, z: Z + 0.3, rot: 0, bank: true, h: 0.61 });
+    { const t = schild('Arrêt · Rue du Moulin', 1.4, 0.3, { bg: '#2fb8a8', schrift: 'bold 84px system-ui' }); t.position.set(X1 + 0.12, 2.25, Z + 1.3); t.rotation.y = Math.PI / 2; schilder.push(t); }
+    const bild = new THREE.Mesh(new THREE.PlaneGeometry(4.9, 2.0), new THREE.MeshLambertMaterial({ map: wandbild(THREE) })); bild.position.set((X0 + X1) / 2, 1.42, Z + 0.006); bild.name = 'schild'; schilders(bild);
+    const tag = (text, farbe, x, y, b) => { const cv = document.createElement('canvas'); const m = new THREE.Mesh(new THREE.PlaneGeometry(b, b / 2), new THREE.MeshLambertMaterial({ map: tagTextur(THREE, text, farbe, cv), transparent: true, depthWrite: false }));
+      m.position.set(x, y, Z + 0.012); m.name = 'schild'; m.visible = false; m.userData.cv = cv; schilders(m); return m; };
+    DORF_DEKO.tagDex = tag('D3X', '#e85d75', 6.0, 1.15, 1.6);        // über Noors Trommel
+    DORF_DEKO.tagDu = tag('★', '#e9b949', 3.4, 1.0, 1.3);            // dein Kürzel (spiel.js malt die Buchstaben)
+    B.frei.push({ x0: X0 - 1, x1: X1 + 1, z0: Z - 1, z1: Z + 2 });
+  }
   // Spielplatz (Nordseite der Rue du Moulin): Sand, Schaukel, Rutsche, Wippe, Bank
   { const X0 = 56, X1 = 72, Z0 = 73, Z1 = 81.5, SAND = hex('#e6d3a3'), ROT = hex('#d9523c'), BLAU = hex('#2f6db0'), GELB = hex('#e9b949'), HOLZ = hex('#a0743e');
     box(X0, X1, 0, 0.05, Z0, Z1, SAND, { art: 'innen' }); B.frei.push({ x0: X0 - 1, x1: X1 + 1, z0: Z0 - 1, z1: Z1 + 1 });
@@ -195,6 +247,13 @@ export function baueDorf({ B, C, schild, schilder, P = null, R = null }) {
     box(69.4, 69.6, 0, 0.45, 78.3, 78.5, HOLZ); { const g = new THREE.BoxGeometry(0.3, 0.08, 3.2); g.rotateX(0.18); g.translate(69.5, 0.5, 78.4); geoF(g, ROT); }
     box(58, 60.4, 0.42, 0.48, 80.2, 80.6, HOLZ, { stoss: true }); for (const x of [58.2, 60.1]) box(x, x + 0.12, 0, 0.42, 80.25, 80.55, hex('#3a3f4a'));
     if (B.sitze) for (const x of [58.6, 59.8]) B.sitze.push({ x, z: 80.4, rot: Math.PI, bank: true, h: 0.48 });
+    // Energy-Drink-Dosen auf und neben der Bank (nur, solange die Wette läuft – spiel.js schaltet sie)
+    { const gr = new THREE.Group(); gr.name = 'schild';
+      for (const [x, y, z, liegt, c] of [[58.3, 0.54, 80.45, 0, '#2f6db0'], [58.45, 0.54, 80.35, 0, '#2f6db0'], [60.2, 0.54, 80.42, 0, '#3fa66b'], [59.1, 0.04, 79.6, 1, '#2f6db0'], [60.9, 0.04, 79.3, 1, '#3fa66b'], [58.8, 0.54, 80.5, 0, '#3fa66b']]) {
+        const d = new THREE.Mesh(new THREE.CylinderGeometry(0.033, 0.033, 0.16, 12), new THREE.MeshLambertMaterial({ color: c })); d.position.set(x, y + 0.08, z); if (liegt) { d.rotation.z = Math.PI / 2; d.rotation.y = x; d.position.y = 0.075; } gr.add(d);
+        const r2 = new THREE.Mesh(new THREE.CylinderGeometry(0.034, 0.034, 0.03, 12), new THREE.MeshLambertMaterial({ color: '#c9ccd2' })); r2.position.copy(d.position); if (liegt) { r2.rotation.copy(d.rotation); r2.position.x += 0.07; } else r2.position.y += 0.07; gr.add(r2);
+      }
+      gr.visible = false; DORF_DEKO.dosen = gr; schilders(gr); }
     { const t = schild('Spielplatz · bis 14 Jahre', 1.6, 0.32, { bg: '#3fa66b', schrift: 'bold 80px system-ui' }); t.position.set(64, 1.1, 81.56); schilder.push(t); box(63.9, 64.1, 0, 0.95, 81.5, 81.62, hex('#8d96a3')); }
   }
 

@@ -8,35 +8,76 @@
 // a.nachricht(von, text) (kommt beim nächsten Schritt aufs Handy) · a.teleport(ort) · a.ton(art)
 
 export const SIT_LEUTE = {
-  dex: { name: 'Dex (5ème)', farbe: '#e85d75', aussehen: { modell: 'menschen', stil: 'Casual2', haut: '#e0b48c', haar: '#1b1410', oben: '#2b2b33', unten: '#3a3f4b', schuhe: '#f2f2f2', hoehe: 1.78, kopf: 'cap', kopfFarbe: '#e85d75' }, steht: [-60.8, -101.75, 0, 'sitzt'], ort: 'wald' },
-  sina: { name: 'Sina (5ème)', farbe: '#9b7bc8', aussehen: { modell: 'frauen', stil: 'Casual', haut: '#c68e64', haar: '#2b1d14', oben: '#9b7bc8', unten: '#2d3748', schuhe: '#2b2b2b', hoehe: 1.66 }, steht: [-57.25, -98.8, -Math.PI / 2, 'sitzt'], ort: 'wald' },
-  mo: { name: 'Mo (5ème)', farbe: '#2fb8a8', aussehen: { modell: 'menschen', stil: 'Casual', haut: '#a0694a', haar: '#1b1410', oben: '#2fb8a8', unten: '#2d3748', schuhe: '#e9b949', hoehe: 1.74 }, steht: [-58.2, -102.8, -0.7, 'handy'], ort: 'wald' },
-  mika: { name: 'Mika (6ème)', farbe: '#e9b949', aussehen: { modell: 'menschen', stil: 'Casual', haut: '#f1c7a2', haar: '#c9a15a', oben: '#e9b949', unten: '#3a3f4b', schuhe: '#4f88c8', hoehe: 1.58 }, steht: [-62.75, -99.6, Math.PI / 2, 'sitzt'], ort: 'wald' },
-  moLaden: { name: 'Mo (5ème)', farbe: '#2fb8a8', aussehen: { modell: 'menschen', stil: 'Casual', haut: '#a0694a', haar: '#1b1410', oben: '#2fb8a8', unten: '#2d3748', schuhe: '#e9b949', hoehe: 1.74 }, steht: [39.4, 90.4, 0.5, 'handy'], ort: 'laden' },
-  lisette: { name: 'Tante Lisette · Épicerie', farbe: '#2f8a5a', aussehen: { modell: 'frauen', stil: 'Casual', haut: '#f0c9a8', haar: '#9a9a9a', oben: '#2f8a5a', unten: '#3a3f4b', schuhe: '#3a2a1c', hoehe: 1.62 }, steht: [36.9, 94.5, Math.PI / 2, 'redet'], ort: 'laden' },
+  dex: { szene: 'wald', wer: 'dex', bleibt: true, name: 'Dex (5ème)', farbe: '#e85d75', aussehen: { modell: 'menschen', stil: 'Casual2', haut: '#e0b48c', haar: '#1b1410', oben: '#2b2b33', unten: '#3a3f4b', schuhe: '#f2f2f2', hoehe: 1.78, kopf: 'cap', kopfFarbe: '#e85d75' }, steht: [-60.8, -101.75, 0, 'sitzt'], ort: 'wald' },
+  sina: { szene: 'wald', wer: 'sina', bleibt: true, name: 'Sina (5ème)', farbe: '#9b7bc8', aussehen: { modell: 'frauen', stil: 'Casual', haut: '#c68e64', haar: '#2b1d14', oben: '#9b7bc8', unten: '#2d3748', schuhe: '#2b2b2b', hoehe: 1.66 }, steht: [-57.25, -98.8, -Math.PI / 2, 'sitzt'], ort: 'wald' },
+  mo: { szene: 'wald', wer: 'mo', bleibt: true, name: 'Mo (5ème)', farbe: '#2fb8a8', aussehen: { modell: 'menschen', stil: 'Casual', haut: '#a0694a', haar: '#1b1410', oben: '#2fb8a8', unten: '#2d3748', schuhe: '#e9b949', hoehe: 1.74 }, steht: [-58.2, -102.8, -0.7, 'handy'], ort: 'wald' },
+  mika: { szene: 'wald', wer: 'mika', name: 'Mika (6ème)', farbe: '#e9b949', aussehen: { modell: 'menschen', stil: 'Casual', haut: '#f1c7a2', haar: '#c9a15a', oben: '#e9b949', unten: '#3a3f4b', schuhe: '#4f88c8', hoehe: 1.58 }, steht: [-62.75, -99.6, Math.PI / 2, 'sitzt'], ort: 'wald' },
+  moLaden: { szene: 'laden', wer: 'mo', name: 'Mo (5ème)', farbe: '#2fb8a8', aussehen: { modell: 'menschen', stil: 'Casual', haut: '#a0694a', haar: '#1b1410', oben: '#2fb8a8', unten: '#2d3748', schuhe: '#e9b949', hoehe: 1.74 }, steht: [39.4, 90.4, 0.5, 'handy'], ort: 'laden' },
+  lisette: { immer: true, name: 'Tante Lisette · Épicerie', farbe: '#2f8a5a', aussehen: { modell: 'frauen', stil: 'Casual', haut: '#f0c9a8', haar: '#9a9a9a', oben: '#2f8a5a', unten: '#3a3f4b', schuhe: '#3a2a1c', hoehe: 1.62 }, steht: [36.9, 94.5, Math.PI / 2, 'redet'],  ort: 'laden' },
+  // Bushäuschen Rue du Moulin (Graffiti, ab Kapitel 6)
+  dexWand: { szene: 'graffiti', wer: 'dex', name: 'Dex (5ème)', farbe: '#e85d75', aussehen: { modell: 'menschen', stil: 'Casual2', haut: '#e0b48c', haar: '#1b1410', oben: '#2b2b33', unten: '#3a3f4b', schuhe: '#f2f2f2', hoehe: 1.78, kopf: 'cap', kopfFarbe: '#e85d75' }, steht: [5.6, 83.25, Math.PI, 'redet'] },
+  moWand: { szene: 'graffiti', wer: 'mo', name: 'Mo (5ème)', farbe: '#2fb8a8', aussehen: { modell: 'menschen', stil: 'Casual', haut: '#a0694a', haar: '#1b1410', oben: '#2fb8a8', unten: '#2d3748', schuhe: '#e9b949', hoehe: 1.74 }, steht: [3.2, 84.7, 2.6, 'handy'] },
+  // Hinter der Turnhalle (Streit mit Publikum, ab Kapitel 7)
+  jules: { szene: 'halle', wer: 'jules', name: 'Jules (6ème)', farbe: '#d9693f', aussehen: { modell: 'menschen', stil: 'Casual2', haut: '#f1c7a2', haar: '#7a4a2a', oben: '#d9693f', unten: '#2d3748', schuhe: '#2b2b2b', hoehe: 1.7 }, steht: [60.9, -25.7, 1.2, 'redet'] },
+  sami: { szene: 'halle', wer: 'sami', name: 'Sami (6ème)', farbe: '#4f88c8', aussehen: { modell: 'menschen', stil: 'Casual', haut: '#c68e64', haar: '#1b1410', oben: '#4f88c8', unten: '#3a3f4b', schuhe: '#f2f2f2', hoehe: 1.52 }, steht: [62.1, -25.3, -1.9, ''] },
+  z1: { szene: 'halle', stumm: true, name: 'Jemand', farbe: '#5b6472', aussehen: { modell: 'frauen', stil: 'Casual', haut: '#f0c9a8', haar: '#c9a15a', oben: '#e9b949', unten: '#2d3748', schuhe: '#ffffff', hoehe: 1.6 }, steht: [60.2, -23.8, 2.6, 'handy'] },
+  z2: { szene: 'halle', stumm: true, name: 'Jemand', farbe: '#5b6472', aussehen: { modell: 'menschen', stil: 'Casual', haut: '#a0694a', haar: '#1b1410', oben: '#3fa66b', unten: '#3a3f4b', schuhe: '#2b2b2b', hoehe: 1.72 }, steht: [63.3, -24.0, -2.4, 'handy'] },
+  z3: { szene: 'halle', stumm: true, name: 'Jemand', farbe: '#5b6472', aussehen: { modell: 'menschen', stil: 'Casual2', haut: '#e0b48c', haar: '#2b1d14', oben: '#9b7bc8', unten: '#2d3748', schuhe: '#e85d75', hoehe: 1.66 }, steht: [59.6, -26.9, 1.0, 'handy'] },
+  z4: { szene: 'halle', stumm: true, name: 'Jemand', farbe: '#5b6472', aussehen: { modell: 'frauen', stil: 'Casual', haut: '#8d5a3b', haar: '#1b1410', oben: '#e85d75', unten: '#3a3f4b', schuhe: '#f2f2f2', hoehe: 1.62 }, steht: [63.0, -27.2, -0.8, 'handy'] },
+  // Spielplatz (Energy-Drink-Wette, ab Kapitel 5)
+  lenny: { szene: 'wette', wer: 'lenny', name: 'Lenny (6ème)', farbe: '#3fa66b', aussehen: { modell: 'menschen', stil: 'Casual', haut: '#f1c7a2', haar: '#2b1d14', oben: '#3fa66b', unten: '#2d3748', schuhe: '#ffffff', hoehe: 1.68, kopf: 'cap', kopfFarbe: '#2b2b33' }, steht: [60.9, 79.3, -2.3, 'redet'] },
+  pit: { szene: 'wette', wer: 'pit', name: 'Pit (6ème)', farbe: '#e9b949', aussehen: { modell: 'menschen', stil: 'Casual', haut: '#f0c9a8', haar: '#d9b36a', oben: '#e9b949', unten: '#3a3f4b', schuhe: '#4f88c8', hoehe: 1.5 }, steht: [58.6, 80.4, Math.PI, 'sitzt'] },
+  // Eingangshalle (Lootbox, ab Kapitel 6; beginnt, wenn man Rafa anspricht)
+  // WC (Vape, ab Kapitel 8)
+  ines: { szene: 'vape', wer: 'ines', name: 'Ines (6ème)', farbe: '#d9693f', aussehen: { modell: 'frauen', stil: 'Casual', haut: '#e0b48c', haar: '#2b1d14', oben: '#d9693f', unten: '#2d3748', schuhe: '#ffffff', hoehe: 1.58 }, steht: [22.2, -28.0, Math.PI / 2, 'handy'] },
+  kai: { szene: 'vape', wer: 'kai', name: 'Kai (6ème)', farbe: '#4f88c8', aussehen: { modell: 'menschen', stil: 'Casual2', haut: '#f1c7a2', haar: '#5a3a24', oben: '#4f88c8', unten: '#3a3f4b', schuhe: '#2b2b2b', hoehe: 1.64 }, steht: [23.5, -28.2, -Math.PI / 2, 'redet'] },
+  // CDI (Gratis-Diamanten, ab Kapitel 8; beginnt, wenn man Noé anspricht)
+  noe: { szene: 'link', wer: 'noe', bleibt: true, name: 'Noé (6ème)', farbe: '#3fa66b', aussehen: { modell: 'menschen', stil: 'Casual', haut: '#8d5a3b', haar: '#1b1410', oben: '#3fa66b', unten: '#2d3748', schuhe: '#e9b949', hoehe: 1.55 }, steht: [-7.6, -20.6, Math.PI, 'handy'] },
+  // Gang vor Saal 1.04 (Video über Mme Lenning, ab Kapitel 9; beginnt, wenn man Yanis anspricht)
+  yanis: { szene: 'video', wer: 'yanis', name: 'Yanis (6ème)', farbe: '#c0392b', aussehen: { modell: 'menschen', stil: 'Casual2', haut: '#c68e64', haar: '#1b1410', oben: '#c0392b', unten: '#2d3748', schuhe: '#ffffff', hoehe: 1.66, kopf: 'cap', kopfFarbe: '#ffffff' }, steht: [-15.0, -15.5, Math.PI / 2, 'handy'] },
+  z5: { szene: 'video', stumm: true, name: 'Jemand', farbe: '#5b6472', aussehen: { modell: 'frauen', stil: 'Casual', haut: '#f0c9a8', haar: '#7a4a2a', oben: '#2fb8a8', unten: '#3a3f4b', schuhe: '#2b2b2b', hoehe: 1.58 }, steht: [-13.9, -15.1, -2.0, 'handy'] },
+  z6: { szene: 'video', stumm: true, name: 'Jemand', farbe: '#5b6472', aussehen: { modell: 'menschen', stil: 'Casual', haut: '#a0694a', haar: '#1b1410', oben: '#e9b949', unten: '#2d3748', schuhe: '#e85d75', hoehe: 1.62 }, steht: [-14.1, -16.4, -0.8, 'handy'] },
+  // Sommerfest, Raucherecke hinter der Turnhalle (Alkohol, Kapitel 10) – alte Bekannte
+  moFest: { szene: 'fest', wer: 'mo', name: 'Mo (5ème)', farbe: '#2fb8a8', aussehen: { modell: 'menschen', stil: 'Casual', haut: '#a0694a', haar: '#1b1410', oben: '#2fb8a8', unten: '#2d3748', schuhe: '#e9b949', hoehe: 1.74 }, steht: [61.6, -13.4, -2.0, 'redet'] },
+  mikaFest: { szene: 'fest', wer: 'mika', name: 'Mika (6ème)', farbe: '#e9b949', aussehen: { modell: 'menschen', stil: 'Casual', haut: '#f1c7a2', haar: '#c9a15a', oben: '#e9b949', unten: '#3a3f4b', schuhe: '#4f88c8', hoehe: 1.6 }, steht: [59.9, -12.9, 2.2, 'handy'] },
+  rafa: { szene: 'kiste', wer: 'rafa', bleibt: true, name: 'Rafa (6ème)', farbe: '#9b7bc8', aussehen: { modell: 'menschen', stil: 'Casual2', haut: '#c68e64', haar: '#1b1410', oben: '#9b7bc8', unten: '#2d3748', schuhe: '#e9b949', hoehe: 1.56 }, steht: [1.6, -4.8, Math.PI, 'handy'] },
+};
+
+// Szenen: ab welchem Kapitel, wo sie beginnen (Zone) – oder nur, wenn man die Person anspricht
+export const SZENEN = {
+  wald: { ab: 4, start: { x: -60, z: -93, yaw: Math.PI }, zone: { x: -60, z: -99, r: 6.5 }, teaser: ['Dex (Gruppe)', 'Wer chillt nach der Schule an der Lichtung? 🌲 Waldweg hinter der Werkstatt'], titel: ['🌲', 'Die Lichtung', 'Was du mitmachst, entscheidest du. Auch beim nächsten Mal.'] },
+  laden: { ab: 5, start: { x: 42, z: 89.5, yaw: 0 }, zone: { x: 41.6, z: 90.6, r: 2.6 }, teaser: ['Mo (Gruppe)', 'Mutprobe für Neue 😏 Épicerie, Rue du Moulin'], titel: ['🛒', 'Die Mutprobe', 'Dazugehören darf nichts kosten, was du nicht geben willst.'] },
+  wette: { ab: 5, start: { x: 61.5, z: 80.8, yaw: -2.27 }, zone: { x: 59.6, z: 79.2, r: 3.4 }, teaser: ['Lenny (Gruppe)', 'Wette am Spielplatz ⚡ Wer traut sich?'], titel: ['🥤', 'Drei Dosen', 'Gewinnen, bis es dir schlecht geht, ist kein Gewinnen.'] },
+  graffiti: { ab: 6, start: { x: 4.7, z: 86.8, yaw: Math.PI }, zone: { x: 4.7, z: 84.6, r: 3.2 }, teaser: ['Dex (Gruppe)', 'Kunst im Bushäuschen, Rue du Moulin 🎨 Kommt vorbei'], titel: ['🎨', 'Die Wand', 'Jede Wand hat schon eine Geschichte. Manchmal eine von jemandem, den du kennst.'] },
+  kiste: { ab: 6, start: { x: 1.6, z: -3.4, yaw: Math.PI }, teaser: ['Rafa', 'Bist du in der Halle? Ich muss dir was zeigen 🎁'], titel: ['🎁', 'Fast gewonnen', '„Fast“ ist gebaut. Damit du weiterdrückst.'] },
+  vape: { ab: 8, start: { x: 24.5, z: -23.5, yaw: -2.7 }, zone: { x: 23, z: -26.8, r: 2.8 }, teaser: ['Kai', 'WC, große Pause. Ich zeig dir was 😮‍💨'], titel: ['💨', 'Die Wolke', 'Süß riechen heißt nicht harmlos sein.'] },
+  link: { ab: 8, start: { x: -7.6, z: -19.2, yaw: Math.PI }, teaser: [['Unbekannt', '🎁 GRATIS 5000 Diamanten! Nur heute! Einloggen: gratis-diamanten.win'], ['Noé', 'Hast du die Diamanten-Nachricht auch?? Bin im CDI 💎']], titel: ['🔗', 'Gratis', 'Wer schickt es? Wo führt es hin? Wer hat was davon?'] },
+  video: { ab: 9, start: { x: -12.6, z: -15.6, yaw: -Math.PI / 2 }, teaser: ['Yanis (Gruppe)', 'HAHA habt ihr das Video von der Lenning gesehen?? 😂 Gang, vor 1.04'], titel: ['🎬', 'Das Video', 'Lachen über jemanden ist leicht. Aufhören ist schwerer.'] },
+  fest: { ab: 10, start: { x: 60.6, z: -9.5, yaw: Math.PI }, schritt: 'k10_fest', zone: { x: 60.6, z: -13.3, r: 3.2 }, teaser: ['Mo (Gruppe)', 'Sommerfest-Afterparty hinter der Turnhalle 🍾 Psst'], titel: ['🍾', 'Die Wasserflasche', 'Das Fest ist drinnen. Und du gehörst dazu.'] },
+  halle: { ab: 7, start: { x: 61.5, z: -20.5, yaw: Math.PI }, zone: { x: 61.5, z: -25.5, r: 5 }, teaser: ['Unbekannt', 'HINTER DER TURNHALLE. JETZT. 👀'], titel: ['📱', 'Der Kreis', 'Wer filmt, baut die Bühne. Wer hilft, baut sie ab.'] },
 };
 
 // Wer ist wann da? (Kapitel, Schalter in den Einstellungen, was schon passiert ist)
-export function sitSichtbar(id, kap, m, risiko, schritt) {
-  if (id === 'lisette') return true;
+export function sitSichtbar(id, kap, m, risiko, schritt, schrittId) {
+  const P = SIT_LEUTE[id]; if (!P) return false;
+  if (P.immer) return true;
   if (!risiko) return false;
-  if (m.sitWaldSchritt === schritt && SIT_LEUTE[id].ort === 'wald') return false;   // gerade gegangen: heute niemand mehr da
-  if (id === 'mika') return kap >= 4 && !m.sit_wald;
-  if (id === 'moLaden') return kap >= 5 && !m.sit_laden;
-  return kap >= 4;   // Dex, Sina, Mo hängen ab Kapitel 4 an der Lichtung ab
+  const sz = SZENEN[P.szene]; if (!sz || kap < sz.ab) return false;
+  if (sz.schritt && sz.schritt !== schrittId) return false;   // nur an diesem Tag (z. B. Sommerfest)
+  const weg = m.sitWeg || {};   // gerade passiert: Wer dabei war, ist für den Rest des Schritts weg
+  for (const k in weg) if (weg[k] === schritt && (k === P.szene || Object.values(SIT_LEUTE).some((q) => q.szene === k && q.wer && q.wer === P.wer))) return false;
+  if (m['sit_' + P.szene]) return !!P.bleibt;
+  return true;
 }
 
 // Auslöser: kommt man in die Nähe, beginnt die Situation (einmal); weggehen geht immer
-export const SIT_ZONEN = [
-  { id: 'wald', x: -60, z: -99, r: 6.5, ab: 4, offen: (m) => !m.sit_wald },
-  { id: 'laden', x: 41.6, z: 90.6, r: 2.6, ab: 5, offen: (m) => !m.sit_laden },
-];
+export const SIT_ZONEN = Object.entries(SZENEN).filter(([, s]) => s.zone).map(([id, s]) => ({ id, ...s.zone, ab: s.ab, schritt: s.schritt, offen: (m) => !m['sit_' + id] }));
 
 // ================= Die Lichtung (Kiffen) =================
 export async function lichtung(a) {
   const m = a.m();
   await a.sag('e', 'Zwischen den Bäumen hängt Rauch. Es riecht süßlich.');
-  await a.sag('dex', m.sit_laden ? 'Ah, du schon wieder. Komm, setz dich.' : 'Ey. Neu hier? Komm, setz dich. Wir beißen nicht.');
+  await a.sag('dex', m.sit_laden || m.sit_graffiti ? 'Ah, du schon wieder. Komm, setz dich.' : 'Ey. Neu hier? Komm, setz dich. Wir beißen nicht.');
   await a.sag('sina', 'Meistens nicht.');
   await a.sag('mika', '(leise) Hi.');
   await a.sag('e', 'Dex hält dir einen Joint hin. Alle schauen dich an.');
@@ -159,7 +200,7 @@ export async function laden(a) {
   if (w === 1) { await a.sag('mo', 'Hab ich schon. Letzte Woche. War easy.'); await a.sag('e', '(Stimmt das? Oder ist das nur ein Satz, der Druck macht?)'); }
   await a.sag('e', 'Du gehst rein. Über der Tür bimmelt eine Glocke.');
   a.teleport('epicerieInnen');
-  await a.sag('lisette', 'Moien! Schulschluss? Die Gummibärchen sind heute im Angebot.');
+  await a.sag('lisette', 'Moien! Die Gummibärchen sind heute im Angebot.');
   await a.sag('e', 'Vorn an der Theke liegt Süßes. Tante Lisette sortiert Zeitungen.');
   await a.sag('e', 'Oben in der Ecke blinkt etwas rot. Draußen hebt Mo das Handy.');
   w = await a.wahl(['„Eine Tüte Gummibärchen, bitte.“ (bezahlen)', '(Eine Tüte in die Jacke stecken.)', '„Draußen will einer, dass ich hier klaue.“', '(Nichts nehmen. Wieder rausgehen.)']);
@@ -246,5 +287,634 @@ export function sitSaetze(id, m) {
   if (id === 'sina') return ['Hey. Alles gut bei dir?', 'Dex ist nicht so hart, wie er tut.', 'Ich komm nur her wegen der Ruhe. Ehrlich.'];
   if (id === 'mo' || id === 'moLaden') return m.sit_laden === 'bezahlt' ? ['Du hast echt bezahlt. Hab’s keinem erzählt.', '(steckt das Handy weg) Heute nicht.'] : ['(filmt die Bäume) Content.', 'Willst du ins Video? Nein? Okay.'];
   if (id === 'mika') return ['Hi. Ich weiß nicht, ob ich hier sein will.', 'Dex sagt, ich bin cool. Bin ich?'];
+  if (id === 'noe') return m.noeGeholfen || m.linkRepariert ? ['Neues Passwort. Zweiundzwanzig Zeichen. Ich kann’s selbst nicht.', 'Ich frag jetzt immer: Wer hat was davon?'] : ['Diamanten sind mir egal jetzt.', 'Hast du auch so komische Nachrichten?'];
+  if (id === 'rafa') return m.kisteKuedes ? ['Käufe gesperrt. Fühlt sich komisch an. Aber gut.', 'Leon wartet noch. Ich zahl jede Woche fünf zurück.'] : ['Heute nicht gedrückt. Fast nicht.', 'Ich spiel jetzt ohne Kisten. Ist sogar lustiger.'];
+  if (SIT_LEUTE[id] && SIT_LEUTE[id].stumm) return ['(filmt weiter)', '(schaut nicht mal hoch)'];
   return ['…'];
+}
+
+// ================= Die Wand (Graffiti am Bushäuschen, Rue du Moulin) =================
+// Unter Dex’ Kürzel ist ein Wandbild der 7ème vom letzten Jahr. Noor hat die Trommel gemalt.
+export async function graffiti(a) {
+  const m = a.m();
+  await a.sag('e', 'Zischen. Es riecht nach Farbe. Dex sprüht am Bushäuschen.');
+  await a.sag('e', 'Unter seinem D3X: ein Wandbild. Kinder, Masten, ein Hund. Eine Trommel.');
+  await a.sag('dexWand', m.sit_wald ? 'Ah, du. Perfekt. Halt mal Wache.' : 'Ey, 7ème. Halt mal Wache. Oder mach mit.');
+  await a.sag('moWand', '(filmt) Für den Kanal. „Junglinster gehört uns.“');
+  await a.sag('dexWand', 'Hier. Mach dein Zeichen. Neben meins. Dann bist du auf der Wand.');
+  await a.sag('e', 'Die Dose ist kalt in deiner Hand. Und schwerer als gedacht.');
+  const w = await a.wahl(['„Das Bild hat jemand gemalt. Siehst du die Unterschrift?“', '„Zeig mal. Malst du auch auf Papier?“', '(Ein schnelles Zeichen sprühen.)', '(Die Dose zurückgeben und gehen.)']);
+  if (w === 3) {
+    await a.sag('dexWand', 'Langweilig.');
+    await a.sag('moWand', 'Cut. Das schneiden wir raus.');
+    await a.sag('e', 'Du bist nicht im Video. Das fühlt sich besser an als gedacht.');
+    a.merke('sit_graffiti', 'gegangen');
+    return;
+  }
+  if (w === 0) {
+    await a.sag('dexWand', 'Was für eine Unterschrift?');
+    await a.sag('e', 'Oben links steht klein: „7ème B · Trommel: Noor“.');
+    await a.sag('dexWand', '(liest) Noor? Die Kleine mit den Trommeln?');
+    await a.sag('dexWand', 'Die hat mir mal den Musikraum aufgemacht. Als ich nirgends hinkonnte.');
+    await a.sag('e', 'Dex schaut lange auf seine Farbe. Auf ihrer Trommel.');
+    const x = await a.wahl(['„Wir machen es weg. Jetzt, solange es frisch ist.“', '„Sag es ihr. Bevor sie es selbst sieht.“', '(Nichts sagen. Er hat es verstanden.)']);
+    if (x === 0) {
+      await a.sag('dexWand', 'Wegmachen? Mit was denn?');
+      await a.sag('e', 'Mo hat Feuchttücher. Natürlich hat Mo Feuchttücher.');
+      await a.blende('Zwanzig Minuten später');
+      a.deko('tagDex', false);
+      await a.sag('e', 'Das Rot ist fast weg. Die Trommel hat einen rosa Schimmer.');
+      await a.sag('dexWand', 'Sieht fast aus wie Absicht.');
+      await a.sag('moWand', '(steckt das Handy weg) Das poste ich nicht.');
+      a.merke('sit_graffiti', 'weggemacht');
+    } else if (x === 1) {
+      await a.sag('dexWand', 'Ihr sagen? Dann hasst die mich.');
+      await a.sag('e', '(Vielleicht. Vielleicht auch nicht. Wer weiß das vorher?)');
+      await a.sag('dexWand', '… Morgen. Vielleicht.');
+      a.merke('sit_graffiti', 'reden');
+    } else {
+      await a.sag('e', 'Dex steckt die Dose weg. Ohne ein Wort.');
+      a.merke('sit_graffiti', 'verstanden');
+    }
+    return;
+  }
+  if (w === 1) {
+    await a.sag('dexWand', '(zögert) … Das fragt sonst keiner.');
+    await a.sag('e', 'Dex zieht ein schwarzes Heft aus der Jacke. Voll mit Zeichnungen.');
+    await a.sag('e', 'Buchstaben, die fliegen. Gesichter. Ein Bus, der wie ein Wal aussieht.');
+    let x = await a.wahl(['„Das ist richtig gut. Warum dann hier an der Wand?“', '„Mme Kiesser sucht Leute für die große Wand im Neubau.“', '„Krass. Zeigst du mir, wie das geht?“']);
+    if (x === 2) {
+      await a.sag('dexWand', 'Auf Papier? … Okay. Hier, nimm den Stift.');
+      await a.sag('e', 'Ihr zeichnet zehn Minuten. Dein D sieht aus wie ein Brot.');
+      await a.sag('dexWand', '(lacht) Brot ist ein Anfang.');
+      await a.sag('e', 'Die Dose bleibt zu. Mo filmt die Brote.');
+      a.merke('sit_graffiti', 'papier');
+      return;
+    }
+    if (x === 0) {
+      await a.sag('dexWand', 'Weil mich hier jeder sieht. Im Heft sieht mich keiner.');
+      await a.sag('e', '(Gesehen werden. Darum geht es. Nicht um die Wand.)');
+      await a.sag('du', 'Mme Kiesser sucht Leute für die große Wand im Neubau.');
+    }
+    await a.sag('dexWand', 'Als ob die mich nimmt. Mich nimmt nie einer.');
+    x = await a.wahl(['„Frag sie. Ich komm mit, wenn du willst.“', '„Dann eben nicht.“']);
+    if (x === 0) {
+      await a.sag('dexWand', '… Okay. Mittwoch. Aber du redest zuerst.');
+      await a.sag('e', 'Dex steckt die Dose in den Rucksack. Ganz nach unten.');
+      a.merke('sit_graffiti', 'kiesser');
+    } else {
+      await a.sag('dexWand', 'Eben.');
+      await a.sag('e', 'Er sprüht weiter. Langsamer als vorher.');
+      a.merke('sit_graffiti', 'verstanden');
+    }
+    return;
+  }
+  // gesprüht
+  a.merke('sit_graffiti', 'gespruht');
+  await a.blende('Zwei Minuten später');
+  a.deko('tagDu', true);
+  await a.sag('e', 'Dein Zeichen ist schief. Es läuft über die Trommel.');
+  await a.sag('dexWand', 'Ha! Jetzt bist du drin.');
+  await a.sag('e', 'Ein Auto hält. Ein Mann ruft. Alle rennen. Du auch.');
+  await a.sag('e', 'Deine Finger sind gelb. Die Farbe geht nicht ab.');
+  a.nachricht('Mo (Gruppe)', 'Neues Video: „Die Wand gehört uns“ 🎨');
+  await a.blende('Am nächsten Morgen');
+  await a.sag('e', 'Fernand steht am Bushäuschen. Mit Eimer und Bürste. Es ist kalt.');
+  await a.sag('fernand', 'Zwei Stunden schrubben. Das Bild geht mit ab. Mist.');
+  await a.sag('e', 'Neben ihm steht Noor. Ganz still. Schaut auf die Trommel.');
+  const x = await a.wahl(['„Das war ich. Das Gelbe. Tut mir leid.“', '„Kann ich helfen?“', '(Weitergehen. Keiner weiß es.)']);
+  if (x === 0) {
+    await a.sag('noor', '(lange still) … Warum?');
+    const y = await a.wahl(['„Ich wollte dazugehören.“', '„Ich weiß es nicht.“']);
+    await a.sag('noor', y === 0 ? 'Zu Dex? … Wollte ich letztes Jahr auch.' : 'Okay. Wenigstens ehrlich.');
+    await a.sag('noor', 'Ich mal die Trommel neu. Du hältst die Farben. Deal?');
+    await a.sag('fernand', 'Dann schrubb ich mal weiter. Mit Hilfe geht’s schneller.');
+    a.merke('graffitiGesagt');
+  } else if (x === 1) {
+    await a.sag('fernand', 'Zwei Hände mehr. Gut. Hier, Handschuhe.');
+    await a.blende('Eine Stunde später');
+    await a.sag('e', 'Deine Arme tun weh. Das Gelbe ist weg. Die Trommel auch.');
+    await a.sag('noor', 'Danke fürs Helfen.');
+    await a.sag('e', 'Sie weiß es nicht. Du schon.');
+    a.merke('graffitiGeholfen');
+  } else {
+    await a.sag('e', 'Du gehst vorbei. Fernand schrubbt. Noor schaut dir nach.');
+  }
+  a.deko('tagDu', false); a.deko('tagDex', false);
+}
+
+// ================= Der Kreis (hinter der Turnhalle: Streit mit Publikum) =================
+// Ein Fake-Account hat ein Foto von Jules gepostet. Jules glaubt, es war Sami. Alle filmen.
+export async function halle(a) {
+  await a.sag('e', 'Hinter der Turnhalle stehen Leute im Kreis. Alle Handys sind oben.');
+  await a.sag('zu', '(rufen) Los! Los! Los!');
+  await a.sag('e', 'In der Mitte: Jules und Sami. Sami ist einen Kopf kleiner.');
+  await a.sag('jules', 'Du hast mein Foto in die Gruppe gestellt. Mit dem Schwein-Sticker.');
+  await a.sag('sami', 'Das war ich nicht! Ehrlich! Ich weiß nicht mal, wie das geht!');
+  await a.sag('jules', '(schubst ihn) Lüg nicht.');
+  await a.sag('z1', 'Ey, 7ème! Mein Akku stirbt. Film du! Schnell!');
+  await a.sag('e', 'Jemand drückt dir ein Handy in die Hand. Die Kamera läuft schon.');
+  const w = await a.wahl(['(Filmen. Alle machen es.)', '„Handys runter! Das ist keine Show!“', '(Das Handy zurückgeben. Herrn Mesenberg holen.)', '(Zu Sami gehen. Neben ihn stellen.)']);
+  if (w === 0) {
+    a.merke('sit_halle', 'gefilmt');
+    await a.blende('Zwanzig Sekunden');
+    await a.sag('e', 'Auf dem Bildschirm sieht alles klein aus. Wie ein Film.');
+    await a.sag('e', 'Jules schubst. Sami fällt hin. Alle schreien. Du filmst weiter.');
+    await a.sag('e', 'Dann ein Pfiff. Herr Mesenberg. Alle rennen.');
+    await a.sag('e', 'Das Handy ist weg. Das Video nicht.');
+    a.nachricht('Gruppe', 'Video: „Jules vs Sami 💥“ · 61 Aufrufe');
+    a.nachricht('Sami', 'Warum hast du gefilmt?');
+    await kuedesHalle(a, 'gefilmt');
+    return;
+  }
+  if (w === 1) {
+    await a.sag('z2', 'Halt die Klappe, 7ème.');
+    await a.sag('e', 'Dein Herz hämmert. Aber zwei Leute senken ihr Handy.');
+    await a.sag('e', 'Dann noch eins. Ohne Kameras ist es nur noch ein Streit.');
+    await a.sag('jules', '(schaut sich um) … Ihr seid alle so peinlich.');
+    await a.sag('e', 'Jules geht. Der Kreis löst sich auf. Einfach so.');
+    await a.sag('e', '(Ohne Publikum keine Show. Manchmal reicht das schon.)');
+    a.merke('sit_halle', 'handys');
+  } else if (w === 2) {
+    await a.blende('Dreißig Sekunden später');
+    await a.sag('mesenberg', 'Auseinander. Sofort. Handys in die Taschen.');
+    await a.sag('jules', '(im Vorbeigehen, zu dir) Petze.');
+    await a.sag('e', 'Das Wort trifft. Aber Sami steht noch. Unverletzt.');
+    a.merke('sit_halle', 'hilfe');
+  } else {
+    await a.sag('e', 'Deine Beine gehen einfach. Du stehst neben Sami.');
+    await a.sag('du', 'Komm, Sami. Wir gehen.');
+    await a.sag('jules', 'Halt dich raus, 7ème.');
+    const x = await a.wahl(['(Ruhig bleiben. Mit Sami weitergehen.)', '(Jules anschreien.)', '(Einen Schritt zurück.)']);
+    if (x === 0) {
+      await a.sag('e', 'Ihr geht. Langsam. Niemand hält euch auf.');
+      await a.sag('jules', '(ruft) Wir sind noch nicht fertig!');
+      await a.sag('e', 'Aber er bleibt stehen.');
+      a.merke('sit_halle', 'sami');
+    } else if (x === 1) {
+      await a.sag('du', 'Lass ihn in Ruhe, du Idiot!');
+      await a.sag('e', 'Jules kommt näher. Jetzt stehst du in der Mitte.');
+      await a.blende('Ein Pfiff');
+      await a.sag('mesenberg', 'Stopp! Alle drei. Mitkommen.');
+      await a.sag('e', 'Nichts ist passiert. Diesmal. Dein Körper zittert trotzdem.');
+      a.merke('sit_halle', 'mitte');
+    } else {
+      await a.sag('e', 'Du machst einen Schritt zurück. Sami schaut dich an.');
+      await a.sag('e', 'Dann pfeift Herr Mesenberg. Gerade noch.');
+      a.merke('sit_halle', 'zurueck');
+    }
+  }
+  await a.blende('Später, am Fahrradständer');
+  await a.sag('sami', 'Ich war das wirklich nicht. Mit dem Foto.');
+  const y = await a.wahl(['„Ich glaub dir.“', '„Weißt du, wer es war?“', '„Sag es Herrn Kuedes.“']);
+  if (y === 0) await a.sag('sami', 'Das hat heute noch keiner gesagt.');
+  if (y === 1) { await a.sag('sami', 'Ein Fake-Account. Der postet über alle. Keiner weiß, wer.'); await a.sag('e', '(Wie der Screenshot im Dezember. Gleiche Masche.)'); }
+  if (y === 2) { await a.sag('sami', 'Und dann bin ich der, der petzt.'); await a.sag('e', '(Hilfe holen ist kein Petzen. Fühlt sich aber manchmal so an.)'); }
+  await a.sag('sami', 'Danke. Dass du nicht nur zugeschaut hast.');
+  a.nachricht('Sami', 'Danke wegen heute. Echt.');
+  const m = a.m().sit_halle;
+  if (m === 'hilfe' || m === 'mitte') await kuedesHalle(a, m);
+}
+
+async function kuedesHalle(a, art) {
+  await a.blende('Am nächsten Tag · SePAS');
+  if (art === 'gefilmt') {
+    await a.sag('kaya', 'Ich hab das Video gesehen. Kein Verhör. Wie geht’s dir?');
+    const w = await a.wahl(['„Ich hab nur gefilmt.“', '„Alle haben gefilmt.“', '„Schlecht.“']);
+    await a.sag('kaya', ['Nur gefilmt. Klingt harmlos. Ist es leider nicht.', 'Stimmt. Zwölf Leute. Und jeder dachte: Ich bin nur einer.', 'Schlecht zeigt: Sami ist dir nicht egal.'][w]);
+    await a.sag('kaya', 'Wer filmt, baut die Bühne. Ohne Publikum hört so was oft auf.');
+    await a.sag('kaya', 'Sami sieht sich jetzt jeden Tag hinfallen. Auf vielen Handys.');
+    const x = await a.wahl(['(Löschen. Und Sami schreiben: „Sorry. War falsch.“)', '(Nichts machen.)']);
+    if (x === 0) { a.merke('halleGeloescht'); a.nachricht('Sami', 'Okay. Danke, dass du schreibst.'); await a.sag('kaya', 'Das war der schwerere Weg. Danke.'); }
+    else await a.sag('kaya', 'Du kannst es dir noch überlegen. Die Tür bleibt offen.');
+  } else if (art === 'hilfe') {
+    await a.sag('kaya', 'Jules hat „Petze“ zu dir gesagt. Ich weiß.');
+    await a.sag('kaya', 'Petzen will jemandem schaden. Hilfe holen will Schaden verhindern.');
+    await a.sag('kaya', 'Du hast verhindert. Das ist ein großer Unterschied.');
+  } else {
+    await a.sag('kaya', 'Du bist dazwischen gegangen. Das war mutig. Und gefährlich.');
+    await a.sag('kaya', 'Dein Körper zählt auch. Nie dazwischen, wenn schon geschlagen wird.');
+    await a.sag('kaya', 'Laut sein. Andere mitnehmen. Hilfe holen. Das ist auch Mut.');
+  }
+  await a.sag('kaya', 'Übrigens: Jules geht es auch nicht gut. Das Foto war gemein.');
+  await a.sag('kaya', 'Wenn jemand verletzt ist: 112. Reden geht immer: 116 111.');
+}
+
+// ================= Drei Dosen (Energy-Drink-Wette am Spielplatz) =================
+export async function wette(a) {
+  a.deko('dosen', true);
+  await a.sag('e', 'Am Spielplatz. Auf der Bank stehen Dosen. Bunt. Mit Blitzen drauf.');
+  await a.sag('lenny', 'Wette! Wer schafft drei Dosen in fünf Minuten?');
+  await a.sag('lenny', 'Wer verliert, zahlt alle. Pit ist schon bei zwei.');
+  await a.sag('pit', '(grinst schief) Easy. Mein Herz macht nur so … Techno.');
+  await a.sag('e', 'Pits Hände zittern ein bisschen. Er lacht trotzdem.');
+  await a.sag('e', 'Auf der Dose steht klein: „Für Kinder nicht empfohlen.“');
+  const w = await a.wahl(['„Lies mal, was da klein draufsteht.“', '„Andere Wette: Wer hält länger auf der Wippe?“', '„Gib her. Ich schaff drei.“', '„Nee. Und zahlen tu ich auch nicht.“']);
+  if (w === 1) {
+    await a.sag('lenny', 'Wippe? Bist du fünf?');
+    await a.sag('pit', '(stellt die Dose ab) Wippe. Ich bin dabei.');
+    await a.blende('Zehn Minuten später');
+    await a.sag('e', 'Pit fällt dreimal runter. Lenny lacht. Dann probiert er es selbst.');
+    await a.sag('lenny', 'Okay, okay. Revanche morgen.');
+    await a.sag('e', 'Die Dosen stehen vergessen auf der Bank.');
+    await a.sag('pit', 'Mir ist trotzdem flau. Zwei waren schon zu viel.');
+    await a.sag('e', 'Ihr holt Wasser bei Tante Lisette. Pit setzt sich. Es wird besser.');
+    a.merke('sit_wette', 'wippe');
+    a.nachricht('Pit', 'Revanche Wippe morgen? Ohne Dosen 😅');
+    return;
+  }
+  if (w === 2) {
+    a.merke('sit_wette', 'getrunken');
+    await a.blende('Fünf Minuten später');
+    await a.sag('e', 'Die erste schmeckt süß. Die zweite schon nicht mehr.');
+    await a.sag('e', 'Bei der dritten klopft dein Herz bis in die Ohren.');
+    await a.sag('e', 'Deine Hände zittern. Dir ist übel.');
+    await a.sag('lenny', 'Gewonnen! Pit zahlt!');
+    await a.sag('e', 'Gewonnen fühlt sich anders an.');
+    await a.blende('In der Nacht');
+    await a.sag('e', 'Du liegst wach. Zwei Uhr. Drei Uhr. Das Herz klopft immer noch.');
+    await a.blende('Am Morgen');
+    await a.sag('e', 'Mathe. Die Zahlen verschwimmen. Du gähnst zwölfmal.');
+    a.nachricht('Pit', 'Hab die ganze Nacht nicht geschlafen. Du?');
+    a.deko('dosen', false);
+    return;
+  }
+  if (w === 0) {
+    await a.sag('lenny', 'Steht auf allem. Auf Chips steht auch was.');
+    await a.sag('e', 'Eine Dose hat so viel Koffein wie eine große Tasse Kaffee.');
+    await a.sag('e', 'Drei sind für einen Körper wie deinen viel zu viel.');
+    await a.sag('pit', '(leise) Mir ist eh schon komisch.');
+    a.merke('sit_wette', 'gelesen');
+  } else {
+    await a.sag('lenny', 'Wer nicht mitmacht, zahlt trotzdem. Regel.');
+    const x = await a.wahl(['„Nein. Ich hab nicht gewettet.“', '(Zwei Euro geben. Hauptsache Ruhe.)']);
+    if (x === 0) { await a.sag('lenny', '… Pfff. Geizig.'); await a.sag('e', '(Nicht geizig. Klar.)'); }
+    else { await a.sag('e', 'Zwei Euro weg. Für Ruhe, die nicht lange hält.'); await a.sag('lenny', 'Morgen wieder? Du zahlst ja gern.'); }
+    a.merke('sit_wette', x === 0 ? 'nein' : 'gezahlt');
+  }
+  // Pit trinkt weiter – und dann geht es ihm schlecht
+  await a.sag('e', 'Pit trinkt die dritte. Dann wird er ganz blass.');
+  await a.sag('pit', 'Mein Herz … das stolpert. Mir ist schwindelig.');
+  await a.sag('lenny', 'Der tut nur so. Pit, chill.');
+  const h = await a.wahl(['„Setz dich. Ich hol Wasser bei Lisette.“', '„Lenny, hol Hilfe. Jetzt.“', '„Mach langsam, dann wird’s schon besser.“']);
+  if (h === 1) { await a.sag('lenny', '(zögert) … Okay. Okay!'); await a.sag('e', 'Lenny rennt. Zum ersten Mal sieht er erschrocken aus.'); }
+  if (h === 2) { await a.sag('pit', 'Okay …'); await a.sag('e', 'Pit atmet flach. Du weißt nicht, ob das reicht.'); await a.sag('e', 'Tante Lisette kommt über die Straße. Sie hat alles gesehen.'); }
+  else await a.blende('Zwei Minuten später');
+  await a.sag('lisette', 'Hier, Wasser. Kleine Schlucke. Hinsetzen.');
+  await a.sag('lisette', 'Wenn das Herz weiter stolpert oder die Brust weh tut: 112.');
+  await a.sag('lisette', 'Ich ruf in der Schule an. Kein Ärger. Nur Bescheid.');
+  await a.sag('pit', '(nach einer Weile) Langsamer. Glaub ich.');
+  await a.sag('pit', 'Danke. Ich wollte nur nicht der sein, der verliert.');
+  const d = await a.wahl(['„Verloren hat heute die Dose.“', '„Kenn ich.“', '(Ihm die Wasserflasche hinhalten.)']);
+  await a.sag('pit', ['(lacht schwach) Die Dose. Ja.', 'Echt? Du auch?', '(trinkt) Danke.'][d]);
+  if (h !== 2) a.merke('pitGeholfen');
+  a.nachricht('Pit', 'Bin wieder okay. Keine Dosen mehr. Versprochen.');
+  a.deko('dosen', false);
+}
+
+// ================= Fast gewonnen (Lootbox-Druck, Eingangshalle) =================
+export async function kiste(a) {
+  await a.sag('rafa', 'Psst! Schau. Noch eine Kiste. Diesmal kommt der goldene Skin.');
+  await a.sag('e', 'Auf Rafas Handy dreht sich eine Truhe. Lichter. Musik. Trommelwirbel.');
+  await a.sag('e', 'Dann: ein grauer Hut. Gewöhnlich.');
+  await a.sag('rafa', 'NEIN! Fast! Der goldene war direkt daneben! Hast du gesehen?');
+  await a.sag('e', '(Direkt daneben. Wie jedes Mal?)');
+  await a.sag('rafa', 'Ich brauch nur 500 Diamanten. 4,99. Leihst du mir fünf Euro?');
+  const w = await a.wahl(['„Wie viel hast du schon reingesteckt?“', '„Okay. Fünf Euro.“', '„Das Spiel lässt dich extra fast gewinnen.“', '„Lass mich auch mal drücken!“']);
+  if (w === 0) {
+    await a.sag('rafa', '(zählt) … Paar Karten. Je zehn Euro. Fünfzehn Karten.');
+    await a.sag('e', 'Hundertfünfzig Euro. Rafa wird ganz still.');
+    await a.sag('rafa', 'Mein ganzes Geburtstagsgeld. Und ich schulde Leon noch dreißig.');
+    a.merke('sit_kiste', 'gefragt');
+  } else if (w === 1) {
+    a.merke('sit_kiste', 'geliehen');
+    await a.sag('e', 'Rafa tippt. Die Truhe dreht sich. Lichter. Musik.');
+    await a.sag('e', 'Ein blauer Schal. Selten. Nicht golden.');
+    await a.sag('rafa', 'Fast! Noch eine! Nur noch eine, dann hör ich auf.');
+    await a.sag('e', '(Deine fünf Euro sind weg. In zwölf Sekunden.)');
+    const x = await a.wahl(['„Nein. Das war die letzte.“', '(Noch mal fünf geben.)']);
+    if (x === 0) await a.sag('rafa', '(starrt aufs Handy) … Du hast recht. Glaub ich.');
+    else { await a.sag('e', 'Ein grauer Hut. Wieder.'); await a.sag('rafa', 'Das Spiel hasst mich.'); await a.sag('e', '(Das Spiel hasst niemanden. Es ist nur so gebaut.)'); a.merke('kisteZweimal'); }
+    await a.sag('rafa', 'Ich drück seit Wochen. Hundertfünfzig Euro sind schon drin.');
+  } else if (w === 2) {
+    await a.sag('rafa', 'Woher willst du das wissen?');
+    const x = await a.wahl(['„Frag Tiago. Der baut Spiele.“', '„Scroll mal zurück. Wie oft kam „fast“?“']);
+    if (x === 0) {
+      await a.blende('Im Informatikraum');
+      await a.sag('tiago', 'Kisten? Das ist Psychologie mit Lichtern.');
+      await a.sag('tiago', 'Das „fast“ ist oft extra so gebaut. Damit du weiterdrückst.');
+      await a.sag('tiago', 'In meinem Spiel gibt es keine Kisten. Nie.');
+      await a.sag('rafa', '… Dann bin ich voll reingefallen.');
+      await a.sag('tiago', 'Nicht du. Dein Gehirn. Das fällt bei allen drauf rein.');
+    } else {
+      await a.sag('rafa', '(scrollt) … Fast. Fast. Fast. Fast. Immer fast.');
+      await a.sag('e', '(Immer fast. Nie ganz. Das ist kein Zufall.)');
+    }
+    await a.sag('rafa', 'Hundertfünfzig Euro. Weg. Für einen grauen Hut.');
+    a.merke('sit_kiste', 'erklaert');
+  } else {
+    a.merke('sit_kiste', 'gedrueckt');
+    await a.sag('e', 'Du drückst. Lichter. Musik. Dein Bauch kribbelt.');
+    await a.sag('e', 'Ein grauer Hut. Aber der goldene war „direkt daneben“.');
+    await a.sag('e', '(Noch einmal. Nur einmal. Das Gefühl kennst du jetzt.)');
+    await a.sag('rafa', 'Siehst du? Man will sofort nochmal.');
+    await a.sag('rafa', 'Ich drück seit Wochen. Hundertfünfzig Euro sind schon drin.');
+  }
+  await a.sag('rafa', 'Wenn das rauskommt … Ich kann das keinem sagen.');
+  const h = await a.wahl(['„Komm, wir gehen zusammen zu Herrn Kuedes.“', '„Lösch die Karte aus dem Handy. Heute.“', '„Ruf BEE SECURE an. Anonym und kostenlos.“']);
+  if (h === 0) {
+    await a.sag('rafa', 'Zusammen? … Du kommst echt mit?');
+    await a.blende('In der SePAS');
+    await a.sag('kaya', 'Danke, dass ihr kommt. Rafa, das ist kein Weltuntergang.');
+    await a.sag('kaya', 'Wir schauen zusammen, wie du das mit dem Geld klärst.');
+    await a.sag('kaya', 'Und man kann Käufe im Handy sperren. Machen wir gleich.');
+    a.merke('kisteKuedes');
+  } else if (h === 1) {
+    await a.sag('rafa', 'Die Karte löschen … Dann kann ich nicht mehr einfach drücken.');
+    await a.sag('e', 'Rafa tippt lange. Dann: gelöscht.');
+    await a.sag('rafa', 'Und Leon? Die dreißig Euro?');
+    await a.sag('du', 'Herr Kuedes hilft. Ohne Ärger. Ich komm mit.');
+    await a.sag('rafa', 'Vielleicht. Morgen.');
+  } else {
+    await a.sag('e', 'BEE SECURE Helpline: 8002 1234. Kostenlos. Anonym.');
+    await a.sag('rafa', '(schreibt die Nummer auf die Hand) Okay.');
+  }
+  await a.sag('rafa', 'Danke. Du hast nicht gelacht.');
+  a.nachricht('Rafa', 'Heute nicht gedrückt. Tag eins. 💪');
+}
+
+// Rückblick im Journal: was in den Situationen passiert ist – neutral, ohne Noten (für Gespräche in der Klasse)
+const RUECKBLICK = {
+  wald: { nein: 'Nein gesagt. Laut.', gegangen: 'Umgedreht und gegangen.', ausrede: 'Mit einer Ausrede raus.', umgelenkt: 'Das Thema gewechselt.', mitgemacht: 'Mitgemacht. Und gespürt, wie es sich anfühlt.' },
+  laden: { weiter: 'Weitergegangen.', bezahlt: 'Bezahlt. Vor laufender Kamera.', gesagt: 'Tante Lisette Bescheid gesagt.', leer: 'Mit leeren Händen raus.', erwischt: 'Erwischt. Samstag Regale eingeräumt.', geklaut: 'Geklaut.' },
+  wette: { wippe: 'Eine andere Wette vorgeschlagen.', getrunken: 'Drei Dosen. Eine schlaflose Nacht.', gelesen: 'Die kleine Schrift vorgelesen.', nein: 'Nicht gewettet. Nicht gezahlt.', gezahlt: 'Gezahlt, um Ruhe zu haben.' },
+  graffiti: { gegangen: 'Die Dose zurückgegeben.', weggemacht: 'Zusammen weggewischt.', reden: 'Dex ermutigt, mit Noor zu reden.', verstanden: 'Dex zum Nachdenken gebracht.', papier: 'Auf Papier gezeichnet statt an der Wand.', kiesser: 'Dex zur großen Wand im Neubau geschickt.', gespruht: 'Gesprüht.' },
+  kiste: { gefragt: 'Gefragt, wie viel Geld schon drin ist.', geliehen: 'Geld geliehen.', erklaert: 'Erklärt, wie „fast“ gebaut ist.', gedrueckt: 'Selbst gedrückt.' },
+  vape: { raus: 'Rausgegangen, nichts gesagt.', gezogen: 'Einmal gezogen.', gelesen: 'Die kleine Schrift gelesen.', nein: 'Nein gesagt.' },
+  link: { eingeloggt: 'Eingeloggt. Konto weg.', geprueft: 'Den Link geprüft, bevor jemand tippt.' },
+  video: { weiter: 'Weitergegangen.', gelacht: 'Mitgelacht.', gefragt: 'Gefragt: Weiß sie das?', gespiegelt: 'Gefragt: Würdest du das wollen?' },
+  fest: { getrunken: 'Getrunken. Den Auftritt verpasst.', zurueck: 'Zurück zum Fest.', gefragt: 'Gefragt, was in der Flasche ist.', mitgenommen: 'Mika mit reingenommen.' },
+  halle: { gefilmt: 'Gefilmt.', handys: '„Handys runter“ gesagt.', hilfe: 'Hilfe geholt.', sami: 'Sich neben Sami gestellt.', mitte: 'Dazwischen gegangen.', zurueck: 'Einen Schritt zurück gemacht.' },
+};
+export function sitRueckblick(m) {
+  const out = [];
+  for (const [id, sz] of Object.entries(SZENEN)) {
+    const v = m['sit_' + id]; if (!v) continue;
+    let t = (RUECKBLICK[id] || {})[v] || 'Erlebt.';
+    if (id === 'laden' && m.zurueckgebracht) t += ' Und zurückgebracht.';
+    if (id === 'graffiti' && m.graffitiGesagt) t += ' Und es Noor gesagt.';
+    if (id === 'graffiti' && m.graffitiGeholfen) t += ' Und beim Schrubben geholfen.';
+    if (id === 'halle' && m.halleGeloescht) t += ' Dann gelöscht und entschuldigt.';
+    if (id === 'kiste' && m.kisteKuedes) t += ' Mit zur SePAS gegangen.';
+    if (id === 'wald' && m.mikaGeholfen) t += ' Mika geholfen.';
+    if (id === 'wette' && m.pitGeholfen) t += ' Pit geholfen.';
+    if (id === 'vape' && m.vapeKuedes) t += ' Kai zur SePAS begleitet.';
+    if (id === 'link' && (m.noeGeholfen || m.linkRepariert)) t += ' Passwort gerettet.';
+    if (id === 'video' && m.videoGeteilt) t += ' Und geteilt.';
+    if (id === 'video' && m.lenningGesagt) t += ' Mme Lenning Bescheid gesagt.';
+    if (id === 'fest' && m.mikaFestGeholfen) t += ' Bei Mika geblieben.';
+    out.push({ t: sz.titel[0] + ' ' + sz.titel[1], w: t });
+  }
+  return out;
+}
+
+// ================= Die Wolke (Vape im WC, ab Kapitel 8) =================
+// Kai ist schon abhängig und weiß es halb. Ines macht mit, weil Kai es macht.
+export async function vape(a) {
+  await a.sag('e', 'Im WC hängt eine süße Wolke. Erdbeere. Oder Mango.');
+  await a.sag('ines', '(versteckt etwas in der Hand) Ach, nur du. Schreck.');
+  await a.sag('kai', 'Willst du mal? Schmeckt wie Kaugummi. Ist kein Rauchen.');
+  await a.sag('e', 'Ein buntes Ding, klein wie ein Textmarker. Es blinkt.');
+  const w = await a.wahl(['„Was ist da eigentlich drin?“', '„Nee. Ich mag meine Lunge.“', '(Einmal ziehen. Ist ja nur Mango.)', '(Hände waschen. Nichts sagen. Raus.)']);
+  if (w === 3) {
+    await a.sag('e', 'Du wäschst die Hände. Das Wasser ist kalt.');
+    await a.sag('kai', '(ruft dir nach) Petz nicht!');
+    await a.sag('e', 'Du sagst nichts. Aber der Geruch klebt noch an deiner Jacke.');
+    a.merke('sit_vape', 'raus');
+    a.nachricht('Kai', 'Danke, dass du nix gesagt hast.');
+    return;
+  }
+  if (w === 2) {
+    a.merke('sit_vape', 'gezogen');
+    await a.blende('Zehn Sekunden später');
+    await a.sag('e', 'Süß. Dann kratzt es. Dir wird kurz schwindelig.');
+    await a.sag('e', 'Dein Herz klopft schneller. Das ist das Nikotin.');
+    await a.sag('kai', 'Siehst du? Nichts passiert.');
+    await a.sag('e', 'In der nächsten Stunde denkst du dran. Zweimal. Komisch.');
+    a.nachricht('Kai', 'Hast du Geld? Meins ist leer. Brauch ein neues.');
+    return;
+  }
+  if (w === 0) {
+    await a.sag('kai', 'Weiß nicht. Mango halt. Und so.');
+    await a.sag('ines', '(liest klein) „Enthält Nikotin. Macht sehr stark abhängig.“');
+    await a.sag('ines', '… Oh. Steht da wirklich.');
+    await a.sag('e', '(Oft so viel wie ein ganzes Päckchen Zigaretten. In einem Ding.)');
+    a.merke('sit_vape', 'gelesen');
+  } else {
+    await a.sag('kai', 'Boah. Okay, Oma.');
+    await a.sag('ines', '(lacht) Lass. Hat ja recht.');
+    await a.sag('e', 'Ines steckt das Ding weg. Nicht ganz überzeugt.');
+    a.merke('sit_vape', 'nein');
+  }
+  await a.sag('ines', 'Kai, hast du nicht letzte Woche gesagt, du hörst auf?');
+  await a.sag('kai', '…');
+  await a.sag('kai', '(leise) Ehrlich? Ich wach nachts auf und will dran ziehen.');
+  const h = await a.wahl(['„Klingt, als hätte das Ding dich im Griff.“', '„Herr Kuedes hilft. Zuerst hört er zu.“', '„Hör doch einfach auf.“']);
+  if (h === 0) {
+    await a.sag('kai', '… Ja. Vielleicht. Mit zwölf. Krass, oder?');
+    await a.sag('e', '(Das hat Kai noch keinem gesagt. Jetzt dir.)');
+    await a.sag('kai', 'Ich probier’s. Weniger. Erstmal.');
+  } else if (h === 1) {
+    await a.sag('kai', 'Und dann gibt’s Ärger.');
+    await a.sag('e', '(In der SePAS gibt es zuerst Zuhören. Das weißt du.)');
+    await a.sag('kai', 'Kommst du mit? Nur bis zur Tür.');
+    await a.blende('Vor der SePAS');
+    await a.sag('kaya', 'Kai. Komm rein. Danke, dass du ihn begleitest.');
+    await a.sag('kaya', 'Aufhören ist schwer. Allein noch schwerer. Dafür gibt es Hilfe.');
+    a.merke('vapeKuedes');
+  } else {
+    await a.sag('kai', 'Einfach. Klar.');
+    await a.sag('e', 'Kai lacht. Es klingt nicht lustig.');
+    await a.sag('e', '(Einfach ist es nicht. Das weiß Kai besser als du.)');
+  }
+  a.nachricht('Ines', 'Ich hab meins weggeworfen. Nur dass du’s weißt.');
+}
+
+// ================= Gratis (Fake-Link und gehacktes Konto, ab Kapitel 8 – passt zu „Fake oder echt?“) =================
+export async function link(a) {
+  await a.sag('noe', 'Hast du die Nachricht auch? Gratis-Diamanten! Fünftausend!');
+  await a.sag('e', 'Ein Link: „gratis-diamanten.win“. Ein Countdown: noch 2:59.');
+  await a.sag('noe', 'Man muss sich nur mit dem Spielkonto einloggen. Schnell!');
+  const w = await a.wahl(['„Wer hat das geschickt? Kennst du den?“', '„Wo führt der Link hin? Lass uns schauen.“', '(Auch einloggen. Fünftausend!)', '„Wer hat was davon, dass er Diamanten verschenkt?“']);
+  if (w === 2) {
+    a.merke('sit_link', 'eingeloggt');
+    await a.sag('e', 'Name. Passwort. „Login erfolgreich.“ Dann: nichts. Keine Diamanten.');
+    await a.blende('Am Abend');
+    await a.sag('e', 'Dein Konto schreibt Nachrichten. Nicht du. Gemeine Sachen. An deine Leute.');
+    a.nachricht('Gruppe', '??? Warum schreibst du sowas');
+    await a.blende('Am nächsten Morgen, im CDI');
+    await a.sag('noe', 'Bei mir auch. Seit gestern. Wir sind gehackt.');
+    const x = await a.wahl(['„Passwort ändern. Allen sagen: Das war ich nicht.“', '(Nichts sagen. Peinlich.)']);
+    if (x === 0) {
+      await a.sag('e', 'Neues Passwort. Lang. Nur für dieses Konto.');
+      await a.sag('e', 'Dann eine Nachricht an alle: „Gehackt. Das war nicht ich. Sorry.“');
+      a.nachricht('Gruppe', 'Ah okay, dachte schon 😅 Passiert');
+      await a.sag('e', '(Es dauert, bis alle es glauben. Aber sie glauben es.)');
+      a.merke('linkRepariert');
+    } else {
+      await a.sag('e', 'Du sagst nichts. Das Konto schreibt weiter. Zwei Leute antworten nicht mehr.');
+    }
+    await linkHilfe(a);
+    return;
+  }
+  if (w === 0) {
+    await a.sag('noe', '(scrollt) … „Diamanten_Support_Official“. Keine Ahnung, wer das ist.');
+    await a.sag('e', '(Kein Name. Kein Foto. Nur Eile.)');
+  } else if (w === 1) {
+    await a.sag('e', 'Ihr haltet den Finger auf den Link, ohne zu tippen.');
+    await a.sag('e', 'Die Adresse ist komisch. Nicht die vom Spiel. Mit „.win“ am Ende.');
+  } else {
+    await a.sag('noe', '… Niemand verschenkt was. Außer Oma.');
+    await a.sag('e', '(Wer hat was davon? Wer dein Passwort hat, hat dein Konto.)');
+  }
+  a.merke('sit_link', 'geprueft');
+  await a.sag('noe', '(wird blass) Ich hab mich gestern schon eingeloggt.');
+  await a.sag('noe', 'Seitdem schreibt mein Konto komische Sachen. An alle.');
+  const h = await a.wahl(['„Passwort ändern. Jetzt. Ich helf dir.“', '„Sag allen, dass du gehackt wurdest.“', '„Selber schuld.“']);
+  if (h === 2) {
+    await a.sag('noe', '… Danke auch.');
+    await a.sag('e', 'Noé dreht sich weg. Das Handy zittert in der Hand.');
+    await a.sag('e', '(Reinfallen kann jeder. Auch du. Nächstes Mal.)');
+    return;
+  }
+  await a.sag('e', h === 0 ? 'Ihr ändert das Passwort. Lang. Nur für dieses Konto.' : 'Noé schreibt: „Ich wurde gehackt. Das war nicht ich.“');
+  await a.sag('noe', '(atmet aus) Okay. Okay. Danke.');
+  a.merke('noeGeholfen');
+  await linkHilfe(a);
+}
+async function linkHilfe(a) {
+  await a.sag('e', 'Am schwarzen Brett im CDI hängt ein Zettel. Groß.');
+  await a.sag('e', '„Gehackt? BEE SECURE Helpline: 8002 1234. Kostenlos.“');
+  await a.sag('noe', 'Ich ruf da an. Mit dir daneben? Bitte.');
+}
+
+// ================= Das Video (Mme Lenning, ab Kapitel 9) =================
+export async function video(a) {
+  await a.sag('yanis', 'Schau! Die Lenning! Hahaha!');
+  await a.sag('e', 'Ein Video. Mme Lenning trägt eine Kiste. Sie stolpert. Blätter fliegen.');
+  await a.sag('e', 'Jemand hat Zirkusmusik drübergelegt. Und einen Clown-Filter.');
+  await a.sag('yanis', 'Zweitausend Aufrufe! Auf „annexe.memes“! Das ist von mir!');
+  await a.sag('z5', '(lacht) Nochmal! Die Stelle mit dem Schuh!');
+  const w = await a.wahl(['(Mitlachen. Ist ja witzig.)', '„Weiß sie das?“', '„Würdest du wollen, dass das von dir rumgeht?“', '(Nicht hinschauen. Weitergehen.)']);
+  if (w === 3) {
+    await a.sag('e', 'Du gehst weiter. Hinter dir läuft die Zirkusmusik nochmal.');
+    a.merke('sit_video', 'weiter');
+  } else if (w === 0) {
+    a.merke('sit_video', 'gelacht');
+    await a.sag('e', 'Du lachst. Alle lachen. Es fühlt sich kurz gut an.');
+    await a.sag('yanis', 'Teil’s in der Klasse! Dann knacken wir dreitausend!');
+    const x = await a.wahl(['(Teilen.)', '(Nicht teilen.)']);
+    if (x === 0) { a.merke('videoGeteilt'); a.nachricht('Gruppe', 'Du hast ein Video geteilt · 14 😂'); }
+  } else if (w === 1) {
+    await a.sag('yanis', '… Keine Ahnung. Ist doch egal.');
+    await a.sag('e', '(Ist es egal? Würde es dir egal sein?)');
+    a.merke('sit_video', 'gefragt');
+  } else {
+    await a.sag('yanis', 'Von mir gibt’s nichts Peinliches.');
+    await a.sag('z6', '(leise) Doch. Das vom Sportfest. Mit dem Hütchen.');
+    await a.sag('yanis', '… Das hast du gelöscht. Hast du versprochen.');
+    await a.sag('e', 'Yanis schaut lange auf sein Handy. Dann auf den Clown-Filter.');
+    a.merke('sit_video', 'gespiegelt');
+  }
+  // Mme Lenning kommt den Gang entlang
+  await a.sag('e', 'Da kommt Mme Lenning. Mit einer Kiste. Wie im Video.');
+  await a.sag('e', 'Yanis steckt das Handy weg. Zu schnell.');
+  await a.sag('lenning', 'Guten Morgen. Kann mir jemand die Tür aufhalten?');
+  const h = await a.wahl(['(Die Tür aufhalten.)', '(Die Tür aufhalten. Und leise sagen: „Da ist ein Video von Ihnen.“)', '(So tun, als hättest du nichts gehört.)']);
+  if (h === 2) {
+    await a.sag('e', 'Yanis hält die Tür auf. Er schaut auf den Boden.');
+    await a.sag('lenning', 'Merci, Yanis.');
+    await a.sag('e', '(Merci. Ausgerechnet.)');
+    return;
+  }
+  await a.sag('lenning', 'Merci.');
+  if (h === 1) {
+    a.merke('lenningGesagt');
+    await a.sag('lenning', '(bleibt stehen) … Ich weiß. Eine Kollegin hat es mir gezeigt.');
+    await a.sag('lenning', 'Ich hab gelacht. Später. Am Anfang nicht.');
+    await a.sag('lenning', 'Danke, dass du es mir sagst. Und nicht nur weiterschickst.');
+    await a.sag('yanis', '(sehr leise) … Ich lösch es. Heute noch.');
+    a.nachricht('Yanis', 'Gelöscht. War nicht so witzig wie gedacht.');
+  } else if (a.m().sit_video === 'gespiegelt' || a.m().sit_video === 'gefragt') {
+    await a.sag('e', 'Yanis schaut ihr nach. Dann tippt er. Lange.');
+    a.nachricht('Yanis', 'Hab das Video runtergenommen. Sag’s keinem.');
+  }
+}
+
+// ================= Die Wasserflasche (Sommerfest, Kapitel 10) – alte Bekannte, alte Entscheidungen =================
+export async function fest(a) {
+  const m = a.m();
+  await a.sag('e', 'Hinter der Turnhalle. Die Musik vom Fest wummert durch die Wand.');
+  await a.sag('moFest', '(hält eine Wasserflasche) Sommerfest-Spezial. Frag nicht, woher.');
+  await a.sag('e', 'Es riecht nicht nach Wasser.');
+  if (['nein', 'umgelenkt', 'gegangen'].includes(m.sit_wald) || ['kiesser', 'papier', 'reden', 'weggemacht'].includes(m.sit_graffiti)) {
+    await a.sag('e', 'Dex ist nicht da. Mo zuckt mit den Schultern.');
+    await a.sag('moFest', 'Dex ist drinnen. Zeigt seine Wand. Ist jetzt Künstler, oder so.');
+  }
+  await a.sag('mikaFest', m.mikaGeholfen ? '(sieht dich) Oh. Hi. Du schon wieder. Gut.' : '(leise) Hi.');
+  await a.sag('moFest', 'Mika hat schon. Zwei Schlucke. Mika ist mutig.');
+  await a.sag('e', 'Mika lacht zu laut. Die Augen sind glasig.');
+  const w = await a.wahl(['„Mika, kommst du mit rein? Noor spielt gleich.“', '„Was ist da drin, Mo?“', '(Einen Schluck. Ist ja Fest.)', '(Umdrehen. Zurück zum Fest.)']);
+  if (w === 2) {
+    a.merke('sit_fest', 'getrunken');
+    await a.blende('Eine halbe Stunde später');
+    await a.sag('e', 'Es brennt im Hals. Dann wird dir warm. Dann schlecht.');
+    await a.sag('e', 'Noors Trommel hörst du nur noch von weit weg.');
+    await a.sag('e', 'Du verpasst den Auftritt. Den, auf den alle gewartet haben.');
+    a.nachricht('Gilles', 'Wo warst du? Erste Reihe war frei. Für dich.');
+  } else if (w === 3) {
+    a.merke('sit_fest', 'zurueck');
+    await a.sag('e', 'Du gehst. Mika schaut dir nach. Lange.');
+  } else if (w === 1) {
+    await a.sag('moFest', 'Wodka mit Saft. Merkt keiner.');
+    await a.sag('e', '(Merkt keiner? Mika merkt es gerade. Sehr.)');
+    a.merke('sit_fest', 'gefragt');
+  } else {
+    a.merke('sit_fest', 'mitgenommen');
+    await a.sag('mikaFest', '… Echt? Mit dir?');
+    await a.sag('moFest', 'Geh doch. Langweiler.');
+    await a.sag('mikaFest', '(steht auf, wackelig) Ich wollte eigentlich nur nicht allein sein.');
+    await a.blende('Im Hof. Die Lampions brennen.');
+    await a.sag('e', 'Ihr holt Wasser. Echtes. Mika trinkt zwei Becher.');
+    await a.sag('e', 'Dann spielt Noor. Gilles singt. Mika klatscht. Zu früh. Egal.');
+    a.nachricht('Mika', 'Bestes Fest. Wegen dir. Echt jetzt.');
+    return;
+  }
+  if (w === 2) return;
+  // Mika geht es schlecht
+  await a.sag('e', 'Mika setzt sich auf den Boden. Dann legt Mika sich hin.');
+  await a.sag('mikaFest', '(lallt) Alles dreht sich … mir ist so schlecht.');
+  await a.sag('moFest', 'Oh nein. Ich bin weg. Ich war nie hier.');
+  await a.sag('e', 'Mo rennt. Die Flasche lässt er liegen.');
+  const h = await a.wahl(['(Bei Mika bleiben. Laut nach einem Erwachsenen rufen.)', '(Zum Fest rennen. Herrn Kuedes holen.)', '(Auch gehen. Nicht dein Problem.)']);
+  if (h === 2) {
+    await a.sag('e', 'Du gehst ein paar Schritte. Dann bleibst du stehen.');
+    await a.sag('e', 'Mika liegt da. Allein. Mit einem Bauch voller Wodka.');
+    const z = await a.wahl(['(Umdrehen. Zurück zu Mika.)', '(Weitergehen.)']);
+    if (z === 1) {
+      await a.sag('e', 'Fernand findet Mika zehn Minuten später. Er ruft 112.');
+      await a.sag('e', 'Mika geht es wieder gut. Aber es war knapp.');
+      a.merke('mikaAllein');
+      a.nachricht('Mika', 'Warum bist du gegangen?');
+      return;
+    }
+  }
+  await a.blende(h === 1 ? 'Eine Minute später' : 'Jemand hört dich');
+  await a.sag('kaya', 'Gut, dass du da bist. Mika, hörst du mich?');
+  await a.sag('mikaFest', '(murmelt) … Ja.');
+  await a.sag('kaya', 'Auf die Seite. So. Nicht allein lassen. Ich bleib jetzt hier.');
+  await a.sag('kaya', 'Wenn jemand nicht mehr richtig wach wird: sofort 112.');
+  await a.sag('kaya', '(zu dir) Du hast heute auf jemanden aufgepasst. Das vergisst man nicht.');
+  a.merke('mikaFestGeholfen');
+  a.nachricht('Mika', 'Danke. Ich weiß nicht mehr viel. Aber dass du da warst.');
 }

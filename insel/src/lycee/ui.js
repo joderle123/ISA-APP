@@ -17,7 +17,7 @@ export function createUI({ root, input, speech }) {
   const hinweis = el('button', 'ly-hinweis'); hinweis.type = 'button'; hinweis.hidden = true; hud.appendChild(hinweis);
   const toastBox = el('div', 'ly-toasts'); hud.appendChild(toastBox);
   const bingo = el('div', 'ly-bingo hud-interactive'); bingo.hidden = true; hud.appendChild(bingo);
-  const knoepfe = el('div', 'ly-knoepfe', '<button type="button" data-k="foto" title="Fotomodus (C)" aria-label="Fotomodus">📷</button><button type="button" data-k="raus" title="Kurz raus (P)" aria-label="Kurz raus">⏸</button><button type="button" data-k="journal" title="Journal (Tab)" aria-label="Journal">☰</button>'); hud.appendChild(knoepfe);
+  const knoepfe = el('div', 'ly-knoepfe', '<button type="button" data-k="handy" title="Handy: Nachrichten (N)" aria-label="Handy"><span>📱</span><i class="ly-badge" hidden></i></button><button type="button" data-k="foto" title="Fotomodus (C)" aria-label="Fotomodus">📷</button><button type="button" data-k="raus" title="Kurz raus (P)" aria-label="Kurz raus">⏸</button><button type="button" data-k="journal" title="Journal (Tab)" aria-label="Journal">☰</button>'); hud.appendChild(knoepfe);
   const mutEl = el('div', 'ly-mut'); mutEl.hidden = true; hud.appendChild(mutEl);   // Anspannung während einer Mutprobe
   const skateEl = el('div', 'ly-skate'); skateEl.hidden = true; hud.appendChild(skateEl);   // Skate-Session: Zeit, Punkte, Trick
   const skateKn = el('div', 'ly-skate-knoepfe hud-interactive'); skateKn.hidden = true; hud.appendChild(skateKn);
@@ -251,6 +251,7 @@ export function createUI({ root, input, speech }) {
     if ((e.code === 'KeyP' || e.code === 'Escape') && ebene.hidden && !dialogOffen) { e.preventDefault(); ui.onRaus && ui.onRaus(); return; }
     if (e.code === 'KeyM' && !dialogOffen && (ebene.hidden || ebene.dataset.art === 'karte')) { e.preventDefault(); if (ebene.dataset.art === 'karte') ebeneZu(); else ui.onKarte && ui.onKarte(); return; }
     if (art === 'karte' && e.code === 'Escape') { e.preventDefault(); ebeneZu(); return; }
+    if (e.code === 'KeyN' && ebene.hidden && !dialogOffen && !ui.fotoAn()) { e.preventDefault(); ui.onHandy && ui.onHandy(); return; }
     if (e.code === 'KeyC' && ebene.hidden && !dialogOffen && !ui.fotoAn()) { e.preventDefault(); ui.onFoto && ui.onFoto(); return; }
     if (!dialogOffen) return;
     // Taste hier verbrauchen: sonst sieht die Spielsteuerung dasselbe E und startet gleich das nächste Gespräch
@@ -260,6 +261,9 @@ export function createUI({ root, input, speech }) {
   }, true);
   dialog.addEventListener('click', (e) => { if (weiterFn && !e.target.closest('button')) weiterFn(); });
   akt.addEventListener('pointerdown', (e) => { e.preventDefault(); e.stopPropagation(); if (weiterFn) weiterFn(); else if (ui.onAktion) ui.onAktion(); });
+  knoepfe.querySelector('[data-k="handy"]').onclick = () => { if (ebene.hidden && !dialogOffen) ui.onHandy && ui.onHandy(); };
+  // Zähler für neue Nachrichten am Handy-Knopf
+  ui.handyNeu = (n) => { const b = knoepfe.querySelector('.ly-badge'); if (!b) return; b.hidden = !n; b.textContent = n > 9 ? '9+' : String(n || ''); };
   knoepfe.querySelector('[data-k="foto"]').onclick = () => { if (ebene.hidden && !dialogOffen) ui.onFoto && ui.onFoto(); };
   knoepfe.querySelector('[data-k="raus"]').onclick = () => { if (ebene.hidden && !dialogOffen) ui.onRaus && ui.onRaus(); else if (ebene.dataset.art === 'raus' && ui.rausZu) ui.rausZu(); };
   knoepfe.querySelector('[data-k="journal"]').onclick = () => { if (ebene.hidden) ui.onJournal && ui.onJournal(); else ebeneZu(); };
@@ -339,12 +343,14 @@ export function createUI({ root, input, speech }) {
         // Für den Unterricht: direkt in ein Kapitel einsteigen (ein Kapitel = ein Modul des Skills-Kurses)
         '<details class="ly-w-kap"><summary>Für Lehrpersonen: in einem Kapitel starten</summary><select data-kap>' +
         ['Kapitel 1 – von Anfang an', 'Kapitel 2', 'Kapitel 3', 'Kapitel 4', 'Kapitel 5', 'Kapitel 6', 'Kapitel 7', 'Kapitel 8', 'Kapitel 9', 'Kapitel 10'].map((t, i) => '<option value="' + (i + 1) + '">' + t + '</option>').join('') +
+        // Schwierige Situationen direkt ausprobieren (situationen.js liefert die Liste über ui.sitListe)
+        ((ui.sitListe || []).length ? '<optgroup label="Schwierige Situation ausprobieren">' + ui.sitListe.map((x) => '<option value="s:' + esc(x.id) + '">' + esc(x.titel) + ' (Kap. ' + x.ab + ')</option>').join('') + '</optgroup>' : '') +
         '</select><small>Frühere Entscheidungen gelten dann als „nicht getroffen“.</small></details>' +
         '<button type="button" class="ly-btn ly-primaer" data-a="start">Starten</button>');
       let wahl = 0;
       k2.querySelectorAll('[data-f]').forEach((x) => { x.onclick = () => { wahl = +x.dataset.f; k2.querySelectorAll('[data-f]').forEach((y) => y.classList.toggle('an', y === x)); }; });
       const inp = k2.querySelector('input');
-      k2.querySelector('[data-a="start"]').onclick = () => { const name = inp.value.replace(/[<>]/g, '').trim().slice(0, 16) || 'Sam'; ebeneZu(); ok({ neu: true, figur: wahl, name, kapitel: +(k2.querySelector('[data-kap]').value || 1) }); };
+      k2.querySelector('[data-a="start"]').onclick = () => { const name = inp.value.replace(/[<>]/g, '').trim().slice(0, 16) || 'Sam'; ebeneZu(); const kv = k2.querySelector('[data-kap]').value || '1'; ok({ neu: true, figur: wahl, name, kapitel: /^s:/.test(kv) ? 0 : +kv, situation: /^s:/.test(kv) ? kv.slice(2) : null }); };
       inp.addEventListener('keydown', (e) => { e.stopPropagation(); if (e.key === 'Enter') k2.querySelector('[data-a="start"]').click(); });
     }; });
    };
@@ -661,7 +667,7 @@ export function createUI({ root, input, speech }) {
     const taste = (e) => { if (!ebene.contains(k)) { document.removeEventListener('keydown', taste, true); return; } if (e.code === 'KeyE' || e.code === 'Enter' || e.code === 'Space') { e.preventDefault(); e.stopPropagation(); fertig(); } };
     document.addEventListener('keydown', taste, true);
     k.querySelector('[data-a="weg"]').onclick = fertig;
-    if (ui.wenigBewegung) alles(); else naechste();
+    if (ui.wenigBewegung || opts.sofort) { alles(); setTimeout(() => { verlauf.scrollTop = verlauf.scrollHeight; }, 30); } else naechste();
   });
 
   // Einlösen bei einer Figur: Liste mit Preis; Besitz ist markiert. Rückgabe: gewähltes Ding oder null

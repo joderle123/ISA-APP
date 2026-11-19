@@ -55,6 +55,8 @@ export const STAMM = [
         { t: '„Spiel es am Schulfest. Ich komm.“', merke: 'gillesLied', dann: [['s', 'Deal. Erste Reihe. Und du klatschst zuerst, ja?']] }] }],
     },
     reaktion: (m) => [   // Situationen (situationen.js): Gilles ist in der 5ème, wie Dex
+      m.sit_fest === 'getrunken' ? { key: 'stx_gilles_fest', zeilen: [['s', 'Du warst nicht beim Auftritt. Die erste Reihe war frei.'], ['s', 'Ich hab den letzten Vers trotzdem gesungen. Für dich.']] } : null,
+      m.sit_fest === 'mitgenommen' ? { key: 'stx_gilles_fest2', zeilen: [['s', 'Ich hab dich gesehen. Mit Mika, ganz vorne.'], ['s', 'Ihr habt zu früh geklatscht. Bestes Publikum ever.']] } : null,
       ['nein', 'gegangen', 'umgelenkt', 'ausrede'].includes(m.sit_wald) ? { key: 'stx_gilles_wald', zeilen: [['s', 'Dex hat erzählt, dass du an der Lichtung warst.'], ['s', 'Und dass du nicht mitgemacht hast.'],
         ['s', 'Ich kenn Dex seit der Grundschule. Er war mal anders.'], ['s', 'Du hast was gemacht, was ich mit zwölf nicht konnte.']] } : null,
       m.sit_wald === 'mitgemacht' ? { key: 'stx_gilles_wald2', zeilen: [['s', 'Ich hab das Video gesehen. Mo hat es rumgeschickt.'], ['s', 'Ich sag nix Schlaues. Nur: Ich stand auch mal da.'],
@@ -76,7 +78,7 @@ export const STAMM = [
         ['s', 'Danke fürs Mitmachen. Jede Woche.'], ['s', 'Du kommst auf Seite drei: „Treueste Leserschaft“.'], ['s', 'Ohne Namen natürlich. Aber du weißt es.']],
     },
     reaktion: (m) => [
-      m.sit_laden === 'geklaut' || m.sit_wald === 'mitgemacht' ? { key: 'stx_zoe_video', zeilen: [['s', 'Jemand wollte uns ein Video schicken. Für die Zeitung.'],
+      m.sit_laden === 'geklaut' || m.sit_wald === 'mitgemacht' || (m.sit_halle === 'gefilmt' && !m.halleGeloescht) ? { key: 'stx_zoe_video', zeilen: [['s', 'Jemand wollte uns ein Video schicken. Für die Zeitung.'],
         ['s', 'Wir drucken keine Videos. Schon gar nicht von Leuten aus der 7ème.'], ['s', 'Ich hab es gelöscht. Nur, dass du es weißt.']] } : null,
       m.geholfen >= 3 ? { key: 'stx_zoe_helfen', zeilen: [['s', 'Für die Annexe News: Hier hilft jemand ständig Leuten.'], ['s', 'Ohne Namen. Aber ich weiß, wer es ist.']] } : null,
     ],
@@ -194,6 +196,7 @@ export const STAMM = [
       10: [['s', 'Jahresbewertung. Kantine: vier Sterne.'], ['s', 'Die Leute hier: fünf.'], ['s', 'Das Essen war nie der Punkt. Hab ich jetzt gecheckt.']],
     },
     reaktion: (m) => [
+      m.sit_wette === 'wippe' ? { key: 'stx_lou_wippe', zeilen: [['s', 'Gerücht: Am Spielplatz gab es ein Wippen-Turnier. Statt Dosen.'], ['s', 'Fünf Sterne. Ich will nächstes Mal mitmachen.']] } : null,
       m.sit_laden === 'bezahlt' ? { key: 'stx_lou_bezahlt', zeilen: [['s', 'Gerücht: Jemand hat in der Épicerie bezahlt. Obwohl einer gefilmt hat.'], ['s', 'Fünf Sterne. Von fünf.']] } : null,
       m.dazugesetzt ? { key: 'stx_lou_dazu', zeilen: [['s', 'Ich hab gesehen, wie du dich zu wem gesetzt hast. Einfach so.'], ['s', 'Fünf Sterne. Nicht fürs Essen. Für dich.']] } : null,
     ],
@@ -224,6 +227,8 @@ export const STAMM = [
     reaktion: (m) => [
       m.huetchen >= 2 ? { key: 'stx_fernand_h2', zeilen: [['s', 'Beide Hütchen! Vierzig von vierzig.'], ['s', 'Weißt du, wie lange ich darauf gewartet hab? Merci.']] } : null,
       m.huetchen === 1 ? { key: 'stx_fernand_h1', zeilen: [['s', 'Du hast ein Hütchen zurückgebracht? Ich hab es gesehen.'], ['s', 'Neununddreißig. Eins ist noch auf der Flucht.']] } : null,
+      m.graffitiGeholfen ? { key: 'stx_fernand_wand', zeilen: [['s', 'Gute Arbeit am Bushäuschen. Deine Arme? Meine auch.'], ['s', 'Wer hilft, obwohl er nicht muss: Das merk ich mir.']] } : null,
+      m.sit_graffiti && m.sit_graffiti !== 'gespruht' ? { key: 'stx_fernand_wand2', zeilen: [['s', 'Am Bushäuschen war wieder einer. D3X.'], ['s', 'Ich kenn die Schrift. Der kann eigentlich zeichnen.']] } : null,
       m.sit_wald ? { key: 'stx_fernand_wald', zeilen: [['s', 'Jeden Montag räum ich die Lichtung auf. Dosen, Stummel, alles.'], ['s', 'Die denken, das räumt sich selbst auf.'],
         ['s', 'Tut es nicht. Das bin ich. Mit dem Rücken.']] } : null,
       m.lauschen ? { key: 'stx_fernand_lausch', zeilen: [['s', 'Du hast am Lehrerzimmer gelauscht. Hab ich gesehen.'], ['s', 'Keine Sorge. Mach ich auch. Wegen dem Joghurt.']] } : null,
@@ -258,6 +263,12 @@ export const STAMM = [
     reaktion: (m) => [
       m.bandMal ? { key: 'stx_noor_band', zeilen: [['s', 'Du hast getrommelt! Ich hab’s durch die Wand gehört.'], ['s', (m.bandRekord || 0) >= 70 ? 'Ehrlich: Das war gut. Echt gut.' : 'Laut. Mutig. Weiter üben. Mach ich auch.']] } : null,
     ],
+    reaktion: (m) => [   // Situation „Die Wand“: Noor hat letztes Jahr die Trommel im Bushäuschen gemalt
+      m.graffitiGesagt ? { key: 'stx_noor_wand1', zeilen: [['s', 'Die neue Trommel ist fertig. Mit deinen Farben.'], ['s', 'Ehrlich sein war schwer, oder? Für mich auch. Zuhören.'], ['s', 'Aber jetzt ist sie schöner als vorher.']] } : null,
+      m.sit_graffiti === 'reden' ? { key: 'stx_noor_wand2', zeilen: [['s', 'Dex hat sich entschuldigt. DEX! Bei mir!'], ['s', 'Er malt die Trommel neu. Ich sag ihm, welche Farben.']] } : null,
+      m.sit_graffiti === 'weggemacht' ? { key: 'stx_noor_wand3', zeilen: [['s', 'Meine Trommel im Bushäuschen ist jetzt rosa. Ein bisschen.'], ['s', 'Komisch. Gefällt mir sogar.']] } : null,
+      m.graffitiGeholfen ? { key: 'stx_noor_wand4', zeilen: [['s', 'Danke nochmal fürs Schrubben. Die Trommel mal ich neu.'], ['s', 'Willst du helfen? Du hast ja schon Übung.']] } : null,
+    ],
     nochmal: ['(trommelt auf den Tisch) Bumm-tschak.', 'Psst. Ich üb gerade Stufe drei.', 'Zu laut? Sag Bescheid.'],
   },
   {
@@ -290,6 +301,10 @@ export const STAMM = [
     reaktion: (m) => [
       m.drucker >= 4 ? { key: 'stx_tiago_druck', zeilen: [['s', 'Der Plastik-Bonbon ist fertig! Du hast zugeschaut?'], ['s', 'Dann bist du offiziell Zeuge. Ich trag dich ein.']] } : null,
       m.roboter ? { key: 'stx_tiago_rob', zeilen: [['s', 'Du hast meinen Roboter angemacht? Hat er „HALLO MENSCH“ gesagt?'], ['s', 'Hab ich ihm beigebracht. Ich bin stolz.']] } : null,
+    ],
+    reaktion: (m) => [   // Situation „Fast gewonnen“: Rafa und die Kisten
+      m.sit_link ? { key: 'stx_tiago_link', zeilen: [['s', 'Gratis-Diamanten? Das heißt Phishing. Wie Angeln. Und du bist der Fisch.'], ['s', 'Ich hab im Coding-Club eine Folie dazu gemacht. Drei Fragen.']] } : null,
+      m.sit_kiste ? { key: 'stx_tiago_kiste', zeilen: [['s', 'Rafa war bei mir. Wegen der Kisten.'], ['s', 'Mein Spiel hat jetzt einen Knopf: „Keine Kisten“.'], ['s', 'Er macht nichts. Aber er fühlt sich gut an.']] } : null,
     ],
     nochmal: ['Moment. Ich hab einen Fehler gefunden. Oder er mich.', 'Willst du testen? Ehrlich sagen, ja?', 'Speichern. Immer speichern.'],
   },

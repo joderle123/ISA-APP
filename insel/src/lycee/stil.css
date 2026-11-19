@@ -37,6 +37,8 @@ kbd { display: inline-block; min-width: 1.5em; padding: 0 .35em; margin-right: .
 .ly-a-dist { margin-left: 4px; padding: 1px 7px; border-radius: 99px; background: rgba(45, 61, 92, .08); font-size: 12.5px; font-weight: 800; color: var(--ink2); white-space: nowrap; }
 .ly-uhr { position: absolute; right: max(178px, calc(env(safe-area-inset-right) + 178px)); top: max(16px, env(safe-area-inset-top)); padding: 8px 13px; border-radius: 99px; background: var(--karte); box-shadow: var(--schatten); font-weight: 900; font-size: 16px; color: var(--blau); font-variant-numeric: tabular-nums; pointer-events: none; }
 .ly-knoepfe { position: absolute; right: max(14px, env(safe-area-inset-right)); top: max(12px, env(safe-area-inset-top)); display: flex; gap: 8px; }
+.ly-knoepfe button[data-k="handy"] { position: relative; }
+.ly-badge { position: absolute; top: -5px; right: -5px; min-width: 20px; height: 20px; padding: 0 5px; border-radius: 10px; background: #e85d75; color: #fff; font: 700 12px/20px system-ui, sans-serif; font-style: normal; box-shadow: 0 0 0 2px #fff; }
 .ly-knoepfe button { width: 46px; height: 46px; border: 0; border-radius: 14px; background: var(--karte); box-shadow: var(--schatten); font-size: 22px; color: var(--blau); cursor: pointer; }
 .ly-raum { position: absolute; left: 50%; top: 18%; transform: translate(-50%, -8px); padding: 8px 22px; border-radius: 99px; background: rgba(31, 42, 61, .78); color: #fff; font-size: 20px; font-weight: 900; letter-spacing: .02em; opacity: 0; transition: opacity .4s, transform .4s; pointer-events: none; white-space: nowrap; }
 .ly-raum.an { opacity: 1; transform: translate(-50%, 0); }
@@ -116,7 +118,8 @@ kbd { display: inline-block; min-width: 1.5em; padding: 0 .35em; margin-right: .
 .ly-j-staerken b { display: block; color: var(--blau); }
 .ly-j-zaehler { list-style: none; margin: 14px 0 0; padding: 10px 12px; display: flex; flex-direction: column; gap: 4px; border-radius: 12px; background: #fff7e8; border: 1px dashed var(--rand); }
 .ly-j-zaehler li { display: flex; justify-content: space-between; gap: 12px; font-size: 15px; }
-.ly-j-zaehler b { color: var(--blau); font-variant-numeric: tabular-nums; }
+.ly-j-zaehler b { color: var(--blau); font-variant-numeric: tabular-nums; text-align: right; }
+.ly-j-zaehler span { flex: 0 0 auto; }
 .ly-j-staerken b span { color: var(--leise); font-size: 13px; }
 .ly-j-staerken small { color: var(--ink2); font-weight: 600; font-size: 14px; }
 .ly-plan { width: 100%; border-collapse: collapse; font-size: 14px; font-weight: 700; }

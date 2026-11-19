@@ -18,8 +18,9 @@ import { baueWelt } from './welt.js';
 import { baueRequisiten, stelle } from './requisiten.js';
 import { baueNatur } from './natur.js';
 import { STAMM, stammSzene, stammPlan } from './stammgaeste.js';
-import { ORTE_UMLAND } from './dorf.js';
-import { SIT_LEUTE, sitSichtbar, SIT_ZONEN, lichtung, laden, zurueckbringen, sitSaetze } from './situationen.js';
+import { ORTE_UMLAND, DORF_DEKO, tagTextur } from './dorf.js';
+import { SIT_LEUTE, SZENEN, sitSichtbar, SIT_ZONEN, lichtung, laden, graffiti, halle, wette, kiste, vape, link, video, fest, zurueckbringen, sitSaetze, sitRueckblick } from './situationen.js';
+const SIT_FN = { wald: lichtung, laden, graffiti, halle, wette, kiste, vape, link, video, fest };
 import { createHund, HUND_ERSTMAL, HUND_MOMENTE } from './hund.js';
 import { ladePerson, namensschild, SITZ } from './figuren.js';
 import { fussSchatten, WOLKEN } from './texturen.js';
@@ -357,6 +358,13 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     { modell: 'menschen', stil: 'Casual', haut: '#9b6a45', haar: '#1b1410', oben: '#d9693f', unten: '#2d3748', schuhe: '#2b2b2b', hoehe: 1.7, steht: [19.7, -58.35, Math.PI, 'sitzt'] },
   ];
   // Stammgäste (stammgaeste.js): feste Orte, Namensschild, eigene Geschichte über das Jahr
+  // Leben im Dorf: Leute auf der Rue du Moulin, in der Gasse und eine Joggerin auf dem Waldweg
+  STATISTEN.push(
+    { modell: 'menschen', stil: 'Casual', haut: '#f0c9a8', haar: '#9a9a9a', oben: '#5a6b7a', unten: '#3a3f4b', schuhe: '#3a2a1c', hoehe: 1.72, weg: [[-24, 83], [26, 83.2], [52, 83], [96, 83.1]], tempo: 0.8 },
+    { modell: 'frauen', stil: 'Casual', haut: '#c68e64', haar: '#2b1d14', oben: '#c0392b', unten: '#2d3748', schuhe: '#f2f2f2', hoehe: 1.64, weg: [[90, 91], [50, 91.1], [20, 91], [-20, 91.1]], tempo: 1.0 },
+    { modell: 'menschen', stil: 'Casual2', haut: '#a0694a', haar: '#1b1410', oben: '#e9b949', unten: '#2d3748', schuhe: '#2b2b2b', hoehe: 1.76, weg: [[32, 47], [32.2, 70], [32, 82.6], [40, 83], [32, 82.6], [32.2, 70]], tempo: 1.05 },
+    { modell: 'frauen', stil: 'Adventurer', haut: '#f1c7a2', haar: '#c9a15a', oben: '#2fb8a8', unten: '#2b2b33', schuhe: '#e85d75', hoehe: 1.66, weg: [[-64, -8], [-63.8, -50], [-64, -88], [-63.8, -50]], tempo: 1.6 },
+  );
   for (const st of STAMM) STATISTEN.push({ ...st.aussehen, steht: [...st.steht], stamm: st.id });
   // Figuren der Situationen (situationen.js): Ältere an der Lichtung, Mika, Mo vor dem Laden, Tante Lisette in der Épicerie
   for (const [id, d] of Object.entries(SIT_LEUTE)) STATISTEN.push({ ...d.aussehen, steht: [...d.steht], sitPerson: id });
@@ -366,7 +374,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       const f = await ladePerson(veil, d);
       f.group.add(fussSchatten()); scene.add(f.group);
       if (d.stamm) { const sg = STAMM.find((q) => q.id === d.stamm); if (sg) f.group.add(namensschild(sg.name, sg.farbe)); }
-      if (d.sitPerson) { const sl = SIT_LEUTE[d.sitPerson]; f.group.add(namensschild(sl.name, sl.farbe)); }
+      if (d.sitPerson && !SIT_LEUTE[d.sitPerson].stumm) { const sl = SIT_LEUTE[d.sitPerson]; f.group.add(namensschild(sl.name, sl.farbe)); }
       const st = d.steht || (d.skate ? [d.skate[0], d.skate[2], Math.PI / 2] : null);
       const p = new THREE.Vector3(st ? st[0] : d.weg[0][0], 0, st ? st[1] : d.weg[0][1]);
       const x = { d, f, p, i: 1, warte: Math.random() * 3, h: { x: p.x, z: p.z, r: 0.3 }, richtung: 1 };
@@ -420,9 +428,18 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     });
     stammUmsetzen(uhr);
     sitSichtbarkeit();
+    // Neue Situation verfügbar: einmal eine Nachricht aufs Handy, die neugierig macht (wie ein Gruppenchat)
+    if (S && risikoAn()) { const kap = (SCHRITTE[S.schritt] || {}).kap || 1;
+      const sid = (SCHRITTE[S.schritt] || {}).id;
+      for (const [id, sz] of Object.entries(SZENEN)) if (sz.teaser && kap >= sz.ab && (!sz.schritt || sz.schritt === sid) && !S.merke['sit_' + id] && !S.merke['sitTeaser_' + id]) { S.merke['sitTeaser_' + id] = true; (S.merke.nachrichten = S.merke.nachrichten || []).push(...(Array.isArray(sz.teaser[0]) ? sz.teaser : [sz.teaser])); break; } }
     // Nachrichten aus Situationen (Gruppe, Sina, Mika …) kommen beim nächsten Schritt aufs Handy
+    if (S && S.merke && ui.handyNeu) ui.handyNeu(S.merke.handyNeu || 0);
     const nq = S && S.merke && S.merke.nachrichten;
-    if (nq && nq.length) { S.merke.nachrichten = []; nq.forEach(([von, t], i) => setTimeout(() => ui.toast('<b>📱 ' + von + '</b><span>' + t + '</span>'), 3500 + i * 2600)); sichern(); }
+    if (nq && nq.length) {
+      S.merke.nachrichten = []; S.merke.handyLog = (S.merke.handyLog || []).concat(nq.map(([von, t]) => { const st = SCHRITTE[S.schritt] || {}; return [von, t, 'Kapitel ' + (st.kap || 1) + (st.tag ? ' · ' + st.tag : '')]; })).slice(-40);
+      S.merke.handyNeu = (S.merke.handyNeu || 0) + nq.length; ui.handyNeu && ui.handyNeu(S.merke.handyNeu);
+      nq.forEach(([von, t], i) => setTimeout(() => ui.toast('<b>📱 ' + von + '</b><span>' + t + '</span>'), 3500 + i * 2600)); sichern();
+    }
   }
   // Situationen: wer ist gerade da (Kapitel, Schalter „Schwierige Situationen“, was schon passiert ist)
   const risikoAn = () => !ui.einstellungen || ui.einstellungen().risiko !== false;
@@ -431,10 +448,15 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     const kap = (SCHRITTE[S.schritt] || {}).kap || 1;
     for (const x of statisten) {
       if (!x.d.sitPerson) continue;
-      const v = sitSichtbar(x.d.sitPerson, kap, S.merke || {}, risikoAn(), S.schritt);
+      const v = sitSichtbar(x.d.sitPerson, kap, S.merke || {}, risikoAn(), S.schritt, (SCHRITTE[S.schritt] || {}).id);
       x.weg = !v; x.f.group.visible = v; if (x.f.group.children[0]) x.f.group.children[0].visible = v;
       x.h.x = v ? x.p.x : 1e5; x.h.z = v ? x.p.z : 1e5;
     }
+    // Spuren der Situationen in der Welt: Dosen am Spielplatz, Dex’ Kürzel am Bushäuschen
+    const m = S.merke || {}, an = (id) => statisten.some((q) => q.d.sitPerson === id && !q.weg);
+    if (DORF_DEKO.dosen) DORF_DEKO.dosen.visible = an('lenny');
+    if (DORF_DEKO.tagDex) DORF_DEKO.tagDex.visible = an('dexWand') || (['gegangen', 'verstanden', 'reden', 'kiesser', 'papier'].includes(m.sit_graffiti) && m.sitKap_graffiti === kap);
+    if (DORF_DEKO.tagDu && !DORF_DEKO.tagDu.userData.gemalt && S.name) { DORF_DEKO.tagDu.userData.gemalt = true; const t = DORF_DEKO.tagDu.material.map; DORF_DEKO.tagDu.material.map = tagTextur(THREE, S.name.slice(0, 3).toUpperCase(), '#e9b949'); t.dispose(); }
   }
   // Wanduhren zeigen die Spielzeit; die Uhr in der Halle geht drei Minuten nach – bis Fernand sie stellt (Stammgast, Kapitel 10)
   const uhrBild = { jetzt: null, halle: null }, uhrFlaechen = [];
@@ -1692,6 +1714,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     try { audio.setVolume(e.laut); audio.setMusicVolume(e.musik); } catch (x) { /* Ton noch nicht bereit */ }
     try { const b = audio.buses; if (b) { b.sfx.gain.value = e.effekte != null ? e.effekte : 0.9; b.amb.gain.value = e.umgebung != null ? e.umgebung : 0.8; } } catch (x) { /* noch kein Ton */ }
     try { speech.set('rate', 0.95 * (e.tempo || 1)); } catch (x) { /* keine Stimme */ }
+    try { if (S && statisten.length) sitSichtbarkeit(); } catch (x) { /* Welt noch nicht fertig */ }   // Schalter „Schwierige Situationen“ wirkt sofort
     try { if (e.grafik && e.grafik !== 'auto') rr.setQuality(e.grafik); else if (e.grafik === 'auto' && rr.qualityName) rr.setQuality(rr.qualityName, { enableAuto: true }); } catch (x) { /* alt */ }
   };
   // Lautstärken erst setzen, wenn der Ton bereit ist (nach der ersten Berührung)
@@ -1710,7 +1733,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (S.benSchuld) z.push({ t: 'Ben hat sich geliehen', w: S.benSchuld + ' €' });
     if (S.benZurueck) z.push({ t: 'Ben hat zurückgezahlt', w: S.benZurueck + ' €' });
     if (S.jetonsGesamt) z.push({ t: 'Jetons (jetzt / verdient)', w: (S.jetons || 0) + ' / ' + S.jetonsGesamt });
-    if (S.merke.situationen) z.push({ t: 'Schwierige Situationen erlebt', w: String(S.merke.situationen) });
+    if (S.merke.situationen) { z.push({ t: 'Schwierige Situationen erlebt', w: String(S.merke.situationen) }); z.push(...sitRueckblick(S.merke)); }
     if (S.merke.sit_laden === 'geklaut' && !S.merke.zurueckgebracht) z.push({ t: 'In der Jacke (nicht bezahlt)', w: 'Gummibärchen' });
     if (S.merke.automat) z.push({ t: 'Münzen im Automaten', w: String(S.merke.automat) });
     if (S.merke.korbRekord || S.merke.freiwurf) z.push({ t: 'Freiwurf-Rekord', w: Math.max(S.merke.korbRekord || 0, S.merke.freiwurf || 0) + ' von 5' });
@@ -1721,6 +1744,16 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (S.merke.geholfen) z.push({ t: 'Einfach geholfen', w: S.merke.geholfen + '×' });
     return z;
   }
+  // Handy (📱 / N): alle Nachrichten aus Gruppen und von Leuten, die du getroffen hast – sie bleiben, bis das Jahr vorbei ist
+  ui.onHandy = async () => {
+    if (!S || imGespraech || probe) return;
+    const log = S.merke.handyLog || [];
+    const liste = log.length ? [] : [{ system: true, text: 'Noch keine Nachrichten. Ist auch mal schön.' }];
+    let tagVorher = null;
+    for (const [von, t, tag] of log) { if (tag && tag !== tagVorher) { liste.push({ system: true, text: tag }); tagVorher = tag; } liste.push({ wer: von, text: t }); }
+    S.merke.handyNeu = 0; ui.handyNeu && ui.handyNeu(0); sichern();
+    await ui.handy(liste, { titel: '📱 Nachrichten', sofort: true });
+  };
   ui.onRaus = () => { if (!S || (imGespraech && !probe)) return; ui.kurzRaus(); };
   // Pausenmenü: aktuelles Ziel und „Ich stecke fest“ (zurück an den Anfang des Abschnitts, nichts geht verloren)
   ui.zielJetzt = () => { const st = S && SCHRITTE[S.schritt]; return st && !S.fertig ? { titel: st.titel, ziel: st.ziel } : null; };
@@ -1728,7 +1761,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (!S || imGespraech || !laeuft) return;
     const st = SCHRITTE[S.schritt], p = steuerung.pos;
     // Nur das Erdgeschoss-Gelände: Räume ohne „Stockwerk“-Angabe; doppelte Namen zusammen lassen
-    const MARKE = { bus: '🚌 Bus', hof: 'Schulhof', skateEcke: '🛹 Skate-Ecke', korbfeld: '🏀 Korb', tischtennis: '🏓 Tischtennis', sportplatz: '🏃 Sportplatz', innenhof: 'Innenhof', fahrrad: '🚲 Fahrräder', bank: 'Bank', lichtung: '🌲 Lichtung', epicerie: '🛒 Épicerie', spielplatz: '🛝 Spielplatz', rueMoulin: 'Rue du Moulin' };
+    const MARKE = { bus: '🚌 Bus', hof: 'Schulhof', skateEcke: '🛹 Skate-Ecke', korbfeld: '🏀 Korb', tischtennis: '🏓 Tischtennis', sportplatz: '🏃 Sportplatz', innenhof: 'Innenhof', fahrrad: '🚲 Fahrräder', bank: 'Bank', lichtung: '🌲 Lichtung', epicerie: '🛒 Épicerie', spielplatz: '🛝 Spielplatz', rueMoulin: 'Rue du Moulin', arretMoulin: '🚏 Bushäuschen' };
     // Stammgäste: mit 💬, solange diese Woche noch nicht besucht, bekannte mit Namen
     const kapK = (st && st.kap) || 1;
     const stammMarken = STAMM.map((q) => { const neu = !S.merke['stb_' + q.id + '_' + (Object.keys(q.besuch).map(Number).filter((k) => k <= kapK).sort((a, b) => b - a)[0])]; const wo = stammPlan(q, uhrJetzt).steht; return { x: wo[0], z: wo[1], t: (neu ? '💬 ' : '') + (S.merke['stk_' + q.id] ? q.name.split(' ')[0] : '?') }; });
@@ -2110,7 +2143,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   // ---------- Situationen (situationen.js): Lichtung, Épicerie – eigene Gespräche mit Abblende, Folgen, Nachrichten ----------
   const sitApi = () => ({
     sag: async (wer, t) => {
-      const L = SIT_LEUTE[wer], w = L ? { wer: L.name, farbe: L.farbe } : sprecher(wer === 'du' ? 'du' : wer === 'e' ? 'erzaehler' : wer);
+      const L = SIT_LEUTE[wer] || STAMM.find((q) => q.id === wer);
+      const w = wer === 'zu' ? { wer: 'Ein paar Leute', farbe: '#5b6472' } : L ? { wer: L.stumm ? 'Jemand' : L.name, farbe: L.farbe } : sprecher(wer === 'du' ? 'du' : wer === 'e' ? 'erzaehler' : wer);
       const x = statisten.find((q) => q.d.sitPerson === wer && !q.weg);
       if (x && x.f.redet) x.f.redet(true);
       await ui.sprich({ ...w, text: ersetze(t) });
@@ -2122,6 +2156,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     m: () => S.merke,
     nachricht: (von, t) => { (S.merke.nachrichten = S.merke.nachrichten || []).push([von, t]); },
     teleport: (ort) => { const o = welt.orte[ort]; if (o) steuerung.teleport(o.x, o.z, o.yaw); },
+    deko: (n, an) => { if (DORF_DEKO[n]) DORF_DEKO[n].visible = an; },
     ton,
   });
   async function sitGespraech(fn, gp) {
@@ -2136,23 +2171,26 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (sitLaeuft) return; sitLaeuft = true;
     try {
       await sitGespraech(async () => {
-        const a = sitApi();
-        if (id === 'wald') { await lichtung(a); S.merke.sitWaldSchritt = S.schritt; } else await laden(a);
+        const a = sitApi(), kap = (SCHRITTE[S.schritt] || {}).kap || 1;
+        await SIT_FN[id](a);
+        S.merke.sitWeg = { ...(S.merke.sitWeg || {}), [id]: S.schritt }; S.merke['sitKap_' + id] = kap;
+        if (!S.merke['sit_' + id]) S.merke['sit_' + id] = 'erlebt';
         S.merke.situationen = (S.merke.situationen || 0) + 1;
-        ui.toast(id === 'wald' ? '<b>🌲 Erlebt: Die Lichtung</b><span>Was du mitmachst, entscheidest du. Auch beim nächsten Mal.</span>'
-          : '<b>🛒 Erlebt: Die Mutprobe</b><span>Dazugehören darf nichts kosten, was du nicht geben willst.</span>', 'ly-t-ent');
+        const [ic, ti, tx] = SZENEN[id].titel;
+        ui.toast('<b>' + ic + ' Erlebt: ' + ti + '</b><span>' + tx + '</span>', 'ly-t-ent');
       });
     } finally { sitLaeuft = false; }
   }
   function sitZonen(p) {
     if (!S || !laeuft || imGespraech || probe || steuerung.brett || gesperrt() || !risikoAn()) return;
     const kap = (SCHRITTE[S.schritt] || {}).kap || 1;
-    for (const z of SIT_ZONEN) if (kap >= z.ab && z.offen(S.merke || {}) && Math.hypot(p.x - z.x, p.z - z.z) < z.r) { sitStart(z.id); return; }
+    const sid = (SCHRITTE[S.schritt] || {}).id;
+    for (const z of SIT_ZONEN) if (kap >= z.ab && (!z.schritt || z.schritt === sid) && z.offen(S.merke || {}) && Math.hypot(p.x - z.x, p.z - z.z) < z.r) { sitStart(z.id); return; }
   }
   async function sitRede(x) {
     const id = x.d.sitPerson, kap = (SCHRITTE[S.schritt] || {}).kap || 1, gp = x.f.group.position;
-    if ((id === 'mika' || id === 'dex' || id === 'sina' || id === 'mo') && !S.merke.sit_wald && kap >= 4) return sitStart('wald');
-    if (id === 'moLaden' && !S.merke.sit_laden) return sitStart('laden');
+    const sz = SIT_LEUTE[id].szene;
+    if (sz && SZENEN[sz] && !S.merke['sit_' + sz] && kap >= SZENEN[sz].ab && (!SZENEN[sz].schritt || SZENEN[sz].schritt === (SCHRITTE[S.schritt] || {}).id) && risikoAn()) return sitStart(sz);
     await sitGespraech(async () => {
       const a = sitApi();
       if (id === 'lisette' && S.merke.sit_laden === 'geklaut' && !S.merke.zurueckgebracht) {
@@ -2308,6 +2346,11 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     // Kurz notiert: Neues von den Stammgästen – manches reagiert auf das, was du getan hast
     const m = (S && S.merke) || {};
     const kurz = m.zurueckKap && (kap === m.zurueckKap || kap === m.zurueckKap + 1) ? 'Épicerie: Jemand kam zurück und hat bezahlt. Tante Lisette sagt: Respekt.'
+      : m.sit_graffiti === 'kiesser' && kap > (m.sitKap_graffiti || 99) ? 'Neubau: Die große Wand bekommt Farbe. Ein 5ème zeichnet vor.'
+      : m.sit_halle && kap === (m.sitKap_halle || 0) + 1 ? 'Streit gefilmt? Nicht teilen. Melden. Die Redaktion.'
+      : m.lenningGesagt && kap === (m.sitKap_video || 0) + 1 ? 'Der Account „annexe.memes“ ist weg. Danke an alle, die ihn gemeldet haben.'
+      : m.sit_link && kap === (m.sitKap_link || 0) + 1 ? 'Gratis-Diamanten? Fake! Drei Fragen: Wer? Wohin? Wer hat was davon?'
+      : m.sit_kiste && kap === (m.sitKap_kiste || 0) + 1 ? 'Coding-Club: Tiagos Spiel hat jetzt einen Knopf „Keine Kisten“.'
       : m.sit_wald && kap >= 5 && kap % 2 === 1 ? 'Forstverwaltung: Bitte keinen Müll an der Lichtung. Fernand dankt.'
       : (m.sit_laden === 'bezahlt' || m.sit_laden === 'gesagt') && kap === 6 ? 'Épicerie: Gummibärchen im Angebot. Bezahlt schmecken sie besser.'
       : m.huetchen >= 2 && kap >= 3 ? 'Beide Sportfest-Hütchen sind zurück! Fernand dankt der unbekannten Person.'
@@ -2572,7 +2615,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     iaNah = !naechste && !imGespraech && !probe && !steuerung.brett ? ia.naechste(p) : null;
     if (!naechste && !iaNah && !imGespraech && !probe && !steuerung.brett) iaNah = zufall.naechste(p);
     if (!naechste && !iaNah && !imGespraech && !probe && !steuerung.brett && Math.hypot(p.x - hund.pos.x, p.z - hund.pos.z) < 1.9) iaNah = { tu: 'hund', text: S.merke.hundFreund ? 'Bonbon streicheln' : 'Zu Bonbon gehen', x: hund.pos.x, z: hund.pos.z };
-    if (!naechste && !iaNah && !imGespraech && !probe && !steuerung.brett) { const st = statistNah(p); if (st) { const sg = (st.d.stamm && STAMM.find((q) => q.id === st.d.stamm)) || (st.d.sitPerson && SIT_LEUTE[st.d.sitPerson]); iaNah = { tu: 'statist', text: sg ? 'Mit ' + sg.name.split(' ')[0] + ' reden' : 'Hallo sagen', st, x: st.p.x, z: st.p.z }; } }
+    if (!naechste && !iaNah && !imGespraech && !probe && !steuerung.brett) { const st = statistNah(p); if (st) { const sg = (st.d.stamm && STAMM.find((q) => q.id === st.d.stamm)) || (st.d.sitPerson && SIT_LEUTE[st.d.sitPerson]); iaNah = { tu: 'statist', text: sg && !sg.stumm ? 'Mit ' + sg.name.split(' ')[0] + ' reden' : 'Hallo sagen', st, x: st.p.x, z: st.p.z }; } }
     ui.hinweis(naechste ? 'Mit ' + naechste.def.name + ' reden' : iaNah ? iaNah.text : null);
     if (!imGespraech && !gesperrt() && (input.state.actionTap || input.state.action)) { if (naechste) rede(naechste.id); else if (iaNah) aktion(iaNah); }
     // Orte, die etwas auslösen
@@ -2603,6 +2646,19 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   await statistenLaden();
   await schritt(0.9, 'Gleich klingelt es …');
   // Start
+  // Für Lehrpersonen: im passenden Kapitel starten, zum Ort springen, Situation beginnt (Ergebnis zählt wie im Spiel)
+  async function situationProbieren(w) {
+    const id = w.situation, sz = SZENEN[id];
+    S = neuerStand(w.name, w.figur);
+    S.schritt = Math.max(0, sz.schritt ? SCHRITTE.findIndex((x) => x.id === sz.schritt) : SCHRITTE.findIndex((x) => (x.kap || 1) === sz.ab));
+    S.merke['sitTeaser_' + id] = true; sichern();
+    await los(false);
+    for (let i = 0; i < 240 && (imGespraech || ui.ebeneArt()); i++) await new Promise((r) => setTimeout(r, 500));
+    if (sz.start) steuerung.teleport(sz.start.x, sz.start.z, sz.start.yaw);
+    sitSichtbarkeit();
+    await new Promise((r) => setTimeout(r, 1500));
+    if (!S.merke['sit_' + id]) sitStart(id);
+  }
   async function los(neu, figur, name, abKap) {
     if (neu) { S = neuerStand(name, figur); if (abKap > 1) S.schritt = Math.max(0, SCHRITTE.findIndex((x) => (x.kap || 1) === abKap)); sichern(); }
     await spielerFigur(S.figur);
@@ -2641,15 +2697,18 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   };
 
   onProgress(1, '');
+  if (test && params.get('sit') && SZENEN[params.get('sit')]) { situationProbieren({ situation: params.get('sit'), name: 'Sam', figur: +(params.get('figur') || 0) }); return window.LYCEE; }   // Test: Situation direkt
   if (test && params.get('start')) { await los(true, +(params.get('figur') || 0), 'Sam'); return window.LYCEE; }
   const lehrer = () => ui.lehrer({ paket, bereinige,
     speichern: (b) => { speicherePaket(b); paket = b; },
     zuruecksetzen: () => { speicherePaket(null); paket = GRUNDPAKET; } });
   ui.speicherName = () => speicherName();
+  ui.sitListe = Object.entries(SZENEN).map(([id, sz]) => ({ id, titel: sz.titel[0] + ' ' + sz.titel[1], ab: sz.ab }));
   const plaetze = () => [1, 2, 3].map((p) => { const s2 = lies(p); return s2 && s2.name ? { name: s2.name, kap: (SCHRITTE[s2.schritt] || {}).kap || 1, fertig: !!s2.fertig, zeit: s2.zeit || 0 } : null; });
   const w = await ui.titel({ gespeichert: !!(S && S.name), figuren: FIGUREN, lehrer, platz, plaetze,
     wechsle: (p) => { platz = p; try { localStorage.setItem('lycee.platz', String(p)); } catch (e) { /* privat */ } S = neuStart(lies()); return !!(S && S.name); } });
   if (w.weiter) await los(false);
+  else if (w.situation && SZENEN[w.situation]) await situationProbieren(w);   // Lehrperson: eine schwierige Situation direkt ausprobieren
   else await los(true, w.figur, w.name, w.kapitel);   // Lehrperson kann direkt in einem Kapitel starten
   return window.LYCEE;
 }
