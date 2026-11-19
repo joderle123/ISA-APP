@@ -9,7 +9,7 @@
 // Szene: Liste aus ['s', text] (Stammgast), ['du', text] (Spielfigur), ['e', text] (Erzähler)
 //        oder { wahl: [{ t, merke?, dann: [...] }] }.  {name} wird ersetzt.
 // Rückblick: eine Szene kann eine Funktion (merke) => Liste sein, um frühere Antworten aufzugreifen.
-// reaktion (optional) = (merke) => { key, zeilen } | null – einmalige Antwort auf etwas, das die Spielfigur in der Welt getan hat.
+// reaktion (optional) = (merke) => [{ key, zeilen } | null, …] – einmalige Antworten auf das, was die Spielfigur in der Welt getan hat.
 
 const UMFRAGE = {
   1: { frage: 'Erste Woche. Ein Wort für die Annexe?', opt: ['Groß', 'Laut', 'Eigentlich okay'], quote: [31, 44, 25] },
@@ -69,6 +69,9 @@ export const STAMM = [
       10: (m) => [...zoeErgebnis(9)(m), ['s', 'Letzte Ausgabe. Letzte Frage.'], ['s', UMFRAGE[10].frage], zoeFrage(10),
         ['s', 'Danke fürs Mitmachen. Jede Woche.'], ['s', 'Du kommst auf Seite drei: „Treueste Leserschaft“.'], ['s', 'Ohne Namen natürlich. Aber du weißt es.']],
     },
+    reaktion: (m) => [
+      m.geholfen >= 3 ? { key: 'stx_zoe_helfen', zeilen: [['s', 'Für die Annexe News: Hier hilft jemand ständig Leuten.'], ['s', 'Ohne Namen. Aber ich weiß, wer es ist.']] } : null,
+    ],
     nochmal: ['Die Ausgabe hängt Freitag an der Pinnwand.', 'Hast du eine Story für uns? Nur nette.', 'Psst. Nächste Woche: Umfrage über Hausaufgaben.'],
   },
   {
@@ -90,6 +93,10 @@ export const STAMM = [
       9: [['s', 'Diesmal hab ich nichts verloren. Ich bin nervös.'], ['s', 'Fühlt sich an, als ob gleich was passiert.']],
       10: [['e', 'Jeff steht vor der Fundkiste. Sie ist voll mit seinen Sachen.'], ['s', 'Wasserfall! Mein Schuh! Das Kabel! Die Mütze!'], ['s', 'Das ganze Jahr. In einer Kiste.'], ['s', 'Danke, dass du immer gefragt hast. Das war nett.'], ['s', '… Wo ist eigentlich mein Rucksack?']],
     },
+    reaktion: (m) => [
+      m.handyAbgegeben ? { key: 'stx_jeff_handy', zeilen: [['s', 'Du hast ein Handy ins Sekretariat gebracht? Hab ich gehört.'], ['s', 'Wenn ich was verliere, hoffe ich auf Leute wie dich.']] } : null,
+      m.fundkisteBlick >= 3 ? { key: 'stx_jeff_kiste', zeilen: [['s', 'Du schaust oft in die Fundkiste.'], ['s', 'Verlierst du auch Sachen? Willkommen im Club.']] } : null,
+    ],
     nochmal: ['Suchst du auch was? Wir könnten ein Team sein.', 'Fundkiste. Zweites Zuhause.', 'Wenn du was findest, ist es wahrscheinlich meins.'],
   },
   {
@@ -126,6 +133,9 @@ export const STAMM = [
       9: [['s', 'Du schläfst schlecht? Ich auch.'], ['s', 'Mit achtzig ist das normal. Mit zwölf nicht.'], ['s', 'Erzähl es wem. Einem von den Großen da drin.'], ['s', 'Die sind gut, glaub ich.']],
       10: [['s', 'Ein Jahr. Gerd ist frecher geworden. Ich langsamer. Du größer.'], ['s', 'Der Junge mit der Gitarre singt jetzt über Gerd. Endlich berühmt.'], ['s', 'Komm im September wieder vorbei. Gerd vergisst niemanden. Ich auch nicht.']],
     },
+    reaktion: (m) => [
+      m.geheimwort ? { key: 'stx_nik_gerd', zeilen: [['s', 'Gerd sagt, du kennst sein Geheimwort.'], ['s', '… Na gut. Tauben reden nicht. Aber er guckt so.']] } : null,
+    ],
     nochmal: ['Gerd! … Er ignoriert mich.', 'Der Bus ist wieder zu spät. Wie 1974.', 'Setz dich ruhig. Die Bank ist für alle.'],
   },
   {
@@ -164,6 +174,9 @@ export const STAMM = [
       9: [['s', 'Gemüse-Woche. Paulo hat erzählt, woher die Karotten sind.'], ['s', 'Schmeckt anders, wenn man es weiß.']],
       10: [['s', 'Jahresbewertung. Kantine: vier Sterne.'], ['s', 'Die Leute hier: fünf.'], ['s', 'Das Essen war nie der Punkt. Hab ich jetzt gecheckt.']],
     },
+    reaktion: (m) => [
+      m.dazugesetzt ? { key: 'stx_lou_dazu', zeilen: [['s', 'Ich hab gesehen, wie du dich zu wem gesetzt hast. Einfach so.'], ['s', 'Fünf Sterne. Nicht fürs Essen. Für dich.']] } : null,
+    ],
     nochmal: ['(kaut) Mmh. Vorläufig drei Sterne.', 'Psst. Die Pommes heute: Geheimtipp.', 'Setz dich, wenn du magst.'],
   },
   {
@@ -188,8 +201,11 @@ export const STAMM = [
       10: (m) => [['e', 'Fernand steht mit einer Leiter unter der Uhr.'], ['s', m.fernandUhr ? 'Weißt du noch? Drei Minuten. Seit 1998.' : 'Die Uhr hier ging drei Minuten nach. Seit 1998.'],
         ['s', 'Heute hab ich sie gestellt. Jetzt ist sie pünktlich.'], ['s', '… Ich vermiss die drei Minuten fast.'], ['s', 'Äddi für den Sommer. Und pass auf die Hütchen auf.']],
     },
-    reaktion: (m) => (m.huetchen >= 2 ? { key: 'stx_fernand_h2', zeilen: [['s', 'Beide Hütchen! Vierzig von vierzig.'], ['s', 'Weißt du, wie lange ich darauf gewartet hab? Merci.']] }
-      : m.huetchen === 1 ? { key: 'stx_fernand_h1', zeilen: [['s', 'Du hast ein Hütchen zurückgebracht? Ich hab es gesehen.'], ['s', 'Neununddreißig. Eins ist noch auf der Flucht.']] } : null),
+    reaktion: (m) => [
+      m.huetchen >= 2 ? { key: 'stx_fernand_h2', zeilen: [['s', 'Beide Hütchen! Vierzig von vierzig.'], ['s', 'Weißt du, wie lange ich darauf gewartet hab? Merci.']] } : null,
+      m.huetchen === 1 ? { key: 'stx_fernand_h1', zeilen: [['s', 'Du hast ein Hütchen zurückgebracht? Ich hab es gesehen.'], ['s', 'Neununddreißig. Eins ist noch auf der Flucht.']] } : null,
+      m.lauschen ? { key: 'stx_fernand_lausch', zeilen: [['s', 'Du hast am Lehrerzimmer gelauscht. Hab ich gesehen.'], ['s', 'Keine Sorge. Mach ich auch. Wegen dem Joghurt.']] } : null,
+    ],
     nochmal: ['Moien. Alles heil?', 'Wenn du eine Schraube findest: Die gehört mir.', 'Die Uhr geht immer noch nach. Ich weiß.'],
   },
   {
@@ -217,6 +233,9 @@ export const STAMM = [
       10: (m) => [['e', 'Schulfest. Noor sitzt hinter dem Schlagzeug. Gilles stimmt die Gitarre.'], ['s', m.noorZuhoeren ? 'Du warst mein erstes Publikum. Weißt du noch?' : 'Ein ganzes Jahr. Von null Leuten bis zu allen.'],
         ['s', 'Bleib vorne, ja? Dann schau ich dich an. Nicht die anderen.'], ['e', 'Bumm. Tschak. Bumm-bumm. Tschak. Alle klatschen im Takt.']],
     },
+    reaktion: (m) => [
+      m.bandMal ? { key: 'stx_noor_band', zeilen: [['s', 'Du hast getrommelt! Ich hab’s durch die Wand gehört.'], ['s', (m.bandRekord || 0) >= 70 ? 'Ehrlich: Das war gut. Echt gut.' : 'Laut. Mutig. Weiter üben. Mach ich auch.']] } : null,
+    ],
     nochmal: ['(trommelt auf den Tisch) Bumm-tschak.', 'Psst. Ich üb gerade Stufe drei.', 'Zu laut? Sag Bescheid.'],
   },
   {
@@ -246,6 +265,10 @@ export const STAMM = [
         return [['s', 'Es ist fertig. „' + n + '“. Version eins.'], ['e', 'Abspann. Ganz unten, klein: „Testperson Nr. 1 – danke!“'],
           ['s', 'Das bist du. Du hast als Erstes gespielt.'], ['s', 'Nächstes Jahr: Version zwei. Mit Rückwärtslaufen. Als Extra.']]; },
     },
+    reaktion: (m) => [
+      m.drucker >= 4 ? { key: 'stx_tiago_druck', zeilen: [['s', 'Der Plastik-Bonbon ist fertig! Du hast zugeschaut?'], ['s', 'Dann bist du offiziell Zeuge. Ich trag dich ein.']] } : null,
+      m.roboter ? { key: 'stx_tiago_rob', zeilen: [['s', 'Du hast meinen Roboter angemacht? Hat er „HALLO MENSCH“ gesagt?'], ['s', 'Hab ich ihm beigebracht. Ich bin stolz.']] } : null,
+    ],
     nochmal: ['Moment. Ich hab einen Fehler gefunden. Oder er mich.', 'Willst du testen? Ehrlich sagen, ja?', 'Speichern. Immer speichern.'],
   },
 ];
@@ -259,8 +282,8 @@ export function stammSzene(st, kap, merke, ortSaetze) {
     const sz = st.besuch[k];
     return { neu: true, key, zeilen: typeof sz === 'function' ? sz(merke) : sz };
   }
-  const rk = st.reaktion && st.reaktion(merke);   // Reaktion auf etwas, das die Spielfigur getan hat (einmal)
-  if (rk && !merke[rk.key]) { merke[rk.key] = true; return { neu: false, zeilen: rk.zeilen }; }
+  const rk = (st.reaktion ? [].concat(st.reaktion(merke) || []) : []).find((q) => q && !merke[q.key]);   // Reaktion auf etwas, das die Spielfigur getan hat (je einmal)
+  if (rk) { merke[rk.key] = true; return { neu: false, zeilen: rk.zeilen }; }
   const n = (merke['stn_' + st.id] = (merke['stn_' + st.id] || 0) + 1);
   const pool = ortSaetze && ortSaetze.length ? ortSaetze : st.nochmal;
   return { neu: false, zeilen: [['s', pool[n % pool.length]]] };
