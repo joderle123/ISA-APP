@@ -202,11 +202,12 @@ check('Im selben Abschnitt: nur kurz plaudern', !/Geschäftsmodell|Investor/.tes
 for (let i = 0; i < 20 && await L(() => LYCEE.imGespraech); i++) { const opt = await page.$$('.ly-d-optionen button'); if (opt.length) await opt[i % opt.length].click(); else await page.keyboard.press('KeyE'); await page.waitForTimeout(300); }
 
 // Tischtennis auf dem Hof: Spiel öffnet sich; ohne Schlag sind die drei Bälle weg, das Spiel endet von selbst
-await page.waitForFunction(() => !LYCEE.imGespraech); await page.waitForTimeout(800);
+// alles Offene schließen (Bens zufällige Quizfrage kann noch offen sein)
+for (let i = 0; i < 40 && await L(() => LYCEE.imGespraech || !!document.querySelector('.ly-dialog:not([hidden]), .ly-ebene:not([hidden])')); i++) { const opt = await page.$$('.ly-d-optionen button'); if (opt.length) await opt[0].click(); else await page.keyboard.press('KeyE'); await page.waitForTimeout(300); }
+await page.waitForTimeout(800);
 await geheZu({ tu: 'tischtennis' }); await page.waitForFunction(() => LYCEE.iaNah === 'tischtennis', null, { timeout: 30000 }).catch(() => {});
-await page.keyboard.press('KeyE');
-await page.waitForSelector('.ly-k-spiel canvas', { timeout: 20000 }).catch(() => {});
-check('Tischtennis: Spielfeld offen', /Tischtennis/.test(await page.textContent('.ly-ebene')));
+for (let v = 0; v < 3 && !(await page.$('.ly-k-spiel canvas')); v++) { await page.keyboard.press('KeyE'); await page.waitForSelector('.ly-k-spiel canvas', { timeout: 7000 }).catch(() => {}); }
+check('Tischtennis: Spielfeld offen', /Tischtennis/.test(await page.textContent('.ly-ebene')), await L(() => ({ iaNah: LYCEE.iaNah, gespr: LYCEE.imGespraech, ebene: LYCEE.ui.ebeneArt(), dlg: ((document.querySelector('.ly-dialog:not([hidden])') || {}).textContent || '').slice(0, 100), hinweis: (document.querySelector('.ly-hinweis') || {}).textContent, pos: [LYCEE.steuerung.pos.x, LYCEE.steuerung.pos.z], frei: LYCEE.steuerung.frei, sitzt: LYCEE.steuerung.sitzt, tt: LYCEE.zustand.merke.ttRekord })));
 await page.waitForTimeout(1500); await bild('i6-tischtennis');
 await page.waitForFunction(() => !document.querySelector('.ly-k-spiel'), null, { timeout: 60000 }).catch(() => {});
 check('Tischtennis endet nach drei Bällen, Rekord gespeichert', (await L(() => LYCEE.zustand.merke.ttRekord)) === 0);
