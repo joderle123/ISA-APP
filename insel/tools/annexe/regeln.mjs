@@ -50,8 +50,10 @@ for (const x of T) {
   for (const [name, re] of VERBOTEN) if (re.test(x.text)) fehler.push(['verboten (' + name + ')', ort(x)]);
   if (ERWACHSEN.includes(x.wer) && SLANG.test(x.text)) hinweise.push(['Jugendsprache bei Erwachsenen (gewollt?)', ort(x)]);
   for (const re of THERAPIE) if (re.test(x.text)) fehler.push(['Therapie/Moral', ort(x)]);
-  if (FREMD.test(x.text)) fehler.push(['Einwurf nicht auf der Liste', ort(x)]);
-  const ein = [...x.text.matchAll(EINWURF_RE)].map((m) => m[2]);
+  // Stammgäste (stammgaeste.js) sprechen ihre Sprache mit Absicht (Rosa Luxemburgisch, Paulo Portugiesisch): keine Einwurf-Regel
+  const eigeneSprache = x.datei.endsWith('stammgaeste.js');
+  if (!eigeneSprache && FREMD.test(x.text)) fehler.push(['Einwurf nicht auf der Liste', ort(x)]);
+  const ein = eigeneSprache ? [] : [...x.text.matchAll(EINWURF_RE)].map((m) => m[2]);
   if (ein.length) {
     const k = x.datei + '#' + x.block; einwuerfeJeBlock.set(k, (einwuerfeJeBlock.get(k) || []).concat(ein.map((e) => [e, x])));
     if (EIN_JE_FIGUR && x.wer !== 'du' && x.wer !== 'erzaehler') {

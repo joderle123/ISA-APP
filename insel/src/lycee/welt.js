@@ -7,6 +7,7 @@ import * as THREE from 'three';
 import { pflaster, rasen, asphalt, flaeche, fliesen as fliesenTex, dielen, sportParkett } from './texturen.js';
 import { baueCampus, baueCampus2, ORTE_CAMPUS, ORTE_CAMPUS2 } from './campus.js';
 import { baueDetails } from './details.js';
+import { baueEinrichtung } from './einrichtung.js';
 
 export const DECKE = 3.6;            // Deckenhöhe innen
 const HAUS_H = 8.6;                 // Außenwand Haupthaus (zwei Stockwerke)
@@ -677,7 +678,7 @@ export function baueWelt({ material, materialInnen, materialLaub }) {
     box(fx - 0.55, fx + 0.55, 0, 0.08, fz - 0.4, fz + 0.4, HOLZ, { art: 'innen', stoss: true });
     for (const [a0, a1, b0, b1] of [[-0.55, 0.55, -0.4, -0.34], [-0.55, 0.55, 0.34, 0.4], [-0.55, -0.49, -0.4, 0.4], [0.49, 0.55, -0.4, 0.4]]) box(fx + a0, fx + a1, 0.08, 0.62, fz + b0, fz + b1, HOLZ, { art: 'innen', stoss: true, kanten: 0.85 });
     const fk = schild('FUNDKISTE · Objets trouvés', 1.3, 0.3, { bg: '#ffffff', fg: '#2b3a55', rand: '#2b3a55', schrift: 'bold 64px system-ui' }); fk.position.set(fx, 1.25, -13.82); schilder.push(fk);
-    for (const [m, dx, dz, h, y, r] of [['kk/umbrella_blue', -0.3, -0.1, 1.0, 0.1, 0.3], ['kk/umbrella_pink', -0.15, 0.15, 0.95, 0.1, -0.4], ['kk/bicycle_helmet', 0.25, -0.1, 0.22, 0.45, 0.6], ['kk/waterbottle_A', 0.3, 0.18, 0.25, 0.42, 0], ['kk/cat_headphones_A', 0.05, 0.05, 0.14, 0.55, 1.2], ['kk/comicbook_A', -0.05, -0.2, 0.05, 0.6, 0.4]])
+    for (const [m, dx, dz, h, y, r] of [['kk/umbrella_blue', -0.3, -0.1, 0.62, 0.3, 0.3], ['kk/umbrella_pink', -0.12, 0.15, 0.58, 0.3, -0.4], ['kk/bicycle_helmet', 0.25, -0.1, 0.22, 0.45, 0.6], ['kk/waterbottle_A', 0.3, 0.18, 0.25, 0.42, 0], ['kk/cat_headphones_A', 0.05, 0.05, 0.14, 0.55, 1.2], ['kk/comicbooks_stacked', -0.05, -0.2, 0.04, 0.6, 0.4]])
       plaetze.push({ m, x: fx + dx, z: fz + dz, rot: r, h, y });
     // Zoés Zeitungsständer: „Annexe News“ mit Titelblatt
     box(-3.4, -3.3, 0, 1.3, -7.6, -7.5, C.metallDunkel, { art: 'innen', stoss: true }); box(-3.75, -2.95, 1.0, 1.55, -7.62, -7.56, new THREE.Color('#ffffff'), { art: 'innen' });
@@ -719,6 +720,7 @@ export function baueWelt({ material, materialInnen, materialLaub }) {
     extra: (m) => extras.push(m) });
   // Details und Atmosphäre: Plakate, Kreide, Uhren, Ranzen, Lampen, Kübel mit Bäumen, Kontaktschatten (details.js)
   const details = baueDetails({ B, P, schilder, C, uhrTextur, raeume, plaetze, DECKE, extra: (m) => extras.push(m) });
+  baueEinrichtung({ B, P, C, schild, schilder, stuhl, DECKE });
   if (details.tischtennis) orte.tischtennis = { ...details.tischtennis, yaw: Math.PI / 2 };
 
   // Netze zusammenfassen: fest (wirft Schatten), innen (Innenausbau, Böden, kein Schatten), glas

@@ -2093,8 +2093,12 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   const saison = new THREE.Points(saisonGeo, saisonMat); saison.frustumCulled = false; saison.visible = false; scene.add(saison);
   const SAISON = { laub: { farbe: 0xd9822b, fall: 0.7, wind: 0.9, groesse: 0.1 }, schnee: { farbe: 0xffffff, fall: 0.55, wind: 0.35, groesse: 0.07 }, blueten: { farbe: 0xf6c1d4, fall: 0.45, wind: 0.8, groesse: 0.07 } };
   let saisonT = 0;
+  // Deko je Monat (requisiten.js, plaetze mit saison): Kürbisse im Oktober, Weihnachten im Dezember, Winter bis Februar
+  const DEKO_KAP = { herbst: [3, 4], halloween: [3], weihnacht: [5], winter: [5, 6], fruehling: [7, 8], sommer: [9, 10] };
+  let dekoKap = -1;
   function saisonTick(dt) {
     const kap = (S && SCHRITTE[S.schritt] && SCHRITTE[S.schritt].kap) || 1;
+    if (kap !== dekoKap && req.saison) { dekoKap = kap; for (const [k, m] of Object.entries(req.saison)) m.visible = (DEKO_KAP[k] || []).includes(kap); }
     const art = kap <= 4 ? 'laub' : kap <= 6 ? 'schnee' : kap <= 8 ? 'blueten' : null, A = art && SAISON[art];
     const draussen = !welt.raumBei(steuerung.pos.x, steuerung.pos.z);
     const ziel = laeuft && A && draussen && !(sky.night > 0.5) && regenJetzt < 0.1 ? 0.9 : 0;

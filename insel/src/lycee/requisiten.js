@@ -80,12 +80,13 @@ export function stelle(geo, p) {
 
 export async function baueRequisiten({ welt, material, scene }) {
   const geo = await ladeRequisiten();
-  const fest = [], eigene = {}, fehlt = [];
+  const fest = [], eigene = {}, fehlt = [], saisonGeo = {};
   for (const p of welt.plaetze) {
     if (p.m.startsWith('natur/')) continue;   // natur.js (Texturen, Instanzen)
     const quelle = geo[p.m];
     if (!quelle) { fehlt.push(p.m); continue; }
     const g = stelle(quelle, p);
+    if (p.saison) { (saisonGeo[p.saison] = saisonGeo[p.saison] || []).push(g); continue; }   // Deko je Jahreszeit: eigenes Netz, sichtbar je Kapitel
     const bb = g.boundingBox;
     if (p.fest === undefined && AUTOFEST[p.m] !== undefined) p.fest = AUTOFEST[p.m];   // Dinge, durch die man nicht laufen soll
     if (p.fest === true) welt.kasten.push({ x0: bb.min.x + 0.05, x1: bb.max.x - 0.05, z0: bb.min.z + 0.05, z1: bb.max.z - 0.05, y0: bb.min.y, y1: bb.max.y });
@@ -101,6 +102,8 @@ export async function baueRequisiten({ welt, material, scene }) {
   const mesh = new THREE.Group(); mesh.name = 'requisiten';
   for (const g of zellenMerge(fest, 24)) { const m = new THREE.Mesh(g, material); m.name = 'requisiten-zelle'; m.castShadow = true; m.receiveShadow = true; mesh.add(m); }
   scene.add(mesh);
+  const saison = {};
+  for (const [k, gs] of Object.entries(saisonGeo)) { const m = new THREE.Mesh(mergeAll(gs), material); m.name = 'saison-' + k; m.visible = false; m.castShadow = true; m.receiveShadow = true; scene.add(m); saison[k] = m; }
   if (fehlt.length) console.warn('Lycée: Modelle fehlen', [...new Set(fehlt)]);
-  return { mesh, eigene, fehlt, geo };
+  return { mesh, eigene, fehlt, geo, saison };
 }
