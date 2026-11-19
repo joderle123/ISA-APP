@@ -717,6 +717,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (/^(„)?(nein|nee|nö|nope|auf keinen fall|niemals)\b/.test(s)) return 'schuetteln';
     if (/\((zuckt|schulterzucken)|^(„)?(keine ahnung|weiß nicht|weiss nicht|egal|vielleicht|mal sehen)\b/.test(s)) return 'zucken';
     if (/\?(“|\))?\s*$/.test(s) && s.length < 90) return 'neigen';
+    if (s.length > 55) return 'erklaeren';   // längere Sätze: Hand erklärt mit
     return null;
   }
   // Blick: die beteiligte Person dreht sich zum Spieler

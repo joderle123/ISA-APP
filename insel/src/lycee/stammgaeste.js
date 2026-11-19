@@ -78,6 +78,9 @@ export const STAMM = [
     id: 'jeff', ort: 'Eingangshalle, Fundkiste', steckbrief: 'Verliert jede Woche etwas. Gibt nie auf.', name: 'Jeff (6ème)', farbe: '#3f78b8',
     aussehen: { modell: 'menschen', stil: 'Casual', haut: '#f1c7a2', haar: '#d9b36a', oben: '#3f78b8', unten: '#3a3f4b', schuhe: '#e85d75', hoehe: 1.6, kopf: 'cap', kopfFarbe: '#e9b949' },
     steht: [5.4, -12.1, Math.PI / 2, 'handy'],
+    plan: [{ ab: 0, ort: 'Eingangshalle, Fundkiste', steht: [5.4, -12.1, Math.PI / 2, 'handy'] },
+      { ab: 12.0, ort: 'Mittags: Lesesaal, am Bücherwagen', steht: [24.2, -64.8, 2.43, 'handy'], saetze: ['Hast du hier ein Buch gesehen? Blau. Oder grün. Mit Drachen.', 'Ich hab ein Buch ausgeliehen. Dann das Buch verloren. Dann den Ausweis.'] },
+      { ab: 13.5, ort: 'Eingangshalle, Fundkiste', steht: [5.4, -12.1, Math.PI / 2, 'handy'] }],
     besuch: {
       1: [['s', 'Hast du eine grüne Trinkflasche gesehen? Sie heißt Wasserfall.'], { wahl: [
         { t: '„Wo warst du zuletzt mit ihr?“', merke: 'jeffTipp', dann: [['s', '… Sport. Dann Kantine. Dann … oh.'], ['s', 'Kantine! Danke! Zurückdenken. Genial.']] },
@@ -160,6 +163,8 @@ export const STAMM = [
     id: 'lou', ort: 'Kantine, hinterer Tisch', steckbrief: 'Bewertet jedes Essen mit Sternen. Und irgendwann die Leute.', name: 'Lou (6ème)', farbe: '#d9693f',
     aussehen: { modell: 'frauen', stil: 'Casual', haut: '#e0b48c', haar: '#5a3a24', oben: '#d9693f', unten: '#2d3748', schuhe: '#f2f2f2', hoehe: 1.56 },
     steht: [19.55, -11.1, Math.PI / 2, 'sitzt'],
+    plan: [{ ab: 0, ort: 'Vormittags: Lesesaal', steht: [19.7, -65.65, 0, 'sitzt'], saetze: ['Ich lese die Speisekarte von morgen. Spannender als jeder Krimi.', 'Psst. Hier drin bewerte ich nur Bücher.'] },
+      { ab: 11.9, ort: 'Kantine, hinterer Tisch', steht: [19.55, -11.1, Math.PI / 2, 'sitzt'] }],
     besuch: {
       1: [['s', 'Montag: Nudeln mit Soße. Drei Sterne.'], ['s', 'Die Soße hat sich Mühe gegeben.'],
         { wahl: [{ t: '„Darf ich mich dazusetzen?“', merke: 'louDazu', dann: [['s', 'Klar. Aber ich bewerte dich auch.'], ['s', 'Spaß. Halb-Spaß.']] },
@@ -270,6 +275,29 @@ export const STAMM = [
       m.roboter ? { key: 'stx_tiago_rob', zeilen: [['s', 'Du hast meinen Roboter angemacht? Hat er „HALLO MENSCH“ gesagt?'], ['s', 'Hab ich ihm beigebracht. Ich bin stolz.']] } : null,
     ],
     nochmal: ['Moment. Ich hab einen Fehler gefunden. Oder er mich.', 'Willst du testen? Ehrlich sagen, ja?', 'Speichern. Immer speichern.'],
+  },
+  {
+    id: 'elio', ort: 'Eingangshalle, am Snackautomaten', steckbrief: 'Weiß alles über den Automaten. Knopf 14 klemmt.', name: 'Elio (6ème) · Automaten-Profi', farbe: '#d9693f',
+    aussehen: { modell: 'menschen', stil: 'Casual', haut: '#e8bf9a', haar: '#7a4a2a', oben: '#e9b949', unten: '#3a3f4b', schuhe: '#2f6db0', hoehe: 1.55 },
+    steht: [-6.0, -4.3, -0.86, 'handy'],
+    besuch: {
+      1: [['s', 'Psst. Neu? Wichtigste Info der Schule:'], ['s', 'Knopf 14 klemmt. Immer zweimal drücken. Nie dreimal.'],
+        { wahl: [{ t: '„Danke für den Tipp!“', merke: 'elioTipp', dann: [['s', 'Gern. Ich bin Elio. Ich weiß alles über diesen Automaten.'], ['s', 'Über Mathe weniger. Aber das hier zählt auch.']] },
+          { t: '„Warum nie dreimal?“', dann: [['s', 'Dann nimmt er dein Geld und denkt nach. Lange.'], ['s', 'Frag nicht, woher ich das weiß.']] }] }],
+      2: [['s', 'Neue Sorte im Automaten: Chips „Saure Gurke“.'], ['s', 'Alle reden drüber. Mehr als über jede Gruppe.'], ['s', 'Ich hab sie probiert. Ehrlich? Okay. Nicht mehr.']],
+      3: [['s', 'Sportfest-Statistik: Der Automat hat 112 Wasser verkauft.'], ['s', 'Ich hab mitgezählt. Ja, ich hab ein Hobby.']],
+      4: [['s', 'Mein Bruder wollte jeden Tag Snacks. Von meinem Geld.'], ['s', 'Ich hab Nein gesagt. War komisch. Aber gut.'], ['s', 'Jetzt kauft er selber. Und klemmt bei Knopf 14.']],
+      5: [['s', 'Im Dezember gibt’s Lebkuchen im Automaten.'], ['s', 'Mein Plan: einer pro Woche. Nicht pro Tag. Selbstkontrolle.']],
+      6: [['s', 'Ein Riegel hing fest. Ich hab Mme Weber gefragt, ob sie aufmacht.'], ['s', 'Hab mich echt getraut. Mit Herzklopfen.'], ['s', 'Kleiner Schritt. Aber der Riegel war meiner.']],
+      7: [['s', 'Ich will später Automaten reparieren. Echt.'], ['s', 'Praktikum bei der Firma, die die hier auffüllt? Ich frag mal.']],
+      8: [['s', 'Online steht: Code 404 gibt Gratis-Chips.'], ['s', 'Stimmt nicht. Ich hab’s vierzigmal probiert.'], ['s', 'Lehre: Nicht alles glauben. Und Taschengeld behalten.']],
+      9: [['s', 'Ich trink abends keine Cola mehr. Nur noch Wasser.'], ['s', 'Ich schlaf besser. Der Automat ist enttäuscht.']],
+      10: (m) => [['s', m.elioTipp ? 'Du drückst Knopf 14 jetzt zweimal. Hab ich gesehen. Stolz.' : 'Ein Jahr Knopf 14. Ich werd ihn vermissen.'], ['s', 'Fernand repariert ihn in den Ferien. Endlich.'], ['s', '… Ehrlich gesagt hoffe ich, er klemmt weiter.']],
+    },
+    reaktion: (m) => [
+      m.automat >= 7 ? { key: 'stx_elio_doppelt', zeilen: [['s', 'Du hast ein Doppelt gezogen? Zwei Snacks auf einmal?'], ['s', 'Respekt. Das schaffen nur Profis.']] } : null,
+    ],
+    nochmal: ['Knopf 14. Zweimal. Nicht vergessen.', 'Der Automat summt heute anders. Ich mach mir Sorgen.', 'Hast du 50 Cent? Nein? Ich auch nicht.'],
   },
 ];
 

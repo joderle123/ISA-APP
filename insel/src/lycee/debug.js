@@ -64,6 +64,9 @@ export function debugWerkzeuge() {
         const sr = [...eb.querySelectorAll('.sr-fuss [data-i]')].filter((b) => !/Zurück/.test(b.textContent));
         if (sr.length) { klick(waehle(sr)); return; }
       }
+      // Satz-Baustein (Kapitel 5): jede Zeile einmal wählen, sonst bleibt die Karte offen
+      const offeneZeile = [...eb.querySelectorAll('.sz-teile > div')].find((r) => !r.querySelector('.an'));
+      if (offeneZeile) { klick(waehle([...offeneZeile.querySelectorAll('[data-j]')])); return; }
       const opt = [...document.querySelectorAll('.ly-ebene .ly-d-optionen button:not([disabled]), .ly-ebene [data-j]:not([disabled]), .ly-ebene [data-k]:not([disabled]), .ly-ebene .ly-skala [data-s]')].filter((b) => b.offsetParent !== null);
       if (opt.length) { klick(waehle(opt)); return; }
       taste('KeyE'); return;
