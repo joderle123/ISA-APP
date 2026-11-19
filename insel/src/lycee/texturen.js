@@ -135,6 +135,30 @@ export function dielen(wdh = [1, 1]) {
   return textur(c, wdh);
 }
 
+// Sporthallen-Parkett: helles Ahorn in schmalen Stäben, Fugen, leichter Glanzschimmer, ein paar Abriebspuren. Eine Kachel = 4 × 4 m.
+export function sportParkett(wdh = [1, 1]) {
+  const N = 512, c = leinwand(N), g = c.getContext('2d'), r = zufall(17);
+  g.fillStyle = '#b98f5c'; g.fillRect(0, 0, N, N);
+  const breit = N / 24;
+  for (let i = 0; i < 24; i++) {
+    let y = -r() * N;
+    while (y < N) {
+      const l = N * (0.22 + r() * 0.3), t = 0.93 + r() * 0.12;
+      g.fillStyle = hex(226 * t, 186 * t, 134 * t); g.fillRect(i * breit + 0.5, y + 0.5, breit - 1, l - 1);
+      g.strokeStyle = 'rgba(150,105,60,0.14)'; g.lineWidth = 1;
+      for (let k = 0; k < 2; k++) { const xx = i * breit + 3 + r() * (breit - 6); g.beginPath(); g.moveTo(xx, y + 2); g.lineTo(xx + (r() - 0.5) * 2, y + l - 2); g.stroke(); }
+      y += l;
+    }
+  }
+  // Glanz: breite helle Bahnen (wie Licht von den Fenstern auf Lack)
+  const gr = g.createLinearGradient(0, 0, N, N);
+  gr.addColorStop(0, 'rgba(255,255,255,0.05)'); gr.addColorStop(0.5, 'rgba(255,255,255,0.11)'); gr.addColorStop(1, 'rgba(255,255,255,0.03)');
+  g.fillStyle = gr; g.fillRect(0, 0, N, N);
+  // Abrieb: ein paar dunkle Schuhspuren
+  for (let k = 0; k < 14; k++) { g.strokeStyle = 'rgba(60,40,25,' + (0.05 + r() * 0.06) + ')'; g.lineWidth = 1 + r() * 2; const x = r() * N, y = r() * N; g.beginPath(); g.moveTo(x, y); g.quadraticCurveTo(x + (r() - 0.5) * 40, y + (r() - 0.5) * 40, x + (r() - 0.5) * 60, y + (r() - 0.5) * 60); g.stroke(); }
+  return textur(c, wdh);
+}
+
 // Schieferdach: überlappende Reihen kleiner Platten, leicht verschiedene Blautöne. Eine Kachel = 4 × 4 m.
 export function schiefer(wdh = [1, 1]) {
   const N = 512, c = leinwand(N), g = c.getContext('2d'), r = zufall(21);

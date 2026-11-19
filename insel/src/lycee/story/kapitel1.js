@@ -69,7 +69,7 @@ export const SCHRITTE_N1 = [
   // ---------- Mittwoch: Skills-Stunde ----------
   { id: 'k1_skills', kap: 1, tag: 'Mittwoch', uhr: 9.9, titel: 'Skills-Stunde', ziel: 'Geh in die Aula. Herr Kuedes wartet mit einem Ball.', marker: 'kaya',
     start: { teleport: 'eingangHof', gespraech: 'n1_checkin' },
-    leute: { kaya: [-14, -55.5, Math.PI], noah: [-16.2, -54, 1.1], mila: [-11.8, -54.2, -1.1], ben: [-12.6, -52.4, -2.2], jo: [-15.6, -52.2, 2.2], ayla: [-17.2, -56.4, 1.6], lina: [-10.9, -56.6, -1.5], chiara: [-14.4, -51.6, 3.1], yusuf: [-13.0, -57.4, -0.4] },
+    leute: { kaya: [-14.50, -65.40, 0.00], noah: [-16.18, -64.48, 1.00], mila: [-12.82, -64.48, -1.00], ben: [-12.50, -63.34, -1.60], jo: [-16.50, -63.34, 1.60], ayla: [-16.17, -62.31, 2.15], lina: [-12.83, -62.31, -2.15], chiara: [-13.56, -61.64, -2.65], yusuf: [-15.44, -61.64, 2.65] },
     fertig: { reden: 'kaya', gespraech: 'n1_skills' } },
   { id: 'k1_blind', kap: 1, tag: 'Mittwoch', uhr: 10.6, titel: 'Draußen: Team-Aufgabe', ziel: 'Auf den Hof. Herr Kuedes hat Hütchen aufgebaut.', marker: 'kaya',
     start: { teleport: 'eingangHof' },

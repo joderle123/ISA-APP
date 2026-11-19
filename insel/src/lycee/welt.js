@@ -4,7 +4,7 @@
 // Maße in Metern: x nach Osten, z nach Süden, y nach oben. Ein Stockwerk ist innen 3,6 m hoch; begehbar ist das Erdgeschoss.
 // Rückgabe: { gruppe, kasten (Kollision, Liste {x0,x1,z0,z1,y1}), raeume, raumBei(x,z), orte, schilder, plaetze (Möbel) }
 import * as THREE from 'three';
-import { pflaster, rasen, asphalt, flaeche, fliesen as fliesenTex, dielen } from './texturen.js';
+import { pflaster, rasen, asphalt, flaeche, fliesen as fliesenTex, dielen, sportParkett } from './texturen.js';
 import { baueCampus, baueCampus2, ORTE_CAMPUS, ORTE_CAMPUS2 } from './campus.js';
 import { baueDetails } from './details.js';
 
@@ -319,6 +319,35 @@ export function baueWelt({ material, materialInnen, materialLaub }) {
       }
       B.kasten.push({ x0: x - 0.34, x1: x + 0.34, z0: z - 1.22, z1: z + 1.22, y0: 0, y1: 0.8 });
     }
+    // Ausstattung, die einen Klassensaal bewohnt wirken lässt (Rockstar-Regel: jeder Raum erzählt, wer ihn benutzt)
+    const RAD = new THREE.Color('#eef0f2'), FENSTERBANK = new THREE.Color('#e8e2d6'), SOCKEL = new THREE.Color('#7d8a8c');
+    for (let x = -26; x <= 26.01; x += 4) {
+      if (x - 0.8 < x0 || x + 0.8 > x1) continue;
+      box(x - 0.95, x + 0.95, 0.96, 1.02, z0, z0 + 0.3, FENSTERBANK, { art: 'innen' });                               // Fensterbank
+      box(x - 0.7, x + 0.7, 0.22, 0.78, z0 + 0.05, z0 + 0.14, RAD, { art: 'innen' });                                   // Heizkörper
+      for (let k = -0.65; k <= 0.66; k += 0.1) box(x + k - 0.02, x + k + 0.02, 0.22, 0.78, z0 + 0.14, z0 + 0.17, RAD, { art: 'innen', kanten: 0.88 });
+    }
+    P('einrichtung/Plant', (x0 + x1) / 2 + 2, z0 + 0.2, 0, { h: 0.55, y: 1.02 });
+    // Sockelleiste rundum
+    box(x0, x1, 0.1, 0.2, z1 - 0.04, z1, SOCKEL, { art: 'innen' }); box(x0, x1, 0.1, 0.2, z0, z0 + 0.04, SOCKEL, { art: 'innen' }); box(x1 - 0.04, x1, 0.1, 0.2, z0, z1, SOCKEL, { art: 'innen' });
+    // Garderobe an der Tür-Wand: Hakenleiste mit Jacken und einem Turnbeutel
+    const gx = name.includes('1.04') ? x0 + 2.6 : x1 - 1.55, JACKE = ['#2b3a55', '#c0392b', '#3fa66b', '#e9b949', '#6b4e8a'];
+    box(gx - 1.4, gx + 1.4, 1.62, 1.72, z1 - 0.06, z1 - 0.02, C.holz, { art: 'innen' });
+    for (let i = 0; i < 5; i++) { const hx = gx - 1.1 + i * 0.55; box(hx - 0.02, hx + 0.02, 1.6, 1.66, z1 - 0.14, z1 - 0.06, C.metall, { art: 'innen' });
+      if (i !== 2) box(hx - 0.2, hx + 0.2, 0.9 + (i % 2) * 0.12, 1.62, z1 - 0.2, z1 - 0.07, new THREE.Color(JACKE[i % JACKE.length]), { art: 'innen', kanten: 0.8 }); }
+    // Rückwand: niedriger Schrank mit Ordnern und Ablagekörben
+    box(x1 - 0.5, x1 - 0.05, 0.1, 0.95, z0 + 1.2, z0 + 5.4, new THREE.Color('#d8cbb4'), { art: 'innen', stoss: true });
+    for (let i = 0; i < 14; i++) { const zz = z0 + 1.35 + i * 0.28; box(x1 - 0.42, x1 - 0.12, 0.95, 1.27 + (i % 3) * 0.02, zz, zz + 0.07, new THREE.Color(['#c0392b', '#2f6db0', '#e9b949', '#3fa66b', '#2b3a55'][i % 5]), { art: 'innen' }); }
+    for (let i = 0; i < 3; i++) box(x1 - 0.45, x1 - 0.1, 0.95 + i * 0.001, 1.05, z0 + 4.4 + i * 0.32 - 0.13, z0 + 4.4 + i * 0.32 + 0.13, new THREE.Color(['#2fb8a8', '#e85d75', '#f2c230'][i]), { art: 'innen' });
+    // Beamer an der Decke, Leinwand-Kasten über der Tafel, Mülleimer
+    const mz = (z0 + z1) / 2;
+    box(x0 + 4.4, x0 + 4.9, DECKE - 0.45, DECKE - 0.25, mz - 0.3, mz + 0.3, new THREE.Color('#f2f2f2'), { art: 'innen' }); box(x0 + 4.6, x0 + 4.7, DECKE - 0.25, DECKE, mz - 0.04, mz + 0.04, C.metall, { art: 'innen' });
+    box(x0 + 4.38, x0 + 4.4, DECKE - 0.39, DECKE - 0.31, mz - 0.06, mz + 0.06, new THREE.Color('#3a3f4a'), { art: 'innen' });
+    box(x0 + 0.12, x0 + 0.3, 2.62, 2.78, z0 + 2.4, z1 - 2.4, new THREE.Color('#e9ecef'), { art: 'innen' });
+    box(x0 + 2.6, x0 + 2.9, 0.1, 0.5, mz - 1.0, mz - 0.7, new THREE.Color('#4a5563'), { art: 'innen' });
+    // Tafel: Schwamm, Kreide, Lineal
+    box(x0 + 0.18, x0 + 0.28, 1.02, 1.07, mz - 1.4, mz - 1.2, new THREE.Color('#e9b949'), { art: 'innen' });
+    for (let i = 0; i < 3; i++) box(x0 + 0.2, x0 + 0.23, 1.02, 1.04, mz + 0.4 + i * 0.12, mz + 0.48 + i * 0.12, new THREE.Color(['#ffffff', '#f6c1d4', '#9fd0e6'][i]), { art: 'innen' });
     const s = schild(name, 1.0, 0.36, { bg: '#2b3a55', schrift: 'bold 110px system-ui' });
     return s;
   };
@@ -390,19 +419,163 @@ export function baueWelt({ material, materialInnen, materialLaub }) {
     wand('x', GZ1, GX0, GX1, 0, GH, D, C.modern, [...tuer, ...band], { stoss: true });
     wand('x', GZ0, GX0, GX1, 0, GH, D, C.modern, band, { stoss: true });
     wand('z', GX0, GZ0, GZ1, 0, GH, D, C.modern, [{ von: -20, bis: -14, unten: 4.6, oben: 6.6 }], { stoss: true });
+    box(GX0 - 0.04, GX0 + 0.04, 4.6, 6.6, -20, -14, C.glas, { art: 'glas' });
     wand('z', GX1, GZ0, GZ1, 0, GH, D, C.modern, [], { stoss: true });
     for (const o of band) { box(o.von, o.bis, o.unten, o.oben, GZ1 - 0.04, GZ1 + 0.04, C.glas, { art: 'glas' }); box(o.von, o.bis, o.unten, o.oben, GZ0 - 0.04, GZ0 + 0.04, C.glas, { art: 'glas' }); }
     box(GX0 - 0.4, GX1 + 0.4, GH, GH + 0.5, GZ0 - 0.4, GZ1 + 0.4, C.metallDunkel);
     box(GX0 - 0.2, GX1 + 0.2, 0, 1.0, GZ1 + 0.1, GZ1 + 0.25, C.holz);
     box(44, 48, 2.8, 3.1, -6, -4.6, C.metallDunkel);
     const st = schild('Hall des sports', 3.2, 0.6, { bg: '#2b3a55', schrift: 'bold 110px system-ui' }); st.position.set(46, 3.6, -5.8); schilder.push(st);
-    box(GX0 + D / 2, GX1 - D / 2, 0.06, 0.1, GZ0 + D / 2, GZ1 - D / 2, C.bodenSport, { art: 'innen' });
-    box(GX0 + 2, GX1 - 2, 0.1, 0.11, -18.05, -17.95, C.linieSport, { art: 'innen' });
-    for (const [a, b] of [[GX0 + 2, GX1 - 2]]) { box(a, b, 0.1, 0.11, GZ0 + 2, GZ0 + 2.1, C.linieSport, { art: 'innen' }); box(a, b, 0.1, 0.11, GZ1 - 2.1, GZ1 - 2, C.linieSport, { art: 'innen' }); }
-    box(GX0 + 2, GX0 + 2.1, 0.1, 0.11, GZ0 + 2, GZ1 - 2, C.linieSport, { art: 'innen' }); box(GX1 - 2.1, GX1 - 2, 0.1, 0.11, GZ0 + 2, GZ1 - 2, C.linieSport, { art: 'innen' });
-    box(GX0 + D / 2, GX1 - D / 2, GH - 0.3, GH - 0.2, GZ0 + D / 2, GZ1 - D / 2, C.decke, { art: 'innen' });
-    for (const [x, s] of [[GX0 + 0.6, 1], [GX1 - 0.6, -1]]) korb(B, x, -18, s);
+    // --- Boden: helles Sportparkett, darauf drei Spielfelder in eigenen Farben (wie in echten Schulhallen)
+    const I0 = GX0 + D / 2, I1 = GX1 - D / 2, J0 = GZ0 + D / 2, J1 = GZ1 - D / 2;
+    box(I0, I1, 0.06, 0.1, J0, J1, C.bodenSport, { art: 'innen' });
+    boeden.push({ x0: I0, x1: I1, z0: J0, z1: J1, sport: true });
+    // Spielfeldlinien als gemalte Folie über dem Parkett (glatte Kreise statt Klötzchen)
+    const MZ = -18;
+    { const N = 2048, W = I1 - I0, T = J1 - J0, cv = document.createElement('canvas'); cv.width = cv.height = N;
+      const g = cv.getContext('2d'), px = (x) => (x - I0) / W * N, pz = (z) => (z - J0) / T * N, m = N / W;
+      const strich = (f, w = 0.06) => { g.strokeStyle = f; g.lineWidth = w * m; };
+      const BLAU = 'rgba(47,109,176,0.92)', WEISS = '#f7f5ee', GELB = '#f2c230', ROT = '#d9523c';
+      const BX0 = 35.2, BX1 = 56.8, BZ0 = -27, BZ1 = -9;
+      // Farbflächen
+      g.fillStyle = BLAU; g.beginPath(); g.arc(px(46), pz(MZ), 1.8 * m, 0, Math.PI * 2); g.fill();
+      for (const [bx, s] of [[BX0, 1], [BX1, -1]]) { g.fillRect(px(Math.min(bx, bx + 5.8 * s)), pz(MZ - 2.45), 5.8 * m, 4.9 * m); }
+      // Basketball (weiß)
+      strich(WEISS); g.strokeRect(px(BX0), pz(BZ0), (BX1 - BX0) * m, (BZ1 - BZ0) * m);
+      g.beginPath(); g.moveTo(px(46), pz(BZ0)); g.lineTo(px(46), pz(BZ1)); g.stroke();
+      g.beginPath(); g.arc(px(46), pz(MZ), 1.8 * m, 0, Math.PI * 2); g.stroke();
+      for (const [bx, s] of [[BX0, 1], [BX1, -1]]) {
+        g.strokeRect(px(Math.min(bx, bx + 5.8 * s)), pz(MZ - 2.45), 5.8 * m, 4.9 * m);
+        g.beginPath(); g.arc(px(bx + 5.8 * s), pz(MZ), 1.8 * m, s > 0 ? -Math.PI / 2 : Math.PI / 2, s > 0 ? Math.PI / 2 : Math.PI * 1.5); g.stroke();
+        g.setLineDash([0.3 * m, 0.25 * m]); g.beginPath(); g.arc(px(bx + 5.8 * s), pz(MZ), 1.8 * m, s > 0 ? Math.PI / 2 : -Math.PI / 2, s > 0 ? Math.PI * 1.5 : Math.PI / 2); g.stroke(); g.setLineDash([]);
+        // Dreierlinie: gerade Stücke an den Seiten, Bogen um den Korb
+        const kx = bx + 0.95 * s, r = 6.75, dz = 6.6, ang = Math.acos(dz / r);
+        g.beginPath(); g.moveTo(px(bx), pz(MZ - dz)); g.lineTo(px(kx + s * r * Math.sin(ang)), pz(MZ - dz)); g.stroke();
+        g.beginPath(); g.moveTo(px(bx), pz(MZ + dz)); g.lineTo(px(kx + s * r * Math.sin(ang)), pz(MZ + dz)); g.stroke();
+        g.beginPath(); if (s > 0) g.arc(px(kx), pz(MZ), r * m, -(Math.PI / 2 - ang), Math.PI / 2 - ang); else g.arc(px(kx), pz(MZ), r * m, Math.PI / 2 + ang, Math.PI * 1.5 - ang); g.stroke();
+      }
+      // Volleyball (gelb)
+      strich(GELB, 0.05); g.strokeRect(px(37), pz(MZ - 4.5), 18 * m, 9 * m);
+      for (const x of [43, 49]) { g.beginPath(); g.moveTo(px(x), pz(MZ - 4.5)); g.lineTo(px(x), pz(MZ + 4.5)); g.stroke(); }
+      // Badminton (rot): vier Felder
+      strich('rgba(200,80,60,0.75)', 0.035);
+      for (const cx of [40.6, 51.4]) for (const sz of [-1, 1]) { const z0 = sz < 0 ? MZ - 6.7 : MZ + 0.1; g.strokeRect(px(cx - 3.05), pz(z0), 6.1 * m, 6.6 * m); }
+      const tex = new THREE.CanvasTexture(cv); tex.colorSpace = THREE.SRGBColorSpace; tex.anisotropy = 8;
+      const folie = new THREE.Mesh(new THREE.PlaneGeometry(W, T), new THREE.MeshLambertMaterial({ map: tex, transparent: true, depthWrite: false, polygonOffset: true, polygonOffsetFactor: -2 }));
+      folie.rotation.x = -Math.PI / 2; folie.position.set((I0 + I1) / 2, 0.104, (J0 + J1) / 2); folie.receiveShadow = true; folie.name = 'spielfeld'; gruppe.add(folie);
+    }
+    const WEISS = new THREE.Color('#f7f5ee');
+
+    // --- Wände: Prallschutz aus hellem Holz bis 2,2 m, Fugen, Farbband darüber
+    const PH = 2.2, PANEEL = new THREE.Color('#d6b689'), FUGE = new THREE.Color('#9b7a52'), BAND = new THREE.Color('#2fb8a8');
+    const ohne = (a, b, l) => { let st = [[a, b]]; for (const [u, v] of l) st = st.flatMap(([p, q]) => (v <= p || u >= q) ? [[p, q]] : [[p, u], [v, q]].filter(([m, n]) => n - m > 0.02)); return st; };
+    for (const [z, d, loch] of [[J0, 0.06, [[47.2, 51.2]]], [J1, -0.06, [[44.8, 47.2]]]]) {
+      for (let x = I0; x < I1 - 0.01; x += 1.2) { const x1 = Math.min(I1, x + 1.2);
+        for (const [p, q] of ohne(x, x1 - 0.015, loch)) box(p, q, 0, PH, Math.min(z, z + d), Math.max(z, z + d), PANEEL, { art: 'innen' });
+        for (const [p, q] of ohne(x1 - 0.015, x1, loch)) box(p, q, 0, PH, Math.min(z, z + d * 1.2), Math.max(z, z + d * 1.2), FUGE, { art: 'innen' }); }
+      for (const [p, q] of ohne(I0, I1, d < 0 ? loch : [])) box(p, q, PH, PH + 0.18, Math.min(z, z + d), Math.max(z, z + d), BAND, { art: 'innen' });
+    }
+    for (const [x, d] of [[I0, 0.06], [I1, -0.06]]) {
+      for (let z = J0; z < J1 - 0.01; z += 1.2) { const z1 = Math.min(J1, z + 1.2);
+        box(Math.min(x, x + d), Math.max(x, x + d), 0, PH, z, z1 - 0.015, PANEEL, { art: 'innen' }); box(Math.min(x, x + d * 1.2), Math.max(x, x + d * 1.2), 0, PH, z1 - 0.015, z1, FUGE, { art: 'innen' }); }
+      box(Math.min(x, x + d), Math.max(x, x + d), PH, PH + 0.18, J0, J1, BAND, { art: 'innen' });
+    }
+
+    // --- Fenster: Rahmen, Sprossen, Bank; Westfenster ebenso
+    const RAHMEN = new THREE.Color('#4a5563');
+    for (const o of band) for (const z of [GZ1, GZ0]) {
+      const zi = z === GZ1 ? z - D / 2 - 0.02 : z + D / 2 + 0.02, za = Math.min(zi, z), zb = Math.max(zi, z);
+      for (const x of [o.von, (o.von + o.bis) / 2, o.bis]) box(x - 0.05, x + 0.05, o.unten, o.oben, za - 0.02, zb + 0.02, RAHMEN, { art: 'innen' });
+      for (const y of [o.unten, 5.6, o.oben]) box(o.von, o.bis, y - 0.05, y + 0.05, za - 0.02, zb + 0.02, RAHMEN, { art: 'innen' });
+    }
+    for (const zz of [-20, -17, -14]) box(I0 - 0.04, I0 + 0.04, 4.6, 6.6, zz - 0.05, zz + 0.05, RAHMEN, { art: 'innen' });
+    for (const y of [4.6, 5.6, 6.6]) box(I0 - 0.04, I0 + 0.04, y - 0.05, y + 0.05, -20, -14, RAHMEN, { art: 'innen' });
+
+    // --- Decke: Stahlbinder quer, Lichtbänder dazwischen
+    box(I0, I1, GH - 0.3, GH - 0.2, J0, J1, C.decke, { art: 'innen' });
+    const STAHL = new THREE.Color('#6f7b8a');
+    for (let x = 38; x <= 54; x += 4) { box(x - 0.12, x + 0.12, GH - 0.75, GH - 0.3, J0, J1, STAHL, { art: 'innen' }); box(x - 0.2, x + 0.2, GH - 0.8, GH - 0.72, J0, J1, STAHL, { art: 'innen' }); }
+    for (let x = 36; x <= 56; x += 4) for (let z = -27; z <= -9; z += 3) box(x - 0.9, x + 0.9, GH - 0.36, GH - 0.3, z - 0.22, z + 0.22, C.licht, { art: 'licht' });
+
+    // --- Körbe: Brett an zwei Auslegern von der Stirnwand, Ring mit Netz
+    const GRAU = new THREE.Color('#5d6573'), ORANGE = new THREE.Color('#e0662e');
+    for (const [w, s] of [[I0, 1], [I1, -1]]) {
+      const bx = w + 1.6 * s, bmin = Math.min(bx, bx + 0.05 * s), bmax = Math.max(bx, bx + 0.05 * s);
+      box(bmin, bmax, 2.9, 3.95, MZ - 0.9, MZ + 0.9, new THREE.Color('#f4f6f8'), { art: 'innen' });                 // Brett
+      for (const y of [3.0, 3.85]) for (const dz of [-0.55, 0.55]) box(Math.min(w, bx), Math.max(w, bx), y - 0.04, y + 0.04, MZ + dz - 0.04, MZ + dz + 0.04, GRAU, { art: 'innen' });
+      box(Math.min(w, w + 0.15 * s), Math.max(w, w + 0.15 * s), 2.8, 4.05, MZ - 0.7, MZ + 0.7, GRAU, { art: 'innen' });   // Wandplatte
+      const fx = bx + 0.052 * s;   // Zielquadrat und Rand auf der Vorderseite
+      box(Math.min(fx, fx + 0.006 * s), Math.max(fx, fx + 0.006 * s), 2.9, 3.95, MZ - 0.9, MZ + 0.9, ORANGE, { art: 'innen' });
+      box(Math.min(fx, fx + 0.008 * s), Math.max(fx, fx + 0.008 * s), 2.95, 3.9, MZ - 0.85, MZ + 0.85, new THREE.Color('#f4f6f8'), { art: 'innen' });
+      box(Math.min(fx, fx + 0.01 * s), Math.max(fx, fx + 0.01 * s), 3.08, 3.5, MZ - 0.3, MZ + 0.3, ORANGE, { art: 'innen' });
+      box(Math.min(fx, fx + 0.012 * s), Math.max(fx, fx + 0.012 * s), 3.12, 3.46, MZ - 0.26, MZ + 0.26, new THREE.Color('#f4f6f8'), { art: 'innen' });
+      const kx = bx + 0.38 * s;
+      box(Math.min(bx, kx - 0.2 * s), Math.max(bx, kx - 0.2 * s), 3.03, 3.07, MZ - 0.04, MZ + 0.04, ORANGE, { art: 'innen' });
+      const ring = new THREE.Mesh(new THREE.TorusGeometry(0.23, 0.018, 6, 22), new THREE.MeshLambertMaterial({ color: '#e0662e' }));
+      ring.rotation.x = Math.PI / 2; ring.position.set(kx, 3.05, MZ); gruppe.add(ring);
+      const netz = new THREE.Mesh(new THREE.CylinderGeometry(0.23, 0.15, 0.42, 12, 3, true), new THREE.MeshBasicMaterial({ color: '#f4f4f4', wireframe: true, transparent: true, opacity: 0.8 }));
+      netz.position.set(kx, 2.84, MZ); gruppe.add(netz);
+    }
+
+    // --- Sprossenwand an der Ostwand (zwei Blöcke à vier Felder)
+    const SPROSSE = new THREE.Color('#c99b5f');
+    for (const z0 of [-28.6, -12.6]) for (let f = 0; f < 4; f++) {
+      const za = z0 + f * 1.0, xa = I1 - 0.3, xb = I1 - 0.06;
+      box(xa, xb, 0, 2.8, za, za + 0.07, SPROSSE, { art: 'innen', stoss: true }); box(xa, xb, 0, 2.8, za + 0.93, za + 1.0, SPROSSE, { art: 'innen', stoss: true });
+      for (let y = 0.18; y < 2.75; y += 0.16) box(xa + 0.08, xa + 0.14, y, y + 0.045, za + 0.07, za + 0.93, SPROSSE, { art: 'innen' });
+    }
+    // Kletterseile am Binder
+    for (const z of [-27.6, -27.0, -26.4]) box(53.96, 54.04, 0.7, GH - 0.75, z - 0.04, z + 0.04, new THREE.Color('#d8c49a'), { art: 'innen' });
+
+    // --- Langbänke: Sitzbrett, zwei Böcke, Schwebebalken unten
+    const BANK = new THREE.Color('#c58f55'), BANKFUSS = new THREE.Color('#8a5f37');
+    const langbank = (x0, x1, z, quer = false) => {
+      if (!quer) { box(x0, x1, 0.3, 0.35, z - 0.13, z + 0.13, BANK, { art: 'innen', stoss: true }); box(x0 + 0.1, x1 - 0.1, 0.06, 0.16, z - 0.05, z + 0.05, BANKFUSS, { art: 'innen' });
+        for (const xx of [x0 + 0.4, x1 - 0.5]) box(xx, xx + 0.1, 0, 0.3, z - 0.18, z + 0.18, BANKFUSS, { art: 'innen' });
+        for (let xx = x0 + 0.6; xx < x1 - 0.5; xx += 1.2) B.sitze.push({ x: xx, z: z + 0.05, rot: Math.PI, bank: true, h: 0.35 });
+      } else { box(z - 0.13, z + 0.13, 0.3, 0.35, x0, x1, BANK, { art: 'innen', stoss: true }); box(z - 0.05, z + 0.05, 0.06, 0.16, x0 + 0.1, x1 - 0.1, BANKFUSS, { art: 'innen' });
+        for (const zz of [x0 + 0.4, x1 - 0.5]) box(z - 0.18, z + 0.18, 0, 0.3, zz, zz + 0.1, BANKFUSS, { art: 'innen' });
+        for (let zz = x0 + 0.6; zz < x1 - 0.5; zz += 1.2) B.sitze.push({ x: z + 0.05, z: zz, rot: Math.PI / 2, bank: true, h: 0.35 });
+      }
+    };
+    langbank(36, 40, J1 - 0.5); langbank(40.4, 44.4, J1 - 0.5); langbank(48, 52, J1 - 0.5); langbank(52.4, 56.4, J1 - 0.5);
+    langbank(-16.4, -12.4, I0 + 0.55, true);
+
+    // --- Matten: großer Weichboden (blau) und ein Stapel Turnmatten, kleiner Kasten
+    box(I0 + 0.1, I0 + 2.1, 0.1, 0.5, J0 + 0.1, J0 + 3.1, new THREE.Color('#2f6db0'), { art: 'fest', stoss: true });
+    box(I0 + 0.12, I0 + 2.08, 0.5, 0.52, J0 + 0.12, J0 + 3.08, new THREE.Color('#3b7cc4'), { art: 'innen' });
+    const MATTE = ['#3d4b63', '#4a5a76', '#3d4b63', '#4a5a76', '#3d4b63'];
+    MATTE.forEach((f, i) => box(40.2, 42.2, 0.1 + i * 0.08, 0.17 + i * 0.08, J0 + 0.2, J0 + 1.2, new THREE.Color(f), { art: 'innen', stoss: i === 0 }));
     for (let i = 0; i < 4; i++) box(GX0 + 3 + i * 0.6, GX0 + 3.5 + i * 0.6, 0.1, 0.45 + i * 0.45, GZ0 + 0.3, GZ0 + 1.6, C.holzHell, { art: 'innen', stoss: true });
+    // Sprungkasten (Holzteile, Lederdeckel)
+    for (let i = 0; i < 4; i++) box(44 - i * 0.03, 45.4 + i * 0.03, 0.1 + i * 0.22, 0.31 + i * 0.22, J0 + 0.4 - i * 0.02, J0 + 1.3 + i * 0.02, C.holzHell, { art: 'innen', stoss: i === 0, kanten: 0.82 });
+    box(43.95, 45.45, 0.98, 1.08, J0 + 0.42, J0 + 1.28, new THREE.Color('#d9c7a3'), { art: 'innen' });
+
+    // --- Ballwagen mit Bällen, ein paar Bälle am Boden, Hütchen
+    box(51.2, 52.6, 0.1, 0.16, J0 + 0.3, J0 + 1.1, C.metallDunkel, { art: 'innen', stoss: true });
+    for (const [xx, zz] of [[51.22, J0 + 0.32], [52.52, J0 + 0.32], [51.22, J0 + 1.02], [52.52, J0 + 1.02]]) box(xx, xx + 0.06, 0.16, 1.0, zz, zz + 0.06, C.metall, { art: 'innen' });
+    for (const y of [0.55, 1.0]) { box(51.2, 52.6, y, y + 0.03, J0 + 0.3, J0 + 0.33, C.metall, { art: 'innen' }); box(51.2, 52.6, y, y + 0.03, J0 + 1.07, J0 + 1.1, C.metall, { art: 'innen' }); }
+    { const ballGeo = new THREE.SphereGeometry(0.12, 14, 10), BALL = { orange: new THREE.MeshLambertMaterial({ color: '#e0662e' }), weiss: new THREE.MeshLambertMaterial({ color: '#f2efe6' }), gelb: new THREE.MeshLambertMaterial({ color: '#f2c230' }) };
+      const baelle = [];
+      for (let i = 0; i < 10; i++) baelle.push([51.38 + (i % 5) * 0.26, 0.3 + Math.floor(i / 5) * 0.23, J0 + 0.55 + (i % 2) * 0.28, i % 3 ? 'orange' : 'weiss']);
+      baelle.push([47.5, 0.22, -21.4, 'orange'], [39.2, 0.22, -11.2, 'weiss'], [52.8, 0.22, -14.6, 'gelb']);
+      for (const [x, y, z, f] of baelle) { const m = new THREE.Mesh(ballGeo, BALL[f]); m.position.set(x, y, z); m.castShadow = true; gruppe.add(m); }
+    }
+    { const hut = new THREE.ConeGeometry(0.11, 0.24, 14), hm = new THREE.MeshLambertMaterial({ color: '#f07a2a' }), fuss = new THREE.CylinderGeometry(0.15, 0.15, 0.02, 14);
+      for (const [x, z] of [[40, -22], [40, -14], [52, -22], [52, -14], [41.2, -18], [50.8, -18]]) { const m = new THREE.Mesh(hut, hm); m.position.set(x, 0.22, z); m.castShadow = true; gruppe.add(m); const f = new THREE.Mesh(fuss, hm); f.position.set(x, 0.11, z); gruppe.add(f); } }
+
+    // --- Türen: Umkleiden und Geräteraum, Anzeigetafel, Uhr, Banner
+    const TUER = new THREE.Color('#2f6db0');
+    for (const [zz, txt] of [[-24.0, 'Vestiaire 1'], [-10.8, 'Vestiaire 2']]) {
+      box(I0, I0 + 0.08, 0, 2.3, zz - 0.55, zz + 0.55, TUER, { art: 'innen' }); box(I0 + 0.08, I0 + 0.12, 1.0, 1.06, zz + 0.25, zz + 0.45, C.metall, { art: 'innen' });
+      const t = schild(txt, 1.1, 0.26, { bg: '#2b3a55', schrift: 'bold 88px system-ui' }); t.position.set(I0 + 0.1, 2.5, zz); t.rotation.y = Math.PI / 2; schilder.push(t);
+    }
+    box(47.2, 51.2, 0, 2.9, J0 + 0.02, J0 + 0.08, new THREE.Color('#8d96a3'), { art: 'innen' });   // Rolltor Geräteraum
+    for (let y = 0.2; y < 2.9; y += 0.25) box(47.2, 51.2, y, y + 0.03, J0 + 0.08, J0 + 0.1, C.metallDunkel, { art: 'innen' });
+    { const t = schild('Matériel', 1.2, 0.28, { bg: '#2b3a55', schrift: 'bold 96px system-ui' }); t.position.set(49.2, 3.15, J0 + 0.03); schilder.push(t); }
+    { const t = schild('LOCAUX  12 : 09  VISITEURS', 4.2, 0.9, { bg: '#16181d', fg: '#ff7a3c', rand: '#3a3f4a', schrift: 'bold 64px monospace' }); t.position.set(46, 3.9, J0 + 0.05); schilder.push(t); }
+    { const t = schild('ANNEXE JUNGLINSTER', 6.4, 0.8, { bg: '#2fb8a8', rand: '#ffffff', schrift: 'bold 72px system-ui' }); t.position.set(I1 - 0.05, 5.4, -18); t.rotation.y = -Math.PI / 2; schilder.push(t); }
+    { const t = schild('Respect · Fair-play · On s\'encourage', 6.0, 0.6, { bg: '#ffffff', fg: '#2b3a55', rand: '#2b3a55', schrift: 'bold 54px system-ui' }); t.position.set(I0 + 0.05, 3.7, -25.5); t.rotation.y = Math.PI / 2; schilder.push(t); }
     R('turnhalle', 'Hall des sports', GX0, GX1, GZ0, GZ1, { decke: GH - 0.4 }); }
 
   // ================= Werkstatt (Westen): x −60 … −36, z −28 … −8 – Ausblick auf DAP/CCP =================
@@ -526,10 +699,11 @@ export function baueWelt({ material, materialInnen, materialLaub }) {
   gruppe.add(flaeche(tP, -46, 46, -2, 40.5, 0.0615, 8, { wolken: true }));
   gruppe.add(flaeche(tP, 46, 62, -4, 2, 0.0615, 8));
   gruppe.add(flaeche(tP, -62, -46, -4, 2, 0.0615, 8));
-  const tD = dielen(), fl = {}, bl = [];
+  const tD = dielen(), tS = sportParkett(), fl = {}, bl = [];
   for (const b of boeden) {
     const x0 = Math.min(b.x0, b.x1), x1 = Math.max(b.x0, b.x1), z0 = Math.min(b.z0, b.z1), z1 = Math.max(b.z0, b.z1);
     if (b.holz) { bl.push({ tex: tD, x0, x1, z0, z1, y: 0.1015, kachel: 4 }); continue; }
+    if (b.sport) { bl.push({ tex: tS, x0, x1, z0, z1, y: 0.1015, kachel: 4 }); continue; }
     if (b.pflaster) { bl.push({ tex: tP, x0, x1, z0, z1, y: 0.0615, kachel: 8 }); continue; }
     const k = '#' + b.c1.getHexString() + '#' + b.c2.getHexString();
     fl[k] = fl[k] || fliesenTex('#' + b.c1.getHexString(), '#' + b.c2.getHexString());
@@ -632,7 +806,20 @@ function uhrTextur() {
 
 let _glas = null;
 function glasMaterial() {
-  if (!_glas) _glas = new THREE.MeshLambertMaterial({ vertexColors: true, emissive: new THREE.Color('#2a5a78'), emissiveIntensity: 0.55 });
+  if (!_glas) {
+    // Glas: Himmelsspiegelung je nach Blickwinkel, Verlauf nach oben, schräge Lichtstreifen – damit Fenster nicht flach türkis wirken
+    _glas = new THREE.MeshLambertMaterial({ vertexColors: true, emissive: new THREE.Color('#2a5a78'), emissiveIntensity: 0.45 });
+    _glas.onBeforeCompile = (sh) => {
+      sh.vertexShader = sh.vertexShader.replace('#include <common>', '#include <common>\nvarying vec3 vWP;')
+        .replace('#include <project_vertex>', '#include <project_vertex>\nvWP = (modelMatrix * vec4(transformed, 1.0)).xyz;');
+      sh.fragmentShader = sh.fragmentShader.replace('#include <common>', '#include <common>\nvarying vec3 vWP;')
+        .replace('#include <normal_fragment_maps>', `#include <normal_fragment_maps>
+        float fr = pow(1.0 - abs(dot(normalize(vViewPosition), normal)), 2.0);
+        float st = smoothstep(0.86, 1.0, sin((vWP.x + vWP.z) * 0.9 + vWP.y * 1.6)) * 0.22;
+        float hoch = fract(vWP.y / 2.2);
+        diffuseColor.rgb = mix(diffuseColor.rgb * (0.72 + 0.4 * hoch), vec3(0.9, 0.95, 1.0), clamp(fr * 0.55 + st, 0.0, 0.7));`);
+    };
+  }
   return _glas;
 }
 

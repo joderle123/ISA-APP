@@ -242,6 +242,8 @@ export const LOOKS = {
   aus: { kontur: 1, konturDicke: 1, stufen: 0, raster: 0, schraffur: 0, papier: 0, korn: 0, saett: 1, hell: 1, weich: 0, ao: 1, pastell: 0 },
   comic: { kontur: 0.7, konturDicke: 1.25, konturDunkel: 0.45, konturKnick: 0.3, stufen: 4, raster: 4.2, schraffur: 0, papier: 0, korn: 0, saett: 1.2, hell: 1.08, weich: 0.08, ao: 0.6, pastell: 0 },   // A „Comic“, leichter gestimmt (Entscheidung 17.11.)
   skizze: { kontur: 0.9, konturDicke: 0.8, stufen: 0, raster: 0, schraffur: 4.5, papier: 0.9, korn: 0.1, saett: 0.55, hell: 1.04, weich: 0, ao: 0.5, pastell: 0.05 },
+  // klar (Standard ab 20.11.): saubere Flächen, feine Kontur, keine Stufen/Raster – Gesichter bleiben ruhig, nichts flimmert
+  klar: { kontur: 0.75, konturDicke: 0.9, konturDunkel: 0.3, konturKnick: 0.45, stufen: 0, raster: 0, schraffur: 0, papier: 0, korn: 0, saett: 1.06, hell: 1.02, weich: 0, ao: 0.7, pastell: 0 },
   weich: { kontur: 0, konturDicke: 1, stufen: 4, raster: 0, schraffur: 0, papier: 0, korn: 0, saett: 1.12, hell: 1.08, weich: 0.9, ao: 0.25, pastell: 0.1 },
 };
 const LOOK_SHADER = {

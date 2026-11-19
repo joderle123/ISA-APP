@@ -226,7 +226,39 @@ export function baueCampus({ B, P, R, schilder, C, schild, uhrTextur, stuhl, bod
   box(-8.4, -6.2, 0.8, 2.0, -70.6, -69.2, dunkel, { art: 'innen' }); box(-8.4, -6.2, 1.9, 2.0, -69.3, -68.9, hex('#f2efe6'), { art: 'innen' });   // Klavier
   box(-7.7, -6.9, 0.8, 1.3, -68.6, -68.2, dunkel, { art: 'innen' });
   { const t = schild('AULA', 2.4, 0.6, { bg: '#2d3d5c', rand: '#e9c46a', schrift: 'bold 140px Georgia, serif' }); t.position.set(-15, 6.95, -70.8); schilder.push(t); }
-  for (let r = 0; r < 6; r++) for (let c = 0; c < 12; c++) { if (c === 6) continue; stuhl(B, -26.2 + c * 1.95, -63.8 + r * 1.55, Math.PI, C.stuhl[(r + c) % C.stuhl.length]); }
+  // Theaterbestuhlung: zwei Blöcke gepolsterter Klappsitze, Mittelgang mit Läufer, Treppe zur Bühne, Rednerpult
+  { const SITZ = hex('#9b2335'), SITZ2 = hex('#86202e'), SCHALE = hex('#3a3f4a');
+    for (let r = 0; r < 5; r++) {
+      const z = -60.4 + r * 1.15;
+      for (const [xa, n] of [[-24.6, 16], [-13.4, 16]]) {
+        for (let i = 0; i < n; i++) {
+          const x = xa + i * 0.6;
+          box(x - 0.25, x + 0.25, 0.4, 0.5, z - 0.24, z + 0.16, i % 2 ? SITZ : SITZ2, { art: 'innen' });
+          box(x - 0.25, x + 0.25, 0.5, 0.98, z + 0.16, z + 0.25, i % 2 ? SITZ : SITZ2, { art: 'innen' });
+          box(x - 0.26, x + 0.26, 0.3, 1.0, z + 0.25, z + 0.3, SCHALE, { art: 'innen' });
+          box(x - 0.26, x + 0.26, 0.25, 0.4, z - 0.2, z + 0.25, SCHALE, { art: 'innen' });
+          B.sitze.push({ x, z: z - 0.02, rot: Math.PI, h: 0.5 });
+        }
+        for (let i = 0; i <= n; i++) { const x = xa - 0.3 + i * 0.6; box(x - 0.03, x + 0.03, 0, 0.66, z - 0.22, z + 0.3, SCHALE, { art: 'innen' }); }
+        B.kasten.push({ x0: xa - 0.33, x1: xa + (n - 1) * 0.6 + 0.33, z0: z - 0.26, z1: z + 0.3, y0: 0, y1: 1.0 });
+      }
+    }
+    box(-15.1, -13.9, 0.1, 0.112, -61.0, -54.2, hex('#7a1f2b'), { art: 'innen' });                                   // Läufer im Mittelgang
+    for (let i = 0; i < 3; i++) box(-26.4, -24.0, 0, 0.25 + i * 0.25, -66.6, -66.6 + (3 - i) * 0.33, C.holz, { art: 'innen', stoss: true });   // Stufen zur Bühne
+    box(-9.8, -9.0, 0.8, 1.95, -69.4, -68.8, hex('#6b4a32'), { art: 'innen', stoss: true }); box(-9.9, -8.9, 1.85, 1.95, -69.5, -68.6, hex('#8a6a4a'), { art: 'innen' });   // Rednerpult
+    box(-9.43, -9.37, 1.95, 2.25, -69.0, -68.94, C.metallDunkel, { art: 'innen' });
+    for (let x = -26; x <= -4; x += 2.2) box(x - 0.12, x + 0.12, 0.72, 0.8, -66.66, -66.56, C.licht, { art: 'licht' });   // Rampenlicht
+    // Vorne: der Skills-Raum des Jahres – Stuhlkreis (Lücke im Süden), fahrbare Tafel, Kiste mit Material
+    for (const a of [0, 0.5, -1.0, 1.0, 1.6, -1.6, -2.15, 2.15, 2.65, -2.65]) stuhl(B, -14.5 + 2.6 * Math.sin(a), -63.4 - 2.6 * Math.cos(a), -a, C.stuhl[Math.round((a + 3) * 3) % C.stuhl.length]);
+    { const tx = -19.6, tz = -64.8;
+      box(tx - 1.0, tx + 1.0, 0.95, 2.05, tz - 0.03, tz + 0.03, hex('#f7f8f8'), { art: 'innen' }); box(tx - 1.05, tx + 1.05, 0.9, 2.1, tz - 0.05, tz - 0.03, C.metall, { art: 'innen' });
+      for (const dx of [-0.95, 0.95]) { box(tx + dx - 0.03, tx + dx + 0.03, 0.08, 0.95, tz - 0.03, tz + 0.03, C.metall, { art: 'innen' }); box(tx + dx - 0.04, tx + dx + 0.04, 0, 0.08, tz - 0.3, tz + 0.3, C.metallDunkel, { art: 'innen' }); }
+      box(tx - 1.0, tx + 1.0, 0.92, 0.95, tz + 0.03, tz + 0.1, C.metall, { art: 'innen' });
+      B.kasten.push({ x0: tx - 1.1, x1: tx + 1.1, z0: tz - 0.32, z1: tz + 0.32, y0: 0, y1: 2.1 });
+      box(-9.6, -8.8, 0.1, 0.5, -65.9, -65.3, hex('#c99b5f'), { art: 'innen', stoss: true });   // Materialkiste
+      for (let i = 0; i < 5; i++) box(-9.5 + i * 0.14, -9.4 + i * 0.14, 0.5, 0.56, -65.8, -65.4, hex(['#e85d75', '#2fb8a8', '#f2c230', '#4f88c8', '#3fa66b'][i]), { art: 'innen' });
+    }
+  }
   for (const x of [-22, -15, -8]) for (const z of [-66, -60]) {
     box(x - 0.05, x + 0.05, Y - 1.4, Y, z - 0.05, z + 0.05, C.metallDunkel, { art: 'innen' });
     const g = new THREE.CylinderGeometry(0.9, 0.5, 0.35, 8); g.translate(x, Y - 1.55, z); geo(g, bronze, 'innen');

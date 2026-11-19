@@ -3,7 +3,8 @@
 // (Umarmung, Foto, Nachricht), nichts Sexuelles. Faden @annexe.cam: Luca hat den Fake gebaut – die Idee kam aus einer
 // Sprachnachricht von Jo. Ende: Rauswurf aus dem Klassenchat.
 import { S6_SAGEN, S6_WUT_FAMILIE } from './skills-j1.js';
-const AULA = { noah: [-16.2, -54, 1.1], mila: [-11.8, -54.2, -1.1], ben: [-12.6, -52.4, -2.2], jo: [-15.6, -52.2, 2.2], ayla: [-17.2, -56.4, 1.6], lina: [-10.9, -56.6, -1.5], chiara: [-14.4, -51.6, 3.1], yusuf: [-13.0, -57.4, -0.4] };
+// Stuhlkreis vorne in der Aula (Mitte −14.5 | −63.4), Lücke im Süden für den Spieler
+const AULA = { noah: [-16.18, -64.48, 1.00], mila: [-12.82, -64.48, -1.00], ben: [-12.50, -63.34, -1.60], jo: [-16.50, -63.34, 1.60], ayla: [-16.17, -62.31, 2.15], lina: [-12.83, -62.31, -2.15], chiara: [-13.56, -61.64, -2.65], yusuf: [-15.44, -61.64, 2.65] };
 const F = { noah: { id: 'noah', name: 'Noah', farbe: '#3f78b8' }, mila: { id: 'mila', name: 'Mila', farbe: '#2fb8a8' }, ben: { id: 'ben', name: 'Ben', farbe: '#d9a21b' }, jo: { id: 'jo', name: 'Jo', farbe: '#c0392b' },
   ayla: { id: 'ayla', name: 'Ayla', farbe: '#e85d75' }, luca: { id: 'luca', name: 'Luca', farbe: '#7a6fb0' }, rantini: { id: 'rantini', name: 'Mme Rantini', farbe: '#6b7a8f' } };
 
@@ -14,7 +15,7 @@ export const SCHRITTE_N6 = [
     fertig: { reden: 'rantini', gespraech: 'n6_foto' } },
   { id: 'k6_skills', kap: 6, tag: 'Montag', uhr: 9.9, titel: 'Skills: Wie sag ich’s?', ziel: 'Aula. Herr Kuedes hat ein Ladekabel in der Hand. Warum auch immer.', marker: 'kaya',
     start: { teleport: 'eingangHof' },
-    leute: { kaya: [-14, -55.5, Math.PI], mesenberg: [-12.2, -55.8, -2.8], ...AULA },
+    leute: { kaya: [-14.50, -65.40, 0.00], mesenberg: [-13.54, -65.16, -0.50], ...AULA },
     fertig: { reden: 'kaya', gespraech: 'n6_skills' } },
   { id: 'k6_mila', kap: 6, tag: 'Dienstag', uhr: 12.4, titel: 'Die Sprachnachricht', ziel: 'Mila im CDI. Sie hat Kopfhörer für dich dabei.', marker: 'mila',
     start: { teleport: 'kantineTuer' },
@@ -30,7 +31,7 @@ export const SCHRITTE_N6 = [
     fertig: { reden: 'mila', gespraech: 'n6_cdi' } },
   { id: 'k6_ende', kap: 6, tag: 'Freitag', uhr: 10.0, titel: 'Okay.', ziel: 'Letzte Skills-Stunde der Woche. Aula.', marker: 'kaya',
     start: { teleport: 'eingangHof' },
-    leute: { kaya: [-14, -55.5, Math.PI], ...AULA },
+    leute: { kaya: [-14.50, -65.40, 0.00], ...AULA },
     fertig: { reden: 'kaya', gespraech: 'n6_ende' } },
 ];
 

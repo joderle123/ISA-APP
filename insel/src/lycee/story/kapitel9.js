@@ -2,7 +2,8 @@
 // Stress-Rucksack, Vier Ecken mit Tipp, Gesund-Würfel, Gesund-Plan, Bodyscan). Behutsam: schwere Gefühle → Hilfe-Wege
 // (Herr Kuedes, 116 111). Faden @annexe.cam: Dario kann nicht mehr schlafen. Er erzählt, wie alles angefangen hat.
 import { S9_AKKU, S9_BODYSCAN } from './skills-j1.js';
-const AULA = { noah: [-16.2, -54, 1.1], mila: [-11.8, -54.2, -1.1], ben: [-12.6, -52.4, -2.2], jo: [-15.6, -52.2, 2.2], ayla: [-17.2, -56.4, 1.6], lina: [-10.9, -56.6, -1.5], chiara: [-14.4, -51.6, 3.1], yusuf: [-13.0, -57.4, -0.4] };
+// Stuhlkreis vorne in der Aula (Mitte −14.5 | −63.4), Lücke im Süden für den Spieler
+const AULA = { noah: [-16.18, -64.48, 1.00], mila: [-12.82, -64.48, -1.00], ben: [-12.50, -63.34, -1.60], jo: [-16.50, -63.34, 1.60], ayla: [-16.17, -62.31, 2.15], lina: [-12.83, -62.31, -2.15], chiara: [-13.56, -61.64, -2.65], yusuf: [-15.44, -61.64, 2.65] };
 const F = { noah: { id: 'noah', name: 'Noah', farbe: '#3f78b8' }, mila: { id: 'mila', name: 'Mila', farbe: '#2fb8a8' }, ben: { id: 'ben', name: 'Ben', farbe: '#d9a21b' }, jo: { id: 'jo', name: 'Jo', farbe: '#c0392b' },
   ayla: { id: 'ayla', name: 'Ayla', farbe: '#e85d75' }, dario: { id: 'dario', name: 'Dario', farbe: '#d9693f' }, yusuf: { id: 'yusuf', name: 'Yusuf', farbe: '#5fa0d0' } };
 
@@ -13,11 +14,11 @@ export const SCHRITTE_N9 = [
     fertig: { reden: 'dario', gespraech: 'n9_dario' } },
   { id: 'k9_skills', kap: 9, tag: 'Montag', uhr: 9.9, titel: 'Skills: Akku leer', ziel: 'Aula. Herr Kuedes hat einen Rucksack voller Steine dabei.', marker: 'kaya',
     start: { teleport: 'eingangHof' },
-    leute: { kaya: [-14, -55.5, Math.PI], mesenberg: [-12.2, -55.8, -2.8], ...AULA },
+    leute: { kaya: [-14.50, -65.40, 0.00], mesenberg: [-13.54, -65.16, -0.50], ...AULA },
     fertig: { reden: 'kaya', gespraech: 'n9_skills' } },
   { id: 'k9_kuedes', kap: 9, tag: 'Dienstag', uhr: 10.0, titel: 'Zu zweit zu Herrn Kuedes', ziel: 'Dario steht vor der Aula. Er geht nicht allein rein.', marker: 'dario',
     start: { teleport: 'eingangHof' },
-    leute: { dario: [-13.6, -51.2, Math.PI], kaya: [-14, -55.5, Math.PI] },
+    leute: { dario: [-13.6, -51.2, Math.PI], kaya: [-14.50, -65.40, 0.00] },
     fertig: { reden: 'dario', gespraech: 'n9_kuedes' } },
   { id: 'k9_ben', kap: 9, tag: 'Mittwoch', uhr: 12.4, titel: 'Bens Gesund-Würfel', ziel: 'Ben am Korb. Er hat einen riesigen Würfel aus Pappe gebaut.', marker: 'ben',
     start: { teleport: 'eingangHof' },
@@ -25,7 +26,7 @@ export const SCHRITTE_N9 = [
     fertig: { reden: 'ben', gespraech: 'n9_ben' } },
   { id: 'k9_ende', kap: 9, tag: 'Freitag', uhr: 10.0, titel: 'Mein Gesund-Plan', ziel: 'Letzte Skills-Stunde der Woche. Aula.', marker: 'kaya',
     start: { teleport: 'eingangHof' },
-    leute: { kaya: [-14, -55.5, Math.PI], ...AULA, dario: [-9.8, -55.2, -1.4] },
+    leute: { kaya: [-14.50, -65.40, 0.00], ...AULA, dario: [-9.8, -55.2, -1.4] },
     fertig: { reden: 'kaya', gespraech: 'n9_ende' } },
 ];
 

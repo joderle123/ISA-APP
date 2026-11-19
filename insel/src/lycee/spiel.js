@@ -89,7 +89,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   const test = params.has('test');
   const schritt = async (p, t) => { onProgress(p, t); await new Promise((r) => requestAnimationFrame(() => r())); };
   const events = createEvents();
-  const rr = createRenderer({ canvas, quality: detectQuality(), events, look: 'comic' });
+  const rr = createRenderer({ canvas, quality: detectQuality(), events, look: 'klar' });
   const q = rr.quality;
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(52, 1, 0.12, 700);
@@ -2014,11 +2014,17 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (zielZeit > 75 && !S.fertig && !S.merke['tippZiel_' + S.schritt]) { S.merke['tippZiel_' + S.schritt] = true; ui.auftragPuls && ui.auftragPuls(); ui.toast('<b>🧭 Wohin?</b><span>Oben links steht dein Ziel. Der gelbe Pfeil am Rand zeigt die Richtung. ☰ → „Was soll ich tun?“ hilft auch.</span>'); }
   }
   // ---------- Staub im Licht: drinnen am Tag schweben feine Teilchen um die Kamera (wie in großen Spielen, kostet fast nichts) ----------
-  const STAUB_N = 160, STAUB_R = 4;
+  const STAUB_N = 70, STAUB_R = 4;   // Staub im Licht: dezent (viele helle Punkte wirkten wie Bildfehler)
   const staubPos = new Float32Array(STAUB_N * 3), staubPhase = new Float32Array(STAUB_N);
   for (let k = 0; k < STAUB_N; k++) { staubPos[k * 3] = (Math.random() * 2 - 1) * STAUB_R; staubPos[k * 3 + 1] = 0.4 + Math.random() * 2.6; staubPos[k * 3 + 2] = (Math.random() * 2 - 1) * STAUB_R; staubPhase[k] = Math.random() * 6.28; }
   const staubGeo = new THREE.BufferGeometry(); staubGeo.setAttribute('position', new THREE.BufferAttribute(staubPos, 3));
-  const staubMat = new THREE.PointsMaterial({ size: 0.028, color: 0xfff1d0, transparent: true, opacity: 0, depthWrite: false, blending: THREE.AdditiveBlending, toneMapped: false });
+  // Punkte als weiche Scheiben bzw. Blätter statt als eckige Pixel
+  const punktTex = (art) => { const cv = document.createElement('canvas'); cv.width = cv.height = 64; const g = cv.getContext('2d');
+    if (art === 'blatt') { g.translate(32, 32); g.rotate(0.6); g.fillStyle = '#fff'; g.beginPath(); g.ellipse(0, 0, 26, 13, 0, 0, Math.PI * 2); g.fill(); g.strokeStyle = 'rgba(0,0,0,0.35)'; g.lineWidth = 2.5; g.beginPath(); g.moveTo(-24, 0); g.lineTo(24, 0); g.stroke(); }
+    else { const rg = g.createRadialGradient(32, 32, 0, 32, 32, 30); rg.addColorStop(0, 'rgba(255,255,255,1)'); rg.addColorStop(0.45, 'rgba(255,255,255,0.65)'); rg.addColorStop(1, 'rgba(255,255,255,0)'); g.fillStyle = rg; g.fillRect(0, 0, 64, 64); }
+    const t = new THREE.CanvasTexture(cv); t.colorSpace = THREE.SRGBColorSpace; return t; };
+  const TEX_RUND = punktTex('rund'), TEX_BLATT = punktTex('blatt');
+  const staubMat = new THREE.PointsMaterial({ size: 0.03, map: TEX_RUND, color: 0xfff1d0, transparent: true, opacity: 0, depthWrite: false, blending: THREE.AdditiveBlending, toneMapped: false });
   const staub = new THREE.Points(staubGeo, staubMat); staub.frustumCulled = false; staub.visible = false; scene.add(staub);
   let staubT = 0;
   // Lebendige Welt: Wer im Haus an einer Lehrkraft vorbeirennt, wird ermahnt – freundlich, mit Persönlichkeit, höchstens
@@ -2042,7 +2048,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   const saisonPos = new Float32Array(SAISON_N * 3), saisonPh = new Float32Array(SAISON_N);
   for (let k = 0; k < SAISON_N; k++) { saisonPos[k * 3] = (Math.random() - 0.5) * SAISON_R * 2; saisonPos[k * 3 + 1] = Math.random() * 9; saisonPos[k * 3 + 2] = (Math.random() - 0.5) * SAISON_R * 2; saisonPh[k] = Math.random() * 6.28; }
   const saisonGeo = new THREE.BufferGeometry(); saisonGeo.setAttribute('position', new THREE.BufferAttribute(saisonPos, 3));
-  const saisonMat = new THREE.PointsMaterial({ size: 0.09, color: 0xd9822b, transparent: true, opacity: 0, depthWrite: false });
+  const saisonMat = new THREE.PointsMaterial({ size: 0.09, map: TEX_BLATT, alphaTest: 0.4, color: 0xd9822b, transparent: true, opacity: 0, depthWrite: false });
   const saison = new THREE.Points(saisonGeo, saisonMat); saison.frustumCulled = false; saison.visible = false; scene.add(saison);
   const SAISON = { laub: { farbe: 0xd9822b, fall: 0.7, wind: 0.9, groesse: 0.1 }, schnee: { farbe: 0xffffff, fall: 0.55, wind: 0.35, groesse: 0.07 }, blueten: { farbe: 0xf6c1d4, fall: 0.45, wind: 0.8, groesse: 0.07 } };
   let saisonT = 0;
@@ -2051,9 +2057,9 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     const art = kap <= 4 ? 'laub' : kap <= 6 ? 'schnee' : kap <= 8 ? 'blueten' : null, A = art && SAISON[art];
     const draussen = !welt.raumBei(steuerung.pos.x, steuerung.pos.z);
     const ziel = laeuft && A && draussen && !(sky.night > 0.5) && regenJetzt < 0.1 ? 0.9 : 0;
-    saisonMat.opacity += (ziel - saisonMat.opacity) * Math.min(1, dt * 1.2);
+    saisonMat.opacity = draussen ? saisonMat.opacity + (ziel - saisonMat.opacity) * Math.min(1, dt * 1.2) : 0;
     saison.visible = saisonMat.opacity > 0.02; if (!saison.visible || !A) return;
-    saisonMat.color.setHex(A.farbe); saisonMat.size = A.groesse;
+    saisonMat.color.setHex(A.farbe); saisonMat.size = A.groesse * (art === 'laub' ? 1.4 : 1.1); const tx = art === 'laub' ? TEX_BLATT : TEX_RUND; if (saisonMat.map !== tx) { saisonMat.map = tx; saisonMat.alphaTest = art === 'laub' ? 0.4 : 0.05; saisonMat.needsUpdate = true; }
     saisonT += dt; const c = camera.position, D = SAISON_R * 2;
     for (let k = 0; k < SAISON_N; k++) {
       const i = k * 3, ph = saisonPh[k];
@@ -2065,7 +2071,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     saisonGeo.attributes.position.needsUpdate = true;
   }
   function staubTick(dt) {
-    const r = welt.raumBei(steuerung.pos.x, steuerung.pos.z), ziel = r && !(sky.night > 0.5) ? 0.5 : 0;
+    const r = welt.raumBei(steuerung.pos.x, steuerung.pos.z), ziel = r && !(sky.night > 0.5) ? 0.22 : 0;
     staubMat.opacity += (ziel - staubMat.opacity) * Math.min(1, dt * 1.5);
     staub.visible = staubMat.opacity > 0.01; if (!staub.visible) return;
     staubT += dt; const c = camera.position, D = STAUB_R * 2;

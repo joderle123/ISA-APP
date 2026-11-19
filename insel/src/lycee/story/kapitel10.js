@@ -2,7 +2,8 @@
 // Stärken-Rücken, Erden in fünf Sinnen). Faden @annexe.cam wird aufgelöst: Dario sagt es vor allen, Luca trägt Folgen –
 // Verzeihen muss niemand, fair bleiben schon. Vier Enden je nach bester Freundschaft. Ausblick auf die 6ème (die Band).
 import { S10_RUECKBLICK } from './skills-j1.js';
-const AULA = { noah: [-16.2, -54, 1.1], mila: [-11.8, -54.2, -1.1], ben: [-12.6, -52.4, -2.2], jo: [-15.6, -52.2, 2.2], ayla: [-17.2, -56.4, 1.6], lina: [-10.9, -56.6, -1.5], dario: [-9.8, -55.2, -1.4] };
+// Stuhlkreis vorne in der Aula (Mitte −14.5 | −63.4), Lücke im Süden für den Spieler
+const AULA = { noah: [-16.18, -64.48, 1.00], mila: [-12.82, -64.48, -1.00], ben: [-12.50, -63.34, -1.60], jo: [-16.50, -63.34, 1.60], ayla: [-16.17, -62.31, 2.15], lina: [-12.83, -62.31, -2.15], dario: [-13.56, -61.64, -2.65] };
 const FEST = { rantini: [4.5, 19.5, Math.PI], ben: [4, 14, 0.2], jo: [5.2, 15.4, -0.4], ayla: [2.5, 15, 0.3], noah: [7.2, 13.2, -0.6], mila: [3.2, 12.8, 0.1], lina: [1.8, 13.4, 0.4],
   dario: [5.6, 17.6, Math.PI], kaya: [8.6, 17.2, -2.4], hoffmann: [9.4, 15.8, -2], luca: [11.6, 12.4, -1.2] };
 const F = { noah: { id: 'noah', name: 'Noah', farbe: '#3f78b8' }, mila: { id: 'mila', name: 'Mila', farbe: '#2fb8a8' }, ben: { id: 'ben', name: 'Ben', farbe: '#d9a21b' }, jo: { id: 'jo', name: 'Jo', farbe: '#c0392b' },
@@ -15,11 +16,11 @@ export const SCHRITTE_N10 = [
     fertig: { reden: 'noah', gespraech: 'n10_noah' } },
   { id: 'k10_skills', kap: 10, tag: 'Montag', uhr: 9.9, titel: 'Skills: Dein Jahr', ziel: 'Aula. Herr Kuedes hat eine Wäscheleine voller Fotos gespannt.', marker: 'kaya',
     start: { teleport: 'eingangHof' },
-    leute: { kaya: [-14, -55.5, Math.PI], mesenberg: [-12.2, -55.8, -2.8], ...AULA },
+    leute: { kaya: [-14.50, -65.40, 0.00], mesenberg: [-13.54, -65.16, -0.50], ...AULA },
     fertig: { reden: 'kaya', gespraech: 'n10_skills' } },
   { id: 'k10_ruecken', kap: 10, tag: 'Mittwoch', uhr: 9.9, titel: 'Stärken-Rücken', ziel: 'Aula. Alle haben ein weißes Blatt auf dem Rücken.', marker: 'kaya',
     start: { teleport: 'eingangHof' },
-    leute: { kaya: [-14, -55.5, Math.PI], ...AULA },
+    leute: { kaya: [-14.50, -65.40, 0.00], ...AULA },
     fertig: { reden: 'kaya', gespraech: 'n10_ruecken' } },
   { id: 'k10_luca', kap: 10, tag: 'Donnerstag', uhr: 12.4, titel: 'Luca', ziel: 'Luca sitzt allein in der Skate-Ecke. Ohne Handy.', marker: 'luca',
     start: { teleport: 'eingangHof' },
