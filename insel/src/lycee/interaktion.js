@@ -18,6 +18,34 @@ const BUECHER = [
 import { PINNWAND, PINNWAND_KAPITEL, pinnwandFuerDich, KRITZELEIEN, FUNDKISTE } from './welttexte.js';
 import { leseEcke, HEFTE } from './lesestoff.js';
 const SNACKS = ['Schokoriegel', 'Chips (Paprika)', 'Gummibärchen', 'Kekse', 'Wasser'];
+// Lehrerzimmer (verschlossen): was man durch die Tür hört
+const LAUSCHEN = [
+  '„Wer hat meinen Joghurt aus dem Kühlschrank genommen?“',
+  '„Der Kopierer. Schon wieder. Ich geb auf.“',
+  '„Kaffee ist alle! Das ist ein Notfall.“',
+  '„Die 7P2 hat heute richtig gut mitgemacht.“',
+  '„Herr Kuedes, Ihr Ball liegt schon wieder im Drucker.“',
+  'Ein Mikrowellen-Piepen. Dreimal. Dann Lachen.',
+  '„Wer übernimmt Freitag die Pausenaufsicht?“ – Stille.',
+];
+const SPIEGEL = [
+  'Im Spiegel: du. Ein bisschen müde. Aber da.',
+  'Am Rand klebt ein Zettel: „Du bist mehr als dein Aussehen.“',
+  'Du schneidest eine Grimasse. Der Spiegel auch. Unentschieden.',
+  'Jemand hat mit Kreide geschrieben: „Schau genau hin. Du bist interessant.“',
+];
+const DRUCKER = [
+  'Brrr … zzz. Ein Ohr ist fertig. Noch 2 Stunden 14 Minuten.',
+  'Jetzt hat er zwei Ohren und eine Nase. Sieht aus wie ein Hund. Vielleicht.',
+  'Vier Beine! Der Drucker summt zufrieden.',
+  'Fertig: ein kleiner Bonbon aus Plastik. Daneben ein Zettel: „Für die SePAS. Anfassen erlaubt. – Tiago“',
+];
+const ROBOTER = [
+  'Piep. Der Roboter fährt zehn Zentimeter nach vorn. Dann: „HALLO MENSCH.“',
+  'Piep piep. Er dreht sich einmal im Kreis. Dann bleibt er stehen. Akku leer.',
+  '„ICH BIN EIN ROBOTER. ICH HABE KEINE HAUSAUFGABEN.“ Neidisch.',
+  'Er blinkt rot, dann grün. Tiago hat „Ampel“ programmiert.',
+];
 
 export const KABEL = [['cdi', 14, -62.4], ['kantine', 18.6, -8.2], ['gang', -15.5, -15.8], ['innenhof', -17.2, -44.9], ['skate', -36.4, 6.4]];
 export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton, blattWahl, freiwurf, skate, tt3d = null, spindAuf = null, partner = () => null, freund = () => {}, onKabel = null }) {
@@ -47,6 +75,10 @@ export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton
   dazu(29, 12.5, 2.2, 'Freiwürfe werfen', 'korb', { prio: 1 });
   dazu(29, 25.5, 2.2, 'Freiwürfe werfen', 'korb', { prio: 1 });
   for (const x of [47.4, 52.6, 57.8]) dazu(x, -43.85, 0.9, 'Am Computer', 'computer', { prio: 1 });
+  dazu(3.0, -17.4, 1.0, 'An der Tür lauschen', 'lauschen', { prio: 1 });   // Lehrerzimmer (verschlossen)
+  dazu(61.0, -53.0, 1.0, 'In den Spiegel schauen', 'spiegel', { prio: 1 });   // Kunstraum
+  dazu(63.0, -43.7, 1.1, 'Dem 3D-Drucker zuschauen', 'drucker', { prio: 1 });   // Informatik
+  dazu(61.5, -39.5, 0.9, 'Roboter einschalten', 'roboter', { prio: 1 });
   if (skate) dazu(-29.6, 5.2, 1.5, 'Skateboard fahren', 'skate', { prio: 1 });
   if (tt) dazu(tt.x - 1.3, tt.z, 1.2, 'Tischtennis spielen', 'tischtennis', { prio: 1 });
   // Easter Eggs: Herrn Mesenbergs verlorene Ladekabel (5 Stück), Kritzeleien im WC, die Ente im Brunnen
@@ -158,6 +190,14 @@ export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton
         ui.toast('<b>' + b + ' Ballwechsel</b><span>' + (b && b >= s.merke.ttRekord ? 'Dein bester bisher!' : 'Dein Rekord: ' + s.merke.ttRekord + '.') + '</span>');
         return;
       }
+      case 'lauschen': {
+        const n = s.merke.lauschen = (s.merke.lauschen || 0) + 1; sichern();
+        if (n % 5 === 0) { ui.toast('<b>Die Tür geht auf</b><span>Mme Tidderich schaut raus: „Kann ich helfen?“ Du: „Äh … nein. Schönen Tag!“</span>'); return; }
+        ui.toast('<b>Salle des profs</b><span>(von drinnen) ' + LAUSCHEN[(n - 1) % LAUSCHEN.length] + '</span>'); return;
+      }
+      case 'spiegel': { const n = s.merke.spiegel = (s.merke.spiegel || 0) + 1; sichern(); ui.toast('<b>Spiegel</b><span>' + SPIEGEL[(n - 1) % SPIEGEL.length] + '</span>'); return; }
+      case 'drucker': { const n = s.merke.drucker = Math.min(DRUCKER.length, (s.merke.drucker || 0) + 1); sichern(); ton('klack'); ui.toast('<b>3D-Drucker</b><span>' + DRUCKER[n - 1] + '</span>'); return; }
+      case 'roboter': { const n = s.merke.roboter = (s.merke.roboter || 0) + 1; sichern(); ton('pling'); ui.toast('<b>Roboter vom Coding-Club</b><span>' + ROBOTER[(n - 1) % ROBOTER.length] + '</span>'); return; }
       case 'computer': ui.toast('<b>Anmelden</b><span>Passwort vergessen. Das Passwort für „Passwort vergessen“ auch.</span>'); return;
     }
   }
