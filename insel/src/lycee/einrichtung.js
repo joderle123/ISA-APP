@@ -91,6 +91,61 @@ export function baueEinrichtung({ B, P, C, schild, schilder, stuhl, DECKE }) {
   { const s = schild('Bitte klingeln 🔔', 0.6, 0.2, { bg: '#ffffff', fg: '#2b3a55', rand: '#2b3a55', schrift: 'bold 60px system-ui' }); s.position.set(-21, 1.32, -10.52); schilders(s); }
   D('kk/frame_A', -16.15, -10.0, { s: 0.6, y: 1.5, rot: -Math.PI / 2 });
 
+  // ---------- Werkstatt (Atelier DAP/CCP, x −60 … −36, z −28 … −8): Werkzeugwand, Schraubstöcke, Holz, Bohrmaschine, Projekte ----------
+  { const NZ = -27.8, BRETT = hex('#c9a46a'), GRIFF = ['#d9523c', '#2f6db0', '#e9b949', '#3fa66b'];
+    for (const [a0, a1] of [[-57.2, -50.2], [-45.6, -38.6]]) {
+      box(a0, a1, 1.0, 2.5, NZ, NZ + 0.05, BRETT, { art: 'innen' });
+      for (let x = a0 + 0.1; x < a1 - 0.05; x += 0.2) for (let y = 1.1; y < 2.45; y += 0.2) box(x, x + 0.02, y, y + 0.02, NZ + 0.05, NZ + 0.055, hex('#8a6a42'), { art: 'innen' });   // Lochblech
+      let i = 0;
+      for (let x = a0 + 0.4; x < a1 - 0.3; x += 0.55, i++) {
+        const k = i % 4, g = hex(GRIFF[i % 4]);
+        if (k === 0) { box(x - 0.02, x + 0.02, 1.5, 1.85, NZ + 0.06, NZ + 0.1, g, { art: 'innen' }); box(x - 0.08, x + 0.08, 1.85, 1.92, NZ + 0.05, NZ + 0.11, hex('#5d6573'), { art: 'innen' }); }   // Hammer
+        else if (k === 1) { box(x - 0.025, x + 0.025, 1.7, 1.82, NZ + 0.06, NZ + 0.1, g, { art: 'innen' }); box(x - 0.006, x + 0.006, 1.45, 1.7, NZ + 0.07, NZ + 0.09, hex('#c9ccd2'), { art: 'innen' }); }   // Schraubendreher
+        else if (k === 2) { box(x - 0.015, x + 0.015, 1.4, 1.9, NZ + 0.06, NZ + 0.09, hex('#8d96a3'), { art: 'innen' }); box(x - 0.05, x + 0.05, 1.86, 1.93, NZ + 0.06, NZ + 0.09, hex('#8d96a3'), { art: 'innen' }); }   // Schlüssel
+        else { box(x - 0.2, x + 0.2, 1.95, 2.2, NZ + 0.06, NZ + 0.08, hex('#c9ccd2'), { art: 'innen' }); box(x + 0.2, x + 0.32, 1.95, 2.12, NZ + 0.06, NZ + 0.1, g, { art: 'innen' }); }   // Säge
+      }
+    }
+    // Arbeitsplatz-Kram auf den drei Bänken: Vogelhaus im Bau, Bretter, Schutzbrille, Zwinge
+    for (let i = 0; i < 3; i++) {
+      const x = -56 + i * 6, y = 0.98, z = -21.4;
+      box(x + 1.2, x + 1.7, y, y + 0.02, z - 0.25, z + 0.25, hex('#d4a373'), { art: 'innen' });
+      box(x + 1.25, x + 1.65, y + 0.02, y + 0.32, z - 0.2, z + 0.2, hex('#d4a373'), { art: 'innen', kanten: 0.85 });                 // Vogelhaus-Korpus
+      box(x + 1.39, x + 1.51, y + 0.12, y + 0.24, z + 0.199, z + 0.205, hex('#3a2a1c'), { art: 'innen' });                              // Flugloch
+      box(x + 1.18, x + 1.72, y + 0.32, y + 0.36, z - 0.26, z + 0.26, hex(['#c0392b', '#2f6db0', '#3fa66b'][i]), { art: 'innen', kanten: 0.8 });   // Dach (bemalt)
+      box(x + 2.2, x + 3.3, y, y + 0.03, z - 0.3, z - 0.12, hex('#e6c8a0'), { art: 'innen' }); box(x + 2.3, x + 3.2, y + 0.03, y + 0.06, z - 0.28, z - 0.14, hex('#d9b98a'), { art: 'innen' });   // Bretter
+      box(x + 2.6, x + 2.82, y, y + 0.05, z + 0.15, z + 0.27, hex('#ffd166'), { art: 'innen' }); box(x + 2.62, x + 2.8, y + 0.05, y + 0.08, z + 0.16, z + 0.26, hex('#9fd0e6'), { art: 'glas' });   // Schutzbrille
+      box(x + 0.6, x + 1.6, 0.06, 0.07, z + 0.6, z + 1.4, hex('#e6d2a8'), { art: 'innen' });                                          // Sägespäne am Boden
+    }
+    // zweite Reihe Werkbänke mit Hockern, gelbe Gehwege am Boden
+    for (let i = 0; i < 3; i++) {
+      const x = -56 + i * 6, z = -16.4;
+      box(x, x + 3.6, 0, 0.9, z - 0.6, z + 0.6, C.holz, { art: 'innen', stoss: true }); box(x - 0.05, x + 3.65, 0.9, 0.98, z - 0.65, z + 0.65, C.holzHell, { art: 'innen' });
+      box(x + 0.4, x + 0.7, 0.98, 1.3, z - 0.4, z - 0.2, C.rot, { art: 'innen' }); box(x + 2.9, x + 3.2, 0.98, 1.3, z + 0.2, z + 0.4, C.rot, { art: 'innen' });
+      for (const [dx, dz] of [[0.9, -1.0], [2.6, -1.0], [0.9, 1.0], [2.6, 1.0]]) D('moebel/Stool', x + dx, z + dz, { h: 0.65 });
+      box(x + 1.4, x + 2.2, 0.98, 1.0, z - 0.3, z + 0.3, hex('#efe6d6'), { art: 'innen' });   // Bauplan
+      box(x + 1.5, x + 2.1, 1.0, 1.003, z - 0.2, z + 0.2, hex('#2f6db0'), { art: 'innen' });
+    }
+    for (const [a0, a1, b0, b1] of [[-58.5, -37.5, -18.6, -18.48], [-58.5, -37.5, -12.4, -12.28], [-58.5, -58.38, -18.6, -12.28]]) box(a0, a1, 0.1, 0.104, b0, b1, hex('#f2c230'), { art: 'innen' });
+    // Ständerbohrmaschine mit gelb-schwarzer Sicherheitsfläche
+    { const bx = -40.2, bz = -13.5;
+      for (let k = 0; k < 8; k++) box(bx - 1.0 + k * 0.25, bx - 0.75 + k * 0.25, 0.1, 0.105, bz - 1.0, bz + 1.0, hex(k % 2 ? '#2b2b33' : '#f2c230'), { art: 'innen' });
+      box(bx - 0.35, bx + 0.35, 0.1, 0.2, bz - 0.3, bz + 0.3, hex('#3f6f5a'), { art: 'innen', stoss: true }); box(bx - 0.06, bx + 0.06, 0.2, 1.7, bz + 0.12, bz + 0.24, hex('#8d96a3'), { art: 'innen' });
+      box(bx - 0.18, bx + 0.18, 1.35, 1.75, bz - 0.25, bz + 0.25, hex('#3f6f5a'), { art: 'innen' }); box(bx - 0.02, bx + 0.02, 1.1, 1.35, bz - 0.12, bz - 0.08, hex('#c9ccd2'), { art: 'innen' });
+      box(bx - 0.22, bx + 0.22, 0.95, 1.0, bz - 0.25, bz + 0.15, hex('#5d6573'), { art: 'innen' });
+      B.kasten.push({ x0: bx - 0.4, x1: bx + 0.4, z0: bz - 0.35, z1: bz + 0.35, y0: 0, y1: 1.8 });
+    }
+    // Holzlager, Kisten, Regal, Eimer, Werkbank
+    D('lager/resource-planks', -38.4, -24.5, { h: 0.8, rot: Math.PI / 2, fest: true }); D('lager/box-large', -38.6, -20.8, { h: 0.9, fest: true }); D('lager/box-large', -38.7, -20.8, { h: 0.7, y: 0.9, rot: 0.4 });
+    D('markt/shelf-boxes', -37.0, -16.8, { h: 2.0, rot: -Math.PI / 2, fest: true }); D('lager/bucket', -42.5, -10.2, { h: 0.45 }); D('lager/workbench', -52.0, -11.2, { h: 0.95, rot: 0, fest: true });
+    // Lampen über den Bänken, Schilder
+    for (let i = 0; i < 3; i++) { const x = -54.2 + i * 6; box(x - 0.04, x + 0.04, 3.2, 4.9, -21.42, -21.38, hex('#2b2b33'), { art: 'innen' }); box(x - 0.45, x + 0.45, 3.0, 3.2, -21.7, -21.1, hex('#3a3f4a'), { art: 'innen' }); box(x - 0.4, x + 0.4, 2.97, 3.0, -21.65, -21.15, C.licht, { art: 'licht' }); }
+    for (const [t, x, bg] of [['Schutzbrille auf! · Lunettes!', -56, '#f2c230'], ['Ordnung = Sicherheit', -42, '#2e9d57']]) { const z = schild(t, 2.2, 0.36, { bg, fg: bg === '#f2c230' ? '#2b2b33' : '#ffffff', schrift: 'bold 72px system-ui' }); z.position.set(x, 2.85, NZ + 0.06); schilders(z); }
+    { const eh = schild('✚ Erste Hilfe', 0.7, 0.3, { bg: '#2e9d57', schrift: 'bold 70px system-ui' }); eh.position.set(-36.2, 1.7, -12); eh.rotation.y = -Math.PI / 2; schilders(eh); box(-36.4, -36.18, 1.1, 1.5, -12.3, -11.7, hex('#ffffff'), { art: 'innen' }); }
+    // fertige Vogelhäuser im Sommer (Abschluss der DAP-Probetage), Kürbis-Laternen im Oktober
+    for (let i = 0; i < 4; i++) { const x = -57.4 + i * 1.1; box(x, x + 0.4, 1.4, 1.7, -27.6, -27.25, hex('#d4a373'), { art: 'innen' }); }
+    D('kk/pumpkin_orange_jackolantern', -46.4, -21.4, { s: 0.35, y: 0.98, saison: 'halloween', rot: 0 });
+  }
+
   // ---------- Kantine: Mülltrennung, Tablettstapel, Obstkorb; Krimskrams auf den Tischen ----------
   for (const [i, f, t] of [[0, '#f2c230', 'Plastik'], [1, '#2f6db0', 'Papier'], [2, '#5d6573', 'Rest']]) {
     const x = 9.0 + i * 0.62; box(x - 0.27, x + 0.27, 0, 0.85, -13.75, -13.35, hex(f), { art: 'innen', stoss: true }); box(x - 0.28, x + 0.28, 0.85, 0.9, -13.76, -13.34, hex('#2b2b33'), { art: 'innen' });
