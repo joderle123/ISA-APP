@@ -7,6 +7,10 @@ const el = (tag, cls, html) => { const e = document.createElement(tag); if (cls)
 
 export function createUI({ root, input, speech }) {
   const hud = el('div', 'ly-hud'); root.appendChild(hud);
+  // Kino-Balken im Gespräch (oben/unten, schmal) – mehr Film, weniger Menü
+  hud.appendChild(el('div', 'ly-kino ly-kino-o')); hud.appendChild(el('div', 'ly-kino ly-kino-u'));
+  // Blende zwischen zwei Szenen: kurz schwarz, Zeitkarte („Dienstag · 10:24 · Kunst“), dann wieder auf
+  const blende = el('div', 'ly-blende'); blende.innerHTML = '<div class="ly-blende-t"></div>'; root.appendChild(blende);
   const auftrag = el('div', 'ly-auftrag', ''); hud.appendChild(auftrag);
   const raum = el('div', 'ly-raum'); hud.appendChild(raum);
   const uhr = el('div', 'ly-uhr'); hud.appendChild(uhr);
@@ -27,9 +31,11 @@ export function createUI({ root, input, speech }) {
 
   // ---------- Auftrag, Raum, Uhr, Hinweis, Toasts ----------
   let letztesZiel = '';
+  ui.blende = (text) => new Promise((ok) => { blende.querySelector('.ly-blende-t').textContent = text || ''; blende.classList.add('an'); setTimeout(ok, 280); });
+  ui.blendeAus = (ms = 650) => new Promise((ok) => setTimeout(() => { blende.classList.remove('an'); ok(); }, ms));
   ui.auftrag = ({ kapitel, titel, ziel, dist } = {}) => {
     if (!titel) { auftrag.hidden = true; return; }
-    auftrag.hidden = false;
+    auftrag.hidden = false; auftrag.classList.remove('ruhe');
     auftrag.innerHTML = '<div class="ly-a-kap">' + esc(kapitel) + ' <button type="button" class="ly-a-vor" aria-label="Ziel vorlesen">🔊</button></div><div class="ly-a-titel">' + esc(titel) + '</div><div class="ly-a-ziel"><span class="ly-a-punkt"></span>' + esc(ziel) +
       (dist != null ? ' <span class="ly-a-dist">' + Math.round(dist) + ' m</span>' : '') + '</div>';
     auftrag.querySelector('.ly-a-vor').onclick = (e) => { e.stopPropagation(); vorlesen(titel + '. ' + ziel); };
@@ -37,6 +43,8 @@ export function createUI({ root, input, speech }) {
     letztesZiel = ziel;
   };
   ui.dist = (d) => { const s = auftrag.querySelector('.ly-a-dist'); const z = auftrag.querySelector('.ly-a-ziel'); if (!z) return; if (d == null) { if (s) s.remove(); return; } if (s) s.textContent = Math.round(d) + ' m'; else z.insertAdjacentHTML('beforeend', ' <span class="ly-a-dist">' + Math.round(d) + ' m</span>'); };
+  // Beim Laufen schrumpft die Ziel-Box auf eine Zeile (Welt vorne), beim Stehenbleiben kommt sie zurück
+  ui.auftragRuhe = (an) => { if (auftrag.classList.contains('ruhe') !== !!an) auftrag.classList.toggle('ruhe', !!an); };
   let raumT = 0;
   ui.raum = (name) => { raum.textContent = name; raum.classList.remove('an'); void raum.offsetWidth; raum.classList.add('an'); clearTimeout(raumT); raumT = setTimeout(() => raum.classList.remove('an'), 2600); };
   ui.uhr = (h, tag) => { const hh = Math.floor(h), mm = Math.floor((h - hh) * 60); uhr.textContent = (tag ? tag.slice(0, 2) + ' ' : '') + String(hh).padStart(2, '0') + ':' + String(mm).padStart(2, '0'); };
@@ -127,7 +135,7 @@ export function createUI({ root, input, speech }) {
     dialogOffen = true; dialog.hidden = false; root.classList.add('ly-im-dialog');
     dialog.className = 'ly-dialog hud-interactive' + (wer ? '' : ' ly-erz');
     dialog.innerHTML = (wer ? '<div class="ly-d-wer" style="--f:' + esc(farbe) + '">' + esc(wer) + '</div>' : '') +
-      '<div class="ly-d-text">' + esc(text) + '</div><div class="ly-d-fuss"><button type="button" class="ly-d-vor" aria-label="Vorlesen" title="Vorlesen">🔊</button>' + (wer ? '<button type="button" class="ly-d-sagt" title="Dieser Satz klingt falsch? Merken (bleibt auf diesem Gerät, ohne Namen).">Sagt keiner so</button>' : '') + '<button type="button" class="ly-d-weiter">Weiter <kbd>E</kbd></button></div>';
+      '<div class="ly-d-text">' + (ui.wenigBewegung ? esc(text) : esc(text).split(' ').map((w, i) => '<span class="ly-w" style="--i:' + Math.min(i, 30) + '">' + w + '</span>').join(' ')) + '</div><div class="ly-d-fuss"><button type="button" class="ly-d-vor" aria-label="Vorlesen" title="Vorlesen">🔊</button>' + (wer ? '<button type="button" class="ly-d-sagt" title="Dieser Satz klingt falsch? Merken (bleibt auf diesem Gerät, ohne Namen).">Sagt keiner so</button>' : '') + '<button type="button" class="ly-d-weiter">Weiter <kbd>E</kbd></button></div>';
     let fertig = false;
     weiterFn = () => { if (fertig) return; fertig = true; weiterFn = null; ok(); };
     dialog.querySelector('.ly-d-weiter').onclick = () => weiterFn && weiterFn();
@@ -250,13 +258,13 @@ export function createUI({ root, input, speech }) {
    zeigeTitel();
   });
 
-  ui.ende = ({ leute, freunde = null, brief = null, staerken, entdeckt, gesamt, kap = 1, ueberschrift = 'Geschafft', weiter = '' }) => new Promise((ok) => {
+  ui.ende = ({ leute, freunde = null, brief = null, staerken, entdeckt, gesamt, kap = 1, ueberschrift = 'Geschafft', weiter = '', vorschau = '' }) => new Promise((ok) => {
     const konfetti = ui.wenigBewegung ? '' : '<div class="ly-konfetti" aria-hidden="true">' + Array.from({ length: 24 }, (_, n) => '<i style="left:' + ((n * 41) % 100) + '%;--d:' + (n % 6) * 0.18 + 's;--f:' + ['#e9734a', '#2fb8a8', '#f2b134', '#5fa0d0', '#e85d75', '#8a7bc8'][n % 6] + ';--r:' + (n * 37 % 360) + 'deg"></i>').join('') + '</div>';
     const k = ebeneAuf('ende', konfetti + '<div class="ly-e-stempel">Kapitel ' + kap + ' ✓</div><h2>' + esc(ueberschrift) + '</h2>' +
       (brief ? '<div class="ly-e-brief"><span class="ly-j-name" style="--f:' + esc(brief.farbe) + '">' + esc(brief.von) + '</span> schreibt dir: „' + esc(brief.text) + '“</div>' : '') + freundesKreis(freunde) + '<div class="ly-e-spalten"><section><h3>Menschen</h3><ul class="ly-j-leute">' + leute.map((l) => '<li><span class="ly-j-name" style="--f:' + esc(l.farbe) + '">' + esc(l.name) + '</span><span class="ly-herzen">' + '♥'.repeat(Math.max(0, Math.min(5, l.herz))) + '<i>' + '♥'.repeat(5 - Math.max(0, Math.min(5, l.herz))) + '</i></span></li>').join('') + '</ul></section>' +
       '<section><h3>Deine Stärken heute</h3><ul class="ly-j-staerken">' + (staerken.length ? staerken.map((s) => '<li><b>' + esc(s.name) + '</b><small>' + esc(s.text) + '</small></li>').join('') : '<li><small>Heute nix Besonderes. Passiert.</small></li>') + '</ul>' +
       '<p class="ly-leer">Entdeckt: ' + entdeckt + ' von ' + gesamt + ' Orten</p></section></div>' +
-      (weiter ? '' : '<p class="ly-e-weiter">Das nächste Kapitel kommt bald.</p>') + '<div class="ly-t-knoepfe">' +
+      (weiter ? '' : '<p class="ly-e-weiter">Das nächste Kapitel kommt bald.</p>') + (vorschau ? '<div class="ly-e-vorschau"><b>Nächstes Mal</b><span>' + esc(vorschau) + '</span></div>' : '') + '<div class="ly-t-knoepfe">' +
       (weiter ? '<button type="button" class="ly-btn ly-primaer" data-a="weiter">' + esc(weiter) + '</button>' : '<button type="button" class="ly-btn ly-primaer" data-a="frei">Weiter herumlaufen</button>') +
       '<button type="button" class="ly-btn" data-a="neu">Kapitel nochmal spielen</button></div>');
     k.querySelectorAll('[data-a]').forEach((b) => { b.onclick = () => { ebeneZu(); ok(b.dataset.a); }; });

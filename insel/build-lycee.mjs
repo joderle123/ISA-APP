@@ -8,7 +8,7 @@ import { fileURLToPath } from 'node:url';
 const root = dirname(fileURLToPath(import.meta.url));
 const result = await build({
   entryPoints: [join(root, 'src/lycee/main.js')],
-  bundle: true, format: 'iife', minify: true, target: ['es2019', 'safari14.1'], write: false, legalComments: 'none',
+  bundle: true, format: 'iife', minify: !process.env.UNMIN, target: ['es2019', 'safari14.1'], write: false, legalComments: 'none',
   define: { 'process.env.NODE_ENV': '"production"' },
   loader: { '.glb': 'binary' },
   logLevel: 'warning',

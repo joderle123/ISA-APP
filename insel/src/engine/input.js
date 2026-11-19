@@ -273,7 +273,7 @@ export function createInput({ root, events, clock = null }) {
       const k = keyMove();
       if (!state.enabled) { state.move.x = 0; state.move.y = 0; state.run = false; return; }
       if (k.any) { state.move.x = k.x; state.move.y = k.y; state.run = true; }
-      else { state.move.x = joyMove.x; state.move.y = joyMove.y; state.run = Math.hypot(joyMove.x, joyMove.y) > 0.82; }
+      else { state.move.x = joyMove.x; state.move.y = joyMove.y; state.run = Math.hypot(joyMove.x, joyMove.y) > 0.65; }
     },
     // Wird am Ende jedes Frames aufgerufen: Deltas und Klick-Flanken zurücksetzen
     endFrame() {

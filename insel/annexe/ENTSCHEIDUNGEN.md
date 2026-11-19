@@ -312,3 +312,21 @@ Ziel war ≤ 200 Aufrufe und ≤ 400k Dreiecke – überall erreicht. Was es geb
 - Leichte Sprache: „statistisch“, „Kriterien“, „Kategorie“, „effizient“, „Algorithmus“, „Datenpunkte“,
   „unwissenschaftlich“, Genitiv/Passiv und Redewendungen durch einfache Wörter ersetzt; SePAS beim ersten Mal erklärt.
 - Doppelte Zeilen und Pointen entfernt (Ben „Respekt. Du lernst schnell“, „falsch geraten“, Kaktus, Rückzug-Karte).
+
+## 19.11. – Fünf Runden Spielqualität (Bewegung, Lebendigkeit, Eintauchen, Haken, Tempo)
+- Runde 1 Bewegung: Schritte hörbar (Holz in Sälen/CDI/SePAS/Turnhalle, sonst Stein); Lauf-/Renn-Animation passt zum
+  echten Tempo (kein Rennen auf der Stelle an Wänden); Sichtfeld weitet sich beim Rennen leicht, wird im Gespräch enger;
+  weiche Stufe am Eingang; im Stand schaut sich die Figur ab und zu um.
+- Runde 2 Lebendigkeit: Stimmengewirr, je mehr Leute in der Nähe (Kantine, Gang, Hof in der Pause) – neue, abschaltbare
+  Ebene im Ton-Motor (Standard aus, andere Spiele unverändert); Schulklingel bei neuer Stunde; Leute drehen sich zu
+  dir, wenn du nah vorbeikommst.
+- Runde 3 Eintauchen: schmale Kino-Balken im Gespräch, Uhr und Ziel-Box blenden dabei aus; beim Laufen schrumpft die
+  Ziel-Box auf eine Zeile (nicht bei Vorlesen).
+- Runde 4 Haken: Am Kapitelende „Nächstes Mal …“ mit einer offenen Frage (ohne Spoiler).
+- Runde 5 Tempo/Gefühl (nach Game-Design-Analyse): Blende mit Zeitkarte („Dienstag · 10:24 · Kunst“) statt harter
+  Teleport-Schnitte; Wörter erscheinen im Gespräch nacheinander (nicht bei „weniger Bewegung“); Kamera folgt beim
+  Rennen schneller, rückt an Wänden weich heran; Touch rennt früher (Joystick 65 %); während der Stunden ist der Hof
+  fast leer (ein Viertel bleibt), in Pausen voll; Kapitel 1: das heimliche Foto kommt nach 5 statt 16 Sekunden;
+  Gruß „beim Sportfest gesehen“ nicht mehr vor dem Sportfest.
+- Offen für später (aus der Analyse): pro Kapitel ein Schritt mit Wahl des Weges und einer zum Hinlaufen; Finale und
+  Darios Geständnis interaktiver; Freunde laufen mit; Freunde an Stammplätzen; laufende Uhr.

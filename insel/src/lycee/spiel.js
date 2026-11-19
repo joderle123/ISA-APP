@@ -78,7 +78,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   const q = rr.quality;
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(52, 1, 0.12, 700);
-  rr.onResize((s) => { camera.aspect = s.aspect || (s.w / s.h); camera.fov = s.portrait ? 64 : 52; camera.updateProjectionMatrix(); });
+  rr.onResize((s) => { camera.aspect = s.aspect || (s.w / s.h); camera.fov = camera.userData.baseFov = s.portrait ? 64 : 52; camera.updateProjectionMatrix(); });
   const input = createInput({ root, events });
   const audio = createAudio();
   const speech = createSpeech({ events, audio });
@@ -135,6 +135,23 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     }).observe(root, { childList: true, subtree: true });
   })();
   const steuerung = createSteuerung({ camera, input, welt });
+  // Schulklingel (elektrisch, synthetisch): Rechteck mit schnellem Zittern, durch einen Tiefpass, 1,3 s
+  try {
+    audio.register('klingel', (ctx, bus) => {
+      const t = ctx.currentTime, o = ctx.createOscillator(), am = ctx.createOscillator(), amG = ctx.createGain(), g = ctx.createGain(), lp = ctx.createBiquadFilter();
+      o.type = 'square'; o.frequency.value = 1180; am.frequency.value = 24; amG.gain.value = 0.5; lp.type = 'lowpass'; lp.frequency.value = 2600;
+      g.gain.setValueAtTime(0.0001, t); g.gain.exponentialRampToValueAtTime(0.05, t + 0.03); g.gain.setValueAtTime(0.05, t + 1.2); g.gain.exponentialRampToValueAtTime(0.0001, t + 1.35);
+      const mod = ctx.createGain(); mod.gain.value = 0.5; am.connect(amG); amG.connect(mod.gain);
+      o.connect(mod); mod.connect(lp); lp.connect(g); g.connect(bus);
+      o.start(t); am.start(t); o.stop(t + 1.4); am.stop(t + 1.4);
+    });
+  } catch (e) { /* Ton nicht verfügbar */ }
+  // Schritte hörbar: Holz in Sälen, CDI, SePAS, Turnhalle; sonst Fliesen/Pflaster
+  steuerung.onSchritt = (rennt) => {
+    if (imGespraech || !laeuft) return;
+    const r = welt.raumBei(steuerung.pos.x, steuerung.pos.z), holz = r && /saal|cdi|profs|sepas|turnhalle/.test(r.id);
+    try { audio.footstep(holz ? 'wood' : 'rock', rennt ? 0.55 : 0.38); } catch (e) { /* Ton noch nicht bereit */ }
+  };
   const tiere = createTiere({ scene, steuerung });
   rr.attachPost({ scene, camera, veil });
 
@@ -298,8 +315,20 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     const innen = f.group.children[0]; if (innen && innen.visible !== v) innen.visible = v;
     return v;
   }
+  // Während der Stunden ist der Hof fast leer (ein Viertel bleibt: Aufsicht, Raucherecke, Schwänzer); in Pausen sind alle draußen
+  function statistenNachZeit(uhr) {
+    const unterricht = (uhr >= 8.0 && uhr < 9.85) || (uhr >= 10.4 && uhr < 11.95) || (uhr >= 13.6 && uhr < 15.4);
+    statisten.forEach((x, n) => {
+      const draussen = !welt.raumBei(x.p.x, x.p.z) && x.p.z > 2;
+      const weg = unterricht && draussen && n % 4 !== 0 && !(x.d.steht && x.d.steht[3] === 'raucht');
+      if (!!x.weg === weg) return;
+      x.weg = weg; x.f.group.visible = !weg; if (x.f.group.children[0]) x.f.group.children[0].visible = !weg;
+      x.h.x = weg ? 1e5 : x.p.x; x.h.z = weg ? 1e5 : x.p.z;
+    });
+  }
   function statistenBewegen(dt) {
     for (const x of statisten) {
+      if (x.weg) continue;
       if (imBild(x.f, x.f.group.position)) x.f.update(dt);
       if (x.rauch) {
         x.rauch.z.getWorldPosition(_wp);
@@ -308,6 +337,13 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
           r.w.visible = r.t < 2.8; r.w.position.y += dt * 0.35; r.w.position.x += dt * 0.08;
           r.w.scale.setScalar(0.6 + r.t * 0.9); r.w.material.opacity = Math.max(0, 0.35 * (1 - r.t / 2.8));
         }
+      }
+      // Wer steht und redet/aufs Handy guckt, dreht sich zu dir, wenn du nah vorbeikommst – und danach zurück
+      if (x.d.steht && x.d.steht[3] !== 'sitzt' && x.f.group.children[0] && x.f.group.children[0].visible) {
+        const sp = steuerung.pos, gp = x.f.group.position, dd = Math.hypot(sp.x - gp.x, sp.z - gp.z);
+        const zielYaw = dd < 2.8 && dd > 0.6 ? Math.atan2(sp.x - gp.x, sp.z - gp.z) : x.d.steht[2];
+        let dy = zielYaw - x.f.group.rotation.y; dy = Math.atan2(Math.sin(dy), Math.cos(dy));
+        x.f.group.rotation.y += dy * Math.min(1, dt * 2.5);
       }
       if (x.d.steht) continue;
       if (x.d.skate) {   // hin und her rollen, an den Enden kurz stehen
@@ -365,9 +401,9 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   // Statisten ansprechen: kurzer, witziger Gruß (zählt für den Schul-Pass)
   const GRUSS = ['Hey! Neu hier, oder?', 'Salut! Coole Schuhe.', 'Moien! Hast du Gerd gesehen? Die Taube mit Hut.', 'Yo. Kennst du Ben? Der schuldet mir 2 €.', 'Hi! … Sorry, ich dachte, du bist wer anders.',
     'Hallo! Ich bin in der 7P1. Wir sind besser. Spaß.', 'Salut! Gleich Französisch. Ohne Hausaufgaben. Hilfe.', 'Moien. Ich hab Hunger. Hast du was?', 'Ey, du bist doch aus der 7P2. Ihr seid laut.', 'Hey. Frag nicht nach Mathe. Bitte.',
-    'Der Automat hat Chips. Unten links. Gern geschehen.', 'Salut! Hab dich beim Sportfest gesehen. Respekt.', 'Yo! Eins gegen eins am Korb? Später?', 'Moien. Noch drei Stunden. Ich zähl mit.'];
+    'Der Automat hat Chips. Unten links. Gern geschehen.', 'Salut! Coole Jacke. Wo gibt’s die?', 'Yo! Eins gegen eins am Korb? Später?', 'Moien. Noch drei Stunden. Ich zähl mit.'];
   const GRUSS_SITZ = ['Mmmh. Willst du probieren? … Nee, Spaß.', '(mit vollem Mund) Hmpf. Hallo.', 'Psst. Ich lern gerade. Also … tu ich so.'];
-  function statistNah(p) { let best = null, bd = 1.7; for (const x of statisten) { const d = Math.hypot(x.f.group.position.x - p.x, x.f.group.position.z - p.z); if (d < bd) { bd = d; best = x; } } return best; }
+  function statistNah(p) { let best = null, bd = 1.7; for (const x of statisten) { if (x.weg) continue; const d = Math.hypot(x.f.group.position.x - p.x, x.f.group.position.z - p.z); if (d < bd) { bd = d; best = x; } } return best; }
   function gruss(x) {
     const sitzt = x.d.steht && x.d.steht[3] === 'sitzt', pool = sitzt ? GRUSS_SITZ : GRUSS;
     const n = S.merke.gegruesst = (S.merke.gegruesst || 0) + 1; sichern();
@@ -912,7 +948,13 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       const bf = besteFreunde()[0];
       audio.play('unlock'); setTimeout(() => audio.play('chime'), 350);
       const wahl = await ui.ende({ ...bilanz(), kap, brief: bf ? { von: LEUTE[bf].name, farbe: LEUTE[bf].farbe, text: nachricht(bf, kap) } : null, ueberschrift: ({ 1: 'Dein erster Tag', 2: 'Deine erste Woche', 3: 'Die Sportfest-Woche', 4: 'Die Test-Woche', 5: 'Die Fake-Woche', 6: 'Die Woche der Grenzen' , 7: 'Die Woche danach', 8: 'Die KI-Woche' , 9: 'Die Akku-Woche' , 10: 'Das Sommerfest' })[kap] || KAPITEL[kap],
-        weiter: weiterIdx >= 0 ? 'Weiter: Kapitel ' + (kap + 1) + ' „' + KAPITEL[kap + 1] + '“' : '' });
+        weiter: weiterIdx >= 0 ? 'Weiter: Kapitel ' + (kap + 1) + ' „' + KAPITEL[kap + 1] + '“' : '',
+        // Haken fürs nächste Kapitel (kein Spoiler, nur die Frage)
+        vorschau: weiterIdx >= 0 ? ({ 1: 'Montag. Eine Liste. Und Noah ist Platz 1.', 2: 'Sportfest. #3 kommt. Und es trifft jemanden, den du magst.',
+          3: 'Ein Test. Ein Fenster. Und ein Foto, das es nicht geben dürfte.', 4: 'Alle denken, du bist @annexe.cam. Wie beweist man das Gegenteil?',
+          5: 'Mila hat einen Beweis. Er wird dir nicht gefallen.', 6: 'Luca will reden. Ehrlich, sagt er. Glaubst du ihm?',
+          7: 'Ein Video von Mme Tidderich. 300 Herzen. Es ist nicht echt.', 8: 'Dario kann nicht schlafen. Er will dir etwas sagen.',
+          9: 'Sommerfest. Ein Kreis. Und jemand muss etwas zugeben.' })[kap] || '' : '' });
       if (wahl === 'weiter') danach = () => starteSchritt(weiterIdx, true);
       else if (wahl === 'neu') { S.fertig = false; danach = () => starteSchritt(startIdx, true); }
       else ui.auftrag({ kapitel: kapName(kap), ...FREI });
@@ -1239,10 +1281,16 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       if (b && st.kap !== vorher.kap) setTimeout(() => ui.toast('<b>' + LEUTE[b].name + ' (' + stufe(S.freund[b]) + ')</b><span>„' + GRUSS[b] + '“</span>', 'ly-t-herz'), 2500);
     }
     sky.time.setTimeOfDay(st.uhr); ui.uhr(st.uhr, st.tag);
+    // Schulklingel, wenn am selben Tag eine neue Stunde/Pause beginnt
+    if (mitStart !== false && vorher && vorher.tag === st.tag && Math.abs(st.uhr - vorher.uhr) >= 0.4 && st.uhr < 16.5) setTimeout(() => { try { audio.play('klingel'); } catch (e) { /* kein Ton */ } }, 600);
     ui.bingo(null);
-    await stelleLeute(st.leute || {});
     const ort = st.start && st.start.teleport ? welt.orte[st.start.teleport] : null;
+    const mitBlende = !!(ort && mitStart !== false && vorher && i > 0);
+    if (mitBlende) { const hh = Math.floor(st.uhr), mm = Math.round((st.uhr - hh) * 60); await ui.blende((st.tag || '') + ' · ' + hh + ':' + String(mm).padStart(2, '0') + ' · ' + st.titel); }
+    statistenNachZeit(st.uhr);
+    await stelleLeute(st.leute || {});
     if (ort && mitStart !== false) steuerung.teleport(ort.x, ort.z, ort.yaw);
+    if (mitBlende) ui.blendeAus();
     if (bus) { bus.position.x = st.id === 'ankunft' || st.fertig.ort === 'bus' ? -12 : 300; busFaehrt = 0; }
     ui.auftrag({ kapitel: kapName(st.kap), titel: st.titel, ziel: st.ziel });
     if (st.id === 'bingo') zeigeBingo();
@@ -1662,6 +1710,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   }
 
   // ---------- Schleife ----------
+  let laufZeit = 0;
   let laeuft = false, raumAlt = undefined, geheimT = 0, klangT = 1, bankT = 0;
   // Während eines Minispiels auf eigener Fläche (Bandprobe, Tischtennis, Freiwurf) ruht die 3D-Welt fast ganz:
   // sie ist ohnehin verdeckt, und der Takt im Spiel braucht die Rechenzeit.
@@ -1723,6 +1772,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       r.visible = !z.person;
     });
     if (ziele.length) { let dmin = Infinity; for (const z of ziele) dmin = Math.min(dmin, Math.hypot(z.x - p.x, z.z - p.z)); ui.dist(dmin > 4 ? dmin : null); } else ui.dist(null);
+    laufZeit = steuerung.laeuft ? laufZeit + dt : Math.max(0, laufZeit - dt * 4);
+    ui.auftragRuhe && ui.auftragRuhe(laufZeit > 5 && !ui.einstellungen().vorlesen);
     // Richtungspfeil am Bildschirmrand, wenn das Ziel nicht im Bild ist (gegen Verlaufen)
     {
       let zn = null, dn = Infinity; for (const z of ziele) { const d = Math.hypot(z.x - p.x, z.z - p.z); if (d < dn) { dn = d; zn = z; } }
@@ -1747,7 +1798,10 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (rid !== raumAlt) { if (raumAlt !== undefined) ui.raum(raum ? raum.name : 'Schulhof'); raumAlt = rid; }
     raumLicht.intensity += ((raum ? 1.15 : 0) - raumLicht.intensity) * Math.min(1, dt * 3);
     // Geräusche: draußen Wind und Vögel (am Tag), auf dem Hof Stimmen; drinnen leise, in der Kantine Geschirr. Kein Meer.
-    audio.setAmbience({ waves: 0, wind: raum ? 0 : 0.35, birds: raum ? 0 : 1, day: 1 - (sky.night || 0), night: raum ? 0 : (sky.night || 0) });
+    // Stimmengewirr: je mehr Leute in der Nähe, desto lauter (Kantine, Gang, Hof in der Pause)
+    let nah = 0; { const sp = steuerung.pos; for (const x of statisten) { if (x.weg) continue; const g = x.f.group.position; if (Math.abs(g.x - sp.x) < 14 && Math.abs(g.z - sp.z) < 14) nah++; } }
+    const gewirr = Math.min(1, nah / 7) * (raum ? 1 : 0.6) * (sky.night > 0.5 ? 0.2 : 1);
+    audio.setAmbience({ waves: 0, wind: raum ? 0 : 0.35, birds: raum ? 0 : 1, day: 1 - (sky.night || 0), night: raum ? 0 : (sky.night || 0), crowd: gewirr });
     audio.update();
     klangT -= dt;
     if (klangT <= 0) {

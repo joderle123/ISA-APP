@@ -24,9 +24,9 @@ export function ceilingCurve(n = 2048, knee = 0.36, ceiling = CEILING) {
 export function createAudio({ context = null, destination = null } = {}) {
   let ctx = null;
   let master, glue, limiter, ceiling, sfxBus, ambBus, musicBus, reverbIn, noiseBuf;
-  let wind = null, waves = null;
+  let wind = null, waves = null, crowd = null;
   let nextWave = 0, nextChirp = 0, nextCricket = 0;
-  const amb = { wind: 0.6, waves: 0.8, night: 0, day: 1 };
+  const amb = { wind: 0.6, waves: 0.8, night: 0, day: 1, crowd: 0 };   // crowd: Stimmengewirr (0 = aus, Standard)
   const settings = { volume: 0.8, music: 0.7 };
   let duck = 0;                 // 0..1: Musik/Ambiente leiser (Vorlesen, Pause)
   const heart = { enabled: true, running: false, bpm: 60, next: 0, level: 0.06 };
@@ -106,6 +106,14 @@ export function createAudio({ context = null, destination = null } = {}) {
     vs.connect(vf); vf.connect(vg); vg.connect(ambBus);
     vs.start();
     waves = { g: vg, f: vf };
+    // Stimmengewirr: zwei Rausch-Bänder im Sprachbereich, langsam wackelnd (nur wenn amb.crowd > 0)
+    const cs = noiseSrc(), cg = ctx.createGain(); cg.gain.value = 0;
+    for (const [fq, q, v] of [[420, 1.6, 1], [1150, 2.2, 0.55]]) {
+      const bf = ctx.createBiquadFilter(); bf.type = 'bandpass'; bf.frequency.value = fq; bf.Q.value = q;
+      const bg = ctx.createGain(); bg.gain.value = v; cs.connect(bf); bf.connect(bg); bg.connect(cg);
+      lfo(0.7 + Math.random() * 0.6, fq * 0.18, bf.frequency); lfo(1.3 + Math.random(), v * 0.45, bg.gain, 2);
+    }
+    cg.connect(ambBus); cs.start(); crowd = { g: cg };
     nextWave = ctx.currentTime + 0.5;
     nextChirp = ctx.currentTime + 3;
     nextCricket = ctx.currentTime + 1;
@@ -118,6 +126,7 @@ export function createAudio({ context = null, destination = null } = {}) {
     const t = ctx.currentTime;
     // Wind-Grundpegel
     wind.g.gain.setTargetAtTime((0.03 + amb.wind * 0.06) * (1 - duck * 0.5), t, 0.8);
+    if (crowd) crowd.g.gain.setTargetAtTime((amb.crowd || 0) * 0.07 * (1 - duck * 0.6), t, 0.9);
     // Brandung
     if (t > nextWave - 0.05) {
       const peak = (0.03 + 0.16 * amb.waves) * (1 - duck * 0.5);

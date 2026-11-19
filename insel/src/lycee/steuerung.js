@@ -111,6 +111,9 @@ export function createSteuerung({ camera, input, welt, figur = null }) {
   }
   const _o = new THREE.Vector3(), _d = new THREE.Vector3(), _ziel = new THREE.Vector3(), _blick = new THREE.Vector3();
   let camDist = 5.2;
+  // Spielgefühl (Qualitätsrunde 1): Schritte hörbar, Blick weitet sich beim Rennen, Stufen weich, Figur zappelt im Stand
+  let schrittWeg = 0, fovJetzt = 0, idleZeit = 0;
+  s.onSchritt = null;
   function kamera(dt, sofort) {
     if (s.kameraAus) return;   // Minispiel (Basketball) führt die Kamera selbst
     const c = s.cam;
@@ -132,7 +135,7 @@ export function createSteuerung({ camera, input, welt, figur = null }) {
       const frei = strahl(_o, _d, ziel);
       // Wand oder Regal dicht hinter der Figur: Kamera nicht hineinschieben, sondern näher heran und etwas höher (über die Schulter)
       const will = Math.max(0.3, frei - 0.25);
-      camDist = sofort ? will : (will < camDist ? will : camDist + (will - camDist) * Math.min(1, dt * 3));
+      camDist = sofort || (will < camDist && frei < 0.6) ? will : camDist + (will - camDist) * Math.min(1, dt * (will < camDist ? 20 : 3));
       _ziel.copy(_o).addScaledVector(_d, camDist);
       if (camDist < 0.9) _ziel.y += (0.9 - camDist) * 0.4;
       if (s.figur && !s.brett) s.figur.group.visible = camDist > 0.5;
@@ -141,6 +144,9 @@ export function createSteuerung({ camera, input, welt, figur = null }) {
       if (camDist < 0.9) { const vor = (0.9 - camDist) * 4; _blick.x -= _d.x * vor; _blick.z -= _d.z * vor; _blick.y = 1.35; }   // dicht an der Wand: nach vorn schauen
     }
     if (sofort) camera.position.copy(_ziel); else camera.position.lerp(_ziel, Math.min(1, dt * (s.fokus ? 4 : 12)));
+    // Sichtfeld: beim Rennen ein paar Grad weiter (Gefühl von Tempo), im Gespräch etwas enger
+    const basis = camera.userData.baseFov;
+    if (basis) { const ziel = s.fokus ? -4 : (s.tempo > 3.2 && !s.brett ? 5 : s.brett && s.tempo > 3 ? 7 : 0); fovJetzt += (ziel - fovJetzt) * Math.min(1, dt * (sofort ? 99 : 3)); camera.fov = basis + fovJetzt; camera.updateProjectionMatrix(); }
     camera.lookAt(_blick);
   }
 
@@ -165,16 +171,23 @@ export function createSteuerung({ camera, input, welt, figur = null }) {
     }
     if (s.tempo > 0.01) {
       const nx = pos.x + Math.sin(s.yaw) * s.tempo * dt, nz = pos.z + Math.cos(s.yaw) * s.tempo * dt;
-      const [x, z] = loese(nx, nz); pos.x = x; pos.z = z;
+      const [x, z] = loese(nx, nz);
+      const weg = Math.hypot(x - pos.x, z - pos.z); schrittWeg += weg; pos.x = x; pos.z = z;
+      // gegen eine Wand gelaufen: kein Rennen auf der Stelle – Tempo folgt der echten Bewegung
+      if (dt > 0) { const ist = weg / dt; if (ist < s.tempo * 0.6) s.tempo += (ist - s.tempo) * Math.min(1, dt * 14); }
+      const schritt = s.tempo > 3.2 ? 1.25 : 0.74;
+      if (schrittWeg > schritt) { schrittWeg = 0; if (s.onSchritt && s.tempo > 0.4) s.onSchritt(s.tempo > 3.2); }
       // Kamera folgt langsam hinter die Laufrichtung
-      if (!st.look.dx && staerke > 0.05 && Math.abs(mx) < 0.9) { let d = s.yaw - c.yaw; d = Math.atan2(Math.sin(d), Math.cos(d)); c.yaw += d * Math.min(1, dt * 0.9) * Math.min(1, s.tempo / GEHEN); }
+      if (!st.look.dx && staerke > 0.05 && Math.abs(mx) < 0.9) { let d = s.yaw - c.yaw; d = Math.atan2(Math.sin(d), Math.cos(d)); c.yaw += d * Math.min(1, dt * (s.tempo > 3.2 ? 1.8 : 1.0)) * Math.min(1, s.tempo / GEHEN); }
     }
     // Rampe zum Eingang (Stufen): leicht anheben
-    pos.y = (pos.z > -2 && pos.z < -0.6 && Math.abs(pos.x) < 4.2) ? 0.16 : 0;
+    { const zy = (pos.z > -2 && pos.z < -0.6 && Math.abs(pos.x) < 4.2) ? 0.16 : 0; pos.y += (zy - pos.y) * Math.min(1, dt * 12); }
     if (s.figur) {
       s.figur.group.position.copy(pos); s.figur.group.rotation.y = s.yaw;
-      const lauf = s.sitzt ? 'Idle' : s.tempo > 3.2 ? 'Run' : s.tempo > 0.3 ? 'Walk' : (s.emote && performance.now() < s.emoteBis) ? s.emote : 'Idle';
-      s.figur.spiele(lauf, { tempo: lauf === 'Walk' ? Math.max(0.7, s.tempo / GEHEN) : 1 });
+      idleZeit = (s.tempo < 0.3 && !s.sitzt) ? idleZeit + dt : 0;
+      const zappel = idleZeit > 8 && ((idleZeit - 8) % 14) < 2.8;   // im Stand: ab und zu umschauen
+      const lauf = s.sitzt ? 'Idle' : s.tempo > 2.9 ? 'Run' : s.tempo > 0.3 ? 'Walk' : (s.emote && performance.now() < s.emoteBis) ? s.emote : zappel ? 'Idle_Neutral' : 'Idle';
+      s.figur.spiele(lauf, { tempo: lauf === 'Walk' ? Math.max(0.7, Math.min(1.3, s.tempo / GEHEN)) : lauf === 'Run' ? Math.max(0.8, Math.min(1.15, s.tempo / RENNEN)) : 1 });
     }
     s.laeuft = s.tempo > 0.3;
     kamera(dt, false);

@@ -834,3 +834,27 @@ kbd { display: inline-block; min-width: 1.5em; padding: 0 .35em; margin-right: .
 .ly-bark::after { content: ''; position: absolute; left: 50%; bottom: -7px; margin-left: -7px; border: 7px solid transparent; border-bottom: 0; border-top-color: #fff; }
 .ly-bark[hidden] { display: none; }
 @keyframes ly-bark-pop { from { transform: translate(-50%, -100%) scale(.6); } to { transform: translate(-50%, -100%) scale(1); } }
+
+/* ---------- Spielqualität Runde 3: Eintauchen ---------- */
+.ly-auftrag { transition: padding .35s ease, opacity .35s ease, max-width .35s ease; }
+.ly-auftrag.ruhe { opacity: .82; padding: 7px 12px; }
+.ly-auftrag.ruhe .ly-a-kap, .ly-auftrag.ruhe .ly-a-titel { display: none; }
+.ly-kino { position: absolute; left: 0; right: 0; height: min(5.5vh, 46px); background: rgba(8, 10, 18, .9); pointer-events: none; transition: transform .45s ease; }
+.ly-kino-o { top: 0; transform: translateY(-101%); }
+.ly-kino-u { bottom: 0; transform: translateY(101%); }
+.ly-im-dialog .ly-kino { transform: none; }
+.ly-im-dialog .ly-auftrag, .ly-im-dialog .ly-uhr { opacity: 0; transition: opacity .3s; }
+@media (prefers-reduced-motion: reduce) { .ly-kino, .ly-auftrag { transition: none; } }
+
+/* ---------- Spielqualität Runde 4: Haken am Kapitelende ---------- */
+.ly-e-vorschau { margin: 14px 0 4px; padding: 12px 16px; border-radius: 14px; background: #2b3a55; color: #fff; display: flex; gap: 12px; align-items: baseline; flex-wrap: wrap; box-shadow: 0 6px 18px rgba(0,0,0,.18); }
+.ly-e-vorschau b { font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; color: #ffd67a; }
+.ly-e-vorschau span { font-size: 1.02rem; font-weight: 700; }
+
+/* ---------- Spielqualität Runde 5: Blende, Wörter ---------- */
+.ly-blende { position: absolute; inset: 0; background: #0b0f1a; opacity: 0; pointer-events: none; transition: opacity .28s ease; z-index: 40; display: grid; place-items: center; }
+.ly-blende.an { opacity: 1; }
+.ly-blende-t { color: #fff; font-weight: 800; letter-spacing: .04em; font-size: clamp(1rem, 2.6vw, 1.5rem); opacity: .92; text-align: center; padding: 0 16px; }
+.ly-d-text .ly-w { animation: lyWortEin .22s ease-out both; animation-delay: calc(var(--i) * 28ms); }
+@keyframes lyWortEin { from { opacity: 0; transform: translateY(3px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .ly-d-text .ly-w { animation: none; } .ly-blende { transition: none; } }
