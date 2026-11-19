@@ -6,11 +6,13 @@ import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 export const LYCEE = join(dirname(fileURLToPath(import.meta.url)), '..', '..', 'src', 'lycee');
-export const DATEIEN = ['story/kapitel1.js', 'story/kapitel2.js', 'story/kapitel3.js', 'story/kapitel4.js', 'story/kapitel5.js', 'story/kapitel6.js', 'story/kapitel7.js', 'story/kapitel8.js', 'story/kapitel9.js', 'story/kapitel10.js', 'geschichte.js', 'kapitel2.js', 'kapitel3.js', 'kapitel4.js', 'kapitel5.js', 'kapitel6.js', 'kapitel7.js', 'faeden.js', 'freunde.js', 'spiel.js', 'stimmen.js', 'welttexte.js', 'gedaechtnis.js', 'stammgaeste.js', 'hund.js'];
+export const DATEIEN = ['story/kapitel1.js', 'story/kapitel2.js', 'story/kapitel3.js', 'story/kapitel4.js', 'story/kapitel5.js', 'story/kapitel6.js', 'story/kapitel7.js', 'story/kapitel8.js', 'story/kapitel9.js', 'story/kapitel10.js', 'geschichte.js', 'kapitel2.js', 'kapitel3.js', 'kapitel4.js', 'kapitel5.js', 'kapitel6.js', 'kapitel7.js', 'faeden.js', 'freunde.js', 'spiel.js', 'stimmen.js', 'welttexte.js', 'gedaechtnis.js', 'stammgaeste.js', 'hund.js', 'situationen.js'];
 
 const ZEILE = /\[\s*'([a-z][a-z0-9_]*)'\s*,\s*'((?:[^'\\]|\\.)*)'\s*\]/g;   // ['wer', 'Text']
 const WAHL = /\bt:\s*'((?:[^'\\]|\\.)*)'/g;                                   // { t: 'Antwort' }
 const LISTE = /^\s{2}([a-z][a-z0-9_]*):\s*\[((?:\s*'(?:[^'\\]|\\.)*',?)+)\s*\],?\s*$/;   // id: ['…', '…'] (Plaudern)
+const SAG = /\ba\.sag\(\s*'([a-zA-Z][a-zA-Z0-9_]*)'\s*,\s*'((?:[^'\\]|\\.)*)'\s*\)/g;   // a.sag('wer', 'Text') (situationen.js)
+const AWAHL = /\ba\.wahl\(\[(.*?)\]\)/;                                       // a.wahl(['…', '…'])
 const PAAR = /^\s{2}([a-z0-9][a-z0-9_]*):\s*'((?:[^'\\]|\\.)*)',?\s*$/;                    // id: '…' (Gruß)
 const BLOCK = /^\s{0,4}([a-zA-Z][a-zA-Z0-9_]*)\s*:\s*(?:\[|\(|async|\{|function)/;
 
@@ -36,6 +38,10 @@ export function texte() {
         if (/^(icon|motiv|haus|skate|stadt)$/.test(m[1])) continue;
         out.push({ datei: d, zeile: i + 1, block, art: 'zeile', wer: m[1], text: unesc(m[2]) });
       }
+      SAG.lastIndex = 0;
+      while ((m = SAG.exec(ohneKomm))) out.push({ datei: d, zeile: i + 1, block, art: 'zeile', wer: m[1], text: unesc(m[2]) });
+      const aw = ohneKomm.match(AWAHL);
+      if (aw) for (const s of aw[1].match(/'((?:[^'\\]|\\.)*)'/g) || []) out.push({ datei: d, zeile: i + 1, block, art: 'antwort', wer: 'du', text: unesc(s.slice(1, -1)) });
       WAHL.lastIndex = 0;
       while ((m = WAHL.exec(ohneKomm))) out.push({ datei: d, zeile: i + 1, block, art: 'antwort', wer: 'du', text: unesc(m[1]) });
       const l = ohneKomm.match(LISTE);

@@ -119,7 +119,7 @@ export function createUI({ root, input, speech }) {
 
   // ---------- Einstellungen (nur auf diesem Gerät): Textgröße, Vorlesen, weniger Bewegung, Linkshänder, ruhig, Lautstärke ----------
   const EINST = 'lycee.einstellungen';
-  const STANDARD = { text: 'normal', vorlesen: false, bewegung: false, links: false, ruhig: false, leicht: false, vib: true, laut: 0.8, musik: 0.7, effekte: 0.9, umgebung: 0.8, tempo: 1, kontrast: false, lesbar: false, zeitlos: false, grafik: 'auto' };
+  const STANDARD = { text: 'normal', vorlesen: false, bewegung: false, links: false, ruhig: false, leicht: false, vib: true, laut: 0.8, musik: 0.7, effekte: 0.9, umgebung: 0.8, tempo: 1, kontrast: false, lesbar: false, zeitlos: false, grafik: 'auto', risiko: true };
   let einst = { ...STANDARD };
   try { einst = { ...STANDARD, ...JSON.parse(localStorage.getItem(EINST) || '{}') }; } catch (e) { /* egal */ }
   function wendeEinst() {
@@ -147,6 +147,7 @@ export function createUI({ root, input, speech }) {
       schalter([['vorlesen', 'Texte vorlesen'], ['lesbar', 'Gut lesbare Schrift'], ['kontrast', 'Hoher Kontrast']]) + regler('tempo', 'Vorlese-Tempo', 0.6, 1.4) +
       '<h3 class="ly-einst-h">🕹️ Bewegung und Steuerung</h3>' +
       schalter([['bewegung', 'Weniger Bewegung'], ['zeitlos', 'Ohne Zeitdruck'], ['leicht', 'Minispiele leichter'], ['links', 'Linkshändig (Joystick rechts)'], ['vib', 'Vibration (Handy)'], ['ruhig', 'Ruhiger Modus (keine Durchsagen)']]) +
+      '<h3 class="ly-einst-h">🧭 Für Lehrpersonen</h3>' + schalter([['risiko', 'Schwierige Situationen (ab Kapitel 4: Kiffen, Klauen …)']]) +
       '<h3 class="ly-einst-h">🔊 Ton</h3>' + regler('laut', 'Lautstärke') + regler('musik', 'Musik') + regler('effekte', 'Geräusche') + regler('umgebung', 'Umgebung') +
       '<h3 class="ly-einst-h">🖥️ Grafik</h3>' +
       '<div class="ly-einst-grafik">' + [['auto', 'Auto'], ['low', 'Akku sparen'], ['medium', 'Mittel'], ['high', 'Schön']].map(([g, t]) => '<button type="button" data-g="' + g + '" class="' + (einst.grafik === g ? 'an' : '') + '">' + t + '</button>').join('') + '</div>' +

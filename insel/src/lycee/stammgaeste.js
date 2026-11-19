@@ -54,6 +54,12 @@ export const STAMM = [
       10: [['s', 'Es ist fertig. Willst du es hören?'], { wahl: [{ t: '„Klar!“', merke: 'gillesLied', dann: [['e', 'Gilles spielt Luftgitarre.'], ['s', '„Der Bus fährt um sieben, ich steh um zehn nach da …“'], ['s', '„… ein Jahr voller Soße, Screens und Leuten, die bleiben.“'], ['s', '„Und Gerd, die Taube, schaut von oben zu.“'], ['e', 'Ein paar Leute auf den Stufen klatschen. Gilles wird rot.'], ['s', 'Danke, dass du jede Woche gekommen bist. Ehrlich.']] },
         { t: '„Spiel es am Schulfest. Ich komm.“', merke: 'gillesLied', dann: [['s', 'Deal. Erste Reihe. Und du klatschst zuerst, ja?']] }] }],
     },
+    reaktion: (m) => [   // Situationen (situationen.js): Gilles ist in der 5ème, wie Dex
+      ['nein', 'gegangen', 'umgelenkt', 'ausrede'].includes(m.sit_wald) ? { key: 'stx_gilles_wald', zeilen: [['s', 'Dex hat erzählt, dass du an der Lichtung warst.'], ['s', 'Und dass du nicht mitgemacht hast.'],
+        ['s', 'Ich kenn Dex seit der Grundschule. Er war mal anders.'], ['s', 'Du hast was gemacht, was ich mit zwölf nicht konnte.']] } : null,
+      m.sit_wald === 'mitgemacht' ? { key: 'stx_gilles_wald2', zeilen: [['s', 'Ich hab das Video gesehen. Mo hat es rumgeschickt.'], ['s', 'Ich sag nix Schlaues. Nur: Ich stand auch mal da.'],
+        ['s', 'Hat mir nichts gebracht. Außer Bauchweh. Und ein Video.'], ['s', 'Wenn du reden willst: Ich sitz jeden Tag hier.']] } : null,
+    ],
     nochmal: ['(summt) Der Bus fährt um sieben …', 'Reim auf „Annexe“? Ich find keinen.', 'Komm nächste Woche. Neuer Vers.'],
   },
   {
@@ -70,6 +76,8 @@ export const STAMM = [
         ['s', 'Danke fürs Mitmachen. Jede Woche.'], ['s', 'Du kommst auf Seite drei: „Treueste Leserschaft“.'], ['s', 'Ohne Namen natürlich. Aber du weißt es.']],
     },
     reaktion: (m) => [
+      m.sit_laden === 'geklaut' || m.sit_wald === 'mitgemacht' ? { key: 'stx_zoe_video', zeilen: [['s', 'Jemand wollte uns ein Video schicken. Für die Zeitung.'],
+        ['s', 'Wir drucken keine Videos. Schon gar nicht von Leuten aus der 7ème.'], ['s', 'Ich hab es gelöscht. Nur, dass du es weißt.']] } : null,
       m.geholfen >= 3 ? { key: 'stx_zoe_helfen', zeilen: [['s', 'Für die Annexe News: Hier hilft jemand ständig Leuten.'], ['s', 'Ohne Namen. Aber ich weiß, wer es ist.']] } : null,
     ],
     nochmal: ['Die Ausgabe hängt Freitag an der Pinnwand.', 'Hast du eine Story für uns? Nur nette.', 'Psst. Nächste Woche: Umfrage über Hausaufgaben.'],
@@ -118,6 +126,12 @@ export const STAMM = [
       9: [['s', 'Juni! Erdbeertaart. Und du siehst müde aus, Schatz.'], ['s', 'Wenn’s schwer ist: reden. Mit wem, der zuhört.'], ['s', 'Ich hör auch zu. Und hab Kuchen.']],
       10: [['s', 'Letzte Woche! Eis gibt’s jetzt auch. Vanille, Erdbeer, Pistazie.'], ['s', 'Du warst ein gutes Jahr lang hier. Bis September, Schatz. Äddi!']],
     },
+    reaktion: (m) => [   // Rosa und Tante Lisette (Épicerie) sind Freundinnen – und reden
+      m.zurueckgebracht ? { key: 'stx_rosa_lisette', zeilen: [['s', 'Lisette hat mir was erzählt. Ohne Namen.'], ['s', 'Jemand kam zurück und hat bezahlt. Sie war ganz gerührt.'],
+        ['s', '… Du wirst ja rot. Ich sag nichts. Ein Croissant?']] } : null,
+      m.sit_laden === 'erwischt' ? { key: 'stx_rosa_regal', zeilen: [['s', 'Lisette sagt, du räumst Regale ein wie ein Profi.'], ['s', 'Fehler machen alle. Wiedergutmachen nur wenige.']] } : null,
+      m.sit_laden === 'bezahlt' || m.sit_laden === 'gesagt' ? { key: 'stx_rosa_gut', zeilen: [['s', 'Lisette erzählt von dir. Nur Gutes.'], ['s', 'Pass auf, sonst wirst du hier noch berühmt.']] } : null,
+    ],
     nochmal: ['Merci villmools, Schatz!', 'Nicht drängeln, jeder kriegt was.', 'Wéi geet et? Gut? Gut.'],
   },
   {
@@ -180,6 +194,7 @@ export const STAMM = [
       10: [['s', 'Jahresbewertung. Kantine: vier Sterne.'], ['s', 'Die Leute hier: fünf.'], ['s', 'Das Essen war nie der Punkt. Hab ich jetzt gecheckt.']],
     },
     reaktion: (m) => [
+      m.sit_laden === 'bezahlt' ? { key: 'stx_lou_bezahlt', zeilen: [['s', 'Gerücht: Jemand hat in der Épicerie bezahlt. Obwohl einer gefilmt hat.'], ['s', 'Fünf Sterne. Von fünf.']] } : null,
       m.dazugesetzt ? { key: 'stx_lou_dazu', zeilen: [['s', 'Ich hab gesehen, wie du dich zu wem gesetzt hast. Einfach so.'], ['s', 'Fünf Sterne. Nicht fürs Essen. Für dich.']] } : null,
     ],
     nochmal: ['(kaut) Mmh. Vorläufig drei Sterne.', 'Psst. Die Pommes heute: Geheimtipp.', 'Setz dich, wenn du magst.'],
@@ -209,6 +224,8 @@ export const STAMM = [
     reaktion: (m) => [
       m.huetchen >= 2 ? { key: 'stx_fernand_h2', zeilen: [['s', 'Beide Hütchen! Vierzig von vierzig.'], ['s', 'Weißt du, wie lange ich darauf gewartet hab? Merci.']] } : null,
       m.huetchen === 1 ? { key: 'stx_fernand_h1', zeilen: [['s', 'Du hast ein Hütchen zurückgebracht? Ich hab es gesehen.'], ['s', 'Neununddreißig. Eins ist noch auf der Flucht.']] } : null,
+      m.sit_wald ? { key: 'stx_fernand_wald', zeilen: [['s', 'Jeden Montag räum ich die Lichtung auf. Dosen, Stummel, alles.'], ['s', 'Die denken, das räumt sich selbst auf.'],
+        ['s', 'Tut es nicht. Das bin ich. Mit dem Rücken.']] } : null,
       m.lauschen ? { key: 'stx_fernand_lausch', zeilen: [['s', 'Du hast am Lehrerzimmer gelauscht. Hab ich gesehen.'], ['s', 'Keine Sorge. Mach ich auch. Wegen dem Joghurt.']] } : null,
     ],
     nochmal: ['Moien. Alles heil?', 'Wenn du eine Schraube findest: Die gehört mir.', 'Die Uhr geht immer noch nach. Ich weiß.'],
