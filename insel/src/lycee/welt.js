@@ -536,10 +536,7 @@ export function baueWelt({ material, materialInnen, materialLaub }) {
       box(Math.min(fx, fx + 0.012 * s), Math.max(fx, fx + 0.012 * s), 3.12, 3.46, MZ - 0.26, MZ + 0.26, new THREE.Color('#f4f6f8'), { art: 'innen' });
       const kx = bx + 0.38 * s;
       box(Math.min(bx, kx - 0.2 * s), Math.max(bx, kx - 0.2 * s), 3.03, 3.07, MZ - 0.04, MZ + 0.04, ORANGE, { art: 'innen' });
-      const ring = new THREE.Mesh(new THREE.TorusGeometry(0.23, 0.018, 6, 22), new THREE.MeshLambertMaterial({ color: '#e0662e' }));
-      ring.rotation.x = Math.PI / 2; ring.position.set(kx, 3.05, MZ); gruppe.add(ring);
-      const netz = new THREE.Mesh(new THREE.CylinderGeometry(0.23, 0.15, 0.42, 12, 3, true), new THREE.MeshBasicMaterial({ color: '#f4f4f4', wireframe: true, transparent: true, opacity: 0.8 }));
-      netz.position.set(kx, 2.84, MZ); gruppe.add(netz);
+      // Ring und Netz: korb3d.js (echter Ring mit Physik für das Freiwurf-Spiel)
     }
 
     // --- Sprossenwand an der Ostwand (zwei Blöcke à vier Felder)

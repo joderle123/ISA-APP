@@ -7,11 +7,12 @@ import * as THREE from 'three';
 
 const G = 9.81, BALL_R = 0.12, RING_R = 0.23, ROHR = 0.018, RING_Y = 3.05;
 // Die beiden Körbe am Hof (welt.js: korb(B, 29, 8.6, 1, 'z') und korb(B, 29, 29.4, -1, 'z'))
-// und die beiden in der Turnhalle (korb(B, 34.6, -18, 1) und korb(B, 57.4, -18, -1), Brett quer zur x-Achse).
+// und die beiden in der Turnhalle (welt.js, Brett an Auslegern, quer zur x-Achse).
 // n = Richtung vom Brett zum Spielfeld, brett = Punkt auf der Brettfläche.
 const KOERBE = [
   ...[{ x: 29, z: 8.6, s: 1 }, { x: 29, z: 29.4, s: -1 }].map((k) => ({ ring: new THREE.Vector3(k.x, RING_Y, k.z + 0.05 * k.s), n: { x: 0, z: k.s }, brett: { x: k.x, z: k.z - 0.25 * k.s } })),
-  ...[{ x: 34.6, s: 1 }, { x: 57.4, s: -1 }].map((k) => ({ ring: new THREE.Vector3(k.x + 0.6 * k.s, RING_Y, -18), n: { x: k.s, z: 0 }, brett: { x: k.x + 0.3 * k.s, z: -18 } })),
+  // Turnhalle (umgebaut 19.11.): Brett 1,6 m vor der Stirnwand (Innenkante 34,175 bzw. 57,825), Vorderseite 5 cm davor, Ring 38 cm vor dem Brett
+  ...[{ x: 34.175, s: 1 }, { x: 57.825, s: -1 }].map((k) => ({ ring: new THREE.Vector3(k.x + (1.6 + 0.38) * k.s, RING_Y, -18), n: { x: k.s, z: 0 }, brett: { x: k.x + (1.6 + 0.05) * k.s, z: -18 } })),
 ];
 
 function ballTextur() {
