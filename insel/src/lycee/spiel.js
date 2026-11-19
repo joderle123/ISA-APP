@@ -1615,7 +1615,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   ui.onJournal = () => {
     if (!S || imGespraech) return;
     const b = bilanz();
-    ui.journal({ name: S.name, stundenplan: S.stundenplan, leute: b.leute, freunde: b.freunde, staerken: b.staerken, geheimnisse: GEHEIMNISSE.filter((g) => S.entdeckt.includes(g.id)), gesamt: GEHEIMNISSE.length, lernkarten: S.lernkarten || [], heft: S.skillsHeft || [], erinnerungen: S.erinnerungen || [], leiter: leiterJournal(), zaehler: zaehler(), pass: ABZEICHEN.map((x) => ({ sy: x.sy, t: x.t, hinweis: x.hinweis, hat: (S.pass || []).includes(x.id) })) });
+    ui.journal({ name: S.name, stundenplan: S.stundenplan, leute: b.leute, freunde: b.freunde, staerken: b.staerken, geheimnisse: GEHEIMNISSE.filter((g) => S.entdeckt.includes(g.id)), gesamt: GEHEIMNISSE.length, lernkarten: S.lernkarten || [], heft: S.skillsHeft || [], erinnerungen: S.erinnerungen || [], stamm: STAMM.map((q) => ({ name: q.name, farbe: q.farbe, ort: q.ort || '', text: q.steckbrief || '', kennt: !!S.merke['stk_' + q.id], besuche: Object.keys(S.merke).filter((k) => k.startsWith('stb_' + q.id + '_')).length })), leiter: leiterJournal(), zaehler: zaehler(), pass: ABZEICHEN.map((x) => ({ sy: x.sy, t: x.t, hinweis: x.hinweis, hat: (S.pass || []).includes(x.id) })) });
   };
   // Running Gags als Zähler im Journal (werden nie kleiner)
   function zaehler() {
@@ -1640,7 +1640,11 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     const st = SCHRITTE[S.schritt], p = steuerung.pos;
     // Nur das Erdgeschoss-Gelände: Räume ohne „Stockwerk“-Angabe; doppelte Namen zusammen lassen
     const MARKE = { bus: '🚌 Bus', hof: 'Schulhof', skateEcke: '🛹 Skate-Ecke', korbfeld: '🏀 Korb', tischtennis: '🏓 Tischtennis', sportplatz: '🏃 Sportplatz', innenhof: 'Innenhof', fahrrad: '🚲 Fahrräder', bank: 'Bank' };
-    ui.karte({ marken: Object.entries(MARKE).filter(([id]) => welt.orte[id]).map(([id, t]) => ({ x: welt.orte[id].x, z: welt.orte[id].z, t })), raeume: welt.raeume.filter((r) => r.x1 - r.x0 < 120), ich: { x: p.x, z: p.z, yaw: steuerung.yaw }, ziele: zielPunkte().map((z) => ({ x: z.x, z: z.z })), titel: st && !S.fertig ? st.titel : 'Freie Zeit' });
+    // Stammgäste: mit 💬, solange diese Woche noch nicht besucht, bekannte mit Namen
+    const kapK = (st && st.kap) || 1;
+    const stammMarken = STAMM.map((q) => { const neu = !S.merke['stb_' + q.id + '_' + (Object.keys(q.besuch).map(Number).filter((k) => k <= kapK).sort((a, b) => b - a)[0])]; return { x: q.steht[0], z: q.steht[1], t: (neu ? '💬 ' : '') + (S.merke['stk_' + q.id] ? q.name.split(' ')[0] : '?') }; });
+    stammMarken.push({ x: hund.pos.x, z: hund.pos.z, t: '🐕' + (S.merke.hundFreund ? ' Bonbon' : '') });
+    ui.karte({ marken: Object.entries(MARKE).filter(([id]) => welt.orte[id]).map(([id, t]) => ({ x: welt.orte[id].x, z: welt.orte[id].z, t })).concat(stammMarken), raeume: welt.raeume.filter((r) => r.x1 - r.x0 < 120), ich: { x: p.x, z: p.z, yaw: steuerung.yaw }, ziele: zielPunkte().map((z) => ({ x: z.x, z: z.z })), titel: st && !S.fertig ? st.titel : 'Freie Zeit' });
   };
   ui.onWenigBewegung = (v) => { steuerung.wenigBewegung = !!v; }; ui.onWenigBewegung(ui.wenigBewegung);
   ui.bodyscanFrei = () => !!(S && S.merke && S.merke.bodyscanGemacht);

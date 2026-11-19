@@ -31,7 +31,7 @@ const zoe = (k, vorher, nachher) => (m) => [...(k > 1 ? zoeErgebnis(k - 1)(m) : 
 
 export const STAMM = [
   {
-    id: 'gilles', name: 'Gilles (5ème)', farbe: '#6b4e8a',
+    id: 'gilles', ort: 'Innenhof, Sitzstufen', steckbrief: '5ème. Schreibt ein Lied über die Annexe. Jede Woche ein Vers.', name: 'Gilles (5ème)', farbe: '#6b4e8a',
     aussehen: { modell: 'menschen', stil: 'Casual2', haut: '#e0b48c', haar: '#2b1d14', oben: '#6b4e8a', unten: '#2d3748', schuhe: '#f2f2f2', hoehe: 1.8, frisur: 'locken' },
     steht: [-11.6, -46.25, 0, 'sitzt'],
     besuch: {
@@ -52,7 +52,7 @@ export const STAMM = [
     nochmal: ['(summt) Der Bus fährt um sieben …', 'Reim auf „Annexe“? Ich find keinen.', 'Komm nächste Woche. Neuer Vers.'],
   },
   {
-    id: 'zoe', name: 'Zoé · Annexe News', farbe: '#e85d75',
+    id: 'zoe', ort: 'Eingangshalle', steckbrief: 'Macht die Schülerzeitung. Jede Woche eine Umfrage.', name: 'Zoé · Annexe News', farbe: '#e85d75',
     aussehen: { modell: 'frauen', stil: 'Casual', haut: '#8d5a3b', haar: '#1b1410', oben: '#e85d75', unten: '#2d3748', schuhe: '#ffffff', hoehe: 1.58 },
     steht: [-4.4, -6.4, 0.3, 'redet'],
     besuch: {
@@ -67,7 +67,7 @@ export const STAMM = [
     nochmal: ['Die Ausgabe hängt Freitag an der Pinnwand.', 'Hast du eine Story für uns? Nur nette.', 'Psst. Nächste Woche: Umfrage über Hausaufgaben.'],
   },
   {
-    id: 'jeff', name: 'Jeff (6ème)', farbe: '#3f78b8',
+    id: 'jeff', ort: 'Eingangshalle, Fundkiste', steckbrief: 'Verliert jede Woche etwas. Gibt nie auf.', name: 'Jeff (6ème)', farbe: '#3f78b8',
     aussehen: { modell: 'menschen', stil: 'Casual', haut: '#f1c7a2', haar: '#d9b36a', oben: '#3f78b8', unten: '#3a3f4b', schuhe: '#e85d75', hoehe: 1.6, kopf: 'cap', kopfFarbe: '#e9b949' },
     steht: [5.4, -12.1, Math.PI / 2, 'handy'],
     besuch: {
@@ -88,7 +88,7 @@ export const STAMM = [
     nochmal: ['Suchst du auch was? Wir könnten ein Team sein.', 'Fundkiste. Zweites Zuhause.', 'Wenn du was findest, ist es wahrscheinlich meins.'],
   },
   {
-    id: 'rosa', name: 'Rosa · Boulangerie', farbe: '#c0392b',
+    id: 'rosa', ort: 'Bäckerei gegenüber', steckbrief: 'Kennt jeden. Backt, was gerade Saison hat.', name: 'Rosa · Boulangerie', farbe: '#c0392b',
     aussehen: { modell: 'frauen', stil: 'Casual', haut: '#f0c9a8', haar: '#7a7a7a', oben: '#ffffff', unten: '#c0392b', schuhe: '#2b2b2b', hoehe: 1.6 },
     steht: [0.4, 56.2, Math.PI, 'redet'],
     besuch: {
@@ -106,7 +106,7 @@ export const STAMM = [
     nochmal: ['Merci villmools, Schatz!', 'Nicht drängeln, jeder kriegt was.', 'Wéi geet et? Gut? Gut.'],
   },
   {
-    id: 'nik', name: 'Opa Nik', farbe: '#5a6b5a',
+    id: 'nik', ort: 'Bushaltestelle', steckbrief: 'Füttert Gerd. Erzählt vom alten Junglinster.', name: 'Opa Nik', farbe: '#5a6b5a',
     aussehen: { modell: 'menschen', stil: 'Suit', haut: '#f1c7a2', haar: '#d8d8d8', oben: '#6f7b5a', unten: '#3a3f4b', schuhe: '#3a2a1c', hoehe: 1.72, kopf: 'muetze', kopfFarbe: '#5a4a3a' },
     steht: [-23.2, 41.85, 0, 'sitzt'],
     besuch: {
@@ -124,7 +124,7 @@ export const STAMM = [
     nochmal: ['Gerd! … Er ignoriert mich.', 'Der Bus ist wieder zu spät. Wie 1974.', 'Setz dich ruhig. Die Bank ist für alle.'],
   },
   {
-    id: 'paulo', name: 'Paulo · Lieferant', farbe: '#2f6b57',
+    id: 'paulo', ort: 'Hinterhof der Kantine', steckbrief: 'Bringt Gemüse. Und jede Woche ein Wort Portugiesisch.', name: 'Paulo · Lieferant', farbe: '#2f6b57',
     aussehen: { modell: 'menschen', stil: 'Casual', haut: '#c68e64', haar: '#1b1410', oben: '#2f6b57', unten: '#2d3748', schuhe: '#3a2a1c', hoehe: 1.76, kopf: 'cap', kopfFarbe: '#2f6b57' },
     steht: [31.7, -11.4, 0, 'redet'],
     besuch: {
