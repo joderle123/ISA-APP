@@ -2689,6 +2689,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     get zustand() { return S; }, get schritt() { return SCHRITTE[S ? S.schritt : 0].id; }, get imGespraech() { return imGespraech; },
     welt, steuerung, leute, sky, camera, scene, req, ui, rr,
     springe: async (i) => { await starteSchritt(typeof i === 'number' ? i : SCHRITTE.findIndex((s) => s.id === i), true); },
+    sitProbe: (id) => situationProbieren({ situation: id, name: 'Sam', figur: 0 }),   // Test: Situation wie „Für Lehrpersonen“ starten
     teleport: (ort, yaw) => { const o = typeof ort === 'string' ? welt.orte[ort] : ort; steuerung.teleport(o.x, o.z, yaw !== undefined ? yaw : o.yaw); },
     rede, los, audio, SITZ, input, get spruch() { return { wer: !!spruchWer }; }, get naechste() { return naechste && naechste.id; },
     get probe() { return probe; }, set mutTempo(v) { mutTempo = v; },

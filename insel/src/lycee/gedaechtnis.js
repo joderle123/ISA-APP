@@ -216,6 +216,52 @@ export const GEDAECHTNIS = [
   { id: 'hoffmannFrage', wer: 'hoffmann', ab: 2, bis: 4, wenn: m('hoffmannGefragt'), g: [
     ['hoffmann', 'Du hast am ersten Tag nach @annexe.cam gefragt.'],
     ['hoffmann', 'Gute Frage. Ich hab sie weitergegeben. Wie sagt ihr … safe.'] ] },
+  // ---------- aus den schwierigen Situationen (situationen.js) – Freunde kommen später darauf zurück ----------
+  { id: 'sitWaldNein', wer: 'ben', ab: 5, wenn: (x) => ['nein', 'gegangen', 'umgelenkt', 'ausrede'].includes(x.sit_wald), g: [
+    ['ben', 'Gerücht: Du warst an der Lichtung. Und bist einfach gegangen?'],
+    ['ben', 'Ich hätte mich das nicht getraut. Ehrlich.'] ] },
+  { id: 'sitWaldMit', wer: 'noah', ab: 5, wenn: (x) => x.sit_wald === 'mitgemacht', g: [
+    ['noah', 'Ich hab das Video gesehen. Von der Lichtung.'],
+    ['noah', 'Du sahst nicht aus, als hättest du Spaß. Alles okay?'] ] },
+  { id: 'sitLadenGeklaut', wer: 'mila', ab: 6, wenn: (x) => x.sit_laden === 'geklaut' && !x.zurueckgebracht, g: [
+    ['mila', 'Das Épicerie-Video. Ich hab es nicht weitergeschickt.'],
+    ['mila', 'Tante Lisette ist nett. Nur so als Info.'] ] },
+  { id: 'sitLadenZurueck', wer: 'lina', ab: 6, wenn: m('zurueckgebracht'), g: [
+    ['lina', 'Tante Lisette erzählt, jemand kam zurück und hat bezahlt.'],
+    ['lina', '(lächelt) Du musst nichts sagen.'] ] },
+  { id: 'sitWetteWippe', wer: 'jo', ab: 6, wenn: (x) => x.sit_wette === 'wippe', g: [
+    ['jo', 'Wippen-Turnier am Spielplatz? Ohne mich? Verrat!'],
+    ['jo', 'Nächstes Mal bin ich dabei. Ich bin Wippen-Profi.'] ] },
+  { id: 'sitWetteDosen', wer: 'ayla', ab: 6, wenn: (x) => x.sit_wette === 'getrunken', g: [
+    ['ayla', 'Du sahst am Morgen aus wie ein Zombie. Die Dosen?'],
+    ['ayla', 'Ich trink so was nicht mehr. Mein Herz hat mal Techno gemacht.'] ] },
+  { id: 'sitWandKiesser', wer: 'luca', ab: 7, wenn: (x) => x.sit_graffiti === 'kiesser', g: [
+    ['luca', 'Der mit dem D3X malt jetzt die große Wand im Neubau.'],
+    ['luca', 'Krass gut. Angeblich wegen dir.'] ] },
+  { id: 'sitWandGespruht', wer: 'kenan', ab: 7, wenn: (x) => x.sit_graffiti === 'gespruht', g: [
+    ['kenan', 'Gelbe Finger, letzte Woche. Ich sag nix.'],
+    ['kenan', 'Fernand hat zwei Stunden geschrubbt. Nur so.'] ] },
+  { id: 'sitKisteKuedes', wer: 'chiara', ab: 7, wenn: m('kisteKuedes'), g: [
+    ['chiara', 'Rafa spielt jetzt ohne Kisten. Er sagt, du bist schuld.'],
+    ['chiara', '(grinst) Im guten Sinn.'] ] },
+  { id: 'sitHalleGefilmt', wer: 'dario', ab: 8, wenn: (x) => x.sit_halle === 'gefilmt' && !x.halleGeloescht, g: [
+    ['dario', 'Das Video von hinter der Turnhalle. Kam von deinem Handy, oder?'],
+    ['dario', 'Sami geht da jetzt nicht mehr lang.'] ] },
+  { id: 'sitHalleSami', wer: 'dario', ab: 8, wenn: (x) => x.sit_halle === 'sami', g: [
+    ['dario', 'Du hast dich neben Sami gestellt? Vor allen?'],
+    ['dario', 'Das hat bei mir damals keiner gemacht.'] ] },
+  { id: 'sitHalleHandys', wer: 'ben', ab: 8, wenn: (x) => x.sit_halle === 'handys', g: [
+    ['ben', '„Handys runter.“ Hab gehört, das warst du.'],
+    ['ben', 'Bruder. Respekt.'] ] },
+  { id: 'sitVapeKai', wer: 'noah', ab: 9, wenn: m('vapeKuedes'), g: [
+    ['noah', 'Kai sagt, du bist mit ihm zur SePAS. Ohne Show.'],
+    ['noah', 'So was merkt man sich.'] ] },
+  { id: 'sitLinkGehackt', wer: 'mila', ab: 9, wenn: (x) => x.sit_link === 'eingeloggt', g: [
+    ['mila', 'Dein Konto hat mir was Komisches geschrieben. Gehackt, oder?'],
+    ['mila', 'Passiert den Klügsten. Mir auch schon.'] ] },
+  { id: 'sitVideoLenning', wer: 'lina', ab: 10, wenn: m('lenningGesagt'), g: [
+    ['lina', 'Mme Lenning war heute irgendwie anders. Freundlicher.'],
+    ['lina', 'Weißt du, warum? … Egal. Schön.'] ] },
 ];
 
 // Ruf: Was Fremde auf dem Hof über dich sagen (Statisten-Sprüche). Gute und weniger gute Taten.

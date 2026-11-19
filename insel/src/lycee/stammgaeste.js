@@ -262,8 +262,7 @@ export const STAMM = [
     },
     reaktion: (m) => [
       m.bandMal ? { key: 'stx_noor_band', zeilen: [['s', 'Du hast getrommelt! Ich hab’s durch die Wand gehört.'], ['s', (m.bandRekord || 0) >= 70 ? 'Ehrlich: Das war gut. Echt gut.' : 'Laut. Mutig. Weiter üben. Mach ich auch.']] } : null,
-    ],
-    reaktion: (m) => [   // Situation „Die Wand“: Noor hat letztes Jahr die Trommel im Bushäuschen gemalt
+      // Situation „Die Wand“: Noor hat letztes Jahr die Trommel im Bushäuschen gemalt
       m.graffitiGesagt ? { key: 'stx_noor_wand1', zeilen: [['s', 'Die neue Trommel ist fertig. Mit deinen Farben.'], ['s', 'Ehrlich sein war schwer, oder? Für mich auch. Zuhören.'], ['s', 'Aber jetzt ist sie schöner als vorher.']] } : null,
       m.sit_graffiti === 'reden' ? { key: 'stx_noor_wand2', zeilen: [['s', 'Dex hat sich entschuldigt. DEX! Bei mir!'], ['s', 'Er malt die Trommel neu. Ich sag ihm, welche Farben.']] } : null,
       m.sit_graffiti === 'weggemacht' ? { key: 'stx_noor_wand3', zeilen: [['s', 'Meine Trommel im Bushäuschen ist jetzt rosa. Ein bisschen.'], ['s', 'Komisch. Gefällt mir sogar.']] } : null,
@@ -301,8 +300,7 @@ export const STAMM = [
     reaktion: (m) => [
       m.drucker >= 4 ? { key: 'stx_tiago_druck', zeilen: [['s', 'Der Plastik-Bonbon ist fertig! Du hast zugeschaut?'], ['s', 'Dann bist du offiziell Zeuge. Ich trag dich ein.']] } : null,
       m.roboter ? { key: 'stx_tiago_rob', zeilen: [['s', 'Du hast meinen Roboter angemacht? Hat er „HALLO MENSCH“ gesagt?'], ['s', 'Hab ich ihm beigebracht. Ich bin stolz.']] } : null,
-    ],
-    reaktion: (m) => [   // Situation „Fast gewonnen“: Rafa und die Kisten
+      // Situationen „Fast gewonnen“ (Rafa und die Kisten) und „Gratis“ (Fake-Link)
       m.sit_link ? { key: 'stx_tiago_link', zeilen: [['s', 'Gratis-Diamanten? Das heißt Phishing. Wie Angeln. Und du bist der Fisch.'], ['s', 'Ich hab im Coding-Club eine Folie dazu gemacht. Drei Fragen.']] } : null,
       m.sit_kiste ? { key: 'stx_tiago_kiste', zeilen: [['s', 'Rafa war bei mir. Wegen der Kisten.'], ['s', 'Mein Spiel hat jetzt einen Knopf: „Keine Kisten“.'], ['s', 'Er macht nichts. Aber er fühlt sich gut an.']] } : null,
     ],

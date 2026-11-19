@@ -76,3 +76,14 @@ test('Rückblick im Journal: neutral, je Szene eine Zeile, Wiedergutmachung sich
 test('kurze Sätze für spätere Besuche gibt es für alle, die bleiben', () => {
   for (const [id, p] of Object.entries(SIT_LEUTE)) if (p.bleibt || p.immer || p.stumm) assert.ok(sitSaetze(id, {}).length >= 1, id);
 });
+
+test('Stammgäste behalten ihre alten Reaktionen neben den neuen (kein doppelter Schlüssel)', async () => {
+  const { STAMM } = await import('../../src/lycee/stammgaeste.js');
+  const keys = (id, m) => (STAMM.find((s) => s.id === id).reaktion(m) || []).filter(Boolean).map((r) => r.key);
+  assert.ok(keys('noor', { bandMal: 1 }).includes('stx_noor_band'));
+  assert.ok(keys('noor', { graffitiGesagt: true }).includes('stx_noor_wand1'));
+  assert.ok(keys('tiago', { roboter: true }).includes('stx_tiago_rob'));
+  assert.ok(keys('tiago', { sit_kiste: 'erklaert' }).includes('stx_tiago_kiste'));
+  assert.ok(keys('fernand', { huetchen: 2 }).includes('stx_fernand_h2'));
+  assert.ok(keys('fernand', { sit_wald: 'nein' }).includes('stx_fernand_wald'));
+});

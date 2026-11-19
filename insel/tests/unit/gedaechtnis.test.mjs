@@ -8,6 +8,8 @@ const story = readdirSync(new URL('../../src/lycee/story/', import.meta.url)).fi
   .map((f) => readFileSync(new URL('../../src/lycee/story/' + f, import.meta.url), 'utf8')).join('\n');
 const gesetzt = new Set();
 for (const m of story.matchAll(/merke:\s*(\[[^\]]*\]|'[^']*')/g)) for (const f of m[1].matchAll(/'([A-Za-z0-9_]+)'/g)) gesetzt.add(f[1]);
+// Auch die schwierigen Situationen (situationen.js) setzen Entscheidungen: a.merke('…')
+for (const m of readFileSync(new URL('../../src/lycee/situationen.js', import.meta.url), 'utf8').matchAll(/a\.merke\('([A-Za-z0-9_]+)'/g)) gesetzt.add(m[1]);
 const quelle = readFileSync(new URL('../../src/lycee/gedaechtnis.js', import.meta.url), 'utf8');
 
 test('Ids sind eindeutig, Zeitfenster stimmen', () => {
