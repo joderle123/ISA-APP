@@ -3,11 +3,14 @@
 //  · Bücher fallen gelassen  → helfen (Hilfsbereitschaft)
 //  · Handy auf der Bank      → ehrlich abgeben, nicht reinschauen (Privatsphäre)
 //  · Jemand sitzt allein     → dazusetzen, nichts sagen müssen (Dazugehören)
+//  · Ein oranges Hütchen     → zu Fernand zurückbringen (Hausmeister, Stammgast: zwei sind seit dem Sportfest „auf der Flucht“)
 import * as THREE from 'three';
 
 export function createZufall({ scene, steuerung, welt, statisten, blase, sag, waehle, dialogZu, ton, zustand, sichern, toast }) {
   let akt = null, warte = 45 + Math.random() * 30, nr = 0;
-  const ARTEN = ['buecher', 'handy', 'allein'];
+  const ARTEN = ['buecher', 'handy', 'allein', 'huetchen'];
+  const HUETCHEN_ORTE = [[-58, 4], [-36, 12], [14, 30], [38, 24], [-44, -34], [24, -24], [-6, 44], [48, 2]];
+  const huetchenGeo = new THREE.ConeGeometry(0.22, 0.52, 12), huetchenMat = new THREE.MeshLambertMaterial({ color: '#ff7a1a' });
   const buchMat = ['#c0392b', '#2f6db0', '#3fa66b', '#e9c46a'].map((c) => new THREE.MeshLambertMaterial({ color: c }));
   const buchGeo = new THREE.BoxGeometry(0.22, 0.04, 0.3);
   const handyMesh = (() => {
@@ -41,6 +44,17 @@ export function createZufall({ scene, steuerung, welt, statisten, blase, sag, wa
       akt = { art, teile: [h], ort: { x: s.x, z: s.z }, text: 'Handy anschauen', t: 0, max: 90 };
       return true;
     }
+    if (art === 'huetchen') {
+      if ((S().merke || {}).huetchen >= 2) return false;
+      const orte = HUETCHEN_ORTE.filter(([x, z]) => dist({ x, z }, p) > 8 && dist({ x, z }, p) < 45);
+      if (!orte.length) return false;
+      const [x, z] = orte[Math.floor(Math.random() * orte.length)];
+      const g = new THREE.Group(); const c = new THREE.Mesh(huetchenGeo, huetchenMat); c.position.y = 0.28; c.castShadow = true; g.add(c);
+      const fuss = new THREE.Mesh(new THREE.BoxGeometry(0.46, 0.04, 0.46), huetchenMat); fuss.position.y = 0.03; g.add(fuss);
+      g.position.set(x, 0, z); g.rotation.z = 0.0; scene.add(g);
+      akt = { art, teile: [g], ort: { x, z }, text: 'Oranges Hütchen aufheben', t: 0, max: 150 };
+      return true;
+    }
     if (art === 'allein') {
       const x = statisten().find((s) => frei(s) && s.d.steht && s.d.steht[3] === 'sitzt' && dist(s.f.group.position, p) > 4 && dist(s.f.group.position, p) < 18
         && !statisten().some((o) => o !== s && frei(o) && dist(o.f.group.position, s.f.group.position) < 2.5));
@@ -58,6 +72,7 @@ export function createZufall({ scene, steuerung, welt, statisten, blase, sag, wa
     tick(dt, darf) {
       if (akt) {
         akt.t += dt;
+        if (akt.art === 'huetchen') akt.teile[0].rotation.z = Math.sin(akt.t * 2.2) * 0.06;
         if (akt.art === 'handy') { const sch = akt.teile[0].children[1]; if (sch) sch.visible = Math.sin(akt.t * 5) > -0.2 || akt.t % 6 > 1; }
         if (akt.t > akt.max && !akt.bei) {
           if (akt.art === 'buecher') blase(akt.x, 'Okay … mach ich halt allein.', 2600);
@@ -95,6 +110,11 @@ export function createZufall({ scene, steuerung, welt, statisten, blase, sag, wa
         }
         await sag('erzaehler', 'Vielleicht kommt die Person ja zurück.'); dialogZu(); akt.bei = false; akt.t = akt.max - 8; return;
       }
+      if (a.art === 'huetchen') {
+        ton('pling'); const n = s.merke.huetchen = (s.merke.huetchen || 0) + 1; sichern();
+        toast(n >= 2 ? '<b>🟠 Hütchen 2 von 2</b><span>Das letzte! Du stellst es neben Fernands Leiter. Vierzig von vierzig.</span>' : '<b>🟠 Hütchen 1 von 2</b><span>Ein Hütchen vom Sportfest. Du stellst es neben Fernands Leiter im Gang.</span>', 'ly-t-ent');
+        weg(); return;
+      }
       if (a.art === 'allein') {
         const sitz = (welt.sitze || []).filter((q) => dist(q, a.ort) < 1.6 && dist(q, a.ort) > 0.4).sort((m, n) => dist(m, steuerung.pos) - dist(n, steuerung.pos))[0];
         if (sitz && steuerung.setzen) steuerung.setzen(sitz.x, sitz.z, sitz.rot);
@@ -106,6 +126,7 @@ export function createZufall({ scene, steuerung, welt, statisten, blase, sag, wa
       }
     },
     weg,
+    probe(art) { if (akt) weg(); nr = Math.max(0, ARTEN.indexOf(art)); return starte(); },   // für Tests: eine Begegnung sofort starten
   };
   return z;
 }

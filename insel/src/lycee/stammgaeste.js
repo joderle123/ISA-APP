@@ -9,6 +9,7 @@
 // Szene: Liste aus ['s', text] (Stammgast), ['du', text] (Spielfigur), ['e', text] (Erzähler)
 //        oder { wahl: [{ t, merke?, dann: [...] }] }.  {name} wird ersetzt.
 // Rückblick: eine Szene kann eine Funktion (merke) => Liste sein, um frühere Antworten aufzugreifen.
+// reaktion (optional) = (merke) => { key, zeilen } | null – einmalige Antwort auf etwas, das die Spielfigur in der Welt getan hat.
 
 const UMFRAGE = {
   1: { frage: 'Erste Woche. Ein Wort für die Annexe?', opt: ['Groß', 'Laut', 'Eigentlich okay'], quote: [31, 44, 25] },
@@ -187,6 +188,8 @@ export const STAMM = [
       10: (m) => [['e', 'Fernand steht mit einer Leiter unter der Uhr.'], ['s', m.fernandUhr ? 'Weißt du noch? Drei Minuten. Seit 1998.' : 'Die Uhr hier ging drei Minuten nach. Seit 1998.'],
         ['s', 'Heute hab ich sie gestellt. Jetzt ist sie pünktlich.'], ['s', '… Ich vermiss die drei Minuten fast.'], ['s', 'Äddi für den Sommer. Und pass auf die Hütchen auf.']],
     },
+    reaktion: (m) => (m.huetchen >= 2 ? { key: 'stx_fernand_h2', zeilen: [['s', 'Beide Hütchen! Vierzig von vierzig.'], ['s', 'Weißt du, wie lange ich darauf gewartet hab? Merci.']] }
+      : m.huetchen === 1 ? { key: 'stx_fernand_h1', zeilen: [['s', 'Du hast ein Hütchen zurückgebracht? Ich hab es gesehen.'], ['s', 'Neununddreißig. Eins ist noch auf der Flucht.']] } : null),
     nochmal: ['Moien. Alles heil?', 'Wenn du eine Schraube findest: Die gehört mir.', 'Die Uhr geht immer noch nach. Ich weiß.'],
   },
   {
@@ -256,6 +259,8 @@ export function stammSzene(st, kap, merke, ortSaetze) {
     const sz = st.besuch[k];
     return { neu: true, key, zeilen: typeof sz === 'function' ? sz(merke) : sz };
   }
+  const rk = st.reaktion && st.reaktion(merke);   // Reaktion auf etwas, das die Spielfigur getan hat (einmal)
+  if (rk && !merke[rk.key]) { merke[rk.key] = true; return { neu: false, zeilen: rk.zeilen }; }
   const n = (merke['stn_' + st.id] = (merke['stn_' + st.id] || 0) + 1);
   const pool = ortSaetze && ortSaetze.length ? ortSaetze : st.nochmal;
   return { neu: false, zeilen: [['s', pool[n % pool.length]]] };
