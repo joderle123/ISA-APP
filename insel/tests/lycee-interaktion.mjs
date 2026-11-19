@@ -202,6 +202,7 @@ check('Im selben Abschnitt: nur kurz plaudern', !/Geschäftsmodell|Investor/.tes
 for (let i = 0; i < 20 && await L(() => LYCEE.imGespraech); i++) { const opt = await page.$$('.ly-d-optionen button'); if (opt.length) await opt[i % opt.length].click(); else await page.keyboard.press('KeyE'); await page.waitForTimeout(300); }
 
 // Tischtennis auf dem Hof: Spiel öffnet sich; ohne Schlag sind die drei Bälle weg, das Spiel endet von selbst
+await page.waitForFunction(() => !LYCEE.imGespraech); await page.waitForTimeout(800);
 await geheZu({ tu: 'tischtennis' }); await page.waitForFunction(() => LYCEE.iaNah === 'tischtennis', null, { timeout: 30000 }).catch(() => {});
 await page.keyboard.press('KeyE');
 await page.waitForSelector('.ly-k-spiel canvas', { timeout: 20000 }).catch(() => {});
