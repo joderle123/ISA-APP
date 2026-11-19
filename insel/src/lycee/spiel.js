@@ -167,8 +167,10 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
 
   await schritt(0.35, 'Tische und Stühle …');
   const req = await baueRequisiten({ welt, material, scene });
-  try { await baueNatur({ welt, scene, veil, windZeit, wenig: q.name === 'low' }); } catch (e) { console.warn('Natur', e); }
+  let natur = null;
+  try { natur = await baueNatur({ welt, scene, veil, windZeit, wenig: q.name === 'low' }); } catch (e) { console.warn('Natur', e); }
   const bus = req.eigene.bus;
+  let reqSichtTakt = 0;
 
   await schritt(0.6, 'Die Klasse kommt …');
   const ui = createUI({ root, input, speech });
@@ -514,7 +516,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   // Statisten ansprechen: kurzer, witziger Gruß (zählt für den Schul-Pass)
   const GRUSS = ['Hey! Neu hier, oder?', 'Salut! Coole Schuhe.', 'Moien! Hast du Gerd gesehen? Die Taube mit Hut.', 'Yo. Kennst du Ben? Der schuldet mir 2 €.', 'Hi! … Sorry, ich dachte, du bist wer anders.',
     'Hallo! Ich bin in der 7P1. Wir sind besser. Spaß.', 'Salut! Gleich Französisch. Ohne Hausaufgaben. Hilfe.', 'Moien. Ich hab Hunger. Hast du was?', 'Ey, du bist doch aus der 7P2. Ihr seid laut.', 'Hey. Frag nicht nach Mathe. Bitte.',
-    'Der Automat hat Chips. Unten links. Gern geschehen.', 'Salut! Coole Jacke. Wo gibt’s die?', 'Yo! Eins gegen eins am Korb? Später?', 'Moien. Noch drei Stunden. Ich zähl mit.'];
+    'Der Automat hat Chips. Unten links. Gern geschehen.', 'Salut! Coole Jacke. Wo gibt’s die?', 'Yo! Eins gegen eins am Korb? Später?', 'Moien. Noch drei Stunden. Ich zähl mit.',
+    'Hey. Lowkey müde heute.', 'Same. Ich hab auch nix gemacht.', 'Real talk: Die Pommes heute sind tuff.', 'Hast du Zoés Umfrage gemacht? Ich hab „Laut“ gesagt.', 'Ey, hast du Bonbon gesehen? Der Hund in der SePAS!', 'Jeff sucht schon wieder was. Jedes Mal.'];
   const GRUSS_SITZ = ['Mmmh. Willst du probieren? … Nee, Spaß.', '(mit vollem Mund) Hmpf. Hallo.', 'Psst. Ich lern gerade. Also … tu ich so.'];
   function statistNah(p) { let best = null, bd = 1.7; for (const x of statisten) { if (x.weg) continue; const d = Math.hypot(x.f.group.position.x - p.x, x.f.group.position.z - p.z); if (d < bd) { bd = d; best = x; } } return best; }
   function gruss(x) {
@@ -2127,9 +2130,38 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   // Deko je Monat (requisiten.js, plaetze mit saison): Kürbisse im Oktober, Weihnachten im Dezember, Winter bis Februar
   const DEKO_KAP = { herbst: [3, 4], halloween: [3], weihnacht: [5], winter: [5, 6], fruehling: [7, 8], sommer: [9, 10] };
   let dekoKap = -1;
+  // Annexe News an der Pinnwand: jede Woche eine neue Ausgabe; Zoés Umfrage-Ergebnis mit deiner Antwort
+  const ZEITUNG_TITEL = { 1: 'Willkommen, neue 7ème!', 2: 'Talenttag: Wer wackelt mit den Ohren?', 3: 'Sportfest: Alle sind angekommen', 4: 'Test-Woche: 5 Tipps gegen Stress',
+    5: 'De Kleeschen kommt am 6.!', 6: 'Fuesend in der Aula', 7: 'Praktikum: Was wir gelernt haben', 8: 'Fake oder echt? 3 Fragen', 9: 'Schlaf-Spezial', 10: 'Letzte Ausgabe: Danke!' };
+  const zeitung = (() => {
+    const cv = document.createElement('canvas'); cv.width = 512; cv.height = 680;
+    const tex = new THREE.CanvasTexture(cv); tex.colorSpace = THREE.SRGBColorSpace;
+    const m = new THREE.Mesh(new THREE.PlaneGeometry(0.9, 1.2), new THREE.MeshBasicMaterial({ map: tex, toneMapped: false }));
+    m.position.set(-7.755, 1.75, -9.2); m.rotation.y = Math.PI / 2; scene.add(m);
+    return { cv, tex };
+  })();
+  function zeitungNeu(kap) {
+    const g = zeitung.cv.getContext('2d'), W = 512;
+    g.fillStyle = '#fbfaf6'; g.fillRect(0, 0, W, 680); g.fillStyle = '#e85d75'; g.fillRect(0, 0, W, 96);
+    g.fillStyle = '#fff'; g.font = 'bold 54px system-ui'; g.textAlign = 'center'; g.fillText('ANNEXE NEWS', W / 2, 64);
+    g.fillStyle = '#2b3a55'; g.font = '22px system-ui'; g.fillText('Ausgabe ' + kap + ' · ' + (MONAT[kap] || ''), W / 2, 130);
+    const zeilen = (t, y, px, max = 22) => { g.font = px; const w = t.split(' '); let z = ''; for (const x of w) { if ((z + ' ' + x).trim().length > max) { g.fillText(z.trim(), W / 2, y); y += parseInt(px.match(/(\d+)px/)[1], 10) + 8; z = x; } else z += ' ' + x; } if (z.trim()) { g.fillText(z.trim(), W / 2, y); y += 40; } return y; };
+    g.fillStyle = '#2b2b33'; let y = zeilen(ZEITUNG_TITEL[kap] || 'Neues aus der Annexe', 190, 'bold 38px system-ui', 20);
+    g.fillStyle = '#c9ccd2'; g.fillRect(40, y, W - 80, 3); y += 50;
+    const v = kap - 1, a = S && S.merke ? S.merke['zoe_' + v] : null;
+    const U = { 1: ['Ein Wort für die Annexe?', ['Groß', 'Laut', 'Eigentlich okay'], [31, 44, 25]], 2: ['Gruppenchat oder Gruppenarbeit?', ['Gruppenchat', 'Gruppenarbeit', 'Beides'], [48, 21, 31]], 3: ['Sportfest: mitmachen?', ['Mitmachen', 'Zuschauen', 'Snacks verkaufen'], [52, 30, 18]],
+      4: ['Handy pro Tag?', ['Unter zwei', 'Zwei bis vier', 'Mehr'], [17, 46, 37]], 5: ['Was zählt im Dezember?', ['Ferien', 'Geschenke', 'Leute treffen'], [44, 19, 37]], 6: ['Welchen Satz öfter hören?', ['„Gut gemacht.“', '„Ich hör dir zu.“', '„Pizza ist da.“'], [33, 29, 38]],
+      7: ['Wo sitzt du in der Kantine?', ['Am Fenster', 'Bei meinen Leuten', 'Egal'], [24, 58, 18]], 8: ['Glaubst du, was online steht?', ['Fast nie', 'Manchmal', 'Kommt drauf an'], [21, 47, 32]], 9: ['Was hilft beim Einschlafen?', ['Musik', 'Mit wem reden', 'Nichts'], [41, 23, 36]] };
+    if (U[v]) {
+      g.fillStyle = '#e85d75'; g.font = 'bold 26px system-ui'; g.fillText('UMFRAGE DER LETZTEN WOCHE', W / 2, y); y += 40;
+      g.fillStyle = '#2b3a55'; y = zeilen(U[v][0], y, '26px system-ui', 30) + 6;
+      U[v][1].forEach((o, i) => { const p = U[v][2][i]; g.fillStyle = a === i ? '#e85d75' : '#9fb3c8'; g.fillRect(60, y - 22, (W - 220) * p / 60, 28); g.fillStyle = '#2b2b33'; g.textAlign = 'left'; g.font = (a === i ? 'bold ' : '') + '22px system-ui'; g.fillText(o + ' · ' + p + ' %' + (a === i ? '  ← du' : ''), 64, y + 34); g.textAlign = 'center'; y += 74; });
+    } else { g.fillStyle = '#5b6472'; g.font = 'italic 24px system-ui'; g.fillText('Mach mit! Zoé fragt in der Halle.', W / 2, y + 20); }
+    zeitung.tex.needsUpdate = true;
+  }
   function saisonTick(dt) {
     const kap = (S && SCHRITTE[S.schritt] && SCHRITTE[S.schritt].kap) || 1;
-    if (kap !== dekoKap && req.saison) { dekoKap = kap; for (const [k, m] of Object.entries(req.saison)) m.visible = (DEKO_KAP[k] || []).includes(kap); }
+    if (kap !== dekoKap && req.saison) { dekoKap = kap; for (const [k, m] of Object.entries(req.saison)) m.visible = (DEKO_KAP[k] || []).includes(kap); try { zeitungNeu(kap); } catch (e) { /* Zeitung */ } }
     const art = kap <= 4 ? 'laub' : kap <= 6 ? 'schnee' : kap <= 8 ? 'blueten' : null, A = art && SAISON[art];
     const draussen = !welt.raumBei(steuerung.pos.x, steuerung.pos.z);
     const ziel = laeuft && A && draussen && !(sky.night > 0.5) && regenJetzt < 0.1 ? 0.9 : 0;
@@ -2289,6 +2321,12 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     statistenBewegen(dt);
     sprueche(dt);
     hund.tick(dt, Math.hypot(steuerung.pos.x - hund.pos.x, steuerung.pos.z - hund.pos.z) < 3.2);
+    if (natur) natur.sicht(camera, !!welt.raumBei(camera.position.x, camera.position.z));
+    // Requisiten-Zellen nach Entfernung: drinnen nur die Nähe (Wände verdecken den Rest), draußen bis 150 m
+    if ((reqSichtTakt = (reqSichtTakt + 1) % 12) === 0 && req.mesh) {
+      const drin = !!welt.raumBei(camera.position.x, camera.position.z), max = drin ? 45 : 150;
+      for (const m of req.mesh.children) { const bs = m.geometry.boundingSphere || (m.geometry.computeBoundingSphere(), m.geometry.boundingSphere); m.visible = bs.center.distanceTo(camera.position) - bs.radius < max; }
+    }
     tiere.update(dt, t, { night: sky.night || 0, onGerd: () => {
       if (!S || imGespraech) return;
       const n = S.merke.gerd = (S.merke.gerd || 0) + 1; sichern();

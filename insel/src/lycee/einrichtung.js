@@ -146,6 +146,43 @@ export function baueEinrichtung({ B, P, C, schild, schilder, stuhl, DECKE }) {
     D('kk/pumpkin_orange_jackolantern', -46.4, -21.4, { s: 0.35, y: 0.98, saison: 'halloween', rot: 0 });
   }
 
+  // ---------- Gang: Aufkleber auf Spinden, Kram oben drauf; WC: Spender, Trockner, Zettel am Spiegel ----------
+  for (const [x0, x1, z, sg] of [[-28.4, -22.2, -17.9, 1], [-19.8, -10.2, -17.9, 1], [-7.8, 1.6, -17.9, 1], [4.4, 12.6, -17.9, 1], [15.4, 23.2, -17.9, 1], [-28.4, -22.2, -14.1, -1], [-19.6, -13, -14.1, -1], [13.4, 23.6, -14.1, -1]]) {
+    for (let x = x0; x < x1 - 0.5; x += 0.6) {
+      const zf = z + sg * 0.512;
+      if (rnd() < 0.3) { const y = 0.5 + rnd() * 0.9, c = ['#e85d75', '#ffd166', '#2fb8a8', '#ffffff', '#9b7bc8'][Math.floor(rnd() * 5)], w = 0.06 + rnd() * 0.06; box(x + 0.1 + rnd() * 0.25, x + 0.1 + rnd() * 0.25 + w, y, y + w, Math.min(zf, zf + sg * 0.004), Math.max(zf, zf + sg * 0.004), hex(c), { art: 'innen' }); }
+      if (rnd() < 0.08) D(['kk/basketball', 'kk/football', 'kk/box_A', 'kk/bicycle_helmet', 'kk/chicken_plushie_A'][Math.floor(rnd() * 5)], x + 0.3, z + sg * 0.25, { s: 0.3, y: 1.95 });
+    }
+  }
+  for (let i = 0; i < 3; i++) { const x = 21.2 + i * 1.6;
+    box(x + 0.55, x + 0.75, 1.0, 1.35, -29.78, -29.68, hex('#e9ecef'), { art: 'innen' });   // Papierspender
+    const z2 = schild(['Du bist gut so.', 'Lächeln steht dir.', 'Heute wird gut.'][i], 0.36, 0.2, { bg: ['#fff59d', '#f48fb1', '#a5d6a7'][i], fg: '#2b2b33', rand: '#00000000', schrift: '44px "Comic Sans MS", cursive' }); z2.position.set(x + 0.25, 1.95, -29.5); z2.rotation.z = (rnd() - 0.5) * 0.2; schilders(z2);
+  }
+  box(25.2, 25.6, 1.1, 1.45, -29.8, -29.6, hex('#c9ccd2'), { art: 'innen' });   // Händetrockner
+  { const t = schild('Hände waschen 🧼 · Lavez les mains', 1.4, 0.22, { bg: '#2fb8a8', schrift: 'bold 60px system-ui' }); t.position.set(22.8, 2.45, -29.78); schilders(t); }
+
+  // ---------- Mut-Wand im Gang neben der SePAS-Tür: Klebezettel mit netten Sätzen (von Schülerinnen und Schülern geschrieben) ----------
+  { const W = 2.8, H = 1.5, cv = document.createElement('canvas'); cv.width = 1024; cv.height = Math.round(1024 * H / W);
+    const g = cv.getContext('2d'), Z = ['#fff59d', '#ffcc80', '#a5d6a7', '#90caf9', '#f48fb1', '#ce93d8'];
+    g.fillStyle = '#c9a46a'; g.fillRect(0, 0, cv.width, cv.height);
+    g.fillStyle = '#2b3a55'; g.font = 'bold 44px system-ui'; g.textAlign = 'center'; g.fillText('MUT-WAND · Schreib was Nettes!', cv.width / 2, 52);
+    const T = ['Du bist nicht allein.', 'Gut, dass du da bist.', 'Atme. Du schaffst das.', 'Fehler = Lernen.', 'Danke fürs Zuhören!', 'Frag nach. Echt.',
+      'Heute schon gelacht?', 'Sei nett. Kostet nix.', 'Reden hilft: 116 111', 'Bonbon war da 🐕', 'Wer sucht, findet. – J.', 'Ich hör zu. – SePAS'];
+    let sz2 = 77; const r2 = () => { sz2 = (sz2 * 16807) % 2147483647; return sz2 / 2147483647; };
+    T.forEach((t, i) => {
+      const c = i % 4, r = Math.floor(i / 4), x = 30 + c * 245 + r2() * 20, y = 80 + r * 115 + r2() * 12;
+      g.save(); g.translate(x + 110, y + 50); g.rotate((r2() - 0.5) * 0.12);
+      g.fillStyle = 'rgba(0,0,0,0.18)'; g.fillRect(-104, -42, 214, 96); g.fillStyle = Z[i % Z.length]; g.fillRect(-110, -48, 214, 96);
+      g.fillStyle = '#2b2b33'; g.font = '30px "Comic Sans MS", "Segoe Print", cursive'; g.textAlign = 'center';
+      const w = t.split(' '); let z1 = '', z2 = ''; for (const wd of w) { if ((z1 + ' ' + wd).length < 16 && !z2) z1 = (z1 + ' ' + wd).trim(); else z2 = (z2 + ' ' + wd).trim(); }
+      g.fillText(z1, -3, z2 ? -6 : 8); if (z2) g.fillText(z2, -3, 30);
+      g.restore();
+    });
+    const tex = new THREE.CanvasTexture(cv); tex.colorSpace = THREE.SRGBColorSpace; tex.anisotropy = 4;
+    const m = new THREE.Mesh(new THREE.PlaneGeometry(W, H), new THREE.MeshBasicMaterial({ map: tex, toneMapped: false }));
+    m.position.set(-9.7, 1.75, -14.13); m.rotation.y = Math.PI; m.name = 'schild'; schilders(m);
+  }
+
   // ---------- Kantine: Mülltrennung, Tablettstapel, Obstkorb; Krimskrams auf den Tischen ----------
   for (const [i, f, t] of [[0, '#f2c230', 'Plastik'], [1, '#2f6db0', 'Papier'], [2, '#5d6573', 'Rest']]) {
     const x = 9.0 + i * 0.62; box(x - 0.27, x + 0.27, 0, 0.85, -13.75, -13.35, hex(f), { art: 'innen', stoss: true }); box(x - 0.28, x + 0.28, 0.85, 0.9, -13.76, -13.34, hex('#2b2b33'), { art: 'innen' });

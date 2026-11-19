@@ -58,33 +58,50 @@ export async function baueNatur({ welt, scene, veil, windZeit, wenig = false }) 
     (jeModell[p.m] = jeModell[p.m] || []).push(p);
   });
   const gruppe = new THREE.Group(); gruppe.name = 'natur';
-  const fehlt = [];
+  const fehlt = [], zellen = [];   // zellen: { m: InstancedMesh, x, z, r, klein } – für Sichtbarkeit nach Entfernung
   const M = new THREE.Matrix4(), Q = new THREE.Quaternion(), S = new THREE.Vector3(), T = new THREE.Vector3(), Y = new THREE.Vector3(0, 1, 0);
-  for (const [name, liste] of Object.entries(jeModell)) {
+  const ZELLE = 36;   // Instanzen je 36-m-Feld: so greift das Wegschneiden außerhalb des Bildes (auch beim Schatten)
+  for (const [name, alle] of Object.entries(jeModell)) {
     const mod = modelle[name];
     if (!mod) { fehlt.push(name); continue; }
     const hoehe = Math.max(mod.box.max.y - mod.box.min.y, 0.01), breite = Math.max(mod.box.max.x - mod.box.min.x, mod.box.max.z - mod.box.min.z, 0.01);
-    const baum = /Tree|Pine/.test(name);
-    for (const t of mod.teile) {
-      const im = new THREE.InstancedMesh(t.geo, material(t.quelle, name), liste.length);
-      liste.forEach((p, i) => {
-        const k = p.s ? p.s / breite : (p.h ? p.h / hoehe : 1);
-        T.set(p.x, (p.y || 0) + 0.04, p.z); Q.setFromAxisAngle(Y, p.rot || 0); S.set(k, k * (p.streck || 1), k);
-        im.setMatrixAt(i, M.compose(T, Q, S));
-      });
-      im.instanceMatrix.needsUpdate = true;
-      im.castShadow = baum || /Bush|Rock/.test(name); im.receiveShadow = true;
-      im.computeBoundingSphere();
-      im.name = name;
-      gruppe.add(im);
+    const baum = /Tree|Pine/.test(name), klein = /Grass|Clover|Flower|Fern|Plant_1|Mushroom/.test(name);
+    const felder = new Map();
+    for (const p of alle) { const k = Math.floor(p.x / ZELLE) + ':' + Math.floor(p.z / ZELLE); if (!felder.has(k)) felder.set(k, []); felder.get(k).push(p); }
+    for (const liste of felder.values()) {
+      for (const t of mod.teile) {
+        const im = new THREE.InstancedMesh(t.geo, material(t.quelle, name), liste.length);
+        let sx = 0, sz = 0;
+        liste.forEach((p, i) => {
+          const k = p.s ? p.s / breite : (p.h ? p.h / hoehe : 1);
+          T.set(p.x, (p.y || 0) + 0.04, p.z); Q.setFromAxisAngle(Y, p.rot || 0); S.set(k, k * (p.streck || 1), k);
+          im.setMatrixAt(i, M.compose(T, Q, S)); sx += p.x; sz += p.z;
+        });
+        im.instanceMatrix.needsUpdate = true;
+        im.castShadow = baum || /Bush|Rock/.test(name); im.receiveShadow = true;
+        im.computeBoundingSphere();
+        im.name = name;
+        gruppe.add(im);
+        zellen.push({ m: im, x: sx / liste.length, z: sz / liste.length, klein, baum });
+      }
     }
     // Kollision: Stamm (Zahl = halbe Breite) oder Grundriss
-    for (const p of liste) {
+    for (const p of alle) {
       if (typeof p.fest === 'number') welt.kasten.push({ x0: p.x - p.fest, x1: p.x + p.fest, z0: p.z - p.fest, z1: p.z + p.fest, y0: 0, y1: 3 });
       else if (p.fest === true) { const k = p.h ? p.h / hoehe : 1, r = breite * k * 0.35; welt.kasten.push({ x0: p.x - r, x1: p.x + r, z0: p.z - r, z1: p.z + r, y0: 0, y1: 1.2 }); }
     }
   }
   scene.add(gruppe);
   if (fehlt.length) console.warn('Natur: Modelle fehlen', fehlt);
-  return { gruppe, anzahl: plaetze.length };
+  // Sichtweite: Gras und Blumen nur in der Nähe, Bäume weiter; drinnen nur, was durch die Fenster zu sehen ist (nah)
+  let tz = 0;
+  function sicht(kamera, drinnen) {
+    if ((tz = (tz + 1) % 10) !== 0) return;   // alle zehn Bilder reicht
+    const cx = kamera.position.x, cz = kamera.position.z;
+    for (const z of zellen) {
+      const d = Math.hypot(z.x - cx, z.z - cz);
+      z.m.visible = z.klein ? d < (drinnen ? 0 : wenig ? 40 : 60) : d < (drinnen ? 45 : z.baum ? 260 : 120);
+    }
+  }
+  return { gruppe, anzahl: plaetze.length, sicht };
 }

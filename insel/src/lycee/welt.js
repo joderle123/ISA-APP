@@ -685,6 +685,7 @@ export function baueWelt({ material, materialInnen, materialLaub }) {
     box(-3.4, -3.3, 0, 1.3, -7.6, -7.5, C.metallDunkel, { art: 'innen', stoss: true }); box(-3.75, -2.95, 1.0, 1.55, -7.62, -7.56, new THREE.Color('#ffffff'), { art: 'innen' });
     const zn = schild('ANNEXE NEWS\nUmfrage der Woche!', 0.78, 0.52, { bg: '#ffffff', fg: '#e85d75', rand: '#e85d75', schrift: 'bold 58px system-ui' }); zn.position.set(-3.35, 1.28, -7.54); schilder.push(zn);
     // Paulos Lieferung am Kücheneingang (Hinterhof)
+    plaetze.push({ m: 'auto/van', x: 32.1, z: -21.5, rot: 0, h: 2.1, fest: true, farbe: '#a8d0b8' });   // Paulos Lieferwagen
     plaetze.push({ m: 'kk/crate_carrots', x: 30.9, z: -12.9, rot: 0.2, h: 0.42, fest: true }, { m: 'kk/crate_tomatoes', x: 30.9, z: -10.0, rot: -0.1, h: 0.42, fest: true }, { m: 'kk/crate_potatoes', x: 30.95, z: -10.05, rot: 0.3, h: 0.4, y: 0.42 });
   }
   // ---- Snackautomat in der Halle (frisst Münzen) ----
