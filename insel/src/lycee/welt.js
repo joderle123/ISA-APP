@@ -672,6 +672,19 @@ export function baueWelt({ material, materialInnen, materialLaub }) {
   { const b = schild('Boulangerie des Collines', 6.2, 0.7, { bg: '#2f4f45', rand: '#e9c46a', schrift: 'bold 120px Georgia, serif' }); b.position.set(2, 3.5, 56.78); b.rotation.y = Math.PI; schilder.push(b); }
   { const z = schild('Kirsch-Teilchen 1,50 €', 1.6, 0.5, { bg: '#ffffff', fg: '#c0392b', rand: '#c0392b', schrift: 'bold 80px system-ui' }); z.position.set(6.6, 1.7, 56.9); z.rotation.y = Math.PI; schilder.push(z); }
 
+  // ---- Stammgäste-Orte: Fundkiste (Jeff), Zeitungsständer (Zoé), Lieferkisten (Paulo) ----
+  { const fx = 6.9, fz = -12.9, HOLZ = new THREE.Color('#b9874f');
+    box(fx - 0.55, fx + 0.55, 0, 0.08, fz - 0.4, fz + 0.4, HOLZ, { art: 'innen', stoss: true });
+    for (const [a0, a1, b0, b1] of [[-0.55, 0.55, -0.4, -0.34], [-0.55, 0.55, 0.34, 0.4], [-0.55, -0.49, -0.4, 0.4], [0.49, 0.55, -0.4, 0.4]]) box(fx + a0, fx + a1, 0.08, 0.62, fz + b0, fz + b1, HOLZ, { art: 'innen', stoss: true, kanten: 0.85 });
+    const fk = schild('FUNDKISTE · Objets trouvés', 1.3, 0.3, { bg: '#ffffff', fg: '#2b3a55', rand: '#2b3a55', schrift: 'bold 64px system-ui' }); fk.position.set(fx, 1.25, -13.82); schilder.push(fk);
+    for (const [m, dx, dz, h, y, r] of [['kk/umbrella_blue', -0.3, -0.1, 1.0, 0.1, 0.3], ['kk/umbrella_pink', -0.15, 0.15, 0.95, 0.1, -0.4], ['kk/bicycle_helmet', 0.25, -0.1, 0.22, 0.45, 0.6], ['kk/waterbottle_A', 0.3, 0.18, 0.25, 0.42, 0], ['kk/cat_headphones_A', 0.05, 0.05, 0.14, 0.55, 1.2], ['kk/comicbook_A', -0.05, -0.2, 0.05, 0.6, 0.4]])
+      plaetze.push({ m, x: fx + dx, z: fz + dz, rot: r, h, y });
+    // Zoés Zeitungsständer: „Annexe News“ mit Titelblatt
+    box(-3.4, -3.3, 0, 1.3, -7.6, -7.5, C.metallDunkel, { art: 'innen', stoss: true }); box(-3.75, -2.95, 1.0, 1.55, -7.62, -7.56, new THREE.Color('#ffffff'), { art: 'innen' });
+    const zn = schild('ANNEXE NEWS\nUmfrage der Woche!', 0.78, 0.52, { bg: '#ffffff', fg: '#e85d75', rand: '#e85d75', schrift: 'bold 58px system-ui' }); zn.position.set(-3.35, 1.28, -7.54); schilder.push(zn);
+    // Paulos Lieferung am Kücheneingang (Hinterhof)
+    plaetze.push({ m: 'kk/crate_carrots', x: 30.9, z: -12.9, rot: 0.2, h: 0.42, fest: true }, { m: 'kk/crate_tomatoes', x: 30.9, z: -10.0, rot: -0.1, h: 0.42, fest: true }, { m: 'kk/crate_potatoes', x: 30.95, z: -10.05, rot: 0.3, h: 0.4, y: 0.42 });
+  }
   // ---- Snackautomat in der Halle (frisst Münzen) ----
   box(-7.85, -7.0, 0, 1.9, -3.6, -2.6, C.metallDunkel, { art: 'innen', stoss: true });
   box(-7.02, -6.98, 0.7, 1.75, -3.5, -2.7, C.glas, { art: 'glas' });

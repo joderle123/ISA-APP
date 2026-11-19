@@ -17,6 +17,7 @@ import { lambertVC } from '../world/landmarks.js';
 import { baueWelt } from './welt.js';
 import { baueRequisiten, stelle } from './requisiten.js';
 import { baueNatur } from './natur.js';
+import { STAMM, stammSzene } from './stammgaeste.js';
 import { ladePerson, namensschild, SITZ } from './figuren.js';
 import { fussSchatten, WOLKEN } from './texturen.js';
 import { createHandschlag, HANDSCHLAEGE } from './handschlag.js';
@@ -330,11 +331,14 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     // Halle: liest an der Pinnwand
     { modell: 'frauen', stil: 'Casual', haut: '#c99a72', haar: '#2b1d14', oben: '#e9c46a', unten: '#3a3f4b', schuhe: '#f2f2f2', hoehe: 1.62, steht: [-6.7, -12.4, -Math.PI / 2, 'handy'] },
   ];
+  // Stammgäste (stammgaeste.js): feste Orte, Namensschild, eigene Geschichte über das Jahr
+  for (const st of STAMM) STATISTEN.push({ ...st.aussehen, steht: [...st.steht], stamm: st.id });
   let brett = null;
   async function statistenLaden() {
     for (const d of STATISTEN) {
       const f = await ladePerson(veil, d);
       f.group.add(fussSchatten()); scene.add(f.group);
+      if (d.stamm) { const sg = STAMM.find((q) => q.id === d.stamm); if (sg) f.group.add(namensschild(sg.name, sg.farbe)); }
       const st = d.steht || (d.skate ? [d.skate[0], d.skate[2], Math.PI / 2] : null);
       const p = new THREE.Vector3(st ? st[0] : d.weg[0][0], 0, st ? st[1] : d.weg[0][1]);
       const x = { d, f, p, i: 1, warte: Math.random() * 3, h: { x: p.x, z: p.z, r: 0.3 }, richtung: 1 };
@@ -381,7 +385,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     const unterricht = (uhr >= 8.0 && uhr < 9.85) || (uhr >= 10.4 && uhr < 11.95) || (uhr >= 13.6 && uhr < 15.4);
     statisten.forEach((x, n) => {
       const draussen = !welt.raumBei(x.p.x, x.p.z) && x.p.z > 2;
-      const weg = unterricht && draussen && n % 4 !== 0 && !(x.d.steht && x.d.steht[3] === 'raucht');
+      const weg = unterricht && draussen && n % 4 !== 0 && !(x.d.steht && x.d.steht[3] === 'raucht') && !x.d.stamm;
       if (!!x.weg === weg) return;
       x.weg = weg; x.f.group.visible = !weg; if (x.f.group.children[0]) x.f.group.children[0].visible = !weg;
       x.h.x = weg ? 1e5 : x.p.x; x.h.z = weg ? 1e5 : x.p.z;
@@ -1983,9 +1987,44 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     else ui.toast('<b>Tank +1</b><span>Mission: ' + m.mal + ' von 3.</span>');
     sichern();
   }
+  // Gespräch mit einem Stammgast: einmal je Kapitel eine neue Szene, sonst ein kurzer Satz
+  async function stammRede(x) {
+    const st = STAMM.find((q) => q.id === x.d.stamm); if (!st || imGespraech) return;
+    const kap = (SCHRITTE[S.schritt] || {}).kap || 1, sitzt = x.d.steht && x.d.steht[3] === 'sitzt', gp = x.f.group.position, p = steuerung.pos;
+    imGespraech = true; input.setEnabled(false); steuerung.frei = false; ui.hinweis(null); steuerung.fokus = gp;
+    if (!sitzt) { x.f.group.rotation.y = Math.atan2(p.x - gp.x, p.z - gp.z); x.f.spiele('Interact', { tempo: 0.55 }); }
+    const neuBekannt = !S.merke['stk_' + st.id];
+    try {
+      const sz = stammSzene(st, kap, S.merke);
+      const spiel = async (zeilen) => {
+        for (const z of zeilen) {
+          if (Array.isArray(z)) {
+            const [w, t] = z;
+            const wer = w === 's' ? { wer: st.name, farbe: st.farbe } : sprecher(w === 'du' ? 'du' : 'erzaehler');
+            if (w === 's' && x.f.redet) x.f.redet(true);
+            await ui.sprich({ ...wer, text: ersetze(t) });
+            if (x.f.redet) x.f.redet(false);
+          } else if (z && z.wahl) {
+            const i = await ui.waehle(z.wahl.map((o) => o.t)), o = z.wahl[i] || z.wahl[0];
+            if (o.merke) { const [k, v] = o.merke.split('='); S.merke[k] = v != null ? Number(v) : true; }
+            if (o.dann) await spiel(o.dann);
+          }
+        }
+      };
+      await spiel(sz.zeilen);
+      if (sz.neu) { S.merke[sz.key] = true; S.merke.stammBesuche = (S.merke.stammBesuche || 0) + 1; }
+      if (neuBekannt) { S.merke['stk_' + st.id] = true; ui.toast('<b>⭐ Stammgast: ' + st.name + '</b><span>Immer hier. Jede Woche gibt es etwas Neues.</span>', 'ly-t-ent'); }
+    } finally {
+      ui.dialogZu(); if (x.f.redet) x.f.redet(false);
+      const h = x.d.steht && x.d.steht[3]; if (h === 'redet') x.f.spiele('Interact', { tempo: 0.35 }); else if (h === 'handy') x.f.spiele('Idle_Neutral'); else if (h !== 'sitzt') x.f.spiele('Idle');
+      if (x.d.steht && !sitzt) x.f.group.rotation.y = x.d.steht[2];
+      imGespraech = false; input.setEnabled(true); steuerung.frei = true; steuerung.fokus = null; sperreBis = performance.now() + 600; sichern();
+    }
+  }
   async function aktion(i) {
     setTimeout(() => missionTank(i.tu), 0);
     if (i.tu === 'sitzen') { await ia.tu(i); sperreBis = performance.now() + 350; return; }
+    if (i.tu === 'statist' && i.st.d.stamm) { await stammRede(i.st); return; }
     if (i.tu === 'statist') { gruss(i.st); sperreBis = performance.now() + 1200; return; }
     if (i.tu === 'zufall') { imGespraech = true; input.setEnabled(false); steuerung.frei = false; ui.hinweis(null);
       try { await zufall.tu(); } finally { ui.dialogZu(); imGespraech = false; input.setEnabled(true); steuerung.frei = true; sperreBis = performance.now() + 500; } return; }
@@ -2291,7 +2330,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     naechste = imGespraech || steuerung.brett ? null : wenNah();
     iaNah = !naechste && !imGespraech && !probe && !steuerung.brett ? ia.naechste(p) : null;
     if (!naechste && !iaNah && !imGespraech && !probe && !steuerung.brett) iaNah = zufall.naechste(p);
-    if (!naechste && !iaNah && !imGespraech && !probe && !steuerung.brett) { const st = statistNah(p); if (st) iaNah = { tu: 'statist', text: 'Hallo sagen', st, x: st.p.x, z: st.p.z }; }
+    if (!naechste && !iaNah && !imGespraech && !probe && !steuerung.brett) { const st = statistNah(p); if (st) { const sg = st.d.stamm && STAMM.find((q) => q.id === st.d.stamm); iaNah = { tu: 'statist', text: sg ? 'Mit ' + sg.name.split(' ')[0] + ' reden' : 'Hallo sagen', st, x: st.p.x, z: st.p.z }; } }
     ui.hinweis(naechste ? 'Mit ' + naechste.def.name + ' reden' : iaNah ? iaNah.text : null);
     if (!imGespraech && !gesperrt() && (input.state.actionTap || input.state.action)) { if (naechste) rede(naechste.id); else if (iaNah) aktion(iaNah); }
     // Orte, die etwas auslösen

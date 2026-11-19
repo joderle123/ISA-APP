@@ -112,7 +112,8 @@ def add_view(b, target):
 for name, P, N, C, I in modelle:
     a0 = len(accs)
     accs.append({'bufferView': add_view(P.tobytes(), 34962), 'componentType': 5126, 'count': len(P), 'type': 'VEC3', 'min': P.min(0).tolist(), 'max': P.max(0).tolist()})
-    accs.append({'bufferView': add_view(N.tobytes(), 34962), 'componentType': 5126, 'count': len(N), 'type': 'VEC3'})
+    n8 = np.zeros((len(N), 4), dtype=np.int8); n8[:, :3] = np.clip(np.round(N * 127), -127, 127)
+    accs.append({'bufferView': add_view(n8.tobytes(), 34962), 'componentType': 5120, 'normalized': True, 'count': len(N), 'type': 'VEC3'}); views[-1]['byteStride'] = 4
     accs.append({'bufferView': add_view(C.tobytes(), 34962), 'componentType': 5121, 'normalized': True, 'count': len(C), 'type': 'VEC4'})
     small = I.max() < 65535
     ib = I.astype(np.uint16 if small else np.uint32)
@@ -120,7 +121,7 @@ for name, P, N, C, I in modelle:
     meshes.append({'name': name, 'primitives': [{'attributes': {'POSITION': a0, 'NORMAL': a0 + 1, 'COLOR_0': a0 + 2}, 'indices': a0 + 3}]})
     nodes.append({'name': name, 'mesh': len(meshes) - 1})
 while len(blob) % 4: blob.append(0)
-gltf = {'asset': {'version': '2.0', 'generator': 'kaykit.py (Annexe Junglinster)'}, 'scene': 0, 'scenes': [{'nodes': list(range(len(nodes)))}],
+gltf = {'asset': {'version': '2.0', 'generator': 'kaykit.py (Annexe Junglinster)'}, 'extensionsUsed': ['KHR_mesh_quantization'], 'extensionsRequired': ['KHR_mesh_quantization'], 'scene': 0, 'scenes': [{'nodes': list(range(len(nodes)))}],
         'nodes': nodes, 'meshes': meshes, 'accessors': accs, 'bufferViews': views, 'buffers': [{'byteLength': len(blob)}]}
 js = json.dumps(gltf, separators=(',', ':')).encode()
 while len(js) % 4: js += b' '
