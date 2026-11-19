@@ -1,6 +1,7 @@
 // Drei Jahre Annexe – 7ème, Kapitel 9 „Gesund und stark“ (Kurs Jahr 1, Modul 8: E29 Gesund und stark – Rucksack-Rennen,
 // Stress-Rucksack, Vier Ecken mit Tipp, Gesund-Würfel, Gesund-Plan, Bodyscan). Behutsam: schwere Gefühle → Hilfe-Wege
 // (Herr Kuedes, 116 111). Faden @annexe.cam: Dario kann nicht mehr schlafen. Er erzählt, wie alles angefangen hat.
+import { S9_AKKU, S9_BODYSCAN } from './skills-j1.js';
 const AULA = { noah: [-16.2, -54, 1.1], mila: [-11.8, -54.2, -1.1], ben: [-12.6, -52.4, -2.2], jo: [-15.6, -52.2, 2.2], ayla: [-17.2, -56.4, 1.6], lina: [-10.9, -56.6, -1.5], chiara: [-14.4, -51.6, 3.1], yusuf: [-13.0, -57.4, -0.4] };
 const F = { noah: { id: 'noah', name: 'Noah', farbe: '#3f78b8' }, mila: { id: 'mila', name: 'Mila', farbe: '#2fb8a8' }, ben: { id: 'ben', name: 'Ben', farbe: '#d9a21b' }, jo: { id: 'jo', name: 'Jo', farbe: '#c0392b' },
   ayla: { id: 'ayla', name: 'Ayla', farbe: '#e85d75' }, dario: { id: 'dario', name: 'Dario', farbe: '#d9693f' }, yusuf: { id: 'yusuf', name: 'Yusuf', farbe: '#5fa0d0' } };
@@ -71,22 +72,6 @@ const AKKU = {
   ],
 };
 
-// ---------- Vier Ecken mit Tipp ----------
-const ECKEN_G = {
-  wo: 'Aula · Vier Ecken', titel: 'Was lädt den Akku?', zeit: 8,
-  info: 'Jeder Tipp gehört in eine Ecke: Schlaf, Bewegung, Essen oder Pause.',
-  faecher: [{ id: 'schlaf', t: 'Schlaf', sy: '😴', f: '#4f88c8' }, { id: 'bewegung', t: 'Bewegung', sy: '🏃', f: '#3fa66b' }, { id: 'essen', t: 'Essen', sy: '🍎', f: '#e9734a' }, { id: 'pause', t: 'Pause', sy: '☕', f: '#8a7bc8' }],
-  karten: [
-    { t: 'Handy eine Stunde vor dem Schlafen weg.', ziel: 'schlaf', wer: F.jo, sagt: 'Eine STUNDE? … Okay. Eine halbe.' },
-    { t: 'Zehn Minuten Fahrrad zur Schule.', ziel: 'bewegung' },
-    { t: 'Wasser statt Energy-Drink.', ziel: 'essen', wer: F.ben, sagt: 'Mein Herz bedankt sich. Hat es mir gesagt.' },
-    { t: 'Fünf Minuten aus dem Fenster gucken.', ziel: 'pause' },
-    { t: 'Jeden Tag ungefähr zur gleichen Zeit ins Bett.', ziel: 'schlaf' },
-    { t: 'Frühstück. Auch ein kleines.', ziel: 'essen' },
-    { t: 'Musik, Augen zu, nichts müssen.', ziel: 'pause', wer: F.ayla, sagt: 'Das ist meine Lieblingsecke.' },
-  ],
-  ende: 'Vier Ecken, kein Muss. Ein kleiner Schritt pro Ecke reicht.',
-};
 
 // ---------- Gesund-Würfel mit Ben (E29) ----------
 const WUERFEL = {
@@ -152,11 +137,10 @@ export const GESPRAECHE_N9 = {
     { tu: 'n9_hilfe' },
   ],
   n9_skills: [
-    ['kaya', 'Wéi geet et? Heute: euer Akku. Wie voll ist er?'],
-    ['mesenberg', '(stellt einen Rucksack hin) Voller Steine. Wer will ihn tragen?'],
-    ['ben', 'Ich! … Oh. Nein. Doch nicht.'],
-    ['kaya', 'Tragen kann man viel. Aber nicht mit leerem Akku.'],
-    ['kaya', 'Stellt euch vor: Ein Freund kann nicht schlafen. Er schreibt euch.'],
+    ['erzaehler', 'Aula. Herr Mesenberg stellt einen Rucksack auf den Boden. Er klingt nach Steinen.'],
+    { szene: 'skillsStunde', id: 's9_akku', def: S9_AKKU, ausgang: (r) => (r.check ? 'gut' : 'weiter'),
+      folgen: { gut: { staerke: 'hilfe', merke: 's9Akku' }, weiter: { merke: 's9Akku' } } },
+    ['kaya', 'Jetzt anwenden. Ein Freund kann nicht schlafen. Er schreibt euch.'],
     ['kaya', 'Plant den Abend. Für ihn UND für euch.'],
     { szene: 'akku', id: 'akku', def: AKKU, ausgang: (r) => (r.akku >= 55 ? 'voll' : r.akku >= 35 ? 'mittel' : 'leer'),
       folgen: {
@@ -164,7 +148,6 @@ export const GESPRAECHE_N9 = {
         mittel: { merke: 'akkuMittel', dann: [['kaya', 'Geht. Ein Hebel reicht oft. Meistens der späte Abend.']] },
         leer: { merke: 'akkuLeer', dann: [['jo', 'Ich bin bei 12 Prozent. Vom Zuhören allein.'], ['kaya', 'Wer anderen hilft, darf auch an sich denken. Das ist kein Egoismus.']] },
       } },
-    { szene: 'sort', id: 'ecken', def: ECKEN_G, ausgang: () => 'ok', folgen: { ok: {} } },
   ],
   n9_kuedes: [
     { tu: 'n9_kuedesStart' },
@@ -202,8 +185,6 @@ export const GESPRAECHE_N9 = {
     // Gesund-Plan als Wenn-dann-Plan (Umsetzungs-Absicht) mit Hindernis – und in Kap. 10 fragt jemand nach, ob er gehalten hat.
     ['kaya', 'Letzte Stunde der Woche. Jeder schreibt einen Gesund-Plan.'],
     ['kaya', 'Nicht „ich will gesünder“. Sondern: Wenn … dann …'],
-    ['ben', 'Wenn Pizza, dann Pizza.'],
-    ['kaya', 'Fast, Ben. Fast.'],
     { wahl: [
       { t: 'Wenn ich ins Bett gehe, dann kommt das Handy in die Küche.', staerke: 'ruhig', merke: 'planSchlaf', dann: [['kaya', 'Klar und machbar. Genau so.']] },
       { t: 'Wenn es zur Pause klingelt, dann geh ich raus. Korb oder Bank.', staerke: 'ruhig', merke: 'planPause', dann: [['ben', 'Korb. Mit mir. Plan angenommen.']] },
@@ -215,10 +196,9 @@ export const GESPRAECHE_N9 = {
       { t: '„Die anderen machen nicht mit.“', merke: 'planHindernisAndere', dann: [['kaya', 'Dann ein Satz bereit: „Ich mach das heute so.“ Fertig.']] },
       { t: '„Ich hab einen schlechten Tag.“', staerke: 'lesen', merke: 'planHindernisTag', dann: [['kaya', 'Dann halber Plan. Halb ist nicht null.']] },
     ] },
-    ['kaya', 'Jetzt noch der Körper. Bodyscan. Kurz.'],
-    { szene: 'koerper', id: 'bodyscan', def: { wo: 'Aula · Bodyscan, kurz', frage: 'Augen zu. Von den Füßen bis zum Kopf. Wo bist du heute ruhig?',
-      vergleich: [{ wer: F.dario, zonen: ['brust'], satz: 'Brust. Zum ersten Mal seit Wochen. Da ist Platz.' }, { wer: F.noah, zonen: ['bauch'], satz: 'Bauch. Ruhig. Kein Stein.' }] },
-      ausgang: () => 'ok', folgen: { ok: { merke: 'bodyscanGemacht', dann: [['erzaehler', 'Den Bodyscan findest du jetzt immer unter „Kurz raus“.']] } } },
+    ['kaya', 'Jetzt noch der Körper. Ein Bodyscan, ganz in Ruhe.'],
+    { szene: 'skillsStunde', id: 'bodyscan', def: S9_BODYSCAN, ausgang: () => 'ok', folgen: { ok: { merke: 'bodyscanGemacht' } } },
+    ['dario', '(leise) Brust. Zum ersten Mal seit Wochen ist da Platz.'],
     { tu: 'n9_schluss' },
   ],
 };

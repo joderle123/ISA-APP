@@ -1,6 +1,7 @@
 // Drei Jahre Annexe – 7ème, Kapitel 7 „Wenn es schwierig wird“ (Kurs Jahr 1, Modul 6: E24 Konflikte lösen,
 // E25 Gruppendruck und Nein sagen, E26 Mobbing und Zivilcourage). Faden @annexe.cam: Rauswurf aus dem Klassenchat,
 // Luca baut eine Gegen-Gruppe. Wer bleibt? Ende: Ein KI-Fake von Mme Tidderich (Kapitel 8).
+import { S7_STREIT, S7_TRAUER_FAMILIE } from './skills-j1.js';
 const AULA = { noah: [-16.2, -54, 1.1], mila: [-11.8, -54.2, -1.1], ben: [-12.6, -52.4, -2.2], jo: [-15.6, -52.2, 2.2], ayla: [-17.2, -56.4, 1.6], lina: [-10.9, -56.6, -1.5], chiara: [-14.4, -51.6, 3.1], yusuf: [-13.0, -57.4, -0.4] };
 const F = { noah: { id: 'noah', name: 'Noah', farbe: '#3f78b8' }, mila: { id: 'mila', name: 'Mila', farbe: '#2fb8a8' }, ben: { id: 'ben', name: 'Ben', farbe: '#d9a21b' }, jo: { id: 'jo', name: 'Jo', farbe: '#c0392b' },
   ayla: { id: 'ayla', name: 'Ayla', farbe: '#e85d75' }, luca: { id: 'luca', name: 'Luca', farbe: '#7a6fb0' }, kenan: { id: 'kenan', name: 'Kenan', farbe: '#4a8f7a' }, dario: { id: 'dario', name: 'Dario', farbe: '#d9693f' },
@@ -58,22 +59,6 @@ const WER_BLEIBT = (m) => ({
   ],
 });
 
-// ---------- Konflikt-Tiere (E24 Tier-Ecken) ----------
-const TIERE = {
-  wo: 'Aula · Tier-Ecken', titel: 'Welches Tier reagiert so?', zeit: 9,
-  info: 'Fünf Tiere, fünf Arten zu streiten. Keine ist immer falsch.',
-  faecher: [{ id: 'fuchs', t: 'Fuchs: beide geben nach', sy: '🦊', f: '#e9734a' }, { id: 'hai', t: 'Hai: durchsetzen', sy: '🦈', f: '#4f88c8' }, { id: 'schildi', t: 'Schildkröte: abtauchen', sy: '🐢', f: '#5fa04a' }, { id: 'teddy', t: 'Teddy: nachgeben', sy: '🧸', f: '#d9a21b' }, { id: 'eule', t: 'Eule: zusammen lösen', sy: '🦉', f: '#8a7bc8' }],
-  karten: [
-    { t: '„Ich hab recht. Punkt.“', ziel: 'hai' },
-    { t: '(Kopfhörer rein. Ist mir zu viel.)', ziel: 'schildi', wer: F.noah, sagt: 'Das bin ich. Meistens.' },
-    { t: '„Okay, okay, du kriegst den Platz.“', ziel: 'teddy', wer: F.ben, sagt: 'Ich. Immer. Für Frieden. Und Nuggets.' },
-    { t: '„Was brauchst du? Was brauch ich? Gibt’s was für beide?“', ziel: 'eule', wer: F.mila, sagt: 'Eule. Spart Zeit und Streit.' },
-    { t: '„Lauter als du kann ich auch.“', ziel: 'hai', wer: F.jo, sagt: '… Ja gut. Ich bin manchmal Hai.' },
-    { t: '„Lass uns morgen reden. Heute bin ich zu wütend.“', ziel: ['eule', 'schildi'], wer: F.ayla, sagt: 'Pause ist kein Abtauchen. Pause ist klug.' },
-    { t: '„Du nimmst heute den Platz. Ich morgen.“', ziel: 'fuchs', wer: F.ben, sagt: 'Fuchs. Fair. Aber ich will heute.' },
-  ],
-  ende: 'Jedes Tier passt mal. Gut ist, wechseln zu können.',
-};
 
 // ---------- Druck-Runde an der Skate-Ecke (E25) ----------
 const DRUCK = {
@@ -176,20 +161,10 @@ export const GESPRAECHE_N7 = {
     ] },
   ],
   n7_skills: [
-    ['kaya', 'Wéi geet et? Heute: Streit. Jeder streitet. Die Frage ist nur: wie?'],
-    ['kaya', 'Fünf Tiere. Hai, Schildkröte, Teddy, Fuchs, Eule. Wer reagiert wie?'],
-    { szene: 'sort', id: 'tiere', def: TIERE, ausgang: (r) => (r.antworten[5] === 'schildi' ? 'schildi' : 'eule'),
-      folgen: { schildi: { dann: [['ayla', 'Schildkröte. Digga. Ohne Pause kein Takt.']] }, eule: {} } },
+    ['erzaehler', 'Aula. Auf dem Boden liegen fünf Tierbilder. Herr Kuedes wartet, bis alle sitzen.'],
+    { szene: 'skillsStunde', id: 's7_streit', def: S7_STREIT, ausgang: (r) => (r.check ? 'gut' : 'weiter'),
+      folgen: { gut: { staerke: 'lesen', merke: 's7Streit' }, weiter: { merke: 's7Streit' } } },
     { tu: 'n7_tierWechsel' },
-    ['kaya', 'Und dann die Treppe. Jeder Streit hat Stufen.'],
-    ['kaya', 'Oben kommt man schwerer raus.'],
-    ['mesenberg', 'Meinung, Sticheln, Beleidigen, Drohen, Knall. Merkt euch die Stufen.'],
-    ['kaya', 'Rauf geht schnell. Runter geht auch in Stufen.'],
-    ['kaya', 'Runter geht so: ruhig werden, sagen, was stört, zuhören, einigen.'],
-    { wahl: [
-      { t: '„Was, wenn man schon oben ist?“', staerke: 'lesen', dann: [['kaya', 'Dann zuerst runter unter 70. Abstand. Atmen. Reden kommt später.']] },
-      { t: '„Und als Zuschauer? Was kann man da machen?“', staerke: 'mut', herz: { kaya: 1 }, dann: [['kaya', 'Viel. Auf jeder Stufe gibt es einen Ausstieg. Auch für Zuschauer.']] },
-    ] },
   ],
   n7_druck: [
     ['luca', 'Hey. Kein Stress. Ich will reden. Ehrlich.'],
@@ -227,7 +202,9 @@ export const GESPRAECHE_N7 = {
   ],
   // „Zurückspulen“ (statt Ecken-Lauf): vier Bilder dieser Woche, ohne Namen – was war es, wo standest DU, was tust du nächstes Mal
   n7_ende: [
-    ['kaya', 'Letzte Stunde der Woche. Heute spulen wir zurück. Vier Bilder. Ohne Namen.'],
+    { szene: 'skillsStunde', id: 's7_trauer', def: S7_TRAUER_FAMILIE, ausgang: (r) => (r.check ? 'gut' : 'weiter'),
+      folgen: { gut: { staerke: 'einbeziehen', merke: 's7Trauer' }, weiter: { merke: 's7Trauer' } } },
+    ['kaya', 'Und jetzt spulen wir die Woche zurück. Vier Bilder. Ohne Namen.'],
     ['kaya', 'Vorher hab ich Noah gefragt, ob wir über Donnerstag reden dürfen.'],
     ['kaya', 'Er hat Ja gesagt. Danke, Noah.'],
     ['erzaehler', 'Bild 1: Sonntagabend. Eine neue Gruppe. Einer nach dem anderen fliegt raus.'],

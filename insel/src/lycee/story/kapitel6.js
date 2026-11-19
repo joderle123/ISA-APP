@@ -2,6 +2,7 @@
 // E21 Ich-Botschaften und Zuhören, E22 Grenzen erkennen und Stopp-Abstand, E23 Stopp sagen). Behutsam: Grenzen im Alltag
 // (Umarmung, Foto, Nachricht), nichts Sexuelles. Faden @annexe.cam: Luca hat den Fake gebaut – die Idee kam aus einer
 // Sprachnachricht von Jo. Ende: Rauswurf aus dem Klassenchat.
+import { S6_SAGEN, S6_WUT_FAMILIE } from './skills-j1.js';
 const AULA = { noah: [-16.2, -54, 1.1], mila: [-11.8, -54.2, -1.1], ben: [-12.6, -52.4, -2.2], jo: [-15.6, -52.2, 2.2], ayla: [-17.2, -56.4, 1.6], lina: [-10.9, -56.6, -1.5], chiara: [-14.4, -51.6, 3.1], yusuf: [-13.0, -57.4, -0.4] };
 const F = { noah: { id: 'noah', name: 'Noah', farbe: '#3f78b8' }, mila: { id: 'mila', name: 'Mila', farbe: '#2fb8a8' }, ben: { id: 'ben', name: 'Ben', farbe: '#d9a21b' }, jo: { id: 'jo', name: 'Jo', farbe: '#c0392b' },
   ayla: { id: 'ayla', name: 'Ayla', farbe: '#e85d75' }, luca: { id: 'luca', name: 'Luca', farbe: '#7a6fb0' }, rantini: { id: 'rantini', name: 'Mme Rantini', farbe: '#6b7a8f' } };
@@ -126,15 +127,9 @@ export const GESPRAECHE_N6 = {
     ['rantini', 'Nur dort. Nirgendwo sonst.'],
   ],
   n6_skills: [
-    ['kaya', 'Wéi geet et? Heute: Wie sag ich’s? Drei Kanäle.'],
-    ['kaya', 'Worte. Stimme. Körper. Ben, sag mal: „Mir geht’s super.“'],
-    ['ben', '(Schultern hängen, ganz leise) … Mir geht’s super.'],
-    ['kaya', 'Was glaubt ihr? Den Worten – oder dem Rest?'],
-    { wahl: [
-      { t: '„Dem Rest. Stimme und Körper sagen: Nein.“', staerke: 'lesen', herz: { kaya: 1 }, dann: [['kaya', 'Worte und Körper passen nicht. Dann fragt man nach.']] },
-      { t: '„Den Worten. Er hat’s ja gesagt.“', dann: [['ben', 'Bro. Ich hab gespielt, als wär mein Hund weg.'], ['kaya', 'Darum fragen wir nach, wenn es nicht passt.']] },
-    ] },
-    ['kaya', 'Darum ist Schreiben so schwierig. Im Chat fehlen Stimme und Körper.'],
+    ['erzaehler', 'Aula. Herr Kuedes hält ein Ladekabel hoch. „Verbindung“, sagt er. Dann legt er es weg.'],
+    { szene: 'skillsStunde', id: 's6_sagen', def: S6_SAGEN, ausgang: (r) => (r.check ? 'gut' : 'weiter'),
+      folgen: { gut: { staerke: 'klar', merke: 's6Sagen' }, weiter: { merke: 's6Sagen' } } },
     ['kaya', 'Jetzt üben wir an etwas Echtem.'],
     ['kaya', 'Nur im Kopf. Niemand muss es sagen.'],
     { szene: 'satz', id: 'ichSatz', def: ICH, ausgang: (r) => (r.regeln >= 4 ? 'stark' : r.regeln >= 2 ? 'mittel' : 'schwach'),
@@ -185,15 +180,17 @@ export const GESPRAECHE_N6 = {
     { tu: 'n6_cdiEnde' },
   ],
   n6_ende: [
+    { szene: 'skillsStunde', id: 's6_wut', def: S6_WUT_FAMILIE, ausgang: (r) => (r.check ? 'gut' : 'weiter'),
+      folgen: { gut: { staerke: 'ruhig', merke: 's6Wut' }, weiter: { merke: 's6Wut' } } },
     ['kaya', 'Letzte Übung der Woche. Jeder sagt seinen Stopp-Satz. Laut und klar.'],
     ['kaya', 'Und alle anderen antworten nur ein Wort: „Okay.“'],
-    ['ben', 'Stopp. Kein Brokkoli in meiner Pasta.'],
+    ['ben', 'Stopp. Erst fragen, bevor ihr mein Handy nehmt.'],
     ['alle', 'Okay.'],
     ['noah', '(leise, dann lauter) Stopp. Keine Fotos von mir ohne Fragen.'],
     ['alle', 'Okay.'],
     { wahl: [
       { t: '„Stopp. Keine Fakes über mich.“', staerke: 'klar', herz: { noah: 1, mila: 1 }, dann: [['alle', 'Okay.'], ['erzaehler', 'Jo sagt es am lautesten.']] },
-      { t: '„Stopp. Erst fragen, dann umarmen.“', staerke: 'klar', herz: { ben: 1 }, dann: [['alle', 'Okay.'], ['ben', '(hebt die Hand) Fair. Ich frag ab jetzt. Darf ich dich umarmen?']] },
+      { t: '„Stopp. Erst fragen, dann umarmen.“', staerke: 'klar', herz: { ben: 1 }, dann: [['alle', 'Okay.'], ['ben', '(hebt die Hand) Fair. Ich frag ab jetzt.']] },
       { t: '„Weiter.“ (Heute nicht.)', dann: [['kaya', 'Auch das ist okay. Nein sagen gilt auch hier.']] },
     ] },
     { tu: 'n6_schluss' },
@@ -226,7 +223,7 @@ export const tunN6 = (c) => ({
     : [['mila', 'Ich hab „Hör auf“ gesagt. Das hätte reichen müssen.'], ['mila', 'Danke, dass du was gemacht hast.']]),
   n6_schluss: () => [
     { szene: 'stempel', def: { modul: 'Modul 5 · Kommunikation und Grenzen', titel: 'Klar gesagt',
-      gelernt: ['Worte, Stimme, Körper – und wem man glaubt', 'Jeder hat einen anderen Wohlfühl-Abstand', 'Ich-Botschaften statt Vorwürfe', 'Zuhören, bis man es wirklich verstanden hat', 'Ein Stopp gilt immer – klar und ruhig kommt es besser an. Und ein Stopp annehmen'],
+      gelernt: ['Worte, Stimme, Körper – und wem man glaubt', 'Jeder hat einen anderen Wohlfühl-Abstand', 'Ich-Botschaften statt Vorwürfe', 'Zuhören, das wirklich hilft', 'Grenzen setzen in vier Stufen – und ein Stopp annehmen'],
       mission: 'Sag diese Woche einmal deinen Stopp-Satz. Und wenn jemand dir Stopp sagt: „Okay.“ Ohne Diskussion.' }, folgen: {} },
     ['erzaehler', 'Samstag, 21:40. Dein Handy vibriert.'],
     ['erzaehler', '„Luca hat dich aus der Gruppe 7P2 😎 (offiziell) entfernt.“'],

@@ -25,6 +25,7 @@ import { createZufall } from './zufall.js';
 const MONAT = { 1: 'September', 2: 'September', 3: 'Oktober', 4: 'November', 5: 'Dezember', 6: 'Februar', 7: 'März', 8: 'April', 9: 'Juni', 10: 'Juli' };
 import { createInteraktionen } from './interaktion.js';
 import { FAEDEN } from './faeden.js';
+import { GEDAECHTNIS, RUF, BELAUSCHT } from './gedaechtnis.js';
 import { PLAUDERN, BANK } from './stimmen.js';
 import { DEUTSCH, deutschBlatt } from './deutsch.js';
 import { LEKTIONEN } from './lektionen.js';
@@ -53,6 +54,7 @@ import { ORTE3, saegeFolgen } from './kapitel3.js';
 import { ORTE4, IMMER, SCHLICHTEN } from './kapitel4.js';
 import { ORTE6, LEITER } from './kapitel6.js';
 import { DURCHSAGEN } from './welttexte.js';
+import { installSkillsRaum } from './skillsraum.js';
 import { JETON, ANGEBOTE, alleDinge } from './belohnungen.js';
 import { ladePaket, speicherePaket, bereinige, waehle, GRUNDPAKET } from './lernen.js';
 
@@ -167,6 +169,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   await schritt(0.6, 'Die Klasse kommt …');
   const ui = createUI({ root, input, speech });
   situationen(ui, { name: () => 'Du', ersetze: (t) => ersetze(t), speech });
+  installSkillsRaum(ui, { vorlesen: (t) => { try { if (speech && speech.available) speech.speak(t, { interrupt: true }); } catch (e) { /* keine Stimme */ } }, ton: (a) => { try { audio.play(a === 'pling' ? 'chime' : 'click'); } catch (e) { /* Ton */ } } });
   // Ton und Vorlesen für alle Situations-Spiele an einer Stelle: Klick auf Karten, Sprechblasen, Stempel, neue Karten
   (() => {
     let zuletzt = 0;
@@ -451,7 +454,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   };
   const sprueche_el = document.createElement('div'); sprueche_el.className = 'ly-bark'; sprueche_el.hidden = true; root.appendChild(sprueche_el);
   const _bv = new THREE.Vector3();
-  let spruchNaechst = performance.now() + 4000, spruchWer = null, spruchBis = 0;
+  let spruchNaechst = performance.now() + 4000, spruchWer = null, spruchBis = 0, spruchFolge = [];   // spruchFolge: mitgehörtes Gespräch zwischen zwei
   function sprueche(dt) {
     const offen = !imGespraech && !ui.ebeneArt() && laeuft;
     if (spruchWer && performance.now() < spruchBis && offen) {
@@ -459,7 +462,11 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       const sicht = _bv.z < 1 && Math.abs(_bv.x) < 1 && Math.abs(_bv.y) < 1;
       sprueche_el.hidden = !sicht;
       if (sicht) { sprueche_el.style.left = ((_bv.x + 1) * 50) + '%'; sprueche_el.style.top = ((1 - _bv.y) * 50) + '%'; }
-    } else if (spruchWer) { sprueche_el.hidden = true; spruchWer = null; }
+    } else if (spruchWer) {
+      sprueche_el.hidden = true; spruchWer = null;
+      if (spruchFolge.length && offen) { const n = spruchFolge.shift(); sprueche_el.textContent = n.t; spruchWer = n.wer; spruchBis = performance.now() + 2900; return; }
+      spruchFolge = [];
+    }
     if (performance.now() < spruchNaechst || !offen) return;
     spruchNaechst = performance.now() + 5000 + Math.random() * 6000;
     const p = steuerung.pos; let best = null, bd = 7.5;
@@ -470,7 +477,26 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     // Die Welt redet über die Geschichte (Gerüchte, Ereignisse der Woche) – passend zum Kapitel, nicht nur Kulisse
     const kap = (S && SCHRITTE[S.schritt] && SCHRITTE[S.schritt].kap) || 1, tk = TAGESGESPRAECH[kap];
     const tpool = regenJetzt > 0.3 && !r && Math.random() < 0.5 ? ['Mein Pulli ist komplett nass.', 'Wer hat einen Schirm? … Niemand. Okay.', 'Regen am Montag. Doppelt Montag.', 'Pfütze! … zu spät.'] : tk && !best.d.skate && rid !== 'kantine' && Math.random() < 0.35 ? tk : pool;
-    sprueche_el.textContent = tpool[Math.floor(Math.random() * tpool.length)];
+    // Mitgehört: Steht neben der Person jemand, der auch redet, unterhalten sich die beiden (BELAUSCHT, je Kapitel)
+    const partner = best.d.steht && best.d.steht[3] === 'redet' ? statisten.find((y) => y !== best && !y.weg && y.d.steht && y.d.steht[3] === 'redet' && Math.hypot(y.p.x - best.p.x, y.p.z - best.p.z) < 3.2) : null;
+    const bel = BELAUSCHT[kap];
+    if (partner && bel && Math.random() < 0.55) {
+      S.merke.belauscht = S.merke.belauscht || {};
+      const frei = bel.map((g, i) => i).filter((i) => !S.merke.belauscht[kap + '_' + i]);
+      const i = frei.length ? frei[Math.floor(Math.random() * frei.length)] : Math.floor(Math.random() * bel.length);
+      S.merke.belauscht[kap + '_' + i] = 1;
+      const g = bel[i].map((t, j) => ({ t, wer: j % 2 ? partner : best }));
+      const erst = g.shift(); spruchFolge = g;
+      sprueche_el.textContent = erst.t; spruchWer = erst.wer; spruchBis = performance.now() + 2900;
+      spruchNaechst = performance.now() + 2900 * (g.length + 1) + 6000;
+      return;
+    }
+    // Ruf: Fremde reden über das, was du getan hast (gedaechtnis.js) – jede Sache höchstens zweimal
+    const ruf = S ? RUF.filter((r) => kap >= r.ab && kap <= r.bis && r.wenn(S.merke) && (S.merke['rf_' + r.id] || 0) < 2) : [];
+    if (ruf.length && !best.d.skate && Math.random() < 0.35) {
+      const r = ruf[Math.floor(Math.random() * ruf.length)]; S.merke['rf_' + r.id] = (S.merke['rf_' + r.id] || 0) + 1;
+      sprueche_el.textContent = r.t[Math.floor(Math.random() * r.t.length)];
+    } else sprueche_el.textContent = tpool[Math.floor(Math.random() * tpool.length)];
     spruchWer = best; spruchBis = performance.now() + 3400;
     if (bd < 3.5 && best.d.steht && best.d.steht[3] === 'redet' && Math.random() < 0.6) { best.f.spiele('Wave'); setTimeout(() => best.f.spiele('Interact', { tempo: 0.35 }), 2400); }
   }
@@ -609,6 +635,15 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     S.staerken[k] = (S.staerken[k] || 0) + 1;
     // still: keine Glocke, keine Karte – sonst verrät das Spiel die „richtige“ Antwort. Sichtbar im Journal und am Kapitelende.
   }
+  // Geste zum Satz: Nein → Kopf schütteln, Frage → Kopf neigen, Lachen → Kopf zurück, Seufzen/leise → Kopf senken
+  function gesteZu(t) {
+    const s = String(t || '').toLowerCase();
+    if (/\((lacht|grinst|kichert)|haha|😂|😭/.test(s)) return 'lachen';
+    if (/\((seufzt|leise|sehr leise|guckt weg|guckt auf|schaut auf den)/.test(s)) return 'senken';
+    if (/^(„)?(nein|nee|nö|nope|auf keinen fall|niemals)\b/.test(s)) return 'schuetteln';
+    if (/\?(“|\))?\s*$/.test(s) && s.length < 90) return 'neigen';
+    return null;
+  }
   // Blick: die beteiligte Person dreht sich zum Spieler
   let gegenueber = null, sprichtJetzt = null;
   // Sprechende Figur gestikuliert (wie in Story-Spielen), danach zurück in ihre Haltung
@@ -622,6 +657,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         if (sprichtJetzt && leute[sprichtJetzt] && leute[sprichtJetzt].f.redet) leute[sprichtJetzt].f.redet(false);
         sprichtJetzt = wer;
         if (leute[wer] && leute[wer].f.redet) leute[wer].f.redet(true);
+        { const g = gesteZu(text), f = wer === 'du' ? spieler : leute[wer] && leute[wer].f; if (g && f && f.geste) setTimeout(() => f.geste(g), 250); }
         if (spieler && spieler.redet) spieler.redet(wer === 'du');
         if (wer === 'du' && gegenueber && gegenueber.f.nicken) setTimeout(() => { if (gegenueber && gegenueber.f.nicken) gegenueber.f.nicken(); }, 700 + Math.random() * 600);   // Zuhörer nickt
         steuerung.gegenSchuss = wer === 'du' && !!gegenueber;   // du sprichst: Kamera schaut dich an
@@ -650,6 +686,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         const r = (await ui[SZ[z.szene] || z.szene](def)) || {};
         const key = z.ausgang ? z.ausgang(r, S.merke) : 'standard';
         S.szenen = S.szenen || {}; if (z.id) S.szenen[z.id] = key;
+        if (r.merkkarte) { S.skillsHeft = S.skillsHeft || []; if (!S.skillsHeft.some((m) => m.titel === r.merkkarte.titel)) S.skillsHeft.push(r.merkkarte); }   // Skills-Heft im Journal
         S.sz = S.sz || {}; if (z.id) { const kurz = {}; for (const [a, v] of Object.entries(r)) if (typeof v !== 'object' || Array.isArray(v)) kurz[a] = v; S.sz[z.id] = kurz; }
         const f = (z.folgen && (z.folgen[key] || z.folgen.standard)) || {};
         if (f.staerke) [].concat(f.staerke).forEach(staerke);
@@ -1378,6 +1415,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       const eintraege = Object.entries(tagHerz).filter(([id, n]) => n && LEUTE[id]).map(([id, n]) => ({ name: LEUTE[id].name, farbe: LEUTE[id].farbe, n })).sort((a, b) => b.n - a.n);
       tagHerz = {};
       await ui.rueckblick(st.tag, st.kap !== vorher.kap ? kapName(st.kap) : 'Ein neuer Tag in der Annexe Junglinster.', eintraege);
+      if (st.kap !== vorher.kap) await vorspann(st);
       const b = besteFreunde()[0];
       if (b && st.kap !== vorher.kap) setTimeout(() => ui.toast('<b>' + LEUTE[b].name + ' (' + stufe(S.freund[b]) + ')</b><span>„' + GRUSS[b] + '“</span>', 'ly-t-herz'), 2500);
       if (st.kap !== vorher.kap && INHALT[st.kap]) ui.toast('<b>ℹ️ In diesem Kapitel</b><span>' + INHALT[st.kap] + ' Wenn es zu viel wird: ☰ → Kurz raus.</span>');
@@ -1459,6 +1497,17 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     }
     // sonst: kurz plaudern – zählt für die Freundschaft (einmal je Person und Abschnitt)
     if (CHARAKTER[id] && S.merke['fg_' + id] !== String(S.schritt)) { S.merke['fg_' + id] = String(S.schritt); freund(id, 3, 'gespraech'); }
+    // Gedächtnis der Welt (gedaechtnis.js): eine frühere Entscheidung kommt zurück – einmal, im passenden Zeitfenster
+    {
+      const kapJ = S.fertig ? 10 : ((SCHRITTE[S.schritt] || {}).kap || 1);
+      const gd = S.merke['gdk_' + id] !== String(S.schritt) && GEDAECHTNIS.find((g) => g.wer === id && !S.merke['gd_' + g.id] && kapJ >= g.ab && kapJ <= (g.bis || g.ab + 3) && g.wenn(S.merke));
+      if (gd) {
+        S.merke['gd_' + gd.id] = true; S.merke['gdk_' + id] = String(S.schritt);
+        const erste = gd.g.find((z) => Array.isArray(z));   // fürs Journal: „Erinnerungen“ – was zurückkam, mit wem, wann
+        S.erinnerungen = [...(S.erinnerungen || []), { wer: (LEUTE[id] || {}).name || id, farbe: (LEUTE[id] || {}).farbe || '#2b3a55', text: erste ? ersetze(erste[1]) : '', kap: kapJ }];
+        sichern(); await gespraech(gd.g); return;
+      }
+    }
     if (CHARAKTER[id] && S.lektionen && S.merke['wn_' + id] !== String(S.schritt) && Math.random() < 0.15) { S.merke['wn_' + id] = String(S.schritt); if (await weisstDuNoch(id)) return; }
     const l = PLAUDERN[id] || ['Hi.'];
     const n = (S.merke['p_' + id] = ((S.merke['p_' + id] || 0) + 1));
@@ -1556,7 +1605,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   ui.onJournal = () => {
     if (!S || imGespraech) return;
     const b = bilanz();
-    ui.journal({ name: S.name, stundenplan: S.stundenplan, leute: b.leute, freunde: b.freunde, staerken: b.staerken, geheimnisse: GEHEIMNISSE.filter((g) => S.entdeckt.includes(g.id)), gesamt: GEHEIMNISSE.length, lernkarten: S.lernkarten || [], leiter: leiterJournal(), zaehler: zaehler(), pass: ABZEICHEN.map((x) => ({ sy: x.sy, t: x.t, hinweis: x.hinweis, hat: (S.pass || []).includes(x.id) })) });
+    ui.journal({ name: S.name, stundenplan: S.stundenplan, leute: b.leute, freunde: b.freunde, staerken: b.staerken, geheimnisse: GEHEIMNISSE.filter((g) => S.entdeckt.includes(g.id)), gesamt: GEHEIMNISSE.length, lernkarten: S.lernkarten || [], heft: S.skillsHeft || [], erinnerungen: S.erinnerungen || [], leiter: leiterJournal(), zaehler: zaehler(), pass: ABZEICHEN.map((x) => ({ sy: x.sy, t: x.t, hinweis: x.hinweis, hat: (S.pass || []).includes(x.id) })) });
   };
   // Running Gags als Zähler im Journal (werden nie kleiner)
   function zaehler() {
@@ -2061,6 +2110,29 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   // Während eines Minispiels auf eigener Fläche (Bandprobe, Tischtennis, Freiwurf) ruht die 3D-Welt fast ganz:
   // sie ist ohnehin verdeckt, und der Takt im Spiel braucht die Rechenzeit.
   let ruheN = 0, titelT = 0;
+  // ---------- Kapitel-Vorspann: Kamerafahrt über die Schule zur Tageszeit des ersten Schritts (ui.vorspann zeigt Titel) ----------
+  const VORSPANN = {
+    1: 'Neue Schule. Neue Leute. Und ein Account, der alles sieht.', 2: 'Eine Liste. Fünf Namen. Und Noah ist Platz 1.',
+    3: 'Sportfest-Woche. Und jemand hat die Kamera schon an.', 4: 'Ein Test. Ein weißer Bildschirm. Und Zahlen von 0 bis 100.',
+    5: 'Ein Screenshot mit deinem Namen. Und alle schauen.', 6: 'Ein Satz kann trennen. Ein Satz kann reparieren.',
+    7: 'Zwei Gruppen. Eine Kantine. Und du entscheidest, wo du sitzt.', 8: '300 Herzen für ein Video, das nie passiert ist.',
+    9: 'Dario kann nicht schlafen. Er trägt etwas mit sich herum.', 10: 'Letzte Woche. Lampions. Und eine Wahrheit.',
+  };
+  let kino = null;   // { t, a0 } während des Vorspanns
+  async function vorspann(st) {
+    sky.time.setTimeOfDay(st.uhr);
+    // Wohin die Kamera fährt: meist über die ganze Schule, in manchen Kapiteln zum Ort, um den es geht
+    const ORT = { 3: { x: -72, z: -6, r: 46, h: 20 }, 7: { x: 16, z: -8, r: 52, h: 22 }, 10: { x: 0, z: 18, r: 58, h: 22 } };
+    kino = { t: 0, a0: 0.55 * st.kap, ziel: ORT[st.kap] || { x: 0, z: -14, r: 92, h: 26 } };
+    try { await ui.vorspann({ nr: st.kap, titel: KAPITEL[st.kap] || kapName(st.kap), zeile: VORSPANN[st.kap] || '', ort: MONAT[st.kap] || '' }); } finally { kino = null; }
+  }
+  function kinoKamera(dt) {
+    kino.t += dt;
+    const ruhig = ui.wenigBewegung, k = Math.min(1, kino.t / 6), e = k * k * (3 - 2 * k);   // weich ein- und ausfahren
+    const z = kino.ziel, a = kino.a0 + (ruhig ? 0 : e * 0.32), r = (ruhig ? 0.76 : 1 - 0.33 * e) * z.r, h = ruhig ? z.h * 0.62 : z.h - z.h * 0.5 * e;
+    camera.position.set(z.x + Math.sin(a) * r, h, z.z + 22 + Math.cos(a) * r);
+    camera.lookAt(z.x, 6 + (ruhig ? 0 : 2 * (1 - e)), z.z);
+  }
   // Wetter (AAA: Welt mit Stimmung): Regen an schweren Montagen (Kap. 5 nach dem Fake, Kap. 9 mit Dario). Kein Gewitter, keine Blitze.
   const REGEN = new Set(['k5_morgen', 'k5_saal', 'k5_skills', 'k9_dario', 'k9_skills']);
   let regenJetzt = 0;
@@ -2074,7 +2146,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (sky.sun && sky.sun.isLight) sky.sun.intensity *= 1 - 0.5 * regenJetzt;
     sky.hemi.intensity *= 1 - 0.15 * regenJetzt; fuellLicht.intensity *= 1 - 0.6 * regenJetzt;
   }
-  const loop = createLoop({ render: () => { if (ui.ebeneArt && ['spiel', 'szene', 'journal', 'handy', 'raus', 'ende', 'laden'].includes(ui.ebeneArt()) && (ruheN++ % 20)) return; rr.render({ night: sky.night, time: loop.time, sun: sky.sunDir, sunColor: sky.colors && sky.colors.light }); } });
+  const loop = createLoop({ render: () => { if (ui.ebeneArt && ['spiel', 'szene', 'journal', 'handy', 'raus', 'ende', 'laden', 'skills', 'karte'].includes(ui.ebeneArt()) && (ruheN++ % 20)) return; rr.render({ night: sky.night, time: loop.time, sun: sky.sunDir, sunColor: sky.colors && sky.colors.light }); } });
   loop.add(() => input.beginFrame(), { order: -100, always: true });
   loop.add((dt) => {
     // Titelbild: langsame Kamerafahrt um die Schule (AAA: lebendiges Menü statt Standbild); bei „Weniger Bewegung“ fest
@@ -2082,6 +2154,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     windZeit.value += dt; WOLKEN.value += dt; staubTick(dt); saisonTick(dt); gangRegel(dt);
     zufall.tick(dt, laeuft && S && !imGespraech && !ui.ebeneArt() && !steuerung.brett && !hs.aktiv && !foto && !steuerung.kameraAus && !steuerung.sitzt && !probe);
     steuerung.update(dt);
+    if (kino) kinoKamera(dt);
     // Schärfentiefe im Gespräch: scharf auf die Person im Bild, Hintergrund weich (wie Kino-Szenen)
     if (foto) {   // Fotomodus: Kamera kreist um die eigene Figur
       const p = steuerung.pos, cp = Math.cos(foto.pitch);
@@ -2255,6 +2328,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     const st = SCHRITTE[S.schritt];
     const ort = welt.orte[(st.start && st.start.teleport) || (S.schritt ? 'halle' : 'busAnkunft')];
     const pause = !neu && S.zuletzt ? Date.now() - S.zuletzt : 0;
+    if (neu && abKap > 1) await vorspann(st);   // Einstieg über die Kapitelwahl: mit Vorspann
     await starteSchritt(S.schritt, neu ? true : false);
     if (!neu && ort) steuerung.teleport(ort.x, ort.z, ort.yaw);
     // Länger nicht gespielt (Unterricht ist oft eine Woche später): kurzer Rückblick, wo man steht
@@ -2274,7 +2348,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     rede, los, audio, SITZ, input, get spruch() { return { wer: !!spruchWer }; }, get naechste() { return naechste && naechste.id; },
     get probe() { return probe; }, set mutTempo(v) { mutTempo = v; },
     daten: { SCHRITTE, STATISTEN, LEUTE, BLAETTER, MATHE, LEKTIONEN, GESPRAECHE }, ia, aktion, get iaNah() { return iaNah && iaNah.tu; },
-    hs, tt3d, zufall, get spieler() { return spieler; }, handschlagMit, get statisten() { return statisten; }, musik,
+    hs, tt3d, zufall, get spieler() { return spieler; }, vorspann: (k) => vorspann(SCHRITTE.find((x) => (x.kap || 1) === k) || SCHRITTE[0]), gesteZu, handschlagMit, get statisten() { return statisten; }, musik,
   };
 
   onProgress(1, '');

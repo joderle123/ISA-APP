@@ -26,12 +26,12 @@ for (const s of liste) {
   const name = s.szene + (s.id ? '-' + s.id : '');
   if (gesehen.has(name)) continue; gesehen.add(name);
   page.evaluate(([s, fn]) => { let n = LYCEE.daten.GESPRAECHE[s.key]; const p = s.pfad.slice(); let z = n[p.shift()]; while (p.length) { if (p[0] === 'w') { p.shift(); z = z.wahl[p.shift()].dann[p.shift()]; } else z = z[p.shift()]; }
-    const def = typeof z.def === 'function' ? z.def(LYCEE.zustand.merke, LYCEE.zustand) : z.def; window.__sz = LYCEE.ui[fn](def); }, [s, SZ[s.szene]]);
+    const def = typeof z.def === 'function' ? z.def(LYCEE.zustand.merke, LYCEE.zustand) : z.def; window.__sz = LYCEE.ui[fn](def); }, [s, SZ[s.szene] || s.szene]);
   await page.waitForTimeout(s.szene === 'namen' ? 9500 : s.szene === 'zwei' ? 3500 : s.szene === 'chat' ? 6500 : 2200);
   if (s.szene === 'hitze') { await page.keyboard.press('Digit1'); await page.waitForTimeout(2600); }
   await page.screenshot({ path: join(OUT, art + '-' + name + '.png') });
   // beenden: E mehrfach
-  for (let i = 0; i < 60 && await page.evaluate(() => !!document.querySelector('.ly-ebene:not([hidden]) .sz')); i++) { await page.keyboard.press(i % 3 === 0 ? 'Digit1' : 'KeyE'); await page.waitForTimeout(400); }
+  for (let i = 0; i < 60 && await page.evaluate(() => !!document.querySelector('.ly-ebene:not([hidden]) .sz, .ly-ebene:not([hidden]) .sr')); i++) { await page.keyboard.press(i % 3 === 0 ? 'Digit1' : 'KeyE'); await page.waitForTimeout(400); }
   console.log('✓', name);
 }
 console.log('Fehler', fehler.length, fehler.slice(0, 3));

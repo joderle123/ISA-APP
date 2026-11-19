@@ -192,6 +192,9 @@ export async function ladePerson(veil, { modell = 'menschen', stil = 'Casual', h
   let redetZiel = 0, redetW = 0, redeT = Math.random() * 10, redeAn = false; const kopfRedeVor = new THREE.Quaternion();
   let blinzelIn = 1 + Math.random() * 4, lidZu = 0;
   let nickT = 0; const NICK = 0.6;   // Zuhören: einmal kurz nicken
+  // Gesten zum Gesagten (prozedural, die Modelle haben keine eigenen Clips): Kopf schütteln, neigen (Frage), lachen, senken
+  const GESTE = { schuetteln: 0.95, neigen: 1.5, lachen: 1.0, senken: 1.5 };
+  let gesteArt = null, gesteT = 0; const _ay = new THREE.Vector3(0, 1, 0), _az = new THREE.Vector3(0, 0, 1);
   const kopfVor = new THREE.Quaternion(), nackenVor = new THREE.Quaternion();
   const _hp = new THREE.Vector3(), _fw = new THREE.Vector3(), _rt = new THREE.Vector3(), _up = new THREE.Vector3(0, 1, 0);
   const _kq = new THREE.Quaternion(), _bw = new THREE.Quaternion(), _pw = new THREE.Quaternion(), _qy = new THREE.Quaternion(), _qp = new THREE.Quaternion();
@@ -358,6 +361,7 @@ export async function ladePerson(veil, { modell = 'menschen', stil = 'Casual', h
     blick(ziel) { blickZiel = ziel || null; },
     redet(v) { redetZiel = v ? 1 : 0; },
     nicken() { nickT = NICK; },
+    geste(art) { if (GESTE[art]) { gesteArt = art; gesteT = GESTE[art]; } },
     get augen() { return AUGEN ? AUGEN.map((a) => a.idx.length + '@' + a.idx[0] + '=' + a.attr.getX(a.idx[0]).toFixed(2) + ' n' + blinzelIn.toFixed(1)) : null; },
     hand: HAND, armOk: ARMOK,
     lehnen(w) { lehnW = w || 0; },
@@ -379,8 +383,16 @@ export async function ladePerson(veil, { modell = 'menschen', stil = 'Casual', h
       blickAnwenden(dt);
       redetW += (redetZiel - redetW) * Math.min(1, dt * 6);
       if (nickT > 0) nickT = Math.max(0, nickT - dt);
-      redeAn = !!KOPF && (redetW > 0.02 || nickT > 0);
-      if (redeAn) { kopfRedeVor.copy(KOPF.quaternion); redeT += dt; winkel(KOPF, (Math.sin(redeT * 7.1) * 0.6 + Math.sin(redeT * 2.9 + 1.3) * 0.4) * 0.075 * redetW + (nickT > 0 ? Math.sin(Math.PI * (1 - nickT / NICK)) * 0.16 : 0)); }
+      if (gesteT > 0) gesteT = Math.max(0, gesteT - dt);
+      redeAn = !!KOPF && (redetW > 0.02 || nickT > 0 || gesteT > 0);
+      if (redeAn) { kopfRedeVor.copy(KOPF.quaternion); redeT += dt; winkel(KOPF, (Math.sin(redeT * 7.1) * 0.6 + Math.sin(redeT * 2.9 + 1.3) * 0.4) * 0.075 * redetW + (nickT > 0 ? Math.sin(Math.PI * (1 - nickT / NICK)) * 0.16 : 0));
+        if (gesteT > 0) {   // weich ein- und aus (Sinus-Hülle), Ausschläge wie beim Menschen klein
+          const p = 1 - gesteT / GESTE[gesteArt], h = Math.sin(Math.PI * p);
+          if (gesteArt === 'schuetteln') { _q.setFromAxisAngle(_ay, Math.sin(p * Math.PI * 4) * 0.2 * h); KOPF.quaternion.multiply(_q); }
+          else if (gesteArt === 'neigen') { _q.setFromAxisAngle(_az, 0.15 * h); KOPF.quaternion.multiply(_q); winkel(KOPF, -0.04 * h); }
+          else if (gesteArt === 'lachen') winkel(KOPF, -(0.07 + Math.abs(Math.sin(p * Math.PI * 5)) * 0.06) * h);
+          else if (gesteArt === 'senken') winkel(KOPF, 0.24 * h);
+        } }
       if (!AUGEN) augenSuchen();
       if (AUGEN.length) {
         if (lidZu > 0) { lidZu -= dt; if (lidZu <= 0) augenSetzen(false); }

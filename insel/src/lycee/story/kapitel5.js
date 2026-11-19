@@ -1,6 +1,7 @@
 // Drei Jahre Annexe – 7ème, Kapitel 5 „Meine Gedanken“ (Kurs Jahr 1, Modul 4: E16 Glaubenssätze und Kopfkino,
 // E17 Meine Glaubenssätze und Bohnen-Wette, E18 Kritischer Detektiv und neuer Satz, E19 Neue Gedanken ausprobieren).
 // Faden @annexe.cam: Ein gefälschter Screenshot macht DICH zum Admin. Der Kopf sagt: „Alle halten mich dafür.“ Stimmt das?
+import { S5_GEDANKEN, S5_SCHAM_SCHULD } from './skills-j1.js';
 const pult = (r, c, s) => [-24.25 + r * 2.1, -27.2 + c * 3.4 + s * 0.62, -Math.PI / 2, 'sitzt'];
 const KLASSE = { ayla: pult(0, 0, -1), ben: pult(1, 2, 1), chiara: pult(2, 1, -1), yusuf: pult(1, 0, 1), jo: pult(3, 2, -1), lina: pult(3, 0, 1), noah: pult(0, 1, 1), mila: pult(2, 2, 1) };
 const AULA = { noah: [-16.2, -54, 1.1], mila: [-11.8, -54.2, -1.1], ben: [-12.6, -52.4, -2.2], jo: [-15.6, -52.2, 2.2], ayla: [-17.2, -56.4, 1.6], lina: [-10.9, -56.6, -1.5], chiara: [-14.4, -51.6, 3.1], yusuf: [-13.0, -57.4, -0.4] };
@@ -73,23 +74,6 @@ const TUER = {
   ],
 };
 
-// ---------- Glaubenssätze sortieren (E16 Sortier-Duell) ----------
-const SAETZE = {
-  wo: 'Aula · Sortier-Duell', titel: 'Hilft der Satz – oder bremst er?', zeit: 8,
-  info: 'Sätze, die Leute über sich denken. Wohin damit?',
-  faecher: [{ id: 'hilft', t: 'Hilft', sy: '🚀', f: '#3fa66b' }, { id: 'kommt', t: 'Kommt drauf an', sy: '🤔', f: '#e9a23b' }, { id: 'bremst', t: 'Bremst', sy: '🧱', f: '#b5485d' }],
-  karten: [
-    { t: '„Ich bin zu dumm für Mathe.“', ziel: 'bremst', wer: F.noah, sagt: '(leise) Den kenn ich.' },
-    { t: '„Ich darf auch mal danebenliegen.“', ziel: 'hilft' },
-    { t: '„Ich muss immer perfekt sein.“', ziel: 'bremst', wer: F.mila, sagt: 'Bremst. Aber er fühlt sich an wie ein Motor.' },
-    { t: '„Mir ist alles egal.“', ziel: null, wer: F.ben, sagt: 'Klingt stark. Aber dann fragt man nie.' },
-    { t: '„Wenn mich einer nicht mag, mögen mich alle nicht.“', ziel: 'bremst' },
-    { t: '„Ich muss stark sein.“', ziel: null, wer: F.jo, sagt: 'Manchmal hilft der. Manchmal macht er alles kaputt.' },
-    { t: '„Ich kann Sachen lernen, die ich noch nicht kann.“', ziel: 'hilft', wer: F.ben, sagt: 'Ich lerne gerade Spagat. Seit drei Jahren.' },
-    { t: '„Lieber nichts sagen, dann passiert nichts.“', ziel: null, wer: F.ayla, sagt: 'Kommt drauf an. Im Chat letzte Woche? Hat nicht geholfen.' },
-  ],
-  ende: 'Viele Sätze hat man nicht selbst erfunden. Man hat sie irgendwo aufgeschnappt.',
-};
 const BOHNEN = {
   wo: 'Aula · anonym',
   saetze: ['Ich bin nicht gut genug.', 'Die anderen sind besser.', 'Mich mag eh keiner.', 'Ich darf keine Fehler machen.', 'Ich bin zu viel.', 'Ich schaff das nie.'],
@@ -201,12 +185,9 @@ export const GESPRAECHE_N5 = {
     { tu: 'n5_saalBilanz' },
   ],
   n5_skills: [
-    ['kaya', '(schreibt: „Ich bin zu blöd.“) Nicht melden. Nur denken.'],
-    ['erzaehler', 'Keiner meldet sich. Ein paar nicken ganz leicht.'],
-    ['kaya', 'Den Satz kennen sehr viele. Heute prüfen wir solche Sätze.'],
-    ['kaya', 'Sortiert mal. Hilft der Satz? Oder bremst er?'],
-    { szene: 'sort', id: 'saetze', def: SAETZE, ausgang: (r) => (r.antworten[5] === 'kommt' ? 'kommt' : 'klar'),
-      folgen: { kommt: { herz: { jo: 1 }, dann: [['jo', '„Kommt drauf an“ bei „stark sein“.'], ['jo', '(guckt lange auf die Karte. Sagt nichts.)']] }, klar: {} } },
+    ['erzaehler', 'Aula. Herr Kuedes schreibt einen Satz an die Tafel. Es wird still.'],
+    { szene: 'skillsStunde', id: 's5_gedanken', def: S5_GEDANKEN, ausgang: (r) => (r.check ? 'gut' : 'weiter'),
+      folgen: { gut: { staerke: 'lesen', merke: 's5Gedanken' }, weiter: { merke: 's5Gedanken' } } },
     ['mesenberg', 'Jetzt anonym. Jeder bekommt fünf Bohnen.'],
     ['mesenberg', 'Leg sie zu Sätzen, die du kennst. Von dir oder anderen.'],
     ['mesenberg', 'Keiner guckt. Ich auch nicht. Ich dreh mich um.'],
@@ -214,6 +195,8 @@ export const GESPRAECHE_N5 = {
       folgen: { gelegt: { merke: 'bohnenGelegt' }, leer: { merke: 'bohnenLeer' } } },
     ['ben', 'Neun Bohnen bei „Die anderen sind besser“. Wer sind die?'],
     ['mila', 'Ich hab gezählt: wir alle. Gegenseitig.'],
+    { szene: 'skillsStunde', id: 's5_scham', def: S5_SCHAM_SCHULD, ausgang: (r) => (r.check ? 'gut' : 'weiter'),
+      folgen: { gut: { staerke: 'lesen', merke: 's5Scham' }, weiter: { merke: 's5Scham' } } },
     ['kaya', 'Mission: Fangt einen Satz ein. Wie eine Fliege.'],
     ['mesenberg', 'Wenn ein Satz sehr laut ist: Bürotür ist offen. Oder 116 111.'],
   ],
@@ -315,7 +298,7 @@ export const tunN5 = (c) => ({
   ],
   n5_ende: () => [
     { szene: 'stempel', def: { modul: 'Modul 4 · Meine Gedanken', titel: 'Gedanken geprüft',
-      gelernt: ['Sätze, die helfen – und Sätze, die bremsen', 'Viele kennen die gleichen fiesen Sätze', 'Beweise dafür und dagegen gesammelt', 'Einen neuen, echten Satz gebaut'],
+      gelernt: ['Gedanke – Gefühl – Handlung', 'Tatsache und Gedanke unterschieden', 'Vier Denkfallen erkannt', 'Beweise dafür und dagegen gesammelt', 'Einen neuen, echten Satz gebaut'],
       mission: 'Fang einen fiesen Satz über dich ein. Ist er wahr?' }, folgen: {} },
     ['erzaehler', 'Abends. Eine Nachricht von Mila.'],
     ['mila', '(Nachricht) Ich glaube, ich weiß, wer den Fake gebaut hat.'],

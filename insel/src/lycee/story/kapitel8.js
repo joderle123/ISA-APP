@@ -2,6 +2,7 @@
 // Wenn-dann-Satz; E28 Echt oder fake? KI und Fake News – Bilder-Wette, Teilen-Bremse, Grenz-Linie).
 // Faden @annexe.cam: Ein KI-Video von Mme Tidderich. Der Account verrät sich selbst („lowkey“); Mila und du legt eine
 // Beweis-Mappe an (Fakten rein, Gerüchte und Privates raus) und gebt sie Herrn Kuedes. Kinder ermitteln nicht, niemand ist Köder.
+import { S8_KI } from './skills-j1.js';
 const pult = (r, c, s) => [-24.25 + r * 2.1, -27.2 + c * 3.4 + s * 0.62, -Math.PI / 2, 'sitzt'];
 const KLASSE = { ayla: pult(0, 0, -1), ben: pult(1, 2, 1), chiara: pult(2, 1, -1), yusuf: pult(1, 0, 1), jo: pult(3, 2, -1), lina: pult(3, 0, 1), noah: pult(0, 1, 1), mila: pult(2, 2, 1) };
 const AULA = { noah: [-16.2, -54, 1.1], mila: [-11.8, -54.2, -1.1], ben: [-12.6, -52.4, -2.2], jo: [-15.6, -52.2, 2.2], ayla: [-17.2, -56.4, 1.6], lina: [-10.9, -56.6, -1.5], chiara: [-14.4, -51.6, 3.1], yusuf: [-13.0, -57.4, -0.4] };
@@ -19,7 +20,7 @@ export const SCHRITTE_N8 = [
     fertig: { reden: 'kaya', gespraech: 'n8_skills' } },
   { id: 'k8_tidderich', kap: 8, tag: 'Dienstag', uhr: 8.05, titel: 'Mme Tidderich', ziel: 'Saal 1.04. Mme Tidderich ist heute sehr still.', marker: 'hoffmann',
     start: { teleport: 'saal104Tuer' },
-    leute: { hoffmann: [-27, -24, Math.PI / 2], ...KLASSE },
+    leute: { hoffmann: [-27, -24, Math.PI / 2], mesenberg: [-27, -21.6, Math.PI / 2], ...KLASSE },
     fertig: { reden: 'hoffmann', gespraech: 'n8_tidderich' } },
   { id: 'k8_falle', kap: 8, tag: 'Mittwoch', uhr: 12.4, titel: 'Die Beweis-Mappe', ziel: 'CDI. Mila hat eine Mappe dabei. Ben hat Kekse.', marker: 'mila',
     start: { teleport: 'kantineTuer' },
@@ -73,22 +74,6 @@ const FEED = {
   ],
 };
 
-// ---------- KI: geht klar oder gar nicht? (E28 Grenz-Linie) ----------
-const GRENZE = {
-  wo: 'Saal 1.04 · Grenz-Linie', titel: 'KI: geht klar oder gar nicht?', zeit: 9,
-  info: 'Mme Tidderich liest vor. Wo stehst du?',
-  faecher: [{ id: 'klar', t: 'Geht klar', sy: '✅', f: '#3fa66b' }, { id: 'kommt', t: 'Kommt drauf an', sy: '🤔', f: '#e9a23b' }, { id: 'nein', t: 'Geht gar nicht', sy: '⛔', f: '#d6452f' }],
-  karten: [
-    { t: 'Mir eine Matheaufgabe von KI erklären lassen.', ziel: ['kommt', 'klar'], wer: F.mila, sagt: 'Klar. Aber KI irrt sich. Nachrechnen.' },
-    { t: 'Den Aufsatz von KI schreiben lassen und abgeben.', ziel: ['nein', 'kommt'], wer: F.mila, sagt: 'Dann lernt die KI. Nicht ich.' },
-    { t: 'Ein Bild von mir selbst als Astronaut.', ziel: ['kommt', 'klar'], wer: F.ben, sagt: 'Mein Gesicht in eine App? Erst fragen, wer es behält.' },
-    { t: 'Ein Foto von einer Mitschülerin verändern. Ohne zu fragen.', ziel: 'nein' },
-    { t: 'Die Stimme einer Lehrerin nachmachen. Für einen Witz.', ziel: 'nein', wer: F.lina, sagt: 'Eine Stimme gehört der Person. Kein Witz.' },
-    { t: 'Einen Text übersetzen lassen.', ziel: ['kommt', 'klar'] },
-    { t: 'Ein KI-Bild posten und dazuschreiben: „mit KI gemacht“.', ziel: ['kommt', 'klar'] },
-  ],
-  ende: 'Fake-Videos von echten Menschen sind Mobbing. Oft auch verboten.',
-};
 
 // ---------- Freitag: Die Mappe liegt bei der Direktion. Der Account wird still. ----------
 const BDAY = {
@@ -221,8 +206,9 @@ export const GESPRAECHE_N8 = {
       { t: '(Nichts sagen. Zuhören.)', staerke: 'warten', herz: { hoffmann: 1 }, dann: [['hoffmann', '(nickt dir zu) Danke, dass ihr zuhört.']] },
     ] },
     { tu: 'n8_joSorry' },
-    ['hoffmann', 'Jetzt Deutsch. Herr Mesenberg hat eine Übung dagelassen. Zu KI.'],
-    { szene: 'sort', id: 'grenze', def: GRENZE, ausgang: () => 'ok', folgen: { ok: {} } },
+    ['hoffmann', 'Herr Mesenberg ist heute dabei. Er macht eine Stunde zu KI.'],
+    { szene: 'skillsStunde', id: 's8_ki', def: S8_KI, ausgang: (r) => (r.check ? 'gut' : 'weiter'),
+      folgen: { gut: { staerke: 'klar', merke: 's8Ki' }, weiter: { merke: 's8Ki' } } },
   ],
   n8_falle: [
     ['mila', 'Gestern Abend. Unter dem Video. Der Account hat selbst kommentiert.'],

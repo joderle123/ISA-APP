@@ -1007,3 +1007,72 @@ kbd { display: inline-block; min-width: 1.5em; padding: 0 .35em; margin-right: .
 .ly-karte-svg .k-ziel-ring { fill: rgba(233,162,59,.22); stroke: #e9a23b; stroke-width: .4; }
 .ly-karte-svg .k-marke { fill: #6b8f5a; }
 .ly-karte-svg .k-marke-t { fill: #3d5a30; text-anchor: middle; font-family: system-ui, sans-serif; font-weight: 700; paint-order: stroke; stroke: #e8f2de; stroke-width: .6; }
+
+/* ---------- Skills-Raum: eigener, ruhiger Vollbild-Raum ---------- */
+.ly-ebene[data-art="skills"] { background: linear-gradient(160deg, #f4efe6, #e8eef4); backdrop-filter: none; padding: 0; }
+.ly-ebene[data-art="skills"] .ly-karte { background: transparent; box-shadow: none; width: min(860px, 100vw); max-width: none; height: 100dvh; max-height: none; padding: 18px 18px 14px; display: flex; overflow: hidden; }
+.sr { display: flex; flex-direction: column; width: 100%; height: 100%; gap: 12px; color: #26303f; }
+.sr-kopf h2 { margin: 2px 0 8px; font-size: clamp(20px, 3.4vw, 28px); }
+.sr-kicker { font-size: 12px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; opacity: .6; }
+.sr-phasen { display: flex; gap: 6px; list-style: none; padding: 0; margin: 0; flex-wrap: wrap; }
+.sr-phasen li { font-size: 12px; font-weight: 700; padding: 4px 10px; border-radius: 99px; background: #fff; opacity: .55; }
+.sr-phasen li.jetzt { opacity: 1; background: #2b3a55; color: #fff; }
+.sr-phasen li.fertig { opacity: .9; background: #d8ecd9; }
+.sr-buehne { flex: 0 1 auto; min-height: 0; overflow: auto; display: flex; flex-direction: column; gap: 12px; padding: 2px; }
+.sr-fuss { display: flex; flex-wrap: wrap; gap: 8px; justify-content: space-between; align-items: center; min-height: 48px; }
+.sr-fuss .sr-optionen, .sr-fuss .sr-kat { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 8px; width: 100%; }
+.sr-fuss .ly-btn { text-align: left; }
+.sr-kat .ly-btn, .sr-optionen .ly-btn { display: flex; align-items: center; gap: 8px; line-height: 1.3; }
+.sr-fall p { font-size: 1.15em; margin: 8px 0 2px; }
+.sr-kat .ly-btn { border-left: 6px solid var(--f); font-weight: 800; }
+.sr-lehrer { display: flex; gap: 12px; align-items: flex-start; background: #fff; border-radius: 16px; padding: 12px 14px; box-shadow: 0 2px 8px rgba(0,0,0,.06); }
+.sr-lehrer > i { flex: none; width: 40px; height: 40px; border-radius: 50%; background: var(--f); color: #fff; display: grid; place-items: center; font-style: normal; font-weight: 800; }
+.sr-lehrer b { font-size: 13px; opacity: .7; } .sr-lehrer p { margin: 2px 0 0; font-size: 1.05em; line-height: 1.5; } .sr-lehrer small { display: block; margin-top: 6px; opacity: .65; }
+.sr-karte, .sr-fall, .sr-merk, .sr-check { background: #fff; border-radius: 18px; padding: 18px 20px; box-shadow: 0 2px 10px rgba(0,0,0,.06); line-height: 1.55; }
+.sr-karte h3, .sr-merk h3, .sr-check h3 { margin: 4px 0 8px; font-size: 1.25em; }
+.sr-sy { font-size: 34px; } .sr-seite { text-align: right; font-size: 12px; opacity: .5; margin-top: 8px; }
+.sr-punkte { margin: 8px 0; padding-left: 1.1em; } .sr-punkte li { margin: 4px 0; }
+.sr-bsp { margin-top: 10px; padding: 10px 12px; border-radius: 12px; background: #eef6ee; } .sr-bsp b { display: block; font-size: 12px; text-transform: uppercase; letter-spacing: .05em; opacity: .7; }
+.sr-gegen { background: #fbf0e4; }
+.sr-wer { display: block; font-size: 13px; opacity: .7; }
+.sr-rueck.gut .sr-lehrer { border-left: 5px solid #3fa66b; } .sr-rueck.eher .sr-lehrer { border-left: 5px solid #e9a23b; }
+.sr-merk { border: 2px dashed #c9b98f; background: #fffaf0; } .sr-merk > span, .sr-check > span { font-size: 12px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; opacity: .65; }
+.sr-check.gut { border-left: 6px solid #3fa66b; } .sr-check.nochmal { border-left: 6px solid #e9a23b; }
+.sr-chips { display: flex; flex-wrap: wrap; gap: 8px; width: 100%; }
+.sr-chip { border: 2px solid #d4d9e0; background: #fff; border-radius: 99px; padding: 8px 14px; font: inherit; font-weight: 700; cursor: pointer; }
+.sr-chip.an { background: #2b3a55; color: #fff; border-color: #2b3a55; }
+.sr-satz { margin-top: 10px; font-size: 1.15em; } .sr-satz span { background: #eef6ee; border-radius: 8px; padding: 2px 6px; } .sr-satz i { opacity: .55; }
+.sr-skala { display: flex; align-items: center; gap: 12px; margin-top: 12px; } .sr-skala input { flex: 1; } .sr-skala b { font-size: 1.6em; min-width: 2.2em; text-align: right; }
+.sr-kk { display: grid; grid-template-columns: minmax(140px, 220px) 1fr; gap: 16px; align-items: center; background: #fff; border-radius: 18px; padding: 14px; }
+.sr-koerper { width: 100%; max-height: 52vh; } .sr-zone { fill: #e7e2d8; stroke: #a89f8e; stroke-width: 1; cursor: pointer; } .sr-zone.an { fill: #e9734a; } .sr-zone.typ { stroke: #e9a23b; stroke-width: 3.5; }
+.sr-klein { font-size: .85em; opacity: .7; }
+.sr-du { align-self: flex-end; max-width: 85%; background: #2b3a55; color: #fff; border-radius: 16px 16px 4px 16px; padding: 8px 14px; font-weight: 700; }
+.sr-du span { display: block; font-size: 11px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; opacity: .7; }
+.sr-check .sr-du { margin: 8px 0; align-self: auto; display: inline-block; }
+.sr-heft { display: grid; gap: 10px; }
+@media (max-width: 560px) { .sr-kk { grid-template-columns: 1fr; } .sr-koerper { max-height: 34vh; } .sr-fuss .sr-optionen, .sr-fuss .sr-kat { grid-template-columns: 1fr 1fr; } .sr-fuss .sr-optionen { grid-template-columns: 1fr; } .ly-ebene[data-art="skills"] .ly-karte { padding: 12px 12px 10px; } }
+.ly-kontrast .sr-karte, .ly-kontrast .sr-fall, .ly-kontrast .sr-lehrer { border: 2px solid #101418; }
+.sr-gef { background: #fff; border-radius: 18px; padding: 22px 20px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,.06); }
+.sr-gef p { font-size: 1.2em; line-height: 1.6; max-width: 34em; margin: 14px auto 0; }
+.sr-atem { width: 120px; height: 120px; margin: 14px auto 0; display: grid; place-items: center; }
+.sr-atem i { width: 60px; height: 60px; border-radius: 50%; background: radial-gradient(circle, #9fd3b5, #3fa66b); animation: sr-atmen var(--d) ease-in-out infinite; }
+@keyframes sr-atmen { 0% { transform: scale(1); } 40% { transform: scale(1.9); } 100% { transform: scale(1); } }
+.ly-wenig-bewegung .sr-atem i, .ly-ruhig .sr-atem i { animation: none; }
+@media (prefers-reduced-motion: reduce) { .sr-atem i { animation: none; } }
+/* Kapitel-Vorspann (Kino) */
+.ly-vorspann { position: absolute; inset: 0; z-index: 38; pointer-events: auto; cursor: pointer; }
+.ly-vs-balken { position: absolute; left: 0; right: 0; height: 12vh; background: #05070c; transition: transform .7s cubic-bezier(.2,.7,.2,1); }
+.ly-vs-balken.o { top: 0; transform: translateY(-100%); } .ly-vs-balken.u { bottom: 0; transform: translateY(100%); }
+.ly-vorspann.an .ly-vs-balken { transform: none; }
+.ly-vs-text { position: absolute; left: clamp(16px, 6vw, 80px); bottom: calc(12vh + clamp(18px, 5vh, 48px)); color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.55); opacity: 0; transform: translateY(10px); transition: opacity 1.1s ease .5s, transform 1.1s ease .5s; max-width: min(720px, 88vw); }
+.ly-vorspann.an .ly-vs-text { opacity: 1; transform: none; }
+.ly-vs-text span { display: block; font-size: 13px; font-weight: 800; letter-spacing: .22em; text-transform: uppercase; opacity: .8; }
+.ly-vs-text b { display: block; font-size: clamp(30px, 6vw, 58px); line-height: 1.05; margin: 6px 0 10px; letter-spacing: -.01em; }
+.ly-vs-text em { display: block; font-style: normal; font-size: clamp(15px, 2.2vw, 20px); opacity: .9; }
+.ly-vorspann small { position: absolute; right: 18px; bottom: calc(12vh + 14px); color: #fff; opacity: .55; font-size: 12px; font-weight: 700; }
+.ly-vorspann.weg { opacity: 0; transition: opacity .55s ease; }
+.ly-kino .ly-hud > *:not(.ly-toasts) { opacity: 0 !important; transition: opacity .3s; }
+@media (prefers-reduced-motion: reduce) { .ly-vs-balken, .ly-vs-text { transition: none; } }
+.ly-j-erinnern { list-style: none; padding: 0; margin: 8px 0; display: grid; gap: 8px; }
+.ly-j-erinnern li { background: #fff; border-left: 5px solid var(--f); border-radius: 10px; padding: 8px 12px; }
+.ly-j-erinnern b { color: var(--f); } .ly-j-erinnern small { opacity: .6; margin-left: 6px; } .ly-j-erinnern span { display: block; margin-top: 2px; }

@@ -653,7 +653,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
   ui.mischpult = (def) => new Promise((ok) => {
     const ids = def.gefuehle || Object.keys(GEF), werte = Object.fromEntries(ids.map((id) => [id, 0]));
     const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || '') + '</span><b>Mischpult</b></div>' +
-      '<div class="sz-fall" style="--f:#2b3a55"><p>' + esc(ersetze(def.ereignis)) + '</p></div><p class="sz-info">Was ist alles da? Was ist alles da? Schieb jeden Regler. Schieb jeden Regler von 0 bis 10.</p>' +
+      '<div class="sz-fall" style="--f:#2b3a55"><p>' + esc(ersetze(def.ereignis)) + '</p></div><p class="sz-info">Oft sind mehrere Gefühle gleichzeitig da. Das ist normal. Was ist alles da? Schieb jeden Regler von 0 bis 10.</p>' +
       '<div class="sz-mischpult">' + ids.map((id) => '<label style="--f:' + GEF[id][1] + '"><span>' + GEF[id][2] + '</span><input type="range" min="0" max="10" step="1" value="0" data-g="' + id + '"><b data-z="' + id + '">0</b><small>' + GEF[id][0] + '</small><i class="sz-fremd" data-f="' + id + '"></i></label>').join('') + '</div>' +
       '<div class="sz-karten"><button type="button" class="sz-weiter" data-a="w">So ist es <kbd>E</kbd></button></div></div>');
     k.querySelectorAll('[data-g]').forEach((r) => { r.addEventListener('keydown', (e) => e.stopPropagation()); r.oninput = () => { werte[r.dataset.g] = +r.value; k.querySelector('[data-z="' + r.dataset.g + '"]').textContent = r.value; }; });

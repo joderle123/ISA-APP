@@ -1,6 +1,7 @@
 // Neue Geschichte „@annexe.cam“ (annexe/STORY.md) – Kapitel 1 „Der erste Tag“.
 // Jugendsprache je Figur: annexe/FIGUREN.md („Slang“). Situations-Spiele: situation.js ({ szene: 'hitze' | 'chat' }).
 // Höchstens rund 12 Wörter je Blase. Kein richtig/falsch – die Leute reagieren.
+import { S1_ANKOMMEN } from './skills-j1.js';
 const pult = (r, c, s) => [-24.25 + r * 2.1, -27.2 + c * 3.4 + s * 0.62, -Math.PI / 2, 'sitzt'];
 const KLASSE = { ayla: pult(0, 0, -1), ben: pult(1, 2, 1), chiara: pult(2, 1, -1), yusuf: pult(1, 0, 1), jo: pult(3, 2, -1), lina: pult(3, 0, 1), noah: pult(0, 1, 1) };
 // ---------- Zettel-Krimi (statt Bingo): Wer hat welchen Zettel geschrieben? ----------
@@ -261,25 +262,6 @@ const KLASSE_NAMEN = [
   { id: 'ben', name: 'Ben', farbe: '#d9a21b', geste: '🏀' }, { id: 'chiara', name: 'Chiara', farbe: '#3fa66b', geste: '📚' },
   { id: 'yusuf', name: 'Yusuf', farbe: '#5fa0d0', geste: '🥋' }, { id: 'ayla', name: 'Ayla', farbe: '#e85d75', geste: '🎸' },
 ];
-const ZWEI = {
-  runden: [
-    { wer: { id: 'ben', name: 'Ben', farbe: '#d9a21b' }, luege: 1,
-      saetze: [{ t: 'Mein Hund hat mein Ladekabel gegessen.', zeichen: 'zuckt mit den Schultern' }, { t: 'Ich hab noch nie Schulden gemacht.', zeichen: 'grinst viel zu breit' }, { t: 'Ich hab mal 40 Chicken Nuggets gegessen.', zeichen: 'wird stolz' }],
-      treffer: 'Okay, okay. Schulden hab ich. Bei dir auch bald.', daneben: 'Haha! Die Nuggets sind echt. Und die Schulden auch.' },
-    { wer: { id: 'mila', name: 'Mila', farbe: '#2fb8a8' }, luege: 2,
-      saetze: [{ t: 'Ich kann den Würfel in 41 Sekunden.', zeichen: 'guckt dich direkt an' }, { t: 'Ich habe 212 Tauben gezählt. Dieses Jahr.', zeichen: 'guckt dich direkt an' }, { t: 'Ich mag Überraschungen.', zeichen: 'blinzelt dreimal' }],
-      treffer: 'Korrekt. Überraschungen sind schlecht geplante Ereignisse.', daneben: 'Falsch. Ich hasse Überraschungen. Das war die Lüge.' },
-    { wer: { id: 'jo', name: 'Jo', farbe: '#c0392b' }, luege: 0,
-      saetze: [{ t: 'Ich bin schon Auto gefahren, digga. Autobahn.', zeichen: 'redet sehr schnell' }, { t: 'Meine Katze heißt Diesel.', zeichen: 'lacht' }, { t: 'Ich hab Angst vor Gänsen.', zeichen: 'wird leiser' }],
-      treffer: 'Wallah, du bist gut. Parkplatz. Es war ein Parkplatz.', daneben: 'HA! Autobahn? Ich bin zwölf. Die Gänse sind echt, okay?' },
-  ],
-  eigene: [{ t: 'Ich kann rückwärts Fahrrad fahren.' }, { t: 'Ich war mal im Fernsehen. Hinten. Im Publikum.' }, { t: 'Ich hab einen Kaktus, der Kevin heißt.' }],
-  eigeneRater: [
-    { id: 'noah', name: 'Noah', farbe: '#3f78b8', gut: 0.3, richtig: 'Nummer … die da. Ich hab geraten.', falsch: 'Ich tippe auf die. Ich vertraue dir. Leider.' },
-    { id: 'ayla', name: 'Ayla', farbe: '#e85d75', gut: 0.6, richtig: 'Easy. Du hast weggeguckt.', falsch: 'Digga, ich war so sicher.' },
-    { id: 'ben', name: 'Ben', farbe: '#d9a21b', gut: 0.4, richtig: 'Lügen erkenn ich. Ich bin Profi.', falsch: 'Nee. Das ist gelogen. Oder? Sein Vater.' },
-  ],
-};
 const PARTNER = {
   noah: { id: 'noah', name: 'Noah', farbe: '#3f78b8' }, mila: { id: 'mila', name: 'Mila', farbe: '#2fb8a8', weib: true },
   ben: { id: 'ben', name: 'Ben', farbe: '#d9a21b' }, lina: { id: 'lina', name: 'Lina', farbe: '#9b7bc8', weib: true },
@@ -560,10 +542,8 @@ export const GESPRAECHE_N1 = {
   ],
   n1_skills: [
     ['kaya', 'Wéi geet et? Ich bin Herr Kuedes. Vom SePAS, dem Hilfe-Team.'],
-    ['kaya', 'Hier gibt’s keine Noten. Nur Spiele. Und Kekse.'],
     ['kaya', 'Und: Ich weiß von @annexe.cam. Ich kümmere mich.'],
-    ['ben', 'Kekse? Ich bin dabei.'],
-    ['kaya', 'Erstes Spiel: Namen-Rekord. Wir werden schneller. Ihr werdet sehen.'],
+    ['kaya', 'Zum Aufwärmen: Namen-Rekord. Drei Runden. Ihr werdet schneller.'],
     { szene: 'namen', id: 'namen', def: { leute: KLASSE_NAMEN, runden: 3, proRunde: 5 },
       ausgang: (r) => (r.treffer >= r.gesamt * 0.8 ? 'top' : r.treffer >= r.gesamt * 0.5 ? 'mittel' : 'wenig'),
       folgen: {
@@ -571,28 +551,18 @@ export const GESPRAECHE_N1 = {
         mittel: { staerke: 'kontakt', herz: { noah: 1 }, dann: [['kaya', 'Besser als Runde eins. Genau darum geht’s.']] },
         wenig: { dann: [['kaya', 'Namen sind schwer. Morgen kennst du drei mehr.'], ['noah', 'Ich kenn nur Ben. Weil er laut ist.']] },
       } },
-    ['kaya', 'Zweites Spiel. Zwei Wahrheiten, eine Lüge. Ihr ratet mit.'],
-    { szene: 'zwei', id: 'zwei', def: ZWEI,
-      ausgang: (r) => (r.erraten.length >= 2 ? 'leser' : r.reingelegt.length >= 2 ? 'poker' : 'normal'),
-      folgen: {
-        leser: { staerke: 'lesen', herz: { mila: 1, jo: 1 }, merke: 'luegenLeser', dann: [['jo', 'Digga, du liest Leute wie ein Buch. Unheimlich.']] },
-        poker: { staerke: 'humor', herz: { ben: 1, ayla: 1 }, dann: [['ben', 'Pokerface. Ich will nie gegen dich spielen.']] },
-        normal: { herz: { noah: 1 }, dann: [['noah', 'Ich hab alles falsch geraten. Aber ich weiß jetzt was über Gänse.']] },
-      } },
-    ['kaya', 'Letzte Frage. Wie wäre der schlimmste Kurs der Welt?'],
-    ['jo', 'Handys klingeln dauernd. Alle lachen über alle.'],
-    ['ben', 'Keine Kekse. Nie.'],
-    ['mila', 'Jemand muss vor allen was Persönliches erzählen.'],
-    ['kaya', 'Und jetzt umdrehen. Was soll bei UNS gelten? Ein Vorschlag pro Person.'],
+    { szene: 'skillsStunde', id: 's1_ankommen', def: S1_ANKOMMEN, ausgang: (r) => (r.check ? 'gut' : 'weiter'),
+      folgen: { gut: { staerke: 'hilfe', merke: 's1Ankommen' }, weiter: { merke: 's1Ankommen' } } },
+    ['kaya', 'Die fünf Regeln stehen. Welche ist dir am wichtigsten? Oder fehlt eine?'],
     { wahl: [
       { t: '„Keine Fotos von Leuten ohne Ja.“', staerke: 'klar', herz: { mila: 1, dario: -1, ayla: 1 }, merke: 'regelFotos', dann: [
         ['ayla', 'Digga. Gerade diese Woche.'], ['erzaehler', 'Ben guckt zu Jo. Jo guckt aufs Handy. Keiner sagt „@annexe.cam“.'] ] },
       { t: '„Niemand muss was Persönliches sagen.“', staerke: 'einbeziehen', herz: { noah: 2, mila: 1 }, merke: 'regelPersoenlich', dann: [
-        ['noah', '(leise) Danke.'], ['kaya', 'Kommt auf die Liste. Ganz oben.'] ] },
+        ['noah', '(leise) Danke.'], ['kaya', 'Steht ganz oben. Zu Recht.'] ] },
       { t: '„Was hier gesagt wird, bleibt hier. Außer bei Gefahr.“', staerke: 'vertrauen', herz: { lina: 2, kaya: 1 }, merke: 'regelVertraulich', dann: [
         ['lina', '(nickt. Zweimal.)'], ['kaya', 'Genau. Bei Gefahr hol ich Hilfe. Und sag es euch vorher.'], ['jo', 'Auch im Chat? Das wird schwer.'] ] },
       { t: '„Jede Woche Kekse. Pflicht.“', staerke: 'humor', herz: { ben: 2 }, merke: 'regelKekse', dann: [
-        ['ben', 'EHRENPERSON. Ich unterschreib mit Blut. Mit Kakao.'], ['kaya', 'Angenommen. Aber noch eine ernste, bitte.'] ] },
+        ['ben', 'Ehrenperson.'], ['kaya', 'Angenommen. Und von den ernsten: Welche zählt für dich?'] ] },
     ] },
     ['kaya', 'Gut. Unterschreiben. Dann raus auf den Hof.'],
   ],
@@ -615,7 +585,7 @@ export const GESPRAECHE_N1 = {
       { t: '„Kekse.“', staerke: 'humor', herz: { ben: 1 }, dann: [['kaya', 'Steht schon drauf. Dank Ben.']] },
     ] },
     { szene: 'stempel', def: (m) => ({ modul: 'Modul 0 · Ankommen', titel: 'Angekommen',
-      gelernt: ['Namen gelernt' + (m.namenTop ? ' – sehr schnell' : ''), 'Leute gelesen: zwei Wahrheiten, eine Lüge', 'Jemanden gelotst – und selbst blind gelaufen', 'Eine Regel für die Gruppe vorgeschlagen'],
+      gelernt: ['Namen gelernt' + (m.namenTop ? ' – sehr schnell' : ''), 'Check-in mit genauem Gefühlswort', 'Die fünf Regeln, die eine Gruppe sicher machen', 'Jemanden gelotst – und selbst blind gelaufen'],
       mission: 'Sprich diese Woche jemanden an, mit dem du noch nie geredet hast. Und lern drei Namen aus der Parallelklasse.' }), folgen: {} },
     ['erzaehler', 'Pause. @annexe.cam hat eine Story. Schwarz, weiße Schrift.'],
     ['erzaehler', '„Montag: TOP 5 LANGWEILIGSTE LEUTE. Ratet mal. 📷“'],

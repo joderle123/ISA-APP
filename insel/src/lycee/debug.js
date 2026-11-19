@@ -56,8 +56,14 @@ export function debugWerkzeuge() {
       const becher = [...document.querySelectorAll('.ly-ebene .sz-becher [data-i]:not([disabled])')];
       if (becher.length && !sichtbar('.ly-ebene [data-a="w"]')) { klick(becher[Math.floor(Math.random() * becher.length)]); return; }
       // Karten: erst „Weiter/Fertig/Verstanden“, sonst eine Auswahl, sonst Taste E
-      const weiter = sichtbar('.ly-ebene [data-a="w"]') || sichtbar('.ly-ebene [data-a="ok"]') || sichtbar('.ly-ebene [data-a="weiter"]') || sichtbar('.ly-ebene [data-a="sagen"]') || sichtbar('.ly-ebene [data-a="weg"]');
+      const weiter = sichtbar('.ly-ebene [data-a="w"]') || sichtbar('.ly-ebene [data-a="ok"]') || sichtbar('.ly-ebene [data-a="weiter"]') || sichtbar('.ly-ebene [data-a="sagen"]') || sichtbar('.ly-ebene [data-a="weg"]') || sichtbar('.ly-ebene [data-a="stopp"]');
       if (klick(weiter)) return;
+      // Skills-Raum: Fertig (Körperkarte, Mehrfachwahl) oder eine Antwort; „Zurück“ beim Blättern nie
+      if (eb.querySelector('.sr')) {
+        if (klick(sichtbar('.sr-fuss [data-a="f"]'))) return;
+        const sr = [...eb.querySelectorAll('.sr-fuss [data-i]')].filter((b) => !/Zurück/.test(b.textContent));
+        if (sr.length) { klick(waehle(sr)); return; }
+      }
       const opt = [...document.querySelectorAll('.ly-ebene .ly-d-optionen button:not([disabled]), .ly-ebene [data-j]:not([disabled]), .ly-ebene [data-k]:not([disabled]), .ly-ebene .ly-skala [data-s]')].filter((b) => b.offsetParent !== null);
       if (opt.length) { klick(waehle(opt)); return; }
       taste('KeyE'); return;

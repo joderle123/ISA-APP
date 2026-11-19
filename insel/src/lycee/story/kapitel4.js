@@ -2,6 +2,7 @@
 // E12 Körper und Atem, E13 Sinne, E14 Kopf-Skills, E15 Skills-Koffer und Notfallkarte).
 // Faden @annexe.cam: Ein Foto aus dem Mathe-Test, gepostet um 8:34 – alle Handys der 7P2 lagen in der Handy-Kiste.
 // Neue Spur: Wer war um 8:34 im Flur? Dario (rausgeflogen) – und Luca. Am Ende: ein gefälschter Screenshot macht DICH zum Admin.
+import { S4_REGULIEREN } from './skills-j1.js';
 const pult = (r, c, s) => [-24.25 + r * 2.1, -27.2 + c * 3.4 + s * 0.62, -Math.PI / 2, 'sitzt'];
 const KLASSE = { ayla: pult(0, 0, -1), ben: pult(1, 2, 1), chiara: pult(2, 1, -1), yusuf: pult(1, 0, 1), jo: pult(3, 2, -1), lina: pult(3, 0, 1), noah: pult(0, 1, 1), mila: pult(2, 2, 1) };
 const AULA = { noah: [-16.2, -54, 1.1], mila: [-11.8, -54.2, -1.1], ben: [-12.6, -52.4, -2.2], jo: [-15.6, -52.2, 2.2], ayla: [-17.2, -56.4, 1.6], lina: [-10.9, -56.6, -1.5], chiara: [-14.4, -51.6, 3.1], yusuf: [-13.0, -57.4, -0.4] };
@@ -219,17 +220,12 @@ export const GESPRAECHE_N4 = {
     ['noah', 'Ich bin gerade bei 70. Mindestens.'],
   ],
   n4_skills: [
-    ['kaya', '(hält eine Faust hoch) Daumen rein. Daumen ist der Alarm. Finger bremsen.'],
-    ['kaya', '(klappt die Finger hoch) Ab etwa 90: Deckel weg.'],
-    ['ben', 'Mein Deckel ist bei Nuggets immer weg.'],
-    ['mesenberg', 'Das ist eher Begeisterung, Ben. Andere Zone.'],
-    { wahl: [
-      { t: '„Was hilft bei Rot, wenn der Kopf nicht zuhört?“', staerke: 'lesen', herz: { kaya: 1 }, dann: [['kaya', 'Gute Frage. Der Körper. Atmen, Bewegen, Kälte. Erst runter, dann reden.']] },
-      { t: '„Ich war heute Morgen bei Rot. Wegen dem Bus.“', wenn: (m) => m.thermoRot, staerke: 'zuhoeren', herz: { kaya: 1, noah: 1 }, dann: [['kaya', 'Rot am Montagmorgen. Klassiker. Was hat geholfen?'], ['du', 'Weiß nicht genau. Irgendwas hat geholfen.'], ['kaya', 'Gut gemerkt. Was war es? Das kommt in den Koffer.']] },
-      { t: '(Faust machen. Daumen fühlen. Nichts sagen.)', dann: [['erzaehler', 'Deine Finger klappen hoch. Wieder runter. Komisch, wie gut das passt.']] },
-    ] },
-    ['kaya', 'Jetzt die Linie. Ich lese Sätze. Ihr stellt euch hin.'],
-    ['kaya', 'Und ihr wettet, wo die anderen stehen.'],
+    ['erzaehler', 'Aula. Auf dem Boden klebt eine lange Linie. An einem Ende steht 0, am anderen 100.'],
+    { szene: 'skillsStunde', id: 's4_regulieren', def: S4_REGULIEREN, ausgang: (r) => (r.check ? 'gut' : 'weiter'),
+      folgen: { gut: { staerke: 'ruhig', merke: 's4Regulieren' }, weiter: { merke: 's4Regulieren' } } },
+    { tu: 'n4_busRueck' },
+    ['kaya', 'Jetzt anwenden. Ich lese Sätze. Ihr stellt euch auf die Linie.'],
+    ['kaya', 'Und ihr schätzt, wo die anderen stehen.'],
     { szene: 'zonen', id: 'zonen', def: ZONEN,
       ausgang: (r) => (r.treffer >= 3 ? 'leser' : 'ueberrascht'),
       folgen: {
@@ -239,7 +235,7 @@ export const GESPRAECHE_N4 = {
     ['jo', 'Digga, ich dachte, Mila ist nie gestresst.'],
     ['jo', 'Die ist bei 85 wegen einem RAUM.'],
     ['mila', 'Und du bei 90 wegen einem Lachen. Gleichstand.'],
-    ['kaya', 'Letzte Übung. Koffer-Markt. Jeder packt ein, was bei ihm wirkt.'],
+    ['kaya', 'Letzte Übung: Pack deinen Koffer. Was hilft dir bei Rot?'],
     ['kaya', 'Morgen ist Test. Nehmt den Koffer mit.'],
     { szene: 'koffer', id: 'koffer', def: KOFFER, ausgang: (r) => (r.notfall.some((id) => ['schiff', 'satz', 'ort'].includes(id)) && r.notfall.every((id) => ['schiff', 'satz', 'ort'].includes(id)) ? 'nurKopf' : 'gemischt'),
       folgen: {
@@ -349,9 +345,8 @@ export const GESPRAECHE_N4 = {
   n4_ende: [
     ['kaya', 'Letzte Stunde der Woche. Wer will, zeigt seine Notfallkarte.'],
     ['kaya', 'Wer nicht will, nicht.'],
-    ['ben', 'Meine: 1. Atmen. 2. Körbe werfen. 3. Nuggets.'],
-    ['mesenberg', 'Nuggets bei Rot?'],
-    ['ben', 'Nuggets bei ALLEM.'],
+    ['ben', 'Meine: Atmen. Körbe werfen. Und Mila fragen.'],
+    ['mesenberg', 'Körper, Körper, Mensch. Für Rot genau richtig.'],
     { tu: 'n4_karte' },
     ['kaya', 'Ganz unten steht bei allen das Gleiche.'],
     ['kaya', 'Wenn gar nichts mehr geht: Hilfe holen. Uns hier.'],
@@ -370,6 +365,8 @@ export const tunN4 = (c) => ({
     if (m.milaLaut) return [['mila', '(im Rausgehen) Mittwoch, das „alles okay“ vor allen …'], ['mila', 'War lieb gemeint. Nächstes Mal lieber leise, ja?']];
     return [];
   },
+  n4_busRueck: () => (c.S.merke.thermoRot ? [['kaya', 'Wer heute Morgen bei Rot war: Was hat geholfen?'], ['kaya', 'Meistens war es der Körper.']]
+    : c.S.merke.thermoGelb ? [['kaya', 'Wer heute Morgen gelb war und runterkam: Das war ein Skill.']] : []),
   n4_nurKopf: () => (c.S.merke.kofferNurKopf ? [['erzaehler', 'Auf deiner Karte stand nur Kopf. Heute hast du gesehen: Bei Rot hilft zuerst der Körper.'], ['erzaehler', 'Du kannst die Karte umpacken. Jederzeit.']] : []),
   n4_testStart: () => (c.S.merke.kofferGepackt ? [['erzaehler', 'Du denkst an deinen Koffer. Er ist in deinen Händen.']] : []),
   n4_handyBilanz: () => (c.S.merke.handyGelogen ? [['erzaehler', 'Dein Handy war in der Jacke. Gelogen. Für nichts.']] : []),

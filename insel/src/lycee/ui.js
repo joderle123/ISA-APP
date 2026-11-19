@@ -32,6 +32,18 @@ export function createUI({ root, input, speech }) {
   // ---------- Auftrag, Raum, Uhr, Hinweis, Toasts ----------
   let letztesZiel = '';
   ui.blende = (text) => new Promise((ok) => { blende.querySelector('.ly-blende-t').textContent = text || ''; blende.classList.add('an'); setTimeout(ok, 280); });
+  // Kapitel-Vorspann (Kino): Balken oben und unten, Kapitelnummer, Titel, ein Satz – die Kamera fährt dazu über die Schule.
+  // Läuft ~5,5 s, E / Enter / Leertaste / Klick überspringt. HUD ist solange aus.
+  ui.vorspann = ({ nr, titel, zeile, ort }) => new Promise((ok) => {
+    const v = el('div', 'ly-vorspann hud-interactive', '<i class="ly-vs-balken o"></i><i class="ly-vs-balken u"></i><div class="ly-vs-text"><span>' + (ort ? esc(ort) + ' · ' : '') + 'Kapitel ' + esc(nr) + '</span><b>' + esc(titel) + '</b><em>' + esc(zeile || '') + '</em></div><small>E · weiter</small>');
+    root.appendChild(v); root.classList.add('ly-kino');
+    requestAnimationFrame(() => v.classList.add('an'));
+    let aus = false;
+    const fertig = () => { if (aus) return; aus = true; document.removeEventListener('keydown', taste, true); v.classList.remove('an'); v.classList.add('weg'); root.classList.remove('ly-kino'); setTimeout(() => v.remove(), 600); ok(); };
+    const taste = (e) => { if (['KeyE', 'Enter', 'Space', 'Escape'].includes(e.code)) { e.preventDefault(); e.stopPropagation(); fertig(); } };
+    document.addEventListener('keydown', taste, true); v.onclick = fertig;
+    setTimeout(fertig, 5600);
+  });
   ui.blendeAus = (ms = 650) => new Promise((ok) => setTimeout(() => { blende.classList.remove('an'); ok(); }, ms));
   // Fotomodus (wie in großen Spielen): HUD weg, Kamera frei um die eigene Figur, Pose, Filter, Unschärfe, Bild speichern
   ui.fotoAn = () => root.classList.contains('ly-foto-an');
@@ -274,9 +286,9 @@ export function createUI({ root, input, speech }) {
     (f.beste.length ? '<p>' + f.beste.map((b) => '<span class="ly-j-name" style="--f:' + esc(b.farbe) + '">' + esc(b.name) + '</span> ' + esc(b.stufe)).join(' · ') + '</p>' : '<p>Noch niemand über „Kumpel“. Reden, helfen, zusammen spielen – das zählt.</p>') +
     (f.profil.length ? '<p>Du verstehst dich vor allem mit Leuten, die <b>' + f.profil.map(esc).join('</b>, <b>') + '</b> sind.</p>' : '') +
     (f.unbekannt ? '<p class="ly-leer">' + f.unbekannt + ' aus der Klasse kennst du noch nicht.</p>' : '') + '</div>';
-  ui.journal = ({ name, stundenplan, leute, freunde = null, staerken, geheimnisse, gesamt, lernkarten = [], leiter = null, zaehler = [], pass = [] }) => {
+  ui.journal = ({ name, stundenplan, leute, freunde = null, staerken, geheimnisse, gesamt, lernkarten = [], leiter = null, zaehler = [], pass = [], heft = [], erinnerungen = [] }) => {
     const k = ebeneAuf('journal', '<button type="button" class="ly-zu" aria-label="Schließen">✕</button><h2>Journal von ' + esc(name) + '</h2>' +
-      '<div class="ly-j-reiter"><button type="button" data-r="leute" class="an">Menschen</button><button type="button" data-r="staerken">Stärken</button><button type="button" data-r="plan">Stundenplan</button><button type="button" data-r="ent">Entdeckt ' + geheimnisse.length + '/' + gesamt + '</button><button type="button" data-r="pass">🏅 Pass ' + pass.filter((x) => x.hat).length + '/' + pass.length + '</button>' + (leiter ? '<button type="button" data-r="leiter">Meine Liste</button>' : '') + '</div><div class="ly-j-inhalt"></div>');
+      '<div class="ly-j-reiter"><button type="button" data-r="leute" class="an">Menschen</button><button type="button" data-r="heft">📒 Skills-Heft ' + heft.length + '</button><button type="button" data-r="erinnern">💭 Erinnerungen ' + erinnerungen.length + '</button><button type="button" data-r="staerken">Stärken</button><button type="button" data-r="plan">Stundenplan</button><button type="button" data-r="ent">Entdeckt ' + geheimnisse.length + '/' + gesamt + '</button><button type="button" data-r="pass">🏅 Pass ' + pass.filter((x) => x.hat).length + '/' + pass.length + '</button>' + (leiter ? '<button type="button" data-r="leiter">Meine Liste</button>' : '') + '</div><div class="ly-j-inhalt"></div>');
     const inhalt = k.querySelector('.ly-j-inhalt');
     const zeige = (r) => {
       k.querySelectorAll('[data-r]').forEach((b) => b.classList.toggle('an', b.dataset.r === r));
@@ -285,6 +297,8 @@ export function createUI({ root, input, speech }) {
       if (r === 'plan') inhalt.innerHTML = stundenplan ? '<table class="ly-plan"><tr><th></th><th>Mo</th><th>Di</th><th>Mi</th></tr><tr><td>8:00</td><td>Klassenstunde</td><td>Mathe</td><td>Deutsch</td></tr><tr><td>10:15</td><td>Französisch</td><td>Sport</td><td>Atelier</td></tr><tr><td>13:30</td><td>Projekt</td><td>Englisch</td><td>–</td></tr></table><p class="ly-leer">Saal 1.04 · Klassenlehrerin Mme Tidderich</p>' + (lernkarten.length ? '<h3>Gelernt</h3><ul class="ly-j-staerken">' + lernkarten.map((l) => '<li><b>' + esc(l) + '</b></li>').join('') + '</ul>' : '') : '<p class="ly-leer">Den Stundenplan gibt es im Sekretariat.</p>';
       if (r === 'leiter' && leiter) inhalt.innerHTML = '<ol class="ly-leiter">' + leiter.stufen.slice().reverse().map((l) => '<li class="' + (l.status || '') + '"><b>' + esc(l.t) + '</b><small>' + esc(l.notiz || '') + '</small></li>').join('') + '</ol><p class="ly-leer">Oben das Schwerste. ✓ = geschafft, ◐ = probiert. Probiert zählt.</p>';
       if (r === 'pass') inhalt.innerHTML = '<ul class="ly-pass">' + pass.map((x) => '<li class="' + (x.hat ? 'hat' : '') + '"><i>' + (x.hat ? x.sy : '❔') + '</i><b>' + esc(x.hat ? x.t : '???') + '</b><small>' + esc(x.hinweis) + '</small></li>').join('') + '</ul>';
+      if (r === 'erinnern') inhalt.innerHTML = erinnerungen.length ? '<p class="ly-leer">Was du getan hast, bleibt hängen. Das hier haben andere später zu dir gesagt.</p><ul class="ly-j-erinnern">' + erinnerungen.slice().reverse().map((e) => '<li style="--f:' + esc(e.farbe) + '"><b>' + esc(e.wer) + '</b> <small>Kapitel ' + esc(e.kap) + '</small><span>„' + esc(e.text) + '“</span></li>').join('') + '</ul>' : '<p class="ly-leer">Noch leer. Was du tust, merken sich die anderen. Manchmal sagen sie es dir später.</p>';
+      if (r === 'heft') inhalt.innerHTML = heft.length ? '<div class="sr-heft">' + heft.map((m) => '<section class="sr-merk"><span>Kapitel ' + esc(m.kap) + '</span><h3>' + esc(m.titel) + '</h3><ul>' + m.punkte.map((p) => '<li>' + esc(p) + '</li>').join('') + '</ul></section>').join('') + '</div>' : '<p class="ly-leer">Noch leer. Nach jeder Skills-Stunde kommt hier eine Merkkarte hinein.</p>';
       if (r === 'ent') inhalt.innerHTML = geheimnisse.length ? '<ul class="ly-j-staerken">' + geheimnisse.map((g) => '<li><b>' + esc(g.titel) + '</b><small>' + esc(g.text) + '</small></li>').join('') + '</ul>' : '<p class="ly-leer">Schau dich um! Im Lycée gibt es einiges zu entdecken.</p>';
     };
     k.querySelectorAll('[data-r]').forEach((b) => { b.onclick = () => zeige(b.dataset.r); });

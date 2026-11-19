@@ -6,10 +6,12 @@ const AULA = { noah: [-16.2, -54, 1.1], mila: [-11.8, -54.2, -1.1], ben: [-12.6,
 const F = { noah: { id: 'noah', name: 'Noah', farbe: '#3f78b8' }, mila: { id: 'mila', name: 'Mila', farbe: '#2fb8a8' }, ben: { id: 'ben', name: 'Ben', farbe: '#d9a21b' }, jo: { id: 'jo', name: 'Jo', farbe: '#c0392b' },
   lina: { id: 'lina', name: 'Lina', farbe: '#9b7bc8' }, ayla: { id: 'ayla', name: 'Ayla', farbe: '#e85d75' }, chiara: { id: 'chiara', name: 'Chiara', farbe: '#3fa66b' }, yusuf: { id: 'yusuf', name: 'Yusuf', farbe: '#5fa0d0' }, dario: { id: 'dario', name: 'Dario', farbe: '#d9693f' } };
 
+import { S3_GRUNDGEFUEHLE, S3_ANGST_FAMILIE } from './skills-j1.js';
+
 export const ORTE_N3 = { sportplatz: { x: -72, z: -6, yaw: -Math.PI / 2 } };
 
 export const SCHRITTE_N3 = [
-  { id: 'k3_pantomime', kap: 3, tag: 'Montag', uhr: 9.9, titel: 'Skills: Was sind Gefühle?', ziel: 'Aula. Herr Kuedes hat sechs Ecken markiert.', marker: 'kaya',
+  { id: 'k3_pantomime', kap: 3, tag: 'Montag', uhr: 9.9, titel: 'Skills: Sechs Grundgefühle', ziel: 'Aula. Herr Kuedes beginnt mit der Skills-Stunde.', marker: 'kaya',
     start: { teleport: 'eingangHof', gespraech: 'n3_checkin' },
     leute: { kaya: [-14, -55.5, Math.PI], ...AULA },
     fertig: { reden: 'kaya', gespraech: 'n3_pantomime' } },
@@ -21,6 +23,10 @@ export const SCHRITTE_N3 = [
     start: { teleport: 'saal104Tuer' },
     leute: { hoffmann: [-27, -24, Math.PI / 2], ...KLASSE },
     fertig: { reden: 'hoffmann', gespraech: 'n3_klasse' } },
+  { id: 'k3_familien', kap: 3, tag: 'Donnerstag', uhr: 9.9, titel: 'Skills: Sorge, Angst, Panik, Verzweiflung', ziel: 'Aula. Zweite Skills-Stunde bei Herrn Kuedes.', marker: 'kaya',
+    start: { teleport: 'eingangHof' },
+    leute: { kaya: [-14, -55.5, Math.PI], ...AULA },
+    fertig: { reden: 'kaya', gespraech: 'n3_familien' } },
   { id: 'k3_sportfest', kap: 3, tag: 'Freitag', uhr: 10.0, titel: 'Sportfest', ziel: 'Sportplatz. Staffel. Frau Sommer hat den Stab.', marker: 'sommer',
     start: { teleport: 'sportplatz', gespraech: 'n3_sportMorgen' },
     leute: { sommer: [-75, -4, Math.PI / 2], noah: [-76.5, -6.6, 1.4], jo: [-77.2, -2.6, 1.8], ben: [-78.6, -5, 1.2], ayla: [-76.4, -8.2, 0.9], mila: [-79.4, -7.8, 1.6, 'sitzt'], dario: [-80.4, -3.2, 1.1], kenan: [-81.2, -4.6, 1.3] },
@@ -30,38 +36,6 @@ export const SCHRITTE_N3 = [
     leute: { ayla: [-76.4, -9.2, 0.9], noah: [-77.6, -8.4, 1.4, 'sitzt'], ben: [-78.6, -9.6, 1.2, 'sitzt'], mila: [-79.4, -7.8, 1.6, 'sitzt'], jo: [-80.6, -6.4, 1.8] },
     fertig: { reden: 'ayla', gespraech: 'n3_schatten' } },
 ];
-
-// ---------- Pantomime-Duell (Kurs E07): Gefühle ohne Worte erkennen ----------
-const PANTOMIME = {
-  wo: 'Aula · Pantomime-Duell', titel: 'Welches Gefühl spielt die Person?',
-  leute: [
-    { wer: F.ben, zeichen: ['riesiges Grinsen', 'reißt die Arme hoch', 'springt hoch'], gefuehl: 'freude', aufloesung: 'Ben spielt Freude. Er hat an Nuggets gedacht.' },
-    { wer: F.ayla, zeichen: ['zieht die Nase kraus', 'Hand vor dem Mund', 'dreht sich weg'], gefuehl: 'ekel', aufloesung: 'Ekel. Sie hat an Kantinen-Fisch gedacht.' },
-    { wer: F.jo, zeichen: ['Kiefer fest, Augenbrauen runter', 'Fäuste', 'stampft einmal auf'], gefuehl: 'wut', aufloesung: 'Wut. „Wie wenn einer dein Auto zerkratzt, digga.“' },
-    { wer: F.lina, zeichen: ['Augen weit, guckt zur Tür', 'Hände nah am Gesicht', 'Schultern hoch, ganz klein'], gefuehl: 'angst', aufloesung: 'Angst. Lina spielt sie sehr echt. Alle sind leise.' },
-    { wer: F.yusuf, zeichen: ['Mundwinkel runter', 'Arme hängen', 'Kopf runter, langsame Schritte'], gefuehl: 'trauer', aufloesung: 'Trauer. Yusuf: „Wie wenn das Training ausfällt.“' },
-    { wer: F.noah, zeichen: ['Augen riesig, Mund offen', 'Hände nach vorn', 'springt einen Schritt zurück'], gefuehl: 'ueberraschung', aufloesung: 'Überraschung. Noah: „Wie wenn ich mal treffe.“' },
-  ],
-};
-
-// ---------- Gefühlswörter in sechs Ecken (Kurs E07) ----------
-const ECKEN = {
-  wo: 'Aula · Sechs Ecken', titel: 'Wohin gehört das Wort?', zeit: 7,
-  info: 'Herr Kuedes ruft ein Wort. Du läufst in die Ecke, in die es gehört. Manche Wörter passen in zwei.',
-  faecher: [['freude', 'Freude', '😄', '#f2b134'], ['trauer', 'Trauer', '😢', '#4f88c8'], ['wut', 'Wut', '😠', '#d6452f'], ['angst', 'Angst', '😨', '#8a7bc8'], ['ekel', 'Ekel', '🤢', '#5fa04a'], ['ueberraschung', 'Überraschung', '😲', '#e9734a']].map(([id, t, sy, f]) => ({ id, t, sy, f })),
-  karten: [
-    { t: 'genervt', ziel: 'wut' },
-    { t: 'nervös', ziel: 'angst', wer: F.noah, sagt: 'Das bin ich. Jeden Morgen. Halb acht.' },
-    { t: 'enttäuscht', ziel: ['trauer', 'wut'] },
-    { t: 'baff', ziel: 'ueberraschung', wer: F.ben, sagt: 'Baff ist mein Lieblingswort. Baff. Baff.' },
-    { t: 'eifersüchtig', ziel: null, wer: F.mila, sagt: 'Mischung. Wut, Angst, Trauer. Ein Cocktail.' },
-    { t: 'angewidert', ziel: 'ekel' },
-    { t: 'peinlich berührt', ziel: null, wer: F.ayla, sagt: 'Scham. Die hat keine eigene Ecke. Unfair.' },
-    { t: 'gelangweilt', ziel: null, wer: F.ben, sagt: 'Gefühl oder Zustand? Das ist Philosophie.' },
-    { t: 'beleidigt', ziel: ['wut', 'trauer'], wer: F.jo, sagt: 'Beleidigt ist Wut mit Handbremse, digga.' },
-  ],
-  ende: 'Viele Wörter, sechs Ecken. Je genauer das Wort, desto besser weiß man, was man braucht.',
-};
 
 // ---------- Körper-Karte vor der Staffel (Kurs E09: Wo spüre ich Gefühle?) ----------
 const KOERPER_STAFFEL = {
@@ -214,29 +188,15 @@ export const GESPRAECHE_N3 = {
     ['erzaehler', 'Montag. Check-in. Heute will Herr Kuedes das genauere Wort.'],
     { szene: 'checkin', id: 'checkin3', def: { frage: 'Nicht „gut“ oder „schlecht“. Das genauere Wort?', posts: [
       { wer: 'Mila', wort: 'angespannt', farbe: '#8a7bc8' }, { wer: 'Ben', wort: 'aufgeregt (sportfest!!)', farbe: '#f2b134' }, { wer: 'Lina', wort: 'okay', farbe: '#5fb07a' } ],
-      reaktion: (w, g) => (g === 'Wut' ? [{ wer: 'Jo', text: 'same, aber ich weiß nicht warum' }] : g === 'Angst' ? [{ wer: 'Mila', text: 'Gleiche Ecke wie ich. Interessant.' }] : [{ wer: 'Ben', text: 'notiert. danke' }]) }, folgen: {} },
+      reaktion: (w, g) => (g === 'Wut' ? [{ wer: 'Jo', text: 'same, aber ich weiß nicht warum' }] : g === 'Angst' ? [{ wer: 'Mila', text: 'Ich hab „angespannt“ geschrieben. Das ist wohl verwandt.' }] : [{ wer: 'Ben', text: 'notiert. danke' }]) }, folgen: {} },
   ],
   n3_pantomime: [
-    ['kaya', 'Wéi geet et? Heute: Gefühle. Wie viele kennt ihr?'],
-    ['ben', 'Hunger. Ist das eins?'],
-    ['kaya', 'Fast. Sechs große: Freude, Trauer, Wut, Angst, Ekel, Überraschung.'],
-    ['kaya', 'Erst: Pantomime-Duell. Ohne Worte. Ihr ratet.'],
-    { szene: 'lesen', id: 'pantomime', def: PANTOMIME,
-      ausgang: (r) => (r.richtig.length >= 3 ? 'gut' : 'mittel'),
-      folgen: { gut: { staerke: 'lesen', herz: { lina: 1, ayla: 1 }, merke: 'pantomimeGut' }, mittel: { dann: [['kaya', 'Ohne Worte ist schwer. Darum fragen wir manchmal nach.']] } } },
-    ['kaya', 'Jetzt kommt Bewegung rein. Sechs Ecken. Ich rufe ein Wort, ihr lauft.'],
-    { szene: 'sort', id: 'ecken', def: ECKEN,
-      ausgang: (r) => (r.offen <= 2 ? 'genau' : 'schnell'),
-      folgen: { genau: { merke: 'eckenGenau' }, schnell: { dann: [['kaya', 'Manche Wörter passen in keine Ecke. Das ist kein Fehler.']] } } },
-    ['kaya', 'Abstimmung. Wenn ein Gefühl rausfliegen müsste – welches?'],
-    { wahl: [
-      { t: 'Angst. Die nervt am meisten.', merke: 'rausAngst', dann: [['noah', 'Ja! Dann würd ich im Test einfach … schlafen.']] },
-      { t: 'Wut. Die macht nur Stress.', merke: 'rausWut', dann: [['jo', 'Dann tret ich nie mehr gegen den Automaten. … Schade.']] },
-      { t: 'Trauer. Die braucht keiner.', merke: 'rausTrauer', dann: [['ayla', 'Dann sind meine Songs plötzlich fröhlich. Horror.']] },
-      { t: 'Keins.', merke: 'rausKeins', dann: [['ben', 'Keins? … Ohne Angst wär ich längst mit dem Board die Treppe runter.']] },
-    ] },
-    ['kaya', 'Angst passt auf. Trauer holt Trost. Wut sagt: Stopp.'],
-    ['kaya', 'Fünf Stimmen für Angst. Freitag ist Sportfest. Mal sehen.'],
+    ['erzaehler', 'Aula. Die Stühle stehen im Kreis. Herr Kuedes wartet, bis es ruhig ist.'],
+    { szene: 'skillsStunde', id: 's3_grund', def: S3_GRUNDGEFUEHLE, ausgang: (r) => (r.check ? 'gut' : 'weiter'),
+      folgen: { gut: { staerke: 'lesen', merke: 's3Grund' }, weiter: { merke: 's3Grund' } } },
+    ['kaya', 'Am Donnerstag schauen wir uns die Angst genauer an. Sie hat Geschwister.'],
+    ['erzaehler', 'Beim Rausgehen bleibt Mila kurz neben dir stehen.'],
+    ['mila', 'Ekel auch bei Menschen. Wenn jemand gemein ist. Das wusste ich nicht.'],
   ],
   n3_foto: [
     ['erzaehler', 'Mittwoch, Kantine. Plötzlich vibrieren zwanzig Handys gleichzeitig.'],
@@ -327,6 +287,12 @@ export const GESPRAECHE_N3 = {
         unklar: { dann: [['mila', 'Weiß nicht ist auch eine Messung. Vielleicht merkst du’s beim Laufen.']] },
       } },
   ],
+  n3_familien: [
+    ['erzaehler', 'Donnerstag. Morgen ist Sportfest. In der Aula ist es unruhiger als sonst.'],
+    { szene: 'skillsStunde', id: 's3_angst', def: S3_ANGST_FAMILIE, ausgang: (r) => (r.check ? 'gut' : 'weiter'),
+      folgen: { gut: { staerke: 'lesen', merke: 's3Angst' }, weiter: { merke: 's3Angst' } } },
+    ['kaya', 'Morgen beim Sportfest: Achte darauf, welche Stufe der Leiter passt.'],
+  ],
   n3_staffel: [
     ['sommer', '(pfeift) Allez! Staffel 7P2: Jo, Ben, Noah, {name}. Auf die Plätze!'],
     { szene: 'pult', id: 'staffel', def: STAFFEL_PULT, ausgang: (r) => r.final,
@@ -404,7 +370,7 @@ export const tunN3 = (c) => ({
     ['mila', 'Von links unten. Links von uns standen viele.'],
     ['erzaehler', 'Die Skate-Ecke. Zwei aus der 7P1. Jo mit Handy. Dario.'],
     { szene: 'stempel', def: { modul: 'Modul 2 · Gefühle verstehen', titel: 'Gefühle gelesen',
-      gelernt: ['Gefühle ohne Worte erkannt', 'Gefühle im Körper gefunden', 'Fakten statt Gerüchte', 'Mehrere Gefühle auf einmal gespürt'],
+      gelernt: ['Sechs Grundgefühle und ihre Botschaft', 'Sorge, Angst, Panik und Verzweiflung unterschieden', 'Eigene Körperkarte gemacht', 'Fakten von Gerüchten getrennt'],
       mission: 'Merk dir einmal: Wo spürst du Wut?' }, folgen: {} },
     { tu: 'kapitelEnde' },
   ],

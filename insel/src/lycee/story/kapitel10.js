@@ -1,6 +1,7 @@
 // Drei Jahre Annexe – 7ème, Kapitel 10 „Abschluss“ (Kurs Jahr 1, Modul 9: Rückblick, Jahres-Kurve, Brief an mich,
 // Stärken-Rücken, Erden in fünf Sinnen). Faden @annexe.cam wird aufgelöst: Dario sagt es vor allen, Luca trägt Folgen –
 // Verzeihen muss niemand, fair bleiben schon. Vier Enden je nach bester Freundschaft. Ausblick auf die 6ème (die Band).
+import { S10_RUECKBLICK } from './skills-j1.js';
 const AULA = { noah: [-16.2, -54, 1.1], mila: [-11.8, -54.2, -1.1], ben: [-12.6, -52.4, -2.2], jo: [-15.6, -52.2, 2.2], ayla: [-17.2, -56.4, 1.6], lina: [-10.9, -56.6, -1.5], dario: [-9.8, -55.2, -1.4] };
 const FEST = { rantini: [4.5, 19.5, Math.PI], ben: [4, 14, 0.2], jo: [5.2, 15.4, -0.4], ayla: [2.5, 15, 0.3], noah: [7.2, 13.2, -0.6], mila: [3.2, 12.8, 0.1], lina: [1.8, 13.4, 0.4],
   dario: [5.6, 17.6, Math.PI], kaya: [8.6, 17.2, -2.4], hoffmann: [9.4, 15.8, -2], luca: [11.6, 12.4, -1.2] };
@@ -156,8 +157,9 @@ export const GESPRAECHE_N10 = {
         achterbahn: { staerke: 'lesen', merke: 'kurveAchterbahn', dann: [['kaya', 'Ganz unten und ganz oben. Beides war echt.']] },
         ruhig: { merke: 'kurveRuhig', dann: [['kaya', 'Eine ruhigere Kurve. Auch das ist ein Jahr.']] },
       } },
-    ['ben', 'Meine Kurve: vor Tests unten. Bei Nuggets oben.'],
-    ['jo', 'Digga, das ist keine Kurve. Das ist ein Motorschaden.'],
+    ['kaya', 'Bevor ihr schreibt: Was ist hängen geblieben? Ein Quiz ohne Noten.'],
+    { szene: 'skillsStunde', id: 's10_rueckblick', def: S10_RUECKBLICK, ausgang: (r) => (r.richtig >= 6 ? 'viel' : 'weiter'),
+      folgen: { viel: { staerke: 'lesen', merke: 's10Rueckblick' }, weiter: { merke: 's10Rueckblick' } } },
     ['kaya', 'Und jetzt: ein Brief. An dich. In einem Jahr.'],
     ['kaya', 'Ich hebe ihn auf. Versprochen. Ich lese ihn nicht.'],
     { szene: 'brief', id: 'brief', def: (m, S) => BRIEF(S), ausgang: () => 'ok', folgen: { ok: { merke: 'briefGeschrieben' } } },
