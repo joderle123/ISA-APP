@@ -1,0 +1,566 @@
+{
+ "modul": "de5",
+ "titel": {
+  "de": "Luxemburg entdecken",
+  "fr": "Découvrir le Luxembourg"
+ },
+ "sprache": "de",
+ "spuren": {
+  "de5-01l": {
+   "titel": "Fünf Orte, die du sehen musst",
+   "art": "lesen",
+   "lektion": 1,
+   "dauer": 63.9,
+   "text": [
+    [
+     "",
+     "Fünf Orte, die du sehen musst"
+    ],
+    [
+     "",
+     "Die Altstadt von Luxemburg ist seit 1994 Weltkulturerbe der UNESCO. Früher war die Stadt eine starke Festung. Viele Mauern und Türme sieht man heute noch."
+    ],
+    [
+     "",
+     "Die Kasematten sind Gänge, die man tief in den Felsen gegraben hat. Früher versteckten sich hier Soldaten, später auch die Menschen im Krieg. Heute kann man durch einen Teil der Gänge laufen."
+    ],
+    [
+     "",
+     "Der Großherzogliche Palast ist das Gebäude, in dem der Großherzog arbeitet. Im Sommer kann man ihn manchmal mit einer Führung besuchen."
+    ],
+    [
+     "",
+     "Der Grund ist ein Viertel, das unten im Tal an der Alzette liegt. Hier gibt es alte Häuser, kleine Brücken und gemütliche Cafés."
+    ],
+    [
+     "",
+     "Mit dem Panorama-Aufzug fährt man in wenigen Sekunden vom Pfaffenthal nach oben. Der Aufzug, der gratis ist, hat Glaswände. Die Aussicht ist super!"
+    ]
+   ]
+  },
+  "de5-01h": {
+   "titel": "Bitte alle hierher!",
+   "art": "hoeren",
+   "lektion": 1,
+   "dauer": 61.8,
+   "text": [
+    [
+     "Stadtführerin",
+     "Herzlich willkommen! Wir stehen hier auf dem Wilhelmsplatz. Die Leute in Luxemburg nennen ihn „Knuedler“. Hier ist jeden Mittwoch und Samstag Markt."
+    ],
+    [
+     "Noah",
+     "Entschuldigung, können Sie das noch einmal sagen? Wie heißt der Platz?"
+    ],
+    [
+     "Stadtführerin",
+     "Knuedler. Das ist Luxemburgisch. Der Name kommt von einem Knoten, den die Mönche früher an ihrer Kleidung trugen."
+    ],
+    [
+     "Stadtführerin",
+     "Jetzt gehen wir zum Palast. Er ist nur zwei Minuten von hier entfernt. Achtung, hier fahren Busse!"
+    ],
+    [
+     "Lina",
+     "Können Sie bitte genauer erklären, was der Großherzog macht?"
+    ],
+    [
+     "Stadtführerin",
+     "Gern. Der Großherzog ist das Staatsoberhaupt. Er vertritt das Land, zum Beispiel bei Besuchen aus dem Ausland. Die Regierung macht die tägliche Politik."
+    ],
+    [
+     "Stadtführerin",
+     "Zum Schluss gehen wir zu den Kasematten. Bitte bleibt zusammen und nehmt eine Jacke mit – in den Gängen ist es kühl."
+    ]
+   ]
+  },
+  "de5-02l": {
+   "titel": "Gratis unterwegs – aber nicht überall",
+   "art": "lesen",
+   "lektion": 2,
+   "dauer": 52.6,
+   "text": [
+    [
+     "",
+     "Gratis unterwegs – aber nicht überall"
+    ],
+    [
+     "",
+     "Seit dem 1. März 2020 sind Busse, Züge und die Tram in Luxemburg für alle kostenlos. Luxemburg war das erste Land der Welt, das das für das ganze Land gemacht hat."
+    ],
+    [
+     "",
+     "Du brauchst also keine Fahrkarte, wenn du zum Beispiel von Junglinster nach Luxemburg-Stadt fährst. Nur für die erste Klasse im Zug muss man bezahlen."
+    ],
+    [
+     "",
+     "Aber Achtung: Fährst du über die Grenze, zum Beispiel nach Trier in Deutschland, brauchst du eine Fahrkarte. Die kaufst du am Automaten, am Schalter oder in einer App."
+    ],
+    [
+     "",
+     "Wo dein Bus fährt und wann er kommt, siehst du am Fahrplan an der Haltestelle oder in einer App. Viele Haltestellen zeigen auch, ob der Bus Verspätung hat."
+    ]
+   ]
+  },
+  "de5-02h": {
+   "titel": "Achtung an Gleis 4!",
+   "art": "hoeren",
+   "lektion": 2,
+   "dauer": 52.9,
+   "text": [
+    [
+     "Durchsage",
+     "Achtung an Gleis vier. Der Regionalzug nach Trier, Abfahrt zehn Uhr zwölf, hat heute circa fünfzehn Minuten Verspätung. Wir bitten um Entschuldigung."
+    ],
+    [
+     "Ben",
+     "Opa, hast du gehört? Ich glaube, dass wir noch Zeit haben. Ich frage mal am Schalter."
+    ],
+    [
+     "Mitarbeiter",
+     "Guten Morgen! Was kann ich für dich tun?"
+    ],
+    [
+     "Ben",
+     "Guten Morgen. Ich brauche zwei Fahrkarten nach Trier, für mich und meinen Opa. Hin und zurück, bitte."
+    ],
+    [
+     "Mitarbeiter",
+     "Gern. Du bist unter fünfzehn? Dann bekommst du einen günstigen Preis. Muss man unterwegs umsteigen? Nein, der Zug fährt direkt."
+    ],
+    [
+     "Ben",
+     "Und von welchem Gleis fährt der Zug?"
+    ],
+    [
+     "Mitarbeiter",
+     "Von Gleis vier. Aber er hat Verspätung. Er fährt erst um zehn Uhr siebenundzwanzig."
+    ],
+    [
+     "Ben",
+     "Danke! Opa, wir haben noch Zeit für einen Kakao."
+    ]
+   ]
+  },
+  "de5-03l": {
+   "titel": "Das Wetter in Luxemburg",
+   "art": "lesen",
+   "lektion": 3,
+   "dauer": 46.5,
+   "text": [
+    [
+     "",
+     "Das Wetter in Luxemburg"
+    ],
+    [
+     "",
+     "Freitag: Im Norden ist es am Morgen neblig. Am Nachmittag scheint überall die Sonne. Die Temperaturen steigen auf 18 Grad."
+    ],
+    [
+     "",
+     "Samstag: Ein sonniger und warmer Tag mit bis zu 24 Grad. Am Abend kommen von Westen Wolken. In der Nacht sind Gewitter möglich."
+    ],
+    [
+     "",
+     "Sonntag: Es regnet oft und es ist windig. Die Temperaturen fallen auf 14 Grad. Am Abend wird es trockener."
+    ],
+    [
+     "",
+     "Unser Tipp: Für einen Ausflug ins Grüne ist der Samstag am besten. Denkt an Sonnencreme und genug Wasser!"
+    ]
+   ]
+  },
+  "de5-03h": {
+   "titel": "Abenteuer im Müllerthal!",
+   "art": "hoeren",
+   "lektion": 3,
+   "dauer": 44.5,
+   "text": [
+    [
+     "Werbung",
+     "Felsen, Wälder, Wasserfälle: Erlebe das Müllerthal, die „Kleine Luxemburger Schweiz“!"
+    ],
+    [
+     "Werbung",
+     "Jeden Samstag gibt es eine geführte Wanderung für Familien und Jugendliche. Start ist um neun Uhr in Echternach. Die Wanderung dauert vier Stunden."
+    ],
+    [
+     "Werbung",
+     "Für Jugendliche unter achtzehn ist sie gratis. Anmeldung im Tourismusbüro Echternach."
+    ],
+    [
+     "Mia",
+     "Das klingt cool! Wollen wir am Samstag mitmachen?"
+    ],
+    [
+     "Finn",
+     "Vielleicht. Aber vier Stunden wandern? Ich glaube, dass das anstrengend ist."
+    ],
+    [
+     "Mia",
+     "Wahrscheinlich machen wir viele Pausen. Und am Samstag scheint die Sonne."
+    ],
+    [
+     "Finn",
+     "Okay, du hast recht. Vielleicht sehen wir ja einen Wasserfall. Ich bin dabei!"
+    ]
+   ]
+  },
+  "de5-04l": {
+   "titel": "Drei Menschen aus Luxemburg",
+   "art": "lesen",
+   "lektion": 4,
+   "dauer": 87.0,
+   "text": [
+    [
+     "",
+     "Drei Menschen aus Luxemburg"
+    ],
+    [
+     "",
+     "Gabriel Lippmann (1845–1921). Gabriel Lippmann wurde 1845 in Bonneweg geboren, das heute ein Teil von Luxemburg-Stadt ist. Er ging als Kind mit seiner Familie nach Frankreich. Später wurde er Professor für Physik in Paris. Er erfand eine Methode für Farbfotos. Dafür bekam er 1908 den Nobelpreis."
+    ],
+    [
+     "",
+     "Edward Steichen (1879–1973). Edward Steichen kam 1879 in Bivange zur Welt. Als kleines Kind zog er mit seinen Eltern in die USA. Dort wurde er einer der bekanntesten Fotografen der Welt. 1955 machte er die große Ausstellung „The Family of Man“ mit Fotos von Menschen aus vielen Ländern. Heute sieht man sie im Schloss von Clerf."
+    ],
+    [
+     "",
+     "Charly Gaul (1932–2005). Charly Gaul war ein Radrennfahrer. In den Bergen fuhr er schneller als alle anderen. Darum nannte man ihn „Engel der Berge“. 1958 gewann er die Tour de France – als erster Luxemburger seit vielen Jahren."
+    ]
+   ]
+  },
+  "de5-04h": {
+   "titel": "Meine Persönlichkeit: Charly Gaul",
+   "art": "hoeren",
+   "lektion": 4,
+   "dauer": 46.6,
+   "text": [
+    [
+     "Yusuf",
+     "Ich stelle euch Charly Gaul vor. Ich habe ihn ausgewählt, weil ich selbst gern Rad fahre."
+    ],
+    [
+     "Yusuf",
+     "Charly Gaul ist 1932 geboren. Er hat schon als Jugendlicher Radrennen gemacht."
+    ],
+    [
+     "Yusuf",
+     "Er war klein und leicht. Darum ist er die Berge sehr schnell hochgefahren. Die Leute haben ihn „Engel der Berge“ genannt."
+    ],
+    [
+     "Yusuf",
+     "Neunzehnhundertachtundfünfzig hat er die Tour de France gewonnen. Das war eine Sensation für Luxemburg!"
+    ],
+    [
+     "Yusuf",
+     "Was ich besonders finde: Bei Regen und Kälte ist er oft am stärksten gewesen."
+    ],
+    [
+     "Yusuf",
+     "Danke fürs Zuhören! Habt ihr Fragen?"
+    ],
+    [
+     "Lehrerin",
+     "Sehr schön, Yusuf! Woher hast du die Informationen?"
+    ],
+    [
+     "Yusuf",
+     "Aus einem Lexikon und von einer Internetseite. Ich habe zwei Quellen verglichen."
+    ]
+   ]
+  },
+  "de5-05l": {
+   "titel": "Der Rattenfänger von Hameln",
+   "art": "lesen",
+   "lektion": 5,
+   "dauer": 86.3,
+   "text": [
+    [
+     "",
+     "Der Rattenfänger von Hameln"
+    ],
+    [
+     "",
+     "Vor langer Zeit, im Jahr 1284, gab es in der Stadt Hameln sehr viele Ratten. Sie fraßen das Brot und das Korn. Die Menschen wussten nicht, was sie tun sollten."
+    ],
+    [
+     "",
+     "Eines Tages kam ein fremder Mann in die Stadt. Er trug bunte Kleider und hatte eine Flöte. Er sagte: „Ich befreie eure Stadt von den Ratten. Aber dafür will ich Geld.“ Der Bürgermeister versprach ihm viel Geld."
+    ],
+    [
+     "",
+     "Der Mann spielte auf seiner Flöte. Sofort kamen alle Ratten aus den Häusern und liefen hinter ihm her. Er ging zum Fluss Weser. Die Ratten sprangen ins Wasser und ertranken."
+    ],
+    [
+     "",
+     "Aber die Leute in Hameln wollten nicht bezahlen. „Das war doch ganz leicht“, sagten sie. Der Mann wurde wütend und ging weg."
+    ],
+    [
+     "",
+     "Am 26. Juni kam er zurück. Er spielte wieder auf seiner Flöte. Diesmal kamen die Kinder der Stadt und folgten ihm. Er führte sie aus der Stadt hinaus zu einem Berg. Dort verschwanden sie. Man sah sie nie wieder."
+    ],
+    [
+     "",
+     "Bis heute erzählt man diese Sage. In Hameln spielen Menschen sie im Sommer oft als Theater auf der Straße."
+    ]
+   ]
+  },
+  "de5-05h": {
+   "titel": "Die Sage von Melusina",
+   "art": "hoeren",
+   "lektion": 5,
+   "dauer": 76.5,
+   "text": [
+    [
+     "Lina",
+     "Opa, du hast gesagt, dass es hier eine Sage gibt. Erzählst du sie mir?"
+    ],
+    [
+     "Opa",
+     "Gern. Vor über tausend Jahren lebte hier ein Graf. Er hieß Siegfried. Im Jahr neunhundertdreiundsechzig bekam er diesen Felsen und baute eine Burg. So fing die Stadt Luxemburg an."
+    ],
+    [
+     "Opa",
+     "Siegfried heiratete eine wunderschöne Frau. Sie hieß Melusina. Aber sie hatte eine Bitte: Jeden Samstag wollte sie allein sein. Niemand durfte sie sehen."
+    ],
+    [
+     "Lina",
+     "Komisch. Warum denn?"
+    ],
+    [
+     "Opa",
+     "Das wusste Siegfried auch nicht. Viele Jahre hielt er sein Versprechen. Aber eines Samstags war er zu neugierig. Er schaute durch das Schlüsselloch."
+    ],
+    [
+     "Lina",
+     "Oh nein! Was hat er gesehen?"
+    ],
+    [
+     "Opa",
+     "Melusina saß in der Badewanne. Und statt Beinen hatte sie einen langen Fischschwanz! Sie war eine Meerjungfrau."
+    ],
+    [
+     "Opa",
+     "Melusina merkte es. Sie schrie laut und verschwand im Felsen. Man erzählt, dass sie noch heute dort lebt."
+    ],
+    [
+     "Lina",
+     "Das ist ja wie beim Rattenfänger! Jemand hält ein Versprechen nicht, und dann passiert etwas Schlimmes."
+    ],
+    [
+     "Opa",
+     "Genau. Viele Sagen erzählen, wie wichtig ein Versprechen ist."
+    ]
+   ]
+  },
+  "de5-06l": {
+   "titel": "Thema der Woche",
+   "art": "lesen",
+   "lektion": 6,
+   "dauer": 49.3,
+   "text": [
+    [
+     "",
+     "Thema der Woche"
+    ],
+    [
+     "",
+     "Thema der Woche: „In Luxemburg sind alle reich.“ Stimmt das? Was meint ihr?"
+    ],
+    [
+     "",
+     "Das stimmt nicht! Klar, viele Leute verdienen gut. Aber das Leben ist hier auch sehr teuer, besonders die Wohnungen."
+    ],
+    [
+     "",
+     "Ich gebe dir recht, Ana. Ein Klischee sagt: alle. Aber die Menschen sind doch verschieden."
+    ],
+    [
+     "",
+     "Ich sehe das ein bisschen anders. Im Vergleich zu vielen Ländern geht es Luxemburg sehr gut. Ein bisschen Wahrheit ist schon dabei."
+    ],
+    [
+     "",
+     "Okay, das verstehe ich. Aber man darf niemanden in eine Schublade stecken."
+    ],
+    [
+     "",
+     "Danke für eure Meinungen! Nächste Woche: „Jugendliche sitzen nur am Handy.“"
+    ]
+   ]
+  },
+  "de5-06h": {
+   "titel": "„Jugendliche sitzen nur am Handy“",
+   "art": "hoeren",
+   "lektion": 6,
+   "dauer": 61.5,
+   "text": [
+    [
+     "Frau Sommer",
+     "Heute sprechen wir über ein Klischee: „Jugendliche sitzen nur am Handy.“ Was meint ihr?"
+    ],
+    [
+     "Noah",
+     "Ich finde, dass das nicht stimmt. Ich spiele dreimal pro Woche Fußball. Da habe ich kein Handy dabei."
+    ],
+    [
+     "Chloe",
+     "Ich gebe dir recht, Noah. Aber ehrlich: Abends bin ich oft lange am Handy. Ein bisschen stimmt es also."
+    ],
+    [
+     "Sami",
+     "Ich sehe das anders. Erwachsene sitzen doch auch viel am Handy! Mein Opa schaut ständig Videos."
+    ],
+    [
+     "Frau Sommer",
+     "Interessant. Sami, kannst du das genauer erklären? Ist das Handy das Problem?"
+    ],
+    [
+     "Sami",
+     "Nein, nicht das Handy. Das Problem ist, wenn man nichts anderes mehr macht."
+    ],
+    [
+     "Chloe",
+     "Genau! Ich stimme dir zu. Man braucht auch Pausen ohne Bildschirm."
+    ],
+    [
+     "Frau Sommer",
+     "Super. Dann halten wir fest: Klischees sind zu einfach. Man muss genau hinschauen."
+    ]
+   ]
+  },
+  "de5-07l": {
+   "titel": "Lesen macht Spaß!",
+   "art": "lesen",
+   "lektion": 7,
+   "dauer": 66.8,
+   "text": [
+    [
+     "",
+     "Lesen macht Spaß!"
+    ],
+    [
+     "",
+     "Lesenacht in der Bibliothek! Freitag, 19 bis 23 Uhr · Stadtbibliothek · für 11 bis 15 Jahre · gratis. Vorlesen mit Taschenlampe, Bücher-Quiz, Pizza um 21 Uhr. Anmeldung bis Mittwoch. Bring Schlafsack, Kissen und dein Lieblingsbuch mit!"
+    ],
+    [
+     "",
+     "Buchtipp von Amira (13): „Das Geheimnis im Turm“ Ein Mädchen findet im alten Turm ihrer Schule eine Karte. Zusammen mit zwei Freunden sucht sie einen Schatz. Das Buch ist spannend von der ersten bis zur letzten Seite! Mir gefällt besonders, dass die Freunde sich immer helfen. Fünf Sterne!"
+    ],
+    [
+     "",
+     "Buchtipp von Tom (14): „Mein Jahr im Funkloch“ Ein Junge muss ein Jahr ohne Handy auf einem Bauernhof leben. Am Anfang ist er sauer, dann lernt er viel. Das Buch ist lustig, aber am Ende auch ein bisschen traurig. Ich empfehle es allen, die gern lachen. Nur der Anfang ist etwas langweilig. Vier Sterne."
+    ]
+   ]
+  },
+  "de5-07h": {
+   "titel": "Da ist etwas!",
+   "art": "hoeren",
+   "lektion": 7,
+   "dauer": 39.2,
+   "text": [
+    [
+     "Lea",
+     "Psst! Leise! Hier ist die Tür zum Turm."
+    ],
+    [
+     "Sami",
+     "Es ist so dunkel. Hast du die Taschenlampe?"
+    ],
+    [
+     "Lea",
+     "Ja, hier. Schaut mal, an der Wand! Da ist ein Zeichen – ein Stern mit drei Punkten."
+    ],
+    [
+     "Finn",
+     "Den Stern kenne ich! Er ist auch auf der Karte, die wir gefunden haben."
+    ],
+    [
+     "Sami",
+     "Hört ihr das? Da kommt jemand die Treppe hoch!"
+    ],
+    [
+     "Hausmeister",
+     "Hallo? Ist da jemand? Die Schule ist seit einer Stunde geschlossen!"
+    ],
+    [
+     "Lea",
+     "Schnell, hinter die Kiste! Und die Lampe aus!"
+    ]
+   ]
+  },
+  "de5-08l": {
+   "titel": "Von Italien ins Minett",
+   "art": "lesen",
+   "lektion": 8,
+   "dauer": 64.8,
+   "text": [
+    [
+     "",
+     "Von Italien ins Minett"
+    ],
+    [
+     "",
+     "Enzo Moretti wurde 1938 in einem kleinen Dorf in Süditalien geboren. Seine Familie war arm. Mit 14 Jahren musste er schon auf den Feldern arbeiten."
+    ],
+    [
+     "",
+     "Im Jahr 1956 kam Enzo mit dem Zug nach Esch an der Alzette. Viele Italiener arbeiteten damals in den Stahlwerken im Süden Luxemburgs, im „Minett“. Die Arbeit war hart und heiß."
+    ],
+    [
+     "",
+     "Am Anfang verstand Enzo kein Wort Luxemburgisch. Abends lernte er Deutsch und Französisch. Er fand schnell Freunde – beim Fußball!"
+    ],
+    [
+     "",
+     "Später heiratete Enzo eine Luxemburgerin. Sie bekamen zwei Kinder. 1998 ging Enzo in Rente."
+    ],
+    [
+     "",
+     "Heute sagt Enzo: „Ich bin Italiener und Luxemburger. Mein Herz hat zwei Hälften.“"
+    ]
+   ]
+  },
+  "de5-08h": {
+   "titel": "Wie war Ihr erster Tag?",
+   "art": "hoeren",
+   "lektion": 8,
+   "dauer": 52.9,
+   "text": [
+    [
+     "Mia",
+     "Herr Moretti, danke, dass Sie mit mir sprechen. Wie war Ihr erster Tag in Luxemburg?"
+    ],
+    [
+     "Herr Moretti",
+     "Oh, daran erinnere ich mich gut! Ich bin morgens mit dem Zug angekommen. Es hat geregnet und es war kalt. Ich habe gedacht: Was mache ich hier?"
+    ],
+    [
+     "Mia",
+     "Und wie war die Arbeit im Stahlwerk?"
+    ],
+    [
+     "Herr Moretti",
+     "Sehr anstrengend. Ich habe oft nachts gearbeitet. Aber die Kollegen haben mir viel geholfen."
+    ],
+    [
+     "Mia",
+     "Hatten Sie Heimweh?"
+    ],
+    [
+     "Herr Moretti",
+     "Ja, am Anfang sehr. Ich habe jede Woche einen Brief nach Hause geschrieben. Telefonieren war damals sehr teuer."
+    ],
+    [
+     "Mia",
+     "Was ist Ihr Tipp für Jugendliche, die neu in einem Land sind?"
+    ],
+    [
+     "Herr Moretti",
+     "Lernt die Sprache und habt Mut! Und sucht euch ein Hobby. Beim Fußball habe ich meine besten Freunde gefunden."
+    ]
+   ]
+  }
+ }
+}
