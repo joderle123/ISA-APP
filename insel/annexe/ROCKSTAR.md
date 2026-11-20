@@ -41,3 +41,4 @@ Nichts abhaken. Erst Qualität, dann größer. Keine Fächer-Module, noch keine 
 - 20.11. früh (7): 16. Situation „Der Witz“ (Kap. 6–8, morgens, Hinterhof der Kantine): Ältere äffen Paulos Akzent nach. Paulos gelernte Wörter werden nützlich (Bom dia, Desculpa), Paulo reagiert später, Zeitung, Gedächtnis, Antwort an Lea.
 - 20.11. früh (8): Durchsicht „Der Witz“: Akzent nur erzählt (kein Meme), Paulos Wörter nur wenn gelernt (stb_paulo_1/6), Reaktionen je Ausgang, späte Entschuldigung bei Paulo als Wahl. Begleitheft nach Kapiteln sortiert.
 - 20.11. früh (9): SePAS mit Charakter: Gefühle-Rad, Hilfe-Tafel (116 111, BEE SECURE, 112, „Tür offen“), Sorgen-Briefkasten, Taschentücher und Wasser. Handy zeigt höchstens drei offene Antworten.
+- 20.11. früh (10): Sorgen-Briefkasten in der SePAS benutzbar (Thema wählen, anonym oder mit Namen; mit Namen antwortet Herr Kuedes aufs Handy). Menüs und Gefühls-Check in fester Reihenfolge (ui.waehle opts.fest).

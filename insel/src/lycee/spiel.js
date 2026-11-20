@@ -1716,7 +1716,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (lastWahl === 1) await naechster();
   }
   let lastWahl = -1;
-  { const w = ui.waehle; ui.waehle = (o, f) => w(o, f).then((i) => { lastWahl = i; try { audio.play('click'); } catch (e) { /* Ton */ } return i; }); }
+  { const w = ui.waehle; ui.waehle = (o, f, opts) => w(o, f, opts).then((i) => { lastWahl = i; try { audio.play('click'); } catch (e) { /* Ton */ } return i; }); }
 
   // ---------- Mutprobe (gestufte Exposition) ----------
   // Während einer Mutprobe läuft das Gespräch weiter (imGespraech bleibt an, niemand anderes spricht dich an), aber man
@@ -2272,7 +2272,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         const a = sitApi(), kap = (SCHRITTE[S.schritt] || {}).kap || 1;
         await SIT_FN[id](a);
         // Gefühle benennen: kurz nachspüren, keine richtige oder falsche Antwort (steht danach im Journal-Rückblick)
-        const gf = await ui.waehle(['😌 Erleichtert', '💪 Ein bisschen stolz', '😕 Gemischt. Unsicher.', '😔 Mies'], 'Kurz durchatmen. Wie geht’s dir gerade damit?');
+        const gf = await ui.waehle(['😌 Erleichtert', '💪 Ein bisschen stolz', '😕 Gemischt. Unsicher.', '😔 Mies'], 'Kurz durchatmen. Wie geht’s dir gerade damit?', { fest: true });
         S.merke['gefuehl_' + id] = ['erleichtert', 'ein bisschen stolz', 'gemischt', 'mies'][gf];
         await a.sag('e', ['(Erleichtert. Das darf sich gut anfühlen.)', '(Stolz sein ist erlaubt. Auch leise.)', '(Gemischt ist normal. Beides darf da sein.)', '(Mies ist ein Signal. Reden hilft: Herr Kuedes, 116 111.)'][gf]);
         S.merke.sitWeg = { ...(S.merke.sitWeg || {}), [id]: S.schritt }; S.merke['sitKap_' + id] = kap;

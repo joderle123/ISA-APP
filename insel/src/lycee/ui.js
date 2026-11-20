@@ -226,13 +226,13 @@ export function createUI({ root, input, speech }) {
     if (ui.autoVorlesen) vorlesen(text);
   });
   // optionen: [text] → Index
-  ui.waehle = (optionen, frage = '') => new Promise((ok) => {
+  ui.waehle = (optionen, frage = '', opts = {}) => new Promise((ok) => {   // opts.fest: Reihenfolge nicht mischen (Menüs, Gefühle)
     dialogOffen = true; dialog.hidden = false; root.classList.add('ly-im-dialog'); dialog.className = 'ly-dialog hud-interactive ly-wahl';
     dialog.innerHTML = (frage ? '<div class="ly-d-text">' + esc(frage) + '</div>' : '<div class="ly-d-frage">Was machst du?</div>') +
       '<div class="ly-d-optionen"></div>';
     // gemischte Reihenfolge: die „vernünftige“ Antwort steht nicht immer oben (Jugend-Kritik). data-i = Platz in den Daten.
     wahlReihe = optionen.map((o, i) => i);
-    if (!ui.festeReihenfolge) for (let i = wahlReihe.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); const t = wahlReihe[i]; wahlReihe[i] = wahlReihe[j]; wahlReihe[j] = t; }
+    if (!ui.festeReihenfolge && !opts.fest) for (let i = wahlReihe.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); const t = wahlReihe[i]; wahlReihe[i] = wahlReihe[j]; wahlReihe[j] = t; }
     dialog.querySelector('.ly-d-optionen').innerHTML = wahlReihe.map((i, pos) => '<button type="button" data-i="' + i + '"><kbd>' + (pos + 1) + '</kbd><span>' + esc(optionen[i]) + '</span></button>').join('');
     wahlFn = (i) => { if (i < 0 || i >= optionen.length) return; wahlFn = null; ok(i); };
     dialog.querySelectorAll('[data-i]').forEach((b) => { b.onclick = () => wahlFn && wahlFn(+b.dataset.i); });

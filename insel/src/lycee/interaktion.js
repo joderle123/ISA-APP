@@ -68,6 +68,7 @@ export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton
   for (let x = 4; x < 28; x += 4) dazu(x, -71.0, 1.2, 'Lese-Ecke: Comics und Geschichten', 'buch', { prio: 1 });
   for (let z = -70; z < -58; z += 4) dazu(29.0, z, 1.2, 'Lese-Ecke: Comics und Geschichten', 'buch', { prio: 1 });
   dazu(-6.8, -9, 1.4, 'Pinnwand lesen', 'pinnwand', { prio: 1 });
+  dazu(-15.05, -12.55, 1.0, 'Zettel in den Sorgen-Briefkasten werfen', 'sorgen', { prio: 1 });
   dazu(45, -1.8, 1.3, 'In die Fundkiste schauen', 'fundkiste', { prio: 1 });
   dazu(-24.5, 42.6, 1.2, 'Kritzeleien lesen', 'kritzelei', { prio: 0, wo: 'bus' });
   dazu(-26.35, -27.2, 0.8, 'Kritzelei auf dem Tisch', 'kritzelei', { prio: 0, wo: 'tisch' });
@@ -198,6 +199,17 @@ export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton
       case 'spiegel': { const n = s.merke.spiegel = (s.merke.spiegel || 0) + 1; sichern(); ui.toast('<b>Spiegel</b><span>' + SPIEGEL[(n - 1) % SPIEGEL.length] + '</span>'); return; }
       case 'drucker': { const n = s.merke.drucker = Math.min(DRUCKER.length, (s.merke.drucker || 0) + 1); sichern(); ton('klack'); ui.toast('<b>3D-Drucker</b><span>' + DRUCKER[n - 1] + '</span>'); return; }
       case 'roboter': { const n = s.merke.roboter = (s.merke.roboter || 0) + 1; sichern(); ton('pling'); ui.toast('<b>Roboter vom Coding-Club</b><span>' + ROBOTER[(n - 1) % ROBOTER.length] + '</span>'); return; }
+      case 'sorgen': {   // SePAS: Sorgen-Briefkasten – anonym oder mit Namen; Herr Kuedes antwortet (mit Namen persönlich, sonst für alle)
+        if (s.merke.sorgenSchritt === s.schritt) { ui.toast('<b>✉️ Schon eingeworfen</b><span>Herr Kuedes liest alles. Morgen geht wieder.</span>'); return; }
+        const t = await ui.waehle(['Mir geht’s gerade nicht gut.', 'Jemand wird gemobbt. Nicht ich.', 'Stress mit Freunden.', 'Danke, dass es die SePAS gibt.', '(Doch nichts einwerfen.)'], 'Was schreibst du auf den Zettel?', { fest: true });
+        if (t === 4) return;
+        const n = await ui.waehle(['Anonym einwerfen', 'Mit meinem Namen'], 'Mit Namen kann Herr Kuedes dir antworten. Anonym geht auch.', { fest: true });
+        s.merke.sorgenSchritt = s.schritt; s.merke.sorgenZettel = (s.merke.sorgenZettel || 0) + 1; ton('klack');
+        const PERSOENLICH = ['Danke für deinen Zettel. Du musst damit nicht allein sein. Tür ist offen.', 'Danke für den Hinweis. Ich schau genau hin. Diskret.', 'Danke für deinen Zettel. Streit tut weh. Komm vorbei, wenn du magst.', 'Und danke, dass es dich gibt. 😊'];
+        (s.merke.nachrichten = s.merke.nachrichten || []).push(n === 1 ? ['SePAS · Herr Kuedes', PERSOENLICH[t]] : ['SePAS · Aushang', 'An alle mit Zettel: Danke. Ihr seid nicht allein. Tür ist offen.']);
+        sichern(); ui.toast('<b>✉️ Eingeworfen</b><span>' + (n === 1 ? 'Mit Namen. Herr Kuedes meldet sich.' : 'Anonym. Herr Kuedes liest alles.') + '</span>');
+        return;
+      }
       case 'computer': ui.toast('<b>Anmelden</b><span>Passwort vergessen. Das Passwort für „Passwort vergessen“ auch.</span>'); return;
     }
   }
