@@ -716,6 +716,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     const p = steuerung.pos; let best = null, bd = 7.5;
     for (const x of statisten) { const d = Math.hypot(x.f.group.position.x - p.x, x.f.group.position.z - p.z); const sichtbar = x.f.group.children[0] && x.f.group.children[0].visible; if (d < bd && d > 1.2 && sichtbar) { bd = d; best = x; } }
     if (!best) return;
+    // Komplimente: Leute bemerken neue Teile aus der Garderobe (je Teil einmal) – Belohnungen werden im Dorf gesehen
+    if (S && S.garderobe && Math.random() < 0.5) { const lob = komplimentFuer(); if (lob) { sprueche_el.textContent = lob; spruchWer = best; spruchBis = performance.now() + 3600; sprueche_el.hidden = false; return; } }
     // Leute aus den Situationen murmeln, was sie beschäftigt – passend zu dem, was passiert ist (statt Allerwelts-Sprüchen)
     if (best.d.sitPerson && S) { const sp = SIT_LEUTE[best.d.sitPerson], m0 = S.merke || {};
       if (sp.stumm) return;
@@ -750,6 +752,24 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (bd < 3.5 && best.d.steht && best.d.steht[3] === 'redet' && Math.random() < 0.6) { best.f.spiele('Wave'); setTimeout(() => best.f.spiele('Interact', { tempo: 0.35 }), 2400); }
   }
 
+  const LOB_EIGEN = {
+    k_dino: 'Rawr! Die Dino-Kapuze ist der Hammer.', k_ohren: 'Miau! Die Katzenohren stehen dir.', k_einhorn: 'Ein Einhorn auf dem Schulhof. Guter Tag heute.',
+    k_propeller: 'Propellermütze! Hebst du gleich ab?', k_krone: 'Eine Krone? Okay, Majestät.', l_krone: 'Eine Krone? Okay, Majestät.', k_entdecker: 'Entdeckerhut! Hast du Linas Zettel alle gefunden?',
+    r_fluegel: 'Flügel?! Kannst du damit fliegen?', r_rakete: 'Startest du gleich? Drei, zwei, eins …', r_panzer: 'Schildkröten-Style. Langsam, aber sicher.', r_teddy: 'Da schaut ein Teddy aus deinem Rucksack!', r_gitarre: 'Gitarrenkoffer! Spielst du in einer Band?',
+    t_ratte: 'Ist das eine Ratte? … Okay, sie ist süß.', t_kaetzchen: 'Ein Kätzchen! Darf ich streicheln?', t_eichhoernchen: 'Ein Eichhörnchen! Hat es Nüsse dabei?', t_wiesel: 'Ist das ein Wiesel? So flink!', t_igel: 'Ein Igel! Pass auf die Stacheln auf.',
+  };
+  function komplimentFuer() {
+    const an = (S.garderobe && S.garderobe.an) || {}, gelobt = S.merke.lob = S.merke.lob || [];
+    for (const art of ['tier', 'kopf', 'ruecken', 'haar', 'oben', 'brille', 'schuhe']) {
+      const id = an[art], d = id && gdDing(id);
+      if (!d || gelobt.includes(id) || ['k_start', 'r_schul'].includes(id)) continue;
+      gelobt.push(id); S.merke.komplimente = (S.merke.komplimente || 0) + 1; sichern();
+      if (LOB_EIGEN[id]) return LOB_EIGEN[id];
+      const n = d.name;
+      return art === 'tier' ? 'Ist das ' + n + '? Wie süß!' : art === 'haar' ? 'Neue Haarfarbe? Mutig. Gefällt mir.' : ['Oh, ' + n + '! Steht dir.', 'Nice: ' + n + '. Will ich auch.', n + '? Wie hast du das bekommen?'][gelobt.length % 3];
+    }
+    return null;
+  }
   // Statisten ansprechen: kurzer, witziger Gruß (zählt für den Schul-Pass)
   const GRUSS = ['Hey! Neu hier, oder?', 'Salut! Coole Schuhe.', 'Moien! Hast du Gerd gesehen? Die Taube mit Hut.', 'Yo. Kennst du Ben? Der schuldet mir 2 €.', 'Hi! … Sorry, ich dachte, du bist wer anders.',
     'Hallo! Ich bin in der 7P1. Wir sind besser. Spaß.', 'Salut! Gleich Französisch. Ohne Hausaufgaben. Hilfe.', 'Moien. Ich hab Hunger. Hast du was?', 'Ey, du bist doch aus der 7P2. Ihr seid laut.', 'Hey. Frag nicht nach Mathe. Bitte.',
