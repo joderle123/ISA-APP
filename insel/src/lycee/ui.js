@@ -273,7 +273,9 @@ export function createUI({ root, input, speech }) {
     if (art === 'lehrer') return;
     if (art === 'raus') return;   // „Kurz raus“ mitten in einer Situation: das Gespräch dahinter wartet
     if (e.code === 'Tab') { e.preventDefault(); if (ebene.hidden && !dialogOffen) ui.onJournal && ui.onJournal(); else if (ebene.dataset.art === 'journal') ebeneZu(); return; }
-    if ((e.code === 'KeyP' || e.code === 'Escape') && ebene.hidden && (!dialogOffen || ui.pauseImDialog)) { e.preventDefault(); ui.onRaus && ui.onRaus(); return; }
+    if (e.code === 'KeyP' && ebene.hidden && (!dialogOffen || ui.pauseImDialog)) { e.preventDefault(); ui.onRaus && ui.onRaus(); return; }
+    // Escape: erst schauen, ob ein Minispiel (Kicker, Billard, Tischtennis …) die Taste zum Beenden benutzt hat – sonst „Kurz raus“
+    if (e.code === 'Escape' && ebene.hidden && (!dialogOffen || ui.pauseImDialog)) { setTimeout(() => { if (!e.defaultPrevented && ebene.hidden && (!dialogOffen || ui.pauseImDialog)) ui.onRaus && ui.onRaus(); }, 0); return; }
     if (e.code === 'KeyM' && !dialogOffen && (ebene.hidden || ebene.dataset.art === 'karte')) { e.preventDefault(); if (ebene.dataset.art === 'karte') ebeneZu(); else ui.onKarte && ui.onKarte(); return; }
     if (art === 'karte' && e.code === 'Escape') { e.preventDefault(); ebeneZu(); return; }
     if (e.code === 'KeyN' && ebene.hidden && !dialogOffen && !ui.fotoAn()) { e.preventDefault(); ui.onHandy && ui.onHandy(); return; }

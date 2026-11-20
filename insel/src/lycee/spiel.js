@@ -3122,7 +3122,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   let freiZeit = 0, stillZeit = 0, zielSchrittAlt = -1, zielZeit = 0, spielZeit = 0, pauseErinnert = false;
   const tipp = (id, html) => { if (!S || !S.merke || S.merke['tipp_' + id]) return; S.merke['tipp_' + id] = true; ui.toast('<b>💡 Tipp</b><span>' + html + '</span>'); };
   function tippTick(dt) {
-    if (!laeuft || !S || imGespraech || ui.ebeneArt() || foto || steuerung.brett) return;
+    if (!laeuft || !S || imGespraech || ui.ebeneArt() || foto || steuerung.brett || !steuerung.frei) return;   // keine Tipps in Minispielen
     freiZeit += dt;
     if (steuerung.laeuft) stillZeit = 0; else stillZeit += dt;
     if (freiZeit > 25 && (TOUCH ? steuerung.tempo < 3.5 : true) && laufZeit > 6) tipp('rennen', TOUCH ? 'Joystick ganz nach außen schieben = rennen.' : 'Umschalt halten = langsam gehen. Ohne Umschalt rennst du (im Gang lieber nicht vor Lehrkräften 😉).');
