@@ -91,7 +91,11 @@ export function createUI({ root, input, speech }) {
     auftrag.querySelector('.ly-a-vor').onclick = (e) => { e.stopPropagation(); vorlesen(titel + '. ' + ziel); };
     if (ui.autoVorlesen && ziel && ziel !== letztesZiel) vorlesen(ziel);
     letztesZiel = ziel;
+    if (nebenHtml) auftrag.insertAdjacentHTML('beforeend', '<div class="ly-a-neben">' + nebenHtml + '</div>');
   };
+  // Nebenauftrag (z. B. Schnitzeljagd): eine Zeile unter dem Hauptauftrag, bleibt beim Wechsel des Auftrags stehen
+  let nebenHtml = '';
+  ui.neben = (html) => { nebenHtml = html || ''; const alt = auftrag.querySelector('.ly-a-neben'); if (alt) alt.remove(); if (nebenHtml) auftrag.insertAdjacentHTML('beforeend', '<div class="ly-a-neben">' + nebenHtml + '</div>'); };
   ui.dist = (d) => { const s = auftrag.querySelector('.ly-a-dist'); const z = auftrag.querySelector('.ly-a-ziel'); if (!z) return; if (d == null) { if (s) s.remove(); return; } if (s) s.textContent = Math.round(d) + ' m'; else z.insertAdjacentHTML('beforeend', ' <span class="ly-a-dist">' + Math.round(d) + ' m</span>'); };
   // Beim Laufen schrumpft die Ziel-Box auf eine Zeile (Welt vorne), beim Stehenbleiben kommt sie zurück
   ui.auftragPuls = () => { auftrag.classList.remove('puls'); void auftrag.offsetWidth; auftrag.classList.add('puls'); setTimeout(() => auftrag.classList.remove('puls'), 4200); };

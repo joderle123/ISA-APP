@@ -1173,3 +1173,8 @@ kbd { display: inline-block; min-width: 1.5em; padding: 0 .35em; margin-right: .
 .ly-gd-fort > i { display: block; height: 100%; border-radius: 3px; background: linear-gradient(90deg, #f2b134, #ffd166); }
 .ly-t-fort .ly-t-balken { display: block; height: 6px; margin-top: 6px; border-radius: 3px; background: rgba(255, 255, 255, .25); overflow: hidden; }
 .ly-t-fort .ly-t-balken > i { display: block; height: 100%; background: linear-gradient(90deg, #f2b134, #ffd166); }
+
+/* Nebenauftrag unter dem Auftrag (Schnitzeljagd) */
+.ly-a-neben { margin-top: 7px; padding-top: 6px; border-top: 1px dashed rgba(43, 58, 85, .22); font-size: 13px; line-height: 1.35; color: #6b4a1d; }
+.ly-a-neben b { color: #8a5a10; } .ly-a-neben i { color: #5d6573; }
+.ly-auftrag.ruhe .ly-a-neben { margin-top: 4px; padding-top: 4px; }

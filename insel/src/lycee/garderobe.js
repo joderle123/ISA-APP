@@ -23,6 +23,7 @@ export const GARDEROBE = [
   { id: 'k_ohren', art: 'kopf', wert: 'ohren', farbe: '#ff7ac8', sy: '🐱', name: 'Katzenohren', hinweis: 'Dein Haustier 20× streicheln', test: (S) => (m(S).tierStreicheln || 0) >= 20 },
   { id: 'k_dino', art: 'kopf', wert: 'dino', farbe: '#4caf50', sy: '🦖', name: 'Dino-Kapuze', hinweis: 'Fußball auf dem Stade: 10 Tore', test: (S) => (m(S).tore || 0) >= 10 },
   { id: 'k_einhorn', art: 'kopf', wert: 'einhorn', farbe: '#b197fc', sy: '🦄', name: 'Einhorn-Haarreif', hinweis: 'In 5 Kapiteln alle Wochenaufgaben', test: (S) => (m(S).wochenVoll || 0) >= 5 },
+  { id: 'k_entdecker', art: 'kopf', wert: 'bucket', farbe: '#c8a26a', sy: '🧭', name: 'Entdeckerhut', hinweis: 'Linas Schnitzeljagd durchs Dorf schaffen', test: (S) => !!(m(S).jagd && m(S).jagd.fertig) },
   { id: 'k_krone', art: 'kopf', wert: 'krone', farbe: '#ffd23f', sy: '👑', name: 'Krone „Dorf-Legende“', hinweis: 'Alle 24 Sticker finden', test: (S) => (m(S).sticker || []).length >= 24 },
   // Brillen
   { id: 'b_sonne', art: 'brille', wert: 'sonne', farbe: '#1b1f27', sy: '🕶️', name: 'Sonnenbrille', hinweis: '3 Botengänge im Dorf', test: (S) => ((m(S).boten && m(S).boten.n) || 0) >= 3 },
@@ -126,7 +127,7 @@ const Zf = (feld, soll) => (S) => [anz(m(S)[feld]), soll];
 const botenN = (S) => (m(S).boten && m(S).boten.n) || 0, botenOrte = (S) => Object.keys((m(S).boten && m(S).boten.best) || {}).length;
 const hfN = (S) => ((m(S).hf && m(S).hf.fertig) || []).length;
 const FORT = {
-  k_ohren: Zf('tierStreicheln', 20), k_dino: Zf('tore', 10), k_einhorn: Zf('wochenVoll', 5),
+  k_entdecker: (S) => [(m(S).jagd && m(S).jagd.i) || 0, 6], k_ohren: Zf('tierStreicheln', 20), k_dino: Zf('tore', 10), k_einhorn: Zf('wochenVoll', 5),
   k_beanie: Zf('kickerSiege', 1), k_bucket: Zf('fotoBingo', 5), k_kopfhoerer: Zf('tanzRekord', 2000), k_propeller: Zf('skate5', 5), k_cap_gold: Zf('sticker', 16), k_billard: Zf('billardSiege', 1), k_bommel: Zf('eisMeter', 300), k_sommerhut: Zf('eisSorten', 6), k_krone: Zf('sticker', 24),
   b_sonne: (S) => [botenN(S), 3], b_herz: (S) => [herzen(S, 4), 3], b_sport: Zf('elfmeterRekord', 4), b_stern: Zf('dosenRekord', 6),
   o_jugendhaus: (S) => [(m(S).kicker || 0) + (m(S).tanz || 0), 3], o_galaxie: (S) => [botenOrte(S), 8], o_trikot: Zf('volleyRekord', 10), o_gold: (S) => [hfN(S), 5], o_kicker: Zf('kickerBesiegt', 3), o_billard: Zf('billardBesiegt', 3), o_kaktus: Zf('kevinRekord', 500),

@@ -39,7 +39,7 @@ test('Garderobe: eindeutige Teile, jede Art vertreten, Hinweise kurz, Tests lauf
   assert.ok(GARDEROBE.some((g) => g.level), 'Level-Belohnungen fehlen');
   for (const g of GARDEROBE) assert.ok(g.hinweis.split(/\s+/).length <= 12 && g.name && g.sy, g.id);
   assert.deepEqual(freigeschaltet({ merke: {} }), ['k_start', 'r_schul', 'e_winken', 'e_jubeln', 'e_tanzen', 'e_zucken'], 'leerer Stand: nur das Start-Geschenk und die vier Start-Emotes');
-  const voll = { jetonsGesamt: 500, merke: { gewunken: 6, tore: 10, musikGewechselt: 3, skateRekord: 20, emoteArten: ['winken', 'jubeln', 'tanzen', 'daumen', 'herz'], ttSiege: 3, tanzRekord: 2500, kevinRekord: 1200, sticker: new Array(24).fill('x'), boten: { n: 8, best: { a: 1, b: 1, c: 1, d: 1, e: 1, f: 1, g: 1, h: 1 } }, skate5: 'SKATE', skate5Rekord: 30, fotoBingo: new Array(9).fill('x'), tanzRekord: 9000, tanzSterne: 3, kickerSiege: 1, kicker: 5, tanz: 2, dosenRekord: 6, elfmeterRekord: 5, volleyRekord: 12, renn_brett: 50, renn_trotti: 40, enten: 2, billardSiege: 1, kevinRekord: 1200, eisMeter: 700, eisSorten: [1, 2, 3, 4, 5, 6], schneemann: 1, laub: 12, wochenGesamt: 3, wochenVoll: 5, tierStreicheln: 20, lernen: 10, kickerBesiegt: [1, 2, 3], billardBesiegt: [1, 2, 3], hf: { fertig: [1, 2, 3, 4, 5, 6, 7] } }, herz: { a: 4, b: 5, c: 4, d: 4 } };
+  const voll = { jetonsGesamt: 500, merke: { gewunken: 6, jagd: { i: 6, fertig: true }, tore: 10, musikGewechselt: 3, skateRekord: 20, emoteArten: ['winken', 'jubeln', 'tanzen', 'daumen', 'herz'], ttSiege: 3, tanzRekord: 2500, kevinRekord: 1200, sticker: new Array(24).fill('x'), boten: { n: 8, best: { a: 1, b: 1, c: 1, d: 1, e: 1, f: 1, g: 1, h: 1 } }, skate5: 'SKATE', skate5Rekord: 30, fotoBingo: new Array(9).fill('x'), tanzRekord: 9000, tanzSterne: 3, kickerSiege: 1, kicker: 5, tanz: 2, dosenRekord: 6, elfmeterRekord: 5, volleyRekord: 12, renn_brett: 50, renn_trotti: 40, enten: 2, billardSiege: 1, kevinRekord: 1200, eisMeter: 700, eisSorten: [1, 2, 3, 4, 5, 6], schneemann: 1, laub: 12, wochenGesamt: 3, wochenVoll: 5, tierStreicheln: 20, lernen: 10, kickerBesiegt: [1, 2, 3], billardBesiegt: [1, 2, 3], hf: { fertig: [1, 2, 3, 4, 5, 6, 7] } }, herz: { a: 4, b: 5, c: 4, d: 4 } };
   assert.equal(freigeschaltet(voll).length, GARDEROBE.length, 'alles erreichbar');
 });
 
@@ -150,4 +150,15 @@ test('Garderobe: Fortschritt beginnt bei 0, hat ein Ziel und ist für die meiste
   assert.deepEqual(fortschritt('e_daumen', { merke: { gewunken: 3 } }), [3, 5]);
   assert.deepEqual(fortschritt('e_daumen', { merke: { gewunken: 9 } }), [5, 5], 'nicht über das Ziel hinaus');
   assert.equal(fortschritt('t_igel', { merke: {} }), null, 'Einmal-Dinge ohne Balken');
+});
+
+test('Schnitzeljagd: sechs Stationen, kurze Rätsel, Fund nur am richtigen Ort, am Ende fertig', async () => {
+  const { JAGD, jagdFund, FUND_R } = await import('../../src/lycee/schatzsuche.js');
+  assert.equal(JAGD.length, 6);
+  for (const st of JAGD) assert.ok(st.raetsel.split(/\s+/).length <= 12 && st.ort, st.ort);
+  const j = { i: 0 };
+  assert.equal(jagdFund(j, JAGD[1].x, JAGD[1].z), null, 'falsche Station zählt nicht');
+  assert.equal(jagdFund(j, JAGD[0].x + FUND_R + 1, JAGD[0].z), null, 'zu weit weg');
+  for (let k = 0; k < JAGD.length; k++) { const r = jagdFund(j, JAGD[k].x + 0.5, JAGD[k].z); assert.ok(r, 'Station ' + k); assert.equal(r.fertig, k === JAGD.length - 1); }
+  assert.equal(j.fertig, true); assert.equal(jagdFund(j, JAGD[0].x, JAGD[0].z), null, 'nach dem Ende nichts mehr');
 });

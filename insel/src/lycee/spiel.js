@@ -53,6 +53,7 @@ import { createSchneemann } from './schneemann.js';
 import { createLaubhaufen } from './laubhaufen.js';
 import { createPfuetzen } from './pfuetzen.js';
 import { createPokale } from './pokale.js';
+import { createSchatzsuche, jagdFund, JAGD, TIPP_NACH } from './schatzsuche.js';
 import { createHaustier } from './haustier.js';
 import { herausforderungPruefen } from './herausforderungen.js';
 import { AUFGABEN, aufgabenFuer, aufgabenStand } from './wochenaufgaben.js';
@@ -2195,6 +2196,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (laubAn) stammMarken.push({ x: -14.5, z: 5.4, t: '🍂 Laubhaufen' });
     if (fruehlingAn) stammMarken.push({ x: -2, z: 14.6, t: '💦 Pfützen' });
     if (sommerAn) stammMarken.push({ x: 48, z: 117.2, t: '🍦 Eiswagen' });
+    { const j = S.merke.jagd; if (j && !j.fertig && j.tipp && JAGD[j.i]) stammMarken.push({ x: JAGD[j.i].x, z: JAGD[j.i].z, t: '🗺️ Zettel' }); }
     if (botengang.aktiv()) { const l = botengang.lauf, z = l.phase === 'holen' ? l.b.von : l.b.nach; stammMarken.push({ x: z.x, z: z.z, t: (l.phase === 'holen' ? '📦 ' : l.b.ding.split(' ')[0] + ' ') + z.ort }); }
     // Situationen, von denen eine Nachricht kam und die noch offen sind: Markierung wie ein Auftrag (ohne zu verraten, was passiert)
     if (risikoAn()) { const sid = (SCHRITTE[S.schritt] || {}).id;
@@ -3124,6 +3126,40 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   // Frühling (Kapitel 7–8) und Regentage: Pfützen auf dem Hof – hindurchrennen = platsch (pfuetzen.js)
   let fruehlingAn = false;
   let sommerAn = false;   // Kapitel 9–10: Eiswagen
+  // Schnitzeljagd (schatzsuche.js): Lina schickt ab Kapitel 2 den ersten Hinweis aufs Handy; Rätsel stehen unter dem Auftrag
+  const jagd = createSchatzsuche({ scene });
+  let jagdUhr = 0, jagdInit = false;
+  function jagdAnzeige() {
+    const j = S && S.merke && S.merke.jagd;
+    if (!j || j.fertig) { ui.neben && ui.neben(null); jagd.zeige(null); return; }
+    const st = JAGD[j.i]; jagd.zeige(st);
+    ui.neben && ui.neben('🗺️ <b>Schnitzeljagd ' + (j.i + 1) + '/' + JAGD.length + '</b> · ' + st.raetsel + (j.tipp ? ' <i>(' + st.ort + ')</i>' : ''));
+  }
+  function jagdTick(dt) {
+    jagd.tick(dt, camera);
+    if (!S || !S.merke || !laeuft) return;
+    if (!jagdInit) { jagdInit = true; jagdAnzeige(); }
+    const j = S.merke.jagd, lina = (LEUTE.lina && LEUTE.lina.name) || 'Lina';
+    if (!j) {   // Start: ab Kapitel 2, in freier Zeit, nicht während eines Botengangs oder Gesprächs
+      jagdUhr += dt;
+      if (jagdUhr < 45 || imGespraech || ui.ebeneArt() || foto || botengang.aktiv() || ((SCHRITTE[S.schritt] || {}).kap || 1) < 2) return;
+      S.merke.jagd = { i: 0, zeit: 0, tipp: false, fertig: false };
+      (S.merke.nachrichten = S.merke.nachrichten || []).push([lina, 'Ich hab Zettel im Dorf versteckt. Schnitzeljagd! 🗺️'], [lina, 'Hinweis 1: ' + JAGD[0].raetsel]);
+      nachrichtenRein(); sichern(); jagdAnzeige(); return;
+    }
+    if (j.fertig || imGespraech) return;
+    j.zeit = (j.zeit || 0) + dt;
+    if (!j.tipp && j.zeit > TIPP_NACH && !ui.ebeneArt()) { j.tipp = true; ui.toast('<b>📱 ' + lina + '</b><span>Tipp: bei ' + JAGD[j.i].ort + '. Schau auf die Karte (M).</span>'); sichern(); jagdAnzeige(); }
+    const p = steuerung.pos, r = jagdFund(j, p.x, p.z);
+    if (!r) return;
+    ton('pling'); vib(20);
+    if (r.fertig) {
+      (S.merke.nachrichten = S.merke.nachrichten || []).push([lina, '✅ Alle Zettel gefunden! Der Entdeckerhut ist für dich. 🧭']);
+      nachrichtenRein(); herz('lina', 1); setTimeout(() => jetons(5, 'Schnitzeljagd'), 1800);
+      ui.toast('<b>🧭 Schnitzeljagd geschafft!</b><span>Alle ' + JAGD.length + ' Zettel. ' + lina + ' freut sich.</span>', 'ly-t-ent'); ton('melodie2');
+    } else ui.toast('<b>🗺️ Zettel gefunden! (' + j.i + '/' + JAGD.length + ')</b><span>' + r.naechste.raetsel + '</span>', 'ly-t-ent');
+    sichern(); jagdAnzeige();
+  }
   const pfuetzen = createPfuetzen({ scene, steuerung, tex: TEX_RUND, ton: (a) => ton(a), onPlatsch: () => {
     if (!S || !S.merke) return; S.merke.pfuetzen = (S.merke.pfuetzen || 0) + 1; vib(15);
     if (!S.merke.pfuetzenTipp) { S.merke.pfuetzenTipp = 1; sichern(); ui.toast('<b>💦 Platsch!</b><span>Nasse Schuhe gibt es im Spiel nicht. Nochmal!</span>', 'ly-t-ent'); }
@@ -3432,6 +3468,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     schneemann.tick(dt, eisbahn.visible);
     laub.tick(dt, laubAn);
     pfuetzen.tick(dt, fruehlingAn || regenJetzt > 0.3);
+    jagdTick(dt);
     if (tuete && performance.now() > tueteBis) { if (tuete.parent) tuete.parent.remove(tuete); tuete = null; }
     spur.tick(dt, !!(laeuft && S && spieler && spieler.group.visible && !imGespraech && !steuerung.kameraAus));
     if (blasen.length) blasenTick(dt);
@@ -3659,7 +3696,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     teleport: (ort, yaw) => { const o = typeof ort === 'string' ? welt.orte[ort] : ort; steuerung.teleport(o.x, o.z, yaw !== undefined ? yaw : o.yaw); },
     rede, los, audio, SITZ, input, get spruch() { return { wer: !!spruchWer }; }, get naechste() { return naechste && naechste.id; },
     get probe() { return probe; }, set mutTempo(v) { mutTempo = v; },
-    daten: { SCHRITTE, STATISTEN, LEUTE, BLAETTER, MATHE, LEKTIONEN, GESPRAECHE }, ia, aktion, botengang, buchstaben, dosen, haustier, spur, schneemann, laub, pfuetzen, pokale, gdPruefen: (dt = 5) => garderobePruefen(dt), emote: (a, o) => emoteSpielen(a, o), anziehen: (id) => gleichAnziehen(id), umbau: async () => { const p = steuerung.pos.clone(), y = spieler.group.rotation.y; await spielerFigur(S.figur); spieler.group.position.copy(p); spieler.group.rotation.y = y; }, emoteFrei: () => emoteFrei().map((d) => d.wert), leuteAntworten, kicker3d, billard, garderobe: () => S && S.garderobe, get iaNah() { return iaNah && iaNah.tu; },
+    daten: { SCHRITTE, STATISTEN, LEUTE, BLAETTER, MATHE, LEKTIONEN, GESPRAECHE }, ia, aktion, botengang, buchstaben, dosen, haustier, spur, schneemann, laub, pfuetzen, pokale, gdPruefen: (dt = 5) => garderobePruefen(dt), jagd, jagdAnzeige, emote: (a, o) => emoteSpielen(a, o), anziehen: (id) => gleichAnziehen(id), umbau: async () => { const p = steuerung.pos.clone(), y = spieler.group.rotation.y; await spielerFigur(S.figur); spieler.group.position.copy(p); spieler.group.rotation.y = y; }, emoteFrei: () => emoteFrei().map((d) => d.wert), leuteAntworten, kicker3d, billard, garderobe: () => S && S.garderobe, get iaNah() { return iaNah && iaNah.tu; },
     hs, tt3d, zufall, fussball, volley, verkehr, elfmeter, sticker, fahrer, get fahrt() { return fahrt; }, get spieler() { return spieler; }, vorspann: (k) => vorspann(SCHRITTE.find((x) => (x.kap || 1) === k) || SCHRITTE[0]), gesteZu, handschlagMit, get statisten() { return statisten; }, musik,
   };
 
