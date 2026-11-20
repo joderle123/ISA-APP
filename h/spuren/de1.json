@@ -1,0 +1,98 @@
+{
+ "modul": "de1",
+ "titel": {
+  "de": "Ich und die anderen",
+  "fr": "Moi et les autres"
+ },
+ "sprache": "de",
+ "spuren": {
+  "de1-01l": {
+   "titel": "Neu in der 7P2: Das sind wir!",
+   "art": "lesen",
+   "lektion": 1,
+   "dauer": 70.2,
+   "text": [
+    [
+     "",
+     "Neu in der 7P2: Das sind wir!"
+    ],
+    [
+     "",
+     "Sam, 13 Jahre. Hallo! Ich heiße Sam und bin dreizehn Jahre alt. Ich wohne in Junglinster, nicht weit von der Schule. Ich spiele gern Basketball und höre viel Musik. Mein Lieblingsfach ist Sport. Mathe mag ich nicht so gern. Ich bin neu hier und suche Leute für ein Basketball-Team!"
+    ],
+    [
+     "",
+     "Lina, 12 Jahre. Hi, ich bin Lina. Ich bin zwölf. Ich komme aus Ettelbrück, jetzt wohne ich in Larochette. Ich zeichne sehr gern, am liebsten Comics. Ich spreche vier Sprachen: Luxemburgisch, Französisch, Deutsch und ein bisschen Arabisch. Mein Lieblingsessen ist Pizza."
+    ],
+    [
+     "",
+     "Yusuf, 14 Jahre. Moien! Ich heiße Yusuf. Ich bin vierzehn Jahre alt und wohne in Echternach. Jeden Morgen fahre ich 25 Minuten mit dem Bus. Ich koche gern und ich spiele Gitarre. In der Pause bin ich meistens auf dem Pausenhof. Sprich mich einfach an!"
+    ]
+   ]
+  },
+  "de1-01h": {
+   "titel": "Bist du auch neu hier?",
+   "art": "hoeren",
+   "lektion": 1,
+   "dauer": 51.5,
+   "text": [
+    [
+     "Sam",
+     "Hallo! Bist du auch neu hier?"
+    ],
+    [
+     "Noah",
+     "Ja. Ich bin ein bisschen nervös. Ich heiße Noah."
+    ],
+    [
+     "Sam",
+     "Ich bin Sam. Freut mich! In welcher Klasse bist du?"
+    ],
+    [
+     "Noah",
+     "In der 7P2. Und du?"
+    ],
+    [
+     "Sam",
+     "Ich auch! Cool. Wie alt bist du?"
+    ],
+    [
+     "Noah",
+     "Ich bin vierzehn. Und du?"
+    ],
+    [
+     "Sam",
+     "Ich bin dreizehn. Wo wohnst du?"
+    ],
+    [
+     "Noah",
+     "In Heffingen. Ich fahre mit dem Bus. Und du?"
+    ],
+    [
+     "Sam",
+     "Ich wohne hier in Junglinster. Ich gehe zu Fuß zur Schule."
+    ],
+    [
+     "Noah",
+     "Was machst du gern?"
+    ],
+    [
+     "Sam",
+     "Ich spiele gern Basketball. Und du?"
+    ],
+    [
+     "Noah",
+     "Ich skate gern. Und ich mag Musik."
+    ],
+    [
+     "Sam",
+     "Super. Oh, es klingelt! Komm, wir gehen zusammen rein."
+    ],
+    [
+     "Noah",
+     "Okay. Danke, Sam!"
+    ]
+   ]
+  }
+ }
+}

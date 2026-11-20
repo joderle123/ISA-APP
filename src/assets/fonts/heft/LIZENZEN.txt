@@ -1,0 +1,4 @@
+Schriften für die Modulhefte (tools/hefte):
+- Atkinson Hyperlegible – SIL Open Font License 1.1 – Copyright 2020 Braille Institute of America, Inc. (über @fontsource/atkinson-hyperlegible)
+- Lexend – SIL Open Font License 1.1 – Copyright The Lexend Project Authors (über @fontsource/lexend)
+Lizenztext: https://openfontlicense.org

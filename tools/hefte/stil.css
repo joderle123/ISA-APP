@@ -1,0 +1,287 @@
+/* Modulhefte (multimodal): Gestaltung für den Druck (A4). Erzeugt von tools/hefte/heft.tsx, gedruckt mit Chromium.
+   Grundsätze: große, gut lesbare Schrift (Atkinson Hyperlegible), viel Platz zum Schreiben (Linien 10 mm),
+   klare Farben je Teil (Lesen, Hören, Regel, Üben, Schreiben), keine Seite überladen. */
+
+@font-face { font-family: 'Atkinson'; font-weight: 400; font-style: normal; src: url('FONTS/atkinson-hyperlegible-latin-400-normal.woff2') format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Atkinson'; font-weight: 400; font-style: normal; src: url('FONTS/atkinson-hyperlegible-latin-ext-400-normal.woff2') format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Atkinson'; font-weight: 700; font-style: normal; src: url('FONTS/atkinson-hyperlegible-latin-700-normal.woff2') format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Atkinson'; font-weight: 700; font-style: normal; src: url('FONTS/atkinson-hyperlegible-latin-ext-700-normal.woff2') format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Atkinson'; font-weight: 400; font-style: italic; src: url('FONTS/atkinson-hyperlegible-latin-400-italic.woff2') format('woff2'); }
+@font-face { font-family: 'Atkinson'; font-weight: 700; font-style: italic; src: url('FONTS/atkinson-hyperlegible-latin-700-italic.woff2') format('woff2'); }
+@font-face { font-family: 'Lexend'; font-weight: 400; src: url('FONTS/lexend-latin-400-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Lexend'; font-weight: 500; src: url('FONTS/lexend-latin-500-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Lexend'; font-weight: 600; src: url('FONTS/lexend-latin-600-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Lexend'; font-weight: 700; src: url('FONTS/lexend-latin-700-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Lexend'; font-weight: 800; src: url('FONTS/lexend-latin-800-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Lexend'; font-weight: 400; src: url('FONTS/lexend-latin-ext-400-normal.woff2') format('woff2'); unicode-range: U+0100-02BA, U+1E00-1E9F; }
+@font-face { font-family: 'Lexend'; font-weight: 600; src: url('FONTS/lexend-latin-ext-600-normal.woff2') format('woff2'); unicode-range: U+0100-02BA, U+1E00-1E9F; }
+@font-face { font-family: 'Lexend'; font-weight: 800; src: url('FONTS/lexend-latin-ext-800-normal.woff2') format('woff2'); unicode-range: U+0100-02BA, U+1E00-1E9F; }
+@font-face { font-family: 'Hand'; font-weight: 400; src: url('FONTS_PDF/Kinderschrift-Regular.ttf'); }
+@font-face { font-family: 'Hand'; font-weight: 700; src: url('FONTS_PDF/Kinderschrift-Bold.ttf'); }
+
+:root {
+  /* Fachfarbe (wird je Heft gesetzt) */
+  --f: #b4432e; --f-mittel: #eaa38f; --f-zart: #fbefe9; --f-tief: #7e2b1c;
+  --tinte: #1b2233; --leise: #586174; --sehr-leise: #8a93a3; --linie: #aeb6c3; --rahmen: #d6dce5; --flaeche: #f5f7fa;
+  /* Teile des Hefts */
+  --lesen: #1f7a99; --lesen-zart: #e7f4f8;
+  --hoeren: #6d4bc4; --hoeren-zart: #f0ebfb;
+  --regel: #c98a06; --regel-zart: #fdf5e1;
+  --ueben: var(--f); --ueben-zart: var(--f-zart);
+  --schreiben: #2f8a4c; --schreiben-zart: #e9f6ed;
+  --sprechen: #d0577b; --sprechen-zart: #fcecf1;
+  --check: #475066; --check-zart: #eef1f6;
+  --loesung: #d0312d;
+  --zeile: 10.5mm;
+}
+
+@page { size: A4; margin: 15mm 15mm 17mm 15mm; }
+@page :first { margin: 0; }
+@page deckblatt { margin: 0; }
+
+* { box-sizing: border-box; }
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body { margin: 0; font-family: 'Atkinson', sans-serif; font-size: 12.6pt; line-height: 1.45; color: var(--tinte); hyphens: manual; }
+p { margin: 0 0 2.2mm; }
+b, strong { font-weight: 700; }
+.lex { font-family: 'Lexend', sans-serif; }
+
+/* ---------- Deckblatt ---------- */
+.deckblatt { page: deckblatt; width: 210mm; height: 297mm; position: relative; overflow: hidden; background: var(--f); color: #fff; break-after: page; }
+.deckblatt .muster { position: absolute; inset: 0; opacity: 0.13; }
+.deckblatt .oben { position: absolute; left: 18mm; top: 20mm; right: 18mm; }
+.deckblatt .fachzeile { font-family: 'Lexend'; font-weight: 600; letter-spacing: 0.18em; font-size: 10.5pt; text-transform: uppercase; opacity: 0.92; }
+.deckblatt h1 { font-family: 'Lexend'; font-weight: 800; font-size: 64pt; line-height: 0.95; margin: 6mm 0 3mm; letter-spacing: -0.02em; }
+.deckblatt .titel { font-family: 'Lexend'; font-weight: 700; font-size: 25pt; line-height: 1.15; max-width: 150mm; }
+.deckblatt .unter { font-size: 13pt; margin-top: 5mm; max-width: 140mm; opacity: 0.95; }
+.deckblatt .figuren { position: absolute; left: 0; right: 0; bottom: 88mm; height: 95mm; display: flex; justify-content: center; align-items: flex-end; gap: 2mm; }
+.deckblatt .figuren svg { height: 95mm; width: auto; }
+.deckblatt .blase { position: absolute; background: #fff; color: var(--f-tief); font-family: 'Lexend'; font-weight: 700; font-size: 15pt; padding: 3mm 5mm; border-radius: 6mm; box-shadow: 0 1.5mm 0 rgba(0,0,0,0.12); }
+.deckblatt .unten { position: absolute; left: 0; right: 0; bottom: 0; height: 88mm; background: #fff; color: var(--tinte); padding: 10mm 18mm; }
+.deckblatt .unten h3 { font-family: 'Lexend'; font-weight: 700; font-size: 10pt; letter-spacing: 0.14em; text-transform: uppercase; color: var(--leise); margin: 0 0 4mm; }
+.deckblatt .medien { display: grid; grid-template-columns: repeat(4, 1fr); gap: 4mm; }
+.deckblatt .medium { border-radius: 4mm; padding: 3.5mm; background: var(--flaeche); font-size: 10.5pt; line-height: 1.3; }
+.deckblatt .medium .ic { width: 9mm; height: 9mm; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; margin-bottom: 2mm; }
+.deckblatt .medium .ic svg { width: 5.5mm; height: 5.5mm; }
+.deckblatt .medium b { display: block; font-family: 'Lexend'; font-size: 11pt; }
+.deckblatt .name { display: grid; grid-template-columns: 2.2fr 1fr 1fr; gap: 6mm; margin-top: 9mm; font-size: 9.5pt; color: var(--leise); }
+.deckblatt .name div { border-top: 0.4mm solid var(--linie); padding-top: 1.5mm; }
+
+/* ---------- Kopf / Seitenrand ---------- */
+.seitenkopf { display: flex; align-items: center; gap: 3mm; font-size: 9pt; color: var(--leise); margin-bottom: 4mm; }
+.seitenkopf .marke { background: var(--f); color: #fff; font-family: 'Lexend'; font-weight: 700; font-size: 8pt; letter-spacing: 0.08em; padding: 0.8mm 2.2mm; border-radius: 1.2mm; text-transform: uppercase; }
+
+/* ---------- Inhalt ---------- */
+.inhalt { break-after: page; }
+.inhalt h2 { font-family: 'Lexend'; font-weight: 800; font-size: 28pt; margin: 2mm 0 6mm; }
+.inhalt .thema { font-family: 'Lexend'; font-weight: 700; color: var(--f); font-size: 12pt; margin: 6mm 0 2mm; display: flex; align-items: center; gap: 2.5mm; }
+.inhalt .thema svg { width: 5.5mm; height: 5.5mm; }
+.inhalt .zeile { display: grid; grid-template-columns: 10mm 1fr auto; align-items: baseline; gap: 3mm; padding: 2.4mm 0; border-bottom: 0.3mm solid var(--rahmen); }
+.inhalt .zeile .nr { width: 8mm; height: 8mm; border-radius: 50%; background: var(--f); color: #fff; font-family: 'Lexend'; font-weight: 700; font-size: 11pt; display: flex; align-items: center; justify-content: center; align-self: center; }
+.inhalt .zeile .t { font-family: 'Lexend'; font-weight: 600; font-size: 13pt; }
+.inhalt .zeile .z { display: block; font-size: 10.5pt; color: var(--leise); }
+.inhalt .zeile .medien { display: inline-flex; gap: 1.5mm; margin-left: 2mm; vertical-align: middle; }
+.inhalt .zeile .medien span { width: 5.2mm; height: 5.2mm; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; color: #fff; }
+.inhalt .zeile .medien svg { width: 3.4mm; height: 3.4mm; }
+.inhalt .zeile .s { font-family: 'Lexend'; font-weight: 700; color: var(--f); font-size: 12pt; }
+.inhalt .anleitung { margin-top: 8mm; background: var(--f-zart); border-radius: 4mm; padding: 5mm 6mm; font-size: 11.5pt; }
+.inhalt .anleitung h3 { font-family: 'Lexend'; font-size: 12.5pt; margin: 0 0 2mm; color: var(--f-tief); }
+.inhalt .anleitung ul { margin: 0; padding-left: 5mm; }
+.inhalt .anleitung li { margin: 1.2mm 0; }
+.stufen { display: inline-flex; gap: 0.8mm; vertical-align: middle; }
+.stufen i { width: 2.6mm; height: 2.6mm; border-radius: 50%; border: 0.35mm solid var(--f); display: inline-block; }
+.stufen i.an { background: var(--f); }
+
+/* ---------- Lektion: Auftakt ---------- */
+.lektion { break-before: page; }
+.auftakt { position: relative; border-radius: 5mm; background: var(--f-zart); padding: 6mm 7mm 6mm 7mm; min-height: 62mm; overflow: hidden; margin-bottom: 6mm; display: grid; grid-template-columns: 1fr 64mm; column-gap: 3mm; }
+.auftakt .text { position: relative; z-index: 1; }
+.auftakt .nr { font-family: 'Lexend'; font-weight: 800; font-size: 10pt; letter-spacing: 0.14em; text-transform: uppercase; color: var(--f); }
+.auftakt h2 { font-family: 'Lexend'; font-weight: 800; font-size: 31pt; line-height: 1.02; margin: 1.5mm 0 2mm; letter-spacing: -0.01em; }
+.auftakt .unter { font-size: 13pt; color: var(--leise); }
+.auftakt .ziel { display: inline-flex; gap: 2.5mm; align-items: flex-start; margin-top: 4mm; background: #fff; border-radius: 3mm; padding: 2.5mm 4mm; font-size: 12pt; }
+.auftakt .ziel b { color: var(--f); font-family: 'Lexend'; white-space: nowrap; }
+.auftakt .ziel .fr { display: block; font-size: 10pt; color: var(--leise); font-style: italic; }
+.auftakt .bild { align-self: end; justify-self: center; height: 58mm; display: flex; align-items: flex-end; margin-bottom: -6mm; }
+.auftakt .bild svg { height: 58mm; width: auto; max-width: 34mm; }
+.auftakt .gross { position: absolute; right: 6mm; top: -6mm; font-family: 'Lexend'; font-weight: 800; font-size: 90pt; color: var(--f); opacity: 0.09; line-height: 1; }
+
+/* ---------- Teile (Lesen, Hören, …) ---------- */
+.teil { margin: 6mm 0 3mm; display: flex; align-items: center; gap: 3mm; break-after: avoid; }
+.teil .ic { width: 10mm; height: 10mm; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; flex: none; }
+.teil .ic svg { width: 6mm; height: 6mm; }
+.teil h3 { font-family: 'Lexend'; font-weight: 800; font-size: 17pt; margin: 0; letter-spacing: -0.005em; }
+.teil .was { font-size: 11pt; color: var(--leise); margin-left: auto; text-align: right; }
+.teil.lesen .ic { background: var(--lesen); } .teil.lesen h3 { color: var(--lesen); }
+.teil.hoeren .ic { background: var(--hoeren); } .teil.hoeren h3 { color: var(--hoeren); }
+.teil.regel .ic { background: var(--regel); } .teil.regel h3 { color: var(--regel); }
+.teil.ueben .ic { background: var(--ueben); } .teil.ueben h3 { color: var(--ueben); }
+.teil.schreiben .ic { background: var(--schreiben); } .teil.schreiben h3 { color: var(--schreiben); }
+.teil.sprechen .ic { background: var(--sprechen); } .teil.sprechen h3 { color: var(--sprechen); }
+.teil.start .ic { background: var(--f); } .teil.start h3 { color: var(--f); }
+.teil.check .ic { background: var(--check); } .teil.check h3 { color: var(--check); }
+.neue-seite { break-before: page; }
+
+/* ---------- Lesetext ---------- */
+.lesetext { display: grid; grid-template-columns: 1fr 50mm; gap: 6mm; margin-bottom: 4mm; break-inside: avoid; }
+.lesetext.breit { grid-template-columns: 1fr; }
+.lesetext .blatt { border: 0.35mm solid var(--rahmen); border-radius: 4mm; padding: 6mm 7mm 5mm; background: #fff; position: relative; }
+.lesetext .blatt::before { content: ''; position: absolute; left: 0; top: 6mm; bottom: 6mm; width: 1.2mm; border-radius: 0 1mm 1mm 0; background: var(--lesen); }
+.lesetext .quelle { font-family: 'Lexend'; font-weight: 600; font-size: 9pt; letter-spacing: 0.12em; text-transform: uppercase; color: var(--lesen); margin-bottom: 1mm; }
+.lesetext h4 { font-family: 'Lexend'; font-weight: 800; font-size: 17pt; line-height: 1.15; margin: 0 0 3mm; }
+.lesetext .abs { font-size: 13.4pt; line-height: 1.62; margin: 0 0 3mm; position: relative; }
+.lesetext .abs .n { position: absolute; left: -6.4mm; top: 1.2mm; width: 4.4mm; height: 4.4mm; border-radius: 50%; background: var(--lesen-zart); color: var(--lesen); font-family: 'Lexend'; font-weight: 700; font-size: 7.5pt; display: flex; align-items: center; justify-content: center; }
+.lesetext .profil { display: grid; grid-template-columns: 17mm 1fr; gap: 3.5mm; margin-bottom: 4mm; align-items: start; }
+.lesetext .profil .kopf { width: 17mm; height: 17mm; border-radius: 50%; background: var(--lesen-zart); overflow: hidden; display: flex; align-items: flex-end; justify-content: center; }
+.lesetext .profil .kopf svg { width: 17mm; height: 17mm; }
+.lesetext .profil .name { font-family: 'Lexend'; font-weight: 700; font-size: 13pt; color: var(--lesen); }
+.lesetext .profil .abs { margin: 0; }
+.lesetext .rand { display: flex; flex-direction: column; gap: 4mm; }
+.woerter { background: var(--lesen-zart); border-radius: 3.5mm; padding: 4mm; font-size: 10.6pt; line-height: 1.3; }
+.woerter h5 { font-family: 'Lexend'; font-size: 9.5pt; letter-spacing: 0.1em; text-transform: uppercase; color: var(--lesen); margin: 0 0 2.5mm; }
+.woerter .w { margin-bottom: 2.4mm; }
+.woerter .w b { display: block; }
+.woerter .w span { color: var(--leise); font-style: italic; }
+.chat { display: flex; flex-direction: column; gap: 2.5mm; }
+.chat .msg { max-width: 82%; padding: 2.6mm 4mm; border-radius: 4mm; font-size: 13pt; line-height: 1.4; }
+.chat .msg .von { display: block; font-family: 'Lexend'; font-weight: 700; font-size: 9pt; margin-bottom: 0.6mm; }
+.chat .msg.l { background: var(--flaeche); align-self: flex-start; border-bottom-left-radius: 1mm; }
+.chat .msg.r { background: var(--lesen-zart); align-self: flex-end; border-bottom-right-radius: 1mm; }
+
+/* ---------- QR / Audio ---------- */
+.audio { display: grid; grid-template-columns: 29mm 1fr; gap: 4.5mm; align-items: center; border-radius: 4mm; padding: 3.5mm; break-inside: avoid; }
+.audio.lesen { background: var(--lesen-zart); }
+.audio.hoeren { background: var(--hoeren-zart); }
+.audio .qr { width: 29mm; height: 29mm; background: #fff; border-radius: 2.5mm; padding: 1.5mm; }
+.audio .qr svg { width: 100%; height: 100%; display: block; }
+.audio .t { font-family: 'Lexend'; font-weight: 700; font-size: 12pt; }
+.audio.lesen .t { color: var(--lesen); } .audio.hoeren .t { color: var(--hoeren); }
+.audio .s { font-size: 10.6pt; color: var(--leise); line-height: 1.35; }
+.audio .code { display: inline-block; font-family: 'Lexend'; font-weight: 700; font-size: 9pt; background: #fff; border-radius: 1.5mm; padding: 0.4mm 2mm; margin-top: 1.5mm; }
+.audio.klein { grid-template-columns: 1fr; justify-items: center; text-align: center; padding: 4mm 3mm; gap: 2.5mm; }
+.audio.klein .qr { width: 30mm; height: 30mm; }
+.hoerkarte { display: grid; grid-template-columns: 1fr 58mm; gap: 6mm; align-items: stretch; margin-bottom: 4mm; break-inside: avoid; }
+.hoerkarte .szene { border-radius: 4mm; background: var(--hoeren-zart); padding: 5mm 6mm; position: relative; overflow: hidden; min-height: 50mm; }
+.hoerkarte .szene .wo { font-family: 'Lexend'; font-weight: 700; font-size: 9pt; letter-spacing: 0.12em; text-transform: uppercase; color: var(--hoeren); }
+.hoerkarte .szene h4 { font-family: 'Lexend'; font-weight: 800; font-size: 16pt; margin: 1mm 0 2mm; }
+.hoerkarte .szene p { font-size: 12.4pt; max-width: 66mm; }
+.hoerkarte .szene h4, .hoerkarte .szene .wo { max-width: 70mm; }
+.hoerkarte .szene .bild { position: absolute; right: 3mm; bottom: 0; height: 42mm; display: flex; align-items: flex-end; }
+.hoerkarte .szene .bild svg { height: 42mm; width: auto; max-width: 25mm; }
+.hoerkarte .audio { grid-template-columns: 1fr; text-align: center; justify-items: center; }
+.hoerkarte .audio .qr { width: 34mm; height: 34mm; }
+.schritt { break-after: avoid; font-family: 'Lexend'; font-weight: 700; font-size: 10pt; letter-spacing: 0.08em; text-transform: uppercase; color: var(--hoeren); margin: 4mm 0 1.5mm; display: flex; align-items: center; gap: 2mm; }
+.schritt::after { content: ''; flex: 1; height: 0.3mm; background: var(--hoeren-zart); }
+
+/* ---------- Regel ---------- */
+.regelkasten { display: grid; grid-template-columns: 1fr 1fr; gap: 5mm; margin-bottom: 4mm; break-inside: avoid; }
+.regelkasten.eins { grid-template-columns: 1fr; }
+.merke { background: var(--regel-zart); border-radius: 4mm; padding: 5mm 6mm; position: relative; }
+.merke h4 { font-family: 'Lexend'; font-weight: 800; font-size: 13.5pt; color: #8a5d00; margin: 0 0 2.5mm; display: flex; align-items: center; gap: 2mm; }
+.merke h4 svg { width: 5mm; height: 5mm; color: var(--regel); }
+.merke ul { margin: 0; padding-left: 5mm; }
+.merke li { margin: 1.2mm 0; font-size: 12.4pt; }
+.merke.achtung { background: #fdecec; } .merke.achtung h4 { color: #a3261f; } .merke.achtung h4 svg { color: #d0312d; }
+.merke.tipp { background: var(--schreiben-zart); } .merke.tipp h4 { color: #1f6a39; } .merke.tipp h4 svg { color: var(--schreiben); }
+.endung { color: var(--f); font-weight: 700; background: linear-gradient(transparent 62%, var(--f-zart) 62%); }
+.markiert { background: linear-gradient(transparent 55%, #ffe58a 55%); padding: 0 0.4mm; }
+table.formen { border-collapse: separate; border-spacing: 0; width: 100%; font-size: 12.4pt; margin-top: 1mm; }
+table.formen th { font-family: 'Lexend'; font-weight: 700; font-size: 10pt; text-align: left; color: #8a5d00; padding: 1.5mm 2.5mm; border-bottom: 0.4mm solid #ecd9a8; }
+table.formen td { padding: 1.6mm 2.5mm; border-bottom: 0.25mm solid #f1e4c2; }
+table.formen tr:last-child td { border-bottom: 0; }
+
+/* ---------- Aufgaben ---------- */
+.aufgabe { margin: 0 0 6mm; break-inside: avoid; }
+.aufgabe.lang { break-inside: auto; }
+.aufgabe .kopf { display: flex; align-items: flex-start; gap: 3mm; margin-bottom: 3mm; padding-top: 0.5mm; }
+.aufgabe .kopf .auftrag { padding-top: 0.6mm; }
+.aufgabe .kopf .nr { flex: none; width: 8mm; height: 8mm; border-radius: 50%; background: var(--farbe, var(--f)); color: #fff; font-family: 'Lexend'; font-weight: 700; font-size: 11.5pt; display: flex; align-items: center; justify-content: center; }
+.aufgabe .kopf .auftrag { font-family: 'Atkinson'; font-weight: 700; font-size: 13pt; line-height: 1.35; }
+.aufgabe .kopf .stufen { margin-left: auto; padding-top: 1.5mm; }
+.aufgabe .kopf .stufen i { border-color: var(--farbe, var(--f)); } .aufgabe .kopf .stufen i.an { background: var(--farbe, var(--f)); }
+.aufgabe .hilfe { font-size: 10.6pt; color: var(--leise); margin: -1.5mm 0 3mm 11mm; font-style: italic; }
+.aufgabe .koerper { margin-left: 11mm; }
+.in-lesen { --farbe: var(--lesen); } .in-hoeren { --farbe: var(--hoeren); } .in-schreiben { --farbe: var(--schreiben); } .in-sprechen { --farbe: var(--sprechen); }
+
+.wortspeicher { display: flex; flex-wrap: wrap; gap: 2mm; padding: 3mm 3.5mm; border: 0.35mm dashed var(--linie); border-radius: 3mm; margin-bottom: 3.5mm; }
+.wortspeicher span { background: var(--flaeche); border-radius: 1.6mm; padding: 0.6mm 2.6mm; font-size: 12pt; }
+ol.saetze { list-style: none; margin: 0; padding: 0; counter-reset: s; }
+ol.saetze > li { counter-increment: s; position: relative; padding-left: 7mm; line-height: 1.5; margin-bottom: 3.6mm; font-size: 13pt; }
+ol.saetze > li::before { content: counter(s, lower-alpha) ')'; position: absolute; left: 0; color: var(--leise); font-size: 11pt; top: 0.4mm; }
+.luecke { display: inline-block; min-width: 26mm; border-bottom: 0.35mm solid var(--tinte); height: 1.25em; vertical-align: -0.28em; text-align: center; position: relative; padding: 0 1.5mm; }
+.luecke .l { visibility: hidden; font-family: 'Hand'; color: var(--loesung); font-size: 14pt; line-height: 1.25em; }
+.loesungen .luecke .l { visibility: visible; }
+
+table.raster { border-collapse: separate; border-spacing: 0; width: 100%; font-size: 12.4pt; border: 0.35mm solid var(--rahmen); border-radius: 3mm; overflow: hidden; }
+table.raster th { background: var(--flaeche); font-family: 'Lexend'; font-weight: 600; font-size: 10.2pt; text-align: left; padding: 2.2mm 3mm; border-bottom: 0.35mm solid var(--rahmen); }
+table.raster td { padding: 0 3mm; height: 11mm; border-bottom: 0.3mm solid var(--rahmen); border-right: 0.3mm solid var(--rahmen); vertical-align: middle; }
+table.raster td:last-child, table.raster th:last-child { border-right: 0; }
+table.raster tr:last-child td { border-bottom: 0; }
+table.raster td.vorgabe { color: var(--tinte); }
+table.raster td .l { font-family: 'Hand'; color: var(--loesung); font-size: 14pt; visibility: hidden; }
+.loesungen table.raster td .l { visibility: visible; }
+table.raster.rf td.k { width: 18mm; text-align: center; }
+.kaestchen { display: inline-block; width: 5.4mm; height: 5.4mm; border: 0.4mm solid var(--tinte); border-radius: 1.2mm; vertical-align: middle; position: relative; }
+.loesungen .kaestchen.x::after { content: '✗'; position: absolute; left: 0.5mm; top: -2.2mm; font-family: 'Hand'; color: var(--loesung); font-size: 15pt; }
+
+.mc { display: grid; gap: 3.2mm; }
+.mc .frage { font-size: 12.8pt; }
+.mc .frage > div:first-child { margin-bottom: 1.2mm; }
+.mc .optionen { display: flex; flex-wrap: wrap; gap: 2mm 7mm; }
+.mc .optionen span { display: inline-flex; align-items: center; gap: 2mm; font-size: 12.6pt; }
+
+.zuordnen { display: grid; grid-template-columns: 1fr 14mm 1fr; gap: 2.4mm 2mm; align-items: stretch; }
+.zuordnen .a, .zuordnen .b { border: 0.35mm solid var(--rahmen); border-radius: 2.5mm; padding: 2mm 3mm; font-size: 12.4pt; display: flex; align-items: center; gap: 2.5mm; min-height: 10mm; }
+.zuordnen .a .zz, .zuordnen .b .zz { font-family: 'Lexend'; font-weight: 700; color: var(--farbe, var(--f)); font-size: 10.5pt; flex: none; }
+.zuordnen .feld { border: 0.35mm solid var(--tinte); border-radius: 2mm; width: 11mm; height: 9mm; align-self: center; justify-self: center; display: flex; align-items: center; justify-content: center; }
+.zuordnen .feld .l { font-family: 'Hand'; color: var(--loesung); font-size: 15pt; visibility: hidden; }
+.loesungen .zuordnen .feld .l { visibility: visible; }
+
+.linien { margin-top: 1mm; }
+.linien .zeile { height: var(--zeile); border-bottom: 0.3mm solid var(--linie); position: relative; }
+.linien .zeile .anfang { position: absolute; left: 0; bottom: 1.3mm; font-size: 12.6pt; color: var(--tinte); }
+.linien .zeile .l { position: absolute; left: 0; bottom: 1.1mm; font-family: 'Hand'; color: var(--loesung); font-size: 14pt; visibility: hidden; white-space: nowrap; }
+.linien .zeile .anfang + .l { left: auto; position: absolute; }
+.loesungen .linien .zeile .l { visibility: visible; }
+.frage-block { margin-bottom: 3mm; font-size: 12.8pt; }
+.frage-block .f { margin-bottom: 0.4mm; }
+
+.rahmen-schreiben { border: 0.4mm solid var(--schreiben); border-radius: 4mm; padding: 4mm 6mm 2mm; background: #fff; }
+.steckbrief { display: grid; grid-template-columns: 42mm 1fr; gap: 6mm; border: 0.4mm solid var(--schreiben); border-radius: 4mm; padding: 5mm 6mm; }
+.steckbrief .foto { border: 0.35mm dashed var(--linie); border-radius: 3mm; height: 62mm; display: flex; align-items: center; justify-content: center; text-align: center; color: var(--sehr-leise); font-size: 10pt; padding: 3mm; }
+.steckbrief .felder .feld { display: grid; grid-template-columns: 34mm 1fr; align-items: end; height: 11.5mm; border-bottom: 0.3mm solid var(--linie); font-size: 12.6pt; color: var(--leise); padding-bottom: 1mm; }
+.anfaenge { display: flex; flex-wrap: wrap; gap: 2mm; margin-bottom: 2mm; }
+.anfaenge span { background: var(--schreiben-zart); color: #1f6a39; border-radius: 1.6mm; padding: 0.6mm 2.6mm; font-size: 11.6pt; }
+
+.sprechkarte { display: grid; grid-template-columns: 1fr 1fr; gap: 4mm; }
+.sprechkarte .karte { border-radius: 3.5mm; background: var(--sprechen-zart); padding: 4mm 5mm; font-size: 12.2pt; }
+.sprechkarte .karte b { color: var(--sprechen); font-family: 'Lexend'; display: block; margin-bottom: 1mm; }
+
+.check { border: 0.35mm solid var(--rahmen); border-radius: 4mm; overflow: hidden; break-inside: avoid; }
+.check .z { display: grid; grid-template-columns: 1fr 15mm 15mm 15mm; align-items: center; border-bottom: 0.3mm solid var(--rahmen); }
+.check .z:last-child { border-bottom: 0; }
+.check .z > div { padding: 2.6mm 4mm; font-size: 12.2pt; }
+.check .z.kopf > div { font-family: 'Lexend'; font-weight: 600; font-size: 9pt; color: var(--leise); background: var(--flaeche); text-align: center; padding: 2mm 1mm; }
+.check .z .s { text-align: center; padding: 1mm; }
+.check .z .s svg { width: 7mm; height: 7mm; }
+
+.dialog { display: grid; grid-template-columns: max-content 1fr; gap: 1.6mm 4mm; font-size: 12.4pt; }
+.dialog .wer { font-family: 'Lexend'; font-weight: 700; color: var(--hoeren); }
+
+/* Lösungsheft */
+.nur-loesung { display: none; }
+.loesungen .nur-loesung { display: block; }
+.loesungen .nur-heft { display: none; }
+.transkript { border: 0.35mm solid var(--hoeren); border-radius: 4mm; padding: 4mm 5mm; margin: 2mm 0 5mm; break-inside: avoid; }
+.transkript h5 { font-family: 'Lexend'; font-size: 10pt; letter-spacing: 0.1em; text-transform: uppercase; color: var(--hoeren); margin: 0 0 2mm; }
+.loesungs-band { background: var(--loesung); color: #fff; font-family: 'Lexend'; font-weight: 700; font-size: 9pt; letter-spacing: 0.12em; text-transform: uppercase; padding: 1mm 3mm; border-radius: 1.5mm; display: inline-block; }
+
+/* Anhang */
+.anhang h2 { font-family: 'Lexend'; font-weight: 800; font-size: 24pt; margin: 0 0 4mm; }
+table.wortliste { width: 100%; border-collapse: collapse; font-size: 11.6pt; }
+table.wortliste td { padding: 1.7mm 2mm; border-bottom: 0.25mm solid var(--rahmen); vertical-align: top; }
+table.wortliste td.fr { color: var(--leise); font-style: italic; }
+table.wortliste tr.th td { font-family: 'Lexend'; font-weight: 700; color: var(--f); padding-top: 4mm; border-bottom: 0.4mm solid var(--f-mittel); }
+.zweispaltig { columns: 2; column-gap: 8mm; }
+.zweispaltig table { break-inside: auto; }
+.klein { font-size: 9.5pt; color: var(--leise); line-height: 1.4; }
