@@ -287,6 +287,9 @@ function lesenTeil(L: any, k: Kontext): string {
   } else if (r.art === 'theater') {
     // scène de théâtre : nom en capitales, didascalies en italique
     text = `<div class="theater">${r.personen ? `<p class="pers">${inl(r.personen)}</p>` : ''}${r.zeilen.map(([w, t, rg]: [string, string, string]) => w ? `<p><span class="wer">${esc(w)}</span>${rg ? `<i class="rg">(${inl(rg)})</i> ` : ''}${inl(t)}</p>` : `<p class="regie">${inl(t)}</p>`).join('')}</div>`
+  } else if (r.art === 'gedicht') {
+    // poème / chanson : strophes, refrain en retrait
+    text = `<div class="gedicht ${r.spalten ? 'zwei' : ''}">${r.autor ? `<p class="autor">${inl(r.autor)}</p>` : ''}${r.strophen.map((s: any) => { const z = Array.isArray(s) ? s : s.zeilen; return `<div class="strophe ${s.refrain ? 'refrain' : ''}">${s.refrain ? `<span class="rmark">Refrain</span>` : ''}${z.map((x: string) => `<p>${inl(x)}</p>`).join('')}</div>` }).join('')}</div>`
   } else if (r.art === 'dokumente') {
     text = `<div class="dokumente">${r.dokumente.map((d: any) => `<div class="dok ${d.stil || 'karte'}">${d.kopf ? `<div class="dk">${inl(d.kopf)}</div>` : ''}${d.text.map((z: string) => `<p>${inl(z)}</p>`).join('')}${d.gruss ? `<p class="gruss">${inl(d.gruss)}</p>` : ''}</div>`).join('')}</div>`
   } else {
@@ -307,6 +310,7 @@ function lesenSprechtext(r: any, sp = 'de'): { wer: string; text: string }[] {
   else if (r.art === 'chat') for (const [wer, x] of r.nachrichten) t.push({ wer: r.stimmen?.[wer] || '', text: roh(x) })
   else if (r.art === 'bd') for (const c of r.cases) { if (c.erz) t.push({ wer: r.erzaehler || '', text: roh(c.erz) }); for (const [w, x] of c.blasen || []) t.push({ wer: r.stimmen?.[w] || '', text: roh(x) }) }
   else if (r.art === 'theater') for (const [w, x] of r.zeilen) { if (w) t.push({ wer: r.stimmen?.[w] || '', text: roh(x) }); else if (r.erzaehler) t.push({ wer: r.erzaehler, text: roh(x) }) }
+  else if (r.art === 'gedicht') for (const s of r.strophen) { const z: string[] = Array.isArray(s) ? s : s.zeilen; t.push({ wer: '', text: z.map((x) => roh(x).trim()).map((x) => (/[.!?,;:…»]$/.test(x) ? x : x + ',')).join(' ').replace(/,$/, '.') }) }
   else if (r.art === 'anleitung') { t.push({ wer: '', text: (r.materialSprech || (sp === 'fr' ? 'Il te faut : ' : 'Du brauchst: ')) + r.material.map(roh).join(', ') + '.' }); r.schritte.forEach((x: any, i: number) => t.push({ wer: '', text: `${sp === 'fr' ? 'Étape' : 'Schritt'} ${i + 1}: ${roh(x.text)}` })); for (const p of r.danach || []) t.push({ wer: '', text: roh(p) }) }
   else if (r.art === 'dokumente') for (const d of r.dokumente) t.push({ wer: d.stimme || '', text: [d.kopf, ...d.text, d.gruss].filter(Boolean).map((z: string) => roh(z).trim()).map((z: string) => (/[.!?:,…“”"]$/.test(z) ? z : z + '.')).join(' ') })
   else for (const p of r.absaetze) t.push({ wer: '', text: roh(p) })

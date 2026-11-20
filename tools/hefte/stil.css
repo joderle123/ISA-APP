@@ -365,3 +365,12 @@ s.falsch { color: #b4232a; text-decoration-thickness: 0.35mm; }
 .theater .wer { font-family: 'Lexend'; font-weight: 800; font-size: 10.5pt; letter-spacing: 0.06em; text-transform: uppercase; color: var(--lesen); margin-right: 2mm; }
 .theater .rg, .theater .regie { font-style: italic; color: #5a6376; }
 .theater .regie { margin-left: 6mm; font-size: 11.5pt; }
+/* poème / chanson */
+.gedicht { margin-top: 1mm; }
+.gedicht.zwei { columns: 2; column-gap: 7mm; }
+.gedicht .autor { font-style: italic; color: var(--leise); margin: 0 0 2.5mm; column-span: all; }
+.gedicht .strophe { break-inside: avoid; margin-bottom: 4mm; }
+.gedicht .strophe p { margin: 0; font-size: 12.8pt; line-height: 1.5; }
+.gedicht .refrain { padding: 1mm 0 1mm 4mm; border-left: 1.2mm solid var(--f-mittel); background: var(--f-zart); border-radius: 0 2mm 2mm 0; }
+.gedicht .refrain p { font-style: italic; }
+.gedicht .rmark { display: block; font-family: Lexend; font-weight: 800; font-size: 8.5pt; letter-spacing: 0.08em; text-transform: uppercase; color: var(--f); margin-bottom: 0.6mm; }
