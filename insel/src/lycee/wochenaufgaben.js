@@ -13,15 +13,18 @@ export const AUFGABEN = [
   { id: 'foto', sy: '📸', t: (n) => n + ' Foto' + (n > 1 ? 's' : '') + ' machen (C)', zahl: (S) => m(S).fotos || 0, n: [1, 3] },
   { id: 'elfmeter', sy: '🥅', t: (n) => n + '× Elfmeter schießen', zahl: (S) => m(S).elfmeterSpiele || 0, n: [1] },
   { id: 'volley', sy: '🏐', t: (n) => n + '× Volleyball spielen', zahl: (S) => m(S).volleySpiele || 0, n: [1] },
+  { id: 'arcade', sy: '🌵', t: (n) => n + '× Kevin rennt spielen (Jugendhaus)', zahl: (S) => m(S).kevin || 0, n: [1, 2] },
   { id: 'enten', sy: '🦆', t: () => 'Die Enten im Park beobachten', zahl: (S) => m(S).enten || 0, n: [1] },
+  { id: 'laub', sy: '🍂', t: (n) => n + '× in einen Laubhaufen rennen (Schulhof)', zahl: (S) => m(S).laub || 0, n: [3, 5], nurKap: [3, 4] },
+  { id: 'eis', sy: '⛸️', t: (n) => n + ' m auf der Eisbahn rutschen (Marktplatz)', zahl: (S) => Math.floor(m(S).eisMeter || 0), n: [100, 150], nurKap: [5, 6] },
   { id: 'tier', sy: '🐾', t: (n) => 'Dein Haustier ' + n + '× streicheln', zahl: (S) => m(S).tierStreicheln || 0, n: [2, 3], braucht: (S) => !!(S.garderobe && S.garderobe.an && S.garderobe.an.tier) },
 ];
 
 // Drei Aufgaben für ein Kapitel: Lernen + zwei weitere (fest je Kapitel, damit eine Klasse dieselben hat)
 export function aufgabenFuer(kap, S) {
   const r = (i) => { const x = Math.sin(kap * 97.3 + i * 13.7) * 43758.5453; return x - Math.floor(x); };
-  const pool = AUFGABEN.filter((a) => !a.immer && (!a.braucht || a.braucht(S)));
-  const wahl = [];
+  const pool = AUFGABEN.filter((a) => !a.immer && !a.nurKap && (!a.braucht || a.braucht(S)));
+  const wahl = AUFGABEN.filter((a) => a.nurKap && a.nurKap.includes(kap)).slice(0, 1);   // Jahreszeit-Aufgabe (z. B. Eisbahn im Winter) kommt sicher dran
   for (let i = 0; wahl.length < 2 && i < 40; i++) { const a = pool[Math.floor(r(i) * pool.length)]; if (!wahl.includes(a)) wahl.push(a); }
   return [AUFGABEN[0], ...wahl].map((a, i) => ({ id: a.id, n: a.n[Math.floor(r(i + 50) * a.n.length)] }));
 }

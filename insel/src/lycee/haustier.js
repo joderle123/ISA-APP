@@ -46,8 +46,10 @@ export function baueTier(art, farbe = '#9a9a9e') {
   return { g, kopf, schwanz, hoehe };
 }
 
-export function createHaustier({ scene, steuerung }) {
-  let tier = null, art = null, uhr = 0, yaw = 0, schnuffel = 0, freude = 0;
+// Kleine Tiere klettern (oder fliegen) auf die Schulter, wenn man kurz stillsteht – beim Losgehen springen sie wieder runter
+const SCHULTER = ['ratte', 'hamster', 'wellensittich'];
+export function createHaustier({ scene, steuerung, schulter = null }) {
+  let tier = null, art = null, uhr = 0, yaw = 0, schnuffel = 0, freude = 0, still = 0, hoch = 0;
   const pos = new THREE.Vector3(), soll = new THREE.Vector3();
   function setArt(neu, farbe) {
     if (neu === art) return;
@@ -77,6 +79,19 @@ export function createHaustier({ scene, steuerung }) {
     schnuffel -= dt; if (schnuffel < -2.5 - Math.random() * 3) schnuffel = 0.6;
     tier.kopf.rotation.x = v < 0.3 && schnuffel > 0 ? Math.sin(schnuffel * 30) * 0.12 : 0;
     if (tier.schwanz) tier.schwanz.rotation.y = Math.sin(uhr * (v > 0.3 ? 10 : 3)) * 0.25;
+    // Schulter: nach 3,5 s Stillstand hoch (Bogen), beim Losgehen schnell wieder runter
+    const kann = SCHULTER.includes(art) && schulter && !steuerung.sitzt && !steuerung.brett && !steuerung.eis && !steuerung.kameraAus;
+    still = kann && (steuerung.tempo || 0) < 0.08 ? still + dt : 0;
+    hoch += ((still > 3.5 ? 1 : 0) - hoch) * Math.min(1, dt * (still > 3.5 ? 1.8 : 7));
+    if (hoch > 0.01 && kann) {
+      const sp = schulter();
+      if (sp) {
+        const k = hoch, bogen = Math.sin(k * Math.PI) * (art === 'wellensittich' ? 0.6 : 0.3);
+        tier.g.position.set(pos.x + (sp.x - pos.x) * k, (sp.y + 0.01) * k + bogen, pos.z + (sp.z - pos.z) * k);
+        tier.g.rotation.y = k > 0.5 ? y0 : yaw;
+        if (k > 0.97) tier.kopf.rotation.y = Math.sin(uhr * 0.9) * 0.5;   // oben: schaut sich um
+      }
+    } else if (tier.kopf.rotation.y) tier.kopf.rotation.y = 0;
   }
-  return { setArt, tick, freu: () => { freude = 0.9; }, get art() { return art; }, get pos() { return pos; } };
+  return { setArt, tick, get aufSchulter() { return hoch > 0.97; }, freu: () => { freude = 0.9; }, get art() { return art; }, get pos() { return pos; } };
 }

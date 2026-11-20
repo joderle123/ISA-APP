@@ -37,7 +37,7 @@ kbd { display: inline-block; min-width: 1.5em; padding: 0 .35em; margin-right: .
 .ly-a-dist { margin-left: 4px; padding: 1px 7px; border-radius: 99px; background: rgba(45, 61, 92, .08); font-size: 12.5px; font-weight: 800; color: var(--ink2); white-space: nowrap; }
 .ly-uhr { position: absolute; right: max(178px, calc(env(safe-area-inset-right) + 178px)); top: max(16px, env(safe-area-inset-top)); padding: 8px 13px; border-radius: 99px; background: var(--karte); box-shadow: var(--schatten); font-weight: 900; font-size: 16px; color: var(--blau); font-variant-numeric: tabular-nums; pointer-events: none; }
 .ly-knoepfe { position: absolute; right: max(14px, env(safe-area-inset-right)); top: max(12px, env(safe-area-inset-top)); display: flex; gap: 8px; }
-.ly-knoepfe button[data-k="handy"] { position: relative; }
+.ly-knoepfe button[data-k="handy"], .ly-knoepfe button[data-k="garderobe"] { position: relative; }
 .ly-badge { position: absolute; top: -5px; right: -5px; min-width: 20px; height: 20px; padding: 0 5px; border-radius: 10px; background: #e85d75; color: #fff; font: 700 12px/20px system-ui, sans-serif; font-style: normal; box-shadow: 0 0 0 2px #fff; }
 .ly-knoepfe button { width: 46px; height: 46px; border: 0; border-radius: 14px; background: var(--karte); box-shadow: var(--schatten); font-size: 22px; color: var(--blau); cursor: pointer; }
 .ly-raum { position: absolute; left: 50%; top: 18%; transform: translate(-50%, -8px); padding: 8px 22px; border-radius: 99px; background: rgba(31, 42, 61, .78); color: #fff; font-size: 20px; font-weight: 900; letter-spacing: .02em; opacity: 0; transition: opacity .4s, transform .4s; pointer-events: none; white-space: nowrap; }
@@ -1117,3 +1117,27 @@ kbd { display: inline-block; min-width: 1.5em; padding: 0 .35em; margin-right: .
   .ly-ebene[data-art="garderobe"] { place-items: end center; background: linear-gradient(0deg, rgba(31, 42, 61, .5), rgba(31, 42, 61, 0) 75%); }
   .ly-ebene[data-art="garderobe"] .ly-karte { width: 100%; max-height: 58vh; }
 }
+
+/* Belohnungs-Karte (ui.belohnung) */
+.ly-beloh { position: absolute; left: 50%; top: 84px; transform: translateX(-50%); z-index: 30; pointer-events: auto; display: grid; place-items: center; animation: ly-beloh-rein .55s cubic-bezier(.2, 1.4, .4, 1) both; }
+.ly-beloh.weg { animation: ly-beloh-raus .45s ease-in both; }
+.ly-beloh-strahlen { position: absolute; width: 320px; height: 320px; border-radius: 50%; pointer-events: none; background: repeating-conic-gradient(rgba(255, 209, 102, .5) 0 9deg, rgba(255, 209, 102, 0) 9deg 22deg); -webkit-mask: radial-gradient(circle, #000 28%, transparent 70%); mask: radial-gradient(circle, #000 28%, transparent 70%); animation: ly-beloh-dreh 7s linear infinite; }
+.ly-beloh-karte { position: relative; min-width: 230px; max-width: min(320px, 86vw); padding: 14px 18px 12px; border-radius: 20px; background: linear-gradient(160deg, #2b2f4a, #4b2f8a); color: #fff; text-align: center; box-shadow: 0 0 0 3px #ffd166, 0 14px 40px rgba(0, 0, 0, .45); }
+.ly-beloh-karte small { display: block; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: #ffd166; font-weight: 800; }
+.ly-beloh-sy { font-size: 56px; line-height: 1.1; margin: 6px 0 2px; animation: ly-beloh-hops 1.2s ease-in-out .5s 2; }
+.ly-beloh-karte b { display: block; font-size: 18px; line-height: 1.25; }
+.ly-beloh-kn { display: flex; gap: 8px; justify-content: center; margin-top: 10px; }
+.ly-beloh-kn button { font: 700 14px system-ui, sans-serif; padding: 9px 15px; border-radius: 999px; border: 0; cursor: pointer; min-height: 40px; }
+.ly-beloh-an { background: #ffd166; color: #2b2f4a; }
+.ly-beloh-zu { background: rgba(255, 255, 255, .18); color: #fff; }
+@keyframes ly-beloh-rein { from { transform: translateX(-50%) scale(.3); opacity: 0; } to { transform: translateX(-50%) scale(1); opacity: 1; } }
+@keyframes ly-beloh-raus { to { transform: translateX(-50%) translateY(-30px) scale(.6); opacity: 0; } }
+@keyframes ly-beloh-hops { 50% { transform: translateY(-8px) scale(1.12); } }
+@keyframes ly-beloh-dreh { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .ly-beloh, .ly-beloh.weg, .ly-beloh-sy, .ly-beloh-strahlen { animation: none; } }
+/* sechs Knöpfe oben rechts: auf schmalen Handys etwas kleiner, damit die Auftragsbox Platz hat */
+@media (max-width: 520px) { .ly-knoepfe { gap: 6px; } .ly-knoepfe button { width: 40px; height: 40px; font-size: 19px; border-radius: 12px; } }
+/* Schneemann bauen: Hinweis oben in der Mitte */
+.ly-schnee-hud { position: fixed; left: 50%; top: max(70px, env(safe-area-inset-top)); transform: translateX(-50%); z-index: 20; max-width: min(420px, 90vw); padding: 10px 16px; border-radius: 16px; background: rgba(255, 255, 255, .94); box-shadow: 0 6px 20px rgba(0, 0, 0, .18); font: 600 14px system-ui, sans-serif; color: #2b3a55; text-align: center; pointer-events: none; }
+.ly-schnee-hud b { display: block; color: #2f6db0; font-size: 15px; }
+.ly-schnee-hud kbd { font: 700 12px system-ui; padding: 1px 6px; border-radius: 6px; background: #eef2f7; border: 1px solid #c9d2de; }

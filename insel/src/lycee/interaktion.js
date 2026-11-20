@@ -48,7 +48,7 @@ const ROBOTER = [
 ];
 
 export const KABEL = [['cdi', 14, -62.4], ['kantine', 18.6, -8.2], ['gang', -15.5, -15.8], ['innenhof', -17.2, -44.9], ['skate', -36.4, 6.4]];
-export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton, blattWahl, freiwurf, skate, pausenFussball = null, volley = null, volleyAktiv = () => false, elfmeter = null, elfmeterAktiv = () => false, tt3d = null, kicker = null, billard = null, tanzen = null, dosen = null, dosenAktiv = () => false, botengang = null, spindAuf = null, partner = () => null, bekannte = () => [], freund = () => {}, onKabel = null }) {
+export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton, blattWahl, freiwurf, skate, pausenFussball = null, volley = null, volleyAktiv = () => false, elfmeter = null, elfmeterAktiv = () => false, tt3d = null, kicker = null, billard = null, arcade = null, tanzen = null, dosen = null, dosenAktiv = () => false, schneemann = null, winter = () => false, farbeOben = () => null, botengang = null, spindAuf = null, partner = () => null, bekannte = () => [], freund = () => {}, onKabel = null }) {
   const tt = welt.orte.tischtennis;
   const liste = [];
   let botenFrage = 0;   // Botengang: zweimal drücken = abbrechen
@@ -87,12 +87,18 @@ export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton
   dazu(-40, 99.9, 1.4, 'Am Kiosk etwas holen', 'kiosk', { prio: 1 });   // Park am Weiher
   dazu(20.5, 116.2, 1.7, 'Tischkicker spielen', 'kicker', { prio: 1 });   // Jugendhaus (rund um den Tisch)
   dazu(20.5, 118.2, 1.4, 'Tischkicker spielen', 'kicker', { prio: 1 });
+  if (arcade) dazu(21.6, 112.6, 1.1, 'Spielautomat: Kevin rennt', 'arcade', { prio: 1 });
   if (billard) { dazu(24.5, 115.2, 1.3, 'Billard spielen', 'billard', { prio: 1 }); dazu(27.5, 115.2, 1.3, 'Billard spielen', 'billard', { prio: 1 }); }
   dazu(25.5, 112.9, 1.2, 'Musik wechseln', 'jukebox', { prio: 1 });
   dazu(9.4, 125.0, 1.4, 'Tee holen', 'tee', { prio: 1 });
   if (tanzen) dazu(23.4, 123.4, 1.5, 'Tanzfläche: im Takt tanzen', 'tanzen', { prio: 1 });
   if (dosen) dazu(70, 117.4, 1.4, 'Dosenwerfen (3 Bälle)', 'dosen', { prio: 1 });   // Marktplatz
   for (const [x, z] of [[-55, 97.0], [-55, 113.0], [-65, 105]]) dazu(x, z, 1.6, 'Enten beobachten', 'enten', { prio: 0 });
+  // Winter: Schneemann auf dem Schulhof (schneemann.js) – starten am Stock, beim Bauen dort absetzen
+  if (schneemann) {
+    dazu(12.4, 20.6, 1.9, 'Schneemann bauen', 'schneemann', { prio: 1, wenn: () => winter() && !schneemann.fertig && !schneemann.aktiv() });
+    dazu(12.4, 20.6, 2.2, 'Kugel absetzen', 'schneeSetzen', { prio: 2, wenn: () => schneemann.aktiv() });
+  }
   dazu(-19.3, -11.7, 0.8, 'Ein Bonbon nehmen', 'bonbon', { prio: 1 });   // Sekretariat: Glas auf der Theke
   dazu(45, -1.8, 1.3, 'In die Fundkiste schauen', 'fundkiste', { prio: 1 });
   dazu(-24.5, 42.6, 1.2, 'Kritzeleien lesen', 'kritzelei', { prio: 0, wo: 'bus' });
@@ -120,6 +126,7 @@ export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton
     let best = null, bd = Infinity;
     for (const i of liste) {
       if (i.tu === 'sitzen' && steuerung.tempo > 1.2) continue;
+      if (i.wenn && !i.wenn()) continue;   // nur zu bestimmten Zeiten (z. B. Schneemann im Winter)
       if (i.tu === 'kabel' && ((zustand().merke || {}).kabel || []).includes(i.kabel)) continue;   // beim Laufen kein Flackern von „Hinsetzen“ an jedem Stuhl
       const d = Math.hypot(i.x - p.x, i.z - p.z);
       if (d > i.r) continue;
@@ -264,6 +271,12 @@ export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton
         ui.toast('<b>🏐 ' + r.punkte + ' Punkte</b><span>Längster Ballwechsel: ' + r.best + (neu ? ' – neuer Rekord!' : ' · Rekord ' + (s.merke.volleyRekord || 0)) + '</span>');
         return;
       }
+      case 'schneemann': {
+        const r = await schneemann.start({ farbe: farbeOben() });
+        if (r.fertig && !r.schon) { s.merke.schneemann = (s.merke.schneemann || 0) + 1; s.merke.schneemannBau = schneemann.daten(); sichern(); ui.toast('<b>⛄ Fertig!</b><span>Dein Schneemann steht auf dem Hof – mit Schal in deiner Farbe.</span>', 'ly-t-ent'); }
+        return;
+      }
+      case 'schneeSetzen': schneemann.absetzen(); return;
       case 'dosen': {   // Marktplatz: sechs Dosen, drei Bälle; alle sechs = Stoffente (einmal) und Rekord
         if (dosenAktiv()) return;
         const r = await dosen({ rekord: s.merke.dosenRekord || 0 });
@@ -279,6 +292,12 @@ export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton
         s.merke.tanz = (s.merke.tanz || 0) + 1; s.merke.tanzSterne = Math.max(s.merke.tanzSterne || 0, r.sterne || 0); sichern();
         const KIM = r.sterne >= 3 ? '„Wow. Das war Bühnen-Niveau!“' : r.sterne === 2 ? '„Du hast den Takt. Echt jetzt.“' : r.sterne === 1 ? '„Tanzen heißt Spaß haben. Hat geklappt.“' : '„Mutig, dass du es probiert hast!“';
         ui.toast('<b>💃 ' + r.punkte + ' Punkte' + (neu && alt ? ' – neuer Rekord!' : '') + '</b><span>Kim: ' + KIM + '</span>', r.sterne >= 3 ? 'ly-t-ent' : undefined);
+        return;
+      }
+      case 'arcade': {   // Jugendhaus: Spielautomat „Kevin rennt“ – Highscore
+        const r = await arcade({ rekord: s.merke.kevinRekord || 0 }); if (!r) return;
+        s.merke.kevin = (s.merke.kevin || 0) + 1; const neu = r.punkte > (s.merke.kevinRekord || 0); if (neu) s.merke.kevinRekord = r.punkte; sichern();
+        ui.toast('<b>🌵 Kevin rennt: ' + r.punkte + ' Punkte</b><span>' + (neu ? 'Neuer Rekord! Kim schreibt ihn an die Tafel.' : 'Rekord: ' + (s.merke.kevinRekord || 0)) + '</span>', neu ? 'ly-t-ent' : undefined);
         return;
       }
       case 'billard': {   // Jugendhaus: Billard gegen die beste Freundin / den besten Freund (sonst Kim)

@@ -10,7 +10,7 @@ export function createSteuerung({ camera, input, welt, figur = null }) {
   const pos = new THREE.Vector3(0, 0, 30);
   const s = {
     pos, yaw: Math.PI, tempo: 0, frei: true, laeuft: false,
-    figur, hindernisse: [],                 // Personen: { x, z, r }
+    figur, hindernisse: [], extraBoxen: [],                 // Personen: { x, z, r }
     cam: { yaw: Math.PI, pitch: 0.32, dist: 5.2, ziel: 5.2, minPitch: -0.15, maxPitch: 1.1 },
     fokus: null, gegenSchuss: false,      // gegenSchuss: Kamera über die Schulter des Gegenübers auf dich (Schuss/Gegenschuss)
                                 // Gesprächs-Blick: { x, y, z } oder null
@@ -32,7 +32,7 @@ export function createSteuerung({ camera, input, welt, figur = null }) {
   };
   function loese(x, z, h = 0) {
     for (let iter = 0; iter < 3; iter++) {
-      for (const k of nahe(x, z)) {
+      for (const k of s.extraBoxen.length ? [...nahe(x, z), ...s.extraBoxen] : nahe(x, z)) {   // extraBoxen: zeitweise Wände (z. B. Bande der Eisbahn)
         if (h > 0.05 && k.y1 <= h + 0.05) continue;   // im Sprung (Skateboard) darüber hinweg
         const cx = Math.max(k.x0, Math.min(x, k.x1)), cz = Math.max(k.z0, Math.min(z, k.z1));
         const dx = x - cx, dz = z - cz, d2 = dx * dx + dz * dz;
@@ -263,6 +263,7 @@ export function createSteuerung({ camera, input, welt, figur = null }) {
     camera.lookAt(_blick);
   }
 
+  const eisV = { x: 0, z: 0 };
   s.update = (dt) => {
     const c = s.cam, st = input.state;
     // Blick drehen
@@ -283,7 +284,18 @@ export function createSteuerung({ camera, input, welt, figur = null }) {
       let d = ziel - s.yaw; d = Math.atan2(Math.sin(d), Math.cos(d));
       s.yaw += d * Math.min(1, dt * 12);
     }
-    if (s.tempo > 0.01) {
+    // Eisbahn (s.glatt): Schwung bleibt, Lenken und Bremsen dauern – man rutscht
+    const aufEis = !!(s.glatt && s.glatt(pos.x, pos.z) && !s.sitzt);
+    if (aufEis) {
+      if (!s.eis) { eisV.x = Math.sin(s.yaw) * s.tempo; eisV.z = Math.cos(s.yaw) * s.tempo; }   // Schwung vom Laufen mitnehmen
+      const zx = staerke > 0.05 ? Math.sin(s.yaw) * will * 1.15 : 0, zz = staerke > 0.05 ? Math.cos(s.yaw) * will * 1.15 : 0;
+      const reib = staerke > 0.05 ? 0.9 : 0.4;   // ohne Drücken gleitet man lange aus
+      eisV.x += (zx - eisV.x) * Math.min(1, dt * reib); eisV.z += (zz - eisV.z) * Math.min(1, dt * reib);
+      const wx = pos.x + eisV.x * dt, wz = pos.z + eisV.z * dt, [x, z] = loese(wx, wz);
+      if (Math.abs(x - wx) > 1e-4) eisV.x *= -0.4; if (Math.abs(z - wz) > 1e-4) eisV.z *= -0.4;   // Bande: abprallen
+      pos.x = x; pos.z = z; s.tempo = Math.hypot(eisV.x, eisV.z); s.eis = true;
+    } else { eisV.x = eisV.z = 0; s.eis = false; }
+    if (s.tempo > 0.01 && !aufEis) {
       const nx = pos.x + Math.sin(s.yaw) * s.tempo * dt, nz = pos.z + Math.cos(s.yaw) * s.tempo * dt;
       const [x, z] = loese(nx, nz);
       const weg = Math.hypot(x - pos.x, z - pos.z); schrittWeg += weg; pos.x = x; pos.z = z;
@@ -311,7 +323,7 @@ export function createSteuerung({ camera, input, welt, figur = null }) {
       idleZeit = (s.tempo < 0.3 && !s.sitzt) ? idleZeit + dt : 0;
       const zappel = idleZeit > 8 && ((idleZeit - 8) % 14) < 2.8;   // im Stand: ab und zu umschauen
       const emo = s.emote && performance.now() < s.emoteBis;   // emoteVor: auch im Laufen (Schuss, Jubel)
-      const lauf = s.sitzt ? 'Idle' : emo && s.emoteVor ? s.emote : s.tempo > 2.9 ? 'Run' : s.tempo > 0.3 ? 'Walk' : emo ? s.emote : zappel ? 'Idle_Neutral' : 'Idle';
+      const lauf = s.sitzt ? 'Idle' : emo && s.emoteVor ? s.emote : s.eis && s.tempo > 0.4 ? (staerke > 0.05 ? 'Skaten' : 'Idle') : s.tempo > 2.9 ? 'Run' : s.tempo > 0.3 ? 'Walk' : emo ? s.emote : zappel ? 'Idle_Neutral' : 'Idle';
       s.figur.spiele(lauf, { tempo: lauf === 'Walk' ? Math.max(0.7, Math.min(1.3, s.tempo / GEHEN)) : lauf === 'Run' ? Math.max(0.8, Math.min(1.15, s.tempo / RENNEN)) : 1 });
     }
     s.laeuft = s.tempo > 0.3;

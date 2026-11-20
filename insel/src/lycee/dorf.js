@@ -275,6 +275,14 @@ export function baueDorf({ B, C, schild, schilder, P = null, R = null }) {
       const t = schild(txt, 1.8, 0.5, { bg, fg: '#2b3a55', rand: '#2b3a55', schrift: 'bold 54px system-ui' }); t.position.set(x, 2.75, Z0 + 0.17); schilders(t); }
     // Tischkicker: der Tisch selbst kommt aus kicker3d.js (Stangen, Figuren, Feld) – hier nur der feste Unterbau (nicht hindurchlaufen)
     box(19.86, 21.14, 0, 0.74, 116.84, 117.56, hex('#4a3122'), { stoss: true });
+    // Spielautomat „Kevin rennt“ (arcade.js) an der Nordwand: Gehäuse, Bildschirm, Knöpfe, Schild
+    { const AX = 21.6, AZ = 111.75;
+      box(AX - 0.38, AX + 0.38, 0, 1.75, AZ - 0.3, AZ + 0.3, hex('#2b2f4a'), { stoss: true });
+      box(AX - 0.4, AX + 0.4, 1.75, 1.95, AZ - 0.32, AZ + 0.32, hex('#ff7ac8'));
+      box(AX - 0.3, AX + 0.3, 1.05, 1.55, AZ + 0.3, AZ + 0.31, hex('#7CFC9A'), { art: 'licht' });
+      box(AX - 0.36, AX + 0.36, 0.9, 0.98, AZ + 0.3, AZ + 0.46, hex('#3a3f4b'));
+      for (const [dx, c] of [[-0.18, '#e85d75'], [0, '#ffd166'], [0.18, '#5ec8ff']]) box(AX + dx - 0.035, AX + dx + 0.035, 0.98, 1.0, AZ + 0.36, AZ + 0.43, hex(c));
+      const t = schild('KEVIN RENNT', 0.74, 0.16, { bg: '#2b2f4a', fg: '#ffd166', rand: '#ff7ac8', schrift: 'bold 72px system-ui' }); t.position.set(AX, 1.85, AZ + 0.33); schilders(t); }
     // Billardtisch: Tisch und Kugeln kommen aus billard.js – hier nur der feste Unterbau
     box(25.1, 26.9, 0, 0.6, 114.75, 115.65, hex('#3a2418'), { stoss: true });
     // Theke mit Teeküche

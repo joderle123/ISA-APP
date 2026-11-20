@@ -58,6 +58,17 @@ export function createKicker3d({ scene, camera, steuerung, ui, rr = null, ton = 
     }
     return { u, f, n, a, g, dreh, figuren, weg: stangenWeg(n, a), off: 0, schwung: 0 };
   });
+  // ---------- Zählwerk: Perlen auf einer Stange an jeder Stirnseite (wie an echten Tischen) ----------
+  const perlen = { b: [], r: [] };
+  for (const [f, s] of [['b', 1], ['r', -1]]) {
+    const dr = new THREE.Mesh(new THREE.CylinderGeometry(0.004, 0.004, 0.36, 6), chromEinfach()); dr.rotation.x = Math.PI / 2; welt(s * (L / 2 + 0.02), T + HW + 0.05, 0, dr.position); root.add(dr);
+    for (let i = 0; i < 5; i++) { const p = new THREE.Mesh(new THREE.SphereGeometry(0.014, 10, 8), mat(f === 'b' ? '#2f6fd0' : '#e0384f')); root.add(p); perlen[f].push(p); }
+  }
+  function chromEinfach() { return new THREE.MeshStandardMaterial({ color: '#c0c6cf', metalness: 0.8, roughness: 0.3 }); }
+  const zaehlwerk = (ich, er) => {   // geschobene Perlen = Tore (links das eigene Zählwerk)
+    for (const [f, s, n] of [['b', 1, ich], ['r', -1, er]]) perlen[f].forEach((p, i) => welt(s * (L / 2 + 0.02), T + HW + 0.05, (i < n ? 0.14 - i * 0.03 : -0.14 + (4 - i) * 0.03) * s, p.position));
+  };
+  zaehlwerk(0, 0);
   // ---------- Ball und Schatten ----------
   const ball = new THREE.Mesh(new THREE.SphereGeometry(R, 18, 14), mat('#f7f4ea', { roughness: 0.35 })); ball.castShadow = true; root.add(ball);
   const schatten = new THREE.Mesh(new THREE.CircleGeometry(R * 1.1, 16), new THREE.MeshBasicMaterial({ color: '#000', transparent: true, opacity: 0.3, depthWrite: false }));
@@ -79,7 +90,7 @@ export function createKicker3d({ scene, camera, steuerung, ui, rr = null, ton = 
       let gf = null; try { gf = await holeFigur(gegnerId); } catch (e) { gf = null; }
       if (gf && lauf === L0) { scene.add(gf.group); welt(0, 0, B / 2 + 0.55, gf.group.position); gf.group.rotation.set(0, Math.PI, 0); gf.spiele && gf.spiele('Idle'); }
       L0.gf = gf;
-      einwurf(L0, Math.random() < 0.5 ? 1 : -1);
+      zaehlwerk(0, 0); einwurf(L0, Math.random() < 0.5 ? 1 : -1);
       const runter = (e) => {
         if (['ArrowUp', 'ArrowDown', 'KeyW', 'KeyS', 'Space'].includes(e.code)) { e.preventDefault(); e.stopPropagation(); L0.tasten[e.code] = true; if (e.code === 'Space' && !e.repeat) schiessen(L0); }
         if (e.code === 'Escape') { e.preventDefault(); e.stopPropagation(); L0.ende(); }
@@ -181,6 +192,7 @@ export function createKicker3d({ scene, camera, steuerung, ui, rr = null, ton = 
   function tor(Lx, seite) {   // seite +1: rechts = rotes Tor → Punkt für dich
     if (Lx.demo) { torLicht[seite > 0 ? 1 : 0].material.opacity = 0.7; einwurf(Lx, seite > 0 ? -1 : 1); return; }
     if (seite > 0) Lx.ich++; else Lx.er++;
+    if (!Lx.demo) zaehlwerk(Lx.ich, Lx.er);
     torLicht[seite > 0 ? 1 : 0].material.opacity = 1;
     ton(seite > 0 ? 'melodie2' : 'klack'); vib(seite > 0 ? [20, 30, 20] : 30);
     ui.skate({ punkte: Lx.ich, trick: (seite > 0 ? '⚽ TOR! ' : 'Tor für ' + Lx.gegner + '. ') + 'Du ' + Lx.ich + ' : ' + Lx.er + ' ' + Lx.gegner });

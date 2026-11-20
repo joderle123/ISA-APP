@@ -42,11 +42,15 @@ const MONAT = { 1: 'September', 2: 'September', 3: 'Oktober', 4: 'November', 5: 
 import { createInteraktionen } from './interaktion.js';
 import { createKicker3d } from './kicker3d.js';
 import { createBillard } from './billard.js';
+import { kevinRennt } from './arcade.js';
 import { createBotengang } from './botengang.js';
 import { createBuchstaben } from './buchstaben.js';
 import { tanzSpiel } from './tanz.js';
 import { createDosen } from './dosen.js';
 import { GARDEROBE, ARTEN as GD_ARTEN, freigeschaltet, levelVon } from './garderobe.js';
+import { createSpur } from './spur.js';
+import { createSchneemann } from './schneemann.js';
+import { createLaubhaufen } from './laubhaufen.js';
 import { createHaustier } from './haustier.js';
 import { herausforderungPruefen } from './herausforderungen.js';
 import { AUFGABEN, aufgabenFuer, aufgabenStand } from './wochenaufgaben.js';
@@ -398,6 +402,11 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     { modell: 'menschen', stil: 'Casual2', haut: '#a0694a', haar: '#1b1410', oben: '#e9b949', unten: '#2d3748', schuhe: '#2b2b2b', hoehe: 1.76, weg: [[32, 47], [32.2, 70], [32, 82.6], [40, 83], [32, 82.6], [32.2, 70]], tempo: 1.05 },
     { modell: 'frauen', stil: 'Adventurer', haut: '#f1c7a2', haar: '#c9a15a', oben: '#2fb8a8', unten: '#2b2b33', schuhe: '#e85d75', hoehe: 1.66, weg: [[-64, -8], [-63.8, -50], [-64, -88], [-63.8, -50]], tempo: 1.6 },
   );
+  // Winter (Kapitel 5–6): zwei Jugendliche drehen Runden auf der Eisbahn (Marktplatz) – sonst unsichtbar
+  STATISTEN.push(
+    { modell: 'frauen', stil: 'Casual', haut: '#e0b48c', haar: '#2b1d14', oben: '#5ec8ff', unten: '#2d3748', schuhe: '#f4f4f0', hoehe: 1.6, kopf: 'muetze', kopfFarbe: '#e0384f', eis: { cx: 48.7, cz: 119.4, rx: 5.4, rz: 3.7, w: 0.42, ph: 0 } },
+    { modell: 'menschen', stil: 'Casual2', haut: '#9b6a45', haar: '#1b1410', oben: '#ffd166', unten: '#3a3f4b', schuhe: '#2b2b2b', hoehe: 1.68, kopf: 'muetze', kopfFarbe: '#2b2f4a', eis: { cx: 48.7, cz: 119.4, rx: 3.9, rz: 2.5, w: 0.5, ph: 2.6 } },
+  );
   for (const st of STAMM) STATISTEN.push({ ...st.aussehen, steht: [...st.steht], stamm: st.id });
   // Figuren der Situationen (situationen.js): Ältere an der Lichtung, Mika, Mo vor dem Laden, Tante Lisette in der Épicerie
   for (const [id, d] of Object.entries(SIT_LEUTE)) STATISTEN.push({ ...d.aussehen, steht: [...d.steht], sitPerson: id });
@@ -408,7 +417,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       f.group.add(fussSchatten()); scene.add(f.group);
       if (d.stamm) { const sg = STAMM.find((q) => q.id === d.stamm); if (sg) f.group.add(namensschild(sg.name, sg.farbe)); }
       if (d.sitPerson && !SIT_LEUTE[d.sitPerson].stumm) { const sl = SIT_LEUTE[d.sitPerson]; f.group.add(namensschild(sl.name, sl.farbe)); }
-      const st = d.steht || (d.skate ? [d.skate[0], d.skate[2], Math.PI / 2] : null);
+      const st = d.steht || (d.skate ? [d.skate[0], d.skate[2], Math.PI / 2] : d.eis ? [d.eis.cx + Math.cos(d.eis.ph) * d.eis.rx, d.eis.cz + Math.sin(d.eis.ph) * d.eis.rz, 0] : null);
       const p = new THREE.Vector3(st ? st[0] : d.weg[0][0], 0, st ? st[1] : d.weg[0][1]);
       const x = { d, f, p, i: 1, warte: Math.random() * 3, h: { x: p.x, z: p.z, r: 0.3 }, richtung: 1 };
       f.group.position.copy(p);
@@ -422,6 +431,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         f.spiele('Idle');
         if (!brett && req.geo['skate/skateboard']) brett = req.geo['skate/skateboard'];
         if (brett) { const m = new THREE.Mesh(stelle(brett, { x: 0, z: 0, s: 0.8, rot: Math.PI / 2 }), material); m.position.y = -0.05; f.group.add(m); f.group.children[0].position.y = 0.12; }
+      } else if (d.eis) { f.spiele('Skaten', { tempo: 0.8 }); f.group.visible = false; x.h.x = x.h.z = 1e5; f.group.position.set(1e5, 0, 1e5);
       } else f.spiele('Walk', { tempo: d.tempo / 1.4 });
       statisten.push(x);
     }
@@ -623,6 +633,17 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         let dy = zielYaw - x.f.group.rotation.y; dy = Math.atan2(Math.sin(dy), Math.cos(dy));
         x.f.group.rotation.y += dy * Math.min(1, dt * 2.5);
       }
+      if (x.d.eis) {   // Eisbahn: Ellipse gegen den Uhrzeigersinn, nur wenn die Bahn steht (Winter)
+        const e = x.d.eis, an = eisbahn.visible;
+        if (x.f.group.visible !== an) { x.f.group.visible = an; if (x.f.group.children[0]) x.f.group.children[0].visible = an; }
+        if (!an) { x.h.x = x.h.z = 1e5; x.f.group.position.set(1e5, 0, 1e5); continue; }   // weit weg: niemand „Unsichtbares“ zum Ansprechen
+        const tAlt = e.t === undefined ? e.ph : e.t; e.t = tAlt + dt * e.w;
+        let nx = e.cx + Math.cos(e.t) * e.rx, nz = e.cz + Math.sin(e.t) * e.rz;
+        { const sp = steuerung.pos; if (Math.hypot(sp.x - nx, sp.z - nz) < 1.0) { e.t = tAlt; nx = x.p.x; nz = x.p.z; } }   // du stehst im Weg: kurz bremsen statt rempeln
+        if (nx !== x.p.x || nz !== x.p.z) x.f.group.rotation.y = Math.atan2(nx - x.p.x, nz - x.p.z) + Math.sin(e.t * 6) * 0.12;   // leichtes Pendeln beim Abstoßen
+        x.p.set(nx, 0, nz); x.f.group.position.copy(x.p); x.h.x = nx; x.h.z = nz;
+        continue;
+      }
       if (x.d.steht) continue;
       if (x.d.skate) {   // hin und her rollen, an den Enden kurz stehen
         if (x.warte > 0) { x.warte -= dt; continue; }
@@ -772,7 +793,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     spieler = await ladePerson(veil, { ...(FIGUREN[i] || FIGUREN[0]), ...((S && S.aussehen) || {}), ...garderobeLook() });   // Aussehen aus dem Spind-Spiegel, darüber Belohnungen aus der Garderobe
     spieler.group.add(fussSchatten()); scene.add(spieler.group); steuerung.figur = spieler; steuerung.sitzSuche = sitzSuche;
     spieler.spiele('Idle');
-    anhaengerDran(); tierDran();
+    anhaengerDran(); tierDran(); spurDran();
   }
   // ---------- Garderobe: verdiente Kappen, Brillen, Oberteile, Schuhe, Haustier (garderobe.js) ----------
   const gd = () => { S.garderobe = S.garderobe || { an: {}, gesehen: [], neu: [] }; return S.garderobe; };
@@ -786,18 +807,43 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (sc) o.schuhe = sc.wert;
     return o;
   }
-  const haustier = createHaustier({ scene, steuerung });
+  // Schulter der Spielfigur (Knochen „UpperArm.L“) – dort sitzen Ratte, Hamster und Wellensittich, wenn man stillsteht
+  let schulterKn = null, schulterVon = null; const _schulter = new THREE.Vector3();
+  const schulterPos = () => {
+    if (!spieler || !spieler.group.visible) return null;
+    if (schulterVon !== spieler) { schulterVon = spieler; schulterKn = null; spieler.group.traverse((o) => { if (o.isBone && o.name.replace(/\./g, '') === 'UpperArmL') schulterKn = o; }); }
+    if (!schulterKn) return null; schulterKn.getWorldPosition(_schulter); _schulter.y += 0.07; return _schulter;
+  };
+  const haustier = createHaustier({ scene, steuerung, schulter: schulterPos });
+  const spur = createSpur({ scene, steuerung });   // Spur hinter der Figur (Garderobe „✨ Spur“)
+  const spurDran = () => { const t = S && S.garderobe && gdDing(S.garderobe.an.spur); spur.setArt(t ? t.wert : null); };
   const tierDran = () => { const t = S && S.garderobe && gdDing(S.garderobe.an.tier); haustier.setArt(t ? t.wert : null, t ? t.farbe : null); };
   let gdUhr = 0;
+  // „Gleich anziehen“ auf der Belohnungs-Karte: Teil sofort an; Figur wird neu gebaut, sobald man frei unterwegs ist
+  let gdUmbau = false;
+  function gleichAnziehen(id) {
+    const d = gdDing(id); if (!d || !S) return;
+    const G = gd(); G.an[d.art] = id; G.neu = G.neu.filter((x) => x !== id);
+    if (d.art === 'tier') tierDran();
+    else if (d.art === 'spur') spurDran();
+    else if (d.art === 'fahrt') { if (d.ziel === 'deck') S.deck = d.wert; else S.trotti = d.wert; }
+    else gdUmbau = true;
+    ton('pling'); sichern();
+  }
   function garderobePruefen(dt) {
+    if (gdUmbau && spieler && steuerung.frei && !steuerung.kameraAus && !imGespraech && !fahrt && !steuerung.sitzt) {
+      gdUmbau = false; const p = steuerung.pos.clone(), y = spieler.group.rotation.y;
+      spielerFigur(S.figur).then(() => { if (spieler) { spieler.group.position.copy(p); spieler.group.rotation.y = y; } });
+    }
     gdUhr -= dt; if (gdUhr > 0 || !S || !S.merke || S.schritt < 2 || imGespraech) return; gdUhr = 2;
     const G = gd(), lvJetzt = levelVon(S.jetonsGesamt || 0).level;
     if (lvJetzt > (G.level || 1)) { G.level = lvJetzt; ui.toast('<b>⭐ Dorf-Level ' + lvJetzt + '!</b><span>Weiter so. Neue Teile in der Garderobe (G).</span>', 'ly-t-ent'); ton('melodie2'); sichern(); }
     const neu = freigeschaltet(S).filter((id) => !G.gesehen.includes(id));
+    if (ui.garderobeNeu) ui.garderobeNeu(G.neu.length + neu.length);
     if (!neu.length) return;
     G.gesehen.push(...neu); G.neu.push(...neu); sichern();
     if (neu.length > 2) { ui.toast('<b>🎁 ' + neu.length + ' neue Teile in deiner Garderobe</b><span>Taste G (oder ☰ → Garderobe) zum Anziehen</span>', 'ly-t-ent'); return; }
-    neu.forEach((id, i) => { const d = gdDing(id); setTimeout(() => ui.toast('<b>🎁 Neu: ' + d.sy + ' ' + d.name + '</b><span>Freigeschaltet! Taste G zum Anziehen.</span>', 'ly-t-ent'), 600 + i * 2400); });
+    neu.forEach((id, i) => { const d = gdDing(id); setTimeout(() => ui.belohnung({ sy: d.sy, name: d.name, art: (GD_ARTEN.find((a) => a[0] === d.art) || [])[1] || '', onKnopf: () => gleichAnziehen(id) }), 600 + i * 7400); });
     ton('melodie2');
   }
   // Herausforderungen von Freund:innen (herausforderungen.js): je Abschnitt höchstens eine neue Nachricht; geschafft = Antwort, Herz, Jetons
@@ -829,7 +875,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     waUhr -= dt; if (waUhr > 0 || !S || !S.merke || S.schritt < 2) return; waUhr = 3;
     const wa = wochenaufgaben(), stand = aufgabenStand(S, wa);
     for (const a of stand) if (a.fertig && !wa.belohnt.includes(a.id)) {
-      wa.belohnt.push(a.id); sichern();
+      wa.belohnt.push(a.id); S.merke.wochenGesamt = (S.merke.wochenGesamt || 0) + 1; if (wa.belohnt.length === 3) S.merke.wochenVoll = (S.merke.wochenVoll || 0) + 1; sichern();
       ui.toast('<b>✅ Wochenaufgabe: ' + a.sy + ' ' + a.text + '</b><span>' + wa.belohnt.length + ' von 3 geschafft</span>', 'ly-t-ent');
       setTimeout(() => jetons(wa.belohnt.length === 3 ? 4 : 2, wa.belohnt.length === 3 ? 'Alle Wochenaufgaben' : 'Wochenaufgabe'), 2600);
     }
@@ -844,8 +890,12 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     const hoch = innerHeight > innerWidth || innerWidth < 700, sp = steuerung.pos, yw = spieler ? spieler.group.rotation.y : (steuerung.yaw || 0), fx = Math.sin(yw), fz = Math.cos(yw);
     steuerung.kameraAus = true; steuerung.frei = false;
     const seit = hoch ? 0 : 0.75;   // Figur nach rechts verschieben
-    camera.position.set(sp.x + fx * 2.6 - fz * seit, 1.35 + (hoch ? 0.5 : 0), sp.z + fz * 2.6 + fx * seit);
-    camera.lookAt(sp.x - fz * seit, hoch ? 0.75 : 1.0, sp.z + fx * seit);
+    let dreh = 0;   // ← → (oder Q/E) dreht die Kamera um die Figur – wie im Spind von großen Spielen
+    const kameraSetzen = () => { const a = Math.atan2(fx, fz) + dreh, ax = Math.sin(a), az = Math.cos(a);
+      camera.position.set(sp.x + ax * 2.6 - az * seit, 1.35 + (hoch ? 0.5 : 0), sp.z + az * 2.6 + ax * seit); camera.lookAt(sp.x - az * seit, hoch ? 0.75 : 1.0, sp.z + ax * seit); };
+    kameraSetzen();
+    const drehTaste = (e) => { if (['ArrowLeft', 'ArrowRight', 'KeyQ'].includes(e.code)) { e.preventDefault(); dreh += (e.code === 'ArrowRight' ? -1 : 1) * 0.35; kameraSetzen(); } };
+    document.addEventListener('keydown', drehTaste, true);
     const umbau = async () => { const p = steuerung.pos.clone(), y = spieler.group.rotation.y; await spielerFigur(S.figur); spieler.group.position.copy(p); spieler.group.rotation.y = y; };
     try {
       const st = levelVon(S.jetonsGesamt || 0), preis = GARDEROBE.find((g) => g.level === st.level + 1);
@@ -854,12 +904,13 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         const d = gdDing(id); if (!d || !hab.has(id)) return liste();
         G.an[d.art] = G.an[d.art] === id ? null : id; G.neu = G.neu.filter((x) => x !== id);
         if (d.art === 'tier') tierDran();
+        else if (d.art === 'spur') { spurDran(); spur.vorschau(); if (G.an.spur === id) ui.toast('<b>' + d.sy + ' ' + d.name + '</b><span>Zu sehen, wenn du rennst, fährst oder rutschst.</span>'); }
         else if (d.art === 'fahrt') { if (G.an.fahrt === id) { if (d.ziel === 'deck') S.deck = d.wert; else S.trotti = d.wert; ui.toast('<b>' + d.sy + ' ' + d.name + '</b><span>Gilt beim nächsten Aufsteigen (R / T).</span>'); } }
         else { umziehen = false; sichern(); await umbau(); }   // sofort an der Figur sehen
         ton('pling'); sichern(); return liste();
       } });
-    } finally { input.setEnabled(true); steuerung.kameraAus = false; steuerung.frei = true; steuerung.kamera(0.016, true); }
-    G.neu = []; sichern();
+    } finally { document.removeEventListener('keydown', drehTaste, true); input.setEnabled(true); steuerung.kameraAus = false; steuerung.frei = true; steuerung.kamera(0.016, true); }
+    G.neu = []; sichern(); if (ui.garderobeNeu) ui.garderobeNeu(0);
     if (umziehen) await umbau();
   };
   // Anhänger (Lila Bär) an der Hüfte der Spielfigur
@@ -2041,6 +2092,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       else if (art === 'klack') { rausch(0, 0.05, 0.4); note(140, 0.05, 0.2, 'square', 0.1); }
       else if (art === 'pling') { note(1046, 0, 0.3, 'sine', 0.15); note(1318, 0.1, 0.4, 'sine', 0.12); }
       else if (art === 'platsch') rausch(0, 0.35, 0.2);
+      else if (art === 'rascheln') [0, 0.07, 0.15, 0.26].forEach((t, i) => rausch(t, 0.14 + i * 0.03, 0.14 - i * 0.025));   // Laub
     } catch (e) { /* kein Ton – egal */ }
   }
   // ---------- Unterricht (lektionen.js, aus tools/sprachen): eine Lektion als Spiel ----------
@@ -2610,8 +2662,29 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   const kicker3d = createKicker3d({ scene, camera, steuerung, ui, rr, ton: (a) => (a === 'klack' ? geraeusch('pfosten') : ton(a)), vib, canvas: rr.renderer.domElement, holeFigur: async (id) => (id ? holeSpielFigur(id) : null) });
   // ---------- Billard im Jugendhaus (billard.js) ----------
   const billard = createBillard({ scene, camera, steuerung, ui, rr, ton, vib, canvas: rr.renderer.domElement, holeFigur: async (id) => (id ? holeSpielFigur(id) : null) });
+  // ---------- Rekord-Tafel im Jugendhaus (Westwand): eigene Rekorde neben denen der Clique – wird aktualisiert ----------
+  const rekordTafel = (() => {
+    const cv = document.createElement('canvas'); cv.width = 512; cv.height = 384; const g = cv.getContext('2d');
+    const tex = new THREE.CanvasTexture(cv); tex.colorSpace = THREE.SRGBColorSpace;
+    const m = new THREE.Mesh(new THREE.PlaneGeometry(1.6, 1.2), new THREE.MeshBasicMaterial({ map: tex, toneMapped: false }));
+    m.position.set(8.33, 1.65, 119.4); m.rotation.y = Math.PI / 2; m.name = 'rekordtafel'; scene.add(m);
+    const rahmen = new THREE.Mesh(new THREE.BoxGeometry(0.04, 1.32, 1.72), new THREE.MeshLambertMaterial({ color: '#8a5a3a' })); rahmen.position.set(8.3, 1.65, 119.4); scene.add(rahmen);
+    let alt = '';
+    return () => {
+      if (!S || !S.merke) return; const M = S.merke;
+      const zeilen = [['🌵 Kevin rennt', M.kevinRekord || 0, 'Tiago', 640], ['💃 Tanzfläche', M.tanzRekord || 0, 'Ayla', 3000], ['⚽ Kicker-Siege', M.kickerSiege || 0, 'Dario', 2], ['🎱 Billard-Siege', M.billardSiege || 0, 'Kenan', 2], ['🥫 Dosen (von 6)', M.dosenRekord || 0, 'Ben', 5]];
+      const neu = JSON.stringify(zeilen.map((z) => z[1])); if (neu === alt) return; alt = neu;
+      g.fillStyle = '#2d4a3a'; g.fillRect(0, 0, 512, 384);
+      g.fillStyle = '#f4efe6'; g.font = 'bold 34px Georgia, serif'; g.textAlign = 'center'; g.fillText('REKORDE · Jugendhaus', 256, 50);
+      g.font = '24px system-ui'; g.textAlign = 'left';
+      zeilen.forEach(([t, ich, wer, ihr], i) => { const y = 108 + i * 54; g.fillStyle = '#f4efe6'; g.fillText(t, 24, y); g.fillStyle = ich > ihr ? '#ffd166' : '#cfe8d8'; g.fillText('Du: ' + ich, 270, y); g.fillStyle = '#9fc4ae'; g.fillText(wer + ': ' + ihr, 376, y); });
+      g.fillStyle = 'rgba(244,239,230,.7)'; g.font = 'italic 18px system-ui'; g.textAlign = 'center'; g.fillText('Gelb = du bist vorn. Kim schreibt alles mit Kreide.', 256, 372);
+      tex.needsUpdate = true;
+    };
+  })();
   // ---------- Dosenwerfen auf dem Marktplatz (dosen.js) ----------
   const dosen = createDosen({ scene, steuerung, input, ui, ton, vib });
+  const schneemann = createSchneemann({ scene, steuerung, ui, ton, vib });   // Winter: Schneemann bauen auf dem Hof
   // ---------- Tanzfläche im Jugendhaus: 3×3 Leuchtfliesen, blinken beim Tanz-Spiel im Takt ----------
   const TANZ = { x: 23.4, z: 123.4 }, tanzFliesen = [];
   { const FARBEN = ['#ff7ac8', '#5ec8ff', '#ffd166', '#7CFC9A', '#b197fc', '#ffa94d'], geo = new THREE.PlaneGeometry(0.86, 0.86); geo.rotateX(-Math.PI / 2);
@@ -2621,7 +2694,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   const ia = createInteraktionen({ welt, steuerung, ui, zustand: () => S, sichern: () => sichern(), ton, blattWahl, spindAuf: () => spindAuf(), onKabel: (id) => tiere.kabelWeg(id),
     freiwurf: async (o) => ui.freiwurf(o), skate: () => skaten(), pausenFussball: () => pausenFussball(), elfmeter: async (o) => { if (fahrt) absteigen(); return elfmeter.spiel(o); }, elfmeterAktiv: () => elfmeter.aktiv(), volley: async (o) => { if (fahrt) absteigen(); return volley.spiel(o); }, volleyAktiv: () => volley.aktiv(),
     botengang,
-    dosen: async (o) => { if (fahrt) absteigen(); return dosen.spiel(o); }, dosenAktiv: () => dosen.aktiv(),
+    dosen: async (o) => { if (fahrt) absteigen(); return dosen.spiel(o); }, dosenAktiv: () => dosen.aktiv(), schneemann, winter: () => eisbahn.visible, farbeOben: () => garderobeLook().oben || (S && S.aussehen && S.aussehen.oben) || ((FIGUREN[S ? S.figur : 0] || FIGUREN[0]) || {}).oben || null,
     tanzen: async () => {
       if (fahrt) absteigen(); ui.hinweis(null); input.setEnabled(false); kickerAn = true;
       steuerung.teleport(TANZ.x, TANZ.z, Math.PI / 2); steuerung.frei = false;
@@ -2635,6 +2708,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         tanzFliesen.forEach((f) => { f.material.opacity = 0.45; });
       }
     },
+    arcade: async (o) => { if (fahrt) absteigen(); ui.hinweis(null); kickerAn = true; try { return await kevinRennt({ ton, ...o }); } finally { kickerAn = false; } },
     billard: async (pa) => { if (fahrt) absteigen(); ui.hinweis(null); input.setEnabled(false); kickerAn = true; const amTisch = statisten.filter((x) => x.d.billardSeite); amTisch.forEach((x) => { x.f.group.visible = false; x.h.x = 1e5; }); const kimZurueck = pa ? () => {} : kimAnDenTisch(27.4, 115.9); try { return await billard.spiel({ gegner: pa ? pa.name : 'Kim', gegnerId: pa ? pa.id : null, leicht: !!ui.leicht || (S.merke.billard || 0) - (S.merke.billardSiege || 0) >= 3 }); } finally { kickerAn = false; kimZurueck(); amTisch.forEach((x) => { x.f.group.visible = true; x.h.x = x.p.x; x.h.z = x.p.z; }); input.release('jump'); input.setEnabled(true); } },
     kicker: async (pa) => { if (fahrt) absteigen(); ui.hinweis(null); input.setEnabled(false); kickerAn = true; const amTisch = statisten.filter((x) => x.d.kickerSeite); amTisch.forEach((x) => { x.f.group.visible = false; x.h.x = 1e5; }); const kimZurueck = pa ? () => {} : kimAnDenTisch(20.5, 118.2); try { return await kicker3d.spiel({ gegner: pa ? pa.name : 'Kim', gegnerId: pa ? pa.id : null, leicht: !!ui.leicht || (S.merke.kicker || 0) - (S.merke.kickerSiege || 0) >= 3 }); } finally { kickerAn = false; kimZurueck(); amTisch.forEach((x) => { x.f.group.visible = true; x.h.x = x.p.x; x.h.z = x.p.z; }); input.release('jump'); input.setEnabled(true); } },
     tt3d: welt.orte.tischtennis ? async (pa) => { ui.hinweis(null); const STAERKE = { ben: 1.4, jo: 1.6, ayla: 1.3, dario: 1.2, yusuf: 1.1 };
@@ -2800,7 +2874,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (i.tu === 'zufall') { imGespraech = true; input.setEnabled(false); steuerung.frei = false; ui.hinweis(null);
       try { await zufall.tu(); } finally { ui.dialogZu(); imGespraech = false; input.setEnabled(true); steuerung.frei = true; sperreBis = performance.now() + 500; } return; }
     // Minispiele in der Welt (eigene Steuerung, enden bei einem Gespräch): nicht als Gespräch behandeln – sonst enden sie sofort
-    if (['skate', 'volley', 'elfmeter', 'dosen', 'kicker', 'billard'].includes(i.tu)) { ui.hinweis(null); await ia.tu(i); sperreBis = performance.now() + 500; return; }
+    if (['skate', 'volley', 'elfmeter', 'dosen', 'kicker', 'billard', 'schneemann', 'schneeSetzen'].includes(i.tu)) { ui.hinweis(null); await ia.tu(i); sperreBis = performance.now() + 500; return; }
     imGespraech = true; input.setEnabled(false); steuerung.frei = false; ui.hinweis(null); vib(12);
     try { await ia.tu(i); } finally { imGespraech = false; input.setEnabled(true); steuerung.frei = true; sperreBis = performance.now() + 350; }
   }
@@ -2837,6 +2911,12 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     else { const rg = g.createRadialGradient(32, 32, 0, 32, 32, 30); rg.addColorStop(0, 'rgba(255,255,255,1)'); rg.addColorStop(0.45, 'rgba(255,255,255,0.65)'); rg.addColorStop(1, 'rgba(255,255,255,0)'); g.fillStyle = rg; g.fillRect(0, 0, 64, 64); }
     const t = new THREE.CanvasTexture(cv); t.colorSpace = THREE.SRGBColorSpace; return t; };
   const TEX_RUND = punktTex('rund'), TEX_BLATT = punktTex('blatt');
+  // Herbst (Kapitel 3–4): Laubhaufen unter den Bäumen auf dem Hof – hineinrennen, Blätter fliegen (laubhaufen.js)
+  let laubAn = false;
+  const laub = createLaubhaufen({ scene, steuerung, tex: TEX_BLATT, ton: (a) => ton(a), onSprung: () => {
+    if (!S || !S.merke) return; S.merke.laub = (S.merke.laub || 0) + 1; vib(12);
+    if (!S.merke.laubTipp) { S.merke.laubTipp = 1; sichern(); ui.toast('<b>🍂 Raschel!</b><span>Die Blätter wehen gleich wieder zusammen. Nochmal?</span>', 'ly-t-ent'); }
+  } });
   const staubMat = new THREE.PointsMaterial({ size: 0.03, map: TEX_RUND, color: 0xfff1d0, transparent: true, opacity: 0, depthWrite: false, blending: THREE.AdditiveBlending, toneMapped: false });
   const staub = new THREE.Points(staubGeo, staubMat); staub.frustumCulled = false; staub.visible = false; scene.add(staub);
   let staubT = 0;
@@ -2868,6 +2948,45 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   // Deko je Monat (requisiten.js, plaetze mit saison): Kürbisse im Oktober, Weihnachten im Dezember, Winter bis Februar
   const DEKO_KAP = { herbst: [3, 4], halloween: [3], weihnacht: [5], winter: [5, 6], fruehling: [7, 8], sommer: [9, 10] };
   let dekoKap = -1;
+  // Eisbahn auf dem Marktplatz im Winter (Kapitel 5–6): glattes Eis, Bande mit zwei Durchgängen (Weg vom Jugendhaus),
+  // Schild, Lichterkette. Darauf rutscht man mit Schwung (steuerung.glatt); die Figur macht Schlittschuh-Bewegungen.
+  const EIS = { x0: 41.6, x1: 55.8, z0: 114.2, z1: 124.6, tor0: 117.3, tor1: 120.3 };   // Norden frei lassen: Gang zu den Marktständen (Botengang)
+  const eisbahn = new THREE.Group(); eisbahn.name = 'eisbahn'; eisbahn.visible = false; scene.add(eisbahn);
+  const eisBande = [];
+  {
+    const eis = new THREE.Mesh(new THREE.PlaneGeometry(EIS.x1 - EIS.x0, EIS.z1 - EIS.z0), new THREE.MeshStandardMaterial({ color: '#e8f6ff', roughness: 0.18, metalness: 0, emissive: '#a9d4f0', emissiveIntensity: 0.35 }));
+    eis.rotation.x = -Math.PI / 2; eis.position.set((EIS.x0 + EIS.x1) / 2, 0.065, (EIS.z0 + EIS.z1) / 2); eis.receiveShadow = true; eisbahn.add(eis);
+    // Kratzspuren auf dem Eis (helle Bögen)
+    const spur = new THREE.MeshBasicMaterial({ color: '#ffffff', transparent: true, opacity: 0.35, depthWrite: false });
+    for (let i = 0; i < 9; i++) { const r = 1.5 + i * 0.55, b = new THREE.Mesh(new THREE.RingGeometry(r, r + 0.03, 40, 1, i * 0.7, 1.6 + (i % 3) * 0.5), spur); b.rotation.x = -Math.PI / 2; b.position.set(48.7 + (i % 2 ? 1.2 : -1.1), 0.07, 119 + (i % 3 - 1) * 0.8); eisbahn.add(b); }
+    const weiss = new THREE.MeshLambertMaterial({ color: '#f4f4f0' }), rot = new THREE.MeshLambertMaterial({ color: '#e0384f' });
+    const brett = (x0, x1, z0, z1) => {
+      const b = new THREE.Mesh(new THREE.BoxGeometry(x1 - x0, 0.45, z1 - z0), weiss); b.position.set((x0 + x1) / 2, 0.225, (z0 + z1) / 2); b.castShadow = true; eisbahn.add(b);
+      const r = new THREE.Mesh(new THREE.BoxGeometry(x1 - x0 + 0.02, 0.05, z1 - z0 + 0.02), rot); r.position.set((x0 + x1) / 2, 0.45, (z0 + z1) / 2); eisbahn.add(r);
+      eisBande.push({ x0, x1, z0, z1, y0: 0, y1: 0.45 });
+    };
+    const D = 0.08;
+    brett(EIS.x0 - D, EIS.x1 + D, EIS.z0 - D, EIS.z0); brett(EIS.x0 - D, EIS.x1 + D, EIS.z1, EIS.z1 + D);
+    for (const x of [EIS.x0 - D, EIS.x1]) { brett(x, x + D, EIS.z0, EIS.tor0); brett(x, x + D, EIS.tor1, EIS.z1); }
+    // Schild über dem Eingang (Seite Jugendhaus) mit zwei Pfosten
+    const cv = document.createElement('canvas'); cv.width = 512; cv.height = 128; const g = cv.getContext('2d');
+    g.fillStyle = '#2f6db0'; g.fillRect(0, 0, 512, 128); g.strokeStyle = '#ffffff'; g.lineWidth = 8; g.strokeRect(6, 6, 500, 116);
+    g.fillStyle = '#ffffff'; g.font = 'bold 66px system-ui, sans-serif'; g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillText('❄ EISBAHN ❄', 256, 68);
+    const tex = new THREE.CanvasTexture(cv); tex.colorSpace = THREE.SRGBColorSpace;
+    const schildM = new THREE.Mesh(new THREE.PlaneGeometry(2.4, 0.6), new THREE.MeshBasicMaterial({ map: tex, toneMapped: false, side: THREE.DoubleSide }));
+    schildM.position.set(EIS.x0 - 0.05, 2.35, (EIS.tor0 + EIS.tor1) / 2); schildM.rotation.y = -Math.PI / 2; eisbahn.add(schildM);
+    const pfosten = new THREE.MeshLambertMaterial({ color: '#2b2f3a' });
+    for (const z of [EIS.tor0, EIS.tor1]) { const p = new THREE.Mesh(new THREE.CylinderGeometry(0.05, 0.05, 2.65, 8), pfosten); p.position.set(EIS.x0 - 0.04, 1.32, z); eisbahn.add(p); }
+    // Lichterkette an der langen Seite (bunte Kugeln, leuchten auch am Abend)
+    const farben = ['#ffd166', '#ff7ac8', '#7CFC9A', '#5ec8ff'], kugelG = new THREE.SphereGeometry(0.06, 8, 6);
+    for (const z of [EIS.z0 - 0.04, EIS.z1 + 0.04]) for (let i = 0; i <= 30; i++) {
+      const x = EIS.x0 + (i / 30) * (EIS.x1 - EIS.x0), l = new THREE.Mesh(kugelG, new THREE.MeshBasicMaterial({ color: farben[i % 4], toneMapped: false }));
+      l.position.set(x, 2.1 - Math.sin((i / 30) * Math.PI * 3) ** 2 * 0.3, z); eisbahn.add(l);
+    }
+    for (const x of [EIS.x0, (EIS.x0 + EIS.x1) / 2, EIS.x1]) for (const z of [EIS.z0 - 0.04, EIS.z1 + 0.04]) { const p = new THREE.Mesh(new THREE.CylinderGeometry(0.04, 0.04, 2.2, 6), pfosten); p.position.set(x, 1.1, z); eisbahn.add(p); }
+  }
+  steuerung.glatt = (x, z) => eisbahn.visible && x > EIS.x0 && x < EIS.x1 && z > EIS.z0 && z < EIS.z1;
+  const eisbahnZeigen = (an) => { eisbahn.visible = an; steuerung.extraBoxen = an ? eisBande : []; };
   // Annexe News an der Pinnwand: jede Woche eine neue Ausgabe; Zoés Umfrage-Ergebnis mit deiner Antwort
   const KURZ_NOTIERT = { 1: 'Die Hallenuhr geht drei Minuten nach. Fernand arbeitet dran. Seit 1998.', 2: 'Coding-Club sucht Testpersonen. Informatik, mittwochs 13 Uhr.',
     3: 'Nach dem Sportfest fehlen zwei orange Hütchen. Hinweise an Fernand.', 4: 'Bonbon hat Geburtstag. Leckerli nur über die SePAS!', 5: 'Bandprobe: Noor und Gilles suchen immer noch einen Bass.',
@@ -2925,7 +3044,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   }
   function saisonTick(dt) {
     const kap = (S && SCHRITTE[S.schritt] && SCHRITTE[S.schritt].kap) || 1;
-    if (kap !== dekoKap && req.saison) { dekoKap = kap; for (const [k, m] of Object.entries(req.saison)) m.visible = (DEKO_KAP[k] || []).includes(kap); try { zeitungNeu(kap); } catch (e) { /* Zeitung */ } }
+    if (kap !== dekoKap && req.saison) { dekoKap = kap; eisbahnZeigen((DEKO_KAP.winter || []).includes(kap)); laubAn = (DEKO_KAP.herbst || []).includes(kap); if (S && S.merke && S.merke.schneemannBau) schneemann.wiederherstellen(S.merke.schneemannBau); for (const [k, m] of Object.entries(req.saison)) m.visible = (DEKO_KAP[k] || []).includes(kap); try { zeitungNeu(kap); } catch (e) { /* Zeitung */ } }
     const art = kap <= 4 ? 'laub' : kap <= 6 ? 'schnee' : kap <= 8 ? 'blueten' : null, A = art && SAISON[art];
     const draussen = !welt.raumBei(steuerung.pos.x, steuerung.pos.z);
     const ziel = laeuft && A && draussen && !(sky.night > 0.5) && regenJetzt < 0.1 ? 0.9 : 0;
@@ -3071,12 +3190,20 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (laeuft && !ui.ebeneArt()) kicker3d.tick(dt);
     if (laeuft && !ui.ebeneArt() && !kicker3d.aktiv()) { const p = steuerung.pos; kicker3d.demoTick(dt, Math.hypot(p.x - 20.5, p.z - 117.2) < 9 && statisten.some((x) => x.d.kickerSeite && x.f.group.visible)); }
     if (laeuft && !ui.ebeneArt()) billard.tick(dt);
+    if (laeuft && Math.hypot(steuerung.pos.x - 19, steuerung.pos.z - 119) < 14) rekordTafel();
     if (laeuft && !ui.ebeneArt() && !billard.aktiv()) { const p = steuerung.pos; billard.demoTick(dt, Math.hypot(p.x - 26, p.z - 115.2) < 9 && statisten.some((x) => x.d.billardSeite && x.f.group.visible)); }   // Gespräch beginnt: Runde endet; Menü offen: Pause
     verkehr.tick(dt, imGespraech || !laeuft);
     sticker.tick(dt, !!(laeuft && S && !imGespraech));
     buchstaben.tick(dt, !!(laeuft && S && !imGespraech && !ui.ebeneArt()));
     haustier.tick(dt, !!(laeuft && S && spieler && spieler.group.visible));
+    schneemann.tick(dt, eisbahn.visible);
+    laub.tick(dt, laubAn);
+    spur.tick(dt, !!(laeuft && S && spieler && spieler.group.visible && !imGespraech && !steuerung.kameraAus));
     if (laeuft) { garderobePruefen(dt); herausforderungTick(dt); wochenaufgabenTick(dt); }
+    if (laeuft && S && S.merke && steuerung.eis && !imGespraech) {   // Eisbahn: Meter zählen (Wochenaufgabe, Wollmütze), beim ersten Mal ein Tipp
+      S.merke.eisMeter = (S.merke.eisMeter || 0) + steuerung.tempo * dt;
+      if (!S.merke.eisTipp) { S.merke.eisTipp = 1; sichern(); ui.toast('<b>⛸️ Eisbahn!</b><span>Du rutschst mit Schwung. Lenken und Bremsen dauern länger.</span>', 'ly-t-ent'); }
+    }
     botengang.tick(dt, { sichtbar: !!(laeuft && S && !imGespraech && !ui.ebeneArt() && !volley.aktiv() && !elfmeter.aktiv() && !kickerAn), faehrt: !!fahrt });
     entenTick(dt, performance.now() / 1000);
     fahrerTick(dt, imGespraech || !laeuft);
@@ -3294,7 +3421,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     teleport: (ort, yaw) => { const o = typeof ort === 'string' ? welt.orte[ort] : ort; steuerung.teleport(o.x, o.z, yaw !== undefined ? yaw : o.yaw); },
     rede, los, audio, SITZ, input, get spruch() { return { wer: !!spruchWer }; }, get naechste() { return naechste && naechste.id; },
     get probe() { return probe; }, set mutTempo(v) { mutTempo = v; },
-    daten: { SCHRITTE, STATISTEN, LEUTE, BLAETTER, MATHE, LEKTIONEN, GESPRAECHE }, ia, aktion, botengang, buchstaben, dosen, haustier, kicker3d, billard, garderobe: () => S && S.garderobe, get iaNah() { return iaNah && iaNah.tu; },
+    daten: { SCHRITTE, STATISTEN, LEUTE, BLAETTER, MATHE, LEKTIONEN, GESPRAECHE }, ia, aktion, botengang, buchstaben, dosen, haustier, spur, schneemann, laub, gdPruefen: (dt = 5) => garderobePruefen(dt), kicker3d, billard, garderobe: () => S && S.garderobe, get iaNah() { return iaNah && iaNah.tu; },
     hs, tt3d, zufall, fussball, volley, verkehr, elfmeter, sticker, fahrer, get fahrt() { return fahrt; }, get spieler() { return spieler; }, vorspann: (k) => vorspann(SCHRITTE.find((x) => (x.kap || 1) === k) || SCHRITTE[0]), gesteZu, handschlagMit, get statisten() { return statisten; }, musik,
   };
 

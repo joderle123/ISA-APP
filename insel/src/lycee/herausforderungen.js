@@ -2,6 +2,9 @@
 // Je Abschnitt höchstens eine neue Nachricht („Schaffst du …?“). Wer es schafft, bekommt eine Antwort, Jetons und Freundschaft.
 // Kein Druck: Man kann sie ignorieren, nichts verfällt. Ton freundlich-frech, nie Mutprobe mit Risiko.
 export const HERAUSFORDERUNGEN = [
+  // Winter (nur Kapitel 5–6): kommen zuerst dran; ist der Winter vorbei, verschwindet eine offene still
+  { id: 'h_schneemann', von: 'mila', ab: 5, bis: 6, text: 'Es schneit! Baust du einen Schneemann auf dem Hof?', ziel: (m) => (m.schneemann || 0) >= 1, danke: 'Mit Schal! Ich hab ihm „Fernand 2“ getauft.' },
+  { id: 'h_eis', von: 'chiara', ab: 5, bis: 6, text: 'Eisbahn auf dem Markt: 300 Meter rutschen ohne Pause. Okay, mit Pause.', ziel: (m) => (m.eisMeter || 0) >= 300, danke: '300 Meter! Nächstes Mal machen wir eine Pirouette.' },
   { id: 'h_dosen', von: 'ben', ab: 1, text: 'Dosenwerfen am Markt: Ich hab fünf. Schaffst du alle sechs?', ziel: (m) => (m.dosenRekord || 0) >= 6, danke: 'Alle sechs! Okay, du bist besser. Diesmal.' },
   { id: 'h_kicker', von: 'dario', ab: 1, text: 'Tischkicker im Jugendhaus: Hast du schon mal gewonnen? Ich nie.', ziel: (m) => (m.kickerSiege || 0) >= 1, danke: 'Gewonnen? Zeig mir den Trick!' },
   { id: 'h_boten', von: 'mila', ab: 2, text: 'Rosa sucht Hilfe im Dorf. Drei Botengänge – ich hab’s geschafft.', ziel: (m) => ((m.boten && m.boten.n) || 0) >= 3, danke: 'Drei! Rosa redet nur noch von dir.' },
@@ -20,9 +23,9 @@ export function herausforderungPruefen(m, kap, schritt) {
   if (hf.aktiv) {
     const h = HERAUSFORDERUNGEN.find((x) => x.id === hf.aktiv);
     if (h && h.ziel(m)) return { geschafft: h };
-    return null;
+    if (!(h && h.bis && kap > h.bis)) return null;   // Winter vorbei: offene Winter-Aufgabe zählt nicht mehr, nächste darf kommen
   }
   if (hf.schritt === schritt) return null;   // je Abschnitt höchstens eine neue
-  const h = HERAUSFORDERUNGEN.find((x) => x.ab <= kap && !(hf.fertig || []).includes(x.id) && !x.ziel(m));
+  const h = HERAUSFORDERUNGEN.find((x) => x.ab <= kap && (!x.bis || kap <= x.bis) && !(hf.fertig || []).includes(x.id) && !x.ziel(m));
   return h ? { neu: h } : null;
 }

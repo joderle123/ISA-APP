@@ -39,7 +39,7 @@ test('Garderobe: eindeutige Teile, jede Art vertreten, Hinweise kurz, Tests lauf
   assert.ok(GARDEROBE.some((g) => g.level), 'Level-Belohnungen fehlen');
   for (const g of GARDEROBE) assert.ok(g.hinweis.split(/\s+/).length <= 12 && g.name && g.sy, g.id);
   assert.deepEqual(freigeschaltet({ merke: {} }), ['k_start'], 'leerer Stand: nur das Start-Geschenk');
-  const voll = { jetonsGesamt: 500, merke: { sticker: new Array(24).fill('x'), boten: { n: 8, best: { a: 1, b: 1, c: 1, d: 1, e: 1, f: 1, g: 1, h: 1 } }, skate5: 'SKATE', skate5Rekord: 30, fotoBingo: new Array(9).fill('x'), tanzRekord: 9000, tanzSterne: 3, kickerSiege: 1, kicker: 5, tanz: 2, dosenRekord: 6, elfmeterRekord: 5, volleyRekord: 12, renn_brett: 50, renn_trotti: 40, enten: 2, billardSiege: 1, kickerBesiegt: [1, 2, 3], billardBesiegt: [1, 2, 3], hf: { fertig: [1, 2, 3, 4, 5] } }, herz: { a: 4, b: 5, c: 4 } };
+  const voll = { jetonsGesamt: 500, merke: { sticker: new Array(24).fill('x'), boten: { n: 8, best: { a: 1, b: 1, c: 1, d: 1, e: 1, f: 1, g: 1, h: 1 } }, skate5: 'SKATE', skate5Rekord: 30, fotoBingo: new Array(9).fill('x'), tanzRekord: 9000, tanzSterne: 3, kickerSiege: 1, kicker: 5, tanz: 2, dosenRekord: 6, elfmeterRekord: 5, volleyRekord: 12, renn_brett: 50, renn_trotti: 40, enten: 2, billardSiege: 1, kevinRekord: 600, eisMeter: 700, wochenGesamt: 3, wochenVoll: 1, tierStreicheln: 10, lernen: 10, kickerBesiegt: [1, 2, 3], billardBesiegt: [1, 2, 3], hf: { fertig: [1, 2, 3, 4, 5] } }, herz: { a: 4, b: 5, c: 4 } };
   assert.equal(freigeschaltet(voll).length, GARDEROBE.length, 'alles erreichbar');
 });
 
@@ -75,4 +75,46 @@ test('Kicker 3D: jede Stange kann gleiten, das Fünfer-Mittelfeld nur wenig', as
     assert.ok((n - 1) / 2 * a + w < KICKER_TISCH.B / 2, 'Figur stößt an die Bande');
   }
   assert.ok(stangenWeg(5, 0.13) < stangenWeg(2, 0.24));
+});
+
+test('Spur: fünf Arten, jede mit Teil in der Garderobe', async () => {
+  const { SPUR_ARTEN } = await import('../../src/lycee/spur.js');
+  const { GARDEROBE } = await import('../../src/lycee/garderobe.js');
+  assert.equal(SPUR_ARTEN.length, 5);
+  for (const a of SPUR_ARTEN) assert.ok(GARDEROBE.some((g) => g.art === 'spur' && g.wert === a), 'Teil für ' + a);
+});
+
+test('Schneemann: Kugeln nur groß genug, oben höchstens 85 % der unteren, nach drei fertig', async () => {
+  const { kugelPasst, STUFEN, SCHNEEFELD, BAUPLATZ } = await import('../../src/lycee/schneemann.js');
+  assert.equal(kugelPasst([], 0.2).grund, 'klein');
+  assert.deepEqual(kugelPasst([], 0.4), { ok: true, r: 0.4 });
+  assert.ok(Math.abs(kugelPasst([0.4], 0.45).r - 0.34) < 1e-9, 'zu groß für oben → kleiner');
+  assert.equal(kugelPasst([0.4, 0.3], 0.1).grund, 'klein');
+  assert.equal(kugelPasst([0.4, 0.3, 0.2], 0.2).grund, 'fertig');
+  assert.ok(STUFEN.every((s, i) => i === 0 || s.min < STUFEN[i - 1].min * 0.85 + 1e-9), 'jede Stufe erreichbar');
+  assert.ok(BAUPLATZ.x > SCHNEEFELD.x0 && BAUPLATZ.x < SCHNEEFELD.x1 && BAUPLATZ.z > SCHNEEFELD.z0 && BAUPLATZ.z < SCHNEEFELD.z1);
+});
+
+test('Herausforderungen: Winter-Aufgaben nur in Kapitel 5–6, offene verfällt still danach', async () => {
+  const { herausforderungPruefen } = await import('../../src/lycee/herausforderungen.js');
+  assert.ok(!['h_schneemann', 'h_eis'].includes((herausforderungPruefen({}, 3, 1).neu || {}).id), 'Herbst: keine Winter-Aufgabe');
+  assert.equal(herausforderungPruefen({}, 5, 1).neu.id, 'h_schneemann', 'Winter: Schneemann zuerst');
+  const m = { hf: { aktiv: 'h_schneemann', fertig: [], schritt: 1 } };
+  assert.equal(herausforderungPruefen(m, 6, 2), null, 'noch Winter: bleibt offen');
+  const r = herausforderungPruefen(m, 7, 3); assert.ok(r && r.neu && r.neu.id !== 'h_schneemann' && r.neu.id !== 'h_eis', 'Frühling: nächste kommt');
+  assert.ok(herausforderungPruefen({ schneemann: 1, hf: { aktiv: 'h_schneemann', fertig: [] } }, 5, 2).geschafft);
+});
+
+test('Laubhaufen: Blätter fliegen beim Hineinrennen, fallen zurück, Zähler über Rückruf', async () => {
+  const THREE = await import('three');
+  const { createLaubhaufen, LAUB_PLAETZE } = await import('../../src/lycee/laubhaufen.js');
+  const scene = new THREE.Scene(), st = { pos: new THREE.Vector3(LAUB_PLAETZE[0][0], 0, LAUB_PLAETZE[0][1] - 2), tempo: 0, yaw: 0 };
+  let n = 0; const l = createLaubhaufen({ scene, steuerung: st, onSprung: () => n++ });
+  l.tick(1 / 60, false); assert.ok(!l.haufen[0].pts.visible, 'außerhalb vom Herbst unsichtbar');
+  l.tick(1 / 60, true); assert.ok(l.haufen[0].pts.visible);
+  st.tempo = 3; for (let i = 0; i < 60; i++) { st.pos.z += 3 / 60; l.tick(1 / 60, true); }
+  assert.equal(n, 1, 'einmal gesprungen (gesperrt danach)');
+  const hoch = Math.max(...Array.from(l.haufen[0].pos).filter((_, i) => i % 3 === 1)); assert.ok(hoch > 0.6, 'Blätter fliegen hoch: ' + hoch);
+  st.tempo = 0; for (let i = 0; i < 60 * 14; i++) l.tick(1 / 60, true);
+  assert.deepEqual(Array.from(l.haufen[0].pos), Array.from(l.haufen[0].heim), 'wieder zum Haufen zusammengeweht');
 });

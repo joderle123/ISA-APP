@@ -5,7 +5,7 @@
 const m = (S) => S.merke || {};
 const herzen = (S, ab) => Object.values(S.herz || {}).filter((h) => h >= ab).length;
 
-export const ARTEN = [['kopf', '🧢 Kopf'], ['brille', '🕶️ Brille'], ['oben', '👕 Oberteil'], ['schuhe', '👟 Schuhe'], ['fahrt', '🛹 Brett & Trotti'], ['tier', '🐾 Haustier']];
+export const ARTEN = [['kopf', '🧢 Kopf'], ['brille', '🕶️ Brille'], ['oben', '👕 Oberteil'], ['schuhe', '👟 Schuhe'], ['fahrt', '🛹 Brett & Trotti'], ['tier', '🐾 Haustier'], ['spur', '✨ Spur']];
 
 export const GARDEROBE = [
   // Kopf
@@ -16,6 +16,7 @@ export const GARDEROBE = [
   { id: 'k_propeller', art: 'kopf', wert: 'propeller', farbe: '#5ec8ff', sy: '🚁', name: 'Propellermütze', hinweis: 'S-K-A-T-E im Skatepark komplett', test: (S) => (m(S).skate5 || '').length >= 5 },
   { id: 'k_cap_gold', art: 'kopf', wert: 'cap', farbe: '#ffd166', sy: '🧢', name: 'Goldene Cap', hinweis: '16 Sticker im Dorf finden', test: (S) => (m(S).sticker || []).length >= 16 },
   { id: 'k_billard', art: 'kopf', wert: 'cap', farbe: '#151515', sy: '🎱', name: 'Cap „8-Ball“', hinweis: 'Im Billard einmal gewinnen', test: (S) => (m(S).billardSiege || 0) >= 1 },
+  { id: 'k_bommel', art: 'kopf', wert: 'muetze', farbe: '#e0384f', sy: '⛸️', name: 'Wollmütze „Eisbahn“', hinweis: 'Im Winter 300 m auf der Eisbahn rutschen', test: (S) => (m(S).eisMeter || 0) >= 300 },
   { id: 'k_krone', art: 'kopf', wert: 'krone', farbe: '#ffd23f', sy: '👑', name: 'Krone „Dorf-Legende“', hinweis: 'Alle 24 Sticker finden', test: (S) => (m(S).sticker || []).length >= 24 },
   // Brillen
   { id: 'b_sonne', art: 'brille', wert: 'sonne', farbe: '#1b1f27', sy: '🕶️', name: 'Sonnenbrille', hinweis: '3 Botengänge im Dorf', test: (S) => ((m(S).boten && m(S).boten.n) || 0) >= 3 },
@@ -30,6 +31,7 @@ export const GARDEROBE = [
   { id: 'o_gold', art: 'oben', wert: '#e0b43c', sy: '🏆', name: 'Jacke „Gold“', hinweis: '5 Herausforderungen von Freund:innen', test: (S) => ((m(S).hf && m(S).hf.fertig) || []).length >= 5 },
   { id: 'o_kicker', art: 'oben', wert: '#1f4fa8', sy: '🏆', name: 'Trikot „Kicker-Champion“', hinweis: 'Im Kicker 3 verschiedene Leute schlagen', test: (S) => (m(S).kickerBesiegt || []).length >= 3 },
   { id: 'o_billard', art: 'oben', wert: '#151515', sy: '🎱', name: 'Weste „Billard-Profi“', hinweis: 'Im Billard 3 verschiedene Leute schlagen', test: (S) => (m(S).billardBesiegt || []).length >= 3 },
+  { id: 'o_kaktus', art: 'oben', wert: '#3f9a4a', sy: '🌵', name: 'Shirt „Kevin der Kaktus“', hinweis: 'Spielautomat: 500 Punkte bei Kevin rennt', test: (S) => (m(S).kevinRekord || 0) >= 500 },
   // Schuhe
   { id: 's_rot', art: 'schuhe', wert: '#d6452f', sy: '👟', name: 'Sneaker „Feuer“', hinweis: '8 Sticker finden', test: (S) => (m(S).sticker || []).length >= 8 },
   { id: 's_neon', art: 'schuhe', wert: '#39ff14', sy: '💚', name: 'Sneaker „Neon“', hinweis: 'Tanzfläche: 3 Sterne', test: (S) => (m(S).tanzSterne || 0) >= 3 },
@@ -47,6 +49,12 @@ export const GARDEROBE = [
   { id: 't_igel', art: 'tier', wert: 'igel', farbe: '#7a5a3a', sy: '🦔', name: 'Igel „Stachel“', hinweis: 'Im Park am Weiher die Enten beobachten', test: (S) => (m(S).enten || 0) >= 1 },
   { id: 't_hamster', art: 'tier', wert: 'hamster', farbe: '#e8b070', sy: '🐹', name: 'Hamster „Pommes“', hinweis: '5 Botengänge im Dorf', test: (S) => ((m(S).boten && m(S).boten.n) || 0) >= 5 },
   { id: 't_schildkroete', art: 'tier', wert: 'schildkroete', farbe: '#5f8a4a', sy: '🐢', name: 'Schildkröte „Turbo“', hinweis: 'S-K-A-T-E auf Zeit: unter 45 Sekunden', test: (S) => !!m(S).skate5Rekord && m(S).skate5Rekord < 45 },
+  // Spur (spur.js): erscheint beim Rennen, Fahren und Rutschen
+  { id: 'sp_funken', art: 'spur', wert: 'funken', sy: '✨', name: 'Spur „Funken“', hinweis: '3 Wochenaufgaben schaffen', test: (S) => (m(S).wochenGesamt || 0) >= 3 },
+  { id: 'sp_herzen', art: 'spur', wert: 'herzen', sy: '💖', name: 'Spur „Herzen“', hinweis: 'Dein Haustier 10× streicheln', test: (S) => (m(S).tierStreicheln || 0) >= 10 },
+  { id: 'sp_sterne', art: 'spur', wert: 'sterne', sy: '⭐', name: 'Spur „Sterne“', hinweis: 'In einem Kapitel alle 3 Wochenaufgaben', test: (S) => (m(S).wochenVoll || 0) >= 1 },
+  { id: 'sp_schnee', art: 'spur', wert: 'schnee', sy: '❄️', name: 'Spur „Schneeflocken“', hinweis: 'Im Winter 600 m auf der Eisbahn rutschen', test: (S) => (m(S).eisMeter || 0) >= 600 },
+  { id: 'sp_regenbogen', art: 'spur', wert: 'regenbogen', sy: '🌈', name: 'Spur „Regenbogen“', hinweis: '10× lernen (Arbeitsblatt oder Lektion)', test: (S) => (m(S).lernen || 0) >= 10 },
 ];
 
 // Dorf-Level (wie ein Pass – aber kostenlos, ohne Zeitlimit): zählt ALLE je verdienten Jetons, auch fürs Lernen (Arbeitsblätter,

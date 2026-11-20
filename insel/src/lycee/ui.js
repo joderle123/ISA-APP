@@ -17,7 +17,7 @@ export function createUI({ root, input, speech }) {
   const hinweis = el('button', 'ly-hinweis'); hinweis.type = 'button'; hinweis.hidden = true; hud.appendChild(hinweis);
   const toastBox = el('div', 'ly-toasts'); hud.appendChild(toastBox);
   const bingo = el('div', 'ly-bingo hud-interactive'); bingo.hidden = true; hud.appendChild(bingo);
-  const knoepfe = el('div', 'ly-knoepfe', '<button type="button" data-k="handy" title="Handy: Nachrichten (N)" aria-label="Handy"><span>📱</span><i class="ly-badge" hidden></i></button><button type="button" data-k="fahrt" title="Fahren: R = Skateboard, T = Trottinette" aria-label="Fahren">🛹</button><button type="button" data-k="foto" title="Fotomodus (C)" aria-label="Fotomodus">📷</button><button type="button" data-k="raus" title="Kurz raus (P)" aria-label="Kurz raus">⏸</button><button type="button" data-k="journal" title="Journal (Tab)" aria-label="Journal">☰</button>'); hud.appendChild(knoepfe);
+  const knoepfe = el('div', 'ly-knoepfe', '<button type="button" data-k="handy" title="Handy: Nachrichten (N)" aria-label="Handy"><span>📱</span><i class="ly-badge" hidden></i></button><button type="button" data-k="garderobe" title="Garderobe (G)" aria-label="Garderobe"><span>👕</span><i class="ly-badge" hidden></i></button><button type="button" data-k="fahrt" title="Fahren: R = Skateboard, T = Trottinette" aria-label="Fahren">🛹</button><button type="button" data-k="foto" title="Fotomodus (C)" aria-label="Fotomodus">📷</button><button type="button" data-k="raus" title="Kurz raus (P)" aria-label="Kurz raus">⏸</button><button type="button" data-k="journal" title="Journal (Tab)" aria-label="Journal">☰</button>'); hud.appendChild(knoepfe);
   const mutEl = el('div', 'ly-mut'); mutEl.hidden = true; hud.appendChild(mutEl);   // Anspannung während einer Mutprobe
   const skateEl = el('div', 'ly-skate'); skateEl.hidden = true; hud.appendChild(skateEl);   // Skate-Session: Zeit, Punkte, Trick
   const skateKn = el('div', 'ly-skate-knoepfe hud-interactive'); skateKn.hidden = true; hud.appendChild(skateKn);
@@ -113,6 +113,16 @@ export function createUI({ root, input, speech }) {
     const ms = Math.min(9000, 2600 + x.textContent.length * 45);   // Länge bestimmt die Zeit; Antippen hält fest
     let tw = setTimeout(() => x.classList.add('weg'), ms), tr = setTimeout(() => x.remove(), ms + 600);
     x.addEventListener('click', () => { clearTimeout(tw); clearTimeout(tr); x.classList.toggle('fest'); if (!x.classList.contains('fest')) { x.classList.add('weg'); setTimeout(() => x.remove(), 600); } });
+  };
+  // Belohnungs-Karte (Garderobe): springt groß auf, Strahlen dahinter, „Gleich anziehen“ oder „Später“ – geht nach 7 s von selbst
+  ui.belohnung = ({ sy, name, art = '', knopf = 'Gleich anziehen', onKnopf = null }) => {
+    const x = el('div', 'ly-beloh', '<div class="ly-beloh-strahlen"></div><div class="ly-beloh-karte"><small>Neu freigeschaltet' + (art ? ' · ' + esc(art) : '') + '</small><div class="ly-beloh-sy">' + sy + '</div><b>' + esc(name) + '</b>' +
+      '<div class="ly-beloh-kn">' + (onKnopf ? '<button type="button" class="ly-beloh-an">' + esc(knopf) + '</button>' : '') + '<button type="button" class="ly-beloh-zu">' + (onKnopf ? 'Später' : 'Super!') + '</button></div></div>');
+    hud.appendChild(x);
+    const zu = () => { if (x.classList.contains('weg')) return; x.classList.add('weg'); setTimeout(() => x.remove(), 500); };
+    const t = setTimeout(zu, 7000);
+    const an = x.querySelector('.ly-beloh-an'); if (an) an.onclick = () => { clearTimeout(t); zu(); onKnopf(); };
+    x.querySelector('.ly-beloh-zu').onclick = () => { clearTimeout(t); zu(); };
   };
   ui.staerke = (s) => ui.toast('<b>Stärke: ' + esc(s.name) + '</b><span>' + esc(s.text) + '</span>', 'ly-t-staerke');
   ui.herz = (name, n) => ui.toast((n > 0 ? '♥ ' : '') + esc(name) + (n > 0 ? ' mag dich ein bisschen mehr' : ' findet das nicht so gut'), n > 0 ? 'ly-t-herz' : 'ly-t-kalt');
@@ -268,7 +278,9 @@ export function createUI({ root, input, speech }) {
   akt.addEventListener('pointerdown', (e) => { e.preventDefault(); e.stopPropagation(); if (weiterFn) weiterFn(); else if (ui.onAktion) ui.onAktion(); });
   knoepfe.querySelector('[data-k="handy"]').onclick = () => { if (ebene.hidden && !dialogOffen) ui.onHandy && ui.onHandy(); };
   // Zähler für neue Nachrichten am Handy-Knopf
-  ui.handyNeu = (n) => { const b = knoepfe.querySelector('.ly-badge'); if (!b) return; b.hidden = !n; b.textContent = n > 9 ? '9+' : String(n || ''); };
+  knoepfe.querySelector('[data-k="garderobe"]').onclick = () => { if (ebene.hidden && !dialogOffen) ui.onGarderobe && ui.onGarderobe(); };
+  ui.garderobeNeu = (n) => { const b = knoepfe.querySelector('[data-k="garderobe"] .ly-badge'); if (!b) return; b.hidden = !n; b.textContent = n > 9 ? '9+' : String(n || ''); };
+  ui.handyNeu = (n) => { const b = knoepfe.querySelector('[data-k="handy"] .ly-badge'); if (!b) return; b.hidden = !n; b.textContent = n > 9 ? '9+' : String(n || ''); };
   knoepfe.querySelector('[data-k="foto"]').onclick = () => { if (ebene.hidden && !dialogOffen) ui.onFoto && ui.onFoto(); };
   knoepfe.querySelector('[data-k="fahrt"]').onclick = () => { if (ebene.hidden && !dialogOffen) ui.onFahrt && ui.onFahrt(null); };   // tippen: Brett → Trottinette → absteigen
   knoepfe.querySelector('[data-k="raus"]').onclick = () => { if (ebene.hidden && (!dialogOffen || ui.pauseImDialog)) ui.onRaus && ui.onRaus(); else if (ebene.dataset.art === 'raus' && ui.rausZu) ui.rausZu(); };
@@ -750,7 +762,7 @@ export function createUI({ root, input, speech }) {
         '<div class="ly-gd-reiter">' + arten.map(([a, t]) => '<button type="button" class="ly-ed-wort' + (a === reiter ? ' an' : '') + '" data-r="' + a + '">' + t + (daten.some((x) => x.art === a && x.neu) ? ' •' : '') + '</button>').join('') + '</div>' +
         '<div class="ly-gd-gitter">' + daten.filter((x) => x.art === reiter).map((x) => '<button type="button" class="ly-gd-ding' + (x.hab ? '' : ' zu') + (x.an ? ' an' : '') + '" data-id="' + esc(x.id) + '"' + (x.hab ? '' : ' disabled') + '>' +
           '<span class="ly-gd-sy">' + (x.hab ? x.sy : '🔒') + '</span><b>' + esc(x.name) + '</b><small>' + (x.hab ? (x.an ? '✔ An' : (x.neu ? 'NEU · antippen' : 'Antippen = anziehen')) : esc(x.hinweis)) + '</small></button>').join('') + '</div>' +
-        '<p class="ly-leer">Alles hier wird verdient – durch Nebenaufgaben im Dorf. Kein Zufall, kein Geld.</p>' +
+        '<p class="ly-leer">Alles hier wird verdient – durch Nebenaufgaben im Dorf. Kein Zufall, kein Geld. ← → dreht die Ansicht.</p>' +
         '<div class="ly-t-knoepfe"><button type="button" class="ly-btn ly-primaer" data-a="ok">Fertig <kbd>G</kbd></button></div>');
       k.querySelectorAll('[data-r]').forEach((b) => { b.onclick = () => { reiter = b.dataset.r; zeig(); }; });
       k.querySelectorAll('[data-id]').forEach((b) => { b.onclick = async () => { daten = (await wahl(b.dataset.id)) || daten; zeig(); }; });
