@@ -87,29 +87,29 @@ export function brettZeichnung({ laenge = 200, breite = 80, loch = 8, rand = 20 
 }
 
 /** Spielfelder (vereinfacht, nicht maßstabsgetreu) mit Nummern zum Beschriften */
-export function spielfeld(art = 'fussball') {
+export function spielfeld(art = 'fussball', { nummern = true } = {}) {
   const W = 520, H = 320, g = (x) => x
   let o = `<svg viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg" class="feld-svg">`
   const linie = 'fill="none" stroke="#fff" stroke-width="3"'
   if (art === 'fussball') {
     o += `<rect x="0" y="0" width="${W}" height="${H}" rx="8" fill="#3f9b4f"/><rect x="20" y="20" width="480" height="280" ${linie}/><line x1="260" y1="20" x2="260" y2="300" stroke="#fff" stroke-width="3"/><circle cx="260" cy="160" r="45" ${linie}/><circle cx="260" cy="160" r="4" fill="#fff"/>`
     o += `<rect x="20" y="85" width="80" height="150" ${linie}/><rect x="420" y="85" width="80" height="150" ${linie}/><rect x="20" y="125" width="28" height="70" ${linie}/><rect x="472" y="125" width="28" height="70" ${linie}/><rect x="8" y="140" width="12" height="40" fill="#fff"/><rect x="500" y="140" width="12" height="40" fill="#fff"/><circle cx="76" cy="160" r="3.5" fill="#fff"/>`
-    o += nr(10, 200, 1) + nr(98, 66, 2) + nr(282, 40, 3) + nr(318, 160, 4) + nr(160, 300, 5) + nr(76, 180, 6)
+    if (nummern) o += nr(10, 200, 1) + nr(98, 66, 2) + nr(282, 40, 3) + nr(318, 160, 4) + nr(160, 300, 5) + nr(76, 180, 6)
   } else if (art === 'basketball') {
     o += `<rect x="0" y="0" width="${W}" height="${H}" rx="8" fill="#d79a5a"/><rect x="20" y="20" width="480" height="280" ${linie}/><line x1="260" y1="20" x2="260" y2="300" stroke="#fff" stroke-width="3"/><circle cx="260" cy="160" r="36" ${linie}/>`
     for (const [x, d] of [[20, 1], [500, -1]]) {
       o += `<rect x="${d > 0 ? x : x - 110}" y="115" width="110" height="90" fill="rgba(255,255,255,0.18)" stroke="#fff" stroke-width="3"/><circle cx="${x + d * 110}" cy="160" r="36" ${linie}/>`
       o += `<path d="M${x} 42 H${x + d * 30} A140 140 0 0 ${d > 0 ? 1 : 0} ${x + d * 30} 278 H${x}" ${linie}/><circle cx="${x + d * 30}" cy="160" r="9" fill="none" stroke="#e05a1c" stroke-width="3"/><line x1="${x + d * 18}" y1="146" x2="${x + d * 18}" y2="174" stroke="#fff" stroke-width="4"/>`
     }
-    o += nr(64, 160, 1) + nr(130, 102, 2) + nr(178, 50, 3) + nr(282, 300, 4) + nr(94, 196, 5) + nr(260, 112, 6)
+    if (nummern) o += nr(64, 160, 1) + nr(130, 102, 2) + nr(178, 50, 3) + nr(282, 300, 4) + nr(94, 196, 5) + nr(260, 112, 6)
   } else if (art === 'badminton') {
     o += `<rect x="0" y="0" width="${W}" height="${H}" rx="8" fill="#2f7a8a"/><rect x="30" y="30" width="460" height="260" ${linie}/><line x1="30" y1="52" x2="490" y2="52" stroke="#fff" stroke-width="3"/><line x1="30" y1="268" x2="490" y2="268" stroke="#fff" stroke-width="3"/>`
     o += `<line x1="200" y1="30" x2="200" y2="290" stroke="#fff" stroke-width="3"/><line x1="320" y1="30" x2="320" y2="290" stroke="#fff" stroke-width="3"/><line x1="56" y1="30" x2="56" y2="290" stroke="#fff" stroke-width="3"/><line x1="464" y1="30" x2="464" y2="290" stroke="#fff" stroke-width="3"/>`
     o += `<line x1="30" y1="160" x2="200" y2="160" stroke="#fff" stroke-width="3"/><line x1="320" y1="160" x2="490" y2="160" stroke="#fff" stroke-width="3"/><line x1="260" y1="16" x2="260" y2="304" stroke="#1a1a1a" stroke-width="6" stroke-dasharray="3 3"/>`
-    o += nr(260, 160, 1) + nr(200, 210, 2) + nr(120, 160, 3) + nr(110, 52, 4) + nr(110, 30, 5) + nr(56, 230, 6)
+    if (nummern) o += nr(260, 160, 1) + nr(200, 210, 2) + nr(120, 160, 3) + nr(110, 52, 4) + nr(110, 30, 5) + nr(56, 230, 6)
   } else if (art === 'volleyball') {
     o += `<rect x="0" y="0" width="${W}" height="${H}" rx="8" fill="#e8a13a"/><rect x="40" y="40" width="440" height="240" ${linie}/><line x1="187" y1="40" x2="187" y2="280" stroke="#fff" stroke-width="3"/><line x1="333" y1="40" x2="333" y2="280" stroke="#fff" stroke-width="3"/><line x1="260" y1="20" x2="260" y2="300" stroke="#1a1a1a" stroke-width="6" stroke-dasharray="3 3"/>`
-    o += nr(260, 160, 1) + nr(187, 210, 2) + nr(110, 120, 3) + nr(40, 220, 4) + nr(400, 40, 5) + nr(225, 160, 6)
+    if (nummern) o += nr(260, 160, 1) + nr(187, 210, 2) + nr(110, 120, 3) + nr(40, 220, 4) + nr(400, 40, 5) + nr(225, 160, 6)
   }
   return `<figure class="feld">${o}</svg></figure>`
 }
