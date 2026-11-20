@@ -1,0 +1,594 @@
+{
+ "modul": "cg2",
+ "titel": {
+  "de": "Leben und gesund bleiben",
+  "fr": "Le vivant et la santé"
+ },
+ "sprache": "de",
+ "spuren": {
+  "cg2-01l": {
+   "titel": "Woran erkennt man Leben?",
+   "art": "lesen",
+   "lektion": 1,
+   "dauer": 75.2,
+   "text": [
+    [
+     "",
+     "Woran erkennt man Leben?"
+    ],
+    [
+     "",
+     "Menschen, Tiere, Pflanzen und Pilze sind Lebewesen. Steine, Wasser oder ein Auto sind nicht lebendig. Doch wie unterscheidet man sie? Forscherinnen und Forscher haben Kennzeichen des Lebens gesammelt. Ein Lebewesen hat alle diese Kennzeichen:"
+    ],
+    [
+     "",
+     "Die Kennzeichen."
+    ],
+    [
+     "",
+     "Ernährung: Es nimmt Stoffe auf, die ihm Energie geben. Atmung: Es braucht Gase aus der Luft oder dem Wasser. Wachstum: Es wird größer und entwickelt sich. Fortpflanzung: Es kann Nachkommen bekommen. Reizbarkeit: Es reagiert auf seine Umwelt, zum Beispiel auf Licht oder Berührung. Bewegung: Es kann sich oder Teile von sich bewegen – auch Pflanzen drehen ihre Blätter zum Licht."
+    ],
+    [
+     "",
+     "Vorsicht, Falle."
+    ],
+    [
+     "",
+     "Ein Feuer „frisst“ Holz, wird größer und braucht Luft. Trotzdem lebt es nicht: Es kann sich nicht selbst fortpflanzen und besteht nicht aus Zellen. Alle Lebewesen bestehen aus winzigen Bausteinen, den Zellen. Man sieht sie nur mit dem Mikroskop."
+    ]
+   ]
+  },
+  "cg2-01h": {
+   "titel": "Ist ein Samenkorn lebendig?",
+   "art": "hoeren",
+   "lektion": 1,
+   "dauer": 50.1,
+   "text": [
+    [
+     "Frau Kremer",
+     "Hier habe ich ein Bohnensamenkorn. Lebt es – ja oder nein?"
+    ],
+    [
+     "Lea",
+     "Nein. Es bewegt sich nicht, es frisst nicht, es macht gar nichts."
+    ],
+    [
+     "Noah",
+     "Aber wenn man es in Erde steckt und gießt, wächst eine Pflanze. Also lebt es doch!"
+    ],
+    [
+     "Frau Kremer",
+     "Ihr habt beide gute Gründe. Das Samenkorn „schläft“: Es lebt, aber ganz langsam. Wir sagen: Es ruht."
+    ],
+    [
+     "Lea",
+     "Wie lange kann es schlafen?"
+    ],
+    [
+     "Frau Kremer",
+     "Manche Samen viele Jahre. Wenn es Wasser, Wärme und Luft bekommt, wacht es auf. Das nennt man Keimen."
+    ],
+    [
+     "Noah",
+     "Können wir das ausprobieren?"
+    ],
+    [
+     "Frau Kremer",
+     "Ja! Nächste Woche legen wir Bohnen auf feuchte Watte. Dann beobachtet ihr jeden Tag."
+    ]
+   ]
+  },
+  "cg2-02l": {
+   "titel": "Eine Pflanze – ein kleines Kraftwerk",
+   "art": "lesen",
+   "lektion": 2,
+   "dauer": 48.8,
+   "text": [
+    [
+     "",
+     "Eine Pflanze – ein kleines Kraftwerk"
+    ],
+    [
+     "",
+     "Die Wurzeln halten die Pflanze in der Erde fest. Mit ihnen nimmt sie Wasser und Mineralstoffe auf. Der Stängel trägt die Pflanze und leitet das Wasser nach oben – wie ein Rohr."
+    ],
+    [
+     "",
+     "In den grünen Blättern passiert etwas Erstaunliches: Mit Licht, Wasser und dem Gas Kohlenstoffdioxid aus der Luft stellt die Pflanze ihre eigene Nahrung her: Zucker. Dabei gibt sie Sauerstoff ab – den Sauerstoff, den wir atmen. Diesen Vorgang nennt man Fotosynthese."
+    ],
+    [
+     "",
+     "Die Blüte ist für die Fortpflanzung da. Insekten wie Bienen tragen Blütenstaub von Blüte zu Blüte. Danach entstehen Früchte mit Samen, aus denen neue Pflanzen wachsen."
+    ]
+   ]
+  },
+  "cg2-02h": {
+   "titel": "Warum ist meine Pflanze gelb?",
+   "art": "hoeren",
+   "lektion": 2,
+   "dauer": 49.1,
+   "text": [
+    [
+     "Lea",
+     "Guten Tag. Meine Pflanze wird immer gelber. Ich gieße sie jeden Tag!"
+    ],
+    [
+     "Gärtnerin",
+     "Jeden Tag? Wie viel Wasser denn?"
+    ],
+    [
+     "Lea",
+     "Ein ganzes Glas. Ich will, dass sie genug hat."
+    ],
+    [
+     "Gärtnerin",
+     "Das ist lieb gemeint, aber zu viel. Wenn die Erde immer nass ist, bekommen die Wurzeln keine Luft und faulen. Dann wird die Pflanze gelb."
+    ],
+    [
+     "Lea",
+     "Oh nein. Und wo soll sie stehen?"
+    ],
+    [
+     "Gärtnerin",
+     "Hell, aber nicht direkt in der prallen Mittagssonne. Und nicht direkt über der Heizung."
+    ],
+    [
+     "Lea",
+     "Sie steht im Schrank-Regal, ziemlich dunkel …"
+    ],
+    [
+     "Gärtnerin",
+     "Dann stell sie ans Fenster und gieß nur, wenn die Erde oben trocken ist. Steck einfach einen Finger hinein."
+    ]
+   ]
+  },
+  "cg2-03l": {
+   "titel": "Bewohner des Waldes",
+   "art": "lesen",
+   "lektion": 3,
+   "dauer": 76.8,
+   "text": [
+    [
+     "",
+     "Bewohner des Waldes"
+    ],
+    [
+     "",
+     "Der Rotfuchs – Säugetier. Größe: etwa 70 cm (ohne Schwanz) · Nahrung: Mäuse, Insekten, Früchte, Abfälle. Der Fuchs ist schlau und anpassungsfähig. Er lebt im Wald, aber auch am Rand von Städten. Er jagt vor allem in der Dämmerung."
+    ],
+    [
+     "",
+     "Der Buntspecht – Vogel. Größe: etwa 23 cm · Nahrung: Insekten unter der Rinde, Samen. Mit seinem kräftigen Schnabel hämmert er Löcher in Bäume. So findet er Nahrung und baut seine Bruthöhle."
+    ],
+    [
+     "",
+     "Das Wildschwein – Säugetier. Größe: bis 1,60 m · Nahrung: Eicheln, Wurzeln, Würmer, Pilze. Wildschweine leben in Gruppen, den Rotten. Mit der Schnauze wühlen sie den Boden um. Im Frühling haben die Frischlinge braun-gelbe Streifen."
+    ],
+    [
+     "",
+     "Der Feuersalamander – Amphib (Lurch). Größe: etwa 20 cm · Nahrung: Würmer, Schnecken, Insekten. Schwarz mit gelben Flecken – das warnt Feinde: Seine Haut ist giftig. Er mag feuchte Wälder mit Bächen, zum Beispiel im Müllerthal. Er ist geschützt."
+    ]
+   ]
+  },
+  "cg2-03h": {
+   "titel": "Mit dem Förster unterwegs",
+   "art": "hoeren",
+   "lektion": 3,
+   "dauer": 50.6,
+   "text": [
+    [
+     "Förster Laurent",
+     "Pssst! Schaut mal auf den Boden. Was seht ihr?"
+    ],
+    [
+     "Finn",
+     "Die Erde ist ganz umgegraben. Wie mit einem kleinen Bagger!"
+    ],
+    [
+     "Förster Laurent",
+     "Das waren Wildschweine. Sie suchen Eicheln und Würmer. Heute Nacht war eine ganze Rotte hier."
+    ],
+    [
+     "Lina",
+     "Sind Wildschweine gefährlich?"
+    ],
+    [
+     "Förster Laurent",
+     "Normalerweise laufen sie weg. Aber eine Mutter mit Frischlingen kann sich verteidigen. Darum: Abstand halten und ruhig weggehen."
+    ],
+    [
+     "Finn",
+     "Und was ist das für ein Klopfen da oben?"
+    ],
+    [
+     "Förster Laurent",
+     "Ein Buntspecht! Er hämmert bis zu zwanzig Mal pro Sekunde gegen den Baum. Sein Kopf hält das aus, weil sein Schädel besonders gebaut ist."
+    ],
+    [
+     "Lina",
+     "Warum lässt man den toten Baum dort stehen?"
+    ],
+    [
+     "Förster Laurent",
+     "Totholz ist voller Leben: Käfer, Pilze, Spechthöhlen. Ein Wald braucht auch alte und tote Bäume."
+    ]
+   ]
+  },
+  "cg2-04l": {
+   "titel": "Alles hängt zusammen",
+   "art": "lesen",
+   "lektion": 4,
+   "dauer": 57.5,
+   "text": [
+    [
+     "",
+     "Alles hängt zusammen"
+    ],
+    [
+     "",
+     "Im Frühling frisst eine Raupe das Blatt einer Eiche. Eine Meise fängt die Raupe und füttert damit ihre Jungen. Später erwischt ein Sperber die Meise. So entsteht eine Nahrungskette: Eiche → Raupe → Meise → Sperber."
+    ],
+    [
+     "",
+     "Wer macht was."
+    ],
+    [
+     "",
+     "Am Anfang jeder Kette steht eine Pflanze. Sie ist der Produzent: Mit Sonnenlicht stellt sie ihre Nahrung selbst her. Tiere können das nicht. Sie sind Konsumenten: Sie fressen Pflanzen oder andere Tiere. Wenn Pflanzen und Tiere sterben, kommen die Zersetzer: Pilze, Bakterien und Würmer. Sie machen daraus wieder Erde mit Nährstoffen für neue Pflanzen."
+    ],
+    [
+     "",
+     "Ein Netz."
+    ],
+    [
+     "",
+     "In Wirklichkeit fressen die meisten Tiere mehr als eine Sache. Die Meise frisst auch Samen, der Fuchs auch Beeren. Viele Ketten bilden zusammen ein Nahrungsnetz. Fehlt ein Glied, spüren es viele andere."
+    ]
+   ]
+  },
+  "cg2-04h": {
+   "titel": "Was passiert, wenn …?",
+   "art": "hoeren",
+   "lektion": 4,
+   "dauer": 56.2,
+   "text": [
+    [
+     "Yusuf",
+     "Willkommen zum Natur-Quiz! Erste Frage: In einem Teich gibt es Algen, Kaulquappen und Fische. Wer ist der Produzent?"
+    ],
+    [
+     "Chloé",
+     "Die Algen! Sie machen mit Sonnenlicht ihre Nahrung."
+    ],
+    [
+     "Yusuf",
+     "Richtig! Ein Punkt für Chloé. Zweite Frage: Was passiert, wenn alle Fische im Teich verschwinden?"
+    ],
+    [
+     "Ben",
+     "Dann gibt es viel mehr Kaulquappen, weil keiner sie frisst."
+    ],
+    [
+     "Yusuf",
+     "Und dann?"
+    ],
+    [
+     "Ben",
+     "Hm … Dann fressen die vielen Kaulquappen fast alle Algen. Und dann haben sie selbst nichts mehr zu fressen!"
+    ],
+    [
+     "Yusuf",
+     "Genau! Ein Punkt für Ben. Das zeigt: Wenn ein Glied fehlt, gerät alles durcheinander. Letzte Frage: Wer räumt am Ende auf?"
+    ],
+    [
+     "Chloé",
+     "Die Zersetzer: Pilze und Bakterien!"
+    ],
+    [
+     "Yusuf",
+     "Richtig! Damit gewinnt Chloé zwei zu eins. Danke fürs Mitmachen."
+    ]
+   ]
+  },
+  "cg2-05l": {
+   "titel": "Die Ernährungspyramide",
+   "art": "lesen",
+   "lektion": 5,
+   "dauer": 76.7,
+   "text": [
+    [
+     "",
+     "Die Ernährungspyramide"
+    ],
+    [
+     "",
+     "Unser Körper braucht viele verschiedene Stoffe: Energie, um zu lernen und zu spielen, Eiweiß für die Muskeln, Vitamine gegen Krankheiten. Kein Lebensmittel hat alles. Darum ist Abwechslung wichtig. Die Ernährungspyramide zeigt, wovon man viel und wovon man wenig essen sollte."
+    ],
+    [
+     "",
+     "Ganz unten stehen die Getränke: am besten Wasser oder ungesüßter Tee, über den Tag verteilt etwa 1,5 Liter. Darüber kommen Gemüse und Obst und Getreide wie Brot, Nudeln, Reis und Kartoffeln. In der Mitte stehen Milchprodukte, Fleisch, Fisch und Eier – sie sind wichtig, aber in kleineren Mengen. Oben stehen Fette und Öle und ganz oben Süßes und Knabbereien: Das darf man genießen, aber nur ab und zu."
+    ],
+    [
+     "",
+     "Versteckter Zucker."
+    ],
+    [
+     "",
+     "In vielen Getränken steckt viel Zucker. Eine Flasche Limonade (0,5 Liter) enthält oft über 50 Gramm Zucker – das sind etwa 17 Stück Würfelzucker. Die Weltgesundheitsorganisation empfiehlt, möglichst wenig zugesetzten Zucker zu essen und zu trinken."
+    ]
+   ]
+  },
+  "cg2-05h": {
+   "titel": "Pommes oder Gemüse?",
+   "art": "hoeren",
+   "lektion": 5,
+   "dauer": 51.5,
+   "text": [
+    [
+     "Köchin",
+     "Heute gibt es Menü eins: Hähnchen mit Reis und Gemüse. Oder Menü zwei: Schnitzel mit Pommes."
+    ],
+    [
+     "Ben",
+     "Ganz klar: Schnitzel mit Pommes! Und eine Cola."
+    ],
+    [
+     "Mia",
+     "Schon wieder? Du hattest gestern Pizza und vorgestern Burger."
+    ],
+    [
+     "Ben",
+     "Na und? Es schmeckt eben."
+    ],
+    [
+     "Mia",
+     "Klar, Pommes sind lecker. Aber dein Teller ist dann fast ganz gelb und braun. Wo ist das Gemüse?"
+    ],
+    [
+     "Ben",
+     "Okay, okay … Kann ich Schnitzel mit Reis und Gemüse haben, statt Pommes?"
+    ],
+    [
+     "Köchin",
+     "Kein Problem. Und Wasser steht gratis auf dem Tisch."
+    ],
+    [
+     "Ben",
+     "Dann spare ich mir die Cola. Aber morgen gibt es wieder Pommes!"
+    ],
+    [
+     "Mia",
+     "Morgen ist morgen. Ab und zu ist völlig okay."
+    ]
+   ]
+  },
+  "cg2-06l": {
+   "titel": "Was passiert, wenn wir schlafen?",
+   "art": "lesen",
+   "lektion": 6,
+   "dauer": 71.4,
+   "text": [
+    [
+     "",
+     "Was passiert, wenn wir schlafen?"
+    ],
+    [
+     "",
+     "Schlafen sieht langweilig aus – doch dein Körper arbeitet die ganze Nacht. Das Gehirn sortiert, was du am Tag gelernt hast, und speichert es. Der Körper repariert sich, und bei Kindern und Jugendlichen wird nachts ein Wachstumshormon ausgeschüttet."
+    ],
+    [
+     "",
+     "Wie viel Schlaf."
+    ],
+    [
+     "",
+     "Fachleute empfehlen für Jugendliche zwischen 13 und 18 Jahren 8 bis 10 Stunden Schlaf pro Nacht, für Jüngere sogar 9 bis 12 Stunden. Viele schlafen deutlich weniger – oft wegen des Handys."
+    ],
+    [
+     "",
+     "Bildschirm und Schlaf."
+    ],
+    [
+     "",
+     "Spannende Videos, Spiele und Nachrichten halten das Gehirn wach. Außerdem kann das helle Licht von Bildschirmen das Einschlafen stören. Ein guter Tipp: eine Stunde vor dem Schlafen keine Bildschirme mehr, und das Handy nicht neben das Bett legen."
+    ],
+    [
+     "",
+     "Weitere Tipps: jeden Tag ungefähr zur gleichen Zeit ins Bett gehen, abends nicht zu schwer essen, tagsüber draußen bewegen, und im Zimmer soll es ruhig, dunkel und eher kühl sein."
+    ]
+   ]
+  },
+  "cg2-06h": {
+   "titel": "Nur noch ein Video …",
+   "art": "hoeren",
+   "lektion": 6,
+   "dauer": 55.3,
+   "text": [
+    [
+     "Schulärztin",
+     "Noah, du siehst müde aus. Wann bist du gestern eingeschlafen?"
+    ],
+    [
+     "Noah",
+     "Ehrlich? So um halb eins. Ich wollte nur noch ein Video schauen … und dann noch eins."
+    ],
+    [
+     "Schulärztin",
+     "Und wann stehst du auf?"
+    ],
+    [
+     "Noah",
+     "Um sechs Uhr dreißig. Mein Bus fährt um sieben."
+    ],
+    [
+     "Schulärztin",
+     "Dann hast du nur sechs Stunden geschlafen. Für dein Alter sind acht bis zehn Stunden gut. Dir fehlen also zwei bis vier Stunden – jede Nacht."
+    ],
+    [
+     "Noah",
+     "Das erklärt, warum ich in Mathe immer einschlafe …"
+    ],
+    [
+     "Schulärztin",
+     "Mach einen Versuch: Eine Woche lang legst du das Handy um einundzwanzig Uhr dreißig in die Küche. Du gehst um zweiundzwanzig Uhr ins Bett."
+    ],
+    [
+     "Noah",
+     "In die Küche? Und wenn mir jemand schreibt?"
+    ],
+    [
+     "Schulärztin",
+     "Dann liest du es morgen. Die Nachricht läuft nicht weg – dein Schlaf schon."
+    ]
+   ]
+  },
+  "cg2-07l": {
+   "titel": "Was Bewegung im Körper macht",
+   "art": "lesen",
+   "lektion": 7,
+   "dauer": 57.1,
+   "text": [
+    [
+     "",
+     "Was Bewegung im Körper macht"
+    ],
+    [
+     "",
+     "Die Weltgesundheitsorganisation empfiehlt Kindern und Jugendlichen: jeden Tag mindestens 60 Minuten Bewegung, bei der man ein bisschen ins Schwitzen oder außer Atem kommt. Dazu mehrmals pro Woche Übungen, die Muskeln und Knochen stärken, zum Beispiel Springen, Klettern oder Turnen."
+    ],
+    [
+     "",
+     "Was passiert im Körper."
+    ],
+    [
+     "",
+     "Beim Sport schlägt das Herz schneller und pumpt mehr Blut durch den Körper. Die Lunge atmet tiefer. Die Muskeln werden stärker, die Knochen fester. Auch das Gehirn profitiert: Nach Bewegung kann man sich oft besser konzentrieren, und viele fühlen sich danach fröhlicher und weniger gestresst."
+    ],
+    [
+     "",
+     "Sitzen, sitzen, sitzen."
+    ],
+    [
+     "",
+     "In der Schule, im Bus, vor dem Bildschirm: Viele Jugendliche sitzen täglich viele Stunden. Fachleute raten, langes Sitzen öfter zu unterbrechen – schon kurze Pausen mit Aufstehen und Strecken helfen."
+    ]
+   ]
+  },
+  "cg2-07h": {
+   "titel": "Ich bin einfach unsportlich",
+   "art": "hoeren",
+   "lektion": 7,
+   "dauer": 45.7,
+   "text": [
+    [
+     "Herr Mesenberg",
+     "Sami, du hast heute beim Laufen früh aufgehört. Alles okay?"
+    ],
+    [
+     "Sami",
+     "Ich bin einfach unsportlich. Die anderen sind immer schneller. Das ist peinlich."
+    ],
+    [
+     "Herr Mesenberg",
+     "Es geht nicht darum, der Schnellste zu sein. Es geht darum, dass du dich gut fühlst. Was machst du gern?"
+    ],
+    [
+     "Sami",
+     "Tanzen. Zu Hause tanze ich jeden Abend zu Musikvideos."
+    ],
+    [
+     "Herr Mesenberg",
+     "Das ist doch super Bewegung! Eine halbe Stunde Tanzen – da schwitzt man richtig."
+    ],
+    [
+     "Sami",
+     "Wirklich? Das zählt?"
+    ],
+    [
+     "Herr Mesenberg",
+     "Natürlich. Und wenn du dann noch mit dem Fahrrad zur Schule fährst, hast du deine sechzig Minuten fast geschafft. Übrigens: Ab nächster Woche gibt es eine Tanz-AG in der Mittagspause."
+    ],
+    [
+     "Sami",
+     "Echt? Da melde ich mich an!"
+    ]
+   ]
+  },
+  "cg2-08l": {
+   "titel": "Der beste Müll ist kein Müll",
+   "art": "lesen",
+   "lektion": 8,
+   "dauer": 91.1,
+   "text": [
+    [
+     "",
+     "Der beste Müll ist kein Müll"
+    ],
+    [
+     "",
+     "In Luxemburg wirft jeder Mensch im Jahr mehrere hundert Kilogramm Abfall weg. Was können wir tun? Die wichtigste Regel heißt: Vermeiden – zum Beispiel eine Trinkflasche statt Einwegflaschen, eine Brotdose statt Alufolie. Danach kommt Wiederverwenden: Dinge reparieren, verschenken oder auf dem Flohmarkt verkaufen. Erst am Schluss kommt Recyceln: Aus Altem wird Neues gemacht."
+    ],
+    [
+     "",
+     "Richtig trennen."
+    ],
+    [
+     "",
+     "Papier und Karton kommen in die Papiertonne. Glas kommt in den Glascontainer, nach Farben getrennt. Verpackungen aus Plastik, Metall und Getränkekartons sammelt man in vielen Gemeinden im blauen Sack. Essensreste und Gartenabfälle gehören in die Biotonne – daraus wird Kompost oder Biogas. Was übrig bleibt, kommt in den Restmüll."
+    ],
+    [
+     "",
+     "Gefährlicher Müll."
+    ],
+    [
+     "",
+     "Batterien, alte Handys, Farben und Medikamente gehören niemals in den normalen Müll. Man gibt sie in Sammelstellen im Geschäft oder im Recyclingzentrum ab."
+    ],
+    [
+     "",
+     "Die Reihenfolge: 1. Vermeiden – am besten. 2. Wiederverwenden – reparieren, tauschen. 3. Recyceln – richtig trennen. 4. Restmüll – so wenig wie möglich."
+    ]
+   ]
+  },
+  "cg2-08h": {
+   "titel": "Großputz am Ufer",
+   "art": "hoeren",
+   "lektion": 8,
+   "dauer": 55.4,
+   "text": [
+    [
+     "Lio",
+     "Hallo, hier ist Lio vom Schulradio, live vom Flussufer. Amira, was hast du gefunden?"
+    ],
+    [
+     "Amira",
+     "Unglaublich viel! Plastikflaschen, Chipstüten, sogar einen alten Schuh. Und überall Zigarettenstummel."
+    ],
+    [
+     "Lio",
+     "Zigarettenstummel sind doch klein. Ist das schlimm?"
+    ],
+    [
+     "Amira",
+     "Ja! Frau Sommer hat erklärt, dass sie giftige Stoffe enthalten. Die gelangen ins Wasser und schaden Fischen."
+    ],
+    [
+     "Frau Sommer",
+     "Und Plastik zerfällt nur sehr langsam. Eine Plastikflasche kann Hunderte von Jahren in der Natur bleiben. Sie zerbricht in winzige Teilchen – Mikroplastik."
+    ],
+    [
+     "Lio",
+     "Wie viel haben wir heute gesammelt?"
+    ],
+    [
+     "Frau Sommer",
+     "Acht große Säcke in zwei Stunden. Ihr wart super!"
+    ],
+    [
+     "Amira",
+     "Am besten wäre es aber, wenn erst gar nichts hier landen würde."
+    ]
+   ]
+  }
+ }
+}
