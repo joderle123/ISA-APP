@@ -9,19 +9,25 @@ import { readFileSync } from 'node:fs'
 export const PROGRAMM = JSON.parse(readFileSync(new URL('../daten/mathe-programm.json', import.meta.url), 'utf8'))
 
 /** Aussprache für die Stimme (Python-Regex, nach den deutschen Grundregeln angewendet) */
+const GROSS = ['UND', 'NICHT', 'RECHTS', 'SIEHT', 'EINER', 'NUR', 'SENKRECHT', 'ALLE', 'WELCHE', 'WO', 'LINKS', 'SOFORT', 'LETZTE', 'AUF', 'OBEN', 'UNTEN', 'NIE', 'KLEINER', 'HINTER', 'TIEFER', 'WÄRMER', 'DURCH', 'SEHEN', 'PLUS', 'MINUS', 'VOR', 'JEDES']
 export const MATHE_AUSSPRACHE = {
-  '\\s·\\s': ' mal ', '·': ' mal ', '×': ' mal ', '÷': ' geteilt durch ', '(\\d) : (\\d)': '\\1 geteilt durch \\2',
-  '(\\d)\\.(?=\\d{3}\\b)': '\\1', '−': ' minus ', '\\+': ' plus ', '≈': ' ungefähr ', '=': ' gleich ', '→': ', also ', '⇒': ', also ',
+  '\\s·\\s': ' · ', // Grundregel ausschalten: · wird unten passend gelesen
+  ...Object.fromEntries(GROSS.map((w) => [`\\b${w}\\b`, w.toLowerCase()])), '\\bGRÖSSER\\b': 'größer', '\\bAUSSERHALB\\b': 'außerhalb',
+  '\\((?:HT|ZT|T|H|Z|E)\\)': '', '(\\d (?:HT|ZT|T|H|Z|E)) · ': '\\1, ',
+  '×/÷': ' mal oder geteilt durch ', '\\bmal/geteilt\\b': 'mal oder geteilt durch', '·': ' mal ', '×': ' mal ', '÷': ' geteilt durch ', '(\\d) : (\\d)': '\\1 geteilt durch \\2', '\\)/\\(': ') durch (',
+  '(\\d)\\.(?=\\d{3}\\b)': '\\1', '−': ' minus ', '\\+': ' plus ', '≈': ' ungefähr ', '=': ' gleich ', '([A-Za-zäöüß]) → (?![A-Za-zäöüß]*\\s+gleich)': '\\1 zu ', '→': ', also ', '⇒': ', also ',
   ' < ': ' ist kleiner als ', ' > ': ' ist größer als ', '▢': ' Lücke ', '✅|❌|✓|✗|🟢|🟡|🔵': '',
   '(\\d+),(\\d\\d) ?€': '\\1 Euro \\2', '(\\d+) ?€': '\\1 Euro', '€': 'Euro', '(\\d) ?%': '\\1 Prozent', '°C': ' Grad', '°': ' Grad',
   '(\\d) ?km²': '\\1 Quadratkilometer', '(\\d) ?m²': '\\1 Quadratmeter', '(\\d) ?dm²': '\\1 Quadratdezimeter', '(\\d) ?cm²': '\\1 Quadratzentimeter', '(\\d) ?mm²': '\\1 Quadratmillimeter',
+  '([A-Za-zäöü]{3,}) \\((?:km|m|dm|cm|mm|l|dl|cl|ml|t|kg|g)\\)': '\\1', '\\b1 t\\b': 'eine Tonne', '(?<=[Vv]on )t\\b': 'Tonnen', '(?<=nach )g\\b': 'Gramm', '(?<=nach )l\\b': 'Liter',
   '\\bkm\\b': 'Kilometer', '\\bdm\\b': 'Dezimeter', '\\bcm\\b': 'Zentimeter', '\\bmm\\b': 'Millimeter', '\\bkg\\b': 'Kilogramm', '\\bml\\b': 'Milliliter', '\\bcl\\b': 'Zentiliter', '\\bdl\\b': 'Deziliter',
   '(\\d) ?m\\b': '\\1 Meter', '(\\d) ?g\\b': '\\1 Gramm', '(\\d) ?l\\b': '\\1 Liter', '(\\d) ?t\\b': '\\1 Tonnen', '(\\d) ?min\\b': '\\1 Minuten',
-  '\\bHT\\b': 'Hunderttausender', '\\bZT\\b': 'Zehntausender', '(\\d) T\\b': '\\1 Tausender', '(\\d) H\\b': '\\1 Hunderter', '(\\d) Z\\b': '\\1 Zehner', '(\\d) E\\b': '\\1 Einer', '\\((?:HT|ZT|T|H|Z|E)\\)': '',
+  '(?<=, )m(?=,)': 'Meter', '\\bzu m\\b': 'zu Meter', '\\bt, Kilogramm\\b': 'Tonne, Kilogramm', '\\bKilogramm und g\\b': 'Kilogramm und Gramm', '\\bl, Deziliter\\b': 'Liter, Deziliter',
+  '\\bHT\\b': 'Hunderttausender', '\\bZT\\b': 'Zehntausender', '(\\d) T\\b': '\\1 Tausender', '(\\d) H\\b': '\\1 Hunderter', '(\\d) Z\\b': '\\1 Zehner', '(\\d) E\\b': '\\1 Einer',
   '\\b1/2\\b': 'ein halb', '(\\d+)/2\\b': '\\1 Halbe', '(\\d+)/3\\b': '\\1 Drittel', '(\\d+)/4\\b': '\\1 Viertel', '(\\d+)/5\\b': '\\1 Fünftel', '(\\d+)/6\\b': '\\1 Sechstel', '(\\d+)/7\\b': '\\1 Siebtel',
   '(\\d+)/8\\b': '\\1 Achtel', '(\\d+)/9\\b': '\\1 Neuntel', '(\\d+)/10\\b': '\\1 Zehntel', '(\\d+)/12\\b': '\\1 Zwölftel', '(\\d+)/100\\b': '\\1 Hundertstel', '(\\d+)/1000\\b': '\\1 Tausendstel',
   '\\b1 (Drittel|Viertel|Fünftel|Sechstel|Siebtel|Achtel|Neuntel|Zehntel|Zwölftel|Hundertstel|Tausendstel)\\b': 'ein \\1',
-  '\\[([A-Z])([A-Z])[\\]\\)]': '\\1 \\2', '\\(([A-Z])([A-Z])\\)': '\\1 \\2', ' / ': ' oder ', '(\\d)²': '\\1 hoch zwei', '\\|': ', ', '\\bz\\. ?B\\.': 'zum Beispiel',
+  '\\[([A-Z])([A-Z])[\\]\\)]': '\\1 \\2', '\\(([A-Z])([A-Z])\\)': '\\1 \\2', ' / ': ' oder ', '(\\d)²': '\\1 hoch zwei', '\\b([a-z])²': '\\1 hoch zwei', '\\|': ', ', '\\bz\\. ?B\\.': 'zum Beispiel',
 }
 
 const ANLEITUNG = [
