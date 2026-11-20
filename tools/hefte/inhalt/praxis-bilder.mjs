@@ -140,3 +140,36 @@ export function kuehlschrank() {
   o += nr(115, 60, 1) + nr(115, 148, 2) + nr(115, 232, 3) + nr(115, 330, 4) + nr(247, 150, 5)
   return `<figure class="kuehl">${o}</svg></figure>`
 }
+
+/** Werkstück (L-Winkel) räumlich + drei Ansichten A, B, C zum Zuordnen */
+export function ansichten() {
+  const c = Math.cos(Math.PI / 6), s = 0.5, k = 1.6
+  const P = ([x, y, z]) => [140 + (x - z) * c * k, 150 + ((x + z) * s - y) * k]
+  const poly = (pts, f) => `<polygon points="${pts.map(P).map((p) => p.map((v) => v.toFixed(1)).join(',')).join(' ')}" fill="${f}" stroke="#2a2f3a" stroke-width="2" stroke-linejoin="round"/>`
+  let o = `<svg viewBox="0 0 640 260" xmlns="http://www.w3.org/2000/svg" class="ansicht-svg">`
+  o += poly([[20, 20, 0], [60, 20, 0], [60, 20, 30], [20, 20, 30]], '#f6e2b5') + poly([[60, 0, 0], [60, 20, 0], [60, 20, 30], [60, 0, 30]], '#d9b77a') + poly([[0, 0, 30], [60, 0, 30], [60, 20, 30], [0, 20, 30]], '#e8c98f')
+  o += poly([[0, 50, 0], [20, 50, 0], [20, 50, 30], [0, 50, 30]], '#f6e2b5') + poly([[20, 20, 0], [20, 50, 0], [20, 50, 30], [20, 20, 30]], '#d9b77a') + poly([[0, 20, 30], [20, 20, 30], [20, 50, 30], [0, 50, 30]], '#e8c98f')
+  const pf = ([x0, y0], [x1, y1]) => `<path d="M${x0} ${y0} L${x1} ${y1}" stroke="#c0392b" stroke-width="2" marker-end="url(#pfa)"/>`
+  o += `<defs><marker id="pfa" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8z" fill="#c0392b"/></marker></defs>`
+  o += pf([150, 238], [150, 214]) + t(150, 254, 'von vorn', { gr: 11, farbe: '#c0392b' }) + pf([108, 18], [118, 40]) + t(96, 14, 'von oben', { gr: 11, farbe: '#c0392b' }) + pf([262, 128], [238, 128]) + t(278, 120, 'von rechts', { gr: 11, farbe: '#c0392b', anker: 'start' })
+  const q = 2.1, box = (x, y, w, h) => `<rect x="${x}" y="${y}" width="${w * q}" height="${h * q}" fill="#fff" stroke="#2a2f3a" stroke-width="2.2"/>`
+  // A = Draufsicht (60 × 30, Kante bei x = 20)
+  let ax = 330, ay = 40
+  o += box(ax, ay, 60, 30) + `<line x1="${ax + 20 * q}" y1="${ay}" x2="${ax + 20 * q}" y2="${ay + 30 * q}" stroke="#2a2f3a" stroke-width="2.2"/>` + t(ax + 30 * q, ay - 10, 'A', { gr: 16, fett: 800, farbe: '#1f6aa0' })
+  // B = Seitenansicht von rechts (30 × 50, Kante bei y = 20)
+  let bx = 520, by = 30
+  o += box(bx, by, 30, 50) + `<line x1="${bx}" y1="${by + 30 * q}" x2="${bx + 30 * q}" y2="${by + 30 * q}" stroke="#2a2f3a" stroke-width="2.2"/>` + t(bx + 15 * q, by - 10, 'B', { gr: 16, fett: 800, farbe: '#1f6aa0' })
+  // C = Vorderansicht (L-Form)
+  const cx = 340, cy = 150, L = (x, y) => `${cx + x * q},${cy + (50 - y) * q * 0.9}`
+  o += `<polygon points="${[[0, 0], [60, 0], [60, 20], [20, 20], [20, 50], [0, 50]].map(([x, y]) => L(x, y)).join(' ')}" fill="#fff" stroke="#2a2f3a" stroke-width="2.2"/>` + t(cx + 30 * q, cy - 8, 'C', { gr: 16, fett: 800, farbe: '#1f6aa0' })
+  return `<figure class="ansicht">${o}</svg></figure>`
+}
+
+/** Linienarten der technischen Zeichnung */
+export function linienarten() {
+  let o = `<svg viewBox="0 0 520 150" xmlns="http://www.w3.org/2000/svg" class="linien-svg">`
+  o += `<line x1="70" y1="30" x2="300" y2="30" stroke="#1a1a1a" stroke-width="4"/>` + nr(40, 30, 1, '#1f6aa0', 12)
+  o += `<line x1="70" y1="75" x2="300" y2="75" stroke="#1a1a1a" stroke-width="2.4" stroke-dasharray="14 8"/>` + nr(40, 75, 2, '#1f6aa0', 12)
+  o += `<line x1="70" y1="120" x2="300" y2="120" stroke="#1a1a1a" stroke-width="1.6" stroke-dasharray="26 6 3 6"/>` + nr(40, 120, 3, '#1f6aa0', 12)
+  return `<figure class="linienarten">${o}</svg></figure>`
+}
