@@ -1,0 +1,534 @@
+{
+ "modul": "fr6",
+ "titel": {
+  "de": "Natur und Zukunft",
+  "fr": "Nature et avenir"
+ },
+ "sprache": "fr",
+ "spuren": {
+  "fr6-01l": {
+   "titel": "Où est-ce que tu habites ?",
+   "art": "lesen",
+   "lektion": 1,
+   "dauer": 50.9,
+   "text": [
+    [
+     "",
+     "Où est-ce que tu habites ?"
+    ],
+    [
+     "",
+     "Inès, 14 ans – j’habite en ville. J’habite à Luxembourg-Ville, au quatrième étage d’un immeuble. Ce que j’adore, c’est que tout est près de chez moi : le cinéma, la piscine, les magasins. Je vais au lycée à pied ou en bus, car les bus passent toutes les dix minutes. Par contre, il y a beaucoup de bruit et de voitures. Et je n’ai pas de jardin."
+    ],
+    [
+     "",
+     "Luca, 14 ans – j’habite à la campagne. J’habite dans un petit village des Ardennes, près d’une forêt. Le matin, je vois des chevreuils par ma fenêtre ! C’est calme et l’air est pur. Par contre, le bus pour le lycée part à 6 h 45 et il n’y a pas de cinéma. Pour voir mes copains, je dois prendre le vélo."
+    ]
+   ]
+  },
+  "fr6-01h": {
+   "titel": "Vous préférez la ville ou la campagne ?",
+   "art": "hoeren",
+   "lektion": 1,
+   "dauer": 41.2,
+   "text": [
+    [
+     "Yusuf",
+     "Bonjour, Madame ! Vous préférez vivre en ville ou à la campagne ?"
+    ],
+    [
+     "Une dame",
+     "À la campagne, bien sûr ! J’habite dans une ferme depuis quarante ans. J’adore le calme et mes animaux."
+    ],
+    [
+     "Yusuf",
+     "Et vous, Monsieur ?"
+    ],
+    [
+     "Un monsieur",
+     "Moi, je préfère la ville, car je n’ai pas de voiture. En ville, tout est près : le travail, le médecin, le supermarché."
+    ],
+    [
+     "Yusuf",
+     "Et toi ?"
+    ],
+    [
+     "Une jeune fille",
+     "Je crois que je préfère la campagne pour vivre… mais la ville pour sortir le week-end ! L’idéal, c’est une petite ville, pas trop loin de la nature."
+    ],
+    [
+     "Yusuf",
+     "Merci à tous !"
+    ]
+   ]
+  },
+  "fr6-02l": {
+   "titel": "Une balade qui tourne mal",
+   "art": "lesen",
+   "lektion": 2,
+   "dauer": 51.1,
+   "text": [
+    [
+     "",
+     "Une balade qui tourne mal"
+    ],
+    [
+     "",
+     "Samedi dernier, j’étais avec ma copine Chloé dans le Mullerthal. Il faisait beau et nous voulions faire une balade de deux heures."
+    ],
+    [
+     "",
+     "D’abord, tout allait bien. Nous marchions entre les rochers et nous prenions des photos. Mais une heure plus tard, nous avons quitté le chemin pour voir une petite cascade."
+    ],
+    [
+     "",
+     "Soudain, Chloé a dit : « Où est le chemin ? » Nous nous sommes perdues ! Le soleil descendait et mon portable n’avait plus que 5 % de batterie."
+    ],
+    [
+     "",
+     "Et alors, j’ai eu une idée : nous avons appelé le 112 et nous avons envoyé notre position. Heureusement, le garde forestier est arrivé très rapidement."
+    ],
+    [
+     "",
+     "À la fin, nous avons bu un chocolat chaud au village. Depuis ce jour, je prends toujours une carte et une batterie de secours !"
+    ]
+   ]
+  },
+  "fr6-02h": {
+   "titel": "J’ai eu très peur !",
+   "art": "hoeren",
+   "lektion": 2,
+   "dauer": 46.6,
+   "text": [
+    [
+     "Yusuf",
+     "Chloé, tu as vécu une aventure dans le Mullerthal ?"
+    ],
+    [
+     "Chloé",
+     "Oui ! Samedi, j’étais avec Léa. Au début, c’était super. Mais c’est moi qui ai voulu voir la cascade… C’était mon idée, je l’avoue !"
+    ],
+    [
+     "Yusuf",
+     "Et qu’est-ce qui s’est passé ?"
+    ],
+    [
+     "Chloé",
+     "On a quitté le chemin et, tout à coup, on ne savait plus où on était. Il faisait de plus en plus sombre. J’ai eu très peur, je pleurais un peu."
+    ],
+    [
+     "Yusuf",
+     "Et alors ?"
+    ],
+    [
+     "Chloé",
+     "Léa est restée calme. Elle a appelé le 112. Nous avons attendu seulement vingt minutes, mais pour moi, c’était très long !"
+    ],
+    [
+     "Yusuf",
+     "Qu’est-ce que tu as appris ?"
+    ],
+    [
+     "Chloé",
+     "On ne quitte pas le chemin, on prend une carte… et on reste calme, comme Léa !"
+    ]
+   ]
+  },
+  "fr6-03l": {
+   "titel": "Ils cherchent une famille",
+   "art": "lesen",
+   "lektion": 3,
+   "dauer": 67.7,
+   "text": [
+    [
+     "",
+     "Ils cherchent une famille"
+    ],
+    [
+     "",
+     "Caramel – chien, 3 ans. Caramel est un grand chien marron avec de longues oreilles. Il est affectueux et très joueur. Il adore courir : il lui faut une famille sportive et un jardin. Il s’entend bien avec les enfants, mais pas avec les chats !"
+    ],
+    [
+     "",
+     "Mimi – chatte, 8 ans. Mimi est une petite chatte grise aux yeux verts. Elle est calme et un peu timide. Elle aime dormir au soleil. Elle cherche une personne tranquille, sans enfants trop petits."
+    ],
+    [
+     "",
+     "Pistache – lapin, 1 an. Pistache est un lapin blanc et noir. Il est curieux mais peureux : quand il y a du bruit, il se cache. Il mange des carottes et du foin. Il a besoin de beaucoup de place pour sauter."
+    ],
+    [
+     "",
+     "Refuge Les Amis des Bêtes. Adopter un animal, c’est pour toute sa vie. Avant d’adopter, réfléchissez bien : temps, place, argent. Visites : le mercredi et le samedi, de 14 h à 17 h."
+    ]
+   ]
+  },
+  "fr6-03h": {
+   "titel": "Qu’est-ce que tu es en train de faire ?",
+   "art": "hoeren",
+   "lektion": 3,
+   "dauer": 55.6,
+   "text": [
+    [
+     "Sami",
+     "Salut Mia ! Tu viens au parc ?"
+    ],
+    [
+     "Mia",
+     "Désolée, je ne peux pas. Je suis au refuge avec ma tante. Elle est bénévole ici."
+    ],
+    [
+     "Sami",
+     "Et qu’est-ce que tu es en train de faire ?"
+    ],
+    [
+     "Mia",
+     "Je suis en train de brosser Mimi, une vieille chatte très douce. Et ma tante est en train de promener les chiens."
+    ],
+    [
+     "Sami",
+     "Il y a beaucoup d’animaux ?"
+    ],
+    [
+     "Mia",
+     "Oui, trente chiens, vingt chats et des lapins. Il y a un chien génial, Caramel. Il est super joueur, mais il a besoin d’un jardin."
+    ],
+    [
+     "Sami",
+     "Nous, on a un jardin ! Je vais demander à la maison…"
+    ],
+    [
+     "Mia",
+     "Attention, Sami : un chien, c’est beaucoup de travail. Il faut le promener deux ou trois fois par jour, même quand il pleut !"
+    ],
+    [
+     "Sami",
+     "Tu as raison. On va réfléchir. Mais je peux venir le voir samedi ?"
+    ],
+    [
+     "Mia",
+     "Bien sûr ! Les visites sont de quatorze à dix-sept heures."
+    ]
+   ]
+  },
+  "fr6-04l": {
+   "titel": "Un chiot à la maison",
+   "art": "lesen",
+   "lektion": 4,
+   "dauer": 35.2,
+   "text": [
+    [
+     "",
+     "Un chiot à la maison"
+    ],
+    [
+     "",
+     "Un chiot à la maison : les conseils de la vétérinaire. Nourrissez votre chiot trois ou quatre fois par jour, toujours à la même heure. Ne lui donnez pas de chocolat : c’est du poison pour les chiens ! Il faut toujours laisser de l’eau propre dans sa gamelle. Promenez-le souvent, car il doit apprendre à faire ses besoins dehors. Votre chiot doit être vacciné. Prenez rendez-vous chez le vétérinaire dès la première semaine. Il est important de jouer avec lui chaque jour : un chien qui s’ennuie fait des bêtises !"
+    ]
+   ]
+  },
+  "fr6-04h": {
+   "titel": "Il ne mange plus !",
+   "art": "hoeren",
+   "lektion": 4,
+   "dauer": 55.4,
+   "text": [
+    [
+     "Dr Klein",
+     "Bonjour ! Alors, qu’est-ce qui ne va pas avec Rocky ?"
+    ],
+    [
+     "Noah",
+     "Il ne mange plus depuis hier. Et il dort tout le temps. Il est triste."
+    ],
+    [
+     "Dr Klein",
+     "Je vais l’examiner. Viens, Rocky… doucement… Est-ce qu’il a mangé quelque chose de bizarre ?"
+    ],
+    [
+     "Noah",
+     "Euh… Hier, il était en train de jouer dans la cuisine. Je crois qu’il a mangé un morceau de chocolat."
+    ],
+    [
+     "Dr Klein",
+     "Ah ! Le chocolat, c’est du poison pour les chiens. Heureusement, c’était un petit morceau. Il va guérir."
+    ],
+    [
+     "Noah",
+     "Qu’est-ce qu’on doit faire ?"
+    ],
+    [
+     "Dr Klein",
+     "Donnez-lui ces médicaments deux fois par jour, avec un peu de nourriture. Laissez-le se reposer et donnez-lui beaucoup d’eau. Si ça ne va pas mieux dans deux jours, revenez me voir."
+    ],
+    [
+     "Noah",
+     "Merci, docteure ! Désolé, Rocky… Plus de chocolat dans la cuisine !"
+    ]
+   ]
+  },
+  "fr6-05l": {
+   "titel": "Trois animaux discrets",
+   "art": "lesen",
+   "lektion": 5,
+   "dauer": 51.4,
+   "text": [
+    [
+     "",
+     "Trois animaux discrets"
+    ],
+    [
+     "",
+     "Le castor. Le castor est le plus grand rongeur d’Europe. Il vit près des rivières et construit des barrages avec du bois. Il travaille surtout la nuit. Pendant longtemps, il n’y avait plus de castors au Luxembourg. Aujourd’hui, ils sont revenus dans le nord du pays."
+    ],
+    [
+     "",
+     "La cigogne noire. Contrairement à la cigogne blanche, la cigogne noire est très timide. Elle vit cachée dans les grandes forêts, près des ruisseaux. Elle mange des poissons et des grenouilles. En hiver, elle part en Afrique."
+    ],
+    [
+     "",
+     "Le chat sauvage. Il ressemble à un gros chat gris, avec une queue épaisse et des anneaux noirs. Il vit discrètement dans les forêts. Il est protégé : il est interdit de le chasser."
+    ]
+   ]
+  },
+  "fr6-05h": {
+   "titel": "Chut ! Écoutez la forêt…",
+   "art": "hoeren",
+   "lektion": 5,
+   "dauer": 45.8,
+   "text": [
+    [
+     "Mme Muller",
+     "Chut ! Parlez doucement… Regardez cet arbre, au bord de la rivière. Vous voyez les traces de dents ?"
+    ],
+    [
+     "Yusuf",
+     "Oui ! C’est un castor ?"
+    ],
+    [
+     "Mme Muller",
+     "Exactement. Le castor coupe les arbres avec ses dents. Il est en train de construire un barrage un peu plus loin."
+    ],
+    [
+     "Yusuf",
+     "On peut le voir ?"
+    ],
+    [
+     "Mme Muller",
+     "Malheureusement, pas maintenant. Il sort surtout la nuit. Mais si vous revenez le soir, vous le verrez peut-être."
+    ],
+    [
+     "Yusuf",
+     "Et qu’est-ce qu’on doit faire pour protéger les animaux ici ?"
+    ],
+    [
+     "Mme Muller",
+     "C’est simple : on reste sur le chemin, on ne fait pas de bruit et on ne laisse pas de déchets. Et les chiens restent en laisse."
+    ],
+    [
+     "Yusuf",
+     "Je reviendrai un soir, c’est sûr !"
+    ]
+   ]
+  },
+  "fr6-06l": {
+   "titel": "La 7P2 passe au vert !",
+   "art": "lesen",
+   "lektion": 6,
+   "dauer": 62.4,
+   "text": [
+    [
+     "",
+     "La 7P2 passe au vert !"
+    ],
+    [
+     "",
+     "Depuis septembre, la classe 7P2 a un grand projet : rendre l’école plus verte. D’abord, les élèves ont compté les déchets de la cantine pendant une semaine : 40 kilos de nourriture à la poubelle !"
+    ],
+    [
+     "",
+     "Ensuite, ils ont proposé des solutions à la direction. Maintenant, les élèves peuvent choisir une petite ou une grande portion. Résultat : deux fois moins de déchets !"
+    ],
+    [
+     "",
+     "Les éco-délégués, Amira et Ben, vérifient chaque soir que les lumières et les ordinateurs sont éteints. « Au début, on oubliait souvent, explique Ben. Maintenant, c’est automatique. »"
+    ],
+    [
+     "",
+     "Prochain projet : un atelier de réparation. Une fois par mois, un grand-père bricoleur viendra aider les élèves à réparer leurs vélos et leurs objets cassés."
+    ],
+    [
+     "",
+     "« Si chaque classe fait un petit geste, nous aurons une école beaucoup plus verte », dit Amira."
+    ]
+   ]
+  },
+  "fr6-06h": {
+   "titel": "Un petit geste, un grand effet",
+   "art": "hoeren",
+   "lektion": 6,
+   "dauer": 50.2,
+   "text": [
+    [
+     "Chloé",
+     "Amira, Ben, pourquoi est-ce que vous êtes devenus éco-délégués ?"
+    ],
+    [
+     "Amira",
+     "Parce que je suis inquiète pour la planète. Je crois que nous pouvons changer les choses, même à l’école."
+    ],
+    [
+     "Ben",
+     "Moi, au début, je n’étais pas sûr. Mais j’ai vu les quarante kilos de déchets… Ça m’a choqué !"
+    ],
+    [
+     "Chloé",
+     "Qu’est-ce qui est le plus difficile ?"
+    ],
+    [
+     "Ben",
+     "Convaincre les autres. Certains disent : « Ça ne sert à rien. » Alors, on explique avec des chiffres."
+    ],
+    [
+     "Amira",
+     "Et on essaie d’être positifs. On ne crie pas, on propose."
+    ],
+    [
+     "Chloé",
+     "Et vos prochaines idées ?"
+    ],
+    [
+     "Amira",
+     "Un potager derrière la cantine ! Si la direction est d’accord, nous planterons des tomates et des salades au printemps."
+    ],
+    [
+     "Ben",
+     "Et peut-être une journée sans voiture. Mais ça, je ne sais pas si c’est possible…"
+    ]
+   ]
+  },
+  "fr6-07l": {
+   "titel": "Comment vivrons-nous en 2050 ?",
+   "art": "lesen",
+   "lektion": 7,
+   "dauer": 39.1,
+   "text": [
+    [
+     "",
+     "Comment vivrons-nous en 2050 ?"
+    ],
+    [
+     "",
+     "Lio. Je suis sûr que les voitures rouleront toutes seules ! On ira à l’école sans chauffeur. Et des robots feront le ménage à la maison. Moi, je serai ingénieur en robotique."
+    ],
+    [
+     "",
+     "Nele. Je crois qu’il fera beaucoup plus chaud en été. Il y aura peut-être moins d’eau. C’est pourquoi nous devrons changer nos habitudes dès maintenant."
+    ],
+    [
+     "",
+     "Jana. Moi, je suis optimiste. Les villes seront plus vertes, avec des jardins sur les toits. On mangera moins de viande et on prendra le train. Ce sera plus calme !"
+    ]
+   ]
+  },
+  "fr6-07h": {
+   "titel": "Optimistes ou pessimistes ?",
+   "art": "hoeren",
+   "lektion": 7,
+   "dauer": 46.4,
+   "text": [
+    [
+     "Sami",
+     "Moi, je suis optimiste. En 2050, on aura des voitures qui roulent toutes seules. Il y aura beaucoup moins d’accidents !"
+    ],
+    [
+     "Chloé",
+     "Peut-être… Mais je ne suis pas sûre. Je crois surtout qu’il fera très chaud en été. Il y aura des canicules."
+    ],
+    [
+     "Sami",
+     "Oui, mais les scientifiques trouveront des solutions. Si on construit plus d’éoliennes, on aura assez d’énergie propre."
+    ],
+    [
+     "Chloé",
+     "D’accord. Et le travail ? Les robots feront peut-être notre boulot…"
+    ],
+    [
+     "Sami",
+     "Notre « boulot » ? Tu veux dire notre travail ! Je pense qu’il y aura de nouveaux métiers. Moi, je serai réparateur de robots !"
+    ],
+    [
+     "Chloé",
+     "Et moi, je serai médecin. Les robots ne remplaceront jamais un médecin gentil !"
+    ]
+   ]
+  },
+  "fr6-08l": {
+   "titel": "Je crois en vous !",
+   "art": "lesen",
+   "lektion": 8,
+   "dauer": 54.1,
+   "text": [
+    [
+     "",
+     "Je crois en vous !"
+    ],
+    [
+     "",
+     "Chère classe de 7P2, je m’appelle Kevin. Il y a quatre ans, j’étais à votre place, dans la même classe. Je n’aimais pas l’école et j’avais de mauvaises notes en français."
+    ],
+    [
+     "",
+     "Un jour, mon professeur m’a dit : « Si tu trouves un projet qui te plaît, tu travailleras mieux. » Il avait raison. J’ai fait un stage dans un garage et j’ai adoré !"
+    ],
+    [
+     "",
+     "Aujourd’hui, je suis apprenti mécanicien. Pendant la semaine, je répare des voitures et je vais aussi à l’école. J’ai encore des difficultés, mais je progresse chaque semaine."
+    ],
+    [
+     "",
+     "Mon conseil : notez vos progrès dans un petit journal de bord. Quand vous serez découragés, vous le relirez et vous verrez tout le chemin parcouru."
+    ],
+    [
+     "",
+     "Si vous avez un rêve, ne l’abandonnez pas. Je crois en vous ! Kevin"
+    ]
+   ]
+  },
+  "fr6-08h": {
+   "titel": "Et toi, ton rêve ?",
+   "art": "hoeren",
+   "lektion": 8,
+   "dauer": 51.9,
+   "text": [
+    [
+     "Mme Nouvelle",
+     "Alors, quels sont vos rêves ? Amira ?"
+    ],
+    [
+     "Amira",
+     "Plus tard, je travaillerai avec les animaux. Si j’ai de bonnes notes en sciences, je ferai une formation d’assistante vétérinaire."
+    ],
+    [
+     "Tom",
+     "Moi, je ne sais pas encore. Peut-être cuisinier… Si je trouve un stage dans un restaurant l’année prochaine, je verrai si ça me plaît."
+    ],
+    [
+     "Inès",
+     "Mon rêve, c’est de voyager. Je visiterai le Canada, car au Québec, on parle français ! Et je ferai des vidéos de mes voyages."
+    ],
+    [
+     "Mme Nouvelle",
+     "Ce sont de beaux projets. Et vos progrès en français, cette année ?"
+    ],
+    [
+     "Tom",
+     "Au début, je ne comprenais presque rien. Maintenant, je comprends les vidéos simples. Je suis assez fier !"
+    ],
+    [
+     "Mme Nouvelle",
+     "Tu peux être fier, Tom. Et l’année prochaine, vous progresserez encore !"
+    ]
+   ]
+  }
+ }
+}

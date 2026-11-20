@@ -1,0 +1,630 @@
+{
+ "modul": "fr9",
+ "titel": {
+  "de": "Kultur erleben",
+  "fr": "La vie culturelle"
+ },
+ "sprache": "fr",
+ "spuren": {
+  "fr9-01l": {
+   "titel": "Quelle musique écoutez-vous ?",
+   "art": "lesen",
+   "lektion": 1,
+   "dauer": 66.8,
+   "text": [
+    [
+     "",
+     "Quelle musique écoutez-vous ?"
+    ],
+    [
+     "",
+     "Lina_rap. Moi, j’écoute surtout du rap. La plupart de mes copains aussi ! Ce qui me plaît, ce sont les paroles : les rappeurs parlent de la vie des gens, de leurs problèmes. Et vous, qu’est-ce que vous en pensez ?"
+    ],
+    [
+     "",
+     "Ben_rock. Je ne suis pas d’accord, Lina. Le rap, c’est souvent répétitif ! Moi, je préfère le rock : la guitare, la batterie, l’énergie… On ne peut pas rester assis. Une telle énergie, je ne la trouve nulle part ailleurs !"
+    ],
+    [
+     "",
+     "Mia.chante. Moi, j’écoute un peu de tout : de la pop, de l’électro, et même de la musique classique. Beaucoup de gens disent que le classique, c’est ennuyeux. À mon avis, c’est faux. Des goûts et des couleurs, on ne discute pas !"
+    ],
+    [
+     "",
+     "Yusuf_beats. Moi, je fais de la musique sur l’ordinateur. Les gens pensent que c’est facile, mais on travaille des heures pour un seul morceau ! Qui veut écouter mon nouveau morceau ? Dites-moi franchement ce que vous en pensez."
+    ]
+   ]
+  },
+  "fr9-01h": {
+   "titel": "Tu en penses quoi ?",
+   "art": "hoeren",
+   "lektion": 1,
+   "dauer": 60.3,
+   "text": [
+    [
+     "Amira",
+     "Vous avez écouté le nouvel album de Nour ?"
+    ],
+    [
+     "Noah",
+     "Oui, mais franchement, je préfère Les Ondes. Leurs chansons sont plus rythmées."
+    ],
+    [
+     "Chloé",
+     "Ah bon ? Moi, je trouve que Nour chante mieux. Sa voix est tellement belle ! Et toi, Amira, tu en penses quoi ?"
+    ],
+    [
+     "Amira",
+     "Moi, j’aime les deux. Les Ondes, c’est parfait pour faire du sport. Nour, c’est plutôt pour le soir, quand je suis fatiguée."
+    ],
+    [
+     "Noah",
+     "Les chansons de Nour sont un peu tristes, non ?"
+    ],
+    [
+     "Chloé",
+     "Pas du tout ! Elles sont émouvantes, c’est différent. Elles parlent de la vie, de l’amitié…"
+    ],
+    [
+     "Noah",
+     "D’accord, d’accord. Mais avoue que Les Ondes, en concert, c’est autre chose !"
+    ],
+    [
+     "Amira",
+     "Ça, c’est vrai. Vous savez quoi ? Nour donne un concert le mois prochain. On y va ensemble ? Comme ça, Noah pourra changer d’avis !"
+    ],
+    [
+     "Noah",
+     "Bon… Si vous m’invitez, je viens !"
+    ]
+   ]
+  },
+  "fr9-02l": {
+   "titel": "Quand la ville dort",
+   "art": "lesen",
+   "lektion": 2,
+   "dauer": 43.0,
+   "text": [
+    [
+     "",
+     "Quand la ville dort"
+    ],
+    [
+     "",
+     "Le soir, quand la ville dort, je mets mon casque, je sors. J’ai tellement de choses dans la tête, que mon cœur est en tempête."
+    ],
+    [
+     "",
+     "On n’est jamais tout seuls, quand on chante à plusieurs. On allume nos portables, et la nuit devient meilleure."
+    ],
+    [
+     "",
+     "Les gens passent, pressés, gris, personne ne voit mes soucis. Mais ma musique est si forte, qu’elle ouvre toutes les portes."
+    ],
+    [
+     "",
+     "Si tu es triste ce soir, regarde par la fenêtre : il y a tellement d’étoiles, que la nuit n’est plus si noire."
+    ],
+    [
+     "",
+     "On n’est jamais tout seuls, quand on chante à plusieurs. On allume nos portables, et la nuit devient meilleure."
+    ]
+   ]
+  },
+  "fr9-02h": {
+   "titel": "Pourquoi cette chanson ?",
+   "art": "hoeren",
+   "lektion": 2,
+   "dauer": 70.0,
+   "text": [
+    [
+     "Animatrice",
+     "Vous venez d’écouter « Quand la ville dort », le nouveau titre de Nour. Nour, bonsoir !"
+    ],
+    [
+     "Nour",
+     "Bonsoir, et merci de m’inviter !"
+    ],
+    [
+     "Animatrice",
+     "Pourquoi avez-vous écrit cette chanson ?"
+    ],
+    [
+     "Nour",
+     "Quand j’avais quatorze ans, je me sentais souvent seule. Le soir, je mettais mon casque et je regardais la ville par la fenêtre. La musique m’a beaucoup aidée. Je voulais dire aux jeunes : vous n’êtes pas seuls."
+    ],
+    [
+     "Animatrice",
+     "Dans le refrain, on allume les portables…"
+    ],
+    [
+     "Nour",
+     "Oui ! En concert, le public allume les portables pendant le refrain. C’est tellement beau que j’ai parfois les larmes aux yeux."
+    ],
+    [
+     "Animatrice",
+     "Qu’est-ce que vous conseillez aux jeunes qui se sentent seuls ?"
+    ],
+    [
+     "Nour",
+     "De parler à quelqu’un : un ami, un prof, un adulte de confiance. Et si c’est difficile, on peut appeler le 116 111. C’est gratuit et anonyme."
+    ],
+    [
+     "Animatrice",
+     "Merci, Nour ! Et pour nos auditeurs : Nour est en concert le samedi 13 mars, à 20 heures, au centre culturel. Les billets coûtent 15 euros, et 10 euros pour les moins de 18 ans."
+    ]
+   ]
+  },
+  "fr9-03l": {
+   "titel": "Je suis un pont",
+   "art": "lesen",
+   "lektion": 3,
+   "dauer": 46.6,
+   "text": [
+    [
+     "",
+     "Je suis un pont"
+    ],
+    [
+     "",
+     "Je suis un pont entre deux rives, entre deux langues, deux façons de vivre. Le matin, je dis « moien », à midi, je dis « bonjour », et le soir, chez ma grand-mère, on parle créole, avec amour."
+    ],
+    [
+     "",
+     "Quand on me demande : « Tu viens d’où ? » je réponds : « De loin… et de chez nous. » Mes racines sont si longues, qu’elles traversent la mer."
+    ],
+    [
+     "",
+     "Certains disent : « Choisis ton camp ! » Moi, je dis : « Pourquoi choisir ? » Un arbre a besoin de racines, et de branches pour grandir."
+    ],
+    [
+     "",
+     "Je suis un pont, pas un mur. Viens, traverse, n’aie pas peur : de l’autre côté, il y a, les mêmes rêves que les tiens."
+    ]
+   ]
+  },
+  "fr9-03h": {
+   "titel": "Tu peux expliquer ?",
+   "art": "hoeren",
+   "lektion": 3,
+   "dauer": 61.6,
+   "text": [
+    [
+     "Kenza",
+     "Bonjour tout le monde ! Je m’appelle Kenza, je suis slameuse. Qui sait ce que c’est, le slam ?"
+    ],
+    [
+     "Sami",
+     "C’est du rap sans musique ?"
+    ],
+    [
+     "Kenza",
+     "Pas tout à fait. Le slam, c’est de la poésie orale."
+    ],
+    [
+     "Léa",
+     "Qu’est-ce que tu veux dire par « orale » ?"
+    ],
+    [
+     "Kenza",
+     "Ça veut dire qu’on dit son texte devant un public. On ne le lit pas seulement sur une feuille. Le slam est né à Chicago, aux États-Unis, dans les années 1980."
+    ],
+    [
+     "Sami",
+     "Et il y a des règles ?"
+    ],
+    [
+     "Kenza",
+     "Oui, trois règles simples : pas de musique, pas de costume, et trois minutes maximum. Tout le monde peut participer !"
+    ],
+    [
+     "Léa",
+     "Mais comment on écrit un slam ? Tu peux expliquer plus clairement ?"
+    ],
+    [
+     "Kenza",
+     "Bien sûr. D’abord, tu choisis un sujet qui te touche. Ensuite, tu cherches des images, par exemple « je suis un pont ». Enfin, tu joues avec les sons : des rimes, des répétitions. Et surtout, tu parles avec ton cœur !"
+    ]
+   ]
+  },
+  "fr9-04l": {
+   "titel": "Une journée d’école ailleurs",
+   "art": "lesen",
+   "lektion": 4,
+   "dauer": 75.2,
+   "text": [
+    [
+     "",
+     "Une journée d’école ailleurs"
+    ],
+    [
+     "",
+     "Haruto, 13 ans, Japon. Chez nous, l’année scolaire commence en avril, alors qu’au Luxembourg, elle commence en septembre. Après les cours, nous nettoyons la classe nous-mêmes : c’est normal ! Ensuite, la plupart des élèves vont à un club. Moi, je fais du kendo."
+    ],
+    [
+     "",
+     "Aminata, 14 ans, Sénégal. À l’école, on parle français, mais à la maison et avec mes copines, on parle wolof. Dans les classes, il y a souvent plus d’élèves que chez vous : parfois plus de quarante ! Le samedi, je vais au marché avec ma tante. Il y a tellement de couleurs !"
+    ],
+    [
+     "",
+     "Félix, 13 ans, Québec (Canada). Ici aussi, on parle français, mais avec un accent ! L’hiver est beaucoup plus froid qu’au Luxembourg : parfois moins vingt-cinq degrés. Il y a une patinoire dans la cour de mon école : à la récré, on joue au hockey !"
+    ],
+    [
+     "",
+     "Luana, 12 ans, Brésil. Dans mon école, il y a deux groupes : un groupe vient le matin, tandis que l’autre vient l’après-midi. Moi, j’ai cours de 7 h à midi. Chez nous, on parle portugais, comme beaucoup de gens au Luxembourg !"
+    ]
+   ]
+  },
+  "fr9-04h": {
+   "titel": "Chez moi, au Québec…",
+   "art": "hoeren",
+   "lektion": 4,
+   "dauer": 71.2,
+   "text": [
+    [
+     "Mme Nouvelle",
+     "Aujourd’hui, nous avons un invité : Félix, qui vient de Montréal. Félix, tu peux te présenter ?"
+    ],
+    [
+     "Félix",
+     "Bonjour ! J’ai treize ans et je suis ici pendant deux semaines, pour un échange scolaire."
+    ],
+    [
+     "Yusuf",
+     "Qu’est-ce qui est différent ici, par rapport au Québec ?"
+    ],
+    [
+     "Félix",
+     "D’abord, les langues ! Ici, vous parlez luxembourgeois, français, allemand, anglais… Vous parlez plus de langues que nous. Chez moi, on parle surtout français, et un peu anglais."
+    ],
+    [
+     "Yusuf",
+     "Et l’école ?"
+    ],
+    [
+     "Félix",
+     "Les journées sont aussi longues qu’au Québec. Par contre, il fait moins froid ici ! Chez nous, en hiver, il fait parfois moins vingt-cinq degrés."
+    ],
+    [
+     "Yusuf",
+     "Moins vingt-cinq ? Tu vas à l’école quand même ?"
+    ],
+    [
+     "Félix",
+     "Oui, bien sûr ! On met des vêtements très chauds. Et on joue au hockey sur la patinoire de l’école."
+    ],
+    [
+     "Mme Nouvelle",
+     "Et qu’est-ce que tu préfères ici ?"
+    ],
+    [
+     "Félix",
+     "Les boulangeries ! Il y a autant de pâtisseries que chez nous, mais elles sont tellement bonnes… Par contre, je ne comprends pas encore pourquoi tout le monde me dit « moien » !"
+    ],
+    [
+     "Mme Nouvelle",
+     "C’est « bonjour » en luxembourgeois, Félix !"
+    ]
+   ]
+  },
+  "fr9-05l": {
+   "titel": "« Écrivez sur ce que vous connaissez ! »",
+   "art": "lesen",
+   "lektion": 5,
+   "dauer": 80.9,
+   "text": [
+    [
+     "",
+     "« Écrivez sur ce que vous connaissez ! »"
+    ],
+    [
+     "",
+     "Journal : Yanis, tu as 19 ans et tu animes l’atelier rap de la Maison des jeunes. Comment as-tu commencé ?"
+    ],
+    [
+     "",
+     "Yanis : À 13 ans, j’écrivais des textes dans mon cahier, en cachette. J’étais très timide. Un jour, un animateur m’a dit : « Tu dois les partager ! » J’ai participé à mon premier atelier… et je n’ai jamais arrêté."
+    ],
+    [
+     "",
+     "Journal : Qu’est-ce qu’on fait dans ton atelier ?"
+    ],
+    [
+     "",
+     "Yanis : D’abord, on écoute des morceaux et on discute des paroles. Ensuite, chacun écrit. À la fin, on enregistre dans un petit studio. La plupart des participants n’ont jamais écrit avant !"
+    ],
+    [
+     "",
+     "Journal : Il y a des règles ?"
+    ],
+    [
+     "",
+     "Yanis : Oui, deux : on doit respecter les autres, et il faut écouter jusqu’au bout. Pas d’insultes, pas de moqueries. Chez nous, chacun peut s’exprimer."
+    ],
+    [
+     "",
+     "Journal : Un conseil pour les débutants ?"
+    ],
+    [
+     "",
+     "Yanis : Écrivez sur ce que vous connaissez : votre quartier, vos amis, vos émotions. Et n’ayez pas peur de vous tromper ! L’atelier est gratuit, le mercredi de 14 h à 16 h."
+    ]
+   ]
+  },
+  "fr9-05h": {
+   "titel": "Vous avez une minute ?",
+   "art": "hoeren",
+   "lektion": 5,
+   "dauer": 70.4,
+   "text": [
+    [
+     "Amira",
+     "Excusez-moi, madame. On fait une enquête pour le journal de l’école. Vous avez une minute ?"
+    ],
+    [
+     "Secrétaire",
+     "Oui, bien sûr."
+    ],
+    [
+     "Ben",
+     "Quelle musique écoutez-vous ?"
+    ],
+    [
+     "Secrétaire",
+     "Oh, un peu de tout."
+    ],
+    [
+     "Amira",
+     "Qu’est-ce que vous voulez dire par « un peu de tout » ? Vous pouvez donner un exemple ?"
+    ],
+    [
+     "Secrétaire",
+     "Eh bien, de la chanson française le matin, à la radio, et du jazz le soir."
+    ],
+    [
+     "Ben",
+     "Et combien de temps par jour ?"
+    ],
+    [
+     "Secrétaire",
+     "Environ une heure. Dans la voiture, surtout."
+    ],
+    [
+     "Ben",
+     "Merci beaucoup ! … Salut, Finn ! Tu peux répondre à notre enquête ?"
+    ],
+    [
+     "Finn",
+     "Vas-y."
+    ],
+    [
+     "Amira",
+     "Tu écoutes quelle musique ?"
+    ],
+    [
+     "Finn",
+     "De la drill, surtout."
+    ],
+    [
+     "Ben",
+     "De la drill ? Tu peux expliquer plus clairement ? Je ne connais pas."
+    ],
+    [
+     "Finn",
+     "C’est un style de rap, avec des basses très fortes et une ambiance sombre."
+    ],
+    [
+     "Amira",
+     "Et tu écoutes combien de temps par jour ?"
+    ],
+    [
+     "Finn",
+     "Trois ou quatre heures, avec mon casque. Trop longtemps, d’après ma mère !"
+    ],
+    [
+     "Amira",
+     "Merci ! Bon, Ben, on a déjà interrogé vingt élèves. Il en reste encore cent !"
+    ]
+   ]
+  },
+  "fr9-06l": {
+   "titel": "Les jeunes et la musique : les résultats",
+   "art": "lesen",
+   "lektion": 6,
+   "dauer": 80.0,
+   "text": [
+    [
+     "",
+     "Les jeunes et la musique : les résultats"
+    ],
+    [
+     "",
+     "Le mois dernier, la classe 7P2 a fait une grande enquête : « Les jeunes et la musique ». Cent vingt élèves de l’école ont répondu à nos questions. Voici les résultats."
+    ],
+    [
+     "",
+     "Presque tous les élèves (95 %) écoutent de la musique tous les jours. La plupart écoutent avec leur portable et un casque. En moyenne, ils écoutent deux heures par jour, c’est plus que les adultes de l’école (une heure)."
+    ],
+    [
+     "",
+     "Quel style arrive premier ? C’est le rap, avec 38 %. La pop est deuxième (27 %), devant l’électro (15 %) et le rock (10 %). Un petit groupe (10 %) préfère d’autres styles : le jazz, le classique, la musique de films…"
+    ],
+    [
+     "",
+     "Un élève sur cinq joue d’un instrument : surtout la guitare, le piano et la batterie. Une minorité (12 %) va à des concerts plus de deux fois par an. Selon les élèves, les billets sont souvent trop chers."
+    ],
+    [
+     "",
+     "D’après Mme Rantini, la prof de musique, ces résultats sont intéressants : « Un grand nombre d’élèves aimeraient apprendre un instrument. Nous allons ouvrir un atelier guitare l’année prochaine ! »"
+    ]
+   ]
+  },
+  "fr9-06h": {
+   "titel": "Le journal des jeunes",
+   "art": "hoeren",
+   "lektion": 6,
+   "dauer": 54.2,
+   "text": [
+    [
+     "Présentateur",
+     "Bonjour, il est 17 heures, voici le journal des jeunes. D’abord, une enquête sur les jeunes et la culture. Selon une enquête auprès de mille jeunes de 12 à 18 ans, la majorité des jeunes, 64 %, écoutent de la musique plus de deux heures par jour."
+    ],
+    [
+     "Présentateur",
+     "Un tiers des jeunes lisent au moins un livre par mois. Par contre, seulement 15 % vont au théâtre au moins une fois par an. D’après les chercheurs, c’est dû au prix des billets, mais aussi au manque d’information."
+    ],
+    [
+     "Présentateur",
+     "Deuxième information : la Fête de la musique. Le 21 juin, il y aura des concerts gratuits dans beaucoup de villes et de villages."
+    ],
+    [
+     "Présentateur",
+     "Et pour finir, l’agenda du week-end : samedi, concert de Nour au centre culturel, à 20 heures. Dimanche, à 15 heures, atelier slam gratuit à la bibliothèque. Bon week-end à tous !"
+    ]
+   ]
+  },
+  "fr9-07l": {
+   "titel": "Casque sur les oreilles : attention !",
+   "art": "lesen",
+   "lektion": 7,
+   "dauer": 106.6,
+   "text": [
+    [
+     "",
+     "Casque sur les oreilles : attention !"
+    ],
+    [
+     "",
+     "Dans le bus, dans la rue, à la récré : beaucoup de jeunes ont toujours un casque sur les oreilles. C’est pratique… mais attention ! Selon l’Organisation mondiale de la santé (OMS), plus d’un milliard de jeunes de 12 à 35 ans dans le monde risquent d’abîmer leur audition à cause du bruit. Le problème : on écoute souvent la musique trop fort et trop longtemps. Dans un bus bruyant, on monte le son pour couvrir le bruit. À un concert, on est tout près des enceintes. Les conséquences : après un concert, on entend parfois des sifflements dans les oreilles. Ce sont des acouphènes. Souvent, ils disparaissent après quelques heures. Mais si on abîme ses oreilles trop souvent, on peut perdre une partie de son audition. Et ça, c’est pour toujours. Les solutions : les spécialistes conseillent la règle des 60/60 : maximum 60 % du volume, et une pause après 60 minutes. À un concert, il faut mettre des bouchons d’oreilles. Grâce à un casque qui réduit le bruit extérieur, on n’a pas besoin de monter le son."
+    ],
+    [
+     "",
+     "Courrier des lecteurs · Léa, 14 ans. Merci pour cet article ! Après un concert, j’ai eu des sifflements dans les oreilles pendant toute une nuit. J’ai eu tellement peur ! Maintenant, je mets toujours des bouchons. Ils existent même en couleur !"
+    ],
+    [
+     "",
+     "Courrier des lecteurs · Tom, 15 ans. Je ne suis pas tout à fait d’accord. Dans le bus, il y a tellement de bruit que je dois monter le son ! Par contre, la pause toutes les heures, c’est une bonne idée. Je vais essayer."
+    ]
+   ]
+  },
+  "fr9-07h": {
+   "titel": "Un quoi ?",
+   "art": "hoeren",
+   "lektion": 7,
+   "dauer": 66.7,
+   "text": [
+    [
+     "Infirmière",
+     "Bonjour, Finn. Qu’est-ce qui t’arrive ?"
+    ],
+    [
+     "Finn",
+     "Depuis ce matin, j’entends un sifflement dans l’oreille droite."
+    ],
+    [
+     "Infirmière",
+     "Hier, tu as écouté de la musique très fort ?"
+    ],
+    [
+     "Finn",
+     "Euh… oui. J’étais à un concert, tout près des enceintes. Et après, dans le bus, j’ai mis mon casque à fond."
+    ],
+    [
+     "Infirmière",
+     "D’accord. Ce sifflement est probablement dû au bruit. On appelle ça un acouphène."
+    ],
+    [
+     "Finn",
+     "Un quoi ? Vous pouvez expliquer plus clairement ?"
+    ],
+    [
+     "Infirmière",
+     "Un acouphène, c’est un bruit que tu entends dans l’oreille, alors qu’il n’y a pas de bruit autour de toi. Souvent, ça passe après quelques heures. Mais si ça ne passe pas d’ici demain, tu dois aller chez le médecin."
+    ],
+    [
+     "Finn",
+     "C’est grave ?"
+    ],
+    [
+     "Infirmière",
+     "Pas forcément. Mais c’est un signal : tes oreilles sont fatiguées. Pendant quelques jours, il faut éviter le bruit. Et au prochain concert, mets des bouchons d’oreilles. J’en ai ici, je t’en donne une paire."
+    ],
+    [
+     "Finn",
+     "Merci ! Je ne savais pas que c’était si important."
+    ]
+   ]
+  },
+  "fr9-08l": {
+   "titel": "Fête des cultures et petites annonces",
+   "art": "lesen",
+   "lektion": 8,
+   "dauer": 81.7,
+   "text": [
+    [
+     "",
+     "Fête des cultures et petites annonces"
+    ],
+    [
+     "",
+     "Fête des cultures · sam. 5 juin · de 14 h à 22 h · cour de l’école · entrée libre. 14 h : ouverture – stands de cuisine du monde (Portugal, Cap-Vert, Italie, Syrie, Luxembourg…). 15 h 30 : la 7P2 présente son enquête « Les jeunes et la musique ». 17 h : concours de slam (inscription sur place). 20 h : concert de Nour."
+    ],
+    [
+     "",
+     "Petite annonce. Groupe de rock cherche batteur ou batteuse (13–16 ans). Répét. le mer. après-midi à la Maison des jeunes. Contact : rockados@exemple.lu."
+    ],
+    [
+     "",
+     "Petite annonce. Vends guitare acoustique, très bon état, avec housse. 60 € (prix neuf : 150 €). Contact : secrétariat, salle 4."
+    ],
+    [
+     "",
+     "Petite annonce. Atelier slam gratuit avec Kenza. Tous les sam. de 10 h à 12 h, à la bibliothèque. Débutants bienvenus ! Env. 12 places."
+    ],
+    [
+     "",
+     "Petite annonce. La chorale des jeunes cherche des voix ! Pas besoin de savoir lire la musique. Rdv le lun. à 17 h, salle de musique."
+    ]
+   ]
+  },
+  "fr9-08h": {
+   "titel": "Merci de votre attention !",
+   "art": "hoeren",
+   "lektion": 8,
+   "dauer": 69.9,
+   "text": [
+    [
+     "Amira",
+     "Bonjour à tous ! Nous allons vous présenter les résultats de notre enquête : « Les jeunes et la musique »."
+    ],
+    [
+     "Ben",
+     "Notre exposé a trois parties. D’abord, nos questions. Ensuite, les résultats. Enfin, notre conclusion."
+    ],
+    [
+     "Amira",
+     "Nous avons interrogé cent vingt élèves de l’école. Nous avons posé cinq questions, par exemple : « Combien de temps écoutes-tu de la musique par jour ? »"
+    ],
+    [
+     "Ben",
+     "Voici les résultats. Presque tous les élèves écoutent de la musique tous les jours. Le rap arrive premier, avec 38 %. La pop est deuxième."
+    ],
+    [
+     "Amira",
+     "Ce qui nous a surpris : beaucoup d’élèves écoutent plus de deux heures par jour, souvent trop fort. C’est pourquoi nous avons aussi parlé de la santé des oreilles."
+    ],
+    [
+     "Ben",
+     "En conclusion : la musique est très importante pour les jeunes. Mais il faut protéger ses oreilles ! Merci de votre attention. Vous avez des questions ?"
+    ],
+    [
+     "Mme Nouvelle",
+     "Bravo ! Vous pouvez expliquer plus précisément comment vous avez choisi les élèves ?"
+    ],
+    [
+     "Amira",
+     "Bien sûr. Nous avons interrogé quinze élèves dans chaque classe, au hasard, pendant la récré."
+    ]
+   ]
+  }
+ }
+}
