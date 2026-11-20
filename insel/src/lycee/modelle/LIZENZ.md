@@ -56,3 +56,13 @@ dann `gltf-transform meshopt --level medium`.
 
 ## Töne (src/lycee/toene)
 - `fahrradklingel.wav` – „Rotating Bicycle Bell“ (opengameart.org/content/rotating-bicycle-bell), **CC0 1.0**, geladen am 20.11.2026.
+
+## kenney2.glb
+Kenney „Furniture Kit“, „City Kit (Roads)“, „Retro Urban Kit“, „Fantasy Town Kit 2.0“ (www.kenney.nl), **CC0 1.0**.
+Vom Nutzer am 20.11.2026 auf kenney.nl geladen und übergeben. Farben in die Eckpunkte gebacken mit
+`python3 -I tools/lycee/kenney-neu.py <ordner> roh.glb` (nutzt tools/stadt/stadt.py), dann `gltf-transform meshopt --level medium`.
+Namen: `mk/…` (Möbel), `weg/…` (Straße, Ampel, Baustelle), `retro/…` (Lastwagen, Gerüst, Paletten, Bäume), `dorf/…` (Brunnen, Marktstände, Karren, Laternen).
+
+## Töne aus „Impact Sounds“ (Kenney, CC0)
+`toene/ballschuss.ogg` (impactSoft_heavy_000), `toene/baggern.ogg` (impactSoft_medium_001), `toene/landung.ogg` (impactPlank_medium_000),
+`toene/pfosten.ogg` (impactMetal_heavy_000) – vom Nutzer am 20.11.2026 übergeben.

@@ -417,6 +417,13 @@ export function baueEinrichtung({ B, P, C, schild, schilder, stuhl, DECKE }) {
     lou.position.set(8.2, 1.6, -10.4); lou.rotation.y = Math.PI / 2;
   }
 
+  // ---------- Kenney Furniture Kit (CC0, 20.11.): SePAS gemütlicher, Sekretariat mit Computer, Garderobe und Papierkorb in den Sälen ----------
+  D('mk/bear', -11.3, -3.3, { h: 0.34, y: 0.47, rot: Math.PI }); D('mk/pillowBlue', -12.75, -3.3, { h: 0.2, y: 0.47, rot: Math.PI + 0.2 });   // SePAS-Sofa: Teddy, Kissen
+  D('mk/lampRoundFloor', -9.3, -2.8, { h: 1.6, rot: 0 }); D('mk/plantSmall2', -11.8, -5.4, { h: 0.28, y: 0.45, rot: 0 });
+  D('mk/computerScreen', -21.3, -8.25, { h: 0.42, y: 0.78, rot: 0 }); D('mk/computerKeyboard', -21.2, -7.85, { s: 0.45, y: 0.78, rot: 0 });   // Sekretariat
+  D('mk/pottedPlant', -29.2, -13.3, { h: 1.0, rot: 0 });
+  for (const [x0, x1, z0, z1] of [[-29.8, -16, -29.8, -18], [8, 20, -29.8, -18]]) { D('mk/coatRackStanding', x1 - 0.5, z1 - 0.6, { h: 1.75, rot: 0 }); D('mk/trashcan', x0 + 0.6, z1 - 0.5, { h: 0.5, rot: 0 }); }
+
   // ---------- Sekretariat (x −29.8 … −16, z −14 … −2): Fundsachen im Wartebereich, Bonbonglas, Kinderbild für Mme Weber ----------
   { const fund = plakat(0.8, 1.0, (g, w, h) => {
       g.fillStyle = '#fffdf6'; g.fillRect(0, 0, w, h); g.fillStyle = '#3d7fb8'; g.fillRect(0, 0, w, 58);

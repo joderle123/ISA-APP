@@ -10,7 +10,8 @@ import { MeshoptDecoder } from 'three/examples/jsm/libs/meshopt_decoder.module.j
 import lyceeBin from './modelle/lycee.glb';
 import stadtBin from './modelle/kenney.glb';   // Auswahl aus respawn/modelle/stadt.glb (tools/lycee/kenney-auswahl.mjs)
 import kaykitBin from './modelle/kaykit.glb';
-import skateBin from './modelle/skate.glb';   // Kenney Mini Skate 2.0 (CC0, über opengameart.org): Halfpipe, Rails, Treppe, Trottinette – tools/stadt/stadt.py + kenney-auswahl.mjs   // KayKit (CC0): Möbel, Küche, Straße – Namen kk/<modell> (tools/lycee/kaykit.py)
+import skateBin from './modelle/skate.glb';   
+import kenney2Bin from './modelle/kenney2.glb';   // Kenney Furniture/City Roads/Retro Urban/Fantasy Town 2.0 (CC0, 20.11.): mk/…, weg/…, retro/…, dorf/… – tools/lycee/kenney-neu.py   // Kenney Mini Skate 2.0 (CC0, über opengameart.org): Halfpipe, Rails, Treppe, Trottinette – tools/stadt/stadt.py + kenney-auswahl.mjs   // KayKit (CC0): Möbel, Küche, Straße – Namen kk/<modell> (tools/lycee/kaykit.py)
 import { mergeAll, zellenMerge } from './welt.js';
 
 const puffer = (b) => b.buffer.slice(b.byteOffset, b.byteOffset + b.byteLength);
@@ -54,7 +55,7 @@ const AUTOFEST = { 'einrichtung/Plant': 0.5, 'strasse/Streetlight_Single': 0.3, 
   'lager/bucket': 0.35, 'strasse/construction-cone': 0.35 };
 
 export function ladeRequisiten() {
-  if (!_alle) _alle = Promise.all([lade(lyceeBin, false), lade(stadtBin, true), lade(kaykitBin, true), lade(skateBin, true)]).then(([a, b, k, sk]) => ({ ...sk, ...k, ...b, ...a }));
+  if (!_alle) _alle = Promise.all([lade(lyceeBin, false), lade(stadtBin, true), lade(kaykitBin, true), lade(skateBin, true), lade(kenney2Bin, true)]).then(([a, b, k, sk, k2]) => ({ ...k2, ...sk, ...k, ...b, ...a }));
   return _alle;
 }
 

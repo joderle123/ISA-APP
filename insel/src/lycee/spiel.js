@@ -31,7 +31,11 @@ import { createVolleyball } from './volley.js';
 import { createVerkehr } from './verkehr.js';
 import { createElfmeter } from './elfmeter.js';
 import { createSticker } from './sammeln.js';
-import klingelWav from './toene/fahrradklingel.wav';   // „Rotating Bicycle Bell“, opengameart.org, CC0
+import klingelWav from './toene/fahrradklingel.wav';
+import schussOgg from './toene/ballschuss.ogg';   // Kenney Impact Sounds (CC0)
+import baggerOgg from './toene/baggern.ogg';
+import landungOgg from './toene/landung.ogg';
+import pfostenOgg from './toene/pfosten.ogg';   // „Rotating Bicycle Bell“, opengameart.org, CC0
 import { createZufall } from './zufall.js';
 // Das Schuljahr vergeht: Monat auf der Zeitkarte (die Kapitel liegen Wochen auseinander, nicht direkt hintereinander)
 const MONAT = { 1: 'September', 2: 'September', 3: 'Oktober', 4: 'November', 5: 'Dezember', 6: 'Februar', 7: 'März', 8: 'April', 9: 'Juni', 10: 'Juli' };
@@ -2066,9 +2070,9 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     holeGegner: async (id) => { const k = LEUTE[id] ? id : 'ben'; if (!ttFiguren[k]) { ttFiguren[k] = await ladePerson(veil, { ...LEUTE[k] }); ttFiguren[k].group.add(fussSchatten()); } return ttFiguren[k]; } });
   // Volleyball in der Hall des sports: Ballwechsel mit der besten Freundin / dem besten Freund (dieselben Spielfiguren wie beim Tischtennis)
   const holeSpielFigur = async (id) => { const k = LEUTE[id] ? id : 'ben'; if (!ttFiguren[k]) { ttFiguren[k] = await ladePerson(veil, { ...LEUTE[k] }); ttFiguren[k].group.add(fussSchatten()); } return ttFiguren[k]; };
-  const volley = createVolleyball({ scene, steuerung, input, ui, ton: (a) => ton(a), vib, holeFigur: holeSpielFigur });
+  const volley = createVolleyball({ scene, steuerung, input, ui, ton: (a) => (a === 'klack' ? geraeusch('baggern') : ton(a)), vib, holeFigur: holeSpielFigur });
   // Elfmeterschießen auf dem Stade: fünf Schüsse, die beste Freundin / der beste Freund steht im Tor
-  const elfmeter = createElfmeter({ scene, steuerung, input, ui, ton: (a) => ton(a), vib, holeFigur: holeSpielFigur,
+  const elfmeter = createElfmeter({ scene, steuerung, input, ui, ton: (a) => (a === 'klack' ? geraeusch('ballschuss') : ton(a)), vib, holeFigur: holeSpielFigur,
     versteckeBall: (weg) => { const b = scene.getObjectByName('fussball'); if (b) b.visible = !weg; } });
   const hsKannMit = (x) => !!(x && HANDSCHLAEGE[x.id] && S && ((S.freund && S.freund[x.id] >= 20) || (S.herz[x.id] || 0) >= 3) && x.f.armOk && x.haltung !== 'sitzt');
   const sag = (wer, text) => ui.sprich({ ...sprecher(wer), text: ersetze(text) });
@@ -2260,7 +2264,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     const trotti = art === 'trotti';
     steuerung.brett = fahrt.brett = { y: 0, vy: 0, ueber: new Set(), start: 0, bereich: [-1e4, 1e4, -1e4, 1e4], mesh: trotti ? null : m,
       vmax: trotti ? 9.5 : 7.4, antrieb: trotti ? 1.5 : 1.05, lenk: trotti ? 2.7 : 2.25, crash: trotti ? 7.2 : 6.0,
-      onTrick: (name, pt) => { if (trotti || !fahrt) return; fahrt.style += pt; ton('pling'); vib(pt >= 3 ? 18 : 8); ui.skate({ punkte: fahrt.style, trick: name + ' +' + pt }); },
+      onTrick: (name, pt) => { if (trotti || !fahrt) return; fahrt.style += pt; geraeusch('landung'); ton('pling'); vib(pt >= 3 ? 18 : 8); ui.skate({ punkte: fahrt.style, trick: name + ' +' + pt }); },
       onSturz: (grund) => { ton('klack'); vib([30, 40, 30]); ui.skate({ trick: '💥 ' + grund + (trotti ? '' : ' – wieder drauf!') }); },
       onGrind: (dt, bal) => { ui.skate({ bal }); },
       onKicker: () => { ton('klack'); ui.skate({ trick: '🚀 Air!' }); },
@@ -2299,6 +2303,13 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         o.connect(g); o2.connect(g); g.connect(bus); o.start(t + d); o2.start(t + d); o.stop(t + d + 0.55); o2.stop(t + d + 0.55); }
     });
   } catch (e) { /* Ton nicht verfügbar */ }
+  // Echte Geräusche (Kenney Impact Sounds, CC0): beim ersten Mal wird dekodiert (dann kurz der synthetische Ton), danach das echte Geräusch
+  const ogg = (name, bytes, laut = 0.6) => { let buf = null, laedt = false; try { audio.register(name, (ctx, bus) => {
+    if (buf) { const q = ctx.createBufferSource(), g = ctx.createGain(); g.gain.value = laut; q.buffer = buf; q.playbackRate.value = 0.94 + Math.random() * 0.12; q.connect(g); g.connect(bus); q.start(); return; }
+    ton('klack'); if (!laedt) { laedt = true; try { ctx.decodeAudioData(bytes.buffer.slice(bytes.byteOffset, bytes.byteOffset + bytes.byteLength)).then((b) => { buf = b; }, () => {}); } catch (e) { /* Format nicht unterstützt */ } }
+  }); } catch (e) { /* Ton nicht verfügbar */ } };
+  ogg('ballschuss', schussOgg, 0.7); ogg('baggern', baggerOgg, 0.6); ogg('landung', landungOgg, 0.5); ogg('pfosten', pfostenOgg, 0.5);
+  const geraeusch = (n) => { try { audio.play(n); } catch (e) { ton('klack'); } };
   // ---------- Zeitrennen durchs Dorf: Hauptstraße nach Osten, Gasse hinunter, Rue du Moulin nach Westen ----------
   const RENNEN = [[-30, 48], [0, 48], [24, 48], [32, 60], [32, 76], [46, 87], [20, 87], [-6, 87], [-24, 87]];
   let rennen = null; const ringe = [];
@@ -2443,7 +2454,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     ui.toast('<b>⚽ Noch Lust?</b><span>Am Nordtor wartet das Elfmeterschießen.</span>');
   }
   // ---------- Fußball auf dem Stade Annexe ----------
-  const fussball = createFussball({ scene, steuerung, input, ton, vib,
+  const fussball = createFussball({ scene, steuerung, input, ton: (a) => (a === 'klack' ? geraeusch('ballschuss') : ton(a)), vib,
     onTor: () => { S.merke.tore = (S.merke.tore || 0) + 1; sichern(); ton('melodie2'); vib([20, 30, 20]);
       const n = S.merke.tore; ui.toast('<b>⚽ TOOOR!</b><span>' + (n === 1 ? 'Dein erstes Tor auf dem Stade.' : n + ' Tore insgesamt.') + (n === 10 ? ' Zehn! Legende.' : '') + '</span>', 'ly-t-ent'); },
     onPfosten: () => { const t = performance.now(); if (t - (fussball._pf || 0) > 1500) { fussball._pf = t; ui.toast('<b>Pfosten!</b><span>Knapp.</span>'); } } });

@@ -251,6 +251,39 @@ export function baueDorf({ B, C, schild, schilder, P = null, R = null }) {
     DORF_DEKO.tagDu = tag('★', '#e9b949', 3.4, 1.0, 1.3);            // dein Kürzel (spiel.js malt die Buchstaben)
     B.frei.push({ x0: X0 - 1, x1: X1 + 1, z0: Z - 1, z1: Z + 2 });
   }
+  // Marktplatz (südlich der Épicerie, x 40 … 80, z 108 … 130) und Baustelle (x 86 … 106) – Kenney Fantasy Town 2.0 / Retro Urban / City Roads (CC0)
+  { const WEG = C.pflaster;
+    box(40, 80, 0, 0.05, 108, 130, hex('#d6cfc1'), { art: 'innen' }); B.frei.push({ x0: 39, x1: 81, z0: 92, z1: 131 });
+    box(52, 57, 0, 0.05, 92, 108, WEG, { art: 'innen' });                                                                  // Weg neben der Épicerie
+    for (let x = 44; x < 80; x += 4) box(x - 0.03, x + 0.03, 0.05, 0.055, 108, 130, hex('#c4bcac'), { art: 'innen' });   // Fugen im Pflaster
+    if (P) {
+      P('dorf/fountain-round-detail', 60, 119, 0, { s: 5.2, fest: true });
+      for (const [x, m] of [[45, 'dorf/stall-red'], [51, 'dorf/stall-green'], [69, 'dorf/stall'], [75, 'dorf/stall-red']]) P(m, x, 111.2, 0, { h: 2.8, fest: true });
+      for (const [x, m] of [[44.4, 'kk/crate_carrots'], [45.6, 'kk/crate_tomatoes'], [50.4, 'kk/crate_potatoes'], [51.6, 'kk/crate_carrots'], [68.4, 'kk/crate_tomatoes'], [74.4, 'kk/crate_potatoes'], [75.6, 'kk/crate_tomatoes']]) P(m, x, 112.0, 0, { h: 0.32, y: 0.85 });
+      P('dorf/cart', 45, 126.5, 0.4, { h: 1.3, fest: true }); P('dorf/cart-high', 75, 126.5, -0.3, { h: 1.8, fest: true });
+      for (const [x, z] of [[41.5, 109.5], [78.5, 109.5], [41.5, 128.5], [78.5, 128.5]]) P('dorf/lantern', x, z, 0, { h: 3.0, fest: 0.25 });
+      for (const x of [55, 65]) P('dorf/stall-bench', x, 126, 0, { h: 0.55, fest: true });
+    }
+    if (B.sitze) for (const x of [55, 65]) B.sitze.push({ x, z: 126, rot: Math.PI, bank: true, h: 0.55 });
+    const ms = schild('Marché · Wochenmarkt', 2.6, 0.5, { bg: '#c0392b', rand: '#ffffff', schrift: 'bold 90px Georgia, serif' }); ms.position.set(54.5, 2.6, 107.9); ms.rotation.y = Math.PI; schilders(ms);
+    box(52.6, 52.7, 0, 2.4, 107.85, 107.95, hex('#5a5f6b')); box(56.3, 56.4, 0, 2.4, 107.85, 107.95, hex('#5a5f6b'));
+    // Baustelle: Zaun rundum (Lücke nur für Fahrzeuge, mit Absperrung), Gerüst, Lastwagen, Paletten, Hütchen, Warnlicht
+    box(86, 106, 0, 0.04, 110, 128, hex('#a08a6a'), { art: 'innen' }); B.frei.push({ x0: 85, x1: 107, z0: 109, z1: 129 });
+    if (P) {
+      for (let x = 87; x < 106; x += 2) { if (x < 92 || x > 96) P('weg/construction-fence', x, 110, 0, { s: 2.0, fest: true }); P('weg/construction-fence', x, 128, 0, { s: 2.0, fest: true }); }
+      for (let z = 111; z < 128; z += 2) { P('weg/construction-fence', 86, z, Math.PI / 2, { s: 2.0, fest: true }); P('weg/construction-fence', 106, z, Math.PI / 2, { s: 2.0, fest: true }); }
+      P('weg/construction-barrier', 94, 110, 0, { s: 3.6, fest: true });
+      for (const x of [91.5, 96.5]) P('weg/construction-light', x, 109.4, 0, { h: 1.1 });
+      for (const [x, z] of [[88.5, 108.6], [99.5, 108.6], [103, 108.6]]) P('weg/construction-cone', x, z, 0, { h: 0.6, fest: 0.2 });
+      P('retro/scaffolding-structure', 98, 123.5, 0, { h: 6.0, fest: true });
+      P('retro/truck-grey-cargo', 91, 118, Math.PI / 2, { h: 2.7, fest: true });
+      P('retro/pallet', 101, 114, 0.3, { h: 0.25, fest: true }); P('retro/pallet', 101.2, 114.1, 0.1, { h: 0.25, y: 0.25 });
+      P('retro/planks', 103, 118, 0, { h: 0.4, fest: true });
+    }
+    const bs = schild('Baustelle · Betreten verboten', 2.6, 0.45, { bg: '#ffd166', fg: '#2b2b33', rand: '#2b2b33', schrift: 'bold 76px system-ui' }); bs.position.set(89, 1.4, 109.6); bs.rotation.y = Math.PI; schilders(bs);
+  }
+  // Ampeln am Zebrastreifen vor der Schule (City Kit Roads)
+  if (P) { P('weg/traffic-light', -3.4, 43.4, 0, { h: 3.4, fest: 0.2 }); P('weg/traffic-light', 3.4, 52.6, Math.PI, { h: 3.4, fest: 0.2 }); }
   // Park am Weiher (westlich der Rue du Moulin, x −74 … −34, z 86 … 124): Teich mit Steinrand (0,45 m – mit dem Brett grindbar),
   // Rundweg, Bänke, Bäume, Eis-Kiosk „Glace“. Auftrag 20.11.: „Welt größer und spaßiger“
   { const STEIN = hex('#b9b2a4'), WASSER = hex('#4f97c9'), WEG = C.pflaster, X0 = -64, X1 = -46, Z0 = 98, Z1 = 112;

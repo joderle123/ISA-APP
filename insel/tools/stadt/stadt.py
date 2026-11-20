@@ -117,6 +117,10 @@ def modell(pfad, farbe):
     for ni in j['scenes'][j.get('scene', 0)]['nodes']: lauf(ni, eins, [0, 0, 0], [1, 1, 1])
     return P, N, C, I
 
+# Kurzname je Bausatz (Präfix der Modellnamen); andere Skripte können KURZ und AUSWAHL vor main() ändern
+KURZ = {'city-kit-suburban': 'haus', 'city-kit-commercial': 'laden', 'city-kit-roads': 'strasse', 'car-kit': 'auto', 'mini-skate': 'skate', 'watercraft-kit': 'boot', 'mini-market': 'markt', 'nature-kit': 'natur',
+        'pirate-kit': 'hafen', 'survival-kit': 'lager', 'fantasy-town-kit': 'platz', 'holiday-kit': 'winter', 'racing-kit': 'fest', 'city-kit-industrial': 'werk'}
+
 def main():
     quelle, ziel = sys.argv[1], sys.argv[2]
     binär = bytearray(); views, accs, meshes, nodes = [], [], [], []
@@ -129,8 +133,7 @@ def main():
         if not os.path.isdir(ordner): ordner = os.path.join(quelle, kit, 'Models', 'GLTF format')
         tafel = os.path.join(ordner, 'Textures', 'colormap.png')
         farbe = png(tafel) if os.path.exists(tafel) else None
-        kurz = {'city-kit-suburban': 'haus', 'city-kit-commercial': 'laden', 'city-kit-roads': 'strasse', 'car-kit': 'auto', 'mini-skate': 'skate', 'watercraft-kit': 'boot', 'mini-market': 'markt', 'nature-kit': 'natur',
-                'pirate-kit': 'hafen', 'survival-kit': 'lager', 'fantasy-town-kit': 'platz', 'holiday-kit': 'winter', 'racing-kit': 'fest', 'city-kit-industrial': 'werk'}[kit]
+        kurz = KURZ.get(kit, kit.split('-')[0])
         for nm in namen:
             pfad = os.path.join(ordner, nm + '.glb')
             if not os.path.exists(pfad): print('fehlt', kit, nm); continue
@@ -160,4 +163,5 @@ def main():
         f.write(struct.pack('<I4s', len(jb), b'JSON')); f.write(jb)
         f.write(struct.pack('<I4s', len(binär), b'BIN\0')); f.write(binär)
     print(len(nodes), 'Modelle →', ziel, round(os.path.getsize(ziel) / 1024), 'KB')
-main()
+if __name__ == '__main__':
+    main()
