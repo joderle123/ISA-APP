@@ -776,10 +776,11 @@ export function createUI({ root, input, speech }) {
         '<div class="ly-gd-gitter">' + daten.filter((x) => x.art === reiter).map((x) => '<button type="button" class="ly-gd-ding' + (x.hab ? '' : ' zu') + (x.an ? ' an' : '') + '" data-id="' + esc(x.id) + '"' + (x.hab ? '' : ' disabled') + '>' +
           '<span class="ly-gd-sy">' + (x.hab ? x.sy : '🔒') + '</span><b>' + esc(x.name) + '</b>' + (x.fort && x.fort[0] ? '<i class="ly-gd-fort" title="' + x.fort[0] + ' von ' + x.fort[1] + '"><i style="width:' + Math.round((x.fort[0] / x.fort[1]) * 100) + '%"></i></i>' : '') + '<small>' + (x.hab ? (x.art === 'emote' ? (x.neu ? 'NEU · antippen = zeigen' : 'Antippen = zeigen') : x.an ? '✔ An' : (x.neu ? 'NEU · antippen' : 'Antippen = anziehen')) : esc(x.hinweis) + (x.fort && x.fort[0] && x.fort[1] <= 10 ? ' · ' + x.fort[0] + '/' + x.fort[1] : x.fort && x.fort[0] ? ' · ' + Math.round((x.fort[0] / x.fort[1]) * 100) + ' %' : '')) + '</small></button>').join('') + '</div>' +
         '<p class="ly-leer">Alles hier wird verdient – durch Nebenaufgaben im Dorf. Kein Zufall, kein Geld. ← → dreht die Ansicht.</p>' +
-        '<div class="ly-t-knoepfe"><button type="button" class="ly-btn ly-primaer" data-a="ok">Fertig <kbd>G</kbd></button></div>');
+        '<div class="ly-t-knoepfe"><button type="button" class="ly-btn" data-a="zufall" title="Nur aus deinen verdienten Teilen">🎲 Zufalls-Look</button><button type="button" class="ly-btn ly-primaer" data-a="ok">Fertig <kbd>G</kbd></button></div>');
       k.querySelectorAll('[data-r]').forEach((b) => { b.onclick = () => { reiter = b.dataset.r; zeig(); }; });
       k.querySelectorAll('[data-id]').forEach((b) => { b.onclick = async () => { daten = (await wahl(b.dataset.id)) || daten; zeig(); }; });
       k.querySelector('[data-a="ok"]').onclick = zu;
+      k.querySelector('[data-a="zufall"]').onclick = async () => { daten = (await wahl('__zufall')) || daten; zeig(); };
     };
     zeig();
   });

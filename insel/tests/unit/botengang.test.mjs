@@ -162,3 +162,15 @@ test('Schnitzeljagd: sechs Stationen, kurze Rätsel, Fund nur am richtigen Ort, 
   for (let k = 0; k < JAGD.length; k++) { const r = jagdFund(j, JAGD[k].x + 0.5, JAGD[k].z); assert.ok(r, 'Station ' + k); assert.equal(r.fertig, k === JAGD.length - 1); }
   assert.equal(j.fertig, true); assert.equal(jagdFund(j, JAGD[0].x, JAGD[0].z), null, 'nach dem Ende nichts mehr');
 });
+
+test('Garderobe: jedes Kopf-Teil, jeder Rucksack und jedes Haustier lässt sich bauen', async () => {
+  const THREE = await import('three');
+  const { GARDEROBE } = await import('../../src/lycee/garderobe.js');
+  const { baueFrisur } = await import('../../src/lycee/frisur.js');
+  const { baueRuecken, RUECKEN_ARTEN } = await import('../../src/lycee/ruecken.js');
+  const { baueTier } = await import('../../src/lycee/haustier.js');
+  const mat = new THREE.MeshBasicMaterial({ vertexColors: true });
+  for (const g of GARDEROBE.filter((x) => x.art === 'kopf')) assert.ok(baueFrisur({ hair: '#222', hairStyle: null, head: g.wert, headColor: g.farbe }, mat), 'Kopf ' + g.id);
+  for (const g of GARDEROBE.filter((x) => x.art === 'ruecken')) { assert.ok(RUECKEN_ARTEN.includes(g.wert), g.id); const r = baueRuecken(g.wert, g.farbe, mat); let n = 0; r.traverse((o) => { if (o.isMesh) n++; }); assert.ok(n >= 3, 'Rücken ' + g.id); }
+  for (const g of GARDEROBE.filter((x) => x.art === 'tier')) { const t = baueTier(g.wert, g.farbe); assert.ok(t.g.children.length >= 3 && t.kopf.children.length >= 2, 'Tier ' + g.id); }
+});

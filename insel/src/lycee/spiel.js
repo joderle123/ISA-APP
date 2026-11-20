@@ -832,7 +832,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   const emoteFrei = () => { if (!S) return []; const hab = new Set(freigeschaltet(S)); return EMOTES.filter((d) => hab.has(d.id)); };
   function emoteSpielen(art, { vorschau = false } = {}) {
     if (!spieler || !EMOTE_SY[art]) return false;
-    if (!vorschau && (!laeuft || imGespraech || ui.ebeneArt() || steuerung.sitzt || steuerung.brett || foto)) return false;
+    if (!vorschau && (!laeuft || imGespraech || ui.ebeneArt() || steuerung.sitzt || steuerung.brett || foto || !steuerung.frei || steuerung.kameraAus)) return false;
     if (spieler.pose) spieler.pose(null);
     steuerung.emoteBis = 0;
     if (art === 'winken') { if (vorschau) { steuerung.emote = 'Wave'; steuerung.emoteBis = performance.now() + 2200; steuerung.emoteVor = false; } else winkenStart(); }
@@ -845,6 +845,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       if (art === 'klatschen') for (let i = 1; i <= 5; i++) setTimeout(() => ton('klatsch'), i * 419);
     }
     emoteBlase(EMOTE_SY[art], spieler.group);
+    if (haustier && haustier.freu && !vorschau && ['jubeln', 'tanzen', 'klatschen', 'sieger', 'herz', 'winken2'].includes(art)) setTimeout(() => haustier.freu(), 400);   // Haustier hüpft mit
     if (vorschau) return true;
     emoteGezaehlt(art);
     if (art !== 'winken') leuteAntworten(art);
@@ -871,9 +872,9 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     return nah.length;
   }
   async function emoteRadAuf() {
-    if (!S || !laeuft || imGespraech || ui.ebeneArt() || foto || !spieler) return;
+    if (!S || !laeuft || imGespraech || ui.ebeneArt() || foto || !spieler || !steuerung.frei || steuerung.kameraAus) return;   // nicht in Minispielen
     if (steuerung.brett) { ui.toast('Erst absteigen (R / T) – dann Emotes.'); return; }
-    const frei = emoteFrei();
+    const frei = emoteFrei(); ton('klack');
     const wahl = await ui.emoteRad({ liste: frei.map((d) => ({ wert: d.wert, sy: d.sy, name: d.name })), offen: EMOTES.length - frei.length });
     if (wahl) emoteSpielen(wahl);
   }
@@ -934,14 +935,15 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     }
     gdUhr -= dt; if (gdUhr > 0 || !S || !S.merke || S.schritt < 2 || imGespraech) return; gdUhr = 2;
     const G = gd(), lvJetzt = levelVon(S.jetonsGesamt || 0).level;
-    if (lvJetzt > (G.level || 1)) { G.level = lvJetzt; ui.toast('<b>⭐ Dorf-Level ' + lvJetzt + '!</b><span>Weiter so. Neue Teile in der Garderobe (G).</span>', 'ly-t-ent'); ton('melodie2'); sichern(); }
+    let verz = 0;   // Level-Up-Karte zuerst, die Karten für neue Teile danach (nicht übereinander)
+    if (lvJetzt > (G.level || 1)) { G.level = lvJetzt; ui.belohnung({ sy: '⭐', name: 'Dorf-Level ' + lvJetzt + '!', art: 'Level-Up', knopf: 'Garderobe öffnen', onKnopf: () => ui.onGarderobe && ui.onGarderobe() }); ton('melodie2'); sichern(); verz = 7400; }
     const neu = freigeschaltet(S).filter((id) => !G.gesehen.includes(id));
     if (ui.garderobeNeu) ui.garderobeNeu(G.neu.length + neu.length);
     fortschrittMelden(G);
     if (!neu.length) return;
     G.gesehen.push(...neu); G.neu.push(...neu); sichern();
     if (neu.length > 2) { ui.toast('<b>🎁 ' + neu.length + ' neue Teile in deiner Garderobe</b><span>Taste G (oder ☰ → Garderobe) zum Anziehen</span>', 'ly-t-ent'); return; }
-    neu.forEach((id, i) => { const d = gdDing(id); setTimeout(() => ui.belohnung({ sy: d.sy, name: d.name, art: (GD_ARTEN.find((a) => a[0] === d.art) || [])[1] || '', ...(d.art === 'emote' ? { knopf: 'Gleich zeigen (X)', onKnopf: () => emoteSpielen(d.wert) } : { onKnopf: () => gleichAnziehen(id) }) }), 600 + i * 7400); });
+    neu.forEach((id, i) => { const d = gdDing(id); setTimeout(() => ui.belohnung({ sy: d.sy, name: d.name, art: (GD_ARTEN.find((a) => a[0] === d.art) || [])[1] || '', ...(d.art === 'emote' ? { knopf: 'Gleich zeigen (X)', onKnopf: () => emoteSpielen(d.wert) } : { onKnopf: () => gleichAnziehen(id) }) }), verz + 600 + i * 7400); });
     ton('melodie2');
   }
   // Fortschritt zu gesperrten Teilen („👍 Daumen hoch 3/5“): nur wenn sich etwas bewegt hat, höchstens alle 25 s eine Meldung,
@@ -1022,6 +1024,14 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       const st = levelVon(S.jetonsGesamt || 0), preis = GARDEROBE.find((g) => g.level === st.level + 1);
       const woche = aufgabenStand(S, wochenaufgaben());
       await ui.garderobe({ arten: GD_ARTEN, liste: liste(), woche, stufe: { ...st, preis: preis ? preis.sy + ' ' + preis.name : null, pokale: pokale.anzahl }, wahl: async (id) => {
+        if (id === '__zufall') {   // Zufalls-Look: je Art ein verdientes Teil (Kopf, Brille, Rücken auch mal ohne)
+          for (const art of ['kopf', 'haar', 'brille', 'oben', 'schuhe', 'ruecken']) {
+            const wahlen = GARDEROBE.filter((x) => x.art === art && hab.has(x.id)).map((x) => x.id);
+            if (['kopf', 'brille', 'ruecken', 'haar'].includes(art)) wahlen.push(null);
+            G.an[art] = wahlen.length ? wahlen[Math.floor(Math.random() * wahlen.length)] : null;
+          }
+          S.merke.zufallsLook = (S.merke.zufallsLook || 0) + 1; sichern(); await umbau(); ton('pling'); return liste();
+        }
         const d = gdDing(id); if (!d || !hab.has(id)) return liste();
         if (d.art === 'emote') { G.neu = G.neu.filter((x) => x !== id); emoteSpielen(d.wert, { vorschau: true }); sichern(); return liste(); }
         G.an[d.art] = G.an[d.art] === id ? null : id; G.neu = G.neu.filter((x) => x !== id);
@@ -1054,6 +1064,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       { sy: '🍦', titel: 'Eis', wert: sorten.length ? SORTE[sorten[sorten.length - 1]] || 'probiert' : 'noch keins', text: sorten.length + ' von 6 Sorten bei Tonio', farbe: '#ff7ac8' },
       (() => { const z = Object.entries(M.emoteZahl || {}).sort((a, b) => b[1] - a[1])[0], d = z && EMOTES.find((e) => e.wert === z[0]);
         return { sy: d ? d.sy : '🙌', titel: 'Lieblings-Emote', wert: d ? d.name : 'noch keins', text: d ? z[1] + '× gezeigt · ' + (M.emoteAntwort || 0) + '× hat jemand geantwortet' : 'Taste X oder Knopf 🙌', farbe: '#f08a24' }; })(),
+      { sy: '🗺️', titel: 'Schnitzeljagd', wert: M.jagd ? (M.jagd.fertig ? 'geschafft!' : (M.jagd.i || 0) + ' von ' + JAGD.length) : 'kommt noch', text: M.jagd ? (M.jagd.fertig ? 'Alle Zettel von Lina gefunden' : 'Zettel von Lina gefunden') : 'Ab Kapitel 2 schreibt Lina', farbe: '#8a5a10' },
       { sy: '⭐', titel: 'Sticker', wert: (M.sticker || []).length + ' von 24', text: 'im Dorf gefunden', farbe: '#d6452f' },
       { sy: '📌', titel: 'Botengänge', wert: String((M.boten && M.boten.n) || 0), text: 'für Leute im Dorf erledigt', farbe: '#3a8a5a' },
       { sy: '⛄', titel: 'Winter', wert: M.schneemann ? 'Schneemann gebaut' : (M.eisMeter ? Math.round(M.eisMeter) + ' m Eis' : '–'), text: M.eisMeter ? Math.round(M.eisMeter) + ' m auf der Eisbahn' : 'Dezember bis Februar', farbe: '#5ec8ff' },

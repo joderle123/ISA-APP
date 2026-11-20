@@ -132,6 +132,7 @@ export async function ladePerson(veil, { modell = 'menschen', stil = 'Casual', h
     }
   }
   // Rücken-Teil aus der Garderobe (ruecken.js): am Brustknochen, in Ruhelage ausgerichtet wie die Frisur
+  let rueckenTeil = null, rkT = 0;
   if (ruecken) {
     let cb = null; group.traverse((o) => { if (o.isBone && /^chest$/i.test(o.name)) cb = o; });
     const rk = cb ? baueRuecken(ruecken, rueckenFarbe, mat) : null;
@@ -139,8 +140,8 @@ export async function ladePerson(veil, { modell = 'menschen', stil = 'Casual', h
       huelle.updateMatrixWorld(true);
       const wq = new THREE.Quaternion(), bq = new THREE.Quaternion(), bs = new THREE.Vector3(), gs = new THREE.Vector3();
       huelle.getWorldQuaternion(wq); cb.getWorldQuaternion(bq); cb.getWorldScale(bs); huelle.getWorldScale(gs);
-      rk.quaternion.copy(bq.invert().multiply(wq)); rk.scale.setScalar(gs.x / (bs.x || 1));
-      cb.add(rk);
+      const halter = new THREE.Group(); halter.quaternion.copy(bq.invert().multiply(wq)); halter.scale.setScalar(gs.x / (bs.x || 1));
+      halter.add(rk); cb.add(halter); rueckenTeil = rk;   // rk schwingt beim Laufen leicht (update)
     }
   }
   // Teile mit gleicher Ruhelage (gleiche inverseBindMatrices) zu EINEM Netz zusammenfassen (gleiches Material):
@@ -517,6 +518,8 @@ export async function ladePerson(veil, { modell = 'menschen', stil = 'Casual', h
       erklW = gesteT > 0 && gesteArt === 'erklaeren' && !sitzt && ARMOK ? Math.min(1, Math.sin(Math.PI * (1 - gesteT / GESTE.erklaeren)) * 1.6) * 0.8 : 0;
       if (erklW > 0.01) { erklT += dt; erklHand(); } else if (HAND.R.erkl) { HAND.R.w = 0; HAND.R.erkl = false; }
       if (poseT > 0) { poseT = Math.max(0, poseT - dt); if (poseT > 0 && poseArt && !sitzt && ARMOK) poseHaende(); else poseEnde(); }
+      if (rueckenTeil) { rkT += dt; const lauf = jetztName === 'Run' ? 1 : jetztName === 'Walk' ? 0.45 : 0, f = jetztName === 'Run' ? 11 : 6.5;   // Rucksack wippt mit
+        rueckenTeil.rotation.x += (Math.sin(rkT * f) * 0.07 * lauf - rueckenTeil.rotation.x) * Math.min(1, dt * 10); rueckenTeil.rotation.z = Math.sin(rkT * f * 0.5) * 0.035 * lauf; }
       if (sitzt && ARMOK) sitzHaende(); else if (sitzHand) { for (const s of ['R', 'L']) if (HAND[s].sitz) { HAND[s].w = 0; HAND[s].sitz = false; } sitzHand = false; }
       armAnwenden('R'); armAnwenden('L');
     },
