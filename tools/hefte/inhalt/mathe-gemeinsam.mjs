@@ -54,11 +54,11 @@ export function matheModul(nr, extra) {
 }
 
 // Texte aus dem Programm: [[3/4]] → Bruch {{3/4}}, andere eckige Klammern (Strecke [AB]) bleiben Klammern (keine Lücken)
-const E = (s) => (typeof s === 'string' ? s.replace(/\[\[([^\]/]+)\/([^\]/]+)\]\]/g, '{{$1/$2}}').replace(/\[/g, '\\[').replace(/\]/g, '\\]') : s)
-const P = (s) => (typeof s === 'string' ? s.replace(/\[\[([^\]/]+)\/([^\]/]+)\]\]/g, '$1/$2') : s)
+const E = (s) => (typeof s === 'string' ? s.replace(/✅/g, '✓').replace(/❌/g, '✗').replace(/\[\[([^\]/]+)\/([^\]/]+)\]\]/g, '{{$1/$2}}').replace(/\[/g, '\\[').replace(/\]/g, '\\]') : s)
+const P = (s) => (typeof s === 'string' ? s.replace(/✅/g, '✓').replace(/❌/g, '✗').replace(/\[\[([^\]/]+)\/([^\]/]+)\]\]/g, '$1/$2') : s)
 const saetze = (s) => s.split(/(?<=[.!?])\s+(?=[A-ZÄÖÜ0-9„(])/).filter(Boolean)
 const posten = (it) => ({ a: E(it.a), l: P(it.l || '').replace(/\.$/, ''), raum: it.tbl ? undefined : it.raum ?? 1, tbl: it.tbl })
-const exitPosten = (x) => { const m = /^(.*)\(([^()]*)\)\s*$/.exec(x); return m ? { a: E(m[1].trim()), l: P(m[2]).replace(/\.$/, ''), raum: 1.6 } : { a: E(x), l: '', raum: 1.6 } }
+const exitPosten = (x) => { const m = /^(.*)\(([^()]*)\)\s*$/.exec(x); return m ? { a: E(m[1].trim()), l: P(m[2]).replace(/^Lösung: /, '').replace(/\.$/, ''), raum: 1.6 } : { a: E(x), l: '', raum: 1.6 } }
 
 /**
  * Lektionen eines Moduls. `extras[i]` (je Lektion, in Programm-Reihenfolge):

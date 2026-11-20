@@ -164,3 +164,26 @@ export function kaestchenFlaeche(l, b, { text = '' } = {}) {
   s += `<rect x="2" y="2" width="${l * k}" height="${b * k}" fill="none" stroke="${Z}" stroke-width="0.8"/>`
   return `<div style="display:flex;align-items:center;gap:5mm"><svg viewBox="0 0 ${l * k + 4} ${b * k + 4}" style="width:${(l * k + 4) * 0.9}mm">${s}</svg>${text ? `<span style="font-size:12.5pt">${text}</span>` : ''}</div>`
 }
+
+/** Hunderterfeld (10 × 10), k Kästchen gefärbt */
+export function hunderterfeld(k, { groesse = 34 } = {}) {
+  let s = ''
+  for (let i = 0; i < 100; i++) { const x = (i % 10) * 4, y = Math.floor(i / 10) * 4; s += `<rect x="${x + 0.5}" y="${y + 0.5}" width="4" height="4" fill="${i < k ? 'var(--f)' : '#fff'}" stroke="#9aa6ba" stroke-width="0.25"/>` }
+  return `<svg viewBox="0 0 41 41" style="height:${groesse}mm">${s}<rect x="0.5" y="0.5" width="40" height="40" fill="none" stroke="${Z}" stroke-width="0.6"/></svg>`
+}
+
+/** Dreiecksarten nach Seiten / Winkeln */
+export function dreiecksarten() {
+  const f = [
+    ['gleichseitig', `<path d="M 30 6 L 50 40 L 10 40 Z" fill="var(--f-zart)" stroke="${Z}" stroke-width="1" stroke-linejoin="round"/>`],
+    ['gleichschenklig', `<path d="M 30 4 L 44 40 L 16 40 Z" fill="var(--f-zart)" stroke="${Z}" stroke-width="1" stroke-linejoin="round"/>`],
+    ['rechtwinklig', `<path d="M 12 6 L 12 40 L 50 40 Z" fill="var(--f-zart)" stroke="${Z}" stroke-width="1" stroke-linejoin="round"/><path d="M 12 34 L 18 34 L 18 40" fill="none" stroke="var(--f)" stroke-width="0.8"/>`],
+    ['stumpfwinklig', `<path d="M 6 40 L 54 40 L 18 26 Z" fill="var(--f-zart)" stroke="${Z}" stroke-width="1" stroke-linejoin="round"/>`],
+  ]
+  return `<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:4mm;text-align:center">${f.map(([n, svg]) => `<div><svg viewBox="0 0 60 44" style="width:100%;max-height:24mm">${svg}</svg><div style="font-family:Lexend;font-weight:700;font-size:10.5pt">${n}</div></div>`).join('')}</div>`
+}
+
+/** Dreieck mit Grundseite g und Höhe h */
+export function dreieckHoehe({ g = '6 cm', h = '4 cm' } = {}) {
+  return `<svg viewBox="0 0 100 52" style="width:100%;max-height:40mm"><path d="M 10 44 L 80 44 L 34 8 Z" fill="var(--f-zart)" stroke="${Z}" stroke-width="1" stroke-linejoin="round"/><line x1="34" y1="8" x2="34" y2="44" stroke="var(--f)" stroke-width="1" stroke-dasharray="2.5 1.5"/><path d="M 34 39 L 39 39 L 39 44" fill="none" stroke="var(--f)" stroke-width="0.8"/><text x="45" y="50.5" text-anchor="middle" font-family="Lexend" font-size="4.6">g = ${g}</text><text x="36" y="28" font-family="Lexend" font-size="4.6" fill="var(--f)">h = ${h}</text><text x="84" y="22" font-family="Atkinson" font-size="4.4">A = (g · h) ÷ 2</text></svg>`
+}
