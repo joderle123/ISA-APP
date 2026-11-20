@@ -523,7 +523,7 @@ export const LEKTIONEN = [
         ] },
     ],
     schreiben: [
-      { art: 'schreiben', auftrag: 'Schreibe einen Steckbrief „Das Christentum“ für ein Plakat, wie bei den anderen Religionen.', stufe: 2,
+      { art: 'schreiben', auftrag: 'Schreibe einen Steckbrief „Das Christentum“ für ein Plakat.', stufe: 2,
         anfaenge: ['Glaube: …', 'Wichtige Person: …', 'Heilige Schrift: …', 'Gotteshaus: …', 'Wichtige Feste: …', 'Symbol: …'], zeilen: 7,
         beispiel: 'Glaube: an einen Gott und an Jesus Christus. Wichtige Person: Jesus, der vor etwa 2000 Jahren lebte und Nächstenliebe lehrte. Heilige Schrift: die Bibel mit Altem und Neuem Testament. Gotteshaus: Kirche. Wichtige Feste: Weihnachten, Ostern, Pfingsten. Symbol: das Kreuz.' },
     ],

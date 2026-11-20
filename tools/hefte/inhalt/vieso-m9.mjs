@@ -43,7 +43,7 @@ export const LEKTIONEN = [
         '### Beispiel Atomkraft',
         '1938 entdeckten Forschende in Berlin, dass man Atomkerne spalten kann. Daraus wurden **Atomkraftwerke**, die viel Strom erzeugen – aber auch gefährlichen Müll und das Risiko schwerer Unfälle. Und daraus wurde die **Atombombe**. Luxemburg ist seit Langem gegen das französische Atomkraftwerk **Cattenom**, das nur wenige Kilometer von der Grenze entfernt steht.',
         '### Beispiel Internet',
-        'Der Brite **Tim Berners-Lee** erfand um 1990 am Forschungszentrum CERN das World Wide Web und schenkte es der Welt. Heute verbindet es Milliarden Menschen, macht Wissen frei zugänglich und hilft in Notfällen. Aber es verbreitet auch Hass, Lügen und macht manche süchtig.',
+        'Der Brite **Tim Berners-Lee** erfand um 1990 am Forschungszentrum CERN das World Wide Web und schenkte es der Welt. Heute verbindet es Milliarden Menschen, macht Wissen frei zugänglich und hilft in Notfällen. Aber es verbreitet auch Hass und Lügen und macht manche süchtig.',
         '### Die Frage ist nicht nur: Was können wir?',
         'Sondern auch: **Was wollen wir?** Und: **Wie nutzen wir es?** Menschen entscheiden, ob eine Erfindung mehr Segen oder mehr Fluch bringt.',
       ],
@@ -67,7 +67,7 @@ export const LEKTIONEN = [
       ],
       vor: [{ art: 'mc', auftrag: 'Was bedeutet „recherchieren“? Kreuze an.', stufe: 1, fragen: [{ f: '', o: ['Informationen suchen und sammeln', 'etwas reparieren'], r: 0 }] }],
       beim: [
-        { art: 'tabelle', auftrag: 'Hör zu. Was sagt der Opa über Technik – Gutes und Schlechtes?', stufe: 1, kopf: ['Segen', 'Fluch'], breiten: [50, 50], zeilen: [['[schnell Informationen finden]', '[falsche Videos, z. B. die Erde sei eine Scheibe]'], ['[Videotelefon mit Tante Rita in Kanada]', '[alle schauen am Tisch aufs Handy]']] },
+        { art: 'tabelle', auftrag: 'Hör zu. Was sagen Noah und der Opa über Technik – Gutes und Schlechtes?', stufe: 1, kopf: ['Segen', 'Fluch'], breiten: [50, 50], zeilen: [['[schnell Informationen finden]', '[falsche Videos, z. B. die Erde sei eine Scheibe]'], ['[Videotelefon mit Tante Rita in Kanada]', '[alle schauen am Tisch aufs Handy]']] },
         { art: 'fragen', auftrag: 'Womit vergleicht der Opa die Technik? Was meint er damit?', stufe: 2, fragen: [{ f: '', zeilen: 2, l: 'mit einem Messer: Man kann damit Gutes oder Schlechtes tun; es kommt darauf an, wer es benutzt.' }] },
       ],
       nach: [{ art: 'sprechen', auftrag: 'Stimmt der Vergleich mit dem Messer? Gibt es Erfindungen, die nur gut oder nur schlecht sind?', stufe: 3, karten: [
@@ -110,7 +110,7 @@ export const LEKTIONEN = [
       quelle: 'Sachtext (vereinfacht)', titel: 'Der Erfinder, der seinen Nachruf las',
       absaetze: [
         'Der Schwede **Alfred Nobel** erfand 1867 das **Dynamit**. Es sollte beim Bau von Tunneln und Straßen helfen. Doch es wurde auch im Krieg benutzt.',
-        'Man erzählt, dass 1888 eine französische Zeitung aus Versehen seinen **Nachruf** druckte – eigentlich war sein Bruder gestorben. Darin stand: „Der Händler des Todes ist tot.“ Nobel soll so erschrocken gewesen sein, dass er sein Testament änderte. Mit seinem Vermögen gründete er die **Nobelpreise** für Menschen, die der Menschheit Gutes tun – auch den Friedensnobelpreis.',
+        'Man erzählt, dass 1888 eine französische Zeitung aus Versehen seinen **Nachruf** druckte – eigentlich war sein Bruder gestorben. Darin stand: „Der Händler des Todes ist tot.“ Nobel soll so erschrocken gewesen sein, dass er sein Testament änderte. Darin bestimmte er, dass mit seinem Vermögen Preise für Menschen vergeben werden, die der Menschheit Gutes tun – die **Nobelpreise**, auch den Friedensnobelpreis. Es gibt sie seit 1901.',
         '### Wer trägt Verantwortung?',
         'Bei neuer Technik tragen viele Verantwortung: die **Forschenden**, die überlegen müssen, was aus ihrer Idee werden kann. Die **Firmen**, die entscheiden, was sie verkaufen. Die **Politik**, die Regeln macht. Und wir alle als **Nutzerinnen und Nutzer**.',
         '### Schwierige Fragen von heute',
@@ -147,7 +147,7 @@ export const LEKTIONEN = [
     regel: {
       reihen: [
         [{ titel: 'Verantwortung für Technik', punkte: ['**Forschende**: an Folgen denken', '**Firmen**: was sie verkaufen', '**Politik**: Regeln machen', '**Nutzer**: wie wir sie benutzen'] },
-         { titel: 'Nobel', punkte: ['erfand 1867 das **Dynamit**', 'las (so erzählt man) seinen eigenen **Nachruf**', 'gründete die **Nobelpreise**', 'über Grenzen der Technik **reden, bevor** sie da ist'] }],
+         { titel: 'Nobel', punkte: ['erfand 1867 das **Dynamit**', 'las (so erzählt man) seinen eigenen **Nachruf**', 'stiftete im Testament die **Nobelpreise**', 'über Grenzen der Technik **reden, bevor** sie da ist'] }],
       ],
     },
     ueben: [
@@ -173,7 +173,7 @@ export const LEKTIONEN = [
     start: {
       was: 'Ehrlich?',
       aufgaben: [
-        { art: 'mc', auftrag: 'Hast du schon einmal länger auf dem Handy verbracht, als du wolltest? Kreuze an (du musst es niemandem zeigen).', stufe: 1, fragen: [{ f: '', o: ['oft', 'manchmal', 'selten', 'nie'], r: [] }] },
+        { art: 'mc', auftrag: 'Hast du schon einmal mehr Zeit am Handy verbracht, als du wolltest? Kreuze an (du musst es niemandem zeigen).', stufe: 1, fragen: [{ f: '', o: ['oft', 'manchmal', 'selten', 'nie'], r: [] }] },
       ],
     },
     lesen: {
@@ -263,7 +263,7 @@ export const LEKTIONEN = [
         '### Raus aus der Blase',
         'Bewusst auch andere Quellen lesen. Menschen folgen, die anders denken. Mit echten Menschen reden, nicht nur online. Und sich fragen: **Warum zeigt mir die App gerade das?**',
       ],
-      woerter: [['der Algorithmus', 'l’algorithme'], ['hochladen', 'télécharger (vers le serveur)'], ['der Beitrag', 'la publication'], ['bequem', 'pratique, confortable'], ['die Kehrseite', 'le revers'], ['die Filterblase', 'la bulle de filtres'], ['die Polarisierung', 'la polarisation'], ['die Quelle', 'la source']],
+      woerter: [['der Algorithmus', 'l’algorithme'], ['hochladen', 'mettre en ligne'], ['der Beitrag', 'la publication'], ['bequem', 'pratique, confortable'], ['die Kehrseite', 'le revers'], ['die Filterblase', 'la bulle de filtres'], ['die Polarisierung', 'la polarisation'], ['die Quelle', 'la source']],
       aufgaben: [
         { art: 'fragen', auftrag: 'Antworte.', stufe: 1, fragen: [{ f: 'Was macht ein Algorithmus in einer App?', zeilen: 2, l: 'Er merkt sich, was wir anschauen und liken, und zeigt uns mehr davon.' }, { f: 'Was ist eine Filterblase?', zeilen: 2, l: 'Man sieht fast nur noch die eigene Meinung; andere Sichtweisen verschwinden.' }, { f: 'Warum zeigen Algorithmen gern Beiträge, die wütend machen?', zeilen: 2, l: 'Weil sie besonders oft geteilt und kommentiert werden.' }] },
       ],
@@ -284,7 +284,7 @@ export const LEKTIONEN = [
       ],
       vor: [{ art: 'mc', auftrag: 'Was ist ein „Feed“? Kreuze an.', stufe: 1, fragen: [{ f: '', o: ['die Liste von Beiträgen, die eine App dir zeigt', 'ein Futter für Tiere'], r: 0 }] }],
       beim: [
-        { art: 'fragen', auftrag: 'Hör zu und antworte.', stufe: 1, fragen: [{ f: 'Was glaubt Ben?', l: 'dass alle die neue Handyregel unfair finden' }, { f: 'Warum sieht Ben so viele Beiträge zu dem Thema?', zeilen: 2, l: 'Weil er Videos dazu geliked und kommentiert hat; die App zeigt ihm mehr davon.' }, { f: 'Wie hat die Klasse wirklich abgestimmt?', l: 'Die Mehrheit war für die Regel.' }] },
+        { art: 'fragen', auftrag: 'Hör zu und antworte.', stufe: 1, fragen: [{ f: 'Was glaubt Ben?', l: 'dass alle die neue Handyregel unfair finden' }, { f: 'Warum sieht Ben so viele Beiträge zu dem Thema?', zeilen: 2, l: 'Weil er ein Video dazu kommentiert (und vielleicht welche geliked) hat; die App zeigt ihm mehr davon.' }, { f: 'Wie hat die Klasse wirklich abgestimmt?', l: 'Die Mehrheit war für die Regel.' }] },
       ],
       nach: [{ art: 'sprechen', auftrag: 'Wart ihr schon einmal in einer Blase – bei einem Thema, einem Spiel, einer Meinung?', stufe: 2, karten: [
         { titel: 'Satzanfänge', text: ['Ich dachte einmal, alle …', 'Dann habe ich gemerkt …'] }] }],
@@ -344,7 +344,7 @@ export const LEKTIONEN = [
       situation: 'Yusuf hat ein Video gesehen, das ihn wütend gemacht hat. Die Lehrerin schaut es mit der Klasse an.',
       bild: ['yusuf:wuetend:handy', 'lehrerin:ruhig:erklaeren'], sprecher: { Yusuf: 'm3', Lehrerin: 'w1' },
       text: [
-        ['Yusuf', 'In dem Video steht, dass eine Gruppe von Ausländern allen hier die Arbeit wegnimmt. Es hat zwei Millionen Klicks!'],
+        ['Yusuf', 'In dem Video heißt es, dass eine Gruppe von Ausländern allen hier die Arbeit wegnimmt. Es hat zwei Millionen Klicks!'],
         ['Lehrerin', 'Schauen wir genauer hin. Wer hat das Video gemacht?'],
         ['Yusuf', 'Ein Kanal, der „Die Wahrheit“ heißt. Mehr steht da nicht.'],
         ['Lehrerin', 'Gibt es Zahlen? Quellen?'],
@@ -399,7 +399,7 @@ export const LEKTIONEN = [
       was: 'Ein Text zum Nachdenken', art: 'text', stimme: 'w1', nummern: false,
       quelle: 'Text zum Nachdenken (vereinfacht)', titel: 'Ein Warum zum Leben',
       absaetze: [
-        'Der Wiener Arzt **Viktor Frankl** wurde im Zweiten Weltkrieg als Jude in Konzentrationslager verschleppt. Er überlebte. Dabei beobachtete er: Menschen, die einen **Sinn** hatten – einen Menschen, auf den sie hofften, eine Aufgabe, die auf sie wartete –, hielten oft länger durch. Er zitierte gern den Satz: **„Wer ein Warum zum Leben hat, erträgt fast jedes Wie.“**',
+        'Der Wiener Arzt **Viktor Frankl** wurde im Zweiten Weltkrieg als Jude in Konzentrationslager verschleppt. Er überlebte. Dabei beobachtete er: Menschen, die einen **Sinn** hatten – einen Menschen, auf den sie hofften, eine Aufgabe, die auf sie wartete –, hielten oft länger durch. Er zitierte gern einen Satz des Philosophen Nietzsche: **„Wer ein Warum zum Leben hat, erträgt fast jedes Wie.“**',
         '### Wo finden Menschen Sinn?',
         'Frankl meinte, Sinn kann man auf drei Wegen finden: indem man etwas **tut oder schafft** (eine Arbeit, ein Bild, einem Menschen helfen), indem man etwas **erlebt** (Liebe, Freundschaft, Natur, Musik) und indem man eine **Haltung** findet, wenn etwas Schweres passiert.',
         '### Antworten der Religionen',
@@ -419,17 +419,17 @@ export const LEKTIONEN = [
       bild: ['lina:ruhig:sitzen', 'opa:froh:sitzen'], sprecher: { Lina: 'w3', 'Herr Weis': 'm2' },
       text: [
         ['Lina', 'Herr Weis, Sie sind jetzt seit zehn Jahren in Rente. Ist Ihnen nicht langweilig?'],
-        ['Herr Weis', 'Am Anfang schon. Ich hatte vierzig Jahre lang Züge gefahren. Plötzlich hat mich niemand mehr gebraucht. Das war die schwerste Zeit.'],
+        ['Herr Weis', 'Am Anfang schon. Ich habe vierzig Jahre lang Züge gefahren. Plötzlich hat mich niemand mehr gebraucht. Das war die schwerste Zeit.'],
         ['Lina', 'Und was hat sich geändert?'],
-        ['Herr Weis', 'Ich habe angefangen, im Repair-Café Fahrräder zu reparieren. Jeden Samstag. Wenn ein Kind mit seinem kaputten Rad kommt und mit einem heilen Rad nach Hause fährt – das ist ein gutes Gefühl.'],
+        ['Herr Weis', 'Ich habe angefangen, im Reparatur-Café Fahrräder zu reparieren. Jeden Samstag. Wenn ein Kind mit seinem kaputten Rad kommt und mit einem heilen Rad nach Hause fährt – das ist ein gutes Gefühl.'],
         ['Lina', 'Ist das Ihr Sinn?'],
         ['Herr Weis', 'Einer davon. Dann meine Enkelin. Und mein Garten. Und abends sitze ich hier und schaue in den Himmel. Ich glaube nicht an Gott, aber in solchen Momenten spüre ich, dass ich ein Teil von etwas Großem bin.'],
         ['Lina', 'Ich weiß noch nicht, was mein Sinn ist.'],
         ['Herr Weis', 'Den muss man mit vierzehn auch nicht wissen. Probier viel aus. Der Sinn findet dich oft, wenn du etwas für andere tust.'],
       ],
-      vor: [{ art: 'mc', auftrag: 'Was ist ein „Repair-Café“? Kreuze an.', stufe: 1, fragen: [{ f: '', o: ['ein Treffen, bei dem Freiwillige kaputte Dinge reparieren', 'ein Café, das gerade umgebaut wird'], r: 0 }] }],
+      vor: [{ art: 'mc', auftrag: 'Was ist ein „Reparatur-Café“? Kreuze an.', stufe: 1, fragen: [{ f: '', o: ['ein Treffen, bei dem Freiwillige kaputte Dinge reparieren', 'ein Café, das gerade umgebaut wird'], r: 0 }] }],
       beim: [
-        { art: 'fragen', auftrag: 'Hör zu und antworte.', stufe: 1, fragen: [{ f: 'Warum war die erste Zeit in Rente schwer für Herrn Weis?', l: 'Niemand hat ihn mehr gebraucht.' }, { f: 'Was macht er jeden Samstag?', l: 'Er repariert im Repair-Café Fahrräder.' }, { f: 'Nenne drei Dinge, die seinem Leben Sinn geben.', zeilen: 2, l: 'das Reparieren für andere, seine Enkelin, sein Garten, in den Himmel schauen' }] },
+        { art: 'fragen', auftrag: 'Hör zu und antworte.', stufe: 1, fragen: [{ f: 'Warum war die erste Zeit in Rente schwer für Herrn Weis?', l: 'Niemand hat ihn mehr gebraucht.' }, { f: 'Was macht er jeden Samstag?', l: 'Er repariert im Reparatur-Café Fahrräder.' }, { f: 'Nenne drei Dinge, die seinem Leben Sinn geben.', zeilen: 2, l: 'das Reparieren für andere, seine Enkelin, sein Garten, in den Himmel schauen' }] },
         { art: 'fragen', auftrag: 'Welche von Frankls drei Wegen findest du bei Herrn Weis?', stufe: 3, fragen: [{ f: '', zeilen: 2, l: 'etwas tun (Fahrräder reparieren), etwas erleben (Enkelin, Garten, Himmel), Haltung (nach der schweren Zeit neu anfangen)' }] },
       ],
       nach: [{ art: 'sprechen', auftrag: '„Der Sinn findet dich oft, wenn du etwas für andere tust.“ Was meint ihr dazu?', stufe: 3, karten: [
@@ -438,7 +438,7 @@ export const LEKTIONEN = [
     regel: {
       reihen: [
         [{ titel: 'Sinn', punkte: ['Frankl: **„Wer ein Warum zum Leben hat, erträgt fast jedes Wie.“**', 'drei Wege: **tun**, **erleben**, **Haltung finden**'] },
-         { titel: 'Antworten', punkte: ['**Religionen**: Gott will und liebt jeden Menschen', '**Buddhismus**: Leid überwinden, mitfühlend leben', '**ohne Religion**: Wir **geben** dem Leben selbst Sinn'] }],
+         { titel: 'Antworten', punkte: ['**Judentum, Christentum, Islam**: Gott will und liebt jeden Menschen', '**Buddhismus**: Leid überwinden, mitfühlend leben', '**ohne Religion**: Wir **geben** dem Leben selbst Sinn'] }],
       ],
     },
     ueben: [
@@ -514,12 +514,12 @@ export const LEKTIONEN = [
       ],
     },
     ueben: [
-      { art: 'schneidekarten', auftrag: 'Glücks-Tagebuch für eine Woche: Schneide die Karten aus. Schreibe jeden Abend drei gute Dinge auf.', stufe: 2, neueSeite: true, titel: 'Drei gute Dinge', icon: 'mood-smile', farbe: SINN, spalten: 2,
+      { art: 'schneidekarten', auftrag: 'Glücks-Tagebuch für sechs Tage: Schneide die Karten aus. Schreibe jeden Abend drei gute Dinge auf.', stufe: 2, neueSeite: true, titel: 'Drei gute Dinge', icon: 'mood-smile', farbe: SINN, spalten: 2,
         karten: [
           { text: '**Tag 1**', linien: 3 }, { text: '**Tag 2**', linien: 3 }, { text: '**Tag 3**', linien: 3 },
           { text: '**Tag 4**', linien: 3 }, { text: '**Tag 5**', linien: 3 }, { text: '**Tag 6**', linien: 3 },
         ] },
-      { art: 'fragen', auftrag: 'Nach einer Woche: Schau auf deine Karten.', stufe: 2, fragen: [{ f: 'Was hast du bemerkt?', zeilen: 2, l: 'Individuelle Antwort.' }, { f: 'Wem hast du in dieser Woche eine Freude gemacht?', zeilen: 2, l: 'Individuelle Antwort.' }] },
+      { art: 'fragen', auftrag: 'Nach sechs Tagen: Schau auf deine Karten.', stufe: 2, fragen: [{ f: 'Was hast du bemerkt?', zeilen: 2, l: 'Individuelle Antwort.' }, { f: 'Wem hast du in dieser Woche eine Freude gemacht?', zeilen: 2, l: 'Individuelle Antwort.' }] },
     ],
     schreiben: [
       { art: 'schreiben', auftrag: 'Schreibe dein persönliches „Glücks-Rezept“ – wie ein Kochrezept.', stufe: 2,
@@ -586,7 +586,7 @@ export const LEKTIONEN = [
       ],
     },
     ueben: [
-      { art: 'schneidekarten', auftrag: 'Spuren-Karten: Schreibe die Karten aus. Eine behältst du, die anderen verschenkst du an Menschen, die eine Spur bei dir hinterlassen haben.', stufe: 2, neueSeite: true, titel: 'Meine Spur', icon: 'walk', farbe: IDEE, spalten: 2,
+      { art: 'schneidekarten', auftrag: 'Spuren-Karten: Schneide die Karten aus und fülle sie aus. Eine behältst du, die anderen verschenkst du an Menschen, die eine Spur bei dir hinterlassen haben.', stufe: 2, neueSeite: true, titel: 'Meine Spur', icon: 'walk', farbe: IDEE, spalten: 2,
         karten: [
           { text: '**Ein Wert, der mir wichtig ist:**', linien: 2, frage: 'Warum: …' },
           { text: '**Eine Spur, die du bei mir hinterlassen hast:**', linien: 2, frage: 'für: …' },

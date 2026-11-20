@@ -156,7 +156,7 @@ export const LEKTIONEN = [
       ],
     },
     ueben: [
-      { art: 'schneidekarten', auftrag: 'Werte-Karten: Was ist dir bei einer Arbeit am wichtigsten? Schneide die Karten aus, wähle deine Top 3 und lege sie in eine Reihenfolge. Vergleiche mit deinem Nachbarn.', stufe: 2, neueSeite: true, titel: 'Mir ist wichtig …', icon: 'star', farbe: ARBEIT, spalten: 4,
+      { art: 'schneidekarten', auftrag: 'Werte-Karten: Was ist dir bei einer Arbeit am wichtigsten? Schneide die Karten aus, wähle deine Top 3 und lege sie in eine Reihenfolge. Vergleiche mit deiner Nachbarin oder deinem Nachbarn.', stufe: 2, neueSeite: true, titel: 'Mir ist wichtig …', icon: 'star', farbe: ARBEIT, spalten: 4,
         karten: [
           { text: '**viel Geld verdienen**' }, { text: '**nette Kollegen**' }, { text: '**mit den Händen arbeiten**' }, { text: '**draußen arbeiten**' },
           { text: '**anderen helfen**' }, { text: '**eine sichere Stelle**' }, { text: '**kreativ sein**' }, { text: '**feste Arbeitszeiten**' },
@@ -282,7 +282,7 @@ export const LEKTIONEN = [
         ['Lina', 'Wow. Hattest du keine Angst?'],
         ['Yusuf', 'Doch, mein Herz hat gerast. Aber das Üben hilft. Und in der Gruppe sind wir wie eine zweite Familie. Wir zelten im Sommer zusammen.'],
         ['Lina', 'Darf man da einfach mitmachen?'],
-        ['Yusuf', 'Klar. Komm am Samstag mit zur Übung. Mädchen sind bei uns genauso willkommen. Unsere beste Knotenmacherin ist ein Mädchen!'],
+        ['Yusuf', 'Klar. Komm am Samstag mit zur Übung. Mädchen sind bei uns genauso willkommen. Die Beste beim Knotenmachen ist bei uns ein Mädchen!'],
       ],
       vor: [{ art: 'mc', auftrag: 'Was ist ein „Einsatz“ bei der Feuerwehr? Kreuze an.', stufe: 1, fragen: [{ f: '', o: ['wenn die Feuerwehr zu einem echten Notfall fährt', 'eine Pause'], r: 0 }] }],
       beim: [
@@ -336,7 +336,7 @@ export const LEKTIONEN = [
         '### Was den Lohn bestimmt',
         '**Ausbildung**: Wer lange gelernt hat, verdient oft mehr. **Verantwortung**: Wer viele Menschen führt oder große Entscheidungen trifft, bekommt meist mehr. **Angebot und Nachfrage**: Wenn viele Firmen dringend jemanden suchen, steigt der Lohn. **Verhandlungen**: Gewerkschaften handeln für viele Berufe Löhne aus, die in einem **Kollektivvertrag** festgeschrieben werden.',
         '### Regeln in Luxemburg',
-        'Luxemburg hat einen der höchsten **Mindestlöhne** in Europa. Niemand darf weniger bezahlen. Wer eine abgeschlossene Ausbildung hat, bekommt einen höheren Mindestlohn. Und es gilt: **Gleicher Lohn für gleiche Arbeit** – egal ob Frau oder Mann.',
+        'Luxemburg hat einen der höchsten **Mindestlöhne** in Europa. Erwachsenen darf kein Betrieb weniger zahlen. Für Jugendliche unter 18 ist er etwas niedriger, Lehrlinge bekommen eine Lehrlingsentschädigung. Wer eine passende Berufsausbildung hat (zum Beispiel ein DAP), bekommt einen höheren Mindestlohn. Und es gilt: **Gleicher Lohn für gleiche Arbeit** – egal ob Frau oder Mann.',
         '### Ist das gerecht?',
         'Viele finden es ungerecht, dass Pflegekräfte, die Leben retten, viel weniger verdienen als manche Fußballstars. Man kann Gerechtigkeit unterschiedlich sehen: Soll bekommen, wer **viel leistet**? Wer **viel braucht**? Oder sollen **alle gleich** viel bekommen? Darüber streiten Menschen seit Jahrhunderten.',
       ],
@@ -403,7 +403,7 @@ export const LEKTIONEN = [
       was: 'Ein Sachtext', art: 'text', stimme: 'm1', nummern: false,
       quelle: 'Sachtext (vereinfacht); Zahlen gerundet, Stand 2025', titel: 'Ohne Arbeit',
       absaetze: [
-        'In Luxemburg sind etwa **6 von 100** Menschen, die arbeiten möchten, **arbeitslos**. Bei jungen Menschen sind es deutlich mehr. Die Gründe sind verschieden: Eine Firma schließt, Maschinen ersetzen Arbeit, jemand wird krank, oder es fehlt ein passender Abschluss.',
+        'In Luxemburg sind etwa **6 bis 7 von 100** Menschen, die arbeiten möchten, **arbeitslos**. Bei jungen Menschen sind es deutlich mehr. Die Gründe sind verschieden: Eine Firma schließt, Maschinen ersetzen Arbeit, jemand wird krank, oder es fehlt ein passender Abschluss.',
         '### Mehr als Geld',
         'Arbeitslos zu sein ist **nicht nur** ein Geldproblem. Viele Menschen verlieren ihren Tagesrhythmus, ihre Kollegen und das Gefühl, gebraucht zu werden. Manche schämen sich oder werden traurig. Dabei gilt: **Arbeitslosigkeit kann jedem passieren.** Wer arbeitslos ist, ist nicht „faul“.',
         '### Wer hilft?',
@@ -441,7 +441,7 @@ export const LEKTIONEN = [
     },
     regel: {
       reihen: [
-        [{ titel: 'Arbeitslosigkeit', punkte: ['in Luxemburg etwa **6 von 100** (Stand 2025)', 'mehr als ein Geldproblem: **Rhythmus**, **Kontakte**, **Selbstwert**', 'kann **jedem** passieren'] },
+        [{ titel: 'Arbeitslosigkeit', punkte: ['in Luxemburg etwa **6 bis 7 von 100** (Stand 2025)', 'mehr als ein Geldproblem: **Rhythmus**, **Kontakte**, **Selbstwert**', 'kann **jedem** passieren'] },
          { titel: 'Hilfe', punkte: ['**ADEM**: Stellensuche, Kurse, Arbeitslosengeld', '**Maison de l’orientation**: Beratung', 'in der Schule: **SePAS**', 'ein Abbruch ist **kein Ende**'] }],
       ],
     },
@@ -525,7 +525,7 @@ export const LEKTIONEN = [
         ] },
     ],
     schreiben: [
-      { art: 'schreiben', auftrag: 'Schreibe einen Steckbrief „Der Islam“ für ein Plakat, wie beim Christentum und Judentum.', stufe: 2,
+      { art: 'schreiben', auftrag: 'Schreibe einen Steckbrief „Der Islam“ für ein Plakat, wie beim Christentum.', stufe: 2,
         anfaenge: ['Glaube: …', 'Wichtige Person: …', 'Heilige Schrift: …', 'Gotteshaus: …', 'Wichtige Feste: …', 'Fünf Säulen: …'], zeilen: 7,
         beispiel: 'Glaube: an einen Gott (Allah). Wichtige Person: der Prophet Mohammed, der von etwa 570 bis 632 lebte. Heilige Schrift: der Koran. Gotteshaus: Moschee. Wichtige Feste: Zuckerfest am Ende des Ramadan und Opferfest. Fünf Säulen: Glaubensbekenntnis, Gebet, Abgabe für Arme, Fasten, Pilgerfahrt.' },
     ],
@@ -546,11 +546,11 @@ export const LEKTIONEN = [
       was: 'Ein Sachtext', art: 'text', stimme: 'm1', nummern: false,
       quelle: 'Sachtext (vereinfacht); Zahlen gerundet, Stand 2026', titel: 'Vielfalt statt Vorurteil',
       absaetze: [
-        'Muslime leben auf allen Kontinenten. Die meisten leben in **Asien**, das Land mit den meisten Muslimen ist **Indonesien**. Nur etwa **jeder fünfte** Muslim ist Araber.',
+        'Muslime leben auf allen Kontinenten. Die meisten leben in **Asien**. Das Land mit den meisten Muslimen ist **Indonesien**. Nur etwa **jeder fünfte** Muslim ist Araber.',
         '### Viele Richtungen',
         'Wie im Christentum gibt es im Islam verschiedene **Richtungen**. Die meisten Muslime sind **Sunniten**, eine kleinere Gruppe sind **Schiiten**. Und auch innerhalb dieser Gruppen leben Menschen ihren Glauben sehr unterschiedlich: Manche beten fünfmal am Tag, andere selten. Manche Frauen tragen ein Kopftuch, viele nicht.',
         '### Islam in Luxemburg',
-        'Auch in Luxemburg leben viele Musliminnen und Muslime, zum Beispiel mit Wurzeln in Bosnien, Montenegro, Nordafrika oder der Türkei. Seit 2015 hat der Staat eine **Vereinbarung** mit der muslimischen Gemeinschaft, wie mit anderen Religionsgemeinschaften auch.',
+        'Auch in Luxemburg leben viele Musliminnen und Muslime, zum Beispiel mit Wurzeln in Bosnien, Montenegro, Nordafrika oder der Türkei. 2015 hat der Staat eine **Vereinbarung** mit der muslimischen Gemeinschaft unterschrieben – so wie mit anderen Religionsgemeinschaften auch.',
         '### Islam ist nicht Islamismus',
         '**Islamismus** ist eine politische Ideologie. Kleine extremistische Gruppen missbrauchen die Religion und rechtfertigen damit sogar Gewalt und Terror. Die **allermeisten** Muslime lehnen das ab – und sind selbst oft Opfer dieser Gewalt. Wer alle Muslime wegen dieser Gruppen verurteilt, handelt **ungerecht** und **diskriminierend**.',
       ],
@@ -581,7 +581,7 @@ export const LEKTIONEN = [
     },
     regel: {
       reihen: [
-        [{ titel: 'Vielfalt im Islam', punkte: ['die meisten Muslime leben in **Asien**', 'Richtungen: **Sunniten**, **Schiiten**', 'Glauben wird **verschieden** gelebt', 'in Luxemburg: **Vereinbarung** mit dem Staat seit 2015'] },
+        [{ titel: 'Vielfalt im Islam', punkte: ['die meisten Muslime leben in **Asien**', 'Richtungen: **Sunniten**, **Schiiten**', 'Glauben wird **verschieden** gelebt', 'in Luxemburg: **Vereinbarung** mit dem Staat (2015 unterschrieben)'] },
          { titel: 'Islam ≠ Islamismus', punkte: ['**Islamismus**: politische Ideologie kleiner Gruppen', 'die **allermeisten** Muslime lehnen Gewalt ab', 'alle verurteilen = **Diskriminierung**', '**fragen** statt verurteilen'] }],
       ],
     },
@@ -600,7 +600,7 @@ export const LEKTIONEN = [
     schreiben: [
       { art: 'schreiben', auftrag: 'Was hast du in diesen zwei Lektionen über den Islam gelernt? Was hat dich überrascht? Welche Frage hast du noch?', stufe: 2,
         anfaenge: ['Ich habe gelernt, dass …', 'Überrascht hat mich, dass …', 'Ich würde gern noch wissen, …'], zeilen: 7,
-        beispiel: 'Ich habe gelernt, dass die meisten Muslime in Asien leben und nicht in Arabien. Überrascht hat mich, dass Amira und Yusuf beide Muslime sind und ihren Glauben ganz unterschiedlich leben. Ich habe auch verstanden, dass Islam und Islamismus nicht dasselbe sind. Ich würde gern noch wissen, wie das Zuckerfest gefeiert wird.' },
+        beispiel: 'Ich habe gelernt, dass die meisten Muslime keine Araber sind und dass Indonesien das Land mit den meisten Muslimen ist. Überrascht hat mich, dass Amira und Yusuf beide Muslime sind und ihren Glauben ganz unterschiedlich leben. Ich habe auch verstanden, dass Islam und Islamismus nicht dasselbe sind. Ich würde gern noch wissen, wie das Zuckerfest gefeiert wird.' },
     ],
     check: ['Ich beschreibe die Vielfalt im Islam.', 'Ich unterscheide Islam und Islamismus.', 'Ich stelle Fragen respektvoll.'],
   },

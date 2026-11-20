@@ -54,7 +54,7 @@ export const LEKTIONEN = [
       ],
       woerter: [['die Gewalt', 'la violence'], ['absichtlich', 'exprès'], ['schaden', 'nuire'], ['treten', 'donner un coup de pied'], ['erpressen', 'faire du chantage'], ['das Gerücht', 'la rumeur'], ['die Seele', 'l’âme, le psychisme'], ['das Eigentum', 'la propriété']],
       aufgaben: [
-        { art: 'tabelle', auftrag: 'Welche Form von Gewalt ist das? Kreuze an.', stufe: 2, kopf: ['', 'körperlich', 'seelisch', 'digital', 'gegen Sachen'], breiten: [44, 14, 14, 14, 14], zeilen: [['Jemand wird geschubst.', '[x]', '', '', ''], ['Jemand wird erpresst: „Gib mir dein Geld, sonst …“', '', '[x]', '', ''], ['Ein peinliches Video wird im Chat geteilt.', '', '', '[x]', ''], ['Ein Fahrradreifen wird zerstochen.', '', '', '', '[x]'], ['Niemand darf mit einem Mädchen reden.', '', '[x]', '', '']] },
+        { art: 'tabelle', auftrag: 'Welche Form von Gewalt ist das? Kreuze an.', stufe: 2, kopf: ['', 'körperlich', 'seelisch', 'digital', 'gegen Sachen'], breiten: [44, 14, 14, 14, 14], zeilen: [['Jemand wird geschubst.', '[x]', '', '', ''], ['Jemand wird erpresst: „Gib mir dein Geld, sonst …“', '', '[x]', '', ''], ['Ein peinliches Video wird im Chat geteilt.', '', '', '[x]', ''], ['Ein Fahrradreifen wird zerstochen.', '', '', '', '[x]'], ['Ein Mädchen wird ausgeschlossen: Niemand soll mit ihr reden.', '', '[x]', '', '']] },
       ],
     },
     hoeren: {
@@ -135,7 +135,7 @@ export const LEKTIONEN = [
         ['Lehrer', 'Finn, du hast Luca so geschubst, dass er hingefallen ist. Was war los?'],
         ['Finn', 'Er hat mich provoziert! Er hat gesagt, ich bin zu dumm für Mathe.'],
         ['Lehrer', 'Das war gemein von ihm. Aber schubsen ist keine Lösung. Was hast du in dem Moment gefühlt – außer Wut?'],
-        ['Finn', 'Keine Ahnung … Ich hatte gerade die Mathearbeit zurückbekommen. Wieder eine Fünf. Alle haben es gesehen.'],
+        ['Finn', 'Keine Ahnung … Ich hatte gerade die Mathearbeit zurückbekommen. Wieder eine ungenügende Note. Alle haben es gesehen.'],
         ['Lehrer', 'Und wie hat sich das angefühlt?'],
         ['Finn', 'Peinlich. Ich hatte so viel gelernt. Ich dachte, ich schaffe es nie.'],
         ['Lehrer', 'Dann war unter der Wut vielleicht Scham und Enttäuschung. Das ist verständlich. Die Frage ist: Was machst du nächstes Mal mit so einem Gefühl?'],
@@ -144,7 +144,7 @@ export const LEKTIONEN = [
       ],
       vor: [{ art: 'mc', auftrag: 'Was bedeutet „provozieren“? Kreuze an.', stufe: 1, fragen: [{ f: '', o: ['jemanden absichtlich reizen, damit er wütend wird', 'jemandem helfen'], r: 0 }] }],
       beim: [
-        { art: 'fragen', auftrag: 'Hör zu und antworte.', stufe: 1, fragen: [{ f: 'Was hat Luca zu Finn gesagt?', l: 'dass er zu dumm für Mathe ist' }, { f: 'Was war kurz vorher passiert?', l: 'Finn hatte wieder eine Fünf in der Mathearbeit bekommen; alle haben es gesehen.' }, { f: 'Welche Gefühle lagen unter Finns Wut?', l: 'Scham und Enttäuschung' }, { f: 'Was will Finn nächstes Mal tun?', zeilen: 2, l: 'rausgehen, bevor er explodiert; sich bei Luca entschuldigen' }] },
+        { art: 'fragen', auftrag: 'Hör zu und antworte.', stufe: 1, fragen: [{ f: 'Was hat Luca zu Finn gesagt?', l: 'dass er zu dumm für Mathe ist' }, { f: 'Was war kurz vorher passiert?', l: 'Finn hatte wieder eine ungenügende Note in der Mathearbeit bekommen; alle haben es gesehen.' }, { f: 'Welche Gefühle lagen unter Finns Wut?', l: 'Scham und Enttäuschung' }, { f: 'Was will Finn nächstes Mal tun?', zeilen: 2, l: 'rausgehen, bevor er explodiert; sich bei Luca entschuldigen' }] },
       ],
       nach: [{ art: 'sprechen', auftrag: 'War es fair, dass der Lehrer auch nach Finns Gefühlen gefragt hat? Oder hätte er ihn einfach bestrafen sollen?', stufe: 3, karten: [
         { titel: 'Satzanfänge', text: ['Ich finde es richtig, weil …', 'Aber Gewalt muss auch Folgen haben, weil …'] }] }],
@@ -193,12 +193,12 @@ export const LEKTIONEN = [
         '### Grün: Handeln',
         'Jetzt, mit etwas Abstand, wählst du eine **gute Lösung**: sagen, was dich stört (mit einer Ich-Botschaft), Hilfe holen oder später darüber reden.',
         '### Wut rauslassen – ohne Schaden',
-        'Manchmal hilft es, die Energie loszuwerden: rennen, auf ein Kissen boxen, laut Musik hören, Wut aufschreiben und das Blatt zerreißen. Jeder Mensch hat andere Strategien. Wichtig ist nur: **niemandem schaden** – auch nicht sich selbst.',
+        'Manchmal hilft es, die Energie loszuwerden: rennen, kurz an die frische Luft gehen, laut Musik hören, Wut aufschreiben und das Blatt zerreißen. Jeder Mensch hat andere Strategien. Wichtig ist nur: **niemandem schaden** – auch nicht sich selbst.',
       ],
       woerter: [['die Ampel', 'le feu (de signalisation)'], ['blitzschnell', 'en un éclair'], ['innerlich', 'intérieurement'], ['die Luft anhalten', 'retenir son souffle'], ['der Abstand', 'la distance, le recul'], ['die Schwäche', 'la faiblesse'], ['die Stärke', 'la force'], ['zerreißen', 'déchirer']],
       aufgaben: [
         { art: 'zuordnen', auftrag: 'Was gehört zu welcher Ampelfarbe? Verbinde.', stufe: 1, links: ['Rot', 'Gelb', 'Grün'], rechts: ['Stopp! Atmen, nichts tun.', 'Nachdenken: Was fühle ich? Was will ich?', 'Eine gute Lösung wählen.'] },
-        { art: 'tabelle', auftrag: 'Gute Strategie oder schadet sie jemandem? Kreuze an.', stufe: 2, kopf: ['', 'gute Strategie', 'schadet'], breiten: [60, 20, 20], zeilen: [['eine Runde ums Haus rennen', '[x]', ''], ['die Tür eintreten', '', '[x]'], ['auf ein Kissen boxen', '[x]', ''], ['sich selbst wehtun', '', '[x]'], ['laut Musik hören', '[x]', ''], ['den kleinen Bruder anschreien', '', '[x]']] },
+        { art: 'tabelle', auftrag: 'Gute Strategie oder schadet sie jemandem? Kreuze an.', stufe: 2, kopf: ['', 'gute Strategie', 'schadet'], breiten: [60, 20, 20], zeilen: [['eine Runde ums Haus rennen', '[x]', ''], ['die Tür eintreten', '', '[x]'], ['kurz an die frische Luft gehen', '[x]', ''], ['sich selbst wehtun', '', '[x]'], ['laut Musik hören', '[x]', ''], ['den kleinen Bruder anschreien', '', '[x]']] },
       ],
     },
     hoeren: {
@@ -226,7 +226,7 @@ export const LEKTIONEN = [
     regel: {
       reihen: [
         [{ titel: 'Die Wut-Ampel', nummern: true, punkte: ['**Rot**: Stopp! Atmen, nichts tun.', '**Gelb**: Nachdenken – was fühle ich, was will ich? Evtl. **rausgehen**.', '**Grün**: eine **gute Lösung** wählen.'] },
-         { titel: 'Wut rauslassen ohne Schaden', punkte: ['**bewegen**: rennen, Kissen boxen', '**Musik** hören', '**aufschreiben** und zerreißen', 'niemandem **schaden** – auch nicht sich selbst'] }],
+         { titel: 'Wut rauslassen ohne Schaden', punkte: ['**bewegen**: rennen, an die frische Luft', '**Musik** hören', '**aufschreiben** und zerreißen', 'niemandem **schaden** – auch nicht sich selbst'] }],
       ],
     },
     ueben: [
@@ -252,7 +252,7 @@ export const LEKTIONEN = [
     start: {
       was: 'Wer hilft?',
       aufgaben: [
-        { art: 'mc', auftrag: 'Auf dem Bahnsteig wird jemand bedrängt. 30 Menschen sehen es. Was glaubst du? Kreuze an.', stufe: 1, fragen: [{ f: '', o: ['Viele helfen sofort.', 'Oft hilft niemand, weil jeder denkt, ein anderer macht es.'], r: 1 }] },
+        { art: 'mc', auftrag: 'Auf dem Bahnsteig wird jemand bedrängt. 30 Menschen sehen es. Was glaubst du? Kreuze an.', stufe: 1, fragen: [{ f: '', o: ['Viele helfen sofort.', 'Manchmal hilft lange niemand, weil jeder denkt, ein anderer macht es.'], r: 1 }] },
       ],
     },
     lesen: {
@@ -261,10 +261,10 @@ export const LEKTIONEN = [
       absaetze: [
         '**Zivilcourage** heißt: im Alltag **Mut zeigen**, wenn jemand bedroht, beleidigt oder angegriffen wird – auch wenn man die Person nicht kennt.',
         '### Der Zuschauereffekt',
-        'Forscher haben herausgefunden: Je **mehr** Menschen etwas beobachten, desto **seltener** hilft der Einzelne. Jeder denkt: „Ein anderer wird schon etwas tun.“ So tut am Ende niemand etwas. Wer diesen Effekt kennt, kann ihn durchbrechen.',
+        'Forscher haben herausgefunden: Je **mehr** Menschen etwas beobachten, desto **seltener** hilft der Einzelne. Jeder denkt: „Ein anderer wird schon etwas tun.“ Darum hilft manchmal niemand – oder erst spät. Wer diesen Effekt kennt, kann ihn durchbrechen.',
         '### Helfen, ohne sich in Gefahr zu bringen',
-        'Zivilcourage heißt **nicht**, den Helden zu spielen. Niemand muss sich zwischen Schlägernde stellen. Diese Regeln helfen:',
-        '**Hinsehen** und die Lage einschätzen. **Andere ansprechen** – ganz direkt: „Sie im roten Pulli, bitte rufen Sie die Polizei!“ Den **Notruf wählen**: **113** (Polizei) oder **112** (Rettung). **Laut sein** und Aufmerksamkeit machen. Sich um das **Opfer kümmern**. **Zeugin oder Zeuge sein**: sich merken, was passiert ist, und es später erzählen.',
+        'Zivilcourage heißt **nicht**, den Helden zu spielen. Niemand muss sich zwischen Menschen stellen, die sich prügeln. Diese Regeln helfen:',
+        '**Hinsehen** und die Lage einschätzen. **Andere ansprechen** – ganz direkt: „Sie im roten Pulli, bitte rufen Sie die Polizei!“ Den **Notruf wählen**: **113** (Polizei) oder **112** (Rettung). **Laut sein** und andere aufmerksam machen. Sich um das **Opfer kümmern**. **Zeugin oder Zeuge sein**: sich merken, was passiert ist, und es später erzählen.',
         'Auch im Netz kann man Zivilcourage zeigen: Hasskommentare melden, Betroffenen schreiben, nicht weiterleiten.',
       ],
       woerter: [['die Zivilcourage', 'le courage civique'], ['bedrohen', 'menacer'], ['der Zuschauereffekt', 'l’effet du témoin'], ['durchbrechen', 'briser'], ['einschätzen', 'évaluer'], ['die Aufmerksamkeit', 'l’attention'], ['das Opfer', 'la victime'], ['der Zeuge', 'le témoin']],
@@ -281,7 +281,7 @@ export const LEKTIONEN = [
         ['Ben', 'Und keiner hat was gemacht?'],
         ['Jana', 'Erst nicht. Der Bus war voll, aber alle haben auf ihr Handy geschaut. Ich hatte voll Angst.'],
         ['Ben', 'Was hast du gemacht?'],
-        ['Jana', 'Ich habe an die Regeln gedacht. Ich habe nicht die Jungs angesprochen, sondern eine Frau: „Sie im grünen Mantel, bitte sagen Sie dem Busfahrer Bescheid!“ Und ich habe laut gesagt: „Hört auf, das ist nicht okay!“'],
+        ['Jana', 'Ich habe an die Regeln gedacht. Ich habe mich nicht mit den Jungs angelegt. Ich habe eine Frau direkt angesprochen: „Sie im grünen Mantel, bitte sagen Sie dem Busfahrer Bescheid!“ Und ich habe laut gesagt: „Hört auf, das ist nicht okay!“'],
         ['Ben', 'Und dann?'],
         ['Jana', 'Plötzlich sind drei andere aufgestanden und haben auch was gesagt. Der Busfahrer hat angehalten. Die Jungs sind ausgestiegen. Ich habe mich dann zu dem Jungen gesetzt.'],
         ['Ben', 'Krass. Du warst mutig.'],
@@ -297,7 +297,7 @@ export const LEKTIONEN = [
     },
     regel: {
       reihen: [
-        [{ titel: 'Zivilcourage', punkte: ['**Mut** im Alltag, auch für Fremde', '**Zuschauereffekt**: Je mehr zuschauen, desto weniger hilft einer.', 'kein Held spielen – **ohne Gefahr** helfen'] },
+        [{ titel: 'Zivilcourage', punkte: ['**Mut** im Alltag, auch für Fremde', '**Zuschauereffekt**: Je mehr zuschauen, desto weniger hilft einer.', 'nicht den Helden spielen – **ohne Gefahr** helfen'] },
          { titel: 'Sechs Regeln', nummern: true, punkte: ['**hinsehen**', 'andere **direkt ansprechen**', 'Notruf **113** / **112**', '**laut** sein', 'um das **Opfer** kümmern', '**Zeuge** sein'] }],
       ],
     },
@@ -309,13 +309,13 @@ export const LEKTIONEN = [
           { text: 'Im Zug beleidigt ein Mann eine Frau wegen ihrer Hautfarbe.' },
           { text: 'Vor dem Jugendhaus liegt ein Mann am Boden und bewegt sich nicht.' },
           { text: 'Jemand sprüht ein Hakenkreuz an die Bushaltestelle.' },
-          { text: 'Eine Freundin erzählt, dass ein Erwachsener ihr Angst macht und Fotos von ihr will.' },
+          { text: 'Eine Freundin erzählt, dass ein Erwachsener ihr Angst macht und Fotos von ihr will. (Hilfe: 116 111, im Notfall Polizei 113)' },
         ] },
     ],
     schreiben: [
       { art: 'schreiben', auftrag: 'Wähle eine Situations-Karte. Beschreibe Schritt für Schritt, wie du helfen würdest.', stufe: 2,
         anfaenge: ['Die Situation: …', 'Zuerst …', 'Dann …', 'Danach …', 'Wichtig ist mir, dass …'], zeilen: 8,
-        beispiel: 'Die Situation: Auf dem Schulweg schubsen drei Jugendliche ein jüngeres Kind herum. Zuerst bleibe ich stehen und schaue genau hin. Dann spreche ich einen Erwachsenen direkt an: „Sie mit dem Hund, bitte helfen Sie!“ Danach rufe ich laut: „Lasst ihn in Ruhe!“ und wähle, wenn nötig, die 113. Wichtig ist mir, dass ich mich nicht selbst prügle und mich danach um das Kind kümmere.' },
+        beispiel: 'Die Situation: Auf dem Schulweg schubsen drei Jugendliche ein jüngeres Kind herum. Zuerst bleibe ich stehen und schaue genau hin. Dann spreche ich einen Erwachsenen direkt an: „Sie mit dem Hund, bitte helfen Sie!“ Danach rufe ich laut: „Lasst ihn in Ruhe!“ und wähle, wenn nötig, die 113. Wichtig ist mir, dass ich mich nicht selbst mit ihnen prügle und mich danach um das Kind kümmere.' },
     ],
     check: ['Ich erkläre den Zuschauereffekt.', 'Ich kenne die sechs Regeln der Zivilcourage.', 'Ich weiß, wie ich ohne Gefahr helfe.'],
   },
@@ -337,9 +337,9 @@ export const LEKTIONEN = [
         '### Mahatma Gandhi',
         '**Gandhi** wollte, dass Indien von Großbritannien unabhängig wird – aber **ohne Gewalt**. 1930 lief er mit vielen Menschen fast **400 Kilometer** zum Meer, um selbst Salz zu gewinnen. Das war verboten, denn die Briten verdienten am Salz. Tausende wurden verhaftet. **1947** wurde Indien unabhängig.',
         '### Rosa Parks',
-        'In den USA mussten schwarze Menschen in Bussen hinten sitzen und weißen Fahrgästen Platz machen. Am **1. Dezember 1955** weigerte sich **Rosa Parks**, ihren Platz aufzugeben. Sie wurde verhaftet. Daraufhin mieden schwarze Menschen in ihrer Stadt über ein Jahr lang die Busse – bis die Regel fiel.',
+        'In vielen Städten im Süden der USA mussten schwarze Menschen in Bussen hinten sitzen und weißen Fahrgästen Platz machen. Am **1. Dezember 1955** weigerte sich **Rosa Parks**, ihren Platz aufzugeben. Sie wurde verhaftet. Daraufhin **boykottierten** schwarze Menschen in ihrer Stadt die Busse: Über ein Jahr lang fuhren sie nicht mehr mit dem Bus – bis die Regel fiel.',
         '### Martin Luther King',
-        'Der Pfarrer **Martin Luther King** kämpfte gewaltfrei für die gleichen Rechte für Schwarze. 1963 sagte er vor über 200 000 Menschen: **„Ich habe einen Traum“** – dass seine Kinder nicht nach ihrer Hautfarbe, sondern nach ihrem Charakter beurteilt werden. 1964 bekam er den Friedensnobelpreis.',
+        'Der Pfarrer **Martin Luther King** kämpfte gewaltfrei dafür, dass Schwarze die gleichen Rechte bekommen. 1963 sagte er vor über 200 000 Menschen: **„Ich habe einen Traum“** – dass seine Kinder nicht nach ihrer Hautfarbe, sondern nach ihrem Charakter beurteilt werden. 1964 bekam er den Friedensnobelpreis.',
         '### Gewaltfrei heißt nicht schwach',
         'Gewaltfreier Widerstand braucht viel **Mut** und **Ausdauer**: Man wehrt sich, ohne zurückzuschlagen. Gerade das zeigt allen, wer im Unrecht ist.',
       ],
@@ -365,7 +365,7 @@ export const LEKTIONEN = [
       ],
       vor: [{ art: 'mc', auftrag: 'Was bedeutet „etwas hinnehmen“? Kreuze an.', stufe: 1, fragen: [{ f: '', o: ['etwas akzeptieren, ohne sich zu wehren', 'etwas mitnehmen'], r: 0 }] }],
       beim: [
-        { art: 'fragen', auftrag: 'Hör zu und antworte.', stufe: 1, fragen: [{ f: 'Was wäre laut Lea passiert, wenn Rosa Parks Gewalt benutzt hätte?', zeilen: 2, l: 'Alle hätten gesagt, die Schwarzen sind gewalttätig, und die Polizei hätte noch härter vorgehen können.' }, { f: 'Was haben die Menschen beim Busboykott gemacht?', l: 'Sie sind ein Jahr lang zu Fuß zur Arbeit gegangen.' }, { f: 'Was hat Yusuf am Ende verstanden?', l: 'Gewaltfrei heißt nicht, alles hinzunehmen, sondern sich klug zu wehren.' }] },
+        { art: 'fragen', auftrag: 'Hör zu und antworte.', stufe: 1, fragen: [{ f: 'Was wäre laut Lea passiert, wenn Rosa Parks Gewalt benutzt hätte?', zeilen: 2, l: 'Alle hätten gesagt, schwarze Menschen seien gewalttätig, und die Polizei hätte noch härter vorgehen können.' }, { f: 'Was haben die Menschen beim Busboykott gemacht?', l: 'Sie sind ein Jahr lang zu Fuß zur Arbeit gegangen.' }, { f: 'Was hat Yusuf am Ende verstanden?', l: 'Gewaltfrei heißt nicht, alles hinzunehmen, sondern sich klug zu wehren.' }] },
       ],
       nach: [{ art: 'sprechen', auftrag: 'Kennt ihr heute Menschen oder Bewegungen, die gewaltfrei für etwas kämpfen?', stufe: 2, karten: [
         { titel: 'Ideen', text: ['Klima-Demonstrationen', 'Petitionen', 'Streiks', 'Boykott', 'Mahnwachen'] }] }],
@@ -380,8 +380,8 @@ export const LEKTIONEN = [
       { art: 'meinungslinie', auftrag: 'Was denkst du? Begründe.', stufe: 3, aussagen: ['Wer zurückschlägt, ist stärker als wer weggeht.', 'Man kann jeden Konflikt ohne Gewalt lösen.'] },
       { art: 'schneidekarten', auftrag: 'Gewaltfrei aktiv: Eure Schule plant, den Pausenhof zu verkleinern. Was könnt ihr gewaltfrei tun? Ordnet die Karten von „bringt wenig“ bis „bringt viel“ und ergänzt eigene Ideen.', stufe: 3, titel: 'Gewaltfrei aktiv', icon: 'speakerphone', farbe: IDEE, spalten: 3,
         karten: [
-          { text: 'Unterschriften sammeln' }, { text: 'mit dem Schülerrat reden' }, { text: 'ein Plakat malen' },
-          { text: 'einen Brief an die Schulleitung schreiben' }, { text: 'einen Artikel für die Schülerzeitung' }, { text: '**Eigene Idee:**', linien: 2 },
+          { text: 'Unterschriften sammeln' }, { text: 'mit dem Schülerkomitee reden' }, { text: 'ein Plakat malen' },
+          { text: 'einen Brief an die Schulleitung schreiben' }, { text: 'einen Artikel für die Schülerzeitung schreiben' }, { text: '**Eigene Idee:**', linien: 2 },
         ] },
     ],
     schreiben: [
@@ -527,7 +527,7 @@ export const LEKTIONEN = [
     },
     ueben: [
       { art: 'beschriften', auftrag: 'Auf welcher Stufe der Treppe steht das? Schreibe die Nummer.', stufe: 2, html: hassTreppe(),
-        liste: [['Ein Witz macht eine Religion lächerlich.', '2'], ['„Die sind alle faul.“', '1'], ['Eine Familie bekommt wegen ihrer Herkunft keine Wohnung.', '3'], ['Ein Mann wird wegen seiner Hautfarbe verprügelt.', '4'], ['Ein Staat sperrt Menschen wegen ihrer Religion ein.', '5']], spalten: 1 },
+        liste: [['Ein Witz macht eine Religion lächerlich.', '2'], ['Jemand denkt: „Die sind alle faul.“', '1'], ['Eine Familie bekommt wegen ihrer Herkunft keine Wohnung.', '3'], ['Ein Mann wird wegen seiner Hautfarbe verprügelt.', '4'], ['Ein Staat sperrt Menschen wegen ihrer Religion ein.', '5']], spalten: 1 },
       { art: 'meinungslinie', auftrag: 'Was denkst du? Begründe.', stufe: 3, aussagen: ['Alle Jugendlichen sollten einmal eine Gedenkstätte besuchen.'] },
     ],
     schreiben: [
@@ -597,7 +597,7 @@ export const LEKTIONEN = [
       { art: 'schneidekarten', auftrag: 'Friedens-Karten: Schreibt auf jede Karte einen Friedenswunsch oder ein Versprechen für eure Klasse. Hängt sie zusammen als Friedenskette im Klassenraum auf.', stufe: 2, neueSeite: true, titel: 'Friedenskette', icon: 'peace', farbe: IDEE, spalten: 3,
         karten: [
           { text: '**Ich wünsche mir …**', linien: 3 }, { text: '**Ich verspreche …**', linien: 3 }, { text: '**Frieden ist für mich …**', linien: 3 },
-          { text: '**In unserer Klasse …**', linien: 3 }, { text: '**Ich verzeihe …**', linien: 3 }, { text: '**Für die Welt wünsche ich …**', linien: 3 },
+          { text: '**In unserer Klasse …**', linien: 3 }, { text: '**Versöhnung heißt für mich …**', linien: 3 }, { text: '**Für die Welt wünsche ich …**', linien: 3 },
         ] },
     ],
     schreiben: [
