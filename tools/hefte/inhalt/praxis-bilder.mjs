@@ -478,3 +478,14 @@ export function muskeln() {
   o += t(a, 318, 'von vorn', { gr: 13, farbe: '#5b6475' }) + t(b, 318, 'von hinten', { gr: 13, farbe: '#5b6475' })
   return `<figure class="muskel">${o}</svg></figure>`
 }
+
+/** Tischtennisplatte von oben: 1 Netz, 2 Mittellinie, 3 Grundlinie, 4 Seitenlinie */
+export function tischtennis({ nummern = true } = {}) {
+  let o = `<svg viewBox="0 0 520 290" xmlns="http://www.w3.org/2000/svg" class="tt-svg">`
+  o += `<rect x="40" y="40" width="440" height="210" rx="4" fill="#1f5fa0" stroke="#fff" stroke-width="6"/><rect x="40" y="40" width="440" height="210" rx="4" fill="none" stroke="#123b66" stroke-width="2"/>`
+  o += `<line x1="40" y1="145" x2="480" y2="145" stroke="#fff" stroke-width="2.5"/>`
+  o += `<line x1="260" y1="26" x2="260" y2="264" stroke="#1a1a1a" stroke-width="7" stroke-dasharray="3 2"/><rect x="254" y="22" width="12" height="8" fill="#1a1a1a"/><rect x="254" y="260" width="12" height="8" fill="#1a1a1a"/>`
+  o += `<circle cx="150" cy="100" r="7" fill="#fff" stroke="#d98b1c" stroke-width="2"/>`
+  if (nummern) o += nr(260, 12, 1) + nr(370, 145, 2) + nr(480, 200, 3) + nr(150, 250, 4)
+  return `<figure class="tt">${o}</svg></figure>`
+}
