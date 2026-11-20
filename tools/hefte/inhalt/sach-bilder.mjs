@@ -196,3 +196,16 @@ export function knetboot({ breite = 120 } = {}) {
   const becken = (x, inhalt, text) => `<rect x="${x}" y="40" width="170" height="130" fill="none" stroke="#2a2f3a" stroke-width="3"/><rect x="${x + 2}" y="70" width="166" height="98" fill="#bfe0f5"/>${inhalt}${t(x + 85, 192, text, { gr: 13, fett: 700 })}`
   return svg(420, 205, `${becken(20, '<circle cx="105" cy="152" r="14" fill="#e87f4f" stroke="#2a2f3a" stroke-width="2"/>', 'Kugel aus Knete')}${becken(230, '<path d="M275,60 Q315,92 355,60 Z" fill="#e87f4f" stroke="#2a2f3a" stroke-width="2"/>', 'Boot aus Knete')}`, breite)
 }
+
+/** Gewaltenteilung in Luxemburg: Dach Verfassung, drei Säulen, Fundament Volk. leer: Säulennamen nur in der Lösung */
+export function gewaltenteilung({ leer = false, breite = 150 } = {}) {
+  const saeule = (x, nrT, titel, wer, farbe) => `<rect x="${x}" y="92" width="130" height="150" rx="6" fill="${farbe}" stroke="#2a2f3a" stroke-width="2"/>
+  ${nr(x + 65, 114, nrT, 12)}${t(x + 65, 150, titel, { gr: 15, fett: 800, klasse: leer ? 'nur-l' : '', farbe: leer ? '#c0392b' : '#2a2f3a' })}
+  ${wer.map((w, i) => t(x + 65, 182 + i * 19, w, { gr: 12.5, fett: i ? 400 : 600 })).join('')}`
+  return svg(480, 320, `
+  <path d="M20,84 L240,18 L460,84 Z" fill="#f2d38a" stroke="#2a2f3a" stroke-width="2"/>${t(240, 62, 'Verfassung', { gr: 17, fett: 800 })}${t(240, 80, 'Großherzog: Staatsoberhaupt', { gr: 11.5, fett: 500 })}
+  ${saeule(30, 1, 'Gesetze machen', ['Abgeordnetenkammer', '60 Abgeordnete', 'stimmen über Gesetze ab'], '#cfe3f5')}
+  ${saeule(175, 2, 'Gesetze ausführen', ['Regierung', 'Premierminister/in', 'und Minister/innen'], '#d8ecc9')}
+  ${saeule(320, 3, 'Recht sprechen', ['Gerichte', 'Richterinnen und Richter', 'unabhängig'], '#f5d5c8')}
+  <rect x="20" y="250" width="440" height="52" rx="6" fill="#e9e4d8" stroke="#2a2f3a" stroke-width="2"/>${t(240, 273, 'Das Volk', { gr: 16, fett: 800 })}${t(240, 292, 'wählt alle 5 Jahre die Abgeordnetenkammer', { gr: 12.5, fett: 500 })}`, breite)
+}

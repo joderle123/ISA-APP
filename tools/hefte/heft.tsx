@@ -374,6 +374,7 @@ function lesenTeil(L: any, k: Kontext): string {
     let n = 0
     text = r.absaetze.map((p: string) => p.startsWith('### ') ? `<h5 class="zw">${inl(p.slice(4))}</h5>` : `<p class="abs">${r.nummern === false ? '' : `<span class="n">${++n}</span>`}${inl(p)}</p>`).join('')
   }
+  if (r.hinweis) text = `<div class="lese-hinweis">${icon('info-circle')}<span>${inl(r.hinweis)}</span></div>` + text
   if (r.info) text += `<div class="infobox"><b>${icon(r.info.icon || 'info-circle')}${inl(r.info.titel)}</b><ul>${r.info.punkte.map((x: string) => `<li>${inl(x)}</li>`).join('')}</ul></div>`
   if (r.bildHtml) text += `<div class="lese-bild">${r.bildHtml}</div>`
   const woerter = r.woerter?.length ? `<div class="woerter"><h5>${k.sp === 'de' ? 'Wörter' : 'Mots'}</h5>${r.woerter.map(([a, b]: [string, string]) => `<div class="w"><b>${esc(a)}</b><span>${esc(b)}</span></div>`).join('')}</div>` : ''
@@ -387,6 +388,7 @@ function lesenTeil(L: any, k: Kontext): string {
 }
 function lesenSprechtext(r: any, sp = 'de'): { wer: string; text: string }[] {
   const t: { wer: string; text: string }[] = [{ wer: '', text: roh(r.titel) }]
+  if (r.hinweis) t.push({ wer: '', text: roh(r.hinweis) })
   if (r.art === 'profile') for (const p of r.profile) t.push({ wer: p.stimme || '', text: roh(p.name) + '. ' + roh(p.text) })
   else if (r.art === 'chat') for (const [wer, x] of r.nachrichten) t.push({ wer: r.stimmen?.[wer] || '', text: roh(x) })
   else if (r.art === 'bd') for (const c of r.cases) { if (c.erz) t.push({ wer: r.erzaehler || '', text: roh(c.erz) }); for (const [w, x] of c.blasen || []) t.push({ wer: r.stimmen?.[w] || '', text: roh(x) }) }
