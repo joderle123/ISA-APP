@@ -1167,3 +1167,9 @@ kbd { display: inline-block; min-width: 1.5em; padding: 0 .35em; margin-right: .
 .ly-emo-mitte { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: calc(var(--r) * 1.2); text-align: center; color: #fff; pointer-events: none; }
 .ly-emo-mitte b { display: block; font-size: 17px; margin-bottom: 4px; } .ly-emo-mitte small { display: block; font-size: 11.5px; line-height: 1.3; opacity: .85; }
 .ly-touch .ly-emo-rad button kbd { display: none; }
+
+/* Fortschritt zu gesperrten Teilen (Garderobe und Meldung) */
+.ly-gd-fort { display: block; align-self: stretch; height: 6px; margin: 4px 10px 2px; border-radius: 3px; background: rgba(43, 58, 85, .14); overflow: hidden; }
+.ly-gd-fort > i { display: block; height: 100%; border-radius: 3px; background: linear-gradient(90deg, #f2b134, #ffd166); }
+.ly-t-fort .ly-t-balken { display: block; height: 6px; margin-top: 6px; border-radius: 3px; background: rgba(255, 255, 255, .25); overflow: hidden; }
+.ly-t-fort .ly-t-balken > i { display: block; height: 100%; background: linear-gradient(90deg, #f2b134, #ffd166); }

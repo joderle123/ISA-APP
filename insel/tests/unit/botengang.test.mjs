@@ -141,3 +141,13 @@ test('Pokale: zehn, leerer Stand keiner, voller Stand alle', async () => {
   assert.equal(pokaleVon(voll).length, 10);
   for (const p of POKALE) assert.ok(p.wie.split(/\s+/).length <= 7, 'kurz: ' + p.wie);
 });
+
+test('Garderobe: Fortschritt beginnt bei 0, hat ein Ziel und ist für die meisten Teile da', async () => {
+  const { GARDEROBE, fortschritt } = await import('../../src/lycee/garderobe.js');
+  let mit = 0;
+  for (const g of GARDEROBE) { const f = fortschritt(g.id, { merke: {} }); if (!f) continue; mit++; assert.equal(f[0], 0, g.id); assert.ok(f[1] > 0, g.id); }
+  assert.ok(mit >= 60, 'Fortschritt für die meisten Teile: ' + mit);
+  assert.deepEqual(fortschritt('e_daumen', { merke: { gewunken: 3 } }), [3, 5]);
+  assert.deepEqual(fortschritt('e_daumen', { merke: { gewunken: 9 } }), [5, 5], 'nicht über das Ziel hinaus');
+  assert.equal(fortschritt('t_igel', { merke: {} }), null, 'Einmal-Dinge ohne Balken');
+});

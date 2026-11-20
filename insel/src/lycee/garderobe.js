@@ -116,4 +116,28 @@ GARDEROBE.push(
   { id: 'l_krone', art: 'kopf', wert: 'krone', farbe: '#b197fc', sy: '👑', name: 'Krone „Level 15“', hinweis: 'Dorf-Level 15 (höchstes)', level: 15, test: (S) => lv(S) >= 15 },
 );
 
+// Fortschritt für gesperrte Teile („3/5“) wie bei großen Spielen: [ist, soll]. Nur zählbare Ziele – Zeitrennen
+// und Einmal-Dinge (Igel, Schneemann, Trottinette-Rennen) haben keinen Balken.
+const anz = (v) => (Array.isArray(v) ? v.length : typeof v === 'string' ? v.length : +v || 0);
+const Zf = (feld, soll) => (S) => [anz(m(S)[feld]), soll];
+const botenN = (S) => (m(S).boten && m(S).boten.n) || 0, botenOrte = (S) => Object.keys((m(S).boten && m(S).boten.best) || {}).length;
+const hfN = (S) => ((m(S).hf && m(S).hf.fertig) || []).length;
+const FORT = {
+  k_beanie: Zf('kickerSiege', 1), k_bucket: Zf('fotoBingo', 5), k_kopfhoerer: Zf('tanzRekord', 2000), k_propeller: Zf('skate5', 5), k_cap_gold: Zf('sticker', 16), k_billard: Zf('billardSiege', 1), k_bommel: Zf('eisMeter', 300), k_sommerhut: Zf('eisSorten', 6), k_krone: Zf('sticker', 24),
+  b_sonne: (S) => [botenN(S), 3], b_herz: (S) => [herzen(S, 4), 3], b_sport: Zf('elfmeterRekord', 4), b_stern: Zf('dosenRekord', 6),
+  o_jugendhaus: (S) => [(m(S).kicker || 0) + (m(S).tanz || 0), 3], o_galaxie: (S) => [botenOrte(S), 8], o_trikot: Zf('volleyRekord', 10), o_gold: (S) => [hfN(S), 5], o_kicker: Zf('kickerBesiegt', 3), o_billard: Zf('billardBesiegt', 3), o_kaktus: Zf('kevinRekord', 500),
+  s_rot: Zf('sticker', 8), s_neon: Zf('tanzSterne', 3), s_weiss: (S) => [hfN(S), 2], s_gold: Zf('fotoBingo', 9),
+  f_neon: Zf('sticker', 8), f_lila: Zf('skate5', 5), f_orange: (S) => [botenOrte(S), 8],
+  t_ratte: Zf('kicker', 2), t_frettchen: (S) => [hfN(S), 3], t_hamster: (S) => [botenN(S), 5],
+  h_pink: (S) => [pokale(S), 2], h_blau: (S) => [pokale(S), 4], h_gruen: Zf('laub', 10), h_lila: (S) => [hfN(S), 7], h_feuer: (S) => [pokale(S), 7],
+  sp_funken: Zf('wochenGesamt', 3), sp_herzen: Zf('tierStreicheln', 10), sp_sterne: Zf('wochenVoll', 1), sp_schnee: Zf('eisMeter', 600), sp_regenbogen: Zf('lernen', 10),
+  r_teddy: (S) => [herzen(S, 4), 4], r_gitarre: Zf('musikGewechselt', 3), r_skate: Zf('skateRekord', 15), r_panzer: Zf('ttSiege', 3), r_rakete: Zf('kevinRekord', 1000), r_fluegel: Zf('wochenVoll', 3),
+  e_daumen: Zf('gewunken', 5), e_klatschen: (S) => [botenN(S), 1], e_denken: Zf('lernen', 5), e_herz: (S) => [herzen(S, 4), 2], e_sieger: (S) => [pokale(S), 1], e_facepalm: Zf('kevinRekord', 100), e_verbeugen: Zf('ttSiege', 1), e_roboter: Zf('tanzRekord', 1000), e_gitarre: Zf('musikGewechselt', 1), e_winken2: Zf('emoteArten', 5),
+};
+for (const g of GARDEROBE) if (g.level) FORT[g.id] = (S) => [S.jetonsGesamt || 0, LEVEL_AB[g.level - 1]];
+export function fortschritt(id, S) {
+  const f = FORT[id]; if (!f) return null;
+  try { const [ist, soll] = f(S); return [Math.max(0, Math.min(Math.floor(ist), soll)), soll]; } catch (e) { return null; }
+}
+
 export const freigeschaltet = (S) => GARDEROBE.filter((g) => { try { return g.test(S); } catch (e) { return false; } }).map((g) => g.id);

@@ -47,7 +47,7 @@ import { createBotengang } from './botengang.js';
 import { createBuchstaben } from './buchstaben.js';
 import { tanzSpiel } from './tanz.js';
 import { createDosen } from './dosen.js';
-import { GARDEROBE, ARTEN as GD_ARTEN, freigeschaltet, levelVon } from './garderobe.js';
+import { GARDEROBE, ARTEN as GD_ARTEN, freigeschaltet, levelVon, fortschritt } from './garderobe.js';
 import { createSpur } from './spur.js';
 import { createSchneemann } from './schneemann.js';
 import { createLaubhaufen } from './laubhaufen.js';
@@ -935,11 +935,31 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (lvJetzt > (G.level || 1)) { G.level = lvJetzt; ui.toast('<b>⭐ Dorf-Level ' + lvJetzt + '!</b><span>Weiter so. Neue Teile in der Garderobe (G).</span>', 'ly-t-ent'); ton('melodie2'); sichern(); }
     const neu = freigeschaltet(S).filter((id) => !G.gesehen.includes(id));
     if (ui.garderobeNeu) ui.garderobeNeu(G.neu.length + neu.length);
+    fortschrittMelden(G);
     if (!neu.length) return;
     G.gesehen.push(...neu); G.neu.push(...neu); sichern();
     if (neu.length > 2) { ui.toast('<b>🎁 ' + neu.length + ' neue Teile in deiner Garderobe</b><span>Taste G (oder ☰ → Garderobe) zum Anziehen</span>', 'ly-t-ent'); return; }
     neu.forEach((id, i) => { const d = gdDing(id); setTimeout(() => ui.belohnung({ sy: d.sy, name: d.name, art: (GD_ARTEN.find((a) => a[0] === d.art) || [])[1] || '', ...(d.art === 'emote' ? { knopf: 'Gleich zeigen (X)', onKnopf: () => emoteSpielen(d.wert) } : { onKnopf: () => gleichAnziehen(id) }) }), 600 + i * 7400); });
     ton('melodie2');
+  }
+  // Fortschritt zu gesperrten Teilen („👍 Daumen hoch 3/5“): nur wenn sich etwas bewegt hat, höchstens alle 25 s eine Meldung,
+  // bei großen Zahlen (Meter, Punkte) nur in Vierteln. Beim ersten Mal still merken (alte Spielstände nicht zuschütten).
+  let fortZuletzt = 0;
+  function fortschrittMelden(G) {
+    const alt = G.fort || null, jetzt = {}, hab = new Set(freigeschaltet(S));
+    let best = null;
+    for (const d of GARDEROBE) {
+      if (hab.has(d.id)) continue;
+      const f = fortschritt(d.id, S); if (!f || !f[0]) continue;
+      const [ist, soll] = f, stufen = soll <= 10 ? soll : 4, st = Math.floor((ist / soll) * stufen);
+      jetzt[d.id] = st;
+      if (alt && st > (alt[d.id] || 0) && ist < soll && (!best || ist / soll > best.f[0] / best.f[1])) best = { d, f };
+    }
+    G.fort = jetzt;
+    if (!best || !alt || performance.now() - fortZuletzt < 25000) return;
+    fortZuletzt = performance.now();
+    const [ist, soll] = best.f, gross = soll > 10;
+    ui.toast('<b>' + best.d.sy + ' ' + best.d.name + ' · ' + (gross ? Math.round((ist / soll) * 100) + ' %' : ist + '/' + soll) + '</b><span>' + best.d.hinweis + '</span><i class="ly-t-balken"><i style="width:' + Math.round((ist / soll) * 100) + '%"></i></i>', 'ly-t-fort');
   }
   // Herausforderungen von Freund:innen (herausforderungen.js): je Abschnitt höchstens eine neue Nachricht; geschafft = Antwort, Herz, Jetons
   let hfUhr = 3;
@@ -978,7 +998,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   ui.onGarderobe = async () => {
     if (!S || !laeuft || imGespraech || ui.ebeneArt() || foto) return;
     const G = gd(), hab = new Set(freigeschaltet(S));
-    const liste = () => GARDEROBE.map((d) => ({ id: d.id, art: d.art, sy: d.sy, name: d.name, hinweis: d.hinweis, hab: hab.has(d.id), an: G.an[d.art] === d.id, neu: G.neu.includes(d.id) }));
+    const liste = () => GARDEROBE.map((d) => ({ id: d.id, art: d.art, sy: d.sy, name: d.name, hinweis: d.hinweis, hab: hab.has(d.id), an: G.an[d.art] === d.id, neu: G.neu.includes(d.id), fort: hab.has(d.id) ? null : fortschritt(d.id, S) }));
     let umziehen = false;
     input.setEnabled(false);
     // Kamera von vorn auf die Figur (rechts im Bild, links ist das Fenster); hochkant: Figur oben
