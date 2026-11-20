@@ -322,3 +322,93 @@ export function toleranz({ soll = 100, tol = 1, werte = [] } = {}) {
   o += t(x0 + W + 14, 92, 'mm', { gr: 11, farbe: '#5b6475' })
   return `<figure class="tol">${o}</svg></figure>`
 }
+
+/** Pflegesymbole (vereinfacht) A–H zum Zuordnen */
+export function pflegeSymbole() {
+  const S = (d, w = 3) => `<path d="${d}" fill="none" stroke="#2a2f3a" stroke-width="${w}" stroke-linejoin="round" stroke-linecap="round"/>`
+  const kreuz = (x, y) => S(`M${x - 4} ${y - 4} L${x + 74} ${y + 48} M${x + 74} ${y - 4} L${x - 4} ${y + 48}`, 3)
+  const wanne = (x, y, innen = '') => S(`M${x} ${y} L${x + 8} ${y + 42} H${x + 62} L${x + 70} ${y}`) + S(`M${x + 2} ${y + 9} q8.5 -8 17 0 t17 0 t17 0 t17 0`, 2.4) + innen
+  const eisen = (x, y, punkte) => S(`M${x} ${y + 42} H${x + 70} L${x + 64} ${y + 18} Q${x + 60} ${y + 10} ${x + 48} ${y + 10} H${x + 16} M${x + 16} ${y + 10} L${x + 12} ${y + 2} H${x + 50}`) + Array.from({ length: punkte }, (_, i) => `<circle cx="${x + 36 + (i - (punkte - 1) / 2) * 12}" cy="${y + 30}" r="3.4" fill="#2a2f3a"/>`).join('')
+  const P = [
+    (x, y) => wanne(x, y, t(x + 35, y + 34, '30', { gr: 17, fett: 800 })),
+    (x, y) => wanne(x, y, t(x + 35, y + 34, '60', { gr: 17, fett: 800 })),
+    (x, y) => wanne(x, y, S(`M${x + 26} ${y + 38} V${y + 24} q0 -4 3 -4 q3 0 3 4 V${y + 18} q0 -4 3 -4 q3 0 3 4 V${y + 20} q0 -4 3 -4 q3 0 3 4 V${y + 32} q0 8 -9 8 H${x + 30} Z`, 2)),
+    (x, y) => wanne(x, y) + kreuz(x, y),
+    (x, y) => S(`M${x + 35} ${y} L${x + 70} ${y + 44} H${x} Z`) + kreuz(x, y),
+    (x, y) => S(`M${x + 4} ${y} H${x + 66} V${y + 46} H${x + 4} Z`) + `<circle cx="${x + 35}" cy="${y + 23}" r="17" fill="none" stroke="#2a2f3a" stroke-width="3"/><circle cx="${x + 35}" cy="${y + 23}" r="3.4" fill="#2a2f3a"/>`,
+    (x, y) => eisen(x, y, 2),
+    (x, y) => eisen(x, y, 0) + kreuz(x, y),
+  ]
+  let o = `<svg viewBox="0 0 520 250" xmlns="http://www.w3.org/2000/svg" class="pflege-svg">`
+  P.forEach((f, i) => { const x = 30 + (i % 4) * 125, y = 30 + Math.floor(i / 4) * 115; o += f(x, y) + t(x + 35, y + 78, 'ABCDEFGH'[i], { gr: 17, fett: 800, farbe: '#1f6aa0' }) })
+  return `<figure class="pflege">${o}</svg></figure>`
+}
+
+/** Drei Handstiche A Vorstich, B Rückstich, C Überwendlingsstich */
+export function stiche() {
+  let o = `<svg viewBox="0 0 520 250" xmlns="http://www.w3.org/2000/svg" class="stiche-svg">`
+  const stoff = (y, h = 46) => `<rect x="70" y="${y}" width="420" height="${h}" rx="4" fill="#f3e6d3" stroke="#c9b18c" stroke-width="1.5"/>`
+  const faden = '#c0392b'
+  // A Vorstich
+  o += stoff(16) + t(36, 46, 'A', { gr: 20, fett: 800, farbe: '#1f6aa0' })
+  for (let x = 90; x < 470; x += 30) o += `<line x1="${x}" y1="39" x2="${x + 16}" y2="39" stroke="${faden}" stroke-width="4" stroke-linecap="round"/>`
+  // B Rückstich
+  o += stoff(96) + t(36, 126, 'B', { gr: 20, fett: 800, farbe: '#1f6aa0' })
+  for (let x = 90; x < 470; x += 20) o += `<line x1="${x}" y1="119" x2="${x + 16}" y2="119" stroke="${faden}" stroke-width="4" stroke-linecap="butt"/>`
+  // C Überwendlingsstich über eine Kante
+  o += stoff(186, 46) + `<rect x="70" y="186" width="420" height="14" fill="#e8d6bb" stroke="#c9b18c" stroke-width="1.5"/>` + t(36, 216, 'C', { gr: 20, fett: 800, farbe: '#1f6aa0' })
+  for (let x = 92; x < 470; x += 22) o += `<line x1="${x}" y1="178" x2="${x + 12}" y2="208" stroke="${faden}" stroke-width="4" stroke-linecap="round"/>`
+  o += t(500, 196, 'Kante', { gr: 10, farbe: '#7a6a52', anker: 'end' })
+  return `<figure class="stiche">${o}</svg></figure>`
+}
+
+/** Nähmaschine von der Seite: 1 Handrad, 2 Garnrolle, 3 Fadengeber, 4 Nadel, 5 Nähfuß, 6 Stichwahl, 7 Rückwärtstaste, 8 Fußanlasser */
+export function naehmaschine() {
+  const lin = (x1, y1, x2, y2) => `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="#c0392b" stroke-width="1.5"/>`
+  let o = `<svg viewBox="0 0 520 370" xmlns="http://www.w3.org/2000/svg" class="naeh-svg">`
+  o += `<path d="M60 248 H420 Q430 248 430 258 V282 Q430 292 420 292 H60 Q50 292 50 282 V258 Q50 248 60 248 Z" fill="#e9eef5" stroke="#2a2f3a" stroke-width="2.4"/>`
+  o += `<path d="M90 70 H400 Q420 70 420 90 V250 H340 V130 H150 V178 H90 Z" fill="#f7f9fc" stroke="#2a2f3a" stroke-width="2.4" stroke-linejoin="round"/>`
+  o += `<rect x="96" y="250" width="70" height="6" fill="#b9c3d0"/>`
+  // Nadelstange, Nadel, Nähfuß
+  o += `<rect x="112" y="178" width="8" height="30" fill="#8a96a8"/><line x1="116" y1="208" x2="116" y2="240" stroke="#5b6475" stroke-width="2.5"/><path d="M100 236 H138 L142 246 H96 Z" fill="#8a96a8" stroke="#2a2f3a" stroke-width="1.5"/><rect x="124" y="190" width="6" height="40" fill="#b9c3d0"/>`
+  // Fadengeber
+  o += `<path d="M96 100 L72 92" stroke="#2a2f3a" stroke-width="5" stroke-linecap="round"/>`
+  // Garnrolle
+  o += `<line x1="300" y1="70" x2="300" y2="36" stroke="#5b6475" stroke-width="3"/><rect x="288" y="40" width="24" height="28" rx="3" fill="#e0533d" stroke="#2a2f3a" stroke-width="1.5"/>`
+  o += `<path d="M300 44 Q220 30 150 60 Q110 76 84 96" fill="none" stroke="#e0533d" stroke-width="1.5" stroke-dasharray="4 3"/>`
+  // Handrad
+  o += `<ellipse cx="428" cy="120" rx="16" ry="38" fill="#cfd8e3" stroke="#2a2f3a" stroke-width="2.4"/>`
+  // Stichwahl und Rückwärtstaste
+  o += `<circle cx="380" cy="160" r="18" fill="#fff" stroke="#2a2f3a" stroke-width="2.4"/><line x1="380" y1="160" x2="380" y2="146" stroke="#2a2f3a" stroke-width="3"/><rect x="352" y="208" width="34" height="14" rx="4" fill="#3a3f4a"/>`
+  // Fußanlasser mit Kabel
+  o += `<path d="M430 270 Q470 300 446 330" fill="none" stroke="#5b6475" stroke-width="2"/><path d="M400 330 H480 L470 356 H410 Z" fill="#3a3f4a" stroke="#2a2f3a" stroke-width="2"/>`
+  o += lin(444, 120, 470, 120) + nr(482, 120, 1) + lin(312, 50, 340, 30) + nr(352, 26, 2) + lin(74, 92, 50, 70) + nr(40, 62, 3)
+  o += lin(116, 232, 60, 214) + nr(48, 210, 4) + lin(140, 242, 190, 320) + nr(196, 330, 5) + lin(398, 160, 470, 180) + nr(482, 182, 6) + lin(352, 215, 300, 216) + nr(288, 216, 7) + lin(410, 344, 380, 344) + nr(368, 344, 8)
+  return `<figure class="naeh">${o}</svg></figure>`
+}
+
+/** Näh-Übungsbahnen für die Nähmaschine ohne Faden (auf Papier) */
+export function naehUebung() {
+  let o = `<svg viewBox="0 0 520 330" xmlns="http://www.w3.org/2000/svg" class="nbahn-svg">`
+  const bahn = (d, y, nrr) => `<path d="${d}" fill="none" stroke="#2a2f3a" stroke-width="2" stroke-dasharray="7 5"/><circle cx="30" cy="${y}" r="6" fill="#2f8a6b"/>` + t(30, y - 12, 'Start', { gr: 10, farbe: '#2f8a6b' }) + nr(500, y, nrr, '#1f6aa0', 11)
+  o += bahn('M30 40 H480', 40, 1)
+  o += bahn('M30 115 Q90 75 150 115 T270 115 T390 115 T480 115', 115, 2)
+  o += bahn('M30 190 L75 160 L120 190 L165 160 L210 190 L255 160 L300 190 L345 160 L390 190 L435 160 L480 190', 190, 3)
+  o += bahn('M30 275 H170 V245 H300 V305 H420 V275 H480', 275, 4)
+  return `<figure class="nbahn">${o}</svg></figure>`
+}
+
+/** Einfacher Farbkreis mit 6 Feldern (1 Gelb … 6 Grün), optional ohne Farbe zum Ausmalen */
+export function farbkreis({ leer = false } = {}) {
+  const F = ['#f6d23a', '#f0922b', '#d93a32', '#7b4aa0', '#2f63b5', '#3f9a48']
+  const cx = 150, cy = 150, r = 120, ri = 46
+  let o = `<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" class="fkreis-svg">`
+  for (let i = 0; i < 6; i++) {
+    const a1 = (-90 - 30 + i * 60) * Math.PI / 180, a2 = (-90 + 30 + i * 60) * Math.PI / 180
+    const p = (a, rr) => `${(cx + rr * Math.cos(a)).toFixed(1)} ${(cy + rr * Math.sin(a)).toFixed(1)}`
+    o += `<path d="M${p(a1, ri)} L${p(a1, r)} A${r} ${r} 0 0 1 ${p(a2, r)} L${p(a2, ri)} A${ri} ${ri} 0 0 0 ${p(a1, ri)} Z" fill="${leer ? '#fff' : F[i]}" stroke="#2a2f3a" stroke-width="2"/>`
+    const am = (-90 + i * 60) * Math.PI / 180
+    o += nr(Math.round(cx + 84 * Math.cos(am)), Math.round(cy + 84 * Math.sin(am)), i + 1, '#2a2f3a', 12)
+  }
+  return `<figure class="fkreis">${o}</svg></figure>`
+}
