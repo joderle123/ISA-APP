@@ -97,7 +97,7 @@ export const LEKTIONEN = [
   {
     thema: 'Anreißen · Feilen · Entgraten', titel: 'Genau arbeiten mit der Feile', untertitel: 'Auf Metall zeichnet man nicht mit dem Bleistift, man reißt an. Dann spannt man das Werkstück ein und feilt bis zur Linie. Du hörst eine Mitmach-Anleitung zum Feilen.',
     ziel: { de: 'Ich reiße ein Metallstück an, feile es bis zur Linie und entgrate die Kanten.', fr: 'Je trace une pièce en métal, je la lime jusqu’au trait et j’ébavure les arêtes.' },
-    bild: ['nele:froh:stehen', 'lehrer:froh:erklaeren'],
+    bild: ['nele:froh:rollstuhl', 'lehrer:froh:erklaeren'],
     start: {
       was: 'Überlege',
       aufgaben: [
@@ -125,10 +125,12 @@ export const LEKTIONEN = [
     hoeren: {
       was: 'Eine Mitmach-Anleitung', wo: 'Werkstatt · an der Werkbank', titel: 'Feilen im Takt',
       situation: 'Herr Steffen erklärt die richtige Haltung beim Feilen. Nele probiert es aus. Du kannst mitmachen – auch ohne Feile.',
-      bild: ['nele:froh:stehen', 'lehrer:froh:erklaeren'], sprecher: { 'Herr Steffen': 'm1', Nele: 'w3' },
+      bild: ['nele:froh:rollstuhl', 'lehrer:froh:erklaeren'], sprecher: { 'Herr Steffen': 'm1', Nele: 'w3' },
       text: [
         ['Herr Steffen', 'Stellt euch vor den Schraubstock. Die Füße stehen etwa schulterbreit. Der linke Fuß ist ein Stück vorn, der rechte hinten. Wer mit links arbeitet, macht es umgekehrt.'],
         ['Herr Steffen', 'Der Schraubstock ist ungefähr auf der Höhe von eurem Ellenbogen. Die rechte Hand hält das Heft, die linke Hand liegt vorn auf der Feile.'],
+        ['Nele', 'Und ich im Rollstuhl?'],
+        ['Herr Steffen', 'Für dich ist der Schraubstock an der niedrigen Werkbank. Dann ist er auch bei dir auf Ellenbogenhöhe. Die Arme machen genau dieselbe Bewegung.'],
         ['Herr Steffen', 'Und jetzt: Vor – mit Druck. Zurück – ohne Druck. Vor … und zurück. Vor … und zurück. Ruhig und gleichmäßig, mit der ganzen Länge der Feile.'],
         ['Nele', 'Das ist ja ganz langsam! Ich dachte, man muss schnell feilen.'],
         ['Herr Steffen', 'Schnell und hektisch macht die Kante schief. Langsam und mit der ganzen Feile geht es am Ende schneller.'],

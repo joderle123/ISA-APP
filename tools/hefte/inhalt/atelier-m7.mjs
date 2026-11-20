@@ -11,7 +11,7 @@ export const MODUL = sachModul('atelier', 7, {
   unter: 'Rollen verteilen, in Serie produzieren, klar miteinander reden, Qualität prüfen, Feedback geben – und gemeinsam einen Stand für das Schulfest planen.',
   unterFr: 'Rôles, production en série, communication, contrôle qualité, feedback et projet de stand pour la fête de l’école.',
   farbe: '#7a4fa0',
-  deckbild: ['yusuf:froh:stehen-zeigen', 'nele:froh:stehen', 'ben:froh:blatt'],
+  deckbild: ['yusuf:froh:stehen-zeigen', 'nele:froh:rollstuhl', 'ben:froh:blatt'],
   blasen: [{ t: 'Wer macht was?', x: 8, y: 104 }, { t: 'Passt das Maß?', x: 120, y: 92 }, { t: 'Gute Idee!', x: 178, y: 150 }],
   aussprache: { '±': 'plus minus' },
   themen: [
@@ -27,7 +27,7 @@ export const LEKTIONEN = [
   {
     thema: 'Rollen im Team', titel: 'Wer macht was?', untertitel: 'In einem guten Team weiß jede Person, was ihre Aufgabe ist. Du lernst typische Rollen in der Werkstatt kennen, hörst ein Team, das sich erst streitet, und verteilt die Rollen in deiner Gruppe.',
     ziel: { de: 'Ich kenne Rollen im Team und übernehme eine Rolle verantwortungsvoll.', fr: 'Je connais les rôles dans une équipe et j’assume un rôle de manière responsable.' },
-    bild: ['yusuf:wuetend:stehen', 'nele:enttaeuscht:stehen'],
+    bild: ['yusuf:wuetend:stehen', 'nele:enttaeuscht:rollstuhl'],
     start: {
       was: 'Erinnere dich',
       aufgaben: [
@@ -54,7 +54,7 @@ export const LEKTIONEN = [
     hoeren: {
       was: 'Ein Gespräch', wo: 'Werkstatt · Gruppentisch', titel: 'Chaos am Gruppentisch',
       situation: 'Yusuf, Nele, Ben und Amira sollen zusammen ein Regal bauen. Nach zehn Minuten ist noch nichts passiert.',
-      bild: ['yusuf:wuetend:stehen', 'nele:enttaeuscht:stehen'], sprecher: { Yusuf: 'm3', Nele: 'w3', Ben: 'm2', Amira: 'w2' },
+      bild: ['yusuf:wuetend:stehen', 'nele:enttaeuscht:rollstuhl'], sprecher: { Yusuf: 'm3', Nele: 'w3', Ben: 'm2', Amira: 'w2' },
       text: [
         ['Yusuf', 'Ich wollte doch die Bretter holen! Warum hast du sie schon geholt?'],
         ['Nele', 'Weil keiner etwas gemacht hat. Und jetzt fehlen trotzdem die Schrauben.'],
@@ -243,7 +243,7 @@ export const LEKTIONEN = [
   {
     thema: 'Qualität prüfen · Toleranz', titel: 'Gut oder Ausschuss?', untertitel: 'Kein Teil ist ganz genau. Aber es muss genau genug sein. Du lernst, was Toleranz bedeutet, prüfst Teile und suchst die Ursache, wenn Fehler auftreten.',
     ziel: { de: 'Ich prüfe Teile mit Sollmaß und Toleranz und suche Fehlerursachen.', fr: 'Je contrôle des pièces avec la cote nominale et la tolérance et je cherche les causes des défauts.' },
-    bild: ['nele:froh:stehen-zeigen', 'yusuf:besorgt:stehen'],
+    bild: ['nele:froh:rollstuhl', 'yusuf:besorgt:stehen'],
     start: {
       was: 'Was meinst du?',
       aufgaben: [
@@ -268,7 +268,7 @@ export const LEKTIONEN = [
     hoeren: {
       was: 'Ein Gespräch', wo: 'Werkstatt · Prüfstation', titel: 'Stopp! Alle zu kurz',
       situation: 'Die Klasse fertigt Untersetzer in Serie. Nele ist an der Prüfstation. Plötzlich merkt sie etwas.',
-      bild: ['nele:besorgt:stehen', 'yusuf:verwirrt:stehen'], sprecher: { Nele: 'w3', Yusuf: 'm3', 'Herr Steffen': 'm1' },
+      bild: ['nele:besorgt:rollstuhl', 'yusuf:verwirrt:stehen'], sprecher: { Nele: 'w3', Yusuf: 'm3', 'Herr Steffen': 'm1' },
       text: [
         ['Nele', 'Stopp! Bitte alle kurz aufhören. Die letzten vier Untersetzer sind zu kurz. Sie sollen 120 Millimeter sein, plus minus eins. Die hier haben nur 117.'],
         ['Yusuf', 'Bei mir an der Säge ist alles wie vorher. Ich säge immer am Anschlag.'],

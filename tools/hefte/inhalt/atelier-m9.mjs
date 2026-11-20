@@ -291,7 +291,7 @@ export const LEKTIONEN = [
   {
     thema: 'Ein Werkstück präsentieren', titel: 'Zeig, was du kannst!', untertitel: 'Ein gutes Werkstück verdient eine gute Vorstellung. Du lernst einen einfachen Aufbau für eine Präsentation, hörst ein Beispiel und übst mit Sprechkarten.',
     ziel: { de: 'Ich stelle ein Werkstück klar und sicher vor.', fr: 'Je présente une pièce réalisée de façon claire et assurée.' },
-    bild: ['tom:stolz:stehen-zeigen', 'nele:froh:stehen'],
+    bild: ['tom:stolz:stehen-zeigen', 'nele:froh:rollstuhl'],
     start: {
       was: 'Was meinst du?',
       aufgaben: [
@@ -317,7 +317,7 @@ export const LEKTIONEN = [
     hoeren: {
       was: 'Eine Präsentation', wo: 'Werkstatt · Abschlussrunde', titel: 'Toms Vogelhaus',
       situation: 'Tom stellt sein Vogelhaus vor. Danach gibt Nele eine Rückmeldung. Achte auf die vier Teile.',
-      bild: ['tom:stolz:stehen-zeigen', 'nele:froh:stehen'], sprecher: { Tom: 'm3', Nele: 'w3' },
+      bild: ['tom:stolz:stehen-zeigen', 'nele:froh:rollstuhl'], sprecher: { Tom: 'm3', Nele: 'w3' },
       text: [
         ['Tom', 'Hallo zusammen. Ich stelle euch heute mein Vogelhaus vor.'],
         ['Tom', 'Es ist aus Fichtenholz, achtzehn Millimeter dick. Das Dach ist aus Sperrholz. Ich habe zuerst eine Zeichnung und eine Stückliste gemacht. Dann habe ich gesägt, das Einflugloch gebohrt, geschliffen und alles verschraubt. Das Dach kann man aufklappen, damit man das Haus im Herbst putzen kann.'],
