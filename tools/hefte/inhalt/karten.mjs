@@ -137,7 +137,7 @@ const OZEAN_POS = { 'Atlantischer Ozean': [-35, 15], 'Pazifischer Ozean': [-140,
 /** Welt. kontinente: 'farben' | 'grau' · kontinentNamen: true | 'nummern' (Namen in der Lösung) | false
  * ozeane: true | 'nummern' | false · punkte: [{ lon, lat, text, farbe }] · linien: ['aequator', 'wendekreise', 'polarkreise'] */
 export function weltKarte(o = {}) {
-  const { kontinente = 'farben', kontinentNamen = true, ozeane = false, punkte = [], linien = [], markiere = {}, breite = 165 } = o
+  const { kontinente = 'farben', kontinentNamen = true, ozeane = false, punkte = [], linien = [], markiere = {}, breite = 165, punktGroesse = 5, punktText = 13 } = o
   const H = WELT.hoehe
   let s = `<svg viewBox="0 0 1000 ${H}" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block">`
   // Umriss der Erde
@@ -161,7 +161,7 @@ export function weltKarte(o = {}) {
     if (ozeane === 'nummern') s += nummer(x, y, String.fromCharCode(65 + j++), { r: 13, farbe: '#1f6aa0' }) + txt(x, y + 30, n, { gr: 14, klasse: 'karte-l', farbe: '#c0392b' })
     else s += txt(x, y, n, { gr: 14, fett: 600, farbe: '#1f6aa0', kursiv: true })
   } }
-  punkte.forEach((p) => { const [x, y] = weltXY(p.lon, p.lat); s += `<circle cx="${x}" cy="${y}" r="5" fill="${p.farbe || '#c0392b'}" stroke="#fff" stroke-width="1.6"/>` + (p.text ? txt(x + 8, y + 5, p.text, { gr: 13, anker: 'start', klasse: p.loesung ? 'karte-l' : '', farbe: p.farbe || '#2a2f3a' }) : '') })
+  punkte.forEach((p) => { const [x, y] = weltXY(p.lon, p.lat); s += `<circle cx="${x}" cy="${y}" r="${punktGroesse}" fill="${p.farbe || '#c0392b'}" stroke="#fff" stroke-width="1.6"/>` + (p.text ? txt(x + (p.links ? -1 : 1) * (punktGroesse + 4), y + punktText * 0.38, p.text, { gr: punktText, fett: 800, anker: p.links ? 'end' : 'start', klasse: p.loesung ? 'karte-l' : '', farbe: p.farbe || '#2a2f3a' }) : '') })
   s += '</svg>'
   return rahmen(s, breite)
 }
