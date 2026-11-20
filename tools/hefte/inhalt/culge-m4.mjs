@@ -187,7 +187,7 @@ export const LEKTIONEN = [
         '### 1815: Ein Großherzogtum',
         'Nach den Kriegen Napoleons ordneten die Großmächte Europa neu, beim **Wiener Kongress**. Luxemburg wurde ein **Großherzogtum**. Großherzog war aber der König der Niederlande. Luxemburg war also mit den Niederlanden verbunden.',
         '### 1839: Die Teilung',
-        'Im **Londoner Vertrag von 1839** wurde Luxemburg geteilt: Der größere, westliche, französischsprachige Teil kam zu **Belgien** (heute die belgische Provinz Luxemburg). Der kleinere Teil im Osten blieb das **Großherzogtum** – so wie wir es heute kennen. Viele sehen 1839 als Beginn der Unabhängigkeit.',
+        'Im **Londoner Vertrag von 1839** wurde Luxemburg geteilt: Der größere, westliche, überwiegend französischsprachige Teil kam zu **Belgien** (heute die belgische Provinz Luxemburg). Der kleinere Teil im Osten blieb das **Großherzogtum** – so wie wir es heute kennen. Viele sehen 1839 als Beginn der Unabhängigkeit.',
         '### 1867: Neutral',
         'Im **Londoner Vertrag von 1867** wurde Luxemburg für **neutral** erklärt. Die Festung musste verschwinden.',
         '### 1890: Eigene Großherzöge',
