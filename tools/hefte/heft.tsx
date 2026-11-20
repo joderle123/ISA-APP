@@ -180,7 +180,7 @@ function versuch(a: any): string {
 }
 function schneidekarten(a: any): string {
   return `<div class="schneiden"><div class="schere">${icon('scissors')}<span>${esc(a.hinweis || 'Schneide die Karten aus.')}</span></div><div class="skarten" style="grid-template-columns:repeat(${a.spalten || 2},1fr)">${a.karten
-    .map((k: any) => `<div class="skarte ${k.typ || a.typ || ''}" style="${k.farbe || a.farbe ? `--kf:${k.farbe || a.farbe}` : ''}"><div class="sk-kopf">${icon(k.icon || a.icon || 'message-circle')}<span>${esc(k.titel || a.titel || '')}</span></div><div class="sk-text">${inl(k.text)}</div>${k.frage ? `<div class="sk-frage">${inl(k.frage)}</div>` : ''}</div>`).join('')}</div></div>`
+    .map((k: any) => `<div class="skarte ${k.typ || a.typ || ''}" style="${k.farbe || a.farbe ? `--kf:${k.farbe || a.farbe}` : ''}"><div class="sk-kopf">${icon(k.icon || a.icon || 'message-circle')}<span>${esc(k.titel || a.titel || '')}</span></div><div class="sk-text">${String(k.text).split('\n').map((z: string) => inl(z)).join('<br>')}${k.linien ? linien(k.linien) : ''}</div>${k.frage ? `<div class="sk-frage">${inl(k.frage)}</div>` : ''}</div>`).join('')}</div></div>`
 }
 function meinungslinie(a: any): string {
   const pole = a.pole || ['stimmt gar nicht', 'stimmt eher nicht', 'weiß nicht', 'stimmt eher', 'stimmt genau']
@@ -439,7 +439,7 @@ function lektion(L: any, k: Kontext): string {
   h += `<div class="seitenkopf"><span class="marke">${sp === 'de' ? 'Lektion' : 'Leçon'} ${k.nr}</span><span>${esc(m.fach[sp])} · ${sp === 'de' ? 'Modul' : 'Module'} ${m.nr} · ${esc(m.titel[sp])}</span></div>`
   h += `<div class="auftakt"><div class="gross">${k.nr}</div><div class="text"><div class="nr">${sp === 'de' ? 'Lektion' : 'Leçon'} ${k.nr} · ${esc(L.thema)}</div><h2>${inl(L.titel)}</h2><div class="unter">${inl(L.untertitel)}</div><div class="ziel"><b>${sp === 'de' ? 'Mein Ziel:' : 'Mon but :'}</b><span>${inl(L.ziel[sp])}<span class="fr">${inl(L.ziel[sp === 'de' ? 'fr' : 'de'])}</span></span></div></div>${
     L.bild ? `<div class="bild">${L.bild.map(bild).join('')}</div>` : ''}</div>`
-  const block = (kopf: string, liste: any[], klasse?: string) => liste.map((a: any, i: number) => (i === 0 ? '<div class="zusammen">' + kopf : '') + aufgabe(a, ++k.zaehler, klasse) + (i === 0 ? '</div>' : '')).join('')
+  const block = (kopf: string, liste: any[], klasse?: string) => liste.map((a: any, i: number) => (i === 0 ? (a.neueSeite ? '<div class="neue-seite"></div>' : '') + '<div class="zusammen">' + kopf : '') + aufgabe(i === 0 && a.neueSeite ? { ...a, neueSeite: false } : a, ++k.zaehler, klasse) + (i === 0 ? '</div>' : '')).join('')
   if (L.start) h += block(teilKopf('start', sp, L.start.was || ''), L.start.aufgaben)
   if (L.lesen) h += lesenTeil(L, k)
   if (L.hoeren) h += hoerenTeil(L, k)
