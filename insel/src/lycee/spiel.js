@@ -659,6 +659,11 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     const p = steuerung.pos; let best = null, bd = 7.5;
     for (const x of statisten) { const d = Math.hypot(x.f.group.position.x - p.x, x.f.group.position.z - p.z); const sichtbar = x.f.group.children[0] && x.f.group.children[0].visible; if (d < bd && d > 1.2 && sichtbar) { bd = d; best = x; } }
     if (!best) return;
+    // Leute aus den Situationen murmeln, was sie beschäftigt – passend zu dem, was passiert ist (statt Allerwelts-Sprüchen)
+    if (best.d.sitPerson && S) { const sp = SIT_LEUTE[best.d.sitPerson], m0 = S.merke || {};
+      if (sp.stumm) return;
+      if (sp.immer || m0['sit_' + sp.szene]) { const pool = sitSaetze(best.d.sitPerson, m0).filter((t) => t !== '…');
+        if (pool.length) { sprueche_el.textContent = pool[Math.floor(Math.random() * pool.length)]; spruchWer = best; spruchBis = performance.now() + 3400; return; } } }
     const r = welt.raumBei(best.p.x, best.p.z), rid = r ? r.id : 'draussen';
     const pool = best.d.skate ? SPRUECHE.skate : SPRUECHE[rid === 'kantine' || rid === 'gang' ? rid : best.p.z < -32 && best.p.z > -50 && !r ? 'innenhof' : 'draussen'] || SPRUECHE.draussen;
     // Die Welt redet über die Geschichte (Gerüchte, Ereignisse der Woche) – passend zum Kapitel, nicht nur Kulisse
