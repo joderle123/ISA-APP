@@ -306,4 +306,276 @@ export const LEKTIONEN = [
     ],
     check: ['Ich verstehe ein Interview in einer Zeitschrift.', 'Ich verstehe einen Hinweis auf eine Ausstellung.', 'Ich erkenne das Präteritum (-te-).', 'Ich arbeite mit einer Verbtabelle.', 'Ich schreibe einen kurzen Bericht im Präteritum.'],
   },
+  // ================================================================ 5
+  {
+    thema: 'Marken und Respekt · direkte Rede', titel: '„Die sind ja No-Name!“', untertitel: 'Ein Satz über Turnschuhe – und plötzlich lacht die halbe Klasse. Eine Geschichte über Marken, Mut und Respekt.',
+    ziel: { de: 'Ich verstehe eine Geschichte über Mobbing, erkenne direkte Rede und weiß, wo ich Hilfe bekomme.', fr: 'Je comprends une histoire de harcèlement, je reconnais le discours direct et je sais où trouver de l’aide.' },
+    bild: ['finn:traurig', 'nele:froh:rollstuhl'],
+    start: {
+      was: 'Was ist dir wichtig?',
+      aufgaben: [
+        { art: 'mc', auftrag: 'Was ist dir bei Kleidung wichtig? Kreuze an. Es gibt kein Richtig oder Falsch.', stufe: 1, fragen: [{ f: '', o: ['bequem', 'billig', 'eine bekannte Marke', 'meine Lieblingsfarbe', 'gut für die Umwelt', 'so wie bei meinen Freunden'], r: -1 }] },
+      ],
+    },
+    lesen: {
+      was: 'Eine Geschichte aus der Schülerzeitung', art: 'text', stimme: 'w1',
+      quelle: 'Schülerzeitung · Rubrik „Erlebt“ (Namen geändert)', titel: 'Die Turnschuhe',
+      absaetze: [
+        'Am Montag kam Finn mit neuen Turnschuhen in die Schule. Sie waren weiß und blau. Er war stolz, **denn** er hatte sie selbst ausgesucht.',
+        'In der Pause zeigte Tom auf die Schuhe. „Was sind das denn für Schuhe?“, rief er laut. „Die sind ja No-Name! Hat deine Familie kein Geld?“ Ein paar Jungen lachten.',
+        'Finn sagte nichts. Er wurde rot und ging weg. Am Dienstag kam er in seinen alten Schuhen. Und am Mittwoch wollte er nicht mehr in die Pause gehen.',
+        'Nele hatte alles gesehen. Sie fuhr zu Finn und sagte: „Deine Schuhe sind cool. Und Tom war gemein.“ Dann sprach sie mit Frau Sommer.',
+        'Frau Sommer redete in der Klassenstunde mit allen. Sie fragte: „Wie fühlt man sich, wenn alle lachen?“ Am Ende sagte Tom leise: „Es tut mir leid, Finn.“',
+        'Finn sagt heute: „Nele hat mir sehr geholfen. Man muss nicht allein bleiben, wenn so etwas passiert.“',
+      ],
+      woerter: [['die Marke', 'la marque'], ['No-Name', 'sans marque'], ['aussuchen', 'choisir'], ['rufen', 'crier'], ['gemein', 'méchant'], ['rot werden', 'rougir'], ['sich entschuldigen', 's’excuser'], ['der Mut', 'le courage']],
+      aufgaben: [
+        { art: 'ordnen', auftrag: 'Was ist passiert? Bring die Sätze in die richtige Reihenfolge.', stufe: 1, teile: ['Finn kommt stolz mit neuen Schuhen.', 'Tom lacht über die Schuhe.', 'Finn will nicht mehr in die Pause.', 'Nele spricht mit Finn und mit Frau Sommer.', 'Tom entschuldigt sich.'], ordnung: [2, 0, 4, 1, 3] },
+        { art: 'mc', auftrag: 'Wie geht es Finn? Kreuze an.', stufe: 2, fragen: [{ f: 'Am Montagmorgen ist Finn …', o: ['stolz', 'wütend', 'müde'], r: 0 }, { f: 'Nach der Pause ist Finn …', o: ['fröhlich', 'traurig und beschämt', 'gelangweilt'], r: 1 }] },
+        { art: 'fragen', auftrag: 'Was hat Nele richtig gemacht? Schreib zwei Dinge.', stufe: 3, fragen: [{ f: '', zeilen: 2, l: 'Sie hat Finn getröstet und gesagt, dass Tom gemein war. Sie hat mit der Lehrerin gesprochen.' }] },
+      ],
+    },
+    hoeren: {
+      was: 'Ein Gespräch unter Freunden', wo: 'Nach der Schule · an der Bushaltestelle', titel: 'Was hättest du gemacht?',
+      situation: 'Lina und Yusuf haben die Geschichte in der Schülerzeitung gelesen. Sie sprechen darüber.',
+      bild: ['lina:nachdenklich', 'yusuf:froh'], sprecher: { Lina: 'w2', Yusuf: 'm1' },
+      text: [
+        ['Lina', 'Hast du die Geschichte mit den Turnschuhen gelesen?'], ['Yusuf', 'Ja. Das war wirklich gemein von Tom.'],
+        ['Lina', 'Ich finde Marken nicht so wichtig. Meine Jacke ist vom Flohmarkt, und ich mag sie total.'],
+        ['Yusuf', 'Ich habe früher auch nur Marken gewollt. Aber ehrlich: Die Sachen sind oft nur teurer, nicht besser.'],
+        ['Lina', 'Was hättest du gemacht, wenn du dabei gewesen wärst?'], ['Yusuf', 'Ich glaube, ich hätte gesagt: „Hör auf, das ist nicht lustig.“ Aber das ist schwer, wenn alle lachen.'],
+        ['Lina', 'Ja. Man kann auch später etwas tun. Mit der Person reden. Oder mit einer Lehrerin.'],
+        ['Yusuf', 'Und es gibt das Kinder- und Jugendtelefon. Die Nummer ist eins eins sechs, eins eins eins. Das ist kostenlos.'],
+      ],
+      vor: [{ art: 'mc', auftrag: 'Was kann man tun, wenn jemand ausgelacht wird? Kreuze an.', stufe: 1, fragen: [{ f: '', o: ['„Hör auf!“ sagen', 'mitlachen', 'später mit der Person reden', 'mit einer Lehrerin sprechen'], r: [0, 2, 3] }] }],
+      beim: [
+        { art: 'rf', auftrag: 'Hör zu. Richtig oder falsch?', stufe: 1, saetze: [['Lina findet Marken sehr wichtig.', false], ['Linas Jacke ist vom Flohmarkt.', true], ['Yusuf sagt: Markensachen sind oft nur teurer.', true], ['Das Jugendtelefon kostet Geld.', false]] },
+        { art: 'luecken', auftrag: 'Hör noch einmal. Ergänze.', stufe: 2, saetze: ['„Hör auf, das ist nicht [lustig].“', 'Man kann auch [später] etwas tun.', 'Die Nummer vom Kinder- und Jugendtelefon ist [116 111].'] },
+      ],
+      nach: [{ art: 'sprechen', auftrag: 'Übt Sätze, die helfen. Sprecht sie ruhig und deutlich.', stufe: 3, karten: [
+        { titel: 'Stopp sagen', text: ['Hör auf, das ist nicht lustig.', 'Lass ihn / sie in Ruhe.', 'Das ist gemein.'] },
+        { titel: 'Hilfe anbieten', text: ['Alles okay? Willst du reden?', 'Komm, wir gehen zusammen.', 'Wir können mit Frau Sommer sprechen.'] }] }],
+    },
+    regel: {
+      reihen: [
+        [{ titel: 'Direkte Rede markieren', punkte: ['Was jemand **genau** sagt, steht in **Anführungszeichen**: „…“', 'Tom rief: **„Die sind ja No-Name!“**', '**„Es tut mir leid“, sagte Tom.** (Komma nach dem Anführungszeichen)', 'Nach dem Doppelpunkt: **groß** weiter.'] },
+         { titel: 'Begleitsatz', tabelle: { kopf: ['vorn', 'hinten'], zeilen: [['Nele sagte: „Deine Schuhe sind cool.“', '„Deine Schuhe sind cool“, sagte Nele.'], ['Er fragte: „Wie geht es dir?“', '„Wie geht es dir?“, fragte er.']] } }],
+        [{ art: 'tipp', titel: 'Hilfe holen ist mutig', punkte: ['Rede mit einer Person, der du vertraust.', 'Kinder- und Jugendtelefon: **116 111** (kostenlos, anonym)', 'Im Notfall: **112**'] },
+         { art: 'achtung', titel: 'Verben für den Begleitsatz', text: 'sagen · rufen · fragen · antworten · flüstern · erklären – im Präteritum: sagte, rief, fragte, antwortete, flüsterte' }],
+      ],
+    },
+    ueben: [
+      { art: 'abschreiben', auftrag: 'Setze die Anführungszeichen und Satzzeichen richtig.', stufe: 1, saetze: [['Nele sagte deine Schuhe sind cool', 'Nele sagte: „Deine Schuhe sind cool.“'], ['Hör auf rief Lina', '„Hör auf!“, rief Lina.'], ['Frau Sommer fragte wie fühlt man sich', 'Frau Sommer fragte: „Wie fühlt man sich?“']] },
+      { art: 'tabelle', auftrag: 'Wer sagt das in der Geschichte? Schreib den Satz als direkte Rede mit Begleitsatz.', stufe: 2, kopf: ['Satz', 'direkte Rede mit Begleitsatz'], breiten: [35, 65], zeilen: [['Es tut mir leid.', '[„Es tut mir leid“, sagte Tom leise.]'], ['Tom war gemein.', '[Nele sagte: „Tom war gemein.“]']] },
+      { art: 'fragen', auftrag: 'Was könnte Finn zu Tom sagen? Schreib zwei Sätze als direkte Rede.', stufe: 3, fragen: [{ f: '', zeilen: 2, l: 'Finn sagte: „Das hat mich verletzt.“ „Danke, dass du dich entschuldigt hast“, sagte er dann.' }] },
+    ],
+    schreiben: [
+      { art: 'schreiben', auftrag: 'Schreib das Ende der Geschichte neu: Was passiert, wenn jemand sofort „Stopp“ sagt? Benutze direkte Rede.', stufe: 2,
+        anfaenge: ['Tom zeigte auf die Schuhe und rief: „…“', 'Da sagte … : „…“', 'Tom …', 'Finn …'], zeilen: 9,
+        beispiel: 'Tom zeigte auf die Schuhe und rief: „Die sind ja No-Name!“ Da sagte Lina laut: „Hör auf, Tom. Das ist nicht lustig.“ Die anderen hörten auf zu lachen. Tom schaute auf den Boden. Finn lächelte Lina an. „Danke“, sagte er.' },
+    ],
+    check: ['Ich verstehe eine Geschichte über Mobbing.', 'Ich verstehe ein Gespräch über Marken und Respekt.', 'Ich setze Anführungszeichen bei direkter Rede.', 'Ich kenne Sätze, mit denen ich „Stopp“ sage oder Hilfe anbiete.', 'Ich weiß, wo ich Hilfe bekomme (116 111).'],
+  },
+  // ================================================================ 6
+  {
+    thema: 'Einkaufsbummel · Texte verbinden', titel: 'Unser Einkaufsbummel', untertitel: 'Ein Samstag in der Stadt: Du liest einen Bericht, hörst ein Beratungsgespräch und erzählst selbst – mit und, weil, dann, danach.',
+    ziel: { de: 'Ich berichte über ein Ereignis (Wann? Wo? Was? Warum?) und verbinde Sätze.', fr: 'Je raconte un événement (quand ? où ? quoi ? pourquoi ?) et je relie des phrases.' },
+    bild: ['amira:froh:stehen', 'chloe:froh:stehen'],
+    start: {
+      was: 'Geschäfte',
+      aufgaben: [
+        { art: 'zuordnen', auftrag: 'Wo kauft man das? Verbinde.', stufe: 1, links: ['Brot und Brötchen', 'Medikamente', 'Bücher und Comics', 'Turnschuhe', 'Obst und Gemüse'], rechts: ['in der Bäckerei', 'in der Apotheke', 'in der Buchhandlung', 'im Schuhgeschäft', 'auf dem Markt'], ordnung: [3, 0, 4, 1, 2] },
+      ],
+    },
+    lesen: {
+      was: 'Ein Bericht über eine Shoppingtour', art: 'text', stimme: 'w2',
+      quelle: 'Klassenblog · „Unser Samstag“ – von Amira', titel: 'Ein Samstag in Luxemburg-Stadt',
+      absaetze: [
+        'Letzten Samstag sind Chloe und ich mit dem Bus nach Luxemburg-Stadt gefahren. Wir wollten ein Geburtstagsgeschenk für Mia kaufen, **denn** sie wird nächste Woche 14.',
+        'Zuerst sind wir in eine Buchhandlung gegangen, **weil** Mia Mangas liebt. Leider gab es den neuen Band noch nicht. **Dann** haben wir einen Laden für Bastelsachen gefunden.',
+        'Dort hat uns eine Verkäuferin beraten. Wir haben ein Set für Armbänder gekauft – mit bunten Perlen. Es war **billiger als** ein Manga **und** viel kreativer!',
+        '**Danach** hatten wir Hunger. Wir haben auf dem Markt Waffeln gegessen **und** Musik von einer Straßenband gehört. **Am Ende** sind wir um 17 Uhr müde, aber glücklich nach Hause gefahren.',
+        'Mein Tipp: Macht vorher eine Liste und legt einen Betrag fest. Sonst kauft man zu viel!',
+      ],
+      woerter: [['der Einkaufsbummel', 'le lèche-vitrines, le shopping'], ['die Buchhandlung', 'la librairie'], ['der Band', 'le tome'], ['beraten', 'conseiller'], ['die Perle', 'la perle'], ['kreativ', 'créatif'], ['die Straßenband', 'le groupe de musique de rue'], ['den Betrag festlegen', 'fixer le montant']],
+      aufgaben: [
+        { art: 'tabelle', auftrag: 'Wann? Wo? Was? Warum? Ergänze den Bericht.', stufe: 1, kopf: ['Frage', 'Antwort'], breiten: [25, 75], zeilen: [['Wann?', '[letzten Samstag]'], ['Wo?', '[in Luxemburg-Stadt]'], ['Was?', '[ein Geschenk für Mia kaufen]'], ['Warum?', '[Mia wird nächste Woche 14]']] },
+        { art: 'ordnen', auftrag: 'In welcher Reihenfolge war es?', stufe: 2, teile: ['mit dem Bus fahren', 'in die Buchhandlung gehen', 'ein Armband-Set kaufen', 'Waffeln essen', 'nach Hause fahren'], ordnung: [2, 4, 0, 3, 1] },
+        { art: 'fragen', auftrag: 'Warum haben sie keinen Manga gekauft?', stufe: 3, fragen: [{ f: '', l: 'Weil es den neuen Band noch nicht gab.' }] },
+      ],
+    },
+    hoeren: {
+      was: 'Ein Beratungsgespräch', wo: 'Im Bastelladen', titel: 'Können Sie uns beraten?',
+      situation: 'Amira und Chloe suchen ein Geschenk. Die Verkäuferin hilft ihnen.',
+      bild: ['verkaeuferin:froh', 'amira:froh'], sprecher: { 'Verkäuferin': 'w1', Amira: 'w2', Chloe: 'w3' },
+      text: [
+        ['Verkäuferin', 'Hallo ihr zwei! Sucht ihr etwas Bestimmtes?'], ['Amira', 'Ja, ein Geschenk für eine Freundin. Sie wird 14. Können Sie uns beraten?'],
+        ['Verkäuferin', 'Gern. Was macht sie gern?'], ['Chloe', 'Sie liest gern und sie ist sehr kreativ. Sie zeichnet viel.'],
+        ['Verkäuferin', 'Wie viel möchtet ihr ausgeben?'], ['Amira', 'Höchstens zwanzig Euro.'],
+        ['Verkäuferin', 'Dann habe ich zwei Ideen: ein Skizzenbuch mit Stiften für achtzehn Euro oder ein Set für Armbänder für fünfzehn Euro.'],
+        ['Chloe', 'Was ist beliebter?'], ['Verkäuferin', 'Das Armband-Set. Damit kann man auch Armbänder für Freunde machen.'],
+        ['Amira', 'Super, das nehmen wir. Können Sie es als Geschenk einpacken?'], ['Verkäuferin', 'Natürlich, das ist gratis.'],
+      ],
+      vor: [{ art: 'mc', auftrag: 'Was fragt eine Verkäuferin bei einer Beratung? Kreuze an.', stufe: 1, fragen: [{ f: '', o: ['Was macht die Person gern?', 'Wie viel möchtet ihr ausgeben?', 'Wie alt ist dein Hund?'], r: [0, 1] }] }],
+      beim: [
+        { art: 'tabelle', auftrag: 'Hör zu. Welche Ideen hat die Verkäuferin?', stufe: 1, kopf: ['Idee', 'Preis'], zeilen: [['[Skizzenbuch mit Stiften]', '[18 €]'], ['[Armband-Set]', '[15 €]']] },
+        { art: 'mc', auftrag: 'Hör noch einmal. Kreuze an.', stufe: 2, fragen: [{ f: 'Wie viel wollen die Mädchen höchstens ausgeben?', o: ['15 €', '20 €', '25 €'], r: 1 }, { f: 'Was kostet das Einpacken?', o: ['nichts', '1 €', '2 €'], r: 0 }] },
+      ],
+      nach: [{ art: 'sprechen', auftrag: 'Spielt ein Beratungsgespräch: Ihr sucht ein Geschenk für eine Person (ausgedacht).', stufe: 3, karten: [
+        { titel: 'Kundschaft', text: ['Können Sie uns beraten?', 'Die Person mag …', 'Wir möchten höchstens … ausgeben.', 'Können Sie es einpacken?'] },
+        { titel: 'Verkauf', text: ['Was macht die Person gern?', 'Wie viel möchtet ihr ausgeben?', 'Ich habe zwei Ideen: …', '… ist beliebter / billiger.'] }] }],
+    },
+    regel: {
+      reihen: [
+        [{ titel: 'Texte verbinden', punkte: ['**und**: noch etwas dazu', '**weil / denn**: der Grund', '**dann, danach, später**: die Reihenfolge', '**zuerst … am Ende**: Anfang und Schluss', 'Nach **dann/danach** am Satzanfang: Verb an Position 2! **Danach hatten** wir Hunger.'] },
+         { titel: 'Ein Bericht', tabelle: { kopf: ['Frage', 'Beispiel'], zeilen: [['Wann?', 'Letzten Samstag …'], ['Wo?', '… in Luxemburg-Stadt'], ['Was?', '… ein Geschenk kaufen'], ['Warum?', '…, weil / denn …'], ['Wie war es?', 'müde, aber glücklich']] } }],
+        [{ art: 'tipp', titel: 'Steigerung (Wiederholung)', text: 'billig – billig**er als** – am billig**sten** · beliebt – beliebt**er** – am beliebt**esten** · gut – **besser** – am **besten**' },
+         { art: 'achtung', titel: 'Bericht = Perfekt', text: 'Wenn du von gestern erzählst, nimm das **Perfekt**: Wir **sind** gefahren. Wir **haben** gekauft. Bei **sein/haben**: Es **war** toll. Wir **hatten** Hunger.' }],
+      ],
+    },
+    ueben: [
+      { art: 'luecken', auftrag: 'Ergänze: zuerst, dann, danach, am Ende, weil.', stufe: 1, woerter: ['Zuerst', 'Dann', 'Danach', 'Am Ende', 'weil'], saetze: ['[Zuerst] sind wir in die Buchhandlung gegangen.', '[Dann] haben wir einen Bastelladen gefunden.', 'Wir haben Waffeln gegessen, [weil] wir Hunger hatten.', '[Danach] haben wir Musik gehört.', '[Am Ende] sind wir nach Hause gefahren.'] },
+      { art: 'abschreiben', auftrag: 'Beginne mit dem Wort in Klammern. Achtung: Verb an Position 2!', stufe: 2, kopf: ['Satz', 'neu'], saetze: [['Wir hatten danach Hunger. (Danach)', 'Danach hatten wir Hunger.'], ['Wir sind dann in den Park gegangen. (Dann)', 'Dann sind wir in den Park gegangen.'], ['Ich habe am Ende ein Eis gekauft. (Am Ende)', 'Am Ende habe ich ein Eis gekauft.']] },
+    ],
+    schreiben: [
+      { art: 'schreiben', auftrag: 'Schreib einen Bericht über einen Ausflug oder einen Einkaufsbummel (echt oder erfunden). Beantworte: Wann? Wo? Was? Warum? Wie war es?', stufe: 2,
+        anfaenge: ['Letzten … bin ich / sind wir …', 'Zuerst …', 'Dann …, weil …', 'Danach …', 'Am Ende …', 'Mein Tipp: …'], zeilen: 11,
+        beispiel: 'Letzten Sonntag sind meine Cousine und ich nach Echternach gefahren. Zuerst haben wir den Markt besucht. Dann haben wir ein Eis gegessen, weil es sehr warm war. Danach sind wir am See spazieren gegangen. Am Ende waren wir müde, aber froh. Mein Tipp: Nehmt eine Wasserflasche mit!' },
+    ],
+    check: ['Ich verstehe einen Bericht über einen Einkaufsbummel.', 'Ich verstehe ein Beratungsgespräch.', 'Ich verbinde Sätze mit und, weil, dann, danach.', 'Ich setze das Verb nach „dann/danach“ an Position 2.', 'Ich berichte mit Wann? Wo? Was? Warum?'],
+  },
+  // ================================================================ 7
+  {
+    thema: 'Kleinanzeigen · Kaufen und Verkaufen', titel: 'Zu verkaufen!', untertitel: 'Ein Skateboard, das zu klein ist, eine Gitarre, die niemand spielt: Mit Kleinanzeigen verkaufst und kaufst du gebraucht – aber sicher.',
+    ziel: { de: 'Ich verstehe und schreibe Kleinanzeigen und reagiere auf eine Anzeige.', fr: 'Je comprends et j’écris des petites annonces et je réponds à une annonce.' },
+    bild: ['lio:froh:handy', 'tom:froh'],
+    start: {
+      was: 'Abkürzungen in Anzeigen',
+      aufgaben: [
+        { art: 'zuordnen', auftrag: 'Was bedeuten die Abkürzungen? Verbinde.', stufe: 1, links: ['VB', 'NP', 'Tel.', 'ca.', 'gebr.'], rechts: ['Verhandlungsbasis: über den Preis kann man sprechen', 'Neupreis: so teuer war es neu', 'Telefon', 'circa: ungefähr', 'gebraucht'], ordnung: [3, 0, 4, 1, 2] },
+      ],
+    },
+    lesen: {
+      was: 'Kleinanzeigen am Schwarzen Brett', art: 'dokumente', stimme: 'w1',
+      quelle: 'Schwarzes Brett im Jugendhaus', titel: 'Kaufen – Verkaufen – Tauschen',
+      dokumente: [
+        { stil: 'notiz', kopf: 'Skateboard zu verkaufen', text: ['Gebr. Skateboard, 80 cm, schwarz, sehr guter Zustand. Ist mir zu klein geworden. NP 90 €, jetzt **35 € VB**. Lio, Tel. über das Jugendhaus-Team.'] },
+        { stil: 'notiz', kopf: 'Suche: Fahrradhelm', text: ['Suche einen Fahrradhelm, Größe M, gern in Rot oder Blau. Zahle bis **15 €**. Melde dich bei Jana (7P1) oder schreib einen Zettel ins Fach.'] },
+        { stil: 'notiz', kopf: 'Tausche Comics', text: ['Ich habe 12 Comics (Abenteuer, Fantasy) und möchte sie gegen andere Comics oder Mangas **tauschen**. Kein Geld nötig! Ben, 7P2.'] },
+        { stil: 'karte', kopf: '🛡️ Sicher kaufen und verkaufen', text: ['Trefft euch an einem öffentlichen Ort, zum Beispiel im Jugendhaus. Nehmt eine erwachsene Person mit. Gebt keine Adresse und kein Geld im Voraus. Und: Seht euch die Sache genau an, bevor ihr bezahlt.'] },
+      ],
+      woerter: [['die Kleinanzeige', 'la petite annonce'], ['das Schwarze Brett', 'le tableau d’affichage'], ['der Zustand', 'l’état'], ['tauschen', 'échanger'], ['verhandeln', 'négocier'], ['öffentlich', 'public'], ['im Voraus', 'à l’avance']],
+      aufgaben: [
+        { art: 'tabelle', auftrag: 'Ergänze die Tabelle.', stufe: 1, kopf: ['Wer?', 'Was?', 'kaufen, verkaufen oder tauschen?', 'Preis'], zeilen: [['Lio', '[Skateboard]', '[verkaufen]', '[35 € VB]'], ['Jana', '[Fahrradhelm, Größe M]', '[kaufen]', '[bis 15 €]'], ['Ben', '[Comics]', '[tauschen]', '[kein Geld]']] },
+        { art: 'rf', auftrag: 'Richtig oder falsch?', stufe: 2, saetze: [['Lios Skateboard war neu 90 € teuer.', true], ['Über den Preis vom Skateboard kann man sprechen.', true], ['Ben will seine Comics verkaufen.', false], ['Man soll das Geld im Voraus schicken.', false]] },
+        { art: 'fragen', auftrag: 'Nenne zwei Regeln für sicheres Kaufen und Verkaufen.', stufe: 3, fragen: [{ f: '', zeilen: 2, l: 'An einem öffentlichen Ort treffen, eine erwachsene Person mitnehmen, kein Geld im Voraus geben.' }] },
+      ],
+    },
+    hoeren: {
+      was: 'Ein Gespräch über eine Anzeige', wo: 'Im Jugendhaus · Mittwoch', titel: 'Ist das Skateboard noch da?',
+      situation: 'Tom hat Lios Anzeige gelesen. Er trifft Lio im Jugendhaus. Eine Betreuerin ist auch da.',
+      bild: ['tom:froh', 'lio:froh'], sprecher: { Tom: 'm3', Lio: 'm2', Betreuerin: 'w1' },
+      text: [
+        ['Tom', 'Hi Lio! Ist das Skateboard aus deiner Anzeige noch da?'], ['Lio', 'Ja! Hier ist es. Schau es dir an.'],
+        ['Tom', 'Es sieht gut aus. Die Rollen sind fast neu. Aber hier ist ein Kratzer.'], ['Lio', 'Ja, der ist klein. Man sieht ihn kaum.'],
+        ['Tom', 'Du schreibst fünfunddreißig Euro VB. Würdest du es für dreißig verkaufen?'], ['Lio', 'Hm … zweiunddreißig. Und ich gebe dir noch neue Griptape-Streifen dazu.'],
+        ['Tom', 'Abgemacht! Ich habe das Geld dabei.'], ['Betreuerin', 'Super, dass ihr das hier im Jugendhaus macht. Gebt euch die Hand – dann ist der Kauf fair.'],
+        ['Lio', 'Danke, Tom. Viel Spaß damit!'], ['Tom', 'Danke! Ich probiere es gleich draußen aus.'],
+      ],
+      vor: [{ art: 'mc', auftrag: 'Was prüft man, bevor man etwas Gebrauchtes kauft? Kreuze an.', stufe: 1, fragen: [{ f: '', o: ['Ist es kaputt?', 'Funktioniert alles?', 'Welche Farbe hat das Auto des Verkäufers?'], r: [0, 1] }] }],
+      beim: [
+        { art: 'mc', auftrag: 'Hör zu und kreuze an.', stufe: 1, fragen: [{ f: 'Was findet Tom am Skateboard?', o: ['einen kleinen Kratzer', 'ein Loch', 'eine kaputte Rolle'], r: 0 }, { f: 'Für wie viel kauft Tom das Skateboard?', o: ['30 €', '32 €', '35 €'], r: 1 }, { f: 'Was bekommt Tom noch dazu?', o: ['einen Helm', 'Griptape-Streifen', 'eine Tasche'], r: 1 }] },
+      ],
+      nach: [{ art: 'sprechen', auftrag: 'Verhandelt den Preis für einen Gegenstand aus den Anzeigen. Bleibt freundlich.', stufe: 3, karten: [
+        { titel: 'Kaufen', text: ['Ist … noch da?', 'Kann ich es mir ansehen?', 'Würdest du es für … verkaufen?', 'Abgemacht!'] },
+        { titel: 'Verkaufen', text: ['Ja, hier ist es.', 'Es ist in gutem Zustand.', 'Für … kann ich es dir geben.', 'Dann gebe ich dir noch … dazu.'] }] }],
+    },
+    regel: {
+      reihen: [
+        [{ titel: 'So schreibst du eine Kleinanzeige', punkte: ['**Überschrift**: Was? (Verkaufe … / Suche … / Tausche …)', '**Beschreibung**: Größe, Farbe, Zustand', '**Preis**: … € / VB / zu verschenken', '**Kontakt**: über Schule oder Jugendhaus – **keine Privatadresse**!'] },
+         { titel: 'Auf eine Anzeige antworten', punkte: ['Hallo …, ich habe deine Anzeige gelesen.', 'Ist … noch da?', 'Ich interessiere mich für …', 'Wann können wir uns treffen? – Im Jugendhaus?'] }],
+        [{ art: 'tipp', titel: 'Telegrammstil', text: 'Anzeigen sind kurz: Oft fehlen **Artikel** und **Verb**: „Gebr. Skateboard, schwarz, sehr guter Zustand.“' },
+         { art: 'achtung', titel: 'Online verkaufen', text: 'Nur mit Erlaubnis der Eltern. Keine Fotos von dir oder deinem Zuhause. Kein Geld im Voraus. Bei komischen Nachrichten: mit einer erwachsenen Person sprechen.' }],
+      ],
+    },
+    ueben: [
+      { art: 'abschreiben', auftrag: 'Schreib die Anzeige im Telegrammstil (kurz).', stufe: 1, kopf: ['langer Satz', 'Telegrammstil'], saetze: [['Ich verkaufe eine gebrauchte Gitarre. Sie ist braun und in gutem Zustand.', 'Verkaufe gebr. Gitarre, braun, guter Zustand.'], ['Ich suche ein Fahrrad für Jugendliche. Ich bezahle bis zu 50 Euro.', 'Suche Jugendfahrrad, bis 50 €.']] },
+      { art: 'fragen', auftrag: 'Antworte kurz auf Janas Anzeige (Fahrradhelm).', stufe: 2, fragen: [{ f: '', zeilen: 3, l: 'Hallo Jana, ich habe einen blauen Fahrradhelm, Größe M. Er ist fast neu. Du kannst ihn für 12 € haben. Wir können uns im Jugendhaus treffen. – Mia' }] },
+    ],
+    schreiben: [
+      { art: 'schreiben', auftrag: 'Schreib eine Kleinanzeige: Du verkaufst, suchst oder tauschst etwas. Denk an die Sicherheitsregeln.', stufe: 2,
+        anfaenge: ['Verkaufe / Suche / Tausche …', 'Farbe, Größe, Zustand: …', 'Preis: …', 'Kontakt: …'], zeilen: 6,
+        beispiel: 'Verkaufe Keyboard für Anfänger. Schwarz, 61 Tasten, mit Netzteil, sehr guter Zustand. NP 80 €, jetzt 40 € VB. Kontakt: über das Jugendhaus-Team, fragt nach Nele.' },
+    ],
+    check: ['Ich verstehe Kleinanzeigen und Abkürzungen (VB, NP).', 'Ich verstehe ein Gespräch über einen Kauf.', 'Ich verhandle freundlich über einen Preis.', 'Ich schreibe eine Kleinanzeige im Telegrammstil.', 'Ich kenne Regeln für sicheres Kaufen und Verkaufen.'],
+  },
+  // ================================================================ 8
+  {
+    thema: 'Werbung verstehen · Artikel', titel: 'Kaufen mit Köpfchen', untertitel: '„Nur heute!“, „Alle haben es!“, „Gratis dazu!“: Werbung will, dass du kaufst. Du erkennst die Tricks – und schreibst ehrliche Werbung.',
+    ziel: { de: 'Ich erkenne Werbetricks und unterscheide „das Handy“ (eins) und „das Handy“ (alle).', fr: 'Je reconnais les astuces publicitaires et je distingue l’article pour un objet précis ou pour tous.' },
+    bild: ['sami:ueberrascht:handy', 'lea:nachdenklich'],
+    start: {
+      was: 'Werbung überall',
+      aufgaben: [
+        { art: 'mc', auftrag: 'Wo siehst oder hörst du Werbung? Kreuze an.', stufe: 1, fragen: [{ f: '', o: ['im Handy / in Apps', 'im Radio', 'auf Plakaten', 'bei Videos', 'in der Zeitung', 'auf Kleidung'], r: [0, 1, 2, 3, 4, 5] }] },
+      ],
+    },
+    lesen: {
+      was: 'Drei Werbetexte', art: 'dokumente', stimme: 'w1',
+      quelle: 'Werbung (ausgedacht)', titel: 'Kauf mich! – Drei Werbungen',
+      dokumente: [
+        { stil: 'karte', kopf: '⚡ ZAPP Energy – NUR HEUTE 2 für 1!', text: ['Mehr Power für Schule und Sport! **Alle** coolen Leute trinken ZAPP. Kauf jetzt – morgen ist das Angebot weg!'] },
+        { stil: 'karte', kopf: '📱 Handyhülle „Glitzer“ – 9,99 €', text: ['Deine Hülle schützt dein Handy und macht es zum Star. **GRATIS dazu**: ein Glitzer-Sticker. Nur solange der Vorrat reicht!'] },
+        { stil: 'karte', kopf: '🍎 Apfelchips „Knusper“', text: ['Aus Äpfeln aus Luxemburg, ohne Zucker. 100 g kosten 2,50 €. Schmecken knusprig – und sind ein guter Snack für die Pause.'] },
+      ],
+      danach: ['**Werbung arbeitet oft mit Tricks:** Sie macht **Zeitdruck** („Nur heute!“). Sie sagt, **alle** haben es. Sie schenkt **etwas Kleines** dazu. Oder sie zeigt **berühmte Personen**. Frag dich immer: **Brauche ich das wirklich?**'],
+      woerter: [['die Werbung', 'la publicité'], ['der Trick', 'l’astuce'], ['der Zeitdruck', 'la pression du temps'], ['schützen', 'protéger'], ['solange der Vorrat reicht', 'dans la limite des stocks'], ['ehrlich', 'honnête'], ['wirklich', 'vraiment']],
+      aufgaben: [
+        { art: 'tabelle', auftrag: 'Welcher Trick steckt in der Werbung? Kreuze an oder schreib.', stufe: 1, kopf: ['Werbung', 'Trick'], breiten: [35, 65], zeilen: [['ZAPP Energy', '[Zeitdruck („nur heute“), alle haben es]'], ['Handyhülle', '[etwas gratis dazu, „solange der Vorrat reicht“]'], ['Apfelchips', '[fast keine Tricks: sachliche Informationen]']] },
+        { art: 'fragen', auftrag: 'Welche Werbung findest du am ehrlichsten? Warum?', stufe: 2, fragen: [{ f: '', zeilen: 2, l: 'Die Werbung für Apfelchips, weil sie den Preis und die Zutaten nennt und keinen Druck macht.' }] },
+      ],
+    },
+    hoeren: {
+      was: 'Werbespots im Radio', wo: 'Radio · Werbepause', titel: 'Jetzt kommt Werbung!',
+      situation: 'Im Radio laufen drei kurze Werbespots. Danach sprechen Sam und Lea darüber.',
+      bild: ['sami:froh:handy', 'lea:froh'], sprecher: { Werbung1: 'm1', Werbung2: 'w1', Werbung3: 'm2', Sam: 'm2', Lea: 'w2' },
+      text: [
+        ['Werbung1', 'Du willst der Star im Team sein? Dann brauchst du die neuen Turnschuhe „Blitz“! Nur diese Woche zwanzig Prozent billiger. Lauf los – bevor sie weg sind!'],
+        ['Werbung2', 'Fahrradladen Mersch: Wir reparieren dein Fahrrad schnell und günstig. Ein Check kostet zehn Euro. Montag bis Samstag geöffnet.'],
+        ['Werbung3', 'Spiele das neue Handyspiel „Drachenland“ – gratis! Für noch mehr Spaß: Kauf dir Edelsteine im Spiel!'],
+        ['Sam', 'Das Spiel ist gratis? Cool!'], ['Lea', 'Gratis zum Herunterladen. Aber dann soll man Edelsteine kaufen. Das kann teuer werden.'],
+        ['Sam', 'Stimmt. Und die Turnschuhe – „Star im Team“, haha. Mit Schuhen wird man nicht besser.'], ['Lea', 'Am ehrlichsten war der Fahrradladen. Preis, Öffnungszeiten, fertig.'],
+      ],
+      vor: [{ art: 'mc', auftrag: 'Was ist ein Werbespot? Kreuze an.', stufe: 1, fragen: [{ f: '', o: ['eine kurze Werbung im Radio oder Fernsehen', 'ein Sportplatz', 'ein Fleck auf der Hose'], r: 0 }] }],
+      beim: [
+        { art: 'tabelle', auftrag: 'Hör zu. Was wird beworben? Welcher Trick?', stufe: 1, kopf: ['Spot', 'Produkt', 'Trick?'], zeilen: [['1', '[Turnschuhe „Blitz“]', '[Star sein; nur diese Woche billiger]'], ['2', '[Fahrradreparatur]', '[kein Trick, nur Informationen]'], ['3', '[Handyspiel „Drachenland“]', '[gratis, aber Käufe im Spiel]']] },
+        { art: 'mc', auftrag: 'Hör das Gespräch. Welche Werbung finden Sam und Lea am ehrlichsten?', stufe: 2, fragen: [{ f: '', o: ['die Turnschuhe', 'den Fahrradladen', 'das Handyspiel'], r: 1 }] },
+      ],
+      nach: [{ art: 'sprechen', auftrag: 'Diskutiert: Kauft ihr manchmal Dinge wegen Werbung? Was hilft gegen Werbetricks?', stufe: 3, karten: [
+        { titel: 'Meinung', text: ['Ich glaube, Werbung …', 'Manchmal kaufe ich …, weil …', 'Ich finde … nicht ehrlich, denn …'] },
+        { titel: 'Tipps', text: ['eine Nacht darüber schlafen', 'Preise vergleichen', 'fragen: Brauche ich das wirklich?'] }] }],
+    },
+    regel: {
+      reihen: [
+        [{ titel: 'Der Artikel: ein Ding oder alle?', punkte: ['**Ein bestimmtes Ding**: **Das** Handy auf dem Tisch ist neu. (genau dieses)', '**Alle Dinge dieser Art**: **Das** Handy ist heute sehr wichtig. (Handys allgemein)', 'Auch so: **Die** Werbung will, dass wir kaufen. = Werbung allgemein.', 'Oder ohne Artikel: **Werbung** ist überall.'] },
+         { titel: 'Werbesprache', tabelle: { kopf: ['Trick', 'Beispiel'], zeilen: [['Zeitdruck', '„Nur heute!“'], ['Alle haben es', '„Alle coolen Leute …“'], ['Geschenk', '„Gratis dazu!“'], ['Superlativ', '„Der beste Saft der Welt!“']] } }],
+        [{ art: 'tipp', titel: 'Gratis?', text: 'Viele Spiele und Apps sind „gratis“, verdienen aber Geld mit **Käufen im Spiel** oder mit **deinen Daten**. Sprich mit deinen Eltern, bevor du etwas kaufst.' },
+         { art: 'achtung', titel: 'Ehrliche Werbung', text: 'Sie nennt **Preis**, **Inhalt** und **Eigenschaften** – ohne Druck und ohne Übertreibung.' }],
+      ],
+    },
+    ueben: [
+      { art: 'mc', auftrag: 'Ein bestimmtes Ding oder alle? Kreuze an.', stufe: 1, fragen: [
+        { f: 'Das Fahrrad vor der Tür gehört mir.', o: ['ein bestimmtes', 'alle'], r: 0 },
+        { f: 'Das Fahrrad ist gut für die Umwelt.', o: ['ein bestimmtes', 'alle'], r: 1 },
+        { f: 'Der Hund ist ein Haustier.', o: ['ein bestimmtes', 'alle'], r: 1 },
+        { f: 'Der Hund von Lina heißt Bello.', o: ['ein bestimmtes', 'alle'], r: 0 }] },
+      { art: 'abschreiben', auftrag: 'Mach aus der Werbung eine ehrliche Werbung.', stufe: 3, kopf: ['mit Trick', 'ehrlich'], saetze: [['Der BESTE Saft der Welt – nur heute!', 'Orangensaft, 1 Liter, ohne Zucker, 2,20 €.'], ['Alle tragen jetzt diese Mütze!', 'Warme Mütze aus Wolle, in drei Farben, 15 €.']] },
+    ],
+    schreiben: [
+      { art: 'schreiben', auftrag: 'Erfinde ein Produkt (z. B. für die Schule) und schreib zwei Werbungen: eine mit Tricks und eine ehrliche.', stufe: 2,
+        anfaenge: ['Produkt: …', 'Werbung mit Tricks: „…“', 'Ehrliche Werbung: „…“', 'Ich finde die ehrliche Werbung besser, weil …'], zeilen: 9,
+        beispiel: 'Produkt: eine Trinkflasche, die die Temperatur zeigt. Mit Tricks: „NUR HEUTE! Alle Profis trinken aus dieser Flasche!“ Ehrlich: „Trinkflasche aus Metall, 0,5 Liter, zeigt die Temperatur, 14 €.“ Ich finde die ehrliche Werbung besser, weil ich alle wichtigen Informationen bekomme.' },
+    ],
+    check: ['Ich erkenne Werbetricks in Texten.', 'Ich verstehe Werbespots im Radio.', 'Ich unterscheide: ein bestimmtes Ding oder alle Dinge.', 'Ich weiß: „gratis“ ist nicht immer gratis.', 'Ich schreibe eine ehrliche Werbung.'],
+  },
 ]
