@@ -442,7 +442,7 @@ async function baue(id: string, browser: any, png: boolean) {
       // Prüfen: Nichts darf breiter sein als der Satzspiegel – sonst verkleinert Chromium das ganze Heft.
       await seite.emulateMedia({ media: 'print' }); await seite.setViewportSize({ width: 680, height: 1000 })
       const zuBreit = await seite.evaluate(() => { const W = document.body.getBoundingClientRect().width, out: string[] = []
-        for (const e of Array.from(document.querySelectorAll('body *'))) { const q = e.getBoundingClientRect(); if (q.width && q.right > W + 1 && !e.closest('.deckblatt')) out.push(`${e.tagName}.${(e as HTMLElement).className || ''} (${Math.round(q.right - W)} px): ${(e.textContent || '').slice(0, 50)}`) }
+        for (const e of Array.from(document.querySelectorAll('body *'))) { const q = e.getBoundingClientRect(); if (q.width && q.right > W + 1 && !e.closest('.deckblatt')) out.push(`${e.tagName}.${typeof (e as HTMLElement).className === 'string' ? (e as HTMLElement).className : ''} (${Math.round(q.right - W)} px): ${(e.textContent || (e.closest('section') ? 'in ' + e.closest('section')!.id : '')).slice(0, 50)}`) }
         return out })
       if (zuBreit.length) { console.error(`✗ ${name}: ${zuBreit.length} Elemente zu breit – das Heft würde verkleinert:`); zuBreit.slice(0, 8).forEach((z: string) => console.error('   ' + z)); process.exitCode = 1 }
       const pdf = join(ziel, name + '.pdf')
