@@ -801,7 +801,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   // ---------- Emotes (Emote-Rad: Taste X oder Knopf 🙌) – in der Garderobe verdient; Leute in der Nähe antworten manchmal ----------
   const EMOTES = GARDEROBE.filter((d) => d.art === 'emote');
   const EMOTE_SY = Object.fromEntries(EMOTES.map((d) => [d.wert, d.sy]));
-  const EMOTE_ANTWORT = { jubeln: 'klatschen', tanzen: 'klatschen', sieger: 'klatschen', gitarre: 'klatschen', roboter: 'klatschen', verbeugen: 'klatschen', klatschen: 'daumen', herz: 'herz', daumen: 'daumen', facepalm: 'lachen', zucken: 'zucken', denken: 'zucken', winken2: 'winken' };
+  const EMOTE_ANTWORT = { jubeln: 'klatschen', tanzen: 'tanzen', sieger: 'klatschen', gitarre: 'klatschen', roboter: 'klatschen', verbeugen: 'klatschen', klatschen: 'daumen', herz: 'herz', daumen: 'daumen', facepalm: 'lachen', zucken: 'zucken', denken: 'zucken', winken2: 'winken' };
   const blasen = [];   // kleine Emoji-Blasen über dem Kopf, steigen auf und verblassen
   function emoteBlase(sy, obj, hoehe = 2.2) {
     if (!sy || !obj) return;
@@ -860,10 +860,11 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       if (antw === 'winken') { zurueckWinken(x); emoteBlase('👋', x.f.group); return; }
       const q = steuerung.pos; x.f.group.rotation.y = Math.atan2(q.x - x.f.group.position.x, q.z - x.f.group.position.z);
       const w = x.warte; x.warte = Math.max(x.warte || 0, 3); x.f.spiele('Idle');
-      if (antw === 'lachen' || antw === 'zucken') x.f.geste(antw);
+      if (antw === 'tanzen') { x.f.spiele('Tanzen'); x.warte = Math.max(x.warte || 0, 9); S.merke.tanzParty = (S.merke.tanzParty || 0) + 1; }   // Tanzparty: sie tanzen mit
+      else if (antw === 'lachen' || antw === 'zucken') x.f.geste(antw);
       else if (x.f.pose) { x.f.pose(antw); if (antw === 'klatschen') for (let i = 1; i <= 4; i++) setTimeout(() => ton('klatsch'), i * 419); }
       emoteBlase(EMOTE_SY[antw] || (antw === 'lachen' ? '😂' : '🤷'), x.f.group);
-      setTimeout(() => { const h = x.d.steht && x.d.steht[3]; if (h === 'redet') x.f.spiele('Interact', { tempo: 0.35 }); else if (h === 'handy') x.f.spiele('Idle_Neutral'); else if (x.d.weg) { x.f.spiele('Walk', { tempo: x.d.tempo / 1.4 }); x.warte = w > 0 ? w : 0; } else x.f.spiele('Idle'); if (x.d.steht) x.f.group.rotation.y = x.d.steht[2]; }, 2900);
+      setTimeout(() => { const h = x.d.steht && x.d.steht[3]; if (h === 'redet') x.f.spiele('Interact', { tempo: 0.35 }); else if (h === 'handy') x.f.spiele('Idle_Neutral'); else if (x.d.weg) { x.f.spiele('Walk', { tempo: x.d.tempo / 1.4 }); x.warte = w > 0 ? w : 0; } else x.f.spiele('Idle'); if (x.d.steht) x.f.group.rotation.y = x.d.steht[2]; }, antw === 'tanzen' ? 8500 : 2900);
     }, 450 + Math.random() * 600);
     if (nah.length) S.merke.emoteAntwort = (S.merke.emoteAntwort || 0) + nah.length;
     return nah.length;
@@ -3336,7 +3337,9 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     ui.fotoAuf({
       dreh: (dx, dy) => { foto.yaw -= dx * 0.006; foto.pitch = Math.max(-0.12, Math.min(1.25, foto.pitch + dy * 0.004)); },
       zoom: (d) => { foto.dist = Math.max(1.1, Math.min(9, foto.dist + d)); },
-      pose: (a) => { steuerung.emote = a === 'Idle' ? null : a; steuerung.emoteBis = performance.now() + 1e9; },
+      extraPosen: emoteFrei().filter((d) => !['winken', 'jubeln', 'tanzen', 'zucken'].includes(d.wert)).map((d) => ({ p: 'p:' + d.wert, t: d.sy + ' ' + d.name })),   // verdiente Emotes als Foto-Pose
+      pose: (a) => { if (a.startsWith('p:')) { steuerung.emote = null; steuerung.emoteBis = 0; spieler.pose && spieler.pose(a.slice(2), 1e5); return; }
+        if (spieler.pose) spieler.pose(null); steuerung.emote = a === 'Idle' ? null : a; steuerung.emoteBis = performance.now() + 1e9; },
       filter: (f) => { foto.filter = f; canvas.style.filter = FOTO_FILTER[f] || ''; },
       dof: (v) => { foto.dof = v; },
       knips: () => {
@@ -3349,7 +3352,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         try { const a = document.createElement('a'); a.download = 'annexe-foto-' + new Date().toISOString().slice(0, 16).replace(/[:T]/g, '-') + '.png'; a.href = c2.toDataURL('image/png'); document.body.appendChild(a); a.click(); a.remove(); } catch (e) { /* manche Browser erlauben kein Speichern */ }
         ton('pling'); S.merke.fotos = (S.merke.fotos || 0) + 1; fotoBingo(); sichern();
       },
-      zu: () => { canvas.style.filter = ''; steuerung.emote = null; steuerung.kameraAus = false; steuerung.frei = true; input.setEnabled(true); foto = null; rr.setDof(0); steuerung.kamera(0.016, true); },
+      zu: () => { canvas.style.filter = ''; steuerung.emote = null; if (spieler && spieler.pose) spieler.pose(null); steuerung.kameraAus = false; steuerung.frei = true; input.setEnabled(true); foto = null; rr.setDof(0); steuerung.kamera(0.016, true); },
     });
   };
   let laeuft = false, raumAlt = undefined, geheimT = 0, klangT = 1, bankT = 0, trommelT = 1;

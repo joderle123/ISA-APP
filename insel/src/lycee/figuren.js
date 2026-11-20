@@ -359,7 +359,7 @@ export async function ladePerson(veil, { modell = 'menschen', stil = 'Casual', h
   // ---------- Emotes (Emote-Rad, Auftrag 20.11. „wie bei Fortnite“): prozedurale Posen über die Hand-IK ----------
   // Rahmen aus den Schultern: r = zur rechten Schulter, f = vorn, c = Schultermitte, k = Kopf. Gewicht blendet weich ein/aus.
   const POSEN = { daumen: 2.2, klatschen: 2.6, herz: 2.8, sieger: 2.4, facepalm: 2.4, verbeugen: 2.4, roboter: 4.2, gitarre: 3.4, denken: 3, winken2: 2.6 };
-  let poseArt = null, poseT = 0, poseLehn = 0;
+  let poseArt = null, poseT = 0, poseD = 1, poseLehn = 0;
   const _pr = new THREE.Vector3(), _pc = new THREE.Vector3(), _pk = new THREE.Vector3(), _pz = new THREE.Vector3(), _pd = new THREE.Vector3(), _pf = new THREE.Vector3(), _pp = new THREE.Vector3(), _pq = new THREE.Quaternion();
   const setzeHand = (s, w, ziel, richtung, flaeche, pol, faust, extra) => {
     const H = HAND[s]; if (H.w && !H.pose) return;   // Handschlag o. Ä. hat Vorrang
@@ -369,7 +369,7 @@ export async function ladePerson(veil, { modell = 'menschen', stil = 'Casual', h
   };
   const poseEnde = () => { for (const s of ['R', 'L']) if (HAND[s].pose) { HAND[s].w = 0; HAND[s].pose = false; } poseLehn = 0; poseArt = null; poseT = 0; };
   const poseHaende = () => {
-    const D = POSEN[poseArt], p = 1 - poseT / D, t = D - poseT, w = Math.min(1, t / 0.25, poseT / 0.3);
+    const D = poseD, p = 1 - poseT / D, t = D - poseT, w = Math.min(1, t / 0.25, poseT / 0.3);
     huelle.getWorldQuaternion(_kq); _fw.set(0, 0, 1).applyQuaternion(_kq);
     const oR = wp(ARM.R.O, _o1), oL = wp(ARM.L.O, _o2);
     const r = _pr.copy(oR).sub(oL).setY(0).normalize(), f = _fw, u = _up;
@@ -392,7 +392,7 @@ export async function ladePerson(veil, { modell = 'menschen', stil = 'Casual', h
       case 'facepalm':   // Hand vor die Stirn, Kopf sinkt
         setzeHand('R', w, P(_pz, _pk, 0.02, 0.0, 0.12), R(_pd, -0.25, 1, 0.1), R(_pf, 0, 0, -1), R(_pp, 1, -0.6, 0.2), 0.1); break;
       case 'verbeugen':   // nach vorn neigen, rechte Hand vor dem Bauch, linke auf dem Rücken
-        poseLehn = 0.62 * Math.pow(Math.sin(Math.PI * Math.min(1, p * 1.1)), 0.7);
+        poseLehn = 0.62 * (D > 10 ? Math.min(1, t / 0.8) : Math.pow(Math.sin(Math.PI * Math.min(1, p * 1.1)), 0.7));
         setzeHand('R', w, P(_pz, _pc, 0, -0.42, 0.2), R(_pd, -1, 0, 0.15), R(_pf, 0, 0, -1), R(_pp, 1, -0.5, 0), 0.2);
         setzeHand('L', w, P(_pz, _pc, 0, -0.5, -0.2), R(_pd, 1, 0, -0.15), R(_pf, 0, 0, 1), R(_pp, -1, -0.5, 0), 0.2); break;
       case 'roboter': {   // eckig: Unterarme im Wechsel hoch und runter, Kopf ruckt
@@ -472,7 +472,7 @@ export async function ladePerson(veil, { modell = 'menschen', stil = 'Casual', h
     redet(v) { redetZiel = v ? 1 : 0; },
     nicken() { nickT = NICK; },
     geste(art) { if (GESTE[art]) { gesteArt = art; gesteT = GESTE[art]; } },
-    pose(art) { if (poseT > 0 || poseArt) poseEnde(); if (art && POSEN[art] && ARMOK) { poseArt = art; poseT = POSEN[art]; } },
+    pose(art, dauer) { if (poseT > 0 || poseArt) poseEnde(); if (art && POSEN[art] && ARMOK) { poseArt = art; poseT = poseD = dauer || POSEN[art]; } },   // dauer: z. B. lange im Fotomodus
     get poseAktiv() { return poseT > 0 ? poseArt : null; },
     get augen() { return AUGEN ? AUGEN.map((a) => a.idx.length + '@' + a.idx[0] + '=' + a.attr.getX(a.idx[0]).toFixed(2) + ' n' + blinzelIn.toFixed(1)) : null; },
     hand: HAND, armOk: ARMOK,
