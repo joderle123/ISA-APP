@@ -113,7 +113,7 @@ export const LEKTIONEN = [
       absaetze: [
         'Erwachsen wird man nicht an einem einzigen Tag. Es ist ein langer Weg. Auch das Gesetz gibt jungen Menschen **Schritt für Schritt** mehr Rechte – und mehr Verantwortung.',
         '### Kindheit und Jugend',
-        'In Luxemburg gilt die **Schulpflicht** bis 16 Jahre. Kinder und Jugendliche haben besondere Rechte, zum Beispiel das Recht auf Schutz und auf Bildung. Diese Rechte stehen in der **UN-Kinderrechtskonvention**. Sie gilt für alle unter 18 Jahren.',
+        'In Luxemburg müssen Kinder und Jugendliche zur Schule gehen: Das ist die **Schulpflicht**. Kinder und Jugendliche haben besondere Rechte, zum Beispiel das Recht auf Schutz und auf Bildung. Diese Rechte stehen in der **UN-Kinderrechtskonvention**. Sie gilt für alle unter 18 Jahren.',
         '### Mit 16',
         'Mit 16 darf man in Luxemburg zum Beispiel einen Führerschein für ein kleines Motorrad machen. Viele Jugendliche beginnen eine Ausbildung oder machen Ferienjobs.',
         '### Mit 18',
@@ -122,27 +122,27 @@ export const LEKTIONEN = [
       ],
       woerter: [['erwachsen', 'adulte'], ['die Kindheit', 'l’enfance'], ['die Jugend', 'l’adolescence'], ['volljährig', 'majeur'], ['die Schulpflicht', 'la scolarité obligatoire'], ['die Verantwortung', 'la responsabilité'], ['der Vertrag', 'le contrat'], ['wählen', 'voter']],
       aufgaben: [
-        { art: 'tabelle', auftrag: 'Ab welchem Alter? Ergänze mit Hilfe des Textes.', stufe: 1, kopf: ['', 'Alter'], breiten: [70, 30], zeilen: [['Die Schulpflicht endet mit …', '[16 Jahren]'], ['Volljährig ist man mit …', '[18 Jahren]'], ['Die Kinderrechtskonvention gilt für alle unter …', '[18 Jahren]'], ['Das Gehirn entwickelt sich weiter bis etwa …', '[Mitte zwanzig]']] },
+        { art: 'tabelle', auftrag: 'Ab welchem Alter? Ergänze mit Hilfe des Textes.', stufe: 1, kopf: ['', 'Alter'], breiten: [70, 30], zeilen: [['Den Führerschein für ein kleines Motorrad kann man machen mit …', '[16 Jahren]'], ['Volljährig ist man mit …', '[18 Jahren]'], ['Die Kinderrechtskonvention gilt für alle unter …', '[18 Jahren]'], ['Das Gehirn entwickelt sich weiter bis etwa …', '[Mitte zwanzig]']] },
       ],
     },
     hoeren: {
       was: 'Ein Gespräch', wo: 'Im Altenheim · Projekt „Jung und Alt“', titel: 'Wie war es, 13 zu sein?',
-      situation: 'Finn besucht mit seiner Klasse ein Altenheim. Er spricht mit Frau Lenning, 84 Jahre alt.',
-      bild: ['finn:froh:sitzen', 'oma:froh:sitzen'], sprecher: { Finn: 'm3', 'Frau Lenning': 'w1' },
+      situation: 'Finn besucht mit seiner Klasse ein Altenheim. Er spricht mit Frau Majerus, 84 Jahre alt.',
+      bild: ['finn:froh:sitzen', 'oma:froh:sitzen'], sprecher: { Finn: 'm3', 'Frau Majerus': 'w1' },
       text: [
-        ['Finn', 'Frau Lenning, wie war das, als Sie dreizehn waren?'],
-        ['Frau Lenning', 'Oh, das ist lange her! Mit dreizehn habe ich schon auf dem Bauernhof meiner Eltern mitgearbeitet. Morgens vor der Schule die Kühe füttern.'],
+        ['Finn', 'Frau Majerus, wie war das, als Sie dreizehn waren?'],
+        ['Frau Majerus', 'Oh, das ist lange her! Mit dreizehn habe ich schon auf dem Bauernhof meiner Eltern mitgearbeitet. Morgens vor der Schule die Kühe füttern.'],
         ['Finn', 'Vor der Schule? Ich schlafe da noch!'],
-        ['Frau Lenning', 'Wir hatten keine Wahl. Mit vierzehn habe ich die Schule verlassen und in einem Geschäft gearbeitet. Ich hätte gern weiter gelernt.'],
-        ['Finn', 'Das finde ich unfair. Heute muss man bis sechzehn zur Schule gehen.'],
-        ['Frau Lenning', 'Das ist gut so. Ihr habt mehr Zeit, herauszufinden, wer ihr seid. Aber sag mal: Was ist heute schwer, wenn man dreizehn ist?'],
+        ['Frau Majerus', 'Wir hatten keine Wahl. Mit vierzehn habe ich die Schule verlassen und in einem Geschäft gearbeitet. Ich hätte gern weiter gelernt.'],
+        ['Finn', 'Das finde ich unfair. Heute müssen alle lange zur Schule gehen.'],
+        ['Frau Majerus', 'Das ist gut so. Ihr habt mehr Zeit, herauszufinden, wer ihr seid. Aber sag mal: Was ist heute schwer, wenn man dreizehn ist?'],
         ['Finn', 'Hm … Alle schauen auf Handys und vergleichen sich. Man soll immer cool sein.'],
-        ['Frau Lenning', 'Vergleichen haben wir auch – nur ohne Handy. Mein Rat: Hör auf dein Herz, nicht auf die Lautesten.'],
+        ['Frau Majerus', 'Vergleichen haben wir auch – nur ohne Handy. Mein Rat: Hör auf dein Herz, nicht auf die Lautesten.'],
       ],
       vor: [{ art: 'mc', auftrag: 'Wie war die Jugend vor 70 Jahren wahrscheinlich? Kreuze an.', stufe: 1, fragen: [{ f: '', o: ['Viele Jugendliche mussten früh arbeiten.', 'Alle hatten ein Handy.', 'Weniger Jugendliche konnten lange zur Schule gehen.'], r: [0, 2] }] }],
       beim: [
-        { art: 'tabelle', auftrag: 'Hör zu. Vergleiche.', stufe: 1, kopf: ['', 'Frau Lenning mit 13', 'Finn heute mit 13'], breiten: [24, 38, 38], zeilen: [['Morgens', '[Kühe füttern vor der Schule]', '[schläft noch]'], ['Schule', '[mit 14 aufgehört, dann gearbeitet]', '[Schulpflicht bis 16]'], ['Schwierig', '[keine Wahl, viel Arbeit]', '[Vergleichen, immer cool sein müssen]']] },
-        { art: 'fragen', auftrag: 'Welchen Rat gibt Frau Lenning?', stufe: 2, fragen: [{ f: '', l: 'Hör auf dein Herz, nicht auf die Lautesten.' }] },
+        { art: 'tabelle', auftrag: 'Hör zu. Vergleiche.', stufe: 1, kopf: ['', 'Frau Majerus mit 13', 'Finn heute mit 13'], breiten: [24, 38, 38], zeilen: [['Morgens', '[Kühe füttern vor der Schule]', '[schläft noch]'], ['Schule', '[mit 14 aufgehört, dann gearbeitet]', '[muss lange zur Schule gehen]'], ['Schwierig', '[keine Wahl, viel Arbeit]', '[Vergleichen, immer cool sein müssen]']] },
+        { art: 'fragen', auftrag: 'Welchen Rat gibt Frau Majerus?', stufe: 2, fragen: [{ f: '', l: 'Hör auf dein Herz, nicht auf die Lautesten.' }] },
       ],
       nach: [{ art: 'sprechen', auftrag: 'Wenn ihr wollt: Fragt eine ältere Person aus eurer Umgebung (Nachbar, Trainerin …), wie ihre Jugend war. Vergleicht in der Klasse.', stufe: 3, karten: [
         { titel: 'Interviewfragen', text: ['Was haben Sie mit 13 gemacht?', 'Was war damals schwer?', 'Was war schöner als heute?', 'Welchen Rat haben Sie für mich?'] }] }],
@@ -150,7 +150,7 @@ export const LEKTIONEN = [
     regel: {
       reihen: [
         [{ titel: 'Lebensalter', punkte: ['**Kindheit**: spielen, lernen, beschützt werden', '**Jugend**: sich ausprobieren, eigene Meinung, Körper verändert sich', '**Erwachsensein**: Verantwortung für sich und andere'] },
-         { titel: 'Rechte wachsen mit', punkte: ['**unter 18**: Kinderrechte, besonderer Schutz', '**16**: Ende der Schulpflicht', '**18**: volljährig – wählen, Verträge, Führerschein'] }],
+         { titel: 'Rechte wachsen mit', punkte: ['**unter 18**: Kinderrechte, besonderer Schutz', '**16**: z. B. Führerschein für ein kleines Motorrad', '**18**: volljährig – wählen, Verträge, Führerschein'] }],
         [{ art: 'achtung', titel: 'Stand der Regeln', text: 'Gesetze können sich ändern. Frag bei Fragen zu Alter und Rechten eine Lehrkraft oder schau auf offiziellen Seiten nach.' }],
       ],
     },
