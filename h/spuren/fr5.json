@@ -1,0 +1,506 @@
+{
+ "modul": "fr5",
+ "titel": {
+  "de": "Gestern und heute",
+  "fr": "Hier et aujourd’hui"
+ },
+ "sprache": "fr",
+ "spuren": {
+  "fr5-01l": {
+   "titel": "L’école primaire et le lycée",
+   "art": "lesen",
+   "lektion": 1,
+   "dauer": 48.1,
+   "text": [
+    [
+     "",
+     "L’école primaire et le lycée"
+    ],
+    [
+     "",
+     "Je m’appelle Rui. Avant, j’allais à l’école primaire de mon village. L’école était petite : il y avait seulement quarante élèves."
+    ],
+    [
+     "",
+     "J’avais une seule institutrice, Madame Weber. Elle était très gentille. Nous chantions souvent et nous faisions beaucoup de bricolage."
+    ],
+    [
+     "",
+     "Maintenant, je vais au lycée en bus. Le lycée est grand : il y a six cents élèves ! J’ai plusieurs professeurs et une salle différente pour chaque matière."
+    ],
+    [
+     "",
+     "Avant, j’étais plus libre et j’avais moins de devoirs. Par contre, maintenant, j’ai plus d’amis et je fais du sport tous les jours."
+    ],
+    [
+     "",
+     "Ce qui me manque ? La longue récréation et le gâteau de Madame Weber à la fin de l’année !"
+    ]
+   ]
+  },
+  "fr5-01h": {
+   "titel": "Mamie, ton école, c’était comment ?",
+   "art": "hoeren",
+   "lektion": 1,
+   "dauer": 49.8,
+   "text": [
+    [
+     "Noah",
+     "Mamie, tu allais à l’école où, quand tu étais petite ?"
+    ],
+    [
+     "Mme Pereira",
+     "J’allais à l’école de mon village, au Portugal. C’était dans les années soixante."
+    ],
+    [
+     "Noah",
+     "Il y avait beaucoup d’élèves ?"
+    ],
+    [
+     "Mme Pereira",
+     "Oh non ! Nous étions vingt dans une seule classe, de six à dix ans. Il y avait un seul maître pour tout le monde."
+    ],
+    [
+     "Noah",
+     "Et vous aviez des ordinateurs ?"
+    ],
+    [
+     "Mme Pereira",
+     "Des ordinateurs ? Non ! Nous écrivions avec un stylo à plume et de l’encre. Et en hiver, il y avait un grand poêle au milieu de la classe."
+    ],
+    [
+     "Noah",
+     "Tu aimais l’école ?"
+    ],
+    [
+     "Mme Pereira",
+     "Oui, beaucoup ! Par contre, le maître était très sévère. Et je marchais trois kilomètres pour aller à l’école, matin et soir."
+    ],
+    [
+     "Noah",
+     "Trois kilomètres à pied ? Moi, je prends le bus !"
+    ]
+   ]
+  },
+  "fr5-02l": {
+   "titel": "Le jean : 150 ans de style",
+   "art": "lesen",
+   "lektion": 2,
+   "dauer": 63.1,
+   "text": [
+    [
+     "",
+     "Le jean : 150 ans de style"
+    ],
+    [
+     "",
+     "Le jean est né aux États-Unis vers 1870. À cette époque, c’était un pantalon de travail pour les ouvriers et les chercheurs d’or. Il était très solide, en toile bleue."
+    ],
+    [
+     "",
+     "Dans les années 1950, des acteurs de cinéma portaient des jeans dans les films. Les jeunes les adoraient : le jean devenait le symbole de la jeunesse."
+    ],
+    [
+     "",
+     "Dans les années 1970, les jeans étaient très larges en bas. On les appelait les « pattes d’éléphant ». Les filles et les garçons portaient les mêmes jeans."
+    ],
+    [
+     "",
+     "Dans les années 1990, les jeunes portaient des jeans très larges et des baskets énormes. Dans les années 2000, la mode était au jean très serré."
+    ],
+    [
+     "",
+     "Aujourd’hui, il y a toutes les formes : droit, large, serré, troué… Par contre, la fabrication d’un jean utilise beaucoup d’eau. Alors, pense à la seconde main !"
+    ]
+   ]
+  },
+  "fr5-02h": {
+   "titel": "C’était quelle époque ?",
+   "art": "hoeren",
+   "lektion": 2,
+   "dauer": 50.9,
+   "text": [
+    [
+     "Chloé",
+     "Bienvenue au jeu « Quelle époque ? » ! Premier invité : Marc. À vous !"
+    ],
+    [
+     "Marc",
+     "Quand j’étais jeune, les garçons avaient les cheveux longs. On portait des pantalons pattes d’éléphant et des chemises à fleurs. On écoutait de la musique sur des disques."
+    ],
+    [
+     "Chloé",
+     "Merci ! Deuxième invitée : Sylvie."
+    ],
+    [
+     "Sylvie",
+     "Moi, je portais des vestes avec de grandes épaules et des couleurs fluo : rose, jaune, vert. On écoutait des cassettes sur un baladeur."
+    ],
+    [
+     "Chloé",
+     "Et pour finir : Kevin."
+    ],
+    [
+     "Kevin",
+     "Quand j’avais quinze ans, tout le monde avait un téléphone à clapet. On portait des jeans très serrés et des casquettes. Et on envoyait des textos sans images !"
+    ],
+    [
+     "Chloé",
+     "Alors, chers auditeurs : quelles époques ? Les années 1970, 1980 ou 2000 ?"
+    ]
+   ]
+  },
+  "fr5-03l": {
+   "titel": "Les Romains chez nous",
+   "art": "lesen",
+   "lektion": 3,
+   "dauer": 55.8,
+   "text": [
+    [
+     "",
+     "Les Romains chez nous"
+    ],
+    [
+     "",
+     "Il y a environ 2000 ans, les Romains vivaient aussi dans notre région. Ils construisaient des routes, des villages et de grandes maisons à la campagne : les villas."
+    ],
+    [
+     "",
+     "À Dalheim, il y avait un village romain avec un théâtre. Ce théâtre avait de la place pour environ 3500 personnes !"
+    ],
+    [
+     "",
+     "À Echternach, on a trouvé les restes d’une très grande villa romaine. Une famille riche y habitait avec beaucoup de serviteurs."
+    ],
+    [
+     "",
+     "À Vichten, en 1995, un agriculteur a découvert une grande mosaïque dans son champ. Aujourd’hui, on peut la voir au musée national, à Luxembourg."
+    ],
+    [
+     "",
+     "Les enfants des familles riches allaient à l’école. Ils écrivaient sur des tablettes de cire avec un bâton pointu. Les autres enfants travaillaient souvent avec leurs parents."
+    ]
+   ]
+  },
+  "fr5-03h": {
+   "titel": "La vie d’un enfant romain",
+   "art": "hoeren",
+   "lektion": 3,
+   "dauer": 42.7,
+   "text": [
+    [
+     "M. Simon",
+     "Regardez cette petite poupée en os. Elle a presque deux mille ans ! Les enfants romains jouaient aussi, comme vous."
+    ],
+    [
+     "Amira",
+     "À quoi est-ce qu’ils jouaient ?"
+    ],
+    [
+     "M. Simon",
+     "Ils jouaient aux osselets, aux billes ou à la balle. Les filles avaient des poupées, et les garçons des petits chevaux en bois."
+    ],
+    [
+     "Amira",
+     "Et ils allaient à l’école ?"
+    ],
+    [
+     "M. Simon",
+     "Seulement les enfants des familles riches. Les cours commençaient très tôt, au lever du soleil. Le maître était souvent sévère."
+    ],
+    [
+     "Amira",
+     "Qu’est-ce qu’ils mangeaient ?"
+    ],
+    [
+     "M. Simon",
+     "Du pain, des légumes, des fruits, du fromage… Et les riches mangeaient couchés sur des lits !"
+    ],
+    [
+     "Amira",
+     "Couchés ? C’est drôle ! Moi, je préfère manger assise."
+    ]
+   ]
+  },
+  "fr5-04l": {
+   "titel": "La pub dans le magazine",
+   "art": "lesen",
+   "lektion": 4,
+   "dauer": 50.2,
+   "text": [
+    [
+     "",
+     "La pub dans le magazine"
+    ],
+    [
+     "",
+     "CROQ’FRUITS – des fruits secs en sachet. « Croquez la nature ! » 100 % fruits, 0 % sucre ajouté. Parfait pour le goûter. Essayez nos cinq saveurs ! Le sachet : 1,50 €."
+    ],
+    [
+     "",
+     "QUIZÉO – l’appli pour réviser. « Révisez moins, apprenez mieux ! » Des quiz de cinq minutes pour toutes les matières. Téléchargez-la gratuitement ! Version complète : 2,99 € par mois."
+    ],
+    [
+     "",
+     "LES BULLES – le parc aquatique. « Plongez dans l’aventure ! » Douze toboggans, une piscine à vagues et une rivière sauvage. Offre spéciale : venez à quatre, payez trois ! Ouvert tous les jours de 10 h à 20 h."
+    ]
+   ]
+  },
+  "fr5-04h": {
+   "titel": "Trois spots, trois produits",
+   "art": "hoeren",
+   "lektion": 4,
+   "dauer": 36.1,
+   "text": [
+    [
+     "Annonceuse",
+     "Tu as faim après l’école ? Ne mange pas n’importe quoi ! Prends un sachet de Croq’Fruits : des fruits, rien que des fruits. Croq’Fruits : croquez la nature !"
+    ],
+    [
+     "Annonceur",
+     "Samedi, c’est la grande fête de Quizéo ! Le premier qui réussit cent quiz gagne une tablette. Téléchargez Quizéo maintenant !"
+    ],
+    [
+     "Fille",
+     "Moi, cet été, je suis allée aux Bulles avec mes copines. On a glissé sur les toboggans toute la journée ! C’était génial !"
+    ],
+    [
+     "Annonceuse",
+     "Les Bulles, le parc aquatique. Venez à quatre, payez trois !"
+    ]
+   ]
+  },
+  "fr5-05l": {
+   "titel": "Objets d’hier",
+   "art": "lesen",
+   "lektion": 5,
+   "dauer": 41.2,
+   "text": [
+    [
+     "",
+     "Objets d’hier"
+    ],
+    [
+     "",
+     "Exposition « Objets d’hier ». Le téléphone à cadran (1960) : il était lourd, en plastique noir. Pour appeler, on tournait un cadran rond avec le doigt. La machine à écrire (1950) : elle était en métal. Elle servait à écrire des lettres. Il fallait taper fort sur les touches ! Le baladeur à cassettes (1985) : il était petit et rectangulaire. On l’utilisait pour écouter de la musique dans la rue. La disquette (1995) : elle était carrée, en plastique. Elle servait à garder des documents d’ordinateur."
+    ]
+   ]
+  },
+  "fr5-05h": {
+   "titel": "Qu’est-ce que c’est ?",
+   "art": "hoeren",
+   "lektion": 5,
+   "dauer": 49.3,
+   "text": [
+    [
+     "Mme Nouvelle",
+     "Première devinette. C’est petit, souvent rectangulaire, en caoutchouc. On l’utilise tous les jours à l’école. Ça sert à effacer les erreurs."
+    ],
+    [
+     "Noah",
+     "C’est une gomme !"
+    ],
+    [
+     "Mme Nouvelle",
+     "Bravo, Noah ! Deuxième devinette. C’est long et fin. C’est en bois, avec une mine noire à l’intérieur. Ça sert à écrire ou à dessiner."
+    ],
+    [
+     "Léa",
+     "C’est un crayon !"
+    ],
+    [
+     "Mme Nouvelle",
+     "Très bien ! Et la dernière, plus difficile. C’est en plastique, rond, avec une mousse à l’intérieur. On le met sur la tête quand on fait du vélo. Ça sert à protéger."
+    ],
+    [
+     "Noah",
+     "Un casque ! Il faut toujours le mettre !"
+    ],
+    [
+     "Mme Nouvelle",
+     "Exactement ! À vous maintenant : écrivez vos devinettes !"
+    ]
+   ]
+  },
+  "fr5-06l": {
+   "titel": "Les règles",
+   "art": "lesen",
+   "lektion": 6,
+   "dauer": 39.2,
+   "text": [
+    [
+     "",
+     "Les règles"
+    ],
+    [
+     "",
+     "Piscine municipale – Règlement. Il est interdit de courir autour du bassin : le sol est glissant ! Il est interdit de plonger dans le petit bassin. Douche obligatoire avant la baignade. Le bonnet de bain est conseillé. Défense de manger au bord de l’eau. Les enfants de moins de 10 ans doivent venir avec un adulte. Photos et vidéos interdites : respectez les autres !"
+    ],
+    [
+     "",
+     "Au musée. Ne touchez pas les objets. Parlez doucement. Les sacs à dos ne sont pas autorisés dans les salles : laissez-les au vestiaire."
+    ]
+   ]
+  },
+  "fr5-06h": {
+   "titel": "Écoutez bien les règles !",
+   "art": "hoeren",
+   "lektion": 6,
+   "dauer": 41.0,
+   "text": [
+    [
+     "Maître-nageur",
+     "Bonjour à tous ! Avant de nager, écoutez-moi bien. D’abord, prenez une douche. C’est obligatoire."
+    ],
+    [
+     "Maître-nageur",
+     "Ensuite, ne courez pas autour du bassin : c’est glissant. Et il est interdit de plonger dans le petit bassin. L’eau n’est pas assez profonde."
+    ],
+    [
+     "Ben",
+     "Et dans le grand bassin, on peut plonger ?"
+    ],
+    [
+     "Maître-nageur",
+     "Oui, mais seulement quand je suis là et quand je vous le dis."
+    ],
+    [
+     "Mme Nouvelle",
+     "Ben, tu as ton bonnet ?"
+    ],
+    [
+     "Ben",
+     "Euh… non, je l’ai oublié."
+    ],
+    [
+     "Maître-nageur",
+     "Pas de problème, je t’en prête un. Et rappelez-vous : si un copain a un problème dans l’eau, appelez-moi tout de suite. Bonne baignade !"
+    ]
+   ]
+  },
+  "fr5-07l": {
+   "titel": "Le trésor du rocher du Hibou (1)",
+   "art": "lesen",
+   "lektion": 7,
+   "dauer": 48.3,
+   "text": [
+    [
+     "",
+     "Le trésor du rocher du Hibou (1)"
+    ],
+    [
+     "",
+     "Il était une fois, dans les Ardennes, un petit château sur un rocher. Au pied du rocher, il y avait une grande forêt sombre. Les gens du village avaient peur de cette forêt."
+    ],
+    [
+     "",
+     "Dans le château vivait une jeune fille, Elsa. Elle était courageuse et très curieuse. Tous les soirs, elle regardait la forêt par sa fenêtre."
+    ],
+    [
+     "",
+     "Un soir d’hiver, Elsa a vu une petite lumière bleue entre les arbres. Elle a pris sa lanterne et elle est sortie du château, sans bruit."
+    ],
+    [
+     "",
+     "Dans la forêt, un vieux hibou l’attendait sur une branche. « Bonsoir, Elsa, a dit le hibou. Je cherchais quelqu’un de courageux. Suis-moi ! »"
+    ]
+   ]
+  },
+  "fr5-07h": {
+   "titel": "Le trésor du rocher du Hibou (2)",
+   "art": "hoeren",
+   "lektion": 7,
+   "dauer": 49.9,
+   "text": [
+    [
+     "Narratrice",
+     "Elsa a suivi le hibou. Ils ont marché longtemps. Il faisait froid et la neige tombait doucement."
+    ],
+    [
+     "Narratrice",
+     "Enfin, ils sont arrivés devant une grotte. À l’intérieur, il y avait une vieille boîte en bois."
+    ],
+    [
+     "Hibou",
+     "Ouvre-la, Elsa. Mais attention : ce trésor n’est pas seulement pour toi."
+    ],
+    [
+     "Narratrice",
+     "Elsa a ouvert la boîte. Dedans, il n’y avait pas d’or. Il y avait des graines, des milliers de petites graines."
+    ],
+    [
+     "Elsa",
+     "Des graines ? Mais ce n’est pas un trésor !"
+    ],
+    [
+     "Hibou",
+     "Si. Plante-les avec les gens du village, et la forêt ne sera plus sombre."
+    ],
+    [
+     "Narratrice",
+     "Au printemps, Elsa et les gens du village ont planté les graines. Des fleurs et des arbres fruitiers ont poussé partout. Et depuis ce jour, personne n’a peur de la forêt."
+    ]
+   ]
+  },
+  "fr5-08l": {
+   "titel": "Soirée années 80",
+   "art": "lesen",
+   "lektion": 8,
+   "dauer": 54.5,
+   "text": [
+    [
+     "",
+     "Soirée années 80"
+    ],
+    [
+     "",
+     "Soirée années 80 à la maison des jeunes ! Samedi 7 mars, de 18 h à 22 h · Entrée : 3 € · Musique, quiz et concours du meilleur costume ! Viens avec une tenue des années 80 : couleurs fluo, grandes épaules… Et en plus, il y a des crêpes ! Inscription avant le 4 mars : Chloé, au 12 34 56."
+    ],
+    [
+     "",
+     "Réponse de Sami. Salut Chloé ! Merci pour l’invitation. J’accepte avec plaisir ! Et en plus, ma tante a une veste fluo des années 80 : je vais la porter !"
+    ],
+    [
+     "",
+     "Réponse de Léa. Coucou Chloé, désolée, je ne peux pas venir samedi : j’ai un match de basket à Wiltz. Par contre, je peux t’aider à préparer la salle vendredi. Ça te va ?"
+    ]
+   ]
+  },
+  "fr5-08h": {
+   "titel": "On peut déplacer le rendez-vous ?",
+   "art": "hoeren",
+   "lektion": 8,
+   "dauer": 43.7,
+   "text": [
+    [
+     "Chloé",
+     "Allô, Léa ? C’est Chloé. Pour vendredi, j’ai un problème : la salle n’est pas libre à seize heures."
+    ],
+    [
+     "Léa",
+     "Ah bon ? Alors on annule ?"
+    ],
+    [
+     "Chloé",
+     "Non, on peut déplacer le rendez-vous. La salle est libre à dix-huit heures. Ça te va ?"
+    ],
+    [
+     "Léa",
+     "Dix-huit heures… D’accord. Par contre, je dois rentrer à vingt heures. C’est assez ?"
+    ],
+    [
+     "Chloé",
+     "Oui, deux heures, c’est parfait. Et en plus, Sami vient aussi pour nous aider."
+    ],
+    [
+     "Léa",
+     "Super ! J’apporte la musique et les décorations fluo."
+    ],
+    [
+     "Chloé",
+     "Génial ! Alors, à vendredi, dix-huit heures, devant la maison des jeunes."
+    ]
+   ]
+  }
+ }
+}
