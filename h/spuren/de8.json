@@ -1,0 +1,582 @@
+{
+ "modul": "de8",
+ "titel": {
+  "de": "Konsum, Umwelt und Klima",
+  "fr": "Consommation, environnement et climat"
+ },
+ "sprache": "de",
+ "spuren": {
+  "de8-01l": {
+   "titel": "Das neue Handy – muss das sein?",
+   "art": "lesen",
+   "lektion": 1,
+   "dauer": 53.7,
+   "text": [
+    [
+     "",
+     "Das neue Handy – muss das sein?"
+    ],
+    [
+     "",
+     "Nächste Woche kommt das neue Phonix 12 raus. Mein Handy ist zwei Jahre alt. Ich würde mir sofort das neue kaufen, wenn ich könnte!"
+    ],
+    [
+     "",
+     "Ehrlich? Dein Handy funktioniert doch noch. Ich würde lieber warten. Die Kamera ist ein bisschen besser, sonst ist fast alles gleich."
+    ],
+    [
+     "",
+     "Ich verstehe Tomek. In meiner Klasse haben viele das neueste Modell. Wenn man ein altes hat, wird man manchmal komisch angeschaut."
+    ],
+    [
+     "",
+     "Das ist aber kein guter Grund. Wenn alle von einer Brücke springen würden, würdest du dann auch springen? 😄"
+    ],
+    [
+     "",
+     "Haha, nein. Aber ein Handy ist ja nicht gefährlich. Nur teuer …"
+    ],
+    [
+     "",
+     "Mein Tipp: Ein neuer Akku kostet nur einen Bruchteil. Damit hält das alte Handy noch lange. Und es ist besser für die Umwelt."
+    ]
+   ]
+  },
+  "de8-01h": {
+   "titel": "Kaufen, kaufen, kaufen?",
+   "art": "hoeren",
+   "lektion": 1,
+   "dauer": 59.4,
+   "text": [
+    [
+     "Reporterin",
+     "Jugendliche sind wichtige Kunden. Viele Firmen machen Werbung extra für sie. Aber wie kaufen junge Leute wirklich ein? Ich habe nachgefragt."
+    ],
+    [
+     "Malik",
+     "Ich kaufe vor allem Kleidung und Spiele. Oft online, weil es schneller geht. Manchmal ärgere ich mich dann, weil ich die Sachen gar nicht brauche."
+    ],
+    [
+     "Reporterin",
+     "Was würdest du heute anders machen?"
+    ],
+    [
+     "Malik",
+     "Ich würde zwei Tage warten, bevor ich etwas bestelle. Wenn ich es dann noch will, kaufe ich es."
+    ],
+    [
+     "Jana",
+     "Ich kaufe viel gebraucht, zum Beispiel auf dem Flohmarkt oder im Internet. Das ist billiger und besser für die Umwelt."
+    ],
+    [
+     "Reporterin",
+     "Und wenn du einen Gutschein über hundert Euro gewinnen würdest?"
+    ],
+    [
+     "Jana",
+     "Dann würde ich mir gute Wanderschuhe kaufen. Und den Rest würde ich sparen."
+    ],
+    [
+     "Reporterin",
+     "Zwei Jugendliche, zwei Strategien. Unser Tipp: Vor dem Kauf kurz fragen: Brauche ich das wirklich?"
+    ]
+   ]
+  },
+  "de8-02l": {
+   "titel": "Reparieren statt wegwerfen",
+   "art": "lesen",
+   "lektion": 2,
+   "dauer": 65.5,
+   "text": [
+    [
+     "",
+     "Reparieren statt wegwerfen"
+    ],
+    [
+     "",
+     "Jeden ersten Samstag im Monat ist im Kulturzentrum Repair Café. Wer etwas Kaputtes hat, kann es mitbringen und zusammen mit Freiwilligen reparieren. Die Hilfe ist kostenlos."
+    ],
+    [
+     "",
+     "Am letzten Samstag kamen über 40 Besucherinnen und Besucher. Sie brachten zum Beispiel eine Lampe mit einem kaputten Kabel, einen Toaster aus den Siebzigerjahren und viele Jeans mit Löchern."
+    ],
+    [
+     "",
+     "Fast zwei Drittel der Sachen wurden repariert. „Viele Dinge sind nur ein bisschen kaputt“, sagt Marc, ein Elektriker im Ruhestand. „Oft fehlt nur eine Schraube.“"
+    ],
+    [
+     "",
+     "Auch Jugendliche kommen gern. Die 15-jährige Elif hat ihre Kopfhörer repariert: „Ich habe gelernt, wie man lötet. Das war richtig cool!“"
+    ],
+    [
+     "",
+     "Das Ziel: weniger Müll und weniger Geld für neue Sachen. Außerdem lernt man viel – und trifft nette Leute."
+    ]
+   ]
+  },
+  "de8-02h": {
+   "titel": "Ich möchte etwas reklamieren",
+   "art": "hoeren",
+   "lektion": 2,
+   "dauer": 52.9,
+   "text": [
+    [
+     "Verkäuferin",
+     "Guten Tag! Was kann ich für dich tun?"
+    ],
+    [
+     "Sami",
+     "Guten Tag. Ich möchte diese Kopfhörer reklamieren. Ich habe sie vor drei Monaten hier gekauft. Seit gestern höre ich nur noch auf der linken Seite."
+    ],
+    [
+     "Verkäuferin",
+     "Das tut mir leid. Hast du den Kassenbon dabei?"
+    ],
+    [
+     "Sami",
+     "Ja, hier ist er."
+    ],
+    [
+     "Verkäuferin",
+     "Danke. Die Kopfhörer haben zwei Jahre Garantie. Wir können sie zur Reparatur schicken. Das dauert ungefähr zwei Wochen."
+    ],
+    [
+     "Sami",
+     "Zwei Wochen? Könnten Sie mir vielleicht neue geben? Ich brauche sie für die Schule."
+    ],
+    [
+     "Verkäuferin",
+     "Ich verstehe. Ich schaue mal … Ja, wir haben das gleiche Modell noch da. Ich tausche sie dir um."
+    ],
+    [
+     "Sami",
+     "Super, vielen Dank! Das ist sehr nett."
+    ]
+   ]
+  },
+  "de8-03l": {
+   "titel": "Richtig trennen – so geht’s!",
+   "art": "lesen",
+   "lektion": 3,
+   "dauer": 69.1,
+   "text": [
+    [
+     "",
+     "Richtig trennen – so geht’s!"
+    ],
+    [
+     "",
+     "Glas: Flaschen und Gläser werden im Glascontainer gesammelt. Deckel vorher abnehmen! Bitte nur tagsüber einwerfen – das ist laut."
+    ],
+    [
+     "",
+     "Papier: Zeitungen, Hefte und Kartons kommen in die Papiertonne. Kartons bitte flach falten. Fettiges Papier, zum Beispiel ein Pizzakarton mit Käseresten, gehört nicht dazu."
+    ],
+    [
+     "",
+     "Verpackungen: Plastikflaschen, Dosen und Getränkekartons kommen in den Sack für Verpackungen. Was genau hineindarf, steht auf dem Sack."
+    ],
+    [
+     "",
+     "Bioabfall: Obst- und Gemüsereste, Kaffeesatz und Blumen kommen in die Biotonne. Daraus wird Kompost oder Biogas gemacht."
+    ],
+    [
+     "",
+     "Problemstoffe: Batterien, alte Handys und Farben dürfen nie in den Hausmüll. Sie werden an Sammelstellen und im Recyclingzentrum angenommen."
+    ],
+    [
+     "",
+     "Restmüll: Nur was man nicht trennen kann, kommt in den Restmüll, zum Beispiel Staubsaugerbeutel oder Windeln."
+    ]
+   ]
+  },
+  "de8-03h": {
+   "titel": "Aufräumaktion auf dem Schulhof",
+   "art": "hoeren",
+   "lektion": 3,
+   "dauer": 68.0,
+   "text": [
+    [
+     "Noah",
+     "Achtung, eine Durchsage der Schülervertretung! Am Freitag nach der dritten Stunde räumen wir gemeinsam den Schulhof und den Sportplatz auf. Handschuhe und Säcke bekommt ihr am Haupteingang. Treffpunkt: vor der Turnhalle. Danach gibt es für alle Getränke. Macht mit!"
+    ],
+    [
+     "Mia",
+     "Chloe, du warst bei der Aufräumaktion dabei. Wie war es?"
+    ],
+    [
+     "Chloe",
+     "Am Anfang hatte ich keine Lust. Aber dann war es echt gut. Wir waren fast hundert Leute!"
+    ],
+    [
+     "Mia",
+     "Was habt ihr gefunden?"
+    ],
+    [
+     "Chloe",
+     "Unglaublich viele Zigarettenstummel und Plastikflaschen. Hinter der Turnhalle lag sogar ein alter Fahrradreifen."
+    ],
+    [
+     "Mia",
+     "Wie hast du dich danach gefühlt?"
+    ],
+    [
+     "Chloe",
+     "Stolz! Der Schulhof sah viel schöner aus. Aber ich war auch ein bisschen wütend. Es wäre besser, wenn niemand den Müll einfach liegen lassen würde."
+    ],
+    [
+     "Mia",
+     "Was schlägst du vor?"
+    ],
+    [
+     "Chloe",
+     "Mehr Mülleimer. Und jede Klasse ist eine Woche lang für den Hof verantwortlich."
+    ]
+   ]
+  },
+  "de8-04l": {
+   "titel": "Sparen, ohne zu frieren",
+   "art": "lesen",
+   "lektion": 4,
+   "dauer": 67.7,
+   "text": [
+    [
+     "",
+     "Sparen, ohne zu frieren"
+    ],
+    [
+     "",
+     "Im Winter heizen viele Menschen ihre Wohnung auf 22 Grad oder mehr. Fachleute sagen: Jedes Grad weniger spart etwa 6 Prozent Heizenergie. Im Wohnzimmer reichen oft 20 Grad, im Schlafzimmer 17 bis 18 Grad."
+    ],
+    [
+     "",
+     "Stoßlüften statt Kipplüften: lieber mehrmals am Tag ein paar Minuten das Fenster ganz öffnen. Ein gekipptes Fenster lässt stundenlang Wärme hinaus."
+    ],
+    [
+     "",
+     "Geräte im Standby verbrauchen auch Strom. Mit einer Steckdosenleiste mit Schalter kann man mehrere Geräte auf einmal ganz ausschalten."
+    ],
+    [
+     "",
+     "Wäschetrockner sind praktisch, aber sie brauchen viel Strom. Im Sommer trocknet Wäsche an der Luft kostenlos. Eine moderne, volle Spülmaschine braucht dagegen oft weniger Wasser als Spülen von Hand."
+    ],
+    [
+     "",
+     "Kleine Schritte helfen: Licht aus, wenn man den Raum verlässt, und kürzer duschen. Das spart Energie – und Geld."
+    ]
+   ]
+  },
+  "de8-04h": {
+   "titel": "Strom-Detektive",
+   "art": "hoeren",
+   "lektion": 4,
+   "dauer": 54.6,
+   "text": [
+    [
+     "Finn",
+     "Unser Thema heute: Wo versteckt sich Strom? Wir haben eine Woche lang im Jugendhaus gemessen, welche Geräte wie viel Strom verbrauchen."
+    ],
+    [
+     "Finn",
+     "Das Ergebnis hat uns überrascht. Der alte Kühlschrank im Keller war fast leer – aber er hat am meisten Strom verbraucht."
+    ],
+    [
+     "Finn",
+     "Auf Platz zwei kam die Spielkonsole. Sie war auch nachts im Standby."
+    ],
+    [
+     "Finn",
+     "Unsere Vorschläge: Erstens würden wir den alten Kühlschrank abschalten. Zweitens sollte man die Konsole mit einer Steckdosenleiste ganz ausschalten."
+    ],
+    [
+     "Finn",
+     "Wenn das alle machen würden, könnte das Jugendhaus viel Geld sparen. Habt ihr Fragen?"
+    ],
+    [
+     "Jana",
+     "Wie habt ihr den Strom gemessen?"
+    ],
+    [
+     "Finn",
+     "Mit einem Strommessgerät. Das steckt man zwischen Steckdose und Gerät. So ein Gerät kann man oft auch ausleihen."
+    ],
+    [
+     "Frau Sommer",
+     "Ein sehr gutes Referat, Finn – klar aufgebaut und mit eigenen Messungen!"
+    ]
+   ]
+  },
+  "de8-05l": {
+   "titel": "Wie sich das Klima verändert",
+   "art": "lesen",
+   "lektion": 5,
+   "dauer": 69.2,
+   "text": [
+    [
+     "",
+     "Wie sich das Klima verändert"
+    ],
+    [
+     "",
+     "Das Klima auf der Erde wird wärmer. Seit etwa 1900 ist die Temperatur weltweit im Durchschnitt um mehr als 1 Grad gestiegen. Das klingt wenig, hat aber große Folgen."
+    ],
+    [
+     "",
+     "Der wichtigste Grund ist CO₂. Dieses Gas entsteht, wenn Kohle, Erdöl oder Erdgas verbrannt werden – zum Beispiel in Autos, Fabriken und Heizungen. Es hält die Wärme in der Luft fest."
+    ],
+    [
+     "",
+     "Auch in Luxemburg spürt man den Klimawandel: Es gibt mehr heiße Sommertage und weniger Tage mit Schnee. Im Juli 2021 gab es nach Starkregen Hochwasser, auch im Müllerthal."
+    ],
+    [
+     "",
+     "Forscherinnen und Forscher sagen: Wenn wir so weitermachen, wird es noch wärmer werden. Hitzewellen werden häufiger kommen."
+    ],
+    [
+     "",
+     "Es gibt aber auch gute Nachrichten: Immer mehr Strom wird aus Wind und Sonne gemacht. Und alle können etwas tun – zum Beispiel öfter Bus oder Rad fahren und Energie sparen."
+    ]
+   ]
+  },
+  "de8-05h": {
+   "titel": "Cool bleiben bei Hitze",
+   "art": "hoeren",
+   "lektion": 5,
+   "dauer": 57.5,
+   "text": [
+    [
+     "Moderator",
+     "Die nächsten Tage werden heiß: Bis zu fünfunddreißig Grad sind angesagt. Bei uns im Studio ist eine Ärztin. Was sollten wir jetzt beachten?"
+    ],
+    [
+     "Ärztin",
+     "Am wichtigsten: viel trinken, am besten Wasser oder Tee. Mindestens anderthalb Liter am Tag, beim Sport mehr."
+    ],
+    [
+     "Ärztin",
+     "Sport sollte man lieber am Morgen oder am Abend machen. Mittags ist die Sonne am stärksten. Und denkt an Sonnencreme und eine Kappe."
+    ],
+    [
+     "Moderator",
+     "Wir haben einen Anrufer. Hallo, wer ist dran?"
+    ],
+    [
+     "Yusuf",
+     "Hallo, hier ist Yusuf. Wir haben am Freitag ein Fußballturnier. Was würden Sie uns raten?"
+    ],
+    [
+     "Ärztin",
+     "Ich würde das Turnier auf den Morgen legen und viele Trinkpausen machen. Wenn jemandem schwindelig wird: sofort in den Schatten und Bescheid sagen."
+    ],
+    [
+     "Moderator",
+     "Danke! Fazit: Die Hitze wird bleiben – aber mit ein paar Tricks kommt man gut durch den Sommer."
+    ]
+   ]
+  },
+  "de8-06l": {
+   "titel": "Woher kommt unser Strom?",
+   "art": "lesen",
+   "lektion": 6,
+   "dauer": 62.2,
+   "text": [
+    [
+     "",
+     "Woher kommt unser Strom?"
+    ],
+    [
+     "",
+     "Lange Zeit wurde Strom vor allem aus Kohle, Erdöl und Erdgas gemacht. Diese fossilen Energieträger sind vor Millionen von Jahren aus Pflanzen und Tieren entstanden. Ihre Vorräte sind endlich: Irgendwann sind sie verbraucht."
+    ],
+    [
+     "",
+     "Beim Verbrennen entsteht CO₂, das das Klima erwärmt. Deshalb setzen viele Länder auf erneuerbare Energien: Wind, Sonne, Wasser und Biomasse. Sie gehen nicht aus."
+    ],
+    [
+     "",
+     "Ein Windrad funktioniert so: Der Wind dreht die Rotorblätter. Im Inneren treibt die Drehung einen Generator an, der Strom erzeugt. Eine Solaranlage wandelt Sonnenlicht direkt in Strom um."
+    ],
+    [
+     "",
+     "Erneuerbare Energien haben aber auch Nachteile: Wenn kein Wind weht und die Sonne nicht scheint, gibt es weniger Strom. Darum braucht man Speicher, zum Beispiel große Batterien."
+    ],
+    [
+     "",
+     "Luxemburg kauft einen großen Teil seines Stroms im Ausland. Gleichzeitig entstehen im Land immer mehr Windräder und Solaranlagen."
+    ]
+   ]
+  },
+  "de8-06h": {
+   "titel": "Fünf neue Windräder",
+   "art": "hoeren",
+   "lektion": 6,
+   "dauer": 68.9,
+   "text": [
+    [
+     "Lina",
+     "Hallo aus dem Norden! Hier werden heute fünf neue Windräder eingeweiht. Neben mir steht Herr Weiler, der Projektleiter. Herr Weiler, wie groß sind die Windräder?"
+    ],
+    [
+     "Herr Weiler",
+     "Jedes Windrad ist ungefähr zweihundert Meter hoch – mit den Rotorblättern. Zusammen erzeugen sie Strom für etwa zehntausend Haushalte."
+    ],
+    [
+     "Lina",
+     "Wie lange hat der Bau gedauert?"
+    ],
+    [
+     "Herr Weiler",
+     "Gut ein Jahr. Aber die Planung hat fast sechs Jahre gedauert, weil wir viele Gutachten brauchten, zum Beispiel zum Schutz von Vögeln."
+    ],
+    [
+     "Lina",
+     "Danke! Hier steht auch eine Frau aus dem Dorf. Entschuldigung, darf ich Sie kurz fragen: Wie finden Sie den Windpark?"
+    ],
+    [
+     "Anwohnerin",
+     "Am Anfang war ich dagegen. Ich hatte Angst vor dem Lärm. Jetzt höre ich fast nichts. Und ich finde gut, dass der Strom von hier kommt."
+    ],
+    [
+     "Lina",
+     "Gibt es auch etwas, was Sie stört?"
+    ],
+    [
+     "Anwohnerin",
+     "Ehrlich gesagt: der Blick. Die Landschaft sieht jetzt anders aus. Aber für das Klima akzeptiere ich das."
+    ]
+   ]
+  },
+  "de8-07l": {
+   "titel": "Wie wird unsere Schule umweltfreundlicher?",
+   "art": "lesen",
+   "lektion": 7,
+   "dauer": 60.4,
+   "text": [
+    [
+     "",
+     "Wie wird unsere Schule umweltfreundlicher?"
+    ],
+    [
+     "",
+     "Protokoll der Schülervertretung – Sitzung vom 12. März. Anwesend: 9 Klassensprecherinnen und Klassensprecher, Frau Sommer (Begleitung). Thema: Wie kann unsere Schule umweltfreundlicher werden? Ideen: 1. Trinkbrunnen in der Pausenhalle · 2. Mülltrennung in allen Klassen · 3. Schulgarten hinter der Turnhalle · 4. „Licht aus“-Team in jeder Klasse · 5. Fahrradständer mit Dach. Abstimmung (jede Person hat zwei Stimmen): Trinkbrunnen 7 · Fahrradständer 5 · Schulgarten 4 · Mülltrennung 2 · „Licht aus“-Team 0. Beschluss: Wir schreiben einen Antrag an die Direktion für einen Trinkbrunnen. Verantwortlich: Chloe und Ben. Frist: 26. März."
+    ]
+   ]
+  },
+  "de8-07h": {
+   "titel": "Wie überzeugen wir die Direktion?",
+   "art": "hoeren",
+   "lektion": 7,
+   "dauer": 53.3,
+   "text": [
+    [
+     "Chloe",
+     "Also, wir brauchen gute Argumente für die Direktion. Was meint ihr?"
+    ],
+    [
+     "Ben",
+     "Ich würde mit dem Müll anfangen. Jeden Tag werden hier bestimmt hundert Plastikflaschen weggeworfen."
+    ],
+    [
+     "Amira",
+     "Das stimmt, aber wir sollten das genau zählen. Mit echten Zahlen wären wir überzeugender."
+    ],
+    [
+     "Chloe",
+     "Gute Idee! Wir könnten eine Woche lang die Flaschen in den Mülleimern zählen."
+    ],
+    [
+     "Ben",
+     "Und was ist mit den Kosten? Die Direktion fragt bestimmt, wie viel so ein Brunnen kostet."
+    ],
+    [
+     "Amira",
+     "Ich schlage vor, dass wir bei zwei Firmen nach Preisen fragen. Dann können wir vergleichen."
+    ],
+    [
+     "Chloe",
+     "Einverstanden. Dann machen wir es so: Ben zählt die Flaschen, Amira fragt die Firmen, und ich schreibe den Antrag. Sind alle dafür?"
+    ],
+    [
+     "Ben",
+     "Ja, abgemacht!"
+    ]
+   ]
+  },
+  "de8-08l": {
+   "titel": "Vom Schulhof bis ins Kaufhaus",
+   "art": "lesen",
+   "lektion": 8,
+   "dauer": 73.5,
+   "text": [
+    [
+     "",
+     "Vom Schulhof bis ins Kaufhaus"
+    ],
+    [
+     "",
+     "Plötzlich tragen alle die gleichen Schuhe, hören dasselbe Lied oder benutzen dieselbe App. Wie passiert das? Ein Trend hat oft mehrere Phasen."
+    ],
+    [
+     "",
+     "Phase 1: Wenige Menschen probieren etwas Neues aus – zum Beispiel Skater, Musikerinnen oder Leute in einer Großstadt. Man nennt sie Trendsetter."
+    ],
+    [
+     "",
+     "Phase 2: Andere sehen es, oft in sozialen Netzwerken. Influencer zeigen es, und Firmen erkennen: Damit kann man Geld verdienen. Sie machen Werbung, manchmal mit einer bekannten Figur, einer Werbeikone."
+    ],
+    [
+     "",
+     "Phase 3: Jetzt machen sehr viele mit. Das Produkt gibt es in jedem Geschäft. Für die Trendsetter ist es aber nicht mehr spannend – sie suchen schon etwas Neues."
+    ],
+    [
+     "",
+     "Phase 4: Der Trend wird langweilig und verschwindet. Manche Trends kommen nach Jahren zurück: Was vor dreißig Jahren modern war, ist heute wieder „vintage“. Ein aktueller Trend ist übrigens Second-Hand: gut für den Geldbeutel und für die Umwelt."
+    ]
+   ]
+  },
+  "de8-08h": {
+   "titel": "Haben Sie kurz Zeit?",
+   "art": "hoeren",
+   "lektion": 8,
+   "dauer": 52.3,
+   "text": [
+    [
+     "Interviewer",
+     "Entschuldigung, haben Sie kurz Zeit für eine Befragung? Es dauert nur fünf Minuten."
+    ],
+    [
+     "Mia",
+     "Ja, okay. Worum geht es?"
+    ],
+    [
+     "Interviewer",
+     "Um eine neue Trinkflasche. Sie zeigt mit einem Licht an, wann man wieder trinken sollte. Würden Sie so eine Flasche kaufen?"
+    ],
+    [
+     "Mia",
+     "Hm, vielleicht. Wie viel würde sie denn kosten?"
+    ],
+    [
+     "Interviewer",
+     "Ungefähr fünfunddreißig Euro. Wäre Ihnen das zu teuer?"
+    ],
+    [
+     "Mia",
+     "Ehrlich gesagt, ja. Für fünfunddreißig Euro würde ich sie nicht kaufen. Für fünfzehn vielleicht."
+    ],
+    [
+     "Interviewer",
+     "Und was ist Ihnen bei einer Trinkflasche wichtig?"
+    ],
+    [
+     "Mia",
+     "Dass sie dicht ist, nicht kaputtgeht und dass man sie gut spülen kann. Das Licht brauche ich eigentlich nicht."
+    ],
+    [
+     "Interviewer",
+     "Vielen Dank für Ihre Antworten! Als Dankeschön bekommen Sie einen Gutschein für das Café."
+    ]
+   ]
+  }
+ }
+}
