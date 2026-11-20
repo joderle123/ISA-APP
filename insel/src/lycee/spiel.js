@@ -19,8 +19,8 @@ import { baueRequisiten, stelle } from './requisiten.js';
 import { baueNatur } from './natur.js';
 import { STAMM, stammSzene, stammPlan } from './stammgaeste.js';
 import { ORTE_UMLAND, DORF_DEKO, tagTextur, wandbild } from './dorf.js';
-import { SIT_LEUTE, SZENEN, sitSichtbar, sitOffen, SIT_ZONEN, lichtung, laden, graffiti, halle, wette, kiste, vape, link, video, fest, spiel, dach, fundkiste, CHAT_NAMEN, zurueckbringen, sitSaetze, sitRueckblick, sitAntwortenOffen, zaun } from './situationen.js';
-const SIT_FN = { wald: lichtung, laden, graffiti, halle, wette, kiste, vape, link, video, fest, spiel, dach, fundkiste, zaun };
+import { SIT_LEUTE, SZENEN, sitSichtbar, sitOffen, SIT_ZONEN, lichtung, laden, graffiti, halle, wette, kiste, vape, link, video, fest, spiel, dach, fundkiste, CHAT_NAMEN, zurueckbringen, sitSaetze, sitRueckblick, sitAntwortenOffen, zaun, roller } from './situationen.js';
+const SIT_FN = { wald: lichtung, laden, graffiti, halle, wette, kiste, vape, link, video, fest, spiel, dach, fundkiste, zaun, roller };
 import { createHund, HUND_ERSTMAL, HUND_MOMENTE } from './hund.js';
 import { ladePerson, namensschild, SITZ } from './figuren.js';
 import { fussSchatten, WOLKEN } from './texturen.js';
@@ -485,6 +485,16 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       const wm = new THREE.Mesh(new THREE.PlaneGeometry(4.0, 2.0), new THREE.MeshLambertMaterial({ map: tex }));
       wm.position.set(43.87, 1.75, -54.0); wm.rotation.y = -Math.PI / 2; wm.visible = false; scene.add(wm); DORF_DEKO.dexWand = wm;
     }
+    // Sachas E-Roller in der Gasse (Roller-Situation)
+    if (!DORF_DEKO.roller) {
+      const gr = new THREE.Group(), dunkel = new THREE.MeshLambertMaterial({ color: '#2b2b33' }), lila = new THREE.MeshLambertMaterial({ color: '#7a5af5' }), grau = new THREE.MeshLambertMaterial({ color: '#9aa3ad' });
+      const teil = (g, mat, x, y, z) => { const k = new THREE.Mesh(g, mat); k.position.set(x, y, z); gr.add(k); return k; };
+      teil(new THREE.BoxGeometry(0.17, 0.05, 0.85), lila, 0, 0.13, 0);
+      for (const z of [-0.42, 0.42]) { const r = teil(new THREE.CylinderGeometry(0.1, 0.1, 0.05, 14), dunkel, 0, 0.1, z); r.rotation.z = Math.PI / 2; }
+      const st = teil(new THREE.CylinderGeometry(0.022, 0.022, 0.95, 8), grau, 0, 0.6, -0.44); st.rotation.x = 0.12;
+      const lk = teil(new THREE.CylinderGeometry(0.018, 0.018, 0.48, 8), dunkel, 0, 1.06, -0.5); lk.rotation.z = Math.PI / 2;
+      gr.position.set(32.6, 0.05, 66.6); gr.rotation.y = 0.25; gr.visible = false; scene.add(gr); DORF_DEKO.roller = gr;
+    }
     // Süße Wolke im WC, solange Ines und Kai dort stehen (Vape-Situation)
     if (!DORF_DEKO.wolke) {
       const gr = new THREE.Group(), mat = new THREE.MeshBasicMaterial({ color: '#f4eef8', transparent: true, opacity: 0.16, depthWrite: false });
@@ -497,6 +507,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     const m = S.merke || {}, an = (id) => statisten.some((q) => q.d.sitPerson === id && !q.weg);
     if (DORF_DEKO.dosen) DORF_DEKO.dosen.visible = an('lenny');
     if (DORF_DEKO.wolke) DORF_DEKO.wolke.visible = an('kai');
+    if (DORF_DEKO.roller) DORF_DEKO.roller.visible = an('sacha');
     if (DORF_DEKO.dexWand) DORF_DEKO.dexWand.visible = m.sit_graffiti === 'kiesser' && kap > (m.sitKap_graffiti || 99);
     if (DORF_DEKO.tagDex) DORF_DEKO.tagDex.visible = an('dexWand') || (['gegangen', 'verstanden', 'weiter', 'reden', 'kiesser', 'papier'].includes(m.sit_graffiti) && m.sitKap_graffiti === kap);
     // Das Wandbild zeigt, was aus Noors Trommel geworden ist
@@ -2416,6 +2427,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     const m = (S && S.merke) || {};
     const kurz = m.zurueckKap && (kap === m.zurueckKap || kap === m.zurueckKap + 1) ? 'Épicerie: Jemand kam zurück und hat bezahlt. Tante Lisette sagt: Respekt.'
       : m.sit_graffiti === 'kiesser' && kap > (m.sitKap_graffiti || 99) ? 'Neubau: Die große Wand bekommt Farbe. Ein 5ème zeichnet vor.'
+      : m.romyGeholfen && kap === (m.sitKap_zaun || 0) + 1 ? 'Sport: Handys bleiben draußen. In der Umkleide filmt niemand. Nie.'
       : m.sit_halle && kap === (m.sitKap_halle || 0) + 1 ? 'Streit gefilmt? Nicht teilen. Melden. Die Redaktion.'
       : m.lenningGesagt && kap === (m.sitKap_video || 0) + 1 ? 'Der Account „annexe.memes“ ist weg. Danke an alle, die ihn gemeldet haben.'
       : m.vapeKuedes && kap === (m.sitKap_vape || 0) + 1 ? 'SePAS: Neue Sprechstunde „Weg vom Vape“. Anonym. Dienstags.'

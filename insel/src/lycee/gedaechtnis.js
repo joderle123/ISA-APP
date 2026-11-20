@@ -238,6 +238,21 @@ export const GEDAECHTNIS = [
   { id: 'sitWandKiesser', wer: 'luca', ab: 7, wenn: (x) => x.sit_graffiti === 'kiesser', g: [
     ['luca', 'Der mit dem D3X malt jetzt die große Wand im Neubau.'],
     ['luca', 'Krass gut. Angeblich wegen dir.'] ] },
+  { id: 'sitRollerMika', wer: 'lina', ab: 5, wenn: (x) => x.sit_roller === 'mikaGeschuetzt' || x.sit_roller === 'gesagt', g: [
+    ['lina', 'Mika übt jetzt Nein sagen. An mir. Ist ziemlich lustig.'],
+    ['lina', 'Gestern hat Mika Nein zu meinem Pausenbrot gesagt. Fortschritt.'] ] },
+  { id: 'sitRollerFahrt', wer: 'kenan', ab: 5, wenn: (x) => x.sit_roller === 'mitgefahren', g: [
+    ['kenan', 'Zwei Leute auf einem Roller, in der Gasse. Rosa hat’s erzählt.'],
+    ['kenan', 'Ich frag nicht, wer. Ich sag nur: Glück gehabt.'] ] },
+  { id: 'sitMikaSorry', wer: 'noah', ab: 5, wenn: m('mikaSorry'), g: [
+    ['noah', 'Mika hat erzählt, dass du geschrieben hast. Später noch.'],
+    ['noah', 'Fand ich gut. Viele schreiben dann gar nichts mehr.'] ] },
+  { id: 'sitZaunMit', wer: 'jo', ab: 9, wenn: (x) => x.sit_zaun === 'mitgegangen', g: [
+    ['jo', 'Beim Turnier warst du weg. Wir hätten dich gebraucht.'],
+    ['jo', 'Lichtung statt Basketball? Echt jetzt?'] ] },
+  { id: 'sitZaunRomy', wer: 'ayla', ab: 9, wenn: m('romyGeholfen'), g: [
+    ['ayla', 'In der Umkleide filmt keiner mehr. Mesenberg war richtig sauer.'],
+    ['ayla', 'Romy lacht wieder in Sport. Hast du gesehen?'] ] },
   { id: 'sitWandGespruht', wer: 'kenan', ab: 7, wenn: (x) => x.sit_graffiti === 'gespruht', g: [
     ['kenan', 'Gelbe Finger, letzte Woche. Ich sag nix.'],
     ['kenan', 'Fernand hat zwei Stunden geschrubbt. Nur so.'] ] },

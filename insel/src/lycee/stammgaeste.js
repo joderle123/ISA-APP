@@ -133,6 +133,7 @@ export const STAMM = [
       m.zurueckgebracht ? { key: 'stx_rosa_lisette', zeilen: [['s', 'Lisette hat mir was erzählt. Ohne Namen.'], ['s', 'Jemand kam zurück und hat bezahlt. Sie war ganz gerührt.'],
         ['s', '… Du wirst ja rot. Ich sag nichts. Ein Croissant?']] } : null,
       m.sit_laden === 'erwischt' ? { key: 'stx_rosa_regal', zeilen: [['s', 'Lisette sagt, du räumst Regale ein wie ein Profi.'], ['s', 'Fehler machen alle. Wiedergutmachen nur wenige.']] } : null,
+      m.sit_roller === 'mitgefahren' ? { key: 'stx_rosa_roller', zeilen: m.rollerSorry ? [['s', 'Da bist du ja. Der Tee ist fertig.'], ['s', 'Ich fahr jetzt langsamer durch die Gasse. Und du?'], ['s', '… Zu Fuß. Gut so.']] : [['s', '(schaut dich lange an) Der Roller. Das warst du, oder?'], ['s', 'Ich hab zwei Nächte schlecht geschlafen. Nur damit du es weißt.']] } : null,
       m.sit_laden === 'bezahlt' || m.sit_laden === 'gesagt' ? { key: 'stx_rosa_gut', zeilen: [['s', 'Lisette erzählt von dir. Nur Gutes.'], ['s', 'Pass auf, sonst wirst du hier noch berühmt.']] } : null,
     ],
     nochmal: ['Merci villmools, Schatz!', 'Nicht drängeln, jeder kriegt was.', 'Wéi geet et? Gut? Gut.'],
