@@ -173,3 +173,90 @@ export function linienarten() {
   o += `<line x1="70" y1="120" x2="300" y2="120" stroke="#1a1a1a" stroke-width="1.6" stroke-dasharray="26 6 3 6"/>` + nr(40, 120, 3, '#1f6aa0', 12)
   return `<figure class="linienarten">${o}</svg></figure>`
 }
+
+/** Akkuschrauber von der Seite mit Nummern: 1 Bohrfutter, 2 Drehmoment-Ring, 3 Gang-Schalter, 4 Rechts-/Linkslauf, 5 Ein-/Aus-Schalter, 6 Akku */
+export function akkuschrauber() {
+  const W = 470, H = 330
+  const lin = (x1, y1, x2, y2) => `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="#c0392b" stroke-width="1.6"/>`
+  let o = `<svg viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg" class="akku-svg">`
+  // Bit
+  o += `<rect x="18" y="88" width="62" height="10" rx="2" fill="#b8bec8" stroke="#5b6475" stroke-width="1.5"/>`
+  for (let x = 26; x < 78; x += 10) o += `<line x1="${x}" y1="88" x2="${x + 6}" y2="98" stroke="#5b6475" stroke-width="1.2"/>`
+  // Bohrfutter
+  o += `<polygon points="76,74 124,66 124,120 76,112" fill="#4a4f5a" stroke="#2a2f3a" stroke-width="2" stroke-linejoin="round"/>`
+  for (let x = 86; x < 122; x += 8) o += `<line x1="${x}" y1="${73 - (x - 76) / 6}" x2="${x}" y2="${113 + (x - 76) / 6}" stroke="#2a2f3a" stroke-width="1.2"/>`
+  // Drehmoment-Ring
+  o += `<rect x="122" y="60" width="24" height="66" rx="5" fill="#f0b429" stroke="#2a2f3a" stroke-width="2"/>`
+  for (let y = 68; y < 122; y += 7) o += `<line x1="125" y1="${y}" x2="143" y2="${y}" stroke="#a87a10" stroke-width="1.2"/>`
+  // Gehäuse
+  o += `<rect x="142" y="54" width="206" height="78" rx="32" fill="#2e7d9a" stroke="#2a2f3a" stroke-width="2.4"/>`
+  for (let x = 300; x <= 330; x += 8) o += `<line x1="${x}" y1="74" x2="${x}" y2="112" stroke="#1d566b" stroke-width="3" stroke-linecap="round"/>`
+  // Griff
+  o += `<polygon points="226,124 302,124 292,272 238,272" fill="#2e7d9a" stroke="#2a2f3a" stroke-width="2.4" stroke-linejoin="round"/>`
+  o += `<polygon points="270,150 300,150 293,262 266,262" fill="#3a3f4a"/>`
+  // Gang-Schalter oben
+  o += `<rect x="238" y="44" width="34" height="12" rx="4" fill="#3a3f4a" stroke="#2a2f3a" stroke-width="1.5"/>` + t(246, 41, '1', { gr: 9 }) + t(264, 41, '2', { gr: 9 })
+  // Rechts-/Linkslauf
+  o += `<rect x="232" y="132" width="30" height="11" rx="3" fill="#3a3f4a" stroke="#2a2f3a" stroke-width="1.5"/>`
+  // Abzug
+  o += `<path d="M214 140 Q206 160 214 186 L232 186 L232 140 Z" fill="#3a3f4a" stroke="#2a2f3a" stroke-width="2"/>`
+  // Akku
+  o += `<rect x="200" y="268" width="142" height="48" rx="9" fill="#3a3f4a" stroke="#2a2f3a" stroke-width="2.4"/>`
+  for (let i = 0; i < 3; i++) o += `<circle cx="${222 + i * 12}" cy="292" r="4" fill="#5fd38d"/>`
+  // Nummern mit Linien
+  o += lin(100, 40, 100, 70) + nr(100, 30, 1) + lin(134, 30, 134, 60) + nr(134, 20, 2) + lin(285, 22, 270, 44) + nr(296, 18, 3)
+  o += lin(262, 137, 330, 160) + nr(342, 164, 4) + lin(208, 165, 160, 190) + nr(150, 196, 5) + lin(342, 292, 380, 292) + nr(392, 292, 6)
+  return `<figure class="akku">${o}</svg></figure>`
+}
+
+/** Drei Bohrer-Spitzen zum Zuordnen: A Holz (Zentrierspitze), B Metall (kegelige Spitze), C Stein (Hartmetallplatte) */
+export function bohrerArten() {
+  const h = 11, x1 = 390
+  let o = `<svg viewBox="0 0 520 250" xmlns="http://www.w3.org/2000/svg" class="bohrer-svg">`
+  const schaft = (y, f) => {
+    let s = `<rect x="80" y="${y - h}" width="120" height="${2 * h}" rx="3" fill="${f}" stroke="#2a2f3a" stroke-width="1.8"/><rect x="198" y="${y - h}" width="${x1 - 198}" height="${2 * h}" fill="${f}" stroke="#2a2f3a" stroke-width="1.8"/>`
+    for (let x = 204; x < x1 - 8; x += 18) s += `<path d="M${x} ${y - h} L${x + 14} ${y + h}" stroke="#2a2f3a" stroke-width="1.8"/>`
+    return s
+  }
+  const P = (pts, f) => `<polygon points="${pts.map((q) => q.join(',')).join(' ')}" fill="${f}" stroke="#2a2f3a" stroke-width="1.8" stroke-linejoin="round"/>`
+  // A Holzbohrer: lange Zentrierspitze, zwei Vorschneider außen
+  let y = 48
+  o += schaft(y, '#d4b483') + P([[x1, y - 4], [x1 + 30, y], [x1, y + 4]], '#d4b483') + P([[x1, y - h], [x1 + 14, y - h], [x1, y - h + 6]], '#d4b483') + P([[x1, y + h], [x1 + 14, y + h], [x1, y + h - 6]], '#d4b483')
+  o += t(44, y + 7, 'A', { gr: 20, fett: 800, farbe: '#1f6aa0' })
+  // B Metallbohrer: kegelige Spitze
+  y = 125
+  o += schaft(y, '#c9cfd8') + P([[x1, y - h], [x1 + 10, y], [x1, y + h]], '#c9cfd8')
+  o += t(44, y + 7, 'B', { gr: 20, fett: 800, farbe: '#1f6aa0' })
+  // C Steinbohrer: breite Hartmetallplatte
+  y = 202
+  o += schaft(y, '#8e96a3') + P([[x1 - 6, y - h - 5], [x1 + 8, y - h - 5], [x1 + 18, y], [x1 + 8, y + h + 5], [x1 - 6, y + h + 5]], '#e3c35a')
+  o += t(44, y + 7, 'C', { gr: 20, fett: 800, farbe: '#1f6aa0' })
+  return `<figure class="bohrer">${o}</svg></figure>`
+}
+
+/** Handyständer aus Alublech: Zuschnitt mit Biegelinien (oben) und fertig gebogen von der Seite (unten) */
+export function blechHalter() {
+  const q = 2.2, x0 = 70, y0 = 84, L = 150 * q, B = 70 * q
+  const m = (x1, x2, y, s) => `<line x1="${x1}" y1="${y}" x2="${x2}" y2="${y}" stroke="#2f6db5" stroke-width="1.3" marker-start="url(#bh-a)" marker-end="url(#bh-a)"/>` + t((x1 + x2) / 2, y - 5, s, { gr: 12, farbe: '#2f6db5' })
+  let o = `<svg viewBox="0 0 520 430" xmlns="http://www.w3.org/2000/svg" class="blech-svg"><defs><marker id="bh-a" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto-start-reverse"><path d="M0 1 L8 4 L0 7z" fill="#2f6db5"/></marker></defs>`
+  o += t(x0, 16, 'Zuschnitt (Maße in mm)', { gr: 12, anker: 'start', farbe: '#5b6475' })
+  o += `<rect x="${x0}" y="${y0}" width="${L}" height="${B}" rx="8" fill="#e6eaf0" stroke="#2a2f3a" stroke-width="2.2"/>`
+  for (const [mm, n] of [[20, 1], [80, 2]]) {
+    const x = x0 + mm * q
+    o += `<line x1="${x}" y1="${y0 - 8}" x2="${x}" y2="${y0 + B + 8}" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="22 5 3 5"/>` + nr(x + 14, y0 + B - 16, n, '#c0392b', 9)
+  }
+  o += `<line x1="${x0}" y1="${y0}" x2="${x0}" y2="${y0 - 38}" stroke="#2f6db5" stroke-width="1"/><line x1="${x0 + 20 * q}" y1="${y0 - 8}" x2="${x0 + 20 * q}" y2="${y0 - 16}" stroke="#2f6db5" stroke-width="1"/><line x1="${x0 + 80 * q}" y1="${y0 - 8}" x2="${x0 + 80 * q}" y2="${y0 - 36}" stroke="#2f6db5" stroke-width="1"/>`
+  o += m(x0, x0 + 20 * q, y0 - 12, '20') + m(x0, x0 + 80 * q, y0 - 32, '80')
+  o += `<line x1="${x0}" y1="${y0 + B}" x2="${x0}" y2="${y0 + B + 42}" stroke="#2f6db5" stroke-width="1"/><line x1="${x0 + L}" y1="${y0 + B}" x2="${x0 + L}" y2="${y0 + B + 42}" stroke="#2f6db5" stroke-width="1"/>` + m(x0, x0 + L, y0 + B + 38, '150')
+  o += `<line x1="${x0 + L}" y1="${y0}" x2="${x0 + L + 30}" y2="${y0}" stroke="#2f6db5" stroke-width="1"/><line x1="${x0 + L}" y1="${y0 + B}" x2="${x0 + L + 30}" y2="${y0 + B}" stroke="#2f6db5" stroke-width="1"/>`
+  o += `<line x1="${x0 + L + 24}" y1="${y0}" x2="${x0 + L + 24}" y2="${y0 + B}" stroke="#2f6db5" stroke-width="1.3" marker-start="url(#bh-a)" marker-end="url(#bh-a)"/>` + t(x0 + L + 40, y0 + B / 2 + 4, '70', { gr: 12, farbe: '#2f6db5' })
+  o += t(x0 + L + 40, y0 + B + 34, 'Dicke: 2', { gr: 11, farbe: '#5b6475' })
+  // Seitenansicht
+  const yb = 400, xa = 170, s = 1.6, w = (65 * Math.PI) / 180
+  const xe = xa + 60 * s, xt = xe + 70 * s * Math.cos(w), yt = yb - 70 * s * Math.sin(w)
+  o += t(x0, 300, 'fertig gebogen, von der Seite', { gr: 12, anker: 'start', farbe: '#5b6475' })
+  o += `<line x1="${xa + 6}" y1="${yb - 4}" x2="${xt - 6}" y2="${yt + 4}" stroke="#cfd8e3" stroke-width="13" stroke-linecap="round"/>` + t((xa + xt) / 2 - 26, (yb + yt) / 2 - 12, 'Handy', { gr: 11, farbe: '#7a8699' })
+  o += `<polyline points="${xa},${yb - 20 * s} ${xa},${yb} ${xe},${yb} ${xt.toFixed(1)},${yt.toFixed(1)}" fill="none" stroke="#2a2f3a" stroke-width="4" stroke-linejoin="round"/>`
+  o += nr(xa - 16, yb, 1, '#c0392b', 9) + nr(xe + 4, yb + 16, 2, '#c0392b', 9) + t(xe + 34, yb - 8, 'ca. 65°', { gr: 11, farbe: '#5b6475', anker: 'start' })
+  return `<figure class="blech">${o}</svg></figure>`
+}

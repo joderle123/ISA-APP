@@ -615,3 +615,5 @@ table.raster.stellen td { padding: 1.5mm 1mm; }
 .kuehl { margin: 2mm auto; width: 100%; } .kuehl-svg { width: 72mm; display: block; margin: 0 auto; }
 .beschriften > .neben { display: grid; grid-template-columns: 76mm 1fr; gap: 6mm; align-items: center; width: 100%; }
 .ansicht, .linienarten { margin: 2mm auto; width: 100%; } .ansicht-svg { width: 165mm; max-width: 100%; display: block; margin: 0 auto; } .linien-svg { width: 110mm; display: block; }
+.akku, .bohrer { margin: 2mm auto; width: 100%; } .akku-svg { width: 118mm; max-width: 100%; display: block; margin: 0 auto; } .bohrer-svg { width: 130mm; max-width: 100%; display: block; margin: 0 auto; }
+.blech { margin: 2mm auto; width: 100%; } .blech-svg { width: 125mm; max-width: 100%; display: block; margin: 0 auto; }
