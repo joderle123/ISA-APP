@@ -6,6 +6,7 @@ import { matheModul, matheLektionen } from './mathe-gemeinsam.mjs'
 import { thermometer, balkendiagramm, kaestchenFlaeche, treppe, zahlenstrahl } from './mathe-bilder.mjs'
 
 export const MODUL = matheModul(3, {
+  aussprache: { '\\ba \\(Ar\\)': 'Ar', '(\\d) a\\b': '\\1 Ar' },
   titelFr: 'Nombres décimaux, aire, température et statistique',
   unterFr: 'Arrondir et calculer avec des nombres décimaux, calculer des aires, lire des températures et analyser des données.',
   deckbild: ['ben:froh:handy', 'jana:froh:stehen-zeigen', 'yusuf:froh:laptop'],

@@ -11,7 +11,7 @@ export const MODUL = matheModul(6, {
   deckbild: ['yusuf:froh:zeigen-hoch', 'lina:froh:laptop', 'ben:froh:laessig'],
   blasen: [{ t: '(−3)·(−4) = +12', x: 12, y: 112 }, { t: 'Punkt vor Strich!', x: 110, y: 98 }, { t: '4x + 2', x: 168, y: 150 }],
   themenIcons: ['plus-minus', 'variable'],
-  aussprache: { '\\b(\\d+)x\\b': '\\1 x', '\\b(\\d+)a\\b': '\\1 a', '\\bA\\(x\\)': 'A von x', '\\bA\\((−?\\d+)\\)': 'A von \\1' },
+  aussprache: { '\\b(\\d+)x\\b': '\\1 x', '\\b(\\d+)([ab])\\b': '\\1 \\2', '\\bA\\(x\\)': 'A von x', '\\bA\\((−?\\d+)\\)': 'A von \\1' },
 })
 
 const EXTRAS = [
