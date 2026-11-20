@@ -56,7 +56,7 @@ export function createKicker3d({ scene, camera, steuerung, ui, rr = null, ton = 
       p.traverse((o) => { if (o.isMesh) o.castShadow = true; });
       figuren.push(v);
     }
-    return { u, f, n, a, g, dreh, figuren, weg: stangenWeg(n, a), off: 0, schwung: 0 };
+    return { u, f, n, a, g, dreh, figuren, gr, weg: stangenWeg(n, a), off: 0, schwung: 0 };
   });
   // ---------- Zählwerk: Perlen auf einer Stange an jeder Stirnseite (wie an echten Tischen) ----------
   const perlen = { b: [], r: [] };
@@ -88,7 +88,7 @@ export function createKicker3d({ scene, camera, steuerung, ui, rr = null, ton = 
       steuerung.teleport(KX, KZ - B / 2 - 0.75, 0); steuerung.frei = false; steuerung.kameraAus = true;
       if (steuerung.figur && steuerung.figur.group) steuerung.figur.group.visible = false;
       let gf = null; try { gf = await holeFigur(gegnerId); } catch (e) { gf = null; }
-      if (gf && lauf === L0) { scene.add(gf.group); welt(0, 0, B / 2 + 0.55, gf.group.position); gf.group.rotation.set(0, Math.PI, 0); gf.spiele && gf.spiele('Idle'); }
+      if (gf && lauf === L0) { scene.add(gf.group); welt(0, 0, B / 2 + 0.36, gf.group.position); gf.group.rotation.set(0, Math.PI, 0); gf.spiele && gf.spiele('Idle'); }
       L0.gf = gf;
       zaehlwerk(0, 0); einwurf(L0, Math.random() < 0.5 ? 1 : -1);
       const runter = (e) => {
@@ -105,7 +105,7 @@ export function createKicker3d({ scene, camera, steuerung, ui, rr = null, ton = 
         if (lauf !== L0) return; lauf = null;
         document.removeEventListener('keydown', runter, true); document.removeEventListener('keyup', hoch, true);
         if (canvas) { canvas.removeEventListener('pointerdown', pdown); canvas.removeEventListener('pointermove', pmove); canvas.removeEventListener('pointerup', pup); }
-        if (L0.gf) scene.remove(L0.gf.group);
+        if (L0.gf) { scene.remove(L0.gf.group); if (L0.gf.hand) { L0.gf.hand.R.w = 0; L0.gf.hand.L.w = 0; } }
         if (steuerung.figur && steuerung.figur.group) steuerung.figur.group.visible = true;
         steuerung.kameraAus = false; steuerung.frei = true; steuerung.teleport(p0.x, p0.z, yaw0); if (rr && rr.setDof) rr.setDof(0);
         ui.skate(null); torLicht.forEach((l) => { l.material.opacity = 0; });
@@ -149,6 +149,22 @@ export function createKicker3d({ scene, camera, steuerung, ui, rr = null, ton = 
       st.schwung = Math.max(0, st.schwung - dt);
       const s = st.schwung > 0 ? Math.sin((1 - st.schwung / 0.25) * Math.PI) : 0;
       st.dreh.rotation.z = (st.f === 'b' ? -1 : 1) * s * 1.25;   // Füße schwingen Richtung gegnerisches Tor
+    }
+    // Gegner:in hält die zwei mittleren roten Griffe (Hand-IK der Figur) – statt mit hängenden Armen hinter dem Tisch zu stehen
+    if (Lx.gf && Lx.gf.hand && Lx.gf.armOk) {
+      if (!Lx.griffe) { const rote = stangen.filter((st) => st.f === 'r').sort((a, c) => Math.abs(a.u) - Math.abs(c.u)).slice(0, 2);
+        const sr = Lx.gf.schulter('R', new THREE.Vector3()), sl = Lx.gf.schulter('L', new THREE.Vector3());
+        const w0 = rote.map((st) => st.gr.getWorldPosition(new THREE.Vector3()));
+        Lx.griffe = w0[0].distanceTo(sr) + w0[1].distanceTo(sl) <= w0[0].distanceTo(sl) + w0[1].distanceTo(sr) ? { R: rote[0], L: rote[1] } : { R: rote[1], L: rote[0] }; }
+      const zumTisch = welt(0, 0, -1, new THREE.Vector3()).sub(welt(0, 0, 0, new THREE.Vector3())).normalize();
+      for (const sd of ['R', 'L']) {
+        const H = Lx.gf.hand[sd], st = Lx.griffe[sd];
+        H.ziel = st.gr.getWorldPosition(H.ziel || new THREE.Vector3()); H.ziel.y += 0.01;
+        H.richtung = (H.richtung || new THREE.Vector3()).copy(zumTisch).multiplyScalar(0.5).add(new THREE.Vector3(0, -1, 0)).normalize();
+        H.flaeche = (H.flaeche || new THREE.Vector3()).copy(zumTisch).negate();
+        H.pol = (H.pol || new THREE.Vector3()).set(0, -1, 0).addScaledVector(zumTisch, -0.6);
+        H.faust = 0.95; H.zeige = 0; H.daumenHoch = false; H.w = 1;
+      }
     }
     Lx.schuss = Math.max(0, Lx.schuss - dt); Lx.rSchuss = Math.max(0, Lx.rSchuss - dt);
     torLicht.forEach((l) => { l.material.opacity = Math.max(0, l.material.opacity - dt * 1.2); });
