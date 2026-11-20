@@ -559,3 +559,36 @@ table.raster.stellen td { padding: 1.5mm 1mm; }
 .ghs.kurz .ghs-i svg { width: 8.5mm; height: 8.5mm; }
 .ghs.kurz .ghs-i.zwei svg { width: 5.5mm; height: 5.5mm; }
 .ghs.kurz .ghs-t { min-height: 0; border: none; font-size: 9.5pt; justify-content: center; }
+
+/* Welt-Dorf (10 Menschen) */
+.wdorf { display: flex; flex-direction: column; gap: 3.5mm; margin: 2mm 0; }
+.wd-z { display: grid; grid-template-columns: 1fr 92mm; gap: 4mm; align-items: center; }
+.wd-t { display: flex; gap: 2mm; align-items: flex-start; font-size: 11.5pt; line-height: 1.3; }
+.wd-t > b { font-family: 'Lexend'; background: #2a2f3a; color: #fff; border-radius: 50%; width: 5.5mm; height: 5.5mm; flex: none; display: flex; align-items: center; justify-content: center; font-size: 9.5pt; margin-top: 0.4mm; }
+.wd-r { display: flex; align-items: center; gap: 3mm; }
+.wd-svg { width: 68mm; height: auto; flex: none; }
+.wd-svg g { fill: #fff; stroke: #6b7385; stroke-width: 1.1; }
+.loesungen .wd-svg g.an { fill: var(--loesung); stroke: var(--loesung); }
+.wd-n { font-size: 10.5pt; white-space: nowrap; }
+.wd-n .z, .schoko .z { display: inline-block; min-width: 9mm; border-bottom: 0.3mm solid #9aa3b2; text-align: center; font-family: 'Hand'; color: var(--loesung); font-size: 14pt; line-height: 1; }
+.wd-n .z, .schoko .z:not(.sicht) { color: transparent; }
+.loesungen .wd-n .z, .loesungen .schoko .z { color: var(--loesung); }
+/* Zeichen der Religionen */
+.rz { display: grid; gap: 5mm 6mm; margin: 3mm 0; }
+.rz-k { display: flex; flex-direction: column; align-items: center; gap: 1.8mm; }
+.rz-i { width: 21mm; height: 21mm; border-radius: 50%; color: #fff; display: flex; align-items: center; justify-content: center; box-shadow: 0 0.6mm 0 rgba(0,0,0,.12); }
+.rz-i svg { width: 13mm; height: 13mm; stroke-width: 1.9; }
+.rz-z { font-size: 9.5pt; color: #5b6475; font-style: italic; }
+.rz-t { display: flex; gap: 2mm; align-items: flex-end; font-size: 11pt; min-height: 9mm; width: 100%; border-bottom: 0.3mm solid #9aa3b2; padding-bottom: 1mm; }
+.rz-t > b { font-family: 'Lexend'; background: #2a2f3a; color: #fff; border-radius: 50%; width: 5.5mm; height: 5.5mm; flex: none; display: flex; align-items: center; justify-content: center; font-size: 9.5pt; }
+.rz-l { font-family: 'Hand'; color: var(--loesung); font-size: 14pt; visibility: hidden; }
+.loesungen .rz-l { visibility: visible; }
+/* Schokoladentafel */
+.schoko { display: flex; gap: 7mm; align-items: center; margin: 2mm 0; }
+.schoko-svg { width: 66mm; height: auto; flex: none; }
+.schoko-leg { display: flex; flex-direction: column; gap: 3mm; font-size: 11.5pt; flex: 1; }
+.schoko-leg > div { display: grid; grid-template-columns: 7mm 1fr 22mm; gap: 2.5mm; align-items: center; }
+.schoko-leg i { width: 7mm; height: 7mm; border-radius: 1.2mm; color: #fff; font-style: normal; font-family: 'Lexend'; font-weight: 700; font-size: 10pt; display: flex; align-items: center; justify-content: center; }
+.schoko-leg .pz { white-space: nowrap; }
+.quelle-klein { font-size: 9pt; color: #6b7385; margin: 1.5mm 0 0; font-style: italic; }
+.beschriften > .voll { width: 100%; }

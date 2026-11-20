@@ -232,3 +232,35 @@ export function phSkala({ leer = false } = {}) {
   const bsp = { 2: 'Zitrone', 3: 'Essig', 7: 'Wasser', 9: 'Natron', 10: 'Seife', 13: 'Abflussreiniger' }
   return `<div class="ph"><div class="ph-band">${farben.map((f, i) => `<div style="background:${f}"><b>${i}</b></div>`).join('')}</div><div class="ph-bsp">${Object.entries(bsp).map(([w, t]) => `<span style="left:${((+w + 0.5) / 15) * 100}%" class="${leer ? 'nur-l' : ''}">${t}</span>`).join('')}</div><div class="ph-pole"><span>sauer</span><span>neutral</span><span>basisch (Lauge)</span></div></div>`
 }
+
+/** „Wenn die Welt ein Dorf mit 10 Menschen wäre“: je Zeile 10 Figuren; angemalt (an) nur im Lösungsheft */
+export function weltDorf(zeilen) {
+  const fig = (x, an) => `<g class="${an ? 'an' : ''}" transform="translate(${x},1)"><circle cx="6" cy="4.6" r="3.6"/><path d="M0.9 21.5v-5.2a5.1 5.1 0 0 1 10.2 0v5.2z"/></g>`
+  return `<div class="wdorf">${zeilen.map((z, i) => `<div class="wd-z"><div class="wd-t"><b>${i + 1}</b><span>… ${z.text}</span></div><div class="wd-r"><svg viewBox="0 0 140 23" class="wd-svg">${Array.from({ length: 10 }, (_, k) => fig(k * 14 + 1, k < z.an)).join('')}</svg><div class="wd-n"><span class="z">${z.an}</span> von 10</div></div></div>`).join('')}</div>`
+}
+
+/** Zeichen der Religionen (rund, groß); leer: Namen nur im Lösungsheft */
+const STERN5 = (cx, cy, R, r) => Array.from({ length: 10 }, (_, k) => { const w = -Math.PI / 2 + k * Math.PI / 5, q = k % 2 ? r : R; return `${(cx + q * Math.cos(w)).toFixed(2)},${(cy + q * Math.sin(w)).toFixed(2)}` }).join(' ')
+const SVG24 = (inner) => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">${inner}</svg>`
+const RAD = SVG24(`<circle cx="12" cy="12" r="8.2"/><circle cx="12" cy="12" r="2.2"/>${Array.from({ length: 8 }, (_, k) => { const w = k * Math.PI / 4; return `<path d="M${(12 + 2.2 * Math.cos(w)).toFixed(2)} ${(12 + 2.2 * Math.sin(w)).toFixed(2)}L${(12 + 10.4 * Math.cos(w)).toFixed(2)} ${(12 + 10.4 * Math.sin(w)).toFixed(2)}"/>` }).join('')}`)
+const HALBMOND = SVG24(`<path d="M13.2 4.2a8.5 8.5 0 1 0 0 15.6a8 8 0 0 1 0 -15.6z" fill="currentColor"/><polygon points="${STERN5(18.2, 11.4, 3, 1.25)}" fill="currentColor" stroke-width="0.6"/>`)
+export const RELIGIONS_ZEICHEN = [
+  { svg: () => tabler('cross'), name: 'Christentum', zeichen: 'Kreuz', farbe: '#b5651d' },
+  { svg: () => tabler('jewish-star'), name: 'Judentum', zeichen: 'Davidstern', farbe: '#1f6aa0' },
+  { svg: () => HALBMOND, name: 'Islam', zeichen: 'Halbmond und Stern', farbe: '#2f8a6b' },
+  { svg: () => tabler('om'), name: 'Hinduismus', zeichen: 'Om', farbe: '#c0587e' },
+  { svg: () => RAD, name: 'Buddhismus', zeichen: 'Rad der Lehre', farbe: '#d08a1e' },
+  { svg: () => tabler('yin-yang'), name: 'Daoismus', zeichen: 'Yin und Yang', farbe: '#4b4f5c' },
+]
+export function religionsZeichen({ leer = false, spalten = 3 } = {}) {
+  return `<div class="rz" style="grid-template-columns:repeat(${spalten},1fr)">${RELIGIONS_ZEICHEN.map((g, i) => `<div class="rz-k"><div class="rz-i" style="background:${g.farbe}">${g.svg()}</div><div class="rz-z">${g.zeichen}</div><div class="rz-t"><b>${i + 1}</b>${leer ? `<span class="rz-l">${g.name}</span>` : `<span><b>${g.name}</b></span>`}</div></div>`).join('')}</div>`
+}
+
+/** Schokoladentafel mit 100 Stückchen: wer bekommt wie viel vom Preis? teile: [{name, anteil, farbe}] */
+export function schokoTafel(teile, { leer = true } = {}) {
+  const st = []; teile.forEach((t, j) => { for (let k = 0; k < t.anteil; k++) st.push(j) })
+  const z = 7.2, g = 0.9
+  const svg = `<svg viewBox="0 0 ${10 * z + 2} ${10 * z + 2}" class="schoko-svg" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="${10 * z + 2}" height="${10 * z + 2}" rx="2.5" fill="#4a2c1a"/>${st.map((j, k) => `<rect x="${1 + (k % 10) * z + g / 2}" y="${1 + Math.floor(k / 10) * z + g / 2}" width="${z - g}" height="${z - g}" rx="0.9" fill="${teile[j].farbe}"/><text x="${1 + (k % 10) * z + z / 2}" y="${1 + Math.floor(k / 10) * z + z / 2 + 1.3}" font-size="3.6" text-anchor="middle" fill="#fff" font-family="Lexend" font-weight="700">${j + 1}</text>`).join('')}</svg>`
+  const leg = `<div class="schoko-leg">${teile.map((t, j) => `<div><i style="background:${t.farbe}">${j + 1}</i><span>${t.name}</span><span class="pz"><span class="z ${leer ? '' : 'sicht'}">${t.anteil}</span> %</span></div>`).join('')}</div>`
+  return `<div class="schoko">${svg}${leg}</div>`
+}
