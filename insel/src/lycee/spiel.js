@@ -898,6 +898,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (ob) o.oben = ob.wert;
     { const ha = gdDing(an.haar); if (ha) o.haar = ha.wert; }
     if (sc) o.schuhe = sc.wert;
+    { const r = gdDing(an.ruecken); if (r) { o.ruecken = r.wert; o.rueckenFarbe = r.farbe; } }
     return o;
   }
   // Schulter der Spielfigur (Knochen „UpperArm.L“) – dort sitzen Ratte, Hamster und Wellensittich, wenn man stillsteht
@@ -3635,7 +3636,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     teleport: (ort, yaw) => { const o = typeof ort === 'string' ? welt.orte[ort] : ort; steuerung.teleport(o.x, o.z, yaw !== undefined ? yaw : o.yaw); },
     rede, los, audio, SITZ, input, get spruch() { return { wer: !!spruchWer }; }, get naechste() { return naechste && naechste.id; },
     get probe() { return probe; }, set mutTempo(v) { mutTempo = v; },
-    daten: { SCHRITTE, STATISTEN, LEUTE, BLAETTER, MATHE, LEKTIONEN, GESPRAECHE }, ia, aktion, botengang, buchstaben, dosen, haustier, spur, schneemann, laub, pfuetzen, pokale, gdPruefen: (dt = 5) => garderobePruefen(dt), emote: (a, o) => emoteSpielen(a, o), emoteFrei: () => emoteFrei().map((d) => d.wert), leuteAntworten, kicker3d, billard, garderobe: () => S && S.garderobe, get iaNah() { return iaNah && iaNah.tu; },
+    daten: { SCHRITTE, STATISTEN, LEUTE, BLAETTER, MATHE, LEKTIONEN, GESPRAECHE }, ia, aktion, botengang, buchstaben, dosen, haustier, spur, schneemann, laub, pfuetzen, pokale, gdPruefen: (dt = 5) => garderobePruefen(dt), emote: (a, o) => emoteSpielen(a, o), anziehen: (id) => gleichAnziehen(id), umbau: async () => { const p = steuerung.pos.clone(), y = spieler.group.rotation.y; await spielerFigur(S.figur); spieler.group.position.copy(p); spieler.group.rotation.y = y; }, emoteFrei: () => emoteFrei().map((d) => d.wert), leuteAntworten, kicker3d, billard, garderobe: () => S && S.garderobe, get iaNah() { return iaNah && iaNah.tu; },
     hs, tt3d, zufall, fussball, volley, verkehr, elfmeter, sticker, fahrer, get fahrt() { return fahrt; }, get spieler() { return spieler; }, vorspann: (k) => vorspann(SCHRITTE.find((x) => (x.kap || 1) === k) || SCHRITTE[0]), gesteZu, handschlagMit, get statisten() { return statisten; }, musik,
   };
 

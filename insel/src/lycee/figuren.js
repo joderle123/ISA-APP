@@ -23,6 +23,7 @@ function zusatzClips() {
 import { clone as skClone } from 'three/examples/jsm/utils/SkeletonUtils.js';
 import { getMaterial } from '../actors/humanoid/base.js';
 import { baueFrisur } from './frisur.js';
+import { baueRuecken } from './ruecken.js';
 import { mergeGeometries } from 'three/examples/jsm/utils/BufferGeometryUtils.js';
 import menschenBin from './modelle/menschen.glb';   // = respawn/modelle/menschen.glb, mit Meshopt gepackt
 import frauenBin from './modelle/frauen.glb';
@@ -42,7 +43,7 @@ function baustein(o) {
   return null;
 }
 
-export async function ladePerson(veil, { modell = 'menschen', stil = 'Casual', haut, haar, oben, unten, schuhe, hoehe = 1.72, frisur = null, kopf = null, kopfFarbe = null, brille = null, brilleArt = null } = {}) {
+export async function ladePerson(veil, { modell = 'menschen', stil = 'Casual', haut, haar, oben, unten, schuhe, hoehe = 1.72, frisur = null, kopf = null, kopfFarbe = null, brille = null, brilleArt = null, ruecken = null, rueckenFarbe = null } = {}) {
   if (!cache.has(modell)) cache.set(modell, new Promise((ok, nein) => new GLTFLoader().setMeshoptDecoder(MeshoptDecoder).parse(puffer(DATEN[modell]), '', ok, nein)));
   const gltf = await cache.get(modell);
   const mat = getMaterial(veil);
@@ -128,6 +129,18 @@ export async function ladePerson(veil, { modell = 'menschen', stil = 'Casual', h
       fr.scale.setScalar(gs.x / (bs.x || 1));
       kb.add(fr);
       if (fr.userData.deckt) for (const t of teile) if (t.bau.teil === 'Head' && /^Hair/.test(t.name)) t.mesh.visible = false;
+    }
+  }
+  // Rücken-Teil aus der Garderobe (ruecken.js): am Brustknochen, in Ruhelage ausgerichtet wie die Frisur
+  if (ruecken) {
+    let cb = null; group.traverse((o) => { if (o.isBone && /^chest$/i.test(o.name)) cb = o; });
+    const rk = cb ? baueRuecken(ruecken, rueckenFarbe, mat) : null;
+    if (rk) {
+      huelle.updateMatrixWorld(true);
+      const wq = new THREE.Quaternion(), bq = new THREE.Quaternion(), bs = new THREE.Vector3(), gs = new THREE.Vector3();
+      huelle.getWorldQuaternion(wq); cb.getWorldQuaternion(bq); cb.getWorldScale(bs); huelle.getWorldScale(gs);
+      rk.quaternion.copy(bq.invert().multiply(wq)); rk.scale.setScalar(gs.x / (bs.x || 1));
+      cb.add(rk);
     }
   }
   // Teile mit gleicher Ruhelage (gleiche inverseBindMatrices) zu EINEM Netz zusammenfassen (gleiches Material):

@@ -7,7 +7,7 @@ import { pokaleVon } from './pokale.js';
 const pokale = (S) => pokaleVon(S).length;
 const herzen = (S, ab) => Object.values(S.herz || {}).filter((h) => h >= ab).length;
 
-export const ARTEN = [['kopf', '🧢 Kopf'], ['haar', '💇 Haarfarbe'], ['brille', '🕶️ Brille'], ['oben', '👕 Oberteil'], ['schuhe', '👟 Schuhe'], ['fahrt', '🛹 Brett & Trotti'], ['tier', '🐾 Haustier'], ['spur', '✨ Spur'], ['emote', '🙌 Emotes']];
+export const ARTEN = [['kopf', '🧢 Kopf'], ['haar', '💇 Haarfarbe'], ['brille', '🕶️ Brille'], ['oben', '👕 Oberteil'], ['schuhe', '👟 Schuhe'], ['fahrt', '🛹 Brett & Trotti'], ['tier', '🐾 Haustier'], ['ruecken', '🎒 Rücken'], ['spur', '✨ Spur'], ['emote', '🙌 Emotes']];
 
 export const GARDEROBE = [
   // Kopf
@@ -65,6 +65,14 @@ export const GARDEROBE = [
   { id: 'sp_sterne', art: 'spur', wert: 'sterne', sy: '⭐', name: 'Spur „Sterne“', hinweis: 'In einem Kapitel alle 3 Wochenaufgaben', test: (S) => (m(S).wochenVoll || 0) >= 1 },
   { id: 'sp_schnee', art: 'spur', wert: 'schnee', sy: '❄️', name: 'Spur „Schneeflocken“', hinweis: 'Im Winter 600 m auf der Eisbahn rutschen', test: (S) => (m(S).eisMeter || 0) >= 600 },
   { id: 'sp_regenbogen', art: 'spur', wert: 'regenbogen', sy: '🌈', name: 'Spur „Regenbogen“', hinweis: '10× lernen (Arbeitsblatt oder Lektion)', test: (S) => (m(S).lernen || 0) >= 10 },
+  // Rücken (ruecken.js): Rucksäcke und mehr, am Rücken der Figur
+  { id: 'r_schul', art: 'ruecken', wert: 'rucksack', farbe: '#2fb8a8', sy: '🎒', name: 'Rucksack „Annexe“', hinweis: 'Geschenk zum Schulstart', test: () => true },
+  { id: 'r_teddy', art: 'ruecken', wert: 'teddy', farbe: '#e85d75', sy: '🧸', name: 'Teddy im Rucksack', hinweis: 'Mit 4 Leuten richtig befreundet (4 Herzen)', test: (S) => herzen(S, 4) >= 4 },
+  { id: 'r_gitarre', art: 'ruecken', wert: 'gitarre', farbe: '#1d1f24', sy: '🎸', name: 'Gitarrenkoffer', hinweis: 'Im Jugendhaus 3× die Musik wechseln', test: (S) => (m(S).musikGewechselt || 0) >= 3 },
+  { id: 'r_skate', art: 'ruecken', wert: 'skate', farbe: '#ff3fa4', sy: '🛹', name: 'Brett auf dem Rücken', hinweis: 'Skate-Ecke: 15 Punkte', test: (S) => (m(S).skateRekord || 0) >= 15 },
+  { id: 'r_panzer', art: 'ruecken', wert: 'panzer', farbe: '#5f8a4a', sy: '🐢', name: 'Schildkrötenpanzer', hinweis: 'Tischtennis 3-mal gewinnen', test: (S) => (m(S).ttSiege || 0) >= 3 },
+  { id: 'r_rakete', art: 'ruecken', wert: 'rakete', farbe: '#d6452f', sy: '🚀', name: 'Spielzeug-Rakete', hinweis: 'Kevin rennt: 1000 Punkte', test: (S) => (m(S).kevinRekord || 0) >= 1000 },
+  { id: 'r_fluegel', art: 'ruecken', wert: 'fluegel', farbe: '#f7f4ee', sy: '🪽', name: 'Flügel', hinweis: 'In 3 Kapiteln alle Wochenaufgaben', test: (S) => (m(S).wochenVoll || 0) >= 3 },
   // Emotes (Emote-Rad, Taste X oder Knopf 🙌): kurze Gesten und Tänze. Vier gibt es von Anfang an, der Rest wird verdient.
   { id: 'e_winken', art: 'emote', wert: 'winken', sy: '👋', name: 'Winken', hinweis: 'Von Anfang an (auch Taste H)', test: () => true },
   { id: 'e_jubeln', art: 'emote', wert: 'jubeln', sy: '🎉', name: 'Jubeln', hinweis: 'Von Anfang an (auch Taste J)', test: () => true },
