@@ -3,9 +3,11 @@
 // Alles wird durch Nebenaufgaben VERDIENT: keine Zufallskisten, kein Geld, nichts auf Zeit, nichts geht verloren.
 // Gesperrte Dinge zeigen, wie man sie bekommt (Ziel statt Glück). Jedes Teil prüft nur den Spielstand.
 const m = (S) => S.merke || {};
+import { pokaleVon } from './pokale.js';
+const pokale = (S) => pokaleVon(S).length;
 const herzen = (S, ab) => Object.values(S.herz || {}).filter((h) => h >= ab).length;
 
-export const ARTEN = [['kopf', '🧢 Kopf'], ['brille', '🕶️ Brille'], ['oben', '👕 Oberteil'], ['schuhe', '👟 Schuhe'], ['fahrt', '🛹 Brett & Trotti'], ['tier', '🐾 Haustier'], ['spur', '✨ Spur']];
+export const ARTEN = [['kopf', '🧢 Kopf'], ['haar', '💇 Haarfarbe'], ['brille', '🕶️ Brille'], ['oben', '👕 Oberteil'], ['schuhe', '👟 Schuhe'], ['fahrt', '🛹 Brett & Trotti'], ['tier', '🐾 Haustier'], ['spur', '✨ Spur']];
 
 export const GARDEROBE = [
   // Kopf
@@ -17,6 +19,7 @@ export const GARDEROBE = [
   { id: 'k_cap_gold', art: 'kopf', wert: 'cap', farbe: '#ffd166', sy: '🧢', name: 'Goldene Cap', hinweis: '16 Sticker im Dorf finden', test: (S) => (m(S).sticker || []).length >= 16 },
   { id: 'k_billard', art: 'kopf', wert: 'cap', farbe: '#151515', sy: '🎱', name: 'Cap „8-Ball“', hinweis: 'Im Billard einmal gewinnen', test: (S) => (m(S).billardSiege || 0) >= 1 },
   { id: 'k_bommel', art: 'kopf', wert: 'muetze', farbe: '#e0384f', sy: '⛸️', name: 'Wollmütze „Eisbahn“', hinweis: 'Im Winter 300 m auf der Eisbahn rutschen', test: (S) => (m(S).eisMeter || 0) >= 300 },
+  { id: 'k_sommerhut', art: 'kopf', wert: 'bucket', farbe: '#ff9ecb', sy: '🍦', name: 'Sommerhut „Tutti Frutti“', hinweis: 'Im Sommer alle 6 Eissorten bei Tonio probieren', test: (S) => (m(S).eisSorten || []).length >= 6 },
   { id: 'k_krone', art: 'kopf', wert: 'krone', farbe: '#ffd23f', sy: '👑', name: 'Krone „Dorf-Legende“', hinweis: 'Alle 24 Sticker finden', test: (S) => (m(S).sticker || []).length >= 24 },
   // Brillen
   { id: 'b_sonne', art: 'brille', wert: 'sonne', farbe: '#1b1f27', sy: '🕶️', name: 'Sonnenbrille', hinweis: '3 Botengänge im Dorf', test: (S) => ((m(S).boten && m(S).boten.n) || 0) >= 3 },
@@ -49,6 +52,13 @@ export const GARDEROBE = [
   { id: 't_igel', art: 'tier', wert: 'igel', farbe: '#7a5a3a', sy: '🦔', name: 'Igel „Stachel“', hinweis: 'Im Park am Weiher die Enten beobachten', test: (S) => (m(S).enten || 0) >= 1 },
   { id: 't_hamster', art: 'tier', wert: 'hamster', farbe: '#e8b070', sy: '🐹', name: 'Hamster „Pommes“', hinweis: '5 Botengänge im Dorf', test: (S) => ((m(S).boten && m(S).boten.n) || 0) >= 5 },
   { id: 't_schildkroete', art: 'tier', wert: 'schildkroete', farbe: '#5f8a4a', sy: '🐢', name: 'Schildkröte „Turbo“', hinweis: 'S-K-A-T-E auf Zeit: unter 45 Sekunden', test: (S) => !!m(S).skate5Rekord && m(S).skate5Rekord < 45 },
+  // Haarfarbe (über die eigene Frisur): Pokale, Jahreszeiten-Spiele
+  { id: 'h_pink', art: 'haar', wert: '#ff6fb5', sy: '🩷', name: 'Haare „Pink“', hinweis: '2 Pokale im Jugendhaus-Regal', test: (S) => pokale(S) >= 2 },
+  { id: 'h_blau', art: 'haar', wert: '#3f7fff', sy: '💙', name: 'Haare „Blau“', hinweis: '4 Pokale im Jugendhaus-Regal', test: (S) => pokale(S) >= 4 },
+  { id: 'h_gruen', art: 'haar', wert: '#35c27a', sy: '💚', name: 'Haare „Grün“', hinweis: 'Im Herbst 10× in den Laubhaufen', test: (S) => (m(S).laub || 0) >= 10 },
+  { id: 'h_lila', art: 'haar', wert: '#9b5cf7', sy: '💜', name: 'Haare „Lila“', hinweis: '7 Herausforderungen von Freund:innen', test: (S) => ((m(S).hf && m(S).hf.fertig) || []).length >= 7 },
+  { id: 'h_platin', art: 'haar', wert: '#efe6cf', sy: '🤍', name: 'Haare „Platin“', hinweis: 'Im Winter einen Schneemann bauen', test: (S) => (m(S).schneemann || 0) >= 1 },
+  { id: 'h_feuer', art: 'haar', wert: '#e2462e', sy: '❤️‍🔥', name: 'Haare „Feuerrot“', hinweis: '7 Pokale im Jugendhaus-Regal', test: (S) => pokale(S) >= 7 },
   // Spur (spur.js): erscheint beim Rennen, Fahren und Rutschen
   { id: 'sp_funken', art: 'spur', wert: 'funken', sy: '✨', name: 'Spur „Funken“', hinweis: '3 Wochenaufgaben schaffen', test: (S) => (m(S).wochenGesamt || 0) >= 3 },
   { id: 'sp_herzen', art: 'spur', wert: 'herzen', sy: '💖', name: 'Spur „Herzen“', hinweis: 'Dein Haustier 10× streicheln', test: (S) => (m(S).tierStreicheln || 0) >= 10 },

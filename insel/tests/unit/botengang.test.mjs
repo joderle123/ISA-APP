@@ -39,7 +39,7 @@ test('Garderobe: eindeutige Teile, jede Art vertreten, Hinweise kurz, Tests lauf
   assert.ok(GARDEROBE.some((g) => g.level), 'Level-Belohnungen fehlen');
   for (const g of GARDEROBE) assert.ok(g.hinweis.split(/\s+/).length <= 12 && g.name && g.sy, g.id);
   assert.deepEqual(freigeschaltet({ merke: {} }), ['k_start'], 'leerer Stand: nur das Start-Geschenk');
-  const voll = { jetonsGesamt: 500, merke: { sticker: new Array(24).fill('x'), boten: { n: 8, best: { a: 1, b: 1, c: 1, d: 1, e: 1, f: 1, g: 1, h: 1 } }, skate5: 'SKATE', skate5Rekord: 30, fotoBingo: new Array(9).fill('x'), tanzRekord: 9000, tanzSterne: 3, kickerSiege: 1, kicker: 5, tanz: 2, dosenRekord: 6, elfmeterRekord: 5, volleyRekord: 12, renn_brett: 50, renn_trotti: 40, enten: 2, billardSiege: 1, kevinRekord: 600, eisMeter: 700, wochenGesamt: 3, wochenVoll: 1, tierStreicheln: 10, lernen: 10, kickerBesiegt: [1, 2, 3], billardBesiegt: [1, 2, 3], hf: { fertig: [1, 2, 3, 4, 5] } }, herz: { a: 4, b: 5, c: 4 } };
+  const voll = { jetonsGesamt: 500, merke: { sticker: new Array(24).fill('x'), boten: { n: 8, best: { a: 1, b: 1, c: 1, d: 1, e: 1, f: 1, g: 1, h: 1 } }, skate5: 'SKATE', skate5Rekord: 30, fotoBingo: new Array(9).fill('x'), tanzRekord: 9000, tanzSterne: 3, kickerSiege: 1, kicker: 5, tanz: 2, dosenRekord: 6, elfmeterRekord: 5, volleyRekord: 12, renn_brett: 50, renn_trotti: 40, enten: 2, billardSiege: 1, kevinRekord: 600, eisMeter: 700, eisSorten: [1, 2, 3, 4, 5, 6], schneemann: 1, laub: 12, wochenGesamt: 3, wochenVoll: 1, tierStreicheln: 10, lernen: 10, kickerBesiegt: [1, 2, 3], billardBesiegt: [1, 2, 3], hf: { fertig: [1, 2, 3, 4, 5, 6, 7] } }, herz: { a: 4, b: 5, c: 4 } };
   assert.equal(freigeschaltet(voll).length, GARDEROBE.length, 'alles erreichbar');
 });
 
@@ -117,4 +117,27 @@ test('Laubhaufen: Blätter fliegen beim Hineinrennen, fallen zurück, Zähler ü
   const hoch = Math.max(...Array.from(l.haufen[0].pos).filter((_, i) => i % 3 === 1)); assert.ok(hoch > 0.6, 'Blätter fliegen hoch: ' + hoch);
   st.tempo = 0; for (let i = 0; i < 60 * 14; i++) l.tick(1 / 60, true);
   assert.deepEqual(Array.from(l.haufen[0].pos), Array.from(l.haufen[0].heim), 'wieder zum Haufen zusammengeweht');
+});
+
+test('Pfützen: hindurchrennen spritzt einmal, langsam gehen nicht', async () => {
+  const THREE = await import('three');
+  const { createPfuetzen, PFUETZEN } = await import('../../src/lycee/pfuetzen.js');
+  const [px, pz] = PFUETZEN[0];
+  const st = { pos: new THREE.Vector3(px, 0, pz - 2), tempo: 0.8, yaw: 0 };
+  let n = 0; const p = createPfuetzen({ scene: new THREE.Scene(), steuerung: st, onPlatsch: () => n++ });
+  for (let i = 0; i < 120; i++) { st.pos.z += 0.8 / 60; p.tick(1 / 60, true); }
+  assert.equal(n, 0, 'langsam: kein Platsch');
+  st.pos.z = pz - 2; st.tempo = 4;
+  for (let i = 0; i < 60; i++) { st.pos.z += 4 / 60; p.tick(1 / 60, true); }
+  assert.equal(n, 1, 'gerannt: einmal Platsch');
+  p.tick(1 / 60, false); assert.ok(!p.liste[0].m.visible, 'außerhalb der Zeit weg');
+});
+
+test('Pokale: zehn, leerer Stand keiner, voller Stand alle', async () => {
+  const { POKALE, pokaleVon } = await import('../../src/lycee/pokale.js');
+  assert.equal(POKALE.length, 10); assert.equal(new Set(POKALE.map((p) => p.id)).size, 10);
+  assert.deepEqual(pokaleVon({ merke: {} }), []);
+  const voll = { merke: { kickerBesiegt: [1, 2, 3], billardBesiegt: [1, 2, 3], kevinRekord: 600, tanzSterne: 3, dosenRekord: 6, elfmeterRekord: 5, skate5: 'SKATE', boten: { best: { a: 1, b: 1, c: 1, d: 1, e: 1, f: 1, g: 1, h: 1 } }, schneemann: 1, eisSorten: [1, 2, 3, 4, 5, 6] } };
+  assert.equal(pokaleVon(voll).length, 10);
+  for (const p of POKALE) assert.ok(p.wie.split(/\s+/).length <= 7, 'kurz: ' + p.wie);
 });

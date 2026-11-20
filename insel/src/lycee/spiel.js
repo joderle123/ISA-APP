@@ -51,6 +51,8 @@ import { GARDEROBE, ARTEN as GD_ARTEN, freigeschaltet, levelVon } from './garder
 import { createSpur } from './spur.js';
 import { createSchneemann } from './schneemann.js';
 import { createLaubhaufen } from './laubhaufen.js';
+import { createPfuetzen } from './pfuetzen.js';
+import { createPokale } from './pokale.js';
 import { createHaustier } from './haustier.js';
 import { herausforderungPruefen } from './herausforderungen.js';
 import { AUFGABEN, aufgabenFuer, aufgabenStand } from './wochenaufgaben.js';
@@ -402,6 +404,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     { modell: 'menschen', stil: 'Casual2', haut: '#a0694a', haar: '#1b1410', oben: '#e9b949', unten: '#2d3748', schuhe: '#2b2b2b', hoehe: 1.76, weg: [[32, 47], [32.2, 70], [32, 82.6], [40, 83], [32, 82.6], [32.2, 70]], tempo: 1.05 },
     { modell: 'frauen', stil: 'Adventurer', haut: '#f1c7a2', haar: '#c9a15a', oben: '#2fb8a8', unten: '#2b2b33', schuhe: '#e85d75', hoehe: 1.66, weg: [[-64, -8], [-63.8, -50], [-64, -88], [-63.8, -50]], tempo: 1.6 },
   );
+  // Sommer (Kapitel 9–10): Tonio am Eiswagen auf dem Marktplatz (Probier-Kugeln, siehe eiswagen in interaktion.js)
+  STATISTEN.push({ modell: 'menschen', stil: 'Casual', haut: '#e0b48c', haar: '#3a2a1c', oben: '#ffffff', unten: '#3a3f4b', schuhe: '#2b2b2b', hoehe: 1.74, kopf: 'cap', kopfFarbe: '#ff7ac8', steht: [48.0, 114.9, 0, 'redet'], sommer: true });
   // Winter (Kapitel 5–6): zwei Jugendliche drehen Runden auf der Eisbahn (Marktplatz) – sonst unsichtbar
   STATISTEN.push(
     { modell: 'frauen', stil: 'Casual', haut: '#e0b48c', haar: '#2b1d14', oben: '#5ec8ff', unten: '#2d3748', schuhe: '#f4f4f0', hoehe: 1.6, kopf: 'muetze', kopfFarbe: '#e0384f', eis: { cx: 48.7, cz: 119.4, rx: 5.4, rz: 3.7, w: 0.42, ph: 0 } },
@@ -450,6 +454,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     return { z, wolken };
   }
   const _wp = new THREE.Vector3();
+  const _weit = new THREE.Vector3(1e5, 0, 1e5);
   // Figuren außerhalb des Bildausschnitts oder weiter als 70 m: nicht zeichnen und nicht animieren (Leistung)
   const _fr = new THREE.Frustum(), _pm = new THREE.Matrix4(), _sp = new THREE.Sphere(new THREE.Vector3(), 1.4);
   function ausschnittNeu() { camera.updateMatrixWorld(); _pm.multiplyMatrices(camera.projectionMatrix, camera.matrixWorldInverse); _fr.setFromProjectionMatrix(_pm); }
@@ -464,7 +469,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     const unterricht = (uhr >= 8.0 && uhr < 9.85) || (uhr >= 10.4 && uhr < 11.95) || (uhr >= 13.6 && uhr < 15.4);
     statisten.forEach((x, n) => {
       const draussen = !welt.raumBei(x.p.x, x.p.z) && x.p.z > 2;
-      const weg = unterricht && draussen && n % 4 !== 0 && !(x.d.steht && x.d.steht[3] === 'raucht') && !x.d.stamm && !x.d.sitPerson;
+      const weg = unterricht && draussen && n % 4 !== 0 && !(x.d.steht && x.d.steht[3] === 'raucht') && !x.d.stamm && !x.d.sitPerson && !x.d.sommer && !x.d.eis;
       if (!!x.weg === weg) return;
       x.weg = weg; x.f.group.visible = !weg; if (x.f.group.children[0]) x.f.group.children[0].visible = !weg;
       x.h.x = weg ? 1e5 : x.p.x; x.h.z = weg ? 1e5 : x.p.z;
@@ -632,6 +637,10 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         const zielYaw = dd < 2.8 && dd > 0.6 ? Math.atan2(sp.x - gp.x, sp.z - gp.z) : x.d.steht[2];
         let dy = zielYaw - x.f.group.rotation.y; dy = Math.atan2(Math.sin(dy), Math.cos(dy));
         x.f.group.rotation.y += dy * Math.min(1, dt * 2.5);
+      }
+      if (x.d.sommer) {   // nur im Sommer da (Eiswagen)
+        if (x.f.group.visible !== sommerAn) { x.f.group.visible = sommerAn; if (x.f.group.children[0]) x.f.group.children[0].visible = sommerAn; x.f.group.position.copy(sommerAn ? x.p : _weit); x.h.x = sommerAn ? x.p.x : 1e5; x.h.z = sommerAn ? x.p.z : 1e5; }
+        if (!sommerAn) continue;
       }
       if (x.d.eis) {   // Eisbahn: Ellipse gegen den Uhrzeigersinn, nur wenn die Bahn steht (Winter)
         const e = x.d.eis, an = eisbahn.visible;
@@ -804,6 +813,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (k) { o.kopf = k.wert; o.kopfFarbe = k.farbe; }
     if (b) { o.brille = b.farbe; o.brilleArt = b.wert; }
     if (ob) o.oben = ob.wert;
+    { const ha = gdDing(an.haar); if (ha) o.haar = ha.wert; }
     if (sc) o.schuhe = sc.wert;
     return o;
   }
@@ -821,6 +831,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   let gdUhr = 0;
   // „Gleich anziehen“ auf der Belohnungs-Karte: Teil sofort an; Figur wird neu gebaut, sobald man frei unterwegs ist
   let gdUmbau = false;
+  let pokalUhr = 2;
   function gleichAnziehen(id) {
     const d = gdDing(id); if (!d || !S) return;
     const G = gd(); G.an[d.art] = id; G.neu = G.neu.filter((x) => x !== id);
@@ -900,7 +911,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     try {
       const st = levelVon(S.jetonsGesamt || 0), preis = GARDEROBE.find((g) => g.level === st.level + 1);
       const woche = aufgabenStand(S, wochenaufgaben());
-      await ui.garderobe({ arten: GD_ARTEN, liste: liste(), woche, stufe: { ...st, preis: preis ? preis.sy + ' ' + preis.name : null }, wahl: async (id) => {
+      await ui.garderobe({ arten: GD_ARTEN, liste: liste(), woche, stufe: { ...st, preis: preis ? preis.sy + ' ' + preis.name : null, pokale: pokale.anzahl }, wahl: async (id) => {
         const d = gdDing(id); if (!d || !hab.has(id)) return liste();
         G.an[d.art] = G.an[d.art] === id ? null : id; G.neu = G.neu.filter((x) => x !== id);
         if (d.art === 'tier') tierDran();
@@ -912,6 +923,31 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     } finally { document.removeEventListener('keydown', drehTaste, true); input.setEnabled(true); steuerung.kameraAus = false; steuerung.frei = true; steuerung.kamera(0.016, true); }
     G.neu = []; sichern(); if (ui.garderobeNeu) ui.garderobeNeu(0);
     if (umziehen) await umbau();
+  };
+  // „Mein Jahr“ (☰ → Mein Jahr): Rückblick aus dem Spielstand – Level, Pokale, Freundschaft, Lieblingsspiel, Eis, Haustier …
+  ui.onMeinJahr = async () => {
+    if (!S || !laeuft || imGespraech) return;
+    const M = S.merke || {}, st = levelVon(S.jetonsGesamt || 0), kap = (SCHRITTE[S.schritt] || {}).kap || 1;
+    const herzen = Object.entries(S.herz || {}).sort((a, b) => b[1] - a[1]), best = herzen[0] && herzen[0][1] > 0 ? (LEUTE[herzen[0][0]] || {}).name : null;
+    const SPIELE = [['Tischkicker', M.kicker], ['Billard', M.billard], ['Tanzfläche', M.tanz], ['Dosenwerfen', M.dosenSpiele], ['Kevin rennt', M.kevin], ['Elfmeter', M.elfmeterSpiele], ['Volleyball', M.volleySpiele]].filter((x) => (x[1] || 0) > 0).sort((a, b) => b[1] - a[1]);
+    const tier = S.garderobe && gdDing(S.garderobe.an.tier), sorten = M.eisSorten || [];
+    const SORTE = { erdbeere: 'Erdbeere', schoko: 'Schoko', pistazie: 'Pistazie', zitrone: 'Zitrone', vanille: 'Vanille', ueberraschung: 'Gurke-Minze' };
+    const karten = [
+      { sy: '⭐', titel: 'Dorf-Level', wert: 'Level ' + st.level, text: (S.jetonsGesamt || 0) + ' Jetons verdient', farbe: '#e0a12e' },
+      { sy: '🏆', titel: 'Pokale', wert: pokale.anzahl + ' von 10', text: pokale.anzahl ? 'Sie stehen im Jugendhaus.' : 'Das Regal wartet.', farbe: '#c58a1d' },
+      { sy: '📚', titel: 'Gelernt', wert: (M.lernen || 0) + '×', text: 'Arbeitsblätter und Lektionen', farbe: '#2f6db0' },
+      { sy: '💛', titel: 'Freundschaft', wert: best || 'kommt noch', text: best ? 'Mit dieser Person die meisten Herzen' : 'Rede mit den Leuten in der Pause.', farbe: '#e85d75' },
+      { sy: '🎮', titel: 'Lieblingsspiel', wert: SPIELE[0] ? SPIELE[0][0] : 'noch keins', text: SPIELE[0] ? SPIELE[0][1] + '× gespielt' : 'Im Jugendhaus gibt es viel.', farbe: '#7a4fd0' },
+      { sy: '👕', titel: 'Garderobe', wert: freigeschaltet(S).length + ' von ' + GARDEROBE.length, text: 'Teile freigeschaltet', farbe: '#2fb8a8' },
+      { sy: '🐾', titel: 'Haustier', wert: tier ? tier.name.replace(/^[^„]*„|“$/g, '') : 'noch keins', text: tier ? (M.tierStreicheln || 0) + '× gestreichelt' : 'In der Garderobe (G).', farbe: '#8a6a4a' },
+      { sy: '🍦', titel: 'Eis', wert: sorten.length ? SORTE[sorten[sorten.length - 1]] || 'probiert' : 'noch keins', text: sorten.length + ' von 6 Sorten bei Tonio', farbe: '#ff7ac8' },
+      { sy: '⭐', titel: 'Sticker', wert: (M.sticker || []).length + ' von 24', text: 'im Dorf gefunden', farbe: '#d6452f' },
+      { sy: '📌', titel: 'Botengänge', wert: String((M.boten && M.boten.n) || 0), text: 'für Leute im Dorf erledigt', farbe: '#3a8a5a' },
+      { sy: '⛄', titel: 'Winter', wert: M.schneemann ? 'Schneemann gebaut' : (M.eisMeter ? Math.round(M.eisMeter) + ' m Eis' : '–'), text: M.eisMeter ? Math.round(M.eisMeter) + ' m auf der Eisbahn' : 'Dezember bis Februar', farbe: '#5ec8ff' },
+    ];
+    input.setEnabled(false); steuerung.frei = false;
+    try { await ui.meinJahr({ titel: kap >= 10 && S.fertig ? 'Dein Jahr in der Annexe' : 'Dein Jahr bis jetzt', unter: '📒 Mein Jahr · Kapitel ' + kap + ' von 10', karten }); }
+    finally { input.setEnabled(true); steuerung.frei = true; }
   };
   // Anhänger (Lila Bär) an der Hüfte der Spielfigur
   function anhaengerDran() {
@@ -2042,6 +2078,11 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     stammMarken.push({ x: hund.pos.x, z: hund.pos.z, t: '🐕' + (S.merke.hundFreund ? ' Bonbon' : '') });
     // Freizeit-Orte im Dorf (Auftrag 20.11.: größer, spaßiger) – fest, damit man sie findet
     for (const [x, z, t] of [[92, 77.6, '🔥 Skatepark'], [19, 119, '🎧 Jugendhaus'], [60, 119, '🧺 Markt'], [-55, 105, '🦆 Park am Weiher'], [96, 119, '🚧 Baustelle'], [-8.4, 54.6, '📌 Hilfe gesucht']]) stammMarken.push({ x, z, t });
+    // Jahreszeiten-Orte: nur wenn gerade da
+    if (eisbahn.visible) { stammMarken.push({ x: 48.7, z: 119.4, t: '⛸️ Eisbahn' }); if (!schneemann.fertig) stammMarken.push({ x: 12.4, z: 20.6, t: '⛄ Schneemann' }); }
+    if (laubAn) stammMarken.push({ x: -14.5, z: 5.4, t: '🍂 Laubhaufen' });
+    if (fruehlingAn) stammMarken.push({ x: -2, z: 14.6, t: '💦 Pfützen' });
+    if (sommerAn) stammMarken.push({ x: 48, z: 117.2, t: '🍦 Eiswagen' });
     if (botengang.aktiv()) { const l = botengang.lauf, z = l.phase === 'holen' ? l.b.von : l.b.nach; stammMarken.push({ x: z.x, z: z.z, t: (l.phase === 'holen' ? '📦 ' : l.b.ding.split(' ')[0] + ' ') + z.ort }); }
     // Situationen, von denen eine Nachricht kam und die noch offen sind: Markierung wie ein Auftrag (ohne zu verraten, was passiert)
     if (risikoAn()) { const sid = (SCHRITTE[S.schritt] || {}).id;
@@ -2663,6 +2704,15 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   // ---------- Billard im Jugendhaus (billard.js) ----------
   const billard = createBillard({ scene, camera, steuerung, ui, rr, ton, vib, canvas: rr.renderer.domElement, holeFigur: async (id) => (id ? holeSpielFigur(id) : null) });
   // ---------- Rekord-Tafel im Jugendhaus (Westwand): eigene Rekorde neben denen der Clique – wird aktualisiert ----------
+  // Pokal-Regal an der Westwand des Jugendhauses (pokale.js): neue Pokale = Meldung, sonst nur Anzeige
+  const pokale = createPokale({ scene });
+  let pokaleBereit = false;
+  function pokaleTick() {
+    if (!S || !S.merke) return;
+    const neu = pokale.aktualisiere(S);
+    if (!pokaleBereit) { pokaleBereit = true; return; }   // beim ersten Mal nur aufbauen, keine Meldungen für Altes
+    for (const p of neu) ui.toast('<b>🏆 Neuer Pokal: ' + p.name + '</b><span>Er steht jetzt im Jugendhaus im Regal.</span>', 'ly-t-ent');
+  }
   const rekordTafel = (() => {
     const cv = document.createElement('canvas'); cv.width = 512; cv.height = 384; const g = cv.getContext('2d');
     const tex = new THREE.CanvasTexture(cv); tex.colorSpace = THREE.SRGBColorSpace;
@@ -2694,7 +2744,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   const ia = createInteraktionen({ welt, steuerung, ui, zustand: () => S, sichern: () => sichern(), ton, blattWahl, spindAuf: () => spindAuf(), onKabel: (id) => tiere.kabelWeg(id),
     freiwurf: async (o) => ui.freiwurf(o), skate: () => skaten(), pausenFussball: () => pausenFussball(), elfmeter: async (o) => { if (fahrt) absteigen(); return elfmeter.spiel(o); }, elfmeterAktiv: () => elfmeter.aktiv(), volley: async (o) => { if (fahrt) absteigen(); return volley.spiel(o); }, volleyAktiv: () => volley.aktiv(),
     botengang,
-    dosen: async (o) => { if (fahrt) absteigen(); return dosen.spiel(o); }, dosenAktiv: () => dosen.aktiv(), schneemann, winter: () => eisbahn.visible, farbeOben: () => garderobeLook().oben || (S && S.aussehen && S.aussehen.oben) || ((FIGUREN[S ? S.figur : 0] || FIGUREN[0]) || {}).oben || null,
+    dosen: async (o) => { if (fahrt) absteigen(); return dosen.spiel(o); }, dosenAktiv: () => dosen.aktiv(), schneemann, winter: () => eisbahn.visible, sommer: () => sommerAn, eiswagen: () => eiswagenBesuch(), farbeOben: () => garderobeLook().oben || (S && S.aussehen && S.aussehen.oben) || ((FIGUREN[S ? S.figur : 0] || FIGUREN[0]) || {}).oben || null,
     tanzen: async () => {
       if (fahrt) absteigen(); ui.hinweis(null); input.setEnabled(false); kickerAn = true;
       steuerung.teleport(TANZ.x, TANZ.z, Math.PI / 2); steuerung.frei = false;
@@ -2731,6 +2781,45 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     sichern();
   }
   // Bonbon besuchen: beim ersten Mal (und bis es klappt) die Wahl „Hand hinhalten“ oder „einfach streicheln“
+  // Eiswagen (Sommer): Tonio gibt Probier-Kugeln – Sorte wählen, kurzer Satz, Eistüte 40 s in der Hand. Kein Geld im Spiel.
+  const EIS_SORTEN = [
+    ['erdbeere', '🍓 Erdbeere', '#ff8fb0', 'Erdbeere. Der Klassiker. Mit extra Liebe.'],
+    ['schoko', '🍫 Schoko', '#7a4a2a', 'Schoko geht immer. Sagt die Wissenschaft. Glaube ich.'],
+    ['pistazie', '🟢 Pistazie', '#9ed36a', 'Pistazie! Du hast Geschmack.'],
+    ['zitrone', '🍋 Zitrone', '#fff27a', 'Zitrone. Sauer macht lustig, sagt meine Oma.'],
+    ['vanille', '🤍 Vanille', '#f4efe6', 'Vanille ist nicht langweilig. Vanille ist mutig.'],
+    ['ueberraschung', '🎲 Überraschung', '#c58cff', 'Gurke-Minze. Lou gab zwei Sterne. Von fünf.'],
+  ];
+  let tuete = null, tueteBis = 0;
+  function eistuete(farbe) {
+    if (tuete && tuete.parent) tuete.parent.remove(tuete); tuete = null;
+    if (!spieler) return;
+    let hand = null; spieler.group.traverse((o) => { if (o.isBone && o.name.replace(/\./g, '') === 'WristR') hand = o; });
+    if (!hand) return;
+    const g = new THREE.Group();
+    const w = new THREE.Mesh(new THREE.ConeGeometry(0.035, 0.13, 10), new THREE.MeshLambertMaterial({ color: '#d9a35b' })); w.rotation.x = Math.PI; g.add(w);
+    const k = new THREE.Mesh(new THREE.SphereGeometry(0.042, 12, 10), new THREE.MeshLambertMaterial({ color: farbe })); k.position.y = 0.075; g.add(k);
+    g.position.set(0.02, 0.1, 0.04); g.rotation.z = Math.PI;   // die Hand hängt: lokales „oben“ zeigt nach unten – also umdrehen, Kugel oben
+    hand.updateMatrixWorld(true); const sk = new THREE.Vector3(); hand.getWorldScale(sk); g.scale.setScalar(1 / (sk.x || 1));
+    hand.add(g); tuete = g; tueteBis = performance.now() + 40000;
+  }
+  async function eiswagenBesuch() {
+    if (imGespraech) return;
+    imGespraech = true; input.setEnabled(false); steuerung.frei = false; ui.hinweis(null);
+    const tonio = (t) => ui.sprich({ wer: 'Tonio vom Eiswagen', farbe: '#d6457f', text: t });
+    try {
+      const M = S.merke, n = M.eisBesuche = (M.eisBesuche || 0) + 1;
+      await tonio(n === 1 ? 'Ciao! Heute ist Probier-Tag: eine Kugel gratis. Welche?' : 'Du schon wieder! Sehr gut. Welche Sorte heute?');
+      const i = await ui.waehle(EIS_SORTEN.map((x) => x[1]), 'Probier-Kugel', { fest: true }), [id, name, farbe, satz] = EIS_SORTEN[i] || EIS_SORTEN[0];
+      await tonio(satz);
+      const sorten = M.eisSorten = M.eisSorten || []; const neu = !sorten.includes(id); if (neu) sorten.push(id);
+      eistuete(farbe); ton('pling');
+      if (sorten.length === EIS_SORTEN.length && neu) ui.toast('<b>🍦 Alle sechs Sorten probiert!</b><span>Tonio: „Du bist jetzt offiziell Eis-Expert:in.“</span>', 'ly-t-ent');
+      else ui.toast('<b>🍦 ' + name + '</b><span>' + sorten.length + ' von ' + EIS_SORTEN.length + ' Sorten probiert</span>');
+    } finally {
+      ui.dialogZu(); imGespraech = false; input.setEnabled(true); steuerung.frei = true; sperreBis = performance.now() + 600; sichern();
+    }
+  }
   async function hundBesuch() {
     if (imGespraech) return;
     imGespraech = true; input.setEnabled(false); steuerung.frei = false; ui.hinweis(null); steuerung.fokus = hund.pos;
@@ -2862,6 +2951,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     setTimeout(() => missionTank(i.tu), 0);
     if (i.tu === 'sitzen') { await ia.tu(i); sperreBis = performance.now() + 350; return; }
     if (i.tu === 'hund') { await hundBesuch(); return; }
+    if (i.tu === 'eiswagen') { await eiswagenBesuch(); return; }
     if (i.tu === 'tier') {   // eigenes Haustier: freut sich, kleiner Satz
       const t = gdDing(S.garderobe.an.tier), name = t ? t.name.split('„')[1].replace('“', '') : 'Dein Tier';
       const SATZ = { ratte: ['putzt sich die Schnurrhaare.', 'schnuppert an deiner Hand.', 'macht einen Freudensprung.'], frettchen: ['hüpft seitlich. Das heißt: Spielen!', 'macht leise „dook dook“.', 'rollt sich einmal um.'], igel: ['schnauft zufrieden.', 'zeigt die Nase. Mutig.', 'rollt sich halb ein. Und wieder auf.'], hamster: ['stopft die Backen voll. Womit?', 'putzt sich das Gesicht.', 'schaut dich mit Knopfaugen an.'], schildkroete: ['streckt langsam den Kopf raus.', 'blinzelt. Sehr langsam.', 'macht einen Schritt. Rekord!'] };
@@ -2916,6 +3006,13 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   const laub = createLaubhaufen({ scene, steuerung, tex: TEX_BLATT, ton: (a) => ton(a), onSprung: () => {
     if (!S || !S.merke) return; S.merke.laub = (S.merke.laub || 0) + 1; vib(12);
     if (!S.merke.laubTipp) { S.merke.laubTipp = 1; sichern(); ui.toast('<b>🍂 Raschel!</b><span>Die Blätter wehen gleich wieder zusammen. Nochmal?</span>', 'ly-t-ent'); }
+  } });
+  // Frühling (Kapitel 7–8) und Regentage: Pfützen auf dem Hof – hindurchrennen = platsch (pfuetzen.js)
+  let fruehlingAn = false;
+  let sommerAn = false;   // Kapitel 9–10: Eiswagen
+  const pfuetzen = createPfuetzen({ scene, steuerung, tex: TEX_RUND, ton: (a) => ton(a), onPlatsch: () => {
+    if (!S || !S.merke) return; S.merke.pfuetzen = (S.merke.pfuetzen || 0) + 1; vib(15);
+    if (!S.merke.pfuetzenTipp) { S.merke.pfuetzenTipp = 1; sichern(); ui.toast('<b>💦 Platsch!</b><span>Nasse Schuhe gibt es im Spiel nicht. Nochmal!</span>', 'ly-t-ent'); }
   } });
   const staubMat = new THREE.PointsMaterial({ size: 0.03, map: TEX_RUND, color: 0xfff1d0, transparent: true, opacity: 0, depthWrite: false, blending: THREE.AdditiveBlending, toneMapped: false });
   const staub = new THREE.Points(staubGeo, staubMat); staub.frustumCulled = false; staub.visible = false; scene.add(staub);
@@ -2978,15 +3075,35 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     const pfosten = new THREE.MeshLambertMaterial({ color: '#2b2f3a' });
     for (const z of [EIS.tor0, EIS.tor1]) { const p = new THREE.Mesh(new THREE.CylinderGeometry(0.05, 0.05, 2.65, 8), pfosten); p.position.set(EIS.x0 - 0.04, 1.32, z); eisbahn.add(p); }
     // Lichterkette an der langen Seite (bunte Kugeln, leuchten auch am Abend)
-    const farben = ['#ffd166', '#ff7ac8', '#7CFC9A', '#5ec8ff'], kugelG = new THREE.SphereGeometry(0.06, 8, 6);
+    // Lichterkette als eine Punktwolke (ein Zeichenaufruf statt 62 Kugeln)
+    const farben = ['#ffd166', '#ff7ac8', '#7CFC9A', '#5ec8ff'], lp = [], lc = [], c = new THREE.Color();
     for (const z of [EIS.z0 - 0.04, EIS.z1 + 0.04]) for (let i = 0; i <= 30; i++) {
-      const x = EIS.x0 + (i / 30) * (EIS.x1 - EIS.x0), l = new THREE.Mesh(kugelG, new THREE.MeshBasicMaterial({ color: farben[i % 4], toneMapped: false }));
-      l.position.set(x, 2.1 - Math.sin((i / 30) * Math.PI * 3) ** 2 * 0.3, z); eisbahn.add(l);
+      lp.push(EIS.x0 + (i / 30) * (EIS.x1 - EIS.x0), 2.1 - Math.sin((i / 30) * Math.PI * 3) ** 2 * 0.3, z); c.set(farben[i % 4]); lc.push(c.r, c.g, c.b);
     }
+    const lg = new THREE.BufferGeometry(); lg.setAttribute('position', new THREE.Float32BufferAttribute(lp, 3)); lg.setAttribute('color', new THREE.Float32BufferAttribute(lc, 3));
+    eisbahn.add(new THREE.Points(lg, new THREE.PointsMaterial({ size: 0.16, map: TEX_RUND, vertexColors: true, transparent: true, depthWrite: false, toneMapped: false })));
     for (const x of [EIS.x0, (EIS.x0 + EIS.x1) / 2, EIS.x1]) for (const z of [EIS.z0 - 0.04, EIS.z1 + 0.04]) { const p = new THREE.Mesh(new THREE.CylinderGeometry(0.04, 0.04, 2.2, 6), pfosten); p.position.set(x, 1.1, z); eisbahn.add(p); }
   }
   steuerung.glatt = (x, z) => eisbahn.visible && x > EIS.x0 && x < EIS.x1 && z > EIS.z0 && z < EIS.z1;
+  // Sommer (Kapitel 9–10): Eiswagen auf dem Marktplatz – weiß-rosa Wagen, Sonnenschirm, Schild, Eisbehälter unter Glas
+  const eiswagen = new THREE.Group(); eiswagen.name = 'eiswagen'; eiswagen.visible = false; eiswagen.position.set(48, 0, 116.0); scene.add(eiswagen);
+  {
+    const weiss = new THREE.MeshLambertMaterial({ color: '#fbf7f0' }), rosa = new THREE.MeshLambertMaterial({ color: '#ff8fc0' }), dunkel = new THREE.MeshLambertMaterial({ color: '#2b2f3a' });
+    const kiste = new THREE.Mesh(new THREE.BoxGeometry(1.7, 0.85, 0.85), weiss); kiste.position.y = 0.62; kiste.castShadow = true; eiswagen.add(kiste);
+    for (let i = 0; i < 5; i++) { const st = new THREE.Mesh(new THREE.BoxGeometry(0.17, 0.85, 0.86), rosa); st.position.set(-0.68 + i * 0.34, 0.62, 0); eiswagen.add(st); }
+    const glas = new THREE.Mesh(new THREE.BoxGeometry(1.5, 0.18, 0.6), new THREE.MeshStandardMaterial({ color: '#cfefff', transparent: true, opacity: 0.45, roughness: 0.05 })); glas.position.y = 1.13; eiswagen.add(glas);
+    ['#ff8fb0', '#7a4a2a', '#9ed36a', '#fff27a', '#f4efe6', '#c58cff'].forEach((c, i) => { const k = new THREE.Mesh(new THREE.SphereGeometry(0.1, 10, 8), new THREE.MeshLambertMaterial({ color: c })); k.scale.y = 0.6; k.position.set(-0.6 + i * 0.24, 1.08, 0); eiswagen.add(k); });
+    for (const x of [-0.6, 0.6]) { const r = new THREE.Mesh(new THREE.CylinderGeometry(0.2, 0.2, 0.08, 16), dunkel); r.rotation.x = Math.PI / 2; r.position.set(x, 0.2, 0.44); eiswagen.add(r); }
+    const stange = new THREE.Mesh(new THREE.CylinderGeometry(0.03, 0.03, 2.4, 8), dunkel); stange.position.set(0.7, 1.2, -0.3); eiswagen.add(stange);
+    const schirm = new THREE.Mesh(new THREE.ConeGeometry(1.2, 0.45, 12, 1, true), new THREE.MeshLambertMaterial({ color: '#ffd166', side: THREE.DoubleSide })); schirm.position.set(0.7, 2.45, -0.3); eiswagen.add(schirm);
+    const cv = document.createElement('canvas'); cv.width = 512; cv.height = 128; const g = cv.getContext('2d');
+    g.fillStyle = '#ff8fc0'; g.fillRect(0, 0, 512, 128); g.fillStyle = '#fff'; g.font = 'bold 60px system-ui, sans-serif'; g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillText('🍦 GLACE · EIS', 256, 66);
+    const t = new THREE.CanvasTexture(cv); t.colorSpace = THREE.SRGBColorSpace;
+    const sch = new THREE.Mesh(new THREE.PlaneGeometry(1.5, 0.37), new THREE.MeshBasicMaterial({ map: t, toneMapped: false })); sch.position.set(0, 0.62, 0.432); eiswagen.add(sch);
+  }
+  const eiswagenBox = { x0: 47.1, x1: 48.9, z0: 115.55, z1: 116.45, y0: 0, y1: 1.2 };
   const eisbahnZeigen = (an) => { eisbahn.visible = an; steuerung.extraBoxen = an ? eisBande : []; };
+  const extraNeu = () => { steuerung.extraBoxen = [...(eisbahn.visible ? eisBande : []), ...(sommerAn ? [eiswagenBox] : [])]; };
   // Annexe News an der Pinnwand: jede Woche eine neue Ausgabe; Zoés Umfrage-Ergebnis mit deiner Antwort
   const KURZ_NOTIERT = { 1: 'Die Hallenuhr geht drei Minuten nach. Fernand arbeitet dran. Seit 1998.', 2: 'Coding-Club sucht Testpersonen. Informatik, mittwochs 13 Uhr.',
     3: 'Nach dem Sportfest fehlen zwei orange Hütchen. Hinweise an Fernand.', 4: 'Bonbon hat Geburtstag. Leckerli nur über die SePAS!', 5: 'Bandprobe: Noor und Gilles suchen immer noch einen Bass.',
@@ -3044,7 +3161,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   }
   function saisonTick(dt) {
     const kap = (S && SCHRITTE[S.schritt] && SCHRITTE[S.schritt].kap) || 1;
-    if (kap !== dekoKap && req.saison) { dekoKap = kap; eisbahnZeigen((DEKO_KAP.winter || []).includes(kap)); laubAn = (DEKO_KAP.herbst || []).includes(kap); if (S && S.merke && S.merke.schneemannBau) schneemann.wiederherstellen(S.merke.schneemannBau); for (const [k, m] of Object.entries(req.saison)) m.visible = (DEKO_KAP[k] || []).includes(kap); try { zeitungNeu(kap); } catch (e) { /* Zeitung */ } }
+    if (kap !== dekoKap && req.saison) { dekoKap = kap; eisbahnZeigen((DEKO_KAP.winter || []).includes(kap)); laubAn = (DEKO_KAP.herbst || []).includes(kap); fruehlingAn = (DEKO_KAP.fruehling || []).includes(kap); sommerAn = (DEKO_KAP.sommer || []).includes(kap); eiswagen.visible = sommerAn; extraNeu(); if (S && S.merke && S.merke.schneemannBau) schneemann.wiederherstellen(S.merke.schneemannBau); for (const [k, m] of Object.entries(req.saison)) m.visible = (DEKO_KAP[k] || []).includes(kap); try { zeitungNeu(kap); } catch (e) { /* Zeitung */ } }
     const art = kap <= 4 ? 'laub' : kap <= 6 ? 'schnee' : kap <= 8 ? 'blueten' : null, A = art && SAISON[art];
     const draussen = !welt.raumBei(steuerung.pos.x, steuerung.pos.z);
     const ziel = laeuft && A && draussen && !(sky.night > 0.5) && regenJetzt < 0.1 ? 0.9 : 0;
@@ -3198,8 +3315,11 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     haustier.tick(dt, !!(laeuft && S && spieler && spieler.group.visible));
     schneemann.tick(dt, eisbahn.visible);
     laub.tick(dt, laubAn);
+    pfuetzen.tick(dt, fruehlingAn || regenJetzt > 0.3);
+    if (tuete && performance.now() > tueteBis) { if (tuete.parent) tuete.parent.remove(tuete); tuete = null; }
     spur.tick(dt, !!(laeuft && S && spieler && spieler.group.visible && !imGespraech && !steuerung.kameraAus));
     if (laeuft) { garderobePruefen(dt); herausforderungTick(dt); wochenaufgabenTick(dt); }
+    if (laeuft && S && (pokalUhr -= dt) <= 0) { pokalUhr = 3; pokaleTick(); }
     if (laeuft && S && S.merke && steuerung.eis && !imGespraech) {   // Eisbahn: Meter zählen (Wochenaufgabe, Wollmütze), beim ersten Mal ein Tipp
       S.merke.eisMeter = (S.merke.eisMeter || 0) + steuerung.tempo * dt;
       if (!S.merke.eisTipp) { S.merke.eisTipp = 1; sichern(); ui.toast('<b>⛸️ Eisbahn!</b><span>Du rutschst mit Schwung. Lenken und Bremsen dauern länger.</span>', 'ly-t-ent'); }
@@ -3421,7 +3541,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     teleport: (ort, yaw) => { const o = typeof ort === 'string' ? welt.orte[ort] : ort; steuerung.teleport(o.x, o.z, yaw !== undefined ? yaw : o.yaw); },
     rede, los, audio, SITZ, input, get spruch() { return { wer: !!spruchWer }; }, get naechste() { return naechste && naechste.id; },
     get probe() { return probe; }, set mutTempo(v) { mutTempo = v; },
-    daten: { SCHRITTE, STATISTEN, LEUTE, BLAETTER, MATHE, LEKTIONEN, GESPRAECHE }, ia, aktion, botengang, buchstaben, dosen, haustier, spur, schneemann, laub, gdPruefen: (dt = 5) => garderobePruefen(dt), kicker3d, billard, garderobe: () => S && S.garderobe, get iaNah() { return iaNah && iaNah.tu; },
+    daten: { SCHRITTE, STATISTEN, LEUTE, BLAETTER, MATHE, LEKTIONEN, GESPRAECHE }, ia, aktion, botengang, buchstaben, dosen, haustier, spur, schneemann, laub, pfuetzen, pokale, gdPruefen: (dt = 5) => garderobePruefen(dt), kicker3d, billard, garderobe: () => S && S.garderobe, get iaNah() { return iaNah && iaNah.tu; },
     hs, tt3d, zufall, fussball, volley, verkehr, elfmeter, sticker, fahrer, get fahrt() { return fahrt; }, get spieler() { return spieler; }, vorspann: (k) => vorspann(SCHRITTE.find((x) => (x.kap || 1) === k) || SCHRITTE[0]), gesteZu, handschlagMit, get statisten() { return statisten; }, musik,
   };
 

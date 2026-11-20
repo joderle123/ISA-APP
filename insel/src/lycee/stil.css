@@ -1141,3 +1141,12 @@ kbd { display: inline-block; min-width: 1.5em; padding: 0 .35em; margin-right: .
 .ly-schnee-hud { position: fixed; left: 50%; top: max(70px, env(safe-area-inset-top)); transform: translateX(-50%); z-index: 20; max-width: min(420px, 90vw); padding: 10px 16px; border-radius: 16px; background: rgba(255, 255, 255, .94); box-shadow: 0 6px 20px rgba(0, 0, 0, .18); font: 600 14px system-ui, sans-serif; color: #2b3a55; text-align: center; pointer-events: none; }
 .ly-schnee-hud b { display: block; color: #2f6db0; font-size: 15px; }
 .ly-schnee-hud kbd { font: 700 12px system-ui; padding: 1px 6px; border-radius: 6px; background: #eef2f7; border: 1px solid #c9d2de; }
+/* „Mein Jahr“-Rückblick */
+.ly-jahr { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; max-height: min(58vh, 520px); overflow-y: auto; padding: 2px; margin: 6px 0 4px; }
+.ly-jahr-k { display: flex; flex-direction: column; gap: 2px; padding: 12px; border-radius: 16px; color: #fff; background: linear-gradient(150deg, var(--f), color-mix(in srgb, var(--f) 55%, #1b1f2e)); box-shadow: 0 4px 14px rgba(0, 0, 0, .15); animation: ly-jahr-rein .45s ease-out both; }
+.ly-jahr-sy { font-size: 30px; line-height: 1.1; }
+.ly-jahr-k small { font-size: 12px; letter-spacing: .05em; text-transform: uppercase; opacity: .9; font-weight: 800; }
+.ly-jahr-k b { font-size: 20px; line-height: 1.15; }
+.ly-jahr-k i { font-style: normal; font-size: 13px; opacity: .92; line-height: 1.3; }
+@keyframes ly-jahr-rein { from { transform: translateY(12px) scale(.96); opacity: 0; } to { transform: none; opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .ly-jahr-k { animation: none; } }

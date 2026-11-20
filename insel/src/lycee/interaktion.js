@@ -48,7 +48,7 @@ const ROBOTER = [
 ];
 
 export const KABEL = [['cdi', 14, -62.4], ['kantine', 18.6, -8.2], ['gang', -15.5, -15.8], ['innenhof', -17.2, -44.9], ['skate', -36.4, 6.4]];
-export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton, blattWahl, freiwurf, skate, pausenFussball = null, volley = null, volleyAktiv = () => false, elfmeter = null, elfmeterAktiv = () => false, tt3d = null, kicker = null, billard = null, arcade = null, tanzen = null, dosen = null, dosenAktiv = () => false, schneemann = null, winter = () => false, farbeOben = () => null, botengang = null, spindAuf = null, partner = () => null, bekannte = () => [], freund = () => {}, onKabel = null }) {
+export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton, blattWahl, freiwurf, skate, pausenFussball = null, volley = null, volleyAktiv = () => false, elfmeter = null, elfmeterAktiv = () => false, tt3d = null, kicker = null, billard = null, arcade = null, tanzen = null, dosen = null, dosenAktiv = () => false, schneemann = null, winter = () => false, farbeOben = () => null, sommer = () => false, eiswagen = null, botengang = null, spindAuf = null, partner = () => null, bekannte = () => [], freund = () => {}, onKabel = null }) {
   const tt = welt.orte.tischtennis;
   const liste = [];
   let botenFrage = 0;   // Botengang: zweimal drücken = abbrechen
@@ -94,6 +94,8 @@ export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton
   if (tanzen) dazu(23.4, 123.4, 1.5, 'Tanzfläche: im Takt tanzen', 'tanzen', { prio: 1 });
   if (dosen) dazu(70, 117.4, 1.4, 'Dosenwerfen (3 Bälle)', 'dosen', { prio: 1 });   // Marktplatz
   for (const [x, z] of [[-55, 97.0], [-55, 113.0], [-65, 105]]) dazu(x, z, 1.6, 'Enten beobachten', 'enten', { prio: 0 });
+  // Sommer: Eiswagen auf dem Marktplatz (Tonio, Probier-Kugeln)
+  if (eiswagen) dazu(48, 117.2, 1.6, 'Eis probieren', 'eiswagen', { prio: 1, wenn: () => sommer() });
   // Winter: Schneemann auf dem Schulhof (schneemann.js) – starten am Stock, beim Bauen dort absetzen
   if (schneemann) {
     dazu(12.4, 20.6, 1.9, 'Schneemann bauen', 'schneemann', { prio: 1, wenn: () => winter() && !schneemann.fertig && !schneemann.aktiv() });
@@ -277,6 +279,7 @@ export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton
         return;
       }
       case 'schneeSetzen': schneemann.absetzen(); return;
+      case 'eiswagen': await eiswagen(); return;
       case 'dosen': {   // Marktplatz: sechs Dosen, drei Bälle; alle sechs = Stoffente (einmal) und Rekord
         if (dosenAktiv()) return;
         const r = await dosen({ rekord: s.merke.dosenRekord || 0 });

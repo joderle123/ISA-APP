@@ -8,7 +8,7 @@ function kugel(r, mat, x, y, z, sx = 1, sy = 1, sz = 1) { const k = new THREE.Me
 // Baut das Tier mit Blick nach +z. Gibt { g, kopf, schwanz, hoehe } zurück.
 export function baueTier(art, farbe = '#9a9a9e') {
   const g = new THREE.Group(), fell = L(farbe), rosa = L('#f2a7b5'), schwarz = L('#1b1b1f'), weiss = L('#f4f1ea');
-  const kopf = new THREE.Group(); let schwanz = null, hoehe = 0.12;
+  const kopf = new THREE.Group(); let schwanz = null, hoehe = 0.12; const fluegel = [];
   const augen = (y, z, ab = 0.028, r = 0.011) => { for (const sx of [-1, 1]) kopf.add(kugel(r, schwarz, sx * ab, y, z)); };
   if (art === 'ratte') {
     g.add(kugel(0.07, fell, 0, 0.065, 0, 1, 0.85, 1.6));
@@ -39,20 +39,21 @@ export function baueTier(art, farbe = '#9a9a9e') {
     g.add(kugel(0.045, fell, 0, 0.075, 0, 0.9, 1.0, 1.3)); g.add(kugel(0.03, L('#ffe066'), 0, 0.06, 0.03, 0.9, 0.9, 0.8));
     kopf.position.set(0, 0.125, 0.035); kopf.add(kugel(0.032, L('#ffe066'), 0, 0, 0)); const sn = new THREE.Mesh(new THREE.ConeGeometry(0.009, 0.02, 6), L('#e9a23b')); sn.rotation.x = Math.PI / 2 + 0.4; sn.position.set(0, -0.006, 0.033); kopf.add(sn); augen(0.008, 0.022, 0.018, 0.006);
     schwanz = new THREE.Mesh(new THREE.BoxGeometry(0.02, 0.006, 0.09), L('#2f6fd0')); schwanz.position.set(0, 0.07, -0.08); schwanz.rotation.x = -0.4; hoehe = 0.16;
-    for (const sx of [-1, 1]) { const f = kugel(0.022, fell, sx * 0.04, 0.08, -0.005, 0.4, 0.9, 1.4); g.add(f); }
+    for (const sx of [-1, 1]) { const f = kugel(0.022, fell, sx * 0.04, 0.08, -0.005, 0.4, 0.9, 1.4); f.userData.sx = sx; g.add(f); fluegel.push(f); }
   }
   g.add(kopf); if (schwanz) g.add(schwanz);
   g.traverse((o) => { if (o.isMesh) o.castShadow = true; });
-  return { g, kopf, schwanz, hoehe };
+  return { g, kopf, schwanz, hoehe, fluegel };
 }
 
 // Kleine Tiere klettern (oder fliegen) auf die Schulter, wenn man kurz stillsteht – beim Losgehen springen sie wieder runter
 const SCHULTER = ['ratte', 'hamster', 'wellensittich'];
 export function createHaustier({ scene, steuerung, schulter = null }) {
-  let tier = null, art = null, uhr = 0, yaw = 0, schnuffel = 0, freude = 0, still = 0, hoch = 0;
+  let tier = null, art = null, uhr = 0, yaw = 0, schnuffel = 0, freude = 0, still = 0, hoch = 0, flug = 0;
   const pos = new THREE.Vector3(), soll = new THREE.Vector3();
   function setArt(neu, farbe) {
     if (neu === art) return;
+    flug = 0; hoch = 0; still = 0;
     if (tier) { scene.remove(tier.g); tier = null; }
     art = neu || null;
     if (!art) return;
@@ -74,7 +75,10 @@ export function createHaustier({ scene, steuerung, schulter = null }) {
     let dy = zielYaw - yaw; while (dy > Math.PI) dy -= Math.PI * 2; while (dy < -Math.PI) dy += Math.PI * 2; yaw += dy * Math.min(1, dt * 8);
     const huepf = v > 0.3 ? Math.abs(Math.sin(uhr * (art === 'schildkroete' ? 6 : 14))) * (art === 'schildkroete' ? 0.01 : 0.035) : 0;
     freude = Math.max(0, freude - dt); const sprung = freude > 0 ? Math.sin((1 - freude / 0.9) * Math.PI * 2) ** 2 * 0.12 : 0;
-    tier.g.position.set(pos.x, huepf + sprung, pos.z); tier.g.rotation.y = yaw + (freude > 0 ? (1 - freude / 0.9) * Math.PI * 2 : 0);
+    // Wellensittich: bei schnellem Tempo fliegt er mit (Flügel schlagen), sonst hüpft er
+    if (tier.fluegel.length) { flug += ((v > 3 ? 1 : 0) - flug) * Math.min(1, dt * 3); for (const f of tier.fluegel) { f.rotation.z = flug > 0.05 ? f.userData.sx * Math.sin(uhr * 32) * 0.9 * flug : 0; f.position.x = f.userData.sx * (0.04 + flug * 0.02); } }
+    const fl = tier.fluegel.length ? flug : 0;
+    tier.g.position.set(pos.x, (fl > 0.05 ? fl * (0.9 + Math.sin(uhr * 3) * 0.08) : huepf) + sprung, pos.z); tier.g.rotation.y = yaw + (freude > 0 ? (1 - freude / 0.9) * Math.PI * 2 : 0);
     // Stand: ab und zu schnüffeln (Kopf nickt), Schwanz wackelt
     schnuffel -= dt; if (schnuffel < -2.5 - Math.random() * 3) schnuffel = 0.6;
     tier.kopf.rotation.x = v < 0.3 && schnuffel > 0 ? Math.sin(schnuffel * 30) * 0.12 : 0;

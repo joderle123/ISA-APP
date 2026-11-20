@@ -2,7 +2,10 @@
 // Je Abschnitt höchstens eine neue Nachricht („Schaffst du …?“). Wer es schafft, bekommt eine Antwort, Jetons und Freundschaft.
 // Kein Druck: Man kann sie ignorieren, nichts verfällt. Ton freundlich-frech, nie Mutprobe mit Risiko.
 export const HERAUSFORDERUNGEN = [
-  // Winter (nur Kapitel 5–6): kommen zuerst dran; ist der Winter vorbei, verschwindet eine offene still
+  // Jahreszeiten (nur in ihren Kapiteln): kommen zuerst dran; ist die Zeit vorbei, verschwindet eine offene still
+  { id: 'h_laub', von: 'luca', ab: 3, bis: 4, text: 'Laubhaufen auf dem Hof! Fünfmal reinrennen. Wetten?', ziel: (m) => (m.laub || 0) >= 5, danke: 'Fünfmal! Du hast jetzt Blätter in den Haaren.' },
+  { id: 'h_pfuetze', von: 'yusuf', ab: 7, bis: 8, text: 'Pfützen auf dem Hof! Wer macht den größten Platsch?', ziel: (m) => (m.pfuetzen || 0) >= 3, danke: 'Drei Pfützen! Deine Schuhe sind jetzt Kunst.' },
+  { id: 'h_eissorten', von: 'ayla', ab: 9, bis: 10, text: 'Tonio hat sechs Eissorten. Schaffst du drei?', ziel: (m) => (m.eisSorten || []).length >= 3, danke: 'Drei Sorten! Auch Gurke-Minze? Respekt.' },
   { id: 'h_schneemann', von: 'mila', ab: 5, bis: 6, text: 'Es schneit! Baust du einen Schneemann auf dem Hof?', ziel: (m) => (m.schneemann || 0) >= 1, danke: 'Mit Schal! Ich hab ihm „Fernand 2“ getauft.' },
   { id: 'h_eis', von: 'chiara', ab: 5, bis: 6, text: 'Eisbahn auf dem Markt: 300 Meter rutschen ohne Pause. Okay, mit Pause.', ziel: (m) => (m.eisMeter || 0) >= 300, danke: '300 Meter! Nächstes Mal machen wir eine Pirouette.' },
   { id: 'h_dosen', von: 'ben', ab: 1, text: 'Dosenwerfen am Markt: Ich hab fünf. Schaffst du alle sechs?', ziel: (m) => (m.dosenRekord || 0) >= 6, danke: 'Alle sechs! Okay, du bist besser. Diesmal.' },

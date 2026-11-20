@@ -114,6 +114,13 @@ export function createUI({ root, input, speech }) {
     let tw = setTimeout(() => x.classList.add('weg'), ms), tr = setTimeout(() => x.remove(), ms + 600);
     x.addEventListener('click', () => { clearTimeout(tw); clearTimeout(tr); x.classList.toggle('fest'); if (!x.classList.contains('fest')) { x.classList.add('weg'); setTimeout(() => x.remove(), 600); } });
   };
+  // „Mein Jahr“: Rückblick als bunte Karten (wie ein Jahres-Rückblick in Apps) – nur Spielstand, nichts Persönliches
+  ui.meinJahr = ({ titel, unter, karten }) => new Promise((ok) => {
+    const k = ebeneAuf('jahr', '<div class="ly-t-kicker">' + esc(unter) + '</div><h2>' + esc(titel) + '</h2><div class="ly-jahr">' +
+      karten.map((x, i) => '<div class="ly-jahr-k" style="--f:' + esc(x.farbe || '#2f6db0') + ';animation-delay:' + (i * 0.06).toFixed(2) + 's"><span class="ly-jahr-sy">' + x.sy + '</span><small>' + esc(x.titel) + '</small><b>' + esc(x.wert) + '</b>' + (x.text ? '<i>' + esc(x.text) + '</i>' : '') + '</div>').join('') +
+      '</div><div class="ly-t-knoepfe"><button type="button" class="ly-btn ly-primaer" data-a="w">Schließen</button></div>');
+    k.querySelector('[data-a="w"]').onclick = () => { ebeneZu(); ok(); };
+  });
   // Belohnungs-Karte (Garderobe): springt groß auf, Strahlen dahinter, „Gleich anziehen“ oder „Später“ – geht nach 7 s von selbst
   ui.belohnung = ({ sy, name, art = '', knopf = 'Gleich anziehen', onKnopf = null }) => {
     const x = el('div', 'ly-beloh', '<div class="ly-beloh-strahlen"></div><div class="ly-beloh-karte"><small>Neu freigeschaltet' + (art ? ' · ' + esc(art) : '') + '</small><div class="ly-beloh-sy">' + sy + '</div><b>' + esc(name) + '</b>' +
@@ -756,7 +763,7 @@ export function createUI({ root, input, speech }) {
     document.addEventListener('keydown', taste, true);
     const zeig = () => {
       const hab = daten.filter((x) => x.hab).length;
-      const lv = stufe ? '<div class="ly-gd-level"><b>⭐ Dorf-Level ' + stufe.level + '</b><span class="ly-gd-balken"><i style="width:' + Math.round(stufe.anteil * 100) + '%"></i></span><small>' + (stufe.naechste == null ? 'Höchstes Level erreicht!' : 'Noch ' + stufe.fehlt + ' Jetons bis Level ' + (stufe.level + 1) + (stufe.preis ? ' · dann: ' + esc(stufe.preis) : '') + ' · Jetons gibt es für Lernen und Aufgaben') + '</small></div>' : '';
+      const lv = stufe ? '<div class="ly-gd-level"><b>⭐ Dorf-Level ' + stufe.level + '</b><span class="ly-gd-balken"><i style="width:' + Math.round(stufe.anteil * 100) + '%"></i></span><small>' + (stufe.naechste == null ? 'Höchstes Level erreicht!' : 'Noch ' + stufe.fehlt + ' Jetons bis Level ' + (stufe.level + 1) + (stufe.preis ? ' · dann: ' + esc(stufe.preis) : '') + ' · Jetons gibt es für Lernen und Aufgaben') + (stufe.pokale != null ? ' · 🏆 ' + stufe.pokale + ' von 10 Pokalen' : '') + '</small></div>' : '';
       const wo = woche && woche.length ? '<div class="ly-gd-woche"><b>📅 Wochenaufgaben</b>' + woche.map((a) => '<span class="' + (a.fertig ? 'ok' : '') + '">' + (a.fertig ? '✅' : a.sy) + ' ' + esc(a.text) + ' <i>' + a.ist + '/' + a.soll + '</i></span>').join('') + '</div>' : '';
       const k = ebeneAuf('garderobe', '<div class="ly-t-kicker">Garderobe · ' + hab + ' von ' + daten.length + ' freigeschaltet</div><h2>Dein Style</h2>' + lv + wo +
         '<div class="ly-gd-reiter">' + arten.map(([a, t]) => '<button type="button" class="ly-ed-wort' + (a === reiter ? ' an' : '') + '" data-r="' + a + '">' + t + (daten.some((x) => x.art === a && x.neu) ? ' •' : '') + '</button>').join('') + '</div>' +
@@ -1127,6 +1134,7 @@ export function createUI({ root, input, speech }) {
         '<button type="button" data-w="ziel"><kbd>📍</kbd><span>Was soll ich gerade tun?</span></button>' +
         (ui.onKarte ? '<button type="button" data-w="karte"><kbd>🗺️</kbd><span>Karte</span></button>' : '') +
         (ui.onGarderobe ? '<button type="button" data-w="garderobe"><kbd>👕</kbd><span>Garderobe: Belohnungen anziehen (G)</span></button>' : '') +
+        (ui.onMeinJahr ? '<button type="button" data-w="jahr"><kbd>📒</kbd><span>Mein Jahr: Rückblick</span></button>' : '') +
         (VERLAUF.length ? '<button type="button" data-w="verlauf"><kbd>💬</kbd><span>Was wurde gesagt?</span></button>' : '') +
         '<button type="button" data-w="lexikon"><kbd>📖</kbd><span>Was bedeutet …?</span></button>' +
         '<button type="button" data-w="hilfe"><kbd>🆘</kbd><span>Hilfe holen (echt, nicht im Spiel)</span></button>' +
@@ -1158,6 +1166,7 @@ export function createUI({ root, input, speech }) {
       else if (w === 'scan') scan(0);
       else if (w === 'karte') { ende(); ui.onKarte && ui.onKarte(); }
       else if (w === 'garderobe') { ende(); ui.onGarderobe && ui.onGarderobe(); }
+      else if (w === 'jahr') { ende(); ui.onMeinJahr && ui.onMeinJahr(); }
       else if (w === 'verlauf') {
         const zeilen = VERLAUF.slice(-30).map((z) => '<p class="ly-vl-z">' + (z.wer ? '<b style="color:' + esc(z.farbe) + '">' + esc(z.wer) + '</b> ' : '<i>') + esc(z.text) + (z.wer ? '' : '</i>') + '</p>').join('');
         const k = ebeneAuf('raus', '<div class="ly-t-kicker">Was wurde gesagt?</div><h2>Die letzten Sätze</h2><div class="ly-vl">' + zeilen + '</div><button type="button" class="ly-btn ly-primaer" data-a="w">Zurück</button>');
