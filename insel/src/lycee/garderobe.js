@@ -56,6 +56,9 @@ export const GARDEROBE = [
   { id: 't_igel', art: 'tier', wert: 'igel', farbe: '#7a5a3a', sy: '🦔', name: 'Igel „Stachel“', hinweis: 'Im Park am Weiher die Enten beobachten', test: (S) => (m(S).enten || 0) >= 1 },
   { id: 't_hamster', art: 'tier', wert: 'hamster', farbe: '#e8b070', sy: '🐹', name: 'Hamster „Pommes“', hinweis: '5 Botengänge im Dorf', test: (S) => ((m(S).boten && m(S).boten.n) || 0) >= 5 },
   { id: 't_schildkroete', art: 'tier', wert: 'schildkroete', farbe: '#5f8a4a', sy: '🐢', name: 'Schildkröte „Turbo“', hinweis: 'S-K-A-T-E auf Zeit: unter 45 Sekunden', test: (S) => !!m(S).skate5Rekord && m(S).skate5Rekord < 45 },
+  { id: 't_wiesel', art: 'tier', wert: 'wiesel', farbe: '#a0673a', sy: '🦦', name: 'Wiesel „Blitz“', hinweis: 'Schnitzeljagd: 3 Zettel von Lina finden', test: (S) => ((m(S).jagd && m(S).jagd.i) || 0) >= 3 },
+  { id: 't_eichhoernchen', art: 'tier', wert: 'eichhoernchen', farbe: '#c0602a', sy: '🐿️', name: 'Eichhörnchen „Nussi“', hinweis: 'Im Herbst 5× in den Laubhaufen springen', test: (S) => (m(S).laub || 0) >= 5 },
+  { id: 't_kaetzchen', art: 'tier', wert: 'kaetzchen', farbe: '#e9a23b', sy: '🐱', name: 'Kätzchen „Mimi“', hinweis: 'Hund Bonbon 5× besuchen', test: (S) => (m(S).hundBesuche || 0) >= 5 },
   // Haarfarbe (über die eigene Frisur): Pokale, Jahreszeiten-Spiele
   { id: 'h_pink', art: 'haar', wert: '#ff6fb5', sy: '🩷', name: 'Haare „Pink“', hinweis: '2 Pokale im Jugendhaus-Regal', test: (S) => pokale(S) >= 2 },
   { id: 'h_blau', art: 'haar', wert: '#3f7fff', sy: '💙', name: 'Haare „Blau“', hinweis: '4 Pokale im Jugendhaus-Regal', test: (S) => pokale(S) >= 4 },
@@ -133,6 +136,7 @@ const FORT = {
   o_jugendhaus: (S) => [(m(S).kicker || 0) + (m(S).tanz || 0), 3], o_galaxie: (S) => [botenOrte(S), 8], o_trikot: Zf('volleyRekord', 10), o_gold: (S) => [hfN(S), 5], o_kicker: Zf('kickerBesiegt', 3), o_billard: Zf('billardBesiegt', 3), o_kaktus: Zf('kevinRekord', 500),
   s_rot: Zf('sticker', 8), s_neon: Zf('tanzSterne', 3), s_weiss: (S) => [hfN(S), 2], s_gold: Zf('fotoBingo', 9),
   f_neon: Zf('sticker', 8), f_lila: Zf('skate5', 5), f_orange: (S) => [botenOrte(S), 8],
+  t_wiesel: (S) => [(m(S).jagd && m(S).jagd.i) || 0, 3], t_eichhoernchen: Zf('laub', 5), t_kaetzchen: Zf('hundBesuche', 5),
   t_ratte: Zf('kicker', 2), t_frettchen: (S) => [hfN(S), 3], t_hamster: (S) => [botenN(S), 5],
   h_pink: (S) => [pokale(S), 2], h_blau: (S) => [pokale(S), 4], h_gruen: Zf('laub', 10), h_lila: (S) => [hfN(S), 7], h_feuer: (S) => [pokale(S), 7],
   sp_funken: Zf('wochenGesamt', 3), sp_herzen: Zf('tierStreicheln', 10), sp_sterne: Zf('wochenVoll', 1), sp_schnee: Zf('eisMeter', 600), sp_regenbogen: Zf('lernen', 10),
