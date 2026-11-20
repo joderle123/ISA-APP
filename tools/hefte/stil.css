@@ -335,6 +335,7 @@ ol.schritte .si svg { width: 7mm; height: 7mm; }
 .symbole .sym { display: grid; grid-template-columns: 11mm 1fr; gap: 2.5mm; align-items: end; }
 .symbole .sym i { width: 11mm; height: 11mm; border-radius: 50%; background: var(--f); color: #fff; display: flex; align-items: center; justify-content: center; }
 .symbole .sym i svg { width: 6.5mm; height: 6.5mm; }
+.symbole .uhr-linie .l { font-size: 11.5pt; line-height: 1.05; }
 
 .personen { display: flex; justify-content: space-around; gap: 3mm; margin-bottom: 3mm; }
 .personen .pb { text-align: center; }

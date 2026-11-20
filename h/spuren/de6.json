@@ -1,0 +1,558 @@
+{
+ "modul": "de6",
+ "titel": {
+  "de": "Arbeit, Beruf und Jugendsprache",
+  "fr": "Travail, métiers et langage des jeunes"
+ },
+ "sprache": "de",
+ "spuren": {
+  "de6-01l": {
+   "titel": "Drei Berufe im Porträt",
+   "art": "lesen",
+   "lektion": 1,
+   "dauer": 66.1,
+   "text": [
+    [
+     "",
+     "Drei Berufe im Porträt"
+    ],
+    [
+     "",
+     "Mechatroniker/in für Autos. Du reparierst Autos und Motorräder und suchst Fehler mit dem Computer. Du arbeitest in einer Werkstatt, oft mit den Händen. Wichtig: Interesse an Technik, gute Augen, Geduld. Ausbildung: 3 Jahre (DAP), in der Schule und im Betrieb."
+    ],
+    [
+     "",
+     "Koch / Köchin. Du bereitest Speisen zu – im Restaurant, im Hotel oder in einer Kantine. Oft arbeitest du abends und am Wochenende. Wichtig: Teamgeist, Sauberkeit, du kannst schnell arbeiten. Ausbildung: 3 Jahre (DAP oder CCP)."
+    ],
+    [
+     "",
+     "Pflegehelfer/in. Du hilfst kranken oder alten Menschen, zum Beispiel beim Essen oder beim Waschen. Du arbeitest im Altersheim, im Krankenhaus oder bei den Leuten zu Hause. Wichtig: Geduld, Freundlichkeit, du hörst gut zu. Ausbildung: 3 Jahre (DAP)."
+    ]
+   ]
+  },
+  "de6-01h": {
+   "titel": "Was passt zu mir?",
+   "art": "hoeren",
+   "lektion": 1,
+   "dauer": 59.7,
+   "text": [
+    [
+     "Frau Kremer",
+     "Hallo Tom, setz dich. Hast du schon eine Idee, was du später machen möchtest?"
+    ],
+    [
+     "Tom",
+     "Ehrlich gesagt, nicht so richtig. Ich weiß nur, dass ich nicht den ganzen Tag im Büro sitzen will."
+    ],
+    [
+     "Frau Kremer",
+     "Das ist schon ein wichtiger Hinweis. Was machst du in deiner Freizeit gern?"
+    ],
+    [
+     "Tom",
+     "Ich repariere oft Fahrräder, für mich und für meine Freunde. Da ich gern mit den Händen arbeite, macht mir das Spaß."
+    ],
+    [
+     "Frau Kremer",
+     "Sehr gut. Und in der Schule? Welche Fächer magst du?"
+    ],
+    [
+     "Tom",
+     "Mathe ist okay. Deutsch finde ich schwer, deshalb übe ich viel."
+    ],
+    [
+     "Frau Kremer",
+     "Hast du schon einmal an Mechatroniker gedacht? Da repariert man Autos und Motorräder."
+    ],
+    [
+     "Tom",
+     "Nein, aber das klingt interessant! Kann ich das mal ausprobieren?"
+    ],
+    [
+     "Frau Kremer",
+     "Ja, mit einem Praktikum. Wenn du willst, suchen wir zusammen einen Betrieb."
+    ]
+   ]
+  },
+  "de6-02l": {
+   "titel": "Bäckerei Weber – seit 1952 in Mersch",
+   "art": "lesen",
+   "lektion": 2,
+   "dauer": 61.8,
+   "text": [
+    [
+     "",
+     "Bäckerei Weber – seit 1952 in Mersch"
+    ],
+    [
+     "",
+     "Die Bäckerei Weber ist ein Familienbetrieb. Hier arbeiten 18 Menschen in drei Abteilungen: in der Backstube, in der Konditorei und im Verkauf. Dazu kommt ein kleines Büro."
+    ],
+    [
+     "",
+     "In der Backstube beginnt die Arbeit schon um 3 Uhr in der Nacht. Zuerst wird der Teig geknetet. Dann werden die Brote geformt. Um 5 Uhr werden sie in den Ofen geschoben."
+    ],
+    [
+     "",
+     "In der Konditorei werden Kuchen und Torten gemacht. Für Geburtstage und Hochzeiten werden Torten auch nach Wunsch dekoriert."
+    ],
+    [
+     "",
+     "Ab 6 Uhr wird im Laden verkauft. Am Mittag werden auch Sandwiches angeboten. Abends wird alles gründlich geputzt."
+    ],
+    [
+     "",
+     "Jedes Jahr werden bei uns zwei Lehrlinge ausgebildet. Interesse? Melde dich für ein Praktikum!"
+    ]
+   ]
+  },
+  "de6-02h": {
+   "titel": "Willkommen in der Backstube!",
+   "art": "hoeren",
+   "lektion": 2,
+   "dauer": 51.4,
+   "text": [
+    [
+     "Herr Laurent",
+     "Guten Morgen und willkommen in der Backstube! Bevor wir anfangen: Hier werden Haare zusammengebunden und Hände gewaschen. Das ist Pflicht."
+    ],
+    [
+     "Herr Laurent",
+     "Hier seht ihr unsere Knetmaschine. Der Teig wird zehn Minuten geknetet. Dann muss er ruhen."
+    ],
+    [
+     "Nele",
+     "Entschuldigung, wie lange muss der Teig ruhen?"
+    ],
+    [
+     "Herr Laurent",
+     "Etwa eine Stunde. In dieser Zeit wird er größer."
+    ],
+    [
+     "Yusuf",
+     "Und wie viele Brote werden jeden Tag gebacken?"
+    ],
+    [
+     "Herr Laurent",
+     "Ungefähr achthundert Brote und zweitausend Brötchen. Am Samstag sind es noch mehr."
+    ],
+    [
+     "Nele",
+     "Wow! Ist die Arbeit in der Nacht nicht anstrengend?"
+    ],
+    [
+     "Herr Laurent",
+     "Am Anfang schon. Aber man gewöhnt sich daran. Und dafür habe ich am Nachmittag frei."
+    ],
+    [
+     "Herr Laurent",
+     "So, jetzt dürft ihr selbst ein Brötchen formen. Wer will anfangen?"
+    ]
+   ]
+  },
+  "de6-03l": {
+   "titel": "Regeln für die Werkstatt",
+   "art": "lesen",
+   "lektion": 3,
+   "dauer": 54.8,
+   "text": [
+    [
+     "",
+     "Regeln für die Werkstatt"
+    ],
+    [
+     "",
+     "Werkstattordnung. 1. Die Werkstatt wird nur mit einer Lehrperson betreten. 2. Wenn du an einer Maschine arbeitest, trägst du eine Schutzbrille. 3. Lange Haare werden zusammengebunden. Schmuck wird abgelegt. 4. Wenn etwas kaputt ist, sagst du es sofort der Lehrperson. 5. Im Notfall: den roten Not-Aus-Knopf drücken! 6. Nach der Arbeit wird der Platz aufgeräumt."
+    ],
+    [
+     "",
+     "Bohrmaschine – Sicherheitshinweise. Lesen Sie diese Hinweise vor dem ersten Gebrauch. • Ziehen Sie den Stecker, wenn Sie den Bohrer wechseln. • Benutzen Sie das Gerät nicht, wenn das Kabel beschädigt ist. • Tragen Sie Schutzbrille und Gehörschutz. • Prüfen Sie vor dem Bohren, ob in der Wand Stromkabel sind."
+    ]
+   ]
+  },
+  "de6-03h": {
+   "titel": "Erst zuhören, dann bohren!",
+   "art": "hoeren",
+   "lektion": 3,
+   "dauer": 50.4,
+   "text": [
+    [
+     "Herr Mesenberg",
+     "So, alle mal herhören! Heute arbeiten wir mit der Standbohrmaschine. Bevor ihr anfangt, setzt ihr eure Schutzbrille auf."
+    ],
+    [
+     "Finn",
+     "Muss ich auch Handschuhe anziehen?"
+    ],
+    [
+     "Herr Mesenberg",
+     "Nein, an der Bohrmaschine gerade nicht! Wenn sich ein Handschuh im Bohrer verfängt, wird die Hand mitgezogen. Das ist sehr gefährlich."
+    ],
+    [
+     "Jana",
+     "Und was machen wir, wenn sich das Werkstück mitdreht?"
+    ],
+    [
+     "Herr Mesenberg",
+     "Gute Frage. Das Werkstück wird immer im Schraubstock festgemacht. Wenn trotzdem etwas passiert, drückt ihr sofort den roten Not-Aus-Knopf."
+    ],
+    [
+     "Finn",
+     "Entschuldigung, können Sie das Wort noch einmal sagen? Schraub…?"
+    ],
+    [
+     "Herr Mesenberg",
+     "Schraubstock. Das ist dieses Teil hier. Er hält das Holz fest, damit eure Hände frei sind."
+    ],
+    [
+     "Herr Mesenberg",
+     "Gut. Wenn alle bereit sind, fangen wir an. Jana, du bist zuerst dran."
+    ]
+   ]
+  },
+  "de6-04l": {
+   "titel": "Praktikumsplätze frei!",
+   "art": "lesen",
+   "lektion": 4,
+   "dauer": 69.2,
+   "text": [
+    [
+     "",
+     "Praktikumsplätze frei!"
+    ],
+    [
+     "",
+     "Praktikum in der Küche (m/w/d). Restaurant „Am Bach“ in Larochette sucht ab sof. Praktikant/in für 2 Wo. Arbeitszeit: Mo. bis Fr., 9 bis 15 Uhr · Mittagessen gratis. Du bist pünktlich und arbeitest gern im Team? Ruf uns an: Tel. 12 34 56."
+    ],
+    [
+     "",
+     "Autowerkstatt Becker sucht Schnupperpraktikant (m/w/d). 1 Woche, ca. 35 Std. Du interessierst dich für Autos und Technik? Arbeitskleidung und Sicherheitsschuhe bekommst du von uns. Bewerbung per E-Mail: kurze Vorstellung und letztes Zeugnis."
+    ],
+    [
+     "",
+     "Tierheim – Praktikum in den Ferien. Ab 15 Jahren · 2 Wo. im Juli · halbtags (4 Std.). Hunde ausführen, Futter vorbereiten, Käfige putzen. Wichtig: keine Angst vor Tieren, keine Allergie! Infos: Tel. 12 98 76."
+    ]
+   ]
+  },
+  "de6-04h": {
+   "titel": "Ich rufe wegen des Praktikums an",
+   "art": "hoeren",
+   "lektion": 4,
+   "dauer": 58.4,
+   "text": [
+    [
+     "Herr Klein",
+     "Restaurant Am Bach, Klein am Apparat. Guten Tag!"
+    ],
+    [
+     "Jana",
+     "Guten Tag, Herr Klein. Mein Name ist Jana, ich bin Schülerin in Junglinster. Ich rufe wegen des Praktikums in der Küche an. Ist der Platz noch frei?"
+    ],
+    [
+     "Herr Klein",
+     "Ja, der Platz ist noch frei. Wie alt bist du denn?"
+    ],
+    [
+     "Jana",
+     "Ich bin vierzehn. Ich möchte später vielleicht Köchin werden."
+    ],
+    [
+     "Herr Klein",
+     "Sehr schön. Hast du schon Erfahrung in der Küche?"
+    ],
+    [
+     "Jana",
+     "Ich koche gern, und in der Schule habe ich einen Kochkurs gemacht."
+    ],
+    [
+     "Herr Klein",
+     "Gut. Das Praktikum beginnt am Montag um neun Uhr. Bitte bring feste Schuhe mit. Eine Schürze bekommst du von uns."
+    ],
+    [
+     "Jana",
+     "Entschuldigung, um wie viel Uhr genau?"
+    ],
+    [
+     "Herr Klein",
+     "Um neun Uhr. Komm bitte zum Hintereingang."
+    ],
+    [
+     "Jana",
+     "Alles klar. Vielen Dank, Herr Klein! Auf Wiederhören."
+    ]
+   ]
+  },
+  "de6-05l": {
+   "titel": "Lebenslauf von Samir",
+   "art": "lesen",
+   "lektion": 5,
+   "dauer": 60.0,
+   "text": [
+    [
+     "",
+     "Lebenslauf von Samir"
+    ],
+    [
+     "",
+     "Lebenslauf – Samir Haddad. Persönliche Daten: geboren am 3. Mai 2011 in Luxemburg · wohnt in Ettelbrück. Schule: 2017 bis 2023 Grundschule in Ettelbrück · seit 2023 Lycée, Voie de préparation. Praktika: März 2025: 1 Woche Supermarkt (Regale einräumen, Kasse) · Juli 2026: 2 Wochen Gärtnerei (Pflanzen gießen, Beete anlegen). Sprachen: Arabisch (Muttersprache), Luxemburgisch, Französisch, Deutsch · Englisch (Grundkenntnisse). Hobbys: Fußball im Verein, Kochen, Videos schneiden."
+    ],
+    [
+     "",
+     "Über mich. Ich bin ruhig, aber hilfsbereit. Am liebsten arbeite ich draußen. In der Gärtnerei habe ich gemerkt, dass ich gern mit Pflanzen arbeite. Deshalb suche ich jetzt einen Ausbildungsplatz als Gärtner."
+    ]
+   ]
+  },
+  "de6-05h": {
+   "titel": "Mein Weg bis heute",
+   "art": "hoeren",
+   "lektion": 5,
+   "dauer": 49.0,
+   "text": [
+    [
+     "Ben",
+     "Ich heiße Ben und bin fünfzehn Jahre alt. Geboren bin ich in Belgien, in Arlon."
+    ],
+    [
+     "Ben",
+     "Als ich sechs war, sind wir nach Luxemburg gezogen. Am Anfang habe ich kein Wort Luxemburgisch verstanden. Das war schwer."
+    ],
+    [
+     "Ben",
+     "In der Grundschule hatte ich eine tolle Lehrerin. Sie hat mir viel geholfen. Nach zwei Jahren konnte ich gut Luxemburgisch."
+    ],
+    [
+     "Ben",
+     "Seit zwei Jahren bin ich im Lycée. Letztes Jahr habe ich ein Praktikum bei einem Elektriker gemacht. Das hat mir super gefallen."
+    ],
+    [
+     "Ben",
+     "In meiner Freizeit spiele ich Basketball und baue kleine Roboter."
+    ],
+    [
+     "Ben",
+     "Mein Ziel: eine Ausbildung als Elektroniker. Dafür muss ich in Mathe noch besser werden."
+    ],
+    [
+     "Frau Sommer",
+     "Danke, Ben! Wer kann Bens Lebenslauf in drei Sätzen zusammenfassen?"
+    ]
+   ]
+  },
+  "de6-06l": {
+   "titel": "Stell dir vor …",
+   "art": "lesen",
+   "lektion": 6,
+   "dauer": 55.7,
+   "text": [
+    [
+     "",
+     "Stell dir vor …"
+    ],
+    [
+     "",
+     "Liebe Paula, stell dir vor: Heute war mein erster Tag im Praktikum in der Tierarztpraxis! Ich war so nervös, dass ich fast nicht frühstücken konnte. Um 8 Uhr hat mich die Tierärztin, Frau Dr. Wagner, begrüßt. Zuerst wurde mir die Praxis gezeigt. Dann durfte ich bei einer Untersuchung zuschauen: Ein kleiner Hund hatte eine verletzte Pfote. Ich habe ihn gestreichelt, damit er ruhig bleibt. Am Nachmittag musste ich die Käfige putzen. Das war nicht so toll, aber es gehört dazu. Alle sind sehr nett zu mir. Nur der Tag ist lang: Ich war erst um 17 Uhr fertig. Jetzt bin ich müde, aber auch stolz. Wie geht es dir? Hast du schon einen Praktikumsplatz? Liebe Grüße, deine Chloe."
+    ]
+   ]
+  },
+  "de6-06h": {
+   "titel": "Hast du noch Fragen?",
+   "art": "hoeren",
+   "lektion": 6,
+   "dauer": 51.9,
+   "text": [
+    [
+     "Herr Becker",
+     "So, Sami, der erste Tag ist geschafft. Wie war es für dich?"
+    ],
+    [
+     "Sami",
+     "Gut, danke! Ich habe viel gelernt. Am meisten hat mir der Reifenwechsel gefallen."
+    ],
+    [
+     "Herr Becker",
+     "Das hast du gut gemacht. Gab es etwas, was schwierig war?"
+    ],
+    [
+     "Sami",
+     "Ja, ehrlich gesagt: die vielen Werkzeuge. Ich kenne noch nicht alle Namen."
+    ],
+    [
+     "Herr Becker",
+     "Das ist normal. Morgen zeigt dir Laurent die Werkzeugwand. Da hängt jedes Werkzeug an seinem Platz."
+    ],
+    [
+     "Sami",
+     "Darf ich Sie noch etwas fragen? Um wie viel Uhr soll ich morgen kommen?"
+    ],
+    [
+     "Herr Becker",
+     "Um halb acht, wie heute. Und denk an deine Sicherheitsschuhe."
+    ],
+    [
+     "Sami",
+     "Mach ich. Kann ich morgen auch beim Ölwechsel helfen?"
+    ],
+    [
+     "Herr Becker",
+     "Klar, wenn du willst. Du stellst gute Fragen – das gefällt mir. Bis morgen!"
+    ]
+   ]
+  },
+  "de6-07l": {
+   "titel": "Wie redest du denn?",
+   "art": "lesen",
+   "lektion": 7,
+   "dauer": 70.9,
+   "text": [
+    [
+     "",
+     "Wie redest du denn?"
+    ],
+    [
+     "",
+     "„Digga, das war voll krass!“ – Erwachsene verstehen solche Sätze oft nicht. Das ist kein Zufall: Jugendliche haben schon immer ihre eigene Sprache benutzt. Sie zeigt: Wir gehören zusammen."
+    ],
+    [
+     "",
+     "Viele Wörter kommen aus dem Englischen, zum Beispiel „chillen“ oder „cringe“. Andere kommen aus der Musik. Im Hip-Hop hört man viele neue Ausdrücke, die dann auf dem Schulhof landen."
+    ],
+    [
+     "",
+     "Auch beim Sport gibt es eine eigene Sprache. Skater sprechen von „Grinds“ und „Kickflips“. Wer nicht skatet, versteht nur Bahnhof."
+    ],
+    [
+     "",
+     "Jugendsprache ändert sich sehr schnell. Ein Wort, das heute cool ist, ist in zwei Jahren oft schon wieder peinlich. Manche Wörter bleiben aber: „cool“ sagten viele Großeltern schon, als sie jung waren."
+    ],
+    [
+     "",
+     "Wichtig ist: Wo spreche ich mit wem? Mit Freunden ist Jugendsprache okay. Im Vorstellungsgespräch oder in einer E-Mail an einen Betrieb benutzt man die Standardsprache."
+    ]
+   ]
+  },
+  "de6-07h": {
+   "titel": "Hast du das gesehen?",
+   "art": "hoeren",
+   "lektion": 7,
+   "dauer": 51.0,
+   "text": [
+    [
+     "Finn",
+     "Digga, hast du das Video gesehen? Ich habe endlich den Kickflip geschafft!"
+    ],
+    [
+     "Mia",
+     "Krass! Wie lange hast du geübt?"
+    ],
+    [
+     "Finn",
+     "Drei Wochen, jeden Tag im Skatepark. Ich bin so oft hingefallen, das war echt cringe."
+    ],
+    [
+     "Mia",
+     "Egal, jetzt kannst du es. Ehrlich, Respekt!"
+    ],
+    [
+     "Finn",
+     "Habt ihr übrigens die neue Jacke von Sophie gesehen? Die sieht voll komisch aus."
+    ],
+    [
+     "Nele",
+     "Hm, ich weiß nicht. Ich finde, wir sollten nicht über sie lästern. Sie ist ja nicht da."
+    ],
+    [
+     "Finn",
+     "War doch nur ein Witz."
+    ],
+    [
+     "Nele",
+     "Für sie wäre es vielleicht kein Witz. Stell dir vor, jemand redet so über dich."
+    ],
+    [
+     "Mia",
+     "Nele hat recht. Komm, zeig uns lieber noch mal deinen Kickflip!"
+    ]
+   ]
+  },
+  "de6-08l": {
+   "titel": "Wo werden Leute gesucht?",
+   "art": "lesen",
+   "lektion": 8,
+   "dauer": 63.8,
+   "text": [
+    [
+     "",
+     "Wo werden Leute gesucht?"
+    ],
+    [
+     "",
+     "In Luxemburg und in vielen Ländern Europas fehlen Fachkräfte. Das sind Menschen mit einer guten Ausbildung in ihrem Beruf. Viele Betriebe suchen lange, bis sie die richtige Person finden."
+    ],
+    [
+     "",
+     "Besonders gesucht sind Leute im Handwerk: Elektrikerinnen und Elektriker, Installateure für Heizung und Sanitär, Mechatroniker. Wenn du gern mit den Händen arbeitest, dann hast du hier gute Chancen."
+    ],
+    [
+     "",
+     "Auch im Gesundheitsbereich fehlen Menschen, zum Beispiel in der Pflege. Weil die Menschen immer älter werden, braucht man immer mehr Pflegekräfte."
+    ],
+    [
+     "",
+     "In der Informatik und bei der Energie entstehen neue Aufgaben. Solaranlagen werden montiert, Wärmepumpen werden eingebaut, Computernetze werden betreut."
+    ],
+    [
+     "",
+     "Unser Tipp: Mach mehrere Praktika. So findest du heraus, was dir gefällt – und die Betriebe lernen dich kennen."
+    ]
+   ]
+  },
+  "de6-08h": {
+   "titel": "Fragen an eine Elektrikerin",
+   "art": "hoeren",
+   "lektion": 8,
+   "dauer": 64.9,
+   "text": [
+    [
+     "Amira",
+     "Frau Kiesser, danke, dass Sie Zeit haben. Erste Frage: Wie sind Sie Elektrikerin geworden?"
+    ],
+    [
+     "Frau Kiesser",
+     "Als Kind habe ich schon alles auseinandergebaut: Radios, Lampen, Spielzeug. Nach der Schule habe ich dann eine Ausbildung gemacht."
+    ],
+    [
+     "Amira",
+     "Waren Sie die einzige Frau in Ihrer Klasse?"
+    ],
+    [
+     "Frau Kiesser",
+     "Ja, damals schon. Am Anfang gab es ein paar dumme Sprüche. Aber wenn man gute Arbeit macht, dann zählt das am Ende."
+    ],
+    [
+     "Amira",
+     "Was machen Sie an einem normalen Tag?"
+    ],
+    [
+     "Frau Kiesser",
+     "Heute wurden zum Beispiel in einem neuen Haus alle Leitungen verlegt. Morgen wird eine Solaranlage angeschlossen."
+    ],
+    [
+     "Amira",
+     "Und was muss man für diesen Beruf können?"
+    ],
+    [
+     "Frau Kiesser",
+     "Genau arbeiten, Mathe ist wichtig, und man muss vorsichtig sein. Bei Strom darf man keine Fehler machen."
+    ],
+    [
+     "Amira",
+     "Noch eine spontane Frage: Kann unsere Klasse Ihren Betrieb besuchen?"
+    ],
+    [
+     "Frau Kiesser",
+     "Sehr gern! Ruft mich an, dann finden wir einen Termin."
+    ]
+   ]
+  }
+ }
+}
