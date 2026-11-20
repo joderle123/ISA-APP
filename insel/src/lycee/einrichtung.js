@@ -397,6 +397,66 @@ export function baueEinrichtung({ B, P, C, schild, schilder, stuhl, DECKE }) {
     D('kk/rollerskate_pair', 40.7, -45.6, { s: 0.36, y: 0.48, rot: 0.4 });
   }
 
+  // ---------- Kantine (x 8 … 29.8, z −14 … −2): Wunschessen-Abstimmung (mit Luxemburger Klassikern), Lous Sterne-Kritik ----------
+  { const woche = plakat(1.5, 1.05, (g, w, h) => {
+      g.fillStyle = '#2f4f45'; g.fillRect(0, 0, w, h); g.strokeStyle = '#a0743e'; g.lineWidth = 18; g.strokeRect(9, 9, w - 18, h - 18);
+      text(g, 'Wunschessen – eure Stimmen', w / 2, 62, 'bold 34px Georgia, serif', '#f4e8cc');
+      const R = [['Pizza', 43], ['Gromperekichelcher', 31], ['Pasta', 27], ['Bouneschlupp', 12], ['Fisch', 2]];
+      R.forEach(([t, n], i) => { const y = 112 + i * 44; text(g, t, 44, y, '25px system-ui', '#f4e8cc', 'left');
+        g.fillStyle = '#e9b949'; g.fillRect(320, y - 18, n * 2.9, 20); text(g, String(n), 330 + n * 2.9, y, 'bold 24px system-ui', '#f4e8cc', 'left'); });
+      text(g, 'Der Gewinner kommt am Freitag! – Frau Kremer', w / 2, h - 26, 'italic 22px Georgia, serif', '#bfe3f2');
+    });
+    woche.position.set(8.2, 1.75, -5.2); woche.rotation.y = Math.PI / 2;
+    const lou = plakat(0.75, 0.95, (g, w, h) => {
+      g.fillStyle = '#fff7e0'; g.fillRect(0, 0, w, h); g.fillStyle = '#d9693f'; g.fillRect(0, 0, w, 54);
+      text(g, 'Lous Kritik', w / 2, 38, 'bold 30px system-ui', '#ffffff');
+      [['Bouneschlupp', '★★★★★'], ['Pasta', '★★★★☆'], ['Kichelcher', '★★★★★'], ['Fisch', '★★☆☆☆'], ['Pizza', '★★★★½']].forEach(([n, st], i) => {
+        text(g, n, 24, 104 + i * 58, '26px system-ui', '#2b3a55', 'left'); text(g, st, w - 20, 104 + i * 58, '26px system-ui', '#e9b949', 'right'); });
+      text(g, '„Die Kantine ist besser als ihr Ruf.“', w / 2, h - 52, 'italic 19px Georgia, serif', '#8a5a3a'); text(g, '– Lou, 6ème', w / 2, h - 26, '18px system-ui', '#8a5a3a');
+    }, { px: 360 });
+    lou.position.set(8.2, 1.6, -10.4); lou.rotation.y = Math.PI / 2;
+  }
+
+  // ---------- Sekretariat (x −29.8 … −16, z −14 … −2): Fundsachen im Wartebereich, Bonbonglas, Kinderbild für Mme Weber ----------
+  { const fund = plakat(0.8, 1.0, (g, w, h) => {
+      g.fillStyle = '#fffdf6'; g.fillRect(0, 0, w, h); g.fillStyle = '#3d7fb8'; g.fillRect(0, 0, w, 58);
+      text(g, 'Fundsachen', w / 2, 42, 'bold 34px system-ui', '#ffffff');
+      ['blaue Trinkflasche', 'EIN Turnschuh (links!)', 'Mathebuch ohne Namen', 'pinker Regenschirm', 'Schlüssel mit Dino', 'Mütze (sehr warm)'].forEach((t, i) =>
+        text(g, '• ' + t, 30, 112 + i * 52, '25px system-ui', '#2b3a55', 'left'));
+      text(g, 'Abholen bis Freitag. Danach: Fundkiste.', w / 2, h - 30, 'italic 21px Georgia, serif', '#8a5a3a');
+    }, { px: 420 });
+    fund.position.set(-29.74, 1.55, -12.7); fund.rotation.y = Math.PI / 2;
+    D('kk/jar_C_large', -19.3, -10.95, { h: 0.24, y: 1.12, rot: 0 });   // Bonbonglas auf der Theke
+    const karte = plakat(0.3, 0.12, (g, w, h) => { g.fillStyle = '#ffffff'; g.fillRect(0, 0, w, h); text(g, 'Eins pro Person 🙂', w / 2, h / 2 + 12, 'bold 34px system-ui', '#2b3a55'); }, { px: 320 });
+    karte.position.set(-19.3, 1.19, -11.32); karte.rotation.y = Math.PI;
+    const bild = plakat(0.55, 0.42, (g, w, h) => {   // mit Wachsmalstiften gemalt
+      g.fillStyle = '#fffaf0'; g.fillRect(0, 0, w, h);
+      g.fillStyle = '#f2c94c'; g.beginPath(); g.arc(80, 80, 44, 0, Math.PI * 2); g.fill();
+      g.strokeStyle = '#f2994a'; g.lineWidth = 6; for (let i = 0; i < 8; i++) { const a = i * Math.PI / 4; g.beginPath(); g.moveTo(80 + Math.cos(a) * 54, 80 + Math.sin(a) * 54); g.lineTo(80 + Math.cos(a) * 74, 80 + Math.sin(a) * 74); g.stroke(); }
+      g.fillStyle = '#e85d75'; g.beginPath(); g.moveTo(w - 90, 110); g.bezierCurveTo(w - 90, 70, w - 30, 70, w - 30, 110); g.bezierCurveTo(w - 30, 140, w - 90, 170, w - 90, 190); g.bezierCurveTo(w - 90, 170, w - 150, 140, w - 150, 110); g.bezierCurveTo(w - 150, 70, w - 90, 70, w - 90, 110); g.fill();
+      text(g, 'Danke, Mme Weber!', w / 2, h - 90, 'bold 40px Comic Sans MS, cursive', '#3d7fb8');
+      text(g, 'die 7ème', w / 2, h - 40, '28px Comic Sans MS, cursive', '#6fae5f');
+    }, { px: 512 });
+    bild.position.set(-22.6, 0.62, -11.225); bild.rotation.y = Math.PI + 0.04;
+  }
+
+  // ---------- Innenhof: Kreide auf dem Pflaster – Himmel und Hölle, eine Sonne, „7P2 war hier“ (Kinder sind sie ja noch) ----------
+  { const kreide = plakat(2.4, 4.0, (g, w, h) => {
+      g.lineWidth = 7; g.lineCap = 'round'; g.font = 'bold 44px Comic Sans MS, cursive'; g.textAlign = 'center';
+      const fx = 40, fw = 190, fh = 100;   // Feld: links, Breite, Kästchenhöhe
+      const K = [[0, 1, ['1']], [1, 1, ['2']], [2, 2, ['3', '4']], [3, 1, ['5']], [4, 2, ['6', '7']], [5, 1, ['8']]];
+      for (const [r, n, zahl] of K) { const y = h - 40 - (r + 1) * fh;
+        for (let i = 0; i < n; i++) { const bw = n === 1 ? fw / 2 : fw / 2, x = n === 1 ? fx + fw / 4 : fx + i * fw / 2;
+          g.strokeStyle = ['#ffffff', '#ffd6e0', '#cdeaff', '#fff2a8'][(r + i) % 4]; g.strokeRect(x, y, bw, fh); g.fillStyle = g.strokeStyle; g.fillText(zahl[i], x + bw / 2, y + 66); } }
+      const hy = h - 40 - 6 * fh; g.strokeStyle = '#d8f5c8'; g.beginPath(); g.arc(fx + fw / 2, hy, fw / 2, Math.PI, 0); g.stroke();
+      g.fillStyle = '#d8f5c8'; g.font = 'bold 32px Comic Sans MS, cursive'; g.fillText('HIMMEL', fx + fw / 2, hy - 24);
+      g.strokeStyle = '#ffe08a'; g.beginPath(); g.arc(w - 90, 120, 44, 0, Math.PI * 2); g.stroke();
+      for (let i = 0; i < 10; i++) { const a = i * Math.PI / 5; g.beginPath(); g.moveTo(w - 90 + Math.cos(a) * 56, 120 + Math.sin(a) * 56); g.lineTo(w - 90 + Math.cos(a) * 80, 120 + Math.sin(a) * 80); g.stroke(); }
+      g.save(); g.translate(w - 70, h - 260); g.rotate(-Math.PI / 2); g.fillStyle = '#ffd6e0'; g.font = 'bold 40px Comic Sans MS, cursive'; g.fillText('7P2 war hier ♥', 0, 0); g.restore();
+    }, { px: 360, licht: false });
+    kreide.rotation.x = -Math.PI / 2; kreide.position.set(-8.2, 0.075, -41.5); kreide.material.opacity = 0.85;
+  }
+
   // ---------- SePAS (x −16 … −8, z −14 … −2): Gefühle-Rad, Hilfe-Tafel, Sorgen-Briefkasten, Taschentücher – ein Raum, der sagt: Hier darfst du reden ----------
   { // Gefühle-Rad an der Westwand
     const rad = plakat(1.15, 1.3, (g, w, h) => {

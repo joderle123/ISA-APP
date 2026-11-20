@@ -69,6 +69,7 @@ export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton
   for (let z = -70; z < -58; z += 4) dazu(29.0, z, 1.2, 'Lese-Ecke: Comics und Geschichten', 'buch', { prio: 1 });
   dazu(-6.8, -9, 1.4, 'Pinnwand lesen', 'pinnwand', { prio: 1 });
   dazu(-15.05, -12.55, 1.0, 'Zettel in den Sorgen-Briefkasten werfen', 'sorgen', { prio: 1 });
+  dazu(-19.3, -11.7, 0.8, 'Ein Bonbon nehmen', 'bonbon', { prio: 1 });   // Sekretariat: Glas auf der Theke
   dazu(45, -1.8, 1.3, 'In die Fundkiste schauen', 'fundkiste', { prio: 1 });
   dazu(-24.5, 42.6, 1.2, 'Kritzeleien lesen', 'kritzelei', { prio: 0, wo: 'bus' });
   dazu(-26.35, -27.2, 0.8, 'Kritzelei auf dem Tisch', 'kritzelei', { prio: 0, wo: 'tisch' });
@@ -208,6 +209,12 @@ export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton
         const PERSOENLICH = ['Danke für deinen Zettel. Du musst damit nicht allein sein. Tür ist offen.', 'Danke für den Hinweis. Ich schau genau hin. Diskret.', 'Danke für deinen Zettel. Streit tut weh. Komm vorbei, wenn du magst.', 'Und danke, dass es dich gibt. 😊'];
         (s.merke.nachrichten = s.merke.nachrichten || []).push(n === 1 ? ['SePAS · Herr Kuedes', PERSOENLICH[t]] : ['SePAS · Aushang', 'An alle mit Zettel: Danke. Ihr seid nicht allein. Tür ist offen.']);
         sichern(); ui.toast('<b>✉️ Eingeworfen</b><span>' + (n === 1 ? 'Mit Namen. Herr Kuedes meldet sich.' : 'Anonym. Herr Kuedes liest alles.') + '</span>');
+        return;
+      }
+      case 'bonbon': {   // Sekretariat: eins pro Person (und Abschnitt) – das Kärtchen hat ein Auge darauf
+        if (s.merke.bonbonSchritt === s.schritt) { ui.toast('<b>🍬 Eins pro Person</b><span>Das Kärtchen schaut dich an. Du lässt das Glas zu.</span>'); return; }
+        const n = s.merke.bonbons = (s.merke.bonbons || 0) + 1; s.merke.bonbonSchritt = s.schritt; ton('klack'); sichern();
+        ui.toast('<b>🍬 ' + ['Zitrone', 'Himbeere', 'Pfefferminz', 'Kirsche', 'Apfel'][(n - 1) % 5] + '</b><span>' + (n === 5 ? 'Auf dem Kärtchen steht jetzt mit Kuli: „Bester Kunde 🙂“' : 'Eins pro Person. Du hältst dich dran.') + '</span>');
         return;
       }
       case 'computer': ui.toast('<b>Anmelden</b><span>Passwort vergessen. Das Passwort für „Passwort vergessen“ auch.</span>'); return;
