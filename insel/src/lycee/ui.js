@@ -703,12 +703,13 @@ export function createUI({ root, input, speech }) {
       de.map((d) => '<button type="button" data-d="' + esc(d.id) + '"><kbd style="background:' + esc(d.wert) + '"></kbd><span>' + esc(d.name) + (d.wert === deck ? ' · aufs Brett ✓' : ' · aufs Brett') + '</span></button>').join('') +
       la.map((d) => '<button type="button" data-d="' + esc(d.id) + '"><kbd style="background:' + esc(d.wert) + '"></kbd><span>' + esc(d.name) + (d.wert === lampe ? ' · an ✓' : ' · anmachen') + '</span></button>').join('') +
       '<button type="button" data-d="spiegel"><kbd>🪞</kbd><span>Spiegel: Aussehen ändern</span></button>' +
+      '<button type="button" data-d="garderobe"><kbd>👕</kbd><span>Garderobe: Belohnungen anziehen</span></button>' +
       '<button type="button" data-d=""><kbd>✕</kbd><span>Zumachen</span></button></div>' +
       (dinge.length ? '' : '<p class="ly-leer">Turnbeutel, Mathebuch, eine sehr alte Banane. Jetons kriegst du am Platz. Tauschen bei Kenan, Lina, Ayla und Chiara.</p>') + '</div>');
     const fertig = (d) => { document.removeEventListener('keydown', taste, true); ebeneZu(); ok(d); };
     const taste = (e) => { if (e.code === 'KeyE' || e.code === 'Escape') { e.preventDefault(); e.stopPropagation(); fertig(null); } };
     document.addEventListener('keydown', taste, true);
-    k.querySelectorAll('[data-d]').forEach((b) => { b.onclick = () => fertig(b.dataset.d === 'spiegel' ? { art: 'spiegel' } : (dinge.find((d) => d.id === b.dataset.d) || null)); });
+    k.querySelectorAll('[data-d]').forEach((b) => { b.onclick = () => fertig(b.dataset.d === 'spiegel' || b.dataset.d === 'garderobe' ? { art: b.dataset.d } : (dinge.find((d) => d.id === b.dataset.d) || null)); });
   });
 
   // Editor (Spiegel im Spind): Hautton, Haare, Frisur, Kopfbedeckung (auch Kopftuch), Brille, Oberteil. Rückgabe: Aussehen oder null
@@ -736,14 +737,15 @@ export function createUI({ root, input, speech }) {
 
   // Garderobe (garderobe.js): Belohnungen anziehen. Reiter je Art; gesperrte Teile zeigen, wie man sie bekommt.
   // wahl(id) → neue Liste (an/aus umgeschaltet). Offen, bis „Fertig“ (oder G / Escape).
-  ui.garderobe = ({ arten, liste, wahl, start = null }) => new Promise((ok) => {
+  ui.garderobe = ({ arten, liste, wahl, start = null, stufe = null }) => new Promise((ok) => {
     let reiter = start || (liste.find((x) => x.neu) || {}).art || arten[0][0], daten = liste;
     const zu = () => { document.removeEventListener('keydown', taste, true); ebeneZu(); ok(); };
     const taste = (e) => { if (e.code === 'Escape' || e.code === 'KeyG') { e.preventDefault(); e.stopPropagation(); zu(); } };
     document.addEventListener('keydown', taste, true);
     const zeig = () => {
       const hab = daten.filter((x) => x.hab).length;
-      const k = ebeneAuf('garderobe', '<div class="ly-t-kicker">Garderobe · ' + hab + ' von ' + daten.length + ' freigeschaltet</div><h2>Dein Style</h2>' +
+      const lv = stufe ? '<div class="ly-gd-level"><b>⭐ Dorf-Level ' + stufe.level + '</b><span class="ly-gd-balken"><i style="width:' + Math.round(stufe.anteil * 100) + '%"></i></span><small>' + (stufe.naechste == null ? 'Höchstes Level erreicht!' : 'Noch ' + stufe.fehlt + ' Jetons bis Level ' + (stufe.level + 1) + (stufe.preis ? ' · dann: ' + esc(stufe.preis) : '') + ' · Jetons gibt es für Lernen und Aufgaben') + '</small></div>' : '';
+      const k = ebeneAuf('garderobe', '<div class="ly-t-kicker">Garderobe · ' + hab + ' von ' + daten.length + ' freigeschaltet</div><h2>Dein Style</h2>' + lv +
         '<div class="ly-gd-reiter">' + arten.map(([a, t]) => '<button type="button" class="ly-ed-wort' + (a === reiter ? ' an' : '') + '" data-r="' + a + '">' + t + (daten.some((x) => x.art === a && x.neu) ? ' •' : '') + '</button>').join('') + '</div>' +
         '<div class="ly-gd-gitter">' + daten.filter((x) => x.art === reiter).map((x) => '<button type="button" class="ly-gd-ding' + (x.hab ? '' : ' zu') + (x.an ? ' an' : '') + '" data-id="' + esc(x.id) + '"' + (x.hab ? '' : ' disabled') + '>' +
           '<span class="ly-gd-sy">' + (x.hab ? x.sy : '🔒') + '</span><b>' + esc(x.name) + '</b><small>' + (x.hab ? (x.an ? '✔ An' : (x.neu ? 'NEU · antippen' : 'Antippen = anziehen')) : esc(x.hinweis)) + '</small></button>').join('') + '</div>' +
@@ -1015,10 +1017,10 @@ export function createUI({ root, input, speech }) {
   });
 
   // Skate-Session: oben Zeit, Punkte und der letzte Trick; unten rechts große Knöpfe „Sprung“ und „Absteigen“ (Tablet)
-  let skateWeg = null;
+  let skateWeg = null, skateEinheit = null;
   ui.skate = (z) => {
     skateEl.parentNode.classList.toggle('ly-minispiel', !!z);   // Auftragsbox ausblenden, solange man skatet (Handy: sonst überdeckt)
-    if (!z) { skateEl.hidden = true; skateKn.hidden = true; skateEl.innerHTML = ''; skateKn.innerHTML = ''; skateWeg = null; return; }
+    if (!z) { skateEl.hidden = true; skateKn.hidden = true; skateEl.innerHTML = ''; skateKn.innerHTML = ''; skateWeg = null; skateEinheit = null; return; }
     if (skateEl.hidden) {
       skateEl.hidden = false; skateKn.hidden = false;
       skateEl.innerHTML = '<div class="ly-skate-kopf">Skate-Session</div><div class="ly-skate-werte"><span data-s="zeit"></span><b data-s="punkte"></b><span data-s="combo"></span></div><div class="ly-skate-ziel" data-s="ziel"></div><div class="ly-skate-bal" data-s="bal" hidden><i></i></div><div class="ly-skate-trick" data-s="trick">Sprung halten = höher · in der Luft 1/2/3 = Trick</div>';
@@ -1032,9 +1034,14 @@ export function createUI({ root, input, speech }) {
     if (z.weg) skateWeg = z.weg;
     if (z.kopf) skateEl.querySelector('.ly-skate-kopf').textContent = z.kopf;
     if (z.ohneTricks !== undefined) { const t = skateKn.querySelector('.ly-skate-tricks'); if (t) t.hidden = !!z.ohneTricks; }
+    if (z.minispiel !== undefined) {   // Minispiel statt Fahrt: kein „Sprung“, und „Absteigen“ heißt „Aufhören“
+      const sp = skateKn.querySelector('[data-s="sprung"]'), wg = skateKn.querySelector('[data-s="weg"]');
+      if (sp) { sp.hidden = z.minispiel === true; if (typeof z.minispiel === 'string') { const b = sp.querySelector('b') || sp.firstChild; if (b) b.textContent = z.minispiel; } } if (wg && z.minispiel) { const b = wg.querySelector('b') || wg; if (!wg.dataset.alt) wg.dataset.alt = wg.innerHTML; wg.innerHTML = 'Aufhören'; } else if (wg && wg.dataset.alt) { wg.innerHTML = wg.dataset.alt; delete wg.dataset.alt; }
+    }
     if (z.tacho != null) skateEl.querySelector('[data-s="zeit"]').textContent = z.tacho + ' km/h';
     if (z.rest != null) skateEl.querySelector('[data-s="zeit"]').textContent = '⏱ ' + Math.max(0, Math.ceil(z.rest)) + ' s';
-    if (z.punkte != null) skateEl.querySelector('[data-s="punkte"]').textContent = z.punkte + (z.punkte === 1 ? ' Punkt' : ' Punkte');
+    if (z.einheit) skateEinheit = z.einheit;
+    if (z.punkte != null) skateEl.querySelector('[data-s="punkte"]').textContent = z.punkte + ' ' + (skateEinheit ? skateEinheit[z.punkte === 1 ? 0 : 1] : (z.punkte === 1 ? 'Punkt' : 'Punkte'));
     if (z.combo != null) skateEl.querySelector('[data-s="combo"]').textContent = z.combo > 1 ? '×' + z.combo : '';
     if (z.ziel != null) skateEl.querySelector('[data-s="ziel"]').textContent = z.ziel;
     if (z.bal !== undefined) { const b = skateEl.querySelector('[data-s="bal"]'); b.hidden = z.bal === null; if (z.bal !== null) { b.querySelector('i').style.left = (50 + Math.max(-1, Math.min(1, z.bal)) * 46) + '%'; b.classList.toggle('kritisch', Math.abs(z.bal) > 0.7); } }
@@ -1106,6 +1113,7 @@ export function createUI({ root, input, speech }) {
         '<button type="button" data-w="zu"><kbd>3</kbd><span>Zurück ins Spiel</span></button>' +
         '<button type="button" data-w="ziel"><kbd>📍</kbd><span>Was soll ich gerade tun?</span></button>' +
         (ui.onKarte ? '<button type="button" data-w="karte"><kbd>🗺️</kbd><span>Karte</span></button>' : '') +
+        (ui.onGarderobe ? '<button type="button" data-w="garderobe"><kbd>👕</kbd><span>Garderobe: Belohnungen anziehen (G)</span></button>' : '') +
         (VERLAUF.length ? '<button type="button" data-w="verlauf"><kbd>💬</kbd><span>Was wurde gesagt?</span></button>' : '') +
         '<button type="button" data-w="lexikon"><kbd>📖</kbd><span>Was bedeutet …?</span></button>' +
         '<button type="button" data-w="hilfe"><kbd>🆘</kbd><span>Hilfe holen (echt, nicht im Spiel)</span></button>' +
@@ -1136,6 +1144,7 @@ export function createUI({ root, input, speech }) {
       if (w === 'atem') { await ui.atem(); if (!zu) start(); }
       else if (w === 'scan') scan(0);
       else if (w === 'karte') { ende(); ui.onKarte && ui.onKarte(); }
+      else if (w === 'garderobe') { ende(); ui.onGarderobe && ui.onGarderobe(); }
       else if (w === 'verlauf') {
         const zeilen = VERLAUF.slice(-30).map((z) => '<p class="ly-vl-z">' + (z.wer ? '<b style="color:' + esc(z.farbe) + '">' + esc(z.wer) + '</b> ' : '<i>') + esc(z.text) + (z.wer ? '' : '</i>') + '</p>').join('');
         const k = ebeneAuf('raus', '<div class="ly-t-kicker">Was wurde gesagt?</div><h2>Die letzten Sätze</h2><div class="ly-vl">' + zeilen + '</div><button type="button" class="ly-btn ly-primaer" data-a="w">Zurück</button>');

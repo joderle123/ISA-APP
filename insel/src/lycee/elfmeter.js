@@ -22,7 +22,7 @@ export function createElfmeter({ scene, steuerung, input, ui, ton = () => {}, vi
         versteckeBall(false); steuerung.frei = true; ui.skate(null); input.release('jump'); ok({ tore: L.tore });
       };
       L.neu = neu; neu();
-      ui.skate({ kopf: '⚽ Elfmeter gegen ' + keeperName, punkte: 0, ohneTricks: true, weg: L.ende, ziel: '← → zielen · Leertaste halten = Kraft, loslassen = Schuss' + (rekord ? ' · Rekord ' + rekord + '/5' : ''), trick: 'Schuss 1 von 5' });
+      ui.skate({ kopf: '⚽ Elfmeter gegen ' + keeperName, punkte: 0, ohneTricks: true, minispiel: 'Kraft (halten)', einheit: ['Tor', 'Tore'], weg: L.ende, ziel: '← → zielen · Leertaste halten = Kraft, loslassen = Schuss' + (rekord ? ' · Rekord ' + rekord + '/5' : ''), trick: 'Schuss 1 von 5' });
     });
   }
   function tick(dt) {

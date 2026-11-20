@@ -273,13 +273,10 @@ export function baueDorf({ B, C, schild, schilder, P = null, R = null }) {
     // innen: Plakate an der Nordwand (Innenseite)
     for (const [x, txt, bg] of [[15.75, 'Freitag: Nein-Sagen-Runde · freiwillig', '#ffd166'], [21.75, 'Juni: Kanu-Ausflug · Liste bei Kim', '#a8e0c8'], [27.6, 'Hausaufgabenhilfe Di + Do', '#ff9ec4']]) {
       const t = schild(txt, 1.8, 0.5, { bg, fg: '#2b3a55', rand: '#2b3a55', schrift: 'bold 54px system-ui' }); t.position.set(x, 2.75, Z0 + 0.17); schilders(t); }
-    // Tischkicker (Kästen): Feld, Rand, Beine, Stangen mit Figuren
-    { const KX = 20.5, KZ = 117.2;
-      box(KX - 0.75, KX + 0.75, 0.82, 0.88, KZ - 0.42, KZ + 0.42, hex('#2f8a3a'), { stoss: true });
-      for (const [a0, a1, b0, b1] of [[-0.78, 0.78, -0.45, -0.4], [-0.78, 0.78, 0.4, 0.45], [-0.78, -0.73, -0.45, 0.45], [0.73, 0.78, -0.45, 0.45]]) box(KX + a0, KX + a1, 0.82, 1.0, KZ + b0, KZ + b1, hex('#6b4e3a'));
-      for (const [dx, dz] of [[-0.65, -0.35], [0.65, -0.35], [-0.65, 0.35], [0.65, 0.35]]) box(KX + dx - 0.04, KX + dx + 0.04, 0, 0.82, KZ + dz - 0.04, KZ + dz + 0.04, hex('#3a3f4a'));
-      for (let i = 0; i < 6; i++) { const x = KX - 0.6 + i * 0.24; box(x - 0.012, x + 0.012, 0.95, 0.97, KZ - 0.62, KZ + 0.62, hex('#c0c6cf'));
-        for (const dz of [-0.2, 0, 0.2]) box(x - 0.025, x + 0.025, 0.86, 0.98, KZ + dz - 0.02, KZ + dz + 0.02, hex(i % 2 ? '#e85d75' : '#3f78b8')); } }
+    // Tischkicker: der Tisch selbst kommt aus kicker3d.js (Stangen, Figuren, Feld) – hier nur der feste Unterbau (nicht hindurchlaufen)
+    box(19.86, 21.14, 0, 0.74, 116.84, 117.56, hex('#4a3122'), { stoss: true });
+    // Billardtisch: Tisch und Kugeln kommen aus billard.js – hier nur der feste Unterbau
+    box(25.1, 26.9, 0, 0.6, 114.75, 115.65, hex('#3a2418'), { stoss: true });
     // Theke mit Teeküche
     box(X0 + 0.3, X0 + 4.2, 0, 1.0, Z1 - 1.1, Z1 - 0.3, hex('#8a6a4a'), { stoss: true }); box(X0 + 0.25, X0 + 4.25, 1.0, 1.06, Z1 - 1.15, Z1 - 0.25, hex('#e9e3d0'));
     if (P) {

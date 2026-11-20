@@ -9,11 +9,12 @@ export const ARTEN = [['kopf', '🧢 Kopf'], ['brille', '🕶️ Brille'], ['obe
 
 export const GARDEROBE = [
   // Kopf
-  { id: 'k_beanie', art: 'kopf', wert: 'muetze', farbe: '#2b2f4a', sy: '🧶', name: 'Skate-Beanie', hinweis: 'Kim im Tischkicker schlagen', test: (S) => (m(S).kickerSiege || 0) >= 1 },
+  { id: 'k_beanie', art: 'kopf', wert: 'muetze', farbe: '#2b2f4a', sy: '🧶', name: 'Skate-Beanie', hinweis: 'Im Tischkicker gewinnen', test: (S) => (m(S).kickerSiege || 0) >= 1 },
   { id: 'k_bucket', art: 'kopf', wert: 'bucket', farbe: '#e9c46a', sy: '👒', name: 'Fischerhut „Weiher“', hinweis: 'Foto-Bingo: 5 Motive knipsen', test: (S) => (m(S).fotoBingo || []).length >= 5 },
   { id: 'k_kopfhoerer', art: 'kopf', wert: 'kopfhoerer', farbe: '#ff7ac8', sy: '🎧', name: 'Kopfhörer „Bass“', hinweis: 'Tanzfläche: 2000 Punkte', test: (S) => (m(S).tanzRekord || 0) >= 2000 },
   { id: 'k_propeller', art: 'kopf', wert: 'propeller', farbe: '#5ec8ff', sy: '🚁', name: 'Propellermütze', hinweis: 'S-K-A-T-E im Skatepark komplett', test: (S) => (m(S).skate5 || '').length >= 5 },
   { id: 'k_cap_gold', art: 'kopf', wert: 'cap', farbe: '#ffd166', sy: '🧢', name: 'Goldene Cap', hinweis: '16 Sticker im Dorf finden', test: (S) => (m(S).sticker || []).length >= 16 },
+  { id: 'k_billard', art: 'kopf', wert: 'cap', farbe: '#151515', sy: '🎱', name: 'Cap „8-Ball“', hinweis: 'Im Billard einmal gewinnen', test: (S) => (m(S).billardSiege || 0) >= 1 },
   { id: 'k_krone', art: 'kopf', wert: 'krone', farbe: '#ffd23f', sy: '👑', name: 'Krone „Dorf-Legende“', hinweis: 'Alle 24 Sticker finden', test: (S) => (m(S).sticker || []).length >= 24 },
   // Brillen
   { id: 'b_sonne', art: 'brille', wert: 'sonne', farbe: '#1b1f27', sy: '🕶️', name: 'Sonnenbrille', hinweis: '3 Botengänge im Dorf', test: (S) => ((m(S).boten && m(S).boten.n) || 0) >= 3 },
@@ -32,11 +33,35 @@ export const GARDEROBE = [
   { id: 's_weiss', art: 'schuhe', wert: '#f4f4f0', sy: '🤍', name: 'Sneaker „Weiß“', hinweis: '2 Herausforderungen von Freund:innen', test: (S) => ((m(S).hf && m(S).hf.fertig) || []).length >= 2 },
   { id: 's_gold', art: 'schuhe', wert: '#ffd166', sy: '✨', name: 'Sneaker „Gold“', hinweis: 'Foto-Bingo komplett (9 Motive)', test: (S) => (m(S).fotoBingo || []).length >= 9 },
   // Haustiere (laufen mit)
-  { id: 't_ratte', art: 'tier', wert: 'ratte', farbe: '#9a9a9e', sy: '🐀', name: 'Ratte „Krümel“', hinweis: 'Kim im Jugendhaus: 2-mal Kicker spielen', test: (S) => (m(S).kicker || 0) >= 2 },
+  { id: 't_ratte', art: 'tier', wert: 'ratte', farbe: '#9a9a9e', sy: '🐀', name: 'Ratte „Krümel“', hinweis: 'Im Jugendhaus 2-mal Tischkicker spielen', test: (S) => (m(S).kicker || 0) >= 2 },
   { id: 't_frettchen', art: 'tier', wert: 'frettchen', farbe: '#d9c3a0', sy: '🦡', name: 'Frettchen „Flitzer“', hinweis: '3 Herausforderungen von Freund:innen', test: (S) => ((m(S).hf && m(S).hf.fertig) || []).length >= 3 },
   { id: 't_igel', art: 'tier', wert: 'igel', farbe: '#7a5a3a', sy: '🦔', name: 'Igel „Stachel“', hinweis: 'Im Park am Weiher die Enten beobachten', test: (S) => (m(S).enten || 0) >= 1 },
   { id: 't_hamster', art: 'tier', wert: 'hamster', farbe: '#e8b070', sy: '🐹', name: 'Hamster „Pommes“', hinweis: '5 Botengänge im Dorf', test: (S) => ((m(S).boten && m(S).boten.n) || 0) >= 5 },
   { id: 't_schildkroete', art: 'tier', wert: 'schildkroete', farbe: '#5f8a4a', sy: '🐢', name: 'Schildkröte „Turbo“', hinweis: 'S-K-A-T-E auf Zeit: unter 45 Sekunden', test: (S) => !!m(S).skate5Rekord && m(S).skate5Rekord < 45 },
 ];
+
+// Dorf-Level (wie ein Pass – aber kostenlos, ohne Zeitlimit): zählt ALLE je verdienten Jetons, auch fürs Lernen (Arbeitsblätter,
+// Lektionen). Jedes zweite Level bringt ein Teil für die Garderobe.
+export const LEVEL_AB = [0, 4, 9, 15, 22, 30, 39, 49, 60, 72, 85, 99, 114, 130, 147];
+export function levelVon(gesamt = 0) {
+  let l = 1; while (l < LEVEL_AB.length && gesamt >= LEVEL_AB[l]) l++;
+  const naechste = LEVEL_AB[l] ?? null;
+  return { level: l, max: LEVEL_AB.length, naechste, fehlt: naechste == null ? 0 : naechste - gesamt, anteil: naechste == null ? 1 : (gesamt - LEVEL_AB[l - 1]) / (naechste - LEVEL_AB[l - 1]) };
+}
+const lv = (S) => levelVon(S.jetonsGesamt || 0).level;
+GARDEROBE.push(
+  { id: 'l_cap_rot', art: 'kopf', wert: 'cap', farbe: '#d6452f', sy: '🧢', name: 'Cap „Rot“', hinweis: 'Dorf-Level 2', level: 2, test: (S) => lv(S) >= 2 },
+  { id: 'l_retro', art: 'brille', wert: null, farbe: '#b5651d', sy: '👓', name: 'Retro-Brille', hinweis: 'Dorf-Level 3', level: 3, test: (S) => lv(S) >= 3 },
+  { id: 'l_schwarz', art: 'schuhe', wert: '#2b2b33', sy: '🖤', name: 'Sneaker „Schwarz“', hinweis: 'Dorf-Level 4', level: 4, test: (S) => lv(S) >= 4 },
+  { id: 'l_navy', art: 'oben', wert: '#2b3a55', sy: '🔵', name: 'Hoodie „Navy“', hinweis: 'Dorf-Level 5', level: 5, test: (S) => lv(S) >= 5 },
+  { id: 'l_bandana', art: 'kopf', wert: 'bandana', farbe: '#e85d75', sy: '🎀', name: 'Bandana', hinweis: 'Dorf-Level 6', level: 6, test: (S) => lv(S) >= 6 },
+  { id: 'l_pink', art: 'schuhe', wert: '#ff7ac8', sy: '💗', name: 'Sneaker „Pink“', hinweis: 'Dorf-Level 7', level: 7, test: (S) => lv(S) >= 7 },
+  { id: 'l_minze', art: 'oben', wert: '#7fd4b0', sy: '🌿', name: 'Hoodie „Minze“', hinweis: 'Dorf-Level 8', level: 8, test: (S) => lv(S) >= 8 },
+  { id: 'l_vogel', art: 'tier', wert: 'wellensittich', farbe: '#7CFC9A', sy: '🦜', name: 'Wellensittich „Pieps“', hinweis: 'Dorf-Level 9', level: 9, test: (S) => lv(S) >= 9 },
+  { id: 'l_stirnband', art: 'kopf', wert: 'stirnband', farbe: '#ffd166', sy: '🏅', name: 'Stirnband „Gold“', hinweis: 'Dorf-Level 10', level: 10, test: (S) => lv(S) >= 10 },
+  { id: 'l_sunset', art: 'oben', wert: '#ff8c42', sy: '🌅', name: 'Jacke „Sonnenuntergang“', hinweis: 'Dorf-Level 12', level: 12, test: (S) => lv(S) >= 12 },
+  { id: 'l_goldbrille', art: 'brille', wert: 'sonne', farbe: '#ffd166', sy: '😎', name: 'Goldene Sonnenbrille', hinweis: 'Dorf-Level 13', level: 13, test: (S) => lv(S) >= 13 },
+  { id: 'l_krone', art: 'kopf', wert: 'krone', farbe: '#b197fc', sy: '👑', name: 'Krone „Level 15“', hinweis: 'Dorf-Level 15 (höchstes)', level: 15, test: (S) => lv(S) >= 15 },
+);
 
 export const freigeschaltet = (S) => GARDEROBE.filter((g) => { try { return g.test(S); } catch (e) { return false; } }).map((g) => g.id);

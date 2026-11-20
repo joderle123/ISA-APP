@@ -48,7 +48,7 @@ const ROBOTER = [
 ];
 
 export const KABEL = [['cdi', 14, -62.4], ['kantine', 18.6, -8.2], ['gang', -15.5, -15.8], ['innenhof', -17.2, -44.9], ['skate', -36.4, 6.4]];
-export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton, blattWahl, freiwurf, skate, pausenFussball = null, volley = null, volleyAktiv = () => false, elfmeter = null, elfmeterAktiv = () => false, tt3d = null, kicker = null, tanzen = null, dosen = null, dosenAktiv = () => false, botengang = null, spindAuf = null, partner = () => null, freund = () => {}, onKabel = null }) {
+export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton, blattWahl, freiwurf, skate, pausenFussball = null, volley = null, volleyAktiv = () => false, elfmeter = null, elfmeterAktiv = () => false, tt3d = null, kicker = null, billard = null, tanzen = null, dosen = null, dosenAktiv = () => false, botengang = null, spindAuf = null, partner = () => null, freund = () => {}, onKabel = null }) {
   const tt = welt.orte.tischtennis;
   const liste = [];
   let botenFrage = 0;   // Botengang: zweimal drücken = abbrechen
@@ -71,7 +71,8 @@ export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton
   dazu(-6.8, -9, 1.4, 'Pinnwand lesen', 'pinnwand', { prio: 1 });
   dazu(-15.05, -12.55, 1.0, 'Zettel in den Sorgen-Briefkasten werfen', 'sorgen', { prio: 1 });
   dazu(-40, 99.9, 1.4, 'Am Kiosk etwas holen', 'kiosk', { prio: 1 });   // Park am Weiher
-  dazu(20.5, 116.3, 1.2, 'Tischkicker spielen', 'kicker', { prio: 1 });   // Jugendhaus
+  dazu(20.5, 116.2, 1.2, 'Tischkicker spielen', 'kicker', { prio: 1 });   // Jugendhaus
+  if (billard) dazu(24.6, 115.2, 1.3, 'Billard spielen', 'billard', { prio: 1 });
   dazu(25.5, 112.9, 1.2, 'Musik wechseln', 'jukebox', { prio: 1 });
   dazu(9.4, 125.0, 1.4, 'Tee holen', 'tee', { prio: 1 });
   if (tanzen) dazu(23.4, 123.4, 1.5, 'Tanzfläche: im Takt tanzen', 'tanzen', { prio: 1 });
@@ -262,8 +263,14 @@ export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton
         ui.toast('<b>💃 ' + r.punkte + ' Punkte' + (neu && alt ? ' – neuer Rekord!' : '') + '</b><span>Kim: ' + KIM + '</span>', r.sterne >= 3 ? 'ly-t-ent' : undefined);
         return;
       }
+      case 'billard': {   // Jugendhaus: Billard gegen die beste Freundin / den besten Freund (sonst Kim)
+        const r = await billard(partner()); if (!r || r.abbruch) return;
+        s.merke.billard = (s.merke.billard || 0) + 1; if (r.gewonnen) s.merke.billardSiege = (s.merke.billardSiege || 0) + 1; sichern();
+        ui.toast('<b>🎱 ' + (r.gewonnen ? 'Gewonnen!' : 'Verloren – knapp.') + '</b><span>' + (r.gewonnen ? '„Revanche. Aber erst nach dem Tee.“' : '„Gut gespielt. Nochmal?“') + '</span>', r.gewonnen ? 'ly-t-ent' : undefined);
+        return;
+      }
       case 'kicker': {   // Jugendhaus: kurzes Duell – Spaß, kein Druck; das Ergebnis ist mal so, mal so
-        const r = kicker ? await kicker() : { ich: 3 + Math.floor(Math.random() * 4), er: 3 + Math.floor(Math.random() * 4) };
+        const r = kicker ? await kicker(partner()) : { ich: 3 + Math.floor(Math.random() * 4), er: 3 + Math.floor(Math.random() * 4) };
         if (!r || (!r.ich && !r.er)) return;   // gleich wieder aufgehört
         const { ich, er } = r;
         s.merke.kicker = (s.merke.kicker || 0) + 1; if (ich > er) s.merke.kickerSiege = (s.merke.kickerSiege || 0) + 1; ton('klack'); sichern();

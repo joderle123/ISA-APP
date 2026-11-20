@@ -40,7 +40,7 @@ export function createDosen({ scene, steuerung, input, ui, ton = () => {}, vib =
       const neu = () => { L.phase = 'zielen'; L.t = 0; L.kraft = 0; L.zx = X + (Math.random() - 0.5) * 0.3; ball.visible = true; ziel.visible = true; L.p.set(X - 0.25, 1.35, wurfZ + 0.3); ball.position.copy(L.p); };
       L.ende = () => { if (!lauf) return; lauf = null; ball.visible = ziel.visible = false; steuerung.frei = true; ui.skate(null); input.release('jump'); ok({ dosen: gefallen(), wuerfe: L.wurf }); setTimeout(aufbauen, 4000); };
       L.neu = neu; neu();
-      ui.skate({ kopf: '🥫 Dosenwerfen', punkte: 0, ohneTricks: true, weg: L.ende, ziel: '← → zielen · Leertaste halten = höher, loslassen = Wurf' + (rekord ? ' · Rekord ' + rekord + '/6' : ''), trick: 'Ball 1 von 3' });
+      ui.skate({ kopf: '🥫 Dosenwerfen', punkte: 0, ohneTricks: true, minispiel: 'Kraft (halten)', einheit: ['Dose', 'Dosen'], weg: L.ende, ziel: '← → zielen · Leertaste halten = höher, loslassen = Wurf' + (rekord ? ' · Rekord ' + rekord + '/6' : ''), trick: 'Ball 1 von 3' });
     });
   }
   function dosenTick(dt) {

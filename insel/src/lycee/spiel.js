@@ -40,11 +40,15 @@ import { createZufall } from './zufall.js';
 // Das Schuljahr vergeht: Monat auf der Zeitkarte (die Kapitel liegen Wochen auseinander, nicht direkt hintereinander)
 const MONAT = { 1: 'September', 2: 'September', 3: 'Oktober', 4: 'November', 5: 'Dezember', 6: 'Februar', 7: 'März', 8: 'April', 9: 'Juni', 10: 'Juli' };
 import { createInteraktionen } from './interaktion.js';
-import { kickerSpiel } from './kicker.js';
+import { createKicker3d } from './kicker3d.js';
+import { createBillard } from './billard.js';
 import { createBotengang } from './botengang.js';
 import { createBuchstaben } from './buchstaben.js';
 import { tanzSpiel } from './tanz.js';
 import { createDosen } from './dosen.js';
+import { GARDEROBE, ARTEN as GD_ARTEN, freigeschaltet, levelVon } from './garderobe.js';
+import { createHaustier } from './haustier.js';
+import { herausforderungPruefen } from './herausforderungen.js';
 import { FAEDEN } from './faeden.js';
 import { GEDAECHTNIS, RUF, BELAUSCHT } from './gedaechtnis.js';
 import { PLAUDERN, BANK } from './stimmen.js';
@@ -758,11 +762,67 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   async function spielerFigur(i) {
     tiere.kabelSync((S && S.merke && S.merke.kabel) || []);
     if (spieler) { scene.remove(spieler.group); }
-    spieler = await ladePerson(veil, { ...(FIGUREN[i] || FIGUREN[0]), ...((S && S.aussehen) || {}) });   // Aussehen aus dem Spind-Spiegel
+    spieler = await ladePerson(veil, { ...(FIGUREN[i] || FIGUREN[0]), ...((S && S.aussehen) || {}), ...garderobeLook() });   // Aussehen aus dem Spind-Spiegel, darüber Belohnungen aus der Garderobe
     spieler.group.add(fussSchatten()); scene.add(spieler.group); steuerung.figur = spieler; steuerung.sitzSuche = sitzSuche;
     spieler.spiele('Idle');
-    anhaengerDran();
+    anhaengerDran(); tierDran();
   }
+  // ---------- Garderobe: verdiente Kappen, Brillen, Oberteile, Schuhe, Haustier (garderobe.js) ----------
+  const gd = () => { S.garderobe = S.garderobe || { an: {}, gesehen: [], neu: [] }; return S.garderobe; };
+  const gdDing = (id) => GARDEROBE.find((g) => g.id === id);
+  function garderobeLook() {
+    if (!S || !S.garderobe) return {};
+    const an = S.garderobe.an || {}, o = {}, k = gdDing(an.kopf), b = gdDing(an.brille), ob = gdDing(an.oben), sc = gdDing(an.schuhe);
+    if (k) { o.kopf = k.wert; o.kopfFarbe = k.farbe; }
+    if (b) { o.brille = b.farbe; o.brilleArt = b.wert; }
+    if (ob) o.oben = ob.wert;
+    if (sc) o.schuhe = sc.wert;
+    return o;
+  }
+  const haustier = createHaustier({ scene, steuerung });
+  const tierDran = () => { const t = S && S.garderobe && gdDing(S.garderobe.an.tier); haustier.setArt(t ? t.wert : null, t ? t.farbe : null); };
+  let gdUhr = 0;
+  function garderobePruefen(dt) {
+    gdUhr -= dt; if (gdUhr > 0 || !S || !S.merke) return; gdUhr = 2;
+    const G = gd(), lvJetzt = levelVon(S.jetonsGesamt || 0).level;
+    if (lvJetzt > (G.level || 1)) { G.level = lvJetzt; ui.toast('<b>⭐ Dorf-Level ' + lvJetzt + '!</b><span>Weiter so. Neue Teile in der Garderobe (G).</span>', 'ly-t-ent'); ton('melodie2'); sichern(); }
+    const neu = freigeschaltet(S).filter((id) => !G.gesehen.includes(id));
+    if (!neu.length) return;
+    G.gesehen.push(...neu); G.neu.push(...neu); sichern();
+    if (neu.length > 2) { ui.toast('<b>🎁 ' + neu.length + ' neue Teile in deiner Garderobe</b><span>Taste G (oder ☰ → Garderobe) zum Anziehen</span>', 'ly-t-ent'); return; }
+    neu.forEach((id, i) => { const d = gdDing(id); setTimeout(() => ui.toast('<b>🎁 Neu: ' + d.sy + ' ' + d.name + '</b><span>Freigeschaltet! Taste G zum Anziehen.</span>', 'ly-t-ent'), 600 + i * 2400); });
+    ton('melodie2');
+  }
+  // Herausforderungen von Freund:innen (herausforderungen.js): je Abschnitt höchstens eine neue Nachricht; geschafft = Antwort, Herz, Jetons
+  let hfUhr = 3;
+  function herausforderungTick(dt) {
+    hfUhr -= dt; if (hfUhr > 0 || !S || !S.merke || imGespraech || !laeuft || S.schritt < 3) return; hfUhr = 5;
+    const kap = (SCHRITTE[S.schritt] || {}).kap || 1, r = herausforderungPruefen(S.merke, kap, S.schritt);
+    if (!r) return;
+    const hf = S.merke.hf = S.merke.hf || { fertig: [] }; hf.fertig = hf.fertig || [];
+    const h = r.neu || r.geschafft, wer = (LEUTE[h.von] && LEUTE[h.von].name) || h.von;
+    if (r.neu) { hf.aktiv = h.id; hf.schritt = S.schritt; (S.merke.nachrichten = S.merke.nachrichten || []).push([wer, h.text]); }
+    else { hf.aktiv = null; hf.fertig.push(h.id); hf.schritt = S.schritt; (S.merke.nachrichten = S.merke.nachrichten || []).push([wer, '✅ ' + h.danke]); herz(h.von, 1); setTimeout(() => jetons(2, 'Herausforderung von ' + wer.split(' ')[0]), 6500); }
+    nachrichtenRein(); sichern();
+  }
+  ui.onGarderobe = async () => {
+    if (!S || !laeuft || imGespraech || ui.ebeneArt() || foto) return;
+    const G = gd(), hab = new Set(freigeschaltet(S));
+    const liste = () => GARDEROBE.map((d) => ({ id: d.id, art: d.art, sy: d.sy, name: d.name, hinweis: d.hinweis, hab: hab.has(d.id), an: G.an[d.art] === d.id, neu: G.neu.includes(d.id) }));
+    let umziehen = false;
+    input.setEnabled(false);
+    try {
+      const st = levelVon(S.jetonsGesamt || 0), preis = GARDEROBE.find((g) => g.level === st.level + 1);
+      await ui.garderobe({ arten: GD_ARTEN, liste: liste(), stufe: { ...st, preis: preis ? preis.sy + ' ' + preis.name : null }, wahl: async (id) => {
+        const d = gdDing(id); if (!d || !hab.has(id)) return liste();
+        G.an[d.art] = G.an[d.art] === id ? null : id; G.neu = G.neu.filter((x) => x !== id);
+        if (d.art === 'tier') tierDran(); else umziehen = true;
+        ton('pling'); sichern(); return liste();
+      } });
+    } finally { input.setEnabled(true); }
+    G.neu = []; sichern();
+    if (umziehen) { const p = steuerung.pos.clone(), y = spieler.group.rotation.y; await spielerFigur(S.figur); spieler.group.position.copy(p); spieler.group.rotation.y = y; }
+  };
   // Anhänger (Lila Bär) an der Hüfte der Spielfigur
   function anhaengerDran() {
     if (!spieler) return;
@@ -2486,6 +2546,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   async function spindAuf() {
     const dinge = alleDinge().filter((d) => (S.besitz || []).includes(d.id));
     const w = await ui.spind({ dinge, lampe: S.spindLampe || '', deck: S.deck || '', jetons: S.jetons || 0, gesamt: S.jetonsGesamt || 0, lernkarten: (S.lernkarten || []).length, anhaenger: S.anhaenger || null });
+    if (w && w.art === 'garderobe') { await ui.onGarderobe(); return; }
     if (w && w.art === 'spiegel') {
       const neu = await ui.editor({ aussehen: { ...(FIGUREN[S.figur] || FIGUREN[0]), ...(S.aussehen || {}) } });
       if (neu) { S.aussehen = neu; sichern(); const p = steuerung.pos.clone(), y = spieler.group.rotation.y; await spielerFigur(S.figur); spieler.group.position.copy(p); spieler.group.rotation.y = y; ui.toast('<b>Spiegel</b><span>Passt. Sieht nach dir aus.</span>'); }
@@ -2497,6 +2558,10 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (w && w.art === 'anhaenger') { S.anhaenger = S.anhaenger === w.wert ? null : w.wert; sichern(); anhaengerDran(); ui.toast('<b>' + esc(w.name) + '</b><span>' + (S.anhaenger ? 'Hängt jetzt an dir.' : 'Bleibt im Spind.') + '</span>'); }
   }
   let kickerAn = false;   // Tischkicker-Overlay offen: keine Zufallsbegegnungen
+  // ---------- Tischkicker in 3D im Jugendhaus (kicker3d.js) ----------
+  const kicker3d = createKicker3d({ scene, camera, steuerung, ui, rr, ton: (a) => (a === 'klack' ? geraeusch('pfosten') : ton(a)), vib, canvas: rr.renderer.domElement, holeFigur: async (id) => (id ? holeSpielFigur(id) : null) });
+  // ---------- Billard im Jugendhaus (billard.js) ----------
+  const billard = createBillard({ scene, camera, steuerung, ui, rr, ton, vib, canvas: rr.renderer.domElement, holeFigur: async (id) => (id ? holeSpielFigur(id) : null) });
   // ---------- Dosenwerfen auf dem Marktplatz (dosen.js) ----------
   const dosen = createDosen({ scene, steuerung, input, ui, ton, vib });
   // ---------- Tanzfläche im Jugendhaus: 3×3 Leuchtfliesen, blinken beim Tanz-Spiel im Takt ----------
@@ -2522,7 +2587,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         tanzFliesen.forEach((f) => { f.material.opacity = 0.45; });
       }
     },
-    kicker: async () => { if (fahrt) absteigen(); ui.hinweis(null); input.setEnabled(false); kickerAn = true; try { return await kickerSpiel({ gegner: 'Kim', leicht: !!ui.leicht || (S.merke.kicker || 0) - (S.merke.kickerSiege || 0) >= 3, ton }); } finally { kickerAn = false; input.release('jump'); input.setEnabled(true); } },
+    billard: async (pa) => { if (fahrt) absteigen(); ui.hinweis(null); input.setEnabled(false); kickerAn = true; try { return await billard.spiel({ gegner: pa ? pa.name : 'Kim', gegnerId: pa ? pa.id : null, leicht: !!ui.leicht || (S.merke.billard || 0) - (S.merke.billardSiege || 0) >= 3 }); } finally { kickerAn = false; input.release('jump'); input.setEnabled(true); } },
+    kicker: async (pa) => { if (fahrt) absteigen(); ui.hinweis(null); input.setEnabled(false); kickerAn = true; try { return await kicker3d.spiel({ gegner: pa ? pa.name : 'Kim', gegnerId: pa ? pa.id : null, leicht: !!ui.leicht || (S.merke.kicker || 0) - (S.merke.kickerSiege || 0) >= 3 }); } finally { kickerAn = false; input.release('jump'); input.setEnabled(true); } },
     tt3d: welt.orte.tischtennis ? async (pa) => { ui.hinweis(null); const STAERKE = { ben: 1.4, jo: 1.6, ayla: 1.3, dario: 1.2, yusuf: 1.1 };
       // Leute direkt an der Platte gehen kurz zur Seite (sie stehen sonst im Spielfeld)
       const T = welt.orte.tischtennis, platz = statisten.filter((x) => !x.weg && Math.hypot(x.f.group.position.x - T.x, x.f.group.position.z - T.z) < 3.6);
@@ -2673,13 +2739,19 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     setTimeout(() => missionTank(i.tu), 0);
     if (i.tu === 'sitzen') { await ia.tu(i); sperreBis = performance.now() + 350; return; }
     if (i.tu === 'hund') { await hundBesuch(); return; }
+    if (i.tu === 'tier') {   // eigenes Haustier: freut sich, kleiner Satz
+      const t = gdDing(S.garderobe.an.tier), name = t ? t.name.split('„')[1].replace('“', '') : 'Dein Tier';
+      const SATZ = { ratte: ['putzt sich die Schnurrhaare.', 'schnuppert an deiner Hand.', 'macht einen Freudensprung.'], frettchen: ['hüpft seitlich. Das heißt: Spielen!', 'macht leise „dook dook“.', 'rollt sich einmal um.'], igel: ['schnauft zufrieden.', 'zeigt die Nase. Mutig.', 'rollt sich halb ein. Und wieder auf.'], hamster: ['stopft die Backen voll. Womit?', 'putzt sich das Gesicht.', 'schaut dich mit Knopfaugen an.'], schildkroete: ['streckt langsam den Kopf raus.', 'blinzelt. Sehr langsam.', 'macht einen Schritt. Rekord!'] };
+      const l = SATZ[t ? t.wert : 'ratte'] || SATZ.ratte; S.merke.tierStreicheln = (S.merke.tierStreicheln || 0) + 1;
+      haustier.freu(); ton('pling'); vib(10); ui.toast('<b>' + (t ? t.sy : '🐾') + ' ' + name + '</b><span>' + name + ' ' + l[S.merke.tierStreicheln % l.length] + '</span>'); sperreBis = performance.now() + 900; sichern(); return;
+    }
     if (i.tu === 'statist' && i.st.d.stamm) { await stammRede(i.st); return; }
     if (i.tu === 'statist' && i.st.d.sitPerson) { await sitRede(i.st); return; }
     if (i.tu === 'statist') { gruss(i.st); sperreBis = performance.now() + 1200; return; }
     if (i.tu === 'zufall') { imGespraech = true; input.setEnabled(false); steuerung.frei = false; ui.hinweis(null);
       try { await zufall.tu(); } finally { ui.dialogZu(); imGespraech = false; input.setEnabled(true); steuerung.frei = true; sperreBis = performance.now() + 500; } return; }
     // Minispiele in der Welt (eigene Steuerung, enden bei einem Gespräch): nicht als Gespräch behandeln – sonst enden sie sofort
-    if (['skate', 'volley', 'elfmeter', 'dosen'].includes(i.tu)) { ui.hinweis(null); await ia.tu(i); sperreBis = performance.now() + 500; return; }
+    if (['skate', 'volley', 'elfmeter', 'dosen', 'kicker', 'billard'].includes(i.tu)) { ui.hinweis(null); await ia.tu(i); sperreBis = performance.now() + 500; return; }
     imGespraech = true; input.setEnabled(false); steuerung.frei = false; ui.hinweis(null); vib(12);
     try { await ia.tu(i); } finally { imGespraech = false; input.setEnabled(true); steuerung.frei = true; sperreBis = performance.now() + 350; }
   }
@@ -2946,10 +3018,14 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (fahrt) fahrtTick(dt);
     if (volley.aktiv() && imGespraech) volley.beenden(); else if (laeuft && !ui.ebeneArt()) volley.tick(dt);
     if (elfmeter.aktiv() && imGespraech) elfmeter.beenden(); else if (laeuft && !ui.ebeneArt()) elfmeter.tick(dt);
-    if (dosen.aktiv() && imGespraech) dosen.beenden(); else if (laeuft && !ui.ebeneArt()) dosen.tick(dt);   // Gespräch beginnt: Runde endet; Menü offen: Pause
+    if (dosen.aktiv() && imGespraech) dosen.beenden(); else if (laeuft && !ui.ebeneArt()) dosen.tick(dt);
+    if (laeuft && !ui.ebeneArt()) kicker3d.tick(dt);
+    if (laeuft && !ui.ebeneArt()) billard.tick(dt);   // Gespräch beginnt: Runde endet; Menü offen: Pause
     verkehr.tick(dt, imGespraech || !laeuft);
     sticker.tick(dt, !!(laeuft && S && !imGespraech));
     buchstaben.tick(dt, !!(laeuft && S && !imGespraech && !ui.ebeneArt()));
+    haustier.tick(dt, !!(laeuft && S && spieler && spieler.group.visible));
+    if (laeuft) { garderobePruefen(dt); herausforderungTick(dt); }
     botengang.tick(dt, { sichtbar: !!(laeuft && S && !imGespraech && !ui.ebeneArt() && !volley.aktiv() && !elfmeter.aktiv() && !kickerAn), faehrt: !!fahrt });
     entenTick(dt, performance.now() / 1000);
     fahrerTick(dt, imGespraech || !laeuft);
@@ -2965,6 +3041,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       spieler.blick(ziel ? spielerBlickV.set(ziel.x, 1.5, ziel.z) : null);
       spieler.update(dt);
     }
+    // Mitspielende in Minispielen (Volleyball, Elfmeter, Kicker, Billard) bewegen sich – Tischtennis macht das selbst
+    if (!tt3d.aktiv()) for (const f of Object.values(ttFiguren)) if (f.group.parent) f.update(dt);
   }, { order: -50, always: true });
   loop.add((dt, t) => {
     // Menschen: Bewegungen, zum Spieler drehen, Schilder nur nah
@@ -3083,9 +3161,11 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     naechste = imGespraech || steuerung.brett ? null : wenNah();
     iaNah = !naechste && !imGespraech && !probe && !steuerung.brett ? ia.naechste(p) : null;
     if (!naechste && !iaNah && !imGespraech && !probe && !steuerung.brett) iaNah = zufall.naechste(p);
+    if (!naechste && !iaNah && !imGespraech && !probe && !steuerung.brett && haustier.art && Math.hypot(p.x - haustier.pos.x, p.z - haustier.pos.z) < 1.3) { const t = gdDing(S.garderobe.an.tier); iaNah = { tu: 'tier', text: (t ? t.name.split('„')[1].replace('“', '') : 'Tier') + ' streicheln' }; }
     if (!naechste && !iaNah && !imGespraech && !probe && !steuerung.brett && Math.hypot(p.x - hund.pos.x, p.z - hund.pos.z) < 1.9) iaNah = { tu: 'hund', text: S.merke.hundFreund ? 'Bonbon streicheln' : 'Zu Bonbon gehen', x: hund.pos.x, z: hund.pos.z };
     if (!naechste && !iaNah && !imGespraech && !probe && !steuerung.brett) { const st = statistNah(p); if (st) { const sg = (st.d.stamm && STAMM.find((q) => q.id === st.d.stamm)) || (st.d.sitPerson && SIT_LEUTE[st.d.sitPerson]); iaNah = { tu: 'statist', text: sg && !sg.stumm ? 'Mit ' + sg.name.split(' ')[0] + ' reden' : 'Hallo sagen', st, x: st.p.x, z: st.p.z }; } }
-    ui.hinweis(naechste ? 'Mit ' + naechste.def.name + ' reden' : iaNah ? iaNah.text : null);
+    const imMinispiel = volley.aktiv() || elfmeter.aktiv() || dosen.aktiv() || kicker3d.aktiv() || billard.aktiv() || kickerAn;
+    ui.hinweis(imMinispiel ? null : naechste ? 'Mit ' + naechste.def.name + ' reden' : iaNah ? iaNah.text : null);
     if (!imGespraech && !gesperrt() && (input.state.actionTap || input.state.action)) { if (naechste) rede(naechste.id); else if (iaNah) aktion(iaNah); }
     // Orte, die etwas auslösen
     const st = SCHRITTE[S.schritt];
@@ -3163,7 +3243,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     teleport: (ort, yaw) => { const o = typeof ort === 'string' ? welt.orte[ort] : ort; steuerung.teleport(o.x, o.z, yaw !== undefined ? yaw : o.yaw); },
     rede, los, audio, SITZ, input, get spruch() { return { wer: !!spruchWer }; }, get naechste() { return naechste && naechste.id; },
     get probe() { return probe; }, set mutTempo(v) { mutTempo = v; },
-    daten: { SCHRITTE, STATISTEN, LEUTE, BLAETTER, MATHE, LEKTIONEN, GESPRAECHE }, ia, aktion, botengang, buchstaben, dosen, get iaNah() { return iaNah && iaNah.tu; },
+    daten: { SCHRITTE, STATISTEN, LEUTE, BLAETTER, MATHE, LEKTIONEN, GESPRAECHE }, ia, aktion, botengang, buchstaben, dosen, haustier, kicker3d, billard, garderobe: () => S && S.garderobe, get iaNah() { return iaNah && iaNah.tu; },
     hs, tt3d, zufall, fussball, volley, verkehr, elfmeter, sticker, fahrer, get fahrt() { return fahrt; }, get spieler() { return spieler; }, vorspann: (k) => vorspann(SCHRITTE.find((x) => (x.kap || 1) === k) || SCHRITTE[0]), gesteZu, handschlagMit, get statisten() { return statisten; }, musik,
   };
 

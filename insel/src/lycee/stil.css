@@ -1103,3 +1103,7 @@ kbd { display: inline-block; min-width: 1.5em; padding: 0 .35em; margin-right: .
 .ly-gd-ding.an { border-color: var(--blau); background: #eef5ff; }
 .ly-gd-ding.zu { background: #f4f4f2; cursor: default; opacity: .85; }
 .ly-gd-ding.zu .ly-gd-sy { filter: grayscale(1); }
+.ly-gd-level { display: grid; grid-template-columns: auto 1fr; gap: 4px 10px; align-items: center; margin: 2px 0 8px; }
+.ly-gd-level small { grid-column: 1 / -1; color: #5d6573; font-size: 12px; }
+.ly-gd-balken { height: 10px; border-radius: 999px; background: #e6e2d8; overflow: hidden; }
+.ly-gd-balken i { display: block; height: 100%; background: linear-gradient(90deg, #ffd166, #ff9f1c); border-radius: 999px; }

@@ -8,10 +8,10 @@ keine Geschlechts-Annahmen über die Spielfigur, nichts Sexuelles, keine Familie
 |---|---|---|
 | 1 | Leben im Dorf: Tagesablauf, Verkehr (Tempo 30, hält vor Menschen), Geräusche, Figuren mit Routinen | Verkehr, Klingel, fahrende Jugendliche, Enten, Park, Markt, Baustelle, Jugendhaus fertig (20.11.) |
 | 2 | Freizeit: Skatepark, freie Fahrt, Rennen, Fußball, Volleyball, Turniere mit sozialer Seite (Teams wählen, verlieren, fair bleiben) | Fahrt, Rennen, Rampen, Skatepark, Fußball, Volleyball, Elfmeter, Teams wählen, Tischkicker-Minispiel, Botengänge, S-K-A-T-E, Tanzfläche, Dosenwerfen, Foto-Bingo fertig (20.11.) – offen: Turniere |
-| 3 | Freundschaften: Bogen je Freund:in über das Jahr (Streit, Eifersucht, Versöhnung), Klassenchat mit Dynamik (ausgeschlossen werden, Screenshots) | offen |
+| 3 | Freundschaften: Bogen je Freund:in über das Jahr (Streit, Eifersucht, Versöhnung), Klassenchat mit Dynamik (ausgeschlossen werden, Screenshots) | Herausforderungen von Freund:innen aufs Handy (20.11.) – Bögen offen |
 | 4 | Folgen und Journal: Entscheidungen wirken Wochen später (Vertrauen, wer grüßt), Journal zeigt Muster („Du sagst oft Ja, wenn Ältere fragen“) | offen |
 | 5 | Lehrer- und Klassen-Modus: Besprechungskarten, Beamer-Modus (Klasse stimmt ab), Auswertung ohne Personendaten | offen |
-| 6 | Grafik, Ton, Tablet: Packs einbauen (s. u.), Musik je Ort, Bewegungen, Touch-Steuerung | offen |
+| 6 | Grafik, Ton, Tablet: Packs einbauen (s. u.), Musik je Ort, Bewegungen, Touch-Steuerung | Packs + 5 Mixamo-Bewegungen eingebaut; Garderobe mit Belohnungen und Haustieren (20.11.) |
 | 7 | Kritische Durchsicht (Sicherheit, Ton, Logik), Durchlauf K1–10, Begleitheft | offen |
 
 ## Packs (alle legal, frei; geladen nach scratchpad/packs, nur CC0 eingebaut)
