@@ -74,17 +74,17 @@ b, strong { font-weight: 700; }
 /* ---------- Inhalt ---------- */
 .inhalt { break-after: page; }
 .inhalt h2 { font-family: 'Lexend'; font-weight: 800; font-size: 26pt; margin: 0 0 3mm; }
-.inhalt .thema { font-family: 'Lexend'; font-weight: 700; color: var(--f); font-size: 12pt; margin: 3mm 0 0.5mm; display: flex; align-items: center; gap: 2.5mm; }
+.inhalt .thema { font-family: 'Lexend'; font-weight: 700; color: var(--f); font-size: 12pt; margin: 2.2mm 0 0.3mm; display: flex; align-items: center; gap: 2.5mm; }
 .inhalt .thema svg { width: 5.5mm; height: 5.5mm; }
-.inhalt .zeile { display: grid; grid-template-columns: 10mm 1fr auto; align-items: baseline; gap: 3mm; padding: 1.1mm 0; border-bottom: 0.3mm solid var(--rahmen); }
+.inhalt .zeile { display: grid; grid-template-columns: 10mm 1fr auto; align-items: baseline; gap: 3mm; padding: 0.8mm 0; border-bottom: 0.3mm solid var(--rahmen); }
 .inhalt .zeile .nr { width: 8mm; height: 8mm; border-radius: 50%; background: var(--f); color: #fff; font-family: 'Lexend'; font-weight: 700; font-size: 11pt; display: flex; align-items: center; justify-content: center; align-self: center; }
 .inhalt .zeile .t { font-family: 'Lexend'; font-weight: 600; font-size: 13pt; }
-.inhalt .zeile .z { display: block; font-size: 10.5pt; color: var(--leise); }
+.inhalt .zeile .z { display: block; font-size: 10pt; color: var(--leise); }
 .inhalt .zeile .medien { display: inline-flex; gap: 1.5mm; margin-left: 2mm; vertical-align: middle; }
 .inhalt .zeile .medien span { width: 5.2mm; height: 5.2mm; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; color: #fff; }
 .inhalt .zeile .medien svg { width: 3.4mm; height: 3.4mm; }
 .inhalt .zeile .s { font-family: 'Lexend'; font-weight: 700; color: var(--f); font-size: 12pt; }
-.inhalt .anleitung { break-inside: avoid; margin-top: 4mm; background: var(--f-zart); border-radius: 4mm; padding: 4mm 5mm; font-size: 11pt; line-height: 1.35; }
+.inhalt .anleitung { break-inside: avoid; margin-top: 3mm; background: var(--f-zart); border-radius: 4mm; padding: 3.5mm 5mm; font-size: 11pt; line-height: 1.35; }
 .inhalt .anleitung h3 { font-family: 'Lexend'; font-size: 12.5pt; margin: 0 0 2mm; color: var(--f-tief); }
 .inhalt .anleitung ul { margin: 0; padding-left: 5mm; columns: 2; column-gap: 9mm; }
 .inhalt .anleitung li { margin: 0 0 1.6mm; break-inside: avoid; }
