@@ -1774,7 +1774,11 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     S.merke.handyNeu = 0; ui.handyNeu && ui.handyNeu(0); sichern();
     await ui.handy(liste, { titel: '📱 Nachrichten', sofort: true });
   };
-  ui.onRaus = () => { if (!S || (imGespraech && !probe)) return; ui.kurzRaus(); };
+  ui.onRaus = () => {
+    if (!S || (imGespraech && !probe && !sitLaeuft)) return;
+    if (sitLaeuft) { ui.dialogVerstecken(true); ui.kurzRaus().then(() => ui.dialogVerstecken(false)); return; }   // auch mitten in einer schwierigen Situation
+    ui.kurzRaus();
+  };
   // Pausenmenü: aktuelles Ziel und „Ich stecke fest“ (zurück an den Anfang des Abschnitts, nichts geht verloren)
   ui.zielJetzt = () => { const st = S && SCHRITTE[S.schritt]; return st && !S.fertig ? { titel: st.titel, ziel: st.ziel } : null; };
   ui.onKarte = () => {
@@ -2196,7 +2200,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   }
   let sitLaeuft = false;
   async function sitStart(id) {
-    if (sitLaeuft) return; sitLaeuft = true;
+    if (sitLaeuft) return; sitLaeuft = true; ui.pauseImDialog = true;
+    if (!S.merke.sitPauseTipp) { S.merke.sitPauseTipp = true; ui.toast('<b>⏸ Kurz raus geht immer</b><span>Wenn es zu viel wird: P drücken. Auch mitten im Gespräch.</span>'); }
     try {
       await sitGespraech(async () => {
         const a = sitApi(), kap = (SCHRITTE[S.schritt] || {}).kap || 1;
@@ -2207,7 +2212,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         const [ic, ti, tx] = SZENEN[id].titel;
         ui.toast('<b>' + ic + ' Erlebt: ' + ti + '</b><span>' + tx + '</span>', 'ly-t-ent');
       });
-    } finally { sitLaeuft = false; }
+    } finally { sitLaeuft = false; ui.pauseImDialog = false; }
   }
   function sitZonen(p) {
     if (!S || !laeuft || imGespraech || probe || steuerung.brett || gesperrt() || !risikoAn()) return;

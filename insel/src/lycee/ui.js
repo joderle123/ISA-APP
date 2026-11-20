@@ -238,6 +238,7 @@ export function createUI({ root, input, speech }) {
     dialog.querySelectorAll('[data-i]').forEach((b) => { b.onclick = () => wahlFn && wahlFn(+b.dataset.i); });
     const b0 = dialog.querySelector('[data-i]'); if (b0) setTimeout(() => { try { b0.focus({ preventScroll: true }); } catch (e) { /* egal */ } }, 30);
   });
+  ui.dialogVerstecken = (an) => { dialog.style.visibility = an ? 'hidden' : ''; };   // während „Kurz raus“ in einer Situation
   ui.dialogZu = () => { dialogOffen = false; dialog.hidden = true; root.classList.remove('ly-im-dialog'); weiterFn = null; wahlFn = null; if (speech) speech.cancel(); };
   function vorlesen(t) { if (speech && speech.available) speech.speak(t, { interrupt: true }); }
 
@@ -247,8 +248,9 @@ export function createUI({ root, input, speech }) {
     if (art && e.code === 'Escape') { if (art === 'journal') { ebeneZu(); e.preventDefault(); } else if (art === 'raus' && ui.rausZu) { ui.rausZu(); e.preventDefault(); } return; }
     if (e.target && e.target.closest && e.target.closest('input, textarea, select')) return;   // Tippen in Feldern (Name, Lehrpersonen-Editor)
     if (art === 'lehrer') return;
+    if (art === 'raus') return;   // „Kurz raus“ mitten in einer Situation: das Gespräch dahinter wartet
     if (e.code === 'Tab') { e.preventDefault(); if (ebene.hidden && !dialogOffen) ui.onJournal && ui.onJournal(); else if (ebene.dataset.art === 'journal') ebeneZu(); return; }
-    if ((e.code === 'KeyP' || e.code === 'Escape') && ebene.hidden && !dialogOffen) { e.preventDefault(); ui.onRaus && ui.onRaus(); return; }
+    if ((e.code === 'KeyP' || e.code === 'Escape') && ebene.hidden && (!dialogOffen || ui.pauseImDialog)) { e.preventDefault(); ui.onRaus && ui.onRaus(); return; }
     if (e.code === 'KeyM' && !dialogOffen && (ebene.hidden || ebene.dataset.art === 'karte')) { e.preventDefault(); if (ebene.dataset.art === 'karte') ebeneZu(); else ui.onKarte && ui.onKarte(); return; }
     if (art === 'karte' && e.code === 'Escape') { e.preventDefault(); ebeneZu(); return; }
     if (e.code === 'KeyN' && ebene.hidden && !dialogOffen && !ui.fotoAn()) { e.preventDefault(); ui.onHandy && ui.onHandy(); return; }
@@ -265,7 +267,7 @@ export function createUI({ root, input, speech }) {
   // Zähler für neue Nachrichten am Handy-Knopf
   ui.handyNeu = (n) => { const b = knoepfe.querySelector('.ly-badge'); if (!b) return; b.hidden = !n; b.textContent = n > 9 ? '9+' : String(n || ''); };
   knoepfe.querySelector('[data-k="foto"]').onclick = () => { if (ebene.hidden && !dialogOffen) ui.onFoto && ui.onFoto(); };
-  knoepfe.querySelector('[data-k="raus"]').onclick = () => { if (ebene.hidden && !dialogOffen) ui.onRaus && ui.onRaus(); else if (ebene.dataset.art === 'raus' && ui.rausZu) ui.rausZu(); };
+  knoepfe.querySelector('[data-k="raus"]').onclick = () => { if (ebene.hidden && (!dialogOffen || ui.pauseImDialog)) ui.onRaus && ui.onRaus(); else if (ebene.dataset.art === 'raus' && ui.rausZu) ui.rausZu(); };
   knoepfe.querySelector('[data-k="journal"]').onclick = () => { if (ebene.hidden) ui.onJournal && ui.onJournal(); else ebeneZu(); };
 
   // ---------- Bingo-Karte ----------
