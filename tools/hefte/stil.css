@@ -510,3 +510,18 @@ table.raster.stellen td { padding: 1.5mm 1mm; }
 .lese-bild { margin-top: 3mm; }
 .zeitleiste .ev.re .box { transform: translateX(-90%); }
 .zeitleiste .ev.li .box { transform: translateX(-10%); }
+
+/* Nahrungskette, Balken */
+.kette { display: flex; align-items: center; justify-content: center; gap: 2mm; flex-wrap: wrap; margin: 2mm 0; }
+.kette .glied { border: 0.45mm solid var(--f-mittel); border-radius: 3mm; padding: 1.6mm 2.4mm; min-width: 20mm; min-height: 11mm; text-align: center; background: #fff; }
+.kette .glied.leer { border-style: dashed; }
+.kette .glied b { display: block; font-size: 11.5pt; }
+.kette .glied b .nur-l { font-family: 'Hand'; color: var(--loesung); font-size: 13pt; font-weight: 400; }
+.kette .glied small { display: block; font-size: 9pt; color: var(--leise); }
+.kette .pfeil { font-size: 18pt; color: var(--f); font-weight: 800; }
+.balken { margin: 2mm 0; }
+.balken .bt { font-family: 'Lexend'; font-weight: 700; font-size: 11.5pt; margin-bottom: 2mm; }
+.balken .bz { display: grid; grid-template-columns: 46mm 1fr; gap: 3mm; align-items: center; margin: 1.6mm 0; font-size: 11.2pt; }
+.balken .bb { display: flex; align-items: center; gap: 2mm; }
+.balken .bb > div { height: 5.5mm; border-radius: 1.2mm; }
+.balken .bb b { font-family: 'Lexend'; font-size: 10.5pt; white-space: nowrap; }
