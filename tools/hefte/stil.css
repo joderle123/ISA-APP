@@ -598,3 +598,17 @@ table.raster.stellen td { padding: 1.5mm 1mm; }
 .treppe-svg { width: 165mm; max-width: 100%; display: block; margin: 0 auto; }
 .eisberg-svg .eis-l { visibility: hidden; }
 .loesungen .eisberg-svg .eis-l { visibility: visible; }
+/* Praxis-Bilder: Lineal, Sicherheitszeichen, Stromkreis, Brett, Spielfeld, Puls */
+.lineal, .strom, .brett, .feld, .puls { margin: 2mm auto; width: 100%; }
+.lineal-svg { width: 165mm; max-width: 100%; display: block; margin: 0 auto; }
+.strom-svg { width: 105mm; display: block; margin: 0 auto; }
+.brett-svg { width: 130mm; display: block; margin: 0 auto; }
+.feld-svg { width: 130mm; display: block; margin: 0 auto; }
+.puls-svg { width: 150mm; display: block; margin: 0 auto; }
+.sz { display: grid; gap: 4mm 5mm; margin: 2mm 0; width: 100%; }
+.sz-k { display: flex; flex-direction: column; align-items: center; gap: 1.8mm; }
+.sz-svg { width: 17mm; height: 17mm; }
+.sz-t { display: flex; gap: 1.8mm; align-items: flex-end; font-size: 10pt; min-height: 9mm; width: 100%; border-bottom: 0.3mm solid #9aa3b2; padding-bottom: 1mm; line-height: 1.15; }
+.sz-t > b { font-family: 'Lexend'; background: #2a2f3a; color: #fff; border-radius: 50%; width: 5.2mm; height: 5.2mm; flex: none; display: flex; align-items: center; justify-content: center; font-size: 9pt; }
+.sz-l { font-family: 'Hand'; color: var(--loesung); font-size: 12.5pt; visibility: hidden; }
+.loesungen .sz-l { visibility: visible; }

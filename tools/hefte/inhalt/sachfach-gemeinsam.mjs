@@ -12,7 +12,7 @@ export const mische = (hex, ziel, anteil) => '#' + [0, 2, 4].map((i) => Math.rou
 export const SACH_AUSSPRACHE = {
   // zuerst: Notrufnummern und feste Beispiele (sonst greifen die Jahreszahl- und Einheiten-Regeln)
   '\\b112\\b': 'eins eins zwei', '116 111': 'eins eins sechs, eins eins eins', '8002 1234': 'acht null null zwei, eins zwei drei vier',
-  'MHBfjAg3WmS!': 'M, H, B, f, j, A, g, drei, W, m, S, Ausrufezeichen', 'JOJO15': 'Jojo fünfzehn', 'BEE SECURE': 'Bie Sikjur', '\\bSePAS\\b': 'Sepass', '\\bUNESCO\\b': 'Unesko', '\\bUSA\\b': 'U S A',
+  'MHBfjAg3WmS!': 'M, H, B, f, j, A, g, drei, W, m, S, Ausrufezeichen', 'JOJO15': 'Jojo fünfzehn', 'BEE SECURE': 'Bie Sikjur', '\\bSePAS\\b': 'Sepass', '\\bUNESCO\\b': 'Unesko', '\\bUSA\\b': 'U S A', ' × ': ' mal ',
   '\\bUND\\b': 'und', '\\bODER\\b': 'oder', 'Cześć': 'Tschäschtsch', 'Olá': 'Ola', '\\bHej\\b': 'Hei', '8002 5500': 'acht null null zwei, fünf fünf null null',
   // Tausender mit Leerzeichen („300 000“) als eine Zahl lesen
   '(\\d)[  ](\\d{3})\\b': '\\1\\2', '(\\d+)/(\\d\\d)\\b': '\\1 auf \\2',
@@ -37,6 +37,18 @@ const ANLEITUNG = {
     'In diesem Fach arbeitest du mit **Karten**, **Zeitleisten**, **Schaubildern** und **Versuchen**. Lies die Legende und schau genau hin.',
     'Die Punkte zeigen die Stufe: ●○○ Basis · ●●○ Kern · ●●● Plus. Die wichtigsten Fachwörter stehen auch auf Französisch.',
   ],
+  atelier: [
+    'Jede Lektion hat diese Teile: **Los geht’s**, **Lesen**, **Hören**, **Gut zu wissen**, **Ausprobieren**, **Besprechen** und **Mein Werkstatt-Bericht**.',
+    'Neben jeder Anleitung ist ein **QR-Code**. So hörst du die Schritte, während deine Hände arbeiten – auch langsamer.',
+    'In der Werkstatt gilt immer: **erst lesen, dann fragen, dann arbeiten**. Die Lehrperson zeigt jedes Werkzeug, bevor du es benutzt.',
+    'Die Punkte zeigen die Stufe: ●○○ Basis · ●●○ Kern · ●●● Plus. Die wichtigsten Fachwörter stehen auch auf Französisch.',
+  ],
+  eduph: [
+    'Jede Lektion hat diese Teile: **Los geht’s**, **Lesen**, **Hören**, **Gut zu wissen**, **In Bewegung**, **Besprechen** und **Mein Sport-Tagebuch**.',
+    'Neben jedem Text ist ein **QR-Code**. Bei manchen Hörtexten sagt dir eine Trainerin oder ein Trainer an, was du tun sollst – Handy hinlegen und mitmachen.',
+    'Mach nur, was dir guttut. Wenn etwas wehtut oder dir schwindlig wird: **sofort aufhören** und Bescheid sagen. Trinken nicht vergessen!',
+    'Die Punkte zeigen die Stufe: ●○○ Basis · ●●○ Kern · ●●● Plus. Jeder Körper ist anders – vergleiche dich mit dir selbst, nicht mit anderen.',
+  ],
   vieso: [
     'Jede Lektion hat diese Teile: **Los geht’s**, **Lesen**, **Hören**, **Gut zu wissen**, **Nachdenken**, **Miteinander reden** und **Meine Gedanken**.',
     'Neben jedem Text ist ein **QR-Code**. Halte die Kamera deines Handys darauf: Du hörst den Text, auch langsamer.',
@@ -47,23 +59,32 @@ const ANLEITUNG = {
 
 const TEILE = {
   culge: { start: { de: 'Los geht’s', icon: 'rocket' }, lesen: { de: 'Lesen und verstehen', icon: 'book' }, hoeren: { de: 'Hören', icon: 'headphones' }, regel: { de: 'Merken', icon: 'bulb' }, ueben: { de: 'Üben', icon: 'pencil' }, sprechen: { de: 'Austauschen', icon: 'messages' }, schreiben: { de: 'Schreiben', icon: 'writing' } },
+  atelier: { start: { de: 'Los geht’s', icon: 'rocket' }, lesen: { de: 'Lesen', icon: 'book' }, hoeren: { de: 'Hören', icon: 'headphones' }, regel: { de: 'Gut zu wissen', icon: 'bulb' }, ueben: { de: 'Ausprobieren', icon: 'tool' }, sprechen: { de: 'Besprechen', icon: 'messages' }, schreiben: { de: 'Mein Werkstatt-Bericht', icon: 'writing' } },
+  eduph: { start: { de: 'Los geht’s', icon: 'rocket' }, lesen: { de: 'Lesen', icon: 'book' }, hoeren: { de: 'Hören', icon: 'headphones' }, regel: { de: 'Gut zu wissen', icon: 'bulb' }, ueben: { de: 'In Bewegung', icon: 'run' }, sprechen: { de: 'Besprechen', icon: 'messages' }, schreiben: { de: 'Mein Sport-Tagebuch', icon: 'writing' } },
   vieso: { start: { de: 'Los geht’s', icon: 'rocket' }, lesen: { de: 'Lesen', icon: 'book' }, hoeren: { de: 'Hören', icon: 'headphones' }, regel: { de: 'Gut zu wissen', icon: 'bulb' }, ueben: { de: 'Nachdenken', icon: 'brain' }, sprechen: { de: 'Miteinander reden', icon: 'messages' }, schreiben: { de: 'Meine Gedanken', icon: 'writing' } },
 }
 const MEDIEN = {
   culge: [['book', 'var(--lesen)', 'Lesen', 'Sachtexte und Quellen'], ['headphones', 'var(--hoeren)', 'Hören', 'QR-Code scannen'], ['map-2', 'var(--regel)', 'Entdecken', 'Karten, Zeitleisten, Versuche'], ['writing', 'var(--schreiben)', 'Schreiben', 'mit viel Platz']],
+  atelier: [['book', 'var(--lesen)', 'Lesen', 'Anleitungen und Pläne'], ['headphones', 'var(--hoeren)', 'Hören', 'Schritte zum Mithören'], ['tool', 'var(--regel)', 'Werkstatt', 'Werkzeug- und Sicherheitskarten'], ['writing', 'var(--schreiben)', 'Bericht', 'planen, prüfen, bewerten']],
+  eduph: [['book', 'var(--lesen)', 'Lesen', 'Regeln und Wissen'], ['headphones', 'var(--hoeren)', 'Hören', 'Trainer-Ansagen'], ['run', 'var(--regel)', 'Bewegung', 'Übungs- und Stationskarten'], ['writing', 'var(--schreiben)', 'Tagebuch', 'Ziele und Fortschritte']],
   vieso: [['book', 'var(--lesen)', 'Lesen', 'Geschichten und Fragen'], ['headphones', 'var(--hoeren)', 'Hören', 'QR-Code scannen'], ['cards', 'var(--regel)', 'Karten', 'zum Reden und Ausschneiden'], ['messages', 'var(--schreiben)', 'Reden', 'zuhören und begründen']],
 }
 const JAHR = ['7P', '7P', '7P', '6P', '6P', '6P', '5P', '5P', '5P']
 
-/** Modul-Kopf für Culture générale ('culge') und Vie et société ('vieso'). */
+/** Modul-Kopf für Culture générale ('culge'), Vie et société ('vieso'), Atelier ('atelier') und Sport ('eduph'). */
 export function sachModul(fach, nr, o) {
   const tief = o.farbe
-  const culge = fach === 'culge'
+  const F = {
+    culge: ['cg', 'Culture-generale', 'Culture générale', 'Culture générale'],
+    vieso: ['vs', 'Vie-et-societe', 'Vie et société', 'Vie et société'],
+    atelier: ['at', 'Atelier', 'Atelier', 'Enseignement pratique à l’atelier'],
+    eduph: ['sp', 'Sport', 'Sport', 'Éducation physique et sportive'],
+  }[fach]
   return {
-    id: `${fach}-m${nr}`, kuerzel: `${culge ? 'cg' : 'vs'}${nr}`, nr, sprache: 'de', klasse: 'Voie de préparation',
+    id: `${fach}-m${nr}`, kuerzel: `${F[0]}${nr}`, nr, sprache: 'de', klasse: 'Voie de préparation',
     niveau: `${o.jahr || JAHR[nr - 1]} · Modul ${nr} von 9`,
-    dateiname: `${culge ? 'Culture-generale' : 'Vie-et-societe'}_Modul-${nr}`,
-    fach: culge ? { de: 'Culture générale', fr: 'Culture générale' } : { de: 'Vie et société', fr: 'Vie et société' },
+    dateiname: `${F[1]}_Modul-${nr}`,
+    fach: { de: F[2], fr: F[3] },
     titel: { de: o.titel, fr: o.titelFr || '' },
     untertitel: { de: o.unter, fr: o.unterFr || '' },
     farben: { tief, mittel: mische(tief, 255, 0.55), zart: mische(tief, 255, 0.92), dunkel: mische(tief, 0, 0.35) },
