@@ -97,3 +97,57 @@ export function thermometer(wert, { min = -20, max = 40, breite = 22, leer = fal
   for (let v = min; v <= max; v += 10) s += `<line x1="60" y1="${y(v)}" x2="72" y2="${y(v)}" stroke="#2a2f3a" stroke-width="2"/>${t(76, y(v) + 4, v + '°', { gr: 13, anker: 'start' })}`
   return svg(110, 295, s, breite)
 }
+
+/** Vereinfachtes Skelett: 1 Schädel, 2 Wirbelsäule, 3 Rippen (Brustkorb), 4 Becken, 5 Oberschenkelknochen, 6 Oberarmknochen */
+export function skelett({ breite = 60 } = {}) {
+  const k = (x1, y1, x2, y2, w = 9) => `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="#e9e2d0" stroke-width="${w}" stroke-linecap="round"/><line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="#8a7f66" stroke-width="${w}" stroke-linecap="round" stroke-opacity="0.25"/>`
+  let s = `<rect width="260" height="420" fill="#f3f6fa"/>`
+  s += `<ellipse cx="130" cy="46" rx="28" ry="32" fill="#e9e2d0" stroke="#8a7f66" stroke-width="2"/><circle cx="120" cy="44" r="6" fill="#8a7f66"/><circle cx="140" cy="44" r="6" fill="#8a7f66"/><rect x="118" y="62" width="24" height="10" rx="3" fill="#fff" stroke="#8a7f66"/>`
+  for (let i = 0; i < 6; i++) s += `<path d="M130,${108 + i * 15} q${-42 + i * 2},4 ${-46 + i * 3},${18}" fill="none" stroke="#c9bfa6" stroke-width="5"/><path d="M130,${108 + i * 15} q${42 - i * 2},4 ${46 - i * 3},${18}" fill="none" stroke="#c9bfa6" stroke-width="5"/>`
+  for (let y = 84; y < 236; y += 10) s += `<rect x="125" y="${y}" width="10" height="8" rx="2" fill="#e9e2d0" stroke="#8a7f66" stroke-width="1"/>`
+  s += k(88, 96, 172, 96, 7)
+  s += k(88, 98, 70, 170) + k(70, 170, 60, 236, 7) + k(172, 98, 190, 170) + k(190, 170, 200, 236, 7)
+  s += `<path d="M96,236 Q130,214 164,236 L156,262 Q130,276 104,262 Z" fill="#e9e2d0" stroke="#8a7f66" stroke-width="2"/>`
+  s += k(108, 262, 100, 340, 11) + k(100, 340, 98, 404, 8) + k(152, 262, 160, 340, 11) + k(160, 340, 162, 404, 8)
+  s += `${linie(158, 40, 214, 30)}${nr(226, 28, 1)}${linie(136, 190, 214, 196)}${nr(226, 198, 2)}${linie(110, 130, 40, 120)}${nr(28, 118, 3)}${linie(150, 250, 214, 258)}${nr(226, 260, 4)}${linie(104, 300, 40, 300)}${nr(28, 300, 5)}${linie(80, 135, 36, 170)}${nr(24, 176, 6)}`
+  return svg(260, 420, s, breite)
+}
+
+/** Atmungsorgane: 1 Luftröhre, 2 Lunge, 3 Bronchien, 4 Zwerchfell */
+export function lunge({ breite = 70 } = {}) {
+  return svg(300, 280, `<rect width="300" height="280" fill="#f3f6fa"/>
+  <rect x="140" y="20" width="20" height="80" rx="8" fill="#e8b4b4" stroke="#a65d5d" stroke-width="2"/>
+  <path d="M150,100 L110,130 M150,100 L190,130" stroke="#a65d5d" stroke-width="8" stroke-linecap="round"/>
+  <path d="M135,108 C70,90 40,160 50,215 C60,250 120,245 135,220 Z" fill="#f2a0a0" stroke="#a65d5d" stroke-width="2"/>
+  <path d="M165,108 C230,90 260,160 250,215 C240,250 180,245 165,220 Z" fill="#f2a0a0" stroke="#a65d5d" stroke-width="2"/>
+  <path d="M110,130 l-20,25 M110,130 l-5,35 M190,130 l20,25 M190,130 l5,35" stroke="#a65d5d" stroke-width="3"/>
+  <path d="M30,250 Q150,215 270,250" fill="none" stroke="#c98a06" stroke-width="5"/>
+  ${linie(160, 40, 230, 30)}${nr(242, 28, 1)}${linie(70, 190, 30, 170)}${nr(20, 165, 2)}${linie(205, 150, 262, 120)}${nr(272, 116, 3)}${linie(150, 233, 150, 262)}${nr(150, 270, 4)}`, breite)
+}
+
+/** Verdauung: 1 Mund, 2 Speiseröhre, 3 Magen, 4 Dünndarm, 5 Dickdarm, 6 Leber */
+export function verdauung({ breite = 62 } = {}) {
+  return svg(260, 380, `<rect width="260" height="380" fill="#f3f6fa"/>
+  <path d="M90,20 Q130,0 170,20 Q185,60 165,80 L150,90 L150,120 Q200,125 215,170 L220,330 Q130,370 40,330 L45,170 Q60,125 110,120 L110,90 L95,80 Q75,60 90,20 Z" fill="#fff" stroke="#c3c9d4" stroke-width="3"/>
+  <ellipse cx="130" cy="52" rx="16" ry="8" fill="#e58c8c"/>
+  <path d="M130,60 L130,160" stroke="#e8a77a" stroke-width="9" stroke-linecap="round"/>
+  <path d="M84,160 Q70,190 100,200 Q130,206 140,180 Z" fill="#c25b5b" opacity="0.85"/>
+  <path d="M128,160 C170,150 190,175 175,200 C160,220 130,210 128,190 Z" fill="#f2b38a" stroke="#c98a5a" stroke-width="2"/>
+  <path d="M75,225 L75,305 L185,305 L185,225 L75,225" fill="none" stroke="#8fb8e8" stroke-width="14" stroke-linejoin="round"/>
+  <path d="M95,240 q20,15 40,0 q20,-15 40,0 M95,262 q20,15 40,0 q20,-15 40,0 M95,284 q20,15 40,0 q20,-15 40,0" fill="none" stroke="#f2a0b5" stroke-width="8" stroke-linecap="round"/>
+  ${linie(146, 52, 220, 40)}${nr(232, 38, 1)}${linie(130, 110, 40, 104)}${nr(28, 102, 2)}${linie(170, 182, 232, 166)}${nr(240, 162, 3)}${linie(135, 270, 232, 280)}${nr(240, 282, 4)}${linie(75, 300, 28, 320)}${nr(20, 324, 5)}${linie(90, 180, 28, 200)}${nr(20, 204, 6)}`, breite)
+}
+
+/** Herz-Kreislauf vereinfacht: Herz in der Mitte, Lungenkreislauf oben, Körperkreislauf unten */
+export function kreislauf({ breite = 80 } = {}) {
+  return svg(320, 300, `<rect width="320" height="300" fill="#f3f6fa"/>
+  <defs><marker id="kr" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#c0392b"/></marker><marker id="kb" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#3f6fc9"/></marker></defs>
+  <ellipse cx="160" cy="45" rx="70" ry="28" fill="#f2c4c4" stroke="#a65d5d" stroke-width="2"/>${t(160, 50, 'Lunge', { gr: 14, fett: 800 })}
+  <path d="M140,150 C120,125 95,140 105,165 C115,190 160,215 160,215 C160,215 205,190 215,165 C225,140 200,125 180,150 Z" fill="#d0312d"/>${t(160, 175, 'Herz', { gr: 14, fett: 800, farbe: '#fff' })}
+  <rect x="66" y="240" width="188" height="40" rx="10" fill="#e9eef3" stroke="#9fb4c8" stroke-width="2"/>${t(160, 265, 'Körper (Muskeln, Organe)', { gr: 12, fett: 700 })}
+  <path d="M120,140 C80,110 80,80 110,66" fill="none" stroke="#3f6fc9" stroke-width="5" marker-end="url(#kb)"/>
+  <path d="M210,66 C240,80 240,110 200,140" fill="none" stroke="#c0392b" stroke-width="5" marker-end="url(#kr)"/>
+  <path d="M215,175 C270,200 260,240 232,255" fill="none" stroke="#c0392b" stroke-width="5" marker-end="url(#kr)"/>
+  <path d="M90,258 C55,240 50,200 105,175" fill="none" stroke="#3f6fc9" stroke-width="5" marker-end="url(#kb)"/>
+  ${t(268, 105, 'sauerstoffreich', { gr: 11, farbe: '#c0392b', anker: 'middle' })}${t(48, 105, 'sauerstoffarm', { gr: 11, farbe: '#3f6fc9', anker: 'middle' })}`, breite)
+}

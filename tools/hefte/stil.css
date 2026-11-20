@@ -519,7 +519,8 @@ table.raster.stellen td { padding: 1.5mm 1mm; }
 .kette .glied b .nur-l { font-family: 'Hand'; color: var(--loesung); font-size: 13pt; font-weight: 400; }
 .kette .glied small { display: block; font-size: 9pt; color: var(--leise); }
 .kette .pfeil { font-size: 18pt; color: var(--f); font-weight: 800; }
-.balken { margin: 2mm 0; }
+.balken { margin: 2mm 0; width: 100%; max-width: 160mm; }
+.balken .bb > div { flex: none; }
 .balken .bt { font-family: 'Lexend'; font-weight: 700; font-size: 11.5pt; margin-bottom: 2mm; }
 .balken .bz { display: grid; grid-template-columns: 46mm 1fr; gap: 3mm; align-items: center; margin: 1.6mm 0; font-size: 11.2pt; }
 .balken .bb { display: flex; align-items: center; gap: 2mm; }
