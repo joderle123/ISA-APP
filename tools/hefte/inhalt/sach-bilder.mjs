@@ -1,5 +1,6 @@
 // Schaubilder für die Sachfächer (selbst gezeichnet, SVG). Nummern 1, 2, 3 … zum Beschriften.
 // Beschriftungen mit class="nur-l" stehen nur im Lösungsheft.
+import { readFileSync } from 'node:fs'
 
 const nr = (x, y, t, r = 10) => `<circle cx="${x}" cy="${y}" r="${r}" fill="#fff" stroke="#2a2f3a" stroke-width="2"/><text x="${x}" y="${y + r * 0.42}" text-anchor="middle" font-family="Lexend" font-size="${r * 1.2}" font-weight="800" fill="#2a2f3a">${t}</text>`
 const linie = (x1, y1, x2, y2) => `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="#2a2f3a" stroke-width="1.4"/>`
@@ -208,4 +209,26 @@ export function gewaltenteilung({ leer = false, breite = 150 } = {}) {
   ${saeule(175, 2, 'Gesetze ausführen', ['Regierung', 'Premierminister/in', 'und Minister/innen'], '#d8ecc9')}
   ${saeule(320, 3, 'Recht sprechen', ['Gerichte', 'Richterinnen und Richter', 'unabhängig'], '#f5d5c8')}
   <rect x="20" y="250" width="440" height="52" rx="6" fill="#e9e4d8" stroke="#2a2f3a" stroke-width="2"/>${t(240, 273, 'Das Volk', { gr: 16, fett: 800 })}${t(240, 292, 'wählt alle 5 Jahre die Abgeordnetenkammer', { gr: 12.5, fett: 500 })}`, breite)
+}
+
+const tabler = (n) => readFileSync(new URL(`../../../node_modules/@tabler/icons/icons/outline/${n}.svg`, import.meta.url), 'utf8').replace(/<!--[\s\S]*?-->/g, '').replace(/\s(width|height)="24"/g, '')
+/** Gefahrensymbole (nach dem weltweiten GHS-System, vereinfacht gezeichnet). leer: Bedeutung nur im Lösungsheft */
+export const GHS = [
+  { icons: ['flame'], name: 'entzündbar', text: 'brennt leicht' },
+  { icons: ['skull'], name: 'giftig', text: 'schon kleine Mengen sind lebensgefährlich' },
+  { icons: ['exclamation-mark'], name: 'Achtung', text: 'reizt Haut und Augen, gesundheitsschädlich' },
+  { icons: ['droplet', 'hand-stop'], name: 'ätzend', text: 'verätzt Haut, Augen und Metall' },
+  { icons: ['fish-off'], name: 'umweltgefährlich', text: 'schadet Tieren und Pflanzen im Wasser' },
+  { icons: ['body-scan'], name: 'gesundheitsgefährdend', text: 'kann auf Dauer krank machen' },
+]
+export function gefahrensymbole({ leer = false, auswahl, spalten = 3, kurz = false } = {}) {
+  const liste = auswahl ? auswahl.map((i) => GHS[i]) : GHS
+  return `<div class="ghs ${kurz ? 'kurz' : ''}" style="grid-template-columns:repeat(${spalten},1fr)">${liste.map((g, i) => `<div class="ghs-k"><div class="ghs-raute"><div class="ghs-i ${g.icons.length > 1 ? 'zwei' : ''}">${g.icons.map(tabler).join('')}</div></div><div class="ghs-t"><b>${i + 1}</b>${leer ? `<span class="nur-l">${g.name}</span>` : kurz ? `<span><b>${g.name}</b></span>` : `<span><b>${g.name}</b><br>${g.text}</span>`}</div></div>`).join('')}</div>`
+}
+
+/** pH-Skala 0–14 mit Rotkohl-Farben */
+export function phSkala({ leer = false } = {}) {
+  const farben = ['#d7263d', '#e0457b', '#e86aa6', '#d77fc6', '#b77fd6', '#9a7fd8', '#7f72d0', '#6a6fc9', '#4f86c6', '#3fa3b8', '#3db88f', '#5fc36a', '#a3cf4f', '#d8d23f', '#e6c13a']
+  const bsp = { 2: 'Zitrone', 3: 'Essig', 7: 'Wasser', 9: 'Natron', 10: 'Seife', 13: 'Abflussreiniger' }
+  return `<div class="ph"><div class="ph-band">${farben.map((f, i) => `<div style="background:${f}"><b>${i}</b></div>`).join('')}</div><div class="ph-bsp">${Object.entries(bsp).map(([w, t]) => `<span style="left:${((+w + 0.5) / 15) * 100}%" class="${leer ? 'nur-l' : ''}">${t}</span>`).join('')}</div><div class="ph-pole"><span>sauer</span><span>neutral</span><span>basisch (Lauge)</span></div></div>`
 }

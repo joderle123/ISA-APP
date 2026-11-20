@@ -536,3 +536,26 @@ table.raster.stellen td { padding: 1.5mm 1mm; }
 .lohnzettel tr.summe td { font-weight: 700; border-top: 0.5mm solid #2a2f3a; border-bottom: none; }
 .lese-hinweis { display: flex; gap: 2mm; align-items: flex-start; background: #f3f0fa; border-left: 1.2mm solid var(--f); border-radius: 1.5mm; padding: 2mm 3mm; margin: 0 0 3mm; font-size: 10.5pt; color: #3a3f4b; }
 .lese-hinweis svg { width: 5mm; height: 5mm; flex: none; color: var(--f); }
+/* Gefahrensymbole und pH-Skala */
+.ghs { display: grid; gap: 4mm 5mm; margin: 3mm 0; }
+.ghs-k { display: flex; flex-direction: column; align-items: center; gap: 2.5mm; }
+.ghs-raute { width: 17mm; height: 17mm; transform: rotate(45deg); border: 1.4mm solid #d7263d; border-radius: 1mm; background: #fff; display: flex; align-items: center; justify-content: center; margin: 3.5mm; }
+.ghs-i { transform: rotate(-45deg); display: flex; flex-direction: column; align-items: center; color: #111; }
+.ghs-i svg { width: 12mm; height: 12mm; stroke-width: 2.3; }
+.ghs-i.zwei svg { width: 7.5mm; height: 7.5mm; }
+.ghs-t { display: flex; gap: 2mm; align-items: flex-start; font-size: 10.5pt; text-align: left; min-height: 9mm; width: 100%; border-bottom: 0.3mm solid #9aa3b2; padding-bottom: 1mm; }
+.ghs-t > b { font-family: 'Lexend'; background: #2a2f3a; color: #fff; border-radius: 50%; width: 5.5mm; height: 5.5mm; flex: none; display: flex; align-items: center; justify-content: center; font-size: 9.5pt; }
+.ghs-t .nur-l { font-family: 'Hand'; color: var(--loesung); font-size: 14pt; }
+.ph { margin: 3mm 0 2mm; }
+.ph-band { display: grid; grid-template-columns: repeat(15, 1fr); border-radius: 2mm; overflow: hidden; }
+.ph-band > div { height: 10mm; display: flex; align-items: center; justify-content: center; }
+.ph-band b { font-family: 'Lexend'; color: #fff; font-size: 11pt; text-shadow: 0 0 2px rgba(0,0,0,.5); }
+.ph-bsp { position: relative; height: 7mm; font-size: 9.5pt; }
+.ph-bsp span { position: absolute; top: 1mm; transform: translateX(-50%); white-space: nowrap; }
+.ph-bsp span.nur-l { font-family: 'Hand'; color: var(--loesung); font-size: 12pt; }
+.ph-pole { display: flex; justify-content: space-between; font-family: 'Lexend'; font-weight: 700; font-size: 10.5pt; color: var(--f-tief); }
+.ghs.kurz { gap: 1mm 3mm; }
+.ghs.kurz .ghs-raute { width: 12mm; height: 12mm; margin: 2.5mm; border-width: 1.1mm; }
+.ghs.kurz .ghs-i svg { width: 8.5mm; height: 8.5mm; }
+.ghs.kurz .ghs-i.zwei svg { width: 5.5mm; height: 5.5mm; }
+.ghs.kurz .ghs-t { min-height: 0; border: none; font-size: 9.5pt; justify-content: center; }

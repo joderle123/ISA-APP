@@ -137,7 +137,7 @@ const OZEAN_POS = { 'Atlantischer Ozean': [-35, 15], 'Pazifischer Ozean': [-140,
 /** Welt. kontinente: 'farben' | 'grau' · kontinentNamen: true | 'nummern' (Namen in der Lösung) | false
  * ozeane: true | 'nummern' | false · punkte: [{ lon, lat, text, farbe }] · linien: ['aequator', 'wendekreise', 'polarkreise'] */
 export function weltKarte(o = {}) {
-  const { kontinente = 'farben', kontinentNamen = true, ozeane = false, punkte = [], linien = [], markiere = {}, breite = 165, punktGroesse = 5, punktText = 13 } = o
+  const { kontinente = 'farben', kontinentNamen = true, ozeane = false, punkte = [], linien = [], markiere = {}, breite = 165, punktGroesse = 5, punktText = 13, zonen = false, linienDick = 1.4 } = o
   const H = WELT.hoehe
   let s = `<svg viewBox="0 0 1000 ${H}" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block">`
   // Umriss der Erde
@@ -145,11 +145,17 @@ export function weltKarte(o = {}) {
   for (let lat = -90; lat <= 90; lat += 5) rand.push(weltXY(-180, lat))
   for (let lat = 90; lat >= -90; lat -= 5) rand.push(weltXY(180, lat))
   s += `<path d="M${rand.map((p) => p.map((v) => v.toFixed(1)).join(',')).join('L')}Z" fill="#dceaf5" stroke="#9fb4c8" stroke-width="1.2"/>`
-  const lin = (lat, farbe, strich) => { const p = []; for (let lon = -180; lon <= 180; lon += 10) p.push(weltXY(lon, lat)); return `<path d="M${p.map((q) => q.map((v) => v.toFixed(1)).join(',')).join('L')}" fill="none" stroke="${farbe}" stroke-width="1.4" ${strich ? `stroke-dasharray="${strich}"` : ''}/>` }
+  const lin = (lat, farbe, strich) => { const p = []; for (let lon = -180; lon <= 180; lon += 10) p.push(weltXY(lon, lat)); return `<path d="M${p.map((q) => q.map((v) => v.toFixed(1)).join(',')).join('L')}" fill="none" stroke="${farbe}" stroke-width="${linienDick}" ${strich ? `stroke-dasharray="${strich}"` : ''}/>` }
   s += WELT.laender.map((l) => `<path d="${l.d}" fill="${markiere[l.name] || (kontinente === 'farben' ? KONT_FARBE[l.kontinent] : '#f4f1ea')}" stroke="#ffffff" stroke-width="0.5" stroke-linejoin="round"/>`).join('')
-  if (linien.includes('aequator')) s += lin(0, '#c0392b') + txt(...weltXY(-178, 2), 'Äquator', { gr: 13, anker: 'start', farbe: '#c0392b' })
-  if (linien.includes('wendekreise')) s += lin(23.44, '#d08a2a', '6 4') + lin(-23.44, '#d08a2a', '6 4')
-  if (linien.includes('polarkreise')) s += lin(66.56, '#5b8fd6', '6 4') + lin(-66.56, '#5b8fd6', '6 4')
+  if (zonen) {
+    // Klimazonen vereinfacht als Bänder (Grenze Subtropen/gemäßigt bei etwa 40°), auf die Erdform zugeschnitten
+    const band = (a, b, f) => { const p = []; for (let lon = -180; lon <= 180; lon += 10) p.push(weltXY(lon, a)); for (let lon = 180; lon >= -180; lon -= 10) p.push(weltXY(lon, b)); return `<path d="M${p.map((q) => q.map((v) => v.toFixed(1)).join(',')).join('L')}Z" fill="${f}" opacity="0.5"/>` }
+    s += band(-23.44, 23.44, '#f2a65a') + band(23.44, 40, '#f5d76e') + band(-40, -23.44, '#f5d76e') + band(40, 66.56, '#8fcf7d') + band(-66.56, -40, '#8fcf7d') + band(66.56, 90, '#a9c8ee') + band(-90, -66.56, '#a9c8ee')
+  }
+  const lg = Math.max(13, linienDick * 7)
+  if (linien.includes('aequator')) s += lin(0, '#c0392b') + txt(...weltXY(-178, 2), 'Äquator', { gr: lg, anker: 'start', farbe: '#c0392b', fett: 700 })
+  if (linien.includes('wendekreise')) s += lin(23.44, '#b06a10', '10 6') + lin(-23.44, '#b06a10', '10 6') + (linienDick > 2 ? txt(...weltXY(-178, 25.5), 'Wendekreis', { gr: lg * 0.85, anker: 'start', farbe: '#8a520c', fett: 600 }) + txt(...weltXY(-178, -21.5), 'Wendekreis', { gr: lg * 0.85, anker: 'start', farbe: '#8a520c', fett: 600 }) : '')
+  if (linien.includes('polarkreise')) s += lin(66.56, '#2f6db5', '10 6') + lin(-66.56, '#2f6db5', '10 6') + (linienDick > 2 ? txt(...weltXY(-170, 68.8), 'Polarkreis', { gr: lg * 0.85, anker: 'start', farbe: '#2f6db5', fett: 600 }) + txt(...weltXY(-170, -64.3), 'Polarkreis', { gr: lg * 0.85, anker: 'start', farbe: '#2f6db5', fett: 600 }) : '')
   let i = 0
   if (kontinentNamen) for (const [n, [lon, lat]] of Object.entries(KONT_POS)) {
     const [x, y] = weltXY(lon, lat)
@@ -161,7 +167,7 @@ export function weltKarte(o = {}) {
     if (ozeane === 'nummern') s += nummer(x, y, String.fromCharCode(65 + j++), { r: 13, farbe: '#1f6aa0' }) + txt(x, y + 30, n, { gr: 14, klasse: 'karte-l', farbe: '#c0392b' })
     else s += txt(x, y, n, { gr: 14, fett: 600, farbe: '#1f6aa0', kursiv: true })
   } }
-  punkte.forEach((p) => { const [x, y] = weltXY(p.lon, p.lat); s += `<circle cx="${x}" cy="${y}" r="${punktGroesse}" fill="${p.farbe || '#c0392b'}" stroke="#fff" stroke-width="1.6"/>` + (p.text ? txt(x + (p.links ? -1 : 1) * (punktGroesse + 4), y + punktText * 0.38, p.text, { gr: punktText, fett: 800, anker: p.links ? 'end' : 'start', klasse: p.loesung ? 'karte-l' : '', farbe: p.farbe || '#2a2f3a' }) : '') })
+  punkte.forEach((p) => { const [x, y] = weltXY(p.lon, p.lat); if (p.nummer) { s += nummer(x, y, p.text, { r: punktGroesse, farbe: p.farbe || '#2a2f3a' }); return } s += `<circle cx="${x}" cy="${y}" r="${punktGroesse}" fill="${p.farbe || '#c0392b'}" stroke="#fff" stroke-width="1.6"/>` + (p.text ? txt(x + (p.links ? -1 : 1) * (punktGroesse + 4), y + punktText * 0.38, p.text, { gr: punktText, fett: 800, anker: p.links ? 'end' : 'start', klasse: p.loesung ? 'karte-l' : '', farbe: p.farbe || '#2a2f3a' }) : '') })
   s += '</svg>'
   return rahmen(s, breite)
 }
