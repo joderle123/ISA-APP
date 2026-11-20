@@ -349,3 +349,19 @@ ol.schritte .si svg { width: 7mm; height: 7mm; }
 .loesungen .lsg-hand { visibility: visible; }
 s.falsch { color: #b4232a; text-decoration-thickness: 0.35mm; }
 .zusammen { break-inside: avoid; }
+
+/* Roman-photo / BD */
+.bd { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm; }
+.bd .case { border: 0.45mm solid var(--tinte); border-radius: 2.5mm; overflow: hidden; background: #fff; display: flex; flex-direction: column; break-inside: avoid; }
+.bd .cap { background: #fff3c4; font-size: 10.5pt; line-height: 1.3; padding: 1.4mm 2.4mm; font-style: italic; border-bottom: 0.35mm solid var(--tinte); }
+.bd .figs { display: flex; justify-content: center; align-items: flex-end; gap: 1mm; height: 31mm; background: var(--lesen-zart); padding-top: 1mm; }
+.bd .figs svg { height: 30mm; width: auto; max-width: 25mm; }
+.bd .bl { padding: 1.4mm 2.4mm 1.8mm; font-size: 11.2pt; line-height: 1.32; }
+.bd .bl p { margin: 0 0 1mm; }
+.bd .bl b { font-family: 'Lexend'; font-size: 9pt; color: var(--lesen); margin-right: 1.5mm; }
+/* Scène de théâtre */
+.theater p { margin: 0 0 2mm; font-size: 12.6pt; line-height: 1.45; }
+.theater .pers { font-size: 11pt; color: var(--leise); border-bottom: 0.3mm solid var(--linie); padding-bottom: 1.5mm; }
+.theater .wer { font-family: 'Lexend'; font-weight: 800; font-size: 10.5pt; letter-spacing: 0.06em; text-transform: uppercase; color: var(--lesen); margin-right: 2mm; }
+.theater .rg, .theater .regie { font-style: italic; color: #5a6376; }
+.theater .regie { margin-left: 6mm; font-size: 11.5pt; }
