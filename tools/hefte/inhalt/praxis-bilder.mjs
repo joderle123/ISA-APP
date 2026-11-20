@@ -260,3 +260,47 @@ export function blechHalter() {
   o += nr(xa - 16, yb, 1, '#c0392b', 9) + nr(xe + 4, yb + 16, 2, '#c0392b', 9) + t(xe + 34, yb - 8, 'ca. 65°', { gr: 11, farbe: '#5b6475', anker: 'start' })
   return `<figure class="blech">${o}</svg></figure>`
 }
+
+/** Pflanze mit Nummern: 1 Blüte, 2 Blatt, 3 Stängel, 4 Wurzel, 5 Frucht */
+export function pflanze() {
+  let o = `<svg viewBox="0 0 380 380" xmlns="http://www.w3.org/2000/svg" class="pflanze-svg">`
+  o += `<rect x="0" y="250" width="380" height="130" fill="#e9d8c2"/><path d="M0 250 Q95 240 190 250 T380 250" fill="none" stroke="#8a6a46" stroke-width="3"/>`
+  for (const [x, y] of [[40, 290], [320, 300], [90, 345], [290, 352], [150, 330]]) o += `<circle cx="${x}" cy="${y}" r="3" fill="#b89b78"/>`
+  // Wurzeln
+  const W = (d, w = 3) => `<path d="${d}" fill="none" stroke="#a07a4f" stroke-width="${w}" stroke-linecap="round"/>`
+  o += W('M190 250 Q186 300 192 350', 4) + W('M189 270 Q160 290 140 320') + W('M191 275 Q222 295 245 318') + W('M190 300 Q170 320 165 345', 2) + W('M191 305 Q215 325 218 352', 2) + W('M150 305 Q130 310 118 330', 2)
+  // Stängel und Seitenast
+  o += `<path d="M190 250 L190 92" stroke="#3f8a3a" stroke-width="6" stroke-linecap="round"/><path d="M190 170 Q225 160 248 142" fill="none" stroke="#3f8a3a" stroke-width="4" stroke-linecap="round"/>`
+  // Blätter
+  const B = (cx, cy, rot) => `<ellipse cx="${cx}" cy="${cy}" rx="38" ry="14" transform="rotate(${rot} ${cx} ${cy})" fill="#6dbb5c" stroke="#3f8a3a" stroke-width="2"/><line x1="${cx - 30 * Math.cos(rot * Math.PI / 180)}" y1="${cy - 30 * Math.sin(rot * Math.PI / 180)}" x2="${cx + 30 * Math.cos(rot * Math.PI / 180)}" y2="${cy + 30 * Math.sin(rot * Math.PI / 180)}" stroke="#3f8a3a" stroke-width="1.5"/>`
+  o += B(152, 205, 20) + B(228, 222, -20) + B(156, 140, -15)
+  // Frucht
+  o += `<circle cx="256" cy="150" r="17" fill="#e0533d" stroke="#a5321f" stroke-width="2"/><path d="M250 134 L256 128 L262 134" fill="#3f8a3a" stroke="#3f8a3a" stroke-width="2"/>`
+  // Blüte
+  for (let i = 0; i < 8; i++) { const a = (i * Math.PI) / 4; o += `<ellipse cx="${190 + 22 * Math.cos(a)}" cy="${72 + 22 * Math.sin(a)}" rx="14" ry="8" transform="rotate(${(i * 45)} ${190 + 22 * Math.cos(a)} ${72 + 22 * Math.sin(a)})" fill="#ffd34d" stroke="#d9a400" stroke-width="1.5"/>` }
+  o += `<circle cx="190" cy="72" r="13" fill="#9a5b1e"/>`
+  o += nr(246, 40, 1) + nr(96, 172, 2) + nr(214, 112, 3) + nr(272, 312, 4) + nr(300, 150, 5)
+  o += `<line x1="236" y1="44" x2="214" y2="58" stroke="#c0392b" stroke-width="1.5"/><line x1="106" y1="176" x2="120" y2="190" stroke="#c0392b" stroke-width="1.5"/><line x1="204" y1="116" x2="194" y2="122" stroke="#c0392b" stroke-width="1.5"/><line x1="262" y1="310" x2="242" y2="316" stroke="#c0392b" stroke-width="1.5"/><line x1="290" y1="150" x2="274" y2="150" stroke="#c0392b" stroke-width="1.5"/>`
+  return `<figure class="pflanze">${o}</svg></figure>`
+}
+
+/** Rückseite einer Samentüte (Radieschen) mit Angaben und Aussaat-/Erntekalender */
+export function samenTuete() {
+  const M = ['J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D']
+  let o = `<svg viewBox="0 0 420 400" xmlns="http://www.w3.org/2000/svg" class="tuete-svg">`
+  o += `<path d="M20 30 L40 14 L60 30 L80 14 L100 30 L120 14 L140 30 L160 14 L180 30 L200 14 L220 30 L240 14 L260 30 L280 14 L300 30 L320 14 L340 30 L360 14 L380 30 L400 14 L400 388 L20 388 Z" fill="#fbf6ea" stroke="#8a6a46" stroke-width="2.5"/>`
+  // Radieschen
+  o += `<ellipse cx="68" cy="88" rx="26" ry="23" fill="#d9415a" stroke="#9e2539" stroke-width="2"/><path d="M68 111 L68 126" stroke="#e8b4bd" stroke-width="2"/><path d="M60 66 Q50 44 58 36 Q66 50 66 66 M70 66 Q76 42 88 40 Q84 56 74 66" fill="#5aa84a" stroke="#3f8a3a" stroke-width="2"/>`
+  o += t(110, 82, 'Radieschen', { gr: 24, fett: 800, anker: 'start', farbe: '#9e2539' }) + t(110, 104, 'für Beet, Balkonkasten und Topf', { gr: 12, anker: 'start', farbe: '#5b6475' })
+  const zeilen = [['Aussaat ins Freie', 'März bis September'], ['Saattiefe', '1 cm'], ['Abstand in der Reihe', '3 bis 5 cm'], ['Abstand zwischen den Reihen', '15 cm'], ['Keimung', 'nach 5 bis 8 Tagen'], ['Standort', 'sonnig bis halbschattig'], ['Ernte', 'nach 4 bis 6 Wochen']]
+  zeilen.forEach(([a, b], i) => { const y = 150 + i * 22; o += t(40, y, a, { gr: 12.5, anker: 'start', fett: 600, farbe: '#5b6475' }) + t(248, y, b, { gr: 12.5, anker: 'start', fett: 700 }) + `<line x1="40" y1="${y + 7}" x2="380" y2="${y + 7}" stroke="#e6dcc6" stroke-width="1"/>` })
+  // Kalender
+  const x0 = 40, w = 28, ya = 352
+  M.forEach((m, i) => { o += t(x0 + i * w + w / 2, ya - 22, m, { gr: 11, farbe: '#5b6475' }) })
+  for (let i = 0; i < 12; i++) {
+    const saat = i >= 2 && i <= 8, ernte = i >= 3 && i <= 9
+    o += `<rect x="${x0 + i * w + 2}" y="${ya - 16}" width="${w - 4}" height="10" rx="2" fill="${saat ? '#5aa84a' : '#eee7d6'}"/><rect x="${x0 + i * w + 2}" y="${ya - 3}" width="${w - 4}" height="10" rx="2" fill="${ernte ? '#e8963a' : '#eee7d6'}"/>`
+  }
+  o += `<rect x="${x0}" y="${ya + 14}" width="10" height="10" rx="2" fill="#5aa84a"/>` + t(x0 + 16, ya + 23, 'Aussaat', { gr: 11, anker: 'start' }) + `<rect x="${x0 + 90}" y="${ya + 14}" width="10" height="10" rx="2" fill="#e8963a"/>` + t(x0 + 106, ya + 23, 'Ernte', { gr: 11, anker: 'start' })
+  return `<figure class="tuete">${o}</svg></figure>`
+}
