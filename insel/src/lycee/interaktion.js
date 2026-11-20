@@ -48,7 +48,7 @@ const ROBOTER = [
 ];
 
 export const KABEL = [['cdi', 14, -62.4], ['kantine', 18.6, -8.2], ['gang', -15.5, -15.8], ['innenhof', -17.2, -44.9], ['skate', -36.4, 6.4]];
-export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton, blattWahl, freiwurf, skate, volley = null, volleyAktiv = () => false, tt3d = null, spindAuf = null, partner = () => null, freund = () => {}, onKabel = null }) {
+export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton, blattWahl, freiwurf, skate, pausenFussball = null, volley = null, volleyAktiv = () => false, elfmeter = null, elfmeterAktiv = () => false, tt3d = null, spindAuf = null, partner = () => null, freund = () => {}, onKabel = null }) {
   const tt = welt.orte.tischtennis;
   const liste = [];
   const dazu = (x, z, r, text, tu, extra = {}) => liste.push({ x, z, r, text, tu, ...extra });
@@ -69,6 +69,8 @@ export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton
   for (let z = -70; z < -58; z += 4) dazu(29.0, z, 1.2, 'Lese-Ecke: Comics und Geschichten', 'buch', { prio: 1 });
   dazu(-6.8, -9, 1.4, 'Pinnwand lesen', 'pinnwand', { prio: 1 });
   dazu(-15.05, -12.55, 1.0, 'Zettel in den Sorgen-Briefkasten werfen', 'sorgen', { prio: 1 });
+  dazu(-40, 99.9, 1.4, 'Am Kiosk etwas holen', 'kiosk', { prio: 1 });   // Park am Weiher
+  for (const [x, z] of [[-55, 97.0], [-55, 113.0], [-65, 105]]) dazu(x, z, 1.6, 'Enten beobachten', 'enten', { prio: 0 });
   dazu(-19.3, -11.7, 0.8, 'Ein Bonbon nehmen', 'bonbon', { prio: 1 });   // Sekretariat: Glas auf der Theke
   dazu(45, -1.8, 1.3, 'In die Fundkiste schauen', 'fundkiste', { prio: 1 });
   dazu(-24.5, 42.6, 1.2, 'Kritzeleien lesen', 'kritzelei', { prio: 0, wo: 'bus' });
@@ -83,6 +85,8 @@ export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton
   dazu(61.5, -39.5, 0.9, 'Roboter einschalten', 'roboter', { prio: 1 });
   if (skate) dazu(-29.6, 5.2, 1.5, 'Skateboard fahren', 'skate', { prio: 1 });
   if (volley) dazu(43.6, -18, 1.4, 'Volleyball spielen', 'volley', { prio: 1 });   // Hall des sports, am Netz
+  if (elfmeter) dazu(-86, -2.6, 1.4, 'Elfmeterschießen (5 Schüsse)', 'elfmeter', { prio: 1 });
+  if (pausenFussball) dazu(-73.5, -14, 1.6, 'Pausenfußball: Teams wählen', 'pausenfussball', { prio: 1 });   // Seitenlinie Stade   // Stade, Elfmeterpunkt vor dem Nordtor
   if (tt) dazu(tt.x - 1.3, tt.z, 1.2, 'Tischtennis spielen', 'tischtennis', { prio: 1 });
   // Easter Eggs: Herrn Mesenbergs verlorene Ladekabel (5 Stück), Kritzeleien im WC, die Ente im Brunnen
   for (const [id, x, z] of KABEL) dazu(x, z, 1.0, 'Ein Ladekabel? Aufheben', 'kabel', { prio: 2, kabel: id });
@@ -218,12 +222,35 @@ export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton
         ui.toast('<b>🍬 ' + ['Zitrone', 'Himbeere', 'Pfefferminz', 'Kirsche', 'Apfel'][(n - 1) % 5] + '</b><span>' + (n === 5 ? 'Auf dem Kärtchen steht jetzt mit Kuli: „Bester Kunde 🙂“' : 'Eins pro Person. Du hältst dich dran.') + '</span>');
         return;
       }
+      case 'pausenfussball': await pausenFussball(); return;
+      case 'elfmeter': {   // fünf Schüsse, die beste Freundin / der beste Freund im Tor (sonst Ben)
+        if (elfmeterAktiv()) return;
+        const pa = partner();
+        const r = await elfmeter({ keeperId: pa ? pa.id : 'ben', keeperName: pa ? pa.name : 'Ben', rekord: s.merke.elfmeterRekord || 0 });
+        const neu = r.tore > (s.merke.elfmeterRekord || 0); if (neu) s.merke.elfmeterRekord = r.tore; sichern();
+        ui.toast('<b>⚽ ' + r.tore + ' von 5</b><span>' + (neu ? 'Neuer Rekord!' : 'Rekord: ' + (s.merke.elfmeterRekord || 0) + ' von 5') + '</span>');
+        return;
+      }
       case 'volley': {   // Ballwechsel mit der besten Freundin / dem besten Freund (sonst Ben)
         if (volleyAktiv()) return;
         const pa = partner();
         const r = await volley({ partnerId: pa ? pa.id : 'ben', partnerName: pa ? pa.name : 'Ben', rekord: s.merke.volleyRekord || 0 });
         const neu = r.best > (s.merke.volleyRekord || 0); if (neu) s.merke.volleyRekord = r.best; sichern();
         ui.toast('<b>🏐 ' + r.punkte + ' Punkte</b><span>Längster Ballwechsel: ' + r.best + (neu ? ' – neuer Rekord!' : ' · Rekord ' + (s.merke.volleyRekord || 0)) + '</span>');
+        return;
+      }
+      case 'kiosk': {   // Park am Weiher: im Herbst und Frühling Eis, im Winter heiße Schokolade – einmal je Abschnitt
+        const kap = Math.min(10, (s.kapitelFertig || 0) + 1), winter = kap >= 3 && kap <= 6;
+        if (s.merke.kioskSchritt === s.schritt) { ui.toast('<b>' + (winter ? '☕' : '🍦') + ' Schon gehabt</b><span>„Morgen wieder!“, ruft die Frau im Kiosk.</span>'); return; }
+        s.merke.kioskSchritt = s.schritt; s.merke.kiosk = (s.merke.kiosk || 0) + 1; ton('pling'); sichern();
+        const SORTEN = winter ? ['Heiße Schokolade mit Sahne', 'Heiße Schokolade, extra warm', 'Kinderpunsch mit Zimt'] : ['Erdbeere', 'Stracciatella', 'Zitrone', 'Mango', 'Schoko-Minze'];
+        ui.toast('<b>' + (winter ? '☕ ' : '🍦 ') + SORTEN[(s.merke.kiosk - 1) % SORTEN.length] + '</b><span>' + (s.merke.kiosk === 5 ? '„Stammkundschaft!“ Die Frau im Kiosk grinst.' : 'Du setzt dich kurz ans Wasser.') + '</span>');
+        return;
+      }
+      case 'enten': {   // drei kurze Fakten, der Reihe nach – ohne Füttern (Brot macht Enten krank)
+        const F = ['Enten schlafen oft mit einem offenen Auge.', 'Brot macht Enten krank. Hier wird nur geschaut.', 'Die Kleinen schwimmen der Mutter in einer Reihe nach.', 'Wasser perlt ab: Enten fetten ihre Federn selbst ein.'];
+        s.merke.enten = (s.merke.enten || 0) + 1; sichern();
+        ui.toast('<b>🦆 Enten</b><span>' + F[(s.merke.enten - 1) % F.length] + '</span>');
         return;
       }
       case 'computer': ui.toast('<b>Anmelden</b><span>Passwort vergessen. Das Passwort für „Passwort vergessen“ auch.</span>'); return;

@@ -53,3 +53,6 @@ Kenney „Mini Skate 2.0“ (www.kenney.nl), **CC0 1.0**. Geladen am 20.11.2026 
 (`python3 -I tools/stadt/stadt.py <ordner>/ roh.glb` mit `<ordner>/mini-skate` = entpacktes Paket), Auswahl mit
 `tools/lycee/kenney-auswahl.mjs` (skate/half-pipe, ramp-rail, rail-high, obstacle-box-grind, steps-rail, pallet, scooter, fence),
 dann `gltf-transform meshopt --level medium`.
+
+## Töne (src/lycee/toene)
+- `fahrradklingel.wav` – „Rotating Bicycle Bell“ (opengameart.org/content/rotating-bicycle-bell), **CC0 1.0**, geladen am 20.11.2026.

@@ -43,6 +43,10 @@ export function createSteuerung({ camera, input, welt, figur = null }) {
           if (m === l[0]) x = k.x0 - R; else if (m === l[1]) x = k.x1 + R; else if (m === l[2]) z = k.z0 - R; else z = k.z1 + R;
         }
       }
+      for (const h of s.autos || []) {   // fahrende Autos (verkehr.js): nicht hindurchlaufen
+        const dx = x - h.x, dz = z - h.z, d = Math.hypot(dx, dz), min = R + h.r;
+        if (d < min && d > 1e-5) { x = h.x + dx / d * min; z = h.z + dz / d * min; }
+      }
       for (const h of s.hindernisse) {
         const dx = x - h.x, dz = z - h.z, d = Math.hypot(dx, dz), min = R + (h.r || 0.3);
         if (d < min && d > 1e-5) { x = h.x + dx / d * min; z = h.z + dz / d * min; }

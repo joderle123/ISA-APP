@@ -251,6 +251,38 @@ export function baueDorf({ B, C, schild, schilder, P = null, R = null }) {
     DORF_DEKO.tagDu = tag('★', '#e9b949', 3.4, 1.0, 1.3);            // dein Kürzel (spiel.js malt die Buchstaben)
     B.frei.push({ x0: X0 - 1, x1: X1 + 1, z0: Z - 1, z1: Z + 2 });
   }
+  // Park am Weiher (westlich der Rue du Moulin, x −74 … −34, z 86 … 124): Teich mit Steinrand (0,45 m – mit dem Brett grindbar),
+  // Rundweg, Bänke, Bäume, Eis-Kiosk „Glace“. Auftrag 20.11.: „Welt größer und spaßiger“
+  { const STEIN = hex('#b9b2a4'), WASSER = hex('#4f97c9'), WEG = C.pflaster, X0 = -64, X1 = -46, Z0 = 98, Z1 = 112;
+    box(-74, -34, 0, 0.03, 86, 124, hex('#7fae5a'), { art: 'innen' }); B.frei.push({ x0: -75, x1: -33, z0: 85, z1: 125 });
+    box(-42, -30, 0, 0.05, 85, 89, WEG, { art: 'innen' }); box(-44, -40, 0, 0.05, 89, 95, WEG, { art: 'innen' });          // Weg von der Rue du Moulin
+    for (const [a0, a1, b0, b1] of [[X0 - 4, X1 + 4, Z0 - 4, Z0 - 2], [X0 - 4, X1 + 4, Z1 + 2, Z1 + 4], [X0 - 4, X0 - 2, Z0 - 2, Z1 + 2], [X1 + 2, X1 + 4, Z0 - 2, Z1 + 2]])
+      box(a0, a1, 0, 0.05, b0, b1, WEG, { art: 'innen' });                                                                 // Rundweg
+    box(X0, X1, 0, 0.1, Z0, Z1, WASSER, { art: 'innen' });                                                                 // Wasser
+    for (const [a0, a1, b0, b1] of [[X0 - 0.5, X1 + 0.5, Z0 - 0.5, Z0], [X0 - 0.5, X1 + 0.5, Z1, Z1 + 0.5], [X0 - 0.5, X0, Z0, Z1], [X1, X1 + 0.5, Z0, Z1]])
+      box(a0, a1, 0, 0.45, b0, b1, STEIN, { stoss: true });                                                                 // Steinrand
+    if (B.sitze) for (const [x, z, r] of [[-55, Z0 - 5.2, 0], [-55, Z1 + 5.2, Math.PI], [X0 - 5.2, 105, Math.PI / 2]]) {
+      const lx = Math.abs(Math.sin(r)) > 0.5 ? 0.5 : 1.8, lz = Math.abs(Math.sin(r)) > 0.5 ? 1.8 : 0.5;
+      box(x - lx, x + lx, 0.42, 0.5, z - lz, z + lz, hex('#8a6a4a'), { stoss: true }); B.sitze.push({ x, z, rot: r, bank: true, h: 0.5 });
+      const bx = Math.round(-Math.sin(r)) * 0.42, bz = Math.round(-Math.cos(r)) * 0.42;   // Lehne hinten, Beine unten
+      if (bz) box(x - lx, x + lx, 0.5, 0.95, z + bz - 0.04, z + bz + 0.04, hex('#7a5a3a')); else box(x + bx - 0.04, x + bx + 0.04, 0.5, 0.95, z - lz, z + lz, hex('#7a5a3a'));
+      for (const t of [-0.8, 0.8]) { const tx = lx > 1 ? t * lx : 0, tz = lz > 1 ? t * lz : 0; box(x + tx - 0.05, x + tx + 0.05, 0, 0.42, z + tz - 0.05, z + tz + 0.05, hex('#3a3f4a')); }
+    }
+    if (P) for (const [x, z, m, h] of [[-71, 90, 'haus/tree-large', 9], [-70, 118, 'haus/tree-large', 10], [-38, 120, 'haus/tree-small', 6], [-60, 121, 'haus/tree-small', 6.5],
+      [-72, 104, 'haus/tree-small', 6], [-49, 92, 'haus/tree-small', 5.5], [-36, 108, 'haus/tree-large', 9]]) P(m, x, z, (x * 7 % 6), { h, fest: 0.5 });
+    // Eis-Kiosk „Glace“ (am Weg): Bude, Theke, Markise, Schild
+    { const KX = -40, KZ = 101;
+      box(KX - 1.6, KX + 1.6, 0, 2.6, KZ, KZ + 2.4, hex('#a8e0c8'), { stoss: true }); box(KX - 1.7, KX + 1.7, 2.6, 2.75, KZ - 0.1, KZ + 2.5, hex('#c0392b'));
+      box(KX - 1.2, KX + 1.2, 1.1, 2.0, KZ - 0.02, KZ, hex('#2b3a4a'));                                                     // Verkaufsfenster
+      for (const [dx, c] of [[-0.8, '#ff9ec4'], [0, '#fff3b0'], [0.8, '#b8f0c8']]) box(KX + dx - 0.18, KX + dx + 0.18, 1.06, 1.22, KZ - 0.3, KZ - 0.05, hex(c));   // Eisbecher in der Auslage
+      { const tuete = new THREE.ConeGeometry(0.32, 0.9, 10); tuete.rotateX(Math.PI); tuete.translate(KX, 3.2, KZ + 1.2); geoF(tuete, hex('#d9a35a'));   // Eistüte auf dem Dach
+        for (const [y, c] of [[3.72, '#ff9ec4'], [4.08, '#b8f0c8']]) { const k = new THREE.SphereGeometry(0.34, 12, 9); k.translate(KX, y, KZ + 1.2); geoF(k, hex(c)); } }
+      box(KX - 1.5, KX + 1.5, 0.95, 1.05, KZ - 0.35, KZ, hex('#8a6a4a'));                                                   // Theke
+      for (let i = 0; i < 6; i++) box(KX - 1.7 + i * 0.57, KX - 1.13 + i * 0.57, 2.1, 2.25, KZ - 0.9, KZ, i % 2 ? hex('#ffffff') : hex('#e85d75'));   // Markise
+      const t = schild('GLACE · Kiosk', 2.2, 0.42, { bg: '#e85d75', schrift: 'bold 90px system-ui' }); t.position.set(KX, 2.45, KZ - 0.05); t.rotation.y = Math.PI; schilders(t); }
+    const ps = schild('Park am Weiher', 1.8, 0.4, { bg: '#3f7d3a', schrift: 'bold 90px Georgia, serif' }); ps.position.set(-41, 1.9, 89.2); ps.rotation.y = Math.PI / 2; schilders(ps);
+    box(-41.05, -40.95, 0, 1.7, 89.1, 89.2, hex('#5a5f6b'));
+  }
   // Skatepark Junglinster (Nordseite der Rue du Moulin, x 78 … 106): Beton, Halfpipe, Rails, Grind-Box, Treppe mit Geländer,
   // Rampen (Kicker in spiel.js), Zaun, Schild. Modelle: Kenney Mini Skate 2.0 (CC0, skate.glb). Auftrag 20.11.: „Skaten drastisch verbessern“
   { const X0 = 78, X1 = 106, Z0 = 73.6, Z1 = 81.6, BETON = hex('#c9c4bb'), KANTE = hex('#a8a297');

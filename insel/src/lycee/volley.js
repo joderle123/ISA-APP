@@ -87,5 +87,5 @@ export function createVolleyball({ scene, steuerung, input, ui, ton = () => {}, 
       }
     }
   }
-  return { spiel, tick, aktiv: () => !!lauf };
+  return { spiel, tick, aktiv: () => !!lauf, beenden: () => { if (lauf && lauf.ende) lauf.ende(); } };
 }
