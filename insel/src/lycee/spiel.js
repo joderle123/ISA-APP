@@ -49,6 +49,7 @@ import { createDosen } from './dosen.js';
 import { GARDEROBE, ARTEN as GD_ARTEN, freigeschaltet, levelVon } from './garderobe.js';
 import { createHaustier } from './haustier.js';
 import { herausforderungPruefen } from './herausforderungen.js';
+import { AUFGABEN, aufgabenFuer, aufgabenStand } from './wochenaufgaben.js';
 import { FAEDEN } from './faeden.js';
 import { GEDAECHTNIS, RUF, BELAUSCHT } from './gedaechtnis.js';
 import { PLAUDERN, BANK } from './stimmen.js';
@@ -335,6 +336,12 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     { modell: 'menschen', stil: 'Beach', haut: '#9b6a45', haar: '#1b1410', oben: '#e85d75', unten: '#4a4f5c', schuhe: '#f2f2f2', hoehe: 1.74, kopf: 'cap', kopfFarbe: '#2b2b33', weg: [[-27, -15.0], [23.5, -15.0]], tempo: 1.2 },
     { modell: 'frauen', stil: 'Adventurer', haut: '#e0b48c', haar: '#2b1d14', oben: '#3fa66b', unten: '#2d3748', schuhe: '#6b4e3a', hoehe: 1.6, weg: [[23, -15.3], [-25, -15.3]], tempo: 1.1 },
     { modell: 'menschen', stil: 'Casual2', haut: '#f1c7a2', haar: '#d9b36a', oben: '#2fb8a8', unten: '#3a3f4b', schuhe: '#2b2b2b', hoehe: 1.68, frisur: 'locken', weg: [[-4.5, 38], [-4.5, 3], [-1, 3], [-1, 38]], tempo: 1.3 },
+    // Jugendhaus: zwei Jugendliche am Tischkicker (spielen wirklich – kicker3d.demoTick), machen Platz, wenn man selbst spielt
+    { modell: 'menschen', stil: 'Casual2', haut: '#c68e64', haar: '#1b1410', oben: '#3f78b8', unten: '#2d3748', schuhe: '#f2f2f2', hoehe: 1.66, steht: [20.5, 116.36, 0, 'redet'], kickerSeite: 'b' },
+    { modell: 'frauen', stil: 'Casual', haut: '#f1c7a2', haar: '#a0522d', oben: '#e0384f', unten: '#3a3f4b', schuhe: '#2b2b2b', hoehe: 1.6, steht: [20.5, 118.04, Math.PI, 'redet'], kickerSeite: 'r' },
+    // … und zwei am Billardtisch (billard.demoTick)
+    { modell: 'menschen', stil: 'Beach', haut: '#e8bf9a', haar: '#3a2a1c', oben: '#2f8a5a', unten: '#2d3748', schuhe: '#ffffff', hoehe: 1.7, steht: [25.6, 114.1, 0.3, 'redet'], billardSeite: 'a' },
+    { modell: 'frauen', stil: 'Adventurer', haut: '#9b6a45', haar: '#1b1410', oben: '#ffd166', unten: '#3a3f4b', schuhe: '#f2f2f2', hoehe: 1.62, steht: [26.6, 116.3, Math.PI + 0.3, 'redet'], billardSeite: 'b' },
     // Pausenaufsicht in Warnweste: läuft ihre Runde über den Hof
     { modell: 'menschen', stil: 'Worker', haut: '#e8bf9a', haar: '#7a7a7a', oben: '#ffd166', unten: '#2d3748', schuhe: '#2b2b2b', hoehe: 1.8, weg: [[-20, 28.4], [20, 28.4], [30, 6], [0, 4], [-26, 6]], tempo: 0.95 },
     // Schlange beim Bäcker gegenüber
@@ -783,7 +790,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   const tierDran = () => { const t = S && S.garderobe && gdDing(S.garderobe.an.tier); haustier.setArt(t ? t.wert : null, t ? t.farbe : null); };
   let gdUhr = 0;
   function garderobePruefen(dt) {
-    gdUhr -= dt; if (gdUhr > 0 || !S || !S.merke) return; gdUhr = 2;
+    gdUhr -= dt; if (gdUhr > 0 || !S || !S.merke || S.schritt < 2 || imGespraech) return; gdUhr = 2;
     const G = gd(), lvJetzt = levelVon(S.jetonsGesamt || 0).level;
     if (lvJetzt > (G.level || 1)) { G.level = lvJetzt; ui.toast('<b>⭐ Dorf-Level ' + lvJetzt + '!</b><span>Weiter so. Neue Teile in der Garderobe (G).</span>', 'ly-t-ent'); ton('melodie2'); sichern(); }
     const neu = freigeschaltet(S).filter((id) => !G.gesehen.includes(id));
@@ -805,23 +812,55 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     else { hf.aktiv = null; hf.fertig.push(h.id); hf.schritt = S.schritt; (S.merke.nachrichten = S.merke.nachrichten || []).push([wer, '✅ ' + h.danke]); herz(h.von, 1); setTimeout(() => jetons(2, 'Herausforderung von ' + wer.split(' ')[0]), 6500); }
     nachrichtenRein(); sichern();
   }
+  // Wochenaufgaben (wochenaufgaben.js): je Kapitel drei, eine davon Lernen. Startwerte beim ersten Blick ins Kapitel.
+  function wochenaufgaben() {
+    const kap = (SCHRITTE[S.schritt] || {}).kap || 1, wa = S.merke.woche = S.merke.woche || {};
+    if (wa.kap !== kap) {
+      const liste = aufgabenFuer(kap, S), start = {};
+      for (const x of liste) start[x.id] = AUFGABEN.find((q) => q.id === x.id).zahl(S);   // ab jetzt zählen
+      Object.assign(wa, { kap, liste, start, belohnt: [] });
+      const t = aufgabenStand(S, wa).map((a) => a.sy + ' ' + a.text).join(' · ');
+      setTimeout(() => ui.toast('<b>📅 Neue Wochenaufgaben</b><span>' + t + ' – Fortschritt in der Garderobe (G)</span>'), 4000);
+    }
+    return wa;
+  }
+  let waUhr = 4;
+  function wochenaufgabenTick(dt) {
+    waUhr -= dt; if (waUhr > 0 || !S || !S.merke || S.schritt < 2) return; waUhr = 3;
+    const wa = wochenaufgaben(), stand = aufgabenStand(S, wa);
+    for (const a of stand) if (a.fertig && !wa.belohnt.includes(a.id)) {
+      wa.belohnt.push(a.id); sichern();
+      ui.toast('<b>✅ Wochenaufgabe: ' + a.sy + ' ' + a.text + '</b><span>' + wa.belohnt.length + ' von 3 geschafft</span>', 'ly-t-ent');
+      setTimeout(() => jetons(wa.belohnt.length === 3 ? 4 : 2, wa.belohnt.length === 3 ? 'Alle Wochenaufgaben' : 'Wochenaufgabe'), 2600);
+    }
+  }
   ui.onGarderobe = async () => {
     if (!S || !laeuft || imGespraech || ui.ebeneArt() || foto) return;
     const G = gd(), hab = new Set(freigeschaltet(S));
     const liste = () => GARDEROBE.map((d) => ({ id: d.id, art: d.art, sy: d.sy, name: d.name, hinweis: d.hinweis, hab: hab.has(d.id), an: G.an[d.art] === d.id, neu: G.neu.includes(d.id) }));
     let umziehen = false;
     input.setEnabled(false);
+    // Kamera von vorn auf die Figur (rechts im Bild, links ist das Fenster); hochkant: Figur oben
+    const hoch = innerHeight > innerWidth || innerWidth < 700, sp = steuerung.pos, yw = spieler ? spieler.group.rotation.y : (steuerung.yaw || 0), fx = Math.sin(yw), fz = Math.cos(yw);
+    steuerung.kameraAus = true; steuerung.frei = false;
+    const seit = hoch ? 0 : 0.75;   // Figur nach rechts verschieben
+    camera.position.set(sp.x + fx * 2.6 - fz * seit, 1.35 + (hoch ? 0.5 : 0), sp.z + fz * 2.6 + fx * seit);
+    camera.lookAt(sp.x - fz * seit, hoch ? 0.75 : 1.0, sp.z + fx * seit);
+    const umbau = async () => { const p = steuerung.pos.clone(), y = spieler.group.rotation.y; await spielerFigur(S.figur); spieler.group.position.copy(p); spieler.group.rotation.y = y; };
     try {
       const st = levelVon(S.jetonsGesamt || 0), preis = GARDEROBE.find((g) => g.level === st.level + 1);
-      await ui.garderobe({ arten: GD_ARTEN, liste: liste(), stufe: { ...st, preis: preis ? preis.sy + ' ' + preis.name : null }, wahl: async (id) => {
+      const woche = aufgabenStand(S, wochenaufgaben());
+      await ui.garderobe({ arten: GD_ARTEN, liste: liste(), woche, stufe: { ...st, preis: preis ? preis.sy + ' ' + preis.name : null }, wahl: async (id) => {
         const d = gdDing(id); if (!d || !hab.has(id)) return liste();
         G.an[d.art] = G.an[d.art] === id ? null : id; G.neu = G.neu.filter((x) => x !== id);
-        if (d.art === 'tier') tierDran(); else umziehen = true;
+        if (d.art === 'tier') tierDran();
+        else if (d.art === 'fahrt') { if (G.an.fahrt === id) { if (d.ziel === 'deck') S.deck = d.wert; else S.trotti = d.wert; ui.toast('<b>' + d.sy + ' ' + d.name + '</b><span>Gilt beim nächsten Aufsteigen (R / T).</span>'); } }
+        else { umziehen = false; sichern(); await umbau(); }   // sofort an der Figur sehen
         ton('pling'); sichern(); return liste();
       } });
-    } finally { input.setEnabled(true); }
+    } finally { input.setEnabled(true); steuerung.kameraAus = false; steuerung.frei = true; steuerung.kamera(0.016, true); }
     G.neu = []; sichern();
-    if (umziehen) { const p = steuerung.pos.clone(), y = spieler.group.rotation.y; await spielerFigur(S.figur); spieler.group.position.copy(p); spieler.group.rotation.y = y; }
+    if (umziehen) await umbau();
   };
   // Anhänger (Lila Bär) an der Hüfte der Spielfigur
   function anhaengerDran() {
@@ -2058,6 +2097,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (best && best.richtig === best.gesamt) staerke('dranbleiben');
     sichern();
     ui.toast('<b>Lernkarte: ' + esc(l.titel) + '</b><span>' + esc(l.karte) + '</span>', 'ly-t-ent');
+    S.merke.lernen = (S.merke.lernen || 0) + 1;
     jetons(alt.mal ? JETON.lektion : JETON.lektionNeu, 'Lektion geschafft');
   }
   // Wegsuche im Schulhaus: nur nach der gesagten Beschreibung laufen (kein Marker); jede Station gibt die nächste Anweisung
@@ -2114,6 +2154,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         fs.stand[id] = { richtig: Math.max(alt.richtig, r.richtig), gesamt: r.gesamt, mal: (alt.mal || 0) + 1 };
         if (r.richtig === r.gesamt) staerke('dranbleiben');
         sichern();
+        S.merke.lernen = (S.merke.lernen || 0) + 1;
         jetons(r.richtig === r.gesamt ? JETON.runde : JETON.blatt, r.richtig === r.gesamt ? 'Alles richtig' : 'Geübt');
         if (!r.neu) break;
       }
@@ -2127,6 +2168,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (!alt || r.richtig > alt.richtig) S.blaetter[b.id] = r;
     if (r.richtig === r.gesamt) staerke('dranbleiben');
     sichern();
+    S.merke.lernen = (S.merke.lernen || 0) + 1;
     jetons(r.richtig === r.gesamt ? JETON.blattAlles : JETON.blatt, r.richtig === r.gesamt ? 'Blatt alles richtig' : 'Blatt geübt');
   }
   // ---------- Skateboard fahren (Skate-Ecke): 60 Sekunden, Punkte für Ollies und Sprünge über Rail, Box, Bank ----------
@@ -2558,6 +2600,12 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (w && w.art === 'anhaenger') { S.anhaenger = S.anhaenger === w.wert ? null : w.wert; sichern(); anhaengerDran(); ui.toast('<b>' + esc(w.name) + '</b><span>' + (S.anhaenger ? 'Hängt jetzt an dir.' : 'Bleibt im Spind.') + '</span>'); }
   }
   let kickerAn = false;   // Tischkicker-Overlay offen: keine Zufallsbegegnungen
+  // Spielt man gegen Kim, kommt Kim an den Tisch (sonst steht dort die gewählte Freundin / der gewählte Freund)
+  function kimAnDenTisch(x, z) {
+    const k = statisten.find((q) => q.d.stamm === 'kim'); if (!k || !k.f.group.visible) return () => {};
+    const alt = k.p.clone(); k.p.set(x, alt.y, z); k.f.group.position.copy(k.p); k.h.x = 1e5;
+    return () => { k.p.copy(alt); k.f.group.position.copy(alt); k.h.x = alt.x; k.h.z = alt.z; };
+  }
   // ---------- Tischkicker in 3D im Jugendhaus (kicker3d.js) ----------
   const kicker3d = createKicker3d({ scene, camera, steuerung, ui, rr, ton: (a) => (a === 'klack' ? geraeusch('pfosten') : ton(a)), vib, canvas: rr.renderer.domElement, holeFigur: async (id) => (id ? holeSpielFigur(id) : null) });
   // ---------- Billard im Jugendhaus (billard.js) ----------
@@ -2587,14 +2635,15 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         tanzFliesen.forEach((f) => { f.material.opacity = 0.45; });
       }
     },
-    billard: async (pa) => { if (fahrt) absteigen(); ui.hinweis(null); input.setEnabled(false); kickerAn = true; try { return await billard.spiel({ gegner: pa ? pa.name : 'Kim', gegnerId: pa ? pa.id : null, leicht: !!ui.leicht || (S.merke.billard || 0) - (S.merke.billardSiege || 0) >= 3 }); } finally { kickerAn = false; input.release('jump'); input.setEnabled(true); } },
-    kicker: async (pa) => { if (fahrt) absteigen(); ui.hinweis(null); input.setEnabled(false); kickerAn = true; try { return await kicker3d.spiel({ gegner: pa ? pa.name : 'Kim', gegnerId: pa ? pa.id : null, leicht: !!ui.leicht || (S.merke.kicker || 0) - (S.merke.kickerSiege || 0) >= 3 }); } finally { kickerAn = false; input.release('jump'); input.setEnabled(true); } },
+    billard: async (pa) => { if (fahrt) absteigen(); ui.hinweis(null); input.setEnabled(false); kickerAn = true; const amTisch = statisten.filter((x) => x.d.billardSeite); amTisch.forEach((x) => { x.f.group.visible = false; x.h.x = 1e5; }); const kimZurueck = pa ? () => {} : kimAnDenTisch(27.4, 115.9); try { return await billard.spiel({ gegner: pa ? pa.name : 'Kim', gegnerId: pa ? pa.id : null, leicht: !!ui.leicht || (S.merke.billard || 0) - (S.merke.billardSiege || 0) >= 3 }); } finally { kickerAn = false; kimZurueck(); amTisch.forEach((x) => { x.f.group.visible = true; x.h.x = x.p.x; x.h.z = x.p.z; }); input.release('jump'); input.setEnabled(true); } },
+    kicker: async (pa) => { if (fahrt) absteigen(); ui.hinweis(null); input.setEnabled(false); kickerAn = true; const amTisch = statisten.filter((x) => x.d.kickerSeite); amTisch.forEach((x) => { x.f.group.visible = false; x.h.x = 1e5; }); const kimZurueck = pa ? () => {} : kimAnDenTisch(20.5, 118.2); try { return await kicker3d.spiel({ gegner: pa ? pa.name : 'Kim', gegnerId: pa ? pa.id : null, leicht: !!ui.leicht || (S.merke.kicker || 0) - (S.merke.kickerSiege || 0) >= 3 }); } finally { kickerAn = false; kimZurueck(); amTisch.forEach((x) => { x.f.group.visible = true; x.h.x = x.p.x; x.h.z = x.p.z; }); input.release('jump'); input.setEnabled(true); } },
     tt3d: welt.orte.tischtennis ? async (pa) => { ui.hinweis(null); const STAERKE = { ben: 1.4, jo: 1.6, ayla: 1.3, dario: 1.2, yusuf: 1.1 };
       // Leute direkt an der Platte gehen kurz zur Seite (sie stehen sonst im Spielfeld)
       const T = welt.orte.tischtennis, platz = statisten.filter((x) => !x.weg && Math.hypot(x.f.group.position.x - T.x, x.f.group.position.z - T.z) < 3.6);
       platz.forEach((x) => { x.f.group.visible = false; });
       try { return await tt3d.spiel({ tisch: T, gegnerId: pa ? pa.id : 'ben', gegnerName: pa ? pa.name : 'Ben', staerke: (pa ? STAERKE[pa.id] || 0.9 : 1.2) * (ui.leicht ? 0.6 : 1), leicht: !!ui.leicht }); }
       finally { platz.forEach((x) => { if (!x.weg) x.f.group.visible = true; }); } } : null, freund: (id, n, g) => freund(id, n, g),
+    bekannte: () => GLEICHALTRIGE.filter((id) => LEUTE[id] && (S.herz[id] || 0) >= 1).sort((a, b) => (S.herz[b] || 0) - (S.herz[a] || 0)).map((id) => ({ id, name: LEUTE[id].name })),
     partner: () => { const b = besteFreunde()[0] || GLEICHALTRIGE.find((id) => S.herz[id] != null); return b ? { id: b, name: LEUTE[b].name } : null; } });
   let iaNah = null;
   // Mission „Tank auffüllen“ (Kurs-Ritual nach Modul 1): passende Tätigkeiten in der Welt zählen
@@ -3020,12 +3069,14 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (elfmeter.aktiv() && imGespraech) elfmeter.beenden(); else if (laeuft && !ui.ebeneArt()) elfmeter.tick(dt);
     if (dosen.aktiv() && imGespraech) dosen.beenden(); else if (laeuft && !ui.ebeneArt()) dosen.tick(dt);
     if (laeuft && !ui.ebeneArt()) kicker3d.tick(dt);
-    if (laeuft && !ui.ebeneArt()) billard.tick(dt);   // Gespräch beginnt: Runde endet; Menü offen: Pause
+    if (laeuft && !ui.ebeneArt() && !kicker3d.aktiv()) { const p = steuerung.pos; kicker3d.demoTick(dt, Math.hypot(p.x - 20.5, p.z - 117.2) < 9 && statisten.some((x) => x.d.kickerSeite && x.f.group.visible)); }
+    if (laeuft && !ui.ebeneArt()) billard.tick(dt);
+    if (laeuft && !ui.ebeneArt() && !billard.aktiv()) { const p = steuerung.pos; billard.demoTick(dt, Math.hypot(p.x - 26, p.z - 115.2) < 9 && statisten.some((x) => x.d.billardSeite && x.f.group.visible)); }   // Gespräch beginnt: Runde endet; Menü offen: Pause
     verkehr.tick(dt, imGespraech || !laeuft);
     sticker.tick(dt, !!(laeuft && S && !imGespraech));
     buchstaben.tick(dt, !!(laeuft && S && !imGespraech && !ui.ebeneArt()));
     haustier.tick(dt, !!(laeuft && S && spieler && spieler.group.visible));
-    if (laeuft) { garderobePruefen(dt); herausforderungTick(dt); }
+    if (laeuft) { garderobePruefen(dt); herausforderungTick(dt); wochenaufgabenTick(dt); }
     botengang.tick(dt, { sichtbar: !!(laeuft && S && !imGespraech && !ui.ebeneArt() && !volley.aktiv() && !elfmeter.aktiv() && !kickerAn), faehrt: !!fahrt });
     entenTick(dt, performance.now() / 1000);
     fahrerTick(dt, imGespraech || !laeuft);

@@ -737,7 +737,7 @@ export function createUI({ root, input, speech }) {
 
   // Garderobe (garderobe.js): Belohnungen anziehen. Reiter je Art; gesperrte Teile zeigen, wie man sie bekommt.
   // wahl(id) → neue Liste (an/aus umgeschaltet). Offen, bis „Fertig“ (oder G / Escape).
-  ui.garderobe = ({ arten, liste, wahl, start = null, stufe = null }) => new Promise((ok) => {
+  ui.garderobe = ({ arten, liste, wahl, start = null, stufe = null, woche = null }) => new Promise((ok) => {
     let reiter = start || (liste.find((x) => x.neu) || {}).art || arten[0][0], daten = liste;
     const zu = () => { document.removeEventListener('keydown', taste, true); ebeneZu(); ok(); };
     const taste = (e) => { if (e.code === 'Escape' || e.code === 'KeyG') { e.preventDefault(); e.stopPropagation(); zu(); } };
@@ -745,7 +745,8 @@ export function createUI({ root, input, speech }) {
     const zeig = () => {
       const hab = daten.filter((x) => x.hab).length;
       const lv = stufe ? '<div class="ly-gd-level"><b>⭐ Dorf-Level ' + stufe.level + '</b><span class="ly-gd-balken"><i style="width:' + Math.round(stufe.anteil * 100) + '%"></i></span><small>' + (stufe.naechste == null ? 'Höchstes Level erreicht!' : 'Noch ' + stufe.fehlt + ' Jetons bis Level ' + (stufe.level + 1) + (stufe.preis ? ' · dann: ' + esc(stufe.preis) : '') + ' · Jetons gibt es für Lernen und Aufgaben') + '</small></div>' : '';
-      const k = ebeneAuf('garderobe', '<div class="ly-t-kicker">Garderobe · ' + hab + ' von ' + daten.length + ' freigeschaltet</div><h2>Dein Style</h2>' + lv +
+      const wo = woche && woche.length ? '<div class="ly-gd-woche"><b>📅 Wochenaufgaben</b>' + woche.map((a) => '<span class="' + (a.fertig ? 'ok' : '') + '">' + (a.fertig ? '✅' : a.sy) + ' ' + esc(a.text) + ' <i>' + a.ist + '/' + a.soll + '</i></span>').join('') + '</div>' : '';
+      const k = ebeneAuf('garderobe', '<div class="ly-t-kicker">Garderobe · ' + hab + ' von ' + daten.length + ' freigeschaltet</div><h2>Dein Style</h2>' + lv + wo +
         '<div class="ly-gd-reiter">' + arten.map(([a, t]) => '<button type="button" class="ly-ed-wort' + (a === reiter ? ' an' : '') + '" data-r="' + a + '">' + t + (daten.some((x) => x.art === a && x.neu) ? ' •' : '') + '</button>').join('') + '</div>' +
         '<div class="ly-gd-gitter">' + daten.filter((x) => x.art === reiter).map((x) => '<button type="button" class="ly-gd-ding' + (x.hab ? '' : ' zu') + (x.an ? ' an' : '') + '" data-id="' + esc(x.id) + '"' + (x.hab ? '' : ' disabled') + '>' +
           '<span class="ly-gd-sy">' + (x.hab ? x.sy : '🔒') + '</span><b>' + esc(x.name) + '</b><small>' + (x.hab ? (x.an ? '✔ An' : (x.neu ? 'NEU · antippen' : 'Antippen = anziehen')) : esc(x.hinweis)) + '</small></button>').join('') + '</div>' +

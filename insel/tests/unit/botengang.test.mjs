@@ -38,8 +38,8 @@ test('Garderobe: eindeutige Teile, jede Art vertreten, Hinweise kurz, Tests lauf
   for (const [a] of ARTEN) assert.ok(GARDEROBE.filter((g) => g.art === a).length >= 4, 'zu wenig: ' + a);
   assert.ok(GARDEROBE.some((g) => g.level), 'Level-Belohnungen fehlen');
   for (const g of GARDEROBE) assert.ok(g.hinweis.split(/\s+/).length <= 12 && g.name && g.sy, g.id);
-  assert.deepEqual(freigeschaltet({ merke: {} }), [], 'leerer Stand schaltet nichts frei');
-  const voll = { jetonsGesamt: 500, merke: { sticker: new Array(24).fill('x'), boten: { n: 8, best: { a: 1, b: 1, c: 1, d: 1, e: 1, f: 1, g: 1, h: 1 } }, skate5: 'SKATE', skate5Rekord: 30, fotoBingo: new Array(9).fill('x'), tanzRekord: 9000, tanzSterne: 3, kickerSiege: 1, kicker: 5, tanz: 2, dosenRekord: 6, elfmeterRekord: 5, volleyRekord: 12, renn_brett: 50, enten: 2, billardSiege: 1, hf: { fertig: [1, 2, 3, 4, 5] } }, herz: { a: 4, b: 5, c: 4 } };
+  assert.deepEqual(freigeschaltet({ merke: {} }), ['k_start'], 'leerer Stand: nur das Start-Geschenk');
+  const voll = { jetonsGesamt: 500, merke: { sticker: new Array(24).fill('x'), boten: { n: 8, best: { a: 1, b: 1, c: 1, d: 1, e: 1, f: 1, g: 1, h: 1 } }, skate5: 'SKATE', skate5Rekord: 30, fotoBingo: new Array(9).fill('x'), tanzRekord: 9000, tanzSterne: 3, kickerSiege: 1, kicker: 5, tanz: 2, dosenRekord: 6, elfmeterRekord: 5, volleyRekord: 12, renn_brett: 50, renn_trotti: 40, enten: 2, billardSiege: 1, kickerBesiegt: [1, 2, 3], billardBesiegt: [1, 2, 3], hf: { fertig: [1, 2, 3, 4, 5] } }, herz: { a: 4, b: 5, c: 4 } };
   assert.equal(freigeschaltet(voll).length, GARDEROBE.length, 'alles erreichbar');
 });
 

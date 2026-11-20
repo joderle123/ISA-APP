@@ -48,10 +48,24 @@ const ROBOTER = [
 ];
 
 export const KABEL = [['cdi', 14, -62.4], ['kantine', 18.6, -8.2], ['gang', -15.5, -15.8], ['innenhof', -17.2, -44.9], ['skate', -36.4, 6.4]];
-export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton, blattWahl, freiwurf, skate, pausenFussball = null, volley = null, volleyAktiv = () => false, elfmeter = null, elfmeterAktiv = () => false, tt3d = null, kicker = null, billard = null, tanzen = null, dosen = null, dosenAktiv = () => false, botengang = null, spindAuf = null, partner = () => null, freund = () => {}, onKabel = null }) {
+export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton, blattWahl, freiwurf, skate, pausenFussball = null, volley = null, volleyAktiv = () => false, elfmeter = null, elfmeterAktiv = () => false, tt3d = null, kicker = null, billard = null, tanzen = null, dosen = null, dosenAktiv = () => false, botengang = null, spindAuf = null, partner = () => null, bekannte = () => [], freund = () => {}, onKabel = null }) {
   const tt = welt.orte.tischtennis;
   const liste = [];
   let botenFrage = 0;   // Botengang: zweimal drücken = abbrechen
+  // Gegner wählen (Kicker, Billard): bis zu drei Freund:innen oder Kim. Wer drei verschiedene schlägt, wird Champion.
+  async function gegnerWaehlen(spiel) {
+    const liste = bekannte().slice(0, 3);
+    if (!liste.length) return null;
+    const i = await ui.waehle(liste.map((p) => p.name).concat(['Kim (Jugendhaus)']), spiel + ': Gegen wen spielst du?', { fest: true });
+    ui.dialogZu();
+    return i < liste.length ? liste[i] : null;
+  }
+  function besiegt(s, schluessel, wer, preis) {
+    const l = s.merke[schluessel] = s.merke[schluessel] || [];
+    if (l.includes(wer)) return;
+    l.push(wer);
+    if (l.length === 3) ui.toast('<b>🏆 ' + preis + '</b><span>Drei verschiedene Leute geschlagen. Neues Teil in der Garderobe!</span>', 'ly-t-ent');
+  }
   const dazu = (x, z, r, text, tu, extra = {}) => liste.push({ x, z, r, text, tu, ...extra });
   // Sitzen: alle Stühle und Bänke
   for (const s of welt.sitze || []) dazu(s.x, s.z, s.bank ? 0.85 : 0.75, 'Hinsetzen', 'sitzen', { yaw: s.rot });
@@ -71,8 +85,9 @@ export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton
   dazu(-6.8, -9, 1.4, 'Pinnwand lesen', 'pinnwand', { prio: 1 });
   dazu(-15.05, -12.55, 1.0, 'Zettel in den Sorgen-Briefkasten werfen', 'sorgen', { prio: 1 });
   dazu(-40, 99.9, 1.4, 'Am Kiosk etwas holen', 'kiosk', { prio: 1 });   // Park am Weiher
-  dazu(20.5, 116.2, 1.2, 'Tischkicker spielen', 'kicker', { prio: 1 });   // Jugendhaus
-  if (billard) dazu(24.6, 115.2, 1.3, 'Billard spielen', 'billard', { prio: 1 });
+  dazu(20.5, 116.2, 1.7, 'Tischkicker spielen', 'kicker', { prio: 1 });   // Jugendhaus (rund um den Tisch)
+  dazu(20.5, 118.2, 1.4, 'Tischkicker spielen', 'kicker', { prio: 1 });
+  if (billard) { dazu(24.5, 115.2, 1.3, 'Billard spielen', 'billard', { prio: 1 }); dazu(27.5, 115.2, 1.3, 'Billard spielen', 'billard', { prio: 1 }); }
   dazu(25.5, 112.9, 1.2, 'Musik wechseln', 'jukebox', { prio: 1 });
   dazu(9.4, 125.0, 1.4, 'Tee holen', 'tee', { prio: 1 });
   if (tanzen) dazu(23.4, 123.4, 1.5, 'Tanzfläche: im Takt tanzen', 'tanzen', { prio: 1 });
@@ -235,6 +250,7 @@ export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton
         if (elfmeterAktiv()) return;
         const pa = partner();
         const r = await elfmeter({ keeperId: pa ? pa.id : 'ben', keeperName: pa ? pa.name : 'Ben', rekord: s.merke.elfmeterRekord || 0 });
+        s.merke.elfmeterSpiele = (s.merke.elfmeterSpiele || 0) + 1;
         const neu = r.tore > (s.merke.elfmeterRekord || 0); if (neu) s.merke.elfmeterRekord = r.tore; sichern();
         ui.toast('<b>⚽ ' + r.tore + ' von 5</b><span>' + (neu ? 'Neuer Rekord!' : 'Rekord: ' + (s.merke.elfmeterRekord || 0) + ' von 5') + '</span>');
         return;
@@ -243,6 +259,7 @@ export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton
         if (volleyAktiv()) return;
         const pa = partner();
         const r = await volley({ partnerId: pa ? pa.id : 'ben', partnerName: pa ? pa.name : 'Ben', rekord: s.merke.volleyRekord || 0 });
+        s.merke.volleySpiele = (s.merke.volleySpiele || 0) + 1;
         const neu = r.best > (s.merke.volleyRekord || 0); if (neu) s.merke.volleyRekord = r.best; sichern();
         ui.toast('<b>🏐 ' + r.punkte + ' Punkte</b><span>Längster Ballwechsel: ' + r.best + (neu ? ' – neuer Rekord!' : ' · Rekord ' + (s.merke.volleyRekord || 0)) + '</span>');
         return;
@@ -250,6 +267,7 @@ export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton
       case 'dosen': {   // Marktplatz: sechs Dosen, drei Bälle; alle sechs = Stoffente (einmal) und Rekord
         if (dosenAktiv()) return;
         const r = await dosen({ rekord: s.merke.dosenRekord || 0 });
+        s.merke.dosenSpiele = (s.merke.dosenSpiele || 0) + 1;
         const neu = r.dosen > (s.merke.dosenRekord || 0); if (neu) s.merke.dosenRekord = r.dosen;
         if (r.dosen >= 6 && !s.merke.stoffente) { s.merke.stoffente = true; sichern(); ui.toast('<b>🦆 Gewonnen: eine Stoffente!</b><span>Am Stand: „Die sieht aus wie die echten im Weiher.“</span>', 'ly-t-ent'); return; }
         sichern(); ui.toast('<b>🥫 ' + r.dosen + ' von 6</b><span>' + (r.dosen >= 6 ? 'Abgeräumt! ' : '') + (neu ? 'Neuer Rekord.' : 'Rekord: ' + (s.merke.dosenRekord || 0) + ' von 6') + '</span>');
@@ -264,13 +282,16 @@ export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton
         return;
       }
       case 'billard': {   // Jugendhaus: Billard gegen die beste Freundin / den besten Freund (sonst Kim)
-        const r = await billard(partner()); if (!r || r.abbruch) return;
+        const pa = await gegnerWaehlen('Billard'); const r = await billard(pa); if (!r || r.abbruch) return;
+        if (r.gewonnen) besiegt(s, 'billardBesiegt', pa ? pa.id : 'kim', 'Billard-Profi');
         s.merke.billard = (s.merke.billard || 0) + 1; if (r.gewonnen) s.merke.billardSiege = (s.merke.billardSiege || 0) + 1; sichern();
         ui.toast('<b>🎱 ' + (r.gewonnen ? 'Gewonnen!' : 'Verloren – knapp.') + '</b><span>' + (r.gewonnen ? '„Revanche. Aber erst nach dem Tee.“' : '„Gut gespielt. Nochmal?“') + '</span>', r.gewonnen ? 'ly-t-ent' : undefined);
         return;
       }
       case 'kicker': {   // Jugendhaus: kurzes Duell – Spaß, kein Druck; das Ergebnis ist mal so, mal so
-        const r = kicker ? await kicker(partner()) : { ich: 3 + Math.floor(Math.random() * 4), er: 3 + Math.floor(Math.random() * 4) };
+        const pa = kicker ? await gegnerWaehlen('Tischkicker') : null;
+        const r = kicker ? await kicker(pa) : { ich: 3 + Math.floor(Math.random() * 4), er: 3 + Math.floor(Math.random() * 4) };
+        if (r && r.ich > r.er) besiegt(s, 'kickerBesiegt', pa ? pa.id : 'kim', 'Kicker-Champion');
         if (!r || (!r.ich && !r.er)) return;   // gleich wieder aufgehört
         const { ich, er } = r;
         s.merke.kicker = (s.merke.kicker || 0) + 1; if (ich > er) s.merke.kickerSiege = (s.merke.kickerSiege || 0) + 1; ton('klack'); sichern();

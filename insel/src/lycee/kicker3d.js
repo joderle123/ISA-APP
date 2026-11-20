@@ -72,7 +72,7 @@ export function createKicker3d({ scene, camera, steuerung, ui, rr = null, ton = 
   function spiel({ gegner = 'Kim', leicht = false, gegnerId = null } = {}) {
     return new Promise(async (ok) => {
       const L0 = { ich: 0, er: 0, uIch: 0, uEr: 0, schuss: 0, rSchuss: 0, pause: 1.0, fehler: 0, fehlerUhr: 0, t: 0, zieh: null, tasten: {}, leicht, gegner, ende: null, aus: 0 };
-      lauf = L0;
+      lauf = L0; demoLauf = null;
       const p0 = steuerung.pos.clone(), yaw0 = steuerung.yaw || 0;
       steuerung.teleport(KX, KZ - B / 2 - 0.75, 0); steuerung.frei = false; steuerung.kameraAus = true;
       if (steuerung.figur && steuerung.figur.group) steuerung.figur.group.visible = false;
@@ -108,16 +108,24 @@ export function createKicker3d({ scene, camera, steuerung, ui, rr = null, ton = 
   }
   function schiessen(Lx) { if (Lx.schuss <= 0) { Lx.schuss = 0.24; ton('klack'); for (const st of stangen) if (st.f === 'b') st.schwung = 0.25; } }
 
-  function tick(dt) {
-    const Lx = lauf; if (!Lx) return;
+  function tick(dt, Lx = lauf) {
+    if (!Lx) return;
     dt = Math.min(dt, 0.04); Lx.t += dt;
+    const demo = !!Lx.demo, klang = demo ? () => {} : ton;
     // Kamera: schräg von der eigenen Seite, so weit weg, dass der ganze Tisch ins Bild passt (auch hochkant am Handy)
-    const hfov = 2 * Math.atan(Math.tan(THREE.MathUtils.degToRad(camera.fov / 2)) * camera.aspect), dist = Math.max(1.35, (L / 2 + 0.12) / Math.tan(hfov / 2) * 0.92);
-    camera.position.lerp(new THREE.Vector3(KX, T + dist * 0.78, KZ - B / 2 - dist * 0.62), Math.min(1, dt * 5)); camera.lookAt(KX, T, KZ + 0.04);
-    if (rr && rr.setDof) rr.setDof(0.2, camera.position.distanceTo(ball.position));
+    if (!demo) {
+      const hfov = 2 * Math.atan(Math.tan(THREE.MathUtils.degToRad(camera.fov / 2)) * camera.aspect), dist = Math.max(1.35, (L / 2 + 0.12) / Math.tan(hfov / 2) * 0.92);
+      camera.position.lerp(new THREE.Vector3(KX, T + dist * 0.78, KZ - B / 2 - dist * 0.62), Math.min(1, dt * 5)); camera.lookAt(KX, T, KZ + 0.04);
+      if (rr && rr.setDof) rr.setDof(0.2, camera.position.distanceTo(ball.position));
+    }
     // eigene Stangen
-    const dir = (Lx.tasten.ArrowUp || Lx.tasten.KeyW ? 1 : 0) - (Lx.tasten.ArrowDown || Lx.tasten.KeyS ? 1 : 0);
-    Lx.uIch = THREE.MathUtils.clamp(Lx.uIch + dir * dt * 3.2, -1, 1);
+    if (!demo) { const dir = (Lx.tasten.ArrowUp || Lx.tasten.KeyW ? 1 : 0) - (Lx.tasten.ArrowDown || Lx.tasten.KeyS ? 1 : 0); Lx.uIch = THREE.MathUtils.clamp(Lx.uIch + dir * dt * 3.2, -1, 1); }
+    else {   // Demo: Blau spielt auch der Computer (gespiegelt)
+      const blauVorn = stangen.filter((s) => s.f === 'b' && s.u < b.u + 0.02), zb = (blauVorn.length ? blauVorn : stangen.filter((s) => s.f === 'b')).reduce((a, s) => (Math.abs(s.u - b.u) < Math.abs(a.u - b.u) ? s : a));
+      const bb = zb.figuren.reduce((a, v) => (Math.abs(v + zb.weg * Lx.uIch - b.v) < Math.abs(a + zb.weg * Lx.uIch - b.v) ? v : a));
+      Lx.uIch += THREE.MathUtils.clamp(THREE.MathUtils.clamp((b.v - Lx.fehler - bb) / zb.weg, -1, 1) - Lx.uIch, -dt * 2.6, dt * 2.6);
+      if (Math.abs(b.u - zb.u) < 0.06 && Lx.schuss <= 0 && Math.random() < dt * 6) { Lx.schuss = 0.24; zb.schwung = 0.25; }
+    }
     // Gegner: richtet die nächste Figur vor dem Ball aus (nicht perfekt; „leicht“ = langsamer und ungenauer)
     Lx.fehlerUhr -= dt; if (Lx.fehlerUhr <= 0) { Lx.fehlerUhr = 0.45 + Math.random() * 0.5; Lx.fehler = (Math.random() - 0.5) * (Lx.leicht ? 0.12 : 0.06); }
     const roteVorn = stangen.filter((s) => s.f === 'r' && s.u > b.u - 0.02);
@@ -143,7 +151,7 @@ export function createKicker3d({ scene, camera, steuerung, ui, rr = null, ton = 
       if (b.v > B / 2 - R) { b.v = B / 2 - R; b.vv = -Math.abs(b.vv) * 0.8; }
       for (const s of [-1, 1]) if (s * b.u > L / 2 - R) {
         if (Math.abs(b.v) < TOR / 2 - R * 0.4) { tor(Lx, s); return; }
-        b.u = s * (L / 2 - R); b.vu = -s * Math.abs(b.vu) * 0.8; ton('klack');
+        b.u = s * (L / 2 - R); b.vu = -s * Math.abs(b.vu) * 0.8; klang('klack');
       }
       for (const st of stangen) {
         if (Math.abs(b.u - st.u) > R + FR + 0.01) continue;
@@ -153,10 +161,10 @@ export function createKicker3d({ scene, camera, steuerung, ui, rr = null, ton = 
           if (d >= R + FR || du * vorn < -0.012) continue;   // von hinten rollt der Ball unter der Figur durch
           const blauSt = st.f === 'b', kick = blauSt ? Lx.schuss > 0 : (Lx.rSchuss <= 0 && Math.random() < (Lx.leicht ? 0.55 : 0.78));
           if (kick) {
-            const v = 2.6 + Math.random() * 1.0, torU = blauSt ? L / 2 : -L / 2, zielV = (Math.random() - 0.5) * (TOR + 0.2) + dv * 2;
+            const v = (demo ? 2.0 : 2.6) + Math.random() * 1.0, torU = blauSt ? L / 2 : -L / 2, zielV = (Math.random() - 0.5) * (TOR + 0.2) + dv * 2;
             b.vu = vorn * v; b.vv = (zielV - b.v) / Math.max(0.12, Math.abs(torU - b.u)) * v;
             if (blauSt) Lx.schuss = 0; else { Lx.rSchuss = 0.5; for (const s2 of stangen) if (s2.f === 'r') s2.schwung = 0.25; }
-            ton('klack'); vib(8);
+            klang('klack'); if (!demo) vib(8);
           } else { const sp = Math.max(0.35, Math.hypot(b.vu, b.vv)) * 0.75; b.vu = du / (d || 1) * sp; b.vv = dv / (d || 1) * sp; }
           b.u = st.u + du / (d || 1) * (R + FR + 0.001); b.v = fv + dv / (d || 1) * (R + FR + 0.001);
         }
@@ -171,6 +179,7 @@ export function createKicker3d({ scene, camera, steuerung, ui, rr = null, ton = 
     const rl = Math.hypot(b.vu, b.vv) * dt / R; if (rl > 0) { const ax = new THREE.Vector3(b.vv, 0, b.vu).normalize(); ball.quaternion.premultiply(new THREE.Quaternion().setFromAxisAngle(ax, rl)); }
   }
   function tor(Lx, seite) {   // seite +1: rechts = rotes Tor → Punkt für dich
+    if (Lx.demo) { torLicht[seite > 0 ? 1 : 0].material.opacity = 0.7; einwurf(Lx, seite > 0 ? -1 : 1); return; }
     if (seite > 0) Lx.ich++; else Lx.er++;
     torLicht[seite > 0 ? 1 : 0].material.opacity = 1;
     ton(seite > 0 ? 'melodie2' : 'klack'); vib(seite > 0 ? [20, 30, 20] : 30);
@@ -179,5 +188,12 @@ export function createKicker3d({ scene, camera, steuerung, ui, rr = null, ton = 
     if (Lx.ich >= 5 || Lx.er >= 5) { ui.skate({ trick: (Lx.ich > Lx.er ? '🏆 Gewonnen! ' : 'Knapp! ') + Lx.ich + ' : ' + Lx.er }); b.vu = b.vv = 0; welt(0, -1, 0, ball.position); Lx.aus = 2.4; return; }
     einwurf(Lx, seite > 0 ? -1 : 1);
   }
-  return { spiel, tick, aktiv: () => !!lauf, beenden: () => { if (lauf) lauf.ende(); }, root, get ball() { return b; }, get lauf() { return lauf; } };
+  // Demo: Wenn niemand spielt und man in der Nähe ist, spielen zwei Jugendliche (die Figuren stellt spiel.js an den Tisch)
+  let demoLauf = null;
+  function demoTick(dt, nah) {
+    if (lauf || !nah) return;
+    if (!demoLauf) { demoLauf = { demo: true, ich: 0, er: 0, uIch: 0, uEr: 0, schuss: 0, rSchuss: 0, pause: 0.6, fehler: 0, fehlerUhr: 0, t: 0, tasten: {}, leicht: true, aus: 0 }; einwurf(demoLauf, 1); }
+    tick(dt, demoLauf);
+  }
+  return { spiel, tick, demoTick, aktiv: () => !!lauf, beenden: () => { if (lauf) lauf.ende(); }, root, get ball() { return b; }, get lauf() { return lauf; } };
 }

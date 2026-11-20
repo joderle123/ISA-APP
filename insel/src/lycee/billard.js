@@ -122,7 +122,7 @@ export function createBillard({ scene, camera, steuerung, ui, rr = null, ton = (
   let lauf = null;
   function spiel({ gegner = 'Kim', gegnerId = null, leicht = false } = {}) {
     return new Promise(async (ok) => {
-      aufstellen();
+      aufstellen(); demoLauf = null;
       const S0 = lauf = { dran: 'ich', sorte: { ich: null, er: null }, ri: 0, kraft: 0, lade: false, phase: 'zielen', t: 0, tasten: {}, gegner, leicht, versenkt: [], ersterKontakt: null, weisseDrin: false, ende: null, aus: 0, kiWarte: 0, ergebnis: null };
       const p0 = steuerung.pos.clone(), yaw0 = steuerung.yaw || 0;
       steuerung.teleport(TX - L / 2 - 0.6, TZ, Math.PI / 2); steuerung.frei = false; steuerung.kameraAus = true;
@@ -164,10 +164,10 @@ export function createBillard({ scene, camera, steuerung, ui, rr = null, ton = (
     Sx.lade = false; if (Sx.kraft < 0.04) return;
     const v = 0.4 + Sx.kraft * 3.6; weisse.vx = Math.cos(Sx.ri) * v; weisse.vz = Math.sin(Sx.ri) * v;
     Sx.phase = 'rollen'; Sx.t = 0; Sx.versenkt = []; Sx.ersterKontakt = null; Sx.weisseDrin = false;
-    ton('klack'); vib(14); [linie, linie2, geist].forEach((o) => { o.visible = false; });
+    if (!Sx.demo) { ton('klack'); vib(14); } [linie, linie2, geist].forEach((o) => { o.visible = false; });
   }
-  function kiZielen(Sx) {   // Gegner: bester Stoß aus allen eigenen Kugeln × Taschen (frei, kleiner Schnittwinkel, kurzer Weg)
-    const meine = kugeln.filter((k) => !k.drin && k !== weisse && (Sx.sorte.er ? sorte(k.n) === Sx.sorte.er : sorte(k.n) !== 'acht'));
+  function kiZielen(Sx, wer = 'er') {   // Gegner: bester Stoß aus allen eigenen Kugeln × Taschen (frei, kleiner Schnittwinkel, kurzer Weg)
+    const meine = kugeln.filter((k) => !k.drin && k !== weisse && (Sx.sorte[wer] ? sorte(k.n) === Sx.sorte[wer] : sorte(k.n) !== 'acht'));
     const ziele = meine.length ? meine : kugeln.filter((k) => !k.drin && k.n === 8);
     let best = null;
     const frei = (ax, az, bx, bz, ohne) => kugeln.every((k) => { if (k.drin || ohne.includes(k)) return true; const dx = bx - ax, dz = bz - az, l = Math.hypot(dx, dz), t = ((k.x - ax) * dx + (k.z - az) * dz) / (l * l); if (t < 0 || t > 1) return true; return Math.hypot(ax + dx * t - k.x, az + dz * t - k.z) > 2 * r; });
@@ -191,34 +191,45 @@ export function createBillard({ scene, camera, steuerung, ui, rr = null, ton = (
       const gewonnen = Sx.sorte[wer] && restEigen(wer) === 0 && !Sx.weisseDrin;
       const ichGewinne = gewonnen ? wer === 'ich' : wer !== 'ich';
       Sx.ergebnis = { gewonnen: ichGewinne };
-      ui.skate({ trick: ichGewinne ? '🏆 Gewonnen! Die 8 ist drin.' : (wer === 'ich' ? 'Die 8 zu früh – Runde an ' + Sx.gegner + '.' : Sx.gegner + ' versenkt die 8 – du gewinnst!') });
-      ton(ichGewinne ? 'melodie2' : 'klack'); if (Sx.gf && Sx.gf.spiele) Sx.gf.spiele(ichGewinne ? 'Idle' : 'Jubeln', { einmal: true });
+      if (!Sx.demo) ui.skate({ trick: ichGewinne ? '🏆 Gewonnen! Die 8 ist drin.' : (wer === 'ich' ? 'Die 8 zu früh – Runde an ' + Sx.gegner + '.' : Sx.gegner + ' versenkt die 8 – du gewinnst!') });
+      if (!Sx.demo) ton(ichGewinne ? 'melodie2' : 'klack'); if (Sx.gf && Sx.gf.spiele) Sx.gf.spiele(ichGewinne ? 'Idle' : 'Jubeln', { einmal: true });
       Sx.aus = 2.8; Sx.phase = 'aus'; return;
     }
-    if (Sx.weisseDrin) { weisse.drin = false; weisse.m.visible = true; weisse.x = -L / 4; weisse.z = 0; weisse.fall = 0; zeige(weisse); }
+    if (Sx.weisseDrin) {   // Weiße zurück auf den Kopfpunkt – liegt dort eine Kugel, daneben
+      weisse.drin = false; weisse.m.visible = true; weisse.fall = 0; weisse.vx = weisse.vz = 0;
+      for (const dz of [0, 0.07, -0.07, 0.14, -0.14, 0.21, -0.21]) for (const dx of [0, -0.07, -0.14]) {
+        const x = -L / 4 + dx, z = dz; if (kugeln.every((k) => k === weisse || k.drin || Math.hypot(k.x - x, k.z - z) > 2.2 * r)) { weisse.x = x; weisse.z = z; zeige(weisse); return weiterNachWeisser(Sx, wer, anderer, name); }
+      }
+      weisse.x = -L / 4; weisse.z = 0; zeige(weisse);
+    }
+    return weiterNachWeisser(Sx, wer, anderer, name);
+  }
+  function weiterNachWeisser(Sx, wer, anderer, name) {
+    const restEigen = (w) => kugeln.filter((k) => !k.drin && Sx.sorte[w] && sorte(k.n) === Sx.sorte[w]).length;
     const weiter = !Sx.weisseDrin && Sx.versenkt.some((k) => Sx.sorte[wer] && sorte(k.n) === Sx.sorte[wer]);
     const s = (w) => (Sx.sorte[w] === 'volle' ? 'Volle (1–7)' : Sx.sorte[w] === 'halbe' ? 'Halbe (9–15)' : 'noch offen');
     if (!weiter) Sx.dran = anderer;
     const hinweis = Sx.weisseDrin ? 'Weiße in der Tasche. ' : weiter ? name + ' trifft – nochmal! ' : '';
-    ui.skate({ punkte: 15 - kugeln.filter((k) => !k.drin && k.n > 0).length, trick: hinweis + (Sx.dran === 'ich' ? 'Du bist dran' : Sx.gegner + ' ist dran') + ' · Du: ' + s('ich') + (Sx.sorte.ich && restEigen('ich') === 0 ? ' → jetzt die 8!' : '') });
+    if (!Sx.demo) ui.skate({ punkte: 15 - kugeln.filter((k) => !k.drin && k.n > 0).length, trick: hinweis + (Sx.dran === 'ich' ? 'Du bist dran' : Sx.gegner + ' ist dran') + ' · Du: ' + s('ich') + (Sx.sorte.ich && restEigen('ich') === 0 ? ' → jetzt die 8!' : '') });
     Sx.phase = 'zielen'; Sx.kiWarte = 1.4; Sx.kraft = 0;
     if (Sx.dran === 'ich') { const k = kugeln.find((q) => !q.drin && q !== weisse && (!Sx.sorte.ich || sorte(q.n) === Sx.sorte.ich)) || kugeln[8]; Sx.ri = Math.atan2(k.z - weisse.z, k.x - weisse.x); }
   }
-  function tick(dt) {
-    const Sx = lauf; if (!Sx) return;
+  function tick(dt, Sx = lauf) {
+    if (!Sx) return;
+    const demo = !!Sx.demo;
     dt = Math.min(dt, 0.04); Sx.t += dt;
     // fallende Kugeln
     for (const k of kugeln) if (k.drin && k.fall > 0) { k.fall -= dt; k.x += k.vx * dt; k.z += k.vz * dt; welt(k.x, T + r - (0.35 - k.fall) * 0.4, k.z, k.m.position); if (k.fall <= 0) k.m.visible = false; }
-    if (Sx.phase === 'aus') { Sx.aus -= dt; if (Sx.aus <= 0) Sx.ende(); }
+    if (Sx.phase === 'aus') { Sx.aus -= dt; if (Sx.aus <= 0) { if (demo) { aufstellen(); Object.assign(Sx, { phase: 'zielen', dran: 'ich', sorte: { ich: null, er: null }, kiWarte: 2, kiPlan: null }); } else Sx.ende(); } }
     const ziel = new THREE.Vector3(), cam = new THREE.Vector3();
     if (Sx.phase === 'zielen') {
-      if (Sx.dran === 'ich') {
+      if (Sx.dran === 'ich' && !demo) {
         const dir = (Sx.tasten.ArrowRight || Sx.tasten.KeyD ? 1 : 0) - (Sx.tasten.ArrowLeft || Sx.tasten.KeyA ? 1 : 0), fein = Sx.tasten.ShiftLeft || Sx.tasten.ShiftRight;
         Sx.ri += dir * dt * (fein ? 0.12 : 0.9);
         if (Sx.lade) { Sx.kraft = 0.5 - 0.5 * Math.cos(Sx.t * 2.6); }   // pendelt 0 → 1 → 0
       } else {
         Sx.kiWarte -= dt;
-        if (!Sx.kiPlan) Sx.kiPlan = kiZielen(Sx);
+        if (!Sx.kiPlan) Sx.kiPlan = kiZielen(Sx, Sx.dran);
         Sx.ri += THREE.MathUtils.clamp(Sx.kiPlan.ri - Sx.ri, -dt * 1.5, dt * 1.5); Sx.kraft = Math.min(Sx.kiPlan.kraft, Math.max(0, (1.4 - Sx.kiWarte) * 0.8));
         if (Sx.kiWarte <= 0) { Sx.ri = Sx.kiPlan.ri; Sx.kraft = Sx.kiPlan.kraft; Sx.kiPlan = null; stoss(Sx); }
       }
@@ -226,7 +237,7 @@ export function createBillard({ scene, camera, steuerung, ui, rr = null, ton = (
       const dx = Math.cos(Sx.ri), dz = Math.sin(Sx.ri);
       welt(weisse.x, T + r + 0.012, weisse.z, queue.position); queue.rotation.set(0, -Sx.ri, -0.08); queue.children.forEach((c) => { c.position.x = c.userData.x0 === undefined ? (c.userData.x0 = c.position.x) : c.userData.x0; c.position.x -= Sx.kraft * 0.18; });
       queue.visible = true;
-      if (Sx.dran === 'ich') {
+      if (Sx.dran === 'ich' && !demo) {
         const vs = vorschau(Sx.ri), ex = weisse.x + dx * vs.t, ez = weisse.z + dz * vs.t;
         linie.geometry.setFromPoints([welt(weisse.x, T + r, weisse.z), welt(ex, T + r, ez)]); linie.computeLineDistances(); linie.visible = true;
         welt(ex, T + r, ez, geist.position); geist.visible = !!vs.ziel;
@@ -238,17 +249,25 @@ export function createBillard({ scene, camera, steuerung, ui, rr = null, ton = (
       if (Sx.phase === 'rollen') {
         const n = Math.ceil(dt / 0.002), h = dt / n;
         for (let i = 0; i < n; i++) schritt(h, (art, a, c) => {
-          if (art === 'tasche') { Sx.versenkt.push(a); if (a === weisse) Sx.weisseDrin = true; ton(a === weisse ? 'klack' : 'pling'); vib(10); }
+          if (art === 'tasche') { Sx.versenkt.push(a); if (a === weisse) Sx.weisseDrin = true; if (!demo) { ton(a === weisse ? 'klack' : 'pling'); vib(10); } }
           if (art === 'kugel' && !Sx.ersterKontakt && (a === weisse || c === weisse)) Sx.ersterKontakt = a === weisse ? c : a;
-          if (art === 'kugel' && Math.random() < 0.3) ton('klack');
+          if (art === 'kugel' && Math.random() < (demo ? 0.08 : 0.3)) ton('klack');
         });
         for (const k of kugeln) if (!k.drin) { const v = Math.hypot(k.vx, k.vz); if (v > 0) { zeige(k); k.m.quaternion.premultiply(new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(k.vz, 0, -k.vx).normalize(), v * dt / r)); } }
         if (ruht() && kugeln.every((k) => !k.drin || k.fall <= 0)) auswerten(Sx);
       }
       cam.set(TX - 0.05, T + 1.55, TZ - 0.95); ziel.set(TX, T, TZ);   // Überblick, solange die Kugeln rollen
     }
+    if (demo) return;
     camera.position.lerp(cam, Math.min(1, dt * 3)); camera.lookAt(ziel);
     if (rr && rr.setDof) rr.setDof(0.15, camera.position.distanceTo(ziel));
   }
-  return { spiel, tick, aktiv: () => !!lauf, beenden: () => { if (lauf) lauf.ende(); }, root, kugeln, get lauf() { return lauf; }, stossTest: (ri, kraft) => { if (lauf) { lauf.ri = ri; lauf.kraft = kraft; stoss(lauf); } } };
+  // Demo: Zwei Jugendliche spielen, solange man in der Nähe ist und nicht selbst spielt (die Figuren stellt spiel.js an den Tisch)
+  let demoLauf = null;
+  function demoTick(dt, nah) {
+    if (lauf || !nah) return;
+    if (!demoLauf) { aufstellen(); demoLauf = { demo: true, dran: 'ich', sorte: { ich: null, er: null }, ri: 0, kraft: 0, phase: 'zielen', t: 0, kiWarte: 2.5, kiPlan: null, versenkt: [], gegner: '', leicht: true }; }
+    tick(dt, demoLauf);
+  }
+  return { spiel, tick, demoTick, aktiv: () => !!lauf, beenden: () => { if (lauf) lauf.ende(); }, root, kugeln, get lauf() { return lauf; }, stossTest: (ri, kraft) => { if (lauf) { lauf.ri = ri; lauf.kraft = kraft; stoss(lauf); } } };
 }
