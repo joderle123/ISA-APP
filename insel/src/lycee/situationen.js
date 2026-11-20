@@ -784,6 +784,7 @@ export function sitRueckblick(m) {
     if (id === 'video' && m.videoZurueck) t += ' Dann wieder rausgenommen.';
     if (id === 'spiel' && m.spielSpaet) t += ' Später Herrn Kuedes geschrieben.';
     if (id === 'spiel' && m.spielKuedes && m.sit_spiel !== 'gezeigt') t += ' Dann Herrn Kuedes Bescheid gesagt.';
+    if (m['gefuehl_' + id]) t += ' Gefühl danach: ' + m['gefuehl_' + id] + '.';
     out.push({ t: sz.titel[0] + ' ' + sz.titel[1], w: t });
   }
   return out;

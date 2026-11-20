@@ -2271,6 +2271,10 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       await sitGespraech(async () => {
         const a = sitApi(), kap = (SCHRITTE[S.schritt] || {}).kap || 1;
         await SIT_FN[id](a);
+        // Gefühle benennen: kurz nachspüren, keine richtige oder falsche Antwort (steht danach im Journal-Rückblick)
+        const gf = await ui.waehle(['😌 Erleichtert', '💪 Ein bisschen stolz', '😕 Gemischt. Unsicher.', '😔 Mies'], 'Kurz durchatmen. Wie geht’s dir gerade damit?');
+        S.merke['gefuehl_' + id] = ['erleichtert', 'ein bisschen stolz', 'gemischt', 'mies'][gf];
+        await a.sag('e', ['(Erleichtert. Das darf sich gut anfühlen.)', '(Stolz sein ist erlaubt. Auch leise.)', '(Gemischt ist normal. Beides darf da sein.)', '(Mies ist ein Signal. Reden hilft: Herr Kuedes, 116 111.)'][gf]);
         S.merke.sitWeg = { ...(S.merke.sitWeg || {}), [id]: S.schritt }; S.merke['sitKap_' + id] = kap;
         if (!S.merke['sit_' + id]) S.merke['sit_' + id] = 'erlebt';
         S.merke.situationen = (S.merke.situationen || 0) + 1;

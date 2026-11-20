@@ -155,3 +155,8 @@ test('Szenen greifen ineinander: Wer mit Mika Nein-Sagen geübt hat (Roller), er
   assert.ok(y.log.some(([w, t]) => w === 'mika' && /Nein/.test(t)));
   assert.match(sitRueckblick(y.mErg).find((r) => /Lichtung/.test(r.t)).w, /Mika hat Nein gesagt/);
 });
+
+test('Gefühl danach steht im Rückblick', () => {
+  const r = sitRueckblick({ sit_wald: 'nein', gefuehl_wald: 'gemischt' });
+  assert.match(r[0].w, /Gefühl danach: gemischt\./);
+});
