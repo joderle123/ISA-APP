@@ -429,3 +429,27 @@ export function staerkenNetz(achsen = ['Werkzeug, Maschinen', 'genau arbeiten', 
   for (let s = 1; s <= 4; s++) { const [px, py] = P(0, (R * s) / 4); o += t((px + 9).toFixed(1), (py + 4).toFixed(1), String(s), { gr: 10, farbe: '#7a8699', anker: 'start' }) }
   return `<figure class="netz">${o}</svg></figure>`
 }
+
+/** Strichfigur: { kopf, hals, huefte, arme: [[ellbogen, hand]], beine: [[knie, fuss]], ruecken (optional Kontrollpunkt) } */
+function strichfigur(f, farbe = '#2a2f3a') {
+  const L = (a, b) => `<line x1="${a[0]}" y1="${a[1]}" x2="${b[0]}" y2="${b[1]}" stroke="${farbe}" stroke-width="5" stroke-linecap="round"/>`
+  let o = f.ruecken ? `<path d="M${f.hals[0]} ${f.hals[1]} Q${f.ruecken[0]} ${f.ruecken[1]} ${f.huefte[0]} ${f.huefte[1]}" fill="none" stroke="${farbe}" stroke-width="5" stroke-linecap="round"/>` : L(f.hals, f.huefte)
+  for (const [e, h] of f.arme || []) o += L(f.hals, e) + L(e, h)
+  for (const [k, fu] of f.beine || []) o += L(f.huefte, k) + L(k, fu)
+  o += `<circle cx="${f.kopf[0]}" cy="${f.kopf[1]}" r="11" fill="#fff" stroke="${farbe}" stroke-width="4"/>`
+  return o
+}
+
+/** Rolle vorwärts in vier Phasen (Seitenansicht) */
+export function rolleVorwaerts() {
+  let o = `<svg viewBox="0 0 520 230" xmlns="http://www.w3.org/2000/svg" class="rolle-svg">`
+  o += `<rect x="10" y="170" width="500" height="18" rx="5" fill="#9fc3e6" stroke="#5b86b5" stroke-width="2"/>`
+  o += strichfigur({ kopf: [70, 92], hals: [66, 106], huefte: [48, 140], arme: [[[86, 112], [104, 108]]], beine: [[[80, 128], [74, 168]], [[74, 132], [64, 168]]] })
+  o += strichfigur({ kopf: [192, 146], hals: [184, 134], ruecken: [176, 104], huefte: [158, 112], arme: [[[192, 152], [200, 168]], [[186, 154], [192, 168]]], beine: [[[160, 142], [148, 168]], [[156, 144], [142, 168]]] })
+  o += strichfigur({ kopf: [278, 152], hals: [286, 156], ruecken: [300, 168], huefte: [314, 150], arme: [[[304, 140], [322, 124]]], beine: [[[316, 116], [300, 110]], [[322, 118], [306, 114]]] })
+  o += strichfigur({ kopf: [440, 76], hals: [438, 90], huefte: [432, 126], arme: [[[454, 98], [474, 96]], [[450, 102], [470, 102]]], beine: [[[442, 148], [436, 168]], [[434, 148], [426, 168]]] })
+  const pf = (x) => `<path d="M${x} 60 L${x + 26} 60" stroke="#c0392b" stroke-width="2.5" marker-end="url(#rv-a)"/>`
+  o += `<defs><marker id="rv-a" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8z" fill="#c0392b"/></marker></defs>` + pf(112) + pf(232) + pf(360)
+  o += nr(62, 212, 1, '#1f6aa0', 12) + nr(172, 212, 2, '#1f6aa0', 12) + nr(300, 212, 3, '#1f6aa0', 12) + nr(440, 212, 4, '#1f6aa0', 12)
+  return `<figure class="rolle">${o}</svg></figure>`
+}

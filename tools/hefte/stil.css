@@ -621,3 +621,4 @@ table.raster.stellen td { padding: 1.5mm 1mm; }
 .tol { margin: 2mm auto; width: 100%; } .tol-svg { width: 150mm; max-width: 100%; display: block; margin: 0 auto; }
 .pflege, .stiche, .naeh, .nbahn, .fkreis { margin: 2mm auto; width: 100%; } .pflege-svg { width: 135mm; max-width: 100%; display: block; margin: 0 auto; } .stiche-svg { width: 140mm; max-width: 100%; display: block; margin: 0 auto; } .naeh-svg { width: 128mm; max-width: 100%; display: block; margin: 0 auto; } .nbahn-svg { width: 170mm; max-width: 100%; display: block; margin: 0 auto; } .fkreis-svg { width: 70mm; display: block; margin: 0 auto; }
 .netz { margin: 2mm auto; width: 100%; } .netz-svg { width: 165mm; max-width: 100%; display: block; margin: 0 auto; }
+.rolle { margin: 2mm auto; width: 100%; } .rolle-svg { width: 160mm; max-width: 100%; display: block; margin: 0 auto; }
