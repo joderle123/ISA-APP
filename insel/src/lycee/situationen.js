@@ -1098,7 +1098,7 @@ export async function fundkiste(a) {
     await a.sag('e', 'Du gehst. Hinter dir zippt der Rucksack zu.');
     await a.blende('Am Nachmittag');
     a.nachricht('Jeff', 'Meine Powerbank ist weg 😞 Ich bin so ein Chaot.');
-    await a.sag('e', 'Dein Handy summt. Jeff: „Meine Powerbank ist weg. Ich bin so ein Chaot.“');
+    await a.sag('e', 'Jeff schreibt: „Powerbank weg. Ich bin so ein Chaot.“');
     await a.sag('e', 'Du weißt, dass er kein Chaot ist.');
     const y = await a.wahl(['(Jeff die Wahrheit schreiben. Und Herrn Kuedes.)', '(Nichts tun.)']);
     if (y === 1) { await a.sag('e', 'Jeff sucht weiter. Jede Woche. Und glaubt, es liegt an ihm.'); return; }
