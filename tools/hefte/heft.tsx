@@ -81,6 +81,70 @@ function linien(n: number, loesungen: string[] = [], anfaenge: string[] = []): s
 }
 
 const ABC = 'ABCDEFGHIJKLMNOP'
+
+/** Analoge Uhr als SVG, z. B. uhr('7:15') */
+function uhr(zeit: string): string {
+  const [h, m] = zeit.split(':').map(Number)
+  const wm = (m / 60) * 360, wh = ((h % 12) / 12) * 360 + (m / 60) * 30
+  const strich = Array.from({ length: 60 }, (_, i) => { const w = (i * 6 * Math.PI) / 180, l = i % 5 ? 3 : 7; return `<line x1="${50 + Math.sin(w) * 44}" y1="${50 - Math.cos(w) * 44}" x2="${50 + Math.sin(w) * (44 - l)}" y2="${50 - Math.cos(w) * (44 - l)}" stroke="#1b2233" stroke-width="${i % 5 ? 0.8 : 2}"/>` }).join('')
+  const zahlen = Array.from({ length: 12 }, (_, i) => { const w = ((i + 1) * 30 * Math.PI) / 180; return `<text x="${50 + Math.sin(w) * 31}" y="${50 - Math.cos(w) * 31 + 3.6}" text-anchor="middle" font-family="Lexend" font-weight="600" font-size="10" fill="#1b2233">${i + 1}</text>` }).join('')
+  const zeiger = (w: number, l: number, b: number, f: string) => { const r = (w * Math.PI) / 180; return `<line x1="50" y1="50" x2="${50 + Math.sin(r) * l}" y2="${50 - Math.cos(r) * l}" stroke="${f}" stroke-width="${b}" stroke-linecap="round"/>` }
+  return `<svg viewBox="0 0 100 100" class="uhr"><circle cx="50" cy="50" r="48" fill="#fff" stroke="var(--f)" stroke-width="3"/>${strich}${zahlen}${zeiger(wh, 24, 5, '#1b2233')}${zeiger(wm, 37, 3, 'var(--f)')}<circle cx="50" cy="50" r="3.5" fill="#1b2233"/></svg>`
+}
+
+/** Vereinfachter Stadtplan: Raster (A–F, 1–4) für das Straßenverzeichnis, Fluss, Straßen mit Namen, Orte mit Symbol.
+ *  orte: [{x, y, icon, name, nr?, leer?}] – leer = nur Nummer (zum Eintragen); weg: [[x,y],…] = eingezeichneter Weg (nur Lösung) */
+function stadtplan(a: any): string {
+  const W = a.breite || 16, H = a.hoehe || 10, k = 10, sp = a.spalten || 6, zl = a.zeilen || 4
+  const cid = 'kp' + Math.random().toString(36).slice(2, 8)
+  let h = `<defs><clipPath id="${cid}"><rect x="0" y="0" width="${W * k}" height="${H * k}" rx="3"/></clipPath></defs><g clip-path="url(#${cid})"><rect x="0" y="0" width="${W * k}" height="${H * k}" fill="#f6f4ee"/>`
+  for (const g of a.gruen || []) h += `<rect x="${g.x * k}" y="${g.y * k}" width="${g.w * k}" height="${g.h * k}" rx="4" fill="#dcefd9"/>${g.name ? `<text x="${(g.x + g.w / 2) * k}" y="${(g.y + g.h / 2) * k + 1.5}" text-anchor="middle" font-family="Lexend" font-size="3.4" fill="#2f8a4c">${esc(g.name)}</text>` : ''}`
+  if (a.fluss) h += `<path d="${a.fluss.d}" fill="none" stroke="#a9d2ec" stroke-width="${(a.fluss.b || 1.6) * k}" stroke-linecap="round"/>${a.fluss.name ? `<text x="${a.fluss.tx * k}" y="${a.fluss.ty * k}" font-family="Lexend" font-style="italic" font-size="4" fill="#1f7a99" transform="rotate(${a.fluss.rot || -90} ${a.fluss.tx * k} ${a.fluss.ty * k})">${esc(a.fluss.name)}</text>` : ''}`
+  for (const st of a.strassen || []) {
+    h += `<line x1="${st.x1 * k}" y1="${st.y1 * k}" x2="${st.x2 * k}" y2="${st.y2 * k}" stroke="#fff" stroke-width="${st.breit ? 6 : 4.2}" stroke-linecap="round"/><line x1="${st.x1 * k}" y1="${st.y1 * k}" x2="${st.x2 * k}" y2="${st.y2 * k}" stroke="#d6d1c4" stroke-width="0.5"/>`
+    if (st.name) { const mx = ((st.x1 + st.x2) / 2) * k, my = ((st.y1 + st.y2) / 2) * k, w = (Math.atan2(st.y2 - st.y1, st.x2 - st.x1) * 180) / Math.PI, ww = w > 90 || w < -90 ? w + 180 : w
+      h += `<text x="${mx}" y="${my + 1.6}" text-anchor="middle" font-family="Atkinson" font-size="2.9" fill="#5a6376" transform="rotate(${ww} ${mx} ${my})">${esc(st.name)}</text>` }
+  }
+  h += '</g>'
+  if (a.weg) h += `<polyline class="plan-l" points="${a.weg.map(([x, y]: number[]) => `${x * k},${y * k}`).join(' ')}" fill="none" stroke="var(--loesung)" stroke-width="1.6" stroke-dasharray="3 2" stroke-linecap="round" stroke-linejoin="round"/>`
+  for (const o of a.orte || []) {
+    const r = 3.4, ic = icon(o.icon || 'map-pin').replace('<svg', `<svg x="${o.x * k - 2.3}" y="${o.y * k - 2.3}" width="4.6" height="4.6" color="#fff"`)
+    h += `<circle cx="${o.x * k}" cy="${o.y * k}" r="${r}" fill="${o.farbe || 'var(--f)'}" stroke="#fff" stroke-width="0.8"/>${ic}`
+    const pos = o.pos || (o.links ? 'l' : 'r')
+    const lx = o.x * k + (pos === 'l' ? -5 : pos === 'r' ? 5 : 0), ly = o.y * k + (pos === 'o' ? -5 : pos === 'u' ? 7.5 : 1.3)
+    const anchor = pos === 'l' ? 'end' : pos === 'r' ? 'start' : 'middle'
+    const fs = 3.5, halo = `stroke="#f6f4ee" stroke-width="1.3" paint-order="stroke"`
+    if (o.leer) h += `<text x="${lx}" y="${ly}" text-anchor="${anchor}" font-family="Lexend" font-weight="800" font-size="4.6" fill="var(--f)" ${halo}>${esc(o.nr)}</text><text class="plan-l" x="${lx + (pos === 'l' ? -5 : 5)}" y="${ly}" text-anchor="${anchor}" font-family="Hand" font-size="4" fill="var(--loesung)">${esc(o.name)}</text>`
+    else h += `<text x="${lx}" y="${ly}" text-anchor="${anchor}" font-family="Lexend" font-weight="600" font-size="${fs}" fill="#1b2233" ${halo}>${o.nr ? `<tspan font-weight="800" fill="var(--f)">${esc(o.nr)} </tspan>` : ''}${esc(o.name)}</text>`
+  }
+  if (a.start) h += `<g transform="translate(${a.start.x * k},${a.start.y * k})"><circle r="2.8" fill="#d0312d"/><circle r="1.1" fill="#fff"/></g><text x="${a.start.x * k + 4}" y="${a.start.y * k + 1.3}" font-family="Lexend" font-weight="700" font-size="3.4" fill="#d0312d">${esc(a.start.text || 'Start')}</text>`
+  // Raster
+  if (a.raster !== false) {
+    for (let i = 1; i < sp; i++) h += `<line x1="${(i * W * k) / sp}" y1="0" x2="${(i * W * k) / sp}" y2="${H * k}" stroke="#1b2233" stroke-width="0.25" stroke-dasharray="1.5 2" opacity="0.45"/>`
+    for (let j = 1; j < zl; j++) h += `<line x1="0" y1="${(j * H * k) / zl}" x2="${W * k}" y2="${(j * H * k) / zl}" stroke="#1b2233" stroke-width="0.25" stroke-dasharray="1.5 2" opacity="0.45"/>`
+    for (let i = 0; i < sp; i++) h += `<text x="${((i + 0.5) * W * k) / sp}" y="-2.5" text-anchor="middle" font-family="Lexend" font-weight="700" font-size="4" fill="var(--leise)">${'ABCDEFGH'[i]}</text>`
+    for (let j = 0; j < zl; j++) h += `<text x="-3" y="${((j + 0.5) * H * k) / zl + 1.8}" text-anchor="end" font-family="Lexend" font-weight="700" font-size="4" fill="var(--leise)">${j + 1}</text>`
+  }
+  h += `<rect x="0" y="0" width="${W * k}" height="${H * k}" rx="3" fill="none" stroke="#1b2233" stroke-width="1"/>`
+  const leg = a.legende ? `<div class="legende">${a.legende.map(([ic, t]: string[]) => `<span><i>${icon(ic)}</i>${esc(t)}</span>`).join('')}</div>` : ''
+  return `<div class="plan stadt">${a.titel ? `<div class="plantitel">${esc(a.titel)}</div>` : ''}<svg viewBox="-9 -8 ${W * k + 12} ${H * k + 12}">${h}</svg>${leg}</div>`
+}
+
+/** Grundriss (Schulplan): Räume als Rechtecke in einem Raster, optional ohne Namen (zum Eintragen) und mit Startpunkt */
+function plan(a: any): string {
+  const W = a.breite || 16, H = a.hoehe || 9, k = 10
+  const raeume = a.raeume.map((r: any) => {
+    const leer = r.leer, name = leer ? '' : r.name
+    const text = leer ? `<text x="${(r.x + r.w / 2) * k}" y="${(r.y + r.h / 2) * k + 4}" text-anchor="middle" font-family="Lexend" font-weight="700" font-size="9" fill="var(--f)">${esc(r.marke || '')}</text><text class="plan-l" x="${(r.x + r.w / 2) * k}" y="${(r.y + r.h / 2) * k + 13}" text-anchor="middle" font-family="Hand" font-size="${r.w < 3.2 ? 5 : 6.5}" fill="var(--loesung)">${esc(r.name)}</text>`
+      : `<text x="${(r.x + r.w / 2) * k}" y="${(r.y + r.h / 2) * k + 4}" text-anchor="middle" font-family="Lexend" font-weight="600" font-size="${r.w < 3 ? 4.6 : 5.6}" fill="#1b2233">${esc(name)}</text>`
+    return `<rect x="${r.x * k}" y="${r.y * k}" width="${r.w * k}" height="${r.h * k}" rx="3" fill="${r.farbe || '#fff'}" stroke="#8f98a8" stroke-width="0.8"/>${text}`
+  }).join('')
+  const flur = (a.flure || []).map((f: any) => `<rect x="${f.x * k}" y="${f.y * k}" width="${f.w * k}" height="${f.h * k}" fill="#f5f7fa"/>`).join('')
+  const start = a.start ? `<g transform="translate(${a.start.x * k},${a.start.y * k})"><circle r="4.2" fill="#d0312d"/><circle r="1.6" fill="#fff"/></g>${a.start.text ? `<text x="${a.start.x * k}" y="${a.start.y * k + 13}" text-anchor="middle" font-family="Lexend" font-weight="700" font-size="6" fill="#d0312d">${esc(a.start.text)}</text>` : ''}` : ''
+  const treppe = (a.treppen || []).map((t: any) => `<g transform="translate(${t.x * k},${t.y * k})"><rect width="${1.4 * k}" height="${1.4 * k}" rx="2" fill="#fdf5e1" stroke="#c98a06"/>${[0, 1, 2, 3].map((i) => `<line x1="${2 + i * 3}" y1="${12 - i * 3}" x2="${5 + i * 3}" y2="${12 - i * 3}" stroke="#c98a06" stroke-width="1.6"/>`).join('')}</g>`).join('')
+  const titel = a.titel ? `<text x="2" y="-5" font-family="Lexend" font-weight="700" font-size="6" letter-spacing="0.6" fill="var(--leise)">${esc(a.titel)}</text>` : ''
+  return `<div class="plan"><svg viewBox="-2 -10 ${W * k + 4} ${H * k + 26}">${titel}<rect x="0" y="0" width="${W * k}" height="${H * k}" rx="3" fill="#fff" stroke="#1b2233" stroke-width="1.2"/>${flur}${raeume}${treppe}${start}</svg></div>`
+}
 function aufgabeKoerper(a: Aufgabe): string {
   switch (a.art) {
     case 'luecken': {
@@ -147,13 +211,30 @@ function aufgabeKoerper(a: Aufgabe): string {
       return `<div class="steckbrief"><div class="foto">${esc(a.bildText || 'Zeichne hier ein Symbol für dich.')}</div><div class="felder">${a.felder.map((f: string) => `<div class="feld"><span>${esc(f)}</span><span></span></div>`).join('')}</div></div>`
     }
     case 'sprechen': {
-      return `<div class="sprechkarte">${a.karten.map((k: any) => `<div class="karte"><b>${esc(k.titel)}</b>${inl(k.text)}</div>`).join('')}</div>`
+      return `<div class="sprechkarte">${a.karten.map((k: any) => `<div class="karte"><b>${esc(k.titel)}</b>${[].concat(k.text).map((z: string) => `<div>${inl(z)}</div>`).join('')}</div>`).join('')}</div>`
     }
     case 'interview': {
       return `<table class="raster"><tr>${['Frage', ...a.spalten].map((k: string) => `<th>${esc(k)}</th>`).join('')}</tr>${a.fragen
         .map((f: string) => `<tr><td>${inl(f)}</td>${a.spalten.map(() => '<td></td>').join('')}</tr>`)
         .join('')}</table>`
     }
+    case 'uhren': {
+      return `<div class="uhren">${a.zeiten.map((z: string, i: number) => `<div class="uhr-feld">${uhr(z)}<div class="uhr-linie">${a.loesungen?.[i] ? `<span class="l">${esc(a.loesungen[i])}</span>` : ''}</div></div>`).join('')}</div>`
+    }
+    case 'plan':
+      return plan(a)
+    case 'stadtplan':
+      return stadtplan(a)
+    case 'personen': {
+      const bilderH = `<div class="personen">${a.bilder.map((b: string, i: number) => `<div class="pb"><div class="pbild">${bild(b)}</div><b>${ABC[i]}</b></div>`).join('')}</div>`
+      const liste = a.saetze ? `<div class="pliste">${a.saetze.map(([t, l]: [string, string]) => `<div class="pz"><span class="feld"><span class="l lsg-hand">${esc(l)}</span></span><span>${inl(t)}</span></div>`).join('')}</div>` : ''
+      return bilderH + liste
+    }
+    case 'symbole':
+      return `${a.woerter ? `<div class="wortspeicher">${a.woerter.map((w: string) => `<span>${esc(w)}</span>`).join('')}</div>` : ''}<div class="symbole">${a.symbole.map(([ic, l]: string[]) => `<div class="sym"><i>${icon(ic)}</i><div class="uhr-linie"><span class="l">${esc(l)}</span></div></div>`).join('')}</div>`
+    case 'satzzeichen':
+      return `<table class="raster rf"><tr><th></th>${['.', '?', '!'].map((x) => `<th style="text-align:center;font-size:14pt">${x}</th>`).join('')}</tr>${a.saetze
+        .map(([nr, z]: [string, string]) => `<tr><td>${inl(nr)}</td>${['.', '?', '!'].map((x) => `<td class="k"><span class="kaestchen ${x === z ? 'x' : ''}"></span></td>`).join('')}</tr>`).join('')}</table>`
     case 'frei':
       return a.html
     default:
@@ -196,12 +277,19 @@ function lesenTeil(L: any, k: Kontext): string {
     text = r.profile.map((p: any) => `<div class="profil"><div class="kopf">${bild(p.bild)}</div><div><div class="name">${esc(p.name)}</div><p class="abs">${inl(p.text)}</p></div></div>`).join('')
   } else if (r.art === 'chat') {
     text = `<div class="chat">${r.nachrichten.map(([wer, t, seite]: [string, string, string]) => `<div class="msg ${seite || (wer === r.ich ? 'r' : 'l')}"><span class="von">${esc(wer)}</span>${inl(t)}</div>`).join('')}</div>`
+  } else if (r.art === 'anleitung') {
+    text = `<div class="material"><b>${k.sp === 'de' ? 'Du brauchst:' : 'Il te faut :'}</b> ${r.material.map((m: string) => `<span>${inl(m)}</span>`).join('')}</div><ol class="schritte">${r.schritte
+      .map((x: any, i: number) => `<li><span class="sn">${i + 1}</span><span class="si">${icon(x.icon || 'point')}</span><span class="st">${inl(x.text)}</span></li>`).join('')}</ol>${(r.danach || []).map((p: string) => `<p class="abs">${inl(p)}</p>`).join('')}`
+  } else if (r.art === 'dokumente') {
+    text = `<div class="dokumente">${r.dokumente.map((d: any) => `<div class="dok ${d.stil || 'karte'}">${d.kopf ? `<div class="dk">${inl(d.kopf)}</div>` : ''}${d.text.map((z: string) => `<p>${inl(z)}</p>`).join('')}${d.gruss ? `<p class="gruss">${inl(d.gruss)}</p>` : ''}</div>`).join('')}</div>`
   } else {
     text = r.absaetze.map((p: string, i: number) => `<p class="abs">${r.nummern === false ? '' : `<span class="n">${i + 1}</span>`}${inl(p)}</p>`).join('')
   }
   const woerter = r.woerter?.length ? `<div class="woerter"><h5>${k.sp === 'de' ? 'Wörter' : 'Mots'}</h5>${r.woerter.map(([a, b]: [string, string]) => `<div class="w"><b>${esc(a)}</b><span>${esc(b)}</span></div>`).join('')}</div>` : ''
   k.spuren.push({ code, art: 'lesen', lektion: k.nr, titel: r.titel, sprache: k.sp, stimme: r.stimme || 'w', teile: lesenSprechtext(r) })
   let h = teilKopf('lesen', k.sp, r.was || '')
+  if (r.plan) h += `<div class="plan-gross">${plan(r.plan)}</div>`
+  if (r.stadtplan) h += `<div class="plan-gross">${stadtplan(r.stadtplan)}</div>`
   h += `<div class="lesetext"><div class="blatt">${r.quelle ? `<div class="quelle">${esc(r.quelle)}</div>` : ''}<h4>${inl(r.titel)}</h4>${text}</div><div class="rand">${audioKarte(code, 'lesen', k.sp === 'de' ? 'Text anhören' : 'Écouter le texte', k.sp === 'de' ? 'Hör zu und lies mit.' : 'Écoute et lis en même temps.', true)}${woerter}</div></div>`
   for (const a of r.aufgaben || []) h += aufgabe(a, ++k.zaehler, 'in-lesen')
   return h
@@ -210,6 +298,8 @@ function lesenSprechtext(r: any): { wer: string; text: string }[] {
   const t: { wer: string; text: string }[] = [{ wer: '', text: roh(r.titel) }]
   if (r.art === 'profile') for (const p of r.profile) t.push({ wer: p.stimme || '', text: roh(p.name) + '. ' + roh(p.text) })
   else if (r.art === 'chat') for (const [wer, x] of r.nachrichten) t.push({ wer: r.stimmen?.[wer] || '', text: roh(x) })
+  else if (r.art === 'anleitung') { t.push({ wer: '', text: (r.materialSprech || 'Du brauchst: ') + r.material.map(roh).join(', ') + '.' }); r.schritte.forEach((x: any, i: number) => t.push({ wer: '', text: `${i + 1}. ${roh(x.text)}` })); for (const p of r.danach || []) t.push({ wer: '', text: roh(p) }) }
+  else if (r.art === 'dokumente') for (const d of r.dokumente) t.push({ wer: d.stimme || '', text: [d.kopf, ...d.text, d.gruss].filter(Boolean).map((z: string) => roh(z)).join(' ') })
   else for (const p of r.absaetze) t.push({ wer: '', text: roh(p) })
   return t
 }
@@ -249,7 +339,7 @@ function checkTeil(L: any, k: Kontext): string {
 
 function lektion(L: any, k: Kontext): string {
   const m = k.modul, sp = k.sp
-  let h = `<section class="lektion" id="l${k.nr}"><span style="font-size:1pt;color:#fff">§§L${k.nr}§§</span>`
+  let h = `<section class="lektion" id="l${k.nr}"><span class="marke-seite">§§L${k.nr}§§</span>`
   h += `<div class="seitenkopf"><span class="marke">${sp === 'de' ? 'Lektion' : 'Leçon'} ${k.nr}</span><span>${esc(m.fach[sp])} · Modul ${m.nr} · ${esc(m.titel[sp])}</span></div>`
   h += `<div class="auftakt"><div class="gross">${k.nr}</div><div class="text"><div class="nr">${sp === 'de' ? 'Lektion' : 'Leçon'} ${k.nr} · ${esc(L.thema)}</div><h2>${inl(L.titel)}</h2><div class="unter">${inl(L.untertitel)}</div><div class="ziel"><b>${sp === 'de' ? 'Mein Ziel:' : 'Mon but :'}</b><span>${inl(L.ziel.de)}<span class="fr">${inl(L.ziel.fr)}</span></span></div></div>${
     L.bild ? `<div class="bild">${L.bild.map(bild).join('')}</div>` : ''}</div>`
@@ -289,21 +379,21 @@ function inhalt(m: any, sp: string, L: any[], seiten: Record<string, number>): s
       h += `<div class="zeile"><span class="nr">${nr}</span><span><span class="t">${inl(l.titel)}</span><span class="medien">${med.map(([ic, f]) => `<span style="background:${f}">${icon(ic)}</span>`).join('')}</span><span class="z">${inl(l.ziel[sp === 'de' ? 'de' : 'fr'])}</span></span><span class="s">${seiten['L' + nr] || ''}</span></div>`
     }
   }
-  h += `<div class="thema">${icon('book-2')}${sp === 'de' ? 'Anhang' : 'Annexe'}</div><div class="zeile"><span class="nr" style="background:var(--leise)">A</span><span><span class="t">${sp === 'de' ? 'Wörterliste Deutsch – Französisch' : 'Liste de mots'}</span></span><span class="s">${seiten.A || ''}</span></div>`
+  h += `<div class="zeile" style="margin-top:2mm"><span class="nr" style="background:var(--leise)">A</span><span><span class="t">${sp === 'de' ? 'Wörterliste Deutsch – Französisch' : 'Liste de mots'}</span></span><span class="s">${seiten.A || ''}</span></div>`
   h += `<div class="zeile"><span class="nr" style="background:var(--leise)">B</span><span><span class="t">${sp === 'de' ? 'Mein Lernstand' : 'Où j’en suis'}</span></span><span class="s">${seiten.B || ''}</span></div>`
   h += `<div class="anleitung"><h3>${sp === 'de' ? 'So arbeitest du mit dem Heft' : 'Comment travailler avec ce cahier'}</h3><ul>${(m.anleitung || []).map((x: string) => `<li>${inl(x)}</li>`).join('')}</ul></div></section>`
   return h
 }
 
 function anhang(m: any, sp: string, L: any[]): string {
-  let h = `<section class="anhang lektion"><span style="font-size:1pt;color:#fff">§§A§§</span><div class="seitenkopf"><span class="marke">${sp === 'de' ? 'Anhang' : 'Annexe'} A</span><span>${esc(m.fach[sp])} · Modul ${m.nr}</span></div><h2>${sp === 'de' ? 'Wörterliste' : 'Liste de mots'}</h2><p class="klein" style="margin-bottom:4mm">${sp === 'de' ? 'Alle neuen Wörter aus den Lesetexten, nach Lektionen. Decke eine Spalte ab und teste dich selbst.' : 'Tous les mots nouveaux, par leçon. Cache une colonne et teste-toi.'}</p><div class="zweispaltig"><table class="wortliste">`
+  let h = `<section class="anhang lektion"><span class="marke-seite">§§A§§</span><div class="seitenkopf"><span class="marke">${sp === 'de' ? 'Anhang' : 'Annexe'} A</span><span>${esc(m.fach[sp])} · Modul ${m.nr}</span></div><h2>${sp === 'de' ? 'Wörterliste' : 'Liste de mots'}</h2><p class="klein" style="margin-bottom:4mm">${sp === 'de' ? 'Alle neuen Wörter aus den Lesetexten, nach Lektionen. Decke eine Spalte ab und teste dich selbst.' : 'Tous les mots nouveaux, par leçon. Cache une colonne et teste-toi.'}</p><div class="zweispaltig"><table class="wortliste">`
   L.forEach((l, i) => {
     const w = [...(l.lesen?.woerter || []), ...(l.wortschatz || [])]
     if (!w.length) return
     h += `<tr class="th"><td colspan="2">${i + 1} · ${inl(l.titel)}</td></tr>` + w.map(([a, b]: [string, string]) => `<tr><td>${esc(a)}</td><td class="fr">${esc(b)}</td></tr>`).join('')
   })
   h += '</table></div></section>'
-  h += `<section class="anhang lektion"><span style="font-size:1pt;color:#fff">§§B§§</span><div class="seitenkopf"><span class="marke">${sp === 'de' ? 'Anhang' : 'Annexe'} B</span><span>${esc(m.fach[sp])} · Modul ${m.nr}</span></div><h2>${sp === 'de' ? 'Mein Lernstand' : 'Où j’en suis'}</h2><p class="klein" style="margin-bottom:4mm">${sp === 'de' ? 'Male am Ende jeder Lektion aus: grün = sicher, gelb = geht so, rot = noch nicht. Was rot ist, übst du noch einmal.' : 'Colorie à la fin de chaque leçon : vert = sûr, jaune = à peu près, rouge = pas encore.'}</p>`
+  h += `<section class="anhang lektion"><span class="marke-seite">§§B§§</span><div class="seitenkopf"><span class="marke">${sp === 'de' ? 'Anhang' : 'Annexe'} B</span><span>${esc(m.fach[sp])} · Modul ${m.nr}</span></div><h2>${sp === 'de' ? 'Mein Lernstand' : 'Où j’en suis'}</h2><p class="klein" style="margin-bottom:4mm">${sp === 'de' ? 'Male am Ende jeder Lektion aus: grün = sicher, gelb = geht so, rot = noch nicht. Was rot ist, übst du noch einmal.' : 'Colorie à la fin de chaque leçon : vert = sûr, jaune = à peu près, rouge = pas encore.'}</p>`
   L.forEach((l, i) => { h += `<div style="margin:3mm 0 1.5mm;font-family:Lexend;font-weight:700;color:var(--f)">${i + 1} · ${inl(l.titel)}</div>` + `<div class="check">${(l.check || []).map((c: string) => `<div class="z" style="grid-template-columns:1fr 12mm 12mm 12mm"><div style="font-size:11pt;padding:1.6mm 3mm">${inl(c)}</div><div class="s"><span class="kaestchen" style="border-color:#2f8a4c"></span></div><div class="s"><span class="kaestchen" style="border-color:#c98a06"></span></div><div class="s"><span class="kaestchen" style="border-color:#d0577b"></span></div></div>`).join('')}</div>` })
   h += `<p class="klein" style="margin-top:8mm">${esc(URHEBER[sp as 'de' | 'fr'] || '')} · ${sp === 'de' ? 'Alle Texte und Aufgaben sind selbst geschrieben; Personen sind ausgedacht. Stimmen der Hörtexte: Piper (Thorsten, Kerstin – CC0; MLS – CC BY 4.0; SIWIS – CC BY 4.0; UPMC – CC BY-SA 4.0). Schrift: Atkinson Hyperlegible, Lexend (SIL OFL). Figuren: Open Peeps (CC0). Piktogramme: Tabler Icons (MIT).' : 'Textes et exercices originaux ; personnages inventés. Voix : Piper (CC0 / CC BY 4.0 / CC BY-SA 4.0). Polices : Atkinson Hyperlegible, Lexend (SIL OFL). Figures : Open Peeps (CC0). Pictogrammes : Tabler Icons (MIT).'}</p></section>`
   return h
@@ -348,6 +438,12 @@ async function baue(id: string, browser: any, png: boolean) {
       const hdatei = join(ziel, name + '.html'); writeFileSync(hdatei, h)
       await seite.goto(pathToFileURL(hdatei).href, { waitUntil: 'load' })
       await seite.evaluate(() => (document as any).fonts.ready)
+      // Prüfen: Nichts darf breiter sein als der Satzspiegel – sonst verkleinert Chromium das ganze Heft.
+      await seite.emulateMedia({ media: 'print' }); await seite.setViewportSize({ width: 680, height: 1000 })
+      const zuBreit = await seite.evaluate(() => { const W = document.body.getBoundingClientRect().width, out: string[] = []
+        for (const e of Array.from(document.querySelectorAll('body *'))) { const q = e.getBoundingClientRect(); if (q.width && q.right > W + 1 && !e.closest('.deckblatt')) out.push(`${e.tagName}.${(e as HTMLElement).className || ''} (${Math.round(q.right - W)} px): ${(e.textContent || '').slice(0, 50)}`) }
+        return out })
+      if (zuBreit.length) { console.error(`✗ ${name}: ${zuBreit.length} Elemente zu breit – das Heft würde verkleinert:`); zuBreit.slice(0, 8).forEach((z: string) => console.error('   ' + z)); process.exitCode = 1 }
       const pdf = join(ziel, name + '.pdf')
       await seite.pdf({ path: pdf, format: 'A4', printBackground: true, preferCSSPageSize: true })
       if (durchlauf === 0) seiten = seitenFinden(pdf)

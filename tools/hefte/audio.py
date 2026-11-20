@@ -14,12 +14,15 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
 STIMMEN = os.environ.get('TTS_STIMMEN', '/home/user/tts/stimmen')
 RATE = 22050
 
-# Stimmen je Sprache: w = Frauenstimme, m = Männerstimme. (modell, sprecher-id, länge) – länge > 1 = langsamer
+# Stimmen je Sprache: w = Frauenstimme, m = Männerstimme. (modell, sprecher-id, länge, tonhöhe) – länge > 1 = langsamer,
+# tonhöhe > 1 = höher (für eine weitere, jüngere Stimme aus derselben Stimme; das Tempo bleibt gleich).
 BELEGUNG = {
-    'de': {'w1': ('de_DE-kerstin-medium', None, 1.12), 'm1': ('de_DE-thorsten-high', None, 1.1), 'm2': ('de_DE-karlsson-low', None, 1.06),
-           'w2': ('de_DE-eva_k-x_low', None, 1.08), 'w3': ('de_DE-ramona-low', None, 1.1), 'erz': ('de_DE-kerstin-medium', None, 1.14)},
-    'fr': {'w1': ('fr_FR-siwis-medium', None, 1.12), 'm1': ('fr_FR-upmc-medium', 1, 1.1), 'w2': ('fr_FR-upmc-medium', 0, 1.1),
-           'm2': ('fr_FR-mls-medium', None, 1.08), 'w3': ('fr_FR-siwis-medium', None, 1.0), 'erz': ('fr_FR-siwis-medium', None, 1.14)},
+    'de': {'w1': ('de_DE-kerstin-medium', None, 1.12, 1), 'm1': ('de_DE-thorsten-high', None, 1.08, 1), 'm2': ('de_DE-karlsson-low', None, 1.06, 1),
+           'w2': ('de_DE-eva_k-x_low', None, 1.08, 1), 'm3': ('de_DE-karlsson-low', None, 1.04, 1.12), 'w3': ('de_DE-kerstin-medium', None, 1.08, 1.07),
+           'erz': ('de_DE-kerstin-medium', None, 1.14, 1)},
+    'fr': {'w1': ('fr_FR-siwis-medium', None, 1.12, 1), 'm1': ('fr_FR-upmc-medium', 1, 1.1, 1), 'w2': ('fr_FR-upmc-medium', 0, 1.1, 1),
+           'm2': ('fr_FR-mls-medium', None, 1.08, 1), 'm3': ('fr_FR-upmc-medium', 1, 1.06, 1.12), 'w3': ('fr_FR-siwis-medium', None, 1.06, 1.07),
+           'erz': ('fr_FR-siwis-medium', None, 1.14, 1)},
 }
 # Wörter, die die Stimmen sonst falsch lesen (gilt für alle Hefte einer Sprache; je Heft ergänzbar über MODUL.aussprache)
 AUSSPRACHE = {
@@ -36,7 +39,16 @@ def stimme(modell):
 def sprechbar(text, sprache, extra):
     for a, b in {**AUSSPRACHE.get(sprache, {}), **(extra or {})}.items():
         text = re.sub(a, b, text)
-    return text.replace('…', '.').strip()
+    text = re.sub('[\U0001F000-\U0001FAFF\u2600-\u27BF\uFE0F]', '', text)   # Emojis nicht vorlesen
+    return re.sub(r'\s+', ' ', text.replace('…', '.')).strip()
+
+def hoeher(a, faktor):
+    """Tonhöhe ändern, Tempo behalten (ffmpeg: asetrate + atempo)"""
+    if faktor == 1: return a
+    r = subprocess.run(['ffmpeg', '-loglevel', 'error', '-f', 's16le', '-ar', str(RATE), '-ac', '1', '-i', 'pipe:0', '-af',
+                        f'asetrate={int(RATE * faktor)},aresample={RATE},atempo={1 / faktor:.4f}', '-f', 's16le', '-ac', '1', 'pipe:1'],
+                       input=a.tobytes(), capture_output=True, check=True)
+    return np.frombuffer(r.stdout, dtype=np.int16)
 
 # ---- Spracherkennung als Ohr: jeder Satz wird bis zu VERSUCHE-mal gesprochen, die deutlichste Fassung bleibt.
 VERSUCHE = int(os.environ.get('TTS_VERSUCHE', '3'))
@@ -69,23 +81,24 @@ def saetze(text):
 
 STATISTIK = {'saetze': 0, 'wiederholt': 0, 'schwach': []}
 def sprich(text, sprache, rolle, extra, pruefen=True):
-    modell, sp, laenge = BELEGUNG[sprache].get(rolle) or BELEGUNG[sprache]['erz']
+    modell, sp, laenge, hoch = BELEGUNG[sprache].get(rolle) or BELEGUNG[sprache]['erz']
     v = stimme(modell)
     cfg = SynthesisConfig(speaker_id=sp, length_scale=laenge, noise_scale=0.6, noise_w_scale=0.75)
     teile = []
     for satz in saetze(sprechbar(text, sprache, extra)):
         bestes, beste_q = None, -1
-        for versuch in range(VERSUCHE if pruefen else 1):
+        kurz = len(woerter(satz, sprache)) < 4   # sehr kurze Sätze erkennt die Spracherkennung schlecht – nicht wiederholen
+        for versuch in range(VERSUCHE if (pruefen and not kurz) else 1):
             st = []
             for c in v.synthesize(satz, syn_config=cfg):
                 a = c.audio_int16_array
                 if c.sample_rate != RATE:   # Stimmen mit 16 kHz auf 22,05 kHz bringen
                     a = np.interp(np.linspace(0, len(a), int(len(a) * RATE / c.sample_rate), endpoint=False), np.arange(len(a)), a).astype(np.int16)
                 st.append(a)
-            a = np.concatenate(st) if st else np.zeros(1, dtype=np.int16)
-            q = treffer(satz, hoere(a, sprache), sprache) if pruefen else 1
+            a = hoeher(np.concatenate(st), hoch) if st else np.zeros(1, dtype=np.int16)
+            q = treffer(satz, hoere(a, sprache), sprache) if (pruefen and not kurz) else 1
             if q > beste_q: bestes, beste_q = a, q
-            if q >= 0.999: break
+            if q >= 0.85: break
             if versuch == 0: STATISTIK['wiederholt'] += 1
         STATISTIK['saetze'] += 1
         if beste_q < 0.75: STATISTIK['schwach'].append((round(beste_q, 2), satz))
