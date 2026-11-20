@@ -537,3 +537,41 @@ export function formationen({ namen = false } = {}) {
   o += t(260, 168, 'farbige Linie = vorne, dort sitzt das Publikum', { gr: 10, fett: 500, farbe: '#6b7080' })
   return `<figure class="form">${o}</svg></figure>`
 }
+
+// ---------- Volleyball: Positionen und Rotation (halbes Feld, Netz oben) ----------
+export function volleyRotation({ leer = false } = {}) {
+  const POS = [[2, 300, 72], [3, 200, 72], [4, 100, 72], [5, 100, 196], [6, 200, 196], [1, 300, 196]]
+  const BUCH = { 4: 'A', 3: 'B', 2: 'C', 5: 'D', 6: 'E', 1: 'F' }
+  let o = `<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" class="vrot-svg"><defs><marker id="vr-a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker></defs>`
+  o += `<rect x="40" y="30" width="320" height="240" fill="#e8a13a" stroke="#fff" stroke-width="4"/><line x1="40" y1="110" x2="360" y2="110" stroke="#fff" stroke-width="3"/>`
+  o += `<line x1="30" y1="30" x2="370" y2="30" stroke="#1a1a1a" stroke-width="7" stroke-dasharray="3 3"/>` + t(200, 18, 'Netz', { gr: 12, fett: 700 })
+  const pf = (a, b) => `<line x1="${a[0]}" y1="${a[1]}" x2="${b[0]}" y2="${b[1]}" stroke="#c0392b" stroke-width="3" marker-end="url(#vr-a)"/>`
+  o += pf([300, 100], [300, 166]) + pf([272, 196], [230, 196]) + pf([172, 196], [130, 196]) + pf([100, 168], [100, 102]) + pf([128, 72], [170, 72]) + pf([228, 72], [270, 72])
+  for (const [p, x, y] of POS) o += `<circle cx="${x}" cy="${y}" r="22" fill="#fff" stroke="#2a2f3a" stroke-width="2.5"/>` + t(x, y + 7, leer ? BUCH[p] : p, { gr: 20, fett: 800, farbe: leer ? '#6b7080' : '#2a2f3a' })
+  o += t(300, 290, leer ? '' : 'Position 1 schlägt auf', { gr: 11, fett: 600, farbe: '#6b7080' }) + t(100, 290, 'Pfeile: Rotation', { gr: 11, fett: 600, farbe: '#c0392b' })
+  return `<figure class="vrot">${o}</svg></figure>`
+}
+
+// ---------- Schiedsrichter-Handzeichen (Fußball, vereinfacht) ----------
+function schiri(cx, { armR, armL, seitlich = false, karte = false }) {
+  const F = '#2a2f3a', L = (a, b, f = F) => `<line x1="${a[0]}" y1="${a[1]}" x2="${b[0]}" y2="${b[1]}" stroke="${f}" stroke-width="5" stroke-linecap="round"/>`
+  const sR = seitlich ? [cx, 86] : [cx + 12, 86], sL = seitlich ? [cx, 92] : [cx - 12, 86]
+  let o = `<circle cx="${cx}" cy="${64}" r="11" fill="#fff" stroke="${F}" stroke-width="4"/>` + L([cx, 75], [cx, 142])
+  if (!seitlich) o += L(sL, sR)
+  o += seitlich ? L([cx, 142], [cx + 6, 178]) + L([cx + 6, 178], [cx + 2, 212]) + L([cx, 142], [cx - 8, 178]) + L([cx - 8, 178], [cx - 12, 212])
+    : L([cx, 142], [cx - 10, 178]) + L([cx - 10, 178], [cx - 14, 212]) + L([cx, 142], [cx + 10, 178]) + L([cx + 10, 178], [cx + 14, 212])
+  o += L(sR, armR[0], '#1f6aa0') + L(armR[0], armR[1], '#1f6aa0') + L(sL, armL[0], '#1f6aa0') + L(armL[0], armL[1], '#1f6aa0')
+  if (karte) o += `<rect x="${armR[1][0] - 9}" y="${armR[1][1] - 30}" width="20" height="28" rx="2" fill="#f2c200" stroke="#b08a00" stroke-width="2"/>`
+  return o
+}
+export function schiriZeichen() {
+  let o = `<svg viewBox="0 0 520 250" xmlns="http://www.w3.org/2000/svg" class="schiri-svg">`
+  for (let i = 0; i < 4; i++) o += `<rect x="${6 + i * 128}" y="6" width="124" height="238" rx="10" fill="#f6f3ec"/><line x1="${14 + i * 128}" y1="214" x2="${122 + i * 128}" y2="214" stroke="#cfc6b4" stroke-width="3"/>`
+  const unten = (cx, d) => [[cx + d * 18, 112], [cx + d * 20, 138]]
+  o += schiri(68, { armR: [[86, 58], [88, 28]], armL: unten(68, -1) })
+  o += schiri(196, { armR: [[218, 70], [242, 54]], armL: unten(196, -1) })
+  o += schiri(316, { armR: [[340, 90], [366, 92]], armL: [[338, 98], [364, 102]], seitlich: true })
+  o += schiri(452, { armR: [[470, 60], [474, 38]], armL: unten(452, -1), karte: true })
+  o += nr(68, 232, 'A', '#2a2f3a', 11) + nr(196, 232, 'B', '#2a2f3a', 11) + nr(324, 232, 'C', '#2a2f3a', 11) + nr(452, 232, 'D', '#2a2f3a', 11)
+  return `<figure class="schiri">${o}</svg></figure>`
+}
