@@ -24,7 +24,7 @@ const VIANDEN = {
     { x: 5.0, y: 3.6, icon: 'bed', name: 'Auberge de jeunesse', pos: 'l' },
     { x: 8.2, y: 4.9, icon: 'info-circle', name: 'Office de tourisme', farbe: '#1f7a99', pos: 'o' },
     { x: 11.0, y: 6.9, icon: 'home', name: 'Maison de Victor Hugo', farbe: '#6a2d7a', pos: 'l' },
-    { x: 11.2, y: 2.2, icon: 'mountain', name: 'Télésiège', pos: 'l' },
+    { x: 13.0, y: 2.2, icon: 'mountain', name: 'Télésiège', pos: 'r' },
     { x: 11.3, y: 9.0, icon: 'bus', name: 'Arrêt de bus', farbe: '#475066', pos: 'l' },
     { x: 14.6, y: 8.2, icon: 'pool', name: 'Piscine', farbe: '#1f7a99', pos: 'u' },
   ],
@@ -91,7 +91,7 @@ export const LEKTIONEN = [
         ['Mme Nouvelle', 'Alors, qui veut commencer ? Léa ?'],
         ['Léa', 'J’aimerais aller à Bruxelles, parce que j’adore la bande dessinée. Et le train, c’est plus confortable que le bus.'],
         ['Rui', 'Moi, je voudrais aller à Strasbourg. Le Parlement européen, ce serait intéressant… mais c’est trop cher pour notre budget.'],
-        ['Amira', 'Je propose Vianden. C’est moins cher et on pourrait faire une randonnée et dormir à l’auberge de jeunesse. Ce serait plus drôle !'],
+        ['Amira', 'Je propose Vianden. C’est moins cher et on pourrait faire une randonnée et dormir à l’auberge de jeunesse. Ce serait plus sympa !'],
         ['Mme Nouvelle', 'Merci. On vote ! … Voici le résultat : Vianden, treize voix. Bruxelles, neuf voix. Strasbourg, zéro voix, car c’est trop cher.'],
         ['Léa', 'Dommage pour la BD… Mais d’accord, Vianden, ça me plaît aussi !'],
       ],
@@ -204,7 +204,7 @@ export const LEKTIONEN = [
       was: 'Un dépliant touristique', art: 'text', stimme: 'w1', nummern: true, stadtplan: VIANDEN,
       quelle: 'Dépliant touristique (texte simplifié)', titel: 'Bienvenue à Vianden !',
       absaetze: [
-        'Vianden est une petite ville au bord de l’Our, au nord du Luxembourg. Son château, **qui** domine la ville, est un des plus beaux de la région.',
+        'Vianden est une petite ville au bord de l’Our, au nord-est du Luxembourg. Son château, **qui** domine la ville, est un des plus beaux de la région.',
         'Le **télésiège** monte sur la colline. En haut, vous avez une vue magnifique sur le château et la vallée. Il fonctionne d’avril à octobre.',
         'Près du pont, vous trouverez la **maison de Victor Hugo**. Le célèbre écrivain français a habité ici en 1871. Aujourd’hui, c’est un petit musée **que** les visiteurs aiment beaucoup.',
         'L’**auberge de jeunesse** se trouve dans la Grand-Rue, au pied du château. C’est l’endroit **où** dorment beaucoup de classes en voyage.',
@@ -255,7 +255,7 @@ export const LEKTIONEN = [
     schreiben: [
       { art: 'schreiben', auftrag: 'Écris un courriel poli à l’office de tourisme : tu demandes des renseignements pour ta classe.', stufe: 2,
         zeilenAnfaenge: ['Objet :', 'Madame, Monsieur,', '', '', '', '', 'Je vous remercie d’avance.', 'Cordialement,', ''], zeilen: 9,
-        beispiel: 'Objet : visite d’une classe. Madame, Monsieur, nous sommes une classe de 20 élèves. Nous allons visiter Vianden le 4 mai. Pourriez-vous nous envoyer les horaires du château et du télésiège ? J’aimerais aussi savoir s’il y a un prix pour les groupes. Je vous remercie d’avance. Cordialement, Amira Benali' },
+        beispiel: 'Objet : visite d’une classe. Madame, Monsieur, nous sommes une classe de 22 élèves. Nous allons visiter Vianden le 4 mai. Pourriez-vous nous envoyer les horaires du château et du télésiège ? J’aimerais aussi savoir s’il y a un prix pour les groupes. Je vous remercie d’avance. Cordialement, Amira Benali' },
     ],
     check: ['Je comprends un dépliant touristique.', 'Je comprends un chemin et je le suis sur un plan.', 'Je demande des renseignements poliment.', 'J’utilise qui, que, où.', 'J’écris un courriel formel.'],
   },
@@ -357,7 +357,7 @@ export const LEKTIONEN = [
       bild: ['ben:wuetend', 'lehrer:froh:erklaeren'], sprecher: { Ben: 'm3', Chloé: 'w2', 'M. Laurent': 'm2' },
       text: [
         ['Ben', 'Ce n’est pas juste ! L’arbitre n’a rien vu ! Je suis en colère !'],
-        ['Chloé', 'Moi, je suis surtout déçue. On s’entraîne depuis des mois… Et on perd de deux points.'],
+        ['Chloé', 'Moi, je suis surtout déçue. On s’entraîne depuis des mois… Et on a perdu de deux points.'],
         ['M. Laurent', 'Je comprends. Vous avez le droit d’être en colère ou déçus. Respirez un peu.'],
         ['Ben', 'Mais j’ai raté le dernier panier. C’est ma faute…'],
         ['M. Laurent', 'Non, Ben. On gagne ensemble et on perd ensemble. Et tu as marqué douze points ! Moi, je suis fier de vous.'],
@@ -370,7 +370,7 @@ export const LEKTIONEN = [
         { art: 'tabelle', auftrag: 'Écoute. Qui ressent quoi ? Pourquoi ?', stufe: 1, kopf: ['', 'émotion', 'pourquoi ?'], breiten: [18, 28, 54], zeilen: [['Ben', '[en colère, puis triste]', '[l’arbitre n’a rien vu ; il a raté le dernier panier]'], ['Chloé', '[déçue]', '[ils s’entraînent depuis des mois et perdent de deux points]'], ['M. Laurent', '[fier]', '[il y a un an, ils perdaient tout ; aujourd’hui, ils sont en finale]']] },
       ],
       nach: [{ art: 'sprechen', auftrag: 'Lis une situation à ton ou ta partenaire. Il ou elle dit l’émotion et réagit avec gentillesse.', stufe: 3, karten: [
-        { titel: 'Situations', text: ['J’ai eu 18 sur 20 !', 'Mon copain a oublié mon anniversaire.', 'Demain, j’ai un examen.', 'Mon chat est malade.'] },
+        { titel: 'Situations', text: ['J’ai eu 55 sur 60 !', 'Mon copain a oublié mon anniversaire.', 'Demain, j’ai un examen.', 'Mon chat est malade.'] },
         { titel: 'Réagir', text: ['Tu dois être content(e) / déçu(e) …', 'Je comprends.', 'Bravo ! · Courage !', 'Tu veux en parler ?'] }] }],
     },
     regel: {
@@ -412,7 +412,7 @@ export const LEKTIONEN = [
         { stil: 'nachricht', stimme: 'm1', kopf: '**Noé, 14 ans** – « Je compare ma vie aux photos des autres »', text: ['Sur les réseaux sociaux, tout le monde a l’air heureux et beau. Moi, je me sens nul. Je regarde mon portable trois heures par jour.'] },
         { stil: 'karte', stimme: 'w1', kopf: 'Notre réponse', text: ['Cher Noé, sur les photos, on montre seulement les bons moments. **Si j’étais toi, je ferais** une pause : par exemple, pas de portable après 20 heures. Fais une activité qui te plaît vraiment. Et **n’hésite pas à** parler à un adulte de confiance.'] },
       ],
-      woerter: [['fâché', 'verärgert'], ['seule à seule', 'unter vier Augen'], ['faire de la peine', 'wehtun, traurig machen'], ['deviner', 'raten'], ['les réseaux sociaux', 'die sozialen Netzwerke'], ['avoir l’air', 'aussehen, wirken'], ['se sentir nul', 'sich wertlos fühlen'], ['hésiter', 'zögern']],
+      woerter: [['fâché', 'verärgert'], ['seule à seule', 'unter vier Augen'], ['faire de la peine', 'wehtun, traurig machen'], ['deviner', 'raten'], ['les réseaux sociaux', 'die sozialen Netzwerke'], ['avoir l’air', 'aussehen, wirken'], ['se sentir nul', 'sich wie ein Versager fühlen, sich schlecht fühlen'], ['hésiter', 'zögern']],
       aufgaben: [
         { art: 'tabelle', auftrag: 'Problème et conseils : complète.', stufe: 1, kopf: ['', 'le problème', 'les conseils'], breiten: [14, 40, 46], zeilen: [['Léna', '[son amie ne lui parle plus]', '[lui parler seule à seule, écouter sans se fâcher]'], ['Noé', '[il compare sa vie aux photos des autres]', '[faire une pause, une activité qui plaît, parler à un adulte]']] },
         { art: 'mc', auftrag: 'Coche.', stufe: 2, fragen: [{ f: 'Sur les réseaux sociaux, on montre souvent …', o: ['seulement les bons moments', 'toute la vraie vie'], r: 0 }, { f: '« Il vaut mieux parler que deviner. » Ça veut dire : …', o: ['il faut poser la question', 'il faut attendre'], r: 0 }] },
@@ -477,7 +477,7 @@ export const LEKTIONEN = [
       profile: [
         { name: 'Amira', bild: 'amira:froh:stehen', stimme: 'w3', text: '**Si je pouvais** partir n’importe où, **j’irais** au Japon. **Je visiterais** Tokyo et **je mangerais** des sushis tous les jours. **J’aimerais** aussi voir les cerisiers en fleurs.' },
         { name: 'Finn', bild: 'finn:froh:laessig', stimme: 'm1', text: 'Moi, **si j’avais** beaucoup d’argent, **je ferais** le tour du monde en voilier. **Je partirais** pendant un an avec mes meilleurs amis. Ce **serait** l’aventure !' },
-        { name: 'Nele', bild: 'nele:froh:stehen', stimme: 'w2', text: '**Si j’avais** un superpouvoir, **je voyagerais** dans le temps. **J’irais** à Vianden en 1871 et **je parlerais** avec Victor Hugo ! **Je lui demanderais** quels livres il écrit.' },
+        { name: 'Nele', bild: 'nele:froh:stehen', stimme: 'w2', text: '**Si j’avais** un superpouvoir, **je voyagerais** dans le temps. **J’irais** à Vianden en 1871 et **je parlerais** avec Victor Hugo ! **Je lui demanderais** ce qu’il est en train d’écrire.' },
       ],
       woerter: [['n’importe où', 'irgendwohin'], ['le cerisier', 'der Kirschbaum'], ['en fleurs', 'blühend'], ['le tour du monde', 'die Weltreise'], ['le voilier', 'das Segelboot'], ['le superpouvoir', 'die Superkraft'], ['voyager dans le temps', 'durch die Zeit reisen'], ['l’aventure', 'das Abenteuer']],
       aufgaben: [
@@ -540,11 +540,11 @@ export const LEKTIONEN = [
       was: 'Un courriel', art: 'dokumente',
       quelle: 'Courriel d’une correspondante (personne imaginaire)', titel: 'Des nouvelles de Zoé',
       dokumente: [
-        { stil: 'nachricht', stimme: 'w3', kopf: '**De :** Zoé · **À :** Mia · **Objet :** Bisous de Bretagne !', text: ['Salut Mia ! Je suis en Bretagne avec ma famille depuis cinq jours. Il fait beau, mais l’eau est froide ! Hier, nous avons fait du kayak de mer et nous avons vu des phoques. Demain, nous allons visiter le Mont-Saint-Michel.', 'Tu m’as demandé si mon correspondant luxembourgeois est sympa : oui, Tom est très gentil ! Je **lui** écris chaque semaine et je **lui** envoie des photos.', 'Et toi, comment s’est passé votre voyage à Vianden ? Raconte-**moi** tout ! Bisous, Zoé'] },
+        { stil: 'nachricht', stimme: 'w3', kopf: '**De :** Zoé · **À :** Mia · **Objet :** Bisous de Bretagne !', text: ['Salut Mia ! Je suis en Bretagne avec ma famille depuis cinq jours. Il fait beau, mais l’eau est froide ! Hier, nous avons fait du kayak de mer et nous avons vu des phoques. Demain, nous allons visiter le Mont-Saint-Michel.', 'Tu m’as demandé si ma correspondante luxembourgeoise est sympa : oui, Lina est très gentille ! Je **lui** écris chaque semaine et je **lui** envoie des photos.', 'Et toi, comment s’est passé votre voyage à Vianden ? Raconte-**moi** tout ! Bisous, Zoé'] },
       ],
       woerter: [['les nouvelles', 'die Neuigkeiten'], ['le kayak de mer', 'das Seekajak'], ['le phoque', 'die Robbe'], ['visiter', 'besichtigen'], ['demander si', 'fragen, ob'], ['envoyer', 'schicken'], ['comment s’est passé …', 'wie war …'], ['raconter', 'erzählen']],
       aufgaben: [
-        { art: 'rf', auftrag: 'Vrai ou faux ?', stufe: 1, spalten: ['vrai', 'faux'], saetze: [['Zoé est en Bretagne depuis cinq jours.', true], ['L’eau est chaude.', false], ['Hier, ils ont vu des phoques.', true], ['Zoé écrit à Tom chaque mois.', false]] },
+        { art: 'rf', auftrag: 'Vrai ou faux ?', stufe: 1, spalten: ['vrai', 'faux'], saetze: [['Zoé est en Bretagne depuis cinq jours.', true], ['L’eau est chaude.', false], ['Hier, ils ont vu des phoques.', true], ['Zoé écrit à Lina chaque mois.', false]] },
         { art: 'tabelle', auftrag: 'Passé, présent ou futur ? Trouve une phrase.', stufe: 2, kopf: ['temps', 'phrase du courriel'], breiten: [24, 76], zeilen: [['passé', '[Hier, nous avons fait du kayak de mer.]'], ['présent', '[Je suis en Bretagne avec ma famille.]'], ['futur', '[Demain, nous allons visiter le Mont-Saint-Michel.]']] },
       ],
     },
@@ -585,7 +585,7 @@ export const LEKTIONEN = [
       { art: 'frei', auftrag: 'Fais l’affiche de ta destination de voyage préférée (vraie ou imaginaire).', stufe: 1, html: '<div style="font-size:12.6pt;line-height:1.5;margin-bottom:2.5mm">Écris un titre, dessine trois images et écris trois phrases courtes : où ? quoi voir ? quoi faire ?</div><div style="border:0.6mm dashed var(--f);border-radius:3mm;height:80mm"></div>' },
       { art: 'schreiben', auftrag: 'Réponds à Zoé : raconte le voyage à Vianden (passé composé) et rapporte le message de Tom.', stufe: 3,
         anfaenge: ['Chère Zoé,', 'Le voyage à Vianden, c’était …', 'Nous avons …', 'Tom m’a dit que …', 'Bisous, …'], zeilen: 11,
-        beispiel: 'Chère Zoé, merci pour ton courriel ! Le voyage à Vianden, c’était génial. Nous avons dormi à l’auberge de jeunesse et nous avons pris le télésiège. Tom m’a dit que son correspondant Hugo vient au Luxembourg en juin. Il m’a demandé si je viens avec eux à Vianden ! Bisous, Mia' },
+        beispiel: 'Chère Zoé, merci pour ton courriel ! Le voyage à Vianden, c’était génial. Nous avons dormi à l’auberge de jeunesse et nous avons pris le télésiège. Tom m’a dit que son correspondant Hugo vient au Luxembourg en juin. Il m’a demandé si je venais avec eux à Vianden ! Bisous, Mia' },
     ],
     check: ['Je comprends un courriel avec des nouvelles.', 'Je comprends un message vocal.', 'Je rapporte des paroles.', 'J’utilise les pronoms COD et COI.', 'Je présente une destination et j’écris une lettre.'],
   },

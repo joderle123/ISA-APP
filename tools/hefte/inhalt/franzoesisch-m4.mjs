@@ -96,7 +96,7 @@ export const LEKTIONEN = [
     },
     ueben: [
       { art: 'luecken', auftrag: 'Complète avec le bon mot interrogatif.', stufe: 1, saetze: ['[Qui] a chanté samedi ? – Nora Valen.', '[Où] est le concert ? – À Esch-sur-Alzette.', 'Il va neiger [quand] ? – Demain matin.', 'Ils ont planté [combien] d’arbres ? – 200.', '[Pourquoi] les bus sont en retard ? – Parce qu’un camion est en panne.'] },
-      { art: 'abschreiben', auftrag: 'Écris la question.', stufe: 2, kopf: ['réponse', 'question'], saetze: [['Les élèves ont planté des arbres.', 'Qu’est-ce que les élèves ont planté ?'], ['Le concert a duré deux heures.', 'Combien de temps le concert a duré ?'], ['Je lis le journal sur mon portable.', 'Comment tu lis le journal ?']] },
+      { art: 'abschreiben', auftrag: 'Écris la question.', stufe: 2, kopf: ['réponse', 'question'], saetze: [['Les élèves ont planté des arbres.', 'Qu’est-ce que les élèves ont planté ?'], ['Le concert a duré deux heures.', 'Combien de temps a duré le concert ?'], ['Je lis le journal sur mon portable.', 'Comment tu lis le journal ?']] },
     ],
     schreiben: [
       { art: 'schreiben', auftrag: 'Écris une nouvelle brève pour le site de la classe (vraie ou inventée). Réponds à : qui ? quoi ? où ? quand ?', stufe: 2,
@@ -140,7 +140,7 @@ export const LEKTIONEN = [
         ['Inès', 'Je ne suis pas d’accord. Avec le portable, personne ne parle. Tout le monde regarde son écran. Ce que je préfère, c’est jouer dehors avec les copains.'],
         ['Rui', 'Moi, je suis d’accord avec Inès. Et parfois, il y a des photos ou des vidéos de la cour sur internet. Ça, ce n’est pas bien.'],
         ['Ben', 'Bon… Peut-être le portable seulement dans un coin de la cour ?'],
-        ['Mme Nouvelle', 'C’est une bonne idée de compromis ! On vote la semaine prochaine.'],
+        ['Mme Nouvelle', 'C’est un bon compromis ! On vote la semaine prochaine.'],
       ],
       vor: [{ art: 'mc', auftrag: 'Les délégués de classe … Coche.', stufe: 1, fragen: [{ f: '', o: ['parlent pour les élèves de la classe', 'donnent les notes'], r: 0 }] }],
       beim: [
@@ -185,12 +185,12 @@ export const LEKTIONEN = [
       was: 'Un programme et un message', art: 'dokumente',
       quelle: 'Affiche d’un festival et message sur le portable (imaginaires)', titel: 'Le Festival des Jeunes',
       dokumente: [
-        { stil: 'karte', stimme: 'w1', kopf: '**Festival des Jeunes** – Parc de la Ville, Mersch · 14 et 15 juin · entrée gratuite', text: ['**Samedi 14 juin :** 14 h atelier graffiti (sur inscription) · 16 h tournoi de basket · 20 h concert de Nora Valen', '**Dimanche 15 juin :** 10 h course de 5 km · 14 h atelier radio : fais ton émission ! · 17 h cinéma en plein air : « Le Phare des étoiles »', 'Stands de nourriture · Bus gratuits de la gare de Mersch toutes les 30 minutes'] },
+        { stil: 'karte', stimme: 'w1', kopf: '**Festival des Jeunes** – Parc de la Ville, Mersch · 19 et 20 juin · entrée gratuite', text: ['**Samedi 19 juin :** 14 h atelier graffiti (sur inscription) · 16 h tournoi de basket · 20 h concert de Nora Valen', '**Dimanche 20 juin :** 10 h course de 5 km · 14 h atelier radio : fais ton émission ! · 21 h 30 cinéma en plein air : « Le Phare des étoiles »', 'Stands de nourriture · Bus gratuits de la gare de Mersch toutes les 30 minutes'] },
         { stil: 'nachricht', stimme: 'w3', kopf: 'Message de Mia à Ben', text: ['Ben ! Tu as vu le programme du festival ? J’ai trop envie de voir Nora Valen ! Tu **y** vas samedi ? On prend le bus ensemble ?'] },
       ],
       woerter: [['l’entrée gratuite', 'freier Eintritt'], ['sur inscription', 'mit Anmeldung'], ['le tournoi', 'das Turnier'], ['la course', 'der Lauf'], ['en plein air', 'im Freien'], ['le stand', 'der Stand'], ['toutes les 30 minutes', 'alle 30 Minuten'], ['avoir envie de', 'Lust haben auf']],
       aufgaben: [
-        { art: 'tabelle', auftrag: 'Complète le programme.', stufe: 1, kopf: ['jour', 'heure', 'activité'], breiten: [24, 20, 56], zeilen: [['samedi', '[14 h]', '[atelier graffiti]'], ['samedi', '[16 h]', '[tournoi de basket]'], ['samedi', '20 h', '[concert de Nora Valen]'], ['dimanche', '[10 h]', '[course de 5 km]'], ['dimanche', '[17 h]', '[cinéma en plein air]']] },
+        { art: 'tabelle', auftrag: 'Complète le programme.', stufe: 1, kopf: ['jour', 'heure', 'activité'], breiten: [24, 20, 56], zeilen: [['samedi', '[14 h]', '[atelier graffiti]'], ['samedi', '[16 h]', '[tournoi de basket]'], ['samedi', '20 h', '[concert de Nora Valen]'], ['dimanche', '[10 h]', '[course de 5 km]'], ['dimanche', '[21 h 30]', '[cinéma en plein air]']] },
         { art: 'rf', auftrag: 'Vrai ou faux ?', stufe: 2, spalten: ['vrai', 'faux'], saetze: [['L’entrée du festival est gratuite.', true], ['Pour l’atelier graffiti, il faut s’inscrire.', true], ['Le film est le samedi soir.', false], ['Il y a des bus gratuits de la gare.', true]] },
       ],
     },
@@ -210,7 +210,7 @@ export const LEKTIONEN = [
       ],
       vor: [{ art: 'mc', auftrag: 'Pour dire ce qu’on veut faire, on dit … Coche.', stufe: 1, fragen: [{ f: '', o: ['J’ai envie de …', 'Je voudrais …', 'Je déteste …'], r: [0, 1] }] }],
       beim: [
-        { art: 'tabelle', auftrag: 'Écoute et complète l’agenda.', stufe: 1, kopf: ['', 'Mia', 'Ben'], breiten: [26, 37, 37], zeilen: [['samedi, 14 h', '[atelier graffiti]', '—'], ['samedi, 16 h', '—', '[tournoi de basket]'], ['samedi, 19 h 30', '[rendez-vous devant la scène]', '[rendez-vous devant la scène]'], ['dimanche, 17 h', '[cinéma en plein air]', '[cinéma en plein air]']] },
+        { art: 'tabelle', auftrag: 'Écoute et complète l’agenda.', stufe: 1, kopf: ['', 'Mia', 'Ben'], breiten: [26, 37, 37], zeilen: [['samedi, 14 h', '[atelier graffiti]', '—'], ['samedi, 16 h', '—', '[tournoi de basket]'], ['samedi, 19 h 30', '[rendez-vous devant la scène]', '[rendez-vous devant la scène]'], ['dimanche, 21 h 30', '[cinéma en plein air]', '[cinéma en plein air]']] },
       ],
       nach: [{ art: 'sprechen', auftrag: 'Organisez votre week-end au festival à deux. Choisissez trois activités.', stufe: 3, karten: [
         { titel: 'Proposer', text: ['J’ai envie de …', 'Tu viens avec moi ?', 'On se retrouve à … devant …'] },
@@ -220,7 +220,7 @@ export const LEKTIONEN = [
       reihen: [
         [{ titel: 'Dire ce qu’on veut', punkte: ['**J’ai envie de** voir le concert. (+ infinitif)', '**Je voudrais** faire du basket. (poli)', '**Je veux** un billet ! (direct)', '**Je vais** aller au festival. (futur proche)', 'Négation : je **n’ai pas envie de** courir.'] },
          { titel: 'Le pronom y', punkte: ['**y** = là-bas (un lieu)', 'Tu vas au festival ? – Oui, j’**y** vais.', 'Tu vas à la piscine ? – Non, je **n’y** vais **pas**.', 'On **y** va ! = Allons-y !'] }],
-        [{ art: 'tipp', titel: 'Les moments', text: '**à** 14 heures · **de** 14 h **à** 16 h · **le** 14 juin · **ce** week-end · **samedi** soir · **toutes les** 30 minutes' },
+        [{ art: 'tipp', titel: 'Les moments', text: '**à** 14 heures · **de** 14 h **à** 16 h · **le** 19 juin · **ce** week-end · **samedi** soir · **toutes les** 30 minutes' },
          { art: 'achtung', titel: 'déjà · pas encore', text: 'Tu t’es inscrite ? – Oui, je me suis **déjà** inscrite. · Non, **pas encore**.' }],
       ],
     },
@@ -253,7 +253,7 @@ export const LEKTIONEN = [
       absaetze: [
         'Nora Valen **est née en 2006** à Esch-sur-Alzette. Elle a **grandi** dans une famille de musiciens : sa mère joue du violon et son grand-père chante dans une chorale.',
         '**À six ans**, elle a commencé le piano. **Pendant** son enfance, elle a chanté dans la chorale de l’école. Elle a écrit sa première chanson **à douze ans**.',
-        '**En 2022**, elle a gagné un concours de jeunes talents à la télévision. **À partir de** ce jour, beaucoup de gens **connaissent** son nom.',
+        '**En 2022**, elle a gagné un concours de jeunes talents à la télévision. **Depuis** ce jour, beaucoup de gens **connaissent** son nom.',
         '**Entre 2023 et 2025**, elle a donné plus de cent concerts au Luxembourg, en France et en Belgique. Elle chante en français, en anglais et en luxembourgeois.',
         'Aujourd’hui, Nora a vingt ans. **Ce qu’**elle aime le plus ? « Les concerts dans les petites salles, tout près du public. » Son nouvel album sort en mars.',
       ],
@@ -288,7 +288,7 @@ export const LEKTIONEN = [
     },
     regel: {
       reihen: [
-        [{ titel: 'Les dates et le temps', punkte: ['**en** 2006 · **en** mars', '**à** six ans', '**pendant** son enfance', '**à partir de** ce jour', '**entre** 2023 **et** 2025 · **jusqu’en** 2025'] },
+        [{ titel: 'Les dates et le temps', punkte: ['**en** 2006 · **en** mars', '**à** six ans', '**pendant** son enfance', '**depuis** ce jour · **à partir de** lundi', '**entre** 2023 **et** 2025 · **jusqu’en** 2025'] },
          { titel: 'savoir et connaître', tabelle: { kopf: ['', 'savoir', 'connaître'], zeilen: [['je', '**sais**', '**connais**'], ['tu', '**sais**', '**connais**'], ['il / elle', '**sait**', '**connaît**'], ['nous', '**savons**', '**connaissons**'], ['vous', '**savez**', '**connaissez**'], ['ils / elles', '**savent**', '**connaissent**']] } }],
         [{ art: 'tipp', titel: 'savoir ou connaître ?', text: '**savoir** + infinitif ou une information : Je **sais** chanter. Je **sais** où elle habite. · **connaître** + personne ou lieu : Je **connais** Nora. Je **connais** Esch.' },
          { art: 'achtung', titel: 'naître', text: 'Elle **est née** en 2006. · Il **est né** à Esch. (passé composé avec **être**)' }],
@@ -303,7 +303,7 @@ export const LEKTIONEN = [
         anfaenge: ['… est né(e) en … à …', 'À … ans, il / elle a commencé …', 'En …, il / elle a …', 'Aujourd’hui, il / elle …', 'Ce que j’admire, c’est …'], zeilen: 10,
         beispiel: 'Kevin Diallo est né en 2004 à Differdange. À sept ans, il a commencé le foot dans le club de sa ville. En 2021, il a joué son premier match en équipe nationale. Aujourd’hui, il joue en France. Ce que j’admire, c’est son courage.' },
     ],
-    check: ['Je comprends le portrait d’une personne.', 'Je comprends une interview.', 'J’utilise en, à, pendant, entre, à partir de.', 'Je fais la différence entre savoir et connaître.', 'J’écris une petite biographie.'],
+    check: ['Je comprends le portrait d’une personne.', 'Je comprends une interview.', 'J’utilise en, à, pendant, entre, depuis.', 'Je fais la différence entre savoir et connaître.', 'J’écris une petite biographie.'],
   },
   // ================================================================ 5
   {
@@ -321,7 +321,7 @@ export const LEKTIONEN = [
       quelle: 'Panneau d’affichage de l’école (annonces imaginaires)', titel: 'Petites annonces',
       dokumente: [
         { stil: 'karte', stimme: 'w1', kopf: '**La radio des jeunes cherche…**', text: ['… des **présentateurs** et des **présentatrices** de 12 à 16 ans pour l’émission du mercredi. Tu es **curieux** ou **curieuse**, tu parles **clairement** et tu n’as pas peur du micro ? Écris-nous !'] },
-        { stil: 'karte', stimme: 'm1', kopf: '**Le club vidéo cherche…**', text: ['… un **caméraman** ou une **camérawoman** pour filmer les matchs du samedi. Tu dois être **patient**, **sérieux** et **organisé**. Pas d’expérience ? Pas de problème : on t’apprend !'] },
+        { stil: 'karte', stimme: 'm1', kopf: '**Le club vidéo cherche…**', text: ['… un **caméraman** ou une **camérawoman** pour filmer les matchs du samedi. Tu dois être **patient(e)**, **sérieux / sérieuse** et **organisé(e)**. Pas d’expérience ? Pas de problème : on t’apprend !'] },
         { stil: 'karte', stimme: 'w2', kopf: '**Le journal de l’école cherche…**', text: ['… des **journalistes** et des **photographes**. Tu aimes écrire, tu es **créatif** ou **créative** ? Rendez-vous lundi à 13 h, salle 108.'] },
       ],
       woerter: [['chercher', 'suchen'], ['le présentateur', 'der Moderator'], ['curieux, curieuse', 'neugierig'], ['clairement', 'deutlich'], ['filmer', 'filmen'], ['patient', 'geduldig'], ['sérieux, sérieuse', 'zuverlässig'], ['créatif, créative', 'kreativ']],
@@ -446,7 +446,7 @@ export const LEKTIONEN = [
     start: {
       was: 'Raconter dans l’ordre',
       aufgaben: [
-        { art: 'ordnen', auftrag: 'Mets les mots dans l’ordre d’une histoire.', stufe: 1, teile: ['D’abord', 'Ensuite', 'Puis', 'Après', 'Finalement'], ordnung: [2, 0, 4, 1, 3] },
+        { art: 'ordnen', auftrag: 'Mets les mots dans l’ordre d’une histoire.', stufe: 1, teile: ['D’abord', 'Ensuite', 'Finalement'], ordnung: [2, 0, 1] },
       ],
     },
     lesen: {
@@ -472,7 +472,7 @@ export const LEKTIONEN = [
         ['Journaliste', 'Bonsoir ! Hier après-midi, à Remich, un petit chien est tombé dans la Moselle. Le courant était fort.'],
         ['Journaliste', 'Un jeune homme de 19 ans, Kevin, a vu le chien. Il n’a pas sauté dans l’eau : il a appelé les pompiers et il a lancé une bouée. Les pompiers sont arrivés dix minutes plus tard et ils ont sorti le chien de l’eau.'],
         ['Journaliste', 'Monsieur, vous avez vu la scène ?'],
-        ['Témoin', 'Oui ! D’abord, j’ai entendu la propriétaire crier. Puis j’ai vu le jeune homme courir avec la bouée. Il a été très calme !'],
+        ['Témoin', 'Oui ! D’abord, j’ai entendu la propriétaire crier. Puis j’ai vu le jeune homme courir avec la bouée. Il est resté très calme !'],
         ['Journaliste', 'Et le chien ?'],
         ['Témoin', 'Il va bien. Il a un peu froid, mais il a déjà mangé ! Je n’ai jamais vu un chien aussi content.'],
         ['Journaliste', 'Une belle histoire pour finir la semaine. Bonne soirée !'],
@@ -519,8 +519,8 @@ export const LEKTIONEN = [
       was: 'Un reportage', art: 'text', stimme: 'w2', nummern: true,
       quelle: 'Site internet de la classe 7P2 · reportage (personnes imaginaires)', titel: 'Notre week-end au camping',
       absaetze: [
-        'Le vendredi 12 juin, notre classe **est partie** en train à Diekirch. **Puis**, nous **avons marché** trois kilomètres jusqu’au camping Les Trois Sapins, au bord de la Sûre.',
-        '**D’abord**, nous **avons monté** les tentes. Ce n’était pas facile ! **Ensuite**, Mme Nouvelle **a préparé** des pâtes sur le réchaud.',
+        'Le vendredi 11 juin, notre classe **est partie** en train à Diekirch. **D’abord**, nous **avons marché** trois kilomètres jusqu’au camping Les Trois Sapins, au bord de la Sûre.',
+        '**Ensuite**, nous **avons monté** les tentes. Ce n’était pas facile ! **Puis**, Mme Nouvelle **a préparé** des pâtes sur le réchaud.',
         'Samedi, il **a fait** très beau : 26 degrés ! Nous **avons fait** du kayak sur la rivière et nous **avons joué** au foot. Le soir, nous **avons chanté** autour du feu.',
         'Dimanche matin, il **a plu**. Nous **sommes restés** sous la grande tente et nous **avons joué** aux cartes. À midi et quart, nous **sommes rentrés** en bus.',
         '**Ce qui** nous a plu le plus ? Le kayak ! **Ce qui** nous a moins plu ? La pluie… et les moustiques ! Reportage : Léa et Yusuf',
@@ -553,7 +553,7 @@ export const LEKTIONEN = [
     regel: {
       reihen: [
         [{ titel: 'La météo au passé et au futur', punkte: ['Il **a fait** beau / froid.', 'Il **a plu**. · Il **a neigé**.', 'Il **y a eu** du vent / un orage.', 'Futur proche : il **va faire** beau. · il **va pleuvoir**.'] },
-         { titel: 'Écrire un reportage', punkte: ['**Quand ?** le vendredi 12 juin', '**Où ?** au camping, à Diekirch', '**Qui ?** notre classe', '**Quoi ?** les activités, dans l’ordre', '**Ton avis :** ce qui t’a plu ou moins plu'] }],
+         { titel: 'Écrire un reportage', punkte: ['**Quand ?** le vendredi 11 juin', '**Où ?** au camping, à Diekirch', '**Qui ?** notre classe', '**Quoi ?** les activités, dans l’ordre', '**Ton avis :** ce qui t’a plu ou moins plu'] }],
         [{ art: 'tipp', titel: 'Ce qui m’a plu', text: '**Ce qui** m’a plu, c’est le kayak. · **Ce que** j’ai aimé, c’est le feu de camp.' },
          { art: 'achtung', titel: 'être ou avoir ?', text: 'Nous **sommes** partis · restés · rentrés. · Nous **avons** marché · joué · chanté.' }],
       ],
@@ -565,7 +565,7 @@ export const LEKTIONEN = [
     schreiben: [
       { art: 'schreiben', auftrag: 'Écris un reportage pour le site de la classe : une sortie, une fête ou un voyage (vrai ou imaginaire).', stufe: 2,
         anfaenge: ['Le … (date), notre classe …', 'D’abord, …', 'Ensuite, …', 'Il a fait …', 'Ce qui nous a plu, c’est …'], zeilen: 11,
-        beispiel: 'Le jeudi 5 mars, notre classe est allée au musée d’histoire naturelle à Luxembourg. Nous sommes partis en bus à 13 heures. D’abord, nous avons vu des squelettes de dinosaures. Ensuite, nous avons fait un atelier sur les insectes. Il a fait froid, mais le musée était chaud ! Ce qui nous a plu, c’est l’atelier.' },
+        beispiel: 'Le jeudi 4 mars, notre classe est allée au musée d’histoire naturelle à Luxembourg. Nous sommes partis en bus à 13 heures. D’abord, nous avons vu des squelettes de dinosaures. Ensuite, nous avons fait un atelier sur les insectes. Il a fait froid dehors, mais dans le musée, il faisait chaud ! Ce qui nous a plu, c’est l’atelier.' },
     ],
     check: ['Je comprends un reportage écrit.', 'Je comprends la météo et la circulation à la radio.', 'Je parle de la météo au passé.', 'J’organise un récit : quand, où, qui, quoi.', 'J’écris un reportage.'],
   },

@@ -24,7 +24,7 @@ export const MODUL = {
     'Chaque leçon a cinq parties : **Lire**, **Écouter**, **La règle**, **S’entraîner** et **Écrire**. À la fin, il y a un **mini-bilan**.',
     'À côté de chaque texte, il y a un **code QR**. Scanne-le avec ton portable : tu entends le texte. Écoute plusieurs fois pour trouver les informations importantes.',
     'Les points montrent le niveau : ●○○ base · ●●○ moyen · ●●● plus. Commence par la base.',
-    'Ce module prépare la **9e**. Les personnes du cahier sont imaginaires. Tu parles de toi seulement si tu veux : tu peux toujours inventer.',
+    'Ce module prépare la **5P**. Les personnes du cahier sont imaginaires. Tu parles de toi seulement si tu veux : tu peux toujours inventer.',
   ],
   // seulement pour la voix (Regex Python)
   aussprache: {
@@ -150,7 +150,7 @@ export const LEKTIONEN = [
     regel: {
       reihen: [
         [{ titel: 'Raconter au passé', punkte: ['**Imparfait** : la situation : Il **faisait** beau. J’**étais** avec Chloé.', '**Passé composé** : les actions : Nous **avons quitté** le chemin.', 'Pronominal : nous **nous sommes perdu(e)s**.', 'Les questions du récit : qui ? quoi ? où ? quand ?'] },
-         { titel: 'Organiser le récit', punkte: ['**d’abord** · **ensuite** · **après**', '**soudain** · **tout à coup** · **et alors**', '**une fois** · **à la fin** · **finalement**', '**depuis ce jour**, …'] }],
+         { titel: 'Organiser le récit', punkte: ['**d’abord** · **ensuite** · **après**', '**soudain** · **tout à coup** · **et alors**', '**enfin** · **à la fin** · **finalement**', '**depuis ce jour**, …'] }],
         [{ art: 'tipp', titel: 'Les adverbes en -ment', text: 'rapide → rapide**ment** · heureuse → heureuse**ment** · douce → douce**ment** · finale → finale**ment** (adjectif au féminin + -ment)' },
          { art: 'achtung', titel: 'En sécurité', text: 'En forêt : reste sur le chemin, prends une carte et un portable chargé. Perdu(e) ? Reste calme et appelle le **112**.' }],
       ],
@@ -183,7 +183,7 @@ export const LEKTIONEN = [
       dokumente: [
         { stil: 'karte', stimme: 'w1', kopf: '**Caramel** – chien, 3 ans', text: ['Caramel est un grand chien marron avec de longues oreilles. Il est **affectueux** et très **joueur**. Il adore courir : il lui faut une famille sportive et un jardin. Il s’entend bien avec les enfants, mais pas avec les chats !'] },
         { stil: 'karte', stimme: 'w2', kopf: '**Mimi** – chatte, 8 ans', text: ['Mimi est une petite chatte grise aux yeux verts. Elle est **calme** et un peu **timide**. Elle aime dormir au soleil. Elle cherche une personne tranquille, sans enfants trop petits.'] },
-        { stil: 'karte', stimme: 'm1', kopf: '**Pistache** – lapin, 1 an', text: ['Pistache est un lapin blanc et noir. Il est **curieux** mais **peureux** : quand il y a du bruit, il se cache. Il mange des carottes et du foin. Il a besoin de beaucoup de place pour sauter.'] },
+        { stil: 'karte', stimme: 'm1', kopf: '**Pistache** – lapin, 1 an', text: ['Pistache est un lapin blanc et noir. Il est **curieux** mais **peureux** : quand il y a du bruit, il se cache. Il mange surtout du foin et des légumes. Il a besoin de beaucoup de place pour sauter.'] },
         { stil: 'nachricht', stimme: 'w1', kopf: '**Refuge Les Amis des Bêtes**', text: ['Adopter un animal, c’est pour toute sa vie. Avant d’adopter, réfléchissez bien : temps, place, argent. Visites : le mercredi et le samedi, de 14 h à 17 h.'] },
       ],
       woerter: [['le refuge', 'das Tierheim'], ['affectueux', 'verschmust'], ['joueur', 'verspielt'], ['s’entendre avec', 'sich verstehen mit'], ['timide', 'schüchtern'], ['peureux', 'ängstlich'], ['se cacher', 'sich verstecken'], ['adopter', 'adoptieren']],
@@ -205,7 +205,7 @@ export const LEKTIONEN = [
         ['Mia', 'Oui, trente chiens, vingt chats et des lapins. Il y a un chien génial, Caramel. Il est super joueur, mais il a besoin d’un jardin.'],
         ['Sami', 'Nous, on a un jardin ! Je vais demander à la maison…'],
         ['Mia', 'Attention, Sami : un chien, c’est beaucoup de travail. Il faut le promener deux ou trois fois par jour, même quand il pleut !'],
-        ['Sami', 'Tu as raison. On va réfléchir. Mais je peux venir le voir samedi ?'],
+        ['Sami', 'Tu as raison. On va réfléchir. Mais je peux venir le voir mercredi ?'],
         ['Mia', 'Bien sûr ! Les visites sont de quatorze à dix-sept heures.'],
       ],
       vor: [{ art: 'mc', auftrag: 'Un refuge, c’est … Coche.', stufe: 1, fragen: [{ f: '', o: ['un endroit pour les animaux sans famille', 'un magasin d’animaux'], r: 0 }] }],
@@ -295,7 +295,7 @@ export const LEKTIONEN = [
     schreiben: [
       { art: 'schreiben', auftrag: 'Écris cinq conseils pour s’occuper d’un animal (chat, poisson, cheval …).', stufe: 2,
         anfaenge: ['Pour s’occuper d’un …,', 'Il faut …', 'Donnez-lui …', 'Ne … pas …', 'Il est important de … car …'], zeilen: 9,
-        beispiel: 'Pour s’occuper d’un poisson rouge, il faut changer l’eau de l’aquarium chaque semaine. Donnez-lui un peu de nourriture une fois par jour. Ne mettez pas l’aquarium au soleil. Il est important de ne pas lui donner trop à manger, car il peut être malade.' },
+        beispiel: 'Pour s’occuper d’un poisson rouge, il faut changer l’eau de l’aquarium chaque semaine. Donnez-lui un peu de nourriture une fois par jour. Ne mettez pas l’aquarium au soleil. Il est important de ne pas lui donner trop à manger, car il peut tomber malade.' },
     ],
     check: ['Je comprends des conseils écrits.', 'Je comprends une consultation.', 'Je donne des conseils à l’impératif.', 'J’utilise le, la, les, lui avec l’impératif.', 'J’explique avec car et parce que.'],
   },
@@ -316,7 +316,7 @@ export const LEKTIONEN = [
       dokumente: [
         { stil: 'karte', stimme: 'w1', kopf: '**Le castor**', text: ['Le castor est le plus grand rongeur d’Europe. Il vit **près des rivières** et construit des barrages avec du bois. Il travaille surtout la nuit. Pendant longtemps, il n’y avait plus de castors au Luxembourg. Aujourd’hui, ils sont revenus dans le nord du pays.'] },
         { stil: 'karte', stimme: 'm1', kopf: '**La cigogne noire**', text: ['Contrairement à la cigogne blanche, la cigogne noire est très **timide**. Elle vit **cachée** dans les grandes forêts, près des ruisseaux. Elle mange des poissons et des grenouilles. En hiver, elle part en Afrique.'] },
-        { stil: 'karte', stimme: 'w2', kopf: '**Le chat sauvage**', text: ['Il ressemble à un gros chat gris, avec une queue épaisse et des anneaux noirs. Il vit **discrètement** dans les forêts. Il est **protégé** : il est interdit de le chasser.'] },
+        { stil: 'karte', stimme: 'w2', kopf: '**Le chat sauvage**', text: ['Il ressemble à un gros chat gris, avec une queue épaisse à anneaux noirs. Il vit **discrètement** dans les forêts. Il est **protégé** : il est interdit de le chasser.'] },
       ],
       woerter: [['sauvage', 'wild'], ['le rongeur', 'das Nagetier'], ['le barrage', 'der Damm'], ['revenir', 'zurückkommen'], ['caché', 'versteckt'], ['le ruisseau', 'der Bach'], ['la queue', 'der Schwanz'], ['protégé', 'geschützt']],
       aufgaben: [
@@ -331,7 +331,7 @@ export const LEKTIONEN = [
       text: [
         ['Mme Muller', 'Chut ! Parlez doucement… Regardez cet arbre, au bord de la rivière. Vous voyez les traces de dents ?'],
         ['Yusuf', 'Oui ! C’est un castor ?'],
-        ['Mme Muller', 'Exactement. Le castor coupe les arbres avec ses dents. Il est en train de construire un barrage un peu plus loin.'],
+        ['Mme Muller', 'Exactement. Le castor coupe les arbres avec ses dents. Il construit un barrage un peu plus loin.'],
         ['Yusuf', 'On peut le voir ?'],
         ['Mme Muller', 'Malheureusement, pas maintenant. Il sort surtout la nuit. Mais si vous revenez le soir, vous le verrez peut-être.'],
         ['Yusuf', 'Et qu’est-ce qu’on doit faire pour protéger les animaux ici ?'],
@@ -417,7 +417,7 @@ export const LEKTIONEN = [
     regel: {
       reihen: [
         [{ titel: 'Les gestes pour la planète', punkte: ['**trier** les déchets · **recycler** le papier', '**éteindre** la lumière · **économiser** l’eau', '**réparer** au lieu de jeter', 'aller à l’école **à pied** ou **à vélo**'] },
-         { titel: 'Dire si on est sûr', punkte: ['**Je suis sûr(e) que** c’est possible. (100 %)', '**Je crois que** · **Je pense que** … (70 %)', '**Peut-être** · **Sans doute** … (50 %)', '**Je ne suis pas sûr(e)** · **Je doute** … (20 %)'] }],
+         { titel: 'Dire si on est sûr', punkte: ['**Je suis sûr(e) que** c’est possible. (100 %)', '**Je crois que** · **Je pense que** … (70 %)', '**Peut-être** · **Sans doute** … (50 %)', '**Je ne suis pas sûr(e)** · **J’en doute.** (20 %)'] }],
         [{ art: 'tipp', titel: 'Résumer un projet', text: '**D’abord**, ils ont … · **Ensuite**, ils ont … · **Maintenant**, … · **Bientôt**, ils + futur …' },
          { art: 'achtung', titel: 'Les chiffres convainquent', text: '« 40 kilos par semaine » est plus fort que « beaucoup ». Utilise des **chiffres** pour expliquer.' }],
       ],
@@ -452,7 +452,7 @@ export const LEKTIONEN = [
         { name: 'Nele', bild: 'nele:besorgt:stehen', stimme: 'w2', text: 'Je crois qu’il **fera** beaucoup plus chaud en été. Il y **aura** peut-être moins d’eau. C’est pourquoi nous **devrons** changer nos habitudes dès maintenant.' },
         { name: 'Jana', bild: 'jana:froh:erklaeren', stimme: 'w3', text: 'Moi, je suis optimiste. Les villes **seront** plus vertes, avec des jardins sur les toits. On **mangera** moins de viande et on **prendra** le train. Ce **sera** plus calme !' },
       ],
-      woerter: [['rouler tout seul', 'selbst fahren'], ['le ménage', 'der Haushalt'], ['l’ingénieur', 'der Ingenieur'], ['c’est pourquoi', 'deshalb'], ['dès maintenant', 'ab jetzt'], ['optimiste', 'optimistisch'], ['le toit', 'das Dach'], ['l’habitude', 'die Gewohnheit']],
+      woerter: [['rouler tout seul', 'von allein fahren (selbstfahrend)'], ['le ménage', 'der Haushalt'], ['l’ingénieur', 'der Ingenieur'], ['c’est pourquoi', 'deshalb'], ['dès maintenant', 'ab jetzt'], ['optimiste', 'optimistisch'], ['le toit', 'das Dach'], ['l’habitude', 'die Gewohnheit']],
       aufgaben: [
         { art: 'wer', auftrag: 'Qui pense ça ? Coche.', stufe: 1, personen: ['Lio', 'Nele', 'Jana'], saetze: [['Les voitures rouleront toutes seules.', 'Lio'], ['Il y aura moins d’eau.', 'Nele'], ['Les villes seront plus vertes.', 'Jana'], ['Des robots feront le ménage.', 'Lio'], ['On mangera moins de viande.', 'Jana']] },
         { art: 'tabelle', auftrag: 'Trouve l’infinitif.', stufe: 2, kopf: ['futur', 'infinitif'], breiten: [50, 50], zeilen: [['on ira', '[aller]'], ['ils feront', '[faire]'], ['je serai', '[être]'], ['il y aura', '[avoir (il y a)]'], ['nous devrons', '[devoir]'], ['on prendra', '[prendre]']] },

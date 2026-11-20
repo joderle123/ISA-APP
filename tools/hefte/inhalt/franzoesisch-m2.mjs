@@ -95,7 +95,7 @@ export const LEKTIONEN = [
       ],
       vor: [{ art: 'mc', auftrag: 'Pour reconnaître une personne, on donne … Coche.', stufe: 1, fragen: [{ f: '', o: ['sa taille', 'la couleur de ses cheveux', 'ses vêtements', 'sa date de naissance'], r: [0, 1, 2] }] }],
       beim: [
-        { art: 'frei', auftrag: 'Écoute. Qui est Emma ? Coche.', stufe: 1, html: portraits([{ haar: 'kurz', farbe: 'blond', augen: 'bleus', kleid: '#f5d547' }, { haar: 'locken', farbe: 'brun', augen: 'marron', haut: 'b', kleid: '#f5d547' }, { haar: 'kurz', farbe: 'brun', augen: 'marron', haut: 'b', kleid: '#f5d547' }, { haar: 'kurz', farbe: 'brun', augen: 'marron', haut: 'b', kleid: '#5b8fd6' }], 4, 2) },
+        { art: 'frei', auftrag: 'Écoute. Qui est Emma ? Coche.', stufe: 1, html: portraits([{ haar: 'kurz', farbe: 'blond', augen: 'bleus', kleid: '#f5d547' }, { haar: 'lang', farbe: 'brun', augen: 'marron', haut: 'b', kleid: '#f5d547' }, { haar: 'kurz', farbe: 'brun', augen: 'marron', haut: 'b', kleid: '#f5d547' }, { haar: 'kurz', farbe: 'brun', augen: 'marron', haut: 'b', kleid: '#5b8fd6' }], 4, 2) },
         { art: 'rf', auftrag: 'Écoute encore. Vrai ou faux ?', stufe: 2, spalten: ['vrai', 'faux'], saetze: [['Zoé est devant la boulangerie.', true], ['Zoé porte un manteau rouge.', false], ['Emma a un sac à dos noir.', true], ['Zoé lève la main.', true]] },
       ],
       nach: [{ art: 'sprechen', auftrag: 'Jeu « Qui est-ce ? » : choisis une personne dessinée dans ce cahier. Décris-la. Les autres devinent.', stufe: 3, karten: [
@@ -159,7 +159,7 @@ export const LEKTIONEN = [
         ['Vendeuse', 'Voilà. Vous pouvez l’essayer. La cabine est là-bas.'],
         ['Yusuf', 'Hmm, il est un peu trop grand. Vous avez la taille S ?'],
         ['Vendeuse', 'Oui, voilà, en taille S.'],
-        ['Yusuf', 'Parfait, il va bien ! Il coûte combien ?'],
+        ['Yusuf', 'Parfait, il me va bien ! Il coûte combien ?'],
         ['Vendeuse', 'Avec les soldes, il coûte vingt-cinq euros.'],
         ['Yusuf', 'Et le bonnet noir, là ?'],
         ['Vendeuse', 'Quinze euros. Vingt-cinq plus quinze, ça fait quarante euros en tout.'],
@@ -202,7 +202,7 @@ export const LEKTIONEN = [
     start: {
       was: 'Comment ça va ?',
       aufgaben: [
-        { art: 'zuordnen', auftrag: 'Comment ça va ? Relie.', stufe: 1, links: ['Ça va très bien !', 'Ça va.', 'Pas très bien.', 'Je suis fatigué.', 'Je suis malade.'], rechts: ['Mir geht es sehr gut!', 'Es geht.', 'Nicht so gut.', 'Ich bin müde.', 'Ich bin krank.'], ordnung: [2, 0, 4, 1, 3] },
+        { art: 'zuordnen', auftrag: 'Comment ça va ? Relie.', stufe: 1, links: ['Ça va très bien !', 'Ça va.', 'Pas très bien.', 'Je suis fatigué.', 'Je suis malade.'], rechts: ['Mir geht es sehr gut!', 'Gut. / Es geht mir gut.', 'Nicht so gut.', 'Ich bin müde.', 'Ich bin krank.'], ordnung: [2, 0, 4, 1, 3] },
       ],
     },
     lesen: {
@@ -611,7 +611,7 @@ export const LEKTIONEN = [
     schreiben: [
       { art: 'schreiben', auftrag: 'Écris une invitation pour une fête (anniversaire, fête de classe … – tu peux l’inventer).', stufe: 2,
         anfaenge: ['Salut … !', 'Je fais une fête pour …', 'C’est le … à … heures.', 'C’est à …', 'Réponds-moi avant le …'], zeilen: 7,
-        beispiel: 'Salut Yusuf ! Je fais une fête pour mon anniversaire. C’est le samedi 14 mars à 15 heures. C’est à la maison des jeunes. Il y a des crêpes et de la musique ! Réponds-moi avant le 10 mars. Inès' },
+        beispiel: 'Salut Yusuf ! Je fais une fête pour mon anniversaire. C’est le samedi 13 mars à 15 heures. C’est à la maison des jeunes. Il y a des crêpes et de la musique ! Réponds-moi avant le 10 mars. Inès' },
       { art: 'schreiben', auftrag: 'Écris une carte de vœux courte à un copain ou à une copine.', stufe: 1,
         anfaenge: ['Joyeux … !', 'Je te souhaite …', 'Bisous · À bientôt'], zeilen: 4,
         beispiel: 'Joyeux anniversaire, Tom ! Je te souhaite une super journée et beaucoup de cadeaux. À bientôt ! Mia' },

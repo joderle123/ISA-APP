@@ -433,12 +433,12 @@ export const LEKTIONEN = [
         ['Yusuf', 'Amira, il est quelle heure ?'],
         ['Amira', 'Il est dix heures moins dix. La récréation finit dans cinq minutes.'],
         ['Yusuf', 'Et après, on a quoi ?'],
-        ['Amira', 'Maths ! Et cet après-midi, on a sport de quatorze heures à quinze heures.'],
+        ['Amira', 'Allemand ! Et cet après-midi, on a sport à treize heures trente.'],
         ['Yusuf', 'Super ! J’adore le sport.'],
       ],
       vor: [{ art: 'mc', auftrag: 'Où est-ce qu’on entend des annonces ? Coche.', stufe: 1, fragen: [{ f: '', o: ['à l’école', 'à la gare', 'dans un magasin', 'dans un livre'], r: [0, 1, 2] }] }],
       beim: [
-        { art: 'tabelle', auftrag: 'Écoute et complète.', stufe: 1, kopf: ['', 'Info'], breiten: [52, 48], zeilen: [['La cantine ferme à …', '[13 h]'], ['Les élèves de septième mangent à …', '[midi et quart (12 h 15)]'], ['Le bus numéro 5 part à …', '[16 h 10]'], ['Il est …', '[dix heures moins dix]'], ['Le sport cet après-midi', '[de 14 h à 15 h]']] },
+        { art: 'tabelle', auftrag: 'Écoute et complète.', stufe: 1, kopf: ['', 'Info'], breiten: [52, 48], zeilen: [['La cantine ferme à …', '[13 h]'], ['Les élèves de septième mangent à …', '[midi et quart (12 h 15)]'], ['Le bus numéro 5 part à …', '[16 h 10]'], ['Il est …', '[dix heures moins dix]'], ['Le sport cet après-midi', '[à 13 h 30]']] },
       ],
       nach: [{ art: 'sprechen', auftrag: 'Comparez vos emplois du temps à deux.', stufe: 3, karten: [
         { titel: 'Demander', text: ['Il est quelle heure ?', 'Tu as quoi le mardi ?', 'À quelle heure tu finis ?'] },
@@ -453,7 +453,7 @@ export const LEKTIONEN = [
       ],
     },
     ueben: [
-      { art: 'uhren', auftrag: 'Quelle heure est-il ? Écris l’heure.', stufe: 1, hilfe: 'Par exemple : sept heures et quart · midi et demi · cinq heures moins le quart', zeiten: ['7:15', '12:30', '4:45', '8:00'], loesungen: ['sept heures et quart', 'midi et demi', 'cinq heures moins le quart', 'huit heures'] },
+      { art: 'uhren', auftrag: 'Quelle heure est-il ? Écris l’heure.', stufe: 1, hilfe: 'Par exemple : neuf heures et quart · minuit et demi · deux heures moins le quart', zeiten: ['7:15', '12:30', '4:45', '8:00'], loesungen: ['sept heures et quart', 'midi et demi', 'cinq heures moins le quart', 'huit heures'] },
       { art: 'luecken', auftrag: 'Complète.', stufe: 2, saetze: ['7 h 30 : Il est sept heures [et demie].', '10 h 15 : Il est dix heures [et quart].', '11 h 45 : Il est [midi] moins le quart.', '14 h 00 : C’est l’[après-midi].'] },
     ],
     schreiben: [
@@ -483,13 +483,13 @@ export const LEKTIONEN = [
         ['Mia', 'Oui ! Super : on a sport trois fois par semaine ! J’adore le sport. ⚽'],
         ['Ben', 'Moi aussi. Mais on a maths tous les jours… Je n’aime pas les maths. 😩'],
         ['Mia', 'Moi, j’aime bien les maths. Mais je n’aime pas beaucoup le français.'],
-        ['Ben', 'Moi non plus ! Mais j’adore le dessin. On a dessin une fois par semaine, le jeudi.'],
+        ['Ben', 'Moi non plus ! Mais j’adore le dessin. On a dessin deux fois par semaine, le mercredi et le jeudi.'],
         ['Mia', 'Moi aussi, j’aime le dessin. À demain ! 👋'],
       ],
       woerter: [['l’emploi du temps', 'der Stundenplan'], ['trois fois par semaine', 'dreimal pro Woche'], ['tous les jours', 'jeden Tag'], ['j’adore', 'ich liebe'], ['j’aime bien', 'ich mag gern'], ['beaucoup', 'viel, sehr'], ['moi aussi', 'ich auch'], ['moi non plus', 'ich auch nicht']],
       aufgaben: [
-        { art: 'wer', auftrag: 'Qui écrit ça ? Coche.', stufe: 1, personen: ['Mia', 'Ben'], saetze: [['J’adore le sport.', 'Mia'], ['Je n’aime pas les maths.', 'Ben'], ['J’aime bien les maths.', 'Mia'], ['Je n’aime pas beaucoup le français.', ['Mia', 'Ben']], ['J’adore le dessin.', 'Ben']] },
-        { art: 'tabelle', auftrag: 'Combien de fois par semaine ?', stufe: 2, kopf: ['matière', 'fréquence'], breiten: [30, 70], zeilen: [['le sport', '[trois fois par semaine]'], ['les maths', '[tous les jours]'], ['le dessin', '[une fois par semaine, le jeudi]']] },
+        { art: 'wer', auftrag: 'Qui écrit ça ? Coche.', stufe: 1, personen: ['Mia', 'Ben'], saetze: [['J’adore le sport.', ['Mia', 'Ben']], ['Je n’aime pas les maths.', 'Ben'], ['J’aime bien les maths.', 'Mia'], ['Je n’aime pas beaucoup le français.', ['Mia', 'Ben']], ['J’adore le dessin.', 'Ben']] },
+        { art: 'tabelle', auftrag: 'Combien de fois par semaine ?', stufe: 2, kopf: ['matière', 'fréquence'], breiten: [30, 70], zeilen: [['le sport', '[trois fois par semaine]'], ['les maths', '[tous les jours]'], ['le dessin', '[deux fois par semaine, le mercredi et le jeudi]']] },
       ],
     },
     hoeren: {
@@ -552,7 +552,7 @@ export const LEKTIONEN = [
         'Je m’appelle Amira, j’ai 12 ans. Le matin, je me lève à **six heures quarante-cinq**. Je prends mon petit-déjeuner avec mon petit frère.',
         'À **sept heures et demie**, je **vais** à l’arrêt de bus. Le bus arrive à l’école à huit heures moins dix.',
         'Les cours commencent à **huit heures**. À midi, je **mange** à la cantine avec mes copines. J’**aime** bien la cantine, mais pas le poisson !',
-        'L’après-midi, nous **avons** cours jusqu’à quatre heures. Le mardi et le jeudi, je **vais** au club de dessin.',
+        'L’après-midi, nous **avons** cours jusqu’à trois heures dix. Le mardi et le jeudi, je **vais** au club de dessin.',
         'Le soir, je **fais** mes devoirs et je **regarde** une série. À **neuf heures et demie**, je **vais** au lit. Bonne nuit !',
       ],
       woerter: [['se lever (je me lève)', 'aufstehen'], ['le petit-déjeuner', 'das Frühstück'], ['l’arrêt de bus', 'die Bushaltestelle'], ['commencer', 'anfangen'], ['le poisson', 'der Fisch'], ['jusqu’à', 'bis'], ['les devoirs', 'die Hausaufgaben'], ['aller au lit', 'ins Bett gehen']],

@@ -430,8 +430,8 @@ export const LEKTIONEN = [
     ],
     schreiben: [
       { art: 'schreiben', auftrag: 'Écris le règlement d’un lieu : la classe, la cantine, le bus scolaire … (cinq règles).', stufe: 2,
-        anfaenge: ['Règlement de …', 'Il est interdit de …', 'Il faut …', 'Ne … pas …', 'C’est conseillé de …'], zeilen: 9,
-        beispiel: 'Règlement du bus scolaire. Il est interdit de manger dans le bus. Il faut rester assis pendant le trajet. Ne criez pas : le chauffeur doit se concentrer. Mettez votre sac sous le siège. C’est conseillé de dire bonjour au chauffeur !' },
+        anfaenge: ['Règlement de …', 'Il est interdit de …', 'Il faut …', 'Ne … pas …', 'Il est conseillé de …'], zeilen: 9,
+        beispiel: 'Règlement du bus scolaire. Il est interdit de manger dans le bus. Il faut rester assis pendant le trajet. Ne criez pas : le chauffeur doit se concentrer. Mettez votre sac sous le siège. Il est conseillé de dire bonjour au chauffeur !' },
     ],
     check: ['Je comprends des panneaux.', 'Je comprends un règlement.', 'Je comprends des règles à l’oral.', 'J’exprime une interdiction et une obligation.', 'J’utilise le, la, les, lui, leur.'],
   },
@@ -517,13 +517,13 @@ export const LEKTIONEN = [
       was: 'Une invitation et deux réponses', art: 'dokumente',
       quelle: 'Affiche et messages sur le portable (personnes imaginaires)', titel: 'Soirée années 80',
       dokumente: [
-        { stil: 'karte', stimme: 'w1', kopf: '**Soirée années 80** à la maison des jeunes !', text: ['Samedi 7 mars, de 18 h à 22 h · Entrée : 3 € · Musique, quiz et concours du meilleur costume !', 'Viens avec une tenue des années 80 : couleurs fluo, grandes épaules… **Et en plus**, il y a des crêpes ! Inscription avant le 4 mars : Chloé, au 12 34 56.'] },
+        { stil: 'karte', stimme: 'w1', kopf: '**Soirée années 80** à la maison des jeunes !', text: ['Samedi 6 mars, de 18 h à 22 h · Entrée : 3 € · Musique, quiz et concours du meilleur costume !', 'Viens avec une tenue des années 80 : couleurs fluo, grandes épaules… **Et en plus**, il y a des crêpes ! Inscription avant le 3 mars : Chloé, au 12 34 56.'] },
         { stil: 'nachricht', stimme: 'm3', kopf: 'Réponse de Sami', text: ['Salut Chloé ! Merci pour l’invitation. J’accepte avec plaisir ! **Et en plus**, ma tante a une veste fluo des années 80 : je vais la porter !'] },
         { stil: 'nachricht', stimme: 'w2', kopf: 'Réponse de Léa', text: ['Coucou Chloé, désolée, je ne peux pas venir samedi : j’ai un match de basket à Wiltz. **Par contre**, je peux t’aider à préparer la salle vendredi. Ça te va ?'] },
       ],
       woerter: [['l’invitation', 'die Einladung'], ['la soirée', 'der Abend, die Party'], ['la tenue', 'das Outfit'], ['le concours', 'der Wettbewerb'], ['accepter', 'zusagen'], ['refuser', 'absagen'], ['désolé(e)', 'es tut mir leid'], ['Ça te va ?', 'Passt dir das?']],
       aufgaben: [
-        { art: 'tabelle', auftrag: 'Lis l’invitation et complète.', stufe: 1, kopf: ['question', 'réponse'], breiten: [42, 58], zeilen: [['Quand est la soirée ?', '[samedi 7 mars, de 18 h à 22 h]'], ['Où ?', '[à la maison des jeunes]'], ['Qu’est-ce qu’il faut porter ?', '[une tenue des années 80]'], ['On s’inscrit avant quand ?', '[avant le 4 mars]']] },
+        { art: 'tabelle', auftrag: 'Lis l’invitation et complète.', stufe: 1, kopf: ['question', 'réponse'], breiten: [42, 58], zeilen: [['Quand est la soirée ?', '[samedi 6 mars, de 18 h à 22 h]'], ['Où ?', '[à la maison des jeunes]'], ['Qu’est-ce qu’il faut porter ?', '[une tenue des années 80]'], ['On s’inscrit avant quand ?', '[avant le 4 mars]']] },
         { art: 'wer', auftrag: 'Sami ou Léa ? Coche.', stufe: 2, personen: ['Sami', 'Léa'], saetze: [['Elle / Il accepte l’invitation.', 'Sami'], ['Elle / Il refuse l’invitation.', 'Léa'], ['Elle / Il a un match samedi.', 'Léa'], ['Elle / Il va porter une veste fluo.', 'Sami'], ['Elle / Il propose d’aider vendredi.', 'Léa']] },
       ],
     },
@@ -535,7 +535,7 @@ export const LEKTIONEN = [
         ['Chloé', 'Allô, Léa ? C’est Chloé. Pour vendredi, j’ai un problème : la salle n’est pas libre à seize heures.'],
         ['Léa', 'Ah bon ? Alors on annule ?'],
         ['Chloé', 'Non, on peut déplacer le rendez-vous. La salle est libre à dix-huit heures. Ça te va ?'],
-        ['Léa', 'Dix-huit heures… D’accord. Par contre, je dois rentrer à vingt heures. C’est assez ?'],
+        ['Léa', 'Dix-huit heures… D’accord. Par contre, je dois rentrer à vingt heures. Ça suffit ?'],
         ['Chloé', 'Oui, deux heures, c’est parfait. Et en plus, Sami vient aussi pour nous aider.'],
         ['Léa', 'Super ! J’apporte la musique et les décorations fluo.'],
         ['Chloé', 'Génial ! Alors, à vendredi, dix-huit heures, devant la maison des jeunes.'],
@@ -546,11 +546,11 @@ export const LEKTIONEN = [
       ],
       nach: [{ art: 'sprechen', auftrag: 'Au téléphone : invite ton ou ta partenaire. Il ou elle accepte, refuse ou propose un autre jour.', stufe: 3, karten: [
         { titel: 'Inviter', text: ['Tu veux venir … ?', 'Ça te dit de … ?', 'On se retrouve à … ?'] },
-        { titel: 'Répondre', text: ['Avec plaisir !', 'Désolé(e), je ne peux pas parce que …', 'On peut déplacer à … ? Ça te va ?'] }] }],
+        { titel: 'Répondre', text: ['Avec plaisir !', 'Désolé(e), je ne peux pas parce que …', 'On peut le déplacer à … ? Ça te va ?'] }] }],
     },
     regel: {
       reihen: [
-        [{ titel: 'Inviter et répondre', punkte: ['**Inviter** : Tu veux venir … ? · **Ça te dit** de … ?', '**Accepter** : Avec plaisir ! · C’est d’accord !', '**Refuser** : **Désolé(e)**, je ne peux pas **parce que** …', '**Annuler** : Je dois annuler notre rendez-vous.', '**Déplacer** : On peut déplacer à 18 h ? **Ça te va ?**'] },
+        [{ titel: 'Inviter et répondre', punkte: ['**Inviter** : Tu veux venir … ? · **Ça te dit** de … ?', '**Accepter** : Avec plaisir ! · C’est d’accord !', '**Refuser** : **Désolé(e)**, je ne peux pas **parce que** …', '**Annuler** : Je dois annuler notre rendez-vous.', '**Déplacer** : On peut déplacer le rendez-vous à 18 h ? **Ça te va ?**'] },
          { titel: 'Les connecteurs', punkte: ['**et aussi** : J’ai une veste **et aussi** un bonnet.', '**en plus** : **Et en plus**, il y a des crêpes !', '**par contre** : Je ne peux pas samedi. **Par contre**, vendredi, oui.'] }],
         [{ art: 'tipp', titel: 'Un message poli', text: 'Salut / Bonjour … · **Merci pour** … · ta réponse et **pourquoi** · une **proposition** · À bientôt !' },
          { art: 'achtung', titel: 'Je ne peux pas', text: 'pouvoir : je **peux**, tu **peux** … · Négation : je **ne peux pas** venir. (+ infinitif)' }],
@@ -558,12 +558,12 @@ export const LEKTIONEN = [
     },
     ueben: [
       { art: 'luecken', auftrag: 'Complète avec et aussi, en plus ou par contre.', stufe: 1, saetze: ['Je ne peux pas samedi. [Par contre], dimanche, je suis libre.', 'Il y a de la musique [et aussi] un quiz.', 'La soirée est super. [En plus], l’entrée coûte seulement 3 € !'] },
-      { art: 'abschreiben', auftrag: 'Écris une réponse.', stufe: 2, kopf: ['invitation', 'réponse'], saetze: [['Tu viens au cinéma samedi ? (oui)', 'Avec plaisir ! Je viens.'], ['On fait du vélo dimanche ? (non, malade)', 'Désolé(e), je ne peux pas parce que je suis malade.'], ['On se voit à 15 h ? (non, plutôt à 17 h)', 'On peut déplacer à 17 h ? Ça te va ?']] },
+      { art: 'abschreiben', auftrag: 'Écris une réponse.', stufe: 2, kopf: ['invitation', 'réponse'], saetze: [['Tu viens au cinéma samedi ? (oui)', 'Avec plaisir ! Je viens.'], ['On fait du vélo dimanche ? (non, malade)', 'Désolé(e), je ne peux pas parce que je suis malade.'], ['On se voit à 15 h ? (non, plutôt à 17 h)', 'On peut le déplacer à 17 h ? Ça te va ?']] },
     ],
     schreiben: [
       { art: 'schreiben', auftrag: 'Écris une invitation pour une fête (thème de ton choix).', stufe: 2,
         anfaenge: ['Soirée … !', 'C’est le … , de … à …', 'Viens avec …', 'Et en plus, …', 'Réponds avant le …'], zeilen: 7,
-        beispiel: 'Soirée pyjama à la maison des jeunes ! C’est le vendredi 20 mai, de 19 h à 22 h. Viens avec ton pyjama et ton oreiller. Et en plus, on regarde un film ! Réponds avant le 15 mai.' },
+        beispiel: 'Soirée pyjama à la maison des jeunes ! C’est le vendredi 21 mai, de 19 h à 22 h. Viens avec ton pyjama et ton oreiller. Et en plus, on regarde un film ! Réponds avant le 15 mai.' },
       { art: 'schreiben', auftrag: 'Écris une réponse : tu refuses et tu proposes autre chose.', stufe: 2,
         anfaenge: ['Salut … !', 'Merci pour …', 'Désolé(e), je ne peux pas …', 'Par contre, …', 'À bientôt !'], zeilen: 5,
         beispiel: 'Salut Inès ! Merci pour l’invitation. Désolé, je ne peux pas venir vendredi : je pars chez ma tante. Par contre, on peut aller au cinéma dimanche. Ça te va ? À bientôt !' },

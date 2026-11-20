@@ -119,7 +119,7 @@ export const LEKTIONEN = [
       was: 'Un programme et deux messages', art: 'dokumente',
       quelle: 'Maison des jeunes et messages sur le portable (imaginaires)', titel: 'Qu’est-ce qu’on fait cette année ?',
       dokumente: [
-        { stil: 'karte', stimme: 'w1', kopf: '**Maison des jeunes** – Nos activités de l’année', text: ['**Basket :** mardi, de 17 h à 18 h 30, au gymnase.', '**Danse hip-hop :** mercredi, de 14 h à 15 h 30, salle 2.', '**Échecs :** jeudi, de 16 h à 17 h, à la bibliothèque. Pour débutants.', '**Atelier vidéo :** samedi, de 10 h à 12 h. On fait des petits films.', 'Inscription gratuite à l’accueil · Tél. 23 45 67'] },
+        { stil: 'karte', stimme: 'w1', kopf: '**Maison des jeunes** – Nos activités de l’année', text: ['**Basket :** mardi, de 17 h à 18 h 30, au gymnase.', '**Danse hip-hop :** mercredi, de 14 h à 15 h 30, salle 2.', '**Échecs :** jeudi, de 16 h à 17 h, à la bibliothèque. Pour débutants.', '**Atelier vidéo :** samedi, de 10 h à 12 h. On fait de petits films.', 'Inscription gratuite à l’accueil · Tél. 23 45 67'] },
         { stil: 'nachricht', stimme: 'm3', kopf: 'Message de Sami à Inès', text: ['Salut ! Tu as vu le programme ? Moi, je vais faire de la danse hip-hop le mercredi. Tu viens avec moi ? Ou tu préfères les échecs ?'] },
         { stil: 'nachricht', stimme: 'w3', kopf: 'Réponse d’Inès', text: ['Bonne idée, mais le mercredi, je fais de la natation au club. Je préfère l’atelier vidéo le samedi. J’adore faire des films avec mon portable !'] },
       ],
@@ -394,13 +394,13 @@ export const LEKTIONEN = [
       absaetze: [
         'Le réveil sonne à six heures et demie. Luca **se réveille**, mais il **ne se lève pas**. Il est trop fatigué. « Encore cinq minutes… », pense-t-il.',
         'À sept heures, Luca ouvre les yeux. Oh non ! Il est en retard ! Il **se lève** très vite. Il **se lave** en deux minutes et il **s’habille**. Mais il met son pull à l’envers !',
-        'D’abord, il cherche son sac. Ensuite, il boit un verre de jus dans la cuisine. Il n’a pas le temps de **se brosser les dents**… alors il mange un chewing-gum.',
+        'D’abord, il cherche son sac. Ensuite, il boit un verre de jus dans la cuisine. Il n’a pas le temps de **se brosser les dents**… alors il mâche un chewing-gum.',
         'À sept heures vingt, il court à l’arrêt de bus. Le bus part… sans lui ! Luca **s’assoit** sur le banc et soupire.',
         'Ce soir, il **se couche** à neuf heures. Et demain, il **se lève** à la première sonnerie. Promis !',
       ],
       woerter: [['le réveil', 'der Wecker'], ['sonner', 'klingeln'], ['en retard', 'zu spät'], ['à l’envers', 'verkehrt herum'], ['d’abord, ensuite', 'zuerst, dann'], ['le temps', 'die Zeit'], ['s’asseoir', 'sich setzen'], ['soupirer', 'seufzen']],
       aufgaben: [
-        { art: 'personen', auftrag: 'Quelle image va avec quelle phrase ? Écris la lettre.', stufe: 1, bilder: ['finn:muede:stehen', 'finn:froh:tasse', 'finn:nervoes:gehen', 'finn:traurig:sitzen'], saetze: [['Luca court à l’arrêt de bus.', 'C'], ['Luca est fatigué. Il ne se lève pas.', 'A'], ['Luca s’assoit sur le banc. Le bus est parti.', 'D'], ['Luca boit un verre de jus.', 'B']] },
+        { art: 'personen', auftrag: 'Quelle image va avec quelle phrase ? Écris la lettre.', stufe: 1, bilder: ['finn:muede:sitzen', 'finn:froh:tasse', 'finn:nervoes:gehen', 'finn:traurig:sitzen'], saetze: [['Luca court à l’arrêt de bus.', 'C'], ['Luca est fatigué. Il ne se lève pas.', 'A'], ['Luca s’assoit sur le banc. Le bus est parti.', 'D'], ['Luca boit un verre de jus.', 'B']] },
         { art: 'ordnen', auftrag: 'Mets l’histoire dans l’ordre.', stufe: 2, teile: ['Le réveil sonne.', 'Luca se lève très vite.', 'Il s’habille.', 'Il boit un verre de jus.', 'Il court à l’arrêt de bus.', 'Il s’assoit sur le banc.'], ordnung: [3, 0, 5, 2, 4, 1] },
       ],
     },
@@ -455,7 +455,7 @@ export const LEKTIONEN = [
     start: {
       was: 'Les transports',
       aufgaben: [
-        { art: 'symbole', auftrag: 'Comment on voyage ? Écris.', stufe: 1, woerter: ['en bus', 'en train', 'en avion', 'à vélo', 'en voiture', 'à pied', 'en bateau', 'sous la tente'], symbole: [['bus', 'en bus'], ['train', 'en train'], ['plane', 'en avion'], ['bike', 'à vélo'], ['car', 'en voiture'], ['walk', 'à pied'], ['ship', 'en bateau'], ['tent', 'sous la tente']] },
+        { art: 'symbole', auftrag: 'Comment on voyage ? Écris.', stufe: 1, woerter: ['en bus', 'en train', 'en avion', 'à vélo', 'en voiture', 'à pied', 'en bateau', 'à moto'], symbole: [['bus', 'en bus'], ['train', 'en train'], ['plane', 'en avion'], ['bike', 'à vélo'], ['car', 'en voiture'], ['walk', 'à pied'], ['ship', 'en bateau'], ['motorbike', 'à moto']] },
       ],
     },
     lesen: {
@@ -596,7 +596,7 @@ export const LEKTIONEN = [
       quelle: 'Cartes postales (personnes imaginaires)', titel: 'Nouvelles de vacances',
       dokumente: [
         { stil: 'nachricht', stimme: 'w2', kopf: 'Carte de Léa – au camp, le 18 juillet', text: ['Coucou Ben ! Je **suis** au camp nature dans les Ardennes. Il **fait** beau. Aujourd’hui, nous **faisons** du kayak sur la rivière. Le soir, nous **chantons** autour du feu. C’est super ! Bisous, Léa'] },
-        { stil: 'nachricht', stimme: 'w3', kopf: 'Carte d’Amira – le 25 juillet', text: ['Salut la classe ! Je **suis rentrée** de Bretagne hier. La semaine dernière, j’**ai fait** un stage de voile. Lundi, je **suis tombée** dans l’eau ! Jeudi, nous **avons vu** des dauphins. Et vendredi, j’**ai mangé** des crêpes au caramel. C’était génial ! À bientôt, Amira'] },
+        { stil: 'nachricht', stimme: 'w3', kopf: 'Carte d’Amira – le 10 août', text: ['Salut la classe ! Je **suis rentrée** de Bretagne hier. La semaine dernière, j’**ai fait** un stage de voile. Le premier jour, je **suis tombée** dans l’eau ! Jeudi, nous **avons vu** des dauphins. Et vendredi, j’**ai mangé** des crêpes au caramel. C’était génial ! À bientôt, Amira'] },
       ],
       woerter: [['rentrer', 'zurückkommen'], ['hier', 'gestern'], ['la semaine dernière', 'letzte Woche'], ['tomber', 'fallen'], ['voir (j’ai vu)', 'sehen (ich habe gesehen)'], ['le dauphin', 'der Delfin'], ['autour du feu', 'um das Feuer'], ['c’était', 'es war']],
       aufgaben: [
@@ -645,7 +645,7 @@ export const LEKTIONEN = [
     schreiben: [
       { art: 'schreiben', auftrag: 'Écris une carte postale au passé composé : un week-end ou des vacances (vrais ou imaginaires).', stufe: 2,
         anfaenge: ['Salut … !', 'Hier / La semaine dernière, je suis allé(e) …', 'J’ai vu …', 'J’ai mangé …', 'C’était …'], zeilen: 10,
-        beispiel: 'Salut Tom ! La semaine dernière, je suis allée à Echternach avec ma classe. Nous avons fait une randonnée dans la forêt. J’ai vu des rochers énormes ! À midi, nous avons mangé un pique-nique. C’était génial ! À bientôt, Inès' },
+        beispiel: 'Salut Tom ! La semaine dernière, je suis allée à Echternach avec ma classe. Nous avons fait une randonnée dans la forêt. J’ai vu des rochers énormes ! À midi, nous avons pique-niqué. C’était génial ! À bientôt, Inès' },
     ],
     check: ['Je reconnais si un texte parle du présent ou du passé.', 'Je comprends un récit au passé.', 'J’utilise le passé composé avec avoir.', 'J’utilise le passé composé avec être.', 'J’écris une carte postale au passé.'],
   },
