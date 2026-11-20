@@ -160,3 +160,14 @@ test('Gefühl danach steht im Rückblick', () => {
   const r = sitRueckblick({ sit_wald: 'nein', gefuehl_wald: 'gemischt' });
   assert.match(r[0].w, /Gefühl danach: gemischt\./);
 });
+
+test('Der Witz: Akzent wird erzählt, nicht vorgespielt; Paulos Wörter nur, wenn wirklich gelernt', async () => {
+  const quelle = (await import('node:fs')).readFileSync(new URL('../../src/lycee/situationen.js', import.meta.url), 'utf8');
+  assert.doesNotMatch(quelle, /Tomatsch|Kartoffelsch/);
+  const lauf = async (wahlen, m) => { const x = api(wahlen, m); await witz({ ...x, m: () => x.mErg, wahl: async (o) => { x.opts = (x.opts || []).concat([o]); return x.wahl(o); } }); return x; };
+  const ohne = await lauf([0, 0], { stb_paulo_2: true, stb_paulo_3: true, stb_paulo_4: true, stb_paulo_5: true, stb_paulo_7: true, stb_paulo_8: true });
+  assert.ok(!ohne.opts.flat().some((t) => /Desculpa/.test(t)), 'Desculpa ohne Woche 6');
+  const mit = await lauf([0, 0], { stb_paulo_6: true });
+  assert.ok(mit.opts.flat().some((t) => /Desculpa/.test(t)));
+  assert.equal(mit.mErg.pauloDesculpa, true);
+});
