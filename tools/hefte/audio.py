@@ -26,11 +26,11 @@ BELEGUNG = {
 }
 # Wörter, die die Stimmen sonst falsch lesen (gilt für alle Hefte einer Sprache; je Heft ergänzbar über MODUL.aussprache)
 AUSSPRACHE = {
-    'de': {r'\b7P(\d)\b': r'sieben P \1', r'\b(\d{1,2}):(\d\d)\b': r'\1 Uhr \2', r'\bz\. ?B\.': 'zum Beispiel', r'\bLarochette\b': 'Laroschett', r'–': ',',
+    'de': {r'\b7P(\d)\b': r'sieben P \1', r'\b(\d{1,2}):(\d\d)\b': r'\1 Uhr \2', r'\bz\. ?B\.': 'zum Beispiel', r'\bLarochette\b': 'Laroschett', r'(\d)–(\d)': r'\1 bis \2', r'\s*–\s*': ', ', r'\s·\s': ', ',
            # englische Wörter so schreiben, wie man sie auf Deutsch spricht (nur für die Stimme)
-           r'(?i)\bskate': 'skeit', r'(?i)board\b': 'bord', r'(?i)\bcool\b': 'kuhl', r'\bOllie\b': 'Olli', r'\bTeam\b': 'Tiem', r'\bTeams\b': 'Tiems',
+           r'(?i)\bskatepark': 'skeitpark', r'(?i)\bskateboard': 'skeitbord', r'(?i)\bskate\b': 'skeit', r'(?i)\bskat': 'skeit', r'(?i)board\b': 'bord', r'(?i)\bcool\b': 'kuhl', r'\bOllie\b': 'Olli', r'\bTeam\b': 'Tiem', r'\bTeams\b': 'Tiems',
            r'\bChloe\b': 'Kloe', r'\bHi\b': 'Hai', r'\bSale\b': 'Seil', r'\bSnacks?\b': 'Snäcks', r'\bShop\b': 'Schopp', r'\bJeans\b': 'Dschiens', r'\bFrisbee\b': 'Frisbi', r'\bPancakes\b': 'Pänkeiks'},
-    'fr': {r'\b7P(\d)\b': r'septième P \1', r'–': ','},
+    'fr': {r'\b7P(\d)\b': r'septième P \1', r'–': ',', r'\s·\s': ', '},
 }
 
 _cache = {}
