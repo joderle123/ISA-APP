@@ -347,3 +347,4 @@ ol.schritte .si svg { width: 7mm; height: 7mm; }
 .lsg-hand { font-family: 'Hand'; color: var(--loesung); font-size: 15pt; visibility: hidden; }
 .loesungen .lsg-hand { visibility: visible; }
 s.falsch { color: #b4232a; text-decoration-thickness: 0.35mm; }
+.zusammen { break-inside: avoid; }

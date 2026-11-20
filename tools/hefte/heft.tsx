@@ -288,10 +288,10 @@ function lesenTeil(L: any, k: Kontext): string {
   }
   const woerter = r.woerter?.length ? `<div class="woerter"><h5>${k.sp === 'de' ? 'Wörter' : 'Mots'}</h5>${r.woerter.map(([a, b]: [string, string]) => `<div class="w"><b>${esc(a)}</b><span>${esc(b)}</span></div>`).join('')}</div>` : ''
   k.spuren.push({ code, art: 'lesen', lektion: k.nr, titel: r.titel, sprache: k.sp, stimme: r.stimme || 'w', teile: lesenSprechtext(r, k.sp) })
-  let h = teilKopf('lesen', k.sp, r.was || '')
-  if (r.plan) h += `<div class="plan-gross">${plan(r.plan)}</div>`
-  if (r.stadtplan) h += `<div class="plan-gross">${stadtplan(r.stadtplan)}</div>`
-  h += `<div class="lesetext"><div class="blatt">${r.quelle ? `<div class="quelle">${esc(r.quelle)}</div>` : ''}<h4>${inl(r.titel)}</h4>${text}</div><div class="rand">${audioKarte(code, 'lesen', k.sp === 'de' ? 'Text anhören' : 'Écouter le texte', k.sp === 'de' ? 'Hör zu und lies mit.' : 'Écoute et lis en même temps.', true)}${woerter}</div></div>`
+  let h = '<div class="zusammen">' + teilKopf('lesen', k.sp, r.was || '')
+  if (r.plan) h += `<div class="plan-gross">${plan(r.plan)}</div></div><div>`
+  if (r.stadtplan) h += `<div class="plan-gross">${stadtplan(r.stadtplan)}</div></div><div>`
+  h += `<div class="lesetext"><div class="blatt">${r.quelle ? `<div class="quelle">${esc(r.quelle)}</div>` : ''}<h4>${inl(r.titel)}</h4>${text}</div><div class="rand">${audioKarte(code, 'lesen', k.sp === 'de' ? 'Text anhören' : 'Écouter le texte', k.sp === 'de' ? 'Hör zu und lies mit.' : 'Écoute et lis en même temps.', true)}${woerter}</div></div></div>`
   for (const a of r.aufgaben || []) h += aufgabe(a, ++k.zaehler, 'in-lesen')
   return h
 }
@@ -308,13 +308,12 @@ function lesenSprechtext(r: any, sp = 'de'): { wer: string; text: string }[] {
 function hoerenTeil(L: any, k: Kontext): string {
   const r = L.hoeren, code = `${k.modul.kuerzel}-${String(k.nr).padStart(2, '0')}h`
   k.spuren.push({ code, art: 'hoeren', lektion: k.nr, titel: r.titel, sprache: k.sp, sprecher: r.sprecher, teile: r.text.map(([wer, t]: [string, string]) => ({ wer, text: t })) })
-  let h = (r.neueSeite ? '<div class="neue-seite"></div>' : '') + teilKopf('hoeren', k.sp, r.was || '')
-  h += `<div class="hoerkarte"><div class="szene"><div class="wo">${esc(r.wo || '')}</div><h4>${inl(r.titel)}</h4><p>${inl(r.situation)}</p>${r.bild ? `<div class="bild">${r.bild.map(bild).join('')}</div>` : ''}</div>${audioKarte(code, 'hoeren', k.sp === 'de' ? 'Scanne den Code' : 'Scanne le code', k.sp === 'de' ? (r.wieOft || 'Du hörst den Text zweimal.') : (r.wieOft || 'Tu écoutes deux fois.'))}</div>`
+  let h = (r.neueSeite ? '<div class="neue-seite"></div>' : '') + '<div class="zusammen">' + teilKopf('hoeren', k.sp, r.was || '')
+  h += `<div class="hoerkarte"><div class="szene"><div class="wo">${esc(r.wo || '')}</div><h4>${inl(r.titel)}</h4><p>${inl(r.situation)}</p>${r.bild ? `<div class="bild">${r.bild.map(bild).join('')}</div>` : ''}</div>${audioKarte(code, 'hoeren', k.sp === 'de' ? 'Scanne den Code' : 'Scanne le code', k.sp === 'de' ? (r.wieOft || 'Du hörst den Text zweimal.') : (r.wieOft || 'Tu écoutes deux fois.'))}</div></div>`
   const schritte: [string, string][] = k.sp === 'de' ? [['vor', 'Vor dem Hören'], ['beim', 'Beim Hören'], ['nach', 'Nach dem Hören']] : [['vor', 'Avant l’écoute'], ['beim', 'Pendant l’écoute'], ['nach', 'Après l’écoute']]
   for (const [s, name] of schritte) {
     if (!r[s]?.length) continue
-    h += `<div class="schritt">${name}</div>`
-    for (const a of r[s]) h += aufgabe(a, ++k.zaehler, a.art === 'sprechen' ? 'in-sprechen' : 'in-hoeren')
+    r[s].forEach((a: any, i: number) => { h += (i === 0 ? `<div class="zusammen"><div class="schritt">${name}</div>` : '') + aufgabe(a, ++k.zaehler, a.art === 'sprechen' ? 'in-sprechen' : 'in-hoeren') + (i === 0 ? '</div>' : '') })
   }
   h += `<div class="transkript nur-loesung"><h5>${k.sp === 'de' ? 'Hörtext' : 'Transcription'} ${esc(code)}</h5><div class="dialog">${r.text.map(([wer, t]: [string, string]) => `<span class="wer">${esc(wer)}</span><span>${esc(t)}</span>`).join('')}</div></div>`
   return h
@@ -322,20 +321,20 @@ function hoerenTeil(L: any, k: Kontext): string {
 
 function regelTeil(L: any, k: Kontext): string {
   const r = L.regel
-  let h = teilKopf('regel', k.sp, r.was || '')
+  let h = '<div class="zusammen">' + teilKopf('regel', k.sp, r.was || '')
   const ic: Record<string, string> = { merke: 'bulb', achtung: 'alert-triangle', tipp: 'sparkles' }
   const kasten = (x: any) => `<div class="merke ${x.art || ''}"><h4>${icon(ic[x.art || 'merke'])}${inl(x.titel)}</h4>${x.punkte ? `<ul>${x.punkte.map((p: string) => `<li>${inl(p)}</li>`).join('')}</ul>` : ''}${
     x.tabelle ? `<table class="formen"><tr>${x.tabelle.kopf.map((c: string) => `<th>${esc(c)}</th>`).join('')}</tr>${x.tabelle.zeilen.map((z: string[]) => `<tr>${z.map((c) => `<td>${inl(c)}</td>`).join('')}</tr>`).join('')}</table>` : ''}${x.text ? `<p style="margin-top:2mm">${inl(x.text)}</p>` : ''}</div>`
-  for (const reihe of r.reihen) h += `<div class="regelkasten ${reihe.length === 1 ? 'eins' : ''}">${reihe.map(kasten).join('')}</div>`
+  r.reihen.forEach((reihe: any[], i: number) => { h += `<div class="regelkasten ${reihe.length === 1 ? 'eins' : ''}">${reihe.map(kasten).join('')}</div>` + (i === 0 ? '</div>' : '') })
   return h
 }
 
 function checkTeil(L: any, k: Kontext): string {
   const smile = (n: string) => icon(n)
   const kopf = k.sp === 'de' ? ['Das kann ich …', 'sicher', 'geht so', 'noch nicht'] : ['Je sais …', 'sûr', 'à peu près', 'pas encore']
-  return teilKopf('check', k.sp) + `<div class="check"><div class="z kopf"><div style="text-align:left;padding-left:4mm">${kopf[0]}</div><div>${kopf[1]}</div><div>${kopf[2]}</div><div>${kopf[3]}</div></div>${L.check
+  return '<div class="zusammen">' + teilKopf('check', k.sp) + `<div class="check"><div class="z kopf"><div style="text-align:left;padding-left:4mm">${kopf[0]}</div><div>${kopf[1]}</div><div>${kopf[2]}</div><div>${kopf[3]}</div></div>${L.check
     .map((c: string) => `<div class="z"><div>${inl(c)}</div><div class="s" style="color:#2f8a4c">${smile('mood-happy')}</div><div class="s" style="color:#c98a06">${smile('mood-empty')}</div><div class="s" style="color:#d0577b">${smile('mood-sad')}</div></div>`)
-    .join('')}</div>`
+    .join('')}</div></div>`
 }
 
 function lektion(L: any, k: Kontext): string {
@@ -344,13 +343,14 @@ function lektion(L: any, k: Kontext): string {
   h += `<div class="seitenkopf"><span class="marke">${sp === 'de' ? 'Lektion' : 'Leçon'} ${k.nr}</span><span>${esc(m.fach[sp])} · Modul ${m.nr} · ${esc(m.titel[sp])}</span></div>`
   h += `<div class="auftakt"><div class="gross">${k.nr}</div><div class="text"><div class="nr">${sp === 'de' ? 'Lektion' : 'Leçon'} ${k.nr} · ${esc(L.thema)}</div><h2>${inl(L.titel)}</h2><div class="unter">${inl(L.untertitel)}</div><div class="ziel"><b>${sp === 'de' ? 'Mein Ziel:' : 'Mon but :'}</b><span>${inl(L.ziel.de)}<span class="fr">${inl(L.ziel.fr)}</span></span></div></div>${
     L.bild ? `<div class="bild">${L.bild.map(bild).join('')}</div>` : ''}</div>`
-  if (L.start) { h += teilKopf('start', sp, L.start.was || ''); for (const a of L.start.aufgaben) h += aufgabe(a, ++k.zaehler) }
+  const block = (kopf: string, liste: any[], klasse?: string) => liste.map((a: any, i: number) => (i === 0 ? '<div class="zusammen">' + kopf : '') + aufgabe(a, ++k.zaehler, klasse) + (i === 0 ? '</div>' : '')).join('')
+  if (L.start) h += block(teilKopf('start', sp, L.start.was || ''), L.start.aufgaben)
   if (L.lesen) h += lesenTeil(L, k)
   if (L.hoeren) h += hoerenTeil(L, k)
   if (L.regel) h += (L.regel.neueSeite ? '<div class="neue-seite"></div>' : '') + regelTeil(L, k)
-  if (L.ueben?.length) { h += teilKopf('ueben', sp); for (const a of L.ueben) h += aufgabe(a, ++k.zaehler) }
-  if (L.sprechen?.length) { h += teilKopf('sprechen', sp); for (const a of L.sprechen) h += aufgabe(a, ++k.zaehler, 'in-sprechen') }
-  if (L.schreiben?.length) { h += (L.schreibenNeueSeite ? '<div class="neue-seite"></div>' : '') + teilKopf('schreiben', sp); for (const a of L.schreiben) h += aufgabe(a, ++k.zaehler, 'in-schreiben') }
+  if (L.ueben?.length) h += block(teilKopf('ueben', sp), L.ueben)
+  if (L.sprechen?.length) h += block(teilKopf('sprechen', sp), L.sprechen, 'in-sprechen')
+  if (L.schreiben?.length) h += (L.schreibenNeueSeite ? '<div class="neue-seite"></div>' : '') + block(teilKopf('schreiben', sp), L.schreiben, 'in-schreiben')
   if (L.check?.length) h += checkTeil(L, k)
   return h + '</section>'
 }
