@@ -346,8 +346,9 @@ function hoerenTeil(L: any, k: Kontext): string {
 function regelTeil(L: any, k: Kontext): string {
   const r = L.regel
   let h = '<div class="zusammen">' + teilKopf('regel', k.sp, r.was || '')
-  const ic: Record<string, string> = { merke: 'bulb', achtung: 'alert-triangle', tipp: 'sparkles' }
-  const kasten = (x: any) => `<div class="merke ${x.art || ''}"><h4>${icon(ic[x.art || 'merke'])}${inl(x.titel)}</h4>${x.punkte ? `<ul>${x.punkte.map((p: string) => `<li>${inl(p)}</li>`).join('')}</ul>` : ''}${
+  const ic: Record<string, string> = { merke: 'bulb', achtung: 'alert-triangle', tipp: 'sparkles', beispiel: 'pencil' }
+  const liste = (x: any) => { const t = x.nummern ? 'ol' : 'ul'; return `<${t}${x.nummern ? ' class="nummern"' : ''}>${x.punkte.map((p: string) => `<li>${inl(p)}</li>`).join('')}</${t}>` }
+  const kasten = (x: any) => `<div class="merke ${x.art || ''}"><h4>${icon(ic[x.art || 'merke'])}${inl(x.titel)}</h4>${x.vor ? `<p class="vor">${inl(x.vor)}</p>` : ''}${x.punkte ? liste(x) : ''}${
     x.tabelle ? `<table class="formen"><tr>${x.tabelle.kopf.map((c: string) => `<th>${esc(c)}</th>`).join('')}</tr>${x.tabelle.zeilen.map((z: string[]) => `<tr>${z.map((c) => `<td>${inl(c)}</td>`).join('')}</tr>`).join('')}</table>` : ''}${x.text ? `<p style="margin-top:2mm">${inl(x.text)}</p>` : ''}</div>`
   r.reihen.forEach((reihe: any[], i: number) => { h += `<div class="regelkasten ${reihe.length === 1 ? 'eins' : ''}">${reihe.map(kasten).join('')}</div>` + (i === 0 ? '</div>' : '') })
   return h

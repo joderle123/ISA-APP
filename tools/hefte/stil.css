@@ -184,6 +184,11 @@ section.lektion, section.inhalt { position: relative; }
 .merke ul { margin: 0; padding-left: 5mm; }
 .merke li { margin: 1.2mm 0; font-size: 12.4pt; }
 .merke.achtung { background: #fdecec; } .merke.achtung h4 { color: #a3261f; } .merke.achtung h4 svg { color: #d0312d; }
+.merke.beispiel { background: var(--lesen-zart); } .merke.beispiel h4 { color: #16566c; } .merke.beispiel h4 svg { color: var(--lesen); }
+.merke p.vor { margin: 0 0 1.5mm; font-size: 12.4pt; }
+.merke ol.nummern { margin: 0; padding: 0; list-style: none; counter-reset: n; }
+.merke ol.nummern li { counter-increment: n; position: relative; padding-left: 7.5mm; }
+.merke ol.nummern li::before { content: counter(n); position: absolute; left: 0; top: .3mm; width: 5.2mm; height: 5.2mm; border-radius: 50%; background: rgba(0,0,0,.08); font: 800 9.5pt/5.2mm 'Lexend'; text-align: center; }
 .merke.tipp { background: var(--schreiben-zart); } .merke.tipp h4 { color: #1f6a39; } .merke.tipp h4 svg { color: var(--schreiben); }
 .endung { color: var(--f); font-weight: 700; text-decoration: underline; text-decoration-thickness: 0.45mm; text-underline-offset: 0.7mm; }
 .markiert { background: #ffe27a; border-radius: 0.8mm; padding: 0 0.6mm; font-weight: 700; }

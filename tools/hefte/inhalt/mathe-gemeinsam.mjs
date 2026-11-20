@@ -94,8 +94,8 @@ export function matheLektionen(nr, extras) {
       hoeren: x.hoeren,
       regel: {
         reihen: [
-          [{ titel: 'Merksatz', punkte: saetze(E(l.merksatz)) }, { titel: 'So gehst du vor', punkte: l.vorgehen.map((v, j) => `**${j + 1}.** ${E(v)}`) }],
-          l.musterl.slice(0, 2).map((mu, j) => ({ art: j === 0 ? 'tipp' : 'achtung', titel: mu.titel ? `Musterlösung: ${E(mu.titel)}` : 'Musterlösung', text: `**Aufgabe:** ${E(mu.a)} · ${mu.schritte.map(E).join(' · ')} · **Ergebnis:** ${E(mu.erg)}` })),
+          [{ titel: 'Merksatz', punkte: saetze(E(l.merksatz)) }, { titel: 'So gehst du vor', nummern: true, punkte: l.vorgehen.map((v) => E(v).replace(/^\d+\.\s*/, '')) }],
+          l.musterl.slice(0, 2).map((mu, j) => ({ art: j === 0 ? 'tipp' : 'beispiel', titel: mu.titel ? `Musterlösung: ${E(mu.titel)}` : 'Musterlösung', vor: `**Aufgabe:** ${E(mu.a)}`, nummern: true, punkte: mu.schritte.map(E), text: `**Ergebnis:** ${E(mu.erg)}` })),
         ],
       },
       ueben: [
