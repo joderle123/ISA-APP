@@ -889,6 +889,7 @@ export async function link(a) {
     await a.sag('e', 'Die Adresse ist komisch. Nicht die vom Spiel. „.w1n“ – mit einer Eins.');
   } else {
     await a.sag('noe', '… Niemand verschenkt was. Außer Oma.');
+    if (a.m().sit_kiste) await a.sag('e', '(Wie bei Rafas Kisten. Das Spiel will was von dir.)');
     await a.sag('e', '(Wer hat was davon? Wer dein Passwort hat, hat dein Konto.)');
   }
   a.merke('sit_link', 'geprueft');
@@ -1242,7 +1243,10 @@ async function jeffWahrheit(a, art) {
 // ================= Die Freistunde (Waldweg hinter der Schule, Kapitel 9–10, mittags) =================
 // Lenny will Sport schwänzen. Romy geht mit – aber nicht aus Langeweile: In der Umkleide wird sie ausgelacht.
 export async function zaun(a) {
+  const m = a.m();
   await a.sag('e', 'Hinter der Tribüne, wo der Waldweg beginnt. Lenny und Romy, Rucksäcke auf.');
+  if (m.sit_wette === 'wippe') await a.sag('lennyZaun', 'Ah, du. Von der Wippe. Die Revanche steht noch.');
+  else if (m.sit_wette) await a.sag('lennyZaun', 'Ah, du. Vom Spielplatz. Keine Dosen heute, keine Sorge.');
   await a.sag('lennyZaun', 'Da bist du ja. Ich schwänz. Und Romy kommt mit.');
   await a.sag('lennyZaun', 'Épicerie, dann Lichtung. Keiner merkt was. Kommst du?');
   await a.sag('romy', '(schaut auf ihre Schuhe) Komm halt mit.');
