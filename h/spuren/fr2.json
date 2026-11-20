@@ -1,0 +1,578 @@
+{
+ "modul": "fr2",
+ "titel": {
+  "de": "Ich und die anderen",
+  "fr": "Moi et les autres"
+ },
+ "sprache": "fr",
+ "spuren": {
+  "fr2-01l": {
+   "titel": "Samedi, à la gare !",
+   "art": "lesen",
+   "lektion": 1,
+   "dauer": 41.0,
+   "text": [
+    [
+     "",
+     "Samedi, à la gare !"
+    ],
+    [
+     "",
+     "De : Zoé · À : Emma · Objet : Samedi, à la gare ! Salut Emma ! Samedi, ma classe arrive à Luxembourg pour l’échange scolaire. Je suis super contente ! Pour me reconnaître à la gare : je suis assez grande, j’ai les cheveux longs et roux et les yeux verts. Je porte des lunettes. Notre professeur, M. Girard, est très grand. Il a une barbe et les cheveux gris. Ma copine Lou est petite et elle a les cheveux frisés. Et toi ? Tu es comment ? Envoie-moi ta description ! À samedi ! Zoé."
+    ]
+   ]
+  },
+  "fr2-01h": {
+   "titel": "Tu es où ?",
+   "art": "hoeren",
+   "lektion": 1,
+   "dauer": 40.6,
+   "text": [
+    [
+     "Emma",
+     "Allô, Zoé ? C’est Emma ! Tu es où ?"
+    ],
+    [
+     "Zoé",
+     "Salut Emma ! Je suis devant la boulangerie, avec ma classe."
+    ],
+    [
+     "Emma",
+     "Il y a beaucoup de monde ! Tu portes quoi ?"
+    ],
+    [
+     "Zoé",
+     "Je porte un manteau vert et un bonnet. Et toi, tu es comment ?"
+    ],
+    [
+     "Emma",
+     "Moi, je suis petite. J’ai les cheveux courts et bruns. Je porte un pull jaune."
+    ],
+    [
+     "Zoé",
+     "Un pull jaune… Attends… Tu as un sac à dos noir ?"
+    ],
+    [
+     "Emma",
+     "Oui !"
+    ],
+    [
+     "Zoé",
+     "Je te vois ! Je lève la main. Tu me vois ?"
+    ],
+    [
+     "Emma",
+     "Oui ! Une fille rousse avec des lunettes… C’est toi ! J’arrive !"
+    ]
+   ]
+  },
+  "fr2-02l": {
+   "titel": "C’est les soldes !",
+   "art": "lesen",
+   "lektion": 2,
+   "dauer": 54.0,
+   "text": [
+    [
+     "",
+     "C’est les soldes !"
+    ],
+    [
+     "",
+     "Boutique Arc-en-ciel – Soldes d’hiver : jusqu’à 30 % de réduction ! Sweat à capuche, bleu ou gris : 25 € (avant : 35 €). Jean noir, tailles 36 à 44 : 39 € · Baskets blanches : 49,90 €. Veste d’hiver rouge : 79 € · Bonnet : 15 € · Écharpe : 12 €. Du lundi au samedi, de 9 h à 19 h · 12, Grand-Rue, Dudelange."
+    ],
+    [
+     "",
+     "Message de Mia à Ben. Regarde la pub ! Le sweat bleu est super beau. J’aime aussi les baskets blanches, mais elles coûtent 49,90 €. C’est trop cher pour moi ! On va à la boutique samedi ?"
+    ]
+   ]
+  },
+  "fr2-02h": {
+   "titel": "Je peux l’essayer ?",
+   "art": "hoeren",
+   "lektion": 2,
+   "dauer": 50.6,
+   "text": [
+    [
+     "Vendeuse",
+     "Bonjour ! Je peux vous aider ?"
+    ],
+    [
+     "Yusuf",
+     "Bonjour, Madame. Je cherche un sweat à capuche."
+    ],
+    [
+     "Vendeuse",
+     "Nous avons des sweats bleus et des sweats gris. Quelle couleur vous préférez ?"
+    ],
+    [
+     "Yusuf",
+     "Le bleu, s’il vous plaît. En taille M."
+    ],
+    [
+     "Vendeuse",
+     "Voilà. Vous pouvez l’essayer. La cabine est là-bas."
+    ],
+    [
+     "Yusuf",
+     "Hmm, il est un peu trop grand. Vous avez la taille S ?"
+    ],
+    [
+     "Vendeuse",
+     "Oui, voilà, en taille S."
+    ],
+    [
+     "Yusuf",
+     "Parfait, il va bien ! Il coûte combien ?"
+    ],
+    [
+     "Vendeuse",
+     "Avec les soldes, il coûte vingt-cinq euros."
+    ],
+    [
+     "Yusuf",
+     "Et le bonnet noir, là ?"
+    ],
+    [
+     "Vendeuse",
+     "Quinze euros. Vingt-cinq plus quinze, ça fait quarante euros en tout."
+    ],
+    [
+     "Yusuf",
+     "D’accord, je prends les deux. Merci !"
+    ]
+   ]
+  },
+  "fr2-03l": {
+   "titel": "Bise, main ou « salut » ?",
+   "art": "lesen",
+   "lektion": 3,
+   "dauer": 52.8,
+   "text": [
+    [
+     "",
+     "Bise, main ou « salut » ?"
+    ],
+    [
+     "",
+     "Au Luxembourg, il y a des gens de beaucoup de pays. Alors, comment est-ce qu’on se dit bonjour ? Ça dépend des personnes !"
+    ],
+    [
+     "",
+     "Entre copains et copines, on dit souvent « Salut ! » ou « Coucou ! ». Beaucoup de jeunes se font la bise sur les joues. D’autres préfèrent un check avec la main."
+    ],
+    [
+     "",
+     "Avec les adultes, on dit « Bonjour, Madame » ou « Bonjour, Monsieur ». On se serre la main et on vouvoie : « Comment allez-vous ? »"
+    ],
+    [
+     "",
+     "Combien de bises ? Ça change selon le pays et la région : une, deux, trois … Au Luxembourg, on fait souvent trois bises."
+    ],
+    [
+     "",
+     "Et si tu n’aimes pas la bise ? Pas de problème ! Tu peux dire : « Je préfère te dire bonjour avec la main. » Chacun choisit."
+    ]
+   ]
+  },
+  "fr2-03h": {
+   "titel": "Bonjour, comment allez-vous ?",
+   "art": "hoeren",
+   "lektion": 3,
+   "dauer": 58.7,
+   "text": [
+    [
+     "Ben",
+     "Salut Sami ! Ça va ?"
+    ],
+    [
+     "Sami",
+     "Salut Ben ! Ça va bien, et toi ?"
+    ],
+    [
+     "Ben",
+     "Bof, je suis un peu fatigué. Je joue trop aux jeux vidéo le soir !"
+    ],
+    [
+     "Sami",
+     "Moi aussi ! Tu viens au foot cet après-midi ?"
+    ],
+    [
+     "Ben",
+     "Oui ! À tout à l’heure !"
+    ],
+    [
+     "Ben",
+     "Oh ! Bonjour, Madame Nouvelle !"
+    ],
+    [
+     "Mme Nouvelle",
+     "Bonjour, Ben ! Comment vas-tu ?"
+    ],
+    [
+     "Ben",
+     "Très bien, merci. Et vous, comment allez-vous ?"
+    ],
+    [
+     "Mme Nouvelle",
+     "Ça va bien, merci. Bon week-end, Ben !"
+    ],
+    [
+     "Ben",
+     "Merci, à vous aussi. Au revoir, Madame !"
+    ],
+    [
+     "Ben",
+     "Bonjour, Madame Pereira !"
+    ],
+    [
+     "Mme Pereira",
+     "Bonjour, Ben ! Tu vas bien ?"
+    ],
+    [
+     "Ben",
+     "Oui, merci. Et vous ?"
+    ],
+    [
+     "Mme Pereira",
+     "Oh, pas très bien. J’ai mal au dos. Mais ce n’est pas grave."
+    ],
+    [
+     "Ben",
+     "Oh, je suis désolé. Bon rétablissement, Madame !"
+    ]
+   ]
+  },
+  "fr2-04l": {
+   "titel": "Qu’est-ce que tu manges ?",
+   "art": "lesen",
+   "lektion": 4,
+   "dauer": 39.3,
+   "text": [
+    [
+     "",
+     "Qu’est-ce que tu manges ?"
+    ],
+    [
+     "",
+     "Noah. Le matin, je prends un bol de céréales avec du lait. À midi, je mange à la cantine. J’adore les frites, mais je déteste les épinards !"
+    ],
+    [
+     "",
+     "Amira. Au petit-déjeuner, je bois un chocolat chaud et je mange du pain avec de la confiture. Le soir, on dîne à sept heures. Mon plat préféré, c’est le couscous."
+    ],
+    [
+     "",
+     "Tom. Je n’ai pas faim le matin. Je prends juste un jus d’orange. À seize heures, je prends un goûter : une pomme et des biscuits. J’aime beaucoup les pâtes."
+    ]
+   ]
+  },
+  "fr2-04h": {
+   "titel": "Qu’est-ce qu’on mange aujourd’hui ?",
+   "art": "hoeren",
+   "lektion": 4,
+   "dauer": 36.6,
+   "text": [
+    [
+     "Cuisinier",
+     "Bonjour ! Aujourd’hui, il y a du poulet avec des frites, ou des pâtes aux légumes."
+    ],
+    [
+     "Noah",
+     "Du poulet avec des frites, s’il vous plaît !"
+    ],
+    [
+     "Cuisinier",
+     "Et comme entrée ? Une salade de carottes ou une soupe ?"
+    ],
+    [
+     "Noah",
+     "Une soupe, merci."
+    ],
+    [
+     "Amira",
+     "Moi, je voudrais les pâtes aux légumes et une salade de carottes, s’il vous plaît. Je ne mange pas de poulet."
+    ],
+    [
+     "Cuisinier",
+     "Pas de problème. Et comme dessert ? Il y a un yaourt ou une pomme."
+    ],
+    [
+     "Amira",
+     "Une pomme, s’il vous plaît."
+    ],
+    [
+     "Noah",
+     "Pour moi, un yaourt !"
+    ],
+    [
+     "Cuisinier",
+     "Voilà. Bon appétit !"
+    ]
+   ]
+  },
+  "fr2-05l": {
+   "titel": "Le pique-nique de la classe",
+   "art": "lesen",
+   "lektion": 5,
+   "dauer": 51.5,
+   "text": [
+    [
+     "",
+     "Le pique-nique de la classe"
+    ],
+    [
+     "",
+     "Message de Mme Nouvelle. Bonjour à tous ! Vendredi, nous faisons un pique-nique. Mia et Ben font les courses au marché jeudi, à 10 h, avec moi. Le marché a lieu sur la place de l’Église. Notre budget : 30 €."
+    ],
+    [
+     "",
+     "Liste de courses. 1 kilo de pommes · 500 grammes de raisin · 2 baguettes. 1 paquet de biscuits · 3 bouteilles d’eau · 1 bouteille de jus d’orange. 200 grammes de fromage · 1 boîte de thon."
+    ],
+    [
+     "",
+     "Stand de Tonio – fruits, légumes, fromages. Pommes : 2,50 € le kilo · Raisin : 3 € le kilo. Carottes : 1,80 € le kilo · Fromage : 2 € les 100 grammes."
+    ]
+   ]
+  },
+  "fr2-05h": {
+   "titel": "Et avec ceci ?",
+   "art": "hoeren",
+   "lektion": 5,
+   "dauer": 44.3,
+   "text": [
+    [
+     "Tonio",
+     "Bonjour, les jeunes ! Qu’est-ce que je vous donne ?"
+    ],
+    [
+     "Mia",
+     "Bonjour ! Je voudrais un kilo de pommes, s’il vous plaît."
+    ],
+    [
+     "Tonio",
+     "Voilà, un kilo de pommes. Et avec ceci ?"
+    ],
+    [
+     "Ben",
+     "Cinq cents grammes de raisin, s’il vous plaît."
+    ],
+    [
+     "Tonio",
+     "Voilà. C’est tout ?"
+    ],
+    [
+     "Mia",
+     "Non, nous voudrions aussi deux cents grammes de fromage."
+    ],
+    [
+     "Tonio",
+     "Très bien. Alors : deux euros cinquante pour les pommes, un euro cinquante pour le raisin et quatre euros pour le fromage. Ça fait huit euros."
+    ],
+    [
+     "Ben",
+     "Voilà dix euros."
+    ],
+    [
+     "Tonio",
+     "Dix moins huit, ça fait deux. Voilà deux euros. Merci et bon pique-nique !"
+    ],
+    [
+     "Mia",
+     "Merci, au revoir !"
+    ]
+   ]
+  },
+  "fr2-06l": {
+   "titel": "Au Café des Amis",
+   "art": "lesen",
+   "lektion": 6,
+   "dauer": 54.4,
+   "text": [
+    [
+     "",
+     "Au Café des Amis"
+    ],
+    [
+     "",
+     "Café des Amis – La carte. Boissons : chocolat chaud 3,20 € · thé 2,50 € · jus d’orange 3 € · eau minérale 2 €. À manger : croque-monsieur 5,50 € · crêpe au sucre 3 € · crêpe au chocolat 4 € · tarte aux pommes (une part) 3,50 €. Offre jeunes : une boisson + une crêpe au sucre = 5 €. Ouvert du mardi au dimanche, de 8 h à 20 h."
+    ],
+    [
+     "",
+     "Notre recette : la salade de fruits. Pour 4 personnes : 2 pommes, 2 bananes, 1 orange, 200 grammes de raisin, un citron, un peu de sucre. Lave les fruits. Coupe les fruits en petits morceaux. Mets les morceaux dans un saladier. Ajoute le jus du citron et un peu de sucre. Bon appétit !"
+    ]
+   ]
+  },
+  "fr2-06h": {
+   "titel": "Vous avez choisi ?",
+   "art": "hoeren",
+   "lektion": 6,
+   "dauer": 45.1,
+   "text": [
+    [
+     "Serveur",
+     "Bonjour ! Vous avez choisi ?"
+    ],
+    [
+     "Mia",
+     "Oui. Pour moi, un chocolat chaud et une crêpe au sucre, s’il vous plaît."
+    ],
+    [
+     "Serveur",
+     "C’est l’offre jeunes : cinq euros. Et pour vous ?"
+    ],
+    [
+     "Ben",
+     "Je voudrais un jus d’orange et… euh… un croque-monsieur."
+    ],
+    [
+     "Serveur",
+     "Désolé, il n’y a plus de croque-monsieur aujourd’hui."
+    ],
+    [
+     "Ben",
+     "Dommage ! Alors, je prends une part de tarte aux pommes."
+    ],
+    [
+     "Serveur",
+     "Très bien. Vous voulez de l’eau aussi ?"
+    ],
+    [
+     "Mia",
+     "Oui, une carafe d’eau, s’il vous plaît."
+    ],
+    [
+     "Ben",
+     "Monsieur ! L’addition, s’il vous plaît !"
+    ],
+    [
+     "Serveur",
+     "Alors, cinq euros pour elle, et six euros cinquante pour lui. Ça fait onze euros cinquante en tout."
+    ]
+   ]
+  },
+  "fr2-07l": {
+   "titel": "Les fêtes et les vacances",
+   "art": "lesen",
+   "lektion": 7,
+   "dauer": 58.7,
+   "text": [
+    [
+     "",
+     "Les fêtes et les vacances"
+    ],
+    [
+     "",
+     "Les fêtes de l’année au Luxembourg (un choix). Janvier : le Nouvel An, le 1er janvier. On dit : « Bonne année ! ». Février ou mars : le Carnaval. Les enfants se déguisent. Juin : la Fête nationale, le 23 juin. Le soir du 22 juin, il y a un grand feu d’artifice à Luxembourg-Ville. Décembre : la Saint-Nicolas, le 6 décembre, et Noël, le 25 décembre. On fête aussi beaucoup d’autres fêtes : Pâques, l’Aïd, Diwali, le Nouvel An chinois …"
+    ],
+    [
+     "",
+     "Carte postale de Rui. Coucou la classe ! Je suis en vacances au Portugal, chez mes grands-parents. Il fait beau et chaud : 30 degrés ! Le matin, je vais à la plage. Le soir, on mange des sardines. Je pars le 28 juillet. À bientôt ! Rui."
+    ]
+   ]
+  },
+  "fr2-07h": {
+   "titel": "La météo du week-end",
+   "art": "hoeren",
+   "lektion": 7,
+   "dauer": 39.0,
+   "text": [
+    [
+     "Météo",
+     "Bonjour à tous ! Voici la météo du week-end. Samedi, il fait beau dans tout le pays. Il y a du soleil et il fait chaud : vingt-quatre degrés l’après-midi."
+    ],
+    [
+     "Météo",
+     "Dimanche, attention : il pleut le matin et il y a du vent. L’après-midi, il fait plus frais : seulement seize degrés."
+    ],
+    [
+     "Noah",
+     "Tu as entendu ? Samedi, il fait beau ! On va à la piscine ?"
+    ],
+    [
+     "Mia",
+     "Oui, super idée ! Et dimanche, il pleut… On va au cinéma ?"
+    ],
+    [
+     "Noah",
+     "D’accord ! Samedi, piscine, et dimanche, cinéma !"
+    ]
+   ]
+  },
+  "fr2-08l": {
+   "titel": "La famille de Noah",
+   "art": "lesen",
+   "lektion": 8,
+   "dauer": 48.5,
+   "text": [
+    [
+     "",
+     "La famille de Noah"
+    ],
+    [
+     "",
+     "Salut ! C’est Noah. Samedi, c’est mon anniversaire : j’ai treize ans ! Il y a une grande fête chez nous. Toute la famille vient."
+    ],
+    [
+     "",
+     "J’habite avec ma mère, mon beau-père Marc et ma petite sœur Lina. Elle a six ans. Mon beau-père est très drôle : il apprend le portugais avec moi !"
+    ],
+    [
+     "",
+     "Le week-end, je vais souvent chez mon père. Il habite à Diekirch avec mon demi-frère Hugo. Hugo a deux ans. Il est trop mignon !"
+    ],
+    [
+     "",
+     "Mes grands-parents habitent à Ettelbruck. Ma grand-mère fait le meilleur gâteau au chocolat du monde. Mon cousin Rafael vient aussi à la fête. On joue toujours ensemble."
+    ],
+    [
+     "",
+     "Une grande famille, c’est parfois compliqué. Mais j’adore les fêtes avec tout le monde !"
+    ]
+   ]
+  },
+  "fr2-08h": {
+   "titel": "Je te présente ma famille",
+   "art": "hoeren",
+   "lektion": 8,
+   "dauer": 49.2,
+   "text": [
+    [
+     "Sami",
+     "Joyeux anniversaire, Noah ! Voilà, c’est pour toi."
+    ],
+    [
+     "Noah",
+     "Merci, Sami ! Oh, un ballon de basket ! Super ! Viens, je te présente ma famille."
+    ],
+    [
+     "Noah",
+     "Là, c’est ma grand-mère. Mamie, c’est Sami, mon copain du foot."
+    ],
+    [
+     "Grand-mère",
+     "Enchantée, Sami ! Tu veux un morceau de gâteau ?"
+    ],
+    [
+     "Sami",
+     "Oui, avec plaisir. Merci, Madame !"
+    ],
+    [
+     "Noah",
+     "Le grand monsieur avec les lunettes, c’est mon beau-père, Marc. Et la dame à côté, avec les cheveux longs, c’est ma mère."
+    ],
+    [
+     "Sami",
+     "Et le petit garçon qui court partout ?"
+    ],
+    [
+     "Noah",
+     "C’est mon demi-frère, Hugo. Il a deux ans. Attention, il adore les ballons !"
+    ],
+    [
+     "Sami",
+     "Ha ha ! Il est trop mignon !"
+    ]
+   ]
+  }
+ }
+}

@@ -1,0 +1,574 @@
+{
+ "modul": "fr1",
+ "titel": {
+  "de": "Ich und meine Schule",
+  "fr": "Moi et mon école"
+ },
+ "sprache": "fr",
+ "spuren": {
+  "fr1-01l": {
+   "titel": "Nouveaux dans la classe",
+   "art": "lesen",
+   "lektion": 1,
+   "dauer": 35.9,
+   "text": [
+    [
+     "",
+     "Nouveaux dans la classe"
+    ],
+    [
+     "",
+     "Léa. Salut ! Je m’appelle Léa. J’ai 12 ans. J’habite à Esch-sur-Alzette. J’aime la musique et le basket."
+    ],
+    [
+     "",
+     "Rui. Bonjour ! Moi, c’est Rui. J’ai 13 ans. Je suis portugais et luxembourgeois. Je parle portugais, luxembourgeois et un peu français."
+    ],
+    [
+     "",
+     "Amira. Coucou ! Je suis Amira. J’ai 12 ans. J’habite à Luxembourg depuis deux ans. J’adore dessiner."
+    ]
+   ]
+  },
+  "fr1-01h": {
+   "titel": "Bonjour, Madame !",
+   "art": "hoeren",
+   "lektion": 1,
+   "dauer": 42.6,
+   "text": [
+    [
+     "Mme Nouvelle",
+     "Bonjour à tous ! Je m’appelle Madame Nouvelle. Je suis votre professeure de français."
+    ],
+    [
+     "Léa",
+     "Bonjour, Madame !"
+    ],
+    [
+     "Mme Nouvelle",
+     "Bonjour ! Comment tu t’appelles ?"
+    ],
+    [
+     "Léa",
+     "Je m’appelle Léa."
+    ],
+    [
+     "Mme Nouvelle",
+     "Et tu as quel âge, Léa ?"
+    ],
+    [
+     "Léa",
+     "J’ai douze ans."
+    ],
+    [
+     "Mme Nouvelle",
+     "Merci, Léa. Et toi ?"
+    ],
+    [
+     "Rui",
+     "Moi, c’est Rui. J’ai treize ans."
+    ],
+    [
+     "Mme Nouvelle",
+     "Enchantée, Rui ! Bienvenue dans la classe."
+    ],
+    [
+     "Rui",
+     "Merci, Madame. Excusez-moi, vous pouvez répéter votre nom, s’il vous plaît ?"
+    ],
+    [
+     "Mme Nouvelle",
+     "Bien sûr : Nouvelle. Madame Nouvelle."
+    ]
+   ]
+  },
+  "fr1-02l": {
+   "titel": "Les membres du club",
+   "art": "lesen",
+   "lektion": 2,
+   "dauer": 48.1,
+   "text": [
+    [
+     "",
+     "Les membres du club"
+    ],
+    [
+     "",
+     "Fiche – Yusuf Demir. Âge : 13 ans · Né à : Istanbul (Turquie) · Nationalité : turc. Habite à : Differdange. Langues : turc, luxembourgeois, allemand, français."
+    ],
+    [
+     "",
+     "Fiche – Inès Ferreira. Âge : 12 ans · Née à : Luxembourg · Nationalités : portugaise et luxembourgeoise. Habite à : Ettelbruck. Langues : portugais, luxembourgeois, allemand, français."
+    ],
+    [
+     "",
+     "Fiche – Luca Bianchi. Âge : 14 ans · Né à : Arlon (Belgique) · Nationalité : belge. Habite à : Steinfort. Langues : français, anglais, un peu luxembourgeois."
+    ]
+   ]
+  },
+  "fr1-02h": {
+   "titel": "Ici, on parle combien de langues ?",
+   "art": "hoeren",
+   "lektion": 2,
+   "dauer": 47.3,
+   "text": [
+    [
+     "Chloé",
+     "Bonjour ! Aujourd’hui, à la radio de l’école : les langues de notre classe. Yusuf, tu viens d’où ?"
+    ],
+    [
+     "Yusuf",
+     "Je viens de Turquie. Je suis né à Istanbul. Maintenant, j’habite à Differdange."
+    ],
+    [
+     "Chloé",
+     "Et tu parles quelles langues ?"
+    ],
+    [
+     "Yusuf",
+     "Je parle turc à la maison, luxembourgeois avec mes copains et français à l’école."
+    ],
+    [
+     "Chloé",
+     "Super ! Et toi, Inès ?"
+    ],
+    [
+     "Inès",
+     "Moi, je suis portugaise et luxembourgeoise. Je suis née ici, à Luxembourg."
+    ],
+    [
+     "Chloé",
+     "Tu parles portugais ?"
+    ],
+    [
+     "Inès",
+     "Oui, bien sûr ! Et je parle aussi luxembourgeois, allemand et français. Et j’apprends l’anglais."
+    ],
+    [
+     "Chloé",
+     "Waouh, cinq langues ! Merci à vous deux !"
+    ]
+   ]
+  },
+  "fr1-03l": {
+   "titel": "On cherche des joueurs !",
+   "art": "lesen",
+   "lektion": 3,
+   "dauer": 45.6,
+   "text": [
+    [
+     "",
+     "On cherche des joueurs !"
+    ],
+    [
+     "",
+     "FC Les Étoiles – Nouveaux joueurs et joueuses ! Pour les jeunes de 11 à 14 ans · Entraînement : mercredi et vendredi, de 17 h à 18 h 30. Lieu : stade municipal, rue du Parc · Prix : 40 € par an. Inscription : samedi matin, de 10 h à 12 h, au club."
+    ],
+    [
+     "",
+     "Formulaire d’inscription. Nom : Pereira · Prénom : Noah. Date de naissance : 12 mars 2014 · Âge : 12 ans. Adresse : 7, rue des Lilas, Ettelbruck. Téléphone : 12 34 56 · Courriel : noah.pereira@exemple.lu."
+    ]
+   ]
+  },
+  "fr1-03h": {
+   "titel": "Tu peux épeler, s’il te plaît ?",
+   "art": "hoeren",
+   "lektion": 3,
+   "dauer": 39.6,
+   "text": [
+    [
+     "M. Laurent",
+     "Bonjour ! Tu veux t’inscrire au club ?"
+    ],
+    [
+     "Noah",
+     "Oui, s’il vous plaît."
+    ],
+    [
+     "M. Laurent",
+     "Très bien. Tu t’appelles comment ?"
+    ],
+    [
+     "Noah",
+     "Noah Pereira."
+    ],
+    [
+     "M. Laurent",
+     "Tu peux épeler ton nom de famille ?"
+    ],
+    [
+     "Noah",
+     "Oui : P, E, R, E, I, R, A."
+    ],
+    [
+     "M. Laurent",
+     "Merci. Tu as quel âge ?"
+    ],
+    [
+     "Noah",
+     "J’ai douze ans."
+    ],
+    [
+     "M. Laurent",
+     "Et ton adresse ?"
+    ],
+    [
+     "Noah",
+     "Sept, rue des Lilas, à Ettelbruck."
+    ],
+    [
+     "M. Laurent",
+     "Et ton numéro de téléphone ?"
+    ],
+    [
+     "Noah",
+     "C’est le douze, trente-quatre, cinquante-six."
+    ],
+    [
+     "M. Laurent",
+     "Parfait. L’entraînement commence mercredi à dix-sept heures. À mercredi !"
+    ]
+   ]
+  },
+  "fr1-04l": {
+   "titel": "Le matériel pour l’école",
+   "art": "lesen",
+   "lektion": 4,
+   "dauer": 44.7,
+   "text": [
+    [
+     "",
+     "Le matériel pour l’école"
+    ],
+    [
+     "",
+     "Liste de matériel – classe 7P2. Pour tous les cours : une trousse avec deux stylos bleus, un crayon, une gomme, une règle et des ciseaux. Pour le français : un cahier rouge et un dictionnaire. Pour les maths : une calculatrice et un cahier à carreaux. Pour le sport, il faut : des baskets, un short, un tee-shirt et une bouteille d’eau."
+    ],
+    [
+     "",
+     "Message de Chloé à Tom. Salut Tom ! Demain, on a sport. N’oublie pas tes baskets ! Et tu as mon cahier de maths ? C’est le cahier vert avec un chat. Il est dans ton sac ? Merci !"
+    ]
+   ]
+  },
+  "fr1-04h": {
+   "titel": "Tu as un stylo ?",
+   "art": "hoeren",
+   "lektion": 4,
+   "dauer": 37.2,
+   "text": [
+    [
+     "Tom",
+     "Oh non ! Je n’ai pas mon stylo. Chloé, tu as un stylo pour moi, s’il te plaît ?"
+    ],
+    [
+     "Chloé",
+     "Oui, voilà. Un stylo bleu."
+    ],
+    [
+     "Tom",
+     "Merci ! Et est-ce que je peux prendre ta règle ?"
+    ],
+    [
+     "Chloé",
+     "Désolée, je n’ai pas de règle aujourd’hui."
+    ],
+    [
+     "Mme Nouvelle",
+     "Tom, tu as ton cahier de français ?"
+    ],
+    [
+     "Tom",
+     "Euh… non, Madame. Il est à la maison. Est-ce que je peux écrire sur une feuille ?"
+    ],
+    [
+     "Mme Nouvelle",
+     "D’accord, pour aujourd’hui. Mais demain, tu apportes ton cahier, s’il te plaît."
+    ],
+    [
+     "Tom",
+     "Oui, Madame. Promis !"
+    ]
+   ]
+  },
+  "fr1-05l": {
+   "titel": "Notre lycée",
+   "art": "lesen",
+   "lektion": 5,
+   "dauer": 48.3,
+   "text": [
+    [
+     "",
+     "Notre lycée"
+    ],
+    [
+     "",
+     "Bienvenue au Lycée des Trois Rivières ! Notre lycée est grand et moderne. Il y a 600 élèves et 70 professeurs."
+    ],
+    [
+     "",
+     "Au rez-de-chaussée, il y a la cantine, le secrétariat et une grande bibliothèque. À la cantine, on mange à midi."
+    ],
+    [
+     "",
+     "Au premier étage, il y a les salles de classe et deux salles d’informatique. Au deuxième étage, il y a les salles de sciences et une salle de musique."
+    ],
+    [
+     "",
+     "Derrière le lycée, il y a une salle de sport et un terrain de foot. Dans la cour, il y a des bancs et des tables de ping-pong."
+    ],
+    [
+     "",
+     "Il n’y a pas de piscine. Pour la natation, les élèves vont à la piscine de la ville en bus."
+    ]
+   ]
+  },
+  "fr1-05h": {
+   "titel": "Ouvrez vos livres !",
+   "art": "hoeren",
+   "lektion": 5,
+   "dauer": 38.4,
+   "text": [
+    [
+     "Mme Nouvelle",
+     "Bonjour tout le monde ! Asseyez-vous, s’il vous plaît."
+    ],
+    [
+     "Mme Nouvelle",
+     "Sami, ferme la porte, s’il te plaît."
+    ],
+    [
+     "Sami",
+     "Oui, Madame."
+    ],
+    [
+     "Mme Nouvelle",
+     "Merci. Maintenant, ouvrez vos livres à la page douze."
+    ],
+    [
+     "Mme Nouvelle",
+     "Lisez le texte en silence. Ensuite, soulignez les mots nouveaux."
+    ],
+    [
+     "Sami",
+     "Madame, je ne comprends pas. Vous pouvez répéter, s’il vous plaît ?"
+    ],
+    [
+     "Mme Nouvelle",
+     "Bien sûr. Page douze. Lisez le texte et soulignez les mots nouveaux."
+    ],
+    [
+     "Mme Nouvelle",
+     "Très bien. Maintenant, rangez vos affaires. C’est la récréation !"
+    ]
+   ]
+  },
+  "fr1-06l": {
+   "titel": "Au tableau d’affichage",
+   "art": "lesen",
+   "lektion": 6,
+   "dauer": 31.1,
+   "text": [
+    [
+     "",
+     "Au tableau d’affichage"
+    ],
+    [
+     "",
+     "Information – classe 7P2. Attention ! Mardi, le cours de musique n’a pas lieu dans la salle 105, mais dans la salle 210, au deuxième étage."
+    ],
+    [
+     "",
+     "Sortie au musée. Jeudi après-midi : visite du musée d’histoire naturelle. Rendez-vous à 13 h 15 devant le secrétariat. Retour à l’école à 16 h. N’oubliez pas votre autorisation signée !"
+    ]
+   ]
+  },
+  "fr1-06h": {
+   "titel": "Votre attention, s’il vous plaît !",
+   "art": "hoeren",
+   "lektion": 6,
+   "dauer": 34.4,
+   "text": [
+    [
+     "Annonce",
+     "Votre attention, s’il vous plaît. Aujourd’hui, la cantine ferme à treize heures. Les élèves de septième mangent à midi et quart."
+    ],
+    [
+     "Annonce",
+     "Attention aussi : le bus numéro cinq part à seize heures dix, et pas à seize heures."
+    ],
+    [
+     "Yusuf",
+     "Amira, il est quelle heure ?"
+    ],
+    [
+     "Amira",
+     "Il est dix heures moins dix. La récréation finit dans cinq minutes."
+    ],
+    [
+     "Yusuf",
+     "Et après, on a quoi ?"
+    ],
+    [
+     "Amira",
+     "Maths ! Et cet après-midi, on a sport de quatorze heures à quinze heures."
+    ],
+    [
+     "Yusuf",
+     "Super ! J’adore le sport."
+    ]
+   ]
+  },
+  "fr1-07l": {
+   "titel": "Le nouvel emploi du temps",
+   "art": "lesen",
+   "lektion": 7,
+   "dauer": 36.5,
+   "text": [
+    [
+     "",
+     "Le nouvel emploi du temps"
+    ],
+    [
+     "",
+     "Salut Mia ! Tu as vu le nouvel emploi du temps ? 😮"
+    ],
+    [
+     "",
+     "Oui ! Super : on a sport trois fois par semaine ! J’adore le sport. ⚽"
+    ],
+    [
+     "",
+     "Moi aussi. Mais on a maths tous les jours… Je n’aime pas les maths. 😩"
+    ],
+    [
+     "",
+     "Moi, j’aime bien les maths. Mais je n’aime pas beaucoup le français."
+    ],
+    [
+     "",
+     "Moi non plus ! Mais j’adore le dessin. On a dessin une fois par semaine, le jeudi."
+    ],
+    [
+     "",
+     "Moi aussi, j’aime le dessin. À demain ! 👋"
+    ]
+   ]
+  },
+  "fr1-07h": {
+   "titel": "Ta matière préférée, c’est quoi ?",
+   "art": "hoeren",
+   "lektion": 7,
+   "dauer": 48.8,
+   "text": [
+    [
+     "Amira",
+     "Bonjour ! C’est la radio de l’école. Ta matière préférée, c’est quoi ?"
+    ],
+    [
+     "Noah",
+     "Moi, c’est le sport ! On joue au foot, au basket… J’adore ça."
+    ],
+    [
+     "Amira",
+     "Et tu fais du sport combien de fois par semaine ?"
+    ],
+    [
+     "Noah",
+     "À l’école, trois fois. Et au club, deux fois. Alors… cinq fois par semaine !"
+    ],
+    [
+     "Amira",
+     "Waouh ! Et toi ?"
+    ],
+    [
+     "Léa",
+     "Moi, j’aime beaucoup la musique. Je chante dans la chorale, le mercredi. Je n’aime pas les sciences."
+    ],
+    [
+     "Amira",
+     "Et toi, Tom ?"
+    ],
+    [
+     "Tom",
+     "Euh… je préfère la récréation ! Non, je rigole. J’aime bien l’informatique."
+    ],
+    [
+     "Amira",
+     "Merci à vous ! Et vous, votre matière préférée, c’est quoi ?"
+    ]
+   ]
+  },
+  "fr1-08l": {
+   "titel": "Une journée avec Amira",
+   "art": "lesen",
+   "lektion": 8,
+   "dauer": 46.3,
+   "text": [
+    [
+     "",
+     "Une journée avec Amira"
+    ],
+    [
+     "",
+     "Je m’appelle Amira, j’ai 12 ans. Le matin, je me lève à six heures quarante-cinq. Je prends mon petit-déjeuner avec mon petit frère."
+    ],
+    [
+     "",
+     "À sept heures et demie, je vais à l’arrêt de bus. Le bus arrive à l’école à huit heures moins dix."
+    ],
+    [
+     "",
+     "Les cours commencent à huit heures. À midi, je mange à la cantine avec mes copines. J’aime bien la cantine, mais pas le poisson !"
+    ],
+    [
+     "",
+     "L’après-midi, nous avons cours jusqu’à quatre heures. Le mardi et le jeudi, je vais au club de dessin."
+    ],
+    [
+     "",
+     "Le soir, je fais mes devoirs et je regarde une série. À neuf heures et demie, je vais au lit. Bonne nuit !"
+    ]
+   ]
+  },
+  "fr1-08h": {
+   "titel": "Je me présente !",
+   "art": "hoeren",
+   "lektion": 8,
+   "dauer": 45.7,
+   "text": [
+    [
+     "Sami",
+     "Bonjour à tous ! Je m’appelle Sami. J’ai treize ans. Je suis luxembourgeois et marocain. J’habite à Wiltz."
+    ],
+    [
+     "Sami",
+     "Je parle arabe, luxembourgeois, allemand et un peu français."
+    ],
+    [
+     "Sami",
+     "Le matin, je vais à l’école à vélo. Les cours commencent à huit heures."
+    ],
+    [
+     "Sami",
+     "Ma matière préférée, c’est l’informatique. Je n’aime pas beaucoup l’histoire."
+    ],
+    [
+     "Sami",
+     "Après l’école, je vais au club de boxe deux fois par semaine. Le soir, je joue aux jeux vidéo avec mes copains."
+    ],
+    [
+     "Sami",
+     "Merci de votre attention ! Vous avez des questions ?"
+    ],
+    [
+     "Mme Nouvelle",
+     "Bravo, Sami ! C’est très clair. Une question : tu vas au club quels jours ?"
+    ],
+    [
+     "Sami",
+     "Le mardi et le vendredi."
+    ]
+   ]
+  }
+ }
+}
