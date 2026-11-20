@@ -397,6 +397,40 @@ export function baueEinrichtung({ B, P, C, schild, schilder, stuhl, DECKE }) {
     D('kk/rollerskate_pair', 40.7, -45.6, { s: 0.36, y: 0.48, rot: 0.4 });
   }
 
+  // ---------- SePAS (x −16 … −8, z −14 … −2): Gefühle-Rad, Hilfe-Tafel, Sorgen-Briefkasten, Taschentücher – ein Raum, der sagt: Hier darfst du reden ----------
+  { // Gefühle-Rad an der Westwand
+    const rad = plakat(1.15, 1.3, (g, w, h) => {
+      g.fillStyle = '#fbf6ec'; g.fillRect(0, 0, w, h);
+      text(g, 'Wie geht’s dir heute?', w / 2, 58, 'bold 40px system-ui');
+      const G = [['froh', '#f2c94c'], ['stolz', '#f2994a'], ['wütend', '#eb5757'], ['traurig', '#5b8def'], ['ängstlich', '#9b7bc8'], ['verlegen', '#e88fb0'], ['müde', '#8aa0b4'], ['ruhig', '#6fcf97']];
+      const cx = w / 2, cy = h / 2 + 30, r = w * 0.42;
+      G.forEach(([t, c], i) => { const a0 = i / G.length * Math.PI * 2 - Math.PI / 2, a1 = (i + 1) / G.length * Math.PI * 2 - Math.PI / 2;
+        g.beginPath(); g.moveTo(cx, cy); g.arc(cx, cy, r, a0, a1); g.closePath(); g.fillStyle = c; g.fill(); g.strokeStyle = '#fbf6ec'; g.lineWidth = 6; g.stroke();
+        const am = (a0 + a1) / 2; g.save(); g.translate(cx + Math.cos(am) * r * 0.66, cy + Math.sin(am) * r * 0.66); text(g, t, 0, 10, 'bold 28px system-ui', '#2b2b33'); g.restore(); });
+      g.beginPath(); g.arc(cx, cy, r * 0.2, 0, 7); g.fillStyle = '#fbf6ec'; g.fill(); text(g, 'alles', cx, cy - 2, 'bold 26px system-ui'); text(g, 'okay', cx, cy + 26, 'bold 26px system-ui');
+      text(g, 'Gemischt geht auch.', w / 2, h - 30, 'italic 30px Georgia, serif', '#8a5a3a');
+    });
+    rad.position.set(-15.86, 1.6, -5.4); rad.rotation.y = Math.PI / 2;
+    box(-15.92, -15.88, 0.9, 2.3, -6.06, -4.74, hex('#6b4a32'), { art: 'innen' });
+    // Hilfe-Tafel an der Ostwand (neben der Tür)
+    const tafel = plakat(1.3, 1.0, (g, w, h) => {
+      g.fillStyle = '#2fb8a8'; g.fillRect(0, 0, w, h); g.fillStyle = '#ffffff'; g.fillRect(14, 14, w - 28, h - 28);
+      text(g, 'Wenn es zu viel wird', w / 2, 70, 'bold 42px system-ui', '#1f6f66');
+      [['116 111', 'Kinder- und Jugendtelefon · anonym'], ['8002 1234', 'BEE SECURE · Internet, Handy, Spiele'], ['112', 'Notfall'], ['SePAS', 'Tür offen. Ohne Termin.']].forEach(([n, t], i) => {
+        text(g, n, 40, 150 + i * 72, 'bold 40px system-ui', '#2b3a55', 'left'); text(g, t, 230, 150 + i * 72, '28px system-ui', '#2b3a55', 'left'); });
+    });
+    tafel.position.set(-8.14, 1.55, -12.2); tafel.rotation.y = -Math.PI / 2;
+    // Sorgen-Briefkasten neben der Tür: Holzkasten mit Schlitz auf einem Pfosten
+    box(-15.2, -15.1, 0, 1.0, -13.15, -13.05, hex('#6b4a32'), { art: 'innen', stoss: true });
+    box(-15.4, -14.9, 1.0, 1.32, -13.3, -12.9, hex('#e9b949'), { art: 'innen' });
+    box(-15.3, -15.0, 1.25, 1.27, -12.9, -12.88, SW, { art: 'innen' });
+    const sb = zettel(0.8, 0.4, '#ffffff', 'Sorgen-Briefkasten', ['Anonym.', 'Herr Kuedes liest alles.'], { kf: 'bold 52px system-ui', zf: '36px system-ui', akz: '#e9b949' });
+    sb.position.set(-15.05, 1.62, -12.87); sb.rotation.y = 0;
+    // Taschentücher und Wasser auf dem Tisch
+    box(-11.85, -11.55, 0.46, 0.58, -5.5, -5.3, hex('#5b8def'), { art: 'innen' }); box(-11.75, -11.65, 0.58, 0.64, -5.42, -5.38, hex('#ffffff'), { art: 'innen' });
+    for (const [x, z] of [[-12.6, -5.2], [-12.45, -5.55]]) box(x - 0.04, x + 0.04, 0.46, 0.6, z - 0.04, z + 0.04, hex('#bfe3f2'), { art: 'innen' });
+  }
+
   // ---------- Gang Ost: Fernands Ecke (Hausmeister) – Leiter an der Wand, Werkzeugkiste, Eimer ----------
   { const RAHM = hex('#c9a227');
     for (const x of [27.3, 27.84]) box(x, x + 0.06, 0.06, 2.6, -14.32, -14.24, RAHM, { art: 'innen', stoss: true });
