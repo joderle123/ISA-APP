@@ -173,7 +173,7 @@ function beschriftListe(liste: [string, string][], spalten = 3): string {
 }
 function versuch(a: any): string {
   const L = a.loesung || {}
-  const feld = (t: string, n: number, l?: string) => `<div class="vfeld"><b>${t}</b>${linien(n, l ? [l] : [])}</div>`
+  const feld = (t: string, n: number, l?: string) => `<div class="vfeld"><b>${t}</b>${linien(Math.max(n, Math.ceil((l || '').length / 66)), l ? [l] : [])}</div>`
   return `<div class="versuch"><div class="vk"><span class="vi">${icon('flask')}</span><div><b>Forscherfrage</b><p>${inl(a.frage)}</p></div></div>
   <div class="vgrid"><div><b>Material</b><ul>${a.material.map((m: string) => `<li>${inl(m)}</li>`).join('')}</ul></div><div><b>So gehst du vor</b><ol>${a.schritte.map((m: string) => `<li>${inl(m)}</li>`).join('')}</ol></div></div>
   ${a.ohneVermutung ? '' : feld('Meine Vermutung: Was passiert?', 2, L.vermutung)}${feld('Das beobachte ich:', a.beobZeilen || 3, L.beobachtung)}${feld('Ergebnis: Das bedeutet …', a.ergZeilen || 2, L.ergebnis)}</div>`
@@ -244,7 +244,7 @@ function aufgabeKoerper(a: Aufgabe): string {
         .join('')}</table>`
     }
     case 'fragen': {
-      return a.fragen.map((f: any, i: number) => `<div class="frage-block"><div class="f"><span style="color:var(--leise);font-size:11pt">${'abcdefgh'[i]})</span> ${inl(f.f)}</div>${linien(f.zeilen || 1, [f.l || ''])}</div>`).join('')
+      return a.fragen.map((f: any, i: number) => `<div class="frage-block"><div class="f"><span style="color:var(--leise);font-size:11pt">${'abcdefgh'[i]})</span> ${inl(f.f)}</div>${linien(Math.max(f.zeilen || 1, Math.ceil(roh(f.l || '').length / 72)), [f.l || ''])}</div>`).join('')
     }
     case 'abschreiben': {
       return `<table class="raster"><colgroup><col style="width:47%"><col></colgroup><tr><th>${esc(a.kopf?.[0] || 'so nicht')}</th><th>${esc(a.kopf?.[1] || 'so ist es richtig')}</th></tr>${a.saetze
@@ -544,7 +544,7 @@ async function baue(id: string, browser: any, png: boolean) {
       // Prüfen: Nichts darf breiter sein als der Satzspiegel – sonst verkleinert Chromium das ganze Heft.
       await seite.emulateMedia({ media: 'print' }); await seite.setViewportSize({ width: 680, height: 1000 })
       const zuBreit = await seite.evaluate(() => { const W = document.body.getBoundingClientRect().width, out: string[] = []
-        for (const e of Array.from(document.querySelectorAll('body *'))) { const q = e.getBoundingClientRect(); if (q.width && q.right > W + 1 && !e.closest('.deckblatt')) out.push(`${e.tagName}.${typeof (e as HTMLElement).className === 'string' ? (e as HTMLElement).className : ''} (${Math.round(q.right - W)} px): ${(e.textContent || (e.closest('section') ? 'in ' + e.closest('section')!.id : '')).slice(0, 50)}`) }
+        for (const e of Array.from(document.querySelectorAll('body *'))) { if ((e as SVGElement).ownerSVGElement) continue; const q = e.getBoundingClientRect(); if (q.width && q.right > W + 1 && !e.closest('.deckblatt')) out.push(`${e.tagName}.${typeof (e as HTMLElement).className === 'string' ? (e as HTMLElement).className : ''} (${Math.round(q.right - W)} px): ${(e.textContent || (e.closest('section') ? 'in ' + e.closest('section')!.id : '')).slice(0, 50)}`) }
         return out })
       if (zuBreit.length) { console.error(`✗ ${name}: ${zuBreit.length} Elemente zu breit – das Heft würde verkleinert:`); zuBreit.slice(0, 8).forEach((z: string) => console.error('   ' + z)); process.exitCode = 1 }
       const pdf = join(ziel, name + '.pdf')

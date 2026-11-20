@@ -151,3 +151,48 @@ export function kreislauf({ breite = 80 } = {}) {
   <path d="M90,258 C55,240 50,200 105,175" fill="none" stroke="#3f6fc9" stroke-width="5" marker-end="url(#kb)"/>
   ${t(268, 105, 'sauerstoffreich', { gr: 11, farbe: '#c0392b', anker: 'middle' })}${t(48, 105, 'sauerstoffarm', { gr: 11, farbe: '#3f6fc9', anker: 'middle' })}`, breite)
 }
+
+/** Stabmagnet mit Polen (N rot, S grün) und Feldlinien; feld: Feldlinien zeigen */
+export function magnet({ feld = true, breite = 110 } = {}) {
+  let f = ''
+  if (feld) for (const k of [30, 55, 85]) f += `<path d="M120,${110 - 8} C120,${110 - k * 1.6} 280,${110 - k * 1.6} 280,${110 - 8}" fill="none" stroke="#7a8496" stroke-width="1.6" stroke-dasharray="5 4"/><path d="M120,${110 + 8} C120,${110 + k * 1.6} 280,${110 + k * 1.6} 280,${110 + 8}" fill="none" stroke="#7a8496" stroke-width="1.6" stroke-dasharray="5 4"/>`
+  return svg(400, 220, `${f}
+  <rect x="110" y="90" width="90" height="40" rx="4" fill="#d9534f" stroke="#2a2f3a" stroke-width="2"/><rect x="200" y="90" width="90" height="40" rx="4" fill="#5cb85c" stroke="#2a2f3a" stroke-width="2"/>
+  ${t(155, 118, 'N', { gr: 22, fett: 800, farbe: '#fff' })}${t(245, 118, 'S', { gr: 22, fett: 800, farbe: '#fff' })}
+  <path d="M60,100 q-14,0 -14,10 v14 q0,10 14,10 h10 q10,0 10,-8 v-10 q0,-6 -8,-6 h-6" fill="none" stroke="#6b7487" stroke-width="3"/>
+  <path d="M340,100 q14,0 14,10 v14 q0,10 -14,10 h-10 q-10,0 -10,-8 v-10 q0,-6 8,-6 h6" fill="none" stroke="#6b7487" stroke-width="3"/>
+  ${t(200, 210, 'Büroklammern aus Eisen werden an den Polen am stärksten angezogen.', { gr: 12, fett: 400, farbe: '#6b7487' })}`, breite)
+}
+
+/** Licht und Schatten: 1 Lichtquelle, 2 Lichtstrahlen, 3 Gegenstand, 4 Schatten */
+export function schatten({ breite = 130 } = {}) {
+  return svg(460, 240, `
+  <rect x="400" y="20" width="16" height="200" fill="#e7e2d6" stroke="#b9b2a2"/>
+  <path d="M70,120 L400,40 L400,200 Z" fill="#fff6c9" opacity="0.8"/>
+  <path d="M70,120 L210,85 M70,120 L210,155" stroke="#e8b400" stroke-width="2"/>
+  <path d="M210,85 L400,40 M210,155 L400,200" stroke="#e8b400" stroke-width="2" stroke-dasharray="6 5"/>
+  <path d="M400,58 L400,182" stroke="#2a2f3a" stroke-width="16" opacity="0.75"/>
+  <rect x="200" y="85" width="22" height="70" rx="3" fill="#8a6a4a" stroke="#2a2f3a" stroke-width="2"/>
+  <circle cx="60" cy="120" r="18" fill="#ffe680" stroke="#2a2f3a" stroke-width="2"/><rect x="30" y="108" width="20" height="24" fill="#6b7487"/>
+  ${linie(60, 100, 60, 70)}${nr(60, 58, 1)}${linie(140, 103, 140, 75)}${nr(140, 63, 2)}${linie(211, 160, 211, 195)}${nr(211, 207, 3)}${linie(408, 120, 435, 120)}${nr(445, 120, 4)}`, breite)
+}
+
+/** Pumpspeicherwerk: 1 Oberbecken, 2 Rohrleitung, 3 Kraftwerk (Turbine/Pumpe), 4 Unterbecken (Fluss) */
+export function pumpspeicher({ breite = 140 } = {}) {
+  return svg(480, 260, `
+  <rect width="480" height="260" fill="#eaf4fb"/>
+  <path d="M0,70 L150,60 Q260,70 320,200 L480,215 L480,260 L0,260 Z" fill="#9bc96f"/>
+  <path d="M30,52 L140,52 L132,72 L38,72 Z" fill="#5b9bd5" stroke="#2a2f3a" stroke-width="2"/>
+  <path d="M120,72 C170,90 230,150 300,205" fill="none" stroke="#6b7487" stroke-width="9"/>
+  <rect x="290" y="190" width="56" height="34" fill="#d8d2c4" stroke="#2a2f3a" stroke-width="2"/><circle cx="318" cy="207" r="10" fill="#fff" stroke="#2a2f3a" stroke-width="2"/><path d="M318,197 v20 M308,207 h20" stroke="#2a2f3a" stroke-width="2"/>
+  <path d="M346,222 L480,222 L480,240 L340,240 Z" fill="#5b9bd5" stroke="#2a2f3a" stroke-width="1.5"/>
+  <path d="M356,180 l14,-22 h50 l14,22" fill="none" stroke="#e8b400" stroke-width="3"/><path d="M370,158 v-26 M420,158 v-26" stroke="#6b7487" stroke-width="3"/>
+  ${t(160, 30, 'Strom übrig → Wasser hochpumpen', { gr: 12.5, fett: 600, farbe: '#1f6aa0', anker: 'start' })}${t(160, 46, 'Strom gebraucht → Wasser fließt runter', { gr: 12.5, fett: 600, farbe: '#c0392b', anker: 'start' })}
+  ${linie(85, 52, 85, 26)}${nr(85, 16, 1)}${linie(210, 140, 238, 120)}${nr(248, 112, 2)}${linie(318, 190, 318, 160)}${nr(318, 150, 3)}${linie(440, 231, 440, 205)}${nr(450, 196, 4)}`, breite)
+}
+
+/** Schwimmen oder sinken: Knetkugel sinkt, Knetboot schwimmt */
+export function knetboot({ breite = 120 } = {}) {
+  const becken = (x, inhalt, text) => `<rect x="${x}" y="40" width="170" height="130" fill="none" stroke="#2a2f3a" stroke-width="3"/><rect x="${x + 2}" y="70" width="166" height="98" fill="#bfe0f5"/>${inhalt}${t(x + 85, 192, text, { gr: 13, fett: 700 })}`
+  return svg(420, 205, `${becken(20, '<circle cx="105" cy="152" r="14" fill="#e87f4f" stroke="#2a2f3a" stroke-width="2"/>', 'Kugel aus Knete')}${becken(230, '<path d="M275,60 Q315,92 355,60 Z" fill="#e87f4f" stroke="#2a2f3a" stroke-width="2"/>', 'Boot aus Knete')}`, breite)
+}

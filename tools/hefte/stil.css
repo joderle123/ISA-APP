@@ -248,7 +248,7 @@ table.raster.rf td.k { width: 18mm; text-align: center; }
 .linien { margin-top: 1mm; }
 .linien .zeile { height: var(--zeile); border-bottom: 0.3mm solid var(--linie); position: relative; }
 .linien .zeile .anfang { position: absolute; left: 0; bottom: 1.3mm; font-size: 12.6pt; color: var(--tinte); }
-.linien .zeile .l { position: absolute; left: 0; right: 0; bottom: 1.1mm; font-family: 'Hand'; color: var(--loesung); font-size: 14pt; display: none; line-height: 1.2; }
+.linien .zeile .l { position: absolute; left: 0; right: 0; top: 1.7mm; font-family: 'Hand'; color: var(--loesung); font-size: 14pt; display: none; line-height: var(--zeile); }
 .linien .zeile .anfang + .l { left: auto; position: absolute; }
 .loesungen .linien .zeile .l { display: block; }
 .frage-block { margin-bottom: 3mm; font-size: 12.8pt; }
@@ -409,8 +409,8 @@ table.raster.stellen td { padding: 1.5mm 1mm; }
 .karten-liste { display: grid; gap: 2mm 5mm; margin: 2mm 0 3mm; font-size: 12pt; }
 .karten-liste > div { display: flex; align-items: flex-end; gap: 2mm; }
 .karten-liste b { font-family: 'Lexend'; min-width: 7mm; }
-.karten-liste .linie { flex: 1; border-bottom: 0.3mm solid #9aa3b2; height: 8mm; position: relative; }
-.karten-liste .linie .l { position: absolute; left: 1mm; bottom: 0.6mm; font-family: 'Hand'; color: var(--loesung); font-size: 14pt; visibility: hidden; }
+.karten-liste .linie { flex: 1; border-bottom: 0.3mm solid #9aa3b2; min-height: 8mm; display: flex; align-items: flex-end; }
+.karten-liste .linie .l { padding: 0 0 0.6mm 1mm; line-height: 1.15; font-family: 'Hand'; color: var(--loesung); font-size: 14pt; visibility: hidden; }
 .loesungen .karten-liste .linie .l { visibility: visible; }
 
 /* Zeitleiste */
