@@ -883,6 +883,7 @@ export async function fest(a) {
     await a.sag('moFest', 'Dex ist drinnen. Zeigt seine Wand. Ist jetzt Künstler, oder so.');
   }
   await a.sag('mikaFest', m.mikaGeholfen ? '(sieht dich) Oh. Hi. Du schon wieder. Gut.' : '(leise) Hi.');
+  if (m.sit_laden === 'bezahlt') await a.sag('moFest', '(leise, zu dir) Ich trink nicht. Ich halt sie nur. Wie damals.');
   await a.sag('moFest', 'Mika hat schon. Zwei Schlucke. Mika ist mutig.');
   await a.sag('e', 'Mika lacht zu laut. Die Augen sind glasig.');
   const w = await a.wahl(['„Mika, kommst du mit rein? Noor spielt gleich.“', '„Was ist da drin, Mo?“', '(Einen Schluck. Ist ja Fest.)', '(Umdrehen. Zurück zum Fest.)']);
@@ -1010,6 +1011,8 @@ async function spielKuedes(a) {
 // Kein Mutprobe-Spiel, sondern Alltag: Der Ball liegt oben, der Container steht praktisch da. Fernand hat eine Leiter.
 export async function dach(a) {
   await a.sag('e', 'Hinter der Turnhalle. Pit, ein Fuß schon auf dem Container.');
+  const m = a.m();
+  if (m.pitGeholfen) await a.sag('pitDach', 'Oh, du! Keine Dosen heute, versprochen. Nur ein Ball.');
   await a.sag('pitDach', 'Der Ball ist aufs Dach geflogen! Ich hol ihn. Halt mal fest.');
   await a.sag('e', 'Vom Container bis zur Dachkante: fast zwei Meter. Oben sind Glasfenster.');
   await a.sag('jana', 'Mach doch, Pit! Sonst ist der Ball weg.');
