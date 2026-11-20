@@ -19,8 +19,8 @@ import { baueRequisiten, stelle } from './requisiten.js';
 import { baueNatur } from './natur.js';
 import { STAMM, stammSzene, stammPlan } from './stammgaeste.js';
 import { ORTE_UMLAND, DORF_DEKO, tagTextur, wandbild } from './dorf.js';
-import { SIT_LEUTE, SZENEN, sitSichtbar, sitOffen, SIT_ZONEN, lichtung, laden, graffiti, halle, wette, kiste, vape, link, video, fest, spiel, dach, fundkiste, CHAT_NAMEN, zurueckbringen, sitSaetze, sitRueckblick } from './situationen.js';
-const SIT_FN = { wald: lichtung, laden, graffiti, halle, wette, kiste, vape, link, video, fest, spiel, dach, fundkiste };
+import { SIT_LEUTE, SZENEN, sitSichtbar, sitOffen, SIT_ZONEN, lichtung, laden, graffiti, halle, wette, kiste, vape, link, video, fest, spiel, dach, fundkiste, CHAT_NAMEN, zurueckbringen, sitSaetze, sitRueckblick, sitAntwortenOffen, zaun } from './situationen.js';
+const SIT_FN = { wald: lichtung, laden, graffiti, halle, wette, kiste, vape, link, video, fest, spiel, dach, fundkiste, zaun };
 import { createHund, HUND_ERSTMAL, HUND_MOMENTE } from './hund.js';
 import { ladePerson, namensschild, SITZ } from './figuren.js';
 import { fussSchatten, WOLKEN } from './texturen.js';
@@ -441,12 +441,18 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       for (const [id, sz] of Object.entries(SZENEN)) if (sz.teaser && sitOffen(id, kap, S.merke, sid, uhrJetzt) && !S.merke['sitTeaser_' + id]) { S.merke['sitTeaser_' + id] = true; (S.merke.nachrichten = S.merke.nachrichten || []).push(...(Array.isArray(sz.teaser[0]) ? sz.teaser : [sz.teaser])); break; } }
     // Nachrichten aus Situationen (Gruppe, Sina, Mika …) kommen beim nächsten Schritt aufs Handy
     if (S && S.merke && ui.handyNeu) ui.handyNeu(S.merke.handyNeu || 0);
+    nachrichtenRein();
+    // Nach einem schweren Ausgang: einmal ein leiser Hinweis, dass man noch schreiben kann
+    if (S && risikoAn()) { const o = sitAntwortenOffen(S.merke).find((x) => !S.merke['antwortTipp_' + x.id]);
+      if (o) { S.merke['antwortTipp_' + o.id] = true; setTimeout(() => ui.toast('<b>📱 Du kannst ' + o.an + ' noch schreiben.</b><span>Handy: Taste N</span>'), 9000); sichern(); } }
+  }
+  function tagLabel() { const st = SCHRITTE[S.schritt] || {}; return 'Kapitel ' + (st.kap || 1) + (st.tag ? ' · ' + st.tag : ''); }
+  function nachrichtenRein() {
     const nq = S && S.merke && S.merke.nachrichten;
-    if (nq && nq.length) {
-      S.merke.nachrichten = []; S.merke.handyLog = (S.merke.handyLog || []).concat(nq.map(([von, t]) => { const st = SCHRITTE[S.schritt] || {}; return [von, t, 'Kapitel ' + (st.kap || 1) + (st.tag ? ' · ' + st.tag : '')]; })).slice(-40);
-      S.merke.handyNeu = (S.merke.handyNeu || 0) + nq.length; ui.handyNeu && ui.handyNeu(S.merke.handyNeu);
-      nq.forEach(([von, t], i) => setTimeout(() => ui.toast('<b>📱 ' + von + '</b><span>' + t + '</span>'), 3500 + i * 2600)); sichern();
-    }
+    if (!nq || !nq.length) return;
+    S.merke.nachrichten = []; S.merke.handyLog = (S.merke.handyLog || []).concat(nq.map(([von, t]) => [von, t, tagLabel()])).slice(-40);
+    S.merke.handyNeu = (S.merke.handyNeu || 0) + nq.length; ui.handyNeu && ui.handyNeu(S.merke.handyNeu);
+    nq.forEach(([von, t], i) => setTimeout(() => ui.toast('<b>📱 ' + von + '</b><span>' + t + '</span>'), 3500 + i * 2600)); sichern();
   }
   // Situationen: wer ist gerade da (Kapitel, Schalter „Schwierige Situationen“, was schon passiert ist)
   const risikoAn = () => !ui.einstellungen || ui.einstellungen().risiko !== false;
@@ -458,6 +464,26 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       const v = sitSichtbar(x.d.sitPerson, kap, S.merke || {}, risikoAn(), S.schritt, (SCHRITTE[S.schritt] || {}).id, uhrJetzt);
       x.weg = !v; x.f.group.visible = v; if (x.f.group.children[0]) x.f.group.children[0].visible = v;
       x.h.x = v ? x.p.x : 1e5; x.h.z = v ? x.p.z : 1e5;
+    }
+    // Dex’ Wandbild im Neubau-Flur – nur, wenn man ihn zu Mme Kiesser geschickt hat (ab dem nächsten Kapitel)
+    if (!DORF_DEKO.dexWand) {
+      const cv = document.createElement('canvas'); cv.width = 1024; cv.height = 512; const g = cv.getContext('2d');
+      const hg = g.createLinearGradient(0, 0, 1024, 512); hg.addColorStop(0, '#2b3a55'); hg.addColorStop(1, '#5a3a7a'); g.fillStyle = hg; g.fillRect(0, 0, 1024, 512);
+      for (let i = 0; i < 40; i++) { g.fillStyle = ['#e85d75', '#2fb8a8', '#e9b949', '#9b7bc8'][i % 4]; g.globalAlpha = 0.25; g.beginPath(); g.arc((i * 137) % 1024, (i * 89) % 512, 6 + (i % 5) * 4, 0, 7); g.fill(); }
+      g.globalAlpha = 1;
+      // Bus als Wal (aus Dex’ Skizzenbuch)
+      g.fillStyle = '#2fb8a8'; g.beginPath(); g.ellipse(700, 300, 230, 110, -0.08, 0, 7); g.fill();
+      g.fillStyle = '#e9f6f4'; for (let i = 0; i < 5; i++) g.fillRect(540 + i * 62, 250 - i * 4, 44, 36);
+      g.fillStyle = '#2fb8a8'; g.beginPath(); g.moveTo(920, 290); g.lineTo(1010, 220); g.lineTo(990, 330); g.fill();
+      g.strokeStyle = '#e9f6f4'; g.lineWidth = 6; g.beginPath(); g.moveTo(760, 190); g.quadraticCurveTo(750, 120, 800, 100); g.moveTo(760, 190); g.quadraticCurveTo(770, 120, 720, 100); g.stroke();
+      g.fillStyle = '#1b1b1f'; g.beginPath(); g.arc(560, 380, 26, 0, 7); g.arc(820, 380, 26, 0, 7); g.fill();
+      // fliegende Buchstaben
+      g.font = 'bold 120px Impact, system-ui'; g.lineWidth = 10; g.lineJoin = 'round';
+      [['A', 90, 180, -0.3, '#e85d75'], ['N', 200, 140, 0.2, '#e9b949'], ['N', 310, 200, -0.15, '#9b7bc8'], ['E', 110, 350, 0.25, '#e85d75'], ['X', 220, 390, 0.1, '#2fb8a8'], ['E', 330, 330, -0.2, '#ffffff']].forEach(([t, x, y, r, c]) => { g.save(); g.translate(x, y); g.rotate(r); g.strokeStyle = '#1b1b1f'; g.strokeText(t, 0, 0); g.fillStyle = c; g.fillText(t, 0, 0); g.restore(); });
+      g.font = 'italic bold 30px Georgia, serif'; g.fillStyle = '#ffffff'; g.fillText('Dex · 5ème · mit Mme Kiesser', 40, 480);
+      const tex = new THREE.CanvasTexture(cv); tex.colorSpace = THREE.SRGBColorSpace; tex.anisotropy = 4;
+      const wm = new THREE.Mesh(new THREE.PlaneGeometry(4.0, 2.0), new THREE.MeshLambertMaterial({ map: tex }));
+      wm.position.set(43.87, 1.75, -54.0); wm.rotation.y = -Math.PI / 2; wm.visible = false; scene.add(wm); DORF_DEKO.dexWand = wm;
     }
     // Süße Wolke im WC, solange Ines und Kai dort stehen (Vape-Situation)
     if (!DORF_DEKO.wolke) {
@@ -471,7 +497,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     const m = S.merke || {}, an = (id) => statisten.some((q) => q.d.sitPerson === id && !q.weg);
     if (DORF_DEKO.dosen) DORF_DEKO.dosen.visible = an('lenny');
     if (DORF_DEKO.wolke) DORF_DEKO.wolke.visible = an('kai');
-    if (DORF_DEKO.tagDex) DORF_DEKO.tagDex.visible = an('dexWand') || (['gegangen', 'verstanden', 'reden', 'kiesser', 'papier'].includes(m.sit_graffiti) && m.sitKap_graffiti === kap);
+    if (DORF_DEKO.dexWand) DORF_DEKO.dexWand.visible = m.sit_graffiti === 'kiesser' && kap > (m.sitKap_graffiti || 99);
+    if (DORF_DEKO.tagDex) DORF_DEKO.tagDex.visible = an('dexWand') || (['gegangen', 'verstanden', 'weiter', 'reden', 'kiesser', 'papier'].includes(m.sit_graffiti) && m.sitKap_graffiti === kap);
     // Das Wandbild zeigt, was aus Noors Trommel geworden ist
     const wb = DORF_DEKO.wandbild, var_ = m.graffitiGesagt || ((m.sit_graffiti === 'reden' || m.graffitiGeholfen) && (m.sitKap_graffiti || 0) < kap) ? 'neu'
       : m.sit_graffiti === 'weggemacht' ? 'rosa' : m.sit_graffiti === 'gespruht' ? 'leer' : '';
@@ -1770,9 +1797,18 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     const log = S.merke.handyLog || [];
     const liste = log.length ? [] : [{ system: true, text: 'Noch keine Nachrichten. Ist auch mal schön.' }];
     let tagVorher = null;
-    for (const [von, t, tag] of log) { if (tag && tag !== tagVorher) { liste.push({ system: true, text: tag }); tagVorher = tag; } liste.push({ wer: von, text: t }); }
+    for (const [von, t, tag, ich] of log) { if (tag && tag !== tagVorher) { liste.push({ system: true, text: tag }); tagVorher = tag; } liste.push({ wer: ich ? 'Du → ' + von : von, text: t, ich: !!ich }); }
     S.merke.handyNeu = 0; ui.handyNeu && ui.handyNeu(0); sichern();
-    await ui.handy(liste, { titel: '📱 Nachrichten', sofort: true });
+    const offen = risikoAn() ? sitAntwortenOffen(S.merke) : [];
+    const r = await ui.handy(liste, { titel: '📱 Nachrichten', sofort: true, antworten: offen.map((x) => ({ an: x.an, text: x.text })) });
+    const A = r && r.antwort != null ? offen[r.antwort] : null;
+    if (!A) return;
+    // Geschrieben: zählt wie im Gespräch. Die Antwort kommt etwas später.
+    S.merke['antwort_' + A.id] = true; for (const k of A.setzt || []) S.merke[k] = true;
+    S.merke.handyLog = (S.merke.handyLog || []).concat([[A.an, A.text, tagLabel(), true]]).slice(-40);
+    (S.merke.nachrichten = S.merke.nachrichten || []).push([A.an, A.antwort]);
+    ui.toast('<b>✉️ Gesendet</b><span>an ' + A.an + '</span>'); sichern(); sitSichtbarkeit();
+    setTimeout(() => { if (S) nachrichtenRein(); }, 14000);
   };
   ui.onRaus = () => {
     if (!S || (imGespraech && !probe && !sitLaeuft)) return;

@@ -647,7 +647,8 @@ export function createUI({ root, input, speech }) {
   ui.handy = (nachrichten, opts = {}) => new Promise((ok) => {
     const titel = opts.titel || '7P2 Klasse 💬';
     const k = ebeneAuf('handy', '<div class="ly-h-kopf">' + esc(titel) + '<small>' + (opts.mitglieder ? esc(opts.mitglieder) + ' Mitglieder' : 'online') + '</small></div><div class="ly-h-verlauf" aria-live="polite"></div>' +
-      '<div class="ly-h-tippt" hidden></div><button type="button" class="ly-btn ly-primaer" data-a="weg">Handy weg <kbd>E</kbd></button>');
+      '<div class="ly-h-tippt" hidden></div>' + (opts.antworten && opts.antworten.length ? '<div class="ly-h-antw"><div class="ly-h-antw-t">✍️ Du kannst noch schreiben</div>' + opts.antworten.map((x, j) => '<button type="button" data-antw="' + j + '"><b>An ' + esc(x.an) + '</b><span>„' + esc(x.text) + '“</span></button>').join('') + '</div>' : '') +
+      '<button type="button" class="ly-btn ly-primaer" data-a="weg">Handy weg <kbd>E</kbd></button>');
     const verlauf = k.querySelector('.ly-h-verlauf'), tippt = k.querySelector('.ly-h-tippt');
     const msg = (n) => n.system ? '<div class="ly-h-sys">' + esc(n.text) + '</div>'
       : '<div class="ly-h-msg' + (n.ich ? ' ich' : '') + '"><b>' + esc(n.wer) + '</b>' + (n.bild ? '<div class="ly-h-bild" aria-label="Foto">📷 Foto</div>' : '') + '<span>' + esc(n.text) + '</span>' + (n.reakt ? '<i class="ly-h-reakt">' + esc(n.reakt) + '</i>' : '') + '</div>';
@@ -669,6 +670,7 @@ export function createUI({ root, input, speech }) {
     const taste = (e) => { if (!ebene.contains(k)) { document.removeEventListener('keydown', taste, true); return; } if (e.code === 'KeyE' || e.code === 'Enter' || e.code === 'Space') { e.preventDefault(); e.stopPropagation(); fertig(); } };
     document.addEventListener('keydown', taste, true);
     k.querySelector('[data-a="weg"]').onclick = fertig;
+    k.querySelectorAll('[data-antw]').forEach((b) => { b.onclick = () => { zu = true; clearTimeout(timer); document.removeEventListener('keydown', taste, true); ebeneZu(); ok({ antwort: +b.dataset.antw }); }; });
     if (ui.wenigBewegung || opts.sofort) { alles(); setTimeout(() => { verlauf.scrollTop = verlauf.scrollHeight; }, 30); } else naechste();
   });
 

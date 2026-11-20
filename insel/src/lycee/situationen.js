@@ -8,7 +8,7 @@
 // a.nachricht(von, text) (kommt beim nächsten Schritt aufs Handy) · a.teleport(ort) · a.ton(art)
 
 export const SIT_LEUTE = {
-  dex: { szene: 'wald', wer: 'dex', bleibt: true, dauer: true, name: 'Dex (5ème)', farbe: '#e85d75', aussehen: { modell: 'menschen', stil: 'Casual2', haut: '#e0b48c', haar: '#1b1410', oben: '#2b2b33', unten: '#3a3f4b', schuhe: '#f2f2f2', hoehe: 1.78, kopf: 'cap', kopfFarbe: '#e85d75' }, steht: [-60.8, -101.75, 0, 'sitzt'], ort: 'wald' },
+  dex: { szene: 'wald', wer: 'dex', bleibt: true, dauer: true, wenn: (m, kap) => !(m.sit_graffiti === 'kiesser' && kap > (m.sitKap_graffiti || 99)), name: 'Dex (5ème)', farbe: '#e85d75', aussehen: { modell: 'menschen', stil: 'Casual2', haut: '#e0b48c', haar: '#1b1410', oben: '#2b2b33', unten: '#3a3f4b', schuhe: '#f2f2f2', hoehe: 1.78, kopf: 'cap', kopfFarbe: '#e85d75' }, steht: [-60.8, -101.75, 0, 'sitzt'], ort: 'wald' },
   sina: { szene: 'wald', wer: 'sina', bleibt: true, dauer: true, name: 'Sina (5ème)', farbe: '#9b7bc8', aussehen: { modell: 'frauen', stil: 'Casual', haut: '#c68e64', haar: '#2b1d14', oben: '#9b7bc8', unten: '#2d3748', schuhe: '#2b2b2b', hoehe: 1.66 }, steht: [-57.25, -98.8, -Math.PI / 2, 'sitzt'], ort: 'wald' },
   mo: { szene: 'wald', wer: 'mo', bleibt: true, dauer: true, name: 'Mo (5ème)', farbe: '#2fb8a8', aussehen: { modell: 'menschen', stil: 'Casual', haut: '#a0694a', haar: '#1b1410', oben: '#2fb8a8', unten: '#2d3748', schuhe: '#e9b949', hoehe: 1.74 }, steht: [-58.2, -102.8, -0.7, 'handy'], ort: 'wald' },
   mika: { szene: 'wald', wer: 'mika', name: 'Mika (6ème)', farbe: '#e9b949', aussehen: { modell: 'menschen', stil: 'Casual', haut: '#f1c7a2', haar: '#c9a15a', oben: '#e9b949', unten: '#3a3f4b', schuhe: '#4f88c8', hoehe: 1.58 }, steht: [-62.75, -99.6, Math.PI / 2, 'sitzt'], ort: 'wald' },
@@ -17,6 +17,11 @@ export const SIT_LEUTE = {
   // Bushäuschen Rue du Moulin (Graffiti, ab Kapitel 6)
   dexWand: { szene: 'graffiti', wer: 'dex', name: 'Dex (5ème)', farbe: '#e85d75', aussehen: { modell: 'menschen', stil: 'Casual2', haut: '#e0b48c', haar: '#1b1410', oben: '#2b2b33', unten: '#3a3f4b', schuhe: '#f2f2f2', hoehe: 1.78, kopf: 'cap', kopfFarbe: '#e85d75' }, steht: [5.6, 83.25, Math.PI, 'redet'] },
   moWand: { szene: 'graffiti', wer: 'mo', name: 'Mo (5ème)', farbe: '#2fb8a8', aussehen: { modell: 'menschen', stil: 'Casual', haut: '#a0694a', haar: '#1b1410', oben: '#2fb8a8', unten: '#2d3748', schuhe: '#e9b949', hoehe: 1.74 }, steht: [3.2, 84.7, 2.6, 'handy'] },
+  // Neubau-Flur: Dex malt die große Wand – nur, wenn man ihn zu Mme Kiesser geschickt hat (ab dem nächsten Kapitel; dann nicht mehr an der Lichtung)
+  dexKunst: { szene: 'graffiti', wer: 'dex', bleibt: true, dauer: true, wenn: (m, kap) => m.sit_graffiti === 'kiesser' && kap > (m.sitKap_graffiti || 99), name: 'Dex (5ème)', farbe: '#e85d75', aussehen: null, steht: [42.4, -55.3, Math.PI / 2 - 0.5, ''] },
+  // Waldweg-Anfang hinter der Schule (Schwänzen, Kapitel 9–10, mittags)
+  lennyZaun: { szene: 'zaun', wer: 'lenny', name: 'Lenny (6ème)', farbe: '#3fa66b', aussehen: null, steht: [-64.4, -10.6, 0.2, 'redet'] },
+  romy: { szene: 'zaun', wer: 'romy', name: 'Romy (6ème)', farbe: '#d9693f', aussehen: { modell: 'frauen', stil: 'Casual', haut: '#f0c9a8', haar: '#7a4a2a', oben: '#d9693f', unten: '#3a3f4b', schuhe: '#f2f2f2', hoehe: 1.56 }, steht: [-63.0, -11.2, -0.3, ''] },
   // Hinter der Turnhalle (Streit mit Publikum, ab Kapitel 7)
   jules: { szene: 'halle', wer: 'jules', name: 'Jules (6ème)', farbe: '#d9693f', aussehen: { modell: 'menschen', stil: 'Casual2', haut: '#f1c7a2', haar: '#7a4a2a', oben: '#d9693f', unten: '#2d3748', schuhe: '#2b2b2b', hoehe: 1.7 }, steht: [59.8, -25.7, 1.2, 'redet'] },
   sami: { szene: 'halle', wer: 'sami', name: 'Sami (6ème)', farbe: '#4f88c8', aussehen: { modell: 'menschen', stil: 'Casual', haut: '#c68e64', haar: '#1b1410', oben: '#4f88c8', unten: '#3a3f4b', schuhe: '#f2f2f2', hoehe: 1.52 }, steht: [61.0, -25.4, -1.9, ''] },
@@ -57,11 +62,12 @@ export const SZENEN = {
   graffiti: { frage: 'Wie kann man gesehen werden, ohne etwas kaputtzumachen?', ab: 6, bis: 7, start: { x: 4.7, z: 86.8, yaw: Math.PI }, zone: { x: 4.7, z: 84.6, r: 3.2 }, teaser: ['Dex (Gruppe)', 'Kunst im Bushäuschen, Rue du Moulin 🎨 Kommt vorbei'], titel: ['🎨', 'Die Wand', 'Jede Wand hat schon eine Geschichte. Manchmal eine von jemandem, den du kennst.'] },
   kiste: { frage: 'Warum zeigt ein Spiel, was man „fast“ bekommen hätte?', ab: 6, bis: 8, start: { x: 2.8, z: -2.8, yaw: -2.6 }, teaser: ['Rafa', 'Bist du in der Halle? Ich muss dir was zeigen 🎁'], titel: ['🎁', 'Fast gewonnen', '„Fast“ ist gebaut. Damit du weiterdrückst.'] },
   vape: { frage: 'Woran merkt man, dass einen etwas festhält?', ab: 8, bis: 9, start: { x: 24.5, z: -23.5, yaw: -2.7 }, zone: { x: 23, z: -26.8, r: 2.8 }, teaser: ['Kai', 'WC, große Pause. Ich zeig dir was 😮‍💨'], titel: ['💨', 'Die Wolke', 'Süß riechen heißt nicht harmlos sein.'] },
-  link: { frage: 'Woran erkennt man einen Fake-Link?', ab: 8, bis: 9, start: { x: -6.6, z: -19.0, yaw: -2.58 }, teaser: [['Unbekannt', '🎁 GRATIS 5000 Diamanten! Nur heute! Einloggen: gratis-diamanten.win'], ['Noé', 'Hast du die Diamanten-Nachricht auch?? Bin im CDI 💎']], titel: ['🔗', 'Gratis', 'Wer schickt es? Wo führt es hin? Wer hat was davon?'] },
+  link: { frage: 'Woran erkennt man einen Fake-Link?', ab: 8, bis: 9, start: { x: -6.6, z: -19.0, yaw: -2.58 }, teaser: [['Unbekannt', '🎁 GRATIS 5000 Diamanten! Nur heute! Einloggen: gratis-diamanten.w1n'], ['Noé', 'Hast du die Diamanten-Nachricht auch?? Bin im CDI 💎']], titel: ['🔗', 'Gratis', 'Wer schickt es? Wo führt es hin? Wer hat was davon?'] },
   video: { frage: 'Wie fühlt es sich an, wenn alle über einen lachen – egal wie alt man ist?', ab: 9, bis: 10, start: { x: -12.4, z: -16.6, yaw: -1.13 }, teaser: ['Yanis (Gruppe)', 'HAHA habt ihr das Video von der Lenning gesehen?? 😂 Gang, vor 1.04'], titel: ['🎬', 'Das Video', 'Lachen über jemanden ist leicht. Aufhören ist schwerer.'] },
   fest: { frage: 'Was verpasst man, wenn man um jeden Preis dabei sein will?', ab: 10, bis: 10, start: { x: 60.6, z: -9.5, yaw: Math.PI }, schritt: 'k10_fest', zone: { x: 60.6, z: -13.3, r: 3.2 }, teaser: ['Mo (Gruppe)', 'Sommerfest-Afterparty hinter der Turnhalle 🍾 Psst'], titel: ['🍾', 'Die Wasserflasche', 'Das Fest ist drinnen. Und du gehörst dazu.'] },
   spiel: { frage: 'Woran erkennt man, dass ein Online-Freund nicht ehrlich ist?', ab: 9, bis: 10, start: { x: 4.7, z: 85.2, yaw: Math.PI }, zone: { x: 4.7, z: 83.1, r: 1.5 }, teaser: ['Leo_15 · Spiel-Chat', 'Hey 😊 Du spielst echt gut! Hab dir was geschenkt 🎁'], titel: ['🎮', 'Der Spielfreund', '„Erzähl es keinem“ ist der beste Grund, es jemandem zu erzählen.'] },
   dach: { frage: 'Wann ist Hilfe holen klüger als Mut?', ab: 8, bis: 9, start: { x: 60.8, z: -17.8, yaw: Math.PI }, zone: { x: 61.6, z: -21.6, r: 2.8 }, teaser: ['Pit', 'Ball auf dem Turnhallendach 😭 Hilf mal, hinten beim Container!'], titel: ['🏀', 'Das Dach', 'Die Leiter ist nicht feige. Sie ist klug.'] },
+  zaun: { frage: 'Was steckt manchmal hinter „Ich hab keinen Bock“?', ab: 9, bis: 10, zeit: [11.9, 13.4], start: { x: -63.8, z: -7.4, yaw: Math.PI }, zone: { x: -63.8, z: -9.6, r: 2.2 }, teaser: ['Lenny', 'Nach dem Essen: Waldweg. Sport fällt für uns aus 😎'], titel: ['🚪', 'Die Freistunde', 'Schwänzen – oder steckt etwas anderes dahinter?'] },
   fundkiste: { frage: 'Was hilft, wenn man Angst vor Rache hat?', ab: 7, bis: 8, zeit: [11.9, 13.6], start: { x: 3.6, z: -9.8, yaw: 2.31 }, teaser: ['Jeff', 'Schon wieder ist meine Powerbank weg 😩 Hab ich die verloren??'], titel: ['🎒', 'Die Fundkiste', 'Wer etwas sieht und es sagt, verändert, was jemand über sich glaubt.'] },
   halle: { frage: 'Was ist der Unterschied zwischen Petzen und Hilfe holen?', ab: 7, bis: 7, start: { x: 60.4, z: -20.4, yaw: Math.PI }, zone: { x: 60.4, z: -25.4, r: 5 }, teaser: ['Unbekannt', 'HINTER DER TURNHALLE. JETZT. 👀'], titel: ['📱', 'Der Kreis', 'Wer filmt, baut die Bühne. Wer hilft, baut sie ab.'] },
 };
@@ -72,6 +78,7 @@ export function sitSichtbar(id, kap, m, risiko, schritt, schrittId, uhr = 12) {
   if (P.immer) return true;
   if (!risiko) return false;
   const sz = SZENEN[P.szene]; if (!sz || kap < sz.ab) return false;
+  if (P.wenn && !P.wenn(m, kap)) return false;                 // eigene Bedingung (z. B. Dex malt im Neubau statt an der Lichtung)
   if (sz.schritt && sz.schritt !== schrittId) return false;   // nur an diesem Tag (z. B. Sommerfest)
   if (sz.zeit && (uhr < sz.zeit[0] || uhr > sz.zeit[1])) return false;   // nur zu dieser Uhrzeit (z. B. Mittagspause)
   if (P.unsichtbar) return false;   // tritt nur in der Szene auf (Jeff kommt später dazu)
@@ -81,6 +88,8 @@ export function sitSichtbar(id, kap, m, risiko, schritt, schrittId, uhr = 12) {
   if (m['sit_' + P.szene]) return !!P.bleibt;
   return kap <= (sz.bis || 10);                               // Zeitfenster vorbei: Die Situation ist vorüber, wie im echten Leben
 }
+SIT_LEUTE.dexKunst.aussehen = SIT_LEUTE.dex.aussehen;
+SIT_LEUTE.lennyZaun.aussehen = SIT_LEUTE.lenny.aussehen;
 // Ist die Situation gerade möglich? (Kapitel-Fenster, Tag, noch nicht erlebt)
 export function sitOffen(id, kap, m, schrittId, uhr = 12) {
   const sz = SZENEN[id];
@@ -113,14 +122,14 @@ export async function lichtung(a) {
   if (w === 1) {
     await a.sag('dex', 'Gras. Macht entspannt. Ist ja fast legal.');
     await a.sag('e', '(Fast legal? Für Erwachsene, zu Hause. Für dich: nein.)');
-    await a.sag('e', '(Und dein Kopf wächst noch. Da wirkt es stärker.)');
+    await a.sag('e', '(Dein Gehirn baut sich noch um. Da schadet es mehr.)');
   }
   if (w === 2) await a.sag('dex', 'Später gibt’s nicht. Jetzt oder nie.');
   if (w === 0) await a.sag('dex', 'Boah. Einmal. Merkt doch keiner.');
   await a.sag('mo', '(hebt das Handy) Ich film nicht. Versprochen.');
   await a.sag('e', 'Das rote Licht am Handy ist an.');
   await a.sag('sina', 'Dex, lass doch. Nicht jeder muss.');
-  w = await a.wahl(['„Nein. Ich will das nicht.“', '„Ich hab gleich Training. Die testen da.“', '„Wer hat das Graffiti gemacht? Sieht krass aus.“', '(Ein Zug. Was soll schon passieren?)']);
+  w = await a.wahl(['„Nein. Ich will das nicht.“', '„Ich hab gleich Training. Die testen da.“', '„Wer hat das D3X da hinten gemacht?“', '(Ein Zug. Was soll schon passieren?)']);
   if (w === 3) {
     a.merke('sit_wald', 'mitgemacht');
     await a.blende('Ein paar Minuten später');
@@ -145,15 +154,29 @@ export async function lichtung(a) {
     await a.sag('e', 'Dex erzählt zehn Minuten von seinem Graffiti. Den Joint hat er vergessen.'); await a.sag('sina', '(zwinkert dir zu)');
   }
   // Mika will dazugehören – und dann geht es Mika schlecht
-  await a.sag('e', 'Mika nimmt den Joint. Zieht. Hustet lange.');
+  await a.sag('e', 'Dex hält Mika den Joint hin. Mika zögert. Dann greift Mika zu.');
+  await a.blende('Ein paar Minuten später');
   await a.sag('dex', 'Läuft. Wir sind weg. Ihr habt nix gesehen.');
   await a.sag('e', 'Dex, Mo und Sina gehen. Mika bleibt sitzen. Ganz blass.');
   await a.sag('mika', 'Mir ist komisch. Mein Herz … das rast voll.');
-  const h = await a.wahl(['„Setz dich. Atme mit mir. Vier rein, vier raus.“', '„Warte hier. Ich hol Hilfe.“', '„Selbst schuld.“']);
+  let h = await a.wahl(['„Setz dich. Atme mit mir. Vier rein, vier raus.“', '„Warte hier. Ich hol Hilfe.“', '„Selbst schuld.“']);
+  if (h === 2) {
+    await a.sag('mika', '…');
+    await a.sag('e', 'Du gehst. Mika sitzt allein. Etwas bleibt in deinem Bauch hängen.');
+    const u = await a.wahl(['(Umdrehen. Zurück zu Mika.)', '(Weitergehen.)']);
+    if (u === 1) {
+      a.merke('mikaAllein');
+      a.nachricht('Mika', 'Bin okay. Glaub ich.');
+      return a.m().sit_wald;
+    }
+    await a.sag('du', 'Sorry. Das eben war blöd. Ich hol Hilfe.');
+    h = 1;
+  }
   if (h === 0) {
     await a.sag('e', 'Ihr atmet zusammen. Vier rein. Vier raus. Immer wieder.');
     await a.sag('e', '(Die Atem-Übung aus der Skills-Stunde. Hier draußen hilft sie wirklich.)');
     await a.sag('mika', 'Okay. Es wird … langsamer.');
+    await a.sag('e', '(Wird es nicht besser: sofort Erwachsene holen. Oder 112.)');
     a.merke('mikaGeholfen');
   }
   if (h === 1) {
@@ -162,13 +185,6 @@ export async function lichtung(a) {
     await a.sag('kaya', 'Mika, schau mich an. Du bist sicher. Wir atmen.');
     await a.sag('kaya', 'Wenn jemand umkippt oder schlecht Luft kriegt: 112. Immer.');
     a.merke('mikaGeholfen'); a.merke('kuedesWald');
-  }
-  if (h === 2) {
-    await a.sag('mika', '…');
-    await a.sag('e', 'Du gehst. Mika sitzt allein. Etwas bleibt in deinem Bauch hängen.');
-    a.merke('mikaAllein');
-    a.nachricht('Mika', 'Bin okay. Glaub ich.');
-    return a.m().sit_wald;
   }
   await a.sag('mika', 'Danke. Ich wollte nur dazugehören.');
   const d = await a.wahl(['„Du gehörst auch so dazu.“', '„Kenn ich. Das Gefühl.“', '(Nur nicken.)']);
@@ -188,16 +204,17 @@ async function kuedes(a, art) {
     await a.sag('kaya', 'Wie geht’s dir damit?');
     const w = await a.wahl(['„Weiß nicht.“', '„Mies.“', '„War doch nur einmal.“']);
     await a.sag('kaya', ['Weiß nicht ist eine ehrliche Antwort.', 'Mies ist okay. Das sagt, dass dir was wichtig ist.', 'Kann sein. Und trotzdem darfst du darüber reden.'][w]);
-    await a.sag('kaya', 'Kiffen ist für Jugendliche verboten.'); await a.sag('kaya', 'Dein Gehirn wächst noch. Da wirkt es stärker.');
+    await a.sag('kaya', 'Kiffen ist für Jugendliche verboten.'); await a.sag('kaya', 'Dein Gehirn baut sich noch um. Da schadet es mehr.');
     await a.sag('kaya', 'Das ist kein Moralding. Das ist Biologie.');
     await a.sag('kaya', 'Das Video: Wir reden mit Mo. Löschen ist sein Job, nicht deiner.');
     await a.sag('kaya', 'Und du darfst dich umentscheiden. Jedes Mal.');
+    await a.sag('kaya', 'Meine Tür ist offen. Oder 116 111: anonym, kostenlos.');
   } else {
     await a.sag('kaya', 'Du hast gestern geholfen. Das war nicht leicht.');
-    await a.sag('kaya', 'Mika geht’s besser. Er wollte, dass ich dir das sage.');
-    await a.sag('kaya', 'Und wenn dich das noch beschäftigt: Meine Tür ist offen.');
+    await a.sag('kaya', 'Mika geht’s besser. Mika wollte, dass ich dir das sage.');
+    await a.sag('kaya', 'Wenn dich das noch beschäftigt: Meine Tür ist offen.');
+    await a.sag('kaya', 'Oder 116 111: anonym, kostenlos.');
   }
-  await a.sag('kaya', 'Oder 116 111. Anonym. Kostenlos. Rund um die Uhr.');
 }
 
 // ================= Die Épicerie (Klauen als Mutprobe) =================
@@ -230,8 +247,8 @@ export async function laden(a) {
     await a.sag('mo', 'Du hast BEZAHLT? Lol.');
     const x = await a.wahl(['„Ja. Und?“', '„Klauen ist nicht mein Ding.“']);
     await a.sag('mo', x === 0 ? '…' : 'Hm.');
-    await a.sag('mo', '(leiser) Ehrlich? Ich hab letzte Woche auch nicht geklaut. Nur so getan.');
-    await a.sag('e', 'Der ganze Druck. Gebaut aus einem Satz, der nicht stimmte.');
+    await a.sag('mo', '(leiser) Ehrlich? Ich hab selbst noch nie geklaut. Nur so getan.');
+    await a.sag('e', 'Der ganze Druck. Und dahinter war nichts.');
     a.merke('sit_laden', 'bezahlt');
     return 'bezahlt';
   }
@@ -265,7 +282,7 @@ export async function laden(a) {
     await a.sag('lisette', 'Ich ruf nicht die Polizei. Diesmal nicht.');
     await a.sag('lisette', 'Aber du hilfst mir Samstag eine Stunde. Regale einräumen.');
     const y = await a.wahl(['„Abgemacht.“', '„Muss ich?“']);
-    if (y === 1) await a.sag('lisette', 'Musst du nicht. Dann ruf ich die Schule an. Deine Wahl.');
+    if (y === 1) { await a.sag('lisette', 'Musst du nicht. Aber Wiedergutmachen fühlt sich besser an. Versprochen.'); await a.sag('e', 'Du überlegst lange. Dann nickst du.'); }
     await a.blende('Samstag');
     await a.sag('lisette', 'Du sortierst gut. Ordentlicher als mein Neffe.');
     await a.sag('lisette', 'Komm wieder. Zum Kaufen.');
@@ -278,6 +295,7 @@ export async function laden(a) {
   await a.sag('e', 'Niemand sagt was. Die Glocke bimmelt. Du bist draußen.');
   await a.sag('mo', 'Krass! Hast du’s? Das Video geht in die Gruppe.');
   await a.sag('e', 'Die Gummibärchen wiegen fast nichts. Und trotzdem ziemlich viel.');
+  await a.sag('e', '(Zurückbringen geht noch. Tante Lisette ist jeden Tag da.)');
   a.merke('sit_laden', 'geklaut');
   a.nachricht('Gruppe', '23 Leute haben dein Video gesehen 🔥');
   a.nachricht('Sina', 'Hab das Video gesehen. Alles okay bei dir?');
@@ -303,6 +321,9 @@ export function sitSaetze(id, m) {
     if (m.sit_laden === 'bezahlt' || m.sit_laden === 'gesagt') return ['Gummibärchen wieder? Ich leg dir eins dazu.', 'Du bist hier immer willkommen, Schatz.'];
     return ['Moien! Was darf’s sein?', 'Die Kirsch-Teilchen sind von Rosa. Konkurrenz und Freundin.', 'Kauf nur, was du brauchst. Sagt die Verkäuferin. Ja, wirklich.'];
   }
+  if (id === 'romy') return m.romyGeholfen ? ['Die Umkleide ist jetzt okay. Meistens.', 'Mesenberg hat mit der Klasse geredet. Ohne meinen Namen.'] : ['Hey.', 'Sport? Mal sehen.'];
+  if (id === 'lennyZaun') return m.sit_zaun === 'mitgegangen' ? ['Der Eintrag war es nicht wert. Ehrlich.', 'Nächstes Mal Turnier. Versprochen.'] : ['Streber. … War nur Spaß.', 'Wir haben gewonnen, oder? Also, ihr.'];
+  if (id === 'dexKunst') return ['Mme Kiesser sagt, ich hab ein Auge für Farben. Mir!', 'Der Wal-Bus ist aus meinem Heft. Jetzt ist er vier Meter.', 'Du hast zuerst geredet. Das vergess ich nicht.', 'Die Dosen liegen im Keller. Ganz unten. Brauch ich nicht mehr.'];
   if (id === 'dex') return m.sit_wald === 'mitgemacht' ? ['Na? Wieder da? Heute nur chillen.', 'Das Video? Kam von Mo, nicht von mir.'] : m.sit_wald === 'nein' ? ['Na, Baby? … Kleiner Scherz.', 'Du bist echt so. Okay.'] : ['Wieder da? Setz dich.', 'Hier hört uns keiner. Fast keiner.'];
   if (id === 'sina') return ['Hey. Alles gut bei dir?', 'Dex ist nicht so hart, wie er tut.', 'Ich komm nur her wegen der Ruhe. Ehrlich.'];
   if (id === 'mo' || id === 'moLaden') return m.sit_laden === 'bezahlt' ? ['Du hast echt bezahlt. Hab’s keinem erzählt.', '(steckt das Handy weg) Heute nicht.'] : ['(filmt die Bäume) Content.', 'Willst du ins Video? Nein? Okay.'];
@@ -341,9 +362,12 @@ export async function graffiti(a) {
     const x = await a.wahl(['„Wir machen es weg. Jetzt, solange es frisch ist.“', '„Sag es ihr. Bevor sie es selbst sieht.“', '(Nichts sagen. Er hat es verstanden.)']);
     if (x === 0) {
       await a.sag('dexWand', 'Wegmachen? Mit was denn?');
-      await a.sag('e', 'Mo hat Feuchttücher. Natürlich hat Mo Feuchttücher.');
+      await a.sag('du', 'Fernand hat so ein Zeug. Frische Farbe geht noch ab.');
+      await a.sag('dexWand', '(stöhnt) Dann weiß er, dass ich das war.');
+      await a.sag('e', '(Ja. Aber zusammen wegmachen ist mehr wert als wegrennen.)');
       await a.blende('Zwanzig Minuten später');
       a.deko('tagDex', false);
+      await a.sag('fernand', 'Frisch geht’s noch. Gut, dass ihr gleich gekommen seid.');
       await a.sag('e', 'Das Rot ist fast weg. Die Trommel hat einen rosa Schimmer.');
       await a.sag('dexWand', 'Sieht fast aus wie Absicht.');
       await a.sag('moWand', '(steckt das Handy weg) Das poste ich nicht.');
@@ -386,7 +410,7 @@ export async function graffiti(a) {
     } else {
       await a.sag('dexWand', 'Eben.');
       await a.sag('e', 'Er sprüht weiter. Langsamer als vorher.');
-      a.merke('sit_graffiti', 'verstanden');
+      a.merke('sit_graffiti', 'weiter');
     }
     return;
   }
@@ -431,7 +455,7 @@ export async function halle(a) {
   await a.sag('e', 'Hinter der Turnhalle stehen Leute im Kreis. Alle Handys sind oben.');
   await a.sag('zu', '(rufen) Los! Los! Los!');
   await a.sag('e', 'In der Mitte: Jules und Sami. Sami ist einen Kopf kleiner.');
-  await a.sag('jules', 'Du hast mein Foto in die Gruppe gestellt. Mit dem Schwein-Sticker.');
+  await a.sag('jules', 'Du hast mein Foto in die Gruppe gestellt. Mit dem Esel-Sticker.');
   await a.sag('sami', 'Das war ich nicht! Ehrlich! Ich weiß nicht mal, wie das geht!');
   await a.sag('jules', '(schubst ihn) Lüg nicht.');
   await a.sag('z1', 'Ey, 7ème! Mein Akku stirbt. Film du! Schnell!');
@@ -472,6 +496,7 @@ export async function halle(a) {
       await a.sag('e', 'Ihr geht. Langsam. Niemand hält euch auf.');
       await a.sag('jules', '(ruft) Wir sind noch nicht fertig!');
       await a.sag('e', 'Aber er bleibt stehen.');
+      await a.sag('e', '(Eine Drohung. Die gehört zu einem Erwachsenen.)');
       a.merke('sit_halle', 'sami');
     } else if (x === 1) {
       await a.sag('du', 'Lass ihn in Ruhe, du Idiot!');
@@ -495,7 +520,7 @@ export async function halle(a) {
   await a.sag('sami', 'Danke. Dass du nicht nur zugeschaut hast.');
   a.nachricht('Sami', 'Danke wegen heute. Echt.');
   const m = a.m().sit_halle;
-  if (m === 'hilfe' || m === 'mitte') await kuedesHalle(a, m);
+  if (m === 'hilfe' || m === 'mitte' || m === 'sami') await kuedesHalle(a, m);
 }
 
 async function kuedesHalle(a, art) {
@@ -506,13 +531,17 @@ async function kuedesHalle(a, art) {
     await a.sag('kaya', ['Nur gefilmt. Klingt harmlos. Ist es leider nicht.', 'Stimmt. Zwölf Leute. Und jeder dachte: Ich bin nur einer.', 'Schlecht zeigt: Sami ist dir nicht egal.'][w]);
     await a.sag('kaya', 'Wer filmt, baut die Bühne. Ohne Publikum hört so was oft auf.');
     await a.sag('kaya', 'Sami sieht sich jetzt jeden Tag hinfallen. Auf vielen Handys.');
-    const x = await a.wahl(['(Löschen. Und Sami schreiben: „Sorry. War falsch.“)', '(Nichts machen.)']);
+    const x = await a.wahl(['(Sami schreiben: „Sorry.“ Und melden, damit es gelöscht wird.)', '(Nichts machen.)']);
     if (x === 0) { a.merke('halleGeloescht'); a.nachricht('Sami', 'Okay. Danke, dass du schreibst.'); await a.sag('kaya', 'Das war der schwerere Weg. Danke.'); }
     else await a.sag('kaya', 'Du kannst es dir noch überlegen. Die Tür bleibt offen.');
   } else if (art === 'hilfe') {
     await a.sag('kaya', 'Jules hat „Petze“ zu dir gesagt. Ich weiß.');
     await a.sag('kaya', 'Petzen will jemandem schaden. Hilfe holen will Schaden verhindern.');
     await a.sag('kaya', 'Du hast verhindert. Das ist ein großer Unterschied.');
+  } else if (art === 'sami') {
+    await a.sag('kaya', 'Sami war bei mir. Auch wegen der Drohung.');
+    await a.sag('kaya', 'Ich rede mit Jules. Das müsst ihr nicht allein tragen.');
+    await a.sag('kaya', 'Du hast Sami einfach mitgenommen. Ruhig. Das war stark.');
   } else {
     await a.sag('kaya', 'Du bist dazwischen gegangen. Das war mutig. Und gefährlich.');
     await a.sag('kaya', 'Dein Körper zählt auch. Nie dazwischen, wenn schon geschlagen wird.');
@@ -556,6 +585,7 @@ export async function wette(a) {
     await a.sag('e', 'Gewonnen fühlt sich anders an.');
     await a.blende('In der Nacht');
     await a.sag('e', 'Du liegst wach. Zwei Uhr. Drei Uhr. Das Herz klopft immer noch.');
+    await a.sag('e', '(Herz rast lange? Sag es jemandem. Bei Brustschmerz: 112.)');
     await a.blende('Am Morgen');
     await a.sag('e', 'Mathe. Die Zahlen verschwimmen. Du gähnst zwölfmal.');
     a.nachricht('Pit', 'Hab die ganze Nacht nicht geschlafen. Du?');
@@ -564,8 +594,8 @@ export async function wette(a) {
   }
   if (w === 0) {
     await a.sag('lenny', 'Steht auf allem. Auf Chips steht auch was.');
-    await a.sag('e', 'Eine Dose hat so viel Koffein wie eine große Tasse Kaffee.');
-    await a.sag('e', 'Drei sind für einen Körper wie deinen viel zu viel.');
+    await a.sag('e', 'Große Dose: so viel Koffein wie zwei Tassen Kaffee.');
+    await a.sag('e', 'Für Kinder ist schon eine große Dose zu viel.');
     await a.sag('pit', '(leise) Mir ist eh schon komisch.');
     a.merke('sit_wette', 'gelesen');
   } else {
@@ -637,6 +667,7 @@ export async function kiste(a) {
     a.merke('sit_kiste', 'erklaert');
   } else {
     a.merke('sit_kiste', 'gedrueckt');
+    await a.sag('rafa', 'Meine letzte Gratis-Kiste. Drück du. Bringt Glück.');
     await a.sag('e', 'Du drückst. Lichter. Musik. Dein Bauch kribbelt.');
     await a.sag('e', 'Ein grauer Hut. Aber der goldene war „direkt daneben“.');
     await a.sag('e', '(Noch einmal. Nur einmal. Das Gefühl kennst du jetzt.)');
@@ -644,7 +675,7 @@ export async function kiste(a) {
     await a.sag('rafa', 'Ich drück seit Wochen. Hundertfünfzig Euro sind schon drin.');
   }
   await a.sag('rafa', 'Wenn das rauskommt … Ich kann das keinem sagen.');
-  const h = await a.wahl(['„Komm, wir gehen zusammen zu Herrn Kuedes.“', '„Lösch die Karte aus dem Handy. Heute.“', '„Ruf BEE SECURE an. Anonym und kostenlos.“']);
+  const h = await a.wahl(['„Komm, wir gehen zusammen zu Herrn Kuedes.“', '„Sperr Käufe im Handy. Heute.“', '„Ruf BEE SECURE an. Anonym und kostenlos.“']);
   if (h === 0) {
     await a.sag('rafa', 'Zusammen? … Du kommst echt mit?');
     await a.blende('In der SePAS');
@@ -653,8 +684,8 @@ export async function kiste(a) {
     await a.sag('kaya', 'Und man kann Käufe im Handy sperren. Machen wir gleich.');
     a.merke('kisteKuedes');
   } else if (h === 1) {
-    await a.sag('rafa', 'Die Karte löschen … Dann kann ich nicht mehr einfach drücken.');
-    await a.sag('e', 'Rafa tippt lange. Dann: gelöscht.');
+    await a.sag('rafa', 'Käufe sperren … Dann kann ich nicht mehr einfach drücken.');
+    await a.sag('e', 'Rafa tippt lange. Dann: „Käufe gesperrt.“');
     await a.sag('rafa', 'Und Leon? Die dreißig Euro?');
     await a.sag('du', 'Herr Kuedes hilft. Ohne Ärger. Ich komm mit.');
     await a.sag('rafa', 'Vielleicht. Morgen.');
@@ -666,12 +697,28 @@ export async function kiste(a) {
   a.nachricht('Rafa', 'Heute nicht gedrückt. Tag eins. 💪');
 }
 
+// Später antworten (📱): Nach einem schweren Ausgang kann man noch schreiben – Sorry sagen, Hilfe anbieten, die Wahrheit sagen.
+// Die Antwort kommt etwas später. Nichts wird gelöscht, was passiert ist; aber es geht weiter.
+export const SIT_ANTWORTEN = [
+  { id: 'mika', an: 'Mika', wenn: (m) => m.mikaAllein && !m.mikaFestGeholfen, text: 'Sorry wegen neulich. Ich hätte bleiben sollen. Wie geht’s dir?', antwort: 'Geht wieder. Danke, dass du schreibst. Echt.', setzt: ['mikaSorry'] },
+  { id: 'noor', an: 'Noor', wenn: (m) => m.sit_graffiti === 'gespruht' && !m.graffitiGesagt, text: 'Das Gelbe auf deiner Trommel war ich. Es tut mir leid.', antwort: '… Danke, dass du’s sagst. Hilfst du mir beim Neumalen?', setzt: ['graffitiGesagt'] },
+  { id: 'sami', an: 'Sami', wenn: (m) => m.sit_halle === 'gefilmt' && !m.halleGeloescht, text: 'Sorry, dass ich gefilmt hab. Ich hab das Video gemeldet.', antwort: 'Okay. Das bedeutet mir was. Danke.', setzt: ['halleGeloescht'] },
+  { id: 'kai', an: 'Kai', wenn: (m) => (m.sit_vape === 'gezogen' || m.sit_vape === 'raus') && !m.vapeKuedes, text: 'Geld hab ich keins. Aber ich geh mit dir zu Herrn Kuedes.', antwort: 'Hm. Okay. Morgen. Nur bis zur Tür?', setzt: ['vapeKuedes'] },
+  { id: 'noe', an: 'Noé', wenn: (m) => m.sit_link === 'geprueft' && !m.noeGeholfen, text: 'Sorry wegen „selber schuld“. Soll ich dir beim Passwort helfen?', antwort: 'Ja. Bitte. Bin im CDI. Danke.', setzt: ['noeGeholfen'] },
+  { id: 'jeff', an: 'Jeff', wenn: (m) => m.sit_fundkiste === 'weg' && !m.fundkisteSpaet, text: 'Du bist kein Chaot. Jemand hat sie genommen. Ich sag’s Herrn Kuedes.', antwort: 'WAS? … Ich dachte echt, ich bin so. Danke.', setzt: ['fundkisteSpaet', 'fundkisteWahr'] },
+  { id: 'pit', an: 'Pit', wenn: (m) => (m.sit_dach === 'festgehalten' || m.sit_dach === 'zugeschaut') && !m.dachGeholt, text: 'Wie geht’s deinem Fuß? Sorry, dass ich nix gesagt hab.', antwort: 'Krücken. Nervt. Aber danke, dass du fragst.', setzt: ['pitGefragt'] },
+  { id: 'video', an: 'Gruppe', wenn: (m) => m.videoGeteilt && !m.videoZurueck, text: 'Ich nehm das Video von Mme Lenning raus. War nicht okay.', antwort: 'Hm. Stimmt eigentlich. Ich auch.', setzt: ['videoZurueck'] },
+  { id: 'romy', an: 'Romy', wenn: (m) => (m.sit_zaun === 'zurueck' || m.sit_zaun === 'mitgegangen') && !m.romyGeholfen, text: 'Alles okay bei dir? Wenn was ist: Ich hör zu.', antwort: 'Ehrlich? Die Umkleide. Die lachen da. Kommst du mit zu Mesenberg?', setzt: ['romyGeholfen'] },
+  { id: 'kuedes', an: 'SePAS · Herr Kuedes', wenn: (m) => m.sit_spiel === 'geschickt' && !m.spielKuedes, text: 'Kann ich morgen zu Ihnen kommen? Es geht um einen Chat.', antwort: 'Klar. Morgen früh, ich bin da. Gut, dass du schreibst.', setzt: ['spielSpaet'] },
+];
+export function sitAntwortenOffen(m) { return SIT_ANTWORTEN.filter((x) => !m['antwort_' + x.id] && x.wenn(m)); }
+
 // Rückblick im Journal: was in den Situationen passiert ist – neutral, ohne Noten (für Gespräche in der Klasse)
 const RUECKBLICK = {
   wald: { nein: 'Nein gesagt. Laut.', gegangen: 'Umgedreht und gegangen.', ausrede: 'Mit einer Ausrede raus.', umgelenkt: 'Das Thema gewechselt.', mitgemacht: 'Mitgemacht. Und gespürt, wie es sich anfühlt.' },
   laden: { weiter: 'Weitergegangen.', bezahlt: 'Bezahlt. Vor laufender Kamera.', gesagt: 'Tante Lisette Bescheid gesagt.', leer: 'Mit leeren Händen raus.', erwischt: 'Erwischt. Samstag Regale eingeräumt.', geklaut: 'Geklaut.' },
   wette: { wippe: 'Eine andere Wette vorgeschlagen.', getrunken: 'Drei Dosen. Eine schlaflose Nacht.', gelesen: 'Die kleine Schrift vorgelesen.', nein: 'Nicht gewettet. Nicht gezahlt.', gezahlt: 'Gezahlt, um Ruhe zu haben.' },
-  graffiti: { gegangen: 'Die Dose zurückgegeben.', weggemacht: 'Zusammen weggewischt.', reden: 'Dex ermutigt, mit Noor zu reden.', verstanden: 'Dex zum Nachdenken gebracht.', papier: 'Auf Papier gezeichnet statt an der Wand.', kiesser: 'Dex zur großen Wand im Neubau geschickt.', gespruht: 'Gesprüht.' },
+  graffiti: { gegangen: 'Die Dose zurückgegeben.', weggemacht: 'Zusammen weggewischt.', reden: 'Dex ermutigt, mit Noor zu reden.', verstanden: 'Dex zum Nachdenken gebracht.', weiter: 'Nach dem Heft gefragt. Dex hat trotzdem weitergesprüht.', papier: 'Auf Papier gezeichnet statt an der Wand.', kiesser: 'Dex zur großen Wand im Neubau geschickt.', gespruht: 'Gesprüht.' },
   kiste: { gefragt: 'Gefragt, wie viel Geld schon drin ist.', geliehen: 'Geld geliehen.', erklaert: 'Erklärt, wie „fast“ gebaut ist.', gedrueckt: 'Selbst gedrückt.' },
   vape: { raus: 'Rausgegangen, nichts gesagt.', gezogen: 'Einmal gezogen.', gelesen: 'Die kleine Schrift gelesen.', nein: 'Nein gesagt.' },
   link: { eingeloggt: 'Eingeloggt. Konto weg.', geprueft: 'Den Link geprüft, bevor jemand tippt.' },
@@ -679,6 +726,7 @@ const RUECKBLICK = {
   fest: { getrunken: 'Getrunken. Den Auftritt verpasst.', zurueck: 'Zurück zum Fest.', gefragt: 'Gefragt, was in der Flasche ist.', mitgenommen: 'Mika mit reingenommen.' },
   spiel: { ignoriert: 'Nicht geantwortet.', blockiert: 'Blockiert und gemeldet.', geschickt: 'Ein Selfie geschickt.', gezeigt: 'Herrn Kuedes alles gezeigt.' },
   dach: { leiter: 'Fernand und die Leiter geholt.', festgehalten: 'Den Container festgehalten.', zugeschaut: 'Zugeschaut.' },
+  zaun: { mitgegangen: 'Mitgegangen. Das Turnier verpasst.', zurueck: 'Zurück zur Schule gegangen.', mesenberg: 'Mit Romy zu Herrn Mesenberg gegangen.', begleitet: 'Neben Romy umgezogen. Einfach da gewesen.' },
   fundkiste: { gesagt: '„Leg das zurück“ gesagt. Trotz Angst.', weg: 'Weggegangen.', kuedes: 'Herrn Kuedes Bescheid gesagt.' },
   halle: { gefilmt: 'Gefilmt.', handys: '„Handys runter“ gesagt.', hilfe: 'Hilfe geholt.', sami: 'Sich neben Sami gestellt.', mitte: 'Dazwischen gegangen.', zurueck: 'Einen Schritt zurück gemacht.' },
 };
@@ -695,13 +743,19 @@ export function sitRueckblick(m) {
     if (id === 'wald' && m.mikaGeholfen) t += ' Mika geholfen.';
     if (id === 'wette' && m.pitGeholfen) t += ' Pit geholfen.';
     if (id === 'vape' && m.vapeKuedes) t += ' Kai zur SePAS begleitet.';
-    if (id === 'link' && (m.noeGeholfen || m.linkRepariert)) t += ' Passwort gerettet.';
+    if (id === 'link' && m.linkRepariert) t += ' Dann Passwort geändert und allen Bescheid gesagt.';
+    if (id === 'link' && m.noeGeholfen) t += ' Noé geholfen.';
     if (id === 'video' && m.videoGeteilt) t += ' Und geteilt.';
     if (id === 'video' && m.lenningGesagt) t += ' Mme Lenning Bescheid gesagt.';
     if (id === 'fest' && m.mikaFestGeholfen) t += ' Bei Mika geblieben.';
     if (id === 'fundkiste' && m.fundkisteSpaet) t += ' Später doch die Wahrheit gesagt.';
     if (id === 'fundkiste' && m.fundkisteWahr) t += ' Jeff weiß jetzt: Er ist kein Chaot.';
     if (id === 'dach' && m.dachGeholt) t += ' Dann Fernand geholt.';
+    if (id === 'dach' && m.pitGefragt) t += ' Später nachgefragt.';
+    if (id === 'zaun' && m.romyGeholfen && (m.sit_zaun === 'zurueck' || m.sit_zaun === 'mitgegangen')) t += ' Später Romy geholfen.';
+    if (id === 'wald' && m.mikaSorry) t += ' Später Mika geschrieben: Sorry.';
+    if (id === 'video' && m.videoZurueck) t += ' Dann wieder rausgenommen.';
+    if (id === 'spiel' && m.spielSpaet) t += ' Später Herrn Kuedes geschrieben.';
     if (id === 'spiel' && m.spielKuedes && m.sit_spiel !== 'gezeigt') t += ' Dann Herrn Kuedes Bescheid gesagt.';
     out.push({ t: sz.titel[0] + ' ' + sz.titel[1], w: t });
   }
@@ -731,6 +785,7 @@ export async function vape(a) {
     await a.sag('e', 'Dein Herz klopft schneller. Das ist das Nikotin.');
     await a.sag('kai', 'Siehst du? Nichts passiert.');
     await a.sag('e', 'In der nächsten Stunde denkst du dran. Zweimal. Komisch.');
+    await a.sag('e', '(Nikotin will immer mehr. Hilfe gibt es bei Herrn Kuedes.)');
     a.nachricht('Kai', 'Hast du Geld? Meins ist leer. Brauch ein neues.');
     return;
   }
@@ -751,7 +806,7 @@ export async function vape(a) {
   await a.sag('kai', '(leise) Ehrlich? Ich wach nachts auf und will dran ziehen.');
   const h = await a.wahl(['„Klingt, als hätte das Ding dich im Griff.“', '„Herr Kuedes hilft. Zuerst hört er zu.“', '„Hör doch einfach auf.“']);
   if (h === 0) {
-    await a.sag('kai', '… Ja. Vielleicht. Mit zwölf. Krass, oder?');
+    await a.sag('kai', '… Ja. Vielleicht. Mit dreizehn. Krass, oder?');
     await a.sag('e', '(Das hat Kai noch keinem gesagt. Jetzt dir.)');
     await a.sag('kai', 'Ich probier’s. Weniger. Erstmal.');
   } else if (h === 1) {
@@ -767,13 +822,14 @@ export async function vape(a) {
     await a.sag('e', 'Kai lacht. Es klingt nicht lustig.');
     await a.sag('e', '(Einfach ist es nicht. Das weiß Kai besser als du.)');
   }
+  if (h !== 1) await a.sag('e', '(Allein aufhören ist schwer. Herr Kuedes hilft. Oder 116 111.)');
   a.nachricht('Ines', 'Ich hab meins weggeworfen. Nur dass du’s weißt.');
 }
 
 // ================= Gratis (Fake-Link und gehacktes Konto, ab Kapitel 8 – passt zu „Fake oder echt?“) =================
 export async function link(a) {
   await a.sag('noe', 'Hast du die Nachricht auch? Gratis-Diamanten! Fünftausend!');
-  await a.sag('e', 'Ein Link: „gratis-diamanten.win“. Ein Countdown: noch 2:59.');
+  await a.sag('e', 'Ein Link: „gratis-diamanten.w1n“. Ein Countdown: noch 2:59.');
   await a.sag('noe', 'Man muss sich nur mit dem Spielkonto einloggen. Schnell!');
   const w = await a.wahl(['„Wer hat das geschickt? Kennst du den?“', '„Wo führt der Link hin? Lass uns schauen.“', '(Auch einloggen. Fünftausend!)', '„Wer hat was davon, dass er Diamanten verschenkt?“']);
   if (w === 2) {
@@ -790,6 +846,7 @@ export async function link(a) {
       await a.sag('e', 'Dann eine Nachricht an alle: „Gehackt. Das war nicht ich. Sorry.“');
       a.nachricht('Gruppe', 'Ah okay, dachte schon 😅 Passiert');
       await a.sag('e', '(Es dauert, bis alle es glauben. Aber sie glauben es.)');
+      await a.sag('e', '(Und: Zwei-Faktor-Schutz an. Dann reicht ein Passwort allein nicht.)');
       a.merke('linkRepariert');
     } else {
       await a.sag('e', 'Du sagst nichts. Das Konto schreibt weiter. Zwei Leute antworten nicht mehr.');
@@ -799,10 +856,10 @@ export async function link(a) {
   }
   if (w === 0) {
     await a.sag('noe', '(scrollt) … „Diamanten_Support_Official“. Keine Ahnung, wer das ist.');
-    await a.sag('e', '(Kein Name. Kein Foto. Nur Eile.)');
+    await a.sag('e', '(Kein echter Name. Kein Foto. Nur Eile.)');
   } else if (w === 1) {
     await a.sag('e', 'Ihr haltet den Finger auf den Link, ohne zu tippen.');
-    await a.sag('e', 'Die Adresse ist komisch. Nicht die vom Spiel. Mit „.win“ am Ende.');
+    await a.sag('e', 'Die Adresse ist komisch. Nicht die vom Spiel. „.w1n“ – mit einer Eins.');
   } else {
     await a.sag('noe', '… Niemand verschenkt was. Außer Oma.');
     await a.sag('e', '(Wer hat was davon? Wer dein Passwort hat, hat dein Konto.)');
@@ -814,7 +871,8 @@ export async function link(a) {
   if (h === 2) {
     await a.sag('noe', '… Danke auch.');
     await a.sag('e', 'Noé dreht sich weg. Das Handy zittert in der Hand.');
-    await a.sag('e', '(Reinfallen kann jeder. Auch du. Nächstes Mal.)');
+    await a.sag('e', '(Reinfallen kann jeder. Auch du. Darum hilft man sich.)');
+    await a.sag('e', 'Später steht Noé im CDI vor dem Zettel von BEE SECURE. Allein.');
     return;
   }
   await a.sag('e', h === 0 ? 'Ihr ändert das Passwort. Lang. Nur für dieses Konto.' : 'Noé schreibt: „Ich wurde gehackt. Das war nicht ich.“');
@@ -872,7 +930,7 @@ export async function video(a) {
     a.merke('lenningGesagt');
     await a.sag('lenning', '(bleibt stehen) … Ich weiß. Eine Kollegin hat es mir gezeigt.');
     await a.sag('lenning', 'Ich hab gelacht. Später. Am Anfang nicht.');
-    await a.sag('lenning', 'Danke, dass du es mir sagst. Und nicht nur weiterschickst.');
+    await a.sag('lenning', 'Danke, dass du es mir sagst. Das braucht Mut.');
     await a.sag('yanis', '(sehr leise) … Ich lösch es. Heute noch.');
     a.nachricht('Yanis', 'Gelöscht. War nicht so witzig wie gedacht.');
   } else if (a.m().sit_video === 'gespiegelt' || a.m().sit_video === 'gefragt') {
@@ -887,13 +945,13 @@ export async function fest(a) {
   await a.sag('e', 'Hinter der Turnhalle. Die Musik vom Fest wummert durch die Wand.');
   await a.sag('moFest', '(hält eine Wasserflasche) Sommerfest-Spezial. Frag nicht, woher.');
   await a.sag('e', 'Es riecht nicht nach Wasser.');
-  if (['nein', 'umgelenkt', 'gegangen'].includes(m.sit_wald) || ['kiesser', 'papier', 'reden', 'weggemacht'].includes(m.sit_graffiti)) {
+  if (m.sit_graffiti === 'kiesser') {
     await a.sag('e', 'Dex ist nicht da. Mo zuckt mit den Schultern.');
     await a.sag('moFest', 'Dex ist drinnen. Zeigt seine Wand. Ist jetzt Künstler, oder so.');
-  }
+  } else if (m.sit_wald || m.sit_graffiti) await a.sag('moFest', 'Dex? Keine Ahnung. Heute nicht da.');
   await a.sag('mikaFest', m.mikaGeholfen ? '(sieht dich) Oh. Hi. Du schon wieder. Gut.' : '(leise) Hi.');
   if (m.sit_laden === 'bezahlt') await a.sag('moFest', '(leise, zu dir) Ich trink nicht. Ich halt sie nur. Wie damals.');
-  await a.sag('moFest', 'Mika hat schon. Zwei Schlucke. Mika ist mutig.');
+  await a.sag('moFest', 'Mika hat schon viel getrunken. Mika ist mutig.');
   await a.sag('e', 'Mika lacht zu laut. Die Augen sind glasig.');
   const w = await a.wahl(['„Mika, kommst du mit rein? Noor spielt gleich.“', '„Was ist da drin, Mo?“', '(Einen Schluck. Ist ja Fest.)', '(Umdrehen. Zurück zum Fest.)']);
   if (w === 2) {
@@ -902,6 +960,10 @@ export async function fest(a) {
     await a.sag('e', 'Es brennt im Hals. Dann wird dir warm. Dann schlecht.');
     await a.sag('e', 'Noors Trommel hörst du nur noch von weit weg.');
     await a.sag('e', 'Du verpasst den Auftritt. Den, auf den alle gewartet haben.');
+    await a.blende('Kurz danach');
+    await a.sag('kaya', 'Hier seid ihr. Hinsetzen. Wasser. Ich bleib da.');
+    await a.sag('kaya', 'Mika, schau mich an. … Ich ruf 112. Sicher ist sicher.');
+    await a.sag('kaya', '(zu dir) Kein Verhör jetzt. Morgen reden wir. In Ruhe.');
     a.nachricht('Gilles', 'Wo warst du? Erste Reihe war frei. Für dich.');
   } else if (w === 3) {
     a.merke('sit_fest', 'zurueck');
@@ -917,12 +979,16 @@ export async function fest(a) {
     await a.sag('mikaFest', '(steht auf, wackelig) Ich wollte eigentlich nur nicht allein sein.');
     await a.blende('Im Hof. Die Lampions brennen.');
     await a.sag('e', 'Ihr holt Wasser. Echtes. Mika trinkt zwei Becher.');
+    await a.sag('e', '(Wasser macht nicht nüchtern. Ein Erwachsener muss es wissen.)');
+    await a.sag('e', 'Du winkst Herrn Kuedes. Er setzt sich zu Mika. Ganz ruhig.');
+    await a.sag('kaya', 'Ich bleib bei dir, Mika. Kein Ärger. Nur aufpassen.');
     await a.sag('e', 'Dann spielt Noor. Gilles singt. Mika klatscht. Zu früh. Egal.');
     a.nachricht('Mika', 'Bestes Fest. Wegen dir. Echt jetzt.');
     return;
   }
   if (w === 2) return;
   // Mika geht es schlecht
+  if (w === 3) await a.sag('e', 'Nach ein paar Schritten drehst du dich um.');
   await a.sag('e', 'Mika setzt sich auf den Boden. Dann legt Mika sich hin.');
   await a.sag('mikaFest', '(lallt) Alles dreht sich … mir ist so schlecht.');
   await a.sag('moFest', 'Oh nein. Ich bin weg. Ich war nie hier.');
@@ -930,7 +996,7 @@ export async function fest(a) {
   const h = await a.wahl(['(Bei Mika bleiben. Laut nach einem Erwachsenen rufen.)', '(Zum Fest rennen. Herrn Kuedes holen.)', '(Auch gehen. Nicht dein Problem.)']);
   if (h === 2) {
     await a.sag('e', 'Du gehst ein paar Schritte. Dann bleibst du stehen.');
-    await a.sag('e', 'Mika liegt da. Allein. Mit einem Bauch voller Wodka.');
+    await a.sag('e', 'Mika liegt da. Allein. Mit viel zu viel Alkohol.');
     const z = await a.wahl(['(Umdrehen. Zurück zu Mika.)', '(Weitergehen.)']);
     if (z === 1) {
       await a.sag('e', 'Fernand findet Mika zehn Minuten später. Er ruft 112.');
@@ -944,7 +1010,10 @@ export async function fest(a) {
   await a.sag('kaya', 'Gut, dass du da bist. Mika, hörst du mich?');
   await a.sag('mikaFest', '(murmelt) … Ja.');
   await a.sag('kaya', 'Auf die Seite. So. Nicht allein lassen. Ich bleib jetzt hier.');
-  await a.sag('kaya', 'Wenn jemand nicht mehr richtig wach wird: sofort 112.');
+  await a.sag('kaya', 'Ich ruf jetzt 112. Bei Kindern und Alkohol: immer.');
+  await a.sag('e', 'Herr Kuedes telefoniert. Ruhig. Wo. Wie alt. Was getrunken.');
+  await a.blende('Zehn Minuten später');
+  await a.sag('e', 'Der Krankenwagen ist da. Mika ist wach. Müde. In guten Händen.');
   await a.sag('kaya', '(zu dir) Du hast heute auf jemanden aufgepasst. Das vergisst man nicht.');
   a.merke('mikaFestGeholfen');
   a.nachricht('Mika', 'Danke. Ich weiß nicht mehr viel. Aber dass du da warst.');
@@ -966,6 +1035,7 @@ export async function spiel(a) {
     const x = await a.wahl(['(Leo blockieren und melden.)', '(Später vielleicht antworten.)']);
     if (x === 0) { await spielBlock(a); return; }
     a.merke('sit_spiel', 'ignoriert');
+    await a.sag('e', '(Schreibt Leo weiter: Screenshot. Und einem Erwachsenen zeigen.)');
     a.nachricht('Leo_15', 'Hallo?? Bist du sauer? 🥺');
     return;
   }
@@ -1009,9 +1079,10 @@ async function spielKuedes(a) {
   await a.blende('In der SePAS');
   await a.sag('kaya', 'Danke, dass du mir das zeigst. Du hast nichts falsch gemacht.');
   await a.sag('kaya', '„Erzähl es keinem“ ist der beste Grund, es jemandem zu erzählen.');
-  await a.sag('kaya', 'Wir sichern die Screenshots. Dann blockieren und melden wir. Zusammen.');
+  await a.sag('kaya', 'Wir sichern, was da ist. Dann melden wir es. Auch der Polizei.');
+  await a.sag('kaya', 'Ein Erwachsener, der so schreibt, macht etwas Verbotenes. Nicht du.');
   await a.sag('kaya', 'Wer „15“ schreibt, kann viel älter sein. Das sieht man nicht.');
-  await a.sag('kaya', 'Treffen mit Leuten aus dem Internet: nie allein, nie heimlich.');
+  await a.sag('kaya', 'Treffen mit Leuten aus dem Internet: nur mit einem Erwachsenen dabei.');
   await a.sag('kaya', 'Wenn dich so was beschäftigt: 116 111. Oder BEE SECURE: 8002 1234.');
   a.merke('spielKuedes');
 }
@@ -1035,7 +1106,7 @@ export async function dach(a) {
     const x = await a.wahl(['„Ich hol Fernand. Das muss jemand anschauen.“', '„Okay. Wir sagen nichts.“']);
     if (x === 1) {
       await a.sag('e', 'Pit humpelt nach Hause. Am nächsten Tag kommt er mit Krücken.');
-      await a.sag('e', 'Bänderriss. Der Arzt sagt: Hätte man gleich kühlen müssen.');
+      await a.sag('e', 'Bänderriss. Der Arzt sagt: Früher kommen wäre besser gewesen.');
       a.nachricht('Pit', 'Sechs Wochen kein Sport. Egal. War meine Idee.');
       return;
     }
@@ -1089,7 +1160,8 @@ export async function fundkiste(a) {
       await a.sag('e', 'Dein Handy summt. Unbekannt: „Pass auf, was du sagst.“');
       await a.sag('e', '(Eine Drohung. Die gehört zu Herrn Kuedes. Nicht nachts in deinen Kopf.)');
       const y = await a.wahl(['(Herrn Kuedes die Nachricht zeigen.)', '(Für dich behalten.)']);
-      if (y === 0) await kuedesFund(a);
+      if (y === 0) await kuedesFund(a, true);
+      else await a.sag('e', '(Du kannst sie ihm morgen noch zeigen. Sie bleibt im Handy.)');
       return;
     }
   }
@@ -1104,7 +1176,7 @@ export async function fundkiste(a) {
     if (y === 1) { await a.sag('e', 'Jeff sucht weiter. Jede Woche. Und glaubt, es liegt an ihm.'); return; }
     a.merke('fundkisteSpaet');
     await kuedesFund(a);
-    await jeffWahrheit(a);
+    await jeffWahrheit(a, 'geschrieben');
     return;
   }
   // „Okay“ – und dann zu Herrn Kuedes
@@ -1112,22 +1184,107 @@ export async function fundkiste(a) {
   await a.sag('tom', 'Gut so.');
   await a.sag('e', 'Er geht. Dein Herz rast. Du gehst direkt zur SePAS.');
   await kuedesFund(a);
-  await jeffWahrheit(a);
+  await jeffWahrheit(a, 'kuedes');
 }
-async function kuedesFund(a) {
+async function kuedesFund(a, drohung) {
   await a.blende('In der SePAS');
-  await a.sag('kaya', 'Danke. Ich kümmere mich. Niemand erfährt, von wem ich es weiß.');
+  await a.sag('kaya', drohung ? 'Danke, dass du mir die Nachricht zeigst. Ich rede mit ihm.' : 'Danke. Ich kümmere mich. Deinen Namen nenne ich nicht.');
   await a.sag('kaya', 'Angst vor Rache ist normal. Genau dafür gibt es uns.');
   await a.sag('kaya', 'Wenn er dir droht: sofort sagen. Du musst das nicht allein tragen.');
   a.merke('fundkisteKuedes');
 }
-async function jeffWahrheit(a) {
-  await a.blende('Später, an der Fundkiste');
-  await a.sag('jeffSit', 'Meine Powerbank! Mit dem Dino! Wo war die?');
-  const x = await a.wahl(['„Jemand hat sie genommen. Du hast sie nicht verloren.“', '„In der Fundkiste.“']);
+async function jeffWahrheit(a, art) {
+  await a.blende(art ? 'Am nächsten Tag' : 'Später, an der Fundkiste');
+  if (art) await a.sag('e', 'Herr Kuedes hat die Powerbank zurückgeholt. Jeff hält sie fest.');
+  if (art === 'geschrieben') {
+    await a.sag('jeffSit', 'Du hattest recht. Genommen. Nicht verloren.');
+    await a.sag('jeffSit', 'Ich dachte immer, ich bin so. Einer, der alles verliert.');
+    await a.sag('jeffSit', 'Das stimmt ja gar nicht. Krass.');
+    a.merke('fundkisteWahr');
+    return;
+  }
+  await a.sag('jeffSit', art ? 'Meine Powerbank ist wieder da! Wo war die bloß?' : 'Meine Powerbank! Mit dem Dino! Wo war die?');
+  const x = await a.wahl(['„Jemand hat sie genommen. Du hast sie nicht verloren.“', art ? '„Hauptsache, sie ist wieder da.“' : '„In der Fundkiste.“']);
   if (x === 1) { await a.sag('jeffSit', 'Typisch ich. Ich verlier echt alles.'); await a.sag('e', '(Tust du nicht, Jeff. Aber das weiß er nicht.)'); return; }
   await a.sag('jeffSit', '… Genommen? Nicht verloren?');
   await a.sag('jeffSit', 'Ich dachte immer, ich bin so. Einer, der alles verliert.');
   await a.sag('jeffSit', 'Das stimmt ja gar nicht. Krass.');
   a.merke('fundkisteWahr');
+}
+
+// ================= Die Freistunde (Waldweg hinter der Schule, Kapitel 9–10, mittags) =================
+// Lenny will Sport schwänzen. Romy geht mit – aber nicht aus Langeweile: In der Umkleide wird sie ausgelacht.
+export async function zaun(a) {
+  await a.sag('e', 'Am Anfang vom Waldweg. Lenny und Romy, die Rucksäcke auf.');
+  await a.sag('lennyZaun', 'Da bist du ja. Gleich ist Sport. Wir gehen nicht.');
+  await a.sag('lennyZaun', 'Épicerie, dann Lichtung. Keiner merkt was. Kommst du?');
+  await a.sag('romy', '(schaut auf ihre Schuhe) Komm halt mit.');
+  await a.sag('e', 'Hinter euch klingelt es. Die Pause ist gleich vorbei.');
+  const w = await a.wahl(['„Und wenn die das merken? Die zählen doch.“', '„Romy, warum willst du eigentlich weg?“', '(Mitgehen. Einmal ist keinmal.)', '„Nee. Heute ist Basketball. Das will ich nicht verpassen.“']);
+  if (w === 2) {
+    a.merke('sit_zaun', 'mitgegangen');
+    await a.blende('Eine Stunde später');
+    await a.sag('e', 'Die Lichtung ist leer. Lenny wirft Steine. Romy schaut aufs Handy.');
+    await a.sag('e', 'Es ist … langweilig. Du denkst die ganze Zeit an die Schule.');
+    await a.blende('Am nächsten Morgen');
+    await a.sag('hoffmann', 'Ihr drei wart gestern weg. Ich hab mir Sorgen gemacht.');
+    await a.sag('hoffmann', 'Wenn jemand fehlt, wissen wir nicht, ob etwas passiert ist.');
+    await a.sag('hoffmann', 'Das gibt einen Eintrag. Und ein Gespräch. Kein Drama.');
+    await a.sag('e', 'Romy sitzt ganz hinten. Sie sagt kein Wort.');
+    a.nachricht('Gilles', 'Wo warst du?? Wir haben das Turnier gewonnen! 🏀');
+    a.nachricht('Romy', 'Sorry. Ich wollte nur nicht in die Umkleide.');
+    return;
+  }
+  if (w === 0) {
+    await a.sag('lennyZaun', 'Die zählen nie richtig. Chill.');
+    await a.sag('e', '(Doch. Fehlt einer, wird gesucht. So ist das hier.)');
+  }
+  if (w === 3) {
+    await a.sag('lennyZaun', 'Basketball. Wow. Streber.');
+    await a.sag('e', 'Romy sagt nichts. Aber sie bleibt stehen.');
+  }
+  if (w !== 1) {
+    const x = await a.wahl(['„Romy? Du siehst nicht aus, als hättest du Lust.“', '(Zurück zur Schule gehen.)']);
+    if (x === 1) {
+      a.merke('sit_zaun', 'zurueck');
+      await a.sag('lennyZaun', '(ruft) Streber!');
+      await a.sag('e', 'Du gehst zurück. Allein. Hinter dir wird es still.');
+      await a.sag('e', '(Romy sah nicht aus wie jemand, der Spaß haben will.)');
+      a.nachricht('Romy', 'Egal. Hat eh keiner gemerkt.');
+      return;
+    }
+  }
+  await a.sag('romy', '(leise) In der Umkleide lachen die immer. Über mich.');
+  await a.sag('romy', 'Letztes Mal haben die mein T-Shirt rumgeworfen. Alle haben gefilmt.');
+  await a.sag('e', '(Es geht nicht um Sport. Es geht um die Umkleide.)');
+  await a.sag('lennyZaun', '(still) … Wusst ich nicht.');
+  const h = await a.wahl(['„Wir sagen es Herrn Mesenberg. Ich bleib dabei.“', '„Zieh dich neben mir um. Dann bist du nicht allein.“', '„Dann geh halt. Ist deine Sache.“']);
+  if (h === 2) {
+    a.merke('sit_zaun', 'zurueck');
+    await a.sag('romy', 'Ja. Eben.');
+    await a.sag('e', 'Romy geht den Waldweg runter. Lenny zögert. Dann geht er mit.');
+    await a.sag('e', 'Du gehst zurück. Es klingelt. Zwei Plätze bleiben leer.');
+    a.nachricht('Romy', 'Egal. Hat eh keiner gemerkt.');
+    return;
+  }
+  await a.sag('lennyZaun', '(seufzt) Na gut. Ich komm auch. Ohne euch ist’s eh blöd.');
+  if (h === 0) {
+    a.merke('sit_zaun', 'mesenberg');
+    await a.blende('Vor der Turnhalle');
+    await a.sag('mesenberg', 'Danke, dass ihr kommt. Das ist ernst. Ich kümmere mich.');
+    await a.sag('mesenberg', 'Romy, du ziehst dich heute im Lehrerraum um.');
+    await a.sag('mesenberg', 'Und morgen rede ich mit der Klasse. Ohne deinen Namen.');
+    await a.sag('mesenberg', 'Filmen in der Umkleide geht gar nicht. Nirgends.');
+  } else {
+    a.merke('sit_zaun', 'begleitet');
+    await a.blende('In der Umkleide');
+    await a.sag('e', 'Jemand kichert. Du schaust einfach zurück. Ruhig.');
+    await a.sag('e', 'Das Kichern hört auf. Manchmal reicht einer, der daneben steht.');
+    await a.sag('e', '(Hört es nicht auf: Herrn Mesenberg sagen. Das ist kein Petzen.)');
+  }
+  a.merke('romyGeholfen');
+  await a.blende('In der Sporthalle');
+  await a.sag('e', 'Basketball. Romy trifft einmal. Lenny jubelt am lautesten.');
+  await a.sag('romy', '(außer Atem) Danke. Für heute. Echt.');
+  a.nachricht('Romy', 'War der beste Sport seit Monaten. Kein Witz.');
 }

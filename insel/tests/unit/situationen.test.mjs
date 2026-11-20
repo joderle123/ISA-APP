@@ -3,9 +3,9 @@
 // Aufruf: node --test tests/unit/situationen.test.mjs
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { SIT_LEUTE, SZENEN, SIT_ZONEN, sitSichtbar, sitOffen, sitRueckblick, sitSaetze, lichtung, laden, graffiti, halle, wette, kiste, vape, link, video, fest, spiel, dach, fundkiste, zurueckbringen } from '../../src/lycee/situationen.js';
+import { SIT_LEUTE, SZENEN, SIT_ZONEN, sitSichtbar, sitOffen, sitRueckblick, sitSaetze, lichtung, laden, graffiti, halle, wette, kiste, vape, link, video, fest, spiel, dach, fundkiste, zurueckbringen, SIT_ANTWORTEN, sitAntwortenOffen, zaun } from '../../src/lycee/situationen.js';
 
-const FN = { wald: lichtung, laden, graffiti, halle, wette, kiste, vape, link, video, fest, spiel, dach, fundkiste };
+const FN = { wald: lichtung, laden, graffiti, halle, wette, kiste, vape, link, video, fest, spiel, dach, fundkiste, zaun };
 
 // Skript-API zum Testen: Wahlen nach Liste (danach immer 0), merkt alles mit
 function api(wahlen = [], m = {}) {
@@ -19,7 +19,7 @@ function api(wahlen = [], m = {}) {
 }
 
 test('Sprecher in den Szenen sind bekannt', async () => {
-  const bekannt = new Set([...Object.keys(SIT_LEUTE), 'e', 'du', 'zu', 'kaya', 'mesenberg', 'lenning', 'fernand', 'noor', 'tiago', 'leo']);
+  const bekannt = new Set([...Object.keys(SIT_LEUTE), 'e', 'du', 'zu', 'kaya', 'mesenberg', 'lenning', 'fernand', 'noor', 'tiago', 'leo', 'hoffmann']);
   for (const [id, fn] of Object.entries(FN)) for (let a = 0; a < 4; a++) for (let b = 0; b < 3; b++) {
     const x = api([a, b, b, b]);
     const A = { ...x, m: () => x.mErg };
@@ -107,4 +107,42 @@ test('Uhrzeit-Fenster: Die Fundkiste gibt es nur mittags, Jeff tritt nur in der 
   assert.equal(sitSichtbar('tom', 7, {}, true, 0, 'x', 12.4), true);
   assert.equal(sitSichtbar('tom', 7, {}, true, 0, 'x', 9.9), false);
   assert.equal(sitSichtbar('jeffSit', 7, {}, true, 0, 'x', 12.4), false);
+});
+
+test('Sicherheit: Hilfe ist in den schweren Ausgängen da, keine falschen Versprechen', async () => {
+  const lauf = async (fn, wahlen, m = {}) => { const x = api(wahlen, m); await fn({ ...x, m: () => x.mErg }); return { text: x.log.map(([, t]) => t).join(' '), m: x.mErg }; };
+  // Sommerfest: Wer Mika findet, erlebt den 112-Anruf – auch, wer selbst getrunken hat
+  for (const w of [[1, 0], [1, 1], [3, 0], [2]]) assert.match((await lauf(fest, w)).text, /112/, 'Fest ohne 112 bei Wahl ' + w);
+  // Wald: Auch nach „Selbst schuld“ kann man umdrehen und Hilfe holen
+  const r = await lauf(lichtung, [0, 0, 2, 0]);
+  assert.equal(r.m.mikaGeholfen, true); assert.equal(r.m.kuedesWald, true);
+  // 116 111 ist nicht rund um die Uhr erreichbar
+  for (const [id, fn] of Object.entries(FN)) for (let a = 0; a < 4; a++) assert.doesNotMatch((await lauf(fn, [a, 0, 0, 0])).text, /rund um die Uhr/i, id);
+  // Fake-Link: Adresse, die es nicht geben kann
+  assert.doesNotMatch(JSON.stringify(SZENEN.link.teaser), /\.win\b/);
+  // Fundkiste: Jeff bekommt die Powerbank nur zurück, wenn jemand sie zurückgeholt hat
+  assert.match((await lauf(fundkiste, [2, 0])).text, /zurückgeholt/);
+});
+
+test('Später antworten (Handy): passende Wiedergutmachung, nur einmal, kurze Sätze', () => {
+  assert.deepEqual(sitAntwortenOffen({}), [], 'ohne schweren Ausgang nichts zu schreiben');
+  const m = { mikaAllein: true, sit_halle: 'gefilmt', sit_fundkiste: 'weg' };
+  assert.deepEqual(sitAntwortenOffen(m).map((x) => x.id), ['mika', 'sami', 'jeff']);
+  assert.deepEqual(sitAntwortenOffen({ ...m, halleGeloescht: true, antwort_mika: true }).map((x) => x.id), ['jeff'], 'erledigt ist erledigt');
+  const ids = new Set();
+  for (const a of SIT_ANTWORTEN) {
+    assert.ok(!ids.has(a.id), 'doppelt: ' + a.id); ids.add(a.id);
+    for (const t of [a.text, a.antwort]) assert.ok(t.split(/\s+/).length <= 12, a.id + ': zu lang: ' + t);
+    assert.ok(Array.isArray(a.setzt) && a.setzt.length, a.id + ' setzt nichts');
+  }
+});
+
+test('Dex’ Weg: Wer ihn zu Mme Kiesser schickt, findet ihn später im Neubau statt an der Lichtung', () => {
+  const m = { sit_graffiti: 'kiesser', sitKap_graffiti: 6 };
+  assert.equal(sitSichtbar('dexKunst', 6, m, true, 0), false, 'erst ab dem nächsten Kapitel');
+  assert.equal(sitSichtbar('dexKunst', 7, m, true, 0), true);
+  assert.equal(sitSichtbar('dex', 7, m, true, 0), false, 'nicht mehr an der Lichtung');
+  assert.equal(sitSichtbar('dex', 7, { sit_graffiti: 'gespruht', sitKap_graffiti: 6 }, true, 0), true);
+  assert.equal(sitSichtbar('dexKunst', 7, { sit_graffiti: 'papier', sitKap_graffiti: 6 }, true, 0), false);
+  assert.ok(SIT_LEUTE.dexKunst.aussehen && SIT_LEUTE.dexKunst.aussehen === SIT_LEUTE.dex.aussehen);
 });
