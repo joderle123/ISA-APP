@@ -22,7 +22,7 @@ export function zahlenstrahl(a, b, { teile = 10, marken = [], zahlen, breite = 1
     const v = a + ((b - a) * i) / teile, gross = i === 0 || i === teile || (teile >= 10 && i === teile / 2)
     s += `<line x1="${x(v)}" y1="${gross ? 17.5 : 19.5}" x2="${x(v)}" y2="${gross ? 26.5 : 24.5}" stroke="${Z}" stroke-width="${gross ? 0.9 : 0.6}"/>`
   }
-  for (const v of zahlen || [a, b]) s += `<text x="${x(v)}" y="33" text-anchor="middle" font-family="Lexend" font-size="4.2" fill="${Z}">${String(v).replace(/\B(?=(\d{3})+(?!\d))/g, '.')}</text>`
+  for (const v of zahlen || [a, b]) s += `<text x="${x(v)}" y="33" text-anchor="middle" font-family="Lexend" font-size="4.2" fill="${Z}">${String(v).replace(/\B(?=(\d{3})+(?!\d))/g, '.').replace('-', '−')}</text>`
   for (const m of marken) s += `<path d="M ${x(m.w)} 8 L ${x(m.w)} 16" stroke="var(--f)" stroke-width="1.1"/><path d="M ${x(m.w) - 1.8} 13.5 L ${x(m.w)} 16.5 L ${x(m.w) + 1.8} 13.5" fill="none" stroke="var(--f)" stroke-width="1.1"/><text x="${x(m.w)}" y="5.5" text-anchor="middle" font-family="Lexend" font-weight="700" font-size="4.4" fill="var(--f)">${m.t}</text>`
   return `<svg viewBox="0 0 ${W} 36" style="width:100%">${s}</svg>`
 }
@@ -186,4 +186,29 @@ export function dreiecksarten() {
 /** Dreieck mit Grundseite g und Höhe h */
 export function dreieckHoehe({ g = '6 cm', h = '4 cm' } = {}) {
   return `<svg viewBox="0 0 100 52" style="width:100%;max-height:40mm"><path d="M 10 44 L 80 44 L 34 8 Z" fill="var(--f-zart)" stroke="${Z}" stroke-width="1" stroke-linejoin="round"/><line x1="34" y1="8" x2="34" y2="44" stroke="var(--f)" stroke-width="1" stroke-dasharray="2.5 1.5"/><path d="M 34 39 L 39 39 L 39 44" fill="none" stroke="var(--f)" stroke-width="0.8"/><text x="45" y="50.5" text-anchor="middle" font-family="Lexend" font-size="4.6">g = ${g}</text><text x="36" y="28" font-family="Lexend" font-size="4.6" fill="var(--f)">h = ${h}</text><text x="84" y="22" font-family="Atkinson" font-size="4.4">A = (g · h) ÷ 2</text></svg>`
+}
+
+/** Koordinatensystem 0..n (x und y); punkte = [[Name, x, y]]; leer → Punkte nur im Lösungsheft; linien = [[x1,y1,x2,y2]] */
+export function koordinaten(punkte = [], { n = 8, leer = false, linien = [], linienLeer = false, beschriftung = ['x', 'y'], schritt = 1 } = {}) {
+  const k = 8, o = 8, W = n * k
+  let s = ''
+  for (let i = 0; i <= n; i++) s += `<line x1="${o + i * k}" y1="${o}" x2="${o + i * k}" y2="${o + W}" stroke="#dbe2ec" stroke-width="0.35"/><line x1="${o}" y1="${o + i * k}" x2="${o + W}" y2="${o + i * k}" stroke="#dbe2ec" stroke-width="0.35"/>`
+  s += `<line x1="${o}" y1="${o + W}" x2="${o + W + 4}" y2="${o + W}" stroke="${Z}" stroke-width="0.9"/><line x1="${o}" y1="${o + W}" x2="${o}" y2="${o - 4}" stroke="${Z}" stroke-width="0.9"/>`
+  for (let i = 0; i <= n; i++) if (i % 1 === 0) { s += `<text x="${o + i * k}" y="${o + W + 5}" text-anchor="middle" font-family="Lexend" font-size="3.6">${i * schritt}</text>`; if (i) s += `<text x="${o - 2}" y="${o + W - i * k + 1.3}" text-anchor="end" font-family="Lexend" font-size="3.6">${i * schritt}</text>` }
+  s += `<text x="${o + W + 6}" y="${o + W + 1.3}" font-family="Lexend" font-weight="700" font-size="4.4">${beschriftung[0]}</text><text x="${o}" y="${o - 6}" text-anchor="middle" font-family="Lexend" font-weight="700" font-size="4.4">${beschriftung[1]}</text>`
+  for (const [x1, y1, x2, y2] of linien) s += `<line class="${linienLeer ? 'plan-l' : ''}" x1="${o + x1 * k}" y1="${o + W - y1 * k}" x2="${o + x2 * k}" y2="${o + W - y2 * k}" stroke="${linienLeer ? 'var(--loesung)' : 'var(--f)'}" stroke-width="1"/>`
+  for (const [nm, x, y] of punkte) s += `<g class="${leer ? 'plan-l' : ''}"><circle cx="${o + x * k}" cy="${o + W - y * k}" r="1.6" fill="${leer ? 'var(--loesung)' : 'var(--f)'}"/><text x="${o + x * k + 2.5}" y="${o + W - y * k - 2}" font-family="Lexend" font-weight="700" font-size="4.2" fill="${leer ? 'var(--loesung)' : Z}">${nm}</text></g>`
+  return `<div class="plan"><svg viewBox="0 0 ${W + 2 * o + 10} ${W + 2 * o + 4}" style="width:100%;max-height:78mm">${s}</svg></div>`
+}
+
+/** Parallelogramm, Trapez, Kreis mit Maßen */
+export function flaechenFiguren(figs) {
+  return `<div style="display:grid;grid-template-columns:repeat(${figs.length},1fr);gap:5mm;text-align:center">${figs.map((f) => {
+    let svg = ''
+    if (f.art === 'parallelogramm') svg = `<path d="M 6 38 L 46 38 L 58 10 L 18 10 Z" fill="var(--f-zart)" stroke="${Z}" stroke-width="1" stroke-linejoin="round"/><line x1="24" y1="10" x2="24" y2="38" stroke="var(--f)" stroke-width="0.9" stroke-dasharray="2 1.4"/><text x="26" y="44" text-anchor="middle" font-family="Lexend" font-size="4.4">g = ${f.g}</text><text x="26" y="26" font-family="Lexend" font-size="4.4" fill="var(--f)">h = ${f.h}</text>`
+    if (f.art === 'trapez') svg = `<path d="M 4 38 L 58 38 L 44 12 L 18 12 Z" fill="var(--f-zart)" stroke="${Z}" stroke-width="1" stroke-linejoin="round"/><line x1="30" y1="12" x2="30" y2="38" stroke="var(--f)" stroke-width="0.9" stroke-dasharray="2 1.4"/><text x="31" y="44" text-anchor="middle" font-family="Lexend" font-size="4.4">a = ${f.a}</text><text x="31" y="9" text-anchor="middle" font-family="Lexend" font-size="4.4">c = ${f.c}</text><text x="32" y="28" font-family="Lexend" font-size="4.4" fill="var(--f)">h = ${f.h}</text>`
+    if (f.art === 'kreis') svg = `<circle cx="31" cy="24" r="17" fill="var(--f-zart)" stroke="${Z}" stroke-width="1"/><circle cx="31" cy="24" r="1" fill="${Z}"/><line x1="31" y1="24" x2="48" y2="24" stroke="var(--f)" stroke-width="1"/><text x="39" y="21" text-anchor="middle" font-family="Lexend" font-size="4.4" fill="var(--f)">r = ${f.r}</text>`
+    if (f.art === 'haus') svg = `<path d="M 10 40 L 52 40 L 52 22 L 31 6 L 10 22 Z" fill="var(--f-zart)" stroke="${Z}" stroke-width="1" stroke-linejoin="round"/><line x1="10" y1="22" x2="52" y2="22" stroke="${Z}" stroke-width="0.6" stroke-dasharray="2 1.4"/><text x="31" y="46" text-anchor="middle" font-family="Lexend" font-size="4.4">${f.b}</text><text x="55" y="33" font-family="Lexend" font-size="4.4">${f.h1}</text><text x="34" y="17" font-family="Lexend" font-size="4.4" fill="var(--f)">${f.h2}</text>`
+    return `<div><svg viewBox="0 0 64 48" style="width:100%;max-height:32mm">${svg}</svg>${f.name ? `<div style="font-family:Lexend;font-weight:700;font-size:10.5pt">${f.name}</div>` : ''}</div>`
+  }).join('')}</div>`
 }

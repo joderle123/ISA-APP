@@ -57,8 +57,10 @@ export function matheModul(nr, extra) {
 const E = (s) => (typeof s === 'string' ? s.replace(/✅/g, '✓').replace(/❌/g, '✗').replace(/\[\[([^\]/]+)\/([^\]/]+)\]\]/g, '{{$1/$2}}').replace(/\[/g, '\\[').replace(/\]/g, '\\]') : s)
 const P = (s) => (typeof s === 'string' ? s.replace(/✅/g, '✓').replace(/❌/g, '✗').replace(/\[\[([^\]/]+)\/([^\]/]+)\]\]/g, '$1/$2') : s)
 const saetze = (s) => s.split(/(?<=[.!?])\s+(?=[A-ZÄÖÜ0-9„(])/).filter(Boolean)
-const posten = (it) => ({ a: E(it.a), l: P(it.l || '').replace(/\.$/, ''), raum: it.tbl ? undefined : it.raum ?? 1, tbl: it.tbl })
-const exitPosten = (x) => { const m = /^(.*)\(([^()]*)\)\s*$/.exec(x); return m ? { a: E(m[1].trim()), l: P(m[2]).replace(/^Lösung: /, '').replace(/\.$/, ''), raum: 1.6 } : { a: E(x), l: '', raum: 1.6 } }
+// Kästchenhöhe: mindestens so groß, dass die Lösung (Handschrift) hineinpasst – auch mehr Platz zum Rechnen
+const raumFuer = (l, raum = 1) => Math.max(raum, Math.ceil(String(l || '').length / 30))
+const posten = (it) => ({ a: E(it.a), l: P(it.l || '').replace(/\.$/, ''), raum: it.tbl ? undefined : raumFuer(P(it.l), it.raum ?? 1), tbl: it.tbl })
+const exitPosten = (x) => { const m = /^(.*)\(([^()]*)\)\s*$/.exec(x); return m ? { a: E(m[1].trim()), l: P(m[2]).replace(/^Lösung: /, '').replace(/\.$/, ''), raum: raumFuer(m[2], 1.6) } : { a: E(x), l: '', raum: 1.6 } }
 
 /**
  * Lektionen eines Moduls. `extras[i]` (je Lektion, in Programm-Reihenfolge):
@@ -75,7 +77,8 @@ export function matheLektionen(nr, extras) {
     L.push({
       thema: P(t.titel).replace(/ & /g, ' und '), titel: E(l.titel), untertitel: x.unter || E(l.einstieg.text),
       ziel: { de: E(l.lernziel), fr: x.fr || '' },
-      bild: x.bild,
+      // lange Titel / sehr lange Wörter: weniger Figuren, sonst wird der Kopf zu breit
+      bild: x.bild && (Math.max(...l.titel.split(/\s+/).map((w) => w.length)) >= 17 ? undefined : l.titel.length > 40 ? x.bild.slice(0, 1) : x.bild),
       start: { was: E(l.einstieg.titel), aufgaben: [{ art: 'rechnen', auftrag: 'Rechnet gemeinsam. Sprecht laut, wie ihr rechnet.', stufe: 1, items: l.gemeinsam.map((g) => posten({ ...g, raum: 1 })) }] },
       lesen: {
         was: 'Die Erklärung', art: 'erklaerung', stimme: 'w1', titel: E(l.einstieg.titel), quelle: `Mathe · Modul ${nr} · ${t.titel.replace(/ & /g, ' und ')}`,
