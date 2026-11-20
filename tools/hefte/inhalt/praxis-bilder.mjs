@@ -127,3 +127,16 @@ export function pulsKurve(punkte = [[0, 75], [5, 80], [10, 115], [15, 125], [20,
   o += `<line x1="${x0}" y1="${y0 + h}" x2="${x0 + w}" y2="${y0 + h}" stroke="#2a2f3a" stroke-width="1.5"/><line x1="${x0}" y1="${y0}" x2="${x0}" y2="${y0 + h}" stroke="#2a2f3a" stroke-width="1.5"/>`
   return `<figure class="puls">${o}</svg></figure>`
 }
+
+/** Kühlschrank mit nummerierten Fächern (Was gehört wohin?) */
+export function kuehlschrank() {
+  const W = 300, H = 400
+  let o = `<svg viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg" class="kuehl-svg">`
+  o += `<rect x="20" y="10" width="190" height="380" rx="12" fill="#f4f7fb" stroke="#5b6475" stroke-width="3"/><rect x="214" y="10" width="66" height="380" rx="10" fill="#e9eef5" stroke="#5b6475" stroke-width="3"/>`
+  for (const y of [100, 190, 270]) o += `<line x1="28" y1="${y}" x2="202" y2="${y}" stroke="#8fa3bb" stroke-width="4"/>`
+  o += `<rect x="30" y="285" width="170" height="92" rx="8" fill="#dff0e3" stroke="#7aa98a" stroke-width="2"/>`
+  for (const y of [90, 200, 310]) o += `<rect x="222" y="${y}" width="50" height="10" rx="3" fill="#b9c6d6"/>`
+  o += `<text x="115" y="30" font-family="Lexend" font-size="11" text-anchor="middle" fill="#5b6475">ca. 8 °C</text><text x="115" y="262" font-family="Lexend" font-size="11" text-anchor="middle" fill="#2f6db5">ca. 2 °C – am kältesten</text>`
+  o += nr(115, 60, 1) + nr(115, 148, 2) + nr(115, 232, 3) + nr(115, 330, 4) + nr(247, 150, 5)
+  return `<figure class="kuehl">${o}</svg></figure>`
+}
