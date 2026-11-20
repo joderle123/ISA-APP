@@ -412,3 +412,20 @@ export function farbkreis({ leer = false } = {}) {
   }
   return `<figure class="fkreis">${o}</svg></figure>`
 }
+
+/** Stärken-Netz (Spinnennetz) zum Selbsteinschätzen: Achsen mit Stufen 1–4, leer zum Einzeichnen */
+export function staerkenNetz(achsen = ['Werkzeug, Maschinen', 'genau arbeiten', 'planen', 'Teamarbeit', 'durchhalten', 'Ordnung, Sicherheit']) {
+  const n = achsen.length, cx = 260, cy = 175, R = 130
+  const P = (i, r) => { const a = -Math.PI / 2 + (i * 2 * Math.PI) / n; return [cx + r * Math.cos(a), cy + r * Math.sin(a)] }
+  let o = `<svg viewBox="0 0 520 360" xmlns="http://www.w3.org/2000/svg" class="netz-svg">`
+  for (let s = 4; s >= 1; s--) o += `<polygon points="${achsen.map((_, i) => P(i, (R * s) / 4).map((v) => v.toFixed(1)).join(',')).join(' ')}" fill="${s === 4 ? '#f6f8fb' : 'none'}" stroke="#c3cad6" stroke-width="1.2"/>`
+  achsen.forEach((name, i) => {
+    const [x, y] = P(i, R), [lx, ly] = P(i, R + 22)
+    o += `<line x1="${cx}" y1="${cy}" x2="${x.toFixed(1)}" y2="${y.toFixed(1)}" stroke="#9aa4b4" stroke-width="1.2"/>`
+    for (let s = 1; s <= 4; s++) { const [px, py] = P(i, (R * s) / 4); o += `<circle cx="${px.toFixed(1)}" cy="${py.toFixed(1)}" r="3" fill="#9aa4b4"/>` }
+    const anker = Math.abs(lx - cx) < 10 ? 'middle' : lx > cx ? 'start' : 'end'
+    o += t(lx.toFixed(1), (ly + 4).toFixed(1), name, { gr: 12.5, fett: 700, anker })
+  })
+  for (let s = 1; s <= 4; s++) { const [px, py] = P(0, (R * s) / 4); o += t((px + 9).toFixed(1), (py + 4).toFixed(1), String(s), { gr: 10, farbe: '#7a8699', anker: 'start' }) }
+  return `<figure class="netz">${o}</svg></figure>`
+}
