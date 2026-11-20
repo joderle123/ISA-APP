@@ -1009,7 +1009,7 @@ async function spielKuedes(a) {
 // ================= Das Dach (Ball auf dem Turnhallendach, Kapitel 8–9) =================
 // Kein Mutprobe-Spiel, sondern Alltag: Der Ball liegt oben, der Container steht praktisch da. Fernand hat eine Leiter.
 export async function dach(a) {
-  await a.sag('e', 'Hinter der Turnhalle. Pit steht auf dem Müllcontainer.');
+  await a.sag('e', 'Hinter der Turnhalle. Pit, ein Fuß schon auf dem Container.');
   await a.sag('pitDach', 'Der Ball ist aufs Dach geflogen! Ich hol ihn. Halt mal fest.');
   await a.sag('e', 'Vom Container bis zur Dachkante: fast zwei Meter. Oben sind Glasfenster.');
   await a.sag('jana', 'Mach doch, Pit! Sonst ist der Ball weg.');
