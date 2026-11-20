@@ -140,3 +140,27 @@ export function umfangFiguren(figs) {
     return `<div><svg viewBox="0 0 66 42" style="width:100%;max-height:30mm">${svg}</svg>${f.name ? `<div style="font-family:Lexend;font-weight:700;font-size:11pt">${f.name}</div>` : ''}</div>`
   }).join('')}</div>`
 }
+
+/** Senkrechtes Balkendiagramm; daten = [[Name, Wert]]; leer=true → Balken nur im Lösungsheft (zum Selberzeichnen) */
+export function balkendiagramm(daten, { max, schritt = 1, leer = false, titel = '', einheit = '' } = {}) {
+  const M = max || Math.max(...daten.map((d) => d[1])), H = 60, B = 16, x0 = 14, y0 = 6
+  const y = (v) => y0 + H - (v / M) * H
+  let s = ''
+  for (let v = 0; v <= M; v += schritt) s += `<line x1="${x0}" y1="${y(v)}" x2="${x0 + daten.length * B + 4}" y2="${y(v)}" stroke="${v === 0 ? Z : '#d5dbe6'}" stroke-width="${v === 0 ? 0.8 : 0.35}"/><text x="${x0 - 2}" y="${y(v) + 1.4}" text-anchor="end" font-family="Lexend" font-size="3.6" fill="${Z}">${v}</text>`
+  s += `<line x1="${x0}" y1="${y0 - 3}" x2="${x0}" y2="${y0 + H}" stroke="${Z}" stroke-width="0.8"/>`
+  daten.forEach(([n, v], i) => {
+    const x = x0 + 4 + i * B
+    s += `<rect class="${leer ? 'plan-l' : ''}" x="${x}" y="${y(v)}" width="${B - 6}" height="${y0 + H - y(v)}" fill="${leer ? 'var(--loesung)' : 'var(--f)'}" opacity="${leer ? 0.55 : 1}"/><text x="${x + (B - 6) / 2}" y="${y0 + H + 5}" text-anchor="middle" font-family="Lexend" font-size="3.6" fill="${Z}">${n}</text>`
+  })
+  if (einheit) s += `<text x="${x0 - 2}" y="${y0 - 4}" text-anchor="end" font-family="Atkinson" font-size="3.4" fill="${Z}">${einheit}</text>`
+  return `<div class="plan">${titel ? `<div style="font-family:Lexend;font-weight:700;font-size:11.5pt;margin-bottom:1mm">${titel}</div>` : ''}<svg viewBox="0 0 ${x0 + daten.length * B + 8} ${y0 + H + 9}" style="width:100%;max-height:62mm">${s}</svg></div>`
+}
+
+/** Rechteck auf Kästchenpapier (l × b Kästchen) */
+export function kaestchenFlaeche(l, b, { text = '' } = {}) {
+  const k = 5
+  let s = ''
+  for (let i = 0; i < l; i++) for (let j = 0; j < b; j++) s += `<rect x="${2 + i * k}" y="${2 + j * k}" width="${k}" height="${k}" fill="var(--f-zart)" stroke="var(--f)" stroke-width="0.35"/>`
+  s += `<rect x="2" y="2" width="${l * k}" height="${b * k}" fill="none" stroke="${Z}" stroke-width="0.8"/>`
+  return `<div style="display:flex;align-items:center;gap:5mm"><svg viewBox="0 0 ${l * k + 4} ${b * k + 4}" style="width:${(l * k + 4) * 0.9}mm">${s}</svg>${text ? `<span style="font-size:12.5pt">${text}</span>` : ''}</div>`
+}
