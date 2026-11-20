@@ -10,15 +10,21 @@ export const mische = (hex, ziel, anteil) => '#' + [0, 2, 4].map((i) => Math.rou
 
 // nur für die Stimme (Python-Regex, Reihenfolge zählt)
 export const SACH_AUSSPRACHE = {
+  // zuerst: Notrufnummern und feste Beispiele (sonst greifen die Jahreszahl- und Einheiten-Regeln)
+  '\\b112\\b': 'eins eins zwei', '116 111': 'eins eins sechs, eins eins eins', '8002 1234': 'acht null null zwei, eins zwei drei vier',
+  'MHBfg3W!': 'M, H, B, f, g, drei, W, Ausrufezeichen', 'JOJO15': 'Jojo fünfzehn', 'BEE SECURE': 'Bie Sikjur',
   '\\bv\\. ?Chr\\.': 'vor Christus', '\\bn\\. ?Chr\\.': 'nach Christus', '\\bz\\. ?B\\.': 'zum Beispiel', '\\bca\\.': 'zirka', '\\bbzw\\.': 'beziehungsweise',
   '\\bd\\. ?h\\.': 'das heißt', '\\bJh\\.': 'Jahrhundert', '\\busw\\.': 'und so weiter', '\\bu\\. ?a\\.': 'unter anderem', '\\bNr\\.': 'Nummer', '\\bStd\\.': 'Stunden',
+  // doppelte Angaben in Klammern nicht zweimal vorlesen: „vor Christus (vor Christus)“, „Grad Celsius (°C)“
+  '(vor|nach) Christus \\((vor|nach) Christus\\)': '\\1 Christus', '\\s*\\(°C\\)': '', '\\s*\\(kWh\\)': '',
+  'CO₂': 'Ce O zwei', '\\bEU\\b': 'E U', '\\bKI\\b': 'Ka I', '\\bpH\\b': 'pe ha', '#ad\\b': 'Hashtag äd', '\\bApp(s?)\\b': 'Äpp\\1', '\\bFI-': 'F I ',
   '(\\d) ?km²': '\\1 Quadratkilometer', '(\\d) ?km/h': '\\1 Kilometer pro Stunde', '(\\d) ?km\\b': '\\1 Kilometer', '(\\d) ?cm\\b': '\\1 Zentimeter', '(\\d) ?mm\\b': '\\1 Millimeter',
   '(\\d) ?kg\\b': '\\1 Kilogramm', '(\\d) ?g\\b': '\\1 Gramm', '(\\d) ?ml\\b': '\\1 Milliliter', '(\\d) ?l\\b': '\\1 Liter', '(\\d) ?m\\b': '\\1 Meter', '(\\d) ?W\\b': '\\1 Watt', '(\\d) ?kWh\\b': '\\1 Kilowattstunden',
   '(\\d) ?°C': '\\1 Grad', '°': ' Grad', '(\\d) ?%': '\\1 Prozent', '(\\d+),(\\d\\d) ?€': '\\1 Euro \\2', '(\\d+) ?€': '\\1 Euro',
-  // Jahreszahlen 1100–1999 wie im Deutschen: „achtzehnhundertneununddreißig“
+  // Jahreszahlen 1100–1999 wie im Deutschen: „achtzehnhundertneununddreißig“, auch „1980er-Jahre“
+  '\\b(1[1-9])([1-9]0)er\\b': '\\1hundert\\2er',
   '\\b(1[1-9])00\\b': '\\1hundert', '\\b(1[1-9])0(\\d)\\b': '\\1hundert\\2', '\\b(1[1-9])([1-9]\\d)\\b': '\\1hundert\\2',
   '(\\d)\\.(\\d{3})\\b': '\\1\\2', ' – ': ', ', '→': ', also ', '≈': ' ungefähr ', '\\+': ' plus ', '\\|': ', ',
-  '\\b112\\b': 'eins eins zwei', '116 111': 'eins eins sechs, eins eins eins', '8002 1234': 'acht null null zwei, eins zwei drei vier',
 }
 
 const ANLEITUNG = {
