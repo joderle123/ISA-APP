@@ -77,12 +77,19 @@ export function createSteuerung({ camera, input, welt, figur = null }) {
     const sturz = (grund) => { b.sturz = 1.4; b.grind = null; b.trick = null; b.lade = null; s.tempo *= 0.3; if (b.onSturz) b.onSturz(grund); };
     const amBoden = b.y <= 0 && !b.grind;
     if (amBoden) {
-      const will = my > 0.2 ? 6.2 * Math.min(1, my) : 0;
-      if (will > s.tempo) s.tempo += (will - s.tempo) * dt * 0.9;          // anschieben: Schwung kommt langsam
+      const will = my > 0.2 ? (b.vmax || 6.2) * Math.min(1, my) : 0;   // freie Fahrt: Brett 7,4 m/s, Trottinette 9,5 m/s
+      if (will > s.tempo) s.tempo += (will - s.tempo) * dt * (b.antrieb || 0.9);          // anschieben: Schwung kommt langsam
       else s.tempo = Math.max(0, s.tempo - dt * (my < -0.3 ? 4.5 : 0.3));   // rollen / bremsen (zurück)
-      s.yaw -= mx * dt * (2.1 - Math.min(1.1, s.tempo * 0.16));
+      s.yaw -= mx * dt * ((b.lenk || 2.1) - Math.min(1.1, s.tempo * (b.lenk ? 0.11 : 0.16)));
       b.luftDreh = 0;
     } else if (!b.grind) { const d = mx * dt * 1.1; s.yaw -= d; b.luftDreh = (b.luftDreh || 0) + d; }
+    // ---------- Kicker-Rampe: mit Schwung in Fahrtrichtung drüber = Absprung (je schneller, desto höher) ----------
+    if (amBoden && s.tempo > 2.2 && s.kicker) for (const k of s.kicker) {
+      if (pos.x < k.x0 || pos.x > k.x1 || pos.z < k.z0 || pos.z > k.z1) continue;
+      if (Math.sin(s.yaw) * k.dx + Math.cos(s.yaw) * k.dz < 0.55) continue;
+      b.vy = 2.0 + s.tempo * 0.5; b.y = 0.02; b.ueber = new Set(); b.start = s.tempo; b.pop = 0.3; b.luftDreh = 0;
+      if (b.onKicker) b.onKicker(); break;
+    }
     // ---------- Pop: halten = aufladen, loslassen = springen ----------
     if ((st.jump || st.jumpHeld) && s.frei) {   // halten = aufladen (jump allein gilt nur im ersten Bild)
       if (amBoden && b.lade == null && !b.sprungGehalten) b.lade = 0;
@@ -99,7 +106,7 @@ export function createSteuerung({ camera, input, welt, figur = null }) {
     // ---------- Bewegung ----------
     const nx = pos.x + Math.sin(s.yaw) * s.tempo * dt, nz = pos.z + Math.cos(s.yaw) * s.tempo * dt;
     const [x, z] = loese(nx, nz, b.grind ? b.y + 0.1 : b.y);
-    if (s.tempo * dt > 0.001 && Math.hypot(x - pos.x, z - pos.z) < s.tempo * dt * 0.5) { if (s.tempo > 4.6 && amBoden) sturz('Mit Vollgas gegen etwas gefahren'); else s.tempo *= 0.5; }
+    if (s.tempo * dt > 0.001 && Math.hypot(x - pos.x, z - pos.z) < s.tempo * dt * 0.5) { if (s.tempo > (b.crash || 4.6) && amBoden) sturz('Mit Vollgas gegen etwas gefahren'); else s.tempo *= 0.5; }
     pos.x = x; pos.z = z;
     // ---------- Grind: auf einer Kante entlang, Gleichgewicht halten ----------
     if (b.grind) {

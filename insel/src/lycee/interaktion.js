@@ -48,7 +48,7 @@ const ROBOTER = [
 ];
 
 export const KABEL = [['cdi', 14, -62.4], ['kantine', 18.6, -8.2], ['gang', -15.5, -15.8], ['innenhof', -17.2, -44.9], ['skate', -36.4, 6.4]];
-export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton, blattWahl, freiwurf, skate, tt3d = null, spindAuf = null, partner = () => null, freund = () => {}, onKabel = null }) {
+export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton, blattWahl, freiwurf, skate, volley = null, volleyAktiv = () => false, tt3d = null, spindAuf = null, partner = () => null, freund = () => {}, onKabel = null }) {
   const tt = welt.orte.tischtennis;
   const liste = [];
   const dazu = (x, z, r, text, tu, extra = {}) => liste.push({ x, z, r, text, tu, ...extra });
@@ -82,6 +82,7 @@ export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton
   dazu(63.0, -43.7, 1.1, 'Dem 3D-Drucker zuschauen', 'drucker', { prio: 1 });   // Informatik
   dazu(61.5, -39.5, 0.9, 'Roboter einschalten', 'roboter', { prio: 1 });
   if (skate) dazu(-29.6, 5.2, 1.5, 'Skateboard fahren', 'skate', { prio: 1 });
+  if (volley) dazu(43.6, -18, 1.4, 'Volleyball spielen', 'volley', { prio: 1 });   // Hall des sports, am Netz
   if (tt) dazu(tt.x - 1.3, tt.z, 1.2, 'Tischtennis spielen', 'tischtennis', { prio: 1 });
   // Easter Eggs: Herrn Mesenbergs verlorene Ladekabel (5 Stück), Kritzeleien im WC, die Ente im Brunnen
   for (const [id, x, z] of KABEL) dazu(x, z, 1.0, 'Ein Ladekabel? Aufheben', 'kabel', { prio: 2, kabel: id });
@@ -215,6 +216,14 @@ export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton
         if (s.merke.bonbonSchritt === s.schritt) { ui.toast('<b>🍬 Eins pro Person</b><span>Das Kärtchen schaut dich an. Du lässt das Glas zu.</span>'); return; }
         const n = s.merke.bonbons = (s.merke.bonbons || 0) + 1; s.merke.bonbonSchritt = s.schritt; ton('klack'); sichern();
         ui.toast('<b>🍬 ' + ['Zitrone', 'Himbeere', 'Pfefferminz', 'Kirsche', 'Apfel'][(n - 1) % 5] + '</b><span>' + (n === 5 ? 'Auf dem Kärtchen steht jetzt mit Kuli: „Bester Kunde 🙂“' : 'Eins pro Person. Du hältst dich dran.') + '</span>');
+        return;
+      }
+      case 'volley': {   // Ballwechsel mit der besten Freundin / dem besten Freund (sonst Ben)
+        if (volleyAktiv()) return;
+        const pa = partner();
+        const r = await volley({ partnerId: pa ? pa.id : 'ben', partnerName: pa ? pa.name : 'Ben', rekord: s.merke.volleyRekord || 0 });
+        const neu = r.best > (s.merke.volleyRekord || 0); if (neu) s.merke.volleyRekord = r.best; sichern();
+        ui.toast('<b>🏐 ' + r.punkte + ' Punkte</b><span>Längster Ballwechsel: ' + r.best + (neu ? ' – neuer Rekord!' : ' · Rekord ' + (s.merke.volleyRekord || 0)) + '</span>');
         return;
       }
       case 'computer': ui.toast('<b>Anmelden</b><span>Passwort vergessen. Das Passwort für „Passwort vergessen“ auch.</span>'); return;

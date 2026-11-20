@@ -251,6 +251,27 @@ export function baueDorf({ B, C, schild, schilder, P = null, R = null }) {
     DORF_DEKO.tagDu = tag('★', '#e9b949', 3.4, 1.0, 1.3);            // dein Kürzel (spiel.js malt die Buchstaben)
     B.frei.push({ x0: X0 - 1, x1: X1 + 1, z0: Z - 1, z1: Z + 2 });
   }
+  // Skatepark Junglinster (Nordseite der Rue du Moulin, x 78 … 106): Beton, Halfpipe, Rails, Grind-Box, Treppe mit Geländer,
+  // Rampen (Kicker in spiel.js), Zaun, Schild. Modelle: Kenney Mini Skate 2.0 (CC0, skate.glb). Auftrag 20.11.: „Skaten drastisch verbessern“
+  { const X0 = 78, X1 = 106, Z0 = 73.6, Z1 = 81.6, BETON = hex('#c9c4bb'), KANTE = hex('#a8a297');
+    box(X0, X1, 0, 0.07, Z0, Z1, BETON, { art: 'innen' }); B.frei.push({ x0: X0 - 1, x1: X1 + 1, z0: Z0 - 1, z1: Z1 + 1 });
+    for (let x = X0 + 4; x < X1; x += 4) box(x - 0.03, x + 0.03, 0.07, 0.075, Z0, Z1, KANTE, { art: 'innen' });   // Fugen
+    box(X0, X1, 0, 1.2, Z0 - 0.15, Z0, hex('#9a9489'), { stoss: true });                                           // Mauer hinten
+    for (const x of [X0, X1]) box(x - 0.15, x, 0, 1.0, Z0, Z1 - 1.2, hex('#9a9489'), { stoss: true });              // Mauern seitlich
+    if (P) {
+      P('skate/half-pipe', X0 + 2.6, (Z0 + Z1) / 2, Math.PI / 2, { h: 1.7, fest: true });
+      P('skate/steps-rail', X0 + 9.5, Z0 + 2.2, 0, { h: 0.9, fest: true });
+      P('skate/rail-high', X0 + 14.5, (Z0 + Z1) / 2 + 0.6, Math.PI / 2, { h: 0.55, fest: true });
+      P('skate/obstacle-box-grind', X0 + 19.5, (Z0 + Z1) / 2 - 0.4, Math.PI / 2, { h: 0.42, fest: true });
+      P('skate/ramp-rail', X1 - 2.2, (Z0 + Z1) / 2, -Math.PI / 2, { h: 0.85, fest: true });
+      P('skate/pallet', X0 + 23.8, Z0 + 0.8, 0.3, { h: 0.28, fest: true }); P('skate/pallet', X0 + 23.9, Z0 + 0.85, 0.1, { h: 0.28, y: 0.28 });
+      P('skate/scooter', X0 + 6.4, Z0 + 0.7, 1.2, { h: 0.9 });   // eine abgestellte Trottinette an der Mauer
+    }
+    const t = schild('SKATEPARK JUNGLINSTER', 3.8, 0.6, { bg: '#2b2b33', fg: '#ffd166', rand: '#ffd166', schrift: 'bold 96px system-ui' });
+    t.position.set((X0 + X1) / 2, 1.75, Z0 - 0.17); schilders(t);
+    const r = schild('Helm auf · Rücksicht · Spaß', 2.6, 0.42, { bg: '#ffffff', fg: '#2b3a55', rand: '#2b3a55', schrift: 'bold 70px system-ui' });
+    r.position.set(X0 + 0.2, 1.2, Z1 - 2.6); r.rotation.y = Math.PI / 2; schilders(r);
+  }
   // Spielplatz (Nordseite der Rue du Moulin): Sand, Schaukel, Rutsche, Wippe, Bank
   { const X0 = 56, X1 = 72, Z0 = 73, Z1 = 81.5, SAND = hex('#e6d3a3'), ROT = hex('#d9523c'), BLAU = hex('#2f6db0'), GELB = hex('#e9b949'), HOLZ = hex('#a0743e');
     box(X0, X1, 0, 0.05, Z0, Z1, SAND, { art: 'innen' }); B.frei.push({ x0: X0 - 1, x1: X1 + 1, z0: Z0 - 1, z1: Z1 + 1 });

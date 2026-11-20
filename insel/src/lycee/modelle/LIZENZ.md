@@ -46,3 +46,10 @@ Erzeugen: `python -I tools/lycee/kaykit.py kaykit.glb <Furniture-Ordner> <City-O
 (`tools/lycee/itch-laden.sh`). 17 Modelle (Laubbäume, Kiefern, Büsche, Blumen, Gras, Farn, Klee, Steine, Pilze) mit
 eingebetteten, verkleinerten Texturen (Blätter 512 px, sonst 256 px), Normalen als int8 (KHR_mesh_quantization).
 Erzeugen: `python -I tools/lycee/natur-pack.py natur.glb <glTF-Ordner> CommonTree_1 CommonTree_3 …`
+
+## skate.glb
+Kenney „Mini Skate 2.0“ (www.kenney.nl), **CC0 1.0**. Geladen am 20.11.2026 von opengameart.org
+(`opengameart.org/sites/default/files/kenney_mini-skate_2.0.zip`). Farben aus der Farbtafel in die Eckpunkte gebacken
+(`python3 -I tools/stadt/stadt.py <ordner>/ roh.glb` mit `<ordner>/mini-skate` = entpacktes Paket), Auswahl mit
+`tools/lycee/kenney-auswahl.mjs` (skate/half-pipe, ramp-rail, rail-high, obstacle-box-grind, steps-rail, pallet, scooter, fence),
+dann `gltf-transform meshopt --level medium`.

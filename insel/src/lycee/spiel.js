@@ -26,6 +26,8 @@ import { ladePerson, namensschild, SITZ } from './figuren.js';
 import { fussSchatten, WOLKEN } from './texturen.js';
 import { createHandschlag, HANDSCHLAEGE } from './handschlag.js';
 import { createTischtennis } from './tt3d.js';
+import { createFussball } from './ball.js';
+import { createVolleyball } from './volley.js';
 import { createZufall } from './zufall.js';
 // Das Schuljahr vergeht: Monat auf der Zeitkarte (die Kapitel liegen Wochen auseinander, nicht direkt hintereinander)
 const MONAT = { 1: 'September', 2: 'September', 3: 'Oktober', 4: 'November', 5: 'Dezember', 6: 'Februar', 7: 'März', 8: 'April', 9: 'Juni', 10: 'Juli' };
@@ -2058,6 +2060,9 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   const ttFiguren = {};
   const tt3d = createTischtennis({ scene, camera, steuerung, root, audio, rr, vib,
     holeGegner: async (id) => { const k = LEUTE[id] ? id : 'ben'; if (!ttFiguren[k]) { ttFiguren[k] = await ladePerson(veil, { ...LEUTE[k] }); ttFiguren[k].group.add(fussSchatten()); } return ttFiguren[k]; } });
+  // Volleyball in der Hall des sports: Ballwechsel mit der besten Freundin / dem besten Freund (dieselben Spielfiguren wie beim Tischtennis)
+  const volley = createVolleyball({ scene, steuerung, input, ui, ton: (a) => ton(a), vib,
+    holeFigur: async (id) => { const k = LEUTE[id] ? id : 'ben'; if (!ttFiguren[k]) { ttFiguren[k] = await ladePerson(veil, { ...LEUTE[k] }); ttFiguren[k].group.add(fussSchatten()); } return ttFiguren[k]; } });
   const hsKannMit = (x) => !!(x && HANDSCHLAEGE[x.id] && S && ((S.freund && S.freund[x.id] >= 20) || (S.herz[x.id] || 0) >= 3) && x.f.armOk && x.haltung !== 'sitzt');
   const sag = (wer, text) => ui.sprich({ ...sprecher(wer), text: ersetze(text) });
   ui.onHandschlag = () => { if (hsPartner) handschlagMit(hsPartner); };
@@ -2149,6 +2154,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     return b;
   }
   function skaten() {
+    if (fahrt) absteigen();
     return new Promise((ok) => {
       let m = null;
       const g = req.geo['skate/skateboard'];
@@ -2193,6 +2199,170 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       };
     });
   }
+  // ---------- Freie Fahrt (Auftrag 20.11.: „Skaten drastisch verbessern, Trottinette schnell in den Straßen fahren“) ----------
+  // R = Skateboard, T = Trottinette (oder Knopf 🛹): überall draußen, ohne Zeitlimit. Helm sitzt immer. Tacho in km/h, Bestwert.
+  // Brett: Tricks wie in der Skate-Ecke (1–3, Leertaste), Punkte als „Style“. Trottinette: schneller, wendiger, B = Klingel.
+  // Leute: Wer schnell auf jemanden zufährt, bremst automatisch – „Achtung, Leute!“. Drinnen, im Gespräch, in Szenen: absteigen.
+  let fahrt = null;
+  function trottinette() {
+    const t = new THREE.Group(), mat = (c) => new THREE.MeshLambertMaterial({ color: c }), farbe = (S && S.deck) || '#2fb8a8';
+    const teil = (geo, c, x, y, z, rx = 0, rz = 0) => { const m = new THREE.Mesh(geo, mat(c)); m.position.set(x, y, z); m.rotation.set(rx, 0, rz); t.add(m); return m; };
+    teil(new THREE.BoxGeometry(0.62, 0.035, 0.13), farbe, 0.03, 0.11, 0);                         // Trittbrett
+    teil(new THREE.BoxGeometry(0.5, 0.006, 0.12), '#2b2b33', 0.05, 0.13, 0);                      // Griptape
+    teil(new THREE.BoxGeometry(0.16, 0.02, 0.1), '#b8c0ca', 0.38, 0.17, 0, 0, -0.35);              // Hinterradbremse
+    for (const x of [-0.36, 0.36]) { teil(new THREE.CylinderGeometry(0.085, 0.085, 0.04, 16), '#2b2b33', x, 0.085, 0, Math.PI / 2); teil(new THREE.CylinderGeometry(0.036, 0.036, 0.046, 10), '#e9ecef', x, 0.085, 0, Math.PI / 2); }
+    teil(new THREE.CylinderGeometry(0.019, 0.023, 0.86, 8), '#b8c0ca', -0.37, 0.52, 0, 0, -0.07);  // Lenkstange (vorn = −x)
+    teil(new THREE.CylinderGeometry(0.016, 0.016, 0.46, 8), '#b8c0ca', -0.4, 0.94, 0, Math.PI / 2); // Lenker
+    for (const q of [-1, 1]) teil(new THREE.CylinderGeometry(0.022, 0.022, 0.1, 8), '#2b2b33', -0.4, 0.94, q * 0.2, Math.PI / 2);
+    teil(new THREE.CylinderGeometry(0.026, 0.026, 0.02, 10), '#ffd166', -0.4, 0.97, 0.11);          // Klingel
+    return t;
+  }
+  // Helm: an den Kopfknochen, wie Frisuren (in Ruhelage ausgerichtet); immer beim Fahren
+  function helmAuf(an) {
+    if (!spieler) return;
+    const alt = spieler.group.getObjectByName('fahr-helm'); if (alt) alt.parent.remove(alt);
+    if (!an) return;
+    let kb = null; spieler.group.traverse((o) => { if (!kb && o.isBone && /^head$/i.test(o.name)) kb = o; });
+    if (!kb) return;
+    const h = new THREE.Group(); h.name = 'fahr-helm';
+    const mat = (c) => new THREE.MeshLambertMaterial({ color: c });
+    const schale = new THREE.Mesh(new THREE.SphereGeometry(0.152, 16, 9, 0, Math.PI * 2, 0, 1.42), mat(S.helm || '#e85d75')); schale.position.set(0, 0.105, 0.0); h.add(schale);
+    const kamm = new THREE.Mesh(new THREE.BoxGeometry(0.04, 0.02, 0.27), mat('#ffffff')); kamm.position.set(0, 0.255, -0.005); h.add(kamm);
+    const schirm = new THREE.Mesh(new THREE.BoxGeometry(0.17, 0.012, 0.06), mat('#2b2b33')); schirm.position.set(0, 0.13, 0.155); schirm.rotation.x = 0.25; h.add(schirm);
+    for (const sx of [-1, 1]) { const r = new THREE.Mesh(new THREE.BoxGeometry(0.008, 0.11, 0.012), mat('#2b2b33')); r.position.set(sx * 0.1, 0.0, 0.03); h.add(r); }
+    spieler.group.updateMatrixWorld(true);
+    const wq = new THREE.Quaternion(), bq = new THREE.Quaternion(), bs = new THREE.Vector3(), gs = new THREE.Vector3();
+    spieler.group.getWorldQuaternion(wq); kb.getWorldQuaternion(bq); kb.getWorldScale(bs); spieler.group.getWorldScale(gs);
+    h.quaternion.copy(bq.invert().multiply(wq)); h.scale.setScalar(gs.x / (bs.x || 1));
+    kb.add(h);
+  }
+  const drinnen = (x, z) => { const r = welt.raumBei(x, z); return !!(r && !/^bogen/.test(r.id)); };
+  function aufsteigen(art) {
+    if (fahrt) { const war = fahrt.art; absteigen(); if (art === war || art === 'aus') return; }
+    if (art === 'aus') return;
+    const p = steuerung.pos;
+    if (!laeuft || !S || imGespraech || ui.ebeneArt() || !spieler || steuerung.sitzt || steuerung.brett || skateTick || hs.aktiv || foto || korbSpiel.aktiv()) return;
+    if (drinnen(p.x, p.z)) { ui.toast('<b>Drinnen nicht</b><span>Brett und Trottinette gibt’s draußen.</span>'); return; }
+    const koerper = spieler.group.children[0];
+    helmAuf(true);
+    const m = art === 'trotti' ? trottinette() : skateboard();
+    spieler.group.add(m);
+    fahrt = { art, m, koerper, hoch: koerper.position.y, rotY: koerper.rotation.y, uhr: 0, warn: -9, max: 0, style: 0, brett: null };
+    koerper.position.y = fahrt.hoch + (art === 'trotti' ? 0.13 : 0.1);
+    if (art === 'trotti') koerper.rotation.y = fahrt.rotY - Math.PI / 2;   // nach vorn schauen, Hände am Lenker
+    const trotti = art === 'trotti';
+    steuerung.brett = fahrt.brett = { y: 0, vy: 0, ueber: new Set(), start: 0, bereich: [-1e4, 1e4, -1e4, 1e4], mesh: trotti ? null : m,
+      vmax: trotti ? 9.5 : 7.4, antrieb: trotti ? 1.5 : 1.05, lenk: trotti ? 2.7 : 2.25, crash: trotti ? 7.2 : 6.0,
+      onTrick: (name, pt) => { if (trotti || !fahrt) return; fahrt.style += pt; ton('pling'); vib(pt >= 3 ? 18 : 8); ui.skate({ punkte: fahrt.style, trick: name + ' +' + pt }); },
+      onSturz: (grund) => { ton('klack'); vib([30, 40, 30]); ui.skate({ trick: '💥 ' + grund + (trotti ? '' : ' – wieder drauf!') }); },
+      onGrind: (dt, bal) => { ui.skate({ bal }); },
+      onKicker: () => { ton('klack'); ui.skate({ trick: '🚀 Air!' }); },
+      onRaus: () => {} };
+    if (!trotti) ui.onSkateTrick = (t) => { if (steuerung.brett) steuerung.brett.trickWunsch = t; };
+    ui.skate({ kopf: trotti ? '🛴 Trottinette' : '🛹 Freie Fahrt', tacho: 0, punkte: trotti ? null : 0, ohneTricks: trotti, weg: () => absteigen(),
+      ziel: (trotti ? 'B = Klingel · T = absteigen' : '1–3 = Tricks · R = absteigen') + ' · 🏁 Rennen: Hauptstraße West',
+      trick: trotti ? 'Pfeil vor = Gas · zurück = bremsen · Leertaste = Hüpfer' : 'Sprung halten = höher · in der Luft 1/2/3 = Trick' });
+    if (!S.merke.helmGesehen) { S.merke.helmGesehen = true; sichern(); ui.toast('<b>🪖 Helm auf</b><span>Klar. Auch für kurze Strecken.</span>'); }
+    rennenZeigen(true);
+  }
+  function absteigen(grund) {
+    const f = fahrt; if (!f) return; fahrt = null;
+    if (steuerung.brett === f.brett) { steuerung.brett = null; steuerung.tempo = 0; steuerung.pos.y = 0; input.release('jump'); ui.skate(null); ui.onSkateTrick = null; }
+    if (f.m && f.m.parent) f.m.parent.remove(f.m);
+    f.koerper.position.y = f.hoch; f.koerper.rotation.y = f.rotY;
+    helmAuf(false);
+    if (spieler) { spieler.group.rotation.set(0, steuerung.yaw, 0); if (spieler.lehnen) spieler.lehnen(0); }
+    rennen = null; rennenZeigen(false);
+    if (f.max > (S.merke.fahrMax || 0)) S.merke.fahrMax = f.max;
+    S.merke.gefahren = (S.merke.gefahren || 0) + 1; sichern();
+    if (grund === 'drinnen') ui.toast('<b>Abgestiegen</b><span>Drinnen wird nicht gefahren.</span>');
+    else if (f.max >= 8 && !grund) ui.toast('<b>' + (f.art === 'trotti' ? '🛴' : '🛹') + ' Spitze ' + f.max + ' km/h</b><span>' + (f.style ? 'Style ' + f.style + ' · ' : '') + 'Bestwert ' + S.merke.fahrMax + ' km/h</span>');
+  }
+  ui.onFahrt = (art) => { if (art === null) art = !fahrt ? 'brett' : fahrt.art === 'brett' ? 'trotti' : 'aus'; aufsteigen(art); };
+  ui.onKlingel = () => { if (!fahrt || fahrt.art !== 'trotti') return; try { audio.play('fahrradklingel'); } catch (e) { /* kein Ton */ }
+    const p = steuerung.pos; for (const x of statisten) { const q = x.f.group.position; if (Math.hypot(q.x - p.x, q.z - p.z) < 9 && x.f.group.visible) x.f.spiele('Wave', { einmal: true }); } };
+  try {
+    audio.register('fahrradklingel', (ctx, bus) => {
+      const t = ctx.currentTime;
+      for (const [d, f] of [[0, 2093], [0.16, 2093]]) { const o = ctx.createOscillator(), o2 = ctx.createOscillator(), g = ctx.createGain(); o.type = 'sine'; o.frequency.value = f; o2.type = 'sine'; o2.frequency.value = f * 2.76;
+        g.gain.setValueAtTime(0.0001, t + d); g.gain.exponentialRampToValueAtTime(0.09, t + d + 0.005); g.gain.exponentialRampToValueAtTime(0.0001, t + d + 0.5);
+        o.connect(g); o2.connect(g); g.connect(bus); o.start(t + d); o2.start(t + d); o.stop(t + d + 0.55); o2.stop(t + d + 0.55); }
+    });
+  } catch (e) { /* Ton nicht verfügbar */ }
+  // ---------- Zeitrennen durchs Dorf: Hauptstraße nach Osten, Gasse hinunter, Rue du Moulin nach Westen ----------
+  const RENNEN = [[-30, 48], [0, 48], [24, 48], [32, 60], [32, 76], [46, 87], [20, 87], [-6, 87], [-24, 87]];
+  let rennen = null; const ringe = [];
+  { const geo = new THREE.TorusGeometry(2.4, 0.12, 8, 32);
+    RENNEN.forEach(([x, z], i) => {
+      const n = RENNEN[Math.min(i + 1, RENNEN.length - 1)], v = RENNEN[Math.max(0, i - 1)], dx = n[0] - v[0], dz = n[1] - v[1];
+      const m = new THREE.Mesh(geo, new THREE.MeshBasicMaterial({ color: i === 0 ? '#7CFC9A' : i === RENNEN.length - 1 ? '#ffd166' : '#5ec8ff', transparent: true, opacity: 0.85, toneMapped: false }));
+      m.position.set(x, 2.3, z); m.rotation.y = Math.atan2(dx, dz); m.visible = false; m.name = 'rennring'; scene.add(m); ringe.push(m);
+    }); }
+  function rennenZeigen(an) { ringe.forEach((r, i) => { r.visible = an && (rennen ? i >= rennen.n && i <= rennen.n + 2 : i === 0); if (r.visible) r.material.opacity = rennen && i === rennen.n ? 0.95 : 0.45; }); }
+  function rennenTick(dt) {
+    const p = steuerung.pos, art = fahrt.art, key = 'renn_' + art;
+    if (!rennen) {
+      if (Math.hypot(p.x - RENNEN[0][0], p.z - RENNEN[0][1]) < 2.8 && steuerung.tempo > 1) {
+        rennen = { n: 1, t: 0 }; ton('melodie2'); rennenZeigen(true);
+        ui.skate({ trick: '🏁 Los! ' + (RENNEN.length - 1) + ' Ringe' + (S.merke[key] ? ' · Rekord ' + S.merke[key].toFixed(1) + ' s' : '') });
+      }
+      ringe.forEach((r) => { if (r.visible) r.rotation.z += dt * 0.6; });
+      return;
+    }
+    rennen.t += dt;
+    ui.skate({ ziel: '🏁 ' + rennen.t.toFixed(1) + ' s · Ring ' + rennen.n + '/' + (RENNEN.length - 1) });
+    const [zx, zz] = RENNEN[rennen.n];
+    if (Math.hypot(p.x - zx, p.z - zz) < 2.8) {
+      rennen.n++; ton('pling'); vib(10);
+      if (rennen.n >= RENNEN.length) {
+        const t = rennen.t, alt = S.merke[key], neu = !alt || t < alt;
+        if (neu) S.merke[key] = t; sichern();
+        ui.skate({ trick: '🏆 Ziel! ' + t.toFixed(1) + ' s' + (neu ? ' – neuer Rekord!' : ' · Rekord ' + alt.toFixed(1) + ' s'), ziel: 'Zum Start: Hauptstraße West' });
+        if (neu) ton('melodie2');
+        rennen = null;
+      }
+      rennenZeigen(true);
+    }
+    if (rennen && rennen.t > 120) { rennen = null; rennenZeigen(true); ui.skate({ trick: 'Rennen abgebrochen' }); }
+  }
+  // Kicker (Holzrampen): in der Skate-Ecke und am Rand des Hofs; der Absprung steckt in steuerung.js (brettUpdate)
+  steuerung.kicker = [];
+  { const holz = new THREE.MeshLambertMaterial({ color: '#c89f74' }), metall = new THREE.MeshLambertMaterial({ color: '#7d8590' });
+    for (const [x, z, dx, dz] of [[-33.2, 6.2, -1, 0], [-41.2, 17.2, 1, 0], [-29.6, 15.6, 0, -1], [84.5, 79.6, 1, 0], [100.5, 76.0, -1, 0]]) {   // Skate-Ecke, Skatepark Junglinster
+      const L = 1.6, W = 1.3, a = 0.24, k = new THREE.Group();
+      const brett = new THREE.Mesh(new THREE.BoxGeometry(W, 0.06, L), holz); brett.rotation.x = -a; brett.position.set(0, Math.sin(a) * L / 2 + 0.03, 0); k.add(brett);
+      const stuetze = new THREE.Mesh(new THREE.BoxGeometry(W, Math.sin(a) * L, 0.08), metall); stuetze.position.set(0, Math.sin(a) * L / 2, L / 2 - 0.04); k.add(stuetze);
+      for (const sx of [-1, 1]) { const seite = new THREE.Mesh(new THREE.BoxGeometry(0.04, Math.sin(a) * L * 0.9, L * 0.9), metall); seite.position.set(sx * W / 2, Math.sin(a) * L * 0.22, 0.08); seite.scale.y = 0.5; k.add(seite); }
+      k.position.set(x, 0.1, z); k.rotation.y = Math.atan2(dx, dz); k.name = 'kicker'; scene.add(k);
+      // Absprung-Zone: das untere Drittel des Bretts (dann fliegt man über den Rest)
+      const cx = x - dx * L * 0.25, cz = z - dz * L * 0.25, hx = Math.abs(dx) > 0.5 ? 0.6 : W / 2, hz = Math.abs(dz) > 0.5 ? 0.6 : W / 2;   // tief genug, auch bei wenig Bildern pro Sekunde
+      steuerung.kicker.push({ x0: cx - hx, x1: cx + hx, z0: cz - hz, z1: cz + hz, dx, dz });
+    } }
+  function fahrtTick(dt) {
+    const f = fahrt; if (!f) return;
+    if (steuerung.brett !== f.brett) { absteigen('weg'); return; }   // ein anderes Spiel hat übernommen
+    f.uhr += dt;
+    const p = steuerung.pos;
+    if (imGespraech || !laeuft || ui.ebeneArt() || hs.aktiv || foto || skateTick) { absteigen('weg'); return; }
+    if (drinnen(p.x, p.z)) { absteigen('drinnen'); return; }
+    const kmh = Math.round(steuerung.tempo * 3.6); if (kmh > f.max) f.max = kmh;
+    // Leute vor einem: automatisch bremsen
+    if (steuerung.tempo > 2.4) {
+      const vx = Math.sin(steuerung.yaw), vz = Math.cos(steuerung.yaw);
+      const vor = (q) => { const dx = q.x - p.x, dz = q.z - p.z, d = Math.hypot(dx, dz); return d < 3.4 && d > 0.05 && (dx * vx + dz * vz) / d > 0.55; };
+      let da = false;
+      for (const x of statisten) if (!da && x.f.group.visible && vor(x.f.group.position)) da = true;
+      if (!da) for (const x of Object.values(leute)) if (!da && x.f.group.visible && vor(x.pos)) da = true;
+      if (da) { steuerung.tempo = Math.max(1.4, steuerung.tempo - dt * 16); if (f.uhr - f.warn > 6) { f.warn = f.uhr; ui.skate({ trick: '⚠️ Achtung, Leute! Langsam.' }); } }
+    }
+    ui.skate({ tacho: kmh });
+    rennenTick(dt);
+  }
+  // ---------- Fußball auf dem Stade Annexe ----------
+  const fussball = createFussball({ scene, steuerung, input, ton, vib,
+    onTor: () => { S.merke.tore = (S.merke.tore || 0) + 1; sichern(); ton('melodie2'); vib([20, 30, 20]);
+      const n = S.merke.tore; ui.toast('<b>⚽ TOOOR!</b><span>' + (n === 1 ? 'Dein erstes Tor auf dem Stade.' : n + ' Tore insgesamt.') + (n === 10 ? ' Zehn! Legende.' : '') + '</span>', 'ly-t-ent'); },
+    onPfosten: () => { const t = performance.now(); if (t - (fussball._pf || 0) > 1500) { fussball._pf = t; ui.toast('<b>Pfosten!</b><span>Knapp.</span>'); } } });
   async function spindAuf() {
     const dinge = alleDinge().filter((d) => (S.besitz || []).includes(d.id));
     const w = await ui.spind({ dinge, lampe: S.spindLampe || '', deck: S.deck || '', jetons: S.jetons || 0, gesamt: S.jetonsGesamt || 0, lernkarten: (S.lernkarten || []).length, anhaenger: S.anhaenger || null });
@@ -2207,7 +2377,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (w && w.art === 'anhaenger') { S.anhaenger = S.anhaenger === w.wert ? null : w.wert; sichern(); anhaengerDran(); ui.toast('<b>' + esc(w.name) + '</b><span>' + (S.anhaenger ? 'Hängt jetzt an dir.' : 'Bleibt im Spind.') + '</span>'); }
   }
   const ia = createInteraktionen({ welt, steuerung, ui, zustand: () => S, sichern: () => sichern(), ton, blattWahl, spindAuf: () => spindAuf(), onKabel: (id) => tiere.kabelWeg(id),
-    freiwurf: async (o) => ui.freiwurf(o), skate: () => skaten(),
+    freiwurf: async (o) => ui.freiwurf(o), skate: () => skaten(), volley: async (o) => { if (fahrt) absteigen(); return volley.spiel(o); }, volleyAktiv: () => volley.aktiv(),
     tt3d: welt.orte.tischtennis ? async (pa) => { ui.hinweis(null); const STAERKE = { ben: 1.4, jo: 1.6, ayla: 1.3, dario: 1.2, yusuf: 1.1 };
       // Leute direkt an der Platte gehen kurz zur Seite (sie stehen sonst im Spielfeld)
       const T = welt.orte.tischtennis, platz = statisten.filter((x) => !x.weg && Math.hypot(x.f.group.position.x - T.x, x.f.group.position.z - T.z) < 3.6);
@@ -2593,7 +2763,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     // Titelbild: langsame Kamerafahrt um die Schule (AAA: lebendiges Menü statt Standbild); bei „Weniger Bewegung“ fest
     if (!laeuft) { titelT += dt; const a = ui.wenigBewegung ? 0 : titelT * 0.02; camera.position.set(-36 * Math.cos(a) + 70 * Math.sin(a) * 0.5, 17 + Math.sin(titelT * 0.07) * 1.2 * (ui.wenigBewegung ? 0 : 1), 64 * Math.cos(a) + 30 * Math.sin(a)); camera.lookAt(0, 6, -10); return; }
     windZeit.value += dt; WOLKEN.value += dt; staubTick(dt); saisonTick(dt); gangRegel(dt);
-    zufall.tick(dt, laeuft && S && !imGespraech && !ui.ebeneArt() && !steuerung.brett && !hs.aktiv && !foto && !steuerung.kameraAus && !steuerung.sitzt && !probe);
+    zufall.tick(dt, laeuft && S && !imGespraech && !ui.ebeneArt() && !steuerung.brett && !volley.aktiv() && !hs.aktiv && !foto && !steuerung.kameraAus && !steuerung.sitzt && !probe);
     steuerung.update(dt);
     if (kino) kinoKamera(dt);
     // Schärfentiefe im Gespräch: scharf auf die Person im Bild, Hintergrund weich (wie Kino-Szenen)
@@ -2608,6 +2778,9 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     tt3d.tick(dt);
     if (korbSpiel) korbSpiel.tick(dt);
     if (skateTick) skateTick(dt);
+    if (fahrt) fahrtTick(dt);
+    volley.tick(dt);
+    if (S && laeuft) fussball.tick(dt);
     if (wegTick) wegTick();
     if (spieler) {
       // die eigene Figur schaut, wer spricht – oder zur nächsten Person vor ihr (nicht beim Skaten)
@@ -2818,7 +2991,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     rede, los, audio, SITZ, input, get spruch() { return { wer: !!spruchWer }; }, get naechste() { return naechste && naechste.id; },
     get probe() { return probe; }, set mutTempo(v) { mutTempo = v; },
     daten: { SCHRITTE, STATISTEN, LEUTE, BLAETTER, MATHE, LEKTIONEN, GESPRAECHE }, ia, aktion, get iaNah() { return iaNah && iaNah.tu; },
-    hs, tt3d, zufall, get spieler() { return spieler; }, vorspann: (k) => vorspann(SCHRITTE.find((x) => (x.kap || 1) === k) || SCHRITTE[0]), gesteZu, handschlagMit, get statisten() { return statisten; }, musik,
+    hs, tt3d, zufall, fussball, volley, get fahrt() { return fahrt; }, get spieler() { return spieler; }, vorspann: (k) => vorspann(SCHRITTE.find((x) => (x.kap || 1) === k) || SCHRITTE[0]), gesteZu, handschlagMit, get statisten() { return statisten; }, musik,
   };
 
   onProgress(1, '');

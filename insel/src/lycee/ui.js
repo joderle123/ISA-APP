@@ -17,7 +17,7 @@ export function createUI({ root, input, speech }) {
   const hinweis = el('button', 'ly-hinweis'); hinweis.type = 'button'; hinweis.hidden = true; hud.appendChild(hinweis);
   const toastBox = el('div', 'ly-toasts'); hud.appendChild(toastBox);
   const bingo = el('div', 'ly-bingo hud-interactive'); bingo.hidden = true; hud.appendChild(bingo);
-  const knoepfe = el('div', 'ly-knoepfe', '<button type="button" data-k="handy" title="Handy: Nachrichten (N)" aria-label="Handy"><span>📱</span><i class="ly-badge" hidden></i></button><button type="button" data-k="foto" title="Fotomodus (C)" aria-label="Fotomodus">📷</button><button type="button" data-k="raus" title="Kurz raus (P)" aria-label="Kurz raus">⏸</button><button type="button" data-k="journal" title="Journal (Tab)" aria-label="Journal">☰</button>'); hud.appendChild(knoepfe);
+  const knoepfe = el('div', 'ly-knoepfe', '<button type="button" data-k="handy" title="Handy: Nachrichten (N)" aria-label="Handy"><span>📱</span><i class="ly-badge" hidden></i></button><button type="button" data-k="fahrt" title="Fahren: R = Skateboard, T = Trottinette" aria-label="Fahren">🛹</button><button type="button" data-k="foto" title="Fotomodus (C)" aria-label="Fotomodus">📷</button><button type="button" data-k="raus" title="Kurz raus (P)" aria-label="Kurz raus">⏸</button><button type="button" data-k="journal" title="Journal (Tab)" aria-label="Journal">☰</button>'); hud.appendChild(knoepfe);
   const mutEl = el('div', 'ly-mut'); mutEl.hidden = true; hud.appendChild(mutEl);   // Anspannung während einer Mutprobe
   const skateEl = el('div', 'ly-skate'); skateEl.hidden = true; hud.appendChild(skateEl);   // Skate-Session: Zeit, Punkte, Trick
   const skateKn = el('div', 'ly-skate-knoepfe hud-interactive'); skateKn.hidden = true; hud.appendChild(skateKn);
@@ -255,6 +255,8 @@ export function createUI({ root, input, speech }) {
     if (art === 'karte' && e.code === 'Escape') { e.preventDefault(); ebeneZu(); return; }
     if (e.code === 'KeyN' && ebene.hidden && !dialogOffen && !ui.fotoAn()) { e.preventDefault(); ui.onHandy && ui.onHandy(); return; }
     if (e.code === 'KeyC' && ebene.hidden && !dialogOffen && !ui.fotoAn()) { e.preventDefault(); ui.onFoto && ui.onFoto(); return; }
+    if ((e.code === 'KeyR' || e.code === 'KeyT') && ebene.hidden && !dialogOffen && !ui.fotoAn()) { e.preventDefault(); ui.onFahrt && ui.onFahrt(e.code === 'KeyR' ? 'brett' : 'trotti'); return; }
+    if (e.code === 'KeyB' && ebene.hidden && !dialogOffen) { ui.onKlingel && ui.onKlingel(); return; }
     if (!dialogOffen) return;
     // Taste hier verbrauchen: sonst sieht die Spielsteuerung dasselbe E und startet gleich das nächste Gespräch
     if (wahlFn && /^Digit[1-5]$/.test(e.code)) { e.preventDefault(); e.stopPropagation(); const i = wahlReihe[+e.code.slice(5) - 1]; if (i !== undefined) wahlFn(i); return; }
@@ -267,6 +269,7 @@ export function createUI({ root, input, speech }) {
   // Zähler für neue Nachrichten am Handy-Knopf
   ui.handyNeu = (n) => { const b = knoepfe.querySelector('.ly-badge'); if (!b) return; b.hidden = !n; b.textContent = n > 9 ? '9+' : String(n || ''); };
   knoepfe.querySelector('[data-k="foto"]').onclick = () => { if (ebene.hidden && !dialogOffen) ui.onFoto && ui.onFoto(); };
+  knoepfe.querySelector('[data-k="fahrt"]').onclick = () => { if (ebene.hidden && !dialogOffen) ui.onFahrt && ui.onFahrt(null); };   // tippen: Brett → Trottinette → absteigen
   knoepfe.querySelector('[data-k="raus"]').onclick = () => { if (ebene.hidden && (!dialogOffen || ui.pauseImDialog)) ui.onRaus && ui.onRaus(); else if (ebene.dataset.art === 'raus' && ui.rausZu) ui.rausZu(); };
   knoepfe.querySelector('[data-k="journal"]').onclick = () => { if (ebene.hidden) ui.onJournal && ui.onJournal(); else ebeneZu(); };
 
@@ -1004,6 +1007,9 @@ export function createUI({ root, input, speech }) {
       skateKn.querySelector('[data-s="weg"]').onclick = () => { if (skateWeg) skateWeg(); };
     }
     if (z.weg) skateWeg = z.weg;
+    if (z.kopf) skateEl.querySelector('.ly-skate-kopf').textContent = z.kopf;
+    if (z.ohneTricks !== undefined) { const t = skateKn.querySelector('.ly-skate-tricks'); if (t) t.hidden = !!z.ohneTricks; }
+    if (z.tacho != null) skateEl.querySelector('[data-s="zeit"]').textContent = z.tacho + ' km/h';
     if (z.rest != null) skateEl.querySelector('[data-s="zeit"]').textContent = '⏱ ' + Math.max(0, Math.ceil(z.rest)) + ' s';
     if (z.punkte != null) skateEl.querySelector('[data-s="punkte"]').textContent = z.punkte + (z.punkte === 1 ? ' Punkt' : ' Punkte');
     if (z.combo != null) skateEl.querySelector('[data-s="combo"]').textContent = z.combo > 1 ? '×' + z.combo : '';
