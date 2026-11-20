@@ -83,6 +83,9 @@ function linien(n: number, loesungen: string[] = [], anfaenge: string[] = []): s
 }
 
 const ABC = 'ABCDEFGHIJKLMNOP'
+// gemischte Reihenfolge ohne Doppelte: Schrittweite muss teilerfremd zu n sein
+const ggt = (a: number, b: number): number => (b ? ggt(b, a % b) : a)
+const mischung = (n: number, schritt: number) => { let k = schritt; while (n > 1 && ggt(k, n) !== 1) k++; return [...Array(n).keys()].map((i) => (i * k + 1) % n) }
 
 /** Analoge Uhr als SVG, z. B. uhr('7:15') */
 function uhr(zeit: string): string {
@@ -147,6 +150,56 @@ function plan(a: any): string {
   const titel = a.titel ? `<text x="2" y="-5" font-family="Lexend" font-weight="700" font-size="6" letter-spacing="0.6" fill="var(--leise)">${esc(a.titel)}</text>` : ''
   return `<div class="plan"><svg viewBox="-2 -10 ${W * k + 4} ${H * k + 26}">${titel}<rect x="0" y="0" width="${W * k}" height="${H * k}" rx="3" fill="#fff" stroke="#1b2233" stroke-width="1.2"/>${flur}${raeume}${treppe}${start}</svg></div>`
 }
+
+// ---------------------------------------------------------------- Werkzeuge für Sachfächer (Culture générale, Vie et société)
+const jahrText = (j: number, nChr = false) => (j === 0 ? 'Chr. Geb.' : j < 0 ? `${-j} v. Chr.` : nChr ? `${j} n. Chr.` : String(j))
+function zeitleiste(a: any): string {
+  const { von, bis, schritt } = a, spanne = bis - von
+  const pos = (j: number) => ((j - von) / spanne) * 100
+  let ticks = ''
+  for (let j = Math.ceil(von / schritt) * schritt; j <= bis; j += schritt) ticks += `<div class="tick" style="left:${pos(j)}%"><span>${esc(jahrText(j, a.nChr))}</span></div>`
+  const ev = a.ereignisse.map((e: any, i: number) => {
+    const ebene = a.ebenen ? e.ebene ?? i % a.ebenen : i % 4
+    const oben = ebene % 2 === 0, hoch = ebene >= 2
+    const inhalt = e.leer ? `<span class="l">${esc(e.text)}</span>` : inl(e.text)
+    const jahr = e.jahrLeer ? `<span class="l">${esc(e.anzeige || jahrText(e.jahr, a.nChr))}</span>` : esc(e.anzeige || jahrText(e.jahr, a.nChr))
+    const p = pos(e.jahr), rand = p > 82 ? 're' : p < 18 ? 'li' : ''
+    return `<div class="ev ${oben ? 'oben' : 'unten'} ${hoch ? 'hoch' : ''} ${e.leer ? 'leer' : ''} ${rand}" style="left:${p}%"><div class="stiel"></div><div class="punkt"></div><div class="box">${e.buchstabe ? `<i class="bu">${esc(e.buchstabe)}</i>` : ''}<b>${jahr}</b>${inhalt}</div></div>`
+  }).join('')
+  return `<div class="zeitleiste" style="height:${a.hoehe || 92}mm"><div class="achse"></div>${ticks}${ev}</div>`
+}
+function beschriftListe(liste: [string, string][], spalten = 3): string {
+  return `<div class="karten-liste" style="grid-template-columns:repeat(${spalten},1fr)">${liste.map(([n, l]) => `<div><b>${esc(n)}</b><span class="linie">${l ? `<span class="l">${esc(l)}</span>` : ''}</span></div>`).join('')}</div>`
+}
+function versuch(a: any): string {
+  const L = a.loesung || {}
+  const feld = (t: string, n: number, l?: string) => `<div class="vfeld"><b>${t}</b>${linien(n, l ? [l] : [])}</div>`
+  return `<div class="versuch"><div class="vk"><span class="vi">${icon('flask')}</span><div><b>Forscherfrage</b><p>${inl(a.frage)}</p></div></div>
+  <div class="vgrid"><div><b>Material</b><ul>${a.material.map((m: string) => `<li>${inl(m)}</li>`).join('')}</ul></div><div><b>So gehst du vor</b><ol>${a.schritte.map((m: string) => `<li>${inl(m)}</li>`).join('')}</ol></div></div>
+  ${a.ohneVermutung ? '' : feld('Meine Vermutung: Was passiert?', 2, L.vermutung)}${feld('Das beobachte ich:', a.beobZeilen || 3, L.beobachtung)}${feld('Ergebnis: Das bedeutet …', a.ergZeilen || 2, L.ergebnis)}</div>`
+}
+function schneidekarten(a: any): string {
+  return `<div class="schneiden"><div class="schere">${icon('scissors')}<span>${esc(a.hinweis || 'Schneide die Karten aus.')}</span></div><div class="skarten" style="grid-template-columns:repeat(${a.spalten || 2},1fr)">${a.karten
+    .map((k: any) => `<div class="skarte ${k.typ || a.typ || ''}" style="${k.farbe || a.farbe ? `--kf:${k.farbe || a.farbe}` : ''}"><div class="sk-kopf">${icon(k.icon || a.icon || 'message-circle')}<span>${esc(k.titel || a.titel || '')}</span></div><div class="sk-text">${inl(k.text)}</div>${k.frage ? `<div class="sk-frage">${inl(k.frage)}</div>` : ''}</div>`).join('')}</div></div>`
+}
+function meinungslinie(a: any): string {
+  const pole = a.pole || ['stimmt gar nicht', 'stimmt eher nicht', 'weiß nicht', 'stimmt eher', 'stimmt genau']
+  return `<div class="meinung">${a.aussagen.map((t: string, i: number) => `<div class="ml"><div class="mt"><span class="mn">${i + 1}</span>${inl(t)}</div><div class="skala">${pole.map((p: string) => `<div><span class="kreis"></span><small>${esc(p)}</small></div>`).join('')}</div>${a.warum === false ? '' : `<div class="warum"><span>Weil …</span>${linien(1)}</div>`}</div>`).join('')}${a.hinweis ? `<div class="nur-loesung lsg-notiz">${inl(a.hinweis)}</div>` : '<div class="nur-loesung lsg-notiz">Hier gibt es kein Richtig oder Falsch. Wichtig ist eine Begründung.</div>'}</div>`
+}
+function dilemma(a: any): string {
+  return `<div class="dilemma"><div class="dg">${icon('arrows-split-2')}<div>${(Array.isArray(a.geschichte) ? a.geschichte : [a.geschichte]).map((p: string) => `<p>${inl(p)}</p>`).join('')}</div></div><div class="df">${inl(a.frage)}</div>
+  <div class="dopt" style="grid-template-columns:repeat(${a.optionen.length},1fr)">${a.optionen.map((o: string, i: number) => `<div class="do"><div class="dk"><span>${ABC[i]}</span>${inl(o)}</div><div class="dpc"><b class="pro">${icon('thumb-up')} Dafür spricht</b>${linien(a.zeilen || 2)}<b class="con">${icon('thumb-down')} Dagegen spricht</b>${linien(a.zeilen || 2)}</div></div>`).join('')}</div>
+  <div class="dent"><b>Meine Entscheidung und warum:</b>${linien(a.entscheidung || 3)}</div>${a.hinweis ? `<div class="nur-loesung lsg-notiz">${inl(a.hinweis)}</div>` : ''}</div>`
+}
+function mindmap(a: any): string {
+  const n = a.aeste.length, H = a.hoehe || 78
+  const W = 170, cx = W / 2, cy = H / 2, rx = W * 0.36, ry = H * 0.36
+  const pt = (i: number) => { const w = (-Math.PI / 2) + (i * 2 * Math.PI) / n; return [cx + rx * Math.cos(w), cy + ry * Math.sin(w)] }
+  const linien = a.aeste.map((_: any, i: number) => { const [x, y] = pt(i); return `<line x1="${cx}" y1="${cy}" x2="${x}" y2="${y}" stroke="var(--f-mittel, #c9b)" stroke-width="0.9"/>` }).join('')
+  const boxen = a.aeste.map((e: any, i: number) => { const [x, y] = pt(i); const t = typeof e === 'string' ? { text: e } : e
+    return `<div class="ast ${t.text ? '' : 'leer'}" style="left:${(x / W) * 100}%;top:${(y / H) * 100}%">${t.text ? inl(t.text) : `<span class="l">${esc(t.l || '')}</span>`}</div>` }).join('')
+  return `<div class="mindmap" style="height:${H}mm"><svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none">${linien}</svg><div class="mitte">${inl(a.mitte)}</div>${boxen}</div>`
+}
 function aufgabeKoerper(a: Aufgabe): string {
   switch (a.art) {
     case 'luecken': {
@@ -172,7 +225,7 @@ function aufgabeKoerper(a: Aufgabe): string {
         .join('')}</div>`
     }
     case 'zuordnen': {
-      const n = a.links.length, ordnung: number[] = a.ordnung || [...Array(n).keys()].map((i) => (i * 3 + 1) % n)
+      const n = a.links.length, ordnung: number[] = a.ordnung || mischung(n, 3)
       // rechts in gemischter Reihenfolge: Platz k zeigt rechts[ordnung[k]]
       const buchstabe = (i: number) => ABC[ordnung.indexOf(i)]
       let h = '<div class="zuordnen">'
@@ -199,7 +252,7 @@ function aufgabeKoerper(a: Aufgabe): string {
         .join('')}</table>`
     }
     case 'ordnen': {
-      const n = a.teile.length, ordnung: number[] = a.ordnung || [...Array(n).keys()].map((i) => (i * 2 + 1) % n)
+      const n = a.teile.length, ordnung: number[] = a.ordnung || mischung(n, 2)
       return `<div style="display:grid;gap:2.2mm">${ordnung
         .map((i) => `<div style="display:flex;gap:3mm;align-items:center"><span class="feld" style="border:0.35mm solid var(--tinte);border-radius:2mm;width:10mm;height:9mm;display:flex;align-items:center;justify-content:center;flex:none"><span class="l lsg-hand">${i + 1}</span></span><span style="font-size:12.6pt">${inl(a.teile[i])}</span></div>`)
         .join('')}</div>`
@@ -243,6 +296,20 @@ function aufgabeKoerper(a: Aufgabe): string {
         ? `<table class="raster"><tr>${it.tbl.cols.map((c: string) => `<th>${esc(c)}</th>`).join('')}</tr>${Array.from({ length: it.tbl.rows }, () => `<tr>${it.tbl.cols.map(() => '<td style="height:9mm"></td>').join('')}</tr>`).join('')}</table><div class="nur-loesung" style="font-family:Hand;color:var(--loesung);font-size:13pt;margin-top:1mm">${esc(it.l || '')}</div>`
         : `<div class="rk" style="height:${Math.round((it.raum ?? 1) * 10 + 5)}mm"><span class="l">${esc(it.l || '')}</span></div>`}</div>`).join('')}</div>`
     }
+    case 'zeitleiste':
+      return zeitleiste(a) + (a.liste ? beschriftListe(a.liste, a.spalten || 2) : '')
+    case 'beschriften':
+      return `<div class="beschriften">${a.html}</div>` + (a.liste ? beschriftListe(a.liste, a.spalten || 3) : '')
+    case 'versuch':
+      return versuch(a)
+    case 'schneidekarten':
+      return schneidekarten(a)
+    case 'meinungslinie':
+      return meinungslinie(a)
+    case 'dilemma':
+      return dilemma(a)
+    case 'mindmap':
+      return mindmap(a)
     case 'frei':
       return a.html
     default:
@@ -252,7 +319,7 @@ function aufgabeKoerper(a: Aufgabe): string {
 
 function aufgabe(a: Aufgabe, nr: number, klasse = ''): string {
   const lang = ['schreiben', 'fragen'].includes(a.art) && (a.zeilen || 0) > 12
-  return `<div class="aufgabe ${klasse} ${lang ? 'lang' : ''}"><div class="kopf"><span class="nr">${nr}</span><span class="auftrag">${inl(a.auftrag || '')}</span>${a.stufe ? stufen(a.stufe) : ''}</div>${
+  return `${a.neueSeite ? '<div class="neue-seite"></div>' : ''}<div class="aufgabe ${klasse} ${lang ? 'lang' : ''} ${a.art === 'schneidekarten' ? 'ganz' : ''}"><div class="kopf"><span class="nr">${nr}</span><span class="auftrag">${inl(a.auftrag || '')}</span>${a.stufe ? stufen(a.stufe) : ''}</div>${
     a.hilfe ? `<div class="hilfe">${inl(a.hilfe)}</div>` : ''}<div class="koerper">${aufgabeKoerper(a)}</div></div>`
 }
 
@@ -304,8 +371,11 @@ function lesenTeil(L: any, k: Kontext): string {
   } else if (r.art === 'dokumente') {
     text = `<div class="dokumente">${r.dokumente.map((d: any) => `<div class="dok ${d.stil || 'karte'}">${d.kopf ? `<div class="dk">${inl(d.kopf)}</div>` : ''}${d.text.map((z: string) => `<p>${inl(z)}</p>`).join('')}${d.gruss ? `<p class="gruss">${inl(d.gruss)}</p>` : ''}</div>`).join('')}</div>`
   } else {
-    text = r.absaetze.map((p: string, i: number) => `<p class="abs">${r.nummern === false ? '' : `<span class="n">${i + 1}</span>`}${inl(p)}</p>`).join('')
+    let n = 0
+    text = r.absaetze.map((p: string) => p.startsWith('### ') ? `<h5 class="zw">${inl(p.slice(4))}</h5>` : `<p class="abs">${r.nummern === false ? '' : `<span class="n">${++n}</span>`}${inl(p)}</p>`).join('')
   }
+  if (r.info) text += `<div class="infobox"><b>${icon(r.info.icon || 'info-circle')}${inl(r.info.titel)}</b><ul>${r.info.punkte.map((x: string) => `<li>${inl(x)}</li>`).join('')}</ul></div>`
+  if (r.bildHtml) text += `<div class="lese-bild">${r.bildHtml}</div>`
   const woerter = r.woerter?.length ? `<div class="woerter"><h5>${k.sp === 'de' ? 'Wörter' : 'Mots'}</h5>${r.woerter.map(([a, b]: [string, string]) => `<div class="w"><b>${esc(a)}</b><span>${esc(b)}</span></div>`).join('')}</div>` : ''
   k.spuren.push({ code, art: 'lesen', lektion: k.nr, titel: r.titel, sprache: k.sp, stimme: r.stimme || 'w', teile: lesenSprechtext(r, k.sp) })
   let h = '<div class="zusammen">' + teilKopf('lesen', k.sp, r.was || '')
@@ -325,7 +395,8 @@ function lesenSprechtext(r: any, sp = 'de'): { wer: string; text: string }[] {
   else if (r.art === 'gedicht') for (const s of r.strophen) { const z: string[] = Array.isArray(s) ? s : s.zeilen; t.push({ wer: '', text: z.map((x) => roh(x).trim()).map((x) => (/[.!?,;:…»]$/.test(x) ? x : x + ',')).join(' ').replace(/,$/, '.') }) }
   else if (r.art === 'anleitung') { t.push({ wer: '', text: (r.materialSprech || (sp === 'fr' ? 'Il te faut : ' : 'Du brauchst: ')) + r.material.map(roh).join(', ') + '.' }); r.schritte.forEach((x: any, i: number) => t.push({ wer: '', text: `${sp === 'fr' ? 'Étape' : 'Schritt'} ${i + 1}: ${roh(x.text)}` })); for (const p of r.danach || []) t.push({ wer: '', text: roh(p) }) }
   else if (r.art === 'dokumente') for (const d of r.dokumente) t.push({ wer: d.stimme || '', text: [d.kopf, ...d.text, d.gruss].filter(Boolean).map((z: string) => roh(z).trim()).map((z: string) => (/[.!?:,…“”"]$/.test(z) ? z : z + '.')).join(' ') })
-  else for (const p of r.absaetze) t.push({ wer: '', text: roh(p) })
+  else for (const p of r.absaetze) t.push({ wer: '', text: p.startsWith('### ') ? roh(p.slice(4)).replace(/[.:!?]?$/, '.') : roh(p) })
+  if (r.info) t.push({ wer: '', text: roh(r.info.titel).replace(/[.:!?]?$/, ': ') + r.info.punkte.map((x: string) => roh(x).replace(/[.!?]?$/, '.')).join(' ') })
   return t
 }
 
@@ -424,7 +495,7 @@ function anhang(m: any, sp: string, L: any[]): string {
   h += '</table></div></section>'
   h += `<section class="anhang lektion"><span class="marke-seite">§§B§§</span><div class="seitenkopf"><span class="marke">${sp === 'de' ? 'Anhang' : 'Annexe'} B</span><span>${esc(m.fach[sp])} · ${sp === 'de' ? 'Modul' : 'Module'} ${m.nr}</span></div><h2>${sp === 'de' ? 'Mein Lernstand' : 'Où j’en suis'}</h2><p class="klein" style="margin-bottom:4mm">${sp === 'de' ? 'Male am Ende jeder Lektion aus: grün = sicher, gelb = geht so, rot = noch nicht. Was rot ist, übst du noch einmal.' : 'Colorie à la fin de chaque leçon : vert = sûr, jaune = à peu près, rouge = pas encore.'}</p>`
   L.forEach((l, i) => { h += `<div style="margin:3mm 0 1.5mm;font-family:Lexend;font-weight:700;color:var(--f)">${i + 1} · ${inl(l.titel)}</div>` + `<div class="check">${(l.check || []).map((c: string) => `<div class="z" style="grid-template-columns:1fr 12mm 12mm 12mm"><div style="font-size:11pt;padding:1.6mm 3mm">${inl(c)}</div><div class="s"><span class="kaestchen" style="border-color:#2f8a4c"></span></div><div class="s"><span class="kaestchen" style="border-color:#c98a06"></span></div><div class="s"><span class="kaestchen" style="border-color:#d0577b"></span></div></div>`).join('')}</div>` })
-  h += `<p class="klein" style="margin-top:8mm">${esc(URHEBER[sp as 'de' | 'fr'] || '')} · ${sp === 'de' ? 'Alle Texte und Aufgaben sind selbst geschrieben; Personen sind ausgedacht. Stimmen der Hörtexte: Piper (Thorsten, Kerstin – CC0; MLS – CC BY 4.0; SIWIS – CC BY 4.0; UPMC – CC BY-SA 4.0). Schrift: Atkinson Hyperlegible, Lexend (SIL OFL). Figuren: Open Peeps (CC0). Piktogramme: Tabler Icons (MIT).' : 'Textes et exercices originaux ; personnages inventés. Voix : Piper (CC0 / CC BY 4.0 / CC BY-SA 4.0). Polices : Atkinson Hyperlegible, Lexend (SIL OFL). Figures : Open Peeps (CC0). Pictogrammes : Tabler Icons (MIT).'}</p></section>`
+  h += `<p class="klein" style="margin-top:8mm">${esc(URHEBER[sp as 'de' | 'fr'] || '')} · ${sp === 'de' ? 'Alle Texte und Aufgaben sind selbst geschrieben; Personen sind ausgedacht. Stimmen der Hörtexte: Piper (Thorsten, Kerstin – CC0; MLS – CC BY 4.0; SIWIS – CC BY 4.0; UPMC – CC BY-SA 4.0). Schrift: Atkinson Hyperlegible, Lexend (SIL OFL). Figuren: Open Peeps (CC0). Piktogramme: Tabler Icons (MIT).' + (m.quellen ? ' ' + m.quellen : '') : 'Textes et exercices originaux ; personnages inventés. Voix : Piper (CC0 / CC BY 4.0 / CC BY-SA 4.0). Polices : Atkinson Hyperlegible, Lexend (SIL OFL). Figures : Open Peeps (CC0). Pictogrammes : Tabler Icons (MIT).'}</p></section>`
   return h
 }
 

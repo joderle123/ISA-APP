@@ -400,3 +400,113 @@ ol.erkl .bsp span { font-family: Lexend; font-weight: 800; font-size: 8.5pt; let
 table.raster.stellen td { padding: 1.5mm 1mm; }
 .bruch { display: inline-flex; flex-direction: column; align-items: center; vertical-align: middle; font-size: 0.8em; line-height: 1.08; margin: 0 0.12em; font-weight: 700; }
 .bruch > span:first-child { border-bottom: 0.28mm solid currentColor; padding: 0 0.18em; }
+
+/* Karten (Culture générale, Vie et société) */
+.karte { margin: 2mm auto 3mm; border-radius: 3mm; overflow: hidden; border: 0.4mm solid var(--rahmen, #d9dee6); background: #fff; }
+.karte figcaption { font-size: 10.5pt; padding: 1.5mm 3mm; color: #475066; border-top: 0.3mm solid #e3e7ee; }
+.karte .karte-l { visibility: hidden; }
+.loesungen .karte .karte-l { visibility: visible; }
+.karten-liste { display: grid; gap: 2mm 5mm; margin: 2mm 0 3mm; font-size: 12pt; }
+.karten-liste > div { display: flex; align-items: flex-end; gap: 2mm; }
+.karten-liste b { font-family: 'Lexend'; min-width: 7mm; }
+.karten-liste .linie { flex: 1; border-bottom: 0.3mm solid #9aa3b2; height: 8mm; position: relative; }
+.karten-liste .linie .l { position: absolute; left: 1mm; bottom: 0.6mm; font-family: 'Hand'; color: var(--loesung); font-size: 14pt; visibility: hidden; }
+.loesungen .karten-liste .linie .l { visibility: visible; }
+
+/* Zeitleiste */
+.zeitleiste { position: relative; margin: 3mm 4mm 2mm; }
+.zeitleiste .achse { position: absolute; left: 0; right: 0; top: 50%; height: 2.2mm; margin-top: -1.1mm; background: linear-gradient(90deg, var(--f-mittel), var(--f)); border-radius: 2mm; }
+.zeitleiste .achse::after { content: ''; position: absolute; right: -3mm; top: -1.4mm; border-left: 4mm solid var(--f); border-top: 2.5mm solid transparent; border-bottom: 2.5mm solid transparent; }
+.zeitleiste .tick { position: absolute; top: 50%; width: 0.4mm; height: 4mm; margin-top: -2mm; background: #fff; }
+.zeitleiste .tick span { position: absolute; top: 4.6mm; left: 50%; transform: translateX(-50%); font-family: 'Lexend'; font-size: 8.5pt; color: var(--leise); white-space: nowrap; }
+.zeitleiste .ev { position: absolute; width: 0; top: 50%; }
+.zeitleiste .ev .punkt { position: absolute; left: -1.8mm; top: -1.8mm; width: 3.6mm; height: 3.6mm; border-radius: 50%; background: #fff; border: 0.8mm solid var(--f-tief); }
+.zeitleiste .ev .stiel { position: absolute; left: -0.2mm; width: 0.4mm; background: var(--f-tief); }
+.zeitleiste .ev.oben .stiel { bottom: 0; height: 9mm; } .zeitleiste .ev.oben.hoch .stiel { height: 25mm; }
+.zeitleiste .ev.unten .stiel { top: 0; height: 9mm; } .zeitleiste .ev.unten.hoch .stiel { height: 25mm; }
+.zeitleiste .ev .box { position: absolute; left: 0; transform: translateX(-50%); width: 31mm; background: #fff; border: 0.35mm solid var(--f-mittel); border-radius: 2mm; padding: 1.2mm 1.8mm; font-size: 9.6pt; line-height: 1.25; text-align: center; box-shadow: 0 0.6mm 0 var(--f-zart); }
+.zeitleiste .ev.oben .box { bottom: 9mm; } .zeitleiste .ev.oben.hoch .box { bottom: 25mm; }
+.zeitleiste .ev.unten .box { top: 9mm; } .zeitleiste .ev.unten.hoch .box { top: 25mm; }
+.zeitleiste .ev .box b { display: block; font-family: 'Lexend'; font-size: 10pt; color: var(--f-tief); }
+.zeitleiste .ev.leer .box { min-height: 12mm; }
+.zeitleiste .ev .box .l { font-family: 'Hand'; color: var(--loesung); font-size: 12pt; visibility: hidden; }
+.loesungen .zeitleiste .ev .box .l { visibility: visible; }
+.zeitleiste .ev .bu { position: absolute; left: -2.5mm; top: -2.5mm; width: 5.5mm; height: 5.5mm; border-radius: 50%; background: var(--f); color: #fff; font: 800 9pt/5.5mm 'Lexend'; font-style: normal; text-align: center; }
+
+/* Beschriften */
+.beschriften { display: flex; justify-content: center; }
+.beschriften > * { max-width: 100%; }
+.nur-l { visibility: hidden; }
+.loesungen .nur-l { visibility: visible; }
+
+/* Versuch (Forscherbogen) */
+.versuch { border: 0.5mm solid var(--f-mittel); border-radius: 4mm; overflow: hidden; }
+.versuch .vk { display: flex; gap: 3mm; align-items: center; background: var(--f-zart); padding: 3mm 4mm; }
+.versuch .vk .vi { width: 11mm; height: 11mm; border-radius: 50%; background: var(--f); color: #fff; display: flex; align-items: center; justify-content: center; flex: none; }
+.versuch .vk .vi svg { width: 6.5mm; height: 6.5mm; }
+.versuch .vk b { font-family: 'Lexend'; color: var(--f-tief); font-size: 11pt; }
+.versuch .vk p { margin: 0.5mm 0 0; font-size: 13pt; font-weight: 700; }
+.versuch .vgrid { display: grid; grid-template-columns: 1fr 1.6fr; gap: 4mm; padding: 3mm 4mm 1mm; }
+.versuch .vgrid b, .versuch .vfeld b { font-family: 'Lexend'; font-size: 10.5pt; color: var(--f-tief); }
+.versuch ul, .versuch ol { margin: 1mm 0 0; padding-left: 5mm; font-size: 11.6pt; }
+.versuch li { margin: 0.8mm 0; }
+.versuch .vfeld { padding: 1mm 4mm 2mm; border-top: 0.3mm dashed var(--f-mittel); }
+
+/* Karten zum Ausschneiden */
+.aufgabe.ganz { break-inside: auto; }
+.schneiden .schere { display: flex; align-items: center; gap: 2mm; color: var(--leise); font-size: 10pt; margin-bottom: 2mm; }
+.schneiden .schere svg { width: 5mm; height: 5mm; }
+.schneiden .skarten { display: grid; gap: 0; border-top: 0.4mm dashed #9aa3b2; border-left: 0.4mm dashed #9aa3b2; }
+.schneiden .skarte { --kf: var(--f); border-right: 0.4mm dashed #9aa3b2; border-bottom: 0.4mm dashed #9aa3b2; padding: 4mm 5mm 5mm; min-height: 46mm; break-inside: avoid; display: flex; flex-direction: column; gap: 2.5mm; }
+.schneiden .sk-kopf { display: flex; align-items: center; gap: 2mm; font-family: 'Lexend'; font-weight: 800; font-size: 9.5pt; letter-spacing: 0.06em; text-transform: uppercase; color: var(--kf); }
+.schneiden .sk-kopf svg { width: 6mm; height: 6mm; padding: 1.2mm; border-radius: 50%; background: var(--kf); color: #fff; }
+.schneiden .sk-text { font-size: 13.4pt; line-height: 1.4; flex: 1; }
+.schneiden .sk-frage { font-family: 'Lexend'; font-weight: 700; font-size: 11.5pt; color: var(--kf); border-top: 0.3mm solid #e3e7ee; padding-top: 2mm; }
+
+/* Meinungslinie */
+.meinung .ml { border: 0.35mm solid #e3e7ee; border-radius: 3mm; padding: 2.5mm 3.5mm; margin-bottom: 2.5mm; break-inside: avoid; }
+.meinung .mt { font-size: 12.6pt; font-weight: 700; display: flex; gap: 2.5mm; }
+.meinung .mn { flex: none; width: 6mm; height: 6mm; border-radius: 50%; background: var(--f-zart); color: var(--f-tief); font: 800 9.5pt/6mm 'Lexend'; text-align: center; }
+.meinung .skala { display: grid; grid-template-columns: repeat(5, 1fr); margin: 2.5mm 0 1mm; position: relative; }
+.meinung .skala::before { content: ''; position: absolute; left: 10%; right: 10%; top: 2.8mm; height: 0.6mm; background: linear-gradient(90deg, #d0577b, #c98a06, #2f8a4c); border-radius: 1mm; }
+.meinung .skala > div { display: flex; flex-direction: column; align-items: center; gap: 1mm; position: relative; }
+.meinung .kreis { width: 6mm; height: 6mm; border-radius: 50%; border: 0.5mm solid #6b7487; background: #fff; }
+.meinung small { font-size: 8.8pt; color: var(--leise); text-align: center; }
+.meinung .warum { display: flex; align-items: flex-end; gap: 2mm; }
+.meinung .warum > span { font-size: 10.5pt; color: var(--leise); white-space: nowrap; padding-bottom: 1.5mm; }
+.meinung .warum .linien { flex: 1; }
+.lsg-notiz { font-family: 'Hand'; color: var(--loesung); font-size: 13pt; margin-top: 1mm; }
+
+/* Dilemma */
+.dilemma .dg { display: flex; gap: 3mm; background: var(--f-zart); border-radius: 3mm; padding: 3mm 4mm; }
+.dilemma .dg > svg { width: 8mm; height: 8mm; flex: none; color: var(--f); }
+.dilemma .dg p { margin: 0 0 1.5mm; font-size: 12.4pt; line-height: 1.45; }
+.dilemma .df { font-family: 'Lexend'; font-weight: 700; font-size: 12.5pt; margin: 3mm 0 2mm; color: var(--f-tief); }
+.dilemma .dopt { display: grid; gap: 3mm; }
+.dilemma .do { border: 0.4mm solid var(--f-mittel); border-radius: 3mm; padding: 2.5mm 3mm; }
+.dilemma .dk { display: flex; gap: 2mm; font-weight: 700; font-size: 12pt; margin-bottom: 1.5mm; }
+.dilemma .dk > span { flex: none; width: 6.5mm; height: 6.5mm; border-radius: 50%; background: var(--f); color: #fff; font: 800 10pt/6.5mm 'Lexend'; text-align: center; }
+.dilemma .dpc b { display: flex; align-items: center; gap: 1.5mm; font-family: 'Lexend'; font-size: 9.5pt; margin-top: 1.5mm; }
+.dilemma .dpc b svg { width: 4mm; height: 4mm; }
+.dilemma .dpc b.pro { color: #2f8a4c; } .dilemma .dpc b.con { color: #c0392b; }
+.dilemma .dent { margin-top: 3mm; }
+.dilemma .dent b { font-family: 'Lexend'; font-size: 10.5pt; }
+
+/* Mindmap */
+.mindmap { position: relative; margin: 2mm 0; }
+.mindmap svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+.mindmap .mitte { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background: var(--f); color: #fff; font-family: 'Lexend'; font-weight: 800; font-size: 13pt; padding: 3mm 5mm; border-radius: 10mm; text-align: center; max-width: 52mm; }
+.mindmap .ast { position: absolute; transform: translate(-50%, -50%); background: #fff; border: 0.45mm solid var(--f-mittel); border-radius: 3mm; padding: 1.8mm 3mm; font-size: 11pt; text-align: center; width: 36mm; min-height: 10mm; display: flex; align-items: center; justify-content: center; }
+.mindmap .ast.leer { border-style: dashed; }
+.mindmap .ast .l { font-family: 'Hand'; color: var(--loesung); font-size: 12.5pt; visibility: hidden; }
+.loesungen .mindmap .ast .l { visibility: visible; }
+
+/* Sachtext: Zwischenüberschrift, Infobox, Bild */
+.lesetext h5.zw { font-family: 'Lexend'; font-size: 12.5pt; color: var(--f-tief); margin: 3mm 0 1mm; }
+.infobox { margin-top: 3mm; background: var(--regel-zart); border-radius: 3mm; padding: 2.5mm 4mm; }
+.infobox > b { display: flex; align-items: center; gap: 2mm; font-family: 'Lexend'; color: #8a5d00; font-size: 11pt; }
+.infobox > b svg { width: 5mm; height: 5mm; }
+.infobox ul { margin: 1mm 0 0; padding-left: 5mm; font-size: 11.6pt; }
+.lese-bild { margin-top: 3mm; }
+.zeitleiste .ev.re .box { transform: translateX(-90%); }
+.zeitleiste .ev.li .box { transform: translateX(-10%); }
