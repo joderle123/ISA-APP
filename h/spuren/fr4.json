@@ -1,0 +1,506 @@
+{
+ "modul": "fr4",
+ "titel": {
+  "de": "Medien und Stars",
+  "fr": "Médias et stars"
+ },
+ "sprache": "fr",
+ "spuren": {
+  "fr4-01l": {
+   "titel": "En bref",
+   "art": "lesen",
+   "lektion": 1,
+   "dauer": 44.8,
+   "text": [
+    [
+     "",
+     "En bref"
+    ],
+    [
+     "",
+     "Ettelbruck : 200 arbres pour l’école. Mardi dernier, 60 élèves du lycée ont planté 200 arbres derrière leur école. « Nous voulons plus de nature », explique Léo, 13 ans. Le projet a duré toute la journée."
+    ],
+    [
+     "",
+     "Concert : record pour Nora Valen. Samedi soir, 3000 personnes sont venues au concert de la jeune chanteuse à Esch-sur-Alzette. Nora Valen a 20 ans. Elle a chanté pendant deux heures."
+    ],
+    [
+     "",
+     "Météo : la neige arrive ! Demain matin, il va neiger dans le nord du pays. Les bus vont rouler plus lentement. Attention sur le chemin de l’école !"
+    ]
+   ]
+  },
+  "fr4-01h": {
+   "titel": "Le flash info",
+   "art": "hoeren",
+   "lektion": 1,
+   "dauer": 41.0,
+   "text": [
+    [
+     "Mia",
+     "Bonjour à tous, il est sept heures et demie. Voici le flash info des jeunes !"
+    ],
+    [
+     "Yusuf",
+     "D’abord, la circulation. Ce matin, un camion est en panne sur la route entre Mersch et Ettelbruck. Il n’y a pas de blessés, mais les bus ont vingt minutes de retard."
+    ],
+    [
+     "Mia",
+     "Ensuite, le sport. Hier soir, l’équipe de basket des filles de Wiltz a gagné la finale : soixante-deux à cinquante-huit ! Bravo !"
+    ],
+    [
+     "Yusuf",
+     "Et enfin, une bonne nouvelle pour les lecteurs : à partir de lundi, la bibliothèque de la ville ouvre aussi le samedi après-midi."
+    ],
+    [
+     "Mia",
+     "C’était le flash info. Bonne journée et à demain !"
+    ]
+   ]
+  },
+  "fr4-02l": {
+   "titel": "Ma commune, mon avis",
+   "art": "lesen",
+   "lektion": 2,
+   "dauer": 40.1,
+   "text": [
+    [
+     "",
+     "Ma commune, mon avis"
+    ],
+    [
+     "",
+     "Ana. Ce que j’aime dans ma commune, c’est le grand parc. Il y a beaucoup d’arbres et une piscine en plein air. Mais il manque un endroit pour les jeunes le soir."
+    ],
+    [
+     "",
+     "Tom. Je ne suis pas content. Il y a trop de voitures et de bruit dans la rue principale. Il n’y a aucune piste cyclable pour aller au lycée. Je suis pour une rue sans voitures le samedi !"
+    ],
+    [
+     "",
+     "Sofia. Moi, je suis contre une rue sans voitures : les magasins vont perdre des clients. Ce qui me plaît, c’est le nouveau cinéma. Mais les places coûtent trop cher."
+    ]
+   ]
+  },
+  "fr4-02h": {
+   "titel": "Le portable à la récré : pour ou contre ?",
+   "art": "hoeren",
+   "lektion": 2,
+   "dauer": 48.7,
+   "text": [
+    [
+     "Mme Nouvelle",
+     "Bonjour à tous. Aujourd’hui, une question : le portable pendant la récréation, vous êtes pour ou contre ? Ben ?"
+    ],
+    [
+     "Ben",
+     "Moi, je suis pour. Pendant la récré, on peut écouter de la musique ou envoyer un message. Ce n’est pas grave."
+    ],
+    [
+     "Inès",
+     "Je ne suis pas d’accord. Avec le portable, personne ne parle. Tout le monde regarde son écran. Ce que je préfère, c’est jouer dehors avec les copains."
+    ],
+    [
+     "Rui",
+     "Moi, je suis d’accord avec Inès. Et parfois, il y a des photos ou des vidéos de la cour sur internet. Ça, ce n’est pas bien."
+    ],
+    [
+     "Ben",
+     "Bon… Peut-être le portable seulement dans un coin de la cour ?"
+    ],
+    [
+     "Mme Nouvelle",
+     "C’est une bonne idée de compromis ! On vote la semaine prochaine."
+    ]
+   ]
+  },
+  "fr4-03l": {
+   "titel": "Le Festival des Jeunes",
+   "art": "lesen",
+   "lektion": 3,
+   "dauer": 49.4,
+   "text": [
+    [
+     "",
+     "Le Festival des Jeunes"
+    ],
+    [
+     "",
+     "Festival des Jeunes – Parc de la Ville, Mersch · 14 et 15 juin · entrée gratuite. Samedi 14 juin : 14 h atelier graffiti (sur inscription) · 16 h tournoi de basket · 20 h concert de Nora Valen. Dimanche 15 juin : 10 h course de 5 km · 14 h atelier radio : fais ton émission ! · 17 h cinéma en plein air : « Le Phare des étoiles ». Stands de nourriture · Bus gratuits de la gare de Mersch toutes les 30 minutes."
+    ],
+    [
+     "",
+     "Message de Mia à Ben. Ben ! Tu as vu le programme du festival ? J’ai trop envie de voir Nora Valen ! Tu y vas samedi ? On prend le bus ensemble ?"
+    ]
+   ]
+  },
+  "fr4-03h": {
+   "titel": "Tu y vas ?",
+   "art": "hoeren",
+   "lektion": 3,
+   "dauer": 45.8,
+   "text": [
+    [
+     "Ben",
+     "Salut Mia ! Alors, le festival, tu y vas samedi ?"
+    ],
+    [
+     "Mia",
+     "Oui, j’y vais ! J’ai envie de voir le concert de Nora Valen à vingt heures."
+    ],
+    [
+     "Ben",
+     "Moi aussi ! Mais avant, je voudrais faire le tournoi de basket à seize heures. Tu viens avec moi ?"
+    ],
+    [
+     "Mia",
+     "Le basket ? Bof… Je vais plutôt à l’atelier graffiti à quatorze heures. Je me suis déjà inscrite."
+    ],
+    [
+     "Ben",
+     "D’accord. Alors on se retrouve à dix-neuf heures trente devant la scène ?"
+    ],
+    [
+     "Mia",
+     "Parfait. Et dimanche, tu fais la course ?"
+    ],
+    [
+     "Ben",
+     "Non, je n’ai pas envie de courir cinq kilomètres ! Mais je vais au cinéma en plein air."
+    ],
+    [
+     "Mia",
+     "Super, moi aussi ! À demain !"
+    ]
+   ]
+  },
+  "fr4-04l": {
+   "titel": "Nora Valen, la voix d’Esch",
+   "art": "lesen",
+   "lektion": 4,
+   "dauer": 58.1,
+   "text": [
+    [
+     "",
+     "Nora Valen, la voix d’Esch"
+    ],
+    [
+     "",
+     "Nora Valen est née en 2006 à Esch-sur-Alzette. Elle a grandi dans une famille de musiciens : sa mère joue du violon et son grand-père chante dans une chorale."
+    ],
+    [
+     "",
+     "À six ans, elle a commencé le piano. Pendant son enfance, elle a chanté dans la chorale de l’école. Elle a écrit sa première chanson à douze ans."
+    ],
+    [
+     "",
+     "En 2022, elle a gagné un concours de jeunes talents à la télévision. À partir de ce jour, beaucoup de gens connaissent son nom."
+    ],
+    [
+     "",
+     "Entre 2023 et 2025, elle a donné plus de cent concerts au Luxembourg, en France et en Belgique. Elle chante en français, en anglais et en luxembourgeois."
+    ],
+    [
+     "",
+     "Aujourd’hui, Nora a vingt ans. Ce qu’elle aime le plus ? « Les concerts dans les petites salles, tout près du public. » Son nouvel album sort en mars."
+    ]
+   ]
+  },
+  "fr4-04h": {
+   "titel": "Trois questions à Nora Valen",
+   "art": "hoeren",
+   "lektion": 4,
+   "dauer": 48.6,
+   "text": [
+    [
+     "Chloé",
+     "Bonjour Nora, merci d’être là ! Comment est-ce que vous avez commencé la musique ?"
+    ],
+    [
+     "Nora",
+     "Bonjour ! J’ai commencé le piano à six ans. Mais je chante depuis toujours !"
+    ],
+    [
+     "Chloé",
+     "Quel a été le plus beau moment de votre carrière ?"
+    ],
+    [
+     "Nora",
+     "Le concours à la télévision, en 2022. J’ai eu très peur, mais j’ai gagné !"
+    ],
+    [
+     "Chloé",
+     "Vous connaissez beaucoup de stars ?"
+    ],
+    [
+     "Nora",
+     "Je connais quelques chanteurs, oui. Mais mes vrais amis, ce sont mes copains d’école à Esch."
+    ],
+    [
+     "Chloé",
+     "Et vos projets ?"
+    ],
+    [
+     "Nora",
+     "Ce soir, je vais chanter au festival ! Et en mars, mon nouvel album va sortir. Je ne sais pas encore le titre… C’est un secret !"
+    ],
+    [
+     "Chloé",
+     "Merci, Nora, et bon concert !"
+    ]
+   ]
+  },
+  "fr4-05l": {
+   "titel": "Petites annonces",
+   "art": "lesen",
+   "lektion": 5,
+   "dauer": 45.3,
+   "text": [
+    [
+     "",
+     "Petites annonces"
+    ],
+    [
+     "",
+     "La radio des jeunes cherche… … des présentateurs et des présentatrices de 12 à 16 ans pour l’émission du mercredi. Tu es curieux ou curieuse, tu parles clairement et tu n’as pas peur du micro ? Écris-nous !"
+    ],
+    [
+     "",
+     "Le club vidéo cherche… … un caméraman ou une camérawoman pour filmer les matchs du samedi. Tu dois être patient, sérieux et organisé. Pas d’expérience ? Pas de problème : on t’apprend !"
+    ],
+    [
+     "",
+     "Le journal de l’école cherche… … des journalistes et des photographes. Tu aimes écrire, tu es créatif ou créative ? Rendez-vous lundi à 13 h, salle 108."
+    ]
+   ]
+  },
+  "fr4-05h": {
+   "titel": "Votre métier, c’est comment ?",
+   "art": "hoeren",
+   "lektion": 5,
+   "dauer": 48.0,
+   "text": [
+    [
+     "Sami",
+     "Bonjour, Madame Duval. Merci pour l’interview ! Quel est votre métier ?"
+    ],
+    [
+     "Mme Duval",
+     "Bonjour, Sami. Je suis documentaliste : je travaille au CDI, la bibliothèque du lycée. Je conseille les élèves et je commande les livres."
+    ],
+    [
+     "Sami",
+     "Et avant, vous avez fait quoi ?"
+    ],
+    [
+     "Mme Duval",
+     "Avant, j’ai été journaliste pendant dix ans. J’ai écrit des articles pour un journal de Luxembourg."
+    ],
+    [
+     "Sami",
+     "Pourquoi est-ce que vous avez changé de métier ?"
+    ],
+    [
+     "Mme Duval",
+     "Parce que j’aime travailler avec les jeunes. Et j’adore les livres !"
+    ],
+    [
+     "Sami",
+     "Quelles qualités faut-il pour ce métier ?"
+    ],
+    [
+     "Mme Duval",
+     "Il faut être curieux, patient et organisé. Et il faut aimer lire, bien sûr !"
+    ],
+    [
+     "Sami",
+     "Merci beaucoup, Madame."
+    ]
+   ]
+  },
+  "fr4-06l": {
+   "titel": "Le top 5 de la classe",
+   "art": "lesen",
+   "lektion": 6,
+   "dauer": 51.2,
+   "text": [
+    [
+     "",
+     "Le top 5 de la classe"
+    ],
+    [
+     "",
+     "Nos films préférés – sondage de la classe 7P2, 22 élèves. Numéro 1 : « Le Phare des étoiles », film d’aventure, 8 voix. Numéro 2 : « Robots en vacances », film d’animation, 6 voix. Numéro 3 : « Rire au collège », comédie, 4 voix. Numéro 4 : « Planète Zéro », film de science-fiction, 3 voix. Numéro 5 : « L’Ombre du port », série policière, 1 voix."
+    ],
+    [
+     "",
+     "L’avis de Yusuf. « Robots en vacances » est plus drôle que « Le Phare des étoiles ». Les dessins sont plus beaux et l’histoire est moins triste. Pour moi, c’est le meilleur film de l’année ! Mais « Planète Zéro » est aussi bien : les effets spéciaux sont les plus impressionnants."
+    ]
+   ]
+  },
+  "fr4-06h": {
+   "titel": "Lequel est le meilleur ?",
+   "art": "hoeren",
+   "lektion": 6,
+   "dauer": 45.3,
+   "text": [
+    [
+     "Ben",
+     "Tu as vu « Planète Zéro » ? C’est le meilleur film de science-fiction de l’année !"
+    ],
+    [
+     "Chloé",
+     "Oui, je l’ai vu. Les effets spéciaux sont super, mais l’histoire est moins intéressante que dans « Le Phare des étoiles »."
+    ],
+    [
+     "Ben",
+     "Pas d’accord ! « Le Phare des étoiles » est plus lent. Moi, je préfère l’action."
+    ],
+    [
+     "Chloé",
+     "Et les séries ? Tu regardes « L’Ombre du port » ?"
+    ],
+    [
+     "Ben",
+     "Oui, mais la deuxième saison est moins bien que la première. Les acteurs jouent plus mal."
+    ],
+    [
+     "Chloé",
+     "Moi, je trouve que l’actrice principale joue mieux que dans la première saison !"
+    ],
+    [
+     "Ben",
+     "Bon, on n’est jamais d’accord, nous deux !"
+    ],
+    [
+     "Chloé",
+     "C’est vrai ! Mais on est d’accord sur une chose : « Robots en vacances » est aussi drôle que « Rire au collège » !"
+    ]
+   ]
+  },
+  "fr4-07l": {
+   "titel": "Une vache en promenade",
+   "art": "lesen",
+   "lektion": 7,
+   "dauer": 37.8,
+   "text": [
+    [
+     "",
+     "Une vache en promenade"
+    ],
+    [
+     "",
+     "Mardi matin, à Hosingen, une vache est sortie de son pré. Elle a marché tranquillement sur la route nationale."
+    ],
+    [
+     "",
+     "D’abord, un automobiliste a vu l’animal et a appelé la police. Ensuite, les voitures se sont arrêtées pendant vingt minutes."
+    ],
+    [
+     "",
+     "Puis, un jeune agriculteur de 17 ans est arrivé avec un seau de pommes. La vache l’a suivi jusqu’au pré !"
+    ],
+    [
+     "",
+     "Finalement, tout le monde a applaudi. « Je n’ai jamais vu ça ! », raconte une conductrice. Il n’y a pas eu de blessés."
+    ]
+   ]
+  },
+  "fr4-07h": {
+   "titel": "Un chien sauvé de la Moselle",
+   "art": "hoeren",
+   "lektion": 7,
+   "dauer": 48.5,
+   "text": [
+    [
+     "Journaliste",
+     "Bonsoir ! Hier après-midi, à Remich, un petit chien est tombé dans la Moselle. Le courant était fort."
+    ],
+    [
+     "Journaliste",
+     "Un jeune homme de 19 ans, Kevin, a vu le chien. Il n’a pas sauté dans l’eau : il a appelé les pompiers et il a lancé une bouée. Les pompiers sont arrivés dix minutes plus tard et ils ont sorti le chien de l’eau."
+    ],
+    [
+     "Journaliste",
+     "Monsieur, vous avez vu la scène ?"
+    ],
+    [
+     "Témoin",
+     "Oui ! D’abord, j’ai entendu la propriétaire crier. Puis j’ai vu le jeune homme courir avec la bouée. Il a été très calme !"
+    ],
+    [
+     "Journaliste",
+     "Et le chien ?"
+    ],
+    [
+     "Témoin",
+     "Il va bien. Il a un peu froid, mais il a déjà mangé ! Je n’ai jamais vu un chien aussi content."
+    ],
+    [
+     "Journaliste",
+     "Une belle histoire pour finir la semaine. Bonne soirée !"
+    ]
+   ]
+  },
+  "fr4-08l": {
+   "titel": "Notre week-end au camping",
+   "art": "lesen",
+   "lektion": 8,
+   "dauer": 55.0,
+   "text": [
+    [
+     "",
+     "Notre week-end au camping"
+    ],
+    [
+     "",
+     "Le vendredi 12 juin, notre classe est partie en train à Diekirch. Puis, nous avons marché trois kilomètres jusqu’au camping Les Trois Sapins, au bord de la Sûre."
+    ],
+    [
+     "",
+     "D’abord, nous avons monté les tentes. Ce n’était pas facile ! Ensuite, Mme Nouvelle a préparé des pâtes sur le réchaud."
+    ],
+    [
+     "",
+     "Samedi, il a fait très beau : 26 degrés ! Nous avons fait du kayak sur la rivière et nous avons joué au foot. Le soir, nous avons chanté autour du feu."
+    ],
+    [
+     "",
+     "Dimanche matin, il a plu. Nous sommes restés sous la grande tente et nous avons joué aux cartes. À midi et quart, nous sommes rentrés en bus."
+    ],
+    [
+     "",
+     "Ce qui nous a plu le plus ? Le kayak ! Ce qui nous a moins plu ? La pluie… et les moustiques ! Reportage : Léa et Yusuf"
+    ]
+   ]
+  },
+  "fr4-08h": {
+   "titel": "Météo et circulation",
+   "art": "hoeren",
+   "lektion": 8,
+   "dauer": 43.5,
+   "text": [
+    [
+     "Radio",
+     "Bonjour, il est huit heures. La météo d’aujourd’hui : ce matin, il pleut dans tout le pays. Cet après-midi, le soleil va revenir, avec dix-neuf degrés."
+    ],
+    [
+     "Radio",
+     "La circulation : attention, à cause de la pluie, la route entre Diekirch et Ettelbruck est fermée jusqu’à midi. Les bus prennent une autre route. Les trains roulent normalement."
+    ],
+    [
+     "Yusuf",
+     "Madame Nouvelle ! La route pour Ettelbruck est fermée jusqu’à midi !"
+    ],
+    [
+     "Mme Nouvelle",
+     "Merci, Yusuf ! Ce n’est pas grave : notre bus part à midi et quart. Et cet après-midi, il va faire beau."
+    ],
+    [
+     "Yusuf",
+     "Super ! Alors, on a encore le temps de jouer aux cartes !"
+    ]
+   ]
+  }
+ }
+}
