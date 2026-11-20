@@ -107,6 +107,7 @@ export const STAMM = [
       10: [['e', 'Jeff steht vor der Fundkiste. Sie ist voll mit seinen Sachen.'], ['s', 'Wasserfall! Mein Schuh! Das Kabel! Die Mütze!'], ['s', 'Das ganze Jahr. In einer Kiste.'], ['s', 'Danke, dass du immer gefragt hast. Das war nett.'], ['s', '… Wo ist eigentlich mein Rucksack?']],
     },
     reaktion: (m) => [
+      m.fundkisteWahr ? { key: 'stx_jeff_fund', zeilen: [['s', 'Weißt du was? Seit zwei Wochen verlier ich nichts mehr.'], ['s', 'Weil keiner mehr klaut. Ich bin gar kein Chaot. Fast keiner.']] } : null,
       m.handyAbgegeben ? { key: 'stx_jeff_handy', zeilen: [['s', 'Du hast ein Handy ins Sekretariat gebracht? Hab ich gehört.'], ['s', 'Wenn ich was verliere, hoffe ich auf Leute wie dich.']] } : null,
       m.fundkisteBlick >= 3 ? { key: 'stx_jeff_kiste', zeilen: [['s', 'Du schaust oft in die Fundkiste.'], ['s', 'Verlierst du auch Sachen? Willkommen im Club.']] } : null,
     ],

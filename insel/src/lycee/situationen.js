@@ -43,6 +43,9 @@ export const SIT_LEUTE = {
   // Hinter der Turnhalle, am Container (Ball auf dem Dach, Kapitel 8–9) – Pit, schon wieder
   pitDach: { szene: 'dach', wer: 'pit', name: 'Pit (6ème)', farbe: '#e9b949', aussehen: { modell: 'menschen', stil: 'Casual', haut: '#f0c9a8', haar: '#d9b36a', oben: '#e9b949', unten: '#3a3f4b', schuhe: '#4f88c8', hoehe: 1.5 }, steht: [62.4, -21.9, -2.0, 'redet'] },
   jana: { szene: 'dach', wer: 'jana', name: 'Jana (6ème)', farbe: '#2f6db0', aussehen: { modell: 'frauen', stil: 'Casual', haut: '#c68e64', haar: '#2b1d14', oben: '#2f6db0', unten: '#2d3748', schuhe: '#ffffff', hoehe: 1.57 }, steht: [60.6, -21.4, 1.6, 'redet'] },
+  // Eingangshalle, Fundkiste (Kapitel 7–8, nur mittags, wenn Jeff im Lesesaal ist)
+  tom: { szene: 'fundkiste', wer: 'tom', name: 'Tom (5ème)', farbe: '#5a6b7a', aussehen: { modell: 'menschen', stil: 'Casual2', haut: '#e0b48c', haar: '#2b1d14', oben: '#5a6b7a', unten: '#2d3748', schuhe: '#2b2b2b', hoehe: 1.8 }, steht: [7.9, -12.4, -Math.PI / 2, 'handy'] },
+  jeffSit: { szene: 'fundkiste', wer: 'jeff', unsichtbar: true, name: 'Jeff (6ème)', farbe: '#3f78b8', aussehen: { modell: 'menschen', stil: 'Casual', haut: '#f1c7a2', haar: '#d9b36a', oben: '#3f78b8', unten: '#3a3f4b', schuhe: '#e85d75', hoehe: 1.6, kopf: 'cap', kopfFarbe: '#e9b949' }, steht: [5.4, -11.4, Math.PI / 2, 'handy'] },
   rafa: { szene: 'kiste', wer: 'rafa', bleibt: true, name: 'Rafa (6ème)', farbe: '#9b7bc8', aussehen: { modell: 'menschen', stil: 'Casual2', haut: '#c68e64', haar: '#1b1410', oben: '#9b7bc8', unten: '#2d3748', schuhe: '#e9b949', hoehe: 1.56 }, steht: [1.6, -4.8, 0.3, 'handy'] },
 };
 
@@ -59,16 +62,19 @@ export const SZENEN = {
   fest: { frage: 'Was verpasst man, wenn man um jeden Preis dabei sein will?', ab: 10, bis: 10, start: { x: 60.6, z: -9.5, yaw: Math.PI }, schritt: 'k10_fest', zone: { x: 60.6, z: -13.3, r: 3.2 }, teaser: ['Mo (Gruppe)', 'Sommerfest-Afterparty hinter der Turnhalle 🍾 Psst'], titel: ['🍾', 'Die Wasserflasche', 'Das Fest ist drinnen. Und du gehörst dazu.'] },
   spiel: { frage: 'Woran erkennt man, dass ein Online-Freund nicht ehrlich ist?', ab: 9, bis: 10, start: { x: 4.7, z: 85.2, yaw: Math.PI }, zone: { x: 4.7, z: 83.1, r: 1.5 }, teaser: ['Leo_15 · Spiel-Chat', 'Hey 😊 Du spielst echt gut! Hab dir was geschenkt 🎁'], titel: ['🎮', 'Der Spielfreund', '„Erzähl es keinem“ ist der beste Grund, es jemandem zu erzählen.'] },
   dach: { frage: 'Wann ist Hilfe holen klüger als Mut?', ab: 8, bis: 9, start: { x: 60.8, z: -17.8, yaw: Math.PI }, zone: { x: 61.6, z: -21.6, r: 2.8 }, teaser: ['Pit', 'Ball auf dem Turnhallendach 😭 Hilf mal, hinten beim Container!'], titel: ['🏀', 'Das Dach', 'Die Leiter ist nicht feige. Sie ist klug.'] },
+  fundkiste: { frage: 'Was hilft, wenn man Angst vor Rache hat?', ab: 7, bis: 8, zeit: [11.9, 13.6], start: { x: 9.5, z: -10.2, yaw: -2.51 }, teaser: ['Jeff', 'Schon wieder ist meine Powerbank weg 😩 Hab ich die verloren??'], titel: ['🎒', 'Die Fundkiste', 'Wer etwas sieht und es sagt, verändert, was jemand über sich glaubt.'] },
   halle: { frage: 'Was ist der Unterschied zwischen Petzen und Hilfe holen?', ab: 7, bis: 7, start: { x: 60.4, z: -20.4, yaw: Math.PI }, zone: { x: 60.4, z: -25.4, r: 5 }, teaser: ['Unbekannt', 'HINTER DER TURNHALLE. JETZT. 👀'], titel: ['📱', 'Der Kreis', 'Wer filmt, baut die Bühne. Wer hilft, baut sie ab.'] },
 };
 
 // Wer ist wann da? (Kapitel, Schalter in den Einstellungen, was schon passiert ist)
-export function sitSichtbar(id, kap, m, risiko, schritt, schrittId) {
+export function sitSichtbar(id, kap, m, risiko, schritt, schrittId, uhr = 12) {
   const P = SIT_LEUTE[id]; if (!P) return false;
   if (P.immer) return true;
   if (!risiko) return false;
   const sz = SZENEN[P.szene]; if (!sz || kap < sz.ab) return false;
   if (sz.schritt && sz.schritt !== schrittId) return false;   // nur an diesem Tag (z. B. Sommerfest)
+  if (sz.zeit && (uhr < sz.zeit[0] || uhr > sz.zeit[1])) return false;   // nur zu dieser Uhrzeit (z. B. Mittagspause)
+  if (P.unsichtbar) return false;   // tritt nur in der Szene auf (Jeff kommt später dazu)
   const weg = m.sitWeg || {};   // gerade passiert: Wer dabei war, ist für den Rest des Schritts weg
   for (const k in weg) if (weg[k] === schritt && (k === P.szene || Object.values(SIT_LEUTE).some((q) => q.szene === k && q.wer && q.wer === P.wer))) return false;
   if (P.dauer) return true;                                   // Dex, Sina, Mo hängen ab Kapitel 4 immer an der Lichtung ab
@@ -76,9 +82,9 @@ export function sitSichtbar(id, kap, m, risiko, schritt, schrittId) {
   return kap <= (sz.bis || 10);                               // Zeitfenster vorbei: Die Situation ist vorüber, wie im echten Leben
 }
 // Ist die Situation gerade möglich? (Kapitel-Fenster, Tag, noch nicht erlebt)
-export function sitOffen(id, kap, m, schrittId) {
+export function sitOffen(id, kap, m, schrittId, uhr = 12) {
   const sz = SZENEN[id];
-  return !!sz && !m['sit_' + id] && kap >= sz.ab && kap <= (sz.bis || 10) && (!sz.schritt || sz.schritt === schrittId);
+  return !!sz && !m['sit_' + id] && kap >= sz.ab && kap <= (sz.bis || 10) && (!sz.schritt || sz.schritt === schrittId) && (!sz.zeit || (uhr >= sz.zeit[0] && uhr <= sz.zeit[1]));
 }
 
 // Auslöser: kommt man in die Nähe, beginnt die Situation (einmal); weggehen geht immer
@@ -673,6 +679,7 @@ const RUECKBLICK = {
   fest: { getrunken: 'Getrunken. Den Auftritt verpasst.', zurueck: 'Zurück zum Fest.', gefragt: 'Gefragt, was in der Flasche ist.', mitgenommen: 'Mika mit reingenommen.' },
   spiel: { ignoriert: 'Nicht geantwortet.', blockiert: 'Blockiert und gemeldet.', geschickt: 'Ein Selfie geschickt.', gezeigt: 'Herrn Kuedes alles gezeigt.' },
   dach: { leiter: 'Fernand und die Leiter geholt.', festgehalten: 'Den Container festgehalten.', zugeschaut: 'Zugeschaut.' },
+  fundkiste: { gesagt: '„Leg das zurück“ gesagt. Trotz Angst.', weg: 'Weggegangen.', kuedes: 'Herrn Kuedes Bescheid gesagt.' },
   halle: { gefilmt: 'Gefilmt.', handys: '„Handys runter“ gesagt.', hilfe: 'Hilfe geholt.', sami: 'Sich neben Sami gestellt.', mitte: 'Dazwischen gegangen.', zurueck: 'Einen Schritt zurück gemacht.' },
 };
 export function sitRueckblick(m) {
@@ -692,6 +699,8 @@ export function sitRueckblick(m) {
     if (id === 'video' && m.videoGeteilt) t += ' Und geteilt.';
     if (id === 'video' && m.lenningGesagt) t += ' Mme Lenning Bescheid gesagt.';
     if (id === 'fest' && m.mikaFestGeholfen) t += ' Bei Mika geblieben.';
+    if (id === 'fundkiste' && m.fundkisteSpaet) t += ' Später doch die Wahrheit gesagt.';
+    if (id === 'fundkiste' && m.fundkisteWahr) t += ' Jeff weiß jetzt: Er ist kein Chaot.';
     if (id === 'dach' && m.dachGeholt) t += ' Dann Fernand geholt.';
     if (id === 'spiel' && m.spielKuedes && m.sit_spiel !== 'gezeigt') t += ' Dann Herrn Kuedes Bescheid gesagt.';
     out.push({ t: sz.titel[0] + ' ' + sz.titel[1], w: t });
@@ -1049,4 +1058,73 @@ export async function dach(a) {
   await a.sag('fernand', 'Der Schuh ist von 2019. Ich häng ihn an die Fundkiste.');
   await a.sag('pitDach', '(lacht) Okay. Leiter ist besser als Fliegen.');
   a.nachricht('Pit', 'Fernand ist eigentlich voll cool. Sag’s ihm nicht.');
+}
+
+// ================= Die Fundkiste (Kapitel 7–8, Mittagspause, Eingangshalle) =================
+// Jeff „verliert jede Woche etwas“. In Wahrheit klaut ein Älterer aus seinem Rucksack, während Jeff im Lesesaal ist.
+export async function fundkiste(a) {
+  await a.sag('e', 'An der Fundkiste wühlt ein Älterer in einem Rucksack. Jeffs Rucksack.');
+  await a.sag('tom', '(steckt etwas ein) Was guckst du?');
+  await a.sag('e', 'Eine Powerbank. Mit Jeffs Aufkleber drauf. Ein Dino.');
+  await a.sag('tom', 'Der verliert eh alles. Der merkt das gar nicht.');
+  await a.sag('tom', 'Und du hast nix gesehen. Sonst bist du der Nächste.');
+  let w = await a.wahl(['„Leg das zurück.“', '(Nicken. Weggehen.)', '„Okay.“ (Und später Herrn Kuedes Bescheid sagen.)', '„Jeff merkt das. Er sucht jede Woche.“']);
+  if (w === 3) {
+    await a.sag('tom', 'Der denkt, er ist schusselig. Lustig, oder?');
+    await a.sag('e', '(Lustig ist das nicht. Jeff glaubt, mit ihm stimmt was nicht.)');
+    w = [0, 2][await a.wahl(['„Leg das zurück.“', '(Weggehen. Später Herrn Kuedes Bescheid sagen.)'])];
+  }
+  if (w === 0) {
+    await a.sag('tom', '(steht auf, ganz nah) Sonst was?');
+    const x = await a.wahl(['(Stehen bleiben. Ruhig.) „Sonst sag ich es.“', '(Zurückweichen.)']);
+    if (x === 1) { await a.sag('e', 'Du weichst zurück. Er grinst. Die Powerbank bleibt in seiner Jacke.'); w = 1; }
+    else {
+      await a.sag('e', 'Er ist einen Kopf größer. Deine Knie zittern. Du bleibst trotzdem.');
+      await a.sag('tom', '… Pff. Nimm doch.');
+      await a.sag('e', 'Er wirft die Powerbank in die Fundkiste. Und geht.');
+      a.merke('sit_fundkiste', 'gesagt');
+      await jeffWahrheit(a);
+      a.nachricht('Unbekannt', 'Pass auf, was du sagst.');
+      await a.sag('e', '(Eine Drohung. Die gehört zu Herrn Kuedes. Nicht in dein Bett.)');
+      const y = await a.wahl(['(Herrn Kuedes die Nachricht zeigen.)', '(Für dich behalten.)']);
+      if (y === 0) await kuedesFund(a);
+      return;
+    }
+  }
+  if (w === 1) {
+    a.merke('sit_fundkiste', 'weg');
+    await a.sag('e', 'Du gehst. Hinter dir zippt der Rucksack zu.');
+    await a.blende('Am Nachmittag');
+    a.nachricht('Jeff', 'Meine Powerbank ist weg 😞 Ich bin so ein Chaot.');
+    await a.sag('e', 'Jeffs Nachricht. Du weißt, dass er kein Chaot ist.');
+    const y = await a.wahl(['(Jeff die Wahrheit schreiben. Und Herrn Kuedes.)', '(Nichts tun.)']);
+    if (y === 1) { await a.sag('e', 'Jeff sucht weiter. Jede Woche. Und glaubt, es liegt an ihm.'); return; }
+    a.merke('fundkisteSpaet');
+    await kuedesFund(a);
+    await jeffWahrheit(a);
+    return;
+  }
+  // „Okay“ – und dann zu Herrn Kuedes
+  a.merke('sit_fundkiste', 'kuedes');
+  await a.sag('tom', 'Gut so.');
+  await a.sag('e', 'Er geht. Dein Herz rast. Du gehst direkt zur SePAS.');
+  await kuedesFund(a);
+  await jeffWahrheit(a);
+}
+async function kuedesFund(a) {
+  await a.blende('In der SePAS');
+  await a.sag('kaya', 'Danke. Ich kümmere mich. Niemand erfährt, von wem ich es weiß.');
+  await a.sag('kaya', 'Angst vor Rache ist normal. Genau dafür gibt es uns.');
+  await a.sag('kaya', 'Wenn er dir droht: sofort sagen. Du musst das nicht allein tragen.');
+  a.merke('fundkisteKuedes');
+}
+async function jeffWahrheit(a) {
+  await a.blende('Später, an der Fundkiste');
+  await a.sag('jeffSit', 'Meine Powerbank! Mit dem Dino! Wo war die?');
+  const x = await a.wahl(['„Jemand hat sie genommen. Du hast sie nicht verloren.“', '„In der Fundkiste.“']);
+  if (x === 1) { await a.sag('jeffSit', 'Typisch ich. Ich verlier echt alles.'); await a.sag('e', '(Tust du nicht, Jeff. Aber das weiß er nicht.)'); return; }
+  await a.sag('jeffSit', '… Genommen? Nicht verloren?');
+  await a.sag('jeffSit', 'Ich dachte immer, ich bin so. Einer, der alles verliert.');
+  await a.sag('jeffSit', 'Das stimmt ja gar nicht. Krass.');
+  a.merke('fundkisteWahr');
 }

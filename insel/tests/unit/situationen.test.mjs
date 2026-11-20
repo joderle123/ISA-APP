@@ -3,9 +3,9 @@
 // Aufruf: node --test tests/unit/situationen.test.mjs
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { SIT_LEUTE, SZENEN, SIT_ZONEN, sitSichtbar, sitOffen, sitRueckblick, sitSaetze, lichtung, laden, graffiti, halle, wette, kiste, vape, link, video, fest, spiel, dach, zurueckbringen } from '../../src/lycee/situationen.js';
+import { SIT_LEUTE, SZENEN, SIT_ZONEN, sitSichtbar, sitOffen, sitRueckblick, sitSaetze, lichtung, laden, graffiti, halle, wette, kiste, vape, link, video, fest, spiel, dach, fundkiste, zurueckbringen } from '../../src/lycee/situationen.js';
 
-const FN = { wald: lichtung, laden, graffiti, halle, wette, kiste, vape, link, video, fest, spiel, dach };
+const FN = { wald: lichtung, laden, graffiti, halle, wette, kiste, vape, link, video, fest, spiel, dach, fundkiste };
 
 // Skript-API zum Testen: Wahlen nach Liste (danach immer 0), merkt alles mit
 function api(wahlen = [], m = {}) {
@@ -60,7 +60,7 @@ test('Sichtbarkeit: Kapitel, Schalter, nach der Szene, Tante Lisette immer', () 
 test('Zonen: Szenen draußen haben einen Ort, Szenen im Schulhaus beginnen im Gespräch, öffnen nur einmal', () => {
   const ids = SIT_ZONEN.map((z) => z.id).sort();
   assert.deepEqual(ids, Object.keys(SZENEN).filter((k) => SZENEN[k].zone).sort());
-  for (const nurReden of ['kiste', 'link', 'video']) assert.ok(!ids.includes(nurReden), nurReden + ' beginnt nur im Gespräch');
+  for (const nurReden of ['kiste', 'link', 'video', 'fundkiste']) assert.ok(!ids.includes(nurReden), nurReden + ' beginnt nur im Gespräch');
   for (const z of SIT_ZONEN) { assert.equal(z.offen({}), true); assert.equal(z.offen({ ['sit_' + z.id]: 'x' }), false); }
   for (const [id, s] of Object.entries(SZENEN)) { assert.ok(s.ab >= 4 && s.ab <= 10, id); assert.equal(s.titel.length, 3); const t = Array.isArray(s.teaser[0]) ? s.teaser : [s.teaser]; for (const x of t) assert.ok(x.length === 2 && x[1].length > 5, id + ' ohne Handy-Nachricht'); }
 });
@@ -99,4 +99,12 @@ test('Zeitfenster: verpasste Situationen sind vorbei, die Clique an der Lichtung
   assert.equal(sitSichtbar('rafa', 9, {}, true, 0), false, 'Rafa ohne Szene nach dem Fenster weg');
   assert.equal(sitSichtbar('rafa', 9, { sit_kiste: 'gefragt' }, true, 0), true, 'nach der Szene bleibt Rafa');
   for (const [id, sz] of Object.entries(SZENEN)) { assert.ok(sz.bis >= sz.ab && sz.bis <= 10, id); assert.ok(sz.frage && sz.frage.endsWith('?'), id + ' ohne Reflexionsfrage'); }
+});
+
+test('Uhrzeit-Fenster: Die Fundkiste gibt es nur mittags, Jeff tritt nur in der Szene auf', () => {
+  assert.equal(sitOffen('fundkiste', 7, {}, 'x', 8.0), false);
+  assert.equal(sitOffen('fundkiste', 7, {}, 'x', 12.4), true);
+  assert.equal(sitSichtbar('tom', 7, {}, true, 0, 'x', 12.4), true);
+  assert.equal(sitSichtbar('tom', 7, {}, true, 0, 'x', 9.9), false);
+  assert.equal(sitSichtbar('jeffSit', 7, {}, true, 0, 'x', 12.4), false);
 });
