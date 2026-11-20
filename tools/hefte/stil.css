@@ -166,10 +166,10 @@ section.lektion, section.inhalt { position: relative; }
 .hoerkarte .szene { border-radius: 4mm; background: var(--hoeren-zart); padding: 5mm 6mm; position: relative; overflow: hidden; min-height: 50mm; }
 .hoerkarte .szene .wo { font-family: 'Lexend'; font-weight: 700; font-size: 9pt; letter-spacing: 0.12em; text-transform: uppercase; color: var(--hoeren); }
 .hoerkarte .szene h4 { font-family: 'Lexend'; font-weight: 800; font-size: 16pt; margin: 1mm 0 2mm; }
-.hoerkarte .szene p { font-size: 12.4pt; max-width: 66mm; }
+.hoerkarte .szene p { font-size: 12.4pt; max-width: 60mm; }
 .hoerkarte .szene h4, .hoerkarte .szene .wo { max-width: 70mm; }
-.hoerkarte .szene .bild { position: absolute; right: 3mm; bottom: 0; height: 42mm; display: flex; align-items: flex-end; }
-.hoerkarte .szene .bild svg { height: 42mm; width: auto; max-width: 25mm; }
+.hoerkarte .szene .bild { position: absolute; right: 3mm; bottom: 0; height: 39mm; display: flex; align-items: flex-end; }
+.hoerkarte .szene .bild svg { height: 39mm; width: auto; max-width: 22mm; }
 .hoerkarte .audio { grid-template-columns: 1fr; text-align: center; justify-items: center; }
 .hoerkarte .audio .qr { width: 34mm; height: 34mm; }
 .schritt { break-after: avoid; font-family: 'Lexend'; font-weight: 700; font-size: 10pt; letter-spacing: 0.08em; text-transform: uppercase; color: var(--hoeren); margin: 4mm 0 1.5mm; display: flex; align-items: center; gap: 2mm; }

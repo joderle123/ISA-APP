@@ -21,7 +21,7 @@ BELEGUNG = {
            'w2': ('de_DE-eva_k-x_low', None, 1.08, 1), 'm3': ('de_DE-karlsson-low', None, 1.04, 1.12), 'w3': ('de_DE-kerstin-medium', None, 1.08, 1.07),
            'erz': ('de_DE-kerstin-medium', None, 1.14, 1)},
     'fr': {'w1': ('fr_FR-siwis-medium', None, 1.12, 1), 'm1': ('fr_FR-upmc-medium', 1, 1.1, 1), 'w2': ('fr_FR-upmc-medium', 0, 1.1, 1),
-           'm2': ('fr_FR-mls-medium', None, 1.08, 1), 'm3': ('fr_FR-upmc-medium', 1, 1.06, 1.12), 'w3': ('fr_FR-siwis-medium', None, 1.06, 1.07),
+           'm2': ('fr_FR-upmc-medium', 1, 1.04, 0.9), 'm3': ('fr_FR-upmc-medium', 1, 1.06, 1.12), 'w3': ('fr_FR-siwis-medium', None, 1.06, 1.07),
            'erz': ('fr_FR-siwis-medium', None, 1.14, 1)},
 }
 # Wörter, die die Stimmen sonst falsch lesen (gilt für alle Hefte einer Sprache; je Heft ergänzbar über MODUL.aussprache)

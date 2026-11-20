@@ -209,7 +209,7 @@ function aufgabeKoerper(a: Aufgabe): string {
       return anf + bsp + `<div class="nur-heft">${linien(a.zeilen || 6, [], a.zeilenAnfaenge || [])}</div>`
     }
     case 'steckbrief': {
-      return `<div class="steckbrief"><div class="foto">${esc(a.bildText || 'Zeichne hier ein Symbol für dich.')}</div><div class="felder">${a.felder.map((f: string) => `<div class="feld"><span>${esc(f)}</span><span></span></div>`).join('')}</div></div>`
+      return `<div class="steckbrief"><div class="foto">${esc(a.bildText || (a.sp === 'fr' ? 'Dessine ici un symbole pour toi.' : 'Zeichne hier ein Symbol für dich.'))}</div><div class="felder">${a.felder.map((f: string) => `<div class="feld"><span>${esc(f)}</span><span></span></div>`).join('')}</div></div>`
     }
     case 'sprechen': {
       return `<div class="sprechkarte">${a.karten.map((k: any) => `<div class="karte"><b>${esc(k.titel)}</b>${[].concat(k.text).map((z: string) => `<div>${inl(z)}</div>`).join('')}</div>`).join('')}</div>`
@@ -299,7 +299,7 @@ function lesenSprechtext(r: any, sp = 'de'): { wer: string; text: string }[] {
   const t: { wer: string; text: string }[] = [{ wer: '', text: roh(r.titel) }]
   if (r.art === 'profile') for (const p of r.profile) t.push({ wer: p.stimme || '', text: roh(p.name) + '. ' + roh(p.text) })
   else if (r.art === 'chat') for (const [wer, x] of r.nachrichten) t.push({ wer: r.stimmen?.[wer] || '', text: roh(x) })
-  else if (r.art === 'anleitung') { t.push({ wer: '', text: (r.materialSprech || 'Du brauchst: ') + r.material.map(roh).join(', ') + '.' }); r.schritte.forEach((x: any, i: number) => t.push({ wer: '', text: `${sp === 'fr' ? 'Étape' : 'Schritt'} ${i + 1}: ${roh(x.text)}` })); for (const p of r.danach || []) t.push({ wer: '', text: roh(p) }) }
+  else if (r.art === 'anleitung') { t.push({ wer: '', text: (r.materialSprech || (sp === 'fr' ? 'Il te faut : ' : 'Du brauchst: ')) + r.material.map(roh).join(', ') + '.' }); r.schritte.forEach((x: any, i: number) => t.push({ wer: '', text: `${sp === 'fr' ? 'Étape' : 'Schritt'} ${i + 1}: ${roh(x.text)}` })); for (const p of r.danach || []) t.push({ wer: '', text: roh(p) }) }
   else if (r.art === 'dokumente') for (const d of r.dokumente) t.push({ wer: d.stimme || '', text: [d.kopf, ...d.text, d.gruss].filter(Boolean).map((z: string) => roh(z).trim()).map((z: string) => (/[.!?:,…“”"]$/.test(z) ? z : z + '.')).join(' ') })
   else for (const p of r.absaetze) t.push({ wer: '', text: roh(p) })
   return t
@@ -340,8 +340,8 @@ function checkTeil(L: any, k: Kontext): string {
 function lektion(L: any, k: Kontext): string {
   const m = k.modul, sp = k.sp
   let h = `<section class="lektion" id="l${k.nr}"><span class="marke-seite">§§L${k.nr}§§</span>`
-  h += `<div class="seitenkopf"><span class="marke">${sp === 'de' ? 'Lektion' : 'Leçon'} ${k.nr}</span><span>${esc(m.fach[sp])} · Modul ${m.nr} · ${esc(m.titel[sp])}</span></div>`
-  h += `<div class="auftakt"><div class="gross">${k.nr}</div><div class="text"><div class="nr">${sp === 'de' ? 'Lektion' : 'Leçon'} ${k.nr} · ${esc(L.thema)}</div><h2>${inl(L.titel)}</h2><div class="unter">${inl(L.untertitel)}</div><div class="ziel"><b>${sp === 'de' ? 'Mein Ziel:' : 'Mon but :'}</b><span>${inl(L.ziel.de)}<span class="fr">${inl(L.ziel.fr)}</span></span></div></div>${
+  h += `<div class="seitenkopf"><span class="marke">${sp === 'de' ? 'Lektion' : 'Leçon'} ${k.nr}</span><span>${esc(m.fach[sp])} · ${sp === 'de' ? 'Modul' : 'Module'} ${m.nr} · ${esc(m.titel[sp])}</span></div>`
+  h += `<div class="auftakt"><div class="gross">${k.nr}</div><div class="text"><div class="nr">${sp === 'de' ? 'Lektion' : 'Leçon'} ${k.nr} · ${esc(L.thema)}</div><h2>${inl(L.titel)}</h2><div class="unter">${inl(L.untertitel)}</div><div class="ziel"><b>${sp === 'de' ? 'Mein Ziel:' : 'Mon but :'}</b><span>${inl(L.ziel[sp])}<span class="fr">${inl(L.ziel[sp === 'de' ? 'fr' : 'de'])}</span></span></div></div>${
     L.bild ? `<div class="bild">${L.bild.map(bild).join('')}</div>` : ''}</div>`
   const block = (kopf: string, liste: any[], klasse?: string) => liste.map((a: any, i: number) => (i === 0 ? '<div class="zusammen">' + kopf : '') + aufgabe(a, ++k.zaehler, klasse) + (i === 0 ? '</div>' : '')).join('')
   if (L.start) h += block(teilKopf('start', sp, L.start.was || ''), L.start.aufgaben)
@@ -363,14 +363,14 @@ function deckblatt(m: any, sp: string, loesungen: boolean, L: any[]): string {
     ? [['book', 'var(--lesen)', 'Lesen', 'Texte aus dem Alltag'], ['headphones', 'var(--hoeren)', 'Hören', 'QR-Code scannen'], ['bulb', 'var(--regel)', 'Regeln', 'kurz und klar'], ['writing', 'var(--schreiben)', 'Schreiben', 'mit viel Platz']]
     : [['book', 'var(--lesen)', 'Lire', 'des textes du quotidien'], ['headphones', 'var(--hoeren)', 'Écouter', 'scanner le code QR'], ['bulb', 'var(--regel)', 'Règles', 'courtes et claires'], ['writing', 'var(--schreiben)', 'Écrire', 'avec beaucoup de place']]
   return `<section class="deckblatt"><svg class="muster" width="210mm" height="210mm" viewBox="0 0 210 210">${Array.from({ length: 14 }, (_, i) => `<circle cx="${(i * 37) % 210}" cy="${(i * 53) % 190}" r="${8 + (i % 4) * 6}" fill="none" stroke="#fff" stroke-width="1.4"/>`).join('')}</svg>
-  <div class="oben"><div class="fachzeile">${esc(m.fach[sp])} · ${esc(m.klasse)} · ${m.niveau}${loesungen ? ` · <span style="background:#fff;color:var(--f);padding:0.6mm 2mm;border-radius:1mm">${sp === 'de' ? 'Lösungen' : 'Solutions'}</span>` : ''}</div><h1>Modul ${m.nr}</h1><div class="titel">${esc(m.titel[sp])}</div><div class="unter">${esc(m.untertitel[sp])}</div></div>
+  <div class="oben"><div class="fachzeile">${esc(m.fach[sp])} · ${esc(m.klasse)} · ${m.niveau}${loesungen ? ` · <span style="background:#fff;color:var(--f);padding:0.6mm 2mm;border-radius:1mm">${sp === 'de' ? 'Lösungen' : 'Solutions'}</span>` : ''}</div><h1>${sp === 'de' ? 'Modul' : 'Module'} ${m.nr}</h1><div class="titel">${esc(m.titel[sp])}</div><div class="unter">${esc(m.untertitel[sp])}</div></div>
   <div class="figuren">${figuren}</div>${blasen}
   <div class="unten"><h3>${sp === 'de' ? 'So lernst du mit diesem Heft' : 'Comment apprendre avec ce cahier'}</h3><div class="medien">${medien.map(([i, f, t, s]) => `<div class="medium"><span class="ic" style="background:${f}">${icon(i)}</span><b>${t}</b>${s}</div>`).join('')}</div>
   <div class="name"><div>${sp === 'de' ? 'Name' : 'Nom'}</div><div>${sp === 'de' ? 'Klasse' : 'Classe'}</div><div>${sp === 'de' ? 'Schuljahr' : 'Année scolaire'}</div></div></div></section>`
 }
 
 function inhalt(m: any, sp: string, L: any[], seiten: Record<string, number>): string {
-  let h = `<section class="inhalt"><div class="seitenkopf"><span class="marke">Modul ${m.nr}</span><span>${esc(m.fach[sp])} · ${esc(m.titel[sp])}</span></div><h2>${sp === 'de' ? 'Inhalt' : 'Sommaire'}</h2>`
+  let h = `<section class="inhalt"><div class="seitenkopf"><span class="marke">${sp === 'de' ? 'Modul' : 'Module'} ${m.nr}</span><span>${esc(m.fach[sp])} · ${esc(m.titel[sp])}</span></div><h2>${sp === 'de' ? 'Inhalt' : 'Sommaire'}</h2>`
   let i = 0
   for (const t of m.themen) {
     h += `<div class="thema">${icon(t.icon || 'bookmark')}${esc(t.titel[sp])}</div>`
@@ -387,14 +387,14 @@ function inhalt(m: any, sp: string, L: any[], seiten: Record<string, number>): s
 }
 
 function anhang(m: any, sp: string, L: any[]): string {
-  let h = `<section class="anhang lektion"><span class="marke-seite">§§A§§</span><div class="seitenkopf"><span class="marke">${sp === 'de' ? 'Anhang' : 'Annexe'} A</span><span>${esc(m.fach[sp])} · Modul ${m.nr}</span></div><h2>${sp === 'de' ? 'Wörterliste' : 'Liste de mots'}</h2><p class="klein" style="margin-bottom:4mm">${sp === 'de' ? 'Alle neuen Wörter aus den Lesetexten, nach Lektionen. Decke eine Spalte ab und teste dich selbst.' : 'Tous les mots nouveaux, par leçon. Cache une colonne et teste-toi.'}</p><div class="zweispaltig"><table class="wortliste">`
+  let h = `<section class="anhang lektion"><span class="marke-seite">§§A§§</span><div class="seitenkopf"><span class="marke">${sp === 'de' ? 'Anhang' : 'Annexe'} A</span><span>${esc(m.fach[sp])} · ${sp === 'de' ? 'Modul' : 'Module'} ${m.nr}</span></div><h2>${sp === 'de' ? 'Wörterliste' : 'Liste de mots'}</h2><p class="klein" style="margin-bottom:4mm">${sp === 'de' ? 'Alle neuen Wörter aus den Lesetexten, nach Lektionen. Decke eine Spalte ab und teste dich selbst.' : 'Tous les mots nouveaux, par leçon. Cache une colonne et teste-toi.'}</p><div class="zweispaltig"><table class="wortliste">`
   L.forEach((l, i) => {
     const w = [...(l.lesen?.woerter || []), ...(l.wortschatz || [])]
     if (!w.length) return
     h += `<tr class="th"><td colspan="2">${i + 1} · ${inl(l.titel)}</td></tr>` + w.map(([a, b]: [string, string]) => `<tr><td>${esc(a)}</td><td class="fr">${esc(b)}</td></tr>`).join('')
   })
   h += '</table></div></section>'
-  h += `<section class="anhang lektion"><span class="marke-seite">§§B§§</span><div class="seitenkopf"><span class="marke">${sp === 'de' ? 'Anhang' : 'Annexe'} B</span><span>${esc(m.fach[sp])} · Modul ${m.nr}</span></div><h2>${sp === 'de' ? 'Mein Lernstand' : 'Où j’en suis'}</h2><p class="klein" style="margin-bottom:4mm">${sp === 'de' ? 'Male am Ende jeder Lektion aus: grün = sicher, gelb = geht so, rot = noch nicht. Was rot ist, übst du noch einmal.' : 'Colorie à la fin de chaque leçon : vert = sûr, jaune = à peu près, rouge = pas encore.'}</p>`
+  h += `<section class="anhang lektion"><span class="marke-seite">§§B§§</span><div class="seitenkopf"><span class="marke">${sp === 'de' ? 'Anhang' : 'Annexe'} B</span><span>${esc(m.fach[sp])} · ${sp === 'de' ? 'Modul' : 'Module'} ${m.nr}</span></div><h2>${sp === 'de' ? 'Mein Lernstand' : 'Où j’en suis'}</h2><p class="klein" style="margin-bottom:4mm">${sp === 'de' ? 'Male am Ende jeder Lektion aus: grün = sicher, gelb = geht so, rot = noch nicht. Was rot ist, übst du noch einmal.' : 'Colorie à la fin de chaque leçon : vert = sûr, jaune = à peu près, rouge = pas encore.'}</p>`
   L.forEach((l, i) => { h += `<div style="margin:3mm 0 1.5mm;font-family:Lexend;font-weight:700;color:var(--f)">${i + 1} · ${inl(l.titel)}</div>` + `<div class="check">${(l.check || []).map((c: string) => `<div class="z" style="grid-template-columns:1fr 12mm 12mm 12mm"><div style="font-size:11pt;padding:1.6mm 3mm">${inl(c)}</div><div class="s"><span class="kaestchen" style="border-color:#2f8a4c"></span></div><div class="s"><span class="kaestchen" style="border-color:#c98a06"></span></div><div class="s"><span class="kaestchen" style="border-color:#d0577b"></span></div></div>`).join('')}</div>` })
   h += `<p class="klein" style="margin-top:8mm">${esc(URHEBER[sp as 'de' | 'fr'] || '')} · ${sp === 'de' ? 'Alle Texte und Aufgaben sind selbst geschrieben; Personen sind ausgedacht. Stimmen der Hörtexte: Piper (Thorsten, Kerstin – CC0; MLS – CC BY 4.0; SIWIS – CC BY 4.0; UPMC – CC BY-SA 4.0). Schrift: Atkinson Hyperlegible, Lexend (SIL OFL). Figuren: Open Peeps (CC0). Piktogramme: Tabler Icons (MIT).' : 'Textes et exercices originaux ; personnages inventés. Voix : Piper (CC0 / CC BY 4.0 / CC BY-SA 4.0). Polices : Atkinson Hyperlegible, Lexend (SIL OFL). Figures : Open Peeps (CC0). Pictogrammes : Tabler Icons (MIT).'}</p></section>`
   return h
@@ -405,12 +405,14 @@ function html(m: any, L: any[], loesungen: boolean, seiten: Record<string, numbe
   const sp = m.sprache
   const css = readFileSync(join(HIER, 'stil.css'), 'utf8').replace(/FONTS_PDF\//g, pathToFileURL(join(ROOT, 'src/assets/fonts/pdf')).href + '/').replace(/FONTS\//g, pathToFileURL(join(ROOT, 'src/assets/fonts/heft')).href + '/')
   const f = m.farben
-  const fuss = `${m.fach[sp]} · Modul ${m.nr} · ${m.titel[sp]}${loesungen ? (sp === 'de' ? ' · Lösungen' : ' · Solutions') : ''}`
+  const fuss = `${m.fach[sp]} · ${sp === 'de' ? 'Modul' : 'Module'} ${m.nr} · ${m.titel[sp]}${loesungen ? (sp === 'de' ? ' · Lösungen' : ' · Solutions') : ''}`
   const seitenCss = `@page { @bottom-left { content: "${fuss.replace(/"/g, '')}"; font-family: Lexend, Atkinson, sans-serif; font-size: 8pt; color: #8a93a3; } @bottom-right { content: counter(page); font-family: Lexend; font-weight: 700; font-size: 9.5pt; color: ${f.tief}; } }`
   let body = deckblatt(m, sp, loesungen, L) + inhalt(m, sp, L, seiten)
   L.forEach((l, i) => { body += lektion(l, { modul: m, sp, nr: i + 1, zaehler: 0, spuren }) })
   body += anhang(m, sp, L)
-  return `<!doctype html><html lang="${sp}"><head><meta charset="utf-8"><title>${esc(m.fach[sp])} Modul ${m.nr}</title><style>${css}
+  // französische Typografie: geschütztes Leerzeichen vor ! ? ; : » und nach «, damit nichts allein umbricht
+  if (sp === 'fr') body = body.replace(/>([^<]+)</g, (_: string, t: string) => '>' + t.replace(/ ([!?;:»])/g, '\u00a0$1').replace(/« /g, '«\u00a0') + '<')
+  return `<!doctype html><html lang="${sp}"><head><meta charset="utf-8"><title>${esc(m.fach[sp])} ${sp === 'de' ? 'Modul' : 'Module'} ${m.nr}</title><style>${css}
 :root { --f: ${f.tief}; --f-mittel: ${f.mittel}; --f-zart: ${f.zart}; --f-tief: ${f.dunkel}; }
 ${seitenCss}</style></head><body class="${loesungen ? 'loesungen' : ''}">${body}</body></html>`
 }
