@@ -2161,8 +2161,13 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     sag: async (wer, t) => {
       const L = SIT_LEUTE[wer] || STAMM.find((q) => q.id === wer);
       const w = wer === 'zu' ? { wer: 'Ein paar Leute', farbe: '#5b6472' } : L ? { wer: L.stumm ? 'Jemand' : L.name, farbe: L.farbe } : sprecher(wer === 'du' ? 'du' : wer === 'e' ? 'erzaehler' : wer);
-      const x = statisten.find((q) => q.d.sitPerson === wer && !q.weg);
+      const x = statisten.find((q) => q.d.sitPerson === wer && !q.weg) || statisten.find((q) => q.d.stamm === wer && !q.weg && q.f.group.visible && steuerung.pos.distanceTo(q.f.group.position) < 8);
+      // Gesprächskamera wie in der Geschichte: über die Schulter auf die Person, die spricht; sprichst du, schaut die Kamera dich an
+      if (x) steuerung.fokus = x.f.group.position;
+      steuerung.gegenSchuss = wer === 'du' && !!steuerung.fokus;
       if (x && x.f.redet) x.f.redet(true);
+      { const g = gesteZu(t), f = wer === 'du' ? spieler : x && x.f; if (g && f && f.geste) setTimeout(() => f.geste(g), 250); }
+      if (spieler && spieler.redet) spieler.redet(wer === 'du');
       await ui.sprich({ ...w, text: ersetze(t) });
       if (x && x.f.redet) x.f.redet(false);
     },
@@ -2171,7 +2176,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     merke: (k, v = true) => { S.merke[k] = v; sichern(); },
     m: () => S.merke,
     nachricht: (von, t) => { (S.merke.nachrichten = S.merke.nachrichten || []).push([von, t]); },
-    teleport: (ort) => { const o = welt.orte[ort]; if (o) steuerung.teleport(o.x, o.z, o.yaw); },
+    teleport: (ort) => { const o = welt.orte[ort]; if (o) { steuerung.fokus = null; steuerung.gegenSchuss = false; steuerung.teleport(o.x, o.z, o.yaw); } },
     deko: (n, an) => { if (DORF_DEKO[n]) DORF_DEKO[n].visible = an; },
     ton,
   });
@@ -2179,7 +2184,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (imGespraech) return;
     imGespraech = true; input.setEnabled(false); steuerung.frei = false; ui.hinweis(null); if (gp) steuerung.fokus = gp;
     try { await fn(); } finally {
-      ui.dialogZu(); imGespraech = false; input.setEnabled(true); steuerung.frei = true; steuerung.fokus = null; sperreBis = performance.now() + 900; sichern(); sitSichtbarkeit();
+      ui.dialogZu(); imGespraech = false; input.setEnabled(true); steuerung.frei = true; steuerung.fokus = null; steuerung.gegenSchuss = false; if (spieler && spieler.redet) spieler.redet(false); sperreBis = performance.now() + 900; sichern(); sitSichtbarkeit();
     }
   }
   let sitLaeuft = false;
