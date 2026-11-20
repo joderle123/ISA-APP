@@ -251,6 +251,54 @@ export function baueDorf({ B, C, schild, schilder, P = null, R = null }) {
     DORF_DEKO.tagDu = tag('★', '#e9b949', 3.4, 1.0, 1.3);            // dein Kürzel (spiel.js malt die Buchstaben)
     B.frei.push({ x0: X0 - 1, x1: X1 + 1, z0: Z - 1, z1: Z + 2 });
   }
+  // Jugendhaus · Maison des Jeunes (x 8 … 30, z 111 … 127, Tür nach Osten zum Marktplatz): Sofas, Fernseher, Musik, Tischkicker,
+  // Teeküche, Bücher, Sitzsäcke – und Kim (Jugendarbeit, stammgaeste.js). Freizeit ohne Konsumzwang, Erwachsene ansprechbar.
+  { const X0 = 8, X1 = 30, Z0 = 111, Z1 = 127, H = 3.8, PUTZ = hex('#f2b880'), GLAS_J = hex('#9cc3d8');
+    const tuer = { von: 117.6, bis: 120.0, unten: 0, oben: 2.5 }, fo = [{ von: 113, bis: 116, unten: 0.9, oben: 2.4 }, { von: 121.5, bis: 125, unten: 0.9, oben: 2.4 }];
+    const fn = [{ von: 11, bis: 14.5, unten: 1.0, oben: 2.4 }, { von: 17, bis: 20.5, unten: 1.0, oben: 2.4 }, { von: 23, bis: 26.5, unten: 1.0, oben: 2.4 }];
+    wand('z', X1, Z0, Z1, 0, H, 0.3, PUTZ, [fo[0], tuer, fo[1]], { stoss: true });
+    wand('z', X0, Z0, Z1, 0, H, 0.3, PUTZ, [], { stoss: true });
+    wand('x', Z0, X0, X1, 0, H, 0.3, PUTZ, fn, { stoss: true });
+    wand('x', Z1, X0, X1, 0, H, 0.3, PUTZ, fn, { stoss: true });
+    for (const o of fo) box(X1 - 0.03, X1 + 0.03, o.unten, o.oben, o.von, o.bis, GLAS_J, { art: 'glas', stoss: true });
+    for (const o of fn) for (const z of [Z0, Z1]) box(o.von, o.bis, o.unten, o.oben, z - 0.03, z + 0.03, GLAS_J, { art: 'glas', stoss: true });
+    box(X0 - 0.3, X1 + 0.3, H, H + 0.3, Z0 - 0.3, Z1 + 0.3, hex('#5d6573'));                                                // Flachdach
+    box(X0 + 0.15, X1 - 0.15, 0, 0.07, Z0 + 0.15, Z1 - 0.15, hex('#c9a27a'), { art: 'innen' });                          // Holzboden
+    box(X0 + 0.15, X1 - 0.15, H - 0.12, H - 0.08, Z0 + 0.15, Z1 - 0.15, hex('#f4efe6'), { art: 'innen' });               // Decke
+    for (const x of [12, 19, 26]) box(x - 0.8, x + 0.8, H - 0.14, H - 0.12, 118.4, 119.6, hex('#fff6d8'), { art: 'licht' });
+    box(30.3, 40, 0, 0.05, 117.4, 120.2, C.pflaster, { art: 'innen' });                                                   // Weg zum Marktplatz
+    // Graffiti-Wand außen (legal, bunt): Schriftzug
+    { const t = schild('JUGENDHAUS · MAISON DES JEUNES', 5.2, 0.6, { bg: '#2fb8a8', rand: '#ffd166', schrift: 'bold 96px system-ui' }); t.position.set(X1 + 0.17, 3.1, 118.8); t.rotation.y = Math.PI / 2; schilders(t); }
+    { const t = schild('Offen: Mo–Fr 14–19 · Mi bis 21 · Alle willkommen', 3.0, 0.32, { bg: '#ffffff', fg: '#2b3a55', rand: '#2fb8a8', schrift: 'bold 66px system-ui' }); t.position.set(X1 + 0.17, 2.7, 116.2); t.rotation.y = Math.PI / 2; schilders(t); }
+    // innen: Plakate an der Nordwand (Innenseite)
+    for (const [x, txt, bg] of [[15.75, 'Freitag: Nein-Sagen-Runde · freiwillig', '#ffd166'], [21.75, 'Juni: Kanu-Ausflug · Liste bei Kim', '#a8e0c8'], [27.6, 'Hausaufgabenhilfe Di + Do', '#ff9ec4']]) {
+      const t = schild(txt, 1.8, 0.5, { bg, fg: '#2b3a55', rand: '#2b3a55', schrift: 'bold 54px system-ui' }); t.position.set(x, 2.75, Z0 + 0.17); schilders(t); }
+    // Tischkicker (Kästen): Feld, Rand, Beine, Stangen mit Figuren
+    { const KX = 20.5, KZ = 117.2;
+      box(KX - 0.75, KX + 0.75, 0.82, 0.88, KZ - 0.42, KZ + 0.42, hex('#2f8a3a'), { stoss: true });
+      for (const [a0, a1, b0, b1] of [[-0.78, 0.78, -0.45, -0.4], [-0.78, 0.78, 0.4, 0.45], [-0.78, -0.73, -0.45, 0.45], [0.73, 0.78, -0.45, 0.45]]) box(KX + a0, KX + a1, 0.82, 1.0, KZ + b0, KZ + b1, hex('#6b4e3a'));
+      for (const [dx, dz] of [[-0.65, -0.35], [0.65, -0.35], [-0.65, 0.35], [0.65, 0.35]]) box(KX + dx - 0.04, KX + dx + 0.04, 0, 0.82, KZ + dz - 0.04, KZ + dz + 0.04, hex('#3a3f4a'));
+      for (let i = 0; i < 6; i++) { const x = KX - 0.6 + i * 0.24; box(x - 0.012, x + 0.012, 0.95, 0.97, KZ - 0.62, KZ + 0.62, hex('#c0c6cf'));
+        for (const dz of [-0.2, 0, 0.2]) box(x - 0.025, x + 0.025, 0.86, 0.98, KZ + dz - 0.02, KZ + dz + 0.02, hex(i % 2 ? '#e85d75' : '#3f78b8')); } }
+    // Theke mit Teeküche
+    box(X0 + 0.3, X0 + 4.2, 0, 1.0, Z1 - 1.1, Z1 - 0.3, hex('#8a6a4a'), { stoss: true }); box(X0 + 0.25, X0 + 4.25, 1.0, 1.06, Z1 - 1.15, Z1 - 0.25, hex('#e9e3d0'));
+    if (P) {
+      P('mk/loungeSofa', 12.5, 124.6, Math.PI, { h: 0.9, fest: true }); P('mk/loungeDesignSofa', 16.6, 124.6, Math.PI, { h: 0.9, fest: true });
+      P('mk/tableCoffee', 14.5, 121.4, 0, { h: 0.42, fest: true }); P('mk/rugRectangle', 14.5, 121.4, 0, { s: 4.2 });
+      P('mk/televisionModern', 14.5, 112.0, 0, { h: 1.1, y: 0.62 }); P('mk/sideTableDrawers', 14.5, 111.8, 0, { h: 0.62, fest: true });
+      P('mk/speaker', 12.2, 111.8, 0, { h: 1.0, fest: 0.3 }); P('mk/speaker', 16.8, 111.8, 0, { h: 1.0, fest: 0.3 });
+      P('mk/bookcaseOpen', 8.6, 114.5, Math.PI / 2, { h: 1.9, fest: true }); P('mk/books', 8.7, 114.2, Math.PI / 2, { h: 0.25, y: 1.0 });
+      for (const [x, z] of [[10.2, 118.5], [11.2, 119.6], [9.8, 120.6]]) P('mk/pillowBlue', x, z, x, { s: 0.9 });   // Sitzsäcke
+      P('mk/radio', 25.5, 112.0, 0, { h: 0.35, y: 0.62 }); P('mk/sideTable', 25.5, 111.9, 0, { h: 0.62, fest: true });
+      P('mk/kitchenCoffeeMachine', X0 + 1.0, Z1 - 0.7, Math.PI, { h: 0.35, y: 1.06 }); P('mk/kitchenFridge', X0 + 4.9, Z1 - 0.6, Math.PI, { h: 1.8, fest: true });
+      for (const x of [X0 + 1.2, X0 + 2.4, X0 + 3.6]) P('mk/stoolBar', x, Z1 - 1.75, 0, { h: 0.75, fest: 0.2 });
+      for (const [x, z] of [[X1 - 0.8, Z0 + 0.8], [X0 + 0.8, Z1 - 2.6], [X1 - 0.8, Z1 - 0.8]]) P('mk/pottedPlant', x, z, 0, { h: 1.1, fest: 0.3 });
+      P('mk/lampRoundFloor', 10.0, 124.8, 0, { h: 1.6 });
+    }
+    if (B.sitze) for (const [x, z] of [[12.0, 124.4], [13.0, 124.4], [16.1, 124.4], [17.1, 124.4]]) B.sitze.push({ x, z, rot: Math.PI, bank: true, h: 0.45 });
+    if (R) R('jugendhaus', 'Jugendhaus', X0, X1, Z0, Z1, { decke: H - 0.3 });
+    B.frei.push({ x0: X0 - 1, x1: X1 + 11, z0: Z0 - 1, z1: Z1 + 1 });
+  }
   // Marktplatz (südlich der Épicerie, x 40 … 80, z 108 … 130) und Baustelle (x 86 … 106) – Kenney Fantasy Town 2.0 / Retro Urban / City Roads (CC0)
   { const WEG = C.pflaster;
     box(40, 80, 0, 0.05, 108, 130, hex('#d6cfc1'), { art: 'innen' }); B.frei.push({ x0: 39, x1: 81, z0: 92, z1: 131 });

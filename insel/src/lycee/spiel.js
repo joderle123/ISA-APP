@@ -2996,7 +2996,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     audio.setAmbience({ waves: 0, wind: regenJetzt > 0.05 ? (raum ? 0.12 : 0.85) * regenJetzt : (raum ? 0 : 0.35), birds: raum || regenJetzt > 0.3 ? 0 : 1, day: 1 - (sky.night || 0), night: raum ? 0 : (sky.night || 0), crowd: gewirr });
     audio.update();
     // Musik folgt dem Ort; im Gespräch werden Musik und Umgebung leiser (Ducking), damit man die Worte hört
-    if (laeuft) musik.setRegion(raum ? 'annexeDrinnen' : 'annexeHof');
+    if (laeuft) musik.setRegion(raum ? (raum.id === 'jugendhaus' ? ['strand', 'markt', 'glimmer', 'leuchtturm'][(S && S.merke && S.merke.jugendhausMusik) || 0] : 'annexeDrinnen') : 'annexeHof');
     { const d = imGespraech ? 0.55 : 0; if (Math.abs(d - (audio._duck || 0)) > 0.01) { audio._duck = d; try { audio.setDucking(d); } catch (e) { /* alt */ } } }
     musik.update();
     klangT -= dt;

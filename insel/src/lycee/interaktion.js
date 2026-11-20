@@ -70,6 +70,9 @@ export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton
   dazu(-6.8, -9, 1.4, 'Pinnwand lesen', 'pinnwand', { prio: 1 });
   dazu(-15.05, -12.55, 1.0, 'Zettel in den Sorgen-Briefkasten werfen', 'sorgen', { prio: 1 });
   dazu(-40, 99.9, 1.4, 'Am Kiosk etwas holen', 'kiosk', { prio: 1 });   // Park am Weiher
+  dazu(20.5, 116.3, 1.2, 'Tischkicker spielen', 'kicker', { prio: 1 });   // Jugendhaus
+  dazu(25.5, 112.9, 1.2, 'Musik wechseln', 'jukebox', { prio: 1 });
+  dazu(9.4, 125.0, 1.4, 'Tee holen', 'tee', { prio: 1 });
   for (const [x, z] of [[-55, 97.0], [-55, 113.0], [-65, 105]]) dazu(x, z, 1.6, 'Enten beobachten', 'enten', { prio: 0 });
   dazu(-19.3, -11.7, 0.8, 'Ein Bonbon nehmen', 'bonbon', { prio: 1 });   // Sekretariat: Glas auf der Theke
   dazu(45, -1.8, 1.3, 'In die Fundkiste schauen', 'fundkiste', { prio: 1 });
@@ -239,6 +242,20 @@ export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton
         ui.toast('<b>🏐 ' + r.punkte + ' Punkte</b><span>Längster Ballwechsel: ' + r.best + (neu ? ' – neuer Rekord!' : ' · Rekord ' + (s.merke.volleyRekord || 0)) + '</span>');
         return;
       }
+      case 'kicker': {   // Jugendhaus: kurzes Duell – Spaß, kein Druck; das Ergebnis ist mal so, mal so
+        const ich = 3 + Math.floor(Math.random() * 4), er = 3 + Math.floor(Math.random() * 4);
+        s.merke.kicker = (s.merke.kicker || 0) + 1; ton('klack'); sichern();
+        const SPRUCH = ich > er ? ['„Revanche! Morgen!“', '„Der Kicker klemmt links. Ehrlich!“'] : ich < er ? ['„Gut gespielt. Echt.“', '„Nächstes Mal tauschen wir die Seiten.“'] : ['„Unentschieden. Das Beste.“'];
+        ui.toast('<b>⚽ Kicker ' + ich + ':' + er + '</b><span>' + SPRUCH[Math.floor(Math.random() * SPRUCH.length)] + '</span>');
+        return;
+      }
+      case 'jukebox': {   // Musik im Jugendhaus wechseln (eigene synthetische Stücke)
+        const LISTE = [['strand', 'Marimba'], ['markt', 'Gezupfte Saiten'], ['glimmer', 'Arpeggios'], ['leuchtturm', 'Alle zusammen']];
+        const i = ((s.merke.jugendhausMusik || 0) + 1) % LISTE.length; s.merke.jugendhausMusik = i; sichern();
+        ui.toast('<b>🎵 ' + LISTE[i][1] + '</b><span>Jemand nickt im Takt.</span>');
+        return;
+      }
+      case 'tee': ui.toast('<b>🍵 Tee</b><span>' + ['Pfefferminz. Warm in den Händen.', 'Früchtetee. Riecht nach Sommer.', 'Kamille. Kim sagt: „Gute Wahl.“'][Math.floor(Math.random() * 3)] + '</span>'); return;
       case 'kiosk': {   // Park am Weiher: im Herbst und Frühling Eis, im Winter heiße Schokolade – einmal je Abschnitt
         const kap = Math.min(10, (s.kapitelFertig || 0) + 1), winter = kap >= 3 && kap <= 6;
         if (s.merke.kioskSchritt === s.schritt) { ui.toast('<b>' + (winter ? '☕' : '🍦') + ' Schon gehabt</b><span>„Morgen wieder!“, ruft die Frau im Kiosk.</span>'); return; }

@@ -6,10 +6,10 @@ import * as THREE from 'three';
 export const STICKER = [
   ['hof', 3, 21, '⭐', 'Schulhof'], ['korb', 29, 22.5, '🏀', 'Korbfeld'], ['skate', -38.5, 13, '🛹', 'Skate-Ecke'], ['rad', -38, 24.5, '🚲', 'Fahrradständer'],
   ['preau', 19, 6.5, '☂️', 'Préau'], ['weiher', -66.5, 96, '🦆', 'Park am Weiher'], ['bus', -17, 40.5, '🚌', 'Bushaltestelle'], ['baeckerei', 2, 54.5, '🥐', 'Bäckerei'],
-  ['west', -90, 47, '🏁', 'Hauptstraße West'], ['ost', 98, 51, '🌅', 'Hauptstraße Ost'], ['gasse', 32, 68, '🐈', 'Gasse'], ['spielplatz', 68, 78, '🎈', 'Spielplatz'],
+  ['west', -90, 47, '🏁', 'Hauptstraße West'], ['markt', 60, 124.5, '🧺', 'Marktplatz'], ['gasse', 32, 68, '🐈', 'Gasse'], ['spielplatz', 68, 78, '🎈', 'Spielplatz'],
   ['park', 92.5, 79.5, '🔥', 'Skatepark'], ['arret', 5, 85.5, '🎨', 'Arrêt Rue du Moulin'], ['moulin', 75, 87, '🍦', 'Rue du Moulin'], ['stade', -80, -8, '⚽', 'Stade Annexe'],
   ['ecke', -101, 15, '🏃', 'Laufbahn'], ['tribuene', -70.5, -10, '📣', 'Tribüne'], ['waldweg', -64, -27, '🌲', 'Waldweg'], ['linde', 2, -33, '🌳', 'Alte Linde'],
-  ['stufen', -16, -44.5, '🎭', 'Sitzstufen'], ['garten', 15, -41.5, '🌻', 'Schulgarten'], ['torost', 32, -40.5, '🗝️', 'Tor Ost'], ['werkstatt', -48, -3, '🔧', 'Werkstatt'],
+  ['stufen', -16, -44.5, '🎭', 'Sitzstufen'], ['garten', 15, -41.5, '🌻', 'Schulgarten'], ['torost', 32, -40.5, '🗝️', 'Tor Ost'], ['jugendhaus', 22, 121.5, '🎧', 'Jugendhaus'],
 ];
 export const STICKER_PREIS = { 8: 'deck', 16: 'helm', 24: 'titel' };
 

@@ -65,6 +65,23 @@ export const STAMM = [
     nochmal: ['(summt) Der Bus fährt um sieben …', 'Reim auf „Annexe“? Ich find keinen.', 'Komm nächste Woche. Neuer Vers.'],
   },
   {
+    id: 'kim', ort: 'Jugendhaus · Maison des Jeunes', steckbrief: 'Jugendarbeit im Dorf. Hat Zeit, Tee und einen Tischkicker.', name: 'Kim · Jugendhaus', farbe: '#2fb8a8',
+    aussehen: { modell: 'menschen', stil: 'Casual2', haut: '#c68e64', haar: '#2b1d14', oben: '#2fb8a8', unten: '#3a3f4b', schuhe: '#f2f2f2', hoehe: 1.74, frisur: 'locken' },
+    steht: [27.2, 118.8, -Math.PI / 2, 'redet'],
+    besuch: {
+      1: [['s', 'Hey! Ich bin Kim. Jugendarbeit hier im Jugendhaus.'], ['s', 'Hier musst du nichts. Chillen, Kicker, Musik.'], ['s', 'Und wenn was ist: Ich hör zu. Ohne Notizen.'],
+        { wahl: [{ t: '„Kostet das was?“', dann: [['s', 'Nein. Gar nichts. Tee gibt’s auch umsonst.']] }, { t: '„Wer kommt so her?“', dann: [['s', 'Alle möglichen. 7ème bis Lycée. Jeder in seinem Tempo.']] }, { t: '„Cool. Ich schau mich um.“', dann: [['s', 'Mach das. Der Kicker klemmt links ein bisschen.']] }] }],
+      4: [['s', 'In der Schule ist gerade viel los, oder?'], ['s', 'Hier drin muss niemand cool sein.'], ['s', 'Nein sagen ist schwer. Üben hilft.'], ['s', 'Freitags machen wir eine Runde dazu. Freiwillig.']],
+      7: [['s', 'Du kommst öfter. Das freut mich.'], ['s', 'Manche kommen her, weil sie Ruhe brauchen.'], ['s', 'Andere, weil draußen zu viel los ist.'], ['s', 'Beides ist okay.']],
+      10: [['s', 'Bald Sommer. Das Jugendhaus hat dann auch offen.'], ['s', 'Ausflüge, Kanu, Grillen. Ganz ohne Schule.'], ['s', 'Komm vorbei. Auch einfach so.']],
+    },
+    reaktion: (m) => [
+      m.teamFair ? { key: 'stx_kim_fair', zeilen: [['s', 'Jeff hat erzählt: Ihr habt beim Fußball abgezählt.'], ['s', 'Genau so. Keiner bleibt übrig.']] } : null,
+      m.kicker >= 3 ? { key: 'stx_kim_kicker', zeilen: [['s', 'Du bist ja schon Kicker-Profi.'], ['s', 'Freitag ist Turnier. Teams werden gelost.']] } : null,
+    ],
+    nochmal: ['Tee? Pfefferminz oder Früchte.', 'Der Kicker klemmt links. Tradition.', 'Musik? Such dir was aus. Die Box steht am Fenster.'],
+  },
+  {
     id: 'zoe', ort: 'Eingangshalle', steckbrief: 'Macht die Schülerzeitung. Jede Woche eine Umfrage.', name: 'Zoé · Annexe News', farbe: '#e85d75',
     aussehen: { modell: 'frauen', stil: 'Casual', haut: '#8d5a3b', haar: '#1b1410', oben: '#e85d75', unten: '#2d3748', schuhe: '#ffffff', hoehe: 1.58 },
     steht: [-4.4, -6.4, 0.3, 'redet'],
