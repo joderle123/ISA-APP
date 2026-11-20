@@ -12,7 +12,10 @@ export const mische = (hex, ziel, anteil) => '#' + [0, 2, 4].map((i) => Math.rou
 export const SACH_AUSSPRACHE = {
   // zuerst: Notrufnummern und feste Beispiele (sonst greifen die Jahreszahl- und Einheiten-Regeln)
   '\\b112\\b': 'eins eins zwei', '116 111': 'eins eins sechs, eins eins eins', '8002 1234': 'acht null null zwei, eins zwei drei vier',
-  'MHBfg3W!': 'M, H, B, f, g, drei, W, Ausrufezeichen', 'JOJO15': 'Jojo fünfzehn', 'BEE SECURE': 'Bie Sikjur',
+  'MHBfjAg3WmS!': 'M, H, B, f, j, A, g, drei, W, m, S, Ausrufezeichen', 'JOJO15': 'Jojo fünfzehn', 'BEE SECURE': 'Bie Sikjur',
+  '\\bUND\\b': 'und', '\\bODER\\b': 'oder', 'Cześć': 'Tschäschtsch', 'Olá': 'Ola', '\\bHej\\b': 'Hei', '8002 5500': 'acht null null zwei, fünf fünf null null',
+  // Tausender mit Leerzeichen („300 000“) als eine Zahl lesen
+  '(\\d)[  ](\\d{3})\\b': '\\1\\2', '(\\d+)/(\\d\\d)\\b': '\\1 auf \\2',
   '\\bv\\. ?Chr\\.': 'vor Christus', '\\bn\\. ?Chr\\.': 'nach Christus', '\\bz\\. ?B\\.': 'zum Beispiel', '\\bca\\.': 'zirka', '\\bbzw\\.': 'beziehungsweise',
   '\\bd\\. ?h\\.': 'das heißt', '\\bJh\\.': 'Jahrhundert', '\\busw\\.': 'und so weiter', '\\bu\\. ?a\\.': 'unter anderem', '\\bNr\\.': 'Nummer', '\\bStd\\.': 'Stunden',
   // doppelte Angaben in Klammern nicht zweimal vorlesen: „vor Christus (vor Christus)“, „Grad Celsius (°C)“

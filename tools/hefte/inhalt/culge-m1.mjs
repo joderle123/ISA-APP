@@ -10,7 +10,7 @@ export const MODUL = sachModul('culge', 1, {
   titel: 'Zusammen leben – Spuren der Zeit',
   titelFr: 'Vivre ensemble – traces du temps',
   unter: 'Regeln und Klassenrat, Zeitleisten und Quellen, Steinzeit, Römer und Burgen in Luxemburg – und die Frage: Was kann ich gut? In acht Lektionen.',
-  unterFr: 'Règles et conseil de classe, frise chronologique et sources, préhistoire, Romains et châteaux au Luxembourg – et : qu’est-ce que je sais bien faire ?',
+  unterFr: 'Règles et conseil d’élèves, frise chronologique et sources, préhistoire, Romains et châteaux au Luxembourg – et : qu’est-ce que je sais bien faire ?',
   farbe: '#8a5a2b',
   deckbild: ['lina:froh:stehen-zeigen', 'opa:froh:stehen', 'finn:froh:blatt'],
   blasen: [{ t: 'Wann war das?', x: 14, y: 112 }, { t: 'Woher weiß man das?', x: 112, y: 98 }, { t: 'Abstimmen!', x: 164, y: 150 }],
@@ -44,7 +44,7 @@ export const LEKTIONEN = [
         '### Respekt',
         'Wir grüßen einander und sprechen freundlich. Niemand wird ausgelacht, beleidigt oder ausgeschlossen – auch nicht im Klassenchat. Wer Probleme hat, darf jederzeit eine Vertrauensperson ansprechen.',
         '### Pünktlichkeit und Material',
-        'Der Unterricht beginnt um 8:00 Uhr. Wir sind pünktlich und haben unser Material dabei. Wer fehlt, bringt am nächsten Schultag eine Entschuldigung mit.',
+        'Der Unterricht beginnt um 8 Uhr. Wir sind pünktlich und haben unser Material dabei. Wer fehlt, bringt am nächsten Schultag eine Entschuldigung mit.',
         '### Handy',
         'Im Unterricht bleibt das Handy ausgeschaltet in der Tasche – außer die Lehrkraft erlaubt es für eine Aufgabe. In den Pausen darf man es auf dem Schulhof benutzen. Fotos und Videos von anderen machen wir **nur mit Erlaubnis**.',
         '### Sicherheit',
@@ -102,7 +102,7 @@ export const LEKTIONEN = [
   // ================================================================ 2
   {
     thema: 'Klassenrat · Mehrheit · abstimmen', titel: 'Der Klassenrat entscheidet', untertitel: 'Vorschlag, Diskussion, Abstimmung: Du liest, wie ein Klassenrat funktioniert, hörst eine echte Sitzung und leitest selbst eine Abstimmung.',
-    ziel: { de: 'Ich erkläre, wie ein Klassenrat abläuft, und werte eine Abstimmung aus.', fr: 'J’explique comment se déroule un conseil de classe et j’analyse un vote.' },
+    ziel: { de: 'Ich erkläre, wie ein Klassenrat abläuft, und werte eine Abstimmung aus.', fr: 'J’explique comment se déroule un conseil d’élèves et j’analyse un vote.' },
     bild: ['lina:froh:melden', 'noah:froh:blatt'],
     start: {
       was: 'Gemeinsam entscheiden',
@@ -122,7 +122,7 @@ export const LEKTIONEN = [
         '### Die Mehrheit',
         'Ein Vorschlag ist angenommen, wenn **mehr als die Hälfte** der Anwesenden dafür ist. Das nennt man die **Mehrheit**. Wer anderer Meinung ist, akzeptiert das Ergebnis – darf aber später einen neuen Vorschlag machen.',
       ],
-      woerter: [['der Klassenrat', 'le conseil de classe'], ['die Leitung', 'la présidence'], ['das Protokoll', 'le procès-verbal'], ['der Vorschlag', 'la proposition'], ['abstimmen', 'voter'], ['die Mehrheit', 'la majorité'], ['der Beschluss', 'la décision'], ['anwesend', 'présent']],
+      woerter: [['der Klassenrat', 'le conseil d’élèves (conseil de coopération)'], ['die Leitung', 'la présidence'], ['das Protokoll', 'le procès-verbal'], ['der Vorschlag', 'la proposition'], ['abstimmen', 'voter'], ['die Mehrheit', 'la majorité'], ['der Beschluss', 'la décision'], ['anwesend', 'présent']],
       aufgaben: [
         { art: 'zuordnen', auftrag: 'Wer macht was? Verbinde.', stufe: 1, links: ['die Leitung', 'das Protokoll', 'der Zeitwächter', 'die ganze Klasse'], rechts: ['führt durch die Sitzung und gibt das Wort weiter', 'schreibt die Beschlüsse auf', 'achtet auf die Uhr', 'diskutiert und stimmt ab'] },
         { art: 'ordnen', auftrag: 'Bring den Ablauf in die richtige Reihenfolge.', stufe: 2, teile: ['Die Leitung liest die Themen vor.', 'Die Klasse bespricht ein Thema.', 'Jemand macht einen Vorschlag.', 'Die Klasse stimmt ab.', 'Das Protokoll schreibt den Beschluss auf.'], ordnung: [3, 0, 4, 2, 1] },
@@ -141,6 +141,7 @@ export const LEKTIONEN = [
         ['Lina', 'Wer ist für den Kletterpark? … Zwölf Stimmen. Und wer ist für die Wanderung? … Vier Stimmen.'],
         ['Noah', 'Schade. Aber okay, die Mehrheit hat entschieden.'],
         ['Lina', 'Genau. Zwölf von zweiundzwanzig – das ist mehr als die Hälfte. Der Kletterpark ist angenommen. Finn, schreibst du das ins Protokoll?'],
+        ['Finn', 'Klar, mach ich.'],
       ],
       vor: [{ art: 'mc', auftrag: 'Die Klasse hat 22 Anwesende. Wie viele Stimmen braucht ein Vorschlag mindestens für die Mehrheit? Kreuze an.', stufe: 2, fragen: [{ f: '', o: ['11', '12', '20'], r: 1 }] }],
       beim: [
@@ -202,7 +203,7 @@ export const LEKTIONEN = [
       woerter: [...zeitWoerter, ['die Epoche', 'l’époque'], ['das Ereignis', 'l’événement'], ['die Steinzeit', 'la préhistoire (l’âge de pierre)'], ['das Mittelalter', 'le Moyen Âge']],
       aufgaben: [
         { art: 'mc', auftrag: 'Kreuze an.', stufe: 1, fragen: [{ f: 'Was war früher?', o: ['500 v. Chr.', '50 v. Chr.'], r: 0 }, { f: 'Zu welchem Jahrhundert gehört das Jahr 1839?', o: ['18. Jahrhundert', '19. Jahrhundert', '20. Jahrhundert'], r: 1 }, { f: 'Zu welchem Jahrhundert gehört das Jahr 963?', o: ['9. Jahrhundert', '10. Jahrhundert'], r: 1 }] },
-        { art: 'tabelle', auftrag: 'Ergänze das Jahrhundert.', stufe: 2, kopf: ['Jahr', 'Jahrhundert'], breiten: [40, 60], zeilen: [['1957', '[20. Jahrhundert]'], ['1500', '[15. Jahrhundert]'], ['2026', '[21. Jahrhundert]'], ['1350', '[14. Jahrhundert]']] },
+        { art: 'tabelle', auftrag: 'Ergänze das Jahrhundert.', stufe: 2, kopf: ['Jahr', 'Jahrhundert'], breiten: [40, 60], zeilen: [['1957', '[20. Jahrhundert]'], ['1550', '[16. Jahrhundert]'], ['2026', '[21. Jahrhundert]'], ['1350', '[14. Jahrhundert]']] },
       ],
     },
     hoeren: {
@@ -211,7 +212,7 @@ export const LEKTIONEN = [
       bild: ['opa:froh:sitzen', 'mia:ueberrascht:stehen'], sprecher: { Opa: 'm1', Mia: 'w3' },
       text: [
         ['Mia', 'Opa, was ist das für eine Münze? Sie ist ganz grün.'],
-        ['Opa', 'Die hat mein Großvater auf einem Feld bei Dalheim gefunden. Es ist eine römische Münze, ungefähr aus dem Jahr 300 nach Christus.'],
+        ['Opa', 'Die hat mein Großvater auf einem Feld bei Dalheim gefunden. Es ist eine römische Münze, ungefähr aus dem Jahr 250 nach Christus.'],
         ['Mia', 'Wow, das ist ja schon über 1700 Jahre her! Und das Foto hier, mit der Schulklasse?'],
         ['Opa', 'Das bin ich, 1962, in meiner ersten Klasse. Damals hatten wir noch Tafeln aus Stein und Kreide.'],
         ['Mia', 'Also im 20. Jahrhundert. Und diese Postkarte?'],
@@ -221,7 +222,7 @@ export const LEKTIONEN = [
       ],
       vor: [{ art: 'mc', auftrag: 'Eine Historikerin oder ein Historiker … Kreuze an.', stufe: 1, fragen: [{ f: '', o: ['erforscht die Vergangenheit.', 'baut Häuser.', 'sagt das Wetter voraus.'], r: 0 }] }],
       beim: [
-        { art: 'tabelle', auftrag: 'Hör zu und ergänze.', stufe: 1, kopf: ['Gegenstand', 'Jahr', 'Jahrhundert'], breiten: [40, 30, 30], zeilen: [['römische Münze', '[ungefähr 300 n. Chr.]', '[3. Jahrhundert]'], ['Klassenfoto vom Opa', '[1962]', '[20. Jahrhundert]'], ['Postkarte der Burg Vianden', '[1950]', '[20. Jahrhundert]']] },
+        { art: 'tabelle', auftrag: 'Hör zu und ergänze.', stufe: 1, kopf: ['Gegenstand', 'Jahr', 'Jahrhundert'], breiten: [40, 30, 30], zeilen: [['römische Münze', '[ungefähr 250 n. Chr.]', '[3. Jahrhundert]'], ['Klassenfoto vom Opa', '[1962]', '[20. Jahrhundert]'], ['Postkarte der Burg Vianden', '[1950]', '[20. Jahrhundert]']] },
       ],
       nach: [{ art: 'sprechen', auftrag: 'Bringt (wenn ihr wollt) einen alten Gegenstand oder ein Foto mit oder sucht eines im Internet. Fragt euch gegenseitig: Wie alt ist das? Woher weißt du das?', stufe: 2, karten: [
         { titel: 'Fragen', text: ['Wie alt ist das ungefähr?', 'Aus welchem Jahrhundert ist das?', 'Woher weißt du das?'] }] }],
@@ -237,7 +238,7 @@ export const LEKTIONEN = [
       { art: 'zeitleiste', auftrag: 'Trage die Ereignisse ein. Die Jahre stehen schon da.', stufe: 2, von: -100, bis: 2100, schritt: 200, nChr: false, hoehe: 96,
         ereignisse: [{ jahr: -50, text: 'Die Römer kommen in unsere Gegend.', leer: true }, { jahr: 963, text: 'Gründung der Stadt Luxemburg', leer: true }, { jahr: 1839, text: 'Luxemburg wird ein unabhängiger Staat.', leer: true }, { jahr: 1957, text: 'Luxemburg gründet mit fünf Ländern die EWG (heute EU).', leer: true }, { jahr: 2026, text: 'heute: ich bin in der 7P', anzeige: '2026' }],
         hilfe: 'Ereignisse: Gründung der Stadt Luxemburg · Die Römer kommen · Luxemburg wird unabhängig · Gründung der EWG (heute EU)' },
-      { art: 'luecken', auftrag: 'Früher oder später? Ergänze.', stufe: 3, saetze: ['Das Jahr 300 v. Chr. ist [früher] als das Jahr 30 v. Chr.', 'Zwischen 50 v. Chr. und 50 n. Chr. liegen [100] Jahre.', 'Die Stadt Luxemburg wurde vor über [1000] Jahren gegründet.'] },
+      { art: 'luecken', auftrag: 'Früher oder später? Ergänze.', stufe: 3, saetze: ['Das Jahr 300 v. Chr. ist [früher] als das Jahr 30 v. Chr.', 'Zwischen 50 v. Chr. und 50 n. Chr. liegen ungefähr [100] Jahre.', 'Die Stadt Luxemburg wurde vor über [1000] Jahren gegründet.'] },
     ],
     schreiben: [
       { art: 'schreiben', auftrag: 'Wähle ein Ereignis von der Zeitleiste. Erkläre einer jüngeren Person: Wann war das? In welchem Jahrhundert? Wie lange ist das her?', stufe: 2,
@@ -274,12 +275,12 @@ export const LEKTIONEN = [
       ],
       woerter: [['die Quelle', 'la source'], ['die Sachquelle', 'la source matérielle'], ['die Bildquelle', 'la source iconographique'], ['die Textquelle', 'la source écrite'], ['der Zeitzeuge', 'le témoin'], ['die Archäologin / der Archäologe', 'l’archéologue'], ['ausgraben', 'fouiller, déterrer'], ['die Urkunde', 'le document officiel']],
       aufgaben: [
-        { art: 'tabelle', auftrag: 'Welche Quellenart ist das? Kreuze an.', stufe: 1, kopf: ['', 'Sach-', 'Bild-', 'Text-', 'mündlich'], breiten: [44, 14, 14, 14, 14], zeilen: [['ein römisches Mosaik', '', '[x]', '', ''], ['ein Steinbeil', '[x]', '', '', ''], ['ein Brief von 1850', '', '', '[x]', ''], ['Oma erzählt vom Krieg', '', '', '', '[x]'], ['eine alte Münze', '[x]', '', '', ''], ['ein Foto von 1962', '', '[x]', '', '']] },
+        { art: 'tabelle', auftrag: 'Welche Quellenart ist das? Kreuze an.', stufe: 1, kopf: ['', 'Sach-', 'Bild-', 'Text-', 'mündlich'], breiten: [44, 14, 14, 14, 14], zeilen: [['ein römisches Mosaik', '', '[x]', '', ''], ['ein Steinbeil', '[x]', '', '', ''], ['ein Brief von 1850', '', '', '[x]', ''], ['Oma erzählt von ihrer Schulzeit', '', '', '', '[x]'], ['eine alte Münze', '[x]', '', '', ''], ['ein Foto von 1962', '', '[x]', '', '']] },
         { art: 'mc', auftrag: 'Kreuze an.', stufe: 2, fragen: [{ f: 'Warum gibt es aus der Steinzeit keine Textquellen?', o: ['Die Menschen konnten noch nicht schreiben.', 'Die Texte sind alle verbrannt.', 'Die Menschen hatten kein Papier, aber Computer.'], r: 0 }] },
       ],
     },
     hoeren: {
-      was: 'Ein Interview', wo: 'Schulradio · Thema Geschichte', titel: 'Zu Besuch bei einer Archäologin',
+      was: 'Ein Interview', wo: 'Schulradio · Thema Geschichte', titel: 'Zu Gast: eine Archäologin',
       situation: 'Yusuf und Lea vom Schulradio fragen eine Archäologin, wie sie arbeitet.',
       bild: ['yusuf:froh:handy', 'aerztin:froh:erklaeren'], sprecher: { Yusuf: 'm3', Lea: 'w3', Archäologin: 'w1' },
       text: [
@@ -304,7 +305,7 @@ export const LEKTIONEN = [
       reihen: [
         [{ titel: 'Vier Quellenarten', punkte: ['**Sachquellen**: Gegenstände', '**Bildquellen**: Bilder, Fotos', '**Textquellen**: Geschriebenes', '**mündliche Quellen**: Erzählungen'] },
          { titel: 'Quellen prüfen: W-Fragen', punkte: ['**Was** ist es?', '**Wann** und **wo** entstand es?', '**Wer** hat es gemacht?', '**Warum** wurde es gemacht?'] }],
-        [{ art: 'achtung', titel: 'Funde melden', text: 'Wer in Luxemburg etwas Altes in der Erde findet, darf es nicht behalten oder weitergraben, sondern **meldet** es der Gemeinde oder dem Amt für Archäologie.' }],
+        [{ art: 'achtung', titel: 'Funde melden', text: 'Wer in Luxemburg etwas Altes in der Erde findet, darf es nicht behalten oder weitergraben, sondern **meldet** es sofort dem Nationalen Institut für archäologische Forschung (INRA) oder der Gemeinde (Stand 2026).' }],
       ],
     },
     ueben: [
@@ -315,7 +316,7 @@ export const LEKTIONEN = [
     schreiben: [
       { art: 'schreiben', auftrag: 'Wähle einen Gegenstand aus deinem Alltag. Beschreibe ihn als Quelle für Menschen in 500 Jahren: Was ist es? Was verrät er über unser Leben?', stufe: 2,
         anfaenge: ['Mein Gegenstand ist …', 'Das ist eine …quelle.', 'Er zeigt, dass wir heute …', 'Vielleicht denken die Menschen in 500 Jahren …'], zeilen: 7,
-        beispiel: 'Mein Gegenstand ist ein Busticket. Das ist eine Sachquelle und eine Textquelle. Es zeigt, dass wir heute mit dem Bus zur Schule fahren und dass der Bus in Luxemburg gratis ist. Vielleicht denken die Menschen in 500 Jahren, dass Busse etwas ganz Altes sind.' },
+        beispiel: 'Mein Gegenstand ist ein Busfahrplan. Das ist eine Sachquelle und eine Textquelle. Es zeigt, dass wir heute mit dem Bus zur Schule fahren und dass der Bus in Luxemburg gratis ist. Vielleicht denken die Menschen in 500 Jahren, dass Busse etwas ganz Altes sind.' },
     ],
     check: ['Ich nenne die vier Quellenarten.', 'Ich ordne Beispiele der richtigen Quellenart zu.', 'Ich untersuche eine Quelle mit W-Fragen.'],
   },
@@ -341,7 +342,7 @@ export const LEKTIONEN = [
         'Vor etwa 7000 Jahren kamen neue Menschen in unsere Gegend. Sie konnten etwas Neues: Sie bauten **Getreide** an und hielten **Tiere** wie Rinder, Schafe und Ziegen. Weil sie ihre Felder pflegen mussten, blieben sie an einem Ort. Sie bauten feste **Langhäuser** aus Holz und Lehm und stellten Töpfe aus Ton her. Man nennt diese Zeit die **Jungsteinzeit**.',
         'Diese Veränderung war so wichtig, dass man sie eine **Revolution** nennt: Die Menschen wurden **sesshaft**.',
       ],
-      woerter: [['der Fund', 'la découverte'], ['das Skelett', 'le squelette'], ['der Jäger / die Sammlerin', 'le chasseur / la cueilleuse'], ['umherziehen', 'se déplacer, être nomade'], ['sesshaft', 'sédentaire'], ['das Getreide', 'les céréales'], ['der Ton', 'l’argile'], ['die Jungsteinzeit', 'le néolithique']],
+      woerter: [['der Fund', 'la découverte'], ['das Skelett', 'le squelette'], ['der Jäger / der Sammler', 'le chasseur / le cueilleur'], ['umherziehen', 'se déplacer, être nomade'], ['sesshaft', 'sédentaire'], ['das Getreide', 'les céréales'], ['der Ton', 'l’argile'], ['die Jungsteinzeit', 'le néolithique']],
       aufgaben: [
         { art: 'tabelle', auftrag: 'Vergleiche. Ergänze die Tabelle.', stufe: 2, kopf: ['', 'Jäger und Sammler', 'erste Bauern'], breiten: [24, 38, 38], zeilen: [['Nahrung', '[jagen, fischen, sammeln]', '[Getreide anbauen, Tiere halten]'], ['Wohnen', '[Zelte, unter Felsen; ziehen umher]', '[feste Langhäuser; bleiben an einem Ort]'], ['Neues Können', '[Werkzeuge aus Stein, Knochen, Holz]', '[Töpfe aus Ton, Felder, Tierhaltung]']] },
         { art: 'mc', auftrag: 'Kreuze an.', stufe: 1, fragen: [{ f: 'Wann lebte der Loschbour-Mann?', o: ['vor etwa 800 Jahren', 'vor etwa 8000 Jahren', 'vor etwa 80 000 Jahren'], r: 1 }, { f: 'Was heißt „sesshaft“?', o: ['an einem Ort wohnen bleiben', 'viel sitzen', 'immer umherziehen'], r: 0 }] },
@@ -449,7 +450,7 @@ export const LEKTIONEN = [
         html: luxKarte({ kantone: 'keine', orte: ['Echternach', 'Dalheim', 'Vichten', 'Mamer', 'Luxemburg'], orteArt: 'buchstaben', fluesse: false, breite: 85 }),
         liste: [['A', 'Echternach'], ['B', 'Dalheim'], ['C', 'Vichten'], ['D', 'Mamer'], ['E', 'Luxemburg']], spalten: 3,
         hilfe: 'Tipp: Echternach liegt an der Grenze im Osten, Dalheim im Süden, Vichten in der Mitte im Westen.' },
-      { art: 'fragen', auftrag: 'Schau auf die Karte im Lesetext. Antworte.', stufe: 3, fragen: [{ f: 'Welcher Ort liegt am nächsten an Trier?', l: 'Wasserbillig (oder Echternach)' }, { f: 'Wie weit ist es ungefähr von Luxemburg-Stadt nach Echternach? Nutze den Maßstab.', l: 'etwa 30 km (Luftlinie)' }] },
+      { art: 'fragen', auftrag: 'Schau auf die Karte im Lesetext. Antworte.', stufe: 3, fragen: [{ f: 'Trier liegt östlich von Wasserbillig, in Deutschland. Welcher Ort auf der Karte liegt am nächsten an Trier?', l: 'Wasserbillig (oder Echternach)' }, { f: 'Wie weit ist es ungefähr von Luxemburg-Stadt nach Echternach? Nutze den Maßstab.', l: 'etwa 30 km (Luftlinie)' }] },
     ],
     schreiben: [
       { art: 'schreiben', auftrag: 'Schreibe eine Postkarte aus der römischen Zeit: Du bist eine junge Römerin oder ein junger Römer und besuchst das Theater in Dalheim oder die Villa in Echternach.', stufe: 2,

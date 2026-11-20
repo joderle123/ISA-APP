@@ -42,7 +42,7 @@ export const LEKTIONEN = [
         '### Die Kontinente',
         'Das Land teilt man in sieben **Kontinente**: **Asien**, **Afrika**, **Nordamerika**, **Südamerika**, **Antarktis**, **Europa** und **Australien mit Ozeanien**. Asien ist der größte Kontinent, und dort leben auch die meisten Menschen – mehr als die Hälfte der rund 8 Milliarden Menschen auf der Erde. In der Antarktis wohnt niemand dauerhaft, nur Forscherinnen und Forscher.',
         '### Rekorde',
-        'Der höchste Berg ist der **Mount Everest** in Asien mit etwa 8850 Metern. Die längsten Flüsse sind der **Nil** in Afrika und der **Amazonas** in Südamerika – Fachleute streiten, welcher länger ist. Die größte Wüste mit Sand ist die **Sahara** in Afrika.',
+        'Der höchste Berg ist der **Mount Everest** in Asien mit etwa 8850 Metern. Die längsten Flüsse sind der **Nil** in Afrika und der **Amazonas** in Südamerika – Fachleute streiten, welcher länger ist. Die größte heiße Wüste ist die **Sahara** in Afrika.',
       ],
       bildHtml: weltKarte({ kontinente: 'farben', kontinentNamen: true, ozeane: true, breite: 128 }),
       woerter: [['der Kontinent', 'le continent'], ['der Ozean', 'l’océan'], ['die Oberfläche', 'la surface'], ['die Bevölkerung', 'la population'], ['die Milliarde', 'le milliard'], ['der Rekord', 'le record'], ['die Wüste', 'le désert'], ['der Forscher / die Forscherin', 'le chercheur / la chercheuse']],
@@ -183,9 +183,9 @@ export const LEKTIONEN = [
       bild: ['opa:froh:erklaeren', 'lio:froh:handy'], sprecher: { Helfer: 'm1', Lio: 'm3' },
       text: [
         ['Lio', 'Mein Handy ist drei Jahre alt. Der Akku ist nach ein paar Stunden leer. Ich dachte, ich brauche ein neues.'],
-        ['Helfer', 'Zeig mal. Der Rest ist noch gut, nur der Akku ist müde. Akkus verlieren mit der Zeit Kraft. Ein neuer Akku kostet nur einen kleinen Teil von einem neuen Handy.'],
+        ['Helfer', 'Zeig mal. Der Rest ist noch gut, nur der Akku ist müde. Akkus verlieren mit der Zeit Kraft. Ein neuer Akku ist viel billiger als ein neues Handy.'],
         ['Lio', 'Kann man das selbst machen?'],
-        ['Helfer', 'Bei manchen Handys ja, bei anderen ist es schwierig, weil alles verklebt ist. Ab 2027 sollen in der EU Akkus in Handys leichter austauschbar werden. Heute machen wir es zusammen.'],
+        ['Helfer', 'Bei manchen Handys ja, bei anderen ist es schwierig, weil alles verklebt ist. Ab 2027 sollen in der EU Akkus in Handys leichter austauschbar werden, mit einigen Ausnahmen. Heute machen wir es zusammen.'],
         ['Lio', 'Und was kann ich tun, damit der neue Akku länger hält?'],
         ['Helfer', 'Nicht ständig auf hundert Prozent laden und nicht ganz leer werden lassen. Zwischen zwanzig und achtzig Prozent ist ideal. Und das Handy nicht in der heißen Sonne liegen lassen.'],
         ['Lio', 'Cool. Dann habe ich jetzt ein „neues“ Handy für viel weniger Geld.'],
@@ -238,7 +238,7 @@ export const LEKTIONEN = [
         'Strom kann **lebensgefährlich** sein. Darum: Elektrogeräte nie mit nassen Händen oder in der Badewanne benutzen. Keine kaputten Kabel benutzen. Nichts in Steckdosen stecken. Nicht zu viele Mehrfachstecker hintereinander. Im Sicherungskasten schützt der **FI-Schutzschalter**: Er schaltet den Strom blitzschnell ab, wenn etwas schiefgeht.',
       ],
       bildHtml: balken('Leistung von Geräten (Beispiele, gerundet)', [['Wasserkocher', 2000], ['Föhn', 1800], ['Staubsauger', 800], ['Spielkonsole (beim Spielen)', 150], ['Laptop', 50], ['LED-Lampe', 10]], { einheit: 'W', max: 2000 }),
-      woerter: [['die Leistung', 'la puissance'], ['das Watt', 'le watt'], ['die Kilowattstunde', 'le kilowattheure'], ['der Verbrauch', 'la consommation'], ['der Standby', 'la veille'], ['die Steckdose', 'la prise'], ['das Kabel', 'le câble'], ['der Sicherungskasten', 'le tableau électrique']],
+      woerter: [['die Leistung', 'la puissance'], ['das Watt', 'le watt'], ['die Kilowattstunde', 'le kilowattheure'], ['der Verbrauch', 'la consommation'], ['der Standby-Modus', 'la veille'], ['die Steckdose', 'la prise'], ['das Kabel', 'le câble'], ['der Sicherungskasten', 'le tableau électrique']],
       aufgaben: [
         { art: 'rf', auftrag: 'Richtig oder falsch?', stufe: 1, saetze: [['1000 Watt eine Stunde lang ergeben 1 kWh.', true], ['Im Standby braucht ein Gerät keinen Strom.', false], ['Man darf den Föhn in der Badewanne benutzen, wenn man aufpasst.', false], ['Der FI-Schutzschalter schaltet bei Gefahr den Strom ab.', true]] },
       ],
@@ -271,11 +271,11 @@ export const LEKTIONEN = [
       ],
     },
     ueben: [
-      { art: 'rechnen', auftrag: 'Rechne den Verbrauch und die Kosten (1 kWh = 0,25 €).', stufe: 2, spalten: 2, items: [
+      { art: 'rechnen', auftrag: 'Rechne den Verbrauch und die Kosten (1 kWh ≈ 0,25 €, gerundet, Stand 2026).', stufe: 2, spalten: 2, items: [
         { a: 'Ein Föhn (1800 W) läuft 10 Minuten am Tag. Wie viele Wattstunden sind das?', l: '1800 · 1/6 = 300 Wh', raum: 2 },
-        { a: 'Wie viele kWh braucht der Föhn so in 30 Tagen? Was kostet das?', l: '30 · 300 Wh = 9 kWh · 0,25 € = 2,25 €', raum: 2 },
+        { a: 'Wie viele kWh braucht der Föhn so in 30 Tagen? Was kostet das?', l: '30 · 300 Wh = 9 kWh; 9 · 0,25 € = 2,25 €', raum: 2 },
         { a: 'Eine Konsole braucht im Standby 12 W, 20 Stunden am Tag. Wie viele Wh pro Tag?', l: '12 · 20 = 240 Wh', raum: 2 },
-        { a: 'Wie viel kostet dieser Standby im Jahr? (365 Tage)', l: '240 · 365 = 87 600 Wh ≈ 88 kWh · 0,25 € ≈ 22 €', raum: 2 }] },
+        { a: 'Wie viel kostet dieser Standby im Jahr? (365 Tage)', l: '240 · 365 = 87 600 Wh ≈ 88 kWh; 88 · 0,25 € = 22 €', raum: 2 }] },
     ],
     schreiben: [
       { art: 'schreiben', auftrag: 'Gestalte ein Plakat „Strom sparen und sicher bleiben“ für das Jugendhaus: drei Spartipps und drei Sicherheitsregeln.', stufe: 2,
@@ -299,11 +299,11 @@ export const LEKTIONEN = [
       was: 'Ein Sachtext mit Symbolen', art: 'text', stimme: 'w1', nummern: false,
       quelle: 'Sachtext (vereinfacht); Symbole nach dem weltweiten GHS-System, vereinfacht gezeichnet', titel: 'Rote Rauten verstehen',
       absaetze: [
-        'Viele Produkte im Haushalt können gefährlich sein: Abflussreiniger, WC-Reiniger, Grillanzünder, Sprays, Farben. Auf ihnen stehen **Gefahrensymbole**: schwarze Zeichen in einer **roten Raute**. Sie gelten weltweit gleich, damit jeder sie versteht – egal, welche Sprache er spricht.',
+        'Viele Produkte im Haushalt können gefährlich sein: Abflussreiniger, WC-Reiniger, Grillanzünder, Sprays, Farben. Auf ihnen stehen **Gefahrensymbole**: schwarze Zeichen in einer **weißen Raute mit rotem Rand**. Sie gelten weltweit gleich, damit jeder sie versteht – egal, welche Sprache er spricht.',
         '### Wichtige Regeln',
         'Gefährliche Produkte immer in der **Originalverpackung** lassen, nie in Trinkflaschen umfüllen. **Kindersicher** und weit weg von Lebensmitteln aufbewahren. **Gebrauchsanweisung** lesen, Handschuhe tragen, lüften. Und: **Reiniger nie mischen!** Manche Mischungen bilden giftige Gase.',
         '### Im Notfall',
-        'Wer etwas Gefährliches verschluckt oder in die Augen bekommen hat: Ruhe bewahren, **112** anrufen und die **Verpackung** bereithalten. Augen mit viel Wasser ausspülen. Nicht zum Erbrechen bringen.',
+        'Wer etwas Gefährliches verschluckt oder in die Augen bekommen hat: Ruhe bewahren und die **Verpackung** bereithalten. Bei Lebensgefahr **112** anrufen. Rat gibt das Antigiftzentrum, auch für Luxemburg, rund um die Uhr kostenlos: **8002 5500** (Stand 2026). Augen mit viel Wasser ausspülen. Nicht zum Erbrechen bringen.',
       ],
       bildHtml: gefahrensymbole({ spalten: 3, kurz: true }),
       woerter: [['das Gefahrensymbol', 'le pictogramme de danger'], ['die Raute', 'le losange'], ['entzündbar', 'inflammable'], ['giftig', 'toxique'], ['ätzend', 'corrosif'], ['umweltgefährlich', 'dangereux pour l’environnement'], ['die Originalverpackung', 'l’emballage d’origine'], ['verschlucken', 'avaler']],
@@ -333,8 +333,8 @@ export const LEKTIONEN = [
     },
     regel: {
       reihen: [
-        [{ titel: 'Gefahrensymbole', punkte: ['**Flamme**: entzündbar', '**Totenkopf**: giftig', '**Ausrufezeichen**: reizend, gesundheitsschädlich', '**Hand und Tropfen**: ätzend', '**Fisch und Baum**: umweltgefährlich'] },
-         { titel: 'Sicherheitsregeln', punkte: ['**Originalverpackung**', '**nie mischen**', 'Handschuhe, lüften', 'Notfall: **112**, Verpackung bereithalten'] }],
+        [{ titel: 'Gefahrensymbole', punkte: ['**Flamme**: entzündbar', '**Totenkopf**: giftig', '**Ausrufezeichen**: reizend, gesundheitsschädlich', '**Hand und Tropfen**: ätzend', '**toter Fisch**: umweltgefährlich'] },
+         { titel: 'Sicherheitsregeln', punkte: ['**Originalverpackung**', '**nie mischen**', 'Handschuhe, lüften', 'Notfall: **112** · Antigiftzentrum **8002 5500**'] }],
       ],
     },
     ueben: [
@@ -397,7 +397,7 @@ export const LEKTIONEN = [
     },
     regel: {
       reihen: [
-        [{ titel: 'pH-Skala', punkte: ['**0–6**: sauer (Zitrone, Essig)', '**7**: neutral (Wasser)', '**8–14**: basisch (Seife, Natron)', 'stark sauer oder basisch = **ätzend**'] },
+        [{ titel: 'pH-Skala', punkte: ['**unter 7**: sauer (Zitrone, Essig)', '**7**: neutral (Wasser)', '**über 7**: basisch (Seife, Natron)', 'stark sauer oder basisch = **ätzend**'] },
          { titel: 'Rotkohl-Indikator', punkte: ['sauer → **rot / pink**', 'neutral → **violett**', 'basisch → **blau, grün, gelb**'] }],
       ],
     },
@@ -430,7 +430,7 @@ export const LEKTIONEN = [
       was: 'Ein Sachtext', art: 'text', stimme: 'w1', nummern: false,
       quelle: 'Sachtext (vereinfacht, Stand 2026)', titel: 'Lernen aus Millionen Beispielen',
       absaetze: [
-        '**Künstliche Intelligenz (KI)** sind Computerprogramme, die Aufgaben lösen, für die Menschen nachdenken müssen: Sprache verstehen, Bilder erkennen, Texte schreiben. KI lernt aus **riesigen Datenmengen**. Ein Programm, das Katzen erkennen soll, sieht Millionen Katzenbilder und findet **Muster**.',
+        'Mit **künstlicher Intelligenz (KI)** meint man Computerprogramme, die Aufgaben lösen, für die Menschen nachdenken müssen: Sprache verstehen, Bilder erkennen, Texte schreiben. KI lernt aus **riesigen Datenmengen**. Ein Programm, das Katzen erkennen soll, sieht Millionen Katzenbilder und findet **Muster**.',
         '### Was KI gut kann',
         'KI kann sehr schnell Texte zusammenfassen, übersetzen, Ideen sammeln, Bilder erzeugen und Fehler in Programmen finden. Ärztinnen und Ärzte nutzen KI zum Beispiel, um Röntgenbilder schneller zu prüfen.',
         '### Wo KI Fehler macht',
@@ -446,7 +446,7 @@ export const LEKTIONEN = [
     hoeren: {
       was: 'Ein Gespräch', wo: 'Informatikraum', titel: 'Der Chatbot weiß alles – oder?',
       situation: 'Ben und Yusuf benutzen in der Schule einen Chatbot für ein Referat über ihre Gemeinde.',
-      bild: ['ben:froh:laptop', 'yusuf:verwirrt:laptop'], sprecher: { Ben: 'm3', Chatbot: 'm2', Yusuf: 'm1' },
+      bild: ['ben:froh:laptop', 'yusuf:verwirrt:laptop'], sprecher: { Ben: 'm3', Chatbot: 'm1', Yusuf: 'm2' },
       text: [
         ['Ben', 'Ich frage den Chatbot: „Wann wurde das Schwimmbad in unserer Gemeinde gebaut?“'],
         ['Chatbot', 'Das Schwimmbad wurde im Jahr 1974 eröffnet. Es hat ein Fünfzig-Meter-Becken und eine Rutsche von achtzig Metern Länge.'],
@@ -488,7 +488,7 @@ export const LEKTIONEN = [
     start: {
       was: 'Schon erlebt?',
       aufgaben: [
-        { art: 'mc', auftrag: 'Warum teilen Menschen Falschmeldungen? Kreuze an (mehrere möglich).', stufe: 1, fragen: [{ f: '', o: ['weil die Nachricht aufregend ist', 'weil sie nicht nachprüfen', 'weil sie anderen helfen wollen', 'weil sie dafür bezahlt werden müssen'], r: [0, 1, 2] }] },
+        { art: 'mc', auftrag: 'Warum teilen Menschen Falschmeldungen? Kreuze an (mehrere möglich).', stufe: 1, fragen: [{ f: '', o: ['weil die Nachricht aufregend ist', 'weil sie nicht nachprüfen', 'weil sie anderen helfen wollen', 'weil das Handy es automatisch teilt'], r: [0, 1, 2] }] },
       ],
     },
     lesen: {
@@ -518,12 +518,12 @@ export const LEKTIONEN = [
         ['Mia', 'Es ist weitergeleitet. Da steht ein Link zu einer Seite namens „Schul-News-24“.'],
         ['Finn', 'Nie gehört. Mach den Faktencheck. Gibt es ein Impressum?'],
         ['Mia', 'Nein, gar nichts. Und das Bild vom Minister ist von 2019 – das hat die Bildersuche gezeigt.'],
-        ['Finn', 'Und auf der Seite des Bildungsministeriums und bei den Nachrichten steht nichts davon. Also ein Fake.'],
+        ['Finn', 'Es gibt zwar echte Handyregeln an den Schulen. Aber von einem Verbot ab Montag mit hundert Euro Strafe steht nichts beim Bildungsministerium und nichts in den Nachrichten. Also ein Fake.'],
         ['Mia', 'Ich schreibe in den Chat: „Stimmt nicht, bitte nicht weiterleiten.“ Und ich lösche die Nachricht nicht, damit der Klassenlehrer sie sehen kann.'],
       ],
       vor: [{ art: 'mc', auftrag: 'Was ist ein „Impressum“? Kreuze an.', stufe: 2, fragen: [{ f: '', o: ['eine Angabe, wer für eine Internetseite verantwortlich ist', 'eine Werbung'], r: 0 }] }],
       beim: [
-        { art: 'tabelle', auftrag: 'Hör zu. Welche Hinweise zeigen, dass die Meldung falsch ist?', stufe: 1, kopf: ['Prüfschritt', 'Ergebnis'], breiten: [32, 68], zeilen: [['Quelle', '[unbekannte Seite „Schul-News-24“, kein Impressum]'], ['Bild', '[Foto des Ministers von 2019]'], ['andere Quellen', '[nichts beim Bildungsministerium und bei den Nachrichten]'], ['Sprache', '[viele Ausrufezeichen, „Teilt das!!!“]']] },
+        { art: 'tabelle', auftrag: 'Hör zu. Welche Hinweise zeigen, dass die Meldung falsch ist?', stufe: 1, kopf: ['Prüfschritt', 'Ergebnis'], breiten: [32, 68], zeilen: [['Quelle', '[unbekannte Seite „Schul-News-24“, kein Impressum]'], ['Bild', '[Foto des Ministers von 2019]'], ['andere Quellen', '[nichts beim Bildungsministerium und bei den Nachrichten]'], ['Sprache', '[Aufforderung „Teilt das!“, Panik („Achtung!“), hohe Strafe]']] },
       ],
       nach: [{ art: 'sprechen', auftrag: 'Wie reagiert man im Klassenchat gut auf eine Falschmeldung, ohne jemanden bloßzustellen?', stufe: 3, karten: [
         { titel: 'Satzanfänge', text: ['Ich habe das geprüft: …', 'Bitte nicht weiterleiten, weil …', 'Hier ist die echte Info: …'] }] }],

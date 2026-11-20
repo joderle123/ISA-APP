@@ -52,7 +52,7 @@ export const LEKTIONEN = [
         '### 2. Die Himmelsrichtungen',
         'Auf fast allen Karten ist **Norden oben**. Dann ist Süden unten, Osten rechts und Westen links. Dazwischen liegen Nordosten, Südosten, Südwesten und Nordwesten. Ein Pfeil mit „N“ zeigt, wo Norden ist. Ein Trick für die Reihenfolge im Uhrzeigersinn: **N**ie **O**hne **S**eife **W**aschen.',
         '### 3. Der Maßstab',
-        'Der **Maßstab** zeigt, wie stark die Karte verkleinert ist. Ein Balken zeigt zum Beispiel: Diese Strecke sind in Wirklichkeit 10 Kilometer. So kann man Entfernungen messen.',
+        'Der **Maßstab** zeigt, wie stark die Karte verkleinert ist. Ein Balken zeigt zum Beispiel: Diese Strecke ist in Wirklichkeit 10 Kilometer lang. So kann man Entfernungen messen.',
       ],
       bildHtml: kompass(),
       woerter: [['die Karte', 'la carte'], ['die Legende', 'la légende'], ['der Norden / Süden', 'le nord / le sud'], ['der Osten / Westen', 'l’est / l’ouest'], ['die Himmelsrichtung', 'le point cardinal'], ['der Maßstab', 'l’échelle'], ['die Entfernung', 'la distance'], ['vereinfacht', 'simplifié']],
@@ -167,7 +167,7 @@ export const LEKTIONEN = [
     schreiben: [
       { art: 'schreiben', auftrag: 'Schreibe einen kurzen Reiseprospekt: „Luxemburg – ein Land, zwei Gesichter“. Locke Touristen in das Ösling und in das Gutland.', stufe: 2,
         anfaenge: ['Willkommen in Luxemburg!', 'Im Norden …', 'Im Süden …', 'Unser Tipp: …'], zeilen: 8,
-        beispiel: 'Willkommen in Luxemburg! Im Norden wartet das Ösling mit tiefen Wäldern, Burgen und dem Stausee der Obersauer. Hier kannst du wandern und die Ruhe genießen. Im Süden liegt das Gutland mit der Hauptstadt, dem Weinbau an der Mosel und den Felsen im Müllerthal. Unser Tipp: Fahr mit dem Zug – er ist in Luxemburg gratis!' },
+        beispiel: 'Willkommen in Luxemburg! Im Norden wartet das Ösling mit tiefen Wäldern, Burgen und dem Stausee der Obersauer. Hier kannst du wandern und die Ruhe genießen. Im Süden liegt das Gutland mit der Hauptstadt, dem Weinbau an der Mosel und den Felsen im Müllerthal. Unser Tipp: Fahr mit dem Zug – er ist in Luxemburg in der 2. Klasse gratis (Stand 2026)!' },
     ],
     check: ['Ich beschreibe Ösling und Gutland.', 'Ich nenne Zahlen zu Luxemburg.', 'Ich finde die Kantone auf der Karte.'],
   },
@@ -188,9 +188,9 @@ export const LEKTIONEN = [
       absaetze: [
         'Luxemburg hat drei Nachbarn: **Belgien** im Westen und Norden, **Deutschland** im Osten und **Frankreich** im Süden. An der Grenze zu Deutschland fließen drei Flüsse: die **Our**, die **Sauer** und die **Mosel**.',
         '### Grenzgänger',
-        'Jeden Morgen fahren über 200 000 Menschen aus Frankreich, Belgien und Deutschland zur Arbeit nach Luxemburg und abends wieder nach Hause. Man nennt sie **Grenzgänger**. Ohne sie könnten viele Krankenhäuser, Geschäfte und Banken nicht arbeiten. Darum gibt es morgens auf den Straßen und in den Zügen oft Stau.',
+        'Jeden Morgen fahren über 200 000 Menschen aus Frankreich, Belgien und Deutschland zur Arbeit nach Luxemburg und abends wieder nach Hause. Man nennt sie **Grenzgänger**. Ohne sie könnten viele Krankenhäuser, Geschäfte und Banken nicht arbeiten. Darum gibt es morgens auf den Straßen oft Stau, und die Züge sind voll.',
         '### Schengen',
-        'Früher gab es an jeder Grenze **Kontrollen** mit Schlagbäumen. Am **14. Juni 1985** unterschrieben fünf Länder auf einem Schiff auf der Mosel beim Dorf **Schengen** einen Vertrag: Sie wollten die Kontrollen an ihren gemeinsamen Grenzen abschaffen. Heute gehören viele europäische Länder zum **Schengen-Raum**. Man kann meist reisen, ohne an der Grenze anzuhalten.',
+        'Früher gab es an jeder Grenze **Kontrollen** mit Schlagbäumen. Am **14. Juni 1985** unterschrieben fünf Länder auf einem Schiff auf der Mosel beim Dorf **Schengen** einen Vertrag: Sie wollten die Kontrollen an ihren gemeinsamen Grenzen abschaffen. Heute gehören viele europäische Länder zum **Schengen-Raum**. Man kann meist reisen, ohne an der Grenze anzuhalten (Stand 2026: zeitweise gibt es wieder Kontrollen).',
       ],
       woerter: [['das Nachbarland', 'le pays voisin'], ['die Grenze', 'la frontière'], ['der Grenzgänger', 'le frontalier'], ['die Kontrolle', 'le contrôle'], ['der Schlagbaum', 'la barrière (de frontière)'], ['der Vertrag', 'le traité, l’accord'], ['abschaffen', 'supprimer'], ['der Stau', 'l’embouteillage']],
       aufgaben: [
@@ -268,7 +268,7 @@ export const LEKTIONEN = [
       bild: ['tom:verwirrt:handy', 'mia:froh:stehen'], sprecher: { Wetterfrau: 'w1' },
       text: [
         ['Wetterfrau', 'Und nun das Wetter für morgen, Dienstag. Am Morgen ist es im ganzen Land neblig und kühl, mit Temperaturen um fünf Grad.'],
-        ['Wetterfrau', 'Im Laufe des Vormittags löst sich der Nebel auf. Im Süden scheint dann die Sonne, und es wird bis zu vierzehn Grad warm.'],
+        ['Wetterfrau', 'Im Laufe des Vormittags löst sich der Nebel auf. Im Süden scheint dann die Sonne, es bleibt trocken, und es wird bis zu vierzehn Grad warm.'],
         ['Wetterfrau', 'Im Ösling bleibt es bewölkt und etwas kühler, mit Höchstwerten um zehn Grad. Am Nachmittag kann es dort regnen, bis zu acht Millimeter.'],
         ['Wetterfrau', 'Der Wind kommt aus Westen und ist schwach bis mäßig. In der Nacht kühlt es auf zwei Grad ab, im Ösling ist sogar Bodenfrost möglich.'],
         ['Wetterfrau', 'Unser Tipp: Für den Weg zur Schule eine warme Jacke – und im Norden einen Regenschirm.'],
@@ -291,7 +291,7 @@ export const LEKTIONEN = [
       { art: 'versuch', auftrag: 'Baut einen Regenmesser und messt eine Woche lang den Regen.', stufe: 2,
         frage: 'Wie viel Regen fällt in einer Woche an unserer Schule?',
         material: ['eine leere Plastikflasche (1,5 l)', 'eine Schere', 'ein Lineal', 'wasserfester Stift', 'Steine'],
-        schritte: ['Schneidet das obere Drittel der Flasche ab. Mit Hilfe eines Erwachsenen!', 'Legt Steine in den Boden, damit die Flasche nicht umfällt.', 'Steckt das Oberteil umgedreht als Trichter hinein.', 'Klebt das Lineal außen an: Die 0 liegt über den Steinen.', 'Stellt die Flasche frei auf. Lest jeden Tag zur gleichen Zeit ab und leert sie danach.'],
+        schritte: ['Schneidet das obere Drittel der Flasche ab. Mit Hilfe eines Erwachsenen!', 'Legt Steine in den Boden, damit die Flasche nicht umfällt.', 'Steckt das Oberteil umgedreht als Trichter hinein.', 'Gießt Wasser ein, bis die Steine bedeckt sind. Klebt das Lineal außen an: Die 0 liegt genau an dieser Wasserlinie.', 'Stellt die Flasche frei auf. Lest jeden Tag zur gleichen Zeit ab und gießt danach bis zur 0-Linie zurück.'],
         loesung: { vermutung: 'z. B. Es regnet etwa 10 mm in einer Woche.', beobachtung: 'z. B. Mo 2 mm, Di 0 mm, Mi 5 mm, Do 0 mm, Fr 3 mm', ergebnis: 'z. B. In dieser Woche fielen 10 mm Regen, also 10 Liter pro Quadratmeter.' } },
     ],
     schreiben: [
@@ -459,7 +459,7 @@ export const LEKTIONEN = [
       quelle: 'Ratgeber (vereinfacht; Hilfe in Luxemburg: BEE SECURE Helpline 8002 1234)', titel: 'Fünf Schutzschilde für dein Handy',
       absaetze: [
         '### 1. Ein starkes Passwort',
-        'Ein gutes Passwort ist **lang** (mindestens 12 Zeichen) und schwer zu erraten. Nimm nicht deinen Namen, dein Geburtsdatum oder „123456“. Ein Trick: Bilde einen Satz und nimm die Anfangsbuchstaben – „Mein Hund Bello frisst gern 3 Würstchen!“ wird zu **MHBfg3W!**. Noch besser: mehrere zufällige Wörter.',
+        'Ein gutes Passwort ist **lang** (mindestens 12 Zeichen) und schwer zu erraten. Nimm nicht deinen Namen, dein Geburtsdatum oder „123456“. Ein Trick: Bilde einen Satz und nimm die Anfangsbuchstaben – „Mein Hund Bello frisst jeden Abend gern 3 Würstchen mit Senf!“ wird zu **MHBfjAg3WmS!**. Noch besser: mehrere zufällige Wörter.',
         '### 2. Das Passwort bleibt geheim',
         'Gib dein Passwort **niemandem** – auch nicht der besten Freundin. Und nimm für jede App ein **anderes** Passwort.',
         '### 3. Privat einstellen',
@@ -471,7 +471,7 @@ export const LEKTIONEN = [
       ],
       woerter: [['das Passwort', 'le mot de passe'], ['die Privatsphäre', 'la vie privée'], ['die Einstellungen', 'les paramètres'], ['der Standort', 'la localisation'], ['löschen', 'effacer, supprimer'], ['blockieren', 'bloquer'], ['bedrohen', 'menacer'], ['der Screenshot', 'la capture d’écran']],
       aufgaben: [
-        { art: 'tabelle', auftrag: 'Sicher oder unsicher? Kreuze an und begründe kurz.', stufe: 2, kopf: ['Passwort', 'sicher', 'unsicher', 'warum?'], breiten: [28, 12, 12, 48], zeilen: [['123456', '', '[x]', '[zu kurz, sehr bekannt]'], ['lina2013', '', '[x]', '[Name und Geburtsjahr]'], ['Tisch-Regen-Kakao-Zebra', '[x]', '', '[lang, zufällige Wörter]'], ['MHBfg3W!', '[x]', '', '[Satz-Trick mit Zahl und Zeichen]']] },
+        { art: 'tabelle', auftrag: 'Sicher oder unsicher? Kreuze an und begründe kurz.', stufe: 2, kopf: ['Passwort', 'sicher', 'unsicher', 'warum?'], breiten: [28, 12, 12, 48], zeilen: [['123456', '', '[x]', '[zu kurz, sehr bekannt]'], ['lina2013', '', '[x]', '[Name und Geburtsjahr]'], ['Tisch-Regen-Kakao-Zebra', '[x]', '', '[lang, zufällige Wörter]'], ['MHBfjAg3WmS!', '[x]', '', '[lang, Satz-Trick mit Zahl und Zeichen]']] },
       ],
     },
     hoeren: {
@@ -505,7 +505,7 @@ export const LEKTIONEN = [
       ],
     },
     ueben: [
-      { art: 'tabelle', auftrag: 'Bilde mit dem Satz-Trick ein Passwort. (Benutze es nicht wirklich – denk dir für dich ein anderes aus!)', stufe: 2, kopf: ['Satz', 'Passwort'], breiten: [64, 36], zeilen: [['Im Sommer fahre ich 2 Wochen nach Portugal!', '[ISfi2WnP!]'], ['Meine Katze Mimi schläft gern auf 1 Sofa.', '[MKMsga1S.]'], ['Am Freitag essen wir um 12 Uhr Pizza!', '[AFewu12UP!]']] },
+      { art: 'tabelle', auftrag: 'Bilde mit dem Satz-Trick ein Passwort. (Benutze es nicht wirklich – denk dir für dich ein anderes aus!)', stufe: 2, kopf: ['Satz', 'Passwort'], breiten: [64, 36], zeilen: [['Im Sommer fahre ich mit Freunden 2 Wochen nach Portugal ans Meer!', '[ISfimF2WnPaM!]'], ['Meine Katze Mimi schläft jeden Tag 14 Stunden auf dem Sofa.', '[MKMsjT14SadS.]'], ['Am Freitag essen wir um 12 Uhr in der Kantine Pizza!', '[AFewu12UidKP!]']] },
     ],
     schreiben: [
       { art: 'schreiben', auftrag: 'Schreibe Chloé eine Nachricht mit Tipps, damit so etwas nicht wieder passiert.', stufe: 2,

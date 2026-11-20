@@ -228,7 +228,7 @@ export const LEKTIONEN = [
     start: {
       was: 'Wer frisst was?',
       aufgaben: [
-        { art: 'zuordnen', auftrag: 'Verbinde: Wer frisst was?', stufe: 1, links: ['die Raupe', 'die Meise', 'der Fuchs', 'die Schnecke'], rechts: ['Blätter', 'Raupen und Samen', 'Mäuse', 'Salat'] },
+        { art: 'zuordnen', auftrag: 'Verbinde: Wer frisst was?', stufe: 1, links: ['die Raupe', 'die Meise', 'der Fuchs', 'der Specht'], rechts: ['Blätter', 'Raupen und Samen', 'Mäuse', 'Insekten unter der Rinde'] },
       ],
     },
     lesen: {
@@ -260,11 +260,11 @@ export const LEKTIONEN = [
         ['Ben', 'Hm … Dann fressen die vielen Kaulquappen fast alle Algen. Und dann haben sie selbst nichts mehr zu fressen!'],
         ['Yusuf', 'Genau! Ein Punkt für Ben. Das zeigt: Wenn ein Glied fehlt, gerät alles durcheinander. Letzte Frage: Wer räumt am Ende auf?'],
         ['Chloé', 'Die Zersetzer: Pilze und Bakterien!'],
-        ['Yusuf', 'Unentschieden! Danke fürs Mitmachen.'],
+        ['Yusuf', 'Richtig! Damit gewinnt Chloé zwei zu eins. Danke fürs Mitmachen.'],
       ],
       vor: [{ art: 'mc', auftrag: 'Was ist eine Kaulquappe? Kreuze an.', stufe: 1, fragen: [{ f: '', o: ['ein junger Frosch', 'ein kleiner Fisch', 'ein Insekt'], r: 0 }] }],
       beim: [
-        { art: 'mc', auftrag: 'Hör zu und kreuze an.', stufe: 1, fragen: [{ f: 'Wer ist im Teich der Produzent?', o: ['die Algen', 'die Fische', 'die Kaulquappen'], r: 0 }, { f: 'Wie endet das Quiz?', o: ['unentschieden', 'Chloé gewinnt', 'Ben gewinnt'], r: 0 }] },
+        { art: 'mc', auftrag: 'Hör zu und kreuze an.', stufe: 1, fragen: [{ f: 'Wer ist im Teich der Produzent?', o: ['die Algen', 'die Fische', 'die Kaulquappen'], r: 0 }, { f: 'Wie endet das Quiz?', o: ['unentschieden', 'Chloé gewinnt', 'Ben gewinnt'], r: 1 }] },
         { art: 'ordnen', auftrag: 'Was passiert, wenn die Fische fehlen? Ordne.', stufe: 2, teile: ['Die Fische verschwinden.', 'Es gibt viel mehr Kaulquappen.', 'Die Kaulquappen fressen fast alle Algen.', 'Die Kaulquappen finden keine Nahrung mehr.'], ordnung: [2, 0, 3, 1] },
       ],
       nach: [{ art: 'sprechen', auftrag: 'Macht selbst ein „Was passiert, wenn …?“-Quiz. Denkt euch drei Fragen zu Nahrungsketten aus.', stufe: 3, karten: [
@@ -273,7 +273,7 @@ export const LEKTIONEN = [
     regel: {
       reihen: [
         [{ titel: 'Nahrungskette', punkte: ['Der Pfeil **→** heißt: „wird gefressen von“.', 'Am Anfang: eine **Pflanze** (Produzent).', 'Danach: **Konsumenten**.', 'Am Ende räumen **Zersetzer** auf.'] },
-         { title: '', titel: 'Gleichgewicht', punkte: ['Alle Glieder hängen zusammen.', 'Fehlt ein Glied, ändern sich **viele andere**.', 'Darum schützen wir auch kleine Tiere und Pflanzen.'] }],
+         { titel: 'Gleichgewicht', punkte: ['Alle Glieder hängen zusammen.', 'Fehlt ein Glied, ändern sich **viele andere**.', 'Darum schützen wir auch kleine Tiere und Pflanzen.'] }],
       ],
     },
     ueben: [

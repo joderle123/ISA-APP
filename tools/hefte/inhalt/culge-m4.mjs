@@ -55,7 +55,7 @@ export const LEKTIONEN = [
         '### Die Stadt',
         'Ab dem 12. Jahrhundert wuchsen die **Städte**. Dort lebten Handwerker und Händler, die **Bürger**. Sie schlossen sich in **Zünften** zusammen: Bäcker, Schmiede, Weber. Ein Sprichwort sagt: „Stadtluft macht frei“ – wer in die Stadt zog, konnte manchmal den Herren auf dem Land entkommen.',
         '### Echternach',
-        'Eine der wichtigsten Städte in unserer Gegend war **Echternach**. Dort gründete der Mönch **Willibrord** um das Jahr 700 ein Kloster, die **Abtei**. Bis heute findet in Echternach jedes Jahr an Pfingstdienstag die **Springprozession** statt. Sie gehört zum Kulturerbe der UNESCO.',
+        'Eine der wichtigsten Städte in unserer Gegend war **Echternach**. Dort gründete der Mönch **Willibrord** um das Jahr 700 ein Kloster, die **Abtei**. Bis heute findet in Echternach jedes Jahr an Pfingstdienstag die **Springprozession** statt. Sie gehört seit 2010 zum immateriellen Kulturerbe der UNESCO.',
       ],
       bildHtml: staende(),
       woerter: [['das Mittelalter', 'le Moyen Âge'], ['der Stand', 'l’ordre (social)'], ['der Adel', 'la noblesse'], ['die Geistlichen', 'le clergé'], ['die Abgabe', 'l’impôt, la redevance'], ['die Zunft', 'la corporation'], ['das Kloster (die Abtei)', 'le monastère (l’abbaye)'], ['die Prozession', 'la procession']],
@@ -69,7 +69,7 @@ export const LEKTIONEN = [
       situation: 'Ein Hörspiel: Die Bauerntochter Mett verkauft Eier auf dem Markt. Der Schmiedelehrling Pier spricht mit ihr.',
       bild: ['chloe:froh:stehen', 'finn:froh:stehen'], sprecher: { Erzähler: 'm1', Mett: 'w2', Pier: 'm3' },
       text: [
-        ['Erzähler', 'Echternach, an einem Markttag um 1350. Zwischen den Ständen riecht es nach Brot, Fisch und Rauch.'],
+        ['Erzähler', 'Echternach, an einem Markttag um 1350. Zwischen den Marktständen riecht es nach Brot, Fisch und Rauch.'],
         ['Pier', 'Frische Eier? Wie viel kosten zwölf?'],
         ['Mett', 'Zwei Pfennige. Mein Vater sagt, ich soll nicht weniger nehmen. Wir müssen dem Grafen bald unsere Abgabe zahlen.'],
         ['Pier', 'Ihr Bauern habt es schwer. Ich lerne bei Meister Klaus das Schmieden. In fünf Jahren bin ich Geselle.'],
@@ -122,7 +122,7 @@ export const LEKTIONEN = [
         '### Das Ende der Festung',
         'Im Jahr **1867** beschlossen die europäischen Großmächte im **Londoner Vertrag**: Luxemburg soll **neutral** sein, also keinem Lager angehören. Darum musste die Festung **abgerissen** werden. Das dauerte viele Jahre. Einige Teile blieben aber stehen.',
         '### Heute',
-        'Ein Teil der Kasematten kann man besichtigen. Die Altstadt und die Reste der Festung gehören seit **1994** zum **Welterbe der UNESCO**.',
+        'Einen Teil der Kasematten kann man besichtigen. Die Altstadt und die Reste der Festung gehören seit **1994** zum **Welterbe der UNESCO**.',
       ],
       woerter: [['die Festung', 'la forteresse'], ['die Bastion', 'le bastion'], ['die Kasematten', 'les casemates'], ['der Herrscher', 'le souverain'], ['uneinnehmbar', 'imprenable'], ['neutral', 'neutre'], ['abreißen', 'démolir'], ['das Welterbe', 'le patrimoine mondial']],
       aufgaben: [
@@ -236,7 +236,7 @@ export const LEKTIONEN = [
     schreiben: [
       { art: 'schreiben', auftrag: 'Erkläre einem neuen Mitschüler, der gerade nach Luxemburg gezogen ist, in einfachen Worten, wie Luxemburg ein eigenes Land wurde.', stufe: 2,
         anfaenge: ['Luxemburg ist ein kleines Land, aber …', 'Zuerst …', 'Dann …', 'Seit 1890 …'], zeilen: 8,
-        beispiel: 'Luxemburg ist ein kleines Land, aber es hat eine lange Geschichte. Zuerst gehörte es zum König der Niederlande. 1839 wurde es geteilt, und der westliche Teil kam zu Belgien. 1867 wurde Luxemburg neutral, und die große Festung wurde abgerissen. Seit 1890 hat Luxemburg eigene Großherzöge. Am 23. Juni feiern wir unser Land.' },
+        beispiel: 'Luxemburg ist ein kleines Land, aber es hat eine lange Geschichte. Zuerst war der König der Niederlande auch Großherzog von Luxemburg. 1839 wurde es geteilt, und der westliche Teil kam zu Belgien. 1867 wurde Luxemburg neutral, und die große Festung wurde abgerissen. Seit 1890 hat Luxemburg eigene Großherzöge. Am 23. Juni feiern wir unser Land.' },
     ],
     check: ['Ich ordne 1815, 1839, 1867 und 1890 richtig ein.', 'Ich erkläre, warum am 23. Juni gefeiert wird.', 'Ich weiß, wer in Luxemburg die Gesetze macht.'],
   },
@@ -274,7 +274,7 @@ export const LEKTIONEN = [
       bild: ['amira:froh:handy', 'aerztin:froh:erklaeren'], sprecher: { Amira: 'w2', Sami: 'm3', Mitarbeiterin: 'w1' },
       text: [
         ['Amira', 'Heute ist der Tag der Kinderrechte. Brauchen Kinder in Luxemburg überhaupt Hilfe? Hier geht es doch allen gut.'],
-        ['Mitarbeiterin', 'Vielen geht es gut, aber nicht allen. Manche Kinder werden zu Hause geschlagen oder gemobbt. Manche Familien haben zu wenig Geld für Freizeit oder warme Kleidung.'],
+        ['Mitarbeiterin', 'Vielen geht es gut, aber nicht allen. Manche Kinder werden zu Hause geschlagen oder in der Schule gemobbt. Manche Familien haben zu wenig Geld für Freizeit oder warme Kleidung.'],
         ['Sami', 'Was kann ein Kind tun, wenn seine Rechte verletzt werden?'],
         ['Mitarbeiterin', 'Mit einer Vertrauensperson sprechen: einer Lehrerin, der Schulpsychologin, einem Trainer. Oder anonym und kostenlos 116 111 anrufen. Im Notfall die 112.'],
         ['Amira', 'Und was ist mit dem Recht auf eine eigene Meinung? Das klingt so groß.'],
@@ -380,7 +380,7 @@ export const LEKTIONEN = [
     start: {
       was: 'Eine gute Klassensprecherin, ein guter Klassensprecher …',
       aufgaben: [
-        { art: 'tabelle', auftrag: 'Was ist wichtig? Kreuze an.', stufe: 1, kopf: ['', 'wichtig', 'unwichtig'], breiten: [60, 20, 20], zeilen: [['hört allen zu', '[x]', ''], ['ist beliebt und cool', '', '[x]'], ['traut sich, mit Lehrkräften zu reden', '[x]', ''], ['ist fair, auch zu Leuten, die er nicht mag', '[x]', ''], ['hat die besten Noten', '', '[x]']] },
+        { art: 'tabelle', auftrag: 'Was ist wichtig? Kreuze an.', stufe: 1, kopf: ['', 'wichtig', 'unwichtig'], breiten: [60, 20, 20], zeilen: [['hört allen zu', '[x]', ''], ['ist beliebt und cool', '', '[x]'], ['traut sich, mit Lehrkräften zu reden', '[x]', ''], ['ist fair, auch zu Leuten, die sie oder er nicht mag', '[x]', ''], ['hat die besten Noten', '', '[x]']] },
       ],
     },
     lesen: {
@@ -403,7 +403,7 @@ export const LEKTIONEN = [
     hoeren: {
       was: 'Eine Wahlrede', wo: 'Klasse 6P2 · Wahl der Klassensprecher', titel: 'Wählt mich!',
       situation: 'Nele und Lio kandidieren als Klassensprecher. Sie halten eine kurze Rede.',
-      bild: ['nele:froh:rollstuhl', 'lio:froh:rollstuhl'], sprecher: { Nele: 'w3', Lio: 'm3' },
+      bild: ['nele:froh:rollstuhl', 'lio:froh:stehen'], sprecher: { Nele: 'w3', Lio: 'm3' },
       text: [
         ['Nele', 'Hallo zusammen. Ich möchte eure Klassensprecherin werden. Warum? Weil ich gut organisieren kann und weil ich zuhöre.'],
         ['Nele', 'Mein erstes Ziel: Wir brauchen einen Plan für die Klassenarbeiten, damit wir nicht drei Tests am selben Tag haben. Mein zweites Ziel: ein Ausflug, bei dem alle mitmachen können.'],

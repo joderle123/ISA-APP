@@ -88,7 +88,7 @@ export const LEKTIONEN = [
     schreiben: [
       { art: 'schreiben', auftrag: 'Stell dir vor, du bist 1925 ein junger Arbeiter oder eine junge Arbeiterin in Esch. Schreibe einen Tagebucheintrag.', stufe: 2,
         anfaenge: ['Heute war …', 'In der Hütte …', 'Ich bin müde, weil …', 'Ich wünsche mir …'], zeilen: 8,
-        beispiel: 'Heute war meine erste Nachtschicht am Hochofen. In der Hütte ist es laut und unglaublich heiß. Mein Kollege Giuseppe aus Italien hat mir alles gezeigt. Ich bin müde, weil die Schicht zehn Stunden gedauert hat. Ich wünsche mir, dass meine Kinder später in die Schule gehen und einen anderen Beruf lernen können.' },
+        beispiel: 'Heute war meine erste Nachtschicht am Hochofen. In der Hütte ist es laut und unglaublich heiß. Mein Kollege Giuseppe aus Italien hat mir alles gezeigt. Ich bin müde, weil die Schicht acht Stunden gedauert hat. Ich wünsche mir, dass meine Kinder später in die Schule gehen und einen anderen Beruf lernen können.' },
     ],
     check: ['Ich erkläre, was das Minett ist.', 'Ich beschreibe die Arbeit in der Hütte.', 'Ich ordne wichtige Daten der Stahlgeschichte ein.'],
   },
@@ -173,13 +173,13 @@ export const LEKTIONEN = [
       quelle: 'Sachtext (vereinfacht)', titel: 'Besetzt – und doch nicht aufgegeben',
       hinweis: 'In diesem Text geht es um Krieg, Verfolgung und Tod. Wenn dich das traurig macht oder belastet, sprich mit deiner Lehrerin oder deinem Lehrer.',
       absaetze: [
-        'Am **10. Mai 1940** marschierte die deutsche Armee in Luxemburg ein, obwohl das Land neutral war. **Großherzogin Charlotte** und die Regierung flohen ins Ausland, nach London. Von dort aus sprach die Großherzogin im Radio zu den Luxemburgern und machte ihnen Mut.',
+        'Am **10. Mai 1940** marschierte die deutsche Armee in Luxemburg ein, obwohl das Land neutral war. **Großherzogin Charlotte** und die Regierung flohen ins Ausland. Die Regierung arbeitete von London aus. Von dort aus sprach die Großherzogin im Radio zu den Luxemburgern und machte ihnen Mut.',
         '### Luxemburg sollte deutsch werden',
         'Die Besatzer wollten Luxemburg zu einem Teil Deutschlands machen. Französisch wurde verboten, sogar französische Vornamen und Straßennamen. Im **Oktober 1941** sollten die Menschen bei einer Befragung Deutsch als ihre Sprache angeben. Viele schrieben trotzdem dreimal **„Luxemburgisch“**. Die Befragung wurde abgebrochen.',
         '### Streik und Verfolgung',
-        'Im **August 1942** wurden junge Luxemburger gezwungen, in der deutschen Armee zu kämpfen. Darauf folgte ein **Generalstreik**: Arbeiter, Schüler und Lehrer legten die Arbeit nieder. Die Besatzer bestraften dies hart; 21 Streikende wurden hingerichtet. Jüdinnen und Juden wurden verfolgt, beraubt und deportiert. Weit über 1000 von ihnen wurden ermordet.',
+        'Im **August 1942** wurden junge Luxemburger gezwungen, in der deutschen Armee zu kämpfen: die **Zwangsrekrutierung**. Darauf folgte ein **Generalstreik**: Arbeiter, Schüler und Lehrer legten die Arbeit nieder. Die Besatzer bestraften dies hart; 21 Streikende wurden hingerichtet. Jüdinnen und Juden wurden verfolgt, beraubt und deportiert. Weit über 1000 von ihnen wurden ermordet.',
         '### Befreiung',
-        'Im **September 1944** befreiten amerikanische Soldaten den größten Teil des Landes. Im Winter 1944/45 kam der Krieg noch einmal zurück: In der **Ardennenoffensive** wurden viele Orte im Norden, wie Wiltz, Clerf und Vianden, schwer zerstört. Im Frühjahr 1945 war das ganze Land frei, und die Großherzogin kehrte zurück.',
+        'Im **September 1944** befreiten amerikanische Soldaten den größten Teil des Landes. Im Winter 1944 auf 1945 kam der Krieg noch einmal zurück: In der **Ardennenoffensive** wurden viele Orte im Norden, wie Wiltz, Clerf und Vianden, schwer zerstört. Im Februar 1945 war das ganze Land frei. Im April 1945 kehrte die Großherzogin zurück.',
       ],
       woerter: [['die Besatzung', 'l’occupation'], ['neutral', 'neutre'], ['fliehen', 'fuir'], ['der Streik', 'la grève'], ['verfolgen', 'persécuter'], ['deportieren', 'déporter'], ['die Befreiung', 'la libération'], ['die Erinnerung', 'le souvenir, la mémoire']],
       aufgaben: [
@@ -244,7 +244,7 @@ export const LEKTIONEN = [
         '### Gewaltenteilung',
         'Die Macht im Staat ist auf **drei Bereiche** verteilt. So kann niemand zu viel Macht bekommen. Die **Abgeordnetenkammer** mit **60 Abgeordneten** macht die **Gesetze**. Die **Regierung** mit dem Premierminister oder der Premierministerin und den Ministerinnen und Ministern **führt** die Gesetze **aus**. Die **Gerichte** sprechen **Recht**. Sie sind unabhängig.',
         '### Wählen',
-        'Alle **5 Jahre** wählen die Bürgerinnen und Bürger die Abgeordnetenkammer. Wer die luxemburgische Staatsangehörigkeit hat und 18 Jahre alt ist, **muss** wählen gehen (Wahlpflicht). Bei den **Gemeindewahlen** und den **Europawahlen** dürfen sich auch viele Menschen ohne luxemburgischen Pass eintragen lassen und wählen.',
+        'Alle **5 Jahre** wählen die Bürgerinnen und Bürger die Abgeordnetenkammer. Wer die luxemburgische Staatsangehörigkeit hat und mindestens 18 Jahre alt ist, **muss** wählen gehen (Wahlpflicht). Bei den **Gemeindewahlen** und den **Europawahlen** dürfen sich auch viele Menschen ohne luxemburgischen Pass eintragen lassen und wählen.',
       ],
       bildHtml: gewaltenteilung({ breite: 132 }),
       woerter: [['die Demokratie', 'la démocratie'], ['das Staatsoberhaupt', 'le chef de l’État'], ['die Verfassung', 'la Constitution'], ['die Abgeordnetenkammer', 'la Chambre des députés'], ['das Gesetz', 'la loi'], ['die Regierung', 'le gouvernement'], ['das Gericht', 'le tribunal'], ['die Wahlpflicht', 'le vote obligatoire']],
@@ -368,7 +368,7 @@ export const LEKTIONEN = [
     start: {
       was: 'Was meinst du?',
       aufgaben: [
-        { art: 'rf', auftrag: 'Was glaubst du? Richtig oder falsch? (Die Lösung steht im Text.)', stufe: 1, saetze: [['Ein Lehrling darf nachts arbeiten.', false], ['Wer krank ist, muss den Betrieb sofort informieren.', true], ['Schutzkleidung ist freiwillig.', false]] },
+        { art: 'rf', auftrag: 'Was glaubst du? Richtig oder falsch? (Die Lösung steht im Text.)', stufe: 1, saetze: [['Ein Lehrling unter 18 darf nachts arbeiten.', false], ['Wer krank ist, muss den Betrieb sofort informieren.', true], ['Schutzkleidung ist freiwillig.', false]] },
       ],
     },
     lesen: {
@@ -470,7 +470,7 @@ export const LEKTIONEN = [
       ],
       vor: [{ art: 'mc', auftrag: 'Was ist ein „Sparkonto“? Kreuze an.', stufe: 1, fragen: [{ f: '', o: ['ein Konto, auf dem man Geld für später sammelt', 'ein Konto nur für Einkäufe'], r: 0 }] }],
       beim: [
-        { art: 'tabelle', auftrag: 'Hör zu und ergänze.', stufe: 1, kopf: ['', 'Lio', 'Amira'], breiten: [24, 38, 38], zeilen: [['Plan am Anfang', '[Konsole, Spiel, Handy-Abo kaufen]', '[200 € im Monat sparen]'], ['Wofür?', '[zum Spielen]', '[für den Führerschein]'], ['Entscheidung am Ende', '[bis Dezember warten, zwei Monate sparen]', '[alles in einer App aufschreiben]']] },
+        { art: 'tabelle', auftrag: 'Hör zu und ergänze.', stufe: 1, kopf: ['', 'Lio', 'Amira'], breiten: [24, 38, 38], zeilen: [['Plan am Anfang', '[Konsole, Spiel, Handy-Abo kaufen]', '[200 € im Monat sparen]'], ['Sparen für …', '[noch nichts geplant]', '[den Führerschein]'], ['Am Ende', '[bis Dezember warten, zwei Monate sparen]', '[schreibt alles in eine App, rät zu einem billigeren Abo]']] },
       ],
       nach: [{ art: 'sprechen', auftrag: 'Welche Spartipps kennt ihr? Sammelt.', stufe: 2, karten: [
         { titel: 'Ideen', text: ['zuerst sparen, dann ausgeben', 'Abos prüfen', 'gebraucht kaufen', 'eine Nacht darüber schlafen'] }] }],
@@ -503,14 +503,14 @@ export const LEKTIONEN = [
     start: {
       was: 'Berufe gestern und heute',
       aufgaben: [
-        { art: 'zuordnen', auftrag: 'Welcher Beruf ist neu, welcher alt? Verbinde mit einem passenden Beispiel.', stufe: 1, links: ['Hüttenarbeiter', 'App-Entwicklerin', 'Solartechniker'], rechts: ['arbeitete am Hochofen', 'programmiert Programme fürs Handy', 'baut Solaranlagen auf Dächer'] },
+        { art: 'zuordnen', auftrag: 'Welcher Beruf ist neu, welcher alt? Verbinde mit einem passenden Beispiel.', stufe: 1, links: ['Hüttenarbeiter', 'App-Entwicklerin', 'Solartechniker'], rechts: ['arbeitete am Hochofen', 'programmiert Apps fürs Handy', 'montiert Solaranlagen auf Dächern'] },
       ],
     },
     lesen: {
       was: 'Ein Sachtext', art: 'text', stimme: 'w1', nummern: false,
       quelle: 'Sachtext (vereinfacht)', titel: 'Wo Luxemburg arbeitet',
       absaetze: [
-        'Früher arbeiteten die meisten Menschen in Luxemburg in der **Landwirtschaft**, später in der **Stahlindustrie**. Heute arbeiten die meisten im **Dienstleistungsbereich**: in Banken und Versicherungen, im Handel, in Büros, in Schulen und Krankenhäusern.',
+        'Früher arbeiteten die meisten Menschen in Luxemburg in der **Landwirtschaft**, später arbeiteten viele in der **Stahlindustrie**. Heute arbeiten die meisten im **Dienstleistungsbereich**: in Banken und Versicherungen, im Handel, in Büros, in Schulen und Krankenhäusern.',
         '### Typisch Luxemburg',
         'Luxemburg ist ein großer **Finanzplatz** mit vielen Banken und Fonds. Wegen seiner Lage mitten in Europa ist auch die **Logistik** wichtig: Waren werden mit Lkw, Zug und Flugzeug weitertransportiert. Luxemburg ist sogar in der **Raumfahrt** aktiv: Von hier aus werden Satelliten gesteuert.',
         '### Gesucht!',

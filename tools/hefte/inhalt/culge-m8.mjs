@@ -52,7 +52,7 @@ export const LEKTIONEN = [
     },
     hoeren: {
       was: 'Eine Atemübung zum Mitmachen', wo: 'Schulpsychologischer Dienst', titel: 'Die Kasten-Atmung',
-      situation: 'Die Schulpsychologin leitet eine kurze Atemübung an. Mach mit, wenn du möchtest – im Sitzen, mit offenen oder geschlossenen Augen.',
+      situation: 'Die Schulpsychologin leitet eine kurze Atemübung an. Mach mit, wenn du möchtest – im Sitzen, mit offenen oder geschlossenen Augen. Zähle in Gedanken langsam mit.',
       bild: ['lehrerin:ruhig:erklaeren', 'nele:ruhig:rollstuhl'], sprecher: { Schulpsychologin: 'w1' },
       text: [
         ['Schulpsychologin', 'Setz dich bequem hin. Stell die Füße auf den Boden. Wenn du magst, schließ die Augen. Sonst schau auf einen Punkt vor dir.'],
@@ -108,7 +108,7 @@ export const LEKTIONEN = [
         '### Gesund oder nicht?',
         'In einer guten Beziehung fühlen sich beide **sicher** und **frei**. Warnzeichen sind: Einer kontrolliert das Handy des anderen, verbietet Freundschaften, droht oder macht ständig eifersüchtige Szenen.',
         '### Online',
-        'Intime Fotos oder Nacktbilder von Jugendlichen zu machen, zu verschicken oder **weiterzuleiten** ist **verboten** und strafbar – auch wenn es nur „Spaß“ sein soll. Wer so ein Bild bekommt: nicht weiterleiten, einer Vertrauensperson zeigen und es dann löschen. Hilfe gibt es bei **BEE SECURE (8002 1234)** und bei **116 111**.',
+        'Nacktbilder von Jugendlichen **weiterzuleiten** oder zu verbreiten ist **strafbar** – auch wenn es nur „Spaß“ sein soll (Stand 2026). Wer unter Druck gesetzt wird, ein Bild zu schicken, ist **nicht schuld**. Wer so ein Bild bekommt: nicht weiterleiten, einer Vertrauensperson Bescheid sagen und es dann löschen. Hilfe gibt es bei **BEE SECURE (8002 1234)** und bei **116 111**.',
       ],
       woerter: [['sich verlieben', 'tomber amoureux'], ['die Beziehung', 'la relation'], ['die Grenze', 'la limite'], ['das Einverständnis', 'le consentement'], ['akzeptieren', 'accepter'], ['die Eifersucht', 'la jalousie'], ['kontrollieren', 'contrôler'], ['weiterleiten', 'transférer']],
       aufgaben: [
@@ -120,19 +120,19 @@ export const LEKTIONEN = [
       situation: 'Noah zeigt Mia sein Handy. Jemand hat ihm ein peinliches Foto einer Mitschülerin geschickt.',
       bild: ['noah:verwirrt:handy', 'mia:besorgt:stehen'], sprecher: { Noah: 'm3', Mia: 'w3' },
       text: [
-        ['Noah', 'Mia, schau mal. Das hat mir jemand aus der Parallelklasse geschickt. Ein Foto von Lea in der Umkleide. Alle schicken es weiter.'],
-        ['Mia', 'Was? Mach das sofort weg! Hat Lea das erlaubt?'],
+        ['Noah', 'Mia, schau mal. Das hat mir jemand aus der Parallelklasse geschickt. Ein Foto von Elif in der Umkleide. Alle schicken es weiter.'],
+        ['Mia', 'Was? Mach das sofort weg! Hat Elif das erlaubt?'],
         ['Noah', 'Bestimmt nicht. Das wurde heimlich gemacht.'],
         ['Mia', 'Dann ist das richtig schlimm. Stell dir vor, das wärst du. Und weiterleiten ist sogar verboten.'],
         ['Noah', 'Ich habe es ja nicht gemacht. Ich hab es nur bekommen.'],
         ['Mia', 'Dann leite es auf keinen Fall weiter. Wir sagen es Frau Sommer. Sie weiß, was zu tun ist. Und dann löschst du es.'],
-        ['Noah', 'Und Lea?'],
+        ['Noah', 'Und Elif?'],
         ['Mia', 'Ich schreib ihr, dass wir zu ihr halten. Sie soll wissen, dass sie nicht allein ist.'],
       ],
       vor: [{ art: 'mc', auftrag: 'Was bedeutet „heimlich“? Kreuze an.', stufe: 1, fragen: [{ f: '', o: ['ohne dass die Person es weiß', 'mit Erlaubnis'], r: 0 }] }],
       beim: [
-        { art: 'ordnen', auftrag: 'Was schlägt Mia vor? Ordne.', stufe: 1, teile: ['das Foto nicht weiterleiten', 'es Frau Sommer zeigen', 'das Foto löschen', 'Lea schreiben, dass sie nicht allein ist'], ordnung: [2, 0, 3, 1] },
-        { art: 'fragen', auftrag: 'Warum ist das Foto „richtig schlimm“?', stufe: 2, fragen: [{ f: '', zeilen: 2, l: 'Es wurde heimlich ohne Erlaubnis gemacht und wird weitergeschickt; das verletzt Lea, und Weiterleiten ist verboten.' }] },
+        { art: 'ordnen', auftrag: 'Was schlägt Mia vor? Ordne.', stufe: 1, teile: ['das Foto nicht weiterleiten', 'Frau Sommer Bescheid sagen', 'das Foto löschen', 'Elif schreiben, dass sie nicht allein ist'], ordnung: [2, 0, 3, 1] },
+        { art: 'fragen', auftrag: 'Warum ist das Foto „richtig schlimm“?', stufe: 2, fragen: [{ f: '', zeilen: 2, l: 'Es wurde heimlich ohne Erlaubnis gemacht und wird weitergeschickt; das verletzt Elif, und Weiterleiten ist verboten.' }] },
       ],
       nach: [{ art: 'sprechen', auftrag: 'Was kann die ganze Klasse tun, damit so etwas nicht passiert oder Betroffene Hilfe bekommen?', stufe: 3, karten: [
         { titel: 'Satzanfänge', text: ['Wir könnten …', 'Wichtig ist, dass …', 'Hilfe gibt es bei …'] }] }],
@@ -140,16 +140,16 @@ export const LEKTIONEN = [
     regel: {
       reihen: [
         [{ titel: 'Respekt in Beziehungen', punkte: ['**Nur Ja heißt Ja.**', 'Ein **Nein** akzeptieren', 'Warnzeichen: **Kontrolle**, **Drohungen**, Verbote', 'jeder darf lieben, wen er oder sie liebt'] },
-         { titel: 'Intime Bilder', punkte: ['**nicht** machen, schicken, **weiterleiten**', 'einer **Vertrauensperson** zeigen, dann löschen', 'Hilfe: **BEE SECURE 8002 1234**, **116 111**'] }],
+         { titel: 'Intime Bilder', punkte: ['**nicht** machen, schicken, **weiterleiten**', 'einer **Vertrauensperson** Bescheid sagen, dann löschen', 'Hilfe: **BEE SECURE 8002 1234**, **116 111**'] }],
       ],
     },
     ueben: [
       { art: 'tabelle', auftrag: 'Wie kann man Nein sagen – und wie ein Nein gut annehmen? Ergänze.', stufe: 2, kopf: ['Situation', 'Nein sagen', 'Nein annehmen'], breiten: [34, 33, 33], zeilen: [['Jemand will dich zur Begrüßung umarmen, du willst nicht.', '[z. B. „Lieber nur ein Hallo, okay?“]', '[z. B. „Klar, kein Problem.“]'], ['Jemand will ein Foto von dir posten.', '[z. B. „Bitte nicht, das möchte ich nicht.“]', '[z. B. „Okay, ich lösche es.“]'], ['Jemand will deine Hand halten, du bist unsicher.', '[z. B. „Ich weiß noch nicht. Lass mir Zeit.“]', '[z. B. „Okay, ich warte.“]']] },
     ],
     schreiben: [
-      { art: 'schreiben', auftrag: 'Schreibe eine kurze Nachricht an Lea aus der Geschichte: Zeig ihr, dass du zu ihr hältst, und sag ihr, wo sie Hilfe bekommt.', stufe: 2,
-        anfaenge: ['Hey Lea,', 'wir haben gesehen, dass …', 'Das ist nicht deine Schuld.', 'Du kannst …'], zeilen: 6,
-        beispiel: 'Hey Lea, wir haben gesehen, dass ein Foto von dir herumgeschickt wird. Wir haben es nicht weitergeleitet und Frau Sommer Bescheid gesagt. Das ist nicht deine Schuld. Du kannst auch bei BEE SECURE anrufen, die helfen, solche Bilder zu löschen. Wir sind für dich da.' },
+      { art: 'schreiben', auftrag: 'Schreibe eine kurze Nachricht an Elif aus der Geschichte: Zeig ihr, dass du zu ihr hältst, und sag ihr, wo sie Hilfe bekommt.', stufe: 2,
+        anfaenge: ['Hey Elif,', 'wir haben gesehen, dass …', 'Das ist nicht deine Schuld.', 'Du kannst …'], zeilen: 6,
+        beispiel: 'Hey Elif, wir haben gesehen, dass ein Foto von dir herumgeschickt wird. Wir haben es nicht weitergeleitet und Frau Sommer Bescheid gesagt. Das ist nicht deine Schuld. Du kannst auch bei BEE SECURE anrufen, die helfen, solche Bilder zu löschen. Wir sind für dich da.' },
     ],
     check: ['Ich erkläre „Nur Ja heißt Ja“.', 'Ich erkenne Warnzeichen in Beziehungen.', 'Ich weiß, was ich bei intimen Bildern tun muss.'],
   },
@@ -174,7 +174,7 @@ export const LEKTIONEN = [
         '### Cannabis',
         'Seit 2023 dürfen Erwachsene in Luxemburg zu Hause eine kleine Menge Cannabis für sich selbst anbauen und dort konsumieren. Für Jugendliche unter 18 bleibt Cannabis **verboten**. Verkauf und Konsum in der Öffentlichkeit sind auch für Erwachsene verboten. Cannabis kann Gedächtnis und Motivation schwächen und bei manchen Menschen **Angst** oder **Psychosen** auslösen.',
         '### Im Notfall',
-        'Wenn jemand nicht mehr reagiert: **112** anrufen, die Person in die **stabile Seitenlage** legen, nicht allein lassen. Niemand bekommt Ärger, weil er Hilfe geholt hat. Helfen ist immer richtig.',
+        'Wenn jemand nicht mehr reagiert: **112** anrufen. Atmet die Person normal, kommt sie in die **stabile Seitenlage**. Atmet sie nicht normal, erklärt die Leitstelle am Telefon die Herzdruckmassage. Die Person nie allein lassen. Hilfe holen ist immer richtig – ein Leben ist wichtiger als Ärger.',
       ],
       woerter: [['die Droge', 'la drogue'], ['konsumieren', 'consommer'], ['nüchtern', 'sobre'], ['betrunken', 'ivre, saoul'], ['die Alkoholvergiftung', 'l’intoxication alcoolique'], ['ersticken', 's’étouffer'], ['der Gruppendruck', 'la pression du groupe'], ['die Psychose', 'la psychose']],
       aufgaben: [
@@ -205,7 +205,7 @@ export const LEKTIONEN = [
     regel: {
       reihen: [
         [{ titel: 'Risiken', punkte: ['junges **Gehirn** reagiert empfindlich', 'schneller **abhängig**', 'Unfälle, Streit, **Alkoholvergiftung**', 'Cannabis: unter 18 **verboten**'] },
-         { titel: 'Notfall', nummern: true, punkte: ['ansprechen, **rütteln**', 'reagiert nicht? **112** anrufen', '**stabile Seitenlage**', '**nicht allein lassen**'] }],
+         { titel: 'Notfall', nummern: true, punkte: ['ansprechen, **rütteln**', 'reagiert nicht? **112** anrufen', 'atmet normal? **stabile Seitenlage**', '**nicht allein lassen**'] }],
       ],
     },
     ueben: [
@@ -253,7 +253,7 @@ export const LEKTIONEN = [
     hoeren: {
       was: 'Ein Interview', wo: 'Schulradio', titel: 'Die Nacht, als das Wasser kam',
       situation: 'Tom interviewt eine Feuerwehrfrau, die 2021 beim Hochwasser im Einsatz war.',
-      bild: ['tom:froh:handy', 'aerztin:ruhig:erklaeren'], sprecher: { Tom: 'm3', Feuerwehrfrau: 'w1' },
+      bild: ['tom:froh:handy', 'mutter:ruhig:erklaeren'], sprecher: { Tom: 'm3', Feuerwehrfrau: 'w1' },
       text: [
         ['Tom', 'Sie waren im Juli 2021 im Einsatz. Wie war das?'],
         ['Feuerwehrfrau', 'Es hatte tagelang geregnet. In der Nacht stieg das Wasser sehr schnell. Wir haben Keller leer gepumpt, Sandsäcke gelegt und Menschen aus ihren Häusern geholt.'],
@@ -353,7 +353,7 @@ export const LEKTIONEN = [
         { a: 'Eine Dusche von 8 Minuten. Pro Minute fließen etwa 10 Liter. Wie viel Wasser ist das?', l: '8 · 10 = 80 Liter', raum: 2 },
         { a: 'Eine Toilettenspülung braucht etwa 6 Liter. Wie viel sind 5 Spülungen am Tag?', l: '5 · 6 = 30 Liter', raum: 2 },
         { a: 'Wie viel spart man, wenn man nur 4 statt 8 Minuten duscht?', l: '4 · 10 = 40 Liter pro Dusche', raum: 2 },
-        { a: 'Wie viel spart man so in einem Monat (30 Tage)?', l: '30 · 40 = 1200 Liter', raum: 2 }] },
+        { a: 'Wie viel spart man so in einem Monat (30 Tage), wenn man jeden Tag duscht?', l: '30 · 40 = 1200 Liter', raum: 2 }] },
     ],
     schreiben: [
       { art: 'schreiben', auftrag: 'Erkläre einem Kind aus der Grundschule in einfachen Worten, woher unser Trinkwasser kommt und wie man es schützt.', stufe: 2,
@@ -377,7 +377,7 @@ export const LEKTIONEN = [
       was: 'Ein Sachtext', art: 'text', stimme: 'w1', nummern: false,
       quelle: 'Sachtext (vereinfacht)', titel: 'Kleine Tiere, große Arbeit',
       absaetze: [
-        'Wenn eine Biene Nektar aus einer Blüte trinkt, bleibt **Blütenstaub** (Pollen) an ihr hängen. In der nächsten Blüte streift sie ihn ab. So wird die Blüte **bestäubt**, und es kann eine Frucht wachsen. Etwa **drei Viertel** unserer Nutzpflanzen brauchen Bestäuber – zum Beispiel Äpfel, Kirschen, Erdbeeren und Kürbisse.',
+        'Wenn eine Biene Nektar aus einer Blüte trinkt, bleibt **Blütenstaub** (Pollen) an ihr hängen. In der nächsten Blüte streift sie ihn ab. So wird die Blüte **bestäubt**, und es kann eine Frucht wachsen. Etwa **drei Viertel** unserer Nutzpflanzen profitieren von Bestäubern – zum Beispiel Äpfel, Kirschen, Erdbeeren und Kürbisse.',
         '### Nicht nur Honigbienen',
         'Die Honigbiene kennen alle. Aber in Europa gibt es rund **2000 Arten von Wildbienen**, dazu Hummeln, Schwebfliegen, Schmetterlinge und Käfer. Viele Wildbienen leben allein und nisten in Erdlöchern, hohlen Stängeln oder Totholz.',
         '### Insekten in Gefahr',
@@ -413,7 +413,7 @@ export const LEKTIONEN = [
     },
     regel: {
       reihen: [
-        [{ titel: 'Warum Insekten wichtig sind', punkte: ['**bestäuben** Blüten → Früchte', 'etwa **3/4** der Nutzpflanzen brauchen Bestäuber', '**Futter** für Vögel, Igel, Fledermäuse'] },
+        [{ titel: 'Warum Insekten wichtig sind', punkte: ['**bestäuben** Blüten → Früchte', 'etwa **3/4** der Nutzpflanzen profitieren von Bestäubern', '**Futter** für Vögel, Igel, Fledermäuse'] },
          { titel: 'So helfen wir', punkte: ['heimische **Wildblumen**', 'weniger mähen, **Totholz** liegen lassen', '**kein Gift** im Garten', '**Nisthilfen**, Insektenhotel'] }],
       ],
     },
@@ -482,7 +482,7 @@ export const LEKTIONEN = [
       ],
     },
     ueben: [
-      { art: 'meinungslinie', auftrag: 'Was denkst du? Begründe.', stufe: 2, aussagen: ['Wer billige Kleidung kauft, ist mitverantwortlich für schlechte Arbeitsbedingungen.', 'Second-Hand-Kleidung ist cool.'] },
+      { art: 'meinungslinie', auftrag: 'Was denkst du? Begründe.', stufe: 2, aussagen: ['Modefirmen müssen dafür sorgen, dass ihre Näherinnen faire Löhne bekommen.', 'Second-Hand-Kleidung ist cool.'] },
     ],
     schreiben: [
       { art: 'schreiben', auftrag: 'Schreibe eine Antwort an Rupa. Was hast du von ihr gelernt? Was willst du ändern?', stufe: 2,
@@ -499,7 +499,7 @@ export const LEKTIONEN = [
     start: {
       was: 'Braune Banane',
       aufgaben: [
-        { art: 'mc', auftrag: 'Eine Banane hat braune Punkte. Was machst du? Kreuze an.', stufe: 1, fragen: [{ f: '', o: ['wegwerfen', 'essen – sie ist jetzt besonders süß', 'einen Bananen-Shake oder Kuchen machen'], r: [1, 2] }] },
+        { art: 'mc', auftrag: 'Eine Banane hat braune Punkte. Was machst du? Kreuze an (mehrere möglich).', stufe: 1, fragen: [{ f: '', o: ['wegwerfen', 'essen – sie ist jetzt besonders süß', 'einen Bananen-Shake oder Kuchen machen'], r: [1, 2] }] },
       ],
     },
     lesen: {
@@ -512,7 +512,7 @@ export const LEKTIONEN = [
         '### Zwei Daten auf der Packung',
         'Das **Mindesthaltbarkeitsdatum** („mindestens haltbar bis …“) sagt: Bis dahin ist das Produkt sicher gut. Danach ist es oft noch lange essbar. **Anschauen, riechen, probieren!** Das **Verbrauchsdatum** („zu verbrauchen bis …“) steht auf leicht verderblichen Dingen wie frischem Hackfleisch oder Fisch. Nach diesem Datum soll man sie **nicht mehr essen**.',
         '### Tipps',
-        'Mit Einkaufszettel einkaufen, nicht hungrig einkaufen, Reste einfrieren oder am nächsten Tag essen, „Krummes“ Gemüse kaufen und alte Lebensmittel nach vorne im Kühlschrank stellen.',
+        'Mit Einkaufszettel einkaufen, nicht hungrig einkaufen, Reste einfrieren oder am nächsten Tag essen, „krummes“ Gemüse kaufen und alte Lebensmittel im Kühlschrank nach vorne stellen.',
       ],
       bildHtml: balken('Wo werden Lebensmittel weggeworfen? (EU, gerundet)', [['Haushalte', 54], ['Verarbeitung (Fabriken)', 19], ['Restaurants, Kantinen', 11], ['Landwirtschaft', 9], ['Handel (Läden)', 7]], { einheit: '%', max: 60 }),
       woerter: [['die Lebensmittel', 'les aliments'], ['verschwenden', 'gaspiller'], ['wegwerfen', 'jeter'], ['das Mindesthaltbarkeitsdatum', 'la date de durabilité minimale'], ['das Verbrauchsdatum', 'la date limite de consommation'], ['verderblich', 'périssable'], ['einfrieren', 'congeler'], ['die Reste', 'les restes']],

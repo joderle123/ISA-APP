@@ -37,7 +37,7 @@ export const LEKTIONEN = [
       was: 'Ein Sachtext mit Schaubild', art: 'text', stimme: 'w1', nummern: false,
       titel: 'Das Gerüst des Körpers',
       absaetze: [
-        'Das **Skelett** eines erwachsenen Menschen hat über **200 Knochen**. Es **stützt** den Körper, **schützt** die Organe und ermöglicht **Bewegung**. Der **Schädel** schützt das Gehirn, der **Brustkorb** mit den Rippen schützt Herz und Lunge. Die **Wirbelsäule** hält uns aufrecht. Der längste Knochen ist der **Oberschenkelknochen**.',
+        'Das **Skelett** eines erwachsenen Menschen hat über **200 Knochen**. Es **stützt** den Körper, **schützt** die Organe und ermöglicht **Bewegung**. Der **Schädel** schützt das Gehirn, der **Brustkorb** mit den Rippen schützt Herz und Lunge. Die **Wirbelsäule** hält uns aufrecht und schützt das Rückenmark. Der längste Knochen ist der **Oberschenkelknochen**.',
         '### Gelenke',
         'Wo zwei Knochen sich treffen, sind **Gelenke**. Das Knie und der Ellbogen sind **Scharniergelenke**: Sie bewegen sich wie eine Tür in eine Richtung. Schulter und Hüfte sind **Kugelgelenke**: Sie lassen sich in viele Richtungen drehen.',
         '### Muskeln',
@@ -78,7 +78,7 @@ export const LEKTIONEN = [
       ],
     },
     ueben: [
-      { art: 'tabelle', auftrag: 'Scharniergelenk oder Kugelgelenk? Probiere an dir aus und kreuze an.', stufe: 2, kopf: ['Gelenk', 'Scharniergelenk', 'Kugelgelenk'], breiten: [40, 30, 30], zeilen: [['Knie', '[x]', ''], ['Schulter', '', '[x]'], ['Ellbogen', '[x]', ''], ['Hüfte', '', '[x]'], ['Fingergelenk', '[x]', '']] },
+      { art: 'tabelle', auftrag: 'Scharniergelenk oder Kugelgelenk? Probiere an dir aus und kreuze an.', stufe: 2, kopf: ['Gelenk', 'Scharniergelenk', 'Kugelgelenk'], breiten: [40, 30, 30], zeilen: [['Knie', '[x]', ''], ['Schulter', '', '[x]'], ['Ellbogen', '[x]', ''], ['Hüfte', '', '[x]'], ['Fingermittelgelenk', '[x]', '']] },
     ],
     schreiben: [
       { art: 'schreiben', auftrag: 'Erkläre mit eigenen Worten, wie du deinen Arm beugst und streckst. Benutze die Wörter Bizeps, Trizeps, Gelenk.', stufe: 2,
@@ -174,7 +174,7 @@ export const LEKTIONEN = [
         'Wir atmen etwa 12- bis 20-mal pro Minute, ohne darüber nachzudenken. Die Luft strömt durch Nase oder Mund in die **Luftröhre**. Die Luftröhre teilt sich in zwei **Bronchien** – je eine für den linken und den rechten **Lungenflügel**. In der Lunge verzweigen sie sich immer feiner bis zu Millionen winziger **Lungenbläschen**. Dort geht der **Sauerstoff** ins Blut, und **Kohlenstoffdioxid** kommt aus dem Blut heraus.',
         'Beim Einatmen zieht sich das **Zwerchfell**, ein großer Muskel unter der Lunge, nach unten. Die Lunge dehnt sich aus, und Luft strömt hinein.',
         '### Rauchen und Vapen',
-        'Zigarettenrauch enthält **Nikotin**, **Teer** und viele giftige Stoffe. Teer verklebt die Lunge, Nikotin macht sehr schnell **abhängig**. Rauchen ist eine der häufigsten Ursachen für schwere Krankheiten. Auch **E-Zigaretten** (Vapes) enthalten oft Nikotin. Sie sind nicht harmlos: Forscher untersuchen noch, wie sie der Lunge schaden. In Luxemburg dürfen Tabak und E-Zigaretten **nicht an Jugendliche unter 18** verkauft werden.',
+        'Zigarettenrauch enthält **Nikotin**, **Teer** und viele giftige Stoffe. Teer verklebt die Lunge, Nikotin macht sehr schnell **abhängig**. Rauchen ist eine der häufigsten Ursachen für schwere Krankheiten. Auch **E-Zigaretten** (Vapes) enthalten oft Nikotin. Sie sind nicht harmlos: Forscher untersuchen noch, wie sie der Lunge schaden. In Luxemburg dürfen Tabak und E-Zigaretten **nicht an Jugendliche unter 18** verkauft werden (Stand 2026).',
       ],
       bildHtml: lunge({ breite: 66 }),
       woerter: [['die Atmung', 'la respiration'], ['die Luftröhre', 'la trachée'], ['die Bronchien', 'les bronches'], ['die Lunge', 'les poumons'], ['das Lungenbläschen', 'l’alvéole pulmonaire'], ['das Zwerchfell', 'le diaphragme'], ['abhängig', 'dépendant'], ['die E-Zigarette', 'la cigarette électronique']],
@@ -303,7 +303,7 @@ export const LEKTIONEN = [
       absaetze: [
         'Die **Pubertät** ist die Zeit, in der der Körper vom Kind zum Erwachsenen wird. Sie beginnt meist zwischen 9 und 14 Jahren – bei jedem Menschen **zu einer anderen Zeit**. Das ist völlig normal. Gesteuert wird sie von **Hormonen**, Botenstoffen im Blut.',
         '### Was sich verändert',
-        'Man wächst schneller, manchmal mehrere Zentimeter in einem Jahr. Unter den Achseln und im Intimbereich wachsen Haare. Die Haut wird fettiger, oft gibt es **Pickel**. Man schwitzt mehr – regelmäßiges Duschen hilft. Bei vielen Mädchen wächst die Brust, und die **Periode** (Menstruation) beginnt. Bei vielen Jungen wird die **Stimme tiefer** („Stimmbruch“), und Bart beginnt zu wachsen.',
+        'Man wächst schneller, manchmal mehrere Zentimeter in einem Jahr. Unter den Achseln und im Intimbereich wachsen Haare. Die Haut wird fettiger, oft gibt es **Pickel**. Man schwitzt mehr – regelmäßiges Duschen hilft. Bei vielen Mädchen wächst die Brust, und die **Periode** (Menstruation) beginnt. Bei vielen Jungen wird die **Stimme tiefer** („Stimmbruch“), und der Bart beginnt zu wachsen.',
         '### Gefühle',
         'Nicht nur der Körper verändert sich. Viele fühlen sich manchmal fröhlich und kurz danach traurig oder genervt. Man will mehr selbst entscheiden und wird unsicher, ob man „normal“ ist. Auch das ist **normal**. Jeder Körper ist anders – und jeder ist in Ordnung.',
         'Fragen sind erlaubt! Man kann sie der Schulärztin, dem Hausarzt, einer Vertrauensperson oder anonym bei **116 111** stellen.',
@@ -434,7 +434,7 @@ export const LEKTIONEN = [
         { icon: 'arrow-big-right', text: '**Bewusstlos, aber atmet normal:** Lege die Person in die **stabile Seitenlage**. So kann sie nicht an Erbrochenem ersticken.' },
         { icon: 'heart', text: '**Atmet nicht normal:** Die Leitstelle erklärt dir am Telefon die Herzdruckmassage. Mach mit, bis Hilfe kommt.' },
       ],
-      danach: ['Bei kleinen Wunden: mit sauberem Wasser ausspülen und ein Pflaster oder einen Verband darauf. Bei Verbrennungen: 10 bis 20 Minuten unter lauwarmes, fließendes Wasser halten.'],
+      danach: ['Bei kleinen Wunden: mit sauberem Wasser ausspülen und ein Pflaster oder einen Verband darauf. Bei kleinen Verbrennungen: 10 bis 20 Minuten unter kühles (nicht eiskaltes) fließendes Wasser halten. Bei großen Verbrennungen: 112.'],
       woerter: [['die Erste Hilfe', 'les premiers secours'], ['der Notruf', 'l’appel d’urgence'], ['bewusstlos', 'inconscient'], ['atmen', 'respirer'], ['die stabile Seitenlage', 'la position latérale de sécurité'], ['die Herzdruckmassage', 'le massage cardiaque'], ['der Verband', 'le pansement'], ['die Leitstelle', 'le centre d’appels d’urgence']],
       aufgaben: [
         { art: 'tabelle', auftrag: 'Die W-Fragen beim Notruf. Ergänze für dieses Beispiel: Ein Junge ist auf dem Schulhof von der Mauer gefallen und blutet am Kopf.', stufe: 2, kopf: ['Frage', 'Antwort'], breiten: [30, 70], zeilen: [['Wo?', '[Schulhof der Schule …, Adresse …]'], ['Was?', '[Ein Junge ist von der Mauer gefallen und blutet am Kopf.]'], ['Wie viele?', '[ein Verletzter]'], ['Warten!', '[nicht auflegen, bis die Leitstelle es sagt]']] },
@@ -465,7 +465,7 @@ export const LEKTIONEN = [
       reihen: [
         [{ titel: 'Prüfen – Rufen – Helfen', nummern: true, punkte: ['**Prüfen**: Sicherheit, Ansprechen, Atmung', '**Rufen**: 112 – Wo? Was? Wie viele? Warten!', '**Helfen**: bleiben, wärmen, Seitenlage'] },
          { titel: 'Wichtige Nummern', punkte: ['**112**: Notarzt, Rettungswagen, Feuerwehr', '**113**: Polizei', '**116 111**: Hilfe bei Sorgen (Kinder und Jugendliche)'] }],
-        [{ art: 'tipp', titel: 'Helfen ist immer richtig', text: 'Man kann bei der Ersten Hilfe **nichts falsch machen** – nur **nichts tun** ist falsch. Die Leitstelle hilft dir am Telefon.' }],
+        [{ art: 'tipp', titel: 'Helfen ist immer richtig', text: 'Der größte Fehler ist, **nichts zu tun**. Bring dich aber nicht selbst in Gefahr. Die Leitstelle hilft dir am Telefon.' }],
       ],
     },
     ueben: [
@@ -497,9 +497,9 @@ export const LEKTIONEN = [
         '### Zu viel des Guten',
         'Seit etwa 200 Jahren verbrennen die Menschen sehr viel **Kohle, Erdöl und Gas** – in Fabriken, Kraftwerken, Heizungen und Autos. Dabei entsteht das Gas **Kohlenstoffdioxid** (CO₂). Es verstärkt den Treibhauseffekt: Die Decke um die Erde wird dicker, und es wird **wärmer**. Das nennt man den **Klimawandel**. Folgen sind zum Beispiel mehr Hitzewellen, Trockenheit und Starkregen.',
         '### Was kann ich tun?',
-        'Große Veränderungen müssen Staaten und Firmen machen. Aber auch jede und jeder kann mithelfen: zu Fuß, mit dem Fahrrad oder mit Bus und Zug fahren (in Luxemburg ist der öffentliche Verkehr kostenlos), **Licht ausschalten**, Geräte nicht im Standby lassen, **kürzer duschen**, weniger Essen wegwerfen und Dinge länger benutzen.',
+        'Große Veränderungen müssen Staaten und Firmen machen. Aber auch jede und jeder kann mithelfen: zu Fuß, mit dem Fahrrad oder mit Bus und Zug fahren (in Luxemburg ist der öffentliche Verkehr in der 2. Klasse kostenlos, Stand 2026), **Licht ausschalten**, Geräte nicht im Standby lassen, **kürzer duschen**, weniger Essen wegwerfen und Dinge länger benutzen.',
       ],
-      woerter: [['das Klima', 'le climat'], ['der Treibhauseffekt', 'l’effet de serre'], ['die Atmosphäre', 'l’atmosphère'], ['das Kohlenstoffdioxid (CO₂)', 'le dioxyde de carbone (CO₂)'], ['der Klimawandel', 'le changement climatique'], ['verbrennen', 'brûler'], ['Energie sparen', 'économiser l’énergie'], ['der Standby', 'la veille (mode)']],
+      woerter: [['das Klima', 'le climat'], ['der Treibhauseffekt', 'l’effet de serre'], ['die Atmosphäre', 'l’atmosphère'], ['das Kohlenstoffdioxid (CO₂)', 'le dioxyde de carbone (CO₂)'], ['der Klimawandel', 'le changement climatique'], ['verbrennen', 'brûler'], ['Energie sparen', 'économiser l’énergie'], ['der Standby-Modus', 'la veille (mode)']],
       aufgaben: [
         { art: 'ordnen', auftrag: 'Wie entsteht der Klimawandel? Ordne.', stufe: 1, teile: ['Menschen verbrennen Kohle, Öl und Gas.', 'Dabei entsteht viel CO₂.', 'Das CO₂ verstärkt den Treibhauseffekt.', 'Es bleibt mehr Wärme in der Atmosphäre.', 'Die Erde wird wärmer.'], ordnung: [1, 3, 0, 4, 2] },
         { art: 'rf', auftrag: 'Richtig oder falsch?', stufe: 2, saetze: [['Ohne Treibhauseffekt wäre es auf der Erde eiskalt.', true], ['CO₂ entsteht beim Verbrennen von Kohle, Öl und Gas.', true], ['In Luxemburg kosten Bus und Zug viel Geld.', false]] },

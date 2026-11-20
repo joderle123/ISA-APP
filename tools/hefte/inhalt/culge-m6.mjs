@@ -42,7 +42,7 @@ export const LEKTIONEN = [
       absaetze: [
         '**Europa** ist einer der sieben Kontinente. Er ist ziemlich klein, aber hier leben viele Menschen auf engem Raum. Europa hat **über 40 Staaten** – große wie Frankreich und kleine wie Luxemburg, Malta oder Liechtenstein. Im Osten reicht Europa bis zum **Uralgebirge** in Russland.',
         '### Meere, Gebirge, Flüsse',
-        'Europa ist auf drei Seiten von Wasser umgeben: im Westen der **Atlantische Ozean**, im Norden die **Nordsee** und die **Ostsee**, im Süden das **Mittelmeer**. Das bekannteste Gebirge sind die **Alpen**. Ihr höchster Berg ist der **Mont Blanc** mit etwa 4800 Metern. Lange Flüsse sind der **Rhein**, der in die Nordsee fließt, und die **Donau**: Sie fließt durch zehn Länder bis ins Schwarze Meer.',
+        'Europa ist auf drei Seiten von Wasser umgeben: im Westen der **Atlantische Ozean**, im Norden das **Nordpolarmeer**, die **Nordsee** und die **Ostsee**, im Süden das **Mittelmeer**. Das bekannteste Gebirge sind die **Alpen**. Ihr höchster Berg ist der **Mont Blanc** mit etwa 4800 Metern. Lange Flüsse sind der **Rhein**, der in die Nordsee fließt, und die **Donau**: Sie fließt durch zehn Länder bis ins Schwarze Meer.',
         '### Viele Sprachen',
         'In Europa spricht man sehr viele Sprachen. Darum sind Menschen, die mehrere Sprachen können, in Europa sehr gefragt – so wie viele in Luxemburg!',
       ],
@@ -59,7 +59,7 @@ export const LEKTIONEN = [
       bild: ['chloe:froh:handy', 'noah:froh:handy'], sprecher: { Inês: 'w2', Kuba: 'm3', Elsa: 'w3' },
       text: [
         ['Inês', 'Olá! Ich heiße Inês und wohne in Lissabon, der Hauptstadt von Portugal. Lissabon liegt am Atlantik. Hier ist es fast immer warm. Am Wochenende gehe ich gern surfen. Unser Lieblingsessen ist Fisch mit Kartoffeln.'],
-        ['Kuba', 'Cześć! Ich bin Kuba aus Krakau in Polen. Krakau ist nicht die Hauptstadt – das ist Warschau. Bei uns ist es im Winter oft minus zehn Grad! Ich spiele Handball. Mein Onkel arbeitet übrigens in Luxemburg.'],
+        ['Kuba', 'Cześć! Ich bin Kuba aus Krakau in Polen. Krakau ist nicht die Hauptstadt – das ist Warschau. Bei uns ist es im Winter manchmal minus zehn Grad! Ich spiele Handball. Mein Onkel arbeitet übrigens in Luxemburg.'],
         ['Elsa', 'Hej! Ich bin Elsa aus Schweden. Ich wohne in der Nähe von Stockholm, der Hauptstadt. Im Sommer ist es hier fast die ganze Nacht hell, im Winter ist es schon um drei Uhr nachmittags dunkel. Ich fahre gern Ski und schwimme in den Seen.'],
       ],
       vor: [{ art: 'mc', auftrag: 'Was heißt „Hallo“ auf Portugiesisch? Rate!', stufe: 1, fragen: [{ f: '', o: ['Olá', 'Hej', 'Cześć'], r: 0 }] }],
@@ -93,7 +93,7 @@ export const LEKTIONEN = [
   // ================================================================ 2
   {
     thema: 'Europäische Union · Luxemburg in Europa', titel: 'Die Europäische Union', untertitel: 'Vom Frieden nach dem Krieg bis zum Euro: Du liest die Geschichte der EU, besuchst das Europaviertel auf dem Kirchberg und baust eine Zeitleiste.',
-    ziel: { de: 'Ich erkläre, was die EU ist, und welche Rolle Luxemburg in ihr spielt.', fr: 'J’explique ce qu’est l’UE et le rôle du Luxembourg.' },
+    ziel: { de: 'Ich erkläre, was die EU ist und welche Rolle Luxemburg in ihr spielt.', fr: 'J’explique ce qu’est l’UE et le rôle du Luxembourg.' },
     bild: ['finn:froh:stehen', 'lehrerin:froh:erklaeren'],
     start: {
       was: 'Das kennst du schon',
@@ -111,7 +111,7 @@ export const LEKTIONEN = [
         '### Die EU heute',
         'Heute hat die EU **27 Mitgliedsländer** mit rund 450 Millionen Menschen (Stand 2026). Die Menschen dürfen in allen EU-Ländern reisen, wohnen, arbeiten und studieren. In über 20 Ländern bezahlt man mit dem **Euro**. In **Luxemburg** arbeiten wichtige EU-Einrichtungen, zum Beispiel der **Gerichtshof der EU** auf dem Kirchberg.',
       ],
-      bildHtml: europaKarte({ eu: true, hauptstaedte: ['Luxemburg', 'Belgien', 'Frankreich'], breite: 118, legende: 'Blau: die 27 Länder der EU (Stand 2026). Brüssel, Luxemburg und Straßburg (Frankreich) sind wichtige EU-Städte.' }),
+      bildHtml: europaKarte({ eu: true, hauptstaedte: ['Luxemburg', 'Belgien', 'Frankreich'], breite: 118, legende: 'Blau: die 27 Länder der EU (Stand 2026). Rote Punkte: Brüssel, Luxemburg, Paris. Auch Straßburg in Frankreich ist eine wichtige EU-Stadt.' }),
       woerter: [['die Europäische Union (EU)', 'l’Union européenne (UE)'], ['das Mitgliedsland', 'l’État membre'], ['der Vertrag', 'le traité'], ['gründen', 'fonder'], ['der Frieden', 'la paix'], ['die Zusammenarbeit', 'la coopération'], ['der Gerichtshof', 'la Cour de justice'], ['die Grenzkontrolle', 'le contrôle aux frontières']],
       aufgaben: [
         { art: 'fragen', auftrag: 'Antworte.', stufe: 1, fragen: [{ f: 'Warum wollten die Länder nach dem Krieg zusammenarbeiten?', l: 'Sie wollten nie wieder Krieg.' }, { f: 'Welche sechs Länder unterschrieben 1957 die Römischen Verträge?', zeilen: 2, l: 'Belgien, Deutschland, Frankreich, Italien, Luxemburg, die Niederlande' }, { f: 'Wie viele Länder hat die EU heute?', l: '27 (Stand 2026)' }] },
@@ -124,7 +124,7 @@ export const LEKTIONEN = [
       text: [
         ['Führerin', 'Willkommen auf dem Kirchberg! Hier vor euch steht der Gerichtshof der Europäischen Union. Er sorgt dafür, dass alle Länder die Regeln der EU gleich anwenden.'],
         ['Finn', 'Und die goldenen Türme?'],
-        ['Führerin', 'Darin arbeiten Übersetzerinnen und Übersetzer. Jedes Urteil wird in die Amtssprachen der EU übersetzt – das sind vierundzwanzig Sprachen!'],
+        ['Führerin', 'Darin arbeiten Übersetzerinnen und Übersetzer. Viele Urteile werden in die Amtssprachen der EU übersetzt – das sind vierundzwanzig Sprachen!'],
         ['Amira', 'Arbeiten hier nur Richter?'],
         ['Führerin', 'Nein. Auf dem Kirchberg arbeiten auch die Europäische Investitionsbank, der Europäische Rechnungshof, der prüft, ob das Geld der EU richtig ausgegeben wird, und viele Menschen für das Europäische Parlament. Und dreimal im Jahr treffen sich hier die Ministerinnen und Minister aller EU-Länder.'],
         ['Finn', 'Dann ist Luxemburg ja eine richtige Europa-Hauptstadt!'],
@@ -328,7 +328,7 @@ export const LEKTIONEN = [
       text: [
         ['Techniker', 'Wir stehen jetzt in einer riesigen Halle mitten im Berg. Hier drehen sich die Maschinen.'],
         ['Lea', 'Ist das hier ein normales Kraftwerk?'],
-        ['Techniker', 'Nein, es ist wie ein großer Akku. Nachts oder wenn der Wind stark weht, gibt es oft mehr Strom, als gebraucht wird. Dann pumpen wir Wasser aus dem Stausee unten hinauf ins Oberbecken.'],
+        ['Techniker', 'Nein, es ist wie ein großer Akku. Nachts, wenn der Wind stark weht oder mittags viel Sonne scheint, gibt es oft mehr Strom, als gebraucht wird. Dann pumpen wir Wasser aus dem Stausee unten hinauf ins Oberbecken.'],
         ['Tom', 'Und wann kommt der Strom wieder raus?'],
         ['Techniker', 'Wenn alle gleichzeitig kochen, waschen oder die Fabriken laufen. Dann lassen wir das Wasser hinunterfließen. Es dreht die Turbinen, und die Generatoren machen Strom. Das geht in wenigen Minuten.'],
         ['Lea', 'Ist das gut für die Umwelt?'],
@@ -440,7 +440,7 @@ export const LEKTIONEN = [
     },
     lesen: {
       was: 'Ein Sachtext', art: 'text', stimme: 'w1', nummern: false,
-      quelle: 'Sachtext (vereinfacht)', titel: 'Die Tricks der Werbung',
+      quelle: 'Sachtext (vereinfacht, Stand 2026)', titel: 'Die Tricks der Werbung',
       absaetze: [
         '**Werbung** will, dass wir etwas **kaufen** oder gut finden. Firmen geben dafür sehr viel Geld aus. Jugendliche sind eine wichtige Zielgruppe, weil sie viel Zeit am Handy verbringen und gern zeigen, was gerade „in“ ist.',
         '### Typische Tricks',
