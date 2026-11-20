@@ -19,8 +19,8 @@ import { baueRequisiten, stelle } from './requisiten.js';
 import { baueNatur } from './natur.js';
 import { STAMM, stammSzene, stammPlan } from './stammgaeste.js';
 import { ORTE_UMLAND, DORF_DEKO, tagTextur, wandbild } from './dorf.js';
-import { SIT_LEUTE, SZENEN, sitSichtbar, sitOffen, SIT_ZONEN, lichtung, laden, graffiti, halle, wette, kiste, vape, link, video, fest, zurueckbringen, sitSaetze, sitRueckblick } from './situationen.js';
-const SIT_FN = { wald: lichtung, laden, graffiti, halle, wette, kiste, vape, link, video, fest };
+import { SIT_LEUTE, SZENEN, sitSichtbar, sitOffen, SIT_ZONEN, lichtung, laden, graffiti, halle, wette, kiste, vape, link, video, fest, spiel, CHAT_NAMEN, zurueckbringen, sitSaetze, sitRueckblick } from './situationen.js';
+const SIT_FN = { wald: lichtung, laden, graffiti, halle, wette, kiste, vape, link, video, fest, spiel };
 import { createHund, HUND_ERSTMAL, HUND_MOMENTE } from './hund.js';
 import { ladePerson, namensschild, SITZ } from './figuren.js';
 import { fussSchatten, WOLKEN } from './texturen.js';
@@ -2167,7 +2167,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   const sitApi = () => ({
     sag: async (wer, t) => {
       const L = SIT_LEUTE[wer] || STAMM.find((q) => q.id === wer);
-      const w = wer === 'zu' ? { wer: 'Ein paar Leute', farbe: '#5b6472' } : L ? { wer: L.stumm ? 'Jemand' : L.name, farbe: L.farbe } : sprecher(wer === 'du' ? 'du' : wer === 'e' ? 'erzaehler' : wer);
+      const w = wer === 'zu' ? { wer: 'Ein paar Leute', farbe: '#5b6472' } : CHAT_NAMEN[wer] ? { wer: '📱 ' + CHAT_NAMEN[wer], farbe: '#5b6472' } : L ? { wer: L.stumm ? 'Jemand' : L.name, farbe: L.farbe } : sprecher(wer === 'du' ? 'du' : wer === 'e' ? 'erzaehler' : wer);
       const x = statisten.find((q) => q.d.sitPerson === wer && !q.weg) || statisten.find((q) => q.d.stamm === wer && !q.weg && q.f.group.visible && steuerung.pos.distanceTo(q.f.group.position) < 8);
       // Gesprächskamera wie in der Geschichte: über die Schulter auf die Person, die spricht; sprichst du, schaut die Kamera dich an
       if (x) steuerung.fokus = x.f.group.position;

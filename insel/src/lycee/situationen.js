@@ -54,6 +54,7 @@ export const SZENEN = {
   link: { frage: 'Woran erkennt man einen Fake-Link?', ab: 8, bis: 9, start: { x: -6.6, z: -19.0, yaw: -2.58 }, teaser: [['Unbekannt', '🎁 GRATIS 5000 Diamanten! Nur heute! Einloggen: gratis-diamanten.win'], ['Noé', 'Hast du die Diamanten-Nachricht auch?? Bin im CDI 💎']], titel: ['🔗', 'Gratis', 'Wer schickt es? Wo führt es hin? Wer hat was davon?'] },
   video: { frage: 'Wie fühlt es sich an, wenn alle über einen lachen – egal wie alt man ist?', ab: 9, bis: 10, start: { x: -12.4, z: -16.6, yaw: -1.13 }, teaser: ['Yanis (Gruppe)', 'HAHA habt ihr das Video von der Lenning gesehen?? 😂 Gang, vor 1.04'], titel: ['🎬', 'Das Video', 'Lachen über jemanden ist leicht. Aufhören ist schwerer.'] },
   fest: { frage: 'Was verpasst man, wenn man um jeden Preis dabei sein will?', ab: 10, bis: 10, start: { x: 60.6, z: -9.5, yaw: Math.PI }, schritt: 'k10_fest', zone: { x: 60.6, z: -13.3, r: 3.2 }, teaser: ['Mo (Gruppe)', 'Sommerfest-Afterparty hinter der Turnhalle 🍾 Psst'], titel: ['🍾', 'Die Wasserflasche', 'Das Fest ist drinnen. Und du gehörst dazu.'] },
+  spiel: { frage: 'Woran erkennt man, dass ein Online-Freund nicht ehrlich ist?', ab: 9, bis: 10, start: { x: 4.7, z: 85.2, yaw: Math.PI }, zone: { x: 4.7, z: 83.1, r: 1.5 }, teaser: ['Leo_15 · Spiel-Chat', 'Hey 😊 Du spielst echt gut! Hab dir was geschenkt 🎁'], titel: ['🎮', 'Der Spielfreund', '„Erzähl es keinem“ ist der beste Grund, es jemandem zu erzählen.'] },
   halle: { frage: 'Was ist der Unterschied zwischen Petzen und Hilfe holen?', ab: 7, bis: 7, start: { x: 60.4, z: -20.4, yaw: Math.PI }, zone: { x: 60.4, z: -25.4, r: 5 }, teaser: ['Unbekannt', 'HINTER DER TURNHALLE. JETZT. 👀'], titel: ['📱', 'Der Kreis', 'Wer filmt, baut die Bühne. Wer hilft, baut sie ab.'] },
 };
 
@@ -666,6 +667,7 @@ const RUECKBLICK = {
   link: { eingeloggt: 'Eingeloggt. Konto weg.', geprueft: 'Den Link geprüft, bevor jemand tippt.' },
   video: { weiter: 'Weitergegangen.', gelacht: 'Mitgelacht.', gefragt: 'Gefragt: Weiß sie das?', gespiegelt: 'Gefragt: Würdest du das wollen?' },
   fest: { getrunken: 'Getrunken. Den Auftritt verpasst.', zurueck: 'Zurück zum Fest.', gefragt: 'Gefragt, was in der Flasche ist.', mitgenommen: 'Mika mit reingenommen.' },
+  spiel: { ignoriert: 'Nicht geantwortet.', blockiert: 'Blockiert und gemeldet.', geschickt: 'Ein Selfie geschickt.', gezeigt: 'Herrn Kuedes alles gezeigt.' },
   halle: { gefilmt: 'Gefilmt.', handys: '„Handys runter“ gesagt.', hilfe: 'Hilfe geholt.', sami: 'Sich neben Sami gestellt.', mitte: 'Dazwischen gegangen.', zurueck: 'Einen Schritt zurück gemacht.' },
 };
 export function sitRueckblick(m) {
@@ -685,6 +687,7 @@ export function sitRueckblick(m) {
     if (id === 'video' && m.videoGeteilt) t += ' Und geteilt.';
     if (id === 'video' && m.lenningGesagt) t += ' Mme Lenning Bescheid gesagt.';
     if (id === 'fest' && m.mikaFestGeholfen) t += ' Bei Mika geblieben.';
+    if (id === 'spiel' && m.spielKuedes && m.sit_spiel !== 'gezeigt') t += ' Dann Herrn Kuedes Bescheid gesagt.';
     out.push({ t: sz.titel[0] + ' ' + sz.titel[1], w: t });
   }
   return out;
@@ -929,4 +932,70 @@ export async function fest(a) {
   await a.sag('kaya', '(zu dir) Du hast heute auf jemanden aufgepasst. Das vergisst man nicht.');
   a.merke('mikaFestGeholfen');
   a.nachricht('Mika', 'Danke. Ich weiß nicht mehr viel. Aber dass du da warst.');
+}
+
+// ================= Der Spielfreund (Online-Kontakt mit Warnzeichen, Kapitel 9–10, Bushäuschen Rue du Moulin) =================
+// Kein sexueller Inhalt. Es geht um die Warnzeichen: Geschenke, „privat schreiben“, Selfie, Treffen, „Erzähl es keinem“.
+export const CHAT_NAMEN = { leo: 'Leo_15 · Spiel-Chat' };
+export async function spiel(a) {
+  await a.sag('e', 'Du sitzt im Bushäuschen. Dein Handy summt. Der Spiel-Chat.');
+  await a.sag('leo', 'Hey! Du spielst echt gut. Bist du auch 15?');
+  await a.sag('e', '(Leo_15. Ihr spielt seit zwei Wochen zusammen. Leo ist immer nett.)');
+  await a.sag('leo', 'Ich hab dir einen Skin geschenkt. Einfach so. 🎁');
+  await a.sag('leo', 'Lass uns lieber privat schreiben. Hier lesen alle mit.');
+  const w = await a.wahl(['„Okay. Gib mir deine Nummer.“', '„Warum privat? Hier ist doch okay.“', '„Ich bin zwölf. Nicht fünfzehn.“', '(Nicht antworten. Handy weg.)']);
+  if (w === 3) {
+    await a.sag('e', 'Du steckst das Handy weg. Es summt noch zweimal.');
+    await a.sag('e', '(Nicht antworten ist auch eine Antwort.)');
+    const x = await a.wahl(['(Leo blockieren und melden.)', '(Später vielleicht antworten.)']);
+    if (x === 0) { await spielBlock(a); return; }
+    a.merke('sit_spiel', 'ignoriert');
+    a.nachricht('Leo_15', 'Hallo?? Bist du sauer? 🥺');
+    return;
+  }
+  if (w === 0) { a.merke('spielPrivat'); await a.sag('leo', 'Cool 😊 Schick mal ein Selfie. Damit ich weiß, wie du aussiehst.'); }
+  if (w === 1) await a.sag('leo', 'Weil ich dir was erzählen will. Nur dir.');
+  if (w === 2) { await a.sag('leo', 'Egal. Du wirkst viel älter. Reifer.'); await a.sag('e', '(Reifer. Klingt schön. Warum fühlt es sich trotzdem komisch an?)'); }
+  await a.sag('leo', 'Wo gehst du zur Schule? Vielleicht wohnen wir nah.');
+  await a.sag('leo', 'Wir könnten uns mal treffen. Am Bahnhof. Aber erzähl es keinem, okay?');
+  await a.sag('e', '„Erzähl es keinem.“ Der Satz bleibt hängen.');
+  let x = await a.wahl(['„Warum soll ich es keinem erzählen?“', '(Ein Selfie schicken. „Okay“ schreiben.)', '(Screenshot machen. Herrn Kuedes zeigen.)', '(Blockieren. Melden.)']);
+  if (x === 0) {
+    await a.sag('leo', 'Weil die anderen das nicht verstehen. Erwachsene machen immer Stress.');
+    await a.sag('e', '(Geheimnisse und „Erwachsene machen Stress“: Das sind Warnzeichen.)');
+    x = 2 + await a.wahl(['(Screenshot machen. Herrn Kuedes zeigen.)', '(Blockieren. Melden.)']);
+  }
+  if (x === 3) { await spielBlock(a); return; }
+  if (x === 1) {
+    a.merke('sit_spiel', 'geschickt');
+    await a.blende('Am Abend');
+    await a.sag('e', 'Leo schreibt: „Du siehst älter aus. Unser Geheimnis, ja?“');
+    await a.sag('e', 'Dein Bauch zieht sich zusammen. Das fühlt sich falsch an.');
+    await a.sag('e', '(Es ist nie zu spät, es jemandem zu sagen.)');
+    const y = await a.wahl(['(Morgen Herrn Kuedes alles zeigen.)', '(Nichts sagen. Zu peinlich.)']);
+    if (y === 1) {
+      await a.sag('e', 'Du sagst nichts. Leo schreibt jeden Tag. Du schläfst schlecht.');
+      await a.sag('e', '(Herr Kuedes, Tante Lisette, 116 111: Dort hört man zu.)');
+      a.nachricht('Leo_15', 'Wann treffen wir uns endlich? 😊');
+      return;
+    }
+  } else a.merke('sit_spiel', 'gezeigt');
+  await spielKuedes(a);
+}
+async function spielBlock(a) {
+  await a.sag('e', 'Blockiert. Gemeldet. Das Spiel schreibt: „Danke für deine Meldung.“');
+  await a.sag('e', 'Dein Herz klopft trotzdem. Das ist normal.');
+  a.merke('sit_spiel', 'blockiert');
+  const z = await a.wahl(['(Trotzdem Herrn Kuedes Bescheid sagen.)', '(Fertig. Weiter.)']);
+  if (z === 0) await spielKuedes(a);
+}
+async function spielKuedes(a) {
+  await a.blende('In der SePAS');
+  await a.sag('kaya', 'Danke, dass du mir das zeigst. Du hast nichts falsch gemacht.');
+  await a.sag('kaya', '„Erzähl es keinem“ ist der beste Grund, es jemandem zu erzählen.');
+  await a.sag('kaya', 'Wir sichern die Screenshots. Dann blockieren und melden wir. Zusammen.');
+  await a.sag('kaya', 'Wer „15“ schreibt, kann viel älter sein. Das sieht man nicht.');
+  await a.sag('kaya', 'Treffen mit Leuten aus dem Internet: nie allein, nie heimlich.');
+  await a.sag('kaya', 'Wenn dich so was beschäftigt: 116 111. Oder BEE SECURE: 8002 1234.');
+  a.merke('spielKuedes');
 }
