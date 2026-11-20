@@ -35,10 +35,11 @@ function inl(s: string): string {
   })
   h = h.replace(/\*\*(.+?)\*\*/g, '<b>$1</b>').replace(/__(.+?)__/g, '<span class="endung">$1</span>')
   h = h.replace(/==(.+?)==/g, '<span class="markiert">$1</span>').replace(/\/\/(.+?)\/\//g, '<i>$1</i>')
+  h = h.replace(/~~(.+?)~~/g, '<s class="falsch">$1</s>')
   return h
 }
 /** Lösung ohne Auszeichnung (für Linien) */
-const roh = (s: string) => s.replace(/\[([^\]|]*)(?:\|\d+)?\]/g, '$1').replace(/\*\*|__|==|\/\//g, '')
+const roh = (s: string) => s.replace(/\[([^\]|]*)(?:\|\d+)?\]/g, '$1').replace(/~~.+?~~/g, '').replace(/\*\*|__|==|\/\//g, '')
 
 const ICON_CACHE: Record<string, string> = {}
 function icon(name: string, gefuellt = false): string {
@@ -243,7 +244,7 @@ function aufgabeKoerper(a: Aufgabe): string {
 }
 
 function aufgabe(a: Aufgabe, nr: number, klasse = ''): string {
-  const lang = ['schreiben', 'fragen'].includes(a.art) && (a.zeilen || 0) > 6
+  const lang = ['schreiben', 'fragen'].includes(a.art) && (a.zeilen || 0) > 12
   return `<div class="aufgabe ${klasse} ${lang ? 'lang' : ''}"><div class="kopf"><span class="nr">${nr}</span><span class="auftrag">${inl(a.auftrag || '')}</span>${a.stufe ? stufen(a.stufe) : ''}</div>${
     a.hilfe ? `<div class="hilfe">${inl(a.hilfe)}</div>` : ''}<div class="koerper">${aufgabeKoerper(a)}</div></div>`
 }
