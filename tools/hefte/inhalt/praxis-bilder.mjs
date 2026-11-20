@@ -489,3 +489,51 @@ export function tischtennis({ nummern = true } = {}) {
   if (nummern) o += nr(260, 12, 1) + nr(370, 145, 2) + nr(480, 200, 3) + nr(150, 250, 4)
   return `<figure class="tt">${o}</svg></figure>`
 }
+
+// ---------- Tanz: Fußspuren (V-Step und Kreuzschritt) ----------
+const SOHLE = 'M -4,-28 C 6,-30 13,-22 12,-10 C 11,0 8,6 8,14 C 8,24 4,28 -1,28 C -7,28 -9,22 -9,14 C -9,6 -12,-2 -12,-12 C -12,-22 -10,-27 -4,-28 Z'
+function fuss(x, y, seite, { rot = 0, start = false } = {}) {
+  const farbe = seite === 'R' ? '#d0662a' : '#2f6fb0'
+  const stil = start ? `fill="#fff" stroke="${farbe}" stroke-width="2" stroke-dasharray="4 3"` : `fill="${farbe}" stroke="#fff" stroke-width="1.5"`
+  return `<g transform="translate(${x} ${y}) rotate(${rot})${seite === 'L' ? ' scale(-1 1)' : ''}"><path d="${SOHLE}" ${stil}/></g>` + t(x, y + 5, seite, { gr: 13, fett: 800, farbe: start ? farbe : '#fff' })
+}
+const pfeil = (x1, y1, x2, y2, farbe = '#8a8f99') => `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${farbe}" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#fs-spitze)"/>`
+export function fussSchritte() {
+  let o = `<svg viewBox="0 0 540 270" xmlns="http://www.w3.org/2000/svg" class="fuss-svg"><defs><marker id="fs-spitze" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#8a8f99"/></marker></defs>`
+  o += `<rect x="4" y="4" width="252" height="262" rx="12" fill="#f6f3ec"/><rect x="284" y="4" width="252" height="262" rx="12" fill="#f6f3ec"/>`
+  o += nr(26, 28, 'A', '#2a2f3a', 13) + nr(306, 28, 'B', '#2a2f3a', 13)
+  // A: V-Step – Start Füße zusammen, 1 rechts schräg vor, 2 links schräg vor, 3 rechts zurück, 4 links zurück
+  o += pfeil(145, 172, 186, 118) + pfeil(110, 172, 72, 118)
+  o += fuss(112, 205, 'L', { start: true }) + fuss(146, 205, 'R', { start: true })
+  o += fuss(200, 88, 'R', { rot: 15 }) + fuss(58, 88, 'L', { rot: -15 })
+  o += nr(226, 60, 1) + nr(32, 60, 2) + nr(176, 214, 3) + nr(82, 214, 4)
+  o += t(129, 254, 'Start: Füße zusammen', { gr: 11, fett: 500, farbe: '#6b7080' })
+  // B: Kreuzschritt nach rechts – 1 rechts zur Seite, 2 links hinten kreuzen, 3 rechts zur Seite, 4 links antippen
+  o += fuss(318, 120, 'L', { start: true }) + fuss(352, 120, 'R', { start: true })
+  o += fuss(412, 120, 'R') + fuss(434, 176, 'L', { rot: 8 }) + fuss(500, 120, 'R') + fuss(468, 120, 'L', { start: true })
+  o += nr(412, 78, 1) + nr(462, 196, 2) + nr(500, 78, 3) + nr(468, 78, 4)
+  o += pfeil(330, 236, 500, 236, '#2a2f3a')
+  o += t(352, 228, 'Richtung', { gr: 11, fett: 500, farbe: '#6b7080' })
+  o += t(410, 254, 'gestrichelt = Start oder nur antippen', { gr: 10, fett: 500, farbe: '#6b7080' })
+  return `<figure class="fuss">${o}</svg></figure>`
+}
+
+// ---------- Tanz: Formationen ----------
+export function formationen({ namen = false } = {}) {
+  const N = ['Linie', 'Block', 'Kreis', 'Dreieck']
+  const punkte = [
+    (c) => [-45, -27, -9, 9, 27, 45].map((d) => [c + d, 72]),
+    (c) => [-32, 0, 32].flatMap((d) => [[c + d, 52], [c + d, 92]]),
+    (c) => [0, 1, 2, 3, 4, 5].map((i) => [c + Math.round(36 * Math.cos(Math.PI / 2 + i * Math.PI / 3)), 72 + Math.round(36 * Math.sin(Math.PI / 2 + i * Math.PI / 3))]),
+    (c) => [[c, 104], [c - 20, 78], [c + 20, 78], [c - 40, 52], [c, 52], [c + 40, 52]],
+  ]
+  let o = `<svg viewBox="0 0 520 170" xmlns="http://www.w3.org/2000/svg" class="form-svg">`
+  N.forEach((n, i) => {
+    const c = 65 + i * 130
+    o += `<rect x="${c - 60}" y="14" width="120" height="118" rx="8" fill="#f6f3ec" stroke="#d8cfbd" stroke-width="1.5"/><line x1="${c - 60}" y1="132" x2="${c + 60}" y2="132" stroke="#a23b72" stroke-width="4" stroke-linecap="round"/>`
+    for (const [x, y] of punkte[i](c)) o += `<circle cx="${x}" cy="${y}" r="9" fill="#a23b72" stroke="#fff" stroke-width="2"/>`
+    o += namen ? t(c, 152, n, { gr: 13, fett: 700 }) : nr(c, 150, i + 1)
+  })
+  o += t(260, 168, 'farbige Linie = vorne, dort sitzt das Publikum', { gr: 10, fett: 500, farbe: '#6b7080' })
+  return `<figure class="form">${o}</svg></figure>`
+}
