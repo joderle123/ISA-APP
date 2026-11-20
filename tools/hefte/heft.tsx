@@ -286,7 +286,7 @@ function lesenTeil(L: any, k: Kontext): string {
     text = r.absaetze.map((p: string, i: number) => `<p class="abs">${r.nummern === false ? '' : `<span class="n">${i + 1}</span>`}${inl(p)}</p>`).join('')
   }
   const woerter = r.woerter?.length ? `<div class="woerter"><h5>${k.sp === 'de' ? 'Wörter' : 'Mots'}</h5>${r.woerter.map(([a, b]: [string, string]) => `<div class="w"><b>${esc(a)}</b><span>${esc(b)}</span></div>`).join('')}</div>` : ''
-  k.spuren.push({ code, art: 'lesen', lektion: k.nr, titel: r.titel, sprache: k.sp, stimme: r.stimme || 'w', teile: lesenSprechtext(r) })
+  k.spuren.push({ code, art: 'lesen', lektion: k.nr, titel: r.titel, sprache: k.sp, stimme: r.stimme || 'w', teile: lesenSprechtext(r, k.sp) })
   let h = teilKopf('lesen', k.sp, r.was || '')
   if (r.plan) h += `<div class="plan-gross">${plan(r.plan)}</div>`
   if (r.stadtplan) h += `<div class="plan-gross">${stadtplan(r.stadtplan)}</div>`
@@ -294,11 +294,11 @@ function lesenTeil(L: any, k: Kontext): string {
   for (const a of r.aufgaben || []) h += aufgabe(a, ++k.zaehler, 'in-lesen')
   return h
 }
-function lesenSprechtext(r: any): { wer: string; text: string }[] {
+function lesenSprechtext(r: any, sp = 'de'): { wer: string; text: string }[] {
   const t: { wer: string; text: string }[] = [{ wer: '', text: roh(r.titel) }]
   if (r.art === 'profile') for (const p of r.profile) t.push({ wer: p.stimme || '', text: roh(p.name) + '. ' + roh(p.text) })
   else if (r.art === 'chat') for (const [wer, x] of r.nachrichten) t.push({ wer: r.stimmen?.[wer] || '', text: roh(x) })
-  else if (r.art === 'anleitung') { t.push({ wer: '', text: (r.materialSprech || 'Du brauchst: ') + r.material.map(roh).join(', ') + '.' }); r.schritte.forEach((x: any, i: number) => t.push({ wer: '', text: `${i + 1}. ${roh(x.text)}` })); for (const p of r.danach || []) t.push({ wer: '', text: roh(p) }) }
+  else if (r.art === 'anleitung') { t.push({ wer: '', text: (r.materialSprech || 'Du brauchst: ') + r.material.map(roh).join(', ') + '.' }); r.schritte.forEach((x: any, i: number) => t.push({ wer: '', text: `${sp === 'fr' ? 'Étape' : 'Schritt'} ${i + 1}: ${roh(x.text)}` })); for (const p of r.danach || []) t.push({ wer: '', text: roh(p) }) }
   else if (r.art === 'dokumente') for (const d of r.dokumente) t.push({ wer: d.stimme || '', text: [d.kopf, ...d.text, d.gruss].filter(Boolean).map((z: string) => roh(z)).join(' ') })
   else for (const p of r.absaetze) t.push({ wer: '', text: roh(p) })
   return t
