@@ -80,7 +80,7 @@ export function createKicker3d({ scene, camera, steuerung, ui, rr = null, ton = 
   const figurVs = (st) => st.figuren.map((v) => v + st.off);
 
   let lauf = null;
-  function spiel({ gegner = 'Kim', leicht = false, gegnerId = null } = {}) {
+  function spiel({ gegner = 'Kim', leicht = false, gegnerId = null, figur = null } = {}) {
     return new Promise(async (ok) => {
       const L0 = { ich: 0, er: 0, uIch: 0, uEr: 0, schuss: 0, rSchuss: 0, pause: 1.0, fehler: 0, fehlerUhr: 0, t: 0, zieh: null, tasten: {}, leicht, gegner, ende: null, aus: 0 };
       lauf = L0; demoLauf = null;
@@ -89,7 +89,8 @@ export function createKicker3d({ scene, camera, steuerung, ui, rr = null, ton = 
       if (steuerung.figur && steuerung.figur.group) steuerung.figur.group.visible = false;
       let gf = null; try { gf = await holeFigur(gegnerId); } catch (e) { gf = null; }
       if (gf && lauf === L0) { scene.add(gf.group); welt(0, 0, B / 2 + 0.36, gf.group.position); gf.group.rotation.set(0, Math.PI, 0); gf.spiele && gf.spiele('Idle'); }
-      L0.gf = gf;
+      if (!gf && figur && figur.group) figur.group.rotation.y = Math.PI;   // schaut gleich zum Tisch (sonst werden die Griffe über Kreuz verteilt)
+      L0.gf = gf; L0.hf = gf || figur;   // hf: Figur, die die Griffe hält (auch die Kim aus dem Jugendhaus)
       zaehlwerk(0, 0); einwurf(L0, Math.random() < 0.5 ? 1 : -1);
       const runter = (e) => {
         if (['ArrowUp', 'ArrowDown', 'KeyW', 'KeyS', 'Space'].includes(e.code)) { e.preventDefault(); e.stopPropagation(); L0.tasten[e.code] = true; if (e.code === 'Space' && !e.repeat) schiessen(L0); }
@@ -105,7 +106,8 @@ export function createKicker3d({ scene, camera, steuerung, ui, rr = null, ton = 
         if (lauf !== L0) return; lauf = null;
         document.removeEventListener('keydown', runter, true); document.removeEventListener('keyup', hoch, true);
         if (canvas) { canvas.removeEventListener('pointerdown', pdown); canvas.removeEventListener('pointermove', pmove); canvas.removeEventListener('pointerup', pup); }
-        if (L0.gf) { scene.remove(L0.gf.group); if (L0.gf.hand) { L0.gf.hand.R.w = 0; L0.gf.hand.L.w = 0; } }
+        if (L0.gf) scene.remove(L0.gf.group);
+        if (L0.hf && L0.hf.hand) { L0.hf.hand.R.w = 0; L0.hf.hand.L.w = 0; }
         if (steuerung.figur && steuerung.figur.group) steuerung.figur.group.visible = true;
         steuerung.kameraAus = false; steuerung.frei = true; steuerung.teleport(p0.x, p0.z, yaw0); if (rr && rr.setDof) rr.setDof(0);
         ui.skate(null); torLicht.forEach((l) => { l.material.opacity = 0; });
@@ -151,14 +153,14 @@ export function createKicker3d({ scene, camera, steuerung, ui, rr = null, ton = 
       st.dreh.rotation.z = (st.f === 'b' ? -1 : 1) * s * 1.25;   // Füße schwingen Richtung gegnerisches Tor
     }
     // Gegner:in hält die zwei mittleren roten Griffe (Hand-IK der Figur) – statt mit hängenden Armen hinter dem Tisch zu stehen
-    if (Lx.gf && Lx.gf.hand && Lx.gf.armOk) {
+    if (Lx.hf && Lx.hf.hand && Lx.hf.armOk) {
       if (!Lx.griffe) { const rote = stangen.filter((st) => st.f === 'r').sort((a, c) => Math.abs(a.u) - Math.abs(c.u)).slice(0, 2);
-        const sr = Lx.gf.schulter('R', new THREE.Vector3()), sl = Lx.gf.schulter('L', new THREE.Vector3());
+        const sr = Lx.hf.schulter('R', new THREE.Vector3()), sl = Lx.hf.schulter('L', new THREE.Vector3());
         const w0 = rote.map((st) => st.gr.getWorldPosition(new THREE.Vector3()));
         Lx.griffe = w0[0].distanceTo(sr) + w0[1].distanceTo(sl) <= w0[0].distanceTo(sl) + w0[1].distanceTo(sr) ? { R: rote[0], L: rote[1] } : { R: rote[1], L: rote[0] }; }
       const zumTisch = welt(0, 0, -1, new THREE.Vector3()).sub(welt(0, 0, 0, new THREE.Vector3())).normalize();
       for (const sd of ['R', 'L']) {
-        const H = Lx.gf.hand[sd], st = Lx.griffe[sd];
+        const H = Lx.hf.hand[sd], st = Lx.griffe[sd];
         H.ziel = st.gr.getWorldPosition(H.ziel || new THREE.Vector3()); H.ziel.y += 0.01;
         H.richtung = (H.richtung || new THREE.Vector3()).copy(zumTisch).multiplyScalar(0.5).add(new THREE.Vector3(0, -1, 0)).normalize();
         H.flaeche = (H.flaeche || new THREE.Vector3()).copy(zumTisch).negate();

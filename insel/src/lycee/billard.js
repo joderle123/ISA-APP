@@ -120,7 +120,7 @@ export function createBillard({ scene, camera, steuerung, ui, rr = null, ton = (
   }
 
   let lauf = null;
-  function spiel({ gegner = 'Kim', gegnerId = null, leicht = false } = {}) {
+  function spiel({ gegner = 'Kim', gegnerId = null, leicht = false, figur = null } = {}) {
     return new Promise(async (ok) => {
       aufstellen(); demoLauf = null;
       const S0 = lauf = { dran: 'ich', sorte: { ich: null, er: null }, ri: 0, kraft: 0, lade: false, phase: 'zielen', t: 0, tasten: {}, gegner, leicht, versenkt: [], ersterKontakt: null, weisseDrin: false, ende: null, aus: 0, kiWarte: 0, ergebnis: null };
@@ -129,7 +129,7 @@ export function createBillard({ scene, camera, steuerung, ui, rr = null, ton = (
       if (steuerung.figur && steuerung.figur.group) steuerung.figur.group.visible = false;
       let gf = null; try { gf = await holeFigur(gegnerId); } catch (e) { gf = null; }
       if (gf && lauf === S0) { scene.add(gf.group); welt(L / 2 + 0.55, 0, B / 2 + 0.25, gf.group.position); gf.group.rotation.set(0, -Math.PI * 0.75, 0); gf.spiele && gf.spiele('Idle'); }
-      S0.gf = gf;
+      S0.gf = gf; S0.hf = gf || figur;   // hf: Figur, die beim Warten den Queue hält (auch die Kim aus dem Jugendhaus)
       const runter = (e) => {
         if (['ArrowLeft', 'ArrowRight', 'KeyA', 'KeyD', 'Space', 'ShiftLeft', 'ShiftRight'].includes(e.code)) { e.preventDefault(); e.stopPropagation(); S0.tasten[e.code] = true; if (e.code === 'Space' && !e.repeat && S0.phase === 'zielen' && S0.dran === 'ich') { S0.lade = true; S0.kraft = 0; S0.t = 0; } }
         if (e.code === 'Escape') { e.preventDefault(); e.stopPropagation(); S0.ende(); }
@@ -152,6 +152,8 @@ export function createBillard({ scene, camera, steuerung, ui, rr = null, ton = (
         document.removeEventListener('keydown', runter, true); document.removeEventListener('keyup', hoch, true);
         if (canvas) { canvas.removeEventListener('pointerdown', pdown); canvas.removeEventListener('pointermove', pmove); canvas.removeEventListener('pointerup', pup); }
         if (S0.gf) scene.remove(S0.gf.group);
+        if (S0.hf && S0.hf.hand) { S0.hf.hand.R.w = 0; S0.hf.hand.L.w = 0; }
+        gQ.visible = false;
         [queue, linie, linie2, geist].forEach((o) => { o.visible = false; });
         if (steuerung.figur && steuerung.figur.group) steuerung.figur.group.visible = true;
         steuerung.kameraAus = false; steuerung.frei = true; steuerung.teleport(p0.x, p0.z, yaw0); if (rr && rr.setDof) rr.setDof(0);
@@ -214,8 +216,38 @@ export function createBillard({ scene, camera, steuerung, ui, rr = null, ton = (
     Sx.phase = 'zielen'; Sx.kiWarte = 1.4; Sx.kraft = 0;
     if (Sx.dran === 'ich') { const k = kugeln.find((q) => !q.drin && q !== weisse && (!Sx.sorte.ich || sorte(q.n) === Sx.sorte.ich)) || kugeln[8]; Sx.ri = Math.atan2(k.z - weisse.z, k.x - weisse.x); }
   }
+  // Gegner:in wartet mit eigenem Queue in der Hand (Hand-IK der Figur, wie beim Kicker die Griffe). Ist sie dran, liegt der Queue am Tisch.
+  const gQ = new THREE.Group(); gQ.name = 'gegnerQueue'; gQ.visible = false; scene.add(gQ);
+  { const st = new THREE.Mesh(new THREE.CylinderGeometry(0.006, 0.013, 1.42, 10), std('#d9b47a', { roughness: 0.4 })); st.position.y = 0.71; st.castShadow = true; gQ.add(st);
+    const gr = new THREE.Mesh(new THREE.CylinderGeometry(0.0135, 0.015, 0.45, 10), std('#2b1a12', { roughness: 0.4 })); gr.position.y = 0.24; gQ.add(gr);
+    const sp = new THREE.Mesh(new THREE.CylinderGeometry(0.0062, 0.0062, 0.014, 10), std('#3a6fd0')); sp.position.y = 1.427; gQ.add(sp); }
+  const qF = new THREE.Vector3(), qS = new THREE.Vector3(), qB = new THREE.Vector3(), qD = new THREE.Vector3(), qSh = new THREE.Vector3(), qUp = new THREE.Vector3(0, 1, 0);
+  function gegnerHaelt(Sx, dt) {
+    const gf = Sx.hf, halte = Sx.dran !== 'er' && Sx.phase !== 'aus';
+    Sx.gw = Math.max(0, Math.min(1, (Sx.gw || 0) + (halte ? dt * 3 : -dt * 4)));
+    gQ.visible = Sx.gw > 0.35;
+    for (const sd of ['R', 'L']) gf.hand[sd].w = Sx.gw;
+    if (Sx.gw <= 0) return;
+    const P = gf.group.position, ry = gf.group.rotation.y;
+    qF.set(Math.sin(ry), 0, Math.cos(ry));
+    if (!gf.schulter('R', qSh)) return;
+    qS.set(qSh.x - P.x, 0, qSh.z - P.z); qS.addScaledVector(qF, -qS.dot(qF)); if (qS.lengthSq() < 1e-6) return; qS.normalize();   // zeigt zur rechten Seite
+    qB.copy(P).addScaledVector(qS, 0.11).addScaledVector(qF, 0.34); qB.y = 0.01;   // Fuß des Queues am Boden
+    qD.set(0, 1.42, 0).addScaledVector(qF, -0.14).addScaledVector(qS, -0.02).normalize();   // Spitze leicht zum Körper geneigt
+    gQ.position.copy(qB); gQ.quaternion.setFromUnitVectors(qUp, qD);
+    for (const [sd, tief, seite] of [['R', 0.18, -1], ['L', 0.34, 1]]) {
+      const H = gf.hand[sd], h = Math.max(0.5, qSh.y - tief);
+      H.ziel = (H.ziel || new THREE.Vector3()).copy(qB).addScaledVector(qD, (h - qB.y) / qD.y);
+      H.richtung = (H.richtung || new THREE.Vector3()).copy(qF).addScaledVector(qS, seite * -0.3).normalize();
+      H.flaeche = (H.flaeche || new THREE.Vector3()).copy(qS).multiplyScalar(seite);
+      H.pol = (H.pol || new THREE.Vector3()).set(0, -1, 0).addScaledVector(qS, sd === 'R' ? 0.5 : -0.4).addScaledVector(qF, -0.3);
+      H.faust = 0.95; H.zeige = 0; H.daumenHoch = false;
+    }
+  }
+
   function tick(dt, Sx = lauf) {
     if (!Sx) return;
+    if (Sx.hf && Sx.hf.hand && Sx.hf.armOk && Sx.hf.schulter) gegnerHaelt(Sx, Math.min(dt, 0.1));
     const demo = !!Sx.demo;
     dt = Math.min(dt, 0.04); Sx.t += dt;
     // fallende Kugeln
