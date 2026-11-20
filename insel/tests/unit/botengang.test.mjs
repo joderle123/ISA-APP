@@ -22,3 +22,12 @@ test('S-K-A-T-E: fünf Buchstaben im Skatepark, nur mit Sprung erreichbar', asyn
     assert.ok(y < 2.2, b + ' zu hoch');
   }
 });
+
+test('Dosenwerfen: Pyramide 3-2-1, jede obere Dose steht auf zwei unteren', async () => {
+  const { pyramide, DOSEN_STAND } = await import('../../src/lycee/dosen.js');
+  const d = pyramide();
+  assert.equal(d.length, 6);
+  assert.deepEqual(d.map((x) => x.auf.length), [0, 0, 0, 2, 2, 2]);
+  for (const x of d) for (const j of x.auf) { assert.ok(d[j].y < x.y, 'steht nicht auf einer tieferen Dose'); assert.ok(Math.abs(d[j].x - x.x) < 0.2, 'zu weit seitlich'); }
+  assert.ok(DOSEN_STAND.z - DOSEN_STAND.wurfZ > 4, 'Wurflinie zu nah');
+});

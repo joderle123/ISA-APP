@@ -313,6 +313,12 @@ export function baueDorf({ B, C, schild, schilder, P = null, R = null }) {
       for (const x of [55, 65]) P('dorf/stall-bench', x, 126, 0, { h: 0.55, fest: true });
     }
     if (B.sitze) for (const x of [55, 65]) B.sitze.push({ x, z: 126, rot: Math.PI, bank: true, h: 0.55 });
+    // Dosenwerfen (dosen.js): Tisch, Rückwand, Markise-Schild; Wurflinie 4,7 m davor
+    box(69.15, 70.85, 0, 0.9, 121.6, 122.25, hex('#8a5a3a'), { stoss: true }); box(69.1, 70.9, 0.9, 0.93, 121.55, 122.3, hex('#e9e3d0'));
+    box(68.6, 71.4, 0, 2.3, 122.45, 122.55, hex('#2f6db0'), { stoss: true });
+    for (let i = 0; i < 4; i++) box(68.6 + i * 0.7, 68.95 + i * 0.7, 2.3, 2.6, 122.3, 122.55, hex(i % 2 ? '#ffffff' : '#e85d75'));
+    { const ds = schild('DOSENWERFEN · 3 Bälle', 2.6, 0.42, { bg: '#ffd166', fg: '#2b3a55', rand: '#e85d75', schrift: 'bold 80px system-ui' }); ds.position.set(70, 2.0, 122.43); ds.rotation.y = Math.PI; schilders(ds); }
+    box(69, 71, 0.05, 0.06, 117.0, 117.12, hex('#ffffff'), { art: 'innen' });   // Wurflinie
     const ms = schild('Marché · Wochenmarkt', 2.6, 0.5, { bg: '#c0392b', rand: '#ffffff', schrift: 'bold 90px Georgia, serif' }); ms.position.set(54.5, 2.6, 107.9); ms.rotation.y = Math.PI; schilders(ms);
     box(52.6, 52.7, 0, 2.4, 107.85, 107.95, hex('#5a5f6b')); box(56.3, 56.4, 0, 2.4, 107.85, 107.95, hex('#5a5f6b'));
     // Baustelle: Zaun rundum (Lücke nur für Fahrzeuge, mit Absperrung), Gerüst, Lastwagen, Paletten, Hütchen, Warnlicht

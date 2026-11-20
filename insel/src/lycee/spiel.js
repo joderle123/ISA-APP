@@ -43,6 +43,8 @@ import { createInteraktionen } from './interaktion.js';
 import { kickerSpiel } from './kicker.js';
 import { createBotengang } from './botengang.js';
 import { createBuchstaben } from './buchstaben.js';
+import { tanzSpiel } from './tanz.js';
+import { createDosen } from './dosen.js';
 import { FAEDEN } from './faeden.js';
 import { GEDAECHTNIS, RUF, BELAUSCHT } from './gedaechtnis.js';
 import { PLAUDERN, BANK } from './stimmen.js';
@@ -1888,6 +1890,9 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     const kapK = (st && st.kap) || 1;
     const stammMarken = STAMM.map((q) => { const neu = !S.merke['stb_' + q.id + '_' + (Object.keys(q.besuch).map(Number).filter((k) => k <= kapK).sort((a, b) => b - a)[0])]; const wo = stammPlan(q, uhrJetzt).steht; return { x: wo[0], z: wo[1], t: (neu ? '💬 ' : '') + (S.merke['stk_' + q.id] ? q.name.split(' ')[0] : '?') }; });
     stammMarken.push({ x: hund.pos.x, z: hund.pos.z, t: '🐕' + (S.merke.hundFreund ? ' Bonbon' : '') });
+    // Freizeit-Orte im Dorf (Auftrag 20.11.: größer, spaßiger) – fest, damit man sie findet
+    for (const [x, z, t] of [[92, 77.6, '🔥 Skatepark'], [19, 119, '🎧 Jugendhaus'], [60, 119, '🧺 Markt'], [-55, 105, '🦆 Park am Weiher'], [96, 119, '🚧 Baustelle'], [-8.4, 54.6, '📌 Hilfe gesucht']]) stammMarken.push({ x, z, t });
+    if (botengang.aktiv()) { const l = botengang.lauf, z = l.phase === 'holen' ? l.b.von : l.b.nach; stammMarken.push({ x: z.x, z: z.z, t: (l.phase === 'holen' ? '📦 ' : l.b.ding.split(' ')[0] + ' ') + z.ort }); }
     // Situationen, von denen eine Nachricht kam und die noch offen sind: Markierung wie ein Auftrag (ohne zu verraten, was passiert)
     if (risikoAn()) { const sid = (SCHRITTE[S.schritt] || {}).id;
       for (const [id, sz] of Object.entries(SZENEN)) { const o = sz.zone || sz.start; if (o && S.merke['sitTeaser_' + id] && sitOffen(id, kapK, S.merke, sid, uhrJetzt)) stammMarken.push({ x: o.x, z: o.z, t: sz.titel[0] + ' ?' }); } }
@@ -2492,9 +2497,31 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (w && w.art === 'anhaenger') { S.anhaenger = S.anhaenger === w.wert ? null : w.wert; sichern(); anhaengerDran(); ui.toast('<b>' + esc(w.name) + '</b><span>' + (S.anhaenger ? 'Hängt jetzt an dir.' : 'Bleibt im Spind.') + '</span>'); }
   }
   let kickerAn = false;   // Tischkicker-Overlay offen: keine Zufallsbegegnungen
+  // ---------- Dosenwerfen auf dem Marktplatz (dosen.js) ----------
+  const dosen = createDosen({ scene, steuerung, input, ui, ton, vib });
+  // ---------- Tanzfläche im Jugendhaus: 3×3 Leuchtfliesen, blinken beim Tanz-Spiel im Takt ----------
+  const TANZ = { x: 23.4, z: 123.4 }, tanzFliesen = [];
+  { const FARBEN = ['#ff7ac8', '#5ec8ff', '#ffd166', '#7CFC9A', '#b197fc', '#ffa94d'], geo = new THREE.PlaneGeometry(0.86, 0.86); geo.rotateX(-Math.PI / 2);
+    for (let i = 0; i < 9; i++) { const f = new THREE.Mesh(geo, new THREE.MeshBasicMaterial({ color: FARBEN[i % FARBEN.length], transparent: true, opacity: 0.45, toneMapped: false }));
+      f.position.set(TANZ.x + ((i % 3) - 1) * 0.9, 0.078, TANZ.z + (Math.floor(i / 3) - 1) * 0.9); f.name = 'tanzfliese'; scene.add(f); tanzFliesen.push(f); } }
+  const tanzTakt = (n) => tanzFliesen.forEach((f, i) => { f.material.opacity = (i + n) % 3 === 0 ? 0.95 : 0.3; });
   const ia = createInteraktionen({ welt, steuerung, ui, zustand: () => S, sichern: () => sichern(), ton, blattWahl, spindAuf: () => spindAuf(), onKabel: (id) => tiere.kabelWeg(id),
     freiwurf: async (o) => ui.freiwurf(o), skate: () => skaten(), pausenFussball: () => pausenFussball(), elfmeter: async (o) => { if (fahrt) absteigen(); return elfmeter.spiel(o); }, elfmeterAktiv: () => elfmeter.aktiv(), volley: async (o) => { if (fahrt) absteigen(); return volley.spiel(o); }, volleyAktiv: () => volley.aktiv(),
     botengang,
+    dosen: async (o) => { if (fahrt) absteigen(); return dosen.spiel(o); }, dosenAktiv: () => dosen.aktiv(),
+    tanzen: async () => {
+      if (fahrt) absteigen(); ui.hinweis(null); input.setEnabled(false); kickerAn = true;
+      steuerung.teleport(TANZ.x, TANZ.z, Math.PI / 2); steuerung.frei = false;
+      const mb = audio.buses && audio.buses.music, alt = mb ? mb.gain.value : 0;
+      if (mb) mb.gain.setTargetAtTime(alt * 0.12, audio.context.currentTime, 0.2);   // Raummusik leiser, der Beat übernimmt
+      steuerung.emote = 'Tanzen'; steuerung.emoteBis = performance.now() + 120000; steuerung.emoteVor = true;
+      try { return await tanzSpiel({ audio, leicht: !!ui.leicht, ton, onSchlag: tanzTakt, onTreffer: (art, combo) => { if (combo === 10 || combo === 25) vib(12); } }); }
+      finally {
+        steuerung.emoteBis = 0; steuerung.frei = true; kickerAn = false; input.release('jump'); input.setEnabled(true);
+        if (mb) mb.gain.setTargetAtTime(alt, audio.context.currentTime, 0.4);
+        tanzFliesen.forEach((f) => { f.material.opacity = 0.45; });
+      }
+    },
     kicker: async () => { if (fahrt) absteigen(); ui.hinweis(null); input.setEnabled(false); kickerAn = true; try { return await kickerSpiel({ gegner: 'Kim', leicht: !!ui.leicht || (S.merke.kicker || 0) - (S.merke.kickerSiege || 0) >= 3, ton }); } finally { kickerAn = false; input.release('jump'); input.setEnabled(true); } },
     tt3d: welt.orte.tischtennis ? async (pa) => { ui.hinweis(null); const STAERKE = { ben: 1.4, jo: 1.6, ayla: 1.3, dario: 1.2, yusuf: 1.1 };
       // Leute direkt an der Platte gehen kurz zur Seite (sie stehen sonst im Spielfeld)
@@ -2651,7 +2678,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (i.tu === 'statist') { gruss(i.st); sperreBis = performance.now() + 1200; return; }
     if (i.tu === 'zufall') { imGespraech = true; input.setEnabled(false); steuerung.frei = false; ui.hinweis(null);
       try { await zufall.tu(); } finally { ui.dialogZu(); imGespraech = false; input.setEnabled(true); steuerung.frei = true; sperreBis = performance.now() + 500; } return; }
-    if (i.tu === 'skate') { ui.hinweis(null); await ia.tu(i); sperreBis = performance.now() + 500; return; }
+    // Minispiele in der Welt (eigene Steuerung, enden bei einem Gespräch): nicht als Gespräch behandeln – sonst enden sie sofort
+    if (['skate', 'volley', 'elfmeter', 'dosen'].includes(i.tu)) { ui.hinweis(null); await ia.tu(i); sperreBis = performance.now() + 500; return; }
     imGespraech = true; input.setEnabled(false); steuerung.frei = false; ui.hinweis(null); vib(12);
     try { await ia.tu(i); } finally { imGespraech = false; input.setEnabled(true); steuerung.frei = true; sperreBis = performance.now() + 350; }
   }
@@ -2810,12 +2838,31 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   }
   // ---------- Fotomodus ----------
   let foto = null;
+  // Foto-Bingo (Auftrag 20.11.: größer, spaßiger): neun Motive im Dorf. Was beim Knipsen gut im Bild ist (nah genug, nicht am Rand), zählt.
+  const FOTO_MOTIVE = [['kirche', -70, 9, 70, '⛪ Kirchturm'], ['brunnen', 60, 1.4, 119, '⛲ Brunnen am Markt'], ['weiher', -55, 0.4, 105, '🦆 Weiher mit Enten'],
+    ['skatepark', 92, 1.7, 73.4, '🔥 Skatepark-Schild'], ['baeckerei', 2, 3.5, 56.8, '🥐 Boulangerie'], ['jugendhaus', 30.2, 3.1, 118.8, '🎧 Jugendhaus'],
+    ['linde', 2, 4, -33, '🌳 Alte Linde'], ['bonbon', null, 0.4, null, '🐕 Bonbon'], ['baustelle', 98, 3, 123.5, '🚧 Baustelle']];
+  function fotoBingo() {
+    const hab = S.merke.fotoBingo = S.merke.fotoBingo || [], v = new THREE.Vector3(), neu = [];
+    for (const [id, x, y, z, name] of FOTO_MOTIVE) {
+      if (hab.includes(id)) continue;
+      if (id === 'bonbon') v.set(hund.pos.x, y, hund.pos.z); else v.set(x, y, z);
+      const d = v.distanceTo(camera.position); if (d > 38) continue;
+      v.project(camera); if (v.z > 1 || Math.abs(v.x) > 0.85 || Math.abs(v.y) > 0.85) continue;
+      hab.push(id); neu.push(name);
+    }
+    if (!neu.length) return;
+    ui.toast('<b>📸 Foto-Bingo: ' + neu.join(', ') + '</b><span>' + hab.length + ' von ' + FOTO_MOTIVE.length + ' Motiven</span>', 'ly-t-ent');
+    if (hab.length === FOTO_MOTIVE.length) jetons(4, 'Foto-Bingo komplett');
+  }
   const FOTO_FILTER = { warm: 'sepia(.22) saturate(1.25) hue-rotate(-8deg) brightness(1.04)', kalt: 'saturate(.9) hue-rotate(12deg) brightness(1.03) contrast(1.05)', sw: 'grayscale(1) contrast(1.18)', retro: 'sepia(.45) contrast(.9) saturate(1.35) brightness(1.06)' };
   ui.onFoto = () => {
     if (foto || !laeuft || imGespraech || ui.ebeneArt() || !spieler || steuerung.brett || steuerung.kameraAus) return;
     const canvas = rr.renderer.domElement;
     foto = { yaw: steuerung.cam.yaw + Math.PI, pitch: 0.18, dist: 3.2, dof: 0.35, filter: '' };   // von vorn auf die Figur
     input.setEnabled(false); steuerung.frei = false; steuerung.kameraAus = true;
+    { const hab = S.merke.fotoBingo || [], fehlt = FOTO_MOTIVE.filter((m) => !hab.includes(m[0]));
+      if (fehlt.length && (S.merke.fotos || 0) < 40) ui.toast('<b>📸 Foto-Bingo ' + hab.length + '/' + FOTO_MOTIVE.length + '</b><span>Noch gesucht: ' + fehlt.slice(0, 3).map((m) => m[4]).join(', ') + (fehlt.length > 3 ? ' …' : '') + '</span>'); }
     ui.fotoAuf({
       dreh: (dx, dy) => { foto.yaw -= dx * 0.006; foto.pitch = Math.max(-0.12, Math.min(1.25, foto.pitch + dy * 0.004)); },
       zoom: (d) => { foto.dist = Math.max(1.1, Math.min(9, foto.dist + d)); },
@@ -2830,7 +2877,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         x.fillStyle = 'rgba(0,0,0,.35)'; x.fillText('Annexe · 7P2', c2.width - fs * 1.1 + 1, c2.height - fs * 0.9 + 1);
         x.fillStyle = 'rgba(255,255,255,.88)'; x.fillText('Annexe · 7P2', c2.width - fs * 1.1, c2.height - fs * 0.9);
         try { const a = document.createElement('a'); a.download = 'annexe-foto-' + new Date().toISOString().slice(0, 16).replace(/[:T]/g, '-') + '.png'; a.href = c2.toDataURL('image/png'); document.body.appendChild(a); a.click(); a.remove(); } catch (e) { /* manche Browser erlauben kein Speichern */ }
-        ton('pling'); S.merke.fotos = (S.merke.fotos || 0) + 1; sichern();
+        ton('pling'); S.merke.fotos = (S.merke.fotos || 0) + 1; fotoBingo(); sichern();
       },
       zu: () => { canvas.style.filter = ''; steuerung.emote = null; steuerung.kameraAus = false; steuerung.frei = true; input.setEnabled(true); foto = null; rr.setDof(0); steuerung.kamera(0.016, true); },
     });
@@ -2881,7 +2928,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     // Titelbild: langsame Kamerafahrt um die Schule (AAA: lebendiges Menü statt Standbild); bei „Weniger Bewegung“ fest
     if (!laeuft) { titelT += dt; const a = ui.wenigBewegung ? 0 : titelT * 0.02; camera.position.set(-36 * Math.cos(a) + 70 * Math.sin(a) * 0.5, 17 + Math.sin(titelT * 0.07) * 1.2 * (ui.wenigBewegung ? 0 : 1), 64 * Math.cos(a) + 30 * Math.sin(a)); camera.lookAt(0, 6, -10); return; }
     windZeit.value += dt; WOLKEN.value += dt; staubTick(dt); saisonTick(dt); gangRegel(dt);
-    zufall.tick(dt, laeuft && S && !imGespraech && !ui.ebeneArt() && !steuerung.brett && !volley.aktiv() && !elfmeter.aktiv() && !kickerAn && !hs.aktiv && !foto && !steuerung.kameraAus && !steuerung.sitzt && !probe);
+    zufall.tick(dt, laeuft && S && !imGespraech && !ui.ebeneArt() && !steuerung.brett && !volley.aktiv() && !elfmeter.aktiv() && !dosen.aktiv() && !kickerAn && !hs.aktiv && !foto && !steuerung.kameraAus && !steuerung.sitzt && !probe);
     steuerung.update(dt);
     if (kino) kinoKamera(dt);
     // Schärfentiefe im Gespräch: scharf auf die Person im Bild, Hintergrund weich (wie Kino-Szenen)
@@ -2898,7 +2945,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (skateTick) skateTick(dt);
     if (fahrt) fahrtTick(dt);
     if (volley.aktiv() && imGespraech) volley.beenden(); else if (laeuft && !ui.ebeneArt()) volley.tick(dt);
-    if (elfmeter.aktiv() && imGespraech) elfmeter.beenden(); else if (laeuft && !ui.ebeneArt()) elfmeter.tick(dt);   // Gespräch beginnt: Runde endet; Menü offen: Pause
+    if (elfmeter.aktiv() && imGespraech) elfmeter.beenden(); else if (laeuft && !ui.ebeneArt()) elfmeter.tick(dt);
+    if (dosen.aktiv() && imGespraech) dosen.beenden(); else if (laeuft && !ui.ebeneArt()) dosen.tick(dt);   // Gespräch beginnt: Runde endet; Menü offen: Pause
     verkehr.tick(dt, imGespraech || !laeuft);
     sticker.tick(dt, !!(laeuft && S && !imGespraech));
     buchstaben.tick(dt, !!(laeuft && S && !imGespraech && !ui.ebeneArt()));
@@ -3115,7 +3163,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     teleport: (ort, yaw) => { const o = typeof ort === 'string' ? welt.orte[ort] : ort; steuerung.teleport(o.x, o.z, yaw !== undefined ? yaw : o.yaw); },
     rede, los, audio, SITZ, input, get spruch() { return { wer: !!spruchWer }; }, get naechste() { return naechste && naechste.id; },
     get probe() { return probe; }, set mutTempo(v) { mutTempo = v; },
-    daten: { SCHRITTE, STATISTEN, LEUTE, BLAETTER, MATHE, LEKTIONEN, GESPRAECHE }, ia, aktion, botengang, buchstaben, get iaNah() { return iaNah && iaNah.tu; },
+    daten: { SCHRITTE, STATISTEN, LEUTE, BLAETTER, MATHE, LEKTIONEN, GESPRAECHE }, ia, aktion, botengang, buchstaben, dosen, get iaNah() { return iaNah && iaNah.tu; },
     hs, tt3d, zufall, fussball, volley, verkehr, elfmeter, sticker, fahrer, get fahrt() { return fahrt; }, get spieler() { return spieler; }, vorspann: (k) => vorspann(SCHRITTE.find((x) => (x.kap || 1) === k) || SCHRITTE[0]), gesteZu, handschlagMit, get statisten() { return statisten; }, musik,
   };
 

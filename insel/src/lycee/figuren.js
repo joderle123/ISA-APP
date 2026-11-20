@@ -42,7 +42,7 @@ function baustein(o) {
   return null;
 }
 
-export async function ladePerson(veil, { modell = 'menschen', stil = 'Casual', haut, haar, oben, unten, schuhe, hoehe = 1.72, frisur = null, kopf = null, kopfFarbe = null, brille = null } = {}) {
+export async function ladePerson(veil, { modell = 'menschen', stil = 'Casual', haut, haar, oben, unten, schuhe, hoehe = 1.72, frisur = null, kopf = null, kopfFarbe = null, brille = null, brilleArt = null } = {}) {
   if (!cache.has(modell)) cache.set(modell, new Promise((ok, nein) => new GLTFLoader().setMeshoptDecoder(MeshoptDecoder).parse(puffer(DATEN[modell]), '', ok, nein)));
   const gltf = await cache.get(modell);
   const mat = getMaterial(veil);
@@ -119,7 +119,7 @@ export async function ladePerson(veil, { modell = 'menschen', stil = 'Casual', h
   // Frisur und Kopfbedeckung (wie RESPAWN): an den Kopfknochen, in Ruhelage ausgerichtet; deckt sie den Kopf, fällt das kurze Haar weg
   if (frisur || kopf || brille) {
     let kb = null; group.traverse((o) => { if (o.isBone && /^head$/i.test(o.name)) kb = o; });
-    const fr = kb ? baueFrisur({ hair: haar, hairStyle: frisur, head: kopf, headColor: kopfFarbe || oben, glasses: brille }, mat) : null;
+    const fr = kb ? baueFrisur({ hair: haar, hairStyle: frisur, head: kopf, headColor: kopfFarbe || oben, glasses: brille, glassesStyle: brilleArt }, mat) : null;
     if (fr) {
       huelle.updateMatrixWorld(true);
       const wq = new THREE.Quaternion(), bq = new THREE.Quaternion(), bs = new THREE.Vector3(), gs = new THREE.Vector3();

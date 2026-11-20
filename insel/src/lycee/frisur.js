@@ -70,11 +70,34 @@ export function baueFrisur(look = {}, mat) {
   } else if (kopf === 'cap') {
     g.add(form(new THREE.SphereGeometry(K.r * 1.25, 12, 6, 0, Math.PI * 2, 0, 1.22), tuch, mat, [0, K.y + 0.015, K.z]));
     g.add(form(new THREE.BoxGeometry(0.16, 0.012, 0.11), tuch, mat, [0, K.y + 0.055, K.z + 0.155], [0.12, 0, 0]));
+  } else if (kopf === 'bucket') {   // Fischerhut: runde Krone, breite, leicht hängende Krempe
+    g.add(form(new THREE.CylinderGeometry(K.r * 1.08, K.r * 1.22, 0.075, 14, 1), tuch, mat, [0, K.y + 0.07, K.z]));
+    g.add(form(new THREE.CylinderGeometry(K.r * 1.75, K.r * 1.25, 0.03, 16, 1, true), tuch, mat, [0, K.y + 0.028, K.z]));
+    g.add(form(new THREE.CylinderGeometry(K.r * 1.08, K.r * 1.08, 0.01, 14), tuch, mat, [0, K.y + 0.108, K.z]));
+  } else if (kopf === 'kopfhoerer') {   // Bügel über den Kopf, zwei Muscheln an den Ohren
+    g.add(form(new THREE.TorusGeometry(K.r * 1.2, 0.012, 6, 18, Math.PI), '#2b2b33', mat, [0, K.y - 0.005, K.z - 0.005]));
+    for (const sx of [-1, 1]) g.add(form(new THREE.CylinderGeometry(0.042, 0.042, 0.035, 14), tuch, mat, [sx * K.r * 1.18, K.y - 0.02, K.z], [0, 0, Math.PI / 2]));
+  } else if (kopf === 'propeller') {   // Propellermütze: bunte Kappe, Stab, zwei Flügel
+    g.add(form(new THREE.SphereGeometry(K.r * 1.25, 12, 6, 0, Math.PI * 2, 0, 1.25), tuch, mat, [0, K.y + 0.015, K.z]));
+    g.add(form(new THREE.CylinderGeometry(0.006, 0.006, 0.05, 6), '#c0c6cf', mat, [0, K.y + 0.16, K.z]));
+    g.add(form(new THREE.BoxGeometry(0.17, 0.006, 0.03), '#e85d75', mat, [0, K.y + 0.185, K.z], [0, 0.5, 0]));
+    g.add(form(new THREE.BoxGeometry(0.03, 0.006, 0.17), '#ffd166', mat, [0, K.y + 0.186, K.z], [0, 0.5, 0]));
+  } else if (kopf === 'krone') {   // Krone: Reif mit fünf Zacken
+    g.add(form(new THREE.CylinderGeometry(K.r * 1.12, K.r * 1.12, 0.04, 14, 1, true), tuch, mat, [0, K.y + 0.1, K.z]));
+    for (let i = 0; i < 5; i++) { const a = i / 5 * Math.PI * 2; g.add(form(new THREE.ConeGeometry(0.02, 0.05, 4), tuch, mat, [Math.sin(a) * K.r * 1.1, K.y + 0.14, K.z + Math.cos(a) * K.r * 1.1])); }
   } else if (kopf === 'stirnband' || kopf === 'bandana') {
     g.add(form(new THREE.CylinderGeometry(K.r * 1.19, K.r * 1.19, kopf === 'bandana' ? 0.05 : 0.034, 12, 1, true), tuch, mat, [0, K.y + 0.05, K.z]));
   }
   // Brille: zwei Ringe und ein Steg vor den Augen
-  if (look.glasses) {
+  if (look.glasses && look.glassesStyle) {   // Belohnungs-Brillen (garderobe.js)
+    const fb = look.glasses === true ? '#2b2b33' : look.glasses, st = look.glassesStyle, Y = K.y - 0.012, Z = K.z + 0.104;
+    if (st === 'sonne') for (const sx of [-1, 1]) g.add(form(new THREE.CylinderGeometry(0.031, 0.031, 0.008, 14), '#1b1f27', mat, [sx * 0.04, Y, Z], [Math.PI / 2, 0, 0]));
+    if (st === 'sport') g.add(form(new THREE.BoxGeometry(0.15, 0.04, 0.012), fb, mat, [0, Y, Z + 0.004]));
+    if (st === 'herz') for (const sx of [-1, 1]) { g.add(form(new THREE.SphereGeometry(0.018, 8, 6), fb, mat, [sx * 0.04 - 0.012, Y + 0.008, Z])); g.add(form(new THREE.SphereGeometry(0.018, 8, 6), fb, mat, [sx * 0.04 + 0.012, Y + 0.008, Z])); g.add(form(new THREE.ConeGeometry(0.03, 0.035, 4), fb, mat, [sx * 0.04, Y - 0.014, Z], [Math.PI, Math.PI / 4, 0])); }
+    if (st === 'stern') for (const sx of [-1, 1]) for (let i = 0; i < 5; i++) { const a = i / 5 * Math.PI * 2; g.add(form(new THREE.ConeGeometry(0.012, 0.03, 4), fb, mat, [sx * 0.04 + Math.sin(a) * 0.016, Y + Math.cos(a) * 0.016, Z], [0, 0, -a])); }
+    g.add(form(new THREE.BoxGeometry(0.026, 0.006, 0.006), fb, mat, [0, Y + 0.004, Z + 0.002]));
+    for (const sx of [-1, 1]) g.add(form(new THREE.BoxGeometry(0.006, 0.006, 0.1), fb, mat, [sx * 0.067, Y + 0.004, K.z + 0.055]));
+  } else if (look.glasses) {
     const fb = look.glasses === true ? '#2b2b33' : look.glasses;
     for (const sx of [-1, 1]) { const r = form(new THREE.TorusGeometry(0.028, 0.0055, 6, 14), fb, mat, [sx * 0.04, K.y - 0.012, K.z + 0.104]); g.add(r); }
     g.add(form(new THREE.BoxGeometry(0.026, 0.006, 0.006), fb, mat, [0, K.y - 0.008, K.z + 0.106]));

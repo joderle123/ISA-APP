@@ -257,6 +257,7 @@ export function createUI({ root, input, speech }) {
     if (e.code === 'KeyC' && ebene.hidden && !dialogOffen && !ui.fotoAn()) { e.preventDefault(); ui.onFoto && ui.onFoto(); return; }
     if ((e.code === 'KeyR' || e.code === 'KeyT') && ebene.hidden && !dialogOffen && !ui.fotoAn()) { e.preventDefault(); ui.onFahrt && ui.onFahrt(e.code === 'KeyR' ? 'brett' : 'trotti'); return; }
     if (e.code === 'KeyB' && ebene.hidden && !dialogOffen) { ui.onKlingel && ui.onKlingel(); return; }
+    if (e.code === 'KeyG' && ebene.hidden && !dialogOffen && !ui.fotoAn()) { e.preventDefault(); ui.onGarderobe && ui.onGarderobe(); return; }
     if (!dialogOffen) return;
     // Taste hier verbrauchen: sonst sieht die Spielsteuerung dasselbe E und startet gleich das nächste Gespräch
     if (wahlFn && /^Digit[1-5]$/.test(e.code)) { e.preventDefault(); e.stopPropagation(); const i = wahlReihe[+e.code.slice(5) - 1]; if (i !== undefined) wahlFn(i); return; }
@@ -729,6 +730,28 @@ export function createUI({ root, input, speech }) {
       k.querySelectorAll('[data-f]').forEach((b) => { b.onclick = () => { a[feld[b.dataset.f]] = b.dataset.w || null; if (a.frisur === 'kopftuch') a.kopf = null; zeig(); }; });
       k.querySelector('[data-a="ok"]').onclick = () => { ebeneZu(); ok({ ...a, kopfFarbe: a.kopf ? a.oben : null }); };
       k.querySelector('[data-a="nein"]').onclick = () => { ebeneZu(); ok(null); };
+    };
+    zeig();
+  });
+
+  // Garderobe (garderobe.js): Belohnungen anziehen. Reiter je Art; gesperrte Teile zeigen, wie man sie bekommt.
+  // wahl(id) → neue Liste (an/aus umgeschaltet). Offen, bis „Fertig“ (oder G / Escape).
+  ui.garderobe = ({ arten, liste, wahl, start = null }) => new Promise((ok) => {
+    let reiter = start || (liste.find((x) => x.neu) || {}).art || arten[0][0], daten = liste;
+    const zu = () => { document.removeEventListener('keydown', taste, true); ebeneZu(); ok(); };
+    const taste = (e) => { if (e.code === 'Escape' || e.code === 'KeyG') { e.preventDefault(); e.stopPropagation(); zu(); } };
+    document.addEventListener('keydown', taste, true);
+    const zeig = () => {
+      const hab = daten.filter((x) => x.hab).length;
+      const k = ebeneAuf('garderobe', '<div class="ly-t-kicker">Garderobe · ' + hab + ' von ' + daten.length + ' freigeschaltet</div><h2>Dein Style</h2>' +
+        '<div class="ly-gd-reiter">' + arten.map(([a, t]) => '<button type="button" class="ly-ed-wort' + (a === reiter ? ' an' : '') + '" data-r="' + a + '">' + t + (daten.some((x) => x.art === a && x.neu) ? ' •' : '') + '</button>').join('') + '</div>' +
+        '<div class="ly-gd-gitter">' + daten.filter((x) => x.art === reiter).map((x) => '<button type="button" class="ly-gd-ding' + (x.hab ? '' : ' zu') + (x.an ? ' an' : '') + '" data-id="' + esc(x.id) + '"' + (x.hab ? '' : ' disabled') + '>' +
+          '<span class="ly-gd-sy">' + (x.hab ? x.sy : '🔒') + '</span><b>' + esc(x.name) + '</b><small>' + (x.hab ? (x.an ? '✔ An' : (x.neu ? 'NEU · antippen' : 'Antippen = anziehen')) : esc(x.hinweis)) + '</small></button>').join('') + '</div>' +
+        '<p class="ly-leer">Alles hier wird verdient – durch Nebenaufgaben im Dorf. Kein Zufall, kein Geld.</p>' +
+        '<div class="ly-t-knoepfe"><button type="button" class="ly-btn ly-primaer" data-a="ok">Fertig <kbd>G</kbd></button></div>');
+      k.querySelectorAll('[data-r]').forEach((b) => { b.onclick = () => { reiter = b.dataset.r; zeig(); }; });
+      k.querySelectorAll('[data-id]').forEach((b) => { b.onclick = async () => { daten = (await wahl(b.dataset.id)) || daten; zeig(); }; });
+      k.querySelector('[data-a="ok"]').onclick = zu;
     };
     zeig();
   });

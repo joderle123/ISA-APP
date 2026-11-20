@@ -48,7 +48,7 @@ const ROBOTER = [
 ];
 
 export const KABEL = [['cdi', 14, -62.4], ['kantine', 18.6, -8.2], ['gang', -15.5, -15.8], ['innenhof', -17.2, -44.9], ['skate', -36.4, 6.4]];
-export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton, blattWahl, freiwurf, skate, pausenFussball = null, volley = null, volleyAktiv = () => false, elfmeter = null, elfmeterAktiv = () => false, tt3d = null, kicker = null, botengang = null, spindAuf = null, partner = () => null, freund = () => {}, onKabel = null }) {
+export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton, blattWahl, freiwurf, skate, pausenFussball = null, volley = null, volleyAktiv = () => false, elfmeter = null, elfmeterAktiv = () => false, tt3d = null, kicker = null, tanzen = null, dosen = null, dosenAktiv = () => false, botengang = null, spindAuf = null, partner = () => null, freund = () => {}, onKabel = null }) {
   const tt = welt.orte.tischtennis;
   const liste = [];
   let botenFrage = 0;   // Botengang: zweimal drücken = abbrechen
@@ -74,6 +74,8 @@ export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton
   dazu(20.5, 116.3, 1.2, 'Tischkicker spielen', 'kicker', { prio: 1 });   // Jugendhaus
   dazu(25.5, 112.9, 1.2, 'Musik wechseln', 'jukebox', { prio: 1 });
   dazu(9.4, 125.0, 1.4, 'Tee holen', 'tee', { prio: 1 });
+  if (tanzen) dazu(23.4, 123.4, 1.5, 'Tanzfläche: im Takt tanzen', 'tanzen', { prio: 1 });
+  if (dosen) dazu(70, 117.4, 1.4, 'Dosenwerfen (3 Bälle)', 'dosen', { prio: 1 });   // Marktplatz
   for (const [x, z] of [[-55, 97.0], [-55, 113.0], [-65, 105]]) dazu(x, z, 1.6, 'Enten beobachten', 'enten', { prio: 0 });
   dazu(-19.3, -11.7, 0.8, 'Ein Bonbon nehmen', 'bonbon', { prio: 1 });   // Sekretariat: Glas auf der Theke
   dazu(45, -1.8, 1.3, 'In die Fundkiste schauen', 'fundkiste', { prio: 1 });
@@ -242,6 +244,22 @@ export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton
         const r = await volley({ partnerId: pa ? pa.id : 'ben', partnerName: pa ? pa.name : 'Ben', rekord: s.merke.volleyRekord || 0 });
         const neu = r.best > (s.merke.volleyRekord || 0); if (neu) s.merke.volleyRekord = r.best; sichern();
         ui.toast('<b>🏐 ' + r.punkte + ' Punkte</b><span>Längster Ballwechsel: ' + r.best + (neu ? ' – neuer Rekord!' : ' · Rekord ' + (s.merke.volleyRekord || 0)) + '</span>');
+        return;
+      }
+      case 'dosen': {   // Marktplatz: sechs Dosen, drei Bälle; alle sechs = Stoffente (einmal) und Rekord
+        if (dosenAktiv()) return;
+        const r = await dosen({ rekord: s.merke.dosenRekord || 0 });
+        const neu = r.dosen > (s.merke.dosenRekord || 0); if (neu) s.merke.dosenRekord = r.dosen;
+        if (r.dosen >= 6 && !s.merke.stoffente) { s.merke.stoffente = true; sichern(); ui.toast('<b>🦆 Gewonnen: eine Stoffente!</b><span>Am Stand: „Die sieht aus wie die echten im Weiher.“</span>', 'ly-t-ent'); return; }
+        sichern(); ui.toast('<b>🥫 ' + r.dosen + ' von 6</b><span>' + (r.dosen >= 6 ? 'Abgeräumt! ' : '') + (neu ? 'Neuer Rekord.' : 'Rekord: ' + (s.merke.dosenRekord || 0) + ' von 6') + '</span>');
+        return;
+      }
+      case 'tanzen': {   // Jugendhaus: Rhythmus-Spiel (tanz.js) – Punkte, Combo, Sterne; Kim feiert mit
+        const r = await tanzen(); if (!r || r.abbruch) return;
+        const alt = s.merke.tanzRekord || 0, neu = r.punkte > alt; if (neu) s.merke.tanzRekord = r.punkte;
+        s.merke.tanz = (s.merke.tanz || 0) + 1; s.merke.tanzSterne = Math.max(s.merke.tanzSterne || 0, r.sterne || 0); sichern();
+        const KIM = r.sterne >= 3 ? '„Wow. Das war Bühnen-Niveau!“' : r.sterne === 2 ? '„Du hast den Takt. Echt jetzt.“' : r.sterne === 1 ? '„Tanzen heißt Spaß haben. Hat geklappt.“' : '„Mutig, dass du es probiert hast!“';
+        ui.toast('<b>💃 ' + r.punkte + ' Punkte' + (neu && alt ? ' – neuer Rekord!' : '') + '</b><span>Kim: ' + KIM + '</span>', r.sterne >= 3 ? 'ly-t-ent' : undefined);
         return;
       }
       case 'kicker': {   // Jugendhaus: kurzes Duell – Spaß, kein Druck; das Ergebnis ist mal so, mal so

@@ -7,7 +7,7 @@ keine Geschlechts-Annahmen über die Spielfigur, nichts Sexuelles, keine Familie
 | Tag | Thema | Stand |
 |---|---|---|
 | 1 | Leben im Dorf: Tagesablauf, Verkehr (Tempo 30, hält vor Menschen), Geräusche, Figuren mit Routinen | Verkehr, Klingel, fahrende Jugendliche, Enten, Park, Markt, Baustelle, Jugendhaus fertig (20.11.) |
-| 2 | Freizeit: Skatepark, freie Fahrt, Rennen, Fußball, Volleyball, Turniere mit sozialer Seite (Teams wählen, verlieren, fair bleiben) | Fahrt, Rennen, Rampen, Skatepark, Fußball, Volleyball, Elfmeter, Teams wählen, Tischkicker-Minispiel, Botengänge, S-K-A-T-E fertig (20.11.) – offen: Turniere |
+| 2 | Freizeit: Skatepark, freie Fahrt, Rennen, Fußball, Volleyball, Turniere mit sozialer Seite (Teams wählen, verlieren, fair bleiben) | Fahrt, Rennen, Rampen, Skatepark, Fußball, Volleyball, Elfmeter, Teams wählen, Tischkicker-Minispiel, Botengänge, S-K-A-T-E, Tanzfläche, Dosenwerfen, Foto-Bingo fertig (20.11.) – offen: Turniere |
 | 3 | Freundschaften: Bogen je Freund:in über das Jahr (Streit, Eifersucht, Versöhnung), Klassenchat mit Dynamik (ausgeschlossen werden, Screenshots) | offen |
 | 4 | Folgen und Journal: Entscheidungen wirken Wochen später (Vertrauen, wer grüßt), Journal zeigt Muster („Du sagst oft Ja, wenn Ältere fragen“) | offen |
 | 5 | Lehrer- und Klassen-Modus: Besprechungskarten, Beamer-Modus (Klasse stimmt ab), Auswertung ohne Personendaten | offen |
