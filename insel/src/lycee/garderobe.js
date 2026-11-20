@@ -7,7 +7,7 @@ import { pokaleVon } from './pokale.js';
 const pokale = (S) => pokaleVon(S).length;
 const herzen = (S, ab) => Object.values(S.herz || {}).filter((h) => h >= ab).length;
 
-export const ARTEN = [['kopf', '🧢 Kopf'], ['haar', '💇 Haarfarbe'], ['brille', '🕶️ Brille'], ['oben', '👕 Oberteil'], ['schuhe', '👟 Schuhe'], ['fahrt', '🛹 Brett & Trotti'], ['tier', '🐾 Haustier'], ['spur', '✨ Spur']];
+export const ARTEN = [['kopf', '🧢 Kopf'], ['haar', '💇 Haarfarbe'], ['brille', '🕶️ Brille'], ['oben', '👕 Oberteil'], ['schuhe', '👟 Schuhe'], ['fahrt', '🛹 Brett & Trotti'], ['tier', '🐾 Haustier'], ['spur', '✨ Spur'], ['emote', '🙌 Emotes']];
 
 export const GARDEROBE = [
   // Kopf
@@ -65,6 +65,21 @@ export const GARDEROBE = [
   { id: 'sp_sterne', art: 'spur', wert: 'sterne', sy: '⭐', name: 'Spur „Sterne“', hinweis: 'In einem Kapitel alle 3 Wochenaufgaben', test: (S) => (m(S).wochenVoll || 0) >= 1 },
   { id: 'sp_schnee', art: 'spur', wert: 'schnee', sy: '❄️', name: 'Spur „Schneeflocken“', hinweis: 'Im Winter 600 m auf der Eisbahn rutschen', test: (S) => (m(S).eisMeter || 0) >= 600 },
   { id: 'sp_regenbogen', art: 'spur', wert: 'regenbogen', sy: '🌈', name: 'Spur „Regenbogen“', hinweis: '10× lernen (Arbeitsblatt oder Lektion)', test: (S) => (m(S).lernen || 0) >= 10 },
+  // Emotes (Emote-Rad, Taste X oder Knopf 🙌): kurze Gesten und Tänze. Vier gibt es von Anfang an, der Rest wird verdient.
+  { id: 'e_winken', art: 'emote', wert: 'winken', sy: '👋', name: 'Winken', hinweis: 'Von Anfang an (auch Taste H)', test: () => true },
+  { id: 'e_jubeln', art: 'emote', wert: 'jubeln', sy: '🎉', name: 'Jubeln', hinweis: 'Von Anfang an (auch Taste J)', test: () => true },
+  { id: 'e_tanzen', art: 'emote', wert: 'tanzen', sy: '🕺', name: 'Tanzen', hinweis: 'Von Anfang an (auch Taste K)', test: () => true },
+  { id: 'e_zucken', art: 'emote', wert: 'zucken', sy: '🤷', name: 'Schulterzucken', hinweis: 'Von Anfang an', test: () => true },
+  { id: 'e_daumen', art: 'emote', wert: 'daumen', sy: '👍', name: 'Daumen hoch', hinweis: '5 Leuten zuwinken (Taste H)', test: (S) => (m(S).gewunken || 0) >= 5 },
+  { id: 'e_klatschen', art: 'emote', wert: 'klatschen', sy: '👏', name: 'Klatschen', hinweis: 'Einen Botengang im Dorf schaffen', test: (S) => ((m(S).boten && m(S).boten.n) || 0) >= 1 },
+  { id: 'e_denken', art: 'emote', wert: 'denken', sy: '🤔', name: 'Nachdenken', hinweis: '5× lernen (Arbeitsblatt oder Lektion)', test: (S) => (m(S).lernen || 0) >= 5 },
+  { id: 'e_herz', art: 'emote', wert: 'herz', sy: '🫶', name: 'Herz-Hände', hinweis: 'Mit 2 Leuten richtig befreundet (4 Herzen)', test: (S) => herzen(S, 4) >= 2 },
+  { id: 'e_sieger', art: 'emote', wert: 'sieger', sy: '🙌', name: 'Sieger-Pose', hinweis: 'Einen Pokal im Jugendhaus gewinnen', test: (S) => pokale(S) >= 1 },
+  { id: 'e_facepalm', art: 'emote', wert: 'facepalm', sy: '🤦', name: 'Facepalm', hinweis: 'Kevin rennt: 100 Punkte', test: (S) => (m(S).kevinRekord || 0) >= 100 },
+  { id: 'e_verbeugen', art: 'emote', wert: 'verbeugen', sy: '🙇', name: 'Verbeugung', hinweis: 'Tischtennis einmal gewinnen', test: (S) => (m(S).ttSiege || 0) >= 1 },
+  { id: 'e_roboter', art: 'emote', wert: 'roboter', sy: '🤖', name: 'Roboter-Tanz', hinweis: 'Tanzfläche: 1000 Punkte', test: (S) => (m(S).tanzRekord || 0) >= 1000 },
+  { id: 'e_gitarre', art: 'emote', wert: 'gitarre', sy: '🎸', name: 'Luftgitarre', hinweis: 'Im Jugendhaus die Musik wechseln', test: (S) => (m(S).musikGewechselt || 0) >= 1 },
+  { id: 'e_winken2', art: 'emote', wert: 'winken2', sy: '🙋', name: 'Beide Arme winken', hinweis: '5 verschiedene Emotes zeigen', test: (S) => (m(S).emoteArten || []).length >= 5 },
 ];
 
 // Dorf-Level (wie ein Pass – aber kostenlos, ohne Zeitlimit): zählt ALLE je verdienten Jetons, auch fürs Lernen (Arbeitsblätter,

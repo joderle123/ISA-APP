@@ -293,8 +293,8 @@ export async function ladePerson(veil, { modell = 'menschen', stil = 'Casual', h
   // Körper: kleine Neigung nach vorn (zum Partner), in Weltrichtung um die Hüfte
   let lehnW = 0; const HUEFTE = knochen.Hips, BAUCH = knochen.Abdomen, _lehn = new THREE.Vector3();
   const lehnAnwenden = () => {
-    if (Math.abs(lehnW) < 0.002 || !BAUCH) return;
-    huelle.getWorldQuaternion(_kq); _lehn.set(1, 0, 0).applyQuaternion(_kq); _qa.setFromAxisAngle(_lehn, lehnW); weltDreh(BAUCH, _qa, 1);
+    const lw = lehnW + poseLehn; if (Math.abs(lw) < 0.002 || !BAUCH) return;
+    huelle.getWorldQuaternion(_kq); _lehn.set(1, 0, 0).applyQuaternion(_kq); _qa.setFromAxisAngle(_lehn, lw); weltDreh(BAUCH, _qa, 1);
   };
   // ---------- Sitzen (Auftrag 19.11.: „kein natürliches Sitzen“): Hüfte auf der Sitzfläche, Oberschenkel waagrecht,
   // Unterschenkel senkrecht, Füße auf dem Boden – per Bein-IK, passend zur Höhe des Sitzes (Stuhl ≈ 0,47 m, Kübelrand 0,56 m)
@@ -342,6 +342,63 @@ export async function ladePerson(veil, { modell = 'menschen', stil = 'Casual', h
     H.richtung = (H.richtung || new THREE.Vector3()).copy(_fw).addScaledVector(_zr, -0.3).normalize();
     H.flaeche = (H.flaeche || new THREE.Vector3()).set(0, 1, 0).addScaledVector(_zr, -0.5).normalize(); H.pol = (H.pol || new THREE.Vector3()).copy(_zr).multiplyScalar(0.5).setY(-1);
     H.faust = 0.1; H.zeige = 0; H.daumenHoch = false; H.w = erklW; H.erkl = true;
+  };
+  // ---------- Emotes (Emote-Rad, Auftrag 20.11. „wie bei Fortnite“): prozedurale Posen über die Hand-IK ----------
+  // Rahmen aus den Schultern: r = zur rechten Schulter, f = vorn, c = Schultermitte, k = Kopf. Gewicht blendet weich ein/aus.
+  const POSEN = { daumen: 2.2, klatschen: 2.6, herz: 2.8, sieger: 2.4, facepalm: 2.4, verbeugen: 2.4, roboter: 4.2, gitarre: 3.4, denken: 3, winken2: 2.6 };
+  let poseArt = null, poseT = 0, poseLehn = 0;
+  const _pr = new THREE.Vector3(), _pc = new THREE.Vector3(), _pk = new THREE.Vector3(), _pz = new THREE.Vector3(), _pd = new THREE.Vector3(), _pf = new THREE.Vector3(), _pp = new THREE.Vector3(), _pq = new THREE.Quaternion();
+  const setzeHand = (s, w, ziel, richtung, flaeche, pol, faust, extra) => {
+    const H = HAND[s]; if (H.w && !H.pose) return;   // Handschlag o. Ä. hat Vorrang
+    H.ziel = (H.ziel || new THREE.Vector3()).copy(ziel); H.richtung = (H.richtung || new THREE.Vector3()).copy(richtung).normalize();
+    H.flaeche = (H.flaeche || new THREE.Vector3()).copy(flaeche).normalize(); H.pol = (H.pol || new THREE.Vector3()).copy(pol);
+    H.faust = faust; H.zeige = (extra && extra.zeige) || 0; H.daumenHoch = !!(extra && extra.daumenHoch); H.w = w; H.pose = true;
+  };
+  const poseEnde = () => { for (const s of ['R', 'L']) if (HAND[s].pose) { HAND[s].w = 0; HAND[s].pose = false; } poseLehn = 0; poseArt = null; poseT = 0; };
+  const poseHaende = () => {
+    const D = POSEN[poseArt], p = 1 - poseT / D, t = D - poseT, w = Math.min(1, t / 0.25, poseT / 0.3);
+    huelle.getWorldQuaternion(_kq); _fw.set(0, 0, 1).applyQuaternion(_kq);
+    const oR = wp(ARM.R.O, _o1), oL = wp(ARM.L.O, _o2);
+    const r = _pr.copy(oR).sub(oL).setY(0).normalize(), f = _fw, u = _up;
+    _pc.copy(oR).add(oL).multiplyScalar(0.5); wp(KOPF || NACKEN, _pk);
+    const P = (out, basis, a, b, c) => out.copy(basis).addScaledVector(r, a).addScaledVector(u, b).addScaledVector(f, c);
+    const R = (out, a, b, c) => out.set(0, 0, 0).addScaledVector(r, a).addScaledVector(u, b).addScaledVector(f, c);
+    const kopfDreh = (achse, ang) => { if (KOPF) { _pq.setFromAxisAngle(achse, ang * w); weltDreh(KOPF, _pq, 1); } };
+    const beide = (fn) => { for (const [s, sg] of [['R', 1], ['L', -1]]) fn(s, sg, s === 'R' ? oR : oL); };
+    poseLehn = 0;
+    switch (poseArt) {
+      case 'daumen':   // Faust vor der Brust, Daumen nach oben
+        setzeHand('R', w, P(_pz, _pc, 0.13, -0.1 + Math.min(1, t * 4) * 0.05, 0.4), R(_pd, -0.2, 0.1, 1), R(_pf, -1, 0, 0), R(_pp, 0.6, -1, -0.3), 1, { daumenHoch: true }); break;
+      case 'klatschen': {   // Handflächen gegeneinander, schneller Takt
+        const g = 0.025 + Math.abs(Math.sin(t * 7.5)) * 0.12;
+        beide((s, sg) => setzeHand(s, w, P(_pz, _pc, sg * g, -0.13, 0.32), R(_pd, 0, 0.9, 0.6), R(_pf, -sg, 0, 0), R(_pp, sg * 0.7, -1, 0), 0)); break; }
+      case 'herz':   // Hände formen vor der Brust ein Herz
+        beide((s, sg) => setzeHand(s, w, P(_pz, _pc, sg * 0.035, -0.08, 0.3), R(_pd, -sg * 0.6, 0.8, 0.15), R(_pf, 0, 0, -1), R(_pp, sg * 0.9, -0.6, 0), 0.45)); break;
+      case 'sieger':   // Fäuste nach oben, kleines Federn
+        beide((s, sg, o) => setzeHand(s, w, P(_pz, o, sg * 0.24, 0.5 + Math.abs(Math.sin(t * 5)) * 0.04, 0.04), R(_pd, sg * 0.35, 1, 0), f, R(_pp, sg, 0, -0.3), 1)); break;
+      case 'facepalm':   // Hand vor die Stirn, Kopf sinkt
+        setzeHand('R', w, P(_pz, _pk, 0.02, 0.0, 0.12), R(_pd, -0.25, 1, 0.1), R(_pf, 0, 0, -1), R(_pp, 1, -0.6, 0.2), 0.1); break;
+      case 'verbeugen':   // nach vorn neigen, rechte Hand vor dem Bauch, linke auf dem Rücken
+        poseLehn = 0.62 * Math.pow(Math.sin(Math.PI * Math.min(1, p * 1.1)), 0.7);
+        setzeHand('R', w, P(_pz, _pc, 0, -0.42, 0.2), R(_pd, -1, 0, 0.15), R(_pf, 0, 0, -1), R(_pp, 1, -0.5, 0), 0.2);
+        setzeHand('L', w, P(_pz, _pc, 0, -0.5, -0.2), R(_pd, 1, 0, -0.15), R(_pf, 0, 0, 1), R(_pp, -1, -0.5, 0), 0.2); break;
+      case 'roboter': {   // eckig: Unterarme im Wechsel hoch und runter, Kopf ruckt
+        const k = Math.floor(t * 2.6) % 4;
+        beide((s, sg) => setzeHand(s, w, P(_pz, _pc, sg * 0.2, -0.25 + ((k % 2 === 0) === (sg > 0) ? 0.22 : 0), 0.27), f, R(_pf, 0, -1, 0), R(_pp, sg * 0.6, -1, -0.6), 0));
+        kopfDreh(u, [0.35, 0, -0.35, 0][k]); break; }
+      case 'gitarre':   // Luftgitarre: links greift, rechts schlägt, Kopf nickt
+        poseLehn = 0.08;
+        setzeHand('L', w, P(_pz, _pc, -0.44, -0.14, 0.3), R(_pd, -0.25, 0.25, 1), R(_pf, 1, 0, -0.3), R(_pp, -1, -0.6, -0.2), 0.55);
+        setzeHand('R', w, P(_pz, _pc, 0.05, -0.48 + Math.sin(t * 16) * 0.07, 0.24), R(_pd, -1, -0.4, 0.2), R(_pf, 0, 0, -1), R(_pp, 1, -0.4, 0), 0.7);
+        kopfDreh(r, Math.sin(t * 8) * 0.14); break;
+      case 'denken':   // Hand am Kinn, anderer Arm stützt
+        setzeHand('R', w, P(_pz, _pk, 0.0, -0.11, 0.13), R(_pd, -0.1, 1, 0.15), R(_pf, 0, 0, -1), R(_pp, 0.5, -1, 0.2), 0.8);
+        setzeHand('L', w, P(_pz, _pc, 0.12, -0.32, 0.2), R(_pd, 1, 0, 0), R(_pf, 0, 1, 0), R(_pp, -0.5, -1, 0), 0.3);
+        kopfDreh(f, -0.12); break;
+      case 'winken2':   // beide Arme hoch, winken
+        beide((s, sg, o) => setzeHand(s, w, P(_pz, o, sg * (0.18 + Math.sin(t * 7 + (sg > 0 ? 0 : Math.PI)) * 0.1), 0.48, 0.08), R(_pd, sg * 0.3, 1, 0), f, R(_pp, sg, -0.2, -0.3), 0)); break;
+      default: break;
+    }
   };
   const zuckHaende = () => {
     huelle.getWorldQuaternion(_kq); _fw.set(0, 0, 1).applyQuaternion(_kq);
@@ -402,6 +459,8 @@ export async function ladePerson(veil, { modell = 'menschen', stil = 'Casual', h
     redet(v) { redetZiel = v ? 1 : 0; },
     nicken() { nickT = NICK; },
     geste(art) { if (GESTE[art]) { gesteArt = art; gesteT = GESTE[art]; } },
+    pose(art) { if (poseT > 0 || poseArt) poseEnde(); if (art && POSEN[art] && ARMOK) { poseArt = art; poseT = POSEN[art]; } },
+    get poseAktiv() { return poseT > 0 ? poseArt : null; },
     get augen() { return AUGEN ? AUGEN.map((a) => a.idx.length + '@' + a.idx[0] + '=' + a.attr.getX(a.idx[0]).toFixed(2) + ' n' + blinzelIn.toFixed(1)) : null; },
     hand: HAND, armOk: ARMOK,
     lehnen(w) { lehnW = w || 0; },
@@ -444,6 +503,7 @@ export async function ladePerson(veil, { modell = 'menschen', stil = 'Casual', h
       if (zuckW > 0.01) zuckHaende(); else for (const s of ['R', 'L']) if (HAND[s].zuck) { HAND[s].w = 0; HAND[s].zuck = false; }
       erklW = gesteT > 0 && gesteArt === 'erklaeren' && !sitzt && ARMOK ? Math.min(1, Math.sin(Math.PI * (1 - gesteT / GESTE.erklaeren)) * 1.6) * 0.8 : 0;
       if (erklW > 0.01) { erklT += dt; erklHand(); } else if (HAND.R.erkl) { HAND.R.w = 0; HAND.R.erkl = false; }
+      if (poseT > 0) { poseT = Math.max(0, poseT - dt); if (poseT > 0 && poseArt && !sitzt && ARMOK) poseHaende(); else poseEnde(); }
       if (sitzt && ARMOK) sitzHaende(); else if (sitzHand) { for (const s of ['R', 'L']) if (HAND[s].sitz) { HAND[s].w = 0; HAND[s].sitz = false; } sitzHand = false; }
       armAnwenden('R'); armAnwenden('L');
     },

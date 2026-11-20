@@ -781,18 +781,101 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       // H = winken: die Spielfigur winkt, Leute in der Nähe winken zurück
       if (e.code === 'KeyG' && hsPartner) { e.preventDefault(); handschlagMit(hsPartner); return; }
       if ((e.code === 'KeyJ' || e.code === 'KeyK') && laeuft && !imGespraech && !ui.ebeneArt() && spieler && steuerung.tempo < 0.3 && !steuerung.sitzt && !steuerung.brett) {   // J = jubeln, K = tanzen
-        steuerung.emote = e.code === 'KeyJ' ? 'Jubeln' : 'Tanzen'; steuerung.emoteBis = performance.now() + (e.code === 'KeyJ' ? 2800 : 20000); steuerung.emoteVor = false; return;
+        steuerung.emote = e.code === 'KeyJ' ? 'Jubeln' : 'Tanzen'; steuerung.emoteBis = performance.now() + (e.code === 'KeyJ' ? 2800 : 20000); steuerung.emoteVor = false; emoteBlase(EMOTE_SY[e.code === 'KeyJ' ? 'jubeln' : 'tanzen'], spieler.group); emoteGezaehlt(e.code === 'KeyJ' ? 'jubeln' : 'tanzen'); if (e.code === 'KeyJ') leuteAntworten('jubeln'); return;
       }
-      if (e.code === 'KeyH' && laeuft && !imGespraech && !ui.ebeneArt() && spieler && steuerung.tempo < 0.3 && !steuerung.sitzt && !steuerung.brett) {
-        steuerung.emote = 'Wave'; steuerung.emoteBis = performance.now() + 2200;
-        const p = steuerung.pos; let n = 0;
-        for (const x of statisten) { const d = Math.hypot(x.f.group.position.x - p.x, x.f.group.position.z - p.z), sitzt = x.d.steht && x.d.steht[3] === 'sitzt';
-          if (d < 9 && !sitzt && x.f.group.children[0] && x.f.group.children[0].visible && n < 4) { n++; setTimeout(() => zurueckWinken(x), 350 + Math.random() * 700); } }
-        if (n) { S.merke.gewunken = (S.merke.gewunken || 0) + n; sichern(); }
-      }
+      if (e.code === 'KeyX' && laeuft && !imGespraech && !ui.ebeneArt() && spieler) { e.preventDefault(); emoteRadAuf(); return; }
+      if (e.code === 'KeyH' && laeuft && !imGespraech && !ui.ebeneArt() && spieler && steuerung.tempo < 0.3 && !steuerung.sitzt && !steuerung.brett) { winkenStart(); emoteGezaehlt('winken'); }
       if (puffer === 'gerd' && S && S.merke) { puffer = ''; tiere.alleAuf(); const neu = !S.merke.geheimwort; S.merke.geheimwort = true; sichern(); ui.toast('<b>🐦 GERD!</b><span>' + (neu ? 'Du kennst das Geheimwort. Die Tauben auch.' : 'Alle Tauben fliegen. Gerd bleibt sitzen. Natürlich.') + '</span>', 'ly-t-ent'); ton('pling'); }
     });
   }
+  // Winken (H oder Emote-Rad): die Spielfigur winkt, Leute in der Nähe winken zurück
+  function winkenStart() {
+    steuerung.emote = 'Wave'; steuerung.emoteBis = performance.now() + 2200;
+    const p = steuerung.pos; let n = 0;
+    for (const x of statisten) { const d = Math.hypot(x.f.group.position.x - p.x, x.f.group.position.z - p.z), sitzt = x.d.steht && x.d.steht[3] === 'sitzt';
+      if (d < 9 && !sitzt && x.f.group.children[0] && x.f.group.children[0].visible && n < 4) { n++; setTimeout(() => zurueckWinken(x), 350 + Math.random() * 700); } }
+    if (n) { S.merke.gewunken = (S.merke.gewunken || 0) + n; sichern(); }
+    return n;
+  }
+
+  // ---------- Emotes (Emote-Rad: Taste X oder Knopf 🙌) – in der Garderobe verdient; Leute in der Nähe antworten manchmal ----------
+  const EMOTES = GARDEROBE.filter((d) => d.art === 'emote');
+  const EMOTE_SY = Object.fromEntries(EMOTES.map((d) => [d.wert, d.sy]));
+  const EMOTE_ANTWORT = { jubeln: 'klatschen', tanzen: 'klatschen', sieger: 'klatschen', gitarre: 'klatschen', roboter: 'klatschen', verbeugen: 'klatschen', klatschen: 'daumen', herz: 'herz', daumen: 'daumen', facepalm: 'lachen', zucken: 'zucken', denken: 'zucken', winken2: 'winken' };
+  const blasen = [];   // kleine Emoji-Blasen über dem Kopf, steigen auf und verblassen
+  function emoteBlase(sy, obj, hoehe = 2.2) {
+    if (!sy || !obj) return;
+    const cv = document.createElement('canvas'); cv.width = cv.height = 128; const c = cv.getContext('2d');
+    c.font = '92px system-ui, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif'; c.textAlign = 'center'; c.textBaseline = 'middle'; c.fillText(sy, 64, 70);
+    const t = new THREE.CanvasTexture(cv); t.colorSpace = THREE.SRGBColorSpace;
+    const sp = new THREE.Sprite(new THREE.SpriteMaterial({ map: t, transparent: true, depthWrite: false, toneMapped: false }));
+    sp.scale.setScalar(0.4); sp.renderOrder = 21; scene.add(sp);
+    blasen.push({ sp, obj, h: hoehe, t: 0 });
+  }
+  function blasenTick(dt) {
+    for (let i = blasen.length - 1; i >= 0; i--) {
+      const b = blasen[i]; b.t += dt; const p = b.obj.position, k = b.t / 1.8;
+      b.sp.position.set(p.x, b.h + k * 0.45, p.z); b.sp.material.opacity = k < 0.15 ? k / 0.15 : Math.max(0, 1 - (k - 0.6) / 0.4);
+      b.sp.scale.setScalar(0.4 * (k < 0.15 ? 0.6 + (k / 0.15) * 0.4 : 1));
+      if (k >= 1) { scene.remove(b.sp); b.sp.material.map.dispose(); b.sp.material.dispose(); blasen.splice(i, 1); }
+    }
+  }
+  function emoteGezaehlt(art) {
+    if (!S || !S.merke) return;
+    S.merke.emotes = (S.merke.emotes || 0) + 1;
+    const arten = S.merke.emoteArten || (S.merke.emoteArten = []);
+    if (!arten.includes(art)) arten.push(art);
+    const z = S.merke.emoteZahl || (S.merke.emoteZahl = {}); z[art] = (z[art] || 0) + 1;   // für „Mein Jahr“: Lieblings-Emote
+    sichern();
+  }
+  const emoteFrei = () => { if (!S) return []; const hab = new Set(freigeschaltet(S)); return EMOTES.filter((d) => hab.has(d.id)); };
+  function emoteSpielen(art, { vorschau = false } = {}) {
+    if (!spieler || !EMOTE_SY[art]) return false;
+    if (!vorschau && (!laeuft || imGespraech || ui.ebeneArt() || steuerung.sitzt || steuerung.brett || foto)) return false;
+    if (spieler.pose) spieler.pose(null);
+    steuerung.emoteBis = 0;
+    if (art === 'winken') { if (vorschau) { steuerung.emote = 'Wave'; steuerung.emoteBis = performance.now() + 2200; steuerung.emoteVor = false; } else winkenStart(); }
+    else if (art === 'jubeln') { steuerung.emote = 'Jubeln'; steuerung.emoteBis = performance.now() + 2800; steuerung.emoteVor = false; }
+    else if (art === 'tanzen') { steuerung.emote = 'Tanzen'; steuerung.emoteBis = performance.now() + (vorschau ? 4000 : 12000); steuerung.emoteVor = false; }
+    else if (art === 'zucken') spieler.geste('zucken');
+    else if (spieler.pose) {
+      spieler.pose(art);
+      const kopf = { facepalm: 'senken', denken: 'neigen', daumen: 'lachen', herz: 'lachen', sieger: 'lachen' }[art]; if (kopf) setTimeout(() => spieler && spieler.geste(kopf), 300);
+      if (art === 'klatschen') for (let i = 1; i <= 5; i++) setTimeout(() => ton('klatsch'), i * 419);
+    }
+    emoteBlase(EMOTE_SY[art], spieler.group);
+    if (vorschau) return true;
+    emoteGezaehlt(art);
+    if (art !== 'winken') leuteAntworten(art);
+    return true;
+  }
+  // Leute in der Nähe (bis 2) drehen sich zu dir und antworten: mitklatschen, Daumen hoch, lachen, zurückwinken
+  function leuteAntworten(art) {
+    const antw = EMOTE_ANTWORT[art]; if (!antw || !S) return 0;
+    const p = steuerung.pos;
+    const nah = statisten.filter((x) => { const d = Math.hypot(x.f.group.position.x - p.x, x.f.group.position.z - p.z);
+      return d < 7 && !(x.d.steht && x.d.steht[3] === 'sitzt') && x.f.group.children[0] && x.f.group.children[0].visible; })
+      .sort(() => Math.random() - 0.5).slice(0, 2);
+    for (const x of nah) setTimeout(() => {
+      if (antw === 'winken') { zurueckWinken(x); emoteBlase('👋', x.f.group); return; }
+      const q = steuerung.pos; x.f.group.rotation.y = Math.atan2(q.x - x.f.group.position.x, q.z - x.f.group.position.z);
+      const w = x.warte; x.warte = Math.max(x.warte || 0, 3); x.f.spiele('Idle');
+      if (antw === 'lachen' || antw === 'zucken') x.f.geste(antw);
+      else if (x.f.pose) { x.f.pose(antw); if (antw === 'klatschen') for (let i = 1; i <= 4; i++) setTimeout(() => ton('klatsch'), i * 419); }
+      emoteBlase(EMOTE_SY[antw] || (antw === 'lachen' ? '😂' : '🤷'), x.f.group);
+      setTimeout(() => { const h = x.d.steht && x.d.steht[3]; if (h === 'redet') x.f.spiele('Interact', { tempo: 0.35 }); else if (h === 'handy') x.f.spiele('Idle_Neutral'); else if (x.d.weg) { x.f.spiele('Walk', { tempo: x.d.tempo / 1.4 }); x.warte = w > 0 ? w : 0; } else x.f.spiele('Idle'); if (x.d.steht) x.f.group.rotation.y = x.d.steht[2]; }, 2900);
+    }, 450 + Math.random() * 600);
+    if (nah.length) S.merke.emoteAntwort = (S.merke.emoteAntwort || 0) + nah.length;
+    return nah.length;
+  }
+  async function emoteRadAuf() {
+    if (!S || !laeuft || imGespraech || ui.ebeneArt() || foto || !spieler) return;
+    if (steuerung.brett) { ui.toast('Erst absteigen (R / T) – dann Emotes.'); return; }
+    const frei = emoteFrei();
+    const wahl = await ui.emoteRad({ liste: frei.map((d) => ({ wert: d.wert, sy: d.sy, name: d.name })), offen: EMOTES.length - frei.length });
+    if (wahl) emoteSpielen(wahl);
+  }
+  ui.onEmote = emoteRadAuf;
 
   // ---------- Spielfigur ----------
   let spieler = null;
@@ -854,7 +937,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (!neu.length) return;
     G.gesehen.push(...neu); G.neu.push(...neu); sichern();
     if (neu.length > 2) { ui.toast('<b>🎁 ' + neu.length + ' neue Teile in deiner Garderobe</b><span>Taste G (oder ☰ → Garderobe) zum Anziehen</span>', 'ly-t-ent'); return; }
-    neu.forEach((id, i) => { const d = gdDing(id); setTimeout(() => ui.belohnung({ sy: d.sy, name: d.name, art: (GD_ARTEN.find((a) => a[0] === d.art) || [])[1] || '', onKnopf: () => gleichAnziehen(id) }), 600 + i * 7400); });
+    neu.forEach((id, i) => { const d = gdDing(id); setTimeout(() => ui.belohnung({ sy: d.sy, name: d.name, art: (GD_ARTEN.find((a) => a[0] === d.art) || [])[1] || '', ...(d.art === 'emote' ? { knopf: 'Gleich zeigen (X)', onKnopf: () => emoteSpielen(d.wert) } : { onKnopf: () => gleichAnziehen(id) }) }), 600 + i * 7400); });
     ton('melodie2');
   }
   // Herausforderungen von Freund:innen (herausforderungen.js): je Abschnitt höchstens eine neue Nachricht; geschafft = Antwort, Herz, Jetons
@@ -905,6 +988,10 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     const kameraSetzen = () => { const a = Math.atan2(fx, fz) + dreh, ax = Math.sin(a), az = Math.cos(a);
       camera.position.set(sp.x + ax * 2.6 - az * seit, 1.35 + (hoch ? 0.5 : 0), sp.z + az * 2.6 + ax * seit); camera.lookAt(sp.x - az * seit, hoch ? 0.75 : 1.0, sp.z + ax * seit); };
     kameraSetzen();
+    // Leute direkt neben der Figur würden die Kamera verdecken: solange die Garderobe offen ist, kurz ausblenden
+    const versteckt = [];
+    for (const x of [...statisten, ...Object.values(leute || {})]) { const g = x && x.f && x.f.group; if (!g || !g.visible || g === (spieler && spieler.group)) continue;
+      if (Math.hypot(g.position.x - sp.x, g.position.z - sp.z) < 3.4) { g.visible = false; versteckt.push(g); } }
     const drehTaste = (e) => { if (['ArrowLeft', 'ArrowRight', 'KeyQ'].includes(e.code)) { e.preventDefault(); dreh += (e.code === 'ArrowRight' ? -1 : 1) * 0.35; kameraSetzen(); } };
     document.addEventListener('keydown', drehTaste, true);
     const umbau = async () => { const p = steuerung.pos.clone(), y = spieler.group.rotation.y; await spielerFigur(S.figur); spieler.group.position.copy(p); spieler.group.rotation.y = y; };
@@ -913,6 +1000,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       const woche = aufgabenStand(S, wochenaufgaben());
       await ui.garderobe({ arten: GD_ARTEN, liste: liste(), woche, stufe: { ...st, preis: preis ? preis.sy + ' ' + preis.name : null, pokale: pokale.anzahl }, wahl: async (id) => {
         const d = gdDing(id); if (!d || !hab.has(id)) return liste();
+        if (d.art === 'emote') { G.neu = G.neu.filter((x) => x !== id); emoteSpielen(d.wert, { vorschau: true }); sichern(); return liste(); }
         G.an[d.art] = G.an[d.art] === id ? null : id; G.neu = G.neu.filter((x) => x !== id);
         if (d.art === 'tier') tierDran();
         else if (d.art === 'spur') { spurDran(); spur.vorschau(); if (G.an.spur === id) ui.toast('<b>' + d.sy + ' ' + d.name + '</b><span>Zu sehen, wenn du rennst, fährst oder rutschst.</span>'); }
@@ -920,7 +1008,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         else { umziehen = false; sichern(); await umbau(); }   // sofort an der Figur sehen
         ton('pling'); sichern(); return liste();
       } });
-    } finally { document.removeEventListener('keydown', drehTaste, true); input.setEnabled(true); steuerung.kameraAus = false; steuerung.frei = true; steuerung.kamera(0.016, true); }
+    } finally { for (const g of versteckt) g.visible = true; document.removeEventListener('keydown', drehTaste, true); input.setEnabled(true); steuerung.kameraAus = false; steuerung.frei = true; steuerung.kamera(0.016, true); }
     G.neu = []; sichern(); if (ui.garderobeNeu) ui.garderobeNeu(0);
     if (umziehen) await umbau();
   };
@@ -941,6 +1029,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       { sy: '👕', titel: 'Garderobe', wert: freigeschaltet(S).length + ' von ' + GARDEROBE.length, text: 'Teile freigeschaltet', farbe: '#2fb8a8' },
       { sy: '🐾', titel: 'Haustier', wert: tier ? tier.name.replace(/^[^„]*„|“$/g, '') : 'noch keins', text: tier ? (M.tierStreicheln || 0) + '× gestreichelt' : 'In der Garderobe (G).', farbe: '#8a6a4a' },
       { sy: '🍦', titel: 'Eis', wert: sorten.length ? SORTE[sorten[sorten.length - 1]] || 'probiert' : 'noch keins', text: sorten.length + ' von 6 Sorten bei Tonio', farbe: '#ff7ac8' },
+      (() => { const z = Object.entries(M.emoteZahl || {}).sort((a, b) => b[1] - a[1])[0], d = z && EMOTES.find((e) => e.wert === z[0]);
+        return { sy: d ? d.sy : '🙌', titel: 'Lieblings-Emote', wert: d ? d.name : 'noch keins', text: d ? z[1] + '× gezeigt · ' + (M.emoteAntwort || 0) + '× hat jemand geantwortet' : 'Taste X oder Knopf 🙌', farbe: '#f08a24' }; })(),
       { sy: '⭐', titel: 'Sticker', wert: (M.sticker || []).length + ' von 24', text: 'im Dorf gefunden', farbe: '#d6452f' },
       { sy: '📌', titel: 'Botengänge', wert: String((M.boten && M.boten.n) || 0), text: 'für Leute im Dorf erledigt', farbe: '#3a8a5a' },
       { sy: '⛄', titel: 'Winter', wert: M.schneemann ? 'Schneemann gebaut' : (M.eisMeter ? Math.round(M.eisMeter) + ' m Eis' : '–'), text: M.eisMeter ? Math.round(M.eisMeter) + ' m auf der Eisbahn' : 'Dezember bis Februar', farbe: '#5ec8ff' },
@@ -2133,6 +2223,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       else if (art === 'klack') { rausch(0, 0.05, 0.4); note(140, 0.05, 0.2, 'square', 0.1); }
       else if (art === 'pling') { note(1046, 0, 0.3, 'sine', 0.15); note(1318, 0.1, 0.4, 'sine', 0.12); }
       else if (art === 'platsch') rausch(0, 0.35, 0.2);
+      else if (art === 'klatsch') { rausch(0, 0.035, 0.5); rausch(0.01, 0.05, 0.18); }
       else if (art === 'rascheln') [0, 0.07, 0.15, 0.26].forEach((t, i) => rausch(t, 0.14 + i * 0.03, 0.14 - i * 0.025));   // Laub
     } catch (e) { /* kein Ton – egal */ }
   }
@@ -2983,6 +3074,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (freiZeit > 90) tipp('journal', TOUCH ? '☰ oben rechts: Journal mit Freundschaften, Stärken und Entdeckungen.' : 'Tab = Journal: Freundschaften, Stärken, Entdeckungen.');
     spielZeit += dt;
     if (spielZeit > 45 * 60 && !pauseErinnert) { pauseErinnert = true; ui.toast('<b>🌿 Kleine Pause?</b><span>Du spielst seit 45 Minuten. Schau 20 Sekunden aus dem Fenster, streck dich. Das Spiel wartet.</span>'); }
+    if (freiZeit > 150) tipp('emotes', TOUCH ? '🙌 unten rechts: Emotes – Daumen hoch, Klatschen, Tanzen. Weitere verdienst du.' : 'X = Emote-Rad: Daumen hoch, Klatschen, Tanzen. Weitere verdienst du.');
     if (freiZeit > 200) tipp('foto', TOUCH ? '📷 oben: Fotomodus. Pose wählen, Filter, speichern.' : 'C = Fotomodus. Pose wählen, Filter, speichern.');
     if (spruchWer && spruchWer.d && spruchWer.d.steht && Math.hypot(spruchWer.f.group.position.x - steuerung.pos.x, spruchWer.f.group.position.z - steuerung.pos.z) < 5) tipp('winken', TOUCH ? 'Lange auf die Person tippen oder 👋 = winken.' : 'H = winken. Manche winken zurück.');
     // Lange kein Fortschritt im aktuellen Auftrag: Ziel-Box pulsiert und ein sanfter Hinweis (nicht nervig: einmal je Auftrag)
@@ -3318,6 +3410,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     pfuetzen.tick(dt, fruehlingAn || regenJetzt > 0.3);
     if (tuete && performance.now() > tueteBis) { if (tuete.parent) tuete.parent.remove(tuete); tuete = null; }
     spur.tick(dt, !!(laeuft && S && spieler && spieler.group.visible && !imGespraech && !steuerung.kameraAus));
+    if (blasen.length) blasenTick(dt);
+    if (spieler && spieler.poseAktiv && steuerung.tempo > 1.2) spieler.pose(null);   // losgelaufen: Emote endet
     if (laeuft) { garderobePruefen(dt); herausforderungTick(dt); wochenaufgabenTick(dt); }
     if (laeuft && S && (pokalUhr -= dt) <= 0) { pokalUhr = 3; pokaleTick(); }
     if (laeuft && S && S.merke && steuerung.eis && !imGespraech) {   // Eisbahn: Meter zählen (Wochenaufgabe, Wollmütze), beim ersten Mal ein Tipp
@@ -3541,7 +3635,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     teleport: (ort, yaw) => { const o = typeof ort === 'string' ? welt.orte[ort] : ort; steuerung.teleport(o.x, o.z, yaw !== undefined ? yaw : o.yaw); },
     rede, los, audio, SITZ, input, get spruch() { return { wer: !!spruchWer }; }, get naechste() { return naechste && naechste.id; },
     get probe() { return probe; }, set mutTempo(v) { mutTempo = v; },
-    daten: { SCHRITTE, STATISTEN, LEUTE, BLAETTER, MATHE, LEKTIONEN, GESPRAECHE }, ia, aktion, botengang, buchstaben, dosen, haustier, spur, schneemann, laub, pfuetzen, pokale, gdPruefen: (dt = 5) => garderobePruefen(dt), kicker3d, billard, garderobe: () => S && S.garderobe, get iaNah() { return iaNah && iaNah.tu; },
+    daten: { SCHRITTE, STATISTEN, LEUTE, BLAETTER, MATHE, LEKTIONEN, GESPRAECHE }, ia, aktion, botengang, buchstaben, dosen, haustier, spur, schneemann, laub, pfuetzen, pokale, gdPruefen: (dt = 5) => garderobePruefen(dt), emote: (a, o) => emoteSpielen(a, o), emoteFrei: () => emoteFrei().map((d) => d.wert), leuteAntworten, kicker3d, billard, garderobe: () => S && S.garderobe, get iaNah() { return iaNah && iaNah.tu; },
     hs, tt3d, zufall, fussball, volley, verkehr, elfmeter, sticker, fahrer, get fahrt() { return fahrt; }, get spieler() { return spieler; }, vorspann: (k) => vorspann(SCHRITTE.find((x) => (x.kap || 1) === k) || SCHRITTE[0]), gesteZu, handschlagMit, get statisten() { return statisten; }, musik,
   };
 

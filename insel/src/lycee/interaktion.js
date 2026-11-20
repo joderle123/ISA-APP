@@ -323,7 +323,7 @@ export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton
       }
       case 'jukebox': {   // Musik im Jugendhaus wechseln (eigene synthetische Stücke)
         const LISTE = [['strand', 'Marimba'], ['markt', 'Gezupfte Saiten'], ['glimmer', 'Arpeggios'], ['leuchtturm', 'Alle zusammen']];
-        const i = ((s.merke.jugendhausMusik || 0) + 1) % LISTE.length; s.merke.jugendhausMusik = i; sichern();
+        const i = ((s.merke.jugendhausMusik || 0) + 1) % LISTE.length; s.merke.jugendhausMusik = i; s.merke.musikGewechselt = (s.merke.musikGewechselt || 0) + 1; sichern();
         ui.toast('<b>🎵 ' + LISTE[i][1] + '</b><span>Jemand nickt im Takt.</span>');
         return;
       }

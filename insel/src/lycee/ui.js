@@ -26,6 +26,8 @@ export function createUI({ root, input, speech }) {
   // Touch: Joystick-Bild und Aktionsknopf
   const stick = el('div', 'ly-stick', '<span></span>'); hud.appendChild(stick);
   const akt = el('button', 'ly-akt', 'E'); akt.type = 'button'; akt.setAttribute('aria-label', 'Reden / weiter'); hud.appendChild(akt);
+  const emoKn = el('button', 'ly-emo hud-interactive', '🙌'); emoKn.type = 'button'; emoKn.title = 'Emotes (X)'; emoKn.setAttribute('aria-label', 'Emotes'); hud.appendChild(emoKn);
+  emoKn.onclick = () => { if (ebene.hidden && !dialogOffen) ui.onEmote && ui.onEmote(); };
   let dialogOffen = false, weiterFn = null, wahlFn = null, wahlReihe = [];
   const ui = { dialogOffen: () => dialogOffen || !ebene.hidden, onJournal: null, onAktion: null, onRaus: null };
 
@@ -345,7 +347,7 @@ export function createUI({ root, input, speech }) {
       (plaetze ? '<div class="ly-t-plaetze">' + plaetze().map((x, i) => '<button type="button" data-p="' + (i + 1) + '" class="' + (i + 1 === platz ? 'an' : '') + '"><b>' + (i + 1) + '</b><span>' + (x ? esc(x.name) + ' · ' + (x.fertig ? 'fertig' : 'Kapitel ' + x.kap) : 'frei') + '</span></button>').join('') + '</div>' : '') +
       '<div class="ly-t-knoepfe">' +
       (gespeichert ? '<button type="button" class="ly-btn ly-primaer" data-a="weiter">Weiterspielen</button><button type="button" class="ly-btn" data-a="neu">Neu anfangen</button>' : '<button type="button" class="ly-btn ly-primaer" data-a="neu">Los geht’s</button>') +
-      '</div><p class="ly-t-fuss">' + (matchMedia('(pointer: coarse)').matches ? 'Links wischen: laufen · Rechts wischen: schauen · Knopf: reden · ☰: Journal' : 'WASD / Pfeile laufen · Maus ziehen = umschauen · E = reden · H = winken · Tab = Journal') + '</p>' +
+      '</div><p class="ly-t-fuss">' + (matchMedia('(pointer: coarse)').matches ? 'Links wischen: laufen · Rechts wischen: schauen · Knopf: reden · 🙌: Emotes · ☰: Journal' : 'WASD / Pfeile laufen · Maus ziehen = umschauen · E = reden · H = winken · X = Emotes · Tab = Journal') + '</p>' +
       '<button type="button" class="ly-link" data-a="einst">⚙ Einstellungen (Textgröße, Vorlesen)</button>' +
       (lehrer ? '<button type="button" class="ly-link" data-a="lehrer">Für Lehrpersonen: eigene Aufgaben</button>' : ''));
     k.querySelectorAll('[data-p]').forEach((b) => { b.onclick = () => { platz = +b.dataset.p; gespeichert = wechsle(platz); zeigeTitel(); }; });
@@ -768,7 +770,7 @@ export function createUI({ root, input, speech }) {
       const k = ebeneAuf('garderobe', '<div class="ly-t-kicker">Garderobe · ' + hab + ' von ' + daten.length + ' freigeschaltet</div><h2>Dein Style</h2>' + lv + wo +
         '<div class="ly-gd-reiter">' + arten.map(([a, t]) => '<button type="button" class="ly-ed-wort' + (a === reiter ? ' an' : '') + '" data-r="' + a + '">' + t + (daten.some((x) => x.art === a && x.neu) ? ' •' : '') + '</button>').join('') + '</div>' +
         '<div class="ly-gd-gitter">' + daten.filter((x) => x.art === reiter).map((x) => '<button type="button" class="ly-gd-ding' + (x.hab ? '' : ' zu') + (x.an ? ' an' : '') + '" data-id="' + esc(x.id) + '"' + (x.hab ? '' : ' disabled') + '>' +
-          '<span class="ly-gd-sy">' + (x.hab ? x.sy : '🔒') + '</span><b>' + esc(x.name) + '</b><small>' + (x.hab ? (x.an ? '✔ An' : (x.neu ? 'NEU · antippen' : 'Antippen = anziehen')) : esc(x.hinweis)) + '</small></button>').join('') + '</div>' +
+          '<span class="ly-gd-sy">' + (x.hab ? x.sy : '🔒') + '</span><b>' + esc(x.name) + '</b><small>' + (x.hab ? (x.art === 'emote' ? (x.neu ? 'NEU · antippen = zeigen' : 'Antippen = zeigen') : x.an ? '✔ An' : (x.neu ? 'NEU · antippen' : 'Antippen = anziehen')) : esc(x.hinweis)) + '</small></button>').join('') + '</div>' +
         '<p class="ly-leer">Alles hier wird verdient – durch Nebenaufgaben im Dorf. Kein Zufall, kein Geld. ← → dreht die Ansicht.</p>' +
         '<div class="ly-t-knoepfe"><button type="button" class="ly-btn ly-primaer" data-a="ok">Fertig <kbd>G</kbd></button></div>');
       k.querySelectorAll('[data-r]').forEach((b) => { b.onclick = () => { reiter = b.dataset.r; zeig(); }; });
@@ -776,6 +778,31 @@ export function createUI({ root, input, speech }) {
       k.querySelector('[data-a="ok"]').onclick = zu;
     };
     zeig();
+  });
+
+  // Emote-Rad (wie in großen Spielen): alle verdienten Emotes im Kreis. Ziffern 1–9/0, Klick oder Tippen wählt; X / Escape schließt.
+  // liste: [{ wert, sy, name }] (nur freigeschaltete), offen: wie viele noch zu verdienen sind. → Promise mit wert oder null
+  ui.emoteRad = ({ liste, offen = 0 }) => new Promise((ok) => {
+    const n = liste.length, R = Math.round(Math.min(n > 10 ? 128 : n > 6 ? 112 : 92, (Math.min(innerWidth, innerHeight) - 100) / 2));
+    const k = ebeneAuf('emote', '<div class="ly-emo-rad" style="--r:' + R + 'px">' + liste.map((x, i) => {
+      const a = (i / n) * Math.PI * 2 - Math.PI / 2;
+      return '<button type="button" data-i="' + i + '" style="left:calc(50% + ' + (Math.cos(a) * R).toFixed(1) + 'px);top:calc(50% + ' + (Math.sin(a) * R).toFixed(1) + 'px)" title="' + esc(x.name) + '"><span>' + x.sy + '</span>' + (i < 10 ? '<kbd>' + ((i + 1) % 10) + '</kbd>' : '') + '</button>';
+    }).join('') + '<div class="ly-emo-mitte"><b>Emote wählen</b><small>' + (offen ? '🔒 ' + offen + ' weitere zum Verdienen – in der Garderobe 👕' : 'Alle Emotes verdient! 🏆') + '</small></div></div>');
+    k.classList.add('ly-emo-ebene');
+    const mitte = k.querySelector('.ly-emo-mitte b');
+    let fertig = false;
+    const zu = (w) => { if (fertig) return; fertig = true; document.removeEventListener('keydown', taste, true); ebeneZu(); ok(w); };
+    const taste = (e) => {
+      if (e.code === 'Escape' || e.code === 'KeyX') { e.preventDefault(); e.stopPropagation(); zu(null); return; }
+      const m = /^Digit(\d)$/.exec(e.code); if (m) { e.preventDefault(); e.stopPropagation(); const i = (+m[1] + 9) % 10; if (liste[i]) zu(liste[i].wert); }
+    };
+    document.addEventListener('keydown', taste, true);
+    k.querySelectorAll('[data-i]').forEach((b) => {
+      const x = liste[+b.dataset.i];
+      b.onmouseenter = b.onfocus = () => { mitte.textContent = x.name; };
+      b.onclick = () => zu(x.wert);
+    });
+    k.addEventListener('click', (e) => { if (e.target === k || e.target.classList.contains('ly-emo-rad')) zu(null); });
   });
 
   // Atmen gegen Aufregung: Kreis wird groß (einatmen, 4 s) und klein (ausatmen, 4 s), drei Mal. Nichts kann schiefgehen.
