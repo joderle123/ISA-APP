@@ -1217,7 +1217,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       const wahl = await ui.ende({ ...bilanz(), kap, brief: bf ? { von: LEUTE[bf].name, farbe: LEUTE[bf].farbe, text: nachricht(bf, kap) } : null, ueberschrift: ({ 1: 'Deine ersten Tage', 2: 'Die zweite Woche', 3: 'Die Sportfest-Woche', 4: 'Die Test-Woche', 5: 'Die Fake-Woche', 6: 'Die Woche der Grenzen' , 7: 'Die Woche danach', 8: 'Die KI-Woche' , 9: 'Die Akku-Woche' , 10: 'Das Sommerfest' })[kap] || KAPITEL[kap],
         weiter: weiterIdx >= 0 ? 'Weiter: Kapitel ' + (kap + 1) + ' „' + KAPITEL[kap + 1] + '“' : '',
         // Haken fürs nächste Kapitel (kein Spoiler, nur die Frage)
-        frage: REFLEXION[kap] || '', vorschau: weiterIdx >= 0 ? ({ 1: 'Montag. Eine Liste. Und Noah ist Platz 1.', 2: 'Sportfest. #3 kommt. Und es trifft jemanden, den du magst.',
+        frage: (() => { const sit = Object.entries(SZENEN).find(([id]) => S.merke['sitKap_' + id] === kap && S.merke['sit_' + id]); return sit ? (REFLEXION[kap] ? REFLEXION[kap] + ' · ' : '') + 'Diese Woche: ' + sit[1].titel[1] + '. ' + sit[1].frage : REFLEXION[kap] || ''; })(), vorschau: weiterIdx >= 0 ? ({ 1: 'Montag. Eine Liste. Und Noah ist Platz 1.', 2: 'Sportfest. #3 kommt. Und es trifft jemanden, den du magst.',
           3: 'Ein Test. Ein Fenster. Und ein Foto, das es nicht geben dürfte.', 4: 'Alle denken, du bist @annexe.cam. Wie beweist man das Gegenteil?',
           5: 'Mila hat einen Beweis. Er wird dir nicht gefallen.', 6: 'Luca will reden. Ehrlich, sagt er. Glaubst du ihm?',
           7: 'Ein Video von Mme Tidderich. 300 Herzen. Es ist nicht echt.', 8: 'Dario kann nicht schlafen. Er will dir etwas sagen.',

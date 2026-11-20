@@ -98,5 +98,5 @@ test('Zeitfenster: verpasste Situationen sind vorbei, die Clique an der Lichtung
   assert.equal(sitSichtbar('dex', 9, {}, true, 0), true, 'Dex hängt weiter ab');
   assert.equal(sitSichtbar('rafa', 9, {}, true, 0), false, 'Rafa ohne Szene nach dem Fenster weg');
   assert.equal(sitSichtbar('rafa', 9, { sit_kiste: 'gefragt' }, true, 0), true, 'nach der Szene bleibt Rafa');
-  for (const [id, sz] of Object.entries(SZENEN)) assert.ok(sz.bis >= sz.ab && sz.bis <= 10, id);
+  for (const [id, sz] of Object.entries(SZENEN)) { assert.ok(sz.bis >= sz.ab && sz.bis <= 10, id); assert.ok(sz.frage && sz.frage.endsWith('?'), id + ' ohne Reflexionsfrage'); }
 });
