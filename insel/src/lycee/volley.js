@@ -21,9 +21,9 @@ export function createVolleyball({ scene, steuerung, input, ui, ton = () => {}, 
   const cv = document.createElement('canvas'); cv.width = 128; cv.height = 64; const g = cv.getContext('2d');
   ['#ffd23f', '#2f6db0', '#f7f5ee'].forEach((c, i) => { g.fillStyle = c; g.fillRect(0, i * 22, 128, 22); });
   const ballTex = new THREE.CanvasTexture(cv); ballTex.colorSpace = THREE.SRGBColorSpace;
-  const ball = new THREE.Mesh(new THREE.SphereGeometry(R, 16, 12), new THREE.MeshLambertMaterial({ map: ballTex })); ball.visible = false; scene.add(ball);
+  const ball = new THREE.Mesh(new THREE.SphereGeometry(R, 16, 12), new THREE.MeshLambertMaterial({ map: ballTex })); ball.visible = false; ball.name = 'volleyball'; scene.add(ball);
   const ring = new THREE.Mesh(new THREE.RingGeometry(0.55, 0.7, 28), new THREE.MeshBasicMaterial({ color: '#ffd23f', transparent: true, opacity: 0.8, depthWrite: false, side: THREE.DoubleSide }));
-  ring.rotation.x = -Math.PI / 2; ring.visible = false; scene.add(ring);
+  ring.rotation.x = -Math.PI / 2; ring.visible = false; ring.name = 'volleyring'; scene.add(ring);
 
   let lauf = null;
   const flug = (von, nach, T, H) => ({ von: von.clone(), nach: nach.clone(), T, H, t: 0 });
