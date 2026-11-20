@@ -79,7 +79,7 @@ export const LEKTIONEN = [
       woerter: [['le ménage', 'der Hausputz'], ['passer l’aspirateur', 'staubsaugen'], ['se réveiller', 'aufwachen'], ['se mettre en colère', 'wütend werden'], ['Ça suffit !', 'Jetzt reicht’s!'], ['juste', 'gerecht'], ['réfléchir', 'nachdenken'], ['le planning', 'der Plan']],
       aufgaben: [
         { art: 'rf', auftrag: 'Vrai ou faux ?', stufe: 1, spalten: ['vrai', 'faux'], saetze: [['Papa est en train de faire la vaisselle.', false], ['Lina vient de se réveiller.', true], ['Lio part au foot.', true], ['À la fin, Lina propose un planning.', true], ['Le soir, Papa est encore en colère.', false]] },
-        { art: 'tabelle', auftrag: 'Comment sont les personnages ? Coche.', stufe: 2, kopf: ['', 'Papa', 'Lina', 'Lio'], breiten: [46, 18, 18, 18], zeilen: [['travailleur / travailleuse', '[x]', '', ''], ['fatigué(e) le matin', '', '[x]', ''], ['pressé(e)', '', '', '[x]'], ['en colère', '[x]', '[x]', ''], ['prêt(e) à s’excuser', '', '[x]', ''], ['content(e) à la fin', '[x]', '[x]', '[x]']] },
+        { art: 'tabelle', auftrag: 'Comment sont les personnages ? Coche.', stufe: 2, kopf: ['', 'Papa', 'Lina', 'Lio'], breiten: [46, 18, 18, 18], zeilen: [['fait tout le ménage seul(e)', '[x]', '', ''], ['fatigué(e) le matin', '', '[x]', ''], ['pressé(e)', '', '', '[x]'], ['en colère', '[x]', '[x]', ''], ['prêt(e) à s’excuser', '', '[x]', ''], ['content(e) à la fin', '[x]', '[x]', '[x]']] },
       ],
     },
     hoeren: {
@@ -127,7 +127,7 @@ export const LEKTIONEN = [
   },
   // ================================================================ 2
   {
-    thema: 'Le théâtre · les mouvements du corps · sans + infinitif · les adverbes en -ment', titel: 'Le portable de la discorde', untertitel: 'Une scène de théâtre, une répétition avec le metteur en scène : tu comprends une petite pièce et tu la joues avec des gestes.',
+    thema: 'Le théâtre · les mouvements du corps · sans + infinitif · les adverbes en -ment', titel: 'Le portable de la discorde', untertitel: 'Une scène de théâtre, une répétition avec la metteuse en scène : tu comprends une petite pièce et tu la joues avec des gestes.',
     ziel: { fr: 'Je lis une courte scène de théâtre et je la joue avec des gestes.', de: 'Ich lese eine kurze Theaterszene und spiele sie mit Gesten.' },
     bild: ['oma:besorgt:stehen', 'chloe:traurig:handy'],
     start: {
@@ -308,8 +308,8 @@ export const LEKTIONEN = [
       quelle: 'Journal de l’école · Semaine de la santé (personne imaginaire)', titel: 'Manger équilibré ? C’est facile !',
       absaetze: [
         'Cette semaine, c’est la Semaine de la santé à l’école. Mme Moreau, diététicienne, explique la **pyramide alimentaire** aux élèves de la 7P2.',
-        '**Tout en bas** de la pyramide, il y a **l’eau**. C’est la boisson la plus importante. Il faut **en** boire environ un litre et demi par jour, surtout quand on fait du sport.',
-        '**Juste au-dessus**, on trouve **les fruits et les légumes**. Ils donnent des vitamines. On peut **en** manger cinq portions par jour : une pomme à la récré, des carottes à midi… **Au milieu**, il y a **le pain, les pâtes, le riz** et les pommes de terre. Ils donnent de l’énergie, alors on **en** mange à chaque repas.',
+        '**Tout en bas** de la pyramide, il y a **l’eau**. C’est la boisson la plus importante. Il faut **en** boire environ un litre et demi par jour, et encore plus quand on fait du sport.',
+        '**Juste au-dessus**, on trouve **les fruits et les légumes**. Ils donnent des vitamines. Il faut **en** manger au moins cinq portions par jour : une pomme à la récré, des carottes à midi… **Au milieu**, il y a **le pain, les pâtes, le riz** et les pommes de terre. Ils donnent de l’énergie, alors on **en** mange à chaque repas.',
         '**Plus haut**, il y a **les produits laitiers** : le lait, le yaourt, le fromage. Ils sont bons pour les os. **Encore plus haut**, on trouve **la viande, le poisson, les œufs** – ou le tofu et les lentilles. On **en** mange une portion par jour.',
         'Et **tout en haut** ? **Les sucreries et les graisses** : les bonbons, les chips, le soda… « Ce n’est pas interdit ! dit Mme Moreau. Un petit plaisir, c’est bon pour le moral. Mais on **en** mange un peu, pas tous les jours. »',
         'Son dernier conseil : « Mangez lentement, avec des copains, et sans écran. Manger, c’est aussi un moment de plaisir ! »',
@@ -334,7 +334,7 @@ export const LEKTIONEN = [
         ['Finn', 'Il y a encore de la mousse au chocolat ?'],
         ['Cuisinier', 'Non, désolé, il n’y en a plus. Il reste des pommes et des yaourts.'],
         ['Finn', 'Bon… Je prends un yaourt.'],
-        ['Amira', 'Et moi, une pomme. Tu sais, Finn, la diététicienne a dit qu’on peut manger cinq fruits et légumes par jour !'],
+        ['Amira', 'Et moi, une pomme. Tu sais, Finn, la diététicienne a dit qu’il faut manger au moins cinq fruits et légumes par jour !'],
         ['Finn', 'Je sais, je sais… J’en mange ce soir, promis !'],
       ],
       vor: [{ art: 'mc', auftrag: 'Au self, on … Coche.', stufe: 1, fragen: [{ f: '', o: ['prend un plateau et choisit son repas', 'commande au téléphone'], r: 0 }] }],
@@ -467,11 +467,11 @@ export const LEKTIONEN = [
         { icon: 'stretching', text: 'Plie **doucement** les jambes, le dos bien droit, **sans** lever les talons. Tends les bras devant toi. Dix fois.' },
         { icon: 'droplet', text: 'Bravo, tu **viens de** finir ton échauffement ! Bois un peu d’eau. Maintenant, tu peux **te mettre à** jouer.' },
       ],
-      danach: ['**Pourquoi s’échauffer ?** Le cœur se met à battre plus vite et les muscles deviennent chauds. Comme ça, on se blesse moins.', '**Attention :** si tu as mal, arrête-toi et parle à ton prof.'],
+      danach: ['**Pourquoi s’échauffer ?** Le cœur se met à battre plus vite et les muscles se réchauffent. Comme ça, on risque moins de se blesser.', '**Attention :** si tu as mal, arrête-toi et parle à ton prof.'],
       woerter: [['l’échauffement', 'das Aufwärmen'], ['sur place', 'auf der Stelle'], ['respirer', 'atmen'], ['profondément', 'tief'], ['le genou', 'das Knie'], ['le talon', 'die Ferse'], ['plier', 'beugen'], ['tendre', 'strecken'], ['battre', 'schlagen'], ['se blesser', 'sich verletzen']],
       aufgaben: [
         { art: 'rf', auftrag: 'Vrai ou faux ?', stufe: 1, spalten: ['vrai', 'faux'], saetze: [['On commence par courir très vite.', false], ['On fait des cercles avec les bras.', true], ['Quand on plie les jambes, le dos reste droit.', true], ['L’échauffement dure une heure.', false], ['Si on a mal, on continue.', false]] },
-        { art: 'fragen', auftrag: 'Réponds.', stufe: 2, fragen: [{ f: 'Pourquoi est-ce qu’on s’échauffe ?', l: 'Les muscles deviennent chauds, comme ça on se blesse moins.' }, { f: 'Qu’est-ce qu’on fait à la fin de l’échauffement ?', l: 'On boit un peu d’eau.' }] },
+        { art: 'fragen', auftrag: 'Réponds.', stufe: 2, fragen: [{ f: 'Pourquoi est-ce qu’on s’échauffe ?', l: 'Les muscles se réchauffent, comme ça on risque moins de se blesser.' }, { f: 'Qu’est-ce qu’on fait à la fin de l’échauffement ?', l: 'On boit un peu d’eau.' }] },
       ],
     },
     hoeren: {
@@ -479,7 +479,7 @@ export const LEKTIONEN = [
       situation: 'La classe vient de faire l’échauffement. Mme Sabli, la prof de sport, explique un nouvel exercice : la planche.',
       bild: ['lehrerin:froh:erklaeren', 'noah:verwirrt:stehen'], sprecher: { 'Mme Sabli': 'w1', Noah: 'm3', Léa: 'w2' },
       text: [
-        ['Mme Sabli', 'Bon, vous venez de faire l’échauffement. Maintenant, on se met à un nouvel exercice : la planche. Écoutez bien.'],
+        ['Mme Sabli', 'Bon, vous venez de faire l’échauffement. Maintenant, on passe à un nouvel exercice : la planche. Écoutez bien.'],
         ['Mme Sabli', 'Allongez-vous sur le ventre. Posez les avant-bras par terre, sous les épaules. Levez le corps en poussant sur les pieds. Le dos reste bien droit, comme une planche ! Restez comme ça pendant vingt secondes, en respirant normalement. C’est clair ?'],
         ['Noah', 'Euh… pas vraiment. On pose les mains ou les bras ?'],
         ['Mme Sabli', 'Les avant-bras, Noah. De la main jusqu’au coude. Tu vois ce que je veux dire ?'],
@@ -503,12 +503,12 @@ export const LEKTIONEN = [
         [{ titel: 'Vérifier si l’autre a compris', punkte: ['**C’est clair ?** · **Tu as compris ?**', '**Tu vois ce que je veux dire ?**', '**Tu peux répéter ce que je viens de dire ?**', '**Montre-moi !**', 'Réponses : **Oui, c’est clair.** · **Pas vraiment. Tu peux répéter ?**'] },
          { titel: 'Décrire un mouvement', punkte: ['impératif : **plie** · **tends** · **lève** · **pose** · **allonge-toi**', 'adverbe : **lentement** · **doucement** · **calmement** · **profondément**', 'gérondif : **en respirant** · **en levant** les genoux', 'sans + infinitif : **sans lever** les talons'] }],
         [{ art: 'tipp', titel: 'Révision : les périphrases', text: 'Tu **viens de** finir. · Tu **es en train de** réussir. · On **se met à** jouer. · Le match **est sur le point de** commencer.' },
-         { art: 'achtung', titel: 'Bouger, c’est bon pour la santé', text: 'On conseille aux jeunes de **bouger environ une heure par jour** : marcher, faire du vélo, danser, jouer… Tout compte !' }],
+         { art: 'achtung', titel: 'Bouger, c’est bon pour la santé', text: 'On conseille aux jeunes de **bouger au moins une heure par jour** : marcher, faire du vélo, danser, jouer… Tout compte !' }],
       ],
     },
     ueben: [
       { art: 'luecken', auftrag: 'Complète avec l’adverbe.', stufe: 1, woerter: ['lentement', 'profondément', 'doucement', 'rapidement'], saetze: ['Respire [profondément] par le nez.', 'Au début, cours [lentement].', 'Plie [doucement] les genoux.', 'À la fin, cours [rapidement] jusqu’au mur.'] },
-      { art: 'luecken', auftrag: 'Complète avec venir de, être en train de ou se mettre à.', stufe: 2, saetze: ['Le match finit à 16 h. Il est 16 h 01 : le match [vient de] finir.', 'Chut ! Les joueurs [sont en train de] écouter le coach.', 'Tout à coup, le public [se met à] chanter.'] },
+      { art: 'luecken', auftrag: 'Complète avec venir de, être en train de ou se mettre à.', stufe: 2, saetze: ['Le match finit à 16 h. Il est 16 h 01 : le match [vient de] finir.', 'Chut ! Les joueurs [sont en train de] parler avec le coach.', 'Tout à coup, le public [se met à] chanter.'] },
     ],
     schreiben: [
       { art: 'schreiben', auftrag: 'Écris une fiche pour un exercice de sport ou de détente. Utilise l’impératif, des adverbes et le gérondif.', stufe: 2,
@@ -538,7 +538,7 @@ export const LEKTIONEN = [
         { stil: 'nachricht', stimme: 'w3', kopf: 'Avis de Lou · 4 étoiles sur 5', text: ['J’ai acheté le modèle C **parce qu’**il est chaud et imperméable. **Grâce à** la capuche, je n’ai jamais froid aux oreilles. **Par contre**, il est un peu lourd.'] },
         { stil: 'nachricht', stimme: 'm1', kopf: 'Avis de Max · 2 étoiles sur 5', text: ['J’ai pris le modèle A **car** il n’était pas cher. **Pourtant**, je le regrette : à la montagne, j’avais froid, **donc** j’ai dû mettre deux pulls !'] },
       ],
-      woerter: [['imperméable', 'wasserdicht'], ['léger / légère', 'leicht'], ['la doudoune', 'die Daunenjacke'], ['la fermeture éclair', 'der Reißverschluss'], ['la poche', 'die Tasche'], ['la garantie', 'die Garantie'], ['en soldes', 'im Ausverkauf'], ['l’avis', 'die Bewertung'], ['lourd(e)', 'schwer'], ['regretter', 'bereuen']],
+      woerter: [['imperméable', 'wasserdicht'], ['léger / légère', 'leicht'], ['la doudoune', 'die Daunenjacke'], ['la fermeture éclair', 'der Reißverschluss'], ['la poche', 'die Tasche'], ['la garantie', 'die Garantie'], ['en soldes', 'reduziert, im Schlussverkauf'], ['l’avis', 'die Bewertung'], ['lourd(e)', 'schwer'], ['regretter', 'bereuen']],
       aufgaben: [
         { art: 'tabelle', auftrag: 'Compare les vestes.', stufe: 1, kopf: ['', 'en quoi ?', 'chaude ?', 'imperméable ?', 'prix'], breiten: [16, 30, 16, 20, 18], zeilen: [['A', '[en nylon]', '[non]', '[oui]', '[35 €]'], ['B', '[en polyester]', '[oui]', '[non]', '[59 €]'], ['C', '[en tissu technique]', '[oui]', '[oui]', '[65 €]']] },
         { art: 'mc', auftrag: 'Sami a 70 € (cadeau d’anniversaire). Il veut une veste chaude et imperméable pour la classe de neige. Quel modèle ?', stufe: 2, fragen: [{ f: '', o: ['Modèle A', 'Modèle B', 'Modèle C'], r: 2 }] },
@@ -555,7 +555,7 @@ export const LEKTIONEN = [
         ['Sami', 'Elles coûtent combien ?'],
         ['Vendeuse', '85 €.'],
         ['Sami', 'Ah, c’est trop cher pour moi. Vous en avez des moins chères ?'],
-        ['Vendeuse', 'Oui, ce modèle en tissu, à 45 €. Il est moins solide. Pourtant, il est imperméable et très léger.'],
+        ['Vendeuse', 'Oui, ce modèle en tissu, à 45 €. Il est moins solide. Par contre, il est imperméable et très léger.'],
         ['Sami', 'Je peux les essayer ?'],
         ['Vendeuse', 'Bien sûr. Vous faites quelle pointure ?'],
         ['Sami', 'Du 41.'],
@@ -585,12 +585,12 @@ export const LEKTIONEN = [
     },
     ueben: [
       { art: 'luecken', auftrag: 'Complète avec à, de ou en.', stufe: 1, saetze: ['Un pull [en] laine.', 'Une veste [à] capuche.', 'Des chaussures [de] sport.', 'Un sac [en] cuir.', 'Une robe [à] manches courtes.', 'Des bottes [de] pluie.'] },
-      { art: 'luecken', auftrag: 'Complète avec parce que, donc, pour, pourtant ou grâce à.', stufe: 2, woerter: ['parce que', 'donc', 'pour', 'pourtant', 'grâce à'], saetze: ['Je prends le modèle C [parce que] il est chaud.', 'La veste A est légère. [Pourtant], elle n’est pas chaude.', 'Il pleut, [donc] je mets ma veste de pluie.', 'J’achète des baskets [pour] courir.', '[Grâce à] la garantie, je peux échanger la veste.'] },
+      { art: 'luecken', auftrag: 'Complète avec parce que, donc, pour, pourtant ou grâce à.', stufe: 2, woerter: ['parce que', 'donc', 'pour', 'pourtant', 'grâce à'], saetze: ['Je prends le modèle C [parce que] cette veste est chaude.', 'Max a une veste neuve. [Pourtant], il avait froid à la montagne.', 'Il pleut, [donc] je mets ma veste de pluie.', 'J’achète des baskets [pour] courir.', '[Grâce à] la garantie, je peux échanger la veste.'] },
     ],
     schreiben: [
       { art: 'schreiben', auftrag: 'Un ami / Une amie hésite : baskets A (en cuir, 70 €, très solides) ou baskets B (en tissu, 40 €, légères, moins solides) ? Écris-lui un message pour le / la conseiller.', stufe: 3,
         anfaenge: ['Salut …, à mon avis, tu devrais prendre …', '… parce que …', 'Par contre, …', 'Donc …', 'Pour …'], zeilen: 10,
-        beispiel: 'Salut Mia, à mon avis, tu devrais prendre les baskets B, parce qu’elles sont légères et pas chères. Par contre, elles sont moins solides. Tu fais beaucoup de sport, donc elles vont peut-être s’abîmer vite. Pourtant, avec 30 € de moins, tu peux acheter un ballon pour jouer !' },
+        beispiel: 'Salut Mia, à mon avis, tu devrais prendre les baskets B, parce qu’elles sont légères et pas chères. Par contre, elles sont moins solides. Tu fais beaucoup de sport, donc elles vont peut-être s’abîmer vite. Mais avec les 30 € économisés, tu peux t’acheter un ballon pour jouer !' },
     ],
     check: ['Je compare des produits.', 'Je comprends des avis de clients.', 'J’achète des chaussures dans un magasin.', 'Je décris un vêtement avec à, de, en.', 'J’exprime la cause, la conséquence, le but et l’opposition.'],
   },
@@ -607,7 +607,7 @@ export const LEKTIONEN = [
     },
     lesen: {
       was: 'Un programme de spectacles', art: 'dokumente',
-      quelle: 'Programme du centre culturel (spectacles imaginaires)', titel: 'Ce week-end au centre culturel',
+      quelle: 'Agenda culturel du journal local (spectacles imaginaires)', titel: 'Que faire ce week-end ?',
       dokumente: [
         { stil: 'karte', stimme: 'w1', kopf: '**Cinéma** · « Cap sur l’île aux Brumes » · aventure · à partir de 12 ans · samedi 20 h', text: ['Trois amis partent en bateau pour retrouver un grand-père disparu. Mais une tempête arrive… Beaucoup de suspense et des images magnifiques.'] },
         { stil: 'karte', stimme: 'w1', kopf: '**Cinéma** · « Un robot à la cave » · comédie · tous publics · dimanche 15 h', text: ['Léo, 12 ans, trouve un vieux robot dans la cave. Le robot veut aider la famille… mais il fait tout de travers ! Très drôle.'] },
@@ -632,9 +632,9 @@ export const LEKTIONEN = [
         ['Léa', 'Au début, trois amis trouvent une vieille carte dans un grenier. Sur la carte, il y a une île mystérieuse. Ensuite, ils partent en bateau pour chercher le grand-père de Tim, qui a disparu là-bas. Mais en pleine mer, une tempête se met à souffler…'],
         ['Noah', 'Et à la fin ? Ils le retrouvent ?'],
         ['Léa', 'Je ne te dis pas la fin ! Mais c’était génial. Ce qui m’a plu, c’est le suspense. Et les images de la mer sont magnifiques.'],
-        ['Noah', 'Moi aussi, je l’ai vu, avec mon cousin. Mais je ne suis pas d’accord avec toi : je trouve que c’était trop long.'],
+        ['Noah', 'Moi aussi, je l’ai vu, avec mon cousin. Mais je ne suis pas d’accord avec toi : je trouve que c’était trop long. Le début est vraiment lent.'],
         ['Léa', 'Trop long ? Tu exagères ! Par contre, tu as raison : le début est un peu lent.'],
-        ['Noah', 'Bon. Dimanche, tu viens voir « Un robot à la cave » ? Il paraît que c’est très drôle.'],
+        ['Noah', 'Bon. « Un robot à la cave » passe encore dimanche prochain. Tu viens ? Il paraît que c’est très drôle.'],
         ['Léa', 'D’accord, bonne idée !'],
       ],
       vor: [{ art: 'mc', auftrag: 'Raconter la fin d’un film à quelqu’un qui ne l’a pas vu, c’est … Coche.', stufe: 1, fragen: [{ f: '', o: ['gentil', 'pas très sympa : on dit « un spoiler »'], r: 1 }] }],
@@ -656,7 +656,7 @@ export const LEKTIONEN = [
       ],
     },
     ueben: [
-      { art: 'ordnen', auftrag: 'Un conte connu : mets le résumé du « Petit Chaperon rouge » dans l’ordre.', stufe: 1, teile: ['Au début, une petite fille apporte un gâteau à sa grand-mère.', 'Dans la forêt, elle rencontre un loup.', 'Ensuite, le loup court chez la grand-mère et la mange.', 'Quand la petite fille arrive, le loup la mange aussi.', 'À la fin, un chasseur sauve la fille et la grand-mère.'], ordnung: [2, 4, 0, 3, 1] },
+      { art: 'ordnen', auftrag: 'Un conte connu : mets le résumé du « Petit Chaperon rouge » (version des frères Grimm) dans l’ordre.', stufe: 1, teile: ['Au début, une petite fille apporte un gâteau à sa grand-mère.', 'Dans la forêt, elle rencontre un loup.', 'Ensuite, le loup court chez la grand-mère et la mange.', 'Quand la petite fille arrive, le loup la mange aussi.', 'À la fin, un chasseur sauve la fille et la grand-mère.'], ordnung: [2, 4, 0, 3, 1] },
       { art: 'luecken', auftrag: 'Complète l’avis.', stufe: 2, woerter: ['Ça parle', 'Au début', 'Ce qui m’a plu', 'À mon avis', 'Je le conseille'], saetze: ['[Ça parle] d’un garçon qui trouve un robot.', '[Au début], le robot fait tout de travers.', '[Ce qui m’a plu], c’est l’humour.', '[À mon avis], la fin est un peu triste.', '[Je le conseille] aux familles.'] },
     ],
     schreiben: [

@@ -41,7 +41,7 @@ export const MODUL = {
     '(\\d+) ?€': '\\1 euros', '\\b60/60\\b': 'soixante, soixante', '(\\d+) ?%': '\\1 pour cent', '\\bOMS\\b': 'O M S',
     '\\b1er\\b': 'premier', '\\b2e\\b': 'deuxième', '\\b3e\\b': 'troisième', '\\b4e\\b': 'quatrième',
     '\\bsam\\.': 'samedi', '\\bmer\\.': 'mercredi', '\\blun\\.': 'lundi', 'Répét\\.': 'Répétitions', '\\bEnv\\.': 'Environ', '\\bRdv\\b': 'Rendez-vous',
-    'lesondes@exemple\\.lu': 'les ondes, arobase, exemple, point, lu', '\\b[Mm]oien\\b': 'moïenne', '\\b116 111\\b': 'un un six, un un un',
+    'rockados@exemple\\.lu': 'rock ados, arobase, exemple, point, lu', '\\b[Mm]oien\\b': 'moïenne', '\\b116 111\\b': 'un un six, un un un',
   },
 }
 
@@ -52,7 +52,7 @@ export const LEKTIONEN = [
     ziel: { fr: 'Je donne mon opinion sur la musique et je demande l’avis des autres.', de: 'Ich sage meine Meinung zur Musik und frage andere nach ihrer Meinung.' },
     bild: ['lina:froh:handy', 'ben:froh:verschraenkt'],
     start: {
-      was: 'Les styles de musique',
+      was: 'Les mots de la musique',
       aufgaben: [
         { art: 'zuordnen', auftrag: 'Relie.', stufe: 1, links: ['la batterie', 'les paroles', 'le refrain', 'la voix', 'le rythme', 'le morceau'], rechts: ['das Schlagzeug', 'der Liedtext', 'der Refrain', 'die Stimme', 'der Rhythmus', 'das Musikstück'], ordnung: [3, 0, 5, 2, 4, 1] },
       ],
@@ -66,7 +66,7 @@ export const LEKTIONEN = [
         { name: 'Mia.chante', bild: 'mia:froh:tanzen', stimme: 'w3', text: 'Moi, j’écoute **un peu de tout** : de la pop, de l’électro, et même de la musique classique. **Beaucoup de gens** disent que le classique, c’est ennuyeux. À mon avis, c’est faux. Des goûts et des couleurs, on ne discute pas !' },
         { name: 'Yusuf_beats', bild: 'yusuf:froh:laptop', stimme: 'm1', text: 'Moi, je fais de la musique sur l’ordinateur. **Les gens** pensent que c’est facile, mais **on** travaille des heures pour un seul morceau ! **Qui veut écouter** mon nouveau morceau ? Dites-moi franchement ce que vous en pensez.' },
       ],
-      woerter: [['le pseudo', 'der Benutzername'], ['les paroles', 'der Liedtext'], ['répétitif / répétitive', 'eintönig'], ['nulle part ailleurs', 'nirgendwo sonst'], ['ennuyeux / ennuyeuse', 'langweilig'], ['Des goûts et des couleurs, on ne discute pas.', 'Über Geschmack lässt sich nicht streiten.'], ['le morceau', 'das Musikstück'], ['franchement', 'ehrlich']],
+      woerter: [['le pseudo', 'der Benutzername'], ['les paroles', 'der Liedtext'], ['répétitif / répétitive', 'sich wiederholend, eintönig'], ['nulle part ailleurs', 'nirgendwo sonst'], ['ennuyeux / ennuyeuse', 'langweilig'], ['Des goûts et des couleurs, on ne discute pas.', 'Über Geschmack lässt sich nicht streiten.'], ['le morceau', 'das Musikstück'], ['franchement', 'ehrlich']],
       aufgaben: [
         { art: 'tabelle', auftrag: 'Complète.', stufe: 1, kopf: ['pseudo', 'style préféré', 'pourquoi ?'], breiten: [22, 26, 52], zeilen: [['Lina_rap', '[le rap]', '[les paroles : la vie des gens]'], ['Ben_rock', '[le rock]', '[la guitare, la batterie, l’énergie]'], ['Mia.chante', '[un peu de tout]', '[pop, électro, classique]'], ['Yusuf_beats', '[sa propre musique]', '[il fait de la musique sur l’ordinateur]']] },
         { art: 'mc', auftrag: 'Qui demande l’avis des autres ? Coche.', stufe: 2, fragen: [{ f: '', o: ['Lina', 'Ben', 'Mia', 'Yusuf'], r: [0, 3] }] },
@@ -130,7 +130,7 @@ export const LEKTIONEN = [
       was: 'Les paroles d’une chanson', art: 'gedicht', stimme: 'w3',
       quelle: 'Paroles de la chanson « Quand la ville dort » · Nour (chanteuse imaginaire)', titel: 'Quand la ville dort',
       strophen: [
-        ['Le soir, quand la ville dort,', 'je mets mon casque, je sors.', 'J’ai **tellement de** choses dans la tête', '**que** mon cœur fait la tempête.'],
+        ['Le soir, quand la ville dort,', 'je mets mon casque, je sors.', 'J’ai **tellement de** choses dans la tête', '**que** mon cœur est en tempête.'],
         { refrain: true, zeilen: ['On n’est jamais tout seuls', 'quand on chante à plusieurs.', 'On allume nos portables', 'et la nuit devient meilleure.'] },
         ['Les gens passent, pressés, gris,', 'personne ne voit mes soucis.', 'Mais ma musique est **si** forte', '**qu’**elle ouvre toutes les portes.'],
         ['Si tu es triste ce soir,', 'regarde par la fenêtre :', 'il y a **tellement d’**étoiles', '**que** la nuit n’est plus si noire.'],
@@ -157,12 +157,12 @@ export const LEKTIONEN = [
         ['Nour', 'Oui ! En concert, le public allume les portables pendant le refrain. C’est tellement beau que j’ai parfois les larmes aux yeux.'],
         ['Animatrice', 'Qu’est-ce que vous conseillez aux jeunes qui se sentent seuls ?'],
         ['Nour', 'De parler à quelqu’un : un ami, un prof, un adulte de confiance. Et si c’est difficile, on peut appeler le 116 111. C’est gratuit et anonyme.'],
-        ['Animatrice', 'Merci, Nour ! Et pour nos auditeurs : Nour est en concert le samedi 14 mars, à 20 heures, au centre culturel. Les billets coûtent 15 euros, et 10 euros pour les moins de 18 ans.'],
+        ['Animatrice', 'Merci, Nour ! Et pour nos auditeurs : Nour est en concert le samedi 13 mars, à 20 heures, au centre culturel. Les billets coûtent 15 euros, et 10 euros pour les moins de 18 ans.'],
       ],
       vor: [{ art: 'mc', auftrag: 'Dans une interview, il y a … Coche.', stufe: 1, fragen: [{ f: '', o: ['des questions et des réponses', 'seulement de la musique'], r: 0 }] }],
       beim: [
         { art: 'fragen', auftrag: 'Écoute et réponds.', stufe: 2, fragen: [{ f: 'Pourquoi Nour a-t-elle écrit cette chanson ?', l: 'À 14 ans, elle se sentait souvent seule ; elle veut dire aux jeunes qu’ils ne sont pas seuls.' }, { f: 'Qu’est-ce qu’elle conseille aux jeunes qui se sentent seuls ?', l: 'Parler à quelqu’un (ami, prof, adulte de confiance) ou appeler le 116 111.' }] },
-        { art: 'tabelle', auftrag: 'Le concert : complète.', stufe: 1, kopf: ['', ''], breiten: [36, 64], zeilen: [['date', '[samedi 14 mars]'], ['heure', '[20 heures]'], ['lieu', '[au centre culturel]'], ['prix (moins de 18 ans)', '[10 euros]']] },
+        { art: 'tabelle', auftrag: 'Le concert : complète.', stufe: 1, kopf: ['', ''], breiten: [36, 64], zeilen: [['date', '[samedi 13 mars]'], ['heure', '[20 heures]'], ['lieu', '[au centre culturel]'], ['prix (moins de 18 ans)', '[10 euros]']] },
       ],
       nach: [{ art: 'sprechen', auftrag: 'Fais écouter une chanson que tu aimes à ton groupe (ou présente-la). Dis ce qui te plaît et ce que tu ressens.', stufe: 3, karten: [
         { titel: 'Présenter', text: ['C’est une chanson de …', 'Elle parle de …', 'Le refrain dit : …'] },
@@ -178,8 +178,8 @@ export const LEKTIONEN = [
       ],
     },
     ueben: [
-      { art: 'luecken', auftrag: 'Complète avec si, tellement ou tellement de.', stufe: 1, saetze: ['Il y a [tellement de] monde que je ne vois pas la scène.', 'La chanson est [si] triste que j’ai les larmes aux yeux.', 'J’aime [tellement] ce groupe !', 'Il a [tellement de] chansons que je ne les connais pas toutes.'] },
-      { art: 'abschreiben', auftrag: 'Fais une seule phrase avec si … que ou tellement de … que.', stufe: 2, kopf: ['deux phrases', 'une phrase'], saetze: [['Le concert est beau. J’ai pleuré.', 'Le concert est si beau que j’ai pleuré.'], ['Il y a beaucoup de bruit. Je n’entends rien.', 'Il y a tellement de bruit que je n’entends rien.'], ['Le rythme est rapide. Tout le monde danse.', 'Le rythme est si rapide que tout le monde danse.']] },
+      { art: 'luecken', auftrag: 'Complète avec si, tellement ou tellement de.', stufe: 1, saetze: ['Il y a [tellement de] monde que je ne vois pas la scène.', 'La chanson est [si / tellement] triste que j’ai les larmes aux yeux.', 'J’aime [tellement] ce groupe !', 'Il a [tellement de] chansons que je ne les connais pas toutes.'] },
+      { art: 'abschreiben', auftrag: 'Fais une seule phrase avec si … que ou tellement de … que.', stufe: 2, kopf: ['deux phrases', 'une phrase'], saetze: [['Le concert était beau. J’ai pleuré.', 'Le concert était si beau que j’ai pleuré.'], ['Il y a beaucoup de bruit. Je n’entends rien.', 'Il y a tellement de bruit que je n’entends rien.'], ['Le rythme est rapide. Tout le monde danse.', 'Le rythme est si rapide que tout le monde danse.']] },
     ],
     schreiben: [
       { art: 'schreiben', auftrag: 'Présente une chanson que tu aimes (ou une chanson imaginaire) pour la page « Coup de cœur » du journal de l’école.', stufe: 2,
@@ -208,11 +208,11 @@ export const LEKTIONEN = [
         ['Certains disent : « Choisis ton camp ! »', 'Moi, je dis : « Pourquoi choisir ? »', 'Un arbre a besoin de racines', '**et** de branches pour grandir.'],
         ['Je suis un pont, pas un mur.', 'Viens, traverse, n’aie pas peur :', 'de l’autre côté, il y a', 'les mêmes rêves que les tiens.'],
       ],
-      woerter: [['le pont', 'die Brücke'], ['la rive', 'das Ufer'], ['« moien »', '« hallo » (luxemburgisch)'], ['le créole', 'das Kreolisch'], ['la racine', 'die Wurzel'], ['traverser', 'überqueren'], ['choisir son camp', 'sich für eine Seite entscheiden'], ['la branche', 'der Ast'], ['le mur', 'die Mauer']],
+      woerter: [['le pont', 'die Brücke'], ['la rive', 'das Ufer'], ['« moien »', '« hallo » (luxemburgisch)'], ['le créole', 'das Kreolische'], ['la racine', 'die Wurzel'], ['traverser', 'überqueren'], ['choisir son camp', 'sich für eine Seite entscheiden'], ['la branche', 'der Ast'], ['le mur', 'die Mauer']],
       aufgaben: [
-        { art: 'tabelle', auftrag: 'Que veulent dire les images ? Relie avec tes mots.', stufe: 2, kopf: ['image', 'sens'], breiten: [30, 70], zeilen: [['un pont', '[relie deux rives = deux cultures, deux langues]'], ['un mur', '[sépare les gens]'], ['les racines', '[d’où on vient, sa famille, son histoire]'], ['les branches', '[ce qu’on devient, grandir]']] },
+        { art: 'tabelle', auftrag: 'Que veulent dire les images ? Explique avec tes mots.', stufe: 2, kopf: ['image', 'sens'], breiten: [30, 70], zeilen: [['un pont', '[relie deux rives = deux cultures, deux langues]'], ['un mur', '[sépare les gens]'], ['les racines', '[d’où on vient, sa famille, son histoire]'], ['les branches', '[ce qu’on devient, grandir]']] },
         { art: 'mc', auftrag: 'Coche la bonne réponse.', stufe: 1, fragen: [
-          { f: 'Combien de langues Malik parle-t-il dans la première strophe ?', o: ['une', 'deux', 'trois'], r: 2 },
+          { f: 'Combien de langues sont citées dans la première strophe ?', o: ['une', 'deux', 'trois'], r: 2 },
           { f: 'Le message du slam, c’est …', o: ['On n’a pas besoin de choisir : on peut avoir plusieurs cultures.', 'Il faut choisir une seule langue.', 'Les murs, c’est bien.'], r: 0 }] },
       ],
     },
@@ -242,7 +242,7 @@ export const LEKTIONEN = [
     },
     regel: {
       reihen: [
-        [{ titel: 'Les outils du poète', punkte: ['la **rime** : rive – vivre · soir – noire', 'la **comparaison** : fort **comme** un arbre', 'la **métaphore** : **Je suis un pont.**', 'la **répétition** : Je suis … je suis …', 'le **vers** (une ligne) · la **strophe** (un groupe de vers)'] },
+        [{ titel: 'Les outils du poète', punkte: ['la **rime** : dort – sors · soir – noire', 'la **comparaison** : fort **comme** un arbre', 'la **métaphore** : **Je suis un pont.**', 'la **répétition** : Je suis … je suis …', 'le **vers** (une ligne) · la **strophe** (un groupe de vers)'] },
          { titel: 'Faire préciser', punkte: ['**Qu’est-ce que tu veux dire par** « orale » ?', '**Tu peux expliquer plus clairement ?**', '**Tu peux donner un exemple ?**', '**Ça veut dire quoi**, « racines » ?', '**Si je comprends bien**, … ?'] }],
         [{ art: 'tipp', titel: 'Dire un poème', text: 'Respire avant de commencer. Fais une **pause** à la fin de chaque vers. Regarde le **public**. Parle **lentement** et **fort**.' },
          { art: 'achtung', titel: 'Le slam : trois règles', text: '**Pas de musique** · **pas de costume** · **trois minutes maximum**. Et on applaudit tout le monde !' }],
@@ -275,7 +275,7 @@ export const LEKTIONEN = [
       quelle: 'Magazine « Jeunes du monde » (personnes imaginaires, informations simplifiées)', titel: 'Une journée d’école ailleurs',
       profile: [
         { name: 'Haruto, 13 ans, Japon', bild: 'sami:froh:stehen', stimme: 'm3', text: 'Chez nous, l’année scolaire commence **en avril**, **alors qu’**au Luxembourg, elle commence en septembre. Après les cours, nous nettoyons la classe nous-mêmes : c’est normal ! Ensuite, **la plupart des** élèves vont à un club. Moi, je fais du kendo.' },
-        { name: 'Aminata, 14 ans, Sénégal', bild: 'amira:froh:erklaeren', stimme: 'w2', text: 'À l’école, on parle français, **mais** à la maison et avec mes copines, on parle wolof. Dans ma classe, il y a souvent **plus d’**élèves **que** chez vous : parfois plus de quarante ! Le samedi, je vais au marché avec ma tante. Il y a **tellement de** couleurs !' },
+        { name: 'Aminata, 14 ans, Sénégal', bild: 'amira:froh:erklaeren', stimme: 'w2', text: 'À l’école, on parle français, **mais** à la maison et avec mes copines, on parle wolof. Dans les classes, il y a souvent **plus d’**élèves **que** chez vous : parfois plus de quarante ! Le samedi, je vais au marché avec ma tante. Il y a **tellement de** couleurs !' },
         { name: 'Félix, 13 ans, Québec (Canada)', bild: 'finn:froh:laessig', stimme: 'm1', text: 'Ici aussi, on parle français, mais avec un accent ! L’hiver est **beaucoup plus** froid **qu’**au Luxembourg : parfois moins vingt-cinq degrés. Il y a une patinoire dans la cour de mon école : à la récré, on joue au hockey !' },
         { name: 'Luana, 12 ans, Brésil', bild: 'lea:froh:stehen', stimme: 'w3', text: 'Dans mon école, il y a deux groupes : un groupe vient le matin, **tandis que** l’autre vient l’après-midi. Moi, j’ai cours de 7 h à midi. Chez nous, on parle portugais, comme **beaucoup de gens** au Luxembourg !' },
       ],
@@ -354,10 +354,10 @@ export const LEKTIONEN = [
         '**Journal :** Un conseil pour les débutants ?',
         '**Yanis :** Écrivez sur ce que vous connaissez : votre quartier, vos amis, vos émotions. Et n’ayez pas peur de vous tromper ! L’atelier est gratuit, le mercredi de 14 h à 16 h.',
       ],
-      woerter: [['animer un atelier', 'einen Workshop leiten'], ['en cachette', 'heimlich'], ['timide', 'schüchtern'], ['partager', 'teilen'], ['enregistrer', 'aufnehmen'], ['jusqu’au bout', 'bis zum Ende'], ['la moquerie', 'das Lustigmachen'], ['se tromper', 'sich irren']],
+      woerter: [['animer un atelier', 'einen Workshop leiten'], ['en cachette', 'heimlich'], ['timide', 'schüchtern'], ['partager', 'teilen'], ['enregistrer', 'aufnehmen'], ['jusqu’au bout', 'bis zum Ende'], ['la moquerie', 'der Spott, das Auslachen'], ['se tromper', 'sich irren']],
       aufgaben: [
         { art: 'zuordnen', auftrag: 'Quelle réponse va avec quelle question ? Relie.', stufe: 1, links: ['Comment as-tu commencé ?', 'Qu’est-ce qu’on fait dans l’atelier ?', 'Il y a des règles ?', 'Un conseil pour les débutants ?'], rechts: ['textes en cachette, puis un premier atelier', 'écouter, écrire, enregistrer', 'respecter les autres, écouter jusqu’au bout', 'écrire sur ce qu’on connaît'], ordnung: [2, 0, 3, 1] },
-        { art: 'rf', auftrag: 'Vrai ou faux ?', stufe: 2, spalten: ['vrai', 'faux'], saetze: [['À 13 ans, Yanis était très timide.', true], ['La plupart des participants écrivent déjà des textes.', false], ['Dans l’atelier, on peut se moquer des autres.', false], ['L’atelier coûte 10 euros.', false]] },
+        { art: 'rf', auftrag: 'Vrai ou faux ?', stufe: 2, spalten: ['vrai', 'faux'], saetze: [['À 13 ans, Yanis était très timide.', true], ['La plupart des participants ont déjà écrit des textes avant l’atelier.', false], ['Dans l’atelier, on peut se moquer des autres.', false], ['L’atelier coûte 10 euros.', false]] },
       ],
     },
     hoeren: {
@@ -378,10 +378,10 @@ export const LEKTIONEN = [
         ['Amira', 'Tu écoutes quelle musique ?'],
         ['Finn', 'De la drill, surtout.'],
         ['Ben', 'De la drill ? Tu peux expliquer plus clairement ? Je ne connais pas.'],
-        ['Finn', 'C’est un style de rap, avec un rythme lent et des basses très fortes.'],
+        ['Finn', 'C’est un style de rap, avec des basses très fortes et une ambiance sombre.'],
         ['Amira', 'Et tu écoutes combien de temps par jour ?'],
         ['Finn', 'Trois ou quatre heures, avec mon casque. Trop longtemps, d’après ma mère !'],
-        ['Amira', 'Merci ! Bon, Ben, on a déjà vingt réponses. Il faut encore interroger cent personnes !'],
+        ['Amira', 'Merci ! Bon, Ben, on a déjà interrogé vingt élèves. Il en reste encore cent !'],
       ],
       vor: [{ art: 'mc', auftrag: 'Pour commencer une enquête poliment, on dit … Coche.', stufe: 1, fragen: [{ f: '', o: ['Excusez-moi, vous avez une minute ?', 'Réponds vite !'], r: 0 }] }],
       beim: [
@@ -443,13 +443,13 @@ export const LEKTIONEN = [
       bild: ['tom:froh:erklaeren', 'mia:froh:handy'], sprecher: { Présentateur: 'm1' },
       text: [
         ['Présentateur', 'Bonjour, il est 17 heures, voici le journal des jeunes. D’abord, une enquête sur les jeunes et la culture. Selon une enquête auprès de mille jeunes de 12 à 18 ans, la majorité des jeunes, 64 %, écoutent de la musique plus de deux heures par jour.'],
-        ['Présentateur', 'Un tiers des jeunes lisent au moins un livre par mois. Par contre, seulement 15 % vont au théâtre une fois par an. D’après les chercheurs, c’est dû au prix des billets, mais aussi au manque d’information.'],
+        ['Présentateur', 'Un tiers des jeunes lisent au moins un livre par mois. Par contre, seulement 15 % vont au théâtre au moins une fois par an. D’après les chercheurs, c’est dû au prix des billets, mais aussi au manque d’information.'],
         ['Présentateur', 'Deuxième information : la Fête de la musique. Le 21 juin, il y aura des concerts gratuits dans beaucoup de villes et de villages.'],
         ['Présentateur', 'Et pour finir, l’agenda du week-end : samedi, concert de Nour au centre culturel, à 20 heures. Dimanche, à 15 heures, atelier slam gratuit à la bibliothèque. Bon week-end à tous !'],
       ],
       vor: [{ art: 'mc', auftrag: 'Un tiers, c’est environ … Coche.', stufe: 1, fragen: [{ f: '', o: ['33 %', '3 %', '75 %'], r: 0 }] }],
       beim: [
-        { art: 'tabelle', auftrag: 'Écoute et complète.', stufe: 1, kopf: ['les jeunes …', 'combien ?'], breiten: [64, 36], zeilen: [['écoutent de la musique plus de deux heures par jour', '[64 % (la majorité)]'], ['lisent au moins un livre par mois', '[un tiers]'], ['vont au théâtre une fois par an', '[15 %]']] },
+        { art: 'tabelle', auftrag: 'Écoute et complète.', stufe: 1, kopf: ['les jeunes …', 'combien ?'], breiten: [64, 36], zeilen: [['écoutent de la musique plus de deux heures par jour', '[64 % (la majorité)]'], ['lisent au moins un livre par mois', '[un tiers]'], ['vont au théâtre au moins une fois par an', '[15 %]']] },
         { art: 'fragen', auftrag: 'Réponds.', stufe: 2, fragen: [{ f: 'Selon les chercheurs, pourquoi les jeunes vont-ils peu au théâtre ?', l: 'À cause du prix des billets et du manque d’information.' }, { f: 'Quand a lieu l’atelier slam ?', l: 'Dimanche, à 15 heures, à la bibliothèque.' }] },
       ],
       nach: [{ art: 'sprechen', auftrag: 'Comparez les résultats de l’école (article) et de la radio. Qu’est-ce qui vous surprend ? Citez la source.', stufe: 3, karten: [
@@ -458,7 +458,7 @@ export const LEKTIONEN = [
     },
     regel: {
       reihen: [
-        [{ titel: 'Les quantités', tabelle: { kopf: ['expression', 'environ'], zeilen: [['**tous** les élèves · **tout le monde**', '100 %'], ['**presque tous** · **la grande majorité des**', '90 – 99 %'], ['**la majorité des** · **la plupart des**', 'plus de 50 %'], ['**la moitié des**', '50 %'], ['**un tiers des** · **un quart des**', '33 % · 25 %'], ['**un petit groupe de** · **une minorité de**', 'moins de 20 %'], ['**personne** (ne)', '0 %']] } }],
+        [{ titel: 'Les quantités', tabelle: { kopf: ['expression', 'environ'], zeilen: [['**tous** les élèves · **tout le monde**', '100 %'], ['**presque tous** · **la grande majorité des**', '90 – 99 %'], ['**la majorité des** · **la plupart des**', 'plus de 50 %'], ['**la moitié des**', '50 %'], ['**une minorité de**', 'moins de 50 %'], ['**un tiers des** · **un quart des**', '33 % · 25 %'], ['**un petit groupe de**', 'environ 10 %'], ['**personne** (ne)', '0 %']] } }],
         [{ titel: 'Les pourcentages et les ordinaux', punkte: ['38 % = trente-huit **pour cent**', '**un élève sur cinq** = 20 %', '**premier** (1er) / **première** (1re) · **deuxième** (2e) · **troisième** (3e)', 'Le rap arrive **premier**, la pop **deuxième**.'] },
          { art: 'tipp', titel: 'Citer ses sources', text: '**Selon** l’enquête, … · **D’après** Mme Rantini, … · **D’après** les chercheurs, … · Source : journal de l’école, mai.' }],
         [{ art: 'achtung', titel: 'Accord du verbe', text: '**La plupart des** élèves écout**ent** (toujours pluriel). · **La majorité des** élèves écout**e** / écout**ent** (les deux sont possibles).' }],
@@ -466,7 +466,7 @@ export const LEKTIONEN = [
     },
     ueben: [
       { art: 'luecken', auftrag: 'Complète avec une expression de quantité.', stufe: 1, woerter: ['la moitié des', 'presque tous les', 'un quart des', 'une minorité d’'], saetze: ['50 % : [la moitié des] élèves font du sport.', '96 % : [presque tous les] élèves ont un portable.', '25 % : [un quart des] élèves vont à pied à l’école.', '8 % : [une minorité d’] élèves jouent du violon.'] },
-      { art: 'luecken', auftrag: 'Complète avec premier, première, deuxième, troisième ou dernier.', stufe: 2, saetze: ['Le rap est le style [premier] : il a 38 %.', 'La pop est [deuxième] avec 27 %.', 'L’électro arrive [troisième].', 'Le rock et les autres styles sont [derniers] avec 10 %.'] },
+      { art: 'luecken', auftrag: 'Complète avec premier, première, deuxième, troisième ou dernier.', stufe: 2, saetze: ['Le rap arrive [premier] : il a 38 %.', 'La pop est [deuxième] avec 27 %.', 'L’électro arrive [troisième].', 'Le rock et les autres styles sont [derniers] avec 10 %.'] },
     ],
     schreiben: [
       { art: 'schreiben', auftrag: 'Résume les résultats de ton enquête (ou invente des résultats) pour le journal de l’école. Cite tes sources.', stufe: 3,
@@ -491,11 +491,11 @@ export const LEKTIONEN = [
       quelle: 'Magazine « Ados Santé » (reportage et lettres imaginaires, informations simplifiées)', titel: 'Casque sur les oreilles : attention !',
       dokumente: [
         { stil: 'karte', stimme: 'w1', text: [
-          'Dans le bus, dans la rue, à la récré : beaucoup de jeunes ont toujours un casque sur les oreilles. C’est pratique… mais attention ! **Selon** l’Organisation mondiale de la santé (OMS), plus d’un milliard de jeunes dans le monde risquent d’abîmer leur audition **à cause du** bruit.',
+          'Dans le bus, dans la rue, à la récré : beaucoup de jeunes ont toujours un casque sur les oreilles. C’est pratique… mais attention ! **Selon** l’Organisation mondiale de la santé (OMS), plus d’un milliard de jeunes de 12 à 35 ans dans le monde risquent d’abîmer leur audition **à cause du** bruit.',
           '**Le problème :** on écoute souvent la musique trop fort et trop longtemps. Dans un bus bruyant, on monte le son pour couvrir le bruit. À un concert, on est tout près des enceintes.',
           '**Les conséquences :** après un concert, on entend parfois des sifflements dans les oreilles. Ce sont des **acouphènes**. Souvent, ils disparaissent après quelques heures. Mais si on abîme ses oreilles trop souvent, on peut perdre une partie de son audition. Et ça, c’est **pour toujours**.',
           '**Les solutions :** les spécialistes conseillent la **règle des 60/60** : maximum 60 % du volume, et une pause après 60 minutes. À un concert, **il faut** mettre des bouchons d’oreilles. **Grâce à** un casque qui réduit le bruit extérieur, on n’a pas besoin de monter le son.'] },
-        { stil: 'nachricht', stimme: 'w3', kopf: 'Courrier des lecteurs · Léa, 14 ans', text: ['Merci pour cet article ! Après un concert, j’avais des sifflements dans les oreilles pendant toute une nuit. J’avais tellement peur ! Maintenant, je mets toujours des bouchons. Ils existent même en couleur !'] },
+        { stil: 'nachricht', stimme: 'w3', kopf: 'Courrier des lecteurs · Léa, 14 ans', text: ['Merci pour cet article ! Après un concert, j’ai eu des sifflements dans les oreilles pendant toute une nuit. J’ai eu tellement peur ! Maintenant, je mets toujours des bouchons. Ils existent même en couleur !'] },
         { stil: 'nachricht', stimme: 'm3', kopf: 'Courrier des lecteurs · Tom, 15 ans', text: ['Je ne suis pas tout à fait d’accord. Dans le bus, il y a tellement de bruit que je dois monter le son ! Par contre, la pause toutes les heures, c’est une bonne idée. Je vais essayer.'] },
       ],
       woerter: [['abîmer', 'beschädigen'], ['bruyant(e)', 'laut'], ['monter le son', 'lauter machen'], ['couvrir', 'übertönen'], ['le sifflement', 'das Pfeifen'], ['les acouphènes', 'der Tinnitus'], ['disparaître', 'verschwinden'], ['pour toujours', 'für immer'], ['réduire', 'verringern']],
@@ -538,7 +538,7 @@ export const LEKTIONEN = [
       ],
     },
     ueben: [
-      { art: 'luecken', auftrag: 'Complète avec parce que, à cause du / de la, grâce au / à la ou dû au.', stufe: 2, saetze: ['Je n’entends rien [à cause du] bruit.', '[Grâce aux] bouchons, je protège mes oreilles.', 'Le sifflement est [dû au] concert d’hier.', 'Je fais une pause [parce que] mes oreilles sont fatiguées.', '[Grâce à la] règle des 60/60, j’écoute moins fort.'] },
+      { art: 'luecken', auftrag: 'Complète avec parce que, à cause du / de la, grâce au / à la / aux ou dû au.', stufe: 2, saetze: ['Je n’entends rien [à cause du] bruit.', '[Grâce aux] bouchons, je protège mes oreilles.', 'Le sifflement est [dû au] concert d’hier.', 'Je fais une pause [parce que] mes oreilles sont fatiguées.', '[Grâce à la] règle des 60/60, j’écoute moins fort.'] },
       { art: 'abschreiben', auftrag: 'Écris un conseil avec il faut ou on doit.', stufe: 1, kopf: ['situation', 'conseil'], saetze: [['Je vais à un concert.', 'Il faut mettre des bouchons d’oreilles.'], ['J’écoute de la musique depuis une heure.', 'On doit faire une pause.'], ['J’ai un sifflement depuis deux jours.', 'Il faut aller chez le médecin.']] },
     ],
     schreiben: [
@@ -563,8 +563,8 @@ export const LEKTIONEN = [
       was: 'Un programme et des petites annonces', art: 'dokumente',
       quelle: 'Journal de l’école · numéro de juin (personnes et annonces imaginaires)', titel: 'Fête des cultures et petites annonces',
       dokumente: [
-        { stil: 'karte', stimme: 'w1', kopf: '**Fête des cultures** · sam. 6 juin · de 14 h à 22 h · cour de l’école · entrée libre', text: ['**14 h :** ouverture – stands de cuisine du monde (Portugal, Cap-Vert, Italie, Syrie, Luxembourg…)', '**15 h 30 :** la 7P2 présente son enquête « Les jeunes et la musique »', '**17 h :** concours de slam (inscription sur place)', '**20 h :** concert de Nour'] },
-        { stil: 'nachricht', stimme: 'm1', kopf: 'Petite annonce', text: ['**Groupe de rock cherche batteur ou batteuse** (13–16 ans). Répét. le mer. après-midi à la Maison des jeunes. Contact : lesondes@exemple.lu'] },
+        { stil: 'karte', stimme: 'w1', kopf: '**Fête des cultures** · sam. 5 juin · de 14 h à 22 h · cour de l’école · entrée libre', text: ['**14 h :** ouverture – stands de cuisine du monde (Portugal, Cap-Vert, Italie, Syrie, Luxembourg…)', '**15 h 30 :** la 7P2 présente son enquête « Les jeunes et la musique »', '**17 h :** concours de slam (inscription sur place)', '**20 h :** concert de Nour'] },
+        { stil: 'nachricht', stimme: 'm1', kopf: 'Petite annonce', text: ['**Groupe de rock cherche batteur ou batteuse** (13–16 ans). Répét. le mer. après-midi à la Maison des jeunes. Contact : rockados@exemple.lu'] },
         { stil: 'nachricht', stimme: 'w2', kopf: 'Petite annonce', text: ['**Vends guitare acoustique**, très bon état, avec housse. 60 € (prix neuf : 150 €). Contact : secrétariat, salle 4.'] },
         { stil: 'nachricht', stimme: 'w3', kopf: 'Petite annonce', text: ['**Atelier slam gratuit** avec Kenza. Tous les sam. de 10 h à 12 h, à la bibliothèque. Débutants bienvenus ! Env. 12 places.'] },
         { stil: 'nachricht', stimme: 'w1', kopf: 'Petite annonce', text: ['**La chorale des jeunes cherche des voix !** Pas besoin de savoir lire la musique. Rdv le lun. à 17 h, salle de musique.'] },
@@ -586,7 +586,7 @@ export const LEKTIONEN = [
         ['Ben', 'Voici les résultats. Presque tous les élèves écoutent de la musique tous les jours. Le rap arrive premier, avec 38 %. La pop est deuxième.'],
         ['Amira', 'Ce qui nous a surpris : beaucoup d’élèves écoutent plus de deux heures par jour, souvent trop fort. C’est pourquoi nous avons aussi parlé de la santé des oreilles.'],
         ['Ben', 'En conclusion : la musique est très importante pour les jeunes. Mais il faut protéger ses oreilles ! Merci de votre attention. Vous avez des questions ?'],
-        ['Mme Nouvelle', 'Bravo ! Vous pouvez expliquer plus clairement comment vous avez choisi les élèves ?'],
+        ['Mme Nouvelle', 'Bravo ! Vous pouvez expliquer plus précisément comment vous avez choisi les élèves ?'],
         ['Amira', 'Bien sûr. Nous avons interrogé quinze élèves dans chaque classe, au hasard, pendant la récré.'],
       ],
       vor: [{ art: 'mc', auftrag: 'Un bon exposé a … Coche.', stufe: 1, fragen: [{ f: '', o: ['une introduction, un développement et une conclusion', 'seulement des chiffres'], r: 0 }] }],
@@ -614,7 +614,7 @@ export const LEKTIONEN = [
     schreiben: [
       { art: 'schreiben', auftrag: 'Écris un bref rapport sur la fête des cultures (ou sur un événement que tu as vécu ou imaginé) pour le site de l’école. Corrige-le ensuite avec la fiche-guide.', stufe: 3,
         anfaenge: ['Samedi …, … a eu lieu …', 'D’abord, …', 'Ensuite, …', 'Le meilleur moment, c’était …', 'À la fin, …', 'À mon avis, …'], zeilen: 11,
-        beispiel: 'Samedi 6 juin, la fête des cultures a eu lieu dans la cour de l’école. D’abord, nous avons goûté des plats du Portugal et de Syrie. Ensuite, Amira et Ben ont présenté notre enquête. Le meilleur moment, c’était le concours de slam : Malik a gagné ! À la fin, Nour a chanté et tout le monde a allumé son portable. À mon avis, c’était une journée magnifique.' },
+        beispiel: 'Samedi 5 juin, la fête des cultures a eu lieu dans la cour de l’école. D’abord, nous avons goûté des plats du Portugal et de Syrie. Ensuite, Amira et Ben ont présenté notre enquête. Le meilleur moment, c’était le concours de slam : Malik a gagné ! À la fin, Nour a chanté et tout le monde a allumé son portable. À mon avis, c’était une journée magnifique.' },
       { art: 'schreiben', auftrag: 'Mon journal de bord : fais le point sur ce module… et sur ton année de français !', stufe: 1, zeilen: 9, zeilenAnfaenge: ['Ce que j’ai appris :', '', '', 'Ce qui est encore difficile :', '', '', 'Mon prochain objectif :', '', ''] },
     ],
     check: ['Je repère les informations importantes dans des annonces.', 'Je comprends un exposé.', 'Je fais un petit exposé préparé.', 'J’écris un bref rapport sur un événement.', 'Je corrige mon texte avec une fiche-guide.'],

@@ -374,3 +374,22 @@ s.falsch { color: #b4232a; text-decoration-thickness: 0.35mm; }
 .gedicht .refrain { padding: 1mm 0 1mm 4mm; border-left: 1.2mm solid var(--f-mittel); background: var(--f-zart); border-radius: 0 2mm 2mm 0; }
 .gedicht .refrain p { font-style: italic; }
 .gedicht .rmark { display: block; font-family: Lexend; font-weight: 800; font-size: 8.5pt; letter-spacing: 0.08em; text-transform: uppercase; color: var(--f); margin-bottom: 0.6mm; }
+/* Mathe: Erklärung und Rechenkästchen */
+.lesetext .def { background: var(--f-zart); border-left: 1.3mm solid var(--f); border-radius: 0 2.5mm 2.5mm 0; padding: 2mm 3.5mm; margin: 1mm 0 3mm; font-size: 12.4pt; line-height: 1.45; }
+.lesetext .def b { color: var(--f-tief); font-family: Lexend; margin-right: 1mm; }
+ol.erkl { list-style: none; padding: 0; margin: 0; counter-reset: e; display: grid; gap: 2.6mm; }
+ol.erkl li { counter-increment: e; position: relative; padding-left: 9mm; font-size: 12.4pt; line-height: 1.45; break-inside: avoid; }
+ol.erkl li::before { content: counter(e); position: absolute; left: 0; top: 0.3mm; width: 6.2mm; height: 6.2mm; border-radius: 50%; background: var(--f); color: #fff; font-family: Lexend; font-weight: 800; font-size: 10pt; display: flex; align-items: center; justify-content: center; }
+ol.erkl li > b { font-family: Lexend; color: var(--f-tief); }
+ol.erkl .bsp { margin-top: 1mm; background: #f6f7fb; border-radius: 2mm; padding: 1.3mm 2.5mm; font-size: 12pt; }
+ol.erkl .bsp span { font-family: Lexend; font-weight: 800; font-size: 8.5pt; letter-spacing: 0.06em; text-transform: uppercase; color: var(--f); margin-right: 2mm; }
+.erkl-bild { margin-top: 3mm; }
+.rechnen { display: grid; gap: 3.5mm 7mm; }
+.rechnen .ri { break-inside: avoid; }
+.rechnen .ra { font-size: 12.6pt; line-height: 1.35; margin-bottom: 1.2mm; }
+.rechnen .rn { color: var(--leise); font-size: 11pt; margin-right: 1.5mm; }
+.rechnen .rk { position: relative; border: 0.3mm solid #c9d3e3; border-radius: 2mm; background-color: #fff; background-image: linear-gradient(#e3e9f3 0.25mm, transparent 0.25mm), linear-gradient(90deg, #e3e9f3 0.25mm, transparent 0.25mm); background-size: 5mm 5mm; background-position: -0.1mm -0.1mm; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.rechnen .rk .l { position: absolute; left: 2.5mm; right: 2mm; bottom: 1mm; font-family: 'Hand'; color: var(--loesung); font-size: 13.5pt; line-height: 1.15; visibility: hidden; }
+.loesungen .rechnen .rk .l { visibility: visible; }
+.plan-l { visibility: hidden; } .loesungen .plan-l { visibility: visible; }
+table.raster.stellen td { padding: 1.5mm 1mm; }
