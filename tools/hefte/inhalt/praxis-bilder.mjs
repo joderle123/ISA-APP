@@ -304,3 +304,21 @@ export function samenTuete() {
   o += `<rect x="${x0}" y="${ya + 14}" width="10" height="10" rx="2" fill="#5aa84a"/>` + t(x0 + 16, ya + 23, 'Aussaat', { gr: 11, anker: 'start' }) + `<rect x="${x0 + 90}" y="${ya + 14}" width="10" height="10" rx="2" fill="#e8963a"/>` + t(x0 + 106, ya + 23, 'Ernte', { gr: 11, anker: 'start' })
   return `<figure class="tuete">${o}</svg></figure>`
 }
+
+/** Toleranz-Skala: Sollmaß ± Toleranz als grüner Bereich, gemessene Teile A, B, C … als Marken */
+export function toleranz({ soll = 100, tol = 1, werte = [] } = {}) {
+  const x0 = 40, W = 440, von = soll - 3, bis = soll + 3, X = (v) => x0 + ((v - von) / (bis - von)) * W
+  let o = `<svg viewBox="0 0 520 170" xmlns="http://www.w3.org/2000/svg" class="tol-svg">`
+  o += `<rect x="${X(soll - tol)}" y="70" width="${X(soll + tol) - X(soll - tol)}" height="34" rx="4" fill="#d7efd9" stroke="#3f8a3a" stroke-width="1.5"/>`
+  o += t((X(soll - tol) + X(soll + tol)) / 2, 124, 'gut (Toleranz)', { gr: 13, farbe: '#2e6b2a' })
+  o += `<line x1="${x0}" y1="87" x2="${x0 + W}" y2="87" stroke="#2a2f3a" stroke-width="2"/>`
+  for (let v = von; v <= bis + 1e-9; v += 0.5) {
+    const ganz = Math.abs(v - Math.round(v)) < 1e-9
+    o += `<line x1="${X(v)}" y1="${ganz ? 78 : 82}" x2="${X(v)}" y2="${ganz ? 96 : 92}" stroke="#2a2f3a" stroke-width="${ganz ? 2 : 1.2}"/>`
+    if (ganz) o += t(X(v), 146, String(v), { gr: 15, fett: v === soll ? 800 : 600, farbe: v === soll ? '#3f8a3a' : '#2a2f3a' })
+  }
+  o += t(X(soll), 164, 'Sollmaß', { gr: 12, farbe: '#3f8a3a' })
+  werte.forEach(([n, v], i) => { const x = X(v), y = 30 + (i % 2) * 18; o += `<line x1="${x}" y1="${y + 8}" x2="${x}" y2="84" stroke="#c0392b" stroke-width="1.5"/>` + nr(x, y, n, '#c0392b', 11) })
+  o += t(x0 + W + 14, 92, 'mm', { gr: 11, farbe: '#5b6475' })
+  return `<figure class="tol">${o}</svg></figure>`
+}
