@@ -1,0 +1,510 @@
+{
+ "modul": "ma6",
+ "titel": {
+  "de": "Rechnen mit Vorzeichen und Buchstaben",
+  "fr": "Calculer avec des signes et des lettres"
+ },
+ "sprache": "de",
+ "spuren": {
+  "ma6-01l": {
+   "titel": "Schulden und Guthaben",
+   "art": "lesen",
+   "lektion": 1,
+   "dauer": 78.3,
+   "text": [
+    [
+     "",
+     "Schulden und Guthaben"
+    ],
+    [
+     "",
+     "Addieren und Subtrahieren mit Vorzeichen. Auf dem Zahlenstrahl geht + nach rechts, − nach links. Zwei Minuszeichen nebeneinander werden zu Plus: 5 − (−3) = 5 + 3. Guthaben/Schulden hilft beim Vorstellen."
+    ],
+    [
+     "",
+     "1. Plus = nach rechts, Minus = nach links. Auf dem Zahlenstrahl: + geht nach rechts (hoch), − geht nach links (runter). Beispiel: −3 + 5: starte bei −3, gehe 5 nach rechts → +2."
+    ],
+    [
+     "",
+     "2. Minus und Minus. −4 − 3: von −4 noch 3 nach links → −7. Zwei Schritte in dieselbe Richtung (runter). Beispiel: −4 − 3 = −7."
+    ],
+    [
+     "",
+     "3. Zwei Minus nebeneinander. „− (−3)\" bedeutet „das Gegenteil von −3\", also + 3. Beispiel: 5 − (−3) = 5 + 3 = 8. Merke: minus mal minus wird plus."
+    ]
+   ]
+  },
+  "ma6-01h": {
+   "titel": "Fünf Meter nach oben",
+   "art": "hoeren",
+   "lektion": 1,
+   "dauer": 33.1,
+   "text": [
+    [
+     "Tauchlehrer",
+     "Die Wasseroberfläche ist null. Wir tauchen zuerst auf minus 4 Meter."
+    ],
+    [
+     "Finn",
+     "Und dann noch 3 Meter tiefer?"
+    ],
+    [
+     "Tauchlehrer",
+     "Genau: minus 4 minus 3. Wo sind wir dann?"
+    ],
+    [
+     "Finn",
+     "Bei minus 7 Metern."
+    ],
+    [
+     "Tauchlehrer",
+     "Richtig. Dann steigen wir 5 Meter nach oben: minus 7 plus 5."
+    ],
+    [
+     "Finn",
+     "Dann sind wir bei minus 2 Metern. Fast wieder oben!"
+    ],
+    [
+     "Tauchlehrer",
+     "Und zum Schluss die letzten 2 Meter: minus 2 plus 2 gleich null. Wir sind an der Oberfläche."
+    ]
+   ]
+  },
+  "ma6-02l": {
+   "titel": "Plus oder minus?",
+   "art": "lesen",
+   "lektion": 2,
+   "dauer": 87.1,
+   "text": [
+    [
+     "",
+     "Plus oder minus?"
+    ],
+    [
+     "",
+     "Vorzeichenregel bei der Multiplikation. Gleiche Vorzeichen ergeben Plus, verschiedene Vorzeichen ergeben Minus. Merke: minus · minus = plus. Zuerst das Vorzeichen bestimmen, dann die Zahlen malnehmen."
+    ],
+    [
+     "",
+     "1. Die Vorzeichenregel. plus·plus = plus, minus·minus = plus, plus·minus = minus, minus·plus = minus. Beispiel: (+3)·(+4) = +12. (−3)·(−4) = +12. (+3)·(−4) = −12. (−3)·(+4) = −12."
+    ],
+    [
+     "",
+     "2. Kurz gemerkt. Gleiche Vorzeichen → Ergebnis positiv. Verschiedene Vorzeichen → Ergebnis negativ. Beispiel: −5 · −2 = +10 (gleich). −5 · 2 = −10 (verschieden)."
+    ],
+    [
+     "",
+     "3. Erst Vorzeichen, dann Zahl. Bestimme zuerst das Vorzeichen, dann rechne die Zahlen mal. Beispiel: (−6)·(+3): verschieden → minus; 6·3 = 18 → −18."
+    ]
+   ]
+  },
+  "ma6-02h": {
+   "titel": "Jede Stunde 2 Grad kälter",
+   "art": "hoeren",
+   "lektion": 2,
+   "dauer": 38.4,
+   "text": [
+    [
+     "Opa",
+     "Um Mitternacht waren es 0 Grad. Dann ist die Temperatur jede Stunde um 2 Grad gefallen."
+    ],
+    [
+     "Lea",
+     "Nach 3 Stunden also: 3 mal minus 2 … das sind minus 6 Grad."
+    ],
+    [
+     "Opa",
+     "Genau. Plus mal minus gibt minus."
+    ],
+    [
+     "Lea",
+     "Und was war 3 Stunden vor Mitternacht?"
+    ],
+    [
+     "Opa",
+     "Da war es 6 Grad wärmer. Minus 3 Stunden mal minus 2 Grad …"
+    ],
+    [
+     "Lea",
+     "… gibt plus 6 Grad! Minus mal minus gibt plus. Das passt: Am Abend war es wärmer."
+    ]
+   ]
+  },
+  "ma6-03l": {
+   "titel": "Wer zuerst?",
+   "art": "lesen",
+   "lektion": 3,
+   "dauer": 65.4,
+   "text": [
+    [
+     "",
+     "Wer zuerst?"
+    ],
+    [
+     "",
+     "Rechenregeln (Priorität). Reihenfolge beim Rechnen: 1. Klammern zuerst, 2. Punkt vor Strich (· und ÷ vor + und −), 3. sonst von links nach rechts."
+    ],
+    [
+     "",
+     "1. Regel 1: Klammern zuerst. Was in Klammern steht, wird immer zuerst gerechnet. Beispiel: (2 + 3) · 4 = 5 · 4 = 20."
+    ],
+    [
+     "",
+     "2. Regel 2: Punkt vor Strich. Mal (·) und geteilt (÷) kommen vor Plus (+) und Minus (−). Beispiel: 2 + 3 · 4 = 2 + 12 = 14."
+    ],
+    [
+     "",
+     "3. Regel 3: von links nach rechts. Bei gleichrangigen Rechnungen von links nach rechts. Beispiel: 10 − 4 + 2 = 6 + 2 = 8."
+    ]
+   ]
+  },
+  "ma6-03h": {
+   "titel": "29 oder 64 Euro?",
+   "art": "hoeren",
+   "lektion": 3,
+   "dauer": 49.3,
+   "text": [
+    [
+     "Sami",
+     "Drei Karten zu 8 Euro und ein Popcorn zu 5 Euro. Ich rechne 5 plus 3 mal 8 … von links: 8 mal 8 sind 64 Euro?!"
+    ],
+    [
+     "Kassiererin",
+     "Nein, nein! Punkt vor Strich: Zuerst mal, dann plus."
+    ],
+    [
+     "Sami",
+     "Ah: 3 mal 8 sind 24, plus 5 sind 29 Euro."
+    ],
+    [
+     "Kassiererin",
+     "Genau, 29 Euro. Und wenn du noch zwei Popcorn und zwei Getränke dazunimmst, schreib Klammern."
+    ],
+    [
+     "Sami",
+     "Ein Popcorn kostet 5 Euro und ein Getränk 3 Euro. Also 2 mal, Klammer auf, 5 plus 3, Klammer zu. Erst die Klammer: 8, dann mal 2: 16 Euro."
+    ],
+    [
+     "Kassiererin",
+     "Perfekt. Zusammen 45 Euro."
+    ]
+   ]
+  },
+  "ma6-04l": {
+   "titel": "Die geheimnisvolle Zahl",
+   "art": "lesen",
+   "lektion": 4,
+   "dauer": 80.7,
+   "text": [
+    [
+     "",
+     "Die geheimnisvolle Zahl"
+    ],
+    [
+     "",
+     "Variable. Eine Variable ist ein Buchstabe (oft x), der für eine Zahl steht. Zwischen Zahl und Buchstabe steht ein unsichtbares Malzeichen: 4x bedeutet 4 · x. Ein einzelnes x bedeutet 1 · x."
+    ],
+    [
+     "",
+     "1. Was ist eine Variable?. Eine Variable ist ein Buchstabe (oft x), der für eine Zahl steht. Beispiel: x kann 1, 2, 100 … sein. „x ist eine negative Zahl größer als −5\" heißt: x ∈ {−4, −3, −2, −1}."
+    ],
+    [
+     "",
+     "2. 4x bedeutet 4·x. Zwischen Zahl und Buchstabe steht ein unsichtbares Malzeichen. Beispiel: 4x = 4·x. Und x = 1·x (ein einzelnes x ist ein Mal x)."
+    ],
+    [
+     "",
+     "3. Ein Term ist eine Rechnung mit Buchstaben. Ein Ausdruck wie 4x + 2b − 2 ist ein Term. Beispiel: 4x + 2b − 2 – eine Rechnung, die Buchstaben benutzt."
+    ]
+   ]
+  },
+  "ma6-04h": {
+   "titel": "Ich kenne deine Zahl!",
+   "art": "hoeren",
+   "lektion": 4,
+   "dauer": 31.4,
+   "text": [
+    [
+     "Yusuf",
+     "Denk dir eine Zahl. Sag sie nicht!"
+    ],
+    [
+     "Mia",
+     "Okay, ich habe eine."
+    ],
+    [
+     "Yusuf",
+     "Verdopple sie. Dann addiere 6. Dann teile durch 2. Und jetzt ziehe deine Zahl ab."
+    ],
+    [
+     "Mia",
+     "Fertig."
+    ],
+    [
+     "Yusuf",
+     "Dein Ergebnis ist 3!"
+    ],
+    [
+     "Mia",
+     "Wie machst du das?"
+    ],
+    [
+     "Yusuf",
+     "Ich nenne deine Zahl x. Verdoppeln: 2x. Plus 6: 2x plus 6. Geteilt durch 2: x plus 3. Minus x: Es bleibt immer 3!"
+    ]
+   ]
+  },
+  "ma6-05l": {
+   "titel": "Mathe-Sprache übersetzen",
+   "art": "lesen",
+   "lektion": 5,
+   "dauer": 73.4,
+   "text": [
+    [
+     "",
+     "Mathe-Sprache übersetzen"
+    ],
+    [
+     "",
+     "Term aufstellen. Ein Term ist eine Rechnung mit Buchstaben. Signalwörter: Summe → +, Differenz → −, Produkt → ·, Quotient → ÷. Auf die Reihenfolge achten: „Differenz von 2 und d\" = 2 − d."
+    ],
+    [
+     "",
+     "1. Die vier Signalwörter. Summe = plus (+), Differenz = minus (−), Produkt = mal (·), Quotient = geteilt (÷). Beispiel: Summe von x und 4 → x + 4. Produkt von 3 und a → 3a."
+    ],
+    [
+     "",
+     "2. Auf die Reihenfolge achten. Bei „Differenz von 2 und d\" kommt die 2 zuerst: 2 − d (nicht d − 2). Beispiel: Differenz von a und 5 → a − 5."
+    ],
+    [
+     "",
+     "3. Mehrere Schritte. Sätze können mehrere Rechnungen enthalten. Beispiel: „Das Doppelte von x, plus 3\" → 2x + 3."
+    ]
+   ]
+  },
+  "ma6-05h": {
+   "titel": "300 plus 25 mal x",
+   "art": "hoeren",
+   "lektion": 5,
+   "dauer": 46.5,
+   "text": [
+    [
+     "Amira",
+     "Der Bus kostet 300 Euro, egal wie viele mitfahren."
+    ],
+    [
+     "Ben",
+     "Und die Jugendherberge kostet 25 Euro pro Person."
+    ],
+    [
+     "Amira",
+     "Wir wissen nicht, wie viele mitkommen. Nennen wir die Zahl der Schüler x."
+    ],
+    [
+     "Ben",
+     "Dann kostet die Herberge 25 mal x, also 25x."
+    ],
+    [
+     "Amira",
+     "Und alles zusammen: 300 plus 25x. Das ist unser Term."
+    ],
+    [
+     "Ben",
+     "Und das Eis am letzten Tag? 2 Euro pro Person."
+    ],
+    [
+     "Amira",
+     "Dann kommt noch 2x dazu: 300 plus 25x plus 2x. Das sind 300 plus 27x."
+    ]
+   ]
+  },
+  "ma6-06l": {
+   "titel": "Setze die Zahl ein",
+   "art": "lesen",
+   "lektion": 6,
+   "dauer": 65.2,
+   "text": [
+    [
+     "",
+     "Setze die Zahl ein"
+    ],
+    [
+     "",
+     "Einen Term berechnen A(x). Einen Term berechnen heißt: jedes x durch eine Zahl ersetzen (am besten in Klammern) und dann mit „Punkt vor Strich\" ausrechnen."
+    ],
+    [
+     "",
+     "1. Einsetzen. Ersetze jedes x durch die gegebene Zahl (am besten in Klammern). Beispiel: A(x) = 4x + 2, für x = 5: A(5) = 4·(5) + 2."
+    ],
+    [
+     "",
+     "2. Ausrechnen mit Punkt vor Strich. Erst mal, dann plus/minus. Beispiel: A(5) = 4·5 + 2 = 20 + 2 = 22."
+    ],
+    [
+     "",
+     "3. Auch mit negativen Zahlen. Klammern helfen, das Vorzeichen richtig zu behandeln. Beispiel: A(−5) = 4·(−5) + 2 = −20 + 2 = −18."
+    ]
+   ]
+  },
+  "ma6-06h": {
+   "titel": "Jetzt setzen wir ein!",
+   "art": "hoeren",
+   "lektion": 6,
+   "dauer": 50.6,
+   "text": [
+    [
+     "Frau Kremer",
+     "Unser Term für die Kosten war: 300 plus 27x. Es fahren 20 Schüler mit."
+    ],
+    [
+     "Amira",
+     "Dann setze ich für x die 20 ein: 300 plus 27 mal 20."
+    ],
+    [
+     "Frau Kremer",
+     "Und denk an Punkt vor Strich!"
+    ],
+    [
+     "Amira",
+     "Zuerst 27 mal 20, das sind 540. Plus 300 … das sind 840 Euro."
+    ],
+    [
+     "Frau Kremer",
+     "Richtig. Und wenn nur 15 mitfahren?"
+    ],
+    [
+     "Amira",
+     "27 mal 15 sind 405, plus 300 sind 705 Euro."
+    ],
+    [
+     "Frau Kremer",
+     "Gut. Pro Person ist es aber teurer, wenn weniger mitfahren – der Bus kostet ja immer 300 Euro."
+    ]
+   ]
+  },
+  "ma6-07l": {
+   "titel": "Äpfel zu Äpfeln",
+   "art": "lesen",
+   "lektion": 7,
+   "dauer": 72.8,
+   "text": [
+    [
+     "",
+     "Äpfel zu Äpfeln"
+    ],
+    [
+     "",
+     "Terme zusammenfassen (reduzieren). Zusammenfassen heißt, gleichartige Glieder zu vereinen: x-Glieder mit x-Gliedern, Zahlen mit Zahlen. Jedes Glied nimmt sein Vorzeichen mit. „Äpfel zu Äpfeln, Birnen zu Birnen.\""
+    ],
+    [
+     "",
+     "1. Gleichartige Glieder. Nur Glieder mit demselben Buchstaben kann man zusammenfassen. Zahlen (ohne Buchstabe) gehören zusammen. Beispiel: x-Glieder mit x-Gliedern, Zahlen mit Zahlen."
+    ],
+    [
+     "",
+     "2. Vorzeichen mitnehmen. Jedes Glied behält sein Vorzeichen (das davor). Beispiel: x + 4 − 5x + 6: x-Glieder x − 5x = −4x; Zahlen 4 + 6 = 10 → −4x + 10."
+    ],
+    [
+     "",
+     "3. Ordnen hilft. Sortiere erst die x-Glieder, dann die Zahlen. Beispiel: 2a + 3 + 5a − 1 = (2a + 5a) + (3 − 1) = 7a + 2."
+    ]
+   ]
+  },
+  "ma6-07h": {
+   "titel": "Äpfel zu Äpfeln",
+   "art": "hoeren",
+   "lektion": 7,
+   "dauer": 41.2,
+   "text": [
+    [
+     "Nele",
+     "Herr Becker will 2 Kisten Äpfel, also 2a. Frau Sommer will 5 Kisten: 5a."
+    ],
+    [
+     "Finn",
+     "Und Becher: Herr Becker will 3 Packungen, also 3b."
+    ],
+    [
+     "Nele",
+     "Auf der Liste steht jetzt: 2a plus 3b plus 5a."
+    ],
+    [
+     "Finn",
+     "Das kann man zusammenfassen: Äpfel zu Äpfeln. 2a plus 5a sind 7a."
+    ],
+    [
+     "Nele",
+     "Und die Becher bleiben 3b. Man kann a und b nicht zusammenzählen!"
+    ],
+    [
+     "Finn",
+     "Und die Mensa hat noch eine Kiste Äpfel übrig. Wir kaufen eine Kiste weniger, also minus a. Dann haben wir 6a plus 3b."
+    ]
+   ]
+  },
+  "ma6-08l": {
+   "titel": "Die Klammer öffnen",
+   "art": "lesen",
+   "lektion": 8,
+   "dauer": 72.2,
+   "text": [
+    [
+     "",
+     "Die Klammer öffnen"
+    ],
+    [
+     "",
+     "Klammern auflösen. Steht ein „+\" vor der Klammer, darf man sie einfach weglassen. Steht ein „−\" vor der Klammer, muss man beim Weglassen ALLE Vorzeichen in der Klammer umdrehen. Danach zusammenfassen."
+    ],
+    [
+     "",
+     "1. Plus vor der Klammer. Ein „+\" vor der Klammer: Klammer einfach weglassen, alles bleibt gleich. Beispiel: 2x + (−3x + 5) − 2 = 2x − 3x + 5 − 2 = −x + 3."
+    ],
+    [
+     "",
+     "2. Minus vor der Klammer. Ein „−\" vor der Klammer: Klammer weglassen und drinnen JEDES Vorzeichen umdrehen. Beispiel: 2x − (−3x + 5) − 2 = 2x + 3x − 5 − 2 = 5x − 7."
+    ],
+    [
+     "",
+     "3. Danach zusammenfassen. Nach dem Auflösen die gleichartigen Glieder zusammenfassen. Beispiel: Immer als letzten Schritt reduzieren (Lektion 7)."
+    ]
+   ]
+  },
+  "ma6-08h": {
+   "titel": "Minus vor der Klammer",
+   "art": "hoeren",
+   "lektion": 8,
+   "dauer": 50.3,
+   "text": [
+    [
+     "Ben",
+     "Stell dir vor, eine Person hat 20 Euro. Sie bezahlt eine Rechnung: 8 Euro, aber sie bekommt 3 Euro Rabatt."
+    ],
+    [
+     "Lina",
+     "Also 20 minus, Klammer auf, 8 minus 3, Klammer zu."
+    ],
+    [
+     "Ben",
+     "Genau. Und wenn du die Klammer auflöst?"
+    ],
+    [
+     "Lina",
+     "Minus vor der Klammer dreht alle Vorzeichen um: 20 minus 8 plus 3."
+    ],
+    [
+     "Ben",
+     "Und das sind?"
+    ],
+    [
+     "Lina",
+     "15 Euro. Mit der Klammer: 8 minus 3 sind 5, und 20 minus 5 sind auch 15. Es stimmt!"
+    ],
+    [
+     "Ben",
+     "Und bei Plus vor der Klammer bleibt alles gleich: 20 plus, Klammer auf, 8 minus 3, Klammer zu, sind 20 plus 8 minus 3."
+    ]
+   ]
+  }
+ }
+}

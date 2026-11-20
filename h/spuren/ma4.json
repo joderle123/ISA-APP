@@ -1,0 +1,998 @@
+{
+ "modul": "ma4",
+ "titel": {
+  "de": "Teilbarkeit, Brüche, Prozente und Dreiecke",
+  "fr": "Divisibilité, fractions, pourcentages et triangles"
+ },
+ "sprache": "de",
+ "spuren": {
+  "ma4-01l": {
+   "titel": "Bonbons gerecht teilen",
+   "art": "lesen",
+   "lektion": 1,
+   "dauer": 72.7,
+   "text": [
+    [
+     "",
+     "Bonbons gerecht teilen"
+    ],
+    [
+     "",
+     "Teilbarkeit. Eine Zahl ist durch eine andere teilbar, wenn die Division ohne Rest aufgeht. Bei 2, 5 und 10 erkennt man das an der letzten Ziffer (Endziffer)."
+    ],
+    [
+     "",
+     "1. Teilbar durch 2. Eine Zahl ist durch 2 teilbar (gerade), wenn sie auf 0, 2, 4, 6 oder 8 endet. Beispiel: 24 endet auf 4 → durch 2 teilbar ✓.  37 endet auf 7 → NICHT durch 2 ✗."
+    ],
+    [
+     "",
+     "2. Teilbar durch 5. Eine Zahl ist durch 5 teilbar, wenn sie auf 0 oder 5 endet. Beispiel: 45 endet auf 5 → durch 5 ✓.  52 endet auf 2 → nicht durch 5 ✗."
+    ],
+    [
+     "",
+     "3. Teilbar durch 10. Eine Zahl ist durch 10 teilbar, wenn sie auf 0 endet. Beispiel: 80 endet auf 0 → durch 10 ✓.  85 endet auf 5 → nicht durch 10 ✗."
+    ]
+   ]
+  },
+  "ma4-01h": {
+   "titel": "Geht das auf?",
+   "art": "hoeren",
+   "lektion": 1,
+   "dauer": 38.8,
+   "text": [
+    [
+     "Herr Kuedes",
+     "Heute sind 24 Schüler da. Können wir Paare bilden, also Zweierteams?"
+    ],
+    [
+     "Ben",
+     "24 endet auf 4, das ist gerade. Also geht es durch 2: 12 Paare."
+    ],
+    [
+     "Herr Kuedes",
+     "Und Fünferteams?"
+    ],
+    [
+     "Ben",
+     "Nein. Eine Zahl ist nur durch 5 teilbar, wenn sie auf 0 oder 5 endet."
+    ],
+    [
+     "Herr Kuedes",
+     "Richtig. Morgen kommt die Parallelklasse dazu, dann sind wir 30."
+    ],
+    [
+     "Ben",
+     "30 endet auf 0. Das geht durch 2, durch 5 und durch 10! Wir können 3 Zehnerteams für Fußball bilden."
+    ],
+    [
+     "Herr Kuedes",
+     "Perfekt. Und 6 Fünferteams für Basketball."
+    ]
+   ]
+  },
+  "ma4-02l": {
+   "titel": "Ein Rätsel",
+   "art": "lesen",
+   "lektion": 2,
+   "dauer": 83.3,
+   "text": [
+    [
+     "",
+     "Ein Rätsel"
+    ],
+    [
+     "",
+     "Quersumme. Die Quersumme ist die Summe aller Ziffern einer Zahl. Ist die Quersumme durch 3 (bzw. 9) teilbar, dann ist auch die ganze Zahl durch 3 (bzw. 9) teilbar."
+    ],
+    [
+     "",
+     "1. Quersumme bilden. Die Quersumme ist die Summe aller Ziffern einer Zahl. Beispiel: Quersumme von 4.572 = 4 + 5 + 7 + 2 = 18."
+    ],
+    [
+     "",
+     "2. Teilbar durch 3. Eine Zahl ist durch 3 teilbar, wenn ihre Quersumme durch 3 teilbar ist. Beispiel: 4.572 → Quersumme 18. Ist 18 durch 3 teilbar? Ja (18 = 3·6). Also ist 4.572 durch 3 teilbar ✓."
+    ],
+    [
+     "",
+     "3. Teilbar durch 9. Eine Zahl ist durch 9 teilbar, wenn ihre Quersumme durch 9 teilbar ist. Beispiel: 4.572 → Quersumme 18. Ist 18 durch 9 teilbar? Ja (18 = 9·2). Also ist 4.572 auch durch 9 teilbar ✓."
+    ]
+   ]
+  },
+  "ma4-02h": {
+   "titel": "Die Quersumme verrät es",
+   "art": "hoeren",
+   "lektion": 2,
+   "dauer": 47.6,
+   "text": [
+    [
+     "Amira",
+     "Wir haben 735 Euro. Können wir das auf drei Projekte gleich verteilen, ohne Cent?"
+    ],
+    [
+     "Yusuf",
+     "Ich bilde die Quersumme: 7 plus 3 plus 5 sind 15. 15 ist durch 3 teilbar. Also ja!"
+    ],
+    [
+     "Amira",
+     "Dann bekommt jedes Projekt 735 geteilt durch 3 … 245 Euro."
+    ],
+    [
+     "Yusuf",
+     "Und durch 9? 15 ist nicht durch 9 teilbar. Also geht 735 nicht durch 9."
+    ],
+    [
+     "Amira",
+     "Und wenn wir noch 3 Euro bekommen? Dann haben wir 738 Euro."
+    ],
+    [
+     "Yusuf",
+     "Quersumme: 7 plus 3 plus 8 sind 18. 18 ist durch 9 teilbar! Dann geht es auch durch 9."
+    ]
+   ]
+  },
+  "ma4-03l": {
+   "titel": "Detektiv-Zahlen",
+   "art": "lesen",
+   "lektion": 3,
+   "dauer": 91.7,
+   "text": [
+    [
+     "",
+     "Detektiv-Zahlen"
+    ],
+    [
+     "",
+     "Teilbarkeit durch 4, 6 und 25. Durch 4: die letzten beiden Ziffern sind durch 4 teilbar. Durch 6: die Zahl ist durch 2 UND durch 3 teilbar. Durch 25: die Zahl endet auf 00, 25, 50 oder 75."
+    ],
+    [
+     "",
+     "1. Teilbar durch 4. Eine Zahl ist durch 4 teilbar, wenn ihre letzten beiden Ziffern durch 4 teilbar sind (oder 00). Beispiel: 516 → letzte zwei Ziffern 16, und 16 = 4·4 → durch 4 ✓. 530 → 30 ist nicht durch 4 → ✗."
+    ],
+    [
+     "",
+     "2. Teilbar durch 6. Eine Zahl ist durch 6 teilbar, wenn sie durch 2 UND durch 3 teilbar ist. Beispiel: 132 → endet auf 2 (durch 2 ✓), Quersumme 6 (durch 3 ✓) → durch 6 ✓."
+    ],
+    [
+     "",
+     "3. Teilbar durch 25. Eine Zahl ist durch 25 teilbar, wenn sie auf 00, 25, 50 oder 75 endet. Beispiel: 175 endet auf 75 → durch 25 ✓. 120 endet auf 20 → ✗."
+    ]
+   ]
+  },
+  "ma4-03h": {
+   "titel": "132 Gäste",
+   "art": "hoeren",
+   "lektion": 3,
+   "dauer": 58.7,
+   "text": [
+    [
+     "Herr Becker",
+     "Wir haben 132 Gäste. An einen kleinen Tisch passen 4 Personen. Geht das auf?"
+    ],
+    [
+     "Nele",
+     "Ich schaue auf die letzten zwei Ziffern: 32. 32 ist durch 4 teilbar. Also ja: 33 Tische."
+    ],
+    [
+     "Herr Becker",
+     "Und die großen Tische für 6 Personen?"
+    ],
+    [
+     "Nele",
+     "Durch 6 heißt: durch 2 und durch 3. 132 ist gerade, und die Quersumme ist 6. Also ja: 22 Tische."
+    ],
+    [
+     "Herr Becker",
+     "Und die Lose? Sie kommen in Rollen zu 25 Stück. Wir brauchen 132 Lose."
+    ],
+    [
+     "Nele",
+     "132 endet auf 32, nicht auf 00, 25, 50 oder 75. Das geht nicht auf. Wir brauchen 6 Rollen, dann haben wir 150 Lose."
+    ]
+   ]
+  },
+  "ma4-04l": {
+   "titel": "Pizza teilen",
+   "art": "lesen",
+   "lektion": 4,
+   "dauer": 69.8,
+   "text": [
+    [
+     "",
+     "Pizza teilen"
+    ],
+    [
+     "",
+     "Zähler und Nenner. Ein Bruch besteht aus Zähler (oben) und Nenner (unten), getrennt durch den Bruchstrich. Der Nenner sagt, in wie viele gleiche Teile geteilt wird, der Zähler, wie viele davon gemeint sind."
+    ],
+    [
+     "",
+     "1. Der Nenner sagt: in wie viele Teile. Der Nenner (unten) sagt, in wie viele gleiche Teile das Ganze geteilt ist. Beispiel: Bei 3/4 ist die Pizza in 4 Teile geteilt → Nenner 4."
+    ],
+    [
+     "",
+     "2. Der Zähler sagt: wie viele davon. Der Zähler (oben) sagt, wie viele dieser Teile gemeint sind. Beispiel: Bei 3/4 nimmst du 3 Teile → Zähler 3."
+    ],
+    [
+     "",
+     "3. Bruchteil einer Menge. Ein Bruch von einer Anzahl: durch den Nenner teilen, mit dem Zähler malnehmen. Beispiel: 1/3 von 12 Sternen: 12 ÷ 3 = 4. Also 4 Sterne. 2/3 von 12 = 2·4 = 8 Sterne."
+    ]
+   ]
+  },
+  "ma4-04h": {
+   "titel": "Drei Achtel sind weg!",
+   "art": "hoeren",
+   "lektion": 4,
+   "dauer": 31.7,
+   "text": [
+    [
+     "Finn",
+     "Die große Pizza ist in 8 gleiche Stücke geschnitten."
+    ],
+    [
+     "Mia",
+     "Ich habe schon 3 Stücke gegessen. Das sind drei Achtel."
+    ],
+    [
+     "Finn",
+     "Der Nenner ist 8, weil die Pizza in 8 Teile geteilt ist. Der Zähler ist 3, weil du 3 Stücke hast."
+    ],
+    [
+     "Mia",
+     "Genau. Wie viel ist noch da?"
+    ],
+    [
+     "Finn",
+     "8 minus 3 … fünf Achtel. Ich nehme zwei Stücke, das sind zwei Achtel."
+    ],
+    [
+     "Mia",
+     "Dann bleiben noch drei Achtel für Lea und Tom."
+    ]
+   ]
+  },
+  "ma4-05l": {
+   "titel": "Wer hat mehr?",
+   "art": "lesen",
+   "lektion": 5,
+   "dauer": 67.0,
+   "text": [
+    [
+     "",
+     "Wer hat mehr?"
+    ],
+    [
+     "",
+     "Gleichnamige Brüche. Brüche mit gleichem Nenner heißen gleichnamig. Sie lassen sich leicht vergleichen: Der Bruch mit dem größeren Zähler ist größer."
+    ],
+    [
+     "",
+     "1. Gleichnamige Brüche vergleichen. Wenn der Nenner gleich ist, ist der Bruch mit dem größeren Zähler größer. Beispiel: 5/8 > 3/8, weil 5 > 3. Der Nenner (8) bleibt gleich."
+    ],
+    [
+     "",
+     "2. Auf dem Zahlenstrahl. Teile die Strecke von 0 bis 1 in so viele Teile wie der Nenner. Zähle die Teile ab. Beispiel: 3/8: die Strecke 0–1 in 8 Teile teilen, 3 Teile abzählen."
+    ],
+    [
+     "",
+     "3. Ordnen. Bei gleichem Nenner ordnest du einfach nach den Zählern. Beispiel: 2/5, 4/5, 1/5 von klein nach groß: 1/5 < 2/5 < 4/5."
+    ]
+   ]
+  },
+  "ma4-05h": {
+   "titel": "Wer ist schneller fertig?",
+   "art": "hoeren",
+   "lektion": 5,
+   "dauer": 33.4,
+   "text": [
+    [
+     "Sami",
+     "Mein Download-Balken ist in 5 Teile geteilt. Zwei Fünftel sind schon fertig."
+    ],
+    [
+     "Lea",
+     "Bei mir sind es schon vier Fünftel!"
+    ],
+    [
+     "Sami",
+     "Der Nenner ist gleich, also vergleichen wir nur die Zähler: 4 ist mehr als 2. Du bist weiter."
+    ],
+    [
+     "Lea",
+     "Und Ben hat geschrieben: Bei ihm ist es ein Fünftel."
+    ],
+    [
+     "Sami",
+     "Dann ist die Reihenfolge: Ben mit einem Fünftel, ich mit zwei Fünfteln, du mit vier Fünfteln."
+    ],
+    [
+     "Lea",
+     "Und bei fünf Fünfteln ist der Download fertig – das ist ein Ganzes!"
+    ]
+   ]
+  },
+  "ma4-06l": {
+   "titel": "Der gleiche Anteil, andere Zahlen",
+   "art": "lesen",
+   "lektion": 6,
+   "dauer": 73.1,
+   "text": [
+    [
+     "",
+     "Der gleiche Anteil, andere Zahlen"
+    ],
+    [
+     "",
+     "Erweitern und Kürzen. Erweitern: Zähler und Nenner mit derselben Zahl malnehmen. Kürzen: beide durch dieselbe Zahl teilen. Der Wert des Bruchs bleibt gleich – es entstehen gleichwertige Brüche."
+    ],
+    [
+     "",
+     "1. Erweitern. Zähler UND Nenner mit derselben Zahl malnehmen. Der Wert bleibt gleich. Beispiel: 1/2 mit 3 erweitern: (1·3)/(2·3) = 3/6. Gleich viel!"
+    ],
+    [
+     "",
+     "2. Kürzen. Zähler UND Nenner durch dieselbe Zahl teilen. Der Wert bleibt gleich. Beispiel: 6/8 durch 2 kürzen: (6÷2)/(8÷2) = 3/4."
+    ],
+    [
+     "",
+     "3. Gleichwertig erkennen. Zwei Brüche sind gleichwertig, wenn man den einen durch Erweitern/Kürzen in den anderen verwandeln kann. Beispiel: 2/3 und 4/6 sind gleich, denn 2/3 mit 2 erweitert = 4/6."
+    ]
+   ]
+  },
+  "ma4-06h": {
+   "titel": "Wer hat mehr?",
+   "art": "hoeren",
+   "lektion": 6,
+   "dauer": 40.5,
+   "text": [
+    [
+     "Noah",
+     "Das ist unfair! Du hast vier Stücke, ich nur zwei!"
+    ],
+    [
+     "Chloe",
+     "Warte. Meine Pizza war in 8 Stücke geschnitten. Ich habe vier Achtel."
+    ],
+    [
+     "Noah",
+     "Und meine in 4 Stücke. Ich habe zwei Viertel."
+    ],
+    [
+     "Chloe",
+     "Zwei Viertel – erweitere mit 2: Dann sind es vier Achtel. Genau so viel wie ich!"
+    ],
+    [
+     "Noah",
+     "Hm. Und beides ist die Hälfte der Pizza?"
+    ],
+    [
+     "Chloe",
+     "Richtig. Vier Achtel kann man durch 4 kürzen: ein Halb. Wir haben gleich viel."
+    ],
+    [
+     "Noah",
+     "Okay … Frieden. Aber deine Stücke sind kleiner!"
+    ]
+   ]
+  },
+  "ma4-07l": {
+   "titel": "Zwei Stücke Kuchen",
+   "art": "lesen",
+   "lektion": 7,
+   "dauer": 59.3,
+   "text": [
+    [
+     "",
+     "Zwei Stücke Kuchen"
+    ],
+    [
+     "",
+     "Gleichnamige Brüche addieren. Haben zwei Brüche denselben Nenner, addiert (oder subtrahiert) man nur die Zähler; der Nenner bleibt gleich. Am Ende, wenn möglich, kürzen."
+    ],
+    [
+     "",
+     "1. Addieren. Bei gleichem Nenner: Zähler addieren, Nenner bleibt gleich. Beispiel: 2/8 + 3/8 = 5/8. Nur oben addieren, unten bleibt 8."
+    ],
+    [
+     "",
+     "2. Subtrahieren. Bei gleichem Nenner: Zähler subtrahieren, Nenner bleibt gleich. Beispiel: 7/10 − 4/10 = 3/10."
+    ],
+    [
+     "",
+     "3. Am Ende kürzen. Wenn möglich, das Ergebnis kürzen. Beispiel: 2/8 + 2/8 = 4/8 = 1/2 (gekürzt)."
+    ]
+   ]
+  },
+  "ma4-07h": {
+   "titel": "Drei Zehntel plus vier Zehntel",
+   "art": "hoeren",
+   "lektion": 7,
+   "dauer": 33.7,
+   "text": [
+    [
+     "Jana",
+     "Ins Glas kommen drei Zehntel Liter Orangensaft."
+    ],
+    [
+     "Ben",
+     "Und vier Zehntel Liter Apfelsaft."
+    ],
+    [
+     "Jana",
+     "Zusammen: drei Zehntel plus vier Zehntel sind sieben Zehntel Liter. Der Nenner bleibt 10."
+    ],
+    [
+     "Ben",
+     "Dann noch ein Zehntel Liter Wasser. Das sind acht Zehntel."
+    ],
+    [
+     "Jana",
+     "Wir trinken jetzt zwei Zehntel. Acht Zehntel minus zwei Zehntel …"
+    ],
+    [
+     "Ben",
+     "… sind sechs Zehntel. Gekürzt: drei Fünftel Liter bleiben übrig."
+    ]
+   ]
+  },
+  "ma4-08l": {
+   "titel": "0,5 € oder ein halber Euro?",
+   "art": "lesen",
+   "lektion": 8,
+   "dauer": 86.5,
+   "text": [
+    [
+     "",
+     "0,5 € oder ein halber Euro?"
+    ],
+    [
+     "",
+     "Bruch und Dezimalzahl. Brüche und Dezimalzahlen beschreiben dieselbe Menge in anderer Schreibweise. Wichtig: 1/2 = 0,5; 1/4 = 0,25; 3/4 = 0,75; 1/10 = 0,1."
+    ],
+    [
+     "",
+     "1. Zehntel und Hundertstel. Ein Zehntel = 1/10 = 0,1. Ein Hundertstel = 1/100 = 0,01. Beispiel: 3/10 = 0,3.  7/100 = 0,07.  25/100 = 0,25."
+    ],
+    [
+     "",
+     "2. Die wichtigsten Brüche auswendig. Diese solltest du kennen wie deinen Namen. Beispiel: 1/2 = 0,5  ·  1/4 = 0,25  ·  3/4 = 0,75  ·  1/10 = 0,1."
+    ],
+    [
+     "",
+     "3. Umwandeln über den Nenner 10 oder 100. Erweitere so, dass unten 10 oder 100 steht. Beispiel: 1/5 = 2/10 = 0,2.  3/25 = 12/100 = 0,12."
+    ]
+   ]
+  },
+  "ma4-08h": {
+   "titel": "Ein Viertel Kilo, bitte!",
+   "art": "hoeren",
+   "lektion": 8,
+   "dauer": 47.7,
+   "text": [
+    [
+     "Lina",
+     "Guten Tag! Ein Viertel Kilo Käse, bitte."
+    ],
+    [
+     "Verkäuferin",
+     "Gern. Die Waage zeigt 0,250 Kilogramm. Ein Viertel ist 0,25."
+    ],
+    [
+     "Lina",
+     "Und ein halbes Kilo Tomaten."
+    ],
+    [
+     "Verkäuferin",
+     "Ein Halb ist 0,5. Hier: 0,5 Kilogramm. Noch etwas?"
+    ],
+    [
+     "Lina",
+     "Ja, drei Viertel Kilo Äpfel."
+    ],
+    [
+     "Verkäuferin",
+     "Drei Viertel sind 0,75. Die Waage zeigt 0,75 Kilogramm. Perfekt!"
+    ],
+    [
+     "Lina",
+     "Dann habe ich zusammen 0,25 plus 0,5 plus 0,75 … 1,5 Kilogramm, also eineinhalb Kilo!"
+    ]
+   ]
+  },
+  "ma4-09l": {
+   "titel": "Überall Prozente",
+   "art": "lesen",
+   "lektion": 9,
+   "dauer": 76.4,
+   "text": [
+    [
+     "",
+     "Überall Prozente"
+    ],
+    [
+     "",
+     "Prozent. Prozent bedeutet „von hundert\". x % ist der Bruch x/100. So ist 25 % = 25/100 = 1/4 = 0,25. 50 % ist die Hälfte, 10 % ein Zehntel."
+    ],
+    [
+     "",
+     "1. Prozent = Hundertstel. x % bedeutet x von 100, also der Bruch x/100. Beispiel: 25 % = 25/100 = 1/4 = 0,25."
+    ],
+    [
+     "",
+     "2. Das 100er-Feld. Ein Quadrat aus 100 Kästchen: jedes Kästchen ist 1 %. Beispiel: 50 gefärbte Kästchen = 50 % = die Hälfte."
+    ],
+    [
+     "",
+     "3. Wichtige Prozente. Diese kannst du sofort in Brüche übersetzen. Beispiel: 50 % = 1/2 · 25 % = 1/4 · 10 % = 1/10 · 100 % = das Ganze."
+    ]
+   ]
+  },
+  "ma4-09h": {
+   "titel": "Nur noch 10 Prozent!",
+   "art": "hoeren",
+   "lektion": 9,
+   "dauer": 34.9,
+   "text": [
+    [
+     "Mia",
+     "Oh nein, mein Akku hat nur noch 10 Prozent. Das ist ein Zehntel!"
+    ],
+    [
+     "Noah",
+     "Meiner hat noch 50 Prozent – die Hälfte."
+    ],
+    [
+     "Mia",
+     "Kannst du mir deine Powerbank geben? Sie ist zu 75 Prozent voll."
+    ],
+    [
+     "Noah",
+     "Klar. 75 Prozent sind drei Viertel."
+    ],
+    [
+     "Mia",
+     "Und schau, mein Spiel ist zu 25 Prozent geladen. Ein Viertel …"
+    ],
+    [
+     "Noah",
+     "Bei 100 Prozent ist alles voll – das Ganze. Lad lieber den Akku zuerst!"
+    ]
+   ]
+  },
+  "ma4-10l": {
+   "titel": "10 % Trinkgeld",
+   "art": "lesen",
+   "lektion": 10,
+   "dauer": 89.1,
+   "text": [
+    [
+     "",
+     "10 % Trinkgeld"
+    ],
+    [
+     "",
+     "Prozentwert. Der Prozentwert ist „wie viel x % von einer Menge sind\". Man rechnet x/100 · Menge. Kurz: 50 % = ÷2, 25 % = ÷4, 10 % = ÷10, 1 % = ÷100."
+    ],
+    [
+     "",
+     "1. Über den Bruch rechnen. x % von einer Menge = x/100 · Menge. Beispiel: 10 % von 50 € = 10/100 · 50 € = 1/10 · 50 € = 5 €."
+    ],
+    [
+     "",
+     "2. Der 1-%-Trick. 1 % = die Menge ÷ 100. Dann mit dem Prozentsatz malnehmen. Beispiel: 20 % von 80 €: 1 % = 80 ÷ 100 = 0,80 €. 20 % = 0,80 · 20 = 16 €."
+    ],
+    [
+     "",
+     "3. Kopfrechen-Tricks. Wichtige Prozente schnell im Kopf. Beispiel: 50 % = ÷2 · 25 % = ÷4 · 10 % = ÷10 · 1 % = ÷100."
+    ]
+   ]
+  },
+  "ma4-10h": {
+   "titel": "20 Prozent fahren Rad",
+   "art": "hoeren",
+   "lektion": 10,
+   "dauer": 51.4,
+   "text": [
+    [
+     "Moderatorin",
+     "Hallo, hier ist das Schulradio! 250 Schüler haben bei unserer Umfrage mitgemacht. Yusuf, wie kommen sie zur Schule?"
+    ],
+    [
+     "Yusuf",
+     "40 Prozent kommen mit dem Bus. 10 Prozent von 250 sind 25, also sind 40 Prozent 100 Schüler."
+    ],
+    [
+     "Moderatorin",
+     "Und mit dem Fahrrad?"
+    ],
+    [
+     "Yusuf",
+     "20 Prozent. Das sind 2 mal 25, also 50 Schüler."
+    ],
+    [
+     "Moderatorin",
+     "Und zu Fuß?"
+    ],
+    [
+     "Yusuf",
+     "30 Prozent, also 75 Schüler. Und der Rest, 10 Prozent, kommt mit dem Auto: 25 Schüler."
+    ],
+    [
+     "Moderatorin",
+     "Super! Prüfen wir: 100 plus 50 plus 75 plus 25 sind 250. Stimmt genau!"
+    ]
+   ]
+  },
+  "ma4-11l": {
+   "titel": "−30 % auf alles!",
+   "art": "lesen",
+   "lektion": 11,
+   "dauer": 81.6,
+   "text": [
+    [
+     "",
+     "−30 % auf alles!"
+    ],
+    [
+     "",
+     "Rabatt (Reduktion). Ein Rabatt ist ein Preisnachlass in Prozent. Der neue Preis ist immer kleiner: neuer Preis = alter Preis − Rabatt. Oder direkt: (100 % − Rabatt) vom Preis."
+    ],
+    [
+     "",
+     "1. Weg 1: Rabatt abziehen. Erst den Rabatt berechnen, dann vom Preis abziehen. Beispiel: 25 % von 60 € = 15 €. Neuer Preis = 60 € − 15 € = 45 €."
+    ],
+    [
+     "",
+     "2. Weg 2: Restprozent rechnen. Bei 25 % Rabatt zahlst du noch 75 %. Direkt 75 % rechnen. Beispiel: 100 % − 25 % = 75 %. 75 % von 60 € = 45 €."
+    ],
+    [
+     "",
+     "3. Immer kontrollieren. Der neue Preis muss KLEINER als der alte sein. Beispiel: 45 € < 60 € ✓ – passt."
+    ]
+   ]
+  },
+  "ma4-11h": {
+   "titel": "Minus 25 Prozent!",
+   "art": "hoeren",
+   "lektion": 11,
+   "dauer": 42.4,
+   "text": [
+    [
+     "Verkäuferin",
+     "Heute gibt es 25 Prozent Rabatt auf alle Schuhe!"
+    ],
+    [
+     "Chloe",
+     "Diese Schuhe kosten 80 Euro. 25 Prozent sind ein Viertel: 80 geteilt durch 4 sind 20 Euro Rabatt."
+    ],
+    [
+     "Verkäuferin",
+     "Genau. Dann zahlst du nur noch 60 Euro."
+    ],
+    [
+     "Chloe",
+     "Und die Jacke? Sie kostet 60 Euro, mit 30 Prozent Rabatt."
+    ],
+    [
+     "Verkäuferin",
+     "10 Prozent sind 6 Euro, also sind 30 Prozent 18 Euro."
+    ],
+    [
+     "Chloe",
+     "60 minus 18 … dann kostet die Jacke 42 Euro. Ich nehme beides: 102 Euro."
+    ]
+   ]
+  },
+  "ma4-12l": {
+   "titel": "Wenn es teurer wird",
+   "art": "lesen",
+   "lektion": 12,
+   "dauer": 78.7,
+   "text": [
+    [
+     "",
+     "Wenn es teurer wird"
+    ],
+    [
+     "",
+     "Aufschlag (Erhöhung). Ein Aufschlag ist eine Preiserhöhung in Prozent (z. B. MwSt). Der neue Preis ist immer größer: neuer Preis = alter Preis + Aufschlag. Oder direkt: (100 % + Erhöhung) vom Preis."
+    ],
+    [
+     "",
+     "1. Weg 1: Aufschlag addieren. Erst die Erhöhung berechnen, dann zum Preis dazuzählen. Beispiel: 10 % von 2 € = 0,20 €. Neuer Preis = 2 € + 0,20 € = 2,20 €."
+    ],
+    [
+     "",
+     "2. Weg 2: über 100 % + x %. Bei 10 % Erhöhung zahlst du 110 %. Direkt rechnen. Beispiel: 100 % + 10 % = 110 %. 110 % von 2 € = 2,20 €."
+    ],
+    [
+     "",
+     "3. Kontrolle. Der neue Preis muss GRÖSSER als der alte sein. Beispiel: 2,20 € > 2 € ✓."
+    ]
+   ]
+  },
+  "ma4-12h": {
+   "titel": "Alles wird teurer",
+   "art": "hoeren",
+   "lektion": 12,
+   "dauer": 39.8,
+   "text": [
+    [
+     "Ben",
+     "Eine Pizza Margherita, bitte. Die kostet 12 Euro, oder?"
+    ],
+    [
+     "Pizzabäcker",
+     "Leider nicht mehr. Wir haben die Preise um 10 Prozent erhöht."
+    ],
+    [
+     "Ben",
+     "10 Prozent von 12 Euro sind 1,20 Euro. Dann kostet sie jetzt 13,20 Euro."
+    ],
+    [
+     "Pizzabäcker",
+     "Richtig. Das Mehl und der Strom sind teurer geworden."
+    ],
+    [
+     "Ben",
+     "Und das Getränk? Vorher 2 Euro."
+    ],
+    [
+     "Pizzabäcker",
+     "Auch plus 10 Prozent: 2,20 Euro."
+    ],
+    [
+     "Ben",
+     "Zusammen 15,40 Euro. Gut, dass ich 20 Euro dabeihabe!"
+    ]
+   ]
+  },
+  "ma4-13l": {
+   "titel": "Nicht jedes Dreieck ist gleich",
+   "art": "lesen",
+   "lektion": 13,
+   "dauer": 77.0,
+   "text": [
+    [
+     "",
+     "Nicht jedes Dreieck ist gleich"
+    ],
+    [
+     "",
+     "Dreiecksarten. Nach Winkeln: spitzwinklig (alle < 90°), rechtwinklig (ein Winkel = 90°), stumpfwinklig (ein Winkel > 90°). Nach Seiten: gleichseitig (3 gleich), gleichschenklig (2 gleich), ungleichseitig (alle verschieden)."
+    ],
+    [
+     "",
+     "1. Einteilung nach Winkeln. Man schaut den größten Winkel an. Beispiel: Alle Winkel < 90° → spitzwinklig. Ein Winkel = 90° → rechtwinklig. Ein Winkel > 90° → stumpfwinklig."
+    ],
+    [
+     "",
+     "2. Einteilung nach Seiten. Man vergleicht die Seitenlängen. Beispiel: Alle 3 Seiten gleich → gleichseitig. 2 Seiten gleich → gleichschenklig. Alle verschieden → ungleichseitig."
+    ],
+    [
+     "",
+     "3. Zwei Namen gleichzeitig. Ein Dreieck hat oft einen Winkel-Namen UND einen Seiten-Namen. Beispiel: Ein „rechtwinkliges, gleichschenkliges Dreieck\" hat einen 90°-Winkel und zwei gleiche Seiten."
+    ]
+   ]
+  },
+  "ma4-13h": {
+   "titel": "Überall Dreiecke!",
+   "art": "hoeren",
+   "lektion": 13,
+   "dauer": 44.2,
+   "text": [
+    [
+     "Lea",
+     "Schau, das Verkehrsschild „Vorfahrt gewähren“! Es ist ein Dreieck mit drei gleich langen Seiten."
+    ],
+    [
+     "Finn",
+     "Das ist ein gleichseitiges Dreieck. Alle Winkel sind gleich, je 60 Grad."
+    ],
+    [
+     "Lea",
+     "Und das Dach von dem Haus da? Zwei Seiten sind gleich lang, die untere ist länger."
+    ],
+    [
+     "Finn",
+     "Gleichschenklig! Und mein Geodreieck hat einen rechten Winkel und zwei gleiche Seiten."
+    ],
+    [
+     "Lea",
+     "Also ist es rechtwinklig und gleichschenklig – zwei Namen gleichzeitig!"
+    ],
+    [
+     "Finn",
+     "Und der Kleiderbügel im Schaufenster ist ganz flach. Oben hat er einen Winkel, der größer ist als 90 Grad."
+    ],
+    [
+     "Lea",
+     "Ein stumpfwinkliges Dreieck!"
+    ]
+   ]
+  },
+  "ma4-14l": {
+   "titel": "Wie weit ist offen?",
+   "art": "lesen",
+   "lektion": 14,
+   "dauer": 68.5,
+   "text": [
+    [
+     "",
+     "Wie weit ist offen?"
+    ],
+    [
+     "",
+     "Winkel und Grad. Ein Winkel gibt an, wie weit zwei Schenkel geöffnet sind; gemessen wird in Grad (°). Der rechte Winkel misst 90°. Die Winkelsumme im Dreieck ist immer 180°."
+    ],
+    [
+     "",
+     "1. Das Geodreieck anlegen. Den Mittelpunkt (0-Punkt) auf den Scheitelpunkt legen, die Nulllinie auf einen Schenkel. Beispiel: 0-Punkt genau auf die Ecke, Grundlinie exakt auf eine Linie."
+    ],
+    [
+     "",
+     "2. Richtig ablesen. Am anderen Schenkel die Gradzahl ablesen. Auf die richtige Skala achten! Beispiel: Spitzer Winkel (<90°) → Zahl kleiner als 90."
+    ],
+    [
+     "",
+     "3. Winkel zeichnen. Strahl zeichnen, Geodreieck anlegen, Gradzahl markieren, verbinden. Beispiel: 50° zeichnen: Grundlinie legen, bei 50 einen Punkt, mit dem Scheitel verbinden."
+    ]
+   ]
+  },
+  "ma4-14h": {
+   "titel": "30 Grad – nicht mehr!",
+   "art": "hoeren",
+   "lektion": 14,
+   "dauer": 32.1,
+   "text": [
+    [
+     "Herr Becker",
+     "Die Rampe darf nicht zu steil sein. Der Winkel zum Boden soll 30 Grad haben."
+    ],
+    [
+     "Sami",
+     "Ich lege das Geodreieck an: die Null genau auf die Ecke, die Grundlinie auf den Boden."
+    ],
+    [
+     "Herr Becker",
+     "Und was liest du ab?"
+    ],
+    [
+     "Sami",
+     "45 Grad. Das ist zu steil!"
+    ],
+    [
+     "Herr Becker",
+     "Dann machen wir die Rampe länger. Miss noch einmal."
+    ],
+    [
+     "Sami",
+     "Jetzt sind es 30 Grad. Ein spitzer Winkel – perfekt."
+    ],
+    [
+     "Herr Becker",
+     "Und die Stütze hinten steht genau senkrecht: 90 Grad."
+    ]
+   ]
+  },
+  "ma4-15l": {
+   "titel": "Wie hoch ist das Dreieck?",
+   "art": "lesen",
+   "lektion": 15,
+   "dauer": 61.8,
+   "text": [
+    [
+     "",
+     "Wie hoch ist das Dreieck?"
+    ],
+    [
+     "",
+     "Höhe im Dreieck. Die Höhe geht von einer Ecke senkrecht (im 90°-Winkel) auf die gegenüberliegende Seite (die Grundseite). Der rechte Winkel wird mit einem kleinen Kästchen markiert."
+    ],
+    [
+     "",
+     "1. Grundseite wählen. Eine Seite ist die Grundseite (Basis). Die gegenüberliegende Ecke (Spitze) gehört dazu. Beispiel: Grundseite unten, Spitze oben – wie ein Zelt."
+    ],
+    [
+     "",
+     "2. Senkrecht fällen. Von der Spitze aus eine Linie zeichnen, die im 90°-Winkel auf die Grundseite trifft. Beispiel: Geodreieck mit der langen Kante auf die Grundseite, die 90°-Kante zur Spitze schieben."
+    ],
+    [
+     "",
+     "3. Höhe markieren. Der rechte Winkel wird mit dem kleinen Kästchen ⌐ markiert. Beispiel: Das Kästchen zeigt: hier ist es genau 90°."
+    ]
+   ]
+  },
+  "ma4-15h": {
+   "titel": "Wie hoch ist das Zelt?",
+   "art": "hoeren",
+   "lektion": 15,
+   "dauer": 36.7,
+   "text": [
+    [
+     "Finn",
+     "Von vorne ist unser Zelt ein Dreieck. Der Boden ist die Grundseite: 2 Meter breit."
+    ],
+    [
+     "Mia",
+     "Und wie hoch ist es?"
+    ],
+    [
+     "Finn",
+     "Ich messe von der Spitze genau senkrecht nach unten bis zum Boden. Das ist die Höhe: 1,5 Meter."
+    ],
+    [
+     "Mia",
+     "Senkrecht heißt: im rechten Winkel zum Boden, oder?"
+    ],
+    [
+     "Finn",
+     "Genau. Nicht schräg an der Zeltwand entlang – die ist länger, 1,8 Meter."
+    ],
+    [
+     "Mia",
+     "Dann passe ich gerade so hinein: Ich bin 1,48 Meter groß!"
+    ]
+   ]
+  },
+  "ma4-16l": {
+   "titel": "Das halbe Rechteck",
+   "art": "lesen",
+   "lektion": 16,
+   "dauer": 69.8,
+   "text": [
+    [
+     "",
+     "Das halbe Rechteck"
+    ],
+    [
+     "",
+     "Fläche eines Dreiecks. Der Flächeninhalt eines Dreiecks ist die Hälfte des Rechtecks aus Grundseite und Höhe: A = (Grundseite · Höhe) ÷ 2. Die Einheit ist eine Quadrat-Einheit (cm², m²)."
+    ],
+    [
+     "",
+     "1. Die Formel. Fläche des Dreiecks = (Grundseite · Höhe) ÷ 2. Beispiel: A = (g · h) ÷ 2."
+    ],
+    [
+     "",
+     "2. Ein Beispiel. Grundseite und zugehörige Höhe einsetzen. Beispiel: g = 6 cm, h = 4 cm → A = (6 · 4) ÷ 2 = 24 ÷ 2 = 12 cm²."
+    ],
+    [
+     "",
+     "3. Auf die Einheit achten. Flächen werden in Quadrat-Einheiten angegeben (cm², m²). Beispiel: Ergebnis: 12 cm² (nicht cm!)."
+    ]
+   ]
+  },
+  "ma4-16h": {
+   "titel": "Wie viel Stoff?",
+   "art": "hoeren",
+   "lektion": 16,
+   "dauer": 41.8,
+   "text": [
+    [
+     "Frau Sommer",
+     "Ein Wimpel ist ein Dreieck: Die Grundseite oben ist 20 Zentimeter, die Höhe 30 Zentimeter."
+    ],
+    [
+     "Nele",
+     "Grundseite mal Höhe geteilt durch 2: 20 mal 30 sind 600, geteilt durch 2 sind 300 Quadratzentimeter."
+    ],
+    [
+     "Frau Sommer",
+     "Richtig. Wir brauchen 10 Wimpel."
+    ],
+    [
+     "Nele",
+     "10 mal 300 … das sind 3.000 Quadratzentimeter Stoff."
+    ],
+    [
+     "Frau Sommer",
+     "Unser Stoffstück ist 100 Zentimeter mal 60 Zentimeter."
+    ],
+    [
+     "Nele",
+     "Das sind 6.000 Quadratzentimeter. Das reicht sicher – auch wenn beim Schneiden Reste bleiben."
+    ]
+   ]
+  }
+ }
+}
