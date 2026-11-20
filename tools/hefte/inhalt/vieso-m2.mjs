@@ -39,8 +39,8 @@ export const LEKTIONEN = [
       quelle: 'Geschichte (ausgedacht)', titel: 'Gestrandet',
       absaetze: [
         'Stell dir vor: Ein Schiff mit 24 Jugendlichen gerät in einen Sturm. Alle retten sich auf eine kleine Insel. Es gibt Fische, Kokosnüsse, eine Quelle – aber keine Erwachsenen und **keine Regeln**.',
-        'Am ersten Tag ist alles ein Abenteuer. Jeder macht, was er will. Am zweiten Tag gibt es Streit: Die Stärksten nehmen sich die meisten Kokosnüsse. Zwei Jungen schlafen den ganzen Tag, andere sammeln Holz für alle. Das Feuer geht in der Nacht aus, weil niemand aufgepasst hat.',
-        'Am dritten Tag ruft Lina alle zusammen: „So geht das nicht weiter. Wir brauchen Regeln!“ – „Wer bestimmt die?“, fragt Ben. „Ich bin am stärksten, also ich!“ – „Nein“, sagt Jana. „Wir bestimmen sie **zusammen**. Und sie gelten für **alle** – auch für dich.“',
+        'Am ersten Tag ist alles ein Abenteuer. Jeder macht, was er will. Am zweiten Tag gibt es Streit: Die Stärksten nehmen sich die meisten Kokosnüsse. Zwei Jugendliche schlafen den ganzen Tag, andere sammeln Holz für alle. Das Feuer geht in der Nacht aus, weil niemand aufgepasst hat.',
+        'Am dritten Tag ruft Lina alle zusammen: „So geht das nicht weiter. Wir brauchen Regeln!“ – „Wer bestimmt die?“, fragt Ben. Dann ruft er: „Ich bin am stärksten, also ich!“ – „Nein“, sagt Jana. „Wir bestimmen sie **zusammen**. Und sie gelten für **alle** – auch für dich.“',
         'Sie setzen sich in einen Kreis. Jeder darf etwas sagen. Am Ende haben sie fünf Regeln, und sie stimmen ab. Eine Regel heißt: **Wer eine Regel bricht, muss am nächsten Tag Wasser holen.** Ob das funktioniert?',
       ],
       woerter: [['die Regel', 'la règle'], ['die Gemeinschaft', 'la communauté'], ['stranden', 'échouer'], ['der Streit', 'la dispute'], ['abstimmen', 'voter'], ['gelten für', 'valoir pour'], ['eine Regel brechen', 'enfreindre une règle'], ['gerecht', 'juste']],
@@ -116,14 +116,14 @@ export const LEKTIONEN = [
         '### Gleich verteilen',
         'Alle bekommen **gleich viel**. Das ist einfach und oft fair, zum Beispiel beim Wählen: Jede Stimme zählt gleich.',
         '### Nach Bedarf verteilen',
-        'Wer **mehr braucht**, bekommt mehr. Ein Kind mit Brille bekommt eine Brille – nicht alle Kinder. Eine Schülerin mit Legasthenie bekommt mehr Zeit für einen Test. Das ist nicht „gleich“, aber viele finden es gerecht, weil alle dann **die gleiche Chance** haben.',
+        'Wer **mehr braucht**, bekommt mehr. Ein Kind, das schlecht sieht, bekommt eine Brille – nicht alle Kinder. Eine Schülerin mit Legasthenie bekommt mehr Zeit für einen Test. Das ist nicht „gleich“, aber viele finden es gerecht, weil alle dann **die gleiche Chance** haben.',
         '### Nach Leistung verteilen',
-        'Wer **mehr leistet**, bekommt mehr. Wer viel trainiert, spielt im Spiel. Wer mehr arbeitet, verdient mehr.',
+        'Wer **mehr leistet**, bekommt mehr. Wer viel trainiert, darf beim Spiel mitspielen. Wer mehr arbeitet, verdient mehr.',
         'Oft muss man **abwägen**: Welche Art von Gerechtigkeit passt in dieser Situation? Darum ist es wichtig, darüber zu reden – und zu begründen.',
       ],
       woerter: [['gerecht / ungerecht', 'juste / injuste'], ['die Gerechtigkeit', 'la justice'], ['verteilen', 'distribuer, partager'], ['der Bedarf', 'le besoin'], ['die Leistung', 'la performance, le mérite'], ['die Chance', 'la chance, l’occasion'], ['die Legasthenie', 'la dyslexie'], ['abwägen', 'peser le pour et le contre']],
       aufgaben: [
-        { art: 'tabelle', auftrag: 'Welche Art von Gerechtigkeit ist das? Kreuze an.', stufe: 2, kopf: ['Situation', 'gleich', 'nach Bedarf', 'nach Leistung'], breiten: [52, 16, 16, 16], zeilen: [['Jede Person hat bei der Wahl eine Stimme.', '[x]', '', ''], ['Ein Schüler im Rollstuhl bekommt einen Platz am Aufzug.', '', '[x]', ''], ['Die Beste im Wettlauf bekommt eine Medaille.', '', '', '[x]'], ['Alle bekommen ein Stück Kuchen gleicher Größe.', '[x]', '', ''], ['Wer krank war, bekommt mehr Zeit für die Hausaufgabe.', '', '[x]', '']] },
+        { art: 'tabelle', auftrag: 'Welche Art von Gerechtigkeit ist das? Kreuze an.', stufe: 2, kopf: ['Situation', 'gleich', 'nach Bedarf', 'nach Leistung'], breiten: [52, 16, 16, 16], zeilen: [['Jede Person hat bei der Wahl eine Stimme.', '[x]', '', ''], ['Ein Schüler im Rollstuhl darf den Aufzug benutzen.', '', '[x]', ''], ['Die Beste im Wettlauf bekommt eine Medaille.', '', '', '[x]'], ['Alle bekommen ein Stück Kuchen gleicher Größe.', '[x]', '', ''], ['Wer krank war, bekommt mehr Zeit für die Hausaufgabe.', '', '[x]', '']] },
       ],
     },
     hoeren: {
@@ -133,7 +133,7 @@ export const LEKTIONEN = [
       text: [
         ['Finn', 'Frau Sommer, warum darf Nele beim Test zehn Minuten länger schreiben? Das ist unfair!'],
         ['Frau Sommer', 'Gute Frage, Finn. Nele, möchtest du es selbst erklären?'],
-        ['Nele', 'Okay. Ich habe Legasthenie. Ich bin nicht dumm, aber Lesen und Schreiben dauern bei mir viel länger. Die Buchstaben tanzen manchmal.'],
+        ['Nele', 'Okay. Ich habe Legasthenie. Ich bin nicht dumm, aber Lesen und Schreiben dauern bei mir viel länger. Manchmal verwechsle ich Buchstaben.'],
         ['Finn', 'Oh. Das wusste ich nicht.'],
         ['Frau Sommer', 'Stell dir einen Wettlauf vor, bei dem einer einen schweren Rucksack tragen muss. Wenn er ein bisschen früher starten darf, ist das dann unfair?'],
         ['Finn', 'Hm, nein. Dann haben beide die gleiche Chance.'],
@@ -208,7 +208,7 @@ export const LEKTIONEN = [
       text: [
         ['Reporterin', 'Heute ist Tag der Menschenrechte. Welches Recht ist dir am wichtigsten?'],
         ['Amira', 'Für mich die Religionsfreiheit. Ich darf glauben, was ich will – oder auch an nichts glauben. Und niemand darf mich deswegen schlecht behandeln.'],
-        ['Noah', 'Ich finde das Recht auf Bildung am wichtigsten. Mein Brieffreund in einem anderen Land musste mit zwölf Jahren arbeiten statt zur Schule gehen. Das ist so unfair.'],
+        ['Noah', 'Ich finde das Recht auf Bildung am wichtigsten. Mein Brieffreund in einem anderen Land musste mit zwölf Jahren arbeiten, statt zur Schule zu gehen. Das ist so unfair.'],
         ['Chloé', 'Bei mir ist es die Meinungsfreiheit. Ich darf sagen, was ich denke – auch über die Regierung.'],
         ['Reporterin', 'Darf man dann alles sagen?'],
         ['Chloé', 'Nein. Meinungsfreiheit heißt nicht, dass man andere beleidigen oder bedrohen darf. Die Würde der anderen gilt auch.'],
@@ -259,15 +259,15 @@ export const LEKTIONEN = [
       quelle: 'Sachtext (vereinfacht)', titel: 'Das luxemburgische Festjahr',
       absaetze: [
         '**Liichtmëssdag (2. Februar):** Am Abend ziehen Kinder mit Laternen von Haus zu Haus, singen ein Lied und bekommen Süßigkeiten.',
-        '**Buergbrennen (Ende Februar oder März):** Am ersten Sonntag der Fastenzeit werden in vielen Dörfern große Feuer aus Holz und Stroh angezündet – die „Buerg“. Damit verabschiedet man symbolisch den Winter.',
+        '**Buergbrennen (Februar oder März):** Am ersten Sonntag der Fastenzeit werden in vielen Dörfern große Feuer aus Holz und Stroh angezündet – die „Buerg“. Damit verabschiedet man symbolisch den Winter.',
         '**Éimaischen (Ostermontag):** In der Altstadt von Luxemburg und in Nospelt gibt es einen Markt mit kleinen Vogelpfeifen aus Ton, den **Péckvillercher**.',
-        '**Nationalfeiertag (23. Juni):** Luxemburg feiert den Geburtstag des Großherzogs. Am Abend vorher gibt es einen Fackelzug und ein großes Feuerwerk in der Hauptstadt.',
+        '**Nationalfeiertag (23. Juni):** Luxemburg feiert den offiziellen Geburtstag des Großherzogs. Am Abend vorher gibt es einen Fackelzug und ein großes Feuerwerk in der Hauptstadt.',
         '**Schueberfouer (Ende August bis Anfang September):** Eines der größten Volksfeste der Region, mit Karussells und Ständen. Es gibt sie schon seit **1340**.',
         '**Kleeschen (6. Dezember):** Der Nikolaus bringt den Kindern Geschenke – begleitet vom finster aussehenden **Housécker**.',
       ],
       woerter: [['das Fest', 'la fête'], ['die Tradition', 'la tradition'], ['die Laterne', 'la lanterne'], ['die Fastenzeit', 'le carême'], ['das Feuerwerk', 'le feu d’artifice'], ['der Fackelzug', 'la retraite aux flambeaux'], ['das Volksfest', 'la fête foraine'], ['der Nikolaus', 'saint Nicolas']],
       aufgaben: [
-        { art: 'zuordnen', auftrag: 'Welches Fest? Verbinde.', stufe: 1, links: ['Kinder ziehen mit Laternen von Haus zu Haus.', 'Große Feuer verabschieden den Winter.', 'Man kauft Vogelpfeifen aus Ton.', 'Feuerwerk zum Geburtstag des Großherzogs', 'Karussells seit 1340', 'Geschenke vom Nikolaus'], rechts: ['Liichtmëssdag', 'Buergbrennen', 'Éimaischen', 'Nationalfeiertag', 'Schueberfouer', 'Kleeschen'] },
+        { art: 'zuordnen', auftrag: 'Welches Fest? Verbinde.', stufe: 1, links: ['Kinder ziehen mit Laternen von Haus zu Haus.', 'Große Feuer verabschieden den Winter.', 'Man kauft Vogelpfeifen aus Ton.', 'Feuerwerk zum offiziellen Geburtstag des Großherzogs', 'Karussells seit 1340', 'Geschenke vom Nikolaus'], rechts: ['Liichtmëssdag', 'Buergbrennen', 'Éimaischen', 'Nationalfeiertag', 'Schueberfouer', 'Kleeschen'] },
       ],
     },
     hoeren: {
@@ -276,8 +276,8 @@ export const LEKTIONEN = [
       bild: ['oma:froh:sitzen', 'tom:froh:stehen'], sprecher: { 'Frau Schmit': 'w1', Tom: 'm3' },
       text: [
         ['Tom', 'Frau Schmit, welches Fest mochten Sie als Kind am liebsten?'],
-        ['Frau Schmit', 'Den Liichtmëssdag! Wir haben unsere Laternen selbst gebastelt, aus einer Rübe mit einer Kerze drin. Und dann sind wir durchs ganze Dorf gelaufen.'],
-        ['Tom', 'Aus einer Rübe? Heute kauft man die Laternen im Laden.'],
+        ['Frau Schmit', 'Den Liichtmëssdag! Wir haben unsere Laternen selbst gebastelt, aus Holz und Papier, mit einer Kerze drin. Und dann sind wir durchs ganze Dorf gelaufen.'],
+        ['Tom', 'Selbst gebastelt? Heute kauft man die Laternen im Laden.'],
         ['Frau Schmit', 'Ja, und statt Schokolade gab es damals oft Äpfel oder Nüsse. Wir haben uns trotzdem riesig gefreut.'],
         ['Tom', 'Und die Schueberfouer?'],
         ['Frau Schmit', 'Da sind wir einmal im Jahr mit dem Zug in die Stadt gefahren. Das war ein großes Abenteuer. Ich habe mir immer gebrannte Mandeln gewünscht.'],
@@ -286,7 +286,7 @@ export const LEKTIONEN = [
       ],
       vor: [{ art: 'mc', auftrag: 'Was ist ein Erzählcafé? Rate!', stufe: 1, fragen: [{ f: '', o: ['ein Treffen, bei dem Menschen von früher erzählen', 'ein Café, in dem man nur Kaffee trinkt'], r: 0 }] }],
       beim: [
-        { art: 'tabelle', auftrag: 'Hör zu. Früher und heute.', stufe: 1, kopf: ['', 'früher', 'heute'], breiten: [24, 38, 38], zeilen: [['Laterne', '[selbst gebastelt aus einer Rübe mit Kerze]', '[im Laden gekauft]'], ['Belohnung', '[Äpfel oder Nüsse]', '[Schokolade, Süßigkeiten]'], ['Schueberfouer', '[einmal im Jahr mit dem Zug, großes Abenteuer]', '[größer und bunter]']] },
+        { art: 'tabelle', auftrag: 'Hör zu. Früher und heute.', stufe: 1, kopf: ['', 'früher', 'heute'], breiten: [24, 38, 38], zeilen: [['Laterne', '[selbst gebastelt, mit Kerze]', '[im Laden gekauft]'], ['Belohnung', '[Äpfel oder Nüsse]', '[Schokolade, Süßigkeiten]'], ['Schueberfouer', '[einmal im Jahr mit dem Zug, großes Abenteuer]', '[größer und bunter]']] },
         { art: 'fragen', auftrag: 'Was ist laut Frau Schmit das Schönste an Festen?', stufe: 1, fragen: [{ f: '', l: 'dass man zusammenkommt' }] },
       ],
       nach: [{ art: 'sprechen', auftrag: 'Welche Traditionen kennt ihr aus anderen Ländern oder Regionen? Erzählt (freiwillig).', stufe: 2, karten: [
@@ -330,7 +330,7 @@ export const LEKTIONEN = [
       quelle: 'Sachtexte (vereinfacht)', titel: 'Fünf Feste',
       absaetze: [
         '**Weihnachten (Christentum):** Christinnen und Christen feiern am 25. Dezember die Geburt von **Jesus**. Viele schmücken einen Baum, gehen in die Kirche und schenken sich etwas.',
-        '**Zuckerfest (Islam):** Im Monat **Ramadan** fasten viele Musliminnen und Muslime: Von Sonnenaufgang bis Sonnenuntergang essen und trinken sie nichts. Am Ende feiern sie das **Fest des Fastenbrechens** mit Familie, Freunden und Süßigkeiten.',
+        '**Zuckerfest (Islam):** Im Monat **Ramadan** fasten viele Musliminnen und Muslime: Vom Morgengrauen bis zum Sonnenuntergang essen und trinken sie nichts. Am Ende feiern sie das **Fest des Fastenbrechens** mit Familie, Freunden und Süßigkeiten.',
         '**Chanukka (Judentum):** Das Lichterfest dauert acht Tage. An einem besonderen Leuchter, der **Chanukkia**, wird jeden Abend ein Licht mehr angezündet. Es erinnert an ein Wunder im Tempel in Jerusalem.',
         '**Diwali (Hinduismus):** Beim Lichterfest werden Häuser mit Öllampen und Lichterketten geschmückt. Es feiert den Sieg des Lichts über die Dunkelheit und des Guten über das Böse.',
         '**Frühlingsfest (China):** Das chinesische Neujahr wird nach dem Mondkalender gefeiert, zwischen Ende Januar und Februar. Es gibt Feuerwerk, rote Dekoration und Drachentänze. Rot soll Glück bringen.',
@@ -347,7 +347,7 @@ export const LEKTIONEN = [
       situation: 'Für ein Klassenprojekt erzählen drei Jugendliche in Sprachnachrichten von einem Fest, das sie feiern.',
       bild: ['yusuf:froh:handy', 'mia:froh:handy'], sprecher: { Yusuf: 'm3', Lea: 'w3', Mia: 'w2' },
       text: [
-        ['Yusuf', 'Hallo! Ich erzähle vom Zuckerfest. Im Ramadan faste ich schon ein paar Tage mit – die ganzen dreißig Tage muss ich noch nicht. Am Fest ziehen wir neue Kleider an, besuchen Verwandte, und die Kinder bekommen kleine Geschenke. Und es gibt Baklava. Mein Lieblingsteil!'],
+        ['Yusuf', 'Hallo! Ich erzähle vom Zuckerfest. Im Ramadan faste ich schon ein paar Tage mit – den ganzen Monat muss ich noch nicht. Am Fest ziehen wir neue Kleider an, besuchen Verwandte, und die Kinder bekommen kleine Geschenke. Und es gibt Baklava. Mein Lieblingsteil!'],
         ['Lea', 'Hi, ich bin Lea. Bei uns ist Weihnachten das größte Fest. Wir sind nicht so religiös, aber wir gehen am Heiligabend trotzdem in die Kirche, weil meine Oma das schön findet. Danach essen wir zusammen und packen Geschenke aus.'],
         ['Mia', 'Hallo! Meine Freundin hat mich zu Diwali eingeladen. Das war so schön: überall kleine Lichter, bunte Muster aus Farbpulver vor der Tür und ganz viele Süßigkeiten. Ich durfte mithelfen, die Lichter anzuzünden.'],
       ],
@@ -381,13 +381,13 @@ export const LEKTIONEN = [
   },
   // ================================================================ 6
   {
-    thema: 'Religionen kennenlernen · Judentum', titel: 'Das Judentum', untertitel: 'Tora, Synagoge, Schabbat: Du lernst Grundbegriffe des Judentums kennen, besuchst eine Synagoge und entdeckt jüdisches Leben in Luxemburg.',
+    thema: 'Religionen kennenlernen · Judentum', titel: 'Das Judentum', untertitel: 'Tora, Synagoge, Schabbat: Du lernst Grundbegriffe des Judentums kennen, besuchst eine Synagoge und entdeckst jüdisches Leben in Luxemburg.',
     ziel: { de: 'Ich beschreibe wichtige Merkmale des Judentums und begegne der Religion mit Respekt.', fr: 'Je décris des caractéristiques importantes du judaïsme et je respecte cette religion.' },
     bild: ['noah:froh:stehen', 'lehrerin:froh:erklaeren'],
     start: {
       was: 'Was weißt du schon?',
       aufgaben: [
-        { art: 'fragen', auftrag: 'Was weißt du schon über das Judentum? Schreibe auf, was dir einfällt – auch Fragen.', stufe: 1, fragen: [{ f: '', zeilen: 2, l: 'z. B. Synagoge, Tora, Davidstern, Schabbat, Israel, Chanukka …' }] },
+        { art: 'fragen', auftrag: 'Was weißt du schon über das Judentum? Schreibe auf, was dir einfällt – auch Fragen.', stufe: 1, fragen: [{ f: '', zeilen: 2, l: 'z. B. Synagoge, Tora, Davidstern, Schabbat, Hebräisch, Chanukka …' }] },
       ],
     },
     lesen: {
@@ -396,15 +396,15 @@ export const LEKTIONEN = [
       absaetze: [
         'Das **Judentum** ist eine sehr alte Religion. Jüdinnen und Juden glauben an **einen Gott**. Auch das Christentum und der Islam haben ihre Wurzeln im Judentum. Alle drei berufen sich auf **Abraham** und heißen darum **abrahamitische Religionen**.',
         '### Die Tora und die Synagoge',
-        'Die wichtigste Schrift ist die **Tora**, die fünf Bücher Mose. Sie ist auf eine lange Schriftrolle geschrieben, in hebräischer Sprache. Im Gottesdienst wird aus ihr vorgelesen. Das Haus, in dem sich die Gemeinde zum Beten und Lernen trifft, heißt **Synagoge**. Die Gemeinde wird oft von einem **Rabbiner** oder einer Rabbinerin geleitet.',
+        'Die wichtigste Schrift ist die **Tora**, die fünf Bücher Mose. Sie ist auf eine lange Schriftrolle geschrieben, in hebräischer Sprache. Im Gottesdienst wird aus ihr vorgelesen. Das Haus, in dem sich die Gemeinde zum Beten und Lernen trifft, heißt **Synagoge**. Ein **Rabbiner** oder eine Rabbinerin lehrt die Tora und leitet die Gemeinde religiös.',
         '### Schabbat',
-        'Der **Schabbat** ist der Ruhetag. Er beginnt am **Freitagabend** und endet am **Samstagabend**. Viele Familien zünden Kerzen an, essen zusammen und ruhen sich aus. Mit 13 Jahren feiern Jungen ihre **Bar Mizwa**, Mädchen mit 12 ihre **Bat Mizwa**: Ab dann gelten sie in der Religion als erwachsen.',
+        'Der **Schabbat** ist der Ruhetag. Er beginnt am **Freitagabend** und endet am **Samstagabend**. Viele Familien zünden Kerzen an, essen zusammen und ruhen sich aus. Mit 13 Jahren feiern Jungen ihre **Bar Mizwa**, Mädchen mit 12 ihre **Bat Mizwa**: Ab dann gelten sie in der Religion als erwachsen. Wichtige Feste sind **Pessach**, **Jom Kippur** (der Versöhnungstag) und **Chanukka**.',
         '### Jüdisches Leben in Luxemburg',
-        'In Luxemburg leben jüdische Familien seit Jahrhunderten. Es gibt Synagogen zum Beispiel in **Luxemburg-Stadt** und in **Esch-sur-Alzette**. Im Zweiten Weltkrieg wurden viele luxemburgische Jüdinnen und Juden verfolgt und ermordet. Daran erinnern heute Gedenkorte.',
+        'In Luxemburg leben jüdische Familien seit Jahrhunderten. Es gibt Synagogen zum Beispiel in **Luxemburg-Stadt** und in **Esch-sur-Alzette**. Im Zweiten Weltkrieg wurden viele Jüdinnen und Juden, die in Luxemburg lebten, verfolgt und ermordet. Daran erinnern heute Gedenkorte.',
       ],
       woerter: [['der Glaube', 'la foi'], ['die Tora', 'la Torah'], ['die Schriftrolle', 'le rouleau'], ['die Synagoge', 'la synagogue'], ['der Rabbiner', 'le rabbin'], ['der Schabbat', 'le shabbat'], ['die Gemeinde', 'la communauté'], ['der Gedenkort', 'le lieu de mémoire']],
       aufgaben: [
-        { art: 'zuordnen', auftrag: 'Was bedeutet der Begriff? Verbinde.', stufe: 1, links: ['Tora', 'Synagoge', 'Schabbat', 'Bar / Bat Mizwa', 'Rabbiner'], rechts: ['die fünf Bücher Mose auf einer Schriftrolle', 'Haus zum Beten und Lernen', 'Ruhetag von Freitagabend bis Samstagabend', 'Fest: Man gilt in der Religion als erwachsen.', 'leitet die Gemeinde'] },
+        { art: 'zuordnen', auftrag: 'Was bedeutet der Begriff? Verbinde.', stufe: 1, links: ['Tora', 'Synagoge', 'Schabbat', 'Bar / Bat Mizwa', 'Rabbiner'], rechts: ['die fünf Bücher Mose auf einer Schriftrolle', 'Haus zum Beten und Lernen', 'Ruhetag von Freitagabend bis Samstagabend', 'Fest: Man gilt in der Religion als erwachsen.', 'lehrt die Tora und leitet die Gemeinde religiös'] },
       ],
     },
     hoeren: {
@@ -480,7 +480,7 @@ export const LEKTIONEN = [
       text: [
         ['Herr Mesenberg', 'Nächste Woche kommt eine neue Schülerin aus Syrien. Sie spricht Arabisch und etwas Englisch. Wie können wir ihr helfen?'],
         ['Amira', 'Ich spreche Arabisch! Ich kann ihr am Anfang übersetzen.'],
-        ['Lio', 'Wir könnten Paten machen: Jeden Tag kümmert sich jemand anderes um sie, in der Pause und in der Kantine.'],
+        ['Lio', 'Wir könnten Paten sein: Jeden Tag kümmert sich jemand anderes um sie, in der Pause und in der Kantine.'],
         ['Tomás', 'Darf ich etwas sagen? Für mich war das Schlimmste, allein in der Pause zu sitzen. Und bitte: Fragt sie nach ihrem Namen und benutzt ihn richtig.'],
         ['Herr Mesenberg', 'Sehr wichtig, Tomás. Was noch?'],
         ['Amira', 'Wir machen ein Willkommens-Plakat mit „Hallo“ in allen Sprachen der Klasse.'],
@@ -516,7 +516,7 @@ export const LEKTIONEN = [
   },
   // ================================================================ 8
   {
-    thema: 'Verantwortung in der Gemeinschaft · Ehrenamt', titel: 'Gemeinsam helfen', untertitel: 'Jugendfeuerwehr, Pfadfinder, Tierheim, Lebensmittelladen für Menschen mit wenig Geld: Du lernst junge Menschen kennen, die sich engagieren, und planst ein Hilfsprojekt.',
+    thema: 'Verantwortung in der Gemeinschaft · Ehrenamt', titel: 'Gemeinsam helfen', untertitel: 'Jugendfeuerwehr, Tierheim, Lebensmittelladen für Menschen mit wenig Geld: Du lernst junge Menschen kennen, die sich engagieren, und planst ein Hilfsprojekt.',
     ziel: { de: 'Ich beschreibe, wie sich Menschen ehrenamtlich engagieren, und plane ein eigenes kleines Projekt.', fr: 'Je décris comment les gens s’engagent bénévolement et je planifie un petit projet.' },
     bild: ['sami:froh:stehen', 'chloe:froh:stehen'],
     start: {
@@ -529,13 +529,13 @@ export const LEKTIONEN = [
       was: 'Drei Porträts', art: 'profile', stimme: 'w1',
       quelle: 'Porträts aus einer Jugendzeitschrift (Jugendliche ausgedacht)', titel: 'Wir machen mit!',
       profile: [
-        { name: 'Sami, 14 – Jugendfeuerwehr', bild: 'sami:froh:brust', stimme: 'm3', text: 'Jeden zweiten Samstag üben wir: Schläuche ausrollen, Erste Hilfe, Funken. Echte Einsätze machen wir noch nicht, aber wir lernen alles dafür. Das Beste ist das Team. **Bei uns zählt jeder.**' },
+        { name: 'Sami, 14 – Jugendfeuerwehr', bild: 'sami:froh:brust', stimme: 'm3', text: 'Jeden zweiten Samstag üben wir: Schläuche ausrollen, Erste Hilfe, mit dem Funkgerät sprechen. Echte Einsätze machen wir noch nicht, aber wir lernen alles dafür. Das Beste ist das Team. **Bei uns zählt jeder.**' },
         { name: 'Chloé, 13 – Tierheim', bild: 'chloe:froh:brust', stimme: 'w3', text: 'Ich gehe mittwochs ins Tierheim und führe Hunde aus, die kein Zuhause haben. Manche haben am Anfang Angst vor Menschen. Wenn ein Hund mir dann vertraut, ist das ein tolles Gefühl. **Tiere brauchen auch eine Stimme.**' },
         { name: 'Ben, 15 – Lebensmittelladen', bild: 'ben:froh:brust', stimme: 'm2', text: 'In unserem Ort gibt es einen Laden, in dem Menschen mit wenig Geld günstig einkaufen können. Ich helfe samstags beim Einräumen. Am Anfang war ich unsicher. Jetzt weiß ich: **Jeder kann in eine schwierige Lage kommen.**' },
       ],
       woerter: [['ehrenamtlich', 'bénévole'], ['sich engagieren', 's’engager'], ['die Jugendfeuerwehr', 'les jeunes sapeurs-pompiers'], ['der Pfadfinder', 'le scout'], ['das Tierheim', 'le refuge pour animaux'], ['vertrauen', 'faire confiance'], ['die Lage', 'la situation'], ['das Projekt', 'le projet']],
       aufgaben: [
-        { art: 'tabelle', auftrag: 'Ergänze.', stufe: 1, kopf: ['Wer?', 'Wo?', 'Was macht sie / er?', 'Warum?'], breiten: [14, 24, 34, 28], zeilen: [['Sami', '[Jugendfeuerwehr]', '[üben: Schläuche, Erste Hilfe, Funken]', '[Team, jeder zählt]'], ['Chloé', '[Tierheim]', '[führt Hunde aus]', '[Tiere brauchen eine Stimme]'], ['Ben', '[Lebensmittelladen]', '[hilft beim Einräumen]', '[jeder kann in eine schwierige Lage kommen]']] },
+        { art: 'tabelle', auftrag: 'Ergänze.', stufe: 1, kopf: ['Wer?', 'Wo?', 'Was macht sie / er?', 'Warum?'], breiten: [14, 24, 34, 28], zeilen: [['Sami', '[Jugendfeuerwehr]', '[üben: Schläuche, Erste Hilfe, Funkgerät]', '[Team, jeder zählt]'], ['Chloé', '[Tierheim]', '[führt Hunde aus]', '[Tiere brauchen eine Stimme]'], ['Ben', '[Lebensmittelladen]', '[hilft beim Einräumen]', '[jeder kann in eine schwierige Lage kommen]']] },
       ],
     },
     hoeren: {
@@ -543,7 +543,7 @@ export const LEKTIONEN = [
       situation: 'Im Schulradio fragt Mia Sami und Chloé, warum sie sich engagieren.',
       bild: ['mia:froh:handy', 'chloe:froh:stehen'], sprecher: { Mia: 'w2', Sami: 'm3', Chloé: 'w3' },
       text: [
-        ['Mia', 'Sami, du opferst jeden zweiten Samstag. Warum?'],
+        ['Mia', 'Sami, du verbringst jeden zweiten Samstag bei der Jugendfeuerwehr. Warum?'],
         ['Sami', 'Am Anfang war es nur, weil mein Kumpel mitgemacht hat. Aber jetzt weiß ich, wie man hilft, wenn etwas passiert. Letzte Woche ist eine Frau im Supermarkt umgefallen, und ich wusste, was zu tun ist. Das fühlt sich gut an.'],
         ['Mia', 'Chloé, was hast du im Tierheim gelernt?'],
         ['Chloé', 'Geduld! Und Verantwortung. Wenn ich nicht komme, geht ein Hund nicht spazieren. Darum bin ich immer pünktlich.'],

@@ -80,11 +80,11 @@ export const LEKTIONEN = [
     ueben: [
       { art: 'schneidekarten', auftrag: 'Tier-Dilemmas: Zieht eine Karte. Was würdet ihr tun? Begründet. Es gibt oft mehrere gute Antworten.', stufe: 3, neueSeite: true, titel: 'Was tust du?', icon: 'paw', farbe: DILEMMA, spalten: 2, typ: 'dilemma',
         karten: [
-          { text: 'Deine Familie zieht um. In der neuen Wohnung sind Hunde verboten.', frage: 'Was passiert mit dem Hund?' },
+          { text: 'Eine Familie aus deiner Straße zieht um. In der neuen Wohnung sind Hunde verboten.', frage: 'Was passiert mit dem Hund?' },
           { text: 'Ein neues Medikament gegen eine schwere Krankheit wird an Mäusen getestet.', frage: 'Ist das in Ordnung?' },
           { text: 'Du findest im Wald ein junges Reh, allein. Es sieht verlassen aus.', frage: 'Mitnehmen oder liegen lassen?' },
-          { text: 'Dein Freund möchte zum Geburtstag einen Welpen schenken – als Überraschung.', frage: 'Gute Idee?' },
-          { text: 'Im Zirkus treten Elefanten auf. Deine kleine Schwester möchte unbedingt hin.', frage: 'Was sagst du?' },
+          { text: 'Dein Freund möchte seiner Schwester zum Geburtstag einen Welpen schenken – als Überraschung.', frage: 'Gute Idee?' },
+          { text: 'Im Urlaub im Ausland zeigt ein Zirkus Elefanten. Ein jüngeres Kind, auf das du aufpasst, möchte unbedingt hin.', frage: 'Was sagst du?' },
           { text: 'Billiges Hähnchen im Angebot – das teurere kommt aus besserer Haltung.', frage: 'Welches kaufst du?' },
         ] },
       { art: 'meinungslinie', auftrag: 'Was denkst du? Begründe.', stufe: 2, aussagen: ['Tiere sollten ähnliche Rechte haben wie Menschen.'] },
@@ -210,7 +210,7 @@ export const LEKTIONEN = [
       ],
       vor: [{ art: 'mc', auftrag: 'Was bedeutet „gefiltert“ bei einem Foto? Kreuze an.', stufe: 1, fragen: [{ f: '', o: ['mit einer App verändert', 'ohne Farbe'], r: 0 }] }],
       beim: [
-        { art: 'rf', auftrag: 'Richtig oder falsch?', stufe: 1, saetze: [['Jana hat das Foto mit einem Filter bearbeitet.', true], ['Lea findet, dass das Foto genau wie Jana aussieht.', false], ['Jana fühlt sich mit vielen Likes nur gut.', false], ['Leas Foto ohne Filter bekam viele Kommentare.', true]] },
+        { art: 'rf', auftrag: 'Richtig oder falsch?', stufe: 1, saetze: [['Jana hat das Foto mit einem Filter bearbeitet.', true], ['Lea findet, dass das Foto genau wie Jana aussieht.', false], ['Jana fühlt sich mit vielen Likes nur gut.', false], ['Leas Foto ohne Filter bekam sogar mehr Kommentare.', true]] },
         { art: 'fragen', auftrag: 'Warum fühlt sich Jana „komisch“?', stufe: 2, fragen: [{ f: '', zeilen: 2, l: 'Weil die Likes für ein verändertes Bild sind – als ob die Leute jemand anderen mögen und nicht sie selbst.' }] },
       ],
       nach: [{ art: 'sprechen', auftrag: 'Ist es in Ordnung, Fotos zu bearbeiten? Wo ist für euch die Grenze?', stufe: 3, karten: [
@@ -259,14 +259,14 @@ export const LEKTIONEN = [
       absaetze: [
         'Im Netz schreiben manche Menschen Dinge, die sie nie jemandem ins Gesicht sagen würden. Warum? Man sieht die andere Person nicht, man sieht nicht, wie sie traurig wird. Man fühlt sich **anonym**. Und wenn viele gemein sind, macht man leichter mit.',
         '### Was ist Hassrede?',
-        '**Hassrede** sind Beiträge, die Menschen beleidigen, bedrohen oder herabsetzen – oft wegen ihrer Herkunft, Religion, Hautfarbe, Behinderung, ihres Aussehens oder weil sie jemanden lieben. Manche Hassrede ist auch **strafbar**, zum Beispiel Drohungen oder Aufrufe zu Gewalt.',
+        '**Hassrede** sind Beiträge, die Menschen beleidigen, bedrohen oder herabsetzen – oft wegen ihrer Herkunft, Religion, Hautfarbe, Behinderung, ihres Aussehens oder weil sie jemanden vom gleichen Geschlecht lieben. Manche Hassrede ist auch **strafbar**, zum Beispiel Drohungen oder Aufrufe zu Gewalt.',
         '### Was kann ich tun?',
         '**Nicht mitmachen:** nicht liken, nicht teilen. **Gegenrede:** freundlich, aber klar widersprechen, zum Beispiel: „Das ist nicht okay.“ **Unterstützen:** Der betroffenen Person schreiben: „Ich stehe zu dir.“ **Melden:** Beiträge auf der Plattform melden. In Luxemburg kann man illegale Inhalte bei der **BEE SECURE Stopline** melden. **Hilfe holen:** bei Vertrauenspersonen, der BEE SECURE Helpline (8002 1234) oder bei 116 111.',
         'Wichtig: Hinter jedem Profil steckt ein **echter Mensch** mit Gefühlen.',
       ],
       woerter: [['der Kommentar', 'le commentaire'], ['anonym', 'anonyme'], ['die Hassrede', 'le discours de haine'], ['beleidigen', 'insulter'], ['bedrohen', 'menacer'], ['herabsetzen', 'rabaisser'], ['melden', 'signaler'], ['die Gegenrede', 'le contre-discours']],
       aufgaben: [
-        { art: 'ordnen', auftrag: 'Was kann man gegen Hass im Netz tun? Ordne von „sofort und leicht“ bis „mit Hilfe“.', stufe: 2, teile: ['nicht liken und nicht teilen', 'der betroffenen Person Unterstützung schreiben', 'freundlich, aber klar widersprechen', 'den Beitrag melden', 'eine Vertrauensperson oder Helpline einschalten'], ordnung: [3, 0, 4, 2, 1] },
+        { art: 'ordnen', auftrag: 'Was kann man gegen Hass im Netz tun? Ordne von „sofort und leicht“ bis „mit Hilfe“.', stufe: 2, teile: ['nicht liken und nicht teilen', 'freundlich, aber klar widersprechen', 'der betroffenen Person Unterstützung schreiben', 'den Beitrag melden', 'eine Vertrauensperson oder Helpline einschalten'], ordnung: [3, 0, 4, 2, 1] },
       ],
     },
     hoeren: {
@@ -331,11 +331,11 @@ export const LEKTIONEN = [
       dokumente: [
         { stil: 'karte', stimme: 'w1', kopf: '**China: Pangu und das Ei**', text: ['Am Anfang war alles ein dunkles Durcheinander, wie in einem riesigen Ei. Darin schlief der Riese **Pangu**. Als er erwachte, zerbrach er das Ei. Das Leichte stieg nach oben und wurde der Himmel, das Schwere sank nach unten und wurde die Erde. Pangu stemmte sie 18 000 Jahre lang auseinander. Als er starb, wurde sein Atem zum Wind, seine Augen zu Sonne und Mond, sein Körper zu Bergen und Flüssen.'] },
         { stil: 'karte', stimme: 'm1', kopf: '**Nordeuropa: Feuer und Eis**', text: ['Ganz am Anfang gab es nur eine riesige Leere. Im Norden war eisige Kälte, im Süden loderndes Feuer. Wo sich Eis und Feuer trafen, schmolz das Eis, und aus den Tropfen entstand der Riese **Ymir**. Später formten die Götter aus seinem Körper die Welt: aus seinem Fleisch die Erde, aus seinem Blut das Meer, aus seinem Schädel den Himmel.'] },
-        { stil: 'karte', stimme: 'w2', kopf: '**Bibel: Die Schöpfung in sieben Tagen**', text: ['Im ersten Buch der Bibel, das für Juden und Christen heilig ist, erschafft **Gott** die Welt durch sein Wort. „Es werde Licht“, sagt er, und es wird Licht. An sechs Tagen erschafft er Himmel und Erde, Meere, Pflanzen, Sonne, Mond und Sterne, Tiere und zuletzt den Menschen. Am siebten Tag ruht Gott. Er sieht alles an, „und siehe, es war sehr gut“.'] },
+        { stil: 'karte', stimme: 'w2', kopf: '**Bibel: Die Schöpfung in sieben Tagen**', text: ['Im ersten Buch der Bibel, das für Juden und Christen heilig ist, erschafft **Gott** die Welt durch sein Wort. Am Anfang ist die Erde wüst und leer, und es ist dunkel. „Es werde Licht“, sagt er, und es wird Licht. An sechs Tagen erschafft er Himmel und Erde, Meere, Pflanzen, Sonne, Mond und Sterne, Tiere und zuletzt den Menschen. Am siebten Tag ruht Gott. Er sieht alles an, „und siehe, es war sehr gut“.'] },
       ],
       woerter: [['der Mythos', 'le mythe'], ['die Schöpfung', 'la création'], ['erschaffen', 'créer'], ['der Riese', 'le géant'], ['das Durcheinander', 'le chaos'], ['stemmen', 'soulever, pousser'], ['die Leere', 'le vide'], ['heilig', 'sacré']],
       aufgaben: [
-        { art: 'tabelle', auftrag: 'Vergleiche die drei Geschichten.', stufe: 2, kopf: ['', 'Pangu (China)', 'Ymir (Nordeuropa)', 'Bibel'], breiten: [22, 26, 26, 26], zeilen: [['Am Anfang war …', '[ein dunkles Durcheinander wie ein Ei]', '[eine riesige Leere, Eis und Feuer]', '[Gott (und Dunkelheit)]'], ['Wer erschafft?', '[der Riese Pangu]', '[die Götter aus dem Riesen Ymir]', '[Gott durch sein Wort]'], ['Woraus wird die Welt?', '[aus Pangus Körper]', '[aus Ymirs Körper]', '[aus dem Nichts, durch das Wort]']] },
+        { art: 'tabelle', auftrag: 'Vergleiche die drei Geschichten.', stufe: 2, kopf: ['', 'Pangu (China)', 'Ymir (Nordeuropa)', 'Bibel'], breiten: [22, 26, 26, 26], zeilen: [['Am Anfang war …', '[ein dunkles Durcheinander wie ein Ei]', '[eine riesige Leere, Eis und Feuer]', '[Gott (und Dunkelheit)]'], ['Wer erschafft?', '[der Riese Pangu]', '[die Götter aus dem Riesen Ymir]', '[Gott durch sein Wort]'], ['Woraus wird die Welt?', '[aus Pangus Körper]', '[aus Ymirs Körper]', '[durch Gottes Wort]']] },
         { art: 'fragen', auftrag: 'Was haben die Geschichten gemeinsam?', stufe: 2, fragen: [{ f: '', zeilen: 2, l: 'z. B. Am Anfang ist Chaos oder Leere; dann entsteht Ordnung: Himmel und Erde werden getrennt; eine besondere Kraft erschafft die Welt.' }] },
       ],
     },
@@ -389,7 +389,7 @@ export const LEKTIONEN = [
     start: {
       was: 'Aberglaube?',
       aufgaben: [
-        { art: 'mc', auftrag: 'Welche dieser Dinge sind Aberglaube? Kreuze an (mehrere möglich).', stufe: 1, fragen: [{ f: '', o: ['Eine schwarze Katze bringt Unglück.', 'Freitag, der 13., ist ein Unglückstag.', 'Ein Glücksbringer hilft bei der Prüfung.', 'Wasser kocht bei 100 Grad.'], r: [0, 1, 2] }] },
+        { art: 'mc', auftrag: 'Welche dieser Dinge sind Aberglaube? Kreuze an (mehrere möglich).', stufe: 1, fragen: [{ f: '', o: ['Eine schwarze Katze bringt Unglück.', 'Freitag, der 13., ist ein Unglückstag.', 'Ein Glücksbringer bringt Glück bei der Prüfung.', 'Wasser kocht bei 100 Grad.'], r: [0, 1, 2] }] },
       ],
     },
     lesen: {
@@ -416,7 +416,7 @@ export const LEKTIONEN = [
       text: [
         ['Ben', 'Hast du meinen grünen Stift gesehen? Ohne den Glücksstift schreibe ich keine gute Note!'],
         ['Nele', 'Ben, du glaubst doch nicht wirklich, dass ein Stift Mathe kann?'],
-        ['Ben', 'Na ja … Letztes Mal hatte ich ihn und habe eine Acht geschrieben.'],
+        ['Ben', 'Na ja … Letztes Mal hatte ich ihn und habe eine gute Note geschrieben.'],
         ['Nele', 'Und hast du vorher gelernt?'],
         ['Ben', 'Ja, drei Tage lang.'],
         ['Nele', 'Siehst du. Vielleicht war es das Lernen, nicht der Stift. Das müsste man überprüfen: einmal mit Stift ohne Lernen, einmal ohne Stift mit Lernen.'],
@@ -470,9 +470,9 @@ export const LEKTIONEN = [
       absaetze: [
         'Auf der Welt gibt es sehr viele Religionen. Trotz aller Unterschiede haben sie oft **ähnliche Merkmale**: einen **Glauben** an Gott, an Götter oder an eine höhere Wirklichkeit; **heilige Schriften**; **Rituale** wie Beten, Feste oder Pilgern; **heilige Orte** wie Kirche, Moschee, Synagoge oder Tempel; eine **Gemeinschaft**; und **Regeln** für ein gutes Leben.',
         '### Die großen Weltreligionen',
-        '**Christentum** (über 2 Milliarden Menschen): Glaube an Gott und an **Jesus Christus**; Schrift: die **Bibel**; Symbol: das **Kreuz**. **Islam** (fast 2 Milliarden): Glaube an **Allah**, den einen Gott, und an den Propheten **Mohammed**; Schrift: der **Koran**; Symbol oft: **Halbmond und Stern**. **Hinduismus** (über 1 Milliarde): viele Götter, die oft als Formen eines Göttlichen gesehen werden; Symbol: **Om**. **Buddhismus** (etwa eine halbe Milliarde): Lehre des **Buddha**, Weg zur Befreiung vom Leid; Symbol: **Rad der Lehre**. **Judentum** (etwa 15 Millionen): Glaube an einen Gott; Schrift: die **Tora**; Symbol: **Davidstern**.',
+        '**Christentum** (über 2 Milliarden Menschen): Glaube an Gott und an **Jesus Christus**; Schrift: die **Bibel**; Symbol: das **Kreuz**. **Islam** (fast 2 Milliarden): Glaube an **Allah**, den einen Gott, und an den Propheten **Mohammed**; Schrift: der **Koran**; Symbol oft: **Halbmond und Stern**. **Hinduismus** (über 1 Milliarde): viele Götter, die oft als Formen des einen Göttlichen gesehen werden; Schriften: z. B. die **Veden**; Symbol: **Om**. **Buddhismus** (mehrere hundert Millionen): Lehre des **Buddha**, Weg zur Befreiung vom Leid; Symbol: **Rad der Lehre**. **Judentum** (etwa 15 Millionen): Glaube an einen Gott; Schrift: die **Tora**; Symbol: **Davidstern**.',
         '### Nicht glauben',
-        'Viele Menschen gehören keiner Religion an. Manche sind sicher, dass es keinen Gott gibt (**Atheisten**). Andere sagen: Das kann man nicht wissen (**Agnostiker**). Auch sie haben Werte und fragen nach dem Sinn. In Luxemburg gilt **Religionsfreiheit**: Jeder darf glauben – oder nicht glauben.',
+        'Viele Menschen gehören keiner Religion an. Manche glauben nicht an einen Gott (**Atheisten**). Andere sagen: Das kann man nicht wissen (**Agnostiker**). Auch sie haben Werte und fragen nach dem Sinn. In Luxemburg gilt **Religionsfreiheit**: Jeder darf glauben – oder nicht glauben.',
       ],
       woerter: [['der Glaube', 'la foi, la croyance'], ['die heilige Schrift', 'le texte sacré'], ['das Ritual', 'le rite'], ['beten', 'prier'], ['pilgern', 'faire un pèlerinage'], ['der Prophet', 'le prophète'], ['der Atheist / die Atheistin', 'l’athée'], ['die Religionsfreiheit', 'la liberté religieuse']],
       aufgaben: [

@@ -81,7 +81,7 @@ export const LEKTIONEN = [
       ],
     },
     ueben: [
-      { art: 'schneidekarten', auftrag: 'Schubladen-Karten: Lest jede Karte. Welche Schublade wird geöffnet? Schreibt einen Satz, der die Schublade wieder öffnet (ein Gegenbeispiel oder eine Frage).', stufe: 2, neueSeite: true, titel: 'Raus aus der Schublade', icon: 'box', farbe: FRAGE, spalten: 2,
+      { art: 'schneidekarten', auftrag: 'Schubladen-Karten: Lest jede Karte. Welche Schublade steckt dahinter? Schreibt einen Satz, der den Menschen wieder aus der Schublade holt (ein Gegenbeispiel oder eine Frage).', stufe: 2, neueSeite: true, titel: 'Raus aus der Schublade', icon: 'box', farbe: FRAGE, spalten: 2,
         karten: [
           { text: '„Der ist bestimmt dumm, der redet so komisch.“', linien: 2 },
           { text: '„Die mit dem Kopftuch darf sicher nichts selbst entscheiden.“', linien: 2 },
@@ -185,7 +185,7 @@ export const LEKTIONEN = [
       was: 'Ein Sachtext', art: 'text', stimme: 'w2', nummern: false,
       quelle: 'Sachtext (vereinfacht, Stand 2026)', titel: 'Alle gehören dazu',
       absaetze: [
-        'Manche Menschen können nicht oder schlecht sehen, hören, gehen oder lernen anders. Man spricht von einer **Beeinträchtigung** oder **Behinderung**. Viele Menschen mit Behinderung sagen: „Ich bin nicht behindert – ich **werde behindert**.“ Gemeint ist: Oft sind es **Barrieren** in der Umgebung, die sie ausschließen: Treppen, fehlende Untertitel, komplizierte Texte, Vorurteile.',
+        'Manche Menschen können nicht oder nur schlecht sehen, hören oder gehen. Andere lernen anders. Man spricht von einer **Beeinträchtigung** oder **Behinderung**. Viele Menschen mit Behinderung sagen: „Ich bin nicht behindert – ich **werde behindert**.“ Gemeint ist: Oft sind es **Barrieren** in der Umgebung, die sie ausschließen: Treppen, fehlende Untertitel, komplizierte Texte, Vorurteile.',
         '### Inklusion',
         '**Inklusion** heißt: Alle Menschen gehören von Anfang an dazu und können überall mitmachen – in der Schule, im Sport, bei der Arbeit, in der Freizeit. Dafür muss man Barrieren abbauen. Die Vereinten Nationen haben 2006 die **Behindertenrechtskonvention** beschlossen. Für Luxemburg gilt sie seit 2011.',
         '### Beispiele',
@@ -243,7 +243,7 @@ export const LEKTIONEN = [
   },
   // ================================================================ 4
   {
-    thema: 'Anerkennung · Wertschätzung', titel: 'Gesehen werden', untertitel: 'Jeder Mensch möchte gesehen und geschätzt werden. Du denkst über Anerkennung nach – echte und gekaufte –, hörst eine Lehrerin und verschenkst Wertschätzungs-Karten.',
+    thema: 'Anerkennung · Wertschätzung', titel: 'Gesehen werden', untertitel: 'Jeder Mensch möchte gesehen und geschätzt werden. Du denkst über Anerkennung nach – echte Anerkennung und Likes –, hörst eine Lehrerin und verschenkst Wertschätzungs-Karten.',
     ziel: { de: 'Ich erkläre, warum Anerkennung wichtig ist, und zeige anderen Wertschätzung.', fr: 'J’explique pourquoi la reconnaissance est importante et je montre de l’estime aux autres.' },
     bild: ['sami:froh:stehen', 'lehrerin:froh:erklaeren'],
     start: {
@@ -328,9 +328,10 @@ export const LEKTIONEN = [
         '### Was heißt Integration?',
         'Integration heißt nicht, dass Neue alles aufgeben, was sie mitbringen – ihre Sprache, ihre Religion, ihr Essen. Es heißt: **Alle** können am Leben in der Gesellschaft **teilhaben**: lernen, arbeiten, Freundschaften schließen, mitbestimmen. Dafür braucht es beide Seiten.',
         '### Was Neue beitragen',
-        'Eine oder mehrere Landessprachen lernen, die Regeln und Gesetze kennen und achten, sich für die neue Umgebung interessieren.',
+        'Eine oder mehrere Landessprachen lernen, die Regeln und Gesetze kennenlernen, sich für die neue Umgebung interessieren.',
         '### Was die Gesellschaft beiträgt',
-        'Sprachkurse und Schulen anbieten, gleiche Chancen bei Arbeit und Wohnung geben, Vorurteile abbauen, Neue einladen und ihnen zuhören. Und: Neue dürfen mitbestimmen, zum Beispiel bei den Gemeindewahlen.',
+        'Sprachkurse und Schulen anbieten, gleiche Chancen bei Arbeit und Wohnung geben, Neue einladen. Und: Neue dürfen mitbestimmen, zum Beispiel bei den Gemeindewahlen (ab 18 Jahren, nach Eintragung in die Wählerliste).',
+        'Für **beide** gilt: Regeln und Gesetze achten, Vorurteile abbauen und einander zuhören.',
         'Integration ist darum keine Einbahnstraße. Sie gelingt, wenn sich **alle** bewegen.',
       ],
       woerter: [['die Integration', 'l’intégration'], ['teilhaben', 'participer'], ['die Teilhabe', 'la participation'], ['die Landessprache', 'la langue du pays'], ['beitragen', 'contribuer'], ['die Chance', 'la chance, l’opportunité'], ['die Einbahnstraße', 'la rue à sens unique'], ['mitbestimmen', 'participer aux décisions']],
@@ -472,9 +473,9 @@ export const LEKTIONEN = [
       was: 'Ein Sachtext', art: 'text', stimme: 'w1', nummern: false,
       quelle: 'Sachtext (vereinfacht); Zahlen gerundet', titel: 'Die größte Religion der Welt',
       absaetze: [
-        'Mit über **2 Milliarden** Menschen ist das **Christentum** die größte Religion der Welt. Christinnen und Christen glauben an **einen Gott** und an **Jesus Christus**. Jesus lebte vor etwa 2000 Jahren in der Gegend des heutigen Israel und Palästina. Er erzählte von Gottes Liebe, half Armen und Kranken und lehrte: „Liebe deinen Nächsten wie dich selbst.“',
+        'Mit über **2 Milliarden** Menschen ist das **Christentum** die größte Religion der Welt. Christinnen und Christen glauben an **einen Gott** und an **Jesus Christus**. Jesus lebte vor etwa 2000 Jahren in der Gegend des heutigen Israel und Palästina. Er erzählte von Gottes Liebe, half Armen und Kranken und lehrte, wie schon die jüdische Bibel: „Liebe deinen Nächsten wie dich selbst.“',
         '### Kreuz und Ostern',
-        'Jesus wurde in Jerusalem am **Kreuz** hingerichtet. Christen glauben, dass er am dritten Tag von den Toten **auferstanden** ist. Daran erinnert **Ostern**, das wichtigste christliche Fest. Das Kreuz ist darum das Zeichen der Christen.',
+        'Jesus wurde in Jerusalem am **Kreuz** hingerichtet. Christen glauben, dass er am dritten Tag von den Toten **auferstanden** ist. Daran erinnert **Ostern**, das wichtigste christliche Fest. Das Kreuz ist darum das Zeichen der Christen. Das **Kirchenjahr** beginnt mit dem **Advent** vor **Weihnachten**. Nach Ostern folgen **Pfingsten** und im November **Allerheiligen**.',
         '### Die Bibel',
         'Die heilige Schrift heißt **Bibel**. Sie hat zwei Teile: das **Alte Testament**, das viele Texte mit der jüdischen Bibel gemeinsam hat, und das **Neue Testament** mit den Berichten über Jesus, den **Evangelien**.',
         '### Viele Kirchen',
@@ -545,11 +546,11 @@ export const LEKTIONEN = [
       absaetze: [
         'Wer durch Luxemburg geht, findet viele Spuren des Christentums: Kirchen in fast jedem Dorf, **Wegkreuze** an Feldwegen, Straßen und Orte mit Namen von Heiligen. Viele **Feiertage** sind christlich: Ostern, Christi Himmelfahrt, Pfingsten, Allerheiligen, Weihnachten.',
         '### Die Oktave',
-        'Seit dem 17. Jahrhundert pilgern jedes Jahr im Frühling viele Menschen zur **Oktave** in die Kathedrale von Luxemburg. Sie verehren dort Maria als „Trösterin der Betrübten“, die Schutzpatronin der Stadt und des Landes. Rund um die Kathedrale gibt es dann auch einen kleinen Markt.',
+        'Seit dem 17. Jahrhundert pilgern jedes Jahr im Frühling viele Menschen zur **Oktave** in die Kathedrale von Luxemburg. Sie verehren dort Maria als „Trösterin der Betrübten“, die Schutzpatronin der Stadt und des Landes. In der Nähe der Kathedrale gibt es dann auch einen kleinen Markt.',
         '### Die Springprozession',
         'In **Echternach** findet jedes Jahr am Pfingstdienstag die **Springprozession** statt, zu Ehren des heiligen Willibrord. Tausende Menschen springen tanzend durch die Straßen. Sie gehört zum Kulturerbe der UNESCO.',
         '### Religion und Staat heute',
-        'Luxemburg ist heute ein Land mit vielen Religionen und vielen Menschen ohne Religion. Staat und Religionsgemeinschaften sind seit 2015 klarer getrennt. Seit 2016 gibt es an den Lyzeen statt getrenntem Religions- und Moralunterricht ein gemeinsames Fach für alle: **Vie et société** – genau das Fach, das du gerade hast.',
+        'Luxemburg ist heute ein Land mit vielen Religionen und vielen Menschen ohne Religion. Staat und Religionsgemeinschaften sind seit 2015 klarer getrennt. Seit 2016 haben alle an den Lyzeen ein gemeinsames Fach: **Vie et société** – genau das Fach, das du gerade hast. Vorher gab es getrennt Religions- oder Moralunterricht.',
       ],
       woerter: [['die Spur', 'la trace'], ['das Wegkreuz', 'le calvaire, la croix de chemin'], ['der Heilige / die Heilige', 'le saint / la sainte'], ['pilgern', 'faire un pèlerinage'], ['die Kathedrale', 'la cathédrale'], ['verehren', 'vénérer'], ['die Prozession', 'la procession'], ['getrennt', 'séparé']],
       aufgaben: [

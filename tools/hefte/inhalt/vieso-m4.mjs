@@ -116,7 +116,7 @@ export const LEKTIONEN = [
       woerter: [['das Risiko', 'le risque'], ['die Mutprobe', 'le défi'], ['unterschätzen', 'sous-estimer'], ['die Folge', 'la conséquence'], ['der Gruppendruck', 'la pression du groupe'], ['der Feigling', 'le lâche'], ['die Anerkennung', 'la reconnaissance'], ['dazugehören', 'faire partie du groupe']],
       aufgaben: [
         { art: 'fragen', auftrag: 'Antworte.', stufe: 1, fragen: [{ f: 'Warum unterschätzen Jugendliche Gefahren oft?', zeilen: 2, l: 'Der Teil des Gehirns, der plant und Folgen abschätzt, ist erst mit etwa Mitte zwanzig fertig; das Risiko fühlt sich aufregend an.' }, { f: 'Warum gehen Jugendliche in der Gruppe mehr Risiken ein?', zeilen: 2, l: 'Sie wollen dazugehören, nicht als Feigling dastehen und Anerkennung bekommen (Gruppendruck).' }] },
-        { art: 'tabelle', auftrag: 'Gesundes Risiko oder gefährliche Mutprobe?', stufe: 2, kopf: ['', 'gesundes Risiko', 'gefährlich'], breiten: [60, 20, 20], zeilen: [['im Schultheater mitspielen', '[x]', ''], ['im Dunkeln über Bahngleise laufen', '', '[x]'], ['einen Kletterkurs mit Sicherung machen', '[x]', ''], ['eine „Ohnmachts-Challenge“ nachmachen', '', '[x]'], ['beim Fußball ins Tor gehen, obwohl man nervös ist', '[x]', '']] },
+        { art: 'tabelle', auftrag: 'Gesundes Risiko oder gefährliche Mutprobe?', stufe: 2, kopf: ['', 'gesundes Risiko', 'gefährlich'], breiten: [60, 20, 20], zeilen: [['im Schultheater mitspielen', '[x]', ''], ['im Dunkeln über Bahngleise laufen', '', '[x]'], ['einen Kletterkurs mit Sicherung machen', '[x]', ''], ['eine gefährliche Challenge aus dem Internet nachmachen', '', '[x]'], ['beim Fußball ins Tor gehen, obwohl man nervös ist', '[x]', '']] },
       ],
     },
     hoeren: {
@@ -180,7 +180,7 @@ export const LEKTIONEN = [
       absaetze: [
         'Frei sein heißt: selbst entscheiden können, was man tut. Aber sind wir wirklich so frei? Stell dir vor, du nimmst „nur kurz“ das Handy – und eine Stunde später scrollst du immer noch. Wer hat da entschieden: du oder die App?',
         '### Wenn etwas über mich bestimmt',
-        'Bei einer **Abhängigkeit** (Sucht) bestimmt ein Stoff oder ein Verhalten immer mehr über einen Menschen: Nikotin, Alkohol, andere Drogen, aber auch Glücksspiel, Computerspiele oder soziale Netzwerke. Man will aufhören, aber es klappt nicht. Man denkt ständig daran. Andere wichtige Dinge werden unwichtig.',
+        'Bei einer **Abhängigkeit** (Sucht) bestimmt ein Stoff oder ein Verhalten immer mehr über einen Menschen: Nikotin, Alkohol, andere Drogen, aber auch Glücksspiel oder Computerspiele. Auch bei sozialen Netzwerken kann es schwer werden aufzuhören. Man will aufhören, aber es klappt nicht. Man denkt ständig daran. Andere wichtige Dinge werden unwichtig.',
         'Darum sagen viele: **Sucht macht unfrei.** Am Anfang fühlt es sich wie Freiheit an („Ich mache, was ich will!“). Später merkt man, dass man nicht mehr frei entscheiden kann.',
         '### Freiheit üben',
         'Freiheit kann man üben: bewusst Pausen machen, Nein sagen können, sich fragen „Will ich das wirklich – oder will es nur die Gewohnheit?“. Freiheit heißt auch **Verantwortung**: für sich selbst und für die anderen.',
@@ -206,7 +206,7 @@ export const LEKTIONEN = [
       ],
       vor: [{ art: 'mc', auftrag: 'Was ist „Handyfasten“? Kreuze an.', stufe: 1, fragen: [{ f: '', o: ['eine Zeit lang das Handy kaum benutzen', 'beim Essen das Handy anschauen'], r: 0 }] }],
       beim: [
-        { art: 'tabelle', auftrag: 'Hör zu. Was haben Finn und Jana erlebt?', stufe: 1, kopf: ['', 'Finn', 'Jana'], breiten: [24, 38, 38], zeilen: [['am Anfang', '[griff ständig automatisch in die Tasche]', '[Angst, etwas zu verpassen]'], ['Erfahrung', '[ein ganzes Buch gelesen, besser geschlafen]', '[viele Nachrichten, nichts Wichtiges]'], ['nimmt mit', '', '[Benachrichtigungen ausschalten: sie entscheidet, wann sie schaut]']] },
+        { art: 'tabelle', auftrag: 'Hör zu. Was haben Finn und Jana erlebt?', stufe: 1, kopf: ['', 'Finn', 'Jana'], breiten: [24, 38, 38], zeilen: [['am Anfang', '[griff ständig automatisch in die Tasche]', '[Angst, etwas zu verpassen]'], ['Erfahrung', '[ein ganzes Buch gelesen, besser geschlafen]', '[viele Nachrichten, nichts Wichtiges]'], ['nimmt mit', '–', '[Benachrichtigungen ausschalten: sie entscheidet, wann sie schaut]']] },
       ],
       nach: [{ art: 'sprechen', auftrag: 'Würdet ihr Handyfasten ausprobieren? Was wäre am schwersten?', stufe: 2, karten: [
         { titel: 'Satzanfänge', text: ['Am schwersten wäre …', 'Ich könnte mir vorstellen, …', 'Ein guter Kompromiss wäre …'] }] }],
@@ -313,7 +313,7 @@ export const LEKTIONEN = [
       absaetze: [
         'Viele Menschen haben Vorstellungen davon, wie Jungen und Mädchen, Männer und Frauen „sein sollen“. Das nennt man **Geschlechterrollen**. Werden sie sehr vereinfacht und auf alle übertragen, spricht man von **Klischees**.',
         '### Rollen ändern sich',
-        'Vor gut 100 Jahren galt Rosa in Europa oft als Jungenfarbe. Früher durften Frauen in Luxemburg nicht wählen – das änderte sich erst **1919**. Lange waren viele Berufe nur für Männer. Heute gibt es Pilotinnen, Bauarbeiterinnen und Bürgermeisterinnen, Erzieher, Krankenpfleger und Hausmänner. Rollen sind also nicht von Natur aus festgelegt. Menschen machen sie – und können sie ändern.',
+        'Vor gut 100 Jahren galt Rosa in Europa manchmal als Jungenfarbe. Früher durften Frauen in Luxemburg nicht wählen – das änderte sich erst **1919**. Lange waren viele Berufe nur für Männer. Heute gibt es Pilotinnen, Bauarbeiterinnen und Bürgermeisterinnen, Erzieher, Krankenpfleger und Hausmänner. Rollen sind also nicht von Natur aus festgelegt. Menschen machen sie – und können sie ändern.',
         '### Warum Klischees schaden',
         'Klischees können einengen: Ein Junge traut sich nicht zu weinen oder zu tanzen. Ein Mädchen wählt keinen Technikberuf, obwohl sie Technik liebt. Wer nicht ins Bild passt, wird manchmal ausgelacht.',
         '### Jeder Mensch ist anders',
@@ -321,7 +321,7 @@ export const LEKTIONEN = [
       ],
       woerter: [['das Geschlecht', 'le sexe, le genre'], ['die Rolle', 'le rôle'], ['das Klischee', 'le cliché'], ['einengen', 'limiter, restreindre'], ['festlegen', 'fixer'], ['die Bürgermeisterin', 'la bourgmestre, la maire'], ['der Krankenpfleger', 'l’infirmier'], ['gleichberechtigt', 'égal en droits']],
       aufgaben: [
-        { art: 'rf', auftrag: 'Richtig oder falsch?', stufe: 1, saetze: [['Rosa war früher oft eine Jungenfarbe.', true], ['Frauen dürfen in Luxemburg seit 1919 wählen.', true], ['Geschlechterrollen sind von Natur aus festgelegt.', false], ['Klischees können Menschen einengen.', true]] },
+        { art: 'rf', auftrag: 'Richtig oder falsch?', stufe: 1, saetze: [['Rosa war früher manchmal eine Jungenfarbe.', true], ['Frauen dürfen in Luxemburg seit 1919 wählen.', true], ['Geschlechterrollen sind von Natur aus festgelegt.', false], ['Klischees können Menschen einengen.', true]] },
         { art: 'fragen', auftrag: 'Nenne ein Beispiel, wie ein Klischee einen Menschen einengen kann.', stufe: 2, fragen: [{ f: '', zeilen: 2, l: 'z. B. Ein Junge traut sich nicht zu weinen; ein Mädchen wählt keinen Technikberuf, obwohl sie Technik liebt.' }] },
       ],
     },
@@ -331,7 +331,7 @@ export const LEKTIONEN = [
       bild: ['chloe:froh:stehen', 'ben:verlegen:stehen'], sprecher: { Chloé: 'w3', Ben: 'm3', Sami: 'm2', 'Frau Sommer': 'w1' },
       text: [
         ['Sami', 'Chloé will Autos reparieren? Dann ist sie ja immer voll Öl. Und Ben will mit Kindern spielen? Das ist doch kein Männerberuf!'],
-        ['Chloé', 'Ich schraube seit ich zehn bin mit meiner Nachbarin an Mopeds. Das macht mir Spaß. Und Öl kann man abwaschen.'],
+        ['Chloé', 'Ich schraube, seit ich zehn bin, mit meiner Nachbarin an Mopeds. Das macht mir Spaß. Und Öl kann man abwaschen.'],
         ['Ben', 'Und ich kann gut mit Kleinen umgehen. Ich trainiere schon die Bambini im Fußball. Die Kinder lieben mich.'],
         ['Frau Sommer', 'Sami, was macht einen guten Erzieher aus?'],
         ['Sami', 'Hm … Geduld, Spaß mit Kindern, ruhig bleiben.'],
@@ -409,7 +409,7 @@ export const LEKTIONEN = [
         ['Herr Thill', 'So? Oh, jetzt habe ich meinen Daumen fotografiert.'],
         ['Lio', 'Haha, das passiert allen. Noch mal, ein bisschen höher halten.'],
         ['Herr Thill', 'Geschafft! Und jetzt schicken?'],
-        ['Lio', 'Genau, hier auf den Pfeil. Fertig! Sie hat es schon gesehen – da sind zwei blaue Haken.'],
+        ['Lio', 'Genau, hier auf den Pfeil. Fertig! Sie hat es schon gesehen.'],
         ['Herr Thill', 'Wunderbar! Weißt du, Lio, als ich so alt war wie du, haben wir Briefe geschrieben. Ein Brief nach Kanada war drei Wochen unterwegs.'],
         ['Lio', 'Drei Wochen? Krass. Erzählen Sie mir nächstes Mal davon? Dann zeige ich Ihnen Videoanrufe.'],
       ],
@@ -500,7 +500,7 @@ export const LEKTIONEN = [
       ],
     },
     ueben: [
-      { art: 'schneidekarten', auftrag: 'Kompliment-Karten: Schreibt für drei Menschen aus der Klasse ein Kompliment, das NICHT das Aussehen betrifft. Schneidet die Karten aus und verschenkt sie.', stufe: 2, neueSeite: true, titel: 'Für dich', icon: 'heart', farbe: MUT, spalten: 3,
+      { art: 'schneidekarten', auftrag: 'Kompliment-Karten: Zieht drei Namen aus einer Dose und schreibt für diese Menschen ein Kompliment, das NICHT das Aussehen betrifft. Schneidet die Karten aus und verschenkt sie.', stufe: 2, neueSeite: true, titel: 'Für dich', icon: 'heart', farbe: MUT, spalten: 3,
         karten: [
           { text: 'Ich mag an dir, dass …', linien: 3, frage: 'von: …' }, { text: 'Ich mag an dir, dass …', linien: 3, frage: 'von: …' }, { text: 'Ich mag an dir, dass …', linien: 3, frage: 'von: …' },
           { text: 'Du kannst richtig gut …', linien: 3, frage: 'von: …' }, { text: 'Danke, dass du …', linien: 3, frage: 'von: …' }, { text: 'Mit dir macht es Spaß, …', linien: 3, frage: 'von: …' },
@@ -530,7 +530,7 @@ export const LEKTIONEN = [
       absaetze: [
         'Jeder Mensch hat manchmal Sorgen. Viele denken: „Ich muss das allein schaffen“ oder „Mein Problem ist nicht wichtig genug.“ Das stimmt nicht. **Hilfe holen ist kein Zeichen von Schwäche, sondern von Stärke.**',
         '### Wer kann helfen?',
-        '**Vertrauenspersonen**: Freundinnen und Freunde, Familienmitglieder, Trainerinnen, Nachbarn. **In der Schule**: die Klassenlehrerin oder der Klassenlehrer, der psychosoziale Dienst der Schule (SePAS), die Schulkrankenschwester. **Am Telefon oder im Chat**: das Kinder- und Jugendtelefon **116 111** – kostenlos und anonym. Man muss seinen Namen nicht sagen. Bei Problemen im Internet: die **BEE SECURE Helpline 8002 1234**. **Im Notfall**, wenn jemand in Gefahr ist: **112**.',
+        '**Vertrauenspersonen**: Freundinnen und Freunde, Familienmitglieder, Trainerinnen, Nachbarn. **In der Schule**: die Klassenlehrerin oder der Klassenlehrer, der psychosoziale Dienst der Schule (SePAS), die Krankenpflegerin oder der Krankenpfleger der Schule. **Am Telefon oder im Chat**: das Kinder- und Jugendtelefon **116 111** – kostenlos und anonym. Man muss seinen Namen nicht sagen. Bei Problemen im Internet: die **BEE SECURE Helpline 8002 1234**. **Im Notfall**, wenn jemand in Gefahr ist: **112** (Rettung) oder **113** (Polizei).',
         '### Wie fange ich an?',
         'Oft ist der erste Satz am schwersten. Er kann ganz einfach sein: „Kann ich kurz mit dir reden? Mir geht es nicht gut.“ Man kann auch einen Zettel schreiben oder eine Nachricht schicken.',
         '### Wenn ein Freund Sorgen hat',
@@ -565,7 +565,7 @@ export const LEKTIONEN = [
     },
     regel: {
       reihen: [
-        [{ titel: 'Hier gibt es Hilfe', punkte: ['**Vertrauenspersonen**', 'Schule: Klassenlehrer/in, **SePAS**', '**116 111**: Kinder- und Jugendtelefon, anonym', '**8002 1234**: BEE SECURE Helpline', '**112**: Notfall'] },
+        [{ titel: 'Hier gibt es Hilfe', punkte: ['**Vertrauenspersonen**', 'Schule: Klassenlehrer/in, **SePAS**', '**116 111**: Kinder- und Jugendtelefon, anonym', '**8002 1234**: BEE SECURE Helpline', '**112**: Notfall · **113**: Polizei'] },
          { titel: 'Anfangen', punkte: ['„Kann ich kurz mit dir reden?“', 'Zettel oder Nachricht geht auch', 'Gefahr? Erwachsenen sagen ist **kein Verrat**'] }],
       ],
     },
@@ -573,7 +573,7 @@ export const LEKTIONEN = [
       { art: 'schneidekarten', auftrag: 'Meine Hilfe-Karte: Fülle die Karte aus (nur für dich). Schneide sie aus und steck sie in dein Portemonnaie oder deine Handyhülle.', stufe: 1, neueSeite: true, titel: 'Meine Hilfe-Karte', icon: 'lifebuoy', farbe: HILFE, spalten: 2,
         karten: [
           { text: '**Wenn es mir nicht gut geht, rede ich mit:**', linien: 3, frage: '116 111 · kostenlos, anonym' },
-          { text: '**Das tut mir gut:**', linien: 3, frage: 'Notfall: 112' },
+          { text: '**Das tut mir gut:**', linien: 3, frage: 'Notfall: 112 · Polizei: 113' },
           { text: '**Mein erster Satz:**\n„Kann ich kurz mit dir reden?“', linien: 2, frage: 'Internet: 8002 1234' },
           { text: '**Für einen Freund:**\nZuhören. Ernst nehmen. Hilfe holen.', linien: 2, frage: 'Du bist nicht allein.' },
         ] },
