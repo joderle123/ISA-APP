@@ -141,6 +141,7 @@ export async function lichtung(a) {
   const h = await a.wahl(['„Setz dich. Atme mit mir. Vier rein, vier raus.“', '„Warte hier. Ich hol Hilfe.“', '„Selbst schuld.“']);
   if (h === 0) {
     await a.sag('e', 'Ihr atmet zusammen. Vier rein. Vier raus. Immer wieder.');
+    await a.sag('e', '(Die Atem-Übung aus der Skills-Stunde. Hier draußen hilft sie wirklich.)');
     await a.sag('mika', 'Okay. Es wird … langsamer.');
     a.merke('mikaGeholfen');
   }
@@ -203,7 +204,7 @@ export async function laden(a) {
     return 'weiter';
   }
   if (w === 0) { await a.sag('mo', '(zuckt mit den Schultern) Dann halt nicht. Dann bist du nicht drin.'); await a.sag('e', '(Drin. In was eigentlich? In einer Gruppe, die dich testet?)'); }
-  if (w === 1) { await a.sag('mo', 'Hab ich schon. Letzte Woche. War easy.'); await a.sag('e', '(Stimmt das? Oder ist das nur ein Satz, der Druck macht?)'); }
+  if (w === 1) { await a.sag('mo', 'Hab ich schon. Letzte Woche. War easy.'); await a.sag('e', '(Gedanken prüfen: Stimmt das? Oder macht der Satz nur Druck?)'); }
   a.ton('pling');
   await a.sag('e', 'Du gehst rein. Über der Tür bimmelt eine Glocke.');
   a.teleport('epicerieInnen');
