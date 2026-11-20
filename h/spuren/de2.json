@@ -1,0 +1,654 @@
+{
+ "modul": "de2",
+ "titel": {
+  "de": "Stadt, Sport und große Ideen",
+  "fr": "Ville, sport et grandes idées"
+ },
+ "sprache": "de",
+ "spuren": {
+  "de2-01l": {
+   "titel": "Trier für Jugendliche – fünf Tipps",
+   "art": "lesen",
+   "lektion": 1,
+   "dauer": 68.9,
+   "text": [
+    [
+     "",
+     "Trier für Jugendliche – fünf Tipps"
+    ],
+    [
+     "",
+     "Trier ist eine der ältesten Städte Deutschlands. Die Stadt liegt an der Mosel – mit dem Bus nur etwa eine Stunde von Junglinster entfernt. Hier sind unsere fünf Tipps für euch."
+    ],
+    [
+     "",
+     "Die Porta Nigra: Das „Schwarze Tor“ ist fast 1900 Jahre alt. Die Römer haben es gebaut. Ihr könnt hineingehen und von oben auf die Stadt schauen."
+    ],
+    [
+     "",
+     "Der Hauptmarkt: Hier ist immer etwas los. In der Mitte steht ein alter Brunnen. Rund um den Platz gibt es Cafés und Geschäfte."
+    ],
+    [
+     "",
+     "Der Dom: Er ist eine der ältesten Kirchen in Deutschland. Innen ist er sehr groß und ganz ruhig."
+    ],
+    [
+     "",
+     "Die Kaiserthermen: Das war ein riesiges Bad der Römer. Heute sind es Ruinen. Unter der Erde gibt es lange, dunkle Gänge – spannend!"
+    ],
+    [
+     "",
+     "Die Mosel: Am Ufer könnt ihr spazieren gehen, Rad fahren oder ein Picknick machen. Von hier fahren auch Schiffe."
+    ]
+   ]
+  },
+  "de2-01h": {
+   "titel": "Haben Sie einen Stadtplan?",
+   "art": "hoeren",
+   "lektion": 1,
+   "dauer": 59.2,
+   "text": [
+    [
+     "Mitarbeiterin",
+     "Guten Tag! Kann ich euch helfen?"
+    ],
+    [
+     "Amira",
+     "Guten Tag! Wir sind eine Schulklasse aus Luxemburg. Haben Sie einen Stadtplan für uns?"
+    ],
+    [
+     "Mitarbeiterin",
+     "Natürlich. Der Stadtplan ist gratis. Hier, bitte."
+    ],
+    [
+     "Ben",
+     "Danke! Wo ist die Jugendherberge?"
+    ],
+    [
+     "Mitarbeiterin",
+     "Die Jugendherberge ist an der Mosel, im Planquadrat B1. Zu Fuß sind das zehn Minuten."
+    ],
+    [
+     "Amira",
+     "Und was können wir heute Nachmittag machen?"
+    ],
+    [
+     "Mitarbeiterin",
+     "Um vierzehn Uhr gibt es eine Stadtführung für Jugendliche. Sie beginnt hier vor der Porta Nigra und dauert eine Stunde."
+    ],
+    [
+     "Ben",
+     "Super! Und wo kann man gut Eis essen?"
+    ],
+    [
+     "Mitarbeiterin",
+     "Am Hauptmarkt und in der Fleischstraße gibt es viele Eiscafés."
+    ],
+    [
+     "Amira",
+     "Vielen Dank! Auf Wiedersehen!"
+    ],
+    [
+     "Mitarbeiterin",
+     "Gern geschehen. Viel Spaß in Trier!"
+    ]
+   ]
+  },
+  "de2-02l": {
+   "titel": "Rallye: Von der Porta Nigra zu den Kaiserthermen",
+   "art": "lesen",
+   "lektion": 2,
+   "dauer": 53.4,
+   "text": [
+    [
+     "",
+     "Rallye: Von der Porta Nigra zu den Kaiserthermen"
+    ],
+    [
+     "",
+     "Startet an der Porta Nigra. Geht die Simeonstraße immer geradeaus bis zum Hauptmarkt. Zählt die Eiscafés auf dem Weg!"
+    ],
+    [
+     "",
+     "Am Hauptmarkt: Sucht den Brunnen. Lest das Schild: Wie heißt er? Schreibt den Namen auf."
+    ],
+    [
+     "",
+     "Biegt dann links in die Sternstraße ab. Am Ende der Straße seht ihr den Dom. Geht hinein, aber seid bitte leise!"
+    ],
+    [
+     "",
+     "Geht am Dom vorbei nach Süden. Bald kommt ihr in den Palastgarten. Macht dort eine Pause und trinkt etwas."
+    ],
+    [
+     "",
+     "Geht durch den Park. Am Ende seht ihr die Kaiserthermen. Wartet dort auf Frau Sommer. Vergesst eure Antworten nicht!"
+    ]
+   ]
+  },
+  "de2-02h": {
+   "titel": "Wie komme ich zur Jugendherberge?",
+   "art": "hoeren",
+   "lektion": 2,
+   "dauer": 49.7,
+   "text": [
+    [
+     "Noah",
+     "Entschuldigung, können Sie mir helfen? Wie komme ich zur Jugendherberge?"
+    ],
+    [
+     "Frau",
+     "Zur Jugendherberge? Das ist nicht weit. Gehen Sie hier die Theodor-Heuss-Allee immer geradeaus."
+    ],
+    [
+     "Noah",
+     "Geradeaus, okay."
+    ],
+    [
+     "Frau",
+     "Nach etwa zehn Minuten sehen Sie ein großes, dunkles Tor. Das ist die Porta Nigra."
+    ],
+    [
+     "Frau",
+     "Gehen Sie an der Porta Nigra vorbei und dann immer weiter geradeaus bis zur Mosel."
+    ],
+    [
+     "Frau",
+     "An der Mosel sehen Sie die Jugendherberge schon. Sie ist auf der rechten Seite."
+    ],
+    [
+     "Noah",
+     "Also: geradeaus, an der Porta Nigra vorbei, bis zur Mosel. Vielen Dank!"
+    ],
+    [
+     "Frau",
+     "Gern geschehen! Und rufen Sie Ihre Lehrerin an!"
+    ],
+    [
+     "Noah",
+     "Ja, das mache ich sofort. Danke!"
+    ]
+   ]
+  },
+  "de2-03l": {
+   "titel": "Eine Woche Deutschland: Chloe erzählt",
+   "art": "lesen",
+   "lektion": 3,
+   "dauer": 59.7,
+   "text": [
+    [
+     "",
+     "Eine Woche Deutschland: Chloe erzählt"
+    ],
+    [
+     "",
+     "Ich heiße Chloe und gehe in die 7P2 in Junglinster. Im Mai war ich eine Woche in Trier – bei einem Schüleraustausch. Ich habe bei einer Gastfamilie gewohnt. Meine Austauschpartnerin heißt Leonie."
+    ],
+    [
+     "",
+     "Leonie wohnt in einer Dachwohnung mit ihren Eltern und einem Hund. Mein Gästezimmer war klein, aber gemütlich. Aus dem Fenster konnte ich die Mosel sehen."
+    ],
+    [
+     "",
+     "Jeden Morgen sind wir mit dem Schulbus gefahren. Leonies Schule ist ein großes Schulzentrum mit einer Kletterwand in der Turnhalle. Das Mittagessen in der Schulkantine war lecker – besonders die Gemüsesuppe!"
+    ],
+    [
+     "",
+     "Am Wochenende haben wir eine Radtour an der Mosel gemacht. Am Abend gab es ein Grillfest im Garten. Leonie kommt im Juni zu mir nach Luxemburg. Ich freue mich schon!"
+    ]
+   ]
+  },
+  "de2-03h": {
+   "titel": "Welches Wort suchen wir?",
+   "art": "hoeren",
+   "lektion": 3,
+   "dauer": 57.4,
+   "text": [
+    [
+     "Moderator",
+     "Hallo und willkommen bei der Wortbaustelle! Heute am Telefon: Mia aus Echternach. Hallo, Mia!"
+    ],
+    [
+     "Mia",
+     "Hallo! Ich bin so aufgeregt!"
+    ],
+    [
+     "Moderator",
+     "Keine Sorge. Erstes Wort: Hier kaufst du eine Fahrkarte und wartest auf den Zug."
+    ],
+    [
+     "Mia",
+     "Das ist der Bahnhof!"
+    ],
+    [
+     "Moderator",
+     "Richtig! Zweites Wort: Dieses Buch hilft dir. Du suchst ein Wort und findest es auf Französisch."
+    ],
+    [
+     "Mia",
+     "Hm … das Wörterbuch!"
+    ],
+    [
+     "Moderator",
+     "Super! Drittes Wort: Hier spielen Kinder. Es gibt eine Rutsche und eine Schaukel."
+    ],
+    [
+     "Mia",
+     "Der Spielplatz!"
+    ],
+    [
+     "Moderator",
+     "Genau! Und das letzte Wort: Du trägst sie im Winter auf dem Kopf. Sie ist warm."
+    ],
+    [
+     "Mia",
+     "Die Wintermütze!"
+    ],
+    [
+     "Moderator",
+     "Vier von vier! Herzlichen Glückwunsch, Mia! Du gewinnst zwei Kinokarten!"
+    ],
+    [
+     "Mia",
+     "Juhu! Danke!"
+    ]
+   ]
+  },
+  "de2-04l": {
+   "titel": "Wo ist mein Handy?",
+   "art": "lesen",
+   "lektion": 4,
+   "dauer": 40.0,
+   "text": [
+    [
+     "",
+     "Wo ist mein Handy?"
+    ],
+    [
+     "",
+     "Jana! Hast du mein Handy gesehen?"
+    ],
+    [
+     "",
+     "Nein. Wo hattest du es zuletzt?"
+    ],
+    [
+     "",
+     "Im Eiscafé am Hauptmarkt. Oh nein! Ich habe es auf dem Tisch vergessen!"
+    ],
+    [
+     "",
+     "Ganz ruhig. Ruf doch mal mit meinem Handy an."
+    ],
+    [
+     "",
+     "Gute Idee. Es klingelt … Jemand geht ran!"
+    ],
+    [
+     "",
+     "Tom, ist alles in Ordnung?"
+    ],
+    [
+     "",
+     "Ja! Die Kellnerin hat mein Handy. Sie schickt es mit der Post. Puh!"
+    ],
+    [
+     "",
+     "Siehst du? Alles wird gut."
+    ]
+   ]
+  },
+  "de2-04h": {
+   "titel": "Hörst du den Unterschied?",
+   "art": "hoeren",
+   "lektion": 4,
+   "dauer": 35.0,
+   "text": [
+    [
+     "Sprecherin",
+     "Satz eins."
+    ],
+    [
+     "Tom",
+     "Du kommst mit."
+    ],
+    [
+     "Sprecherin",
+     "Satz zwei."
+    ],
+    [
+     "Jana",
+     "Du kommst mit?"
+    ],
+    [
+     "Sprecherin",
+     "Satz drei."
+    ],
+    [
+     "Tom",
+     "Komm mit!"
+    ],
+    [
+     "Sprecherin",
+     "Satz vier."
+    ],
+    [
+     "Jana",
+     "Wann fährt der Bus?"
+    ],
+    [
+     "Sprecherin",
+     "Satz fünf."
+    ],
+    [
+     "Tom",
+     "Der Bus fährt um drei."
+    ],
+    [
+     "Sprecherin",
+     "Satz sechs."
+    ],
+    [
+     "Jana",
+     "Fährt der Bus um drei?"
+    ],
+    [
+     "Sprecherin",
+     "Satz sieben."
+    ],
+    [
+     "Tom",
+     "Das ist ja toll!"
+    ],
+    [
+     "Sprecherin",
+     "Satz acht."
+    ],
+    [
+     "Jana",
+     "Ist das toll?"
+    ]
+   ]
+  },
+  "de2-05l": {
+   "titel": "Tag 2 in Trier – von Lina",
+   "art": "lesen",
+   "lektion": 5,
+   "dauer": 59.0,
+   "text": [
+    [
+     "",
+     "Tag 2 in Trier – von Lina"
+    ],
+    [
+     "",
+     "Heute war ein super Tag! Am Morgen haben wir in der Jugendherberge gefrühstückt. Ich habe drei Brötchen gegessen – ich hatte so einen Hunger!"
+    ],
+    [
+     "",
+     "Um neun Uhr haben wir die Stadtrallye gemacht. Mein Team hat alle Fragen beantwortet. Am Hauptmarkt haben wir 14 Eiscafés gezählt. Wir haben aber nur eins besucht. 😉"
+    ],
+    [
+     "",
+     "Im Dom haben wir ganz leise geredet. Sam hat ein Foto vom großen Fenster gemacht. Danach haben wir im Palastgarten gepicknickt und Frisbee gespielt."
+    ],
+    [
+     "",
+     "Am Nachmittag haben wir die Kaiserthermen besichtigt. In den dunklen Gängen hat Ben laut gelacht – das Echo war lustig!"
+    ],
+    [
+     "",
+     "Am Abend haben wir in der Jugendherberge Karten gespielt. Jetzt bin ich müde. Morgen fahren wir schon nach Hause. Schade!"
+    ]
+   ]
+  },
+  "de2-05h": {
+   "titel": "Und, wie war dein Wochenende?",
+   "art": "hoeren",
+   "lektion": 5,
+   "dauer": 59.2,
+   "text": [
+    [
+     "Sam",
+     "Hi Lina! Und, wie war dein Wochenende?"
+    ],
+    [
+     "Lina",
+     "Ganz gut! Am Samstag habe ich lange geschlafen – bis elf Uhr!"
+    ],
+    [
+     "Sam",
+     "Bis elf? Wow. Und dann?"
+    ],
+    [
+     "Lina",
+     "Dann habe ich mit meiner Cousine Kuchen gebacken. Am Abend haben wir einen Film geschaut."
+    ],
+    [
+     "Sam",
+     "Welchen Film?"
+    ],
+    [
+     "Lina",
+     "Eine Komödie. Wir haben viel gelacht. Und du? Was hast du gemacht?"
+    ],
+    [
+     "Sam",
+     "Am Samstag habe ich ein Basketballspiel gehabt. Wir haben leider verloren – 48 zu 52."
+    ],
+    [
+     "Lina",
+     "Oh, schade!"
+    ],
+    [
+     "Sam",
+     "Ja. Aber am Sonntag habe ich mit meinem Onkel gekocht. Wir haben Lasagne gemacht. Die war super!"
+    ],
+    [
+     "Lina",
+     "Lecker! Hast du auch die Hausaufgaben gemacht?"
+    ],
+    [
+     "Sam",
+     "Hausaufgaben? Oh nein … Welche Hausaufgaben?"
+    ]
+   ]
+  },
+  "de2-06l": {
+   "titel": "Fünf Kilometer – von Yusuf",
+   "art": "lesen",
+   "lektion": 6,
+   "dauer": 58.9,
+   "text": [
+    [
+     "",
+     "Fünf Kilometer – von Yusuf"
+    ],
+    [
+     "",
+     "Im Frühling habe ich für den Stadtlauf in Junglinster trainiert. Fünf Kilometer! Zweimal pro Woche bin ich mit meinem Freund Noah im Wald gelaufen."
+    ],
+    [
+     "",
+     "Am Sonntag war es so weit. Um zehn Uhr sind wir gestartet. Ich bin viel zu schnell gelaufen. Nach zwei Kilometern hatte ich Seitenstiche. Ich bin langsamer geworden und dann ein Stück gegangen."
+    ],
+    [
+     "",
+     "Dann bin ich auch noch gestolpert und hingefallen. Mein Knie hat geblutet. Ich wollte aufhören. Aber Noah ist bei mir geblieben. Er hat gesagt: „Komm, wir schaffen das zusammen!“"
+    ],
+    [
+     "",
+     "Ich bin aufgestanden und wir sind langsam weitergelaufen. Nach 34 Minuten sind wir ins Ziel gekommen – zusammen, Hand in Hand. Wir sind nur Platz 51 und 52 geworden. Aber ich war so stolz!"
+    ],
+    [
+     "",
+     "Was habe ich gelernt? Fang langsam an. Und: Ein guter Freund ist wichtiger als ein Pokal."
+    ]
+   ]
+  },
+  "de2-06h": {
+   "titel": "Sport? Na klar! – Sport? Nein, danke!",
+   "art": "hoeren",
+   "lektion": 6,
+   "dauer": 60.4,
+   "text": [
+    [
+     "Reporterin",
+     "Hallo! Wir fragen heute: Wie findest du Sport? Chloe, du zuerst."
+    ],
+    [
+     "Chloe",
+     "Sport? Na klar! Ich schwimme dreimal pro Woche. Letzten Monat bin ich bei einem Wettkampf Zweite geworden."
+    ],
+    [
+     "Reporterin",
+     "Super! Und du, Finn?"
+    ],
+    [
+     "Finn",
+     "Sport? Nein, danke! Ich finde Sport langweilig. Ich spiele lieber Gitarre. Aber zur Schule fahre ich jeden Tag mit dem Rad – das ist auch Sport, oder?"
+    ],
+    [
+     "Reporterin",
+     "Klar! Nele, wie ist es bei dir?"
+    ],
+    [
+     "Nele",
+     "Ich liebe Rollstuhl-Basketball! Am Samstag haben wir gewonnen. Ich habe zwölf Punkte gemacht."
+    ],
+    [
+     "Reporterin",
+     "Glückwunsch! Und Tom?"
+    ],
+    [
+     "Tom",
+     "Hm, früher habe ich Fußball gespielt. Aber im Winter bin ich gefallen und habe mir das Bein gebrochen. Jetzt gehe ich nur spazieren. Bald will ich wieder spielen."
+    ]
+   ]
+  },
+  "de2-07l": {
+   "titel": "Zwei Frauen mit großen Ideen",
+   "art": "lesen",
+   "lektion": 7,
+   "dauer": 69.3,
+   "text": [
+    [
+     "",
+     "Zwei Frauen mit großen Ideen"
+    ],
+    [
+     "",
+     "Melitta Bentz (1873–1950). Melitta Bentz hat in Dresden gelebt. Sie hat gern Kaffee getrunken. Aber im Kaffee war immer Kaffeesatz – das hat ihr nicht geschmeckt. 1908 hatte sie eine Idee: Sie hat Löschpapier aus dem Schulheft ihres Sohnes genommen und einen alten Topf mit Löchern benutzt. So hat sie den Kaffeefilter aus Papier erfunden. Danach hat sie eine eigene Firma gegründet."
+    ],
+    [
+     "",
+     "Bertha Benz (1849–1944). Bertha Benz war die Frau von Carl Benz. Carl hat eines der ersten Autos gebaut. Aber niemand wollte es kaufen. 1888 ist Bertha mit ihren zwei Söhnen heimlich von Mannheim nach Pforzheim gefahren – über 100 Kilometer! Unterwegs hat sie Benzin in einer Apotheke gekauft. Die Fahrt hat allen gezeigt: Das Auto funktioniert."
+    ]
+   ]
+  },
+  "de2-07h": {
+   "titel": "Von der Idee zur Erfindung",
+   "art": "hoeren",
+   "lektion": 7,
+   "dauer": 59.2,
+   "text": [
+    [
+     "Lina",
+     "Guten Tag! Meine Erfindung heißt „Leuchtrucksack“."
+    ],
+    [
+     "Lina",
+     "Zuerst: das Problem. Im Winter ist es morgens dunkel. Ich gehe zu Fuß zur Schule, und die Autos sehen mich schlecht. Das ist gefährlich."
+    ],
+    [
+     "Lina",
+     "Dann hatte ich eine Idee: ein Rucksack, der leuchtet! Auf dem ersten Bild seht ihr meine Skizze."
+    ],
+    [
+     "Lina",
+     "Danach habe ich ein Modell gebaut. Ich habe kleine Lampen an einen alten Rucksack genäht. Die Lampen bekommen Strom von einer Batterie."
+    ],
+    [
+     "Lina",
+     "Auf dem zweiten Bild seht ihr meinen ersten Test. Er hat nicht funktioniert – die Batterie war zu schwach."
+    ],
+    [
+     "Lina",
+     "Beim zweiten Test habe ich eine stärkere Batterie benutzt. Jetzt leuchtet der Rucksack drei Stunden lang."
+    ],
+    [
+     "Lina",
+     "Mein Fazit: Man darf nicht aufgeben! Danke fürs Zuhören."
+    ],
+    [
+     "Lehrer",
+     "Bravo, Lina! Habt ihr Fragen?"
+    ]
+   ]
+  },
+  "de2-08l": {
+   "titel": "Wer ist wer? – Vier Personen beim Sportfest",
+   "art": "lesen",
+   "lektion": 8,
+   "dauer": 52.4,
+   "text": [
+    [
+     "",
+     "Wer ist wer? – Vier Personen beim Sportfest"
+    ],
+    [
+     "",
+     "Person 1 ist groß und schlank. Sie trägt ein Kopftuch und ein grünes Trikot. Sie läuft beim 800-Meter-Lauf."
+    ],
+    [
+     "",
+     "Person 2 ist mittelgroß. Er hat keine Haare auf dem Kopf, aber einen Bart. Er trägt eine dunkle Jacke und eine hellblaue Hose. Er ist der Trainer vom Basketballteam."
+    ],
+    [
+     "",
+     "Person 3 sitzt im Rollstuhl. Sie hat blonde Haare mit einem Pony und trägt ein gestreiftes T-Shirt. Sie spielt Basketball und wirft sehr gut."
+    ],
+    [
+     "",
+     "Person 4 hat eine Mütze auf dem Kopf. Er ist schlank und trägt ein schwarzes T-Shirt. Er macht beim Weitsprung mit und lacht immer."
+    ]
+   ]
+  },
+  "de2-08h": {
+   "titel": "Wir suchen …",
+   "art": "hoeren",
+   "lektion": 8,
+   "dauer": 50.6,
+   "text": [
+    [
+     "Durchsage",
+     "Achtung, eine Durchsage! Wir suchen Max aus der Klasse 7P1. Max ist elf Jahre alt und ziemlich klein."
+    ],
+    [
+     "Durchsage",
+     "Er hat kurze, hellbraune Haare. Er trägt ein hellblaues T-Shirt und eine schwarze Hose."
+    ],
+    [
+     "Durchsage",
+     "Max, bitte komm zum Info-Zelt neben dem Eingang. Deine Lehrerin wartet dort auf dich. Danke!"
+    ],
+    [
+     "Ben",
+     "Lina, schau mal! Da drüben, bei der Wurstbude – das ist doch Max, oder?"
+    ],
+    [
+     "Lina",
+     "Hellbraune Haare, hellblaues T-Shirt … ja! Komm, wir sagen es ihm."
+    ],
+    [
+     "Ben",
+     "Und dann bringen wir ihn zum Info-Zelt. Seine Lehrerin sucht ihn."
+    ],
+    [
+     "Lina",
+     "Gute Idee. Ich rufe auch Frau Sommer an. Wir geben ihr Bescheid."
+    ]
+   ]
+  }
+ }
+}
