@@ -280,11 +280,14 @@ export function baueDorf({ B, C, schild, schilder, P = null, R = null }) {
 
   // ================= Hinter der Schule: Waldweg zur Lichtung mit Schutzhütte =================
   { const ERDE = hex('#9c7a52'), HOLZ = hex('#7a5232'), HOLZH = hex('#a0743e'), STEIN = hex('#8d939c');
-    box(-65.6, -62.4, 0, 0.04, -92, -2, ERDE, { art: 'innen' }); B.frei.push({ x0: -67.5, x1: -60.5, z0: -94, z1: -2 });
-    // Wegweiser am Anfang
-    box(-62.1, -61.95, 0, 2.3, -6.1, -5.95, HOLZ, { stoss: true });
-    { const t = schild('Bëschwee  ↑  Lichtung', 1.3, 0.26, { bg: '#7a5232', rand: '#f4e8cc', schrift: 'bold 72px Georgia, serif' }); t.position.set(-61.9, 2.0, -6.02); t.rotation.y = Math.PI / 2; schilder.push(t); }
-    { const t = schild('←  Schoul', 1.0, 0.24, { bg: '#7a5232', rand: '#f4e8cc', schrift: 'bold 72px Georgia, serif' }); t.position.set(-61.9, 1.65, -6.02); t.rotation.y = Math.PI / 2; schilder.push(t); }
+    // Der Weg beginnt zwischen Tribüne (bis x −63.1) und Werkstatt (ab x −60), knickt hinter der Tribüne nach Westen und läuft in den Wald
+    box(-62.9, -60.3, 0, 0.04, -25, -2, ERDE, { art: 'innen' }); B.frei.push({ x0: -63.0, x1: -60.2, z0: -26, z1: -2 });
+    box(-65.6, -60.3, 0, 0.04, -27.5, -24.5, ERDE, { art: 'innen' });
+    box(-65.6, -62.4, 0, 0.04, -92, -26, ERDE, { art: 'innen' }); B.frei.push({ x0: -67.5, x1: -60.5, z0: -94, z1: -24 });
+    // Wegweiser am Anfang (lesbar, wenn man vom Durchgang zum Sportplatz kommt)
+    box(-60.55, -60.4, 0, 2.3, -2.6, -2.45, HOLZ, { stoss: true });
+    { const t = schild('Bëschwee  ↑  Lichtung', 1.3, 0.26, { bg: '#7a5232', rand: '#f4e8cc', schrift: 'bold 72px Georgia, serif' }); t.position.set(-61.15, 2.0, -2.4); t.rotation.y = 0; schilder.push(t); }
+    { const t = schild('→  Schoul', 1.0, 0.24, { bg: '#7a5232', rand: '#f4e8cc', schrift: 'bold 72px Georgia, serif' }); t.position.set(-61.0, 1.65, -2.4); t.rotation.y = 0; schilder.push(t); }
     // Lichtung (Mitte -60, -100): Boden, Feuerstelle (kalt), drei Baumstämme zum Sitzen
     const CX = -60, CZ = -100;
     { const g = new THREE.CylinderGeometry(9, 9, 0.04, 32); g.translate(CX, 0.02, CZ); geoF(g, hex('#8f9a5a'), 'innen'); }

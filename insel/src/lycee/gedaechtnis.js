@@ -244,6 +244,9 @@ export const GEDAECHTNIS = [
   { id: 'sitRollerFahrt', wer: 'kenan', ab: 5, wenn: (x) => x.sit_roller === 'mitgefahren', g: [
     ['kenan', 'Zwei Leute auf einem Roller, in der Gasse. Rosa hat’s erzählt.'],
     ['kenan', 'Ich frag nicht, wer. Ich sag nur: Glück gehabt.'] ] },
+  { id: 'sitMikaNein', wer: 'mila', ab: 5, wenn: m('mikaNeinWald'), g: [
+    ['mila', 'Mika erzählt jedem, dass Mika Nein gesagt hat. Zu Dex!'],
+    ['mila', 'Und dass du der Trainer warst. Stimmt das?'] ] },
   { id: 'sitMikaSorry', wer: 'noah', ab: 5, wenn: m('mikaSorry'), g: [
     ['noah', 'Mika hat erzählt, dass du geschrieben hast. Später noch.'],
     ['noah', 'Fand ich gut. Viele schreiben dann gar nichts mehr.'] ] },

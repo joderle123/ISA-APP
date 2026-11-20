@@ -23,8 +23,8 @@ export const SIT_LEUTE = {
   sacha: { szene: 'roller', wer: 'sacha', name: 'Sacha (15)', farbe: '#7a5af5', aussehen: { modell: 'menschen', stil: 'Casual2', haut: '#c68e64', haar: '#1b1410', oben: '#2b2b33', unten: '#3a3f4b', schuhe: '#e85d75', hoehe: 1.8, kopf: 'cap', kopfFarbe: '#7a5af5' }, steht: [31.7, 67.0, Math.PI, 'handy'] },
   mikaRoller: { szene: 'roller', wer: 'mika', unsichtbar: true, name: 'Mika (6ème)', farbe: '#e9b949', aussehen: null, steht: [31.0, 70.0, Math.PI, ''] },
   // Waldweg-Anfang hinter der Schule (Schwänzen, Kapitel 9–10, mittags)
-  lennyZaun: { szene: 'zaun', wer: 'lenny', name: 'Lenny (6ème)', farbe: '#3fa66b', aussehen: null, steht: [-64.4, -10.6, 0.2, 'redet'] },
-  romy: { szene: 'zaun', wer: 'romy', name: 'Romy (6ème)', farbe: '#d9693f', aussehen: { modell: 'frauen', stil: 'Casual', haut: '#f0c9a8', haar: '#7a4a2a', oben: '#d9693f', unten: '#3a3f4b', schuhe: '#f2f2f2', hoehe: 1.56 }, steht: [-63.0, -11.2, -0.3, ''] },
+  lennyZaun: { szene: 'zaun', wer: 'lenny', name: 'Lenny (6ème)', farbe: '#3fa66b', aussehen: null, steht: [-62.7, -28.6, 0.35, 'redet'] },
+  romy: { szene: 'zaun', wer: 'romy', name: 'Romy (6ème)', farbe: '#d9693f', aussehen: { modell: 'frauen', stil: 'Casual', haut: '#f0c9a8', haar: '#7a4a2a', oben: '#d9693f', unten: '#3a3f4b', schuhe: '#f2f2f2', hoehe: 1.56 }, steht: [-61.4, -29.0, -0.25, ''] },
   // Hinter der Turnhalle (Streit mit Publikum, ab Kapitel 7)
   jules: { szene: 'halle', wer: 'jules', name: 'Jules (6ème)', farbe: '#d9693f', aussehen: { modell: 'menschen', stil: 'Casual2', haut: '#f1c7a2', haar: '#7a4a2a', oben: '#d9693f', unten: '#2d3748', schuhe: '#2b2b2b', hoehe: 1.7 }, steht: [59.8, -25.7, 1.2, 'redet'] },
   sami: { szene: 'halle', wer: 'sami', name: 'Sami (6ème)', farbe: '#4f88c8', aussehen: { modell: 'menschen', stil: 'Casual', haut: '#c68e64', haar: '#1b1410', oben: '#4f88c8', unten: '#3a3f4b', schuhe: '#f2f2f2', hoehe: 1.52 }, steht: [61.0, -25.4, -1.9, ''] },
@@ -71,7 +71,7 @@ export const SZENEN = {
   fest: { frage: 'Was verpasst man, wenn man um jeden Preis dabei sein will?', ab: 10, bis: 10, start: { x: 60.6, z: -9.5, yaw: Math.PI }, schritt: 'k10_fest', zone: { x: 60.6, z: -13.3, r: 3.2 }, teaser: ['Mo (Gruppe)', 'Sommerfest-Afterparty hinter der Turnhalle 🍾 Psst'], titel: ['🍾', 'Die Wasserflasche', 'Das Fest ist drinnen. Und du gehörst dazu.'] },
   spiel: { frage: 'Woran erkennt man, dass ein Online-Freund nicht ehrlich ist?', ab: 9, bis: 10, start: { x: 4.7, z: 85.2, yaw: Math.PI }, zone: { x: 4.7, z: 83.1, r: 1.5 }, teaser: ['Leo_15 · Spiel-Chat', 'Hey 😊 Du spielst echt gut! Hab dir was geschenkt 🎁'], titel: ['🎮', 'Der Spielfreund', '„Erzähl es keinem“ ist der beste Grund, es jemandem zu erzählen.'] },
   dach: { frage: 'Wann ist Hilfe holen klüger als Mut?', ab: 8, bis: 9, start: { x: 60.8, z: -17.8, yaw: Math.PI }, zone: { x: 61.6, z: -21.6, r: 2.8 }, teaser: ['Pit', 'Ball auf dem Turnhallendach 😭 Hilf mal, hinten beim Container!'], titel: ['🏀', 'Das Dach', 'Die Leiter ist nicht feige. Sie ist klug.'] },
-  zaun: { frage: 'Was steckt manchmal hinter „Ich hab keinen Bock“?', ab: 9, bis: 10, zeit: [11.9, 13.4], start: { x: -63.8, z: -7.4, yaw: Math.PI }, zone: { x: -63.8, z: -9.6, r: 2.2 }, teaser: ['Lenny', 'Nach dem Essen: Waldweg. Sport fällt für uns aus 😎'], titel: ['🚪', 'Die Freistunde', 'Schwänzen – oder steckt etwas anderes dahinter?'] },
+  zaun: { frage: 'Was steckt manchmal hinter „Ich hab keinen Bock“?', ab: 9, bis: 10, zeit: [11.9, 13.4], start: { x: -61.5, z: -23.6, yaw: Math.PI - 0.1 }, zone: { x: -61.7, z: -25.2, r: 2.0 }, teaser: ['Lenny', 'Nach dem Essen: Waldweg. Sport fällt für uns aus 😎'], titel: ['🚪', 'Die Freistunde', 'Schwänzen – oder steckt etwas anderes dahinter?'] },
   fundkiste: { frage: 'Was hilft, wenn man Angst vor Rache hat?', ab: 7, bis: 8, zeit: [11.9, 13.6], start: { x: 3.6, z: -9.8, yaw: 2.31 }, teaser: ['Jeff', 'Schon wieder ist meine Powerbank weg 😩 Hab ich die verloren??'], titel: ['🎒', 'Die Fundkiste', 'Wer etwas sieht und es sagt, verändert, was jemand über sich glaubt.'] },
   halle: { frage: 'Was ist der Unterschied zwischen Petzen und Hilfe holen?', ab: 7, bis: 7, start: { x: 60.4, z: -20.4, yaw: Math.PI }, zone: { x: 60.4, z: -25.4, r: 5 }, teaser: ['Unbekannt', 'HINTER DER TURNHALLE. JETZT. 👀'], titel: ['📱', 'Der Kreis', 'Wer filmt, baut die Bühne. Wer hilft, baut sie ab.'] },
 };
@@ -157,6 +157,19 @@ export async function lichtung(a) {
   if (w === 2) {
     await a.sag('dex', '(grinst) Das war ich. D3X. Mit drei.'); await a.sag('dex', 'Krass, oder? Hat zwei Stunden gedauert.');
     await a.sag('e', 'Dex erzählt zehn Minuten von seinem Graffiti. Den Joint hat er vergessen.'); await a.sag('sina', '(zwinkert dir zu)');
+  }
+  // Hat Mika mit dir Nein-Sagen geübt (Der Roller)? Dann kommt es jetzt.
+  if (m.mikaNein) {
+    await a.sag('e', 'Dex hält Mika den Joint hin. Mika zögert. Schaut zu dir.');
+    await a.sag('mika', 'Nein. … Ich hab geübt.');
+    await a.sag('dex', '(lacht) Geübt? Ihr seid echt komisch.');
+    await a.sag('e', 'Dex, Mo und Sina gehen. Mika atmet aus. Ganz lang.');
+    await a.sag('mika', 'Mein Herz rast trotzdem. Aber anders. Gut anders.');
+    a.merke('mikaNeinWald');
+    if (a.m().sit_wald === 'nein') a.nachricht('Dex (Gruppe)', 'Baby 🍼 Und Mika jetzt auch 🙄');
+    a.nachricht('Sina', 'Ihr zwei. Echt stark. Sag ich Dex aber nicht.');
+    a.nachricht('Mika', 'NEIN gesagt. Zu DEX. Ich glaub, ich kann das jetzt.');
+    return a.m().sit_wald;
   }
   // Mika will dazugehören – und dann geht es Mika schlecht
   await a.sag('e', 'Dex hält Mika den Joint hin. Mika zögert. Dann greift Mika zu.');
@@ -751,6 +764,7 @@ export function sitRueckblick(m) {
     if (id === 'halle' && m.halleGeloescht) t += ' Dann gelöscht und entschuldigt.';
     if (id === 'kiste' && m.kisteKuedes) t += ' Mit zur SePAS gegangen.';
     if (id === 'wald' && m.mikaGeholfen) t += ' Mika geholfen.';
+    if (id === 'wald' && m.mikaNeinWald) t += ' Und Mika hat auch Nein gesagt.';
     if (id === 'wette' && m.pitGeholfen) t += ' Pit geholfen.';
     if (id === 'vape' && m.vapeKuedes) t += ' Kai zur SePAS begleitet.';
     if (id === 'link' && m.linkRepariert) t += ' Dann Passwort geändert und allen Bescheid gesagt.';
@@ -1227,7 +1241,7 @@ async function jeffWahrheit(a, art) {
 // ================= Die Freistunde (Waldweg hinter der Schule, Kapitel 9–10, mittags) =================
 // Lenny will Sport schwänzen. Romy geht mit – aber nicht aus Langeweile: In der Umkleide wird sie ausgelacht.
 export async function zaun(a) {
-  await a.sag('e', 'Am Anfang vom Waldweg. Lenny und Romy, die Rucksäcke auf.');
+  await a.sag('e', 'Hinter der Tribüne, wo der Waldweg beginnt. Lenny und Romy, Rucksäcke auf.');
   await a.sag('lennyZaun', 'Da bist du ja. Gleich ist Sport. Wir gehen nicht.');
   await a.sag('lennyZaun', 'Épicerie, dann Lichtung. Keiner merkt was. Kommst du?');
   await a.sag('romy', '(schaut auf ihre Schuhe) Komm halt mit.');
@@ -1365,6 +1379,7 @@ export async function roller(a) {
     await a.sag('e', 'Sacha fährt los. Langsam. Allein.');
   }
   await a.sag('mikaRoller', 'Danke. Ich hätte ja gesagt. Ich sag immer ja.');
+  a.merke('mikaNein');
   const d = await a.wahl(['„Nein sagen kann man üben.“', '„Kenn ich.“', '(Mika die Tüte hinhalten.)']);
   await a.sag('mikaRoller', ['Üben? … Okay. Du bist mein Trainer.', 'Echt? Du auch?', '(nimmt ein rotes) Die roten sind die besten.'][d]);
   a.nachricht('Mika', 'Nein-Training morgen? 😅');

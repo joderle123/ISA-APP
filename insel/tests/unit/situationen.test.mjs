@@ -146,3 +146,12 @@ test('Dex’ Weg: Wer ihn zu Mme Kiesser schickt, findet ihn später im Neubau s
   assert.equal(sitSichtbar('dexKunst', 7, { sit_graffiti: 'papier', sitKap_graffiti: 6 }, true, 0), false);
   assert.ok(SIT_LEUTE.dexKunst.aussehen && SIT_LEUTE.dexKunst.aussehen === SIT_LEUTE.dex.aussehen);
 });
+
+test('Szenen greifen ineinander: Wer mit Mika Nein-Sagen geübt hat (Roller), erlebt Mikas Nein an der Lichtung', async () => {
+  const x = api([1, 0]); await roller({ ...x, m: () => x.mErg });
+  assert.equal(x.mErg.mikaNein, true);
+  const y = api([0, 0], { mikaNein: true }); await lichtung({ ...y, m: () => y.mErg });
+  assert.equal(y.mErg.mikaNeinWald, true); assert.ok(!y.mErg.mikaGeholfen, 'keine Panik, keine Hilfe nötig');
+  assert.ok(y.log.some(([w, t]) => w === 'mika' && /Nein/.test(t)));
+  assert.match(sitRueckblick(y.mErg).find((r) => /Lichtung/.test(r.t)).w, /Mika hat auch Nein gesagt/);
+});
