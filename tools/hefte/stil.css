@@ -393,3 +393,5 @@ ol.erkl .bsp span { font-family: Lexend; font-weight: 800; font-size: 8.5pt; let
 .loesungen .rechnen .rk .l { visibility: visible; }
 .plan-l { visibility: hidden; } .loesungen .plan-l { visibility: visible; }
 table.raster.stellen td { padding: 1.5mm 1mm; }
+.bruch { display: inline-flex; flex-direction: column; align-items: center; vertical-align: middle; font-size: 0.8em; line-height: 1.08; margin: 0 0.12em; font-weight: 700; }
+.bruch > span:first-child { border-bottom: 0.28mm solid currentColor; padding: 0 0.18em; }

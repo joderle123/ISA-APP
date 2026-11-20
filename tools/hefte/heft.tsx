@@ -28,7 +28,8 @@ const esc = (s: string) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;'
 
 /** Inline-Auszeichnung: [Lösung] = Lücke · [Lösung|30] = Lücke 30 mm · **fett** · __Endung__ · ==markiert== · //kursiv// */
 function inl(s: string): string {
-  let h = esc(s)
+  // \[ und \] = echte Klammern (z. B. Strecke [AB]); {{3/4}} = Bruch
+  let h = esc(s).replace(/\\\[/g, '\u0001').replace(/\\\]/g, '\u0002').replace(/\{\{(\d+|▢)\/(\d+|▢)\}\}/g, '<span class="bruch"><span>$1</span><span>$2</span></span>')
   h = h.replace(/\[([^\]|]*)(?:\|(\d+))?\]/g, (_m, l: string, b?: string) => {
     const breite = b ? Number(b) : Math.max(20, Math.min(70, l.length * 2.9 + 8))
     return `<span class="luecke" style="min-width:${breite}mm"><span class="l">${l}</span></span>`
@@ -36,10 +37,10 @@ function inl(s: string): string {
   h = h.replace(/\*\*(.+?)\*\*/g, '<b>$1</b>').replace(/__(.+?)__/g, '<span class="endung">$1</span>')
   h = h.replace(/==(.+?)==/g, '<span class="markiert">$1</span>').replace(/\/\/(.+?)\/\//g, '<i>$1</i>')
   h = h.replace(/~~(.+?)~~/g, '<s class="falsch">$1</s>')
-  return h
+  return h.replace(/\u0001/g, '[').replace(/\u0002/g, ']')
 }
 /** Lösung ohne Auszeichnung (für Linien) */
-const roh = (s: string) => s.replace(/\[([^\]|]*)(?:\|\d+)?\]/g, '$1').replace(/~~.+?~~/g, '').replace(/\*\*|__|==|\/\//g, '')
+const roh = (s: string) => s.replace(/\\\[/g, '\u0001').replace(/\\\]/g, '\u0002').replace(/\{\{([^/{}]+)\/([^/{}]+)\}\}/g, '$1/$2').replace(/\[([^\]|]*)(?:\|\d+)?\]/g, '$1').replace(/~~.+?~~/g, '').replace(/\*\*|__|==|\/\//g, '').replace(/\u0001/g, '[').replace(/\u0002/g, ']')
 
 const ICON_CACHE: Record<string, string> = {}
 function icon(name: string, gefuellt = false): string {

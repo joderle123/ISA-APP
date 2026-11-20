@@ -75,3 +75,68 @@ export function thermometer(a, b, w, { schritt = 5, beschriftung = true } = {}) 
   for (let v = a; v <= b; v += schritt) s += `<line x1="22" y1="${y(v)}" x2="${v % 10 === 0 ? 28 : 25}" y2="${y(v)}" stroke="${Z}" stroke-width="0.6"/>${beschriftung && v % 10 === 0 ? `<text x="30" y="${y(v) + 1.5}" font-family="Lexend" font-size="4.2" fill="${Z}">${v < 0 ? '−' + -v : v}</text>` : ''}`
   return `<svg viewBox="0 0 48 ${H + 2}" style="height:40mm">${s}</svg>`
 }
+
+/** Stellenwerttafel für Dezimalzahlen: Ganze (H, Z, E) | Komma | Teile (z, h, t) ; zeilen = [[Beschriftung, '3,45']] */
+export function dezimaltafel(zeilen, { leer = false, ganz = ['H', 'Z', 'E'], teile = ['z', 'h', 't'] } = {}) {
+  const kopf = `<tr><th></th>${ganz.map((s) => `<th style="text-align:center">${s}</th>`).join('')}<th style="text-align:center;width:5%">,</th>${teile.map((s) => `<th style="text-align:center;background:var(--f-zart)">${s}</th>`).join('')}</tr>`
+  const zelle = (d) => `<td style="text-align:center;font-size:15pt;font-family:${leer ? 'Hand' : 'Lexend'};font-weight:700">${d ? (leer ? `<span class="l">${d}</span>` : d) : ''}</td>`
+  const reihen = zeilen.map(([name, zahl]) => {
+    const [g, t = ''] = String(zahl).split(',')
+    const gz = g.padStart(ganz.length, ' ').slice(-ganz.length).split('').map((c) => c.trim())
+    const tz = t.padEnd(teile.length, ' ').slice(0, teile.length).split('').map((c) => c.trim())
+    return `<tr><td class="vorgabe">${name}</td>${gz.map(zelle).join('')}<td style="text-align:center;font-size:16pt;font-weight:800">${leer ? '<span class="l">,</span>' : ','}</td>${tz.map(zelle).join('')}</tr>`
+  }).join('')
+  return `<table class="raster stellen"><colgroup><col style="width:32%"></colgroup>${kopf}${reihen}</table>`
+}
+
+/** Bruchstreifen: n gleiche Teile, k gefärbt; text darunter */
+export function bruchstreifen(n, k, { text = '', breite = 120 } = {}) {
+  const w = breite / n
+  let s = ''
+  for (let i = 0; i < n; i++) s += `<rect x="${1 + i * w}" y="1" width="${w}" height="14" fill="${i < k ? 'var(--f)' : '#fff'}" stroke="${Z}" stroke-width="0.6"/>`
+  return `<div style="display:flex;align-items:center;gap:4mm"><svg viewBox="0 0 ${breite + 2} 16" style="width:${breite * 0.75}mm">${s}</svg>${text ? `<span style="font-size:12.5pt">${text}</span>` : ''}</div>`
+}
+
+/** Kreis in n gleiche Teile, k gefärbt */
+export function kreisBruch(n, k, groesse = 26) {
+  let s = `<circle cx="20" cy="20" r="18" fill="#fff" stroke="${Z}" stroke-width="0.8"/>`
+  for (let i = 0; i < n; i++) {
+    const a1 = (i / n) * 2 * Math.PI - Math.PI / 2, a2 = ((i + 1) / n) * 2 * Math.PI - Math.PI / 2
+    const p = (a) => `${(20 + 18 * Math.cos(a)).toFixed(2)} ${(20 + 18 * Math.sin(a)).toFixed(2)}`
+    s += `<path d="M 20 20 L ${p(a1)} A 18 18 0 ${n === 1 ? 1 : 0} 1 ${p(a2)} Z" fill="${i < k ? 'var(--f)' : '#fff'}" stroke="${Z}" stroke-width="0.7"/>`
+  }
+  return `<svg viewBox="0 0 40 40" style="height:${groesse}mm">${s}</svg>`
+}
+
+/** Punkt, Gerade, Halbgerade, Strecke mit Schreibweise */
+export function linienarten({ nummern = false } = {}) {
+  const pkt = (x, y, n) => `<path d="M ${x - 1.6} ${y - 1.6} L ${x + 1.6} ${y + 1.6} M ${x - 1.6} ${y + 1.6} L ${x + 1.6} ${y - 1.6}" stroke="${Z}" stroke-width="0.8"/><text x="${x}" y="${y - 3.5}" text-anchor="middle" font-family="Lexend" font-weight="700" font-size="4.2">${n}</text>`
+  const f = [
+    ['Punkt A', `${pkt(30, 14, 'A')}`, 'A'],
+    ['Gerade (AB)', `<line x1="2" y1="16" x2="58" y2="16" stroke="var(--f)" stroke-width="1"/>${pkt(18, 16, 'A')}${pkt(42, 16, 'B')}`, '(AB)'],
+    ['Halbgerade [AB)', `<line x1="12" y1="16" x2="58" y2="16" stroke="var(--f)" stroke-width="1"/>${pkt(12, 16, 'A')}${pkt(38, 16, 'B')}`, '[AB)'],
+    ['Strecke [AB]', `<line x1="12" y1="16" x2="48" y2="16" stroke="var(--f)" stroke-width="1"/>${pkt(12, 16, 'A')}${pkt(48, 16, 'B')}`, '[AB]'],
+  ]
+  return `<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:4mm;text-align:center">${f.map(([n, svg], i) => `<div style="border:0.3mm solid ${L};border-radius:2mm;padding:1mm"><svg viewBox="0 0 60 24" style="width:100%">${svg}</svg><div style="font-family:Lexend;font-weight:700;font-size:11pt">${nummern ? `${i + 1}` : n}</div></div>`).join('')}</div>`
+}
+
+/** Winkelarten: spitz, recht, stumpf (Beschriftung nur im Lösungsheft, wenn leer=true) */
+export function winkelarten({ leer = false, winkel = [40, 90, 135] } = {}) {
+  const namen = (w) => (w < 90 ? 'spitz' : w === 90 ? 'recht' : w < 180 ? 'stumpf' : 'gestreckt')
+  return `<div style="display:grid;grid-template-columns:repeat(${winkel.length},1fr);gap:4mm;text-align:center">${winkel.map((w, i) => {
+    const r = (w * Math.PI) / 180, x2 = 8 + 30 * Math.cos(r), y2 = 34 - 30 * Math.sin(r)
+    const bogen = w === 90 ? `<path d="M 15 34 L 15 27 L 8 27" fill="none" stroke="var(--f)" stroke-width="0.8"/><circle cx="11.5" cy="30.5" r="0.8" fill="var(--f)"/>` : `<path d="M 18 34 A 10 10 0 ${w > 180 ? 1 : 0} 0 ${(8 + 10 * Math.cos(r)).toFixed(2)} ${(34 - 10 * Math.sin(r)).toFixed(2)}" fill="none" stroke="var(--f)" stroke-width="0.9"/>`
+    return `<div style="border:0.3mm solid ${L};border-radius:2mm;padding:1mm"><svg viewBox="-24 0 66 38" style="width:100%;max-height:26mm"><line x1="8" y1="34" x2="40" y2="34" stroke="${Z}" stroke-width="1"/><line x1="8" y1="34" x2="${x2.toFixed(2)}" y2="${y2.toFixed(2)}" stroke="${Z}" stroke-width="1"/>${bogen}</svg><div style="font-family:Lexend;font-weight:700;font-size:11pt">${leer ? `${i + 1} <span class="uhr-linie" style="display:inline-block;width:24mm;height:7mm"><span class="l">${namen(w)}</span></span>` : namen(w)}</div></div>`
+  }).join('')}</div>`
+}
+
+/** Rechteck / Quadrat / Dreieck mit Seitenlängen für den Umfang */
+export function umfangFiguren(figs) {
+  return `<div style="display:grid;grid-template-columns:repeat(${figs.length},1fr);gap:5mm;text-align:center">${figs.map((f) => {
+    let svg = ''
+    if (f.art === 'rechteck') svg = `<rect x="8" y="6" width="44" height="26" fill="var(--f-zart)" stroke="${Z}" stroke-width="1"/><text x="30" y="40" text-anchor="middle" font-family="Lexend" font-size="4.6">${f.a}</text><text x="56" y="21" font-family="Lexend" font-size="4.6">${f.b}</text>`
+    if (f.art === 'quadrat') svg = `<rect x="14" y="4" width="30" height="30" fill="var(--f-zart)" stroke="${Z}" stroke-width="1"/><text x="29" y="40" text-anchor="middle" font-family="Lexend" font-size="4.6">${f.a}</text>`
+    if (f.art === 'dreieck') svg = `<path d="M 8 34 L 52 34 L 22 6 Z" fill="var(--f-zart)" stroke="${Z}" stroke-width="1" stroke-linejoin="round"/><text x="30" y="40" text-anchor="middle" font-family="Lexend" font-size="4.6">${f.a}</text><text x="40" y="18" font-family="Lexend" font-size="4.6">${f.b}</text><text x="4" y="20" font-family="Lexend" font-size="4.6" text-anchor="start">${f.c}</text>`
+    return `<div><svg viewBox="0 0 66 42" style="width:100%;max-height:30mm">${svg}</svg>${f.name ? `<div style="font-family:Lexend;font-weight:700;font-size:11pt">${f.name}</div>` : ''}</div>`
+  }).join('')}</div>`
+}

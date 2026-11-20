@@ -21,7 +21,7 @@ export const MATHE_AUSSPRACHE = {
   '\\b1/2\\b': 'ein halb', '(\\d+)/2\\b': '\\1 Halbe', '(\\d+)/3\\b': '\\1 Drittel', '(\\d+)/4\\b': '\\1 Viertel', '(\\d+)/5\\b': '\\1 Fünftel', '(\\d+)/6\\b': '\\1 Sechstel', '(\\d+)/7\\b': '\\1 Siebtel',
   '(\\d+)/8\\b': '\\1 Achtel', '(\\d+)/9\\b': '\\1 Neuntel', '(\\d+)/10\\b': '\\1 Zehntel', '(\\d+)/12\\b': '\\1 Zwölftel', '(\\d+)/100\\b': '\\1 Hundertstel', '(\\d+)/1000\\b': '\\1 Tausendstel',
   '\\b1 (Drittel|Viertel|Fünftel|Sechstel|Siebtel|Achtel|Neuntel|Zehntel|Zwölftel|Hundertstel|Tausendstel)\\b': 'ein \\1',
-  ' / ': ' oder ', '(\\d)²': '\\1 hoch zwei', '\\|': ', ', '\\bz\\. ?B\\.': 'zum Beispiel',
+  '\\[([A-Z])([A-Z])[\\]\\)]': '\\1 \\2', '\\(([A-Z])([A-Z])\\)': '\\1 \\2', ' / ': ' oder ', '(\\d)²': '\\1 hoch zwei', '\\|': ', ', '\\bz\\. ?B\\.': 'zum Beispiel',
 }
 
 const ANLEITUNG = [
@@ -53,9 +53,12 @@ export function matheModul(nr, extra) {
   }
 }
 
+// Texte aus dem Programm: [[3/4]] → Bruch {{3/4}}, andere eckige Klammern (Strecke [AB]) bleiben Klammern (keine Lücken)
+const E = (s) => (typeof s === 'string' ? s.replace(/\[\[([^\]/]+)\/([^\]/]+)\]\]/g, '{{$1/$2}}').replace(/\[/g, '\\[').replace(/\]/g, '\\]') : s)
+const P = (s) => (typeof s === 'string' ? s.replace(/\[\[([^\]/]+)\/([^\]/]+)\]\]/g, '$1/$2') : s)
 const saetze = (s) => s.split(/(?<=[.!?])\s+(?=[A-ZÄÖÜ0-9„(])/).filter(Boolean)
-const posten = (it) => ({ a: it.a, l: (it.l || '').replace(/\.$/, ''), raum: it.tbl ? undefined : it.raum ?? 1, tbl: it.tbl })
-const exitPosten = (x) => { const m = /^(.*)\(([^()]*)\)\s*$/.exec(x); return m ? { a: m[1].trim(), l: m[2].replace(/\.$/, ''), raum: 1.6 } : { a: x, l: '', raum: 1.6 } }
+const posten = (it) => ({ a: E(it.a), l: P(it.l || '').replace(/\.$/, ''), raum: it.tbl ? undefined : it.raum ?? 1, tbl: it.tbl })
+const exitPosten = (x) => { const m = /^(.*)\(([^()]*)\)\s*$/.exec(x); return m ? { a: E(m[1].trim()), l: P(m[2]).replace(/\.$/, ''), raum: 1.6 } : { a: E(x), l: '', raum: 1.6 } }
 
 /**
  * Lektionen eines Moduls. `extras[i]` (je Lektion, in Programm-Reihenfolge):
@@ -68,22 +71,22 @@ export function matheLektionen(nr, extras) {
   let i = 0
   for (const t of m.themen) for (const l of t.lektionen) {
     const x = extras[i++] || {}
-    const woerter = (l.wortschatz || []).map((w) => [w.de, w.fr])
+    const woerter = (l.wortschatz || []).map((w) => [P(w.de), P(w.fr)])
     L.push({
-      thema: t.titel.replace(/ & /g, ' und '), titel: l.titel, untertitel: x.unter || l.einstieg.text,
-      ziel: { de: l.lernziel, fr: x.fr || '' },
+      thema: P(t.titel).replace(/ & /g, ' und '), titel: E(l.titel), untertitel: x.unter || E(l.einstieg.text),
+      ziel: { de: E(l.lernziel), fr: x.fr || '' },
       bild: x.bild,
-      start: { was: l.einstieg.titel, aufgaben: [{ art: 'rechnen', auftrag: 'Rechnet gemeinsam. Sprecht laut, wie ihr rechnet.', stufe: 1, items: l.gemeinsam.map((g) => posten({ ...g, raum: 1 })) }] },
+      start: { was: E(l.einstieg.titel), aufgaben: [{ art: 'rechnen', auftrag: 'Rechnet gemeinsam. Sprecht laut, wie ihr rechnet.', stufe: 1, items: l.gemeinsam.map((g) => posten({ ...g, raum: 1 })) }] },
       lesen: {
-        was: 'Die Erklärung', art: 'erklaerung', stimme: 'w1', titel: l.einstieg.titel, quelle: `Mathe · Modul ${nr} · ${t.titel.replace(/ & /g, ' und ')}`,
-        def: { begriff: l.def.begriff + ':', text: l.def.text }, schritte: l.erklaerung, bild: x.erklBild,
+        was: 'Die Erklärung', art: 'erklaerung', stimme: 'w1', titel: E(l.einstieg.titel), quelle: `Mathe · Modul ${nr} · ${t.titel.replace(/ & /g, ' und ')}`,
+        def: { begriff: E(l.def.begriff) + ':', text: E(l.def.text) }, schritte: l.erklaerung.map((s) => ({ titel: E(s.titel), text: E(s.text), beispiel: E(s.beispiel) })), bild: x.erklBild,
         woerter, karte: { titel: 'Erklärung anhören', unter: 'Hör zu und lies mit.' }, aufgaben: x.lesenAufgaben || [],
       },
       hoeren: x.hoeren,
       regel: {
         reihen: [
-          [{ titel: 'Merksatz', punkte: saetze(l.merksatz) }, { titel: 'So gehst du vor', punkte: l.vorgehen.map((v, j) => `**${j + 1}.** ${v}`) }],
-          l.musterl.slice(0, 2).map((mu, j) => ({ art: j === 0 ? 'tipp' : 'achtung', titel: `Musterlösung: ${mu.titel}`, text: `**Aufgabe:** ${mu.a} · ${mu.schritte.join(' · ')} · **Ergebnis:** ${mu.erg}` })),
+          [{ titel: 'Merksatz', punkte: saetze(E(l.merksatz)) }, { titel: 'So gehst du vor', punkte: l.vorgehen.map((v, j) => `**${j + 1}.** ${E(v)}`) }],
+          l.musterl.slice(0, 2).map((mu, j) => ({ art: j === 0 ? 'tipp' : 'achtung', titel: mu.titel ? `Musterlösung: ${E(mu.titel)}` : 'Musterlösung', text: `**Aufgabe:** ${E(mu.a)} · ${mu.schritte.map(E).join(' · ')} · **Ergebnis:** ${E(mu.erg)}` })),
         ],
       },
       ueben: [
@@ -94,7 +97,7 @@ export function matheLektionen(nr, extras) {
         { art: 'rechnen', auftrag: '**Exit-Ticket** – allein lösen, ohne Hilfe.', stufe: 2, items: [exitPosten(l.exit)], spalten: 1 },
       ],
       schreiben: x.erklaeren ? [{ art: 'schreiben', stufe: 2, zeilen: 5, ...x.erklaeren }] : [],
-      check: [l.lernziel, ...(x.check || [])],
+      check: [E(l.lernziel), ...(x.check || [])],
       foerdertipp: l.foerdertipp, spiel: l.spiel,
     })
   }
