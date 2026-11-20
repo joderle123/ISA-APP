@@ -3,9 +3,9 @@
 // Aufruf: node --test tests/unit/situationen.test.mjs
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { SIT_LEUTE, SZENEN, SIT_ZONEN, sitSichtbar, sitOffen, sitRueckblick, sitSaetze, lichtung, laden, graffiti, halle, wette, kiste, vape, link, video, fest, spiel, dach, fundkiste, zurueckbringen, SIT_ANTWORTEN, sitAntwortenOffen, zaun, roller } from '../../src/lycee/situationen.js';
+import { SIT_LEUTE, SZENEN, SIT_ZONEN, sitSichtbar, sitOffen, sitRueckblick, sitSaetze, lichtung, laden, graffiti, halle, wette, kiste, vape, link, video, fest, spiel, dach, fundkiste, zurueckbringen, SIT_ANTWORTEN, sitAntwortenOffen, zaun, roller, witz } from '../../src/lycee/situationen.js';
 
-const FN = { wald: lichtung, laden, graffiti, halle, wette, kiste, vape, link, video, fest, spiel, dach, fundkiste, zaun, roller };
+const FN = { wald: lichtung, laden, graffiti, halle, wette, kiste, vape, link, video, fest, spiel, dach, fundkiste, zaun, roller, witz };
 
 // Skript-API zum Testen: Wahlen nach Liste (danach immer 0), merkt alles mit
 function api(wahlen = [], m = {}) {
@@ -19,7 +19,7 @@ function api(wahlen = [], m = {}) {
 }
 
 test('Sprecher in den Szenen sind bekannt', async () => {
-  const bekannt = new Set([...Object.keys(SIT_LEUTE), 'e', 'du', 'zu', 'kaya', 'mesenberg', 'lenning', 'fernand', 'noor', 'tiago', 'leo', 'hoffmann', 'rosa']);
+  const bekannt = new Set([...Object.keys(SIT_LEUTE), 'e', 'du', 'zu', 'kaya', 'mesenberg', 'lenning', 'fernand', 'noor', 'tiago', 'leo', 'hoffmann', 'rosa', 'paulo']);
   for (const [id, fn] of Object.entries(FN)) for (let a = 0; a < 4; a++) for (let b = 0; b < 3; b++) {
     const x = api([a, b, b, b]);
     const A = { ...x, m: () => x.mErg };

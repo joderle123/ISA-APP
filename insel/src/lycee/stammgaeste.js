@@ -175,6 +175,11 @@ export const STAMM = [
       9: [['s', 'Wort der Woche: „Dorme bem“. Schlaf gut.'], ['s', 'Mein Trick: Ich denk an das Meer. An die Wellen.'], ['s', 'Eins, zwei. Eins, zwei.']],
       10: [['s', 'Letzte Lieferung vor dem Sommer! Wort der Woche: „Até já“. Bis bald.'], ['s', 'Du hast zehn Wörter gelernt. Bom trabalho! Gute Arbeit, amigo.']],
     },
+    reaktion: (m) => [   // Der Witz (situationen.js): Paulo vergisst nicht, wer neben ihm stand
+      m.sit_witz === 'gefragt' || m.sit_witz === 'geholfen' ? { key: 'stx_paulo_witz', zeilen: [['s', 'Da ist ja mein Kisten-Team! Bom dia!'], ['s', 'Die zwei von neulich haben sich entschuldigt. Stell dir vor.'], ['s', 'Respeito. Hast du nicht vergessen, oder?']] } : null,
+      m.pauloDesculpa ? { key: 'stx_paulo_desculpa', zeilen: [['s', 'Desculpa angenommen. Wirklich.'], ['s', 'Jeder lacht mal falsch. Wichtig ist, was danach kommt.']] } : null,
+      m.sit_witz === 'mitgelacht' && !m.pauloDesculpa ? { key: 'stx_paulo_kalt', zeilen: [['s', 'Bom dia.'], ['e', 'Er lächelt. Aber nicht so wie früher.']] } : null,
+    ],
     nochmal: ['Cuidado, die Kiste ist schwer!', 'Tomaten, Karotten, Kartoffeln. Und gute Laune.', 'Até já!'],
   },
   {

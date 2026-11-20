@@ -19,8 +19,8 @@ import { baueRequisiten, stelle } from './requisiten.js';
 import { baueNatur } from './natur.js';
 import { STAMM, stammSzene, stammPlan } from './stammgaeste.js';
 import { ORTE_UMLAND, DORF_DEKO, tagTextur, wandbild } from './dorf.js';
-import { SIT_LEUTE, SZENEN, sitSichtbar, sitOffen, SIT_ZONEN, lichtung, laden, graffiti, halle, wette, kiste, vape, link, video, fest, spiel, dach, fundkiste, CHAT_NAMEN, zurueckbringen, sitSaetze, sitRueckblick, sitAntwortenOffen, zaun, roller } from './situationen.js';
-const SIT_FN = { wald: lichtung, laden, graffiti, halle, wette, kiste, vape, link, video, fest, spiel, dach, fundkiste, zaun, roller };
+import { SIT_LEUTE, SZENEN, sitSichtbar, sitOffen, SIT_ZONEN, lichtung, laden, graffiti, halle, wette, kiste, vape, link, video, fest, spiel, dach, fundkiste, CHAT_NAMEN, zurueckbringen, sitSaetze, sitRueckblick, sitAntwortenOffen, zaun, roller, witz } from './situationen.js';
+const SIT_FN = { wald: lichtung, laden, graffiti, halle, wette, kiste, vape, link, video, fest, spiel, dach, fundkiste, zaun, roller, witz };
 import { createHund, HUND_ERSTMAL, HUND_MOMENTE } from './hund.js';
 import { ladePerson, namensschild, SITZ } from './figuren.js';
 import { fussSchatten, WOLKEN } from './texturen.js';
@@ -2449,6 +2449,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     const m = (S && S.merke) || {};
     const kurz = m.zurueckKap && (kap === m.zurueckKap || kap === m.zurueckKap + 1) ? 'Épicerie: Jemand kam zurück und hat bezahlt. Tante Lisette sagt: Respekt.'
       : m.sit_graffiti === 'kiesser' && kap > (m.sitKap_graffiti || 99) ? 'Neubau: Die große Wand bekommt Farbe. Ein 5ème zeichnet vor.'
+      : (m.sit_witz === 'gefragt' || m.sit_witz === 'geholfen') && kap === (m.sitKap_witz || 0) + 1 ? 'Kantine: Paulo bringt seit zwanzig Jahren unser Gemüse. Obrigado, Paulo!'
       : m.romyMesenberg && kap === (m.sitKap_zaun || 0) + 1 ? 'Sport: Handys bleiben draußen. In der Umkleide filmt niemand. Nie.'
       : m.sit_halle && kap === (m.sitKap_halle || 0) + 1 ? 'Streit gefilmt? Nicht teilen. Melden. Die Redaktion.'
       : m.lenningGesagt && kap === (m.sitKap_video || 0) + 1 ? 'Der Account „annexe.memes“ ist weg. Danke an alle, die ihn gemeldet haben.'
