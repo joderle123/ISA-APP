@@ -21,10 +21,10 @@ export const SIT_LEUTE = {
   dexKunst: { szene: 'graffiti', wer: 'dex', bleibt: true, dauer: true, wenn: (m, kap) => m.sit_graffiti === 'kiesser' && kap > (m.sitKap_graffiti || 99), name: 'Dex (5ème)', farbe: '#e85d75', aussehen: null, steht: [42.4, -55.3, Math.PI / 2 - 0.5, ''] },
   // Gasse zur Rue du Moulin (E-Roller, Kapitel 4–5)
   sacha: { szene: 'roller', wer: 'sacha', name: 'Sacha (15)', farbe: '#7a5af5', aussehen: { modell: 'menschen', stil: 'Casual2', haut: '#c68e64', haar: '#1b1410', oben: '#2b2b33', unten: '#3a3f4b', schuhe: '#e85d75', hoehe: 1.8, kopf: 'cap', kopfFarbe: '#7a5af5' }, steht: [31.7, 67.0, Math.PI, 'handy'] },
-  mikaRoller: { szene: 'roller', wer: 'mika', unsichtbar: true, name: 'Mika (6ème)', farbe: '#e9b949', aussehen: null, steht: [31.0, 70.0, Math.PI, ''] },
+  mikaRoller: { szene: 'roller', wer: 'mikaRoller', unsichtbar: true, name: 'Mika (6ème)', farbe: '#e9b949', aussehen: null, steht: [31.0, 70.0, Math.PI, ''] },
   // Waldweg-Anfang hinter der Schule (Schwänzen, Kapitel 9–10, mittags)
   lennyZaun: { szene: 'zaun', wer: 'lenny', name: 'Lenny (6ème)', farbe: '#3fa66b', aussehen: null, steht: [-62.7, -28.6, 0.35, 'redet'] },
-  romy: { szene: 'zaun', wer: 'romy', name: 'Romy (6ème)', farbe: '#d9693f', aussehen: { modell: 'frauen', stil: 'Casual', haut: '#f0c9a8', haar: '#7a4a2a', oben: '#d9693f', unten: '#3a3f4b', schuhe: '#f2f2f2', hoehe: 1.56 }, steht: [-61.4, -29.0, -0.25, ''] },
+  romy: { szene: 'zaun', wer: 'romy', name: 'Romy (7ème B)', farbe: '#d9693f', aussehen: { modell: 'frauen', stil: 'Casual', haut: '#f0c9a8', haar: '#7a4a2a', oben: '#d9693f', unten: '#3a3f4b', schuhe: '#f2f2f2', hoehe: 1.56 }, steht: [-61.4, -29.0, -0.25, ''] },
   // Hinter der Turnhalle (Streit mit Publikum, ab Kapitel 7)
   jules: { szene: 'halle', wer: 'jules', name: 'Jules (6ème)', farbe: '#d9693f', aussehen: { modell: 'menschen', stil: 'Casual2', haut: '#f1c7a2', haar: '#7a4a2a', oben: '#d9693f', unten: '#2d3748', schuhe: '#2b2b2b', hoehe: 1.7 }, steht: [59.8, -25.7, 1.2, 'redet'] },
   sami: { szene: 'halle', wer: 'sami', name: 'Sami (6ème)', farbe: '#4f88c8', aussehen: { modell: 'menschen', stil: 'Casual', haut: '#c68e64', haar: '#1b1410', oben: '#4f88c8', unten: '#3a3f4b', schuhe: '#f2f2f2', hoehe: 1.52 }, steht: [61.0, -25.4, -1.9, ''] },
@@ -71,7 +71,7 @@ export const SZENEN = {
   fest: { frage: 'Was verpasst man, wenn man um jeden Preis dabei sein will?', ab: 10, bis: 10, start: { x: 60.6, z: -9.5, yaw: Math.PI }, schritt: 'k10_fest', zone: { x: 60.6, z: -13.3, r: 3.2 }, teaser: ['Mo (Gruppe)', 'Sommerfest-Afterparty hinter der Turnhalle 🍾 Psst'], titel: ['🍾', 'Die Wasserflasche', 'Das Fest ist drinnen. Und du gehörst dazu.'] },
   spiel: { frage: 'Woran erkennt man, dass ein Online-Freund nicht ehrlich ist?', ab: 9, bis: 10, start: { x: 4.7, z: 85.2, yaw: Math.PI }, zone: { x: 4.7, z: 83.1, r: 1.5 }, teaser: ['Leo_15 · Spiel-Chat', 'Hey 😊 Du spielst echt gut! Hab dir was geschenkt 🎁'], titel: ['🎮', 'Der Spielfreund', '„Erzähl es keinem“ ist der beste Grund, es jemandem zu erzählen.'] },
   dach: { frage: 'Wann ist Hilfe holen klüger als Mut?', ab: 8, bis: 9, start: { x: 60.8, z: -17.8, yaw: Math.PI }, zone: { x: 61.6, z: -21.6, r: 2.8 }, teaser: ['Pit', 'Ball auf dem Turnhallendach 😭 Hilf mal, hinten beim Container!'], titel: ['🏀', 'Das Dach', 'Die Leiter ist nicht feige. Sie ist klug.'] },
-  zaun: { frage: 'Was steckt manchmal hinter „Ich hab keinen Bock“?', ab: 9, bis: 10, zeit: [11.9, 13.4], start: { x: -61.5, z: -23.6, yaw: Math.PI - 0.1 }, zone: { x: -61.7, z: -25.2, r: 2.0 }, teaser: ['Lenny', 'Nach dem Essen: Waldweg. Sport fällt für uns aus 😎'], titel: ['🚪', 'Die Freistunde', 'Schwänzen – oder steckt etwas anderes dahinter?'] },
+  zaun: { frage: 'Was steckt manchmal hinter „Ich hab keinen Bock“?', ab: 9, bis: 10, zeit: [11.9, 13.4], start: { x: -61.5, z: -23.6, yaw: Math.PI - 0.1 }, zone: { x: -61.7, z: -25.2, r: 2.0 }, teaser: ['Lenny', 'Nach dem Essen: Waldweg. Schule fällt für uns aus 😎'], titel: ['🚪', 'Die Freistunde', 'Schwänzen – oder steckt etwas anderes dahinter?'] },
   fundkiste: { frage: 'Was hilft, wenn man Angst vor Rache hat?', ab: 7, bis: 8, zeit: [11.9, 13.6], start: { x: 3.6, z: -9.8, yaw: 2.31 }, teaser: ['Jeff', 'Schon wieder ist meine Powerbank weg 😩 Hab ich die verloren??'], titel: ['🎒', 'Die Fundkiste', 'Wer etwas sieht und es sagt, verändert, was jemand über sich glaubt.'] },
   halle: { frage: 'Was ist der Unterschied zwischen Petzen und Hilfe holen?', ab: 7, bis: 7, start: { x: 60.4, z: -20.4, yaw: Math.PI }, zone: { x: 60.4, z: -25.4, r: 5 }, teaser: ['Unbekannt', 'HINTER DER TURNHALLE. JETZT. 👀'], titel: ['📱', 'Der Kreis', 'Wer filmt, baut die Bühne. Wer hilft, baut sie ab.'] },
 };
@@ -160,7 +160,8 @@ export async function lichtung(a) {
   }
   // Hat Mika mit dir Nein-Sagen geübt (Der Roller)? Dann kommt es jetzt.
   if (m.mikaNein) {
-    await a.sag('e', 'Dex hält Mika den Joint hin. Mika zögert. Schaut zu dir.');
+    await a.sag('e', a.m().sit_wald === 'umgelenkt' ? 'Dann fällt Dex der Joint wieder ein. Er hält ihn Mika hin.' : 'Dex hält Mika den Joint hin.');
+    await a.sag('e', 'Mika zögert. Schaut zu dir.');
     await a.sag('mika', 'Nein. … Ich hab geübt.');
     await a.sag('dex', '(lacht) Geübt? Ihr seid echt komisch.');
     await a.sag('e', 'Dex, Mo und Sina gehen. Mika atmet aus. Ganz lang.');
@@ -172,7 +173,8 @@ export async function lichtung(a) {
     return a.m().sit_wald;
   }
   // Mika will dazugehören – und dann geht es Mika schlecht
-  await a.sag('e', 'Dex hält Mika den Joint hin. Mika zögert. Dann greift Mika zu.');
+  await a.sag('e', a.m().sit_wald === 'umgelenkt' ? 'Dann fällt Dex der Joint wieder ein. Er hält ihn Mika hin.' : 'Dex hält Mika den Joint hin.');
+  await a.sag('e', 'Mika zögert. Dann greift Mika zu.');
   await a.blende('Ein paar Minuten später');
   await a.sag('dex', 'Läuft. Wir sind weg. Ihr habt nix gesehen.');
   await a.sag('e', 'Dex, Mo und Sina gehen. Mika bleibt sitzen. Ganz blass.');
@@ -339,8 +341,6 @@ export function sitSaetze(id, m) {
     if (m.sit_laden === 'bezahlt' || m.sit_laden === 'gesagt') return ['Gummibärchen wieder? Ich leg dir eins dazu.', 'Du bist hier immer willkommen, Schatz.'];
     return ['Moien! Was darf’s sein?', 'Die Kirsch-Teilchen sind von Rosa. Konkurrenz und Freundin.', 'Kauf nur, was du brauchst. Sagt die Verkäuferin. Ja, wirklich.'];
   }
-  if (id === 'romy') return m.romyGeholfen ? ['Die Umkleide ist jetzt okay. Meistens.', 'Mesenberg hat mit der Klasse geredet. Ohne meinen Namen.'] : ['Hey.', 'Sport? Mal sehen.'];
-  if (id === 'lennyZaun') return m.sit_zaun === 'mitgegangen' ? ['Der Eintrag war es nicht wert. Ehrlich.', 'Nächstes Mal Turnier. Versprochen.'] : ['Streber. … War nur Spaß.', 'Wir haben gewonnen, oder? Also, ihr.'];
   if (id === 'dexKunst') return ['Mme Kiesser sagt, ich hab ein Auge für Farben. Mir!', 'Der Wal-Bus ist aus meinem Heft. Jetzt ist er vier Meter.', 'Du hast zuerst geredet. Das vergess ich nicht.', 'Die Dosen liegen im Keller. Ganz unten. Brauch ich nicht mehr.'];
   if (id === 'dex') return m.sit_wald === 'mitgemacht' ? ['Na? Wieder da? Heute nur chillen.', 'Das Video? Kam von Mo, nicht von mir.'] : m.sit_wald === 'nein' ? ['Na, Baby? … Kleiner Scherz.', 'Du bist echt so. Okay.'] : ['Wieder da? Setz dich.', 'Hier hört uns keiner. Fast keiner.'];
   if (id === 'sina') return ['Hey. Alles gut bei dir?', 'Dex ist nicht so hart, wie er tut.', 'Ich komm nur her wegen der Ruhe. Ehrlich.'];
@@ -729,8 +729,9 @@ export const SIT_ANTWORTEN = [
   { id: 'pit', an: 'Pit', wenn: (m) => (m.sit_dach === 'festgehalten' || m.sit_dach === 'zugeschaut') && !m.dachGeholt, text: 'Wie geht’s deinem Fuß? Sorry, dass ich nix gesagt hab.', antwort: 'Krücken. Nervt. Aber danke, dass du fragst.', setzt: ['pitGefragt'] },
   { id: 'video', an: 'Gruppe', wenn: (m) => m.videoGeteilt && !m.videoZurueck, text: 'Ich nehm das Video von Mme Lenning raus. War nicht okay.', antwort: 'Hm. Stimmt eigentlich. Ich auch.', setzt: ['videoZurueck'] },
   { id: 'mikaKnie', an: 'Mika', wenn: (m) => m.sit_roller === 'zugeschaut', text: 'Wie geht’s deinem Knie? Ich hätte was sagen sollen.', antwort: 'Schorf. Sieht cool aus. … Danke, dass du fragst.', setzt: ['mikaKnie'] },
-  { id: 'rosa', an: 'Rosa · Boulangerie', wenn: (m) => m.sit_roller === 'mitgefahren' && !m.rollerSorry, text: 'Sorry wegen dem Roller. Das war dumm von uns.', antwort: 'Danke, dass du schreibst. Komm mal auf einen Tee vorbei.', setzt: ['rollerSorry'] },
-  { id: 'romy', an: 'Romy', wenn: (m) => (m.sit_zaun === 'zurueck' || m.sit_zaun === 'mitgegangen') && !m.romyGeholfen, text: 'Alles okay bei dir? Wenn was ist: Ich hör zu.', antwort: 'Ehrlich? Die Umkleide. Die lachen da. Kommst du mit zu Mesenberg?', setzt: ['romyGeholfen'] },
+  { id: 'rosa', an: 'Rosa · Boulangerie', wenn: (m) => m.sit_roller === 'mitgefahren' && !m.rollerSorry, text: 'Sorry wegen dem Roller. Das war dumm von uns.', antwort: 'Danke, dass du schreibst. Tee in der Bäckerei, geht aufs Haus.', setzt: ['rollerSorry'] },
+  { id: 'romy', an: 'Romy', wenn: (m) => (m.sit_zaun === 'zurueck' || m.sit_zaun === 'mitgegangen') && !m.romyGeholfen, text: 'Alles okay bei dir? Wenn was ist: Ich hör zu.', antwort: 'Ehrlich? Die Umkleide. Die lachen da. Kommst du mit zu Mesenberg?', setzt: ['romyGeholfen', 'romyMesenberg'] },
+  { id: 'romy2', an: 'Romy', wenn: (m) => m.sit_zaun === 'abgewiesen' && !m.romyGeholfen, text: 'Das mit der Umkleide: Ich geh mit dir zu Mesenberg.', antwort: 'Echt? … Okay. Morgen früh. Danke, dass du dran denkst.', setzt: ['romyGeholfen', 'romyMesenberg'] },
   { id: 'kuedes', an: 'SePAS · Herr Kuedes', wenn: (m) => m.sit_spiel === 'geschickt' && !m.spielKuedes, text: 'Kann ich morgen zu Ihnen kommen? Es geht um einen Chat.', antwort: 'Klar. Morgen früh, ich bin da. Gut, dass du schreibst.', setzt: ['spielSpaet'] },
 ];
 export function sitAntwortenOffen(m) { return SIT_ANTWORTEN.filter((x) => !m['antwort_' + x.id] && x.wenn(m)); }
@@ -749,7 +750,7 @@ const RUECKBLICK = {
   spiel: { ignoriert: 'Nicht geantwortet.', blockiert: 'Blockiert und gemeldet.', geschickt: 'Ein Selfie geschickt.', gezeigt: 'Herrn Kuedes alles gezeigt.' },
   dach: { leiter: 'Fernand und die Leiter geholt.', festgehalten: 'Den Container festgehalten.', zugeschaut: 'Zugeschaut.' },
   roller: { mitgefahren: 'Mitgefahren. Rosa hat knapp gebremst.', mikaGeschuetzt: 'Nicht gefahren. Mika mitgenommen.', gesagt: 'Nicht gefahren. Sacha gesagt: Nimm keinen mit.', zugeschaut: 'Nicht gefahren. Mika ist mitgefahren.' },
-  zaun: { mitgegangen: 'Mitgegangen. Das Turnier verpasst.', zurueck: 'Zurück zur Schule gegangen.', mesenberg: 'Mit Romy zu Herrn Mesenberg gegangen.', begleitet: 'Neben Romy umgezogen. Einfach da gewesen.' },
+  zaun: { mitgegangen: 'Mitgegangen. Das Turnier verpasst.', zurueck: 'Zurück zur Schule gegangen.', mesenberg: 'Mit Romy zu Herrn Mesenberg gegangen.', begleitet: 'Vor der Umkleide auf Romy gewartet. Einfach da gewesen.', abgewiesen: 'Romys Grund gehört. Dann weggegangen.' },
   fundkiste: { gesagt: '„Leg das zurück“ gesagt. Trotz Angst.', weg: 'Weggegangen.', kuedes: 'Herrn Kuedes Bescheid gesagt.' },
   halle: { gefilmt: 'Gefilmt.', handys: '„Handys runter“ gesagt.', hilfe: 'Hilfe geholt.', sami: 'Sich neben Sami gestellt.', mitte: 'Dazwischen gegangen.', zurueck: 'Einen Schritt zurück gemacht.' },
 };
@@ -764,7 +765,7 @@ export function sitRueckblick(m) {
     if (id === 'halle' && m.halleGeloescht) t += ' Dann gelöscht und entschuldigt.';
     if (id === 'kiste' && m.kisteKuedes) t += ' Mit zur SePAS gegangen.';
     if (id === 'wald' && m.mikaGeholfen) t += ' Mika geholfen.';
-    if (id === 'wald' && m.mikaNeinWald) t += ' Und Mika hat auch Nein gesagt.';
+    if (id === 'wald' && m.mikaNeinWald) t += ' Und Mika hat Nein gesagt.';
     if (id === 'wette' && m.pitGeholfen) t += ' Pit geholfen.';
     if (id === 'vape' && m.vapeKuedes) t += ' Kai zur SePAS begleitet.';
     if (id === 'link' && m.linkRepariert) t += ' Dann Passwort geändert und allen Bescheid gesagt.';
@@ -778,7 +779,7 @@ export function sitRueckblick(m) {
     if (id === 'dach' && m.pitGefragt) t += ' Später nachgefragt.';
     if (id === 'roller' && m.rollerSorry) t += ' Und Rosa um Entschuldigung gebeten.';
     if (id === 'roller' && m.mikaKnie) t += ' Später nach Mikas Knie gefragt.';
-    if (id === 'zaun' && m.romyGeholfen && (m.sit_zaun === 'zurueck' || m.sit_zaun === 'mitgegangen')) t += ' Später Romy geholfen.';
+    if (id === 'zaun' && m.romyGeholfen && ['zurueck', 'mitgegangen', 'abgewiesen'].includes(m.sit_zaun)) t += ' Später mit Romy zu Herrn Mesenberg.';
     if (id === 'wald' && m.mikaSorry) t += ' Später Mika geschrieben: Sorry.';
     if (id === 'video' && m.videoZurueck) t += ' Dann wieder rausgenommen.';
     if (id === 'spiel' && m.spielSpaet) t += ' Später Herrn Kuedes geschrieben.';
@@ -1242,7 +1243,7 @@ async function jeffWahrheit(a, art) {
 // Lenny will Sport schwänzen. Romy geht mit – aber nicht aus Langeweile: In der Umkleide wird sie ausgelacht.
 export async function zaun(a) {
   await a.sag('e', 'Hinter der Tribüne, wo der Waldweg beginnt. Lenny und Romy, Rucksäcke auf.');
-  await a.sag('lennyZaun', 'Da bist du ja. Gleich ist Sport. Wir gehen nicht.');
+  await a.sag('lennyZaun', 'Da bist du ja. Ich schwänz. Und Romy kommt mit.');
   await a.sag('lennyZaun', 'Épicerie, dann Lichtung. Keiner merkt was. Kommst du?');
   await a.sag('romy', '(schaut auf ihre Schuhe) Komm halt mit.');
   await a.sag('e', 'Hinter euch klingelt es. Die Pause ist gleich vorbei.');
@@ -1253,11 +1254,11 @@ export async function zaun(a) {
     await a.sag('e', 'Die Lichtung ist leer. Lenny wirft Steine. Romy schaut aufs Handy.');
     await a.sag('e', 'Es ist … langweilig. Du denkst die ganze Zeit an die Schule.');
     await a.blende('Am nächsten Morgen');
-    await a.sag('hoffmann', 'Ihr drei wart gestern weg. Ich hab mir Sorgen gemacht.');
+    await a.sag('hoffmann', 'Du warst gestern in Sport nicht da. Ich hab mir Sorgen gemacht.');
     await a.sag('hoffmann', 'Wenn jemand fehlt, wissen wir nicht, ob etwas passiert ist.');
     await a.sag('hoffmann', 'Das gibt einen Eintrag. Und ein Gespräch. Kein Drama.');
-    await a.sag('e', 'Romy sitzt ganz hinten. Sie sagt kein Wort.');
-    a.nachricht('Gilles', 'Wo warst du?? Wir haben das Turnier gewonnen! 🏀');
+    await a.sag('e', 'Auf dem Gang siehst du Romy. Sie schaut weg.');
+    a.nachricht('Jo', 'Wo warst du?? Wir haben das Turnier gewonnen! 🏀');
     a.nachricht('Romy', 'Sorry. Ich wollte nur nicht in die Umkleide.');
     return;
   }
@@ -1266,58 +1267,59 @@ export async function zaun(a) {
     await a.sag('e', '(Doch. Fehlt einer, wird gesucht. So ist das hier.)');
   }
   if (w === 3) {
-    await a.sag('lennyZaun', 'Basketball. Wow. Streber.');
+    await a.sag('lennyZaun', 'Basketball. Wow. Viel Spaß beim Strebern.');
     await a.sag('e', 'Romy sagt nichts. Aber sie bleibt stehen.');
   }
   if (w !== 1) {
     const x = await a.wahl(['„Romy? Du siehst nicht aus, als hättest du Lust.“', '(Zurück zur Schule gehen.)']);
     if (x === 1) {
       a.merke('sit_zaun', 'zurueck');
-      await a.sag('lennyZaun', '(ruft) Streber!');
+      await a.sag('lennyZaun', '(ruft) Langweiler!');
       await a.sag('e', 'Du gehst zurück. Allein. Hinter dir wird es still.');
       await a.sag('e', '(Romy sah nicht aus wie jemand, der Spaß haben will.)');
-      a.nachricht('Romy', 'Egal. Hat eh keiner gemerkt.');
+      a.nachricht('Romy', 'Eintrag kassiert. Egal. Immer noch besser als Sport.');
       return;
     }
   }
   await a.sag('romy', '(leise) In der Umkleide lachen die immer. Über mich.');
-  await a.sag('romy', 'Letztes Mal haben die mein T-Shirt rumgeworfen. Alle haben gefilmt.');
+  await a.sag('romy', 'Letztes Mal haben die meine Schuhe rumgeworfen. Alle haben gefilmt.');
   await a.sag('e', '(Es geht nicht um Sport. Es geht um die Umkleide.)');
   await a.sag('lennyZaun', '(still) … Wusst ich nicht.');
-  const h = await a.wahl(['„Wir sagen es Herrn Mesenberg. Ich bleib dabei.“', '„Zieh dich neben mir um. Dann bist du nicht allein.“', '„Dann geh halt. Ist deine Sache.“']);
+  const h = await a.wahl(['„Wir sagen es Herrn Mesenberg. Ich bleib dabei.“', '„Ich wart vor der Umkleide auf dich. Dann gehen wir zusammen.“', '„Dann geh halt. Ist deine Sache.“']);
   if (h === 2) {
-    a.merke('sit_zaun', 'zurueck');
+    a.merke('sit_zaun', 'abgewiesen');
     await a.sag('romy', 'Ja. Eben.');
     await a.sag('e', 'Romy geht den Waldweg runter. Lenny zögert. Dann geht er mit.');
-    await a.sag('e', 'Du gehst zurück. Es klingelt. Zwei Plätze bleiben leer.');
-    a.nachricht('Romy', 'Egal. Hat eh keiner gemerkt.');
+    await a.sag('e', 'Du gehst zurück. Es klingelt. Ein Platz in Sport bleibt leer.');
+    await a.sag('e', '(Was Romy erzählt hat, darfst du Herrn Mesenberg sagen. Kein Petzen.)');
+    a.nachricht('Romy', 'Vergiss, was ich gesagt hab. … Oder nicht.');
     return;
   }
-  await a.sag('lennyZaun', '(seufzt) Na gut. Ich komm auch. Ohne euch ist’s eh blöd.');
+  await a.sag('lennyZaun', '(seufzt) Na gut. Ich geh auch rein. Allein ist’s eh blöd.');
   if (h === 0) {
-    a.merke('sit_zaun', 'mesenberg');
+    a.merke('sit_zaun', 'mesenberg'); a.merke('romyMesenberg');
     await a.blende('Vor der Turnhalle');
     await a.sag('mesenberg', 'Danke, dass ihr kommt. Das ist ernst. Ich kümmere mich.');
-    await a.sag('mesenberg', 'Romy, du ziehst dich heute im Lehrerraum um.');
+    await a.sag('mesenberg', 'Romy, heute ziehst du dich in der Einzelkabine um.');
     await a.sag('mesenberg', 'Und morgen rede ich mit der Klasse. Ohne deinen Namen.');
-    await a.sag('mesenberg', 'Filmen in der Umkleide geht gar nicht. Nirgends.');
+    await a.sag('mesenberg', 'Filmen in der Umkleide geht gar nicht. Die Videos lass ich löschen.');
   } else {
     a.merke('sit_zaun', 'begleitet');
-    await a.blende('In der Umkleide');
-    await a.sag('e', 'Jemand kichert. Du schaust einfach zurück. Ruhig.');
-    await a.sag('e', 'Das Kichern hört auf. Manchmal reicht einer, der daneben steht.');
+    await a.blende('Vor der Umkleide');
+    await a.sag('e', 'Drinnen kichert jemand. Du stehst an der Tür. Ruhig. Sichtbar.');
+    await a.sag('e', 'Das Kichern hört auf. Manchmal reicht einer, der da ist.');
     await a.sag('e', '(Hört es nicht auf: Herrn Mesenberg sagen. Das ist kein Petzen.)');
   }
   a.merke('romyGeholfen');
   await a.blende('In der Sporthalle');
-  await a.sag('e', 'Basketball. Romy trifft einmal. Lenny jubelt am lautesten.');
+  await a.sag('e', 'Basketball. Romy trifft einmal. Du jubelst am lautesten.');
   await a.sag('romy', '(außer Atem) Danke. Für heute. Echt.');
   a.nachricht('Romy', 'War der beste Sport seit Monaten. Kein Witz.');
 }
 
 // ================= Der Roller (Gasse zur Rue du Moulin, Kapitel 4–5) =================
 // Sacha (15, vom großen Lycée) nimmt Jüngere auf dem E-Roller mit. Zu zweit, ohne Helm, auf nasser Straße.
-// Die Folgen zeigen sich an anderen: an Rosa, die bremsen muss – oder an Mika, die immer ja sagt.
+// Die Folgen zeigen sich an anderen: an Rosa, die bremsen muss – oder an Mika: Mika sagt immer ja.
 export async function roller(a) {
   await a.sag('e', 'In der Gasse surrt ein E-Roller. Sacha, 15, vom großen Lycée.');
   await a.sag('sacha', 'Ey, du. Zur Épicerie? Spring hinten drauf. Zwei Minuten.');
@@ -1338,7 +1340,7 @@ export async function roller(a) {
     const x = await a.wahl(['„Sorry, Rosa. Das war dumm von uns.“', '(Nichts sagen. Weggehen.)']);
     if (x === 0) {
       a.merke('rollerSorry');
-      await a.sag('rosa', '(atmet aus) Danke, dass du es sagst. Das hilft. Wirklich.');
+      await a.sag('rosa', '(atmet aus) Danke, dass du es sagst. Komm mal auf einen Tee.');
       await a.sag('rosa', 'Ein Roller trägt einen Menschen. Und ein Helm schützt den Kopf.');
     } else {
       await a.sag('e', 'Du gehst. Rosa sitzt noch lange im Wagen. Der Motor ist aus.');
@@ -1347,8 +1349,8 @@ export async function roller(a) {
     return;
   }
   if (w === 1) await a.sag('sacha', 'Boah. Seit wann gibt es Regeln für Roller?');
-  if (w === 2) await a.sag('sacha', 'Wie meine Oma. Okay, Baby.');
-  if (w === 3) await a.sag('sacha', 'Bis gleich, Schnecke.');
+  if (w === 2) await a.sag('sacha', 'Wie meine Oma. Okay, Angsthase.');
+  if (w === 3) await a.sag('sacha', 'Bis gleich, lahme Ente.');
   await a.sag('e', 'Dein Gesicht wird warm. Dann kommt Mika die Gasse runter.');
   await a.sag('sacha', 'Dann du, Mika? Hinten drauf. Zwei Minuten.');
   await a.sag('mikaRoller', '(schaut zu dir) Äh … klar. Klar!');
@@ -1359,7 +1361,7 @@ export async function roller(a) {
     await a.blende('Eine Minute später');
     await a.sag('e', 'Bremsen quietschen. Dann ein Schrei. Du rennst hin.');
     await a.sag('e', 'Mika sitzt am Bordstein. Das Knie blutet. Rosas Lieferwagen steht schräg.');
-    await a.sag('rosa', 'Kopf okay? Schau mich an. … Gut. Das Knie verbinden wir.');
+    await a.sag('rosa', 'Kopf angeschlagen? Schau mich an. … Nein? Gut. Knie verbinden.');
     await a.sag('rosa', 'Ich ruf in der Schule an. Kein Ärger. Nur Bescheid.');
     await a.sag('e', '(Du hättest was sagen können. Ein Satz hätte gereicht.)');
     a.nachricht('Mika', 'Knie kaputt. Egal. Ich sag halt immer ja.');
@@ -1372,7 +1374,7 @@ export async function roller(a) {
     await a.sag('e', 'Sacha surrt allein davon. Ihr lauft. Die Schuhe werden nass.');
     await a.blende('In der Épicerie');
     await a.sag('lisette', 'Eben ist einer fast in Rosas Wagen gefahren. Allein, zum Glück.');
-    await a.sag('mikaRoller', '(ganz leise) Da wär ich hinten draufgewesen.');
+    await a.sag('mikaRoller', '(ganz leise) Da wär ich hinten drauf gewesen.');
   } else {
     a.merke('sit_roller', 'gesagt');
     await a.sag('sacha', '… Hm. Ist halt nass, ja.');
@@ -1380,7 +1382,8 @@ export async function roller(a) {
   }
   await a.sag('mikaRoller', 'Danke. Ich hätte ja gesagt. Ich sag immer ja.');
   a.merke('mikaNein');
-  const d = await a.wahl(['„Nein sagen kann man üben.“', '„Kenn ich.“', '(Mika die Tüte hinhalten.)']);
-  await a.sag('mikaRoller', ['Üben? … Okay. Du bist mein Trainer.', 'Echt? Du auch?', '(nimmt ein rotes) Die roten sind die besten.'][d]);
+  const tuete = a.m().sit_roller === 'mikaGeschuetzt';
+  const d = await a.wahl(['„Nein sagen kann man üben.“', '„Kenn ich.“', tuete ? '(Mika die Tüte hinhalten.)' : '(Mika kurz anstupsen.)']);
+  await a.sag('mikaRoller', ['Üben? … Okay. Du trainierst mich.', 'Echt? Du auch?', tuete ? '(nimmt ein rotes) Die roten sind die besten.' : '(stupst zurück) Okay. Danke.'][d]);
   a.nachricht('Mika', 'Nein-Training morgen? 😅');
 }

@@ -520,7 +520,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (DORF_DEKO.dosen) DORF_DEKO.dosen.visible = an('lenny');
     if (DORF_DEKO.wolke) DORF_DEKO.wolke.visible = an('kai');
     if (DORF_DEKO.roller) DORF_DEKO.roller.visible = an('sacha');
-    if (DORF_DEKO.umkleide) DORF_DEKO.umkleide.visible = !!m.romyGeholfen;
+    if (DORF_DEKO.umkleide) DORF_DEKO.umkleide.visible = !!m.romyMesenberg;
     if (DORF_DEKO.dexWand) DORF_DEKO.dexWand.visible = m.sit_graffiti === 'kiesser' && kap > (m.sitKap_graffiti || 99);
     if (DORF_DEKO.tagDex) DORF_DEKO.tagDex.visible = an('dexWand') || (['gegangen', 'verstanden', 'weiter', 'reden', 'kiesser', 'papier'].includes(m.sit_graffiti) && m.sitKap_graffiti === kap);
     // Das Wandbild zeigt, was aus Noors Trommel geworden ist
@@ -2440,7 +2440,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     const m = (S && S.merke) || {};
     const kurz = m.zurueckKap && (kap === m.zurueckKap || kap === m.zurueckKap + 1) ? 'Épicerie: Jemand kam zurück und hat bezahlt. Tante Lisette sagt: Respekt.'
       : m.sit_graffiti === 'kiesser' && kap > (m.sitKap_graffiti || 99) ? 'Neubau: Die große Wand bekommt Farbe. Ein 5ème zeichnet vor.'
-      : m.romyGeholfen && kap === (m.sitKap_zaun || 0) + 1 ? 'Sport: Handys bleiben draußen. In der Umkleide filmt niemand. Nie.'
+      : m.romyMesenberg && kap === (m.sitKap_zaun || 0) + 1 ? 'Sport: Handys bleiben draußen. In der Umkleide filmt niemand. Nie.'
       : m.sit_halle && kap === (m.sitKap_halle || 0) + 1 ? 'Streit gefilmt? Nicht teilen. Melden. Die Redaktion.'
       : m.lenningGesagt && kap === (m.sitKap_video || 0) + 1 ? 'Der Account „annexe.memes“ ist weg. Danke an alle, die ihn gemeldet haben.'
       : m.vapeKuedes && kap === (m.sitKap_vape || 0) + 1 ? 'SePAS: Neue Sprechstunde „Weg vom Vape“. Anonym. Dienstags.'

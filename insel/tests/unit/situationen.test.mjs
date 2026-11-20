@@ -153,5 +153,5 @@ test('Szenen greifen ineinander: Wer mit Mika Nein-Sagen geübt hat (Roller), er
   const y = api([0, 0], { mikaNein: true }); await lichtung({ ...y, m: () => y.mErg });
   assert.equal(y.mErg.mikaNeinWald, true); assert.ok(!y.mErg.mikaGeholfen, 'keine Panik, keine Hilfe nötig');
   assert.ok(y.log.some(([w, t]) => w === 'mika' && /Nein/.test(t)));
-  assert.match(sitRueckblick(y.mErg).find((r) => /Lichtung/.test(r.t)).w, /Mika hat auch Nein gesagt/);
+  assert.match(sitRueckblick(y.mErg).find((r) => /Lichtung/.test(r.t)).w, /Mika hat Nein gesagt/);
 });

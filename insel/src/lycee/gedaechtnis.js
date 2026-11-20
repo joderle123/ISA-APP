@@ -246,14 +246,14 @@ export const GEDAECHTNIS = [
     ['kenan', 'Ich frag nicht, wer. Ich sag nur: Glück gehabt.'] ] },
   { id: 'sitMikaNein', wer: 'mila', ab: 5, wenn: m('mikaNeinWald'), g: [
     ['mila', 'Mika erzählt jedem, dass Mika Nein gesagt hat. Zu Dex!'],
-    ['mila', 'Und dass du der Trainer warst. Stimmt das?'] ] },
+    ['mila', 'Und dass du mit Mika geübt hast. Stimmt das?'] ] },
   { id: 'sitMikaSorry', wer: 'noah', ab: 5, wenn: m('mikaSorry'), g: [
     ['noah', 'Mika hat erzählt, dass du geschrieben hast. Später noch.'],
     ['noah', 'Fand ich gut. Viele schreiben dann gar nichts mehr.'] ] },
   { id: 'sitZaunMit', wer: 'jo', ab: 9, wenn: (x) => x.sit_zaun === 'mitgegangen', g: [
     ['jo', 'Beim Turnier warst du weg. Wir hätten dich gebraucht.'],
     ['jo', 'Lichtung statt Basketball? Echt jetzt?'] ] },
-  { id: 'sitZaunRomy', wer: 'ayla', ab: 9, wenn: m('romyGeholfen'), g: [
+  { id: 'sitZaunRomy', wer: 'ayla', ab: 9, wenn: m('romyMesenberg'), g: [
     ['ayla', 'In der Umkleide filmt keiner mehr. Mesenberg war richtig sauer.'],
     ['ayla', 'Romy lacht wieder in Sport. Hast du gesehen?'] ] },
   { id: 'sitWandGespruht', wer: 'kenan', ab: 7, wenn: (x) => x.sit_graffiti === 'gespruht', g: [
