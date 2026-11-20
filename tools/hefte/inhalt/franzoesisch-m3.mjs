@@ -29,7 +29,7 @@ export const MODUL = {
   // seulement pour la voix (Regex Python)
   aussprache: {
     '\\bMme\\b': 'Madame', '\\bM\\. ': 'Monsieur ', '(\\d{1,2}) h (\\d\\d)': '\\1 heures \\2', '(\\d{1,2}) h\\b': '\\1 heures', '\\b1er\\b': 'premier',
-    '\\bTél\\. ': 'Téléphone ', '\\bBD\\b': 'bédé', '(\\d+) ?km\\b': '\\1 kilomètres', '11–14': 'onze à quatorze',
+    '\\bTél\\. ': 'Téléphone ', '\\bBD\\b': 'bédé', '(\\d+) ?km\\b': '\\1 kilomètres',
   },
 }
 

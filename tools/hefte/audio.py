@@ -30,7 +30,7 @@ AUSSPRACHE = {
            # englische Wörter so schreiben, wie man sie auf Deutsch spricht (nur für die Stimme)
            r'(?i)\bskatepark': 'skeitpark', r'(?i)\bskateboard': 'skeitbord', r'(?i)\bskate\b': 'skeit', r'(?i)\bskat': 'skeit', r'(?i)board\b': 'bord', r'(?i)\bcool\b': 'kuhl', r'\bOllie\b': 'Olli', r'\bTeam\b': 'Tiem', r'\bTeams\b': 'Tiems',
            r'\bChloe\b': 'Kloe', r'\bHi\b': 'Hai', r'\bSale\b': 'Seil', r'\bSnacks?\b': 'Snäcks', r'\bShop\b': 'Schopp', r'\bJeans\b': 'Dschiens', r'\bFrisbee\b': 'Frisbi', r'\bPancakes\b': 'Pänkeiks'},
-    'fr': {r'\b7P(\d)\b': r'septième P \1', r'–': ',', r'\s·\s': ', '},
+    'fr': {r'\b7P(\d)\b': r'septième P \1', r'(\d)\s*–\s*(\d)': r'\1 à \2', r'\b(\d{1,2}) h 00\b': r'\1 heures', r'\s*–\s*': ', ', r'\s·\s': ', '},
 }
 
 _cache = {}
