@@ -161,12 +161,27 @@ export function baueDorf({ B, C, schild, schilder, P = null, R = null }) {
   for (const z of [64, 76]) { box(34.4, 34.55, 0, 3.6, z, z + 0.15, hex('#3a3f4a')); box(33.6, 34.55, 3.6, 3.7, z, z + 0.15, hex('#3a3f4a')); box(33.5, 33.9, 3.45, 3.6, z - 0.1, z + 0.25, hex('#fff2b0'), { art: 'licht' }); }
   { const t = schild('Rue du Moulin  ↓', 1.5, 0.34, { bg: '#1f4e9a', rand: '#ffffff', schrift: 'bold 96px system-ui' }); t.position.set(34.6, 2.4, 55.8); t.rotation.y = Math.PI / 2; schilder.push(t);
     box(34.55, 34.65, 0, 2.6, 55.75, 55.85, hex('#8d96a3')); }
+  // Gasse mit Charakter: Gartenhecken links und rechts (mit Lücken für Gartentore), Mülltonnen, Bank, Briefkästen
+  { const HECKE = hex('#3f7d3a'), HECKE2 = hex('#4b8c42'), HOLZ = hex('#8a6a4a');
+    for (const [z0, z1] of [[56, 63], [65.5, 75], [77.5, 82]]) {
+      box(28.9, 29.6, 0, 1.15, z0, z1, (z0 | 0) % 2 ? HECKE : HECKE2, { stoss: true });
+      box(34.7, 35.4, 0, 1.05, z0 + 0.8, z1 - 0.4, (z0 | 0) % 2 ? HECKE2 : HECKE, { stoss: true });
+    }
+    for (const z of [63.6, 75.6]) { box(28.95, 29.05, 0, 1.0, z, z + 1.6, HOLZ); box(29.0, 29.1, 0.45, 0.55, z, z + 1.6, HOLZ); }   // Gartentore (offen angelehnt)
+    for (const [x, z, c] of [[29.95, 64.2, '#2f6db0'], [29.95, 64.9, '#5a5f6b'], [34.1, 76.2, '#3f7d3a']]) box(x - 0.3, x + 0.3, 0, 1.05, z - 0.3, z + 0.3, hex(c), { stoss: true });   // Mülltonnen
+    box(34.15, 34.55, 0.42, 0.5, 69, 70.8, HOLZ, { stoss: true }); box(34.45, 34.55, 0.5, 0.95, 69, 70.8, HOLZ);   // Bank an der Hecke
+    if (B.sitze) for (const z of [69.5, 70.3]) B.sitze.push({ x: 34.0, z, rot: -Math.PI / 2, bank: true, h: 0.5 });
+    for (const [x, z] of [[29.75, 58.2], [29.75, 71.4]]) { box(x - 0.04, x + 0.04, 0, 1.1, z - 0.04, z + 0.04, hex('#3a3f4a')); box(x - 0.2, x + 0.2, 1.1, 1.38, z - 0.14, z + 0.14, hex('#c0392b')); }   // Briefkästen
+  }
   // Rue du Moulin (z 84 … 90), Gehwege
   box(-30, 110, 0, 0.02, 84, 90, hex('#4a4d55'), { art: 'innen' });
   for (let x = -28; x < 110; x += 6) box(x, x + 3, 0.02, 0.03, 86.9, 87.1, hex('#e9e3d0'), { art: 'innen' });
   box(-30, 110, 0, 0.14, 82, 84, C.bordstein || hex('#b8b2a6'), { art: 'innen' }); box(-30, 110, 0, 0.14, 90, 92, C.bordstein || hex('#b8b2a6'), { art: 'innen' });
   B.frei.push({ x0: -30, x1: 110, z0: 81, z1: 93 });
   if (P) for (const x of [-12, 12, 60, 84, 104]) P('strasse/Streetlight_Single', x, 82.6, 0, { h: 5.5 });
+  // geparkte Autos am Straßenrand (nicht vor Épicerie, Gasse und Bushäuschen)
+  if (P) for (const [x, z, m, f, d] of [[-16, 85.2, 'kk/car_sedan', '#c8d6e0', 1], [18, 88.8, 'auto/sedan', null, -1], [55, 88.8, 'kk/car_hatchback', '#e6c8a0', -1], [76, 85.2, 'kk/car_stationwagon', '#d8e2ea', 1], [94, 88.8, 'auto/suv', null, -1]])
+    P(m, x, z, d * Math.PI / 2, m.startsWith('kk/') ? { s: 4.1, fest: true, ...(f ? { farbe: f } : {}) } : { h: 1.6, fest: true });
   // Épicerie „Klenge Buttek“ (x 36 … 48, z 92 … 102): Schaufenster, Markise, Tür in der Mitte, innen Regale, Kasse, Kühlschränke
   { const X0 = 36, X1 = 48, Z0 = 92, Z1 = 102, H = 3.6, PUTZ_L = hex('#efe2b8'), GLAS_L = hex('#9cc3d8');
     const tuer = { von: 41, bis: 43, unten: 0, oben: 2.4 }, f1 = { von: 36.8, bis: 40.4, unten: 0.6, oben: 2.5 }, f2 = { von: 43.6, bis: 47.2, unten: 0.6, oben: 2.5 };
