@@ -305,6 +305,7 @@ export function sitSaetze(id, m) {
 // Unter Dex’ Kürzel ist ein Wandbild der 7ème vom letzten Jahr. Noor hat die Trommel gemalt.
 export async function graffiti(a) {
   const m = a.m();
+  a.ton('spruehen');
   await a.sag('e', 'Zischen. Es riecht nach Farbe. Dex sprüht am Bushäuschen.');
   await a.sag('e', 'Unter seinem D3X: ein Wandbild. Kinder, Masten, ein Hund. Eine Trommel.');
   await a.sag('dexWand', m.sit_wald ? 'Ah, du. Perfekt. Halt mal Wache.' : 'Ey, 7ème. Halt mal Wache. Oder mach mit.');
@@ -379,6 +380,7 @@ export async function graffiti(a) {
   }
   // gesprüht
   a.merke('sit_graffiti', 'gespruht');
+  a.ton('spruehen');
   await a.blende('Zwei Minuten später');
   a.deko('tagDu', true);
   await a.sag('e', 'Dein Zeichen ist schief. Es läuft über die Trommel.');
@@ -511,6 +513,7 @@ async function kuedesHalle(a, art) {
 // ================= Drei Dosen (Energy-Drink-Wette am Spielplatz) =================
 export async function wette(a) {
   a.deko('dosen', true);
+  a.ton('dose');
   await a.sag('e', 'Am Spielplatz. Auf der Bank stehen Dosen. Bunt. Mit Blitzen drauf.');
   await a.sag('lenny', 'Wette! Wer schafft drei Dosen in fünf Minuten?');
   await a.sag('lenny', 'Wer verliert, zahlt alle. Pit ist schon bei zwei.');

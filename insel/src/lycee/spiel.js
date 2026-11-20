@@ -144,6 +144,13 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     kick(0); snare(2 * b); kick(4 * b); kick(5 * b); snare(6 * b); for (let i = 0; i < 8; i++) hat(i * b);
   };
   audio.register('trommel', trommel(1)); audio.register('trommelLeise', trommel(0.35));
+  // Klänge der offenen Welt und der Situationen: Vögel im Wald, Sprühdose, Dose aufmachen
+  audio.register('vogel', (ctx, bus) => {
+    const t = ctx.currentTime, h = audio.helpers, base = 2900 + Math.random() * 1500, n = 2 + Math.floor(Math.random() * 4);
+    for (let i = 0; i < n; i++) { const tt = t + i * (0.09 + Math.random() * 0.05); const { o } = h.tone('sine', base, tt, 0.008, 0.03, 0.06, bus); o.frequency.exponentialRampToValueAtTime(base * (1.2 + Math.random() * 0.4), tt + 0.05); }
+  });
+  audio.register('spruehen', (ctx, bus) => { const t = ctx.currentTime, h = audio.helpers; h.burst(t, 0.9, 'highpass', 3800, 0.6, 0.05, bus); h.burst(t + 0.02, 0.7, 'bandpass', 6500, 1.2, 0.025, bus); });
+  audio.register('dose', (ctx, bus) => { const t = ctx.currentTime, h = audio.helpers; h.tone('square', 1900, t, 0.001, 0.05, 0.02, bus); h.burst(t + 0.01, 0.35, 'highpass', 4200, 0.8, 0.06, bus); });
   audio.register('geschirr', (ctx, bus) => {
     const t = ctx.currentTime, h = audio.helpers, n = 1 + Math.floor(Math.random() * 3);
     for (let i = 0; i < n; i++) h.tone('triangle', 2600 + Math.random() * 1800, t + i * (0.07 + Math.random() * 0.08), 0.002, 0.008, 0.16, bus);
@@ -2178,7 +2185,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     nachricht: (von, t) => { (S.merke.nachrichten = S.merke.nachrichten || []).push([von, t]); },
     teleport: (ort) => { const o = welt.orte[ort]; if (o) { steuerung.fokus = null; steuerung.gegenSchuss = false; steuerung.teleport(o.x, o.z, o.yaw); } },
     deko: (n, an) => { if (DORF_DEKO[n]) DORF_DEKO[n].visible = an; },
-    ton,
+    ton: (n) => (['vogel', 'spruehen', 'dose'].includes(n) ? audio.play(n) : ton(n)),
   });
   async function sitGespraech(fn, gp) {
     if (imGespraech) return;
@@ -2626,6 +2633,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       klangT = 0.7 + Math.random() * 0.9;
       if (!raum && p.z > -2 && p.z < 40 && Math.abs(p.x) < 46 && !(sky.night > 0.5)) audio.play('stimmen');
       else if (rid === 'kantine') audio.play('geschirr');
+      else if (!raum && p.x < -54 && p.z < -8 && !(sky.night > 0.5) && Math.random() < 0.55) audio.play('vogel');   // Waldweg und Lichtung
       else if (rid === 'gang' && ((uhrJetzt >= 8.0 && uhrJetzt < 9.85) || (uhrJetzt >= 10.4 && uhrJetzt < 11.95) || (uhrJetzt >= 13.6 && uhrJetzt < 15.4)) && Math.random() < 0.6) audio.play('unterricht');
     }
     // Noor übt im Musikraum (Stammgast): leiser Rhythmus, im Flur des Neubaus noch zu hören
