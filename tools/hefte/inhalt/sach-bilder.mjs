@@ -264,3 +264,34 @@ export function schokoTafel(teile, { leer = true } = {}) {
   const leg = `<div class="schoko-leg">${teile.map((t, j) => `<div><i style="background:${t.farbe}">${j + 1}</i><span>${t.name}</span><span class="pz"><span class="z ${leer ? '' : 'sicht'}">${t.anteil}</span> %</span></div>`).join('')}</div>`
   return `<div class="schoko">${svg}${leg}</div>`
 }
+
+/** Wut-Eisberg: oben sichtbar „Wut“, unter Wasser die Gefühle dahinter; im Heft leere Linien, im Lösungsheft die Wörter */
+export function eisberg({ unten = ['Angst', 'Scham', 'Trauer', 'Eifersucht', 'Hilflosigkeit', 'Enttäuschung'], oben = 'Wut' } = {}) {
+  const W = 400, H = 260, see = 78
+  let s = `<svg viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg" class="eisberg-svg">`
+  s += `<rect x="0" y="0" width="${W}" height="${see}" fill="#eef6fc"/><rect x="0" y="${see}" width="${W}" height="${H - see}" fill="#2f6db5" opacity="0.18"/>`
+  s += `<path d="M0 ${see} q 25 -6 50 0 t 50 0 t 50 0 t 50 0 t 50 0 t 50 0 t 50 0 t 50 0" fill="none" stroke="#2f6db5" stroke-width="2"/>`
+  s += `<polygon points="160,${see} 185,22 205,10 228,30 248,${see}" fill="#ffffff" stroke="#7aa6d6" stroke-width="2"/>`
+  s += `<text x="204" y="${see - 18}" text-anchor="middle" font-family="Lexend" font-weight="800" font-size="20" fill="#c0392b">${oben}</text>`
+  s += `<polygon points="160,${see} 248,${see} 350,112 372,186 318,246 140,254 40,214 34,148 96,100" fill="#dcecf9" stroke="#7aa6d6" stroke-width="2"/>`
+  const pos = [[128, 116], [272, 116], [118, 160], [282, 160], [140, 204], [262, 206]]
+  unten.forEach((w, i) => { const [x, y] = pos[i]; s += `<line x1="${x - 56}" y1="${y + 6}" x2="${x + 56}" y2="${y + 6}" stroke="#7d8597" stroke-width="1.2"/><text class="eis-l" x="${x}" y="${y}" text-anchor="middle" font-family="Hand" font-size="17" fill="#c0392b">${w}</text>` })
+  s += `<text x="${W - 8}" y="${see - 8}" text-anchor="end" font-family="Lexend" font-size="11" fill="#5b6475">sichtbar</text><text x="${W - 8}" y="${see + 18}" text-anchor="end" font-family="Lexend" font-size="11" fill="#1f4f86">unsichtbar</text>`
+  return `<figure class="eisberg">${s}</svg></figure>`
+}
+
+/** Treppe des Hasses (nach dem Modell der „Pyramide des Hasses“): 5 Stufen von Vorurteil bis Verfolgung */
+export function hassTreppe(stufen = [['Vorurteile'], ['abwertende', 'Worte und Witze'], ['Diskriminierung'], ['Gewalt'], ['Verfolgung,', 'Völkermord']]) {
+  const W = 540, H = 262, b = W / stufen.length, hStufe = 34, sockel = 56
+  const farben = ['#f5d76e', '#f2b25a', '#e8843a', '#d0532c', '#9b2226']
+  let s = `<svg viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg" class="treppe-svg">`
+  stufen.forEach((zeilen, i) => {
+    const y = H - sockel - (i + 1) * hStufe, x = i * b
+    s += `<rect x="${x + 1}" y="${y}" width="${b - 2}" height="${H - y}" rx="3" fill="${farben[i]}"/>`
+    s += `<circle cx="${x + 16}" cy="${y + 16}" r="11" fill="#fff"/><text x="${x + 16}" y="${y + 20.5}" text-anchor="middle" font-family="Lexend" font-weight="800" font-size="13" fill="${farben[i]}">${i + 1}</text>`
+    zeilen.forEach((z, k) => { s += `<text x="${x + b / 2}" y="${y + 46 + k * 16}" text-anchor="middle" font-family="Lexend" font-weight="700" font-size="12.5" fill="${i > 2 ? '#fff' : '#3a2a10'}">${z}</text>` })
+  })
+  s += `<path d="M10 22 L ${W - 40} 22" stroke="#9b2226" stroke-width="2.5" marker-end="url(#pf)"/><defs><marker id="pf" markerWidth="10" markerHeight="10" refX="6" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#9b2226"/></marker></defs>`
+  s += `<text x="12" y="14" font-family="Lexend" font-size="11.5" fill="#9b2226">Je früher man stoppt, desto besser.</text>`
+  return `<figure class="treppe">${s}</svg></figure>`
+}

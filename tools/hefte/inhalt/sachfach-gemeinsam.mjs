@@ -12,7 +12,7 @@ export const mische = (hex, ziel, anteil) => '#' + [0, 2, 4].map((i) => Math.rou
 export const SACH_AUSSPRACHE = {
   // zuerst: Notrufnummern und feste Beispiele (sonst greifen die Jahreszahl- und Einheiten-Regeln)
   '\\b112\\b': 'eins eins zwei', '116 111': 'eins eins sechs, eins eins eins', '8002 1234': 'acht null null zwei, eins zwei drei vier',
-  'MHBfjAg3WmS!': 'M, H, B, f, j, A, g, drei, W, m, S, Ausrufezeichen', 'JOJO15': 'Jojo fünfzehn', 'BEE SECURE': 'Bie Sikjur', '\\bSePAS\\b': 'Sepass', '\\bUNESCO\\b': 'Unesko',
+  'MHBfjAg3WmS!': 'M, H, B, f, j, A, g, drei, W, m, S, Ausrufezeichen', 'JOJO15': 'Jojo fünfzehn', 'BEE SECURE': 'Bie Sikjur', '\\bSePAS\\b': 'Sepass', '\\bUNESCO\\b': 'Unesko', '\\bUSA\\b': 'U S A',
   '\\bUND\\b': 'und', '\\bODER\\b': 'oder', 'Cześć': 'Tschäschtsch', 'Olá': 'Ola', '\\bHej\\b': 'Hei', '8002 5500': 'acht null null zwei, fünf fünf null null',
   // Tausender mit Leerzeichen („300 000“) als eine Zahl lesen
   '(\\d)[  ](\\d{3})\\b': '\\1\\2', '(\\d+)/(\\d\\d)\\b': '\\1 auf \\2',

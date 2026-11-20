@@ -592,3 +592,9 @@ table.raster.stellen td { padding: 1.5mm 1mm; }
 .schoko-leg .pz { white-space: nowrap; }
 .quelle-klein { font-size: 9pt; color: #6b7385; margin: 1.5mm 0 0; font-style: italic; }
 .beschriften > .voll { width: 100%; }
+/* Wut-Eisberg und Treppe des Hasses */
+.eisberg, .treppe { margin: 2mm auto; width: 100%; }
+.eisberg-svg { width: 145mm; display: block; margin: 0 auto; }
+.treppe-svg { width: 165mm; max-width: 100%; display: block; margin: 0 auto; }
+.eisberg-svg .eis-l { visibility: hidden; }
+.loesungen .eisberg-svg .eis-l { visibility: visible; }
