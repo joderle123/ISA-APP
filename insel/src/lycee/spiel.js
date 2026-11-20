@@ -40,6 +40,9 @@ import { createZufall } from './zufall.js';
 // Das Schuljahr vergeht: Monat auf der Zeitkarte (die Kapitel liegen Wochen auseinander, nicht direkt hintereinander)
 const MONAT = { 1: 'September', 2: 'September', 3: 'Oktober', 4: 'November', 5: 'Dezember', 6: 'Februar', 7: 'März', 8: 'April', 9: 'Juni', 10: 'Juli' };
 import { createInteraktionen } from './interaktion.js';
+import { kickerSpiel } from './kicker.js';
+import { createBotengang } from './botengang.js';
+import { createBuchstaben } from './buchstaben.js';
 import { FAEDEN } from './faeden.js';
 import { GEDAECHTNIS, RUF, BELAUSCHT } from './gedaechtnis.js';
 import { PLAUDERN, BANK } from './stimmen.js';
@@ -2219,7 +2222,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   // Leute: Wer schnell auf jemanden zufährt, bremst automatisch – „Achtung, Leute!“. Drinnen, im Gespräch, in Szenen: absteigen.
   let fahrt = null;
   function trottinette() {
-    const t = new THREE.Group(), mat = (c) => new THREE.MeshLambertMaterial({ color: c }), farbe = (S && S.deck) || '#2fb8a8';
+    const t = new THREE.Group(), mat = (c) => new THREE.MeshLambertMaterial({ color: c }), farbe = (S && (S.trotti || S.deck)) || '#2fb8a8';
     const teil = (geo, c, x, y, z, rx = 0, rz = 0) => { const m = new THREE.Mesh(geo, mat(c)); m.position.set(x, y, z); m.rotation.set(rx, 0, rz); t.add(m); return m; };
     teil(new THREE.BoxGeometry(0.62, 0.035, 0.13), farbe, 0.03, 0.11, 0);                         // Trittbrett
     teil(new THREE.BoxGeometry(0.5, 0.006, 0.12), '#2b2b33', 0.05, 0.13, 0);                      // Griptape
@@ -2328,7 +2331,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   function rennenTick(dt) {
     const p = steuerung.pos, art = fahrt.art, key = 'renn_' + art;
     if (!rennen) {
-      if (Math.hypot(p.x - RENNEN[0][0], p.z - RENNEN[0][1]) < 2.8 && steuerung.tempo > 1) {
+      if (!botengang.aktiv() && Math.hypot(p.x - RENNEN[0][0], p.z - RENNEN[0][1]) < 2.8 && steuerung.tempo > 1) {
         rennen = { n: 1, t: 0 }; ton('melodie2'); rennenZeigen(true);
         ui.skate({ trick: '🏁 Los! ' + (RENNEN.length - 1) + ' Ringe' + (S.merke[key] ? ' · Rekord ' + S.merke[key].toFixed(1) + ' s' : '') });
       }
@@ -2422,6 +2425,18 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       if (art === 'helm') { S.helm = '#ffd166'; ui.toast('<b>🪖 Goldener Helm</b><span>16 Sticker. Sieht man von weitem.</span>', 'ly-t-ent'); }
       if (art === 'titel') { S.merke.titelDorf = true; jetons(5, 'Alle 24 Sticker'); ui.toast('<b>🗺️ Kennt jede Ecke</b><span>Alle 24 Sticker gefunden. Respekt!</span>', 'ly-t-ent'); }
     } });
+  // ---------- Botengänge: Brett „Hilfe gesucht“ neben der Bäckerei, Aufträge von Rosa, Kim, Opa Nik … ----------
+  const botengang = createBotengang({ scene, steuerung, ui, ton, vib, zustand: () => S, sichern: () => sichern(),
+    belohnung: ({ sterne, neu, anzahl, alle }) => {
+      jetons(sterne === 3 ? 2 : 1, 'Botengang');
+      if (neu && alle && !S.merke.titelBote) { S.merke.titelBote = true; S.trotti = '#ff9f1c'; ui.toast('<b>🛴 Neue Trottinette: Orange</b><span>Alle acht Botengänge geschafft. Das Dorf kennt dich jetzt.</span>', 'ly-t-ent'); }
+      if (anzahl === 3) ui.toast('<b>🥐 Rosa</b><span>„Drei Botengänge! Ab jetzt heißt du bei mir: die Rakete.“</span>');
+    } });
+  // ---------- S-K-A-T-E im Skatepark: fünf Buchstaben über den Rampen, nur mit Sprung auf dem Brett ----------
+  const buchstaben = createBuchstaben({ scene, steuerung, ui, ton, vib, zustand: () => S, sichern: () => sichern(),
+    belohnung: (art) => {
+      if (art === 'erst') { S.deck = '#8e5cf7'; jetons(3, 'S-K-A-T-E'); ui.toast('<b>🔤 S-K-A-T-E komplett!</b><span>Neues Brett: Lila (neu aufsteigen). Jetzt auf Zeit – wie schnell schaffst du alle fünf?</span>', 'ly-t-ent'); }
+    } });
   // ---------- Enten im Weiher (Park am Weiher): schwimmen gemütlich, Küken folgen der Mutter ----------
   const enten = [];
   { const weiss = new THREE.MeshLambertMaterial({ color: '#f4f1ea' }), braun = new THREE.MeshLambertMaterial({ color: '#8a6a4a' }), gruen = new THREE.MeshLambertMaterial({ color: '#2f7d4a' }), gelb = new THREE.MeshLambertMaterial({ color: '#ffd23f' }), orange = new THREE.MeshLambertMaterial({ color: '#f2994a' });
@@ -2476,8 +2491,11 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (w && w.art === 'lampe') { S.spindLampe = w.wert; sichern(); }
     if (w && w.art === 'anhaenger') { S.anhaenger = S.anhaenger === w.wert ? null : w.wert; sichern(); anhaengerDran(); ui.toast('<b>' + esc(w.name) + '</b><span>' + (S.anhaenger ? 'Hängt jetzt an dir.' : 'Bleibt im Spind.') + '</span>'); }
   }
+  let kickerAn = false;   // Tischkicker-Overlay offen: keine Zufallsbegegnungen
   const ia = createInteraktionen({ welt, steuerung, ui, zustand: () => S, sichern: () => sichern(), ton, blattWahl, spindAuf: () => spindAuf(), onKabel: (id) => tiere.kabelWeg(id),
     freiwurf: async (o) => ui.freiwurf(o), skate: () => skaten(), pausenFussball: () => pausenFussball(), elfmeter: async (o) => { if (fahrt) absteigen(); return elfmeter.spiel(o); }, elfmeterAktiv: () => elfmeter.aktiv(), volley: async (o) => { if (fahrt) absteigen(); return volley.spiel(o); }, volleyAktiv: () => volley.aktiv(),
+    botengang,
+    kicker: async () => { if (fahrt) absteigen(); ui.hinweis(null); input.setEnabled(false); kickerAn = true; try { return await kickerSpiel({ gegner: 'Kim', leicht: !!ui.leicht || (S.merke.kicker || 0) - (S.merke.kickerSiege || 0) >= 3, ton }); } finally { kickerAn = false; input.release('jump'); input.setEnabled(true); } },
     tt3d: welt.orte.tischtennis ? async (pa) => { ui.hinweis(null); const STAERKE = { ben: 1.4, jo: 1.6, ayla: 1.3, dario: 1.2, yusuf: 1.1 };
       // Leute direkt an der Platte gehen kurz zur Seite (sie stehen sonst im Spielfeld)
       const T = welt.orte.tischtennis, platz = statisten.filter((x) => !x.weg && Math.hypot(x.f.group.position.x - T.x, x.f.group.position.z - T.z) < 3.6);
@@ -2863,7 +2881,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     // Titelbild: langsame Kamerafahrt um die Schule (AAA: lebendiges Menü statt Standbild); bei „Weniger Bewegung“ fest
     if (!laeuft) { titelT += dt; const a = ui.wenigBewegung ? 0 : titelT * 0.02; camera.position.set(-36 * Math.cos(a) + 70 * Math.sin(a) * 0.5, 17 + Math.sin(titelT * 0.07) * 1.2 * (ui.wenigBewegung ? 0 : 1), 64 * Math.cos(a) + 30 * Math.sin(a)); camera.lookAt(0, 6, -10); return; }
     windZeit.value += dt; WOLKEN.value += dt; staubTick(dt); saisonTick(dt); gangRegel(dt);
-    zufall.tick(dt, laeuft && S && !imGespraech && !ui.ebeneArt() && !steuerung.brett && !volley.aktiv() && !elfmeter.aktiv() && !hs.aktiv && !foto && !steuerung.kameraAus && !steuerung.sitzt && !probe);
+    zufall.tick(dt, laeuft && S && !imGespraech && !ui.ebeneArt() && !steuerung.brett && !volley.aktiv() && !elfmeter.aktiv() && !kickerAn && !hs.aktiv && !foto && !steuerung.kameraAus && !steuerung.sitzt && !probe);
     steuerung.update(dt);
     if (kino) kinoKamera(dt);
     // Schärfentiefe im Gespräch: scharf auf die Person im Bild, Hintergrund weich (wie Kino-Szenen)
@@ -2883,6 +2901,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (elfmeter.aktiv() && imGespraech) elfmeter.beenden(); else if (laeuft && !ui.ebeneArt()) elfmeter.tick(dt);   // Gespräch beginnt: Runde endet; Menü offen: Pause
     verkehr.tick(dt, imGespraech || !laeuft);
     sticker.tick(dt, !!(laeuft && S && !imGespraech));
+    buchstaben.tick(dt, !!(laeuft && S && !imGespraech && !ui.ebeneArt()));
+    botengang.tick(dt, { sichtbar: !!(laeuft && S && !imGespraech && !ui.ebeneArt() && !volley.aktiv() && !elfmeter.aktiv() && !kickerAn), faehrt: !!fahrt });
     entenTick(dt, performance.now() / 1000);
     fahrerTick(dt, imGespraech || !laeuft);
     if (S && laeuft && !elfmeter.aktiv()) fussball.tick(dt);
@@ -3095,7 +3115,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     teleport: (ort, yaw) => { const o = typeof ort === 'string' ? welt.orte[ort] : ort; steuerung.teleport(o.x, o.z, yaw !== undefined ? yaw : o.yaw); },
     rede, los, audio, SITZ, input, get spruch() { return { wer: !!spruchWer }; }, get naechste() { return naechste && naechste.id; },
     get probe() { return probe; }, set mutTempo(v) { mutTempo = v; },
-    daten: { SCHRITTE, STATISTEN, LEUTE, BLAETTER, MATHE, LEKTIONEN, GESPRAECHE }, ia, aktion, get iaNah() { return iaNah && iaNah.tu; },
+    daten: { SCHRITTE, STATISTEN, LEUTE, BLAETTER, MATHE, LEKTIONEN, GESPRAECHE }, ia, aktion, botengang, buchstaben, get iaNah() { return iaNah && iaNah.tu; },
     hs, tt3d, zufall, fussball, volley, verkehr, elfmeter, sticker, fahrer, get fahrt() { return fahrt; }, get spieler() { return spieler; }, vorspann: (k) => vorspann(SCHRITTE.find((x) => (x.kap || 1) === k) || SCHRITTE[0]), gesteZu, handschlagMit, get statisten() { return statisten; }, musik,
   };
 

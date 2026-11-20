@@ -48,9 +48,10 @@ const ROBOTER = [
 ];
 
 export const KABEL = [['cdi', 14, -62.4], ['kantine', 18.6, -8.2], ['gang', -15.5, -15.8], ['innenhof', -17.2, -44.9], ['skate', -36.4, 6.4]];
-export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton, blattWahl, freiwurf, skate, pausenFussball = null, volley = null, volleyAktiv = () => false, elfmeter = null, elfmeterAktiv = () => false, tt3d = null, spindAuf = null, partner = () => null, freund = () => {}, onKabel = null }) {
+export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton, blattWahl, freiwurf, skate, pausenFussball = null, volley = null, volleyAktiv = () => false, elfmeter = null, elfmeterAktiv = () => false, tt3d = null, kicker = null, botengang = null, spindAuf = null, partner = () => null, freund = () => {}, onKabel = null }) {
   const tt = welt.orte.tischtennis;
   const liste = [];
+  let botenFrage = 0;   // Botengang: zweimal drücken = abbrechen
   const dazu = (x, z, r, text, tu, extra = {}) => liste.push({ x, z, r, text, tu, ...extra });
   // Sitzen: alle Stühle und Bänke
   for (const s of welt.sitze || []) dazu(s.x, s.z, s.bank ? 0.85 : 0.75, 'Hinsetzen', 'sitzen', { yaw: s.rot });
@@ -91,6 +92,7 @@ export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton
   if (elfmeter) dazu(-86, -2.6, 1.4, 'Elfmeterschießen (5 Schüsse)', 'elfmeter', { prio: 1 });
   if (pausenFussball) dazu(-73.5, -14, 1.6, 'Pausenfußball: Teams wählen', 'pausenfussball', { prio: 1 });   // Seitenlinie Stade   // Stade, Elfmeterpunkt vor dem Nordtor
   if (tt) dazu(tt.x - 1.3, tt.z, 1.2, 'Tischtennis spielen', 'tischtennis', { prio: 1 });
+  if (botengang) dazu(-8.4, 54.6, 1.4, 'Hilfe gesucht: Botengang holen', 'botengang', { prio: 1 });   // Brett neben der Bäckerei
   // Easter Eggs: Herrn Mesenbergs verlorene Ladekabel (5 Stück), Kritzeleien im WC, die Ente im Brunnen
   for (const [id, x, z] of KABEL) dazu(x, z, 1.0, 'Ein Ladekabel? Aufheben', 'kabel', { prio: 2, kabel: id });
   dazu(25.2, -26.4, 1.1, 'Kritzeleien an der Wand', 'kritzelei', { prio: 0, wo: 'wc' });
@@ -243,8 +245,10 @@ export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton
         return;
       }
       case 'kicker': {   // Jugendhaus: kurzes Duell – Spaß, kein Druck; das Ergebnis ist mal so, mal so
-        const ich = 3 + Math.floor(Math.random() * 4), er = 3 + Math.floor(Math.random() * 4);
-        s.merke.kicker = (s.merke.kicker || 0) + 1; ton('klack'); sichern();
+        const r = kicker ? await kicker() : { ich: 3 + Math.floor(Math.random() * 4), er: 3 + Math.floor(Math.random() * 4) };
+        if (!r || (!r.ich && !r.er)) return;   // gleich wieder aufgehört
+        const { ich, er } = r;
+        s.merke.kicker = (s.merke.kicker || 0) + 1; if (ich > er) s.merke.kickerSiege = (s.merke.kickerSiege || 0) + 1; ton('klack'); sichern();
         const SPRUCH = ich > er ? ['„Revanche! Morgen!“', '„Der Kicker klemmt links. Ehrlich!“'] : ich < er ? ['„Gut gespielt. Echt.“', '„Nächstes Mal tauschen wir die Seiten.“'] : ['„Unentschieden. Das Beste.“'];
         ui.toast('<b>⚽ Kicker ' + ich + ':' + er + '</b><span>' + SPRUCH[Math.floor(Math.random() * SPRUCH.length)] + '</span>');
         return;
@@ -256,6 +260,16 @@ export function createInteraktionen({ welt, steuerung, ui, zustand, sichern, ton
         return;
       }
       case 'tee': ui.toast('<b>🍵 Tee</b><span>' + ['Pfefferminz. Warm in den Händen.', 'Früchtetee. Riecht nach Sommer.', 'Kamille. Kim sagt: „Gute Wahl.“'][Math.floor(Math.random() * 3)] + '</span>'); return;
+      case 'botengang': {   // Brett „Hilfe gesucht“ neben der Bäckerei (botengang.js)
+        if (botengang.aktiv()) {
+          if (performance.now() - botenFrage < 6000) { botengang.abbrechen(); return; }
+          botenFrage = performance.now(); ui.toast('<b>📦 Du bist schon unterwegs</b><span>Noch einmal drücken = Auftrag abbrechen.</span>'); return;
+        }
+        const b = botengang.start(); if (!b) return;
+        const m = s.merke.boten || { n: 0 };
+        ui.toast('<b>📌 Hilfe gesucht: ' + b.ding + '</b><span>Abholen: ' + b.von.ort + ' → bringen: ' + b.nach.ort + '. Folge dem gelben Pfeil!' + (m.n ? '' : ' Mit Brett (R) oder Trottinette (T) geht es schneller.') + '</span>');
+        return;
+      }
       case 'kiosk': {   // Park am Weiher: im Herbst und Frühling Eis, im Winter heiße Schokolade – einmal je Abschnitt
         const kap = Math.min(10, (s.kapitelFertig || 0) + 1), winter = kap >= 3 && kap <= 6;
         if (s.merke.kioskSchritt === s.schritt) { ui.toast('<b>' + (winter ? '☕' : '🍦') + ' Schon gehabt</b><span>„Morgen wieder!“, ruft die Frau im Kiosk.</span>'); return; }

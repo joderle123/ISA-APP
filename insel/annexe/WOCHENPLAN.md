@@ -6,8 +6,8 @@ keine Geschlechts-Annahmen über die Spielfigur, nichts Sexuelles, keine Familie
 
 | Tag | Thema | Stand |
 |---|---|---|
-| 1 | Leben im Dorf: Tagesablauf, Verkehr (Tempo 30, hält vor Menschen), Geräusche, Figuren mit Routinen | Verkehr + Klingel vorbereitet (20.11.) |
-| 2 | Freizeit: Skatepark, freie Fahrt, Rennen, Fußball, Volleyball, Turniere mit sozialer Seite (Teams wählen, verlieren, fair bleiben) | Fahrt, Rennen, Kicker, Skatepark, Fußball, Volleyball fertig (20.11.) – offen: Teams wählen, Turniere |
+| 1 | Leben im Dorf: Tagesablauf, Verkehr (Tempo 30, hält vor Menschen), Geräusche, Figuren mit Routinen | Verkehr, Klingel, fahrende Jugendliche, Enten, Park, Markt, Baustelle, Jugendhaus fertig (20.11.) |
+| 2 | Freizeit: Skatepark, freie Fahrt, Rennen, Fußball, Volleyball, Turniere mit sozialer Seite (Teams wählen, verlieren, fair bleiben) | Fahrt, Rennen, Rampen, Skatepark, Fußball, Volleyball, Elfmeter, Teams wählen, Tischkicker-Minispiel, Botengänge, S-K-A-T-E fertig (20.11.) – offen: Turniere |
 | 3 | Freundschaften: Bogen je Freund:in über das Jahr (Streit, Eifersucht, Versöhnung), Klassenchat mit Dynamik (ausgeschlossen werden, Screenshots) | offen |
 | 4 | Folgen und Journal: Entscheidungen wirken Wochen später (Vertrauen, wer grüßt), Journal zeigt Muster („Du sagst oft Ja, wenn Ältere fragen“) | offen |
 | 5 | Lehrer- und Klassen-Modus: Besprechungskarten, Beamer-Modus (Klasse stimmt ab), Auswertung ohne Personendaten | offen |
@@ -15,7 +15,8 @@ keine Geschlechts-Annahmen über die Spielfigur, nichts Sexuelles, keine Familie
 | 7 | Kritische Durchsicht (Sicherheit, Ton, Logik), Durchlauf K1–10, Begleitheft | offen |
 
 ## Packs (alle legal, frei; geladen nach scratchpad/packs, nur CC0 eingebaut)
-- Eingebaut: Kenney Mini Skate 2.0 (skate.glb), Fahrradklingel (CC0).
+- Eingebaut: Kenney Mini Skate 2.0 (skate.glb), Fahrradklingel (CC0), vom Nutzer geladen: Furniture Kit, City Kit Roads, Retro Urban, Fantasy Town 2.0, Impact Sounds (alle CC0), Mixamo-Bewegungen (5).
+- Geprüft, noch nicht genutzt: Building Kit (Wandteile mit Textur – die Häuser sind schon gebaut, wenig Mehrwert).
 - Bereit: Soccer Goal, Bench Soccer, Playground (glTF), Kenney Car Kit 3.1, City Kit Suburban 2.0, Mini Shop 2.1,
   Quaternius Universal Animation Library (Retargeting nötig), Kenney Interface/Jingle-Sounds, sfx_100_v2, Vögel, Musik „Happy Adventure“.
 - Nicht genutzt: poly.pizza (Cloudflare-Bot-Schutz – nicht umgangen), kenney.nl (blockt Nicht-Browser – nicht umgangen).

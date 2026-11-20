@@ -669,6 +669,10 @@ export function baueWelt({ material, materialInnen, materialLaub }) {
   for (let i = 0; i < 8; i++) box(-6 + i * 2, -4 + i * 2, 2.8, 2.95, 55.8, 57, i % 2 ? C.rot : C.zettel[4]);   // Markise
   box(-5, 2.2, 0.5, 0.9, 57.0, 57.6, C.holzHell); for (let i = 0; i < 6; i++) box(-4.6 + i * 1.1, -4.0 + i * 1.1, 0.9, 1.05, 57.1, 57.5, i % 2 ? C.gelb : C.holz);   // Auslage
   { const b = schild('Boulangerie des Collines', 6.2, 0.7, { bg: '#2f4f45', rand: '#e9c46a', schrift: 'bold 120px Georgia, serif' }); b.position.set(2, 3.5, 56.78); b.rotation.y = Math.PI; schilder.push(b); }
+  // Brett „Hilfe gesucht“ (Botengänge, botengang.js) neben der Bäckerei
+  box(-9.25, -9.13, 0, 2.15, 55.56, 55.68, C.holz, { stoss: true }); box(-7.67, -7.55, 0, 2.15, 55.56, 55.68, C.holz, { stoss: true });   // westlich der Bäckerei (vor x 12 parkt ein Auto)
+  box(-9.38, -7.42, 0.95, 2.08, 55.62, 55.72, C.holzHell);
+  { const h = schild('HILFE GESUCHT\nBotengänge im Dorf', 1.8, 0.98, { bg: '#fff6dc', fg: '#2b3a55', rand: '#c0392b', schrift: 'bold 64px system-ui' }); h.position.set(-8.4, 1.52, 55.6); h.rotation.y = Math.PI; schilder.push(h); }
   { const z = schild('Kirsch-Teilchen 1,50 €', 1.6, 0.5, { bg: '#ffffff', fg: '#c0392b', rand: '#c0392b', schrift: 'bold 80px system-ui' }); z.position.set(6.6, 1.7, 56.9); z.rotation.y = Math.PI; schilder.push(z); }
 
   // ---- Stammgäste-Orte: Fundkiste (Jeff), Zeitungsständer (Zoé), Lieferkisten (Paulo) ----
