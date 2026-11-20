@@ -85,6 +85,26 @@ export function baueFrisur(look = {}, mat) {
   } else if (kopf === 'krone') {   // Krone: Reif mit fünf Zacken
     g.add(form(new THREE.CylinderGeometry(K.r * 1.12, K.r * 1.12, 0.04, 14, 1, true), tuch, mat, [0, K.y + 0.1, K.z]));
     for (let i = 0; i < 5; i++) { const a = i / 5 * Math.PI * 2; g.add(form(new THREE.ConeGeometry(0.02, 0.05, 4), tuch, mat, [Math.sin(a) * K.r * 1.1, K.y + 0.14, K.z + Math.cos(a) * K.r * 1.1])); }
+  } else if (kopf === 'ohren') {   // Haarreif mit Katzenohren (außen Farbe, innen rosa)
+    g.add(form(new THREE.TorusGeometry(K.r * 1.17, 0.009, 6, 18, Math.PI), tuch, mat, [0, K.y - 0.004, K.z + 0.012]));
+    for (const sx of [-1, 1]) {
+      g.add(form(new THREE.ConeGeometry(0.046, 0.085, 4), tuch, mat, [sx * 0.07, K.y + 0.13, K.z + 0.012], [0, Math.PI / 4, sx * -0.38]));
+      g.add(form(new THREE.ConeGeometry(0.022, 0.048, 4), '#ffb3c7', mat, [sx * 0.066, K.y + 0.12, K.z + 0.026], [0, Math.PI / 4, sx * -0.38]));
+    }
+  } else if (kopf === 'dino') {   // Dino-Kapuze: weite Schale (Gesicht frei), Stacheln auf der Mitte, zwei Kulleraugen oben
+    g.userData.deckt = true;
+    g.add(form(new THREE.SphereGeometry(K.r * 1.32, 14, 9, Math.PI / 2 + 0.72, Math.PI * 2 - 1.44, 0, 2.15), tuch, mat, [0, K.y + 0.004, K.z - 0.008]));
+    for (let i = 0; i < 6; i++) { const t = -0.35 + i * 0.36, R = K.r * 1.32, gr = 1 - Math.abs(i - 1.5) * 0.12;
+      g.add(form(new THREE.ConeGeometry(0.026 * gr, 0.06 * gr, 4), '#f2b134', mat, [0, K.y + 0.004 + Math.cos(t) * R + 0.02 * Math.cos(t), K.z - 0.008 - Math.sin(t) * R - 0.02 * Math.sin(t)], [-t, 0, 0])); }
+    for (const sx of [-1, 1]) {
+      g.add(form(new THREE.SphereGeometry(0.024, 10, 8), '#ffffff', mat, [sx * 0.048, K.y + 0.118, K.z + 0.088]));
+      g.add(form(new THREE.SphereGeometry(0.012, 8, 6), '#1b1b1f', mat, [sx * 0.048, K.y + 0.122, K.z + 0.108]));
+    }
+  } else if (kopf === 'einhorn') {   // Haarreif mit goldenem, gedrehtem Horn und zwei kleinen Ohren
+    g.add(form(new THREE.TorusGeometry(K.r * 1.17, 0.009, 6, 18, Math.PI), tuch, mat, [0, K.y - 0.004, K.z + 0.012]));
+    const horn = form(new THREE.ConeGeometry(0.03, 0.17, 8, 4), '#ffd166', mat, [0, K.y + 0.185, K.z + 0.06], [0.35, 0, 0]); g.add(horn);
+    for (let i = 0; i < 4; i++) g.add(form(new THREE.TorusGeometry(0.026 - i * 0.005, 0.004, 4, 10), '#f2b134', mat, [0, K.y + 0.135 + i * 0.03, K.z + 0.042 + i * 0.0105], [Math.PI / 2 + 0.35, 0, 0]));
+    for (const sx of [-1, 1]) g.add(form(new THREE.ConeGeometry(0.022, 0.045, 4), tuch, mat, [sx * 0.08, K.y + 0.11, K.z - 0.005], [0, Math.PI / 4, sx * -0.6]));
   } else if (kopf === 'stirnband' || kopf === 'bandana') {
     g.add(form(new THREE.CylinderGeometry(K.r * 1.19, K.r * 1.19, kopf === 'bandana' ? 0.05 : 0.034, 12, 1, true), tuch, mat, [0, K.y + 0.05, K.z]));
   }
