@@ -785,6 +785,7 @@ export function sitRueckblick(m) {
     if (id === 'dach' && m.dachGeholt) t += ' Dann Fernand geholt.';
     if (id === 'dach' && m.pitGefragt) t += ' Später nachgefragt.';
     if (id === 'witz' && m.pauloDesculpa) t += ' Dann Paulo um Entschuldigung gebeten.';
+    if (m['sepas_' + id]) t += ' Mit Herrn Kuedes darüber geredet.';
     if (id === 'witz' && m.leaEinsicht) t += ' Und Lea geschrieben.';
     if (id === 'roller' && m.rollerSorry) t += ' Und Rosa um Entschuldigung gebeten.';
     if (id === 'roller' && m.mikaKnie) t += ' Später nach Mikas Knie gefragt.';
@@ -1452,4 +1453,28 @@ export async function witz(a) {
   await a.sag('paulo', 'Extra-Wort der Woche: „Respeito“. Respekt.');
   await a.sag('e', '(Auch wenn es Erwachsene trifft: Das darfst du Herrn Kuedes sagen.)');
   if (a.m().sit_witz !== 'mitgelacht') a.nachricht('Lea', 'War echt nicht cool von uns. Ich sag Paulo sorry.');
+}
+
+// SePAS: Herr Kuedes hört zu, wenn man über eine erlebte Situation reden will – ein ehrlicher Satz, kein Vortrag
+export const SEPAS_NACH = {
+  roller: 'Nein zu Älteren ist schwer. Das darf man üben.',
+  wald: 'Gruppendruck ist stark. Du darfst jedes Mal neu entscheiden.',
+  laden: 'Ein Fehler macht dich nicht aus. Was danach kommt, schon.',
+  wette: 'Dein Körper sagt dir viel. Hör auf ihn.',
+  graffiti: 'Gesehen werden wollen ist okay. Es gibt gute Wege dafür.',
+  kiste: 'Die Spiele sind so gebaut. Das ist nicht deine Schuld.',
+  witz: 'Ein Witz, über den einer nicht lacht, ist keiner.',
+  halle: 'Zuschauen ist nie ganz neutral. Hilfe holen ist Mut.',
+  fundkiste: 'Angst vor Rache ist normal. Du musst sie nicht allein tragen.',
+  vape: 'Abhängig wird man schneller, als man denkt. Hilfe gibt es.',
+  link: 'Reinfallen kann jeder. Wichtig ist, schnell Hilfe zu holen.',
+  dach: 'Hilfe holen ist klüger als Mut. Fast immer.',
+  video: 'Hinter jedem Video steht ein Mensch. Auch hinter Lehrerinnen.',
+  spiel: '„Erzähl es keinem“ ist immer ein Grund, es zu erzählen.',
+  zaun: 'Hinter „keinen Bock“ steckt oft etwas anderes. Gut, dass du hinschaust.',
+  fest: 'Kinder und Alkohol: Da holt man immer Hilfe. Immer.',
+};
+// Worüber man mit Herrn Kuedes noch reden kann (erlebt, noch nicht besprochen) – höchstens zwei zur Auswahl
+export function sepasThemen(m) {
+  return Object.keys(SZENEN).filter((id) => m['sit_' + id] && !m['sepas_' + id] && SEPAS_NACH[id]).slice(0, 2);
 }

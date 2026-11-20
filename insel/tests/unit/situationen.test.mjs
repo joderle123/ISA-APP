@@ -171,3 +171,12 @@ test('Der Witz: Akzent wird erzählt, nicht vorgespielt; Paulos Wörter nur, wen
   assert.ok(mit.opts.flat().some((t) => /Desculpa/.test(t)));
   assert.equal(mit.mErg.pauloDesculpa, true);
 });
+
+test('SePAS: Herr Kuedes hat zu jeder Situation einen kurzen Satz, Themen nur nach dem Erleben', async () => {
+  const { SEPAS_NACH, sepasThemen } = await import('../../src/lycee/situationen.js');
+  for (const id of Object.keys(SZENEN)) { assert.ok(SEPAS_NACH[id], 'kein Satz zu ' + id); assert.ok(SEPAS_NACH[id].split(/\s+/).length <= 12, id); }
+  assert.deepEqual(sepasThemen({}), []);
+  assert.deepEqual(sepasThemen({ sit_wald: 'nein', sit_laden: 'bezahlt', sit_halle: 'sami' }).length, 2);
+  assert.deepEqual(sepasThemen({ sit_wald: 'nein', sepas_wald: true }), []);
+  assert.match(sitRueckblick({ sit_wald: 'nein', sepas_wald: true })[0].w, /Herrn Kuedes darüber geredet/);
+});

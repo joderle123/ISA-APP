@@ -16,7 +16,7 @@ export const LEUTE4 = {
 };
 
 // Mme Laurent steht immer im CDI an der Ausleihe (Lernstation), wenn die Geschichte sie nicht woanders braucht
-export const IMMER = { laurent: [-4.2, -28.3, 0] };
+export const IMMER = { laurent: [-4.2, -28.3, 0], kaya: [-11.0, -9.4, 2.9] };   // Herr Kuedes: in der SePAS, wenn die Geschichte ihn nicht woanders braucht
 
 export const ORTE4 = {
   hinterHalle: { x: 60.4, z: -14 },

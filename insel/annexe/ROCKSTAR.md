@@ -43,3 +43,4 @@ Nichts abhaken. Erst Qualität, dann größer. Keine Fächer-Module, noch keine 
 - 20.11. früh (9): SePAS mit Charakter: Gefühle-Rad, Hilfe-Tafel (116 111, BEE SECURE, 112, „Tür offen“), Sorgen-Briefkasten, Taschentücher und Wasser. Handy zeigt höchstens drei offene Antworten.
 - 20.11. früh (10): Sorgen-Briefkasten in der SePAS benutzbar (Thema wählen, anonym oder mit Namen; mit Namen antwortet Herr Kuedes aufs Handy). Menüs und Gefühls-Check in fester Reihenfolge (ui.waehle opts.fest).
 - 20.11. ca. 05:10 UTC: Schlussprüfung – Durchlauf K1–10 ✓ (0 Konsolenfehler), Interaktionstest 44/44, Regeln 0 Fehler, 231 Unit-Tests. ZIP gebaut und verschickt.
+- 20.11. morgens: Herr Kuedes steht in der SePAS, wenn die Geschichte ihn nicht braucht (IMMER). Gespräch: über erlebte Situationen reden (je ein Satz, im Journal), „Mir geht’s nicht gut“ (Atem-Übung), Hallo. Wahlen mit z.fest in fester Reihenfolge.

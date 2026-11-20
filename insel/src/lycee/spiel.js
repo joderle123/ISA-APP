@@ -19,7 +19,7 @@ import { baueRequisiten, stelle } from './requisiten.js';
 import { baueNatur } from './natur.js';
 import { STAMM, stammSzene, stammPlan } from './stammgaeste.js';
 import { ORTE_UMLAND, DORF_DEKO, tagTextur, wandbild } from './dorf.js';
-import { SIT_LEUTE, SZENEN, sitSichtbar, sitOffen, SIT_ZONEN, lichtung, laden, graffiti, halle, wette, kiste, vape, link, video, fest, spiel, dach, fundkiste, CHAT_NAMEN, zurueckbringen, sitSaetze, sitRueckblick, sitAntwortenOffen, zaun, roller, witz } from './situationen.js';
+import { SIT_LEUTE, SZENEN, sitSichtbar, sitOffen, SIT_ZONEN, lichtung, laden, graffiti, halle, wette, kiste, vape, link, video, fest, spiel, dach, fundkiste, CHAT_NAMEN, zurueckbringen, sitSaetze, sitRueckblick, sitAntwortenOffen, SEPAS_NACH, sepasThemen, zaun, roller, witz } from './situationen.js';
 const SIT_FN = { wald: lichtung, laden, graffiti, halle, wette, kiste, vape, link, video, fest, spiel, dach, fundkiste, zaun, roller, witz };
 import { createHund, HUND_ERSTMAL, HUND_MOMENTE } from './hund.js';
 import { ladePerson, namensschild, SITZ } from './figuren.js';
@@ -865,7 +865,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         // Reihenfolge mischen, wenn eine Antwort eine Stärke zeigt – sonst wäre „die erste ist die gute“ zu leicht
         const ord = opt.map((_, k) => k);
         if (opt.some((w) => w.staerke) && !z.fest) for (let k = ord.length - 1; k > 0; k--) { const r = Math.floor(Math.random() * (k + 1)); [ord[k], ord[r]] = [ord[r], ord[k]]; }
-        const i = await ui.waehle(ord.map((k) => ersetze(opt[k].t)));
+        const i = await ui.waehle(ord.map((k) => ersetze(opt[k].t)), '', { fest: !!z.fest });
         vib(10);
         const w = opt[ord[i]];
         if (w.staerke) staerke(w.staerke);
@@ -904,8 +904,23 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     }
   }
 
+  // Gespräch in der SePAS (Herr Kuedes): über Erlebtes reden, „Mir geht’s nicht gut“, Hallo – nie ein Verhör
+  function sepasGespraech() {
+    const m = S.merke || {}, themen = risikoAn() ? sepasThemen(m) : [];
+    const wahl = themen.map((id) => ({ t: 'Über „' + SZENEN[id].titel[1] + '“ reden.', merke: 'sepas_' + id, dann: [
+      ['kaya', 'Erzähl. Ich hör zu.'], ['erzaehler', 'Du erzählst. Herr Kuedes unterbricht dich nicht.'],
+      ['kaya', SEPAS_NACH[id]], ['kaya', 'Danke, dass du davon erzählst. Das braucht Mut.']] }));
+    wahl.push({ t: '„Mir geht’s gerade nicht gut.“', merke: 'sepasSchlecht', dann: [
+      ['kaya', 'Danke, dass du es sagst. Komm, wir atmen erst mal.'], { tu: 'kurzRaus' },
+      ['kaya', 'Besser? Ein bisschen reicht schon.'], ['kaya', 'Du kannst jederzeit wiederkommen. Oder 116 111 anrufen, anonym.']] });
+    wahl.push({ t: '„Nur Hallo sagen.“', dann: [['kaya', 'Hallo! Schön, dass du reinschaust. Tür ist offen.']] });
+    return [['kaya', m.sepasBesuch ? 'Ah, {name}. Setz dich, wenn du magst.' : 'Hallo {name}. Das hier ist die SePAS. Hier darf man reden.'], { tu: 'sepasBesuch' }, { wahl, fest: true }];
+  }
+
   // ---------- Besondere Momente ----------
   const TUN = {
+    kurzRaus: async () => { if (ui.atem) await ui.atem(); else await ui.kurzRaus(); },   // in der SePAS: direkt die Atem-Übung (Kreis)
+    sepasBesuch: () => { S.merke.sepasBesuch = (S.merke.sepasBesuch || 0) + 1; sichern(); },
     ...tunN1({ get S() { return S; }, ui }),
     ...tunN2({ get S() { return S; }, ui }),
     ...tunN3({ get S() { return S; }, ui }),
@@ -1670,6 +1685,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         return;
       }
     }
+    // SePAS: Herr Kuedes außerhalb der Geschichte – zuhören, kurz durchatmen, Tür offen
+    if (id === 'kaya' && !(st && st.leute && st.leute.kaya)) { await gespraech(sepasGespraech()); return; }
     // Jetons einlösen: bei Kenan, Lina, Ayla, Chiara – einmal je Abschnitt angeboten, nur wenn es reicht
     const ang = ANGEBOTE[id];
     if (ang && S.jetons && S.merke['laden_' + id] !== String(S.schritt)) {
