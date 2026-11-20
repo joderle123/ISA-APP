@@ -8,9 +8,9 @@
 // a.nachricht(von, text) (kommt beim nächsten Schritt aufs Handy) · a.teleport(ort) · a.ton(art)
 
 export const SIT_LEUTE = {
-  dex: { szene: 'wald', wer: 'dex', bleibt: true, name: 'Dex (5ème)', farbe: '#e85d75', aussehen: { modell: 'menschen', stil: 'Casual2', haut: '#e0b48c', haar: '#1b1410', oben: '#2b2b33', unten: '#3a3f4b', schuhe: '#f2f2f2', hoehe: 1.78, kopf: 'cap', kopfFarbe: '#e85d75' }, steht: [-60.8, -101.75, 0, 'sitzt'], ort: 'wald' },
-  sina: { szene: 'wald', wer: 'sina', bleibt: true, name: 'Sina (5ème)', farbe: '#9b7bc8', aussehen: { modell: 'frauen', stil: 'Casual', haut: '#c68e64', haar: '#2b1d14', oben: '#9b7bc8', unten: '#2d3748', schuhe: '#2b2b2b', hoehe: 1.66 }, steht: [-57.25, -98.8, -Math.PI / 2, 'sitzt'], ort: 'wald' },
-  mo: { szene: 'wald', wer: 'mo', bleibt: true, name: 'Mo (5ème)', farbe: '#2fb8a8', aussehen: { modell: 'menschen', stil: 'Casual', haut: '#a0694a', haar: '#1b1410', oben: '#2fb8a8', unten: '#2d3748', schuhe: '#e9b949', hoehe: 1.74 }, steht: [-58.2, -102.8, -0.7, 'handy'], ort: 'wald' },
+  dex: { szene: 'wald', wer: 'dex', bleibt: true, dauer: true, name: 'Dex (5ème)', farbe: '#e85d75', aussehen: { modell: 'menschen', stil: 'Casual2', haut: '#e0b48c', haar: '#1b1410', oben: '#2b2b33', unten: '#3a3f4b', schuhe: '#f2f2f2', hoehe: 1.78, kopf: 'cap', kopfFarbe: '#e85d75' }, steht: [-60.8, -101.75, 0, 'sitzt'], ort: 'wald' },
+  sina: { szene: 'wald', wer: 'sina', bleibt: true, dauer: true, name: 'Sina (5ème)', farbe: '#9b7bc8', aussehen: { modell: 'frauen', stil: 'Casual', haut: '#c68e64', haar: '#2b1d14', oben: '#9b7bc8', unten: '#2d3748', schuhe: '#2b2b2b', hoehe: 1.66 }, steht: [-57.25, -98.8, -Math.PI / 2, 'sitzt'], ort: 'wald' },
+  mo: { szene: 'wald', wer: 'mo', bleibt: true, dauer: true, name: 'Mo (5ème)', farbe: '#2fb8a8', aussehen: { modell: 'menschen', stil: 'Casual', haut: '#a0694a', haar: '#1b1410', oben: '#2fb8a8', unten: '#2d3748', schuhe: '#e9b949', hoehe: 1.74 }, steht: [-58.2, -102.8, -0.7, 'handy'], ort: 'wald' },
   mika: { szene: 'wald', wer: 'mika', name: 'Mika (6ème)', farbe: '#e9b949', aussehen: { modell: 'menschen', stil: 'Casual', haut: '#f1c7a2', haar: '#c9a15a', oben: '#e9b949', unten: '#3a3f4b', schuhe: '#4f88c8', hoehe: 1.58 }, steht: [-62.75, -99.6, Math.PI / 2, 'sitzt'], ort: 'wald' },
   moLaden: { szene: 'laden', wer: 'mo', name: 'Mo (5ème)', farbe: '#2fb8a8', aussehen: { modell: 'menschen', stil: 'Casual', haut: '#a0694a', haar: '#1b1410', oben: '#2fb8a8', unten: '#2d3748', schuhe: '#e9b949', hoehe: 1.74 }, steht: [39.4, 90.4, 0.5, 'handy'], ort: 'laden' },
   lisette: { immer: true, name: 'Tante Lisette · Épicerie', farbe: '#2f8a5a', aussehen: { modell: 'frauen', stil: 'Casual', haut: '#f0c9a8', haar: '#9a9a9a', oben: '#2f8a5a', unten: '#3a3f4b', schuhe: '#3a2a1c', hoehe: 1.62 }, steht: [36.9, 94.5, Math.PI / 2, 'redet'],  ort: 'laden' },
@@ -18,12 +18,12 @@ export const SIT_LEUTE = {
   dexWand: { szene: 'graffiti', wer: 'dex', name: 'Dex (5ème)', farbe: '#e85d75', aussehen: { modell: 'menschen', stil: 'Casual2', haut: '#e0b48c', haar: '#1b1410', oben: '#2b2b33', unten: '#3a3f4b', schuhe: '#f2f2f2', hoehe: 1.78, kopf: 'cap', kopfFarbe: '#e85d75' }, steht: [5.6, 83.25, Math.PI, 'redet'] },
   moWand: { szene: 'graffiti', wer: 'mo', name: 'Mo (5ème)', farbe: '#2fb8a8', aussehen: { modell: 'menschen', stil: 'Casual', haut: '#a0694a', haar: '#1b1410', oben: '#2fb8a8', unten: '#2d3748', schuhe: '#e9b949', hoehe: 1.74 }, steht: [3.2, 84.7, 2.6, 'handy'] },
   // Hinter der Turnhalle (Streit mit Publikum, ab Kapitel 7)
-  jules: { szene: 'halle', wer: 'jules', name: 'Jules (6ème)', farbe: '#d9693f', aussehen: { modell: 'menschen', stil: 'Casual2', haut: '#f1c7a2', haar: '#7a4a2a', oben: '#d9693f', unten: '#2d3748', schuhe: '#2b2b2b', hoehe: 1.7 }, steht: [60.9, -25.7, 1.2, 'redet'] },
-  sami: { szene: 'halle', wer: 'sami', name: 'Sami (6ème)', farbe: '#4f88c8', aussehen: { modell: 'menschen', stil: 'Casual', haut: '#c68e64', haar: '#1b1410', oben: '#4f88c8', unten: '#3a3f4b', schuhe: '#f2f2f2', hoehe: 1.52 }, steht: [62.1, -25.3, -1.9, ''] },
-  z1: { szene: 'halle', stumm: true, name: 'Jemand', farbe: '#5b6472', aussehen: { modell: 'frauen', stil: 'Casual', haut: '#f0c9a8', haar: '#c9a15a', oben: '#e9b949', unten: '#2d3748', schuhe: '#ffffff', hoehe: 1.6 }, steht: [60.2, -23.8, 2.6, 'handy'] },
-  z2: { szene: 'halle', stumm: true, name: 'Jemand', farbe: '#5b6472', aussehen: { modell: 'menschen', stil: 'Casual', haut: '#a0694a', haar: '#1b1410', oben: '#3fa66b', unten: '#3a3f4b', schuhe: '#2b2b2b', hoehe: 1.72 }, steht: [63.3, -24.0, -2.4, 'handy'] },
-  z3: { szene: 'halle', stumm: true, name: 'Jemand', farbe: '#5b6472', aussehen: { modell: 'menschen', stil: 'Casual2', haut: '#e0b48c', haar: '#2b1d14', oben: '#9b7bc8', unten: '#2d3748', schuhe: '#e85d75', hoehe: 1.66 }, steht: [59.6, -26.9, 1.0, 'handy'] },
-  z4: { szene: 'halle', stumm: true, name: 'Jemand', farbe: '#5b6472', aussehen: { modell: 'frauen', stil: 'Casual', haut: '#8d5a3b', haar: '#1b1410', oben: '#e85d75', unten: '#3a3f4b', schuhe: '#f2f2f2', hoehe: 1.62 }, steht: [63.0, -27.2, -0.8, 'handy'] },
+  jules: { szene: 'halle', wer: 'jules', name: 'Jules (6ème)', farbe: '#d9693f', aussehen: { modell: 'menschen', stil: 'Casual2', haut: '#f1c7a2', haar: '#7a4a2a', oben: '#d9693f', unten: '#2d3748', schuhe: '#2b2b2b', hoehe: 1.7 }, steht: [59.8, -25.7, 1.2, 'redet'] },
+  sami: { szene: 'halle', wer: 'sami', name: 'Sami (6ème)', farbe: '#4f88c8', aussehen: { modell: 'menschen', stil: 'Casual', haut: '#c68e64', haar: '#1b1410', oben: '#4f88c8', unten: '#3a3f4b', schuhe: '#f2f2f2', hoehe: 1.52 }, steht: [61.0, -25.4, -1.9, ''] },
+  z1: { szene: 'halle', stumm: true, name: 'Jemand', farbe: '#5b6472', aussehen: { modell: 'frauen', stil: 'Casual', haut: '#f0c9a8', haar: '#c9a15a', oben: '#e9b949', unten: '#2d3748', schuhe: '#ffffff', hoehe: 1.6 }, steht: [59.2, -23.6, 2.6, 'handy'] },
+  z2: { szene: 'halle', stumm: true, name: 'Jemand', farbe: '#5b6472', aussehen: { modell: 'menschen', stil: 'Casual', haut: '#a0694a', haar: '#1b1410', oben: '#3fa66b', unten: '#3a3f4b', schuhe: '#2b2b2b', hoehe: 1.72 }, steht: [61.3, -22.9, -2.8, 'handy'] },
+  z3: { szene: 'halle', stumm: true, name: 'Jemand', farbe: '#5b6472', aussehen: { modell: 'menschen', stil: 'Casual2', haut: '#e0b48c', haar: '#2b1d14', oben: '#9b7bc8', unten: '#2d3748', schuhe: '#e85d75', hoehe: 1.66 }, steht: [58.8, -27.0, 1.0, 'handy'] },
+  z4: { szene: 'halle', stumm: true, name: 'Jemand', farbe: '#5b6472', aussehen: { modell: 'frauen', stil: 'Casual', haut: '#8d5a3b', haar: '#1b1410', oben: '#e85d75', unten: '#3a3f4b', schuhe: '#f2f2f2', hoehe: 1.62 }, steht: [61.9, -27.3, -0.8, 'handy'] },
   // Spielplatz (Energy-Drink-Wette, ab Kapitel 5)
   lenny: { szene: 'wette', wer: 'lenny', name: 'Lenny (6ème)', farbe: '#3fa66b', aussehen: { modell: 'menschen', stil: 'Casual', haut: '#f1c7a2', haar: '#2b1d14', oben: '#3fa66b', unten: '#2d3748', schuhe: '#ffffff', hoehe: 1.68, kopf: 'cap', kopfFarbe: '#2b2b33' }, steht: [60.9, 79.3, -2.3, 'redet'] },
   pit: { szene: 'wette', wer: 'pit', name: 'Pit (6ème)', farbe: '#e9b949', aussehen: { modell: 'menschen', stil: 'Casual', haut: '#f0c9a8', haar: '#d9b36a', oben: '#e9b949', unten: '#3a3f4b', schuhe: '#4f88c8', hoehe: 1.5 }, steht: [58.6, 80.4, Math.PI, 'sitzt'] },
@@ -32,7 +32,7 @@ export const SIT_LEUTE = {
   ines: { szene: 'vape', wer: 'ines', name: 'Ines (6ème)', farbe: '#d9693f', aussehen: { modell: 'frauen', stil: 'Casual', haut: '#e0b48c', haar: '#2b1d14', oben: '#d9693f', unten: '#2d3748', schuhe: '#ffffff', hoehe: 1.58 }, steht: [22.2, -28.0, Math.PI / 2, 'handy'] },
   kai: { szene: 'vape', wer: 'kai', name: 'Kai (6ème)', farbe: '#4f88c8', aussehen: { modell: 'menschen', stil: 'Casual2', haut: '#f1c7a2', haar: '#5a3a24', oben: '#4f88c8', unten: '#3a3f4b', schuhe: '#2b2b2b', hoehe: 1.64 }, steht: [23.5, -28.2, -Math.PI / 2, 'redet'] },
   // CDI (Gratis-Diamanten, ab Kapitel 8; beginnt, wenn man Noé anspricht)
-  noe: { szene: 'link', wer: 'noe', bleibt: true, name: 'Noé (6ème)', farbe: '#3fa66b', aussehen: { modell: 'menschen', stil: 'Casual', haut: '#8d5a3b', haar: '#1b1410', oben: '#3fa66b', unten: '#2d3748', schuhe: '#e9b949', hoehe: 1.55 }, steht: [-7.6, -20.6, Math.PI, 'handy'] },
+  noe: { szene: 'link', wer: 'noe', bleibt: true, name: 'Noé (6ème)', farbe: '#3fa66b', aussehen: { modell: 'menschen', stil: 'Casual', haut: '#8d5a3b', haar: '#1b1410', oben: '#3fa66b', unten: '#2d3748', schuhe: '#e9b949', hoehe: 1.55 }, steht: [-7.6, -20.6, 0.4, 'handy'] },
   // Gang vor Saal 1.04 (Video über Mme Lenning, ab Kapitel 9; beginnt, wenn man Yanis anspricht)
   yanis: { szene: 'video', wer: 'yanis', name: 'Yanis (6ème)', farbe: '#c0392b', aussehen: { modell: 'menschen', stil: 'Casual2', haut: '#c68e64', haar: '#1b1410', oben: '#c0392b', unten: '#2d3748', schuhe: '#ffffff', hoehe: 1.66, kopf: 'cap', kopfFarbe: '#ffffff' }, steht: [-15.0, -15.5, Math.PI / 2, 'handy'] },
   z5: { szene: 'video', stumm: true, name: 'Jemand', farbe: '#5b6472', aussehen: { modell: 'frauen', stil: 'Casual', haut: '#f0c9a8', haar: '#7a4a2a', oben: '#2fb8a8', unten: '#3a3f4b', schuhe: '#2b2b2b', hoehe: 1.58 }, steht: [-13.9, -15.1, -2.0, 'handy'] },
@@ -40,21 +40,21 @@ export const SIT_LEUTE = {
   // Sommerfest, Raucherecke hinter der Turnhalle (Alkohol, Kapitel 10) – alte Bekannte
   moFest: { szene: 'fest', wer: 'mo', name: 'Mo (5ème)', farbe: '#2fb8a8', aussehen: { modell: 'menschen', stil: 'Casual', haut: '#a0694a', haar: '#1b1410', oben: '#2fb8a8', unten: '#2d3748', schuhe: '#e9b949', hoehe: 1.74 }, steht: [61.6, -13.4, -2.0, 'redet'] },
   mikaFest: { szene: 'fest', wer: 'mika', name: 'Mika (6ème)', farbe: '#e9b949', aussehen: { modell: 'menschen', stil: 'Casual', haut: '#f1c7a2', haar: '#c9a15a', oben: '#e9b949', unten: '#3a3f4b', schuhe: '#4f88c8', hoehe: 1.6 }, steht: [59.9, -12.9, 2.2, 'handy'] },
-  rafa: { szene: 'kiste', wer: 'rafa', bleibt: true, name: 'Rafa (6ème)', farbe: '#9b7bc8', aussehen: { modell: 'menschen', stil: 'Casual2', haut: '#c68e64', haar: '#1b1410', oben: '#9b7bc8', unten: '#2d3748', schuhe: '#e9b949', hoehe: 1.56 }, steht: [1.6, -4.8, Math.PI, 'handy'] },
+  rafa: { szene: 'kiste', wer: 'rafa', bleibt: true, name: 'Rafa (6ème)', farbe: '#9b7bc8', aussehen: { modell: 'menschen', stil: 'Casual2', haut: '#c68e64', haar: '#1b1410', oben: '#9b7bc8', unten: '#2d3748', schuhe: '#e9b949', hoehe: 1.56 }, steht: [1.6, -4.8, 0.3, 'handy'] },
 };
 
 // Szenen: ab welchem Kapitel, wo sie beginnen (Zone) – oder nur, wenn man die Person anspricht
 export const SZENEN = {
-  wald: { ab: 4, start: { x: -60, z: -93, yaw: Math.PI }, zone: { x: -60, z: -99, r: 6.5 }, teaser: ['Dex (Gruppe)', 'Wer chillt nach der Schule an der Lichtung? 🌲 Waldweg hinter der Werkstatt'], titel: ['🌲', 'Die Lichtung', 'Was du mitmachst, entscheidest du. Auch beim nächsten Mal.'] },
-  laden: { ab: 5, start: { x: 42, z: 89.5, yaw: 0 }, zone: { x: 41.6, z: 90.6, r: 2.6 }, teaser: ['Mo (Gruppe)', 'Mutprobe für Neue 😏 Épicerie, Rue du Moulin'], titel: ['🛒', 'Die Mutprobe', 'Dazugehören darf nichts kosten, was du nicht geben willst.'] },
-  wette: { ab: 5, start: { x: 61.5, z: 80.8, yaw: -2.27 }, zone: { x: 59.6, z: 79.2, r: 3.4 }, teaser: ['Lenny (Gruppe)', 'Wette am Spielplatz ⚡ Wer traut sich?'], titel: ['🥤', 'Drei Dosen', 'Gewinnen, bis es dir schlecht geht, ist kein Gewinnen.'] },
-  graffiti: { ab: 6, start: { x: 4.7, z: 86.8, yaw: Math.PI }, zone: { x: 4.7, z: 84.6, r: 3.2 }, teaser: ['Dex (Gruppe)', 'Kunst im Bushäuschen, Rue du Moulin 🎨 Kommt vorbei'], titel: ['🎨', 'Die Wand', 'Jede Wand hat schon eine Geschichte. Manchmal eine von jemandem, den du kennst.'] },
-  kiste: { ab: 6, start: { x: 1.6, z: -3.4, yaw: Math.PI }, teaser: ['Rafa', 'Bist du in der Halle? Ich muss dir was zeigen 🎁'], titel: ['🎁', 'Fast gewonnen', '„Fast“ ist gebaut. Damit du weiterdrückst.'] },
-  vape: { ab: 8, start: { x: 24.5, z: -23.5, yaw: -2.7 }, zone: { x: 23, z: -26.8, r: 2.8 }, teaser: ['Kai', 'WC, große Pause. Ich zeig dir was 😮‍💨'], titel: ['💨', 'Die Wolke', 'Süß riechen heißt nicht harmlos sein.'] },
-  link: { ab: 8, start: { x: -7.6, z: -19.2, yaw: Math.PI }, teaser: [['Unbekannt', '🎁 GRATIS 5000 Diamanten! Nur heute! Einloggen: gratis-diamanten.win'], ['Noé', 'Hast du die Diamanten-Nachricht auch?? Bin im CDI 💎']], titel: ['🔗', 'Gratis', 'Wer schickt es? Wo führt es hin? Wer hat was davon?'] },
-  video: { ab: 9, start: { x: -12.6, z: -15.6, yaw: -Math.PI / 2 }, teaser: ['Yanis (Gruppe)', 'HAHA habt ihr das Video von der Lenning gesehen?? 😂 Gang, vor 1.04'], titel: ['🎬', 'Das Video', 'Lachen über jemanden ist leicht. Aufhören ist schwerer.'] },
-  fest: { ab: 10, start: { x: 60.6, z: -9.5, yaw: Math.PI }, schritt: 'k10_fest', zone: { x: 60.6, z: -13.3, r: 3.2 }, teaser: ['Mo (Gruppe)', 'Sommerfest-Afterparty hinter der Turnhalle 🍾 Psst'], titel: ['🍾', 'Die Wasserflasche', 'Das Fest ist drinnen. Und du gehörst dazu.'] },
-  halle: { ab: 7, start: { x: 61.5, z: -20.5, yaw: Math.PI }, zone: { x: 61.5, z: -25.5, r: 5 }, teaser: ['Unbekannt', 'HINTER DER TURNHALLE. JETZT. 👀'], titel: ['📱', 'Der Kreis', 'Wer filmt, baut die Bühne. Wer hilft, baut sie ab.'] },
+  wald: { ab: 4, bis: 6, start: { x: -60, z: -93, yaw: Math.PI }, zone: { x: -60, z: -99, r: 6.5 }, teaser: ['Dex (Gruppe)', 'Wer chillt nach der Schule an der Lichtung? 🌲 Waldweg hinter der Werkstatt'], titel: ['🌲', 'Die Lichtung', 'Was du mitmachst, entscheidest du. Auch beim nächsten Mal.'] },
+  laden: { ab: 5, bis: 6, start: { x: 42, z: 89.5, yaw: 0 }, zone: { x: 41.6, z: 90.6, r: 2.6 }, teaser: ['Mo (Gruppe)', 'Mutprobe für Neue 😏 Épicerie, Rue du Moulin'], titel: ['🛒', 'Die Mutprobe', 'Dazugehören darf nichts kosten, was du nicht geben willst.'] },
+  wette: { ab: 5, bis: 6, start: { x: 61.5, z: 80.8, yaw: -2.27 }, zone: { x: 59.6, z: 79.2, r: 3.4 }, teaser: ['Lenny (Gruppe)', 'Wette am Spielplatz ⚡ Wer traut sich?'], titel: ['🥤', 'Drei Dosen', 'Gewinnen, bis es dir schlecht geht, ist kein Gewinnen.'] },
+  graffiti: { ab: 6, bis: 7, start: { x: 4.7, z: 86.8, yaw: Math.PI }, zone: { x: 4.7, z: 84.6, r: 3.2 }, teaser: ['Dex (Gruppe)', 'Kunst im Bushäuschen, Rue du Moulin 🎨 Kommt vorbei'], titel: ['🎨', 'Die Wand', 'Jede Wand hat schon eine Geschichte. Manchmal eine von jemandem, den du kennst.'] },
+  kiste: { ab: 6, bis: 8, start: { x: 2.8, z: -2.8, yaw: -2.6 }, teaser: ['Rafa', 'Bist du in der Halle? Ich muss dir was zeigen 🎁'], titel: ['🎁', 'Fast gewonnen', '„Fast“ ist gebaut. Damit du weiterdrückst.'] },
+  vape: { ab: 8, bis: 9, start: { x: 24.5, z: -23.5, yaw: -2.7 }, zone: { x: 23, z: -26.8, r: 2.8 }, teaser: ['Kai', 'WC, große Pause. Ich zeig dir was 😮‍💨'], titel: ['💨', 'Die Wolke', 'Süß riechen heißt nicht harmlos sein.'] },
+  link: { ab: 8, bis: 9, start: { x: -6.6, z: -19.0, yaw: -2.58 }, teaser: [['Unbekannt', '🎁 GRATIS 5000 Diamanten! Nur heute! Einloggen: gratis-diamanten.win'], ['Noé', 'Hast du die Diamanten-Nachricht auch?? Bin im CDI 💎']], titel: ['🔗', 'Gratis', 'Wer schickt es? Wo führt es hin? Wer hat was davon?'] },
+  video: { ab: 9, bis: 10, start: { x: -12.4, z: -16.6, yaw: -1.13 }, teaser: ['Yanis (Gruppe)', 'HAHA habt ihr das Video von der Lenning gesehen?? 😂 Gang, vor 1.04'], titel: ['🎬', 'Das Video', 'Lachen über jemanden ist leicht. Aufhören ist schwerer.'] },
+  fest: { ab: 10, bis: 10, start: { x: 60.6, z: -9.5, yaw: Math.PI }, schritt: 'k10_fest', zone: { x: 60.6, z: -13.3, r: 3.2 }, teaser: ['Mo (Gruppe)', 'Sommerfest-Afterparty hinter der Turnhalle 🍾 Psst'], titel: ['🍾', 'Die Wasserflasche', 'Das Fest ist drinnen. Und du gehörst dazu.'] },
+  halle: { ab: 7, bis: 7, start: { x: 60.4, z: -20.4, yaw: Math.PI }, zone: { x: 60.4, z: -25.4, r: 5 }, teaser: ['Unbekannt', 'HINTER DER TURNHALLE. JETZT. 👀'], titel: ['📱', 'Der Kreis', 'Wer filmt, baut die Bühne. Wer hilft, baut sie ab.'] },
 };
 
 // Wer ist wann da? (Kapitel, Schalter in den Einstellungen, was schon passiert ist)
@@ -66,12 +66,18 @@ export function sitSichtbar(id, kap, m, risiko, schritt, schrittId) {
   if (sz.schritt && sz.schritt !== schrittId) return false;   // nur an diesem Tag (z. B. Sommerfest)
   const weg = m.sitWeg || {};   // gerade passiert: Wer dabei war, ist für den Rest des Schritts weg
   for (const k in weg) if (weg[k] === schritt && (k === P.szene || Object.values(SIT_LEUTE).some((q) => q.szene === k && q.wer && q.wer === P.wer))) return false;
+  if (P.dauer) return true;                                   // Dex, Sina, Mo hängen ab Kapitel 4 immer an der Lichtung ab
   if (m['sit_' + P.szene]) return !!P.bleibt;
-  return true;
+  return kap <= (sz.bis || 10);                               // Zeitfenster vorbei: Die Situation ist vorüber, wie im echten Leben
+}
+// Ist die Situation gerade möglich? (Kapitel-Fenster, Tag, noch nicht erlebt)
+export function sitOffen(id, kap, m, schrittId) {
+  const sz = SZENEN[id];
+  return !!sz && !m['sit_' + id] && kap >= sz.ab && kap <= (sz.bis || 10) && (!sz.schritt || sz.schritt === schrittId);
 }
 
 // Auslöser: kommt man in die Nähe, beginnt die Situation (einmal); weggehen geht immer
-export const SIT_ZONEN = Object.entries(SZENEN).filter(([, s]) => s.zone).map(([id, s]) => ({ id, ...s.zone, ab: s.ab, schritt: s.schritt, offen: (m) => !m['sit_' + id] }));
+export const SIT_ZONEN = Object.entries(SZENEN).filter(([, s]) => s.zone).map(([id, s]) => ({ id, ...s.zone, ab: s.ab, bis: s.bis || 10, schritt: s.schritt, offen: (m) => !m['sit_' + id] }));
 
 // ================= Die Lichtung (Kiffen) =================
 export async function lichtung(a) {
@@ -198,6 +204,7 @@ export async function laden(a) {
   }
   if (w === 0) { await a.sag('mo', '(zuckt mit den Schultern) Dann halt nicht. Dann bist du nicht drin.'); await a.sag('e', '(Drin. In was eigentlich? In einer Gruppe, die dich testet?)'); }
   if (w === 1) { await a.sag('mo', 'Hab ich schon. Letzte Woche. War easy.'); await a.sag('e', '(Stimmt das? Oder ist das nur ein Satz, der Druck macht?)'); }
+  a.ton('pling');
   await a.sag('e', 'Du gehst rein. Über der Tür bimmelt eine Glocke.');
   a.teleport('epicerieInnen');
   await a.sag('lisette', 'Moien! Die Gummibärchen sind heute im Angebot.');
@@ -255,6 +262,7 @@ export async function laden(a) {
     return 'erwischt';
   }
   a.teleport('epicerie');
+  a.ton('pling');
   await a.sag('e', 'Niemand sagt was. Die Glocke bimmelt. Du bist draußen.');
   await a.sag('mo', 'Krass! Hast du’s? Das Video geht in die Gruppe.');
   await a.sag('e', 'Die Gummibärchen wiegen fast nichts. Und trotzdem ziemlich viel.');

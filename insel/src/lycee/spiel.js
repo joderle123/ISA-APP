@@ -19,7 +19,7 @@ import { baueRequisiten, stelle } from './requisiten.js';
 import { baueNatur } from './natur.js';
 import { STAMM, stammSzene, stammPlan } from './stammgaeste.js';
 import { ORTE_UMLAND, DORF_DEKO, tagTextur, wandbild } from './dorf.js';
-import { SIT_LEUTE, SZENEN, sitSichtbar, SIT_ZONEN, lichtung, laden, graffiti, halle, wette, kiste, vape, link, video, fest, zurueckbringen, sitSaetze, sitRueckblick } from './situationen.js';
+import { SIT_LEUTE, SZENEN, sitSichtbar, sitOffen, SIT_ZONEN, lichtung, laden, graffiti, halle, wette, kiste, vape, link, video, fest, zurueckbringen, sitSaetze, sitRueckblick } from './situationen.js';
 const SIT_FN = { wald: lichtung, laden, graffiti, halle, wette, kiste, vape, link, video, fest };
 import { createHund, HUND_ERSTMAL, HUND_MOMENTE } from './hund.js';
 import { ladePerson, namensschild, SITZ } from './figuren.js';
@@ -431,7 +431,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     // Neue Situation verfügbar: einmal eine Nachricht aufs Handy, die neugierig macht (wie ein Gruppenchat)
     if (S && risikoAn()) { const kap = (SCHRITTE[S.schritt] || {}).kap || 1;
       const sid = (SCHRITTE[S.schritt] || {}).id;
-      for (const [id, sz] of Object.entries(SZENEN)) if (sz.teaser && kap >= sz.ab && (!sz.schritt || sz.schritt === sid) && !S.merke['sit_' + id] && !S.merke['sitTeaser_' + id]) { S.merke['sitTeaser_' + id] = true; (S.merke.nachrichten = S.merke.nachrichten || []).push(...(Array.isArray(sz.teaser[0]) ? sz.teaser : [sz.teaser])); break; } }
+      for (const [id, sz] of Object.entries(SZENEN)) if (sz.teaser && sitOffen(id, kap, S.merke, sid) && !S.merke['sitTeaser_' + id]) { S.merke['sitTeaser_' + id] = true; (S.merke.nachrichten = S.merke.nachrichten || []).push(...(Array.isArray(sz.teaser[0]) ? sz.teaser : [sz.teaser])); break; } }
     // Nachrichten aus Situationen (Gruppe, Sina, Mika …) kommen beim nächsten Schritt aufs Handy
     if (S && S.merke && ui.handyNeu) ui.handyNeu(S.merke.handyNeu || 0);
     const nq = S && S.merke && S.merke.nachrichten;
@@ -452,9 +452,18 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       x.weg = !v; x.f.group.visible = v; if (x.f.group.children[0]) x.f.group.children[0].visible = v;
       x.h.x = v ? x.p.x : 1e5; x.h.z = v ? x.p.z : 1e5;
     }
+    // Süße Wolke im WC, solange Ines und Kai dort stehen (Vape-Situation)
+    if (!DORF_DEKO.wolke) {
+      const gr = new THREE.Group(), mat = new THREE.MeshBasicMaterial({ color: '#f4eef8', transparent: true, opacity: 0.16, depthWrite: false });
+      for (const [x, y, z, r] of [[22.6, 1.75, -27.9, 0.45], [23.1, 1.95, -28.3, 0.55], [22.2, 2.2, -27.4, 0.5], [23.6, 2.35, -27.6, 0.6], [22.9, 2.6, -28.6, 0.7]]) {
+        const k = new THREE.Mesh(new THREE.SphereGeometry(r, 12, 8), mat); k.position.set(x, y, z); gr.add(k);
+      }
+      gr.visible = false; scene.add(gr); DORF_DEKO.wolke = gr;
+    }
     // Spuren der Situationen in der Welt: Dosen am Spielplatz, Dex’ Kürzel am Bushäuschen
     const m = S.merke || {}, an = (id) => statisten.some((q) => q.d.sitPerson === id && !q.weg);
     if (DORF_DEKO.dosen) DORF_DEKO.dosen.visible = an('lenny');
+    if (DORF_DEKO.wolke) DORF_DEKO.wolke.visible = an('kai');
     if (DORF_DEKO.tagDex) DORF_DEKO.tagDex.visible = an('dexWand') || (['gegangen', 'verstanden', 'reden', 'kiesser', 'papier'].includes(m.sit_graffiti) && m.sitKap_graffiti === kap);
     // Das Wandbild zeigt, was aus Noors Trommel geworden ist
     const wb = DORF_DEKO.wandbild, var_ = m.graffitiGesagt || ((m.sit_graffiti === 'reden' || m.graffitiGeholfen) && (m.sitKap_graffiti || 0) < kap) ? 'neu'
@@ -1770,6 +1779,9 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     const kapK = (st && st.kap) || 1;
     const stammMarken = STAMM.map((q) => { const neu = !S.merke['stb_' + q.id + '_' + (Object.keys(q.besuch).map(Number).filter((k) => k <= kapK).sort((a, b) => b - a)[0])]; const wo = stammPlan(q, uhrJetzt).steht; return { x: wo[0], z: wo[1], t: (neu ? '💬 ' : '') + (S.merke['stk_' + q.id] ? q.name.split(' ')[0] : '?') }; });
     stammMarken.push({ x: hund.pos.x, z: hund.pos.z, t: '🐕' + (S.merke.hundFreund ? ' Bonbon' : '') });
+    // Situationen, von denen eine Nachricht kam und die noch offen sind: Markierung wie ein Auftrag (ohne zu verraten, was passiert)
+    if (risikoAn()) { const sid = (SCHRITTE[S.schritt] || {}).id;
+      for (const [id, sz] of Object.entries(SZENEN)) { const o = sz.zone || sz.start; if (o && S.merke['sitTeaser_' + id] && sitOffen(id, kapK, S.merke, sid)) stammMarken.push({ x: o.x, z: o.z, t: sz.titel[0] + ' ?' }); } }
     ui.karte({ marken: Object.entries(MARKE).filter(([id]) => welt.orte[id]).map(([id, t]) => ({ x: welt.orte[id].x, z: welt.orte[id].z, t })).concat(stammMarken), raeume: welt.raeume.filter((r) => r.x1 - r.x0 < 120), ich: { x: p.x, z: p.z, yaw: steuerung.yaw }, ziele: zielPunkte().map((z) => ({ x: z.x, z: z.z })), titel: st && !S.fertig ? st.titel : 'Freie Zeit' });
   };
   ui.onWenigBewegung = (v) => { steuerung.wenigBewegung = !!v; }; ui.onWenigBewegung(ui.wenigBewegung);
@@ -2189,12 +2201,12 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (!S || !laeuft || imGespraech || probe || steuerung.brett || gesperrt() || !risikoAn()) return;
     const kap = (SCHRITTE[S.schritt] || {}).kap || 1;
     const sid = (SCHRITTE[S.schritt] || {}).id;
-    for (const z of SIT_ZONEN) if (kap >= z.ab && (!z.schritt || z.schritt === sid) && z.offen(S.merke || {}) && Math.hypot(p.x - z.x, p.z - z.z) < z.r) { sitStart(z.id); return; }
+    for (const z of SIT_ZONEN) if (sitOffen(z.id, kap, S.merke || {}, sid) && Math.hypot(p.x - z.x, p.z - z.z) < z.r) { sitStart(z.id); return; }
   }
   async function sitRede(x) {
     const id = x.d.sitPerson, kap = (SCHRITTE[S.schritt] || {}).kap || 1, gp = x.f.group.position;
     const sz = SIT_LEUTE[id].szene;
-    if (sz && SZENEN[sz] && !S.merke['sit_' + sz] && kap >= SZENEN[sz].ab && (!SZENEN[sz].schritt || SZENEN[sz].schritt === (SCHRITTE[S.schritt] || {}).id) && risikoAn()) return sitStart(sz);
+    if (sz && sitOffen(sz, kap, S.merke, (SCHRITTE[S.schritt] || {}).id) && risikoAn()) return sitStart(sz);
     await sitGespraech(async () => {
       const a = sitApi();
       if (id === 'lisette' && S.merke.sit_laden === 'geklaut' && !S.merke.zurueckgebracht) {

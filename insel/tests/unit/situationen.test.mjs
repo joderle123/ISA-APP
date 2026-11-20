@@ -3,7 +3,7 @@
 // Aufruf: node --test tests/unit/situationen.test.mjs
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { SIT_LEUTE, SZENEN, SIT_ZONEN, sitSichtbar, sitRueckblick, sitSaetze, lichtung, laden, graffiti, halle, wette, kiste, vape, link, video, fest, zurueckbringen } from '../../src/lycee/situationen.js';
+import { SIT_LEUTE, SZENEN, SIT_ZONEN, sitSichtbar, sitOffen, sitRueckblick, sitSaetze, lichtung, laden, graffiti, halle, wette, kiste, vape, link, video, fest, zurueckbringen } from '../../src/lycee/situationen.js';
 
 const FN = { wald: lichtung, laden, graffiti, halle, wette, kiste, vape, link, video, fest };
 
@@ -86,4 +86,17 @@ test('Stammgäste behalten ihre alten Reaktionen neben den neuen (kein doppelter
   assert.ok(keys('tiago', { sit_kiste: 'erklaert' }).includes('stx_tiago_kiste'));
   assert.ok(keys('fernand', { huetchen: 2 }).includes('stx_fernand_h2'));
   assert.ok(keys('fernand', { sit_wald: 'nein' }).includes('stx_fernand_wald'));
+});
+
+test('Zeitfenster: verpasste Situationen sind vorbei, die Clique an der Lichtung bleibt', () => {
+  assert.equal(sitSichtbar('jules', 8, {}, true, 0), false, 'Streit nur in Kapitel 7');
+  assert.equal(sitOffen('halle', 8, {}), false);
+  assert.equal(sitOffen('halle', 7, {}), true);
+  assert.equal(sitOffen('wald', 5, {}), true);
+  assert.equal(sitOffen('wald', 5, { sit_wald: 'nein' }), false);
+  assert.equal(sitSichtbar('mika', 7, {}, true, 0), false, 'Mika ist nach dem Fenster nicht mehr an der Lichtung');
+  assert.equal(sitSichtbar('dex', 9, {}, true, 0), true, 'Dex hängt weiter ab');
+  assert.equal(sitSichtbar('rafa', 9, {}, true, 0), false, 'Rafa ohne Szene nach dem Fenster weg');
+  assert.equal(sitSichtbar('rafa', 9, { sit_kiste: 'gefragt' }, true, 0), true, 'nach der Szene bleibt Rafa');
+  for (const [id, sz] of Object.entries(SZENEN)) assert.ok(sz.bis >= sz.ab && sz.bis <= 10, id);
 });
