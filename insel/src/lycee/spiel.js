@@ -485,6 +485,18 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       const wm = new THREE.Mesh(new THREE.PlaneGeometry(4.0, 2.0), new THREE.MeshLambertMaterial({ map: tex }));
       wm.position.set(43.87, 1.75, -54.0); wm.rotation.y = -Math.PI / 2; wm.visible = false; scene.add(wm); DORF_DEKO.dexWand = wm;
     }
+    // Schild an den Umkleiden (Turnhalle), nachdem man Romy geholfen hat – Fernand hat es gemacht
+    if (!DORF_DEKO.umkleide) {
+      const cv = document.createElement('canvas'); cv.width = 512; cv.height = 320; const g = cv.getContext('2d');
+      g.fillStyle = '#ffffff'; g.fillRect(0, 0, 512, 320); g.strokeStyle = '#c0392b'; g.lineWidth = 16; g.strokeRect(8, 8, 496, 304);
+      g.font = 'bold 110px system-ui'; g.textAlign = 'center'; g.fillText('📵', 256, 128);
+      g.fillStyle = '#2b3a55'; g.font = 'bold 46px system-ui'; g.fillText('Handys bleiben', 256, 210); g.fillText('draußen.', 256, 262);
+      g.fillStyle = '#8a5a3a'; g.font = 'italic 24px Georgia, serif'; g.fillText('– Herr Mesenberg & Fernand', 256, 300);
+      const tex = new THREE.CanvasTexture(cv); tex.colorSpace = THREE.SRGBColorSpace;
+      const gr = new THREE.Group(), mat = new THREE.MeshBasicMaterial({ map: tex, toneMapped: false });
+      for (const zz of [-24.0, -10.8]) { const k = new THREE.Mesh(new THREE.PlaneGeometry(0.62, 0.39), mat); k.position.set(34.3, 1.6, zz + 0.98); k.rotation.y = Math.PI / 2; gr.add(k); }
+      gr.visible = false; scene.add(gr); DORF_DEKO.umkleide = gr;
+    }
     // Sachas E-Roller in der Gasse (Roller-Situation)
     if (!DORF_DEKO.roller) {
       const gr = new THREE.Group(), dunkel = new THREE.MeshLambertMaterial({ color: '#2b2b33' }), lila = new THREE.MeshLambertMaterial({ color: '#7a5af5' }), grau = new THREE.MeshLambertMaterial({ color: '#9aa3ad' });
@@ -508,6 +520,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (DORF_DEKO.dosen) DORF_DEKO.dosen.visible = an('lenny');
     if (DORF_DEKO.wolke) DORF_DEKO.wolke.visible = an('kai');
     if (DORF_DEKO.roller) DORF_DEKO.roller.visible = an('sacha');
+    if (DORF_DEKO.umkleide) DORF_DEKO.umkleide.visible = !!m.romyGeholfen;
     if (DORF_DEKO.dexWand) DORF_DEKO.dexWand.visible = m.sit_graffiti === 'kiesser' && kap > (m.sitKap_graffiti || 99);
     if (DORF_DEKO.tagDex) DORF_DEKO.tagDex.visible = an('dexWand') || (['gegangen', 'verstanden', 'weiter', 'reden', 'kiesser', 'papier'].includes(m.sit_graffiti) && m.sitKap_graffiti === kap);
     // Das Wandbild zeigt, was aus Noors Trommel geworden ist
