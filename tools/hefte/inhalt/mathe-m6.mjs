@@ -21,8 +21,8 @@ const EXTRAS = [
     bild: ['finn:froh:stehen', 'lehrer:froh:erklaeren'],
     erklBild: zahlenstrahl(-5, 5, { teile: 10, zahlen: [-5, -3, 0, 2, 5], marken: [{ w: -3, t: 'Start −3' }, { w: 2, t: '+5 → +2' }] }),
     hoeren: {
-      was: 'Beim Tauchkurs', wo: 'Schwimmbad · Tauchkurs', titel: 'Fünf Meter nach oben',
-      situation: 'Finn macht einen Tauchkurs. Der Tauchlehrer erklärt, wie tief sie tauchen.',
+      was: 'Beim Tauchkurs', wo: 'Am Stausee · Tauchkurs', titel: 'Fünf Meter nach oben',
+      situation: 'Finn macht einen Tauchkurs am Stausee. Der Tauchlehrer erklärt, wie tief sie tauchen.',
       bild: ['lehrer:froh:erklaeren', 'finn:froh:stehen'], sprecher: { Tauchlehrer: 'm1', Finn: 'm3' },
       text: [
         ['Tauchlehrer', 'Die Wasseroberfläche ist null. Wir tauchen zuerst auf minus 4 Meter.'],
@@ -75,7 +75,7 @@ const EXTRAS = [
         ['Sami', 'Drei Karten zu 8 Euro und ein Popcorn zu 5 Euro. Ich rechne 5 plus 3 mal 8 … von links: 8 mal 8 sind 64 Euro?!'],
         ['Kassiererin', 'Nein, nein! Punkt vor Strich: Zuerst mal, dann plus.'],
         ['Sami', 'Ah: 3 mal 8 sind 24, plus 5 sind 29 Euro.'],
-        ['Kassiererin', 'Genau, 29 Euro. Und wenn du zwei Popcorn und zwei Getränke willst, schreib Klammern.'],
+        ['Kassiererin', 'Genau, 29 Euro. Und wenn du noch zwei Popcorn und zwei Getränke dazunimmst, schreib Klammern.'],
         ['Sami', 'Ein Popcorn kostet 5 Euro und ein Getränk 3 Euro. Also 2 mal, Klammer auf, 5 plus 3, Klammer zu. Erst die Klammer: 8, dann mal 2: 16 Euro.'],
         ['Kassiererin', 'Perfekt. Zusammen 45 Euro.'],
       ],
@@ -172,7 +172,7 @@ const EXTRAS = [
         ['Nele', 'Auf der Liste steht jetzt: 2a plus 3b plus 5a.'],
         ['Finn', 'Das kann man zusammenfassen: Äpfel zu Äpfeln. 2a plus 5a sind 7a.'],
         ['Nele', 'Und die Becher bleiben 3b. Man kann a und b nicht zusammenzählen!'],
-        ['Finn', 'Und die Mensa bringt eine Kiste Äpfel zurück, also minus a. Dann haben wir 6a plus 3b.'],
+        ['Finn', 'Und die Mensa hat noch eine Kiste Äpfel übrig. Wir kaufen eine Kiste weniger, also minus a. Dann haben wir 6a plus 3b.'],
       ],
       vor: [{ art: 'mc', auftrag: '2a + 5a = ? Kreuze an.', stufe: 1, fragen: [{ f: '', o: ['7a', '7a²', '10a'], r: 0 }] }],
       beim: [{ art: 'luecken', auftrag: 'Hör zu und fasse zusammen.', stufe: 2, saetze: ['2a + 3b + 5a = [7a + 3b]', '7a + 3b − a = [6a + 3b]'] }],

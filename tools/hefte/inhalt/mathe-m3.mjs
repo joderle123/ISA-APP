@@ -50,7 +50,7 @@ const EXTRAS = [
       bild: ['verkaeuferin:froh:erklaeren', 'jana:froh:stehen-zeigen'], sprecher: { Kassiererin: 'w1', Jana: 'w2' },
       text: [
         ['Kassiererin', 'Hallo! Eine Karte für Jugendliche kostet 4,50 Euro.'],
-        ['Jana', 'Wir sind sechs. 4,50 mal 6 … zuerst ohne Komma: 45 mal 6 sind 270. Dann eine Stelle nach dem Komma: 27,0. Also 27 Euro.'],
+        ['Jana', 'Wir sind sechs. 4,50 mal 6 … zuerst ohne Komma: 450 mal 6 sind 2.700. Dann zwei Stellen nach dem Komma: 27,00. Also 27 Euro.'],
         ['Kassiererin', 'Super gerechnet. Möchtet ihr auch Schwimmnudeln? Eine kostet 1,25 Euro.'],
         ['Jana', 'Drei Stück, bitte. 1,25 mal 3 … 125 mal 3 sind 375, mit zwei Stellen nach dem Komma: 3,75 Euro.'],
         ['Kassiererin', 'Genau. Zusammen sind das 30,75 Euro.'],

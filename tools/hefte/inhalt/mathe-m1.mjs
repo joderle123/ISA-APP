@@ -377,7 +377,7 @@ const EXTRAS = [
       text: [
         ['Frau Sommer', 'Für das neue Logo wollen wir nur symmetrische Buchstaben. Welche passen?'],
         ['Sami', 'Das A ist symmetrisch. Die Spiegelachse geht senkrecht durch die Mitte.'],
-        ['Lea', 'Das M auch! Und das T und das H.'],
+        ['Lea', 'Das M auch! Und das T und das H. Das H kann man sogar senkrecht und waagerecht falten.'],
         ['Sami', 'Und das E? Wenn man es senkrecht faltet, passt es nicht.'],
         ['Frau Sommer', 'Stimmt. Aber falte es waagerecht! Dann passen die beiden Hälften genau aufeinander.'],
         ['Lea', 'Und das F? Senkrecht nicht, waagerecht auch nicht. Das F ist nicht symmetrisch.'],

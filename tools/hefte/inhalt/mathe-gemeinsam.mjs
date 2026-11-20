@@ -73,6 +73,13 @@ const exitPosten = (x) => { const m = /^(.*)\(([^()]*)\)\s*$/.exec(x); return m 
  *   fr (Lernziel französisch), bild, hoeren, erklaeren (Schreibauftrag), erklBild (HTML unter der Erklärung),
  *   lesenAufgaben, ueben (zusätzliche Aufgaben nach Basis/Kern/Plus), check (zusätzliche Punkte)
  */
+// Merksatz: sind alle Sätze schon nummeriert („1) …“), als nummerierte Liste ohne doppelte Zeichen
+const merksatzKasten = (punkte) => {
+  const n = punkte.findIndex((p) => !/^\d+[.)]\s/.test(p)), k = n < 0 ? punkte.length : n
+  if (k < 2 || punkte.slice(k).some((p) => /^\d+[.)]\s/.test(p))) return { titel: 'Merksatz', punkte }
+  return { titel: 'Merksatz', nummern: true, punkte: punkte.slice(0, k).map((p) => p.replace(/^\d+[.)]\s+/, '')), text: punkte.slice(k).join(' ') || undefined }
+}
+
 export function matheLektionen(nr, extras) {
   const m = PROGRAMM.module[nr - 1]
   const L = []
@@ -94,7 +101,7 @@ export function matheLektionen(nr, extras) {
       hoeren: x.hoeren,
       regel: {
         reihen: [
-          [{ titel: 'Merksatz', punkte: saetze(E(l.merksatz)) }, { titel: 'So gehst du vor', nummern: true, punkte: l.vorgehen.map((v) => E(v).replace(/^\d+\.\s*/, '')) }],
+          [merksatzKasten(saetze(E(l.merksatz))), { titel: 'So gehst du vor', nummern: true, punkte: l.vorgehen.map((v) => E(v).replace(/^\d+\.\s*/, '')) }],
           l.musterl.slice(0, 2).map((mu, j) => ({ art: j === 0 ? 'tipp' : 'beispiel', titel: mu.titel ? `Musterlösung: ${E(mu.titel)}` : 'Musterlösung', vor: `**Aufgabe:** ${E(mu.a)}`, nummern: true, punkte: mu.schritte.map(E), text: `**Ergebnis:** ${E(mu.erg)}` })),
         ],
       },
