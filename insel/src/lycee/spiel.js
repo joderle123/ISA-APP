@@ -1828,7 +1828,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     let tagVorher = null;
     for (const [von, t, tag, ich] of log) { if (tag && tag !== tagVorher) { liste.push({ system: true, text: tag }); tagVorher = tag; } liste.push({ wer: ich ? 'Du → ' + von : von, text: t, ich: !!ich }); }
     S.merke.handyNeu = 0; ui.handyNeu && ui.handyNeu(0); sichern();
-    const offen = risikoAn() ? sitAntwortenOffen(S.merke) : [];
+    const offen = risikoAn() ? sitAntwortenOffen(S.merke).slice(0, 3) : [];   // höchstens drei auf einmal, damit der Verlauf sichtbar bleibt
     const r = await ui.handy(liste, { titel: '📱 Nachrichten', sofort: true, antworten: offen.map((x) => ({ an: x.an, text: x.text })) });
     const A = r && r.antwort != null ? offen[r.antwort] : null;
     if (!A) return;
