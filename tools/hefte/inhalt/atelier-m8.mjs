@@ -52,22 +52,22 @@ export const LEKTIONEN = [
     },
     hoeren: {
       was: 'Ein Gespräch', wo: 'Waschküche', titel: 'Rosa statt weiß',
-      situation: 'Lio hat zum ersten Mal selbst Wäsche gewaschen. Das Ergebnis ist eine Überraschung. Chloe hilft.',
-      bild: ['lio:enttaeuscht:stehen', 'chloe:froh:stehen-zeigen'], sprecher: { Lio: 'm3', Chloe: 'w3' },
+      situation: 'Lio hat zum ersten Mal selbst Wäsche gewaschen. Das Ergebnis ist eine Überraschung. Chloé hilft.',
+      bild: ['lio:enttaeuscht:stehen', 'chloe:froh:stehen-zeigen'], sprecher: { Lio: 'm3', Chloé: 'w3' },
       text: [
-        ['Lio', 'Chloe, schau dir das an. Meine weißen T-Shirts sind alle rosa!'],
-        ['Chloe', 'Oh nein. Hast du etwas Rotes mitgewaschen?'],
+        ['Lio', 'Chloé, schau dir das an. Meine weißen T-Shirts sind alle rosa!'],
+        ['Chloé', 'Oh nein. Hast du etwas Rotes mitgewaschen?'],
         ['Lio', 'Nur eine rote Socke … Und mein grauer Wollpulli ist jetzt so klein, dass er meinem kleinen Bruder passt.'],
-        ['Chloe', 'Bei wie viel Grad hast du gewaschen?'],
+        ['Chloé', 'Bei wie viel Grad hast du gewaschen?'],
         ['Lio', 'Sechzig. Ich dachte, heiß wird alles sauberer.'],
-        ['Chloe', 'Für weiße Baumwolle ist das manchmal okay. Aber schau aufs Etikett vom Pulli: Wanne mit Hand. Das heißt Handwäsche, ganz kalt. Wolle läuft bei sechzig Grad ein.'],
+        ['Chloé', 'Für weiße Baumwolle ist das manchmal okay. Aber schau aufs Etikett vom Pulli: Wanne mit Hand. Das heißt Handwäsche, nur lauwarm. Wolle läuft bei sechzig Grad ein.'],
         ['Lio', 'Und die rosa T-Shirts?'],
-        ['Chloe', 'Nächstes Mal sortierst du: Weißes zu Weißem, Dunkles zu Dunklem, Buntes extra. Die T-Shirts kannst du noch einmal mit Weißwäsche waschen. Vielleicht wird es heller.'],
+        ['Chloé', 'Nächstes Mal sortierst du: Weißes zu Weißem, Dunkles zu Dunklem, Buntes extra. Die T-Shirts kannst du gleich noch einmal waschen, nur sie allein. Vielleicht werden sie wieder heller.'],
         ['Lio', 'Okay. Sortieren, Etikett lesen, und nicht alles auf sechzig.'],
       ],
       vor: [{ art: 'mc', auftrag: 'Was heißt „Wäsche sortieren“? Kreuze an.', stufe: 1, fragen: [{ f: '', o: ['die Kleidung nach Farbe und Temperatur in Haufen teilen', 'die Kleidung in den Schrank legen'], r: 0 }] }],
       beim: [
-        { art: 'rf', auftrag: 'Hör zu. Richtig oder falsch?', stufe: 1, saetze: [['Lio hat eine rote Socke mit weißen T-Shirts gewaschen.', true], ['Lio hat bei 30 Grad gewaschen.', false], ['Auf dem Wollpulli steht: Handwäsche.', true], ['Wolle verträgt 60 Grad gut.', false], ['Chloe rät: Weißes, Dunkles und Buntes getrennt waschen.', true]] },
+        { art: 'rf', auftrag: 'Hör zu. Richtig oder falsch?', stufe: 1, saetze: [['Lio hat eine rote Socke mit weißen T-Shirts gewaschen.', true], ['Lio hat bei 30 Grad gewaschen.', false], ['Auf dem Wollpulli steht: Handwäsche.', true], ['Wolle verträgt 60 Grad gut.', false], ['Chloé rät: Weißes, Dunkles und Buntes getrennt waschen.', true]] },
       ],
       nach: [{ art: 'sprechen', auftrag: 'Habt ihr schon einmal ein Wäsche-Missgeschick erlebt oder davon gehört? Was hilft, damit das nicht passiert?', stufe: 2, karten: [
         { titel: 'Satzanfänge', text: ['Einmal ist …', 'Damit das nicht passiert, …'] }] }],
@@ -80,7 +80,7 @@ export const LEKTIONEN = [
     },
     ueben: [
       { art: 'zuordnen', auftrag: 'Woraus kommt die Faser? Verbinde.', stufe: 1, links: ['Baumwolle', 'Wolle', 'Seide', 'Leinen', 'Polyester'], rechts: ['von einer Pflanze (Baumwollpflanze)', 'vom Schaf', 'von der Seidenraupe', 'aus der Flachspflanze', 'aus Erdöl'] },
-      { art: 'tabelle', auftrag: 'Wäsche sortieren: In welchen Haufen kommt das? Kreuze an.', stufe: 2, kopf: ['Kleidungsstück', 'weiß 60 °C', 'dunkel 30 °C', 'Hand-wäsche'], breiten: [46, 18, 18, 18], zeilen: [['weiße Baumwoll-Socken', '[x]', '', ''], ['schwarze Jeans', '', '[x]', ''], ['Wollpulli (Symbol: Hand)', '', '', '[x]'], ['dunkelblaues Sport-Shirt', '', '[x]', ''], ['weiße Bettwäsche', '[x]', '', '']] },
+      { art: 'tabelle', auftrag: 'Wäsche sortieren: In welchen Haufen kommt das? Kreuze an.', stufe: 2, kopf: ['Kleidungsstück', 'weiß 60 °C', 'dunkel 30 °C', 'Hand­wäsche'], breiten: [46, 18, 18, 18], zeilen: [['weiße Baumwoll-Socken', '[x]', '', ''], ['schwarze Jeans', '', '[x]', ''], ['Wollpulli (Symbol: Hand)', '', '', '[x]'], ['dunkelblaues Sport-Shirt', '', '[x]', ''], ['weiße Bettwäsche', '[x]', '', '']] },
     ],
     schreiben: [
       { art: 'schreiben', auftrag: 'Schreibe eine kurze Anleitung „Richtig waschen“ für jemanden, der zum ersten Mal Wäsche wäscht.', stufe: 2,
@@ -179,7 +179,7 @@ export const LEKTIONEN = [
         { icon: 'rotate', text: '**Hals wickeln:** Nimm das Streichholz weg. Zieh den Knopf etwas hoch und wickle den Faden ein paarmal **unter dem Knopf** herum. Das ist der **Knopfhals**.' },
         { icon: 'check', text: '**Vernähen:** Stich nach hinten, mach zwei kleine Stiche übereinander und schneide den Faden ab.' },
       ],
-      danach: ['Der Knopfhals ist wichtig: Ohne ihn sitzt der Knopf zu eng am Stoff, und man bekommt ihn schlecht durch das Knopfloch.'],
+      danach: ['Der Knopfhals ist wichtig: Ohne ihn sitzt der Knopf zu eng am Stoff, und man bekommt ihn schlecht durch das Knopfloch. Ein kleines Loch oder eine aufgegangene Naht nähst du auf der Innenseite mit kleinen **Rückstichen** zu.'],
       woerter: [['der Knopf', 'le bouton'], ['annähen', 'coudre'], ['doppelt', 'double'], ['das Streichholz', 'l’allumette'], ['der Knopfhals', 'la tige du bouton'], ['vernähen', 'arrêter le fil'], ['flicken', 'raccommoder'], ['das Knopfloch', 'la boutonnière']],
       aufgaben: [
         { art: 'ordnen', auftrag: 'Ordne die Schritte.', stufe: 1, teile: ['Faden doppelt nehmen, Knoten machen', 'von hinten an der alten Stelle einstechen', 'Streichholz auf den Knopf legen', 'fünf- bis sechsmal durch Knopf und Stoff nähen', 'Faden unter dem Knopf wickeln (Knopfhals)', 'hinten vernähen und abschneiden'], ordnung: [3, 0, 5, 1, 4, 2] },
@@ -243,7 +243,7 @@ export const LEKTIONEN = [
         'Oben auf der Maschine steht die **Garnrolle**. Der Faden läuft über den **Fadengeber**, der beim Nähen auf und ab geht, bis zur **Nadel**. Der **Nähfuß** drückt den Stoff nach unten, damit er gleichmäßig weitertransportiert wird. Unter der Nadel liegt die **Spule** mit dem Unterfaden.',
         'Mit dem **Fußanlasser** gibst du Gas: Je fester du drückst, desto schneller näht die Maschine. Mit dem **Handrad** bewegst du die Nadel langsam von Hand – drehe es immer **zu dir hin**. Mit dem **Stichwahl-Rad** wählst du den Stich, zum Beispiel Geradstich oder Zickzack. Die **Rückwärtstaste** brauchst du am Anfang und Ende einer Naht, damit sie nicht aufgeht.',
         '### Sicherheitsregeln',
-        '**Finger weg** vom Bereich um die Nadel. Führe den Stoff mit beiden Händen links und rechts vom Nähfuß. Beim Einfädeln und beim Nadelwechsel: **Fuß weg vom Anlasser** oder Maschine ausschalten. Stecknadeln ziehst du heraus, **bevor** die Nadel sie erreicht – sonst kann die Nadel brechen. Lange Haare zusammenbinden. Nach der Arbeit: ausschalten und den Stecker ziehen.',
+        '**Finger weg** vom Bereich um die Nadel. Führe den Stoff mit beiden Händen links und rechts vom Nähfuß. Beim Einfädeln: **Fuß weg vom Anlasser**. Beim Nadelwechsel: **Maschine ausschalten**. Stecknadeln ziehst du heraus, **bevor** die Nadel sie erreicht – sonst kann die Nadel brechen. Lange Haare zusammenbinden. Nach der Arbeit: ausschalten und den Stecker ziehen.',
       ],
       woerter: [['die Nähmaschine', 'la machine à coudre'], ['die Garnrolle', 'la bobine de fil'], ['der Fadengeber', 'le releveur de fil'], ['der Nähfuß', 'le pied presseur'], ['die Spule', 'la canette'], ['der Fußanlasser', 'la pédale'], ['das Handrad', 'le volant'], ['der Geradstich', 'le point droit']],
       aufgaben: [
@@ -252,21 +252,21 @@ export const LEKTIONEN = [
     },
     hoeren: {
       was: 'Eine Mitmach-Anleitung', wo: 'Textilraum · an der Nähmaschine', titel: 'Nähen ohne Faden',
-      situation: 'Die erste Übung an der Nähmaschine: Chloe näht ohne Faden auf Papier. Herr Mensah gibt Anweisungen.',
-      bild: ['chloe:froh:sitzen', 'lehrer:froh:erklaeren'], sprecher: { 'Herr Mensah': 'm2', Chloe: 'w3' },
+      situation: 'Die erste Übung an der Nähmaschine: Chloé näht ohne Faden auf Papier. Herr Mensah gibt Anweisungen.',
+      bild: ['chloe:froh:sitzen', 'lehrer:froh:erklaeren'], sprecher: { 'Herr Mensah': 'm2', Chloé: 'w3' },
       text: [
         ['Herr Mensah', 'Heute nähen wir ohne Faden. Du bekommst ein Blatt mit Linien. Die Nadel macht kleine Löcher ins Papier. So siehst du genau, ob du auf der Linie bleibst.'],
         ['Herr Mensah', 'Leg das Blatt unter den Nähfuß. Die Nadel steht genau auf dem grünen Startpunkt. Senk den Nähfuß mit dem Hebel ab.'],
-        ['Chloe', 'Fuß ist unten.'],
+        ['Chloé', 'Fuß ist unten.'],
         ['Herr Mensah', 'Deine Hände liegen links und rechts vom Nähfuß. Du schiebst nicht, du führst nur. Die Maschine zieht das Papier selbst.'],
         ['Herr Mensah', 'Jetzt drück ganz leicht auf den Fußanlasser. Langsam … gut so. Schau nicht auf die Nadel, schau auf die Linie vor dem Nähfuß.'],
-        ['Chloe', 'Bei der Welle komme ich raus!'],
-        ['Herr Mensah', 'Dann langsamer. Bei Kurven ganz wenig Gas und den Stoff sanft drehen. Bei den Ecken bleibst du stehen, die Nadel bleibt unten im Papier, Nähfuß hoch, Blatt drehen, Nähfuß runter, weiter.'],
-        ['Chloe', 'Nadel unten, Fuß hoch, drehen, Fuß runter. Das klappt!'],
+        ['Chloé', 'Bei der Welle komme ich raus!'],
+        ['Herr Mensah', 'Dann langsamer. Bei Kurven ganz wenig Gas und das Blatt sanft drehen. Bei den Ecken bleibst du stehen, die Nadel bleibt unten im Papier, Nähfuß hoch, Blatt drehen, Nähfuß runter, weiter.'],
+        ['Chloé', 'Nadel unten, Fuß hoch, drehen, Fuß runter. Das klappt!'],
       ],
       vor: [{ art: 'mc', auftrag: 'Was bedeutet „führen“ beim Nähen? Kreuze an.', stufe: 1, fragen: [{ f: '', o: ['den Stoff mit den Händen lenken, ohne zu ziehen', 'den Stoff kräftig nach vorne ziehen'], r: 0 }] }],
       beim: [
-        { art: 'rf', auftrag: 'Hör zu. Richtig oder falsch?', stufe: 1, saetze: [['Bei der ersten Übung näht Chloe ohne Faden auf Papier.', true], ['Chloe soll das Papier kräftig schieben.', false], ['Man schaut auf die Linie vor dem Nähfuß.', true], ['In Kurven gibt man mehr Gas.', false], ['An Ecken bleibt die Nadel unten im Papier.', true]] },
+        { art: 'rf', auftrag: 'Hör zu. Richtig oder falsch?', stufe: 1, saetze: [['Bei der ersten Übung näht Chloé ohne Faden auf Papier.', true], ['Chloé soll das Papier kräftig schieben.', false], ['Man schaut auf die Linie vor dem Nähfuß.', true], ['In Kurven gibt man mehr Gas.', false], ['An Ecken bleibt die Nadel unten im Papier.', true]] },
       ],
       nach: [{ art: 'sprechen', auftrag: 'Erkläre deinem Partner, wie man an einer Ecke dreht. Er macht die Bewegungen mit den Händen nach.', stufe: 1, karten: [
         { titel: 'Ecke', text: ['Anhalten.', 'Nadel unten.', 'Nähfuß hoch.', 'Drehen.', 'Nähfuß runter.'] }] }],
@@ -274,7 +274,7 @@ export const LEKTIONEN = [
     regel: {
       reihen: [
         [{ titel: 'Wichtige Teile', punkte: ['**Garnrolle** → **Fadengeber** → **Nadel**', '**Nähfuß** hält den Stoff', '**Spule**: Unterfaden', '**Handrad** immer zu dir', '**Fußanlasser** = Gas'] },
-         { titel: 'Sicher nähen', punkte: ['**Finger weg** von der Nadel', 'Einfädeln: **Fuß weg** vom Anlasser', 'Stecknadeln **vorher** ziehen', 'Haare zusammen', 'danach **Stecker ziehen**'] }],
+         { titel: 'Sicher nähen', punkte: ['**Finger weg** von der Nadel', 'Einfädeln: **Fuß weg** vom Anlasser', 'Nadelwechsel: **ausschalten**', 'Stecknadeln **vorher** ziehen', 'Haare zusammen', 'danach **Stecker ziehen**'] }],
       ],
     },
     ueben: [
@@ -367,7 +367,7 @@ export const LEKTIONEN = [
       material: ['ein altes T-Shirt (sauber)', 'Stoffschere', 'Lineal und Kreide', 'eine Schüssel als Schablone'],
       schritte: [
         { icon: 'shirt', text: '**Vorbereiten:** Lege das T-Shirt glatt auf den Tisch.' },
-        { icon: 'scissors', text: '**Ärmel abschneiden:** Schneide beide Ärmel entlang der Naht ab. Das werden die **Henkel**.' },
+        { icon: 'scissors', text: '**Ärmel abschneiden:** Schneide beide Ärmel entlang der Naht ab. Die Schulterteile, die stehen bleiben, werden die **Henkel**.' },
         { icon: 'circle', text: '**Halsausschnitt:** Leg eine Schüssel oben auf den Halsausschnitt, zeichne einen Halbkreis mit Kreide und schneide ihn aus. Das ist die **Öffnung**.' },
         { icon: 'ruler-2', text: '**Fransen:** Zeichne unten eine Linie 8 cm über dem Saum. Schneide bis zu dieser Linie Streifen, etwa 2 cm breit – durch beide Stofflagen.' },
         { icon: 'link', text: '**Verknoten:** Verknote jeden vorderen Streifen mit dem hinteren Streifen darunter, zweimal. So ist der Boden geschlossen.' },
@@ -376,7 +376,7 @@ export const LEKTIONEN = [
       danach: ['**Upcycling** heißt: Aus etwas Altem wird etwas Neues mit **mehr Wert**. Das spart Rohstoffe, Wasser und Geld. Und deine Tasche gibt es nur einmal.'],
       woerter: [['das Upcycling', 'l’upcycling'], ['der Henkel', 'l’anse'], ['der Halsausschnitt', 'l’encolure'], ['der Saum', 'l’ourlet'], ['die Franse', 'la frange'], ['verknoten', 'nouer'], ['auf links drehen', 'retourner'], ['der Rohstoff', 'la matière première']],
       aufgaben: [
-        { art: 'fragen', auftrag: 'Antworte mit der Anleitung.', stufe: 1, fragen: [{ f: 'Was wird aus den Ärmeln?', l: 'die Henkel' }, { f: 'Wie lang und wie breit sind die Fransen?', l: '8 cm lang, etwa 2 cm breit' }, { f: 'Warum dreht man die Tasche zum Schluss auf links?', l: 'damit die Knoten innen sind' }, { f: 'Was bedeutet Upcycling?', zeilen: 2, l: 'Aus etwas Altem wird etwas Neues mit mehr Wert.' }] },
+        { art: 'fragen', auftrag: 'Antworte mit der Anleitung.', stufe: 1, fragen: [{ f: 'Was wird zu den Henkeln?', l: 'die Schulterteile' }, { f: 'Wie lang und wie breit sind die Fransen?', l: '8 cm lang, etwa 2 cm breit' }, { f: 'Warum dreht man die Tasche zum Schluss auf links?', l: 'damit die Knoten innen sind' }, { f: 'Was bedeutet Upcycling?', zeilen: 2, l: 'Aus etwas Altem wird etwas Neues mit mehr Wert.' }] },
       ],
     },
     hoeren: {
@@ -402,7 +402,7 @@ export const LEKTIONEN = [
     regel: {
       reihen: [
         [{ titel: 'Upcycling', punkte: ['aus **Altem** wird **Neues** mit mehr Wert', 'spart **Rohstoffe**, Wasser, Geld', 'jedes Stück ist **einzigartig**'] },
-         { titel: 'T-Shirt-Tasche', nummern: true, punkte: ['**Ärmel** ab = Henkel', '**Halsausschnitt** = Öffnung', '**Fransen** schneiden', 'vorne und hinten **verknoten**', '**auf links** drehen'] }],
+         { titel: 'T-Shirt-Tasche', nummern: true, punkte: ['**Ärmel** ab, Schulterteile = Henkel', '**Halsausschnitt** = Öffnung', '**Fransen** schneiden', 'vorne und hinten **verknoten**', '**auf links** drehen'] }],
       ],
     },
     ueben: [

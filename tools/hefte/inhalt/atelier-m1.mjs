@@ -43,7 +43,7 @@ export const LEKTIONEN = [
         '### Vor der Arbeit',
         'Ich trage **Arbeitskleidung** oder eine Schürze. Lange Haare binde ich zusammen. Schals, Ketten, Ringe und weite Ärmel kommen weg – sie können sich in Maschinen verfangen. Ich trage feste Schuhe.',
         '### Bei der Arbeit',
-        'Ich benutze ein Werkzeug erst, wenn die Lehrperson es mir **gezeigt** hat. Maschinen schalte ich nur mit **Erlaubnis** ein. Ich gehe ruhig, ich renne nicht. Ich arbeite an **meinem Platz** und störe niemanden, der gerade sägt oder bohrt. Bei Staub oder Lärm trage ich **Schutzbrille** oder **Gehörschutz**.',
+        'Ich benutze ein Werkzeug erst, wenn die Lehrperson es mir **gezeigt** hat. Maschinen schalte ich nur mit **Erlaubnis** ein. Ich gehe ruhig, ich renne nicht. Ich arbeite an **meinem Platz** und störe niemanden, der gerade sägt oder bohrt. Bei Spänen trage ich eine **Schutzbrille**, bei viel Staub eine **Staubmaske**, bei Lärm einen **Gehörschutz**.',
         '### Wenn etwas passiert',
         'Jede Verletzung, auch eine kleine, **melde ich sofort**. Wenn etwas kaputtgeht, sage ich es – das ist kein Problem, verstecken schon.',
         '### Nach der Arbeit',
@@ -147,7 +147,7 @@ export const LEKTIONEN = [
         ['Tom', 'Der Schraubendreher. Zu einfach!'],
         ['Chloé', 'Okay, letztes: Man braucht es, bevor man sägt. Es ist aus Metall, hat einen rechten Winkel, und man zeichnet damit gerade Linien.'],
         ['Tom', 'Hm … der Winkel?'],
-        ['Chloé', 'Genau! Fünf zu fünf. Unentschieden!'],
+        ['Chloé', 'Genau! Alle fünf Werkzeuge erraten – wir sind ein gutes Team!'],
       ],
       vor: [{ art: 'mc', auftrag: 'Was bedeutet „rau“? Kreuze an.', stufe: 1, fragen: [{ f: '', o: ['nicht glatt, man spürt kleine Körner', 'sehr weich'], r: 0 }] }],
       beim: [
@@ -199,14 +199,14 @@ export const LEKTIONEN = [
         { icon: 'triangle', text: 'Lege den **Winkel** an die Kante und zeichne durch den Strich eine gerade Linie.' },
         { icon: 'repeat', text: '**Miss noch einmal nach!** Erst dann sägen. In der Werkstatt sagt man: Zweimal messen, einmal sägen.' },
       ],
-      danach: ['In der Werkstatt misst man in **Millimetern** (mm). 1 cm = 10 mm. 1 m = 100 cm = 1000 mm.'],
+      danach: ['In der Werkstatt misst man in **Millimetern**. 1 cm sind 10 mm. 1 m sind 100 cm oder 1000 mm.'],
       woerter: [['messen', 'mesurer'], ['der Millimeter', 'le millimètre'], ['das Lineal', 'la règle'], ['der Zollstock', 'le mètre pliant'], ['die Kante', 'le bord'], ['senkrecht', 'à la verticale'], ['anzeichnen', 'tracer'], ['nachmessen', 'vérifier la mesure']],
       aufgaben: [
         { art: 'ordnen', auftrag: 'In welcher Reihenfolge? Ordne.', stufe: 1, teile: ['Lineal mit der Null an die Kante legen', 'senkrecht von oben ablesen', 'feinen Strich machen', 'mit dem Winkel eine Linie ziehen', 'nachmessen', 'sägen'], ordnung: [3, 0, 5, 2, 4, 1] },
       ],
     },
     hoeren: {
-      was: 'Ein Gespräch', wo: 'Holzwerkstatt', titel: 'Fünf Millimeter zu kurz',
+      was: 'Ein Gespräch', wo: 'Holzwerkstatt', titel: 'Ein paar Millimeter zu kurz',
       situation: 'Tom wollte ein Regalbrett mit genau 300 mm Länge sägen. Jetzt passt es nicht.',
       bild: ['tom:enttaeuscht:stehen', 'lehrer:ruhig:erklaeren'], sprecher: { Tom: 'm3', 'Herr Steffen': 'm1' },
       text: [
@@ -214,14 +214,14 @@ export const LEKTIONEN = [
         ['Herr Steffen', 'Zeig mal, wie du gemessen hast.'],
         ['Tom', 'So: Lineal an die Kante, und bei 300 einen Strich.'],
         ['Herr Steffen', 'Schau genau hin. Wo fängt dein Lineal an?'],
-        ['Tom', 'Oh. Da ist noch ein kleines Stück vor der Null. Ich habe das Ende des Lineals an die Kante gelegt.'],
-        ['Herr Steffen', 'Genau. Bei diesem Lineal sind das fünf Millimeter. Und dann hast du auch noch auf der falschen Seite vom Strich gesägt. Die Säge nimmt selbst etwa einen Millimeter weg.'],
+        ['Tom', 'Oh. Vorne ist ein Stück vom Lineal abgebrochen. Es fängt erst bei fünf Millimetern an, nicht bei null.'],
+        ['Herr Steffen', 'Genau. Darum fehlen dir fünf Millimeter. Schau immer zuerst, wo die Null ist. Und dann hast du auch noch auf der falschen Seite vom Strich gesägt. Die Säge nimmt selbst etwa einen Millimeter weg.'],
         ['Tom', 'Also sägt man neben dem Strich?'],
-        ['Herr Steffen', 'Ja, auf der Seite, die weg kommt. Der Strich bleibt am guten Stück. Kein Problem, das passiert jedem. Wir nehmen ein neues Brett, und diesmal misst du zweimal.'],
+        ['Herr Steffen', 'Ja, auf der Seite, die wegkommt. Der Strich bleibt am guten Stück. Kein Problem, das passiert jedem. Wir nehmen ein neues Brett, und diesmal misst du zweimal.'],
       ],
       vor: [{ art: 'mc', auftrag: 'Was ist ein Regalbrett? Kreuze an.', stufe: 1, fragen: [{ f: '', o: ['ein Brett, auf das man Dinge stellt', 'ein Brett zum Schneiden von Brot'], r: 0 }] }],
       beim: [
-        { art: 'fragen', auftrag: 'Hör zu und antworte.', stufe: 1, fragen: [{ f: 'Wie lang sollte das Brett sein?', l: '300 mm' }, { f: 'Welchen ersten Fehler hat Tom gemacht?', zeilen: 2, l: 'Er hat das Ende des Lineals an die Kante gelegt, nicht die Null (5 mm Unterschied).' }, { f: 'Welchen zweiten Fehler hat er gemacht?', zeilen: 2, l: 'Er hat auf der falschen Seite vom Strich gesägt; die Säge nimmt etwa 1 mm weg.' }] },
+        { art: 'fragen', auftrag: 'Hör zu und antworte.', stufe: 1, fragen: [{ f: 'Wie lang sollte das Brett sein?', l: '300 mm' }, { f: 'Welchen ersten Fehler hat Tom gemacht?', zeilen: 2, l: 'Er hat nicht geprüft, wo die Null ist: Das Lineal war vorne abgebrochen (5 mm Unterschied).' }, { f: 'Welchen zweiten Fehler hat er gemacht?', zeilen: 2, l: 'Er hat auf der falschen Seite vom Strich gesägt; die Säge nimmt etwa 1 mm weg.' }] },
       ],
       nach: [{ art: 'sprechen', auftrag: 'Ist euch schon einmal etwas Ähnliches passiert – beim Basteln, Kochen oder Bauen?', stufe: 2, karten: [
         { titel: 'Satzanfänge', text: ['Einmal wollte ich …', 'Dann habe ich gemerkt …', 'Jetzt mache ich …'] }] }],
@@ -259,7 +259,7 @@ export const LEKTIONEN = [
     lesen: {
       was: 'Eine Fiche technique', art: 'anleitung', stimme: 'm1',
       quelle: 'Fiche technique (Schulwerkstatt)', titel: 'Schlüsselanhänger aus Holz',
-      material: ['Holzleiste 60 × 30 × 8 mm (Buche)', 'Bleistift, Lineal, Winkel', 'Feinsäge, Schraubzwinge', 'Feile, Schleifpapier 120 und 240', 'Handbohrer 5 mm', 'Schlüsselring'],
+      material: ['Holzleiste aus Buche, 30 × 8 mm, etwa 100 mm lang', 'Bleistift, Lineal, Winkel', 'Feinsäge, Schraubzwinge', 'Feile, Schleifpapier 120 und 240', 'Handbohrer 5 mm', 'Schlüsselring'],
       schritte: [
         { icon: 'ruler', text: '**Anzeichnen:** Miss 60 mm ab und zeichne mit dem Winkel eine Linie. Markiere die Mitte für das Loch: 8 mm vom oberen Rand.' },
         { icon: 'tool', text: '**Einspannen und sägen:** Spanne die Leiste mit der Schraubzwinge fest. Säge neben dem Strich, auf der Abfallseite.' },
@@ -341,7 +341,7 @@ export const LEKTIONEN = [
         '### Vom Groben ins Feine',
         'Zuerst **sägen**: Das Werkstück fest einspannen, mit leichtem Druck und langen Zügen sägen. Dann **raspeln** oder **feilen**: Die Feile nur beim **Vorschieben** drücken, beim Zurückziehen nicht. Zum Schluss **schleifen**: zuerst grobes Papier (zum Beispiel **80** oder **120**), dann feines (**240**). Jede Stufe macht die Kratzer der letzten Stufe weg.',
       ],
-      woerter: [['das Nadelholz', 'le bois résineux'], ['das Laubholz', 'le bois de feuillus'], ['die Fichte', 'l’épicéa'], ['die Buche', 'le hêtre'], ['die Eiche', 'le chêne'], ['die Delle', 'la bosse, le creux'], ['spalten', 'fendre'], ['quer', 'en travers']],
+      woerter: [['das Nadelholz', 'le bois résineux'], ['das Laubholz', 'le bois de feuillus'], ['die Fichte', 'l’épicéa'], ['die Buche', 'le hêtre'], ['die Eiche', 'le chêne'], ['die Delle', 'le creux, la marque'], ['spalten', 'fendre'], ['quer', 'en travers']],
       aufgaben: [
         { art: 'tabelle', auftrag: 'Weich oder hart? Kreuze an.', stufe: 1, kopf: ['Holz', 'meist weich', 'meist hart'], breiten: [40, 30, 30], zeilen: [['Fichte', '[x]', ''], ['Eiche', '', '[x]'], ['Kiefer', '[x]', ''], ['Buche', '', '[x]']] },
         { art: 'ordnen', auftrag: 'Vom Groben ins Feine: Ordne.', stufe: 1, teile: ['sägen', 'raspeln', 'feilen', 'schleifen mit 120', 'schleifen mit 240'], ordnung: [4, 1, 3, 0, 2] },

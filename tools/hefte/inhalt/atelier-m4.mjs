@@ -13,7 +13,7 @@ export const MODUL = sachModul('atelier', 4, {
   farbe: '#1f6aa0',
   deckbild: ['tom:froh:blatt', 'lea:froh:stehen-zeigen', 'sami:froh:stehen'],
   blasen: [{ t: 'Erst planen!', x: 8, y: 104 }, { t: 'Wie viel Holz?', x: 122, y: 92 }, { t: 'Ø 8', x: 178, y: 150 }],
-  aussprache: { '„mm“': '„Millimeter“', '\\bin mm\\b': 'in Millimetern', ' = ': ' gleich ', 'Ø ?(\\d+)': 'Durchmesser \\1 Millimeter', '(\\d+) × (\\d+) × (\\d+) mm': '\\1 mal \\2 mal \\3 Millimeter', '(\\d+) mm\\b': '\\1 Millimeter', '\\b1 : 2\\b': 'eins zu zwei', '\\b2 : 1\\b': 'zwei zu eins', '\\b1 : 1\\b': 'eins zu eins', '\\bPos\\.': 'Position' },
+  aussprache: { 'Ø(?! ?\\d)': 'das Durchmesser-Zeichen', '„mm“': '„Millimeter“', '\\bin mm\\b': 'in Millimetern', ' = ': ' gleich ', 'Ø ?(\\d+)': 'Durchmesser \\1 Millimeter', '(\\d+) × (\\d+) × (\\d+) mm': '\\1 mal \\2 mal \\3 Millimeter', '(\\d+) mm\\b': '\\1 Millimeter', '\\b1 : 2\\b': 'eins zu zwei', '\\b2 : 1\\b': 'zwei zu eins', '\\b1 : 1\\b': 'eins zu eins', '\\bPos\\.': 'Position' },
   themen: [
     { titel: { de: 'Zeichnungen lesen', fr: 'Lire un dessin' }, icon: 'ruler-measure', lektionen: 3 },
     { titel: { de: 'Planen', fr: 'Planifier' }, icon: 'clipboard-list', lektionen: 3 },
@@ -125,7 +125,7 @@ export const LEKTIONEN = [
       bild: ['sami:verwirrt:blatt', 'lea:froh:erklaeren'], sprecher: { Sami: 'm3', Lea: 'w3' },
       text: [
         ['Sami', 'Hier steht 20. Aber 20 was? Und von wo?'],
-        ['Lea', 'Das sind 20 Millimeter. Schau: Die Maßhilfslinie geht vom linken Rand bis zur Mitte vom Loch. Also: 20 Millimeter vom linken Rand bis zur Mitte des Lochs.'],
+        ['Lea', 'Das sind 20 Millimeter. Schau: Die Maßlinie geht vom linken Rand bis zur Mitte vom Loch. Also: 20 Millimeter vom linken Rand bis zur Mitte des Lochs.'],
         ['Sami', 'Und das zweite Loch? Da steht kein Maß.'],
         ['Lea', 'Das Brett ist symmetrisch. Das zweite Loch ist auch 20 Millimeter vom Rand, aber vom rechten.'],
         ['Sami', 'Und wie weit sind die Löcher voneinander weg?'],
@@ -242,9 +242,9 @@ export const LEKTIONEN = [
       absaetze: [
         'Eine **Stückliste** ist eine Tabelle mit **allen Teilen**, die man für ein Werkstück braucht. Sie hat meist diese Spalten: **Position** (Nummer des Teils), **Anzahl**, **Benennung** (Name), **Maße** (Länge × Breite × Dicke in mm) und **Material**.',
         '### Beispiel: Handyhalter',
-        'Ein einfacher Handyhalter besteht aus einer **Grundplatte** (140 × 70 × 18 mm, Kiefer), einer schrägen **Stütze** (140 × 90 × 18 mm, Kiefer), einer **Leiste** vorne, damit das Handy nicht rutscht (140 × 15 × 10 mm, Buche), **4 Schrauben** (3,5 × 30 mm) und etwas **Holzleim**.',
+        'Ein einfacher Handyhalter besteht aus einer **Grundplatte** (140 × 70 × 18 mm, Kiefer), einer schrägen **Stütze** (140 × 90 × 18 mm, Kiefer), einer **Leiste** vorne, damit das Handy nicht rutscht (140 × 15 × 10 mm, Buche), **4 Schrauben** aus Stahl (3,5 × 30 mm) und etwas **Holzleim**.',
         '### Materialbedarf berechnen',
-        'Grundplatte und Stütze sind beide 140 mm breit und 18 mm dick. Man kann sie also aus **einem Brett** sägen, das 140 mm breit ist. Wie lang muss es sein? 70 mm + 90 mm = 160 mm. Dazu kommen die **Sägeschnitte** (je etwa 1 mm) und ein bisschen Reserve für saubere Kanten. Profis rechnen etwa **10 % mehr**, weil immer etwas Verschnitt entsteht.',
+        'Grundplatte und Stütze haben beide eine Seite von 140 mm und sind 18 mm dick. Man kann sie also aus **einem Brett** sägen, das 140 mm breit ist. Wie lang muss es sein? 70 mm + 90 mm = 160 mm. Dazu kommen die **Sägeschnitte** (je etwa 1 mm) und ein bisschen Reserve für saubere Kanten. Profis rechnen etwa **10 % mehr**, weil immer etwas Verschnitt entsteht.',
       ],
       woerter: [['die Stückliste', 'la nomenclature'], ['die Position', 'la position, le repère'], ['die Anzahl', 'la quantité'], ['die Benennung', 'la désignation'], ['die Grundplatte', 'la plaque de base'], ['die Stütze', 'le support'], ['der Verschnitt', 'la chute'], ['die Reserve', 'la réserve']],
       aufgaben: [
@@ -301,7 +301,7 @@ export const LEKTIONEN = [
     start: {
       was: 'Reihenfolge',
       aufgaben: [
-        { art: 'ordnen', auftrag: 'In welcher Reihenfolge ziehst du dich an? Ordne.', stufe: 1, teile: ['Unterwäsche', 'Socken', 'Hose', 'Schuhe'], ordnung: [2, 0, 3, 1] },
+        { art: 'ordnen', auftrag: 'In welcher Reihenfolge ziehst du dich an? Ordne.', stufe: 1, teile: ['Unterhemd anziehen', 'Pullover anziehen', 'Jacke anziehen', 'Jacke zumachen'], ordnung: [2, 0, 3, 1] },
       ],
     },
     lesen: {
@@ -310,7 +310,7 @@ export const LEKTIONEN = [
       absaetze: [
         'Ein **Arbeitsplan** ist wie ein Fahrplan für dein Werkstück. Er hat meist diese Spalten: **Nummer**, **Arbeitsschritt**, **Werkzeug und Maschinen**, **Zeit** und **Prüfen**.',
         '### Die richtige Reihenfolge',
-        'Manche Schritte müssen **vor** anderen kommen. Man bohrt Löcher, **bevor** man ein Teil an ein anderes schraubt – sonst kommt man nicht mehr heran. Man schleift, **bevor** man lackiert. Und man **leimt** zuletzt, weil der Leim trocknen muss.',
+        'Manche Schritte müssen **vor** anderen kommen. Man bohrt Löcher, **bevor** man ein Teil an ein anderes schraubt – sonst kommt man nicht mehr heran. Man schleift, **bevor** man lackiert. Man **leimt** erst, wenn alle Teile gesägt, gebohrt und geschliffen sind – danach kann man sie kaum noch bearbeiten, und der Leim muss trocknen. Ganz zum Schluss wird **lackiert**.',
         '### Zeit einplanen',
         'Für jeden Schritt schätzt man die Zeit. **Wartezeiten** wie das Trocknen von Leim oder Lack plant man so, dass man in der Zeit etwas anderes machen kann.',
         '### Prüfen',
@@ -318,7 +318,7 @@ export const LEKTIONEN = [
       ],
       woerter: [['der Arbeitsplan', 'le plan de travail'], ['der Arbeitsschritt', 'l’étape de travail'], ['die Reihenfolge', 'l’ordre'], ['leimen', 'coller'], ['trocknen', 'sécher'], ['lackieren', 'vernir'], ['schätzen', 'estimer'], ['prüfen', 'contrôler']],
       aufgaben: [
-        { art: 'fragen', auftrag: 'Antworte.', stufe: 1, fragen: [{ f: 'Warum bohrt man Löcher, bevor man die Teile zusammenschraubt?', zeilen: 2, l: 'Weil man sonst nicht mehr gut an die Stelle herankommt.' }, { f: 'Warum leimt man oft zuletzt?', l: 'Weil der Leim trocknen muss.' }, { f: 'Wozu prüft man zwischendurch?', l: 'Um Fehler früh zu finden.' }] },
+        { art: 'fragen', auftrag: 'Antworte.', stufe: 1, fragen: [{ f: 'Warum bohrt man Löcher, bevor man die Teile zusammenschraubt?', zeilen: 2, l: 'Weil man sonst nicht mehr gut an die Stelle herankommt.' }, { f: 'Warum leimt man erst spät?', l: 'Weil man die Teile danach kaum noch bearbeiten kann und der Leim trocknen muss.' }, { f: 'Wozu prüft man zwischendurch?', l: 'Um Fehler früh zu finden.' }] },
       ],
     },
     hoeren: {
@@ -393,7 +393,7 @@ export const LEKTIONEN = [
       bild: ['lea:froh:erklaeren', 'tom:froh:blatt'], sprecher: { Lea: 'w3', Tom: 'm3', 'Herr Steffen': 'm1' },
       text: [
         ['Lea', 'Unser Projekt ist eine Stiftebox mit vier Fächern für den Schreibtisch. Die Box ist 160 Millimeter lang, 100 breit und 80 hoch.'],
-        ['Tom', 'Hier ist unsere Stückliste: ein Boden, zwei lange und zwei kurze Seitenwände und zwei Trennwände. Alles aus 10 Millimeter dickem Pappelsperrholz.'],
+        ['Tom', 'Hier ist unsere Stückliste: ein Boden, zwei lange und zwei kurze Seitenwände und drei Trennwände. Alles aus 10 Millimeter dickem Pappelsperrholz.'],
         ['Lea', 'Wir brauchen dafür ein Brett von etwa 70 Zentimetern – mit Reserve. Das kostet ungefähr 4 Euro.'],
         ['Tom', 'Unser Arbeitsplan hat sieben Schritte. Wir brauchen etwa vier Unterrichtsstunden.'],
         ['Herr Steffen', 'Sehr gut vorbereitet! Eine Frage: Wie haltet ihr die Trennwände fest?'],

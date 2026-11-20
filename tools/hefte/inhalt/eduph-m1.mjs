@@ -253,24 +253,24 @@ export const LEKTIONEN = [
     },
     hoeren: {
       was: 'Ein Gespräch', wo: 'Sportplatz · beim 6-Minuten-Lauf', titel: 'Zu schnell gestartet',
-      situation: 'Die Klasse läuft sechs Minuten um den Platz. Ben ist am Anfang ganz vorne. Chloe läuft ruhig.',
-      bild: ['ben:muede:gehen', 'chloe:froh:gehen'], sprecher: { Ben: 'm2', Chloe: 'w3', 'Frau Diallo': 'w1' },
+      situation: 'Die Klasse läuft sechs Minuten um den Platz. Ben ist am Anfang ganz vorne. Chloé läuft ruhig.',
+      bild: ['ben:muede:gehen', 'chloe:froh:gehen'], sprecher: { Ben: 'm2', Chloé: 'w3', 'Frau Diallo': 'w1' },
       text: [
         ['Frau Diallo', 'Achtung, sechs Minuten. Los!'],
         ['Ben', 'Ich bin vorne! Die erste Runde in fünfzig Sekunden!'],
         ['Frau Diallo', 'Noch vier Minuten.'],
         ['Ben', 'Ich … kann nicht mehr. Ich muss gehen.'],
-        ['Chloe', 'Komm, lauf mit mir. Ganz langsam. Wir können dabei reden.'],
+        ['Chloé', 'Komm, lauf mit mir. Ganz langsam. Wir können dabei reden.'],
         ['Ben', 'So langsam? Das ist ja fast Gehen.'],
-        ['Chloe', 'Genau. Und jetzt siehst du: Ich bin immer noch nicht müde.'],
+        ['Chloé', 'Genau. Und jetzt siehst du: Ich bin immer noch nicht müde.'],
         ['Frau Diallo', 'Und … Stopp! Zählt eure Runden.'],
-        ['Ben', 'Ich habe fünf Runden. Am Anfang war ich so schnell, und am Ende hat mich Chloe überholt.'],
-        ['Chloe', 'Ich habe sechs. Ich bin jede Runde gleich schnell gelaufen.'],
-        ['Frau Diallo', 'Das ist das Geheimnis. Ben, nächstes Mal startest du mit Chloe. Ich wette, du schaffst mehr als fünf.'],
+        ['Ben', 'Ich habe fünf Runden. Am Anfang war ich so schnell, und am Ende hat mich Chloé überholt.'],
+        ['Chloé', 'Ich habe sechs. Ich bin jede Runde gleich schnell gelaufen.'],
+        ['Frau Diallo', 'Das ist das Geheimnis. Ben, nächstes Mal startest du mit Chloé. Ich wette, du schaffst mehr als fünf.'],
       ],
       vor: [{ art: 'mc', auftrag: 'Was heißt „überholen“? Kreuze an.', stufe: 1, fragen: [{ f: '', o: ['an jemandem vorbeilaufen, der vor einem war', 'stehen bleiben'], r: 0 }] }],
       beim: [
-        { art: 'fragen', auftrag: 'Hör zu und antworte.', stufe: 1, fragen: [{ f: 'Welchen Fehler macht Ben?', l: 'Er startet viel zu schnell.' }, { f: 'Woran merkt Chloe, dass ihr Tempo richtig ist?', l: 'Sie kann dabei reden und ist nicht müde.' }, { f: 'Wie viele Runden schaffen Ben und Chloe?', l: 'Ben 5, Chloe 6' }, { f: 'Was rät Frau Diallo?', l: 'Ben soll nächstes Mal mit Chloe starten (ruhiger).' }] },
+        { art: 'fragen', auftrag: 'Hör zu und antworte.', stufe: 1, fragen: [{ f: 'Welchen Fehler macht Ben?', l: 'Er startet viel zu schnell.' }, { f: 'Woran merkt Chloé, dass ihr Tempo richtig ist?', l: 'Sie kann dabei reden und ist nicht müde.' }, { f: 'Wie viele Runden schaffen Ben und Chloé?', l: 'Ben 5, Chloé 6' }, { f: 'Was rät Frau Diallo?', l: 'Ben soll nächstes Mal mit Chloé starten (ruhiger).' }] },
       ],
       nach: [{ art: 'sprechen', auftrag: 'Kennt ihr das: zu schnell anfangen und dann nicht mehr können? Wo gilt das noch – außer beim Laufen?', stufe: 3, karten: [
         { titel: 'Satzanfänge', text: ['Das kenne ich von …', 'Auch beim … ist es besser, …'] }] }],
@@ -283,7 +283,7 @@ export const LEKTIONEN = [
     },
     ueben: [
       { art: 'tabelle', auftrag: 'Mein Lauf-Protokoll: Lauf dreimal sechs Minuten (an verschiedenen Tagen) und trage deine Runden ein.', stufe: 1, kopf: ['Lauf', 'Datum', 'Runden', 'Wie ging es mir?'], breiten: [12, 20, 16, 52], zeilen: [['1', '', '', ''], ['2', '', '', ''], ['3', '', '', '']] },
-      { art: 'rechnen', auftrag: 'Eine Runde auf dem Sportplatz ist 200 m lang. Rechne die Strecke aus.', stufe: 2, spalten: 2, items: [{ a: 'Ben: 5 Runden', l: '5 × 200 m = 1000 m = 1 km' }, { a: 'Chloe: 6 Runden', l: '6 × 200 m = 1200 m' }, { a: 'Nele fährt im Rollstuhl 7 Runden.', l: '7 × 200 m = 1400 m' }, { a: 'Wie viele Runden braucht man für 2 km?', l: '2000 ÷ 200 = 10 Runden' }] },
+      { art: 'rechnen', auftrag: 'Eine Runde auf dem Sportplatz ist 200 m lang. Rechne die Strecke aus.', stufe: 2, spalten: 2, items: [{ a: 'Ben: 5 Runden', l: '5 × 200 m = 1000 m = 1 km' }, { a: 'Chloé: 6 Runden', l: '6 × 200 m = 1200 m' }, { a: 'Nele fährt im Rollstuhl 7 Runden.', l: '7 × 200 m = 1400 m' }, { a: 'Wie viele Runden braucht man für 2 km?', l: '2000 ÷ 200 = 10 Runden' }] },
     ],
     schreiben: [
       { art: 'schreiben', auftrag: 'Mein Sport-Tagebuch: Wie war dein 6-Minuten-Lauf? Was hast du über dein Tempo gelernt?', stufe: 2,

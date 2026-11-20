@@ -42,7 +42,7 @@ export const LEKTIONEN = [
         '### Jeder Teil hat eine Aufgabe',
         'Die **Wurzeln** halten die Pflanze im Boden fest. Sie nehmen Wasser und Nährstoffe auf. Der **Stängel** trägt die Blätter und Blüten. In ihm fließt das Wasser nach oben – wie in feinen Röhren.',
         'Die **Blätter** sind die Küche der Pflanze. Mit dem **Sonnenlicht**, mit Wasser und mit Luft machen sie Zucker. Davon lebt und wächst die Pflanze. Dabei geben sie **Sauerstoff** ab – den brauchen wir zum Atmen.',
-        'Die **Blüte** lockt Insekten an. Sie bringen Blütenstaub von Blüte zu Blüte. Danach entsteht die **Frucht** mit den **Samen**. Aus einem Samen kann eine neue Pflanze wachsen.',
+        'Die **Blüte** lockt Insekten an. Die Insekten tragen den Blütenstaub von Blüte zu Blüte. Danach entsteht die **Frucht** mit den **Samen**. Aus einem Samen kann eine neue Pflanze wachsen.',
       ],
       woerter: [['die Pflanze', 'la plante'], ['die Wurzel', 'la racine'], ['der Stängel', 'la tige'], ['das Blatt', 'la feuille'], ['die Blüte', 'la fleur'], ['die Frucht', 'le fruit'], ['der Samen', 'la graine'], ['der Nährstoff', 'le nutriment']],
       aufgaben: [
@@ -176,7 +176,7 @@ export const LEKTIONEN = [
       quelle: 'Rückseite einer Samentüte (Beispiel)', titel: 'Was steht auf der Samentüte?',
       absaetze: [
         'Auf der Rückseite einer Samentüte stehen alle wichtigen Angaben. Lies sie **vor** dem Säen genau. Die Zeichnung unten zeigt die Tüte für **Radieschen**.',
-        '**Aussaat** sagt dir, in welchen Monaten man säen kann. **Saattiefe** sagt, wie tief der Samen in die Erde kommt. Eine Faustregel: so tief, wie der Samen zwei- bis dreimal dick ist. Winzige Samen wie Kresse drückt man nur an.',
+        '**Aussaat** sagt dir, in welchen Monaten man säen kann. **Saattiefe** sagt, wie tief der Samen in die Erde kommt. Eine Faustregel: zwei- bis dreimal so tief, wie der Samen dick ist. Winzige Samen wie Kresse drückt man nur an.',
         '**Abstand** sagt, wie viel Platz jede Pflanze braucht. Stehen die Pflanzen zu eng, bleiben sie klein. **Keimung** sagt, wann die ersten grünen Spitzen kommen. **Ernte** sagt, wann du ernten kannst.',
         'Im **Kalender** zeigt Grün die Monate zum Säen und Orange die Monate zum Ernten. Im Winter kannst du Kresse drinnen auf der Fensterbank säen.',
       ],
@@ -398,7 +398,7 @@ export const LEKTIONEN = [
         ['Lina', 'Also darf man die Nisthilfe im Winter nicht wegräumen?'],
         ['Frau Schmit', 'Genau. Lasst sie draußen hängen. In den verschlossenen Löchern warten die jungen Bienen auf den Frühling.'],
         ['Noah', 'Stechen Wildbienen?'],
-        ['Frau Schmit', 'Fast nie. Ihr könnt ruhig nah herangehen und zuschauen. Nur nicht hineinpusten oder in die Löcher stochern.'],
+        ['Frau Schmit', 'Fast nie. Ihr könnt ruhig nah herangehen und zuschauen. Wer allergisch auf Insektenstiche ist, sagt es vorher der Lehrperson. Nur nicht hineinpusten oder in die Löcher stochern.'],
         ['Lina', 'Was ist der wichtigste Tipp?'],
         ['Frau Schmit', 'Blumen! Ein Bienen-Haus ohne Blüten in der Nähe ist wie ein Haus ohne Küche.'],
       ],

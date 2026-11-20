@@ -453,3 +453,28 @@ export function rolleVorwaerts() {
   o += nr(62, 212, 1, '#1f6aa0', 12) + nr(172, 212, 2, '#1f6aa0', 12) + nr(300, 212, 3, '#1f6aa0', 12) + nr(440, 212, 4, '#1f6aa0', 12)
   return `<figure class="rolle">${o}</svg></figure>`
 }
+
+/** Körper von vorn und hinten mit Muskelgruppen 1–8 (vereinfacht, neutrale Farbe) */
+export function muskeln() {
+  const K = '#e3e7ee', R = '#2a2f3a', M = '#f2a39a'
+  const koerper = (x) => {
+    let o = `<circle cx="${x}" cy="40" r="20" fill="${K}" stroke="${R}" stroke-width="2"/><rect x="${x - 8}" y="58" width="16" height="12" fill="${K}" stroke="${R}" stroke-width="2"/>`
+    o += `<path d="M${x - 42} 72 Q${x} 62 ${x + 42} 72 L${x + 36} 170 Q${x} 180 ${x - 36} 170 Z" fill="${K}" stroke="${R}" stroke-width="2"/>`
+    o += `<rect x="${x - 64}" y="76" width="18" height="96" rx="9" transform="rotate(8 ${x - 55} 76)" fill="${K}" stroke="${R}" stroke-width="2"/><rect x="${x + 46}" y="76" width="18" height="96" rx="9" transform="rotate(-8 ${x + 55} 76)" fill="${K}" stroke="${R}" stroke-width="2"/>`
+    o += `<rect x="${x - 34}" y="168" width="28" height="120" rx="12" fill="${K}" stroke="${R}" stroke-width="2"/><rect x="${x + 6}" y="168" width="28" height="120" rx="12" fill="${K}" stroke="${R}" stroke-width="2"/>`
+    return o
+  }
+  const fl = (cx, cy, rx, ry, rot = 0) => `<ellipse cx="${cx}" cy="${cy}" rx="${rx}" ry="${ry}" transform="rotate(${rot} ${cx} ${cy})" fill="${M}" stroke="#c0392b" stroke-width="1.2"/>`
+  let o = `<svg viewBox="0 0 520 330" xmlns="http://www.w3.org/2000/svg" class="muskel-svg">`
+  const a = 140, b = 380
+  o += koerper(a) + koerper(b)
+  // vorn: Brust, Bizeps, Bauch, Oberschenkel vorn
+  o += fl(a - 17, 92, 15, 10) + fl(a + 17, 92, 15, 10) + fl(a - 58, 108, 7, 16, 8) + fl(a + 58, 108, 7, 16, -8) + `<rect x="${a - 14}" y="110" width="28" height="50" rx="6" fill="${M}" stroke="#c0392b" stroke-width="1.2"/>` + fl(a - 20, 210, 11, 30) + fl(a + 20, 210, 11, 30)
+  // hinten: Trizeps, Rücken, Po, Waden
+  o += fl(b - 58, 110, 7, 16, 8) + fl(b + 58, 110, 7, 16, -8) + `<path d="M${b - 34} 80 Q${b} 70 ${b + 34} 80 L${b + 20} 140 Q${b} 146 ${b - 20} 140 Z" fill="${M}" stroke="#c0392b" stroke-width="1.2"/>` + fl(b - 15, 170, 15, 14) + fl(b + 15, 170, 15, 14) + fl(b - 20, 252, 9, 22) + fl(b + 20, 252, 9, 22)
+  const lin = (x1, y1, x2, y2) => `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="#c0392b" stroke-width="1.4"/>`
+  o += lin(a + 30, 92, 236, 80) + nr(248, 80, 1) + lin(a - 62, 108, 40, 100) + nr(28, 100, 2) + lin(a + 14, 135, 236, 140) + nr(248, 140, 3) + lin(a - 30, 210, 40, 220) + nr(28, 220, 4)
+  o += lin(b + 62, 110, 476, 100) + nr(488, 100, 5) + lin(b - 20, 100, 290, 90) + nr(278, 90, 6) + lin(b + 28, 170, 476, 180) + nr(488, 180, 7) + lin(b - 28, 252, 290, 262) + nr(278, 262, 8)
+  o += t(a, 318, 'von vorn', { gr: 13, farbe: '#5b6475' }) + t(b, 318, 'von hinten', { gr: 13, farbe: '#5b6475' })
+  return `<figure class="muskel">${o}</svg></figure>`
+}

@@ -167,7 +167,7 @@ export const LEKTIONEN = [
     start: {
       was: 'Rate mal!',
       aufgaben: [
-        { art: 'zuordnen', auftrag: 'Welches Atelier-Modul passt zu welchem Beruf? Verbinde.', stufe: 1, links: ['Metall und Maschinen', 'Garten und Natur', 'Textil und Gestalten', 'Kochen und Hygiene', 'Planen und zeichnen'], rechts: ['Metallbauer/in', 'Gärtner/in', 'Änderungsschneider/in', 'Koch/Köchin', 'technische/r Zeichner/in'] },
+        { art: 'zuordnen', auftrag: 'Welches Atelier-Modul passt zu welchem Beruf? Verbinde.', stufe: 1, links: ['Metall und Maschinen', 'Garten und Natur', 'Textil und Gestalten', 'Küche und Hygiene', 'Planen und zeichnen'], rechts: ['Metallbauer/in', 'Gärtner/in', 'Änderungsschneider/in', 'Koch/Köchin', 'technische/r Zeichner/in'] },
       ],
     },
     lesen: {
@@ -179,7 +179,7 @@ export const LEKTIONEN = [
         '### Wie lernt man einen Beruf?',
         'In Luxemburg lernt man viele Handwerksberufe in einer **Ausbildung**: in der **Schule** und im **Betrieb**. Zwei wichtige Abschlüsse sind das **CCP** (mit viel Praxis) und das **DAP**. Sie dauern meistens **drei Jahre**. Welche Wege für dich offenstehen, besprichst du am besten mit deiner Lehrperson und mit der Berufsberatung.',
         '### Was Betriebe sich wünschen',
-        'Fast alle Betriebe sagen: Am wichtigsten sind **Zuverlässigkeit**, **Pünktlichkeit**, **Motivation** und **Freundlichkeit**. Vieles Fachliche lernt man im Betrieb.',
+        'Fast alle Betriebe sagen: Am wichtigsten sind **Zuverlässigkeit**, **Pünktlichkeit**, **Motivation** und **Freundlichkeit**. Vieles Fachliche lernt man im Betrieb. Alle diese Berufe können Frauen und Männer lernen.',
       ],
       woerter: [['der Beruf', 'le métier'], ['das Berufsfeld', 'le domaine professionnel'], ['der Schreiner', 'le menuisier'], ['der Metallbauer', 'le constructeur métallique'], ['der Gärtner', 'le jardinier'], ['die Ausbildung', 'la formation'], ['der Betrieb', 'l’entreprise'], ['die Berufsberatung', 'l’orientation professionnelle']],
       aufgaben: [
@@ -189,14 +189,14 @@ export const LEKTIONEN = [
     hoeren: {
       was: 'Ein Berufe-Rätsel', wo: 'Podcast der Schülerzeitung', titel: 'Wer bin ich?',
       situation: 'Drei Menschen beschreiben ihren Beruf, ohne den Namen zu sagen. Errätst du, welcher Beruf es ist?',
-      bild: ['yusuf:froh:stehen-zeigen', 'amira:aufgeregt:stehen'], sprecher: { Sprecherin: 'w3', 'Person 1': 'm1', 'Person 2': 'w2', 'Person 3': 'm2' },
+      bild: ['yusuf:froh:stehen-zeigen', 'amira:aufgeregt:stehen'], sprecher: { Sprecherin: 'w3', 'Person 1': 'm1', 'Person 2': 'm2', 'Person 3': 'w2' },
       text: [
         ['Sprecherin', 'Willkommen beim Berufe-Rätsel! Hört gut zu und ratet mit. Person eins, bitte.'],
         ['Person 1', 'Ich stehe früh auf und arbeite oft draußen, auch wenn es regnet. Im Frühling setze ich Blumen und Sträucher, im Sommer mähe ich und gieße, im Herbst sammle ich Laub. Ich brauche Spaten, Schubkarre und manchmal einen kleinen Bagger.'],
         ['Sprecherin', 'Danke! Person zwei.'],
-        ['Person 2', 'Bei mir ist es heiß und laut. Ich arbeite viel abends und am Wochenende, weil die Leute dann essen gehen. Ich schneide Gemüse, brate Fleisch und achte sehr auf Hygiene. Wenn um zwölf Uhr fünfzig Bestellungen kommen, muss das Team perfekt zusammenarbeiten.'],
+        ['Person 2', 'Bei mir ist es heiß und laut. Ich arbeite viel abends und am Wochenende, weil die Leute dann essen gehen. Ich schneide Gemüse, brate Fleisch und achte sehr auf Hygiene. Wenn mittags fünfzig Bestellungen auf einmal kommen, muss das Team perfekt zusammenarbeiten.'],
         ['Sprecherin', 'Und Person drei.'],
-        ['Person 3', 'Ich lese technische Zeichnungen und baue Treppengeländer und Tore aus Stahl. Ich säge, bohre, biege und schweiße. Schutzbrille und Handschuhe sind bei mir Pflicht. Am schönsten ist es, wenn das Geländer am Ende genau passt.'],
+        ['Person 3', 'Ich lese technische Zeichnungen und baue Treppengeländer und Tore aus Stahl. Ich säge, bohre, biege und schweiße. Beim Schweißen trage ich einen Schweißhelm und dicke Handschuhe. An der Bohrmaschine trage ich eine Schutzbrille – und keine Handschuhe. Am schönsten ist es, wenn das Geländer am Ende genau passt.'],
         ['Sprecherin', 'Na, habt ihr alle drei erraten? Die Lösung steht im Heft eurer Lehrperson!'],
       ],
       vor: [{ art: 'mc', auftrag: 'Was ist ein Geländer? Kreuze an.', stufe: 1, fragen: [{ f: '', o: ['etwas zum Festhalten an der Treppe oder am Balkon', 'ein Garten'], r: 0 }] }],
@@ -239,8 +239,8 @@ export const LEKTIONEN = [
       absaetze: [
         '**Vorher:** Schau dir den Weg zum Betrieb an und plane genug Zeit ein. Frag, welche **Kleidung** du brauchst – zum Beispiel Sicherheitsschuhe oder Arbeitshose. Schreib dir die **Telefonnummer** des Betriebs und den Namen deiner Ansprechperson auf.',
         '**Am ersten Tag:** Sei **pünktlich**, lieber zehn Minuten zu früh. Begrüße alle freundlich. Hör bei der **Sicherheitsunterweisung** genau zu. Schreib dir wichtige Dinge auf.',
-        '**Jeden Tag:** Das **Handy** bleibt in der Pause. **Frag nach**, wenn du etwas nicht verstehst – das ist besser als ein Fehler. Wenn du fertig bist, frag: „Was kann ich jetzt machen?“ Halte deinen Arbeitsplatz **ordentlich**.',
-        '**Wenn du krank bist:** Ruf **vor Arbeitsbeginn** im Betrieb **an** – eine Nachricht reicht meistens nicht. Sag deinen Namen, dass du Praktikant bist, dass du krank bist und wie lange du wahrscheinlich fehlst. Sag auch in der **Schule** Bescheid. Frag, ob du ein **ärztliches Attest** brauchst.',
+        '**Jeden Tag:** Das **Handy** benutzt du nur in der Pause. **Frag nach**, wenn du etwas nicht verstehst – das ist besser als ein Fehler. Wenn du fertig bist, frag: „Was kann ich jetzt machen?“ Halte deinen Arbeitsplatz **ordentlich**.',
+        '**Wenn du krank bist:** Ruf **vor Arbeitsbeginn** im Betrieb **an** – eine Nachricht reicht meistens nicht. Sag deinen Namen, dass du Praktikantin oder Praktikant bist, dass du krank bist und wie lange du wahrscheinlich fehlst. Sag auch in der **Schule** Bescheid. Frag, ob du ein **ärztliches Attest** brauchst.',
         '**Und:** Wenn dir etwas komisch vorkommt oder dich jemand schlecht behandelt, sprich mit deiner Lehrperson. Du bist nicht allein.',
       ],
       woerter: [['das Praktikum', 'le stage'], ['der Praktikant', 'le stagiaire'], ['die Ansprechperson', 'la personne de contact'], ['die Sicherheitsunterweisung', 'les consignes de sécurité'], ['die Krankmeldung', 'l’avis de maladie'], ['das Attest', 'le certificat médical'], ['der Arbeitsbeginn', 'le début du travail'], ['Bescheid sagen', 'prévenir']],
@@ -321,7 +321,7 @@ export const LEKTIONEN = [
       text: [
         ['Tom', 'Hallo zusammen. Ich stelle euch heute mein Vogelhaus vor.'],
         ['Tom', 'Es ist aus Fichtenholz, achtzehn Millimeter dick. Das Dach ist aus Sperrholz. Ich habe zuerst eine Zeichnung und eine Stückliste gemacht. Dann habe ich gesägt, das Einflugloch gebohrt, geschliffen und alles verschraubt. Das Dach kann man aufklappen, damit man das Haus im Herbst putzen kann.'],
-        ['Tom', 'Schwierig war das Einflugloch. Der große Bohrer ist beim ersten Versuch ausgerissen und das Holz ist gesplittert. Herr Steffen hat mir gezeigt, dass ich ein Restholz dahinter legen muss. Beim zweiten Mal war das Loch ganz sauber.'],
+        ['Tom', 'Schwierig war das Einflugloch. Beim ersten Versuch ist das Holz auf der Rückseite ausgerissen und gesplittert. Herr Steffen hat mir gezeigt, dass ich ein Restholz dahinterlegen muss. Beim zweiten Mal war das Loch ganz sauber.'],
         ['Tom', 'Gelernt habe ich, dass gute Planung viel Zeit spart. Und ich bin stolz, dass das Haus jetzt bei meiner Oma im Garten hängt und schon Meisen eingezogen sind. Habt ihr Fragen?'],
         ['Nele', 'Ich habe keine Frage, aber eine Rückmeldung: Du hast laut und deutlich gesprochen, und man hat alle vier Teile erkannt. Toll, dass du das Problem mit dem Bohrer erzählt hast. Mein Tipp: Zeig das Werkstück noch mehr – halt es hoch, wenn du über das Dach sprichst.'],
       ],
@@ -368,7 +368,7 @@ export const LEKTIONEN = [
       was: 'Ein Sachtext', art: 'text', stimme: 'm1', nummern: false,
       quelle: 'Projekt-Anleitung', titel: 'Was ist ein Meisterstück?',
       absaetze: [
-        'Früher mussten Handwerker ein **Meisterstück** bauen, um zu zeigen, dass sie ihren Beruf beherrschen. Dein Meisterstück zeigt, was du im Atelier gelernt hast: **planen**, **sicher arbeiten**, **genau sein** und **präsentieren**.',
+        'Wer im Handwerk Meisterin oder Meister werden will, baut bis heute ein **Meisterstück**. Damit zeigt man, dass man den Beruf beherrscht. Dein Meisterstück zeigt, was du im Atelier gelernt hast: **planen**, **sicher arbeiten**, **genau sein** und **präsentieren**.',
         '### Der Projektvertrag',
         'Bevor du anfängst, schließt du mit deiner Lehrperson einen **Projektvertrag**. Darin steht: Was baust du? Bis wann? Welches Material und welche Maschinen brauchst du? Woran erkennt man, dass es gut ist? Beide unterschreiben. So wissen alle, was abgemacht ist.',
         '### Die Bewertung',

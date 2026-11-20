@@ -13,7 +13,7 @@ export const MODUL = sachModul('atelier', 3, {
   farbe: '#d08a1e',
   deckbild: ['yusuf:froh:stehen', 'jana:froh:stehen-zeigen', 'finn:froh:stehen'],
   blasen: [{ t: 'Schutzbrille auf!', x: 8, y: 104 }, { t: 'Was heißt das Zeichen?', x: 112, y: 92 }, { t: '112!', x: 176, y: 150 }],
-  aussprache: { '\\b230 V\\b': '230 Volt', '(\\d),5 V\\b': '\\1 Komma 5 Volt', '(\\d) V\\b': '\\1 Volt', '\\bFI-': 'Eff-I-' },
+  aussprache: { '\\b230 V\\b': '230 Volt', '(\\d),5 V\\b': '\\1 Komma 5 Volt', '(\\d) V\\b': '\\1 Volt', '\\bFI-': 'Eff-I-', '\\bSTOP\\b': 'Stopp' },
   themen: [
     { titel: { de: 'Zeichen und Schutz', fr: 'Signes et protection' }, icon: 'helmet', lektionen: 2 },
     { titel: { de: 'Gefahren', fr: 'Dangers' }, icon: 'alert-triangle', lektionen: 2 },
@@ -109,7 +109,7 @@ export const LEKTIONEN = [
       was: 'Ein Sachtext', art: 'text', stimme: 'm1', nummern: false,
       quelle: 'Sachtext (vereinfacht)', titel: 'Die richtige Ausrüstung',
       absaetze: [
-        'In der Werkstatt schützt man den Körper mit **Persönlicher Schutzausrüstung**. Welche man braucht, hängt von der Arbeit ab.',
+        'In der Werkstatt schützt man den Körper mit **persönlicher Schutzausrüstung**. Welche man braucht, hängt von der Arbeit ab.',
         '**Schutzbrille:** beim Bohren, Schleifen, Sägen mit der Maschine und beim Arbeiten mit Chemikalien. Augen kann man nicht ersetzen.',
         '**Gehörschutz:** bei lauten Maschinen. Lärm macht das Gehör langsam und unbemerkt kaputt – und das heilt nicht mehr.',
         '**Handschuhe:** beim Arbeiten mit scharfen Blechen, heißen Teilen oder Chemikalien. **Aber Achtung:** An **Maschinen, die sich drehen** (Bohrmaschine, Drehbank), trägt man **keine Handschuhe**! Ein Handschuh kann sich verfangen und die ganze Hand mitreißen.',
@@ -172,7 +172,7 @@ export const LEKTIONEN = [
   // ================================================================ 3
   {
     thema: 'Gefahren erkennen · Ordnung', titel: 'Gefahren-Detektive', untertitel: 'Unfälle passieren oft wegen Kleinigkeiten: ein Kabel auf dem Boden, ein offenes Messer, eine nasse Stelle. Du lernst, Gefahren zu erkennen, bevor etwas passiert, und machst einen Gefahren-Rundgang.',
-    ziel: { de: 'Ich erkenne Gefahren am Arbeitsplatz und schlage vor, wie man sie beseitigt.', fr: 'Je repère les dangers au poste de travail et je propose comment les éliminer.' },
+    ziel: { de: 'Ich erkenne Gefahren am Arbeitsplatz und schlage vor, wie man sie beseitigt.', fr: 'Je repère les dangers au poste de travail et je propose des solutions pour les éliminer.' },
     bild: ['jana:froh:handy', 'noah:verwirrt:stehen'],
     start: {
       was: 'Was kann passieren?',
@@ -188,14 +188,14 @@ export const LEKTIONEN = [
         '### Typische Gefahren',
         '**Stolperfallen**: Kabel, Bretter oder Taschen auf dem Boden. **Rutschgefahr**: nasse oder ölige Stellen. **Scharfe Kanten**: Bleche, Messer, Glasscherben. **Hitze**: Herdplatten, Lötkolben, frisch geschweißte Teile. **Chemikalien**: Lacke, Kleber, Putzmittel (achte auf die Gefahrensymbole!). **Lärm und Staub**.',
         '### Die STOP-Reihenfolge',
-        'Profis gehen so vor: Zuerst versucht man, die Gefahr **ganz zu beseitigen** (Kabel wegräumen). Wenn das nicht geht, wird sie **technisch** abgesichert (Schutzgitter an der Maschine). Dann kommen **Regeln** (nur mit Erlaubnis an die Maschine). Und zum Schluss die **persönliche Schutzausrüstung**.',
+        'Profis gehen so vor: Zuerst versucht man, die Gefahr **ganz zu beseitigen** (Kabel wegräumen). Wenn das nicht geht, wird sie **technisch** abgesichert (Schutzgitter an der Maschine). Dann kommen **Regeln** (nur mit Erlaubnis an die Maschine). Und zum Schluss die **persönliche Schutzausrüstung**. Die Anfangsbuchstaben helfen beim Merken: **S** wie Sache beseitigen, **T** wie Technik, **O** wie Organisation, also Regeln, **P** wie persönliche Schutzausrüstung.',
         '### Melden ist stark',
         'Wer eine Gefahr sieht, beseitigt sie, wenn es ungefährlich geht – oder **meldet** sie sofort der Lehrperson. Das ist kein Petzen, sondern Verantwortung.',
       ],
       woerter: [['die Gefahr', 'le danger'], ['der Unfall', 'l’accident'], ['verhindern', 'empêcher'], ['die Stolperfalle', 'le risque de trébucher'], ['rutschig', 'glissant'], ['die Scherbe', 'le tesson'], ['beseitigen', 'éliminer'], ['das Schutzgitter', 'la grille de protection']],
       aufgaben: [
         { art: 'ordnen', auftrag: 'Die STOP-Reihenfolge: Was kommt zuerst?', stufe: 2, teile: ['Gefahr ganz beseitigen', 'technisch absichern', 'Regeln aufstellen', 'Schutzausrüstung tragen'], ordnung: [2, 0, 3, 1] },
-        { art: 'zuordnen', auftrag: 'Welche Gefahr – welche Lösung? Verbinde.', stufe: 1, links: ['Kabel quer über dem Gang', 'Öl auf dem Boden', 'Glasscherbe auf der Werkbank', 'offener Lackeimer'], rechts: ['Kabel an der Wand entlang legen', 'sofort aufwischen, Schild aufstellen', 'mit Handfeger und Schaufel entsorgen', 'Deckel drauf, an einen gelüfteten Ort'] },
+        { art: 'zuordnen', auftrag: 'Welche Gefahr – welche Lösung? Verbinde.', stufe: 1, links: ['Kabel quer über dem Gang', 'Öl auf dem Boden', 'Glasscherbe auf der Werkbank', 'offener Lackeimer'], rechts: ['Kabel an der Wand entlang legen', 'sofort aufwischen, Schild aufstellen', 'mit Handfeger und Schaufel entsorgen', 'Deckel drauf, an einen gut belüfteten Ort'] },
       ],
     },
     hoeren: {
@@ -258,8 +258,8 @@ export const LEKTIONEN = [
         'Bei jeder Verletzung gilt: **Ruhe bewahren**, die Lehrperson **informieren**, bei schweren Verletzungen **112** rufen. Wer anderen hilft, trägt möglichst **Einmalhandschuhe**.',
         '**Schnitt:** Die Wunde unter klarem Wasser ausspülen. Ein Pflaster oder einen Verband darauf. Wenn es stark blutet: mit einem sauberen Tuch fest **draufdrücken**, Arm hochhalten, Hilfe holen.',
         '**Verbrennung:** Sofort **10 bis 20 Minuten** unter **kühles** (nicht eiskaltes) fließendes Wasser halten. Keine Butter, kein Mehl, keine Zahnpasta. Blasen nicht aufstechen. Große Verbrennungen: 112.',
-        '**Splitter:** Mit einer sauberen Pinzette in Richtung, aus der er kam, herausziehen, dann desinfizieren. Tiefe Splitter oder Splitter unter dem Nagel: zur Ärztin.',
-        '**Etwas im Auge:** **Nicht reiben!** Mit der Augenspülflasche oder klarem Wasser ausspülen. Bei Metallsplittern oder Chemikalien sofort zum Arzt.',
+        '**Splitter:** Mit einer sauberen Pinzette herausziehen – in die Richtung, aus der er gekommen ist –, dann desinfizieren. Tiefe Splitter oder Splitter unter dem Nagel: zur Ärztin.',
+        '**Etwas im Auge:** **Nicht reiben!** Mit der Augenspülflasche oder klarem Wasser ausspülen. Bei Chemikalien: sofort mindestens 10 Minuten spülen, dann zum Arzt. Bei Metallsplittern: nicht selbst herausholen, Auge nicht berühren, sofort zum Arzt.',
         '**Quetschung oder Prellung:** Kühlen (ein Kühlpack in einem Tuch, nie direkt auf die Haut), hochlagern.',
       ],
       woerter: [['die Wunde', 'la plaie'], ['ausspülen', 'rincer'], ['der Verband', 'le pansement'], ['die Verbrennung', 'la brûlure'], ['die Blase', 'l’ampoule, la cloque'], ['die Pinzette', 'la pince à épiler'], ['desinfizieren', 'désinfecter'], ['die Prellung', 'la contusion']],
@@ -278,17 +278,17 @@ export const LEKTIONEN = [
         ['Lehrerin', 'Und dann?'],
         ['Lea', 'Ich habe zuerst den Herd ausgeschaltet, damit nichts anbrennt. Dann habe ich ihn zum Waschbecken gebracht und seine Hand unter kühles Wasser gehalten. Nicht eiskalt.'],
         ['Lehrerin', 'Wie lange?'],
-        ['Lea', 'Ich habe auf der Uhr geschaut: fünfzehn Minuten. Noah hat Sie in der Zwischenzeit geholt.'],
+        ['Lea', 'Ich habe auf die Uhr geschaut: fünfzehn Minuten. Noah hat Sie in der Zwischenzeit geholt.'],
         ['Lehrerin', 'Sehr gut. Und Ben wollte Zahnpasta drauf, habe ich gehört?'],
         ['Lea', 'Ja, das hat seine Oma immer gemacht. Aber wir haben gelernt, dass man das nicht macht.'],
-        ['Lehrerin', 'Richtig. Du hast ruhig und genau richtig reagiert. Die Haut ist nur rot, keine Blasen. Ben braucht jetzt nur noch ein Pflaster und eine Pause.'],
+        ['Lehrerin', 'Richtig. Du hast ruhig und genau richtig reagiert. Die Haut ist nur rot, keine Blasen. Ben braucht jetzt nur noch eine Pause. Wir schauen später noch einmal nach der Haut.'],
       ],
       vor: [{ art: 'mc', auftrag: 'Was ist ein Topflappen? Kreuze an.', stufe: 1, fragen: [{ f: '', o: ['ein dicker Stoff, mit dem man heiße Töpfe anfasst', 'ein Putzlappen'], r: 0 }] }],
       beim: [
-        { art: 'ordnen', auftrag: 'Hör zu. Ordne, was Lea getan hat.', stufe: 1, teile: ['Herd ausgeschaltet', 'Ben zum Waschbecken gebracht', 'Hand 15 Minuten unter kühles Wasser gehalten', 'Noah hat die Lehrerin geholt'], ordnung: [2, 0, 3, 1] },
+        { art: 'ordnen', auftrag: 'Hör zu. Ordne, was Lea getan hat.', stufe: 1, teile: ['Herd ausgeschaltet', 'Ben zum Waschbecken gebracht', 'Hand 15 Minuten unter kühles Wasser gehalten', 'der Lehrerin alles erzählt'], ordnung: [2, 0, 3, 1] },
         { art: 'fragen', auftrag: 'Was hat Lea nicht gemacht, obwohl Ben es wollte? Warum?', stufe: 2, fragen: [{ f: '', zeilen: 2, l: 'Keine Zahnpasta auf die Verbrennung; das macht man nicht, nur kühles Wasser hilft.' }] },
       ],
-      nach: [{ art: 'sprechen', auftrag: 'Welche „Hausmittel“ kennt ihr, die eigentlich nicht helfen? Was hilft wirklich?', stufe: 2, karten: [
+      nach: [{ art: 'sprechen', auftrag: 'Welche Tipps gegen Verbrennungen habt ihr schon gehört? Was sagt die Erste Hilfe dazu? Was hilft wirklich?', stufe: 2, karten: [
         { titel: 'Satzanfänge', text: ['Manche sagen …', 'Richtig ist …'] }] }],
     },
     regel: {
@@ -409,7 +409,7 @@ export const LEKTIONEN = [
       ],
       woerter: [['der Strom', 'le courant'], ['die Steckdose', 'la prise'], ['der Stecker', 'la fiche'], ['das Kabel', 'le câble'], ['die Hülle', 'la gaine'], ['locker', 'desserré'], ['das Sägeblatt', 'la lame de scie'], ['die Kabeltrommel', 'l’enrouleur']],
       aufgaben: [
-        { art: 'zuordnen', auftrag: 'Welche Regel passt? Verbinde.', stufe: 1, links: ['Das Kabel der Stichsäge hat einen Riss.', 'Tom will den Bohrer wechseln.', 'Die Kabeltrommel ist noch halb aufgerollt.', 'Mia hat gerade Hände gewaschen.'], rechts: ['Gerät nicht benutzen, melden.', 'Zuerst den Stecker ziehen.', 'Ganz abrollen.', 'Erst gut abtrocknen.'] },
+        { art: 'zuordnen', auftrag: 'Welche Regel passt? Verbinde.', stufe: 1, links: ['Das Kabel der Stichsäge hat einen Riss.', 'Tom will den Bohrer wechseln.', 'Die Kabeltrommel ist noch halb aufgerollt.', 'Mia hat sich gerade die Hände gewaschen.'], rechts: ['Gerät nicht benutzen, melden.', 'Zuerst den Stecker ziehen.', 'Ganz abrollen.', 'Erst gut abtrocknen.'] },
       ],
     },
     hoeren: {

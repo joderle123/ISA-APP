@@ -25,7 +25,7 @@ const TEAM = '#7a4fa0', FEED = '#2f8a6b'
 export const LEKTIONEN = [
   // ================================================================ 1
   {
-    thema: 'Rollen im Team', titel: 'Wer macht was?', untertitel: 'In einem guten Team weiß jede Person, was ihre Aufgabe ist. Du lernst typische Rollen in der Werkstatt kennen, hörst ein Team, das sich erst streitet, und verteilt die Rollen in deiner Gruppe.',
+    thema: 'Rollen im Team', titel: 'Wer macht was?', untertitel: 'In einem guten Team weiß jede Person, was ihre Aufgabe ist. Du lernst typische Rollen in der Werkstatt kennen, hörst ein Team, das sich erst streitet, und verteilst die Rollen in deiner Gruppe.',
     ziel: { de: 'Ich kenne Rollen im Team und übernehme eine Rolle verantwortungsvoll.', fr: 'Je connais les rôles dans une équipe et j’assume un rôle de manière responsable.' },
     bild: ['yusuf:wuetend:stehen', 'nele:enttaeuscht:rollstuhl'],
     start: {
@@ -102,7 +102,7 @@ export const LEKTIONEN = [
   // ================================================================ 2
   {
     thema: 'Serienfertigung · Arbeitsteilung', titel: 'Wir produzieren in Serie', untertitel: 'Eine Person baut ein ganzes Teil – oder jede Person macht immer denselben Schritt? Du lernst Einzelfertigung und Serienfertigung kennen und rechnest, was schneller geht.',
-    ziel: { de: 'Ich unterscheide Einzel- und Serienfertigung und arbeite an einer Station.', fr: 'Je distingue production unitaire et production en série et je travaille à un poste.' },
+    ziel: { de: 'Ich unterscheide Einzel- und Serienfertigung und arbeite an einer Station.', fr: 'Je distingue la production unitaire de la production en série et je travaille à un poste.' },
     bild: ['ben:froh:blatt', 'lehrer:froh:erklaeren'],
     start: {
       was: 'Was denkst du?',
@@ -135,7 +135,7 @@ export const LEKTIONEN = [
         ['Herr Steffen', 'Ben, wie ist es in eurer Gruppe gelaufen?'],
         ['Ben', 'Wir hatten vier Stationen: Anzeichnen mit der Schablone, Sägen, Bohren und Schleifen. Am Anfang waren wir langsam, weil das Sägen am längsten gedauert hat. Die Bohr-Station musste warten.'],
         ['Herr Steffen', 'Was habt ihr gemacht?'],
-        ['Ben', 'Wir haben einen zweiten Säger eingesetzt. Danach lief es viel besser.'],
+        ['Ben', 'Wer an der Bohr-Station warten musste, hat zwischendurch mitgesägt. Danach lief es viel besser.'],
         ['Herr Steffen', 'Und das Ergebnis?'],
         ['Ben', 'In vierzig Minuten haben wir mit vier Leuten vierundzwanzig Anhänger geschafft. Gruppe A hatte auch vier Leute und hat sechzehn geschafft.'],
         ['Herr Steffen', 'Wie war die Qualität?'],
@@ -144,7 +144,7 @@ export const LEKTIONEN = [
       ],
       vor: [{ art: 'mc', auftrag: 'Was ist eine Schablone? Kreuze an.', stufe: 1, fragen: [{ f: '', o: ['eine Vorlage, mit der man immer die gleiche Form anzeichnet', 'ein Werkzeug zum Sägen'], r: 0 }] }],
       beim: [
-        { art: 'fragen', auftrag: 'Hör zu und antworte.', stufe: 1, fragen: [{ f: 'Welche vier Stationen hatte Gruppe B?', zeilen: 2, l: 'Anzeichnen mit Schablone, Sägen, Bohren, Schleifen' }, { f: 'Wo gab es einen Stau? Was hat die Gruppe gemacht?', zeilen: 2, l: 'beim Sägen; sie haben einen zweiten Säger eingesetzt' }, { f: 'Wie viele Anhänger haben Gruppe A und Gruppe B geschafft?', l: 'A: 16, B: 24' }, { f: 'Welchen Nachteil nennt Ben?', l: 'Immer dasselbe (schleifen) wird langweilig.' }] },
+        { art: 'fragen', auftrag: 'Hör zu und antworte.', stufe: 1, fragen: [{ f: 'Welche vier Stationen hatte Gruppe B?', zeilen: 2, l: 'Anzeichnen mit Schablone, Sägen, Bohren, Schleifen' }, { f: 'Wo gab es einen Stau? Was hat die Gruppe gemacht?', zeilen: 2, l: 'beim Sägen; die Person von der Bohr-Station hat mitgesägt' }, { f: 'Wie viele Anhänger haben Gruppe A und Gruppe B geschafft?', l: 'A: 16, B: 24' }, { f: 'Welchen Nachteil nennt Ben?', l: 'Immer dasselbe (schleifen) wird langweilig.' }] },
       ],
       nach: [{ art: 'sprechen', auftrag: 'Würdest du lieber in Einzelfertigung oder in Serienfertigung arbeiten? Warum?', stufe: 2, karten: [
         { titel: 'Satzanfänge', text: ['Ich würde lieber …, weil …', 'Ein Nachteil ist …'] }] }],
@@ -281,7 +281,7 @@ export const LEKTIONEN = [
       ],
       vor: [{ art: 'mc', auftrag: 'Was ist ein Probestück? Kreuze an.', stufe: 1, fragen: [{ f: '', o: ['ein erstes Teil, mit dem man testet, ob alles richtig eingestellt ist', 'ein Stück Kuchen zum Probieren'], r: 0 }] }],
       beim: [
-        { art: 'ordnen', auftrag: 'Hör zu. Ordne, was passiert.', stufe: 1, teile: ['Nele stoppt die Arbeit.', 'Sie messen die Teile: 117 statt 120 mm.', 'Sie finden die Ursache: Der Anschlag ist gerutscht.', 'Yusuf stellt den Anschlag neu ein.', 'Er sägt ein Probestück: 120 mm.', 'Aus dem Ausschuss werden kleine Untersetzer.'], ordnung: [2, 5, 0, 4, 1, 3] },
+        { art: 'ordnen', auftrag: 'Hör zu. Ordne, was passiert.', stufe: 1, teile: ['Nele misst: Die Teile haben nur 117 statt 120 mm.', 'Nele stoppt die Arbeit.', 'Sie finden die Ursache: Der Anschlag ist gerutscht.', 'Yusuf stellt den Anschlag neu ein.', 'Er sägt ein Probestück: 120 mm.', 'Aus dem Ausschuss werden kleine Untersetzer.'], ordnung: [2, 5, 0, 4, 1, 3] },
       ],
       nach: [{ art: 'sprechen', auftrag: 'Nele hat die ganze Klasse gestoppt. War das mutig? Was hätte passieren können, wenn sie nichts gesagt hätte?', stufe: 2, karten: [
         { titel: 'Satzanfänge', text: ['Ich finde, Nele …', 'Wenn sie nichts gesagt hätte, …'] }] }],
@@ -334,22 +334,22 @@ export const LEKTIONEN = [
     hoeren: {
       was: 'Zwei Rückmeldungen', wo: 'Werkstatt · Abschlussrunde', titel: 'Zweimal Feedback für Tom',
       situation: 'Tom zeigt sein Schlüsselbrett. Zwei Mitschülerinnen geben ihm eine Rückmeldung. Hör genau: Was ist der Unterschied?',
-      bild: ['tom:verlegen:stehen', 'chloe:froh:stehen'], sprecher: { Tom: 'm3', Jana: 'w2', Chloe: 'w3' },
+      bild: ['tom:verlegen:stehen', 'chloe:froh:stehen'], sprecher: { Tom: 'm3', Jana: 'w2', Chloé: 'w3' },
       text: [
         ['Tom', 'Das ist mein Schlüsselbrett. Es hat fünf Haken.'],
         ['Jana', 'Hm. Die Haken sind schief. Und die Farbe ist irgendwie hässlich. Meins ist besser.'],
         ['Tom', '… Okay.'],
-        ['Chloe', 'Darf ich auch? Mir gefällt, dass die Kanten so schön rund geschliffen sind. Und die Idee mit dem kleinen Ablagebrett oben finde ich super – da kann man Post hinlegen.'],
-        ['Chloe', 'Was mir aufgefallen ist: Die Haken haben nicht ganz den gleichen Abstand. Vielleicht hilft es, die Löcher mit dem Lineal anzuzeichnen, bevor du bohrst.'],
-        ['Chloe', 'Und eine Frage: Mit was hast du das Holz gefärbt? Das sieht interessant aus.'],
-        ['Tom', 'Mit Tee! Danke, Chloe. Das mit dem Lineal mache ich beim nächsten Mal.'],
+        ['Chloé', 'Darf ich auch? Mir gefällt, dass die Kanten so schön rund geschliffen sind. Und die Idee mit dem kleinen Ablagebrett oben finde ich super – da kann man Post hinlegen.'],
+        ['Chloé', 'Was mir aufgefallen ist: Die Haken haben nicht ganz den gleichen Abstand. Vielleicht hilft es, die Löcher mit dem Lineal anzuzeichnen, bevor du bohrst.'],
+        ['Chloé', 'Und eine Frage: Womit hast du das Holz gefärbt? Das sieht interessant aus.'],
+        ['Tom', 'Mit Tee! Danke, Chloé. Das mit dem Lineal mache ich beim nächsten Mal.'],
       ],
       vor: [{ art: 'mc', auftrag: 'Was ist ein Schlüsselbrett? Kreuze an.', stufe: 1, fragen: [{ f: '', o: ['ein Brett mit Haken an der Wand, für Schlüssel', 'ein Spiel mit Schlüsseln'], r: 0 }] }],
       beim: [
-        { art: 'tabelle', auftrag: 'Hör zu. Vergleiche die beiden Rückmeldungen.', stufe: 2, kopf: ['', 'Jana', 'Chloe'], breiten: [30, 35, 35], zeilen: [['Was ist gut?', '[nichts]', '[runde Kanten, Ablagebrett]'], ['Was kann besser werden?', '[„schief“, „hässlich“ – nicht konkret]', '[Abstand der Haken ungleich]'], ['Tipp oder Frage', '[keiner; „Meins ist besser“]', '[mit Lineal anzeichnen; Frage nach der Farbe]'], ['Wie reagiert Tom?', '[still, „Okay“]', '[bedankt sich, will es umsetzen]']] },
+        { art: 'tabelle', auftrag: 'Hör zu. Vergleiche die beiden Rückmeldungen.', stufe: 2, kopf: ['', 'Jana', 'Chloé'], breiten: [30, 35, 35], zeilen: [['Was ist gut?', '[nichts]', '[runde Kanten, Ablagebrett]'], ['Was kann besser werden?', '[„schief“, „hässlich“ – nicht konkret]', '[Abstand der Haken ungleich]'], ['Tipp oder Frage', '[keiner; „Meins ist besser“]', '[mit Lineal anzeichnen; Frage nach der Farbe]'], ['Wie reagiert Tom?', '[still, „Okay“]', '[bedankt sich, will es umsetzen]']] },
       ],
-      nach: [{ art: 'sprechen', auftrag: 'Warum hilft Chloes Feedback mehr als Janas? Wie hätte Jana es besser sagen können?', stufe: 2, karten: [
-        { titel: 'Satzanfänge', text: ['Chloes Feedback hilft, weil …', 'Jana hätte sagen können: …'] }] }],
+      nach: [{ art: 'sprechen', auftrag: 'Warum hilft Chloés Feedback mehr als Janas? Wie hätte Jana es besser sagen können?', stufe: 2, karten: [
+        { titel: 'Satzanfänge', text: ['Chloés Feedback hilft, weil …', 'Jana hätte sagen können: …'] }] }],
     },
     regel: {
       reihen: [
@@ -407,7 +407,7 @@ export const LEKTIONEN = [
         ['Kundin', 'Oh, schön. Was ist das hier?'],
         ['Amira', 'Das ist ein Handyständer aus Aluminium. Wir haben ihn selbst gebogen und geschliffen. Er kostet 4 Euro.'],
         ['Kundin', 'Und die Untersetzer aus Holz?'],
-        ['Amira', 'Die sind aus Buche und mit Öl behandelt. Dann kann man auch eine heiße Tasse daraufstellen. Einer kostet 3 Euro, vier zusammen 10 Euro.'],
+        ['Amira', 'Die sind aus Buche und mit Öl behandelt, so sind sie vor Wasser geschützt. Man kann auch eine heiße Tasse daraufstellen. Einer kostet 3 Euro, vier zusammen 10 Euro.'],
         ['Kundin', 'Dann nehme ich vier Untersetzer. Ich habe nur einen Zwanzig-Euro-Schein.'],
         ['Amira', 'Kein Problem. Das macht 10 Euro. Sie bekommen 10 Euro zurück. Möchten Sie eine Tüte?'],
         ['Kundin', 'Nein danke, das passt in meine Tasche. Und wofür ist das Geld?'],

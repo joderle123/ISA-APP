@@ -267,7 +267,7 @@ export const LEKTIONEN = [
       ],
     },
     hoeren: {
-      was: 'Ein Gespräch', wo: 'Werkstatt', titel: 'Die Schraube dreht durch',
+      was: 'Ein Gespräch', wo: 'Werkstatt', titel: 'Das Bit rutscht ab',
       situation: 'Finn will eine Leiste an ein Brett schrauben. Es klappt nicht. Sami hilft ihm.',
       bild: ['finn:wuetend:stehen', 'sami:froh:erklaeren'], sprecher: { Finn: 'm3', Sami: 'm2' },
       text: [
@@ -280,7 +280,7 @@ export const LEKTIONEN = [
         ['Finn', 'Und wie bekomme ich die Schraube jetzt wieder raus?'],
         ['Sami', 'Schalter auf Linkslauf, dann langsam herausdrehen. Danach drehst du sie an einer neuen Stelle wieder ein.'],
       ],
-      vor: [{ art: 'mc', auftrag: 'Was bedeutet „Die Schraube dreht durch“? Kreuze an.', stufe: 1, fragen: [{ f: '', o: ['Sie dreht sich, hält aber nicht mehr fest.', 'Sie ist verrückt geworden.'], r: 0 }] }],
+      vor: [{ art: 'mc', auftrag: 'Was bedeutet „Das Bit rutscht ab“? Kreuze an.', stufe: 1, fragen: [{ f: '', o: ['Es springt aus dem Schraubenkopf heraus.', 'Es ist kaputt.'], r: 0 }] }],
       beim: [
         { art: 'zuordnen', auftrag: 'Hör zu. Welches Problem – welche Lösung? Verbinde.', stufe: 2, links: ['Das Bit rutscht raus.', 'Die Schraube geht zu tief ins Holz.', 'Die Schraube soll wieder raus.'], rechts: ['das passende Bit nehmen (PZ) und gerade drücken', 'das Drehmoment auf eine kleine Zahl stellen', 'auf Linkslauf schalten und langsam herausdrehen'] },
       ],
@@ -307,7 +307,7 @@ export const LEKTIONEN = [
   // ================================================================ 5
   {
     thema: 'Biegen und verbinden', titel: 'In Form bringen und zusammenfügen', untertitel: 'Dünnes Blech und Draht kann man biegen. Teile verbindet man mit Schrauben, Nieten oder Kleber. Du lernst, welche Verbindung man wieder lösen kann und welche nicht.',
-    ziel: { de: 'Ich biege Blech richtig und unterscheide lösbare und unlösbare Verbindungen.', fr: 'Je plie la tôle correctement et je distingue assemblages démontables et non démontables.' },
+    ziel: { de: 'Ich biege Blech richtig und unterscheide lösbare und unlösbare Verbindungen.', fr: 'Je plie la tôle correctement et je distingue les assemblages démontables des assemblages non démontables.' },
     bild: ['chloe:froh:handy', 'lehrer:froh:erklaeren'],
     start: {
       was: 'Sammle',
@@ -334,21 +334,21 @@ export const LEKTIONEN = [
     },
     hoeren: {
       was: 'Ein Gespräch', wo: 'Werkstatt · am Schraubstock', titel: 'Ein Riss im Blech',
-      situation: 'Chloe biegt ein Stück Alublech für ihren Handyständer. Plötzlich sieht sie einen feinen Riss.',
-      bild: ['chloe:enttaeuscht:stehen', 'lehrer:froh:erklaeren'], sprecher: { Chloe: 'w3', 'Herr Steffen': 'm1' },
+      situation: 'Chloé biegt ein Stück Alublech für ihren Handyständer. Plötzlich sieht sie einen feinen Riss.',
+      bild: ['chloe:enttaeuscht:stehen', 'lehrer:froh:erklaeren'], sprecher: { Chloé: 'w3', 'Herr Steffen': 'm1' },
       text: [
-        ['Chloe', 'Herr Steffen, schauen Sie mal. Da ist ein Riss an der Biegung.'],
+        ['Chloé', 'Herr Steffen, schauen Sie mal. Da ist ein Riss an der Biegung.'],
         ['Herr Steffen', 'Wie hast du gebogen?'],
-        ['Chloe', 'Erst zu weit, dann wieder zurück, dann noch einmal. Es war nicht gerade.'],
+        ['Chloé', 'Erst zu weit, dann wieder zurück, dann noch einmal. Es war nicht gerade.'],
         ['Herr Steffen', 'Das ist das Problem. Wenn man Aluminium hin und her biegt, wird es an der Stelle müde. Dann reißt es.'],
-        ['Chloe', 'Und wie mache ich es richtig?'],
+        ['Chloé', 'Und wie mache ich es richtig?'],
         ['Herr Steffen', 'Reiß die Biegelinie mit dem Winkel an. Dann spannst du das Blech so ein, dass die Linie genau an der Kante der Biegebacken liegt. Und dann drückst du es mit dem Holzklotz in einem Zug um.'],
-        ['Chloe', 'Nicht mit dem Hammer direkt?'],
+        ['Chloé', 'Nicht mit dem Hammer direkt?'],
         ['Herr Steffen', 'Nein, der Hammer macht Dellen. Holzklotz oder Gummihammer. Ich gebe dir ein neues Stück. Fehler gehören zum Lernen.'],
       ],
       vor: [{ art: 'mc', auftrag: 'Was ist ein Riss? Kreuze an.', stufe: 1, fragen: [{ f: '', o: ['eine feine Spalte, wo das Material auseinandergeht', 'ein Kratzer mit dem Bleistift'], r: 0 }] }],
       beim: [
-        { art: 'fragen', auftrag: 'Hör zu und antworte.', stufe: 1, fragen: [{ f: 'Warum hat das Blech einen Riss?', zeilen: 2, l: 'Chloe hat es hin und her gebogen; dadurch wird es an der Stelle müde und reißt.' }, { f: 'Wo muss die Biegelinie beim Einspannen liegen?', zeilen: 2, l: 'genau an der Kante der Biegebacken' }, { f: 'Womit drückt man das Blech um? Womit nicht?', zeilen: 2, l: 'mit dem Holzklotz oder Gummihammer, nicht direkt mit dem Hammer (Dellen)' }] },
+        { art: 'fragen', auftrag: 'Hör zu und antworte.', stufe: 1, fragen: [{ f: 'Warum hat das Blech einen Riss?', zeilen: 2, l: 'Chloé hat es hin und her gebogen; dadurch wird es an der Stelle müde und reißt.' }, { f: 'Wo muss die Biegelinie beim Einspannen liegen?', zeilen: 2, l: 'genau an der Kante der Biegebacken' }, { f: 'Womit drückt man das Blech um? Womit nicht?', zeilen: 2, l: 'mit dem Holzklotz oder Gummihammer, nicht direkt mit dem Hammer (Dellen)' }] },
       ],
       nach: [{ art: 'sprechen', auftrag: 'Herr Steffen sagt: „Fehler gehören zum Lernen.“ Was meint ihr dazu? Erzählt von einem Fehler, aus dem ihr etwas gelernt habt (nur wenn ihr wollt).', stufe: 3, karten: [
         { titel: 'Satzanfänge', text: ['Ich finde, …', 'Einmal habe ich …', 'Daraus habe ich gelernt, …'] }] }],

@@ -78,7 +78,7 @@ export const LEKTIONEN = [
     regel: {
       reihen: [
         [{ titel: 'Ich selbst', punkte: ['**Hände waschen**: Seife, mindestens 20 Sekunden', 'Haare **zusammen**, Schmuck **ab**, saubere **Schürze**', 'Wunden **abdecken**', 'krank? **nicht** für andere kochen'] },
-         { titel: 'Lebensmittel und Arbeit', punkte: ['**roh** (Fleisch, Fisch, Eier) und **verzehrfertig** trennen', 'eigenes **Brett**, eigenes **Messer**', 'Probierlöffel nur **einmal**', 'Flächen **abwischen**, Handy **weg**'] }],
+         { titel: 'Lebensmittel und Arbeit', punkte: ['**roh** (Fleisch, Fisch, Eier) und **fertig zum Essen** (Salat, Brot, Obst) trennen', 'eigenes **Brett**, eigenes **Messer**', 'Probierlöffel nur **einmal**', 'Flächen **abwischen**, Handy **weg**'] }],
       ],
     },
     ueben: [
@@ -97,7 +97,7 @@ export const LEKTIONEN = [
         anfaenge: ['Überschrift: …', '1. …', '2. …', '3. …', '4. …', '5. …'], zeilen: 7,
         beispiel: 'Überschrift: Sauber kochen – gesund essen! 1. Hände 20 Sekunden mit Seife waschen. 2. Haare zusammen, Schmuck ab. 3. Rohes Fleisch nur auf dem roten Brett. 4. Probierlöffel nur einmal benutzen. 5. Handy in den Spind.' },
     ],
-    check: ['Ich wasche meine Hände richtig und zur richtigen Zeit.', 'Ich trenne rohe und verzehrfertige Lebensmittel.', 'Ich erkläre, warum Hygiene wichtig ist.'],
+    check: ['Ich wasche meine Hände richtig und zur richtigen Zeit.', 'Ich trenne rohe Lebensmittel von Lebensmitteln, die man so isst.', 'Ich erkläre, warum Hygiene wichtig ist.'],
   },
   // ================================================================ 2
   {
@@ -115,9 +115,9 @@ export const LEKTIONEN = [
       quelle: 'Küchenwissen (vereinfacht)', titel: 'Messen in der Küche',
       absaetze: [
         '### Wiegen',
-        'Feste Zutaten wie Mehl, Zucker oder Butter **wiegt** man mit der **Küchenwaage**: in **Gramm (g)** und **Kilogramm (kg)**. 1 kg = 1000 g. Tipp: Zuerst die leere Schüssel auf die Waage stellen und auf **null** stellen (Taste „Tara“). Dann die Zutat hinein.',
+        'Feste Zutaten wie Mehl, Zucker oder Butter **wiegt** man mit der **Küchenwaage**: in **Gramm** und **Kilogramm**. 1 kg sind 1000 g. Tipp: Zuerst die leere Schüssel auf die Waage stellen und auf **null** stellen (Taste „Tara“). Dann die Zutat hinein.',
         '### Flüssigkeiten',
-        'Milch, Wasser oder Öl misst man mit dem **Messbecher**: in **Millilitern (ml)** und **Litern (l)**. 1 l = 1000 ml. Den Becher auf den Tisch stellen und **auf Augenhöhe** ablesen.',
+        'Milch, Wasser oder Öl misst man mit dem **Messbecher**: in **Millilitern** und **Litern**. 1 l sind 1000 ml. Den Becher auf den Tisch stellen und **auf Augenhöhe** ablesen.',
         '### Löffel und Prise',
         '**1 Esslöffel (EL)** sind etwa 15 ml, **1 Teelöffel (TL)** etwa 5 ml. Gemeint ist meist ein **gestrichener** Löffel: oben glatt. Eine **Prise** Salz ist so viel, wie man zwischen Daumen und Zeigefinger nehmen kann.',
         '### Umrechnen',
@@ -181,14 +181,14 @@ export const LEKTIONEN = [
     lesen: {
       was: 'Ein Rezept', art: 'anleitung', stimme: 'w1',
       quelle: 'Rezept für 4 Personen (etwa 10 Crêpes)', titel: 'Crêpes',
-      material: ['250 g Mehl', '500 ml Milch', '4 Eier', '1 Prise Salz', '2 EL Öl', 'Schüssel, Schneebesen, Schöpfkelle', 'beschichtete Pfanne, Pfannenwender'],
+      material: ['250 g Mehl', '500 ml Milch', '4 Eier', '1 Prise Salz', '2 EL Öl', 'Schüssel, Schneebesen, Kelle, Pfanne, Pfannenwender'],
       schritte: [
         { icon: 'droplet', text: '**Vorbereiten:** Hände waschen, Haare zusammenbinden, alle Zutaten und Geräte bereitstellen.' },
-        { icon: 'egg', text: '**Teig rühren:** Mehl und Salz in die Schüssel geben. Die Eier und die Hälfte der Milch dazugeben und mit dem Schneebesen glatt rühren. Dann den Rest der Milch und das Öl unterrühren.' },
-        { icon: 'clock', text: '**Ruhen lassen:** Den Teig etwa **30 Minuten** stehen lassen. In der Zeit Füllungen vorbereiten und den Tisch decken.' },
-        { icon: 'flame', text: '**Backen:** Die Pfanne auf mittlerer Hitze erhitzen und mit wenig Öl auspinseln. Eine halbe Schöpfkelle Teig hineingeben und die Pfanne schwenken, bis der Boden bedeckt ist.' },
-        { icon: 'rotate', text: '**Wenden:** Wenn der Rand goldbraun ist (nach etwa 1 Minute), die Crêpe mit dem Pfannenwender umdrehen und noch etwa 30 Sekunden backen.' },
-        { icon: 'tools-kitchen-2', text: '**Füllen und servieren:** Füllen, falten und warm essen. Pfanne nach dem Backen ausschalten!' },
+        { icon: 'egg', text: '**Teig rühren:** Mehl und Salz in die Schüssel. Eier und die Hälfte der Milch dazu, glatt rühren. Dann Rest der Milch und Öl unterrühren.' },
+        { icon: 'clock', text: '**Ruhen lassen:** Den Teig etwa **30 Minuten** stehen lassen. In der Zeit den Tisch decken.' },
+        { icon: 'flame', text: '**Backen:** Pfanne bei mittlerer Hitze erhitzen, wenig Öl hinein. Eine halbe Kelle Teig hineingeben und die Pfanne schwenken.' },
+        { icon: 'rotate', text: '**Wenden:** Ist der Rand goldbraun (nach etwa 1 Minute), die Crêpe umdrehen und noch 30 Sekunden backen.' },
+        { icon: 'tools-kitchen-2', text: '**Füllen und servieren:** Füllen, falten und warm essen. Nach dem Backen den Herd ausschalten!' },
       ],
       danach: ['Achtung Allergien: In Crêpes sind **Ei**, **Milch** und **Weizen (Gluten)**. Fragt vorher, ob jemand etwas davon nicht essen darf.'],
       woerter: [['das Rezept', 'la recette'], ['der Teig', 'la pâte'], ['der Schneebesen', 'le fouet'], ['die Schöpfkelle', 'la louche'], ['die Pfanne', 'la poêle'], ['der Pfannenwender', 'la spatule'], ['wenden', 'retourner'], ['die Allergie', 'l’allergie']],
@@ -205,14 +205,14 @@ export const LEKTIONEN = [
         ['Amira', 'Okay, wir haben 90 Minuten. Der Teig muss 30 Minuten ruhen. Also zuerst der Teig!'],
         ['Noah', 'Ich rühre den Teig. Ich lese aber vorher das ganze Rezept einmal.'],
         ['Lina', 'Dann schneide ich in der Ruhezeit Äpfel für die Füllung und mache Apfelmus. Und ich decke den Tisch.'],
-        ['Amira', 'Ich backe. Aber Achtung: Tom hat eine Eier-Allergie. Für ihn machen wir einen eigenen Teig ohne Ei, mit einer anderen Schüssel.'],
+        ['Amira', 'Ich backe. Aber Achtung: Tom hat eine Eier-Allergie. Für ihn machen wir einen eigenen Teig ohne Ei, mit sauberer Schüssel und eigenem Schneebesen. Seine Crêpes backen wir zuerst, in der sauberen Pfanne.'],
         ['Noah', 'Gut, dass du dran denkst. Wer spült?'],
         ['Lina', 'Alle zusammen am Ende. Und wer gerade nichts zu tun hat, spült schon zwischendurch.'],
         ['Amira', 'Super. Dann haben wir am Ende keinen Berg Geschirr. Los geht’s!'],
       ],
       vor: [{ art: 'mc', auftrag: 'Was bedeutet „zwischendurch“? Kreuze an.', stufe: 1, fragen: [{ f: '', o: ['in einer kleinen Pause, während man noch arbeitet', 'erst ganz am Ende'], r: 0 }] }],
       beim: [
-        { art: 'tabelle', auftrag: 'Hör zu. Wer macht was?', stufe: 1, kopf: ['Person', 'Aufgabe'], breiten: [25, 75], zeilen: [['Noah', '[Teig rühren (vorher das ganze Rezept lesen)]'], ['Lina', '[Äpfel schneiden, Apfelmus machen, Tisch decken]'], ['Amira', '[backen; eigener Teig ohne Ei für Tom]'], ['alle', '[spülen – zwischendurch und am Ende]']] },
+        { art: 'tabelle', auftrag: 'Hör zu. Wer macht was?', stufe: 1, kopf: ['Person', 'Aufgabe'], breiten: [25, 75], zeilen: [['Noah', '[Teig rühren (vorher das ganze Rezept lesen)]'], ['Lina', '[Äpfel schneiden, Apfelmus machen, Tisch decken]'], ['Amira', '[backen; eigener Teig ohne Ei für Tom, seine Crêpes zuerst]'], ['alle', '[spülen – zwischendurch und am Ende]']] },
         { art: 'fragen', auftrag: 'Warum macht die Gruppe zuerst den Teig?', stufe: 2, fragen: [{ f: '', l: 'Weil er 30 Minuten ruhen muss; in der Zeit können sie anderes vorbereiten.' }] },
       ],
       nach: [{ art: 'sprechen', auftrag: 'Plant in eurer Gruppe: Wer macht was? In welcher Reihenfolge?', stufe: 2, karten: [
@@ -228,8 +228,8 @@ export const LEKTIONEN = [
       { art: 'schneidekarten', auftrag: 'Zeitplan-Karten: Schneidet die Karten aus. Legt sie auf einen Zeitstrahl von 0 bis 90 Minuten. Was kann gleichzeitig passieren?', stufe: 3, neueSeite: true, titel: 'Unser Zeitplan', icon: 'clock', farbe: IDEE, spalten: 3,
         karten: [
           { text: 'Hände waschen, bereitstellen (5 min)' }, { text: 'Teig rühren (10 min)' }, { text: 'Teig ruhen lassen (30 min)' },
-          { text: 'Äpfel schneiden, Apfelmus kochen (20 min)' }, { text: 'Tisch decken (10 min)' }, { text: 'Crêpes backen (25 min)' },
-          { text: 'gemeinsam essen (15 min)' }, { text: 'spülen und aufräumen (15 min)' }, { text: '**Unsere Idee:**', linien: 2 },
+          { text: 'Äpfel schneiden, Apfelmus kochen (20 min)' }, { text: 'Tisch decken (10 min)' }, { text: 'Crêpes backen (20 min)' },
+          { text: 'gemeinsam essen (15 min)' }, { text: 'spülen und aufräumen (10 min)' }, { text: '**Unsere Idee:**', linien: 2 },
         ] },
     ],
     schreiben: [
@@ -253,17 +253,17 @@ export const LEKTIONEN = [
     lesen: {
       was: 'Eine Anleitung', art: 'anleitung', stimme: 'w2',
       quelle: 'Anleitung – üben unter Aufsicht', titel: 'So schneidest du sicher',
-      material: ['Schneidebrett', 'feuchtes Tuch', 'scharfes Gemüsemesser', 'Gemüse (z. B. Karotte, Gurke, Zwiebel)'],
+      material: ['Schneidebrett', 'feuchtes Tuch', 'scharfes Gemüsemesser', 'Gemüse'],
       schritte: [
         { icon: 'square', text: '**Brett festlegen:** Lege ein feuchtes Tuch unter das Schneidebrett. So rutscht es nicht weg.' },
-        { icon: 'carrot', text: '**Flache Seite nach unten:** Schneide runde Gemüse zuerst in der Mitte durch und lege sie mit der flachen Seite auf das Brett. So rollen sie nicht weg.' },
+        { icon: 'carrot', text: '**Flache Seite nach unten:** Rundes Gemüse zuerst halbieren und mit der flachen Seite auf das Brett legen. So rollt es nicht weg.' },
         { icon: 'hand-stop', text: '**Brückengriff:** Zum Halbieren halte das Gemüse mit Daumen und Fingern wie eine **Brücke**. Das Messer geht unter der Brücke durch.' },
-        { icon: 'hand-finger', text: '**Krallengriff:** Zum Schneiden in Scheiben: Fingerspitzen nach innen biegen wie eine **Kralle**. Die Fingerknöchel führen das Messer. Der Daumen bleibt hinter den Fingern.' },
-        { icon: 'arrows-down-up', text: '**Ruhig schneiden:** Messer vor und zurück bewegen, nicht hacken. Nicht reden und schneiden gleichzeitig – erst hinschauen.' },
+        { icon: 'hand-finger', text: '**Krallengriff:** Für Scheiben die Fingerspitzen nach innen biegen wie eine **Kralle**. Die Fingerknöchel führen das Messer, der Daumen bleibt dahinter.' },
+        { icon: 'arrows-down-up', text: '**Ruhig schneiden:** Messer vor und zurück bewegen, nicht hacken. Beim Schneiden hinschauen, nicht reden.' },
         { icon: 'tools-kitchen-2', text: '**Ablegen und weitergeben:** Das Messer flach oben auf das Brett legen, Schneide vom Körper weg. Nie in die Spüle unter Wasser legen. Weitergeben mit dem **Griff zuerst**.' },
       ],
-      danach: ['Ein scharfes Messer ist **sicherer** als ein stumpfes: Man braucht weniger Kraft und rutscht seltener ab. Bei einer Schnittwunde: Wunde unter Wasser ausspülen, Pflaster drauf, Bescheid sagen.'],
-      woerter: [['das Messer', 'le couteau'], ['das Schneidebrett', 'la planche à découper'], ['die Kralle', 'la griffe'], ['die Brücke', 'le pont'], ['der Fingerknöchel', 'la phalange'], ['die Schneide', 'le tranchant'], ['stumpf', 'émoussé'], ['abrutschen', 'glisser']],
+      danach: ['Ein scharfes Messer ist **sicherer** als ein stumpfes: Es rutscht seltener ab. Fällt ein Messer herunter: **zurücktreten**, nicht auffangen! Bei einer Schnittwunde: ausspülen, Pflaster, Bescheid sagen.'],
+      woerter: [['das Messer', 'le couteau'], ['das Schneidebrett', 'la planche à découper'], ['die Kralle', 'la griffe'], ['die Brücke', 'le pont'], ['der Fingerknöchel', 'la jointure (des doigts)'], ['die Schneide', 'le tranchant'], ['stumpf', 'émoussé'], ['abrutschen', 'glisser']],
       aufgaben: [
         { art: 'zuordnen', auftrag: 'Welcher Griff wofür? Verbinde.', stufe: 1, links: ['Brückengriff', 'Krallengriff'], rechts: ['ein Gemüse halbieren', 'Gemüse in Scheiben schneiden'] },
         { art: 'fragen', auftrag: 'Warum ist ein scharfes Messer sicherer als ein stumpfes?', stufe: 2, fragen: [{ f: '', zeilen: 2, l: 'Man braucht weniger Kraft und rutscht seltener ab.' }] },
@@ -292,7 +292,7 @@ export const LEKTIONEN = [
     regel: {
       reihen: [
         [{ titel: 'Sicher schneiden', punkte: ['Brett mit **feuchtem Tuch** festlegen', '**flache Seite** nach unten', '**Brückengriff** zum Halbieren', '**Krallengriff** für Scheiben', 'erst **hinschauen**, dann schneiden'] },
-         { titel: 'Messer-Regeln', punkte: ['**scharf** ist sicherer als stumpf', '**flach** auf das Brett, Schneide weg', '**nie** unter Wasser in die Spüle', 'weitergeben mit dem **Griff zuerst**'] }],
+         { titel: 'Messer-Regeln', punkte: ['**scharf** ist sicherer als stumpf', '**flach** auf das Brett, Schneide weg', '**nie** unter Wasser in die Spüle', 'weitergeben mit dem **Griff zuerst**', 'fällt ein Messer: **zurücktreten**, nicht auffangen'] }],
       ],
     },
     ueben: [
@@ -335,7 +335,7 @@ export const LEKTIONEN = [
         '### Rücksicht am Tisch',
         'Manche Menschen essen **kein Schweinefleisch**, zum Beispiel aus religiösen Gründen. Manche essen **vegetarisch** oder **vegan**. Andere haben **Allergien**. Darum fragt man vor dem Kochen, was alle essen können. Am Tisch wartet man, bis alle etwas haben, redet freundlich und legt das Handy weg.',
       ],
-      woerter: [['den Tisch decken', 'mettre la table'], ['der Teller', 'l’assiette'], ['die Gabel', 'la fourchette'], ['der Löffel', 'la cuillère'], ['die Serviette', 'la serviette'], ['die Stäbchen', 'les baguettes'], ['vegetarisch', 'végétarien'], ['die Rücksicht', 'les égards']],
+      woerter: [['den Tisch decken', 'mettre la table'], ['der Teller', 'l’assiette'], ['die Gabel', 'la fourchette'], ['der Löffel', 'la cuillère'], ['die Serviette', 'la serviette'], ['die Stäbchen', 'les baguettes'], ['vegetarisch', 'végétarien'], ['die Rücksicht', 'le respect, la considération']],
       aufgaben: [
         { art: 'tabelle', auftrag: 'Wo liegt was? Kreuze an.', stufe: 1, kopf: ['', 'links', 'rechts', 'oben'], breiten: [52, 16, 16, 16], zeilen: [['Gabel', '[x]', '', ''], ['Messer', '', '[x]', ''], ['Suppenlöffel', '', '[x]', ''], ['Dessertlöffel', '', '', '[x]'], ['Glas', '', '', '[x]']] },
         { art: 'fragen', auftrag: 'Warum fragt man vor dem Kochen, was alle essen können?', stufe: 2, fragen: [{ f: '', zeilen: 2, l: 'Weil manche aus religiösen Gründen kein Schweinefleisch essen, manche vegetarisch oder vegan leben oder Allergien haben.' }] },
@@ -424,13 +424,13 @@ export const LEKTIONEN = [
         ['Noah', 'Okay. Die übrigen Crêpes werfe ich weg.'],
         ['Lina', 'Nein, warte! Die kann man in eine Dose tun und morgen essen. In den Kühlschrank, oben ins Fach.'],
         ['Noah', 'Und die halbe Packung Hackfleisch, die wir nicht gebraucht haben?'],
-        ['Lina', 'Gut eingepackt ganz nach unten in den Kühlschrank. Und morgen verbrauchen – Hackfleisch hält nicht lange.'],
+        ['Lina', 'Gut eingepackt ganz nach unten in den Kühlschrank. Aber Hackfleisch hält nicht lange: Wir verbrauchen es heute noch oder frieren es ein.'],
         ['Noah', 'Du weißt ja alles!'],
         ['Lina', 'Bei uns zu Hause hängt ein Plan am Kühlschrank. Den hab ich irgendwann auswendig gelernt.'],
       ],
       vor: [{ art: 'mc', auftrag: 'Was bedeutet „verbrauchen“? Kreuze an.', stufe: 1, fragen: [{ f: '', o: ['aufessen oder benutzen', 'wegwerfen'], r: 0 }] }],
       beim: [
-        { art: 'tabelle', auftrag: 'Hör zu. Wohin gehört das?', stufe: 1, kopf: ['Was?', 'Wohin?'], breiten: [40, 60], zeilen: [['Eierschalen, Apfelschalen, Teigreste', '[Biomüll]'], ['Milchkarton (leer)', '[blauer Sack (Valorlux)]'], ['übrige Crêpes', '[in einer Dose oben in den Kühlschrank]'], ['Hackfleisch', '[gut eingepackt ganz unten in den Kühlschrank, morgen verbrauchen]']] },
+        { art: 'tabelle', auftrag: 'Hör zu. Wohin gehört das?', stufe: 1, kopf: ['Was?', 'Wohin?'], breiten: [40, 60], zeilen: [['Eierschalen, Apfelschalen, Teigreste', '[Biomüll]'], ['Milchkarton (leer)', '[blauer Sack (Valorlux)]'], ['übrige Crêpes', '[in einer Dose oben in den Kühlschrank]'], ['Hackfleisch', '[gut eingepackt ganz unten in den Kühlschrank, heute verbrauchen oder einfrieren]']] },
       ],
       nach: [{ art: 'sprechen', auftrag: 'Wie kann man in der Schulküche weniger wegwerfen? Sammelt Ideen.', stufe: 2, karten: [
         { titel: 'Ideen', text: ['genau planen', 'Reste aufheben', 'Reste neu verkochen', 'kleinere Portionen'] }] }],
@@ -438,7 +438,7 @@ export const LEKTIONEN = [
     regel: {
       reihen: [
         [{ titel: 'Spülen', nummern: true, punkte: ['**Reste** in den Biomüll', '**Gläser**', '**Besteck** (Messer einzeln!)', '**Teller**', '**Töpfe und Pfannen**', 'Wasser **wechseln**, wenn es trüb ist'] },
-         { titel: 'Lagern und trennen', punkte: ['Reste **abgedeckt** in den Kühlschrank', 'rohes Fleisch und Fisch **ganz unten**', '**Biomüll**: Schalen, Reste', '**Valorlux** (blauer Sack): Verpackungen'] }],
+         { titel: 'Lagern und trennen', punkte: ['Reste **abgedeckt** in den Kühlschrank', 'rohes Fleisch und Fisch **ganz unten**', '**Biomüll**: Schalen, Reste', '**Valorlux** (blauer Sack): Plastikverpackungen, Dosen, Getränkekartons'] }],
       ],
     },
     ueben: [
