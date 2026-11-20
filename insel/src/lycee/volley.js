@@ -82,6 +82,7 @@ export function createVolleyball({ scene, steuerung, input, ui, ton = () => {}, 
       if (L.f.t >= L.f.T) {
         if (L.figur) L.figur.spiele('Interact', { einmal: true });
         ton('klack');
+        if (L.ballwechsel % 5 === 0 && L.ballwechsel && L.figur) L.figur.spiele('Jubeln', { einmal: true });
         if (L.ballwechsel % 5 === 0 && L.ballwechsel) ui.skate({ trick: L.partnerName + ': „' + ['Stark!', 'Weiter so!', 'Wir sind gut!'][Math.floor(Math.random() * 3)] + '“' });
         zuMir(L);
       }

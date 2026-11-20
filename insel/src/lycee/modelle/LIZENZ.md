@@ -66,3 +66,9 @@ Namen: `mk/…` (Möbel), `weg/…` (Straße, Ampel, Baustelle), `retro/…` (La
 ## Töne aus „Impact Sounds“ (Kenney, CC0)
 `toene/ballschuss.ogg` (impactSoft_heavy_000), `toene/baggern.ogg` (impactSoft_medium_001), `toene/landung.ogg` (impactPlank_medium_000),
 `toene/pfosten.ogg` (impactMetal_heavy_000) – vom Nutzer am 20.11.2026 übergeben.
+
+## bewegungen.json (src/lycee)
+Bewegungen „Skateboarding“, „Soccer Penalty Kick“, „Sitting Talking“, „Cheering“, „Dancing“ von Mixamo (Adobe), vom Nutzer am 20.11.2026
+mit eigenem Adobe-Konto geladen. Mixamo erlaubt die Nutzung der Bewegungen in eigenen Projekten und Spielen (Nutzungsbedingungen
+von Adobe beachten; die Bewegungen werden nicht als einzelne Dateien weitergegeben, nur eingebettet). Übertragen auf das
+Quaternius-Skelett mit `tools/lycee/mixamo/werkzeug.mjs` (Drehungen je Knochen, 15 Bilder/s, lange Clips gekürzt).

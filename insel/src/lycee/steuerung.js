@@ -166,7 +166,7 @@ export function createSteuerung({ camera, input, welt, figur = null }) {
       const dreh = tr && b.trick.art === 'dreh' ? Math.PI * u : 0;
       g.position.set(pos.x, b.y + (b.lade != null ? -0.05 * (b.lade / 0.45) : 0), pos.z);
       g.rotation.set(-mx * 0.16 * Math.min(1, s.tempo / 3) + (b.grind ? b.grind.bal * 0.25 : 0), s.yaw + Math.PI / 2 + dreh, 0);
-      s.figur.spiele('Idle');
+      s.figur.spiele(b.mesh && amBoden && !b.grind && !(b.sturz > 0) && my > 0.2 && s.tempo < (b.vmax || 6.2) * 0.92 ? 'Skaten' : 'Idle');   // anschieben (Mixamo „Skateboarding“)
       if (b.mesh) { b.mesh.rotation.set(tr && b.trick.art === 'kickflip' ? Math.PI * 2 * u : 0, tr && b.trick.art === 'shove' ? Math.PI * u : 0, 0); b.mesh.position.y = b.y > 0 ? Math.sin(u * Math.PI) * 0.12 : 0; }
       if (s.figur.lehnen) s.figur.lehnen(b.lade != null ? 0.18 : 0.08);
     }
@@ -310,7 +310,8 @@ export function createSteuerung({ camera, input, welt, figur = null }) {
       g.rotation.z = neigZ; g.rotation.x = neigX;
       idleZeit = (s.tempo < 0.3 && !s.sitzt) ? idleZeit + dt : 0;
       const zappel = idleZeit > 8 && ((idleZeit - 8) % 14) < 2.8;   // im Stand: ab und zu umschauen
-      const lauf = s.sitzt ? 'Idle' : s.tempo > 2.9 ? 'Run' : s.tempo > 0.3 ? 'Walk' : (s.emote && performance.now() < s.emoteBis) ? s.emote : zappel ? 'Idle_Neutral' : 'Idle';
+      const emo = s.emote && performance.now() < s.emoteBis;   // emoteVor: auch im Laufen (Schuss, Jubel)
+      const lauf = s.sitzt ? 'Idle' : emo && s.emoteVor ? s.emote : s.tempo > 2.9 ? 'Run' : s.tempo > 0.3 ? 'Walk' : emo ? s.emote : zappel ? 'Idle_Neutral' : 'Idle';
       s.figur.spiele(lauf, { tempo: lauf === 'Walk' ? Math.max(0.7, Math.min(1.3, s.tempo / GEHEN)) : lauf === 'Run' ? Math.max(0.8, Math.min(1.15, s.tempo / RENNEN)) : 1 });
     }
     s.laeuft = s.tempo > 0.3;

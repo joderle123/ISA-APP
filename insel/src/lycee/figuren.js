@@ -7,6 +7,19 @@
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { MeshoptDecoder } from 'three/examples/jsm/libs/meshopt_decoder.module.js';
+import BEWEGUNGEN from './bewegungen.json';   // Mixamo-Bewegungen (vom Nutzer, 20.11.), auf das Quaternius-Skelett übertragen – tools/lycee/mixamo/
+// Zusätzliche Bewegungen für alle Figuren: Skaten, Elfmeter, SitzenReden (nur Oberkörper – die Beine macht sitzen()), Jubeln, Tanzen
+let _zusatz = null;
+function zusatzClips() {
+  if (_zusatz) return _zusatz;
+  _zusatz = Object.values(BEWEGUNGEN).map((b) => {
+    const n = Math.round(b.dauer * b.fps) + 1, t = new Float32Array(n); for (let i = 0; i < n; i++) t[i] = i / b.fps;
+    const tracks = [];
+    b.knochen.forEach((k, i) => { if (b.name === 'SitzenReden' && /Leg|Foot|Hips/.test(k)) return; if (b.q[i].length !== n * 4) return; tracks.push(new THREE.QuaternionKeyframeTrack(k + '.quaternion', t, Float32Array.from(b.q[i]))); });
+    return new THREE.AnimationClip(b.name, b.dauer, tracks);
+  });
+  return _zusatz;
+}
 import { clone as skClone } from 'three/examples/jsm/utils/SkeletonUtils.js';
 import { getMaterial } from '../actors/humanoid/base.js';
 import { baueFrisur } from './frisur.js';
@@ -171,6 +184,7 @@ export async function ladePerson(veil, { modell = 'menschen', stil = 'Casual', h
   const mixer = new THREE.AnimationMixer(group);
   const aktionen = {};
   for (const clip of gltf.animations) aktionen[clip.name] = mixer.clipAction(clip);
+  try { for (const clip of zusatzClips()) aktionen[clip.name] = mixer.clipAction(clip); } catch (e) { /* ohne Zusatz-Bewegungen */ }
   let jetzt = null, jetztName = '';
   // Sitzen: das Paket hat keine Sitz-Bewegung – Beine nach jedem Bild (nach der Idle-Bewegung) anwinkeln
   // Der Lader entfernt Punkte aus Knochennamen („UpperLeg.L“ → „UpperLegL“) – darum ohne Punkt nachschlagen

@@ -398,7 +398,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       f.group.position.copy(p);
       if (st) f.group.rotation.y = st[2];
       const halt = d.steht && d.steht[3];
-      if (halt === 'sitzt') { const sp = sitzSuche(f.group.position.x, f.group.position.z); if (sp) { f.group.position.set(sp.x, 0, sp.z); f.group.rotation.y = sp.rot; d.steht = [sp.x, sp.z, sp.rot, 'sitzt']; } f.sitzen(true, sp ? sp.h || 0.47 : 0.47); f.spiele('Idle'); }
+      if (halt === 'sitzt') { const sp = sitzSuche(f.group.position.x, f.group.position.z); if (sp) { f.group.position.set(sp.x, 0, sp.z); f.group.rotation.y = sp.rot; d.steht = [sp.x, sp.z, sp.rot, 'sitzt']; } f.sitzen(true, sp ? sp.h || 0.47 : 0.47); f.spiele(Math.random() < 0.6 ? 'SitzenReden' : 'Idle'); }
       else if (halt === 'redet') f.spiele('Interact', { tempo: 0.35 });
       else if (halt === 'raucht') { f.spiele('Idle'); x.rauch = zigarette(f); }
       else if (halt === 'handy') { f.spiele('Idle_Neutral'); }
@@ -734,6 +734,9 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       puffer = (puffer + e.code.slice(3).toLowerCase()).slice(-4);
       // H = winken: die Spielfigur winkt, Leute in der Nähe winken zurück
       if (e.code === 'KeyG' && hsPartner) { e.preventDefault(); handschlagMit(hsPartner); return; }
+      if ((e.code === 'KeyJ' || e.code === 'KeyK') && laeuft && !imGespraech && !ui.ebeneArt() && spieler && steuerung.tempo < 0.3 && !steuerung.sitzt && !steuerung.brett) {   // J = jubeln, K = tanzen
+        steuerung.emote = e.code === 'KeyJ' ? 'Jubeln' : 'Tanzen'; steuerung.emoteBis = performance.now() + (e.code === 'KeyJ' ? 2800 : 20000); steuerung.emoteVor = false; return;
+      }
       if (e.code === 'KeyH' && laeuft && !imGespraech && !ui.ebeneArt() && spieler && steuerung.tempo < 0.3 && !steuerung.sitzt && !steuerung.brett) {
         steuerung.emote = 'Wave'; steuerung.emoteBis = performance.now() + 2200;
         const p = steuerung.pos; let n = 0;
@@ -2073,7 +2076,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   const volley = createVolleyball({ scene, steuerung, input, ui, ton: (a) => (a === 'klack' ? geraeusch('baggern') : ton(a)), vib, holeFigur: holeSpielFigur });
   // Elfmeterschießen auf dem Stade: fünf Schüsse, die beste Freundin / der beste Freund steht im Tor
   const elfmeter = createElfmeter({ scene, steuerung, input, ui, ton: (a) => (a === 'klack' ? geraeusch('ballschuss') : ton(a)), vib, holeFigur: holeSpielFigur,
-    versteckeBall: (weg) => { const b = scene.getObjectByName('fussball'); if (b) b.visible = !weg; } });
+    versteckeBall: (weg) => { const b = scene.getObjectByName('fussball'); if (b) b.visible = !weg; }, onSchuss: () => geste('Elfmeter', 1100), onTor: () => geste('Jubeln', 2700) });
   const hsKannMit = (x) => !!(x && HANDSCHLAEGE[x.id] && S && ((S.freund && S.freund[x.id] >= 20) || (S.herz[x.id] || 0) >= 3) && x.f.armOk && x.haltung !== 'sitzt');
   const sag = (wer, text) => ui.sprich({ ...sprecher(wer), text: ersetze(text) });
   ui.onHandschlag = () => { if (hsPartner) handschlagMit(hsPartner); };
@@ -2310,6 +2313,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   }); } catch (e) { /* Ton nicht verfügbar */ } };
   ogg('ballschuss', schussOgg, 0.7); ogg('baggern', baggerOgg, 0.6); ogg('landung', landungOgg, 0.5); ogg('pfosten', pfostenOgg, 0.5);
   const geraeusch = (n) => { try { audio.play(n); } catch (e) { ton('klack'); } };
+  // Gesten der Spielfigur mit Vorrang (auch im Laufen): Schuss, Jubel (Mixamo-Bewegungen)
+  const geste = (name, ms) => { steuerung.emote = name; steuerung.emoteBis = performance.now() + ms; steuerung.emoteVor = true; };
   // ---------- Zeitrennen durchs Dorf: Hauptstraße nach Osten, Gasse hinunter, Rue du Moulin nach Westen ----------
   const RENNEN = [[-30, 48], [0, 48], [24, 48], [32, 60], [32, 76], [46, 87], [20, 87], [-6, 87], [-24, 87]];
   let rennen = null; const ringe = [];
@@ -2454,8 +2459,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     ui.toast('<b>⚽ Noch Lust?</b><span>Am Nordtor wartet das Elfmeterschießen.</span>');
   }
   // ---------- Fußball auf dem Stade Annexe ----------
-  const fussball = createFussball({ scene, steuerung, input, ton: (a) => (a === 'klack' ? geraeusch('ballschuss') : ton(a)), vib,
-    onTor: () => { S.merke.tore = (S.merke.tore || 0) + 1; sichern(); ton('melodie2'); vib([20, 30, 20]);
+  const fussball = createFussball({ scene, steuerung, input, ton: (a) => (a === 'klack' ? geraeusch('ballschuss') : ton(a)), vib, onSchuss: () => geste('Elfmeter', 900),
+    onTor: () => { S.merke.tore = (S.merke.tore || 0) + 1; sichern(); ton('melodie2'); vib([20, 30, 20]); geste('Jubeln', 2700);
       const n = S.merke.tore; ui.toast('<b>⚽ TOOOR!</b><span>' + (n === 1 ? 'Dein erstes Tor auf dem Stade.' : n + ' Tore insgesamt.') + (n === 10 ? ' Zehn! Legende.' : '') + '</span>', 'ly-t-ent'); },
     onPfosten: () => { const t = performance.now(); if (t - (fussball._pf || 0) > 1500) { fussball._pf = t; ui.toast('<b>Pfosten!</b><span>Knapp.</span>'); } } });
   async function spindAuf() {

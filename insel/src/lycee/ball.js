@@ -3,7 +3,7 @@
 // Pfosten und Latte prallen ab, ein Tor bleibt kurz im Netz, dann rollt der Ball zum Anstoß. Geht auch mit Brett und Trottinette.
 import * as THREE from 'three';
 
-export function createFussball({ scene, steuerung, input, ton = () => {}, vib = () => {}, onTor = () => {}, onPfosten = () => {} }) {
+export function createFussball({ scene, steuerung, input, ton = () => {}, vib = () => {}, onTor = () => {}, onPfosten = () => {}, onSchuss = () => {} }) {
   const SX0 = -104, SX1 = -68, SZ0 = -34, SZ1 = 18, XM = -86, FZ0 = SZ0 + 8, FZ1 = SZ1 - 8, FM = (FZ0 + FZ1) / 2;
   const R = 0.11, BODEN = 0.05, PH = 3.66, LATTE = 2.44;
   // Ball: weiß mit dunklen Fünfecken
@@ -32,7 +32,7 @@ export function createFussball({ scene, steuerung, input, ton = () => {}, vib = 
       const fx = Math.sin(steuerung.yaw), fz = Math.cos(steuerung.yaw), dx = p.x - s.x, dz = p.z - s.z, d = Math.hypot(dx, dz) || 1;
       if (input.state.jump && (nah < 0.8 || (dx * fx + dz * fz) / d > 0.4)) {   // Schuss: nah dran oder der Ball liegt vor einem   // Schuss: in Blickrichtung, je schneller man ankommt, desto fester
         const kraft = 12.5 + Math.min(5, steuerung.tempo * 0.8);
-        v.set(fx * kraft, 3.6 + Math.random() * 1.4, fz * kraft); letzterKick = uhr; ton('klack'); vib(22);
+        v.set(fx * kraft, 3.6 + Math.random() * 1.4, fz * kraft); letzterKick = uhr; ton('klack'); vib(22); onSchuss();
       } else if (nah < 0.55 && (dx * fx + dz * fz) / d > -0.2) {   // dribbeln: vor die Füße schieben
         const t = Math.max(2.3, steuerung.tempo * 1.3);
         v.x = (fx * 0.75 + dx / d * 0.25) * t; v.z = (fz * 0.75 + dz / d * 0.25) * t; v.y = Math.max(v.y, 0.35); letzterKick = uhr;

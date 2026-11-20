@@ -3,7 +3,7 @@
 // Wer zu fest schießt, schießt drüber. Die Torhüterin / der Torhüter springt in eine Ecke – manchmal in die richtige.
 import * as THREE from 'three';
 
-export function createElfmeter({ scene, steuerung, input, ui, ton = () => {}, vib = () => {}, holeFigur = async () => null, versteckeBall = () => {} }) {
+export function createElfmeter({ scene, steuerung, input, ui, ton = () => {}, vib = () => {}, holeFigur = async () => null, versteckeBall = () => {}, onSchuss = () => {}, onTor = () => {} }) {
   const XM = -86, TORZ = 10, PUNKT = -1, R = 0.11, BODEN = 0.05, PH = 3.66, LATTE = 2.44;
   const ball = new THREE.Mesh(new THREE.SphereGeometry(R, 16, 12), new THREE.MeshLambertMaterial({ color: '#f4f4f0' })); ball.visible = false; ball.name = 'elfmeterball'; scene.add(ball);
   const ziel = new THREE.Mesh(new THREE.CircleGeometry(0.22, 20), new THREE.MeshBasicMaterial({ color: '#ffd23f', transparent: true, opacity: 0.85, depthWrite: false, side: THREE.DoubleSide }));
@@ -35,7 +35,7 @@ export function createElfmeter({ scene, steuerung, input, ui, ton = () => {}, vi
       else if (L.kraft > 0.05) {   // loslassen = Schuss
         const zielY = 0.25 + L.kraft * 1.7 + (Math.random() - 0.5) * 0.3;   // zu fest = über die Latte
         const dz = TORZ - L.p.z, T = 0.62 - Math.min(0.25, L.kraft * 0.2);
-        L.v.set((L.zx - L.p.x) / T, (zielY - L.p.y + 0.5 * 9.8 * T * T) / T, dz / T); L.phase = 'flug'; L.t = 0; ton('klack'); vib(20); ziel.visible = false;
+        L.v.set((L.zx - L.p.x) / T, (zielY - L.p.y + 0.5 * 9.8 * T * T) / T, dz / T); L.phase = 'flug'; L.t = 0; ton('klack'); vib(20); ziel.visible = false; onSchuss();
         // Torhüter:in entscheidet sich: 40 % richtige Seite, sonst falsch oder Mitte
         const r = Math.random(), seite = Math.sign(L.zx - XM) || 1;
         L.sprung = r < 0.35 ? seite : r < 0.7 ? -seite : 0;
@@ -51,11 +51,11 @@ export function createElfmeter({ scene, steuerung, input, ui, ton = () => {}, vi
         const gehalten = Math.abs(kx - L.p.x) < 0.85 && L.p.y < 1.9;
         const drin = !gehalten && Math.abs(L.p.x - XM) < PH - R && L.p.y < LATTE - R;
         L.schuss++;
-        if (drin) { L.tore++; ton('melodie2'); vib([20, 30, 20]); }
+        if (drin) { L.tore++; ton('melodie2'); vib([20, 30, 20]); onTor(); }
         else ton('klack');
         const text = drin ? '⚽ TOR!' : gehalten ? '🧤 Gehalten! ' + L.keeperName + ' jubelt.' : L.p.y >= LATTE - R ? '⬆️ Drüber! Weniger Kraft.' : '↔️ Daneben!';
         ui.skate({ punkte: L.tore, trick: text + ' · ' + L.tore + '/' + L.schuss });
-        if (L.k) L.k.spiele(gehalten ? 'Wave' : 'Idle', { einmal: true });
+        if (L.k) L.k.spiele(gehalten ? 'Jubeln' : 'Idle', { einmal: true });
         L.phase = 'pause'; L.t = 0; if (drin) { L.v.multiplyScalar(0.1); }
       }
       return;
