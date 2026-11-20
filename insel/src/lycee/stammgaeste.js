@@ -227,6 +227,8 @@ export const STAMM = [
     reaktion: (m) => [
       m.huetchen >= 2 ? { key: 'stx_fernand_h2', zeilen: [['s', 'Beide Hütchen! Vierzig von vierzig.'], ['s', 'Weißt du, wie lange ich darauf gewartet hab? Merci.']] } : null,
       m.huetchen === 1 ? { key: 'stx_fernand_h1', zeilen: [['s', 'Du hast ein Hütchen zurückgebracht? Ich hab es gesehen.'], ['s', 'Neununddreißig. Eins ist noch auf der Flucht.']] } : null,
+      m.sit_dach === 'leiter' ? { key: 'stx_fernand_dach', zeilen: [['s', 'Ihr habt gefragt, statt zu klettern. Das ist selten.'], ['s', 'Der Schuh von 2019 hängt jetzt an der Fundkiste. Jeff hat ihn anprobiert.']] } : null,
+      m.dachGeholt ? { key: 'stx_fernand_dach2', zeilen: [['s', 'Pit humpelt noch. Aber du hast mich geholt. Gleich.'], ['s', 'Schnell sein ist manchmal wichtiger als cool sein.']] } : null,
       m.graffitiGeholfen ? { key: 'stx_fernand_wand', zeilen: [['s', 'Gute Arbeit am Bushäuschen. Deine Arme? Meine auch.'], ['s', 'Wer hilft, obwohl er nicht muss: Das merk ich mir.']] } : null,
       m.sit_graffiti && m.sit_graffiti !== 'gespruht' ? { key: 'stx_fernand_wand2', zeilen: [['s', 'Am Bushäuschen war wieder einer. D3X.'], ['s', 'Ich kenn die Schrift. Der kann eigentlich zeichnen.']] } : null,
       m.sit_wald ? { key: 'stx_fernand_wald', zeilen: [['s', 'Jeden Montag räum ich die Lichtung auf. Dosen, Stummel, alles.'], ['s', 'Die denken, das räumt sich selbst auf.'],

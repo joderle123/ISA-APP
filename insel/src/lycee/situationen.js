@@ -40,6 +40,9 @@ export const SIT_LEUTE = {
   // Sommerfest, Raucherecke hinter der Turnhalle (Alkohol, Kapitel 10) – alte Bekannte
   moFest: { szene: 'fest', wer: 'mo', name: 'Mo (5ème)', farbe: '#2fb8a8', aussehen: { modell: 'menschen', stil: 'Casual', haut: '#a0694a', haar: '#1b1410', oben: '#2fb8a8', unten: '#2d3748', schuhe: '#e9b949', hoehe: 1.74 }, steht: [61.6, -13.4, -2.0, 'redet'] },
   mikaFest: { szene: 'fest', wer: 'mika', name: 'Mika (6ème)', farbe: '#e9b949', aussehen: { modell: 'menschen', stil: 'Casual', haut: '#f1c7a2', haar: '#c9a15a', oben: '#e9b949', unten: '#3a3f4b', schuhe: '#4f88c8', hoehe: 1.6 }, steht: [59.9, -12.9, 2.2, 'handy'] },
+  // Hinter der Turnhalle, am Container (Ball auf dem Dach, Kapitel 8–9) – Pit, schon wieder
+  pitDach: { szene: 'dach', wer: 'pit', name: 'Pit (6ème)', farbe: '#e9b949', aussehen: { modell: 'menschen', stil: 'Casual', haut: '#f0c9a8', haar: '#d9b36a', oben: '#e9b949', unten: '#3a3f4b', schuhe: '#4f88c8', hoehe: 1.5 }, steht: [62.4, -21.9, -2.0, 'redet'] },
+  jana: { szene: 'dach', wer: 'jana', name: 'Jana (6ème)', farbe: '#2f6db0', aussehen: { modell: 'frauen', stil: 'Casual', haut: '#c68e64', haar: '#2b1d14', oben: '#2f6db0', unten: '#2d3748', schuhe: '#ffffff', hoehe: 1.57 }, steht: [60.6, -21.4, 1.6, 'redet'] },
   rafa: { szene: 'kiste', wer: 'rafa', bleibt: true, name: 'Rafa (6ème)', farbe: '#9b7bc8', aussehen: { modell: 'menschen', stil: 'Casual2', haut: '#c68e64', haar: '#1b1410', oben: '#9b7bc8', unten: '#2d3748', schuhe: '#e9b949', hoehe: 1.56 }, steht: [1.6, -4.8, 0.3, 'handy'] },
 };
 
@@ -55,6 +58,7 @@ export const SZENEN = {
   video: { frage: 'Wie fühlt es sich an, wenn alle über einen lachen – egal wie alt man ist?', ab: 9, bis: 10, start: { x: -12.4, z: -16.6, yaw: -1.13 }, teaser: ['Yanis (Gruppe)', 'HAHA habt ihr das Video von der Lenning gesehen?? 😂 Gang, vor 1.04'], titel: ['🎬', 'Das Video', 'Lachen über jemanden ist leicht. Aufhören ist schwerer.'] },
   fest: { frage: 'Was verpasst man, wenn man um jeden Preis dabei sein will?', ab: 10, bis: 10, start: { x: 60.6, z: -9.5, yaw: Math.PI }, schritt: 'k10_fest', zone: { x: 60.6, z: -13.3, r: 3.2 }, teaser: ['Mo (Gruppe)', 'Sommerfest-Afterparty hinter der Turnhalle 🍾 Psst'], titel: ['🍾', 'Die Wasserflasche', 'Das Fest ist drinnen. Und du gehörst dazu.'] },
   spiel: { frage: 'Woran erkennt man, dass ein Online-Freund nicht ehrlich ist?', ab: 9, bis: 10, start: { x: 4.7, z: 85.2, yaw: Math.PI }, zone: { x: 4.7, z: 83.1, r: 1.5 }, teaser: ['Leo_15 · Spiel-Chat', 'Hey 😊 Du spielst echt gut! Hab dir was geschenkt 🎁'], titel: ['🎮', 'Der Spielfreund', '„Erzähl es keinem“ ist der beste Grund, es jemandem zu erzählen.'] },
+  dach: { frage: 'Wann ist Hilfe holen klüger als Mut?', ab: 8, bis: 9, start: { x: 60.8, z: -17.8, yaw: Math.PI }, zone: { x: 61.6, z: -21.6, r: 2.8 }, teaser: ['Pit', 'Ball auf dem Turnhallendach 😭 Hilf mal, hinten beim Container!'], titel: ['🏀', 'Das Dach', 'Die Leiter ist nicht feige. Sie ist klug.'] },
   halle: { frage: 'Was ist der Unterschied zwischen Petzen und Hilfe holen?', ab: 7, bis: 7, start: { x: 60.4, z: -20.4, yaw: Math.PI }, zone: { x: 60.4, z: -25.4, r: 5 }, teaser: ['Unbekannt', 'HINTER DER TURNHALLE. JETZT. 👀'], titel: ['📱', 'Der Kreis', 'Wer filmt, baut die Bühne. Wer hilft, baut sie ab.'] },
 };
 
@@ -668,6 +672,7 @@ const RUECKBLICK = {
   video: { weiter: 'Weitergegangen.', gelacht: 'Mitgelacht.', gefragt: 'Gefragt: Weiß sie das?', gespiegelt: 'Gefragt: Würdest du das wollen?' },
   fest: { getrunken: 'Getrunken. Den Auftritt verpasst.', zurueck: 'Zurück zum Fest.', gefragt: 'Gefragt, was in der Flasche ist.', mitgenommen: 'Mika mit reingenommen.' },
   spiel: { ignoriert: 'Nicht geantwortet.', blockiert: 'Blockiert und gemeldet.', geschickt: 'Ein Selfie geschickt.', gezeigt: 'Herrn Kuedes alles gezeigt.' },
+  dach: { leiter: 'Fernand und die Leiter geholt.', festgehalten: 'Den Container festgehalten.', zugeschaut: 'Zugeschaut.' },
   halle: { gefilmt: 'Gefilmt.', handys: '„Handys runter“ gesagt.', hilfe: 'Hilfe geholt.', sami: 'Sich neben Sami gestellt.', mitte: 'Dazwischen gegangen.', zurueck: 'Einen Schritt zurück gemacht.' },
 };
 export function sitRueckblick(m) {
@@ -687,6 +692,7 @@ export function sitRueckblick(m) {
     if (id === 'video' && m.videoGeteilt) t += ' Und geteilt.';
     if (id === 'video' && m.lenningGesagt) t += ' Mme Lenning Bescheid gesagt.';
     if (id === 'fest' && m.mikaFestGeholfen) t += ' Bei Mika geblieben.';
+    if (id === 'dach' && m.dachGeholt) t += ' Dann Fernand geholt.';
     if (id === 'spiel' && m.spielKuedes && m.sit_spiel !== 'gezeigt') t += ' Dann Herrn Kuedes Bescheid gesagt.';
     out.push({ t: sz.titel[0] + ' ' + sz.titel[1], w: t });
   }
@@ -998,4 +1004,46 @@ async function spielKuedes(a) {
   await a.sag('kaya', 'Treffen mit Leuten aus dem Internet: nie allein, nie heimlich.');
   await a.sag('kaya', 'Wenn dich so was beschäftigt: 116 111. Oder BEE SECURE: 8002 1234.');
   a.merke('spielKuedes');
+}
+
+// ================= Das Dach (Ball auf dem Turnhallendach, Kapitel 8–9) =================
+// Kein Mutprobe-Spiel, sondern Alltag: Der Ball liegt oben, der Container steht praktisch da. Fernand hat eine Leiter.
+export async function dach(a) {
+  await a.sag('e', 'Hinter der Turnhalle. Pit steht auf dem Müllcontainer.');
+  await a.sag('pitDach', 'Der Ball ist aufs Dach geflogen! Ich hol ihn. Halt mal fest.');
+  await a.sag('e', 'Vom Container bis zur Dachkante: fast zwei Meter. Oben sind Glasfenster.');
+  await a.sag('jana', 'Mach doch, Pit! Sonst ist der Ball weg.');
+  const w = await a.wahl(['„Warte. Fernand hat eine Leiter. Ich frag ihn.“', '„Pit, runter da. Auf dem Dach ist Glas.“', '(Den Container festhalten.)', '(Zuschauen. Ist ja Pits Sache.)']);
+  if (w === 2 || w === 3) {
+    a.merke('sit_dach', w === 2 ? 'festgehalten' : 'zugeschaut');
+    await a.blende('Zehn Sekunden später');
+    await a.sag('e', 'Pit zieht sich hoch. Der Fuß rutscht. Er fällt auf den Container.');
+    await a.sag('e', 'Ein dumpfer Knall. Pit hält sich den Knöchel. Lippen ganz fest.');
+    await a.sag('pitDach', 'Geht schon. Geht schon … Sagt’s bloß keinem.');
+    const x = await a.wahl(['„Ich hol Fernand. Das muss jemand anschauen.“', '„Okay. Wir sagen nichts.“']);
+    if (x === 1) {
+      await a.sag('e', 'Pit humpelt nach Hause. Am nächsten Tag kommt er mit Krücken.');
+      await a.sag('e', 'Bänderriss. Der Arzt sagt: Hätte man gleich kühlen müssen.');
+      a.nachricht('Pit', 'Sechs Wochen kein Sport. Egal. War meine Idee.');
+      return;
+    }
+    await a.blende('Eine Minute später');
+    await a.sag('fernand', 'Nicht aufstehen, Pit. Eis drauf. Hochlegen. So.');
+    await a.sag('fernand', 'Wenn der Fuß dick wird: Arzt. Ich ruf jetzt im Sekretariat an.');
+    await a.sag('pitDach', '(leise) Danke, dass du ihn geholt hast.');
+    a.merke('dachGeholt');
+    return;
+  }
+  if (w === 1) {
+    await a.sag('pitDach', 'Und der Ball? Der war neu!');
+    await a.sag('e', '(Ein Ball gegen einen Fuß. Oder gegen ein Glasdach. Klare Rechnung.)');
+  }
+  a.merke('sit_dach', 'leiter');
+  await a.blende('Drei Minuten später');
+  await a.sag('fernand', 'Gut, dass ihr fragt. Letztes Jahr ist einer durchs Oberlicht gebrochen.');
+  await a.sag('fernand', 'Ich steig rauf. Ihr haltet die Leiter. Zu zweit.');
+  await a.sag('e', 'Fernand kommt mit drei Bällen zurück. Und einem Schuh.');
+  await a.sag('fernand', 'Der Schuh ist von 2019. Ich häng ihn an die Fundkiste.');
+  await a.sag('pitDach', '(lacht) Okay. Leiter ist besser als Fliegen.');
+  a.nachricht('Pit', 'Fernand ist eigentlich voll cool. Sag’s ihm nicht.');
 }

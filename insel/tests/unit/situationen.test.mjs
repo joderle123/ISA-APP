@@ -3,9 +3,9 @@
 // Aufruf: node --test tests/unit/situationen.test.mjs
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { SIT_LEUTE, SZENEN, SIT_ZONEN, sitSichtbar, sitOffen, sitRueckblick, sitSaetze, lichtung, laden, graffiti, halle, wette, kiste, vape, link, video, fest, spiel, zurueckbringen } from '../../src/lycee/situationen.js';
+import { SIT_LEUTE, SZENEN, SIT_ZONEN, sitSichtbar, sitOffen, sitRueckblick, sitSaetze, lichtung, laden, graffiti, halle, wette, kiste, vape, link, video, fest, spiel, dach, zurueckbringen } from '../../src/lycee/situationen.js';
 
-const FN = { wald: lichtung, laden, graffiti, halle, wette, kiste, vape, link, video, fest, spiel };
+const FN = { wald: lichtung, laden, graffiti, halle, wette, kiste, vape, link, video, fest, spiel, dach };
 
 // Skript-API zum Testen: Wahlen nach Liste (danach immer 0), merkt alles mit
 function api(wahlen = [], m = {}) {
