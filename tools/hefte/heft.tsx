@@ -57,6 +57,9 @@ function peep(wer: string, gefuehl = 'froh', haltung = 'brust'): string {
   return renderToStaticMarkup(<ZeichnungSvg z={peepZeichnung(wer, gefuehl, haltung)} p={palette(FARBEN)} />)
 }
 /** Bildangabe 'noah' | 'noah:froh' | 'noah:froh:stehen' */
+// {i:name} in freiem HTML (Umwandler kennen icon() nicht) → Tabler-Symbol
+const mitIcons = (h: string) => String(h).replace(/\{i:([a-z0-9-]+)\}/g, (_m, n: string) => icon(n))
+
 function bild(angabe: string): string {
   const [wer, g, h] = angabe.split(':')
   return peep(wer, g || 'froh', h || 'brust')
@@ -317,7 +320,7 @@ function aufgabeKoerper(a: Aufgabe): string {
     case 'mindmap':
       return mindmap(a)
     case 'frei':
-      return a.html
+      return mitIcons(a.html)
     case 'skala': {
       // Zahlenstrahl 0–10 je Zeile zum Einkreisen, Pole links und rechts
       const n = a.bis ?? 10
@@ -342,7 +345,7 @@ function nrFuer(a: any, k: Kontext): number { return AKTIV?.kompakt && a.art ===
 
 function aufgabe(a: Aufgabe, nr: number, klasse = ''): string {
   const lang = ['schreiben', 'fragen'].includes(a.art) && (a.zeilen || 0) > 12
-  return `${a.neueSeite ? '<div class="neue-seite"></div>' : ''}<div class="aufgabe ${klasse} ${lang ? 'lang' : ''} ${a.art === 'schneidekarten' && !AKTIV?.kompakt ? 'ganz' : ''}">${nr ? `<div class="kopf"><span class="nr">${nr}</span><span class="auftrag">${inl(a.auftrag || '')}</span>${a.stufe ? stufen(a.stufe) : ''}</div>` : ''}${
+  return `${a.neueSeite ? '<div class="neue-seite"></div>' : ''}<div class="aufgabe ${klasse} ${lang ? 'lang' : ''} ${a.art === 'schneidekarten' && !AKTIV?.kompakt ? 'ganz' : ''}">${nr || a.auftrag ? `<div class="kopf">${nr ? `<span class="nr">${nr}</span>` : ''}<span class="auftrag">${inl(a.auftrag || '')}</span>${a.stufe ? stufen(a.stufe) : ''}</div>` : ''}${
     a.hilfe ? `<div class="hilfe">${inl(a.hilfe)}</div>` : ''}<div class="koerper">${aufgabeKoerper(a)}</div></div>`
 }
 
@@ -488,10 +491,10 @@ function deckblatt(m: any, sp: string, loesungen: boolean, L: any[]): string {
     ? [['book', 'var(--lesen)', 'Lesen', 'Texte aus dem Alltag'], ['headphones', 'var(--hoeren)', 'Hören', 'QR-Code scannen'], ['bulb', 'var(--regel)', 'Regeln', 'kurz und klar'], ['writing', 'var(--schreiben)', 'Schreiben', 'mit viel Platz']]
     : [['book', 'var(--lesen)', 'Lire', 'des textes du quotidien'], ['headphones', 'var(--hoeren)', 'Écouter', 'scanner le code QR'], ['bulb', 'var(--regel)', 'Règles', 'courtes et claires'], ['writing', 'var(--schreiben)', 'Écrire', 'avec beaucoup de place']])
   return `<section class="deckblatt"><svg class="muster" width="210mm" height="210mm" viewBox="0 0 210 210">${Array.from({ length: 14 }, (_, i) => `<circle cx="${(i * 37) % 210}" cy="${(i * 53) % 190}" r="${8 + (i % 4) * 6}" fill="none" stroke="#fff" stroke-width="1.4"/>`).join('')}</svg>
-  <div class="oben"><div class="fachzeile">${esc(m.fach[sp])} · ${esc(m.klasse)} · ${m.niveau}${loesungen ? ` · <span style="background:#fff;color:var(--f);padding:0.6mm 2mm;border-radius:1mm">${sp === 'de' ? 'Lösungen' : 'Solutions'}</span>` : ''}</div><h1>${m.deckH1 || (sp === 'de' ? 'Modul' : 'Module') + ' ' + m.nr}</h1><div class="titel">${esc(m.titel[sp])}</div><div class="unter">${esc(m.untertitel[sp])}</div></div>
+  <div class="oben"><div class="fachzeile">${esc(m.fach[sp])} · ${esc(m.klasse)} · ${m.niveau}${loesungen ? ` · <span style="background:#fff;color:var(--f);padding:0.6mm 2mm;border-radius:1mm">${sp === 'de' ? 'Lösungen' : 'Solutions'}</span>` : ''}</div><h1${m.kompakt && String(m.deckH1 || '').length > 12 ? ' class="lang"' : ''}>${m.deckH1 || (sp === 'de' ? 'Modul' : 'Module') + ' ' + m.nr}</h1><div class="titel">${esc(m.titel[sp])}</div><div class="unter">${esc(m.untertitel[sp])}</div></div>
   <div class="figuren">${figuren}</div>${blasen}
-  <div class="unten"><h3>${sp === 'de' ? 'So lernst du mit diesem Heft' : 'Comment apprendre avec ce cahier'}</h3><div class="medien">${medien.map(([i, f, t, s]) => `<div class="medium"><span class="ic" style="background:${f}">${icon(i)}</span><b>${t}</b>${s}</div>`).join('')}</div>
-  <div class="name">${(m.namensfelder || [sp === 'de' ? 'Name' : 'Nom', sp === 'de' ? 'Klasse' : 'Classe', sp === 'de' ? 'Schuljahr' : 'Année scolaire']).map((x: string) => `<div>${esc(x)}</div>`).join('')}</div>${m.kompakt ? `<p class="copy">${esc(URHEBER.de)} · Alle Personen und Szenen sind erfunden. Zeichnungen: Open Peeps (Pablo Stanley, CC0), Tabler Icons (MIT). Stand: ${esc(m.stand || '')}.</p>` : ''}</div></section>`
+  <div class="unten${m.deckUnten ? ' eigen' : ''}">${m.deckUnten ? mitIcons(m.deckUnten) : `<h3>${sp === 'de' ? 'So lernst du mit diesem Heft' : 'Comment apprendre avec ce cahier'}</h3><div class="medien">${medien.map(([i, f, t, s]) => `<div class="medium"><span class="ic" style="background:${f}">${icon(i)}</span><b>${t}</b>${s}</div>`).join('')}</div>`}
+  <div class="name">${(m.namensfelder || [sp === 'de' ? 'Name' : 'Nom', sp === 'de' ? 'Klasse' : 'Classe', sp === 'de' ? 'Schuljahr' : 'Année scolaire']).map((x: string) => `<div>${esc(x)}</div>`).join('')}</div>${m.kompakt && !m.deckUnten ? `<p class="copy">${esc(URHEBER.de)} · Alle Personen und Szenen sind erfunden. Zeichnungen: Open Peeps (Pablo Stanley, CC0), Tabler Icons (MIT). Stand: ${esc(m.stand || '')}.</p>` : ''}</div></section>`
 }
 
 function inhalt(m: any, sp: string, L: any[], seiten: Record<string, number>): string {
@@ -541,6 +544,28 @@ function begleitung(m: any): string {
   return h + '</section>'
 }
 
+// ---------------------------------------------------------------- SOLO AKTION: eine Aktion je Seite
+function aktionSeite(m: any, a: any, nr: string, label: string): string {
+  const chip = (ic: string, t: string) => (t ? `<span>${icon(ic)}${esc(t)}</span>` : '')
+  return `<section class="ak-seite"><div class="seitenkopf"><span class="marke">${esc(m.deckH1)}</span><span>${esc(m.fach.de)} · ${esc(m.titel.de)}</span></div>
+  <div class="ak-kopf"><div class="ak-nr">${esc(nr)}</div><div class="ak-ti"><div class="ak-label">${esc(label)}</div><h2>${inl(a.titel)}</h2><div class="ak-chips">${chip('clock', a.zeit)}${chip('users', a.wer)}${chip('backpack', a.material)}</div></div><div class="ak-ic">${icon(a.icon)}</div></div>
+  <div class="ak-schritte"><ol>${a.schritte.map((x: string) => `<li><span>${inl(x)}</span></li>`).join('')}</ol>${a.bild ? `<div class="fig">${bild(a.bild)}</div>` : ''}</div>
+  <div class="ak-zonen">${a.zonen.map((z: any) => aufgabe(z, 0)).join('')}</div>
+  <div class="ak-unten"><div class="ak-aha"><b class="lab">Merk dir</b><div>${inl(a.aha)}</div></div><div class="ak-ok"><span><i></i>gemacht</span><span>War:<i></i>lahm<i></i>okay<i></i>gut</span></div></div></section>`
+}
+
+function aktionBegleitung(m: any): string {
+  const b = m.begleitungAktion, liste = (x: string[]) => `<ul>${x.map((p) => `<li>${inl(p)}</li>`).join('')}</ul>`
+  const karte = (titel: string, ic: string, inhalt: string, klasse = '') => `<div class="bg-karte ${klasse}"><h4>${icon(ic)}${esc(titel)}</h4>${inhalt}</div>`
+  const alle = [...m.aktionen, m.woche]
+  let h = `<section class="begleitung lektion"><div class="seitenkopf"><span class="marke">Für die Bezugsperson</span><span>${esc(m.fuss || '')}</span></div><h2>So nutzen Sie das Aktions-Heft</h2>`
+  h += `<div class="bg-fakten">${[['Für wen', '12–17 Jahre, auch mit Förderbedarf'], ['Dauer', '10–15 Min. je Aktion'], ['Tempo', '1–2 Aktionen je Bezugszeit'], ['Material', b.material]].map(([t, x]) => `<div><span>${esc(t)}</span><b>${inl(x)}</b></div>`).join('')}</div>`
+  h += `<div class="bg-zwei">${karte('So geht es', 'list-check', liste(['Der Jugendliche wählt auf dem Deckblatt, womit er anfängt. Die Reihenfolge ist frei.', '**Sie machen jede Aktion selbst mit** – mit eigenen, ehrlichen Werten.', '„Weiter“ beendet eine Aktion ohne Erklärung.', '„Merk dir“ einmal laut lesen. Nicht erklären, nicht nachfragen, ob es verstanden ist.', 'Eine Aktion darf wiederholt werden. Zweimal dieselbe ist besser als acht halbe.']))}${karte('Bei Förderbedarf', 'heart-handshake', liste(['Die Schritte **vorlesen und vormachen**. Immer nur einen Schritt; die anderen abdecken.', 'Zeigen, sagen oder zeichnen zählt wie schreiben. Sie tragen ein, wenn der Jugendliche das möchte.', 'Eine Aktion pro Stunde reicht. Lieber kurz und fertig als lang und abgebrochen.', 'Unbekannte Wörter an einem eigenen Beispiel zeigen, nicht umschreiben.']))}</div>`
+  h += karte('Achtung', 'alert-triangle', `<p>${inl(b.achtung)}</p>`, 'achtung')
+  h += karte('Die Aktionen im Überblick', 'map-2', `<table class="bg-quiz"><colgroup><col style="width:6%"><col style="width:22%"><col style="width:32%"><col style="width:40%"></colgroup><tr><th>Nr.</th><th>Aktion</th><th>Ziel</th><th>Ihr Teil</th></tr>${alle.map((a: any, i: number) => `<tr><td><b>${i < m.aktionen.length ? i + 1 : '+'}</b></td><td><b>${inl(a.titel)}</b><div class="klein">${esc(a.zeit)} · ${esc(a.material || 'kein Material')}</div></td><td>${inl(a.ziel)}</td><td>${inl(a.tipp)}</td></tr>`).join('')}</table><p class="klein" style="margin-top:2mm">${inl(b.mehr)}</p><p class="klein">${esc(URHEBER.de)} · Alle Personen und Szenen sind erfunden. Zeichnungen: Open Peeps (Pablo Stanley, CC0), Tabler Icons (MIT). Stand: ${esc(m.stand || '')}.</p>`, 'quiz neu')
+  return h + '</section>'
+}
+
 // ---------------------------------------------------------------- Bauen
 function html(m: any, L: any[], loesungen: boolean, seiten: Record<string, number>, spuren: any[]): string {
   const sp = m.sprache
@@ -550,8 +575,9 @@ function html(m: any, L: any[], loesungen: boolean, seiten: Record<string, numbe
   const fuss = m.fuss || `${m.fach[sp]} · ${sp === 'de' ? 'Modul' : 'Module'} ${m.nr} · ${m.titel[sp]}${loesungen ? (sp === 'de' ? ' · Lösungen' : ' · Solutions') : ''}`
   const seitenCss = `@page { @bottom-left { content: "${fuss.replace(/"/g, '')}"; font-family: Lexend, Atkinson, sans-serif; font-size: 8pt; color: #8a93a3; } @bottom-right { content: counter(page); font-family: Lexend; font-weight: 700; font-size: 9.5pt; color: ${f.tief}; } }`
   let body = deckblatt(m, sp, loesungen, L) + (m.kompakt ? '' : inhalt(m, sp, L, seiten))
+  if (m.aktionen) body += m.aktionen.map((a: any, i: number) => aktionSeite(m, a, String(i + 1), `Aktion ${i + 1} von ${m.aktionen.length}`)).join('') + aktionSeite(m, m.woche, '+', 'Für die Woche') + aktionBegleitung(m)
   L.forEach((l, i) => { body += lektion(l, { modul: m, sp, nr: i + 1, zaehler: 0, spuren }) })
-  body += m.kompakt ? (m.begleitung ? begleitung(m) : '') : anhang(m, sp, L)
+  if (!m.aktionen) body += m.kompakt ? (m.begleitung ? begleitung(m) : '') : anhang(m, sp, L)
   // französische Typografie: geschütztes Leerzeichen vor ! ? ; : » und nach «, damit nichts allein umbricht
   if (sp === 'fr') body = body.replace(/>([^<]+)</g, (_: string, t: string) => '>' + t.replace(/ ([!?;:»])/g, '\u00a0$1').replace(/« /g, '«\u00a0') + '<')
   return `<!doctype html><html lang="${sp}"><head><meta charset="utf-8"><title>${esc(m.fach[sp])} ${sp === 'de' ? 'Modul' : 'Module'} ${m.nr}</title><style>${css}
@@ -588,6 +614,8 @@ async function baue(id: string, browser: any, png: boolean) {
       const zuBreit = await seite.evaluate(() => { const W = document.body.getBoundingClientRect().width, out: string[] = []
         for (const e of Array.from(document.querySelectorAll('body *'))) { if ((e as SVGElement).ownerSVGElement) continue; const q = e.getBoundingClientRect(); if (q.width && q.right > W + 1 && !e.closest('.deckblatt')) out.push(`${e.tagName}.${typeof (e as HTMLElement).className === 'string' ? (e as HTMLElement).className : ''} (${Math.round(q.right - W)} px): ${(e.textContent || (e.closest('section') ? 'in ' + e.closest('section')!.id : '')).slice(0, 50)}`) }
         return out })
+      const zuHoch = await seite.evaluate(() => Array.from(document.querySelectorAll('.ak-seite')).filter((e) => e.scrollHeight > e.clientHeight + 2).map((e) => (e.querySelector('h2')?.textContent || '?') + ` (+${e.scrollHeight - e.clientHeight} px)`))
+      if (zuHoch.length) { console.error(`✗ ${name}: Aktion zu lang für eine Seite: ${zuHoch.join(', ')}`); process.exitCode = 1 }
       if (zuBreit.length) { console.error(`✗ ${name}: ${zuBreit.length} Elemente zu breit – das Heft würde verkleinert:`); zuBreit.slice(0, 8).forEach((z: string) => console.error('   ' + z)); process.exitCode = 1 }
       const pdf = join(ziel, name + '.pdf')
       await seite.pdf({ path: pdf, format: 'A4', printBackground: true, preferCSSPageSize: true })

@@ -706,3 +706,73 @@ table.raster.stellen td { padding: 1.5mm 1mm; }
 .kompakt .deckblatt .muster circle { stroke: #fff; }
 .kompakt .deckblatt .muster { opacity: 0.35; }
 .bg-quiz td { padding: 0.9mm 1.5mm; line-height: 1.3; }
+/* ---------- SOLO AKTION: eine Aktion je Seite ---------- */
+.deckblatt .unten.eigen { padding-top: 7mm; }
+.deckblatt .unten.eigen h3 { margin-bottom: 3mm; }
+.ak-karte { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2.5mm; }
+.ak-karte > div { position: relative; border: 0.4mm solid var(--rahmen); border-radius: 3mm; padding: 2mm 2.5mm; display: grid; grid-template-columns: auto 1fr; column-gap: 2mm; align-items: center; min-height: 13mm; }
+.ak-karte b { font-family: Lexend; font-weight: 800; font-size: 13pt; color: var(--f); }
+.ak-karte svg { width: 5mm; height: 5mm; color: var(--f-tief); justify-self: end; margin-right: 5mm; }
+.ak-karte span { grid-column: 1 / -1; font-family: Lexend; font-weight: 700; font-size: 9.5pt; line-height: 1.15; }
+.ak-karte small { grid-column: 1 / -1; font-size: 8pt; color: var(--leise); }
+.ak-karte i { position: absolute; right: 2mm; top: 2mm; width: 3.6mm; height: 3.6mm; border: 0.4mm solid #8a93a3; border-radius: 0.8mm; }
+.ak-regel { font-size: 9.5pt; margin: 2.5mm 0 0; color: var(--leise); }
+.ak-regel b { color: var(--tinte); }
+.ak-seite { height: 263mm; display: flex; flex-direction: column; break-after: page; overflow: hidden; }
+.ak-kopf { display: grid; grid-template-columns: 19mm 1fr 17mm; gap: 4mm; align-items: center; background: var(--f-zart); border-radius: 5mm; padding: 4mm 5mm; margin: 1mm 0 5mm; }
+.ak-nr { width: 19mm; height: 19mm; border-radius: 50%; background: var(--f); color: #fff; font-family: Lexend; font-weight: 800; font-size: 28pt; display: flex; align-items: center; justify-content: center; }
+.ak-label { font-family: Lexend; font-weight: 700; font-size: 8.5pt; letter-spacing: 0.12em; text-transform: uppercase; color: var(--f-tief); }
+.ak-ti h2 { font-family: Lexend; font-weight: 800; font-size: 25pt; line-height: 1.05; margin: 0.8mm 0 2mm; }
+.ak-chips { display: flex; flex-wrap: wrap; gap: 1.8mm; }
+.ak-chips span { display: inline-flex; align-items: center; gap: 1.2mm; background: #fff; border-radius: 10mm; padding: 0.7mm 3mm; font-family: Lexend; font-weight: 600; font-size: 9pt; }
+.ak-chips svg { width: 4mm; height: 4mm; color: var(--f); }
+.ak-ic { width: 17mm; height: 17mm; border-radius: 50%; background: var(--f-mittel); display: flex; align-items: center; justify-content: center; }
+.ak-ic svg { width: 9.5mm; height: 9.5mm; color: var(--tinte); }
+.ak-schritte { display: flex; gap: 4mm; align-items: flex-start; margin-bottom: 3mm; }
+.ak-schritte ol { flex: 1; margin: 0; padding: 0; list-style: none; counter-reset: s; }
+.ak-schritte li { counter-increment: s; display: flex; gap: 3mm; align-items: baseline; font-size: 13pt; line-height: 1.36; margin: 0 0 2mm; }
+.ak-schritte li::before { content: counter(s); flex: none; width: 6.5mm; height: 6.5mm; border-radius: 1.6mm; background: var(--tinte); color: #fff; font-family: Lexend; font-weight: 700; font-size: 10pt; display: inline-flex; align-items: center; justify-content: center; transform: translateY(-0.4mm); }
+.ak-schritte .fig { width: 32mm; flex: none; }
+.ak-schritte .fig svg { width: 100%; height: auto; max-height: 46mm; }
+.ak-zonen { flex: 1; min-height: 0; }
+.ak-zonen .aufgabe { margin-bottom: 4mm; }
+.ak-unten { margin-top: 3mm; }
+.ak-aha { display: flex; gap: 4mm; align-items: center; background: var(--tinte); color: #fff; border-radius: 4mm; padding: 3.2mm 5mm; font-size: 12.5pt; line-height: 1.35; }
+.ak-aha .lab { flex: none; font-family: Lexend; font-weight: 800; font-size: 8.5pt; letter-spacing: 0.12em; text-transform: uppercase; color: var(--f-mittel); }
+.ak-aha b:not(.lab), .ak-aha strong { color: var(--f-mittel); }
+.ak-ok { display: flex; justify-content: space-between; margin-top: 2.2mm; font-family: Lexend; font-weight: 600; font-size: 9pt; color: var(--leise); }
+.ak-ok i { display: inline-block; width: 4mm; height: 4mm; border: 0.4mm solid #8a93a3; border-radius: 1mm; vertical-align: -0.9mm; margin: 0 1.2mm 0 3mm; }
+.ak-ok span:first-child i { margin-left: 0; }
+.ak-box { display: flex; align-items: center; gap: 2.5mm; font-size: 12pt; }
+.ak-box i { flex: none; width: 4.6mm; height: 4.6mm; border: 0.45mm solid #6b7484; border-radius: 1mm; }
+.ak-koerper { display: grid; grid-template-columns: 50mm 1fr; gap: 8mm; align-items: center; border: 0.4mm solid var(--rahmen); border-radius: 4mm; padding: 4mm 6mm; }
+.ak-koerper .fig svg { width: 100%; height: auto; max-height: 100mm; color: var(--tinte); }
+.ak-koerper .w { display: grid; gap: 3.2mm; }
+.ak-ringe { display: grid; grid-template-columns: 82mm 1fr; gap: 6mm; align-items: center; }
+.ak-ringe svg { width: 82mm; height: 82mm; color: var(--tinte); }
+.ak-ringe .w div { margin-bottom: 3mm; } .ak-ringe .w b { display: block; font-family: Lexend; font-size: 9pt; letter-spacing: 0.1em; text-transform: uppercase; color: var(--f-tief); } .ak-ringe .w span { font-size: 12pt; }
+.ak-felder { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm 5mm; }
+.ak-felder > div { display: grid; grid-template-columns: auto 1fr; column-gap: 2mm; align-items: baseline; }
+.ak-felder b { font-family: Lexend; font-weight: 800; color: var(--f); } .ak-felder span { font-family: Lexend; font-weight: 600; font-size: 10.5pt; }
+.ak-felder .feldbox { grid-column: 1 / -1; margin: 1.2mm 0 0; }
+.unbequem .u-x { font-size: 12pt; line-height: 1.4; margin-top: 1.5mm; }
+.ak-comic { display: grid; gap: 3mm; }
+.ak-comic > div { border: 0.4mm solid var(--rahmen); border-radius: 3mm; overflow: hidden; }
+.ak-comic .o { display: flex; justify-content: space-between; align-items: center; background: var(--f-zart); padding: 2mm 3mm; }
+.ak-comic .o b { font-family: Lexend; font-weight: 800; color: var(--f-tief); } .ak-comic .o svg { width: 7mm; height: 7mm; color: var(--f-tief); }
+.ak-comic p { margin: 0; padding: 2.5mm 3mm; font-size: 11pt; line-height: 1.35; }
+.ak-wahl { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.5mm; }
+.ak-wahl > div { display: flex; align-items: center; gap: 2mm; border: 0.4mm solid var(--rahmen); border-radius: 3mm; padding: 2.5mm 3mm; font-size: 11.5pt; }
+.ak-wahl svg { width: 6mm; height: 6mm; color: var(--f-tief); flex: none; } .ak-wahl span { flex: 1; line-height: 1.2; }
+.ak-wahl i { flex: none; width: 4.6mm; height: 4.6mm; border: 0.45mm solid #6b7484; border-radius: 1mm; }
+.ak-daumen > div { display: grid; grid-template-columns: 1fr 24mm 24mm; align-items: center; gap: 2mm; border-bottom: 0.3mm solid var(--rahmen); padding: 2.2mm 0; font-size: 12pt; }
+.ak-daumen .k { border-bottom: 0.4mm solid var(--tinte); padding: 0 0 1mm; font-family: Lexend; font-size: 9pt; text-transform: uppercase; letter-spacing: 0.08em; color: var(--leise); }
+.ak-daumen .k b { text-align: center; }
+.ak-daumen em { display: flex; justify-content: center; gap: 3mm; } .ak-daumen em svg { width: 6.5mm; height: 6.5mm; color: #8a93a3; }
+.deckblatt h1.lang { font-size: 44pt; }
+.deckblatt .unten.eigen { padding-top: 6mm; }
+.deckblatt .unten.eigen .name { margin-top: 4mm; }
+.ak-karte > div { min-height: 11mm; padding: 1.6mm 2.5mm; }
+.ak-box { color: var(--tinte); }
+.bg-karte.neu { break-before: page; }
+.ak-ringe { grid-template-columns: 100mm 1fr; } .ak-ringe svg { width: 100mm; height: 100mm; }

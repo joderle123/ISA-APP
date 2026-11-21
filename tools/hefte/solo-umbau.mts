@@ -6,7 +6,7 @@
 // SOLO #02 ist das von Hand gesetzte Muster (inhalt/solo-02.mjs) und wird hier nicht überschrieben.
 import { writeFileSync } from 'node:fs'
 
-function lesbar(hex: string): string {
+export function lesbar(hex: string): string {
   const rgb = (h: string) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16) / 255)
   const lum = (c: number[]) => c.map((x) => (x <= 0.03928 ? x / 12.92 : ((x + 0.055) / 1.055) ** 2.4)).reduce((s, x, i) => s + x * [0.2126, 0.7152, 0.0722][i], 0)
   const [r, g, b] = rgb(hex), max = Math.max(r, g, b), min = Math.min(r, g, b), d = max - min
@@ -21,7 +21,7 @@ function lesbar(hex: string): string {
   while (1.05 / (lum(aus(l)) + 0.05) < 4.2 && l > 0.1) l -= 0.01
   return '#' + aus(l).map((v) => Math.round(v * 255).toString(16).padStart(2, '0')).join('').toUpperCase()
 }
-const mische = (hex: string, ziel: number, anteil: number) => '#' + [0, 2, 4].map((i) => Math.round(parseInt(hex.slice(1 + i, 3 + i), 16) * (1 - anteil) + ziel * anteil).toString(16).padStart(2, '0')).join('')
+export const mische = (hex: string, ziel: number, anteil: number) => '#' + [0, 2, 4].map((i) => Math.round(parseInt(hex.slice(1 + i, 3 + i), 16) * (1 - anteil) + ziel * anteil).toString(16).padStart(2, '0')).join('')
 
 // ---------------------------------------------------------------- von Hand: Ziel, Wörter, Bildstreifen
 const ZIEL: Record<string, [string, string]> = {
@@ -145,12 +145,12 @@ const BD: Record<string, Fall[]> = {
 const CHECK = ['Ich habe heute etwas über mich gemerkt.', 'Ich weiß, was ich bis zum nächsten Mal ausprobiere.', 'Ich weiß, mit wem ich reden kann, wenn es schwer wird.']
 
 // ---------------------------------------------------------------- Umwandeln
-const esc = (s: string) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
-const md = (s: string) => esc(s).replace(/\*\*(.+?)\*\*/g, '<b>$1</b>').replace(/==(.+?)==/g, '<mark>$1</mark>')
-const peep = (b: string) => b.replace(/^peep:/, '')
+export const esc = (s: string) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+export const md = (s: string) => esc(s).replace(/\*\*(.+?)\*\*/g, '<b>$1</b>').replace(/==(.+?)==/g, '<mark>$1</mark>')
+export const peep = (b: string) => b.replace(/^peep:/, '')
 const wieZeit = (b: any) => [b.wie, b.zeit].filter(Boolean).join(' · ')
 
-function fragenBlock(b: any): any[] {
+export function fragenBlock(b: any): any[] {
   const out: any[] = []
   const wz = wieZeit(b) ? ` //(${wieZeit(b)})//` : ''
   b.fragen.forEach((f: any, i: number) => {
@@ -279,10 +279,12 @@ function umbau(h: any) {
     `export const MODUL = ${JSON.stringify(MODUL, null, 1)}\n\nexport const LEKTIONEN = [${JSON.stringify(L, null, 1)}]\n`
 }
 
+if (process.argv[1]?.endsWith('solo-umbau.mts')) {   // nur beim direkten Aufruf umwandeln (aktion-umbau.mts leiht sich die Helfer)
 const wahl = process.argv.slice(2)
 const ids = (wahl.length ? wahl : ['00', '01', ...Array.from({ length: 15 }, (_, i) => String(i + 3).padStart(2, '0'))]).filter((x) => x !== '02')
 for (const nr of ids) {
   const h = (await import(`../../dossiers/solo/s${nr}.ts`)).default
   writeFileSync(new URL(`./inhalt/solo-${nr}.mjs`, import.meta.url), umbau(h))
   console.log('✓ solo-' + nr)
+}
 }
