@@ -60,7 +60,7 @@ const TOP5 = {
   ],
   aktionen: [
     { id: 'schreiben', t: 'Schreiben', symbol: '💬', wahl: [
-      { t: '„Noah ist der Einzige, der mir Platz freihält. Langweilig?“', setzt: ['gestoppt', 'noahVerteidigt'], ich: 'noah hält mir jeden tag nen platz frei. langweilig? ok', folgen: [{ nach: 1.3, wer: 'Ben', text: 'plus 1000 aura. ehrenmann noah' }, { nach: 2.6, wer: 'Ayla', text: '❤️' }] },
+      { t: '„Noah ist der Einzige, der mir Platz freihält. Langweilig?“', setzt: ['gestoppt', 'noahVerteidigt'], ich: 'noah hält mir jeden tag nen platz frei. langweilig? ok', folgen: [{ nach: 1.3, wer: 'Ben', text: 'stimmt. noah 🫡' }, { nach: 2.6, wer: 'Ayla', text: '❤️' }] },
       { t: '„Wer so eine Liste macht, hat selbst Langeweile.“', setzt: ['gestoppt', 'konter'], ich: 'wer so ne liste macht hat selbst langeweile', folgen: [{ nach: 1.2, wer: 'Jo', text: 'OHHH wallah' }, { nach: 2.6, wer: 'Dario', text: 'chill bro' }] },
       { t: '„Ich will auch auf eine Liste. Top 5 mit Hunger.“', setzt: 'witz', ich: 'ich will auch auf ne liste. top 5 mit hunger', folgen: [{ nach: 1.1, wer: 'Ben', text: 'ICH BIN #1 DA' }] },
     ] },
@@ -94,7 +94,7 @@ const staerkenDef = (m) => ({
       { t: 'Du bist nett.', antwort: 'Danke. Glaub ich.' },
       { t: 'Du bist nicht langweilig.', antwort: 'Also … ein bisschen schon. Oder?' } ] },
     { wer: F.mila, karten: [
-      { t: m.spurDario || m.milaAura ? 'Du merkst Sachen, die keiner merkt. Den Winkel. Die Regeln.' : 'Du kannst den Würfel in 41 Sekunden. Und du sagst ehrlich, was du denkst.', konkret: true, antwort: 'Das ist präzise formuliert. Danke.' },
+      { t: m.spurDario || m.milaAura ? 'Du merkst Sachen, die keiner merkt. Winkel. Druckfehler. Alles.' : 'Du kannst den Würfel in 41 Sekunden. Und du sagst ehrlich, was du denkst.', konkret: true, antwort: 'Das ist präzise formuliert. Danke.' },
       { t: 'Du bist schlau.', antwort: 'Das sagen alle. Das ist keine Beobachtung.' },
       { t: 'Du bist voll anders.', antwort: 'Anders als wer?' } ] },
     m.blindLina ? { wer: F.lina, karten: [
@@ -102,13 +102,13 @@ const staerkenDef = (m) => ({
       { t: 'Du zeichnest gut.', antwort: '(nickt) Danke.' },
       { t: 'Du bist so ruhig.', antwort: '…' } ] }
       : { wer: F.ben, karten: [
-        { t: 'Du machst, dass die Pause lustig ist. Auch wenn du Hunger hast.', konkret: true, antwort: 'Bruder. Ich wein nicht. Das ist Aura, die rausläuft.' },
+        { t: 'Du machst, dass die Pause lustig ist. Auch wenn du Hunger hast.', konkret: true, antwort: 'Ich wein nicht. Das ist eine Allergie. Gegen Komplimente.' },
         { t: 'Du bist witzig.', antwort: 'Ich weiß. Aber danke.' },
         { t: 'Du bist immer gut drauf.', antwort: 'Nicht immer. Aber danke.' } ] },
   ],
   bekommen: [
     { wer: F.noah, t: m.noahVerteidigt ? 'Du hast im Chat was gesagt. Für mich. Hab’s gesehen.' : 'Du redest mit mir, auch wenn andere gucken.' },
-    { wer: F.ben, t: m.auraWitz ? 'Du hast im Chat 9000 gesagt. Mutig.' : 'Du lachst über meine Witze. Auch über die schlechten.' },
+    { wer: F.ben, t: m.auraWitz ? 'Dein Hobby im Chat: Gruppen stummschalten. Hab gelacht.' : 'Du lachst über meine Witze. Auch über die schlechten.' },
     { wer: F.mila, t: m.milaStill ? 'Du kannst still sitzen, ohne dass es komisch wird.' : 'Du stellst Fragen. Echte.' },
   ],
 });
@@ -232,7 +232,7 @@ export const GESPRAECHE_N2 = {
       } },
   ],
   n2_mittag: [
-    ['ben', 'Detektiv! Setz dich. Wir haben einen Plan. Also: Mila hat einen Plan.'],
+    ['ben', '{name}! Setz dich. Wir haben einen Plan. Also: Mila hat einen Plan.'],
     ['mila', 'Kein Plan. Eine Beobachtung. Wer sitzt beim Essen links von Noah?'],
     ['erzaehler', 'Am Nachbartisch: Dario, Kenan, Luca. Ein Handy liegt sehr tief.'],
     { wahl: [
@@ -246,15 +246,14 @@ export const GESPRAECHE_N2 = {
     ['jo', 'Eben. Darum sag ich’s.'],
     // Jugendwelt heute: Likes als Zeugnis. Ayla will ihr Video nach sechs Likes löschen.
     ['erzaehler', 'Ayla scrollt. Dann dreht sie das Handy um. Bildschirm nach unten.'],
-    ['ayla', 'Mein Schlagzeug-Video. Seit einer Stunde online. Sechs Likes.'],
+    ['ayla', 'Mein Bass-Video. Seit einer Stunde online. Sechs Likes.'],
     ['ayla', 'Ein Selfie aus der 6P1 hat 200. In zehn Minuten.'],
     ['ayla', 'Ich lösch es. Ist eh peinlich.'],
     { wahl: [
       { t: '„Sechs echte Leute fanden es gut. Das ist nicht nichts.“', staerke: 'lesen', herz: { ayla: 1 }, merke: 'aylaPostBleibt', dann: [['ayla', '… So hab ich das nie gezählt.'], ['erzaehler', 'Sie dreht das Handy wieder um.']] },
-      { t: '(Liken. Kommentar: „Der Wirbel bei Sekunde 12 🔥“)', staerke: 'kontakt', herz: { ayla: 2 }, merke: 'aylaPostBleibt', dann: [['ayla', '(liest. Grinst.) Du hast es dir echt angehört?'], ['ayla', 'Okay. Es bleibt.']] },
+      { t: '(Liken. Kommentar: „Das Riff bei Sekunde 12 🔥“)', staerke: 'kontakt', herz: { ayla: 2 }, merke: 'aylaPostBleibt', dann: [['ayla', '(liest. Grinst.) Du hast es dir echt angehört?'], ['ayla', 'Okay. Es bleibt.']] },
       { t: '„Wenn du dich damit schlecht fühlst: Lösch es.“', staerke: 'zuhoeren', merke: 'aylaPostWeg', dann: [['ayla', '… Ja. Ist besser so.'], ['erzaehler', 'Gelöscht. Ayla isst weiter. Langsamer als vorher.']] },
     ] },
-    ['mila', 'Likes zeigen, wer gerade scrollt. Nicht, wie gut du bist.'],
   ],
   n2_morgen: [
     ['erzaehler', 'Donnerstag. An der Tafel steht: „TALENTTAG – 10 Sekunden Ruhm!“'],
@@ -276,7 +275,7 @@ export const GESPRAECHE_N2 = {
       { t: '„Ich zeig nichts.“', merke: 'ruhmNein', dann: [
         ['hoffmann', 'Darf man. Steht im Vertrag.'], ['ben', 'Mysteriös. Respekt.'] ] },
     ] },
-    ['hoffmann', 'Das war … wie sagt ihr … ein Slay?'],
+    ['hoffmann', 'Das war … ich hab kein Wort dafür. Ein gutes Zeichen.'],
     ['mila', 'Nein. Das war ein Talenttag. Mit neun Talenten.'],
     ['erzaehler', 'Mme Tidderich schreibt es an die Tafel. Und unterstreicht es. Zweimal.'],
   ],
@@ -309,7 +308,7 @@ export const GESPRAECHE_N2 = {
     ] },
   ],
   n2_dario: [
-    ['dario', 'Yo. Skills-Stunde überlebt? Real talk, das ist so cringe.'],
+    ['dario', 'Skills-Stunde überlebt? Ich bin fast eingeschlafen.'],
     ['dario', 'Guck mal, was ich hab. Lustig, oder?'],
     ['erzaehler', 'Er zeigt dir ein Foto. Noah am Tisch. Von links unten.'],
     ['dario', 'Ging diese Woche in drei Gruppen rum. Auch bei der 7P1.'],
@@ -341,13 +340,13 @@ export const tunN2 = (c) => ({
     return [['erzaehler', 'Noah gibt dir eine Karte. Darauf steht:'], ['noah', '„' + t + '“']];
   },
   n2_tankMission: () => {
-    const T = { koerper: 'Körper: was essen, Korbball, raus', sicherheit: 'Sicherheit: ein ruhiger Ort, eine Person, der du traust', dazu: 'Dazugehören: Pause mit jemandem, Bandprobe', ernst: 'Ernst genommen: mit Herrn Kuedes reden', selbst: 'Selbst entscheiden: Spind, Spiegel, eigene Pause', spass: 'Spaß und Neues: Skaten, Tischtennis, Bücher' };
+    const T = { koerper: 'Körper: was essen, Basket, raus', sicherheit: 'Sicherheit: ein ruhiger Ort, eine Person, der du traust', dazu: 'Dazugehören: Pause mit jemandem, Bandprobe', ernst: 'Ernst genommen: mit Herrn Kuedes reden', selbst: 'Selbst entscheiden: Spind, Spiegel, eigene Pause', spass: 'Spaß und Neues: Skaten, Tischtennis, Bücher' };
     const b = Object.keys(T).find((k) => c.S.merke['blinkt' + k.charAt(0).toUpperCase() + k.slice(1)]);
     if (!b) { c.ui.toast('<b>Mission: Warnlichter</b><span>Achte diese Woche: Welcher Tank meldet sich bei dir?</span>', 'ly-t-ent'); return; }
     c.S.mission = { kap: 2, tank: b, mal: 0 };
     c.ui.toast('<b>Mission: Tank auffüllen</b><span>' + T[b] + ' – dreimal, je zehn Minuten.</span>', 'ly-t-ent');
   },
-  n2_noahTalent: () => (c.S.merke.noahTalent ? [['noah', '(steht auf) Ich … hab Fotos. Von meinem Glockenturm. Aus Bausteinen.'], ['ben', 'Mit GLOCKE? Bruder. Das ist Aura.'], ['erzaehler', 'Die Klasse guckt. Wirklich. Noah wird rot. Diesmal gut rot.']]
+  n2_noahTalent: () => (c.S.merke.noahTalent ? [['noah', '(steht auf) Ich … hab Fotos. Von meinem Glockenturm. Aus Bausteinen.'], ['ben', 'Mit GLOCKE? Noah. Die verkaufen wir. Halbe-halbe.'], ['erzaehler', 'Die Klasse guckt. Wirklich. Noah wird rot. Diesmal gut rot.']]
     // Ohne Vorbereitung: Noah traut sich nur, wenn man ihn ermutigt – ohne Druck. Druck macht zu.
     : [['erzaehler', 'Noah ist dran. Er guckt auf den Tisch. Sein Bein wippt.'], ['hoffmann', 'Noah? Du darfst auch passen.'],
       { wahl: [
@@ -360,11 +359,11 @@ export const tunN2 = (c) => ({
       ] }]),
   n2_ruhmKorb: async () => {
     const t = await c.ui.freiwurf(); c.S.merke.ruhmTreffer = t;
-    return t >= 3 ? [['ben', t + ' von 5! Vor allen! Aura plus 1000.'], ['jo', 'Okay. Respekt.']] : [['ben', t + ' von 5. Aber mit Stil. Das zählt auch.'], ['hoffmann', 'Zehn Sekunden Ruhm. Erfüllt.']];
+    return t >= 3 ? [['ben', t + ' von 5! Vor allen! Ich bin ab heute dein Manager.'], ['jo', 'Okay. Respekt.']] : [['ben', t + ' von 5. Aber mit Stil. Das zählt auch.'], ['hoffmann', 'Zehn Sekunden Ruhm. Erfüllt.']];
   },
   n2_ruhmBand: async () => {
     const r = await c.ui.bandprobe(); const pz = Math.round(r.treffer / Math.max(1, r.gesamt) * 100);
-    return pz >= 60 ? [['ayla', 'Digga. Du bist in der Band. Nicht diskutieren.']] : [['ayla', 'Das war kein Takt. Das war Mut. Zählt auch.']];
+    return pz >= 60 ? [['ayla', 'Okay. Du bist in der Band. Nicht diskutieren.']] : [['ayla', 'Das war kein Takt. Das war Mut. Zählt auch.']];
   },
   n2_ende: () => [{ szene: 'stempel', def: { modul: 'Modul 1 · Wer bin ich?', titel: 'Ich weiß mehr',
       gelernt: ['Sechs Tanks und ihre Warnlichter', 'Bedürfnis und Wunsch unterschieden', 'Selbstbild und Fremdbild verglichen', 'Stärken-Karten mit drei Teilen verschenkt'],

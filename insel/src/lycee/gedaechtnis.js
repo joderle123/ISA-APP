@@ -27,11 +27,11 @@ export const GEDAECHTNIS = [
     ['lina', '(zeigt kurz ihr Heft) Gerd hat jetzt einen Hut.'],
     ['lina', 'Du bist die einzige Person, die das Heft kennt.'] ] },
   { id: 'noahAura', wer: 'noah', ab: 2, bis: 4, wenn: m('noahAura'), g: [
-    ['noah', '„Minus 200 Aura.“ Ben sagt das jetzt dauernd.'],
-    ['noah', 'Deine Schuld. Ich find’s aber lustig.'] ] },
+    ['noah', 'Der Screenshot von meinem doppelten Hallo. Hast du den noch?'],
+    ['noah', '(hält dir ein Brötchen hin) Ein Drittel. Wie abgemacht.'] ] },
   { id: 'zettelKrimi', wer: 'ben', ab: 2, bis: 4, wenn: m('zettelGut'), g: [
     ['ben', 'Der Zettel-Krimi am ersten Tag. Du hast fast alles erraten.'],
-    ['ben', 'Mme Tidderich nennt dich seitdem „Detektiv“. Hab ich gehört.'] ] },
+    ['ben', 'Mme Tidderich nennt dich seitdem „Sherlock“. Hab ich gehört.'] ] },
   { id: 'kantineKnall', wer: 'ben', ab: 2, bis: 3, wenn: m('kantineKnall'), g: [
     ['ben', 'Erster Tag, Kantine, du gegen Luca. Die halbe Schule redet noch.'],
     { wahl: [
@@ -114,7 +114,7 @@ export const GEDAECHTNIS = [
     ['ben', 'Nach dem Fake saßt du ganz hinten. Allein.'],
     ['ben', 'Nächstes Mal: Platz neben mir. Reserviert. Für immer.'] ] },
   { id: 'lawine', wer: 'mila', ab: 6, wenn: m('lawineGezaehlt'), g: [
-    ['mila', 'Ich zähle jetzt bei jedem Shitstorm die Konten.'],
+    ['mila', 'Wenn alle auf einen losgehen, zähl ich jetzt die Konten.'],
     ['mila', 'Meistens drei. Manchmal zwei. Laut ist nicht viel.'] ] },
   { id: 'sorge', wer: 'ben', ab: 6, bis: 7, wenn: m('sorgeGesagt'), g: [
     ['ben', 'Du hattest Angst, die anderen glauben den Fake.'],
@@ -158,7 +158,7 @@ export const GEDAECHTNIS = [
     ['mila', 'Beim Wasserrohr-Post hast du die Quelle geprüft.'],
     ['mila', 'Ich war stolz. Kurz. Jetzt wieder normal.'] ] },
   { id: 'beruhigt', wer: 'noah', ab: 9, wenn: m('noahBeruhigt'), g: [
-    ['noah', '„Passiert eh nicht“, hast du gesagt. Es ist passiert.'],
+    ['noah', '„Passiert eh nicht“, hast du gesagt. Ich hab trotzdem alle Fotos gelöscht.'],
     ['noah', 'Schon okay. Du wolltest mich beruhigen. Hat nur nicht geklappt.'] ] },
 
   // ---------- aus Kapitel 9 ----------
@@ -170,7 +170,7 @@ export const GEDAECHTNIS = [
     ['dario', 'Ich hab sie nicht vergessen.'] ] },
   { id: 'rucksack', wer: 'dario', ab: 10, wenn: m('rucksackLeichter'), g: [
     ['dario', 'Der Rucksack ist leichter. Ehrlich.'],
-    ['dario', 'Ein paar Steine liegen jetzt bei Herrn Kuedes. Da gehören sie hin.'] ] },
+    ['dario', 'Ich schlaf wieder. Sechs Stunden. Für mich ist das viel.'] ] },
 
   // ---------- aus Kapitel 7 und 8 (spät im Jahr) ----------
   { id: 'spionNein', wer: 'lina', ab: 8, wenn: m('spionNein'), g: [
@@ -195,7 +195,7 @@ export const GEDAECHTNIS = [
     ['dario', 'Bens Würfel damals. Du hast mich mitspielen lassen.'],
     ['dario', 'Da hab ich gedacht: Vielleicht geht das wieder. Mit euch.'] ] },
   { id: 'serie', wer: 'dario', ab: 10, wenn: m('serieGefragt'), g: [
-    ['dario', 'Die Flamme ist aus. Meine Serie. 212 Tage.'],
+    ['dario', 'Die Flamme ist aus. Meine Serie. 214 Tage.'],
     ['dario', 'Und? Nichts passiert. Hab ich ja selbst gesagt. Damals.'] ] },
 
   // ---------- Erwachsene erinnern sich auch (trockener Ton, keine Lobrede) ----------
@@ -215,7 +215,7 @@ export const GEDAECHTNIS = [
     ['sommer', 'Du und Jo trainiert zusammen? Hab’s gesehen. Weiter so.'] ] },
   { id: 'hoffmannFrage', wer: 'hoffmann', ab: 2, bis: 4, wenn: m('hoffmannGefragt'), g: [
     ['hoffmann', 'Du hast am ersten Tag nach @annexe.cam gefragt.'],
-    ['hoffmann', 'Gute Frage. Ich hab sie weitergegeben. Wie sagt ihr … safe.'] ] },
+    ['hoffmann', 'Gute Frage. Ich hab sie weitergegeben. Danke dafür.'] ] },
   // ---------- aus den schwierigen Situationen (situationen.js) – Freunde kommen später darauf zurück ----------
   { id: 'sitWaldNein', wer: 'ben', ab: 5, wenn: (x) => ['nein', 'gegangen', 'umgelenkt', 'ausrede'].includes(x.sit_wald), g: [
     ['ben', 'Gerücht: Du warst an der Lichtung. Und bist einfach gegangen?'],

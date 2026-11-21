@@ -85,7 +85,7 @@ const frei = () => page.waitForFunction(() => !document.querySelector('.ly-ebene
 const geh = async (ort, wahl) => { await frei(); await L((o) => LYCEE.teleport(o), ort); await page.waitForFunction(() => LYCEE.imGespraech); return klick(wahl); };
 
 await klick();   // Einleitung
-check('Schritt 1: Bushaltestelle, Auftrag „Sprich mit Noah“', (await schritt()) === 'ankunft' && /Noah/.test(await page.textContent('.ly-auftrag')));
+check('Schritt 1: Bushaltestelle, Auftrag „Sprich mit Noah“', (await schritt()) === 'ankunft' && /Noah|Jacke/.test(await page.textContent('.ly-auftrag')));
 await bild('1-start');
 await rede('noah');
 check('Noah: „Ja. Robin. 7P2. Du?“ → Stärke „Kontakt aufnehmen“, Herz für Noah', (await L(() => LYCEE.zustand.staerken.kontakt)) === 1 && (await L(() => LYCEE.zustand.herz.noah)) >= 3);

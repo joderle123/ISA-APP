@@ -177,7 +177,7 @@ export const GESPRAECHE_N5 = {
     { wahl: [
       { t: '(Zu Ben. Er nimmt schon seine Jacke vom Stuhl.)', staerke: 'kontakt', herz: { ben: 1 }, merke: 'saalBen', dann: [['ben', '(leise) Platz für Nuggets-Typen. Reserviert.']] },
       { t: '(Zu Mila. Sie schiebt dir wortlos ihr Lineal rüber.)', staerke: 'lesen', herz: { mila: 1 }, merke: 'saalMila', dann: [['mila', '(flüstert) Nicht umdrehen. Luca guckt. Lass ihn gucken.']] },
-      { t: '(Hinten allein. Rücken zur Wand.)', merke: 'saalHinten', dann: [['erzaehler', 'Von hier siehst du alle. Und keiner sieht dich an. Das ist sicher. Und einsam.'], ['noah', '(dreht sich um, formt mit dem Mund) Alles okay?']] },
+      { t: '(Hinten allein. Rücken zur Wand.)', merke: 'saalHinten', dann: [['erzaehler', 'Von hier siehst du alle. Keiner sieht dich an.'], ['noah', '(dreht sich um, formt mit dem Mund) Alles okay?']] },
       { t: '(Direkt neben Luca. Sollen alle sehen, dass du keine Angst hast.)', wenn: (m) => m.tuerWut || m.tuerKlar, staerke: 'mut', merke: 'saalLuca', dann: [['luca', '(rutscht ein Stück weg) … Was?'], ['erzaehler', 'Er sagt die ganze Stunde nichts mehr.']] },
     ] },
     ['hoffmann', 'Ça va? Screenshot gesehen. Ich urteile nicht ohne Fakten.'],
@@ -205,13 +205,13 @@ export const GESPRAECHE_N5 = {
     ['mila', 'Setz dich. Wir arbeiten wie Detektive. Nur Fakten.'],
     ['mila', 'Ich hab den Fake 40 Mal angeguckt. Guck oben.'],
     ['mila', '25:14. Diese Uhrzeit gibt es nicht.'],
-    ['mila', 'Der Fake ist gemein. Das ist echt, kein Denkfehler.'],
+    ['mila', 'Der Fake ist gemein. Das ist ein Fakt.'],
     ['mila', 'Wir prüfen nur einen Satz in deinem Kopf.'],
     { szene: 'waage', id: 'waage', def: (m) => WAAGE(m),
       ausgang: (r) => (r.nachher <= r.vorher - 30 ? 'leichter' : r.nachher < r.vorher ? 'etwas' : 'gleich'),
       folgen: {
         leichter: { staerke: 'lesen', herz: { mila: 1 }, merke: 'waageLeichter', dann: [['mila', 'Siehst du? Der Satz war lauter als die Beweise.']] },
-        etwas: { staerke: 'lesen', herz: { mila: 1 }, dann: [['mila', 'Ein bisschen leichter. Das reicht für heute.']] },
+        etwas: { staerke: 'lesen', herz: { mila: 1 }, dann: [['mila', 'Ein bisschen leichter. Messbar. Reicht.']] },
         gleich: { herz: { mila: 1 }, dann: [['mila', 'Dein Bauch hört nicht auf Fakten. Typisch Bauch. Er braucht Zeit.']] },
       } },
     { tu: 'n5_detektivSpur' },
@@ -221,7 +221,7 @@ export const GESPRAECHE_N5 = {
     ['mila', 'Ich hab sie sortiert. Es sind drei Konten. Drei.'],
     { wahl: [
       { t: '„Drei? Es hat sich angefühlt wie alle.“', staerke: 'lesen', herz: { mila: 1 }, merke: 'lawineGezaehlt', dann: [['mila', 'So funktioniert das. Laut sein ist nicht viele sein.']] },
-      { t: '„Und die 200, die nichts geschrieben haben?“', staerke: 'klar', herz: { mila: 1 }, merke: 'lawineGezaehlt', dann: [['mila', 'Genau. Die meisten schweigen. Schweigen ist nicht Zustimmung.']] },
+      { t: '„Und alle, die nichts geschrieben haben?“', staerke: 'klar', herz: { mila: 1 }, merke: 'lawineGezaehlt', dann: [['mila', 'Genau. Lesen ist nicht zustimmen. Ich hab auch nur gelesen.']] },
     ] },
   ],
   n5_satz: [
@@ -251,7 +251,7 @@ export const GESPRAECHE_N5 = {
     { szene: 'hitze', id: 'lucaDuell', def: LUCA_DUELL, ausgang: lucaAusgang,
       folgen: {
         knall: { herz: { luca: -2, ben: -1 }, merke: 'lucaKnall', dann: [['mesenberg', '(steht plötzlich da) Ihr zwei. Abstand. Luca, du kommst mit.']] },
-        ruhig: { staerke: 'mut', herz: { ben: 2, jo: 1, noah: 1 }, merke: 'lucaRuhig', dann: [['jo', 'Digga. Das war … ruhig. Wie ein Boss.']] },
+        ruhig: { staerke: 'mut', herz: { ben: 2, jo: 1, noah: 1 }, merke: 'lucaRuhig', dann: [['jo', 'Das war ruhig. Wie ein E-Auto. Leise, aber zack.']] },
         gelb: { staerke: 'ruhig', herz: { ben: 1 }, merke: 'lucaGelb' },
         rot: { herz: { ben: -1 }, merke: 'lucaRot', dann: [['erzaehler', 'Dein Kopf ist laut. Ben schiebt dir wortlos seinen Nachtisch rüber.']] },
       } },
@@ -265,7 +265,7 @@ export const tunN5 = (c) => ({
     : c.S.merke.fakeRaus ? [['ben', 'Du bist raus. Verstehe ich.'], ['ben', 'Ich sag dir, was läuft. Wenn du willst.']] : []),
   n5_saalBlick: () => {
     const m = c.S.merke;
-    const blick = m.tuerAngst ? [['erzaehler', 'Die Tür geht auf. Es wird still. Alle schauen. Zumindest fühlt es sich so an.'], ['erzaehler', 'Angst macht jeden Blick größer. Schau genauer hin.']]
+    const blick = m.tuerAngst ? [['erzaehler', 'Die Tür geht auf. Es wird still. Alle schauen. Zumindest fühlt es sich so an.'], ['erzaehler', 'Schau genauer hin. Wer guckt wirklich?']]
       : m.tuerWut ? [['erzaehler', 'Die Tür knallt gegen die Wand. Ups. Jetzt schauen wirklich alle.']]
       : [['erzaehler', 'Du gehst rein. Ruhig. Ein paar schauen kurz hoch. Dann wieder runter.']];
     return [...blick,
@@ -277,7 +277,7 @@ export const tunN5 = (c) => ({
   n5_detektivSpur: () => [
     ['mila', 'Und noch was. Der Fake ist mit einer App gebaut.'],
     ['mila', 'Die Schrift ist zwei Pixel zu dünn.'],
-    ['mila', 'In der Bild-Info steht ein Gerätename: „Handy von L.“'],
+    ['mila', 'Der Fake ging per AirDrop rum. Absender: „Handy von L.“'],
     { wahl: [
       { t: '„L wie Luca.“', merke: 'spurL', dann: [['mila', 'Vielleicht. Oder Lina. Oder Lenning. L ist ein Buchstabe, kein Beweis.']] },
       { t: '„Das zeigen wir Herrn Kuedes. Nicht der Klasse.“', staerke: 'hilfe', herz: { mila: 2, kaya: 1 }, merke: ['spurL', 'spurKuedes'], dann: [['mila', 'Einverstanden. Fakten an Erwachsene. Nicht an den Chat.']] },

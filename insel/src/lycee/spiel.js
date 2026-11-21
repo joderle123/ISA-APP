@@ -1259,9 +1259,9 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     const m = S.merke || {}, themen = risikoAn() ? sepasThemen(m) : [];
     const wahl = themen.map((id) => ({ t: 'Über „' + SZENEN[id].titel[1] + '“ reden.', merke: 'sepas_' + id, dann: [
       ['kaya', 'Erzähl. Ich hör zu.'], ['erzaehler', 'Du erzählst. Herr Kuedes unterbricht dich nicht.'],
-      ['kaya', SEPAS_NACH[id]], ['kaya', 'Danke, dass du davon erzählst. Das braucht Mut.']] }));
+      ['kaya', SEPAS_NACH[id]], ['kaya', 'Okay. Kekse stehen da. Nimm ruhig zwei.']] }));
     wahl.push({ t: '„Mir geht’s gerade nicht gut.“', merke: 'sepasSchlecht', dann: [
-      ['kaya', 'Danke, dass du es sagst. Komm, wir atmen erst mal.'], { tu: 'kurzRaus' },
+      ['kaya', 'Okay. Setz dich. Wir atmen erst mal.'], { tu: 'kurzRaus' },
       ['kaya', 'Besser? Ein bisschen reicht schon.'], ['kaya', 'Du kannst jederzeit wiederkommen. Oder 116 111 anrufen, anonym.']] });
     wahl.push({ t: '„Nur Hallo sagen.“', dann: [['kaya', 'Hallo! Schön, dass du reinschaust. Tür ist offen.']] });
     return [['kaya', m.sepasBesuch ? 'Ah, {name}. Setz dich, wenn du magst.' : 'Hallo {name}. Das hier ist die SePAS. Hier darf man reden.'], { tu: 'sepasBesuch' }, { wahl, fest: true }];
@@ -1345,9 +1345,9 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     },
     aylaTisch: () => [{ wahl: [
       ...(S.gefragt.includes('ayla') ? [{ t: '„Ja. Und du spielst Bass.“', staerke: 'zuhoeren', herz: { ayla: 2 }, merke: 'aylaBand', dann: [
-        ['ayla', 'Du hast zugehört? Wow. Ich hab eine Band.'], ['ayla', 'Wir haben noch keinen Namen. Und keinen Proberaum.'], ['erzaehler', 'Sie erzählt. Die ganze Pause. Noah gähnt.']] }] : []),
-      { t: '„Ja. Hoffmann ist schräg, oder?“', staerke: 'humor', herz: { ayla: 1, noah: 1 }, merke: 'hoffmannGelaestert', dann: [
-        ['ayla', '(lacht) Total. „Neue Methode!“'], ['noah', '(wird blass) Er steht hinter dir.'], ['hoffmann', '(mit Tablett) Guten Appetit. Schräg grüßt.']] },
+        ['ayla', 'Du hast zugehört? Wow. Ich hab eine Band.'], ['ayla', 'Wir haben noch keinen Namen. Und keinen Proberaum.'], ['erzaehler', 'Sie zeigt dir Bass-Videos. Die ganze Pause. Noah gähnt.']] }] : []),
+      { t: '„Ja. Die Tidderich ist schräg, oder?“', staerke: 'humor', herz: { ayla: 1, noah: 1 }, merke: 'hoffmannGelaestert', dann: [
+        ['ayla', '(lacht) Total. „Neue Methode!“'], ['noah', '(wird blass) Sie steht hinter dir.'], ['hoffmann', '(mit Tablett) Guten Appetit. Schräg grüßt.']] },
       { t: '(Nicken. Essen.)', dann: [['erzaehler', 'Ayla redet mit Noah weiter. Du isst. Das Curry ist okay.']] },
     ] }],
     samstag: () => {
@@ -1370,7 +1370,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         { t: '„Äh … hallo? Ich bin’s.“', dann: [['weber', 'Wer ist „ich“? Name, Klasse.'], ['du', '{name}. 7P2. Bus weg.'], ['weber', 'Wann seid ihr da?']] },
       ] },
       ['du', 'Halb neun. Mit dem nächsten.'],
-      ['weber', 'Ich sag’s M. Hoffmann.'],
+      ['weber', 'Ich sag’s Mme Tidderich.'],
       ['noah', '(flüstert) Wie machst du das?'],
     ],
     spaetFolge: () => {
@@ -1418,14 +1418,14 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     },
     k7Unterschrift: () => {
       const m = S.merke;
-      if (m.gefaelscht) return [['kaya', 'Hoffmann hat mir deinen Zettel gezeigt. Von neulich.'], ['kaya', 'Die Unterschrift sieht aus wie Noahs Schrift.'], ['erzaehler', 'Noah, an der Tür, wird ganz still.'],
+      if (m.gefaelscht) return [['kaya', 'Mme Tidderich hat mir deinen Zettel gezeigt. Von neulich.'], ['kaya', 'Die Unterschrift sieht aus wie Noahs Schrift.'], ['erzaehler', 'Noah, an der Tür, wird ganz still.'],
         { wahl: [
           { t: '„Die ist echt.“', merke: 'kayaRuftAn', dann: [['kaya', 'Okay. Dann ruf ich kurz zuhause an. Zum Prüfen.']] },
-          { t: '„Hat Noah gemacht. Ich hab ihn gefragt.“', staerke: 'ehrlich', herz: { noah: -1 }, merke: 'faelschungZu', dann: [['kaya', 'Danke. Hoffmann muss ich’s sagen. Nur das.'], ['noah', '(leise) Super. Danke.']] },
+          { t: '„Hat Noah gemacht. Ich hab ihn gefragt.“', staerke: 'ehrlich', herz: { noah: -1 }, merke: 'faelschungZu', dann: [['kaya', 'Danke. Mme Tidderich muss ich’s sagen. Nur das.'], ['noah', '(leise) Super. Danke.']] },
           { t: '„Hat Noah gemacht. Ohne mich zu fragen.“', herz: { noah: -3 }, merke: 'noahGeopfert', dann: [['noah', 'Was?!'], ['kaya', 'Noah. Bleib mal kurz hier.']] },
           { t: '(Schweigen.)', dann: [['kaya', 'Okay. Donnerstag ist Elternabend. Ich frag dort.']] },
         ] }];
-      if (m.zettelVerloren) return [['kaya', 'Hoffmann sagt, dein Zettel ist „verloren“.'], ['kaya', 'Der hier geht nicht verloren. Ja?']];
+      if (m.zettelVerloren) return [['kaya', 'Mme Tidderich sagt, dein Zettel ist „verloren“.'], ['kaya', 'Der hier geht nicht verloren. Ja?']];
       if (m.haStress || m.hoffmannReden) return [['kaya', 'Wenn unterschreiben zuhause schwer ist: sag nur das.'], ['kaya', 'Warum, musst du nicht sagen.'],
         { wahl: [
           { t: '„Geht schon. Ich bring’s.“', dann: [['kaya', 'Okay.']] },
@@ -1442,7 +1442,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       return [['kaya', 'Bei dir ist noch nichts. Ruf heute beim Bäcker an.'], ['kaya', 'Sonst bleibt die Kantine.']];
     },
     weberKennt: () => (S.merke.portiWeber ? [['weber', 'Du hast mal Bens Portemonnaie gebracht. Weiß ich noch.']]
-      : S.merke.diebstahlGelogen ? [['weber', '(schaut dich lange an) Ich bleib so lange hier.']] : []),
+      : S.merke.diebstahlGelogen ? [['weber', '(schaut dich lange an) Ich bin bis 16 Uhr hier.']] : []),
     lucaHaube: () => (S.merke.lucaAngelegt || S.merke.lucaGepetzt ? [['luca', '(mit Haube) Kantinen-Polizei. Jetzt in echt.']]
       : S.merke.lucaBeschuldigt ? [['luca', 'Kenan sagt, du hast mich verdächtigt. Danke auch.']]
       : [['luca', '(mit Haube) Sag nix. Ich weiß, wie ich aussehe.']]),
@@ -1465,11 +1465,11 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       : S.merke.kenanVerpfiffen && S.merke.kenanVerraten2 ? [['kenan', 'Zweimal. Merk ich mir.']] : []),
     k7Mila: () => {
       const m = S.merke;
-      const z = [['mila', m.berufHolz ? 'Du hast Sägemehl in den Haaren.' : 'Du riechst nach Zwiebel. Stark.'], ['mila', 'Freitag präsentieren wir zwei. Hat Hoffmann so verteilt.']];
+      const z = [['mila', m.berufHolz ? 'Du hast Sägemehl in den Haaren.' : 'Du riechst nach Zwiebel. Stark.'], ['mila', 'Freitag präsentieren wir zwei. Hat Mme Tidderich so verteilt.']];
       if (m.milaVerleugnet) z.push(['mila', 'Keine Sorge. Ich sag allen, wir sind „niemals“ was.'],
         { wahl: [
           { t: '„Das in der Kantine war feige.“', staerke: 'ehrlich', herz: { mila: 2 }, merke: 'milaVersoehnt', dann: [['mila', '… Ja. War es.'], ['mila', 'Freitag redest du zuerst.']] },
-          { t: '„Ich frag Hoffmann, ob ich allein darf.“', staerke: 'abstand', herz: { mila: -1 }, merke: 'alleinPraesentieren', dann: [['mila', 'Mach. Ich frag nicht für dich.']] },
+          { t: '„Ich frag Mme Tidderich, ob ich allein darf.“', staerke: 'abstand', herz: { mila: -1 }, merke: 'alleinPraesentieren', dann: [['mila', 'Mach. Ich frag nicht für dich.']] },
           { t: '„Luca hat genervt. Mehr war nicht.“', herz: { mila: -1 }, dann: [['mila', 'Luca hat nicht „niemals“ gesagt.']] },
         ] });
       else if (m.geruechtStehen) z.push(['mila', 'Die fragen immer noch, ob wir … du weißt.'], ['mila', 'Ich sag jetzt einfach ja. Spart Zeit.'],
@@ -1487,20 +1487,20 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     k7Noah: () => {
       const m = S.merke;
       if (m.noahGeopfert) return [['erzaehler', 'Noah steht auf, als du kommst. Er geht.']];
-      if (m.beweisDu) return [['noah', 'Der Screenshot von dir. Für Kaya.'], ['noah', 'Ich hab ihn nie geschickt. Sorry.'],
+      if (m.beweisDu) return [['noah', 'Der Screenshot von dir. Für Kuedes.'], ['noah', 'Ich hab ihn nie geschickt. Sorry.'],
         { wahl: [
           { t: '„Weiß ich. Hab’s gemerkt.“', staerke: 'lesen', dann: [['noah', 'Jo hätte sofort gewusst, dass ich’s war.']] },
-          { t: '„Dann schick ihn jetzt.“', staerke: 'klar', dann: [['noah', 'Geht nicht. Jo hat die Gruppe gelöscht.'], ['noah', 'Alles weg. Auch das Bild.']] },
+          { t: '„Dann schick ihn jetzt.“', staerke: 'klar', dann: [['noah', 'Geht nicht. Ich hab den Chat gelöscht. Aus Panik.'], ['noah', 'Alles weg. Auch das Bild.']] },
           { t: '„Feige, Noah.“', herz: { noah: -2 }, dann: [['noah', 'Ja.'], ['erzaehler', 'Er steht auf. Er geht zum Brunnen.']] },
         ] }];
-      return [['noah', m.garageNoah ? 'Samstag Garage. Ich hab jetzt schon Angst.' : 'Ich hab immer noch nix. Nur Kaya.']];
+      return [['noah', m.garageNoah ? 'Samstag Garage. Ich hab jetzt schon Angst.' : 'Ich hab immer noch nix. Nur Kuedes.']];
     },
     benKasse: () => {
       const m = S.merke;
       if (m.zwanzigGenommen && m.diebstahlGelogen) return [['ben', '(in der Schlange) Echt jetzt? {name} an der Kasse?'], ['kremer', 'Wieso?'],
         { wahl: [
           { t: '„Ich hab damals Bens Geld genommen.“', staerke: 'ehrlich', herz: { ben: 1 }, merke: 'diebstahlSpaet', dann: [['kremer', '(lange Pause) Dann heute Tabletts. Morgen sehen wir.'], ['ben', '… Okay. Wenigstens jetzt.']] },
-          { t: '„Ben spinnt. Frag ihn, was er meint.“', herz: { ben: -1 }, merke: 'kasseBeobachtet', dann: [['ben', 'Frag Hoffmann.'], ['kremer', 'Ich zähl heute Abend. Auf den Cent.']] },
+          { t: '„Ben spinnt. Frag ihn, was er meint.“', herz: { ben: -1 }, merke: 'kasseBeobachtet', dann: [['ben', 'Frag die Tidderich.'], ['kremer', 'Ich zähl heute Abend. Auf den Cent.']] },
           { t: '(Kremer die Kasse geben. Wortlos.)', staerke: 'abstand', merke: 'keineKasse', dann: [['kremer', 'Hm. Dann Tabletts.']] },
         ] }];
       if (m.diebstahlZugegeben) return [['ben', 'An die Kasse? Mutig, Frau Kremer.'], ['kremer', 'Weiß ich. Ist geklärt.'], ['ben', '… Hm.']];
@@ -1559,7 +1559,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       const nachher = await ui.skala({ frage: r.geblieben ? 'Und jetzt, am Ende?' : 'Und jetzt, wo du weg bist?' });
       logMut('pause', 'Pause bei der Gruppe', vorher, nachher, r);
       if (r.geblieben) { staerke('bleiben'); return [['erzaehler', 'Vorher: ' + vorher + '. Am Ende: ' + nachher + '.'], ...(nachher < vorher ? [['erzaehler', 'Irgendwann lachst du übers Katzenvideo mit. Gemerkt hat’s keiner.']] : [['erzaehler', 'Heute ging’s kaum runter. Kommt vor.']]), ['noah', 'Kommst du morgen wieder her?'], { wahl: [{ t: '„Mal sehen.“', dann: [] }, { t: '„Ja.“', herz: { noah: 1 }, dann: [['noah', 'Cool.']] }] }]; }
-      return [['erzaehler', 'Du bist nach ' + r.sek + ' Sekunden gegangen.'], ['erzaehler', 'Später, im Gang. Herr Kaya: „Wie lang warst du da?“'],
+      return [['erzaehler', 'Du bist nach ' + r.sek + ' Sekunden gegangen.'], ['erzaehler', 'Später, im Gang. Herr Kuedes: „Wie lang warst du da?“'],
         { wahl: [{ t: '„' + r.sek + ' Sekunden.“', dann: [['kaya', 'Zählt. Nächstes Mal: so lang plus fünf.']] }, { t: '„Kaum. Bringt eh nix.“', dann: [['kaya', 'Notiert. Morgen nochmal? Ich wette einen Keks.']] }] }];
     },
     sicherVorher: async () => { S.merke.sicherV = await ui.skala({ kicker: 'Dein Kopf', frage: 'Wie sicher bist du, dass es um dich geht?', links: 'gar nicht', rechts: 'total sicher' }); sichern(); },
@@ -1574,7 +1574,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       else if (m.tafelGleich || m.tafelKarte) logLeiter('tafel', 'halb');
       if (m.tafelStumm && !m.karte) return [['erzaehler', 'Nach der Stunde.'], ['hoffmann', '(packt ein) Vorhin. Blöd gelaufen.'], ['hoffmann', 'Nächstes Mal sag einfach „gleich“. Dann komm ich zurück.']];
       if (m.tafelStumm) return [['erzaehler', 'Nach der Stunde.'], ['hoffmann', 'Die Karte darfst du echt benutzen. Ich mein das so.']];
-      if (m.tafelKlo) return [['erzaehler', 'Nach der Stunde. M. Hoffmann sagt nichts. Er nickt nur.']];
+      if (m.tafelKlo) return [['erzaehler', 'Nach der Stunde. Mme Tidderich sagt nichts. Sie nickt nur.']];
       return [];
     },
     fehlerAufgabe: async () => {
@@ -1716,14 +1716,14 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     kenanBus: () => {
       const m = S.merke;
       if (m.kenanVerpfiffen) return [['erzaehler', 'Kenan steigt ein. Er setzt sich weit weg.'], ['dario', '(im Vorbeigehen) Mutig. Oder dumm. Mal sehen.']];
-      if (m.schuldGenommen) return [['kenan', 'Brief nach Hause. Wegen mir.'], ['kenan', 'Warum hast du das gemacht?'],
+      if (m.schuldGenommen) return [['kenan', 'Du hast einen Brief nach Hause gekriegt. Wegen mir.'], ['kenan', 'Warum hast du das gemacht?'],
         { wahl: [
           { t: '„Du hast schon genug Ärger.“', staerke: 'lesen', herz: { kenan: 1 }, dann: [['kenan', 'Woher weißt du das?'], ['kenan', '… Okay. Danke.']] },
           { t: '„Weiß ich auch nicht.“', dann: [['kenan', '(lacht kurz) Du bist komisch.']] },
           { t: '„Du schuldest mir was.“', herz: { kenan: -1 }, merke: 'kenanSchuldet', dann: [['kenan', 'Okay. Merk ich mir. Echt.']] },
         ] }];
-      if (m.torWeg) return [['kenan', 'Abgehauen. Hoffmann hat dich trotzdem erkannt.'], ['kenan', 'Er hat drei Namen. Deiner ist dabei.']];
-      return [['kenan', 'Hoffmann kam genau zu uns. Als ob er’s wusste.'], ['kenan', 'Hast du vorher was gesagt?'],
+      if (m.torWeg) return [['kenan', 'Abgehauen. Die Tidderich hat dich trotzdem erkannt.'], ['kenan', 'Sie hat drei Namen. Deiner ist dabei.']];
+      return [['kenan', 'Die Tidderich kam genau zu uns. Als ob sie’s wusste.'], ['kenan', 'Hast du vorher was gesagt?'],
         { wahl: [
           { t: '„Nein.“', dann: [['kenan', 'Hm. Okay.']] },
           { t: '„Frag lieber Luca.“', herz: { kenan: 1, luca: -1 }, merke: 'lucaBeschuldigt', dann: [['kenan', 'Luca? … Hm.']] },
@@ -1748,7 +1748,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         { t: '„Wir haben zusammen gelernt.“', staerke: 'loyal', herz: { noah: 2 }, merke: 'gedeckt', dann: [
           ['hoffmann', 'Zusammen gelernt. Mit denselben Fehlern.'],
           ['hoffmann', 'Dann erklärt mir Noah Aufgabe 3. Jetzt.'],
-          ['erzaehler', 'Noah kann es nicht. Hoffmann sagt nichts mehr. Er schreibt was auf.'] ] },
+          ['erzaehler', 'Noah kann es nicht. Mme Tidderich sagt nichts mehr. Sie schreibt was auf.'] ] },
         { t: '(Schweigen.)', dann: [
           ['hoffmann', 'Okay. Dann beide null Punkte.'],
           ['noah', 'Warte. {name} kann nix dafür. Ich war’s.'],
@@ -1758,7 +1758,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       ['erzaehler', 'Nach der Stunde. Frau Sommer hält ihre Liste hoch.'],
       ['sommer', 'Unentschuldigt. Steht schon drin.'],
       ...(S.merke.bank ? [['sommer', 'Vor zwei Wochen schlecht. Heute weg. Interessant.']] : []),
-      ...(S.merke.fehlstunde ? [['sommer', 'Hoffmann sagt, du hattest schon eine Fehlstunde.']] : []),
+      ...(S.merke.fehlstunde ? [['sommer', 'Mme Tidderich sagt, du hattest schon eine Fehlstunde.']] : []),
       ['sommer', 'Wo warst du? Und mit wem?'],
       { wahl: [
         { t: '„Beim Bäcker. Mit Dario und Luca.“', staerke: 'ehrlich', herz: { sommer: 1, dario: -2, luca: -2 }, merke: 'darioVerpfiffen', dann: [
@@ -1780,9 +1780,9 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       await ui.reihenfolge(SCHLICHTEN);
       staerke('schlichten');
       return [['ben', 'Okay … wir wollten beide spielen.'], ['jo', 'Dann halbe Pause ihr, halbe Pause wir?'], ['ben', 'Deal.'],
-        ...(S.merke.sommerGeholt ? [['sommer', '(pfeift) Gut. Und jetzt Korbball.']] : [['lina', '(leise) Das war cool, {name}.']])];
+        ...(S.merke.sommerGeholt ? [['sommer', '(pfeift) Gut. Und jetzt Basket.']] : [['lina', '(leise) Das war cool, {name}.']])];
     },
-    noahWoche: () => (S.merke.erklaert ? [['noah', 'Hoffmann hat mich drangenommen. Ich wusste es. Er war geschockt.']] : S.merke.abgeschrieben ? [['noah', 'Sorry wegen der Hausaufgabe. Das hat dir Ärger gemacht.']] : [['noah', 'Schönes Wochenende, {name}.']]),
+    noahWoche: () => (S.merke.erklaert ? [['noah', 'Die Tidderich hat mich drangenommen. Ich wusste es. Sie war geschockt.']] : S.merke.abgeschrieben ? [['noah', 'Sorry wegen der Hausaufgabe. Das hat dir Ärger gemacht.']] : [['noah', 'Schönes Wochenende, {name}.']]),
     matheErklaeren: () => (S.merke.matheGefragt ? [
       ['chiara', 'Halbe Pizza plus Viertel Pizza. Wie viel?'],
       { wahl: [
@@ -1816,8 +1816,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         : 'Ein Foto von dir beim Gähnen. Mit Schlaf-Sticker.';
       return [['erzaehler', bild], ['noah', 'Sorry. Ich hab nicht gelacht. Glaub ich.'],
         { wahl: [
-          { t: '„Leite mir das weiter. Für Kaya.“', staerke: 'hilfe', merke: 'beweisDu', dann: [['noah', 'Dann weiß Jo, dass ich’s war …'], ['noah', '… Okay. Mach ich. Später.']] },
-          { t: '„Ist doch lustig.“ (Ist es nicht.)', staerke: 'ruhig', dann: [['noah', '(erleichtert) Ja, oder?']] },
+          { t: '„Leite mir das weiter. Für Kuedes.“', staerke: 'hilfe', merke: 'beweisDu', dann: [['noah', 'Dann weiß Jo, dass ich’s war …'], ['noah', '… Okay. Mach ich. Später.']] },
+          { t: '„Ist doch lustig.“', staerke: 'ruhig', dann: [['noah', '(erleichtert) Ja, oder?']] },
           { t: '„Ich mach was über Jo.“', merke: 'racheJo', dann: [['noah', 'Lass das. Bitte. Dann geht’s nie zu Ende.']] },
         ] }];
     },
@@ -1826,7 +1826,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       ['noah', S.merke.abgeschrieben ? 'Ich zahl. Wegen der Hausaufgabe.' : 'Ich lad dich ein. Echt.'],
       { wahl: [
         { t: '„Danke. Nächstes Mal ich.“', herz: { noah: 1 }, merke: 'noahGezahlt', dann: [['erzaehler', 'Noah zahlt. Du merkst dir den Betrag.']] },
-        { t: '„Nee, lass. Ich will nix schulden.“', dann: [['noah', 'Ist doch nicht schulden …'], ['erzaehler', 'Du bleibst am Brunnen. Allein.']] },
+        { t: '„Nee, lass. Ich will nix schulden.“', dann: [['noah', 'Das sind doch keine Schulden …'], ['erzaehler', 'Du bleibst am Brunnen. Allein.']] },
       ] }],
     benLeihen: () => [{ wahl: [
       ...(S.merke.kantinengeldWeg ? [] : [{ t: '„Hier. Zwei Euro.“ (Das Kantinengeld.)', herz: { ben: 1 }, merke: 'kantinengeldWeg', dann: [{ tu: 'benSchuld' }, ['ben', 'Du rettest mich. Morgen. Versprochen. Wirklich morgen.']] }]),
@@ -1848,10 +1848,10 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       ] }] : S.merke.hoffmannReden ? [
       ['erzaehler', 'Nach der Stunde. Alle sind raus.'],
       ['hoffmann', 'Ich frag nicht nach Details. Musst du nicht erzählen.'],
-      ['hoffmann', 'Hausaufgabe bis Freitag. Und wenn’s öfter so ist: Kaya.'],
+      ['hoffmann', 'Hausaufgabe bis Freitag. Und wenn’s öfter so ist: Herr Kuedes.'],
       { wahl: [
         { t: '„Okay.“', dann: [] },
-        { t: '„Kaya erzählt eh alles weiter.“', dann: [['hoffmann', 'Manches muss er. Er sagt dir vorher, was.']] },
+        { t: '„Kuedes erzählt eh alles weiter.“', dann: [['hoffmann', 'Manches muss er. Er sagt dir vorher, was.']] },
         { t: '(Gehen, ohne was zu sagen.)', dann: [['hoffmann', '(ruft nach) Freitag, {name}!']] },
       ] }] : []),
 
@@ -1902,7 +1902,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       if (m.milaVerleugnet) z.push(['erzaehler', 'Mila setzt sich in die letzte Reihe. Weit weg.'], ['erzaehler', 'Abends eine Nachricht: „niemals, ja? gut zu wissen“']);
       else if (m.geruechtStehen) z.push(['mila', 'Jetzt denken alle, wir … egal.'], ['mila', 'Danke. Glaub ich.']);
       if (!m.ideeBehalten && (m.milaVerleugnet || m.geruechtStehen || m.lucaEifersucht)) z.push(['lina', '(leise, im Vorbeigehen) Das mit Mila hat Ben rumgeschickt. Nicht Luca.']);
-      if (m.haVergessen) z.push(['noah', 'Hast du den Zettel unterschrieben? Für Hoffmann?'], ['noah', 'Ich kann Unterschriften. Gut sogar.'],
+      if (m.haVergessen) z.push(['noah', 'Hast du den Zettel unterschrieben? Für die Tidderich?'], ['noah', 'Ich kann Unterschriften. Gut sogar.'],
         { wahl: [
           { t: '„Mach.“', merke: 'gefaelscht', dann: [['erzaehler', 'Zwei Sekunden. Sieht echt aus.'], ['noah', 'Montag abgeben. Nicht vorher zeigen.']] },
           { t: '„Ich zeig’s zuhause. Wenn’s ruhig ist.“', staerke: 'ehrlich', dann: [['noah', 'Okay. Viel Glück.']] },
@@ -2839,7 +2839,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       { wahl: [
         { t: '„Jeff, komm zu uns!“', merke: 'teamJeff', staerke: 'einbeziehen', dann: [['erzaehler', 'Jeff schaut hoch. Dann grinst er breit.'], ['erzaehler', 'Ihr verliert knapp. Jeff hält zwei Bälle.'], ['erzaehler', 'Nach dem Spiel klatscht er dich ab.']] },
         { t: '„Dario.“', merke: 'teamDario', dann: [['erzaehler', 'Jeff geht als Letzter rüber. Langsam.'], ['erzaehler', 'Er bekommt fast nie den Ball.'], ['erzaehler', '(Als Letzter gewählt werden fühlt sich mies an.)']] },
-        { t: '„Lasst uns abzählen. Dann bleibt keiner übrig.“', merke: 'teamFair', staerke: 'klar', dann: [['erzaehler', 'Ihr zählt ab. Eins, zwei, eins, zwei.'], ['erzaehler', 'Einer mault kurz. Dann spielen alle mit.'], ['erzaehler', 'Jeff macht das Siegtor. Alle jubeln.']] },
+        { t: '„Lasst uns abzählen. Dann bleibt keiner übrig.“', merke: 'teamFair', staerke: 'klar', dann: [['erzaehler', 'Ihr zählt ab. Eins, zwei, eins, zwei.'], ['erzaehler', 'Einer mault kurz. Dann spielen alle mit.'], ['erzaehler', 'Jeff kriegt zweimal den Ball. Einmal trifft er fast.']] },
       ] },
     ]);
     ui.toast('<b>⚽ Noch Lust?</b><span>Am Nordtor wartet das Elfmeterschießen.</span>');

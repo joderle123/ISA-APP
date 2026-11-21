@@ -95,15 +95,14 @@ export const GESPRAECHE_N6 = {
   n6_morgen: [
     // Jugendwelt heute: Nachrichten, die sich selbst löschen – und künstliche Eile um 23:40.
     ['erzaehler', 'Sonntag, 23:40. Eine Nachricht, die sich nach dem Lesen löscht.'],
-    ['erzaehler', 'Kenan: „antworte JETZT. wer nicht antwortet, ist raus.“'],
+    ['erzaehler', 'Luca: „antworte JETZT. wer nicht antwortet, ist raus.“'],
     ['erzaehler', 'Darunter ein Zähler. 10 … 9 … 8 …'],
     { wahl: [
-      { t: '(Schnell antworten: „bin da!!“)', merke: 'jetztGeantwortet', dann: [['erzaehler', 'Kenan: „gut 😂 test bestanden“.'], ['erzaehler', 'Du liegst noch eine Stunde wach.']] },
+      { t: '(Schnell antworten: „bin da!!“)', merke: 'jetztGeantwortet', dann: [['erzaehler', 'Luca: „gut 😂 test bestanden“.'], ['erzaehler', 'Du liegst noch eine Stunde wach.']] },
       { t: '(Handy umdrehen. Schlafen.)', staerke: 'abstand', merke: 'jetztGeschlafen', dann: [['erzaehler', 'Morgens ist die Nachricht weg. Du bist nicht raus. Es war ein Test.']] },
-      { t: '(Screenshot machen.)', staerke: 'hilfe', merke: 'jetztScreenshot', dann: [['erzaehler', '„Du hast einen Screenshot gemacht.“ Kenan sieht das.'], ['erzaehler', 'Er schreibt nichts mehr.']] },
+      { t: '(Screenshot machen.)', staerke: 'hilfe', merke: 'jetztScreenshot', dann: [['erzaehler', '„Du hast einen Screenshot gemacht.“ Luca sieht das.'], ['erzaehler', 'Er schreibt nichts mehr.']] },
     ] },
-    ['erzaehler', 'Was um 23:40 „dringend“ ist, ist es fast nie.'],
-    ['erzaehler', 'Montag. Klassenfoto. Ben hat seinen besten Pulli an. Er hat nur einen.'],
+    ['erzaehler', 'Montag. Klassenfoto. Ben hat Gel in den Haaren. Sehr viel Gel.'],
     ['mila', '(leise) Morgen Mittag. CDI. Mit Beweis.'],
   ],
   n6_foto: [
@@ -149,7 +148,7 @@ export const GESPRAECHE_N6 = {
     ['mila', 'Danach hat Jo geschrieben: „Mach das nicht.“ Das ist auch ein Fakt.'],
     { wahl: [
       { t: '„Ich red mit Jo. Allein.“', staerke: 'mut', herz: { mila: 1 }, merke: 'mitJoReden', dann: [['mila', 'Gut. Mit „Ich“ anfangen. Nicht mit den Fäusten.']] },
-      { t: '„Ich stell das in den Klassenchat. Alle sollen es wissen.“', herz: { mila: -1 }, merke: 'chatGedroht', dann: [['mila', 'Dann bist du der nächste Account.'], ['mila', 'Mach. Aber ohne mich.'], ['erzaehler', 'Mila packt ihren Laptop ein. Langsam.']] },
+      { t: '„Ich stell das in den Klassenchat. Alle sollen es wissen.“', herz: { mila: -1 }, merke: 'chatGedroht', dann: [['mila', 'Dann machst du genau das, was der Account macht.'], ['mila', 'Mach. Aber ohne mich.'], ['erzaehler', 'Mila packt ihren Laptop ein. Langsam.']] },
       { t: '„Ich geh damit zu Herrn Kuedes.“', staerke: 'hilfe', herz: { mila: 1, kaya: 1 }, merke: ['kuedesBeweis', 'mitJoReden'], dann: [['mila', 'Ja. Und mit Jo reden. Beides geht.']] },
     ] },
   ],
@@ -206,7 +205,7 @@ export const tunN6 = (c) => ({
       { t: '„Du bist so ein Verräter. Echt jetzt.“', herz: { jo: -2 }, merke: 'joDuBotschaft', dann: [
         ['jo', 'VERRÄTER? Ich hab geschrieben: Mach das nicht!'],
         ['erzaehler', 'Jo wirft den Ball gegen das Brett. Sehr hart.'],
-        ['jo', '… Sorry. Okay. Du hast recht, sauer zu sein.'] ] },
+        ['jo', '… Sorry. Ich bin nicht sauer auf dich. Auf mich.'] ] },
       { t: '„Ey. Das hat mich echt verletzt. Ich will’s verstehen.“', staerke: 'klar', herz: { jo: 2 }, merke: 'joIchBotschaft', dann: [
         ['jo', '(lässt den Ball fallen) … Wir SIND Freunde.'],
         ['jo', 'Das war ein dummer Witz. Ich hab nicht gedacht, dass er’s macht.'] ] },

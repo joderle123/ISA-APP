@@ -102,7 +102,7 @@ const MAPPE = (m) => ({
       kommentar: ['Fakt. Mit Uhrzeit. Allein kein Beweis – „lowkey“ sagen viele.', 'Doch, das kommt rein. Mit Uhrzeit ist es ein Fakt.'] },
     { id: 'uhr', sy: '🕐', t: 'Der Fake-Screenshot aus dem Herbst zeigt die Uhrzeit 25:14.', kurz: 'Fake: 25:14', echt: true,
       kommentar: ['Fakt. Die Uhrzeit gibt es nicht. Das Bild ist gebaut.', 'Doch. 25:14 gibt es nicht. Das zeigt: gefälscht.'] },
-    { id: 'geraet', sy: '📱', t: 'In der Bild-Info vom Video steht: „Handy von L.“', kurz: '„Handy von L.“', echt: true,
+    { id: 'geraet', sy: '📱', t: 'Das Video kam per AirDrop. Absender: „Handy von L.“', kurz: '„Handy von L.“', echt: true,
       kommentar: ['Fakt. Ein Gerätename. Wer L. ist, klärt die Schule.', 'Doch, rein damit. Das ist eine echte Angabe im Bild.'] },
     { id: 'grinsen', sy: '😏', t: 'Luca grinst immer, wenn jemand über das Video redet.', kurz: 'Luca grinst', echt: false,
       kommentar: ['Grinsen ist ein Gefühl von uns. Kein Fakt.', 'Raus. Grinsen beweist nichts.'] },
@@ -191,7 +191,7 @@ export const GESPRAECHE_N8 = {
     ['ben', 'Ich. Ich drück einfach auf Katzen.'],
     { szene: 'feed', id: 'feed', def: FEED, ausgang: (r) => (r.top === 'drama' ? 'drama' : 'anders'),
       folgen: {
-        drama: { merke: 'feedDrama', dann: [['kaya', 'Drama hält uns am längsten fest.'], ['kaya', 'Darum zeigt der Feed so viel davon.'], ['jo', 'Digga, mein Feed ist ein einziger Streit.']] },
+        drama: { merke: 'feedDrama', dann: [['kaya', 'Drama hält uns am längsten fest.'], ['kaya', 'Darum zeigt der Feed so viel davon.'], ['jo', 'Mein Feed ist ein einziger Streit. Echt.']] },
         anders: { merke: 'feedAnders', dann: [['kaya', 'Gut gesteuert. Der Feed folgt dir.'], ['kaya', 'Aber er schubst auch. Merkt euch das.']] },
       } },
     ['kaya', 'Mission: ein Wenn-dann-Satz. „Wenn ich Drama sehe, dann wische ich weiter.“'],
@@ -231,7 +231,7 @@ export const GESPRAECHE_N8 = {
     ['ben', 'Übrigens. Freitag hab ich Geburtstag. Die Kekse sind schon Teil davon.'],
     { wahl: [
       { t: '„Freitag bring ich was mit.“', herz: { ben: 2 }, merke: 'benGefragt', dann: [['ben', 'Echt jetzt? … Okay. Ich tu so, als wär ich nicht gerührt.']] },
-      { t: '„Wie alt wirst du? Hundert?“', herz: { ben: 1 }, dann: [['ben', 'Innerlich: ja. Äußerlich: dreizehn. Und schuldenfrei. Fast.']] },
+      { t: '„Wie alt wirst du? Hundert?“', herz: { ben: 1 }, dann: [['ben', 'Innerlich hundert. Außen dreizehn. Und schuldenfrei. Fast.']] },
     ] },
   ],
   n8_post: [

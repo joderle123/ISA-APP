@@ -129,16 +129,16 @@ export async function lichtung(a) {
     return 'gegangen';
   }
   if (w === 1) {
-    await a.sag('dex', 'Gras. Macht entspannt. Ist ja fast legal.');
-    await a.sag('e', '(Fast legal? Für Erwachsene, zu Hause. Für dich: nein.)');
+    await a.sag('dex', 'Gras. Ist doch eh legal jetzt.');
+    await a.sag('e', '(Legal? Nur für Erwachsene, zu Hause. Für dich: nein.)');
     await a.sag('e', '(Dein Gehirn baut sich noch um. Da schadet es mehr.)');
   }
   if (w === 2) await a.sag('dex', 'Später gibt’s nicht. Jetzt oder nie.');
   if (w === 0) await a.sag('dex', 'Boah. Einmal. Merkt doch keiner.');
   await a.sag('mo', '(hebt das Handy) Ich film nicht. Versprochen.');
-  await a.sag('e', 'Das rote Licht am Handy ist an.');
+  await a.sag('e', 'Die Kamera zeigt genau auf dich.');
   await a.sag('sina', 'Dex, lass doch. Nicht jeder muss.');
-  w = await a.wahl(['„Nein. Ich will das nicht.“', '„Ich hab gleich Training. Die testen da.“', '„Wer hat das D3X da hinten gemacht?“', '(Ein Zug. Was soll schon passieren?)']);
+  w = await a.wahl(['„Nein. Ich will das nicht.“', '„Ich hab gleich Training. Da riecht das jeder.“', '„Wer hat das D3X da hinten gemacht?“', '(Ein Zug. Was soll schon passieren?)']);
   if (w === 3) {
     a.merke('sit_wald', 'mitgemacht');
     await a.blende('Ein paar Minuten später');
@@ -149,7 +149,7 @@ export async function lichtung(a) {
     await a.sag('dex', 'Chill. Geht vorbei. Erstes Mal halt.');
     await a.sag('e', 'Mo zeigt aufs Handy. Er hat alles gefilmt.');
     await a.sag('e', 'Du setzt dich auf den Baumstamm. Atmest. Langsam wird es besser.');
-    await a.sag('e', 'Es fühlt sich nicht an wie dazugehören. Eher wie verlieren.');
+    await a.sag('e', 'Auf dem Heimweg riecht deine Jacke noch danach.');
     a.nachricht('Gruppe', 'Mo hat ein Video geteilt: „Neu im Wald 😵“');
     a.nachricht('Sina', 'Sorry wegen Dex. Und wegen dem Video. Ehrlich.');
     await kuedes(a, 'mitgemacht');
@@ -157,7 +157,7 @@ export async function lichtung(a) {
   }
   a.merke('sit_wald', ['nein', 'ausrede', 'umgelenkt'][w]);
   if (w === 0) { await a.sag('dex', 'Boah. Baby.'); await a.sag('sina', 'Lass mal, Dex. Ist doch okay.'); await a.sag('e', 'Dein Herz klopft. Aber du hast es gesagt. Laut.'); }
-  if (w === 1) { await a.sag('dex', 'Ach so. Na dann.'); await a.sag('e', 'Eine Ausrede. Hat funktioniert. Diesmal.'); await a.sag('e', 'Nächstes Mal geht vielleicht auch ein echtes Nein.'); }
+ if (w === 1) { await a.sag('dex', 'Ach so. Na dann.'); await a.sag('e', 'Eine Ausrede. Hat funktioniert. Diesmal.'); }
   if (w === 2) {
     await a.sag('dex', '(grinst) Das war ich. D3X. Mit drei.'); await a.sag('dex', 'Krass, oder? Hat zwei Stunden gedauert.');
     await a.sag('e', 'Dex erzählt zehn Minuten von seinem Graffiti. Den Joint hat er vergessen.'); await a.sag('sina', '(zwinkert dir zu)');
@@ -169,7 +169,7 @@ export async function lichtung(a) {
     await a.sag('mika', 'Nein. … Ich hab geübt.');
     await a.sag('dex', '(lacht) Geübt? Ihr seid echt komisch.');
     await a.sag('e', 'Dex, Mo und Sina gehen. Mika atmet aus. Ganz lang.');
-    await a.sag('mika', 'Mein Herz rast trotzdem. Aber anders. Gut anders.');
+    await a.sag('mika', 'Mein Herz rast. Hab ich das echt gesagt?');
     a.merke('mikaNeinWald');
     if (a.m().sit_wald === 'nein') a.nachricht('Dex (Gruppe)', 'Baby 🍼 Und Mika jetzt auch 🙄');
     a.nachricht('Sina', 'Ihr zwei. Echt stark. Sag ich Dex aber nicht.');
@@ -205,13 +205,13 @@ export async function lichtung(a) {
   }
   if (h === 1) {
     await a.blende('Drei Minuten später');
-    await a.sag('kaya', 'Gut, dass du mich geholt hast. Das war richtig.');
+    await a.sag('kaya', 'Gut, dass du mich geholt hast.');
     await a.sag('kaya', 'Mika, schau mich an. Du bist sicher. Wir atmen.');
     await a.sag('kaya', 'Wenn jemand umkippt oder schlecht Luft kriegt: 112. Immer.');
     a.merke('mikaGeholfen'); a.merke('kuedesWald');
   }
-  await a.sag('mika', 'Danke. Ich wollte nur dazugehören.');
-  const d = await a.wahl(['„Du gehörst auch so dazu.“', '„Kenn ich. Das Gefühl.“', '(Nur nicken.)']);
+  await a.sag('mika', 'Danke. Ich wollte nicht das Baby sein.');
+  const d = await a.wahl(['„Bist du nicht. Dex ist nur laut.“', '„Kenn ich. Das Gefühl.“', '(Nur nicken.)']);
   await a.sag('mika', ['(lächelt schief) Sagt sich so leicht. Aber danke.', 'Echt? Du auch?', '(nickt zurück)'][d]);
   if (a.m().sit_wald === 'nein') a.nachricht('Dex (Gruppe)', 'Baby 🍼');
   a.nachricht('Sina', 'Fand’s stark von dir. Sag ich Dex aber nicht.');
@@ -229,9 +229,7 @@ async function kuedes(a, art) {
     const w = await a.wahl(['„Weiß nicht.“', '„Mies.“', '„War doch nur einmal.“']);
     await a.sag('kaya', ['Weiß nicht ist eine ehrliche Antwort.', 'Mies ist okay. Das sagt, dass dir was wichtig ist.', 'Kann sein. Und trotzdem darfst du darüber reden.'][w]);
     await a.sag('kaya', 'Kiffen ist für Jugendliche verboten.'); await a.sag('kaya', 'Dein Gehirn baut sich noch um. Da schadet es mehr.');
-    await a.sag('kaya', 'Das ist kein Moralding. Das ist Biologie.');
     await a.sag('kaya', 'Das Video: Wir reden mit Mo. Löschen ist sein Job, nicht deiner.');
-    await a.sag('kaya', 'Und du darfst dich umentscheiden. Jedes Mal.');
     await a.sag('kaya', 'Meine Tür ist offen. Oder 116 111: anonym, kostenlos.');
   } else {
     await a.sag('kaya', 'Du hast gestern geholfen. Das war nicht leicht.');
@@ -246,8 +244,8 @@ export async function laden(a) {
   const m = a.m();
   await a.sag('e', 'Vor dem Laden steht Mo. Das Handy schon in der Hand.');
   await a.sag('mo', m.sit_wald ? 'Hey. Du warst doch im Wald. Dex hat eine Mutprobe.' : 'Hey. Du bist doch neu. Dex hat eine Mutprobe für Neue.');
-  await a.sag('mo', 'Hol was aus dem Laden. Ohne Kasse. Ich film.');
-  await a.sag('mo', 'Video oder es ist nicht passiert. Dann bist du drin.');
+  await a.sag('mo', 'Hol was raus. Ohne zahlen. Ich film.');
+  await a.sag('mo', 'Ohne Video glaubt’s keiner. Dann bist du drin.');
   let w = await a.wahl(['„Und wenn ich nicht will?“', '„Mach’s doch selber.“', '„Okay …“', '(Weitergehen.)']);
   if (w === 3) {
     await a.sag('mo', 'Ernsthaft? Feigling.');
@@ -255,8 +253,8 @@ export async function laden(a) {
     a.merke('sit_laden', 'weiter');
     return 'weiter';
   }
-  if (w === 0) { await a.sag('mo', '(zuckt mit den Schultern) Dann halt nicht. Dann bist du nicht drin.'); await a.sag('e', '(Drin. In was eigentlich? In einer Gruppe, die dich testet?)'); }
-  if (w === 1) { await a.sag('mo', 'Hab ich schon. Letzte Woche. War easy.'); await a.sag('e', '(Gedanken prüfen: Stimmt das? Oder macht der Satz nur Druck?)'); }
+ if (w === 0) { await a.sag('mo', '(zuckt mit den Schultern) Dann halt nicht. Dann bist du nicht drin.'); }
+ if (w === 1) { await a.sag('mo', 'Hab ich schon. Letzte Woche. War easy.'); }
   a.ton('pling');
   await a.sag('e', 'Du gehst rein. Über der Tür bimmelt eine Glocke.');
   a.teleport('epicerieInnen');
@@ -265,22 +263,20 @@ export async function laden(a) {
   await a.sag('e', 'Oben in der Ecke blinkt etwas rot. Draußen hebt Mo das Handy.');
   w = await a.wahl(['„Eine Tüte Gummibärchen, bitte.“ (bezahlen)', '(Eine Tüte in die Jacke stecken.)', '„Draußen will einer, dass ich hier klaue.“', '(Nichts nehmen. Wieder rausgehen.)']);
   if (w === 0) {
-    await a.sag('lisette', 'Fünfzig Cent. Merci, Schatz.');
+    await a.sag('lisette', 'Eins zwanzig. Merci, Schatz.');
     a.teleport('epicerie');
     await a.sag('e', 'Draußen.');
-    await a.sag('mo', 'Du hast BEZAHLT? Lol.');
+    await a.sag('mo', 'Du hast BEZAHLT? Ernsthaft jetzt?');
     const x = await a.wahl(['„Ja. Und?“', '„Klauen ist nicht mein Ding.“']);
     await a.sag('mo', x === 0 ? '…' : 'Hm.');
-    await a.sag('mo', '(leiser) Ehrlich? Ich hab selbst noch nie geklaut. Nur so getan.');
-    await a.sag('e', 'Der ganze Druck. Und dahinter war nichts.');
+    await a.sag('mo', '(leiser) Ich hab selbst nie geklaut. Nur so getan. Sag’s keinem.');
     a.merke('sit_laden', 'bezahlt');
     return 'bezahlt';
   }
   if (w === 2) {
     await a.sag('lisette', '(schaut raus) Ah. Der mit dem Handy.');
-    await a.sag('lisette', 'Weißt du was? Die Tüte ist geschenkt. Du warst schlauer als er.');
+    await a.sag('lisette', 'Weißt du was? Die Tüte geht aufs Haus.');
     await a.sag('e', 'Draußen ist Mo schon weg.');
-    await a.sag('e', 'Hilfe holen ist kein Petzen. Petzen will schaden. Du wolltest raus.');
     a.merke('sit_laden', 'gesagt');
     return 'gesagt';
   }
@@ -288,7 +284,7 @@ export async function laden(a) {
     a.teleport('epicerie');
     await a.sag('e', 'Du gehst raus. Mit leeren Händen.');
     await a.sag('mo', 'Nichts? Feigling.');
-    const x = await a.wahl(['„Kann sein.“', '„Ich entscheide selbst, was ich mache.“']);
+    const x = await a.wahl(['„Kann sein.“', '„Und du? Du filmst ja nur.“']);
     await a.sag('mo', x === 0 ? '(lacht unsicher)' : '… Okay. Respekt, irgendwie.');
     a.merke('sit_laden', 'leer');
     return 'leer';
@@ -306,11 +302,10 @@ export async function laden(a) {
     await a.sag('lisette', 'Ich ruf nicht die Polizei. Diesmal nicht.');
     await a.sag('lisette', 'Aber du hilfst mir Samstag eine Stunde. Regale einräumen.');
     const y = await a.wahl(['„Abgemacht.“', '„Muss ich?“']);
-    if (y === 1) { await a.sag('lisette', 'Musst du nicht. Aber Wiedergutmachen fühlt sich besser an. Versprochen.'); await a.sag('e', 'Du überlegst lange. Dann nickst du.'); }
+    if (y === 1) { await a.sag('lisette', 'Nein. Dann ruf ich halt in der Schule an.'); await a.sag('e', 'Du überlegst lange. Dann nickst du.'); }
     await a.blende('Samstag');
-    await a.sag('lisette', 'Du sortierst gut. Ordentlicher als mein Neffe.');
+    await a.sag('lisette', 'Du sortierst gut. Besser als ich.');
     await a.sag('lisette', 'Komm wieder. Zum Kaufen.');
-    await a.sag('e', 'Es fühlt sich komisch an. Aber leichter als vorher.');
     a.merke('sit_laden', 'erwischt');
     return 'erwischt';
   }
@@ -318,7 +313,7 @@ export async function laden(a) {
   a.ton('pling');
   await a.sag('e', 'Niemand sagt was. Die Glocke bimmelt. Du bist draußen.');
   await a.sag('mo', 'Krass! Hast du’s? Das Video geht in die Gruppe.');
-  await a.sag('e', 'Die Gummibärchen wiegen fast nichts. Und trotzdem ziemlich viel.');
+  await a.sag('e', 'Mo zeigt dir das Video. Deine Hand, ganz groß.');
   await a.sag('e', '(Zurückbringen geht noch. Tante Lisette ist jeden Tag da.)');
   a.merke('sit_laden', 'geklaut');
   a.nachricht('Gruppe', '23 Leute haben dein Video gesehen 🔥');
@@ -329,10 +324,10 @@ export async function laden(a) {
 // Zurückbringen: braucht mehr Mut als Klauen
 export async function zurueckbringen(a) {
   await a.sag('du', '(leise) Ich hab letztes Mal was nicht bezahlt.');
-  await a.sag('e', 'Du legst die Tüte und fünfzig Cent auf die Theke.');
+  await a.sag('e', 'Du legst die Tüte und eins zwanzig auf die Theke.');
   await a.sag('lisette', '(lange Pause)');
   await a.sag('lisette', 'Weißt du, wie selten das ist? Dass jemand zurückkommt?');
-  await a.sag('lisette', 'Danke. Das braucht mehr Mut als Klauen.');
+  await a.sag('lisette', 'Danke. Das vergess ich dir nicht.');
   a.merke('zurueckgebracht');
 }
 
@@ -365,7 +360,7 @@ export async function graffiti(a) {
   await a.sag('e', 'Unter seinem D3X: ein Wandbild. Kinder, Masten, ein Hund. Eine Trommel.');
   await a.sag('dexWand', m.sit_wald ? 'Ah, du. Perfekt. Halt mal Wache.' : 'Ey, 7ème. Halt mal Wache. Oder mach mit.');
   await a.sag('moWand', '(filmt) Für den Kanal. „Junglinster gehört uns.“');
-  await a.sag('dexWand', 'Hier. Mach dein Zeichen. Neben meins. Dann bist du auf der Wand.');
+  await a.sag('dexWand', 'Hier. Mach dein Tag. Neben meins. Dann bist du drauf.');
   await a.sag('e', 'Die Dose ist kalt in deiner Hand. Und schwerer als gedacht.');
   const w = await a.wahl(['„Das Bild hat jemand gemalt. Siehst du die Unterschrift?“', '„Zeig mal. Malst du auch auf Papier?“', '(Ein schnelles Zeichen sprühen.)', '(Die Dose zurückgeben und gehen.)']);
   if (w === 3) {
@@ -377,7 +372,7 @@ export async function graffiti(a) {
   }
   if (w === 0) {
     await a.sag('dexWand', 'Was für eine Unterschrift?');
-    await a.sag('e', 'Oben links steht klein: „7ème B · Trommel: Noor“.');
+    await a.sag('e', 'Oben links steht klein: „7ème B · Trommel: Noor, 6ème“.');
     await a.sag('dexWand', '(liest) Noor? Die Kleine mit den Trommeln?');
     await a.sag('dexWand', 'Die hat mir mal den Musikraum aufgemacht. Als ich nirgends hinkonnte.');
     await a.sag('e', 'Dex schaut lange auf seine Farbe. Auf ihrer Trommel.');
@@ -386,7 +381,6 @@ export async function graffiti(a) {
       await a.sag('dexWand', 'Wegmachen? Mit was denn?');
       await a.sag('du', 'Fernand hat so ein Zeug. Frische Farbe geht noch ab.');
       await a.sag('dexWand', '(stöhnt) Dann weiß er, dass ich das war.');
-      await a.sag('e', '(Ja. Aber zusammen wegmachen ist mehr wert als wegrennen.)');
       await a.blende('Zwanzig Minuten später');
       a.deko('tagDex', false);
       await a.sag('fernand', 'Frisch geht’s noch. Gut, dass ihr gleich gekommen seid.');
@@ -396,7 +390,6 @@ export async function graffiti(a) {
       a.merke('sit_graffiti', 'weggemacht');
     } else if (x === 1) {
       await a.sag('dexWand', 'Ihr sagen? Dann hasst die mich.');
-      await a.sag('e', '(Vielleicht. Vielleicht auch nicht. Wer weiß das vorher?)');
       await a.sag('dexWand', '… Morgen. Vielleicht.');
       a.merke('sit_graffiti', 'reden');
     } else {
@@ -419,11 +412,10 @@ export async function graffiti(a) {
       return;
     }
     if (x === 0) {
-      await a.sag('dexWand', 'Weil mich hier jeder sieht. Im Heft sieht mich keiner.');
-      await a.sag('e', '(Gesehen werden. Darum geht es. Nicht um die Wand.)');
+      await a.sag('dexWand', 'Im Heft sieht’s keiner. Hier sieht’s jeder.');
       await a.sag('du', 'Mme Kiesser sucht Leute für die große Wand im Neubau.');
     }
-    await a.sag('dexWand', 'Als ob die mich nimmt. Mich nimmt nie einer.');
+    await a.sag('dexWand', 'Als ob die mich nimmt. Mit meinem Ruf.');
     x = await a.wahl(['„Frag sie. Ich komm mit, wenn du willst.“', '„Dann eben nicht.“']);
     if (x === 0) {
       await a.sag('dexWand', '… Okay. Mittwoch. Aber du redest zuerst.');
@@ -453,7 +445,7 @@ export async function graffiti(a) {
   const x = await a.wahl(['„Das war ich. Das Gelbe. Tut mir leid.“', '„Kann ich helfen?“', '(Weitergehen. Keiner weiß es.)']);
   if (x === 0) {
     await a.sag('noor', '(lange still) … Warum?');
-    const y = await a.wahl(['„Ich wollte dazugehören.“', '„Ich weiß es nicht.“']);
+    const y = await a.wahl(['„Ich wollte auch mal auf der Wand sein.“', '„Ich weiß es nicht.“']);
     await a.sag('noor', y === 0 ? 'Zu Dex? … Wollte ich letztes Jahr auch.' : 'Okay. Wenigstens ehrlich.');
     await a.sag('noor', 'Ich mal die Trommel neu. Du hältst die Farben. Deal?');
     await a.sag('fernand', 'Dann schrubb ich mal weiter. Mit Hilfe geht’s schneller.');
@@ -478,9 +470,9 @@ export async function halle(a) {
   await a.sag('zu', '(rufen) Los! Los! Los!');
   await a.sag('e', 'In der Mitte: Jules und Sami. Sami ist einen Kopf kleiner.');
   await a.sag('jules', 'Du hast mein Foto in die Gruppe gestellt. Mit dem Esel-Sticker.');
-  await a.sag('sami', 'Das war ich nicht! Ehrlich! Ich weiß nicht mal, wie das geht!');
+  await a.sag('sami', 'Das war ich nicht! Ich bin nicht mal in der Gruppe!');
   await a.sag('jules', '(schubst ihn) Lüg nicht.');
-  await a.sag('z1', 'Ey, 7ème! Mein Akku stirbt. Film du! Schnell!');
+  await a.sag('z1', 'Ey, 7ème! Halt mal drauf! Ich seh von hinten nix!');
   await a.sag('e', 'Jemand drückt dir ein Handy in die Hand. Die Kamera läuft schon.');
   const w = await a.wahl(['(Filmen. Alle machen es.)', '„Handys runter! Das ist keine Show!“', '(Das Handy zurückgeben. Herrn Mesenberg holen.)', '(Zu Sami gehen. Neben ihn stellen.)']);
   if (w === 0) {
@@ -501,7 +493,6 @@ export async function halle(a) {
     await a.sag('e', 'Dann noch eins. Ohne Kameras ist es nur noch ein Streit.');
     await a.sag('jules', '(schaut sich um) … Ihr seid alle so peinlich.');
     await a.sag('e', 'Jules geht. Der Kreis löst sich auf. Einfach so.');
-    await a.sag('e', '(Ohne Publikum keine Show. Manchmal reicht das schon.)');
     a.merke('sit_halle', 'handys');
   } else if (w === 2) {
     await a.blende('Dreißig Sekunden später');
@@ -538,9 +529,9 @@ export async function halle(a) {
   const y = await a.wahl(['„Ich glaub dir.“', '„Weißt du, wer es war?“', '„Sag es Herrn Kuedes.“']);
   if (y === 0) await a.sag('sami', 'Das hat heute noch keiner gesagt.');
   if (y === 1) { await a.sag('sami', 'Ein Fake-Account. Der postet über alle. Keiner weiß, wer.'); await a.sag('e', '(Wie der Screenshot im Dezember. Gleiche Masche.)'); }
-  if (y === 2) { await a.sag('sami', 'Und dann bin ich der, der petzt.'); await a.sag('e', '(Hilfe holen ist kein Petzen. Fühlt sich aber manchmal so an.)'); }
-  await a.sag('sami', 'Danke. Dass du nicht nur zugeschaut hast.');
-  a.nachricht('Sami', 'Danke wegen heute. Echt.');
+ if (y === 2) { await a.sag('sami', 'Und dann bin ich der, der petzt.'); }
+  if (a.m().sit_halle === 'zurueck') await a.sag('sami', 'Du warst wenigstens da.');
+  else { await a.sag('sami', 'Danke. Echt jetzt.'); a.nachricht('Sami', 'Danke wegen heute. Echt.'); }
   const m = a.m().sit_halle;
   if (m === 'hilfe' || m === 'mitte' || m === 'sami') await kuedesHalle(a, m);
 }
@@ -551,23 +542,20 @@ async function kuedesHalle(a, art) {
     await a.sag('kaya', 'Ich hab das Video gesehen. Kein Verhör. Wie geht’s dir?');
     const w = await a.wahl(['„Ich hab nur gefilmt.“', '„Alle haben gefilmt.“', '„Schlecht.“']);
     await a.sag('kaya', ['Nur gefilmt. Klingt harmlos. Ist es leider nicht.', 'Stimmt. Zwölf Leute. Und jeder dachte: Ich bin nur einer.', 'Schlecht zeigt: Sami ist dir nicht egal.'][w]);
-    await a.sag('kaya', 'Wer filmt, baut die Bühne. Ohne Publikum hört so was oft auf.');
     await a.sag('kaya', 'Sami sieht sich jetzt jeden Tag hinfallen. Auf vielen Handys.');
     const x = await a.wahl(['(Sami schreiben: „Sorry.“ Und melden, damit es gelöscht wird.)', '(Nichts machen.)']);
-    if (x === 0) { a.merke('halleGeloescht'); a.nachricht('Sami', 'Okay. Danke, dass du schreibst.'); await a.sag('kaya', 'Das war der schwerere Weg. Danke.'); }
+    if (x === 0) { a.merke('halleGeloescht'); a.nachricht('Sami', 'Okay. Danke, dass du schreibst.'); await a.sag('kaya', 'Okay. Mit Sami red ich auch.'); }
     else await a.sag('kaya', 'Du kannst es dir noch überlegen. Die Tür bleibt offen.');
   } else if (art === 'hilfe') {
     await a.sag('kaya', 'Jules hat „Petze“ zu dir gesagt. Ich weiß.');
-    await a.sag('kaya', 'Petzen will jemandem schaden. Hilfe holen will Schaden verhindern.');
-    await a.sag('kaya', 'Du hast verhindert. Das ist ein großer Unterschied.');
+    await a.sag('kaya', 'Petzen heißt: Einer soll Ärger kriegen. Du wolltest, dass Sami nichts passiert.');
   } else if (art === 'sami') {
     await a.sag('kaya', 'Sami war bei mir. Auch wegen der Drohung.');
-    await a.sag('kaya', 'Ich rede mit Jules. Das müsst ihr nicht allein tragen.');
-    await a.sag('kaya', 'Du hast Sami einfach mitgenommen. Ruhig. Das war stark.');
+    await a.sag('kaya', 'Ich rede mit Jules. Das klär ich.');
+    await a.sag('kaya', 'Du hast Sami einfach mitgenommen. Sami hat’s mir erzählt.');
   } else {
-    await a.sag('kaya', 'Du bist dazwischen gegangen. Das war mutig. Und gefährlich.');
-    await a.sag('kaya', 'Dein Körper zählt auch. Nie dazwischen, wenn schon geschlagen wird.');
-    await a.sag('kaya', 'Laut sein. Andere mitnehmen. Hilfe holen. Das ist auch Mut.');
+    await a.sag('kaya', 'Du bist dazwischen gegangen. Das hätte schiefgehen können.');
+    await a.sag('kaya', 'Wenn schon geschlagen wird: nicht dazwischen. Hol uns.');
   }
   await a.sag('kaya', 'Übrigens: Jules geht es auch nicht gut. Das Foto war gemein.');
   await a.sag('kaya', 'Wenn jemand verletzt ist: 112. Reden geht immer: 116 111.');
@@ -604,7 +592,7 @@ export async function wette(a) {
     await a.sag('e', 'Bei der dritten klopft dein Herz bis in die Ohren.');
     await a.sag('e', 'Deine Hände zittern. Dir ist übel.');
     await a.sag('lenny', 'Gewonnen! Pit zahlt!');
-    await a.sag('e', 'Gewonnen fühlt sich anders an.');
+    await a.sag('e', 'Pit zahlt. Deine Hand zittert beim Einstecken.');
     await a.blende('In der Nacht');
     await a.sag('e', 'Du liegst wach. Zwei Uhr. Drei Uhr. Das Herz klopft immer noch.');
     await a.sag('e', '(Herz rast lange? Sag es jemandem. Bei Brustschmerz: 112.)');
@@ -641,7 +629,7 @@ export async function wette(a) {
   await a.sag('lisette', 'Wenn das Herz weiter stolpert oder die Brust weh tut: 112.');
   await a.sag('lisette', 'Ich ruf in der Schule an. Kein Ärger. Nur Bescheid.');
   await a.sag('pit', '(nach einer Weile) Langsamer. Glaub ich.');
-  await a.sag('pit', 'Danke. Ich wollte nur nicht der sein, der verliert.');
+  await a.sag('pit', 'Danke. Sag Lenny, ich hätte gewonnen.');
   const d = await a.wahl(['„Verloren hat heute die Dose.“', '„Kenn ich.“', '(Ihm die Wasserflasche hinhalten.)']);
   await a.sag('pit', ['(lacht schwach) Die Dose. Ja.', 'Echt? Du auch?', '(trinkt) Danke.'][d]);
   if (h !== 2) a.merke('pitGeholfen');
@@ -656,7 +644,7 @@ export async function kiste(a) {
   await a.sag('e', 'Dann: ein grauer Hut. Gewöhnlich.');
   await a.sag('rafa', 'NEIN! Fast! Der goldene war direkt daneben! Hast du gesehen?');
   await a.sag('e', '(Direkt daneben. Wie jedes Mal?)');
-  await a.sag('rafa', 'Ich brauch nur 500 Diamanten. 4,99. Leihst du mir fünf Euro?');
+  await a.sag('rafa', 'Nur 500 Diamanten. 4,99. Schickst du mir fünf Euro aufs Handy?');
   const w = await a.wahl(['„Wie viel hast du schon reingesteckt?“', '„Okay. Fünf Euro.“', '„Das Spiel lässt dich extra fast gewinnen.“', '„Lass mich auch mal drücken!“']);
   if (w === 0) {
     await a.sag('rafa', '(zählt) … Paar Karten. Je zehn Euro. Fünfzehn Karten.');
@@ -699,7 +687,7 @@ export async function kiste(a) {
     await a.sag('rafa', 'Ich drück seit Wochen. Hundertfünfzig Euro sind schon drin.');
   }
   await a.sag('rafa', 'Wenn das rauskommt … Ich kann das keinem sagen.');
-  const h = await a.wahl(['„Komm, wir gehen zusammen zu Herrn Kuedes.“', '„Sperr Käufe im Handy. Heute.“', '„Ruf BEE SECURE an. Anonym und kostenlos.“']);
+  const h = await a.wahl(['„Komm, wir gehen zusammen zu Herrn Kuedes.“', '„Sperr Käufe im Handy. Heute.“', '„Ruf bei BEE SECURE an. Anonym. Kostet nix.“']);
   if (h === 0) {
     await a.sag('rafa', 'Zusammen? … Du kommst echt mit?');
     await a.blende('In der SePAS');
@@ -842,23 +830,21 @@ export async function vape(a) {
   await a.sag('ines', 'Kai, hast du nicht letzte Woche gesagt, du hörst auf?');
   await a.sag('kai', '…');
   await a.sag('kai', '(leise) Ehrlich? Ich wach nachts auf und will dran ziehen.');
-  const h = await a.wahl(['„Klingt, als hätte das Ding dich im Griff.“', '„Herr Kuedes hilft. Zuerst hört er zu.“', '„Hör doch einfach auf.“']);
+  const h = await a.wahl(['„Nachts? Das ist nicht mehr nur Mango.“', '„Geh zu Kuedes. Der macht keinen Stress.“', '„Hör doch einfach auf.“']);
   if (h === 0) {
     await a.sag('kai', '… Ja. Vielleicht. Mit dreizehn. Krass, oder?');
     await a.sag('e', '(Das hat Kai noch keinem gesagt. Jetzt dir.)');
     await a.sag('kai', 'Ich probier’s. Weniger. Erstmal.');
   } else if (h === 1) {
     await a.sag('kai', 'Und dann gibt’s Ärger.');
-    await a.sag('e', '(In der SePAS gibt es zuerst Zuhören. Das weißt du.)');
     await a.sag('kai', 'Kommst du mit? Nur bis zur Tür.');
     await a.blende('Vor der SePAS');
     await a.sag('kaya', 'Kai. Komm rein. Danke, dass du ihn begleitest.');
-    await a.sag('kaya', 'Aufhören ist schwer. Allein noch schwerer. Dafür gibt es Hilfe.');
+    await a.sag('kaya', 'Setz dich. Kekse sind im Glas.');
     a.merke('vapeKuedes');
   } else {
     await a.sag('kai', 'Einfach. Klar.');
     await a.sag('e', 'Kai lacht. Es klingt nicht lustig.');
-    await a.sag('e', '(Einfach ist es nicht. Das weiß Kai besser als du.)');
   }
   if (h !== 1) await a.sag('e', '(Allein aufhören ist schwer. Herr Kuedes hilft. Oder 116 111.)');
   a.nachricht('Ines', 'Ich hab meins weggeworfen. Nur dass du’s weißt.');
@@ -900,7 +886,7 @@ export async function link(a) {
     await a.sag('e', 'Die Adresse ist komisch. Nicht die vom Spiel. „.w1n“ – mit einer Eins.');
   } else {
     await a.sag('noe', '… Niemand verschenkt was. Außer Oma.');
-    if (a.m().sit_kiste) await a.sag('e', '(Wie bei Rafas Kisten. Das Spiel will was von dir.)');
+  if (a.m().sit_kiste)
     await a.sag('e', '(Wer hat was davon? Wer dein Passwort hat, hat dein Konto.)');
   }
   a.merke('sit_link', 'geprueft');
@@ -910,7 +896,6 @@ export async function link(a) {
   if (h === 2) {
     await a.sag('noe', '… Danke auch.');
     await a.sag('e', 'Noé dreht sich weg. Das Handy zittert in der Hand.');
-    await a.sag('e', '(Reinfallen kann jeder. Auch du. Darum hilft man sich.)');
     await a.sag('e', 'Später steht Noé im CDI vor dem Zettel von BEE SECURE. Allein.');
     return;
   }
@@ -927,12 +912,12 @@ async function linkHilfe(a) {
 
 // ================= Das Video (Mme Lenning, ab Kapitel 9) =================
 export async function video(a) {
-  await a.sag('yanis', 'Schau! Die Lenning! Hahaha!');
+  await a.sag('yanis', 'Schau! Die Lenning! Ich kann nicht mehr!');
   await a.sag('e', 'Ein Video. Mme Lenning trägt eine Kiste. Sie stolpert. Blätter fliegen.');
   await a.sag('e', 'Jemand hat Zirkusmusik drübergelegt. Und einen Clown-Filter.');
   await a.sag('yanis', 'Zweitausend Aufrufe! Auf „annexe.memes“! Das ist von mir!');
   await a.sag('z5', '(lacht) Nochmal! Die Stelle mit dem Schuh!');
-  const w = await a.wahl(['(Mitlachen. Ist ja witzig.)', '„Weiß sie das?“', '„Würdest du wollen, dass das von dir rumgeht?“', '(Nicht hinschauen. Weitergehen.)']);
+  const w = await a.wahl(['(Mitlachen. Ist ja witzig.)', '„Weiß sie das?“', '„Und wenn das von dir wär?“', '(Nicht hinschauen. Weitergehen.)']);
   if (w === 3) {
     await a.sag('e', 'Du gehst weiter. Hinter dir läuft die Zirkusmusik nochmal.');
     a.merke('sit_video', 'weiter');
@@ -944,7 +929,6 @@ export async function video(a) {
     if (x === 0) { a.merke('videoGeteilt'); a.nachricht('Gruppe', 'Du hast ein Video geteilt · 14 😂'); }
   } else if (w === 1) {
     await a.sag('yanis', '… Keine Ahnung. Ist doch egal.');
-    await a.sag('e', '(Ist es egal? Würde es dir egal sein?)');
     a.merke('sit_video', 'gefragt');
   } else {
     await a.sag('yanis', 'Von mir gibt’s nichts Peinliches.');
@@ -1009,13 +993,12 @@ export async function fest(a) {
     await a.sag('e', 'Du gehst. Mika schaut dir nach. Lange.');
   } else if (w === 1) {
     await a.sag('moFest', 'Wodka mit Saft. Merkt keiner.');
-    await a.sag('e', '(Merkt keiner? Mika merkt es gerade. Sehr.)');
     a.merke('sit_fest', 'gefragt');
   } else {
     a.merke('sit_fest', 'mitgenommen');
     await a.sag('mikaFest', '… Echt? Mit dir?');
     await a.sag('moFest', 'Geh doch. Langweiler.');
-    await a.sag('mikaFest', '(steht auf, wackelig) Ich wollte eigentlich nur nicht allein sein.');
+    await a.sag('mikaFest', '(steht auf, wackelig) Okay. Aber ich lauf komisch.');
     await a.blende('Im Hof. Die Lampions brennen.');
     await a.sag('e', 'Ihr holt Wasser. Echtes. Mika trinkt zwei Becher.');
     await a.sag('e', '(Wasser macht nicht nüchtern. Ein Erwachsener muss es wissen.)');
@@ -1053,7 +1036,7 @@ export async function fest(a) {
   await a.sag('e', 'Herr Kuedes telefoniert. Ruhig. Wo. Wie alt. Was getrunken.');
   await a.blende('Zehn Minuten später');
   await a.sag('e', 'Der Krankenwagen ist da. Mika ist wach. Müde. In guten Händen.');
-  await a.sag('kaya', '(zu dir) Du hast heute auf jemanden aufgepasst. Das vergisst man nicht.');
+  await a.sag('kaya', '(zu dir) Ich übernehm ab hier. Geh ruhig zu den anderen.');
   a.merke('mikaFestGeholfen');
   a.nachricht('Mika', 'Danke. Ich weiß nicht mehr viel. Aber dass du da warst.');
 }
@@ -1063,14 +1046,13 @@ export async function fest(a) {
 export const CHAT_NAMEN = { leo: 'Leo_15 · Spiel-Chat' };
 export async function spiel(a) {
   await a.sag('e', 'Du sitzt im Bushäuschen. Dein Handy summt. Der Spiel-Chat.');
-  await a.sag('leo', 'Hey! Du spielst echt gut. Bist du auch 15?');
+  await a.sag('leo', 'Wieder top gespielt! Bist du eigentlich auch 15?');
   await a.sag('e', '(Leo_15. Ihr spielt seit zwei Wochen zusammen. Leo ist immer nett.)');
   await a.sag('leo', 'Ich hab dir einen Skin geschenkt. Einfach so. 🎁');
-  await a.sag('leo', 'Lass uns lieber privat schreiben. Hier lesen alle mit.');
-  const w = await a.wahl(['„Okay. Gib mir deine Nummer.“', '„Warum privat? Hier ist doch okay.“', '„Ich bin zwölf. Nicht fünfzehn.“', '(Nicht antworten. Handy weg.)']);
+  await a.sag('leo', 'Hast du noch eine andere App? Hier lesen alle mit.');
+  const w = await a.wahl(['„Okay. Gib mir deine Nummer.“', '„Warum privat? Hier ist doch okay.“', '„Ich bin jünger. Nicht fünfzehn.“', '(Nicht antworten. Handy weg.)']);
   if (w === 3) {
     await a.sag('e', 'Du steckst das Handy weg. Es summt noch zweimal.');
-    await a.sag('e', '(Nicht antworten ist auch eine Antwort.)');
     const x = await a.wahl(['(Leo blockieren und melden.)', '(Später vielleicht antworten.)']);
     if (x === 0) { await spielBlock(a); return; }
     a.merke('sit_spiel', 'ignoriert');
@@ -1087,7 +1069,7 @@ export async function spiel(a) {
   let x = await a.wahl(['„Warum soll ich es keinem erzählen?“', '(Ein Selfie schicken. „Okay“ schreiben.)', '(Screenshot machen. Herrn Kuedes zeigen.)', '(Blockieren. Melden.)']);
   if (x === 0) {
     await a.sag('leo', 'Weil die anderen das nicht verstehen. Erwachsene machen immer Stress.');
-    await a.sag('e', '(Geheimnisse und „Erwachsene machen Stress“: Das sind Warnzeichen.)');
+    await a.sag('e', '(Erst Geschenk. Dann privat. Dann Geheimnis. Immer dieselbe Reihenfolge.)');
     x = 2 + await a.wahl(['(Screenshot machen. Herrn Kuedes zeigen.)', '(Blockieren. Melden.)']);
   }
   if (x === 3) { await spielBlock(a); return; }
@@ -1109,15 +1091,14 @@ export async function spiel(a) {
 }
 async function spielBlock(a) {
   await a.sag('e', 'Blockiert. Gemeldet. Das Spiel schreibt: „Danke für deine Meldung.“');
-  await a.sag('e', 'Dein Herz klopft trotzdem. Das ist normal.');
+  await a.sag('e', 'Dein Herz klopft trotzdem. Noch lange.');
   a.merke('sit_spiel', 'blockiert');
   const z = await a.wahl(['(Trotzdem Herrn Kuedes Bescheid sagen.)', '(Fertig. Weiter.)']);
   if (z === 0) await spielKuedes(a);
 }
 async function spielKuedes(a) {
   await a.blende('In der SePAS');
-  await a.sag('kaya', 'Danke, dass du mir das zeigst. Du hast nichts falsch gemacht.');
-  await a.sag('kaya', '„Erzähl es keinem“ ist der beste Grund, es jemandem zu erzählen.');
+  await a.sag('kaya', 'Gut, dass du kommst. Du hast nichts falsch gemacht.');
   await a.sag('kaya', 'Wir sichern, was da ist. Dann melden wir es. Auch der Polizei.');
   await a.sag('kaya', 'Ein Erwachsener, der so schreibt, macht etwas Verbotenes. Nicht du.');
   await a.sag('kaya', 'Wer „15“ schreibt, kann viel älter sein. Das sieht man nicht.');
@@ -1158,7 +1139,6 @@ export async function dach(a) {
   }
   if (w === 1) {
     await a.sag('pitDach', 'Und der Ball? Der war neu!');
-    await a.sag('e', '(Ein Ball gegen einen Fuß. Oder gegen ein Glasdach. Klare Rechnung.)');
   }
   a.merke('sit_dach', 'leiter');
   await a.blende('Drei Minuten später');
@@ -1228,8 +1208,7 @@ export async function fundkiste(a) {
 async function kuedesFund(a, drohung) {
   await a.blende('In der SePAS');
   await a.sag('kaya', drohung ? 'Danke, dass du mir die Nachricht zeigst. Ich rede mit ihm.' : 'Danke. Ich kümmere mich. Deinen Namen nenne ich nicht.');
-  await a.sag('kaya', 'Angst vor Rache ist normal. Genau dafür gibt es uns.');
-  await a.sag('kaya', 'Wenn er dir droht: sofort sagen. Du musst das nicht allein tragen.');
+  await a.sag('kaya', 'Kommt was von ihm: Screenshot. Und direkt zu mir.');
   a.merke('fundkisteKuedes');
 }
 async function jeffWahrheit(a, art) {
@@ -1244,7 +1223,7 @@ async function jeffWahrheit(a, art) {
   }
   await a.sag('jeffSit', art ? 'Meine Powerbank ist wieder da! Wo war die bloß?' : 'Meine Powerbank! Mit dem Dino! Wo war die?');
   const x = await a.wahl(['„Jemand hat sie genommen. Du hast sie nicht verloren.“', art ? '„Hauptsache, sie ist wieder da.“' : '„In der Fundkiste.“']);
-  if (x === 1) { await a.sag('jeffSit', 'Typisch ich. Ich verlier echt alles.'); await a.sag('e', '(Tust du nicht, Jeff. Aber das weiß er nicht.)'); return; }
+  if (x === 1) { await a.sag('jeffSit', 'Typisch ich. Ich verlier echt alles.'); await a.sag('e', '(Er verliert nicht alles. Aber das weiß er nicht.)'); return; }
   await a.sag('jeffSit', '… Genommen? Nicht verloren?');
   await a.sag('jeffSit', 'Ich dachte immer, ich bin so. Einer, der alles verliert.');
   await a.sag('jeffSit', 'Das stimmt ja gar nicht. Krass.');
@@ -1269,7 +1248,7 @@ export async function zaun(a) {
     await a.sag('e', 'Die Lichtung ist leer. Lenny wirft Steine. Romy schaut aufs Handy.');
     await a.sag('e', 'Es ist … langweilig. Du denkst die ganze Zeit an die Schule.');
     await a.blende('Am nächsten Morgen');
-    await a.sag('hoffmann', 'Du warst gestern in Sport nicht da. Ich hab mir Sorgen gemacht.');
+    await a.sag('hoffmann', 'Du warst gestern in Sport nicht da. Wo warst du?');
     await a.sag('hoffmann', 'Wenn jemand fehlt, wissen wir nicht, ob etwas passiert ist.');
     await a.sag('hoffmann', 'Das gibt einen Eintrag. Und ein Gespräch. Kein Drama.');
     await a.sag('e', 'Auf dem Gang siehst du Romy. Sie schaut weg.');
@@ -1278,7 +1257,7 @@ export async function zaun(a) {
     return;
   }
   if (w === 0) {
-    await a.sag('lennyZaun', 'Die zählen nie richtig. Chill.');
+    await a.sag('lennyZaun', 'Die zählen nie richtig. Vertrau mir.');
     await a.sag('e', '(Doch. Fehlt einer, wird gesucht. So ist das hier.)');
   }
   if (w === 3) {
@@ -1306,7 +1285,7 @@ export async function zaun(a) {
     await a.sag('romy', 'Ja. Eben.');
     await a.sag('e', 'Romy geht den Waldweg runter. Lenny zögert. Dann geht er mit.');
     await a.sag('e', 'Du gehst zurück. Es klingelt. Ein Platz in Sport bleibt leer.');
-    await a.sag('e', '(Was Romy erzählt hat, darfst du Herrn Mesenberg sagen. Kein Petzen.)');
+    await a.sag('e', '(Was Romy erzählt hat, darfst du Herrn Mesenberg sagen.)');
     a.nachricht('Romy', 'Vergiss, was ich gesagt hab. … Oder nicht.');
     return;
   }
@@ -1322,8 +1301,8 @@ export async function zaun(a) {
     a.merke('sit_zaun', 'begleitet');
     await a.blende('Vor der Umkleide');
     await a.sag('e', 'Drinnen kichert jemand. Du stehst an der Tür. Ruhig. Sichtbar.');
-    await a.sag('e', 'Das Kichern hört auf. Manchmal reicht einer, der da ist.');
-    await a.sag('e', '(Hört es nicht auf: Herrn Mesenberg sagen. Das ist kein Petzen.)');
+    await a.sag('e', 'Das Kichern hört auf.');
+    await a.sag('e', '(Hört es nicht auf: Herrn Mesenberg sagen.)');
   }
   a.merke('romyGeholfen');
   await a.blende('In der Sporthalle');
@@ -1350,13 +1329,11 @@ export async function roller(a) {
     await a.sag('e', 'Der Wagen steht schräg. Rosa von der Bäckerei steigt aus. Ganz weiß.');
     await a.sag('rosa', 'Ich … ich hab euch erst im letzten Moment gesehen.');
     await a.sag('rosa', 'Schau, meine Hände. Die hören nicht auf zu zittern.');
-    await a.sag('e', '(Nichts ist passiert. Und trotzdem ist etwas passiert.)');
     await a.sag('sacha', '(leise) Sorry. Echt.');
     const x = await a.wahl(['„Sorry, Rosa. Das war dumm von uns.“', '(Nichts sagen. Weggehen.)']);
     if (x === 0) {
       a.merke('rollerSorry');
-      await a.sag('rosa', '(atmet aus) Danke, dass du es sagst. Komm mal auf einen Tee.');
-      await a.sag('rosa', 'Ein Roller trägt einen Menschen. Und ein Helm schützt den Kopf.');
+      await a.sag('rosa', '(atmet aus) Okay. Okay. Komm mal auf einen Tee.');
     } else {
       await a.sag('e', 'Du gehst. Rosa sitzt noch lange im Wagen. Der Motor ist aus.');
     }
@@ -1378,7 +1355,6 @@ export async function roller(a) {
     await a.sag('e', 'Mika sitzt am Bordstein. Das Knie blutet. Rosas Lieferwagen steht schräg.');
     await a.sag('rosa', 'Kopf angeschlagen? Schau mich an. … Nein? Gut. Knie verbinden.');
     await a.sag('rosa', 'Ich ruf in der Schule an. Kein Ärger. Nur Bescheid.');
-    await a.sag('e', '(Du hättest was sagen können. Ein Satz hätte gereicht.)');
     a.nachricht('Mika', 'Knie kaputt. Egal. Ich sag halt immer ja.');
     return;
   }
@@ -1398,7 +1374,7 @@ export async function roller(a) {
   await a.sag('mikaRoller', 'Danke. Ich hätte ja gesagt. Ich sag immer ja.');
   a.merke('mikaNein');
   const tuete = a.m().sit_roller === 'mikaGeschuetzt';
-  const d = await a.wahl(['„Nein sagen kann man üben.“', '„Kenn ich.“', tuete ? '(Mika die Tüte hinhalten.)' : '(Mika kurz anstupsen.)']);
+  const d = await a.wahl(['„Dann üben wir. Sag mal Nein. Jetzt.“', '„Kenn ich.“', tuete ? '(Mika die Tüte hinhalten.)' : '(Mika kurz anstupsen.)']);
   await a.sag('mikaRoller', ['Üben? … Okay. Du trainierst mich.', 'Echt? Du auch?', tuete ? '(nimmt ein rotes) Die roten sind die besten.' : '(stupst zurück) Okay. Danke.'][d]);
   a.nachricht('Mika', 'Nein-Training morgen? 😅');
 }
@@ -1417,8 +1393,6 @@ export async function witz(a) {
   if (w === 3) {
     a.merke('sit_witz', 'weiter');
     await a.sag('e', 'Hinter dir lachen sie weiter. Paulo trägt die nächste Kiste.');
-    await a.sag('e', '(Nicht mitlachen ist gut. Aber Paulo stand allein da.)');
-    await a.sag('e', '(Auch wenn es Erwachsene trifft: Das darfst du Herrn Kuedes sagen.)');
     a.nachricht('Lea', 'Wo bist du hin? War doch lustig.');
     return;
   }
@@ -1430,7 +1404,7 @@ export async function witz(a) {
     await a.blende('Später');
     await a.sag('e', 'Paulo lehnt am Lieferwagen. Allein. Er schaut auf sein Handy.');
     const x = await a.wahl([desculpa ? '(Hingehen. „Desculpa, Paulo.“)' : '(Hingehen. „Entschuldigung, Paulo.“)', '(Weitergehen.)']);
-    if (x === 1) { await a.sag('e', '(Mitlachen kostet nichts. Erst später merkt man, was es kostet.)'); await a.sag('e', '(Auch wenn es Erwachsene trifft: Das darfst du Herrn Kuedes sagen.)'); return; }
+  if (x === 1) { return; }
     a.merke('pauloDesculpa');
     await a.sag('paulo', '(lange still) … Danke, dass du kommst.');
   } else if (w === 1) {
@@ -1438,7 +1412,7 @@ export async function witz(a) {
     await a.sag('nils', 'Ey, chill. Ist doch nur ein Witz.');
     await a.sag('du', 'Schau Paulos Gesicht an. Lacht der wirklich mit?');
     await a.sag('lea', '(hört auf zu lachen) … Hm.');
-    await a.sag('nils', 'Boah. Moralapostel. Komm, Lea.');
+    await a.sag('nils', 'Boah, Spaßbremse. Komm, Lea.');
     await a.sag('e', 'Die beiden gehen. Dein Herz klopft. Paulo stellt die Kiste ab.');
   } else {
     a.merke('sit_witz', 'geholfen');

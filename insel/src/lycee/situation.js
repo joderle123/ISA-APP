@@ -515,7 +515,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
   // ---------- Teams wählen (Sport): du bist Kapitän:in, abwechselnd mit jemand anderem ----------
   // def: { gegner: { name, farbe }, leute: [ { id, name, farbe, info } ], gegnerWahl: [ids in Reihenfolge] } → { team: [ids], letzte: id, zuerst: id }
   ui.teamsWaehlen = (def) => new Promise((ok) => {
-    const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">Turnhalle · Korbball</span><b>Teams wählen</b></div>' +
+    const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">Turnhalle · Basket</span><b>Teams wählen</b></div>' +
       '<p class="sz-info">Du und ' + esc(def.gegner.name) + ' wählt abwechselnd. Alle stehen an der Wand und warten.</p><div class="sz-wand"></div><div class="sz-teams"><div><b>Dein Team</b><span data-t="ich"></span></div><div><b>' + esc(def.gegner.name) + '</b><span data-t="er"></span></div></div><div class="sz-stand"></div></div>');
     const wand = k.querySelector('.sz-wand'), stand = k.querySelector('.sz-stand');
     const frei = def.leute.slice(), team = [], gegner = []; let zuerst = null;

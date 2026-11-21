@@ -27,7 +27,7 @@ export const FAEDEN = {
       ['noah', 'Weißt du noch? Mein erster Abend in der Klassengruppe.'],
       ['noah', 'Ben hat 47 Sticker geschickt. In einer Minute. Ist das normal?'],
       { wahl: [
-        { t: 'Willkommen. Stummschalten ist dein Freund.', herz: nett('noah', 2), dann: [['noah', 'Stumm … das gibt’s? Mein Leben ist gerettet.']] },
+        { t: 'Gruppe stumm. Für immer. Machen alle so.', herz: nett('noah', 2), dann: [['noah', 'Stumm … das gibt’s? Mein Leben ist gerettet.']] },
         { t: 'Schick einen zurück. Den hässlichsten.', staerke: 'einbeziehen', herz: nett('noah', 2), dann: [['erzaehler', 'Noah tippt. Sein Handy brummt sofort.'], ['noah', 'Ben hat drei Herzen geschickt. Ist das … sus? Sagt man das?']] },
         { t: 'Ist halt Ben.', herz: nett('noah'), dann: [['noah', 'Ist halt Ben. Okay. Das erklärt ziemlich viel.']] },
       ] },
@@ -105,14 +105,14 @@ export const FAEDEN = {
       ['jo', 'Guck. (hält dir das Handy hin) Den Kombi hab ich repariert.'],
       ['jo', 'Lief nicht. Jetzt läuft er. Wegen mir.'],
       { wahl: [
-        { t: 'Was war kaputt?', staerke: 'zuhoeren', herz: nett('jo', 2), dann: [['jo', 'Zündkerzen, digga. Billigteil. Jetzt schnurrt er wie Diesel.']] },
+        { t: 'Was war kaputt?', staerke: 'zuhoeren', herz: nett('jo', 2), dann: [['jo', 'Zündkerzen. Billigteil. Jetzt schnurrt er wie Diesel.']] },
         { t: 'Nimmst du mich mal mit in die Werkstatt?', herz: nett('jo'), dann: [['jo', 'Du darfst Reifen tragen. Sonst fasst du nix an.']] },
         { t: 'Ist doch nur ein altes Auto.', dann: [['jo', 'NUR ein altes Auto?!'], ['jo', '(laut) Du fährst später Fahrrad. Für immer.']] },
       ] },
     ] },
     { herz: 3, titel: 'Einmal ums Feld', g: [
       ['jo', 'Luca hat heute mein Heft vorgelesen. Vor allen. Meine Schrift.'],
-      ['jo', 'Ich bin raus. Einmal ums Korbballfeld. Dann wieder rein.'],
+      ['jo', 'Ich bin raus. Einmal ums Basketfeld. Dann wieder rein.'],
       { wahl: [
         { t: 'Einmal ums Feld. Dein neuer Sport.', staerke: 'humor', herz: nett('jo', 2), dann: [['jo', 'Haha. Wenn das so weitergeht, werd ich Weltmeister.']] },
         { t: 'Und Luca?', herz: nett('jo'), dann: [['jo', 'Hat später „sorry“ gemurmelt. Ganz leise. Zählt trotzdem.']] },
@@ -135,7 +135,7 @@ export const FAEDEN = {
       ['ben', 'Dann hab ich 40 Euro. Dann zahl ich alle zurück.'],
       { wahl: [
         { t: 'Und was bleibt dir?', herz: nett('ben', 2), dann: [['ben', 'Ruhm. Respekt. Und vielleicht ein Keks.']] },
-        { t: 'Bei mir kriegst du keinen Cent.', staerke: 'klar', herz: nett('ben'), dann: [['ben', 'Hart, Bruder. Minus tausend Aura. Für mich.']] },
+        { t: 'Bei mir kriegst du keinen Cent.', staerke: 'klar', herz: nett('ben'), dann: [['ben', 'Hart. Aber fair. Ich frag Yusuf.']] },
         { t: '(gibt ihm zwei Euro)', herz: nett('ben'), dann: [['ben', 'Ich wusste es! Du bist mein erster Investor.'], ['ben', 'Morgen kriegst du sie wieder. Vielleicht. Wahrscheinlich.']] },
       ] },
     ] },
@@ -152,7 +152,7 @@ export const FAEDEN = {
       ['ben', 'Heute im Test hab ich null Witze gemacht.'],
       ['ben', 'Mme Tidderich hat gefragt, ob ich krank bin.'],
       { wahl: [
-        { t: 'Und? Lief’s?', herz: nett('ben', 2), dann: [['ben', 'Weiß ich Freitag. Bis dahin: minus tausend Aura.']] },
+        { t: 'Und? Lief’s?', herz: nett('ben', 2), dann: [['ben', 'Weiß ich Freitag. Bis dahin tu ich so, als ob.']] },
         { t: 'Du warst krank. Vor Langeweile.', staerke: 'humor', herz: nett('ben', 2), dann: [['ben', 'Endlich versteht mich jemand.']] },
         { t: 'Mach lieber wieder Witze.', herz: nett('ben'), dann: [['ben', 'Nach dem Test immer. Vorher bin ich jetzt seriös. Eine Stunde lang.']] },
       ] },
@@ -343,7 +343,7 @@ export const FAEDEN = {
       ['kaya', 'Die anderen zwanzig auch. Sie sagen es nur nicht.'],
       { wahl: [
         { t: 'Welche Sorte?', herz: nett('kaya'), dann: [['kaya', 'Schoko. Die anderen isst keiner. Statistik.']] },
-        { t: 'Das ist Bestechung.', staerke: 'humor', herz: nett('kaya'), dann: [['kaya', 'Nennen wir es Willkommenskultur.']] },
+        { t: 'Das ist Bestechung.', staerke: 'humor', herz: nett('kaya'), dann: [['kaya', 'Nennen wir’s Kundenservice.']] },
         { t: 'Und dann reden die einfach?', herz: nett('kaya'), dann: [['kaya', 'Meistens. Mit Keks im Mund redet es sich leichter.']] },
       ] },
     ] },

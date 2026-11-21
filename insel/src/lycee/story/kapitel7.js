@@ -49,8 +49,8 @@ const WER_BLEIBT = (m) => ({
   ],
   aktionen: [
     { id: 'jo', t: 'Jo antworten', symbol: '💬', wenn: 'joFragt', wahl: [
-      { t: '„Mach, was du für richtig hältst. Ich bin dir nicht böse.“', setzt: 'joFrei', ich: 'mach was du für richtig hältst. ich bin dir nicht böse', folgen: [{ nach: 2, wer: 'Jo', text: '… bin raus. 🫡' }] },
-      { t: '„Wenn du drin bleibst, sind wir keine Freunde mehr.“', setzt: 'joDruck', ich: 'wenn du drin bleibst sind wir keine freunde mehr', folgen: [{ nach: 2, wer: 'Jo', text: 'okay. raus. aber das war jetzt auch druck, digga' }] },
+      { t: '„Mach, wie du willst. Ich bin nicht sauer.“', setzt: 'joFrei', ich: 'mach was du für richtig hältst. ich bin dir nicht böse', folgen: [{ nach: 2, wer: 'Jo', text: '… bin raus. 🫡' }] },
+      { t: '„Wenn du drin bleibst, sind wir keine Freunde mehr.“', setzt: 'joDruck', ich: 'wenn du drin bleibst sind wir keine freunde mehr', folgen: [{ nach: 2, wer: 'Jo', text: 'okay. raus. aber das war jetzt auch druck' }] },
     ] },
     { id: 'luca', t: 'Luca antworten', symbol: '↩️', wahl: [
       { t: '„Ich sag nicht sorry für etwas, das ich nicht gemacht hab.“', setzt: 'lucaNein', ich: 'ich sag nicht sorry für etwas das ich nicht gemacht hab', folgen: [{ nach: 1.6, wer: 'Luca', text: 'dann viel spaß allein 👋' }] },
@@ -145,9 +145,9 @@ export const GESPRAECHE_N7 = {
     ['lina', '(Nachricht) ich bin auch in Lucas neuer Gruppe. hab nicht nein gesagt.'],
     ['lina', '(Nachricht) soll ich dir Screenshots schicken? von allem?'],
     { wahl: [
-      { t: '„Nein. Dann machen wir genau das, was sie machen.“', staerke: 'klar', herz: { lina: 1 }, merke: 'spionNein', dann: [['lina', '(Nachricht) ok. ehrlich gesagt bin ich erleichtert.']] },
+      { t: '„Nein. Dann machen wir genau das, was sie machen.“', staerke: 'klar', herz: { lina: 1 }, merke: 'spionNein', dann: [['lina', '(Nachricht) ok. gut. 😮‍💨']] },
       { t: '„Nur wenn jemand in Gefahr ist. Dann zu Herrn Kuedes.“', staerke: 'hilfe', herz: { lina: 2 }, merke: 'spionGefahr', dann: [['lina', '(Nachricht) deal. wir müssen nicht alles wissen.']] },
-      { t: '„Ja. Schick alles.“', merke: 'spionJa', dann: [['lina', '(Nachricht) ok …'], ['erzaehler', 'Bis Mitternacht kommen 46 Screenshots. Du liest alle.'], ['erzaehler', 'Danach geht es dir schlechter. Nicht besser.']] },
+      { t: '„Ja. Schick alles.“', merke: 'spionJa', dann: [['lina', '(Nachricht) ok …'], ['erzaehler', 'Bis Mitternacht kommen 46 Screenshots. Du liest alle.'], ['erzaehler', 'Um eins liest du immer noch. Über dich.']] },
     ] },
     ['lina', '(Nachricht) vielleicht verlass ich die Gruppe einfach. 🕊️'],
   ],
@@ -176,8 +176,8 @@ export const GESPRAECHE_N7 = {
         wackel: { merke: 'druckWackel', dann: [['erzaehler', 'Kein Ja. Kein klares Nein. Luca grinst. Er wird wiederkommen.']] },
         ja: { herz: { noah: -2, dario: -1 }, merke: 'druckJa', dann: [['erzaehler', 'Du hast Ja gesagt. Passiert unter Druck.'], ['erzaehler', 'Im Bauch fühlt es sich falsch an. Noch kannst du was tun.'],
           { wahl: [
-            { t: '(„Doch nicht.“ schreiben.)', staerke: 'neinsagen', merke: 'druckZurueck', dann: [['erzaehler', 'Ein Nein geht auch später. Das zählt genauso.'], ['noah', '(schreibt dir) gut gemacht.']] },
-            { t: '(Dabei bleiben. Nichts schreiben.)', merke: 'druckGeblieben', dann: [['erzaehler', 'Du bleibst dabei. Es bleibt schwer im Bauch.'], ['erzaehler', 'Morgen kannst du immer noch Nein sagen. Oder mit jemandem reden.']] },
+            { t: '(„Doch nicht.“ schreiben.)', staerke: 'neinsagen', merke: 'druckZurueck', dann: [['noah', '(schreibt dir) Bank ist frei. Hab sie verteidigt.']] },
+            { t: '(Dabei bleiben. Nichts schreiben.)', merke: 'druckGeblieben', dann: [['erzaehler', 'Du bleibst dabei. Es bleibt schwer im Bauch.'], ['noah', '(schreibt dir) wenn du doch nicht willst: ich komm mit raus.']] },
           ] }] },
       } },
     { tu: 'n7_darioDanach' },
@@ -233,7 +233,7 @@ export const GESPRAECHE_N7 = {
     ] },
     ['kaya', 'Und nächstes Mal? Ein Schritt. Nur einer.'],
     { wahl: [
-      { t: '„Ich setz mich dazu.“', staerke: 'mut', merke: 'planDazu', dann: [['noah', '(leise) Das hilft mehr, als man denkt.']] },
+      { t: '„Ich setz mich dazu.“', staerke: 'mut', merke: 'planDazu', dann: [['noah', '(nickt. Sagt nichts.)']] },
       { t: '„Ich lach nicht mit. Und sag Stopp, wenn ich kann.“', staerke: 'klar', merke: 'planStopp', dann: [] },
       { t: '„Ich hol Hilfe. Herrn Kuedes oder das SePAS.“', staerke: 'hilfe', merke: 'planHilfe', dann: [['kaya', 'Das ist kein Petzen.'], ['kaya', 'Petzen will Ärger machen. Hilfe holen will Ärger beenden.']] },
       { t: '„Ich schreib danach privat: Alles okay?“', staerke: 'einbeziehen', merke: 'planPrivat', dann: [] },
@@ -277,7 +277,7 @@ export const tunN7 = (c) => ({
       ['kaya', 'Niemand ist ein Tier. Ihr könnt wechseln. Das ist der Trick.'],
     ];
   },
-  n7_benStart: () => (c.S.merke.lucaSorry ? [['ben', 'Du hast Luca „sorry“ geschrieben? Versteh ich. Druck macht das.'], ['ben', 'Aber du schuldest ihm nichts. Gar nichts.']] : []),
+  n7_benStart: () => (c.S.merke.lucaSorry ? [['ben', 'Du hast Luca „sorry“ geschrieben? Versteh ich. Druck macht das.'], ['ben', 'Du schuldest ihm nix. Gar nix. Nicht mal zwei Euro.']] : []),
   n7_darioDanach: () => (c.S.merke.druckNein ? [['erzaehler', 'Hinter dir Schritte. Dario.'], ['dario', '(leise) Das war … stark. Ich kann das nicht. Nein sagen. Zu ihm.']] : []),
   n7_noahDanach: () => (!c.S.merke.buehneHalb && !c.S.merke.buehneGekippt ? [['noah', '(später, leise) Morgen sitz ich wieder da. Gleicher Tisch.']] : [
     ['noah', '(später, draußen) Du bist gekommen. Zu meinem Tisch.'],
@@ -291,7 +291,7 @@ export const tunN7 = (c) => ({
       gelernt: ['Fünf Tiere im Streit – und welches gerade hilft', 'Die Konflikt-Treppe und ihre Ausstiege', 'Nein sagen, wenn die Gruppe drückt', 'Spaß, Streit und Mobbing unterscheiden', 'Die Bühne kippen: ein Schritt reicht'],
       mission: 'Wenn du diese Woche siehst, dass jemand fertiggemacht wird: einen Schritt machen. Nicht mitlachen zählt auch.' }, folgen: {} },
     ['erzaehler', 'Samstag. @annexe.cam postet ein Video. Mme Tidderich tanzt. Auf dem Pult. Mit Enten-Krawatte.'],
-    ['erzaehler', 'Es hat schon 300 Herzen. Ben schreibt: „DAS IST KI. GUCKT DIE HÄNDE AN.“'],
+    ['erzaehler', 'Es hat schon 300 Herzen. Ben schreibt: „KI. MUND UND STIMME PASSEN NICHT.“'],
     { tu: 'kapitelEnde' },
   ],
 });

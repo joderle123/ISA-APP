@@ -90,7 +90,7 @@ const ERNSTFALL = (m, S = {}) => {
     ereignisse: [
       { t: 'Durchsage: „7P2 – heute Saal 2.11. Sofort.“ Mila bleibt stehen.', plus: 30, karten: karten(true).concat(mehr) },
       { t: 'Alle laufen an euch vorbei. Jemand rempelt Mila an. „Sorry!“', plus: 12, karten: karten(true).concat(mehr) },
-      { t: 'Mila, leise: „Wo ist 2.11? Ich weiß gar nichts mehr.“', plus: 8, karten: karten(false).concat([{ t: '(„Ich weiß es. Wir gehen zusammen. Schritt für Schritt.“)', typ: 'menschen', wirkung: -18, antwort: 'Mila nickt. Ganz klein.' }]) },
+      { t: 'Mila, leise: „Wo ist 2.11? Ich weiß gar nichts mehr.“', plus: 8, karten: karten(false).concat([{ t: '(„Zweiter Stock. Komm, ich geh mit.“)', typ: 'menschen', wirkung: -18, antwort: 'Mila nickt. Ganz klein.' }]) },
     ],
   };
 };
@@ -101,7 +101,7 @@ const ZONEN = {
   karten: [
     { t: 'Morgen ist Mathe-Test.', zahlen: { noah: 85, mila: 60, ben: 20, jo: 45, ayla: 35, lina: 70 }, sagt: ['ben', 'Zwanzig. Ich hab keine Angst. Oder keine Ahnung. Eins von beiden.'] },
     { t: 'Jemand lacht, als du reinkommst.', zahlen: { noah: 65, mila: 40, ben: 25, jo: 90, ayla: 55, lina: 75 }, sagt: ['jo', 'Neunzig. Sofort. Ich weiß selbst nicht, warum.'] },
-    { t: 'Der Raum wird ohne Ansage gewechselt.', zahlen: { noah: 30, mila: 85, ben: 10, jo: 15, ayla: 20, lina: 35 }, sagt: ['mila', 'Fünfundachtzig. Pläne sind Sicherheit. Ohne Plan ist alles Rauschen.'] },
+    { t: 'Der Raum wird ohne Ansage gewechselt.', zahlen: { noah: 30, mila: 85, ben: 10, jo: 15, ayla: 20, lina: 35 }, sagt: ['mila', 'Fünfundachtzig. Räume haben Nummern. Die ändert man nicht.'] },
     { t: 'Du sollst vor der Klasse vorsingen.', zahlen: { noah: 95, mila: 80, ben: 50, jo: 60, ayla: 15, lina: 90 }, sagt: ['ayla', 'Fünfzehn. Ich liebe das. Sorry.'] },
     { t: 'Dein Handy ist weg.', zahlen: { noah: 40, mila: 50, ben: 70, jo: 80, ayla: 75, lina: 25 }, sagt: ['lina', 'Fünfundzwanzig. Ich hab es eh nie dabei.'] },
   ],
@@ -202,7 +202,7 @@ export const GESPRAECHE_N4 = {
     { szene: 'thermo', id: 'morgen', def: MORGEN,
       ausgang: (r) => (r.rot ? (r.wert < 60 ? 'runter' : 'rot') : 'gelb'),
       folgen: {
-        runter: { staerke: 'ruhig', merke: ['thermoRot', 'thermoRunter'], dann: [['erzaehler', 'Du warst bei Rot. Und bist wieder runtergekommen. Das merkt sich dein Körper.']] },
+        runter: { staerke: 'ruhig', merke: ['thermoRot', 'thermoRunter'], dann: [['erzaehler', 'Du warst bei Rot. Jetzt nicht mehr. Der nächste Bus kommt.']] },
         rot: { merke: 'thermoRot', dann: [['erzaehler', 'Dein Herz klopft noch. Alles ist zu laut. Und es ist erst 8 Uhr.']] },
         gelb: { staerke: 'ruhig', merke: 'thermoGelb' },
       } },
@@ -233,7 +233,7 @@ export const GESPRAECHE_N4 = {
         leser: { staerke: 'lesen', herz: { mila: 1, jo: 1 }, merke: 'zonenLeser', dann: [['mesenberg', 'Du liest die Klasse gut. Und trotzdem waren Überraschungen dabei.']] },
         ueberrascht: { herz: { ayla: 1 }, dann: [['kaya', 'Überrascht? Gut. Deine 20 kann für andere 90 sein.']] },
       } },
-    ['jo', 'Digga, ich dachte, Mila ist nie gestresst.'],
+    ['jo', 'Ey. Ich dachte, Mila ist nie gestresst.'],
     ['jo', 'Die ist bei 85 wegen einem RAUM.'],
     ['mila', 'Und du bei 90 wegen einem Lachen. Gleichstand.'],
     ['kaya', 'Letzte Übung: Pack deinen Koffer. Was hilft dir bei Rot?'],
@@ -255,9 +255,8 @@ export const GESPRAECHE_N4 = {
       { t: '(Denken: Er findet die Frage bestimmt dumm.)', merke: 'gesehenGruebeln', dann: [['erzaehler', 'Du hast schlecht geschlafen. Wegen zwei Wörtern.']] },
       { t: '(Denken: Vielleicht war sein Akku leer. Ich frag ihn einfach.)', staerke: 'lesen', merke: 'gesehenPruefen', dann: [['erzaehler', 'Du steckst das Handy weg. Du fragst ihn gleich.']] },
     ] },
-    ['ben', '(kommt rein) Sorry! Bei uns ist ab neun Handy-Hotel.'], ['ben', 'Hab’s nur kurz gesehen.'],
+    ['ben', '(kommt rein) Sorry! Ab neun müssen alle Handys in die Küche.'], ['ben', 'Hab’s nur kurz gesehen.'],
     ['ben', 'Und ja. Sehr nervös. Ich hab von Brüchen geträumt.'],
-    ['erzaehler', '„Gesehen“ heißt nur: gesehen. Nicht: Ich mag dich nicht.'],
     ['erzaehler', 'Dienstag. 8:03. Auf dem Pult steht eine Kiste. Darauf: HANDYS.'],
     ['jo', 'Gefängnis für Handys. Wallah, das ist Menschenrechtsverletzung.'],
   ],
@@ -306,15 +305,15 @@ export const GESPRAECHE_N4 = {
       ausgang: (r) => (r.gut >= 3 ? 'zusammen' : 'langsam'),
       folgen: {
         zusammen: { staerke: 'ruhig', herz: { noah: 3 }, merke: 'noahRunter', dann: [['noah', 'Du hast einfach mitgeatmet. Wie so ein Atem-Navi.']] },
-        langsam: { herz: { noah: 1 }, merke: 'noahRunter', dann: [['noah', 'Es wird. Langsam. Danke, dass du geblieben bist.']] },
+        langsam: { herz: { noah: 1 }, merke: 'noahRunter', dann: [['noah', 'Es wird. Langsam. … Erzähl das keinem, ja?']] },
       } },
     { tu: 'n4_kuedesKommt' },
-    ['mila', '(kommt dazu, außer Atem) Ich hab’s gesehen. Alles okay bei euch?'],
+    ['mila', '(kommt dazu, außer Atem) Ich hab’s gesehen. Ich bin gerannt. Vierzig Meter.'],
     ['mila', 'Um 8:34 war fast jeder im Unterricht.'],
     ['mila', 'Wer im Flur war, steht auf einer kurzen Liste.'],
   ],
   n4_dario: [
-    ['kenan', 'Yo. Erst gucken, dann reden, Brudi.'],
+    ['kenan', 'Zweimal gucken, einmal reden. Komm her.'],
     ['kenan', 'Du hast das nicht von mir.'],
     ['kenan', 'Dario ist gestern bei Rantini rausgeflogen. 8:30. Zwanzig Minuten im Flur.'],
     ['kenan', 'Und Luca war „auf Toilette“. Auch zwanzig Minuten. Lustige Toilette.'],
@@ -339,7 +338,7 @@ export const GESPRAECHE_N4 = {
     { szene: 'thermo', id: 'ernstfall', def: (m, S) => ERNSTFALL(m, S),
       ausgang: (r) => (r.wert < 50 ? 'runter' : 'schwer'),
       folgen: {
-        runter: { staerke: 'ruhig', herz: { mila: 3 }, merke: 'ernstfallGut', dann: [['mila', '… Okay. 2.11. Zweiter Stock. Ich weiß es wieder.'], ['mila', 'Du hast deine Karte benutzt. Für mich.'], { tu: 'n4_nurKopf' }] },
+        runter: { staerke: 'ruhig', herz: { mila: 3 }, merke: 'ernstfallGut', dann: [['mila', '… Okay. 2.11. Zweiter Stock. Ich weiß es wieder.'], { tu: 'n4_nurKopf' }] },
         schwer: { herz: { mila: 1 }, merke: 'ernstfallSchwer', dann: [['erzaehler', 'Mila zittert noch. Du holst Mme Rantini aus dem Lehrerzimmer.'], ['rantini', 'Danke. Gut, dass du geblieben bist.'], ['rantini', 'Ich bleib jetzt bei ihr.'], { tu: 'n4_nurKopf' }] },
       } },
   ],
@@ -360,7 +359,7 @@ export const tunN4 = (c) => ({
   // Folge aus Kap. 3 (Saal nach der Pause): Was hast du für Mila getan, als die Kapuze auf war?
   n4_milaDanke: () => {
     const m = c.S.merke;
-    if (m.wuerfelZurueck) return [['mila', '(im Rausgehen, leise) Der Würfel. Danke. Ich hab ihn seitdem immer dabei.']];
+    if (m.wuerfelZurueck) return [['mila', '(im Rausgehen, leise) Der Würfel. Du hast ihn aufgehoben. Danke.']];
     if (m.milaZettel) return [['mila', '(im Rausgehen) Dein Zettel. Hab ich noch. Keine Antwort nötig, oder?'], ['mila', '(grinst kurz) Trotzdem: danke.']];
     if (m.milaRuhe) return [['mila', '(im Rausgehen) Mittwoch hat mich keiner angestarrt.'], ['mila', 'Du auch nicht. Das war gut.']];
     if (m.milaLaut) return [['mila', '(im Rausgehen) Mittwoch, das „alles okay“ vor allen …'], ['mila', 'War lieb gemeint. Nächstes Mal lieber leise, ja?']];
@@ -368,8 +367,8 @@ export const tunN4 = (c) => ({
   },
   n4_busRueck: () => (c.S.merke.thermoRot ? [['kaya', 'Wer heute Morgen bei Rot war: Was hat geholfen?'], ['kaya', 'Meistens war es der Körper.']]
     : c.S.merke.thermoGelb ? [['kaya', 'Wer heute Morgen gelb war und runterkam: Das war ein Skill.']] : []),
-  n4_nurKopf: () => (c.S.merke.kofferNurKopf ? [['erzaehler', 'Auf deiner Karte stand nur Kopf. Heute hast du gesehen: Bei Rot hilft zuerst der Körper.'], ['erzaehler', 'Du kannst die Karte umpacken. Jederzeit.']] : []),
-  n4_testStart: () => (c.S.merke.kofferGepackt ? [['erzaehler', 'Du denkst an deinen Koffer. Er ist in deinen Händen.']] : []),
+  n4_nurKopf: () => (c.S.merke.kofferNurKopf ? [['erzaehler', 'Auf deiner Karte stand nur Kopf. Bei Rot war der Kopf weg.'], ['erzaehler', 'Du kannst die Karte umpacken. Jederzeit.']] : []),
+  n4_testStart: () => (c.S.merke.kofferGepackt ? [['erzaehler', 'Du denkst an deinen Koffer. Was war noch mal drin?']] : []),
   n4_handyBilanz: () => (c.S.merke.handyGelogen ? [['erzaehler', 'Dein Handy war in der Jacke. Gelogen. Für nichts.']] : []),
   n4_kuedesKommt: () => (c.S.merke.kuedesGeholt ? [['kaya', '(kommt mit Ben) Ich bin da. Ben war schneller als beim Sportfest.'], ['kaya', 'Noah, magst du kurz mit in mein Büro? Nur Tee.'], ['noah', '… Okay. Mit Tee.']] : [['mesenberg', '(kommt über den Hof) Noah? Ich bleib bei euch.'], ['mesenberg', 'Gut gemacht, ihr zwei. Jetzt übernehm ich.']]),
   n4_darioBilanz: () => {
@@ -393,7 +392,7 @@ export const tunN4 = (c) => ({
     ['erzaehler', 'Ein Screenshot. Profil von @annexe.cam. Unter „Admin“ steht: {name}.'],
     ['erzaehler', 'Das bist du. Du warst das nie.'],
     ['erzaehler', 'Darunter: „Wie lange bleibt das geheim? 😈“'],
-    ['erzaehler', 'Deine Zahl springt auf 90. Du weißt, wo dein Koffer ist.'],
+    ['erzaehler', 'Deine Zahl springt auf 90.'],
     { tu: 'kapitelEnde' },
   ],
 });

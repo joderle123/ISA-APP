@@ -441,10 +441,10 @@ export const LEKTIONEN = [
     bausteine: [
       bilder([['mail', 'der Brief'], ['users', 'Liebe Mila,'], ['school', 'Sehr geehrte Frau Weber,']]),
       T('Eine Nachricht an eine Freundin klingt anders als eine E-Mail an die Lehrerin. Anrede und Gruß zeigen, wie nah man sich ist.'),
-      spalten([merke('Brief und E-Mail', ['Persönlich: Liebe Mila, / Lieber Ben, … Viele Grüße / Bis bald! Dein Sam', 'Höflich: Sehr geehrte Frau Weber, / Sehr geehrter Herr Hoffmann, … Mit freundlichen Grüßen, Sam Muster', 'Nach der Anrede: Komma – dann klein weiter: Liebe Mila, wie geht es dir?', 'Höflich schreibt man Sie, Ihnen, Ihr groß.'])],
+      spalten([merke('Brief und E-Mail', ['Persönlich: Liebe Mila, / Lieber Ben, … Viele Grüße / Bis bald! Dein Sam', 'Höflich: Sehr geehrte Frau Weber, / Sehr geehrter Herr Weis, … Mit freundlichen Grüßen, Sam Muster', 'Nach der Anrede: Komma – dann klein weiter: Liebe Mila, wie geht es dir?', 'Höflich schreibt man Sie, Ihnen, Ihr groß.'])],
         [dialog([['', 'Liebe Mila,'], ['', 'danke für deine Karte! Am Samstag habe ich Ayla getroffen. Wir sind ins Kino gegangen. Kommst du nächstes Mal mit?'], ['', 'Viele Grüße'], ['', 'Sam']])]),
       A(1, 'Persönlich oder höflich? Schreib p oder h.'),
-      P(['Liebe Mila, ___', 'Sehr geehrte Frau Weber, ___', 'Mit freundlichen Grüßen ___', 'Bis bald! ___', 'Hallo Ben, ___', 'Sehr geehrter Herr Hoffmann, ___'], 2),
+      P(['Liebe Mila, ___', 'Sehr geehrte Frau Weber, ___', 'Mit freundlichen Grüßen ___', 'Bis bald! ___', 'Hallo Ben, ___', 'Sehr geehrter Herr Weis, ___'], 2),
       A(1, 'Welcher Gruß passt zur Anrede? Verbinde.'),
       zuordnen(['Liebe Ayla,', 'Sehr geehrte Frau Kremer,', 'Hi Jo,'], ['Mit freundlichen Grüßen', 'Bis morgen!', 'Viele Grüße']),
       A(2, 'Schreib die E-Mail richtig: Großschreibung, Komma nach der Anrede, Sie groß.'),
@@ -481,7 +481,7 @@ export const LEKTIONEN = [
       ],
       uebung: [
         ['◻ Mila, wie geht es dir?', ['Liebe', 'Lieber', 'Sehr geehrte'], 'Liebe'], ['◻ Ben, danke für die Karte.', ['Lieber', 'Liebe', 'Sehr geehrter'], 'Lieber'],
-        ['◻ Frau Weber, …', ['Sehr geehrte', 'Liebe', 'Hi'], 'Sehr geehrte'], ['◻ Herr Hoffmann, …', ['Sehr geehrter', 'Sehr geehrte', 'Lieber Herr Lehrer'], 'Sehr geehrter'],
+        ['◻ Frau Weber, …', ['Sehr geehrte', 'Liebe', 'Hi'], 'Sehr geehrte'], ['◻ Herr Weis, …', ['Sehr geehrter', 'Sehr geehrte', 'Lieber Herr Lehrer'], 'Sehr geehrter'],
         ['An die Lehrerin: Mit ◻ Grüßen', ['freundlichen', 'lieben Küssen', 'coolen'], 'freundlichen'], ['An einen Freund: Viele ◻!', ['Grüße', 'Grüßen', 'Gruß dich'], 'Grüße'],
         ['Können ◻ mir helfen? (höflich)', ['Sie', 'sie', 'du'], 'Sie'], ['Ich danke ◻. (höflich)', ['Ihnen', 'ihnen', 'dir'], 'Ihnen'],
         ['Nach der Anrede steht ein ◻.', ['Komma', 'Punkt', 'Fragezeichen'], 'Komma'], ['Liebe Mila, ◻ geht es dir?', ['wie', 'Wie'], 'wie'],

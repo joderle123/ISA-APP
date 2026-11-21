@@ -4634,7 +4634,7 @@ export const LEKTIONEN = {
       "titel": "Brief und E-Mail",
       "punkte": [
        "Persönlich: Liebe Mila, / Lieber Ben, … Viele Grüße / Bis bald! Dein Sam",
-       "Höflich: Sehr geehrte Frau Weber, / Sehr geehrter Herr Hoffmann, … Mit freundlichen Grüßen, Sam Muster",
+       "Höflich: Sehr geehrte Frau Weber, / Sehr geehrter Herr Weis, … Mit freundlichen Grüßen, Sam Muster",
        "Nach der Anrede: Komma – dann klein weiter: Liebe Mila, wie geht es dir?",
        "Höflich schreibt man Sie, Ihnen, Ihr groß."
       ]
@@ -4770,7 +4770,7 @@ export const LEKTIONEN = {
        "Sehr geehrte"
       ],
       [
-       "◻ Herr Hoffmann, …",
+       "◻ Herr Weis, …",
        [
         "Sehr geehrter",
         "Sehr geehrte",

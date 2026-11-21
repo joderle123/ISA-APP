@@ -80,7 +80,7 @@ const WUERFEL = {
   aufgaben: [
     { t: '10 Hampelmänner. Jetzt. Tippen!', sy: '🤸', art: 'tippen', n: 10, wer: F.ben, sagt: 'Neun. Zählt fast.' },
     { t: 'Ein großes Glas Wasser. Austrinken!', sy: '💧', art: 'halten', n: 3, wer: F.noah, sagt: 'Ich hol uns zwei.' },
-    { t: 'Ohne Handy. Nichts anfassen.', sy: '📵', art: 'still', n: 5, wer: F.jo, sagt: 'Drei Minuten. Digga. Das ist Folter. … Okay, geht.' },
+    { t: 'Ohne Handy. Nichts anfassen.', sy: '📵', art: 'still', n: 5, wer: F.jo, sagt: 'Drei Minuten. Das ist Folter. … Okay, geht.' },
     { t: 'Jemandem was Nettes sagen. In echt.', sy: '💬', art: 'wahl', optionen: ['„Ben, du machst jede Pause besser.“', '„Jo, dein Wurf vorhin war krass.“', '„Noah, danke für den Platz im Bus.“'], wer: F.ben, sagt: 'Du hast heute schöne Schuhe. Ich mein’s ernst.' },
     { t: 'Fünf Körbe. Schnell!', sy: '🏀', art: 'tippen', n: 5, zeit: 5, wer: F.jo, sagt: 'Ich zähl mit. Drei. Respekt.' },
     { t: 'In den Himmel gucken. Nichts anfassen.', sy: '☁️', art: 'still', n: 5, wer: F.noah, sagt: 'Die Wolke sieht aus wie Gerd.' },
@@ -97,9 +97,9 @@ export const GESPRAECHE_N9 = {
     ['dario', 'Sonst ist die Flamme weg. Dann ist alles weg.'],
     { wahl: [
       { t: '„Was passiert, wenn die Flamme ausgeht?“', staerke: 'zuhoeren', herz: { dario: 1 }, merke: 'serieGefragt', dann: [['dario', '… Nichts. Eigentlich nichts.'], ['erzaehler', 'Er drückt nicht auf Senden. Zum ersten Mal.']] },
-      { t: '„Eine Zahl ist keine Freundschaft.“', staerke: 'klar', herz: { dario: 1 }, merke: 'serieGefragt', dann: [['dario', 'Weiß ich. Loslassen tut trotzdem weh.']] },
+      { t: '„214 Tage Bilder schicken. An einen, der nie redet?“', staerke: 'klar', herz: { dario: 1 }, merke: 'serieGefragt', dann: [['dario', 'Weiß ich. Klingt dumm, wenn du’s laut sagst.']] },
     ] },
-    ['dario', 'Heute Nacht um drei hab ich mit so einer KI geschrieben.'],
+    ['dario', 'Gestern Abend hab ich stundenlang mit so einer KI geschrieben.'],
     ['dario', 'Sie war nett. Sie hat immer sofort geantwortet.'],
     ['dario', 'Am Ende schrieb sie: „Rede mit einem Menschen, dem du vertraust.“'],
     ['dario', 'Darum hab ich dir geschrieben.'],
@@ -129,7 +129,7 @@ export const GESPRAECHE_N9 = {
       { t: '„Versprochen. Ich sag nichts.“', merke: 'darioVersprochen', dann: [['dario', '(atmet aus) Danke.'], ['erzaehler', 'Du fühlst es sofort: Jetzt trägst du es mit. Allein.']] },
       { t: '„Das ist zu groß für uns zwei. Wir brauchen einen Erwachsenen.“', staerke: 'hilfe', herz: { dario: 1, kaya: 1 }, merke: 'darioBegleiten', dann: [['dario', 'Herr Kuedes? … Der ist okay. Kommst du mit?']] },
     ] },
-    ['dario', 'Ich trag so viel mit mir rum. Wie ein Rucksack voller Steine.'],
+    ['dario', 'Ich hab so viel im Kopf. Ich weiß nicht mal, was.'],
     { szene: 'rucksack', id: 'darioRucksack', def: DARIOS_RUCKSACK, ausgang: (r) => (r.geteilt >= 2 ? 'leichter' : 'schwer'),
       folgen: {
         leichter: { staerke: 'lesen', herz: { dario: 2 }, merke: 'rucksackLeichter', dann: [['dario', 'Wenn man es so sortiert … ist es weniger. Komisch.']] },
@@ -221,7 +221,7 @@ export const tunN9 = (c) => ({
     { szene: 'stempel', def: { modul: 'Modul 8 · Gesund und stark', titel: 'Akku geladen',
       gelernt: ['Ein Stress-Rucksack: tragen, warten, teilen, ablegen', 'Schlaf, Bewegung, Essen und Pausen laden den Akku', 'Macht ein Geheimnis Angst oder schadet es? Dann darfst du es sagen.', 'Kleine Schritte zählen – auch zehn Hampelmänner', 'Hilfe holen: Herr Kuedes, 116 111'],
       mission: 'Dein Gesund-Plan: ein Schritt. Eine Woche. Und einmal den Akku fragen, bevor er leer ist.' }, folgen: {} },
-    ['erzaehler', 'Am nächsten Morgen hängt ein Zettel von Herrn Kuedes an der Klassentür:'],
+    ['erzaehler', 'Am nächsten Morgen gibt dir Herr Kuedes einen Zettel. Nur dir.'],
     ['kaya', '(Zettel) Freitag ist Sommerfest.'],
     ['kaya', 'Dario will sich entschuldigen. Noah und Mila sind einverstanden.'],
     ['kaya', 'Vor dem Fest, nur die Klasse. Wer nicht will, muss nicht.'],

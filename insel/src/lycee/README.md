@@ -92,6 +92,16 @@ alles zusammenpasst.
 - **Mathe-Training** (mathe.js): sechs vorläufige Module, 21 Blätter mit Erklärung, Tipps und immer neuen Zahlen am
   eigenen Platz. Dieselben Blätter als PDF in der Toolbox (tools/lycee/mathe-toolbox.mjs → mathe-3.json, DE/FR).
 
+- **Feinschliff 22.11.2026 (Auftrag: ohne Cringe, sofort verständlich, realitätsnah):** Meme-Witze raus („Aura“ rund
+  20-mal, Lehrerin macht keine Jugendsprache mehr nach), übriger Slang sparsam (Regel-Prüfung zählt mit). Zwei Lese-Runden
+  wie eine kritische Jugendgruppe: rund 200 Zeilen ersetzt oder gestrichen – Erwachsene und Erzähler predigen nicht mehr
+  (Merksätze am Ende von Besuchen und Situationen weg), Figuren erklären ihre Gefühle nicht, Fakten stimmen (Ayla spielt
+  Bass, „Basket“ statt „Korbball“, keine „Eins plus“, Cannabis-Regel in Luxemburg, AirDrop statt Bild-Info, Serie 214 Tage),
+  alte Namen im Text durch Mme Tidderich / Herr Kuedes ersetzt. Einstieg: Titelbild nennt das Rätsel, das Foto vom Morgen
+  wird spürbar („Wer hat das Foto gemacht?“), Noah fragt am Kapitelende „bin ich da drauf?“.
+  Geprüft und verworfen: Foto-Texturen (CC0, Poly Haven) für Pflaster, Rasen, Asphalt – im Vergleichsbild wirkte der
+  Boden matschiger und blasser als die gemalten Flächen; die passen besser zum Stil.
+
 ## Dateien
 `welt.js` Gebäude und Gelände · `requisiten.js` Modelle aufstellen · `figuren.js` Menschen (Skelett,
 Sitzen) · `steuerung.js` Laufen und Kamera · `geschichte.js` Kapitel, Gespräche, Stärken ·

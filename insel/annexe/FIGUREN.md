@@ -150,11 +150,15 @@ Erwachsene haben Grenzen, sind manchmal müde oder ungerecht, aber nie gemein. S
 - **Stolz:** will gewinnen, große Worte.
 Keine hat immer recht. Höchstens drei Zeilen, dann entscheidet die Spielfigur.
 
-## Slang je Figur (ab 18.11.2026)
+## Slang je Figur (ab 18.11.2026, gekürzt am 22.11.2026)
+> Auftrag 22.11.: Zu viel Jugendsprache wirkt cringe („20-mal Minus Aura“). Darum: Meme-Wörter gar nicht (Aura, real talk,
+> slay, rizz, no cap …), übriger Slang sparsam – jedes Wort höchstens 6-mal im ganzen Spiel, eher in Chats als in Sprechblasen.
+> Erwachsene machen keine Jugendsprache nach. `node tools/annexe/regeln.mjs` prüft das.
+
 | Figur | So klingt sie | Beispiele |
 |---|---|---|
 | Jo | laut, Auto-Vergleiche, „digga“, „wallah“ | „Digga, wallah, das war Motorschaden.“ |
-| Ben | Memes, Aura-Rechnung, „sein Vater“ | „Minus 1000 Aura, Bruder.“ · „Er hat bezahlt? Sein Vater.“ |
+| Ben | Übertreibungen, Geschäftsideen, „Bruder“ (selten) | „Den verkaufen wir. Halbe-halbe.“ · „Ich wein nicht. Allergie.“ |
 | Luca | cool, knapp, „lowkey“, „ehrenlos“, „safe“ | „Lowkey ehrenlos, was du da machst.“ |
 | Kenan | Handwerker, „ich schwör“, „Brudi“ | „Ich schwör, zweimal gemessen, Brudi.“ |
 | Dario | Handy in der Hand, „real“, „sus“, „bro“ | „Real. Das ist sus, bro.“ |
@@ -164,12 +168,12 @@ Keine hat immer recht. Höchstens drei Zeilen, dann entscheidet die Spielfigur.
 | Lina | leise, schreibt mehr als sie redet, Emojis | „lowkey traurig 🫠“ (im Chat) |
 | Mila | gar kein Slang, wörtlich, genau – das ist ihr Witz | „Was bedeutet ‚sein Vater‘? Wessen Vater?“ |
 | Noah | versucht Slang, liegt daneben | „Das ist voll … sus? Sagt man das?“ |
-| Erwachsene | normal; Hoffmann versucht es manchmal | „Das ist … wie sagt ihr … lit?“ (Klasse stöhnt) |
+| Erwachsene | normal, keine Jugendsprache | Mme Tidderichs Witz ist „Neue Methode!“, nicht Slang |
 
 ## Erwachsene ab 18.11.2026 (Spiel-Namen von der Auftraggeberin)
 | Spiel-Name | Rolle | Kennung im Code |
 |---|---|---|
-| Mme Tidderich | Deutsch, Klassenlehrerin 7P2 („Neue Methode!“, versucht Jugendsprache) | hoffmann |
+| Mme Tidderich | Deutsch, Klassenlehrerin 7P2 („Neue Methode!“) | hoffmann |
 | Herr Kuedes | SePAS, leitet die Skills-Stunde | kaya |
 | Herr Mesenberg | SePAS | mesenberg |
 | Mme Nouvelle | Deutsch (Lern-Lektionen) | nouvelle |

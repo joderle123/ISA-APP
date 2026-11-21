@@ -32,7 +32,7 @@ for (const kap of KAP.length ? KAP : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) {
   }
   gesamtFehler += fehler.length;
   console.log('Kapitel ' + kap + ': ' + (ende ? '✓ bis zum Ende' : '✗ nicht fertig' + (haengt ? ' – hängt bei „' + haengt + '“' : '')) + ' · ' + besucht.length + ' Schritte · ' + Math.round((Date.now() - t0) / 1000) + ' s · Konsolenfehler: ' + fehler.length + (fehler.length ? ' → ' + JSON.stringify(fehler.slice(0, 3)) : ''));
-  await page.close();
+  await page.context().close();   // ganzen Kontext schließen, sonst sammelt der Browser Speicher (Absturz bei Kapitel 9)
 }
 await browser.close();
 process.exitCode = gesamtFehler ? 1 : 0;

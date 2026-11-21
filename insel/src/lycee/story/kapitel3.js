@@ -45,7 +45,7 @@ const KOERPER_STAFFEL = {
   vergleich: [
     { wer: F.noah, zonen: ['beine'], satz: 'Bei mir: Knie. Komplett. Wie Pudding.' },
     { wer: F.mila, zonen: ['bauch'], satz: 'Bauch. Wie Würfel drehen. Nur innen.' },
-    { wer: F.jo, zonen: ['haende', 'brust'], satz: 'Hände. Und Brust. Ich will einfach los, digga.' },
+    { wer: F.jo, zonen: ['haende', 'brust'], satz: 'Hände. Und Brust. Ich will einfach los.' },
   ],
 };
 
@@ -119,7 +119,7 @@ const MILA_FOTO = {
   ],
   aktionen: [
     { id: 'schreiben', t: 'Schreiben', symbol: '💬', wahl: [
-      { t: '„Löscht das. Jetzt. Das ist kein Spaß mehr.“', setzt: ['gestoppt', 'klartext'], ich: 'löscht das. jetzt. das ist kein spaß mehr', folgen: [{ nach: 1.2, wer: 'Ben', text: 'minus 1000 aura für den account. hab gemeldet' }] },
+      { t: '„Löscht das. Jetzt. Das ist kein Spaß mehr.“', setzt: ['gestoppt', 'klartext'], ich: 'löscht das. jetzt. das ist kein spaß mehr', folgen: [{ nach: 1.2, wer: 'Ben', text: 'hab den account gemeldet. macht mit' }] },
       { t: '„Wer das teilt, ist genauso dabei.“', setzt: ['gestoppt', 'teilen'], ich: 'wer das teilt ist genauso dabei', folgen: [{ nach: 1.3, wer: 'Luca', text: 'oha. moralpolizei' }, { nach: 2.6, system: true, text: 'Luca hat den Beitrag gelöscht.' }] },
       { t: '„Haha der Sticker“', setzt: 'mitgemacht', ich: 'haha der sticker', folgen: [{ nach: 1, wer: 'Jo', text: 'endlich wer mit humor' }] },
     ] },
@@ -145,10 +145,10 @@ const STAFFEL_PULT = {
   wo: 'Sportfest · Staffel',
   szene: 'Letzter Wechsel. Noah kommt angerannt. Du greifst nach dem Stab. Er fällt. Alle Teams laufen vorbei.',
   versionen: {
-    wut: [['du', '(reißt den Stab hoch) MANN! … LAUF, NOAH! LAUF!'], ['erzaehler', 'Ihr rennt wie verrückt. Ihr überholt eine Gruppe.'], ['jo', 'Digga, was war DAS? Weiter!']],
+    wut: [['du', '(reißt den Stab hoch) MANN! … LAUF, NOAH! LAUF!'], ['erzaehler', 'Ihr rennt wie verrückt. Ihr überholt eine Gruppe.'], ['jo', 'Was war DAS? Weiter!']],
     trauer: [['erzaehler', 'Du hebst den Stab auf. Gehst. Ins Ziel. Als letzte Person.'], ['noah', '(leise) Hey. Ist nur ein Stab.']],
     angst: [['erzaehler', 'Alle gucken. Du willst unsichtbar sein. Du läufst trotzdem.'], ['ben', '(von der Seite) WEITER! WEITER!']],
-    freude: [['du', '(lachst) Okay! Neuer Plan: Wir gewinnen den Stil-Preis!'], ['noah', '(lacht mit) Wir sind so schlecht!'], ['ben', 'Stil-Preis! Sein Vater!']],
+    freude: [['du', '(lachst) Okay! Neuer Plan: Wir gewinnen den Stil-Preis!'], ['noah', '(lacht mit) Wir sind so schlecht!'], ['ben', 'Stil-Preis! Ich halt die Rede!']],
   },
 };
 
@@ -156,13 +156,13 @@ const STAFFEL_PULT = {
 const JO_DUELL = {
   wo: 'Sportplatz · nach der Staffel', gegner: { name: 'Jo', farbe: '#c0392b' }, publikum: 'halbe Klasse', hitze: 45, zeit: 7,
   runden: [
-    { sagt: 'Digga, wegen dir sind wir Letzte. Wallah.', warn: 'Dein Gesicht wird heiß', skill: '(Weggucken. Ausatmen. Dann reden.)', skillAntwort: '(wartet) … Was?',
+    { sagt: 'Digga, wegen dir sind wir Letzte.', warn: 'Dein Gesicht wird heiß', skill: '(Weggucken. Ausatmen. Dann reden.)', skillAntwort: '(wartet) … Was?',
       karten: [
         { t: '„Ja. Der Stab ist mir runtergefallen. Passiert.“', stimme: 'kopf', art: 'klar', hitze: -8, respekt: 1, antwort: 'Passiert? Das war Sportfest!' },
         { t: '„Wegen MIR? Du bist doch gestolpert!“', stimme: 'stolz', art: 'angriff', hitze: 25, antwort: 'Ich? ICH? Sag das nochmal.' },
         { t: '„Ich geh kurz. Reden wir gleich.“', stimme: 'kopf', art: 'rueckzug', hitze: -8, respekt: 0, antwort: '(ruft) Ja, geh! … (leiser) Okay. Gleich.' },
       ], still: { hitze: 6, antwort: 'Sagst nix? Okay. Wow.' } },
-    { sagt: 'Ich hab die ganze Woche trainiert, digga.', warn: 'Deine Hände ballen sich', skill: '(Hände aufmachen. Schultern runter.)', skillAntwort: '(guckt auf deine Hände) … Okay.',
+    { sagt: 'Ich hab die ganze Woche trainiert. Die ganze!', warn: 'Deine Hände ballen sich', skill: '(Hände aufmachen. Schultern runter.)', skillAntwort: '(guckt auf deine Hände) … Okay.',
       karten: [
         { t: '„Echt? Das wusste ich nicht. Das ist mies.“', stimme: 'kopf', art: 'klar', hitze: -16, respekt: 2, antwort: '(überrascht) … Ja. Auf dem Bolzplatz. Jeden Abend.' },
         { t: '„Merkt man nicht.“', stimme: 'stolz', art: 'angriff', hitze: 32, antwort: 'WAS?!' },
@@ -222,7 +222,7 @@ export const GESPRAECHE_N3 = {
     { wahl: [
       { t: '(Hinsetzen. Nichts sagen.)', staerke: 'warten', herz: { mila: 2 }, dann: [
         ['erzaehler', 'Eine Minute. Mila atmet laut. Dann leiser.'],
-        ['mila', 'Ich weiß nicht, was ich fühle. Alles gleichzeitig.'] ] },
+        ['mila', 'Zu viel. Alles auf einmal. Ich kann nicht mal zählen.'] ] },
       { t: '„Das Foto ist widerlich. Nicht du.“', staerke: 'klar', herz: { mila: 2 }, dann: [
         ['mila', 'Ekel. Gutes Wort. Ich nehme es.'], ['mila', 'Und Wut. Und … dass ich nicht mehr reingehen will.'] ] },
       { t: '„Komm, ist nur ein Foto. Morgen ist es vergessen.“', herz: { mila: -2 }, merke: 'milaAbgewiegelt', dann: [
@@ -259,7 +259,7 @@ export const GESPRAECHE_N3 = {
       folgen: {
         dario: { staerke: 'lesen', merke: 'spurDarioAngst', dann: [['erzaehler', 'Dario sieht, dass du ihn ansiehst. Er geht. Schnell.']] },
         gut: { staerke: 'lesen' },
-        schwer: { dann: [['erzaehler', 'Gesichter sind schwer heute. Alle tragen eine Maske.']] },
+        schwer: { dann: [['erzaehler', 'Heute guckt jeder nur auf seinen Tisch.']] },
       } },
     // Der leere Platz ist wieder besetzt – aber Mila ist noch nicht „da“. Kleine Geste statt großer Rede.
     ['erzaehler', 'Mila sitzt zwei Plätze weiter. Kapuze auf. Sie schaut auf den Tisch.'],
@@ -267,13 +267,13 @@ export const GESPRAECHE_N3 = {
       { t: '(Den Würfel zurückschieben. Nichts sagen.)', wenn: (m) => m.wuerfelMit, staerke: 'einbeziehen', herz: { mila: 2 }, merke: 'wuerfelZurueck', dann: [
         ['erzaehler', 'Der Würfel rollt über den Tisch. Bleibt bei der Sechs liegen.'],
         ['erzaehler', 'Mila nimmt ihn. Dreht ihn einmal. Die Kapuze bleibt auf. Aber ihre Schultern gehen runter.']] },
-      { t: '(Ein Zettel: „Keine Antwort nötig. Ich bin auf deiner Seite.“)', staerke: 'einbeziehen', herz: { mila: 1 }, merke: 'milaZettel', dann: [
+      { t: '(Ein Zettel: „Keine Antwort nötig. Bin da.“)', staerke: 'einbeziehen', herz: { mila: 1 }, merke: 'milaZettel', dann: [
         ['erzaehler', 'Sie liest ihn unter dem Tisch. Faltet ihn klein. Steckt ihn ein.']] },
       { t: '(In Ruhe lassen. Sie hat genug Blicke heute.)', staerke: 'lesen', merke: 'milaRuhe', dann: [
-        ['erzaehler', 'Du schaust nach vorne. Wie alle anderen auch. Das ist manchmal das Netteste.']] },
+        ['erzaehler', 'Du schaust nach vorne. Wie alle anderen auch.']] },
       { t: '„Mila, alles okay?“ (laut, vor allen)', merke: 'milaLaut', dann: [
         ['erzaehler', 'Zwanzig Köpfe drehen sich um. Mila zieht die Kapuze tiefer.'],
-        ['mila', '(leise) Ja. Alles super.']] },
+        ['mila', '(leise) Nein. Aber nicht hier.']] },
     ] },
   ],
   n3_sportMorgen: [
@@ -335,7 +335,7 @@ export const tunN3 = (c) => ({
   // Jugendwelt heute: anonyme Fragen in der Story. Erst Spaß, dann ein Satz, der trifft.
   n3_fragen: () => {
     const m = c.S.merke;
-    const vorher = m.aylaPostBleibt ? [['ayla', 'Übrigens: Mein Schlagzeug-Video hat jetzt 31. Egal. Ich hab ein neues.']]
+    const vorher = m.aylaPostBleibt ? [['ayla', 'Übrigens: Mein Bass-Video hat jetzt 31. Egal. Ich hab ein neues.']]
       : m.aylaPostWeg ? [['ayla', 'Ich hab mein Video neu hochgeladen. Nur für enge Freunde.'], ['ayla', 'Fühlt sich besser an.']] : [];
     return [...vorher,
       ['erzaehler', 'Jo hält sein Handy hoch. In seiner Story: „Stell mir eine Frage 👀 anonym“.'],
@@ -343,20 +343,19 @@ export const tunN3 = (c) => ({
       ['erzaehler', 'Er scrollt. Sein Grinsen wird kleiner.'],
       ['erzaehler', 'Anonym: „warum bist du so peinlich lol“'],
       ['erzaehler', 'Anonym: „keiner mag dich wirklich“'],
-      ['jo', '(lacht zu laut) Haha. Spaßvögel.'],
+      ['jo', '(lacht zu laut) Haha. Clowns.'],
       { wahl: [
         { t: '„Anonym heißt: Die trauen sich nicht mit Namen.“', staerke: 'klar', herz: { jo: 2 }, merke: 'joAnonymKlar', dann: [['jo', '(guckt hoch) … Stimmt eigentlich. Feige.'], ['jo', 'Ich lösch den Sticker.']] },
-        { t: '(leise) „Das Zweite. Das tut weh, oder?“', staerke: 'zuhoeren', herz: { jo: 2 }, merke: 'joAnonymGefragt', dann: [['jo', '(lange Pause) … Bisschen.'], ['jo', 'Melden geht, oder? Mach ich.']] },
+        { t: '(leise) „Die zweite ist mies. Trifft dich das?“', staerke: 'zuhoeren', herz: { jo: 2 }, merke: 'joAnonymGefragt', dann: [['jo', '(lange Pause) … Bisschen.'], ['jo', 'Melden geht, oder? Mach ich.']] },
         { t: '(Mitlachen.)', merke: 'joAnonymGelacht', dann: [['erzaehler', 'Jo lacht mit. Dann steckt er das Handy weg.'], ['erzaehler', 'Den Rest der Pause sagt er fast nichts.']] },
       ] },
-      ['ayla', 'Anonyme Fragen sind wie Tauben. Meistens harmlos. Manchmal lassen sie was fallen.'],
     ];
   },
   n3_milaStart: () => (c.S.merke.milaPrivat ? [['mila', 'Du bist allein gekommen. Gut.']] : c.S.merke.milaGestoppt ? [['mila', 'Du hast im Chat was geschrieben. Ayla hat es mir gezeigt.']]
     : c.S.merke.milaGelacht ? [['mila', 'Du hast gelacht. Warum bist du hier?'], ['erzaehler', 'Sie guckt dich nicht an.']] : [['mila', '(guckt kurz hoch) Oh. Du.']]),
   n3_wandBilanz: () => {
     const r = (c.S.sz || {}).spuren || {};
-    return r.heringe >= 2 ? [['mila', 'Ein paar Zettel wackeln. Gerüchte sehen aus wie Fakten. Das ist gefährlich.']]
+    return r.heringe >= 2 ? [['mila', 'Zwei deiner Zettel sind Gerüchte. Die fliegen raus. Sorry.']]
       : [['mila', '(macht ein Foto von der Wand) Für die Tabelle. Danke. Wirklich.']];
   },
   n3_warnBilanz: () => {

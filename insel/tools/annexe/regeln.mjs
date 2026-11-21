@@ -42,12 +42,20 @@ if (existsSync(join(LYCEE, 'stimmen.js'))) {
 
 const T = texte();
 const fehler = [], hinweise = [];
+// Auftrag 22.11.2026: zu viel Jugendsprache wirkt aufgesetzt („20-mal Minus Aura“). Meme-Wörter gar nicht, übriger Slang
+// sparsam: jedes Wort höchstens 6-mal im ganzen Spiel. Die alten Kapitel (laufen nicht mehr) zählen nicht.
+const ALT = /^(kapitel[2-7]|geschichte)\.js$/;
+const MEME = /(^|[^\p{L}])(aura|wie sagt ihr|real talk|no cap|rizz|slay|sheesh|yolo|goofy)(?=$|[^\p{L}])/iu;
+const SLANG_ALLE = new RegExp(SLANG.source, 'giu');
+const slangZahl = {};
 const ort = (x) => x.datei + ':' + x.zeile + ' [' + x.wer + '] „' + x.text.slice(0, 70) + (x.text.length > 70 ? '…' : '') + '“';
 const einwuerfeJeBlock = new Map();
 for (const x of T) {
   const n = woerter(x.text);
   if (n > MAX_WOERTER) (x.wer === 'erzaehler' ? hinweise : fehler).push(['Wortzahl ' + n, ort(x)]);
   for (const [name, re] of VERBOTEN) if (re.test(x.text)) fehler.push(['verboten (' + name + ')', ort(x)]);
+  if (!ALT.test(x.datei) && MEME.test(x.text)) fehler.push(['Meme-Wort (wirkt aufgesetzt)', ort(x)]);
+  if (!ALT.test(x.datei)) for (const m of x.text.matchAll(SLANG_ALLE)) { const w = m[2].toLowerCase(); slangZahl[w] = (slangZahl[w] || 0) + 1; }
   if (ERWACHSEN.includes(x.wer) && SLANG.test(x.text)) hinweise.push(['Jugendsprache bei Erwachsenen (gewollt?)', ort(x)]);
   for (const re of THERAPIE) if (re.test(x.text)) fehler.push(['Therapie/Moral', ort(x)]);
   // Stammgäste (stammgaeste.js) sprechen ihre Sprache mit Absicht (Rosa Luxemburgisch, Paulo Portugiesisch): keine Einwurf-Regel
@@ -68,6 +76,7 @@ for (const x of T) {
   if (/\b112\b/.test(x.text) === false && /\b11[0-9]\b/.test(x.text) && /ruf|tel|nummer/i.test(x.text)) hinweise.push(['Nummer prüfen', ort(x)]);
   if (GEWICHT.test(x.text)) fehler.push(['Gewicht/Kalorien', ort(x)]);
 }
+for (const [w, n] of Object.entries(slangZahl)) if (n > 6) hinweise.push(['Slang zu oft (' + n + '×)', '„' + w + '“']);
 for (const [k, l] of einwuerfeJeBlock) if (l.length > 1) fehler.push(['mehr als ein Einwurf im Gespräch (' + l.map((e) => e[0]).join(', ') + ')', ort(l[1][1])]);
 
 const zaehl = (l) => Object.entries(l.reduce((a, [k]) => { const g = k.replace(/ \d+$/, '').replace(/„.*“ gehört nicht zu .*/, 'Einwurf falsche Figur'); a[g] = (a[g] || 0) + 1; return a; }, {})).map(([k, v]) => k + ': ' + v).join(' · ');

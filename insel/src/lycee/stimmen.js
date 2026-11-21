@@ -25,7 +25,7 @@ export const PLAUDERN = {
   mila: ['41 Sekunden. Heute 39,8. Notier das.', 'Der Gong ist vier Sekunden zu früh.', '(dreht weiter)', 'Du stehst in meinem Licht. Danke.'],
   lina: ['(flüstert) Jo hat Senf am Kinn. Seit der Pause.', '(zeichnet weiter, ohne aufzusehen)', 'Psst. Ich zeichne gerade den Automaten.', '…Salut.'],
   jo: ['Was?', 'Ich hab nix gemacht. Diesmal echt.', 'Der Automat schuldet mir einen Euro. Und Respekt.', 'Allez, beweg dich, ich will durch.'],
-  ben: ['Hast du zwei Euro? Kriegst du morgen.', 'Korbball in der Pause? Ich bin gut. Heute.', 'Ich hab ein Geschäftsmodell. Erzähl ich später.', 'Ça va? Gut. Ich auch. Fast.'],
+  ben: ['Hast du zwei Euro? Kriegst du morgen.', 'Basket in der Pause? Ich bin gut. Heute.', 'Ich hab ein Geschäftsmodell. Erzähl ich später.', 'Ça va? Gut. Ich auch. Fast.'],
   chiara: ['Plan für die Pause: essen, Mathe, Lampe.', 'Ich vergleiche nur meine Hausaufgaben. Nicht abschreiben.', 'Voilà. Mein Spind ist jetzt sortiert. Nach Farbe.', 'Hast du einen Kleber? Egal welchen.'],
   yusuf: ['Hm.', 'Hm?', 'Judo ist dienstags. Und freitags. Und manchmal sonntags.', '(nickt dir zu)'],
   ayla: ['Neuer Bandname: „Pausenklingel“. Oder? Nein. Oder doch?', '(nimmt einen Kopfhörer raus) Ja?', 'Probe Samstag. Kommst du? Musst nicht.', 'Tudo bem? Kurz bitte, Lied läuft.'],

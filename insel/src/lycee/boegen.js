@@ -13,7 +13,7 @@ export const BOEGEN = {
   // ---------------- Ben: Eifersucht (du spielst plötzlich mit Jo) ----------------
   ben: [
     { titel: 'Neuer Partner?', ab: 3, bis: 6, g: () => [
-      ['ben', 'Ah. Du spielst jetzt also mit Jo Korbball.'],
+      ['ben', 'Ah. Du spielst jetzt also mit Jo Basket.'],
       ['ben', 'Seit wann ist Jo dein Partner? Ich frag nur.'],
       { wahl: [
         { t: 'Jo hat gefragt. Spiel doch mit uns.', staerke: 'einbeziehen', herz: { ben: 1 }, merke: 'bg_ben_offen', dann: [
@@ -69,7 +69,7 @@ export const BOEGEN = {
       ['mila', 'Hast du das gefilmt?'],
       { wahl: [
         { t: 'Nein. Aber ich frag, wer es war.', staerke: 'einbeziehen', herz: { mila: 1 }, merke: 'bg_mila_hilfe', dann: [
-          ['mila', 'Danke. Dann sortiere ich meine Wut neu.']] },
+          ['mila', 'Danke. Ich will einen Namen. Mit Uhrzeit.']] },
         { t: 'Nein. Aber es ist schon ein bisschen lustig.', herz: { mila: -1 }, merke: 'bg_mila_lustig', dann: [
           ['mila', 'Für dich. Ich bin die mit der Zunge.']] },
         { t: 'Nein. Ich hab nur ein Lach-Emoji geschickt.', herz: { mila: -1 }, merke: 'bg_mila_emoji', dann: [
@@ -93,18 +93,18 @@ export const BOEGEN = {
       ] },
     ] },
     { titel: '58 Sekunden', ab: 7, bis: 10, g: (m) => hat(m, 'bg_mila_gut') ? [
-      ['mila', 'Neuer Rekord. 58 Sekunden.'],
+      ['mila', 'Neuer Rekord. Einhändig. 58 Sekunden.'],
       ['mila', 'Du darfst filmen. Diesmal mit Erlaubnis. Zunge inklusive.'],
       { wahl: [
         { t: 'Nur für uns? Oder für den Klassenchat?', herz: { mila: 1 }, dann: [['mila', 'Nur für uns. Den Klassenchat hab ich stummgeschaltet.']] },
         { t: '(Filmen. Ohne Zunge zu zoomen.)', staerke: 'humor', herz: { mila: 1 }, dann: [['mila', 'Respekt. Du hast nicht gezoomt. Ich hab aufgepasst.']] },
       ] },
     ] : [
-      ['mila', 'Neuer Rekord. 58 Sekunden.'],
+      ['mila', 'Neuer Rekord. Einhändig. 58 Sekunden.'],
       ['erzaehler', 'Sie sagt es zu Lina, nicht zu dir. Du hörst es trotzdem.'],
       { wahl: [
-        { t: 'Mila? Das mit dem Video tut mir leid.', herz: { mila: 2 }, merke: 'bg_mila_gut', dann: [['mila', 'Ich weiß. Jetzt weiß ich’s auch. Danke.']] },
-        { t: '(Nichts sagen.)', dann: [['erzaehler', 'Mila dreht weiter. 58 Sekunden sind schnell.']] },
+        { t: 'Mila? Das mit dem Video tut mir leid.', herz: { mila: 2 }, merke: 'bg_mila_gut', dann: [['mila', 'Ich weiß. Jetzt hast du’s gesagt. Notiert.']] },
+        { t: '(Nichts sagen.)', dann: [['erzaehler', 'Mila dreht weiter. Einhändig. Das ist schnell.']] },
       ] },
     ] },
   ],
@@ -177,7 +177,7 @@ export const BOEGEN = {
     ] : [
       ['erzaehler', 'Lina zeichnet. Sie schaut nicht hoch, als du kommst.'],
       { wahl: [
-        { t: 'Das mit Ayla war ich. Tut mir leid.', herz: { lina: 2 }, merke: 'bg_lina_gut', dann: [['lina', 'Ich weiß. Danke, dass du’s jetzt sagst.'], ['lina', 'Zwölf Seiten hab ich abgegeben. Nur dass du’s weißt.']] },
+        { t: 'Das mit Ayla war ich. Tut mir leid.', herz: { lina: 2 }, merke: 'bg_lina_gut', dann: [['lina', '(zeichnet weiter) Ich weiß. … Okay.'], ['lina', 'Zwölf Seiten hab ich abgegeben. Nur dass du’s weißt.']] },
         { t: 'Was zeichnest du?', merke: 'bg_lina_zu', dann: [['lina', 'Nichts Besonderes.'], ['erzaehler', 'Sie dreht das Blatt um.']] },
       ] },
     ] },

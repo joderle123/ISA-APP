@@ -349,7 +349,7 @@ export function createUI({ root, input, speech }) {
   ui.titel = ({ gespeichert, figuren, lehrer, platz = 1, plaetze = null, wechsle = null }) => new Promise((ok) => {
    const zeigeTitel = () => {
     const k = ebeneAuf('titel', '<div class="ly-t-kicker">Ein Jahr in der 7P2</div><h1 class="ly-t-name">Annexe<br><span>Junglinster</span></h1>' +
-      '<p class="ly-t-sub">Zehn Kapitel · eine Klasse · ein Kaktus</p>' +
+      '<p class="ly-t-sub">Jemand postet heimlich Fotos aus der Schule. Am ersten Tag bist du drauf.</p>' +
       (plaetze ? '<div class="ly-t-plaetze">' + plaetze().map((x, i) => '<button type="button" data-p="' + (i + 1) + '" class="' + (i + 1 === platz ? 'an' : '') + '"><b>' + (i + 1) + '</b><span>' + (x ? esc(x.name) + ' · ' + (x.fertig ? 'fertig' : 'Kapitel ' + x.kap) : 'frei') + '</span></button>').join('') + '</div>' : '') +
       '<div class="ly-t-knoepfe">' +
       (gespeichert ? '<button type="button" class="ly-btn ly-primaer" data-a="weiter">Weiterspielen</button><button type="button" class="ly-btn" data-a="neu">Neu anfangen</button>' : '<button type="button" class="ly-btn ly-primaer" data-a="neu">Los geht’s</button>') +
@@ -1116,7 +1116,6 @@ export function createUI({ root, input, speech }) {
 
   // „Kurz raus“: Das Spiel wartet. Atmen, 5-4-3-2-1 oder einfach zurück. Jederzeit, außer mitten im Gespräch.
   const LEXIKON = [
-    ['Aura', 'Jugendwort: wie cool jemand wirkt. Hat keine Regeln – darum kann man es nicht messen.'],
     ['Story', 'Bilder oder Videos, die nach 24 Stunden verschwinden. Screenshots davon bleiben aber.'],
     ['Screenshot', 'Ein Foto vom Bildschirm. Gut als Beweis. Nicht gut, um andere bloßzustellen.'],
     ['Fake', 'Etwas Gefälschtes: ein Bild, ein Chat, ein Konto. Erst prüfen: Wer? Woher? Wem schadet es?'],
