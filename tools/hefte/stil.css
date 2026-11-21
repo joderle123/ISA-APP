@@ -683,3 +683,26 @@ table.raster.stellen td { padding: 1.5mm 1mm; }
 .lesetext.breit .rand .woerter { display: grid; grid-template-columns: repeat(6, 1fr); gap: 1mm 3mm; }
 .lesetext.breit .rand .woerter h5 { grid-column: 1 / -1; margin-bottom: 0.5mm; }
 .bg-karte.quiz { break-inside: auto; }
+.bd .cap.nach { border-bottom: 0; border-top: 0.35mm solid var(--tinte); margin-top: auto; }
+.unbequem { border: 0.5mm solid var(--f); border-radius: 4mm; padding: 3.5mm 5mm; margin: 2mm 0 3mm; background: var(--f-zart); }
+.unbequem .u-l { font-family: Lexend; font-size: 9pt; letter-spacing: 0.1em; text-transform: uppercase; color: var(--f-tief); }
+.unbequem p { font-family: Lexend; font-size: 14pt; font-weight: 700; line-height: 1.35; margin: 1mm 0 0; }
+.feldbox { border: 0.4mm dashed var(--linie); border-radius: 3mm; margin: 2mm 0; }
+.striche { display: grid; gap: 4mm; margin: 2mm 0 3mm; }
+.striche .st-z { display: grid; grid-template-columns: 38mm 1fr 38mm; align-items: center; gap: 3mm; font-size: 11pt; }
+.striche .st-z span:last-child { text-align: right; }
+.striche .st-z i { height: 0; border-top: 0.5mm solid var(--f-mittel); position: relative; }
+.solo-text { font-size: 12.6pt; line-height: 1.55; margin: 0 0 3mm; }
+.deckblatt .unten .copy { position: absolute; left: 18mm; right: 18mm; bottom: 6mm; margin: 0; font-size: 7.5pt; line-height: 1.35; color: #8a93a3; }
+.halbe { display: grid; grid-template-columns: 1fr 1fr; gap: 5mm; align-items: start; }
+.raster.halb th { font-size: 8pt; line-height: 1.15; text-align: center; padding: 1.5mm 0.5mm; vertical-align: bottom; hyphens: auto; }
+.raster.halb th:first-child { text-align: left; }
+.raster.halb .kic { display: block; margin: 0 auto 0.8mm; width: 5.5mm; height: 5.5mm; color: var(--f); }
+.raster.halb .kic svg { width: 5.5mm; height: 5.5mm; }
+.raster.halb td { font-size: 10.5pt; line-height: 1.2; padding: 1.6mm 2mm; height: 9mm; }
+.auftakt h2.lang { font-size: 24pt; }
+/* kompakte Hefte: Deckblatt in der Leuchtfarbe der App, Schrift dunkel (lesbar auch bei Gelb und Hellgrün) */
+.kompakt .deckblatt { background: var(--f-mittel); color: var(--tinte); }
+.kompakt .deckblatt .muster circle { stroke: #fff; }
+.kompakt .deckblatt .muster { opacity: 0.35; }
+.bg-quiz td { padding: 0.9mm 1.5mm; line-height: 1.3; }

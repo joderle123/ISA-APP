@@ -13,13 +13,13 @@ const tief = '#D9542F'
 
 export const MODUL = {
   id: 'solo-02', kuerzel: 'so2', nr: 2, nrText: '#02', sprache: 'de',
-  kompakt: true, ohneLoesungen: true, deckH1: 'SOLO #02', fuss: 'SOLO #02 · Grenzen', stand: 'November 2026',
+  kompakt: true, ohneLoesungen: true, ablage: 'offline/solo', deckH1: 'SOLO #02', fuss: 'SOLO #02 · Grenzen', stand: 'November 2026',
   klasse: 'Einzelarbeit', niveau: '12–17 Jahre · 45–50 Minuten',
   dateiname: 'Solo-02-Grenzen',
   fach: { de: 'Bezugszeit', fr: 'Temps de référence' },
   titel: { de: 'Grenzen', fr: 'Limites' },
   untertitel: { de: 'Mauer oder offenes Tor?', fr: 'Mur ou porte ouverte ?' },
-  farben: { tief, mittel: mische(tief, 255, 0.55), zart: mische(tief, 255, 0.92), dunkel: mische(tief, 0, 0.35) },
+  farben: { tief, mittel: '#FF5A36', zart: mische('#FF5A36', 255, 0.88), dunkel: mische(tief, 0, 0.35) },   // Leuchtfarbe der App fürs Deckblatt
   deckbild: ['chloe:besorgt:stehen', 'jana:froh:stehen'],
   blasen: [{ t: 'Klar.', x: 64, y: 96 }, { t: 'Kannst du mir 20 Euro leihen?', x: 128, y: 86 }],
   medien: [['message-circle', 'var(--sprechen)', 'Reden', 'zu zweit, in Ruhe'], ['book', 'var(--lesen)', 'Der Fall', 'eine kurze Geschichte'],
@@ -86,10 +86,10 @@ export const LEKTIONEN = [
     start: {
       was: 'allein · 3 Minuten',
       aufgaben: [
-        { art: 'tabelle', auftrag: 'Schon mal gehört? Kreuze an.', stufe: 1, kopf: ['', 'schon gehört', 'hat geholfen'], breiten: [60, 20, 20], zeilen: [
+        { art: 'tabelle', auftrag: 'Schon mal gehört? Kreuze an.', kopf: ['', 'schon gehört', 'hat geholfen'], breiten: [60, 20, 20], zeilen: [
           ['„Du musst lernen, Nein zu sagen.“', '', ''], ['„Setz doch einfach Grenzen.“', '', ''], ['„Sag Stopp, wenn es dir zu viel wird.“', '', ''],
           ['„Respektier die Grenzen der anderen.“', '', ''], ['„Das darfst du dir nicht gefallen lassen.“', '', '']] },
-        { art: 'skala', auftrag: 'Wo stehst du? Kreise eine Zahl ein.', stufe: 1, pole: ['0 = leicht', '10 = fast unmöglich'], zeilen: ['Nein sagen', 'Jemanden nah ranlassen'] },
+        { art: 'skala', auftrag: 'Wo stehst du? Kreise eine Zahl ein.', pole: ['0 = leicht', '10 = fast unmöglich'], zeilen: ['Nein sagen', 'Jemanden nah ranlassen'] },
       ],
     },
     lesen: {
@@ -101,8 +101,8 @@ export const LEKTIONEN = [
       ],
       woerter: [['leihen', 'prêter'], ['die Grenze', 'la limite'], ['sauer sein', 'être fâché·e'], ['die Mauer', 'le mur'], ['das Tor', 'le portail'], ['Nein sagen', 'dire non']],
       aufgaben: [
-        { art: 'fragen', auftrag: 'Überleg zuerst allein. Dann redet ihr.', stufe: 2, fragen: [{ f: 'Warum ist Chloé sauer auf sich – und nicht auf Mila?', zeilen: 3 }] },
-        { art: 'clip', auftrag: 'Video zusammen schauen: die ersten 5 Minuten.', stufe: 1, titel: 'Sozialexperiment: Wie viel Nähe verträgt der Mensch?', kanal: 'Quarks', dauer: 'ca. 5 Min.', url: 'https://www.youtube.com/watch?v=wEALzPr7hBo', frage: 'Woran sieht man, dass es jemandem zu nah wird – bevor er oder sie etwas sagt?', zeilen: 2 },
+        { art: 'fragen', auftrag: 'Überleg zuerst allein. Dann redet ihr.', fragen: [{ f: 'Warum ist Chloé sauer auf sich – und nicht auf Mila?', zeilen: 3 }] },
+        { art: 'clip', auftrag: 'Video zusammen schauen: die ersten 5 Minuten.', titel: 'Sozialexperiment: Wie viel Nähe verträgt der Mensch?', kanal: 'Quarks', dauer: 'ca. 5 Min.', url: 'https://www.youtube.com/watch?v=wEALzPr7hBo', frage: 'Woran sieht man, dass es jemandem zu nah wird – bevor er oder sie etwas sagt?', zeilen: 2 },
       ],
     },
     regel: {
@@ -114,26 +114,26 @@ export const LEKTIONEN = [
       ],
     },
     ueben: [
-      { art: 'pole', auftrag: 'Mauer oder Tor? Wie ist deine Grenze bei … Kreuze pro Zeile einen Kreis an.', stufe: 1, links: { icon: 'wall', t: 'Mauer' }, rechts: { icon: 'door', t: 'offenes Tor' }, mitte: ['eher Mauer', 'passt', 'eher Tor'],
+      { art: 'pole', auftrag: 'Mauer oder Tor? Wie ist deine Grenze bei … Kreuze pro Zeile einen Kreis an.', links: { icon: 'wall', t: 'Mauer' }, rechts: { icon: 'door', t: 'offenes Tor' }, mitte: ['eher Mauer', 'passt', 'eher Tor'],
         zeilen: ['Familie', 'Freunden', 'Leuten, in die ich verknallt bin', 'Erwachsenen mit Macht: Lehrer, Betreuer, Polizei', 'Fremden im Netz'] },
-      { art: 'fragen', auftrag: 'Beides hat einen Grund.', stufe: 2, fragen: [{ f: 'Meine Mauer schützt mich vor …', zeilen: 2 }, { f: 'Mein offenes Tor bringt mir …', zeilen: 2 }] },
-      { art: 'tabelle', auftrag: 'Chloés Rechnung – zusammen: Mila fragt nach 20 Euro. Was kostet jede Antwort, was bringt sie?', stufe: 2, hoch: true, kopf: ['Chloé …', 'Das kostet sie', 'Das bringt ihr'], breiten: [32, 34, 34], zeilen: [
+      { art: 'fragen', auftrag: 'Beides hat einen Grund.', fragen: [{ f: 'Meine Mauer schützt mich vor …', zeilen: 2 }, { f: 'Mein offenes Tor bringt mir …', zeilen: 2 }] },
+      { art: 'tabelle', auftrag: 'Chloés Rechnung – zusammen: Mila fragt nach 20 Euro. Was kostet jede Antwort, was bringt sie?', hoch: true, kopf: ['Chloé …', 'Das kostet sie', 'Das bringt ihr'], breiten: [32, 34, 34], zeilen: [
         ['sagt wieder „Klar.“', '', ''], ['sagt: „Diesmal nicht.“', '', ''], ['sagt: „Ich überleg’s mir.“', '', '']] },
-      { art: 'tabelle', auftrag: 'Duell – wo ist deine Linie? Beide schreiben verdeckt eine Zahl: 0 = kein Problem, 10 = geht gar nicht. Dann aufdecken.', stufe: 3, kopf: ['Jemand …', 'du', 'dein Gegenüber'], breiten: [62, 19, 19], zeilen: [
+      { art: 'tabelle', auftrag: 'Duell – wo ist deine Linie? Beide schreiben verdeckt eine Zahl: 0 = kein Problem, 10 = geht gar nicht. Dann aufdecken.', kopf: ['Jemand …', 'du', 'dein Gegenüber'], breiten: [62, 19, 19], zeilen: [
         ['liest über deine Schulter deine Nachrichten mit', '', ''], ['umarmt dich zur Begrüßung, ohne zu fragen', '', ''],
         ['kommt in dein Zimmer, ohne zu klopfen', '', ''], ['postet ein Foto von dir, ohne zu fragen', '', '']] },
     ],
     sprechen: [
-      { art: 'sprechen', auftrag: 'Sechs Fragen, von leicht bis tief. Du suchst die Stufe aus. Jede Frage darfst du zurückgeben – „Weiter“ gilt immer.', stufe: 2, karten: [
+      { art: 'sprechen', auftrag: 'Sechs Fragen, von leicht bis tief. Du suchst die Stufe aus. Jede Frage darfst du zurückgeben – „Weiter“ gilt immer.', karten: [
         { titel: 'Stufe 1 · leicht', text: ['Wem kannst du am leichtesten Nein sagen?', 'Welches Nein von jemand anderem hat dich zuletzt genervt?'] },
         { titel: 'Stufe 2 · ehrlich', text: ['Wann hast du zuletzt Ja gesagt und Nein gemeint?', 'Wer hält deine Grenzen ein, ohne dass du sie sagen musst?'] },
         { titel: 'Stufe 3 · tief', text: ['Welches Nein hast du zu spät verstanden?', 'Gibt es eine Grenze, die früher jemand übergangen hat – und die du heute verteidigen würdest? Du musst nicht sagen, welche.'] },
       ] },
     ],
     schreiben: [
-      { art: 'schreiben', auftrag: 'Experiment bis zum nächsten Mal: **Das kleinste Nein.** Sag diese Woche einmal Nein zu etwas fast Egalem – bei jemandem in deinem Alter: Kaugummi, Sitzplatz, Lied. Ohne Grund, ohne Entschuldigung, ohne Lächeln.', stufe: 2,
+      { art: 'schreiben', auftrag: 'Experiment bis zum nächsten Mal: **Das kleinste Nein.** Sag diese Woche einmal Nein zu etwas fast Egalem – bei jemandem in deinem Alter: Kaugummi, Sitzplatz, Lied. Ohne Grund, ohne Entschuldigung, ohne Lächeln.',
         zeilen: 5, zeilenAnfaenge: ['Meine Wette – was macht der andere?', 'Was macht mein Körper?', '', 'Ergebnis, nächstes Mal:', ''] },
-      { art: 'schneidekarten', auftrag: 'Für die Tasche: Schneide die Karten aus.', stufe: 1, spalten: 2, farbe: tief, karten: [
+      { art: 'schneidekarten', auftrag: 'Für die Tasche: Schneide die Karten aus.', spalten: 2, farbe: tief, karten: [
         { titel: 'Körper-Check', icon: 'activity', text: 'Bauch zieht sich zusammen?\nKiefer fest? Schritt zurück?\n**Dann ist es ein Nein** – auch wenn der Mund Ja sagt.' },
         { titel: 'Drei Sätze reichen', icon: 'hand-stop', text: '„Nein.“\n„Diesmal nicht.“\n„Ich überleg’s mir und sag dir Bescheid.“\nMein eigener Satz:', linien: 1 },
       ] },

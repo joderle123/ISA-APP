@@ -105,7 +105,11 @@ Schriften in `schrift/`: Anton, Space Grotesk (SIL Open Font License), Permanent
 
 - Inhalt: `solo/sNN.ts` (Aufbau `solo-typen.ts`), Renderer `solo-bau.ts`. Jede Seite ist eine Liste von Bausteinen
   (Text, Deal, Aufgaben, Fall, Fakten, Video, Marker-Frage, Experiment, Karten, drei Tiefen, Logbuch).
-- Bauen: `npx tsx --tsconfig tsconfig.scripts.json dossiers/bau.tsx s02 && node dossiers/pdf.cjs s02` → `offline/solo/`.
+- **Druck-PDF (seit 21.11.2026 im Heft-Design der Modulhefte):** `npx tsx --tsconfig tsconfig.scripts.json tools/hefte/solo-umbau.mts`
+  wandelt alle `solo/sNN.ts` in `tools/hefte/inhalt/solo-NN.mjs` um (außer #02, das ist von Hand gebaut), dann
+  `npx tsx --tsconfig tsconfig.scripts.json tools/hefte/heft.tsx solo-05` → legt das PDF direkt nach `offline/solo/`.
+  Inhalt also weiter in `solo/sNN.ts` ändern, danach Umwandler und Heft laufen lassen.
+- Alter Weg (nur noch für die HTML-Vorschau, überschreibt sonst das neue PDF): `dossiers/bau.tsx s02 && node dossiers/pdf.cjs s02`.
 - Verzeichnis für die Toolbox: `npx tsx --tsconfig tsconfig.scripts.json dossiers/bau.tsx solo-index` schreibt
   `src/data/solo.json` (Seite „Bezugszeit“ im Skills-Kurs, mit Quiz zum Spielen). Danach die Toolbox neu bauen.
 - Neues Heft im Hub: in `Klassebuch/hub-apps.js` bei der Toolbox einen `zusatz`-Eintrag für das PDF ergänzen.
