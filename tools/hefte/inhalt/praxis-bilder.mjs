@@ -575,3 +575,32 @@ export function schiriZeichen() {
   o += nr(68, 232, 'A', '#2a2f3a', 11) + nr(196, 232, 'B', '#2a2f3a', 11) + nr(324, 232, 'C', '#2a2f3a', 11) + nr(452, 232, 'D', '#2a2f3a', 11)
   return `<figure class="schiri">${o}</svg></figure>`
 }
+
+// ---------- Leichtathletik: Laufbahn (400 m, 4 Bahnen, schematisch) ----------
+export function laufbahn({ nummern = true } = {}) {
+  let o = `<svg viewBox="0 0 520 290" xmlns="http://www.w3.org/2000/svg" class="bahn-svg"><defs><marker id="lb-a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#fff"/></marker></defs>`
+  const oval = (r) => `M150,${140 - r} H370 A${r},${r} 0 0 1 370,${140 + r} H150 A${r},${r} 0 0 1 150,${140 - r} Z`
+  o += `<path d="${oval(122)}" fill="#c8553d"/><path d="${oval(70)}" fill="#4f9a5a" stroke="#fff" stroke-width="2.5"/>`
+  for (const r of [83, 96, 109]) o += `<path d="${oval(r)}" fill="none" stroke="#fff" stroke-width="1.3" opacity="0.9"/>`
+  o += `<path d="${oval(122)}" fill="none" stroke="#fff" stroke-width="2.5"/>`
+  o += `<line x1="190" y1="210" x2="190" y2="262" stroke="#fff" stroke-width="4"/><line x1="370" y1="210" x2="370" y2="262" stroke="#1a1a1a" stroke-width="5" stroke-dasharray="4 4"/><line x1="370" y1="210" x2="370" y2="262" stroke="#fff" stroke-width="5" stroke-dasharray="4 4" stroke-dashoffset="4"/>`
+  o += `<path d="M215,244 H330" stroke="#fff" stroke-width="2.5" marker-end="url(#lb-a)"/>` + t(272, 236, 'Laufrichtung', { gr: 10, fett: 600, farbe: '#fff' })
+  o += `<rect x="225" y="112" width="70" height="56" rx="4" fill="#e6c98a" stroke="#fff" stroke-width="2"/>` + t(260, 186, 'Sprung und Wurf', { gr: 10, fett: 600, farbe: '#fff' })
+  if (nummern) o += nr(190, 276, 1) + nr(370, 276, 2) + nr(500, 140, 3) + nr(260, 32, 4) + nr(104, 236, 5) + nr(330, 140, 6)
+  return `<figure class="bahn">${o}</svg></figure>`
+}
+
+// ---------- Leichtathletik: Weitsprung in vier Phasen (Seitenansicht) ----------
+export function weitsprung() {
+  let o = `<svg viewBox="0 0 520 250" xmlns="http://www.w3.org/2000/svg" class="weit-svg"><defs><marker id="ws-a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker></defs>`
+  o += `<rect x="6" y="190" width="324" height="10" fill="#c8553d"/><rect x="196" y="189" width="12" height="11" fill="#fff" stroke="#2a2f3a" stroke-width="1.5"/><rect x="330" y="186" width="184" height="16" rx="3" fill="#e6c98a"/>`
+  o += t(202, 216, 'Balken', { gr: 10, fett: 600, farbe: '#6b7080' }) + t(470, 216, 'Sandgrube', { gr: 10, fett: 600, farbe: '#6b7080' })
+  o += strichfigur({ kopf: [80, 100], hals: [76, 114], huefte: [64, 148], arme: [[[86, 130], [98, 118]], [[60, 130], [50, 142]]], beine: [[[78, 168], [72, 190]], [[54, 168], [38, 178]]] })
+  o += strichfigur({ kopf: [206, 84], hals: [204, 98], huefte: [200, 134], arme: [[[216, 102], [226, 84]], [[194, 116], [186, 128]]], beine: [[[200, 162], [202, 190]], [[220, 140], [222, 164]]] })
+  o += strichfigur({ kopf: [292, 60], hals: [292, 74], huefte: [288, 108], arme: [[[306, 78], [318, 66]], [[304, 84], [316, 74]]], beine: [[[310, 102], [318, 126]], [[306, 108], [312, 132]]] })
+  o += strichfigur({ kopf: [420, 134], hals: [420, 148], huefte: [410, 176], arme: [[[434, 156], [448, 166]], [[432, 160], [446, 172]]], beine: [[[430, 180], [452, 186]], [[428, 184], [450, 190]]] })
+  o += `<path d="M232 80 Q262 52 276 58" fill="none" stroke="#8a8f99" stroke-width="2" stroke-dasharray="4 4"/><path d="M326 96 Q370 110 400 132" fill="none" stroke="#8a8f99" stroke-width="2" stroke-dasharray="4 4"/>`
+  o += `<line x1="208" y1="230" x2="446" y2="230" stroke="#c0392b" stroke-width="2.5" marker-start="url(#ws-a)" marker-end="url(#ws-a)"/><line x1="446" y1="194" x2="446" y2="236" stroke="#c0392b" stroke-width="1.5" stroke-dasharray="3 3"/>` + t(330, 246, 'gemessene Weite', { gr: 11, fett: 700, farbe: '#c0392b' })
+  o += nr(64, 226, 1) + nr(176, 64, 2) + nr(292, 30, 3) + nr(478, 150, 4)
+  return `<figure class="weit">${o}</svg></figure>`
+}

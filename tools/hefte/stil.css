@@ -628,3 +628,5 @@ table.raster.stellen td { padding: 1.5mm 1mm; }
 .form { margin: 2mm auto; width: 100%; } .form-svg { width: 160mm; max-width: 100%; display: block; margin: 0 auto; }
 .vrot { margin: 2mm auto; width: 100%; } .vrot-svg { width: 105mm; max-width: 100%; display: block; margin: 0 auto; }
 .schiri { margin: 2mm auto; width: 100%; } .schiri-svg { width: 150mm; max-width: 100%; display: block; margin: 0 auto; }
+.bahn { margin: 2mm auto; width: 100%; } .bahn-svg { width: 140mm; max-width: 100%; display: block; margin: 0 auto; }
+.weit { margin: 2mm auto; width: 100%; } .weit-svg { width: 150mm; max-width: 100%; display: block; margin: 0 auto; }
