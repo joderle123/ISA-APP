@@ -48,7 +48,7 @@ export const LEKTIONEN = [
         '### Wie schnell bin ich?',
         'Die Geschwindigkeit rechnet man so: **Strecke geteilt durch Zeit**. Wer 100 Meter in 20 Sekunden läuft, schafft **5 Meter pro Sekunde**. Die schnellsten Menschen der Welt schaffen über 10 Meter pro Sekunde.',
       ],
-      woerter: [['die Laufbahn', 'la piste'], ['die Bahn', 'le couloir'], ['die Gerade', 'la ligne droite'], ['der Startschuss', 'le signal de départ'], ['der Fehlstart', 'le faux départ'], ['der Fußballen', 'l’avant du pied'], ['die Ziellinie', 'la ligne d’arrivée'], ['die Geschwindigkeit', 'la vitesse']],
+      woerter: [['die Laufbahn', 'la piste'], ['die Bahn', 'le couloir'], ['die Gerade', 'la ligne droite'], ['der Startschuss', 'le signal de départ'], ['der Fehlstart', 'le faux départ'], ['der Fußballen', 'l’avant-pied'], ['die Ziellinie', 'la ligne d’arrivée'], ['die Geschwindigkeit', 'la vitesse']],
       aufgaben: [
         { art: 'beschriften', auftrag: 'Beschrifte die Laufbahn.', stufe: 1, html: '<div class="voll">' + laufbahn() + '</div>', liste: [['1', 'Startlinie 100 Meter'], ['2', 'Ziellinie'], ['3', 'Kurve'], ['4', 'Gerade'], ['5', 'Bahn'], ['6', 'Innenraum']], spalten: 3 },
       ],
@@ -94,7 +94,7 @@ export const LEKTIONEN = [
   // ================================================================ 2
   {
     thema: 'Staffellauf', titel: 'Stab weiter!', untertitel: 'Beim Staffellauf zählt das Team. Du lernst, wie man den Stab sicher übergibt, hörst eine Teambesprechung und rechnest Staffelzeiten aus.',
-    ziel: { de: 'Ich übergebe den Staffelstab sicher in der Wechselzone.', fr: 'Je transmets le témoin en sécurité dans la zone de transmission.' },
+    ziel: { de: 'Ich übergebe den Staffelstab sicher in der Wechselzone.', fr: 'Je transmets le témoin de façon sûre dans la zone de transmission.' },
     bild: ['tom:froh:stehen-zeigen', 'mia:froh:gehen'],
     start: {
       was: 'Rate mal!',
@@ -123,7 +123,7 @@ export const LEKTIONEN = [
       text: [
         ['Tom', 'Wer läuft zuerst? Der Start ist wichtig.'],
         ['Mia', 'Ich! Ich bin beim Start immer schnell.'],
-        ['Yusuf', 'Ich laufe gern in der Kurve. Ich nehme die zweite Strecke.'],
+        ['Yusuf', 'Ich laufe gern auf der Geraden. Ich nehme die zweite Strecke.'],
         ['Lina', 'Dann bin ich Dritte. Und Tom läuft zum Schluss, er ist am schnellsten.'],
         ['Tom', 'Okay. Aber unsere Übergaben waren letztes Mal schlecht. Mia, du hast den Stab fast fallen gelassen.'],
         ['Mia', 'Weil du dich umgedreht hast und stehen geblieben bist.'],
@@ -133,7 +133,7 @@ export const LEKTIONEN = [
       ],
       vor: [{ art: 'mc', auftrag: 'Was heißt „übernehmen“ beim Staffellauf? Kreuze an.', stufe: 1, fragen: [{ f: '', o: ['den Stab bekommen und weiterlaufen', 'den Stab abgeben und stehen bleiben'], r: 0 }] }],
       beim: [
-        { art: 'tabelle', auftrag: 'Hör zu. Wer läuft welche Strecke? Warum?', stufe: 1, kopf: ['Strecke', 'Name', 'Grund'], breiten: [16, 24, 60], zeilen: [['1', '[Mia]', '[beim Start immer schnell]'], ['2', '[Yusuf]', '[läuft gern in der Kurve]'], ['3', '[Lina]', '[kein Grund genannt]'], ['4', '[Tom]', '[am schnellsten]']] },
+        { art: 'tabelle', auftrag: 'Hör zu. Wer läuft welche Strecke? Warum?', stufe: 1, kopf: ['Strecke', 'Name', 'Grund'], breiten: [16, 24, 60], zeilen: [['1', '[Mia]', '[beim Start immer schnell]'], ['2', '[Yusuf]', '[läuft gern auf der Geraden]'], ['3', '[Lina]', '[kein Grund genannt]'], ['4', '[Tom]', '[am schnellsten]']] },
         { art: 'fragen', auftrag: 'Was lief beim letzten Mal schief?', stufe: 2, fragen: [{ f: '', zeilen: 2, l: 'Mia hat den Stab fast fallen gelassen, weil Tom sich umgedreht hat und stehen geblieben ist.' }] },
       ],
       nach: [{ art: 'sprechen', auftrag: 'Plant eure eigene Staffel: Wer läuft wann? Begründet eure Entscheidung.', stufe: 2, karten: [
@@ -175,7 +175,7 @@ export const LEKTIONEN = [
         '**Absprung:** Spring mit **einem** Bein vom **Absprungbalken** ab. Das andere Knie und die Arme schwingen kräftig nach oben. Wer über den Balken tritt, macht einen **ungültigen** Versuch.',
         '**Flug:** Der Körper ist gestreckt oder in einer Hockhaltung. Kurz vor der Landung bringst du die Beine nach **vorn**.',
         '**Landung:** Du landest mit beiden Füßen in der **Sandgrube** und fällst nach **vorn**, nicht nach hinten.',
-        '**Messen:** Gemessen wird vom Absprungbalken bis zum **nächsten Abdruck** im Sand. Das kann die Ferse sein, aber auch die Hand oder der Po. Darum ist es wichtig, nicht nach hinten zu fallen.',
+        '**Messen:** Gemessen wird von der **vorderen Kante** des Absprungbalkens bis zum **nächsten Abdruck** im Sand. Das kann die Ferse sein, aber auch die Hand oder der Po. Darum ist es wichtig, nicht nach hinten zu fallen.',
       ],
       woerter: [['der Anlauf', 'la course d’élan'], ['der Absprung', 'l’impulsion'], ['der Balken', 'la planche'], ['die Sandgrube', 'la fosse de sable'], ['ungültig', 'non valable'], ['der Abdruck', 'la trace'], ['die Ferse', 'le talon'], ['messen', 'mesurer']],
       aufgaben: [
@@ -304,8 +304,8 @@ export const LEKTIONEN = [
       absaetze: [
         'Bei den **Paralympics** gehört die Leichtathletik zu den größten Sportarten.',
         '**Im Rennrollstuhl** fahren Sportlerinnen und Sportler auf drei Rädern sehr schnell. Beim Marathon sind die Besten im Rollstuhl schneller als die schnellsten Läufer zu Fuß.',
-        '**Mit Prothesen:** Wer ein Bein verloren hat, läuft oder springt mit einer **Sportprothese** aus Carbon. Sie federt wie eine Feder.',
-        '**Blinde Läuferinnen und Läufer** laufen mit einem **Begleitläufer**, englisch Guide. Beide sind mit einem kurzen **Band** an den Händen verbunden. Der Guide sagt an, wo es langgeht, aber er darf nicht ziehen.',
+        '**Mit Prothesen:** Manchen Menschen fehlt ein Bein oder ein Teil davon. Sie laufen oder springen mit einer **Sportprothese** aus Carbon. Die Prothese federt wie eine Sprungfeder.',
+        '**Blinde Läuferinnen und Läufer** laufen mit einer **Begleitläuferin** oder einem **Begleitläufer**, englisch Guide. Beide sind mit einem kurzen **Band** an den Händen verbunden. Der Guide sagt an, wo es langgeht, aber er darf nicht ziehen.',
         'Für ein Schulsportfest gilt: Jede Person sammelt **eigene Punkte**, Stationen können **angepasst** werden, und jede **Verbesserung** zählt. Wer sich selbst übertrifft, hat eine **persönliche Bestleistung**.',
       ],
       woerter: [['der Rennrollstuhl', 'le fauteuil de course'], ['die Prothese', 'la prothèse'], ['federn', 'faire ressort'], ['blind', 'aveugle'], ['der Begleitläufer', 'le guide'], ['das Band', 'le lien'], ['übertreffen', 'dépasser'], ['die Bestleistung', 'le record personnel']],
@@ -344,7 +344,7 @@ export const LEKTIONEN = [
       { art: 'tabelle', auftrag: 'Mein Dreikampf-Pass: Trage deine Leistungen ein.', stufe: 1, kopf: ['Station', 'im Training', 'beim Fest', 'verbessert?'], breiten: [40, 20, 20, 20], zeilen: [['Sprint, in Sekunden', '', '', ''], ['Weitsprung oder Weitrollen, in Metern', '', '', ''], ['Ballwurf, in Metern', '', '', '']] },
       { art: 'schneidekarten', auftrag: 'Stationskarten für das Sportfest: Schneidet sie aus und legt sie an die Stationen.', stufe: 2, neueSeite: true, titel: 'Sportfest', icon: 'trophy', farbe: FEST, spalten: 2,
         karten: [
-          { text: '**Station Sprint**\n50 Meter, Hochstart oder Rollstuhl, zwei Versuche' }, { text: '**Station Weitsprung**\nAbsprungzone statt Balken, drei Versuche' },
+          { text: '**Station Sprint**\n60 Meter, Hochstart oder Rollstuhl, zwei Versuche' }, { text: '**Station Weitsprung**\nAbsprungzone statt Balken, drei Versuche' },
           { text: '**Station Weitrollen**\ndrei Schwünge, dann rollen lassen, drei Versuche' }, { text: '**Station Ballwurf**\nhinter der Linie, nur auf Kommando, drei Versuche' },
           { text: '**Helfer: Zeit**\nStoppuhr starten, laut ansagen, sofort aufschreiben' }, { text: '**Helfer: Weite**\nMaßband, bis zum nächsten Abdruck messen' },
         ] },

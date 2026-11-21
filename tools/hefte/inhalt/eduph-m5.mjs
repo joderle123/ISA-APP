@@ -64,7 +64,7 @@ export const LEKTIONEN = [
         ['Frau Diallo', 'Zweite Übung: Einer spielt einen hohen Clear nach hinten, der andere läuft zurück und spielt ihn wieder hoch. Fünfmal, dann wechseln.'],
         ['Frau Diallo', 'Dritte Übung: Drop. Ganz weich, knapp hinter das Netz. Der Partner läuft nach vorn.'],
         ['Lio', 'Jetzt hat es achtmal geklappt!'],
-        ['Frau Diallo', 'Super. Nele, du spielst im Rollstuhl im vorderen Feld. Deine Partnerin spielt dir die Bälle so, dass du gut herankommst.'],
+        ['Frau Diallo', 'Super. Nele, du spielst im Rollstuhl im hinteren Feld. Deine Partnerin spielt dir die Bälle so, dass du gut herankommst.'],
       ],
       vor: [{ art: 'mc', auftrag: 'Was heißt „hin und her“? Kreuze an.', stufe: 1, fragen: [{ f: '', o: ['von einem zum anderen und zurück', 'nur in eine Richtung'], r: 0 }] }],
       beim: [
@@ -106,7 +106,7 @@ export const LEKTIONEN = [
       quelle: 'Badmintonregeln (vereinfacht, Stand 2026)', titel: 'Die wichtigsten Regeln',
       absaetze: [
         '**Zählweise:** Jeder Ballwechsel bringt einen Punkt – egal, wer aufgeschlagen hat. Ein Satz geht bis **21 Punkte**. Steht es 20 : 20, muss man mit **zwei Punkten** Vorsprung gewinnen – höchstens bis 30. Meistens spielt man zwei Gewinnsätze.',
-        '**Aufschlag:** Man schlägt **diagonal** ins gegenüberliegende Feld. Der Federball wird **von unten** getroffen, unterhalb der Hüfte. Ist der eigene Punktestand gerade, zum Beispiel 0, 2 oder 4, schlägt man vom **rechten** Feld auf, bei ungerader Zahl vom **linken**.',
+        '**Aufschlag:** Man schlägt **diagonal** ins gegenüberliegende Feld. Der Federball wird **von unten** getroffen, unterhalb der Hüfte. Im Wettkampf muss er beim Treffen tiefer als 1,15 Meter sein. Ist der eigene Punktestand gerade, zum Beispiel 0, 2 oder 4, schlägt man vom **rechten** Feld auf, bei ungerader Zahl vom **linken**.',
         '**Einzel und Doppel:** Beim **Einzel** ist das Feld **schmal und lang**: Die äußeren Seitenlinien zählen nicht. Beim **Doppel** ist es **breit**: Die äußeren Seitenlinien gelten. Beim Doppel-Aufschlag ist aber hinten schon die **hintere Aufschlaglinie** das Ende.',
         '**Fehler:** Der Federball landet im Aus, fällt auf die eigene Seite, geht unter dem Netz durch, oder ein Spieler berührt das Netz mit dem Schläger oder dem Körper.',
         'Der Ball auf der **Linie** ist **gut** – also im Feld.',
@@ -150,7 +150,7 @@ export const LEKTIONEN = [
       { art: 'tabelle', auftrag: 'Von welchem Feld schlägst du auf? Kreuze an.', stufe: 2, kopf: ['dein Punktestand', 'rechts', 'links'], breiten: [50, 25, 25], zeilen: [['0', '[x]', ''], ['3', '', '[x]'], ['8', '[x]', ''], ['13', '', '[x]'], ['20', '[x]', '']] },
     ],
     schreiben: [
-      { art: 'schreiben', auftrag: 'Mein Sport-Tagebuch: Erkläre einem Mitschüler, von wo man im Badminton aufschlägt und wie man zählt.', stufe: 2,
+      { art: 'schreiben', auftrag: 'Mein Sport-Tagebuch: Erkläre einer Mitschülerin oder einem Mitschüler, von wo man im Badminton aufschlägt und wie man zählt.', stufe: 2,
         anfaenge: ['Beim Aufschlag …', 'Wenn dein Punktestand gerade ist, …', 'Man spielt bis …'], zeilen: 5,
         beispiel: 'Beim Aufschlag schlägst du von unten und diagonal ins andere Feld. Wenn dein Punktestand gerade ist, stehst du rechts, sonst links. Man spielt bis 21, und bei 20 zu 20 braucht man zwei Punkte Vorsprung.' },
     ],
@@ -217,7 +217,7 @@ export const LEKTIONEN = [
     schreiben: [
       { art: 'schreiben', auftrag: 'Mein Sport-Tagebuch: Beschreibe ein spannendes Spiel (Tischtennis oder ein anderes Spiel). Wie hast du dich gefühlt?', stufe: 2,
         anfaenge: ['Es stand …', 'Dann …', 'Am Ende …', 'Ich habe mich … gefühlt.'], zeilen: 5,
-        beispiel: 'Es stand 10 zu 10, und ich war richtig nervös. Dann habe ich einen Aufschlag ins Netz gespielt. Am Ende habe ich 12 zu 10 gewonnen. Ich habe mich stolz gefühlt, weil ich ruhig geblieben bin.' },
+        beispiel: 'Es stand 10 zu 10, und ich war richtig nervös. Dann habe ich einen Aufschlag ins Netz gespielt. Am Ende habe ich 13 zu 11 gewonnen. Ich habe mich stolz gefühlt, weil ich ruhig geblieben bin.' },
     ],
     check: ['Ich kenne die Teile der Platte.', 'Ich mache einen regelgerechten Aufschlag.', 'Ich zähle und weiß, wer aufschlägt.'],
   },
@@ -273,7 +273,7 @@ export const LEKTIONEN = [
     regel: {
       reihen: [
         [{ titel: 'Taktik', nummern: true, punkte: ['in die **freie Ecke**', 'Gegner **laufen lassen**', 'zurück in die **Mitte**', '**sicher** statt riskant', '**ruhig** bleiben'] },
-         { titel: 'Coaching', punkte: ['**beobachten**: Wo steht der Gegner?', 'höchstens **zwei** Tipps', '**positiv** formulieren', '**Mut** machen'] }],
+         { titel: 'Coaching', punkte: ['**beobachten**: Wo steht der Gegner?', 'höchstens **drei** Tipps', '**positiv** formulieren', '**Mut** machen'] }],
       ],
     },
     ueben: [
@@ -309,7 +309,7 @@ export const LEKTIONEN = [
         'Jeder spielt einmal gegen jeden anderen. Für einen Sieg gibt es **zwei Punkte**, für ein Unentschieden einen. Die Ergebnisse trägt man in eine **Tabelle** ein. Bei **vier** Personen gibt es **sechs** Spiele, bei **fünf** schon **zehn**.',
         'Bei allen Formen gilt: **ehrlich zählen**, Ergebnisse gleich aufschreiben, und nach dem Spiel die Hand geben.',
       ],
-      woerter: [['das Turnier', 'le tournoi'], ['der Rundlauf', 'la ronde (ping-pong)'], ['das Leben (im Spiel)', 'la vie (au jeu)'], ['der Kaiser', 'l’empereur'], ['gleichstark', 'de même niveau'], ['der Sieg', 'la victoire'], ['das Unentschieden', 'le match nul'], ['die Tabelle', 'le tableau']],
+      woerter: [['das Turnier', 'le tournoi'], ['der Rundlauf', 'la tournante (ping-pong)'], ['das Leben (im Spiel)', 'la vie (au jeu)'], ['der Kaiser', 'l’empereur'], ['gleichstark', 'de même niveau'], ['der Sieg', 'la victoire'], ['das Unentschieden', 'le match nul'], ['die Tabelle', 'le tableau']],
       aufgaben: [
         { art: 'zuordnen', auftrag: 'Welche Turnierform ist das? Verbinde.', stufe: 1, links: ['Alle laufen um die Platte.', 'Gewinner gehen ein Feld nach oben.', 'Jeder spielt einmal gegen jeden.'], rechts: ['Rundlauf', 'Kaiserspiel', 'Jeder gegen jeden'] },
       ],
@@ -323,14 +323,14 @@ export const LEKTIONEN = [
         ['Mia', 'Jeder spielt drei Minuten. Wer nach drei Minuten mehr Punkte hat, gewinnt.'],
         ['Noah', 'Der Gewinner geht eine Platte nach oben, Richtung Kaiser. Der Verlierer geht eine Platte nach unten.'],
         ['Mia', 'Wer auf der Kaiserplatte gewinnt, bleibt dort. Wer auf Platte fünf verliert, bleibt auch dort.'],
-        ['Noah', 'Ich pfeife den Start und das Ende. Bei unentschieden entscheidet der nächste Punkt.'],
+        ['Noah', 'Ich pfeife den Start und das Ende. Steht es unentschieden, entscheidet der nächste Punkt.'],
         ['Mia', 'Und ganz wichtig: Ihr zählt selbst und ehrlich. Bei Streit holt ihr uns.'],
         ['Noah', 'Wer am Ende auf der Kaiserplatte steht, ist Kaiser oder Kaiserin des Tages.'],
         ['Mia', 'Achtung, alle an ihre Platten … und los!'],
       ],
       vor: [{ art: 'mc', auftrag: 'Was macht die Turnierleitung? Kreuze an.', stufe: 1, fragen: [{ f: '', o: ['Sie organisiert das Turnier und hilft bei Streit.', 'Sie spielt alle Spiele.'], r: 0 }] }],
       beim: [
-        { art: 'rf', auftrag: 'Hör zu. Richtig oder falsch?', stufe: 1, saetze: [['Es gibt fünf Platten.', true], ['Ein Spiel dauert fünf Minuten.', false], ['Der Gewinner geht eine Platte nach oben.', true], ['Bei unentschieden entscheidet der nächste Punkt.', true], ['Die Turnierleitung zählt alle Punkte.', false]] },
+        { art: 'rf', auftrag: 'Hör zu. Richtig oder falsch?', stufe: 1, saetze: [['Es gibt fünf Platten.', true], ['Ein Spiel dauert fünf Minuten.', false], ['Der Gewinner geht eine Platte nach oben.', true], ['Bei Unentschieden entscheidet der nächste Punkt.', true], ['Die Turnierleitung zählt alle Punkte.', false]] },
       ],
       nach: [{ art: 'sprechen', auftrag: 'Welche Turnierform findet ihr am fairsten? Warum?', stufe: 3, karten: [
         { titel: 'Satzanfänge', text: ['Am fairsten finde ich …', 'weil …', 'Ein Nachteil ist …'] }] }],
@@ -354,7 +354,7 @@ export const LEKTIONEN = [
   },
   // ================================================================ 6
   {
-    thema: 'Projekt: Ein Mini-Turnier für alle', titel: 'Unser Turnier – alle spielen mit', untertitel: 'Zum Schluss organisiert ihr ein Mini-Turnier, bei dem alle mitspielen können. Du lernst Para-Badminton und Para-Tischtennis kennen und überlegt, wie man Regeln anpasst.',
+    thema: 'Projekt: Ein Mini-Turnier für alle', titel: 'Unser Turnier – alle spielen mit', untertitel: 'Zum Schluss organisiert ihr ein Mini-Turnier, bei dem alle mitspielen können. Du lernst Para-Badminton und Para-Tischtennis kennen und überlegst, wie man Regeln anpasst.',
     ziel: { de: 'Ich organisiere mit anderen ein Turnier, bei dem alle mitspielen können.', fr: 'J’organise avec d’autres un tournoi auquel tout le monde peut participer.' },
     bild: ['nele:froh:rollstuhl', 'lio:froh:stehen-zeigen'],
     start: {
@@ -367,7 +367,7 @@ export const LEKTIONEN = [
       was: 'Ein Sachtext', art: 'text', stimme: 'm1', nummern: false,
       quelle: 'Sportwissen (Stand 2026)', titel: 'Para-Badminton und Para-Tischtennis',
       absaetze: [
-        'Bei den **Paralympics** treten Sportlerinnen und Sportler mit Behinderungen an. **Tischtennis** ist dort schon lange dabei, **Badminton** seit den Spielen von Tokio 2021.',
+        'Bei den **Paralympics** treten Sportlerinnen und Sportler mit Behinderungen an. **Tischtennis** ist dort schon lange dabei, **Badminton** seit den Spielen von Tokio 2020, die 2021 stattfanden.',
         'Beim **Para-Badminton** im Rollstuhl ist das Feld **kleiner**: Man spielt im Einzel nur auf einer **Hälfte** der Breite, und der vordere Teil am Netz zählt nicht. Bei manchen Klassen spielen Menschen stehend, zum Beispiel mit einer Prothese.',
         'Beim **Para-Tischtennis** im Rollstuhl gelten fast die gleichen Regeln. Eine Besonderheit: Beim Aufschlag muss der Ball über die **Grundlinie** der anderen Seite gehen, nicht über die Seitenlinie.',
         'Für ein Schulturnier kann man **eigene Regeln** erfinden: zum Beispiel ein kleineres Feld, mehr Zeit, einen größeren Ball oder ein Team aus zwei Personen. Wichtig ist, dass das Spiel für **alle spannend** bleibt.',
@@ -387,7 +387,7 @@ export const LEKTIONEN = [
         ['Lio', 'Wie beim Para-Badminton? Der vordere Teil zählt in deiner Hälfte nicht?'],
         ['Nele', 'Genau. Und mein Partner deckt vorn ab. Dann ist es für alle fair.'],
         ['Lio', 'Gut. Wie viele Teams haben wir?'],
-        ['Nele', 'Zwölf Leute, also sechs Teams. Bei jeder gegen jeden wären das fünfzehn Spiele. Zu viele für eine Doppelstunde.'],
+        ['Nele', 'Zwölf Leute, also sechs Teams. Bei „Jeder gegen jeden“ wären das fünfzehn Spiele. Zu viele für eine Doppelstunde.'],
         ['Lio', 'Dann machen wir zwei Gruppen mit je drei Teams. Das sind drei Spiele pro Gruppe. Danach spielen die Gruppensieger das Finale.'],
         ['Nele', 'Super. Und wir brauchen Schiedsrichter, eine Ergebnistafel und jemanden, der die Zeit nimmt.'],
         ['Lio', 'Die Teams, die gerade nicht spielen, übernehmen das. Ich mache die Tabelle.'],

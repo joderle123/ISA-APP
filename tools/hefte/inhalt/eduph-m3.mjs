@@ -26,7 +26,7 @@ export const LEKTIONEN = [
   // ================================================================ 1
   {
     thema: 'Geräte aufbauen · helfen und sichern', titel: 'Sicher ist sicher', untertitel: 'Beim Turnen passt man aufeinander auf. Du lernst, wie man Matten und Geräte sicher trägt und aufbaut, die wichtigsten Turnregeln und wie man einem anderen hilft und ihn sichert.',
-    ziel: { de: 'Ich baue Geräte sicher auf und helfe und sichere andere.', fr: 'J’installe le matériel en sécurité, j’aide et je pare les autres.' },
+    ziel: { de: 'Ich baue Geräte sicher auf und helfe und sichere andere.', fr: 'J’installe le matériel en toute sécurité, j’aide et je pare les autres.' },
     bild: ['lehrerin:froh:erklaeren', 'tom:froh:stehen-zeigen'],
     start: {
       was: 'Was meinst du?',
@@ -43,17 +43,17 @@ export const LEKTIONEN = [
         '### Geräte tragen und aufbauen',
         'Matten werden **getragen**, nicht gezogen. An jeder Ecke fasst eine Person an. Einer gibt das Kommando: „Achtung – hoch!“ Langbänke tragen zwei Personen. Große Geräte wie Kästen und Barren baut ihr nur mit der Lehrperson auf. Um jedes Gerät liegen **Matten** ohne Lücken.',
         '### Helfen und sichern',
-        'Beim **Helfen** unterstützt du jemanden bei einer Bewegung, zum Beispiel mit einer Hand am Oberarm. Beim **Sichern** stehst du bereit, um jemanden aufzufangen, falls er fällt. Man greift mit dem **Klammergriff**: beide Hände umfassen den Oberarm – eine Hand von oben, eine von unten.',
+        'Beim **Helfen** unterstützt du jemanden bei einer Bewegung, zum Beispiel mit einer Hand am Oberarm. Beim **Sichern** stehst du bereit, um jemanden aufzufangen, falls er fällt. Man greift mit dem **Klammergriff**: beide Hände umfassen den Oberarm – eine Hand nah an der Schulter, eine nah am Ellenbogen.',
         'Wer hilft, schaut **immer** auf die turnende Person und redet mit ihr: „Bereit? Ich bin da.“ Und: Jeder darf sagen, wenn er etwas noch **nicht** probieren will.',
       ],
-      woerter: [['turnen', 'faire de la gymnastique'], ['das Gerät', 'l’agrès'], ['die Matte', 'le tapis'], ['tragen', 'porter'], ['das Kommando', 'le commandement'], ['helfen', 'aider'], ['sichern', 'parer'], ['der Klammergriff', 'la prise en pince']],
+      woerter: [['turnen', 'faire de la gymnastique'], ['das Gerät', 'l’agrès'], ['die Matte', 'le tapis'], ['tragen', 'porter'], ['das Kommando', 'le signal'], ['helfen', 'aider'], ['sichern', 'parer'], ['der Klammergriff', 'la prise en pince']],
       aufgaben: [
         { art: 'rf', auftrag: 'Richtig oder falsch?', stufe: 1, saetze: [['Beim Turnen behält man die Kette an.', false], ['Matten werden über den Boden gezogen.', false], ['Wer sichert, schaut immer auf die turnende Person.', true], ['Man darf sagen, wenn man etwas noch nicht probieren will.', true], ['In Socken turnt man am sichersten.', false]] },
       ],
     },
     hoeren: {
       was: 'Eine Trainer-Ansage', wo: 'Sporthalle · Geräteraum', titel: 'Mattentransport',
-      situation: 'Frau Diallo erklärt, wie vier Schüler eine große Matte tragen. Hör genau auf die Kommandos.',
+      situation: 'Frau Diallo erklärt, wie vier Jugendliche eine große Matte tragen. Hör genau auf die Kommandos.',
       bild: ['lehrerin:froh:erklaeren', 'tom:froh:stehen-zeigen'], sprecher: { 'Frau Diallo': 'w1', Tom: 'm3' },
       text: [
         ['Frau Diallo', 'Wir holen die große Matte. Tom, Mia, Sami und Yusuf: Jeder stellt sich an eine Ecke.'],
@@ -80,7 +80,7 @@ export const LEKTIONEN = [
       ],
     },
     ueben: [
-      { art: 'tabelle', auftrag: 'Geräte-Check vor der Stunde: Prüft zu zweit und hakt ab.', stufe: 1, kopf: ['Prüfpunkt', 'ok', 'Problem'], breiten: [64, 14, 22], zeilen: [['Alle Matten liegen ohne Lücken.', '', ''], ['Die Matten rutschen nicht.', '', ''], ['Um jedes Gerät liegen Matten.', '', ''], ['Niemand trägt Schmuck oder Kaugummi.', '', ''], ['Der Weg zwischen den Stationen ist frei.', '', '']] },
+      { art: 'tabelle', auftrag: 'Geräte-Check vor der Stunde: Prüft zu zweit und hakt ab.', stufe: 1, kopf: ['Prüfpunkt', 'ok', 'Problem'], breiten: [64, 14, 22], zeilen: [['Alle Matten liegen ohne Lücken.', '', ''], ['Die Matten rutschen nicht.', '', ''], ['Um jedes Gerät liegen Matten.', '', ''], ['Niemand trägt Schmuck, niemand kaut Kaugummi.', '', ''], ['Der Weg zwischen den Stationen ist frei.', '', '']] },
       { art: 'tabelle', auftrag: 'Helfen oder sichern? Kreuze an.', stufe: 2, kopf: ['', 'helfen', 'sichern'], breiten: [64, 18, 18], zeilen: [['Ich halte Mias Hand, während sie über die Bank balanciert.', '[x]', ''], ['Ich stehe neben dem Kasten bereit, falls Tom fällt.', '', '[x]'], ['Ich schiebe Sami bei der Rolle leicht am Rücken, damit er herumkommt.', '[x]', ''], ['Ich stehe neben dem Minitrampolin und kann jemanden auffangen.', '', '[x]']] },
     ],
     schreiben: [
@@ -125,7 +125,7 @@ export const LEKTIONEN = [
         ['Frau Diallo', 'Stufe zwei: Auf einem Bein, und die Arme langsam über den Kopf strecken. Bauch fest! Zehn Sekunden.'],
         ['Frau Diallo', 'Stufe drei: Standwaage. Oberkörper nach vorn, ein Bein nach hinten, bis ihr aussieht wie ein T. Fünf Sekunden halten.'],
         ['Frau Diallo', 'Stufe vier: auf einem Bein stehen – und die Augen schließen. Wer wackelt, macht die Augen einfach wieder auf. Zehn Sekunden.'],
-        ['Frau Diallo', 'Wer im Rollstuhl sitzt: Hebt die Füße von der Fußstütze, Arme zur Seite, und lehnt den Oberkörper langsam nach links und rechts, ohne euch festzuhalten. Nele, super gemacht!'],
+        ['Frau Diallo', 'Wer im Rollstuhl sitzt: Bremsen fest. Wenn es geht, hebt die Füße von der Fußstütze. Arme zur Seite, und lehnt den Oberkörper langsam nach links und rechts – nur so weit, wie es sicher ist. Nele, super gemacht!'],
         ['Frau Diallo', 'Stufe fünf, die Profistufe: zu zweit. Ihr steht auf einem Bein, gebt euch beide Hände und lehnt euch ganz leicht nach hinten. Haltet euch gegenseitig im Gleichgewicht!'],
       ],
       vor: [{ art: 'mc', auftrag: 'Was ist eine Challenge? Kreuze an.', stufe: 1, fragen: [{ f: '', o: ['eine Herausforderung, eine Aufgabe zum Ausprobieren', 'eine Pause'], r: 0 }] }],
@@ -146,7 +146,7 @@ export const LEKTIONEN = [
         karten: [
           { text: '**Langbank**\nVorwärts über die umgedrehte Bank balancieren. Partner hilft an der Hand.' }, { text: '**Seil**\nÜber ein Seil am Boden gehen, Arme zur Seite, Blick nach vorn.' },
           { text: '**Kissen**\nAuf einem Wackelkissen auf einem Bein stehen. 20 Sekunden.' }, { text: '**Ball**\nAuf einem Bein stehen und einem Partner einen Ball zuwerfen.' },
-          { text: '**Im Sitzen**\nAuf dem Pezziball oder im Rollstuhl sitzen, Füße hoch, Arme zur Seite. 20 Sekunden.' }, { text: '**Profi**\nAuf der Bank balancieren und dabei eine halbe Drehung machen.' },
+          { text: '**Im Sitzen**\nAuf dem Pezziball oder im Rollstuhl sitzen, Bremsen fest. Füße hoch, wenn es geht, Arme zur Seite. 20 Sekunden.' }, { text: '**Profi**\nAuf der Bank balancieren und dabei eine halbe Drehung machen.' },
         ] },
       { art: 'tabelle', auftrag: 'Mein Balance-Protokoll: Miss deine Zeit am Anfang und nach zwei Wochen Training.', stufe: 1, kopf: ['Übung', 'Zeit am Anfang', 'Zeit nach 2 Wochen'], breiten: [44, 28, 28], zeilen: [['auf einem Bein (Augen offen)', '', ''], ['auf einem Bein (Augen zu)', '', ''], ['Standwaage', '', ''], ['Wackelkissen', '', '']] },
     ],
@@ -179,7 +179,7 @@ export const LEKTIONEN = [
         { icon: 'arrow-up', text: '**Aufstehen:** Zieh die Knie an, greif nach vorn und steh ohne Hände auf.' },
       ],
       danach: ['Rollen nur auf der **Matte** und nur, wenn die Lehrperson es erlaubt. Leichter geht es auf einer **schrägen Matte**: Man rollt bergab. Wer Probleme mit Nacken oder Rücken hat, sagt es vorher – dann gibt es eine andere Übung.'],
-      woerter: [['die Rolle', 'la roulade'], ['die Hocke', 'l’accroupi'], ['schulterbreit', 'à largeur d’épaules'], ['das Kinn', 'le menton'], ['der Nacken', 'la nuque'], ['rund', 'rond'], ['abstoßen', 'pousser'], ['schräg', 'incliné']],
+      woerter: [['die Rolle', 'la roulade'], ['die Hocke', 'la position accroupie'], ['schulterbreit', 'à largeur d’épaules'], ['das Kinn', 'le menton'], ['der Nacken', 'la nuque'], ['rund', 'rond'], ['abstoßen', 'pousser'], ['schräg', 'incliné']],
       aufgaben: [
         { art: 'beschriften', auftrag: 'Was passiert in jeder Phase? Schreibe kurz.', stufe: 1, html: '<div class="voll">' + rolleVorwaerts() + '</div>', liste: [['1', 'Hocke, Arme nach vorn'], ['2', 'Hände schulterbreit auf die Matte, Kinn auf die Brust, Po hoch'], ['3', 'über den runden Rücken rollen'], ['4', 'Knie anziehen, ohne Hände aufstehen']], spalten: 1 },
       ],
@@ -225,7 +225,7 @@ export const LEKTIONEN = [
   // ================================================================ 4
   {
     thema: 'Springen und Landen', titel: 'Abheben – und sicher landen', untertitel: 'Jeder Sprung hat vier Phasen. Am wichtigsten für die Sicherheit ist die Landung. Du lernst, wie man weich landet, und springst vom Minitrampolin oder von der Bank.',
-    ziel: { de: 'Ich kenne die Phasen eines Sprungs und lande sicher.', fr: 'Je connais les phases d’un saut et je me réceptionne en sécurité.' },
+    ziel: { de: 'Ich kenne die Phasen eines Sprungs und lande sicher.', fr: 'Je connais les phases d’un saut et je me réceptionne en toute sécurité.' },
     bild: ['tom:froh:stehen-zeigen', 'chloe:aufgeregt:gehen'],
     start: {
       was: 'Probier mal!',
@@ -238,12 +238,12 @@ export const LEKTIONEN = [
       quelle: 'Sportwissen', titel: 'Die vier Phasen eines Sprungs',
       absaetze: [
         '**Anlauf:** Man läuft schnell, aber kontrolliert auf das Sprunggerät zu. Die letzten Schritte werden kürzer.',
-        '**Absprung:** Man springt mit **beiden Beinen** gleichzeitig ab, zum Beispiel vom Minitrampolin oder vom Sprungbrett. Die Arme schwingen kräftig nach oben.',
+        '**Absprung:** Beim Turnen springt man mit **beiden Beinen** gleichzeitig ab, zum Beispiel vom Minitrampolin oder vom Sprungbrett. Die Arme schwingen kräftig nach oben.',
         '**Flug:** In der Luft macht man eine Figur: Strecksprung (ganz gerade), Hocksprung (Knie an die Brust) oder Grätschsprung (Beine auseinander). Der Körper ist **fest**, Bauch angespannt.',
         '**Landung:** Man landet auf beiden **Fußballen**, die **Knie beugen** sich wie Federn, die Arme gehen nach vorn. Dann steht man still – „Landung stehen“ – und zeigt mit den Armen: Fertig!',
-        'Eine gute Landung schützt **Knie** und **Rücken**. Wer mit geraden Beinen landet, bekommt einen harten Stoß. Darum übt man die Landung auch allein, ohne Sprung – zum Beispiel von einer Bank.',
+        'Eine gute Landung schützt **Knie** und **Rücken**. Wer mit geraden Beinen landet, bekommt einen harten Stoß. Darum übt man die Landung auch einzeln, ohne Anlauf – zum Beispiel mit einem Sprung von einer Bank. Am **Minitrampolin** steht immer eine Person zum **Sichern** neben der Landestelle.',
       ],
-      woerter: [['der Sprung', 'le saut'], ['der Anlauf', 'l’élan'], ['der Absprung', 'l’appel'], ['der Flug', 'la phase aérienne'], ['die Landung', 'la réception'], ['der Fußballen', 'la plante avant du pied'], ['beugen', 'fléchir'], ['das Minitrampolin', 'le mini-trampoline']],
+      woerter: [['der Sprung', 'le saut'], ['der Anlauf', 'l’élan'], ['der Absprung', 'l’appel'], ['der Flug', 'la phase aérienne'], ['die Landung', 'la réception'], ['der Fußballen', 'l’avant-pied'], ['beugen', 'fléchir'], ['das Minitrampolin', 'le mini-trampoline']],
       aufgaben: [
         { art: 'ordnen', auftrag: 'Ordne die Phasen eines Sprungs.', stufe: 1, teile: ['Anlauf', 'Absprung', 'Flug', 'Landung'], ordnung: [2, 0, 3, 1] },
         { art: 'zuordnen', auftrag: 'Welcher Sprung ist das? Verbinde.', stufe: 1, links: ['Der Körper ist ganz gerade.', 'Die Knie gehen an die Brust.', 'Die Beine gehen auseinander.'], rechts: ['Strecksprung', 'Hocksprung', 'Grätschsprung'] },
@@ -283,14 +283,14 @@ export const LEKTIONEN = [
     schreiben: [
       { art: 'schreiben', auftrag: 'Mein Sport-Tagebuch: Welcher Sprung hat dir am meisten Spaß gemacht? Wie war deine Landung?', stufe: 1,
         anfaenge: ['Am meisten Spaß gemacht hat …', 'Meine Landung …', 'Nächstes Mal …'], zeilen: 5,
-        beispiel: 'Am meisten Spaß gemacht hat der Grätschsprung, weil man sich in der Luft ganz groß macht. Meine Landung war beim dritten Mal gestanden. Nächstes Mal möchte ich den Hocksprung höher springen.' },
+        beispiel: 'Am meisten Spaß gemacht hat der Grätschsprung, weil man sich in der Luft ganz groß macht. Beim dritten Mal habe ich die Landung gestanden. Nächstes Mal möchte ich den Hocksprung höher springen.' },
     ],
     check: ['Ich kenne die vier Phasen eines Sprungs.', 'Ich lande sicher auf beiden Fußballen.', 'Ich beobachte und gebe Rückmeldung.'],
   },
   // ================================================================ 5
   {
     thema: 'Partner-Akrobatik', titel: 'Zusammen sind wir stark', untertitel: 'Bei der Akrobatik bauen mehrere Personen zusammen Figuren. Das geht nur mit Vertrauen, klaren Kommandos und sicheren Regeln. Du lernst die Regeln und baust Figuren mit Figurenkarten.',
-    ziel: { de: 'Ich baue mit anderen sichere Akrobatik-Figuren.', fr: 'Je construis avec d’autres des figures acrobatiques en sécurité.' },
+    ziel: { de: 'Ich baue mit anderen sichere Akrobatik-Figuren.', fr: 'Je construis avec d’autres des figures acrobatiques en toute sécurité.' },
     bild: ['amira:froh:stehen-zeigen', 'nele:froh:rollstuhl'],
     start: {
       was: 'Was meinst du?',
@@ -322,7 +322,7 @@ export const LEKTIONEN = [
         ['Amira', 'Wir bauen die Figur „Brücke mit Mitte“. Yusuf und ich sind unten im Tisch, Mia kniet oben, und Nele ist in der Mitte vor uns.'],
         ['Yusuf', 'Tisch steht. Hände unter den Schultern, Bauch fest.'],
         ['Amira', 'Mia, Knie nur auf unsere Hüften, Hände auf unsere Schultern. Achtung – und – hopp!'],
-        ['Mia', 'Ich bin oben. Alles stabil.'],
+        ['Mia', 'Ich bin oben. Alles stabil. Jetzt nehme ich die Hände hoch.'],
         ['Nele', 'Und ich strecke die Arme hoch und halte Mias Hände. So steht sie noch sicherer.'],
         ['Amira', 'Super. Drei Sekunden halten: eins – zwei – drei!'],
         ['Yusuf', 'Ah, mein Arm zittert!'],
@@ -382,15 +382,15 @@ export const LEKTIONEN = [
         { icon: 'repeat', text: '**Üben:** Übt die Folge mindestens fünfmal. Helfer sichern dort, wo es nötig ist.' },
       ],
       danach: ['Bei der Präsentation achtet die Jury auf: **Sicherheit**, **saubere** Bewegungen, gute **Verbindungen**, **gemeinsam** im Takt und **Ausdruck**. Es zählt nicht, wer am höchsten springt – sondern wie gut ihr zusammen eine schöne Folge zeigt.'],
-      woerter: [['die Kür', 'l’enchaînement libre'], ['das Element', 'l’élément'], ['verbinden', 'enchaîner'], ['die Pose', 'la pose'], ['gleichzeitig', 'en même temps'], ['der Takt', 'le rythme'], ['die Jury', 'le jury'], ['der Ausdruck', 'l’expression']],
+      woerter: [['die Kür', 'l’enchaînement libre'], ['das Element', 'l’élément'], ['verbinden', 'enchaîner'], ['die Pose', 'la pose'], ['gleichzeitig', 'en même temps'], ['der Takt', 'la mesure'], ['die Jury', 'le jury'], ['der Ausdruck', 'l’expression']],
       aufgaben: [
         { art: 'fragen', auftrag: 'Antworte mit der Anleitung.', stufe: 1, fragen: [{ f: 'Wie viele Elemente soll die Kür haben?', l: 'fünf bis sechs' }, { f: 'Womit beginnt und endet die Kür?', l: 'mit einer festen Pose, die alle gleichzeitig zeigen' }, { f: 'Worauf achtet die Jury? Nenne drei Punkte.', zeilen: 2, l: 'Sicherheit, saubere Bewegungen, Verbindungen, gemeinsam im Takt, Ausdruck' }] },
       ],
     },
     hoeren: {
       was: 'Eine Jury-Rückmeldung', wo: 'Sporthalle · Präsentation', titel: 'Die Jury sagt …',
-      situation: 'Die Gruppe von Mia und Tom hat ihre Kür gezeigt. Zwei Mitschüler sind die Jury.',
-      bild: ['mia:froh:tanzen', 'tom:froh:stehen-zeigen'], sprecher: { Lea: 'w3', Ben: 'm2', Mia: 'w1' },
+      situation: 'Die Gruppe von Mia und Tom hat ihre Kür gezeigt. Lea und Ben sind die Jury.',
+      bild: ['mia:froh:tanzen', 'tom:froh:stehen-zeigen'], sprecher: { Lea: 'w2', Ben: 'm2', Mia: 'w3' },
       text: [
         ['Lea', 'Wir sind die Jury. Zuerst: Das war richtig schön! Der Anfang war super, alle standen gleichzeitig in der Pose.'],
         ['Ben', 'Die Rollen waren sauber, und die Akrobatik-Figur war stabil. Ihr habt sie drei Sekunden gehalten und kontrolliert abgebaut.'],
@@ -414,7 +414,7 @@ export const LEKTIONEN = [
       ],
     },
     ueben: [
-      { art: 'tabelle', auftrag: 'Unsere Kür-Karte: Tragt eure Elemente in der richtigen Reihenfolge ein.', stufe: 2, kopf: ['Nr.', 'Element', 'Wer?', 'Takte'], breiten: [10, 46, 28, 16], zeilen: [['1', 'Anfangspose', '', ''], ['2', '', '', ''], ['3', '', '', ''], ['4', '', '', ''], ['5', '', '', ''], ['6', 'Schlusspose', '', '']] },
+      { art: 'tabelle', auftrag: 'Unsere Kür-Karte: Tragt eure Elemente in der richtigen Reihenfolge ein.', stufe: 2, kopf: ['Nr.', 'Element', 'Wer?', 'Schläge'], breiten: [10, 46, 28, 16], zeilen: [['1', 'Anfangspose', '', ''], ['2', '', '', ''], ['3', '', '', ''], ['4', '', '', ''], ['5', '', '', ''], ['6', 'Schlusspose', '', '']] },
       { art: 'tabelle', auftrag: 'Jury-Bogen: Bewertet eine andere Gruppe mit 1 bis 3 Sternen.', stufe: 2, kopf: ['Kriterium', '★', '★★', '★★★'], breiten: [46, 18, 18, 18], zeilen: [['Sicherheit', '', '', ''], ['saubere Bewegungen', '', '', ''], ['Verbindungen', '', '', ''], ['gemeinsam im Takt', '', '', ''], ['Ausdruck', '', '', '']] },
     ],
     schreiben: [

@@ -32,7 +32,7 @@ export const LEKTIONEN = [
   // ================================================================ 1
   {
     thema: 'Rhythmus und Takt', titel: 'Im Takt', untertitel: 'Jede Musik hat einen Puls – den Beat. Du lernst, wie Tänzerinnen und Tänzer zählen, misst das Tempo eines Liedes und erfindest eine eigene Body-Percussion.',
-    ziel: { de: 'Ich höre den Beat, zähle im Takt und klatsche einen Rhythmus.', fr: 'J’entends le rythme, je compte la mesure et je frappe un rythme.' },
+    ziel: { de: 'Ich höre den Beat, zähle im Takt und klatsche einen Rhythmus.', fr: 'J’entends la pulsation, je compte les temps et je frappe un rythme.' },
     bild: ['mia:froh:tanzen', 'lehrerin:froh:erklaeren'],
     start: {
       was: 'Rate mal!',
@@ -55,7 +55,7 @@ export const LEKTIONEN = [
       ],
       woerter: [['der Beat', 'le temps, le beat'], ['der Takt', 'la mesure'], ['das Tempo', 'le tempo'], ['gleichmäßig', 'régulier'], ['klatschen', 'frapper dans les mains'], ['stampfen', 'taper du pied'], ['schnipsen', 'claquer des doigts'], ['der Rhythmus', 'le rythme']],
       aufgaben: [
-        { art: 'rf', auftrag: 'Richtig oder falsch?', stufe: 1, saetze: [['Tänzer zählen meistens von 1 bis 8.', true], ['Eine neue Bewegung beginnt meistens auf der Fünf.', false], ['Ein schnelles Tanzlied hat etwa 120 Schläge pro Minute.', true], ['Um das Tempo zu messen, zählt man 15 Sekunden und nimmt die Zahl mal 4.', true], ['Für Body-Percussion braucht man eine Trommel.', false]] },
+        { art: 'rf', auftrag: 'Richtig oder falsch?', stufe: 1, saetze: [['Tänzerinnen und Tänzer zählen meistens von 1 bis 8.', true], ['Eine neue Bewegung beginnt meistens auf der Fünf.', false], ['Ein schnelles Tanzlied hat etwa 120 Schläge pro Minute.', true], ['Um das Tempo zu messen, zählt man 15 Sekunden und nimmt die Zahl mal 4.', true], ['Für Body-Percussion braucht man eine Trommel.', false]] },
       ],
     },
     hoeren: {
@@ -70,7 +70,7 @@ export const LEKTIONEN = [
         ['Frau Diallo', 'Auf fünf und sechs: mit beiden Händen auf die Oberschenkel patschen.'],
         ['Frau Diallo', 'Auf sieben: schnipsen. Und auf acht wieder Pause.'],
         ['Mia', 'Also: klatsch, klatsch, stampf, Pause, patsch, patsch, schnips, Pause?'],
-        ['Frau Diallo', 'Genau, Mia. Wer im Rollstuhl sitzt, klopft statt zu stampfen einmal auf die Armlehne. Das klingt auch gut.'],
+        ['Frau Diallo', 'Genau, Mia. Wer im Rollstuhl sitzt, klopft statt zu stampfen einmal auf das Rad oder die Armlehne. Das klingt auch gut.'],
         ['Frau Diallo', 'Wir beginnen ganz langsam, danach wird es schneller. Fünf, sechs, sieben, acht – und los!'],
       ],
       vor: [{ art: 'mc', auftrag: 'Was heißt „patschen“? Kreuze an.', stufe: 1, fragen: [{ f: '', o: ['mit der flachen Hand auf etwas schlagen', 'mit beiden Füßen springen'], r: 0 }] }],
@@ -123,7 +123,7 @@ export const LEKTIONEN = [
         '**1** rechtes Knie hochziehen, **2** abstellen, **3** linkes Knie hoch, **4** abstellen. Die Arme schwingen mit.',
         'Im Rollstuhl tanzt man die Schritte mit **Armen und Rollen**: beim V-Step zum Beispiel die Arme schräg nach vorn strecken und zurückholen.',
       ],
-      woerter: [['der Schritt', 'le pas'], ['zur Seite', 'sur le côté'], ['antippen', 'toucher légèrement du pied'], ['schräg', 'en biais'], ['kreuzen', 'croiser'], ['hinter', 'derrière'], ['das Knie', 'le genou'], ['mitschwingen', 'balancer avec'],
+      woerter: [['der Schritt', 'le pas'], ['zur Seite', 'sur le côté'], ['antippen', 'toucher légèrement du pied'], ['schräg', 'en biais'], ['kreuzen', 'croiser'], ['hinter', 'derrière'], ['das Knie', 'le genou'], ['mitschwingen', 'se balancer en rythme'],
       ],
       aufgaben: [
         { art: 'beschriften', auftrag: 'Schau dir die Fußspuren an. Welcher Schritt ist A, welcher ist B?', stufe: 2, html: '<div class="voll">' + fussSchritte() + '</div>', liste: [['A', 'V-Step'], ['B', 'Kreuzschritt nach rechts']], spalten: 2 },
@@ -140,14 +140,14 @@ export const LEKTIONEN = [
         ['Lio', 'Und dann?'],
         ['Frau Diallo', 'Dann der Kreuzschritt: einmal nach rechts und einmal nach links.'],
         ['Frau Diallo', 'Zum Schluss: Knie hoch, rechts und links. Und auf acht klatschen wir in die Hände.'],
-        ['Nele', 'Ich mache den V-Step mit den Armen. Und beim Kreuzschritt rolle ich ein Stück zur Seite.'],
+        ['Nele', 'Ich mache den V-Step mit den Armen. Und beim Kreuzschritt drehe ich den Rollstuhl ein Stück nach rechts und nach links.'],
         ['Frau Diallo', 'Perfekt, Nele. Alle dürfen die Schritte so anpassen, dass sie für sie passen. Wichtig ist: im Takt bleiben.'],
         ['Frau Diallo', 'Also alles von vorn. Fünf, sechs, sieben, acht!'],
       ],
       vor: [{ art: 'mc', auftrag: 'Was heißt „anpassen“? Kreuze an.', stufe: 1, fragen: [{ f: '', o: ['etwas so ändern, dass es passt', 'etwas ganz weglassen'], r: 0 }] }],
       beim: [
         { art: 'ordnen', auftrag: 'Hör zu. Bring die Schritte in die richtige Reihenfolge.', stufe: 1, teile: ['Step-Touch', 'V-Step', 'Kreuzschritt', 'Knie hoch und klatschen'], ordnung: [2, 3, 0, 1] },
-        { art: 'fragen', auftrag: 'Hör zu und antworte.', stufe: 1, fragen: [{ f: 'Wie lange dauert jeder Teil?', l: 'einen 8er-Block, also acht Schläge' }, { f: 'Wie tanzt Nele den V-Step und den Kreuzschritt?', zeilen: 2, l: 'den V-Step mit den Armen, beim Kreuzschritt rollt sie zur Seite' }] },
+        { art: 'fragen', auftrag: 'Hör zu und antworte.', stufe: 1, fragen: [{ f: 'Wie lange dauert jeder Teil?', l: 'einen 8er-Block, also acht Schläge' }, { f: 'Wie tanzt Nele den V-Step und den Kreuzschritt?', zeilen: 2, l: 'den V-Step mit den Armen, beim Kreuzschritt dreht sie den Rollstuhl nach rechts und links' }] },
       ],
       nach: [{ art: 'sprechen', auftrag: 'Tanzt die Schrittfolge zu zweit. Eine Person zählt laut, die andere tanzt. Dann wechselt ihr.', stufe: 1, karten: [
         { titel: 'Zählen', text: ['Fünf, sechs, sieben, acht!', 'Und eins, zwei, drei, vier …'] }] }],
@@ -185,13 +185,13 @@ export const LEKTIONEN = [
       quelle: 'Sportwissen (Stand 2026)', titel: 'Vier Tänze, vier Geschichten',
       absaetze: [
         '### Die Springprozession in Echternach',
-        'Jedes Jahr am **Pfingstdienstag** ziehen tausende Menschen tanzend durch die Straßen von **Echternach**. Sie ehren den heiligen **Willibrord**. In Reihen halten sie sich an weißen Tüchern fest und springen zur Musik abwechselnd nach **links und rechts** vorwärts. Seit 2010 gehört die Springprozession zum **Kulturerbe der UNESCO**.',
+        'Jedes Jahr am **Pfingstdienstag** ziehen tausende Menschen tanzend durch **Echternach**. Sie ehren den heiligen **Willibrord**. In Reihen halten sie sich an weißen Tüchern fest und springen zur Musik abwechselnd nach **links und rechts** vorwärts. Seit 2010 gehört die Springprozession zum **immateriellen Kulturerbe der UNESCO**.',
         '### Breaking',
-        '**Breaking**, oft Breakdance genannt, entstand in den Siebzigerjahren in **New York**. Junge Leute tanzten auf der Straße zu Hip-Hop-Musik, mit Drehungen auf dem Boden und eingefrorenen Posen. 2024 war Breaking zum ersten Mal bei den **Olympischen Spielen**.',
+        '**Breaking**, oft Breakdance genannt, entstand in den Siebzigerjahren in **New York**. Junge Leute tanzten auf der Straße zu Hip-Hop-Musik, mit Drehungen am Boden. 2024 war Breaking zum ersten Mal bei den **Olympischen Spielen**.',
         '### Capoeira',
         '**Capoeira** kommt aus **Brasilien**. Sie ist eine Mischung aus Kampfkunst, Tanz und Musik. Entwickelt haben sie Menschen aus Afrika, die nach Brasilien verschleppt und versklavt worden waren. Zwei Personen „spielen“ im Kreis miteinander, ohne sich zu treffen.',
         '### Flamenco',
-        '**Flamenco** stammt aus **Andalusien** im Süden Spaniens. Dazu gehören Gesang, Gitarre, Klatschen und kraftvolles Stampfen. Flamenco zeigt starke Gefühle: Freude, Stolz oder Trauer.',
+        '**Flamenco** stammt aus **Andalusien** im Süden Spaniens. Vor allem die Gitanos, die spanischen Roma, haben ihn geprägt. Dazu gehören Gesang, Gitarre, Klatschen und Stampfen. Er zeigt starke Gefühle wie Stolz oder Trauer.',
       ],
       woerter: [['die Prozession', 'la procession'], ['ehren', 'honorer'], ['das Kulturerbe', 'le patrimoine culturel'], ['entstehen', 'naître, apparaître'], ['die Kampfkunst', 'l’art martial'], ['verschleppt', 'déporté'], ['kraftvoll', 'puissant'], ['die Trauer', 'la tristesse']],
       aufgaben: [
@@ -379,7 +379,7 @@ export const LEKTIONEN = [
     schreiben: [
       { art: 'schreiben', auftrag: 'Mein Sport-Tagebuch: Welches Gefühl konntest du gut zeigen? Wie ging es dir bei den Übungen?', stufe: 2,
         anfaenge: ['Gut zeigen konnte ich …', 'Dafür habe ich …', 'Bei der Spiegel-Übung …'], zeilen: 5,
-        beispiel: 'Gut zeigen konnte ich wütend. Dafür habe ich feste Schritte gemacht und die Fäuste geballt. Bei der Spiegel-Übung musste ich erst lachen, aber dann hat es gut geklappt.' },
+        beispiel: 'Gut zeigen konnte ich Wut. Dafür habe ich feste Schritte gemacht und die Fäuste geballt. Bei der Spiegel-Übung musste ich erst lachen, aber dann hat es gut geklappt.' },
     ],
     check: ['Ich zeige Gefühle mit Tempo, Größe und Spannung.', 'Ich erkenne Gefühle bei anderen.', 'Ich mache bei der Spiegel-Übung mit.'],
   },
@@ -404,7 +404,7 @@ export const LEKTIONEN = [
         '### Fair Rückmeldung geben',
         'Nach dem Auftritt gibt es **Feedback**. Eine gute Regel ist: **zwei Sterne und ein Wunsch**. Zuerst nennt man zwei Dinge, die gut waren. Dann einen Wunsch, was noch besser werden könnte. Man spricht über den **Tanz**, nicht über das Aussehen.',
         '### Filmen nur mit Erlaubnis',
-        'Jeder Mensch hat das **Recht am eigenen Bild**. Du darfst andere nur filmen oder fotografieren und die Aufnahmen nur weitergeben oder posten, wenn alle **einverstanden** sind. In der Schule gibt es dazu feste Regeln. Ein Video im Internet kann man kaum wieder ganz löschen.',
+        'Jeder Mensch hat das **Recht am eigenen Bild**. Du darfst andere nur filmen oder fotografieren, wenn alle **einverstanden** sind. Auch zum Weitergeben oder Posten brauchst du ihr Einverständnis. In der Schule gibt es dazu feste Regeln. Ein Video im Internet kann man kaum wieder ganz löschen.',
       ],
       woerter: [['das Lampenfieber', 'le trac'], ['der Auftritt', 'la représentation'], ['das Publikum', 'le public'], ['weitermachen', 'continuer'], ['die Rückmeldung', 'le retour'], ['der Wunsch', 'le souhait'], ['das Recht am eigenen Bild', 'le droit à l’image'], ['einverstanden', 'd’accord']],
       aufgaben: [

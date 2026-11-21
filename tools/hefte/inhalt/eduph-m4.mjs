@@ -40,7 +40,7 @@ export const LEKTIONEN = [
       absaetze: [
         'Der Mensch hat über **600 Muskeln**. Sie sind über **Sehnen** mit den Knochen verbunden. Wenn ein Muskel sich **zusammenzieht**, wird er kürzer und dicker – und zieht am Knochen. So bewegst du dich.',
         'Ein Muskel kann nur **ziehen**, nicht drücken. Darum arbeiten Muskeln oft als **Paar**: Der **Bizeps** vorn am Oberarm beugt den Arm, der **Trizeps** hinten streckt ihn wieder.',
-        'Wichtige Muskelgruppen sind: die **Brustmuskeln**, die **Bauchmuskeln** und die **Rückenmuskeln** – sie halten den Oberkörper aufrecht. Die **Gesäßmuskeln** und die **Oberschenkelmuskeln** brauchst du zum Gehen, Springen und Treppensteigen. Die **Wadenmuskeln** heben die Ferse.',
+        'Wichtige Muskelgruppen sind die **Brustmuskeln**: Sie brauchst du zum Drücken, zum Beispiel beim Liegestütz. Die **Bauchmuskeln** und die **Rückenmuskeln** halten den Oberkörper aufrecht. Die **Gesäßmuskeln** und die **Oberschenkelmuskeln** brauchst du zum Gehen, Springen und Treppensteigen. Die **Wadenmuskeln** heben die Ferse.',
         'Wenn du Muskeln trainierst, werden sie **kräftiger** und **ausdauernder**. Ein starker Rücken und ein starker Bauch schützen vor Rückenschmerzen. Wichtig: Muskeln wachsen in der **Pause** nach dem Training, nicht während des Trainings.',
       ],
       woerter: [['der Muskel', 'le muscle'], ['die Sehne', 'le tendon'], ['sich zusammenziehen', 'se contracter'], ['beugen', 'fléchir'], ['strecken', 'tendre'], ['der Bauch', 'le ventre'], ['der Rücken', 'le dos'], ['die Wade', 'le mollet']],
@@ -51,7 +51,7 @@ export const LEKTIONEN = [
     hoeren: {
       was: 'Eine Trainer-Ansage', wo: 'Sporthalle', titel: 'Wo brennt es?',
       situation: 'Frau Diallo macht mit der Klasse kurze Übungen. Nach jeder Übung fragt sie: Welchen Muskel spürt ihr? Mach mit!',
-      bild: ['lehrerin:froh:erklaeren', 'ben:froh:stehen-zeigen'], sprecher: { 'Frau Diallo': 'w1', Ben: 'm2' },
+      bild: ['lehrerin:froh:erklaeren', 'ben:froh:stehen-zeigen'], sprecher: { 'Frau Diallo': 'w1', Ben: 'm2', Nele: 'w3' },
       text: [
         ['Frau Diallo', 'Erste Übung: Stellt euch hin und geht zehnmal langsam auf die Zehenspitzen und wieder runter. … Und? Wo spürt ihr es?'],
         ['Ben', 'Hinten am Unterschenkel. In der Wade.'],
@@ -59,8 +59,9 @@ export const LEKTIONEN = [
         ['Ben', 'Vorne an den Oberschenkeln. Und am Po.'],
         ['Frau Diallo', 'Richtig, Oberschenkel und Gesäß. Dritte Übung: Legt euch auf den Rücken, Knie angewinkelt. Hebt den Kopf und die Schultern ein kleines Stück. Halten! … Wo?'],
         ['Ben', 'Im Bauch!'],
-        ['Frau Diallo', 'Die Bauchmuskeln. Wer im Rollstuhl sitzt: Drückt euch mit den Händen an den Rädern ein Stück hoch und lasst euch langsam wieder ab. Nele, wo spürst du das?'],
-        ['Frau Diallo', 'Hinten am Oberarm – der Trizeps. Sehr gut! Jetzt kennt ihr schon fünf Muskelgruppen.'],
+        ['Frau Diallo', 'Die Bauchmuskeln. Wer im Rollstuhl sitzt: Bremsen fest! Drückt euch mit den Händen an den Rädern ein Stück hoch und lasst euch langsam wieder ab. Nele, wo spürst du das?'],
+        ['Nele', 'Hinten am Oberarm.'],
+        ['Frau Diallo', 'Genau, das ist der Trizeps. Sehr gut! Jetzt kennt ihr schon fünf Muskelgruppen.'],
       ],
       vor: [{ art: 'mc', auftrag: 'Was ist eine Kniebeuge? Kreuze an.', stufe: 1, fragen: [{ f: '', o: ['in die Knie gehen, als ob man sich setzt, und wieder aufstehen', 'auf den Knien laufen'], r: 0 }] }],
       beim: [
@@ -101,13 +102,13 @@ export const LEKTIONEN = [
       quelle: 'Trainings-Anleitung', titel: 'Fünf Grundübungen',
       material: ['eine Gymnastikmatte', 'eine Stoppuhr'],
       schritte: [
-        { icon: 'arrow-down', text: '**Kniebeuge:** Füße schulterbreit, Po nach hinten wie zum Hinsetzen, Rücken gerade. Die Knie zeigen in Richtung Zehen. //Leicht:// nur halb tief. //Schwer:// langsam runter, schnell hoch.' },
+        { icon: 'arrow-down', text: '**Kniebeuge:** Füße schulterbreit, Po nach hinten wie zum Hinsetzen, Rücken gerade, Knie Richtung Zehen. //Leicht:// nur halb tief. //Schwer:// langsam runter, schnell hoch.' },
         { icon: 'stretching', text: '**Liegestütz:** Hände unter den Schultern, Körper gerade wie ein Brett. //Leicht:// auf den Knien oder an der Wand. //Schwer:// Füße auf eine Bank.' },
         { icon: 'minus', text: '**Unterarmstütz:** Auf Unterarmen und Zehen, Körper gerade, Bauch fest, Po nicht nach oben. //Leicht:// auf den Knien. //Schwer:// ein Bein anheben.' },
-        { icon: 'walk', text: '**Ausfallschritt:** Großer Schritt nach vorn, das hintere Knie geht Richtung Boden. Oberkörper aufrecht. //Leicht:// an der Wand festhalten.' },
-        { icon: 'arrow-up', text: '**Rückenstrecker:** Auf dem Bauch liegen, Blick zum Boden, Arme und Beine ein kleines Stück anheben. //Leicht:// nur die Arme.' },
+        { icon: 'walk', text: '**Ausfallschritt:** Großer Schritt nach vorn, hinteres Knie Richtung Boden, vorderes Knie über dem Fuß, Oberkörper aufrecht. //Leicht:// an der Wand festhalten. //Schwer:// langsam und tief, ohne Festhalten.' },
+        { icon: 'arrow-up', text: '**Rückenstrecker:** Auf dem Bauch liegen, Blick zum Boden, Arme und Beine ein kleines Stück anheben. //Leicht:// nur die Arme. //Schwer:// Arme und Beine drei Sekunden oben halten.' },
       ],
-      danach: ['**Sauber vor schnell:** Lieber fünf saubere Wiederholungen als zwanzig schlampige. **Atmen** nicht vergessen – nicht die Luft anhalten. Bei **Schmerz** sofort aufhören. Ein leichtes Brennen im Muskel ist normal, ein Stechen im Gelenk nicht.'],
+      danach: ['**Sauber vor schnell:** Lieber fünf saubere Wiederholungen als zwanzig schlampige. **Weiteratmen!** Bei **Schmerz** sofort aufhören: Ein leichtes Brennen im Muskel ist normal, ein Stechen im Gelenk nicht.'],
       woerter: [['die Kniebeuge', 'le squat'], ['der Liegestütz', 'la pompe'], ['der Unterarmstütz', 'la planche'], ['der Ausfallschritt', 'la fente'], ['die Wiederholung', 'la répétition'], ['die Variante', 'la variante'], ['atmen', 'respirer'], ['der Schmerz', 'la douleur']],
       aufgaben: [
         { art: 'zuordnen', auftrag: 'Welcher Fehler – welche Korrektur? Verbinde.', stufe: 2, links: ['Beim Unterarmstütz ist der Po ganz oben.', 'Bei der Kniebeuge ist der Rücken rund.', 'Beim Liegestütz hängt der Bauch durch.', 'Man hält beim Üben die Luft an.'], rechts: ['Po senken, Körper wie ein Brett', 'Brust raus, Rücken gerade', 'Bauch anspannen', 'ruhig weiteratmen'] },
@@ -153,7 +154,7 @@ export const LEKTIONEN = [
   },
   // ================================================================ 3
   {
-    thema: 'Zirkeltraining', titel: 'Station für Station', untertitel: 'Beim Zirkeltraining geht man von Station zu Station. Belastung und Pause wechseln sich ab. Du lernst, wie ein Zirkel funktioniert, machst bei einer Ansage mit und baut einen Zirkel mit Stationskarten auf.',
+    thema: 'Zirkeltraining', titel: 'Station für Station', untertitel: 'Beim Zirkeltraining geht man von Station zu Station. Belastung und Pause wechseln sich ab. Du lernst, wie ein Zirkel funktioniert, machst bei einer Ansage mit und baust einen Zirkel mit Stationskarten auf.',
     ziel: { de: 'Ich mache ein Zirkeltraining und protokolliere meine Leistung.', fr: 'Je fais un circuit training et je note mes performances.' },
     bild: ['yusuf:froh:gehen', 'nele:froh:rollstuhl'],
     start: {
@@ -173,7 +174,7 @@ export const LEKTIONEN = [
       ],
       woerter: [['das Zirkeltraining', 'le circuit training'], ['die Station', 'l’atelier, le poste'], ['die Belastung', 'l’effort'], ['die Pause', 'la pause'], ['gleichzeitig', 'en même temps'], ['abwechseln', 'alterner'], ['sich erholen', 'récupérer'], ['die Runde', 'le tour']],
       aufgaben: [
-        { art: 'rechnen', auftrag: 'Rechne die Zeit aus.', stufe: 2, spalten: 2, items: [{ a: '8 Stationen, je 30 s Belastung und 30 s Pause. Wie lange dauert eine Runde?', l: '8 × 60 s = 480 s = 8 Minuten' }, { a: 'Dazu 3 Minuten Pause und eine zweite Runde. Wie lange insgesamt?', l: '8 + 3 + 8 = 19 Minuten' }, { a: '6 Stationen, je 40 s Belastung und 20 s Pause. Eine Runde?', l: '6 Minuten' }, { a: 'Wie viele Sekunden arbeitet man bei 6 Stationen à 40 s?', l: '240 s = 4 Minuten' }] },
+        { art: 'rechnen', auftrag: 'Rechne die Zeit aus.', stufe: 2, spalten: 2, items: [{ a: '8 Stationen, je 30 s Belastung und 30 s Pause. Wie lange dauert eine Runde?', l: '8 × 60 s = 480 s = 8 Minuten' }, { a: 'Dazu 3 Minuten Pause und eine zweite Runde. Wie lange insgesamt?', l: '8 + 3 + 8 = 19 Minuten' }, { a: '6 Stationen, je 40 s Belastung und 20 s Pause. Eine Runde?', l: '6 Minuten' }, { a: 'Wie viele Sekunden arbeitet man bei 6 Stationen mit je 40 s?', l: '240 s = 4 Minuten' }] },
       ],
     },
     hoeren: {
@@ -187,7 +188,7 @@ export const LEKTIONEN = [
         ['Frau Diallo', 'Achtung … los! Station zwei: Wer an den Liegestützen ist, darf an die Wand. Nele, an deiner Station drückst du das Theraband nach vorn.'],
         ['Frau Diallo', 'Noch zehn Sekunden … Stopp! Wechsel!'],
         ['Frau Diallo', 'Achtung … los! Hampelmann-Station: locker springen, Arme hoch. … Wer Seitenstechen hat, macht langsamer. … Stopp! Wechsel!'],
-        ['Frau Diallo', 'Super, ihr seid bei der Hälfte. Atmet tief. Achtung … los!'],
+        ['Frau Diallo', 'Super, weiter so! Atmet tief. Achtung … los!'],
       ],
       vor: [{ art: 'mc', auftrag: 'Was heißt „im Uhrzeigersinn“? Kreuze an.', stufe: 1, fragen: [{ f: '', o: ['in die Richtung, in die sich die Zeiger einer Uhr drehen', 'rückwärts'], r: 0 }] }],
       beim: [

@@ -25,7 +25,7 @@ export const LEKTIONEN = [
   // ================================================================ 1
   {
     thema: 'Fangen und Passen', titel: 'Sicher fangen, genau passen', untertitel: 'Jedes Ballspiel beginnt mit Fangen und Passen. Du lernst drei Pässe, wie man sicher fängt, und übst mit einer Trainer-Ansage zu zweit.',
-    ziel: { de: 'Ich fange sicher und spiele drei verschiedene Pässe.', fr: 'J’attrape la balle en sécurité et je fais trois passes différentes.' },
+    ziel: { de: 'Ich fange sicher und spiele drei verschiedene Pässe.', fr: 'J’attrape le ballon de façon sûre et je fais trois passes différentes.' },
     bild: ['lehrerin:froh:erklaeren', 'sami:froh:stehen'],
     start: {
       was: 'Was meinst du?',
@@ -79,7 +79,7 @@ export const LEKTIONEN = [
     ueben: [
       { art: 'schneidekarten', auftrag: 'Pass-Stationen: Schneidet die Karten aus und legt sie an vier Stationen. Jedes Paar übt drei Minuten pro Station.', stufe: 1, neueSeite: true, titel: 'Station', icon: 'ball-basketball', farbe: BALL, spalten: 2,
         karten: [
-          { text: '**Station 1 · Zielpass**\nPasst den Ball durch einen Reifen, den ein Dritter hält. Wer schafft 5 Treffer?' }, { text: '**Station 2 · Wandpass**\nSpiel Brustpässe an die Wand und fang den Ball wieder. 20-mal ohne Fehler?' },
+          { text: '**Station 1 · Zielpass**\nHängt einen Reifen an die Sprossenwand und passt abwechselnd hindurch. Wer schafft 5 Treffer?' }, { text: '**Station 2 · Wandpass**\nSpiel Brustpässe an die Wand und fang den Ball wieder. 20-mal ohne Fehler?' },
           { text: '**Station 3 · Bodenpass-Tor**\nZwei Hütchen sind das Tor. Spielt Bodenpässe hindurch.' }, { text: '**Station 4 · Pass im Gehen**\nGeht nebeneinander durch die Halle und passt euch den Ball zu.' },
         ] },
     ],
@@ -93,7 +93,7 @@ export const LEKTIONEN = [
   // ================================================================ 2
   {
     thema: 'Dribbeln', titel: 'Der Ball gehorcht mir', untertitel: 'Beim Basketball darfst du mit dem Ball nur laufen, wenn du dribbelst. Du lernst, wie man den Ball sicher prellt – mit beiden Händen und ohne hinzuschauen – und übst im Parcours.',
-    ziel: { de: 'Ich dribble sicher mit beiden Händen und schaue dabei hoch.', fr: 'Je dribble en sécurité des deux mains en levant les yeux.' },
+    ziel: { de: 'Ich dribble sicher mit beiden Händen und schaue dabei hoch.', fr: 'Je dribble de façon sûre des deux mains en levant les yeux.' },
     bild: ['yusuf:froh:stehen-zeigen', 'lehrerin:froh:zeigen'],
     start: {
       was: 'Probier mal!',
@@ -115,7 +115,7 @@ export const LEKTIONEN = [
       danach: ['Wichtig im Basketball: Wenn du aufhörst zu dribbeln und den Ball fängst, darfst du **nicht noch einmal** losdribbeln. Das heißt **Doppeldribbling**. Dann musst du passen oder werfen.'],
       woerter: [['dribbeln', 'dribbler'], ['prellen', 'faire rebondir'], ['die Fingerkuppe', 'le bout des doigts'], ['die Hüfte', 'la hanche'], ['gebeugt', 'fléchi'], ['stolpern', 'trébucher'], ['der Parcours', 'le parcours'], ['das Doppeldribbling', 'la reprise de dribble']],
       aufgaben: [
-        { art: 'rf', auftrag: 'Richtig oder falsch?', stufe: 1, saetze: [['Man dribbelt mit den Fingern, nicht mit der flachen Hand.', true], ['Der Ball soll bis zum Kopf springen.', false], ['Beim Dribbeln schaut man immer auf den Ball.', false], ['Nach dem Fangen darf man nicht wieder dribbeln.', true]] },
+        { art: 'rf', auftrag: 'Richtig oder falsch?', stufe: 1, saetze: [['Man dribbelt mit den Fingern, nicht mit der flachen Hand.', true], ['Der Ball soll bis zum Kopf springen.', false], ['Beim Dribbeln schaut man immer auf den Ball.', false], ['Wer mit dem Dribbeln aufgehört hat, darf nicht wieder losdribbeln.', true]] },
       ],
     },
     hoeren: {
@@ -143,7 +143,7 @@ export const LEKTIONEN = [
     regel: {
       reihen: [
         [{ titel: 'Dribbeln', punkte: ['mit den **Fingern** drücken', 'bis zur **Hüfte**, Knie gebeugt', '**neben** dem Körper', '**Blick hoch**', '**beide** Hände üben'] },
-         { titel: 'Regel', punkte: ['Laufen mit Ball nur mit **Dribbeln**', 'Ball gefangen: **nicht** wieder dribbeln (**Doppeldribbling**)', 'dann **passen** oder **werfen**'] }],
+         { titel: 'Regel', punkte: ['Laufen mit Ball nur mit **Dribbeln**', 'Dribbeln beendet: **nicht** wieder dribbeln (**Doppeldribbling**)', 'dann **passen** oder **werfen**'] }],
       ],
     },
     ueben: [
@@ -151,7 +151,7 @@ export const LEKTIONEN = [
         karten: [
           { text: '**Stufe 1**\nIm Stehen 20-mal rechts, 20-mal links prellen.' }, { text: '**Stufe 2**\nIm Gehen durch die Halle dribbeln, Blick nach vorn.' },
           { text: '**Stufe 3**\nSlalom um 5 Hütchen, beim Hütchen die Hand wechseln.' }, { text: '**Stufe 4**\nDribbeln und dabei die Zahl rufen, die der Partner mit den Fingern zeigt.' },
-          { text: '**Stufe 5**\nZwei Bälle gleichzeitig prellen.' }, { text: '**Stufe 6**\nDribbel-Fangen: Wer dribbelt, darf nicht gefangen werden.' },
+          { text: '**Stufe 5**\nZwei Bälle gleichzeitig prellen.' }, { text: '**Stufe 6**\nDribbel-Fangen: Alle dribbeln. Eine Person fängt und dribbelt auch. Wer abgeschlagen wird oder den Ball verliert, fängt als Nächstes.' },
         ] },
     ],
     schreiben: [
@@ -201,7 +201,7 @@ export const LEKTIONEN = [
         ['Chloé', 'Pfiff! Foul von Sami. Er hat Ben beim Wurf am Arm festgehalten. Ben, du bekommst zwei Freiwürfe.'],
         ['Ben', 'Na also. Erster Freiwurf … drin! Zweiter … daneben.'],
         ['Chloé', 'Ein Punkt für Rot. Und weiter.'],
-        ['Chloé', 'Pfiff! Ben, Doppeldribbling. Du hast den Ball gefangen und dann wieder gedribbelt.'],
+        ['Chloé', 'Pfiff! Ben, Doppeldribbling. Du hast aufgehört zu dribbeln und dann wieder gedribbelt.'],
         ['Ben', 'Mann, du pfeifst alles!'],
         ['Chloé', 'Ich pfeife nur, was in den Regeln steht. Aber deine Freiwürfe waren gut!'],
       ],
@@ -209,8 +209,8 @@ export const LEKTIONEN = [
       beim: [
         { art: 'tabelle', auftrag: 'Hör zu. Was pfeift Chloé? Warum?', stufe: 1, kopf: ['Pfiff', 'Regel', 'Was ist passiert?'], breiten: [12, 28, 60], zeilen: [['1', '[Schrittfehler]', '[Ben ist mit dem Ball drei Schritte gelaufen, ohne zu dribbeln]'], ['2', '[Foul]', '[Sami hat Ben beim Wurf am Arm festgehalten → 2 Freiwürfe]'], ['3', '[Doppeldribbling]', '[Ben hat den Ball gefangen und wieder gedribbelt]']] },
       ],
-      nach: [{ art: 'sprechen', auftrag: 'Wie fühlt man sich als Schiedsrichter? Was ist schwer, was macht Spaß?', stufe: 2, karten: [
-        { titel: 'Satzanfänge', text: ['Schwer ist …', 'Gut ist …', 'Ein guter Schiedsrichter …'] }] }],
+      nach: [{ art: 'sprechen', auftrag: 'Wie fühlt man sich als Schiedsrichterin oder Schiedsrichter? Was ist schwer, was macht Spaß?', stufe: 2, karten: [
+        { titel: 'Satzanfänge', text: ['Schwer ist …', 'Gut ist …', 'Wer gut pfeift, …'] }] }],
     },
     regel: {
       reihen: [
@@ -225,7 +225,7 @@ export const LEKTIONEN = [
     schreiben: [
       { art: 'schreiben', auftrag: 'Mein Sport-Tagebuch: Erkläre einem jüngeren Kind die drei wichtigsten Basketball-Regeln.', stufe: 2,
         anfaenge: ['Beim Basketball …', 'Erstens …', 'Zweitens …', 'Drittens …'], zeilen: 6,
-        beispiel: 'Beim Basketball willst du den Ball in den Korb werfen. Erstens: Wenn du mit dem Ball laufen willst, musst du dribbeln. Zweitens: Wenn du den Ball fängst, darfst du nicht wieder dribbeln – dann passt du oder wirfst. Drittens: Du darfst niemanden stoßen oder festhalten, sonst ist es ein Foul.' },
+        beispiel: 'Beim Basketball willst du den Ball in den Korb werfen. Erstens: Wenn du mit dem Ball laufen willst, musst du dribbeln. Zweitens: Wenn du mit dem Dribbeln aufhörst und den Ball festhältst, darfst du nicht wieder dribbeln – dann passt du oder wirfst. Drittens: Du darfst niemanden stoßen oder festhalten, sonst ist es ein Foul.' },
     ],
     check: ['Ich kenne die Linien auf dem Basketballfeld.', 'Ich weiß, wie viele Punkte es gibt.', 'Ich erkenne Schrittfehler, Doppeldribbling und Foul.'],
   },
@@ -296,7 +296,7 @@ export const LEKTIONEN = [
   },
   // ================================================================ 5
   {
-    thema: 'Kleine Spiele · Spielregeln lesen', titel: 'Parteiball und Brennball', untertitel: 'Kleine Spiele machen Spaß und trainieren Werfen, Fangen und Laufen. Du liest die Regeln von zwei Spielen, hörst eine Erklärung und spielt sie in der Halle.',
+    thema: 'Kleine Spiele · Spielregeln lesen', titel: 'Parteiball und Brennball', untertitel: 'Kleine Spiele machen Spaß und trainieren Werfen, Fangen und Laufen. Du liest die Regeln von zwei Spielen, hörst eine Erklärung und spielst sie in der Halle.',
     ziel: { de: 'Ich lese Spielregeln, verstehe sie und halte mich daran.', fr: 'Je lis des règles de jeu, je les comprends et je les respecte.' },
     bild: ['mia:froh:gehen', 'noah:froh:stehen'],
     start: {
@@ -333,7 +333,7 @@ export const LEKTIONEN = [
         ['Mia', 'Und was passiert dann?'],
         ['Noah', 'Wer dann zwischen zwei Matten ist, ist verbrannt und muss zurück zum Start. Wer auf einer Matte steht, ist sicher.'],
         ['Mia', 'Dürfen mehrere Leute auf einer Matte stehen?'],
-        ['Noah', 'Ja, so viele draufpassen. Aber nicht drängeln!'],
+        ['Noah', 'Ja, so viele, wie draufpassen. Aber nicht drängeln!'],
         ['Mia', 'Und wann wechseln wir?'],
         ['Noah', 'Nach fünf Minuten. Dann seid ihr dran mit Laufen. Das Team mit den meisten Punkten gewinnt.'],
       ],
@@ -385,7 +385,7 @@ export const LEKTIONEN = [
         { icon: 'refresh', text: '**Testen und verbessern:** Spielt das Spiel fünf Minuten mit der Klasse. Fragt danach: Was war gut? Was war unklar? Ändert die Regeln.' },
       ],
       danach: ['Die besten Spiele haben **einfache** Regeln, die man in einer Minute erklären kann. Und bei ihnen hat jeder eine **Chance**.'],
-      woerter: [['erfinden', 'inventer'], ['das Spiel', 'le jeu'], ['das Material', 'le matériel'], ['das Leibchen', 'le chasuble'], ['erlaubt', 'permis'], ['verboten', 'interdit'], ['testen', 'tester'], ['die Chance', 'la chance']],
+      woerter: [['erfinden', 'inventer'], ['das Spiel', 'le jeu'], ['das Material', 'le matériel'], ['das Leibchen', 'la chasuble'], ['erlaubt', 'permis'], ['verboten', 'interdit'], ['testen', 'tester'], ['die Chance', 'la chance']],
       aufgaben: [
         { art: 'ordnen', auftrag: 'Ordne die Schritte.', stufe: 1, teile: ['Idee und Ziel', 'Feld und Material', 'Regeln', 'Sicherheit und alle dabei', 'Testen und verbessern'], ordnung: [2, 4, 0, 3, 1] },
       ],

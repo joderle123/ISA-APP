@@ -43,7 +43,7 @@ export const LEKTIONEN = [
         '**Ball im Aus:** Geht der Ball über die **Seitenlinie**, gibt es **Einwurf**: mit beiden Händen von hinten über den Kopf, beide Füße bleiben auf dem Boden. Geht der Ball über die **Torlinie** und hat ihn zuletzt die verteidigende Mannschaft berührt, gibt es **Eckstoß**. Sonst gibt es **Abstoß** vom Tor.',
         '**Fouls:** Wer einen Gegner tritt, festhält oder stößt, begeht ein **Foul**. Dann gibt es **Freistoß**. Passiert das Foul im eigenen Strafraum, gibt es **Elfmeter** vom Elfmeterpunkt.',
         '**Karten:** Die **gelbe Karte** ist eine Verwarnung. Die **rote Karte** heißt: vom Platz. Wer im selben Spiel zwei gelbe Karten bekommt, muss auch vom Platz.',
-        '**Abseits:** Wer beim Zuspiel in der gegnerischen Hälfte näher am Tor ist als der Ball und der vorletzte Gegenspieler, steht im **Abseits**. In der eigenen Hälfte gibt es kein Abseits.',
+        '**Abseits:** Du bekommst einen Pass. Genau in diesem Moment bist du in der gegnerischen Hälfte näher am Tor als der Ball und als der vorletzte Gegner. Dann stehst du im **Abseits**. Der vorletzte Gegner ist meist der letzte Verteidiger vor dem Torwart. In der eigenen Hälfte gibt es kein Abseits.',
       ],
       woerter: [['die Mannschaft', 'l’équipe'], ['der Einwurf', 'la touche'], ['der Eckstoß', 'le corner'], ['der Abstoß', 'le coup de pied de but'], ['das Foul', 'la faute'], ['der Freistoß', 'le coup franc'], ['der Elfmeter', 'le penalty'], ['das Abseits', 'le hors-jeu']],
       aufgaben: [
@@ -123,7 +123,7 @@ export const LEKTIONEN = [
       bild: ['lehrerin:froh:erklaeren', 'mia:froh:stehen'], sprecher: { 'Frau Diallo': 'w1', Mia: 'w3', Yusuf: 'm3' },
       text: [
         ['Frau Diallo', 'Ihr spielt zu zweit, ungefähr drei Meter auseinander. Erst nur Pritschen: Hände zum Dreieck, über die Stirn.'],
-        ['Mia', 'Aua, der Ball tut an den Fingern weh.'],
+        ['Mia', 'Aua, der Ball tut an den Händen weh.'],
         ['Frau Diallo', 'Du spielst ihn mit der Handfläche, Mia. Nur die Finger berühren den Ball. Und die Hände sind schon oben, bevor der Ball kommt.'],
         ['Frau Diallo', 'Ziel: zehn Pässe hintereinander, ohne dass der Ball den Boden berührt.'],
         ['Yusuf', 'Wir haben sechs geschafft!'],
@@ -238,8 +238,8 @@ export const LEKTIONEN = [
       absaetze: [
         '**Reden:** Gute Teams sprechen viel miteinander. Kurze Rufe wie **„Meiner!“**, **„Frei!“** oder **„Hinter dir!“** helfen im Spiel. Nach dem Spiel bespricht man, was gut lief.',
         '**Ermutigen:** Nach einem Fehler hilft kein Meckern. Ein **„Weiter!“** oder **„Nächster Ball!“** gibt neuen Mut. Wer ausgelacht wird, spielt danach oft schlechter.',
-        '**Rollen:** In einem Team gibt es verschiedene Aufgaben. Die **Kapitänin** oder der **Kapitän** spricht mit dem Schiedsrichter und motiviert. Andere verteidigen, greifen an oder bauen das Spiel auf. Jede Rolle ist wichtig.',
-        '**Faire Teams:** Wenn immer zwei Kapitäne wählen, bleiben oft dieselben Personen bis zum Schluss übrig. Das tut weh. Fairer ist es, durch **Abzählen**, **Lose** oder durch die Lehrperson einzuteilen, sodass die Teams **gleich stark** sind.',
+        '**Rollen:** In einem Team gibt es verschiedene Aufgaben. Die **Kapitänin** oder der **Kapitän** spricht mit der Schiedsrichterin oder dem Schiedsrichter und motiviert. Andere verteidigen, greifen an oder bauen das Spiel auf. Jede Rolle ist wichtig.',
+        '**Faire Teams:** Wenn immer zwei Kapitäne wählen, bleiben oft dieselben Personen bis zum Schluss übrig. Das tut weh. Fairer ist es, durch **Abzählen** oder **Lose** einzuteilen. Oder die Lehrperson bildet die Teams so, dass sie etwa **gleich stark** sind.',
         '**Alle spielen mit:** Beim **Sitzvolleyball**, einer Sportart der Paralympics, spielen alle am Boden sitzend. So können Menschen mit und ohne Behinderung gut zusammen spielen.',
       ],
       woerter: [['der Kapitän', 'le capitaine'], ['ermutigen', 'encourager'], ['meckern', 'râler'], ['auslachen', 'se moquer de'], ['die Rolle', 'le rôle'], ['verteidigen', 'défendre'], ['angreifen', 'attaquer'], ['gleich stark', 'de même force']],
@@ -307,7 +307,7 @@ export const LEKTIONEN = [
       quelle: 'Fußballregeln (vereinfacht, Stand 2026)', titel: 'Pfiff und Handzeichen',
       absaetze: [
         'Die Schiedsrichterin oder der Schiedsrichter **pfeift** bei einem Fehler und zeigt dann mit einem **Handzeichen**, wie es weitergeht. So verstehen alle die Entscheidung, auch die Zuschauer.',
-        '**Indirekter Freistoß:** Ein Arm zeigt **senkrecht nach oben**. Bevor ein Tor zählt, muss noch eine andere Person den Ball berühren. **Direkter Freistoß:** Der Arm zeigt **schräg in die Richtung**, in die gespielt wird.',
+        '**Indirekter Freistoß:** Ein Arm zeigt **senkrecht nach oben**. Bevor ein Tor zählt, muss noch eine andere Spielerin oder ein anderer Spieler den Ball berühren. **Direkter Freistoß:** Der Arm zeigt **schräg in die Richtung**, in die gespielt wird.',
         '**Vorteil:** Beide Arme werden **nach vorn** gestreckt, ohne Pfiff. Das heißt: Es gab ein Foul, aber das gefoulte Team ist gerade im Vorteil. Also geht das Spiel **weiter**.',
         '**Elfmeter:** Die Hand zeigt auf den **Elfmeterpunkt**. **Karten:** Die gelbe oder rote Karte wird **hoch** über den Kopf gehalten.',
         'Eine gute Schiedsrichterin bleibt **neutral**, entscheidet **schnell und klar** und erklärt ruhig, wenn jemand fragt. Auch Schiedsrichter machen Fehler. **Respekt** gilt trotzdem für alle.',

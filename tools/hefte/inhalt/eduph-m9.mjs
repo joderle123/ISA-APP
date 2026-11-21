@@ -13,7 +13,7 @@ export const MODUL = sachModul('eduph', 9, {
   farbe: '#3b6ea8',
   deckbild: ['lio:froh:stehen-zeigen', 'nele:froh:rollstuhl', 'mia:froh:gehen'],
   blasen: [{ t: 'Probetraining!', x: 8, y: 104 }, { t: 'Nach Norden!', x: 128, y: 92 }, { t: 'Bleib dran!', x: 180, y: 150 }],
-  aussprache: { '(\\d+) : (\\d+) 000': '\\1 zu \\2 tausend', 'PECH-Regel': 'Pech-Regel', 'Maison de l’orientation': 'Mäsong dö lorjangtasjong', '\\bE-Sport\\b': 'I-Sport', '\\bE-Mail\\b': 'I-Mehl' },
+  aussprache: { '(\\d+) : (\\d+)': '\\1 zu \\2', 'PECH-Regel': 'Pech-Regel', 'Maison de l’orientation': 'Mäsong dö lorjangtasjong', '\\bE-Sport\\b': 'I-Sport', '\\bE-Mail\\b': 'I-Mehl' },
   themen: [
     { titel: { de: 'Verein und Sicherheit', fr: 'Club et sécurité' }, icon: 'first-aid-kit', lektionen: 2 },
     { titel: { de: 'Draußen und digital', fr: 'Dehors et numérique' }, icon: 'map', lektionen: 2 },
@@ -61,7 +61,7 @@ export const LEKTIONEN = [
         ['Lio', 'Muss ich etwas mitbringen?'],
         ['Herr Faber', 'Bequeme Sportkleidung und eine Trinkflasche. Kletterschuhe und Gurt leihen wir dir beim ersten Mal.'],
         ['Lio', 'Ich habe noch nie geklettert. Ist das ein Problem?'],
-        ['Herr Faber', 'Überhaupt nicht. Am Anfang zeigen wir dir die Sicherheitsregeln und den Knoten. Ach, und weil du noch nicht achtzehn bist: Bitte bring die Unterschrift einer erziehungsberechtigten Person mit. Das Formular schicke ich dir per E-Mail.'],
+        ['Herr Faber', 'Überhaupt nicht. Am Anfang zeigen wir dir die Sicherheitsregeln und den Knoten. Ach, und weil du noch nicht achtzehn bist: Bitte bring die Unterschrift einer erziehungsberechtigten Person mit. Das Formular findest du auf unserer Internetseite.'],
         ['Lio', 'Alles klar. Dann komme ich nächsten Mittwoch. Vielen Dank!'],
         ['Herr Faber', 'Gern. Bis Mittwoch, Lio!'],
       ],
@@ -110,11 +110,11 @@ export const LEKTIONEN = [
         '**P wie Pause:** Sofort aufhören, nicht weiterspielen. **E wie Eis:** Die Stelle kühlen, aber nie Eis direkt auf die Haut legen. Immer ein Tuch dazwischen und Pausen machen. **C wie Kompression:** Ein leichter Verband drückt sanft und verhindert starkes Anschwellen. **H wie Hochlagern:** Das verletzte Bein oder den Arm höher als das Herz legen.',
         'Kann man den Fuß nicht belasten, ist er sehr dick oder schief, dann muss eine Ärztin oder ein Arzt schauen. Vielleicht ist etwas gebrochen.',
         '### Vorsicht bei Kopfverletzungen',
-        'Nach einem Stoß gegen den Kopf gilt: **sofort aufhören**. Wer danach Kopfschmerzen hat, wem schwindlig oder übel ist, der braucht ärztliche Hilfe. Auch wenn man sich gut fühlt: einer erwachsenen Person Bescheid sagen und an diesem Tag nicht mehr weiterspielen.',
+        'Nach einem Stoß gegen den Kopf gilt: **sofort aufhören**. Hat jemand danach Kopfschmerzen, oder ist ihm schwindlig oder übel? Dann braucht er ärztliche Hilfe. Ist jemand bewusstlos oder verwirrt, oder muss er sich übergeben: sofort die **112** anrufen. Auch wenn man sich gut fühlt: einer erwachsenen Person Bescheid sagen und an diesem Tag nicht mehr weiterspielen.',
         '### Der Notruf 112',
         'Bei schweren Verletzungen wählst du die **112**. Bleib ruhig und beantworte die Fragen: **Wo** ist es passiert? **Was** ist passiert? **Wie viele** Verletzte gibt es? **Welche** Verletzungen? Dann **warten** auf Rückfragen. Leg nicht als Erste oder Erster auf.',
       ],
-      woerter: [['umknicken', 'se tordre (la cheville)'], ['kühlen', 'refroidir'], ['der Verband', 'le bandage'], ['anschwellen', 'gonfler'], ['hochlagern', 'surélever'], ['belasten', 'mettre du poids sur'], ['schwindlig', 'avoir le vertige'], ['der Notruf', 'l’appel d’urgence']],
+      woerter: [['umknicken', 'se tordre (la cheville)'], ['kühlen', 'refroidir'], ['der Verband', 'le bandage'], ['anschwellen', 'gonfler'], ['hochlagern', 'surélever'], ['belasten', 'mettre du poids sur'], ['schwindlig', 'pris de vertige'], ['der Notruf', 'l’appel d’urgence']],
       aufgaben: [
         { art: 'zuordnen', auftrag: 'Was bedeuten die Buchstaben? Verbinde.', stufe: 1, links: ['P', 'E', 'C', 'H'], rechts: ['Pause: sofort aufhören', 'Eis: kühlen, mit einem Tuch dazwischen', 'Kompression: leichter Verband', 'Hochlagern: höher als das Herz'] },
       ],
@@ -149,7 +149,7 @@ export const LEKTIONEN = [
       ],
     },
     ueben: [
-      { art: 'mc', auftrag: 'Was ist richtig? Kreuze an.', stufe: 2, fragen: [{ f: 'Ein Mitspieler stößt mit dem Kopf zusammen. Ihm ist danach schwindlig.', o: ['Er spielt weiter, wenn er will.', 'Er hört auf, und eine erwachsene Person wird geholt.'], r: 1 }, { f: 'Eine Mitspielerin hat sich den Fuß verstaucht.', o: ['Eis direkt auf die Haut legen', 'kühlen mit einem Tuch dazwischen'], r: 1 }, { f: 'Du rufst die 112 an. Wann legst du auf?', o: ['sofort nach dem ersten Satz', 'erst wenn die Zentrale keine Fragen mehr hat'], r: 1 }] },
+      { art: 'mc', auftrag: 'Was ist richtig? Kreuze an.', stufe: 2, fragen: [{ f: 'Ein Mitspieler stößt mit dem Kopf gegen einen Gegner. Ihm ist danach schwindlig.', o: ['Er spielt weiter, wenn er will.', 'Er hört auf, und eine erwachsene Person wird geholt.'], r: 1 }, { f: 'Eine Mitspielerin hat sich den Fuß verstaucht.', o: ['Eis direkt auf die Haut legen', 'kühlen mit einem Tuch dazwischen'], r: 1 }, { f: 'Du rufst die 112 an. Wann legst du auf?', o: ['sofort nach dem ersten Satz', 'erst wenn die Zentrale keine Fragen mehr hat'], r: 1 }] },
       { art: 'tabelle', auftrag: 'Notruf-Karte: Fülle für deine Schule aus. Leg sie in deine Sporttasche.', stufe: 1, kopf: ['', 'Meine Angaben'], breiten: [40, 60], zeilen: [['Notruf', '112'], ['Adresse der Schule', ''], ['Adresse der Sporthalle', ''], ['Wo ist der Erste-Hilfe-Kasten?', ''], ['Wen hole ich zuerst?', '']] },
     ],
     schreiben: [
@@ -197,13 +197,13 @@ export const LEKTIONEN = [
         ['Mia', 'Auf der echten Karte habe ich nachgemessen: Es sind 8 Zentimeter. Der Maßstab ist 1 : 25 000.'],
         ['Sami', 'Also 8 mal 250 Meter. Das sind 2000 Meter, also 2 Kilometer.'],
         ['Mia', 'Hin und zurück sind es 4 Kilometer. Wenn wir etwa 4 Kilometer pro Stunde gehen, brauchen wir eine Stunde – plus Picknick.'],
-        ['Sami', 'Und wir denken an Wasser, Regenjacke und gute Schuhe. Und Nele?'],
-        ['Mia', 'Ich habe geschaut: Der Weg ist breit und flach. Nur an der Brücke gibt es Stufen. Wir fragen den Förster, ob es einen Weg ohne Stufen gibt.'],
+        ['Sami', 'Und wir denken an Wasser, Regenjacke und gute Schuhe. Passt der Weg auch für Nele?'],
+        ['Mia', 'Ich habe es mit Nele angeschaut: Der Weg ist breit und flach. Nur an der Brücke gibt es Stufen. Wir fragen zusammen den Förster, ob es einen Weg ohne Stufen gibt.'],
       ],
       vor: [{ art: 'mc', auftrag: 'Was ist ein Picknick? Kreuze an.', stufe: 1, fragen: [{ f: '', o: ['Man isst draußen mitgebrachtes Essen.', 'Man geht in ein Restaurant.'], r: 0 }] }],
       beim: [
         { art: 'tabelle', auftrag: 'Hör zu und schreib den Tourenplan.', stufe: 2, kopf: ['', 'Unsere Wanderung'], breiten: [30, 70], zeilen: [['Start', '[am Parkplatz im Süden]'], ['Weg', '[nach Norden über die Brücke, dann nach Nordosten]'], ['Ziel', '[Aussichtspunkt, Picknick]'], ['Strecke', '[2 Kilometer, hin und zurück 4 Kilometer]'], ['Zeit', '[etwa eine Stunde plus Picknick]'], ['mitnehmen', '[Wasser, Regenjacke, gute Schuhe]']] },
-        { art: 'fragen', auftrag: 'Was wollen sie wegen Nele klären?', stufe: 2, fragen: [{ f: '', zeilen: 2, l: 'An der Brücke gibt es Stufen. Sie fragen den Förster, ob es einen Weg ohne Stufen gibt.' }] },
+        { art: 'fragen', auftrag: 'Was wollen sie wegen Nele klären?', stufe: 2, fragen: [{ f: '', zeilen: 2, l: 'An der Brücke gibt es Stufen. Sie fragen zusammen mit Nele den Förster, ob es einen Weg ohne Stufen gibt.' }] },
       ],
       nach: [{ art: 'sprechen', auftrag: 'Plant mit der Karte eine andere Route: Wohin geht ihr? Beschreibt den Weg mit Himmelsrichtungen.', stufe: 2, karten: [
         { titel: 'Satzanfänge', text: ['Wir starten bei …', 'Dann gehen wir nach …', 'Unser Ziel ist …'] }] }],
@@ -243,7 +243,7 @@ export const LEKTIONEN = [
         'Beim **E-Sport** treten Spielerinnen und Spieler in Videospielen gegeneinander an, oft in Teams und in großen Turnieren. Ob das ein richtiger **Sport** ist, darüber streiten Fachleute.',
         '**Dafür spricht:** Man braucht schnelle **Reaktionen**, gute **Konzentration** und **Taktik**. Teams trainieren regelmäßig und müssen gut zusammenarbeiten. Es gibt Regeln, Schiedsrichter und Wettkämpfe.',
         '**Dagegen spricht:** Der Körper bewegt sich kaum. Ausdauer, Kraft und Beweglichkeit werden nicht trainiert. Wer viele Stunden sitzt, bekommt oft Rückenschmerzen, müde Augen und schläft schlechter.',
-        '**Tipps für alle, die gern spielen:** Jede Stunde aufstehen und dich bewegen. Ab und zu in die Ferne schauen, um die Augen zu entspannen. Nicht kurz vor dem Schlafen spielen. Und: Profi-Teams im E-Sport machen selbst **Sport**, weil ein fitter Körper auch dem Kopf hilft.',
+        '**Tipps für alle, die gern spielen:** Jede Stunde aufstehen und sich bewegen. Ab und zu in die Ferne schauen, um die Augen zu entspannen. Nicht kurz vor dem Schlafen spielen. Und: Profi-Teams im E-Sport machen selbst **Sport**, weil ein fitter Körper auch dem Kopf hilft.',
       ],
       woerter: [['antreten', 'participer, affronter'], ['die Reaktion', 'la réaction'], ['die Konzentration', 'la concentration'], ['die Taktik', 'la tactique'], ['dafür sprechen', 'être un argument pour'], ['dagegen sprechen', 'être un argument contre'], ['die Ferne', 'le lointain'], ['entspannen', 'détendre']],
       aufgaben: [
@@ -351,7 +351,7 @@ export const LEKTIONEN = [
     },
     ueben: [
       { art: 'tabelle', auftrag: 'Mein Bewegungsplan für eine Woche: Plane Bewegung in deinen Alltag. Kleine Schritte zählen!', stufe: 2, kopf: ['Tag', 'Was?', 'Wie lange?', 'mit wem?'], breiten: [16, 40, 20, 24], zeilen: [['Montag', '', '', ''], ['Dienstag', '', '', ''], ['Mittwoch', '', '', ''], ['Donnerstag', '', '', ''], ['Freitag', '', '', ''], ['Wochenende', '', '', '']] },
-      { art: 'tabelle', auftrag: 'Rückblick: Was hat dir im Sport in diesem Jahr am meisten gebracht? Kreuze an.', stufe: 1, kopf: ['Modul', 'viel', 'etwas', 'wenig'], breiten: [52, 16, 16, 16], zeilen: [['Fit in Bewegung', '', '', ''], ['Ballspiele', '', '', ''], ['Turnen und Balance', '', '', ''], ['Kraft und Fitness', '', '', ''], ['Rückschlagspiele', '', '', ''], ['Tanz und Rhythmus', '', '', ''], ['Mannschaftssport', '', '', ''], ['Leichtathletik', '', '', ''], ['Sport fürs Leben', '', '', '']] },
+      { art: 'tabelle', auftrag: 'Rückblick: Was hat dir im Sport in den letzten drei Jahren am meisten gebracht? Kreuze an.', stufe: 1, kopf: ['Modul', 'viel', 'etwas', 'wenig'], breiten: [52, 16, 16, 16], zeilen: [['Fit in Bewegung', '', '', ''], ['Ballspiele', '', '', ''], ['Turnen und Balance', '', '', ''], ['Kraft und Fitness', '', '', ''], ['Rückschlagspiele', '', '', ''], ['Tanz und Rhythmus', '', '', ''], ['Mannschaftssport', '', '', ''], ['Leichtathletik', '', '', ''], ['Sport fürs Leben', '', '', '']] },
     ],
     schreiben: [
       { art: 'schreiben', auftrag: 'Mein Sport-Tagebuch: Wie soll Bewegung in fünf Jahren in deinem Leben aussehen? Schreib einen Brief an dich selbst.', stufe: 2,

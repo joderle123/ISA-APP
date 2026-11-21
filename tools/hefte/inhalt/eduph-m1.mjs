@@ -25,12 +25,12 @@ export const LEKTIONEN = [
   // ================================================================ 1
   {
     thema: 'Bewegung tut gut', titel: 'Warum bewegen?', untertitel: 'Bewegung ist gut für Herz, Muskeln, Kopf und Laune. Du erfährst, wie viel Bewegung Jugendliche brauchen, und entdeckst, wie viel du dich schon bewegst – oft mehr, als du denkst.',
-    ziel: { de: 'Ich weiß, warum Bewegung wichtig ist und wie viel Bewegung Jugendliche brauchen.', fr: 'Je sais pourquoi bouger est important et combien d’activité les jeunes ont besoin.' },
+    ziel: { de: 'Ich weiß, warum Bewegung wichtig ist und wie viel Bewegung Jugendliche brauchen.', fr: 'Je sais pourquoi bouger est important et de combien d’activité physique les jeunes ont besoin.' },
     bild: ['lio:gelangweilt:zocken', 'mia:froh:stehen-zeigen'],
     start: {
       was: 'Was meinst du?',
       aufgaben: [
-        { art: 'mc', auftrag: 'Was zählt als Bewegung? Kreuze alles an, was du denkst.', stufe: 1, fragen: [{ f: '', o: ['mit dem Rad zur Schule fahren', 'Treppe statt Aufzug', 'tanzen', 'mit dem Hund spazieren gehen', 'im Garten helfen'], r: [0, 1, 2, 3, 4] }] },
+        { art: 'mc', auftrag: 'Was zählt als Bewegung? Kreuze alles an, was deiner Meinung nach dazugehört.', stufe: 1, fragen: [{ f: '', o: ['mit dem Rad zur Schule fahren', 'Treppe statt Aufzug', 'tanzen', 'mit dem Hund spazieren gehen', 'im Garten helfen'], r: [0, 1, 2, 3, 4] }] },
       ],
     },
     lesen: {
@@ -144,7 +144,7 @@ export const LEKTIONEN = [
     ueben: [
       { art: 'schneidekarten', auftrag: 'Aufwärm-Karten: Schneidet die Karten aus. Jede Gruppe zieht aus jedem Teil eine Karte und leitet damit ein Aufwärmen für die Klasse an.', stufe: 2, neueSeite: true, titel: 'Aufwärmen', icon: 'flame', farbe: SPORT, spalten: 2,
         karten: [
-          { text: '**Puls hoch**\nLocker laufen, bei Pfiff Richtung wechseln. 2 Minuten.' }, { text: '**Puls hoch**\nSchattenlaufen: Einer läuft vor, der andere macht alles nach. 2 Minuten.' },
+          { text: '**Puls hoch**\nLocker laufen, bei Pfiff Richtung wechseln. 2 Minuten.' }, { text: '**Puls hoch**\nSchattenlaufen: Eine Person läuft vor, die andere macht alles nach. 2 Minuten.' },
           { text: '**Gelenke**\nArme vorwärts und rückwärts kreisen, je 10-mal.' }, { text: '**Gelenke**\nKnie heben und Fersen zum Po, je 10-mal pro Bein.' },
           { text: '**Gelenke**\nOberkörper drehen, Hüfte kreisen, je 10-mal. (Geht auch im Rollstuhl.)' }, { text: '**Gelenke**\nAuf der Stelle hüpfen, dabei die Arme schwingen. 30 Sekunden.' },
           { text: '**Sportart**\nZu zweit Ball zupassen: Brustpass, Bodenpass. 2 Minuten.' }, { text: '**Sportart**\nDribbeln durch die Halle, bei Pfiff Ball tauschen. 2 Minuten.' },
@@ -165,7 +165,7 @@ export const LEKTIONEN = [
     start: {
       was: 'Fühl mal!',
       aufgaben: [
-        { art: 'fragen', auftrag: 'Leg zwei Finger an deinen Hals, neben den Kehlkopf. Spürst du etwas? Beschreibe es.', stufe: 1, fragen: [{ f: '', zeilen: 2, l: 'Man spürt ein Klopfen – den Puls.' }] },
+        { art: 'fragen', auftrag: 'Leg zwei Finger an deinen Hals, neben den Kehlkopf. Drück nur ganz leicht. Spürst du etwas? Beschreibe es.', stufe: 1, fragen: [{ f: '', zeilen: 2, l: 'Man spürt ein Klopfen – den Puls.' }] },
       ],
     },
     lesen: {
@@ -173,7 +173,7 @@ export const LEKTIONEN = [
       quelle: 'Sportwissen', titel: 'So misst du deinen Puls',
       material: ['eine Uhr mit Sekundenzeiger oder eine Stoppuhr', 'Papier und Stift'],
       schritte: [
-        { icon: 'hand-finger', text: '**Stelle finden:** Lege **Zeige- und Mittelfinger** an die Innenseite des Handgelenks, unter den Daumen. Oder seitlich an den Hals. Nicht mit dem Daumen messen – er hat selbst einen Puls.' },
+        { icon: 'hand-finger', text: '**Stelle finden:** Lege **Zeige- und Mittelfinger** an die Innenseite des Handgelenks, unter den Daumen. Oder seitlich an den Hals – nur leicht drücken und nur auf einer Seite. Nicht mit dem Daumen messen – er hat selbst einen Puls.' },
         { icon: 'clock', text: '**Zählen:** Zähle die Schläge **15 Sekunden** lang.' },
         { icon: 'calculator', text: '**Rechnen:** Nimm die Zahl **mal 4**. Das sind die Schläge pro Minute.' },
         { icon: 'pencil', text: '**Aufschreiben:** Notiere den Wert sofort.' },
@@ -257,14 +257,14 @@ export const LEKTIONEN = [
       bild: ['ben:muede:gehen', 'chloe:froh:gehen'], sprecher: { Ben: 'm2', Chloé: 'w3', 'Frau Diallo': 'w1' },
       text: [
         ['Frau Diallo', 'Achtung, sechs Minuten. Los!'],
-        ['Ben', 'Ich bin vorne! Die erste Runde in fünfzig Sekunden!'],
+        ['Ben', 'Ich bin vorne! Die erste Runde in vierzig Sekunden!'],
         ['Frau Diallo', 'Noch vier Minuten.'],
         ['Ben', 'Ich … kann nicht mehr. Ich muss gehen.'],
         ['Chloé', 'Komm, lauf mit mir. Ganz langsam. Wir können dabei reden.'],
         ['Ben', 'So langsam? Das ist ja fast Gehen.'],
         ['Chloé', 'Genau. Und jetzt siehst du: Ich bin immer noch nicht müde.'],
         ['Frau Diallo', 'Und … Stopp! Zählt eure Runden.'],
-        ['Ben', 'Ich habe fünf Runden. Am Anfang war ich so schnell, und am Ende hat mich Chloé überholt.'],
+        ['Ben', 'Ich habe fünf Runden. Am Anfang war ich so schnell. Dann musste ich trotzdem immer wieder gehen, und Chloé hat mich überholt.'],
         ['Chloé', 'Ich habe sechs. Ich bin jede Runde gleich schnell gelaufen.'],
         ['Frau Diallo', 'Das ist das Geheimnis. Ben, nächstes Mal startest du mit Chloé. Ich wette, du schaffst mehr als fünf.'],
       ],
@@ -328,7 +328,7 @@ export const LEKTIONEN = [
         ['Yusuf', 'Schau mal, ich habe zwei Energy-Drinks dabei. Damit bin ich heute unschlagbar.'],
         ['Amira', 'Zwei? Hast du gelesen, was hinten draufsteht?'],
         ['Yusuf', 'Ähm … „Erhöhter Koffeingehalt. Für Kinder … nicht empfohlen.“ Aber ich bin ja kein Kind mehr.'],
-        ['Amira', 'Beim letzten Turnier hat Lio so einen getrunken. Danach hatte er Herzklopfen und war total zittrig. Er hat kaum einen Korb getroffen.'],
+        ['Amira', 'Das gilt auch für Jugendliche. Beim letzten Turnier hat Lio so einen getrunken. Danach hatte er Herzklopfen und war total zittrig. Er hat kaum einen Korb getroffen.'],
         ['Yusuf', 'Hm. Und was trinkst du?'],
         ['Amira', 'Wasser. Ich habe zwei Flaschen dabei. Und eine Banane für die Pause.'],
         ['Yusuf', 'Langweilig.'],
@@ -337,7 +337,7 @@ export const LEKTIONEN = [
       ],
       vor: [{ art: 'mc', auftrag: 'Was bedeutet „skeptisch“? Kreuze an.', stufe: 1, fragen: [{ f: '', o: ['Man zweifelt, ob etwas gut ist.', 'Man ist sehr begeistert.'], r: 0 }] }],
       beim: [
-        { art: 'rf', auftrag: 'Hör zu. Richtig oder falsch?', stufe: 1, saetze: [['Yusuf hat zwei Energy-Drinks dabei.', true], ['Auf der Dose steht, dass sie für Kinder empfohlen ist.', false], ['Lio hatte nach einem Energy-Drink Herzklopfen.', true], ['Amira trinkt Cola.', false], ['Am Ende trinkt Yusuf Wasser.', true]] },
+        { art: 'rf', auftrag: 'Hör zu. Richtig oder falsch?', stufe: 1, saetze: [['Yusuf hat zwei Energy-Drinks dabei.', true], ['Auf der Dose steht, dass sie für Kinder empfohlen ist.', false], ['Lio hatte nach einem Energy-Drink Herzklopfen.', true], ['Amira trinkt Cola.', false], ['Am Ende möchte Yusuf Wasser trinken.', true]] },
       ],
       nach: [{ art: 'sprechen', auftrag: 'Warum sind Energy-Drinks bei Jugendlichen so beliebt? Was spricht dagegen?', stufe: 3, karten: [
         { titel: 'Satzanfänge', text: ['Viele trinken sie, weil …', 'Dagegen spricht, dass …', 'Ich denke …'] }] }],
@@ -350,7 +350,7 @@ export const LEKTIONEN = [
     },
     ueben: [
       { art: 'tabelle', auftrag: 'Gut für den Sporttag oder nicht? Kreuze an und begründe.', stufe: 2, kopf: ['', 'gut', 'nicht gut', 'warum?'], breiten: [30, 12, 14, 44], zeilen: [['Wasserflasche', '[x]', '', '[löscht Durst, ohne Zucker]'], ['Energy-Drink', '', '[x]', '[viel Koffein und Zucker, Herzklopfen]'], ['Banane in der Pause', '[x]', '', '[leicht, gibt Energie]'], ['große Portion Pommes direkt vor dem Spiel', '', '[x]', '[liegt schwer im Bauch]'], ['ungesüßter Tee', '[x]', '', '[ohne Zucker]']] },
-      { art: 'rechnen', auftrag: 'Rechne.', stufe: 2, spalten: 2, items: [{ a: 'Eine Flasche hat 0,5 Liter. Wie viele Flaschen sind 1,5 Liter?', l: '3 Flaschen' }, { a: 'Beim Turnier trinkt Amira 2 Flaschen à 0,75 Liter. Wie viel ist das?', l: '1,5 Liter' }, { a: 'Ein Glas hat 250 ml. Wie viele Gläser sind 1,5 Liter?', l: '1500 ÷ 250 = 6 Gläser' }, { a: 'Ein Energy-Drink (250 ml) hat 80 mg Koffein. Wie viel Koffein haben zwei Dosen?', l: '160 mg' }] },
+      { art: 'rechnen', auftrag: 'Rechne.', stufe: 2, spalten: 2, items: [{ a: 'Eine Flasche hat 0,5 Liter. Wie viele Flaschen sind 1,5 Liter?', l: '3 Flaschen' }, { a: 'Amira hat 2 Flaschen mit je 0,75 Liter dabei. Wie viel ist das?', l: '1,5 Liter' }, { a: 'Ein Glas hat 250 ml. Wie viele Gläser sind 1,5 Liter?', l: '1500 ÷ 250 = 6 Gläser' }, { a: 'Ein Energy-Drink (250 ml) hat 80 mg Koffein. Wie viel Koffein haben zwei Dosen?', l: '160 mg' }] },
     ],
     schreiben: [
       { art: 'schreiben', auftrag: 'Mein Sport-Tagebuch: Pack deine Sporttasche für einen Turniertag. Was kommt hinein, und warum?', stufe: 1,
@@ -362,7 +362,7 @@ export const LEKTIONEN = [
   // ================================================================ 6
   {
     thema: 'Fairplay', titel: 'Fair geht vor', untertitel: 'Sport macht nur Spaß, wenn alle fair spielen. Du lernst, was Fairplay bedeutet, hörst einen Streit beim Spiel und übst mit Fairplay-Karten, schwierige Situationen gut zu lösen.',
-    ziel: { de: 'Ich spiele fair und löse Konflikte im Spiel ohne Gewalt.', fr: 'Je joue fair-play et je résous les conflits dans le jeu sans violence.' },
+    ziel: { de: 'Ich spiele fair und löse Konflikte im Spiel ohne Gewalt.', fr: 'Je fais preuve de fair-play et je résous les conflits dans le jeu sans violence.' },
     bild: ['finn:wuetend:stehen', 'nele:froh:rollstuhl'],
     start: {
       was: 'Was ist fair?',
@@ -375,7 +375,7 @@ export const LEKTIONEN = [
       quelle: 'Sportwissen', titel: 'Was ist Fairplay?',
       absaetze: [
         '**Fairplay** ist Englisch und heißt „faires Spiel“. Es bedeutet mehr, als nur die **Regeln** einzuhalten.',
-        'Wer fair spielt, **respektiert** die anderen: die eigene Mannschaft, die Gegner und den **Schiedsrichter**. Er gibt **Fehler zu**, zum Beispiel: „Der Ball war im Aus, ich habe ihn zuletzt berührt.“ Er hilft einem Gegner, der hingefallen ist, wieder auf. Er **lacht niemanden aus**.',
+        'Wer fair spielt, **respektiert** die anderen: die eigene Mannschaft, die Gegner und die Schiedsrichterin oder den **Schiedsrichter**. Wer fair spielt, gibt **Fehler zu**, zum Beispiel: „Der Ball war im Aus, ich habe ihn zuletzt berührt.“ Man hilft einem Gegner, der hingefallen ist, wieder auf. Man **lacht niemanden aus**.',
         'Fair ist auch, dass **alle mitspielen** dürfen. Wenn Teams gewählt werden, bleibt niemand bis zum Schluss übrig. Wer weniger gut spielt, bekommt auch den Ball. Und Regeln kann man so anpassen, dass alle mitmachen können – zum Beispiel für jemanden im Rollstuhl.',
         'Nach dem Spiel gibt man sich die **Hand** oder klatscht ab – auch wenn man verloren hat. Gewinnen ist schön. Aber noch wichtiger ist, dass alle **gern wiederkommen**.',
       ],
@@ -391,8 +391,8 @@ export const LEKTIONEN = [
       text: [
         ['Finn', 'Foul! Das war ein Foul! Sami hat mich umgestoßen!'],
         ['Sami', 'Gar nicht! Ich habe den Ball gespielt.'],
-        ['Nele', 'Ich habe es gesehen. Sami hat zuerst den Ball berührt. Kein Foul. Es geht weiter mit Einwurf.'],
-        ['Finn', 'Das ist so unfair! Du bist doch in seiner Klasse!'],
+        ['Nele', 'Ich habe es gesehen. Sami hat nur den Ball gespielt und dich nicht gestoßen. Kein Foul. Es geht weiter.'],
+        ['Finn', 'Das ist so unfair! Du bist doch mit ihm befreundet!'],
         ['Frau Diallo', 'Stopp, alle kurz herkommen. Finn, was ist los?'],
         ['Finn', 'Ich bin hingefallen und das zählt nicht.'],
         ['Frau Diallo', 'Hast du dir wehgetan?'],
@@ -403,7 +403,7 @@ export const LEKTIONEN = [
       ],
       vor: [{ art: 'mc', auftrag: 'Was ist ein Foul? Kreuze an.', stufe: 1, fragen: [{ f: '', o: ['ein Regelverstoß gegen einen Gegenspieler, z. B. Stoßen oder Festhalten', 'ein Tor'], r: 0 }] }],
       beim: [
-        { art: 'fragen', auftrag: 'Hör zu und antworte.', stufe: 1, fragen: [{ f: 'Warum ist Finn wütend?', l: 'Er ist hingefallen und denkt, es war ein Foul.' }, { f: 'Wie entscheidet Nele? Warum?', zeilen: 2, l: 'Kein Foul – Sami hat zuerst den Ball berührt.' }, { f: 'Was sagt Sami zu Finn?', l: 'Tut mir leid, dass du hingefallen bist. Das wollte ich nicht.' }, { f: 'Wie endet der Streit?', zeilen: 2, l: 'Finn akzeptiert die Entscheidung, entschuldigt sich bei Nele, das Spiel geht weiter.' }] },
+        { art: 'fragen', auftrag: 'Hör zu und antworte.', stufe: 1, fragen: [{ f: 'Warum ist Finn wütend?', l: 'Er ist hingefallen und denkt, es war ein Foul.' }, { f: 'Wie entscheidet Nele? Warum?', zeilen: 2, l: 'Kein Foul – Sami hat nur den Ball gespielt und Finn nicht gestoßen.' }, { f: 'Was sagt Sami zu Finn?', l: 'Tut mir leid, dass du hingefallen bist. Das wollte ich nicht.' }, { f: 'Wie endet der Streit?', zeilen: 2, l: 'Finn akzeptiert die Entscheidung, entschuldigt sich bei Nele, das Spiel geht weiter.' }] },
       ],
       nach: [{ art: 'sprechen', auftrag: 'Wie schwer ist es, eine Entscheidung zu akzeptieren, die man unfair findet? Was hilft?', stufe: 3, karten: [
         { titel: 'Satzanfänge', text: ['Schwer ist es, wenn …', 'Mir hilft …', 'Ich finde gut, dass Sami …'] }] }],
