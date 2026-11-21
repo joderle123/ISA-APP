@@ -955,7 +955,7 @@ const d: Heft = {
       "Sie formulieren einen neuen Satz, der wahr, aktiv und gegenwärtig ist, und sammeln im Alltag Beweise dafür."
     ],
     "start": "Titel, Ansage (vorlesen – der Ton ist Absicht), Tracklist und Soundcheck. Etwa 10 Minuten, z. B. in der Brücke von Einheit 16.",
-    "schluss": "Hot Takes: je zwei Sätze als Einstieg in eine Einheit – oder alle sechs im Stehen am Schluss, „Knack den Code“ als Wiederholung, Karten ausschneiden – „Mein neuer Satz“ zuerst –, Abspann in der Abschlussrunde von Einheit 19.",
+    "schluss": "Hot Takes: zwei Sätze statt „Ankommen“ (5 Min., gleiche Zeit) – oder alle sechs im Stehen, wenn eine Stunde früher fertig ist, „Knack den Code“ als Wiederholung, Karten ausschneiden – „Mein neuer Satz“ zuerst –, Abspann in der Abschlussrunde von Einheit 19.",
     "hilfe": [
       "Szene und Fakten vorlesen oder reihum lesen lassen.",
       "Beim Sortieren (Akte, Prüfstand) zu zweit arbeiten lassen.",

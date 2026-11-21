@@ -906,7 +906,7 @@ const d: Heft = {
       "Sie gestalten einen Abschied aktiv mit und wissen, an wen sie sich danach wenden."
     ],
     "start": "Titel, Ansage (vorlesen – der Ton ist Absicht), Tracklist und Soundcheck. Etwa 10 Minuten zu Beginn von Einheit 29.",
-    "schluss": "Hot Takes: je zwei Sätze als Einstieg oder alle sechs am Schluss, „Knack den Code“ als Wiederholung, Karten ausschneiden. Der Abspann gehört in die allerletzte Runde.",
+    "schluss": "Hot Takes: zwei Sätze statt „Ankommen“ (5 Min., gleiche Zeit) – oder alle sechs, wenn eine Stunde früher fertig ist, „Knack den Code“ als Wiederholung, Karten ausschneiden. Der Abspann gehört in die allerletzte Runde.",
     "hilfe": [
       "Szene und Fakten vorlesen oder reihum lesen lassen.",
       "Schlafzeiten gemeinsam ausrechnen.",

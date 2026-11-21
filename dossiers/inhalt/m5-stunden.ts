@@ -55,7 +55,7 @@ export function stunden(d: Heft): Stunde[] {
       material('12 Nachrichten und 4 Bedeutungen', 6,
         karten(4, 18, 'Die Bedeutungen: ausschneiden und auf den Tisch legen.', ['freundlich', 'genervt', 'traurig', 'kann man nicht wissen'].map((t) => ({ t })), true),
         karten(4, 18, 'Die Nachrichten: ausschneiden, mischen, verdeckt stapeln.', NACHRICHTEN.map((t) => ({ t: `„${t}“` })))),
-      st('Zu zweit: Rücken an Rücken', '10 Min.', 'zu zweit', 'pencil', 'Papier und Stifte austeilen. Zu dritt: eine Person beschreibt, zwei zeichnen, dann wechseln. Nach Durchgang 2 die Bilder nebeneinanderlegen.',
+      st('Wenn noch Zeit ist: Rücken an Rücken', '10 Min.', 'zu zweit', 'pencil', 'Papier und Stifte austeilen. Zu dritt: eine Person beschreibt, zwei zeichnen, dann wechseln. Nach Durchgang 2 die Bilder nebeneinanderlegen.',
         text('Ihr sitzt Rücken an Rücken. A zeichnet ein einfaches Bild aus fünf Formen (Kreis, Dreieck, Viereck, Linie, Stern) und beschreibt es. B zeichnet mit. **Durchgang 1:** B darf nichts fragen. **Durchgang 2:** neues Bild, Rollen tauschen – jetzt sind Fragen erlaubt.'),
         fragen(null, kreuz('Wann war das Bild genauer?', 'ohne Fragen', 'mit Fragen'))),
       schluss(koerper, 'noch einmal: ok.', [kreuzU('Du bekommst wieder ein „ok.“ und bist unsicher. Was machst du?', 'nachfragen: „Wie meinst du das?“', 'raten', 'beleidigt sein'), kreuz('Schau auf Station 1: Kannst du aus zwei Buchstaben sicher lesen, was gemeint ist?', 'ja', 'nein')], ['gemacht']),
@@ -79,7 +79,7 @@ export function stunden(d: Heft): Stunde[] {
       clip(streit, 'Reden ohne Angriff', [kreuzU('Welcher Satz macht einen Streit schlimmer?', '„Du bist immer …“', '„Ich bin sauer, weil …“')], ['Die Schritte aus dem Clip:', 'Ein Beispiel:'],
         [kreuz('War dein Tipp richtig?', 'ja', 'nein', 'halb'), kreuzU('Was fehlte in Yusufs Satz?', 'was mit ihm los ist – und was er will', 'mehr Lautstärke')]),
       fuerDich('Finde den Angriff', '8 Min.', fragen(null, ...streit.moves[0].fragen)),
-      stimmtDas(streit),
+      stimmtDas(streit, '5 Min.'),
     ),
     seite(
       runde('die Satz-Werkstatt', '25 Min.', 'zwei Teams · am Tisch', 'tool', {
@@ -101,7 +101,7 @@ export function stunden(d: Heft): Stunde[] {
       material('16 Sätze', 6, karten(4, 19, 'Ausschneiden und mischen.', [...ANGRIFF, ...INFO].sort((a, b) => a.length - b.length).map((t) => ({ t: `„${t}“` })))),
       fuerDich('dein zweiter Versuch', '8 Min.', fragen('Wie bei Yusuf steckt unter einem Angriff oft etwas anderes. Etwas Kleines, das dich gerade stört – oder jemanden, den du kennst. Sieht keiner.',
         kreis('Was steckt darunter? Kreise ein.', 'peinlich', 'verletzt', 'Angst', 'müde', 'ungerecht behandelt'),
-        satz('Dein Ich-Satz – ohne „immer“, „nie“, „du bist“:', 'Ich bin … , weil', 'Ich will, dass'),
+        satz('Dein Ich-Satz – ohne „immer“, „nie“, „du bist“:', 'Ich bin …, weil', 'Ich will, dass'),
         kreuz('Wo sagst du ihn diese Woche?', 'zu Hause', 'Wohngruppe', 'Schule oder Betrieb', 'bei Freunden'))),
       schluss(streit, 'dein Satz', [kreuz('Schau auf Station 1. Wie gut kannst du **jetzt** sagen, was dich stört?', 'wie vorher', 'etwas besser', 'viel besser')], ['gesagt']),
     ),

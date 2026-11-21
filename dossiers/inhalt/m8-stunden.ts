@@ -151,7 +151,7 @@ export function stunden(d: Heft): Stunde[] {
     seite(
       clip(letzte, 'Ein Mittel gegen Unzufriedenheit', [kreuzU('Was macht zufriedener?', 'mehr haben', 'Danke sagen', 'weiß nicht')], ['Das Mittel aus dem Clip:', 'So wirkt es:'],
         [kreuz('War dein Tipp richtig?', 'ja', 'nein', 'halb'), kreuzU('Was bringt ein Danke am letzten Tag?', 'Es tut beiden gut – und es bleibt.', 'nichts, es ist nur peinlich')]),
-      fuerDich('Brief an mich', '15 Min.', fragen(letzte.moves[0].kontext ?? null, ...letzte.moves[0].fragen)),
+      fuerDich('Brief an mich', '12 Min.', fragen(letzte.moves[0].kontext ?? null, ...letzte.moves[0].fragen)),
     ),
     seite(
       runde('die Stärken-Post', '25 Min.', 'alle', 'mail', {

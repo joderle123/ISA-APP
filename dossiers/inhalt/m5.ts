@@ -938,7 +938,7 @@ const d: Heft = {
       "Sie setzen eine Grenze mit Körper, Stimme und kurzem Satz – und nehmen ein Nein anderer ohne Diskussion an."
     ],
     "start": "Titel, Ansage (vorlesen – der Ton ist Absicht), Tracklist und Soundcheck. Etwa 10 Minuten, z. B. in der Brücke von Einheit 20.",
-    "schluss": "Hot Takes: je zwei Sätze als Einstieg in eine Einheit – oder alle sechs im Stehen am Ende von Einheit 23. „Knack den Code“ als Wiederholung, Karten ausschneiden, Abspann in der Abschlussrunde.",
+    "schluss": "Hot Takes: zwei Sätze statt „Ankommen“ (5 Min., gleiche Zeit) – oder alle sechs im Stehen, wenn eine Stunde früher fertig ist. „Knack den Code“ als Wiederholung, Karten ausschneiden, Abspann in der Abschlussrunde.",
     "hilfe": [
       "Szene und Fakten vorlesen oder reihum lesen lassen.",
       "Bei Schreibaufgaben reicht ein Stichwort. Wer nicht schreiben mag, diktiert oder zeichnet.",

@@ -787,7 +787,7 @@ const d: Heft = {
       "Sie kennen die Rollen der Zuschauenden und wählen eine sichere Stufe der Zivilcourage-Leiter."
     ],
     "start": "Titel, Ansage (vorlesen – der Ton ist Absicht), Tracklist und Soundcheck. Etwa 10 Minuten, z. B. in der Brücke von Einheit 24.",
-    "schluss": "Hot Takes: je zwei Sätze als Einstieg in eine Einheit – oder alle sechs im Stehen am Schluss, „Knack den Code“ als Wiederholung, Karten ausschneiden, Abspann in der Abschlussrunde von Einheit 26.",
+    "schluss": "Hot Takes: zwei Sätze statt „Ankommen“ (5 Min., gleiche Zeit) – oder alle sechs im Stehen, wenn eine Stunde früher fertig ist, „Knack den Code“ als Wiederholung, Karten ausschneiden, Abspann in der Abschlussrunde von Einheit 26.",
     "hilfe": [
       "Szene und Fakten vorlesen oder reihum lesen lassen.",
       "Die fünf Tiere als Schilder im Raum lassen – zum Zeigen.",

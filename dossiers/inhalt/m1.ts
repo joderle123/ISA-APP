@@ -839,7 +839,7 @@ const d: Heft = {
       "Sie nennen eigene Stärken und Halt gebende „Wurzeln“ und geben anderen eine konkrete Stärken-Rückmeldung."
     ],
     "start": "Titel, Ansage (vorlesen – der Ton ist Absicht), Tracklist und Soundcheck. Etwa 10 Minuten, z. B. in der Brücke von Einheit 4.",
-    "schluss": "Kino – der Film des Trimesters – als eigener Termin. Hot Takes: je zwei Sätze als Einstieg in eine Einheit – oder alle sechs im Stehen am Schluss, „Knack den Code“ als Wiederholung, Karten ausschneiden, Abspann in der Abschlussrunde von Einheit 6.",
+    "schluss": "Kino – der Film des Trimesters – als eigener Termin. Hot Takes: zwei Sätze statt „Ankommen“ (5 Min., gleiche Zeit) – oder alle sechs im Stehen am Schluss, „Knack den Code“ als Wiederholung, Karten ausschneiden, Abspann in der Abschlussrunde von Einheit 6.",
     "hilfe": [
       "Szene und Fakten vorlesen oder reihum lesen lassen.",
       "Die Regler-Skala einmal am Beispiel Nele erklären; danach kreist jede Person still für sich ein.",

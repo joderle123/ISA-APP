@@ -803,7 +803,7 @@ const d: Heft = {
       "Sie übernehmen in einer Vertrauensübung Verantwortung für eine andere Person und benennen, was sie selbst in der Gruppe brauchen."
     ],
     "start": "Titel und Ansage gemeinsam lesen (vorlesen – der Ton ist Absicht), Namen ins Heft, Soundcheck. Etwa 10 Minuten vor Station 1 von Stunde 01.",
-    "schluss": "Hot Takes: je zwei Sätze als Einstieg in eine Einheit – oder alle sechs im Stehen am Schluss, „Knack den Code“ als Wiederholung, Karten ausschneiden – „Unsere Regeln“ zuerst –, Abspann in der Abschlussrunde von Einheit 3.",
+    "schluss": "Hot Takes: zwei Sätze statt „Ankommen“ (5 Min., gleiche Zeit) – oder alle sechs im Stehen, wenn eine Stunde früher fertig ist, „Knack den Code“ als Wiederholung, Karten ausschneiden – „Unsere Regeln“ zuerst –, Abspann in der Abschlussrunde von Einheit 3.",
     "hilfe": [
       "Szene und Fakten vorlesen oder reihum lesen lassen.",
       "Bei Schreibaufgaben reicht ein Stichwort.",

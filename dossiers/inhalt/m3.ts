@@ -1138,7 +1138,7 @@ const d: Heft = {
       "Sie wählen ihr Set für die Tasche und schreiben einen Ampelplan mit mindestens einer erreichbaren Person."
     ],
     "start": "Titel, Ansage (vorlesen – der Ton ist Absicht), Tracklist und Soundcheck. Etwa 10 Minuten vor Station 1 von Stunde 01.",
-    "schluss": "Kino – der Film des Trimesters – als eigener Termin, bei Bedarf in zwei Teilen. Hot Takes: je zwei Sätze als Einstieg in eine Einheit – oder alle sechs im Stehen in Einheit 15. „Knack den Code“ als Wiederholung, Karten ausschneiden (die Notfallkarte zuerst), Abspann in der Abschlussrunde.",
+    "schluss": "Kino – der Film des Trimesters – als eigener Termin, bei Bedarf in zwei Teilen. Hot Takes: zwei Sätze statt „Ankommen“ (5 Min., gleiche Zeit) – oder alle sechs im Stehen in Einheit 15. „Knack den Code“ als Wiederholung, Karten ausschneiden (die Notfallkarte zuerst), Abspann in der Abschlussrunde.",
     "hilfe": [
       "Die Zahl mit den Fingern zeigen lassen (0–10) und gemeinsam einkreisen.",
       "Szene und Fakten vorlesen oder reihum lesen lassen.",

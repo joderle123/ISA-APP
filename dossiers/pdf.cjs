@@ -37,7 +37,8 @@ const path = require('path')
           const kinder = [...inh.children]
           const summe = kinder.reduce((h, k) => h + k.getBoundingClientRect().height, 0)
           const platz = inh.clientHeight - parseFloat(cs.paddingTop) - parseFloat(cs.paddingBottom) - summe - (kinder.length - 1) * parseFloat(cs.rowGap || '0')
-          frei = Math.round((platz / 96) * 25.4)
+          const echt = inh.scrollHeight > inh.clientHeight + 1 ? inh.clientHeight - inh.scrollHeight : 0   // verkleinerte Seiten: echter Überlauf statt Summe
+          frei = Math.round(((s.classList.contains('dichter') ? echt : platz) / 96) * 25.4)
         } else {
           frei = 0
         }
