@@ -621,7 +621,7 @@ const d: Heft = {
         "jahr": 2018,
         "fsk": 6,
         "laenge": "117 Min.",
-        "worum": "Miles, 13, ist neu an der Elite-Schule. Er kann sprayen, aber nicht dazugehören. Dann beißt ihn eine Spinne – und plötzlich stehen fünf andere Spider-Leute aus anderen Welten in seinem Zimmer. Alle können, was er nicht kann. Noch nicht.",
+        "worum": "Miles, 13, ist neu an der Elite-Schule. Er kann sprayen, aber nicht dazugehören. Dann beißt ihn eine Spinne – und plötzlich tauchen fünf andere Spider-Leute aus anderen Welten auf. Alle können, was er nicht kann. Noch nicht.",
         "achte": [
           "Welcher Tank ist bei Miles am Anfang leer?",
           "Was kann Miles, was die anderen nicht können?",
@@ -842,7 +842,7 @@ const d: Heft = {
     "schluss": "Kino – der Film des Trimesters – als eigener Termin. Hot Takes: je zwei Sätze als Einstieg in eine Einheit – oder alle sechs im Stehen am Schluss, „Knack den Code“ als Wiederholung, Karten ausschneiden, Abspann in der Abschlussrunde von Einheit 6.",
     "hilfe": [
       "Szene und Fakten vorlesen oder reihum lesen lassen.",
-      "Bei den Reglern mit den Fingern zeigen lassen und gemeinsam einkreisen.",
+      "Die Regler-Skala einmal am Beispiel Nele erklären; danach kreist jede Person still für sich ein.",
       "Beim Stärken-Check Beispiele aus dem Alltag der Gruppe nennen.",
       "Wer nicht schreiben mag, zeichnet den Baum."
     ],
@@ -854,13 +854,13 @@ const d: Heft = {
     ],
     "gespraech": "Das Thema Bedürfnisse kann Mangel sichtbar machen: kein sicheres Zuhause, zu wenig Essen, niemand, der zu einem hält. Nichts davon wird in der Gruppe vertieft; Hinweise auf Vernachlässigung oder Gewalt gehen an die zuständige Leitung (Responsable). Fremdeinschätzungen (Punkte-Galerie) können kränken – auf Kommentare und gehäufte Punkte achten. Die Frage nach den Wurzeln kann schmerzen, wenn wichtige Menschen fehlen: ausdrücklich auch Orte, Tiere, Musik und Erinnerungen zulassen.",
     "druck": [
-      "A4, doppelseitig, an der langen Seite gewendet. So liegen Szene (links) und „Dein Move“ (rechts) nebeneinander.",
+      "A4, doppelseitig, an der langen Seite gewendet. Material-Seiten (Schere) einmal extra einseitig drucken und daraus schneiden – im Heft der Jugendlichen steht auf der Rückseite die nächste Station.",
       "Seiten 1–{J} für die Jugendlichen, Seiten {L} nur für Sie.",
       "Schwarz-Weiß ist möglich; das Titelblatt braucht viel Toner.",
       "Seite {K} (Karten) einzeln und einseitig drucken, am besten auf festerem Papier."
     ],
     "hot": "Es gibt keine richtige Position. Nachfragen statt korrigieren: „Was hast du erlebt, dass du dort stehst?“ Take 2 („Ohne Freunde geht es auch“) ist oft Selbstschutz – nicht widerlegen, sondern fragen, was es kostet. Take 5 lohnt den Blick auf die Tanks: Welche füllt Geld, welche nicht?",
-    "achtung": "Die Zettel im Glas zuerst still lesen und nichts vorlesen, was auf eine einzelne Person zeigt. In der Punkte-Galerie wird schweigend geklebt; niemand kommentiert. Bei „Stärken verschenken“ dafür sorgen, dass niemand leer ausgeht. Das Wort „Akte“ ist für manche belastet – es wird hier bewusst umgedreht; wenn es jemanden trifft, darauf eingehen.",
+    "achtung": "In der Punkte-Galerie wird schweigend geklebt; niemand kommentiert. Bei „Stärken verschenken“ dafür sorgen, dass niemand leer ausgeht. Das Wort „Akte“ ist für manche belastet – es wird hier bewusst umgedreht; wenn es jemanden trifft, darauf eingehen.",
     "hintergrund": "Psychische Grundbedürfnisse – Bindung, Kontrolle und Orientierung, Selbstwert, Lust – sind gut belegt (Grawe; Deci & Ryan); ihre Verletzung zeigt sich zuerst im Gefühl. Introversion und Extraversion sind ein Kontinuum mit jeweils eigenen Stärken (Cain). Der „Baum der Stärke“ stammt aus der narrativen Arbeit mit belasteten Kindern und Jugendlichen (Ncube): Wer von Stärken und Halt erzählt, bevor es um Probleme geht, steht sicherer. Resilienz entsteht meist aus gewöhnlichen Schutzfaktoren – einer verlässlichen Person, einer Fähigkeit, auf die man stolz ist (Masten).",
     "quellen": "Grawe (2004) · Deci & Ryan (2000) · Maslow (1943) · Cain (2012) · Ncube (2006) · Masten (2014). Angaben zu den Einheiten 4–6 in der Toolbox."
   },
@@ -892,7 +892,7 @@ d.ansage.so = [
   ['Stationen', 'Jede Stunde läuft von Station 1 bis zum Schluss. Oben auf der Seite siehst du, wo ihr gerade seid.'],
   ['Fall', 'Eine erfundene Person, der etwas passiert. Sie kommt in der Stunde wieder vor.'],
   ['Clip', 'Ein Video per QR-Code – mit Aufträgen für vorher, beim Schauen und danach.'],
-  ['Große Runde', 'Eine Aktion für alle, 25 Minuten. Die Karten dafür stehen im Heft.'],
+  ['Große Runde', 'Eine Aktion für alle, 25 bis 30 Minuten. Die Karten dafür stehen im Heft. Niemand muss etwas vorspielen.'],
 ]
 // Clip zu Stunde 1: Schlaf statt Einsamkeit – passt zum Fall (Nele, vier Stunden Schlaf). Titel und Kanal über oEmbed bestätigt (16.11.2026).
 d.tracks[0].clip = { titel: 'Mehr als lebenswichtig: Darum schlafen wir!', kanal: 'Quarks', url: 'https://www.youtube.com/watch?v=sdH-fEEh1uY', dauer: 'Ausschnitt, etwa 6 Min.', frage: 'Was macht dein Körper nachts – und was hat Nele am Morgen gefehlt?' }
@@ -902,7 +902,7 @@ d.tracks[0].leitung = {
   einsatz: 'Die Stunde folgt einem Faden: der eigene Ärger von heute (Ankommen) → Neles Vormittag (Fall) → warum Schlaf zählt (Clip) → Schlaf ist einer von sechs Tanks (Modell) → Warnlichter erkennen (große Runde mit 18 Karten, ohne Vorspielen: hören, zeigen, legen) → zurück zum eigenen Ärger: Welcher Tank war es, welche Tankstelle hilft? Am Schluss schreiben alle Nele einen Satz.',
   loesungen: [
     'Fall: Es gibt keine einzelne Schuldige. Die kurze Nacht und das fehlende Frühstück haben den Tank geleert; die Frage der Lehrerin war nur der Auslöser. Der Energydrink macht wach, füllt aber nichts auf.',
-    'Clip: Die Antworten hängen vom gewählten Ausschnitt ab – bitte vorher ansehen und eigene Stichwörter bereithalten. Die Brücke zum Fall: Zu wenig Schlaf macht reizbar und unkonzentriert.',
+    'Clip: Die Antworten hängen vom gewählten Ausschnitt ab – bitte vorher ansehen und eigene Stichwörter bereithalten. Die Brücke zum Fall: Zu wenig Schlaf macht reizbar und unkonzentriert. Schätzfrage: Jugendliche brauchen etwa 8–10 Stunden Schlaf; Nele hatte gut vier.',
     'Modell: „Ernst genommen“ oder „Sicherheit“ – vor allen angesprochen zu werden, fühlt sich wie Bloßstellen an. Beide Antworten gelten.',
     'Probe-Runde: keine Gruppe – Dazugehören · ausgelacht – ernst genommen werden · herumkommandiert – selbst entscheiden · Regen-Sonntag – Spaß und Neues.',
     'Große Runde: Die Tanks sind im Modell nummeriert (1 Körper … 6 Spaß und Neues), der Tank steht auf jeder Karte. Bei mehreren Karten passen zwei Tanks (z. B. Teamwahl: Dazugehören und ernst genommen werden) – das ist die zweite Frage der Auswertung.',
@@ -935,9 +935,9 @@ d.tracks[1].leitung = {
     'Zeit stoppen, Striche an der Tafel. In Runde B selbst mitschreiben. Die Zahlen nicht bewerten – nur vergleichen.',
     'Erst im Heft. Das Aufstellen im Raum ist freiwillig; wer steht, sagt einen Satz: Was ist an meiner Seite gut?',
     'Selbst vorlesen oder reihum lesen lassen. Die Fragen zu zweit, dann vergleichen.',
-    'Tipp vorher ankreuzen lassen. Nach dem Clip zuerst: Wer hat seinen Tipp geändert?',
+    'Tipp vorher ankreuzen lassen. Nach dem Clip zuerst: Wer hat seinen Tipp geändert? Studien finden bei Lauten im Schnitt etwas mehr gute Laune – ein Durchschnitt, kein Urteil über Leise.',
     'Rollen sind Aufgaben, kein Schauspiel; tauschen ist freiwillig. Die zwei Minuten Stille stoppen. Nicht mitbauen – beobachten, wessen Idee gebaut wird.',
-    'Stille Arbeit. Die Rechnung ist privat.',
+    'Stille Arbeit. Die Antworten sind privat.',
     'Zwei, drei Sätze hören. Wochenaufgabe ansagen.',
     'Nur mit einer Gruppe, die sich kennt. Auf Kommentare und gehäufte Punkte achten.',
   ],
@@ -963,8 +963,8 @@ d.tracks[2].leitung = {
     'Wer mag, liest seinen Satz vor. Wochenaufgabe ansagen.',
   ],
 }
-d.leitung.wozu = 'REAL TALK ist das Heft der Jugendlichen zu Modul 1. Jede der drei Einheiten ist eine **zusammenhängende Stunde** mit Stationen: Der Fall vom Anfang kommt bei Clip, Modell und Schluss wieder vor, die große Aktion (25 Minuten) hat ihre Karten im Heft, und jede Stunde ist anders gebaut – Stunde 1 geht vom Fall aus, Stunde 2 von einem Experiment, Stunde 3 von dem, was die Gruppe schon kann. **Niemand muss etwas vorspielen:** Es wird gelesen, gezeigt, gelegt, gebaut und geschrieben. Leitmotiv dieser Ausgabe: Die Jugendlichen kennen ihre „Akte“ – hier schreiben sie die andere Seite.'
-d.leitung.start = 'Titel, Ansage (vorlesen – der Ton ist Absicht), „Das kommt“ und die zwei Fragen zum Aufwärmen. Etwa 10 Minuten, z. B. in der Brücke von Einheit 4.'
+d.leitung.wozu = 'REAL TALK ist das Heft der Jugendlichen zu Modul 1. Jede der drei Einheiten ist eine **zusammenhängende Stunde** mit Stationen: Der Fall vom Anfang kommt bei Clip, Modell und Schluss wieder vor, die große Aktion (25–30 Minuten) hat ihre Karten im Heft, und jede Stunde ist anders gebaut – Stunde 1 geht vom Fall aus, Stunde 2 von einem Experiment, Stunde 3 von dem, was die Gruppe schon kann. **Niemand muss etwas vorspielen:** Es wird gelesen, gezeigt, gelegt, gebaut und geschrieben. Leitmotiv dieser Ausgabe: Die Jugendlichen kennen ihre „Akte“ – hier schreiben sie die andere Seite.'
+d.leitung.start = 'Titel, Ansage (vorlesen – der Ton ist Absicht), „Das kommt“ und die zwei Fragen zum Aufwärmen. Etwa 10 Minuten vor Station 1 von Stunde 01.'
 d.leitung.schluss = 'Kino – der Film des Trimesters – als eigener Termin. Streitfragen: je zwei Sätze als Einstieg in eine Einheit – oder alle sechs im Stehen am Schluss. „Knack den Code“ als Wiederholung, Karten ausschneiden, „Zum Schluss“ in der Abschlussrunde von Einheit 6.'
 d.leitung.fakten = [['Zielgruppe', '12–16 Jahre, 3–6 Jugendliche'], ['Dauer', '3 Stunden à etwa 90 Min. (E4–E6)'], ['Sozialform', 'allein, zu zweit, Teams'], ['Material', 'Schere, Stoppuhr, Papier, Klebeband, Flasche']]
 export default d

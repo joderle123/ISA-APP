@@ -48,9 +48,9 @@ const d: Heft = {
       ]
     ],
     "regeln": [
-      "**Echte Streits aus der Gruppe werden hier nicht verhandelt.** Gespielt wird mit erfundenen Fällen.",
+      "**Echte Streits aus der Gruppe werden hier nicht verhandelt.** Gearbeitet wird mit erfundenen Fällen.",
       "**Niemand wird nach eigenen Erlebnissen gefragt.** Weder als Opfer noch als Täter.",
-      "**Stopp heißt Stopp.** In jedem Rollenspiel. Für jeden."
+      "**Stopp heißt Stopp.** In jeder Übung. Für jeden."
     ]
   },
   "cast": [
@@ -108,7 +108,7 @@ const d: Heft = {
       "szene": {
         "bild": "peep:finn:wuetend",
         "name": "Finn, 15",
-        "text": "Finn und Lina sollen zusammen ein Plakat machen. Finn hat eine Idee und zieht sie durch. Lina sagt dreimal: „Können wir nicht …?“ Dreimal sagt Finn: „Nee, so ist besser.“ Lina zuckt die Schultern: „Mach halt.“ Am Tag der Abgabe fehlt Linas Teil. „Hab ich vergessen“, sagt sie und lächelt. Finn tobt. Lina auch – nur leiser, und schon seit drei Wochen.",
+        "text": "Finn und Lina sollen zusammen ein Plakat machen. Finn hat eine Idee und zieht sie durch. Lina sagt dreimal: „Können wir nicht …?“ Dreimal sagt Finn: „Nee, so ist besser.“ Lina zuckt die Schultern: „Mach halt.“ Am Tag der Abgabe fehlt Linas Teil. „Hab ich vergessen“, sagt sie und lächelt. Finn tobt. Lina ist auch wütend – nur leiser, und schon seit drei Wochen.",
         "frage": "Wer hat diesen Streit gebaut: Finn, der durchdrückt – oder Lina, die nachgibt?"
       },
       "faktenTitel": "Fünf Tiere",
@@ -263,7 +263,7 @@ const d: Heft = {
       "szene": {
         "bild": "peep:ben:besorgt",
         "name": "Ben, 15",
-        "text": "Samstag, Einkaufszentrum. Die anderen stecken Sachen ein. Einer hält Ben einen Kopfhörer hin: „Na los. Oder hast du Schiss?“ Niemand zwingt ihn. Alle schauen. Bens Herz hämmert. Er will nicht klauen. Er will aber noch weniger der sein, über den sie später lachen. Die Kopfhörer kosten 19,99. Die Anzeige kostet ihn den Praktikumsplatz.",
+        "text": "Samstag, Einkaufszentrum. Die anderen stecken Sachen ein. Einer hält Ben einen Kopfhörer hin: „Na los. Oder hast du Schiss?“ Niemand zwingt ihn. Alle schauen. Bens Herz hämmert. Er will nicht klauen. Er will aber noch weniger der sein, über den sie später lachen. Ben steckt ihn ein. Am Ausgang piept es. Die Kopfhörer kosten 19,99. Die Anzeige bei der Polizei kostet ihn den Praktikumsplatz.",
         "frage": "Was hätte Ben in diesen drei Sekunden gebraucht?"
       },
       "fakten": [
@@ -425,7 +425,7 @@ const d: Heft = {
       "fakten": [
         {
           "t": "Vier Merkmale",
-          "x": "Mobbing ist **wiederholt**, **absichtlich**, **ungleich** (mehrere gegen einen) – und die Person kann sich **allein nicht wehren**."
+          "x": "Mobbing ist **wiederholt**, **absichtlich**, **ungleich** (z. B. mehrere gegen einen oder Stärkere gegen Schwächere) – und die Person kann sich **allein nicht wehren**."
         },
         {
           "t": "Die Bühne",
@@ -690,7 +690,7 @@ const d: Heft = {
       "titel": "Konflikt-Treppe",
       "icon": "stairs-up",
       "zeilen": [
-        "**1** Stopp – runter unter 70",
+        "**1** Stopp – Anspannung runter unter 70 (von 100)",
         "**2** Ich-Satz",
         "**3** Zuhören, zusammenfassen",
         "**4** Lösungen sammeln · **5** einigen"
@@ -796,19 +796,19 @@ const d: Heft = {
     ],
     "forder": [
       "Eine Streit-Szene aus einer Serie mit Tieren und Treppen-Stufen analysieren.",
-      "Eine eigene Drängel-Karte schreiben und im Nein-Würfel einsetzen.",
+      "Eine eigene Drängel-Karte schreiben und im Nein-Baukasten einsetzen.",
       "Für die Geschichte von Lea ein anderes Ende schreiben – ab dem Moment des Clips.",
       "Die Zivilcourage-Leiter als Plakat für den Gruppenraum gestalten."
     ],
     "gespraech": "Konflikte zwischen Gruppenmitgliedern werden nicht im Rollenspiel nachgespielt und nicht im Plenum verhandelt; dafür ein begleitetes Gespräch außerhalb der Einheit anbieten. Mobbing kann in der Gruppe selbst vorkommen – bei Betroffenen, Tätern und Zuschauenden. Niemanden nach eigenen Erfahrungen fragen. Erzählt jemand von aktuellem Mobbing oder von Straftaten, das Gespräch unter vier Augen führen und die zuständige Leitung (Responsable) einbeziehen.",
     "druck": [
-      "A4, doppelseitig, an der langen Seite gewendet. So liegen Szene (links) und „Dein Move“ (rechts) nebeneinander.",
+      "A4, doppelseitig, an der langen Seite gewendet. Material-Seiten (Schere) einmal extra einseitig drucken und daraus schneiden – im Heft der Jugendlichen steht auf der Rückseite die nächste Station.",
       "Seiten 1–{J} für die Jugendlichen, Seiten {L} nur für Sie.",
       "Schwarz-Weiß ist möglich; das Titelblatt braucht viel Toner.",
       "Seite {K} (Karten) einzeln und einseitig drucken, am besten auf festerem Papier."
     ],
     "hot": "Es gibt keine richtige Position. Take 1 und 5 können Täter- und Opfererfahrungen im Raum berühren – nicht personalisieren. Bei Take 1 hilft die Forschung: Mobbing ist ein Gruppenphänomen, Betroffene können es allein nicht beenden. Bei Take 5 nach dem Preis fragen: Was kostet es den, der es tut – heute und in einem Jahr?",
-    "achtung": "Karten zu Alkohol, Diebstahl oder Mutproben können eigene Erfahrungen berühren: nicht vertiefen, nicht bewerten, Einzelgespräch anbieten. Die Szene mit Ben (Ladendiebstahl) ist nah an der Lebenswelt mancher Jugendlicher – sie fragt nach den drei Sekunden davor, nicht nach Schuld. Der Hauptfilm zeigt Waffengewalt: vorher ansehen.",
+    "achtung": "Karten zu Alkohol, Diebstahl oder Mutproben können eigene Erfahrungen berühren: nicht vertiefen, nicht bewerten, Einzelgespräch anbieten. Die Szene mit Ben (Ladendiebstahl) ist nah an der Lebenswelt mancher Jugendlicher – sie fragt nach den drei Sekunden davor, nicht nach Schuld. ",
     "hintergrund": "Die fünf Konfliktstile folgen dem Modell von Thomas und Kilmann; die Treppe verbindet Deeskalation (Glasl), Ich-Botschaft und aktives Zuhören (Gordon) und interessenorientiertes Verhandeln (Fisher & Ury). In Aschs Experimenten passten sich die meisten Versuchspersonen mindestens einmal einer offensichtlich falschen Mehrheit an; schon ein einzelner Abweichler senkte den Druck deutlich. In Anwesenheit Gleichaltriger gehen Jugendliche mehr Risiken ein (Gardner & Steinberg). Mobbing ist ein Gruppenprozess mit festen Rollen (Olweus; Salmivalli); Programme, die bei den Zuschauenden ansetzen, verringern es messbar (Kärnä et al.).",
     "quellen": "Thomas & Kilmann (1974) · Glasl (1980) · Gordon (1972) · Fisher & Ury (1981) · Asch (1956) · Gardner & Steinberg (2005) · Olweus (1993) · Salmivalli et al. (1996) · Kärnä et al. (2011) · Latané & Darley (1970). Angaben zu den Einheiten 24–26 in der Toolbox."
   },

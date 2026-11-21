@@ -40,7 +40,7 @@ export const ankommen = (untertitel: string, ...l: Frage[]): Station =>
     fragen('Bevor es losgeht – nur für dich. Du brauchst es am Ende der Stunde noch einmal.', ...l))
 /** Fall aus der Szene des Tracks (Bild, Name, Text) mit Fragen – erst ankreuzen, dann höchstens eine Zeile */
 export const fall = (e: Track, titel: string, l: Frage[], opt: { zeit?: string; text?: string; zeitleiste?: [string, string][]; leitung?: string } = {}): Station =>
-  st(`Der Fall: ${titel}`, opt.zeit ?? '10 Min.', 'lesen · zu zweit', 'search', opt.leitung ?? 'Vorlesen. Fragen zu zweit, dann zwei Antworten hören.',
+  st(`Der Fall: ${titel}`, opt.zeit ?? '10 Min.', 'lesen · zu zweit', 'search', opt.leitung ?? 'Vorlesen. Fragen zu zweit (bei 3 oder 5: ein Dreier), dann zwei Antworten hören.',
     { art: 'fall', bild: e.szene.bild, name: e.szene.name, text: opt.text ?? e.szene.text, ...(opt.zeitleiste ? { zeitleiste: opt.zeitleiste } : {}), fragen: leicht(l) })
 /** Clip des Tracks mit Aufträgen: vorher (Tipp), beim Schauen (zwei Stichwörter), danach (zurück zum Fall) */
 export const clip = (e: Track, titel: string, vorher: Frage[], dabei: string[], nachher: Frage[], zeit = '12 Min.'): Station => {
@@ -75,7 +75,7 @@ export const stunde = (frage: string, kannst: string[], ...seiten: { stationen: 
 
 /* ---------- Eine Ausgabe auf Stunden umstellen ---------- */
 const WOERTER: [RegExp, string][] = [
-  [/Tracklist und Soundcheck/g, '„Das kommt“ und die Fragen zum Aufwärmen'], [/Tracklist/g, '„Das kommt“'], [/Soundcheck/g, 'Aufwärmen'], [/Hot Takes/g, 'Streitfragen'], [/Hot Take/g, 'Satz'],
+  [/Tracklist und Soundcheck/g, '„Das kommt“ und die Fragen zum Aufwärmen'], [/Tracklist/g, '„Das kommt“'], [/Soundcheck/g, 'Aufwärmen'], [/Hot Takes/g, 'Streitfragen'], [/Hot Take/g, 'Satz'], [/\bTake\b/g, 'Satz'],
   [/im Abspann/g, 'auf der Seite „Zum Schluss“'], [/Abspann in der/g, '„Zum Schluss“ in der'], [/Abspann/g, '„Zum Schluss“'], [/Zusatz-Tracks/g, 'Zusatz-Stunden'], [/Tracks/g, 'Stunden'], [/Track/g, 'Stunde'],
   [/Sessions/g, 'große Runden'], [/Session/g, 'große Runde'], [/Challenge/g, 'Aktion'], [/„Dein Move“/g, '„Für dich“'], [/Move A/g, 'Aufgabe A'], [/Move B/g, 'Aufgabe B'],
 ]
@@ -90,7 +90,7 @@ export function aufStunden(d: Heft, stunden: Stunde[], opt: { wozu?: string; gep
     e.titel = neu(e.titel); e.kurz = neu(e.kurz)
     e.leitung = {
       ...e.leitung,
-      einsatz: `Ablauf: ${stationen.map((s) => s.titel.split(':')[0]).join(' → ')}. Der Fall vom Anfang kommt bei Clip und Schluss wieder vor; die große Runde hat ihr Material im Heft. Niemand muss etwas vorspielen.`,
+      einsatz: `Ablauf: ${stationen.map((s) => s.titel.split(':')[0]).join(' → ')}. Die große Runde hat ihr Material im Heft. Niemand muss etwas vorspielen.`,
       loesungen: [...(opt.loesungen?.[i] ?? e.leitung.loesungen.map(neu)), ...(!opt.loesungen?.[i] || stationen.some((s) => s.titel === 'Stimmt das?') ? [`„Stimmt das?“ und Gespräch: ${e.mythen.map((m) => `„${m[0]}“ – ${m[1]}`).join(' · ')}`] : [])],
       impulse: e.leitung.impulse.map(neu),
       material: [...new Set(aktionen.map((a) => a.material))].join('; ') + (e.clip ? '; Gerät für den Clip' : '') + '; Schere',

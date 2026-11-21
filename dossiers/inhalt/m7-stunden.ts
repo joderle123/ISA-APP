@@ -16,7 +16,7 @@ export function stunden(d: Heft): Stunde[] {
       ankommen('deine Schätzung', kreuz('Schätze: Wie lange bist du am Tag am Handy?', 'unter 2 Std.', '2–4 Std.', '4–6 Std.', 'mehr'), kreuz('Wer entscheidet, wann du aufhörst?', 'ich', 'die App', 'mal so, mal so')),
       fall(scroll, 'Sami will nur kurz nachschauen', [
         kreuzU('Wer hat entschieden, wann Schluss ist?', 'die App: Der nächste Clip startet von selbst.', 'Sami'),
-        kreuzU('Sami sagt: „Ich hab’s im Griff.“ Was sagt die Zahl?', '6 Stunden 12 am Tag – das ist nicht im Griff.', 'Sie gibt ihm recht.'),
+        kreuzU('Sami sagt: „Ich hab’s im Griff.“ Stimmt das für diesen Abend?', 'Nein. Er wollte kurz schauen – es wurden zweieinhalb Stunden.', 'Ja.'),
       ], { zeitleiste: [['23:10', '„Nur kurz nachschauen.“'], ['dazwischen', 'Ein Clip, noch einer, der nächste startet von selbst.'], ['1:40', 'Augen brennen. Null Erinnerung.']] }),
     ),
     seite(
@@ -30,19 +30,19 @@ export function stunden(d: Heft): Stunde[] {
     seite(
       runde('gegen den Algorithmus', '25 Min.', 'alle · am Tisch und im Raum', 'robot', {
         ziel: 'Als Gruppe gegen die Tricks der Apps antreten – erst mit dem Kopf, dann mit den Händen.',
-        material: 'die 8 Aussage-Karten von der nächsten Seite (ausschneiden), zwei Zettel „stimmt“ und „stimmt nicht“, eine Münze pro Person; 20 Becher pro Team, ein Handy mit Wecker',
+        material: 'die 8 Aussage-Karten von der nächsten Seite (ausschneiden), zwei Zettel „stimmt“ und „stimmt nicht“, eine Münze pro Person; 20 Becher pro Team, ein Handy mit Intervall-Timer (z. B. Metronom-App)',
         schritte: [
           '**Teil 1 · Aussagen:** Eine Karte wird vorgelesen. Alle legen gleichzeitig ihre Münze auf „stimmt“ oder „stimmt nicht“.',
           'Liegt die Mehrheit richtig, punktet die Gruppe. Sonst – und bei Gleichstand – punktet der Algorithmus.',
           '**Teil 2 · der Ping-Turm:** Zwei Teams bauen 90 Sekunden einen Becherturm. Zählt die Becher.',
-          '**Durchgang 2:** Alle zehn Sekunden pingt das Handy an der Wand. Wer dran ist, muss hinlaufen und es antippen. Zählt wieder.',
+          '**Durchgang 2:** Alle zehn Sekunden pingt das Handy an der Wand. Reihum läuft eine Person hin und tippt es an. Zählt wieder.',
           '**Durchgang 3:** Das Handy liegt stumm in einer Schachtel. Welcher Turm ist am höchsten?',
         ],
         zu3: 'Ein Team, ein Turm. Die Leitung stellt den Wecker und zählt.',
         wertung: { kopf: ['Becher', 'ohne Ping', 'mit Ping', 'Handy in der Schachtel'], zeilen: ['Team A', 'Team B'] },
         notiz: { titel: 'Teil 1 – Punkte: Gruppe ___ · Algorithmus ___. Bei dieser Aussage hat er uns geschlagen:', linien: 1 },
         auswertung: ['Was hat der Ping mit eurem Turm gemacht?', 'Wo liegt euer Handy, wenn ihr etwas schaffen wollt?'],
-      }, { leitung: 'Lösung Teil 1: Es stimmen die Karten 3, 4, 7 und 8. Wecker auf zehn Sekunden stellen.' }),
+      }, { leitung: 'Lösung Teil 1: Es stimmen die Karten 3, 4, 7 und 8. Intervall-Timer auf zehn Sekunden stellen.' }),
     ),
     seite(
       material('8 Aussagen', 5, karten(2, 17, 'Ausschneiden, mischen, verdeckt stapeln. Die Nummer gehört dazu.', AUSSAGEN.map((t, i) => ({ t, marke: `Karte ${i + 1}` })))),
@@ -83,7 +83,7 @@ export function stunden(d: Heft): Stunde[] {
         regeln: ['Niemand muss sagen, was er selbst schon geschickt hat.', 'Wem so etwas passiert ist, der ist nicht schuld.'],
         zu3: 'Genau so. Die Leitung legt mit.',
         auswertung: ['Bei welcher Karte lagen eure Münzen am weitesten auseinander?', 'Welcher Satz klingt nett – und ist trotzdem Druck?'],
-      }, { danach: [fragen('Wenn doch etwas schiefgeht – schreibt **1 bis 4** davor:', { f: 'Was kommt wann?', zahl: ['melden und löschen lassen', 'einer Person sagen, der ich vertraue', 'Beweise sichern: Screenshot', 'die Person blockieren'] })], leitung: 'Bei Teil 3 zählt vor allem: nicht allein bleiben. Hilfe gibt es auch am Kinder- und Jugendtelefon 116 111.' }),
+      }, { danach: [fragen('Wenn doch etwas schiefgeht – schreibt **1 bis 4** davor:', { f: 'Was kommt wann?', zahl: ['melden und löschen lassen', 'einer Person sagen, der ich vertraue', 'Beweise sichern: Screenshot', 'die Person blockieren'] })], leitung: 'Bei Teil 3 zählt vor allem: nicht allein bleiben. Beweise sichern heißt: Chat, Profil und Drohungen screenshotten – ein Nacktbild selbst nicht speichern oder weiterschicken (kann strafbar sein). Hilfe: Kanner-Jugendtelefon 116 111, BEE SECURE Helpline 8002 1234, Polizei 113.' }),
     ),
     seite(
       material('12 Sende-Karten und 8 Sätze', 5,
@@ -95,7 +95,7 @@ export function stunden(d: Heft): Stunde[] {
 
   /* ---------- Stunde 3 · Echt oder fake? ---------- */
   const MIT = ['SCHOCK!!! Schule ab Montag VERBOTEN – teilt das, bevor es gelöscht wird!!!', 'Ein Arzt verrät: Dieses Getränk macht dich in drei Tagen schlau.', 'Insider packt aus: Alle Handys werden nachts abgehört!', 'Nur heute: Gratis-Handy für die ersten 100, die diesen Link teilen.', 'SKANDAL! Lehrer verdienen heimlich das Zehnfache!!!', 'Mein Cousin kennt einen bei der Polizei: Ab morgen 300 Euro Strafe für Kopfhörer im Bus.']
-  const OHNE = ['Die Stadt sperrt die Brücke ab Montag für zwei Wochen. Quelle: Stadtverwaltung.', 'Der Bus 12 fährt in den Ferien nur jede halbe Stunde, teilt das Busunternehmen mit.', 'Studie mit 2000 Jugendlichen: Wer länger schläft, lernt leichter.', 'Schulfest am 12. Juni – das Programm steht auf der Seite der Schule.', 'Der Wetterdienst warnt vor Gewitter am Abend.', 'Ab nächster Woche gibt es in der Kantine täglich ein vegetarisches Essen, sagt die Schulleitung.']
+  const OHNE = ['Die Stadt sperrt die Brücke ab Montag für zwei Wochen. Quelle: Stadtverwaltung.', 'Der Bus 12 fährt in den Ferien nur jede halbe Stunde, teilt das Busunternehmen mit.', 'Eine Uni hat 2000 Jugendliche befragt: Wer länger schläft, lernt leichter. Die Studie ist verlinkt.', 'Schulfest am 12. Juni – das Programm steht auf der Seite der Schule.', 'Der Wetterdienst warnt vor Gewitter am Abend.', 'Ab nächster Woche gibt es in der Kantine täglich ein vegetarisches Essen, sagt die Schulleitung.']
   const s3 = stunde('Woran merkst du, dass etwas nicht stimmt?', ['sechs Warnzeichen für Fakes nennen', 'die zwei Fragen stellen: Wer sagt das? Wer berichtet noch darüber?', 'erst bremsen, dann teilen – oder nicht'],
     seite(
       ankommen('dein Daumen', kreuz('Erkennst du ein gefälschtes Bild sofort?', 'ja', 'meistens', 'nein'), kreuz('Hast du schon mal etwas geteilt, das nicht stimmte?', 'ja', 'nein', 'weiß nicht')),
@@ -140,14 +140,14 @@ export function stunden(d: Heft): Stunde[] {
 /** Lösungen für die Leitung – passend zu den Stationen oben */
 export const loesungen: string[][] = [
   [
-    'Der Fall: Entschieden hat die App – der nächste Clip startet von selbst. 6 Stunden 12 am Tag sind nicht „im Griff“.',
+    'Der Fall: Entschieden hat die App – der nächste Clip startet von selbst. „Im Griff“ passt nicht: Er wollte kurz schauen, es wurden zweieinhalb Stunden.',
     'Gegen den Algorithmus: Es stimmen die Karten 3, 4, 7 und 8. Falsch sind 1 (Screenshot), 2 (jeder Feed ist anders), 5 (er zeigt, wobei du hängen bleibst) und 6 (Bild 41 von 41).',
     'Ping-Turm: Mit Ping wird der Turm meist niedriger. Mit dem Handy in der Schachtel am höchsten.',
   ],
   [
     'Screenshot-Kette: Niemand kann alle Kopien zurückholen – eine steckt bei der Leitung.',
     'Der Fall: „Vertraust du mir nicht?“ ist Druck. Jana merkt es am Knoten im Bauch.',
-    'Okay oder Druck: okay sind „Schick mal ein Foto vom Konzert!“ und „Kein Stress. Nur wenn du willst.“ Alle anderen sind Druck.',
+    'Okay oder Druck: okay sind „Schick mal ein Foto vom Konzert!“, „Kein Stress. Nur wenn du willst.“ und in der großen Runde auch „Okay, dann nicht. Alles gut.“ und „Darf ich das posten?“. Alle anderen sind Druck. „Ich sag’s sonst allen“ ist Erpressung – ein Fall für Erwachsene.',
     'Bevor ich sende: Unkritisch sind Essen, Meme, Hund. Alles mit anderen Personen, Standort, Adresse oder Passwort: lieber nicht.',
     'Wenn es passiert ist: 1 einer Person sagen, der ich vertraue · 2 Beweise sichern · 3 melden und löschen lassen · 4 blockieren.',
   ],
@@ -155,6 +155,6 @@ export const loesungen: string[][] = [
     'Der Fall: Tom hat eine zweite Quelle gefunden (Klassenfahrt). Das Fake war schneller, weil es ein starkes Gefühl macht.',
     'Der Fall im Chat: Alle sechs Warnzeichen stecken drin. Prüfen: Seite der Stadt oder des Busunternehmens.',
     'Schlagzeilen-Wette: Warnzeichen haben die sechs Karten mit !!!, „Ein Arzt verrät“, „Insider“, „Nur heute“, „Skandal“ und „Mein Cousin kennt einen“.',
-    'KI – geht klar? Erklären lassen: ja. Aufsatz abgeben, Sorgen erzählen: kommt darauf an. Stimme nachmachen, Fake teilen: nein.',
+    'KI – geht klar? Erklären lassen: ja. Sorgen erzählen: kommt darauf an (kann entlasten, ersetzt keinen Menschen). Aufsatz als eigenen abgeben, Stimme nachmachen, Fake teilen: nein.',
   ],
 ]

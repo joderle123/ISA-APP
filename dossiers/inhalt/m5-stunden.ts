@@ -34,7 +34,7 @@ export function stunden(d: Heft): Stunde[] {
         material: 'die 12 Nachrichten-Karten und 4 Bedeutungs-Karten von der nächsten Seite (ausschneiden), eine Münze pro Person, ein Würfel',
         schritte: [
           'Die vier Bedeutungen liegen auf dem Tisch. Eine Nachricht wird aufgedeckt.',
-          'Alle legen **gleichzeitig** ihre Münze auf die Bedeutung, die sie lesen. Liegen alle Münzen auf einer Karte: 1 Punkt für die Gruppe.',
+          'Alle legen **gleichzeitig** ihre Münze auf die Bedeutung, die sie lesen. Liegen alle Münzen auf derselben Bedeutung – nicht auf „kann man nicht wissen“: 1 Punkt für die Gruppe.',
           'Zählt am Ende jeder Runde eure Punkte. In welcher Runde wart ihr euch am häufigsten einig?',
         ],
         runden: [
@@ -52,7 +52,7 @@ export function stunden(d: Heft): Stunde[] {
       material('12 Nachrichten und 4 Bedeutungen', 6,
         karten(4, 18, 'Die Bedeutungen: ausschneiden und auf den Tisch legen.', ['freundlich', 'genervt', 'traurig', 'kann man nicht wissen'].map((t) => ({ t })), true),
         karten(4, 18, 'Die Nachrichten: ausschneiden, mischen, verdeckt stapeln.', NACHRICHTEN.map((t) => ({ t: `„${t}“` })))),
-      st('Zu zweit: Rücken an Rücken', '10 Min.', 'zu zweit', 'pencil', 'Papier und Stifte austeilen. Nach Durchgang 2 die Bilder nebeneinanderlegen.',
+      st('Zu zweit: Rücken an Rücken', '10 Min.', 'zu zweit', 'pencil', 'Papier und Stifte austeilen. Zu dritt: eine Person beschreibt, zwei zeichnen, dann wechseln. Nach Durchgang 2 die Bilder nebeneinanderlegen.',
         text('Ihr sitzt Rücken an Rücken. A zeichnet ein einfaches Bild aus fünf Formen (Kreis, Dreieck, Viereck, Linie, Stern) und beschreibt es. B zeichnet mit. **Durchgang 1:** B darf nichts fragen. **Durchgang 2:** neues Bild, Rollen tauschen – jetzt sind Fragen erlaubt.'),
         fragen(null, kreuz('Wann war das Bild genauer?', 'ohne Fragen', 'mit Fragen'))),
       schluss(koerper, 'noch einmal: ok.', [kreuzU('Du bekommst wieder ein „ok.“ und bist unsicher. Was machst du?', 'nachfragen: „Wie meinst du das?“', 'raten', 'beleidigt sein'), kreuz('Schau auf Station 1: Kannst du aus zwei Buchstaben sicher lesen, was gemeint ist?', 'ja', 'nein')], ['gemacht']),
@@ -66,7 +66,7 @@ export function stunden(d: Heft): Stunde[] {
     seite(
       ankommen('du im Streit', kreuz('Was passiert bei dir im Streit eher?', 'ich werde laut', 'ich werde still', 'ich gehe'), strich('Wie gut kannst du sagen, was dich stört?', 'gar nicht', 'gut')),
       fall(streit, 'Yusuf und der Meister', [
-        kreuzU('An welchem Satz ist es gekippt?', '„Schon wieder.“', '„Sie haben mich doch eh auf dem Kieker!“'),
+        kreuzU('An welchem Satz ist es gekippt?', '„Schon wieder.“', '„Sie haben doch eh was gegen mich!“'),
         kreuzU('Was wollte Yusuf eigentlich sagen?', 'Der Bus ist ausgefallen. Es ist mir peinlich.', 'Der Meister ist unfair.'),
         kreuz('Yusufs Satz war …', 'ein Angriff', 'eine Info'),
       ]),
@@ -120,7 +120,7 @@ export function stunden(d: Heft): Stunde[] {
     seite(
       clip(bis, 'Wie viel Nähe ist okay?', [kreuz('Wie nah darf dir ein Fremder kommen?', 'sehr nah', 'eine Armlänge', 'weiter weg')], ['Das passiert im Experiment:', 'So reagieren die Leute:'],
         [kreuzU('Ist der Abstand bei allen gleich?', 'Nein. Jeder hat seinen.', 'Ja.'), kreuzU('Chloé wurde nicht gefragt. Was hat ihr Körper gemeldet?', 'Der Bauch zieht sich zusammen.', 'nichts')]),
-      st('Erst machen: der Stopp-Abstand', '8 Min.', 'zwei Reihen · alle gleichzeitig', 'ruler-measure', 'Alle Paare gleichzeitig, so schaut niemand zu. Wer Stopp hört, bleibt sofort stehen. Danach Abstände vergleichen.',
+      st('Erst machen: der Stopp-Abstand', '8 Min.', 'zwei Reihen · alle gleichzeitig', 'ruler-measure', 'Alle Paare gleichzeitig, so schaut niemand zu. Bei ungerader Zahl geht die Leitung mit; wer nicht mag, misst die Abstände. Wer Stopp hört, bleibt sofort stehen. Danach Abstände vergleichen.',
         text('Zwei Reihen stehen sich gegenüber, vier Meter Abstand. Eine Reihe geht langsam los. Wer steht, sagt **Stopp**, sobald es zu nah wird. Wer Stopp hört, bleibt stehen. **Sofort.** Dann tauschen.'),
         fragen(null, kreuz('Waren alle Abstände gleich?', 'ja', 'nein'), kreuz('Wie war es, Stopp zu sagen?', 'leicht', 'komisch', 'schwer'))),
       stimmtDas(bis),
@@ -163,7 +163,7 @@ export function stunden(d: Heft): Stunde[] {
         kreis('Was war beim zweiten Mal anders? Kreise alles ein.', 'sie steht vor ihm', 'kein Lächeln', 'kein „haha“', '„Jetzt.“', 'sie schreit'),
         kreuzU('Warum hat die erste Nachricht nicht gewirkt?', '„haha“ und „bitte“ klangen wie ein Witz.', 'Er hat sie nicht gelesen.'),
       ]),
-      st('Die Jury: drei Stopps', '8 Min.', 'alle · die Leitung zeigt', 'gavel', 'Sie zeigen die drei Stopps selbst – die Jugendlichen bewerten nur.',
+      st('Die Jury: drei Stopps', '8 Min.', 'alle · die Leitung zeigt', 'gavel', 'Sie zeigen die drei Stopps selbst, jedes Mal mit demselben Wort „Stopp.“ – die Jugendlichen bewerten nur.',
         fragen(stopp.moves[0].kontext ?? null, ...stopp.moves[0].fragen)),
     ),
     seite(
@@ -179,7 +179,7 @@ export function stunden(d: Heft): Stunde[] {
         schritte: [
           '**Teil 1 · die Leiter:** Legt die 12 Stopp-Karten in eine Reihe – von „unklar“ bis „klar“. Ihr müsst euch einigen.',
           '**Teil 2 · welches passt?** Eine Situation wird vorgelesen. Jede Person tippt auf die Stopp-Karte, die sie nehmen würde – alle gleichzeitig.',
-          '**Teil 3 · im Chor:** Alle stehen mit dem Gesicht zur Wand. Füße fest, Stimme ruhig. Auf „drei“ sagen alle gleichzeitig den Satz der Runde. Dreimal.',
+          '**Teil 3 · im Chor:** Alle stehen mit dem Gesicht zur Wand. Füße fest, Stimme ruhig. Auf „drei“ sagen alle gleichzeitig den klarsten Satz von der Leiter (z. B. „Hör auf. Jetzt.“). Dreimal.',
           '**Teil 4 · das Okay:** Die Leitung sagt zu allen: „Nein. Lass das.“ Alle antworten im Chor: „Okay.“',
         ],
         regeln: ['Niemand sagt allein etwas vor den anderen. Gesprochen wird nur im Chor, mit dem Gesicht zur Wand.', 'Wer nicht mitsprechen mag, steht dabei und hört zu.'],
@@ -206,14 +206,14 @@ export const loesungen: string[][] = [
     'Drei Kanäle: Meist steigt die Zahl der Punkte von Runde zu Runde. Das ist die Botschaft: Im Chat fehlen Stimme und Körper.',
   ],
   [
-    'Der Fall: Gekippt ist es bei „Sie haben mich doch eh auf dem Kieker!“ – ein Angriff. Yusuf wollte sagen: Der Bus ist ausgefallen, es ist mir peinlich.',
+    'Der Fall: Gekippt ist es bei „Sie haben doch eh was gegen mich!“ – ein Angriff. Yusuf wollte sagen: Der Bus ist ausgefallen, es ist mir peinlich.',
     'Finde den Angriff: Echte Ich-Sätze sind der erste und der dritte. Angriffswörter: immer, nie, typisch, schon wieder.',
-    'Satz-Werkstatt: Angriffe sind alle „Du …“-Sätze, „Typisch …“, „Wegen dir …“ und die zwei falschen Ich-Sätze („Ich finde, du bist …“, „Ich fühle mich, als wärst du …“).',
-    'Yusufs zweiter Versuch: „Ich bin zu spät, weil der Bus ausgefallen ist. Ich will, dass wir das kurz allein klären.“',
+    'Satz-Werkstatt: Angriffe sind alle „Du …“-Sätze, „Immer nimmst du …“, „Typisch …“, „Wegen dir …“ und die zwei falschen Ich-Sätze („Ich finde, du bist …“, „Ich fühle mich, als wärst du …“).',
+    'Yusufs zweiter Versuch: „Ich bin genervt, weil der Bus ausgefallen ist – und es ist mir peinlich. Ich will, dass wir das kurz allein klären.“',
   ],
   [
     'Der Fall: Der Bauch zieht sich zusammen – das ist das Signal. Nett gemeint heißt nicht: darf nicht stören.',
-    'Drei Felder: Die meisten Karten sind eindeutig. Zu zwei Feldern passen zum Beispiel das Ladekabel (Sachen und Inneres) und der Screenshot (Digital und Inneres).',
+    'Drei Felder: Körper und Sachen – Arm, Bus, Ladekabel, Haare, Zimmer, Teller · Inneres – vor allen gefehlt, Lachen über Wichtiges, Geheimnis, Spitzname, Familie, „Stell dich nicht so an“ · Digital – Foto, Chats mitlesen, 20 Nachrichten, Gruppe, Passwort, Screenshot. Zu zwei Feldern passen zum Beispiel das Zimmer (Sachen und Inneres) und der Screenshot (Digital und Inneres).',
     'Runde 2: Unterschiedliche Zahlen sind das Ergebnis, kein Fehler. Grenzen liegen bei jedem woanders.',
   ],
   [

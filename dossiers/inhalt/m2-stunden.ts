@@ -38,7 +38,7 @@ export function stunden(d: Heft): Stunde[] {
           'Abstimmung: Welches Grundgefühl würdet ihr abschaffen? Jede Person legt eine Münze oder einen Stift dazu.',
         ],
         regeln: ['Niemand muss etwas vorspielen. Es wird gelegt, geschrieben und abgestimmt.'],
-        zu3: 'Ein Team. Schafft ihr alle 24 Karten in fünf Minuten – und danach 15 neue Wörter?',
+        zu3: 'Ein Team, die Leitung prüft. Schafft ihr alle 24 Karten in fünf Minuten – und danach 15 neue Wörter?',
         wertung: { kopf: ['Punkte', 'Karten gelegt', 'neue Wörter', 'Summe'], zeilen: ['Team A', 'Team B'] },
         auswertung: ['Für welches Grundgefühl habt ihr die meisten Wörter?', 'Das Gefühl mit den meisten Stimmen ist weg. Was fehlt dann – eine Woche lang?'],
       }),
@@ -56,7 +56,7 @@ export function stunden(d: Heft): Stunde[] {
   const SITUATIONEN = ['Dein bester Freund sagt zum dritten Mal ab.', 'Du wirst vor allen gelobt.', 'Jemand hat in deinen Sachen gewühlt.', 'Morgen ist ein wichtiges Gespräch.', 'Du hast etwas Peinliches geschickt – an die falsche Person.', 'Ihr zieht um. Keiner hat dich gefragt.', 'Jemand lacht, als du reinkommst.', 'Du bekommst etwas geschenkt, das du dir lange gewünscht hast.', 'Dein Handy ist weg.', 'Jemand, den du magst, schreibt nicht zurück.', 'Du sollst vor der Klasse etwas sagen.', 'Jemand isst mit offenem Mund direkt neben dir.']
   const s2 = stunde('Welches Gefühl sitzt bei dir gerade am Steuer?', ['merken, welches Gefühl dich gerade lenkt', 'sagen, wofür Kummer gut ist', '„mir egal“ übersetzen'],
     seite(
-      ankommen('dein Pult heute', { f: 'Wer sitzt bei dir gerade am Steuer? Kreise ein.', kreis: ['Freude', 'Kummer', 'Angst', 'Wut', 'Ekel', 'Langeweile'] }),
+      ankommen('dein Pult heute', { f: 'Stell dir vor: Ein Gefühl lenkt dich gerade wie ein Fahrer. Welches? Kreise ein.', kreis: ['Freude', 'Kummer', 'Angst', 'Wut', 'Ekel', 'Langeweile'] }),
       modell(steuer, 'das Steuerpult im Kopf', ['steering-wheel', 'arrows-shuffle', 'heart-handshake'], { intro: 'In deinem Kopf steht ein Steuerpult. Immer sitzt ein Gefühl daran – und lenkt, was du tust.' }),
       clip(steuer, 'Welches Gefühl darf bleiben?', [kreuzU('Welches Gefühl würdest du am liebsten abschaffen?', 'Angst', 'Wut', 'Kummer', 'keins')], ['Dieses Gefühl verteidigt er:', 'Dafür ist es gut:'],
         [kreuz('Würdest du dein Gefühl immer noch abschaffen?', 'ja', 'nein', 'weiß nicht')], '15 Min.'),
@@ -108,7 +108,7 @@ export function stunden(d: Heft): Stunde[] {
         fragen('Vier kurze Experimente. Alle machen sie **gleichzeitig** – niemand schaut zu. Nach jedem: zehn Sekunden still stehen und spüren.', ...koerper.moves[0].fragen)),
     ),
     seite(
-      modell(koerper, 'jedes Gefühl hat ein Muster', ['flame', 'heartbeat', 'weight'], { zeit: '8 Min.', fragen: [kreuz('Welches Muster kennst du am besten?', 'heiß', 'eng', 'schwer')] }),
+      modell(koerper, 'jedes Gefühl hat ein Muster', ['flame', 'heartbeat', 'weight'], { zeit: '8 Min.', intro: 'So spüren es viele Menschen. Bei dir kann es anders sein.', fragen: [kreuz('Welches Muster kennst du am besten?', 'heiß', 'eng', 'schwer')] }),
       fall(koerper, 'Lina lächelt', [
         { f: 'Welche Signale sendet Linas Körper? Kreise alle ein.', kreis: ['Stein im Magen', 'kalte Hände', 'Zähne mahlen', 'Zittern', 'Hunger', 'Müdigkeit'] },
         kreuzU('Was sagt Linas Gesicht – und was sagt ihr Körper?', 'Gesicht: alles gut. Körper: Alarm.', 'Beide sagen: alles gut.', 'Beide sagen: Alarm.'),
@@ -129,7 +129,7 @@ export function stunden(d: Heft): Stunde[] {
         ],
         regeln: ['Niemand muss tanzen, singen oder etwas erklären.'],
         auswertung: ['Welcher Song ist bei euch direkt in den Körper gegangen?', 'Bei welchem Song lagen eure Zahlen weit auseinander?'],
-      }, { danach: [tabelle('18mm auto 22mm auto', ['Song', 'Gefühl', '0 bis 10', 'Wo im Körper?'], [['1', '', '', ''], ['2', '', '', ''], ['3', '', '', ''], ['4', '', '', '']], 8)] }),
+      }, { leitung: 'Songs vorher auswählen, gern ohne Text. Vorschläge der Jugendlichen kurz selbst anhören – keine Texte mit Gewalt oder Abwertung.', danach: [tabelle('18mm auto 22mm auto', ['Song', 'Gefühl', '0 bis 10', 'Wo im Körper?'], [['1', '', '', ''], ['2', '', '', ''], ['3', '', '', ''], ['4', '', '', '']], 8)] }),
     ),
     seite(
       fuerDich('mein erstes Signal', '8 Min.', fragen('Denk an einen Moment, in dem du wütend oder ängstlich wurdest. Nur für dich.', ...koerper.moves[1].fragen, kreuz('Schau auf Station 1: Hast du dieselbe Stelle eingekreist?', 'ja', 'nein'))),
@@ -143,8 +143,8 @@ export function stunden(d: Heft): Stunde[] {
   const s4 = stunde('Kann man froh und sauer gleichzeitig sein?', ['zwei Gefühle auf einmal benennen', 'sagen, wie stark ein Gefühl ist – von 0 bis 10', 'unter der Wut nachschauen, was noch da ist'],
     seite(
       ankommen('etwas, das dich aufgeregt hat', kreuz('Hattest du schon mal zwei Gefühle gleichzeitig?', 'ja', 'nein', 'weiß nicht'), zeile('Was hat dich zuletzt aufgeregt? Ein Stichwort reicht.')),
-      st('Erst machen: der Zwillings-Check', '6 Min.', 'zu zweit · Rücken an Rücken', 'users', 'Schnell hintereinander fragen. Es geht um den Vergleich, nicht um die „richtige“ Zahl.',
-        text('Stellt euch Rücken an Rücken. Die Leitung fragt: „Der Bus fährt dir vor der Nase weg. Wie genervt bist du, von 0 bis 10?“ Auf „drei“ zeigt ihr die Zahl mit den Fingern. **Gleiche Zahl = Zwilling.** Fünf Fragen.'),
+      st('Erst machen: der Zwillings-Check', '6 Min.', 'zu zweit · Rücken an Rücken', 'users', 'Fragen: Bus fährt weg (wie genervt?) · Morgen ist frei (wie froh?) · Akku 1 % (wie nervös?) · Jemand sitzt auf deinem Platz (wie sauer?) · Dein Lieblingslied läuft (wie gut gelaunt?). Schnell hintereinander. Es geht um den Vergleich.',
+        text('Stellt euch zu zweit mit dem Rücken zueinander, mit etwas Abstand (zu dritt geht auch). Die Leitung fragt: „Der Bus fährt dir vor der Nase weg. Wie genervt bist du, von 0 bis 10?“ Auf „drei“ zeigt ihr die Zahl mit den Fingern und dreht euch um. **Gleiche Zahl = Zwilling.** Fünf Fragen.'),
         fragen(null, kreuz('Wie oft wart ihr Zwillinge?', '0', '1–2', '3–5'))),
       fall(alles, 'Nele zieht um', [
         { f: 'Welche Gefühle hat Nele? Kreise alle ein.', kreis: ['Freude', 'Wut', 'Trauer', 'Angst', 'Ekel', 'Stolz'] },
@@ -197,7 +197,7 @@ export const loesungen: string[][] = [
     'Schluss: zum Beispiel „Ich bin sauer, ich habe Angst vor morgen und ich schäme mich.“',
   ],
   [
-    'Der Fall: „Mir egal“ heißt bei Noah: Es ist ihm zu viel. Am Steuer saß die ganze Zeit Kummer. Geholfen hätte: jemandem sagen, dass er traurig ist.',
+    'Der Fall: „Mir egal“ heißt bei Noah: Es ist ihm zu viel. Am Steuer saß die ganze Zeit Kummer. Geholfen hätte: jemandem sagen, dass er traurig ist. Wer Wut einkreist, liegt nicht falsch: Am Ende springt Wut ans Steuer – darunter sitzt Kummer.',
     'Pult-Wette: Es gibt keine richtige Lösung. Wichtig ist der Moment, in dem die Münzen weit auseinanderliegen: gleiche Situation, anderes Gefühl.',
     'Kummer hat einen Job: Er zeigt, was wichtig war, und holt Hilfe.',
     'Schluss: „Ja. Ein bisschen.“ reicht – ein ehrlicher Satz statt „mir egal“.',
@@ -206,7 +206,7 @@ export const loesungen: string[][] = [
     'Körper-Labor: 1 Sprint – Herz/Atem, Hitze (wie Angst oder Wut); 2 Anspannen – Muskeln (wie Wut); 3 Zeitlupe – Schwere (wie Trauer); 4 Siegerpose – Weite (wie Freude, Stolz).',
     'Der Fall: Stein im Magen, kalte Hände, Zähne mahlen, Zittern. Gesicht: alles gut. Körper: Alarm. Erstes Signal: der Stein im Magen.',
     'Körper-Karte und Song-Tipp: kein Richtig oder Falsch. Häufig: Wut heiß (Kopf, Hände), Angst eng (Brust, Hals), Trauer schwer (Brust, Schultern).',
-    'Clip danach: aufrecht hinstellen und tief atmen.',
+    'Clip danach: aufrecht hinstellen und tief atmen. Vorsicht: Die Wirkung der Haltung auf Gefühle ist in Studien klein und umstritten („Power Posing“) – als Versuch anbieten, nicht als sicheren Trick.',
   ],
   [
     'Der Fall: Freude, Wut, Trauer und Angst – alle vier sind echt. Nele muss sich nicht entscheiden.',

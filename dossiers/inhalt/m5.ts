@@ -272,7 +272,7 @@ const d: Heft = {
       "szene": {
         "bild": "peep:yusuf:wuetend",
         "name": "Yusuf, 16",
-        "text": "Yusuf kommt zu spät in den Betrieb. Der Meister, vor allen: „Schon wieder.“ Yusuf: „Sie haben mich doch eh auf dem Kieker!“ Der Meister: „So redest du nicht mit mir.“ Zwei Minuten später steht Yusuf draußen. Dabei wollte er nur sagen: Der Bus ist ausgefallen. Und dass es ihm peinlich ist.",
+        "text": "Yusuf kommt zu spät in den Betrieb. Der Meister, vor allen: „Schon wieder.“ Yusuf: „Sie haben doch eh was gegen mich!“ Der Meister: „So redest du nicht mit mir.“ Zwei Minuten später steht Yusuf draußen. Dabei wollte er nur sagen: Der Bus ist ausgefallen. Und dass es ihm peinlich ist.",
         "frage": "An welchem Satz ist es gekippt?"
       },
       "fakten": [
@@ -294,7 +294,7 @@ const d: Heft = {
         "kanal": "ErzieherWissen",
         "url": "https://www.youtube.com/watch?v=76kTePn8mqI",
         "dauer": "die ersten 4 Min.",
-        "frage": "Das Video nennt vier Teile, das Heft drei. Welchen kannst du weglassen?"
+        "frage": "Gewaltfrei heißt hier: reden ohne Angriff. Das Video nennt vier Schritte – welche findest du im Bauplan „Ich bin … weil … Ich will, dass …“ wieder?"
       },
       "mythen": [
         [
@@ -329,7 +329,7 @@ const d: Heft = {
               ]
             },
             {
-              "f": "Welche Wörter machen jeden Satz zum Angriff? Kreise ein:",
+              "f": "Welche Wörter machen einen Satz schnell zum Angriff? Kreise ein:",
               "kreis": [
                 "immer",
                 "nie",
@@ -411,7 +411,7 @@ const d: Heft = {
       "leitung": {
         "einsatz": "Szene als Einstieg vor oder nach „Schritt vor, Schritt zurück“. Move A und B im Schritt „Ich-Botschaften würfeln“. Die Challenge ist das Umwandler-Spiel. „Dein Satz“ bleibt privat.",
         "loesungen": [
-          "Szene: Es kippt bei „Sie haben mich eh auf dem Kieker“ – ein Du-Satz als Gegenangriff. Auch „Schon wieder“ vor allen ist ein Angriff: Beide Seiten haben Anteil.",
+          "Szene: Es kippt bei „Sie haben doch eh was gegen mich“ – ein Du-Satz als Gegenangriff. Auch „Schon wieder“ vor allen ist ein Angriff: Beide Seiten haben Anteil.",
           "Move A: Satz 1 und 3. Satz 2 ist ein Urteil, Satz 4 ein versteckter Vorwurf. Angriffswörter: immer, nie, typisch, schon wieder.",
           "Move B: z. B. „Ich bin gestresst, weil der Bus ausgefallen ist. Ich will, dass Sie wissen: Es war keine Absicht.“"
         ],
@@ -598,7 +598,7 @@ const d: Heft = {
       "szene": {
         "bild": "peep:jana:neutral",
         "name": "Jana, 15",
-        "text": "Ein Typ aus der Parallelklasse stellt ein Foto von Jana in die Gruppe. Jana schreibt: „haha lösch das mal bitte“. Er löscht es nicht. Am nächsten Tag steht sie vor ihm. Gerade. Kein Lächeln. „Lösch das Foto. Jetzt.“ Er löscht es. Gleiche Bitte. Anderes Ergebnis.",
+        "text": "Ein Typ aus der Parallelklasse stellt ein Foto von Jana in die Gruppe. Jana schreibt: „haha lösch das mal bitte“. Er löscht es nicht. Am nächsten Tag steht sie vor ihm. Gerade. Kein Lächeln. Ruhige, feste Stimme: „Lösch das Foto. Jetzt.“ Er löscht es. Gleiche Bitte. Anderes Ergebnis.",
         "frage": "Was war beim zweiten Mal anders?"
       },
       "fakten": [
@@ -672,7 +672,7 @@ const d: Heft = {
           "kontext": "Du willst etwas. Der andere sagt: „Nein. Lass das.“ In dir kocht es.",
           "fragen": [
             {
-              "f": "Drei Wege. Mach die Rechnung auf:",
+              "f": "Drei Wege. Ein Stichwort pro Feld reicht – oder füll nur die erste Zeile aus:",
               "preis": {
                 "kopf": [
                   "kostet mich",
@@ -860,7 +860,7 @@ const d: Heft = {
       "titel": "Chat-Check",
       "icon": "device-mobile-message",
       "zeilen": [
-        "Anspannung über 70? **Nicht senden.**",
+        "Anspannung über 70 (von 100)? **Nicht senden.**",
         "Lies es so, als wärst du genervt. Klingt es noch gut?",
         "Wichtig oder Streit? Sprachnachricht oder persönlich.",
         "Unklar? „Wie meinst du das?“"
@@ -942,18 +942,18 @@ const d: Heft = {
     "hilfe": [
       "Szene und Fakten vorlesen oder reihum lesen lassen.",
       "Bei Schreibaufgaben reicht ein Stichwort. Wer nicht schreiben mag, diktiert oder zeichnet.",
-      "Moves zu zweit lösen lassen, auch wenn „allein“ dasteht.",
-      "Bei hoher Anspannung: nur Challenge und Line."
+      "Aufgaben für dich zu zweit lösen lassen, auch wenn „allein“ dasteht.",
+      "Bei hoher Anspannung: nur die große Runde und den Schluss."
     ],
     "forder": [
       "Eine eigene Szene schreiben (fünf Sätze, erfundene Person).",
       "Einen eigenen Hot Take formulieren und zur Abstimmung stellen.",
       "Die „Rechnung“ (kostet mich / bringt mir) für eine echte Situation aufmachen.",
-      "Bei der Revier-Übung als Schiedsrichter/in Rückmeldung geben."
+      "In der Satz-Werkstatt die Umbauten des anderen Teams prüfen und begründen."
     ],
     "gespraech": "Die Szenen sind nah am Alltag der Jugendlichen (Betrieb, Wohngruppe, Klinik). Das ist gewollt: Wer sich wiedererkennt, hört zu. Niemand muss sagen, ob er etwas kennt. Fragen Sie nach der Figur („Was braucht Tom?“), nicht nach der Person im Raum. Erzählt jemand von Übergriff, Gewalt oder Bedrohung: freundlich unterbrechen, ein Gespräch unter vier Augen direkt nach der Einheit anbieten und die zuständige Leitung (Responsable) informieren.",
     "druck": [
-      "A4, doppelseitig, an der langen Seite gewendet. So liegen Szene (links) und „Dein Move“ (rechts) nebeneinander.",
+      "A4, doppelseitig, an der langen Seite gewendet. Material-Seiten (Schere) einmal extra einseitig drucken und daraus schneiden – im Heft der Jugendlichen steht auf der Rückseite die nächste Station.",
       "Seiten 1–{J} für die Jugendlichen, Seiten {L} nur für Sie.",
       "Schwarz-Weiß ist möglich; das Titelblatt braucht viel Toner.",
       "Seite {K} (Karten) einzeln und einseitig drucken, am besten auf festerem Papier."

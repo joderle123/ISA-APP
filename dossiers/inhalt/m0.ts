@@ -1,7 +1,7 @@
 // REAL TALK #00 · NEU HIER – Modul 0 (Ankommen, Einheiten 1–3).
 // Inhalt als Daten (wird auch per Skript bearbeitet). Texte: **fett**, ==markiert==.
 import type { Heft } from '../typen'
-import { stunden } from './m0-stunden'
+import { loesungen, stunden } from './m0-stunden'
 import { aufStunden } from './stunden-hilfe'
 
 const d: Heft = {
@@ -92,7 +92,7 @@ const d: Heft = {
         ]
       },
       {
-        "f": "Was soll in diesem Kurs auf keinen Fall passieren?",
+        "f": "Was soll in diesem Kurs auf jeden Fall passieren?",
         "linien": 1
       }
     ]
@@ -268,7 +268,7 @@ const d: Heft = {
       "szene": {
         "bild": "peep:chloe:neutral",
         "name": "Chloé, 16",
-        "text": "Chloé sagt in neuen Gruppen sonst drei Wochen lang nichts. Sie beobachtet: Wer redet wie? Wer lacht über wen? Wer ist gefährlich? Diesmal fragt die Leitung schon am vierten Tag: „Wer ist schon mal in den falschen Bus gestiegen?“ Chloé macht einen Schritt nach vorn. Neben ihr steht der Laute mit der Kappe. Er grinst: „Linie 12?“ Zum ersten Mal lacht Chloé.",
+        "text": "Chloé sagt in neuen Gruppen sonst drei Wochen lang nichts. Sie beobachtet: Wer redet wie? Wer lacht über wen? Wer ist gefährlich? Diesmal fragt die Leitung schon am vierten Tag: „Wer ist schon mal in den falschen Bus gestiegen?“ Wer das kennt, soll einen Schritt nach vorn machen. Chloé macht einen Schritt nach vorn. Neben ihr steht der Laute mit der Kappe. Er grinst: „Auch Linie 12?“ Zum ersten Mal lacht Chloé.",
         "frage": "Warum war gerade diese Frage ein guter Anfang?"
       },
       "fakten": [
@@ -290,7 +290,7 @@ const d: Heft = {
         "kanal": "Terra Xplore",
         "url": "https://www.youtube.com/watch?v=e-DBi8d4UAM",
         "dauer": "die ersten 5 Min.",
-        "frage": "In welche Schublade wurdest du schon gesteckt – in Sekunden?"
+        "frage": "„In eine Schublade stecken“ heißt: nach einem Blick denken, wie jemand ist. In welche Schublade wurdest du schon gesteckt?"
       },
       "mythen": [
         [
@@ -436,13 +436,13 @@ const d: Heft = {
       "szene": {
         "bild": "peep:finn:froh",
         "name": "Finn, 15",
-        "text": "Finn testet jede neue Gruppe. Am dritten Tag soll er Jana mit verbundenen Augen durch den Hof lotsen. Er könnte sie gegen die Bank laufen lassen – wäre ein Lacher. Jana sagt leise: „Ich hasse das. Sag mir einfach ehrlich, wo es langgeht.“ Finn schaut auf die Bank. Dann sagt er: „Zwei Schritte geradeaus. Stopp. Jetzt links.“ Jana kommt an, ohne einmal zu stolpern. Finn ist seltsam stolz.",
+        "text": "Finn testet jede neue Gruppe. Am dritten Tag lotst er Jana durch den Hof. Sie hat freiwillig die Augen zu. Er könnte sie gegen die Bank laufen lassen – wäre ein Lacher. Jana sagt leise: „Ich hab Schiss. Sag mir einfach ehrlich, wo es langgeht.“ Finn schaut auf die Bank. Dann sagt er: „Zwei Schritte geradeaus. Stopp. Jetzt links.“ Jana kommt an, ohne einmal zu stolpern. Finn ist seltsam stolz.",
         "frage": "Was hat Finn in diesem Moment entschieden?"
       },
       "fakten": [
         {
           "t": "Jeder zählt",
-          "x": "Ein Team ist so stark wie die Person, die gerade am meisten Mühe hat. **Doppelte Punkte gibt es nur zusammen.**"
+          "x": "Ein Team ist so stark wie die Person, die gerade am meisten Mühe hat. **Gewonnen ist erst, wenn alle ankommen.**"
         },
         {
           "t": "Wer führt, trägt",
@@ -474,7 +474,7 @@ const d: Heft = {
           "Ihr müsst euch nicht mögen. Ihr müsst euch aufeinander verlassen können."
         ]
       ],
-      "merk": "Wer führt, ==trägt.==",
+      "merk": "Wer führt, ==trägt Verantwortung.==",
       "moveUnter": "Verlass dich auf jemanden. Und sei verlässlich",
       "moves": [
         {
@@ -590,7 +590,7 @@ const d: Heft = {
           "Wer hat heute etwas für die Gruppe getan, ohne dass es groß auffiel?"
         ],
         "material": "Augenbinden, weicher Ball, Hütchen, Klemmbrett",
-        "blaetter": "Gefühlsrad, Natur-Challenges, Gruppenvertrag, Skills-Pass."
+        "blaetter": "Gefühlsrad, Natur-Aufgaben, Gruppenvertrag, Skills-Pass."
       }
     }
   ],
@@ -802,7 +802,7 @@ const d: Heft = {
       "Sie finden Gemeinsamkeiten mit anderen, ohne Persönliches preisgeben zu müssen.",
       "Sie übernehmen in einer Vertrauensübung Verantwortung für eine andere Person und benennen, was sie selbst in der Gruppe brauchen."
     ],
-    "start": "Titel und Ansage gemeinsam lesen (vorlesen – der Ton ist Absicht), Namen ins Heft, Soundcheck. Etwa 10 Minuten in Einheit 1 nach dem Ball-Rekord.",
+    "start": "Titel und Ansage gemeinsam lesen (vorlesen – der Ton ist Absicht), Namen ins Heft, Soundcheck. Etwa 10 Minuten vor Station 1 von Stunde 01.",
     "schluss": "Hot Takes: je zwei Sätze als Einstieg in eine Einheit – oder alle sechs im Stehen am Schluss, „Knack den Code“ als Wiederholung, Karten ausschneiden – „Unsere Regeln“ zuerst –, Abspann in der Abschlussrunde von Einheit 3.",
     "hilfe": [
       "Szene und Fakten vorlesen oder reihum lesen lassen.",
@@ -818,13 +818,13 @@ const d: Heft = {
     ],
     "gespraech": "In der ersten Ausgabe geht es um Sicherheit, nicht um Tiefe. Beim Gruppenvertrag offen sagen, wo die Vertraulichkeit endet: Wenn jemand in Gefahr ist, holt die Leitung Hilfe und sagt das der Person zuerst. Wer bei einem Satz sichtbar betroffen reagiert, wird nicht vor der Gruppe angesprochen. Blind- und Vertrauensübungen können Angst oder Wut auslösen – das Stopp-Recht gilt ohne Begründung.",
     "druck": [
-      "A4, doppelseitig, an der langen Seite gewendet. So liegen Szene (links) und „Dein Move“ (rechts) nebeneinander.",
+      "A4, doppelseitig, an der langen Seite gewendet. Material-Seiten (Schere) einmal extra einseitig drucken und daraus schneiden – im Heft der Jugendlichen steht auf der Rückseite die nächste Station.",
       "Seiten 1–{J} für die Jugendlichen, Seiten {L} nur für Sie.",
       "Schwarz-Weiß ist möglich; das Titelblatt braucht viel Toner.",
       "Seite {K} (Karten) einzeln und einseitig drucken, am besten auf festerem Papier."
     ],
     "hot": "Es gibt keine richtige Position. Nachfragen statt korrigieren: „Was hast du erlebt, dass du dort stehst?“ Take 5 („Wer petzt, gehört nicht dazu“) ist für viele ein Ehrenkodex. Nicht frontal angreifen, sondern unterscheiden lassen: Was ist Petzen – und was ist Hilfe holen, wenn jemand in Gefahr ist?",
-    "achtung": "Die Staffel „Der schlimmste Kurs der Welt“ handelt von einem erfundenen Kurs, nicht von echten Personen oder Klassen. Berührt wird in den Blind-Übungen nur an Schulter oder Ellbogen und nur nach Erlaubnis.",
+    "achtung": "Die Staffel „Der schlimmste Kurs der Welt“ handelt von einem erfundenen Kurs, nicht von echten Personen oder Klassen. In den Blind-Übungen wird nicht berührt – gelotst wird nur mit der Stimme.",
     "hintergrund": "Gruppen durchlaufen typische Phasen; am Anfang stehen Orientierung und die Frage nach Sicherheit (Tuckman). Verlässliche Regeln, an denen die Mitglieder beteiligt waren, und die Erfahrung, mit Erlebtem nicht allein zu sein, gehören zu den wichtigsten Wirkfaktoren von Gruppen (Yalom & Leszcz). Zugehörigkeit und Selbstbestimmung sind psychische Grundbedürfnisse (Deci & Ryan) – deshalb das Recht auf „weiter“. Programme zum sozial-emotionalen Lernen wirken nachweislich, wenn sie aktiv, aufeinander aufbauend und regelmäßig durchgeführt werden (Durlak et al.).",
     "quellen": "Tuckman (1965) · Yalom & Leszcz (2005) · Deci & Ryan (2000) · Durlak et al. (2011) · Rathus & Miller (2015). Angaben zu den Einheiten 1–3 in der Toolbox."
   },
@@ -833,5 +833,5 @@ const d: Heft = {
 
 // Fassung mit Stunden (16.11.2026): Die Einheiten sind zusammenhängende Stunden (m0-stunden.ts). Die Angaben oben bleiben als Quelle;
 // gedruckt werden die Stunden.
-aufStunden(d, stunden(d), { geprueft: '16.11.2026' })
+aufStunden(d, stunden(d), { geprueft: '16.11.2026', loesungen })
 export default d

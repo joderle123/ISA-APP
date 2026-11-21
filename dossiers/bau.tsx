@@ -269,7 +269,7 @@ function baue(d: Heft): string {
   const lt = d.leitung
   const n = d.tracks.length
   const ablauf = (e: Track) => {
-    if (!e.gruppe.some((x) => x.wann)) return ''
+    if (e.stunde || !e.gruppe.some((x) => x.wann)) return ''
     const alle2 = [{ titel: `Challenge „${e.challenge.titel}“`, wann: e.challenge.wann ?? 'Mitte' }, ...e.gruppe.map((x) => ({ titel: x.titel, wann: x.wann ?? 'Mitte' }))]
     const g = (w: string) => alle2.filter((x) => x.wann === w).map((x) => esc(x.titel)).join(', ')
     return `<span class="abl">${['Start', 'Mitte', 'Schluss'].filter((w) => g(w)).map((w) => `<b>${w}:</b> ${g(w)}`).join(' · ')}</span>`

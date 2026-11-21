@@ -80,7 +80,10 @@ export function baueStunde(e: Track, i: number, h: StundenHelfer): string[] {
   const station = (s: Station): string => {
     if (!s.fort) lauf++
     fn = 0
-    return `<div class="sd-st${s.fort ? ' fort' : ''}"><div class="kp"><div class="b">${s.fort ? ic(s.icon) : lauf}</div><h3>${t(s.titel)}</h3><div class="me mo"><span>${ic(s.fort ? 'paperclip' : s.icon)}${esc(s.wie)}</span>${s.zeit ? `<span>${esc(s.zeit)}</span>` : ''}</div></div><div class="kb">${s.bausteine.map(baustein).join('')}</div></div>`
+    // Material gehört zur großen Runde: die Nummer wird hier ausgerechnet, nicht von Hand gepflegt
+    const runde = alle.find((x) => /^Die große Runde/.test(x.s.titel))
+    const wie = s.fort && /^Material/.test(s.titel) && runde ? s.wie.replace(/zu Station \d+/, `zu Station ${runde.nr}`) : s.wie
+    return `<div class="sd-st${s.fort ? ' fort' : ''}"><div class="kp"><div class="b">${s.fort ? ic(s.icon) : lauf}</div><h3>${t(s.titel)}</h3><div class="me mo"><span>${ic(s.fort ? 'paperclip' : s.icon)}${esc(wie)}</span>${s.zeit ? `<span>${esc(s.zeit)}</span>` : ''}</div></div><div class="kb">${s.bausteine.map(baustein).join('')}</div></div>`
   }
   /** Streifen: alle Stationen der Stunde, die dieser Seite hervorgehoben */
   const streifen = (seite: number) => `<div class="sd-weg">${alle.map((x) => `<span class="${x.seite === seite ? 'da' : x.seite < seite ? 'war' : ''}"><i>${x.nr}</i>${esc(kurzName(x.s))}</span>`).join('')}</div>`

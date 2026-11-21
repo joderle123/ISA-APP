@@ -147,9 +147,9 @@ const d: Heft = {
         "kanal": "Die Techniker · Dr. Johannes Wimmer",
         "url": "https://www.youtube.com/watch?v=JhUaiZxaNxI",
         "dauer": "die ersten 5 Min.",
-        "frage": "Welches Gefühl kommt im Video am schlechtesten weg – zu Recht?"
+        "frage": "Wozu sind Gefühle da – auch die, die nerven?"
       },
-      "merk": "Erst lesen. ==Dann antworten.==",
+      "merk": "Erst das Gefühl lesen. ==Dann antworten.==",
       "moveUnter": "Lies dein Warnsystem",
       "moves": [
         {
@@ -292,7 +292,7 @@ const d: Heft = {
       "fakten": [
         {
           "t": "Fünf am Pult",
-          "x": "Freude, Kummer, Angst, Wut, Ekel. Mit 13 ziehen neue ein: **Zweifel, Neid, Peinlichkeit, Langeweile.**"
+          "x": "Im Film „Alles steht Kopf“ sitzen fünf Gefühle am Pult: Freude, Kummer (= Trauer), Angst, Wut, Ekel. In Teil 2 ist Riley 13 – da kommen neue dazu: **Zweifel, Neid, Peinlichkeit, Langeweile.**"
         },
         {
           "t": "Wer steuert, bestimmt",
@@ -499,7 +499,7 @@ const d: Heft = {
         "kanal": "Terra Xplore",
         "url": "https://www.youtube.com/watch?v=17uxqk8qPZM",
         "dauer": "die ersten 5 Min.",
-        "frage": "Wie verändert die Haltung das Gefühl? Probier es beim Schauen aus."
+        "frage": "Embodiment heißt: Der Körper beeinflusst die Gefühle. Wie verändert die Haltung das Gefühl? Probier es beim Schauen aus."
       },
       "merk": "Dein Gesicht kann lügen. ==Dein Körper nicht.==",
       "moveUnter": "Finde dein erstes Signal",
@@ -632,13 +632,13 @@ const d: Heft = {
       "szene": {
         "bild": "peep:nele:verwirrt",
         "name": "Nele, 15",
-        "text": "Neles Mutter zieht mit ihr zu ihrem neuen Freund. Größeres Zimmer, eigener Balkon. Alle sagen: „Freu dich doch!“ Nele freut sich. Ein bisschen. Sie ist auch wütend, weil keiner sie gefragt hat. Traurig wegen ihrer Freundin im alten Haus. Und sie hat Angst, dass es wieder nicht hält. Vier Gefühle. Alle echt. Alle gleichzeitig.",
+        "text": "Neles Mutter hat einen neuen Freund. Sie zieht mit Nele zu ihm. Größeres Zimmer, eigener Balkon. Alle sagen: „Freu dich doch!“ Nele freut sich. Ein bisschen. Sie ist auch wütend, weil keiner sie gefragt hat. Traurig wegen ihrer Freundin im alten Haus. Und sie hat Angst, dass ihre Mutter und der Freund sich wieder trennen. Vier Gefühle. Alle echt. Alle gleichzeitig.",
         "frage": "Welches der vier ist bei Nele wohl am lautesten?"
       },
       "fakten": [
         {
           "t": "Mischen ist normal",
-          "x": "Zwei, drei, vier Gefühle gleichzeitig – das ist kein Durcheinander. **Das ist der Normalfall.**"
+          "x": "Zwei, drei, vier Gefühle gleichzeitig – das ist kein Durcheinander. **Das ist ganz normal.**"
         },
         {
           "t": "Jedes hat einen Regler",
@@ -835,7 +835,7 @@ const d: Heft = {
         "r": 1
       },
       {
-        "f": "Wer zieht mit 13 in die Zentrale ein?",
+        "f": "Wer kommt im Film mit 13 neu ans Steuerpult?",
         "o": [
           "Zweifel, Neid, Peinlichkeit, Langeweile",
           "Hunger und Durst",
@@ -991,7 +991,7 @@ const d: Heft = {
       "Sie finden ihr erstes Körpersignal bei Wut und Angst.",
       "Sie erkennen gemischte Gefühle, schätzen ihre Stärke von 0 bis 10 ein und fragen, was unter einem lauten Gefühl liegt."
     ],
-    "start": "Titel, Ansage (vorlesen – der Ton ist Absicht), Tracklist und Soundcheck. Etwa 10 Minuten, z. B. in der Brücke von Einheit 7.",
+    "start": "Titel, Ansage (vorlesen – der Ton ist Absicht), Tracklist und Soundcheck. Etwa 10 Minuten vor Station 1 von Stunde 01.",
     "schluss": "Hot Takes: je zwei Sätze als Einstieg in eine Einheit – oder alle sechs im Stehen am Schluss, „Knack den Code“ als Wiederholung, Karten ausschneiden, Abspann in der Abschlussrunde von Einheit 10.",
     "hilfe": [
       "Szene und Fakten vorlesen oder reihum lesen lassen.",
@@ -1007,14 +1007,14 @@ const d: Heft = {
     ],
     "gespraech": "Niemand muss von sich erzählen. Fragen Sie nach der Figur („Was hätte Noah gebraucht?“), nicht nach der Person im Raum. „Mir egal“ und Taubheit sind bei vielen Jugendlichen ein Schutz – nicht aufbrechen, sondern als Auskunft nehmen. Körperübungen können Unruhe auslösen: Augen offen, sitzen statt liegen und Aussetzen sind immer möglich. Erzählt jemand von Gewalt oder Bedrohung, ein Gespräch unter vier Augen nach der Einheit anbieten und die zuständige Leitung (Responsable) informieren.",
     "druck": [
-      "A4, doppelseitig, an der langen Seite gewendet. So liegen Szene (links) und „Dein Move“ (rechts) nebeneinander.",
+      "A4, doppelseitig, an der langen Seite gewendet. Material-Seiten (Schere) einmal extra einseitig drucken und daraus schneiden – im Heft der Jugendlichen steht auf der Rückseite die nächste Station.",
       "Seiten 1–{J} für die Jugendlichen, Seiten {L} nur für Sie.",
       "Schwarz-Weiß ist möglich; das Titelblatt braucht viel Toner.",
       "Seite {K} (Karten) einzeln und einseitig drucken, am besten auf festerem Papier."
     ],
-    "hot": "Es gibt keine richtige Position. Nachfragen statt korrigieren: „Was hast du erlebt, dass du dort stehst?“ Take 1 und 2 berühren Bilder von Männlichkeit – Gegenbeispiele aus Sport und Musik helfen mehr als Argumente. Take 4 ernst nehmen: Taubheit ist für manche ein vertrauter Schutz. Nicht bewerten, sondern fragen, was sie kostet.",
-    "achtung": "Für die Filmszenen die Vorführrechte der Einrichtung klären. Der Film erzählt von Umzug, Heimweh und Streit mit den Eltern – das kann eigene Erfahrungen berühren. Körper-Labor und Bodyscan sind freiwillig. Die Szene mit Lina (Abwertung in der Familie) nicht auf eigene Familien übertragen lassen.",
-    "hintergrund": "Gefühle haben eine Signal- und eine Handlungsfunktion (Ekman; Plutchik). Wer Gefühle differenziert benennen kann, reguliert sie leichter – deshalb der Wortschatz vor den Skills. Körperliche Muster von Emotionen sind über Kulturen hinweg ähnlich (Nummenmaa et al.); das erste Körpersignal ist der früheste Ansatzpunkt für Regulation (Gross). Gemischte Gefühle sind empirisch der Normalfall (Larsen et al.). Die Idee, dass hinter Ärger oft verletzlichere Gefühle liegen, stammt aus dem Skillstraining für Jugendliche (Rathus & Miller).",
+    "hot": "Es gibt keine richtige Position. Nachfragen statt korrigieren: „Was hast du erlebt, dass du dort stehst?“ Take 1 und 2 berühren Bilder von Männlichkeit – Gegenbeispiele aus Sport und Musik helfen mehr als Argumente. Take 4 ernst nehmen: Taubheit ist für manche ein vertrauter Schutz. Nicht bewerten, sondern fragen, was sie kostet. Satz 5: Eifersucht ist ein Gefühl, kein Beweis – Handy kontrollieren und Verbote sind Kontrolle, keine Liebe; Hinweise darauf später unter vier Augen aufgreifen.",
+    "achtung": "Der Fall Nele (Umzug zum neuen Freund der Mutter) kann eigene Erfahrungen berühren. Körper-Labor und Bodyscan sind freiwillig. Die Szene mit Lina (Abwertung in der Familie) nicht auf eigene Familien übertragen lassen.",
+    "hintergrund": "Gefühle haben eine Signal- und eine Handlungsfunktion (Ekman; Plutchik). Wer Gefühle differenziert benennen kann, reguliert sie leichter – deshalb der Wortschatz vor den Skills. Körperliche Muster von Emotionen sind über Kulturen hinweg ähnlich (Nummenmaa et al.); wer das erste Körpersignal bemerkt, kann eingreifen, bevor die Reaktion voll da ist (vgl. Gross). Gemischte Gefühle kommen häufig vor, besonders bei Abschieden und Übergängen (Larsen et al.). Die Idee, dass hinter Ärger oft verletzlichere Gefühle liegen, ist u. a. im Skillstraining für Jugendliche verbreitet (Rathus & Miller).",
     "quellen": "Ekman (1992) · Plutchik (2001) · Nummenmaa et al. (2014) · Gross (1998) · Larsen, McGraw & Cacioppo (2001) · Rathus & Miller (2015) · Keltner & Ekman (2015). Angaben zu den Einheiten 7–10 in der Toolbox."
   },
   "geprueft": "14.11.2026"

@@ -14,12 +14,12 @@ export function stunden(d: Heft): Stunde[] {
   const TIPPS: [string, boolean][] = [['Jeden Tag etwa zur gleichen Zeit ins Bett', true], ['Energy-Drink am Nachmittag macht abends müde', false], ['Zimmer kühl und dunkel', true], ['Handy im Bett: So schläft man schneller ein', false], ['Morgens zehn Minuten ans Tageslicht', true], ['Bis mittags schlafen gleicht alles aus', false], ['Handy weit weg vom Bett legen', true], ['Nachts immer wieder auf die Uhr schauen', false], ['Warme Dusche vor dem Bett', true], ['Ab dem Nachmittag kein Koffein mehr', true]]
   const s1 = stunde('Warum bist du müde – und was hilft wirklich?', ['erklären, warum Jugendliche abends spät müde werden', 'echte Schlaf-Tipps von Mythen unterscheiden', 'einen Schritt für deinen Abend festlegen'],
     seite(
-      ankommen('deine Nacht', kreuz('Wie viele Stunden hast du letzte Nacht geschlafen?', 'unter 6', '6 bis 7', '8 oder mehr'), strich('Wie wach bist du gerade?', 'todmüde', 'hellwach')),
+      ankommen('deine Nacht', kreuz('Wie viele Stunden hast du letzte Nacht geschlafen?', 'unter 6', '6 bis 8', 'mehr als 8'), strich('Wie wach bist du gerade?', 'todmüde', 'hellwach')),
       st('Erst machen: 60 Sekunden', '4 Min.', 'alle gleichzeitig', 'clock', 'Zeit stoppen und leise notieren, wer sich wann setzt. Müde Köpfe schätzen oft daneben.',
-        text('Alle stehen, Augen zu. **Setz dich, wenn du glaubst, dass genau eine Minute um ist.** Wer ist am nächsten dran?')),
+        text('Alle stehen, Augen zu (wer mag) oder Blick auf den Boden. **Setz dich, wenn du glaubst, dass genau eine Minute um ist.** Wer ist am nächsten dran?')),
       fall(nacht, 'Nele um 1:50 Uhr', [
         kreuzU('Was weiß die Lehrerin nicht über Neles Nacht?', 'Nele war um zehn im Bett. Sie war nur nicht müde.', 'Nele war auf einer Party.'),
-        kreuz('Wie viele Stunden hat Nele höchstens geschlafen?', 'etwa 4', 'etwa 7', 'etwa 9'),
+        kreuz('Wie viele Stunden hat Nele höchstens geschlafen?', 'etwa 4½', 'etwa 7', 'etwa 9'),
       ], { zeitleiste: [['22:00', 'Nele liegt im Bett. Nicht müde.'], ['1:50', 'Wach. Das Handy leuchtet.'], ['6:30', 'Der Wecker klingelt.'], ['1. Stunde', 'Der Kopf fällt auf den Tisch.']] }),
     ),
     seite(
@@ -60,7 +60,7 @@ export function stunden(d: Heft): Stunde[] {
         text('Die Leitung würfelt dreimal. Alle machen mit: **1** ein Glas Wasser · **2** Fenster auf, drei Atemzüge · **3** einmal den Flur entlang · **4** zehn Kniebeugen · **5** 30 Sekunden Lieblingssong · **6** freie Wahl.')),
       fall(treib, 'Yusuf und die Kiste', [
         kreuzU('Was hat Yusufs Ausraster mit seinem Tag zu tun?', 'Sein Tank war leer. Sein Körper war im Stress.', 'nichts'),
-        kreuzU('Der Chef sagt: „Du hast ein Problem mit deiner Art.“ Stimmt das?', 'Nein. Yusuf hatte ein Problem mit seinem Tank.', 'Ja.'),
+        kreuzU('Der Chef sagt: „Du hast ein Problem mit deiner Art.“ Stimmt das?', 'Nicht ganz. Gebrüllt hat Yusuf – aber mit leerem Tank kippt man viel schneller.', 'Ja.'),
       ], { zeitleiste: [['morgens', 'verschlafen, kein Frühstück, ein Energy-Drink'], ['Pause', 'noch ein Energy-Drink'], ['mittags', 'eine Tüte Chips'], ['14:50', 'Eine Kiste steht im Weg. Yusuf brüllt.']] }),
     ),
     seite(
@@ -84,12 +84,12 @@ export function stunden(d: Heft): Stunde[] {
         wertung: { kopf: ['Zeit', 'Lauf 1 · voll', 'Bücher raus', 'Lauf 2'], zeilen: ['Team A', 'Team B'] },
         auswertung: ['Welches Buch würdet ihr im echten Leben zuerst rausnehmen?', 'Welches Buch bleibt drin – und wer könnte tragen helfen?'],
       }),
-      st('Zu zweit: Yusufs Tag, zweiter Versuch', '6 Min.', 'zu zweit', 'refresh', 'Kleine Schritte loben: ein Brot, Wasser, fünf Minuten raus.',
+      st('Zu zweit: Yusufs Tag, zweiter Versuch', '6 Min.', 'zu zweit', 'refresh', 'Kleine Schritte loben: ein Brot, Wasser, fünf Minuten raus. Ein Stichwort pro Zeile reicht.',
         fragen(treib.moves[1].kontext ?? null, ...treib.moves[1].fragen)),
     ),
     seite(
       material('12 Stress-Karten', 5, karten(4, 17, 'Ausschneiden. Jede Karte kommt in ein Buch.', STRESS.map((t) => ({ t })))),
-      schluss(treib, 'Yusuf um 14:45', [kreuzU('Bevor du das nächste Mal streitest: Was prüfst du zuerst?', 'meinen Tank: gegessen, getrunken, geschlafen?', 'wer schuld ist'), strich('Schau auf Station 1. Wie voll ist dein Akku jetzt?', 'leer', 'voll')], ['1', '2', '3', '4']),
+      schluss(treib, 'Yusuf um 14:45', [kreuzU('Bevor du das nächste Mal streitest: Was prüfst du zuerst?', 'meinen Tank: gegessen, getrunken, geschlafen?', 'wer schuld ist'), strich('Schau auf Station 1. Wie voll ist dein Akku jetzt?', 'leer', 'voll'), { f: 'Mein Mini-Schritt für vier Tage – so klein, dass er sicher klappt:', linien: 1 }], ['1', '2', '3', '4']),
     ),
   )
 
@@ -116,7 +116,7 @@ export function stunden(d: Heft): Stunde[] {
         schritte: [
           '**Teil 1 · Blitz:** Eine Karte wird aufgedeckt. Welches Team sagt zuerst, was ihr damit gelernt habt? 1 Punkt. Weiß es niemand: Die Leitung hilft, kein Punkt.',
           '**Teil 2 · mein Stück:** Alle 16 Karten liegen offen. Jede Person legt ihre Münze auf die Karte, die ihr am meisten gebracht hat.',
-          '**Teil 3 · für die Neuen:** Schreibt zu zweit drei Sätze für die nächste Gruppe: Was stimmt wirklich über diesen Kurs? Einer darf sagen, was Quatsch war.',
+          '**Teil 3 · für die Neuen:** Schreibt zu zweit oder zu dritt drei Sätze für die nächste Gruppe: Was stimmt wirklich über diesen Kurs? Einer darf sagen, was Quatsch war.',
         ],
         regeln: ['Niemand muss erklären, warum seine Münze wo liegt.'],
         zu3: 'Alle zusammen gegen die Uhr: Schafft ihr zehn Karten in vier Minuten?',
@@ -152,15 +152,15 @@ export function stunden(d: Heft): Stunde[] {
         material: 'ein Blatt und Klebeband pro Person, Stifte, Musik, die Stärken-Liste von der nächsten Seite',
         schritte: [
           'Jede Person schreibt ihren Namen auf ein Blatt und klebt es an die Lehne ihres Stuhls.',
-          'Musik an, alle gehen durch den Raum. Bei Stopp schreibst du auf das Blatt am nächsten Stuhl **eine Stärke dieser Person**.',
+          'Musik an, alle gehen durch den Raum. Bei Stopp gehst du zum nächsten Stuhl, auf dessen Blatt du noch nichts geschrieben hast (nicht dein eigener), und schreibst **eine Stärke dieser Person**.',
           'Fällt dir nichts ein? Nimm eine Stärke aus der Liste – aber eine, die wirklich passt.',
           'Weiter, bis auf jedem Blatt von allen etwas steht. Gelesen wird erst am Schluss, jede Person still für sich.',
-          '**Der letzte Kreis:** Ein Gegenstand geht reihum. Wer ihn hält, sagt einen Satz: „Ich nehme mit …“ Weitergeben ohne Satz ist erlaubt.',
+          '**Der letzte Kreis** (ganz am Ende, nach dem Schluss): Ein Gegenstand geht reihum. Wer ihn hält, sagt einen Satz: „Ich nehme mit …“ Weitergeben ohne Satz ist erlaubt.',
         ],
         regeln: ['Es werden nur Stärken geschrieben. Keine Witze, keine Spitznamen.'],
         zu3: 'Jede Person schreibt jeder zwei Stärken – auch die Leitung.',
         auswertung: ['Welche Stärke auf deinem Blatt hat dich überrascht?'],
-      }, { leitung: 'Die Blätter kurz durchsehen, bevor sie gelesen werden. Zum Schluss sagen Sie jeder Person einen Satz – dann ist Schluss, ohne Zugabe.' }),
+      }, { leitung: 'Die Blätter kurz durchsehen, bevor sie gelesen werden. Den letzten Kreis erst ganz am Ende machen, nach Station 9. Dann sagen Sie jeder Person einen Satz – Schluss, ohne Zugabe.' }),
       st('Wie am ersten Tag: 5-4-3-2-1', '5 Min.', 'alle · still', 'eye', 'Leise ansagen. Danach fragen: Was ist heute anders als am ersten Tag?',
         text('Am ersten Tag habt ihr 5-4-3-2-1 gemacht. Jetzt noch einmal: **fünf** Dinge sehen, **vier** spüren, **drei** hören, **zwei** riechen, **eins** schmecken. Derselbe Raum, dieselbe Übung.')),
     ),
@@ -176,12 +176,12 @@ export function stunden(d: Heft): Stunde[] {
 /** Lösungen für die Leitung – passend zu den Stationen oben */
 export const loesungen: string[][] = [
   [
-    'Der Fall: Nele war um zehn im Bett, aber nicht müde – ihre innere Uhr geht nach. Geschlafen hat sie höchstens etwa vier Stunden.',
+    'Der Fall: Nele war um zehn im Bett, aber nicht müde – ihre innere Uhr geht nach. Geschlafen hat sie höchstens viereinhalb Stunden (1:50 bis 6:30).',
     'Schlaf-Auktion: Mythen sind die Tipps 2 (Energy-Drink), 4 (Handy im Bett), 6 (Wochenende) und 8 (auf die Uhr schauen). Alle anderen sind echt.',
     'Neles Abend: Es helfen gleiche Zeit, kühles dunkles Zimmer, Tageslicht am Morgen. Es schaden Energy-Drink und Handy im Bett.',
   ],
   [
-    'Der Fall: Yusufs Tank war leer – seit dem Vorabend nichts Richtiges gegessen, dazu zwei Energy-Drinks. Das ist kein Problem mit seiner „Art“.',
+    'Der Fall: Yusufs Tank war leer – seit dem Vorabend nichts Richtiges gegessen, dazu zwei Energy-Drinks. Gebrüllt hat er selbst – aber mit leerem Tank kippt man viel schneller.',
     'Rucksack-Rennen: Lauf 2 ist fast immer schneller. Manche Bücher bleiben drin – dann hilft, wenn jemand tragen hilft.',
     'Zweiter Versuch, zum Beispiel: Wasser und ein Brot · etwas Warmes zu Mittag · um 14:45 Uhr fünf Minuten raus.',
   ],
@@ -192,6 +192,6 @@ export const loesungen: string[][] = [
   [
     'Der Fall: Chloé verpasst das Tschüss und das, was die anderen ihr sagen wollen. Beim letzten Mal blieb drei Monate etwas offen.',
     'Stärken-Post: Die Blätter vorher durchsehen. Alte Abschiede können sich melden – wer still wird, braucht kurz jemanden neben sich.',
-    'Brief an mich: Umschläge zukleben, Namen darauf, in sechs Monaten zurückgeben.',
+    'Brief an mich: einen Umschlag pro Person mitbringen, zukleben, Namen darauf. Vorher klären, wer die Briefe sechs Monate aufbewahrt und wie sie zu Jugendlichen kommen, die dann nicht mehr in der Einrichtung sind.',
   ],
 ]

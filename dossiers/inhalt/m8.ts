@@ -112,7 +112,7 @@ const d: Heft = {
         },
         {
           "t": "Acht bis zehn",
-          "x": "So viele Stunden braucht ein Körper in deinem Alter. **Die meisten kommen nicht mal auf sieben.**"
+          "x": "So viele Stunden braucht ein Körper mit 13 bis 18 (mit 12 eher mehr). **Viele kommen unter der Woche nicht mal auf acht.**"
         },
         {
           "t": "Schlaf räumt auf",
@@ -582,7 +582,7 @@ const d: Heft = {
         },
         {
           "t": "Danke wirkt doppelt",
-          "x": "Wer Danke sagt, fühlt sich danach selbst besser. **Und der andere vergisst es jahrelang nicht.**"
+          "x": "Wer Danke sagt, fühlt sich danach selbst besser. **Und der andere erinnert sich oft noch lange daran.**"
         }
       ],
       "clip": {
@@ -887,7 +887,7 @@ const d: Heft = {
       ],
       [
         "Dauer",
-        "2 Einheiten à 100 Min. (E29–E30)"
+        "4 Stunden à etwa 90 Min.: E29, E30 und zwei Zusatz-Termine – oder zwei Stunden auswählen"
       ],
       [
         "Sozialform",
@@ -921,13 +921,13 @@ const d: Heft = {
     ],
     "gespraech": "Schlafprobleme haben oft Gründe, die niemand in der Gruppe nennen will (Unruhe zu Hause, Angst, Medikamente). Nicht nachbohren, im Einzelgespräch aufgreifen. Beim Thema Körper nicht bewerten, was jemand isst oder wie jemand aussieht. Abschiede wecken alte Verluste: Rückzug, Albernheit oder Fernbleiben am letzten Tag sind häufig – vorher ankündigen, dass der Termin der letzte ist, und Abwesende persönlich verabschieden.",
     "druck": [
-      "A4, doppelseitig, an der langen Seite gewendet. So liegen Szene (links) und „Dein Move“ (rechts) nebeneinander.",
+      "A4, doppelseitig, an der langen Seite gewendet. Material-Seiten (Schere) einmal extra einseitig drucken und daraus schneiden – im Heft der Jugendlichen steht auf der Rückseite die nächste Station.",
       "Seiten 1–{J} für die Jugendlichen, Seiten {L} nur für Sie.",
       "Schwarz-Weiß ist möglich; das Titelblatt braucht viel Toner.",
       "Seite {K} (Karten) einzeln und einseitig drucken, am besten auf festerem Papier."
     ],
     "hot": "Es gibt keine richtige Position. Take 4 („In einem Jahr kann sich ein Mensch nicht ändern“) ist die Vorlage für Track 03 – wer zustimmt, bekommt später Gegenbeweise von der Gruppe. Take 5 offen stehen lassen; er wird am letzten Tag von selbst beantwortet.",
-    "achtung": "Beim Thema Körper keine Zahlen: kein Gewicht, keine Kalorien, keine Kleidergrößen. Niemanden zu Bewegung oder Leistung drängen; Rucksack-Rennen und Würfel sind freiwillig. Beim Bodyscan dürfen die Augen offen bleiben, wer mag, setzt aus. Die Briefe liest niemand.",
+    "achtung": "Beim Thema Körper keine Zahlen: kein Gewicht, keine Kalorien, keine Kleidergrößen. Niemanden zu Bewegung oder Leistung drängen; Rucksack-Rennen und Würfel sind freiwillig. Bei „60 Sekunden“ und „5-4-3-2-1“ dürfen die Augen offen bleiben; wer mag, setzt aus. Die Briefe liest niemand.",
     "hintergrund": "In der Pubertät verschiebt sich der Schlaf-Wach-Rhythmus nach hinten (Carskadon); empfohlen sind acht bis zehn Stunden Schlaf (Paruthi et al.). Stress entsteht, wenn Anforderungen die eigenen Mittel übersteigen (Lazarus & Folkman); gesund bleibt eher, wer sein Leben als verstehbar, handhabbar und sinnvoll erlebt (Antonovsky). Kleine, konkrete Pläne werden eher umgesetzt als gute Vorsätze (Gollwitzer). Widerstandskraft ist nichts Besonderes, sondern entsteht aus gewöhnlichen Dingen wie verlässlichen Beziehungen (Masten). Über Erlebtes zu schreiben entlastet (Pennebaker), Dankbarkeit hebt das Wohlbefinden (Emmons & McCullough).",
     "quellen": "Carskadon (2011) · Paruthi et al. (2016) · Lazarus & Folkman (1984) · Antonovsky (1987) · Gollwitzer (1999) · Masten (2014) · Pennebaker (1997) · Emmons & McCullough (2003). Angaben zu den Einheiten 29–30 in der Toolbox."
   },

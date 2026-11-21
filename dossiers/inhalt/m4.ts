@@ -265,7 +265,7 @@ const d: Heft = {
       "szene": {
         "bild": "peep:lea:traurig",
         "name": "Lea, 16",
-        "text": "Vierte Klasse. Lea erzählt beim Abendessen von ihrem Tag, laut, mit Händen und Füßen. Ihr Stiefvater sagt: „Kannst du einmal nicht so viel sein?“ Ein Satz, drei Sekunden. Heute ist Lea sechzehn. Wenn sie lacht, hält sie die Hand vor den Mund. Wenn sie etwas erzählen will, sagt sie: „Ach, egal.“ Der Stiefvater ist längst ausgezogen. Der Satz wohnt noch da.",
+        "text": "Vierte Klasse. Lea erzählt beim Abendessen von ihrem Tag, laut, mit Händen und Füßen. Ihr Stiefvater, müde und genervt, sagt: „Kannst du einmal nicht so viel sein?“ Ein Satz, drei Sekunden. Heute ist Lea sechzehn. Wenn sie lacht, hält sie die Hand vor den Mund. Wenn sie etwas erzählen will, sagt sie: „Ach, egal.“ Der Stiefvater ist längst ausgezogen. Der Satz wohnt noch da.",
         "frage": "Wie heißt der Satz, der bei Lea eingezogen ist?"
       },
       "fakten": [
@@ -323,7 +323,7 @@ const d: Heft = {
                 ],
                 "zeilen": [
                   "Tom meldet sich nie, obwohl er die Antwort weiß.",
-                  "Jana sagt jede Einladung ab: „Hab eh keine Zeit.“",
+                  "Nora sagt jede Einladung ab: „Hab eh keine Zeit.“",
                   "Sami radiert, bis das Blatt reißt.",
                   "Finn lacht, wenn er sich wehgetan hat."
                 ]
@@ -415,7 +415,7 @@ const d: Heft = {
         ],
         "impulse": [
           "Welche Sätze über Jugendliche hört ihr ständig – von Erwachsenen, im Netz?",
-          "Was macht es mit euch, dass so viele Bohnen im selben Becher lagen?"
+          "Was macht es mit euch, dass so viele Striche beim selben Satz standen?"
         ],
         "material": "Figuren-Karten, zwölf Glaubenssatz-Karten, Becher, Bohnen, Umschläge",
         "blaetter": "Gefühlsrad, Figuren-Karten, „Meine Glaubenssätze“ (privat, im Umschlag), Skills-Pass."
@@ -451,7 +451,7 @@ const d: Heft = {
         "kanal": "Quarks Dimension Ralph",
         "url": "https://www.youtube.com/watch?v=9USIhOR78Do",
         "dauer": "die ersten 5 Min.",
-        "frage": "Welches Scheinargument benutzt dein eigener Kopf am liebsten gegen dich?"
+        "frage": "Ein Scheinargument klingt wie ein Beweis, ist aber keiner. Welches benutzt dein Kopf am liebsten gegen dich?"
       },
       "mythen": [
         [
@@ -542,7 +542,7 @@ const d: Heft = {
         "x": "Wahr. Aktiv. Im Jetzt. Schreib ihn auch auf die Karte (Seite {K}).",
         "linien": 1
       },
-      "woche": "Trag deine Karte bei dir. Meldet sich der alte Satz: **nicht wegdrücken – Karte lesen.** Einmal reicht.",
+      "woche": "Schneid die Karte „Beweis oder nicht?“ aus (Seite „Für die Tasche“) und trag sie bei dir. Meldet sich der alte Satz: **nicht wegdrücken – Karte lesen.** Einmal reicht.",
       "gruppe": [
         {
           "titel": "Tatort",
@@ -630,7 +630,7 @@ const d: Heft = {
         "kanal": "Sprouts Deutschland",
         "url": "https://www.youtube.com/watch?v=I79fZFvz9JA",
         "dauer": "ganz schauen",
-        "frage": "Bei welchem Thema denkst du „kann ich halt nicht“ – und was wäre der andere Satz?"
+        "frage": "Fixed Mindset heißt: „Kann ich halt nicht.“ Growth Mindset heißt: „Kann ich noch nicht.“ Wo denkst du das eine – und was wäre der andere Satz?"
       },
       "mythen": [
         [
@@ -965,18 +965,18 @@ const d: Heft = {
     "forder": [
       "Für eine Figur aus einer Serie die „Akte“ führen: Satz, Beweise dafür, Beweise dagegen.",
       "Einen Songtext mitbringen und die Glaubenssätze darin markieren.",
-      "Zu jedem bremsenden Satz der Bohnen-Wette einen Satz bauen, der den Prüfstand besteht.",
+      "Zu jedem bremsenden Satz aus der geheimen Zählung einen Satz bauen, der den Prüfstand besteht.",
       "Die Beweis-Liste zwei Wochen lang führen."
     ],
     "gespraech": "Dieses Modul berührt das Selbstwertgefühl. Niemand wird nach eigenen Sätzen gefragt; gearbeitet wird an Ben, Lea, Lio und Mia. Wird beim Prüfen deutlich, dass ein Satz einen wahren Kern hat – etwa weil jemand tatsächlich ausgegrenzt oder abgewertet wird –, nicht wegdiskutieren: Dann geht es nicht um einen Denkfehler, sondern um Schutz und Unterstützung. Die Szene mit Lea (Abwertung in der Familie) nicht auf eigene Familien übertragen lassen. Bei Hinweisen auf Gewalt oder Vernachlässigung die zuständige Leitung (Responsable) informieren.",
     "druck": [
-      "A4, doppelseitig, an der langen Seite gewendet. So liegen Szene (links) und „Dein Move“ (rechts) nebeneinander.",
+      "A4, doppelseitig, an der langen Seite gewendet. Material-Seiten (Schere) einmal extra einseitig drucken und daraus schneiden – im Heft der Jugendlichen steht auf der Rückseite die nächste Station.",
       "Seiten 1–{J} für die Jugendlichen, Seiten {L} nur für Sie.",
       "Schwarz-Weiß ist möglich; das Titelblatt braucht viel Toner.",
       "Seite {K} (Karten) einzeln und einseitig drucken, am besten auf festerem Papier."
     ],
     "hot": "Es gibt keine richtige Position. Nachfragen statt korrigieren: „Was hast du erlebt, dass du dort stehst?“ Take 6 kann nahegehen – nach Figuren fragen (Lea), nicht nach der eigenen Familie. Take 2 lädt ein, über Veränderung zu sprechen, auch über die eigene Akte: Was steht über mich drin, und stimmt es noch?",
-    "achtung": "Die persönlichen Blätter („Meine Glaubenssätze“, Detektivblatt) werden nicht eingesammelt und nicht vorgelesen. Rollenspiele nur mit den vorgegebenen Szenen. Der Hauptfilm spricht Gewalt in der Kindheit an – vorher ansehen und entscheiden, ob er zur Gruppe passt; „Eddie the Eagle“ ist die leichtere Wahl.",
+    "achtung": "Die persönlichen Blätter („Meine Glaubenssätze“, Detektivblatt) werden nicht eingesammelt und nicht vorgelesen. Die Zettel der geheimen Zählung (Stunde 02) nach dem Zählen sofort vernichten.",
     "hintergrund": "Grundlage ist das kognitive Modell: Nicht die Situation, sondern ihre Bewertung bestimmt Gefühl und Verhalten (Ellis; Beck). Glaubenssätze entstehen aus wiederholten oder prägenden Erfahrungen und wirken als Filter. Das Prüfen von Belegen für und gegen einen Gedanken ist die Kerntechnik der kognitiven Umstrukturierung (Beck). Neue Überzeugungen festigen sich über eigene Erfolgserfahrungen (Bandura) und konkrete Wenn-dann-Pläne (Gollwitzer). Ein freundlicher Umgang mit sich selbst geht nicht mit weniger, sondern mit mehr Anstrengungsbereitschaft einher (Neff).",
     "quellen": "Ellis (1962) · Beck (2011) · Bandura (1977) · Gollwitzer (1999) · Neff (2003) · Dweck (2006) · Kross & Ayduk (2017). Angaben zu den Einheiten 16–19 in der Toolbox."
   },

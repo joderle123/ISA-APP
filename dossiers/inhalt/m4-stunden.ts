@@ -34,7 +34,7 @@ export function stunden(d: Heft): Stunde[] {
     ),
     seite(
       modell(film, 'Situation – Gedanke – Gefühl', ['message-circle', 'arrows-right', 'repeat']),
-      st('Zu zweit: drei Filme für Ben', '10 Min.', 'zu zweit', 'movie', 'Den dritten Gedanken gemeinsam sammeln, wenn er schwerfällt.',
+      st('Zu zweit: drei Filme für Ben', '10 Min.', 'zu zweit', 'movie', 'Gefühl und Tun: ein Wort reicht. Den dritten Gedanken gemeinsam sammeln, wenn er schwerfällt.',
         fragen(film.moves[0].kontext ?? null, ...film.moves[0].fragen)),
       stimmtDas(film),
     ),
@@ -94,7 +94,7 @@ export function stunden(d: Heft): Stunde[] {
           'Welche drei Sätze haben die meisten Striche? Jeder Treffer aus eurer Wette: 1 Punkt.',
         ],
         regeln: ['Die Zettel bleiben geheim. Niemand fragt, wer was eingekreist hat.', 'Auch die Leitung wirft einen Zettel ein.'],
-        zu3: 'Alle – auch die Leitung – werfen zwei Zettel ein: einen eigenen und einen für „jemanden, den ich kenne“. So bleibt es geheim.',
+        zu3: 'Die Wette macht ihr als ein Team gegen die Leitung. Alle – auch die Leitung – werfen zwei Zettel ein: einen eigenen und einen für „jemanden, den ich kenne“. So bleibt es geheim.',
         runden: [{ t: 'Danach · Freundes-Sätze', x: 'Nehmt den Satz mit den meisten Strichen. Jedes Team schreibt in zwei Minuten Sätze auf, die eine gute Freundin jetzt sagen würde. Punkte nur für Sätze, die man glauben kann.' }],
         auswertung: ['Hättet ihr gedacht, dass so viele denselben Satz kennen?', 'Warum sind wir zu Freunden netter als zu uns selbst?'],
       }, { leitung: 'Zettel vorbereiten. Selbst einen einwerfen. Nach dem Zählen die Zettel sofort wegwerfen.' }),
@@ -173,7 +173,7 @@ export function stunden(d: Heft): Stunde[] {
         schritte: [
           '**Teil 1 · die Leiter:** Legt alle 16 Karten in eine Reihe – von „leicht“ bis „schwer“. Ihr müsst euch einigen.',
           '**Teil 2 · Zwillinge:** Die Leitung liest eine Karte vor. Auf „drei“ zeigen alle mit den Fingern: Wie schwer ist das für dich, von 1 bis 5? Gleiche Zahl: Zwilling.',
-          '**Teil 3 · mein Schritt:** Jede Person nimmt sich **eine** Karte aus der leichten Hälfte. Das ist dein Schritt bis heute Abend. Wer mag, macht ihn gleich hier.',
+          '**Teil 3 · mein Schritt:** Jede Person nimmt sich **eine** Karte aus der leichten Hälfte. Das ist dein Schritt bis heute Abend. Wer mag, macht ihn gleich hier – mit der Leitung, nicht vor der Gruppe.',
         ],
         regeln: ['Du suchst deinen Schritt selbst aus. Niemand wird zu etwas gedrängt.', 'Niemand muss etwas vorspielen. Es zählt nur, was du wirklich tust.'],
         zu3: 'Die Leitung legt und zeigt mit. Bei Teil 3 nimmt sie sich auch eine Karte.',
@@ -195,11 +195,11 @@ export const loesungen: string[][] = [
   [
     'Der Fall: Sicher wusste Ben nur: Mila hat die Nachricht gelesen. Den Abend hat ihm sein Film verdorben, nicht Mila.',
     'Drei Filme: „Keinen Bock auf mich“ – traurig, Chat löschen. „Beim Training“ – ruhig, abwarten. Dritter Gedanke zum Beispiel: „Akku leer.“',
-    'Zwei Filme: Der zweite Gedanke muss nicht schön sein – er muss auch stimmen können.',
+    'Zwei Filme: Der zweite Gedanke muss nicht schön sein – er muss auch stimmen können. Runde 1: Gelesen – „keinen Bock“/„gerade keine Zeit“ · tuscheln – „lästern“/„reden über irgendwas“ · Lehrer – „Ärger“/„will nur etwas fragen“ · Party – „keiner will mich“/„nur Platz für wenige“ · Freund – „sauer“/„nicht gesehen“ · Fünf – „dumm“/„zu wenig geübt“ · jemand lacht – „lachen über mich“/„ein Witz“ · Mutter – „Ich nerve sie“/„harter Tag“. Eine begründete andere Zuordnung zählt auch.',
   ],
   [
     'Der Fall: „Ich bin zu viel.“ Man sieht ihn an der Hand vor dem Mund und an „Ach, egal“. Der Satz war falsch – gesagt im Stress.',
-    'Fahndung: Tom – A (nicht gut genug) · Jana – B (mich mag keiner) · Sami – C (keine Fehler) · Finn – D (stark sein).',
+    'Fahndung: Tom – A (nicht gut genug) · Nora – B (mich mag keiner) · Sami – C (keine Fehler) · Finn – D (stark sein).',
     'Der Preis: Der Satz kostet Lea Freude, Nähe, ihre Stimme. Er schützt sie vor neuer Kränkung.',
     'Geheime Zählung: Die Zettel danach sofort wegwerfen. Wichtig ist nur das Bild: Viele kennen dieselben Sätze.',
   ],

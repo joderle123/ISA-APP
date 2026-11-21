@@ -7,7 +7,7 @@ import type { Stunde } from '../typen'
 const tank: Stunde = {
   frage: 'Warum bist du manchmal sauer – und keiner hat dir etwas getan?',
   dauer: 'etwa 90 Minuten',
-  kannst: ['sechs Tanks nennen', 'am Verhalten erkennen, welcher blinkt', 'deinen in zehn Minuten auffüllen'],
+  kannst: ['sechs Tanks nennen', 'am Verhalten erkennen, welcher blinkt', 'deinen Tank in zehn Minuten auffüllen'],
   seiten: [
     {
       stationen: [
@@ -51,7 +51,7 @@ const tank: Stunde = {
               ],
               dabei: ['Das passiert im Schlaf:', 'Das passiert bei zu wenig Schlaf:'],
               nachher: [
-                { f: 'Was hat Nele am Morgen gefehlt? Schreib auf, was der Clip dazu sagt.', linien: 1 },
+                { f: 'Was hat Nele am Morgen gefehlt?', kreuz: ['Schlaf', 'Essen', 'beides'] },
                 { f: 'Hilft der Energydrink Nele wirklich?', kreuz: ['ja', 'nur kurz', 'nein'] },
                 { f: 'Warum?', linien: 1 },
               ],
@@ -61,7 +61,7 @@ const tank: Stunde = {
         {
           titel: 'Das Modell: sechs Tanks', zeit: '10 Min.', wie: 'alle', icon: 'gauge',
           bausteine: [
-            { art: 'text', x: ['Schlaf ist nur **einer** von sechs Tanks, auf denen ein Mensch läuft. Ist einer leer, blinkt ein Warnlicht – meistens als Laune oder als Verhalten, das andere nervt.'] },
+            { art: 'text', x: ['Schlaf ist nur **einer** von sechs Tanks, auf denen ein Mensch läuft. Ist einer leer, blinkt ein Warnlicht – meistens als Laune oder als Verhalten, das andere nervt. Was einen Tank wieder füllt, heißt hier **Tankstelle**.'] },
             {
               art: 'modell', warnTitel: 'Warnlicht',
               punkte: [
@@ -83,8 +83,8 @@ const tank: Stunde = {
         {
           titel: 'Die große Runde: Tank-Detektive', zeit: '30 Min.', wie: 'zu zweit · dann zwei Teams am Tisch', icon: 'cards',
           bausteine: [
-            { art: 'fragen', kontext: '**Zum Warmwerden (zu zweit, 5 Min.):** Welcher Tank ist hier leer? Ein Kreuz pro Zeile.', fragen: [
-              { f: 'Probe-Runde:', raster: { spalten: ['Körper', 'sicher', 'dazu', 'ernst', 'selbst', 'Spaß'], zeilen: ['Alle haben eine Gruppe – du noch nicht', 'Jemand lacht über deine Antwort', 'Den ganzen Tag sagt dir jemand, was du tun sollst', 'Sonntag, Regen, nichts zu tun'] } },
+            { art: 'fragen', kontext: '**Zum Warmwerden (zu zweit oder zu dritt, 5 Min.):** Welcher Tank ist hier leer? Ein Kreuz pro Zeile.', fragen: [
+              { f: 'Probe-Runde:', raster: { spalten: ['1 Körper', '2 sicher', '3 dazu', '4 ernst', '5 selbst', '6 Spaß'], zeilen: ['Alle haben eine Gruppe – du noch nicht', 'Jemand lacht über deine Antwort', 'Den ganzen Tag sagt dir jemand, was du tun sollst', 'Sonntag, Regen, nichts zu tun'] } },
             ] },
             {
               art: 'aktion',
@@ -93,17 +93,17 @@ const tank: Stunde = {
               schritte: [
                 'Zwei Teams am Tisch. Die Leitung liest eine Karte vor – ohne den Tank, der unten draufsteht.',
                 'Alle überlegen still. Auf „drei“ zeigen **alle gleichzeitig** mit den Fingern die Nummer des Tanks.',
-                'Jede richtige Hand bringt dem Team **1 Punkt.** Zeigt ihr verschiedene Tanks? Kurz sagen, warum – oft passen zwei.',
+                'Zeigt die Mehrheit im Team den richtigen Tank: **1 Punkt.** Zeigt ihr verschiedene Tanks? Kurz sagen, warum – oft passen zwei.',
                 '**Bonus-Punkt:** Das Team nennt eine Tankstelle, die diesen Tank in zehn Minuten füllt.',
                 'Die Karte kommt auf den Platz ihres Tanks. Am Ende liegen sechs Stapel auf dem Tisch.',
               ],
               runden: [
                 { t: 'Runde 1 · zeigen', x: 'Karte hören, Nummer zeigen. Neun Karten.' },
-                { t: 'Runde 2 · legen', x: 'Jedes Team legt die Hälfte der restlichen Karten zu den Tanks. Das andere Team prüft.' },
+                { t: 'Runde 2 · legen', x: 'Jedes Team legt vier der restlichen Karten zu den Tanks. Das andere Team prüft. Die letzte Karte legen alle zusammen.' },
                 { t: 'Runde 3 · eigene Karte', x: 'Jedes Team erfindet eine Situation. Das andere Team rät den Tank.' },
               ],
               regeln: ['Niemand muss vorlesen oder etwas vorführen. Zeigen und legen reicht.'],
-              zu3: 'Ein Team gegen die Karten: Zeigen alle drei den richtigen Tank, gibt es den Punkt. Ziel: zwölf von achtzehn.',
+              zu3: 'Ein Team gegen die Karten: Zeigen alle drei den richtigen Tank, gibt es den Punkt. Ziel: zwölf von achtzehn. In Runde 2 und 3 prüft und rät die Leitung.',
               wertung: { kopf: ['Punkte', 'Runde 1', 'Runde 2', 'Runde 3', 'Summe'], zeilen: ['Team A', 'Team B'] },
               notiz: { titel: 'Die zwei besten Tankstellen der Runde – ihr braucht sie gleich bei Station 6:', linien: 1 },
               auswertung: ['Bei welcher Karte habt ihr verschiedene Tanks gezeigt? Warum?', 'Welche Situation kennt ihr selbst am besten?'],
@@ -118,7 +118,7 @@ const tank: Stunde = {
           titel: 'Material: 18 Situationen', zeit: '', wie: 'zu Station 5', icon: 'scissors', fort: true,
           bausteine: [
             {
-              art: 'karten', spalten: 3, hoehe: 35, hinweis: 'An den gestrichelten Linien ausschneiden. Wer das Heft ganz lassen will: Seite kopieren.',
+              art: 'karten', spalten: 3, hoehe: 35, hinweis: 'Die Leitung bringt die Karten ausgeschnitten mit (Extra-Ausdruck).',
               karten: [
                 { t: 'Du hast die halbe Nacht gezockt. Erste Stunde: Test.', marke: 'Körper' },
                 { t: 'Kein Frühstück, kein Pausenbrot. Es ist 12 Uhr, jemand fragt dich etwas.', marke: 'Körper' },
@@ -283,7 +283,7 @@ const lautLeise: Stunde = {
                 { t: 'Sprecher', x: 'Du sagst am Ende in einem Satz, warum sie hält.', marke: 'laut' },
                 { t: 'Zuhörer', x: 'Du fasst zusammen: „Bisher haben wir …“', marke: 'leise' },
                 { t: 'Prüfer', x: 'Du schaust genau hin: „Moment – hält das?“', marke: 'leise' },
-                { t: 'Frager', x: 'Du fragst die Stillste: „Was denkst du?“', marke: 'leise' },
+                { t: 'Frager', x: 'Du fragst jemanden, der noch nichts gesagt hat: „Was denkst du?“', marke: 'leise' },
               ],
             },
           ],
@@ -316,7 +316,7 @@ const lautLeise: Stunde = {
         {
           titel: 'Wenn noch Zeit ist: Punkte-Galerie', zeit: '10 Min.', wie: 'alle · freiwillig', icon: 'photo',
           bausteine: [
-            { art: 'text', x: ['Jede Person hängt ein Blatt mit ihrem Namen und den fünf leeren Linien von Station 2 auf. Schweigend kleben alle Punkte: **Wo sehe ich dich?** Keine Kommentare. Danach vergleicht jede Person für sich: Wo sehen mich die anderen anders als ich mich? Zu dritt klebt die Leitung mit – und du wählst selbst, auf welchen Linien geklebt wird.'] },
+            { art: 'text', x: ['Jede Person zeichnet die fünf Linien von Station 2 (ohne Kreuze) auf ein Blatt, schreibt ihren Namen darauf und hängt es auf. Schweigend kleben alle Punkte: **Wo sehe ich dich?** Keine Kommentare. Danach vergleicht jede Person für sich: Wo sehen mich die anderen anders als ich mich? Du wählst selbst, auf welchen Linien geklebt wird. Zu dritt klebt die Leitung mit.'] },
           ],
         },
       ],
@@ -337,7 +337,7 @@ const kannst: Stunde = {
           bausteine: [
             { art: 'text', x: ['Kreuz an, was du kannst – auch wenn es dir klein vorkommt. **Niemand muss etwas vorführen.** Danach liest die Leitung die Liste vor: Hand hoch, wer es kann.'] },
             { art: 'fragen', fragen: [
-              { f: 'Das kann ich:', kreuz: ['pfeifen', 'etwas reparieren', 'kochen oder backen', 'mit Tieren umgehen', 'mir Wege merken', 'jemanden zum Lachen bringen', 'lange zuhören', 'schnell rechnen', 'zeichnen', 'mit kleinen Kindern umgehen', 'ein Spiel richtig gut', 'zwei oder mehr Sprachen'] },
+              { f: 'Das kann ich:', kreuz: ['pfeifen', 'etwas reparieren', 'kochen oder backen', 'mit Tieren umgehen', 'mir Wege merken', 'jemanden zum Lachen bringen', 'lange zuhören', 'schnell rechnen', 'zeichnen', 'mit kleinen Kindern umgehen', 'ein Spiel richtig gut spielen', 'zwei oder mehr Sprachen sprechen'] },
               { f: 'Was kann hier im Raum **nur eine** Person – und was fehlt in der Liste?', linien: 1 },
             ] },
           ],
@@ -352,7 +352,7 @@ const kannst: Stunde = {
               fragen: [{ f: 'Schreib **Seite 2** der Akte: drei Dinge, die Yusuf gut kann. Schreib dazu, woran man es sieht.', linien: 0 }],
             },
             { art: 'tabelle', breiten: '9mm 42% auto', kopf: ['Nr.', 'Das kann Yusuf gut', 'Daran sieht man es'], zeilen: [['1', '', ''], ['2', '', ''], ['3', '', '']], hoehe: 9 },
-            { art: 'fragen', fragen: [{ f: 'Yusuf sagt: „Nichts Besonderes.“ Das stimmt nicht. Warum sagt er es trotzdem?', linien: 1 }] },
+            { art: 'fragen', fragen: [{ f: 'Yusuf sagt: „Nichts Besonderes.“ Warum sagt er das? Mehrere Kreuze gehen.', kreuz: ['Für ihn ist das normal.', 'Niemand hat es ihm je gesagt.', 'Er will nicht angeben.'], unter: true }] },
           ],
         },
       ],
@@ -364,7 +364,7 @@ const kannst: Stunde = {
           bausteine: [
             {
               art: 'clip',
-              clip: { titel: 'Ich bin nichts wert – so steigerst du dein Selbstwertgefühl', kanal: 'BUBBLES', url: 'https://www.youtube.com/watch?v=XZzcGOxqBy8', dauer: 'die ersten 5 Min.', frage: 'Woher weiß ein Mensch, was er wert ist?' },
+              clip: { titel: 'Ich bin nichts wert – so steigerst du dein Selbstwertgefühl', kanal: 'BUBBLES', url: 'https://www.youtube.com/watch?v=XZzcGOxqBy8', dauer: 'die ersten 5 Min.', frage: 'Selbstwertgefühl heißt: wie viel du dir selbst wert bist. Woher kommt das?' },
               vorher: [{ f: 'Was zählt am meisten dafür, wie du über dich denkst?', kreuz: ['Noten', 'was andere sagen', 'was ich selbst über mich denke', 'was ich für andere tue'], unter: true }],
               dabei: ['Tipp 1 aus dem Clip:', 'Tipp 2 aus dem Clip:'],
               nachher: [{ f: 'Welchen Tipp kannst du wirklich ausprobieren?', linien: 1 }, { f: 'Welcher Tipp hilft Yusuf?', linien: 1 }],
@@ -379,7 +379,7 @@ const kannst: Stunde = {
               ziel: 'Stärken bei anderen sehen und sagen – und merken, dass eine Gruppe jede davon braucht.',
               material: 'die 24 Stärken-Karten von der nächsten Seite (ausschneiden), ein Tisch als Markt',
               schritte: [
-                '**Verschenken (8 Min.):** Zieh drei Karten. Überleg: Zu wem aus der Gruppe passt jede? Geh hin und gib sie ab – mit einem Satz: „Die passt zu dir, weil …“',
+                '**Verschenken (8 Min.):** Alle Karten liegen offen auf dem Tisch. Such dir drei aus, die zu Leuten aus der Gruppe passen. Geh hin und gib sie ab – mit einem Satz: „Die passt zu dir, weil …“',
                 'Niemand geht leer aus. Darauf achtet die Leitung – und bekommt selbst auch Karten.',
                 '**Die Crew (12 Min.):** Der Auftrag: „In zwei Stunden kommen 40 Leute zum Grillfest. Nichts ist vorbereitet.“ Jede Person nimmt sich einen Job, der zu einer ihrer Karten passt, und trägt ihn im Crew-Plan auf der nächsten Seite ein.',
                 'Die anderen dürfen ergänzen: „Und du könntest auch …“ Am Ende hat jede Person einen Job.',
@@ -418,7 +418,7 @@ const kannst: Stunde = {
         {
           titel: 'Für dich: mein Baum', zeit: '12 Min.', wie: 'allein', icon: 'tree',
           bausteine: [
-            { art: 'text', x: ['Ein Baum steht, weil unten etwas hält. Schreib von unten nach oben – **nur, was du teilen willst.** Bei den Wurzeln zählen auch Orte, Tiere, Musik und Erinnerungen, nicht nur Menschen.'] },
+            { art: 'text', x: ['Ein Baum steht, weil unten etwas hält. Fang unten bei den Wurzeln an und schreib nach oben – **nur, was du teilen willst.** Bei den Wurzeln zählen auch Orte, Tiere, Musik und Erinnerungen, nicht nur Menschen.'] },
             {
               art: 'fragen',
               fragen: [

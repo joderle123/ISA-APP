@@ -130,7 +130,7 @@ const d: Heft = {
         "kanal": "Quarks Dimension Ralph",
         "url": "https://www.youtube.com/watch?v=_V_VBrW3ZuY",
         "dauer": "die ersten 5 Min.",
-        "frage": "Mit welchem Trick halten dich die Apps am längsten fest?"
+        "frage": "Binge-Scrolling heißt: ohne Pause scrollen, bis Stunden weg sind. Mit welchem Trick halten dich die Apps fest?"
       },
       "mythen": [
         [
@@ -267,7 +267,7 @@ const d: Heft = {
       "szene": {
         "bild": "peep:jana:besorgt",
         "name": "Jana, 15",
-        "text": "„Nur für mich“, schreibt er. Seit drei Wochen schreiben sie. Er ist witzig, er hört zu. Jetzt will er ein Foto. Jana zögert. Er schreibt: „Vertraust du mir nicht?“ Dann: „Andere machen das auch.“ Dann: „Schade. Dachte, du bist anders.“ Janas Daumen liegt über der Kamera. In ihrem Bauch ist ein Knoten. Den kennt sie.",
+        "text": "Seit drei Wochen schreiben sie. Er ist witzig, er hört zu. Jetzt will er ein Foto. „Nur für mich“, schreibt er. Jana zögert. Er schreibt: „Vertraust du mir nicht?“ Dann: „Andere machen das auch.“ Dann: „Schade. Dachte, du bist anders.“ Janas Daumen liegt über der Kamera. In ihrem Bauch ist ein Knoten. Den kennt sie.",
         "frage": "Welche seiner Sätze sind Druck – und kein Kompliment?"
       },
       "fakten": [
@@ -281,7 +281,7 @@ const d: Heft = {
         },
         {
           "t": "Du bist nicht schuld",
-          "x": "Wird ein Bild von dir verbreitet, hat **der** etwas falsch gemacht, der es weitergibt. Hol dir Hilfe. Bilder kann man löschen lassen."
+          "x": "Wird ein Bild von dir verbreitet, hat **der** etwas falsch gemacht, der es weitergibt. Hol dir Hilfe (BEE SECURE 8002 1234). Oft kann man Bilder löschen lassen."
         }
       ],
       "mythen": [
@@ -425,7 +425,7 @@ const d: Heft = {
       "szene": {
         "bild": "peep:tom:neutral:handy",
         "name": "Tom, 14",
-        "text": "Im Klassenchat taucht ein Bild auf: der Mathelehrer, betrunken auf einer Bank. Darunter: „OMG, schaut euch den an!!! TEILEN!!!“ In zehn Minuten haben es drei Klassen. Tom zoomt rein. Alles sieht echt aus. Aber auf der Seite der Schule steht: Der Lehrer ist seit Montag auf Klassenfahrt. Er schreibt: „Leute, das ist KI.“ Keiner reagiert. Das Bild ist längst schneller als er.",
+        "text": "Im Klassenchat taucht ein Bild auf: der Mathelehrer, betrunken auf einer Bank. Darunter: „OMG, heute im Stadtpark!!! TEILEN!!!“ In zehn Minuten haben es drei Klassen. Tom zoomt rein. Alles sieht echt aus. Aber auf der Seite der Schule steht: Der Lehrer ist seit Montag mit einer Klasse in Berlin. Er schreibt: „Leute, das ist KI.“ Keiner reagiert. Das Bild ist längst schneller als er.",
         "frage": "Warum war das Fake schneller als die Wahrheit?"
       },
       "fakten": [
@@ -754,7 +754,7 @@ const d: Heft = {
       "zeilen": [
         "Würde ich es zeigen, wenn alle zuschauen?",
         "Habe ich gefragt, wer mit drauf ist?",
-        "Bin ich über 70? Dann nicht senden."
+        "Anspannung über 70 (von 100)? Dann nicht senden."
       ]
     },
     {
@@ -808,7 +808,7 @@ const d: Heft = {
       ],
       [
         "Dauer",
-        "2 Einheiten à 100 Min. (E27–E28) + Zusatz"
+        "3 Stunden à etwa 90 Min.: E27, E28 und ein eigener Zusatz-Termin zu E27"
       ],
       [
         "Sozialform",
@@ -842,13 +842,13 @@ const d: Heft = {
     ],
     "gespraech": "Bildschirmzeiten, Apps und Chats sind privat: keine Handys einsammeln, keine Zahlen vergleichen, niemanden bloßstellen. Bei Track 02 ist damit zu rechnen, dass jemand betroffen ist – als Person, von der Bilder kursieren, oder als jemand, der weitergeleitet hat. Nicht in der Gruppe vertiefen. Die Haltung klar benennen: Verantwortlich ist, wer Druck macht oder weitergibt. Bei Hinweisen auf Erpressung, sexuelle Übergriffe oder Kontaktaufnahme durch Erwachsene sofort die zuständige Leitung (Responsable) einschalten.",
     "druck": [
-      "A4, doppelseitig, an der langen Seite gewendet. So liegen Szene (links) und „Dein Move“ (rechts) nebeneinander.",
+      "A4, doppelseitig, an der langen Seite gewendet. Material-Seiten (Schere) einmal extra einseitig drucken und daraus schneiden – im Heft der Jugendlichen steht auf der Rückseite die nächste Station.",
       "Seiten 1–{J} für die Jugendlichen, Seiten {L} nur für Sie.",
       "Schwarz-Weiß ist möglich; das Titelblatt braucht viel Toner.",
       "Seite {K} (Karten) einzeln und einseitig drucken, am besten auf festerem Papier."
     ],
     "hot": "Es gibt keine richtige Position – mit einer Ausnahme. Take 3 („Wer ein Foto schickt, ist selbst schuld“) kommt in jeder Gruppe und ist bewusst gesetzt. Nach der Diskussion die Haltung der Leitung klar sagen: Verantwortlich ist, wer weitergibt. Betroffene brauchen Hilfe, keine Schuldzuweisung.",
-    "achtung": "Im Foto-Duell keine Personen fotografieren und die Bilder danach löschen. Keine Deepfakes oder Bearbeitungen echter Personen im Kurs erstellen – auch nicht zur Demonstration. Für die Bilder-Wette nur Bilder ohne erkennbare Menschen verwenden. Der Film zeigt riskante Mutproben: vorher ansehen und das Thema Nachahmung ansprechen.",
+    "achtung": " Keine Deepfakes oder Bearbeitungen echter Personen im Kurs erstellen – auch nicht zur Demonstration.  Der Film zeigt riskante Mutproben: vorher ansehen und das Thema Nachahmung ansprechen.",
     "hintergrund": "Der Zusammenhang zwischen Bildschirmzeit und Wohlbefinden ist im Durchschnitt klein (Orben & Przybylski); entscheidend sind Inhalte, Vergleiche und verdrängter Schlaf. Soziale Vergleiche mit idealisierten Bildern verschlechtern Stimmung und Körperbild (Fardouly et al.). Konkrete Wenn-dann-Pläne ändern Gewohnheiten zuverlässiger als Vorsätze (Gollwitzer). Wer selbst einmal eine Falschmeldung gebaut hat, erkennt die Tricks danach besser (Roozenbeek & van der Linden); geübte Faktenprüfer verlassen eine Seite und suchen, was andere über die Quelle sagen (Wineburg & McGrew).",
     "quellen": "Orben & Przybylski (2019) · Fardouly et al. (2015) · Gollwitzer (1999) · Roozenbeek & van der Linden (2019) · Wineburg & McGrew (2019) · BEE SECURE · klicksafe. Angaben zu den Einheiten 27–28 in der Toolbox."
   },
@@ -873,4 +873,5 @@ const d: Heft = {
 // Fassung mit Stunden (16.11.2026): Die Einheiten sind zusammenhängende Stunden (m7-stunden.ts). Die Angaben oben bleiben als Quelle;
 // gedruckt werden die Stunden.
 aufStunden(d, stunden(d), { geprueft: '16.11.2026', loesungen })
+d.tracks[1].leitung.einsatz = 'Zusatz zu Einheit 27 – eigener Termin. ' + d.tracks[1].leitung.einsatz
 export default d

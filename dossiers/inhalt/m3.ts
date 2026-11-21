@@ -274,7 +274,7 @@ const d: Heft = {
       "fakten": [
         {
           "t": "Vollgas",
-          "x": "Drei Minuten volle Kraft: rennen, Liegestütze, Treppen. **Kraft raus – ohne Gegner, ohne Ziel.** Danach fällt die Zahl."
+          "x": "Drei Minuten volle Kraft: rennen, Liegestütze, Treppen. **Kraft raus – ohne Gegner, ohne Ziel.** Danach fällt bei manchen die Zahl – teste es, mit Pause im Sitzen danach."
         },
         {
           "t": "Lang ausatmen",
@@ -443,7 +443,7 @@ const d: Heft = {
         },
         {
           "t": "Starker Reiz, starke Wirkung",
-          "x": "**Kälte** ist der stärkste: Eiswürfel, kaltes Wasser, Kühlpack. Wirkt auch bei Rot."
+          "x": "**Kälte** wirkt bei vielen am stärksten: Eiswürfel, kaltes Wasser, Kühlpack. Wirkt auch bei Rot."
         },
         {
           "t": "Runter oder rauf",
@@ -596,7 +596,7 @@ const d: Heft = {
       "szene": {
         "bild": "peep:mia:muede",
         "name": "Mia, 16",
-        "text": "Zwei Uhr nachts. Mia liegt wach. Im Kopf läuft derselbe Film: der Blick von heute Mittag, der Satz, den sie hätte sagen sollen, die Arbeit morgen. Sie versucht, nicht daran zu denken. Es wird schlimmer. Dann probiert sie etwas anderes: Sie zählt von 100 in Siebenerschritten rückwärts. Bei 44 ist sie raus.",
+        "text": "Zwei Uhr nachts. Mia liegt wach. Im Kopf läuft derselbe Film: der Blick von heute Mittag, der Satz, den sie hätte sagen sollen, die Klassenarbeit morgen. Sie versucht, nicht daran zu denken. Es wird schlimmer. Dann probiert sie etwas anderes: Sie zählt von 100 in Siebenerschritten rückwärts. Bei 44 ist sie raus.",
         "frage": "Warum hat „nicht dran denken“ nicht funktioniert?"
       },
       "fakten": [
@@ -632,7 +632,7 @@ const d: Heft = {
         "kanal": "psychologeek",
         "url": "https://www.youtube.com/watch?v=J_mvG4KZt44",
         "dauer": "die ersten 5 Min.",
-        "frage": "Warum macht „nicht dran denken“ alles schlimmer?"
+        "frage": "Overthinking heißt: sich im Kreis denken. Warum macht „nicht dran denken“ alles schlimmer?"
       },
       "merk": "Du bist nicht dein Gedanke. ==Du schaust nur zu.==",
       "moveUnter": "Wer lenkt hier eigentlich?",
@@ -757,7 +757,7 @@ const d: Heft = {
       "nr": 15,
       "titel": "Dein Plan",
       "unter": "Packen, was wirkt. Und wissen, was du bei Rot tust – ohne nachzudenken",
-      "kurz": "Dein Koffer. Dein Plan für Rot.",
+      "kurz": "Deine Skills. Dein Plan für Rot.",
       "szene": {
         "bild": "peep:finn:neutral",
         "name": "Finn, 15",
@@ -1135,9 +1135,9 @@ const d: Heft = {
       "Die Jugendlichen schätzen ihre Anspannung von 0 bis 100 ein und ordnen sie den Zonen Grün, Gelb und Rot zu.",
       "Sie testen Körper-, Sinnes- und Kopf-Skills nach dem Muster Zahl vorher – Skill – Zahl nachher.",
       "Sie wissen, warum bei Rot Körper und Sinne vor dem Reden kommen – und dass ein Reiz stark sein darf, aber nicht schädlich.",
-      "Sie packen einen eigenen Skills-Koffer und schreiben einen Ampelplan mit mindestens einer erreichbaren Person."
+      "Sie wählen ihr Set für die Tasche und schreiben einen Ampelplan mit mindestens einer erreichbaren Person."
     ],
-    "start": "Titel, Ansage (vorlesen – der Ton ist Absicht), Tracklist und Soundcheck. Etwa 10 Minuten, z. B. nach dem Skills-Sprint in Einheit 11.",
+    "start": "Titel, Ansage (vorlesen – der Ton ist Absicht), Tracklist und Soundcheck. Etwa 10 Minuten vor Station 1 von Stunde 01.",
     "schluss": "Kino – der Film des Trimesters – als eigener Termin, bei Bedarf in zwei Teilen. Hot Takes: je zwei Sätze als Einstieg in eine Einheit – oder alle sechs im Stehen in Einheit 15. „Knack den Code“ als Wiederholung, Karten ausschneiden (die Notfallkarte zuerst), Abspann in der Abschlussrunde.",
     "hilfe": [
       "Die Zahl mit den Fingern zeigen lassen (0–10) und gemeinsam einkreisen.",
@@ -1153,7 +1153,7 @@ const d: Heft = {
     ],
     "gespraech": "Die Zahl ist eine Auskunft, kein Urteil – nie kommentieren oder anzweifeln („Du bist doch nicht bei 80“). Die Szenen sind nah am Alltag der Jugendlichen; fragen Sie nach der Figur („Was hätte Finn gebraucht?“), nicht nach der Person im Raum. Körper- und Vorstellungsübungen sind freiwillig. Ampelplan und sicherer Ort sind privat. Stehen bei Rot Selbstverletzung, Weglaufen oder Drogen, findet jemand keine erreichbare Person oder deutet Suizidgedanken an: zeitnah das Einzelgespräch suchen und nach dem Krisenplan des Hauses handeln.",
     "druck": [
-      "A4, doppelseitig, an der langen Seite gewendet. So liegen Szene (links) und „Dein Move“ (rechts) nebeneinander.",
+      "A4, doppelseitig, an der langen Seite gewendet. Material-Seiten (Schere) einmal extra einseitig drucken und daraus schneiden – im Heft der Jugendlichen steht auf der Rückseite die nächste Station.",
       "Seiten 1–{J} für die Jugendlichen, Seiten {L} nur für Sie.",
       "Schwarz-Weiß ist möglich; das Titelblatt braucht viel Toner.",
       "Seite {K} (Karten) einzeln und einseitig drucken, am besten auf festerem Papier."

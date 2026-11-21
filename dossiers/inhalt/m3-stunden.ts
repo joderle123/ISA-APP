@@ -26,7 +26,7 @@ export function stunden(d: Heft): Stunde[] {
     seite(
       modell(dieZahl, 'das Thermometer', ['circle-check', 'alert-triangle', 'flame'], { intro: 'Druck kann man messen – mit einer Zahl von 0 bis 100. Drei Zonen:' }),
       clip(dieZahl, 'Woher kommt die Wut?', [kreuzU('Woher kommt Wut?', 'Sie kommt aus dem Nichts.', 'Sie baut sich auf.', 'Manche sind halt so.')], ['Das macht Wut im Körper:', 'Das hilft:'],
-        [kreuz('War dein Tipp richtig?', 'ja', 'nein', 'halb'), kreuzU('Finn sagt: „Ich wollte das gar nicht.“ Stimmt das?', 'Ja. Bei Rot schaltet der Kopf ab.', 'Nein. Er wollte es.')]),
+        [kreuz('War dein Tipp richtig?', 'ja', 'nein', 'halb'), kreuzU('Finn sagt: „Ich wollte das gar nicht.“ Stimmt das?', 'Ja. Bei Rot schaltet der Kopf fast ab – darum muss man vorher handeln.', 'Nein. Er wollte es.')]),
       fuerDich('Welche Zone?', '8 Min.', fragen(null, dieZahl.moves[0].fragen[0])),
     ),
     seite(
@@ -36,16 +36,16 @@ export function stunden(d: Heft): Stunde[] {
         schritte: [
           'Jedes Team stellt seine Figur auf **20**. Die Karten liegen gemischt und verdeckt in der Mitte.',
           'Reihum: Karte ziehen, vorlesen, Figur ziehen. **„+“ heißt rauf, „−“ heißt runter.**',
-          'Wer über 70 kommt, ist bei Rot: einmal aussetzen und drei Mal lang ausatmen. Dann zurück auf 60.',
-          'Nach sechs Karten ist der Tag vorbei. Welches Team steht am niedrigsten?',
+          'Wer 70 oder mehr erreicht, ist bei Rot: ein Strich neben eure Zeile, drei Mal lang ausatmen, zurück auf 60.',
+          'Nach sechs Karten ist der Tag vorbei. Gewonnen hat das Team mit den wenigsten Rot-Strichen, bei Gleichstand die niedrigere Zahl. Dann alle Karten zurück und neu mischen.',
         ],
         runden: [
           { t: 'Runde 1 · Glück', x: 'Nur ziehen. Der Tag passiert einfach.' },
           { t: 'Runde 2 · mit Plan', x: 'Jedes Team bekommt vorher zwei „−“-Karten auf die Hand und spielt sie, wann es will.' },
-          { t: 'Runde 3 · eigene Karten', x: 'Jedes Team schreibt eine „+“-Karte und eine „−“-Karte dazu.' },
+          { t: 'Runde 3 · eigene Karten', x: 'Jedes Team schreibt eine „+“-Karte und eine „−“-Karte auf Zettel dazu.' },
         ],
         regeln: ['Niemand muss etwas von sich erzählen. Es geht um den Tag auf den Karten.'],
-        zu3: 'Jede Person spielt für sich. Die Leitung spielt mit.',
+        zu3: 'Alle drei sind ein Team, die Leitung ist das andere.',
         notiz: { titel: 'In Runde 2 haben wir die „−“-Karten gespielt bei Zahl:', linien: 1 },
         auswertung: ['Wann habt ihr in Runde 2 die „−“-Karten gespielt – früh oder erst kurz vor Rot?', 'Welche Karte kennt ihr aus eurem eigenen Tag?'],
       }),
@@ -65,7 +65,7 @@ export function stunden(d: Heft): Stunde[] {
   const s2 = stunde('Was hilft, wenn der Kopf nicht mehr zuhört?', ['erklären, warum bei viel Druck zuerst der Körper dran ist', 'drei Arten zu atmen ausprobieren', 'deinen Favoriten zum Runterkommen nennen'],
     seite(
       ankommen('deine Zahl jetzt', zahl('Wie hoch ist dein Druck gerade?', 'jetzt'), kreuz('Was machst du, wenn du aufgeregt bist?', 'atmen', 'bewegen', 'nichts', 'weiß nicht')),
-      st('Erst machen: der Vollgas-Test', '8 Min.', 'alle gleichzeitig', 'bolt', 'Alle gleichzeitig, auch Sie. Wer nicht mag, geht zügig auf der Stelle.',
+      st('Erst machen: der Vollgas-Test', '8 Min.', 'alle gleichzeitig', 'bolt', 'Würfel bereitlegen. Alle gleichzeitig, auch Sie. Wer nicht mag, geht zügig auf der Stelle.',
         fragen('Zwei Minuten volle Kraft – der Würfel sagt, was: **1–2** Hampelmann · **3–4** auf der Stelle laufen · **5–6** Kniebeugen. Dann zwei Minuten sitzen.', ...koerper.moves[0].fragen.slice(0, 1))),
       fall(koerper, 'Sami vor dem Büro', [
         kreis('Woran sieht man, dass Sami auf Vollgas ist? Kreise alles ein.', 'Bein wippt', 'Hände schwitzen', 'Film im Kopf', 'er gähnt'),
@@ -74,7 +74,7 @@ export function stunden(d: Heft): Stunde[] {
     ),
     seite(
       modell(koerper, 'Gas und Bremse', ['bolt', 'wind', 'hand-grab'], { zeit: '8 Min.' }),
-      clip(koerper, 'die Box-Atmung zum Mitmachen', [kreuz('Dein Druck vor dem Clip?', 'Grün', 'Gelb', 'Rot')], ['So oft habe ich mitgeatmet:', 'Das war schwer:'],
+      clip(koerper, 'die Box-Atmung zum Mitmachen', [kreuz('Dein Druck vor dem Clip?', 'Grün', 'Gelb', 'Rot')], ['Erst mitatmen, danach schreiben – das war leicht:', 'Das war schwer:'],
         [kreuz('Dein Druck nach dem Clip?', 'Grün', 'Gelb', 'Rot'), kreuzU('Sami sitzt wieder vor dem Büro. Was rätst du ihm?', '4 ein, 8 aus', 'Luft anhalten', 'ganz schnell atmen')], '10 Min.'),
       st('Der Skill: anspannen – loslassen', '5 Min.', 'alle gleichzeitig', 'hand-grab', 'Ruhig ansagen und mitmachen. Hände dürfen unter dem Tisch bleiben.',
         text('Das geht überall – auch unter dem Tisch. **Fäuste:** fünf Sekunden fest, dann loslassen. **Schultern:** zu den Ohren ziehen, fallen lassen. **Zehen:** einrollen, loslassen. Zwei Durchgänge. Spür den Unterschied.')),
@@ -87,7 +87,7 @@ export function stunden(d: Heft): Stunde[] {
           '**Teil 1 · der Parcours:** Zu zweit von Karte zu Karte. An jeder Karte eine Minute so atmen, wie es draufsteht. Dann unten ankreuzen.',
           'Nach fünf Karten: Schreib deinen Favoriten auf.',
           '**Teil 2 · ruhige Hand:** Zwei Teams bauen einen Becherturm. Zwei Minuten Zeit.',
-          '**Durchgang 1:** vorher 20 Sekunden auf der Stelle laufen. **Durchgang 2:** vorher drei Mal mit dem Favoriten atmen.',
+          '**Durchgang 1:** Team A läuft vorher 20 Sekunden auf der Stelle, Team B atmet drei Mal mit dem Favoriten. **Durchgang 2:** umgekehrt.',
           'Zählt die Becher. Welcher Turm ist höher?',
         ],
         regeln: ['Wem beim Atmen schwindelig wird: normal weiteratmen und hinsetzen.'],
@@ -184,7 +184,7 @@ export function stunden(d: Heft): Stunde[] {
           '**ABC-Runde:** Drei Minuten. Zu jedem Buchstaben ein Tier, eine Stadt oder ein Verein. Jedes Feld: 1 Punkt.',
           '**Rückwärts:** Zählt reihum von 50 rückwärts – jede Person eine Zahl, so schnell es geht. Die Leitung stoppt die Zeit. Das schnellere Team: 3 Punkte.',
           '**Blau-Jagd:** 45 Sekunden still alle blauen Dinge im Raum zählen. Wer am nächsten an der Zahl der Leitung ist: 3 Punkte.',
-          '**Eine Minute:** Augen zu. Setz dich, wenn du glaubst, 60 Sekunden sind um. Am nächsten dran: 3 Punkte.',
+          '**Eine Minute:** Alle stehen, Augen zu. Setz dich, wenn du glaubst, 60 Sekunden sind um. Am nächsten dran: 3 Punkte.',
         ],
         regeln: ['Wer sich verzählt, macht einfach weiter. Niemand wird vorgeführt.'],
         zu3: 'Ein Team gegen die Uhr: Jede Runde zweimal. Wird der zweite Versuch besser?',
@@ -201,7 +201,7 @@ export function stunden(d: Heft): Stunde[] {
   )
 
   /* ---------- Stunde 5 · Dein Plan ---------- */
-  const SKILLS: [string, string][] = [['4 ein, 8 aus', 'Körper'], ['Fäuste ballen, loslassen', 'Körper'], ['auf der Stelle sprinten', 'Körper'], ['gegen die Wand drücken', 'Körper'], ['kaltes Wasser über die Hände', 'Sinne'], ['mein Duft aus der Tasche', 'Sinne'], ['Musik auf die Ohren', 'Sinne'], ['saures Bonbon', 'Sinne'], ['rückwärts zählen', 'Kopf'], ['5-4-3-2-1', 'Kopf'], ['an meinen Ort denken', 'Kopf'], ['alle blauen Dinge zählen', 'Kopf'], ['jemanden anrufen', 'Mensch'], ['sagen: „Ich brauche kurz Pause.“', 'Mensch'], ['zu jemandem gehen, dem ich vertraue', 'Mensch'], ['schreiben statt reden', 'Mensch'], ['rausgehen', 'Tun'], ['kritzeln oder zeichnen', 'Tun'], ['etwas essen und trinken', 'Tun'], ['aufräumen', 'Tun']]
+  const SKILLS: [string, string][] = [['4 ein, 8 aus', 'Körper'], ['Fäuste ballen, loslassen', 'Körper'], ['auf der Stelle sprinten', 'Körper'], ['gegen die Wand drücken', 'Körper'], ['kaltes Wasser über die Hände', 'Sinne'], ['mein Duft aus der Tasche', 'Sinne'], ['Musik auf die Ohren', 'Sinne'], ['saures Bonbon', 'Sinne'], ['rückwärts zählen', 'Kopf'], ['5-4-3-2-1', 'Sinne'], ['an meinen Ort denken', 'Kopf'], ['alle blauen Dinge zählen', 'Kopf'], ['jemanden anrufen', 'Mensch'], ['sagen: „Ich brauche kurz Pause.“', 'Mensch'], ['zu jemandem gehen, dem ich vertraue', 'Mensch'], ['schreiben statt reden', 'Mensch'], ['rausgehen', 'Tun'], ['kritzeln oder zeichnen', 'Tun'], ['etwas essen und trinken', 'Tun'], ['aufräumen', 'Tun']]
   const NOTRUF = ['Jemand beleidigt deine Familie.', 'Du hast kaum geschlafen. Erste Stunde: Test.', 'Du wartest auf ein Gespräch beim Direktor.', 'Dein Handy wird eingesammelt.', 'Im Chat wird über dich gelästert.', 'Es ist nachts. Du kannst nicht schlafen.', 'Zu Hause gab es Streit. Du sitzt im Bus.', 'Jemand rempelt dich im Flur an – mit Absicht.', 'Du sollst vor allen etwas vortragen.']
   const s5 = stunde('Was machst du bei Grün, Gelb und Rot?', ['Skills nach Zonen sortieren', 'sagen, was bei dir wirkt – und was nicht', 'deinen eigenen Ampelplan aufschreiben'],
     seite(
@@ -223,18 +223,18 @@ export function stunden(d: Heft): Stunde[] {
         ziel: 'Üben, schnell den passenden Skill zu finden – je nach Zone.',
         material: 'die 20 Skill-Karten und 9 Notruf-Karten von der nächsten Seite (ausschneiden), ein Würfel',
         schritte: [
-          'Jede Person bekommt vier Skill-Karten auf die Hand. Der Rest ist der Stapel.',
+          'Jede Person bekommt drei Skill-Karten auf die Hand. Der Rest ist der Stapel.',
           'Ein Notruf wird vorgelesen. Der Würfel sagt die Zone: **1–2 Grün · 3–4 Gelb · 5–6 Rot.**',
           'Alle legen **gleichzeitig** verdeckt die Karte, die jetzt am besten passt. Aufdecken.',
-          'Daumen-Abstimmung: Wirkt das in dieser Zone? Ja: 1 Punkt. Dann eine Karte nachziehen.',
+          'Daumen-Abstimmung: Wirkt das in dieser Zone? Ja: 1 Punkt. Gespielte Karte unter den Stapel, eine neue nachziehen.',
         ],
         runden: [
           { t: 'Runde 1 · offen', x: 'Jede Karte zählt, wenn die Gruppe zustimmt.' },
-          { t: 'Runde 2 · Rot ist streng', x: 'Bei Rot zählen nur Körper- und Sinnes-Karten. Bei Rot denkt keiner.' },
+          { t: 'Runde 2 · Rot ist streng', x: 'Bei Rot zählen nur Körper- und Sinnes-Karten, „rausgehen“ und „zu jemandem gehen, dem ich vertraue“. Bei Rot denkt keiner.' },
           { t: 'Runde 3 · mitmachen', x: 'Wer mag, macht seinen Skill eine Minute mit allen. Freiwillig.' },
         ],
         regeln: ['Niemand muss sagen, ob er die Situation kennt.'],
-        zu3: 'Die Leitung spielt mit. Jede Person bekommt fünf Karten.',
+        zu3: 'Die Leitung spielt mit. Jede Person bekommt vier Karten.',
         auswertung: ['Welche Karte hat fast immer gepasst?', 'Welche Karten gingen bei Rot nicht mehr?'],
       }),
       fuerDich('mein Ampelplan', '12 Min.', fragen(plan.moves[1].kontext ?? null, ...plan.moves[1].fragen, satz('Ein Mensch für meinen Plan:', 'Wenn es brennt, gehe ich zu:'))),
@@ -252,18 +252,18 @@ export function stunden(d: Heft): Stunde[] {
 /** Lösungen für die Leitung – passend zu den Stationen oben */
 export const loesungen: string[][] = [
   [
-    'Der Fall: Finn war schon vor dem Satz bei etwa 70 – kein Schlaf, kein Essen, sechste Stunde. Der Griff nach dem Handy war nur der letzte Schritt.',
-    'Clip danach: Ja. Ab 70 schaltet der Kopf ab – das entschuldigt nichts, erklärt aber, warum man vorher handeln muss.',
-    'Druck-Tag: In Runde 2 gewinnt meist, wer die „−“-Karten früh spielt. Das ist die Botschaft: bei Gelb reagieren, nicht erst bei Rot.',
+    'Der Fall: Finn war schon vor dem Satz hoch – 50 oder 70 gelten beide (kein Schlaf, kein Essen, sechste Stunde). Der Griff nach dem Handy war nur der letzte Schritt.',
+    'Clip danach: Ja. Ab etwa 70 denkt der Kopf kaum noch mit – das entschuldigt nichts, erklärt aber, warum man vorher handeln muss.',
+    'Druck-Tag: In Runde 2 gewinnt meist, wer die „−“-Karten bei Gelb (ab etwa 50) spielt – zu früh verpufft, zu spät ist man schon bei Rot. Das ist die Botschaft: bei Gelb reagieren, nicht erst bei Rot.',
   ],
   [
     'Der Fall: Bein wippt, Hände schwitzen, Film im Kopf. Langes Ausatmen bremst den Körper – der Puls sinkt.',
-    'Atem-Labor: kein Richtig oder Falsch. Meist ist der Turm nach dem Atmen höher – ruhige Hände, ruhiger Kopf.',
+    'Atem-Labor: kein Richtig oder Falsch. Der zweite Turm ist oft schon durch Übung höher – deshalb tauschen die Teams. Ehrlich auswerten, auch wenn Atmen nicht gewinnt.',
     'Schluss: länger ausatmen als einatmen.',
   ],
   [
     'Der Fall: kaltes Wasser, Fliesen gezählt, Cousine angerufen. Das Wasser hat den Kopf ins Jetzt geholt. Wehgetan hat sie sich nicht – stark, aber nicht schädlich.',
-    'Sinnes-Labor: kein Richtig oder Falsch. Wichtig ist der Satz: Was die einen beruhigt, nervt die anderen.',
+    'Sinnes-Labor: kein Richtig oder Falsch. Wichtig ist der Satz: Was die einen beruhigt, nervt die anderen. Bei „Bei Rot hilft nur, was wehtut“ keine Antworten abfragen; wer „stimmt“ ankreuzt, später unter vier Augen ansprechen.',
   ],
   [
     'Elefant und Fall: Wegdrücken macht Gedanken stärker. Geholfen hat, den Kopf zu beschäftigen (rückwärts rechnen).',
@@ -272,7 +272,7 @@ export const loesungen: string[][] = [
   ],
   [
     'Der Fall: Finn hat bei 60 reagiert: Handy hingelegt, Fäuste unter dem Tisch, lang ausgeatmet, später geredet. Anders als in Stunde 1 hat er sein Warnsignal früh gemerkt.',
-    'Clip: Keins von beiden. Draufhauen heizt nach, Runterschlucken staut. Besser: Kraft raus ohne Ziel, dann reden.',
-    'Skills-Notruf: Bei Rot zählen Körper und Sinne. Kopf-Skills und Reden wirken erst wieder bei Gelb.',
+    'Clip: Keins von beiden. Draufhauen heizt nach; dauerndes Runterschlucken kostet Kraft. Besser: runterfahren (lang ausatmen, anspannen–loslassen), dann reden.',
+    'Skills-Notruf: Bei Rot zählen Körper, Sinne, Rausgehen und zu einem Menschen gehen. Kopf-Skills und langes Reden wirken erst wieder bei Gelb.',
   ],
 ]
