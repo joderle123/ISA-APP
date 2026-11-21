@@ -254,9 +254,10 @@ export const MODUL = {
    "Seite 1: Eine 0 oder 1 bei „dass es gut wird“ wiegt so schwer wie „Für mich gibt es kein Später“ – ruhig nachfragen.",
    "Seite 3: Der „Dienstag“ zeigt oft mehr über Bedürfnisse (Ruhe, eigene Tür, bestimmte Menschen) als über Berufe.",
    "Seite 4: Die Karte „Wer mir helfen kann“ beim nächsten Mal ansehen: Ist die Person gefragt worden?",
-   "Praktische Schritte (Bewerbung, Termine) gehören in eine eigene Stunde."
+   "Praktische Schritte (Bewerbung, Termine) gehören in eine eigene Stunde.",
+   "„Den Plan sagen“ übt, was Yusuf nicht konnte: einen Plan laut sagen, auch wenn jemand zweifelt. Wird die Zeit knapp, ist das Video freiwillig (es steht auch im Aktionsheft)."
   ],
-  "achtung": "Sätze wie „Ich werde eh nicht alt“ oder „Für mich gibt es kein Später“ sind keine Coolness, sondern ein Warnsignal: ruhig und direkt nach Suizidgedanken fragen und nach dem Verfahren der Einrichtung handeln. Offene Verfahren, Schulden oder ein unsicherer Aufenthalt begrenzen Pläne tatsächlich – das ehrlich benennen, statt es wegzureden, und klären, wer dabei hilft.",
+  "achtung": "Sätze wie „Ich werde eh nicht alt“ oder „Für mich gibt es kein Später“ sind keine Coolness, sondern ein Warnsignal: ruhig und direkt nach Suizidgedanken fragen und nach dem Verfahren der Einrichtung handeln (siehe SOLO #15; bei akuter Gefahr 112). Offene Verfahren, Schulden oder ein unsicherer Aufenthalt begrenzen Pläne tatsächlich – das ehrlich benennen, statt es wegzureden, und klären, wer dabei hilft.",
   "videos": [
    {
     "fuer": "die Stunde",
@@ -396,6 +397,49 @@ export const LEKTIONEN = [{
    ]
   },
   {
+   "art": "fragen",
+   "auftrag": "**Den Plan sagen – Yusuf sagt „Keine Ahnung“, weil schon mal jemand gelacht hat. Hier übst du, einen Plan laut zu sagen – deinen oder einen ausgedachten.** – Mein Plan in drei Sätzen: //(zusammen · 6 Min.)//",
+   "fragen": [
+    {
+     "f": "Ich will …",
+     "zeilen": 2
+    },
+    {
+     "f": "Das ist mir dabei wichtig:",
+     "zeilen": 2
+    },
+    {
+     "f": "Mein nächster Schritt:",
+     "zeilen": 2
+    }
+   ]
+  },
+  {
+   "art": "mc",
+   "auftrag": "Dein Gegenüber spielt den Berater und sagt: „Sei mal realistisch.“ Du antwortest laut. Welcher Satz passt zu dir?",
+   "fragen": [
+    {
+     "f": "",
+     "o": [
+      "„Kann sein. Was bräuchte ich dafür?“",
+      "„Mein nächster Schritt ist trotzdem: …“",
+      "„Darüber rede ich lieber mit jemand anderem.“"
+     ],
+     "r": []
+    }
+   ]
+  },
+  {
+   "art": "fragen",
+   "auftrag": "",
+   "fragen": [
+    {
+     "f": "",
+     "zeilen": 1
+    }
+   ]
+  },
+  {
    "art": "tabelle",
    "auftrag": "**Der erste Plan – Dein Gegenüber antwortet für die Zeit, als es so alt war wie du.** – Erst raten, was der andere schreibt – dann aufdecken: //(beide · 4 Min.)//",
    "hoch": false,
@@ -498,7 +542,7 @@ export const LEKTIONEN = [{
   "nummern": false,
   "cases": [
    {
-    "erz": "Der Meister schickt Yusuf zum Berufsberater. Der fragt:",
+    "erz": "Yusuf macht ein Praktikum in einer Werkstatt. Der Meister dort schickt ihn zum Berufsberater. Der fragt:",
     "bild": [
      "chef:neutral",
      "yusuf:neutral"
@@ -519,7 +563,7 @@ export const LEKTIONEN = [{
     "bild": "chef:enttaeuscht"
    },
    {
-    "erz": "Was Yusuf nicht sagt: Er hat einen Plan. Mechatroniker, eine eigene Wohnung – und dass seine kleine Schwester bei ihm essen kann, wenn es zu Hause knallt.",
+    "erz": "Was Yusuf nicht sagt: Er hat einen Plan. Mechatroniker, eine eigene Wohnung – und dass seine kleine Schwester bei ihm essen kann, wenn es zu Hause Streit gibt.",
     "bild": "yusuf:ruhig",
     "nach": "Er sagt es nicht, weil das letzte Mal jemand gelacht hat."
    }
@@ -580,7 +624,7 @@ export const LEKTIONEN = [{
    [
     {
      "titel": "Keiner weiß es so früh",
-     "text": "Die wenigsten Erwachsenen machen das, was sie mit 15 im Kopf hatten. **Du musst nicht wissen, was du wirst. Nur, was du als Nächstes ausprobierst.**"
+     "text": "Viele Erwachsene machen heute etwas ganz anderes, als sie mit 15 dachten. **Du musst nicht wissen, was du wirst. Nur, was du als Nächstes ausprobierst.**"
     },
     {
      "titel": "Du in zehn Jahren: ein Fremder",

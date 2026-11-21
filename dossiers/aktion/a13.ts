@@ -25,7 +25,7 @@ const d: AktionsHeft = {
       titel: 'Jana am Samstag', bild: 'peep:jana:traurig', icon: 'calendar-x', zeit: '10 Min.', wer: 'zusammen', material: '',
       schritte: ['Schaut euch Janas Samstag an.', 'Kreuz an: Was fühlt Jana? **Mehrere Kreuze sind erlaubt.**', 'Kreis ein: Wie viele Gefühle hat sie gleichzeitig?'],
       zonen: [
-        { art: 'comic', bilder: [['calendar', 'Samstag ist Besuchstag. Janas Mutter hat versprochen zu kommen.'], ['message-circle', 'Um vier schreibt sie: „Schaff es heute nicht, Schatz.“'], ['milk', 'Jana schreibt: „Kein Problem.“ Dann streitet sie wegen eines Joghurts.'], ['bolt', 'Abends sagt ein Mädchen: „Deine Mutter ist das Letzte.“ Jana geht auf sie los.']] },
+        { art: 'comic', bilder: [['calendar', 'Samstag ist Besuchstag. Janas Mutter hat versprochen zu kommen.'], ['message-circle', 'Um vier schreibt sie: „Schaff es heute nicht, Schatz.“'], ['milk', 'Jana schreibt: „Kein Problem.“ Aber sie ist tief enttäuscht. Später streitet sie – nur wegen eines Joghurts.'], ['bolt', 'Abends sagt ein Mädchen: „Deine Mutter ist das Letzte.“ Jana geht auf sie los.']] },
         { art: 'fragen', fragen: [{ f: 'Jana ist:', kreuz: ['enttäuscht', 'wütend', 'traurig', 'Sie hat ihre Mutter lieb.'] }, { f: 'Gleichzeitig hat sie:', kreis: ['ein Gefühl', 'zwei', 'alle vier'] }] },
       ],
       aha: 'Du kannst jemanden lieben **und** wütend auf ihn sein. Das ist kein Widerspruch.',

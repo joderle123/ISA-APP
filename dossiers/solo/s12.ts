@@ -82,7 +82,7 @@ const d: Solo = {
           "art": "szene",
           "bild": "peep:lina:verlegen",
           "name": "Lina, 16",
-          "text": "Seit Lina mit Elias zusammen ist, will er wissen, wo sie ist. Erst fand sie es süß. Dann wollte er ihren Standort, dann ihr Passwort – „in einer Beziehung vertraut man sich“. Letzte Woche hat er ihre Chats gelesen und war drei Tage beleidigt wegen einer Nachricht an einen Jungen aus der Klasse. Lina hat sich entschuldigt. Sie weiß nicht genau, wofür. Ihre Freundin sagt: „Der liebt dich halt.“",
+          "text": "Seit Lina mit Elias zusammen ist, will er wissen, wo sie ist. Erst fand sie es süß. Dann wollte er ihren Standort, dann ihr Passwort – „in einer Beziehung vertraut man sich“. Letzte Woche hat er ihre Chats gelesen, ohne zu fragen. Lina hatte einem Jungen aus der Klasse geschrieben – nur wegen der Hausaufgaben. Elias war drei Tage beleidigt. Lina hat sich entschuldigt. Sie weiß nicht genau, wofür. Ihre Freundin sagt: „Der liebt dich halt.“",
           "frage": "Woran erkennt man den Unterschied zwischen „Er liebt mich“ und „Er kontrolliert mich“?"
         },
         {
@@ -176,6 +176,36 @@ const d: Solo = {
         },
         {
           "art": "fragen",
+          "titel": "Ein Nein hören",
+          "wie": "beide",
+          "zeit": "6 Min.",
+          "kontext": "Einverständnis hat zwei Seiten: Nein sagen – und ein Nein annehmen.",
+          "fragen": [
+            {
+              "f": "Jemand hat Nein gesagt. Was ist die Antwort darauf?",
+              "raster": {
+                "spalten": [
+                  "in Ordnung",
+                  "Druck"
+                ],
+                "zeilen": [
+                  "„Okay. Dann nicht.“",
+                  "„Komm schon, nur kurz.“",
+                  "„Danke, dass du es sagst.“",
+                  "„Wenn du mich lieben würdest …“",
+                  "„Willst du lieber was anderes machen?“",
+                  "drei Tage beleidigt sein"
+                ]
+              }
+            },
+            {
+              "f": "Probiert es aus: Dein Gegenüber fragt: „Darf ich das Foto von dir posten?“ Du sagst Nein. Dann tauscht ihr – jetzt fragst du. Mein Satz, wenn ich ein Nein bekomme:",
+              "linien": 1
+            }
+          ]
+        },
+        {
+          "art": "fragen",
           "titel": "Was ich gelernt habe",
           "band": [
             "swords",
@@ -231,7 +261,8 @@ const d: Solo = {
               "zeilen": [
                 "Wird mein Leben größer oder kleiner?",
                 "Darf ich Nein sagen, ohne bestraft zu werden?",
-                "Kann ich so sein, wie ich bin?"
+                "Kann ich so sein, wie ich bin?",
+                "Reden hilft: Kanner-Jugendtelefon **116 111**"
               ]
             }
           ]
@@ -391,7 +422,7 @@ const d: Solo = {
       ],
       [
         "40–50",
-        "Experiment vereinbaren, Karten ausschneiden. Stufe 3 nur, wenn der Jugendliche sie von sich aus wählt."
+        "Experiment vereinbaren, Karten ausschneiden. Stufe 3 nur, wenn der Jugendliche sie von sich aus wählt – und erst, nachdem Sie gesagt haben, was Sie weitergeben müssten."
       ]
     ],
     "haltung": [
@@ -403,7 +434,9 @@ const d: Solo = {
     "hinweise": [
       "Seite 2: Den dritten Kasten (Porno) sachlich stehen lassen; Nachfragen beantworten, nicht ausfragen.",
       "Seite 3: „Kommt drauf an“ ist die interessanteste Spalte – nachfragen, worauf.",
-      "Fragen zu Verhütung, Schwangerschaft oder Infektionen: an eine Fachstelle für sexuelle Gesundheit vermitteln (in Luxemburg z. B. Planning Familial)."
+      "Fragen zu Verhütung, Schwangerschaft oder Infektionen: an eine Fachstelle für sexuelle Gesundheit vermitteln (in Luxemburg z. B. Planning Familial).",
+      "Bilder im Netz (Weiterleiten, Erpressung): BEE SECURE Helpline 8002 1234; bei Bedrohung Polizei 113.",
+      "„Ein Nein hören“ übt die zweite Seite von Einverständnis – auch Sie fragen einmal und nehmen das Nein an. Den Clip vor der Stunde ansehen: Kopien verschwinden manchmal."
     ],
     "achtung": "Das Heft kann Übergriffe sichtbar machen. Nicht nach Einzelheiten fragen, glauben, ruhig bleiben, nichts versprechen, was Sie nicht halten können. Bei Hinweisen auf sexuelle Gewalt, auf Beziehungen mit deutlich Älteren, auf Erpressung mit Bildern oder auf Gewalt in der Beziehung nach dem Verfahren der Einrichtung handeln und die zuständige Leitung (Responsable) einbeziehen. Schildert der Jugendliche eigenes übergriffiges Verhalten, ist das ebenfalls ein Schutzthema – für die andere Person und für ihn.",
     "hintergrund": "Kontrollierendes Verhalten in Jugendbeziehungen wird häufig als Zuneigung gedeutet; Programme, die Warnzeichen und Einverständnis konkret besprechen, verringern Gewalt in Beziehungen (Foshee et al.; Wolfe et al.). Jugendliche, die häufig Pornografie nutzen, haben eher unrealistische Vorstellungen von Sexualität (Peter & Valkenburg). Wirksame Sexualaufklärung behandelt neben Biologie auch Gefühle, Beziehungen und Rechte (WHO Europa/BZgA).",

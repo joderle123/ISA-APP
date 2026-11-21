@@ -253,9 +253,10 @@ export const MODUL = {
   "hinweise": [
    "Seite 3: Das Feld bleibt beim Jugendlichen; Namen nicht abfragen.",
    "Seite 4: „Zehn Sekunden mehr“ funktioniert auch in der Wohngruppe und im Chat.",
-   "Bei vielen Beziehungsabbrüchen (Einrichtungswechsel) ist Misstrauen eine vernünftige Erfahrung, kein Symptom."
+   "Bei vielen Beziehungsabbrüchen (Einrichtungswechsel) ist Misstrauen eine vernünftige Erfahrung, kein Symptom.",
+   "„Mein „Mal sehen““ prüft eine eigene Absage Schritt für Schritt; „Mein erster Schritt“ plant und übt einen Kontakt laut. Wird die Zeit knapp, ist das Video freiwillig."
   ],
-  "achtung": "Einsamkeit ist ein Risikofaktor für depressive Krisen und Suizidgedanken – bei Sätzen wie „Mich würde eh keiner vermissen“ ruhig und direkt nachfragen und nach dem Verfahren der Einrichtung handeln. Kontakte im Netz ernst nehmen, aber prüfen: Erwachsene, die sehr schnell sehr nah werden, Geschenke machen oder Geheimhaltung verlangen, sind ein Grund, die zuständige Leitung (Responsable) einzubeziehen.",
+  "achtung": "Einsamkeit ist ein Risikofaktor für depressive Krisen und Suizidgedanken – bei Sätzen wie „Mich würde eh keiner vermissen“ ruhig und direkt nachfragen und nach dem Verfahren der Einrichtung handeln. Kontakte im Netz ernst nehmen, aber prüfen: Erwachsene, die sehr schnell sehr nah werden, Geschenke machen oder Geheimhaltung verlangen, sind ein Grund, die zuständige Leitung (Responsable) einzubeziehen. Beratung: BEE SECURE Helpline 8002 1234; bei akuter Gefahr Polizei 113.",
   "videos": [
    {
     "fuer": "die Stunde",
@@ -352,6 +353,43 @@ export const LEKTIONEN = [{
    ]
   },
   {
+   "art": "mc",
+   "auftrag": "**Mein erster Schritt – Nimm die Person, die du gern einen Ring näher hättest. Ein Buchstabe reicht. Dann übt ihr: Dein Gegenüber spielt die Person, du sagst deinen Satz einmal laut.** – Kreuze **einen** Schritt an: //(zusammen · 7 Min.)//",
+   "fragen": [
+    {
+     "f": "",
+     "o": [
+      "eine Frage stellen",
+      "eine Nachricht schreiben",
+      "etwas Kleines von mir erzählen",
+      "Ja sagen, wenn mich jemand einlädt"
+     ],
+     "r": []
+    }
+   ]
+  },
+  {
+   "art": "fragen",
+   "auftrag": "Ganz konkret:",
+   "fragen": [
+    {
+     "f": "Wann und wo?",
+     "zeilen": 2
+    },
+    {
+     "f": "Das sage oder schreibe ich wörtlich:",
+     "zeilen": 2
+    }
+   ]
+  },
+  {
+   "art": "skala",
+   "auftrag": "So viel Mut braucht das (0–10). Über 7? Mach den Schritt kleiner.",
+   "zeilen": [
+    "mein Schritt"
+   ]
+  },
+  {
    "art": "tabelle",
    "auftrag": "**Amiras Samstag** – Rechne durch: //(zusammen · 6 Min.)//",
    "hoch": true,
@@ -381,6 +419,28 @@ export const LEKTIONEN = [{
      "",
      ""
     ]
+   ]
+  },
+  {
+   "art": "fragen",
+   "auftrag": "**Mein „Mal sehen“ – Wann hast du zuletzt abgesagt, obwohl du eigentlich wolltest? Lieber nicht? Nimm jemanden, den du kennst, oder erfinde jemanden.** – Schritt für Schritt: //(allein · 5 Min.)//",
+   "fragen": [
+    {
+     "f": "Die Einladung war:",
+     "zeilen": 2
+    },
+    {
+     "f": "Ich dachte, dann passiert:",
+     "zeilen": 2
+    },
+    {
+     "f": "Weiß ich das von diesen Leuten – oder von früher?",
+     "zeilen": 2
+    },
+    {
+     "f": "Das Absagen hat mich gekostet:",
+     "zeilen": 2
+    }
    ]
   },
   {
@@ -448,7 +508,7 @@ export const LEKTIONEN = [{
  "schreiben": [
   {
    "art": "schreiben",
-   "auftrag": "Experiment bis zum nächsten Mal: **Zehn Sekunden mehr.** Bleib diese Woche dreimal **zehn Sekunden länger** in einem Kontakt, als du es sonst tun würdest: eine Frage mehr stellen, eine Nachricht mehr schreiben, einmal nicht als Erster gehen. Wette vorher: Was passiert in diesen zehn Sekunden?",
+   "auftrag": "Experiment bis zum nächsten Mal: **Zehn Sekunden mehr.** Bleib diese Woche dreimal **zehn Sekunden länger** in einem Gespräch oder Chat, als du es sonst tun würdest: eine Frage mehr stellen, eine Nachricht mehr schreiben, einmal nicht als Erster gehen. Wette vorher: Was passiert in diesen zehn Sekunden?",
    "zeilen": 5,
    "zeilenAnfaenge": [
     "Meine Wette:",
@@ -472,7 +532,7 @@ export const LEKTIONEN = [{
     {
      "titel": "Kleine Schritte",
      "icon": "stairs-up",
-     "text": "eine Frage stellen\netwas von mir erzählen, das kein Geheimnis ist\neinmal Ja sagen und eine Stunde bleiben"
+     "text": "eine Frage stellen\netwas von mir erzählen, das kein Geheimnis ist\neinmal Ja sagen und eine Stunde bleiben\nGerade niemand da? Kanner-Jugendtelefon **116 111** (feste Zeiten) · Notruf **112** (immer)"
     }
    ]
   }
@@ -491,7 +551,7 @@ export const LEKTIONEN = [{
   "nummern": false,
   "cases": [
    {
-    "erz": "Amira hat 212 Kontakte und niemanden, den sie um zwei Uhr nachts anrufen würde.",
+    "erz": "Amira hat 212 Kontakte. Aber niemanden, den sie um zwei Uhr nachts anrufen würde, wenn es ihr schlecht geht.",
     "bild": "amira:traurig:handy"
    },
    {
@@ -517,7 +577,7 @@ export const LEKTIONEN = [{
       "Mal sehen."
      ]
     ],
-    "nach": "Sie will. Aber wenn sie hingeht und es wird komisch? Dann lieber gleich zu Hause bleiben."
+    "nach": "Sie will. Aber was, wenn es komisch wird und keiner mit ihr redet? Dann lieber gleich zu Hause bleiben."
    }
   ],
   "woerter": [
@@ -576,11 +636,11 @@ export const LEKTIONEN = [{
    [
     {
      "titel": "Ein Alarm wie Hunger",
-     "text": "Einsamkeit ist kein Charakterfehler. Sie ist ein Signal: **Dir fehlt etwas, das Menschen zum Leben brauchen.**"
+     "text": "Allein sein kann guttun. Einsam ist man, wenn Nähe fehlt. Einsamkeit ist kein Charakterfehler, sondern ein Signal: **Dir fehlt etwas, das Menschen zum Leben brauchen.**"
     },
     {
      "titel": "Sie macht misstrauisch",
-     "text": "Wer lange allein ist, liest neutrale Gesichter als feindlich und zieht sich zurück. **Der Kopf schützt dich – und sperrt dich ein.**"
+     "text": "Wer lange einsam ist, sieht in normalen Gesichtern schneller Ablehnung und zieht sich zurück. **Der Kopf schützt dich – und sperrt dich ein.**"
     }
    ],
    [

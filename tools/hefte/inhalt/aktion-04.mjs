@@ -329,7 +329,7 @@ export const MODUL = {
     {
      "art": "frei",
      "auftrag": "",
-     "html": "<div class=\"ak-comic\" style=\"grid-template-columns:repeat(4,1fr)\"><div><div class=\"o\"><b>1</b>{i:school}</div><p>In der Schule ist Noah der, der fehlt.</p></div><div><div class=\"o\"><b>2</b>{i:message-circle}</div><p>Die Lehrerin sagt: „Du könntest, wenn du wolltest.“</p></div><div><div class=\"o\"><b>3</b>{i:device-gamepad-2}</div><p>Um vier loggt er sich ein.</p></div><div><div class=\"o\"><b>4</b>{i:users}</div><p>Drei Leute schreiben: „Endlich.“</p></div></div>"
+     "html": "<div class=\"ak-comic\" style=\"grid-template-columns:repeat(4,1fr)\"><div><div class=\"o\"><b>1</b>{i:school}</div><p>In der Schule fehlt Noah oft.</p></div><div><div class=\"o\"><b>2</b>{i:message-circle}</div><p>Die Lehrerin sagt: „Du könntest, wenn du wolltest.“</p></div><div><div class=\"o\"><b>3</b>{i:device-gamepad-2}</div><p>Um vier loggt er sich ein.</p></div><div><div class=\"o\"><b>4</b>{i:users}</div><p>Drei Leute schreiben: „Endlich.“</p></div></div>"
     },
     {
      "art": "mc",
@@ -407,9 +407,9 @@ export const MODUL = {
    "material": "",
    "bild": "",
    "schritte": [
-    "Diese Sätze fragen auch Ärzte.",
+    "Diese Sätze ähneln Fragen von Fachleuten. **Es ist kein Test.**",
     "Kreuz an. **Keiner schaut mit.**",
-    "Du wertest selbst aus: Wie viele „oft“?",
+    "Wo steht ein „oft“? Da lohnt es sich, genauer hinzuschauen.",
     "Du entscheidest, ob du etwas davon sagst."
    ],
    "zonen": [
@@ -480,7 +480,7 @@ export const MODUL = {
    "material": "Spiel oder Handy, Timer",
    "bild": "noah:neutral",
    "schritte": [
-    "Leg **vorher** fest: Schluss nach einer Runde – oder nach 8 Minuten.",
+    "Leg **vorher** fest: Schluss nach **8 Minuten** – auch mitten in der Runde.",
     "Sag es laut. Timer an. Spiel.",
     "Dein Gegenüber macht dasselbe mit seinem Handy.",
     "Der Timer klingelt: **aufhören.** Mitten drin.",
@@ -611,7 +611,7 @@ export const MODUL = {
  },
  "begleitungAktion": {
   "material": "Handy oder Konsole, Timer, Stifte",
-  "achtung": "Erzählt der Jugendliche selbst von mehreren „oft“ über viele Monate, oder bei Schulabbruch oder völligem Rückzug: fachliche Abklärung anregen (Kinder- und Jugendpsychiatrie, Suchtberatung). Auf Geld achten (Käufe im Spiel, Schulden, fremde Karten) und auf Kontakte: Erwachsene, die Geschenke machen oder in private Chats wechseln wollen, sind ein Grund, sofort die zuständige Leitung (Responsable) einzubeziehen. Spielen als Flucht vor einer unerträglichen Lage zu Hause ist kein Spielproblem.",
+  "achtung": "Erzählt der Jugendliche selbst von mehreren „oft“ über viele Monate, oder bei Schulabbruch oder völligem Rückzug: fachliche Abklärung anregen (Kinder- und Jugendpsychiatrie, Suchtberatung). Auf Geld achten (Käufe im Spiel, Schulden, fremde Karten) und auf Kontakte: Erwachsene, die Geschenke machen oder in private Chats wechseln wollen, sind ein Grund, sofort die zuständige Leitung (Responsable) einzubeziehen. Beratung: BEE SECURE Helpline 8002 1234; bei Erpressung oder akuter Gefahr Polizei 113. Spielen als Flucht vor einer unerträglichen Lage zu Hause ist kein Spielproblem.",
   "mehr": "Fall, Hintergrund, Quiz und Gesprächsfragen stehen im Heft SOLO #04 Zocken."
  }
 }

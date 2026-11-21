@@ -82,7 +82,7 @@ const d: Solo = {
           "art": "szene",
           "bild": "peep:ben:besorgt",
           "name": "Ben, 15",
-          "text": "Erst die Kopfhörer, jetzt das: Ben hat mit zwei anderen einen Roller „geliehen“. Die Idee kam nicht von ihm. Gefahren ist er. Jetzt gibt es eine Anzeige, einen Termin, und seine Mutter redet seit vier Tagen nur das Nötigste. Der Erzieher will „darüber sprechen“. Ben sagt: „War halt so.“ Was er denkt: Jetzt bin ich endgültig der, für den mich alle halten. Dann kann ich auch gleich so weitermachen.",
+          "text": "Ben hatte dieses Jahr schon einmal Ärger. Jetzt hat er mit zwei anderen einen Roller genommen, der ihnen nicht gehört. Die Idee kam nicht von ihm. Gefahren ist er. Jetzt gibt es eine Anzeige, und Ben hat bald einen Termin bei der Polizei. Seine Mutter redet seit vier Tagen kaum mit ihm. Der Erzieher will „darüber sprechen“. Ben sagt: „War halt so.“ Was er denkt: Jetzt denken alle, ich bin kriminell. Dann bin ich das eben. Dann mache ich so weiter.",
           "frage": "Was ist an Bens letztem Gedanken gefährlich?"
         },
         {
@@ -110,7 +110,7 @@ const d: Solo = {
             "kanal": "Quarks",
             "url": "https://www.youtube.com/watch?v=I40g6U3K7hc",
             "dauer": "die ersten 5 Min.",
-            "frage": "Wie viel von deinem Mist hättest du auch allein gemacht?"
+            "frage": "Was machen Leute in der Gruppe, was sie allein nie machen würden?"
           }
         },
         {
@@ -143,9 +143,43 @@ const d: Solo = {
                 "optionen": [
                   "er selbst / ich",
                   "die anderen",
-                  "die Umstände"
+                  "die Umstände (Ort, Zeit, Zufall)"
                 ]
               }
+            }
+          ]
+        },
+        {
+          "art": "fragen",
+          "titel": "Bens Stopp-Stellen",
+          "wie": "zusammen",
+          "zeit": "7 Min.",
+          "kontext": "Mist passiert selten in einer Sekunde. Es gibt mehrere Momente, in denen man noch aussteigen kann.",
+          "fragen": [
+            {
+              "f": "Was denkt Ben hier – und was hätte er sagen oder tun können?",
+              "preis": {
+                "erste": "Moment",
+                "kopf": [
+                  "Ben denkt",
+                  "Ausstieg"
+                ],
+                "optionen": [
+                  "Die zwei: „Komm, wir nehmen den Roller.“",
+                  "Einer sagt: „Du fährst.“",
+                  "Ben steigt auf.",
+                  "Der Erzieher will reden. Ben sagt: „War halt so.“"
+                ]
+              }
+            },
+            {
+              "f": "Dein Gegenüber spielt einen der zwei und drängt. Du sagst deinen Satz laut und gehst zur Tür. Mein Satz:",
+              "kreuz": [
+                "„Ich bin raus.“",
+                "„Ohne mich.“",
+                "„Kein Bock auf Ärger.“"
+              ],
+              "linien": 1
             }
           ]
         },
@@ -179,27 +213,28 @@ const d: Solo = {
         },
         {
           "art": "fragen",
-          "titel": "Zwei Geschichten",
-          "band": [
-            "users",
-            "Beide antworten"
-          ],
-          "wie": "beide",
-          "zeit": "5 Min.",
+          "titel": "Der erste Satz",
+          "wie": "zusammen",
+          "zeit": "6 Min.",
+          "kontext": "Für das Experiment „Ein Stück zurück“: eine kleine Sache, nicht die mit der Anzeige. Du kannst auch für Ben planen.",
           "fragen": [
             {
-              "f": "So viel, wie jeder sagen will:",
-              "preis": {
-                "erste": "Frage",
-                "kopf": [
-                  "du",
-                  "Gegenüber"
-                ],
-                "optionen": [
-                  "Ein Mist, den ich gebaut habe",
-                  "So habe ich es wieder hingekriegt – oder nicht"
-                ]
-              }
+              "f": "Welcher Schritt passt? Kreuze an:",
+              "unter": true,
+              "kreuz": [
+                "sagen: „Das war falsch von mir.“",
+                "etwas reparieren oder ersetzen",
+                "fragen: „Was brauchst du von mir?“",
+                "erst mal nur zuhören"
+              ]
+            },
+            {
+              "f": "Plan – dann sag den ersten Satz einmal laut zu deinem Gegenüber:",
+              "satz": [
+                "Mein erster Satz (ohne „aber“):",
+                "Wann und wo:",
+                "Wenn die Person nicht will, dann:"
+              ]
             }
           ]
         }
@@ -333,7 +368,7 @@ const d: Solo = {
       "o": [
         "„Ihr seid alle dumm.“",
         "„Das sage ich dem Erzieher.“",
-        "„Ich muss leider weg, sorry.“",
+        "„Na gut, aber nur kurz.“",
         "„Ich bin raus.“"
       ],
       "r": 3,
@@ -405,9 +440,10 @@ const d: Solo = {
     "hinweise": [
       "Seite 3: Zehn Punkte bei „ich“ sind genauso verdächtig wie null. Nachfragen: „Was hätten die anderen anders machen können?“",
       "Seite 4: Wiedergutmachung ist ein Angebot. Die geschädigte Person muss sie nicht annehmen – das vorher besprechen.",
-      "Rechtliche Fragen beantwortet eine Rechtsberatung, nicht dieses Heft."
+      "Rechtliche Fragen beantwortet eine Rechtsberatung, nicht dieses Heft.",
+      "„Bens Stopp-Stellen“ sucht die Momente, in denen man noch aussteigen kann, und übt den Satz dazu laut. „Der erste Satz“ bereitet das Wiedergutmachen vor – immer an einer kleinen Sache, nie an einem laufenden Verfahren. Wird die Zeit knapp, ist das Video freiwillig."
     ],
-    "achtung": "Klären Sie vor der Stunde, was Sie mit neuen Informationen über Straftaten tun müssen, und sagen Sie es dem Jugendlichen, bevor er erzählt. In laufenden Verfahren keine Einzelheiten der Tat erfragen. Lebt die geschädigte Person im selben Haus, geht deren Schutz vor; ein Kontakt wird nur mit ihr und der zuständigen Leitung (Responsable) vorbereitet. Wird der Jugendliche von Älteren unter Druck gesetzt oder für Taten benutzt, ist das ein Schutzthema. Starke Scham kann in Selbstverletzung oder Suizidgedanken umschlagen – nachfragen.",
+    "achtung": "Klären Sie vor der Stunde, was Sie mit neuen Informationen über Straftaten tun müssen, und sagen Sie es dem Jugendlichen, bevor er erzählt. In laufenden Verfahren keine Einzelheiten der Tat erfragen. Lebt die geschädigte Person im selben Haus, geht deren Schutz vor; ein Kontakt wird nur mit ihr und der zuständigen Leitung (Responsable) vorbereitet. Wird der Jugendliche von Älteren unter Druck gesetzt oder für Taten benutzt, ist das ein Schutzthema. Starke Scham kann in Selbstverletzung oder Suizidgedanken umschlagen – nachfragen und das Kanner-Jugendtelefon 116 111 nennen.",
     "hintergrund": "Schuldgefühle gehen mit Wiedergutmachung und weniger Rückfällen einher, Scham dagegen mit Ärger, Rückzug und erneutem Fehlverhalten (Tangney et al.). In Anwesenheit Gleichaltriger gehen Jugendliche deutlich höhere Risiken ein (Gardner & Steinberg). Der größte Teil jugendlicher Regelverstöße bleibt auf die Jugend begrenzt (Moffitt). Wer als Person verurteilt statt für die Tat verantwortlich gemacht wird, übernimmt das Etikett eher; Verantwortung mit Wiederaufnahme wirkt besser (Braithwaite). Menschen, die aufhören, erzählen sich selbst als jemand, der mehr ist als seine Taten (Maruna).",
     "quellen": "Tangney, Stuewig & Mashek (2007) · Gardner & Steinberg (2005) · Moffitt (1993) · Braithwaite (1989) · Maruna (2001)."
   }

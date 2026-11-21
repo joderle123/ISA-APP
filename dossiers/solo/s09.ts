@@ -70,8 +70,8 @@ const d: Solo = {
           "art": "szene",
           "bild": "peep:yusuf:neutral",
           "name": "Yusuf, 16",
-          "text": "Yusuf raucht abends einen, „zum Runterkommen“. Seit dem Sommer jeden Abend. Er sagt: „Ich hab’s im Griff, ich kann jederzeit aufhören.“ Letzte Woche gab es drei Tage nichts. Yusuf hat kaum geschlafen, seine kleine Schwester angeschrien und ist nicht zur Arbeit. Am vierten Tag war alles wieder gut. „Siehst du“, sagt Yusuf, „ohne geht es mir schlechter.“",
-          "frage": "Yusuf sagt zwei Sätze. Welchen widerlegen die drei Tage – und welcher stimmt?"
+          "text": "Yusuf raucht abends einen Joint, „zum Runterkommen“. Seit dem Sommer jeden Abend. Er sagt: „Ich hab’s im Griff, ich kann jederzeit aufhören.“ Letzte Woche hatte er drei Tage lang nichts zu rauchen. Yusuf hat kaum geschlafen, seine kleine Schwester angeschrien und ist nicht zur Arbeit gegangen. Am vierten Tag hat er wieder etwas. Sofort geht es ihm besser. „Siehst du“, sagt Yusuf, „ohne geht es mir schlechter.“",
+          "frage": "Yusuf sagt zwei Sätze. Welcher ist nach den drei Tagen falsch? Und welcher stimmt – nur anders, als Yusuf denkt?"
         },
         {
           "art": "fakten",
@@ -90,6 +90,12 @@ const d: Solo = {
               "x": "Erste Zeichen von Abhängigkeit zeigen sich bei Jugendlichen manchmal schon nach **wenigen Wochen**. Der süße Geschmack versteckt das nur."
             }
           ]
+        },
+        {
+          "art": "kasten",
+          "label": "Gut zu wissen",
+          "titel": "Gewöhnung",
+          "x": "Nimmst du etwas jeden Tag, stellt sich dein Körper darauf ein. Fehlt es, kippt er erst mal ins Gegenteil: unruhig, schlecht schlafen, gereizt. **Das fühlt sich an wie „Ich brauche es“. Es zeigt aber: Der Körper hat sich gewöhnt.** Meist wird es nach ein, zwei Wochen ohne besser. Der Schlaf braucht manchmal länger."
         },
         {
           "art": "clip",
@@ -168,6 +174,25 @@ const d: Solo = {
         },
         {
           "art": "fragen",
+          "titel": "Mein Plan B",
+          "wie": "allein",
+          "zeit": "5 Min.",
+          "kontext": "Für dich – oder für jemanden, den du kennst. Nimm das Wofür, das du oben eingekreist hast. Kein Verbot – nur ein zweiter Weg.",
+          "fragen": [
+            {
+              "f": "Ehrlich:",
+              "satz": [
+                "Mein Wofür:",
+                "Was hilft dabei auch – nur langsamer?",
+                "Wenn (wann, wo, mit wem):",
+                "dann probiere ich zuerst:",
+                "Wenn mir jemand etwas anbietet und ich will nicht, sage ich:"
+              ]
+            }
+          ]
+        },
+        {
+          "art": "fragen",
           "titel": "Jeder hat sein Mittel",
           "band": [
             "users",
@@ -222,8 +247,8 @@ const d: Solo = {
               "titel": "Notfall",
               "icon": "first-aid-kit",
               "zeilen": [
-                "Jemand ist nicht ansprechbar oder atmet komisch:",
-                "**112.** Dableiben. Auf die Seite legen.",
+                "Jemand ist nicht ansprechbar:",
+                "**112.** Dableiben. Atmet die Person normal: auf die Seite legen. Sonst hilft dir die 112 am Telefon.",
                 "Sagen, was genommen wurde. Ärger ist egal – Zeit zählt."
               ]
             }
@@ -395,7 +420,9 @@ const d: Solo = {
     "hinweise": [
       "Seite 1: Meldepflichten und Hausregeln vorher mit der zuständigen Leitung klären, damit Ihre Auskunft stimmt.",
       "Seite 4: Die Pause ist ein Test, kein Entzug. Bei täglichem starkem Alkohol- oder Beruhigungsmittelkonsum nie ohne ärztliche Begleitung absetzen.",
-      "Wer nichts nimmt, bearbeitet das Heft über „Leute, die ich kenne“ – oder über Energy-Drinks und Vapes."
+      "Wer nichts nimmt, bearbeitet das Heft über „Leute, die ich kenne“ – oder über Energy-Drinks und Vapes.",
+      "Rechtslage (Stand 2026, vor dem Gespräch bitte prüfen): In Luxemburg dürfen Erwachsene seit 2023 zu Hause in kleinem Umfang Cannabis anbauen und konsumieren; in der Öffentlichkeit und für Minderjährige bleibt es verboten. „Ist doch legal“ stimmt für Jugendliche also nicht.",
+      "Neu: der Kasten „Gewöhnung“ (erklärt Yusufs drei Tage) und „Mein Plan B“ mit Wenn-dann-Plan und einem Satz zum Ablehnen. Wird die Zeit knapp, ist das Video freiwillig."
     ],
     "achtung": "Konsum ist oft Selbstbehandlung von Schlafproblemen, Anspannung, ADHS-Beschwerden oder traumatischen Erinnerungen – dann fachliche Abklärung anregen. Sofort ärztlich abklären lassen: Stimmenhören, Verfolgungsgefühle, tagelange Schlaflosigkeit, Mischkonsum, Konsum bis zur Bewusstlosigkeit. Schulden, Dealen und Druck durch Ältere sind Schutzthemen und gehören zur zuständigen Leitung (Responsable). Beratung für Jugendliche und Prävention gibt es in Luxemburg bei spezialisierten Stellen (z. B. Impuls von Solidarité Jeunes, CNAPA) – aktuelle Kontaktdaten prüfen.",
     "extra": [
@@ -407,7 +434,7 @@ const d: Solo = {
         "frage": "Hintergrund zum Zusammenhang von Cannabis und Psychosen."
       }
     ],
-    "hintergrund": "Regelmäßiger Cannabiskonsum in der Jugend hängt mit Einbußen bei Lernen und Gedächtnis sowie einem erhöhten Psychoserisiko zusammen, vor allem bei frühem Beginn, täglichem Konsum und hohem THC-Gehalt (Volkow et al.; Di Forti et al.). Erste Zeichen von Nikotinabhängigkeit können bei Jugendlichen innerhalb von Wochen nach Beginn gelegentlichen Konsums auftreten (DiFranza et al.). Gemessen am Gesamtschaden steht Alkohol an erster Stelle (Nutt et al.). Viele Menschen konsumieren, um belastende Zustände zu regulieren (Khantzian). Offenes Nachfragen nach eigenen Gründen wirkt besser als Konfrontation (Miller & Rollnick).",
+    "hintergrund": "Regelmäßiger Cannabiskonsum in der Jugend hängt mit Einbußen bei Lernen und Gedächtnis sowie einem erhöhten Psychoserisiko zusammen, vor allem bei frühem Beginn, täglichem Konsum und hohem THC-Gehalt (Volkow et al.; Di Forti et al.). Erste Zeichen von Nikotinabhängigkeit können bei Jugendlichen innerhalb von Wochen nach Beginn gelegentlichen Konsums auftreten (DiFranza et al.). In einer britischen Expertenbewertung stand Alkohol beim Gesamtschaden an erster Stelle (Nutt et al.). Viele Menschen konsumieren, um belastende Zustände zu regulieren (Khantzian). Offenes Nachfragen nach eigenen Gründen wirkt besser als Konfrontation (Miller & Rollnick).",
     "quellen": "Volkow et al. (2014) · Di Forti et al. (2019) · DiFranza et al. (2007) · Nutt et al. (2010) · Khantzian (1997) · Miller & Rollnick (2013)."
   }
 }

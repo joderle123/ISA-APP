@@ -82,7 +82,7 @@ const d: Solo = {
           "art": "szene",
           "bild": "peep:mia:traurig",
           "name": "Mia, 16",
-          "text": "Mia bekommt die Arbeit zurück: 14 von 20. Die Lehrerin sagt: „Gut gemacht.“ Die Stimme in Mias Kopf sagt: „Sechs Fehler. Bei so einer leichten Arbeit. Die anderen hatten sicher mehr. Die sagt das nur aus Mitleid.“ Mia lächelt und packt das Blatt weg. Niemand im Raum würde so mit ihr reden. Nur sie selbst.",
+          "text": "Mia bekommt die Arbeit zurück: 14 von 20 Punkten. Die Lehrerin sagt: „Gut gemacht.“ Die Stimme in Mias Kopf sagt: „Sechs Fehler. Bei so einer leichten Arbeit. Die anderen hatten sicher mehr Punkte. Die Lehrerin sagt das nur aus Mitleid.“ Mia lächelt und packt das Blatt weg. Niemand im Raum würde so mit ihr reden. Nur sie selbst.",
           "frage": "Was würde Mia tun, wenn jemand so mit ihrer besten Freundin redet?"
         },
         {
@@ -95,7 +95,7 @@ const d: Solo = {
             },
             {
               "t": "Sie will dich schützen",
-              "x": "Wer sich selbst zuerst fertigmacht, den kann kein anderer mehr überraschen. **Die Stimme ist ein schlechter Bodyguard – aber ein Bodyguard.**"
+              "x": "Ihre Idee: Wenn ich mich zuerst selbst schlecht mache, tut Kritik von anderen weniger weh. **Die Stimme ist ein schlechter Bodyguard – aber ein Bodyguard.**"
             },
             {
               "t": "Härte macht nicht besser",
@@ -166,6 +166,37 @@ const d: Solo = {
             {
               "f": "Warum der Unterschied?",
               "linien": 1
+            }
+          ]
+        },
+        {
+          "art": "fragen",
+          "titel": "Der Stimme antworten",
+          "wie": "zusammen",
+          "zeit": "7 Min.",
+          "kontext": "Nimm einen Satz, den du oben zitiert hast – oder einen, den jemand, den du kennst, oft zu sich sagt. Die Antwort muss **stimmen**. „Du bist toll“ zählt nicht.",
+          "fragen": [
+            {
+              "f": "Schritt für Schritt:",
+              "satz": [
+                "Was ist passiert? Nur, was man sehen kann:",
+                "Die Stimme sagt:",
+                "Ein guter Trainer würde sagen:",
+                "Mein nächster Versuch:"
+              ]
+            },
+            {
+              "f": "So sehr glaube ich den Trainer-Satz (0–10). Unter 5? Ändere ihn, bis er stimmt.",
+              "regler": [
+                "Trainer-Satz"
+              ]
+            },
+            {
+              "f": "Wenn-dann – dann einmal laut sagen:",
+              "satz": [
+                "Wenn die Stimme wieder sagt:",
+                "dann sage ich zu mir:"
+              ]
             }
           ]
         },
@@ -398,7 +429,9 @@ const d: Solo = {
     "hinweise": [
       "Seite 3: Kommt das Thema Körper auf, SOLO „Körper“ anbieten und nicht hier vertiefen.",
       "Seite 4: Die Strichliste verändert meist schon durch das Zählen etwas. Die Zahl nicht bewerten.",
-      "Stufe 3: „Wer hat zuerst so mit dir geredet?“ führt oft in die Familie. Nur zuhören."
+      "Stufe 3: „Wer hat zuerst so mit dir geredet?“ führt oft in die Familie. Nur zuhören.",
+      "„Stimme“ meint eigene Gedanken. Hört der Jugendliche Stimmen wie von außen: ärztliche Abklärung.",
+      "„Der Stimme antworten“ übt die Trainer-Antwort am eigenen Satz – sie muss für den Jugendlichen stimmen, sonst ändern. Wird die Zeit knapp, ist das Video freiwillig."
     ],
     "achtung": "Starke Selbstabwertung kann mit Selbstverletzung oder Suizidgedanken einhergehen. Sätze wie „Ohne mich wäre es besser“ ruhig und direkt aufgreifen: „Denkst du manchmal daran, nicht mehr leben zu wollen?“ Danach nicht allein entscheiden – Verfahren der Einrichtung, zuständige Leitung (Responsable), Krisenplan. Stammt die Stimme erkennbar aus Abwertung oder Gewalt zu Hause, ist das ein Hinweis auf Belastung, der ins Team gehört.",
     "hintergrund": "Selbstkritik lässt sich als früh gelernte Sicherheitsstrategie verstehen: Wer sich selbst angreift, kommt der Zurückweisung durch andere zuvor (Gilbert). Ein freundlicher Umgang mit eigenen Fehlern geht mit mehr, nicht weniger Bereitschaft einher, es erneut zu versuchen (Breines & Chen; Neff). Gedanken als Gedanken zu bemerken, statt ihnen zu glauben, ist ein Kernprinzip kognitiver und achtsamkeitsbasierter Verfahren (Beck; Hayes et al.). Selbstbeobachtung allein verändert Verhalten bereits messbar (Korotitsch & Nelson-Gray).",

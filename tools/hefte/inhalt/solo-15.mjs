@@ -191,7 +191,7 @@ export const MODUL = {
    "f": "Wie lange dauert so ein Zustand?",
    "o": [
     "für immer",
-    "er geht vorbei – mit Hilfe meist schneller",
+    "es wird meistens besser – mit Hilfe schneller",
     "genau eine Woche",
     "bis man erwachsen ist"
    ],
@@ -254,7 +254,7 @@ export const MODUL = {
    "Seite 3: Der Kasten ist der Kern der Stunde. Nicht überspringen, auch wenn es gerade gut läuft.",
    "Stufe 3 enthält die Frage nach Suizidgedanken. Wählt der Jugendliche die Stufe nicht, stellen Sie die Frage trotzdem – offen als Ihre eigene angekündigt, nicht als Teil des Spiels."
   ],
-  "achtung": "**Nennt der Jugendliche Suizidgedanken:** ruhig bleiben, danken, nachfragen (Wie oft? Gibt es einen Plan? Ein Mittel? Einen Zeitpunkt?). Nie Verschwiegenheit zusagen. Ihm sagen, mit wem Sie jetzt sprechen. Sofort nach dem Krisenverfahren der Einrichtung handeln und die zuständige Leitung (Responsable) einbeziehen; bei akuter Gefahr nicht allein lassen und den Notruf 112 wählen. **In jedem Fall** bei anhaltender Leere, Schlaf- und Essstörungen oder Selbstverletzung eine kinder- und jugendpsychiatrische oder psychotherapeutische Abklärung veranlassen. Nach der Stunde das Team informieren, dass das Thema bewegt wurde.",
+  "achtung": "**Nennt der Jugendliche Suizidgedanken:** ruhig bleiben, danken, nachfragen (Wie oft? Gibt es einen Plan? Ein Mittel? Einen Zeitpunkt?). Nie Verschwiegenheit zusagen. Ihm sagen, mit wem Sie jetzt sprechen. Sofort nach dem Krisenverfahren der Einrichtung handeln und die zuständige Leitung (Responsable) einbeziehen; bei akuter Gefahr nicht allein lassen und den Notruf 112 wählen. Mit dem Team klären, ob Medikamente, Klingen o. Ä. zugänglich sind, und sie sichern. **In jedem Fall** bei anhaltender Leere, Schlaf- und Essstörungen oder Selbstverletzung eine kinder- und jugendpsychiatrische oder psychotherapeutische Abklärung veranlassen. Nach der Stunde das Team informieren, dass das Thema bewegt wurde.",
   "videos": [
    {
     "fuer": "die Stunde",
@@ -272,7 +272,7 @@ export const MODUL = {
 export const LEKTIONEN = [{
  "thema": "Leer",
  "titel": "Nicht traurig. Das wäre wenigstens ein Gefühl.",
- "untertitel": "„Kopf hoch, das wird schon.“ Wer das sagt, meint es gut und hat keine Ahnung. Es gibt einen Zustand, in dem nichts mehr zieht. Nicht mal das, was früher sicher ging. Man ist nicht traurig – man ist leer, müde und irgendwie hinter Glas. **Das ist kein Charakterfehler und keine Faulheit. Hält es wochenlang an, heißt es depressive Verstimmung – und es geht vorbei.** Mit Hilfe meist schneller.",
+ "untertitel": "„Kopf hoch, das wird schon.“ Wer das sagt, meint es gut und hat keine Ahnung. Es gibt einen Zustand, in dem nichts mehr zieht. Nicht mal das, was früher sicher ging. Man ist nicht traurig – man ist leer, müde und irgendwie hinter Glas. **Das ist kein Charakterfehler und keine Faulheit. Hält es wochenlang an, heißt es depressive Verstimmung – und meistens geht es vorbei.** Mit Hilfe meist schneller.",
  "ziel": {
   "de": "Ich erkenne Anzeichen, wenn es sich leer anfühlt, und weiß, wo ich Hilfe bekomme.",
   "fr": "Je reconnais les signes quand je me sens vide et je sais où trouver de l’aide."
@@ -457,6 +457,32 @@ export const LEKTIONEN = [{
    ]
   },
   {
+   "art": "fragen",
+   "auftrag": "**Zehn Minuten – genau geplant – Ohne Lust klappt nur, was vorher feststeht. Plant so klein, dass es auch an einem schlechten Tag geht.** – Mein Plan: //(zusammen · 5 Min.)//",
+   "fragen": [
+    {
+     "f": "Meine kleine Sache (früher gut):",
+     "zeilen": 2
+    },
+    {
+     "f": "Wann genau (Tag, Uhrzeit):",
+     "zeilen": 2
+    },
+    {
+     "f": "Wo:",
+     "zeilen": 2
+    },
+    {
+     "f": "Wenn ich gar keine Kraft habe, mache ich nur:",
+     "zeilen": 2
+    },
+    {
+     "f": "Wer erinnert mich oder macht mit:",
+     "zeilen": 2
+    }
+   ]
+  },
+  {
    "art": "schneidekarten",
    "auftrag": "Für die Tasche: Schneide die Karten aus.",
    "spalten": 2,
@@ -490,7 +516,7 @@ export const LEKTIONEN = [{
   "nummern": false,
   "cases": [
    {
-    "erz": "Lea steht jeden Morgen auf, geht zur Schule, lacht in der Pause. Niemand merkt etwas.",
+    "erz": "Lea steht jeden Morgen auf, geht zur Schule, lacht in der Pause. Von außen sieht alles normal aus.",
     "bild": "lea:froh:stehen"
    },
    {
@@ -504,9 +530,13 @@ export const LEKTIONEN = [{
      [
       "Lea",
       "Bin nur müde."
+     ],
+     [
+      "Lea denkt",
+      "Ich fühle gar nichts. Alles ist egal."
      ]
     ],
-    "nach": "Traurig ist sie nicht. Das wäre wenigstens ein Gefühl."
+    "nach": "Traurig ist sie nicht. Traurig wäre wenigstens ein Gefühl."
    }
   ],
   "woerter": [

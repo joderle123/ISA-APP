@@ -248,7 +248,7 @@ export const MODUL = {
     {
      "art": "frei",
      "auftrag": "",
-     "html": "<div class=\"ak-comic\" style=\"grid-template-columns:repeat(4,1fr)\"><div><div class=\"o\"><b>1</b>{i:file-check}</div><p>Mia bekommt die Arbeit zurück: 14 von 20.</p></div><div><div class=\"o\"><b>2</b>{i:thumb-up}</div><p>Die Lehrerin sagt: „Gut gemacht.“</p></div><div><div class=\"o\"><b>3</b>{i:volume}</div><p>Die Stimme sagt: „Sechs Fehler. Die sagt das aus Mitleid.“</p></div><div><div class=\"o\"><b>4</b>{i:mood-smile}</div><p>Mia lächelt und packt das Blatt weg.</p></div></div>"
+     "html": "<div class=\"ak-comic\" style=\"grid-template-columns:repeat(4,1fr)\"><div><div class=\"o\"><b>1</b>{i:file-check}</div><p>Mia bekommt die Arbeit zurück: 14 von 20 Punkten.</p></div><div><div class=\"o\"><b>2</b>{i:thumb-up}</div><p>Die Lehrerin sagt: „Gut gemacht.“</p></div><div><div class=\"o\"><b>3</b>{i:volume}</div><p>Die Stimme sagt: „Sechs Fehler. Die Lehrerin sagt das nur aus Mitleid.“</p></div><div><div class=\"o\"><b>4</b>{i:mood-smile}</div><p>Mia lächelt und packt das Blatt weg.</p></div></div>"
     },
     {
      "art": "mc",
@@ -573,7 +573,7 @@ export const MODUL = {
     ]
    }
   ],
-  "aha": "Nichts ändern. Nur zählen. **Das reicht schon, damit sie leiser wird.**",
+  "aha": "Nichts ändern. Nur zählen. **Oft wird sie davon schon leiser.**",
   "ziel": "Die Stimme einen Tag lang zählen.",
   "tipp": "Die Zahl nicht bewerten. Fragen: Zu welcher Tageszeit kamen die meisten Striche?"
  },

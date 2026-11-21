@@ -367,7 +367,7 @@ export const MODUL = {
      ]
     }
    ],
-   "aha": "Farbe ist ein Köder. **Ohne Farbe zieht es weniger.**",
+   "aha": "Farbe ist ein Köder. **Ohne Farbe zieht es bei vielen weniger.**",
    "ziel": "Einen Köder selbst ausschalten und den Unterschied sehen.",
    "tipp": "Vorher am eigenen Handy ausprobieren, wo die Einstellung ist. Geht es nicht: Lieblings-App vom Startbildschirm nehmen."
   },
@@ -510,7 +510,7 @@ export const MODUL = {
  },
  "begleitungAktion": {
   "material": "beide Handys, Timer, Würfel oder Karten",
-  "achtung": "In den Daten oder im Gespräch können Cybermobbing, Druck im Chat oder Kontakte zu Erwachsenen sichtbar werden. Dann das Thema wechseln und ernst nehmen; bei Erpressung, sexuellen Übergriffen oder Selbstgefährdung nach dem Verfahren der Einrichtung handeln und die zuständige Leitung (Responsable) einbeziehen. Keine Diagnose stellen und keine Handyregeln im Namen Dritter aushandeln.",
+  "achtung": "In den Daten oder im Gespräch können Cybermobbing, Druck im Chat oder Kontakte zu Erwachsenen sichtbar werden. Dann das Thema wechseln und ernst nehmen; bei Erpressung, sexuellen Übergriffen oder Selbstgefährdung nach dem Verfahren der Einrichtung handeln und die zuständige Leitung (Responsable) einbeziehen. Keine Diagnose stellen und keine Handyregeln im Namen Dritter aushandeln. Beratung bei Cybermobbing und Erpressung im Netz: BEE SECURE Helpline 8002 1234; bei akuter Gefahr Polizei 113.",
   "mehr": "Fall, Hintergrund, Quiz und Gesprächsfragen stehen im Heft SOLO #03 Scrollen."
  }
 }

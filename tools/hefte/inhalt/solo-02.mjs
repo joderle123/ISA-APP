@@ -53,8 +53,8 @@ export const MODUL = {
     ablauf: [
       ['0–5', 'Logbuch: Akku und letztes Experiment. Dann „Ankommen“: „Schon mal gehört?“ ohne Kommentar ankreuzen lassen, Standort einkreisen.'],
       ['5–20', 'Der Bildstreifen mit Chloé, die Frage dazu, die drei Behauptungen. Video gemeinsam schauen.'],
-      ['20–40', '„Mauer oder Tor“ allein, „Chloés Rechnung“ gemeinsam, dann das Duell: Sie schreiben Ihre Zahlen wirklich auf.'],
-      ['40–50', 'Experiment vereinbaren, Karten ausschneiden. Wenn Zeit ist: Der Jugendliche wählt eine Stufe bei „Reden“ und stellt Ihnen zuerst eine Frage.'],
+      ['20–42', '„Mauer oder Tor“ allein, „Chloés Rechnung“ gemeinsam, das Duell (Sie schreiben Ihre Zahlen wirklich auf). Dann „Ja gesagt, Nein gemeint“ und „Nein üben“: Sie spielen Mila glaubwürdig hartnäckig, aber ohne Druck von außen; nach jeder Runde kurz fragen, wie es war.'],
+      ['42–50', 'Experiment vereinbaren, Karten ausschneiden. Wenn Zeit ist: Der Jugendliche wählt eine Stufe bei „Reden“ und stellt Ihnen zuerst eine Frage.'],
     ],
     haltung: [
       'Mauer und Tor sind beides Lösungen, die einmal nötig waren. Erst würdigen, dann fragen, was sie heute kosten.',
@@ -122,6 +122,10 @@ export const LEKTIONEN = [
       { art: 'tabelle', auftrag: 'Duell – wo ist deine Linie? Beide schreiben verdeckt eine Zahl: 0 = kein Problem, 10 = geht gar nicht. Dann aufdecken.', kopf: ['Jemand …', 'du', 'dein Gegenüber'], breiten: [62, 19, 19], zeilen: [
         ['liest über deine Schulter deine Nachrichten mit', '', ''], ['umarmt dich zur Begrüßung, ohne zu fragen', '', ''],
         ['kommt in dein Zimmer, ohne zu klopfen', '', ''], ['postet ein Foto von dir, ohne zu fragen', '', '']] },
+      { art: 'tabelle', auftrag: '**Ja gesagt, Nein gemeint** – ein Mal von dir oder von jemandem, den du kennst. Schritt für Schritt, Stichworte reichen. //(allein, dann reden · 6 Min.)//', hoch: true, kopf: ['', 'So war es'], breiten: [40, 60], zeilen: [
+        ['Was wollte jemand?', ''], ['Was wollte ich eigentlich?', ''], ['Warum habe ich Ja gesagt? (Angst vor …)', ''], ['Was ist danach passiert?', ''], ['Was hätte ich sagen können?', '']] },
+      { art: 'tabelle', auftrag: '**Nein üben – drei Runden.** Dein Gegenüber spielt Mila und bittet dreimal um 20 Euro, jedes Mal hartnäckiger („Bitte, du bist doch meine Freundin!“). Du antwortest jede Runde anders. Danach: Wie leicht war es? //(zusammen · 6 Min.)//', kopf: ['Runde', 'So sagst du Nein', 'leicht? 0–10'], breiten: [26, 56, 18], zeilen: [
+        ['1 · kurz', '„Nein, mache ich nicht.“', ''], ['2 · mit Grund', '„Nein, ich verleihe kein Geld. Auch nicht an Freunde.“', ''], ['3 · Schallplatte', 'Immer derselbe Satz, ruhig – egal, was kommt.', '']] },
     ],
     sprechen: [
       { art: 'sprechen', auftrag: 'Sechs Fragen, von leicht bis tief. Du suchst die Stufe aus. Jede Frage darfst du zurückgeben – „Weiter“ gilt immer.', karten: [

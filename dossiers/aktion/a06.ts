@@ -94,7 +94,7 @@ const d: AktionsHeft = {
         'Tauschen.',
       ],
       zonen: [{ art: 'tabelle', kopf: ['Schläge in 15 Sek.', 'vorher', 'nach 2 Min. Atmen'], zeilen: ['Du', 'Dein Gegenüber'] }],
-      aha: 'Lang ausatmen bremst den Körper. **Das kannst du messen.**',
+      aha: 'Lang ausatmen bremst den Körper. **Oft kannst du das sogar messen.**',
       ziel: 'Eine Bremse kennen, die man im Bett benutzen kann.',
       tipp: 'Ruhig und gleichmäßig zählen. Wem schwindlig wird: normal weiteratmen.',
     },

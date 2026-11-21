@@ -253,7 +253,8 @@ export const MODUL = {
   "hinweise": [
    "Seite 3: Die Tabelle zeigt, wo Hilfe (kann nicht), Sinn (will nicht) oder Mut (trau nicht) fehlt. Daraus ergibt sich der nächste Schritt.",
    "Seite 4: Der Fünf-Minuten-Deal gilt wörtlich. Wer nach fünf Minuten aufhört, hat das Experiment bestanden.",
-   "Mit der Schule oder dem Betrieb nur sprechen, wenn der Jugendliche es weiß und einverstanden ist."
+   "Mit der Schule oder dem Betrieb nur sprechen, wenn der Jugendliche es weiß und einverstanden ist.",
+   "„Kleiner machen“ und „Fünf Minuten jetzt“ testen „Lust kommt danach“ sofort – Sie machen mit einer eigenen Sache mit. Wird die Zeit knapp, sind das Video und das Duell freiwillig."
   ],
   "achtung": "Schulvermeidung hat häufig Gründe, die mit Motivation nichts zu tun haben: Angst, Mobbing, depressive Verstimmung, Schlafmangel, Sorgen um die Lage zu Hause. Bei wochenlangem Fehlen, körperlichen Beschwerden vor der Schule oder Hinweisen auf Lern- und Aufmerksamkeitsstörungen fachliche Abklärung anregen. Druck und Strafen verschlimmern Vermeidung fast immer.",
   "videos": [
@@ -423,6 +424,67 @@ export const LEKTIONEN = [{
    ]
   },
   {
+   "art": "fragen",
+   "auftrag": "**Kleiner machen – „Das Referat“ ist zu groß zum Anfangen. Mach deine Sache so klein, dass sie in **fünf Minuten** geht. Keine eigene Sache? Nimm Lios Referat.** – Von groß nach klein: //(zusammen · 6 Min.)//",
+   "fragen": [
+    {
+     "f": "Die Sache, die ich schiebe:",
+     "zeilen": 2
+    },
+    {
+     "f": "Ein Teil davon:",
+     "zeilen": 2
+    },
+    {
+     "f": "Der allererste Handgriff:",
+     "zeilen": 2
+    }
+   ]
+  },
+  {
+   "art": "skala",
+   "auftrag": "So machbar ist der Handgriff (0–10). Unter 7? Noch kleiner machen.",
+   "zeilen": [
+    "mein Handgriff"
+   ]
+  },
+  {
+   "art": "fragen",
+   "auftrag": "Wenn-dann:",
+   "fragen": [
+    {
+     "f": "Wenn (Tag, Uhrzeit, Ort):",
+     "zeilen": 2
+    },
+    {
+     "f": "dann stelle ich den Wecker auf fünf Minuten und mache:",
+     "zeilen": 2
+    }
+   ]
+  },
+  {
+   "art": "skala",
+   "auftrag": "**Fünf Minuten jetzt – Beide nehmen ihren Handgriff von eben – oder etwas, das hier geht (Nachricht, Blatt ordnen, Aufgabe lesen). Wecker auf **fünf Minuten**. Klingelt es, darfst du aufhören.** – Lust (0 keine – 10 viel): //(beide · 8 Min.)//",
+   "zeilen": [
+    "vorher",
+    "nach fünf Minuten"
+   ]
+  },
+  {
+   "art": "mc",
+   "auftrag": "Nach fünf Minuten habe ich:",
+   "fragen": [
+    {
+     "f": "",
+     "o": [
+      "aufgehört",
+      "weitergemacht"
+     ],
+     "r": []
+    }
+   ]
+  },
+  {
    "art": "tabelle",
    "auftrag": "**Der Stapel** – Ehrlich: //(beide · 5 Min.)//",
    "hoch": false,
@@ -530,11 +592,11 @@ export const LEKTIONEN = [{
   "nummern": false,
   "cases": [
    {
-    "erz": "Lio hat seit drei Wochen ein Referat auf. Jeden Abend nimmt er es sich vor. Jeden Abend ist etwas anderes: erst essen, erst das Video, erst aufräumen – Lio räumt sonst nie auf.",
+    "erz": "Lio hat vor drei Wochen ein Referat bekommen. Das Thema mag er sogar. Jeden Abend nimmt er es sich vor. Jeden Abend kommt etwas dazwischen: erst essen, erst das Video, erst aufräumen – dabei räumt Lio sonst nie auf.",
     "bild": "lio:gelangweilt:handy"
    },
    {
-    "erz": "Am Abend davor sagt er:",
+    "erz": "Am Abend vor dem Referat sagt er:",
     "bild": "lio:traurig",
     "blasen": [
      [
@@ -620,7 +682,7 @@ export const LEKTIONEN = [{
    [
     {
      "titel": "Lust kommt danach",
-     "text": "Auf Motivation zu warten, klappt selten. **Sie kommt meistens erst, wenn du schon fünf Minuten dran bist.** Anders als bei „Setz dich hin“ darfst du danach aufhören."
+     "text": "Auf Motivation zu warten, klappt selten. **Sie kommt oft erst, wenn du schon fünf Minuten dran bist.** Anders als bei „Setz dich hin“ darfst du danach aufhören."
     }
    ]
   ]

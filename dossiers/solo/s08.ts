@@ -82,7 +82,7 @@ const d: Solo = {
           "art": "szene",
           "bild": "peep:amira:traurig",
           "name": "Amira, 16",
-          "text": "Amira hat 212 Kontakte und niemanden, den sie um zwei Uhr nachts anrufen würde. In der Pause steht sie bei einer Gruppe, lacht an den richtigen Stellen und weiß: Keiner würde merken, wenn sie morgen fehlt. Als Sara fragt: „Kommst du Samstag mit?“, sagt Amira: „Mal sehen.“ Sie will. Aber wenn sie hingeht und es wird komisch? Dann lieber gleich zu Hause bleiben.",
+          "text": "Amira hat 212 Kontakte. Aber niemanden, den sie um zwei Uhr nachts anrufen würde, wenn es ihr schlecht geht. In der Pause steht sie bei einer Gruppe, lacht an den richtigen Stellen und weiß: Keiner würde merken, wenn sie morgen fehlt. Als Sara fragt: „Kommst du Samstag mit?“, sagt Amira: „Mal sehen.“ Sie will. Aber was, wenn es komisch wird und keiner mit ihr redet? Dann lieber gleich zu Hause bleiben.",
           "frage": "Wovor schützt sich Amira mit „Mal sehen“?"
         },
         {
@@ -91,11 +91,11 @@ const d: Solo = {
           "fakten": [
             {
               "t": "Ein Alarm wie Hunger",
-              "x": "Einsamkeit ist kein Charakterfehler. Sie ist ein Signal: **Dir fehlt etwas, das Menschen zum Leben brauchen.**"
+              "x": "Allein sein kann guttun. Einsam ist man, wenn Nähe fehlt. Einsamkeit ist kein Charakterfehler, sondern ein Signal: **Dir fehlt etwas, das Menschen zum Leben brauchen.**"
             },
             {
               "t": "Sie macht misstrauisch",
-              "x": "Wer lange allein ist, liest neutrale Gesichter als feindlich und zieht sich zurück. **Der Kopf schützt dich – und sperrt dich ein.**"
+              "x": "Wer lange einsam ist, sieht in normalen Gesichtern schneller Ablehnung und zieht sich zurück. **Der Kopf schützt dich – und sperrt dich ein.**"
             },
             {
               "t": "Eine Person reicht",
@@ -144,6 +144,37 @@ const d: Solo = {
         },
         {
           "art": "fragen",
+          "titel": "Mein erster Schritt",
+          "wie": "zusammen",
+          "zeit": "7 Min.",
+          "kontext": "Nimm die Person, die du gern einen Ring näher hättest. Ein Buchstabe reicht. Dann übt ihr: Dein Gegenüber spielt die Person, du sagst deinen Satz einmal laut.",
+          "fragen": [
+            {
+              "f": "Kreuze **einen** Schritt an:",
+              "kreuz": [
+                "eine Frage stellen",
+                "eine Nachricht schreiben",
+                "etwas Kleines von mir erzählen",
+                "Ja sagen, wenn mich jemand einlädt"
+              ]
+            },
+            {
+              "f": "Ganz konkret:",
+              "satz": [
+                "Wann und wo?",
+                "Das sage oder schreibe ich wörtlich:"
+              ]
+            },
+            {
+              "f": "So viel Mut braucht das (0–10). Über 7? Mach den Schritt kleiner.",
+              "regler": [
+                "mein Schritt"
+              ]
+            }
+          ]
+        },
+        {
+          "art": "fragen",
           "titel": "Amiras Samstag",
           "wie": "zusammen",
           "zeit": "6 Min.",
@@ -162,6 +193,24 @@ const d: Solo = {
                   "schreibt Sara: „Bin dabei. Wer kommt noch?“"
                 ]
               }
+            }
+          ]
+        },
+        {
+          "art": "fragen",
+          "titel": "Mein „Mal sehen“",
+          "wie": "allein",
+          "zeit": "5 Min.",
+          "kontext": "Wann hast du zuletzt abgesagt, obwohl du eigentlich wolltest? Lieber nicht? Nimm jemanden, den du kennst, oder erfinde jemanden.",
+          "fragen": [
+            {
+              "f": "Schritt für Schritt:",
+              "satz": [
+                "Die Einladung war:",
+                "Ich dachte, dann passiert:",
+                "Weiß ich das von diesen Leuten – oder von früher?",
+                "Das Absagen hat mich gekostet:"
+              ]
             }
           ]
         },
@@ -202,7 +251,7 @@ const d: Solo = {
         {
           "art": "experiment",
           "titel": "Zehn Sekunden mehr",
-          "x": "Bleib diese Woche dreimal **zehn Sekunden länger** in einem Kontakt, als du es sonst tun würdest: eine Frage mehr stellen, eine Nachricht mehr schreiben, einmal nicht als Erster gehen. Wette vorher: Was passiert in diesen zehn Sekunden?"
+          "x": "Bleib diese Woche dreimal **zehn Sekunden länger** in einem Gespräch oder Chat, als du es sonst tun würdest: eine Frage mehr stellen, eine Nachricht mehr schreiben, einmal nicht als Erster gehen. Wette vorher: Was passiert in diesen zehn Sekunden?"
         },
         {
           "art": "karten",
@@ -222,7 +271,8 @@ const d: Solo = {
               "zeilen": [
                 "eine Frage stellen",
                 "etwas von mir erzählen, das kein Geheimnis ist",
-                "einmal Ja sagen und eine Stunde bleiben"
+                "einmal Ja sagen und eine Stunde bleiben",
+                "Gerade niemand da? Kanner-Jugendtelefon **116 111** (feste Zeiten) · Notruf **112** (immer)"
               ]
             }
           ]
@@ -394,9 +444,10 @@ const d: Solo = {
     "hinweise": [
       "Seite 3: Das Feld bleibt beim Jugendlichen; Namen nicht abfragen.",
       "Seite 4: „Zehn Sekunden mehr“ funktioniert auch in der Wohngruppe und im Chat.",
-      "Bei vielen Beziehungsabbrüchen (Einrichtungswechsel) ist Misstrauen eine vernünftige Erfahrung, kein Symptom."
+      "Bei vielen Beziehungsabbrüchen (Einrichtungswechsel) ist Misstrauen eine vernünftige Erfahrung, kein Symptom.",
+      "„Mein „Mal sehen““ prüft eine eigene Absage Schritt für Schritt; „Mein erster Schritt“ plant und übt einen Kontakt laut. Wird die Zeit knapp, ist das Video freiwillig."
     ],
-    "achtung": "Einsamkeit ist ein Risikofaktor für depressive Krisen und Suizidgedanken – bei Sätzen wie „Mich würde eh keiner vermissen“ ruhig und direkt nachfragen und nach dem Verfahren der Einrichtung handeln. Kontakte im Netz ernst nehmen, aber prüfen: Erwachsene, die sehr schnell sehr nah werden, Geschenke machen oder Geheimhaltung verlangen, sind ein Grund, die zuständige Leitung (Responsable) einzubeziehen.",
+    "achtung": "Einsamkeit ist ein Risikofaktor für depressive Krisen und Suizidgedanken – bei Sätzen wie „Mich würde eh keiner vermissen“ ruhig und direkt nachfragen und nach dem Verfahren der Einrichtung handeln. Kontakte im Netz ernst nehmen, aber prüfen: Erwachsene, die sehr schnell sehr nah werden, Geschenke machen oder Geheimhaltung verlangen, sind ein Grund, die zuständige Leitung (Responsable) einzubeziehen. Beratung: BEE SECURE Helpline 8002 1234; bei akuter Gefahr Polizei 113.",
     "hintergrund": "Das Bedürfnis nach Zugehörigkeit ist ein Grundbedürfnis (Baumeister & Leary). Einsamkeit wirkt als Warnsignal und erhöht die Wachsamkeit für soziale Bedrohung, was Rückzug verstärkt (Cacioppo & Hawkley). Die Qualität enger Freundschaften in der Jugend sagt die spätere psychische Gesundheit besser voraus als Beliebtheit (Narr et al.). Eine einzige verlässliche Bezugsperson ist der am besten belegte Schutzfaktor (Masten).",
     "quellen": "Baumeister & Leary (1995) · Cacioppo & Hawkley (2009) · Narr et al. (2019) · Masten (2014)."
   }

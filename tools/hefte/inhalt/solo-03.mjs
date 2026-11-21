@@ -253,9 +253,10 @@ export const MODUL = {
   "hinweise": [
    "Seite 3: Ohne eigenes Handy schätzt der Jugendliche nur; die fünf Minuten laufen dann auf Ihrem Gerät.",
    "Seite 4: Schwarz-Weiß heißt je nach Gerät „Graustufen“ oder „Farbfilter“. Vorher selbst ausprobieren.",
-   "Geht Schwarz-Weiß nicht (Sperre, altes Gerät): eine App vom Startbildschirm nehmen. Ganz ohne Handy: verschieben."
+   "Geht Schwarz-Weiß nicht (Sperre, altes Gerät): eine App vom Startbildschirm nehmen. Ganz ohne Handy: verschieben.",
+   "„Zurückspulen“ (Dein Teil) geht einen eigenen Moment Schritt für Schritt durch und endet mit einem Wenn-dann-Plan. Wird die Zeit knapp, ist das Video freiwillig – es steht auch im Aktionsheft."
   ],
-  "achtung": "In den Daten oder im Gespräch können Cybermobbing, Druck im Chat oder Kontakte zu Erwachsenen sichtbar werden. Dann das Thema wechseln und ernst nehmen; bei Erpressung, sexuellen Übergriffen oder Selbstgefährdung nach dem Verfahren der Einrichtung handeln und die zuständige Leitung (Responsable) einbeziehen. Keine Diagnose stellen und keine Handyregeln im Namen Dritter aushandeln.",
+  "achtung": "In den Daten oder im Gespräch können Cybermobbing, Druck im Chat oder Kontakte zu Erwachsenen sichtbar werden. Dann das Thema wechseln und ernst nehmen; bei Erpressung, sexuellen Übergriffen oder Selbstgefährdung nach dem Verfahren der Einrichtung handeln und die zuständige Leitung (Responsable) einbeziehen. Keine Diagnose stellen und keine Handyregeln im Namen Dritter aushandeln. Beratung bei Cybermobbing und Erpressung im Netz: BEE SECURE Helpline 8002 1234; bei akuter Gefahr Polizei 113.",
   "videos": [
    {
     "fuer": "die Stunde",
@@ -265,8 +266,8 @@ export const MODUL = {
     "url": "https://www.youtube.com/watch?v=_V_VBrW3ZuY"
    }
   ],
-  "hintergrund": "Der Zusammenhang zwischen Bildschirmzeit und Wohlbefinden ist im Durchschnitt klein; entscheidend sind Inhalte, Vergleiche und verdrängter Schlaf (Orben & Przybylski). Vergleiche mit idealisierten Bildern verschlechtern Stimmung und Körperbild, auch wenn die Bearbeitung bekannt ist (Fardouly et al.). Unregelmäßige Belohnung bindet Verhalten besonders stark (Ferster & Skinner); fehlende Stopp-Signale verlängern die Nutzung (Alter). Graustufen verringerten in einer Studie mit Studierenden die tägliche Bildschirmzeit (Holte & Ferraro). Konkrete Wenn-dann-Pläne wirken besser als Vorsätze (Gollwitzer). Die ICD-11 kennt die Computerspielstörung, aber keine eigene Diagnose für Social-Media-Nutzung.",
-  "quellen": "Orben & Przybylski (2019) · Fardouly et al. (2015) · Ferster & Skinner (1957) · Alter (2017) · Holte & Ferraro (2020) · Gollwitzer (1999) · WHO, ICD-11."
+  "hintergrund": "Der Zusammenhang zwischen Bildschirmzeit und Wohlbefinden ist im Durchschnitt klein; entscheidend sind Inhalte, Vergleiche und verdrängter Schlaf (Orben & Przybylski). Vergleiche mit idealisierten Bildern verschlechtern Stimmung und Körperbild, auch wenn die Bearbeitung bekannt ist (Fardouly et al.; Tiggemann et al.). Unregelmäßige Belohnung bindet Verhalten besonders stark (Ferster & Skinner); fehlende Stopp-Signale verlängern die Nutzung (Alter). Graustufen verringerten in einer Studie mit Studierenden die tägliche Bildschirmzeit (Holte & Ferraro). Konkrete Wenn-dann-Pläne wirken besser als Vorsätze (Gollwitzer). Die ICD-11 kennt die Computerspielstörung, aber keine eigene Diagnose für Social-Media-Nutzung.",
+  "quellen": "Orben & Przybylski (2019) · Fardouly et al. (2015) · Ferster & Skinner (1957) · Alter (2017) · Holte & Ferraro (2020) · Gollwitzer (1999) · WHO, ICD-11 · Tiggemann et al. (2017)."
  }
 }
 
@@ -415,6 +416,46 @@ export const LEKTIONEN = [{
      "r": []
     }
    ]
+  },
+  {
+   "art": "fragen",
+   "auftrag": "**Zurückspulen – Denk an das letzte Mal, als du viel länger am Handy warst, als du wolltest. Spul es zurück wie einen Film. Lieber nicht? Nimm jemanden, den du kennst.** – Schritt für Schritt: //(allein · 6 Min.)//",
+   "fragen": [
+    {
+     "f": "Wann und wo war das?",
+     "zeilen": 2
+    },
+    {
+     "f": "Was war kurz davor los?",
+     "zeilen": 2
+    },
+    {
+     "f": "Das Gefühl in der Sekunde davor:",
+     "zeilen": 2
+    },
+    {
+     "f": "Geplant waren … – geworden sind es …",
+     "zeilen": 2
+    },
+    {
+     "f": "So ging es mir danach:",
+     "zeilen": 2
+    }
+   ]
+  },
+  {
+   "art": "fragen",
+   "auftrag": "Und nächstes Mal?",
+   "fragen": [
+    {
+     "f": "Wenn ich das wieder fühle und die Hand zum Handy geht,",
+     "zeilen": 2
+    },
+    {
+     "f": "dann mache ich zuerst (zwei Minuten):",
+     "zeilen": 2
+    }
+   ]
   }
  ],
  "sprechen": [
@@ -492,7 +533,7 @@ export const LEKTIONEN = [{
   "nummern": false,
   "cases": [
    {
-    "erz": "Mia will um elf nur kurz schauen.",
+    "erz": "Mia liegt um elf im Bett. Sie will nur kurz aufs Handy schauen.",
     "bild": "mia:neutral:handy"
    },
    {
@@ -500,7 +541,7 @@ export const LEKTIONEN = [{
     "bild": "mia:traurig:handy"
    },
    {
-    "erz": "Sie weiß, dass das gestellt ist – ihre eigenen Fotos macht sie ja genauso. Es hilft nichts.",
+    "erz": "Sie weiß: Das ist gestellt. Ihre eigenen Fotos macht sie ja auch zehnmal, bis eins gut aussieht. Es hilft nichts.",
     "bild": "mia:traurig",
     "nach": "Sie fühlt sich trotzdem wie der einzige Mensch, bei dem nichts los ist."
    }
@@ -571,7 +612,7 @@ export const LEKTIONEN = [{
    [
     {
      "titel": "Es geht selten ums Handy",
-     "text": "Oft greifst du hin, weil das Gefühl davor mies ist: leer, allein, unter Druck. **Das Handy ist die schnellste Betäubung, die es gibt.**"
+     "text": "Oft greifst du hin, weil das Gefühl davor mies ist: leer, allein, unter Druck. **Das Handy macht miese Gefühle schnell leiser – aber nur kurz.**"
     }
    ]
   ]

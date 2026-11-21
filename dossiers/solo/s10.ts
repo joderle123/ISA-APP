@@ -82,7 +82,7 @@ const d: Solo = {
           "art": "szene",
           "bild": "peep:lio:gelangweilt",
           "name": "Lio, 14",
-          "text": "Lio hat seit drei Wochen ein Referat auf. Jeden Abend nimmt er es sich vor. Jeden Abend ist etwas anderes: erst essen, erst das Video, erst aufräumen – Lio räumt sonst nie auf. Am Abend davor sagt er: „Ist mir eh egal. Ich bin halt dumm.“ Am Morgen ist ihm schlecht. Er bleibt zu Hause. Die Lehrerin schreibt: „Kein Interesse.“",
+          "text": "Lio hat vor drei Wochen ein Referat bekommen. Das Thema mag er sogar. Jeden Abend nimmt er es sich vor. Jeden Abend kommt etwas dazwischen: erst essen, erst das Video, erst aufräumen – dabei räumt Lio sonst nie auf. Am Abend vor dem Referat sagt er: „Ist mir eh egal. Ich bin halt dumm.“ Am Morgen ist ihm schlecht. Er bleibt zu Hause. Die Lehrerin schreibt: „Kein Interesse.“",
           "frage": "Stimmt das? Oder wovor hat sich Lio mit „egal“ geschützt?"
         },
         {
@@ -99,7 +99,7 @@ const d: Solo = {
             },
             {
               "t": "Lust kommt danach",
-              "x": "Auf Motivation zu warten, klappt selten. **Sie kommt meistens erst, wenn du schon fünf Minuten dran bist.** Anders als bei „Setz dich hin“ darfst du danach aufhören."
+              "x": "Auf Motivation zu warten, klappt selten. **Sie kommt oft erst, wenn du schon fünf Minuten dran bist.** Anders als bei „Setz dich hin“ darfst du danach aufhören."
             }
           ]
         },
@@ -172,6 +172,63 @@ const d: Solo = {
                   "sagt der Lehrerin: „Ich kriege es nicht hin.“"
                 ]
               }
+            }
+          ]
+        },
+        {
+          "art": "fragen",
+          "titel": "Kleiner machen",
+          "wie": "zusammen",
+          "zeit": "6 Min.",
+          "kontext": "„Das Referat“ ist zu groß zum Anfangen. Mach deine Sache so klein, dass sie in **fünf Minuten** geht. Keine eigene Sache? Nimm Lios Referat.",
+          "fragen": [
+            {
+              "f": "Von groß nach klein:",
+              "satz": [
+                "Die Sache, die ich schiebe:",
+                "Ein Teil davon:",
+                "Der allererste Handgriff:"
+              ]
+            },
+            {
+              "f": "So machbar ist der Handgriff (0–10). Unter 7? Noch kleiner machen.",
+              "regler": [
+                "mein Handgriff"
+              ]
+            },
+            {
+              "f": "Wenn-dann:",
+              "satz": [
+                "Wenn (Tag, Uhrzeit, Ort):",
+                "dann stelle ich den Wecker auf fünf Minuten und mache:"
+              ]
+            }
+          ]
+        },
+        {
+          "art": "fragen",
+          "titel": "Fünf Minuten jetzt",
+          "band": [
+            "users",
+            "Beide machen mit"
+          ],
+          "wie": "beide",
+          "zeit": "8 Min.",
+          "kontext": "Beide nehmen ihren Handgriff von eben – oder etwas, das hier geht (Nachricht, Blatt ordnen, Aufgabe lesen). Wecker auf **fünf Minuten**. Klingelt es, darfst du aufhören.",
+          "fragen": [
+            {
+              "f": "Lust (0 keine – 10 viel):",
+              "regler": [
+                "vorher",
+                "nach fünf Minuten"
+              ]
+            },
+            {
+              "f": "Nach fünf Minuten habe ich:",
+              "kreis": [
+                "aufgehört",
+                "weitergemacht"
+              ]
             }
           ]
         },
@@ -404,7 +461,8 @@ const d: Solo = {
     "hinweise": [
       "Seite 3: Die Tabelle zeigt, wo Hilfe (kann nicht), Sinn (will nicht) oder Mut (trau nicht) fehlt. Daraus ergibt sich der nächste Schritt.",
       "Seite 4: Der Fünf-Minuten-Deal gilt wörtlich. Wer nach fünf Minuten aufhört, hat das Experiment bestanden.",
-      "Mit der Schule oder dem Betrieb nur sprechen, wenn der Jugendliche es weiß und einverstanden ist."
+      "Mit der Schule oder dem Betrieb nur sprechen, wenn der Jugendliche es weiß und einverstanden ist.",
+      "„Kleiner machen“ und „Fünf Minuten jetzt“ testen „Lust kommt danach“ sofort – Sie machen mit einer eigenen Sache mit. Wird die Zeit knapp, sind das Video und das Duell freiwillig."
     ],
     "achtung": "Schulvermeidung hat häufig Gründe, die mit Motivation nichts zu tun haben: Angst, Mobbing, depressive Verstimmung, Schlafmangel, Sorgen um die Lage zu Hause. Bei wochenlangem Fehlen, körperlichen Beschwerden vor der Schule oder Hinweisen auf Lern- und Aufmerksamkeitsstörungen fachliche Abklärung anregen. Druck und Strafen verschlimmern Vermeidung fast immer.",
     "hintergrund": "Aufschieben dient der kurzfristigen Stimmungsregulation: Vermieden wird nicht die Aufgabe, sondern das unangenehme Gefühl, das sie auslöst (Sirois & Pychyl). Gezeigte Gleichgültigkeit schützt den Selbstwert, weil Scheitern ohne Anstrengung weniger über die eigenen Fähigkeiten aussagt (Covington). Handeln vor der Stimmung ist das Prinzip der Verhaltensaktivierung (Martell et al.). Kleine, konkrete Pläne erleichtern den Beginn (Gollwitzer). Schulvermeidung erfüllt meist eine von wenigen Funktionen, vor allem das Vermeiden von Angst und Bewertung (Kearney).",

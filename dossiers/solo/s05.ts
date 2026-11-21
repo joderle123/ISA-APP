@@ -82,7 +82,7 @@ const d: Solo = {
           "art": "szene",
           "bild": "peep:finn:wuetend",
           "name": "Finn, 15",
-          "text": "Der Erzieher sagt: „Kommst du? Wir essen.“ Ganz normaler Ton. Finn schmeißt den Teller an die Wand. Zehn Minuten später sitzt er auf dem Bett und versteht es selbst nicht. Den ganzen Tag hatte er die Nachricht seiner Mutter im Kopf: „Dieses Wochenende klappt es nicht.“ Darüber hat er mit keinem geredet. Über den Teller reden jetzt alle.",
+          "text": "Der Erzieher sagt: „Kommst du? Wir essen.“ Ganz normaler Ton. Finn schmeißt den Teller an die Wand. Zehn Minuten später sitzt er auf dem Bett und versteht es selbst nicht. Seit zwei Wochen hatte er sich auf das Wochenende bei seiner Mutter gefreut. Am Morgen kam ihre Nachricht: „Dieses Wochenende klappt es nicht.“ Den ganzen Tag hatte er sie im Kopf. Darüber hat er mit keinem geredet. Über den Teller reden jetzt alle.",
           "frage": "Worauf war Finn wirklich wütend?"
         },
         {
@@ -117,6 +117,27 @@ const d: Solo = {
           "art": "marker",
           "label": "Die unbequeme Frage",
           "x": "Welches Gefühl wäre da, wenn die Wut ==nicht== da wäre?"
+        },
+        {
+          "art": "fragen",
+          "titel": "Der Gedanke macht die Hitze",
+          "wie": "allein",
+          "zeit": "3 Min.",
+          "kontext": "Im Gang rempelt dich jemand an. Was du in der ersten Sekunde denkst, entscheidet, wie heiß es wird.",
+          "fragen": [
+            {
+              "f": "Wie wütend wärst du bei diesem Gedanken? 0 = gar nicht, 10 = ich explodiere:",
+              "regler": [
+                "„Der macht das extra.“",
+                "„Der hat mich nicht gesehen.“",
+                "„Der hat gerade selbst Stress.“"
+              ]
+            },
+            {
+              "f": "Welcher Gedanke kommt bei dir meistens zuerst?",
+              "kreis": ["extra", "nicht gesehen", "selbst Stress", "kommt drauf an, wer"]
+            }
+          ]
         }
       ]
     },
@@ -127,25 +148,37 @@ const d: Solo = {
       "bloecke": [
         {
           "art": "fragen",
-          "titel": "Die letzten drei",
-          "wie": "allein",
-          "zeit": "6 Min.",
-          "kontext": "Drei Mal, als es geknallt hat. Links, was alle gesehen haben. Rechts, was keiner gesehen hat.",
+          "titel": "Die Kette",
+          "wie": "zusammen",
+          "zeit": "10 Min.",
+          "kontext": "Ein Ausraster kommt nicht aus dem Nichts. Er hat Glieder wie eine Kette. Erst Finn, dann ein Mal von dir – oder von jemandem, den du kennst. Stichworte reichen.",
           "fragen": [
             {
-              "f": "Stichworte reichen:",
+              "f": "Glied für Glied:",
               "preis": {
-                "erste": "Wann",
+                "erste": "Glied",
                 "kopf": [
-                  "Auslöser, den alle sahen",
-                  "was darunter lag"
+                  "Finn",
+                  "ich"
                 ],
                 "optionen": [
-                  "das letzte Mal",
-                  "das Mal davor",
-                  "das heftigste"
+                  "1 · Davor: Was war schon los?",
+                  "2 · Auslöser: Was ist passiert?",
+                  "3 · Gedanke: Was ging durch den Kopf?",
+                  "4 · Gefühl darunter",
+                  "5 · Körper: Was hast du gespürt?",
+                  "6 · Tat: Was hast du gemacht?",
+                  "7 · Danach: Was ist passiert?"
                 ]
               }
+            },
+            {
+              "f": "An welchem Glied hätte die Kette reißen können? Kreise ein:",
+              "kreis": ["1", "2", "3", "4", "5", "6"]
+            },
+            {
+              "f": "Was hätte dort geholfen?",
+              "linien": 2
             }
           ]
         },
@@ -207,6 +240,24 @@ const d: Solo = {
       "unter": "Ein Wort danach – und 20 Minuten für die Tasche",
       "sticker": "Für danach",
       "bloecke": [
+        {
+          "art": "fragen",
+          "titel": "Mein Plan für Gelb",
+          "wie": "zusammen",
+          "zeit": "5 Min.",
+          "kontext": "Bei Rot ist es zu spät – dann denkt keiner mehr. Bei Gelb geht noch was. Gelb ist dein erstes Zeichen: Fäuste, heißer Kopf, laute Stimme …",
+          "fragen": [
+            {
+              "f": "Mach deinen Plan:",
+              "satz": [
+                "Mein Gelb merke ich an …",
+                "Wenn ich Gelb merke, dann …",
+                "Das sage ich dabei:",
+                "Diese Person darf mein Zeichen kennen:"
+              ]
+            }
+          ]
+        },
         {
           "art": "experiment",
           "titel": "Ein Wort danach",
@@ -316,15 +367,15 @@ const d: Solo = {
       "warum": "Darüber hat er mit keinem geredet."
     },
     {
-      "f": "Was steht auf der Karte „Der Satz danach“?",
+      "f": "Jemand rempelt dich an. Was macht dich am wütendsten?",
       "o": [
-        "„Vorhin ging es eigentlich nicht um …“",
-        "„Tut mir leid, kommt nie wieder vor.“",
-        "„Du hast angefangen.“",
-        "„Ist mir egal.“"
+        "der Rempler selbst",
+        "der Gedanke „Der macht das extra“",
+        "das Wetter",
+        "die Uhrzeit"
       ],
-      "r": 0,
-      "warum": "Der Satz sagt, worum es wirklich ging – ohne Versprechen."
+      "r": 1,
+      "warum": "Der Gedanke in der ersten Sekunde entscheidet, wie heiß es wird."
     },
     {
       "f": "Wann redet man am besten über einen Ausraster?",
@@ -382,16 +433,16 @@ const d: Solo = {
         "Logbuch. Seite 1: Die Sprüche ankreuzen lassen. Wenn „Kissen“ angekreuzt ist – der dritte Kasten auf Seite 2 gehört ihm."
       ],
       [
-        "5–20",
-        "Der Fall. Die Frage offen lassen, bis er selbst auf die Nachricht der Mutter kommt. Dann die Kästen und das Video."
+        "5–18",
+        "Der Fall. Die Frage offen lassen, bis er selbst auf die Nachricht der Mutter kommt. Dann die Kästen, das Video und „Der Gedanke macht die Hitze“."
       ],
       [
-        "20–40",
-        "„Die letzten drei“ allein – nicht mitlesen. „Die ehrliche Rechnung“ gemeinsam: den Gewinn der Wut ernsthaft aufschreiben. Dann das Duell mit Ihren Antworten."
+        "18–40",
+        "„Die Kette“ gemeinsam: erst Finn, dann ein eigenes Mal (oder das eines Bekannten). Nicht bewerten, nur Glied für Glied fragen. „Die ehrliche Rechnung“: den Gewinn der Wut ernsthaft aufschreiben. Das Duell mit Ihren Antworten, wenn Zeit ist."
       ],
       [
         "40–50",
-        "Experiment vereinbaren, Karten ausschneiden, eine Frage aus den drei Stufen."
+        "„Mein Plan für Gelb“ fertig machen, Experiment vereinbaren, Karten ausschneiden. Die drei Stufen passen gut in eine zweite Stunde."
       ]
     ],
     "haltung": [
@@ -401,13 +452,13 @@ const d: Solo = {
       "Fällt das Wort für das Gefühl darunter, nicht nachsetzen. Es reicht, dass es gesagt ist."
     ],
     "hinweise": [
-      "Seite 3: In der rechten Spalte von „Die letzten drei“ steht oft dreimal dasselbe Wort. Das ist das Thema der nächsten Wochen.",
+      "„Die Kette“ ist eine Verhaltensanalyse in Jugendsprache. Wichtig ist Glied 3 (Gedanke) und 4 (Gefühl darunter): Dort reißt die Kette am leichtesten. Wiederholt sich das Gefühl darunter bei mehreren Malen, ist das das Thema der nächsten Wochen.", "„Der Gedanke macht die Hitze“: Wer fast immer „extra“ ankreuzt, unterstellt anderen schnell Absicht. Das nicht korrigieren, sondern beim nächsten Vorfall fragen: „Welche anderen Gedanken wären noch möglich?“",
       "Seite 4: „Der Satz danach“ ist für viele das Schwerste im ganzen Heft. Anbieten, ihn gemeinsam für eine echte Situation vorzubereiten.",
       "Die 20 Minuten gelten auch für Sie und das Team: Konsequenzen und Gespräche erst danach."
     ],
     "achtung": "Die Frage nach der Wut zu Hause (Stufe 3) kann erlebte Gewalt berühren. Zuhören, nicht ausfragen; bei aktueller Gefährdung nach dem Verfahren der Einrichtung handeln und die zuständige Leitung (Responsable) einbeziehen. Bei Ankündigungen, jemandem etwas anzutun, oder bei Selbstverletzung nach Ausrastern direkt nachfragen und nicht allein entscheiden. Das Heft ersetzt keine Vereinbarungen zur Sicherheit in der Gruppe.",
-    "hintergrund": "Wut tritt häufig als Reaktion auf verletzlichere Gefühle wie Scham, Angst oder Ohnmacht auf (Novaco). Das „Dampfablassen“ durch Schlagen auf Gegenstände senkt Ärger nicht, sondern verstärkt ihn (Bushman). Körperliche Erregung klingt nur langsam ab und überträgt sich auf die nächste Situation (Zillmann). Ausraster lassen sich besser als fehlende Fertigkeit unter Belastung verstehen denn als fehlender Wille; gemeinsames Problemlösen in ruhigen Momenten wirkt besser als Strafen (Greene).",
-    "quellen": "Novaco (1975) · Bushman (2002) · Zillmann (1971) · Greene (2014) · Linehan (2015)."
+    "hintergrund": "Wut tritt häufig als Reaktion auf verletzlichere Gefühle wie Scham, Angst oder Ohnmacht auf (Novaco). Jugendliche, die anderen in unklaren Situationen schnell Absicht unterstellen, reagieren häufiger aggressiv (Dodge); die Kette (Verhaltensanalyse nach Linehan) macht diesen Schritt sichtbar. Das „Dampfablassen“ durch Schlagen auf Gegenstände senkt Ärger nicht, sondern verstärkt ihn (Bushman). Körperliche Erregung klingt nur langsam ab und überträgt sich auf die nächste Situation (Zillmann). Ausraster lassen sich besser als fehlende Fertigkeit unter Belastung verstehen denn als fehlender Wille; gemeinsames Problemlösen in ruhigen Momenten wirkt besser als Strafen (Greene).",
+    "quellen": "Novaco (1975) · Bushman (2002) · Zillmann (1971) · Dodge (2006) · Greene (2014) · Linehan (2015)."
   }
 }
 export default d

@@ -66,79 +66,79 @@ type Fall = { erz?: string; bild: string | string[]; blasen?: [string, string][]
 // Der Fall als Bildstreifen in drei Feldern – der Wortlaut der Geschichte bleibt, Gesagtes und Gedachtes steht in Blasen.
 const BD: Record<string, Fall[]> = {
   s03: [
-    { erz: 'Mia will um elf nur kurz schauen.', bild: 'mia:neutral:handy' },
+    { erz: 'Mia liegt um elf im Bett. Sie will nur kurz aufs Handy schauen.', bild: 'mia:neutral:handy' },
     { erz: 'Um zwanzig nach eins hat sie 300 Leute gesehen, die schöner wohnen, besser aussehen und mehr Freunde haben. Sie kennt keinen davon.', bild: 'mia:traurig:handy' },
-    { erz: 'Sie weiß, dass das gestellt ist – ihre eigenen Fotos macht sie ja genauso. Es hilft nichts.', bild: 'mia:traurig', nach: 'Sie fühlt sich trotzdem wie der einzige Mensch, bei dem nichts los ist.' },
+    { erz: 'Sie weiß: Das ist gestellt. Ihre eigenen Fotos macht sie ja auch zehnmal, bis eins gut aussieht. Es hilft nichts.', bild: 'mia:traurig', nach: 'Sie fühlt sich trotzdem wie der einzige Mensch, bei dem nichts los ist.' },
   ],
   s04: [
-    { erz: 'Im Clan ist Noah der, auf den man sich verlässt. 3.000 Stunden, hoher Rang, sein Call entscheidet die Runde.', bild: 'noah:stolz:zocken' },
-    { erz: 'In der Schule ist er der, der fehlt. Am Dienstag sagt die Lehrerin:', bild: ['lehrerin:neutral', 'noah:gelangweilt'], blasen: [['Lehrerin', 'Du könntest so viel, wenn du wolltest.'], ['Noah denkt', 'Ich will ja. Nur nicht hier.']] },
-    { erz: 'Um vier loggt er sich ein. Drei Leute schreiben:', bild: 'noah:froh:zocken', blasen: [['Chat', 'Endlich.']] },
+    { erz: 'Im Clan ist Noah der, auf den man sich verlässt. 3.000 Stunden, hoher Rang, seine Ansage entscheidet die Runde.', bild: 'noah:stolz:zocken' },
+    { erz: 'In der Schule fehlt er oft. Am Dienstag sagt die Lehrerin:', bild: ['lehrerin:neutral', 'noah:gelangweilt'], blasen: [['Lehrerin', 'Du könntest so viel, wenn du wolltest.'], ['Noah denkt', 'Ich will ja gut sein. Nur nicht hier.']] },
+    { erz: 'Um vier loggt er sich ein. Drei Leute schreiben:', bild: 'noah:froh:zocken', blasen: [['Chat', 'Endlich! Ohne dich verlieren wir.']] },
   ],
   s05: [
     { erz: 'Der Erzieher fragt in ganz normalem Ton:', bild: ['lehrer:neutral', 'finn:wuetend'], blasen: [['Erzieher', 'Kommst du? Wir essen.']] },
     { erz: 'Finn schmeißt den Teller an die Wand. Zehn Minuten später sitzt er auf dem Bett und versteht es selbst nicht.', bild: 'finn:verwirrt' },
-    { erz: 'Den ganzen Tag hatte er die Nachricht seiner Mutter im Kopf:', bild: 'finn:traurig:handy', blasen: [['Nachricht', 'Dieses Wochenende klappt es nicht.']], nach: 'Darüber hat er mit keinem geredet. Über den Teller reden jetzt alle.' },
+    { erz: 'Seit zwei Wochen hatte er sich auf das Wochenende bei seiner Mutter gefreut. Am Morgen kam ihre Nachricht:', bild: 'finn:traurig:handy', blasen: [['Nachricht', 'Dieses Wochenende klappt es nicht.']], nach: 'Den ganzen Tag hatte er sie im Kopf – und mit keinem darüber geredet. Über den Teller reden jetzt alle.' },
   ],
   s06: [
-    { erz: 'Nele liegt seit halb zwölf im Bett. Um eins rechnet sie: noch fünfeinhalb Stunden. Um zwei: noch viereinhalb.', bild: 'nele:muede' },
+    { erz: 'Nele liegt seit halb zwölf im Bett. Um eins rechnet sie: noch fünfeinhalb Stunden bis zum Wecker. Um zwei: noch viereinhalb.', bild: 'nele:muede' },
     { erz: 'Um halb drei ist sie sicher:', bild: 'nele:besorgt', blasen: [['Nele denkt', 'Den Abschluss schaffe ich nie. Meine beste Freundin mag mich eigentlich nicht. Mit mir stimmt etwas grundsätzlich nicht.']] },
-    { erz: 'Um zehn Uhr morgens kommt ihr das alles übertrieben vor.', bild: 'nele:ruhig', nach: 'Um halb drei war es die Wahrheit.' },
+    { erz: 'Um zehn Uhr morgens kommt ihr das alles übertrieben vor.', bild: 'nele:ruhig', nach: 'Um halb drei hat es sich angefühlt wie die Wahrheit.' },
   ],
   s07: [
-    { erz: 'Mia bekommt die Arbeit zurück: 14 von 20.', bild: ['lehrerin:froh', 'mia:neutral'], blasen: [['Lehrerin', 'Gut gemacht.']] },
-    { erz: 'Die Stimme in Mias Kopf sagt:', bild: 'mia:traurig', blasen: [['Stimme', 'Sechs Fehler. Bei so einer leichten Arbeit. Die anderen hatten sicher mehr. Die sagt das nur aus Mitleid.']] },
+    { erz: 'Mia bekommt die Arbeit zurück: 14 von 20 Punkten.', bild: ['lehrerin:froh', 'mia:neutral'], blasen: [['Lehrerin', 'Gut gemacht.']] },
+    { erz: 'Die Stimme in Mias Kopf sagt:', bild: 'mia:traurig', blasen: [['Stimme', 'Sechs Fehler. Bei so einer leichten Arbeit. Die anderen hatten sicher mehr Punkte. Die Lehrerin sagt das nur aus Mitleid.']] },
     { erz: 'Mia lächelt und packt das Blatt weg.', bild: 'mia:verlegen', nach: 'Niemand im Raum würde so mit ihr reden. Nur sie selbst.' },
   ],
   s08: [
-    { erz: 'Amira hat 212 Kontakte und niemanden, den sie um zwei Uhr nachts anrufen würde.', bild: 'amira:traurig:handy' },
+    { erz: 'Amira hat 212 Kontakte. Aber niemanden, den sie um zwei Uhr nachts anrufen würde, wenn es ihr schlecht geht.', bild: 'amira:traurig:handy' },
     { erz: 'In der Pause steht sie bei einer Gruppe, lacht an den richtigen Stellen und weiß: Keiner würde merken, wenn sie morgen fehlt.', bild: ['lina:froh', 'amira:froh'] },
-    { erz: 'Sara fragt:', bild: ['jana:froh', 'amira:nervoes'], blasen: [['Sara', 'Kommst du Samstag mit?'], ['Amira', 'Mal sehen.']], nach: 'Sie will. Aber wenn sie hingeht und es wird komisch? Dann lieber gleich zu Hause bleiben.' },
+    { erz: 'Sara fragt:', bild: ['jana:froh', 'amira:nervoes'], blasen: [['Sara', 'Kommst du Samstag mit?'], ['Amira', 'Mal sehen.']], nach: 'Sie will. Aber was, wenn es komisch wird und keiner mit ihr redet? Dann lieber gleich zu Hause bleiben.' },
   ],
   s09: [
-    { erz: 'Yusuf raucht abends einen, „zum Runterkommen“. Seit dem Sommer jeden Abend.', bild: 'yusuf:ruhig', blasen: [['Yusuf', 'Ich hab’s im Griff. Ich kann jederzeit aufhören.']] },
-    { erz: 'Letzte Woche gab es drei Tage nichts. Yusuf hat kaum geschlafen, seine kleine Schwester angeschrien und ist nicht zur Arbeit.', bild: 'yusuf:wuetend' },
-    { erz: 'Am vierten Tag war alles wieder gut.', bild: 'yusuf:froh', blasen: [['Yusuf', 'Siehst du? Ohne geht es mir schlechter.']] },
+    { erz: 'Yusuf raucht abends einen Joint, „zum Runterkommen“. Seit dem Sommer jeden Abend.', bild: 'yusuf:ruhig', blasen: [['Yusuf', 'Ich hab’s im Griff. Ich kann jederzeit aufhören.']] },
+    { erz: 'Letzte Woche hatte er drei Tage lang nichts zu rauchen. Yusuf hat kaum geschlafen, seine kleine Schwester angeschrien und ist nicht zur Arbeit gegangen.', bild: 'yusuf:wuetend' },
+    { erz: 'Am vierten Tag hat er wieder etwas. Sofort geht es ihm besser.', bild: 'yusuf:froh', blasen: [['Yusuf', 'Siehst du? Ohne geht es mir schlechter.']] },
   ],
   s10: [
-    { erz: 'Lio hat seit drei Wochen ein Referat auf. Jeden Abend nimmt er es sich vor. Jeden Abend ist etwas anderes: erst essen, erst das Video, erst aufräumen – Lio räumt sonst nie auf.', bild: 'lio:gelangweilt:handy' },
-    { erz: 'Am Abend davor sagt er:', bild: 'lio:traurig', blasen: [['Lio', 'Ist mir eh egal. Ich bin halt dumm.']] },
+    { erz: 'Lio hat vor drei Wochen ein Referat bekommen. Das Thema mag er sogar. Jeden Abend nimmt er es sich vor. Jeden Abend kommt etwas dazwischen: erst essen, erst das Video, erst aufräumen – dabei räumt Lio sonst nie auf.', bild: 'lio:gelangweilt:handy' },
+    { erz: 'Am Abend vor dem Referat sagt er:', bild: 'lio:traurig', blasen: [['Lio', 'Ist mir eh egal. Ich bin halt dumm.']] },
     { erz: 'Am Morgen ist ihm schlecht. Er bleibt zu Hause. Die Lehrerin schreibt:', bild: 'lehrerin:neutral', blasen: [['Lehrerin', 'Kein Interesse.']] },
   ],
   s11: [
-    { erz: 'Tom steht an der Haltestelle. Der Bus kommt, Tom steigt nicht ein. Drinnen sitzen zu viele, die schauen könnten.', bild: 'tom:aengstlich:stehen' },
-    { erz: 'Sein Herz rast, die Hände kribbeln, er bekommt schlecht Luft. Er geht zu Fuß, vierzig Minuten, und kommt zu spät.', bild: 'tom:nervoes:gehen' },
-    { erz: 'In der Schule sagt er nur:', bild: 'tom:verlegen', blasen: [['Tom', 'Verschlafen.']], nach: 'Am nächsten Tag ist der Bus noch ein bisschen größer geworden.' },
+    { erz: 'Tom steht an der Haltestelle. Der Bus kommt, Tom steigt nicht ein. Drinnen sitzen zu viele, die schauen könnten.', bild: 'tom:aengstlich:stehen', blasen: [['Tom denkt', 'Die schauen alle auf mich.']] },
+    { erz: 'Sein Herz rast, die Hände kribbeln, er bekommt schlecht Luft. Er geht weg – sofort wird es leichter. Er läuft vierzig Minuten und kommt zu spät.', bild: 'tom:nervoes:gehen' },
+    { erz: 'In der Schule sagt er nur:', bild: 'tom:verlegen', blasen: [['Tom', 'Verschlafen.']], nach: 'Am nächsten Tag ist der Bus in Toms Kopf noch ein bisschen größer.' },
   ],
   s12: [
     { erz: 'Seit Lina mit Elias zusammen ist, will er wissen, wo sie ist. Erst fand sie es süß. Dann wollte er ihren Standort, dann ihr Passwort.', bild: 'lina:verlegen:handy', blasen: [['Elias', 'In einer Beziehung vertraut man sich.']] },
-    { erz: 'Letzte Woche hat er ihre Chats gelesen und war drei Tage beleidigt – wegen einer Nachricht an einen Jungen aus der Klasse.', bild: 'lina:traurig', nach: 'Lina hat sich entschuldigt. Sie weiß nicht genau, wofür.' },
+    { erz: 'Letzte Woche hat er ihre Chats gelesen, ohne zu fragen. Lina hatte einem Jungen aus der Klasse geschrieben – nur wegen der Hausaufgaben. Elias war drei Tage beleidigt.', bild: 'lina:traurig', nach: 'Lina hat sich entschuldigt. Sie weiß nicht genau, wofür.' },
     { erz: 'Ihre Freundin sagt:', bild: ['jana:froh', 'lina:verwirrt'], blasen: [['Freundin', 'Der liebt dich halt.']] },
   ],
   s13: [
     { erz: 'Samstag ist Besuchstag. Janas Mutter hat versprochen zu kommen. Um zwei ist sie nicht da, um drei auch nicht.', bild: 'jana:besorgt:sitzen' },
-    { erz: 'Um vier kommt eine Nachricht. Jana schreibt zurück.', bild: 'jana:traurig:handy', blasen: [['Nachricht', 'Schaff es heute nicht, Schatz. Nächstes Mal sicher.'], ['Jana', 'Kein Problem.']] },
-    { erz: 'Dann streitet sie mit der Erzieherin wegen eines Joghurts. Am Abend sagt ein Mädchen:', bild: ['lea:neutral', 'jana:wuetend'], blasen: [['Mädchen', 'Deine Mutter ist echt das Letzte.']], nach: 'Jana geht auf sie los.' },
+    { erz: 'Um vier kommt eine Nachricht. Jana schreibt zurück.', bild: 'jana:traurig:handy', blasen: [['Nachricht', 'Schaff es heute nicht, Schatz. Nächstes Mal sicher.'], ['Jana', 'Kein Problem.']], nach: 'Das stimmt nicht. Jana ist tief enttäuscht. Aber sie sagt es keinem.' },
+    { erz: 'Eine Stunde später streitet sie mit der Erzieherin – es geht nur um einen Joghurt. Am Abend sagt ein Mädchen:', bild: ['lea:neutral', 'jana:wuetend'], blasen: [['Mädchen', 'Deine Mutter ist echt das Letzte.']], nach: 'Jana geht auf sie los.' },
   ],
   s14: [
-    { erz: 'Der Meister schickt Yusuf zum Berufsberater. Der fragt:', bild: ['chef:neutral', 'yusuf:neutral'], blasen: [['Berater', 'Wo siehst du dich in fünf Jahren?'], ['Yusuf', 'Keine Ahnung.']] },
+    { erz: 'Yusuf macht ein Praktikum in einer Werkstatt. Der Meister dort schickt ihn zum Berufsberater. Der fragt:', bild: ['chef:neutral', 'yusuf:neutral'], blasen: [['Berater', 'Wo siehst du dich in fünf Jahren?'], ['Yusuf', 'Keine Ahnung.']] },
     { erz: 'Der Berater seufzt und schreibt etwas auf.', bild: 'chef:enttaeuscht' },
-    { erz: 'Was Yusuf nicht sagt: Er hat einen Plan. Mechatroniker, eine eigene Wohnung – und dass seine kleine Schwester bei ihm essen kann, wenn es zu Hause knallt.', bild: 'yusuf:ruhig', nach: 'Er sagt es nicht, weil das letzte Mal jemand gelacht hat.' },
+    { erz: 'Was Yusuf nicht sagt: Er hat einen Plan. Mechatroniker, eine eigene Wohnung – und dass seine kleine Schwester bei ihm essen kann, wenn es zu Hause Streit gibt.', bild: 'yusuf:ruhig', nach: 'Er sagt es nicht, weil das letzte Mal jemand gelacht hat.' },
   ],
   s15: [
-    { erz: 'Lea steht jeden Morgen auf, geht zur Schule, lacht in der Pause. Niemand merkt etwas.', bild: 'lea:froh:stehen' },
+    { erz: 'Lea steht jeden Morgen auf, geht zur Schule, lacht in der Pause. Von außen sieht alles normal aus.', bild: 'lea:froh:stehen' },
     { erz: 'Nachmittags liegt sie auf dem Bett und schaut an die Decke. Früher hat sie gezeichnet, stundenlang. Die Stifte liegen seit Februar in der Schublade.', bild: 'lea:muede' },
-    { erz: 'Wenn jemand fragt, sagt sie:', bild: 'lea:neutral', blasen: [['Lea', 'Bin nur müde.']], nach: 'Traurig ist sie nicht. Das wäre wenigstens ein Gefühl.' },
+    { erz: 'Wenn jemand fragt, sagt sie:', bild: 'lea:neutral', blasen: [['Lea', 'Bin nur müde.'], ['Lea denkt', 'Ich fühle gar nichts. Alles ist egal.']], nach: 'Traurig ist sie nicht. Traurig wäre wenigstens ein Gefühl.' },
   ],
   s16: [
-    { erz: 'Erst die Kopfhörer, jetzt das: Ben hat mit zwei anderen einen Roller „geliehen“. Die Idee kam nicht von ihm. Gefahren ist er.', bild: 'ben:besorgt:stehen' },
-    { erz: 'Jetzt gibt es eine Anzeige, einen Termin, und seine Mutter redet seit vier Tagen nur das Nötigste. Der Erzieher will „darüber sprechen“.', bild: ['lehrer:neutral', 'ben:wuetend'], blasen: [['Ben', 'War halt so.']] },
-    { erz: 'Was er denkt:', bild: 'ben:traurig', blasen: [['Ben denkt', 'Jetzt bin ich endgültig der, für den mich alle halten. Dann kann ich auch gleich so weitermachen.']] },
+    { erz: 'Ben hatte dieses Jahr schon einmal Ärger. Jetzt hat er mit zwei anderen einen Roller genommen, der ihnen nicht gehört. Die Idee kam nicht von ihm. Gefahren ist er.', bild: 'ben:besorgt:stehen' },
+    { erz: 'Jetzt gibt es eine Anzeige. Ben hat bald einen Termin bei der Polizei. Seine Mutter redet seit vier Tagen kaum mit ihm. Der Erzieher sagt:', bild: ['lehrer:neutral', 'ben:wuetend'], blasen: [['Erzieher', 'Wir müssen darüber reden.'], ['Ben', 'War halt so.']] },
+    { erz: 'Was er denkt:', bild: 'ben:traurig', blasen: [['Ben denkt', 'Jetzt denken alle: Ben ist kriminell. Dann bin ich das eben. Dann mache ich so weiter.']] },
   ],
   s17: [
-    { erz: 'Im Schwimmbad ist Sami der Lauteste – und der Einzige im T-Shirt.', bild: 'sami:froh:stehen', blasen: [['Sami', 'Sonnenbrand.']] },
+    { erz: 'Im Schwimmbad ist Sami der Lauteste – und der Einzige im T-Shirt. Er sagt:', bild: 'sami:froh:stehen', blasen: [['Sami', 'Sonnenbrand.']], nach: 'Das stimmt nicht. Sami will nicht, dass jemand seinen Bauch sieht.' },
     { erz: 'Zu Hause macht er Liegestütze vor dem Spiegel, schaut Videos von Typen mit Bauchmuskeln und rechnet aus, wie lange es dauert, bis er auch so aussieht.', bild: 'sami:nervoes:handy' },
-    { erz: 'Beim Essen ist er als Erster fertig.', bild: 'sami:wuetend', blasen: [['Sami', 'Kein Hunger.'], ['Schwester', 'Du spinnst, du bist doch ganz normal.']], nach: 'Normal ist genau das Wort, das Sami am meisten hasst.' },
+    { erz: 'Beim Essen ist er als Erster fertig.', bild: 'sami:wuetend', blasen: [['Sami', 'Kein Hunger.'], ['Schwester', 'Du spinnst, du bist doch ganz normal.']], nach: 'Normal ist genau das Wort, das Sami am meisten hasst. Für ihn heißt normal: nicht gut genug.' },
   ],
 }
 
@@ -169,7 +169,7 @@ export function fragenBlock(b: any): any[] {
       out.push({ art: 'fragen', auftrag, fragen: f.satz.map((s: string) => ({ f: s, zeilen: 2 })) })
     } else if (f.preis) {
       const kopf = [f.preis.erste || 'Möglichkeit', ...f.preis.kopf]
-      out.push({ art: 'tabelle', auftrag, hoch: f.preis.kopf.every((k: string) => !/^(du|ich|dein|Gegenüber|dein Gegenüber)$/i.test(k)), kopf, breiten: [36, 32, 32], zeilen: f.preis.optionen.map((o: string) => [o, '', '']) })
+      out.push({ art: 'tabelle', auftrag, hoch: !f.preis.kopf.some((k: string) => /Gegenüber/i.test(k))   /* Duell: kurze Antworten; sonst Platz zum Schreiben */, kopf, breiten: [36, 32, 32], zeilen: f.preis.optionen.map((o: string) => [o, '', '']) })
     } else if (f.kreis || f.kreuz) {
       out.push({ art: 'mc', auftrag: auftrag.replace(/Kreise ein/g, 'Kreuze an'), fragen: [{ f: '', o: f.kreis || f.kreuz, r: [] }] })
       if (f.linien) out.push({ art: 'fragen', auftrag: '', fragen: [{ f: '', zeilen: f.linien }] })
@@ -208,7 +208,7 @@ function umbau(h: any) {
           L.regel = { was: '', reihen: [[{ titel: b.titel, punkte: b.punkte, nummern: true }]] }
           break
         case 'fragen': {
-          const ziel = si === 0 ? L.start.aufgaben : L.ueben
+          const ziel = si === 0 ? L.start.aufgaben : /^Mitnehmen/.test(s.titel) ? L.schreiben : L.ueben   // Pläne für die Woche gehören zu „Mitnehmen“
           ziel.push(...fragenBlock(b))
           break
         }

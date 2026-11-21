@@ -63,7 +63,7 @@ const d: AktionsHeft = {
       titel: 'Noah, 16 Uhr', bild: 'peep:noah:gelangweilt', icon: 'users-group', zeit: '10 Min.', wer: 'zusammen', material: '',
       schritte: ['Schaut euch Noahs Tag an.', 'Kreuz an: Was bekommt Noah im Spiel?', 'Kreis ein: Wie ist das bei dir?'],
       zonen: [
-        { art: 'comic', bilder: [['school', 'In der Schule ist Noah der, der fehlt.'], ['message-circle', 'Die Lehrerin sagt: „Du könntest, wenn du wolltest.“'], ['device-gamepad-2', 'Um vier loggt er sich ein.'], ['users', 'Drei Leute schreiben: „Endlich.“']] },
+        { art: 'comic', bilder: [['school', 'In der Schule fehlt Noah oft.'], ['message-circle', 'Die Lehrerin sagt: „Du könntest, wenn du wolltest.“'], ['device-gamepad-2', 'Um vier loggt er sich ein.'], ['users', 'Drei Leute schreiben: „Endlich.“']] },
         { art: 'fragen', fragen: [{ f: 'Das bekommt Noah im Spiel:', kreuz: ['Leute, die ihn brauchen', 'Er ist gut in etwas', 'Er entscheidet selbst', 'Geld'] }, { f: 'Bei mir ist es:', kreis: ['genauso', 'ein bisschen so', 'anders'] }] },
       ],
       aha: 'Im Clan ist Noah wichtig. **Wo bist du wichtig?**',
@@ -83,7 +83,7 @@ const d: AktionsHeft = {
     },
     {
       titel: 'Sechs Sätze', icon: 'checklist', zeit: '10 Min.', wer: 'allein', material: '',
-      schritte: ['Diese Sätze fragen auch Ärzte.', 'Kreuz an. **Keiner schaut mit.**', 'Du wertest selbst aus: Wie viele „oft“?', 'Du entscheidest, ob du etwas davon sagst.'],
+      schritte: ['Diese Sätze ähneln Fragen von Fachleuten. **Es ist kein Test.**', 'Kreuz an. **Keiner schaut mit.**', 'Wo steht ein „oft“? Da lohnt es sich, genauer hinzuschauen.', 'Du entscheidest, ob du etwas davon sagst.'],
       zonen: [{ art: 'fragen', fragen: [{ f: 'Wie oft stimmt das?', raster: { spalten: ['nie', 'manchmal', 'oft'], zeilen: ['Ich spiele länger, als ich wollte.', 'Ich lasse anderes liegen: Schlaf, Leute, Schule.', 'Ich spiele weiter, obwohl es Ärger gibt.', 'Ich spiele, um etwas nicht zu fühlen.', 'Ohne Spiel bin ich gereizt oder leer.', 'Ich sage nicht ehrlich, wie viel ich spiele.'] } }] }],
       aha: 'Nicht die Stunden zählen. **Es zählt: Kannst du aufhören, wenn du willst?**',
       ziel: 'Eine ehrliche Selbsteinschätzung ohne Publikum.',
@@ -92,7 +92,7 @@ const d: AktionsHeft = {
     {
       titel: 'Stopp-Test', bild: 'peep:noah:neutral', icon: 'alarm', zeit: '15 Min.', wer: 'beide', material: 'Spiel oder Handy, Timer',
       schritte: [
-        'Leg **vorher** fest: Schluss nach einer Runde – oder nach 8 Minuten.',
+        'Leg **vorher** fest: Schluss nach **8 Minuten** – auch mitten in der Runde.',
         'Sag es laut. Timer an. Spiel.',
         'Dein Gegenüber macht dasselbe mit seinem Handy.',
         'Der Timer klingelt: **aufhören.** Mitten drin.',

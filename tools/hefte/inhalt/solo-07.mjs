@@ -253,7 +253,9 @@ export const MODUL = {
   "hinweise": [
    "Seite 3: Kommt das Thema Körper auf, SOLO „Körper“ anbieten und nicht hier vertiefen.",
    "Seite 4: Die Strichliste verändert meist schon durch das Zählen etwas. Die Zahl nicht bewerten.",
-   "Stufe 3: „Wer hat zuerst so mit dir geredet?“ führt oft in die Familie. Nur zuhören."
+   "Stufe 3: „Wer hat zuerst so mit dir geredet?“ führt oft in die Familie. Nur zuhören.",
+   "„Stimme“ meint eigene Gedanken. Hört der Jugendliche Stimmen wie von außen: ärztliche Abklärung.",
+   "„Der Stimme antworten“ übt die Trainer-Antwort am eigenen Satz – sie muss für den Jugendlichen stimmen, sonst ändern. Wird die Zeit knapp, ist das Video freiwillig."
   ],
   "achtung": "Starke Selbstabwertung kann mit Selbstverletzung oder Suizidgedanken einhergehen. Sätze wie „Ohne mich wäre es besser“ ruhig und direkt aufgreifen: „Denkst du manchmal daran, nicht mehr leben zu wollen?“ Danach nicht allein entscheiden – Verfahren der Einrichtung, zuständige Leitung (Responsable), Krisenplan. Stammt die Stimme erkennbar aus Abwertung oder Gewalt zu Hause, ist das ein Hinweis auf Belastung, der ins Team gehört.",
   "videos": [
@@ -397,6 +399,49 @@ export const LEKTIONEN = [{
    ]
   },
   {
+   "art": "fragen",
+   "auftrag": "**Der Stimme antworten – Nimm einen Satz, den du oben zitiert hast – oder einen, den jemand, den du kennst, oft zu sich sagt. Die Antwort muss **stimmen**. „Du bist toll“ zählt nicht.** – Schritt für Schritt: //(zusammen · 7 Min.)//",
+   "fragen": [
+    {
+     "f": "Was ist passiert? Nur, was man sehen kann:",
+     "zeilen": 2
+    },
+    {
+     "f": "Die Stimme sagt:",
+     "zeilen": 2
+    },
+    {
+     "f": "Ein guter Trainer würde sagen:",
+     "zeilen": 2
+    },
+    {
+     "f": "Mein nächster Versuch:",
+     "zeilen": 2
+    }
+   ]
+  },
+  {
+   "art": "skala",
+   "auftrag": "So sehr glaube ich den Trainer-Satz (0–10). Unter 5? Ändere ihn, bis er stimmt.",
+   "zeilen": [
+    "Trainer-Satz"
+   ]
+  },
+  {
+   "art": "fragen",
+   "auftrag": "Wenn-dann – dann einmal laut sagen:",
+   "fragen": [
+    {
+     "f": "Wenn die Stimme wieder sagt:",
+     "zeilen": 2
+    },
+    {
+     "f": "dann sage ich zu mir:",
+     "zeilen": 2
+    }
+   ]
+  },
+  {
    "art": "tabelle",
    "auftrag": "**Auch Erwachsene haben eine** – Erst raten, was der andere schreibt – dann aufdecken: //(beide · 5 Min.)//",
    "hoch": false,
@@ -504,7 +549,7 @@ export const LEKTIONEN = [{
   "nummern": false,
   "cases": [
    {
-    "erz": "Mia bekommt die Arbeit zurück: 14 von 20.",
+    "erz": "Mia bekommt die Arbeit zurück: 14 von 20 Punkten.",
     "bild": [
      "lehrerin:froh",
      "mia:neutral"
@@ -522,7 +567,7 @@ export const LEKTIONEN = [{
     "blasen": [
      [
       "Stimme",
-      "Sechs Fehler. Bei so einer leichten Arbeit. Die anderen hatten sicher mehr. Die sagt das nur aus Mitleid."
+      "Sechs Fehler. Bei so einer leichten Arbeit. Die anderen hatten sicher mehr Punkte. Die Lehrerin sagt das nur aus Mitleid."
      ]
     ]
    },
@@ -592,7 +637,7 @@ export const LEKTIONEN = [{
     },
     {
      "titel": "Sie will dich schützen",
-     "text": "Wer sich selbst zuerst fertigmacht, den kann kein anderer mehr überraschen. **Die Stimme ist ein schlechter Bodyguard – aber ein Bodyguard.**"
+     "text": "Ihre Idee: Wenn ich mich zuerst selbst schlecht mache, tut Kritik von anderen weniger weh. **Die Stimme ist ein schlechter Bodyguard – aber ein Bodyguard.**"
     }
    ],
    [

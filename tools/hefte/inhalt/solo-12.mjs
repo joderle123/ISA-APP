@@ -241,7 +241,7 @@ export const MODUL = {
    ],
    [
     "40–50",
-    "Experiment vereinbaren, Karten ausschneiden. Stufe 3 nur, wenn der Jugendliche sie von sich aus wählt."
+    "Experiment vereinbaren, Karten ausschneiden. Stufe 3 nur, wenn der Jugendliche sie von sich aus wählt – und erst, nachdem Sie gesagt haben, was Sie weitergeben müssten."
    ]
   ],
   "haltung": [
@@ -253,7 +253,9 @@ export const MODUL = {
   "hinweise": [
    "Seite 2: Den dritten Kasten (Porno) sachlich stehen lassen; Nachfragen beantworten, nicht ausfragen.",
    "Seite 3: „Kommt drauf an“ ist die interessanteste Spalte – nachfragen, worauf.",
-   "Fragen zu Verhütung, Schwangerschaft oder Infektionen: an eine Fachstelle für sexuelle Gesundheit vermitteln (in Luxemburg z. B. Planning Familial)."
+   "Fragen zu Verhütung, Schwangerschaft oder Infektionen: an eine Fachstelle für sexuelle Gesundheit vermitteln (in Luxemburg z. B. Planning Familial).",
+   "Bilder im Netz (Weiterleiten, Erpressung): BEE SECURE Helpline 8002 1234; bei Bedrohung Polizei 113.",
+   "„Ein Nein hören“ übt die zweite Seite von Einverständnis – auch Sie fragen einmal und nehmen das Nein an. Den Clip vor der Stunde ansehen: Kopien verschwinden manchmal."
   ],
   "achtung": "Das Heft kann Übergriffe sichtbar machen. Nicht nach Einzelheiten fragen, glauben, ruhig bleiben, nichts versprechen, was Sie nicht halten können. Bei Hinweisen auf sexuelle Gewalt, auf Beziehungen mit deutlich Älteren, auf Erpressung mit Bildern oder auf Gewalt in der Beziehung nach dem Verfahren der Einrichtung handeln und die zuständige Leitung (Responsable) einbeziehen. Schildert der Jugendliche eigenes übergriffiges Verhalten, ist das ebenfalls ein Schutzthema – für die andere Person und für ihn.",
   "videos": [
@@ -424,6 +426,62 @@ export const LEKTIONEN = [{
   },
   {
    "art": "tabelle",
+   "auftrag": "**Ein Nein hören – Einverständnis hat zwei Seiten: Nein sagen – und ein Nein annehmen.** – Jemand hat Nein gesagt. Was ist die Antwort darauf? //(beide · 6 Min.)//",
+   "kopf": [
+    "",
+    "in Ordnung",
+    "Druck"
+   ],
+   "breiten": [
+    70,
+    15,
+    15
+   ],
+   "zeilen": [
+    [
+     "„Okay. Dann nicht.“",
+     "",
+     ""
+    ],
+    [
+     "„Komm schon, nur kurz.“",
+     "",
+     ""
+    ],
+    [
+     "„Danke, dass du es sagst.“",
+     "",
+     ""
+    ],
+    [
+     "„Wenn du mich lieben würdest …“",
+     "",
+     ""
+    ],
+    [
+     "„Willst du lieber was anderes machen?“",
+     "",
+     ""
+    ],
+    [
+     "drei Tage beleidigt sein",
+     "",
+     ""
+    ]
+   ]
+  },
+  {
+   "art": "fragen",
+   "auftrag": "Probiert es aus: Dein Gegenüber fragt: „Darf ich das Foto von dir posten?“ Du sagst Nein. Dann tauscht ihr – jetzt fragst du. Mein Satz, wenn ich ein Nein bekomme:",
+   "fragen": [
+    {
+     "f": "",
+     "zeilen": 1
+    }
+   ]
+  },
+  {
+   "art": "tabelle",
    "auftrag": "**Was ich gelernt habe** – Erst raten, was der andere schreibt – dann aufdecken: //(beide · 5 Min.)//",
    "hoch": false,
    "kopf": [
@@ -511,7 +569,7 @@ export const LEKTIONEN = [{
     {
      "titel": "Tut mir das gut?",
      "icon": "user-heart",
-     "text": "Wird mein Leben größer oder kleiner?\nDarf ich Nein sagen, ohne bestraft zu werden?\nKann ich so sein, wie ich bin?"
+     "text": "Wird mein Leben größer oder kleiner?\nDarf ich Nein sagen, ohne bestraft zu werden?\nKann ich so sein, wie ich bin?\nReden hilft: Kanner-Jugendtelefon **116 111**"
     }
    ]
   }
@@ -540,7 +598,7 @@ export const LEKTIONEN = [{
     ]
    },
    {
-    "erz": "Letzte Woche hat er ihre Chats gelesen und war drei Tage beleidigt – wegen einer Nachricht an einen Jungen aus der Klasse.",
+    "erz": "Letzte Woche hat er ihre Chats gelesen, ohne zu fragen. Lina hatte einem Jungen aus der Klasse geschrieben – nur wegen der Hausaufgaben. Elias war drei Tage beleidigt.",
     "bild": "lina:traurig",
     "nach": "Lina hat sich entschuldigt. Sie weiß nicht genau, wofür."
    },

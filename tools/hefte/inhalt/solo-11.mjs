@@ -425,12 +425,12 @@ export const LEKTIONEN = [{
    ],
    "zeilen": [
     [
-     "Dem gehe ich aus dem Weg",
+     "Davor hatte ich Angst – und bin trotzdem hin",
      "",
      ""
     ],
     [
-     "So erkläre ich es den anderen",
+     "Das hat mir beim ersten Mal geholfen",
      "",
      ""
     ]
@@ -469,7 +469,7 @@ export const LEKTIONEN = [{
  "schreiben": [
   {
    "art": "schreiben",
-   "auftrag": "Experiment bis zum nächsten Mal: **Eine Stufe.** Nimm die **kleinste** Sache, der du ausweichst. Mach sie einmal, gern mit jemandem – und bleib, bis die Angst ein Stück sinkt. Abbrechen zählt auch: Dann notier, bei welcher Zahl. Drei Zahlen (0–10): vorher, höchster Punkt, Ende. Wette vorher: Wie hoch geht sie?",
+   "auftrag": "Experiment bis zum nächsten Mal: **Eine Stufe.** Nimm die **kleinste** Sache, der du ausweichst. Mach sie einmal, gern mit jemandem – und bleib, bis die Angst ein Stück sinkt. Abbrechen zählt auch: Dann notier, bei welcher Zahl. Drei Zahlen (0–10): vorher, höchster Punkt, Ende. Wette vorher: Wie hoch geht sie – und was befürchtest du, was passiert? Danach: Ist es passiert?",
    "zeilen": 5,
    "zeilenAnfaenge": [
     "Meine Wette:",
@@ -513,10 +513,16 @@ export const LEKTIONEN = [{
   "cases": [
    {
     "erz": "Tom steht an der Haltestelle. Der Bus kommt, Tom steigt nicht ein. Drinnen sitzen zu viele, die schauen könnten.",
-    "bild": "tom:aengstlich:stehen"
+    "bild": "tom:aengstlich:stehen",
+    "blasen": [
+     [
+      "Tom denkt",
+      "Die schauen alle auf mich."
+     ]
+    ]
    },
    {
-    "erz": "Sein Herz rast, die Hände kribbeln, er bekommt schlecht Luft. Er geht zu Fuß, vierzig Minuten, und kommt zu spät.",
+    "erz": "Sein Herz rast, die Hände kribbeln, er bekommt schlecht Luft. Er geht weg – sofort wird es leichter. Er läuft vierzig Minuten und kommt zu spät.",
     "bild": "tom:nervoes:gehen"
    },
    {
@@ -528,7 +534,7 @@ export const LEKTIONEN = [{
       "Verschlafen."
      ]
     ],
-    "nach": "Am nächsten Tag ist der Bus noch ein bisschen größer geworden."
+    "nach": "Am nächsten Tag ist der Bus in Toms Kopf noch ein bisschen größer."
    }
   ],
   "woerter": [
@@ -597,7 +603,7 @@ export const LEKTIONEN = [{
    [
     {
      "titel": "Bleiben lässt sie fallen",
-     "text": "Wer bleibt, erlebt: Die Angst steigt – und sinkt dann **von allein**. Anders als bei „Augen zu und durch“ wählst du die Stufe, und sie ist klein."
+     "text": "Wer bleibt, erlebt meistens: Die Angst steigt – und sinkt dann **von allein**. Anders als bei „Augen zu und durch“ wählst du die Stufe, und sie ist klein."
     }
    ]
   ]

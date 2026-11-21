@@ -35,10 +35,10 @@ const d: AktionsHeft = {
     },
     {
       titel: 'Yusuf beim Berater', bild: 'peep:yusuf:neutral', icon: 'briefcase', zeit: '10 Min.', wer: 'zusammen', material: '',
-      schritte: ['Schaut euch Yusufs Termin an.', 'Kreuz an: Warum sagt Yusuf „Keine Ahnung“?', 'Kreis ein: Wem würdest du einen Plan sagen?'],
+      schritte: ['Schaut euch Yusufs Termin an.', 'Kreuz an: Warum sagt Yusuf „Keine Ahnung“?', 'Kreuz an: Was hätte Yusuf sagen können? Sagt den Satz laut.'],
       zonen: [
         { art: 'comic', bilder: [['briefcase', 'Der Berater fragt: „Wo siehst du dich in fünf Jahren?“'], ['message-circle', 'Yusuf sagt: „Keine Ahnung.“ Der Berater seufzt.'], ['tool', 'Dabei hat Yusuf einen Plan: Mechatroniker. Eine eigene Wohnung.'], ['mood-sad', 'Er sagt ihn nicht. Beim letzten Mal hat jemand gelacht.']] },
-        { art: 'fragen', fragen: [{ f: 'Yusuf sagt „Keine Ahnung“, weil:', unter: true, kreuz: ['beim letzten Mal jemand gelacht hat', 'er keinen Plan hat', 'er den Berater nicht mag'] }, { f: 'Einen Plan würde ich sagen:', kreis: ['keinem', 'einer Person', 'mehreren'] }] },
+        { art: 'fragen', fragen: [{ f: 'Yusuf sagt „Keine Ahnung“, weil:', unter: true, kreuz: ['beim letzten Mal jemand gelacht hat', 'er keinen Plan hat', 'er den Berater nicht mag'] }, { f: 'Yusuf hätte sagen können:', unter: true, kreuz: ['„Ich hab eine Idee. Bitte nicht lachen.“', '„Mechatroniker. Was brauche ich dafür?“', '„Keine Ahnung.“'] }] },
       ],
       aha: 'Wer seinen Plan nicht sagt, **schützt ihn.** Das ist klug – und macht einsam.',
       ziel: 'Verstehen, warum Pläne verschwiegen werden.',

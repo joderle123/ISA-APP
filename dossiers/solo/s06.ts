@@ -71,14 +71,14 @@ const d: Solo = {
     },
     {
       "titel": "Der Stoff",
-      "unter": "Zwei Dinge vom Flyer – diesmal mit Grund. Und eins, das dort fehlt",
+      "unter": "Zwei Tipps, die du kennst – diesmal mit Grund. Und einer, der meistens fehlt",
       "sticker": "Neu?",
       "bloecke": [
         {
           "art": "szene",
           "bild": "peep:nele:muede",
           "name": "Nele, 15",
-          "text": "Nele liegt seit halb zwölf im Bett. Um eins rechnet sie: noch fünfeinhalb Stunden. Um zwei: noch viereinhalb. Um halb drei ist sie sicher: Den Abschluss schafft sie nie. Ihre beste Freundin mag sie eigentlich nicht. Mit ihr stimmt etwas grundsätzlich nicht. Um zehn Uhr morgens kommt ihr das alles übertrieben vor. Um halb drei war es die Wahrheit.",
+          "text": "Nele liegt seit halb zwölf im Bett. Um eins rechnet sie: noch fünfeinhalb Stunden bis zum Wecker. Um zwei: noch viereinhalb. Um halb drei ist sie sicher: Den Abschluss schafft sie nie. Ihre beste Freundin mag sie eigentlich nicht. Mit ihr stimmt etwas grundsätzlich nicht. Um zehn Uhr morgens kommt ihr das alles übertrieben vor. Um halb drei hat es sich angefühlt wie die Wahrheit.",
           "frage": "Welche Nele hat recht – die von halb drei oder die von zehn?"
         },
         {
@@ -91,7 +91,7 @@ const d: Solo = {
             },
             {
               "t": "Nachts wird alles größer",
-              "x": "Nach Mitternacht ist der Teil des Gehirns müde, der Gedanken prüft. **Das Thema ist echt. Die Größe stimmt nicht.**"
+              "x": "Nachts, wenn du müde bist, arbeitet der Teil des Gehirns schlechter, der Gedanken prüft. **Das Thema ist echt. Die Größe stimmt nicht.**"
             },
             {
               "t": "Aufstehen schlägt Hinlegen",
@@ -175,6 +175,38 @@ const d: Solo = {
         },
         {
           "art": "fragen",
+          "titel": "Gedanken-Parkplatz",
+          "wie": "zusammen",
+          "zeit": "6 Min.",
+          "kontext": "Was nachts kommt, braucht tagsüber einen Platz. Schreib es **vor dem Schlafen** auf einen Zettel. Dann darf es bis morgen warten. Probier es hier einmal aus.",
+          "fragen": [
+            {
+              "f": "Ein Gedanke pro Zeile – nur, was du willst:",
+              "preis": {
+                "erste": "Thema",
+                "kopf": [
+                  "Was kommt nachts?",
+                  "Morgen tagsüber: Was tue ich? Wen frage ich?"
+                ],
+                "optionen": [
+                  "Schule oder Arbeit",
+                  "Freunde",
+                  "ich selbst"
+                ]
+              }
+            },
+            {
+              "f": "Mein Parkplatz heute Abend:",
+              "kreis": [
+                "Zettel neben dem Bett",
+                "ein Heft",
+                "Notiz im Handy – vor dem Hinlegen"
+              ]
+            }
+          ]
+        },
+        {
+          "art": "fragen",
           "titel": "Schlaf-Vergleich",
           "band": [
             "swords",
@@ -210,7 +242,7 @@ const d: Solo = {
         {
           "art": "experiment",
           "titel": "Raus aus dem Bett",
-          "x": "Liegst du **20 Minuten** wach: Steh auf – oder setz dich im Bett auf, wenn Aufstehen nachts nicht geht. Wenig Licht, etwas Langweiliges, kein Handy. Erst hinlegen, wenn du müde wirst. Drei Nächte. Wette vorher: Schläfst du am dritten Abend schneller ein?"
+          "x": "Liegst du gefühlt **20 Minuten** wach (nicht auf die Uhr schauen): Steh auf – oder setz dich im Bett auf, wenn Aufstehen nachts nicht geht. Wenig Licht, etwas Langweiliges, kein Handy. Erst hinlegen, wenn du müde wirst. Drei Nächte. Wette vorher: Schläfst du am dritten Abend schneller ein?"
         },
         {
           "art": "karten",
@@ -402,10 +434,11 @@ const d: Solo = {
     "hinweise": [
       "Seite 4: Das Experiment vorher mit der Wohngruppe oder der Familie abklären – nachts aufstehen ist nicht überall erlaubt. Ersatz: im Bett aufsetzen, Licht aus, ein Hörbuch ohne Bildschirm.",
       "Seite 2: Die Antwort auf die unbequeme Frage gehört oft in ein anderes Heft (Zuhause, Stimme im Kopf, Angst).",
-      "Medikamente, Koffein und Energy-Drinks am Nachmittag mitdenken und ohne Vorwurf erfragen."
+      "Medikamente, Koffein und Energy-Drinks am Nachmittag mitdenken und ohne Vorwurf erfragen.",
+      "Der „Gedanken-Parkplatz“ gibt dem Grübeln ein Werkzeug: Was nachts kommt, bekommt tagsüber einen Termin. Wird die Zeit knapp, ist das Video freiwillig."
     ],
-    "achtung": "Schlaflosigkeit ist bei belasteten Jugendlichen häufig mit Albträumen, nächtlicher Angst oder früheren Erfahrungen verbunden, bei denen die Nacht nicht sicher war (Stufe 3). Nicht ausfragen. Bei anhaltender Schlaflosigkeit, Albträumen oder nächtlichen Suizidgedanken ärztliche oder therapeutische Abklärung veranlassen und die zuständige Leitung (Responsable) einbeziehen. Schlafmittel sind kein Thema dieser Stunde.",
-    "hintergrund": "In der Pubertät verschiebt sich die innere Uhr nach hinten; empfohlen sind acht bis zehn Stunden Schlaf (Carskadon; Paruthi et al.). Das Bett nur zum Schlafen zu nutzen und bei längerem Wachliegen aufzustehen, ist ein Kernbaustein der wirksamsten Behandlung von Schlaflosigkeit (Bootzin). Nach Mitternacht sind Stimmung und Selbstkontrolle messbar schlechter, Grübeln und riskante Entscheidungen häufiger (Tubbs et al.). Feste Aufstehzeiten und Morgenlicht verschieben den Rhythmus von Jugendlichen wirksam nach vorn (Gradisar et al.).",
+    "achtung": "Schlaflosigkeit ist bei belasteten Jugendlichen häufig mit Albträumen, nächtlicher Angst oder früheren Erfahrungen verbunden, bei denen die Nacht nicht sicher war (Stufe 3). Nicht ausfragen. Bei anhaltender Schlaflosigkeit, Albträumen oder nächtlichen Suizidgedanken ärztliche oder therapeutische Abklärung veranlassen und die zuständige Leitung (Responsable) einbeziehen. Schlafmittel sind kein Thema dieser Stunde. Dem Jugendlichen mitgeben: Kanner-Jugendtelefon 116 111 (feste Zeiten), nachts im Notfall 112.",
+    "hintergrund": "In der Pubertät verschiebt sich die innere Uhr nach hinten; empfohlen sind ab 13 Jahren acht bis zehn Stunden Schlaf, mit 12 Jahren neun bis zwölf (Carskadon; Paruthi et al.). Das Bett nur zum Schlafen zu nutzen und bei längerem Wachliegen aufzustehen, ist ein Kernbaustein der wirksamsten Behandlung von Schlaflosigkeit (Bootzin). Nach Mitternacht sind Stimmung und Selbstkontrolle messbar schlechter, Grübeln und riskante Entscheidungen häufiger (Tubbs et al.). Feste Aufstehzeiten und Morgenlicht verschieben den Rhythmus von Jugendlichen wirksam nach vorn (Gradisar et al.).",
     "quellen": "Carskadon (2011) · Paruthi et al. (2016) · Bootzin (1972) · Tubbs et al. (2022) · Gradisar et al. (2011)."
   }
 }

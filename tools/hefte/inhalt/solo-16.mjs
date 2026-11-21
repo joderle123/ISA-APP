@@ -181,7 +181,7 @@ export const MODUL = {
    "o": [
     "„Ihr seid alle dumm.“",
     "„Das sage ich dem Erzieher.“",
-    "„Ich muss leider weg, sorry.“",
+    "„Na gut, aber nur kurz.“",
     "„Ich bin raus.“"
    ],
    "r": 3,
@@ -253,9 +253,10 @@ export const MODUL = {
   "hinweise": [
    "Seite 3: Zehn Punkte bei „ich“ sind genauso verdächtig wie null. Nachfragen: „Was hätten die anderen anders machen können?“",
    "Seite 4: Wiedergutmachung ist ein Angebot. Die geschädigte Person muss sie nicht annehmen – das vorher besprechen.",
-   "Rechtliche Fragen beantwortet eine Rechtsberatung, nicht dieses Heft."
+   "Rechtliche Fragen beantwortet eine Rechtsberatung, nicht dieses Heft.",
+   "„Bens Stopp-Stellen“ sucht die Momente, in denen man noch aussteigen kann, und übt den Satz dazu laut. „Der erste Satz“ bereitet das Wiedergutmachen vor – immer an einer kleinen Sache, nie an einem laufenden Verfahren. Wird die Zeit knapp, ist das Video freiwillig."
   ],
-  "achtung": "Klären Sie vor der Stunde, was Sie mit neuen Informationen über Straftaten tun müssen, und sagen Sie es dem Jugendlichen, bevor er erzählt. In laufenden Verfahren keine Einzelheiten der Tat erfragen. Lebt die geschädigte Person im selben Haus, geht deren Schutz vor; ein Kontakt wird nur mit ihr und der zuständigen Leitung (Responsable) vorbereitet. Wird der Jugendliche von Älteren unter Druck gesetzt oder für Taten benutzt, ist das ein Schutzthema. Starke Scham kann in Selbstverletzung oder Suizidgedanken umschlagen – nachfragen.",
+  "achtung": "Klären Sie vor der Stunde, was Sie mit neuen Informationen über Straftaten tun müssen, und sagen Sie es dem Jugendlichen, bevor er erzählt. In laufenden Verfahren keine Einzelheiten der Tat erfragen. Lebt die geschädigte Person im selben Haus, geht deren Schutz vor; ein Kontakt wird nur mit ihr und der zuständigen Leitung (Responsable) vorbereitet. Wird der Jugendliche von Älteren unter Druck gesetzt oder für Taten benutzt, ist das ein Schutzthema. Starke Scham kann in Selbstverletzung oder Suizidgedanken umschlagen – nachfragen und das Kanner-Jugendtelefon 116 111 nennen.",
   "videos": [
    {
     "fuer": "die Stunde",
@@ -339,7 +340,7 @@ export const LEKTIONEN = [{
   {
    "art": "tabelle",
    "auftrag": "**Wem gehört was? – Erst für Ben und den Roller, dann – wenn du willst – für eine eigene Sache. Je **zehn Punkte**.** – Zusammen je zehn: //(allein · 5 Min.)//",
-   "hoch": false,
+   "hoch": true,
    "kopf": [
     "Wer",
     "Ben",
@@ -362,10 +363,72 @@ export const LEKTIONEN = [{
      ""
     ],
     [
-     "die Umstände",
+     "die Umstände (Ort, Zeit, Zufall)",
      "",
      ""
     ]
+   ]
+  },
+  {
+   "art": "tabelle",
+   "auftrag": "**Bens Stopp-Stellen – Mist passiert selten in einer Sekunde. Es gibt mehrere Momente, in denen man noch aussteigen kann.** – Was denkt Ben hier – und was hätte er sagen oder tun können? //(zusammen · 7 Min.)//",
+   "hoch": true,
+   "kopf": [
+    "Moment",
+    "Ben denkt",
+    "Ausstieg"
+   ],
+   "breiten": [
+    36,
+    32,
+    32
+   ],
+   "zeilen": [
+    [
+     "Die zwei: „Komm, wir nehmen den Roller.“",
+     "",
+     ""
+    ],
+    [
+     "Einer sagt: „Du fährst.“",
+     "",
+     ""
+    ],
+    [
+     "Ben steigt auf.",
+     "",
+     ""
+    ],
+    [
+     "Der Erzieher will reden. Ben sagt: „War halt so.“",
+     "",
+     ""
+    ]
+   ]
+  },
+  {
+   "art": "mc",
+   "auftrag": "Dein Gegenüber spielt einen der zwei und drängt. Du sagst deinen Satz laut und gehst zur Tür. Mein Satz:",
+   "fragen": [
+    {
+     "f": "",
+     "o": [
+      "„Ich bin raus.“",
+      "„Ohne mich.“",
+      "„Kein Bock auf Ärger.“"
+     ],
+     "r": []
+    }
+   ]
+  },
+  {
+   "art": "fragen",
+   "auftrag": "",
+   "fragen": [
+    {
+     "f": "",
+     "zeilen": 1
+    }
    ]
   },
   {
@@ -420,30 +483,37 @@ export const LEKTIONEN = [{
    ]
   },
   {
-   "art": "tabelle",
-   "auftrag": "**Zwei Geschichten** – So viel, wie jeder sagen will: //(beide · 5 Min.)//",
-   "hoch": false,
-   "kopf": [
-    "Frage",
-    "du",
-    "Gegenüber"
-   ],
-   "breiten": [
-    36,
-    32,
-    32
-   ],
-   "zeilen": [
-    [
-     "Ein Mist, den ich gebaut habe",
-     "",
-     ""
-    ],
-    [
-     "So habe ich es wieder hingekriegt – oder nicht",
-     "",
-     ""
-    ]
+   "art": "mc",
+   "auftrag": "**Der erste Satz – Für das Experiment „Ein Stück zurück“: eine kleine Sache, nicht die mit der Anzeige. Du kannst auch für Ben planen.** – Welcher Schritt passt? Kreuze an: //(zusammen · 6 Min.)//",
+   "fragen": [
+    {
+     "f": "",
+     "o": [
+      "sagen: „Das war falsch von mir.“",
+      "etwas reparieren oder ersetzen",
+      "fragen: „Was brauchst du von mir?“",
+      "erst mal nur zuhören"
+     ],
+     "r": []
+    }
+   ]
+  },
+  {
+   "art": "fragen",
+   "auftrag": "Plan – dann sag den ersten Satz einmal laut zu deinem Gegenüber:",
+   "fragen": [
+    {
+     "f": "Mein erster Satz (ohne „aber“):",
+     "zeilen": 2
+    },
+    {
+     "f": "Wann und wo:",
+     "zeilen": 2
+    },
+    {
+     "f": "Wenn die Person nicht will, dann:",
+     "zeilen": 2
+    }
    ]
   }
  ],
@@ -522,16 +592,20 @@ export const LEKTIONEN = [{
   "nummern": false,
   "cases": [
    {
-    "erz": "Erst die Kopfhörer, jetzt das: Ben hat mit zwei anderen einen Roller „geliehen“. Die Idee kam nicht von ihm. Gefahren ist er.",
+    "erz": "Ben hatte dieses Jahr schon einmal Ärger. Jetzt hat er mit zwei anderen einen Roller genommen, der ihnen nicht gehört. Die Idee kam nicht von ihm. Gefahren ist er.",
     "bild": "ben:besorgt:stehen"
    },
    {
-    "erz": "Jetzt gibt es eine Anzeige, einen Termin, und seine Mutter redet seit vier Tagen nur das Nötigste. Der Erzieher will „darüber sprechen“.",
+    "erz": "Jetzt gibt es eine Anzeige. Ben hat bald einen Termin bei der Polizei. Seine Mutter redet seit vier Tagen kaum mit ihm. Der Erzieher sagt:",
     "bild": [
      "lehrer:neutral",
      "ben:wuetend"
     ],
     "blasen": [
+     [
+      "Erzieher",
+      "Wir müssen darüber reden."
+     ],
      [
       "Ben",
       "War halt so."
@@ -544,7 +618,7 @@ export const LEKTIONEN = [{
     "blasen": [
      [
       "Ben denkt",
-      "Jetzt bin ich endgültig der, für den mich alle halten. Dann kann ich auch gleich so weitermachen."
+      "Jetzt denken alle: Ben ist kriminell. Dann bin ich das eben. Dann mache ich so weiter."
      ]
     ]
    }
@@ -589,7 +663,7 @@ export const LEKTIONEN = [{
     "kanal": "Quarks",
     "dauer": "die ersten 5 Min.",
     "url": "https://www.youtube.com/watch?v=I40g6U3K7hc",
-    "frage": "Wie viel von deinem Mist hättest du auch allein gemacht?",
+    "frage": "Was machen Leute in der Gruppe, was sie allein nie machen würden?",
     "zeilen": 2
    },
    {

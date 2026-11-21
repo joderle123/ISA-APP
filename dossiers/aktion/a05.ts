@@ -86,10 +86,10 @@ const d: AktionsHeft = {
       ],
       zonen: [
         { art: 'comic', bilder: [
-          ['message', 'Morgens schreibt Finns Mutter: „Dieses Wochenende klappt es nicht.“'],
-          ['mood-silence', 'Den ganzen Tag sagt Finn keinem etwas.'],
-          ['tools-kitchen-2', 'Abends ruft der Erzieher: „Kommst du? Wir essen.“'],
-          ['bolt', 'Finn wirft den Teller an die Wand.'],
+          ['message', 'Freitag früh. Seit zwei Wochen freut Finn sich auf das Wochenende bei seiner Mutter. Dann ihre Nachricht: „Klappt diesmal nicht.“'],
+          ['mood-silence', 'In der Schule sagt Finn keinem etwas. Im Kopf: „War ja klar. Ich bin ihr egal.“'],
+          ['tools-kitchen-2', 'Abends sagt der Erzieher: „Finn, Handy weg. Wir essen.“'],
+          ['bolt', 'Finn wirft den Teller an die Wand. Alle denken: wegen dem Handy.'],
         ] },
         { art: 'fragen', fragen: [{ f: 'Was lag darunter?', raster: { spalten: ['Finn', 'ich', 'Gegenüber'], zeilen: GEFUEHLE } }] },
       ],

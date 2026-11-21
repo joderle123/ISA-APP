@@ -253,9 +253,10 @@ export const MODUL = {
   "hinweise": [
    "Seite 4: Das Experiment vorher mit der Wohngruppe oder der Familie abklären – nachts aufstehen ist nicht überall erlaubt. Ersatz: im Bett aufsetzen, Licht aus, ein Hörbuch ohne Bildschirm.",
    "Seite 2: Die Antwort auf die unbequeme Frage gehört oft in ein anderes Heft (Zuhause, Stimme im Kopf, Angst).",
-   "Medikamente, Koffein und Energy-Drinks am Nachmittag mitdenken und ohne Vorwurf erfragen."
+   "Medikamente, Koffein und Energy-Drinks am Nachmittag mitdenken und ohne Vorwurf erfragen.",
+   "Der „Gedanken-Parkplatz“ gibt dem Grübeln ein Werkzeug: Was nachts kommt, bekommt tagsüber einen Termin. Wird die Zeit knapp, ist das Video freiwillig."
   ],
-  "achtung": "Schlaflosigkeit ist bei belasteten Jugendlichen häufig mit Albträumen, nächtlicher Angst oder früheren Erfahrungen verbunden, bei denen die Nacht nicht sicher war (Stufe 3). Nicht ausfragen. Bei anhaltender Schlaflosigkeit, Albträumen oder nächtlichen Suizidgedanken ärztliche oder therapeutische Abklärung veranlassen und die zuständige Leitung (Responsable) einbeziehen. Schlafmittel sind kein Thema dieser Stunde.",
+  "achtung": "Schlaflosigkeit ist bei belasteten Jugendlichen häufig mit Albträumen, nächtlicher Angst oder früheren Erfahrungen verbunden, bei denen die Nacht nicht sicher war (Stufe 3). Nicht ausfragen. Bei anhaltender Schlaflosigkeit, Albträumen oder nächtlichen Suizidgedanken ärztliche oder therapeutische Abklärung veranlassen und die zuständige Leitung (Responsable) einbeziehen. Schlafmittel sind kein Thema dieser Stunde. Dem Jugendlichen mitgeben: Kanner-Jugendtelefon 116 111 (feste Zeiten), nachts im Notfall 112.",
   "videos": [
    {
     "fuer": "die Stunde",
@@ -265,7 +266,7 @@ export const MODUL = {
     "url": "https://www.youtube.com/watch?v=kY5rFRU8A1c"
    }
   ],
-  "hintergrund": "In der Pubertät verschiebt sich die innere Uhr nach hinten; empfohlen sind acht bis zehn Stunden Schlaf (Carskadon; Paruthi et al.). Das Bett nur zum Schlafen zu nutzen und bei längerem Wachliegen aufzustehen, ist ein Kernbaustein der wirksamsten Behandlung von Schlaflosigkeit (Bootzin). Nach Mitternacht sind Stimmung und Selbstkontrolle messbar schlechter, Grübeln und riskante Entscheidungen häufiger (Tubbs et al.). Feste Aufstehzeiten und Morgenlicht verschieben den Rhythmus von Jugendlichen wirksam nach vorn (Gradisar et al.).",
+  "hintergrund": "In der Pubertät verschiebt sich die innere Uhr nach hinten; empfohlen sind ab 13 Jahren acht bis zehn Stunden Schlaf, mit 12 Jahren neun bis zwölf (Carskadon; Paruthi et al.). Das Bett nur zum Schlafen zu nutzen und bei längerem Wachliegen aufzustehen, ist ein Kernbaustein der wirksamsten Behandlung von Schlaflosigkeit (Bootzin). Nach Mitternacht sind Stimmung und Selbstkontrolle messbar schlechter, Grübeln und riskante Entscheidungen häufiger (Tubbs et al.). Feste Aufstehzeiten und Morgenlicht verschieben den Rhythmus von Jugendlichen wirksam nach vorn (Gradisar et al.).",
   "quellen": "Carskadon (2011) · Paruthi et al. (2016) · Bootzin (1972) · Tubbs et al. (2022) · Gradisar et al. (2011)."
  }
 }
@@ -391,6 +392,53 @@ export const LEKTIONEN = [{
   },
   {
    "art": "tabelle",
+   "auftrag": "**Gedanken-Parkplatz – Was nachts kommt, braucht tagsüber einen Platz. Schreib es **vor dem Schlafen** auf einen Zettel. Dann darf es bis morgen warten. Probier es hier einmal aus.** – Ein Gedanke pro Zeile – nur, was du willst: //(zusammen · 6 Min.)//",
+   "hoch": true,
+   "kopf": [
+    "Thema",
+    "Was kommt nachts?",
+    "Morgen tagsüber: Was tue ich? Wen frage ich?"
+   ],
+   "breiten": [
+    36,
+    32,
+    32
+   ],
+   "zeilen": [
+    [
+     "Schule oder Arbeit",
+     "",
+     ""
+    ],
+    [
+     "Freunde",
+     "",
+     ""
+    ],
+    [
+     "ich selbst",
+     "",
+     ""
+    ]
+   ]
+  },
+  {
+   "art": "mc",
+   "auftrag": "Mein Parkplatz heute Abend:",
+   "fragen": [
+    {
+     "f": "",
+     "o": [
+      "Zettel neben dem Bett",
+      "ein Heft",
+      "Notiz im Handy – vor dem Hinlegen"
+     ],
+     "r": []
+    }
+   ]
+  },
+  {
+   "art": "tabelle",
    "auftrag": "**Schlaf-Vergleich** – Erst raten, was der andere schreibt – dann aufdecken: //(beide · 5 Min.)//",
    "hoch": false,
    "kopf": [
@@ -454,7 +502,7 @@ export const LEKTIONEN = [{
  "schreiben": [
   {
    "art": "schreiben",
-   "auftrag": "Experiment bis zum nächsten Mal: **Raus aus dem Bett.** Liegst du **20 Minuten** wach: Steh auf – oder setz dich im Bett auf, wenn Aufstehen nachts nicht geht. Wenig Licht, etwas Langweiliges, kein Handy. Erst hinlegen, wenn du müde wirst. Drei Nächte. Wette vorher: Schläfst du am dritten Abend schneller ein?",
+   "auftrag": "Experiment bis zum nächsten Mal: **Raus aus dem Bett.** Liegst du gefühlt **20 Minuten** wach (nicht auf die Uhr schauen): Steh auf – oder setz dich im Bett auf, wenn Aufstehen nachts nicht geht. Wenig Licht, etwas Langweiliges, kein Handy. Erst hinlegen, wenn du müde wirst. Drei Nächte. Wette vorher: Schläfst du am dritten Abend schneller ein?",
    "zeilen": 5,
    "zeilenAnfaenge": [
     "Meine Wette:",
@@ -489,7 +537,7 @@ export const LEKTIONEN = [{
   "Ich weiß, mit wem ich reden kann, wenn es schwer wird."
  ],
  "lesen": {
-  "was": "Zwei Dinge vom Flyer – diesmal mit Grund. Und eins, das dort fehlt",
+  "was": "Zwei Tipps, die du kennst – diesmal mit Grund. Und einer, der meistens fehlt",
   "art": "bd",
   "ohneAudio": true,
   "spalten": 3,
@@ -497,7 +545,7 @@ export const LEKTIONEN = [{
   "nummern": false,
   "cases": [
    {
-    "erz": "Nele liegt seit halb zwölf im Bett. Um eins rechnet sie: noch fünfeinhalb Stunden. Um zwei: noch viereinhalb.",
+    "erz": "Nele liegt seit halb zwölf im Bett. Um eins rechnet sie: noch fünfeinhalb Stunden bis zum Wecker. Um zwei: noch viereinhalb.",
     "bild": "nele:muede"
    },
    {
@@ -513,7 +561,7 @@ export const LEKTIONEN = [{
    {
     "erz": "Um zehn Uhr morgens kommt ihr das alles übertrieben vor.",
     "bild": "nele:ruhig",
-    "nach": "Um halb drei war es die Wahrheit."
+    "nach": "Um halb drei hat es sich angefühlt wie die Wahrheit."
    }
   ],
   "woerter": [
@@ -576,7 +624,7 @@ export const LEKTIONEN = [{
     },
     {
      "titel": "Nachts wird alles größer",
-     "text": "Nach Mitternacht ist der Teil des Gehirns müde, der Gedanken prüft. **Das Thema ist echt. Die Größe stimmt nicht.**"
+     "text": "Nachts, wenn du müde bist, arbeitet der Teil des Gehirns schlechter, der Gedanken prüft. **Das Thema ist echt. Die Größe stimmt nicht.**"
     }
    ],
    [

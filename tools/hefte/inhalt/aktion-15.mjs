@@ -183,7 +183,7 @@ export const MODUL = {
     {
      "art": "frei",
      "auftrag": "",
-     "html": "<div class=\"ak-comic\" style=\"grid-template-columns:repeat(4,1fr)\"><div><div class=\"o\"><b>1</b>{i:school}</div><p>Lea steht auf, geht zur Schule, lacht in der Pause.</p></div><div><div class=\"o\"><b>2</b>{i:bed}</div><p>Nachmittags liegt sie auf dem Bett und schaut an die Decke.</p></div><div><div class=\"o\"><b>3</b>{i:pencil-off}</div><p>Früher hat sie gezeichnet. Die Stifte liegen seit Februar in der Schublade.</p></div><div><div class=\"o\"><b>4</b>{i:message-circle}</div><p>Wenn jemand fragt, sagt sie: „Bin nur müde.“</p></div></div>"
+     "html": "<div class=\"ak-comic\" style=\"grid-template-columns:repeat(4,1fr)\"><div><div class=\"o\"><b>1</b>{i:school}</div><p>Lea steht auf, geht zur Schule, lacht in der Pause.</p></div><div><div class=\"o\"><b>2</b>{i:bed}</div><p>Nachmittags liegt sie auf dem Bett und schaut an die Decke.</p></div><div><div class=\"o\"><b>3</b>{i:pencil-off}</div><p>Früher hat sie gezeichnet. Die Stifte liegen seit Februar in der Schublade.</p></div><div><div class=\"o\"><b>4</b>{i:message-circle}</div><p>Wenn jemand fragt, sagt sie: „Bin nur müde.“ Innen fühlt sie: nichts.</p></div></div>"
     },
     {
      "art": "mc",
@@ -291,10 +291,10 @@ export const MODUL = {
     {
      "art": "frei",
      "auftrag": "",
-     "html": "<div class=\"ak-daumen\"><div class=\"k\"><span></span><b>du</b><b>Gegenüber</b></div><div><span>So etwas kenne ich – von mir oder von anderen.</span><em>{i:thumb-up}{i:thumb-down}</em><em>{i:thumb-up}{i:thumb-down}</em></div><div><span>Das ist ein Zustand, keine Faulheit.</span><em>{i:thumb-up}{i:thumb-down}</em><em>{i:thumb-up}{i:thumb-down}</em></div><div><span>Darüber reden macht es schlimmer.</span><em>{i:thumb-up}{i:thumb-down}</em><em>{i:thumb-up}{i:thumb-down}</em></div><div><span>Es geht vorbei.</span><em>{i:thumb-up}{i:thumb-down}</em><em>{i:thumb-up}{i:thumb-down}</em></div></div>"
+     "html": "<div class=\"ak-daumen\"><div class=\"k\"><span></span><b>du</b><b>Gegenüber</b></div><div><span>So etwas kenne ich – von mir oder von anderen.</span><em>{i:thumb-up}{i:thumb-down}</em><em>{i:thumb-up}{i:thumb-down}</em></div><div><span>Das ist ein Zustand, keine Faulheit.</span><em>{i:thumb-up}{i:thumb-down}</em><em>{i:thumb-up}{i:thumb-down}</em></div><div><span>Darüber reden macht es schlimmer.</span><em>{i:thumb-up}{i:thumb-down}</em><em>{i:thumb-up}{i:thumb-down}</em></div><div><span>Es geht meistens vorbei.</span><em>{i:thumb-up}{i:thumb-down}</em><em>{i:thumb-up}{i:thumb-down}</em></div></div>"
     }
    ],
-   "aha": "Hält es wochenlang an, heißt es depressive Verstimmung. **Sie ist häufig. Und sie geht vorbei – mit Hilfe meist schneller.**",
+   "aha": "Hält es wochenlang an, heißt es depressive Verstimmung. **Sie ist häufig. Und meistens geht sie vorbei – mit Hilfe schneller.**",
    "ziel": "Einen Namen und eine Aussicht haben.",
    "tipp": "Das Video vorher selbst ansehen – wir haben nur Titel und Kanal geprüft. Satz 3 ist falsch: Reden entlastet."
   },
@@ -553,7 +553,7 @@ export const MODUL = {
  },
  "begleitungAktion": {
   "material": "Handy, Stifte, je nach Auswahl Tee oder ein Spiel",
-  "achtung": "**Nennt der Jugendliche Suizidgedanken:** ruhig bleiben, danken, nachfragen (Wie oft? Gibt es einen Plan? Ein Mittel? Einen Zeitpunkt?). Nie Verschwiegenheit zusagen. Ihm sagen, mit wem Sie jetzt sprechen. Sofort nach dem Krisenverfahren der Einrichtung handeln und die zuständige Leitung (Responsable) einbeziehen; bei akuter Gefahr nicht allein lassen und den Notruf 112 wählen. **In jedem Fall** bei anhaltender Leere, Schlaf- und Essstörungen oder Selbstverletzung eine kinder- und jugendpsychiatrische oder psychotherapeutische Abklärung veranlassen. Nach der Stunde das Team informieren, dass das Thema bewegt wurde.",
+  "achtung": "**Nennt der Jugendliche Suizidgedanken:** ruhig bleiben, danken, nachfragen (Wie oft? Gibt es einen Plan? Ein Mittel? Einen Zeitpunkt?). Nie Verschwiegenheit zusagen. Ihm sagen, mit wem Sie jetzt sprechen. Sofort nach dem Krisenverfahren der Einrichtung handeln und die zuständige Leitung (Responsable) einbeziehen; bei akuter Gefahr nicht allein lassen und den Notruf 112 wählen. Mit dem Team klären, ob Medikamente, Klingen o. Ä. zugänglich sind, und sie sichern. **In jedem Fall** bei anhaltender Leere, Schlaf- und Essstörungen oder Selbstverletzung eine kinder- und jugendpsychiatrische oder psychotherapeutische Abklärung veranlassen. Nach der Stunde das Team informieren, dass das Thema bewegt wurde.",
   "mehr": "Fall, Hintergrund, Quiz und Gesprächsfragen stehen im Heft SOLO #15 Leer."
  }
 }

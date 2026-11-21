@@ -141,7 +141,7 @@ export const MODUL = {
     "ein Rabatt"
    ],
    "r": 2,
-   "warum": "Unregelmäßige Belohnung gegen Geld."
+   "warum": "Zufällige Belohnung – oft gegen echtes Geld."
   },
   {
    "f": "Ist jemand süchtig, weil er viele Stunden spielt?",
@@ -174,7 +174,7 @@ export const MODUL = {
     "bessere Noten"
    ],
    "r": 2,
-   "warum": "Drei Leute schreiben: „Endlich.“"
+   "warum": "Drei Leute schreiben: „Endlich! Ohne dich verlieren wir.“"
   },
   {
    "f": "Was hilft am ehesten, rechtzeitig aufzuhören?",
@@ -257,9 +257,10 @@ export const MODUL = {
   "hinweise": [
    "Seite 3: Die sechs Sätze sind an die Merkmale der Computerspielstörung angelehnt, aber kein Fragebogen.",
    "Seite 4: Der Stopp-Test braucht eine zweite Person, die den Zeitpunkt kennt – am besten wählt der Jugendliche sie selbst.",
-   "Für Jugendliche, die nicht spielen: Das Heft funktioniert auch mit Serien oder Kurzvideos."
+   "Für Jugendliche, die nicht spielen: Das Heft funktioniert auch mit Serien oder Kurzvideos.",
+   "„Wo gibt es das noch?“ sucht, was das Spiel gibt, auch außerhalb. „Der Moment, wo es kippt“ geht einen echten Abend durch und übt den Satz zum Aussteigen laut. Wird die Zeit knapp, ist das Video freiwillig."
   ],
-  "achtung": "Erzählt der Jugendliche selbst von mehreren „oft“ über viele Monate, oder bei Schulabbruch oder völligem Rückzug: fachliche Abklärung anregen (Kinder- und Jugendpsychiatrie, Suchtberatung). Auf Geld achten (Käufe im Spiel, Schulden, fremde Karten) und auf Kontakte: Erwachsene, die Geschenke machen oder in private Chats wechseln wollen, sind ein Grund, sofort die zuständige Leitung (Responsable) einzubeziehen. Spielen als Flucht vor einer unerträglichen Lage zu Hause ist kein Spielproblem.",
+  "achtung": "Erzählt der Jugendliche selbst von mehreren „oft“ über viele Monate, oder bei Schulabbruch oder völligem Rückzug: fachliche Abklärung anregen (Kinder- und Jugendpsychiatrie, Suchtberatung). Auf Geld achten (Käufe im Spiel, Schulden, fremde Karten) und auf Kontakte: Erwachsene, die Geschenke machen oder in private Chats wechseln wollen, sind ein Grund, sofort die zuständige Leitung (Responsable) einzubeziehen. Beratung: BEE SECURE Helpline 8002 1234; bei Erpressung oder akuter Gefahr Polizei 113. Spielen als Flucht vor einer unerträglichen Lage zu Hause ist kein Spielproblem.",
   "videos": [
    {
     "fuer": "die Stunde",
@@ -387,7 +388,55 @@ export const LEKTIONEN = [{
   },
   {
    "art": "tabelle",
-   "auftrag": "**Der ehrliche Check – Sechs Sätze, die auch Ärzte fragen. Du wertest aus.** – Kreuze an: //(allein · 4 Min.)//",
+   "auftrag": "**Wo gibt es das noch? – Das Spiel gibt dir etwas Echtes. Die Frage ist nur: Bekommst du es **nur** dort?** – Schreib auf, auch kleine Sachen: //(zusammen · 6 Min.)//",
+   "hoch": true,
+   "kopf": [
+    "Im Spiel …",
+    "So ist es im Spiel",
+    "Wo noch? Bei wem?"
+   ],
+   "breiten": [
+    36,
+    32,
+    32
+   ],
+   "zeilen": [
+    [
+     "werde ich besser",
+     "",
+     ""
+    ],
+    [
+     "entscheide ich selbst",
+     "",
+     ""
+    ],
+    [
+     "brauchen mich Leute",
+     "",
+     ""
+    ]
+   ]
+  },
+  {
+   "art": "mc",
+   "auftrag": "Wo hättest du gern mehr davon? Kreuze an:",
+   "fragen": [
+    {
+     "f": "",
+     "o": [
+      "Schule oder Arbeit",
+      "Freunde",
+      "Sport oder Hobby",
+      "hier, in der Bezugszeit"
+     ],
+     "r": []
+    }
+   ]
+  },
+  {
+   "art": "tabelle",
+   "auftrag": "**Der ehrliche Check – Sechs Sätze, ähnlich wie Fachleute sie fragen. Kein Test. Schau nur: Wo steht ein „oft“? Da lohnt es sich hinzuschauen.** – Kreuze an: //(allein · 4 Min.)//",
    "kopf": [
     "",
     "nie",
@@ -446,6 +495,53 @@ export const LEKTIONEN = [{
     {
      "f": "Das würde ich selbst gern ändern:",
      "zeilen": 2
+    }
+   ]
+  },
+  {
+   "art": "fragen",
+   "auftrag": "**Der Moment, wo es kippt – Denk an den letzten Abend, an dem du länger gespielt hast als geplant. Lieber nicht? Nimm jemanden, den du kennst.** – Schritt für Schritt: //(allein · 6 Min.)//",
+   "fragen": [
+    {
+     "f": "Geplant war Schluss um:",
+     "zeilen": 2
+    },
+    {
+     "f": "Wirklich Schluss war um:",
+     "zeilen": 2
+    },
+    {
+     "f": "Da habe ich weitergemacht, weil (Niederlage, Leute warten, „nur noch eine“ …):",
+     "zeilen": 2
+    },
+    {
+     "f": "Liegen geblieben ist:",
+     "zeilen": 2
+    }
+   ]
+  },
+  {
+   "art": "mc",
+   "auftrag": "Mein Satz zum Aussteigen, wenn die anderen warten. Sag ihn einmal laut:",
+   "fragen": [
+    {
+     "f": "",
+     "o": [
+      "„Letzte Runde, dann bin ich off.“",
+      "„Muss los. Morgen wieder.“",
+      "„Ich bin raus – GG.“"
+     ],
+     "r": []
+    }
+   ]
+  },
+  {
+   "art": "fragen",
+   "auftrag": "",
+   "fragen": [
+    {
+     "f": "",
+     "zeilen": 1
     }
    ]
   },
@@ -557,11 +653,11 @@ export const LEKTIONEN = [{
   "nummern": false,
   "cases": [
    {
-    "erz": "Im Clan ist Noah der, auf den man sich verlässt. 3.000 Stunden, hoher Rang, sein Call entscheidet die Runde.",
+    "erz": "Im Clan ist Noah der, auf den man sich verlässt. 3.000 Stunden, hoher Rang, seine Ansage entscheidet die Runde.",
     "bild": "noah:stolz:zocken"
    },
    {
-    "erz": "In der Schule ist er der, der fehlt. Am Dienstag sagt die Lehrerin:",
+    "erz": "In der Schule fehlt er oft. Am Dienstag sagt die Lehrerin:",
     "bild": [
      "lehrerin:neutral",
      "noah:gelangweilt"
@@ -573,7 +669,7 @@ export const LEKTIONEN = [{
      ],
      [
       "Noah denkt",
-      "Ich will ja. Nur nicht hier."
+      "Ich will ja gut sein. Nur nicht hier."
      ]
     ]
    },
@@ -583,7 +679,7 @@ export const LEKTIONEN = [{
     "blasen": [
      [
       "Chat",
-      "Endlich."
+      "Endlich! Ohne dich verlieren wir."
      ]
     ]
    }

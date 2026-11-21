@@ -82,7 +82,7 @@ const d: Solo = {
           "art": "szene",
           "bild": "peep:yusuf:neutral",
           "name": "Yusuf, 16",
-          "text": "Der Meister schickt Yusuf zum Berufsberater. Der fragt: „Wo siehst du dich in fünf Jahren?“ Yusuf sagt: „Keine Ahnung.“ Der Berater seufzt und schreibt etwas auf. Was Yusuf nicht sagt: Er hat einen Plan. Mechatroniker, eine eigene Wohnung – und dass seine kleine Schwester bei ihm essen kann, wenn es zu Hause knallt. Er sagt es nicht, weil das letzte Mal jemand gelacht hat.",
+          "text": "Yusuf macht ein Praktikum in einer Werkstatt. Der Meister dort schickt ihn zum Berufsberater. Der fragt: „Wo siehst du dich in fünf Jahren?“ Yusuf sagt: „Keine Ahnung.“ Der Berater seufzt und schreibt etwas auf. Was Yusuf nicht sagt: Er hat einen Plan. Mechatroniker, eine eigene Wohnung – und dass seine kleine Schwester bei ihm essen kann, wenn es zu Hause Streit gibt. Er sagt es nicht, weil das letzte Mal jemand gelacht hat.",
           "frage": "Yusuf hat einen Plan. Warum sagt er „Keine Ahnung“?"
         },
         {
@@ -91,7 +91,7 @@ const d: Solo = {
           "fakten": [
             {
               "t": "Keiner weiß es so früh",
-              "x": "Die wenigsten Erwachsenen machen das, was sie mit 15 im Kopf hatten. **Du musst nicht wissen, was du wirst. Nur, was du als Nächstes ausprobierst.**"
+              "x": "Viele Erwachsene machen heute etwas ganz anderes, als sie mit 15 dachten. **Du musst nicht wissen, was du wirst. Nur, was du als Nächstes ausprobierst.**"
             },
             {
               "t": "Du in zehn Jahren: ein Fremder",
@@ -164,6 +164,33 @@ const d: Solo = {
                   "in diesem Monat"
                 ]
               }
+            }
+          ]
+        },
+        {
+          "art": "fragen",
+          "titel": "Den Plan sagen",
+          "wie": "zusammen",
+          "zeit": "6 Min.",
+          "kontext": "Yusuf sagt „Keine Ahnung“, weil schon mal jemand gelacht hat. Hier übst du, einen Plan laut zu sagen – deinen oder einen ausgedachten.",
+          "fragen": [
+            {
+              "f": "Mein Plan in drei Sätzen:",
+              "satz": [
+                "Ich will …",
+                "Das ist mir dabei wichtig:",
+                "Mein nächster Schritt:"
+              ]
+            },
+            {
+              "f": "Dein Gegenüber spielt den Berater und sagt: „Sei mal realistisch.“ Du antwortest laut. Welcher Satz passt zu dir?",
+              "unter": true,
+              "kreuz": [
+                "„Kann sein. Was bräuchte ich dafür?“",
+                "„Mein nächster Schritt ist trotzdem: …“",
+                "„Darüber rede ich lieber mit jemand anderem.“"
+              ],
+              "linien": 1
             }
           ]
         },
@@ -397,9 +424,10 @@ const d: Solo = {
       "Seite 1: Eine 0 oder 1 bei „dass es gut wird“ wiegt so schwer wie „Für mich gibt es kein Später“ – ruhig nachfragen.",
       "Seite 3: Der „Dienstag“ zeigt oft mehr über Bedürfnisse (Ruhe, eigene Tür, bestimmte Menschen) als über Berufe.",
       "Seite 4: Die Karte „Wer mir helfen kann“ beim nächsten Mal ansehen: Ist die Person gefragt worden?",
-      "Praktische Schritte (Bewerbung, Termine) gehören in eine eigene Stunde."
+      "Praktische Schritte (Bewerbung, Termine) gehören in eine eigene Stunde.",
+      "„Den Plan sagen“ übt, was Yusuf nicht konnte: einen Plan laut sagen, auch wenn jemand zweifelt. Wird die Zeit knapp, ist das Video freiwillig (es steht auch im Aktionsheft)."
     ],
-    "achtung": "Sätze wie „Ich werde eh nicht alt“ oder „Für mich gibt es kein Später“ sind keine Coolness, sondern ein Warnsignal: ruhig und direkt nach Suizidgedanken fragen und nach dem Verfahren der Einrichtung handeln. Offene Verfahren, Schulden oder ein unsicherer Aufenthalt begrenzen Pläne tatsächlich – das ehrlich benennen, statt es wegzureden, und klären, wer dabei hilft.",
+    "achtung": "Sätze wie „Ich werde eh nicht alt“ oder „Für mich gibt es kein Später“ sind keine Coolness, sondern ein Warnsignal: ruhig und direkt nach Suizidgedanken fragen und nach dem Verfahren der Einrichtung handeln (siehe SOLO #15; bei akuter Gefahr 112). Offene Verfahren, Schulden oder ein unsicherer Aufenthalt begrenzen Pläne tatsächlich – das ehrlich benennen, statt es wegzureden, und klären, wer dabei hilft.",
     "hintergrund": "Konkrete Vorstellungen vom eigenen späteren Leben, verbunden mit nächsten Schritten, verbessern Schulbindung und Verhalten (Oyserman et al.). Menschen erleben ihr zukünftiges Selbst ähnlich wie eine fremde Person; je vertrauter es wird, desto eher handeln sie vorausschauend (Hershfield). In Langzeitstudien entwickelte sich die Mehrheit auch stark belasteter Kinder zu stabilen Erwachsenen, häufig nach Wendepunkten wie einer verlässlichen Bezugsperson oder einer Arbeit (Werner & Smith; Sampson & Laub). Hoffnung besteht aus Zielen, Wegen und dem Zutrauen, sie zu gehen (Snyder).",
     "quellen": "Oyserman, Bybee & Terry (2006) · Hershfield (2011) · Werner & Smith (1992) · Sampson & Laub (1993) · Snyder (2002)."
   }

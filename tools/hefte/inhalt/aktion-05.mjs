@@ -314,7 +314,7 @@ export const MODUL = {
     {
      "art": "frei",
      "auftrag": "",
-     "html": "<div class=\"ak-comic\" style=\"grid-template-columns:repeat(4,1fr)\"><div><div class=\"o\"><b>1</b>{i:message}</div><p>Morgens schreibt Finns Mutter: „Dieses Wochenende klappt es nicht.“</p></div><div><div class=\"o\"><b>2</b>{i:mood-silence}</div><p>Den ganzen Tag sagt Finn keinem etwas.</p></div><div><div class=\"o\"><b>3</b>{i:tools-kitchen-2}</div><p>Abends ruft der Erzieher: „Kommst du? Wir essen.“</p></div><div><div class=\"o\"><b>4</b>{i:bolt}</div><p>Finn wirft den Teller an die Wand.</p></div></div>"
+     "html": "<div class=\"ak-comic\" style=\"grid-template-columns:repeat(4,1fr)\"><div><div class=\"o\"><b>1</b>{i:message}</div><p>Freitag früh. Seit zwei Wochen freut Finn sich auf das Wochenende bei seiner Mutter. Dann ihre Nachricht: „Klappt diesmal nicht.“</p></div><div><div class=\"o\"><b>2</b>{i:mood-silence}</div><p>In der Schule sagt Finn keinem etwas. Im Kopf: „War ja klar. Ich bin ihr egal.“</p></div><div><div class=\"o\"><b>3</b>{i:tools-kitchen-2}</div><p>Abends sagt der Erzieher: „Finn, Handy weg. Wir essen.“</p></div><div><div class=\"o\"><b>4</b>{i:bolt}</div><p>Finn wirft den Teller an die Wand. Alle denken: wegen dem Handy.</p></div></div>"
     },
     {
      "art": "tabelle",

@@ -193,7 +193,7 @@ export const MODUL = {
     {
      "art": "frei",
      "auftrag": "",
-     "html": "<div class=\"ak-comic\" style=\"grid-template-columns:repeat(4,1fr)\"><div><div class=\"o\"><b>1</b>{i:swimming}</div><p>Im Schwimmbad ist Sami der Lauteste – und der Einzige im T-Shirt.</p></div><div><div class=\"o\"><b>2</b>{i:device-mobile}</div><p>Zu Hause schaut er Videos von Typen mit Bauchmuskeln.</p></div><div><div class=\"o\"><b>3</b>{i:tools-kitchen-2}</div><p>Beim Essen ist er als Erster fertig: „Kein Hunger.“</p></div><div><div class=\"o\"><b>4</b>{i:message-circle}</div><p>Seine Schwester sagt: „Du bist doch ganz normal.“ Das Wort hasst er.</p></div></div>"
+     "html": "<div class=\"ak-comic\" style=\"grid-template-columns:repeat(4,1fr)\"><div><div class=\"o\"><b>1</b>{i:swimming}</div><p>Im Schwimmbad ist Sami der Lauteste – und der Einzige im T-Shirt. Er denkt: „Alle schauen auf meinen Bauch.“</p></div><div><div class=\"o\"><b>2</b>{i:device-mobile}</div><p>Zu Hause schaut er Videos von Typen mit Bauchmuskeln.</p></div><div><div class=\"o\"><b>3</b>{i:tools-kitchen-2}</div><p>Beim Essen ist er als Erster fertig: „Kein Hunger.“</p></div><div><div class=\"o\"><b>4</b>{i:message-circle}</div><p>Seine Schwester sagt: „Du bist doch ganz normal.“ Das Wort hasst er.</p></div></div>"
     },
     {
      "art": "mc",
@@ -353,9 +353,9 @@ export const MODUL = {
      "html": "<div class=\"ak-daumen\"><div class=\"k\"><span></span><b>du</b><b>Gegenüber</b></div><div><span>Bilder im Netz sind bearbeitet. Das weiß ich.</span><em>{i:thumb-up}{i:thumb-down}</em><em>{i:thumb-up}{i:thumb-down}</em></div><div><span>Sie wirken trotzdem auf mich.</span><em>{i:thumb-up}{i:thumb-down}</em><em>{i:thumb-up}{i:thumb-down}</em></div><div><span>Das betrifft nur Mädchen.</span><em>{i:thumb-up}{i:thumb-down}</em><em>{i:thumb-up}{i:thumb-down}</em></div><div><span>Ich folge Accounts, nach denen es mir schlechter geht.</span><em>{i:thumb-up}{i:thumb-down}</em><em>{i:thumb-up}{i:thumb-down}</em></div></div>"
     }
    ],
-   "aha": "Der Vergleich ist gezinkt. **Er wirkt trotzdem – auch wenn du es weißt.**",
+   "aha": "Der Vergleich ist unfair. **Er wirkt trotzdem – auch wenn du es weißt.**",
    "ziel": "Wissen und Wirkung auseinanderhalten.",
-   "tipp": "Das Video vorher selbst ansehen – wir haben nur Titel und Kanal geprüft. Satz 3 ist falsch: Jungen betrifft es genauso."
+   "tipp": "Das Video vorher selbst ansehen – wir haben nur Titel und Kanal geprüft. Satz 3 ist falsch: Jungen betrifft es auch."
   },
   {
    "titel": "Was ich lasse",

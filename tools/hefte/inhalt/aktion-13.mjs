@@ -90,7 +90,7 @@ export const MODUL = {
     {
      "art": "frei",
      "auftrag": "",
-     "html": "<div class=\"ak-comic\" style=\"grid-template-columns:repeat(4,1fr)\"><div><div class=\"o\"><b>1</b>{i:calendar}</div><p>Samstag ist Besuchstag. Janas Mutter hat versprochen zu kommen.</p></div><div><div class=\"o\"><b>2</b>{i:message-circle}</div><p>Um vier schreibt sie: „Schaff es heute nicht, Schatz.“</p></div><div><div class=\"o\"><b>3</b>{i:milk}</div><p>Jana schreibt: „Kein Problem.“ Dann streitet sie wegen eines Joghurts.</p></div><div><div class=\"o\"><b>4</b>{i:bolt}</div><p>Abends sagt ein Mädchen: „Deine Mutter ist das Letzte.“ Jana geht auf sie los.</p></div></div>"
+     "html": "<div class=\"ak-comic\" style=\"grid-template-columns:repeat(4,1fr)\"><div><div class=\"o\"><b>1</b>{i:calendar}</div><p>Samstag ist Besuchstag. Janas Mutter hat versprochen zu kommen.</p></div><div><div class=\"o\"><b>2</b>{i:message-circle}</div><p>Um vier schreibt sie: „Schaff es heute nicht, Schatz.“</p></div><div><div class=\"o\"><b>3</b>{i:milk}</div><p>Jana schreibt: „Kein Problem.“ Aber sie ist tief enttäuscht. Später streitet sie – nur wegen eines Joghurts.</p></div><div><div class=\"o\"><b>4</b>{i:bolt}</div><p>Abends sagt ein Mädchen: „Deine Mutter ist das Letzte.“ Jana geht auf sie los.</p></div></div>"
     },
     {
      "art": "mc",
@@ -547,7 +547,7 @@ export const MODUL = {
  },
  "begleitungAktion": {
   "material": "Stifte, Rucksack, Bücher",
-  "achtung": "Schildert der Jugendliche aktuelle Gewalt, Vernachlässigung oder Übergriffe zu Hause – bei sich oder bei Geschwistern –, gilt das Verfahren der Einrichtung zum Kinderschutz; die zuständige Leitung (Responsable) sofort einbeziehen und dem Jugendlichen vorher sagen, was Sie tun. Nicht nachbohren, wenn er abbricht. Nach dieser Stunde kann die Stimmung kippen: das Team informieren, dass das Thema bewegt wurde, ohne Inhalte weiterzugeben. Keine Aktion wird zu Hause oder mit der Familie durchgeführt.",
+  "achtung": "Schildert der Jugendliche aktuelle Gewalt, Vernachlässigung oder Übergriffe zu Hause – bei sich oder bei Geschwistern –, gilt das Verfahren der Einrichtung zum Kinderschutz; die zuständige Leitung (Responsable) sofort einbeziehen und dem Jugendlichen vorher sagen, was Sie tun. Keine Verschwiegenheit zusagen. Nicht nachbohren, wenn er abbricht. Nach dieser Stunde kann die Stimmung kippen: das Team informieren, dass das Thema bewegt wurde, ohne Inhalte weiterzugeben. Keine Aktion wird zu Hause oder mit der Familie durchgeführt.",
   "mehr": "Fall, Hintergrund, Quiz und Gesprächsfragen stehen im Heft SOLO #13 Zuhause."
  }
 }

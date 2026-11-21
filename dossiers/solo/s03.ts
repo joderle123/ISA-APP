@@ -82,7 +82,7 @@ const d: Solo = {
           "art": "szene",
           "bild": "peep:mia:traurig",
           "name": "Mia, 16",
-          "text": "Mia will um elf nur kurz schauen. Um zwanzig nach eins hat sie 300 Leute gesehen, die schöner wohnen, besser aussehen und mehr Freunde haben. Sie kennt keinen davon. Sie weiß, dass das gestellt ist – ihre eigenen Fotos macht sie ja genauso. Es hilft nichts. Sie fühlt sich trotzdem wie der einzige Mensch, bei dem nichts los ist.",
+          "text": "Mia liegt um elf im Bett. Sie will nur kurz aufs Handy schauen. Um zwanzig nach eins hat sie 300 Leute gesehen, die schöner wohnen, besser aussehen und mehr Freunde haben. Sie kennt keinen davon. Sie weiß: Das ist gestellt. Ihre eigenen Fotos macht sie ja auch zehnmal, bis eins gut aussieht. Es hilft nichts. Sie fühlt sich trotzdem wie der einzige Mensch, bei dem nichts los ist.",
           "frage": "Mia weiß, dass alles gestellt ist. Warum wirkt es trotzdem?"
         },
         {
@@ -99,7 +99,7 @@ const d: Solo = {
             },
             {
               "t": "Es geht selten ums Handy",
-              "x": "Oft greifst du hin, weil das Gefühl davor mies ist: leer, allein, unter Druck. **Das Handy ist die schnellste Betäubung, die es gibt.**"
+              "x": "Oft greifst du hin, weil das Gefühl davor mies ist: leer, allein, unter Druck. **Das Handy macht miese Gefühle schnell leiser – aber nur kurz.**"
             }
           ]
         },
@@ -192,6 +192,32 @@ const d: Solo = {
                 "Stress vergessen",
                 "mit Leuten reden",
                 "etwas wissen wollen"
+              ]
+            }
+          ]
+        },
+        {
+          "art": "fragen",
+          "titel": "Zurückspulen",
+          "wie": "allein",
+          "zeit": "6 Min.",
+          "kontext": "Denk an das letzte Mal, als du viel länger am Handy warst, als du wolltest. Spul es zurück wie einen Film. Lieber nicht? Nimm jemanden, den du kennst.",
+          "fragen": [
+            {
+              "f": "Schritt für Schritt:",
+              "satz": [
+                "Wann und wo war das?",
+                "Was war kurz davor los?",
+                "Das Gefühl in der Sekunde davor:",
+                "Geplant waren … – geworden sind es …",
+                "So ging es mir danach:"
+              ]
+            },
+            {
+              "f": "Und nächstes Mal?",
+              "satz": [
+                "Wenn ich das wieder fühle und die Hand zum Handy geht,",
+                "dann mache ich zuerst (zwei Minuten):"
               ]
             }
           ]
@@ -398,11 +424,12 @@ const d: Solo = {
     "hinweise": [
       "Seite 3: Ohne eigenes Handy schätzt der Jugendliche nur; die fünf Minuten laufen dann auf Ihrem Gerät.",
       "Seite 4: Schwarz-Weiß heißt je nach Gerät „Graustufen“ oder „Farbfilter“. Vorher selbst ausprobieren.",
-      "Geht Schwarz-Weiß nicht (Sperre, altes Gerät): eine App vom Startbildschirm nehmen. Ganz ohne Handy: verschieben."
+      "Geht Schwarz-Weiß nicht (Sperre, altes Gerät): eine App vom Startbildschirm nehmen. Ganz ohne Handy: verschieben.",
+      "„Zurückspulen“ (Dein Teil) geht einen eigenen Moment Schritt für Schritt durch und endet mit einem Wenn-dann-Plan. Wird die Zeit knapp, ist das Video freiwillig – es steht auch im Aktionsheft."
     ],
-    "achtung": "In den Daten oder im Gespräch können Cybermobbing, Druck im Chat oder Kontakte zu Erwachsenen sichtbar werden. Dann das Thema wechseln und ernst nehmen; bei Erpressung, sexuellen Übergriffen oder Selbstgefährdung nach dem Verfahren der Einrichtung handeln und die zuständige Leitung (Responsable) einbeziehen. Keine Diagnose stellen und keine Handyregeln im Namen Dritter aushandeln.",
-    "hintergrund": "Der Zusammenhang zwischen Bildschirmzeit und Wohlbefinden ist im Durchschnitt klein; entscheidend sind Inhalte, Vergleiche und verdrängter Schlaf (Orben & Przybylski). Vergleiche mit idealisierten Bildern verschlechtern Stimmung und Körperbild, auch wenn die Bearbeitung bekannt ist (Fardouly et al.). Unregelmäßige Belohnung bindet Verhalten besonders stark (Ferster & Skinner); fehlende Stopp-Signale verlängern die Nutzung (Alter). Graustufen verringerten in einer Studie mit Studierenden die tägliche Bildschirmzeit (Holte & Ferraro). Konkrete Wenn-dann-Pläne wirken besser als Vorsätze (Gollwitzer). Die ICD-11 kennt die Computerspielstörung, aber keine eigene Diagnose für Social-Media-Nutzung.",
-    "quellen": "Orben & Przybylski (2019) · Fardouly et al. (2015) · Ferster & Skinner (1957) · Alter (2017) · Holte & Ferraro (2020) · Gollwitzer (1999) · WHO, ICD-11."
+    "achtung": "In den Daten oder im Gespräch können Cybermobbing, Druck im Chat oder Kontakte zu Erwachsenen sichtbar werden. Dann das Thema wechseln und ernst nehmen; bei Erpressung, sexuellen Übergriffen oder Selbstgefährdung nach dem Verfahren der Einrichtung handeln und die zuständige Leitung (Responsable) einbeziehen. Keine Diagnose stellen und keine Handyregeln im Namen Dritter aushandeln. Beratung bei Cybermobbing und Erpressung im Netz: BEE SECURE Helpline 8002 1234; bei akuter Gefahr Polizei 113.",
+    "hintergrund": "Der Zusammenhang zwischen Bildschirmzeit und Wohlbefinden ist im Durchschnitt klein; entscheidend sind Inhalte, Vergleiche und verdrängter Schlaf (Orben & Przybylski). Vergleiche mit idealisierten Bildern verschlechtern Stimmung und Körperbild, auch wenn die Bearbeitung bekannt ist (Fardouly et al.; Tiggemann et al.). Unregelmäßige Belohnung bindet Verhalten besonders stark (Ferster & Skinner); fehlende Stopp-Signale verlängern die Nutzung (Alter). Graustufen verringerten in einer Studie mit Studierenden die tägliche Bildschirmzeit (Holte & Ferraro). Konkrete Wenn-dann-Pläne wirken besser als Vorsätze (Gollwitzer). Die ICD-11 kennt die Computerspielstörung, aber keine eigene Diagnose für Social-Media-Nutzung.",
+    "quellen": "Orben & Przybylski (2019) · Fardouly et al. (2015) · Ferster & Skinner (1957) · Alter (2017) · Holte & Ferraro (2020) · Gollwitzer (1999) · WHO, ICD-11 · Tiggemann et al. (2017)."
   }
 }
 export default d

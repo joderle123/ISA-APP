@@ -50,7 +50,7 @@ const d: AktionsHeft = {
       titel: 'Mia, 14 von 20', bild: 'peep:mia:traurig', icon: 'file-check', zeit: '10 Min.', wer: 'zusammen', material: '',
       schritte: ['Schaut euch Mias Moment an.', 'Kreis ein: Würde Mia so mit einer Freundin reden?', 'Kreuz an: Was würde sie der Freundin sagen?'],
       zonen: [
-        { art: 'comic', bilder: [['file-check', 'Mia bekommt die Arbeit zurück: 14 von 20.'], ['thumb-up', 'Die Lehrerin sagt: „Gut gemacht.“'], ['volume', 'Die Stimme sagt: „Sechs Fehler. Die sagt das aus Mitleid.“'], ['mood-smile', 'Mia lächelt und packt das Blatt weg.']] },
+        { art: 'comic', bilder: [['file-check', 'Mia bekommt die Arbeit zurück: 14 von 20 Punkten.'], ['thumb-up', 'Die Lehrerin sagt: „Gut gemacht.“'], ['volume', 'Die Stimme sagt: „Sechs Fehler. Die Lehrerin sagt das nur aus Mitleid.“'], ['mood-smile', 'Mia lächelt und packt das Blatt weg.']] },
         { art: 'fragen', fragen: [{ f: 'Würde Mia so mit einer Freundin reden?', kreis: ['nie', 'vielleicht', 'ja'] }, { f: 'Das würde sie der Freundin sagen:', kreuz: ['„14 ist gut.“', '„Sechs Fehler. Peinlich.“', '„Nächstes Mal 15.“'] }] },
       ],
       aha: 'Niemand im Raum redet so mit Mia. **Nur sie selbst.**',
@@ -119,7 +119,7 @@ const d: AktionsHeft = {
         { titel: 'Trainer statt Richter', icon: 'heart-handshake', zeilen: ['Was ist passiert? Nur Fakten.', 'Was würde ein guter Trainer sagen?', 'Was ist der nächste Versuch?'] },
       ] },
     ],
-    aha: 'Nichts ändern. Nur zählen. **Das reicht schon, damit sie leiser wird.**',
+    aha: 'Nichts ändern. Nur zählen. **Oft wird sie davon schon leiser.**',
     ziel: 'Die Stimme einen Tag lang zählen.',
     tipp: 'Die Zahl nicht bewerten. Fragen: Zu welcher Tageszeit kamen die meisten Striche?',
   },

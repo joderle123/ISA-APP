@@ -409,7 +409,7 @@ export const MODUL = {
    "schritte": [
     "Kreuz an: Was muss jemand können, damit er dir guttut? **Höchstens drei.**",
     "Dein Gegenüber wählt seine drei.",
-    "Jetzt die Rückseite: Kreis ein, was **du selbst** gut kannst."
+    "Nimm die zweite Farbe: Kreis ein, was **du selbst** gut kannst."
    ],
    "zonen": [
     {

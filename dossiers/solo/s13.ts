@@ -82,8 +82,8 @@ const d: Solo = {
           "art": "szene",
           "bild": "peep:jana:traurig",
           "name": "Jana, 15",
-          "text": "Samstag ist Besuchstag. Janas Mutter hat versprochen zu kommen. Um zwei ist sie nicht da, um drei auch nicht. Um vier kommt eine Nachricht: „Schaff es heute nicht, Schatz. Nächstes Mal sicher.“ Jana schreibt: „Kein Problem.“ Dann streitet sie mit der Erzieherin wegen eines Joghurts. Am Abend sagt ein Mädchen: „Deine Mutter ist echt das Letzte.“ Jana geht auf sie los.",
-          "frage": "Das Mädchen sagt, was Jana selbst denkt. Warum geht Jana trotzdem auf sie los?"
+          "text": "Samstag ist Besuchstag. Janas Mutter hat versprochen zu kommen. Um zwei ist sie nicht da, um drei auch nicht. Um vier kommt eine Nachricht: „Schaff es heute nicht, Schatz. Nächstes Mal sicher.“ Jana schreibt: „Kein Problem.“ Das stimmt nicht: Sie ist tief enttäuscht, aber sie sagt es keinem. Eine Stunde später streitet sie mit der Erzieherin – es geht nur um einen Joghurt. Am Abend sagt ein Mädchen: „Deine Mutter ist echt das Letzte.“ Jana geht auf sie los.",
+          "frage": "Jana ist selbst enttäuscht von ihrer Mutter. Warum geht sie trotzdem auf das Mädchen los?"
         },
         {
           "art": "fakten",
@@ -91,7 +91,7 @@ const d: Solo = {
           "fakten": [
             {
               "t": "Beides geht zusammen",
-              "x": "Du kannst jemanden lieben und wütend auf ihn sein. **Du kannst jemanden vermissen, der dir wehgetan hat.** Das ist kein Widerspruch."
+              "x": "Du kannst jemanden lieben und wütend auf ihn sein. **Du kannst jemanden vermissen, der dir wehgetan hat.** Das ist kein Widerspruch. Und wenn andere schimpfen, fühlt es sich an wie ein Angriff auf dich."
             },
             {
               "t": "Nicht deine Aufgabe",
@@ -129,6 +129,34 @@ const d: Solo = {
                 "An meiner Familie macht mich fertig:",
                 "Das vermisse ich:",
                 "Das vermisse ich kein bisschen:"
+              ]
+            }
+          ]
+        },
+        {
+          "art": "fragen",
+          "titel": "Wohin mit der Enttäuschung?",
+          "wie": "zusammen",
+          "zeit": "8 Min.",
+          "kontext": "Um vier Uhr war Jana enttäuscht. Raus kam es erst beim Joghurt – und am Abend.",
+          "fragen": [
+            {
+              "f": "Was hätte Jana um vier Uhr helfen können? Kreuze an:",
+              "unter": true,
+              "kreuz": [
+                "der Erzieherin sagen: „Meine Mutter kommt nicht. Ich bin total enttäuscht.“",
+                "allein ins Zimmer gehen und Musik hören",
+                "mit einer Freundin reden",
+                "so tun, als wäre nichts"
+              ]
+            },
+            {
+              "f": "Wenn du willst – für dich oder für jemanden, den du kennst: Ein Besuch, ein Anruf oder ein Wochenende zu Hause war schwer. Dann …",
+              "satz": [
+                "… merke ich es so (Körper, Laune):",
+                "… mache ich oft:",
+                "… könnte mir helfen:",
+                "… sage ich es (wem?):"
               ]
             }
           ]
@@ -216,7 +244,8 @@ const d: Solo = {
               "zeilen": [
                 "Nicht alles, was ich trage, gehört mir.",
                 "Was davon kann ein Erwachsener übernehmen?",
-                "Wer hier kann das sein?"
+                "Wer hier kann das sein?",
+                "Reden hilft: Kanner-Jugendtelefon **116 111**"
               ],
               "eigen": "Meine Aufgabe:"
             }
@@ -388,9 +417,10 @@ const d: Solo = {
     "hinweise": [
       "Dieses Heft hat kein Video; ein passendes wurde nicht gefunden.",
       "Seite 3: „weiß nicht“ ist die ehrlichste Spalte. Nicht zur Entscheidung drängen.",
-      "Seite 4: Das Experiment findet beim Jugendlichen selbst statt, nicht in der Familie. Keine Aufträge für Gespräche mit den Eltern erteilen."
+      "Seite 4: Das Experiment findet beim Jugendlichen selbst statt, nicht in der Familie. Keine Aufträge für Gespräche mit den Eltern erteilen.",
+      "„Wohin mit der Enttäuschung?“ plant den schwersten Moment: ein Besuch oder Anruf, der schiefgeht. Nur, was der Jugendliche erzählen will. Wird die Zeit knapp, ist das Duell freiwillig."
     ],
-    "achtung": "Schildert der Jugendliche aktuelle Gewalt, Vernachlässigung oder Übergriffe zu Hause – bei sich oder bei Geschwistern –, gilt das Verfahren der Einrichtung zum Kinderschutz; die zuständige Leitung (Responsable) sofort einbeziehen und dem Jugendlichen vorher sagen, was Sie tun. Nicht nachbohren, wenn er abbricht. Nach dieser Stunde kann die Stimmung kippen: das Team informieren, dass das Thema bewegt wurde, ohne Inhalte weiterzugeben.",
+    "achtung": "Schildert der Jugendliche aktuelle Gewalt, Vernachlässigung oder Übergriffe zu Hause – bei sich oder bei Geschwistern –, gilt das Verfahren der Einrichtung zum Kinderschutz; die zuständige Leitung (Responsable) sofort einbeziehen und dem Jugendlichen vorher sagen, was Sie tun. Keine Verschwiegenheit zusagen. Nicht nachbohren, wenn er abbricht. Nach dieser Stunde kann die Stimmung kippen: das Team informieren, dass das Thema bewegt wurde, ohne Inhalte weiterzugeben.",
     "hintergrund": "Kinder bleiben ihren Eltern auch unter belastenden Umständen verbunden; diese Bindung anzugreifen verstärkt meist die Loyalität und den inneren Konflikt (Boszormenyi-Nagy & Spark; Bowlby). Die Übernahme elterlicher Aufgaben durch Kinder ist verbreitet und mit späterer Erschöpfung und Schuldgefühlen verbunden (Hooper). Die Weitergabe belastender Muster an die nächste Generation ist ein Risiko, aber nicht die Regel (Kaufman & Zigler). Verlässliche Beziehungen außerhalb der Familie wirken schützend (Masten).",
     "quellen": "Boszormenyi-Nagy & Spark (1973) · Bowlby (1988) · Hooper (2007) · Kaufman & Zigler (1987) · Masten (2014)."
   }

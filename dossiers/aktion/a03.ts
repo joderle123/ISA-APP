@@ -94,7 +94,7 @@ const d: AktionsHeft = {
         'Entscheide: Wie lange bleibt es grau?',
       ],
       zonen: [{ art: 'fragen', fragen: [{ f: 'So spannend ist mein Feed (0–10):', regler: ['in Farbe', 'in Grau'] }, { f: 'Es bleibt grau:', kreis: ['bis heute Abend', 'bis morgen', 'drei Tage', 'gar nicht'] }] }],
-      aha: 'Farbe ist ein Köder. **Ohne Farbe zieht es weniger.**',
+      aha: 'Farbe ist ein Köder. **Ohne Farbe zieht es bei vielen weniger.**',
       ziel: 'Einen Köder selbst ausschalten und den Unterschied sehen.',
       tipp: 'Vorher am eigenen Handy ausprobieren, wo die Einstellung ist. Geht es nicht: Lieblings-App vom Startbildschirm nehmen.',
     },

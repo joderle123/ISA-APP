@@ -36,7 +36,7 @@ const d: AktionsHeft = {
       titel: 'Lea', bild: 'peep:lea:traurig', icon: 'pencil-off', zeit: '10 Min.', wer: 'zusammen', material: '',
       schritte: ['Schaut euch Leas Tag an.', 'Kreuz an: Woran könnte jemand merken, dass etwas nicht stimmt?', 'Kreis ein: Was ist Lea?'],
       zonen: [
-        { art: 'comic', bilder: [['school', 'Lea steht auf, geht zur Schule, lacht in der Pause.'], ['bed', 'Nachmittags liegt sie auf dem Bett und schaut an die Decke.'], ['pencil-off', 'Früher hat sie gezeichnet. Die Stifte liegen seit Februar in der Schublade.'], ['message-circle', 'Wenn jemand fragt, sagt sie: „Bin nur müde.“']] },
+        { art: 'comic', bilder: [['school', 'Lea steht auf, geht zur Schule, lacht in der Pause.'], ['bed', 'Nachmittags liegt sie auf dem Bett und schaut an die Decke.'], ['pencil-off', 'Früher hat sie gezeichnet. Die Stifte liegen seit Februar in der Schublade.'], ['message-circle', 'Wenn jemand fragt, sagt sie: „Bin nur müde.“ Innen fühlt sie: nichts.']] },
         { art: 'fragen', fragen: [{ f: 'Daran könnte man es merken:', unter: true, kreuz: ['an den Stiften in der Schublade', 'an „Bin nur müde“ – jeden Tag', 'an ihrem Lachen in der Pause'] }, { f: 'Lea ist:', kreis: ['traurig', 'leer', 'faul'] }] },
       ],
       aha: 'Leer ist nicht traurig. Und nicht faul. **Es sieht von außen nur so aus wie „müde“.**',
@@ -56,9 +56,9 @@ const d: AktionsHeft = {
       schritte: ['Scannt den Code. Schaut das Video.', 'Jeder darf „Stopp“ sagen.', 'Danach: Daumen hoch oder runter. Beide gleichzeitig – auf drei.'],
       zonen: [
         { art: 'clip', clip: clipVon(s, 'Was kennst du – von dir oder von jemand anderem?') },
-        { art: 'daumen', saetze: ['So etwas kenne ich – von mir oder von anderen.', 'Das ist ein Zustand, keine Faulheit.', 'Darüber reden macht es schlimmer.', 'Es geht vorbei.'] },
+        { art: 'daumen', saetze: ['So etwas kenne ich – von mir oder von anderen.', 'Das ist ein Zustand, keine Faulheit.', 'Darüber reden macht es schlimmer.', 'Es geht meistens vorbei.'] },
       ],
-      aha: 'Hält es wochenlang an, heißt es depressive Verstimmung. **Sie ist häufig. Und sie geht vorbei – mit Hilfe meist schneller.**',
+      aha: 'Hält es wochenlang an, heißt es depressive Verstimmung. **Sie ist häufig. Und meistens geht sie vorbei – mit Hilfe schneller.**',
       ziel: 'Einen Namen und eine Aussicht haben.',
       tipp: 'Das Video vorher selbst ansehen – wir haben nur Titel und Kanal geprüft. Satz 3 ist falsch: Reden entlastet.',
     },

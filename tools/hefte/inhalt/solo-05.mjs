@@ -166,15 +166,15 @@ export const MODUL = {
    "warum": "Darüber hat er mit keinem geredet."
   },
   {
-   "f": "Was steht auf der Karte „Der Satz danach“?",
+   "f": "Jemand rempelt dich an. Was macht dich am wütendsten?",
    "o": [
-    "„Vorhin ging es eigentlich nicht um …“",
-    "„Tut mir leid, kommt nie wieder vor.“",
-    "„Du hast angefangen.“",
-    "„Ist mir egal.“"
+    "der Rempler selbst",
+    "der Gedanke „Der macht das extra“",
+    "das Wetter",
+    "die Uhrzeit"
    ],
-   "r": 0,
-   "warum": "Der Satz sagt, worum es wirklich ging – ohne Versprechen."
+   "r": 1,
+   "warum": "Der Gedanke in der ersten Sekunde entscheidet, wie heiß es wird."
   },
   {
    "f": "Wann redet man am besten über einen Ausraster?",
@@ -232,16 +232,16 @@ export const MODUL = {
     "Logbuch. Seite 1: Die Sprüche ankreuzen lassen. Wenn „Kissen“ angekreuzt ist – der dritte Kasten auf Seite 2 gehört ihm."
    ],
    [
-    "5–20",
-    "Der Fall. Die Frage offen lassen, bis er selbst auf die Nachricht der Mutter kommt. Dann die Kästen und das Video."
+    "5–18",
+    "Der Fall. Die Frage offen lassen, bis er selbst auf die Nachricht der Mutter kommt. Dann die Kästen, das Video und „Der Gedanke macht die Hitze“."
    ],
    [
-    "20–40",
-    "„Die letzten drei“ allein – nicht mitlesen. „Die ehrliche Rechnung“ gemeinsam: den Gewinn der Wut ernsthaft aufschreiben. Dann das Duell mit Ihren Antworten."
+    "18–40",
+    "„Die Kette“ gemeinsam: erst Finn, dann ein eigenes Mal (oder das eines Bekannten). Nicht bewerten, nur Glied für Glied fragen. „Die ehrliche Rechnung“: den Gewinn der Wut ernsthaft aufschreiben. Das Duell mit Ihren Antworten, wenn Zeit ist."
    ],
    [
     "40–50",
-    "Experiment vereinbaren, Karten ausschneiden, eine Frage aus den drei Stufen."
+    "„Mein Plan für Gelb“ fertig machen, Experiment vereinbaren, Karten ausschneiden. Die drei Stufen passen gut in eine zweite Stunde."
    ]
   ],
   "haltung": [
@@ -251,7 +251,8 @@ export const MODUL = {
    "Fällt das Wort für das Gefühl darunter, nicht nachsetzen. Es reicht, dass es gesagt ist."
   ],
   "hinweise": [
-   "Seite 3: In der rechten Spalte von „Die letzten drei“ steht oft dreimal dasselbe Wort. Das ist das Thema der nächsten Wochen.",
+   "„Die Kette“ ist eine Verhaltensanalyse in Jugendsprache. Wichtig ist Glied 3 (Gedanke) und 4 (Gefühl darunter): Dort reißt die Kette am leichtesten. Wiederholt sich das Gefühl darunter bei mehreren Malen, ist das das Thema der nächsten Wochen.",
+   "„Der Gedanke macht die Hitze“: Wer fast immer „extra“ ankreuzt, unterstellt anderen schnell Absicht. Das nicht korrigieren, sondern beim nächsten Vorfall fragen: „Welche anderen Gedanken wären noch möglich?“",
    "Seite 4: „Der Satz danach“ ist für viele das Schwerste im ganzen Heft. Anbieten, ihn gemeinsam für eine echte Situation vorzubereiten.",
    "Die 20 Minuten gelten auch für Sie und das Team: Konsequenzen und Gespräche erst danach."
   ],
@@ -265,8 +266,8 @@ export const MODUL = {
     "url": "https://www.youtube.com/watch?v=ytcdqLNedrg"
    }
   ],
-  "hintergrund": "Wut tritt häufig als Reaktion auf verletzlichere Gefühle wie Scham, Angst oder Ohnmacht auf (Novaco). Das „Dampfablassen“ durch Schlagen auf Gegenstände senkt Ärger nicht, sondern verstärkt ihn (Bushman). Körperliche Erregung klingt nur langsam ab und überträgt sich auf die nächste Situation (Zillmann). Ausraster lassen sich besser als fehlende Fertigkeit unter Belastung verstehen denn als fehlender Wille; gemeinsames Problemlösen in ruhigen Momenten wirkt besser als Strafen (Greene).",
-  "quellen": "Novaco (1975) · Bushman (2002) · Zillmann (1971) · Greene (2014) · Linehan (2015)."
+  "hintergrund": "Wut tritt häufig als Reaktion auf verletzlichere Gefühle wie Scham, Angst oder Ohnmacht auf (Novaco). Jugendliche, die anderen in unklaren Situationen schnell Absicht unterstellen, reagieren häufiger aggressiv (Dodge); die Kette (Verhaltensanalyse nach Linehan) macht diesen Schritt sichtbar. Das „Dampfablassen“ durch Schlagen auf Gegenstände senkt Ärger nicht, sondern verstärkt ihn (Bushman). Körperliche Erregung klingt nur langsam ab und überträgt sich auf die nächste Situation (Zillmann). Ausraster lassen sich besser als fehlende Fertigkeit unter Belastung verstehen denn als fehlender Wille; gemeinsames Problemlösen in ruhigen Momenten wirkt besser als Strafen (Greene).",
+  "quellen": "Novaco (1975) · Bushman (2002) · Zillmann (1971) · Dodge (2006) · Greene (2014) · Linehan (2015)."
  }
 }
 
@@ -337,13 +338,38 @@ export const LEKTIONEN = [{
  },
  "ueben": [
   {
+   "art": "skala",
+   "auftrag": "**Der Gedanke macht die Hitze – Im Gang rempelt dich jemand an. Was du in der ersten Sekunde denkst, entscheidet, wie heiß es wird.** – Wie wütend wärst du bei diesem Gedanken? 0 = gar nicht, 10 = ich explodiere: //(allein · 3 Min.)//",
+   "zeilen": [
+    "„Der macht das extra.“",
+    "„Der hat mich nicht gesehen.“",
+    "„Der hat gerade selbst Stress.“"
+   ]
+  },
+  {
+   "art": "mc",
+   "auftrag": "Welcher Gedanke kommt bei dir meistens zuerst?",
+   "fragen": [
+    {
+     "f": "",
+     "o": [
+      "extra",
+      "nicht gesehen",
+      "selbst Stress",
+      "kommt drauf an, wer"
+     ],
+     "r": []
+    }
+   ]
+  },
+  {
    "art": "tabelle",
-   "auftrag": "**Die letzten drei – Drei Mal, als es geknallt hat. Links, was alle gesehen haben. Rechts, was keiner gesehen hat.** – Stichworte reichen: //(allein · 6 Min.)//",
+   "auftrag": "**Die Kette – Ein Ausraster kommt nicht aus dem Nichts. Er hat Glieder wie eine Kette. Erst Finn, dann ein Mal von dir – oder von jemandem, den du kennst. Stichworte reichen.** – Glied für Glied: //(zusammen · 10 Min.)//",
    "hoch": true,
    "kopf": [
-    "Wann",
-    "Auslöser, den alle sahen",
-    "was darunter lag"
+    "Glied",
+    "Finn",
+    "ich"
    ],
    "breiten": [
     36,
@@ -352,20 +378,68 @@ export const LEKTIONEN = [{
    ],
    "zeilen": [
     [
-     "das letzte Mal",
+     "1 · Davor: Was war schon los?",
      "",
      ""
     ],
     [
-     "das Mal davor",
+     "2 · Auslöser: Was ist passiert?",
      "",
      ""
     ],
     [
-     "das heftigste",
+     "3 · Gedanke: Was ging durch den Kopf?",
+     "",
+     ""
+    ],
+    [
+     "4 · Gefühl darunter",
+     "",
+     ""
+    ],
+    [
+     "5 · Körper: Was hast du gespürt?",
+     "",
+     ""
+    ],
+    [
+     "6 · Tat: Was hast du gemacht?",
+     "",
+     ""
+    ],
+    [
+     "7 · Danach: Was ist passiert?",
      "",
      ""
     ]
+   ]
+  },
+  {
+   "art": "mc",
+   "auftrag": "An welchem Glied hätte die Kette reißen können? Kreuze an:",
+   "fragen": [
+    {
+     "f": "",
+     "o": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+     ],
+     "r": []
+    }
+   ]
+  },
+  {
+   "art": "fragen",
+   "auftrag": "Was hätte dort geholfen?",
+   "fragen": [
+    {
+     "f": "",
+     "zeilen": 2
+    }
    ]
   },
   {
@@ -464,6 +538,28 @@ export const LEKTIONEN = [{
  ],
  "schreiben": [
   {
+   "art": "fragen",
+   "auftrag": "**Mein Plan für Gelb – Bei Rot ist es zu spät – dann denkt keiner mehr. Bei Gelb geht noch was. Gelb ist dein erstes Zeichen: Fäuste, heißer Kopf, laute Stimme …** – Mach deinen Plan: //(zusammen · 5 Min.)//",
+   "fragen": [
+    {
+     "f": "Mein Gelb merke ich an …",
+     "zeilen": 2
+    },
+    {
+     "f": "Wenn ich Gelb merke, dann …",
+     "zeilen": 2
+    },
+    {
+     "f": "Das sage ich dabei:",
+     "zeilen": 2
+    },
+    {
+     "f": "Diese Person darf mein Zeichen kennen:",
+     "zeilen": 2
+    }
+   ]
+  },
+  {
    "art": "schreiben",
    "auftrag": "Experiment bis zum nächsten Mal: **Ein Wort danach.** Wenn du diese Woche hochgehst: Schreib **danach** ein einziges Wort auf – das Gefühl darunter. Scham, Angst, Ohnmacht, Enttäuschung, Einsamkeit. Mehr nicht. Wette vorher: Welches Wort steht am häufigsten da?",
    "zeilen": 5,
@@ -526,7 +622,7 @@ export const LEKTIONEN = [{
     "bild": "finn:verwirrt"
    },
    {
-    "erz": "Den ganzen Tag hatte er die Nachricht seiner Mutter im Kopf:",
+    "erz": "Seit zwei Wochen hatte er sich auf das Wochenende bei seiner Mutter gefreut. Am Morgen kam ihre Nachricht:",
     "bild": "finn:traurig:handy",
     "blasen": [
      [
@@ -534,7 +630,7 @@ export const LEKTIONEN = [{
       "Dieses Wochenende klappt es nicht."
      ]
     ],
-    "nach": "Darüber hat er mit keinem geredet. Über den Teller reden jetzt alle."
+    "nach": "Den ganzen Tag hatte er sie im Kopf – und mit keinem darüber geredet. Über den Teller reden jetzt alle."
    }
   ],
   "woerter": [

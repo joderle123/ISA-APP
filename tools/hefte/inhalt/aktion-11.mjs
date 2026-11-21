@@ -243,7 +243,7 @@ export const MODUL = {
      ]
     }
    ],
-   "aha": "Beim dritten Mal ist es kleiner. **So funktioniert Angst: Wer bleibt, gewöhnt sich.**",
+   "aha": "Beim dritten Mal ist es meist kleiner. **Wer bleibt, gewöhnt sich – Stück für Stück.**",
    "ziel": "Gewöhnung am eigenen Leib messen.",
    "tipp": "Der Jugendliche wählt die Sache. Blickkontakt nur, wenn er ihn wählt. Selbst mitmachen und ehrliche Zahlen sagen."
   },
@@ -328,7 +328,7 @@ export const MODUL = {
        ""
       ],
       [
-       "die ganze Strecke, früh am Morgen",
+       "die ganze Strecke, wenn der Bus fast leer ist",
        "",
        ""
       ]
@@ -429,7 +429,7 @@ export const MODUL = {
      ]
     }
    ],
-   "aha": "Die Zahl danach ist kleiner als die Zahl davor. **Das merkt sich dein Kopf.**",
+   "aha": "Meist ist die Zahl danach kleiner. **Und auch wenn nicht: Du warst da. Das merkt sich dein Kopf.**",
    "ziel": "Eine echte erste Stufe gehen – begleitet.",
    "tipp": "Nur Situationen, die wirklich ungefährlich sind. Nicht drängen. Abbrechen wird ausgewertet, nicht bewertet."
   }

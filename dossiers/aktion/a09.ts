@@ -67,7 +67,7 @@ const d: AktionsHeft = {
     {
       titel: 'Stimmt’s oder Quatsch?', icon: 'bulb', zeit: '10 Min.', wer: 'beide', material: '',
       schritte: ['Dein Gegenüber liest einen Satz vor.', 'Beide zeigen gleichzeitig: Daumen hoch = stimmt. Daumen runter = Quatsch.', 'Kreuz an. Die Lösung hat dein Gegenüber.', 'Wer mehr richtig hat, gewinnt.'],
-      zonen: [{ art: 'fragen', fragen: [{ f: 'Der Satz:', raster: { spalten: ['stimmt', 'Quatsch'], zeilen: ['Das Gehirn wird bis Mitte 20 umgebaut.', 'Vapes machen nicht abhängig.', 'Kaffee macht Betrunkene wieder nüchtern.', 'Wer früh und oft kifft, hat später öfter Probleme mit dem Gedächtnis.', 'Wer bewusstlos ist, soll ausschlafen.', 'Nikotin kann schon nach Wochen abhängig machen.'] } }] }],
+      zonen: [{ art: 'fragen', fragen: [{ f: 'Der Satz:', raster: { spalten: ['stimmt', 'Quatsch'], zeilen: ['Das Gehirn wird bis Mitte 20 umgebaut.', 'Vapes mit Nikotin machen nicht abhängig.', 'Kaffee macht Betrunkene wieder nüchtern.', 'Wer früh und oft kifft, hat später öfter Probleme mit dem Gedächtnis.', 'Wer bewusstlos ist, soll ausschlafen.', 'Nikotin kann schon nach Wochen abhängig machen.'] } }] }],
       aha: 'Wer Bescheid weiß, **entscheidet selbst.**',
       ziel: 'Sechs Fakten sicher kennen.',
       tipp: 'Lösung: 1 stimmt · 2 Quatsch · 3 Quatsch (nur die Zeit baut Alkohol ab) · 4 stimmt · 5 Quatsch (Seitenlage, 112, dableiben) · 6 stimmt.',
@@ -112,7 +112,7 @@ const d: AktionsHeft = {
       { art: 'woche', zeilen: ['Tag ohne', 'war schwer', 'ging so', 'okay geschlafen'] },
       { art: 'karten', karten: [
         { titel: 'Vorher fragen', icon: 'help-circle', zeilen: ['Wofür will ich es gerade?', 'Was hilft auch – nur langsamer?', 'Entscheide ich – oder die Gewohnheit?'] },
-        { titel: 'Notfall', icon: 'first-aid-kit', zeilen: ['Nicht ansprechbar oder atmet komisch:', '**112.** Dableiben. Auf die Seite legen.', 'Sagen, was genommen wurde.'] },
+        { titel: 'Notfall', icon: 'first-aid-kit', zeilen: ['Nicht ansprechbar:', '**112.** Dableiben. Atmet normal: auf die Seite legen. Sonst hilft die 112 am Telefon.', 'Sagen, was genommen wurde.'] },
       ] },
     ],
     aha: 'Was in der Pause passiert, **ist die Antwort.**',

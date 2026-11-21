@@ -78,7 +78,7 @@ const d: Solo = {
           "art": "szene",
           "bild": "peep:sami:verlegen",
           "name": "Sami, 14",
-          "text": "Im Schwimmbad ist Sami der Lauteste – und der Einzige im T-Shirt. „Sonnenbrand“, sagt er. Zu Hause macht er Liegestütze vor dem Spiegel, schaut Videos von Typen mit Bauchmuskeln und rechnet aus, wie lange es dauert, bis er auch so aussieht. Beim Essen ist er als Erster fertig: „Kein Hunger.“ Seine Schwester sagt: „Du spinnst, du bist doch ganz normal.“ Normal ist genau das Wort, das Sami am meisten hasst.",
+          "text": "Im Schwimmbad ist Sami der Lauteste – und der Einzige im T-Shirt. „Sonnenbrand“, sagt er. Das stimmt nicht: Er will nicht, dass jemand seinen Bauch sieht. Zu Hause macht er Liegestütze vor dem Spiegel, schaut Videos von Typen mit Bauchmuskeln und rechnet aus, wie lange es dauert, bis er auch so aussieht. Beim Essen ist er als Erster fertig: „Kein Hunger.“ Seine Schwester sagt: „Du spinnst, du bist doch ganz normal.“ Normal ist genau das Wort, das Sami am meisten hasst. Für ihn heißt normal: nicht gut genug.",
           "frage": "Was würde sich für Sami wirklich ändern, wenn er aussähe wie die im Video?"
         },
         {
@@ -90,12 +90,12 @@ const d: Solo = {
               "x": "Du suchst im Spiegel die Stellen, die du nicht magst. Andere sehen einen Menschen in Bewegung. **Kaum jemand schaut so genau hin wie du selbst.** Wer es doch tut und lästert, sagt mehr über sich."
             },
             {
-              "t": "Der Vergleich ist gezinkt",
+              "t": "Der Vergleich ist unfair",
               "x": "Licht, Winkel, Filter, Auswahl aus hundert Fotos. **Es wirkt trotzdem – auch wenn du es weißt.** Wissen schützt hier nicht."
             },
             {
               "t": "Benutzen statt prüfen",
-              "x": "Wer seinen Körper **benutzt** – rennen, tragen, tanzen, schlafen –, ist zufriedener als jemand, der ihn anschaut und prüft. Leistung ist damit nicht gemeint."
+              "x": "Wer seinen Körper **benutzt** – rennen, tragen, tanzen, schlafen –, ist oft zufriedener als jemand, der ihn nur anschaut und prüft. Leistung ist damit nicht gemeint."
             }
           ]
         },
@@ -160,6 +160,37 @@ const d: Solo = {
                 "bestimmte Sachen anziehen",
                 "Sport mit anderen",
                 "jemanden ansprechen"
+              ]
+            }
+          ]
+        },
+        {
+          "art": "fragen",
+          "titel": "Verstecken hilft – kurz",
+          "wie": "zusammen",
+          "zeit": "7 Min.",
+          "kontext": "Sami lässt das T-Shirt an. Im Moment ist das leichter. Und danach?",
+          "fragen": [
+            {
+              "f": "Stimmt das?",
+              "raster": {
+                "spalten": [
+                  "stimmt",
+                  "stimmt nicht"
+                ],
+                "zeilen": [
+                  "Mit T-Shirt ist es für Sami im Moment leichter.",
+                  "Mit T-Shirt findet Sami heraus, dass keiner auf seinen Bauch schaut.",
+                  "Beim nächsten Mal ist das T-Shirt noch wichtiger."
+                ]
+              }
+            },
+            {
+              "f": "Wenn du willst – für dich oder für jemanden, den du kennst. Nimm die kleinste Sache aus der Liste oben:",
+              "satz": [
+                "Das lasse ich wegen meines Aussehens:",
+                "Die kleinste Stufe davon:",
+                "Die probiere ich aus (wann?):"
               ]
             }
           ]
@@ -289,7 +320,7 @@ const d: Solo = {
         "ja",
         "nur Erwachsene",
         "nur Sportler",
-        "nein, Jungen genauso"
+        "nein, Jungen auch"
       ],
       "r": 3,
       "warum": "Bei Jungen geht es oft um Muskeln statt um Dünnsein."
@@ -314,7 +345,7 @@ const d: Solo = {
         "öfter in den Spiegel schauen"
       ],
       "r": 0,
-      "warum": "Weniger gezinkte Vergleiche, weniger Druck."
+      "warum": "Weniger unfaire Vergleiche, weniger Druck."
     },
     {
       "f": "Jemand isst kaum noch und redet nur über sein Aussehen. Was tun?",
@@ -387,13 +418,14 @@ const d: Solo = {
     "haltung": [
       "Den Körper des Jugendlichen nie kommentieren – auch nicht mit Lob. Jedes Urteil bestätigt, dass er begutachtet wird.",
       "Keine Tipps zu Essen, Sport oder Gewicht.",
-      "Jungen sind genauso betroffen; bei ihnen geht es häufig um Muskeln und Größe.",
+      "Jungen sind auch betroffen, oft unbemerkt; bei ihnen geht es häufig um Muskeln und Größe.",
       "Im Duell die eigene Unsicherheit von damals ehrlich nennen."
     ],
     "hinweise": [
       "Seite 3: Die angekreuzten „Mache ich nicht“ zeigen, wie sehr das Thema den Alltag einschränkt – ein guter Maßstab für den Verlauf.",
       "Seite 4: „Drei weg“ ist befristet. Wer danach wieder folgt, hat trotzdem etwas herausgefunden.",
-      "Unwohlsein mit dem Körper kann mit Fragen der Geschlechtsidentität zu tun haben. Respektvoll zuhören und bei Bedarf an eine Fachstelle vermitteln."
+      "Unwohlsein mit dem Körper kann mit Fragen der Geschlechtsidentität zu tun haben. Respektvoll zuhören und bei Bedarf an eine Fachstelle vermitteln.",
+      "„Verstecken hilft – kurz“ erklärt, warum Verstecken die Sorge wachsen lässt, und plant die kleinste Stufe zurück. Passt Verstecken besser als der Feed, darf das statt „Drei weg“ das Experiment sein."
     ],
     "achtung": "Warnzeichen für eine Essstörung ernst nehmen: deutliche Gewichtsveränderung, starre Essensregeln, Auslassen von Mahlzeiten, Erbrechen, übermäßiger Sport, Rückzug beim Essen. Dann zeitnah ärztliche und kinder- und jugendpsychiatrische Abklärung veranlassen – Essstörungen können lebensbedrohlich werden. Die Antwort auf die Frage „Wie gehst du mit deinem Körper um?“ (Stufe 3) kann Selbstverletzung betreffen: ruhig nachfragen und nach dem Verfahren der Einrichtung handeln. Abwertung des Körpers kann auch Folge von Übergriffen sein.",
     "hintergrund": "Menschen überschätzen deutlich, wie sehr andere auf ihr Aussehen achten (Gilovich et al.). Vergleiche mit idealisierten und bearbeiteten Bildern verschlechtern das Körperbild, auch wenn die Bearbeitung bekannt ist (Fardouly et al.; Kleemans et al.). Die Aufmerksamkeit auf die Funktionen des Körpers zu richten, verbessert die Zufriedenheit mit ihm (Alleva et al.). Gespräche über Gewicht und Diäten erhöhen bei Jugendlichen das Risiko für gestörtes Essverhalten (Neumark-Sztainer).",

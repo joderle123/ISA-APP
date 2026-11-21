@@ -82,7 +82,7 @@ const d: Solo = {
           "art": "szene",
           "bild": "peep:tom:aengstlich",
           "name": "Tom, 14",
-          "text": "Tom steht an der Haltestelle. Der Bus kommt, Tom steigt nicht ein. Drinnen sitzen zu viele, die schauen könnten. Sein Herz rast, die Hände kribbeln, er bekommt schlecht Luft. Er geht zu Fuß, vierzig Minuten, und kommt zu spät. „Verschlafen“, sagt er. Am nächsten Tag ist der Bus noch ein bisschen größer geworden.",
+          "text": "Tom steht an der Haltestelle. Der Bus kommt, Tom steigt nicht ein. Drinnen sitzen zu viele, die schauen könnten. Sein Herz rast, die Hände kribbeln, er bekommt schlecht Luft. Er geht weg – sofort wird es leichter. Er läuft vierzig Minuten und kommt zu spät. „Verschlafen“, sagt er. Am nächsten Tag ist der Bus noch ein bisschen größer geworden.",
           "frage": "Warum ist der Bus am nächsten Tag größer?"
         },
         {
@@ -99,7 +99,7 @@ const d: Solo = {
             },
             {
               "t": "Bleiben lässt sie fallen",
-              "x": "Wer bleibt, erlebt: Die Angst steigt – und sinkt dann **von allein**. Anders als bei „Augen zu und durch“ wählst du die Stufe, und sie ist klein."
+              "x": "Wer bleibt, erlebt meistens: Die Angst steigt – und sinkt dann **von allein**. Anders als bei „Augen zu und durch“ wählst du die Stufe, und sie ist klein."
             }
           ]
         },
@@ -189,8 +189,8 @@ const d: Solo = {
                   "Gegenüber"
                 ],
                 "optionen": [
-                  "Dem gehe ich aus dem Weg",
-                  "So erkläre ich es den anderen"
+                  "Davor hatte ich Angst – und bin trotzdem hin",
+                  "Das hat mir beim ersten Mal geholfen"
                 ]
               }
             }
@@ -206,7 +206,7 @@ const d: Solo = {
         {
           "art": "experiment",
           "titel": "Eine Stufe",
-          "x": "Nimm die **kleinste** Sache, der du ausweichst. Mach sie einmal, gern mit jemandem – und bleib, bis die Angst ein Stück sinkt. Abbrechen zählt auch: Dann notier, bei welcher Zahl. Drei Zahlen (0–10): vorher, höchster Punkt, Ende. Wette vorher: Wie hoch geht sie?"
+          "x": "Nimm die **kleinste** Sache, der du ausweichst. Mach sie einmal, gern mit jemandem – und bleib, bis die Angst ein Stück sinkt. Abbrechen zählt auch: Dann notier, bei welcher Zahl. Drei Zahlen (0–10): vorher, höchster Punkt, Ende. Wette vorher: Wie hoch geht sie – und was befürchtest du, was passiert? Danach: Ist es passiert?"
         },
         {
           "art": "karten",

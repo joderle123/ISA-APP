@@ -45,7 +45,7 @@ const d: AktionsHeft = {
       titel: 'Sami im Schwimmbad', bild: 'peep:sami:verlegen', icon: 'swimming', zeit: '10 Min.', wer: 'zusammen', material: '',
       schritte: ['Schaut euch Samis Sommer an.', 'Kreuz an: Was lässt Sami wegen seines Aussehens?', 'Kreis ein: Was würde sich ändern, wenn er aussähe wie im Video?'],
       zonen: [
-        { art: 'comic', bilder: [['swimming', 'Im Schwimmbad ist Sami der Lauteste – und der Einzige im T-Shirt.'], ['device-mobile', 'Zu Hause schaut er Videos von Typen mit Bauchmuskeln.'], ['tools-kitchen-2', 'Beim Essen ist er als Erster fertig: „Kein Hunger.“'], ['message-circle', 'Seine Schwester sagt: „Du bist doch ganz normal.“ Das Wort hasst er.']] },
+        { art: 'comic', bilder: [['swimming', 'Im Schwimmbad ist Sami der Lauteste – und der Einzige im T-Shirt. Er denkt: „Alle schauen auf meinen Bauch.“'], ['device-mobile', 'Zu Hause schaut er Videos von Typen mit Bauchmuskeln.'], ['tools-kitchen-2', 'Beim Essen ist er als Erster fertig: „Kein Hunger.“'], ['message-circle', 'Seine Schwester sagt: „Du bist doch ganz normal.“ Das Wort hasst er.']] },
         { art: 'fragen', fragen: [{ f: 'Das lässt Sami:', kreuz: ['schwimmen ohne T-Shirt', 'in Ruhe essen', 'Videos schauen'] }, { f: 'Sähe er aus wie im Video, wäre:', kreis: ['alles anders', 'ein bisschen anders', 'fast nichts anders'] }] },
       ],
       aha: 'Sami glaubt, alle schauen auf seinen Bauch. **Sie schauen auf den Lautesten im Becken.**',
@@ -85,9 +85,9 @@ const d: AktionsHeft = {
         { art: 'clip', clip: clipVon(s, 'Welche Accounts machen das mit dir?') },
         { art: 'daumen', saetze: ['Bilder im Netz sind bearbeitet. Das weiß ich.', 'Sie wirken trotzdem auf mich.', 'Das betrifft nur Mädchen.', 'Ich folge Accounts, nach denen es mir schlechter geht.'] },
       ],
-      aha: 'Der Vergleich ist gezinkt. **Er wirkt trotzdem – auch wenn du es weißt.**',
+      aha: 'Der Vergleich ist unfair. **Er wirkt trotzdem – auch wenn du es weißt.**',
       ziel: 'Wissen und Wirkung auseinanderhalten.',
-      tipp: 'Das Video vorher selbst ansehen – wir haben nur Titel und Kanal geprüft. Satz 3 ist falsch: Jungen betrifft es genauso.',
+      tipp: 'Das Video vorher selbst ansehen – wir haben nur Titel und Kanal geprüft. Satz 3 ist falsch: Jungen betrifft es auch.',
     },
     {
       titel: 'Was ich lasse', icon: 'ban', zeit: '10 Min.', wer: 'allein', material: '',

@@ -82,7 +82,7 @@ const d: Solo = {
           "art": "szene",
           "bild": "peep:noah:ruhig:zocken",
           "name": "Noah, 15",
-          "text": "Im Clan ist Noah der, auf den man sich verlässt. 3.000 Stunden, hoher Rang, sein Call entscheidet die Runde. In der Schule ist er der, der fehlt. Am Dienstag sagt die Lehrerin: „Du könntest so viel, wenn du wolltest.“ Noah denkt: Ich will ja. Nur nicht hier. Um vier loggt er sich ein. Drei Leute schreiben: „Endlich.“",
+          "text": "Im Clan ist Noah der, auf den man sich verlässt. 3.000 Stunden, hoher Rang, seine Ansage entscheidet die Runde. In der Schule fehlt er oft. Am Dienstag sagt die Lehrerin: „Du könntest so viel, wenn du wolltest.“ Noah denkt: Ich will ja gut sein. Nur nicht hier. Um vier loggt er sich ein. Drei Leute schreiben: „Endlich! Ohne dich verlieren wir.“",
           "frage": "Was bekommt Noah im Spiel, das er in der Schule nicht bekommt?"
         },
         {
@@ -156,10 +156,43 @@ const d: Solo = {
         },
         {
           "art": "fragen",
+          "titel": "Wo gibt es das noch?",
+          "wie": "zusammen",
+          "zeit": "6 Min.",
+          "kontext": "Das Spiel gibt dir etwas Echtes. Die Frage ist nur: Bekommst du es **nur** dort?",
+          "fragen": [
+            {
+              "f": "Schreib auf, auch kleine Sachen:",
+              "preis": {
+                "erste": "Im Spiel …",
+                "kopf": [
+                  "So ist es im Spiel",
+                  "Wo noch? Bei wem?"
+                ],
+                "optionen": [
+                  "werde ich besser",
+                  "entscheide ich selbst",
+                  "brauchen mich Leute"
+                ]
+              }
+            },
+            {
+              "f": "Wo hättest du gern mehr davon? Kreise ein:",
+              "kreis": [
+                "Schule oder Arbeit",
+                "Freunde",
+                "Sport oder Hobby",
+                "hier, in der Bezugszeit"
+              ]
+            }
+          ]
+        },
+        {
+          "art": "fragen",
           "titel": "Der ehrliche Check",
           "wie": "allein",
           "zeit": "4 Min.",
-          "kontext": "Sechs Sätze, die auch Ärzte fragen. Du wertest aus.",
+          "kontext": "Sechs Sätze, ähnlich wie Fachleute sie fragen. Kein Test. Schau nur: Wo steht ein „oft“? Da lohnt es sich hinzuschauen.",
           "fragen": [
             {
               "f": "Kreuze an:",
@@ -184,6 +217,33 @@ const d: Solo = {
               "satz": [
                 "Das würde ich selbst gern ändern:"
               ]
+            }
+          ]
+        },
+        {
+          "art": "fragen",
+          "titel": "Der Moment, wo es kippt",
+          "wie": "allein",
+          "zeit": "6 Min.",
+          "kontext": "Denk an den letzten Abend, an dem du länger gespielt hast als geplant. Lieber nicht? Nimm jemanden, den du kennst.",
+          "fragen": [
+            {
+              "f": "Schritt für Schritt:",
+              "satz": [
+                "Geplant war Schluss um:",
+                "Wirklich Schluss war um:",
+                "Da habe ich weitergemacht, weil (Niederlage, Leute warten, „nur noch eine“ …):",
+                "Liegen geblieben ist:"
+              ]
+            },
+            {
+              "f": "Mein Satz zum Aussteigen, wenn die anderen warten. Sag ihn einmal laut:",
+              "kreuz": [
+                "„Letzte Runde, dann bin ich off.“",
+                "„Muss los. Morgen wieder.“",
+                "„Ich bin raus – GG.“"
+              ],
+              "linien": 1
             }
           ]
         },
@@ -305,7 +365,7 @@ const d: Solo = {
         "ein Rabatt"
       ],
       "r": 2,
-      "warum": "Unregelmäßige Belohnung gegen Geld."
+      "warum": "Zufällige Belohnung – oft gegen echtes Geld."
     },
     {
       "f": "Ist jemand süchtig, weil er viele Stunden spielt?",
@@ -338,7 +398,7 @@ const d: Solo = {
         "bessere Noten"
       ],
       "r": 2,
-      "warum": "Drei Leute schreiben: „Endlich.“"
+      "warum": "Drei Leute schreiben: „Endlich! Ohne dich verlieren wir.“"
     },
     {
       "f": "Was hilft am ehesten, rechtzeitig aufzuhören?",
@@ -421,9 +481,10 @@ const d: Solo = {
     "hinweise": [
       "Seite 3: Die sechs Sätze sind an die Merkmale der Computerspielstörung angelehnt, aber kein Fragebogen.",
       "Seite 4: Der Stopp-Test braucht eine zweite Person, die den Zeitpunkt kennt – am besten wählt der Jugendliche sie selbst.",
-      "Für Jugendliche, die nicht spielen: Das Heft funktioniert auch mit Serien oder Kurzvideos."
+      "Für Jugendliche, die nicht spielen: Das Heft funktioniert auch mit Serien oder Kurzvideos.",
+      "„Wo gibt es das noch?“ sucht, was das Spiel gibt, auch außerhalb. „Der Moment, wo es kippt“ geht einen echten Abend durch und übt den Satz zum Aussteigen laut. Wird die Zeit knapp, ist das Video freiwillig."
     ],
-    "achtung": "Erzählt der Jugendliche selbst von mehreren „oft“ über viele Monate, oder bei Schulabbruch oder völligem Rückzug: fachliche Abklärung anregen (Kinder- und Jugendpsychiatrie, Suchtberatung). Auf Geld achten (Käufe im Spiel, Schulden, fremde Karten) und auf Kontakte: Erwachsene, die Geschenke machen oder in private Chats wechseln wollen, sind ein Grund, sofort die zuständige Leitung (Responsable) einzubeziehen. Spielen als Flucht vor einer unerträglichen Lage zu Hause ist kein Spielproblem.",
+    "achtung": "Erzählt der Jugendliche selbst von mehreren „oft“ über viele Monate, oder bei Schulabbruch oder völligem Rückzug: fachliche Abklärung anregen (Kinder- und Jugendpsychiatrie, Suchtberatung). Auf Geld achten (Käufe im Spiel, Schulden, fremde Karten) und auf Kontakte: Erwachsene, die Geschenke machen oder in private Chats wechseln wollen, sind ein Grund, sofort die zuständige Leitung (Responsable) einzubeziehen. Beratung: BEE SECURE Helpline 8002 1234; bei Erpressung oder akuter Gefahr Polizei 113. Spielen als Flucht vor einer unerträglichen Lage zu Hause ist kein Spielproblem.",
     "extra": [
       {
         "titel": "Computerspiele-Sucht und die Verkaufs-Tricks der Hersteller",

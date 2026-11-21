@@ -153,7 +153,7 @@ export const MODUL = {
    "schritte": [
     "Schaut euch Yusufs Termin an.",
     "Kreuz an: Warum sagt Yusuf „Keine Ahnung“?",
-    "Kreis ein: Wem würdest du einen Plan sagen?"
+    "Kreuz an: Was hätte Yusuf sagen können? Sagt den Satz laut."
    ],
    "zonen": [
     {
@@ -178,14 +178,14 @@ export const MODUL = {
     },
     {
      "art": "mc",
-     "auftrag": "Einen Plan würde ich sagen:",
+     "auftrag": "Yusuf hätte sagen können:",
      "fragen": [
       {
        "f": "",
        "o": [
-        "keinem",
-        "einer Person",
-        "mehreren"
+        "„Ich hab eine Idee. Bitte nicht lachen.“",
+        "„Mechatroniker. Was brauche ich dafür?“",
+        "„Keine Ahnung.“"
        ],
        "r": []
       }
@@ -520,7 +520,7 @@ export const MODUL = {
  },
  "begleitungAktion": {
   "material": "Stifte, Papier, Handy oder Computer",
-  "achtung": "Sätze wie „Ich werde eh nicht alt“ oder „Für mich gibt es kein Später“ sind keine Coolness, sondern ein Warnsignal: ruhig und direkt nach Suizidgedanken fragen und nach dem Verfahren der Einrichtung handeln. Offene Verfahren, Schulden oder ein unsicherer Aufenthalt begrenzen Pläne tatsächlich – das ehrlich benennen, statt es wegzureden, und klären, wer dabei hilft.",
+  "achtung": "Sätze wie „Ich werde eh nicht alt“ oder „Für mich gibt es kein Später“ sind keine Coolness, sondern ein Warnsignal: ruhig und direkt nach Suizidgedanken fragen und nach dem Verfahren der Einrichtung handeln (siehe SOLO #15; bei akuter Gefahr 112). Offene Verfahren, Schulden oder ein unsicherer Aufenthalt begrenzen Pläne tatsächlich – das ehrlich benennen, statt es wegzureden, und klären, wer dabei hilft.",
   "mehr": "Fall, Hintergrund, Quiz und Gesprächsfragen stehen im Heft SOLO #14 Später."
  }
 }

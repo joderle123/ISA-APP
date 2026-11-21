@@ -31,7 +31,7 @@ const d: AktionsHeft = {
         'Wenn du willst: dasselbe für eine eigene Sache. **Ohne zu sagen, welche.**',
       ],
       zonen: [
-        { art: 'comic', bilder: [['bulb', 'Zwei andere haben die Idee: einen Roller „leihen“.'], ['scooter', 'Ben fährt.'], ['file-alert', 'Jetzt gibt es eine Anzeige. Seine Mutter redet kaum noch.'], ['mood-sad', 'Ben denkt: „Jetzt bin ich endgültig so einer.“']] },
+        { art: 'comic', bilder: [['bulb', 'Zwei andere haben die Idee: Wir nehmen einen Roller, der uns nicht gehört.'], ['scooter', 'Ben fährt.'], ['file-alert', 'Jetzt gibt es eine Anzeige. Seine Mutter redet kaum noch.'], ['mood-sad', 'Ben denkt: „Jetzt bin ich endgültig so einer.“']] },
         { art: 'tabelle', kopf: ['Münzen', 'Ben', 'die anderen', 'die Umstände'], zeilen: ['Du', 'Dein Gegenüber'] },
       ],
       aha: 'Die Idee kam von anderen. Gefahren ist er. **Beides stimmt.**',

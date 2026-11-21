@@ -329,7 +329,7 @@ export const MODUL = {
        ""
       ],
       [
-       "Vapes machen nicht abhängig.",
+       "Vapes mit Nikotin machen nicht abhängig.",
        "",
        ""
       ],
@@ -558,7 +558,7 @@ export const MODUL = {
      {
       "titel": "Notfall",
       "icon": "first-aid-kit",
-      "text": "Nicht ansprechbar oder atmet komisch:\n**112.** Dableiben. Auf die Seite legen.\nSagen, was genommen wurde."
+      "text": "Nicht ansprechbar:\n**112.** Dableiben. Atmet normal: auf die Seite legen. Sonst hilft die 112 am Telefon.\nSagen, was genommen wurde."
      }
     ]
    }

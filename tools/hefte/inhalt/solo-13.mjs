@@ -252,9 +252,10 @@ export const MODUL = {
   "hinweise": [
    "Dieses Heft hat kein Video; ein passendes wurde nicht gefunden.",
    "Seite 3: „weiß nicht“ ist die ehrlichste Spalte. Nicht zur Entscheidung drängen.",
-   "Seite 4: Das Experiment findet beim Jugendlichen selbst statt, nicht in der Familie. Keine Aufträge für Gespräche mit den Eltern erteilen."
+   "Seite 4: Das Experiment findet beim Jugendlichen selbst statt, nicht in der Familie. Keine Aufträge für Gespräche mit den Eltern erteilen.",
+   "„Wohin mit der Enttäuschung?“ plant den schwersten Moment: ein Besuch oder Anruf, der schiefgeht. Nur, was der Jugendliche erzählen will. Wird die Zeit knapp, ist das Duell freiwillig."
   ],
-  "achtung": "Schildert der Jugendliche aktuelle Gewalt, Vernachlässigung oder Übergriffe zu Hause – bei sich oder bei Geschwistern –, gilt das Verfahren der Einrichtung zum Kinderschutz; die zuständige Leitung (Responsable) sofort einbeziehen und dem Jugendlichen vorher sagen, was Sie tun. Nicht nachbohren, wenn er abbricht. Nach dieser Stunde kann die Stimmung kippen: das Team informieren, dass das Thema bewegt wurde, ohne Inhalte weiterzugeben.",
+  "achtung": "Schildert der Jugendliche aktuelle Gewalt, Vernachlässigung oder Übergriffe zu Hause – bei sich oder bei Geschwistern –, gilt das Verfahren der Einrichtung zum Kinderschutz; die zuständige Leitung (Responsable) sofort einbeziehen und dem Jugendlichen vorher sagen, was Sie tun. Keine Verschwiegenheit zusagen. Nicht nachbohren, wenn er abbricht. Nach dieser Stunde kann die Stimmung kippen: das Team informieren, dass das Thema bewegt wurde, ohne Inhalte weiterzugeben.",
   "videos": [],
   "hintergrund": "Kinder bleiben ihren Eltern auch unter belastenden Umständen verbunden; diese Bindung anzugreifen verstärkt meist die Loyalität und den inneren Konflikt (Boszormenyi-Nagy & Spark; Bowlby). Die Übernahme elterlicher Aufgaben durch Kinder ist verbreitet und mit späterer Erschöpfung und Schuldgefühlen verbunden (Hooper). Die Weitergabe belastender Muster an die nächste Generation ist ein Risiko, aber nicht die Regel (Kaufman & Zigler). Verlässliche Beziehungen außerhalb der Familie wirken schützend (Masten).",
   "quellen": "Boszormenyi-Nagy & Spark (1973) · Bowlby (1988) · Hooper (2007) · Kaufman & Zigler (1987) · Masten (2014)."
@@ -345,6 +346,44 @@ export const LEKTIONEN = [{
     },
     {
      "f": "Das vermisse ich kein bisschen:",
+     "zeilen": 2
+    }
+   ]
+  },
+  {
+   "art": "mc",
+   "auftrag": "**Wohin mit der Enttäuschung? – Um vier Uhr war Jana enttäuscht. Raus kam es erst beim Joghurt – und am Abend.** – Was hätte Jana um vier Uhr helfen können? Kreuze an: //(zusammen · 8 Min.)//",
+   "fragen": [
+    {
+     "f": "",
+     "o": [
+      "der Erzieherin sagen: „Meine Mutter kommt nicht. Ich bin total enttäuscht.“",
+      "allein ins Zimmer gehen und Musik hören",
+      "mit einer Freundin reden",
+      "so tun, als wäre nichts"
+     ],
+     "r": []
+    }
+   ]
+  },
+  {
+   "art": "fragen",
+   "auftrag": "Wenn du willst – für dich oder für jemanden, den du kennst: Ein Besuch, ein Anruf oder ein Wochenende zu Hause war schwer. Dann …",
+   "fragen": [
+    {
+     "f": "… merke ich es so (Körper, Laune):",
+     "zeilen": 2
+    },
+    {
+     "f": "… mache ich oft:",
+     "zeilen": 2
+    },
+    {
+     "f": "… könnte mir helfen:",
+     "zeilen": 2
+    },
+    {
+     "f": "… sage ich es (wem?):",
      "zeilen": 2
     }
    ]
@@ -486,7 +525,7 @@ export const LEKTIONEN = [{
     {
      "titel": "Was ich trage",
      "icon": "arrow-back-up",
-     "text": "Nicht alles, was ich trage, gehört mir.\nWas davon kann ein Erwachsener übernehmen?\nWer hier kann das sein?\nMeine Aufgabe:",
+     "text": "Nicht alles, was ich trage, gehört mir.\nWas davon kann ein Erwachsener übernehmen?\nWer hier kann das sein?\nReden hilft: Kanner-Jugendtelefon **116 111**\nMeine Aufgabe:",
      "linien": 1
     }
    ]
@@ -521,10 +560,11 @@ export const LEKTIONEN = [{
       "Jana",
       "Kein Problem."
      ]
-    ]
+    ],
+    "nach": "Das stimmt nicht. Jana ist tief enttäuscht. Aber sie sagt es keinem."
    },
    {
-    "erz": "Dann streitet sie mit der Erzieherin wegen eines Joghurts. Am Abend sagt ein Mädchen:",
+    "erz": "Eine Stunde später streitet sie mit der Erzieherin – es geht nur um einen Joghurt. Am Abend sagt ein Mädchen:",
     "bild": [
      "lea:neutral",
      "jana:wuetend"
@@ -566,7 +606,7 @@ export const LEKTIONEN = [{
     "auftrag": "Überleg zuerst allein. Dann redet ihr.",
     "fragen": [
      {
-      "f": "Das Mädchen sagt, was Jana selbst denkt. Warum geht Jana trotzdem auf sie los?",
+      "f": "Jana ist selbst enttäuscht von ihrer Mutter. Warum geht sie trotzdem auf das Mädchen los?",
       "zeilen": 3
      }
     ]
@@ -584,7 +624,7 @@ export const LEKTIONEN = [{
    [
     {
      "titel": "Beides geht zusammen",
-     "text": "Du kannst jemanden lieben und wütend auf ihn sein. **Du kannst jemanden vermissen, der dir wehgetan hat.** Das ist kein Widerspruch."
+     "text": "Du kannst jemanden lieben und wütend auf ihn sein. **Du kannst jemanden vermissen, der dir wehgetan hat.** Das ist kein Widerspruch. Und wenn andere schimpfen, fühlt es sich an wie ein Angriff auf dich."
     },
     {
      "titel": "Nicht deine Aufgabe",

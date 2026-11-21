@@ -121,7 +121,7 @@ export const MODUL = {
     {
      "art": "frei",
      "auftrag": "",
-     "html": "<div class=\"ak-comic\" style=\"grid-template-columns:repeat(4,1fr)\"><div><div class=\"o\"><b>1</b>{i:bulb}</div><p>Zwei andere haben die Idee: einen Roller „leihen“.</p></div><div><div class=\"o\"><b>2</b>{i:scooter}</div><p>Ben fährt.</p></div><div><div class=\"o\"><b>3</b>{i:file-alert}</div><p>Jetzt gibt es eine Anzeige. Seine Mutter redet kaum noch.</p></div><div><div class=\"o\"><b>4</b>{i:mood-sad}</div><p>Ben denkt: „Jetzt bin ich endgültig so einer.“</p></div></div>"
+     "html": "<div class=\"ak-comic\" style=\"grid-template-columns:repeat(4,1fr)\"><div><div class=\"o\"><b>1</b>{i:bulb}</div><p>Zwei andere haben die Idee: Wir nehmen einen Roller, der uns nicht gehört.</p></div><div><div class=\"o\"><b>2</b>{i:scooter}</div><p>Ben fährt.</p></div><div><div class=\"o\"><b>3</b>{i:file-alert}</div><p>Jetzt gibt es eine Anzeige. Seine Mutter redet kaum noch.</p></div><div><div class=\"o\"><b>4</b>{i:mood-sad}</div><p>Ben denkt: „Jetzt bin ich endgültig so einer.“</p></div></div>"
     },
     {
      "art": "tabelle",
@@ -549,7 +549,7 @@ export const MODUL = {
  },
  "begleitungAktion": {
   "material": "Münzen oder Büroklammern, Zettel, Stifte, Handy",
-  "achtung": "Klären Sie vor der Stunde, was Sie mit neuen Informationen über Straftaten tun müssen, und sagen Sie es dem Jugendlichen, bevor er erzählt. In laufenden Verfahren keine Einzelheiten der Tat erfragen. Lebt die geschädigte Person im selben Haus, geht deren Schutz vor; ein Kontakt wird nur mit ihr und der zuständigen Leitung (Responsable) vorbereitet. Wird der Jugendliche von Älteren unter Druck gesetzt oder für Taten benutzt, ist das ein Schutzthema. Starke Scham kann in Selbstverletzung oder Suizidgedanken umschlagen – nachfragen.",
+  "achtung": "Klären Sie vor der Stunde, was Sie mit neuen Informationen über Straftaten tun müssen, und sagen Sie es dem Jugendlichen, bevor er erzählt. In laufenden Verfahren keine Einzelheiten der Tat erfragen. Lebt die geschädigte Person im selben Haus, geht deren Schutz vor; ein Kontakt wird nur mit ihr und der zuständigen Leitung (Responsable) vorbereitet. Wird der Jugendliche von Älteren unter Druck gesetzt oder für Taten benutzt, ist das ein Schutzthema. Starke Scham kann in Selbstverletzung oder Suizidgedanken umschlagen – nachfragen und das Kanner-Jugendtelefon 116 111 nennen.",
   "mehr": "Fall, Hintergrund, Quiz und Gesprächsfragen stehen im Heft SOLO #16 Mist gebaut."
  }
 }
