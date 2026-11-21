@@ -58,6 +58,8 @@ import { createHaustier } from './haustier.js';
 import { herausforderungPruefen } from './herausforderungen.js';
 import { AUFGABEN, aufgabenFuer, aufgabenStand } from './wochenaufgaben.js';
 import { FAEDEN } from './faeden.js';
+import { BOEGEN } from './boegen.js';
+import { muster } from './muster.js';
 import { GEDAECHTNIS, RUF, BELAUSCHT } from './gedaechtnis.js';
 import { PLAUDERN, BANK } from './stimmen.js';
 import { DEUTSCH, deutschBlatt } from './deutsch.js';
@@ -2018,6 +2020,29 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       await gespraech([['laurent', 'Hallo {name}! Lust auf ein paar Aufgaben?'], { wahl: [{ t: 'Ja, gern.', dann: [{ tu: 'lernmoment' }, ['laurent', 'Schön. Komm wieder, wann du willst.']] }, { t: 'Heute nicht.', dann: [['laurent', 'Kein Problem. Ich bin da.']] }] }]);
       return;
     }
+    // Freundschafts-Bogen (boegen.js): Riss, Funkstille oder Klärung, Versöhnung – je Teil ein Zeitfenster (Kapitel),
+    // höchstens ein Teil je Abschnitt, nur wenn man sich schon kennt. Der dritte Teil landet im Journal unter „Erinnerungen“.
+    {
+      const bg = BOEGEN[id];
+      if (bg) {
+        S.boegen = S.boegen || {};
+        const n = S.boegen[id] || 0, teil = bg[n], abschnitt = S.fertig ? 'e' + Math.floor(Date.now() / 600000) : String(S.schritt);
+        const kapB = S.fertig ? 10 : ((SCHRITTE[S.schritt] || {}).kap || 1);
+        const kennt = (S.herz[id] == null ? 1 : S.herz[id]) >= 2 || (S.freund[id] || 0) >= 30;
+        if (teil && kennt && kapB >= teil.ab && kapB <= teil.bis && S.merke['bgA_' + id] !== abschnitt && S.merke['fd_' + id] !== abschnitt) {
+          S.merke['bgA_' + id] = abschnitt; S.merke['fd_' + id] = abschnitt; S.boegen[id] = n + 1; sicherFreund(); freund(id, 6, 'tief'); sichern();
+          const g = teil.g(S.merke);
+          await gespraech(g);
+          if (n + 1 === bg.length) {
+            const erste = g.find((z) => Array.isArray(z));
+            S.erinnerungen = [...(S.erinnerungen || []), { wer: (LEUTE[id] || {}).name || id, farbe: (LEUTE[id] || {}).farbe || '#2b3a55', text: erste ? ersetze(erste[1]) : '', kap: kapB }];
+            sichern();
+          }
+          ui.toast('<b>' + ((LEUTE[id] || {}).name || id) + ': „' + teil.titel + '“</b><span>Freundschaft · Teil ' + (n + 1) + ' von ' + bg.length + '</span>');
+          return;
+        }
+      }
+    }
     // Gesprächsfaden (faeden.js): ein tieferes Gespräch, wenn die Freundschaft gewachsen ist – je Person höchstens eins
     // pro Abschnitt der Geschichte (nach dem Ende: alle zehn Minuten), damit sie sich über die Wochen verteilen
     const fd = FAEDEN[id];
@@ -2166,7 +2191,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   ui.onJournal = () => {
     if (!S || imGespraech) return;
     const b = bilanz();
-    ui.journal({ name: S.name, stundenplan: S.stundenplan, leute: b.leute, freunde: b.freunde, staerken: b.staerken, geheimnisse: GEHEIMNISSE.filter((g) => S.entdeckt.includes(g.id)), gesamt: GEHEIMNISSE.length, lernkarten: S.lernkarten || [], heft: S.skillsHeft || [], erinnerungen: S.erinnerungen || [], stamm: STAMM.map((q) => ({ name: q.name, farbe: q.farbe, ort: stammPlan(q, uhrJetzt).ort || q.ort || '', text: q.steckbrief || '', kennt: !!S.merke['stk_' + q.id], besuche: Object.keys(S.merke).filter((k) => k.startsWith('stb_' + q.id + '_')).length })), leiter: leiterJournal(), zaehler: zaehler(), pass: ABZEICHEN.map((x) => ({ sy: x.sy, t: x.t, hinweis: x.hinweis, hat: (S.pass || []).includes(x.id) })) });
+    ui.journal({ muster: muster(S.merke), name: S.name, stundenplan: S.stundenplan, leute: b.leute, freunde: b.freunde, staerken: b.staerken, geheimnisse: GEHEIMNISSE.filter((g) => S.entdeckt.includes(g.id)), gesamt: GEHEIMNISSE.length, lernkarten: S.lernkarten || [], heft: S.skillsHeft || [], erinnerungen: S.erinnerungen || [], stamm: STAMM.map((q) => ({ name: q.name, farbe: q.farbe, ort: stammPlan(q, uhrJetzt).ort || q.ort || '', text: q.steckbrief || '', kennt: !!S.merke['stk_' + q.id], besuche: Object.keys(S.merke).filter((k) => k.startsWith('stb_' + q.id + '_')).length })), leiter: leiterJournal(), zaehler: zaehler(), pass: ABZEICHEN.map((x) => ({ sy: x.sy, t: x.t, hinweis: x.hinweis, hat: (S.pass || []).includes(x.id) })) });
   };
   // Running Gags als Zähler im Journal (werden nie kleiner)
   function zaehler() {

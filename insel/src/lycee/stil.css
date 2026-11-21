@@ -1178,3 +1178,7 @@ kbd { display: inline-block; min-width: 1.5em; padding: 0 .35em; margin-right: .
 .ly-a-neben { margin-top: 7px; padding-top: 6px; border-top: 1px dashed rgba(43, 58, 85, .22); font-size: 13px; line-height: 1.35; color: #6b4a1d; }
 .ly-a-neben b { color: #8a5a10; } .ly-a-neben i { color: #5d6573; }
 .ly-auftrag.ruhe .ly-a-neben { margin-top: 4px; padding-top: 4px; }
+.ly-j-muster { background: #fff7e6; border: 2px solid #f0c36d; border-radius: 12px; padding: 10px 14px; margin: 6px 0 12px; }
+.ly-j-muster h3 { margin: 0 0 6px; font-size: 1rem; }
+.ly-j-muster ul { margin: 0 0 6px; padding-left: 1.2em; display: grid; gap: 4px; }
+.ly-j-muster small { color: #7a6a4a; }
