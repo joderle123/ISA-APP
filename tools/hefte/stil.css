@@ -631,3 +631,55 @@ table.raster.stellen td { padding: 1.5mm 1mm; }
 .bahn { margin: 2mm auto; width: 100%; } .bahn-svg { width: 140mm; max-width: 100%; display: block; margin: 0 auto; }
 .weit { margin: 2mm auto; width: 100%; } .weit-svg { width: 150mm; max-width: 100%; display: block; margin: 0 auto; }
 .karte { margin: 2mm auto; width: 100%; } .karte-svg { width: 140mm; max-width: 100%; display: block; margin: 0 auto; }
+/* ---------- SOLO (kompakte Hefte): Skala, Pole, Video, hohe Tabelle, Seiten für die Bezugsperson ---------- */
+.raster.hoch td { height: 15mm; }
+.skala { display: grid; gap: 3mm; margin: 2mm 0; }
+.sk-pole { display: grid; grid-template-columns: 52mm 1fr 1fr; font-size: 9.5pt; color: var(--leise); }
+.sk-pole span:last-child { text-align: right; }
+.sk-z { display: grid; grid-template-columns: 52mm 1fr; align-items: center; gap: 2mm; }
+.sk-t { font-size: 12pt; font-weight: 600; }
+.sk-k { display: flex; justify-content: space-between; }
+.sk-k i { font-style: normal; width: 8.6mm; height: 8.6mm; border: 0.35mm solid var(--linie); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: Lexend; font-size: 10.5pt; color: var(--leise); }
+.pole { margin: 2mm 0; display: grid; gap: 2.4mm; }
+.po-kopf { display: grid; grid-template-columns: 62mm 1fr; align-items: end; }
+.po-kopf > span:first-child { grid-row: 1; }
+.po-kopf .po-l, .po-kopf .po-r, .po-kopf .po-mitte { grid-column: 2; grid-row: 1; display: flex; align-items: center; gap: 1.5mm; font-family: Lexend; font-size: 10pt; color: var(--f-tief); }
+.po-kopf .po-r { justify-content: flex-end; }
+.po-kopf .po-mitte { justify-content: center; gap: 8mm; color: var(--sehr-leise); font-size: 8.5pt; }
+.po-kopf .po-mitte em { font-style: normal; }
+.po-kopf svg { width: 8mm; height: 8mm; color: var(--f); }
+.po-z { display: grid; grid-template-columns: 62mm 1fr; align-items: center; padding: 1.6mm 0; border-bottom: 0.25mm solid var(--rahmen); }
+.po-t { font-size: 12pt; }
+.po-k { display: flex; justify-content: space-between; padding: 0 2mm; }
+.po-k i { width: 7.5mm; height: 7.5mm; border: 0.4mm solid var(--f-mittel); border-radius: 50%; background: var(--f-zart); }
+.clip { display: grid; grid-template-columns: 32mm 1fr; gap: 4mm; align-items: start; border: 0.4mm solid var(--rahmen); border-radius: 4mm; padding: 3.5mm; margin: 2mm 0; background: var(--flaeche); }
+.clip .qr svg { width: 30mm; height: 30mm; }
+.cl-k { display: flex; align-items: center; gap: 1.5mm; font-size: 9pt; color: var(--leise); text-transform: uppercase; letter-spacing: 0.04em; }
+.cl-k svg { width: 4.5mm; height: 4.5mm; }
+.cl-t > b { display: block; font-family: Lexend; font-size: 13pt; margin: 1mm 0 2mm; }
+.cl-f { display: flex; gap: 2mm; align-items: flex-start; font-size: 12pt; }
+.cl-f svg { width: 5.5mm; height: 5.5mm; flex: none; color: var(--f); }
+.begleitung h2 { font-family: Lexend; font-size: 20pt; margin: 2mm 0 4mm; color: var(--f-tief); }
+.bg-fakten { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2.5mm; margin-bottom: 3mm; }
+.bg-fakten div { border: 0.35mm solid var(--rahmen); border-radius: 3mm; padding: 2mm 3mm; }
+.bg-fakten span { display: block; font-size: 8pt; text-transform: uppercase; letter-spacing: 0.05em; color: var(--leise); }
+.bg-fakten b { font-size: 10.5pt; }
+.bg-zwei { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm; }
+.bg-karte { border: 0.4mm solid var(--rahmen); border-left: 2.4mm solid var(--f); border-radius: 3mm; padding: 2.5mm 4mm; margin-bottom: 3mm; break-inside: avoid; font-size: 10pt; line-height: 1.42; }
+.bg-karte h4 { display: flex; align-items: center; gap: 1.6mm; font-family: Lexend; font-size: 11.5pt; margin: 0 0 1.5mm; color: var(--f-tief); }
+.bg-karte h4 svg { width: 5mm; height: 5mm; }
+.bg-karte ul { margin: 0; padding-left: 4.5mm; }
+.bg-karte p { margin: 0 0 1.5mm; }
+.bg-karte.achtung { border-left-color: #d0312d; background: #fdf0ef; }
+.bg-ablauf, .bg-quiz { width: 100%; border-collapse: collapse; font-size: 9.6pt; }
+.bg-ablauf td, .bg-quiz td, .bg-quiz th { border-bottom: 0.25mm solid var(--rahmen); padding: 1.3mm 1.5mm; vertical-align: top; text-align: left; }
+.bg-ablauf td:first-child { width: 20mm; font-weight: 700; color: var(--f-tief); white-space: nowrap; }
+.bg-quiz th { font-size: 8.5pt; text-transform: uppercase; color: var(--leise); }
+.bg-quiz .klein, .begleitung .klein { font-size: 8.6pt; color: var(--leise); }
+.bd.drei { grid-template-columns: repeat(3, 1fr); }
+.bd.drei .figs { height: 46mm; }
+.bd.drei .figs svg { height: 45mm; max-width: 30mm; }
+.bd.drei .cap { min-height: 15mm; }
+.lesetext.breit .rand .woerter { display: grid; grid-template-columns: repeat(6, 1fr); gap: 1mm 3mm; }
+.lesetext.breit .rand .woerter h5 { grid-column: 1 / -1; margin-bottom: 0.5mm; }
+.bg-karte.quiz { break-inside: auto; }
