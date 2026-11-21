@@ -44,7 +44,7 @@ export function stunden(d: Heft): Stunde[] {
       fuerDich('mein Vertrag', '6 Min.', fragen(null, satz('Blätter zurück zu Station 1: Was soll hier nicht passieren – und welche Regel schützt dich davor?', 'Diese Regel:'), kreuz('Unterschreibst du den Vertrag gern?', 'ja', 'halb', 'nein'))),
       st('Der Skill: 5-4-3-2-1', '12 Min.', 'alle · draußen', 'eye', 'Alle gehen zusammen raus, jede Person sucht für sich. Sie gehen mit.',
         text('Wenn der Kopf voll ist, holen dich deine Sinne zurück. Probiert es draußen aus – acht Minuten, ohne Handy: Sucht **5** Dinge zum Sehen, **4** zum Spüren, **3** zum Hören, **2** zum Riechen. (**1** zum Schmecken lassen wir draußen weg.)')),
-      schluss(regeln, 'Toms Jacke', [kreuz('Nächste Woche: Zieht Tom die Jacke aus, wenn eure Regeln halten?', 'ja', 'vielleicht', 'nein'), zeile('Was braucht er dafür am meisten?')], ['1', '2', '3']),
+      schluss(regeln, 'Toms Jacke', [kreuz('Nächste Woche: Zieht Tom die Jacke aus, wenn eure Regeln halten?', 'ja', 'vielleicht', 'nein'), kreuz('Dein Plan: Wann probierst du 5-4-3-2-1 diese Woche?', 'abends im Bett', 'in der Schule', 'nach Streit', 'unterwegs')], ['1', '2', '3']),
     ),
   )
 
@@ -61,7 +61,7 @@ export function stunden(d: Heft): Stunde[] {
         kreuzU('Warum war die Frage mit dem Bus ein guter Anfang? Mehrere Kreuze gehen.', 'Sie ist harmlos.', 'Fast jeder kennt das.', 'Man muss nichts Privates erzählen.'),
       ]),
       stimmtDas(wer),
-      fuerDich('meine Frage für gleich', '6 Min.', fragen(null, kreuz('Was fällt dir am leichtesten?', 'fragen', 'antworten', 'zuhören'), satz('Gleich fragt ihr euch gegenseitig. Was willst du von den anderen wissen?', 'Meine Frage:'))),
+      fuerDich('meine Frage für gleich', '6 Min.', fragen(null, kreuzU('So hakst du gleich nach – kreuz deinen Satz an:', '„Welche?“ – zum Beispiel: „Welche Sprachen?“', '„Wie war das?“', '„Und dann?“'), satz('Gleich fragt ihr euch gegenseitig. Was willst du von den anderen wissen?', 'Meine Frage:'))),
     ),
     seite(
       runde('Treffer-Jagd', '25 Min.', 'alle · mit Leitung', 'target-arrow', {
@@ -106,7 +106,7 @@ export function stunden(d: Heft): Stunde[] {
         ],
         regeln: ['**Augen zu ist freiwillig.** Wer nicht will, lotst nur.', '**Stopp** heißt: sofort stehen bleiben, Augen auf. Ohne Begründung.', 'Keine Streiche. Wer lotst, trägt die Verantwortung.'],
         zu3: 'Ein Paar ist dran, die dritte Person steht im Tor. Dann wechseln. Zu fünft: ein Paar und ein Dreier, im Dreier lotsen zwei abwechselnd. Die Leitung passt auf.',
-        auswertung: ['Wessen Stimme konntet ihr am besten folgen – und warum?', 'Was hat euer Lotse gut gemacht?'],
+        auswertung: ['Wessen Stimme konntet ihr am besten folgen – und warum?', 'Was hat euer Lotse gut gemacht?', 'Und im echten Leben: Woran merkst du, dass du dich auf jemanden verlassen kannst? Ein Zeichen reicht – ohne Namen.'],
       }, { danach: [fragen(null, ...team.moves[0].fragen.slice(0, 2))], leitung: 'Augen zu ist freiwillig. Auf jedes Stopp sofort reagieren – das ist der Kern der Stunde.' }),
       modell(team, 'was ein Team hält', ['users', 'steering-wheel', 'hand-stop'], { zeit: '8 Min.', fragen: [kreuz('Was davon habt ihr beim Lotsen gebraucht?', 'Jeder zählt', 'Wer führt, trägt', 'Stopp gilt sofort')] }),
     ),

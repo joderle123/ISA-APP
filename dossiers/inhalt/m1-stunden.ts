@@ -166,7 +166,7 @@ const tank: Stunde = {
                 { t: 'Spaß und Neues', punkte: ['einen neuen Weg gehen', 'etwas zum ersten Mal ausprobieren', 'ein Lied laut hören'] },
               ],
             },
-            { art: 'fragen', fragen: [{ f: 'Blätter zurück zu Station 1: Was hat dich heute genervt – und welcher Tank steckte dahinter?', satz: ['Der Tank dahinter:'] }, { f: 'Kreuz oben eine Tankstelle für diesen Tank an – oder schreib eine aus der großen Runde auf:', satz: ['Meine Tankstelle:'] }] },
+            { art: 'fragen', fragen: [{ f: 'Blätter zurück zu Station 1: Was hat dich heute genervt – und welcher Tank steckte dahinter?', satz: ['Der Tank dahinter:'] }, { f: 'Kreuz oben eine Tankstelle für diesen Tank an – oder nimm eine aus der großen Runde. Dein Plan: wann und wo? (Beispiel: Wenn ich nach der Schule heimkomme, esse ich zuerst etwas.)', satz: ['Wenn ich (wann? wo?) …', 'dann (meine Tankstelle) …'] }] },
           ],
         },
         {
@@ -301,6 +301,7 @@ const lautLeise: Stunde = {
                 { f: 'Was ist gut daran – und was ist schwierig daran?', preis: { erste: '', kopf: ['Das ist gut daran', 'Das ist schwierig daran'], optionen: ['laut sein', 'leise sein'] } },
                 { f: 'Meine Rolle beim Brückenbau war:', kreuz: ['wie immer', 'ungewohnt, aber okay', 'ungewohnt und anstrengend'] },
                 { f: 'Was möchtest du öfter können?', kreuz: ['öfter etwas sagen', 'öfter zuhören', 'passt so'] },
+                { f: 'Dein Versuch für die Woche: als Erstes etwas sagen oder nur zuhören – wo genau? (Station 2: Wo bist du lauter als hier?)', satz: ['Wenn ich (wo? bei wem?) …', 'dann …'] },
               ],
             },
           ],
@@ -424,7 +425,7 @@ const kannst: Stunde = {
               fragen: [
                 { f: 'Mein Baum:', satz: ['Früchte – darauf bin ich stolz:', 'Äste – das lerne ich gerade:', 'Stamm – das kann ich:', 'Wurzeln – das hält mich:'] },
                 { f: 'Wer mag, zeichnet ihn. Krumm ist erlaubt – die meisten Bäume sind es.', feld: 46 },
-                { f: 'Welche Stärken-Karten hast du heute bekommen – und welche Stärke kennt die Gruppe noch nicht?', satz: ['Bekommen:', 'Kennt noch keiner:'] },
+                { f: 'Seite 2 deiner Akte – wie bei Yusuf: Nimm eine Karte, die du heute bekommen hast, oder eine Stärke vom Stamm. Woran sieht man sie? Denk an einen Moment.', satz: ['Ich kann gut:', 'Beweis – das war, als …'] },
               ],
             },
           ],

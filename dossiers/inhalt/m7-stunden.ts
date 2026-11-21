@@ -56,7 +56,8 @@ export function stunden(d: Heft): Stunde[] {
   const DRUCK = ['„Vertraust du mir nicht?“', '„Wenn du mich magst, machst du das.“', '„Ich sag’s sonst allen.“', '„Dachte, du bist anders.“', '„Kein Stress. Nur wenn du willst.“', '„Schick mal ein Foto vom Konzert!“', '„Okay, dann nicht. Alles gut.“', '„Darf ich das posten?“']
   const s2 = stunde('Was passiert mit dem, was du einmal geschickt hast?', ['erklären, warum „nur für dich“ im Netz nicht gilt', 'Druck von einer normalen Bitte unterscheiden', 'sagen, was du tust, wenn etwas schiefgeht'],
     seite(
-      ankommen('senden', kreuz('Hast du schon mal etwas geschickt und es danach bereut?', 'ja', 'nein', 'sage ich nicht'), kreuz('Fragst du, bevor du ein Foto von jemandem postest?', 'immer', 'manchmal', 'nie')),
+      st('Ankommen: senden – und dein Plan', '5 Min.', 'allein · dann alle', 'door-enter', 'Erst still ankreuzen. Dann eine Minute: Was hat beim Wenn-dann geholfen, was nicht? Keine Zahlen nennen. Bei 0 Haken: Plan kleiner machen, nicht aufgeben.',
+        fragen('Bevor es losgeht – nur für dich. Frage 2 brauchst du am Ende noch einmal.', kreuz('Dein Wenn-dann aus Stunde 1: Wie viele Haken hast du?', 'keinen', '1 bis 3', '4 bis 7', 'vergessen'), kreuz('Fragst du, bevor du ein Foto von jemandem postest?', 'immer', 'manchmal', 'nie'))),
       st('Erst machen: die Screenshot-Kette', '8 Min.', 'alle', 'copy', 'Eine Kopie stecken Sie heimlich ein. Am Ende fragen: Kann man alle zurückholen?',
         text('Eine Person schreibt ein **erfundenes** Geheimnis auf einen Zettel und gibt ihn weiter: „Nur für dich.“ Wer den Zettel hat, schreibt ihn ab und legt die Kopie in die Mitte. Von dort schreiben alle weiter ab. Zwei Minuten. Dann zählen.'),
         fragen(null, kreuz('Kann die erste Person alle Kopien zurückholen?', 'ja', 'nein'))),
@@ -110,7 +111,9 @@ export function stunden(d: Heft): Stunde[] {
         [kreuz('War dein Tipp richtig?', 'ja', 'nein', 'halb'), kreuzU('Was hat Tom richtig gemacht?', 'eine zweite Quelle gesucht', 'sofort geteilt')]),
       st('Zu zweit: der Fall im Chat', '8 Min.', 'zu zweit', 'message-circle', 'Prüfen in zwei Minuten: Seite der Stadt oder des Busunternehmens ansehen, eine zweite Quelle suchen.',
         fragen(fake.moves[0].kontext ?? null, fake.moves[0].fragen[0], kreuzU('Wie prüfst du das in zwei Minuten?', 'auf der Seite der Stadt oder des Busunternehmens nachsehen', 'im Chat fragen, ob es stimmt'))),
-      stimmtDas(fake),
+      st('Erst machen: der Zwei-Minuten-Check', '8 Min.', 'zu zweit · alle gleichzeitig', 'search', 'Ein Gerät pro Paar oder das Gerät der Leitung. Stoppuhr. Nur suchen, nichts teilen. Danach: Wer hat was gefunden?',
+        text('Nehmt die Bus-Nachricht von oben – oder einen Beitrag aus deinem Feed, bei dem du gestutzt hast (wer mag). **Zwei Minuten:** Wer sagt das? Steht es bei der Stadt, beim Busunternehmen oder in einer Zeitung?'),
+        fragen(null, kreuz('Was habt ihr gefunden?', 'eine echte Quelle', 'keine zweite Quelle – Finger weg', 'nicht geschafft'), kreuz('Wie lange hat es gedauert?', 'unter 1 Min.', '1–2 Min.', 'länger'))),
     ),
     seite(
       runde('die Schlagzeilen-Wette', '25 Min.', 'zwei Teams · am Tisch', 'news', {

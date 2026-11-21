@@ -2,7 +2,7 @@
 // Kein Streit wird nachgespielt: Reaktionen werden gelegt, Antworten geschrieben, Handlungen sortiert.
 // Stunde 1 beginnt mit einem Versuch an der Linie, Stunde 2 mit dem Schwarm, Stunde 3 mit einer Zeitleiste.
 import type { Frage, Heft, Stunde } from '../typen'
-import { ankommen, clip, fall, fragen, fuerDich, karten, kreuz, kreuzU, material, modell, runde, schluss, seite, st, stimmtDas, stunde, strich, text } from './stunden-hilfe'
+import { ankommen, clip, fall, fragen, fuerDich, karten, kreuz, kreuzU, material, modell, runde, satz, schluss, seite, st, stimmtDas, stunde, strich, text } from './stunden-hilfe'
 
 const kreis = (f: string, ...l: string[]): Frage => ({ f, kreis: l })
 
@@ -48,7 +48,10 @@ export function stunden(d: Heft): Stunde[] {
         wertung: { kopf: ['Punkte', 'Tiere', 'Treppe', 'Eule', 'Summe'], zeilen: ['Team A', 'Team B'] },
         auswertung: ['Welches Tier hatte bei euch die meisten Karten, die ihr von euch kennt?', 'Welche Stufe der Treppe wird am häufigsten übersprungen?'],
       }, { leitung: 'Streit für Teil 3: „Zwei wollen denselben Platz.“ · „Einer hat das Ladekabel des anderen genommen.“ · „Zwei wollen verschiedene Musik.“' }),
-      fuerDich('Wie viel Tier steckt in mir?', '8 Min.', fragen(hai.moves[0].kontext ?? null, hai.moves[0].fragen[0])),
+      fuerDich('mein Streit, zweiter Versuch', '8 Min.', fragen('Ein Streit aus den letzten Wochen – deiner oder einer, den du gesehen hast. Sieht keiner.',
+        kreuz('Welches Tier war vorne?', 'Hai', 'Schildkröte', 'Chamäleon', 'Fuchs', 'Eule'),
+        kreuzU('Welche Stufe der Treppe hat gefehlt?', 'Stopp und runterkommen', 'Ich-Satz sagen', 'zuhören und zusammenfassen', 'Lösungen sammeln', 'einigen'),
+        satz('Zweiter Versuch – der erste Satz der Eule:', '„'))),
     ),
     seite(
       material('5 Tiere, 15 Reaktionen, 5 Stufen', 6,
@@ -94,7 +97,9 @@ export function stunden(d: Heft): Stunde[] {
         notiz: { titel: 'Das Nein, das zu mir passt:', linien: 1 },
         auswertung: ['Welche Nein-Art hat am besten gehalten?', 'Was passiert bei echten Freunden nach deinem Nein?'],
       }, { leitung: 'Nur Sie drängeln – freundlich und hartnäckig. Ein Nein wird nie abgewertet.' }),
-      fuerDich('Wie weit raus?', '6 Min.', fragen(alle.moves[0].kontext ?? null, ...alle.moves[0].fragen)),
+      fuerDich('mein Nein für die Woche', '6 Min.', fragen('Wo könnte dich diese Woche jemand drängeln? Etwas Kleines reicht. Sieht keiner.',
+        kreuz('Wo?', 'Schule oder Betrieb', 'Wohngruppe', 'draußen mit Freunden', 'online'),
+        satz('Mein Plan:', 'Wenn jemand sagt: „', 'dann sage ich (dein Nein aus der Runde): „', 'Mit mir Nein sagen könnte (nur für dich):'))),
     ),
     seite(
       material('4 Nein-Arten und 9 Drängel-Karten', 6,
@@ -146,7 +151,9 @@ export function stunden(d: Heft): Stunde[] {
     ),
     seite(
       material('12 Karten', 5, karten(3, 18, 'Ausschneiden, mischen, verdeckt stapeln.', [...TUN].sort((a, b) => a[0].length - b[0].length).map(([t]) => ({ t })))),
-      fuerDich('die Leiter', '8 Min.', fragen(null, ...zuschauer.moves[1].fragen)),
+      fuerDich('die Leiter', '8 Min.', fragen(null, ...zuschauer.moves[1].fragen,
+        kreuz('Diese Woche: Denk an eine Person, die oft allein steht (Namen nicht aufschreiben). Wo?', 'Pause', 'Kantine', 'Bus', 'Gruppenchat'),
+        kreuz('Womit zeigst du ihr, dass du sie siehst?', 'ein Hallo', 'ein Platz', 'eine Nachricht'))),
       schluss(zuschauer, 'Mittwoch auf der Treppe', [kreuzU('Noah sieht Lea auf der Treppe. Was kann er jetzt noch tun?', 'hingehen: „Das mit dem Clip war mies. Tut mir leid.“', 'so tun, als wäre nichts'), kreuz('Schau auf Station 1: Ist Weiterleiten „etwas machen“?', 'ja', 'nein')], ['gezeigt']),
     ),
   )

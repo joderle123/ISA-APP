@@ -2,7 +2,7 @@
 // Stunde 1 ist eine Versteigerung, Stunde 2 ein Rennen mit vollem Rucksack, Stunde 3 ein Rückblick mit Karten aus dem ganzen
 // Jahr, die letzte Stunde ein Abschied mit Stärken-Post und Brief. Stunde 3 kommt ohne Clip aus (der frühere passte nicht).
 import type { Frage, Heft, Stunde } from '../typen'
-import { ankommen, clip, fall, fragen, fuerDich, karten, kreuz, kreuzU, material, modell, runde, schluss, seite, st, stimmtDas, stunde, strich, tabelle, text } from './stunden-hilfe'
+import { ankommen, clip, fall, fragen, fuerDich, karten, kreuz, kreuzU, material, modell, runde, satz, schluss, seite, st, stimmtDas, stunde, strich, tabelle, text } from './stunden-hilfe'
 
 const kreis = (f: string, ...l: string[]): Frage => ({ f, kreis: l })
 
@@ -42,11 +42,13 @@ export function stunden(d: Heft): Stunde[] {
         wertung: { kopf: ['Punkte', 'ausgegeben', 'Rest', 'echte Tipps × 30', 'Summe'], zeilen: ['Team A', 'Team B'] },
         auswertung: ['Für welchen Mythos habt ihr am meisten bezahlt?', 'Welchen echten Tipp könnte Nele heute Abend ausprobieren?'],
       }, { leitung: 'Mythen sind die Karten 2, 4, 6 und 8. Erst nach der letzten Karte auflösen.' }),
-      fuerDich('Neles Abend', '6 Min.', fragen(null, nacht.moves[1].fragen[0])),
+
     ),
     seite(
       material('10 Tipp-Karten', 6, karten(2, 14, 'Ausschneiden. Die Leitung versteigert sie der Reihe nach.', TIPPS.map(([t], i) => ({ t, marke: `Tipp ${i + 1}` })))),
-      fuerDich('meine Nacht', '6 Min.', fragen('Sieht keiner.', kreis('Was hält dich wach? Kreise ein.', 'Handy', 'Gedanken', 'Zocken', 'Lärm', 'Sorgen', 'Koffein'), kreuzU('Mein Schritt für heute Abend:', 'Handy außer Reichweite', 'kein Koffein mehr ab dem Nachmittag', 'zur gleichen Zeit ins Bett wie gestern'))),
+      fuerDich('meine Nacht', '8 Min.', fragen('Sieht keiner.', kreis('Was hält dich wach? Kreise ein.', 'Handy', 'Gedanken', 'Zocken', 'Lärm', 'Sorgen', 'Koffein'),
+        satz('Mein Plan für heute Abend – mit Uhrzeit und Ort:', 'Um ___ Uhr liegt mein Handy hier:'),
+        kreuz('Rattert der Kopf im Bett, nehme ich:', '4 ein, 8 aus', 'Gedanken auf einen Zettel', '5-4-3-2-1'))),
       schluss(nacht, 'noch einmal: die Lehrerin', [kreuzU('Die Lehrerin sagt: „Geh halt früher ins Bett.“ Was stimmt?', 'Früher hinlegen reicht nicht – Licht, Handy und Koffein zählen auch.', 'Sie hat recht. Mehr braucht es nicht.'), strich('Schau auf Station 1. Wie wach willst du morgen früh sein?', 'todmüde', 'hellwach')], ['1', '2', '3']),
     ),
   )
@@ -84,12 +86,14 @@ export function stunden(d: Heft): Stunde[] {
         wertung: { kopf: ['Zeit', 'Lauf 1 · voll', 'Bücher raus', 'Lauf 2'], zeilen: ['Team A', 'Team B'] },
         auswertung: ['Welches Buch würdet ihr im echten Leben zuerst rausnehmen?', 'Welches Buch bleibt drin – und wer könnte tragen helfen?'],
       }),
-      st('Zu zweit: Yusufs Tag, zweiter Versuch', '6 Min.', 'zu zweit', 'refresh', 'Kleine Schritte loben: ein Brot, Wasser, fünf Minuten raus. Ein Stichwort pro Zeile reicht.',
-        fragen(treib.moves[1].kontext ?? null, ...treib.moves[1].fragen)),
+      fuerDich('mein Tag, zweiter Versuch', '6 Min.', fragen('Wie bei Yusuf: ein Tag, an dem du gekippt bist – oder jemand, den du kennst. Sieht keiner.',
+        kreis('Was war an dem Tag leer? Kreise ein.', 'Schlaf', 'Essen', 'Trinken', 'Bewegung', 'Pause', 'jemand zum Reden'),
+        kreuz('Wann ist es gekippt?', 'morgens', 'mittags', 'nachmittags', 'abends'),
+        satz('Mein Mini-Schritt – eine Stunde vorher:', 'Wenn es ___ Uhr ist, dann'))),
     ),
     seite(
       material('12 Stress-Karten', 5, karten(4, 17, 'Ausschneiden. Jede Karte kommt in ein Buch.', STRESS.map((t) => ({ t })))),
-      schluss(treib, 'Yusuf um 14:45', [kreuzU('Bevor du das nächste Mal streitest: Was prüfst du zuerst?', 'meinen Tank: gegessen, getrunken, geschlafen?', 'wer schuld ist'), strich('Schau auf Station 1. Wie voll ist dein Akku jetzt?', 'leer', 'voll'), { f: 'Mein Mini-Schritt für vier Tage – so klein, dass er sicher klappt:', linien: 1 }], ['1', '2', '3', '4']),
+      schluss(treib, 'Yusuf um 14:45', [kreuzU('Bevor du das nächste Mal streitest: Was prüfst du zuerst?', 'meinen Tank: gegessen, getrunken, geschlafen?', 'wer schuld ist'), strich('Schau auf Station 1. Wie voll ist dein Akku jetzt?', 'leer', 'voll')], ['1', '2', '3', '4']),
     ),
   )
 
@@ -106,8 +110,11 @@ export function stunden(d: Heft): Stunde[] {
     ),
     seite(
       fuerDich('meine Jahreskurve', '12 Min.', fragen(bleibt.moves[0].kontext ?? null, ...bleibt.moves[0].fragen)),
-      stimmtDas(bleibt),
-      fuerDich('meine Top 3', '6 Min.', fragen(null, bleibt.moves[1].fragen[0])),
+      stimmtDas(bleibt, '6 Min.'),
+      st('Zu zweit: mein Skill zum Mitnehmen', '8 Min.', 'allein · dann zu zweit', 'arrows-exchange', 'Erst still ankreuzen. Dann erklären alle Paare gleichzeitig ihren Skill Nummer eins, je eine Minute – wie Lio dem Neuen. Bei ungerader Zahl ein Dreier.',
+        fragen(null, bleibt.moves[1].fragen[0],
+          satz('So erkläre ich meinen Skill Nummer eins:', 'Er heißt … und geht so:', 'Er hilft, wenn'),
+          kreuz('Wem zeigst du ihn diese Woche?', 'Familie', 'Freund oder Freundin', 'jemand in der Wohngruppe', 'weiß ich noch nicht'))),
     ),
     seite(
       runde('das Jahr in 16 Karten', '25 Min.', 'zwei Teams · am Tisch', 'cards', {
@@ -178,7 +185,6 @@ export const loesungen: string[][] = [
   [
     'Der Fall: Nele war um zehn im Bett, aber nicht müde – ihre innere Uhr geht nach. Geschlafen hat sie höchstens viereinhalb Stunden (1:50 bis 6:30).',
     'Schlaf-Auktion: Mythen sind die Tipps 2 (Energy-Drink), 4 (Handy im Bett), 6 (Wochenende) und 8 (auf die Uhr schauen). Alle anderen sind echt.',
-    'Neles Abend: Es helfen gleiche Zeit, kühles dunkles Zimmer, Tageslicht am Morgen. Es schaden Energy-Drink und Handy im Bett.',
   ],
   [
     'Der Fall: Yusufs Tank war leer – seit dem Vorabend nichts Richtiges gegessen, dazu zwei Energy-Drinks. Gebrüllt hat er selbst – aber mit leerem Tank kippt man viel schneller.',

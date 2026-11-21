@@ -27,7 +27,9 @@ export function stunden(d: Heft): Stunde[] {
       modell(dieZahl, 'das Thermometer', ['circle-check', 'alert-triangle', 'flame'], { intro: 'Druck kann man messen – mit einer Zahl von 0 bis 100. Drei Zonen:' }),
       clip(dieZahl, 'Woher kommt die Wut?', [kreuzU('Woher kommt Wut?', 'Sie kommt aus dem Nichts.', 'Sie baut sich auf.', 'Manche sind halt so.')], ['Das macht Wut im Körper:', 'Das hilft:'],
         [kreuz('War dein Tipp richtig?', 'ja', 'nein', 'halb'), kreuzU('Finn sagt: „Ich wollte das gar nicht.“ Stimmt das?', 'Ja. Bei Rot schaltet der Kopf fast ab – darum muss man vorher handeln.', 'Nein. Er wollte es.')]),
-      fuerDich('Welche Zone?', '8 Min.', fragen(null, dieZahl.moves[0].fragen[0])),
+      fuerDich('dein Tag wie Finns', '8 Min.', fragen('Denk an einen Tag, an dem es bei dir fast geknallt hat – oder bei jemandem, den du kennst. Nur für dich.',
+        kreuz('Was hat die Zahl schon **vorher** hochgetrieben? Mehrere Kreuze gehen.', 'wenig Schlaf', 'kein Essen', 'Streit', 'Lärm', 'Ärger in der Schule', 'Handy oder Chat', 'weiß nicht'),
+        kreuz('Wo war die Zahl kurz vor dem letzten Tropfen?', 'Grün', 'Gelb', 'Rot'), satz('Wo hättest du bremsen können – wie Finn am Morgen?', 'Bei Zahl … hätte ich'))),
     ),
     seite(
       runde('der Druck-Tag', '25 Min.', 'zwei Teams · am Tisch', 'dice', {
@@ -106,14 +108,14 @@ export function stunden(d: Heft): Stunde[] {
           { t: '4-8', x: '4 ein – 8 aus. So wie Sami.', marke: 'Karte 5' },
           { t: 'Eure Karte', x: 'Kennt ihr noch eine Art zu atmen? Schreibt sie auf die Rückseite.', marke: 'Karte 6' },
         ])),
-      schluss(koerper, 'vor dem Büro', [kreuzU('Du wartest vor einem wichtigen Gespräch. Dein Bein wippt. Was machst du?', 'länger ausatmen als einatmen', 'mir sagen: „Reiß dich zusammen.“', 'nichts'), zahl('Schau auf Station 1. Wie hoch ist dein Druck jetzt?', 'jetzt')], ['Zahl vorher', 'Skill', 'Zahl nachher']),
+      schluss(koerper, 'vor dem Büro', [satz('Dein Test für die Woche: Wann wird es bei dir eng? (Deine höchste Zahl von letzter Woche hilft.)', 'Wenn ich (wann? wo?) …', 'dann mache ich (mein Favorit) …'), zahl('Schau auf Station 1. Wie hoch ist dein Druck jetzt?', 'jetzt')], ['Zahl vorher', 'Skill', 'Zahl nachher']),
     ),
   )
 
   /* ---------- Stunde 3 · Reiz gegen Reiz ---------- */
   const s3 = stunde('Was holt dich zurück, wenn innen alles dreht?', ['erklären, warum starke Reize den Kopf bremsen', 'fünf Sinne ausprobieren und vergleichen', 'sagen, was in deine Tasche kommt'],
     seite(
-      ankommen('was dich runterbringt', zahl('Wie hoch ist dein Druck gerade?', 'jetzt'), kreis('Was beruhigt dich am ehesten? Kreise ein.', 'Musik', 'Kälte', 'ein Duft', 'etwas in der Hand', 'Bewegung', 'weiß nicht')),
+      ankommen('was dich runterbringt', kreuzU('Dein Test von letzter Woche – Favorit im echten Leben: Was hat deine Zahl gemacht?', 'runter', 'gleich', 'rauf', 'nicht getestet'), kreis('Was beruhigt dich am ehesten? Kreise ein.', 'Musik', 'Kälte', 'ein Duft', 'etwas in der Hand', 'Bewegung', 'weiß nicht')),
       fall(reiz, 'Amira und das kalte Wasser', [
         kreis('Was hat Amira getan? Kreise alles ein.', 'kaltes Wasser', 'Fliesen gezählt', 'Cousine angerufen', 'Tür geknallt', 'Handy geworfen'),
         kreuzU('Was hat das kalte Wasser mit ihrem Kopf gemacht?', 'Es hat ihn ins Jetzt geholt.', 'Es hat sie bestraft.'),
@@ -196,7 +198,7 @@ export function stunden(d: Heft): Stunde[] {
       material('der ABC-Bogen', 6,
         tabelle('8mm auto 8mm auto 8mm auto', ['', 'Tier, Stadt oder Verein', '', '', '', ''], [['A', '', 'J', '', 'S', ''], ['B', '', 'K', '', 'T', ''], ['C', '', 'L', '', 'U', ''], ['D', '', 'M', '', 'V', ''], ['E', '', 'N', '', 'W', ''], ['F', '', 'O', '', 'X', ''], ['G', '', 'P', '', 'Y', ''], ['H', '', 'Q', '', 'Z', ''], ['I', '', 'R', '', '', '']], 8)),
       fuerDich('mein Ort', '8 Min.', fragen(kopf.moves[1].kontext ?? null, ...kopf.moves[1].fragen)),
-      schluss(kopf, 'zwei Uhr nachts', [kreuzU('Es ist nachts, dein Kopf dreht. Was probierst du zuerst?', 'rückwärts zählen', 'den Gedanken zuschauen', 'an meinen Ort denken', 'wegdrücken')], ['1', '2', '3']),
+      schluss(kopf, 'zwei Uhr nachts', [kreuzU('Schau auf Station 1: Dann, wenn dein Kopf am meisten dreht – was probierst du zuerst?', 'rückwärts zählen', 'den Gedanken zuschauen', 'an meinen Ort denken', 'wegdrücken')], ['1', '2', '3']),
     ),
   )
 
@@ -216,7 +218,6 @@ export function stunden(d: Heft): Stunde[] {
       clip(plan, 'Rauslassen oder runterschlucken?', [kreuzU('Wut: besser rauslassen oder runterschlucken?', 'rauslassen – draufhauen', 'runterschlucken', 'keins von beiden')], ['Das passiert beim Draufhauen:', 'Das hilft wirklich:'],
         [kreuz('War dein Tipp richtig?', 'ja', 'nein', 'halb'), kreuzU('Was hat Finn gemacht?', 'Kraft raus ohne Ziel: Fäuste, Atem', 'draufgehauen', 'alles runtergeschluckt')]),
       stimmtDas(plan),
-      fuerDich('meine Top 5', '8 Min.', fragen('Nach dem Spiel ausfüllen: nur, was bei dir wirkt.', ...plan.moves[0].fragen)),
     ),
     seite(
       runde('der Skills-Notruf', '25 Min.', 'alle · am Tisch', 'cards', {
@@ -237,7 +238,7 @@ export function stunden(d: Heft): Stunde[] {
         zu3: 'Die Leitung spielt mit. Jede Person bekommt vier Karten.',
         auswertung: ['Welche Karte hat fast immer gepasst?', 'Welche Karten gingen bei Rot nicht mehr?'],
       }),
-      fuerDich('mein Ampelplan', '12 Min.', fragen(plan.moves[1].kontext ?? null, ...plan.moves[1].fragen, satz('Ein Mensch für meinen Plan:', 'Wenn es brennt, gehe ich zu:'))),
+      fuerDich('mein Ampelplan', '12 Min.', fragen(plan.moves[1].kontext ?? null, ...plan.moves[1].fragen, satz('Ein Mensch für meinen Plan:', 'Wenn es brennt, gehe ich zu:'), kreuzU('Probe: Nimm in Gedanken eine Notruf-Karte, die du kennst. Geh deinen Plan durch – Warnsignal, Skill, Mensch. Hält er?', 'ja', 'fast – ich ändere eine Stelle', 'nein – ich frage die Leitung'))),
     ),
     seite(
       material('20 Skill-Karten und 9 Notrufe', 6,
@@ -259,7 +260,6 @@ export const loesungen: string[][] = [
   [
     'Der Fall: Bein wippt, Hände schwitzen, Film im Kopf. Langes Ausatmen bremst den Körper – der Puls sinkt.',
     'Atem-Labor: kein Richtig oder Falsch. Der zweite Turm ist oft schon durch Übung höher – deshalb tauschen die Teams. Ehrlich auswerten, auch wenn Atmen nicht gewinnt.',
-    'Schluss: länger ausatmen als einatmen.',
   ],
   [
     'Der Fall: kaltes Wasser, Fliesen gezählt, Cousine angerufen. Das Wasser hat den Kopf ins Jetzt geholt. Wehgetan hat sie sich nicht – stark, aber nicht schädlich.',

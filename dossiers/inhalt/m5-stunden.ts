@@ -26,7 +26,10 @@ export function stunden(d: Heft): Stunde[] {
         [kreuz('War dein Tipp richtig?', 'ja', 'nein', 'halb'), kreuzU('Was hätte der Erzieher bei Tom tun können?', 'noch einmal nachfragen – allein, in Ruhe', 'ihn vor allen ansprechen', 'nichts')]),
       st('Zu zweit: Wem glaubst du?', '8 Min.', 'zu zweit', 'users', 'Gute Sätze: „Du wirkst müde. Magst du reden?“ – ohne Druck, ohne Publikum.',
         fragen(koerper.moves[0].kontext ?? null, ...koerper.moves[0].fragen)),
-      stimmtDas(koerper),
+      fuerDich('mein „ok.“', '8 Min.', fragen('Eine kurze Nachricht, die dich verunsichert hat – oder jemanden, den du kennst. Sieht keiner.',
+        kreuz('Was hast du hineingelesen?', 'sauer', 'kein Bock', 'egal', 'weiß nicht'),
+        kreuz('Wie war deine Laune, als du sie gelesen hast?', 'gut', 'mies', 'weiß nicht mehr'),
+        satz('Deine Nachfrage beim nächsten Mal – ohne Vorwurf:', '„'))),
     ),
     seite(
       runde('ein Kanal, zwei Kanäle, drei Kanäle', '25 Min.', 'alle · am Tisch', 'antenna-bars-5', {
@@ -96,8 +99,10 @@ export function stunden(d: Heft): Stunde[] {
     ),
     seite(
       material('16 Sätze', 6, karten(4, 19, 'Ausschneiden und mischen.', [...ANGRIFF, ...INFO].sort((a, b) => a.length - b.length).map((t) => ({ t: `„${t}“` })))),
-      st('Zu zweit: Yusufs zweiter Versuch', '8 Min.', 'zu zweit', 'refresh', 'Schreiben reicht. Wer mag, liest den Satz vor.',
-        fragen('Gleicher Moment. Der Meister sagt: „Schon wieder.“ Baut Yusufs Antwort neu – in drei Teilen:', streit.moves[1].fragen[0], kreis('Was passiert jetzt eher? Kreise ein.', 'ein Gespräch', 'eine Ansage, aber fair', 'Rauswurf'))),
+      fuerDich('dein zweiter Versuch', '8 Min.', fragen('Wie bei Yusuf steckt unter einem Angriff oft etwas anderes. Etwas Kleines, das dich gerade stört – oder jemanden, den du kennst. Sieht keiner.',
+        kreis('Was steckt darunter? Kreise ein.', 'peinlich', 'verletzt', 'Angst', 'müde', 'ungerecht behandelt'),
+        satz('Dein Ich-Satz – ohne „immer“, „nie“, „du bist“:', 'Ich bin … , weil', 'Ich will, dass'),
+        kreuz('Wo sagst du ihn diese Woche?', 'zu Hause', 'Wohngruppe', 'Schule oder Betrieb', 'bei Freunden'))),
       schluss(streit, 'dein Satz', [kreuz('Schau auf Station 1. Wie gut kannst du **jetzt** sagen, was dich stört?', 'wie vorher', 'etwas besser', 'viel besser')], ['gesagt']),
     ),
   )
@@ -149,7 +154,7 @@ export function stunden(d: Heft): Stunde[] {
       material('3 Felder und 18 Situationen', 6,
         karten(3, 16, 'Die Felder: ausschneiden und auf den Tisch legen.', ['Körper und Sachen', 'Inneres', 'Digital'].map((t) => ({ t })), true),
         karten(3, 17, 'Die Situationen: ausschneiden, mischen, auf die Teams verteilen.', GRENZEN.map(([t]) => t).sort((a, b) => a.length - b.length).map((t) => ({ t })))),
-      schluss(bis, 'Chloé am Abend', [kreuzU('Chloé merkt am Abend: Das war zu viel. Was kann sie beim nächsten Mal tun?', 'auf den Bauch hören und einen Schritt zur Seite gehen', 'weiter lachen', 'nie wieder hingehen'), kreis('Schau auf Station 1. Woran merkst du es bei **anderen**? Kreise ein.', 'wird still', 'weicht zurück', 'lacht komisch', 'schaut weg', 'antwortet kurz', 'wird laut')], ['gemerkt']),
+      schluss(bis, 'Chloé am Abend', [kreuzU('Chloé hört nächstes Mal auf ihren Bauch. Und du? Wenn dein Signal von Station 1 diese Woche kommt, dann …', 'merke ich mir nur: Wo war ich? Was war davor?', 'gehe ich einen Schritt zur Seite', 'sage ich: „Lass mal.“', 'erzähle ich es später jemandem, dem ich vertraue'), kreis('Schau auf Station 1. Woran merkst du es bei **anderen**? Kreise ein.', 'wird still', 'weicht zurück', 'lacht komisch', 'schaut weg', 'antwortet kurz', 'wird laut')], ['gemerkt']),
     ),
   )
 
@@ -192,7 +197,7 @@ export function stunden(d: Heft): Stunde[] {
       material('12 Stopps und 9 Situationen', 6,
         karten(4, 16, 'Die Stopps: ausschneiden und mischen.', STOPPS.map((t) => ({ t }))),
         karten(3, 19, 'Die Situationen: ausschneiden, mischen, verdeckt stapeln.', LAGEN.map((t) => ({ t })))),
-      schluss(stopp, 'Janas Satz', [kreuzU('Jana hat drei Dinge geändert. Welche?', 'Körper, Stimme, Worte', 'Sie wurde lauter und böser.'), strich('Schau auf Station 1. Wie leicht fällt dir ein Nein jetzt?', 'schwer', 'leicht')], ['Nein gesagt', '„Okay“ gesagt']),
+      schluss(stopp, 'Janas Satz', [kreuzU('Wo könntest du diese Woche ein klares Stopp brauchen? Etwas Kleines reicht. Nur für dich.', 'jemand nimmt mein Handy oder meine Sachen', 'ein Spitzname, den ich nicht mag', 'jemand drängelt: „Komm schon“', 'online'), satz('Dann sage ich – gerade, ruhig, ohne Lächeln:', '„'), strich('Schau auf Station 1. Wie leicht fällt dir ein Nein jetzt?', 'schwer', 'leicht')], ['Nein gesagt', '„Okay“ gesagt']),
     ),
   )
   return [s1, s2, s3, s4]
@@ -209,7 +214,7 @@ export const loesungen: string[][] = [
     'Der Fall: Gekippt ist es bei „Sie haben doch eh was gegen mich!“ – ein Angriff. Yusuf wollte sagen: Der Bus ist ausgefallen, es ist mir peinlich.',
     'Finde den Angriff: Echte Ich-Sätze sind der erste und der dritte. Angriffswörter: immer, nie, typisch, schon wieder.',
     'Satz-Werkstatt: Angriffe sind alle „Du …“-Sätze, „Immer nimmst du …“, „Typisch …“, „Wegen dir …“ und die zwei falschen Ich-Sätze („Ich finde, du bist …“, „Ich fühle mich, als wärst du …“).',
-    'Yusufs zweiter Versuch: „Ich bin genervt, weil der Bus ausgefallen ist – und es ist mir peinlich. Ich will, dass wir das kurz allein klären.“',
+    'Beispiel für einen Ich-Satz (Yusuf): „Ich bin genervt, weil der Bus ausgefallen ist – und es ist mir peinlich. Ich will, dass wir das kurz allein klären.“',
   ],
   [
     'Der Fall: Der Bauch zieht sich zusammen – das ist das Signal. Nett gemeint heißt nicht: darf nicht stören.',

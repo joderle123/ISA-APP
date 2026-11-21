@@ -17,6 +17,15 @@ const path = require('path')
     const page = await browser.newPage({ viewport: { width: 794, height: 1123 }, deviceScaleFactor: 1 })
     await page.goto('file://' + path.join(aus, datei))
     await page.waitForFunction(() => document.body.dataset.fertig === '1')
+    // Volle Seiten automatisch verdichten: erst engere Abstände, dann etwas kleiner (nur, wo es nötig ist)
+    await page.evaluate(() => {
+      const frei = (s) => {
+        const inh = s.querySelector('.inhalt'); if (!inh) return 1
+        const cs = getComputedStyle(inh), k = [...inh.children]
+        return inh.clientHeight - parseFloat(cs.paddingTop) - parseFloat(cs.paddingBottom) - k.reduce((h, x) => h + x.getBoundingClientRect().height, 0) - (k.length - 1) * parseFloat(cs.rowGap || '0')
+      }
+      document.querySelectorAll('.seite').forEach((s) => { if (frei(s) < 0) { s.classList.add('dicht'); if (frei(s) < 0) s.classList.add('dichter') } })
+    })
     const bericht = await page.evaluate(() => {
       const r = []
       document.querySelectorAll('.seite').forEach((s) => {

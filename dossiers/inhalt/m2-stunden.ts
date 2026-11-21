@@ -42,7 +42,7 @@ export function stunden(d: Heft): Stunde[] {
         wertung: { kopf: ['Punkte', 'Karten gelegt', 'neue Wörter', 'Summe'], zeilen: ['Team A', 'Team B'] },
         auswertung: ['Für welches Grundgefühl habt ihr die meisten Wörter?', 'Das Gefühl mit den meisten Stimmen ist weg. Was fehlt dann – eine Woche lang?'],
       }),
-      fuerDich('mehr als zwei Tasten', '10 Min.', fragen('Statt „gut“ und „schlecht“: Kreise ein, was du von dieser Woche kennst.', ...wozu.moves[1].fragen, satz('Blätter zurück zu Station 1: Findest du jetzt ein genaueres Wort für heute?', 'Mein Wort:'))),
+      fuerDich('mehr als zwei Tasten', '10 Min.', fragen('Statt „gut“ und „schlecht“: Kreise ein, was du von dieser Woche kennst.', ...wozu.moves[1].fragen, satz('Blätter zurück zu Station 1: Findest du jetzt ein genaueres Wort für heute – und was meldet es dir? (Schau ins Modell.)', 'Mein Wort:', 'Es meldet mir:'))),
     ),
     seite(
       material('6 Grundgefühle und 24 Wörter', 5,
@@ -67,7 +67,9 @@ export function stunden(d: Heft): Stunde[] {
         { f: 'Wer saß bei Noah die ganze Zeit am Steuer? Kreise ein.', kreis: ['Kummer', 'Wut', 'Freude', 'Angst', 'Ekel'] },
         kreuzU('Was hätte Noah geholfen?', 'noch länger zocken', 'jemandem sagen, dass er traurig ist', 'gar nichts fühlen'),
       ]),
-      fuerDich('mein Steuerpult', '8 Min.', fragen('Nur für dich. Wer sitzt bei dir wie oft am Steuer?', ...steuer.moves[1].fragen)),
+      fuerDich('mein Steuerpult', '10 Min.', fragen('Nur für dich. Wer sitzt bei dir wie oft am Steuer?', steuer.moves[1].fragen[0],
+        kreuz('Wann sagst du „mir egal“ – obwohl es nicht stimmt? (Oder jemand, den du kennst.)', 'nach Streit', 'bei Noten', 'wenn jemand absagt', 'zu Hause', 'nie'),
+        satz('Wie bei Noah übersetzt:', '„Mir egal“ heißt dann eigentlich:'))),
     ),
     seite(
       runde('die Pult-Wette', '25 Min.', 'alle · am Tisch', 'cards', {
@@ -113,8 +115,6 @@ export function stunden(d: Heft): Stunde[] {
         { f: 'Welche Signale sendet Linas Körper? Kreise alle ein.', kreis: ['Stein im Magen', 'kalte Hände', 'Zähne mahlen', 'Zittern', 'Hunger', 'Müdigkeit'] },
         kreuzU('Was sagt Linas Gesicht – und was sagt ihr Körper?', 'Gesicht: alles gut. Körper: Alarm.', 'Beide sagen: alles gut.', 'Beide sagen: Alarm.'),
       ]),
-      st('Zu zweit: die Körper-Karte', '8 Min.', 'zu zweit', 'users', 'Es gibt kein Richtig oder Falsch – Körper sind verschieden. Wer nichts merkt, kreist „weiß nicht“ ein.',
-        tabelle('24mm 44mm auto', ['Gefühl', 'Wo im Körper?', 'Wie fühlt es sich an? Kreist ein.'], [['Wut', '', 'heiß · eng · schwer · leicht · kribbelig · weiß nicht'], ['Angst', '', 'heiß · eng · schwer · leicht · kribbelig · weiß nicht'], ['Trauer', '', 'heiß · eng · schwer · leicht · kribbelig · weiß nicht'], ['Freude', '', 'heiß · eng · schwer · leicht · kribbelig · weiß nicht']], 9)),
     ),
     seite(
       clip(koerper, 'Was die Haltung mit dir macht', [kreuzU('Kann deine Körperhaltung ein Gefühl verändern?', 'ja', 'ein bisschen', 'nein')], ['Das macht die Haltung mit dem Gefühl:', 'Das probiere ich aus:'],
@@ -132,7 +132,7 @@ export function stunden(d: Heft): Stunde[] {
       }, { leitung: 'Songs vorher auswählen, gern ohne Text. Vorschläge der Jugendlichen kurz selbst anhören – keine Texte mit Gewalt oder Abwertung.', danach: [tabelle('18mm auto 22mm auto', ['Song', 'Gefühl', '0 bis 10', 'Wo im Körper?'], [['1', '', '', ''], ['2', '', '', ''], ['3', '', '', ''], ['4', '', '', '']], 8)] }),
     ),
     seite(
-      fuerDich('mein erstes Signal', '8 Min.', fragen('Denk an einen Moment, in dem du wütend oder ängstlich wurdest. Nur für dich.', ...koerper.moves[1].fragen, kreuz('Schau auf Station 1: Hast du dieselbe Stelle eingekreist?', 'ja', 'nein'))),
+      fuerDich('mein erstes Signal', '8 Min.', fragen('Denk an einen Moment, in dem du wütend oder ängstlich wurdest. Nur für dich.', ...koerper.moves[1].fragen, kreuz('Wenn dein erstes Signal kommt – was machst du dann?', 'lang ausatmen', 'aufrecht hinstellen', 'kurz rausgehen', 'drei Ohren'), satz('Schau auf Station 1 und auf dein Signal oben. Dein Plan:', 'Wenn ich … merke (wo? wann?),', 'dann …'))),
       st('Der Skill: Bodyscan kurz', '8 Min.', 'alle · still', 'scan', 'Langsam ansagen. Augen zu ist freiwillig. Nichts kommentieren.',
         text('Sitzen oder liegen. Augen zu oder Blick auf einen Punkt. Einmal tief ein, langsam aus. Wandere mit der Aufmerksamkeit: **Stirn, Kiefer, Schultern – Brust und Bauch – Hände – Beine und Füße.** Nur hinschauen, nichts ändern.')),
       schluss(koerper, 'Linas erstes Signal', [kreuzU('Lina zittert später in ihrem Zimmer. Was war ihr erstes Signal – schon bei der Tante?', 'der Stein im Magen', 'das Zittern', 'gar nichts')], ['1', '2']),
@@ -142,7 +142,7 @@ export function stunden(d: Heft): Stunde[] {
   /* ---------- Stunde 4 · Alles gleichzeitig ---------- */
   const s4 = stunde('Kann man froh und sauer gleichzeitig sein?', ['zwei Gefühle auf einmal benennen', 'sagen, wie stark ein Gefühl ist – von 0 bis 10', 'unter der Wut nachschauen, was noch da ist'],
     seite(
-      ankommen('etwas, das dich aufgeregt hat', kreuz('Hattest du schon mal zwei Gefühle gleichzeitig?', 'ja', 'nein', 'weiß nicht'), zeile('Was hat dich zuletzt aufgeregt? Ein Stichwort reicht.')),
+      ankommen('etwas, das dich aufgeregt hat', kreuzU('Warnsignal-Jagd: Hast du letzte Woche dein erstes Signal erwischt – und deinen Plan probiert?', 'Signal erwischt und Plan probiert', 'nur das Signal erwischt', 'nicht dran gedacht'), zeile('Was hat dich zuletzt aufgeregt? Ein Stichwort reicht.')),
       st('Erst machen: der Zwillings-Check', '6 Min.', 'zu zweit · Rücken an Rücken', 'users', 'Fragen: Bus fährt weg (wie genervt?) · Morgen ist frei (wie froh?) · Akku 1 % (wie nervös?) · Jemand sitzt auf deinem Platz (wie sauer?) · Dein Lieblingslied läuft (wie gut gelaunt?). Schnell hintereinander. Es geht um den Vergleich.',
         text('Stellt euch zu zweit mit dem Rücken zueinander, mit etwas Abstand (zu dritt geht auch). Die Leitung fragt: „Der Bus fährt dir vor der Nase weg. Wie genervt bist du, von 0 bis 10?“ Auf „drei“ zeigt ihr die Zahl mit den Fingern und dreht euch um. **Gleiche Zahl = Zwilling.** Fünf Fragen.'),
         fragen(null, kreuz('Wie oft wart ihr Zwillinge?', '0', '1–2', '3–5'))),
@@ -205,7 +205,7 @@ export const loesungen: string[][] = [
   [
     'Körper-Labor: 1 Sprint – Herz/Atem, Hitze (wie Angst oder Wut); 2 Anspannen – Muskeln (wie Wut); 3 Zeitlupe – Schwere (wie Trauer); 4 Siegerpose – Weite (wie Freude, Stolz).',
     'Der Fall: Stein im Magen, kalte Hände, Zähne mahlen, Zittern. Gesicht: alles gut. Körper: Alarm. Erstes Signal: der Stein im Magen.',
-    'Körper-Karte und Song-Tipp: kein Richtig oder Falsch. Häufig: Wut heiß (Kopf, Hände), Angst eng (Brust, Hals), Trauer schwer (Brust, Schultern).',
+    'Song-Tipp: kein Richtig oder Falsch. Häufig: Wut heiß (Kopf, Hände), Angst eng (Brust, Hals), Trauer schwer (Brust, Schultern).',
     'Clip danach: aufrecht hinstellen und tief atmen. Vorsicht: Die Wirkung der Haltung auf Gefühle ist in Studien klein und umstritten („Power Posing“) – als Versuch anbieten, nicht als sicheren Trick.',
   ],
   [

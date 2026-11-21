@@ -36,7 +36,10 @@ export function stunden(d: Heft): Stunde[] {
       modell(film, 'Situation – Gedanke – Gefühl', ['message-circle', 'arrows-right', 'repeat']),
       st('Zu zweit: drei Filme für Ben', '10 Min.', 'zu zweit', 'movie', 'Gefühl und Tun: ein Wort reicht. Den dritten Gedanken gemeinsam sammeln, wenn er schwerfällt.',
         fragen(film.moves[0].kontext ?? null, ...film.moves[0].fragen)),
-      stimmtDas(film),
+      fuerDich('mein Film', '8 Min.', fragen('Ein Moment, der dir die Laune verdorben hat – dir oder jemandem, den du kennst. Sieht keiner.',
+        kreuzU('Was ist passiert?', 'keine Antwort auf eine Nachricht', 'jemand hat gelacht oder getuschelt', 'eine schlechte Note', 'etwas anderes'),
+        kreuz('Was hast du gefühlt?', 'traurig', 'wütend', 'peinlich', 'Angst'),
+        satz('Zwei Filme:', 'Mein erster Gedanke: „', 'Ein zweiter, der auch stimmen könnte: „'))),
     ),
     seite(
       runde('zwei Filme', '25 Min.', 'zwei Teams · am Tisch', 'cards', {
@@ -102,8 +105,10 @@ export function stunden(d: Heft): Stunde[] {
     seite(
       material('12 Sätze', 5,
         karten(3, 19, 'Ausschneiden und offen auf den Tisch legen. Die Nummer gehört dazu.', SAETZE.map((t, i) => ({ t: `„${t}“`, marke: `Satz ${i + 1}` })))),
-      st('Zu zweit: der Satz und sein Preis', '8 Min.', 'zu zweit', 'coin', 'Der Satz schützt Lea auch: vor neuer Kränkung. Das darf gesagt werden.',
-        fragen(alte.moves[1].kontext ?? null, ...alte.moves[1].fragen)),
+      fuerDich('mein Satz und sein Preis', '8 Min.', fragen('Ein Satz aus der Zählung, den du kennst – oder den jemand kennt, den du kennst. Nicht aufschreiben. Sieht keiner.',
+        kreuzU('Was tust du, wenn er läuft?', 'mich nicht melden – wie Tom', 'absagen – wie Nora', 'alles perfekt machen – wie Sami', 'so tun, als wäre nichts – wie Finn', 'etwas anderes'),
+        kreis('Was kostet er dich? Kreise ein.', 'Spaß', 'Freunde', 'meine Stimme', 'Ruhe', 'Chancen'),
+        satz('Meldet er sich diese Woche, sage ich mir – wie eine gute Freundin:', '„'))),
       schluss(alte, 'der Satz wohnt noch da', [kreuzU('Lea will etwas erzählen und sagt wieder „Ach, egal“. Was könnte sie sich sagen?', '„Der Satz ist gelernt. Er stimmt nicht.“', '„Ich bin halt zu viel.“'), strich('Schau auf Station 1. Wie willst du mit dir reden, wenn etwas schiefgeht?', 'hart', 'freundlich')], ['gefunden']),
     ),
   )
@@ -126,7 +131,9 @@ export function stunden(d: Heft): Stunde[] {
         [kreuz('War dein Tipp richtig?', 'ja', 'nein', 'halb'), kreuzU('Lios Cousin sagt: „Du checkst nichts.“ Was ist das?', 'eine Meinung – kein Beweis', 'ein Beweis')]),
     ),
     seite(
-      fuerDich('der Prüfstand', '8 Min.', fragen(beweise.moves[1].kontext ?? null, ...beweise.moves[1].fragen)),
+      fuerDich('mein Prüfstand', '8 Min.', fragen('Dein Satz aus Stunde 2 – oder der von jemandem, den du kennst. Sieht keiner.',
+        kreuzU('Worauf stützt er sich vor allem?', 'auf ein Gefühl', 'auf einen Spruch von jemandem', 'auf etwas, das man sehen oder zählen kann'),
+        satz('Der Test:', 'Ein Beweis dagegen (sehen oder zählen):', 'Mein neuer Satz – wahr, was ich tue, jetzt: „'))),
       runde('Tatort', '25 Min.', 'zu zweit oder zu dritt', 'search', {
         ziel: 'Üben, Hinweise zu sortieren: dafür, dagegen – oder gar kein Beweis.',
         material: 'die 12 Hinweis-Karten von der nächsten Seite (ausschneiden und im Raum aufhängen oder auslegen), Stifte',
@@ -183,7 +190,9 @@ export function stunden(d: Heft): Stunde[] {
     ),
     seite(
       material('16 Mut-Karten', 6, karten(4, 18, 'Ausschneiden und mischen.', MUT.map((t) => ({ t })))),
-      fuerDich('mein Wenn-dann', '8 Min.', fragen(neuer.moves[1].kontext ?? null, ...neuer.moves[1].fragen)),
+      fuerDich('mein Wenn-dann', '8 Min.', fragen('Ein Plan schlägt jeden Vorsatz. Nimm deine Karte von der Mut-Leiter.',
+        satz('Für die nächste Woche:', 'Mein neuer Satz: „', 'Wenn (wann, wo, bei wem):', 'dann (mein Schritt):', 'Brüllt der alte Satz, sage ich mir: „'),
+        { f: 'Wie sehr glaubst du deinen neuen Satz?', regler: ['heute', 'in 7 Tagen'] })),
       schluss(neuer, 'Beweis Nummer eins', [kreuzU('Der alte Satz meldet sich wieder. Was heißt das?', 'Es hat nicht geklappt.', 'Das ist normal. Ich mache trotzdem meinen Schritt.')], ['Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa', 'So']),
     ),
   )
@@ -200,13 +209,12 @@ export const loesungen: string[][] = [
   [
     'Der Fall: „Ich bin zu viel.“ Man sieht ihn an der Hand vor dem Mund und an „Ach, egal“. Der Satz war falsch – gesagt im Stress.',
     'Fahndung: Tom – A (nicht gut genug) · Nora – B (mich mag keiner) · Sami – C (keine Fehler) · Finn – D (stark sein).',
-    'Der Preis: Der Satz kostet Lea Freude, Nähe, ihre Stimme. Er schützt sie vor neuer Kränkung.',
     'Geheime Zählung: Die Zettel danach sofort wegwerfen. Wichtig ist nur das Bild: Viele kennen dieselben Sätze.',
   ],
   [
     'Der Fall: Lios Kopf lässt nicht rein: sieben Punkte mehr, die Mopeds, die Kasse im Praktikum.',
     'Akte Lio: dafür – 22 von 60 · dagegen – sieben Punkte mehr, Mopeds, Kasse · kein Beweis – fühlt sich dumm, Satz des Cousins. Urteil: zu grob.',
-    'Prüfstand: Es bestehen „Ich frage nach …“, „Mathe fällt mir schwer. Ich bleibe trotzdem dran.“, „Ich probiere es. Fehler sind okay.“',
+    'Mein Prüfstand: Ein Satz besteht, wenn er wahr ist, sagt, was man tut, und jetzt gilt – zum Beispiel „Mathe fällt mir schwer. Ich bleibe trotzdem dran.“',
     'Tatort: dafür 1, 6, 10 · dagegen 2, 4, 7, 9, 12 · kein Beweis 3, 5, 8, 11. Urteil: zu grob. Neuer Satz zum Beispiel: „Manches fällt mir schwer. Vieles kann ich.“',
   ],
   [
