@@ -2,6 +2,17 @@
 // Statt einer immer gleichen Doppelseite: Stationen in der Reihenfolge des Unterrichts, mit Fahrplan auf der ersten Seite,
 // einem Streifen „wo sind wir?“ auf jeder weiteren und allem Material (Karten) im Heft. Inhalt: Track.stunde (typen.ts).
 import type { Baustein, Frage, Station, Track } from './typen'
+import { readFileSync } from 'node:fs'
+import { dirname, join } from 'node:path'
+import { fileURLToPath } from 'node:url'
+
+// Gefühls-Gesichter (Fluent Emoji, MIT) – nur auf Wort-Karten mit einem Gefühlswort (Auftrag 22.11.2026)
+const EMO_DIR = join(dirname(fileURLToPath(import.meta.url)), '..', 'tools', 'hefte', 'emoji')
+const EMO: Record<string, string> = JSON.parse(readFileSync(join(EMO_DIR, 'gefuehle.json'), 'utf8'))
+const emoji = (wort: string): string => {
+  const n = EMO[wort.trim().toLowerCase()]
+  return n && !wort.startsWith('_') ? `<img class="emo" alt="" src="data:image/svg+xml;base64,${readFileSync(join(EMO_DIR, n + '.svg')).toString('base64')}">` : ''
+}
 
 export interface StundenHelfer {
   t: (s: string) => string
@@ -64,7 +75,7 @@ export function baueStunde(e: Track, i: number, h: StundenHelfer): string[] {
           ${b.notiz ? `<div class="not"><b>${t(b.notiz.titel)}</b>${linien(b.notiz.linien)}</div>` : ''}
           ${b.auswertung ? `<div class="aus"><div class="mo">${ic('messages')}Auswertung im Kreis</div>${b.auswertung.map((x) => `<p>${t(x)}</p>`).join('')}</div>` : ''}</div>`
       case 'karten':
-        return `${b.hinweis ? `<p class="sd-kon sch">${ic('scissors')}<span>${t(b.hinweis)}</span></p>` : ''}<div class="sd-karten" style="grid-template-columns:repeat(${b.spalten},1fr)${b.hoehe ? `;--kh:${b.hoehe}mm` : ''}">${b.karten.map((k) => `<div class="${b.wort ? 'wort' : ''}"><b>${t(k.t)}</b>${k.x ? `<span>${t(k.x)}</span>` : ''}${k.marke ? `<i class="mo">${esc(k.marke)}</i>` : ''}</div>`).join('')}</div>`
+        return `${b.hinweis ? `<p class="sd-kon sch">${ic('scissors')}<span>${t(b.hinweis)}</span></p>` : ''}<div class="sd-karten" style="grid-template-columns:repeat(${b.spalten},1fr)${b.hoehe ? `;--kh:${b.hoehe}mm` : ''}">${b.karten.map((k) => `<div class="${b.wort ? 'wort' : ''}">${b.wort ? emoji(k.t) : ''}<b>${t(k.t)}</b>${k.x ? `<span>${t(k.x)}</span>` : ''}${k.marke ? `<i class="mo">${esc(k.marke)}</i>` : ''}</div>`).join('')}</div>`
       case 'tabelle':
         return `<table class="sd-tab"${b.breiten ? ` style="--br:${b.breiten}"` : ''}>${b.breiten ? `<colgroup>${b.breiten.split(' ').map((w) => `<col style="width:${w}">`).join('')}</colgroup>` : ''}<tr>${b.kopf.map((x) => `<th>${t(x)}</th>`).join('')}</tr>${b.zeilen.map((z) => `<tr${b.hoehe ? ` style="height:${b.hoehe}mm"` : ''}>${z.map((x) => `<td>${t(x)}</td>`).join('')}</tr>`).join('')}</table>`
       case 'menue':

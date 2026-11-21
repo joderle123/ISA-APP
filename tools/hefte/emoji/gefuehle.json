@@ -1,0 +1,21 @@
+{
+  "_quelle": "Fluent Emoji (Microsoft, MIT) über das npm-Paket fluentui-emoji 1.3.0 (MIT), Stil „flat“. Nur bei Gefühlswörtern einsetzen.",
+  "freude": "grinning-face-with-smiling-eyes", "froh": "grinning-face-with-smiling-eyes", "fröhlich": "grinning-face-with-smiling-eyes",
+  "trauer": "crying-face", "traurig": "crying-face", "kummer": "crying-face",
+  "einsam": "pensive-face", "enttäuscht": "disappointed-face", "enttäuschung": "disappointed-face",
+  "angst": "fearful-face", "ängstlich": "fearful-face", "panisch": "face-screaming-in-fear", "besorgt": "worried-face",
+  "nervös": "grimacing-face", "erschrocken": "hushed-face",
+  "wut": "angry-face", "wütend": "angry-face", "sauer": "pouting-face", "genervt": "unamused-face",
+  "ungerecht behandelt": "face-with-steam-from-nose",
+  "ekel": "nauseated-face", "angewidert": "face-vomiting",
+  "überraschung": "astonished-face", "überrascht": "astonished-face",
+  "überfordert": "face-with-spiral-eyes", "ohnmacht (ich kann nichts tun)": "weary-face", "ohnmacht": "weary-face",
+  "neidisch": "face-with-raised-eyebrow", "neid": "face-with-raised-eyebrow",
+  "beschämt": "flushed-face", "scham": "flushed-face", "scham (peinlich)": "flushed-face", "peinlich": "flushed-face", "peinlichkeit": "flushed-face",
+  "gelangweilt": "yawning-face", "langeweile": "yawning-face",
+  "leer": "dotted-line-face", "gekränkt": "face-holding-back-tears",
+  "stolz": "smiling-face-with-sunglasses", "erleichtert": "relieved-face", "ruhig": "slightly-smiling-face", "sicher": "smiling-face",
+  "dankbar": "smiling-face-with-hearts", "aufgedreht": "zany-face", "verknallt": "smiling-face-with-heart-eyes",
+  "neugierig": "face-with-monocle", "weiß nicht": "thinking-face", "verwirrt": "confused-face", "zweifel": "confused-face",
+  "müde": "sleepy-face", "neutral": "neutral-face", "einsamkeit": "pensive-face"
+}

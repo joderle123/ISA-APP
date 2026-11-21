@@ -57,6 +57,12 @@ function peep(wer: string, gefuehl = 'froh', haltung = 'brust'): string {
   return renderToStaticMarkup(<ZeichnungSvg z={peepZeichnung(wer, gefuehl, haltung)} p={palette(FARBEN)} />)
 }
 /** Bildangabe 'noah' | 'noah:froh' | 'noah:froh:stehen' */
+// Gefühls-Gesichter (Fluent Emoji, MIT): nur in kompakten Heften und nur vor einem Gefühlswort in der ersten Tabellenspalte
+const EMO: Record<string, string> = JSON.parse(readFileSync(join(HIER, 'emoji', 'gefuehle.json'), 'utf8'))
+const emo = (wort: string): string => {
+  const n = AKTIV?.kompakt ? EMO[String(wort).replace(/\*\*/g, '').trim().toLowerCase()] : ''
+  return n ? `<img class="emo" alt="" src="data:image/svg+xml;base64,${readFileSync(join(HIER, 'emoji', n + '.svg')).toString('base64')}">` : ''
+}
 // {i:name} in freiem HTML (Umwandler kennen icon() nicht) → Tabler-Symbol
 const mitIcons = (h: string) => String(h).replace(/\{i:([a-z0-9-]+)\}/g, (_m, n: string) => icon(n))
 
@@ -248,7 +254,7 @@ function aufgabeKoerper(a: Aufgabe): string {
       return `<table class="raster${a.hoch ? ' hoch' : ''}"><colgroup>${br}</colgroup><tr>${a.kopf.map((k: string) => `<th>${esc(k)}</th>`).join('')}</tr>${a.zeilen
         .map((z: string[]) => `<tr>${z.map((c) => {
           const m = /^\[(.*)\]$/.exec(c)
-          return m ? `<td><span class="l">${esc(m[1])}</span></td>` : `<td class="vorgabe">${inl(c)}</td>`
+          return m ? `<td><span class="l">${esc(m[1])}</span></td>` : `<td class="vorgabe">${emo(c)}${inl(c)}</td>`
         }).join('')}</tr>`)
         .join('')}</table>`
     }
@@ -614,7 +620,7 @@ async function baue(id: string, browser: any, png: boolean) {
       const zuBreit = await seite.evaluate(() => { const W = document.body.getBoundingClientRect().width, out: string[] = []
         for (const e of Array.from(document.querySelectorAll('body *'))) { if ((e as SVGElement).ownerSVGElement) continue; const q = e.getBoundingClientRect(); if (q.width && q.right > W + 1 && !e.closest('.deckblatt')) out.push(`${e.tagName}.${typeof (e as HTMLElement).className === 'string' ? (e as HTMLElement).className : ''} (${Math.round(q.right - W)} px): ${(e.textContent || (e.closest('section') ? 'in ' + e.closest('section')!.id : '')).slice(0, 50)}`) }
         return out })
-      const zuHoch = await seite.evaluate(() => Array.from(document.querySelectorAll('.ak-seite')).filter((e) => e.scrollHeight > e.clientHeight + 2).map((e) => (e.querySelector('h2')?.textContent || '?') + ` (+${e.scrollHeight - e.clientHeight} px)`))
+      const zuHoch = await seite.evaluate(() => Array.from(document.querySelectorAll('.ak-seite')).filter((e) => { const z = e.querySelector('.ak-zonen') as HTMLElement | null; return e.scrollHeight > e.clientHeight + 2 || (z && z.scrollHeight > z.clientHeight + 2) }).map((e) => (e.querySelector('h2')?.textContent || '?')))
       if (zuHoch.length) { console.error(`✗ ${name}: Aktion zu lang für eine Seite: ${zuHoch.join(', ')}`); process.exitCode = 1 }
       if (zuBreit.length) { console.error(`✗ ${name}: ${zuBreit.length} Elemente zu breit – das Heft würde verkleinert:`); zuBreit.slice(0, 8).forEach((z: string) => console.error('   ' + z)); process.exitCode = 1 }
       const pdf = join(ziel, name + '.pdf')

@@ -303,7 +303,7 @@ export const MODUL = {
    "zeit": "10 Min.",
    "wer": "zusammen",
    "material": "",
-   "bild": "finn:wuetend",
+   "bild": "",
    "schritte": [
     "Schaut euch Finns Tag an.",
     "Kreuz an: Was lag **unter** Finns Wut?",

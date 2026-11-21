@@ -77,7 +77,7 @@ const d: AktionsHeft = {
       tipp: 'Wettkampf zulassen und selbst verlieren können. Danach passt Aktion 7 (der Plan).',
     },
     {
-      titel: 'Unter dem Teller', bild: 'peep:finn:wuetend', icon: 'stack-2', zeit: '10 Min.', wer: 'zusammen', material: '',
+      titel: 'Unter dem Teller', icon: 'stack-2', zeit: '10 Min.', wer: 'zusammen', material: '',
       schritte: [
         'Schaut euch Finns Tag an.',
         'Kreuz an: Was lag **unter** Finns Wut?',

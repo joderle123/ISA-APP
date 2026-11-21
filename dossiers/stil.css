@@ -666,3 +666,4 @@ table.t td:first-child { font-weight: 700; white-space: nowrap; }
 .lt .losfluss { columns: 2; column-gap: 5mm; } .lt .losfluss .los { break-inside: avoid; margin-bottom: 2.4mm; }
 .lt .sd-abl td:first-child { font-weight: 700; }
 .lt .sd-abl td:nth-child(2), .lt .sd-abl td:nth-child(4) { white-space: nowrap; }
+.sd-karten .emo { width: 8mm; height: 8mm; margin: 0 auto 1.2mm; display: block; }
