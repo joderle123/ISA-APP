@@ -630,3 +630,4 @@ table.raster.stellen td { padding: 1.5mm 1mm; }
 .schiri { margin: 2mm auto; width: 100%; } .schiri-svg { width: 150mm; max-width: 100%; display: block; margin: 0 auto; }
 .bahn { margin: 2mm auto; width: 100%; } .bahn-svg { width: 140mm; max-width: 100%; display: block; margin: 0 auto; }
 .weit { margin: 2mm auto; width: 100%; } .weit-svg { width: 150mm; max-width: 100%; display: block; margin: 0 auto; }
+.karte { margin: 2mm auto; width: 100%; } .karte-svg { width: 140mm; max-width: 100%; display: block; margin: 0 auto; }

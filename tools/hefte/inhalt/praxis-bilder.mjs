@@ -604,3 +604,23 @@ export function weitsprung() {
   o += nr(64, 226, 1) + nr(176, 64, 2) + nr(292, 30, 3) + nr(478, 150, 4)
   return `<figure class="weit">${o}</svg></figure>`
 }
+
+// ---------- Wanderkarte (ausgedacht): Wald, Bach, Brücke, Parkplatz, Aussichtspunkt, Wanderweg, Maßstab, Nordpfeil ----------
+export function wanderkarte({ nummern = true } = {}) {
+  let o = `<svg viewBox="0 0 520 320" xmlns="http://www.w3.org/2000/svg" class="karte-svg">`
+  o += `<rect x="0" y="0" width="520" height="320" rx="8" fill="#f1f3e4" stroke="#c9c2a8" stroke-width="2"/>`
+  o += `<path d="M20,60 C80,34 170,48 192,96 C212,142 150,182 92,172 C42,164 10,116 20,60 Z" fill="#9ccc8f"/><path d="M330,200 C380,172 470,182 500,230 C516,276 452,306 392,300 C342,292 312,240 330,200 Z" fill="#9ccc8f"/>`
+  for (const [x, y] of [[60, 90], [110, 70], [150, 110], [80, 140], [380, 230], [430, 210], [460, 260], [400, 275]]) o += `<path d="M${x},${y - 9} L${x + 7},${y + 5} L${x - 7},${y + 5} Z" fill="#4f8a45"/>`
+  o += `<path d="M0,230 C60,222 120,246 176,236 C240,224 300,150 380,118 C440,96 490,82 520,60" fill="none" stroke="#4a90d9" stroke-width="7" stroke-linecap="round"/>`
+  o += `<path d="M0,314 L520,296" stroke="#9a9a9a" stroke-width="8"/><path d="M0,314 L520,296" stroke="#fff" stroke-width="1.5" stroke-dasharray="10 8"/>`
+  for (const [x, y] of [[26, 268], [48, 280], [70, 266], [36, 290]]) o += `<rect x="${x}" y="${y}" width="14" height="12" fill="#8a5a44"/>`
+  o += `<path d="M120,262 C140,250 158,242 176,236 C204,226 214,192 240,170 C272,144 322,118 356,74" fill="none" stroke="#8b5a2b" stroke-width="3.5" stroke-dasharray="7 5"/>`
+  o += `<rect x="166" y="226" width="20" height="20" rx="2" fill="#a0785a" stroke="#5e4431" stroke-width="1.5" transform="rotate(-12 176 236)"/>`
+  o += `<rect x="98" y="258" width="22" height="22" rx="3" fill="#2f6fb0"/>` + t(109, 275, 'P', { gr: 15, fett: 800, farbe: '#fff' })
+  o += `<path d="M360,50 L372,72 L348,72 Z" fill="#d0662a" stroke="#fff" stroke-width="1.5"/>`
+  o += `<g transform="translate(476 52)"><circle r="22" fill="#fff" stroke="#2a2f3a" stroke-width="1.5"/><path d="M0,-18 L6,4 L0,0 L-6,4 Z" fill="#c0392b"/><path d="M0,18 L6,-4 L0,0 L-6,-4 Z" fill="#2a2f3a"/></g>` + t(476, 22, 'N', { gr: 13, fett: 800 })
+  o += `<line x1="22" y1="24" x2="142" y2="24" stroke="#2a2f3a" stroke-width="4"/><line x1="82" y1="24" x2="142" y2="24" stroke="#fff" stroke-width="2"/>` + [22, 82, 142].map((x) => `<line x1="${x}" y1="18" x2="${x}" y2="30" stroke="#2a2f3a" stroke-width="2"/>`).join('')
+  o += t(22, 44, '0', { gr: 10, fett: 600 }) + t(82, 44, '250 m', { gr: 10, fett: 600 }) + t(142, 44, '500 m', { gr: 10, fett: 600 })
+  if (nummern) o += nr(98, 110, 1) + nr(56, 214, 2) + nr(200, 256, 3) + nr(134, 290, 4) + nr(386, 60, 5) + nr(282, 156, 6)
+  return `<figure class="karte">${o}</svg></figure>`
+}
