@@ -280,7 +280,7 @@
         {
           "art": "aufgabe",
           "text": "Welche Zutaten braucht eine gute Freundschaft? Wähle vier aus und trage sie ins Rezept ein.",
-          "hinweis": "Schreibe dazu, wie viel man davon braucht (eine Prise, zwei Löffel, eine große Portion …) und woran man die Zutat merkt.",
+          "hinweis": "Schreibe dazu, wie viel man davon braucht: eine Prise, zwei Löffel, eine große Portion … Schreibe auch, woran man die Zutat merkt.",
           "symbole": ["lesen", "schreiben"]
         },
         {
@@ -678,7 +678,7 @@
         {
           "art": "info",
           "symbol": "hilfe",
-          "text": "Si quelqu’un te contrôle, te menace ou te met sous pression de façon durable dans une amitié ou une relation amoureuse, parles-en à une personne de confiance – par exemple au SePAS. Anonyme et gratuit : Kanner- a Jugendtelefon 116 111."
+          "text": "Quelqu’un te contrôle, te menace ou te met sous pression dans une amitié ou une relation amoureuse ? Et cela dure ? Parles-en à une personne de confiance, par exemple au SePAS. Anonyme et gratuit : Kanner- a Jugendtelefon 116 111."
         }
       ],
       "lehrer": {
@@ -1243,7 +1243,7 @@
         {
           "art": "geschichte",
           "titel": "L’exposé",
-          "text": "Rafael et Leonor doivent présenter un exposé d’histoire dans une semaine. Rafael veut tout faire samedi, d’une traite. Leonor insiste pour y travailler une heure chaque jour après les cours, dès aujourd’hui. Au bout de dix minutes, le ton monte : Rafael traite Leonor de « maniaque du contrôle », Leonor dit que Rafael n’est « pas fiable ». Personne ne cède.",
+          "text": "Rafael et Leonor doivent présenter un exposé d’histoire dans une semaine. Rafael veut tout faire samedi, d’une traite. Leonor insiste pour y travailler une heure chaque jour après les cours, dès aujourd’hui. Au bout de dix minutes, le ton monte. Rafael traite Leonor de « maniaque du contrôle ». Leonor dit que Rafael n’est « pas fiable ». Personne ne cède.",
           "bild": "figur:ben:wuetend:verschraenkt"
         },
         {
@@ -2336,7 +2336,7 @@
         {
           "art": "info",
           "symbol": "hilfe",
-          "text": "Wenn jemand deine Grenze nicht beachtet – auch nach einem klaren Stopp –, hol dir Hilfe bei einem Erwachsenen. Das ist kein Petzen. Anonym und kostenlos: Kanner- a Jugendtelefon 116 111."
+          "text": "Jemand beachtet deine Grenze nicht, auch nach einem klaren Stopp? Dann hol dir Hilfe bei einem Erwachsenen. Das ist kein Petzen. Anonym und kostenlos: Kanner- a Jugendtelefon 116 111."
         }
       ],
       "lehrer": {
@@ -2422,7 +2422,7 @@
         {
           "art": "info",
           "symbol": "hilfe",
-          "text": "Si quelqu’un ne respecte pas ta limite – même après un stop clair –, va chercher de l’aide auprès d’un adulte. Ce n’est pas cafter. Anonyme et gratuit : Kanner- a Jugendtelefon 116 111."
+          "text": "Quelqu’un ne respecte pas ta limite, même après un stop clair ? Alors va chercher de l’aide auprès d’un adulte. Ce n’est pas cafter. Anonyme et gratuit : Kanner- a Jugendtelefon 116 111."
         }
       ],
       "lehrer": {
@@ -2672,7 +2672,7 @@
         {
           "art": "info",
           "symbol": "hilfe",
-          "text": "Si on te met la pression, te fait du chantage ou te menace – en ligne aussi –, tu peux demander de l’aide : parles-en à une personne de confiance ou au SePAS. Kanner- a Jugendtelefon 116 111, BEE SECURE Helpline 8002 1234."
+          "text": "On te met la pression, on te fait du chantage ou on te menace, même en ligne ? Tu peux demander de l’aide : parles-en à une personne de confiance ou au SePAS. Kanner- a Jugendtelefon 116 111, BEE SECURE Helpline 8002 1234."
         }
       ],
       "lehrer": {

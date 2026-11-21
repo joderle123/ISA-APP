@@ -202,7 +202,7 @@
           "art": "info",
           "symbol": "wissen",
           "titel": "Pourquoi la fatigue arrive tard à l’adolescence",
-          "text": "À l’adolescence, l’horloge interne se décale. La mélatonine, l’hormone du sommeil, arrive plus tard le soir et la fatigue ne se fait sentir que tard : c’est de la biologie, pas de la paresse. Le réveil, lui, sonne quand même tôt. Entre 13 et 18 ans, il faut de 8 à 10 heures de sommeil ; beaucoup en dorment nettement moins en semaine."
+          "text": "À l’adolescence, l’horloge interne se décale. La mélatonine, l’hormone du sommeil, arrive plus tard le soir. La fatigue ne se fait donc sentir que tard. C’est de la biologie, pas de la paresse. Le réveil, lui, sonne quand même tôt. Entre 13 et 18 ans, il faut de 8 à 10 heures de sommeil ; beaucoup en dorment nettement moins en semaine."
         },
         {
           "art": "aufgabe",
@@ -317,7 +317,7 @@
           "art": "info",
           "symbol": "hilfe",
           "titel": "C’est toi qui décides de ce que tu partages.",
-          "text": "Cette feuille t’appartient. Si tu mets souvent très longtemps à trouver le sommeil pendant des semaines ou si la fatigue ne te quitte pas, parles-en à une personne de confiance, par exemple à la médecine scolaire ou au SePAS."
+          "text": "Cette feuille t’appartient. Pendant des semaines, tu mets souvent très longtemps à t’endormir ? Ou la fatigue ne te quitte pas ? Parles-en à une personne de confiance, par exemple à la médecine scolaire ou au SePAS."
         }
       ],
       "lehrer": {
@@ -615,7 +615,7 @@
           "art": "info",
           "symbol": "merke",
           "titel": "Le piège de la caféine",
-          "text": "La caféine t’avance de l’énergie – et tu la rembourses le soir. Tu peux sortir du cercle à n’importe quel moment : avec de l’eau, de la lumière du jour et du mouvement pendant la journée, et sans caféine à partir de l’après-midi."
+          "text": "La caféine t’avance de l’énergie – et tu la rembourses le soir. Tu peux sortir du cercle à n’importe quel moment. Pendant la journée : de l’eau, de la lumière du jour et du mouvement. À partir de l’après-midi : pas de caféine."
         },
         {
           "art": "schritte",
@@ -1140,7 +1140,7 @@
           "art": "info",
           "symbol": "wissen",
           "titel": "Was Bewegung mit dem Kopf macht",
-          "text": "Forschende haben viele Studien zusammengefasst: Wer sich bewegt, ist danach oft besser gelaunt, weniger ängstlich und kann sich besser konzentrieren. Die Wirkung ist nicht riesig, zeigt sich aber immer wieder. Dafür braucht es keinen Sport – zügig gehen, tanzen, Rad fahren und Treppen zählen auch."
+          "text": "Forschende haben viele Studien zusammengefasst. Ergebnis: Wer sich bewegt, ist danach oft besser gelaunt und weniger ängstlich. Und man kann sich besser konzentrieren. Die Wirkung ist nicht riesig, zeigt sich aber immer wieder. Dafür braucht es keinen Sport – zügig gehen, tanzen, Rad fahren und Treppen zählen auch."
         },
         {
           "art": "aufgabe",
@@ -1326,12 +1326,12 @@
           "art": "info",
           "symbol": "wissen",
           "titel": "Ce que le mouvement fait à la tête",
-          "text": "Des chercheurs ont réuni de nombreuses études : après avoir bougé, on est souvent de meilleure humeur, moins anxieux et on se concentre mieux. L’effet n’est pas énorme, mais il revient sans cesse. Pas besoin de faire du sport pour cela : marcher d’un bon pas, danser, faire du vélo ou monter des escaliers comptent aussi."
+          "text": "Des chercheurs ont réuni de nombreuses études. Résultat : après avoir bougé, on est souvent de meilleure humeur et moins anxieux. Et on se concentre mieux. L’effet n’est pas énorme, mais il revient sans cesse. Pas besoin de faire du sport pour cela : marcher d’un bon pas, danser, faire du vélo ou monter des escaliers comptent aussi."
         },
         {
           "art": "aufgabe",
           "text": "Choisis pour la semaine une idée de mouvement qui te plaît et décide quand tu la fais.",
-          "hinweis": "Sur la deuxième ligne, note ton plan pour le plus gros obstacle, par exemple : s’il pleut à verse, je monte trois fois l’escalier en courant chez moi."
+          "hinweis": "Sur la deuxième ligne, note ton plan pour le plus gros obstacle. Par exemple : s’il pleut à verse, je monte trois fois l’escalier en courant chez moi."
         },
         {
           "art": "ankreuzen",
@@ -1384,7 +1384,7 @@
           "art": "info",
           "symbol": "hilfe",
           "titel": "Bouger ne remplace pas l’aide.",
-          "text": "Si tu as le moral bas depuis des semaines, parle à une personne de confiance ou appelle le Kanner- a Jugendtelefon au 116 111 (anonyme, gratuit)."
+          "text": "Tu as le moral bas depuis des semaines ? Parle à une personne de confiance ou appelle le Kanner- a Jugendtelefon au 116 111 (anonyme, gratuit)."
         }
       ],
       "lehrer": {

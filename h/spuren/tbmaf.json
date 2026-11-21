@@ -1,0 +1,46 @@
+{
+ "modul": "tbmaf",
+ "titel": {
+  "de": "Toolbox · Arbeitsblätter MA",
+  "fr": "Toolbox · fiches MA"
+ },
+ "sprache": "fr",
+ "spuren": {
+  "tbmaf-03x": {
+   "titel": "MA-03 · Virgule sous virgule",
+   "art": "lesen",
+   "lektion": 3,
+   "dauer": 14.2,
+   "text": [
+    [
+     "",
+     "Prix, données mobiles, temps en sport : presque tout ce que tu paies ou mesures au quotidien a une virgule. Tu additionnes et tu soustrais comme avec les nombres entiers – avec une seule règle."
+    ]
+   ]
+  },
+  "tbmaf-09x": {
+   "titel": "MA-09 · Point, droite, segment",
+   "art": "lesen",
+   "lektion": 9,
+   "dauer": 15.9,
+   "text": [
+    [
+     "",
+     "Sur un plan de ville, les arrêts de bus sont des points. Les longues rues droites sont des droites. Le trajet d’un arrêt au suivant est un segment. En géométrie, chaque ligne a un nom et une notation."
+    ]
+   ]
+  },
+  "tbmaf-10x": {
+   "titel": "MA-10 · Au millimètre près",
+   "art": "lesen",
+   "lektion": 10,
+   "dauer": 16.5,
+   "text": [
+    [
+     "",
+     "Une étagère trop large de 2 mm ne rentre pas dans la niche. Quand on mesure, chaque millimètre compte. Avec la règle, tu mesures des segments en cm et en mm et tu trouves leur milieu."
+    ]
+   ]
+  }
+ }
+}

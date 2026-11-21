@@ -512,7 +512,7 @@
           "art": "info",
           "symbol": "hilfe",
           "titel": "Tu décides comment utiliser cette feuille.",
-          "text": "Si tu penses à des personnes qui manquent ou qui t’ont fait du mal, utilise les cartes autrement – par exemple pour quelqu’un qui te fait du bien – ou laisse simplement la feuille de côté. Personne n’a à montrer ou à lire quoi que ce soit."
+          "text": "Tu penses à des personnes qui manquent ou qui t’ont fait du mal ? Utilise les cartes pour quelqu’un qui te fait du bien. Ou laisse simplement la feuille de côté. Personne n’a à montrer ou à lire quoi que ce soit."
         },
         {
           "art": "aufgabe",
@@ -796,7 +796,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Dein kleiner Schritt für diese Woche: Was machst du, damit die andere Person merkt, dass du sie magst – auf eine Art, die zu ihr passt?",
+          "text": "Dein kleiner Schritt für diese Woche: Wie zeigst du der Person, dass du sie magst? Wähle eine Art, die zu ihr passt.",
           "symbole": [
             "schreiben"
           ]
@@ -815,7 +815,7 @@
           "art": "info",
           "symbol": "tipp",
           "titel": "Einfach fragen",
-          "text": "Du kannst eine Freundin oder einen Freund fragen: „Woran merkst du, dass ich dich mag?“ Das ist keine peinliche Frage. Und wenn dir jemand zu wenig zu zeigen scheint, heißt das nicht, dass die Person dich nicht mag – manchmal sprecht ihr nur verschiedene Sprachen."
+          "text": "Du kannst eine Freundin oder einen Freund fragen: „Woran merkst du, dass ich dich mag?“ Das ist keine peinliche Frage. Zeigt dir jemand wenig, heißt das nicht, dass die Person dich nicht mag. Manchmal sprecht ihr nur verschiedene Sprachen."
         },
         {
           "art": "linien",
@@ -860,7 +860,7 @@
       "bausteine": [
         {
           "art": "text",
-          "text": "Les amis montrent de manières très différentes qu’ils apprécient quelqu’un : l’une t’écrit « bonne nuit » tard le soir, l’autre t’aide sans dire un mot. Les deux peuvent signifier « je t’aime bien ». Ici, tu découvres à quoi tu le remarques – et comment tu le montres."
+          "text": "Les amis montrent de façons très différentes qu’ils t’apprécient. L’une t’écrit « bonne nuit » tard le soir. L’autre t’aide sans dire un mot. Les deux peuvent signifier « je t’aime bien ». Ici, tu découvres à quoi tu le remarques – et comment tu le montres."
         },
         {
           "art": "aufgabe",

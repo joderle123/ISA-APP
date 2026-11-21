@@ -9,6 +9,11 @@ export const SCHRIFT = {
   kind: 'CDSE Kinderschrift',
   jugend: 'CDSE Inter',
   titel: 'CDSE Manrope',
+  /** Fließtext der Jugend-Blätter (C4–ES): Atkinson Hyperlegible – für schwache Leser und Leserinnen gemacht (I/l/1, b/d klar
+   *  unterscheidbar), dieselbe Schrift wie in den Modulheften. Lehrerseiten und Skills-Kurs bleiben in Inter. */
+  lesen: 'CDSE Atkinson',
+  /** Blatt-Titel (alle Stufen): Lexend, wie die Überschriften der Modulhefte. */
+  kopf: 'CDSE Lexend',
 }
 
 let registriert = false
@@ -34,6 +39,22 @@ export function registriereSchriften(quelle: (datei: string) => string): void {
       { src: quelle('Inter-Regular.ttf'), fontWeight: 400 },
       { src: quelle('Inter-SemiBold.ttf'), fontWeight: 600 },
       { src: quelle('Inter-SemiBold.ttf'), fontWeight: 700 },
+    ],
+  })
+  Font.register({
+    family: SCHRIFT.lesen,
+    fonts: [
+      { src: quelle('Atkinson-Regular.ttf'), fontWeight: 400 },
+      { src: quelle('Atkinson-Bold.ttf'), fontWeight: 600 },
+      { src: quelle('Atkinson-Bold.ttf'), fontWeight: 700 },
+    ],
+  })
+  Font.register({
+    family: SCHRIFT.kopf,
+    fonts: [
+      { src: quelle('Lexend-SemiBold.ttf'), fontWeight: 600 },
+      { src: quelle('Lexend-Bold.ttf'), fontWeight: 700 },
+      { src: quelle('Lexend-Bold.ttf'), fontWeight: 800 },
     ],
   })
   Font.register({
@@ -68,14 +89,15 @@ export const MASSE: Record<Layout, Masse> = {
   bild: { layout: 'bild', schrift: SCHRIFT.kind, fett: 700, basis: 15, klein: 11, titel: 27, untertitel: 13, zeile: 36, abstand: 16, nummer: 24, lh: 1.3, kaestchen: 17 },
   gross: { layout: 'gross', schrift: SCHRIFT.kind, fett: 700, basis: 14, klein: 10, titel: 25, untertitel: 13, zeile: 32, abstand: 14, nummer: 22, lh: 1.34, kaestchen: 15 },
   mittel: { layout: 'mittel', schrift: SCHRIFT.kind, fett: 700, basis: 12, klein: 9.4, titel: 22, untertitel: 11.6, zeile: 26, abstand: 12, nummer: 19, lh: 1.4, kaestchen: 12.5 },
-  jugend: { layout: 'jugend', schrift: SCHRIFT.jugend, fett: 600, basis: 10.2, klein: 8.5, titel: 20, untertitel: 10.6, zeile: 23, abstand: 11, nummer: 17, lh: 1.46, kaestchen: 10.5 },
+  // Toolbox-Umbau 21.11.: Atkinson Hyperlegible statt Inter, Grundschrift 10,2 → 10,6 pt, Kleinschrift 8,5 → 9 pt (8,5 war für die Zielgruppe zu klein).
+  jugend: { layout: 'jugend', schrift: SCHRIFT.lesen, fett: 700, basis: 10.5, klein: 9, titel: 21, untertitel: 10.8, zeile: 23, abstand: 11, nummer: 17, lh: 1.4, kaestchen: 10.5 },
 }
 
 /** Skills-Kurs, Look „spiel“: größere Schrift und mehr Luft als das Jugend-Layout – weniger Text je Seite, alles gut lesbar. */
-export const SPIEL_MASSE: Masse = { ...MASSE.jugend, basis: 11.4, klein: 9.2, titel: 28, untertitel: 11.8, zeile: 27, abstand: 13, nummer: 22, lh: 1.42, kaestchen: 12.5 }
+export const SPIEL_MASSE: Masse = { ...MASSE.jugend, schrift: SCHRIFT.jugend, fett: 600, basis: 11.4, klein: 9.2, titel: 28, untertitel: 11.8, zeile: 27, abstand: 13, nummer: 22, lh: 1.42, kaestchen: 12.5 }
 
 /** Lehrerseite: immer sachlich gesetzt. */
-export const LEHRER_MASSE: Masse = { ...MASSE.jugend, basis: 9.6, klein: 8.2, titel: 18, untertitel: 10 }
+export const LEHRER_MASSE: Masse = { ...MASSE.jugend, schrift: SCHRIFT.jugend, fett: 600, lh: 1.46, basis: 9.6, klein: 8.2, titel: 18, untertitel: 10 }
 
 export const SEITE = { rand: 40, oben: 30, unten: 46 }
 

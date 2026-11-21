@@ -23,6 +23,9 @@ import { Balken, Bingo, EntwederOder, Mission, Rangliste, SpielAufgabe, SpielInf
 import { aufhellen, mischen, SEKTOR_TOENE, verlauf, WASSER, type Design } from './design'
 import { duotone, motivFuerIcon } from '../icon-motiv'
 import { istSzene, szeneMitFiguren } from '../szenen'
+import qrcode from 'qrcode-generator'
+import { HOER_BASIS } from '../hoeren'
+import { textNachZeilen, type SchriftSorte } from './textbreite'
 
 export interface Ctx {
   m: Masse
@@ -37,6 +40,70 @@ export interface Ctx {
   design?: Design
   /** Fülle die Restseite: der letzte Baustein dieser Liste darf bis zum Seitenende wachsen (siehe `fuellen`) */
   fuellen?: boolean
+  /** Vorlesen: Hör-Code je Baustein (Geschichten mit Hördatei, src/blatt/hoeren.ts) – dann steht ein QR-Code daneben */
+  hoeren?: Map<Baustein, string>
+}
+
+/** QR-Code als Vektor (Module als ein Pfad), Fehlerkorrektur M – scannt auch auf grauer Kopie. */
+export function QrCode({ text, groesse, farbe = '#1F2933' }: { text: string; groesse: number; farbe?: string }) {
+  const q = qrcode(0, 'M')
+  q.addData(text)
+  q.make()
+  const n = q.getModuleCount()
+  let d = ''
+  for (let y = 0; y < n; y++) for (let x = 0; x < n; x++) if (q.isDark(y, x)) d += `M${x} ${y}h1v1h-1z`
+  return (
+    <Svg width={groesse} height={groesse} viewBox={`-1 -1 ${n + 2} ${n + 2}`}>
+      <Rect x={-1} y={-1} width={n + 2} height={n + 2} fill="#FFFFFF" />
+      <Path d={d} fill={farbe} />
+    </Svg>
+  )
+}
+
+/** Kleiner Kasten „Anhören“: QR-Code zur Hördatei, darunter Kopfhörer-Symbol und Wort. */
+const qrGroesse = (c: Ctx) => (c.m.layout === 'jugend' ? 44 : 50)
+/** Platz, den der Kasten neben dem Text braucht (Breite) und seine Höhe */
+const qrBreite = (c: Ctx) => qrGroesse(c) + 18
+const qrHoehe = (c: Ctx) => qrGroesse(c) + 18
+const sorteVon = (c: Ctx): SchriftSorte => (c.m.schrift === SCHRIFT.lesen ? 'lesen' : c.m.schrift === SCHRIFT.jugend ? 'jugend' : 'kind')
+
+export function Anhoeren({ c, code, groesse }: { c: Ctx; code: string; groesse?: number }) {
+  const gr = groesse ?? qrGroesse(c)
+  return (
+    <View style={{ width: gr + 8, marginLeft: 10, alignItems: 'center' }}>
+      <View style={{ backgroundColor: '#FFFFFF', borderRadius: 6, padding: 3, borderWidth: 0.8, borderColor: aufhellen(c.p.mittel, 0.8) }}>
+        <QrCode text={HOER_BASIS + '?' + code} groesse={gr} />
+      </View>
+      <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 3 }}>
+        <Svg width={8} height={8} viewBox="0 0 24 24">
+          <Path d="M4 15v-3a8 8 0 0 1 16 0v3" stroke={c.p.tief} strokeWidth={2.4} fill="none" />
+          <Rect x={2.5} y={13} width={5} height={8} rx={1.5} fill={c.p.tief} />
+          <Rect x={16.5} y={13} width={5} height={8} rx={1.5} fill={c.p.tief} />
+        </Svg>
+        <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 6.6, color: c.p.tief, marginLeft: 2.5 }}>{c.sprache === 'fr' ? 'ÉCOUTER' : 'ANHÖREN'}</Text>
+      </View>
+    </View>
+  )
+}
+
+/** Text mit QR-Code „Anhören“ oben rechts: Nur die ersten Zeilen stehen neben dem Code, darunter läuft der Text in voller
+ *  Breite weiter (wie ein Bild im Zeitungstext) – so kostet der Code kaum Platz. `oben` = Höhe, die über dem Text schon
+ *  neben dem Code steht (z. B. ein Titel). */
+function TextMitQr({ c, code, text, breite, lh, oben = 0, kopf }: { c: Ctx; code: string; text: string; breite: number; lh: number; oben?: number; kopf?: ReactNode }) {
+  const zeilen = Math.max(1, Math.ceil((qrHoehe(c) - oben) / (c.m.basis * lh)))
+  const [vorne, rest] = text.includes('{') ? [text, ''] : textNachZeilen(text, sorteVon(c), c.m.basis, (breite - qrBreite(c)) * 0.985, zeilen)
+  return (
+    <View>
+      <View style={{ flexDirection: 'row', alignItems: 'flex-start' }}>
+        <View style={{ flex: 1 }}>
+          {kopf}
+          <Fliess c={c} style={{ lineHeight: lh }}>{vorne}</Fliess>
+        </View>
+        <Anhoeren c={c} code={code} />
+      </View>
+      {rest ? <Fliess c={c} style={{ lineHeight: lh }}>{rest}</Fliess> : null}
+    </View>
+  )
 }
 
 type Tx = (typeof TEXTE)['de']
@@ -431,13 +498,17 @@ function Geschichte({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'geschichte'
   if (figur || szene) {
     const fs = c.m.basis
     const zeichenBreite = c.m.layout === 'jugend' ? 0.5 : 0.54
-    const textB = c.breite - 24 - 12 - breiteVon(hFig)
+    const textB = c.breite - 24 - 12 - breiteVon(hFig) - (c.hoeren?.get(b) ? 16 : 0)
     const zeilen = Math.ceil((b.text.length * zeichenBreite * fs * 1.06) / textB)
     const hText = zeilen * fs * (c.m.lh + 0.08) + (b.titel ? c.m.basis * 1.05 * 1.3 + 4 : 0)
     // geschätzt, eher zu klein als zu groß: der Rahmen darf das Kästchen nie höher machen als der Text
     hFig = Math.max(hFig, Math.min(176, hText * 0.88))
   }
   const bildB = breiteVon(hFig)
+  const code = c.hoeren?.get(b)
+  const kopf = b.titel ? (
+    <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: c.m.basis * 1.05, color: NEUTRAL.text, marginBottom: 4 }}>{t(c, b.titel)}</Text>
+  ) : null
   const rahmen = { width: bildB, height: hFig - 2, marginRight: 12, borderRadius: 14, backgroundColor: '#FFFFFF', borderWidth: 1, borderColor: aufhellen(c.p.mittel, 0.7), overflow: 'hidden' as const, alignItems: 'center' as const }
   return (
     <View wrap={false} style={{ flexDirection: 'row', backgroundColor: c.design ? c.p.zart : NEUTRAL.flaeche, borderRadius: 10, padding: 12 }}>
@@ -466,12 +537,16 @@ function Geschichte({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'geschichte'
         )
       ) : null}
       <View style={{ flex: 1 }}>
-        {b.titel ? (
-          <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: c.m.basis * 1.05, color: NEUTRAL.text, marginBottom: 4 }}>{t(c, b.titel)}</Text>
-        ) : null}
-        <Fliess c={c} style={{ lineHeight: c.m.lh + 0.08 }}>
-          {t(c, b.text)}
-        </Fliess>
+        {code ? (
+          <TextMitQr c={c} code={code} text={t(c, b.text)} breite={c.breite - 24 - (szene || b.bild ? bildB + 12 : 0)} lh={c.m.lh + 0.08} oben={b.titel ? c.m.basis * 1.05 * 1.3 + 4 : 0} kopf={kopf} />
+        ) : (
+          <>
+            {kopf}
+            <Fliess c={c} style={{ lineHeight: c.m.lh + 0.08 }}>
+              {t(c, b.text)}
+            </Fliess>
+          </>
+        )}
       </View>
     </View>
   )
@@ -2704,6 +2779,8 @@ function EinBaustein({ c, b, grow }: { c: Ctx; b: Baustein; grow?: boolean }) {
     case 'aufgabe':
       return <Aufgabe c={c} b={b} />
     case 'text':
+      // Längerer Lesetext mit Hördatei: QR-Code „Anhören“ oben rechts, der Text fließt darum herum
+      if (c.hoeren?.get(b) && !b.klein) return <TextMitQr c={c} code={c.hoeren.get(b)!} text={t(c, b.text)} breite={c.breite} lh={c.m.lh} />
       return (
         <Fliess c={c} klein={b.klein} farbe={b.klein ? NEUTRAL.leise : undefined}>
           {t(c, b.text)}

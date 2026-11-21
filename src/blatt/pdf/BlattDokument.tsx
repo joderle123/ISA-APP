@@ -9,8 +9,9 @@ import type { AktivitaetArt, Baustein, Blatt, BlattInhalt, Layout, Sprache } fro
 import { bereichById, blattLayout, stufenText, themaLabel, type Farben } from '../katalog'
 import { NEUTRAL, palette, type Palette } from '../zeichnung'
 import { eldibDomainById, eldibGoalById } from '../../data/taxonomy'
-import { Bausteine, nummerieren, NiveauZeichen, Plakette, Leitbild, Fliess, type Ctx } from './bausteine'
+import { Anhoeren, Bausteine, nummerieren, NiveauZeichen, Plakette, Leitbild, Fliess, type Ctx } from './bausteine'
 import { akzentFarben, designVon, type Design } from './design'
+import { hoerCodes } from '../hoeren'
 import { textBreite, type SchriftSorte } from './textbreite'
 import { LEHRER_MASSE, MASSE, SCHRIFT, SEITE, SPIEL_MASSE, TEXTE, dauerText, typo, type Masse } from './stil'
 import { SpielKopf } from './spiel'
@@ -213,7 +214,7 @@ function zeilenZahl(text: string, sorte: SchriftSorte, gr: number, breite: numbe
   return zeilen
 }
 
-function Titelblock({ blatt, inhalt, sprache, p, m, heft, design }: { blatt: Blatt; inhalt: BlattInhalt; sprache: Sprache; p: Palette; m: Masse; heft?: HeftAngaben; design?: Design }) {
+function Titelblock({ blatt, inhalt, sprache, p, m, heft, design, hoerCode }: { blatt: Blatt; inhalt: BlattInhalt; sprache: Sprache; p: Palette; m: Masse; heft?: HeftAngaben; design?: Design; hoerCode?: string }) {
   const c: Ctx = { m, p, sprache, nummern: new Map(), breite: BREITE, design }
   const bild = blatt.bild ?? 'icon:' + (bereichById.get(blatt.bereich)?.icon ?? 'star')
   const d = m.layout === 'jugend' ? 54 : m.layout === 'bild' ? 74 : 64
@@ -232,17 +233,18 @@ function Titelblock({ blatt, inhalt, sprache, p, m, heft, design }: { blatt: Bla
   if (bilderbuch) {
     const sub = heft?.lernziel ? `${heft.zielWort ?? 'Mein Ziel:'} ${heft.lernziel}` : (blatt.passgenau?.ziel?.[sprache] ?? inhalt.untertitel ?? '')
     const alt = BREITE - d - 14
-    const subSorte = m.schrift === SCHRIFT.jugend ? 'jugend' : 'kind'
+    const subSorte = m.schrift === SCHRIFT.jugend ? 'jugend' : m.schrift === SCHRIFT.lesen ? 'lesen' : 'kind'
     const titel = typo(inhalt.titel, sprache)
     const sub2 = typo(sub, sprache)
+    // „vorher“ = Zeilen mit der früheren Titelschrift (Manrope) – Lexend ist breiter und darf deshalb bis zu 16 % kleiner werden
     const zuvor = [zeilenZahl(titel, 'titel', m.titel, alt), zeilenZahl(sub2, subSorte, m.untertitel, alt)]
     const skala = (text: string, sorte: SchriftSorte, gr: number, soll: number, col: number) => {
-      for (let k = 1; k >= 0.88; k -= 0.02) if (zeilenZahl(text, sorte, gr * k, col * 0.985) <= soll) return k
+      for (let k = 1; k >= (sorte === 'kopf' ? 0.84 : 0.88); k -= 0.02) if (zeilenZahl(text, sorte, gr * k, col * 0.985) <= soll) return k
       return 0
     }
     for (; bildBreite >= 56; bildBreite -= 4) {
       const col = BREITE - 16 - 12 - 14 - bildBreite
-      const kt = skala(titel, 'titel', m.titel, zuvor[0], col)
+      const kt = skala(titel, 'kopf', m.titel, zuvor[0], col)
       const ks = skala(sub2, subSorte, m.untertitel, zuvor[1], col)
       if (kt && ks) {
         titelGr = m.titel * kt
@@ -251,11 +253,20 @@ function Titelblock({ blatt, inhalt, sprache, p, m, heft, design }: { blatt: Bla
       }
     }
     bildBreite = Math.max(56, bildBreite)
+  } else {
+    // Magazin-Kopf (C4–ES): Der Titel in Lexend darf nicht in mehr Zeilen umbrechen als früher in Manrope – sonst bis zu 16 % kleiner
+    const titel = typo(inhalt.titel, sprache)
+    const col = (ohneBild ? BREITE : BREITE - d - 14) * 0.985
+    const soll = zeilenZahl(titel, 'titel', m.titel, col)
+    for (let k = 1; k >= 0.84; k -= 0.02) {
+      titelGr = m.titel * k
+      if (zeilenZahl(titel, 'kopf', titelGr, col) <= soll) break
+    }
   }
   const texte = (
     <View style={{ flex: 1, paddingRight: ohneBild ? 0 : 14, paddingVertical: bilderbuch ? 3 : 0 }}>
       <View style={{ width: 26, height: 3.5, borderRadius: 2, backgroundColor: p.tief, marginBottom: 7 }} />
-      <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: titelGr, lineHeight: 1.12, color: NEUTRAL.text, letterSpacing: -0.3 }}>{typo(inhalt.titel, sprache)}</Text>
+      <Text style={{ fontFamily: SCHRIFT.kopf, fontWeight: 700, fontSize: titelGr, lineHeight: 1.14, color: NEUTRAL.text, letterSpacing: -0.4 }}>{typo(inhalt.titel, sprache)}</Text>
       {heft?.lernziel ? (
         <Text style={{ fontFamily: m.schrift, fontSize: m.untertitel, lineHeight: 1.4, color: NEUTRAL.leise, marginTop: 5 }}>
           <Text style={{ fontWeight: m.fett, color: p.tief }}>{heft.zielWort ?? 'Mein Ziel:'} </Text>
@@ -282,7 +293,7 @@ function Titelblock({ blatt, inhalt, sprache, p, m, heft, design }: { blatt: Bla
       ) : (
         <View style={{ flexDirection: 'row', alignItems: 'center' }}>
           {texte}
-          {ohneBild ? null : design ? <Leitbild c={c} id={bild} h={d} /> : <Plakette c={c} id={bild} d={d} />}
+          {ohneBild ? null : hoerCode ? <Anhoeren c={c} code={hoerCode} groesse={36} /> : design ? <Leitbild c={c} id={bild} h={d} /> : <Plakette c={c} id={bild} d={d} />}
         </View>
       )}
       {inhalt.anleitung ? (
@@ -652,7 +663,13 @@ export function BlattSeiten({ blatt, opt }: { blatt: Blatt; opt?: BlattOptionen 
   const teile = blatt.passgenau?.teile
   const ids = teile ? new Map(inhalt.bausteine.flatMap((b, i) => (teile[i] ? [[b, teile[i]!] as const] : []))) : undefined
   const design = designVon(blatt, layoutName, JSON.stringify(inhalt.bausteine))
-  const c: Ctx = { m, p, sprache, nummern: nummerieren(inhalt.bausteine), breite: BREITE, ids, design, fuellen: true }
+  const hoeren = hoerCodes(blatt.id, sprache, inhalt.bausteine)
+  // Einleitungstext ganz oben mit Hördatei: Im Magazin-Kopf steht der QR-Code statt des Symbols neben dem Titel – so kostet er
+  // keinen Platz (sonst steht er neben dem Text, siehe TextMitQr)
+  const spielKopf = design.spiel && !opt?.heft
+  const kopfCode = !spielKopf && design.magazin && !(blatt.passgenau && m.layout === 'jugend') && inhalt.bausteine[0]?.art === 'text' ? hoeren.get(inhalt.bausteine[0]) : undefined
+  if (kopfCode) hoeren.delete(inhalt.bausteine[0])
+  const c: Ctx = { m, p, sprache, nummern: nummerieren(inhalt.bausteine), breite: BREITE, ids, design, fuellen: true, hoeren }
   const melde = opt?.seite
   // Spielschule: Seite „Beobachten & Begleiten“ und Zusatzseiten mit demselben Kopf und Fuß wie alle Seiten
   const lehrerKopf = <Kopfzeile blatt={blatt} nr={opt?.nr} sprache={sprache} p={bp} m={LEHRER_MASSE} lehrer heft={opt?.heft} />
@@ -675,12 +692,12 @@ export function BlattSeiten({ blatt, opt }: { blatt: Blatt; opt?: BlattOptionen 
             />
           ) : null}
           <Folgekopf inhalt={inhalt} sprache={sprache} p={p} m={m} />
-          {design.spiel && !opt?.heft ? (
+          {spielKopf ? (
             <SpielKopf blatt={blatt} inhalt={inhalt} sprache={sprache} p={p} m={m} c={c} />
           ) : (
             <>
               <Kopfzeile blatt={blatt} nr={opt?.nr} sprache={sprache} p={p} m={m} heft={opt?.heft} design={design} />
-              <Titelblock blatt={blatt} inhalt={inhalt} sprache={sprache} p={p} m={m} heft={opt?.heft} design={design} />
+              <Titelblock blatt={blatt} inhalt={inhalt} sprache={sprache} p={p} m={m} heft={opt?.heft} design={design} hoerCode={kopfCode} />
             </>
           )}
           <Bausteine c={c} liste={inhalt.bausteine} oben />

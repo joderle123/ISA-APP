@@ -3511,7 +3511,7 @@
   "sicher": 0.85,
   "h": "5001e6fc"
  },
- "b:drei-gute-dinge:1": {
+ "b:drei-gute-dinge:2": {
   "rolle": [
    "uebung",
    "reflexion",
@@ -5620,7 +5620,7 @@
   "sicher": 0.8,
   "h": "064b173b"
  },
- "b:fokus:5": {
+ "b:fokus:8": {
   "rolle": [
    "uebung",
    "transfer"
@@ -5854,7 +5854,7 @@
   "sicher": 0.85,
   "h": "233bbf5c"
  },
- "b:freundschafts-rezept:4": {
+ "b:freundschafts-rezept:5": {
   "rolle": [
    "uebung"
   ],
@@ -7559,35 +7559,6 @@
   "von": "agent",
   "sicher": 0.85,
   "h": "75bf1bb3"
- },
- "b:guter-freund:2": {
-  "rolle": [
-   "uebung"
-  ],
-  "bogen": "uebertragen",
-  "eldib": {
-   "primaer": [
-    "K-19"
-   ],
-   "sekundaer": []
-  },
-  "kompetenz": [
-   "selbstbild",
-   "kooperation"
-  ],
-  "alter": {
-   "von": 6,
-   "bis": 8
-  },
-  "energie": 1,
-  "belastung": 0,
-  "einzeltauglich": "ja",
-  "merkmale": {},
-  "sensibel": null,
-  "begruendung": "Eigene Stärken und Übungsziele als Freund/Freundin nennen: eigene Eigenschaften beschreiben.",
-  "von": "agent",
-  "sicher": 0.85,
-  "h": "535543b2"
  },
  "b:hausaufgabenplan:0": {
   "rolle": [
@@ -9486,7 +9457,7 @@
   "sicher": 0.85,
   "h": "4dd59fea"
  },
- "b:klassenrat-protokoll:1": {
+ "b:klassenrat-protokoll:9": {
   "rolle": [
    "uebung"
   ],
@@ -17706,7 +17677,7 @@
   "sicher": 0.85,
   "h": "b55862cf"
  },
- "b:schildkroeten-trick:1": {
+ "b:schildkroeten-trick:2": {
   "rolle": [
    "uebung"
   ],
@@ -18187,7 +18158,7 @@
   "sicher": 0.8,
   "h": "4b9ab49a"
  },
- "b:selbstcheck:4": {
+ "b:selbstcheck:7": {
   "rolle": [
    "uebung",
    "reflexion"
@@ -52682,7 +52653,7 @@
   "sicher": 0.8,
   "h": "9cddc80b"
  },
- "b:szenen-proben-im-rollenspiel:7": {
+ "b:szenen-proben-im-rollenspiel:8": {
   "rolle": [
    "uebung",
    "transfer"
@@ -53236,7 +53207,7 @@
   "sicher": 0.85,
   "h": "8c8a4af7"
  },
- "b:trost-koffer:4": {
+ "b:trost-koffer:6": {
   "rolle": [
    "uebung",
    "transfer"
@@ -54305,7 +54276,7 @@
   "sicher": 0.8,
   "h": "2d728dd3"
  },
- "b:was-diese-woche-gut-war:3": {
+ "b:was-diese-woche-gut-war:4": {
   "rolle": [
    "uebung",
    "transfer"
@@ -57943,7 +57914,7 @@
   "sicher": 0.85,
   "h": "e10d1551"
  },
- "b:konzentrations-tricks:3": {
+ "b:konzentrations-tricks:4": {
   "rolle": [
    "uebung"
   ],

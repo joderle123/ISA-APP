@@ -1,0 +1,50 @@
+{
+ "modul": "tbde",
+ "titel": {
+  "de": "Toolbox · Arbeitsblätter DE",
+  "fr": "Toolbox · fiches DE"
+ },
+ "sprache": "de",
+ "spuren": {
+  "tbde-08a": {
+   "titel": "DE-08 · Du bist eingeladen! – Beispiel",
+   "art": "lesen",
+   "lektion": 8,
+   "dauer": 17.0,
+   "text": [
+    [
+     "",
+     "Beispiel"
+    ],
+    [
+     "",
+     "Hallo Ben,\nam Samstag spielen wir Basketball im Hof. Wir treffen uns um 14 Uhr am Korb. Bring Wasser mit!\nBis Samstag!\nDein Jo"
+    ]
+   ]
+  },
+  "tbde-17x": {
+   "titel": "DE-17 · Länder entdecken",
+   "art": "lesen",
+   "lektion": 17,
+   "dauer": 21.3,
+   "text": [
+    [
+     "",
+     "Steckbrief Kap Verde: Inselstaat im Atlantik, vor der Küste Westafrikas · Hauptstadt: Praia · Sprachen: Portugiesisch (Amtssprache) und Kapverdisch (Kreol) · typisches Essen: Cachupa, ein Eintopf mit Mais und Bohnen · bekannt für: Musik (Morna)"
+    ]
+   ]
+  },
+  "tbde-23x": {
+   "titel": "DE-23 · Schule früher und heute",
+   "art": "lesen",
+   "lektion": 23,
+   "dauer": 29.0,
+   "text": [
+    [
+     "",
+     "Vor ungefähr hundert Jahren gab es in vielen Dörfern nur eine Klasse für alle Kinder. Die Kinder schrieben auf kleinen Schiefertafeln, denn Papier war teuer. Sie mussten still sitzen und durften im Unterricht nicht sprechen. Viele Kinder konnten nach der Schule nicht spielen, sie mussten auf dem Hof oder im Haus helfen. Heute arbeiten wir oft in Gruppen, mit Laptops – und wir dürfen Fragen stellen."
+    ]
+   ]
+  }
+ }
+}

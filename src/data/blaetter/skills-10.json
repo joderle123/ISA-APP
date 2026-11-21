@@ -252,7 +252,7 @@
       "bausteine": [
         {
           "art": "text",
-          "text": "Tous les skills ne conviennent pas partout. La boussole te montre lequel t’aide où : à l’école, face à la colère, dans les amitiés, à la maison, sur internet. Si tu étais déjà là en année 1, tu connais la valise de skills – elle range les skills selon le niveau de tension. La boussole, elle, les range selon les domaines de ton quotidien."
+          "text": "Tous les skills ne conviennent pas partout. La boussole te montre lequel t’aide où : à l’école, face à la colère, dans les amitiés, à la maison, sur internet. Tu étais déjà là en année 1 ? Alors tu connais la valise de skills. Elle range les skills selon le niveau de tension. La boussole, elle, les range selon les domaines de ton quotidien."
         },
         {
           "art": "aufgabe",
@@ -758,7 +758,7 @@
       "bausteine": [
         {
           "art": "text",
-          "text": "Selbstwert ist das Gefühl, als Mensch in Ordnung und wertvoll zu sein. Viele knüpfen es an Dinge, die schnell wackeln: Noten, Likes, Aussehen, Siege. Dann geht es mit jeder Klassenarbeit und jedem Post rauf und runter. Stabiler wird es, wenn es auf mehreren Quellen steht – und auf solchen, die dir ein schlechter Tag nicht wegnehmen kann."
+          "text": "Selbstwert ist das Gefühl, als Mensch in Ordnung und wertvoll zu sein. Viele knüpfen es an Dinge, die schnell wackeln: Noten, Likes, Aussehen, Siege. Dann geht es mit jeder Klassenarbeit und jedem Post rauf und runter. Stabiler wird es, wenn es auf mehreren Quellen steht. Am besten auf solchen, die dir ein schlechter Tag nicht wegnehmen kann."
         },
         {
           "art": "aufgabe",
@@ -913,11 +913,11 @@
           "art": "info",
           "symbol": "wissen",
           "titel": "Ce qui vacille, ce qui porte",
-          "text": "Les cinq premières sources dépendent surtout du jugement des autres ou de la comparaison. On peut te les enlever en une seule journée. Les quatre dernières dépendent plus de toi : de ce que tu fais, de ce qui compte pour toi, et de personnes qui ne te classent pas par notes. Bonnes notes et victoires peuvent te réjouir – elles ne devraient simplement pas être la seule chose sur laquelle tu t’appuies."
+          "text": "Les cinq premières sources dépendent surtout du jugement des autres ou de la comparaison. On peut te les enlever en une seule journée. Les quatre dernières dépendent plus de toi. Elles viennent de ce que tu fais, de ce qui compte pour toi et de personnes qui ne te jugent pas sur tes notes. Bonnes notes et victoires peuvent te réjouir – elles ne devraient simplement pas être la seule chose sur laquelle tu t’appuies."
         },
         {
           "art": "aufgabe",
-          "text": "Compte : combien de fois as-tu coché « beaucoup » pour les sources fragiles et combien de fois pour les sources solides ? Qu’est-ce que tu remarques ?"
+          "text": "Compte : combien de fois as-tu coché « beaucoup » pour les sources fragiles ? Et combien de fois pour les sources solides ? Qu’est-ce que tu remarques ?"
         },
         {
           "art": "tabelle",
@@ -967,7 +967,7 @@
           "art": "info",
           "symbol": "hilfe",
           "titel": "C’est toi qui décides de ce que tu partages.",
-          "text": "Si tes pensées sur toi-même sont souvent très dures, parle à quelqu’un en qui tu as confiance – l’adulte qui anime, le SePAS, ou de façon anonyme au Kanner- a Jugendtelefon (116 111)."
+          "text": "Tes pensées sur toi-même sont souvent très dures ? Parle à quelqu’un en qui tu as confiance : l’adulte qui anime, le SePAS, ou de façon anonyme le Kanner- a Jugendtelefon (116 111)."
         }
       ],
       "lehrer": {
@@ -1618,7 +1618,7 @@
       "bausteine": [
         {
           "art": "text",
-          "text": "Une remarque sur les jambes, un emoji qui rit sous une photo, un « Tu as pris du poids, dis donc » à la fête de famille : ces phrases font mal, même quand c’est dit pour rire. Et souvent, quelqu’un est juste à côté et ne sait pas quoi dire."
+          "text": "Une remarque sur les jambes, un emoji qui rit sous une photo, un « Tu as pris du poids, dis donc » à la fête de famille. Ces phrases font mal, même quand c’est dit pour rire. Et souvent, quelqu’un est juste à côté et ne sait pas quoi dire."
         },
         {
           "art": "aufgabe",
@@ -1679,7 +1679,7 @@
           "art": "info",
           "symbol": "hilfe",
           "titel": "Voici où trouver de l’aide",
-          "text": "Si des pensées sur l’apparence, la nourriture ou le poids prennent beaucoup de place, ou si quelqu’un te harcèle à cause de ton corps : parles-en à une personne de confiance – au SePAS, au médecin scolaire, ou de façon anonyme au Kanner- a Jugendtelefon (116 111). En cas de problème sur internet : BEE SECURE Helpline (8002 1234)."
+          "text": "Les pensées sur l’apparence, la nourriture ou le poids prennent beaucoup de place ? Ou quelqu’un te harcèle à cause de ton corps ? Parles-en à une personne de confiance : au SePAS, au médecin scolaire, ou de façon anonyme au Kanner- a Jugendtelefon (116 111). En cas de problème sur internet : BEE SECURE Helpline (8002 1234)."
         },
         {
           "art": "seitenumbruch"
@@ -1882,7 +1882,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Die Selbstmitgefühls-Pause: Probier die drei Schritte bei einer kleinen Panne aus – im Bus, vor einer Klassenarbeit, nach einer blöden Nachricht."
+          "text": "Die Selbstmitgefühls-Pause: Probier die drei Schritte bei einer kleinen Panne aus. Zum Beispiel im Bus, vor einer Klassenarbeit oder nach einer blöden Nachricht."
         },
         {
           "art": "schritte",
@@ -2034,7 +2034,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Ton critique, ton ami : écris deux phrases de ton critique – les tiennes ou celles de l’encadré – et ce que ton ami intérieur répond.",
+          "text": "Ton critique, ton ami : écris deux phrases de ton critique, les tiennes ou celles de l’encadré. Puis écris ce que ton ami intérieur répond.",
           "hinweis": "Rien de tout cela n’est lu à voix haute, sauf si tu le souhaites."
         },
         {
@@ -2074,7 +2074,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "La pause d’auto-compassion : essaie les trois étapes sur un petit raté – dans le bus, avant un devoir en classe, après un message stupide."
+          "text": "La pause d’auto-compassion : essaie les trois étapes sur un petit raté. Par exemple dans le bus, avant un devoir en classe ou après un message stupide."
         },
         {
           "art": "schritte",

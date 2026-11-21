@@ -41,7 +41,7 @@
       "bausteine": [
         {
           "art": "text",
-          "text": "Ein Lob fühlt sich gut an und ist am nächsten Tag oft schon vergessen, während böse Sätze lange hängen bleiben. Hier sammelst du die guten, damit du sie wiederfindest. Auch Kleines zählt – und es gibt kein Richtig oder Falsch."
+          "text": "Ein Lob fühlt sich gut an. Doch am nächsten Tag ist es oft schon vergessen. Böse Sätze dagegen bleiben lange hängen. Hier sammelst du die guten, damit du sie wiederfindest. Auch Kleines zählt – und es gibt kein Richtig oder Falsch."
         },
         {
           "art": "aufgabe",
@@ -217,11 +217,11 @@
       "bausteine": [
         {
           "art": "text",
-          "text": "Un compliment fait du bien sur le moment, puis il est souvent oublié dès le lendemain, alors que les mots blessants restent longtemps. Ici, tu gardes les bons mots pour pouvoir les retrouver. Même les petits comptent – et il n’y a ni bonne ni mauvaise réponse."
+          "text": "Un compliment fait du bien sur le moment. Mais le lendemain, il est souvent déjà oublié. Les mots blessants, eux, restent longtemps. Ici, tu gardes les bons mots pour pouvoir les retrouver. Même les petits comptent – et il n’y a ni bonne ni mauvaise réponse."
         },
         {
           "art": "aufgabe",
-          "text": "Écris dans les bulles ce que des gens t’ont dit ou écrit de gentil – aussi mot pour mot que tu t’en souviens.",
+          "text": "Écris dans les bulles les mots gentils que des gens t’ont dits ou écrits – le plus exactement possible.",
           "hinweis": "Peu importe de qui : lycée, entraînement, messages, proches. Si un seul compliment te revient, c’est déjà un début.",
           "symbole": [
             "schreiben",

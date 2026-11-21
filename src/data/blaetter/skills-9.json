@@ -1466,7 +1466,7 @@
           "art": "info",
           "symbol": "achtung",
           "titel": "Wann du dir mehr Hilfe holst",
-          "text": "Wird es nach einigen Wochen nicht besser, schläfst oder isst du kaum noch, oder denkst du, nicht mehr leben zu wollen: Sprich noch heute mit einer erwachsenen Person oder dem SePAS – oder ruf unten an."
+          "text": "Wird es nach einigen Wochen nicht besser? Schläfst oder isst du kaum noch? Oder denkst du, dass du nicht mehr leben willst? Dann sprich noch heute mit einer erwachsenen Person oder dem SePAS – oder ruf unten an."
         },
         {
           "art": "notfall",
@@ -1520,7 +1520,7 @@
         {
           "art": "aufgabe",
           "text": "Qu’est-ce qui t’aide quand ça te rattrape ? Coche et complète.",
-          "hinweis": "Mal dormir, être irritable, ne rien ressentir, y repenser sans cesse : après un événement difficile, c’est normal – et cela s’atténue en général après quelques jours ou semaines.",
+          "hinweis": "Mal dormir, être irritable, ne rien ressentir, y repenser sans cesse : après un événement difficile, c’est normal. En général, cela s’atténue après quelques jours ou semaines.",
           "symbole": [
             "ankreuzen"
           ]
@@ -1561,7 +1561,7 @@
           "art": "info",
           "symbol": "achtung",
           "titel": "Quand demander plus d’aide",
-          "text": "Si ça ne va pas mieux après quelques semaines, si tu ne dors ou ne manges presque plus, ou si tu penses ne plus vouloir vivre : parle aujourd’hui même à une personne adulte ou au SePAS – ou appelle ci-dessous."
+          "text": "Ça ne va pas mieux après quelques semaines ? Tu ne dors ou ne manges presque plus ? Ou tu penses ne plus vouloir vivre ? Alors parle aujourd’hui même à une personne adulte ou au SePAS – ou appelle ci-dessous."
         },
         {
           "art": "notfall",

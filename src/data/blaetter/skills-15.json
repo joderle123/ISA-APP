@@ -180,7 +180,7 @@
           "Vorbereitung: drei aktuelle Zahlen (letzte 30 Tage: Alkohol, Rauchen/Vapen, Cannabis) für die Altersgruppe aus dem HBSC-Bericht Luxemburg heraussuchen; ohne Zahlen Aufgabe 3 weglassen. Vor dem Input: Aufgabe 1 allein ankreuzen (3 Min.), noch ohne Auflösung.",
           "Aufgabe 2 in drei Expertenteams (12 Min.): „Das Gehirn baut um“ und ein weiterer Kasten, in drei Sätzen erklären.",
           "Nach der Pause Aufstellung Fakt – unsicher – Mythos, dann Aufgabe 1 mit dem zweiten Stift korrigieren. Lösung: Fakt 3, 5, 7; Mythos 1, 2, 4, 6, 8.",
-          "Aufgabe 3 an der Schätz-Linie; danach die vorher herausgesuchte Zahl aus der Studie (etwa HBSC Luxemburg) in der zweiten Farbe markieren.",
+          "Aufgabe 3 an der Schätz-Linie; danach die herausgesuchte HBSC-Zahl in der zweiten Farbe markieren.",
           "Aufgabe 4 im Réckbléck, freiwillig vorlesen."
         ],
         "hintergrund": "Das Gehirn ist bis Mitte zwanzig im Umbau; starker Alkohol- und Cannabiskonsum hängt in dieser Zeit mit schlechterem Gedächtnis und schlechterer Aufmerksamkeit zusammen (Squeglia et al., 2009). Wer jung mit Cannabis beginnt, wird deutlich häufiger abhängig, etwa jede sechste Person (Volkow et al., 2014). Vape-Aerosol ist kein harmloser Wasserdampf, und Nikotin kann Jugendliche schnell abhängig machen (US Surgeon General, 2016). Wer glaubt, alle tun es, macht eher mit – richtiggestellte Normen senken den Konsum (Perkins, 2002). Schockbilder helfen kaum, solange niemand zeigt, was man selbst tun kann (Peters, Ruiter & Kok, 2013).",
@@ -321,7 +321,7 @@
           "art": "info",
           "symbol": "merke",
           "titel": "Les autres en font moins que tu ne le crois.",
-          "text": "La plupart des jeunes de ton âge ne fument pas, ne vapotent pas et ne consomment pas de cannabis, et la plupart ne boivent pas ou rarement. Quand on croit que tout le monde le fait, on se sent plus vite sous pression – et on suit plus facilement."
+          "text": "La plupart des jeunes de ton âge ne fument pas, ne vapotent pas et ne consomment pas de cannabis. Et la plupart ne boivent pas d’alcool, ou rarement. Quand on croit que tout le monde le fait, on se sent plus vite sous pression – et on suit plus facilement."
         },
         {
           "art": "notfall",
@@ -1505,7 +1505,7 @@
           "art": "info",
           "symbol": "hilfe",
           "titel": "Et si c’est toi qui te sens ainsi ?",
-          "text": "Alors les mêmes étapes valent pour toi : tu as le droit de chercher de l’aide – auprès d’une personne de confiance, au SePAS ou au téléphone. C’est toi qui décides de ce que tu partages ; cette feuille t’appartient."
+          "text": "Alors les mêmes étapes valent pour toi : tu as le droit de chercher de l’aide – auprès d’une personne de confiance, au SePAS ou au téléphone. Cette feuille t’appartient."
         },
         {
           "art": "notfall",

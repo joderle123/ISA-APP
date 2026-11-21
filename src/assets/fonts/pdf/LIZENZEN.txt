@@ -9,6 +9,10 @@ die Pfeile ← → sowie das schmale geschützte Leerzeichen (U+202F) ergänzt
   geändert ist, trägt sie den reservierten Namen nicht (OFL, Bedingung 3).
 - Inter – Copyright (c) 2016 The Inter Project Authors. SIL Open Font License 1.1
 - Manrope – Copyright (c) 2018 The Manrope Project Authors. SIL Open Font License 1.1
+- Lexend (Überschriften, Lexend-*.ttf) – Copyright (c) 2018 The Lexend Project
+  Authors. SIL Open Font License 1.1
+- Atkinson Hyperlegible (Lesetext Jugend, Atkinson-*.ttf) – Copyright (c) 2020
+  Braille Institute of America, Inc. SIL Open Font License 1.1
 
 Lizenztext: https://openfontlicense.org
 

@@ -584,7 +584,7 @@
           "art": "info",
           "symbol": "merke",
           "titel": "Les sources de force, ça se développe",
-          "text": "Personne n’a toutes ses sources de force en même temps. On peut en trouver de nouvelles : essayer un club, demander à quelqu’un, s’entraîner à un skill. Si rien ne te vient à l’esprit en ce moment, c’est une bonne raison d’en parler avec quelqu’un – pas le signe que quelque chose ne va pas chez toi."
+          "text": "Personne n’a toutes ses sources de force en même temps. On peut en trouver de nouvelles : essayer un club, demander à quelqu’un, s’entraîner à un skill. Rien ne te vient à l’esprit en ce moment ? C’est une bonne raison d’en parler avec quelqu’un. Ce n’est pas le signe que quelque chose ne va pas chez toi."
         },
         {
           "art": "notfall"
@@ -1664,7 +1664,7 @@
           "art": "info",
           "symbol": "wissen",
           "titel": "Pourquoi le négatif colle",
-          "text": "Le cerveau prête plus d’attention aux contrariétés et aux dangers qu’aux bonnes choses. Pourtant, il y a des bons moments chaque jour – ils demandent juste plus d’attention. Quand on les remarque, on voit de nouveau plus de possibilités, on va plus facilement vers les autres et on se construit peu à peu de nouvelles sources de force."
+          "text": "Le cerveau prête plus d’attention aux contrariétés et aux dangers qu’aux bonnes choses. Pourtant, il y a des bons moments chaque jour – ils demandent juste plus d’attention. Quand on les remarque, on voit de nouveau plus de possibilités. On va plus facilement vers les autres. Et on se construit peu à peu de nouvelles sources de force."
         },
         {
           "art": "aufgabe",
@@ -2619,7 +2619,7 @@
           "art": "info",
           "symbol": "wissen",
           "titel": "Comment un feed trie",
-          "text": "Un feed mesure combien de temps tu regardes, si tu vas jusqu’au bout, si tu likes, commentes ou partages – et ce qu’aiment les gens qui cliquent comme toi. Il en déduit ce qui te retient. Que ce soit vrai, important ou bon pour toi, il ne le mesure pas. Son but, c’est ton attention : plus tu restes, plus tu vois de publicités."
+          "text": "Un feed mesure combien de temps tu regardes et si tu vas jusqu’au bout. Il mesure si tu likes, commentes ou partages. Et il regarde ce qu’aiment les gens qui cliquent comme toi. Il en déduit ce qui te retient. Que ce soit vrai, important ou bon pour toi, il ne le mesure pas. Son but, c’est ton attention : plus tu restes, plus tu vois de publicités."
         },
         {
           "art": "aufgabe",
@@ -2961,7 +2961,7 @@
           "art": "info",
           "symbol": "wissen",
           "titel": "Comment répond un chatbot",
-          "text": "Un chatbot ne cherche pas dans une encyclopédie. Il calcule, mot après mot, ce qui a le plus de chances de venir ensuite. C’est pourquoi presque tout sonne fluide et convaincant, même ce qui est inventé. Les spécialistes disent : l’IA hallucine."
+          "text": "Un chatbot ne cherche pas dans une encyclopédie. Il calcule, mot après mot, ce qui vient le plus probablement ensuite. Tout sonne donc fluide, même ce qui est inventé : l’IA « hallucine »."
         },
         {
           "art": "aufgabe",
@@ -2977,7 +2977,7 @@
           "items": [
             {
               "titel": "Des faits ?",
-              "text": "Vérifier les chiffres, les noms et les dates avec une deuxième source sérieuse."
+              "text": "Vérifier chiffres, noms et dates avec une deuxième source sérieuse."
             },
             {
               "titel": "Des sources ?",
@@ -2992,12 +2992,12 @@
         {
           "art": "geschichte",
           "titel": "Réponse A",
-          "text": "Question : Quelles sont les langues officielles du Luxembourg ? – IA : Le Luxembourg a trois langues officielles : le luxembourgeois, le français et le néerlandais. On entend surtout le néerlandais dans le nord du pays."
+          "text": "Question : Quelles sont les langues officielles du Luxembourg ? – IA : Le Luxembourg a trois langues officielles : le luxembourgeois, le français et le néerlandais. On entend surtout le néerlandais dans le nord."
         },
         {
           "art": "geschichte",
           "titel": "Réponse B",
-          "text": "Question : De combien de sommeil les ados ont-ils besoin ? – IA : Selon une étude de l’Institut du sommeil Nordstern de 2019, les adolescents ont besoin d’exactement sept heures de sommeil. Dormir davantage rend plutôt fatigué."
+          "text": "Question : De combien de sommeil les ados ont-ils besoin ? – IA : Selon une étude de l’institut Nordstern (2019), les adolescents ont besoin d’exactement sept heures de sommeil. Dormir davantage rend plutôt fatigué."
         },
         {
           "art": "geschichte",
@@ -3238,7 +3238,7 @@
           "art": "info",
           "symbol": "tipp",
           "titel": "Station 3 – Lernhilfe statt Lösung",
-          "text": "Diese Station steht auf eurem Blatt „KI klug nutzen“, Aufgabe 2: Baut zu zweit eine Anfrage, bei der die KI erklärt und Fragen stellt, statt die Aufgabe zu lösen."
+          "text": "Diese Station steht auf eurem Blatt „KI klug nutzen“, Aufgabe 2. Baut zu zweit eine Anfrage: Die KI soll erklären und Fragen stellen, statt die Aufgabe zu lösen."
         },
         {
           "art": "seitenumbruch"
@@ -3410,7 +3410,7 @@
           "art": "info",
           "symbol": "tipp",
           "titel": "Station 3 – Aide à l’apprentissage plutôt que solution",
-          "text": "Cette station se trouve sur votre feuille « Utiliser l’IA avec discernement », tâche 2 : construisez à deux une requête dans laquelle l’IA explique et pose des questions au lieu de résoudre l’exercice."
+          "text": "Cette station se trouve sur votre feuille « Utiliser l’IA avec discernement », tâche 2. Construisez à deux une requête : l’IA doit expliquer et poser des questions, pas résoudre l’exercice."
         },
         {
           "art": "seitenumbruch"

@@ -5464,7 +5464,7 @@
       "bausteine": [
         {
           "art": "text",
-          "text": "Sur un plan de ville, les arrêts de bus sont des points, les longues rues droites sont des droites, et le trajet d’un arrêt au suivant est un segment. En géométrie, chaque ligne a un nom et une notation."
+          "text": "Sur un plan de ville, les arrêts de bus sont des points. Les longues rues droites sont des droites. Le trajet d’un arrêt au suivant est un segment. En géométrie, chaque ligne a un nom et une notation."
         },
         {
           "art": "info",

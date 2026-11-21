@@ -269,7 +269,7 @@
       "bausteine": [
         {
           "art": "text",
-          "text": "Deux personnes révisent le même chapitre et s’y prennent très différemment : l’une a besoin de silence et d’un bureau rangé, l’autre d’un casque et du canapé. Aucune des deux n’a tort. Aujourd’hui, tu découvres comment tu apprends, quand ça a très bien marché et ce que tu veux essayer pendant deux semaines."
+          "text": "Deux personnes révisent le même chapitre, mais très différemment. L’une a besoin de silence et d’un bureau rangé. L’autre a besoin d’un casque et du canapé. Aucune des deux n’a tort. Aujourd’hui, tu découvres comment tu apprends, quand ça a très bien marché et ce que tu veux essayer pendant deux semaines."
         },
         {
           "art": "aufgabe",
@@ -947,7 +947,7 @@
           "art": "info",
           "symbol": "hilfe",
           "titel": "Tu décides de ce que tu partages.",
-          "text": "Tes réponses t’appartiennent, personne ne ramasse la feuille. Si un vrai examen est trop proche de toi, remplis-la pour Jana (devoir de maths vendredi). Si la pression devient telle que tu dors ou manges à peine, parles-en au SePAS ou à une personne en qui tu as confiance."
+          "text": "Tes réponses t’appartiennent, personne ne ramasse la feuille. Si un vrai examen est trop proche de toi, remplis-la pour Jana (devoir de maths vendredi). La pression est si forte que tu dors ou manges à peine ? Parles-en au SePAS ou à une personne en qui tu as confiance."
         },
         {
           "art": "linien",
@@ -1377,13 +1377,13 @@
           "art": "info",
           "symbol": "tipp",
           "titel": "Ce qui vient de l’extérieur peut passer à l’intérieur",
-          "text": "Ce qui commence comme une pression peut devenir ton propre objectif : si tu as ton mot à dire, si tu progresses et si tu te sens à ta place. Une récompense devient alors une petite fête, pas un salaire."
+          "text": "Une pression peut devenir ton propre objectif. Cela arrive si tu as ton mot à dire, si tu progresses et si tu te sens à ta place. Une récompense devient alors une petite fête, pas un salaire."
         },
         {
           "art": "info",
           "symbol": "hilfe",
           "titel": "Tu décides de ce que tu partages.",
-          "text": "Tes réponses t’appartiennent, personne ne ramasse la feuille. Si quelque chose est trop proche de toi, remplis-la pour Mila : elle n’a jamais envie en physique, mais elle danse tous les soirs."
+          "text": "Tes réponses t’appartiennent, personne ne ramasse la feuille. Quelque chose est trop proche de toi ? Remplis la feuille pour Mila : elle n’a jamais envie en physique, mais elle danse tous les soirs."
         },
         {
           "art": "linien",

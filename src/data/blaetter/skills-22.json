@@ -562,7 +562,7 @@
           "titel": "Le sentiment correspond-il aux faits ?",
           "punkte": [
             "J’ai vraiment fait du tort à quelqu’un : la culpabilité est justifiée. Ce qui aide alors, c’est réparer – pas m’accabler.",
-            "On se moque de moi, on m’humilie ou on me blesse, mais je n’ai rien fait de mal : la honte n’est pas justifiée, la faute est du côté des autres. Ce qui aide alors : se redresser, ne pas se cacher, en parler à quelqu’un.",
+            "On se moque de moi, on m’humilie ou on me blesse, mais je n’ai rien fait de mal. La honte n’est pas justifiée : la faute est du côté des autres. Ce qui aide alors : se redresser, ne pas se cacher, en parler à quelqu’un.",
             "Une erreur ne fait pas de moi une mauvaise personne."
           ]
         },
@@ -849,7 +849,7 @@
           "art": "info",
           "symbol": "hilfe",
           "titel": "Wenn Einsamkeit lange bleibt",
-          "text": "Hält Einsamkeit über Wochen an, kommt Hoffnungslosigkeit dazu oder der Gedanke „Mich würde eh keiner vermissen“, dann sprich mit jemandem, dem du vertraust – mit der Leitung, dem SePAS oder anonym mit dem Kanner- a Jugendtelefon. Du entscheidest, was du teilst."
+          "text": "Hält die Einsamkeit über Wochen an? Kommt Hoffnungslosigkeit dazu oder der Gedanke „Mich würde eh keiner vermissen“? Dann sprich mit jemandem, dem du vertraust – mit der Leitung, dem SePAS oder anonym mit dem Kanner- a Jugendtelefon. Du entscheidest, was du teilst."
         },
         {
           "art": "notfall"
@@ -999,7 +999,7 @@
           "art": "info",
           "symbol": "hilfe",
           "titel": "Quand la solitude dure",
-          "text": "Si le sentiment de solitude dure des semaines, si le désespoir s’y ajoute ou la pensée « De toute façon, je ne manquerais à personne », parle à quelqu’un en qui tu as confiance – l’adulte qui anime, le SePAS ou, de façon anonyme, le Kanner- a Jugendtelefon. Tu décides de ce que tu partages."
+          "text": "La solitude dure des semaines ? Le désespoir s’y ajoute, ou la pensée « De toute façon, je ne manquerais à personne » ? Alors parle à quelqu’un en qui tu as confiance – l’adulte qui anime, le SePAS ou, de façon anonyme, le Kanner- a Jugendtelefon. Tu décides de ce que tu partages."
         },
         {
           "art": "notfall"

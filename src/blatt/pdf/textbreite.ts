@@ -2,7 +2,7 @@
 // Schriftdateien in src/assets/fonts/pdf gemessen (fontkit). Damit schätzt BlattDokument, ob ein Titel oder Untertitel neben dem
 // Leitbild in eine Zeile passt – ohne die Seite erst zu setzen.
 
-export type SchriftSorte = 'kind' | 'kindFett' | 'jugend' | 'jugendFett' | 'titel'
+export type SchriftSorte = 'kind' | 'kindFett' | 'jugend' | 'jugendFett' | 'titel' | 'kopf' | 'lesen'
 
 const BREITEN: Record<SchriftSorte, { w: number[]; extra: number }> = {
   kind: { w: [269,373,500,586,586,745,597,295,388,388,502,586,317,420,313,488,586,586,586,586,586,586,586,586,586,586,313,317,586,586,586,513,831,681,627,662,701,566,562,693,720,476,471,640,527,876,732,713,583,720,637,574,618,703,667,1016,647,645,601,386,488,386,415,622,283,562,564,498,581,535,366,549,574,276,291,505,276,823,579,557,571,552,435,471,408,579,522,757,530,518,508,488,337,488,544], extra: 562 },
@@ -10,6 +10,9 @@ const BREITEN: Record<SchriftSorte, { w: number[]; extra: number }> = {
   jugend: { w: [281,288,466,633,642,982,644,300,365,365,501,662,288,460,288,360,631,407,610,618,646,593,620,566,619,620,288,302,662,662,662,511,966,690,654,730,722,601,590,746,743,269,571,672,565,903,753,765,639,765,644,642,646,744,690,985,682,679,629,365,360,365,471,456,323,562,612,571,612,583,370,613,591,242,242,549,242,876,591,600,612,612,376,528,327,591,562,818,546,562,552,426,333,426,662], extra: 575 },
   jugendFett: { w: [252,321,523,644,650,1004,663,326,373,373,540,673,319,465,319,379,660,423,623,636,666,612,640,576,640,640,319,329,673,673,673,543,999,728,659,737,722,605,588,749,746,277,580,703,565,922,759,769,645,773,652,650,660,736,728,1020,720,713,652,373,379,373,481,469,351,574,624,583,624,591,389,625,612,262,262,569,262,900,612,609,624,624,397,549,353,612,587,839,569,588,566,455,359,455,673], extra: 592 },
   titel: { w: [200,376,492,935,641,900,674,276,462,462,474,570,316,420,320,448,674,454,604,591,615,589,622,544,623,622,357,356,645,750,645,563,917,683,637,746,710,590,530,741,734,296,513,665,541,860,729,758,650,758,670,671,610,726,653,989,672,630,680,429,448,429,684,660,555,583,624,583,625,608,386,624,636,296,301,552,296,916,636,627,624,625,412,547,444,636,568,814,563,570,535,459,316,459,734], extra: 600 },
+  // Lexend Bold (Blatt-Titel) und Atkinson Hyperlegible (Fließtext C4–ES), Toolbox-Umbau 21.11.
+  kopf: { w: [320,309,477,734,634,968,776,252,390,390,440,597,287,448,257,595,675,561,548,591,662,596,579,553,599,577,257,291,525,623,526,536,965,694,701,694,772,645,618,782,779,555,665,739,609,878,807,812,662,812,702,634,655,765,712,993,705,689,683,420,584,420,592,687,500,659,658,545,654,586,393,669,635,319,316,626,304,962,635,641,659,658,455,495,398,642,605,834,606,620,550,427,318,427,558], extra: 697 },
+  lesen: { w: [280,281,301,655,594,927,705,160,300,300,433,602,205,368,205,377,648,402,549,574,614,583,598,510,615,598,205,205,553,602,553,520,780,626,619,656,673,567,548,710,690,414,510,627,539,820,689,727,601,753,618,596,558,690,589,840,623,595,607,315,377,315,552,396,268,526,566,500,564,539,311,560,546,278,254,490,239,841,546,552,566,576,340,471,324,536,441,654,461,429,460,319,233,319,555], extra: 608 },
 }
 
 /** Breite eines Texts in pt (ohne Kerning, mit einem Abschlag von 2,8 % dafür – an gesetzten Zeilen gemessen). */
@@ -21,4 +24,25 @@ export function textBreite(text: string, sorte: SchriftSorte, groesse: number): 
     summe += c >= 32 && c < 127 ? b.w[c - 32] : b.extra
   }
   return (summe / 1000) * groesse * 0.972
+}
+
+/** Teilt einen Text nach `zeilen` Zeilen der Breite `breite` (pt): [Anfang, Rest]. Für Text, der neben einem Kasten
+ *  (z. B. QR-Code) beginnt und darunter in voller Breite weiterläuft – wie ein Bild im Zeitungstext. */
+export function textNachZeilen(text: string, sorte: SchriftSorte, gr: number, breite: number, zeilen: number): [string, string] {
+  const leer = textBreite(' ', sorte, gr)
+  const teile = text.split(/(?<=[ \n])/) // Wörter samt folgendem Leerzeichen oder Zeilenumbruch
+  let z = 1
+  let x = 0
+  for (let i = 0; i < teile.length; i++) {
+    const w = textBreite(teile[i].replace(/[ \n]$/, ''), sorte, gr)
+    if (x > 0 && x + leer + w > breite) {
+      if (++z > zeilen) return [teile.slice(0, i).join('').trimEnd(), teile.slice(i).join('')]
+      x = w
+    } else x += (x > 0 ? leer : 0) + w
+    if (teile[i].endsWith('\n')) {
+      if (++z > zeilen) return [teile.slice(0, i + 1).join('').trimEnd(), teile.slice(i + 1).join('').replace(/^\n+/, '')]
+      x = 0
+    }
+  }
+  return [text, '']
 }

@@ -163,12 +163,12 @@
       "bausteine": [
         {
           "art": "text",
-          "text": "Les besoins, c’est ce dont chaque personne a besoin pour vivre et se sentir bien : dormir, être en sécurité, avoir des gens sur qui compter, du temps pour soi. Ils n’ont pas la même importance pour tout le monde – et ne sont pas toujours comblés de la même façon. Quand un verre reste presque vide longtemps, on le remarque souvent d’abord à son humeur : irritable, à plat, sans envie."
+          "text": "Les besoins, c’est ce dont chaque personne a besoin pour vivre et se sentir bien. Par exemple dormir, être en sécurité, avoir des gens sur qui compter, du temps pour soi. Ils n’ont pas la même importance pour tout le monde – et ne sont pas toujours comblés de la même façon. Quand un verre reste presque vide longtemps, on le remarque souvent d’abord à son humeur : irritable, à plat, sans envie."
         },
         {
           "art": "aufgabe",
           "text": "Dans chaque verre, trace un trait : le niveau que tu souhaites. Puis colorie jusqu’au niveau où il en est maintenant.",
-          "hinweis": "Pense aux deux dernières semaines. Un verre n’a pas besoin d’être plein à ras bord – certaines personnes ont besoin de peu d’aventure, d’autres de peu de calme. Les verres vides sont pour les besoins qui manquent ici.",
+          "hinweis": "Pense aux deux dernières semaines. Un verre n’a pas besoin d’être plein à ras bord. Certaines personnes ont besoin de peu d’aventure, d’autres de peu de calme. Les verres vides sont pour les besoins qui manquent ici.",
           "symbole": [
             "malen",
             "nachdenken"
@@ -429,7 +429,7 @@
       "bausteine": [
         {
           "art": "text",
-          "text": "Ta vie se joue dans beaucoup de domaines. Il est rare que tout aille aussi bien partout : avec les amis, c’est bien en ce moment, au lycée c’est plus laborieux, et le sommeil passe à la trappe. La toile te montre d’un coup d’œil où elle te porte et où elle est fine."
+          "text": "Ta vie se joue dans beaucoup de domaines. Il est rare que tout aille bien partout en même temps. Avec les amis, ça va bien en ce moment. Au lycée, c’est plus laborieux. Et le sommeil passe à la trappe. La toile te montre d’un coup d’œil où elle te porte et où elle est fine."
         },
         {
           "art": "aufgabe",
@@ -748,7 +748,7 @@
           "art": "info",
           "symbol": "wissen",
           "titel": "Les jours difficiles restent plus longtemps",
-          "text": "La mémoire met davantage en avant ce qui est difficile que ce qui est agréable. Une courbe complétée chaque soir montre plus honnêtement comment la semaine s’est vraiment passée – souvent mieux qu’on ne le ressent le dimanche."
+          "text": "La mémoire met davantage en avant ce qui est difficile que ce qui est agréable. Une courbe complétée chaque soir montre plus honnêtement comment s’est passée la semaine. Souvent mieux qu’on ne le ressent le dimanche."
         }
       ],
       "lehrer": {
@@ -1461,7 +1461,7 @@
       "bausteine": [
         {
           "art": "text",
-          "text": "Les valeurs sont comme une boussole intérieure : elles montrent ce qui compte pour toi et ce que tu veux défendre. Souvent, on ne les remarque que lorsque quelque chose va à leur encontre – quand quelqu’un est traité injustement ou qu’on n’a pas été honnête soi-même."
+          "text": "Les valeurs sont comme une boussole intérieure : elles montrent ce qui compte pour toi et ce que tu veux défendre. Souvent, on ne les remarque que quand quelque chose va contre elles. Par exemple quand quelqu’un est traité injustement, ou quand on n’a pas été honnête soi-même."
         },
         {
           "art": "aufgabe",
@@ -1829,7 +1829,7 @@
           "punkte": [
             "Les adolescents ont besoin de 8 à 10 heures de sommeil par nuit.",
             "On recommande en moyenne au moins une heure de mouvement par jour qui te met à bout de souffle.",
-            "Tous les temps d’écran ne se valent pas : un appel vidéo avec des amis n’a pas le même effet que des heures à scroller."
+            "Tous les temps d’écran ne se valent pas. Un appel vidéo avec des amis n’a pas le même effet que des heures à scroller."
           ]
         },
         {

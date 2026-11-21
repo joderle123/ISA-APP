@@ -39,7 +39,7 @@
       "bausteine": [
         {
           "art": "text",
-          "text": "Ein gutes Essen beginnt am Tisch, nicht am Herd: mit einem Plan, der Allergien, Essensregeln, Budget und Zeit ernst nimmt."
+          "text": "Ein gutes Essen beginnt am Tisch, nicht am Herd. Es beginnt mit einem Plan, der Allergien, Essensregeln, Budget und Zeit ernst nimmt."
         },
         {
           "art": "aufgabe",
@@ -258,7 +258,7 @@
       "bausteine": [
         {
           "art": "text",
-          "text": "Un bon repas commence à table, pas aux fourneaux : avec un plan qui prend au sérieux les allergies, les règles alimentaires, le budget et le temps."
+          "text": "Un bon repas commence à table, pas aux fourneaux. Il commence par un plan qui prend au sérieux les allergies, les règles alimentaires, le budget et le temps."
         },
         {
           "art": "aufgabe",
@@ -358,7 +358,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Le planning à l’envers : écrivez l’heure du repas sur la première ligne, puis calculez à rebours : quoi commence quand, et qui s’en charge ?",
+          "text": "Le planning à l’envers : écrivez l’heure du repas sur la première ligne. Puis calculez à rebours : quoi commence quand, et qui s’en charge ?",
           "symbole": [
             "schreiben"
           ]
@@ -694,7 +694,7 @@
         {
           "art": "aufgabe",
           "text": "Cartes de rôle : à découper une fois. Chaque personne choisit un rôle et pose la carte à sa place.",
-          "hinweis": "Si vous êtes moins de six, quelqu’un prend deux rôles ; si vous êtes plus nombreux, on travaille à deux à la planche et aux fourneaux. À la prochaine cuisine, on échange.",
+          "hinweis": "Vous êtes moins de six ? Alors quelqu’un prend deux rôles. Vous êtes plus nombreux ? Alors on travaille à deux à la planche et aux fourneaux. À la prochaine cuisine, on échange.",
           "symbole": [
             "schneiden"
           ]
@@ -912,7 +912,7 @@
         {
           "art": "vertrag",
           "titel": "So sind wir unterwegs",
-          "text": "Wir bleiben die ganze Zeit als Team zusammen. Unsere Basis ist ___. Unser Gebiet endet ___. Nach jedem Auftrag sind wir spätestens nach zwölf Minuten zurück. Die Handynummer der Leitung ist ___. Das Handy nutzen wir für Anrufe mit der Leitung, den Notruf 112, den Fahrplan und für Fotos ohne fremde Menschen; wir posten nichts. Kopfhörer bleiben in der Tasche, und bei Rot warten wir, auch wenn kein Auto kommt. Wird uns etwas unangenehm, gehen wir sofort zur Basis.",
+          "text": "Wir bleiben die ganze Zeit als Team zusammen. Unsere Basis ist ___. Unser Gebiet endet ___. Nach jedem Auftrag sind wir spätestens nach zwölf Minuten zurück. Die Handynummer der Leitung ist ___. Das Handy nutzen wir für Anrufe mit der Leitung, den Notruf 112, den Fahrplan und für Fotos ohne fremde Menschen. Wir posten nichts. Kopfhörer bleiben in der Tasche, und bei Rot warten wir, auch wenn kein Auto kommt. Wird uns etwas unangenehm, gehen wir sofort zur Basis.",
           "unterschriften": [
             "",
             "",
@@ -1058,7 +1058,7 @@
         {
           "art": "vertrag",
           "titel": "Notre façon de nous déplacer",
-          "text": "Nous restons ensemble, en équipe, tout le temps. Notre base est ___. Notre zone s’arrête ___. Après chaque mission, nous sommes de retour au bout de douze minutes au plus. Le numéro de l’adulte est ___. Le téléphone sert à appeler l’adulte, au 112 en cas d’urgence, aux horaires et aux photos sans inconnus ; nous ne publions rien. Les écouteurs restent dans le sac, et au rouge nous attendons, même sans voiture. Si quelque chose nous met mal à l’aise, nous retournons tout de suite à la base.",
+          "text": "Nous restons ensemble, en équipe, tout le temps. Notre base est ___. Notre zone s’arrête ___. Après chaque mission, nous sommes de retour au bout de douze minutes au plus. Le numéro de l’adulte est ___. Le téléphone sert à appeler l’adulte, au 112 en cas d’urgence, aux horaires et aux photos sans inconnus. Nous ne publions rien. Les écouteurs restent dans le sac, et au rouge nous attendons, même sans voiture. Si quelque chose nous met mal à l’aise, nous retournons tout de suite à la base.",
           "unterschriften": [
             "",
             "",
@@ -1098,7 +1098,7 @@
           "items": [
             {
               "titel": "Trouver de l’aide · Skill : demander",
-              "text": "Trouvez la pharmacie la plus proche et un endroit où l’on peut vous aider en cas de problème, par exemple une réception ou un magasin avec du personnel. Où exactement ?"
+              "text": "Trouvez la pharmacie la plus proche. Trouvez aussi un endroit où l’on peut vous aider en cas de problème, par exemple une réception ou un magasin avec du personnel. Où exactement ?"
             },
             {
               "titel": "Poser des questions · Skill : aborder",

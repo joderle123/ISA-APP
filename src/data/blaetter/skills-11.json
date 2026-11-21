@@ -215,7 +215,7 @@
       "bausteine": [
         {
           "art": "text",
-          "text": "Le stress est la réponse de ton corps à une exigence : le cœur bat plus vite, les muscles se tendent, le regard se rétrécit. Ça te prépare. Le problème, c’est quand c’est trop, ou trop long."
+          "text": "Le stress est la réponse de ton corps à une exigence. Le cœur bat plus vite, les muscles se tendent, le regard se rétrécit. Ça te prépare. Le problème, c’est quand c’est trop, ou trop long."
         },
         {
           "art": "aufgabe",
@@ -272,7 +272,7 @@
           "art": "info",
           "symbol": "merke",
           "titel": "Deux côtés, deux voies",
-          "text": "Le stress bascule quand le côté gauche pèse plus que le droit. Tu peux agir des deux côtés : alléger les exigences – planifier, découper, demander de l’aide – et renforcer les sources de force : sommeil, mouvement, personnes, skills."
+          "text": "Le stress bascule quand le côté gauche pèse plus que le droit. Tu peux agir des deux côtés. Alléger les exigences : planifier, découper, demander de l’aide. Et renforcer les sources de force : sommeil, mouvement, personnes, skills."
         },
         {
           "art": "aufgabe",
@@ -347,7 +347,7 @@
           "art": "info",
           "symbol": "hilfe",
           "titel": "C’est toi qui décides de ce que tu partages.",
-          "text": "Cette fiche t’appartient. Si ton baromètre reste des semaines sur « trop », parles-en à une personne de confiance, au SePAS ou, anonymement et gratuitement, au Kanner- a Jugendtelefon : 116 111."
+          "text": "Cette fiche t’appartient. Ton baromètre reste des semaines sur « trop » ? Parles-en à une personne de confiance ou au SePAS. Ou appelle le Kanner- a Jugendtelefon : 116 111 (anonyme et gratuit)."
         }
       ],
       "lehrer": {
@@ -1694,7 +1694,7 @@
           "art": "info",
           "symbol": "hilfe",
           "titel": "Quand plus rien ne va",
-          "text": "Si remettre à plus tard te bloque pendant des semaines ou que tout te semble absurde, parles-en à une personne de confiance ou au SePAS. Le Kanner- a Jugendtelefon aide de façon anonyme et gratuite : 116 111."
+          "text": "Tu remets tout à plus tard depuis des semaines, ou tout te semble absurde ? Parles-en à une personne de confiance ou au SePAS. Le Kanner- a Jugendtelefon aide de façon anonyme et gratuite : 116 111."
         }
       ],
       "lehrer": {
@@ -2103,7 +2103,7 @@
           "art": "info",
           "symbol": "hilfe",
           "titel": "Quand la peur devient trop grande",
-          "text": "Si, avant les examens, tu dors ou manges à peine pendant des jours, ou si la pression te semble insupportable, parles-en au SePAS, à ton ou ta titulaire de classe – ou, de façon anonyme et gratuite, au Kanner- a Jugendtelefon : 116 111."
+          "text": "Avant les examens, tu dors ou manges à peine pendant des jours ? La pression te semble insupportable ? Parles-en au SePAS ou à ton ou ta titulaire de classe. Ou appelle le Kanner- a Jugendtelefon : 116 111 (anonyme et gratuit)."
         }
       ],
       "lehrer": {

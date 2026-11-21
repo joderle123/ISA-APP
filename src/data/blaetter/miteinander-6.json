@@ -71,7 +71,7 @@
         {
           "art": "aufgabe",
           "text": "Woran merkst du, dass dir eine Freundschaft guttut – und woran, dass sie dich Kraft kostet? Schreib Stichwörter, ohne Namen.",
-          "hinweis": "Denk an eine echte Freundschaft, an eine frühere oder an ein Paar aus einer Serie oder einem Film – wie es für dich passt. Es geht um dein Gefühl, nicht um die Person.",
+          "hinweis": "Denk an eine echte oder frühere Freundschaft – oder an zwei Freunde aus einer Serie oder einem Film. Es geht um dein Gefühl, nicht um die Person.",
           "symbole": [
             "schreiben"
           ]
@@ -115,7 +115,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Gestalte dein Freundschafts-Band: Mal jedes Band in einer Farbe aus, die für etwas Verbindendes steht, und schreib ein Wort hinein.",
+          "text": "Gestalte dein Freundschafts-Band. Mal jedes Band in einer Farbe aus, die für etwas Verbindendes steht. Schreib ein Wort hinein.",
           "hinweis": "Beispiel: Gelb für „Wir lachen über denselben Quatsch“, Blau für „Bei ihr kann ich mich ausheulen“. Wenn die Farbe reicht, brauchst du keine Wörter.",
           "symbole": [
             "malen",
@@ -298,7 +298,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Crée ton bracelet d’amitié : colorie chaque ruban d’une couleur qui représente ce qui vous lie, et écris un mot dedans.",
+          "text": "Crée ton bracelet d’amitié. Colorie chaque ruban d’une couleur qui représente ce qui vous lie. Écris un mot dedans.",
           "hinweis": "Exemple : jaune pour « On rit des mêmes bêtises », bleu pour « Avec elle, je peux pleurer ». Si la couleur suffit, pas besoin de mots.",
           "symbole": [
             "malen",
@@ -856,7 +856,7 @@
           "art": "info",
           "symbol": "hilfe",
           "titel": "Tu décides de ce que tu partages.",
-          "text": "Tes réponses t’appartiennent. Personne ne ramasse la feuille. Si une dispute ne te lâche pas ou si quelqu’un te fait peur, parles-en à une personne de confiance ou au SePAS de ton lycée."
+          "text": "Tes réponses t’appartiennent. Personne ne ramasse la feuille. Une dispute ne te lâche pas, ou quelqu’un te fait peur ? Parles-en à une personne de confiance ou au SePAS de ton lycée."
         },
         {
           "art": "linien",
@@ -1320,7 +1320,7 @@
           "art": "info",
           "symbol": "hilfe",
           "titel": "Quand c’est plus que de la pression",
-          "text": "Si on te menace, te fait chanter ou te pousse à quelque chose qui te nuit – y compris en ligne –, parles-en à une personne de confiance ou au SePAS. Ce n’est pas une trahison. BEE SECURE Helpline : 8002 1234 · Kanner- a Jugendtelefon : 116 111."
+          "text": "On te menace, on te fait chanter ou on te pousse à quelque chose qui te nuit, même en ligne ? Parles-en à une personne de confiance ou au SePAS. Ce n’est pas une trahison. BEE SECURE Helpline : 8002 1234 · Kanner- a Jugendtelefon : 116 111."
         },
         {
           "art": "linien",
@@ -1398,7 +1398,7 @@
     ],
     "bild": "icon:package",
     "de": {
-      "titel": "Schubladen im Kopf",
+      "titel": "Hinter dem Etikett",
       "untertitel": "Etiketten, die man bekommt, Etiketten, die man gibt – und was darunter steckt",
       "bausteine": [
         {
@@ -1591,7 +1591,7 @@
       }
     },
     "fr": {
-      "titel": "Des cases dans la tête",
+      "titel": "Derrière l’étiquette",
       "untertitel": "Les étiquettes qu’on reçoit, celles qu’on donne – et ce qu’il y a dessous",
       "bausteine": [
         {

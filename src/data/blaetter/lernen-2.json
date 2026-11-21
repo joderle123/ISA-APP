@@ -285,8 +285,8 @@
           "art": "einschaetzung",
           "optionen": ["vrai", "en partie", "faux"],
           "items": [
-            "J’apprends plus volontiers quand je peux participer aux décisions.",
-            "Ça me fait plaisir quand je remarque : maintenant, je sais faire ça.",
+            "J’apprends plus volontiers quand je peux décider.",
+            "Ça me plaît de remarquer : maintenant, je sais faire ça.",
             "J’aime mieux apprendre avec d’autres.",
             "Je fais un effort quand je sais à quoi ça sert."
           ]
@@ -595,12 +595,12 @@
         "ziel": "Die Kinder erkennen entmutigende Stopp-Sätze beim Lernen und formulieren sie in ermutigende Weiter-Sätze um. Sie sammeln Belege aus dem eigenen Leben dafür, dass sie durch Üben dazulernen.",
         "ablauf": [
           "Einstieg (5 Min.): „Ich kann das nicht.“ an die Tafel schreiben. Fragen: „Wie fühlt sich der Satz an?“ Dann „noch“ einfügen und dieselbe Frage stellen.",
-          "Geschichte und Info-Kasten lesen. Fragen: „Was sagt die Lehrerin anders? Warum hilft das Samuel?“",
-          "Aufgabe 1 und 2 allein, danach Aufgabe 2 vergleichen. Weitere Weiter-Sätze auf einem Plakat sammeln. Lösung Aufgabe 2 (von oben): noch nicht – in kleinen Schritten – der Fehler zeigt mir, was ich noch üben kann – von den anderen lernen.",
+          "Geschichte und Info-Kasten lesen: „Was sagt die Lehrerin anders? Warum hilft das Samuel?“",
+          "Aufgabe 1 und 2 allein, dann Aufgabe 2 vergleichen und weitere Weiter-Sätze auf einem Plakat sammeln. Lösung (von oben): noch nicht – in kleinen Schritten – der Fehler zeigt mir, was ich noch üben kann – von den anderen lernen.",
           "Aufgabe 3: Erst Beispiele sammeln (Fahrrad fahren, lesen, ein Instrument). Betonen, wie viel Übung dahintersteckt.",
           "Aufgabe 4 und 5: einen echten nächsten Schritt und einen Wenn-dann-Plan festlegen. Im Alltag auf „Ich kann das nicht“ freundlich antworten: „… noch nicht.“"
         ],
-        "hintergrund": "Dweck (2006) unterscheidet zwei Denkhaltungen: Wer Fähigkeiten für festgelegt hält, erlebt Fehler und Anstrengung als Zeichen mangelnder Begabung und weicht Herausforderungen eher aus. Wer sie für veränderbar hält, sieht Anstrengung als Weg zum Können. Das Wort „noch“ macht diese zweite Haltung im Alltag hörbar. Ein Satz allein verändert aber keine Haltung: Entscheidend ist, dass Kinder erleben, wie sie durch Üben besser werden. Solche Erfahrungen eigener Bewältigung sind nach Bandura (1977) die stärkste Quelle von Selbstwirksamkeit – deshalb sammeln die Kinder in Aufgabe 3 eigene Belege. Der Wenn-dann-Plan verankert den neuen Satz in der Situation, in der er gebraucht wird (Gollwitzer, 1999).",
+        "hintergrund": "Dweck (2006) unterscheidet zwei Denkhaltungen: Wer Fähigkeiten für festgelegt hält, sieht in Fehlern und Anstrengung mangelnde Begabung und meidet Herausforderungen eher. Wer sie für veränderbar hält, sieht Anstrengung als Weg zum Können. Das Wort „noch“ macht diese Haltung hörbar. Ein Satz allein verändert aber keine Haltung: Kinder müssen erleben, dass sie durch Üben besser werden. Solche eigenen Erfolgserfahrungen sind die stärkste Quelle von Selbstwirksamkeit (Bandura, 1977) – darum sammeln die Kinder in Aufgabe 3 Belege. Der Wenn-dann-Plan verankert den Satz in der Situation, in der er gebraucht wird (Gollwitzer, 1999).",
         "quellen": [
           "Dweck, C. S. (2006). Mindset: The New Psychology of Success. New York: Random House.",
           "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
@@ -693,11 +693,11 @@
         "ablauf": [
           "Entrée en matière (5 min) : écrire « Je n’y arrive pas. » au tableau. Question : « Comment cette phrase se ressent-elle ? » Puis ajouter « pas encore » et poser la même question.",
           "Lire l’histoire et l’encadré. Questions : « Que dit la maîtresse différemment ? Pourquoi cela aide-t-il Samuel ? »",
-          "Exercices 1 et 2 seul, puis comparer l’exercice 2. Collecter d’autres phrases qui font avancer sur une affiche. Solution de l’exercice 2 (de haut en bas) : pas encore – par petites étapes – l’erreur me montre ce que je peux encore exercer – apprendre des autres.",
+          "Exercices 1 et 2 en autonomie, puis comparer l’exercice 2 et noter d’autres phrases qui font avancer sur une affiche. Solution (de haut en bas) : pas encore – par petites étapes – l’erreur me montre ce que je peux encore exercer – apprendre des autres.",
           "Exercice 3 : recueillir d’abord des exemples (faire du vélo, lire, un instrument). Souligner tout l’entraînement qu’il y a derrière.",
           "Exercices 4 et 5 : fixer un vrai prochain pas et un plan « si … alors ». Au quotidien, répondre aimablement à « Je n’y arrive pas » : « … pas encore. »"
         ],
-        "hintergrund": "Dweck (2006) distingue deux états d’esprit : qui pense que les capacités sont figées vit l’erreur et l’effort comme les signes d’un manque de don et évite plutôt les défis. Qui les pense modifiables voit dans l’effort un chemin vers la compétence. Le mot « encore » rend cet état d’esprit audible au quotidien. Mais une phrase seule ne change pas un état d’esprit : l’essentiel est que les enfants fassent l’expérience de progresser en s’exerçant. Selon Bandura (1977), de telles expériences de maîtrise personnelle sont la source la plus forte du sentiment d’efficacité personnelle – c’est pourquoi les enfants rassemblent leurs propres preuves à l’exercice 3. Le plan « si … alors » ancre la nouvelle phrase dans la situation où elle est nécessaire (Gollwitzer, 1999).",
+        "hintergrund": "Dweck (2006) distingue deux états d’esprit : qui pense que les capacités sont figées vit l’erreur et l’effort comme les signes d’un manque de don et évite plutôt les défis. Qui les pense modifiables voit dans l’effort un chemin vers la compétence. Le mot « encore » rend cet état d’esprit audible. Mais une phrase seule ne suffit pas : les enfants doivent vivre qu’ils progressent en s’exerçant. Ces expériences de réussite sont la source la plus forte du sentiment d’efficacité personnelle (Bandura, 1977) – d’où les preuves de l’exercice 3. Le plan « si … alors » ancre la phrase dans la situation où elle sert (Gollwitzer, 1999).",
         "quellen": [
           "Dweck, C. S. (2006). Mindset: The New Psychology of Success. New York: Random House.",
           "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
@@ -707,9 +707,9 @@
           "leichter": "Faire l’exercice 2 avec des bandes de phrases découpées à poser. À l’exercice 3, un seul exemple, volontiers dessiné.",
           "schwerer": "Collecter ses propres phrases qui freinent et inventer pour chacune une phrase qui fait avancer qui convient."
         },
-        "impulse": ["Que ne savais-tu pas faire il y a un an ?", "Quelle phrase qui freine revient le plus souvent chez toi ?", "Qui t’aide quand tu bloques en t’exerçant ?"],
+        "impulse": ["Que ne savais-tu pas faire il y a un an ?", "Quelle phrase qui freine te vient le plus souvent ?", "Qui t’aide quand tu bloques en t’exerçant ?"],
         "tipps": [
-          "Féliciter l’effort et la démarche, pas le don : « Tu as essayé trois chemins » plutôt que « Tu es si intelligent ».",
+          "Féliciter l’effort et la démarche, pas le don : « Tu as essayé trois chemins » plutôt que « Quel talent ! ».",
           "Utiliser « pas encore » honnêtement : il doit encourager, pas mettre la pression."
         ],
         "achtung": "Si un enfant se dévalorise durablement (« Je suis bête ») ou paraît très abattu, une feuille de travail ne suffit pas : engager la conversation avec les parents et impliquer la direction compétente (responsable)."

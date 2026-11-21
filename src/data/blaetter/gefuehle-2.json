@@ -83,7 +83,7 @@
         {
           "art": "geschichte",
           "titel": "Mamie rentre chez elle",
-          "text": "La mamie de Diogo est venue pendant trois semaines. Ce matin, elle est repartie en avion pour le Portugal. À l’école, Diogo est tout silencieux. Il a une boule dans la gorge. À la récréation, il ne veut pas jouer au foot.",
+          "text": "La mamie de Diogo est restée trois semaines. Ce matin, elle est repartie au Portugal. À l’école, Diogo ne dit rien. Il a une boule dans la gorge. À la récré, il ne veut pas jouer au foot.",
           "bild": "figur:noah:traurig"
         },
         { "art": "aufgabe", "text": "À quoi vois-tu que tu es triste ? Coche.", "symbole": ["ankreuzen"] },
@@ -1121,7 +1121,7 @@
           "art": "info",
           "symbol": "hilfe",
           "titel": "Quand la boîte à outils ne suffit pas",
-          "text": "Si le stress ne diminue pas pendant des semaines, si tu ne dors presque plus ou si tu ne penses plus qu’à ça : parles-en au SePAS ou à un membre de l’équipe enseignante, ou appelle le Kanner- a Jugendtelefon au 116 111 (anonyme, gratuit)."
+          "text": "Le stress ne diminue pas depuis des semaines ? Tu ne dors presque plus ou tu ne penses plus qu’à ça ? Parles-en au SePAS ou à un membre de l’équipe enseignante. Ou appelle le Kanner- a Jugendtelefon au 116 111 (anonyme, gratuit)."
         }
       ],
       "lehrer": {

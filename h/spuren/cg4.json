@@ -1,0 +1,618 @@
+{
+ "modul": "cg4",
+ "titel": {
+  "de": "Vom Mittelalter zur Mitbestimmung",
+  "fr": "Du Moyen Âge à la participation"
+ },
+ "sprache": "de",
+ "spuren": {
+  "cg4-01l": {
+   "titel": "Eine Ordnung für alle – aber nicht gerecht",
+   "art": "lesen",
+   "lektion": 1,
+   "dauer": 93.9,
+   "text": [
+    [
+     "",
+     "Eine Ordnung für alle – aber nicht gerecht"
+    ],
+    [
+     "",
+     "Das Mittelalter dauerte etwa von 500 bis 1500. Die Menschen glaubten: Gott hat jedem Menschen seinen Platz gegeben. Die Gesellschaft war in Stände geteilt, und man blieb meist sein ganzes Leben im Stand, in den man geboren wurde."
+    ],
+    [
+     "",
+     "Die drei Stände."
+    ],
+    [
+     "",
+     "Die Geistlichen – Priester, Mönche und Nonnen – beteten und kümmerten sich um Kirche, Schulen und Kranke. Der Adel – Grafen, Herzöge, Ritter – besaß das Land und sollte es mit Waffen schützen. Die allermeisten Menschen aber waren Bauern. Sie arbeiteten auf den Feldern und mussten den Herren einen Teil der Ernte abgeben und für sie arbeiten."
+    ],
+    [
+     "",
+     "Die Stadt."
+    ],
+    [
+     "",
+     "Ab dem 12. Jahrhundert wuchsen die Städte. Dort lebten Handwerker und Händler, die Bürger. Sie schlossen sich in Zünften zusammen: Bäcker, Schmiede, Weber. Ein Sprichwort sagt: „Stadtluft macht frei“ – wer in die Stadt zog, konnte manchmal den Herren auf dem Land entkommen."
+    ],
+    [
+     "",
+     "Echternach."
+    ],
+    [
+     "",
+     "Eine der wichtigsten Städte in unserer Gegend war Echternach. Dort gründete der Mönch Willibrord um das Jahr 700 ein Kloster, die Abtei. Bis heute findet in Echternach jedes Jahr an Pfingstdienstag die Springprozession statt. Sie gehört seit 2010 zum immateriellen Kulturerbe der UNESCO."
+    ]
+   ]
+  },
+  "cg4-01h": {
+   "titel": "Auf dem Markt",
+   "art": "hoeren",
+   "lektion": 1,
+   "dauer": 52.3,
+   "text": [
+    [
+     "Erzähler",
+     "Echternach, an einem Markttag um 1350. Zwischen den Marktständen riecht es nach Brot, Fisch und Rauch."
+    ],
+    [
+     "Pier",
+     "Frische Eier? Wie viel kosten zwölf?"
+    ],
+    [
+     "Mett",
+     "Zwei Pfennige. Mein Vater sagt, ich soll nicht weniger nehmen. Wir müssen dem Grafen bald unsere Abgabe zahlen."
+    ],
+    [
+     "Pier",
+     "Ihr Bauern habt es schwer. Ich lerne bei Meister Klaus das Schmieden. In fünf Jahren bin ich Geselle."
+    ],
+    [
+     "Mett",
+     "Du Glücklicher. Ich würde auch gern ein Handwerk lernen. Aber Mädchen dürfen das selten."
+    ],
+    [
+     "Pier",
+     "In der Zunft der Weber gibt es Frauen. Meine Tante arbeitet dort."
+    ],
+    [
+     "Mett",
+     "Wirklich? Vielleicht frage ich einmal …"
+    ],
+    [
+     "Erzähler",
+     "Ob Mett Weberin wurde, wissen wir nicht. Aber solche Fragen stellten sich viele junge Menschen im Mittelalter."
+    ]
+   ]
+  },
+  "cg4-02l": {
+   "titel": "Eine der stärksten Festungen Europas",
+   "art": "lesen",
+   "lektion": 2,
+   "dauer": 76.7,
+   "text": [
+    [
+     "",
+     "Eine der stärksten Festungen Europas"
+    ],
+    [
+     "",
+     "Luxemburg lag immer an einer wichtigen Stelle: zwischen Frankreich, Deutschland und den Niederlanden. Wer Luxemburg hatte, kontrollierte die Wege. Darum wollten viele Herrscher die Stadt besitzen: Burgunder, Spanier, Franzosen, Österreicher, Preußen."
+    ],
+    [
+     "",
+     "Immer mehr Mauern."
+    ],
+    [
+     "",
+     "Jeder neue Herrscher baute die Befestigung weiter aus. Es entstanden dicke Mauern, Bastionen, Gräben und Forts. Im 17. Jahrhundert begann man, Gänge in die Felsen zu schlagen: die Kasematten. Dort konnten sich Tausende Soldaten mit Pferden, Waffen und Vorräten verstecken. Die Festung galt als fast uneinnehmbar. Man nannte sie das „Gibraltar des Nordens“."
+    ],
+    [
+     "",
+     "Das Ende der Festung."
+    ],
+    [
+     "",
+     "Im Jahr 1867 beschlossen die europäischen Großmächte im Londoner Vertrag: Luxemburg soll neutral sein, also keinem Lager angehören. Darum musste die Festung abgerissen werden. Das dauerte viele Jahre. Einige Teile blieben aber stehen."
+    ],
+    [
+     "",
+     "Heute."
+    ],
+    [
+     "",
+     "Einen Teil der Kasematten kann man besichtigen. Die Altstadt und die Reste der Festung gehören seit 1994 zum Welterbe der UNESCO."
+    ]
+   ]
+  },
+  "cg4-02h": {
+   "titel": "Tief im Felsen",
+   "art": "hoeren",
+   "lektion": 2,
+   "dauer": 51.1,
+   "text": [
+    [
+     "Frau Kremer",
+     "Willkommen in den Kasematten! Achtung, die Stufen sind feucht. Hier unten ist es das ganze Jahr ungefähr gleich kühl."
+    ],
+    [
+     "Noah",
+     "Wie lang sind die Gänge?"
+    ],
+    [
+     "Frau Kremer",
+     "Früher waren es viele Kilometer. Heute sind noch etwa siebzehn Kilometer erhalten. Nur ein kleiner Teil ist für Besucher offen."
+    ],
+    [
+     "Amira",
+     "Was haben die Soldaten hier gemacht?"
+    ],
+    [
+     "Frau Kremer",
+     "Hier waren Kanonen, Werkstätten, Bäckereien und Schlafplätze. Bei einer Belagerung konnten sie wochenlang im Felsen bleiben."
+    ],
+    [
+     "Noah",
+     "Und im Zweiten Weltkrieg?"
+    ],
+    [
+     "Frau Kremer",
+     "Da haben Menschen hier Schutz vor Bombenangriffen gesucht. Die Kasematten waren also nicht nur für den Krieg, sondern auch für den Schutz da."
+    ],
+    [
+     "Amira",
+     "Gruselig und spannend zugleich."
+    ]
+   ]
+  },
+  "cg4-03l": {
+   "titel": "In vier Schritten zum eigenen Staat",
+   "art": "lesen",
+   "lektion": 3,
+   "dauer": 96.5,
+   "text": [
+    [
+     "",
+     "In vier Schritten zum eigenen Staat"
+    ],
+    [
+     "",
+     "1815: Ein Großherzogtum."
+    ],
+    [
+     "",
+     "Nach den Kriegen Napoleons ordneten die Großmächte Europa neu, beim Wiener Kongress. Luxemburg wurde ein Großherzogtum. Großherzog war aber der König der Niederlande. Luxemburg war also mit den Niederlanden verbunden."
+    ],
+    [
+     "",
+     "1839: Die Teilung."
+    ],
+    [
+     "",
+     "Im Londoner Vertrag von 1839 wurde Luxemburg geteilt: Der größere, westliche, überwiegend französischsprachige Teil kam zu Belgien (heute die belgische Provinz Luxemburg). Der kleinere Teil im Osten blieb das Großherzogtum – so wie wir es heute kennen. Viele sehen 1839 als Beginn der Unabhängigkeit."
+    ],
+    [
+     "",
+     "1867: Neutral."
+    ],
+    [
+     "",
+     "Im Londoner Vertrag von 1867 wurde Luxemburg für neutral erklärt. Die Festung musste verschwinden."
+    ],
+    [
+     "",
+     "1890: Eigene Großherzöge."
+    ],
+    [
+     "",
+     "Als der niederländische König 1890 starb, konnte seine Tochter nach den Regeln der Familie nicht Großherzogin von Luxemburg werden. Ein Verwandter, Adolphe von Nassau-Weilburg, wurde Großherzog. Seitdem hat Luxemburg eine eigene großherzogliche Familie."
+    ]
+   ]
+  },
+  "cg4-03h": {
+   "titel": "Warum feiern wir heute?",
+   "art": "hoeren",
+   "lektion": 3,
+   "dauer": 60.6,
+   "text": [
+    [
+     "Lina",
+     "Opa, warum feiern wir eigentlich am dreiundzwanzigsten Juni? Ist da etwas Besonderes passiert?"
+    ],
+    [
+     "Opa",
+     "Gute Frage! Wir feiern den offiziellen Geburtstag des Großherzogs. Aber eigentlich feiern wir unser Land."
+    ],
+    [
+     "Lina",
+     "Ist der Großherzog im Juni geboren?"
+    ],
+    [
+     "Opa",
+     "Nein, das ist ja das Lustige. Großherzogin Charlotte hatte im Januar Geburtstag. Im Januar ist es kalt – darum hat man das Fest in den Sommer gelegt."
+    ],
+    [
+     "Lina",
+     "Schlau! Und seit wann ist Luxemburg ein eigenes Land?"
+    ],
+    [
+     "Opa",
+     "Das war ein langer Weg. 1839 wurde das Land geteilt, 1867 wurde es neutral, und seit 1890 haben wir eigene Großherzöge."
+    ],
+    [
+     "Lina",
+     "Und heute ist Luxemburg eine Demokratie, oder?"
+    ],
+    [
+     "Opa",
+     "Ja. Der Großherzog ist das Staatsoberhaupt, aber die Gesetze machen die gewählten Abgeordneten. Schau – das Feuerwerk beginnt!"
+    ]
+   ]
+  },
+  "cg4-04l": {
+   "titel": "Ein Versprechen an alle Kinder",
+   "art": "lesen",
+   "lektion": 4,
+   "dauer": 89.2,
+   "text": [
+    [
+     "",
+     "Ein Versprechen an alle Kinder"
+    ],
+    [
+     "",
+     "Am 20. November 1989 haben die Vereinten Nationen (UNO) die Kinderrechtskonvention beschlossen. Fast alle Länder der Welt haben sie unterschrieben, auch Luxemburg. Sie gilt für alle Kinder und Jugendlichen unter 18 Jahren – egal, woher sie kommen, welche Sprache sie sprechen oder welche Religion sie haben. Der 20. November ist deshalb der Internationale Tag der Kinderrechte."
+    ],
+    [
+     "",
+     "Drei Gruppen von Rechten."
+    ],
+    [
+     "",
+     "Schutzrechte: Kinder müssen vor Gewalt, Ausbeutung und Vernachlässigung geschützt werden. Förderrechte: Kinder haben ein Recht auf Bildung, Gesundheit, Spiel und Freizeit. Beteiligungsrechte: Kinder dürfen ihre Meinung sagen, und diese Meinung muss bei Entscheidungen, die sie betreffen, beachtet werden."
+    ],
+    [
+     "",
+     "Das Wohl des Kindes."
+    ],
+    [
+     "",
+     "Ein wichtiger Grundsatz lautet: Bei allen Entscheidungen soll das Wohl des Kindes zuerst kommen. In Luxemburg gibt es eine unabhängige Ombudsstelle für Kinder und Jugendliche (OKAJU). Dort kann man sich melden, wenn man denkt, dass Rechte nicht beachtet werden."
+    ],
+    [
+     "",
+     "Rechte bedeuten nicht, dass Kinder alles dürfen. Und: Viele Kinder auf der Welt bekommen ihre Rechte noch nicht."
+    ]
+   ]
+  },
+  "cg4-04h": {
+   "titel": "Rechte – auch bei uns?",
+   "art": "hoeren",
+   "lektion": 4,
+   "dauer": 68.5,
+   "text": [
+    [
+     "Amira",
+     "Heute ist der Tag der Kinderrechte. Brauchen Kinder in Luxemburg überhaupt Hilfe? Hier geht es doch allen gut."
+    ],
+    [
+     "Mitarbeiterin",
+     "Vielen geht es gut, aber nicht allen. Manche Kinder werden zu Hause geschlagen oder in der Schule gemobbt. Manche Familien haben zu wenig Geld für Freizeit oder warme Kleidung."
+    ],
+    [
+     "Sami",
+     "Was kann ein Kind tun, wenn seine Rechte verletzt werden?"
+    ],
+    [
+     "Mitarbeiterin",
+     "Mit einer Vertrauensperson sprechen: einer Lehrerin, der Schulpsychologin, einem Trainer. Oder anonym und kostenlos 116 111 anrufen. Im Notfall die 112."
+    ],
+    [
+     "Amira",
+     "Und was ist mit dem Recht auf eine eigene Meinung? Das klingt so groß."
+    ],
+    [
+     "Mitarbeiterin",
+     "Das fängt im Kleinen an. Wenn eure Gemeinde einen Spielplatz baut, sollte sie die Kinder fragen. Wenn ihr in der Schule etwas ändern wollt, habt ihr das Schülerkomitee."
+    ],
+    [
+     "Sami",
+     "Also: Rechte sind nicht nur für ferne Länder."
+    ],
+    [
+     "Mitarbeiterin",
+     "Genau. Sie gelten hier, jeden Tag."
+    ]
+   ]
+  },
+  "cg4-05l": {
+   "titel": "Die Gemeinde – Politik vor der Haustür",
+   "art": "lesen",
+   "lektion": 5,
+   "dauer": 55.6,
+   "text": [
+    [
+     "",
+     "Die Gemeinde – Politik vor der Haustür"
+    ],
+    [
+     "",
+     "Luxemburg hat rund 100 Gemeinden. Manche sind große Städte, andere kleine Dörfer. Die Gemeinde kümmert sich um vieles, was wir jeden Tag brauchen: Grundschulen und Betreuung (Maison relais), Trinkwasser und Abwasser, Müllabfuhr, Gemeindestraßen, Spielplätze, Sporthallen und Feste."
+    ],
+    [
+     "",
+     "Wer entscheidet."
+    ],
+    [
+     "",
+     "Alle sechs Jahre wählen die Einwohnerinnen und Einwohner den Gemeinderat. Wählen dürfen Luxemburger ab 18 Jahren – und auch viele Menschen aus anderen Ländern, wenn sie sich vorher in die Wählerliste eintragen. Der Gemeinderat entscheidet über die wichtigen Dinge, zum Beispiel über das Geld der Gemeinde (das Budget)."
+    ],
+    [
+     "",
+     "Der Bürgermeister oder die Bürgermeisterin und die Schöffen bilden den Schöffenrat. Sie führen die Gemeinde im Alltag. Die Sitzungen des Gemeinderats sind meist öffentlich: Jeder darf zuhören."
+    ]
+   ]
+  },
+  "cg4-05h": {
+   "titel": "Ein Skatepark für unser Dorf?",
+   "art": "hoeren",
+   "lektion": 5,
+   "dauer": 55.9,
+   "text": [
+    [
+     "Bürgermeisterin",
+     "Punkt fünf der Tagesordnung: Die Jugendlichen haben 240 Unterschriften für einen Skatepark gesammelt. Er würde etwa 180 000 Euro kosten."
+    ],
+    [
+     "Rat",
+     "Das ist viel Geld. Wir müssen auch die Straße am Friedhof reparieren."
+    ],
+    [
+     "Rätin",
+     "Aber unsere Jugendlichen haben nichts im Dorf. Sie fahren abends mit dem Bus in die Stadt. Ein Skatepark wäre ein Treffpunkt."
+    ],
+    [
+     "Rat",
+     "Und der Lärm für die Nachbarn?"
+    ],
+    [
+     "Rätin",
+     "Wir könnten ihn hinter der Sporthalle bauen, weit weg von den Häusern."
+    ],
+    [
+     "Bürgermeisterin",
+     "Ich schlage vor: Wir bauen den Skatepark hinter der Sporthalle, und die Straße reparieren wir im nächsten Jahr. Wer ist dafür? … Sieben. Dagegen? … Zwei. Der Vorschlag ist angenommen."
+    ],
+    [
+     "Tom",
+     "Papa! Sie haben ja gesagt!"
+    ]
+   ]
+  },
+  "cg4-06l": {
+   "titel": "Deine Stimme zählt",
+   "art": "lesen",
+   "lektion": 6,
+   "dauer": 68.1,
+   "text": [
+    [
+     "",
+     "Deine Stimme zählt"
+    ],
+    [
+     "",
+     "Klassensprecherin und Klassensprecher."
+    ],
+    [
+     "",
+     "Jede Klasse wählt zu Beginn des Schuljahres meist zwei Klassensprecher (auf Französisch: délégués de classe). Sie sprechen für die Klasse mit Lehrkräften und der Direktion, wenn es Probleme oder Wünsche gibt. Sie sind keine Aufpasser und keine Petzen, sondern Vermittler."
+    ],
+    [
+     "",
+     "Das Schülerkomitee."
+    ],
+    [
+     "",
+     "In jedem Lycée gibt es ein Schülerkomitee (comité des élèves). Seine Mitglieder werden von den Schülerinnen und Schülern gewählt. Das Komitee organisiert zum Beispiel Partys, Projekte oder Kampagnen und gibt der Schulleitung die Meinung der Jugendlichen weiter."
+    ],
+    [
+     "",
+     "Das Jugendparlament."
+    ],
+    [
+     "",
+     "Auf Landesebene gibt es das Jugendparlament. Dort diskutieren junge Menschen über Themen, die sie betreffen, und schreiben Vorschläge an die Politik."
+    ],
+    [
+     "",
+     "Mitbestimmen heißt nicht, dass man immer bekommt, was man will. Aber: Wer mitredet, wird gehört – und kann Dinge verändern."
+    ]
+   ]
+  },
+  "cg4-06h": {
+   "titel": "Wählt mich!",
+   "art": "hoeren",
+   "lektion": 6,
+   "dauer": 55.1,
+   "text": [
+    [
+     "Nele",
+     "Hallo zusammen. Ich möchte eure Klassensprecherin werden. Warum? Weil ich gut organisieren kann und weil ich zuhöre."
+    ],
+    [
+     "Nele",
+     "Mein erstes Ziel: Wir brauchen einen Plan für die Klassenarbeiten, damit wir nicht drei Tests am selben Tag haben. Mein zweites Ziel: ein Ausflug, bei dem alle mitmachen können."
+    ],
+    [
+     "Nele",
+     "Ich verspreche nichts, was ich nicht halten kann. Aber ich verspreche, dass ich eure Meinung weitergebe – auch wenn sie nicht meine ist. Danke!"
+    ],
+    [
+     "Lio",
+     "Hi, ich bin Lio. Ich mache es kurz: Ich will, dass es in unserer Klasse fair zugeht. Wenn jemand Ärger mit einer Lehrkraft hat, gehe ich mit, wenn er will."
+    ],
+    [
+     "Lio",
+     "Und ich will, dass die Basketballkörbe auf dem Schulhof endlich repariert werden. Dafür gehe ich zum Schülerkomitee. Wählt mich – oder Nele, sie ist auch super!"
+    ]
+   ]
+  },
+  "cg4-07l": {
+   "titel": "Lernen in der Schule und im Betrieb",
+   "art": "lesen",
+   "lektion": 7,
+   "dauer": 63.0,
+   "text": [
+    [
+     "",
+     "Lernen in der Schule und im Betrieb"
+    ],
+    [
+     "",
+     "Viele Berufe lernt man in einer Ausbildung. In Luxemburg gibt es verschiedene Abschlüsse, zum Beispiel das CCP (certificat de capacité professionnelle), das DAP (diplôme d’aptitude professionnelle) und das DT (diplôme de technicien)."
+    ],
+    [
+     "",
+     "So funktioniert eine Ausbildung."
+    ],
+    [
+     "",
+     "Bei vielen Ausbildungen lernt man an zwei Orten: im Betrieb und in der Schule. Im Betrieb arbeitet man mit, lernt von erfahrenen Kolleginnen und Kollegen und bekommt eine kleine Ausbildungsvergütung. In der Schule lernt man die Theorie: Fachwissen, Rechnen, Sprachen. Man nennt die Auszubildenden auch Lehrlinge."
+    ],
+    [
+     "",
+     "Den passenden Beruf finden."
+    ],
+    [
+     "",
+     "Wichtig ist nicht nur, was man gut kann, sondern auch, was man gern macht und was einem wichtig ist: mit Menschen oder mit Dingen arbeiten? Drinnen oder draußen? Allein oder im Team? Die Berufsberatung (zum Beispiel in der Maison de l’orientation) und Praktika helfen, es herauszufinden."
+    ]
+   ]
+  },
+  "cg4-07h": {
+   "titel": "Zwei Lehrlinge erzählen",
+   "art": "hoeren",
+   "lektion": 7,
+   "dauer": 53.4,
+   "text": [
+    [
+     "Amira",
+     "Hallo! Was lernst du?"
+    ],
+    [
+     "Kim",
+     "Ich mache eine Ausbildung als Pflegehelferin in einem Altenheim. Drei Tage bin ich im Heim, zwei Tage in der Schule."
+    ],
+    [
+     "Amira",
+     "Was gefällt dir?"
+    ],
+    [
+     "Kim",
+     "Die Menschen. Eine alte Dame wartet jeden Morgen auf mich, um mit mir die Zeitung zu lesen. Schwer ist: Man arbeitet auch am Wochenende, und manchmal stirbt jemand. Das ist traurig."
+    ],
+    [
+     "Tom",
+     "Und du? Du hast ja schmutzige Hände!"
+    ],
+    [
+     "Paulo",
+     "Ich lerne Elektroniker. Gerade habe ich hier am Stand eine Steckdose verkabelt. Ich liebe es, wenn am Ende alles funktioniert."
+    ],
+    [
+     "Tom",
+     "Muss man gut in Mathe sein?"
+    ],
+    [
+     "Paulo",
+     "Ein bisschen schon, zum Rechnen und Messen. Aber das lernt man. Wichtiger ist: genau arbeiten und an die Sicherheit denken."
+    ]
+   ]
+  },
+  "cg4-08l": {
+   "titel": "So klappt dein Schnuppertag",
+   "art": "lesen",
+   "lektion": 8,
+   "dauer": 75.2,
+   "text": [
+    [
+     "",
+     "So klappt dein Schnuppertag"
+    ],
+    [
+     "",
+     "Du brauchst: Adresse und Telefonnummer des Betriebs, Name der Ansprechperson, bequeme, passende Kleidung (frag vorher!), Pausenbrot und Trinkflasche, Notizblock und Stift."
+    ],
+    [
+     "",
+     "Schritt 1: Vorher: Plane den Weg und probiere ihn aus. Wie lange brauchst du? Plane 10 Minuten Reserve ein."
+    ],
+    [
+     "",
+     "Schritt 2: Pünktlich sein: Komm einige Minuten zu früh. Wenn du dich verspätest, ruf sofort an."
+    ],
+    [
+     "",
+     "Schritt 3: Freundlich grüßen: Stell dich mit Vor- und Nachnamen vor. Schau die Person an."
+    ],
+    [
+     "",
+     "Schritt 4: Sicherheitsregeln befolgen: Trag die Schutzkleidung, die man dir gibt. Fass nichts an, was du nicht darfst."
+    ],
+    [
+     "",
+     "Schritt 5: Fragen stellen: Wer fragt, zeigt Interesse. Schreib dir wichtige Antworten auf."
+    ],
+    [
+     "",
+     "Schritt 6: Handy weg: Nur in der Pause, und nur, wenn es erlaubt ist."
+    ],
+    [
+     "",
+     "Schritt 7: Danke sagen: Am Ende bedankst du dich für den Tag."
+    ]
+   ]
+  },
+  "cg4-08h": {
+   "titel": "Guten Morgen, ich bin Finn!",
+   "art": "hoeren",
+   "lektion": 8,
+   "dauer": 58.1,
+   "text": [
+    [
+     "Finn",
+     "Guten Morgen! Ich bin Finn Weber, ich mache heute den Schnuppertag."
+    ],
+    [
+     "Frau Becker",
+     "Guten Morgen, Finn! Pünktlich – sehr gut. Bei uns beginnt der Tag früh. Die ersten Brote backen wir schon um vier Uhr."
+    ],
+    [
+     "Finn",
+     "Um vier? Wow. Was darf ich heute machen?"
+    ],
+    [
+     "Frau Becker",
+     "Zuerst ziehst du die Schürze und die Mütze an. Hygiene ist bei uns das Wichtigste. Hände waschen, Haare unter die Mütze, keinen Schmuck."
+    ],
+    [
+     "Finn",
+     "Okay. Darf ich auch Teig machen?"
+    ],
+    [
+     "Frau Becker",
+     "Du darfst Brötchen formen. Der Ofen ist sehr heiß, den bedienen nur die Bäcker. Und wenn du etwas nicht weißt: fragen!"
+    ],
+    [
+     "Finn",
+     "Was muss man für diesen Beruf können?"
+    ],
+    [
+     "Frau Becker",
+     "Früh aufstehen, sauber und genau arbeiten, im Team helfen. Und Lust haben, etwas mit den Händen zu machen, das andere Menschen glücklich macht."
+    ]
+   ]
+  }
+ }
+}

@@ -1,0 +1,606 @@
+{
+ "modul": "vs1",
+ "titel": {
+  "de": "Wer bin ich?",
+  "fr": "Qui suis-je ?"
+ },
+ "sprache": "de",
+ "spuren": {
+  "vs1-01l": {
+   "titel": "So bin ich – und noch ganz anders",
+   "art": "lesen",
+   "lektion": 1,
+   "dauer": 57.7,
+   "text": [
+    [
+     "",
+     "So bin ich – und noch ganz anders"
+    ],
+    [
+     "",
+     "Amira. In der Schule bin ich still. Viele denken, ich bin schüchtern. Aber im Tanzverein bin ich laut und albern. Ich spreche vier Sprachen und denke manchmal auf Arabisch, manchmal auf Luxemburgisch. Ich bin nicht nur eine Sache."
+    ],
+    [
+     "",
+     "Lio. Ich sitze im Rollstuhl. Leute sehen oft zuerst den Rollstuhl. Dabei bin ich vor allem: Basketballfan, Witzeerzähler und der Beste in Mathe in unserer Klasse. Der Rollstuhl gehört zu mir – aber er ist nicht alles."
+    ],
+    [
+     "",
+     "Jana. Letztes Jahr wollte ich so sein wie die Influencerinnen: gleiche Kleider, gleiche Sprüche. Ich war nicht glücklich. Jetzt trage ich, was mir gefällt, auch wenn es nicht „in“ ist. Ich will lieber echt sein als perfekt."
+    ]
+   ]
+  },
+  "vs1-01h": {
+   "titel": "Bin ich noch ich?",
+   "art": "hoeren",
+   "lektion": 1,
+   "dauer": 52.1,
+   "text": [
+    [
+     "Nele",
+     "Sami! Neue Frisur? Und du trägst ja gar keine Trainingshose mehr."
+    ],
+    [
+     "Sami",
+     "Ja … Mein Cousin meint, ich soll erwachsener aussehen. Findest du es komisch?"
+    ],
+    [
+     "Nele",
+     "Nein, sieht gut aus. Aber wie fühlst du dich?"
+    ],
+    [
+     "Sami",
+     "Ehrlich gesagt: ein bisschen verkleidet. Als wäre ich jemand anderes."
+    ],
+    [
+     "Nele",
+     "Hm. Man darf sich ja verändern. Ich habe früher nur Pink getragen, heute nie mehr."
+    ],
+    [
+     "Sami",
+     "Aber bist du dann noch dieselbe Person?"
+    ],
+    [
+     "Nele",
+     "Gute Frage … Ich glaube schon. Mein Lachen ist gleich, meine Freunde sind gleich. Ich bin wie ein Baum: Die Blätter wechseln, die Wurzeln bleiben."
+    ],
+    [
+     "Sami",
+     "Dann behalte ich die Frisur – aber die Trainingshose kommt zurück. Die bin ich!"
+    ]
+   ]
+  },
+  "vs1-02l": {
+   "titel": "Schritt für Schritt erwachsen",
+   "art": "lesen",
+   "lektion": 2,
+   "dauer": 81.1,
+   "text": [
+    [
+     "",
+     "Schritt für Schritt erwachsen"
+    ],
+    [
+     "",
+     "Erwachsen wird man nicht an einem einzigen Tag. Es ist ein langer Weg. Auch das Gesetz gibt jungen Menschen Schritt für Schritt mehr Rechte – und mehr Verantwortung."
+    ],
+    [
+     "",
+     "Kindheit und Jugend."
+    ],
+    [
+     "",
+     "In Luxemburg müssen Kinder und Jugendliche zur Schule gehen: Das ist die Schulpflicht. Kinder und Jugendliche haben besondere Rechte, zum Beispiel das Recht auf Schutz und auf Bildung. Diese Rechte stehen in der UN-Kinderrechtskonvention. Sie gilt für alle unter 18 Jahren."
+    ],
+    [
+     "",
+     "Mit 16."
+    ],
+    [
+     "",
+     "Mit 16 darf man in Luxemburg zum Beispiel einen Führerschein für ein kleines Motorrad machen. Viele Jugendliche beginnen eine Ausbildung oder machen Ferienjobs."
+    ],
+    [
+     "",
+     "Mit 18."
+    ],
+    [
+     "",
+     "Mit 18 ist man volljährig. Man darf wählen, Verträge unterschreiben und den Autoführerschein machen. Man ist auch selbst verantwortlich, wenn etwas schiefgeht."
+    ],
+    [
+     "",
+     "Viele Forscher sagen: Das Gehirn entwickelt sich bis etwa Mitte zwanzig weiter. „Erwachsen sein“ ist also mehr als ein Geburtstag. Es heißt auch: Verantwortung übernehmen, für sich und für andere."
+    ]
+   ]
+  },
+  "vs1-02h": {
+   "titel": "Wie war es, 13 zu sein?",
+   "art": "hoeren",
+   "lektion": 2,
+   "dauer": 58.1,
+   "text": [
+    [
+     "Finn",
+     "Frau Majerus, wie war das, als Sie dreizehn waren?"
+    ],
+    [
+     "Frau Majerus",
+     "Oh, das ist lange her! Mit dreizehn habe ich schon auf dem Bauernhof meiner Eltern mitgearbeitet. Morgens vor der Schule die Kühe füttern."
+    ],
+    [
+     "Finn",
+     "Vor der Schule? Ich schlafe da noch!"
+    ],
+    [
+     "Frau Majerus",
+     "Wir hatten keine Wahl. Mit vierzehn habe ich die Schule verlassen und in einem Geschäft gearbeitet. Ich hätte gern weiter gelernt."
+    ],
+    [
+     "Finn",
+     "Das finde ich unfair. Heute müssen alle lange zur Schule gehen."
+    ],
+    [
+     "Frau Majerus",
+     "Das ist gut so. Ihr habt mehr Zeit, herauszufinden, wer ihr seid. Aber sag mal: Was ist heute schwer, wenn man dreizehn ist?"
+    ],
+    [
+     "Finn",
+     "Hm … Alle schauen auf Handys und vergleichen sich. Man soll immer cool sein."
+    ],
+    [
+     "Frau Majerus",
+     "Vergleichen haben wir auch – nur ohne Handy. Mein Rat: Hör auf dein Herz, nicht auf die Lautesten."
+    ]
+   ]
+  },
+  "vs1-03l": {
+   "titel": "Yusufs Traum vom Fliegen",
+   "art": "lesen",
+   "lektion": 3,
+   "dauer": 51.7,
+   "text": [
+    [
+     "",
+     "Yusufs Traum vom Fliegen"
+    ],
+    [
+     "",
+     "Seit er klein war, schaute Yusuf jedem Flugzeug nach. „Ich werde Pilot“, sagte er. Die anderen lachten: „Mit deinen Noten in Mathe?“ Yusuf wurde jedes Mal leiser."
+    ],
+    [
+     "",
+     "Eines Tages besuchte eine Pilotin die Schule. Yusuf traute sich und fragte: „Kann man Pilot werden, wenn man schlecht in Mathe ist?“ Die Pilotin lächelte: „Ich war auch nicht gut. Ich habe geübt – jeden Tag ein bisschen. Ein Traum ist der Anfang. Aber ein Ziel braucht einen Plan.“"
+    ],
+    [
+     "",
+     "Am Abend schrieb Yusuf auf ein Blatt: Mein Traum: Pilot werden. Mein Ziel für diesen Monat: jeden Tag zehn Minuten Mathe üben. Mein erster Schritt: morgen den Nachhilfe-Club fragen."
+    ],
+    [
+     "",
+     "Ob Yusuf einmal Pilot wird, weiß niemand. Aber seit diesem Abend wird er nicht mehr leiser, wenn jemand lacht."
+    ]
+   ]
+  },
+  "vs1-03h": {
+   "titel": "Muss man Träume haben?",
+   "art": "hoeren",
+   "lektion": 3,
+   "dauer": 58.8,
+   "text": [
+    [
+     "Mia",
+     "Willkommen bei „Große Fragen“! Heute: Muss man einen großen Traum haben? Noah, was ist dein Traum?"
+    ],
+    [
+     "Noah",
+     "Ehrlich? Ich habe keinen. Alle fragen immer: Was willst du werden? Und ich weiß es nicht. Das stresst mich."
+    ],
+    [
+     "Mia",
+     "Das geht vielen so. Ich habe gelesen: Viele Erwachsene haben ihren Beruf erst mit zwanzig oder dreißig gefunden."
+    ],
+    [
+     "Noah",
+     "Wirklich? Dann bin ich ja nicht komisch."
+    ],
+    [
+     "Mia",
+     "Gar nicht. Vielleicht muss man nicht wissen, was man werden will – sondern nur, was einem heute Freude macht."
+    ],
+    [
+     "Noah",
+     "Mir macht Kochen Freude. Und Leuten helfen."
+    ],
+    [
+     "Mia",
+     "Siehst du? Das sind keine kleinen Dinge. Aus so etwas wachsen manchmal Träume."
+    ],
+    [
+     "Noah",
+     "Okay. Mein Ziel für diese Woche: ein neues Rezept ausprobieren. Ist das ein Anfang?"
+    ],
+    [
+     "Mia",
+     "Das ist ein super Anfang!"
+    ]
+   ]
+  },
+  "vs1-04l": {
+   "titel": "Das kleine Wort „noch“",
+   "art": "lesen",
+   "lektion": 4,
+   "dauer": 65.8,
+   "text": [
+    [
+     "",
+     "Das kleine Wort „noch“"
+    ],
+    [
+     "",
+     "Kennst du den Satz: „Ich kann das nicht“? Eine Forscherin aus den USA hat herausgefunden, dass ein kleines Wort viel ändern kann: „noch“. „Ich kann das noch nicht“ klingt ganz anders. Es sagt: Ich bin auf dem Weg."
+    ],
+    [
+     "",
+     "Fehler sind Lernchancen."
+    ],
+    [
+     "",
+     "Unser Gehirn lernt am meisten, wenn etwas schwierig ist. Wer Fehler macht, probiert etwas Neues. Viele berühmte Erfindungen gab es nur, weil jemand nach vielen Fehlversuchen weitergemacht hat."
+    ],
+    [
+     "",
+     "Was hilft bei Frust."
+    ],
+    [
+     "",
+     "Frust ist ein normales Gefühl. Wichtig ist, was man daraus macht. Das hilft vielen: tief atmen und eine kurze Pause machen; mit jemandem darüber reden; sich fragen: „Was kann ich beim nächsten Mal anders machen?“; und sich an etwas erinnern, das schon geklappt hat."
+    ],
+    [
+     "",
+     "Was nicht hilft: alles hinwerfen, sich selbst beschimpfen oder die Wut an anderen auslassen."
+    ]
+   ]
+  },
+  "vs1-04h": {
+   "titel": "Wir haben verloren",
+   "art": "hoeren",
+   "lektion": 4,
+   "dauer": 50.5,
+   "text": [
+    [
+     "Ben",
+     "Das war peinlich! Vierzig zu zwölf! Ich höre auf mit Basketball."
+    ],
+    [
+     "Chloé",
+     "Hey, atme erst mal durch. Du bist gerade sauer, das verstehe ich."
+    ],
+    [
+     "Ben",
+     "Ich habe drei Freiwürfe verworfen. Alle haben es gesehen."
+    ],
+    [
+     "Chloé",
+     "Und? Du hast auch zwei super Pässe gespielt. Die hat der Trainer gelobt."
+    ],
+    [
+     "Ben",
+     "Das zählt doch nicht, wenn man verliert."
+    ],
+    [
+     "Chloé",
+     "Doch. Die anderen spielen seit fünf Jahren. Wir seit fünf Monaten. Wir sind noch nicht so weit – das ist alles."
+    ],
+    [
+     "Ben",
+     "„Noch nicht“ … Na gut. Vielleicht übe ich mehr Freiwürfe."
+    ],
+    [
+     "Chloé",
+     "Wir können zusammen üben. Mittwoch nach der Schule?"
+    ],
+    [
+     "Ben",
+     "Okay. Aber nur, wenn du mir nicht erzählst, wie viele du triffst."
+    ]
+   ]
+  },
+  "vs1-05l": {
+   "titel": "Viele Arten, klug zu sein",
+   "art": "lesen",
+   "lektion": 5,
+   "dauer": 64.2,
+   "text": [
+    [
+     "",
+     "Viele Arten, klug zu sein"
+    ],
+    [
+     "",
+     "Viele denken: Klug ist, wer gute Noten in Mathe und Sprachen hat. Doch Menschen können auf ganz verschiedene Arten begabt sein."
+    ],
+    [
+     "",
+     "Manche sind stark mit Wörtern: Sie erzählen spannend oder schreiben gute Texte. Andere sind stark mit Zahlen und Logik. Manche haben ein gutes Gefühl für Musik oder für Bewegung – sie tanzen, spielen Fußball oder bauen mit den Händen. Andere sind stark mit Menschen: Sie spüren, wie es anderen geht, und können Streit schlichten. Und manche kennen sich selbst sehr gut und wissen, was ihnen guttut."
+    ],
+    [
+     "",
+     "Warum Stärken wichtig sind."
+    ],
+    [
+     "",
+     "Wer seine Stärken kennt, traut sich mehr zu. Das nennt man Selbstwert. Wichtig ist: Stärken sind kein Wettbewerb. Wenn deine Freundin gut zeichnen kann, wirst du dadurch nicht schlechter. Eine Klasse ist wie ein Team: Erst alle Stärken zusammen machen es stark."
+    ]
+   ]
+  },
+  "vs1-05h": {
+   "titel": "Der heiße Stuhl",
+   "art": "hoeren",
+   "lektion": 5,
+   "dauer": 47.1,
+   "text": [
+    [
+     "Frau Kremer",
+     "Nele sitzt heute auf dem heißen Stuhl. Die Regel: Wir sagen nur ehrliche, freundliche Dinge. Wer fängt an?"
+    ],
+    [
+     "Tom",
+     "Nele, du organisierst immer alles. Ohne dich hätten wir den Kuchenverkauf nie geschafft."
+    ],
+    [
+     "Amira",
+     "Und du merkst, wenn es jemandem nicht gut geht. Als ich neu war, hast du dich als Erste neben mich gesetzt."
+    ],
+    [
+     "Nele",
+     "Oh … das wusste ich gar nicht mehr."
+    ],
+    [
+     "Frau Kremer",
+     "Wie fühlst du dich, Nele?"
+    ],
+    [
+     "Nele",
+     "Komisch. Aber gut komisch. Ich bin rot geworden, oder?"
+    ],
+    [
+     "Tom",
+     "Ein bisschen. Darf ich nächste Woche auf den Stuhl?"
+    ],
+    [
+     "Frau Kremer",
+     "Natürlich. Jede und jeder kommt dran – aber nur, wer möchte."
+    ]
+   ]
+  },
+  "vs1-06l": {
+   "titel": "Woran erkennt man echte Freunde?",
+   "art": "lesen",
+   "lektion": 6,
+   "dauer": 45.1,
+   "text": [
+    [
+     "",
+     "Woran erkennt man echte Freunde?"
+    ],
+    [
+     "",
+     "Meine beste Freundin hat jetzt eine neue Clique und meldet sich kaum noch. Woran erkennt man echte Freunde?"
+    ],
+    [
+     "",
+     "Echte Freunde reden nicht schlecht über dich, wenn du nicht da bist. Das ist für mich das Wichtigste."
+    ],
+    [
+     "",
+     "Bei mir: Man kann zusammen lachen UND zusammen schweigen, ohne dass es komisch ist."
+    ],
+    [
+     "",
+     "Ein Freund sagt dir auch mal die Wahrheit, wenn sie unangenehm ist. Aber freundlich."
+    ],
+    [
+     "",
+     "Und Lina: Freundschaften verändern sich manchmal. Das tut weh. Sprich deine Freundin doch direkt an?"
+    ],
+    [
+     "",
+     "Danke euch. Ich schreibe ihr heute Abend. ❤️"
+    ]
+   ]
+  },
+  "vs1-06h": {
+   "titel": "Das Geheimnis",
+   "art": "hoeren",
+   "lektion": 6,
+   "dauer": 54.2,
+   "text": [
+    [
+     "Mia",
+     "Lina, warum wissen alle, dass ich in Noah verliebt bin? Das habe ich nur dir erzählt!"
+    ],
+    [
+     "Lina",
+     "Ich … Ich habe es nur Jana gesagt. Ich dachte, sie erzählt es nicht weiter."
+    ],
+    [
+     "Mia",
+     "Das war mein Geheimnis! Ich schäme mich so. Noah hat heute so komisch geschaut."
+    ],
+    [
+     "Lina",
+     "Es tut mir wirklich leid, Mia. Das war dumm von mir. Ich habe nicht nachgedacht."
+    ],
+    [
+     "Mia",
+     "Ich weiß nicht, ob ich dir noch etwas erzählen kann."
+    ],
+    [
+     "Lina",
+     "Das verstehe ich. Kann ich etwas tun, damit es besser wird?"
+    ],
+    [
+     "Mia",
+     "Vielleicht … Sag Jana, sie soll damit aufhören. Und gib mir ein bisschen Zeit."
+    ],
+    [
+     "Lina",
+     "Mach ich. Sofort. Und ich verspreche: Deine Geheimnisse bleiben ab jetzt bei mir."
+    ]
+   ]
+  },
+  "vs1-07l": {
+   "titel": "In fünf Schritten zur Lösung",
+   "art": "lesen",
+   "lektion": 7,
+   "dauer": 69.4,
+   "text": [
+    [
+     "",
+     "In fünf Schritten zur Lösung"
+    ],
+    [
+     "",
+     "Du brauchst: zwei Personen, die sich streiten, eine ruhige Person, die schlichtet, Zeit und einen ruhigen Ort."
+    ],
+    [
+     "",
+     "Schritt 1: Abkühlen. Wer sehr wütend ist, macht zuerst eine Pause. Niemand redet im Zorn."
+    ],
+    [
+     "",
+     "Schritt 2: Erzählen und zuhören. Jede Seite erzählt, was passiert ist. Die andere hört zu und unterbricht nicht."
+    ],
+    [
+     "",
+     "Schritt 3: Gefühle sagen – mit Ich-Botschaften. Nicht: „Du bist so gemein!“ Sondern: „Ich bin traurig, weil du mich nicht mitspielen lässt.“"
+    ],
+    [
+     "",
+     "Schritt 4: Lösungen sammeln. Beide schlagen Lösungen vor. Alle Ideen sind erlaubt."
+    ],
+    [
+     "",
+     "Schritt 5: Einigen. Beide wählen eine Lösung, mit der beide leben können – und halten sich daran."
+    ],
+    [
+     "",
+     "Ich-Botschaften wirken, weil sie den anderen nicht angreifen. Wer sich angegriffen fühlt, verteidigt sich – und der Streit wird größer."
+    ]
+   ]
+  },
+  "vs1-07h": {
+   "titel": "Der Ball",
+   "art": "hoeren",
+   "lektion": 7,
+   "dauer": 61.5,
+   "text": [
+    [
+     "Amira",
+     "Okay. Jeder erzählt, was passiert ist. Der andere hört zu. Noah, du zuerst."
+    ],
+    [
+     "Noah",
+     "Wir spielen jeden Tag Fußball. Heute hat Finn den Ball genommen und gesagt, ich darf nicht mitspielen."
+    ],
+    [
+     "Amira",
+     "Danke. Finn, wie hast du es erlebt?"
+    ],
+    [
+     "Finn",
+     "Noah foult immer! Gestern hat er mich so getreten, dass ich geblutet habe. Darum wollte ich nicht mit ihm spielen."
+    ],
+    [
+     "Amira",
+     "Wie fühlt ihr euch? Mit Ich-Botschaften, bitte."
+    ],
+    [
+     "Noah",
+     "Ich bin traurig, weil ich ausgeschlossen wurde. Und … ich wusste nicht, dass ich dich verletzt habe."
+    ],
+    [
+     "Finn",
+     "Ich habe Angst, wenn du so hart spielst. Ich will einfach Spaß haben."
+    ],
+    [
+     "Amira",
+     "Welche Lösung könnt ihr euch vorstellen?"
+    ],
+    [
+     "Noah",
+     "Ich spiele fairer. Und wenn ich jemanden umrenne, entschuldige ich mich."
+    ],
+    [
+     "Finn",
+     "Dann darfst du mitspielen. Und wir machen eine Regel: Wer hart foult, setzt fünf Minuten aus."
+    ]
+   ]
+  },
+  "vs1-08l": {
+   "titel": "Mitten drin",
+   "art": "lesen",
+   "lektion": 8,
+   "dauer": 35.6,
+   "text": [
+    [
+     "",
+     "Mitten drin"
+    ],
+    [
+     "",
+     "In der Pause, laut und voll, alle lachen, alles toll. Ich steh mitten in dem Kreis –, und bin doch allein, wer weiß?"
+    ],
+    [
+     "",
+     "Am Abend, still in meinem Zimmer, leises Licht, ein warmer Schimmer. Ganz allein mit meinem Lied –, und nicht einsam. Was ein Unterschied!"
+    ],
+    [
+     "",
+     "Einsam ist man nicht vom Zählen, nicht von Menschen, die nicht fehlen. Einsam ist: Wenn keiner fragt. Darum frag ich. Jeden Tag."
+    ]
+   ]
+  },
+  "vs1-08h": {
+   "titel": "Einsam unter vielen",
+   "art": "hoeren",
+   "lektion": 8,
+   "dauer": 65.0,
+   "text": [
+    [
+     "Becker",
+     "Heute geht es um Einsamkeit. Lio, du hast uns geschrieben. Warum?"
+    ],
+    [
+     "Lio",
+     "Letztes Jahr bin ich umgezogen. In der neuen Klasse waren alle schon in Gruppen. Ich habe niemanden gekannt. In den Pausen habe ich so getan, als ob ich auf dem Handy etwas Wichtiges mache."
+    ],
+    [
+     "Becker",
+     "Frau Doktor, ist das häufig?"
+    ],
+    [
+     "Psychologin",
+     "Sehr häufig. Viele Jugendliche fühlen sich manchmal einsam – auch solche mit vielen Followern. Einsamkeit ist ein Gefühl, kein Fehler. Man sollte sich nicht dafür schämen."
+    ],
+    [
+     "Becker",
+     "Was hat dir geholfen, Lio?"
+    ],
+    [
+     "Lio",
+     "Ein Junge hat mich gefragt, ob ich beim Basketball mitmache. Nur eine Frage! Heute ist er mein bester Freund."
+    ],
+    [
+     "Psychologin",
+     "Das zeigt: Manchmal reicht eine kleine Geste. Und wer sich lange einsam fühlt, sollte mit jemandem reden – mit Freunden, einer Lehrkraft oder bei einem Sorgentelefon."
+    ],
+    [
+     "Becker",
+     "Die Nummer für Kinder und Jugendliche in Luxemburg ist 116 111. Kostenlos und anonym."
+    ]
+   ]
+  }
+ }
+}

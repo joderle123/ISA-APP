@@ -101,6 +101,26 @@ trägt die ELDiB-Ziele dieses Themas.
   Thema es verlangt, und dann behutsam (Abschnitt 8). Für Kinder mit heiklem Thema plant Passgenau solche Blätter nur mit
   Figuren – das Blatt soll deshalb auch über eine Figur oder ein Beispiel funktionieren.
 
+### Toolbox-Umbau 21.11.2026: Schrift und Vorlesen (automatisch)
+
+- **Schrift wie in den Modulheften:** Blatt-Titel in **Lexend**, Fließtext der Jugend-Blätter (C4–ES) in **Atkinson Hyperlegible**
+  (für schwache Leser gemacht: I/l/1 und b/d klar unterscheidbar), Grundschrift 10,5 pt (Zeilenabstand 1,4), Kleinschrift 9 pt. Kinderblätter bleiben in
+  der Kinderschrift; Lehrerseiten und Skills-Kurs (Look „spiel“) bleiben in Inter. Dateien: `src/assets/fonts/pdf/Lexend-*`,
+  `Atkinson-*` (auf Latein reduziert, zusammengesetzte Glyphen zerlegt, Pfeile ergänzt – sonst bettet fontkit fehlerhaft ein).
+- **Vorlesen per QR-Code:** Jede `geschichte` (alle Stufen) und jeder längere `text` (ab 35 Wörtern, C4–ES) bekommt eine Hördatei
+  (Piper-Stimme, von der Spracherkennung gegengehört). Daneben steht ein QR-Code „Anhören“ → Abspiel-Seite `h/?<code>`.
+  Ablauf nach neuen oder geänderten Texten:
+  1. `npx tsx --tsconfig tsconfig.scripts.json tools/hefte/toolbox-spuren.ts` (Spurlisten je Bereich und Sprache)
+  2. `HF_HUB_DISABLE_XET=1 /home/user/tts/venv/bin/python tools/hefte/audio.py <modul> [--nur <code,…>]` (z. B. `tbg`, `tbgf`)
+  3. `npx tsx --tsconfig tsconfig.scripts.json tools/hefte/toolbox-spuren.ts --liste` → `src/blatt/hoeren.json` (nur Codes mit MP3)
+  Codes: `tb<Kürzel>[f]-<Nr><a…>` für Geschichten, `…<x…>` für Lesetexte (z. B. G-20 → `tbg-20a`). Geänderter Text = neu sprechen.
+  Ist ein französischer Text gleich dem deutschen (Deutsch-Blätter), nutzt er die deutsche Hördatei. Ohne Hördatei bleiben Texte, die
+  Sprachen mischen (Liste `AUSLASSEN` in `toolbox-spuren.ts`).
+- **Wo der QR-Code steht:** Beginnt ein Magazin-Blatt (C4–ES) mit einem Lesetext, steht sein Code **im Kopf statt des Symbols**
+  (36 pt) – das kostet keinen Platz. Sonst steht er oben rechts am Text, und nur die ersten Zeilen laufen daneben; darunter nutzt
+  der Text wieder die volle Breite (`TextMitQr` in `bausteine.tsx`, Trennstelle aus den Schriftbreiten in `textbreite.ts`).
+- **Sprache:** Sätze möglichst unter 20 Wörtern (C4–ES), Hinweise auf Hilfe als Frage + Satz („Du schläfst kaum? Sprich mit …“).
+
 ### Gestaltung „Blatt 2.0“ (automatisch – im Blatt steht nichts davon)
 
 Farbe, Motive und Raster ergeben sich aus der Stufe (Code: `src/blatt/pdf/design.ts`, `src/blatt/icon-motiv.ts`). Ein Blatt beschreibt

@@ -1,0 +1,750 @@
+{
+ "modul": "tbsf",
+ "titel": {
+  "de": "Toolbox · Arbeitsblätter S",
+  "fr": "Toolbox · fiches S"
+ },
+ "sprache": "fr",
+ "spuren": {
+  "tbsf-03x": {
+   "titel": "S-03 · La roue des émotions",
+   "art": "lesen",
+   "lektion": 3,
+   "dauer": 14.1,
+   "text": [
+    [
+     "",
+     "« Ça ne va pas » peut cacher bien des choses : de la déception, une blessure, de la nervosité ou simplement de la fatigue. Plus tu nommes précisément une émotion, mieux tu peux la gérer."
+    ]
+   ]
+  },
+  "tbsf-52x": {
+   "titel": "S-52 · Ma boussole de skills",
+   "art": "lesen",
+   "lektion": 52,
+   "dauer": 24.3,
+   "text": [
+    [
+     "",
+     "Tous les skills ne conviennent pas partout. La boussole te montre lequel t’aide où : à l’école, face à la colère, dans les amitiés, à la maison, sur internet. Tu étais déjà là en année 1 ? Alors tu connais la valise de skills. Elle range les skills selon le niveau de tension. La boussole, elle, les range selon les domaines de ton quotidien."
+    ]
+   ]
+  },
+  "tbsf-54x": {
+   "titel": "S-54 · Sur quoi repose mon estime de soi ?",
+   "art": "lesen",
+   "lektion": 54,
+   "dauer": 25.4,
+   "text": [
+    [
+     "",
+     "L’estime de soi, c’est le sentiment d’être quelqu’un de bien et de précieux. Beaucoup la rattachent à des choses qui vacillent vite : notes, likes, apparence, victoires. Elle monte et descend alors à chaque devoir en classe et à chaque post. Elle devient plus stable quand elle repose sur plusieurs sources – et sur des sources qu’un mauvais jour ne peut pas t’enlever."
+    ]
+   ]
+  },
+  "tbsf-56x": {
+   "titel": "S-56 · Parler du corps – avec respect",
+   "art": "lesen",
+   "lektion": 56,
+   "dauer": 17.5,
+   "text": [
+    [
+     "",
+     "Une remarque sur les jambes, un emoji qui rit sous une photo, un « Tu as pris du poids, dis donc » à la fête de famille. Ces phrases font mal, même quand c’est dit pour rire. Et souvent, quelqu’un est juste à côté et ne sait pas quoi dire."
+    ]
+   ]
+  },
+  "tbsf-57x": {
+   "titel": "S-57 · Mon ami intérieur",
+   "art": "lesen",
+   "lektion": 57,
+   "dauer": 23.4,
+   "text": [
+    [
+     "",
+     "Quand quelque chose tourne mal, le critique intérieur se manifeste souvent : « Comme d’habitude. Tu n’arrives à rien. » Il veut te protéger des erreurs – mais il exagère et te rabaisse. L’ami intérieur voit le même raté. Il dit la vérité, mais gentiment : « C’est embêtant. Qu’est-ce qui t’aide maintenant ? »"
+    ]
+   ]
+  },
+  "tbsf-58x": {
+   "titel": "S-58 · Mon baromètre du stress",
+   "art": "lesen",
+   "lektion": 58,
+   "dauer": 16.9,
+   "text": [
+    [
+     "",
+     "Le stress est la réponse de ton corps à une exigence. Le cœur bat plus vite, les muscles se tendent, le regard se rétrécit. Ça te prépare. Le problème, c’est quand c’est trop, ou trop long."
+    ]
+   ]
+  },
+  "tbsf-61a": {
+   "titel": "S-61 · Mon plan de départ – Dimanche, 16 h",
+   "art": "lesen",
+   "lektion": 61,
+   "dauer": 25.7,
+   "text": [
+    [
+     "",
+     "Dimanche, 16 h"
+    ],
+    [
+     "",
+     "Diogo doit faire un exposé demain en cours de français. Il ouvre son ordinateur, voit la diapositive vide et sent un nœud au ventre. « D’abord finir cette vidéo. » Une vidéo devient sept. À 21 h, la pression est énorme, et l’exposé lui paraît encore pire qu’à 16 h."
+    ]
+   ]
+  },
+  "tbsf-63x": {
+   "titel": "S-63 · L’iceberg de la colère",
+   "art": "lesen",
+   "lektion": 63,
+   "dauer": 12.7,
+   "text": [
+    [
+     "",
+     "La colère est souvent comme un garde du corps : elle passe devant pour que personne ne voie ce qui a vraiment touché. Quand on sait ce qu’il y a en dessous, on sait aussi ce qui aide vraiment."
+    ]
+   ]
+  },
+  "tbsf-63a": {
+   "titel": "S-63 · L’iceberg de la colère – Le cahier",
+   "art": "lesen",
+   "lektion": 63,
+   "dauer": 29.8,
+   "text": [
+    [
+     "",
+     "Le cahier"
+    ],
+    [
+     "",
+     "Elias (14 ans) revient en classe après la récré. Son cahier est ouvert sur la table : quelqu’un a écrit « looser » en travers de la page. Au fond, trois élèves rigolent. Elias jette le cahier contre le mur et hurle : « Qui a fait ça ? » À cet instant, la prof entre – et le met dehors. Dans le couloir, il donne un coup de pied dans son sac à dos et pense : toujours moi."
+    ]
+   ]
+  },
+  "tbsf-65a": {
+   "titel": "S-65 · Le feu tricolore – Le téléphone",
+   "art": "lesen",
+   "lektion": 65,
+   "dauer": 25.4,
+   "text": [
+    [
+     "",
+     "Le téléphone"
+    ],
+    [
+     "",
+     "À la récré, Mathis prend le téléphone des mains d’Aylin. Il lit un message à voix haute. Quand elle essaie de le reprendre, il le tient en l’air. Quelques personnes rient. Le visage d’Aylin devient brûlant, ses mains tremblent, son chiffre est à 80. Elle aurait envie de lui arracher le téléphone et de frapper."
+    ]
+   ]
+  },
+  "tbsf-67a": {
+   "titel": "S-67 · Réparer – L’affiche",
+   "art": "lesen",
+   "lektion": 67,
+   "dauer": 28.0,
+   "text": [
+    [
+     "",
+     "L’affiche"
+    ],
+    [
+     "",
+     "Diogo a récupéré une mauvaise note en maths. À l’heure suivante, il travaille avec Léa sur une affiche. Léa dit : « Tu peux au moins écrire proprement ? » Diogo explose. Il lui crie dessus et déchire l’affiche en deux – deux heures de travail, et toute la classe regarde. Le soir, il pense : je suis vraiment le pire."
+    ]
+   ]
+  },
+  "tbsf-68x": {
+   "titel": "S-68 · Des cases dans la tête",
+   "art": "lesen",
+   "lektion": 68,
+   "dauer": 16.8,
+   "text": [
+    [
+     "",
+     "Nous classons tout le temps : les jeunes, les profs, les fans de foot, les gamers. Ça fait gagner du temps. Ça devient difficile quand on ne voit plus une personne qu’à travers sa case – et qu’on la traite en conséquence."
+    ]
+   ]
+  },
+  "tbsf-68a": {
+   "titel": "S-68 · Des cases dans la tête – La réputation",
+   "art": "lesen",
+   "lektion": 68,
+   "dauer": 31.0,
+   "text": [
+    [
+     "",
+     "La réputation"
+    ],
+    [
+     "",
+     "Rafael (14 ans) s’est bagarré une fois avec un camarade il y a un an. Depuis, on l’appelle « la brute ». Quand un téléphone disparaît dans le vestiaire, tout le monde regarde d’abord vers lui. En travail de groupe, personne n’écoute quand il a une idée. Et on met la nouvelle de la classe en garde contre lui, avant même qu’elle le connaisse. Maintenant, Rafael dit : « Alors tant pis, je suis comme ça. »"
+    ]
+   ]
+  },
+  "tbsf-69a": {
+   "titel": "S-69 · Mon portrait de langues – Inês",
+   "art": "lesen",
+   "lektion": 69,
+   "dauer": 37.1,
+   "text": [
+    [
+     "",
+     "Inês"
+    ],
+    [
+     "",
+     "Inês (14 ans) est née à Esch et a deux passeports, un portugais et un luxembourgeois. Avec sa grand-mère, elle parle portugais, avec ses copines luxembourgeois, au lycée français et allemand, en jouant en ligne anglais. Elle fait du handball, elle est la grande sœur de la famille et elle écoute du rap. Chaque été, elle va voir sa famille au Portugal – et au bout de deux semaines, elle a hâte de rentrer chez elle. L’autre jour, quelqu’un lui a demandé : « Alors, tu es portugaise ou luxembourgeoise ? »"
+    ]
+   ]
+  },
+  "tbsf-75a": {
+   "titel": "S-75 · Amoureux – avec respect – Luca",
+   "art": "lesen",
+   "lektion": 75,
+   "dauer": 24.5,
+   "text": [
+    [
+     "",
+     "Luca"
+    ],
+    [
+     "",
+     "Depuis trois semaines, Luca prend le long chemin par le deuxième étage, parce que la classe de Nora s’y trouve. Il a réécrit onze fois un message pour elle. Vendredi, il lui demande si elle vient samedi au skatepark. Nora répond gentiment : « Je t’aime bien, mais pas comme ça. Désolée. »"
+    ]
+   ]
+  },
+  "tbsf-76a": {
+   "titel": "S-76 · Quand une amitié se termine – Nora et Emma",
+   "art": "lesen",
+   "lektion": 76,
+   "dauer": 26.6,
+   "text": [
+    [
+     "",
+     "Nora et Emma"
+    ],
+    [
+     "",
+     "Nora et Emma étaient inséparables depuis le cycle 2. Au lycée, elles se sont retrouvées dans des classes différentes ; Emma joue maintenant au handball, Nora dessine des mangas. Après une dispute, Emma a raconté à d’autres quelque chose que Nora lui avait confié. Aujourd’hui, elles sont dans le même bus et regardent leur téléphone."
+    ]
+   ]
+  },
+  "tbsf-77x": {
+   "titel": "S-77 · Six familles, six chez-soi",
+   "art": "lesen",
+   "lektion": 77,
+   "dauer": 14.5,
+   "text": [
+    [
+     "",
+     "Le chez-soi ne se ressemble pas pour tout le monde : chez les deux parents, chez un seul parent, chez les grands-parents, dans une famille d’accueil ou dans un foyer. Les six jeunes de cette feuille sont inventés."
+    ]
+   ]
+  },
+  "tbsf-78a": {
+   "titel": "S-78 · Mieux se disputer à la maison – 22 h",
+   "art": "lesen",
+   "lektion": 78,
+   "dauer": 36.8,
+   "text": [
+    [
+     "",
+     "22 h"
+    ],
+    [
+     "",
+     "Jeudi, un peu après 22 h. Mila, 14 ans, est au lit et discute avec ses amies : samedi, c’est la fête, et tout le monde est en train de décider qui apporte quoi. La règle à la maison est claire : à 22 h, le téléphone va dans la cuisine. Sa mère est dans l’encadrement de la porte : « Téléphone. Maintenant. » Mila : « Tu gâches toujours tout ! » La porte claque. Ensuite, elles restent longtemps éveillées toutes les deux."
+    ]
+   ]
+  },
+  "tbsf-81a": {
+   "titel": "S-81 · Mes données sous contrôle – Le profil de Mila",
+   "art": "lesen",
+   "lektion": 81,
+   "dauer": 33.9,
+   "text": [
+    [
+     "",
+     "Le profil de Mila"
+    ],
+    [
+     "",
+     "Mila, 14 ans, a un profil public sous le nom mila.balou. Dans la description, on lit « Esch · Handball · 14 ». La photo de profil la montre en maillot de club, logo visible. Parmi ses derniers posts : un selfie devant son lycée, avec le panneau bien lisible ; une photo avec son chien Balou ; « Enfin 14 ans » avec un gâteau, publié le 12 mars ; une story de l’entraînement mardi à 18 h, avec la localisation."
+    ]
+   ]
+  },
+  "tbsf-82a": {
+   "titel": "S-82 · Photos : accord, pression, chantage – Une heure",
+   "art": "lesen",
+   "lektion": 82,
+   "dauer": 31.1,
+   "text": [
+    [
+     "",
+     "Une heure"
+    ],
+    [
+     "",
+     "Elias, 15 ans, discute depuis deux semaines avec un profil nommé « sunny_16 ». Elle est gentille, fait des compliments, envoie des photos. À un moment, elle lui demande une photo intime de lui, et il en envoie une. Peu après, le ton change : « Paie 200 euros, sinon tous tes amis recevront la photo. Tu as une heure. » Elias tremble. Il a tellement honte qu’il ne veut le dire à personne."
+    ]
+   ]
+  },
+  "tbsf-85x": {
+   "titel": "S-85 · Info ou intox ?",
+   "art": "lesen",
+   "lektion": 85,
+   "dauer": 16.1,
+   "text": [
+    [
+     "",
+     "On entend beaucoup de choses sur l’alcool, les vapes et le cannabis – en soirée, sur internet, de la part des plus âgés. Certaines sont vraies, beaucoup ne le sont pas. Ici, tu vérifies ce qu’il en est."
+    ]
+   ]
+  },
+  "tbsf-86x": {
+   "titel": "S-86 · Mon plan B",
+   "art": "lesen",
+   "lektion": 86,
+   "dauer": 15.4,
+   "text": [
+    [
+     "",
+     "La pression arrive rarement avec un préavis. Souvent, il suffit d’un gobelet dans la main ou d’une vape qui circule en rond. Quand on sait d’avance ce qu’on dira et comment s’en sortir, on y va plus sereinement."
+    ]
+   ]
+  },
+  "tbsf-87x": {
+   "titel": "S-87 · Un skill à effets secondaires",
+   "art": "lesen",
+   "lektion": 87,
+   "dauer": 18.0,
+   "text": [
+    [
+     "",
+     "Personne ne boit, ne fume ou ne prend du cannabis sans raison. Le plus souvent, on cherche quelque chose : du calme, du courage, un sentiment d’appartenance, de la nouveauté. La substance le fournit vite – mais elle fait payer un prix."
+    ]
+   ]
+  },
+  "tbsf-88x": {
+   "titel": "S-88 · Quand tu t’inquiètes pour quelqu’un",
+   "art": "lesen",
+   "lektion": 88,
+   "dauer": 15.5,
+   "text": [
+    [
+     "",
+     "Souvent, ce sont les amis qui remarquent les premiers que quelqu’un va vraiment mal. Tu n’as pas à gérer ça sans aide. Mais tu peux beaucoup : regarder, aborder, écouter – et chercher de l’aide."
+    ]
+   ]
+  },
+  "tbsf-101x": {
+   "titel": "S-101 · Mon carnet de skills",
+   "art": "lesen",
+   "lektion": 101,
+   "dauer": 22.1,
+   "text": [
+    [
+     "",
+     "Dans le cours de skills, tu essaies beaucoup de choses. Dans ce carnet, tu ne mets que ce qui marche vraiment pour toi – en quatre rubriques : skills préférés, plans, phrases qui portent et personnes qui aident. Ainsi, tu le retrouves même après le cours : au lycée, en formation, à la maison."
+    ]
+   ]
+  },
+  "tbsf-105x": {
+   "titel": "S-105 · Ma fleur d’identité",
+   "art": "lesen",
+   "lektion": 105,
+   "dauer": 17.7,
+   "text": [
+    [
+     "",
+     "L’identité est la réponse à la question : qui suis-je ? À 15 ou 16 ans, elle n’est pas terminée – tu essaies, tu choisis, tu rejettes. Au lycée, tu te montres autrement qu’à la maison ou en ligne, et pourtant tu restes toujours toi."
+    ]
+   ]
+  },
+  "tbsf-106x": {
+   "titel": "S-106 · Modèles : vrais ou mis en scène ?",
+   "art": "lesen",
+   "lektion": 106,
+   "dauer": 17.1,
+   "text": [
+    [
+     "",
+     "Un modèle n’est pas parfait. Un modèle, c’est quelqu’un chez qui tu prends quelque chose : une attitude, une phrase, une façon de gérer le stress. Certains, tu les connais personnellement, d’autres seulement par l’écran."
+    ]
+   ]
+  },
+  "tbsf-107x": {
+   "titel": "S-107 · Bien décider",
+   "art": "lesen",
+   "lektion": 107,
+   "dauer": 18.2,
+   "text": [
+    [
+     "",
+     "Les petites décisions, le ventre les prend en quelques secondes – et c’est très bien ainsi. Pour les grandes, il vaut la peine de demander aussi son avis à la tête. Le mieux, c’est que les deux puissent s’exprimer et que tu saches à la fin pourquoi tu as choisi."
+    ]
+   ]
+  },
+  "tbsf-107a": {
+   "titel": "S-107 · Bien décider – Le stage",
+   "art": "lesen",
+   "lektion": 107,
+   "dauer": 28.6,
+   "text": [
+    [
+     "",
+     "Le stage"
+    ],
+    [
+     "",
+     "Mathis (15 ans) doit choisir d’ici vendredi son stage de deux semaines. Dans le garage de son oncle, il connaît tout le monde, le trajet est court et son oncle serait content. À l’hôtel en ville, il pourrait aider en cuisine – ça l’intéresse vraiment. Mais il n’y connaît personne et il lui faut presque une heure en bus. Depuis des jours, Mathis repousse sa décision."
+    ]
+   ]
+  },
+  "tbsf-109a": {
+   "titel": "S-109 · Courage ou imprudence ? – Sur le pont",
+   "art": "lesen",
+   "lektion": 109,
+   "dauer": 25.1,
+   "text": [
+    [
+     "",
+     "Sur le pont"
+    ],
+    [
+     "",
+     "Samedi, au bord de la Sûre. Luca (15 ans) est sur un pont avec cinq autres jeunes. Deux ont déjà sauté dans l’eau, quelqu’un filme. Personne ne sait quelle est la profondeur de la rivière aujourd’hui – il n’a presque pas plu depuis des semaines. « À toi ! », crie quelqu’un. Tout le monde regarde Luca."
+    ]
+   ]
+  },
+  "tbsf-109b": {
+   "titel": "S-109 · Courage ou imprudence ? – Dans le groupe de classe",
+   "art": "lesen",
+   "lektion": 109,
+   "dauer": 24.2,
+   "text": [
+    [
+     "",
+     "Dans le groupe de classe"
+    ],
+    [
+     "",
+     "Une photo d’Elias apparaît dans le groupe de discussion de la classe : il s’est endormi à la cantine, et en dessous, il y a des remarques méchantes. Tout le monde envoie des smileys qui rient. Amira (15 ans) se demande si elle doit écrire : « Supprimez ça. Ce n’est pas OK. » Peut-être qu’elle sera la prochaine."
+    ]
+   ]
+  },
+  "tbsf-112x": {
+   "titel": "S-112 · Rebondir après une erreur",
+   "art": "lesen",
+   "lektion": 112,
+   "dauer": 14.4,
+   "text": [
+    [
+     "",
+     "Quand on apprend quelque chose de nouveau, on fait des erreurs – en jonglant, dans une nouvelle langue, lors du premier stage. L’important n’est pas de savoir si tu fais des erreurs, mais ce que tu fais ensuite."
+    ]
+   ]
+  },
+  "tbsf-112a": {
+   "titel": "S-112 · Rebondir après une erreur – Deuxième essai",
+   "art": "lesen",
+   "lektion": 112,
+   "dauer": 40.3,
+   "text": [
+    [
+     "",
+     "Deuxième essai"
+    ],
+    [
+     "",
+     "Chiara (16 ans) voulait absolument devenir cuisinière. Lors de son premier stage, elle est arrivée trois fois en retard, et l’évaluation était mauvaise. Sa première pensée : « Je ne suis tout simplement pas faite pour ça. » Sa tante a seulement demandé : « Qu’est-ce qui s’est passé, exactement ? » Ensemble, elles ont trouvé : le bus était trop juste, et Chiara n’avait pas osé poser de questions en cuisine. Au stage suivant, elle a pris le bus d’avant et a demandé quand elle ne savait pas. À la fin, on lui a proposé une place d’apprentissage."
+    ]
+   ]
+  },
+  "tbsf-119a": {
+   "titel": "S-119 · Un objectif pour les mois à venir – L’objectif de Yusuf",
+   "art": "lesen",
+   "lektion": 119,
+   "dauer": 25.7,
+   "text": [
+    [
+     "",
+     "L’objectif de Yusuf"
+    ],
+    [
+     "",
+     "Yusuf (15 ans) veut trouver d’ici les vacances de Pâques une place de stage dans un atelier. Le meilleur dans tout ça : montrer ce qu’il sait faire. Son obstacle intérieur : avant d’appeler des inconnus, il remet tout à plus tard. Son plan : « Quand je descends du bus le lundi, j’appelle une entreprise avant d’aller à l’entraînement. »"
+    ]
+   ]
+  },
+  "tbsf-120a": {
+   "titel": "S-120 · Mon budget du mois – Inês planifie son mois",
+   "art": "lesen",
+   "lektion": 120,
+   "dauer": 34.8,
+   "text": [
+    [
+     "",
+     "Inês planifie son mois"
+    ],
+    [
+     "",
+     "Inês a 15 ans. Chaque mois, elle reçoit 40 euros d’argent de poche et gagne environ 20 euros de plus en faisant du baby-sitting. Son crédit de téléphone lui coûte 10 euros par mois, sa part de l’abonnement de streaming de la famille, 5 euros. Elle met de l’argent de côté pour un casque audio à 60 euros. Le mois dernier, son argent avait disparu au bout de deux semaines – et elle ne savait pas trop où il était passé. (Tous les montants sont des exemples.)"
+    ]
+   ]
+  },
+  "tbsf-122a": {
+   "titel": "S-122 · Gérer mon quotidien – Le rendez-vous de Jang",
+   "art": "lesen",
+   "lektion": 122,
+   "dauer": 29.3,
+   "text": [
+    [
+     "",
+     "Le rendez-vous de Jang"
+    ],
+    [
+     "",
+     "Jang a rendez-vous jeudi à 14 h 30 chez le dentiste dans la commune voisine – pour la première fois, il y va seul. Le bus passe à 13 h 15, 13 h 45 et 14 h 15 et met 25 minutes. De l’arrêt de la commune voisine au cabinet, il y a 10 minutes à pied ; de chez lui à son arrêt, 5 minutes. Jang veut arriver 10 minutes avant le rendez-vous."
+    ]
+   ]
+  },
+  "tbsf-124x": {
+   "titel": "S-124 · On cuisine : plan et courses",
+   "art": "lesen",
+   "lektion": 124,
+   "dauer": 15.1,
+   "text": [
+    [
+     "",
+     "L’adulte qui anime a choisi un plat qui convient à tout le monde dans le groupe, en tenant compte aussi des allergies et des règles alimentaires. Vous planifiez, vous calculez et vous répartissez le travail."
+    ]
+   ]
+  },
+  "tbsf-129x": {
+   "titel": "S-129 · L’échelle de la participation",
+   "art": "lesen",
+   "lektion": 129,
+   "dauer": 15.9,
+   "text": [
+    [
+     "",
+     "Le chercheur Roger Hart a décrit la participation comme une échelle. En bas, on a l’impression que les jeunes décident, mais rien ne change. Plus on monte, plus les jeunes ont leur mot à dire dans les décisions."
+    ]
+   ]
+  },
+  "tbsf-130a": {
+   "titel": "S-130 · Ma demande – La demande d’Aylin",
+   "art": "lesen",
+   "lektion": 130,
+   "dauer": 31.7,
+   "text": [
+    [
+     "",
+     "La demande d’Aylin"
+    ],
+    [
+     "",
+     "Depuis des semaines, Aylin est agacée : au deuxième étage de son lycée, il n’y a qu’un distributeur de boissons, et l’eau y est payante. D’abord, elle râle avec son amie. Puis elle écrit ce qu’elle veut exactement : une fontaine à eau au deuxième étage. Elle demande à sa déléguée de classe qui en décide et porte la demande au conseil de classe. Deux semaines plus tard, elle arrive sur la table du Comité des élèves."
+    ]
+   ]
+  },
+  "tbsf-131a": {
+   "titel": "S-131 · Quand quelque chose manque – Tiago",
+   "art": "lesen",
+   "lektion": 131,
+   "dauer": 31.2,
+   "text": [
+    [
+     "",
+     "Tiago"
+    ],
+    [
+     "",
+     "Cet été, l’avô de Tiago est mort, son grand-père au Portugal. Tiago (15 ans) n’a pas pu aller à l’enterrement, parce que l’école avait déjà repris. Dans la classe, presque personne ne le sait. Tiago va à l’entraînement, fait des blagues, révise pour le devoir de maths. Dans le bus, il écoute les anciens messages vocaux de son avô – toujours les mêmes. Parfois, il rit à l’entraînement et se sent mal ensuite."
+    ]
+   ]
+  },
+  "tbsf-133x": {
+   "titel": "S-133 · Être seul, se sentir seul",
+   "art": "lesen",
+   "lektion": 133,
+   "dauer": 22.5,
+   "text": [
+    [
+     "",
+     "Le sentiment de solitude, c’est l’impression que manque la proximité qu’on souhaite. On peut se sentir seul au milieu de la classe – et être très bien seul au bord d’un lac. Ce sentiment est un signal, comme la faim : il dit que nous avons besoin des autres. Ce n’est pas une tare, et presque tout le monde le connaît."
+    ]
+   ]
+  },
+  "tbsf-134x": {
+   "titel": "S-134 · Parler, ça aide",
+   "art": "lesen",
+   "lektion": 134,
+   "dauer": 15.7,
+   "text": [
+    [
+     "",
+     "Parfois, les sentiments deviennent si lourds que des personnes pensent à se faire du mal ou à ne plus vouloir vivre. En parler est difficile. Mais se taire ne protège pas – parler et chercher de l’aide, si."
+    ]
+   ]
+  },
+  "tbsf-136a": {
+   "titel": "S-136 · Quatre histoires pour rebondir – Rafael, 16 ans",
+   "art": "lesen",
+   "lektion": 136,
+   "dauer": 45.1,
+   "text": [
+    [
+     "",
+     "Rafael, 16 ans"
+    ],
+    [
+     "",
+     "Rafael avait douze ans quand il est arrivé du Brésil à Esch, avec sa mère et sa petite sœur. En classe, il comprenait à peine ce qui se disait ; à la récréation, il restait souvent seul. Sa mère travaillait en horaires décalés, alors c’est lui qui allait chercher sa sœur l’après-midi et lui préparait à manger. Un jour, l’entraîneur du club de futsal lui a demandé s’il voulait aider à l’entraînement des enfants. Là, Rafael s’est aperçu qu’il savait bien expliquer – avec les mains, les pieds et ses premiers mots d’allemand. Aujourd’hui, il dit : « Ma sœur avait besoin de moi. C’est ce qui me faisait me lever chaque matin. »"
+    ]
+   ]
+  },
+  "tbsf-136b": {
+   "titel": "S-136 · Quatre histoires pour rebondir – Zoé, 15 ans",
+   "art": "lesen",
+   "lektion": 136,
+   "dauer": 48.2,
+   "text": [
+    [
+     "",
+     "Zoé, 15 ans"
+    ],
+    [
+     "",
+     "Depuis la séparation de ses parents, Zoé vit une semaine chez sa mère à Ettelbruck, une semaine chez son père en ville. Il manque toujours quelque chose : le chargeur, le cahier de français, les chaussures de sport. Ses notes ont tellement baissé qu’elle a dû redoubler. À la maison, elle ne voulait peser sur personne. C’est sa grand-mère qui l’a remarqué la première, en cuisinant avec elle chaque mercredi, et qui l’a encouragée à prendre rendez-vous au SePAS. Là, Zoé a établi un plan : des moments de travail fixes chez chacun de ses parents et une liste pour son sac. Aujourd’hui, elle dit : « Redoubler, ce n’était pas une chute. C’était un nouveau départ – avec un plan. »"
+    ]
+   ]
+  },
+  "tbsf-136c": {
+   "titel": "S-136 · Quatre histoires pour rebondir – Mathis, 17 ans",
+   "art": "lesen",
+   "lektion": 136,
+   "dauer": 46.5,
+   "text": [
+    [
+     "",
+     "Mathis, 17 ans"
+    ],
+    [
+     "",
+     "Mathis jouait au handball depuis l’âge de sept ans, et ses amis, c’était son équipe. À quinze ans, il s’est rompu les ligaments croisés à l’entraînement. Huit mois sans sport, trois semaines de béquilles, et les autres partaient en tournoi sans lui. Il s’est replié sur lui-même et était souvent irritable. Son grand frère l’emmenait quand même à chaque match à domicile. La kinésithérapeute lui fixait de petits objectifs, et Mathis tenait une liste de tous ses progrès. Un jour, l’entraîneuse lui a demandé s’il voulait tenir les statistiques pendant les matchs. Aujourd’hui, il dit : « J’ai compris que je fais partie de l’équipe même sans ballon. »"
+    ]
+   ]
+  },
+  "tbsf-136d": {
+   "titel": "S-136 · Quatre histoires pour rebondir – Nora, 15 ans",
+   "art": "lesen",
+   "lektion": 136,
+   "dauer": 47.6,
+   "text": [
+    [
+     "",
+     "Nora, 15 ans"
+    ],
+    [
+     "",
+     "La mère de Nora est souvent malade depuis deux ans. Les mauvais jours, elle reste au lit, et Nora prépare le petit-déjeuner de son petit frère et l’emmène à l’école. Elle n’en a parlé à personne – par honte et par peur que tout change. En classe, elle était souvent fatiguée. Un jour, après le cours, sa titulaire de classe lui a demandé : « Et toi, comment vas-tu, en vrai ? » Pour la première fois, Nora a dit la vérité. Depuis, sa tante prend son frère le week-end, et Nora va le vendredi à la maison des jeunes, où elle peut simplement avoir quinze ans. Elle écrit des paroles de chansons dans un carnet. Aujourd’hui, elle dit : « Le plus dur, c’était la première phrase. »"
+    ]
+   ]
+  },
+  "tbsf-138x": {
+   "titel": "S-138 · La première phrase",
+   "art": "lesen",
+   "lektion": 138,
+   "dauer": 13.7,
+   "text": [
+    [
+     "",
+     "Presque tout le monde connaît ça : on ne va pas bien, et pourtant on n’en parle à personne. Ce n’est que rarement parce qu’il n’y a personne. Souvent, c’est une pensée qui barre le chemin."
+    ]
+   ]
+  },
+  "tbsf-144a": {
+   "titel": "S-144 · Atelier IA – Dans le chat de classe",
+   "art": "lesen",
+   "lektion": 144,
+   "dauer": 28.9,
+   "text": [
+    [
+     "",
+     "Dans le chat de classe"
+    ],
+    [
+     "",
+     "Dimanche soir, 21 heures : une vidéo apparaît dans le chat de classe. On y voit Elias insulter soi-disant la prof de français – la voix et le visage ont l’air vrais. Au bout d’une heure, vingt personnes l’ont vue, certaines ont envoyé des emojis qui rient. Elias écrit : « Ce n’est pas moi. Je n’ai jamais dit ça. » Lundi, il doit aller au lycée."
+    ]
+   ]
+  },
+  "tbsf-145a": {
+   "titel": "S-145 · Le feu tricolore des relations – Lena et Mathis",
+   "art": "lesen",
+   "lektion": 145,
+   "dauer": 37.6,
+   "text": [
+    [
+     "",
+     "Lena et Mathis"
+    ],
+    [
+     "",
+     "Lena et Mathis sont ensemble depuis quatre mois. Au début, tout était facile. Depuis, Mathis veut toujours savoir où est Lena ; il lui a montré comment partager sa position avec lui. Quand elle ne répond pas tout de suite, dix messages arrivent d’affilée. À l’anniversaire de sa meilleure amie, Lena n’est pas allée, parce que Mathis boudait. Hier, il a dit : « Si tu n’as rien à cacher, donne-moi ton mot de passe. » À ses amies, Lena explique : « Il est juste jaloux. Ça montre bien qu’il m’aime. »"
+    ]
+   ]
+  },
+  "tbsf-147x": {
+   "titel": "S-147 · Oui, c’est oui",
+   "art": "lesen",
+   "lektion": 147,
+   "dauer": 13.5,
+   "text": [
+    [
+     "",
+     "Il y a consentement quand tout le monde veut ce qui se passe. Cela vaut pour les câlins, les baisers et les caresses comme pour les photos et les messages. Seul un oui est un oui."
+    ]
+   ]
+  },
+  "tbsf-148x": {
+   "titel": "S-148 · Bien s’informer",
+   "art": "lesen",
+   "lektion": 148,
+   "dauer": 14.8,
+   "text": [
+    [
+     "",
+     "Sur l’amour, le corps et le sexe circulent beaucoup de demi-vérités – entre amis, dans des vidéos et dans le porno. Ici, tu vérifies ce qui est vrai et tu apprends où trouver des réponses fiables."
+    ]
+   ]
+  },
+  "tbsf-151x": {
+   "titel": "S-151 · Des phrases pour la poche",
+   "art": "lesen",
+   "lektion": 151,
+   "dauer": 19.5,
+   "text": [
+    [
+     "",
+     "Pendant un an, tu as rassemblé des phrases dans ton carnet de skills, sous « Phrases qui portent ». Ce sont des phrases que tu peux te dire dans les moments difficiles. Place à la finition : quelles phrases tiennent vraiment ? Et quelles sont les trois que tu emportes quand le carnet reste à la maison ?"
+    ]
+   ]
+  },
+  "tbsf-153x": {
+   "titel": "S-153 · Bien repartir : mon feu tricolore",
+   "art": "lesen",
+   "lektion": 153,
+   "dauer": 16.6,
+   "text": [
+    [
+     "",
+     "Ton plan feu tricolore de l’année 1 était fait pour les moments où la tension monte. Après un changement, ça bascule rarement en un jour – le plus souvent, ça glisse sur des semaines. Avec ce plan, tu le remarques tôt."
+    ]
+   ]
+  }
+ }
+}

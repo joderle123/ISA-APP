@@ -1,0 +1,586 @@
+{
+ "modul": "vs3",
+ "titel": {
+  "de": "Natur, Medien und große Fragen",
+  "fr": "Nature, médias et grandes questions"
+ },
+ "sprache": "de",
+ "spuren": {
+  "vs3-01l": {
+   "titel": "Tiere fühlen",
+   "art": "lesen",
+   "lektion": 1,
+   "dauer": 88.4,
+   "text": [
+    [
+     "",
+     "Tiere fühlen"
+    ],
+    [
+     "",
+     "Tiere können Schmerz, Angst und Freude empfinden. Darum gibt es in vielen Ländern Gesetze zum Tierschutz. Im luxemburgischen Tierschutzgesetz von 2018 steht: Tiere sind Lebewesen mit Gefühlen, und ihre Würde muss geschützt werden. Niemand darf ein Tier ohne vernünftigen Grund quälen, verletzen oder töten."
+    ],
+    [
+     "",
+     "Haustiere."
+    ],
+    [
+     "",
+     "Ein Haustier ist kein Spielzeug. Es braucht jeden Tag Futter, Wasser, Bewegung und Zuwendung, oft viele Jahre lang. Wer ein Tier aussetzt, macht sich strafbar. Vor dem Kauf sollte man sich gut überlegen: Habe ich genug Zeit, Platz und Geld?"
+    ],
+    [
+     "",
+     "Nutztiere."
+    ],
+    [
+     "",
+     "Viele Tiere leben, damit wir Fleisch, Milch oder Eier bekommen. Wie gut es ihnen geht, ist sehr unterschiedlich. Auf Eiern steht eine Zahl: 0 heißt Bio, 1 Freilandhaltung, 2 Bodenhaltung, 3 Käfighaltung. Manche Menschen essen weniger Fleisch oder gar keins, weil sie Tiere schützen wollen."
+    ],
+    [
+     "",
+     "Eine große Frage."
+    ],
+    [
+     "",
+     "Manche sagen: Tiere sollten ähnliche Rechte haben wie Menschen. Andere sagen: Menschen dürfen Tiere nutzen, aber sie müssen sie gut behandeln. Was denkst du?"
+    ]
+   ]
+  },
+  "vs3-01h": {
+   "titel": "Bei den Kühen",
+   "art": "hoeren",
+   "lektion": 1,
+   "dauer": 57.1,
+   "text": [
+    [
+     "Bäuerin",
+     "Unsere Kühe sind von Frühling bis Herbst auf der Weide. Im Winter sind sie im Stall, aber sie können sich frei bewegen."
+    ],
+    [
+     "Chloé",
+     "Haben die Kühe Namen?"
+    ],
+    [
+     "Bäuerin",
+     "Ja, alle sechzig! Das hier ist Bella. Sie ist schon zehn Jahre alt. Kühe sind neugierig und haben Freundinnen in der Herde."
+    ],
+    [
+     "Ben",
+     "Ist es nicht traurig, wenn eine Kuh geschlachtet wird?"
+    ],
+    [
+     "Bäuerin",
+     "Ehrlich gesagt, ja. Das gehört zu unserer Arbeit, aber es fällt mir nicht leicht. Darum ist mir wichtig, dass die Tiere ein gutes Leben haben, solange sie bei uns sind."
+    ],
+    [
+     "Chloé",
+     "Warum ist das Fleisch von Ihrem Hof teurer als im Supermarkt?"
+    ],
+    [
+     "Bäuerin",
+     "Weil mehr Platz, Weide und Zeit mehr kosten. Billiges Fleisch kommt oft von Tieren, die sehr eng leben. Jeder kann selbst entscheiden, was er kauft – aber man sollte wissen, was dahintersteckt."
+    ]
+   ]
+  },
+  "vs3-02l": {
+   "titel": "Wenn das Konto leer ist",
+   "art": "lesen",
+   "lektion": 2,
+   "dauer": 74.2,
+   "text": [
+    [
+     "",
+     "Wenn das Konto leer ist"
+    ],
+    [
+     "",
+     "Die Erde schenkt uns jedes Jahr viel: frisches Wasser, Holz, Fische, Früchte, saubere Luft. Diese Dinge nennt man natürliche Ressourcen. Manche wachsen nach, zum Beispiel Wälder – aber nur, wenn wir nicht zu viel nehmen. Andere, wie Erdöl, wachsen gar nicht nach."
+    ],
+    [
+     "",
+     "Der Erdüberlastungstag."
+    ],
+    [
+     "",
+     "Umweltforscher berechnen jedes Jahr, an welchem Tag die Menschheit alles verbraucht hat, was die Erde in einem Jahr erneuern kann. Das ist der Erdüberlastungstag. In den letzten Jahren lag er weltweit Ende Juli oder Anfang August. Den Rest des Jahres leben wir sozusagen „auf Pump“ – wie mit einem Bankkonto, das im Minus ist."
+    ],
+    [
+     "",
+     "Für einzelne Länder sieht es sehr unterschiedlich aus. Würden alle Menschen so leben wie in Luxemburg, wäre das Konto schon im Februar leer. Ein Grund: Wir verbrauchen viel Energie, fahren viel Auto und kaufen viel. (In Luxemburg tanken auch viele Menschen aus den Nachbarländern – das zählt mit.)"
+    ],
+    [
+     "",
+     "Nachhaltig leben."
+    ],
+    [
+     "",
+     "Nachhaltig heißt: so leben, dass die Menschen nach uns auch noch gut leben können. Das Wort kommt aus der Forstwirtschaft: Man soll nur so viele Bäume fällen, wie wieder nachwachsen."
+    ]
+   ]
+  },
+  "vs3-02h": {
+   "titel": "Opa und der Baum",
+   "art": "hoeren",
+   "lektion": 2,
+   "dauer": 43.6,
+   "text": [
+    [
+     "Mia",
+     "Opa, warum pflanzt du eine Eiche? Bis die groß ist, dauert es doch hundert Jahre!"
+    ],
+    [
+     "Opa",
+     "Genau deshalb. Ich werde sie nicht groß sehen. Aber deine Kinder vielleicht. Und deren Kinder."
+    ],
+    [
+     "Mia",
+     "Aber was hast du dann davon?"
+    ],
+    [
+     "Opa",
+     "Die alten Buchen hier hat auch jemand gepflanzt, den ich nie gekannt habe. Ich habe mein ganzes Leben von ihrem Schatten profitiert. Jetzt gebe ich etwas zurück."
+    ],
+    [
+     "Mia",
+     "Wie eine Kette, die man weitergibt."
+    ],
+    [
+     "Opa",
+     "Schön gesagt. Viele Dinge, die wir heute tun – wie viel Energie wir verbrauchen, wie viel Müll wir machen – merken erst die Menschen in fünfzig Jahren."
+    ],
+    [
+     "Mia",
+     "Dann pflanze ich nächstes Jahr auch einen Baum. Für meine Enkel."
+    ]
+   ]
+  },
+  "vs3-03l": {
+   "titel": "Die Bühne in der Hosentasche",
+   "art": "lesen",
+   "lektion": 3,
+   "dauer": 77.9,
+   "text": [
+    [
+     "",
+     "Die Bühne in der Hosentasche"
+    ],
+    [
+     "",
+     "In sozialen Netzwerken zeigen Menschen Ausschnitte aus ihrem Leben: Fotos, Videos, Gedanken. Meistens zeigen sie die schönsten Momente – den Sonnenuntergang am Strand, nicht den Regentag im Bett. Viele Bilder sind mit Filtern bearbeitet: Die Haut ist glatter, die Augen größer, der Himmel blauer."
+    ],
+    [
+     "",
+     "Likes."
+    ],
+    [
+     "",
+     "Für ein Like bekommt das Gehirn eine kleine Belohnung, ein gutes Gefühl. Darum wollen viele immer mehr Likes. Wer wenige bekommt, fühlt sich manchmal schlecht oder fragt sich: „Bin ich nicht gut genug?“"
+    ],
+    [
+     "",
+     "Vergleichen."
+    ],
+    [
+     "",
+     "Wer immer die perfekten Bilder der anderen sieht, vergleicht sich schnell. Dabei vergisst man: Das ist nur die Schokoladenseite. Niemand zeigt jeden Tag alles. Studien zeigen, dass viel Vergleichen unzufrieden machen kann."
+    ],
+    [
+     "",
+     "Was hilft."
+    ],
+    [
+     "",
+     "Sich bewusst machen, dass Bilder bearbeitet sind. Accounts folgen, die gute Laune machen und echt sind. Pausen vom Handy machen. Und sich fragen: Warum poste ich das – für mich oder für die Likes?"
+    ]
+   ]
+  },
+  "vs3-03h": {
+   "titel": "Das perfekte Foto",
+   "art": "hoeren",
+   "lektion": 3,
+   "dauer": 60.3,
+   "text": [
+    [
+     "Jana",
+     "Schau mal, ist das Foto gut so? Ich habe einen Filter benutzt und die Pickel weggemacht."
+    ],
+    [
+     "Lea",
+     "Hm. Sieht schön aus. Aber ehrlich – das bist nicht ganz du. Deine Augen sind viel größer und deine Nase ist ganz anders."
+    ],
+    [
+     "Jana",
+     "Alle machen das! Wenn ich ein normales Foto poste, bekommt es keine Likes."
+    ],
+    [
+     "Lea",
+     "Und wie fühlst du dich, wenn das gefilterte Foto hundert Likes bekommt?"
+    ],
+    [
+     "Jana",
+     "Erst gut. Und dann … komisch. Als ob die Leute jemand anderen mögen."
+    ],
+    [
+     "Lea",
+     "Ich habe letzte Woche ein Foto ohne Filter gepostet, nach dem Sport, total verschwitzt. Das hat sogar mehr Kommentare bekommen. Die Leute fanden es lustig und echt."
+    ],
+    [
+     "Jana",
+     "Vielleicht probiere ich das auch mal. Aber nur, wenn du mich nicht auslachst!"
+    ],
+    [
+     "Lea",
+     "Versprochen."
+    ]
+   ]
+  },
+  "vs3-04l": {
+   "titel": "Online ist auch echt",
+   "art": "lesen",
+   "lektion": 4,
+   "dauer": 71.3,
+   "text": [
+    [
+     "",
+     "Online ist auch echt"
+    ],
+    [
+     "",
+     "Im Netz schreiben manche Menschen Dinge, die sie nie jemandem ins Gesicht sagen würden. Warum? Man sieht die andere Person nicht, man sieht nicht, wie sie traurig wird. Man fühlt sich anonym. Und wenn viele gemein sind, macht man leichter mit."
+    ],
+    [
+     "",
+     "Was ist Hassrede."
+    ],
+    [
+     "",
+     "Hassrede sind Beiträge, die Menschen beleidigen, bedrohen oder herabsetzen – oft wegen ihrer Herkunft, Religion, Hautfarbe, Behinderung, ihres Aussehens oder weil sie jemanden vom gleichen Geschlecht lieben. Manche Hassrede ist auch strafbar, zum Beispiel Drohungen oder Aufrufe zu Gewalt."
+    ],
+    [
+     "",
+     "Was kann ich tun."
+    ],
+    [
+     "",
+     "Nicht mitmachen: nicht liken, nicht teilen. Gegenrede: freundlich, aber klar widersprechen, zum Beispiel: „Das ist nicht okay.“ Unterstützen: Der betroffenen Person schreiben: „Ich stehe zu dir.“ Melden: Beiträge auf der Plattform melden. In Luxemburg kann man illegale Inhalte bei der BEE SECURE Stopline melden. Hilfe holen: bei Vertrauenspersonen, der BEE SECURE Helpline (8002 1234) oder bei 116 111."
+    ],
+    [
+     "",
+     "Wichtig: Hinter jedem Profil steckt ein echter Mensch mit Gefühlen."
+    ]
+   ]
+  },
+  "vs3-04h": {
+   "titel": "Die Kommentare unter Yusufs Video",
+   "art": "hoeren",
+   "lektion": 4,
+   "dauer": 51.1,
+   "text": [
+    [
+     "Noah",
+     "Yusuf, ich habe die Kommentare unter deinem Video gesehen. Geht’s dir gut?"
+    ],
+    [
+     "Yusuf",
+     "Nicht so. Jemand schreibt, ich soll in mein Land zurückgehen. Dabei bin ich hier geboren. Und andere haben das geliked."
+    ],
+    [
+     "Amira",
+     "Das ist richtig gemein. Und das mit dem Land ist rassistisch. Das muss man melden."
+    ],
+    [
+     "Noah",
+     "Ich habe drunter geschrieben: „Yusuf tanzt besser als wir alle. Hass ist nicht cool.“ Jetzt haben schon zwanzig Leute meinen Kommentar geliked."
+    ],
+    [
+     "Yusuf",
+     "Echt? Danke, Mann."
+    ],
+    [
+     "Amira",
+     "Wir können zusammen die Kommentare melden. Und wenn es nicht aufhört, sagen wir es Frau Kremer."
+    ],
+    [
+     "Yusuf",
+     "Okay. Ich lösche das Video aber nicht. Ich tanze gern."
+    ],
+    [
+     "Noah",
+     "Genau. Lass dir das nicht wegnehmen."
+    ]
+   ]
+  },
+  "vs3-05l": {
+   "titel": "Am Anfang …",
+   "art": "lesen",
+   "lektion": 5,
+   "dauer": 88.5,
+   "text": [
+    [
+     "",
+     "Am Anfang …"
+    ],
+    [
+     "",
+     "China: Pangu und das Ei. Am Anfang war alles ein dunkles Durcheinander, wie in einem riesigen Ei. Darin schlief der Riese Pangu. Als er erwachte, zerbrach er das Ei. Das Leichte stieg nach oben und wurde der Himmel, das Schwere sank nach unten und wurde die Erde. Pangu stemmte sie 18 000 Jahre lang auseinander. Als er starb, wurde sein Atem zum Wind, seine Augen zu Sonne und Mond, sein Körper zu Bergen und Flüssen."
+    ],
+    [
+     "",
+     "Nordeuropa: Feuer und Eis. Ganz am Anfang gab es nur eine riesige Leere. Im Norden war eisige Kälte, im Süden loderndes Feuer. Wo sich Eis und Feuer trafen, schmolz das Eis, und aus den Tropfen entstand der Riese Ymir. Später formten die Götter aus seinem Körper die Welt: aus seinem Fleisch die Erde, aus seinem Blut das Meer, aus seinem Schädel den Himmel."
+    ],
+    [
+     "",
+     "Bibel: Die Schöpfung in sieben Tagen. Im ersten Buch der Bibel, das für Juden und Christen heilig ist, erschafft Gott die Welt durch sein Wort. Am Anfang ist die Erde wüst und leer, und es ist dunkel. „Es werde Licht“, sagt er, und es wird Licht. An sechs Tagen erschafft er Himmel und Erde, Meere, Pflanzen, Sonne, Mond und Sterne, Tiere und zuletzt den Menschen. Am siebten Tag ruht Gott. Er sieht alles an, „und siehe, es war sehr gut“."
+    ]
+   ]
+  },
+  "vs3-05h": {
+   "titel": "Stimmt das denn?",
+   "art": "hoeren",
+   "lektion": 5,
+   "dauer": 58.1,
+   "text": [
+    [
+     "Finn",
+     "Ein Riese, aus dessen Blut das Meer wird? Das ist doch Quatsch. Wir wissen doch, dass es den Urknall gab."
+    ],
+    [
+     "Bibliothekarin",
+     "Die Menschen, die diese Geschichten erzählt haben, waren nicht dumm. Sie wollten vielleicht gar nicht genau erklären, wie die Welt entstanden ist – sondern etwas anderes sagen."
+    ],
+    [
+     "Amira",
+     "Was denn?"
+    ],
+    [
+     "Bibliothekarin",
+     "Zum Beispiel, dass die Welt geordnet ist und dass der Mensch einen Platz darin hat. Oder in der Bibel: dass die Welt gut ist, und dass es einen Ruhetag braucht."
+    ],
+    [
+     "Finn",
+     "Also eher wie ein Bild, nicht wie ein Bericht?"
+    ],
+    [
+     "Bibliothekarin",
+     "Genau. Mythen antworten oft auf die Frage „Warum?“ oder „Was bedeutet das?“. Die Wissenschaft antwortet eher auf die Frage „Wie?“."
+    ],
+    [
+     "Amira",
+     "Dann können beide wichtig sein."
+    ],
+    [
+     "Bibliothekarin",
+     "Das sehen viele Menschen so. Manche sehen es auch anders. Darüber kann man gut nachdenken."
+    ]
+   ]
+  },
+  "vs3-06l": {
+   "titel": "Zwei Arten zu erklären",
+   "art": "lesen",
+   "lektion": 6,
+   "dauer": 78.7,
+   "text": [
+    [
+     "",
+     "Zwei Arten zu erklären"
+    ],
+    [
+     "",
+     "Vor langer Zeit glaubten die Menschen im Norden Europas: Wenn es donnert, schlägt der Gott Thor mit seinem Hammer. Die alten Griechen dachten, der Göttervater Zeus schleudere Blitze. So erklärten sie sich, was sie sahen und was ihnen Angst machte."
+    ],
+    [
+     "",
+     "Die Wissenschaft."
+    ],
+    [
+     "",
+     "Heute weiß man: In Gewitterwolken reiben Eiskristalle und Wassertropfen aneinander. Dadurch lädt sich die Wolke elektrisch auf. Ein Blitz ist eine riesige elektrische Entladung. Der Donner ist der Knall, weil die Luft um den Blitz plötzlich sehr heiß wird und sich ausdehnt."
+    ],
+    [
+     "",
+     "Die Wissenschaft geht so vor: beobachten, eine Vermutung aufstellen, überprüfen (zum Beispiel mit Versuchen), und wenn nötig die Erklärung ändern. Diese Art zu denken nennt man Vernunft oder rationales Denken."
+    ],
+    [
+     "",
+     "Kann man alles erklären."
+    ],
+    [
+     "",
+     "Vieles kann die Wissenschaft heute erklären. Andere Fragen beantwortet sie nicht: Was ist gut und böse? Was ist der Sinn meines Lebens? Warum gibt es überhaupt etwas und nicht nichts? Darüber denken Philosophie und Religionen nach – und jeder Mensch für sich."
+    ]
+   ]
+  },
+  "vs3-06h": {
+   "titel": "Der Glücksstift",
+   "art": "hoeren",
+   "lektion": 6,
+   "dauer": 49.1,
+   "text": [
+    [
+     "Ben",
+     "Hast du meinen grünen Stift gesehen? Ohne den Glücksstift schreibe ich keine gute Note!"
+    ],
+    [
+     "Nele",
+     "Ben, du glaubst doch nicht wirklich, dass ein Stift Mathe kann?"
+    ],
+    [
+     "Ben",
+     "Na ja … Letztes Mal hatte ich ihn und habe eine gute Note geschrieben."
+    ],
+    [
+     "Nele",
+     "Und hast du vorher gelernt?"
+    ],
+    [
+     "Ben",
+     "Ja, drei Tage lang."
+    ],
+    [
+     "Nele",
+     "Siehst du. Vielleicht war es das Lernen, nicht der Stift. Das müsste man überprüfen: einmal mit Stift ohne Lernen, einmal ohne Stift mit Lernen."
+    ],
+    [
+     "Ben",
+     "Haha, das Experiment mache ich lieber nicht. Aber ehrlich: Der Stift beruhigt mich. Dann bin ich weniger nervös."
+    ],
+    [
+     "Nele",
+     "Okay, das verstehe ich. Dann hilft er dir vielleicht doch – nur anders, als du dachtest."
+    ]
+   ]
+  },
+  "vs3-07l": {
+   "titel": "Viele Wege",
+   "art": "lesen",
+   "lektion": 7,
+   "dauer": 99.7,
+   "text": [
+    [
+     "",
+     "Viele Wege"
+    ],
+    [
+     "",
+     "Auf der Welt gibt es sehr viele Religionen. Trotz aller Unterschiede haben sie oft ähnliche Merkmale: einen Glauben an Gott, an Götter oder an eine höhere Wirklichkeit; heilige Schriften; Rituale wie Beten, Feste oder Pilgern; heilige Orte wie Kirche, Moschee, Synagoge oder Tempel; eine Gemeinschaft; und Regeln für ein gutes Leben."
+    ],
+    [
+     "",
+     "Die großen Weltreligionen."
+    ],
+    [
+     "",
+     "Christentum (über 2 Milliarden Menschen): Glaube an Gott und an Jesus Christus; Schrift: die Bibel; Symbol: das Kreuz. Islam (fast 2 Milliarden): Glaube an Allah, den einen Gott, und an den Propheten Mohammed; Schrift: der Koran; Symbol oft: Halbmond und Stern. Hinduismus (über 1 Milliarde): viele Götter, die oft als Formen des einen Göttlichen gesehen werden; Schriften: z. B. die Veden; Symbol: Om. Buddhismus (mehrere hundert Millionen): Lehre des Buddha, Weg zur Befreiung vom Leid; Symbol: Rad der Lehre. Judentum (etwa 15 Millionen): Glaube an einen Gott; Schrift: die Tora; Symbol: Davidstern."
+    ],
+    [
+     "",
+     "Nicht glauben."
+    ],
+    [
+     "",
+     "Viele Menschen gehören keiner Religion an. Manche glauben nicht an einen Gott (Atheisten). Andere sagen: Das kann man nicht wissen (Agnostiker). Auch sie haben Werte und fragen nach dem Sinn. In Luxemburg gilt Religionsfreiheit: Jeder darf glauben – oder nicht glauben."
+    ]
+   ]
+  },
+  "vs3-07h": {
+   "titel": "Woran glaubst du?",
+   "art": "hoeren",
+   "lektion": 7,
+   "dauer": 42.9,
+   "text": [
+    [
+     "Sarah",
+     "Ich bin Christin. Am Sonntag gehe ich manchmal in die Kirche, nicht immer. Am wichtigsten ist mir das Gebet am Abend. Da sage ich Danke für den Tag. Das beruhigt mich."
+    ],
+    [
+     "Karim",
+     "Ich bin Muslim. Ich bete fünfmal am Tag, wenn es geht, auch kurz in der Arbeitspause. Im Ramadan faste ich. Mein Glaube gibt mir Halt und erinnert mich daran, anderen zu helfen."
+    ],
+    [
+     "Lukas",
+     "Ich glaube nicht an Gott. Trotzdem stelle ich mir die großen Fragen: Was ist ein gutes Leben? Für mich sind Freundschaft, Ehrlichkeit und Natur wichtig. Ich brauche dafür keine Religion – aber ich respektiere Menschen, die glauben."
+    ]
+   ]
+  },
+  "vs3-08l": {
+   "titel": "Was Religion bedeuten kann",
+   "art": "lesen",
+   "lektion": 8,
+   "dauer": 80.8,
+   "text": [
+    [
+     "",
+     "Was Religion bedeuten kann"
+    ],
+    [
+     "",
+     "Warum glauben Menschen? Darauf gibt es viele Antworten. Für viele Gläubige ist ihr Glaube vor allem eine Beziehung zu Gott. Daneben kann Religion im Leben ganz verschiedene Rollen spielen."
+    ],
+    [
+     "",
+     "Halt und Trost."
+    ],
+    [
+     "",
+     "In schweren Zeiten, zum Beispiel bei Krankheit oder wenn jemand stirbt, finden viele Menschen im Gebet oder im Glauben Trost und Hoffnung."
+    ],
+    [
+     "",
+     "Gemeinschaft."
+    ],
+    [
+     "",
+     "In einer Gemeinde trifft man sich, feiert, hilft sich gegenseitig. Viele Hilfsorganisationen wurden von religiösen Gemeinschaften gegründet."
+    ],
+    [
+     "",
+     "Orientierung und Rituale."
+    ],
+    [
+     "",
+     "Religionen geben Regeln für das Zusammenleben, zum Beispiel: andere so behandeln, wie man selbst behandelt werden will. Diese „Goldene Regel“ gibt es in fast allen Religionen. Rituale begleiten wichtige Lebensstationen: die Taufe, die Bar Mizwa, die Hochzeit, die Beerdigung."
+    ],
+    [
+     "",
+     "Auch Streit."
+    ],
+    [
+     "",
+     "Leider wurde und wird Religion auch benutzt, um Gewalt oder Ausgrenzung zu rechtfertigen. Die meisten Gläubigen lehnen das ab. Darum ist es wichtig, respektvoll über Religion zu sprechen – und nachzufragen, statt zu urteilen."
+    ]
+   ]
+  },
+  "vs3-08h": {
+   "titel": "Was mir Kraft gegeben hat",
+   "art": "hoeren",
+   "lektion": 8,
+   "dauer": 47.6,
+   "text": [
+    [
+     "Nele",
+     "Herr Thill, Sie haben so viel erlebt. Was hat Ihnen in schweren Zeiten geholfen?"
+    ],
+    [
+     "Herr Thill",
+     "Als meine Frau gestorben ist, war das die schwerste Zeit. Mir hat mein Glaube geholfen. Ich bin jeden Abend in die kleine Kapelle gegangen und habe eine Kerze angezündet."
+    ],
+    [
+     "Nele",
+     "Hat das die Trauer weggemacht?"
+    ],
+    [
+     "Herr Thill",
+     "Nein, die Trauer bleibt. Aber ich hatte einen Ort, wo ich mit ihr sein konnte. Und die Leute aus der Gemeinde haben mich nicht allein gelassen. Sie haben mir Suppe gebracht und mit mir geredet."
+    ],
+    [
+     "Nele",
+     "Meine Nachbarin glaubt nicht an Gott. Als ihr Hund gestorben ist, hat sie im Garten einen Baum gepflanzt."
+    ],
+    [
+     "Herr Thill",
+     "Das ist auch ein Ritual. Ob mit oder ohne Gott – Menschen brauchen Wege, um Abschied zu nehmen und weiterzuleben."
+    ]
+   ]
+  }
+ }
+}

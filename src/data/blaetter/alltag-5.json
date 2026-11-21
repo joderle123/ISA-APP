@@ -914,7 +914,7 @@
           "art": "info",
           "symbol": "tipp",
           "titel": "Chaque page est un choix",
-          "text": "En ligne, tu ne montres qu’un extrait de toi – et tous les autres aussi. Dans le fil, tu vois souvent les meilleurs moments, pas la journée entière. L’effet du téléphone est différent pour chacun. Si quelque chose te tire vers le bas, tu peux changer les comptes que tu suis – pas seulement le temps que tu passes à défiler."
+          "text": "En ligne, tu ne montres qu’un extrait de toi – et tous les autres aussi. Dans le fil, tu vois souvent les meilleurs moments, pas la journée entière. L’effet du téléphone est différent pour chacun. Quelque chose te tire vers le bas ? Tu peux changer les comptes que tu suis – pas seulement ton temps d’écran."
         },
         {
           "art": "info",
@@ -1249,12 +1249,12 @@
       "bausteine": [
         {
           "art": "text",
-          "text": "Se débrouiller seul·e ne veut pas dire tout faire seul·e. Cela veut dire : savoir ce que tu sais déjà faire, ce que tu veux apprendre ensuite – et qui tu peux demander. Peut-être sais-tu déjà bien plus que tu ne le remarques. Il n’y a ni bonne ni mauvaise réponse, et personne ne sait tout faire à 14 ans."
+          "text": "Se débrouiller seul·e ne veut pas dire tout faire seul·e. Cela veut dire : savoir ce que tu sais déjà faire. Savoir ce que tu veux apprendre ensuite. Et savoir à qui demander. Peut-être sais-tu déjà bien plus que tu ne le remarques. Il n’y a ni bonne ni mauvaise réponse, et personne ne sait tout faire à 14 ans."
         },
         {
           "art": "aufgabe",
           "text": "Où en es-tu aujourd’hui ? Une croix par curseur : à gauche, tu as encore besoin d’aide ; à droite, tu le fais seul·e.",
-          "hinweis": "Exemple : tu trouves seul·e le chemin du sport, mais pour les horaires de train tu demandes encore – ta croix « Trajets » est plutôt à droite. « Démarches » : téléphoner au médecin, remplir un formulaire.",
+          "hinweis": "Exemple : tu trouves seul·e le chemin du sport. Pour les horaires de train, tu demandes encore. Ta croix « Trajets » est donc plutôt à droite. « Démarches » : téléphoner au médecin, remplir un formulaire.",
           "symbole": [
             "ankreuzen"
           ]
@@ -1297,7 +1297,7 @@
         {
           "art": "aufgabe",
           "text": "Fêter ce qui marche : regarde les curseurs où ta croix est à droite. Tu l’as appris – même si cela te paraît normal.",
-          "hinweis": "Exemple : j’ai pris le bus seul·e pour aller chez le dentiste – ça m’a aidé de faire le trajet une fois avant avec ma sœur.",
+          "hinweis": "Exemple : j’ai pris le bus seul·e pour aller chez le dentiste. Ça m’a aidé de faire le trajet une fois avant, avec ma sœur.",
           "symbole": [
             "schreiben",
             "nachdenken"

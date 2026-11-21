@@ -722,7 +722,7 @@
           "art": "geschichte",
           "titel": "Das Handy",
           "bild": "figur:jana:wuetend",
-          "text": "In der Pause nimmt Mathis Aylin das Handy aus der Hand, liest laut eine Nachricht vor und hält es hoch, als sie danach greift. Ein paar Leute lachen. Aylins Gesicht wird heiß, ihre Hände zittern, ihre Zahl liegt bei 80. Am liebsten würde sie ihm das Handy aus der Hand reißen und zuschlagen."
+          "text": "In der Pause nimmt Mathis Aylin das Handy aus der Hand. Er liest laut eine Nachricht vor. Als sie danach greift, hält er es hoch. Ein paar Leute lachen. Aylins Gesicht wird heiß, ihre Hände zittern, ihre Zahl liegt bei 80. Am liebsten würde sie ihm das Handy aus der Hand reißen und zuschlagen."
         },
         {
           "art": "aufgabe",
@@ -890,7 +890,7 @@
           "art": "geschichte",
           "titel": "Le téléphone",
           "bild": "figur:jana:wuetend",
-          "text": "À la récré, Mathis prend le téléphone des mains d’Aylin, lit un message à voix haute et le tient en l’air quand elle essaie de le reprendre. Quelques personnes rient. Le visage d’Aylin devient brûlant, ses mains tremblent, son chiffre est à 80. Elle aurait envie de lui arracher le téléphone et de frapper."
+          "text": "À la récré, Mathis prend le téléphone des mains d’Aylin. Il lit un message à voix haute. Quand elle essaie de le reprendre, il le tient en l’air. Quelques personnes rient. Le visage d’Aylin devient brûlant, ses mains tremblent, son chiffre est à 80. Elle aurait envie de lui arracher le téléphone et de frapper."
         },
         {
           "art": "aufgabe",
@@ -1880,7 +1880,7 @@
           "art": "geschichte",
           "titel": "Der Ruf",
           "bild": "figur:ben:enttaeuscht:verschraenkt",
-          "text": "Rafael (14) ist vor einem Jahr einmal mit einem Mitschüler aneinandergeraten. Seitdem gilt er als „der Schläger“. Als in der Umkleide ein Handy fehlt, schauen alle zuerst ihn an. In der Gruppenarbeit hört niemand zu, wenn er eine Idee hat, und die Neue in der Klasse wird vor ihm gewarnt, bevor sie ihn kennt. Inzwischen sagt Rafael: „Dann bin ich halt so.“"
+          "text": "Rafael (14) ist vor einem Jahr einmal mit einem Mitschüler aneinandergeraten. Seitdem gilt er als „der Schläger“. Als in der Umkleide ein Handy fehlt, schauen alle zuerst ihn an. In der Gruppenarbeit hört niemand zu, wenn er eine Idee hat. Und die Neue in der Klasse wird vor ihm gewarnt, bevor sie ihn kennt. Inzwischen sagt Rafael: „Dann bin ich halt so.“"
         },
         {
           "art": "aufgabe",
@@ -1918,7 +1918,7 @@
           "art": "info",
           "symbol": "wissen",
           "titel": "Wann Begegnung Schubladen öffnet",
-          "text": "Kontakt baut Vorurteile besonders gut ab, wenn vier Dinge zusammenkommen: ein gemeinsames Ziel, Augenhöhe, Zusammenarbeit statt Wettkampf und Rückendeckung durch Erwachsene oder Regeln."
+          "text": "Kontakt baut Vorurteile besonders gut ab, wenn vier Dinge zusammenkommen. Das sind: ein gemeinsames Ziel, Augenhöhe, Zusammenarbeit statt Wettkampf und Rückendeckung durch Erwachsene oder Regeln."
         },
         {
           "art": "aufgabe",
@@ -2046,7 +2046,7 @@
           "art": "geschichte",
           "titel": "La réputation",
           "bild": "figur:ben:enttaeuscht:verschraenkt",
-          "text": "Rafael (14 ans) s’est bagarré une fois avec un camarade il y a un an. Depuis, on l’appelle « la brute ». Quand un téléphone disparaît dans le vestiaire, tout le monde regarde d’abord vers lui. En travail de groupe, personne n’écoute quand il a une idée, et la nouvelle de la classe est mise en garde contre lui avant même de le connaître. Maintenant, Rafael dit : « Alors tant pis, je suis comme ça. »"
+          "text": "Rafael (14 ans) s’est bagarré une fois avec un camarade il y a un an. Depuis, on l’appelle « la brute ». Quand un téléphone disparaît dans le vestiaire, tout le monde regarde d’abord vers lui. En travail de groupe, personne n’écoute quand il a une idée. Et on met la nouvelle de la classe en garde contre lui, avant même qu’elle le connaisse. Maintenant, Rafael dit : « Alors tant pis, je suis comme ça. »"
         },
         {
           "art": "aufgabe",
@@ -2084,7 +2084,7 @@
           "art": "info",
           "symbol": "wissen",
           "titel": "Quand la rencontre ouvre les cases",
-          "text": "Le contact réduit particulièrement bien les préjugés quand quatre choses se rejoignent : un but commun, l’égalité de statut, la coopération plutôt que la compétition et le soutien d’adultes ou de règles."
+          "text": "Le contact réduit particulièrement bien les préjugés quand quatre choses se rejoignent. Ce sont : un but commun, l’égalité de statut, la coopération plutôt que la compétition et le soutien d’adultes ou de règles."
         },
         {
           "art": "aufgabe",
@@ -2265,7 +2265,7 @@
           "art": "info",
           "symbol": "wissen",
           "titel": "Mehrere Sprachen sind ein Können",
-          "text": "Wer zwischen Sprachen wechselt, für andere übersetzt oder in einer Sprache nur ein paar Wörter kennt, kann mehr, als jede Schulnote zeigt."
+          "text": "Vielleicht wechselst du zwischen Sprachen, übersetzt für andere oder kennst in einer Sprache nur ein paar Wörter. Das alles ist mehr, als jede Schulnote zeigt."
         },
         {
           "art": "aufgabe",
@@ -2415,7 +2415,7 @@
           "art": "info",
           "symbol": "wissen",
           "titel": "Plusieurs langues, c’est une compétence",
-          "text": "Passer d’une langue à l’autre, traduire pour d’autres ou ne connaître que quelques mots d’une langue : tout cela demande plus de savoir-faire que n’importe quelle note ne le montre."
+          "text": "Passer d’une langue à l’autre, traduire pour d’autres, connaître quelques mots d’une langue : tout cela compte. Et c’est plus que ce que montre une note."
         },
         {
           "art": "aufgabe",

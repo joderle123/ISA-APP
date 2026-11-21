@@ -1,0 +1,482 @@
+{
+ "modul": "at8",
+ "titel": {
+  "de": "Textil und Gestalten",
+  "fr": "Textile et création"
+ },
+ "sprache": "de",
+ "spuren": {
+  "at8-01l": {
+   "titel": "Fasern und Pflege",
+   "art": "lesen",
+   "lektion": 1,
+   "dauer": 79.5,
+   "text": [
+    [
+     "",
+     "Fasern und Pflege"
+    ],
+    [
+     "",
+     "Naturfasern."
+    ],
+    [
+     "",
+     "Baumwolle kommt von einer Pflanze. Sie ist angenehm auf der Haut und nimmt Schweiß gut auf, knittert aber leicht. Wolle kommt vom Schaf. Sie hält warm. Wird sie zu heiß gewaschen, kann sie einlaufen – dann ist der Pulli plötzlich viel kleiner. Leinen kommt aus der Flachspflanze, Seide von der Seidenraupe."
+    ],
+    [
+     "",
+     "Kunstfasern."
+    ],
+    [
+     "",
+     "Polyester, Polyamid und Elastan werden aus Erdöl hergestellt. Sie trocknen schnell und knittern wenig. Elastan macht Stoff dehnbar, zum Beispiel bei Sporthosen. Beim Waschen können sich winzige Plastikteilchen lösen: Mikroplastik."
+    ],
+    [
+     "",
+     "Pflegesymbole."
+    ],
+    [
+     "",
+     "Auf dem Etikett zeigen Symbole, wie man das Kleidungsstück pflegt. Die Wanne steht für Waschen; die Zahl ist die höchste Temperatur. Eine Hand in der Wanne heißt Handwäsche. Das Dreieck steht für Bleichen, das Quadrat mit Kreis für den Trockner, das Bügeleisen fürs Bügeln. Je mehr Punkte, desto heißer darf es sein. Ein Kreuz heißt: nicht erlaubt."
+    ]
+   ]
+  },
+  "at8-01h": {
+   "titel": "Rosa statt weiß",
+   "art": "hoeren",
+   "lektion": 1,
+   "dauer": 59.1,
+   "text": [
+    [
+     "Lio",
+     "Chloé, schau dir das an. Meine weißen T-Shirts sind alle rosa!"
+    ],
+    [
+     "Chloé",
+     "Oh nein. Hast du etwas Rotes mitgewaschen?"
+    ],
+    [
+     "Lio",
+     "Nur eine rote Socke … Und mein grauer Wollpulli ist jetzt so klein, dass er meinem kleinen Bruder passt."
+    ],
+    [
+     "Chloé",
+     "Bei wie viel Grad hast du gewaschen?"
+    ],
+    [
+     "Lio",
+     "Sechzig. Ich dachte, heiß wird alles sauberer."
+    ],
+    [
+     "Chloé",
+     "Für weiße Baumwolle ist das manchmal okay. Aber schau aufs Etikett vom Pulli: Wanne mit Hand. Das heißt Handwäsche, nur lauwarm. Wolle läuft bei sechzig Grad ein."
+    ],
+    [
+     "Lio",
+     "Und die rosa T-Shirts?"
+    ],
+    [
+     "Chloé",
+     "Nächstes Mal sortierst du: Weißes zu Weißem, Dunkles zu Dunklem, Buntes extra. Die T-Shirts kannst du gleich noch einmal waschen, nur sie allein. Vielleicht werden sie wieder heller."
+    ],
+    [
+     "Lio",
+     "Okay. Sortieren, Etikett lesen, und nicht alles auf sechzig."
+    ]
+   ]
+  },
+  "at8-02l": {
+   "titel": "Einfädeln, Knoten, drei Stiche",
+   "art": "lesen",
+   "lektion": 2,
+   "dauer": 85.2,
+   "text": [
+    [
+     "",
+     "Einfädeln, Knoten, drei Stiche"
+    ],
+    [
+     "",
+     "Du brauchst: Nähnadel, Nähgarn, Stoffrest, Schere, Stecknadeln."
+    ],
+    [
+     "",
+     "Schritt 1: Faden abschneiden: etwa so lang wie dein Arm. Ist er länger, verknotet er sich leicht."
+    ],
+    [
+     "",
+     "Schritt 2: Einfädeln: Schneide das Fadenende schräg ab und schiebe es durch das Nadelöhr. Zieh ein Stück durch."
+    ],
+    [
+     "",
+     "Schritt 3: Knoten: Wickle das lange Ende zwei- bis dreimal um den Zeigefinger, rolle es mit dem Daumen ab und zieh fest."
+    ],
+    [
+     "",
+     "Schritt 4: Vorstich: Nadel von unten nach oben, ein Stück weiter wieder nach unten. Oben sieht man Strich – Lücke – Strich. Gut zum Heften."
+    ],
+    [
+     "",
+     "Schritt 5: Rückstich: Nadel ein Stück zurück einstechen, dann zwei Stücke weiter vorne herauskommen. Die Stiche liegen ohne Lücke nebeneinander. Er hält fest wie eine Maschinennaht."
+    ],
+    [
+     "",
+     "Schritt 6: Überwendlingsstich: Der Faden geht immer über die Kante. So franst der Stoff nicht aus."
+    ],
+    [
+     "",
+     "Zum Schluss machst du auf der Rückseite zwei kleine Stiche übereinander und schneidest den Faden ab. Stecknadeln kommen nach dem Nähen sofort zurück ins Nadelkissen."
+    ]
+   ]
+  },
+  "at8-02h": {
+   "titel": "Der Knoten-Trick",
+   "art": "hoeren",
+   "lektion": 2,
+   "dauer": 50.4,
+   "text": [
+    [
+     "Tom",
+     "Mein Knoten rutscht immer durch den Stoff."
+    ],
+    [
+     "Herr Mensah",
+     "Dann machen wir einen dickeren. Nimm das lange Ende vom Faden. Leg es auf die Spitze deines Zeigefingers."
+    ],
+    [
+     "Herr Mensah",
+     "Jetzt wickelst du den Faden zweimal um den Finger. Nicht zu fest. Hast du?"
+    ],
+    [
+     "Tom",
+     "Ja."
+    ],
+    [
+     "Herr Mensah",
+     "Jetzt kommt der Trick: Leg den Daumen darauf. Und jetzt rollst du mit dem Daumen den Faden nach vorn, zur Fingerspitze hin. Dabei verdreht er sich."
+    ],
+    [
+     "Herr Mensah",
+     "Wenn die Schlaufe von der Fingerspitze rutscht, hältst du sie mit Daumen und Zeigefinger fest und ziehst mit der anderen Hand am Faden."
+    ],
+    [
+     "Tom",
+     "Da! Ein kleiner Knubbel."
+    ],
+    [
+     "Herr Mensah",
+     "Genau. Das ist dein Knoten. Wenn er zu klein ist, machst du einfach noch einen darüber. Probier es noch dreimal, dann sitzt der Trick."
+    ]
+   ]
+  },
+  "at8-03l": {
+   "titel": "Einen Knopf annähen",
+   "art": "lesen",
+   "lektion": 3,
+   "dauer": 84.9,
+   "text": [
+    [
+     "",
+     "Einen Knopf annähen"
+    ],
+    [
+     "",
+     "Du brauchst: Knopf, Nadel und passendes Garn, ein Streichholz oder Zahnstocher, Schere."
+    ],
+    [
+     "",
+     "Schritt 1: Doppelter Faden: Fädle ein und lege den Faden doppelt. Mach am Ende einen Knoten. So hält es besser."
+    ],
+    [
+     "",
+     "Schritt 2: Stelle finden: Wo war der alte Knopf? Oft sieht man noch kleine Löcher. Stich dort von hinten nach vorn."
+    ],
+    [
+     "",
+     "Schritt 3: Abstand lassen: Leg ein Streichholz auf den Knopf. Nähe darüber. So bleibt Platz zwischen Knopf und Stoff."
+    ],
+    [
+     "",
+     "Schritt 4: Annähen: Geh fünf- bis sechsmal durch die Löcher des Knopfes und den Stoff."
+    ],
+    [
+     "",
+     "Schritt 5: Hals wickeln: Nimm das Streichholz weg. Zieh den Knopf etwas hoch und wickle den Faden ein paarmal unter dem Knopf herum. Das ist der Knopfhals."
+    ],
+    [
+     "",
+     "Schritt 6: Vernähen: Stich nach hinten, mach zwei kleine Stiche übereinander und schneide den Faden ab."
+    ],
+    [
+     "",
+     "Der Knopfhals ist wichtig: Ohne ihn sitzt der Knopf zu eng am Stoff, und man bekommt ihn schlecht durch das Knopfloch. Ein kleines Loch oder eine aufgegangene Naht nähst du auf der Innenseite mit kleinen Rückstichen zu."
+    ]
+   ]
+  },
+  "at8-03h": {
+   "titel": "Morgen ist Praktikum",
+   "art": "hoeren",
+   "lektion": 3,
+   "dauer": 63.3,
+   "text": [
+    [
+     "Finn",
+     "Lea, kannst du mir einen Knopf annähen? Morgen fange ich im Hotel an, und am Hemd fehlt der zweite Knopf."
+    ],
+    [
+     "Lea",
+     "Ich mache es nicht für dich. Aber ich zeige es dir. Dann kannst du es nächstes Mal allein."
+    ],
+    [
+     "Finn",
+     "Na gut. Wo ist der Knopf?"
+    ],
+    [
+     "Lea",
+     "Schau mal unten am Hemd, innen. Da ist oft ein Ersatzknopf angenäht."
+    ],
+    [
+     "Finn",
+     "Tatsächlich! Den habe ich noch nie gesehen."
+    ],
+    [
+     "Lea",
+     "Weißes Garn, doppelt, Knoten. Jetzt stichst du von hinten genau da ein, wo die alten Löcher sind."
+    ],
+    [
+     "Finn",
+     "Und jetzt einfach immer durch?"
+    ],
+    [
+     "Lea",
+     "Fast. Leg vorher den Zahnstocher auf den Knopf und näh darüber. Sonst ist der Knopf zu eng."
+    ],
+    [
+     "Finn",
+     "Okay … fünfmal, sechsmal. Jetzt Zahnstocher weg und Faden drumherum wickeln?"
+    ],
+    [
+     "Lea",
+     "Genau, unter dem Knopf. Dann hinten vernähen. Fertig! Und morgen sieht keiner, dass da was fehlte."
+    ]
+   ]
+  },
+  "at8-04l": {
+   "titel": "Teile und Regeln",
+   "art": "lesen",
+   "lektion": 4,
+   "dauer": 69.9,
+   "text": [
+    [
+     "",
+     "Teile und Regeln"
+    ],
+    [
+     "",
+     "Oben auf der Maschine steht die Garnrolle. Der Faden läuft über den Fadengeber, der beim Nähen auf und ab geht, bis zur Nadel. Der Nähfuß drückt den Stoff nach unten, damit er gleichmäßig weitertransportiert wird. Unter der Nadel liegt die Spule mit dem Unterfaden."
+    ],
+    [
+     "",
+     "Mit dem Fußanlasser gibst du Gas: Je fester du drückst, desto schneller näht die Maschine. Mit dem Handrad bewegst du die Nadel langsam von Hand – drehe es immer zu dir hin. Mit dem Stichwahl-Rad wählst du den Stich, zum Beispiel Geradstich oder Zickzack. Die Rückwärtstaste brauchst du am Anfang und Ende einer Naht, damit sie nicht aufgeht."
+    ],
+    [
+     "",
+     "Sicherheitsregeln."
+    ],
+    [
+     "",
+     "Finger weg vom Bereich um die Nadel. Führe den Stoff mit beiden Händen links und rechts vom Nähfuß. Beim Einfädeln: Fuß weg vom Anlasser. Beim Nadelwechsel: Maschine ausschalten. Stecknadeln ziehst du heraus, bevor die Nadel sie erreicht – sonst kann die Nadel brechen. Lange Haare zusammenbinden. Nach der Arbeit: ausschalten und den Stecker ziehen."
+    ]
+   ]
+  },
+  "at8-04h": {
+   "titel": "Nähen ohne Faden",
+   "art": "hoeren",
+   "lektion": 4,
+   "dauer": 62.8,
+   "text": [
+    [
+     "Herr Mensah",
+     "Heute nähen wir ohne Faden. Du bekommst ein Blatt mit Linien. Die Nadel macht kleine Löcher ins Papier. So siehst du genau, ob du auf der Linie bleibst."
+    ],
+    [
+     "Herr Mensah",
+     "Leg das Blatt unter den Nähfuß. Die Nadel steht genau auf dem grünen Startpunkt. Senk den Nähfuß mit dem Hebel ab."
+    ],
+    [
+     "Chloé",
+     "Fuß ist unten."
+    ],
+    [
+     "Herr Mensah",
+     "Deine Hände liegen links und rechts vom Nähfuß. Du schiebst nicht, du führst nur. Die Maschine zieht das Papier selbst."
+    ],
+    [
+     "Herr Mensah",
+     "Jetzt drück ganz leicht auf den Fußanlasser. Langsam … gut so. Schau nicht auf die Nadel, schau auf die Linie vor dem Nähfuß."
+    ],
+    [
+     "Chloé",
+     "Bei der Welle komme ich raus!"
+    ],
+    [
+     "Herr Mensah",
+     "Dann langsamer. Bei Kurven ganz wenig Gas und das Blatt sanft drehen. Bei den Ecken bleibst du stehen, die Nadel bleibt unten im Papier, Nähfuß hoch, Blatt drehen, Nähfuß runter, weiter."
+    ],
+    [
+     "Chloé",
+     "Nadel unten, Fuß hoch, drehen, Fuß runter. Das klappt!"
+    ]
+   ]
+  },
+  "at8-05l": {
+   "titel": "Der Farbkreis",
+   "art": "lesen",
+   "lektion": 5,
+   "dauer": 58.7,
+   "text": [
+    [
+     "",
+     "Der Farbkreis"
+    ],
+    [
+     "",
+     "Im Kunstunterricht arbeitet man oft mit einem einfachen Farbkreis. Er hat drei Grundfarben: Gelb, Rot und Blau. Aus ihnen kann man andere Farben mischen."
+    ],
+    [
+     "",
+     "Mischt man zwei Grundfarben, entsteht eine Mischfarbe: Gelb und Rot ergeben Orange. Rot und Blau ergeben Violett. Blau und Gelb ergeben Grün."
+    ],
+    [
+     "",
+     "Farben, die im Kreis genau gegenüber liegen, heißen Komplementärfarben: Gelb und Violett, Rot und Grün, Blau und Orange. Nebeneinander leuchten sie besonders stark. Darum benutzt man sie für Plakate und Logos."
+    ],
+    [
+     "",
+     "Gelb, Orange und Rot wirken warm. Blau, Grün und Violett wirken eher kalt oder ruhig. Für ein Design wählt man meistens zwei oder drei Farben, die gut zusammenpassen – nicht alle auf einmal."
+    ]
+   ]
+  },
+  "at8-05h": {
+   "titel": "Das Logo für die Tasche",
+   "art": "hoeren",
+   "lektion": 5,
+   "dauer": 56.6,
+   "text": [
+    [
+     "Sami",
+     "Ich will die Tasche ganz bunt machen. Rot, Gelb, Grün, Blau, Lila, alles!"
+    ],
+    [
+     "Lea",
+     "Hm, dann sieht man das Motiv gar nicht mehr. Herr Mensah hat gesagt: zwei oder drei Farben."
+    ],
+    [
+     "Sami",
+     "Okay. Unsere Taschen sind naturfarben, so hellbeige. Was passt dazu?"
+    ],
+    [
+     "Lea",
+     "Ein dunkles Blau sieht man darauf gut. Und dazu ein bisschen Orange – das ist die Komplementärfarbe. Das leuchtet."
+    ],
+    [
+     "Sami",
+     "Und was malen wir? Vielleicht einen Baum? Weil unser Schulgarten so schön ist."
+    ],
+    [
+     "Lea",
+     "Gute Idee. Der Stamm in Blau, ein paar Blätter in Orange. Und darunter der Name von unserer Schule."
+    ],
+    [
+     "Sami",
+     "Ich zeichne drei Entwürfe, dann stimmt die Klasse ab."
+    ],
+    [
+     "Lea",
+     "Perfekt. Und denk dran: Mit Stoffmalfarbe malen, dann bügeln – sonst geht die Farbe in der Wäsche raus."
+    ]
+   ]
+  },
+  "at8-06l": {
+   "titel": "Tasche aus einem T-Shirt – ohne Nähen",
+   "art": "lesen",
+   "lektion": 6,
+   "dauer": 83.6,
+   "text": [
+    [
+     "",
+     "Tasche aus einem T-Shirt – ohne Nähen"
+    ],
+    [
+     "",
+     "Du brauchst: ein altes T-Shirt (sauber), Stoffschere, Lineal und Kreide, eine Schüssel als Schablone."
+    ],
+    [
+     "",
+     "Schritt 1: Vorbereiten: Lege das T-Shirt glatt auf den Tisch."
+    ],
+    [
+     "",
+     "Schritt 2: Ärmel abschneiden: Schneide beide Ärmel entlang der Naht ab. Die Schulterteile, die stehen bleiben, werden die Henkel."
+    ],
+    [
+     "",
+     "Schritt 3: Halsausschnitt: Leg eine Schüssel oben auf den Halsausschnitt, zeichne einen Halbkreis mit Kreide und schneide ihn aus. Das ist die Öffnung."
+    ],
+    [
+     "",
+     "Schritt 4: Fransen: Zeichne unten eine Linie 8 cm über dem Saum. Schneide bis zu dieser Linie Streifen, etwa 2 cm breit – durch beide Stofflagen."
+    ],
+    [
+     "",
+     "Schritt 5: Verknoten: Verknote jeden vorderen Streifen mit dem hinteren Streifen darunter, zweimal. So ist der Boden geschlossen."
+    ],
+    [
+     "",
+     "Schritt 6: Wenden: Dreh die Tasche auf links, dann sind die Knoten innen. Fertig!"
+    ],
+    [
+     "",
+     "Upcycling heißt: Aus etwas Altem wird etwas Neues mit mehr Wert. Das spart Rohstoffe, Wasser und Geld. Und deine Tasche gibt es nur einmal."
+    ]
+   ]
+  },
+  "at8-06h": {
+   "titel": "Unsere Upcycling-Ausstellung",
+   "art": "hoeren",
+   "lektion": 6,
+   "dauer": 58.7,
+   "text": [
+    [
+     "Amira",
+     "Ich habe aus einem T-Shirt von meinem Onkel eine Einkaufstasche gemacht. Das T-Shirt hatte ein Loch am Rücken. Das Loch ist jetzt weg, weil es genau da war, wo ich den Halsausschnitt geschnitten habe."
+    ],
+    [
+     "Herr Mensah",
+     "Clever! Wie lange hast du gebraucht?"
+    ],
+    [
+     "Amira",
+     "Ungefähr eine Stunde. Am längsten hat das Verknoten gedauert."
+    ],
+    [
+     "Jana",
+     "Ich habe aus einer alten Jeans ein Federmäppchen gemacht. Das Hosenbein war schon wie ein Rohr. Ich habe es abgeschnitten, unten zugenäht und oben einen Reißverschluss eingenäht."
+    ],
+    [
+     "Herr Mensah",
+     "War der Reißverschluss schwer?"
+    ],
+    [
+     "Jana",
+     "Ja, sehr. Ich musste ihn zweimal auftrennen. Aber jetzt ist er gerade. Und die Gesäßtasche der Jeans habe ich vorne draufgenäht – da passt mein Radiergummi hinein."
+    ],
+    [
+     "Herr Mensah",
+     "Zwei schöne Beispiele. Und wisst ihr, was das Beste ist? Dafür musste kein neuer Stoff hergestellt werden."
+    ]
+   ]
+  }
+ }
+}

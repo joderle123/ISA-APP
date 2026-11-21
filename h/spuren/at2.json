@@ -1,0 +1,502 @@
+{
+ "modul": "at2",
+ "titel": {
+  "de": "Küche und Hygiene",
+  "fr": "Cuisine et hygiène"
+ },
+ "sprache": "de",
+ "spuren": {
+  "at2-01l": {
+   "titel": "Die Hygieneregeln der Küche",
+   "art": "lesen",
+   "lektion": 1,
+   "dauer": 75.9,
+   "text": [
+    [
+     "",
+     "Die Hygieneregeln der Küche"
+    ],
+    [
+     "",
+     "Auf Händen, Brettern und Lebensmitteln leben winzige Keime: Bakterien und Viren. Die meisten sind harmlos, manche machen krank – zum Beispiel mit Bauchschmerzen und Durchfall. Darum gelten in jeder Küche strenge Regeln."
+    ],
+    [
+     "",
+     "Ich selbst."
+    ],
+    [
+     "",
+     "Hände waschen mit Seife, mindestens 20 Sekunden: vor dem Kochen, nach dem Toilettengang, nach rohem Fleisch, Eiern oder dem Müll. Lange Haare zusammenbinden, Schmuck ab, saubere Schürze. Kleine Wunden mit Pflaster und Handschuh abdecken. Wer krank ist, kocht nicht für andere."
+    ],
+    [
+     "",
+     "Die Lebensmittel."
+    ],
+    [
+     "",
+     "Rohes Fleisch, Fisch und Eier nie mit Lebensmitteln zusammenbringen, die roh gegessen werden, wie Salat oder Obst: eigenes Brett, eigenes Messer. Gekühlte Lebensmittel bleiben im Kühlschrank, bis man sie braucht."
+    ],
+    [
+     "",
+     "Beim Kochen."
+    ],
+    [
+     "",
+     "Zum Probieren einen sauberen Löffel nehmen – einmal benutzen, dann in die Spüle. Arbeitsflächen zwischendurch abwischen. Lappen und Geschirrtücher regelmäßig wechseln."
+    ]
+   ]
+  },
+  "at2-01h": {
+   "titel": "Die Köchin erklärt",
+   "art": "hoeren",
+   "lektion": 1,
+   "dauer": 54.0,
+   "text": [
+    [
+     "Sami",
+     "Frau Becker, Sie kochen für 400 Leute. Was ist das Wichtigste?"
+    ],
+    [
+     "Frau Becker",
+     "Hygiene. Wenn ich einen Fehler mache, werden nicht eine, sondern vielleicht hundert Personen krank."
+    ],
+    [
+     "Sami",
+     "Was machen Sie konkret?"
+    ],
+    [
+     "Frau Becker",
+     "Wir haben farbige Schneidebretter: rot für rohes Fleisch, grün für Gemüse, blau für Fisch. So kann man sie nicht verwechseln. Und jeden Morgen messen wir die Temperatur im Kühlraum und schreiben sie auf."
+    ],
+    [
+     "Sami",
+     "Und wenn jemand krank ist?"
+    ],
+    [
+     "Frau Becker",
+     "Dann bleibt er zu Hause. Bei Bauchgrippe darf man nicht in der Küche arbeiten. Das ist sogar Pflicht."
+    ],
+    [
+     "Sami",
+     "Was nervt Sie am meisten?"
+    ],
+    [
+     "Frau Becker",
+     "Wenn jemand mit dem Handy in der Hand kocht. Das Handy ist schmutziger als eine Türklinke! Handy in den Spind, Hände waschen, dann kochen."
+    ]
+   ]
+  },
+  "at2-02l": {
+   "titel": "Messen in der Küche",
+   "art": "lesen",
+   "lektion": 2,
+   "dauer": 61.7,
+   "text": [
+    [
+     "",
+     "Messen in der Küche"
+    ],
+    [
+     "",
+     "Wiegen."
+    ],
+    [
+     "",
+     "Feste Zutaten wie Mehl, Zucker oder Butter wiegt man mit der Küchenwaage: in Gramm und Kilogramm. 1 kg sind 1000 g. Tipp: Zuerst die leere Schüssel auf die Waage stellen und auf null stellen (Taste „Tara“). Dann die Zutat hinein."
+    ],
+    [
+     "",
+     "Flüssigkeiten."
+    ],
+    [
+     "",
+     "Milch, Wasser oder Öl misst man mit dem Messbecher: in Millilitern und Litern. 1 l sind 1000 ml. Den Becher auf den Tisch stellen und auf Augenhöhe ablesen."
+    ],
+    [
+     "",
+     "Löffel und Prise."
+    ],
+    [
+     "",
+     "1 Esslöffel (EL) sind etwa 15 ml, 1 Teelöffel (TL) etwa 5 ml. Gemeint ist meist ein gestrichener Löffel: oben glatt. Eine Prise Salz ist so viel, wie man zwischen Daumen und Zeigefinger nehmen kann."
+    ],
+    [
+     "",
+     "Umrechnen."
+    ],
+    [
+     "",
+     "Ein Rezept ist für 4 Personen, ihr seid aber 8? Dann verdoppelt ihr alle Mengen. Für 2 Personen halbiert ihr sie."
+    ]
+   ]
+  },
+  "at2-02h": {
+   "titel": "Der Kuchen, der nicht aufging",
+   "art": "hoeren",
+   "lektion": 2,
+   "dauer": 55.6,
+   "text": [
+    [
+     "Ben",
+     "Schau mal, mein Kuchen. Flach wie eine Pizza und hart wie ein Stein."
+    ],
+    [
+     "Lina",
+     "Zeig mir das Rezept. Hier steht: 1 Päckchen Backpulver. Hast du das reingetan?"
+    ],
+    [
+     "Ben",
+     "Ja, einen Teelöffel. Ich dachte, das reicht."
+    ],
+    [
+     "Lina",
+     "Ein Päckchen sind ungefähr drei Teelöffel. Ohne genug Backpulver geht der Teig nicht auf."
+    ],
+    [
+     "Ben",
+     "Und das Mehl? Ich habe 500 Gramm gewogen."
+    ],
+    [
+     "Lina",
+     "Hast du die Schüssel vorher auf null gestellt?"
+    ],
+    [
+     "Ben",
+     "Äh … nein. Die Schüssel wiegt bestimmt 300 Gramm."
+    ],
+    [
+     "Lina",
+     "Dann hattest du nur 200 Gramm Mehl. Kein Wunder. Beim Backen muss man genau sein. Beim Kochen kann man mehr ausprobieren, beim Backen nicht."
+    ],
+    [
+     "Ben",
+     "Okay. Nächstes Mal: Tara drücken und das Rezept genau lesen."
+    ]
+   ]
+  },
+  "at2-03l": {
+   "titel": "Crêpes",
+   "art": "lesen",
+   "lektion": 3,
+   "dauer": 83.8,
+   "text": [
+    [
+     "",
+     "Crêpes"
+    ],
+    [
+     "",
+     "Du brauchst: 250 g Mehl, 500 ml Milch, 4 Eier, 1 Prise Salz, 2 EL Öl, Schüssel, Schneebesen, Kelle, Pfanne, Pfannenwender."
+    ],
+    [
+     "",
+     "Schritt 1: Vorbereiten: Hände waschen, Haare zusammenbinden, alle Zutaten und Geräte bereitstellen."
+    ],
+    [
+     "",
+     "Schritt 2: Teig rühren: Mehl und Salz in die Schüssel. Eier und die Hälfte der Milch dazu, glatt rühren. Dann Rest der Milch und Öl unterrühren."
+    ],
+    [
+     "",
+     "Schritt 3: Ruhen lassen: Den Teig etwa 30 Minuten stehen lassen. In der Zeit den Tisch decken."
+    ],
+    [
+     "",
+     "Schritt 4: Backen: Pfanne bei mittlerer Hitze erhitzen, wenig Öl hinein. Eine halbe Kelle Teig hineingeben und die Pfanne schwenken."
+    ],
+    [
+     "",
+     "Schritt 5: Wenden: Ist der Rand goldbraun (nach etwa 1 Minute), die Crêpe umdrehen und noch 30 Sekunden backen."
+    ],
+    [
+     "",
+     "Schritt 6: Füllen und servieren: Füllen, falten und warm essen. Nach dem Backen den Herd ausschalten!"
+    ],
+    [
+     "",
+     "Achtung Allergien: In Crêpes sind Ei, Milch und Weizen (Gluten). Fragt vorher, ob jemand etwas davon nicht essen darf."
+    ]
+   ]
+  },
+  "at2-03h": {
+   "titel": "Wer macht was?",
+   "art": "hoeren",
+   "lektion": 3,
+   "dauer": 53.3,
+   "text": [
+    [
+     "Amira",
+     "Okay, wir haben 90 Minuten. Der Teig muss 30 Minuten ruhen. Also zuerst der Teig!"
+    ],
+    [
+     "Noah",
+     "Ich rühre den Teig. Ich lese aber vorher das ganze Rezept einmal."
+    ],
+    [
+     "Lina",
+     "Dann schneide ich in der Ruhezeit Äpfel für die Füllung und mache Apfelmus. Und ich decke den Tisch."
+    ],
+    [
+     "Amira",
+     "Ich backe. Aber Achtung: Tom hat eine Eier-Allergie. Für ihn machen wir einen eigenen Teig ohne Ei, mit sauberer Schüssel und eigenem Schneebesen. Seine Crêpes backen wir zuerst, in der sauberen Pfanne."
+    ],
+    [
+     "Noah",
+     "Gut, dass du dran denkst. Wer spült?"
+    ],
+    [
+     "Lina",
+     "Alle zusammen am Ende. Und wer gerade nichts zu tun hat, spült schon zwischendurch."
+    ],
+    [
+     "Amira",
+     "Super. Dann haben wir am Ende keinen Berg Geschirr. Los geht’s!"
+    ]
+   ]
+  },
+  "at2-04l": {
+   "titel": "So schneidest du sicher",
+   "art": "lesen",
+   "lektion": 4,
+   "dauer": 89.4,
+   "text": [
+    [
+     "",
+     "So schneidest du sicher"
+    ],
+    [
+     "",
+     "Du brauchst: Schneidebrett, feuchtes Tuch, scharfes Gemüsemesser, Gemüse."
+    ],
+    [
+     "",
+     "Schritt 1: Brett festlegen: Lege ein feuchtes Tuch unter das Schneidebrett. So rutscht es nicht weg."
+    ],
+    [
+     "",
+     "Schritt 2: Flache Seite nach unten: Rundes Gemüse zuerst halbieren und mit der flachen Seite auf das Brett legen. So rollt es nicht weg."
+    ],
+    [
+     "",
+     "Schritt 3: Brückengriff: Zum Halbieren halte das Gemüse mit Daumen und Fingern wie eine Brücke. Das Messer geht unter der Brücke durch."
+    ],
+    [
+     "",
+     "Schritt 4: Krallengriff: Für Scheiben die Fingerspitzen nach innen biegen wie eine Kralle. Die Fingerknöchel führen das Messer, der Daumen bleibt dahinter."
+    ],
+    [
+     "",
+     "Schritt 5: Ruhig schneiden: Messer vor und zurück bewegen, nicht hacken. Beim Schneiden hinschauen, nicht reden."
+    ],
+    [
+     "",
+     "Schritt 6: Ablegen und weitergeben: Das Messer flach oben auf das Brett legen, Schneide vom Körper weg. Nie in die Spüle unter Wasser legen. Weitergeben mit dem Griff zuerst."
+    ],
+    [
+     "",
+     "Ein scharfes Messer ist sicherer als ein stumpfes: Es rutscht seltener ab. Fällt ein Messer herunter: zurücktreten, nicht auffangen! Bei einer Schnittwunde: ausspülen, Pflaster, Bescheid sagen."
+    ]
+   ]
+  },
+  "at2-04h": {
+   "titel": "Hör zu und schneide mit",
+   "art": "hoeren",
+   "lektion": 4,
+   "dauer": 65.3,
+   "text": [
+    [
+     "Frau Hoss",
+     "Leg das feuchte Tuch unter das Brett. Drück auf das Brett: Rutscht es? Nein? Gut."
+    ],
+    [
+     "Frau Hoss",
+     "Nimm die Gurke. Wir halbieren sie der Länge nach. Brückengriff: Daumen auf der einen Seite, Finger auf der anderen. Das Messer geht unter der Brücke durch. Langsam."
+    ],
+    [
+     "Frau Hoss",
+     "Leg beide Hälften mit der flachen Seite nach unten. Jetzt der Krallengriff: Fingerspitzen einrollen. Die Knöchel berühren die Seite der Klinge."
+    ],
+    [
+     "Frau Hoss",
+     "Schneide fünf Scheiben. Vor und zurück. Nach jeder Scheibe rutscht die Kralle ein kleines Stück nach hinten."
+    ],
+    [
+     "Frau Hoss",
+     "Stopp. Schau auf deinen Daumen. Ist er hinter den Fingern? Gut."
+    ],
+    [
+     "Frau Hoss",
+     "Noch fünf Scheiben – diesmal etwas schneller, aber nur so schnell, wie es sicher geht."
+    ],
+    [
+     "Frau Hoss",
+     "Leg das Messer flach oben auf das Brett, Schneide weg von dir. Super. Das war dein erstes Messer-Training."
+    ]
+   ]
+  },
+  "at2-05l": {
+   "titel": "Essen verbindet",
+   "art": "lesen",
+   "lektion": 5,
+   "dauer": 74.5,
+   "text": [
+    [
+     "",
+     "Essen verbindet"
+    ],
+    [
+     "",
+     "Den Tisch decken."
+    ],
+    [
+     "",
+     "Der Teller steht in der Mitte vor dem Stuhl. Die Gabel liegt links, das Messer rechts mit der Schneide zum Teller. Der Löffel für die Suppe liegt rechts neben dem Messer, der Dessertlöffel oben über dem Teller. Das Glas steht oben rechts. Die Serviette liegt links neben der Gabel oder auf dem Teller."
+    ],
+    [
+     "",
+     "Andere Länder, andere Sitten."
+    ],
+    [
+     "",
+     "In vielen Ländern isst man mit Messer und Gabel. In China, Japan oder Korea benutzt man oft Stäbchen. In Indien, Äthiopien und vielen arabischen Ländern isst man bei manchen Gerichten mit der rechten Hand oder mit Brot. Keine Art ist „besser“ – jede ist eine Tradition."
+    ],
+    [
+     "",
+     "Rücksicht am Tisch."
+    ],
+    [
+     "",
+     "Manche Menschen essen kein Schweinefleisch, zum Beispiel aus religiösen Gründen. Manche essen vegetarisch oder vegan. Andere haben Allergien. Darum fragt man vor dem Kochen, was alle essen können. Am Tisch wartet man, bis alle etwas haben, redet freundlich und legt das Handy weg."
+    ]
+   ]
+  },
+  "at2-05h": {
+   "titel": "Bei uns isst man so",
+   "art": "hoeren",
+   "lektion": 5,
+   "dauer": 51.7,
+   "text": [
+    [
+     "Mia",
+     "Yusuf, was ist das? Das sieht lecker aus."
+    ],
+    [
+     "Yusuf",
+     "Das ist Linsensuppe, so wie meine Tante sie macht. Mit Kreuzkümmel und Zitrone. Probier mal!"
+    ],
+    [
+     "Mia",
+     "Mmh, die ist gut. Und du isst die Bällchen mit den Fingern?"
+    ],
+    [
+     "Yusuf",
+     "Ja, das sind Falafel. Die isst man oft mit Brot und den Fingern. Aber mit Gabel geht auch."
+    ],
+    [
+     "Mia",
+     "Bei meiner Oma gibt es sonntags Bouneschlupp. Die hab ich heute auch gemacht – ohne Speck, damit alle sie essen können."
+    ],
+    [
+     "Yusuf",
+     "Danke, das ist nett. Ich esse kein Schweinefleisch."
+    ],
+    [
+     "Mia",
+     "Ich weiß. Lina isst vegetarisch, für sie ist es auch gut."
+    ],
+    [
+     "Yusuf",
+     "Weißt du was? Das ist das Beste am Kochen: Jeder bringt etwas mit, und am Ende sitzen alle am gleichen Tisch."
+    ]
+   ]
+  },
+  "at2-06l": {
+   "titel": "Spülen wie die Profis",
+   "art": "lesen",
+   "lektion": 6,
+   "dauer": 64.3,
+   "text": [
+    [
+     "",
+     "Spülen wie die Profis"
+    ],
+    [
+     "",
+     "Du brauchst: heißes Wasser mit wenig Spülmittel, Spülbürste oder Schwamm, sauberes Geschirrtuch, Abtropfgestell."
+    ],
+    [
+     "",
+     "Schritt 1: Abräumen: Essensreste in den Biomüll kratzen. Geschirr nach Art stapeln: Gläser, Besteck, Teller, Töpfe."
+    ],
+    [
+     "",
+     "Schritt 2: Reihenfolge: Vom Saubersten zum Schmutzigsten: zuerst Gläser, dann Besteck, dann Teller, zum Schluss Töpfe und Pfannen."
+    ],
+    [
+     "",
+     "Schritt 3: Messer einzeln spülen und sofort abtrocknen – nie unsichtbar ins Spülwasser legen."
+    ],
+    [
+     "",
+     "Schritt 4: Wasser wechseln, wenn es fettig oder trüb ist."
+    ],
+    [
+     "",
+     "Schritt 5: Abtrocknen und einräumen: Alles an seinen Platz im Schrank. Spüle und Arbeitsfläche abwischen, Tuch zum Trocknen aufhängen."
+    ],
+    [
+     "",
+     "Lebensmittel lagern: Reste abgedeckt oder in einer Dose in den Kühlschrank. Rohes Fleisch und Fisch gehören ganz nach unten, damit nichts auf andere Lebensmittel tropft. Mehl, Zucker und Nudeln gut verschlossen in den Vorratsschrank."
+    ]
+   ]
+  },
+  "at2-06h": {
+   "titel": "Wohin damit?",
+   "art": "hoeren",
+   "lektion": 6,
+   "dauer": 52.2,
+   "text": [
+    [
+     "Noah",
+     "Wohin mit den Eierschalen?"
+    ],
+    [
+     "Lina",
+     "Biomüll. Genauso die Apfelschalen und die Teigreste."
+    ],
+    [
+     "Noah",
+     "Und der Milchkarton?"
+    ],
+    [
+     "Lina",
+     "In den blauen Sack, also Valorlux. Aber vorher ausleeren."
+    ],
+    [
+     "Noah",
+     "Okay. Die übrigen Crêpes werfe ich weg."
+    ],
+    [
+     "Lina",
+     "Nein, warte! Die kann man in eine Dose tun und morgen essen. In den Kühlschrank, oben ins Fach."
+    ],
+    [
+     "Noah",
+     "Und die halbe Packung Hackfleisch, die wir nicht gebraucht haben?"
+    ],
+    [
+     "Lina",
+     "Gut eingepackt ganz nach unten in den Kühlschrank. Aber Hackfleisch hält nicht lange: Wir verbrauchen es heute noch oder frieren es ein."
+    ],
+    [
+     "Noah",
+     "Du weißt ja alles!"
+    ],
+    [
+     "Lina",
+     "Bei uns zu Hause hängt ein Plan am Kühlschrank. Den hab ich irgendwann auswendig gelernt."
+    ]
+   ]
+  }
+ }
+}

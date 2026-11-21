@@ -199,7 +199,7 @@
       "bausteine": [
         {
           "art": "text",
-          "text": "Pendant un an, tu as rassemblé dans ton carnet de skills, sous « Phrases qui portent », ce que tu peux te dire dans les moments difficiles. Place à la finition : quelles phrases tiennent vraiment – et quelles sont les trois que tu emportes quand le carnet reste à la maison ?"
+          "text": "Pendant un an, tu as rassemblé des phrases dans ton carnet de skills, sous « Phrases qui portent ». Ce sont des phrases que tu peux te dire dans les moments difficiles. Place à la finition : quelles phrases tiennent vraiment ? Et quelles sont les trois que tu emportes quand le carnet reste à la maison ?"
         },
         {
           "art": "info",
@@ -318,7 +318,7 @@
           "art": "info",
           "symbol": "hilfe",
           "titel": "C’est toi qui décides de ce que tu partages.",
-          "text": "Tes phrases t’appartiennent. Et si un jour plus aucune phrase ne porte, ce n’est pas un échec – c’est le moment de se tourner vers des personnes : ta personne de confiance, le SePAS ou le Kanner- a Jugendtelefon (116 111)."
+          "text": "Tes phrases t’appartiennent. Et si un jour plus aucune phrase ne porte, ce n’est pas un échec. C’est le moment de se tourner vers des personnes : ta personne de confiance, le SePAS ou le Kanner- a Jugendtelefon (116 111)."
         }
       ],
       "lehrer": {

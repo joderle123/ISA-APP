@@ -307,7 +307,7 @@
           "art": "info",
           "symbol": "tipp",
           "titel": "Lâcher sans rien perdre",
-          "text": "Lâcher ne veut pas dire que ce n’était pas important. Parfois, une phrase suffit : « Je ne porte plus ça avec moi. » Pour « plus tard », une date aide : tu sais quand tu y reviendras, et ta tête n’a plus besoin de retenir le fil en permanence."
+          "text": "Lâcher ne veut pas dire que ce n’était pas important. Parfois, une phrase suffit : « Je ne porte plus ça avec moi. » Pour « plus tard », une date aide. Tu sais quand tu y reviendras. Et ta tête n’a plus besoin de retenir le fil en permanence."
         },
         {
           "art": "aufgabe",
@@ -1090,7 +1090,7 @@
           "art": "info",
           "symbol": "hilfe",
           "titel": "Aucune façon n’est seulement bonne ou mauvaise.",
-          "text": "Beaucoup de façons aident un moment et coûtent quelque chose plus tard ; d’autres demandent d’abord un petit coup de pouce. Avoir plusieurs façons pour des situations différentes, c’est bon signe. Si la pression devient telle que tu ne sais plus que faire, parles-en aujourd’hui même à quelqu’un : une personne de confiance, le SePAS ou les numéros ci-dessous."
+          "text": "Beaucoup de façons aident un moment et coûtent quelque chose plus tard ; d’autres demandent d’abord un petit coup de pouce. Avoir plusieurs façons pour des situations différentes, c’est bon signe. La pression est si forte que tu ne sais plus quoi faire ? Parles-en aujourd’hui même à quelqu’un : une personne de confiance, le SePAS ou les numéros ci-dessous."
         },
         {
           "art": "notfall"
@@ -1578,7 +1578,7 @@
           "art": "info",
           "symbol": "tipp",
           "titel": "Quand les pensées tournent",
-          "text": "Cinq minutes avant d’éteindre la lumière, écris sur un papier ce qui te préoccupe et ce que tu veux faire demain. Le papier le garde pour toi. Si tu dors très peu pendant longtemps ou que tu te sens très mal, parle à ton médecin traitant ou à une personne en qui tu as confiance."
+          "text": "Cinq minutes avant d’éteindre la lumière, écris sur un papier ce qui te préoccupe et ce que tu veux faire demain. Le papier le garde pour toi. Tu dors très peu depuis longtemps, ou tu te sens très mal ? Parle à ton médecin traitant ou à une personne en qui tu as confiance."
         },
         {
           "art": "linien",
@@ -1828,7 +1828,7 @@
       "bausteine": [
         {
           "art": "text",
-          "text": "Ton corps travaille toute la journée pour toi, même quand tu n’y penses pas : il te porte, te laisse entendre, rire, courir, t’endormir. Ici, il s’agit de ce qu’il sait faire et de ce qu’il te rend possible – les jours où c’est facile et les jours où c’est plus dur."
+          "text": "Ton corps travaille toute la journée pour toi, même quand tu n’y penses pas : il te porte, te laisse entendre, rire, courir, t’endormir. Ici, il s’agit de ce qu’il sait faire et de ce qu’il te permet. Les jours faciles comme les jours plus durs."
         },
         {
           "art": "aufgabe",

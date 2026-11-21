@@ -99,7 +99,7 @@
           "art": "info",
           "symbol": "merke",
           "titel": "Wechselhaft ist normal",
-          "text": "Fast jede Freundschaft hat Wolken. Aufpassen solltest du, wenn es oft stürmt: wenn dein Nein nicht zählt, du kontrolliert wirst, Geheimnisse herumgehen oder du dich nach Treffen meistens schlecht fühlst. Dann sprich mit jemandem, dem du vertraust."
+          "text": "Fast jede Freundschaft hat Wolken. Aufpassen solltest du, wenn es oft stürmt. Zum Beispiel: Dein Nein zählt nicht. Du wirst kontrolliert. Geheimnisse gehen herum. Oder du fühlst dich nach Treffen meistens schlecht. Dann sprich mit jemandem, dem du vertraust."
         },
         {
           "art": "aufgabe",
@@ -224,7 +224,7 @@
           "art": "info",
           "symbol": "merke",
           "titel": "Variable, c’est normal",
-          "text": "Presque toute amitié a ses nuages. Il faut faire attention quand il y a souvent de l’orage : quand ton non ne compte pas, quand on te contrôle, quand des secrets circulent ou quand tu te sens le plus souvent mal après vous être vus. Parles-en alors à une personne en qui tu as confiance."
+          "text": "Presque toute amitié a ses nuages. Fais attention s’il y a souvent de l’orage. Par exemple : ton non ne compte pas. On te contrôle. Des secrets circulent. Ou tu te sens souvent mal après vous être vus. Parles-en alors à une personne en qui tu as confiance."
         },
         {
           "art": "aufgabe",
@@ -1269,7 +1269,7 @@
         {
           "art": "info",
           "symbol": "hilfe",
-          "text": "Si tu es souvent mis à l’écart toi-même ou si on te met la pression dans une amitié, parles-en à quelqu’un en qui tu as confiance – par exemple au SePAS. Anonyme et gratuit : Kanner- a Jugendtelefon 116 111."
+          "text": "Tu es souvent mis·e à l’écart, ou on te met la pression dans une amitié ? Parles-en à quelqu’un en qui tu as confiance, par exemple au SePAS. Anonyme et gratuit : Kanner- a Jugendtelefon 116 111."
         }
       ],
       "lehrer": {

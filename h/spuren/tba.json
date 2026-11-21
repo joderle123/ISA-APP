@@ -1,0 +1,106 @@
+{
+ "modul": "tba",
+ "titel": {
+  "de": "Toolbox · Arbeitsblätter A",
+  "fr": "Toolbox · fiches A"
+ },
+ "sprache": "de",
+ "spuren": {
+  "tba-03a": {
+   "titel": "A-03 · Wechsel in eine neue Schule – Nach den Sommerferien",
+   "art": "lesen",
+   "lektion": 3,
+   "dauer": 29.2,
+   "text": [
+    [
+     "",
+     "Nach den Sommerferien"
+    ],
+    [
+     "",
+     "Diogo zieht mit seiner Familie von Esch nach Ettelbruck. Nach den Ferien kommt er in eine neue Schule. Er freut sich auf den großen Schulhof. Aber abends im Bett denkt er: Was, wenn ich mich verlaufe? Was, wenn keiner mit mir spielt? Seine Oma sagt: „Deinen Humor nimmst du mit. Und deinen Fußball auch.“"
+    ]
+   ]
+  },
+  "tba-12a": {
+   "titel": "A-12 · Mein Körper verändert sich – In der Umkleide",
+   "art": "lesen",
+   "lektion": 12,
+   "dauer": 29.2,
+   "text": [
+    [
+     "",
+     "In der Umkleide"
+    ],
+    [
+     "",
+     "Nora ist in einem Jahr zehn Zentimeter gewachsen. Jetzt ist sie die Größte in der Klasse. In der Umkleide ruft Kim: „Hey, Riesin, wie ist das Wetter da oben?“ Alle lachen, auch Nora. Aber in ihrem Bauch fühlt es sich eng an. Mathis steht daneben. Er ist einer der Kleinsten und denkt: „Wann wachse ich endlich?“"
+    ]
+   ]
+  },
+  "tba-19a": {
+   "titel": "A-19 · Meine Energie-Batterie – Ein langer Montag",
+   "art": "lesen",
+   "lektion": 19,
+   "dauer": 32.4,
+   "text": [
+    [
+     "",
+     "Ein langer Montag"
+    ],
+    [
+     "",
+     "Am Montag hat Diogo bis 16 Uhr Schule, danach Fußballtraining. Abends spielt er noch lange am Tablet und schläft erst um zehn ein. Am Dienstag ist er schon in der ersten Stunde müde. In der Pause streitet er mit Luca wegen einer Kleinigkeit. Nach der Schule geht er mit seinem Hund in den Wald. Abends liest er einen Comic und geht früh schlafen. Am Mittwoch fühlt er sich wieder fit."
+    ]
+   ]
+  },
+  "tba-30x": {
+   "titel": "A-30 · Mein Zukunfts-Kompass",
+   "art": "lesen",
+   "lektion": 30,
+   "dauer": 26.7,
+   "text": [
+    [
+     "",
+     "Du musst heute nicht wissen, was du später machen willst. Aber es hilft zu spüren, was zu dir passt. Ein Kompass sagt nicht, wohin du gehen musst – nur, wo Norden liegt. So suchst du hier Richtungen, keine Antwort. Es gibt kein Richtig oder Falsch. Niemand sammelt das Blatt ein, und was du schreibst, darf sich später ändern."
+    ]
+   ]
+  },
+  "tba-30y": {
+   "titel": "A-30 · Mein Zukunfts-Kompass",
+   "art": "lesen",
+   "lektion": 30,
+   "dauer": 22.5,
+   "text": [
+    [
+     "",
+     "Zwei, drei Richtungen: Was passt zu deinem Kompass? Ein Bereich reicht, es muss kein Beruf sein – zum Beispiel: Tiere, draußen, mit den Händen – Richtung Tierpflege, Landwirtschaft oder Forst. Gestalte rechts eine Pinnwand dazu: Bilder, Farben, Wörter – zeichnen, kleben, schreiben."
+    ]
+   ]
+  },
+  "tba-31x": {
+   "titel": "A-31 · Mein Online-Ich",
+   "art": "lesen",
+   "lektion": 31,
+   "dauer": 21.4,
+   "text": [
+    [
+     "",
+     "Online zeigst du dich oft ein bisschen anders als im Klassenzimmer – ausgesuchter, lustiger, vorsichtiger. Das ist normal; offline bist du bei den Großeltern auch nicht dieselbe wie auf dem Pausenhof. Hier schaust du nur hin. Es gibt kein Richtig oder Falsch und keine Verbote."
+    ]
+   ]
+  },
+  "tba-32x": {
+   "titel": "A-32 · Das schaffe ich allein",
+   "art": "lesen",
+   "lektion": 32,
+   "dauer": 22.7,
+   "text": [
+    [
+     "",
+     "Allein zurechtkommen heißt nicht, alles allein zu machen. Es heißt: wissen, was du schon kannst, was du als Nächstes lernen willst – und wen du fragen kannst. Vielleicht kannst du schon viel mehr, als dir auffällt. Es gibt kein Richtig oder Falsch, und niemand kann mit 14 schon alles."
+    ]
+   ]
+  }
+ }
+}

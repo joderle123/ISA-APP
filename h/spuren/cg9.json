@@ -1,0 +1,570 @@
+{
+ "modul": "cg9",
+ "titel": {
+  "de": "Die Welt verstehen – sicher und kritisch leben",
+  "fr": "Comprendre le monde – vivre de façon sûre et critique"
+ },
+ "sprache": "de",
+ "spuren": {
+  "cg9-01l": {
+   "titel": "Der blaue Planet",
+   "art": "lesen",
+   "lektion": 1,
+   "dauer": 75.4,
+   "text": [
+    [
+     "",
+     "Der blaue Planet"
+    ],
+    [
+     "",
+     "Vom Weltall aus sieht die Erde blau aus: Etwa 71 Prozent der Oberfläche sind Wasser. Das Wasser bildet fünf große Ozeane: den Pazifischen Ozean (der größte), den Atlantischen Ozean, den Indischen Ozean, den Arktischen Ozean am Nordpol und den Südlichen Ozean rund um die Antarktis."
+    ],
+    [
+     "",
+     "Die Kontinente."
+    ],
+    [
+     "",
+     "Das Land teilt man in sieben Kontinente: Asien, Afrika, Nordamerika, Südamerika, Antarktis, Europa und Australien mit Ozeanien. Asien ist der größte Kontinent, und dort leben auch die meisten Menschen – mehr als die Hälfte der rund 8 Milliarden Menschen auf der Erde. In der Antarktis wohnt niemand dauerhaft, nur Forscherinnen und Forscher."
+    ],
+    [
+     "",
+     "Rekorde."
+    ],
+    [
+     "",
+     "Der höchste Berg ist der Mount Everest in Asien mit etwa 8850 Metern. Die längsten Flüsse sind der Nil in Afrika und der Amazonas in Südamerika – Fachleute streiten, welcher länger ist. Die größte heiße Wüste ist die Sahara in Afrika."
+    ]
+   ]
+  },
+  "cg9-01h": {
+   "titel": "Rekorde der Erde",
+   "art": "hoeren",
+   "lektion": 1,
+   "dauer": 61.4,
+   "text": [
+    [
+     "Amira",
+     "Willkommen bei „Weltwissen“! Heute: Rekorde der Erde. Tom, wo ist es am kältesten?"
+    ],
+    [
+     "Tom",
+     "In der Antarktis. Dort wurden schon fast minus neunzig Grad gemessen. Und am heißesten ist es in Wüsten: Im Death Valley in Nordamerika waren es über fünfzig Grad."
+    ],
+    [
+     "Amira",
+     "Krass. Und wo ist das Meer am tiefsten?"
+    ],
+    [
+     "Tom",
+     "Im Pazifik, im Marianengraben: fast elf Kilometer tief! Der Mount Everest würde da komplett hineinpassen."
+    ],
+    [
+     "Amira",
+     "Mein Lieblingsrekord: Der Amazonas-Regenwald in Südamerika ist der größte Regenwald der Welt. Dort leben unglaublich viele Tier- und Pflanzenarten."
+    ],
+    [
+     "Tom",
+     "Und der kleinste Kontinent ist Australien mit Ozeanien. Dafür ist Australien eine riesige Insel – und ein ganzer Kontinent!"
+    ],
+    [
+     "Amira",
+     "Das war’s für heute. Nächstes Mal: die Klimazonen der Erde!"
+    ]
+   ]
+  },
+  "cg9-02l": {
+   "titel": "Die Klimazonen",
+   "art": "lesen",
+   "lektion": 2,
+   "dauer": 63.6,
+   "text": [
+    [
+     "",
+     "Die Klimazonen"
+    ],
+    [
+     "",
+     "Die Erde ist eine Kugel. Am Äquator fallen die Sonnenstrahlen fast senkrecht auf die Erde und wärmen stark. An den Polen kommen sie sehr schräg an und wärmen wenig. Darum gibt es verschiedene Klimazonen."
+    ],
+    [
+     "",
+     "Die vier Zonen."
+    ],
+    [
+     "",
+     "Tropen: rund um den Äquator, zwischen den Wendekreisen. Es ist das ganze Jahr heiß; in vielen Gegenden regnet es viel, dort wachsen Regenwälder. Subtropen: heiße, trockene Sommer. Hier liegen große Wüsten wie die Sahara, aber auch die Länder am Mittelmeer. Gemäßigte Zone: vier Jahreszeiten, nicht zu heiß und nicht zu kalt. Hier liegt Luxemburg. Polare Zone: sehr kalt, lange Winter, oft Eis und Schnee."
+    ],
+    [
+     "",
+     "Pflanzen und Tiere passen sich an."
+    ],
+    [
+     "",
+     "Kamele speichern Fett in ihren Höckern und kommen lange ohne Wasser aus. Eisbären haben eine dicke Fettschicht und dichtes Fell. Kakteen speichern Wasser in ihren dicken Stämmen."
+    ]
+   ]
+  },
+  "cg9-02h": {
+   "titel": "Wo bin ich?",
+   "art": "hoeren",
+   "lektion": 2,
+   "dauer": 45.4,
+   "text": [
+    [
+     "Reisende 1",
+     "Hier ist es jeden Tag ungefähr gleich warm, etwa dreißig Grad. Am Nachmittag kommt fast immer ein heftiger Regenschauer. Um mich herum sind riesige Bäume, und überall hört man Vögel und Affen. Wo bin ich?"
+    ],
+    [
+     "Reisender 2",
+     "Es ist minus fünfundzwanzig Grad. Im Winter geht die Sonne hier wochenlang gar nicht auf. Ich trage drei Jacken übereinander und habe gerade einen Eisbären aus der Ferne gesehen. Wo bin ich?"
+    ],
+    [
+     "Reisende 3",
+     "Am Tag ist es über vierzig Grad heiß, nachts wird es ziemlich kalt. Es hat seit Monaten nicht geregnet. Um mich herum ist nur Sand. Gerade ist eine Karawane mit Kamelen vorbeigezogen. Wo bin ich?"
+    ]
+   ]
+  },
+  "cg9-03l": {
+   "titel": "Ein Handy reist um die Welt",
+   "art": "lesen",
+   "lektion": 3,
+   "dauer": 85.0,
+   "text": [
+    [
+     "",
+     "Ein Handy reist um die Welt"
+    ],
+    [
+     "",
+     "Ein Smartphone ist klein, aber in ihm stecken Dutzende verschiedene Stoffe: Metalle wie Kupfer, Gold und Silber, dazu seltene Stoffe wie Kobalt und Lithium für den Akku."
+    ],
+    [
+     "",
+     "Woher kommen die Rohstoffe."
+    ],
+    [
+     "",
+     "Mehr als die Hälfte des Kobalts weltweit wird in der Demokratischen Republik Kongo in Afrika abgebaut. In kleinen Minen arbeiten dort unter gefährlichen Bedingungen auch Kinder. Lithium kommt zum Beispiel aus Chile und Australien. In Chile wird es aus Salzseen in der Wüste gewonnen – dafür braucht man viel Wasser, das dort knapp ist."
+    ],
+    [
+     "",
+     "Zusammenbauen und verkaufen."
+    ],
+    [
+     "",
+     "Die Teile werden in vielen Ländern hergestellt und oft in Asien zusammengebaut. Dann wird das Handy in die ganze Welt verschickt. So hängen Länder auf der ganzen Welt voneinander ab: Das nennt man Globalisierung."
+    ],
+    [
+     "",
+     "Länger nutzen."
+    ],
+    [
+     "",
+     "Je länger man ein Handy benutzt, desto weniger Rohstoffe braucht man. Hilfreich sind: Hülle und Schutzglas, Akku tauschen lassen, reparieren statt wegwerfen, gebrauchte Handys kaufen. Alte Handys gehören nicht in den Müll, sondern zum Recyclinghof oder in eine Sammelbox – dort werden wertvolle Stoffe zurückgewonnen."
+    ]
+   ]
+  },
+  "cg9-03h": {
+   "titel": "Reparieren statt wegwerfen",
+   "art": "hoeren",
+   "lektion": 3,
+   "dauer": 55.1,
+   "text": [
+    [
+     "Lio",
+     "Mein Handy ist drei Jahre alt. Der Akku ist nach ein paar Stunden leer. Ich dachte, ich brauche ein neues."
+    ],
+    [
+     "Helfer",
+     "Zeig mal. Der Rest ist noch gut, nur der Akku ist müde. Akkus verlieren mit der Zeit Kraft. Ein neuer Akku ist viel billiger als ein neues Handy."
+    ],
+    [
+     "Lio",
+     "Kann man das selbst machen?"
+    ],
+    [
+     "Helfer",
+     "Bei manchen Handys ja, bei anderen ist es schwierig, weil alles verklebt ist. Ab 2027 sollen in der EU Akkus in Handys leichter austauschbar werden, mit einigen Ausnahmen. Heute machen wir es zusammen."
+    ],
+    [
+     "Lio",
+     "Und was kann ich tun, damit der neue Akku länger hält?"
+    ],
+    [
+     "Helfer",
+     "Nicht ständig auf hundert Prozent laden und nicht ganz leer werden lassen. Zwischen zwanzig und achtzig Prozent ist ideal. Und das Handy nicht in der heißen Sonne liegen lassen."
+    ],
+    [
+     "Lio",
+     "Cool. Dann habe ich jetzt ein „neues“ Handy für viel weniger Geld."
+    ]
+   ]
+  },
+  "cg9-04l": {
+   "titel": "Watt und Kilowattstunden",
+   "art": "lesen",
+   "lektion": 4,
+   "dauer": 71.8,
+   "text": [
+    [
+     "",
+     "Watt und Kilowattstunden"
+    ],
+    [
+     "",
+     "Auf jedem Elektrogerät steht eine Zahl mit W – zum Beispiel 2000 W beim Wasserkocher. Das ist die Leistung in Watt: Sie zeigt, wie viel Strom das Gerät braucht, während es läuft."
+    ],
+    [
+     "",
+     "So rechnet man."
+    ],
+    [
+     "",
+     "Leistung mal Zeit ergibt den Verbrauch. Ein Gerät mit 1000 Watt, das eine Stunde läuft, verbraucht 1 Kilowattstunde (kWh). Eine LED-Lampe mit 10 Watt müsste dafür 100 Stunden leuchten. Für eine Kilowattstunde bezahlt man in Luxemburg ungefähr 25 Cent (gerundet)."
+    ],
+    [
+     "",
+     "Heimliche Stromfresser."
+    ],
+    [
+     "",
+     "Fernseher, Spielkonsolen und Ladegeräte brauchen oft auch Strom, wenn sie gar nicht benutzt werden: im Standby. Eine Steckdosenleiste mit Schalter hilft, alles auf einmal ganz auszuschalten."
+    ],
+    [
+     "",
+     "Sicherheit."
+    ],
+    [
+     "",
+     "Strom kann lebensgefährlich sein. Darum: Elektrogeräte nie mit nassen Händen oder in der Badewanne benutzen. Keine kaputten Kabel benutzen. Nichts in Steckdosen stecken. Nicht zu viele Mehrfachstecker hintereinander. Im Sicherungskasten schützt der FI-Schutzschalter: Er schaltet den Strom blitzschnell ab, wenn etwas schiefgeht."
+    ]
+   ]
+  },
+  "cg9-04h": {
+   "titel": "Wir messen nach",
+   "art": "hoeren",
+   "lektion": 4,
+   "dauer": 48.6,
+   "text": [
+    [
+     "Ben",
+     "Okay, das Messgerät steckt zwischen Steckdose und Fernseher. Fernseher an: neunzig Watt."
+    ],
+    [
+     "Lea",
+     "Und jetzt mit der Fernbedienung aus … zeigt immer noch acht Watt an!"
+    ],
+    [
+     "Ben",
+     "Acht Watt klingt wenig. Aber der Fernseher ist ja zwanzig Stunden am Tag aus."
+    ],
+    [
+     "Lea",
+     "Rechnen wir: Acht Watt mal zwanzig Stunden sind hundertsechzig Wattstunden am Tag. Mal dreihundertfünfundsechzig Tage … fast sechzig Kilowattstunden im Jahr!"
+    ],
+    [
+     "Ben",
+     "Und die Spielkonsole im Standby-Modus braucht sogar zwölf Watt."
+    ],
+    [
+     "Lea",
+     "Wir schlagen vor, eine Steckdosenleiste mit Schalter zu kaufen. Abends schaltet der Letzte alles aus."
+    ],
+    [
+     "Ben",
+     "Und wir machen ein Schild: „Ausschalten statt Standby!“"
+    ]
+   ]
+  },
+  "cg9-05l": {
+   "titel": "Rote Rauten verstehen",
+   "art": "lesen",
+   "lektion": 5,
+   "dauer": 77.8,
+   "text": [
+    [
+     "",
+     "Rote Rauten verstehen"
+    ],
+    [
+     "",
+     "Viele Produkte im Haushalt können gefährlich sein: Abflussreiniger, WC-Reiniger, Grillanzünder, Sprays, Farben. Auf ihnen stehen Gefahrensymbole: schwarze Zeichen in einer weißen Raute mit rotem Rand. Sie gelten weltweit gleich, damit jeder sie versteht – egal, welche Sprache er spricht."
+    ],
+    [
+     "",
+     "Wichtige Regeln."
+    ],
+    [
+     "",
+     "Gefährliche Produkte immer in der Originalverpackung lassen, nie in Trinkflaschen umfüllen. Kindersicher und weit weg von Lebensmitteln aufbewahren. Gebrauchsanweisung lesen, Handschuhe tragen, lüften. Und: Reiniger nie mischen! Manche Mischungen bilden giftige Gase."
+    ],
+    [
+     "",
+     "Im Notfall."
+    ],
+    [
+     "",
+     "Wer etwas Gefährliches verschluckt oder in die Augen bekommen hat: Ruhe bewahren und die Verpackung bereithalten. Bei Lebensgefahr 112 anrufen. Rat gibt das Antigiftzentrum, auch für Luxemburg, rund um die Uhr kostenlos: 8002 5500 (Stand 2026). Augen mit viel Wasser ausspülen. Nicht zum Erbrechen bringen."
+    ]
+   ]
+  },
+  "cg9-05h": {
+   "titel": "Nie mischen!",
+   "art": "hoeren",
+   "lektion": 5,
+   "dauer": 48.7,
+   "text": [
+    [
+     "Sami",
+     "Die Toiletten sind echt dreckig. Kann ich nicht einfach zwei Reiniger zusammenkippen? Dann wird es doppelt sauber."
+    ],
+    [
+     "Hausmeister",
+     "Auf keinen Fall! Schau mal: Dieser Reiniger enthält Chlor, der andere Säure. Wenn man die mischt, entsteht ein giftiges Gas. Das kann die Lunge schwer verletzen."
+    ],
+    [
+     "Sami",
+     "Oh. Das wusste ich nicht."
+    ],
+    [
+     "Hausmeister",
+     "Darum gilt: Immer nur ein Mittel benutzen und die Anleitung lesen. Siehst du die rote Raute mit dem Ausrufezeichen und die mit der Hand? Die zweite heißt: ätzend. Darum Handschuhe!"
+    ],
+    [
+     "Sami",
+     "Und warum steht hier eine Flasche mit einem Fisch drauf?"
+    ],
+    [
+     "Hausmeister",
+     "Das ist schädlich für die Umwelt, besonders für Tiere im Wasser. Reste davon nie in den Ausguss kippen, sondern zum Recyclinghof bringen."
+    ],
+    [
+     "Sami",
+     "Gut, dass ich gefragt habe."
+    ]
+   ]
+  },
+  "cg9-06l": {
+   "titel": "Die pH-Skala",
+   "art": "lesen",
+   "lektion": 6,
+   "dauer": 72.1,
+   "text": [
+    [
+     "",
+     "Die pH-Skala"
+    ],
+    [
+     "",
+     "Säuren schmecken sauer, zum Beispiel Zitronensaft und Essig. Auch im Magen gibt es eine starke Säure, die beim Verdauen hilft. Laugen (man sagt auch: basische Stoffe) fühlen sich oft seifig an, zum Beispiel Seifenlauge oder Natron. Reines Wasser ist neutral: weder sauer noch basisch."
+    ],
+    [
+     "",
+     "Messen mit Zahlen."
+    ],
+    [
+     "",
+     "Wie sauer oder basisch etwas ist, zeigt der pH-Wert. Die Skala geht von 0 bis 14. Unter 7 ist sauer, 7 ist neutral, über 7 ist basisch. Je weiter weg von der 7, desto stärker. Sehr starke Säuren und Laugen sind ätzend – zum Beispiel Abflussreiniger. Nie probieren!"
+    ],
+    [
+     "",
+     "Ein Farbanzeiger aus Rotkohl."
+    ],
+    [
+     "",
+     "Den pH-Wert kann man mit einem Indikator zeigen: einem Stoff, der seine Farbe ändert. Rotkohlsaft ist so ein Indikator. In Säure wird er rot oder pink, in neutralem Wasser bleibt er violett, in Laugen wird er blau, grün oder sogar gelb."
+    ]
+   ]
+  },
+  "cg9-06h": {
+   "titel": "Sicher im Labor",
+   "art": "hoeren",
+   "lektion": 6,
+   "dauer": 61.5,
+   "text": [
+    [
+     "Mme Rantini",
+     "Bevor wir anfangen: Schutzbrille auf, lange Haare zusammenbinden. Im Labor wird nichts gegessen und nichts getrunken – auch nicht, wenn es aus der Küche kommt."
+    ],
+    [
+     "Nele",
+     "Auch nicht den Zitronensaft?"
+    ],
+    [
+     "Mme Rantini",
+     "Nein. Laborgeräte sind keine Küchengeräte. Jetzt der Versuch: Ich habe Rotkohl klein geschnitten und mit heißem Wasser übergossen. Der Saft ist schön violett."
+    ],
+    [
+     "Nele",
+     "Und jetzt kippen wir überall etwas hinein?"
+    ],
+    [
+     "Mme Rantini",
+     "Genau, in jedes Glas ein bisschen Rotkohlsaft. Dann gebt ihr je einen Teelöffel dazu: Zitronensaft, Essig, Leitungswasser, Seifenwasser und Natron. Beobachtet die Farbe und schreibt sie sofort auf."
+    ],
+    [
+     "Nele",
+     "Was ist, wenn etwas ins Auge kommt?"
+    ],
+    [
+     "Mme Rantini",
+     "Dann sofort zur Augendusche und lange mit Wasser spülen – und mir Bescheid sagen. Darum tragen wir ja die Brille. Los geht’s!"
+    ]
+   ]
+  },
+  "cg9-07l": {
+   "titel": "Lernen aus Millionen Beispielen",
+   "art": "lesen",
+   "lektion": 7,
+   "dauer": 92.3,
+   "text": [
+    [
+     "",
+     "Lernen aus Millionen Beispielen"
+    ],
+    [
+     "",
+     "Mit künstlicher Intelligenz (KI) meint man Computerprogramme, die Aufgaben lösen, für die Menschen nachdenken müssen: Sprache verstehen, Bilder erkennen, Texte schreiben. KI lernt aus riesigen Datenmengen. Ein Programm, das Katzen erkennen soll, sieht Millionen Katzenbilder und findet Muster."
+    ],
+    [
+     "",
+     "Was KI gut kann."
+    ],
+    [
+     "",
+     "KI kann sehr schnell Texte zusammenfassen, übersetzen, Ideen sammeln, Bilder erzeugen und Fehler in Programmen finden. Ärztinnen und Ärzte nutzen KI zum Beispiel, um Röntgenbilder schneller zu prüfen."
+    ],
+    [
+     "",
+     "Wo KI Fehler macht."
+    ],
+    [
+     "",
+     "KI versteht nicht wirklich, was sie schreibt. Sie berechnet, welche Wörter wahrscheinlich passen. Darum kann sie Dinge erfinden, die falsch sind – und klingt dabei sehr überzeugt. Wenn in den Daten Vorurteile stecken, übernimmt die KI sie. Und mit KI kann man täuschend echte falsche Bilder, Stimmen und Videos machen: Deepfakes."
+    ],
+    [
+     "",
+     "Regeln."
+    ],
+    [
+     "",
+     "In der EU gibt es ein KI-Gesetz: Deepfakes müssen zum Beispiel als künstlich erzeugt gekennzeichnet werden. Für dich gilt: Keine persönlichen Daten in KI-Programme eingeben, Antworten immer prüfen, angeben, wenn man KI benutzt hat, und niemanden mit KI-Bildern bloßstellen."
+    ]
+   ]
+  },
+  "cg9-07h": {
+   "titel": "Der Chatbot weiß alles – oder?",
+   "art": "hoeren",
+   "lektion": 7,
+   "dauer": 53.0,
+   "text": [
+    [
+     "Ben",
+     "Ich frage den Chatbot: „Wann wurde das Schwimmbad in unserer Gemeinde gebaut?“"
+    ],
+    [
+     "Chatbot",
+     "Das Schwimmbad wurde im Jahr 1974 eröffnet. Es hat ein Fünfzig-Meter-Becken und eine Rutsche von achtzig Metern Länge."
+    ],
+    [
+     "Yusuf",
+     "Moment. Unser Schwimmbad hat doch nur ein Fünfundzwanzig-Meter-Becken. Und eine Rutsche gibt es gar nicht!"
+    ],
+    [
+     "Ben",
+     "Aber er klingt so sicher."
+    ],
+    [
+     "Yusuf",
+     "Genau das ist das Problem. Er hat es einfach erfunden. Komm, wir schauen auf der Internetseite der Gemeinde nach."
+    ],
+    [
+     "Ben",
+     "Hier steht: eröffnet 1981, fünfundzwanzig Meter, keine Rutsche."
+    ],
+    [
+     "Yusuf",
+     "Siehst du. Den Chatbot können wir für Ideen und die Gliederung nutzen. Aber Fakten prüfen wir immer selbst. Und im Referat schreiben wir dazu, wofür wir KI benutzt haben."
+    ]
+   ]
+  },
+  "cg9-08l": {
+   "titel": "Schneller als die Wahrheit",
+   "art": "lesen",
+   "lektion": 8,
+   "dauer": 91.4,
+   "text": [
+    [
+     "",
+     "Schneller als die Wahrheit"
+    ],
+    [
+     "",
+     "Fake News sind falsche oder verdrehte Meldungen, die wie echte Nachrichten aussehen. Manche werden absichtlich gemacht: um Geld mit Klicks zu verdienen, um Angst zu machen oder um Menschen gegeneinander aufzuhetzen. Andere entstehen aus Versehen, wenn jemand etwas falsch versteht und weiterleitet."
+    ],
+    [
+     "",
+     "Warum verbreiten sie sich so schnell."
+    ],
+    [
+     "",
+     "Falschmeldungen sind oft überraschend, empörend oder beängstigend. Solche Gefühle bringen uns dazu, schnell auf „Teilen“ zu drücken – ohne nachzudenken. Soziale Netzwerke zeigen außerdem besonders oft Beiträge, auf die viele reagieren."
+    ],
+    [
+     "",
+     "Der Faktencheck in fünf Schritten."
+    ],
+    [
+     "",
+     "1. Innehalten: Erst denken, dann teilen. 2. Quelle prüfen: Wer hat das geschrieben? Gibt es ein Impressum? 3. Datum prüfen: Ist die Meldung aktuell oder alt? 4. Andere Quellen suchen: Berichten auch seriöse Nachrichtenseiten darüber? 5. Bilder prüfen: Mit einer Bildersuche sieht man, ob ein Foto alt ist oder aus einem anderen Zusammenhang stammt."
+    ],
+    [
+     "",
+     "Satire ist keine Lüge."
+    ],
+    [
+     "",
+     "Satire übertreibt mit Absicht, um etwas lustig oder kritisch zu zeigen. Das ist erlaubt – man muss sie aber als Satire erkennen."
+    ]
+   ]
+  },
+  "cg9-08h": {
+   "titel": "Das Gerücht",
+   "art": "hoeren",
+   "lektion": 8,
+   "dauer": 60.4,
+   "text": [
+    [
+     "Mia",
+     "Hast du das im Klassenchat gesehen? „Achtung! Ab Montag sind Handys in allen Schulen in Luxemburg komplett verboten, sogar in der Tasche! Strafe: hundert Euro! Teilt das!!!“"
+    ],
+    [
+     "Finn",
+     "Was? Wer hat das geschrieben?"
+    ],
+    [
+     "Mia",
+     "Es ist weitergeleitet. Da steht ein Link zu einer Seite namens „Schul-News-24“."
+    ],
+    [
+     "Finn",
+     "Nie gehört. Mach den Faktencheck. Gibt es ein Impressum?"
+    ],
+    [
+     "Mia",
+     "Nein, gar nichts. Und das Bild vom Minister ist von 2019 – das hat die Bildersuche gezeigt."
+    ],
+    [
+     "Finn",
+     "Es gibt zwar echte Handyregeln an den Schulen. Aber von einem Verbot ab Montag mit hundert Euro Strafe steht nichts beim Bildungsministerium und nichts in den Nachrichten. Also ein Fake."
+    ],
+    [
+     "Mia",
+     "Ich schreibe in den Chat: „Stimmt nicht, bitte nicht weiterleiten.“ Und ich lösche die Nachricht nicht, damit der Klassenlehrer sie sehen kann."
+    ]
+   ]
+  }
+ }
+}

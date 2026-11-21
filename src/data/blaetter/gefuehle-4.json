@@ -162,11 +162,11 @@
       "bausteine": [
         {
           "art": "text",
-          "text": "La colère n’a pas partout la même taille. À certains endroits, tu restes calme ; ailleurs, ça chauffe vite – et il y a presque toujours une raison. Aujourd’hui, tu dessines une carte de ta colère : où elle grandit, à quoi tu le remarques tôt et ce qui se cache souvent dessous. Il n’y a ni bonne ni mauvaise réponse. La colère est une émotion, pas un défaut."
+          "text": "La colère n’a pas partout la même taille. À certains endroits, tu restes calme ; ailleurs, ça chauffe vite – et il y a presque toujours une raison. Aujourd’hui, tu dessines une carte de ta colère. Où grandit-elle ? À quoi la remarques-tu tôt ? Et qu’est-ce qui se cache souvent dessous ? Il n’y a ni bonne ni mauvaise réponse. La colère est une émotion, pas un défaut."
         },
         {
           "art": "aufgabe",
-          "text": "Colorie ta carte de la colère : dans chaque case, remplis les anneaux de l’intérieur vers l’extérieur – aussi loin que la colère monte à cet endroit.",
+          "text": "Colorie ta carte de la colère. Dans chaque case, remplis les anneaux de l’intérieur vers l’extérieur : aussi loin que la colère monte à cet endroit.",
           "hinweis": "La couleur suit la chaleur : bleu – vert – jaune – orange – rouge. Exemple : bus scolaire = 4 anneaux en orange, entraînement = 1 anneau en bleu. Une case peut rester vide ; dans « mon propre endroit », tu écris toi-même. Les couleurs pâles du fond ne signifient rien.",
           "symbole": ["malen", "nachdenken"]
         },
@@ -242,7 +242,7 @@
         {
           "art": "aufgabe",
           "text": "Entoure ton endroit le plus chaud sur la carte. Quel signal d’alerte se manifeste là-bas – et quel serait un premier pas ?",
-          "hinweis": "Si ton propre endroit est trop proche, prends Ben : dans le bus, quelqu’un le pousse sur le côté, il serre le poing. Exemple : ma mâchoire se serre – alors j’ouvre les mains, j’expire, je mets mes écouteurs.",
+          "hinweis": "Ton propre endroit est trop proche ? Prends Ben : dans le bus, quelqu’un le pousse sur le côté. Il serre le poing. Exemple : ma mâchoire se serre – alors j’ouvre les mains, j’expire, je mets mes écouteurs.",
           "symbole": ["einkreisen", "schreiben"]
         },
         {

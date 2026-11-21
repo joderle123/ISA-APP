@@ -18,6 +18,10 @@ import interRegular from '../assets/fonts/pdf/Inter-Regular.ttf?url'
 import interSemiBold from '../assets/fonts/pdf/Inter-SemiBold.ttf?url'
 import manropeBold from '../assets/fonts/pdf/Manrope-Bold.ttf?url'
 import manropeExtraBold from '../assets/fonts/pdf/Manrope-ExtraBold.ttf?url'
+import atkinsonRegular from '../assets/fonts/pdf/Atkinson-Regular.ttf?url'
+import atkinsonBold from '../assets/fonts/pdf/Atkinson-Bold.ttf?url'
+import lexendSemiBold from '../assets/fonts/pdf/Lexend-SemiBold.ttf?url'
+import lexendBold from '../assets/fonts/pdf/Lexend-Bold.ttf?url'
 
 /** Render a material to a PDF Blob entirely in the browser (no server, no API). */
 export async function materialToBlob(material: Material): Promise<Blob> {
@@ -62,6 +66,10 @@ const SCHRIFT_DATEIEN: Record<string, string> = {
   'Inter-SemiBold.ttf': interSemiBold,
   'Manrope-Bold.ttf': manropeBold,
   'Manrope-ExtraBold.ttf': manropeExtraBold,
+  'Atkinson-Regular.ttf': atkinsonRegular,
+  'Atkinson-Bold.ttf': atkinsonBold,
+  'Lexend-SemiBold.ttf': lexendSemiBold,
+  'Lexend-Bold.ttf': lexendBold,
 }
 
 function schriften() {

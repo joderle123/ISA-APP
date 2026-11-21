@@ -7,6 +7,10 @@ import interRegular from '../../assets/fonts/pdf/Inter-Regular.ttf?url'
 import interSemiBold from '../../assets/fonts/pdf/Inter-SemiBold.ttf?url'
 import manropeBold from '../../assets/fonts/pdf/Manrope-Bold.ttf?url'
 import manropeExtraBold from '../../assets/fonts/pdf/Manrope-ExtraBold.ttf?url'
+import atkinsonRegular from '../../assets/fonts/pdf/Atkinson-Regular.ttf?url'
+import atkinsonBold from '../../assets/fonts/pdf/Atkinson-Bold.ttf?url'
+import lexendSemiBold from '../../assets/fonts/pdf/Lexend-SemiBold.ttf?url'
+import lexendBold from '../../assets/fonts/pdf/Lexend-Bold.ttf?url'
 import type { DruckFolge, DruckSitzung } from '../kern/druck'
 import type { DruckNachweis } from '../kern/rahmenplan'
 import { FolgeDokument, NachweisDokument, SitzungDokument, teilPositionen, type TeilPosition } from './PlanDokument'
@@ -18,6 +22,10 @@ const SCHRIFTEN: Record<string, string> = {
   'Inter-SemiBold.ttf': interSemiBold,
   'Manrope-Bold.ttf': manropeBold,
   'Manrope-ExtraBold.ttf': manropeExtraBold,
+  'Atkinson-Regular.ttf': atkinsonRegular,
+  'Atkinson-Bold.ttf': atkinsonBold,
+  'Lexend-SemiBold.ttf': lexendSemiBold,
+  'Lexend-Bold.ttf': lexendBold,
 }
 
 export interface PassgenauDruck {

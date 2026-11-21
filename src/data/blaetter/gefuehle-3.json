@@ -971,7 +971,7 @@
         "impulse": [
           "Wann hat dein Wachhund zu Recht gebellt?",
           "Wann bellt er, obwohl nichts da ist?",
-          "Was sagst du einem Freund, dessen Wachhund zu laut bellt?"
+          "Was sagst du jemandem, dessen Wachhund zu laut bellt?"
         ],
         "tipps": [
           "Gruppe: Die Hunde nebeneinander aufhängen; die Kinder sehen, dass andere ähnliche Wachhunde haben. Niemand muss eine Angst nennen.",
@@ -1090,11 +1090,11 @@
         "impulse": [
           "Quand ton chien de garde a-t-il aboyé à raison ?",
           "Quand aboie-t-il alors qu’il n’y a rien ?",
-          "Que dis-tu à un ami dont le chien aboie trop fort ?"
+          "Que dis-tu à quelqu’un dont le chien aboie trop fort ?"
         ],
         "tipps": [
-          "Groupe : accrocher les chiens côte à côte ; les enfants voient que d’autres ont des chiens semblables. Personne n’a à nommer une peur.",
-          "Individuel : l’enfant raconte quand son chien aboie souvent ; s’exercer à une phrase apaisante pour cela."
+          "Groupe : accrocher les chiens côte à côte – d’autres ont des chiens semblables. Personne n’a à nommer une peur.",
+          "Individuel : l’enfant raconte quand son chien aboie ; s’exercer à une phrase apaisante."
         ],
         "achtung": "Si les peurs sont très fortes, durent longtemps ou gênent le sommeil ou l’école : parler aux parents, informer la direction compétente (responsable). Peur d’une personne : ne pas approfondir devant le groupe, écouter en tête à tête.",
         "material": "Crayons"
@@ -3503,7 +3503,7 @@
       "bausteine": [
         {
           "art": "text",
-          "text": "Stress sitzt im Körper. Deine Sinne sind ein schneller Weg dorthin: Etwas Angenehmes zu sehen, hören, riechen, schmecken oder fühlen kann die Spannung senken."
+          "text": "Stress sitzt im Körper. Deine Sinne sind ein schneller Weg dorthin. Etwas Angenehmes sehen, hören, riechen, schmecken oder fühlen – das kann die Spannung senken."
         },
         {
           "art": "aufgabe",
@@ -3770,7 +3770,7 @@
       "bausteine": [
         {
           "art": "text",
-          "text": "Le stress se loge dans le corps. Tes sens sont un chemin rapide pour l’atteindre : voir, entendre, sentir, goûter ou toucher quelque chose d’agréable peut faire baisser la tension."
+          "text": "Le stress se loge dans le corps. Tes sens sont un chemin rapide pour y arriver. Voir, entendre, sentir, goûter ou toucher quelque chose d’agréable : cela peut faire baisser la tension."
         },
         {
           "art": "aufgabe",
@@ -4485,7 +4485,7 @@
       "bausteine": [
         {
           "art": "text",
-          "text": "„Schlecht“ oder „gut“ sagt wenig. Je genauer das Wort, desto besser verstehst du dich selbst, und desto leichter kannst du anderen sagen, was los ist."
+          "text": "„Schlecht“ oder „gut“ sagt wenig. Je genauer das Wort, desto besser verstehst du dich selbst. Und desto leichter kannst du anderen sagen, was los ist."
         },
         {
           "art": "aufgabe",
@@ -4654,7 +4654,7 @@
       "bausteine": [
         {
           "art": "text",
-          "text": "« Mal » ou « bien » en dit peu. Plus le mot est précis, mieux tu te comprends – et plus il est facile de dire aux autres ce qui se passe."
+          "text": "« Mal » ou « bien » en dit peu. Plus le mot est précis, mieux tu te comprends. Et plus il est facile de dire aux autres ce qui se passe."
         },
         {
           "art": "aufgabe",

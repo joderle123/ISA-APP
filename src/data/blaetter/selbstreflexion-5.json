@@ -197,7 +197,7 @@
           "art": "info",
           "symbol": "tipp",
           "titel": "Eine Frage, die die Brille wechselt",
-          "text": "Du kannst nicht immer bestimmen, welcher Gedanke zuerst kommt. Aber du kannst fragen: „Was könnte es sonst noch sein?“ Drei andere Erklärungen reichen – auch wenn du keine davon sofort glaubst."
+          "text": "Du kannst nicht immer bestimmen, welcher Gedanke zuerst kommt. Aber du kannst fragen: „Was könnte es sonst noch sein?“ Drei andere Erklärungen reichen. Du musst sie nicht sofort glauben."
         },
         {
           "art": "info",
@@ -272,7 +272,7 @@
         {
           "art": "aufgabe",
           "text": "Colorie les deux paires de lunettes. Relis ensuite la scène avec la paire sombre et note ce qui se passe en toi. Puis avec la paire bienveillante.",
-          "hinweis": "Exemple : dans le bus, deux camarades chuchotent. Paire sombre : « Ils parlent de moi. » – le visage chaud – je fais semblant de regarder mon téléphone. Paire bienveillante : « C’est peut-être à propos d’une vidéo. » – curieux – je m’assois avec eux.",
+          "hinweis": "Exemple : dans le bus, deux camarades chuchotent. Paire sombre : « Ils parlent de moi. » – le visage chaud – je fais semblant de regarder mon téléphone. Paire bienveillante : « C’est peut-être à propos d’une vidéo. » – de la curiosité – je m’assois avec eux.",
           "symbole": [
             "malen",
             "schreiben"
@@ -346,7 +346,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Lève-toi et rejoue la scène : d’abord avec les lunettes sombres, puis avec les bienveillantes. Comment te tiens-tu ? Coche ce que tu remarques.",
+          "text": "Rejoue la scène debout, avec chaque paire. Coche ce que tu remarques.",
           "hinweis": "Seul ou à deux : la personne qui regarde dit seulement ce qu’elle voit, sans juger.",
           "symbole": [
             "ankreuzen",
@@ -406,7 +406,7 @@
           "art": "info",
           "symbol": "tipp",
           "titel": "Une question qui change de lunettes",
-          "text": "Tu ne choisis pas toujours quelle pensée arrive en premier. Mais tu peux demander : « Qu’est-ce que ça pourrait être d’autre ? » Trois autres explications suffisent – même si tu n’en crois aucune tout de suite."
+          "text": "Tu ne choisis pas la première pensée qui arrive. Mais tu peux demander : « Qu’est-ce que ça pourrait être d’autre ? » Trois autres explications suffisent – même si tu n’y crois pas encore."
         },
         {
           "art": "info",
@@ -910,7 +910,7 @@
       "bausteine": [
         {
           "art": "text",
-          "text": "Wenn eine gute Freundin oder ein guter Freund etwas verbockt, sagst du nicht: „Du hast es wieder vermasselt.“ Du sagst eher: „Das passiert. Komm, das kriegen wir hin.“ Mit dir selbst sprichst du oft anders. Hier probierst du aus, wie es ist, dir so zu begegnen, wie du einem Menschen begegnest, der dir wichtig ist."
+          "text": "Wenn eine gute Freundin oder ein guter Freund etwas verbockt, sagst du nicht: „Du hast es wieder vermasselt.“ Du sagst eher: „Das passiert. Komm, das kriegen wir hin.“ Mit dir selbst sprichst du oft anders. Hier probierst du aus, so mit dir zu reden wie mit einem Menschen, der dir wichtig ist."
         },
         {
           "art": "aufgabe",
@@ -1044,7 +1044,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Das nehme ich mit: Schreib deinen Satz auf eine Karte, schneid sie aus und steck sie ein – Federmappe, Handyhülle, Spind.",
+          "text": "Das nehme ich mit: Schreib deinen Satz auf eine Karte. Schneid sie aus und steck sie ein – in die Federmappe, die Handyhülle oder den Spind.",
           "symbole": [
             "schreiben",
             "schneiden"
@@ -1236,7 +1236,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Ce que j’emporte : écris ta phrase sur une carte, découpe-la et glisse-la dans ta trousse, ta coque de téléphone ou ton casier.",
+          "text": "Ce que j’emporte : écris ta phrase sur une carte. Découpe-la et glisse-la dans ta trousse, ta coque de téléphone ou ton casier.",
           "symbole": [
             "schreiben",
             "schneiden"
@@ -1331,7 +1331,7 @@
       "bausteine": [
         {
           "art": "text",
-          "text": "Manchmal fühlt es sich an, als könnte man die Gedanken der anderen hören: „Die finden mich komisch.“ Dabei kann niemand Gedanken lesen – wir malen sie uns aus, und oft sind es die unfreundlichsten. Hier sammelst du solche Gedankenwolken, prüfst sie und siehst, welche weiterziehen dürfen."
+          "text": "Manchmal fühlt es sich an, als könnte man die Gedanken der anderen hören: „Die finden mich komisch.“ Dabei kann niemand Gedanken lesen. Wir malen sie uns nur aus – und oft malen wir die unfreundlichsten. Hier sammelst du solche Gedankenwolken, prüfst sie und siehst, welche weiterziehen dürfen."
         },
         {
           "art": "aufgabe",

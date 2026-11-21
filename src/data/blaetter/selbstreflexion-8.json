@@ -227,7 +227,7 @@
       "bausteine": [
         {
           "art": "text",
-          "text": "Imagine que la journée compte 25 heures à partir de demain. L’heure en plus n’est qu’à toi : elle n’a pas besoin d’être utile ni raisonnable. Ce que tu choisis en dit long sur ce dont tu as besoin en ce moment – et il n’y a ni bonne ni mauvaise réponse."
+          "text": "Imagine que la journée compte 25 heures à partir de demain. L’heure en plus n’est qu’à toi : elle n’a pas besoin d’être utile ni raisonnable. Ce que tu choisis montre ce dont tu as besoin en ce moment. Il n’y a ni bonne ni mauvaise réponse."
         },
         {
           "art": "aufgabe",
@@ -630,7 +630,7 @@
       "bausteine": [
         {
           "art": "text",
-          "text": "Toutes les journées ne peuvent pas être de rêve, mais une bonne journée est plus souvent possible qu’on ne le pense. Ici, tu colories deux journées côte à côte : une bonne journée de lycée, telle qu’elle pourrait vraiment être, et une journée de rêve sans aucune obligation. Ce qui se ressemble et ce qui diffère te montre ce qui compte pour toi."
+          "text": "Toutes les journées ne peuvent pas être de rêve, mais une bonne journée est plus souvent possible qu’on ne le pense. Ici, tu colories deux journées côte à côte. D’abord une bonne journée de lycée, telle qu’elle pourrait vraiment être. Puis une journée de rêve, sans aucune obligation. Ce qui se ressemble et ce qui diffère te montre ce qui compte pour toi."
         },
         {
           "art": "aufgabe",
@@ -1363,7 +1363,7 @@
       "bausteine": [
         {
           "art": "text",
-          "text": "Colorier une case prend une minute. Au bout de quelques semaines, tu vois des motifs que tu ne remarquerais jamais dans le quotidien : quels jours brillent, lesquels sont gris, qu’est-ce qui va ensemble ? Tu décides à quoi servent tes couleurs – l’humeur, le sommeil, le mouvement ou une habitude que tu veux installer."
+          "text": "Colorier une case prend une minute. Au bout de quelques semaines, tu vois des motifs que tu ne remarques pas au quotidien. Quels jours brillent ? Lesquels sont gris ? Qu’est-ce qui va ensemble ? Tu décides à quoi servent tes couleurs – l’humeur, le sommeil, le mouvement ou une habitude que tu veux installer."
         },
         {
           "art": "aufgabe",
@@ -1388,7 +1388,7 @@
         {
           "art": "aufgabe",
           "text": "Fixe tes couleurs : écris dans la légende ce que chacune représente. Le jaune est déjà pris – c’est ta couleur pour « vraiment bien ».",
-          "hinweis": "Colorie les cases jaunes avec un soin particulier, au stylo doré ou à paillettes si tu en as un, et pense un instant à ce qui était vraiment bien aujourd’hui. Deux couleurs dans une case, c’est permis.",
+          "hinweis": "Colorie les cases jaunes avec un soin particulier, au stylo doré ou à paillettes si tu en as un. Pense un instant à ce qui était vraiment bien aujourd’hui. Deux couleurs dans une case, c’est permis.",
           "symbole": [
             "malen",
             "nachdenken"
@@ -1473,7 +1473,7 @@
           "art": "info",
           "symbol": "hilfe",
           "titel": "Une case vide n’est pas une erreur.",
-          "text": "Si tu oublies un soir, tu continues le lendemain : les habitudes se forment sur des semaines, pas en une soirée. Ton année t’appartient – tu n’as à la montrer à personne. Si, pendant des semaines, il n’y a presque que des couleurs lourdes, parles-en à un adulte en qui tu as confiance, par exemple au SePAS de ton lycée."
+          "text": "Si tu oublies un soir, tu continues le lendemain : les habitudes se forment sur des semaines, pas en une soirée. Ton année t’appartient – tu n’as à la montrer à personne. Pendant des semaines, il n’y a presque que des couleurs lourdes ? Parles-en à un adulte en qui tu as confiance, par exemple au SePAS de ton lycée."
         },
         {
           "art": "linien",
@@ -1788,7 +1788,7 @@
         {
           "art": "aufgabe",
           "text": "Pour quoi utilises-tu ton téléphone ? Estime les minutes par jour, puis regarde dans les réglages comment le temps se répartit.",
-          "hinweis": "Tout le temps passé sur le téléphone ne se vaut pas : un appel vidéo avec une amie ne se ressent pas comme une heure de défilement.",
+          "hinweis": "Tout le temps passé sur le téléphone ne se vaut pas. Un appel vidéo avec une amie ne fait pas le même effet qu’une heure à scroller.",
           "symbole": [
             "schreiben"
           ]

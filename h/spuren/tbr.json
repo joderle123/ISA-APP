@@ -1,0 +1,326 @@
+{
+ "modul": "tbr",
+ "titel": {
+  "de": "Toolbox · Arbeitsblätter R",
+  "fr": "Toolbox · fiches R"
+ },
+ "sprache": "de",
+ "spuren": {
+  "tbr-01x": {
+   "titel": "R-01 · Meine Bedürfnis-Gläser",
+   "art": "lesen",
+   "lektion": 1,
+   "dauer": 24.4,
+   "text": [
+    [
+     "",
+     "Bedürfnisse sind das, was jeder Mensch zum Leben und zum Wohlfühlen braucht. Schlaf, Sicherheit, Menschen, auf die man zählen kann, Zeit für sich. Sie sind nicht allen gleich wichtig – und nicht immer gleich gut erfüllt. Ist ein Glas lange fast leer, merkt man es oft zuerst an der Stimmung: gereizt, müde, lustlos."
+    ]
+   ]
+  },
+  "tbr-02x": {
+   "titel": "R-02 · Mein Lebensnetz",
+   "art": "lesen",
+   "lektion": 2,
+   "dauer": 20.2,
+   "text": [
+    [
+     "",
+     "Dein Leben spielt sich in vielen Bereichen ab. Selten läuft alles gleich gut. Mit den Freunden ist es gerade schön, in der Schule eher zäh. Und der Schlaf kommt zu kurz. Das Netz zeigt dir auf einen Blick, wo es dich trägt und wo es dünn ist."
+    ]
+   ]
+  },
+  "tbr-05a": {
+   "titel": "R-05 · Was liegt in meiner Hand? – Drei Sorgen an einem Abend",
+   "art": "lesen",
+   "lektion": 5,
+   "dauer": 27.7,
+   "text": [
+    [
+     "",
+     "Drei Sorgen an einem Abend"
+    ],
+    [
+     "",
+     "Tiago liegt wach. Morgen ist Deutschtest, und er hat erst die Hälfte gelernt. Seine Eltern streiten seit Wochen, und im Klassenchat wird über ihn gelästert. Alles dreht sich gleichzeitig in seinem Kopf. Dann fällt ihm ein, was sein Éducateur gesagt hat: „Nicht jede Sorge braucht dieselbe Antwort.“"
+    ]
+   ]
+  },
+  "tbr-06x": {
+   "titel": "R-06 · Meine Werte-Gläser",
+   "art": "lesen",
+   "lektion": 6,
+   "dauer": 16.8,
+   "text": [
+    [
+     "",
+     "Werte sind wie ein innerer Kompass: Sie zeigen, was dir wichtig ist und wofür du einstehen willst. Oft merkt man sie erst, wenn etwas dagegen verstößt – wenn jemand unfair behandelt wird oder man selbst nicht ehrlich war."
+    ]
+   ]
+  },
+  "tbr-16x": {
+   "titel": "R-16 · Mein Startpunkt",
+   "art": "lesen",
+   "lektion": 16,
+   "dauer": 16.9,
+   "text": [
+    [
+     "",
+     "Über dich nachzudenken ist kein Test. Hier gibt es kein Richtig und kein Falsch, nur dich und deine Antworten. Diese Seite hält fest, wo du heute beginnst – später kannst du sehen, was sich verändert hat."
+    ]
+   ]
+  },
+  "tbr-17x": {
+   "titel": "R-17 · Mein Mischpult",
+   "art": "lesen",
+   "lektion": 17,
+   "dauer": 18.4,
+   "text": [
+    [
+     "",
+     "Kein Mensch ist nur leise oder nur laut, nur vorsichtig oder nur mutig. Auf diesem Mischpult stellst du ein, wo du gerade stehst – so wie man an einem Regler die Lautstärke wählt. Beide Enden jeder Linie sind in Ordnung."
+    ]
+   ]
+  },
+  "tbr-20x": {
+   "titel": "R-20 · Mein Lob-Archiv",
+   "art": "lesen",
+   "lektion": 20,
+   "dauer": 19.0,
+   "text": [
+    [
+     "",
+     "Ein Lob fühlt sich gut an. Doch am nächsten Tag ist es oft schon vergessen. Böse Sätze dagegen bleiben lange hängen. Hier sammelst du die guten, damit du sie wiederfindest. Auch Kleines zählt – und es gibt kein Richtig oder Falsch."
+    ]
+   ]
+  },
+  "tbr-21x": {
+   "titel": "R-21 · Was ich kann – was mir schwerfällt",
+   "art": "lesen",
+   "lektion": 21,
+   "dauer": 16.7,
+   "text": [
+    [
+     "",
+     "Jeder Mensch kann einiges richtig gut und tut sich mit anderem schwer. Auf Seite 1 sammelst du, was du kannst, auf Seite 2, was dir Mühe macht und wer dir hilft. Es gibt kein Richtig oder Falsch."
+    ]
+   ]
+  },
+  "tbr-22x": {
+   "titel": "R-22 · Meine Highlight-Bänder",
+   "art": "lesen",
+   "lektion": 22,
+   "dauer": 21.2,
+   "text": [
+    [
+     "",
+     "Schöne Momente gibt es mehr, als man im Alltag bemerkt. Ein Abend mit Freunden, ein Tor, ein Lied im Bus, ein freier Tag. Auf den Bändern sammelst du deine aus den letzten Monaten. Einen davon hältst du mit allen Sinnen fest – er wird dein Anker für schwere Tage."
+    ]
+   ]
+  },
+  "tbr-23x": {
+   "titel": "R-23 · Drei gute Dinge",
+   "art": "lesen",
+   "lektion": 23,
+   "dauer": 20.4,
+   "text": [
+    [
+     "",
+     "Was schiefgeht, merken wir sofort. Was gut läuft, rutscht leicht durch. Sieben Abende lang schaust du bewusst auf das Gute und fragst dich, wie es dazu kam. Es müssen keine großen Dinge sein: ein warmes Brötchen oder ein Lachen im Bus zählen genauso."
+    ]
+   ]
+  },
+  "tbr-24x": {
+   "titel": "R-24 · Zwei Brillen",
+   "art": "lesen",
+   "lektion": 24,
+   "dauer": 22.0,
+   "text": [
+    [
+     "",
+     "Zwei Menschen erleben dieselbe Szene und gehen trotzdem ganz verschieden aus ihr heraus. Der Unterschied steckt oft in dem, was sie sich dazu denken. Du probierst heute zwei Brillen aus: eine dunkle und eine freundliche. Es gibt kein Richtig oder Falsch – du schaust nur, was jede Brille mit dir macht."
+    ]
+   ]
+  },
+  "tbr-25x": {
+   "titel": "R-25 · Mein innerer Kritiker",
+   "art": "lesen",
+   "lektion": 25,
+   "dauer": 20.7,
+   "text": [
+    [
+     "",
+     "Fast jeder Mensch hat eine Stimme im Kopf, die kommentiert: „Das war peinlich.“ „Das schaffst du nie.“ Das ist normal. Oft will sie dich schützen – vor Fehlern, vor Blamage –, auch wenn sie hart klingt. Hier lernst du sie kennen, ohne gegen sie zu kämpfen."
+    ]
+   ]
+  },
+  "tbr-26x": {
+   "titel": "R-26 · Wie mit einer guten Freundin",
+   "art": "lesen",
+   "lektion": 26,
+   "dauer": 22.9,
+   "text": [
+    [
+     "",
+     "Wenn eine gute Freundin oder ein guter Freund etwas verbockt, sagst du nicht: „Du hast es wieder vermasselt.“ Du sagst eher: „Das passiert. Komm, das kriegen wir hin.“ Mit dir selbst sprichst du oft anders. Hier probierst du aus, so mit dir zu reden wie mit einem Menschen, der dir wichtig ist."
+    ]
+   ]
+  },
+  "tbr-27x": {
+   "titel": "R-27 · Was denken die anderen?",
+   "art": "lesen",
+   "lektion": 27,
+   "dauer": 21.6,
+   "text": [
+    [
+     "",
+     "Manchmal fühlt es sich an, als könnte man die Gedanken der anderen hören: „Die finden mich komisch.“ Dabei kann niemand Gedanken lesen. Wir malen sie uns nur aus – und oft malen wir die unfreundlichsten. Hier sammelst du solche Gedankenwolken, prüfst sie und siehst, welche weiterziehen dürfen."
+    ]
+   ]
+  },
+  "tbr-28x": {
+   "titel": "R-28 · Meine losen Fäden",
+   "art": "lesen",
+   "lektion": 28,
+   "dauer": 25.5,
+   "text": [
+    [
+     "",
+     "Im Kopf hängen oft lose Fäden: die Nachricht, die du noch beantworten wolltest. Das Versprechen an einen Freund. Das Projekt, das du anfangen wolltest. Jeder Faden braucht ein bisschen Platz, auch wenn du gerade gar nicht an ihn denkst. Hier legst du sie einmal alle vor dich hin und entscheidest, was mit ihnen passiert."
+    ]
+   ]
+  },
+  "tbr-29x": {
+   "titel": "R-29 · Meine Auftank-Liste",
+   "art": "lesen",
+   "lektion": 29,
+   "dauer": 20.5,
+   "text": [
+    [
+     "",
+     "An guten Tagen weißt du, was dir guttut. An schlechten fällt einem oft nichts ein. Darum baust du dir jetzt eine Liste, die schon da ist, bevor du sie brauchst. Sie ist nach Sinnen sortiert: Augen, Ohren, Nase und Zunge, Haut und Körper."
+    ]
+   ]
+  },
+  "tbr-30x": {
+   "titel": "R-30 · Wenn ich gestresst bin",
+   "art": "lesen",
+   "lektion": 30,
+   "dauer": 23.9,
+   "text": [
+    [
+     "",
+     "Stress gehört dazu: vor Tests, bei Streit, wenn alles gleichzeitig kommt. Jeder Mensch hat Wege, damit umzugehen. Manche helfen sofort, manche erst später, und manche kosten am nächsten Tag etwas. Hier schaust du ohne Bewertung hin, was du tust, und prüfst, was dir wirklich guttut."
+    ]
+   ]
+  },
+  "tbr-31x": {
+   "titel": "R-31 · Mein Schlaf-Check",
+   "art": "lesen",
+   "lektion": 31,
+   "dauer": 23.6,
+   "text": [
+    [
+     "",
+     "In deinem Alter braucht der Körper viel Schlaf, aber die innere Uhr tickt später als bei Kindern und Erwachsenen. Dazu kommen früher Unterricht, das Handy und Gedanken, die abends erst richtig laut werden. Das Blatt urteilt nicht: Du schaust eine Woche lang hin, was bei dir los ist, und änderst eine Kleinigkeit."
+    ]
+   ]
+  },
+  "tbr-32x": {
+   "titel": "R-32 · Was mein Körper alles kann",
+   "art": "lesen",
+   "lektion": 32,
+   "dauer": 20.5,
+   "text": [
+    [
+     "",
+     "Dein Körper arbeitet den ganzen Tag für dich, auch wenn du nicht daran denkst. Er trägt dich, lässt dich hören, lachen, rennen, einschlafen. Hier geht es um das, was er kann und dir möglich macht. An Tagen, an denen es leicht ist, und an Tagen, an denen es schwerer ist."
+    ]
+   ]
+  },
+  "tbr-33x": {
+   "titel": "R-33 · Meine Kreise",
+   "art": "lesen",
+   "lektion": 33,
+   "dauer": 16.2,
+   "text": [
+    [
+     "",
+     "Nicht alle Menschen in deinem Leben sind dir gleich nah. Manche kennst du kaum, bei anderen kannst du ganz du selbst sein. Deine Kreise zeigen, wer wo steht – und ob sich das für dich gerade stimmig anfühlt."
+    ]
+   ]
+  },
+  "tbr-34x": {
+   "titel": "R-34 · Drei wichtige Menschen",
+   "art": "lesen",
+   "lektion": 34,
+   "dauer": 20.9,
+   "text": [
+    [
+     "",
+     "In deinem Alltag spielen Menschen eine Rolle, die nicht immer gleich auffallen. Ein Freund, eine Trainerin, ein Lehrer, die Nachbarin von nebenan. Manche begleiten dich lange, andere nur ein Stück. Hier schaust du dir drei von ihnen genauer an – und was sie dir mitgegeben haben."
+    ]
+   ]
+  },
+  "tbr-35x": {
+   "titel": "R-35 · So zeige ich, dass ich jemanden mag",
+   "art": "lesen",
+   "lektion": 35,
+   "dauer": 21.8,
+   "text": [
+    [
+     "",
+     "Freunde zeigen auf ganz verschiedene Arten, dass sie jemanden mögen. Die eine schreibt dir spätabends „Gute Nacht“. Der andere hilft dir, ohne ein Wort zu sagen. Beides kann „Ich mag dich“ heißen. Hier findest du heraus, woran du es merkst – und wie du es zeigst."
+    ]
+   ]
+  },
+  "tbr-37x": {
+   "titel": "R-37 · Eine Stunde geschenkt",
+   "art": "lesen",
+   "lektion": 37,
+   "dauer": 19.9,
+   "text": [
+    [
+     "",
+     "Stell dir vor, der Tag hat ab morgen 25 Stunden. Die Extra-Stunde gehört nur dir: Sie muss weder nützlich noch vernünftig sein. Was du wählst, verrät viel darüber, was du gerade brauchst – und es gibt kein Richtig und kein Falsch."
+    ]
+   ]
+  },
+  "tbr-38x": {
+   "titel": "R-38 · Ein guter Tag – mein Traumtag",
+   "art": "lesen",
+   "lektion": 38,
+   "dauer": 24.5,
+   "text": [
+    [
+     "",
+     "Nicht jeder Tag kann ein Traumtag sein, aber ein guter Tag ist öfter drin, als man denkt. Hier malst du zwei Tage nebeneinander. Einen guten Tag mit Schule, wie er wirklich sein könnte. Und einen Traumtag ohne jede Pflicht. Was ähnlich ist und was ganz anders, zeigt dir, worauf es dir ankommt."
+    ]
+   ]
+  },
+  "tbr-39x": {
+   "titel": "R-39 · Das To-do-Monster zähmen",
+   "art": "lesen",
+   "lektion": 39,
+   "dauer": 22.0,
+   "text": [
+    [
+     "",
+     "Ein Referat, eine Prüfung, das Projekt, die Führerschein-Theorie: Je größer das Vorhaben, desto größer wird das Monster im Kopf. Oft ist nicht die Arbeit das Problem, sondern dass man nicht weiß, wo man anfangen soll. Heute schneidest du dein Monster in Stücke, die du in einer Sitzung schaffst."
+    ]
+   ]
+  },
+  "tbr-40x": {
+   "titel": "R-40 · Mein Jahr in Farben",
+   "art": "lesen",
+   "lektion": 40,
+   "dauer": 23.1,
+   "text": [
+    [
+     "",
+     "Ein Kästchen ausmalen dauert eine Minute. Nach ein paar Wochen siehst du Muster, die dir im Alltag nie auffallen würden. Welche Tage leuchten, welche sind grau, was kommt zusammen vor? Du bestimmst, wofür deine Farben stehen – Stimmung, Schlaf, Bewegung oder eine Gewohnheit, die du aufbauen willst."
+    ]
+   ]
+  }
+ }
+}

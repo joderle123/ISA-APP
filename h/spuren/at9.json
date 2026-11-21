@@ -1,0 +1,474 @@
+{
+ "modul": "at9",
+ "titel": {
+  "de": "Meine Stärken – mein Weg",
+  "fr": "Mes points forts – mon chemin"
+ },
+ "sprache": "de",
+ "spuren": {
+  "at9-01l": {
+   "titel": "Vier Arten von Kompetenzen",
+   "art": "lesen",
+   "lektion": 1,
+   "dauer": 70.5,
+   "text": [
+    [
+     "",
+     "Vier Arten von Kompetenzen"
+    ],
+    [
+     "",
+     "Eine Kompetenz ist etwas, das du kannst – nicht nur weißt. Betriebe achten auf vier Arten von Kompetenzen."
+    ],
+    [
+     "",
+     "Fachkompetenz: Du kannst mit Werkzeugen, Maschinen und Material umgehen. Zum Beispiel: sägen, bohren, säen, einen Knopf annähen."
+    ],
+    [
+     "",
+     "Methodenkompetenz: Du kannst eine Arbeit planen und eine Anleitung lesen. Du weißt, wie man Fehler sucht und Qualität prüft."
+    ],
+    [
+     "",
+     "Sozialkompetenz: Du kannst im Team arbeiten, klar reden, Feedback geben und Konflikte lösen."
+    ],
+    [
+     "",
+     "Selbstkompetenz: Du bist pünktlich und zuverlässig. Du hältst durch, auch wenn etwas nicht sofort klappt. Du übernimmst Verantwortung für deinen Platz und deine Sicherheit."
+    ],
+    [
+     "",
+     "Niemand ist überall gleich stark. Das ist normal. Wichtig ist, dass du deine Stärken kennst – und weißt, woran du arbeiten willst. Das hilft bei der Berufswahl und im Bewerbungsgespräch."
+    ]
+   ]
+  },
+  "at9-01h": {
+   "titel": "Ich kann doch nichts",
+   "art": "hoeren",
+   "lektion": 1,
+   "dauer": 53.2,
+   "text": [
+    [
+     "Sami",
+     "Ich weiß nicht, was ich schreiben soll. Ich kann eigentlich nichts besonders gut."
+    ],
+    [
+     "Herr Steffen",
+     "Darf ich dir sagen, was ich gesehen habe?"
+    ],
+    [
+     "Sami",
+     "Okay."
+    ],
+    [
+     "Herr Steffen",
+     "Beim Holzlager hast du als Erster gemerkt, dass wir die Sägeschnitte vergessen hatten. Das ist genaues Rechnen und Mitdenken."
+    ],
+    [
+     "Sami",
+     "Das war doch nur eine Kleinigkeit."
+    ],
+    [
+     "Herr Steffen",
+     "Für einen Betrieb ist das keine Kleinigkeit. Und als Finn mit dem Akkuschrauber nicht weiterkam, hast du ihm geholfen – ohne es für ihn zu machen. Das ist Sozialkompetenz."
+    ],
+    [
+     "Sami",
+     "Stimmt. Und ich war nie zu spät im Atelier."
+    ],
+    [
+     "Herr Steffen",
+     "Siehst du. Zuverlässig. Drei Stärken in einer Minute. Und was möchtest du noch üben?"
+    ],
+    [
+     "Sami",
+     "Präsentieren. Wenn alle mich anschauen, werde ich rot."
+    ],
+    [
+     "Herr Steffen",
+     "Dann ist das dein Ziel für die nächsten Wochen. Schreib beides auf: deine Stärken und dein Ziel."
+    ]
+   ]
+  },
+  "at9-02l": {
+   "titel": "So legst du dein Portfolio an",
+   "art": "lesen",
+   "lektion": 2,
+   "dauer": 79.6,
+   "text": [
+    [
+     "",
+     "So legst du dein Portfolio an"
+    ],
+    [
+     "",
+     "Du brauchst: eine Mappe oder ein Ordner (oder ein Ordner auf dem Tablet), Fotos deiner Werkstücke, deine Werkstatt-Berichte."
+    ],
+    [
+     "",
+     "Schritt 1: Fotos machen: Fotografiere deine Werkstücke – am besten vor einem ruhigen Hintergrund und gut beleuchtet. Auch Zwischenschritte sind interessant."
+    ],
+    [
+     "",
+     "Schritt 2: Auswählen: Nimm deine besten Arbeiten, nicht alle. Fünf bis acht Stück reichen."
+    ],
+    [
+     "",
+     "Schritt 3: Beschreiben: Schreibe zu jedem Werkstück einen kurzen Steckbrief: Was ist es? Welche Materialien und Werkzeuge? Was war schwierig? Was habe ich gelernt?"
+    ],
+    [
+     "",
+     "Schritt 4: Nachweise sammeln: Lege deinen Maschinen-Pass, Bescheinigungen und Rückmeldungen dazu."
+    ],
+    [
+     "",
+     "Schritt 5: Ordnen: Mit einem Deckblatt und einem Inhaltsverzeichnis. Das Neueste kommt nach vorn."
+    ],
+    [
+     "",
+     "Dein Portfolio wächst mit dir. Nimm es zu Praktikums- und Vorstellungsgesprächen mit. Und frag vorher, ob du Fotos von anderen Personen machen darfst – am besten fotografierst du nur deine Werkstücke."
+    ]
+   ]
+  },
+  "at9-02h": {
+   "titel": "Darf ich Ihnen etwas zeigen?",
+   "art": "hoeren",
+   "lektion": 2,
+   "dauer": 58.6,
+   "text": [
+    [
+     "Herr Weis",
+     "Guten Tag, Lea. Setz dich. Warum möchtest du ein Praktikum bei uns machen?"
+    ],
+    [
+     "Lea",
+     "Weil ich gern mit Holz arbeite. Darf ich Ihnen mein Portfolio zeigen?"
+    ],
+    [
+     "Herr Weis",
+     "Gern."
+    ],
+    [
+     "Lea",
+     "Das hier ist ein Regal mit drei Fächern. Ich habe es selbst geplant – mit Zeichnung, Stückliste und Arbeitsplan. Hier sieht man die Zeichnung."
+    ],
+    [
+     "Herr Weis",
+     "Das ist ordentlich gezeichnet. Was war schwierig?"
+    ],
+    [
+     "Lea",
+     "Die Fächer gleich hoch zu machen. Beim ersten Versuch war eins zwei Millimeter zu niedrig. Ich habe dann einen Anschlag benutzt."
+    ],
+    [
+     "Herr Weis",
+     "Das gefällt mir. Du hast den Fehler selbst gefunden und gelöst. Und das hier?"
+    ],
+    [
+     "Lea",
+     "Das ist mein Maschinen-Pass. Ich darf die Säulenbohrmaschine und den Akkuschrauber allein benutzen."
+    ],
+    [
+     "Herr Weis",
+     "Sehr gut. Viele Bewerber erzählen mir nur, dass sie handwerklich begabt sind. Du kannst es zeigen. Wann kannst du anfangen?"
+    ]
+   ]
+  },
+  "at9-03l": {
+   "titel": "Berufsfelder im Handwerk",
+   "art": "lesen",
+   "lektion": 3,
+   "dauer": 80.4,
+   "text": [
+    [
+     "",
+     "Berufsfelder im Handwerk"
+    ],
+    [
+     "",
+     "Holz: Schreiner bauen Möbel, Türen und Treppen. Metall: Metallbauer und Schlosser bauen Geländer, Tore und Stahlteile. Elektro: Elektriker verlegen Kabel und schließen Geräte an. Bau: Maurer, Maler, Fliesenleger bauen und renovieren Häuser."
+    ],
+    [
+     "",
+     "Garten und Natur: Gärtner pflegen Parks und Gärten oder ziehen Pflanzen. Küche: Köche und Küchenhilfen arbeiten in Restaurants, Kantinen und Hotels. Textil: Änderungsschneider reparieren und ändern Kleidung. Lager und Logistik: Lageristen nehmen Waren an, ordnen sie und verschicken sie."
+    ],
+    [
+     "",
+     "Wie lernt man einen Beruf."
+    ],
+    [
+     "",
+     "In Luxemburg lernt man viele Handwerksberufe in einer Ausbildung: in der Schule und im Betrieb. Zwei wichtige Abschlüsse sind das CCP (mit viel Praxis) und das DAP. Sie dauern meistens drei Jahre. Welche Wege für dich offenstehen, besprichst du am besten mit deiner Lehrperson und mit der Berufsberatung."
+    ],
+    [
+     "",
+     "Was Betriebe sich wünschen."
+    ],
+    [
+     "",
+     "Fast alle Betriebe sagen: Am wichtigsten sind Zuverlässigkeit, Pünktlichkeit, Motivation und Freundlichkeit. Vieles Fachliche lernt man im Betrieb. Alle diese Berufe können Frauen und Männer lernen."
+    ]
+   ]
+  },
+  "at9-03h": {
+   "titel": "Wer bin ich?",
+   "art": "hoeren",
+   "lektion": 3,
+   "dauer": 73.4,
+   "text": [
+    [
+     "Sprecherin",
+     "Willkommen beim Berufe-Rätsel! Hört gut zu und ratet mit. Person eins, bitte."
+    ],
+    [
+     "Person 1",
+     "Ich stehe früh auf und arbeite oft draußen, auch wenn es regnet. Im Frühling setze ich Blumen und Sträucher, im Sommer mähe ich und gieße, im Herbst sammle ich Laub. Ich brauche Spaten, Schubkarre und manchmal einen kleinen Bagger."
+    ],
+    [
+     "Sprecherin",
+     "Danke! Person zwei."
+    ],
+    [
+     "Person 2",
+     "Bei mir ist es heiß und laut. Ich arbeite viel abends und am Wochenende, weil die Leute dann essen gehen. Ich schneide Gemüse, brate Fleisch und achte sehr auf Hygiene. Wenn mittags fünfzig Bestellungen auf einmal kommen, muss das Team perfekt zusammenarbeiten."
+    ],
+    [
+     "Sprecherin",
+     "Und Person drei."
+    ],
+    [
+     "Person 3",
+     "Ich lese technische Zeichnungen und baue Treppengeländer und Tore aus Stahl. Ich säge, bohre, biege und schweiße. Beim Schweißen trage ich einen Schweißhelm und dicke Handschuhe. An der Bohrmaschine trage ich eine Schutzbrille – und keine Handschuhe. Am schönsten ist es, wenn das Geländer am Ende genau passt."
+    ],
+    [
+     "Sprecherin",
+     "Na, habt ihr alle drei erraten? Die Lösung steht im Heft eurer Lehrperson!"
+    ]
+   ]
+  },
+  "at9-04l": {
+   "titel": "Zehn Regeln für ein gutes Praktikum",
+   "art": "lesen",
+   "lektion": 4,
+   "dauer": 82.2,
+   "text": [
+    [
+     "",
+     "Zehn Regeln für ein gutes Praktikum"
+    ],
+    [
+     "",
+     "Vorher: Schau dir den Weg zum Betrieb an und plane genug Zeit ein. Frag, welche Kleidung du brauchst – zum Beispiel Sicherheitsschuhe oder Arbeitshose. Schreib dir die Telefonnummer des Betriebs und den Namen deiner Ansprechperson auf."
+    ],
+    [
+     "",
+     "Am ersten Tag: Sei pünktlich, lieber zehn Minuten zu früh. Begrüße alle freundlich. Hör bei der Sicherheitsunterweisung genau zu. Schreib dir wichtige Dinge auf."
+    ],
+    [
+     "",
+     "Jeden Tag: Das Handy benutzt du nur in der Pause. Frag nach, wenn du etwas nicht verstehst – das ist besser als ein Fehler. Wenn du fertig bist, frag: „Was kann ich jetzt machen?“ Halte deinen Arbeitsplatz ordentlich."
+    ],
+    [
+     "",
+     "Wenn du krank bist: Ruf vor Arbeitsbeginn im Betrieb an – eine Nachricht reicht meistens nicht. Sag deinen Namen, dass du Praktikantin oder Praktikant bist, dass du krank bist und wie lange du wahrscheinlich fehlst. Sag auch in der Schule Bescheid. Frag, ob du ein ärztliches Attest brauchst."
+    ],
+    [
+     "",
+     "Und: Wenn dir etwas komisch vorkommt oder dich jemand schlecht behandelt, sprich mit deiner Lehrperson. Du bist nicht allein."
+    ]
+   ]
+  },
+  "at9-04h": {
+   "titel": "Die Krankmeldung",
+   "art": "hoeren",
+   "lektion": 4,
+   "dauer": 56.2,
+   "text": [
+    [
+     "Frau Reuter",
+     "Gartenbau Reuter, guten Morgen."
+    ],
+    [
+     "Finn",
+     "Guten Morgen, hier ist Finn. Ich bin der Praktikant aus dem Lycée. Ich arbeite diese Woche im Team von Herrn Faber."
+    ],
+    [
+     "Frau Reuter",
+     "Ah, guten Morgen, Finn. Was gibt es?"
+    ],
+    [
+     "Finn",
+     "Ich bin leider krank. Ich habe seit heute Nacht Fieber und kann heute nicht kommen."
+    ],
+    [
+     "Frau Reuter",
+     "Oh, gute Besserung. Weißt du schon, wie lange du fehlst?"
+    ],
+    [
+     "Finn",
+     "Ich gehe heute zum Arzt. Ich rufe Sie heute Nachmittag wieder an und sage Bescheid."
+    ],
+    [
+     "Frau Reuter",
+     "Gut. Und denk an das Attest, wenn du länger als einen Tag fehlst. Hast du schon in der Schule Bescheid gesagt?"
+    ],
+    [
+     "Finn",
+     "Noch nicht, das mache ich gleich nach diesem Anruf."
+    ],
+    [
+     "Frau Reuter",
+     "Prima. Ich sage Herrn Faber Bescheid. Werd schnell gesund!"
+    ],
+    [
+     "Finn",
+     "Danke. Auf Wiederhören."
+    ]
+   ]
+  },
+  "at9-05l": {
+   "titel": "Werkstück-Präsentation in vier Teilen",
+   "art": "lesen",
+   "lektion": 5,
+   "dauer": 66.9,
+   "text": [
+    [
+     "",
+     "Werkstück-Präsentation in vier Teilen"
+    ],
+    [
+     "",
+     "Du brauchst: dein Werkstück, Sprechkarten, eventuell Fotos von Zwischenschritten."
+    ],
+    [
+     "",
+     "Schritt 1: Begrüßung und Thema: „Hallo, ich stelle euch meinen … vor.“"
+    ],
+    [
+     "",
+     "Schritt 2: Wie habe ich es gemacht? Material, Werkzeuge, die wichtigsten Arbeitsschritte. Zeig dabei das Werkstück."
+    ],
+    [
+     "",
+     "Schritt 3: Was war schwierig? Erzähl von einem Problem und wie du es gelöst hast. Das zeigt, dass du mitdenkst."
+    ],
+    [
+     "",
+     "Schritt 4: Was habe ich gelernt? Und worauf bist du stolz? Zum Schluss: „Habt ihr Fragen?“"
+    ],
+    [
+     "",
+     "Tipps: Schau die Zuhörer an, nicht nur deine Karten. Sprich laut und langsam. Stell dich gerade hin. Auf die Sprechkarten schreibst du nur Stichwörter, keine ganzen Sätze. Und: Ein bisschen Aufregung ist normal – sie zeigt, dass dir die Sache wichtig ist."
+    ]
+   ]
+  },
+  "at9-05h": {
+   "titel": "Toms Vogelhaus",
+   "art": "hoeren",
+   "lektion": 5,
+   "dauer": 67.2,
+   "text": [
+    [
+     "Tom",
+     "Hallo zusammen. Ich stelle euch heute mein Vogelhaus vor."
+    ],
+    [
+     "Tom",
+     "Es ist aus Fichtenholz, achtzehn Millimeter dick. Das Dach ist aus Sperrholz. Ich habe zuerst eine Zeichnung und eine Stückliste gemacht. Dann habe ich gesägt, das Einflugloch gebohrt, geschliffen und alles verschraubt. Das Dach kann man aufklappen, damit man das Haus im Herbst putzen kann."
+    ],
+    [
+     "Tom",
+     "Schwierig war das Einflugloch. Beim ersten Versuch ist das Holz auf der Rückseite ausgerissen und gesplittert. Herr Steffen hat mir gezeigt, dass ich ein Restholz dahinterlegen muss. Beim zweiten Mal war das Loch ganz sauber."
+    ],
+    [
+     "Tom",
+     "Gelernt habe ich, dass gute Planung viel Zeit spart. Und ich bin stolz, dass das Haus jetzt bei meiner Oma im Garten hängt und schon Meisen eingezogen sind. Habt ihr Fragen?"
+    ],
+    [
+     "Nele",
+     "Ich habe keine Frage, aber eine Rückmeldung: Du hast laut und deutlich gesprochen, und man hat alle vier Teile erkannt. Toll, dass du das Problem mit dem Bohrer erzählt hast. Mein Tipp: Zeig das Werkstück noch mehr – halt es hoch, wenn du über das Dach sprichst."
+    ]
+   ]
+  },
+  "at9-06l": {
+   "titel": "Was ist ein Meisterstück?",
+   "art": "lesen",
+   "lektion": 6,
+   "dauer": 58.3,
+   "text": [
+    [
+     "",
+     "Was ist ein Meisterstück?"
+    ],
+    [
+     "",
+     "Wer im Handwerk Meisterin oder Meister werden will, baut bis heute ein Meisterstück. Damit zeigt man, dass man den Beruf beherrscht. Dein Meisterstück zeigt, was du im Atelier gelernt hast: planen, sicher arbeiten, genau sein und präsentieren."
+    ],
+    [
+     "",
+     "Der Projektvertrag."
+    ],
+    [
+     "",
+     "Bevor du anfängst, schließt du mit deiner Lehrperson einen Projektvertrag. Darin steht: Was baust du? Bis wann? Welches Material und welche Maschinen brauchst du? Woran erkennt man, dass es gut ist? Beide unterschreiben. So wissen alle, was abgemacht ist."
+    ],
+    [
+     "",
+     "Die Bewertung."
+    ],
+    [
+     "",
+     "Bewertet werden nicht nur das fertige Stück, sondern auch die Planung, die Arbeitsweise (Sicherheit, Ordnung, Zeit), die Qualität und die Präsentation. Ein Meisterstück muss nicht kompliziert sein. Ein einfaches Stück, sauber gemacht, ist besser als ein großes, das nicht fertig wird."
+    ]
+   ]
+  },
+  "at9-06h": {
+   "titel": "Der Projektvertrag",
+   "art": "hoeren",
+   "lektion": 6,
+   "dauer": 59.6,
+   "text": [
+    [
+     "Yusuf",
+     "Ich möchte einen Hocker bauen. Mit vier Beinen, aus Eiche, und mit einer Schublade."
+    ],
+    [
+     "Herr Steffen",
+     "Gute Idee. Wie viel Zeit haben wir?"
+    ],
+    [
+     "Yusuf",
+     "Acht Doppelstunden."
+    ],
+    [
+     "Herr Steffen",
+     "Eiche ist sehr hart und teuer, und eine Schublade ist schwierig. Schaffst du das in acht Doppelstunden?"
+    ],
+    [
+     "Yusuf",
+     "Hm. Wahrscheinlich nicht. Was ist, wenn ich Buche nehme und statt der Schublade ein Ablagebrett unten mache?"
+    ],
+    [
+     "Herr Steffen",
+     "Das ist realistisch. Dann schreiben wir in den Vertrag: Hocker aus Buche, Sitzhöhe 45 Zentimeter, mit Ablagebrett. Fertig in acht Doppelstunden. Welche Maschinen brauchst du?"
+    ],
+    [
+     "Yusuf",
+     "Säge, Säulenbohrmaschine, Schleifmaschine. Für die Schleifmaschine habe ich noch keine Unterschrift im Maschinen-Pass."
+    ],
+    [
+     "Herr Steffen",
+     "Dann machen wir das in der ersten Stunde. Und woran erkennen wir, dass der Hocker gut ist?"
+    ],
+    [
+     "Yusuf",
+     "Er wackelt nicht, die Kanten sind glatt, und ich kann mich draufsetzen."
+    ],
+    [
+     "Herr Steffen",
+     "Perfekte Kriterien. Dann unterschreiben wir beide."
+    ]
+   ]
+  }
+ }
+}

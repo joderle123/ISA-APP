@@ -256,7 +256,7 @@
           "art": "info",
           "symbol": "achtung",
           "titel": "Le prix par mois est trompeur",
-          "text": "Pour les abonnements, les contrats de téléphone et les achats à crédit, c’est le prix total qui compte : le prix mensuel multiplié par le nombre de mois, plus tout ce qu’on paie une seule fois. Un abonnement à 9,99 euros par mois coûte presque 120 euros par an."
+          "text": "Pour les abonnements, les contrats de téléphone et les achats à crédit, c’est le prix total qui compte. C’est le prix mensuel multiplié par le nombre de mois, plus tout ce qu’on paie une seule fois. Un abonnement à 9,99 euros par mois coûte presque 120 euros par an."
         },
         {
           "art": "aufgabe",
@@ -305,7 +305,7 @@
           "punkte": [
             "Parles-en tôt : avec tes parents, une personne de confiance ou le SePAS.",
             "Ne fais pas de nouvelles dettes pour payer les anciennes.",
-            "Si on te met la pression pour que tu envoies de l’argent ou des cartes prépayées : ne paie pas et préviens tout de suite un adulte de confiance."
+            "On te met la pression pour envoyer de l’argent ou des cartes prépayées ? Ne paie pas et préviens tout de suite un adulte de confiance."
           ]
         },
         {
@@ -549,7 +549,7 @@
             "Vous jouez à deux et vous avez 120 euros pour tout le mois. Il n’y en aura pas plus, sauf si une carte le dit.",
             "Toutes les équipes avancent ensemble de semaine en semaine. À chaque station, vous lisez les cartes de la semaine, vous décidez, vous payez à l’adulte qui anime et vous notez tout dans le livre de caisse.",
             "Quand il faut calculer, calculez avant de payer.",
-            "Si vous passez dans le rouge, il vous faut une solution : y renoncer, vendre quelque chose, convenir d’un paiement échelonné ou emprunter – avec toutes les conséquences.",
+            "Vous passez dans le rouge ? Il vous faut une solution : y renoncer, vendre quelque chose, payer en plusieurs fois ou emprunter – avec toutes les conséquences.",
             "Tous les montants sont des exemples."
           ]
         },
@@ -3920,7 +3920,7 @@
           "art": "info",
           "symbol": "hilfe",
           "titel": "Quand il s’agit d’une personne",
-          "text": "S’il s’agit du comportement d’une personne précise, par exemple d’un enseignant ou d’un camarade, ce n’est pas une affaire pour le conseil de classe, mais pour un entretien avec une personne de confiance, le SePAS ou le ou la responsable."
+          "text": "Il s’agit du comportement d’une personne précise, par exemple d’un enseignant ou d’un camarade ? Ce n’est pas une affaire pour le conseil de classe. Parles-en plutôt avec une personne de confiance, le SePAS ou le ou la responsable."
         }
       ],
       "lehrer": {

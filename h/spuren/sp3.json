@@ -1,0 +1,474 @@
+{
+ "modul": "sp3",
+ "titel": {
+  "de": "Turnen und Balance",
+  "fr": "Gymnastique et équilibre"
+ },
+ "sprache": "de",
+ "spuren": {
+  "sp3-01l": {
+   "titel": "Regeln für sicheres Turnen",
+   "art": "lesen",
+   "lektion": 1,
+   "dauer": 78.2,
+   "text": [
+    [
+     "",
+     "Regeln für sicheres Turnen"
+    ],
+    [
+     "",
+     "Vor dem Turnen."
+    ],
+    [
+     "",
+     "Schmuck ab, Uhren und Ketten weg, lange Haare zusammenbinden, kein Kaugummi. Man turnt in Turnschuhen oder barfuß – nicht in Socken, da rutscht man."
+    ],
+    [
+     "",
+     "Geräte tragen und aufbauen."
+    ],
+    [
+     "",
+     "Matten werden getragen, nicht gezogen. An jeder Ecke fasst eine Person an. Einer gibt das Kommando: „Achtung – hoch!“ Langbänke tragen zwei Personen. Große Geräte wie Kästen und Barren baut ihr nur mit der Lehrperson auf. Um jedes Gerät liegen Matten ohne Lücken."
+    ],
+    [
+     "",
+     "Helfen und sichern."
+    ],
+    [
+     "",
+     "Beim Helfen unterstützt du jemanden bei einer Bewegung, zum Beispiel mit einer Hand am Oberarm. Beim Sichern stehst du bereit, um jemanden aufzufangen, falls er fällt. Man greift mit dem Klammergriff: beide Hände umfassen den Oberarm – eine Hand nah an der Schulter, eine nah am Ellenbogen."
+    ],
+    [
+     "",
+     "Wer hilft, schaut immer auf die turnende Person und redet mit ihr: „Bereit? Ich bin da.“ Und: Jeder darf sagen, wenn er etwas noch nicht probieren will."
+    ]
+   ]
+  },
+  "sp3-01h": {
+   "titel": "Mattentransport",
+   "art": "hoeren",
+   "lektion": 1,
+   "dauer": 48.3,
+   "text": [
+    [
+     "Frau Diallo",
+     "Wir holen die große Matte. Tom, Mia, Sami und Yusuf: Jeder stellt sich an eine Ecke."
+    ],
+    [
+     "Frau Diallo",
+     "Greift die Schlaufe an eurer Ecke. Geht in die Knie, der Rücken bleibt gerade."
+    ],
+    [
+     "Frau Diallo",
+     "Tom, du gibst das Kommando."
+    ],
+    [
+     "Tom",
+     "Achtung – und – hoch!"
+    ],
+    [
+     "Frau Diallo",
+     "Gut. Jetzt geht ihr langsam los. Tom sagt, wohin. Nicht rennen."
+    ],
+    [
+     "Tom",
+     "Wir gehen nach links, zum Barren. … Langsam. … Stopp!"
+    ],
+    [
+     "Frau Diallo",
+     "Jetzt legt ihr die Matte genau hier ab, ohne Lücke zur anderen Matte."
+    ],
+    [
+     "Tom",
+     "Achtung – und – ab!"
+    ],
+    [
+     "Frau Diallo",
+     "Perfekt. Nele, du kontrollierst bitte, ob die Matten ohne Lücken liegen und nicht verrutschen."
+    ]
+   ]
+  },
+  "sp3-02l": {
+   "titel": "Wie hält der Körper das Gleichgewicht?",
+   "art": "lesen",
+   "lektion": 2,
+   "dauer": 47.3,
+   "text": [
+    [
+     "",
+     "Wie hält der Körper das Gleichgewicht?"
+    ],
+    [
+     "",
+     "Damit du nicht umfällst, arbeiten drei „Helfer“ zusammen."
+    ],
+    [
+     "",
+     "Die Augen sehen, wo oben und unten ist. Darum ist es mit geschlossenen Augen schwerer."
+    ],
+    [
+     "",
+     "Im Innenohr gibt es ein kleines Gleichgewichtsorgan. Darin ist Flüssigkeit. Wenn du den Kopf bewegst, bewegt sich die Flüssigkeit, und das Gehirn merkt: Ich drehe mich oder kippe."
+    ],
+    [
+     "",
+     "Die Muskeln und Gelenke melden dem Gehirn ständig, wie dein Körper steht. Das Gehirn schickt blitzschnell Befehle zurück: ein bisschen nach links, Bauch fest!"
+    ],
+    [
+     "",
+     "Gleichgewicht kann man trainieren – in jedem Alter. Je öfter du übst, desto schneller reagieren deine Muskeln. Ein guter Trick: Such dir einen festen Punkt und schau ihn an. Und spann den Bauch an."
+    ]
+   ]
+  },
+  "sp3-02h": {
+   "titel": "Die Balance-Challenge",
+   "art": "hoeren",
+   "lektion": 2,
+   "dauer": 72.9,
+   "text": [
+    [
+     "Frau Diallo",
+     "Die Balance-Challenge! Stufe eins: Stellt euch auf ein Bein. Sucht euch einen festen Punkt an der Wand und schaut ihn an. Zehn Sekunden. … Und Bein wechseln."
+    ],
+    [
+     "Frau Diallo",
+     "Stufe zwei: Auf einem Bein, und die Arme langsam über den Kopf strecken. Bauch fest! Zehn Sekunden."
+    ],
+    [
+     "Frau Diallo",
+     "Stufe drei: Standwaage. Oberkörper nach vorn, ein Bein nach hinten, bis ihr aussieht wie ein T. Fünf Sekunden halten."
+    ],
+    [
+     "Frau Diallo",
+     "Stufe vier: auf einem Bein stehen – und die Augen schließen. Wer wackelt, macht die Augen einfach wieder auf. Zehn Sekunden."
+    ],
+    [
+     "Frau Diallo",
+     "Wer im Rollstuhl sitzt: Bremsen fest. Wenn es geht, hebt die Füße von der Fußstütze. Arme zur Seite, und lehnt den Oberkörper langsam nach links und rechts – nur so weit, wie es sicher ist. Nele, super gemacht!"
+    ],
+    [
+     "Frau Diallo",
+     "Stufe fünf, die Profistufe: zu zweit. Ihr steht auf einem Bein, gebt euch beide Hände und lehnt euch ganz leicht nach hinten. Haltet euch gegenseitig im Gleichgewicht!"
+    ]
+   ]
+  },
+  "sp3-03l": {
+   "titel": "Die Rolle vorwärts in vier Phasen",
+   "art": "lesen",
+   "lektion": 3,
+   "dauer": 61.5,
+   "text": [
+    [
+     "",
+     "Die Rolle vorwärts in vier Phasen"
+    ],
+    [
+     "",
+     "Du brauchst: eine Turnmatte, eventuell eine schräge Matte (Keil)."
+    ],
+    [
+     "",
+     "Schritt 1: Hocke: Geh in die Hocke, die Arme zeigen nach vorn."
+    ],
+    [
+     "",
+     "Schritt 2: Hände und Kinn: Setz die Hände schulterbreit vor die Füße auf die Matte. Nimm das Kinn auf die Brust und schau zum Bauch. Der Po geht nach oben."
+    ],
+    [
+     "",
+     "Schritt 3: Rollen: Stoß dich mit den Beinen ab und roll über den runden Rücken – erst der Nacken, dann der Rücken, dann der Po. Nie auf den Kopf rollen."
+    ],
+    [
+     "",
+     "Schritt 4: Aufstehen: Zieh die Knie an, greif nach vorn und steh ohne Hände auf."
+    ],
+    [
+     "",
+     "Rollen nur auf der Matte und nur, wenn die Lehrperson es erlaubt. Leichter geht es auf einer schrägen Matte: Man rollt bergab. Wer Probleme mit Nacken oder Rücken hat, sagt es vorher – dann gibt es eine andere Übung."
+    ]
+   ]
+  },
+  "sp3-03h": {
+   "titel": "Sami traut sich",
+   "art": "hoeren",
+   "lektion": 3,
+   "dauer": 62.0,
+   "text": [
+    [
+     "Sami",
+     "Ich mache das nicht. Ich habe Angst, dass ich mir den Hals verdrehe."
+    ],
+    [
+     "Frau Diallo",
+     "Das verstehe ich. Wir machen es ganz langsam, und du entscheidest, wann du weitermachst. Einverstanden?"
+    ],
+    [
+     "Sami",
+     "Okay."
+    ],
+    [
+     "Frau Diallo",
+     "Erst ohne Rolle: Setz dich in die Hocke auf die schräge Matte. Jetzt mach dich ganz rund, Kinn auf die Brust, Arme um die Knie. Und schaukel ein bisschen vor und zurück. Wie ein Schaukelstuhl."
+    ],
+    [
+     "Sami",
+     "Das geht."
+    ],
+    [
+     "Frau Diallo",
+     "Super. Jetzt die Hände vor die Füße auf die Matte. Kinn auf die Brust. Ich lege eine Hand an deinen Nacken und eine an deinen Oberschenkel. Ich helfe dir herum. Bereit?"
+    ],
+    [
+     "Sami",
+     "Bereit … Oh! Ich bin herumgerollt!"
+    ],
+    [
+     "Frau Diallo",
+     "Und du hast das Kinn die ganze Zeit auf der Brust gehabt. Genau richtig. Noch einmal?"
+    ],
+    [
+     "Sami",
+     "Ja. Und dann vielleicht ohne Hilfe."
+    ]
+   ]
+  },
+  "sp3-04l": {
+   "titel": "Die vier Phasen eines Sprungs",
+   "art": "lesen",
+   "lektion": 4,
+   "dauer": 59.6,
+   "text": [
+    [
+     "",
+     "Die vier Phasen eines Sprungs"
+    ],
+    [
+     "",
+     "Anlauf: Man läuft schnell, aber kontrolliert auf das Sprunggerät zu. Die letzten Schritte werden kürzer."
+    ],
+    [
+     "",
+     "Absprung: Beim Turnen springt man mit beiden Beinen gleichzeitig ab, zum Beispiel vom Minitrampolin oder vom Sprungbrett. Die Arme schwingen kräftig nach oben."
+    ],
+    [
+     "",
+     "Flug: In der Luft macht man eine Figur: Strecksprung (ganz gerade), Hocksprung (Knie an die Brust) oder Grätschsprung (Beine auseinander). Der Körper ist fest, Bauch angespannt."
+    ],
+    [
+     "",
+     "Landung: Man landet auf beiden Fußballen, die Knie beugen sich wie Federn, die Arme gehen nach vorn. Dann steht man still – „Landung stehen“ – und zeigt mit den Armen: Fertig!"
+    ],
+    [
+     "",
+     "Eine gute Landung schützt Knie und Rücken. Wer mit geraden Beinen landet, bekommt einen harten Stoß. Darum übt man die Landung auch einzeln, ohne Anlauf – zum Beispiel mit einem Sprung von einer Bank. Am Minitrampolin steht immer eine Person zum Sichern neben der Landestelle."
+    ]
+   ]
+  },
+  "sp3-04h": {
+   "titel": "Landung stehen!",
+   "art": "hoeren",
+   "lektion": 4,
+   "dauer": 46.7,
+   "text": [
+    [
+     "Chloé",
+     "So, mein Strecksprung. Wie war es?"
+    ],
+    [
+     "Tom",
+     "Der Anlauf war gut. Aber du bist mit einem Bein zuerst abgesprungen."
+    ],
+    [
+     "Chloé",
+     "Ach ja? Hab ich gar nicht gemerkt."
+    ],
+    [
+     "Tom",
+     "Und bei der Landung bist du ganz steif gelandet und dann nach vorn gestolpert."
+    ],
+    [
+     "Chloé",
+     "Stimmt, das hat ein bisschen in den Knien gezogen."
+    ],
+    [
+     "Tom",
+     "Frau Diallo hat gesagt: Knie beugen wie Federn, Arme nach vorn, und dann stehen bleiben wie eine Statue."
+    ],
+    [
+     "Chloé",
+     "Okay, noch einmal. Beide Beine, Knie beugen, stehen bleiben."
+    ],
+    [
+     "Tom",
+     "Jetzt war es super! Du bist ganz leise gelandet und stehen geblieben."
+    ],
+    [
+     "Chloé",
+     "Und es hat gar nicht mehr in den Knien gezogen. Jetzt probiere ich den Hocksprung."
+    ]
+   ]
+  },
+  "sp3-05l": {
+   "titel": "Regeln für Akrobatik",
+   "art": "lesen",
+   "lektion": 5,
+   "dauer": 75.1,
+   "text": [
+    [
+     "",
+     "Regeln für Akrobatik"
+    ],
+    [
+     "",
+     "Bei der Akrobatik gibt es Unten-Personen, die tragen, Oben-Personen, die auf ihnen stehen oder knien, und Helfer, die sichern."
+    ],
+    [
+     "",
+     "Stabil stehen: Die Unten-Person macht einen festen „Tisch“: Hände unter den Schultern, Knie unter der Hüfte, Rücken gerade, Bauch fest."
+    ],
+    [
+     "",
+     "Richtig belasten: Die Oben-Person stellt Hände oder Knie nur auf die Schultern und die Hüfte der Unten-Person – nie auf die Mitte des Rückens. Da ist der Rücken weich."
+    ],
+    [
+     "",
+     "Kommandos: Vor jeder Figur ruft jemand: „Achtung – und – hopp!“ zum Aufbauen und „Achtung – und – ab!“ zum Abbauen. Man klettert langsam herunter, man springt nicht."
+    ],
+    [
+     "",
+     "Zeigen: Steht die Figur, halten alle sie drei Sekunden und strecken die freien Arme zur Seite. Dann wird kontrolliert abgebaut."
+    ],
+    [
+     "",
+     "Jeder darf sagen: „Stopp!“ Dann wird sofort abgebaut. Und: Jede Rolle ist wichtig – auch wer im Rollstuhl sitzt, kann Teil einer Figur sein, zum Beispiel als Mitte, die die Arme der anderen hält."
+    ]
+   ]
+  },
+  "sp3-05h": {
+   "titel": "Achtung – und – hopp!",
+   "art": "hoeren",
+   "lektion": 5,
+   "dauer": 60.6,
+   "text": [
+    [
+     "Amira",
+     "Wir bauen die Figur „Brücke mit Mitte“. Yusuf und ich sind unten im Tisch, Mia kniet oben, und Nele ist in der Mitte vor uns."
+    ],
+    [
+     "Yusuf",
+     "Tisch steht. Hände unter den Schultern, Bauch fest."
+    ],
+    [
+     "Amira",
+     "Mia, Knie nur auf unsere Hüften, Hände auf unsere Schultern. Achtung – und – hopp!"
+    ],
+    [
+     "Mia",
+     "Ich bin oben. Alles stabil. Jetzt nehme ich die Hände hoch."
+    ],
+    [
+     "Nele",
+     "Und ich strecke die Arme hoch und halte Mias Hände. So steht sie noch sicherer."
+    ],
+    [
+     "Amira",
+     "Super. Drei Sekunden halten: eins – zwei – drei!"
+    ],
+    [
+     "Yusuf",
+     "Ah, mein Arm zittert!"
+    ],
+    [
+     "Amira",
+     "Dann bauen wir sofort ab. Achtung – und – ab! Mia, langsam herunter."
+    ],
+    [
+     "Mia",
+     "Bin unten. Alles gut, Yusuf?"
+    ],
+    [
+     "Yusuf",
+     "Ja. Nächstes Mal tausche ich mit dir, dann bin ich oben."
+    ]
+   ]
+  },
+  "sp3-06l": {
+   "titel": "So gestaltet ihr eine Kür",
+   "art": "lesen",
+   "lektion": 6,
+   "dauer": 76.1,
+   "text": [
+    [
+     "",
+     "So gestaltet ihr eine Kür"
+    ],
+    [
+     "",
+     "Du brauchst: Matten, Bank, Minitrampolin, Musik (etwa eine Minute), Kür-Karte zum Ausfüllen."
+    ],
+    [
+     "",
+     "Schritt 1: Elemente wählen: Wählt fünf bis sechs Elemente: zum Beispiel eine Balance, eine Rolle, einen Sprung, eine Akrobatik-Figur. Jeder macht, was er sicher kann."
+    ],
+    [
+     "",
+     "Schritt 2: Verbinden: Überlegt, wie ihr von einem Element zum nächsten kommt: gehen, drehen, gleiten. So wird es eine Folge."
+    ],
+    [
+     "",
+     "Schritt 3: Anfang und Schluss: Beginnt und endet mit einer festen Pose, die alle gleichzeitig zeigen."
+    ],
+    [
+     "",
+     "Schritt 4: Musik: Passt die Bewegungen an die Musik an. Zählt mit: Acht Schläge pro Element."
+    ],
+    [
+     "",
+     "Schritt 5: Üben: Übt die Folge mindestens fünfmal. Helfer sichern dort, wo es nötig ist."
+    ],
+    [
+     "",
+     "Bei der Präsentation achtet die Jury auf: Sicherheit, saubere Bewegungen, gute Verbindungen, gemeinsam im Takt und Ausdruck. Es zählt nicht, wer am höchsten springt – sondern wie gut ihr zusammen eine schöne Folge zeigt."
+    ]
+   ]
+  },
+  "sp3-06h": {
+   "titel": "Die Jury sagt …",
+   "art": "hoeren",
+   "lektion": 6,
+   "dauer": 59.2,
+   "text": [
+    [
+     "Lea",
+     "Wir sind die Jury. Zuerst: Das war richtig schön! Der Anfang war super, alle standen gleichzeitig in der Pose."
+    ],
+    [
+     "Ben",
+     "Die Rollen waren sauber, und die Akrobatik-Figur war stabil. Ihr habt sie drei Sekunden gehalten und kontrolliert abgebaut."
+    ],
+    [
+     "Lea",
+     "Was wir verbessern würden: Zwischen dem Sprung und der Figur gab es eine lange Pause. Da wusste man nicht, ob es weitergeht."
+    ],
+    [
+     "Ben",
+     "Und am Ende wart ihr nicht ganz im Takt. Die Musik war schon aus, und ihr habt noch gedreht."
+    ],
+    [
+     "Mia",
+     "Stimmt, die Pause war, weil wir die Matte holen mussten. Wir könnten sie vorher schon hinlegen."
+    ],
+    [
+     "Lea",
+     "Gute Idee. Und ein Tipp: Zählt beim Üben laut mit. Dann seid ihr am Ende zusammen."
+    ],
+    [
+     "Ben",
+     "Insgesamt: Sicherheit und Figur – sehr gut. Verbindung und Takt – noch üben. Applaus!"
+    ]
+   ]
+  }
+ }
+}

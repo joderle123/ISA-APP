@@ -1,0 +1,634 @@
+{
+ "modul": "vs7",
+ "titel": {
+  "de": "Lernen und arbeiten",
+  "fr": "Apprendre et travailler"
+ },
+ "sprache": "de",
+ "spuren": {
+  "vs7-01l": {
+   "titel": "Ein Recht für alle",
+   "art": "lesen",
+   "lektion": 1,
+   "dauer": 89.3,
+   "text": [
+    [
+     "",
+     "Ein Recht für alle"
+    ],
+    [
+     "",
+     "Jedes Kind hat ein Recht auf Bildung. So steht es in der Allgemeinen Erklärung der Menschenrechte und in der UN-Kinderrechtskonvention. Bildung heißt nicht nur Schule: Man lernt in der Familie, im Verein, in der Lehre, im Internet – ein ganzes Leben lang."
+    ],
+    [
+     "",
+     "Warum ist Bildung so wichtig."
+    ],
+    [
+     "",
+     "Wer lesen, schreiben und rechnen kann, findet leichter eine Arbeit, versteht Verträge und Nachrichten und kann bei Wahlen mitbestimmen. Gebildete Menschen sind im Durchschnitt gesünder. Bildung hilft, Armut zu überwinden."
+    ],
+    [
+     "",
+     "Nicht für alle selbstverständlich."
+    ],
+    [
+     "",
+     "Trotzdem gehen weltweit mehr als 250 Millionen Kinder und Jugendliche nicht zur Schule. Die Gründe: Armut, Krieg, Kinderarbeit, zu weite Wege. Oft trifft es Mädchen besonders."
+    ],
+    [
+     "",
+     "Malala."
+    ],
+    [
+     "",
+     "Das Mädchen Malala Yousafzai aus Pakistan setzte sich dafür ein, dass Mädchen zur Schule gehen dürfen. 2012, mit 15 Jahren, wurde sie deshalb angeschossen. Sie überlebte und kämpfte weiter. 2014 bekam sie als jüngster Mensch den Friedensnobelpreis. Ihr bekanntester Satz: „Ein Kind, ein Lehrer, ein Buch und ein Stift können die Welt verändern.“"
+    ]
+   ]
+  },
+  "vs7-01h": {
+   "titel": "Lesen lernen mit 40",
+   "art": "hoeren",
+   "lektion": 1,
+   "dauer": 54.4,
+   "text": [
+    [
+     "Noah",
+     "Herr Faber, Sie haben erst mit 40 richtig lesen gelernt. Wie kam das?"
+    ],
+    [
+     "Herr Faber",
+     "Als Kind war ich oft krank und habe viel verpasst. Irgendwann habe ich mich nicht mehr getraut zu sagen, dass ich es nicht kann. Ich habe mich durchgemogelt."
+    ],
+    [
+     "Noah",
+     "Wie geht das?"
+    ],
+    [
+     "Herr Faber",
+     "Ich habe gesagt: „Ich habe meine Brille vergessen.“ Formulare hat meine Frau ausgefüllt. Auf der Baustelle habe ich mir alles gemerkt. Aber ich hatte immer Angst, dass es jemand merkt."
+    ],
+    [
+     "Noah",
+     "Und was hat sich geändert?"
+    ],
+    [
+     "Herr Faber",
+     "Meine Tochter kam in die Schule. Sie wollte, dass ich ihr vorlese. Da habe ich mich bei einem Kurs für Erwachsene angemeldet. Es war schwer, aber die Lehrerin hat mich nie ausgelacht."
+    ],
+    [
+     "Noah",
+     "Und heute?"
+    ],
+    [
+     "Herr Faber",
+     "Heute lese ich ihr jeden Abend vor. Und ich lese Zeitung! Ich habe gelernt: Für Lernen ist es nie zu spät. Und man muss sich nicht schämen, wenn man Hilfe braucht."
+    ]
+   ]
+  },
+  "vs7-02l": {
+   "titel": "Mehr als Geld",
+   "art": "lesen",
+   "lektion": 2,
+   "dauer": 69.5,
+   "text": [
+    [
+     "",
+     "Mehr als Geld"
+    ],
+    [
+     "",
+     "Erwachsene verbringen einen großen Teil ihres Lebens bei der Arbeit. Natürlich arbeiten die meisten, um Geld zu verdienen: für Wohnung, Essen, Freizeit. Aber Arbeit gibt noch mehr."
+    ],
+    [
+     "",
+     "Was Arbeit gibt."
+    ],
+    [
+     "",
+     "Struktur: Der Tag hat einen festen Rhythmus. Kontakte: Man trifft Kolleginnen und Kollegen, oft entstehen Freundschaften. Anerkennung: Andere sehen, was man kann. Sinn: Man spürt, dass man gebraucht wird – zum Beispiel, wenn ein Patient sich bedankt oder ein Haus fertig ist, an dem man mitgebaut hat."
+    ],
+    [
+     "",
+     "Last oder Freude."
+    ],
+    [
+     "",
+     "Arbeit kann auch anstrengend sein: früh aufstehen, Stress, ein schwieriger Chef. Ob Arbeit eher Last oder Freude ist, hängt oft von den Bedingungen ab: Ist der Lohn fair? Ist man sicher? Wird man respektvoll behandelt?"
+    ],
+    [
+     "",
+     "Zur Arbeit passen."
+    ],
+    [
+     "",
+     "Menschen sind verschieden. Die eine arbeitet gern draußen, der andere am Computer. Manche wollen anderen helfen, andere lieber etwas bauen. Wer weiß, was ihm wichtig ist, findet leichter eine Arbeit, die zu ihm passt."
+    ]
+   ]
+  },
+  "vs7-02h": {
+   "titel": "Drei Menschen, drei Jobs",
+   "art": "hoeren",
+   "lektion": 2,
+   "dauer": 57.7,
+   "text": [
+    [
+     "Lio",
+     "Erste Frage an die Bäckerin: Was mögen Sie an Ihrer Arbeit?"
+    ],
+    [
+     "Bäckerin",
+     "Den Duft am frühen Morgen! Und wenn Stammkunden sagen: „Ihr Brot ist das beste.“ Schwer ist das Aufstehen um drei Uhr. Ich gehe abends sehr früh schlafen."
+    ],
+    [
+     "Lio",
+     "Und Sie, als Pfleger im Krankenhaus?"
+    ],
+    [
+     "Pfleger",
+     "Ich mag, dass ich jeden Tag gebraucht werde. Wenn jemand nach einer Operation wieder lacht, ist das ein tolles Gefühl. Schwer sind die Nachtschichten. Und wenn jemand stirbt, nehme ich das manchmal mit nach Hause."
+    ],
+    [
+     "Lio",
+     "Und zum Schluss die Informatikerin."
+    ],
+    [
+     "Informatikerin",
+     "Ich löse gern knifflige Probleme. Und ich kann oft von zu Hause aus arbeiten. Aber genau das ist manchmal auch schwer: Ich vermisse meine Kollegen. Darum gehe ich zweimal pro Woche ins Büro."
+    ],
+    [
+     "Lio",
+     "Spannend: Alle drei mögen etwas anderes. Aber alle wissen genau, warum sie ihren Job machen."
+    ]
+   ]
+  },
+  "vs7-03l": {
+   "titel": "Die unsichtbaren Heldinnen und Helden",
+   "art": "lesen",
+   "lektion": 3,
+   "dauer": 82.9,
+   "text": [
+    [
+     "",
+     "Die unsichtbaren Heldinnen und Helden"
+    ],
+    [
+     "",
+     "Im Frühling 2020, während der Corona-Pandemie, blieben viele Menschen zu Hause. Doch manche mussten weiterarbeiten: Kassiererinnen, Pflegekräfte, Müllwerker, Lkw-Fahrer, Reinigungskräfte. Plötzlich sahen alle: Ohne sie läuft nichts. Menschen klatschten auf ihren Balkonen Beifall."
+    ],
+    [
+     "",
+     "Wenig Ansehen, wenig Lohn."
+    ],
+    [
+     "",
+     "Trotzdem haben gerade diese Berufe oft wenig Ansehen und keinen hohen Lohn. Manche Menschen schauen auf sie herab. Dabei hat jede ehrliche Arbeit ihre Würde."
+    ],
+    [
+     "",
+     "Ein Vorurteil: „Nur eine Lehre“."
+    ],
+    [
+     "",
+     "Manche sagen: „Eine Lehre machen nur die, die nicht studieren können.“ Das stimmt nicht. Handwerkerinnen, Mechatroniker oder Köche werden in Luxemburg dringend gesucht. Nach einer Lehre mit DAP kann man sich weiterbilden, zum Beispiel zum Meister oder zur Meisterin, und sogar einen eigenen Betrieb führen. Viele Wege stehen offen."
+    ],
+    [
+     "",
+     "Was zählt."
+    ],
+    [
+     "",
+     "Ob jemand Ärztin ist oder Bäcker: Wichtig ist, dass man seine Arbeit gut und gewissenhaft macht. Darauf kann man stolz sein."
+    ]
+   ]
+  },
+  "vs7-03h": {
+   "titel": "„Nur“ eine Lehre?",
+   "art": "hoeren",
+   "lektion": 3,
+   "dauer": 60.2,
+   "text": [
+    [
+     "Chloé",
+     "Tom! Ich habe gehört, du gehst nicht mehr aufs Lyzeum? Du machst nur eine Lehre?"
+    ],
+    [
+     "Tom",
+     "Nur? Ich mache eine Lehre als Mechatroniker. Ich bin drei Tage im Betrieb und zwei Tage in der Schule."
+    ],
+    [
+     "Chloé",
+     "Sorry, so habe ich das nicht gemeint. Und, gefällt es dir?"
+    ],
+    [
+     "Tom",
+     "Total. Gestern habe ich mit meinem Ausbilder eine Maschine repariert, die die ganze Fabrik lahmgelegt hatte. Als sie wieder lief, haben alle geklatscht."
+    ],
+    [
+     "Chloé",
+     "Cool. Aber verdienst du da schon was?"
+    ],
+    [
+     "Tom",
+     "Ja, eine Lehrlingsentschädigung. Und mein Ausbilder sagt, Mechatroniker werden überall gesucht. Später will ich den Meister machen."
+    ],
+    [
+     "Chloé",
+     "Mein Onkel ist Elektriker-Meister. Er hat eine eigene Firma mit zwölf Leuten."
+    ],
+    [
+     "Tom",
+     "Siehst du. Und weißt du was? In der Schule war ich oft unsicher. Im Betrieb merke ich jeden Tag: Ich kann was."
+    ]
+   ]
+  },
+  "vs7-04l": {
+   "titel": "Unbezahlt – aber unbezahlbar",
+   "art": "lesen",
+   "lektion": 4,
+   "dauer": 72.3,
+   "text": [
+    [
+     "",
+     "Unbezahlt – aber unbezahlbar"
+    ],
+    [
+     "",
+     "Ein Ehrenamt ist eine Arbeit, die man freiwillig und ohne Lohn macht – für andere oder für eine gute Sache. In Luxemburg engagieren sich sehr viele Menschen: in Sport- und Musikvereinen, bei den Pfadfindern, beim Roten Kreuz, im Tierheim oder in der Gemeinde."
+    ],
+    [
+     "",
+     "Ohne Freiwillige ginge es nicht."
+    ],
+    [
+     "",
+     "Die meisten Feuerwehrleute in Luxemburg sind Freiwillige. Wenn der Alarm kommt, lassen sie alles stehen und helfen. Schon Kinder und Jugendliche können bei der Jugendfeuerwehr mitmachen. Auch viele Vereine gäbe es ohne Ehrenamtliche nicht."
+    ],
+    [
+     "",
+     "Was bringt ein Ehrenamt."
+    ],
+    [
+     "",
+     "Man hilft anderen und erlebt Gemeinschaft. Man lernt Neues: Verantwortung tragen, im Team arbeiten, Erste Hilfe. Man bekommt Anerkennung – und Erfahrungen, die auch bei einer Bewerbung gut aussehen."
+    ],
+    [
+     "",
+     "Auch für Jugendliche."
+    ],
+    [
+     "",
+     "Über den Service National de la Jeunesse (SNJ) können Jugendliche und junge Erwachsene einen Freiwilligendienst machen, in Luxemburg oder im Ausland. Aber auch kleine Dinge zählen: einem Nachbarn beim Einkaufen helfen, Nachhilfe geben, beim Schulfest mithelfen."
+    ]
+   ]
+  },
+  "vs7-04h": {
+   "titel": "Wenn der Pieper geht",
+   "art": "hoeren",
+   "lektion": 4,
+   "dauer": 64.9,
+   "text": [
+    [
+     "Lina",
+     "Yusuf, was macht ihr eigentlich bei der Jugendfeuerwehr? Löscht ihr echte Brände?"
+    ],
+    [
+     "Yusuf",
+     "Nein, zu echten Einsätzen dürfen wir noch nicht. Wir üben: Schläuche ausrollen, Knoten, Erste Hilfe. Und wir lernen, wie man sich im Notfall richtig verhält."
+    ],
+    [
+     "Lina",
+     "Klingt nach viel Arbeit. Und du bekommst kein Geld dafür?"
+    ],
+    [
+     "Yusuf",
+     "Nein. Aber ich bekomme etwas anderes. Letzten Monat ist im Bus ein Mann umgekippt. Ich wusste sofort, was zu tun ist: 112 anrufen, stabile Seitenlage. Der Busfahrer hat mir danach die Hand geschüttelt."
+    ],
+    [
+     "Lina",
+     "Wow. Hattest du keine Angst?"
+    ],
+    [
+     "Yusuf",
+     "Doch, mein Herz hat gerast. Aber das Üben hilft. Und in der Gruppe sind wir wie eine zweite Familie. Wir zelten im Sommer zusammen."
+    ],
+    [
+     "Lina",
+     "Darf man da einfach mitmachen?"
+    ],
+    [
+     "Yusuf",
+     "Klar. Komm am Samstag mit zur Übung. Mädchen sind bei uns genauso willkommen. Die Beste beim Knotenmachen ist bei uns ein Mädchen!"
+    ]
+   ]
+  },
+  "vs7-05l": {
+   "titel": "Wer verdient was – und warum?",
+   "art": "lesen",
+   "lektion": 5,
+   "dauer": 91.8,
+   "text": [
+    [
+     "",
+     "Wer verdient was – und warum?"
+    ],
+    [
+     "",
+     "Löhne sind sehr verschieden. Wovon hängen sie ab?"
+    ],
+    [
+     "",
+     "Was den Lohn bestimmt."
+    ],
+    [
+     "",
+     "Ausbildung: Wer lange gelernt hat, verdient oft mehr. Verantwortung: Wer viele Menschen führt oder große Entscheidungen trifft, bekommt meist mehr. Angebot und Nachfrage: Wenn viele Firmen dringend jemanden suchen, steigt der Lohn. Verhandlungen: Gewerkschaften handeln für viele Berufe Löhne aus, die in einem Kollektivvertrag festgeschrieben werden."
+    ],
+    [
+     "",
+     "Regeln in Luxemburg."
+    ],
+    [
+     "",
+     "Luxemburg hat einen der höchsten Mindestlöhne in Europa. Erwachsenen darf kein Betrieb weniger zahlen. Für Jugendliche unter 18 ist er etwas niedriger, Lehrlinge bekommen eine Lehrlingsentschädigung. Wer eine passende Berufsausbildung hat (zum Beispiel ein DAP), bekommt einen höheren Mindestlohn. Und es gilt: Gleicher Lohn für gleiche Arbeit – egal ob Frau oder Mann."
+    ],
+    [
+     "",
+     "Ist das gerecht."
+    ],
+    [
+     "",
+     "Viele finden es ungerecht, dass Pflegekräfte, die Leben retten, viel weniger verdienen als manche Fußballstars. Man kann Gerechtigkeit unterschiedlich sehen: Soll bekommen, wer viel leistet? Wer viel braucht? Oder sollen alle gleich viel bekommen? Darüber streiten Menschen seit Jahrhunderten."
+    ]
+   ]
+  },
+  "vs7-05h": {
+   "titel": "Wer soll am meisten verdienen?",
+   "art": "hoeren",
+   "lektion": 5,
+   "dauer": 58.0,
+   "text": [
+    [
+     "Noah",
+     "Ich finde, der Fußballprofi soll am meisten verdienen. Er hat jahrelang trainiert, und Millionen Menschen schauen ihm zu."
+    ],
+    [
+     "Lea",
+     "Und die Pflegerin? Sie arbeitet nachts, rettet Leben und trägt riesige Verantwortung."
+    ],
+    [
+     "Noah",
+     "Aber Pflegerin kann fast jeder werden. So gut Fußball spielen können nur ganz wenige."
+    ],
+    [
+     "Lea",
+     "Fast jeder? Das ist eine harte Ausbildung! Und ohne Pflegekräfte bricht das Krankenhaus zusammen. Ohne Fußball nicht."
+    ],
+    [
+     "Lehrerin",
+     "Ihr argumentiert beide mit Gerechtigkeit – aber mit verschiedenen Maßstäben. Noah sagt: seltenes Können und Leistung. Lea sagt: Wichtigkeit für die Gesellschaft."
+    ],
+    [
+     "Noah",
+     "Okay. Vielleicht sollte die Pflegerin mehr verdienen als jetzt. Aber nicht mehr als der Fußballer."
+    ],
+    [
+     "Lea",
+     "Damit kann ich leben. Ein Kompromiss!"
+    ]
+   ]
+  },
+  "vs7-06l": {
+   "titel": "Ohne Arbeit",
+   "art": "lesen",
+   "lektion": 6,
+   "dauer": 76.7,
+   "text": [
+    [
+     "",
+     "Ohne Arbeit"
+    ],
+    [
+     "",
+     "In Luxemburg sind etwa 6 bis 7 von 100 Menschen, die arbeiten möchten, arbeitslos. Bei jungen Menschen sind es deutlich mehr. Die Gründe sind verschieden: Eine Firma schließt, Maschinen ersetzen Arbeit, jemand wird krank, oder es fehlt ein passender Abschluss."
+    ],
+    [
+     "",
+     "Mehr als Geld."
+    ],
+    [
+     "",
+     "Arbeitslos zu sein ist nicht nur ein Geldproblem. Viele Menschen verlieren ihren Tagesrhythmus, ihre Kollegen und das Gefühl, gebraucht zu werden. Manche schämen sich oder werden traurig. Dabei gilt: Arbeitslosigkeit kann jedem passieren. Wer arbeitslos ist, ist nicht „faul“."
+    ],
+    [
+     "",
+     "Wer hilft."
+    ],
+    [
+     "",
+     "Die ADEM, die Arbeitsagentur in Luxemburg, hilft bei der Suche nach einer Stelle und bietet Kurse an. Für eine bestimmte Zeit gibt es Arbeitslosengeld. Für Jugendliche gibt es besondere Hilfe: In der Maison de l’orientation bekommt man Beratung zu Schule, Ausbildung und Beruf."
+    ],
+    [
+     "",
+     "Abbrechen ist kein Ende."
+    ],
+    [
+     "",
+     "Manche Jugendliche brechen die Schule oder die Lehre ab. Das ist schwer, aber kein Ende. Wichtig ist, nicht allein zu bleiben und schnell Hilfe zu holen: bei Lehrkräften, beim SePAS, beim SNJ oder in der Maison de l’orientation."
+    ]
+   ]
+  },
+  "vs7-06h": {
+   "titel": "Zweiter Anlauf",
+   "art": "hoeren",
+   "lektion": 6,
+   "dauer": 57.1,
+   "text": [
+    [
+     "Beraterin",
+     "Marc, vor einem Jahr saßt du hier und hast gesagt: „Ich bin ein Versager.“ Erinnerst du dich?"
+    ],
+    [
+     "Marc",
+     "Ja. Ich hatte die Lehre als Koch abgebrochen. Ich bin morgens nicht mehr aufgestanden. Meine Freunde hatten alle Arbeit, nur ich nicht. Ich habe mich total geschämt."
+    ],
+    [
+     "Beraterin",
+     "Was hat dir geholfen?"
+    ],
+    [
+     "Marc",
+     "Dass Sie mich gefragt haben, was ich eigentlich gut kann – und nicht, was schiefgelaufen ist. Mir ist aufgefallen: Ich arbeite gern mit Holz."
+    ],
+    [
+     "Beraterin",
+     "Und dann?"
+    ],
+    [
+     "Marc",
+     "Dann habe ich ein Praktikum bei einem Schreiner gemacht. Zwei Wochen. Der Chef hat mich danach gefragt, ob ich die Lehre bei ihm machen will."
+    ],
+    [
+     "Beraterin",
+     "Und jetzt bist du im zweiten Lehrjahr."
+    ],
+    [
+     "Marc",
+     "Ja. Und ich stehe jeden Morgen um sechs auf – freiwillig! Ich habe gelernt: Ein Abbruch ist kein Ende. Man braucht nur jemanden, der einem hilft, den richtigen Weg zu finden."
+    ]
+   ]
+  },
+  "vs7-07l": {
+   "titel": "Hingabe an Gott",
+   "art": "lesen",
+   "lektion": 7,
+   "dauer": 89.9,
+   "text": [
+    [
+     "",
+     "Hingabe an Gott"
+    ],
+    [
+     "",
+     "Das arabische Wort Islam bedeutet „Hingabe an Gott“. Mit rund 2 Milliarden Gläubigen ist der Islam die zweitgrößte Religion der Welt. Musliminnen und Muslime glauben an einen Gott, auf Arabisch Allah."
+    ],
+    [
+     "",
+     "Der Prophet und der Koran."
+    ],
+    [
+     "",
+     "Der Prophet Mohammed lebte etwa von 570 bis 632 in Mekka und Medina, im heutigen Saudi-Arabien. Muslime glauben, dass Gott ihm durch den Engel Gabriel seine Botschaft offenbart hat. Diese steht im Koran, dem heiligen Buch des Islam. Auch Abraham, Mose und Jesus sind im Islam wichtige Propheten."
+    ],
+    [
+     "",
+     "Die fünf Säulen."
+    ],
+    [
+     "",
+     "Fünf Pflichten tragen den Glauben wie Säulen ein Haus. Die erste ist das Glaubensbekenntnis: „Es gibt keinen Gott außer Gott, und Mohammed ist sein Gesandter.“ Dazu kommen das Gebet fünfmal am Tag in Richtung Mekka, die Abgabe für Arme (Zakat) und das Fasten im Monat Ramadan, von der Morgendämmerung bis zum Sonnenuntergang. Die fünfte Säule ist die Pilgerfahrt nach Mekka, einmal im Leben, wenn man gesund ist und es sich leisten kann."
+    ],
+    [
+     "",
+     "Die Moschee."
+    ],
+    [
+     "",
+     "Das Gotteshaus heißt Moschee. Am Freitagmittag treffen sich viele zum gemeinsamen Gebet. Der Imam leitet das Gebet."
+    ]
+   ]
+  },
+  "vs7-07h": {
+   "titel": "Schuhe aus, bitte!",
+   "art": "hoeren",
+   "lektion": 7,
+   "dauer": 52.1,
+   "text": [
+    [
+     "Imam",
+     "Herzlich willkommen! Bevor wir in den Gebetsraum gehen, ziehen wir bitte die Schuhe aus. Hier wird auf dem Teppich gebetet, er soll sauber bleiben."
+    ],
+    [
+     "Lina",
+     "Warum gibt es hier keine Bilder an den Wänden?"
+    ],
+    [
+     "Imam",
+     "In Moscheen gibt es keine Bilder von Menschen oder Tieren. Niemand soll beim Beten abgelenkt werden. Stattdessen seht ihr Muster und schöne Schrift: Verse aus dem Koran auf Arabisch."
+    ],
+    [
+     "Lina",
+     "Und was ist diese Nische in der Wand?"
+    ],
+    [
+     "Imam",
+     "Das ist der Mihrab. Er zeigt die Richtung nach Mekka. Dorthin wenden sich alle beim Gebet."
+    ],
+    [
+     "Sami",
+     "Und vor dem Gebet waschen wir uns: Hände, Mund, Nase, Gesicht, Arme und Füße. Dafür gibt es den Waschraum."
+    ],
+    [
+     "Lina",
+     "Darf ich beim Gebet zuschauen?"
+    ],
+    [
+     "Imam",
+     "Gern, wenn ihr leise seid. Und ihr dürft auch Fragen stellen. Fragen ist immer besser als Vorurteile."
+    ]
+   ]
+  },
+  "vs7-08l": {
+   "titel": "Vielfalt statt Vorurteil",
+   "art": "lesen",
+   "lektion": 8,
+   "dauer": 78.4,
+   "text": [
+    [
+     "",
+     "Vielfalt statt Vorurteil"
+    ],
+    [
+     "",
+     "Muslime leben auf allen Kontinenten. Die meisten leben in Asien. Das Land mit den meisten Muslimen ist Indonesien. Nur etwa jeder fünfte Muslim ist Araber."
+    ],
+    [
+     "",
+     "Viele Richtungen."
+    ],
+    [
+     "",
+     "Wie im Christentum gibt es im Islam verschiedene Richtungen. Die meisten Muslime sind Sunniten, eine kleinere Gruppe sind Schiiten. Und auch innerhalb dieser Gruppen leben Menschen ihren Glauben sehr unterschiedlich: Manche beten fünfmal am Tag, andere selten. Manche Frauen tragen ein Kopftuch, viele nicht."
+    ],
+    [
+     "",
+     "Islam in Luxemburg."
+    ],
+    [
+     "",
+     "Auch in Luxemburg leben viele Musliminnen und Muslime, zum Beispiel mit Wurzeln in Bosnien, Montenegro, Nordafrika oder der Türkei. 2015 hat der Staat eine Vereinbarung mit der muslimischen Gemeinschaft unterschrieben – so wie mit anderen Religionsgemeinschaften auch."
+    ],
+    [
+     "",
+     "Islam ist nicht Islamismus."
+    ],
+    [
+     "",
+     "Islamismus ist eine politische Ideologie. Kleine extremistische Gruppen missbrauchen die Religion und rechtfertigen damit sogar Gewalt und Terror. Die allermeisten Muslime lehnen das ab – und sind selbst oft Opfer dieser Gewalt. Wer alle Muslime wegen dieser Gruppen verurteilt, handelt ungerecht und diskriminierend."
+    ]
+   ]
+  },
+  "vs7-08h": {
+   "titel": "Fragen, die man uns oft stellt",
+   "art": "hoeren",
+   "lektion": 8,
+   "dauer": 64.8,
+   "text": [
+    [
+     "Amira",
+     "Frage eins: „Ist dir unter dem Kopftuch im Sommer nicht heiß?“ Ehrlich? Manchmal schon. Aber euch ist in Jeans auch heiß, oder?"
+    ],
+    [
+     "Yusuf",
+     "Frage zwei an mich: „Darfst du Weihnachten feiern?“ Also: Ich feiere nicht religiös. Aber ich gehe gern auf den Weihnachtsmarkt, und mit meinen Freunden wichteln wir. Das mache ich sehr gern!"
+    ],
+    [
+     "Amira",
+     "Frage drei: „Seid ihr alle gleich streng?“ Nein! Yusuf und ich sind beide Muslime, aber ganz verschieden. Ich bete fünfmal am Tag. Yusuf …"
+    ],
+    [
+     "Yusuf",
+     "… eher am Freitag und wenn meine Oma zu Besuch ist. Und Amira trägt Kopftuch, meine Schwester nicht. Unser Glaube ist trotzdem echt."
+    ],
+    [
+     "Amira",
+     "Frage vier, die nervigste: „Warum zwingen dich deine Eltern dazu?“ Niemand zwingt mich. Das habe ich selbst entschieden."
+    ],
+    [
+     "Yusuf",
+     "Unser Tipp: Fragt ruhig! Aber fragt mit echtem Interesse, nicht mit einem fertigen Urteil im Kopf."
+    ]
+   ]
+  }
+ }
+}
