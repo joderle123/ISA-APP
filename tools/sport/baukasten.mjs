@@ -1,9 +1,11 @@
 // Sport-Baukasten (Auftrag 22.11.2026): ein Heft mit allen guten Bausteinen – Aufwärmen, Fit machen, Koordination,
 // Ball-Übungen, Spiele, Match je Sportart, Team, Runterkommen. Die Lehrperson nimmt pro Farbe einen Baustein und hat
 // ihre Stunde. Jede Karte: Skizze oder Bild, drei kurze Sätze, Minuten, Gruppengröße, Puls, Material.
+// Dazu je Sportart eine Seite (Rückmeldung 22.11.): Aufwärmen, Technik und Spielformen aus den Sportart-Heften
+// (inhalt/*.mjs, Texte von dort übernommen) und die allgemeinen Karten, die in deren Stunden vorkommen („Passt auch gut“).
 // Aufruf (aus isa-app/): node tools/sport/baukasten.mjs   → offline/sport/Sport-Baukasten.pdf
 // Inhalt: tools/sport/baukasten-inhalt.mjs. Skizzen wie in den Sportart-Heften (gemeinsam.mjs).
-import { readFileSync, writeFileSync, mkdirSync } from 'node:fs'
+import { readFileSync, writeFileSync, mkdirSync, readdirSync } from 'node:fs'
 import { join, dirname } from 'node:path'
 import { fileURLToPath, pathToFileURL } from 'node:url'
 import { createRequire } from 'node:module'
@@ -24,8 +26,50 @@ function icon(name, { farbe = 'currentColor', groesse = '1em', breite = 2, klass
   return `<svg viewBox="0 0 24 24" width="${groesse}" height="${groesse}" class="${klasse}" fill="none" stroke="${farbe}" stroke-width="${breite}" stroke-linecap="round" stroke-linejoin="round">${inhalt}</svg>`
 }
 
-const KAT = new Map(KATEGORIEN.map((k) => [k.id, k]))
-const katVon = (code) => KAT.get(code[0])
+// Sportart-Seiten: Bausteine aus den Sportart-Heften (inhalt/*.mjs) – je 4 Aufwärmen, 4 Technik, Rest Spielformen (12 Karten)
+const KUERZEL = { Handball: 'HB', Fußball: 'FB', Basketball: 'BB', Volleyball: 'VB', Badminton: 'BM', Tischtennis: 'TT', Laufen: 'LA', Fahrrad: 'RA', Unihockey: 'UH', 'Ultimate Frisbee': 'UF' }
+const ART_NAME = { auf: 'Aufwärmen', technik: 'Technik', spielnah: 'Spielform', match: 'Match', station: 'Stationen' }
+const ART_ICON = { auf: 'run', technik: 'target', spielnah: 'users-group', match: 'trophy', station: 'flag' }
+const ART_PULS = { auf: 3, technik: 2, spielnah: 3, match: 3, station: 2 }
+const ALLGEMEIN = new Set([...KATEGORIEN.flatMap((k) => k.karten.map((x) => x.n)), 'Wunsch-Aufwärmspiel', 'Kettenfangen', 'Balance-Fangen', 'Ball in der Luft'])
+function werAus(t = '') {
+  const vs = t.match(/(\d+)\s*gegen\s*(\d+)/)
+  if (vs) return `${+vs[1] + +vs[2]} pro Feld`
+  if (/Paare|zu zweit|Paar/.test(t)) return 'Paare'
+  const g = t.match(/(?:Gruppen|Teams) (?:zu|von) (\d+(?:[–-]\d+)?)/)
+  if (g) return g[1] + 'er-Gruppen'
+  if (/Dreier|zu dritt/.test(t)) return '3er-Gruppen'
+  return 'alle'
+}
+const SPORTARTEN = []
+for (const d of readdirSync(join(HIER, 'inhalt')).filter((x) => x.endsWith('.mjs') && x !== 'grundlagen.mjs')) {
+  const sp = (await import(pathToFileURL(join(HIER, 'inhalt', d)).href)).SPORT
+  const kz = KUERZEL[sp.name]
+  if (!kz) throw new Error('Kürzel fehlt: ' + sp.name)
+  const gesehen = new Set(), je = { auf: [], technik: [], spiel: [] }
+  const NAME_CODE = new Map(KATEGORIEN.flatMap((k) => k.karten.map((x) => [x.n, x.c])))
+  const passt = [...new Set(sp.stunden.flatMap((st) => st.bloecke.map((b) => NAME_CODE.get(b.name)).filter(Boolean)))]
+  for (const st of sp.stunden) for (const b of st.bloecke) {
+    if (gesehen.has(b.name) || ALLGEMEIN.has(b.name) || b.art === 'schluss' || b.art === 'station' || !b.ablauf?.length) continue
+    gesehen.add(b.name)
+    ;(b.art === 'auf' ? je.auf : b.art === 'technik' ? je.technik : je.spiel).push(b)
+  }
+  const wahl = [...je.auf.slice(0, 4), ...je.technik.slice(0, 4)]
+  for (const b of [...je.spiel, ...je.technik.slice(4), ...je.auf.slice(4)]) if (wahl.length < 12) wahl.push(b)
+  SPORTARTEN.push({
+    id: kz, nr: sp.nr, name: sp.name, farbe: sp.farbe, datei: `Sport-${String(sp.nr).padStart(2, '0')}-${sp.datei}`,
+    satz: sp.untertitel.replace(/\*\*/g, ''), zeit: '', sport: true, passt,
+    karten: wahl.map((b, i) => ({
+      c: kz + (i + 1), n: b.name, so: b.ablauf.join(' '), aufbau: b.aufbau, min: String(b.min), wer: werAus(b.aufbau), int: ART_PULS[b.art] ?? 2,
+      tipp: [b.leichter && 'Leichter: ' + b.leichter, b.schwerer && 'Schwerer: ' + b.schwerer].filter(Boolean).join(' · ') || undefined,
+      tags: [ART_NAME[b.art] ?? 'Spielform'], sk: b.skizze, icon: b.skizze ? undefined : ART_ICON[b.art] ?? 'flag',
+    })),
+  })
+}
+SPORTARTEN.sort((a, b) => a.nr - b.nr)
+for (const k of SPORTARTEN) k.zeit = k.karten.length + ' Bausteine'
+const KAT = new Map([...KATEGORIEN, ...SPORTARTEN].map((k) => [k.id, k]))
+const katVon = (code) => KAT.get(code.match(/^[A-Z]+/)[0])
 const karteVon = (code) => katVon(code).karten.find((x) => x.c === code)
 
 function puls(n) {
@@ -44,20 +88,21 @@ function karte(x, kat) {
       <span>${icon('users', { groesse: '3.3mm' })} ${esc(x.wer)}</span>
       <span class="puls" title="Puls">${puls(x.int)}</span>
     </div>
-    <p class="mat"><b>Material:</b> ${esc(x.mat)}</p>
+    ${x.aufbau ? `<p class="mat"><b>Aufbau:</b> ${md(x.aufbau)}</p>` : `<p class="mat"><b>Material:</b> ${esc(x.mat)}</p>`}
     ${x.tags?.length ? `<div class="tags">${x.tags.map((t) => `<span>${esc(t)}</span>`).join('')}</div>` : ''}
   </div>`
 }
 
 function abschnitt(kat) {
   return `<div class="abschnitt" style="--k:${kat.farbe}">
-    <header class="kat"><span class="buchst">${kat.id}</span><div><h2>${esc(kat.name)}</h2><p>${esc(kat.satz)}</p></div><span class="dauer">${esc(kat.zeit)}</span></header>
+    <header class="kat"><span class="buchst${kat.id.length > 1 ? ' klein' : ''}">${kat.id}</span><div><h2>${esc(kat.name)}</h2><p>${esc(kat.satz)}</p></div><span class="dauer">${esc(kat.zeit)}</span></header>
     <div class="raster">${kat.karten.map((x) => karte(x, kat)).join('')}</div>
+    ${kat.sport ? `<div class="unten">${kat.passt.length ? `<p class="passt"><b>Passt auch gut:</b> ${kat.passt.map((c) => `<span class="rc" style="--k:${katVon(c).farbe}"><em>${c}</em> ${esc(karteVon(c).n)}</span>`).join(' ')}</p>` : ''}<p class="heft">Ganze Stunden: Heft <b>${esc(kat.datei)}</b></p></div>` : ''}
   </div>`
 }
 
 // Seitenaufteilung: große Gruppen allein, kleine (6 Karten) zu zweit auf einer Seite
-const SEITEN = [['A'], ['B', 'C'], ['D'], ['E'], ['F'], ['G', 'H']]
+const SEITEN = [['A'], ['B', 'C'], ['D'], ['E'], ['F'], ['G', 'H'], ...SPORTARTEN.map((k) => [k.id])]
 const seiteVon = new Map(SEITEN.flatMap((ids, i) => ids.map((id) => [id, i + 2])))
 
 function fuss(nr) {
@@ -67,14 +112,14 @@ function fuss(nr) {
 function titelSeite() {
   const schritte = [
     { n: 'Aufwärmen', min: 8, ids: ['A'], oder: 'oder B, C' },
-    { n: 'Üben', min: 12, ids: ['D'], oder: 'oder B, C' },
-    { n: 'Spielen', min: 25, ids: ['E', 'F'], oder: 'oder G' },
+    { n: 'Üben', min: 12, ids: ['D'], oder: 'oder Sportart: Technik' },
+    { n: 'Spielen', min: 25, ids: ['E', 'F'], oder: 'oder G, Sportart: Spielform' },
     { n: 'Runterkommen', min: 5, ids: ['H'], oder: '' },
   ]
   return `<section class="seite titel">
     <header class="deckel">
       <div class="streifen">${KATEGORIEN.map((k) => `<i style="background:${k.farbe}"></i>`).join('')}</div>
-      <div class="kicker">Sport · für alle Sportarten</div>
+      <div class="kicker">Sport · allgemein und für 10 Sportarten</div>
       <h1>Sport-Baukasten</h1>
       <p>Alle Bausteine für deine Stunde auf einen Blick. Nimm aus jeder Farbe einen – fertig ist die Stunde.</p>
     </header>
@@ -93,6 +138,8 @@ function titelSeite() {
         return `${i ? '<span class="pfeil">→</span>' : ''}<div class="bk" style="--k:${f}"><em>${c}</em><b>${esc(k.n)}</b><small>${m} Min. · ${esc(k.mat)}</small></div>` }).join('')}</div>
       <h2 class="t">Die 8 Farben</h2>
       <div class="farben">${KATEGORIEN.map((k) => `<div class="farbe" style="--k:${k.farbe}"><span class="buchst">${k.id}</span><div><b>${esc(k.name)}</b><small>${esc(k.zeit)} · ${k.karten.length} Bausteine · Seite ${seiteVon.get(k.id)}</small></div></div>`).join('')}</div>
+      <h2 class="t">Die 10 Sportarten – je eine Seite mit Aufwärmen, Technik und Spielformen</h2>
+      <div class="sportarten">${SPORTARTEN.map((k) => `<div class="farbe" style="--k:${k.farbe}"><span class="buchst klein">${k.id}</span><div><b>${esc(k.name)}</b><small>Seite ${seiteVon.get(k.id)}</small></div></div>`).join('')}</div>
       <h2 class="t">So liest du eine Karte</h2>
       <div class="lesen">
         <div class="beispiel">${karte(karteVon('D3'), KAT.get('D'))}</div>
@@ -187,6 +234,17 @@ h1,h2,h3,.code,.buchst,th,.kicker,.dauer,.schritt b{font-family:Lexend,sans-seri
 .zwei .abschnitt{flex:1}
 .dicht .so{font-size:8.4pt}.dicht .bild{height:21mm}.dicht .karte{gap:.7mm;padding:1.5mm 2mm}
 .dichter .so{font-size:8pt}.dichter .bild{height:18mm}.dichter .mat{font-size:7.4pt}
+.kat .buchst.klein{font-size:13pt;letter-spacing:-.02em}
+.farbe .buchst.klein{font-size:11pt;width:8mm}
+.sportarten{display:grid;grid-template-columns:repeat(5,1fr);gap:1.6mm}
+.sportarten .farbe{padding:1.2mm 1.6mm;gap:1.4mm}
+.karte.enger .bild{height:12mm}.karte.enger .so{font-size:7.8pt}.karte.enger .kk h3{font-size:9.4pt}
+.karte.eng .so{font-size:8pt;line-height:1.22}.karte.eng .bild{height:16mm}.karte.eng .mat{font-size:7.4pt}.karte.eng .tipp{font-size:7.6pt}
+.unten{display:flex;gap:3mm;align-items:flex-start;justify-content:space-between}
+.passt{font-size:8pt;display:flex;flex-wrap:wrap;gap:1mm 2mm;align-items:center}.passt b{font-family:Lexend}
+.heft{font-size:8.2pt;color:#4a5668;white-space:nowrap}
+.titel .inhalt{gap:2.2mm}.titel h2.t{font-size:11.5pt;margin-top:.4mm}.titel .deckel{padding:4mm 7mm 5mm}.titel .deckel h1{font-size:30pt}
+.titel .beispiel .bild{height:17mm}.titel .beispiel .so{font-size:8.4pt}
 /* Titelseite */
 .deckel{background:#1d2633;color:#fff;border-radius:4mm;padding:5mm 7mm 6mm;position:relative;overflow:hidden}
 .streifen{display:flex;height:2.4mm;border-radius:1mm;overflow:hidden;margin-bottom:4mm}.streifen i{flex:1}
@@ -195,7 +253,7 @@ h1,h2,h3,.code,.buchst,th,.kicker,.dauer,.schritt b{font-family:Lexend,sans-seri
 .deckel p{font-size:11.5pt;max-width:165mm}
 h2.t{font-size:12.5pt;font-weight:800;margin-top:1mm}
 .leiste{display:flex;gap:1.6mm}
-.schritt{min-width:39mm;background:color-mix(in srgb,var(--k) 12%,#fff);border:.4mm solid var(--k);border-radius:2.6mm;padding:2mm 2.4mm;display:flex;flex-direction:column;gap:.6mm;min-width:0}
+.schritt{min-width:43mm;background:color-mix(in srgb,var(--k) 12%,#fff);border:.4mm solid var(--k);border-radius:2.6mm;padding:2mm 2.4mm;display:flex;flex-direction:column;gap:.6mm}
 .schritt b{font-size:10pt;color:#1d2633}.schritt>span{font-size:8.5pt;color:#4a5668}
 .kc{display:flex;gap:1mm;align-items:center;flex-wrap:wrap}.kc em,.rc em{font-style:normal;font-family:Lexend;font-weight:800;font-size:8.5pt;color:#fff;border-radius:1.2mm;padding:.2mm 1.5mm}
 .kc small{font-size:7.6pt;color:#4a5668}
@@ -241,7 +299,7 @@ function dokument(inhalt) {
 
 const seiten = [titelSeite(), ...SEITEN.map((ids, i) => bausteinSeite(ids, i + 2)), planSeite(SEITEN.length + 2)]
 // Prüfung der Inhalte: Codes eindeutig, Rezepte verweisen auf vorhandene Karten, Piktogramme vorhanden
-const codes = KATEGORIEN.flatMap((k) => k.karten.map((x) => x.c))
+const codes = [...KATEGORIEN, ...SPORTARTEN].flatMap((k) => k.karten.map((x) => x.c))
 if (new Set(codes).size !== codes.length) throw new Error('Doppelter Code')
 for (const r of REZEPTE) for (const c of r.karten) if (!karteVon(c)) throw new Error('Rezept ' + r.name + ': Karte fehlt ' + c)
 
@@ -256,6 +314,11 @@ const bericht = await page.evaluate(() => {
   const voll = (s) => [...s.querySelectorAll('.karte')].some((k) => k.scrollHeight > k.clientHeight + 1) || (() => { const i = s.querySelector('.inhalt'); return i.scrollHeight > i.clientHeight + 1 })()
   document.querySelectorAll('.seite').forEach((s, n) => {
     if (voll(s)) s.classList.add('dicht'); if (voll(s)) s.classList.add('dichter')
+    for (const k of s.querySelectorAll('.karte')) {
+      if (k.scrollHeight > k.clientHeight + 1) k.classList.add('eng')
+      if (k.scrollHeight > k.clientHeight + 1) k.querySelector('.tipp')?.remove()
+      if (k.scrollHeight > k.clientHeight + 1) k.classList.add('enger')
+    }
     if (voll(s)) r.push('S.' + (n + 1) + ' zu voll: ' + [...s.querySelectorAll('.karte')].filter((k) => k.scrollHeight > k.clientHeight + 1).map((k) => k.querySelector('.code').textContent).join(' '))
   })
   return r
