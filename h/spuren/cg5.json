@@ -1,0 +1,574 @@
+{
+ "modul": "cg5",
+ "titel": {
+  "de": "Mein Körper – unsere Erde",
+  "fr": "Mon corps – notre Terre"
+ },
+ "sprache": "de",
+ "spuren": {
+  "cg5-01l": {
+   "titel": "Das Gerüst des Körpers",
+   "art": "lesen",
+   "lektion": 1,
+   "dauer": 65.3,
+   "text": [
+    [
+     "",
+     "Das Gerüst des Körpers"
+    ],
+    [
+     "",
+     "Das Skelett eines erwachsenen Menschen hat über 200 Knochen. Es stützt den Körper, schützt die Organe und ermöglicht Bewegung. Der Schädel schützt das Gehirn, der Brustkorb mit den Rippen schützt Herz und Lunge. Die Wirbelsäule hält uns aufrecht und schützt das Rückenmark. Der längste Knochen ist der Oberschenkelknochen."
+    ],
+    [
+     "",
+     "Gelenke."
+    ],
+    [
+     "",
+     "Wo zwei Knochen sich treffen, sind Gelenke. Das Knie und der Ellbogen sind Scharniergelenke: Sie bewegen sich wie eine Tür in eine Richtung. Schulter und Hüfte sind Kugelgelenke: Sie lassen sich in viele Richtungen drehen."
+    ],
+    [
+     "",
+     "Muskeln."
+    ],
+    [
+     "",
+     "Knochen bewegen sich nicht von allein. Das machen über 600 Muskeln. Muskeln können sich nur zusammenziehen. Darum arbeiten sie oft paarweise: Beim Beugen des Arms zieht sich der Bizeps vorne zusammen, beim Strecken der Trizeps hinten."
+    ]
+   ]
+  },
+  "cg5-01h": {
+   "titel": "Gebrochen!",
+   "art": "hoeren",
+   "lektion": 1,
+   "dauer": 50.2,
+   "text": [
+    [
+     "Ärztin",
+     "Schau, Ben, hier auf dem Röntgenbild siehst du den Unterarm. Der Knochen hat einen Riss. Er ist gebrochen."
+    ],
+    [
+     "Ben",
+     "Oh nein. Muss ich operiert werden?"
+    ],
+    [
+     "Ärztin",
+     "Nein, zum Glück nicht. Die Knochenteile liegen noch richtig. Du bekommst einen Gips für etwa vier bis sechs Wochen."
+    ],
+    [
+     "Ben",
+     "Wie wächst der Knochen wieder zusammen?"
+    ],
+    [
+     "Ärztin",
+     "Knochen leben! Sie bilden an der Bruchstelle neues Knochengewebe. Bei jungen Menschen geht das besonders schnell. Der Gips hält alles ruhig, damit es gerade zusammenwächst."
+    ],
+    [
+     "Ben",
+     "Und danach kann ich wieder skaten?"
+    ],
+    [
+     "Ärztin",
+     "Ja, aber zuerst musst du die Muskeln wieder trainieren. Und nächstes Mal: Handgelenkschoner und Helm!"
+    ]
+   ]
+  },
+  "cg5-02l": {
+   "titel": "Rund um die Uhr im Einsatz",
+   "art": "lesen",
+   "lektion": 2,
+   "dauer": 57.4,
+   "text": [
+    [
+     "",
+     "Rund um die Uhr im Einsatz"
+    ],
+    [
+     "",
+     "Das Herz ist ein Muskel, ungefähr so groß wie deine Faust. Es pumpt das Blut durch den ganzen Körper – Tag und Nacht, etwa 100 000 Mal am Tag. Durch die Blutgefäße fließt das Blut in einem Kreislauf."
+    ],
+    [
+     "",
+     "Zwei Kreisläufe."
+    ],
+    [
+     "",
+     "Im Lungenkreislauf fließt das Blut vom Herzen zur Lunge. Dort nimmt es Sauerstoff auf und gibt Kohlenstoffdioxid ab. Dann fließt es zurück zum Herzen. Im Körperkreislauf pumpt das Herz das sauerstoffreiche Blut zu allen Muskeln und Organen. Dort wird der Sauerstoff abgegeben. Das sauerstoffarme Blut fließt zurück zum Herzen."
+    ],
+    [
+     "",
+     "Der Puls."
+    ],
+    [
+     "",
+     "Bei jedem Herzschlag spürt man am Handgelenk oder am Hals einen kleinen Stoß: den Puls. In Ruhe schlägt das Herz von Jugendlichen etwa 60 bis 100 Mal pro Minute. Bei Bewegung brauchen die Muskeln mehr Sauerstoff – das Herz schlägt schneller."
+    ]
+   ]
+  },
+  "cg5-02h": {
+   "titel": "Puls messen – so geht’s",
+   "art": "hoeren",
+   "lektion": 2,
+   "dauer": 46.8,
+   "text": [
+    [
+     "Herr Mesenberg",
+     "Legt Zeige- und Mittelfinger auf die Innenseite eures Handgelenks, unter dem Daumen. Nicht den Daumen nehmen – der hat selbst einen Puls!"
+    ],
+    [
+     "Sami",
+     "Ich spüre es! Bum … bum …"
+    ],
+    [
+     "Herr Mesenberg",
+     "Gut. Jetzt zählt ihr fünfzehn Sekunden lang die Schläge. Ich sage Start und Stopp. … Start! … Stopp!"
+    ],
+    [
+     "Sami",
+     "Ich habe neunzehn."
+    ],
+    [
+     "Herr Mesenberg",
+     "Dann rechnest du mal vier, denn eine Minute hat vier mal fünfzehn Sekunden. Neunzehn mal vier sind sechsundsiebzig Schläge pro Minute. Das ist dein Ruhepuls."
+    ],
+    [
+     "Sami",
+     "Und jetzt?"
+    ],
+    [
+     "Herr Mesenberg",
+     "Jetzt eine Minute Hampelmann! … Und sofort wieder messen. Start! … Stopp!"
+    ],
+    [
+     "Sami",
+     "Wow, dreiunddreißig! Mal vier … hundertzweiunddreißig!"
+    ]
+   ]
+  },
+  "cg5-03l": {
+   "titel": "Der Weg der Luft",
+   "art": "lesen",
+   "lektion": 3,
+   "dauer": 75.3,
+   "text": [
+    [
+     "",
+     "Der Weg der Luft"
+    ],
+    [
+     "",
+     "Wir atmen etwa 12- bis 20-mal pro Minute, ohne darüber nachzudenken. Die Luft strömt durch Nase oder Mund in die Luftröhre. Die Luftröhre teilt sich in zwei Bronchien – je eine für den linken und den rechten Lungenflügel. In der Lunge verzweigen sie sich immer feiner bis zu Millionen winziger Lungenbläschen. Dort geht der Sauerstoff ins Blut, und Kohlenstoffdioxid kommt aus dem Blut heraus."
+    ],
+    [
+     "",
+     "Beim Einatmen zieht sich das Zwerchfell, ein großer Muskel unter der Lunge, nach unten. Die Lunge dehnt sich aus, und Luft strömt hinein."
+    ],
+    [
+     "",
+     "Rauchen und Vapen."
+    ],
+    [
+     "",
+     "Zigarettenrauch enthält Nikotin, Teer und viele giftige Stoffe. Teer verklebt die Lunge, Nikotin macht sehr schnell abhängig. Rauchen ist eine der häufigsten Ursachen für schwere Krankheiten. Auch E-Zigaretten (Vapes) enthalten oft Nikotin. Sie sind nicht harmlos: Forscher untersuchen noch, wie sie der Lunge schaden. In Luxemburg dürfen Tabak und E-Zigaretten nicht an Jugendliche unter 18 verkauft werden (Stand 2026)."
+    ]
+   ]
+  },
+  "cg5-03h": {
+   "titel": "Nur einmal probieren?",
+   "art": "hoeren",
+   "lektion": 3,
+   "dauer": 63.0,
+   "text": [
+    [
+     "Jana",
+     "Darf ich Sie etwas fragen? Heute wollten mir zwei Ältere eine Vape geben. Sie haben gesagt, das ist nur Wasserdampf mit Erdbeergeschmack."
+    ],
+    [
+     "Krankenschwester",
+     "Gut, dass du fragst. Es ist kein Wasserdampf. Die meisten Vapes enthalten Nikotin – manchmal so viel wie viele Zigaretten."
+    ],
+    [
+     "Jana",
+     "Und Nikotin macht abhängig?"
+    ],
+    [
+     "Krankenschwester",
+     "Ja, und zwar schnell, besonders bei Jugendlichen, weil das Gehirn noch wächst. Viele merken es erst, wenn sie nervös werden, sobald die Vape leer ist."
+    ],
+    [
+     "Jana",
+     "Ich habe Nein gesagt. Aber dann haben sie mich ausgelacht."
+    ],
+    [
+     "Krankenschwester",
+     "Das war mutig. Nein sagen ist schwerer als mitmachen. Du kannst sagen: „Nein danke, ich hab keinen Bock darauf.“ Und weggehen."
+    ],
+    [
+     "Jana",
+     "Und wenn sie mich weiter nerven?"
+    ],
+    [
+     "Krankenschwester",
+     "Dann komm wieder zu mir oder sprich mit deiner Klassenlehrerin. Du musst das nicht allein lösen."
+    ]
+   ]
+  },
+  "cg5-04l": {
+   "titel": "Ich bin ein Pausenbrot",
+   "art": "lesen",
+   "lektion": 4,
+   "dauer": 60.8,
+   "text": [
+    [
+     "",
+     "Ich bin ein Pausenbrot"
+    ],
+    [
+     "",
+     "Hallo, ich bin ein Käsebrot! Heute um 10 Uhr hat Finn mich gegessen. Im Mund haben mich die Zähne zerkleinert, und der Speichel hat mich weich gemacht. Dann bin ich durch die Speiseröhre gerutscht – ein Muskelschlauch, etwa 25 Zentimeter lang."
+    ],
+    [
+     "",
+     "Im Magen wurde ich mit Magensaft vermischt und zu einem Brei geknetet. Das hat ein paar Stunden gedauert. Danach ging es in den Dünndarm. Er ist mehrere Meter lang und eng zusammengelegt. Hier werden die Nährstoffe aus mir herausgeholt und gehen ins Blut. Dabei helfen Säfte aus der Leber und der Bauchspeicheldrüse."
+    ],
+    [
+     "",
+     "Was übrig bleibt, wandert in den Dickdarm. Dort wird dem Brei Wasser entzogen. Am Ende verlässt der Rest den Körper durch den Enddarm. Meine Reise hat ungefähr einen bis zwei Tage gedauert. Tschüss!"
+    ]
+   ]
+  },
+  "cg5-04h": {
+   "titel": "Wusstest du schon?",
+   "art": "hoeren",
+   "lektion": 4,
+   "dauer": 53.7,
+   "text": [
+    [
+     "Lea",
+     "Frage eins: Warum knurrt der Magen?"
+    ],
+    [
+     "Finn",
+     "Weil er Hunger hat?"
+    ],
+    [
+     "Lea",
+     "Fast! Auch wenn er leer ist, bewegt er sich. Luft und Saft werden hin- und hergeschoben. Das hört man als Knurren. Frage zwei: Warum soll man langsam essen?"
+    ],
+    [
+     "Finn",
+     "Damit man nicht so viel isst?"
+    ],
+    [
+     "Lea",
+     "Genau! Das Sattgefühl kommt erst nach etwa zwanzig Minuten. Wer schlingt, isst oft mehr, als er braucht. Und gut gekaut ist halb verdaut."
+    ],
+    [
+     "Finn",
+     "Frage drei bitte, ich bin gut drin!"
+    ],
+    [
+     "Lea",
+     "Warum sind Ballaststoffe wichtig, zum Beispiel in Vollkornbrot, Obst und Gemüse?"
+    ],
+    [
+     "Finn",
+     "Keine Ahnung."
+    ],
+    [
+     "Lea",
+     "Sie halten den Darm in Bewegung. Zusammen mit viel Wasser helfen sie, dass man gut auf die Toilette gehen kann."
+    ]
+   ]
+  },
+  "cg5-05l": {
+   "titel": "Vom Kind zum Erwachsenen",
+   "art": "lesen",
+   "lektion": 5,
+   "dauer": 82.6,
+   "text": [
+    [
+     "",
+     "Vom Kind zum Erwachsenen"
+    ],
+    [
+     "",
+     "Die Pubertät ist die Zeit, in der der Körper vom Kind zum Erwachsenen wird. Sie beginnt meist zwischen 9 und 14 Jahren – bei jedem Menschen zu einer anderen Zeit. Das ist völlig normal. Gesteuert wird sie von Hormonen, Botenstoffen im Blut."
+    ],
+    [
+     "",
+     "Was sich verändert."
+    ],
+    [
+     "",
+     "Man wächst schneller, manchmal mehrere Zentimeter in einem Jahr. Unter den Achseln und im Intimbereich wachsen Haare. Die Haut wird fettiger, oft gibt es Pickel. Man schwitzt mehr – regelmäßiges Duschen hilft. Bei vielen Mädchen wächst die Brust, und die Periode (Menstruation) beginnt. Bei vielen Jungen wird die Stimme tiefer („Stimmbruch“), und der Bart beginnt zu wachsen."
+    ],
+    [
+     "",
+     "Gefühle."
+    ],
+    [
+     "",
+     "Nicht nur der Körper verändert sich. Viele fühlen sich manchmal fröhlich und kurz danach traurig oder genervt. Man will mehr selbst entscheiden und wird unsicher, ob man „normal“ ist. Auch das ist normal. Jeder Körper ist anders – und jeder ist in Ordnung."
+    ],
+    [
+     "",
+     "Fragen sind erlaubt! Man kann sie der Schulärztin, dem Hausarzt, einer Vertrauensperson oder anonym bei 116 111 stellen."
+    ]
+   ]
+  },
+  "cg5-05h": {
+   "titel": "Ist das normal?",
+   "art": "hoeren",
+   "lektion": 5,
+   "dauer": 65.4,
+   "text": [
+    [
+     "Moderatorin",
+     "Erste Frage aus der Box: „Ich bin 13 und noch ganz klein. Alle anderen sind schon gewachsen. Stimmt etwas nicht mit mir?“"
+    ],
+    [
+     "Ärztin",
+     "Fast immer stimmt alles. Die Pubertät beginnt bei jedem zu einer anderen Zeit. Manche wachsen mit 11, andere mit 15. Wer sich große Sorgen macht, kann es beim Arzt prüfen lassen."
+    ],
+    [
+     "Moderatorin",
+     "Zweite Frage: „Ich habe ganz viele Pickel. Was kann ich tun?“"
+    ],
+    [
+     "Ärztin",
+     "Morgens und abends mit einem milden Waschgel waschen und die Pickel nicht ausdrücken. Wenn es sehr stark ist, hilft eine Hautärztin."
+    ],
+    [
+     "Moderatorin",
+     "Dritte Frage: „Manchmal bin ich ohne Grund total wütend oder traurig. Bin ich komisch?“"
+    ],
+    [
+     "Ärztin",
+     "Nein. Die Hormone und die vielen Veränderungen können die Gefühle durcheinanderbringen. Sport, Schlaf und Reden helfen. Wenn es dir aber lange schlecht geht, such dir Hilfe – bei einer Vertrauensperson oder bei 116 111."
+    ]
+   ]
+  },
+  "cg5-06l": {
+   "titel": "Vom Spaß zur Sucht",
+   "art": "lesen",
+   "lektion": 6,
+   "dauer": 67.6,
+   "text": [
+    [
+     "",
+     "Vom Spaß zur Sucht"
+    ],
+    [
+     "",
+     "Etwas Schönes zu tun, macht glücklich. Das Gehirn schüttet dabei einen Botenstoff aus, der sich gut anfühlt. Das Gehirn merkt sich: Das will ich wieder! So entstehen Gewohnheiten."
+    ],
+    [
+     "",
+     "Wann wird es gefährlich."
+    ],
+    [
+     "",
+     "Gefährlich wird es, wenn man nicht mehr aufhören kann, obwohl man es möchte, wenn man immer mehr braucht und wenn andere Dinge leiden: Schule, Schlaf, Freunde, Hobbys. Dann spricht man von Abhängigkeit oder Sucht. Man kann von Stoffen abhängig werden (Nikotin, Alkohol, Drogen) und auch von Tätigkeiten (Glücksspiel, Zocken, Social Media)."
+    ],
+    [
+     "",
+     "Energydrinks."
+    ],
+    [
+     "",
+     "Energydrinks enthalten viel Koffein und oft viel Zucker. Auf vielen Dosen steht: nicht empfohlen für Kinder. Zu viel Koffein kann Herzklopfen, Nervosität und Schlafprobleme machen."
+    ],
+    [
+     "",
+     "Sich schützen."
+    ],
+    [
+     "",
+     "Hilfreich sind feste Grenzen (zum Beispiel: Zocken nur nach den Hausaufgaben, höchstens eine Stunde), andere Freuden (Sport, Freunde treffen, Musik) und ehrlich hinschauen. Wer merkt, dass er nicht mehr aufhören kann, sollte darüber reden."
+    ]
+   ]
+  },
+  "cg5-06h": {
+   "titel": "Nur noch eine Runde",
+   "art": "hoeren",
+   "lektion": 6,
+   "dauer": 51.2,
+   "text": [
+    [
+     "Yusuf",
+     "Letzten Winter habe ich ein neues Spiel bekommen. Am Anfang habe ich eine Stunde am Tag gespielt. Dann zwei. Dann bis nachts um zwei."
+    ],
+    [
+     "Yusuf",
+     "Ich war morgens total müde, habe Hausaufgaben vergessen und meine Freunde nicht mehr getroffen. Wenn ich nicht spielen durfte, war ich gereizt."
+    ],
+    [
+     "Yusuf",
+     "Irgendwann hat Frau Kremer mich angesprochen, weil ich im Unterricht eingeschlafen bin."
+    ],
+    [
+     "Frau Kremer",
+     "Yusuf, ich mache mir Sorgen. Was ist los?"
+    ],
+    [
+     "Yusuf",
+     "Erst wollte ich nichts sagen. Dann habe ich es doch erzählt. Wir haben zusammen einen Plan gemacht: Zocken nur am Wochenende und nur bis zehn Uhr abends. Unter der Woche wieder Basketball."
+    ],
+    [
+     "Yusuf",
+     "Die erste Woche war hart. Aber jetzt schlafe ich besser und habe wieder Spaß mit meinen Freunden. Spielen tue ich immer noch – aber das Spiel bestimmt nicht mehr über mich."
+    ]
+   ]
+  },
+  "cg5-07l": {
+   "titel": "Prüfen – Rufen – Helfen",
+   "art": "lesen",
+   "lektion": 7,
+   "dauer": 86.5,
+   "text": [
+    [
+     "",
+     "Prüfen – Rufen – Helfen"
+    ],
+    [
+     "",
+     "Du brauchst: ruhig bleiben, ein Handy, wenn möglich: Verbandskasten."
+    ],
+    [
+     "",
+     "Schritt 1: Prüfen: Ist der Ort sicher (Verkehr, Feuer, Strom)? Sprich die Person laut an und tippe sie an den Schultern an. Reagiert sie? Atmet sie normal?"
+    ],
+    [
+     "",
+     "Schritt 2: Rufen: Wähle 112. Sag ruhig: Wo ist es passiert? Was ist passiert? Wie viele Verletzte? Leg erst auf, wenn die Leitstelle es sagt."
+    ],
+    [
+     "",
+     "Schritt 3: Helfen: Bleib bei der Person, sprich mit ihr und halte sie warm, zum Beispiel mit einer Jacke."
+    ],
+    [
+     "",
+     "Schritt 4: Bewusstlos, aber atmet normal: Lege die Person in die stabile Seitenlage. So kann sie nicht an Erbrochenem ersticken."
+    ],
+    [
+     "",
+     "Schritt 5: Atmet nicht normal: Die Leitstelle erklärt dir am Telefon die Herzdruckmassage. Mach mit, bis Hilfe kommt."
+    ],
+    [
+     "",
+     "Bei kleinen Wunden: mit sauberem Wasser ausspülen und ein Pflaster oder einen Verband darauf. Bei kleinen Verbrennungen: 10 bis 20 Minuten unter kühles (nicht eiskaltes) fließendes Wasser halten. Bei großen Verbrennungen: 112."
+    ]
+   ]
+  },
+  "cg5-07h": {
+   "titel": "112 – was ist passiert?",
+   "art": "hoeren",
+   "lektion": 7,
+   "dauer": 38.4,
+   "text": [
+    [
+     "Leitstelle",
+     "Notruf 112, wo genau ist der Notfallort?"
+    ],
+    [
+     "Lio",
+     "Im Stadtpark, beim großen Brunnen, neben dem Spielplatz."
+    ],
+    [
+     "Leitstelle",
+     "Was ist passiert?"
+    ],
+    [
+     "Lio",
+     "Eine ältere Frau ist umgefallen. Sie liegt auf dem Boden."
+    ],
+    [
+     "Leitstelle",
+     "Spricht sie mit dir? Atmet sie?"
+    ],
+    [
+     "Lio",
+     "Sie macht die Augen auf, aber sie ist ganz verwirrt. Ja, sie atmet."
+    ],
+    [
+     "Leitstelle",
+     "Gut gemacht. Der Rettungswagen ist unterwegs. Bleib bei ihr, sprich mit ihr und deck sie mit einer Jacke zu. Wenn sich etwas ändert, ruf sofort wieder an."
+    ],
+    [
+     "Lio",
+     "Okay. Ich bleibe hier."
+    ]
+   ]
+  },
+  "cg5-08l": {
+   "titel": "Eine Decke um die Erde",
+   "art": "lesen",
+   "lektion": 8,
+   "dauer": 77.9,
+   "text": [
+    [
+     "",
+     "Eine Decke um die Erde"
+    ],
+    [
+     "",
+     "Um die Erde liegt eine Hülle aus Luft, die Atmosphäre. Sie wirkt wie die Scheiben eines Treibhauses: Sonnenlicht kommt hinein, und ein Teil der Wärme bleibt drin. Ohne diesen natürlichen Treibhauseffekt wäre es auf der Erde eiskalt."
+    ],
+    [
+     "",
+     "Zu viel des Guten."
+    ],
+    [
+     "",
+     "Seit etwa 200 Jahren verbrennen die Menschen sehr viel Kohle, Erdöl und Gas – in Fabriken, Kraftwerken, Heizungen und Autos. Dabei entsteht das Gas Kohlenstoffdioxid (CO₂). Es verstärkt den Treibhauseffekt: Die Decke um die Erde wird dicker, und es wird wärmer. Das nennt man den Klimawandel. Folgen sind zum Beispiel mehr Hitzewellen, Trockenheit und Starkregen."
+    ],
+    [
+     "",
+     "Was kann ich tun."
+    ],
+    [
+     "",
+     "Große Veränderungen müssen Staaten und Firmen machen. Aber auch jede und jeder kann mithelfen: zu Fuß, mit dem Fahrrad oder mit Bus und Zug fahren (in Luxemburg ist der öffentliche Verkehr in der 2. Klasse kostenlos, Stand 2026), Licht ausschalten, Geräte nicht im Standby lassen, kürzer duschen, weniger Essen wegwerfen und Dinge länger benutzen."
+    ]
+   ]
+  },
+  "cg5-08h": {
+   "titel": "Unsere Klima-Woche",
+   "art": "hoeren",
+   "lektion": 8,
+   "dauer": 46.8,
+   "text": [
+    [
+     "Frau Sommer",
+     "Was habt ihr in der Klima-Woche ausprobiert?"
+    ],
+    [
+     "Amira",
+     "Ich bin jeden Tag mit dem Fahrrad gekommen statt mit dem Elterntaxi. Das sind sechs Kilometer am Tag weniger mit dem Auto."
+    ],
+    [
+     "Tom",
+     "Ich habe kürzer geduscht. Statt zehn Minuten nur fünf. Ich habe eine Sanduhr ins Bad gestellt."
+    ],
+    [
+     "Frau Sommer",
+     "Und als Klasse?"
+    ],
+    [
+     "Amira",
+     "Wir haben in den Pausen immer das Licht und den Beamer ausgemacht. Und wir haben die Heizung um ein Grad runtergedreht und dafür Pullis angezogen."
+    ],
+    [
+     "Tom",
+     "Am Anfang war das nervig. Aber nach drei Tagen war es normal."
+    ],
+    [
+     "Frau Sommer",
+     "Toll! Jede kleine Sache spart Energie. Und wenn viele mitmachen, wird daraus etwas Großes."
+    ]
+   ]
+  }
+ }
+}

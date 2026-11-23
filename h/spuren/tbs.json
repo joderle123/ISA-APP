@@ -1,0 +1,558 @@
+{
+ "modul": "tbs",
+ "titel": {
+  "de": "Toolbox · Arbeitsblätter S",
+  "fr": "Toolbox · fiches S"
+ },
+ "sprache": "de",
+ "spuren": {
+  "tbs-52x": {
+   "titel": "S-52 · Mein Skills-Kompass",
+   "art": "lesen",
+   "lektion": 52,
+   "dauer": 22.9,
+   "text": [
+    [
+     "",
+     "Nicht jeder Skill passt überall. Der Kompass zeigt dir, welcher Skill dir wo hilft: in der Schule, bei Wut, in Freundschaften, zu Hause, im Netz. Wer in Jahr 1 dabei war, kennt den Skills-Koffer – er sortiert Skills nach der Anspannung. Der Kompass sortiert nach Bereichen deines Alltags."
+    ]
+   ]
+  },
+  "tbs-54x": {
+   "titel": "S-54 · Worauf steht mein Selbstwert?",
+   "art": "lesen",
+   "lektion": 54,
+   "dauer": 27.2,
+   "text": [
+    [
+     "",
+     "Selbstwert ist das Gefühl, als Mensch in Ordnung und wertvoll zu sein. Viele knüpfen es an Dinge, die schnell wackeln: Noten, Likes, Aussehen, Siege. Dann geht es mit jeder Klassenarbeit und jedem Post rauf und runter. Stabiler wird es, wenn es auf mehreren Quellen steht. Am besten auf solchen, die dir ein schlechter Tag nicht wegnehmen kann."
+    ]
+   ]
+  },
+  "tbs-56x": {
+   "titel": "S-56 · Über Körper reden – mit Respekt",
+   "art": "lesen",
+   "lektion": 56,
+   "dauer": 18.4,
+   "text": [
+    [
+     "",
+     "Ein Spruch über die Beine, ein Lach-Emoji unter einem Foto. Ein „Du hast aber zugenommen“ beim Familienfest. Solche Sätze treffen, auch wenn sie als Spaß gemeint sind. Und oft steht jemand daneben und weiß nicht, was er sagen soll."
+    ]
+   ]
+  },
+  "tbs-57x": {
+   "titel": "S-57 · Mein innerer Freund",
+   "art": "lesen",
+   "lektion": 57,
+   "dauer": 23.6,
+   "text": [
+    [
+     "",
+     "Wenn etwas schiefgeht, meldet sich oft der innere Kritiker: „Typisch. Du kriegst nichts hin.“ Er will dich vor Fehlern schützen – aber er übertreibt und macht dich klein. Der innere Freund sieht dieselbe Panne. Er sagt die Wahrheit, nur freundlich: „Das ist ärgerlich. Was hilft dir jetzt?“"
+    ]
+   ]
+  },
+  "tbs-58x": {
+   "titel": "S-58 · Mein Stress-Barometer",
+   "art": "lesen",
+   "lektion": 58,
+   "dauer": 18.2,
+   "text": [
+    [
+     "",
+     "Stress ist die Antwort deines Körpers auf eine Anforderung. Das Herz schlägt schneller, die Muskeln spannen sich an, der Blick wird eng. Das macht dich bereit. Zum Problem wird es, wenn es zu viel wird oder zu lange dauert."
+    ]
+   ]
+  },
+  "tbs-61a": {
+   "titel": "S-61 · Mein Start-Plan – Sonntag, 16 Uhr",
+   "art": "lesen",
+   "lektion": 61,
+   "dauer": 28.2,
+   "text": [
+    [
+     "",
+     "Sonntag, 16 Uhr"
+    ],
+    [
+     "",
+     "Diogo muss morgen in Französisch präsentieren. Er öffnet den Laptop, sieht die leere Folie und bekommt ein flaues Gefühl im Bauch. „Erst noch das Video fertig schauen.“ Aus einem Video werden sieben. Um 21 Uhr ist der Druck riesig, und die Präsentation fühlt sich noch schlimmer an als um 16 Uhr."
+    ]
+   ]
+  },
+  "tbs-63a": {
+   "titel": "S-63 · Der Wut-Eisberg – Das Heft",
+   "art": "lesen",
+   "lektion": 63,
+   "dauer": 30.2,
+   "text": [
+    [
+     "",
+     "Das Heft"
+    ],
+    [
+     "",
+     "Elias (14) kommt nach der Pause ins Klassenzimmer. Sein Heft liegt aufgeschlagen auf dem Tisch, jemand hat „Loser“ quer über die Seite geschrieben. Hinten lachen drei. Elias wirft das Heft gegen die Wand und brüllt: „Wer war das?“ In dem Moment kommt die Lehrerin herein – und schickt ihn vor die Tür. Auf dem Flur tritt er gegen seinen Rucksack und denkt: Immer ich."
+    ]
+   ]
+  },
+  "tbs-65a": {
+   "titel": "S-65 · Die Stopp-Ampel – Das Handy",
+   "art": "lesen",
+   "lektion": 65,
+   "dauer": 26.5,
+   "text": [
+    [
+     "",
+     "Das Handy"
+    ],
+    [
+     "",
+     "In der Pause nimmt Mathis Aylin das Handy aus der Hand. Er liest laut eine Nachricht vor. Als sie danach greift, hält er es hoch. Ein paar Leute lachen. Aylins Gesicht wird heiß, ihre Hände zittern, ihre Zahl liegt bei 80. Am liebsten würde sie ihm das Handy aus der Hand reißen und zuschlagen."
+    ]
+   ]
+  },
+  "tbs-67a": {
+   "titel": "S-67 · Wiedergutmachen – Das Plakat",
+   "art": "lesen",
+   "lektion": 67,
+   "dauer": 29.2,
+   "text": [
+    [
+     "",
+     "Das Plakat"
+    ],
+    [
+     "",
+     "Diogo hat in Mathe eine schlechte Note zurückbekommen. In der nächsten Stunde arbeitet er mit Léa an einem Plakat. Léa sagt: „Kannst du wenigstens sauber schreiben?“ Diogo platzt. Er brüllt sie an und reißt das Plakat mitten durch – zwei Stunden Arbeit, und die ganze Klasse schaut zu. Am Abend denkt er: Ich bin echt das Letzte."
+    ]
+   ]
+  },
+  "tbs-68a": {
+   "titel": "S-68 · Schubladen im Kopf – Der Ruf",
+   "art": "lesen",
+   "lektion": 68,
+   "dauer": 30.7,
+   "text": [
+    [
+     "",
+     "Der Ruf"
+    ],
+    [
+     "",
+     "Rafael (14) ist vor einem Jahr einmal mit einem Mitschüler aneinandergeraten. Seitdem gilt er als „der Schläger“. Als in der Umkleide ein Handy fehlt, schauen alle zuerst ihn an. In der Gruppenarbeit hört niemand zu, wenn er eine Idee hat. Und die Neue in der Klasse wird vor ihm gewarnt, bevor sie ihn kennt. Inzwischen sagt Rafael: „Dann bin ich halt so.“"
+    ]
+   ]
+  },
+  "tbs-69a": {
+   "titel": "S-69 · Mein Sprachenporträt – Inês",
+   "art": "lesen",
+   "lektion": 69,
+   "dauer": 37.3,
+   "text": [
+    [
+     "",
+     "Inês"
+    ],
+    [
+     "",
+     "Inês (14) ist in Esch geboren und hat zwei Pässe, einen portugiesischen und einen luxemburgischen. Mit ihrer Oma spricht sie Portugiesisch, mit ihren Freundinnen Luxemburgisch, im Lycée Französisch und Deutsch, beim Zocken Englisch. Sie spielt Handball, ist große Schwester und hört Rap. Jeden Sommer fährt sie zur Familie nach Portugal – und freut sich nach zwei Wochen auf zu Hause. Neulich hat sie jemand gefragt: „Bist du jetzt Portugiesin oder Luxemburgerin?“"
+    ]
+   ]
+  },
+  "tbs-75a": {
+   "titel": "S-75 · Verliebt – mit Respekt – Luca",
+   "art": "lesen",
+   "lektion": 75,
+   "dauer": 25.6,
+   "text": [
+    [
+     "",
+     "Luca"
+    ],
+    [
+     "",
+     "Seit drei Wochen nimmt Luca den langen Weg über den zweiten Stock, weil dort Noras Klassenzimmer ist. Eine Nachricht an sie hat er elfmal umgeschrieben. Am Freitag fragt er sie, ob sie am Samstag mit zum Skatepark kommt. Nora antwortet freundlich: „Ich mag dich, aber nicht so. Sorry.“"
+    ]
+   ]
+  },
+  "tbs-76a": {
+   "titel": "S-76 · Wenn Freundschaften enden – Nora und Emma",
+   "art": "lesen",
+   "lektion": 76,
+   "dauer": 25.4,
+   "text": [
+    [
+     "",
+     "Nora und Emma"
+    ],
+    [
+     "",
+     "Nora und Emma waren seit Cycle 2 unzertrennlich. Im Lycée kamen sie in verschiedene Klassen; Emma spielt jetzt Handball, Nora zeichnet Mangas. Nach einem Streit erzählte Emma etwas herum, das Nora ihr anvertraut hatte. Heute sitzen die beiden im selben Bus und schauen aufs Handy."
+    ]
+   ]
+  },
+  "tbs-78a": {
+   "titel": "S-78 · Besser streiten zu Hause – 22 Uhr",
+   "art": "lesen",
+   "lektion": 78,
+   "dauer": 35.8,
+   "text": [
+    [
+     "",
+     "22 Uhr"
+    ],
+    [
+     "",
+     "Donnerstag, kurz nach 22 Uhr. Mila, 14, liegt im Bett und schreibt mit ihren Freundinnen: Am Samstag ist Party, alle planen gerade, wer was mitbringt. Die Regel zu Hause ist klar: Um 22 Uhr kommt das Handy in die Küche. Ihre Mutter steht in der Tür: „Handy. Jetzt.“ Mila: „Immer machst du alles kaputt!“ Die Tür knallt. Danach liegen beide lange wach."
+    ]
+   ]
+  },
+  "tbs-81a": {
+   "titel": "S-81 · Meine Daten im Griff – Milas Profil",
+   "art": "lesen",
+   "lektion": 81,
+   "dauer": 34.1,
+   "text": [
+    [
+     "",
+     "Milas Profil"
+    ],
+    [
+     "",
+     "Mila, 14, hat ein öffentliches Profil mit dem Namen mila.balou. In der Beschreibung steht „Esch · Handball · 14“. Das Profilbild zeigt sie im Vereinstrikot mit Logo. Unter den letzten Posts: ein Selfie vor ihrem Lycée, das Schild gut lesbar; ein Foto mit ihrem Hund Balou; „Endlich 14“ mit Torte, gepostet am 12. März; eine Story vom Training am Dienstag um 18 Uhr, mit Standort."
+    ]
+   ]
+  },
+  "tbs-82a": {
+   "titel": "S-82 · Bilder: Erlaubnis, Druck, Erpressung – Eine Stunde",
+   "art": "lesen",
+   "lektion": 82,
+   "dauer": 34.5,
+   "text": [
+    [
+     "",
+     "Eine Stunde"
+    ],
+    [
+     "",
+     "Elias, 15, chattet seit zwei Wochen mit einem Profil namens „sunny_16“. Sie ist nett, macht Komplimente, schickt Fotos. Irgendwann bittet sie um ein intimes Bild von ihm, und er schickt eins. Kurz danach ändert sich der Ton: „Zahl 200 Euro, sonst bekommen alle deine Freunde das Bild. Du hast eine Stunde.“ Elias zittert. Er schämt sich so, dass er es niemandem erzählen will."
+    ]
+   ]
+  },
+  "tbs-101x": {
+   "titel": "S-101 · Mein Skills-Buch",
+   "art": "lesen",
+   "lektion": 101,
+   "dauer": 22.6,
+   "text": [
+    [
+     "",
+     "Im Skills-Kurs probierst du viel aus. In dieses Buch kommt nur, was bei dir wirklich wirkt. Es hat vier Rubriken: Lieblingsskills, Pläne, Sätze, die tragen, und Menschen, die helfen. So findest du es auch nach dem Kurs noch: im Lycée, in der Ausbildung, zu Hause."
+    ]
+   ]
+  },
+  "tbs-105x": {
+   "titel": "S-105 · Meine Identitäts-Blume",
+   "art": "lesen",
+   "lektion": 105,
+   "dauer": 18.6,
+   "text": [
+    [
+     "",
+     "Identität ist die Antwort auf die Frage: Wer bin ich? Mit 15 oder 16 ist sie nicht fertig – du probierst aus, wählst, verwirfst. Im Lycée bist du anders als zu Hause oder online, und trotzdem bist du immer du."
+    ]
+   ]
+  },
+  "tbs-107x": {
+   "titel": "S-107 · Gut entscheiden",
+   "art": "lesen",
+   "lektion": 107,
+   "dauer": 17.0,
+   "text": [
+    [
+     "",
+     "Kleine Entscheidungen trifft der Bauch in Sekunden – und das ist gut so. Bei großen lohnt es sich, auch den Kopf zu fragen. Am besten entscheidest du, wenn beide zu Wort kommen und du am Ende weißt, warum."
+    ]
+   ]
+  },
+  "tbs-107a": {
+   "titel": "S-107 · Gut entscheiden – Der Stage",
+   "art": "lesen",
+   "lektion": 107,
+   "dauer": 31.3,
+   "text": [
+    [
+     "",
+     "Der Stage"
+    ],
+    [
+     "",
+     "Mathis (15) muss sich bis Freitag für seinen zweiwöchigen Stage entscheiden. In der Autowerkstatt seines Onkels kennt er alle, der Weg ist kurz, und sein Onkel würde sich freuen. Im Hotel in der Stadt könnte er in der Küche mitarbeiten – das interessiert ihn wirklich. Dort kennt er aber niemanden, und mit dem Bus braucht er fast eine Stunde. Seit Tagen schiebt Mathis die Entscheidung vor sich her."
+    ]
+   ]
+  },
+  "tbs-109a": {
+   "titel": "S-109 · Mut oder Leichtsinn? – Auf der Brücke",
+   "art": "lesen",
+   "lektion": 109,
+   "dauer": 24.7,
+   "text": [
+    [
+     "",
+     "Auf der Brücke"
+    ],
+    [
+     "",
+     "Samstag an der Sauer. Luca (15) steht mit fünf anderen auf einer Brücke. Zwei sind schon ins Wasser gesprungen, eine filmt. Wie tief der Fluss heute ist, weiß niemand – es hat seit Wochen kaum geregnet. „Jetzt du“, ruft jemand. Alle schauen Luca an."
+    ]
+   ]
+  },
+  "tbs-109b": {
+   "titel": "S-109 · Mut oder Leichtsinn? – Im Klassenchat",
+   "art": "lesen",
+   "lektion": 109,
+   "dauer": 25.1,
+   "text": [
+    [
+     "",
+     "Im Klassenchat"
+    ],
+    [
+     "",
+     "Im Klassenchat taucht ein Foto von Elias auf: Er ist in der Kantine eingeschlafen, darunter stehen gemeine Sprüche. Alle schicken lachende Smileys. Amira (15) überlegt, ob sie schreibt: „Löscht das. Das ist nicht okay.“ Vielleicht ist sie dann die Nächste."
+    ]
+   ]
+  },
+  "tbs-112a": {
+   "titel": "S-112 · Vom Fehler zum nächsten Schritt – Zweiter Anlauf",
+   "art": "lesen",
+   "lektion": 112,
+   "dauer": 39.7,
+   "text": [
+    [
+     "",
+     "Zweiter Anlauf"
+    ],
+    [
+     "",
+     "Chiara (16) wollte unbedingt Köchin werden. In ihrem ersten Stage kam sie dreimal zu spät, die Beurteilung war schlecht. Ihr erster Gedanke: „Ich bin einfach nicht dafür gemacht.“ Ihre Tante fragte nur: „Was genau ist schiefgelaufen?“ Zusammen fanden sie es heraus: Der Bus war zu knapp, und Chiara hatte sich nicht getraut, in der Küche nachzufragen. Im nächsten Stage nahm sie den Bus davor und fragte, wenn sie etwas nicht wusste. Am Ende bekam sie einen Ausbildungsplatz angeboten."
+    ]
+   ]
+  },
+  "tbs-119a": {
+   "titel": "S-119 · Mein Ziel für die nächsten Monate – Yusufs Ziel",
+   "art": "lesen",
+   "lektion": 119,
+   "dauer": 27.4,
+   "text": [
+    [
+     "",
+     "Yusufs Ziel"
+    ],
+    [
+     "",
+     "Yusuf (15) will bis zu den Osterferien einen Praktikumsplatz in einer Werkstatt finden. Das Beste daran: zeigen, was er kann. Sein inneres Hindernis: Vor Anrufen bei Fremden schiebt er alles auf. Sein Plan: „Wenn ich montags aus dem Bus steige, rufe ich einen Betrieb an, bevor ich zum Training gehe.“"
+    ]
+   ]
+  },
+  "tbs-120a": {
+   "titel": "S-120 · Mein Monatsbudget – Inês plant ihren Monat",
+   "art": "lesen",
+   "lektion": 120,
+   "dauer": 33.9,
+   "text": [
+    [
+     "",
+     "Inês plant ihren Monat"
+    ],
+    [
+     "",
+     "Inês ist 15. Sie bekommt jeden Monat 40 Euro Taschengeld und verdient mit Babysitten etwa 20 Euro dazu. Ihr Handyguthaben kostet 10 Euro im Monat, ihr Anteil am Streaming-Abo der Familie 5 Euro. Sie spart auf Kopfhörer für 60 Euro. Letzten Monat war ihr Geld nach zwei Wochen weg – und sie wusste nicht genau, wofür. (Alle Beträge sind Beispiele.)"
+    ]
+   ]
+  },
+  "tbs-122a": {
+   "titel": "S-122 · Alltag im Griff – Jangs Termin",
+   "art": "lesen",
+   "lektion": 122,
+   "dauer": 34.9,
+   "text": [
+    [
+     "",
+     "Jangs Termin"
+    ],
+    [
+     "",
+     "Jang hat am Donnerstag um 14:30 Uhr einen Termin beim Zahnarzt im Nachbarort – zum ersten Mal geht er allein. Der Bus fährt um 13:15, 13:45 und 14:15 Uhr und braucht 25 Minuten. Von der Haltestelle im Nachbarort sind es 10 Minuten zu Fuß bis zur Praxis, von zu Hause bis zu seiner Haltestelle 5 Minuten. Jang will 10 Minuten vor dem Termin da sein."
+    ]
+   ]
+  },
+  "tbs-130a": {
+   "titel": "S-130 · Mein Anliegen – Aylins Anliegen",
+   "art": "lesen",
+   "lektion": 130,
+   "dauer": 33.1,
+   "text": [
+    [
+     "",
+     "Aylins Anliegen"
+    ],
+    [
+     "",
+     "Aylin ärgert sich seit Wochen: Im zweiten Stock ihres Lycée gibt es nur einen Getränkeautomaten, und Wasser kostet dort Geld. Erst meckert sie mit ihrer Freundin. Dann schreibt sie auf, was genau sie will: einen Wasserspender im zweiten Stock. Sie fragt ihre Klassensprecherin, wer darüber entscheidet, und bringt das Anliegen in den Klassenrat. Zwei Wochen später liegt es beim Comité des élèves."
+    ]
+   ]
+  },
+  "tbs-131a": {
+   "titel": "S-131 · Wenn etwas fehlt – Tiago",
+   "art": "lesen",
+   "lektion": 131,
+   "dauer": 32.7,
+   "text": [
+    [
+     "",
+     "Tiago"
+    ],
+    [
+     "",
+     "Im Sommer ist Tiagos Avô gestorben, sein Großvater in Portugal. Tiago (15) konnte nicht zur Beerdigung fahren, weil die Schule schon begonnen hatte. In der Klasse weiß es kaum jemand. Tiago geht zum Training, macht Witze, lernt für die Mathearbeit. Im Bus hört er die alten Sprachnachrichten seines Avô – immer wieder dieselben. Manchmal lacht er beim Training und fühlt sich danach schlecht."
+    ]
+   ]
+  },
+  "tbs-133x": {
+   "titel": "S-133 · Allein oder einsam?",
+   "art": "lesen",
+   "lektion": 133,
+   "dauer": 21.3,
+   "text": [
+    [
+     "",
+     "Einsamkeit ist das Gefühl, dass die Nähe fehlt, die man sich wünscht. Man kann mitten in der Klasse einsam sein – und allein am See ganz zufrieden. Einsamkeit ist ein Signal wie Hunger: Sie sagt, dass wir Menschen brauchen. Sie ist kein Makel, und fast jeder kennt sie."
+    ]
+   ]
+  },
+  "tbs-136a": {
+   "titel": "S-136 · Geschichten von Widerstandskraft – Rafael, 16",
+   "art": "lesen",
+   "lektion": 136,
+   "dauer": 44.6,
+   "text": [
+    [
+     "",
+     "Rafael, 16"
+    ],
+    [
+     "",
+     "Rafael war zwölf, als er mit seiner Mutter und seiner kleinen Schwester aus Brasilien nach Esch kam. Im Unterricht verstand er kaum etwas, in der Pause stand er oft allein. Seine Mutter arbeitete im Schichtdienst, also holte er nachmittags die Schwester ab und machte ihr Essen. Im Futsal-Verein fragte ihn der Trainer irgendwann, ob er beim Kindertraining helfen wolle. Dort merkte Rafael, dass er gut erklären kann – mit Händen, Füßen und den ersten deutschen Wörtern. Heute sagt er: „Meine Schwester hat mich gebraucht. Das hat mich jeden Morgen aufstehen lassen.“"
+    ]
+   ]
+  },
+  "tbs-136b": {
+   "titel": "S-136 · Geschichten von Widerstandskraft – Zoé, 15",
+   "art": "lesen",
+   "lektion": 136,
+   "dauer": 50.3,
+   "text": [
+    [
+     "",
+     "Zoé, 15"
+    ],
+    [
+     "",
+     "Seit der Trennung ihrer Eltern wohnt Zoé eine Woche bei der Mutter in Ettelbruck, eine Woche beim Vater in der Stadt. Irgendetwas fehlt immer: das Ladekabel, das Französischheft, die Sportschuhe. Ihre Noten wurden so schlecht, dass sie die Klasse wiederholen musste. Zu Hause wollte sie niemanden zusätzlich belasten. Ihre Oma merkte es zuerst, beim gemeinsamen Kochen jeden Mittwoch, und ermutigte sie, beim SePAS einen Termin zu machen. Dort machte Zoé einen Plan: feste Lernzeiten in beiden Wohnungen und eine Liste für die Tasche. Heute sagt sie: „Das Wiederholen war kein Absturz. Es war ein Neustart – mit Plan.“"
+    ]
+   ]
+  },
+  "tbs-136c": {
+   "titel": "S-136 · Geschichten von Widerstandskraft – Mathis, 17",
+   "art": "lesen",
+   "lektion": 136,
+   "dauer": 46.4,
+   "text": [
+    [
+     "",
+     "Mathis, 17"
+    ],
+    [
+     "",
+     "Mathis spielte Handball, seit er sieben war, und seine Freunde waren seine Mannschaft. Mit fünfzehn riss ihm im Training das Kreuzband. Acht Monate kein Sport, drei Wochen Krücken, und die anderen fuhren ohne ihn zu Turnieren. Er zog sich zurück und war oft gereizt. Sein älterer Bruder nahm ihn trotzdem zu jedem Heimspiel mit. Die Physiotherapeutin setzte ihm kleine Ziele, und Mathis führte eine Liste über jeden Fortschritt. Irgendwann fragte die Trainerin, ob er bei den Spielen die Statistik führen könne. Heute sagt er: „Ich habe gelernt, dass ich auch ohne Ball zur Mannschaft gehöre.“"
+    ]
+   ]
+  },
+  "tbs-136d": {
+   "titel": "S-136 · Geschichten von Widerstandskraft – Nora, 15",
+   "art": "lesen",
+   "lektion": 136,
+   "dauer": 48.4,
+   "text": [
+    [
+     "",
+     "Nora, 15"
+    ],
+    [
+     "",
+     "Noras Mutter ist seit zwei Jahren oft krank. An schlechten Tagen bleibt sie im Bett, und Nora macht ihrem kleinen Bruder Frühstück und bringt ihn zur Schule. Erzählt hat sie das niemandem – aus Scham und aus Angst, dass sich dann alles ändert. Im Unterricht war sie oft müde. Eines Tages fragte ihre Klassenlehrerin nach der Stunde: „Wie geht es dir eigentlich?“ Zum ersten Mal sagte Nora die Wahrheit. Seitdem nimmt ihre Tante den Bruder am Wochenende, und Nora geht freitags ins Jugendhaus, wo sie einfach fünfzehn sein darf. Sie schreibt Songtexte in ein Heft. Heute sagt sie: „Das Schwerste war der erste Satz.“"
+    ]
+   ]
+  },
+  "tbs-144a": {
+   "titel": "S-144 · KI-Werkstatt – Im Klassenchat",
+   "art": "lesen",
+   "lektion": 144,
+   "dauer": 31.0,
+   "text": [
+    [
+     "",
+     "Im Klassenchat"
+    ],
+    [
+     "",
+     "Sonntagabend, 21 Uhr: Im Klassenchat taucht ein Video auf. Darin beleidigt Elias angeblich die Französischlehrerin – Stimme und Gesicht wirken echt. Nach einer Stunde haben es zwanzig Leute gesehen, einige haben Lach-Emojis geschickt. Elias schreibt: „Das bin ich nicht. Das habe ich nie gesagt.“ Am Montag muss er in die Schule."
+    ]
+   ]
+  },
+  "tbs-145a": {
+   "titel": "S-145 · Grün, Gelb, Rot – die Beziehungs-Ampel – Lena und Mathis",
+   "art": "lesen",
+   "lektion": 145,
+   "dauer": 41.5,
+   "text": [
+    [
+     "",
+     "Lena und Mathis"
+    ],
+    [
+     "",
+     "Lena und Mathis sind seit vier Monaten zusammen. Am Anfang war alles leicht. Inzwischen will Mathis immer wissen, wo Lena ist; er hat ihr gezeigt, wie sie ihren Standort mit ihm teilt. Antwortet sie nicht sofort, kommen zehn Nachrichten hintereinander. Zum Geburtstag ihrer besten Freundin ist Lena nicht gegangen, weil Mathis beleidigt war. Gestern sagte er: „Wenn du nichts zu verbergen hast, gib mir dein Passwort.“ Ihren Freundinnen erklärt Lena: „Er ist halt eifersüchtig. Das zeigt doch, dass er mich liebt.“"
+    ]
+   ]
+  },
+  "tbs-151x": {
+   "titel": "S-151 · Sätze für die Hosentasche",
+   "art": "lesen",
+   "lektion": 151,
+   "dauer": 18.6,
+   "text": [
+    [
+     "",
+     "Ein Jahr lang hast du in deinem Skills-Buch unter „Sätze, die tragen“ gesammelt, was du dir in schweren Momenten sagen kannst. Jetzt kommt der Feinschliff: Welche Sätze halten wirklich – und welche drei nimmst du mit, wenn das Buch zu Hause liegt?"
+    ]
+   ]
+  },
+  "tbs-153x": {
+   "titel": "S-153 · Mein Ampelplan für den Neustart",
+   "art": "lesen",
+   "lektion": 153,
+   "dauer": 16.0,
+   "text": [
+    [
+     "",
+     "Dein Ampelplan aus Jahr 1 war für Momente gebaut, in denen die Anspannung steigt. Nach einem Wechsel kippt es selten an einem Tag – meist rutscht es über Wochen. Mit diesem Plan merkst du es früh."
+    ]
+   ]
+  }
+ }
+}

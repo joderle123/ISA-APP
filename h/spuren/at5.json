@@ -1,0 +1,542 @@
+{
+ "modul": "at5",
+ "titel": {
+  "de": "Metall und Maschinen",
+  "fr": "Métal et machines"
+ },
+ "sprache": "de",
+ "spuren": {
+  "at5-01l": {
+   "titel": "Metalle im Alltag",
+   "art": "lesen",
+   "lektion": 1,
+   "dauer": 75.2,
+   "text": [
+    [
+     "",
+     "Metalle im Alltag"
+    ],
+    [
+     "",
+     "Stahl."
+    ],
+    [
+     "",
+     "Stahl ist Eisen mit ein wenig Kohlenstoff. Er ist hart und stabil. Man macht daraus Schrauben, Werkzeuge, Autos und Brücken. Normaler Stahl rostet, wenn er lange nass ist. Ein Magnet bleibt an ihm hängen."
+    ],
+    [
+     "",
+     "Aluminium."
+    ],
+    [
+     "",
+     "Aluminium – kurz Alu – ist leicht: etwa dreimal leichter als Stahl. Es rostet nicht. Man findet es in Getränkedosen, Fensterrahmen, Fahrrädern und Flugzeugen. Ein Magnet hält nicht."
+    ],
+    [
+     "",
+     "Kupfer."
+    ],
+    [
+     "",
+     "Kupfer ist rötlich-braun. Es leitet Strom und Wärme sehr gut. Darum sind in Kabeln Kupferdrähte. Draußen wird Kupfer mit der Zeit grün – das sieht man an alten Kirchendächern."
+    ],
+    [
+     "",
+     "Messing."
+    ],
+    [
+     "",
+     "Messing ist eine Mischung aus Kupfer und Zink. So eine Mischung heißt Legierung. Messing ist goldgelb. Man findet es an Türgriffen, Schlüsseln und Trompeten."
+    ],
+    [
+     "",
+     "Der Magnet-Test."
+    ],
+    [
+     "",
+     "Hält ein Magnet, ist es meistens Stahl oder Eisen. Aluminium, Kupfer und Messing sind nicht magnetisch. Metallreste gehören nie in den Restmüll: Man kann Metall sehr oft einschmelzen und neu verwenden."
+    ]
+   ]
+  },
+  "at5-01h": {
+   "titel": "Was ist das für ein Metall?",
+   "art": "hoeren",
+   "lektion": 1,
+   "dauer": 52.9,
+   "text": [
+    [
+     "Herr Steffen",
+     "Hier ist ein Magnet. Damit könnt ihr schon viel herausfinden. Fangt mit der Schraube an."
+    ],
+    [
+     "Yusuf",
+     "Der Magnet hält! Also ist die Schraube aus Stahl."
+    ],
+    [
+     "Amira",
+     "Jetzt die Dose. Der Magnet hält nicht. Und sie ist ganz leicht. Aluminium!"
+    ],
+    [
+     "Yusuf",
+     "Und dieses Kabelstück? Innen ist es rötlich."
+    ],
+    [
+     "Herr Steffen",
+     "Genau hinschauen hilft. Rötlicher Draht im Kabel ist Kupfer."
+    ],
+    [
+     "Amira",
+     "Hier ist ein alter Schlüssel. Er ist goldgelb, aber der Magnet hält nicht. Ist das Gold?"
+    ],
+    [
+     "Herr Steffen",
+     "Leider nein. Das ist Messing – eine Mischung aus Kupfer und Zink."
+    ],
+    [
+     "Yusuf",
+     "Und was machen wir jetzt mit den Resten?"
+    ],
+    [
+     "Herr Steffen",
+     "Wir sammeln sie getrennt. Wenn die Kisten voll sind, bringen wir sie zum Recyclinghof. Dort wird das Metall eingeschmolzen und wieder verwendet."
+    ]
+   ]
+  },
+  "at5-02l": {
+   "titel": "Ein Metallstück anreißen und feilen",
+   "art": "lesen",
+   "lektion": 2,
+   "dauer": 87.3,
+   "text": [
+    [
+     "",
+     "Ein Metallstück anreißen und feilen"
+    ],
+    [
+     "",
+     "Du brauchst: Flachstahl oder Alublech, Stahlmaßstab, Anschlagwinkel, Reißnadel, Feile, Schraubstock mit Schutzbacken."
+    ],
+    [
+     "",
+     "Schritt 1: Messen: Miss mit dem Stahlmaßstab und markiere das Maß."
+    ],
+    [
+     "",
+     "Schritt 2: Anreißen: Lege den Anschlagwinkel an die gerade Kante. Ziehe mit der Reißnadel eine feine Linie. Diese Linie bleibt sichtbar, auch beim Feilen."
+    ],
+    [
+     "",
+     "Schritt 3: Einspannen: Spanne das Werkstück im Schraubstock ein – mit Schutzbacken, damit es keine Kratzer bekommt. Die Linie ist knapp über den Backen."
+    ],
+    [
+     "",
+     "Schritt 4: Feilen: Eine Hand hält das Heft, die andere liegt vorn auf der Feile. Drücke nur beim Vorschieben, beim Zurückziehen nicht."
+    ],
+    [
+     "",
+     "Schritt 5: Prüfen: Schau immer wieder nach: Bin ich schon an der Linie? Ist die Kante gerade? Prüfe mit dem Winkel."
+    ],
+    [
+     "",
+     "Schritt 6: Entgraten: An den Kanten entstehen scharfe Grate. Feile sie schräg und leicht weg. Dann schneidet sich niemand."
+    ],
+    [
+     "",
+     "Feilspäne nie wegblasen und nicht mit der Hand wegwischen – nimm einen Handfeger oder Pinsel. Benutze eine Feile nie ohne Heft."
+    ]
+   ]
+  },
+  "at5-02h": {
+   "titel": "Feilen im Takt",
+   "art": "hoeren",
+   "lektion": 2,
+   "dauer": 72.2,
+   "text": [
+    [
+     "Herr Steffen",
+     "Stellt euch vor den Schraubstock. Die Füße stehen etwa schulterbreit. Der linke Fuß ist ein Stück vorn, der rechte hinten. Wer mit links arbeitet, macht es umgekehrt."
+    ],
+    [
+     "Herr Steffen",
+     "Der Schraubstock ist ungefähr auf der Höhe von eurem Ellenbogen. Die rechte Hand hält das Heft, die linke Hand liegt vorn auf der Feile."
+    ],
+    [
+     "Nele",
+     "Und ich im Rollstuhl?"
+    ],
+    [
+     "Herr Steffen",
+     "Für dich ist der Schraubstock an der niedrigen Werkbank. Dann ist er auch bei dir auf Ellenbogenhöhe. Die Arme machen genau dieselbe Bewegung."
+    ],
+    [
+     "Herr Steffen",
+     "Und jetzt: Vor – mit Druck. Zurück – ohne Druck. Vor … und zurück. Vor … und zurück. Ruhig und gleichmäßig, mit der ganzen Länge der Feile."
+    ],
+    [
+     "Nele",
+     "Das ist ja ganz langsam! Ich dachte, man muss schnell feilen."
+    ],
+    [
+     "Herr Steffen",
+     "Schnell und hektisch macht die Kante schief. Langsam und mit der ganzen Feile geht es am Ende schneller."
+    ],
+    [
+     "Nele",
+     "Und warum soll ich beim Zurückziehen nicht drücken?"
+    ],
+    [
+     "Herr Steffen",
+     "Die Zähne der Feile schneiden nur in eine Richtung – nach vorn. Wenn du beim Zurückziehen drückst, werden sie stumpf."
+    ],
+    [
+     "Nele",
+     "Okay. Vor – mit Druck. Zurück – ohne. … Es wird schon gerader!"
+    ]
+   ]
+  },
+  "at5-03l": {
+   "titel": "Sicher an der Bohrmaschine",
+   "art": "lesen",
+   "lektion": 3,
+   "dauer": 64.5,
+   "text": [
+    [
+     "",
+     "Sicher an der Bohrmaschine"
+    ],
+    [
+     "",
+     "Vor dem Bohren."
+    ],
+    [
+     "",
+     "Zuerst körnt man die Stelle: Man setzt den Körner auf die Markierung und schlägt einmal mit dem Hammer darauf. In der kleinen Delle rutscht der Bohrer nicht weg. Dann spannt man das Werkstück fest in den Maschinenschraubstock. Schutzbrille auf, lange Haare zusammenbinden, keine weiten Ärmel, keinen Schmuck – und keine Handschuhe, denn sie können sich im Bohrer verfangen."
+    ],
+    [
+     "",
+     "Der richtige Bohrer."
+    ],
+    [
+     "",
+     "Für Holz gibt es Bohrer mit einer langen Zentrierspitze. Für Metall nimmt man Bohrer mit einer kegeligen Spitze. Für Stein und Beton braucht man einen Bohrer mit einer harten, breiten Platte an der Spitze."
+    ],
+    [
+     "",
+     "Die richtige Drehzahl."
+    ],
+    [
+     "",
+     "Die Drehzahl sagt, wie schnell sich der Bohrer dreht. Eine einfache Regel: dünner Bohrer – schnell, dicker Bohrer – langsam. In Metall bohrt man langsamer als in Holz."
+    ],
+    [
+     "",
+     "Nach dem Bohren."
+    ],
+    [
+     "",
+     "Maschine ausschalten und warten, bis sie steht. Der Bohrer und die Späne können heiß sein. Späne entfernt man mit dem Pinsel."
+    ]
+   ]
+  },
+  "at5-03h": {
+   "titel": "Der Maschinen-Pass",
+   "art": "hoeren",
+   "lektion": 3,
+   "dauer": 50.6,
+   "text": [
+    [
+     "Herr Steffen",
+     "Du willst ein Loch mit 8 Millimetern in dieses Stahlstück bohren. Was machst du zuerst?"
+    ],
+    [
+     "Yusuf",
+     "Ich nehme den 8-Millimeter-Bohrer und fange an."
+    ],
+    [
+     "Herr Steffen",
+     "Halt. Was fehlt noch?"
+    ],
+    [
+     "Yusuf",
+     "Ah – körnen! Sonst rutscht der Bohrer weg. Und ich spanne das Stück in den Maschinenschraubstock."
+    ],
+    [
+     "Herr Steffen",
+     "Gut. Welchen Bohrer nimmst du für Stahl?"
+    ],
+    [
+     "Yusuf",
+     "Einen Metallbohrer, mit der kegeligen Spitze."
+    ],
+    [
+     "Herr Steffen",
+     "Und die Drehzahl? Schnell oder langsam?"
+    ],
+    [
+     "Yusuf",
+     "Eher langsam, weil es Metall ist und der Bohrer schon ziemlich dick ist."
+    ],
+    [
+     "Herr Steffen",
+     "Richtig. Und was trägst du?"
+    ],
+    [
+     "Yusuf",
+     "Schutzbrille. Ärmel hochkrempeln. Keine Handschuhe."
+    ],
+    [
+     "Herr Steffen",
+     "Sehr gut. Jetzt zeigst du es mir einmal unter Aufsicht. Wenn alles klappt, bekommst du die Unterschrift im Pass."
+    ]
+   ]
+  },
+  "at5-04l": {
+   "titel": "So arbeitest du mit dem Akkuschrauber",
+   "art": "lesen",
+   "lektion": 4,
+   "dauer": 93.4,
+   "text": [
+    [
+     "",
+     "So arbeitest du mit dem Akkuschrauber"
+    ],
+    [
+     "",
+     "Du brauchst: Akkuschrauber mit geladenem Akku, Bit-Set, Schrauben, Restholz zum Üben."
+    ],
+    [
+     "",
+     "Schritt 1: Akku prüfen: Ist er geladen? Stecke ihn ein, bis er hörbar einrastet."
+    ],
+    [
+     "",
+     "Schritt 2: Das richtige Bit: Schau dir den Schraubenkopf an: Schlitz, Kreuz (PH oder PZ), Stern (TX) oder Sechskant. Das Bit muss genau passen, sonst rutscht es ab."
+    ],
+    [
+     "",
+     "Schritt 3: Bit einsetzen: Stecke das Bit ins Bohrfutter und drehe das Futter fest."
+    ],
+    [
+     "",
+     "Schritt 4: Drehmoment einstellen: Am Ring stellst du die Kraft ein. Kleine Zahl für kleine Schrauben und weiches Holz. So dreht die Schraube nicht zu tief hinein."
+    ],
+    [
+     "",
+     "Schritt 5: Richtung wählen: Rechtslauf dreht Schrauben hinein, Linkslauf dreht sie heraus. Gang 1 ist langsam und kräftig – gut zum Schrauben. Gang 2 ist schnell – gut zum Bohren."
+    ],
+    [
+     "",
+     "Schritt 6: Schrauben: Setze das Bit gerade auf, drücke leicht in Richtung Schraube und fange langsam an."
+    ],
+    [
+     "",
+     "Nach der Arbeit nimmst du den Akku heraus und legst das Gerät sauber zurück. Lege Akkus nicht in die Sonne oder auf die Heizung. Ist ein Akku beschädigt oder aufgebläht, benutzt du ihn nicht mehr und gibst ihn der Lehrperson."
+    ]
+   ]
+  },
+  "at5-04h": {
+   "titel": "Das Bit rutscht ab",
+   "art": "hoeren",
+   "lektion": 4,
+   "dauer": 52.2,
+   "text": [
+    [
+     "Finn",
+     "So ein Mist! Das Bit rutscht immer wieder raus, und es rattert."
+    ],
+    [
+     "Sami",
+     "Zeig mal. Du hast ein PH-Bit, aber das ist eine PZ-Schraube. Siehst du die kleinen Striche zwischen dem Kreuz?"
+    ],
+    [
+     "Finn",
+     "Ach so. Die sehen fast gleich aus."
+    ],
+    [
+     "Sami",
+     "Fast. Aber das Bit muss genau passen. Und du musst ein bisschen drücken, gerade von oben."
+    ],
+    [
+     "Finn",
+     "Okay … Jetzt geht es. Oh nein, jetzt ist die Schraube viel zu tief drin. Man sieht ein Loch im Holz."
+    ],
+    [
+     "Sami",
+     "Dein Drehmoment steht auf der höchsten Stufe. Für so eine kleine Schraube in weichem Holz stellst du eine kleine Zahl ein."
+    ],
+    [
+     "Finn",
+     "Und wie bekomme ich die Schraube jetzt wieder raus?"
+    ],
+    [
+     "Sami",
+     "Schalter auf Linkslauf, dann langsam herausdrehen. Danach drehst du sie an einer neuen Stelle wieder ein."
+    ]
+   ]
+  },
+  "at5-05l": {
+   "titel": "Biegen und verbinden",
+   "art": "lesen",
+   "lektion": 5,
+   "dauer": 64.3,
+   "text": [
+    [
+     "",
+     "Biegen und verbinden"
+    ],
+    [
+     "",
+     "Biegen."
+    ],
+    [
+     "",
+     "Dünnes Blech und Draht kann man kalt biegen. Blech spannt man im Schraubstock zwischen zwei Biegebacken ein, genau an der Biegelinie. Dann drückt man es mit der Hand oder mit einem Holzklotz und dem Gummihammer um die Kante. Draht biegt man mit der Zange."
+    ],
+    [
+     "",
+     "Wichtig: Biege in einem Zug und nicht immer wieder hin und her. Sonst wird das Metall an der Biegestelle müde und kann reißen."
+    ],
+    [
+     "",
+     "Lösbar oder unlösbar."
+    ],
+    [
+     "",
+     "Eine Schraube kann man wieder herausdrehen. Das ist eine lösbare Verbindung. Nieten, Kleben und Schweißen sind unlösbare Verbindungen: Man bekommt die Teile nur wieder auseinander, wenn man etwas kaputt macht."
+    ],
+    [
+     "",
+     "Nieten."
+    ],
+    [
+     "",
+     "Mit einem Blindniet verbindet man zwei Bleche, auch wenn man nur von einer Seite herankommt. Man bohrt ein Loch durch beide Bleche, steckt den Niet hinein und zieht ihn mit der Nietzange fest."
+    ]
+   ]
+  },
+  "at5-05h": {
+   "titel": "Ein Riss im Blech",
+   "art": "hoeren",
+   "lektion": 5,
+   "dauer": 45.6,
+   "text": [
+    [
+     "Chloé",
+     "Herr Steffen, schauen Sie mal. Da ist ein Riss an der Biegung."
+    ],
+    [
+     "Herr Steffen",
+     "Wie hast du gebogen?"
+    ],
+    [
+     "Chloé",
+     "Erst zu weit, dann wieder zurück, dann noch einmal. Es war nicht gerade."
+    ],
+    [
+     "Herr Steffen",
+     "Das ist das Problem. Wenn man Aluminium hin und her biegt, wird es an der Stelle müde. Dann reißt es."
+    ],
+    [
+     "Chloé",
+     "Und wie mache ich es richtig?"
+    ],
+    [
+     "Herr Steffen",
+     "Reiß die Biegelinie mit dem Winkel an. Dann spannst du das Blech so ein, dass die Linie genau an der Kante der Biegebacken liegt. Und dann drückst du es mit dem Holzklotz in einem Zug um."
+    ],
+    [
+     "Chloé",
+     "Nicht mit dem Hammer direkt?"
+    ],
+    [
+     "Herr Steffen",
+     "Nein, der Hammer macht Dellen. Holzklotz oder Gummihammer. Ich gebe dir ein neues Stück. Fehler gehören zum Lernen."
+    ]
+   ]
+  },
+  "at5-06l": {
+   "titel": "Handyständer aus Alublech",
+   "art": "lesen",
+   "lektion": 6,
+   "dauer": 97.6,
+   "text": [
+    [
+     "",
+     "Handyständer aus Alublech"
+    ],
+    [
+     "",
+     "Du brauchst: Alublech 150 × 70 × 2 mm, Stahlmaßstab, Anschlagwinkel, Reißnadel, Feile, Schleifpapier 240, Schraubstock mit Biegebacken, Holzklotz oder Gummihammer."
+    ],
+    [
+     "",
+     "Schritt 1: Anreißen: Reiße die Biegelinie 1 bei 20 mm und die Biegelinie 2 bei 80 mm an – mit dem Anschlagwinkel, quer über das ganze Blech."
+    ],
+    [
+     "",
+     "Schritt 2: Ecken runden: Feile die vier Ecken leicht rund. So sticht nichts."
+    ],
+    [
+     "",
+     "Schritt 3: Entgraten und schleifen: Entgrate alle Kanten. Schleife die Oberfläche mit Schleifpapier 240 in eine Richtung – das sieht schön aus."
+    ],
+    [
+     "",
+     "Schritt 4: Biegung 1: Spanne das Blech an Linie 1 ein. Biege den kurzen Teil (20 mm) in einem Zug um 90° nach oben. Das ist die Lippe, an der das Handy steht."
+    ],
+    [
+     "",
+     "Schritt 5: Biegung 2: Spanne das Blech an Linie 2 ein. Biege die Rückwand nach oben, bis der Winkel etwa 65° ist."
+    ],
+    [
+     "",
+     "Schritt 6: Prüfen: Stelle dein Handy hinein. Steht es sicher? Kippt der Ständer? Sind alle Kanten glatt?"
+    ],
+    [
+     "",
+     "Arbeite sauber: Ein Werkstück ist erst fertig, wenn alle Kanten entgratet sind und der Arbeitsplatz aufgeräumt ist."
+    ]
+   ]
+  },
+  "at5-06h": {
+   "titel": "Amiras Handyständer",
+   "art": "hoeren",
+   "lektion": 6,
+   "dauer": 51.3,
+   "text": [
+    [
+     "Amira",
+     "Fertig! Hier ist mein Handyständer."
+    ],
+    [
+     "Herr Steffen",
+     "Schön. Dann prüfen wir zusammen. Erstens: Kanten. Ich fahre mit dem Finger darüber … Alle Kanten sind glatt. Sehr gut entgratet."
+    ],
+    [
+     "Herr Steffen",
+     "Zweitens: Biegungen. Die Lippe ist gerade. Die zweite Biegung ist ein kleines bisschen schief – siehst du? Links ist sie etwas höher."
+    ],
+    [
+     "Amira",
+     "Ja. Da habe ich das Blech nicht ganz gerade eingespannt."
+    ],
+    [
+     "Herr Steffen",
+     "Drittens: Steht das Handy sicher?"
+    ],
+    [
+     "Amira",
+     "Ja, es steht. Auch wenn ich auf den Bildschirm tippe, kippt es nicht."
+    ],
+    [
+     "Herr Steffen",
+     "Viertens: Oberfläche. Schön gleichmäßig geschliffen. Insgesamt: sehr gute Arbeit. Was machst du beim nächsten Mal anders?"
+    ],
+    [
+     "Amira",
+     "Ich prüfe mit dem Winkel, ob das Blech gerade im Schraubstock sitzt, bevor ich biege."
+    ]
+   ]
+  }
+ }
+}

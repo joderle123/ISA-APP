@@ -1,0 +1,218 @@
+{
+ "modul": "tbgf",
+ "titel": {
+  "de": "Toolbox · Arbeitsblätter G",
+  "fr": "Toolbox · fiches G"
+ },
+ "sprache": "fr",
+ "spuren": {
+  "tbgf-01a": {
+   "titel": "G-01 · Mon volcan de colère – Juste avant l’éruption",
+   "art": "lesen",
+   "lektion": 1,
+   "dauer": 20.5,
+   "text": [
+    [
+     "",
+     "Juste avant l’éruption"
+    ],
+    [
+     "",
+     "Luca a perdu au foot à la récréation. En classe, Ben rit d’un but que Luca a raté. Luca sent son visage chauffer. Ses mains se serrent en poings. Quand Ben rit encore une fois, Luca jette sa trousse par terre."
+    ]
+   ]
+  },
+  "tbgf-13a": {
+   "titel": "G-13 · Comprendre et gérer sa colère – Mardi, cours de maths",
+   "art": "lesen",
+   "lektion": 13,
+   "dauer": 28.6,
+   "text": [
+    [
+     "",
+     "Mardi, cours de maths"
+    ],
+    [
+     "",
+     "Diogo (15 ans) récupère son contrôle de maths : 22 points sur 60. Son voisin ricane. Diogo froisse la feuille, repousse sa chaise et lance à voix haute : « C’est vraiment n’importe quoi. » La professeure le fait sortir. Plus tard, il confie à son régent : « J’avais vraiment révisé. Et à la maison, ça va encore crier. »"
+    ]
+   ]
+  },
+  "tbgf-15a": {
+   "titel": "G-15 · Qu’est-ce qui m’aide quand j’ai peur ? – Emma et la poésie",
+   "art": "lesen",
+   "lektion": 15,
+   "dauer": 19.1,
+   "text": [
+    [
+     "",
+     "Emma et la poésie"
+    ],
+    [
+     "",
+     "Demain, Emma doit réciter une poésie devant la classe. Dès le repas du soir, son ventre se noue. Au lit, son cœur bat très vite. Elle pense : « Tout le monde va sûrement se moquer de moi. »"
+    ]
+   ]
+  },
+  "tbgf-16a": {
+   "titel": "G-16 · Mon échelle du courage – Le détour de Tiago",
+   "art": "lesen",
+   "lektion": 16,
+   "dauer": 32.0,
+   "text": [
+    [
+     "",
+     "Le détour de Tiago"
+    ],
+    [
+     "",
+     "Tiago a peur des chiens. Depuis des semaines, il fait un détour pour aller à l’école, parce qu’un chien aboie chez le voisin. Avec sa mère, il construit une échelle du courage. D’abord, il regarde des photos de chiens. Puis il observe le chien du voisin depuis la fenêtre. Plus tard, il passe devant la clôture avec sa mère. Il s’exerce à chaque échelon jusqu’à ce que la peur soit nettement plus petite."
+    ]
+   ]
+  },
+  "tbgf-17a": {
+   "titel": "G-17 · Comprendre la peur – et l’affronter – Chiara et l’exposé",
+   "art": "lesen",
+   "lektion": 17,
+   "dauer": 25.5,
+   "text": [
+    [
+     "",
+     "Chiara et l’exposé"
+    ],
+    [
+     "",
+     "Chiara (14 ans) doit faire un exposé en cours de français. Depuis des jours, elle dort mal. Le matin même, elle se fait porter malade – et se sent aussitôt soulagée. Deux semaines plus tard, elle doit simplement répondre à une question devant la classe. Rien que d’y penser, son cœur s’emballe."
+    ]
+   ]
+  },
+  "tbgf-18a": {
+   "titel": "G-18 · Quand je suis triste – Mamie rentre chez elle",
+   "art": "lesen",
+   "lektion": 18,
+   "dauer": 19.6,
+   "text": [
+    [
+     "",
+     "Mamie rentre chez elle"
+    ],
+    [
+     "",
+     "La mamie de Diogo est restée trois semaines. Ce matin, elle est repartie au Portugal. À l’école, Diogo ne dit rien. Il a une boule dans la gorge. À la récré, il ne veut pas jouer au foot."
+    ]
+   ]
+  },
+  "tbgf-19a": {
+   "titel": "G-19 · Ma valise de réconfort – Zoé est partie",
+   "art": "lesen",
+   "lektion": 19,
+   "dauer": 34.0,
+   "text": [
+    [
+     "",
+     "Zoé est partie"
+    ],
+    [
+     "",
+     "Nora et Zoé sont meilleures amies depuis le Précoce. Il y a deux semaines, Zoé a déménagé au Canada avec sa famille. Depuis, Nora est souvent seule à la récréation et triste le soir. Ce soir, elle sort le bracelet d’amitié que Zoé lui a offert. Elle raconte à maman tout ce qu’elle a vécu avec Zoé. Maman la prend dans ses bras et dit : « L’amitié ne s’arrête pas comme ça. » Nora est encore triste – mais elle ne se sent plus aussi seule."
+    ]
+   ]
+  },
+  "tbgf-32a": {
+   "titel": "G-32 · La peur, un petit chien de garde – Le chien de garde en toi",
+   "art": "lesen",
+   "lektion": 32,
+   "dauer": 17.4,
+   "text": [
+    [
+     "",
+     "Le chien de garde en toi"
+    ],
+    [
+     "",
+     "Un petit chien de garde vit en toi. Il veille sur toi. Quand une voiture fonce, il aboie fort. C’est bien. Parfois, il aboie aussi pour une feuille qui bouge."
+    ]
+   ]
+  },
+  "tbgf-33a": {
+   "titel": "G-33 · Détective des pensées – La place libre",
+   "art": "lesen",
+   "lektion": 33,
+   "dauer": 28.0,
+   "text": [
+    [
+     "",
+     "La place libre"
+    ],
+    [
+     "",
+     "Ana part en excursion avec sa classe, en bus. À côté d’elle, une place est libre. Pol avance dans l’allée. Il passe devant Ana et s’assoit plus loin, à côté de Jil. Ana pense : « Personne ne veut s’asseoir à côté de moi. » Son ventre se serre. Elle regarde par la fenêtre et ne dit pas un mot de tout le trajet."
+    ]
+   ]
+  },
+  "tbgf-35a": {
+   "titel": "G-35 · Faire le contraire – Diogo et le banc",
+   "art": "lesen",
+   "lektion": 35,
+   "dauer": 34.1,
+   "text": [
+    [
+     "",
+     "Diogo et le banc"
+    ],
+    [
+     "",
+     "À la récréation, quatre enfants jouent au ballon. Diogo voudrait jouer avec eux. Sa peur lui dit : « Va-t’en. Ils vont se moquer de toi. » Diogo s’assoit sur le banc et regarde. Le lendemain, il fait le contraire. Il respire à fond, s’approche d’un pas et demande : « Je peux jouer avec vous ? » Deux enfants hochent la tête. Son cœur bat encore plus vite, mais il reste. Au bout d’un moment, il se calme."
+    ]
+   ]
+  },
+  "tbgf-38x": {
+   "titel": "G-38 · Mon baromètre de tension",
+   "art": "lesen",
+   "lektion": 38,
+   "dauer": 16.1,
+   "text": [
+    [
+     "",
+     "La tension, c’est la pression que tu ressens dans le corps et dans la tête. 0 veut dire : tout à fait calme. 100 veut dire : je n’en peux plus. Quand tu connais ton chiffre, tu peux réagir tôt."
+    ]
+   ]
+  },
+  "tbgf-42x": {
+   "titel": "G-42 · Ma carte de la colère",
+   "art": "lesen",
+   "lektion": 42,
+   "dauer": 28.6,
+   "text": [
+    [
+     "",
+     "La colère n’a pas partout la même taille. À certains endroits, tu restes calme ; ailleurs, ça chauffe vite – et il y a presque toujours une raison. Aujourd’hui, tu dessines une carte de ta colère. Où grandit-elle ? À quoi la remarques-tu tôt ? Et qu’est-ce qui se cache souvent dessous ? Il n’y a ni bonne ni mauvaise réponse. La colère est une émotion, pas un défaut."
+    ]
+   ]
+  },
+  "tbgf-43x": {
+   "titel": "G-43 · Ma boussole des soucis",
+   "art": "lesen",
+   "lektion": 43,
+   "dauer": 27.1,
+   "text": [
+    [
+     "",
+     "Les soucis tournent dans la tête jusqu’à paraître tous aussi gros et aussi lourds. Une boussole t’aide à trouver la direction : pour certains soucis, tu peux agir toi-même, pour d’autres non. Aujourd’hui, tu les rassembles et tu les tries. Tu n’as à résoudre aucun souci ni à en révéler un seul. Il n’y a ni bonne ni mauvaise réponse – chaque souci a le droit d’exister."
+    ]
+   ]
+  },
+  "tbgf-44x": {
+   "titel": "G-44 · Ma météo de l’humeur",
+   "art": "lesen",
+   "lektion": 44,
+   "dauer": 23.8,
+   "text": [
+    [
+     "",
+     "Ton humeur ressemble à la météo : elle change, et tous les jours ne sont pas ensoleillés. Quand on regarde de plus près, on découvre des schémas : qu’est-ce qui amène des nuages, qu’est-ce qui amène du soleil ? Aujourd’hui, tu écris ton bulletin météo de deux semaines et tu cherches ta recette du soleil. Il n’y a ni bonne ni mauvaise réponse."
+    ]
+   ]
+  }
+ }
+}

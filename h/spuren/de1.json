@@ -1,0 +1,686 @@
+{
+ "modul": "de1",
+ "titel": {
+  "de": "Ich und die anderen",
+  "fr": "Moi et les autres"
+ },
+ "sprache": "de",
+ "spuren": {
+  "de1-01l": {
+   "titel": "Neu in der 7P2: Das sind wir!",
+   "art": "lesen",
+   "lektion": 1,
+   "dauer": 69.4,
+   "text": [
+    [
+     "",
+     "Neu in der 7P2: Das sind wir!"
+    ],
+    [
+     "",
+     "Sam, 13 Jahre. Hallo! Ich heiße Sam und bin dreizehn Jahre alt. Ich wohne in Junglinster, nicht weit von der Schule. Ich spiele gern Basketball und höre viel Musik. Mein Lieblingsfach ist Sport. Mathe mag ich nicht so gern. Ich bin neu hier und suche Leute für ein Basketball-Team!"
+    ],
+    [
+     "",
+     "Lina, 12 Jahre. Hi, ich bin Lina. Ich bin zwölf. Ich komme aus Ettelbrück, jetzt wohne ich in Larochette. Ich zeichne sehr gern, am liebsten Comics. Ich spreche vier Sprachen: Luxemburgisch, Französisch, Deutsch und ein bisschen Arabisch. Mein Lieblingsessen ist Pizza."
+    ],
+    [
+     "",
+     "Yusuf, 14 Jahre. Moien! Ich heiße Yusuf. Ich bin vierzehn Jahre alt und wohne in Echternach. Jeden Morgen fahre ich 25 Minuten mit dem Bus. Ich koche gern und ich spiele Gitarre. In der Pause bin ich meistens auf dem Pausenhof. Sprich mich einfach an!"
+    ]
+   ]
+  },
+  "de1-01h": {
+   "titel": "Bist du auch neu hier?",
+   "art": "hoeren",
+   "lektion": 1,
+   "dauer": 52.0,
+   "text": [
+    [
+     "Sam",
+     "Hallo! Bist du auch neu hier?"
+    ],
+    [
+     "Noah",
+     "Ja. Ich bin ein bisschen nervös. Ich heiße Noah."
+    ],
+    [
+     "Sam",
+     "Ich bin Sam. Freut mich! In welcher Klasse bist du?"
+    ],
+    [
+     "Noah",
+     "In der 7P2. Und du?"
+    ],
+    [
+     "Sam",
+     "Ich auch! Cool. Wie alt bist du?"
+    ],
+    [
+     "Noah",
+     "Ich bin vierzehn. Und du?"
+    ],
+    [
+     "Sam",
+     "Ich bin dreizehn. Wo wohnst du?"
+    ],
+    [
+     "Noah",
+     "In Heffingen. Ich fahre mit dem Bus. Und du?"
+    ],
+    [
+     "Sam",
+     "Ich wohne hier in Junglinster. Ich gehe zu Fuß zur Schule."
+    ],
+    [
+     "Noah",
+     "Was machst du gern?"
+    ],
+    [
+     "Sam",
+     "Ich spiele gern Basketball. Und du?"
+    ],
+    [
+     "Noah",
+     "Ich skate gern. Und ich mag Musik."
+    ],
+    [
+     "Sam",
+     "Super. Oh, es klingelt! Komm, wir gehen zusammen rein."
+    ],
+    [
+     "Noah",
+     "Okay. Danke, Sam!"
+    ]
+   ]
+  },
+  "de1-02l": {
+   "titel": "Was machst du in deiner Freizeit?",
+   "art": "lesen",
+   "lektion": 2,
+   "dauer": 67.4,
+   "text": [
+    [
+     "",
+     "Was machst du in deiner Freizeit?"
+    ],
+    [
+     "",
+     "Mia, 13. Ich lese sehr gern, am liebsten Mangas. Am Wochenende backe ich mit meiner Freundin Kuchen. Das können wir richtig gut! Sport mag ich nicht so gern. Aber ich schwimme manchmal."
+    ],
+    [
+     "",
+     "Ben, 14. Ich spiele Fußball im Verein, zweimal pro Woche. Am Samstag haben wir oft ein Spiel. Abends zocke ich gern mit meinen Freunden. Aber nur eine Stunde – dann muss ich schlafen."
+    ],
+    [
+     "",
+     "Nele, 12. Ich spiele Rollstuhl-Basketball. Wir trainieren am Mittwoch in Mersch. Ich werfe gut, aber ich bin noch nicht so schnell. Unser Team ist super. Wir lachen viel!"
+    ],
+    [
+     "",
+     "Amira, 13. Ich tanze sehr gern. Mit meiner Schwester übe ich neue Tänze und wir filmen uns. Die Videos schauen nur wir – sie sind privat. Ich singe auch gern, aber ich singe nicht gut!"
+    ]
+   ]
+  },
+  "de1-02h": {
+   "titel": "Mein Hobby: Skaten",
+   "art": "hoeren",
+   "lektion": 2,
+   "dauer": 55.5,
+   "text": [
+    [
+     "Frau Sommer",
+     "So, jetzt ist Lio dran. Bitte, Lio!"
+    ],
+    [
+     "Lio",
+     "Hallo zusammen! Mein Hobby ist Skaten. Ich skate seit zwei Jahren."
+    ],
+    [
+     "Lio",
+     "Auf dem ersten Bild seht ihr mein Board. Es ist schwarz und ein bisschen alt. Aber ich liebe es."
+    ],
+    [
+     "Lio",
+     "Ich skate dreimal pro Woche, meistens im Skatepark in Junglinster. Am Samstag fahre ich mit dem Bus nach Luxemburg. Dort ist der Skatepark sehr groß."
+    ],
+    [
+     "Lio",
+     "Auf dem zweiten Bild seht ihr einen Trick. Er heißt Ollie. Den kann ich schon gut."
+    ],
+    [
+     "Lio",
+     "Auf dem dritten Bild seht ihr meinen Helm. Der Helm ist sehr wichtig! Ich falle oft hin."
+    ],
+    [
+     "Lio",
+     "Was kann ich noch nicht so gut? Ich kann noch nicht auf der Rampe fahren. Das übe ich jetzt."
+    ],
+    [
+     "Lio",
+     "Danke fürs Zuhören! Habt ihr Fragen?"
+    ],
+    [
+     "Frau Sommer",
+     "Danke, Lio! Das war super."
+    ]
+   ]
+  },
+  "de1-03l": {
+   "titel": "Suche Leute! – Neue Freunde finden",
+   "art": "lesen",
+   "lektion": 3,
+   "dauer": 71.3,
+   "text": [
+    [
+     "",
+     "Suche Leute! – Neue Freunde finden"
+    ],
+    [
+     "",
+     "Band sucht Sänger oder Sängerin! Wir sind drei Jungs aus der 7P1. Wir spielen Gitarre, Bass und Schlagzeug. Wir proben jeden Freitag um 16 Uhr im Jugendhaus, Raum 2. Du singst gern? Dann komm einfach vorbei! – Finn, Jo und Tom"
+    ],
+    [
+     "",
+     "Wer spielt Schach mit mir? Ich bin 13 und spiele seit einem Jahr Schach. Ich bin nicht super gut, aber ich lerne schnell. Treffen am Dienstag in der Mittagspause, Bibliothek. – Lea, 7P3"
+    ],
+    [
+     "",
+     "Fußball am Samstag – wer kommt mit? Wir spielen jeden Samstag um 10 Uhr auf dem Sportplatz hinter der Schule. Mädchen und Jungen, alle sind willkommen. Bring Wasser und gute Schuhe mit! – Ben, 7P2"
+    ],
+    [
+     "",
+     "Tipp vom Jugendhaus: Ihr wollt euch treffen? Trefft euch am besten an einem bekannten Ort, zum Beispiel hier im Jugendhaus. Sagt euren Eltern, wo ihr seid."
+    ]
+   ]
+  },
+  "de1-03h": {
+   "titel": "Kommst du mit?",
+   "art": "hoeren",
+   "lektion": 3,
+   "dauer": 51.0,
+   "text": [
+    [
+     "Sam",
+     "Hallo?"
+    ],
+    [
+     "Ben",
+     "Hi Sam, hier ist Ben! Was machst du am Samstag?"
+    ],
+    [
+     "Sam",
+     "Am Samstag? Ich weiß noch nicht. Warum?"
+    ],
+    [
+     "Ben",
+     "Wir spielen Fußball. Kommst du mit?"
+    ],
+    [
+     "Sam",
+     "Cool, ja! Wann spielt ihr?"
+    ],
+    [
+     "Ben",
+     "Um zehn Uhr."
+    ],
+    [
+     "Sam",
+     "Und wo?"
+    ],
+    [
+     "Ben",
+     "Auf dem Sportplatz hinter der Schule."
+    ],
+    [
+     "Sam",
+     "Wer kommt noch?"
+    ],
+    [
+     "Ben",
+     "Lina, Yusuf, Tom und vielleicht Noah. Wir sind sechs oder sieben."
+    ],
+    [
+     "Sam",
+     "Okay. Was muss ich mitbringen?"
+    ],
+    [
+     "Ben",
+     "Wasser und Sportschuhe. Ich bringe den Ball mit."
+    ],
+    [
+     "Sam",
+     "Super. Wie lange spielen wir?"
+    ],
+    [
+     "Ben",
+     "Bis zwölf Uhr. Dann gehen wir vielleicht Pizza essen."
+    ],
+    [
+     "Sam",
+     "Perfekt! Bis Samstag!"
+    ],
+    [
+     "Ben",
+     "Bis Samstag, tschüss!"
+    ]
+   ]
+  },
+  "de1-04l": {
+   "titel": "Training heute?",
+   "art": "lesen",
+   "lektion": 4,
+   "dauer": 52.1,
+   "text": [
+    [
+     "",
+     "Training heute?"
+    ],
+    [
+     "",
+     "Hey Leute, kommt ihr heute zum Training? 🏀 Um 17 Uhr in der Halle."
+    ],
+    [
+     "",
+     "Nein, ich kann leider nicht. Ich bin krank. Ich habe Kopfschmerzen und Fieber. 🤒"
+    ],
+    [
+     "",
+     "Oh nein, gute Besserung, Mia! ❤️ Ich komme. Ich bin super fröhlich heute – ich habe 56 von 60 Punkten in Mathe!"
+    ],
+    [
+     "",
+     "Glückwunsch, Amira! Ich komme nicht. Ich bin so müde. Ich habe keine Energie."
+    ],
+    [
+     "",
+     "Schade! Und morgen? Hast du morgen Zeit, Yusuf?"
+    ],
+    [
+     "",
+     "Morgen ja. Heute nicht. Ich schlafe jetzt eine Stunde. 😴"
+    ],
+    [
+     "",
+     "Danke, Amira. Ich bin nicht traurig. Ich schaue einen Film im Bett. 😄"
+    ]
+   ]
+  },
+  "de1-04h": {
+   "titel": "Wie geht es ihnen?",
+   "art": "hoeren",
+   "lektion": 4,
+   "dauer": 38.1,
+   "text": [
+    [
+     "Frau",
+     "Szene eins."
+    ],
+    [
+     "Tom",
+     "Nein! Das gibt es nicht! Mein Fahrrad ist weg. Ich bin so wütend!"
+    ],
+    [
+     "Frau",
+     "Szene zwei."
+    ],
+    [
+     "Chloe",
+     "Juhu! Wir fahren am Freitag nach Paris! Ich freue mich so!"
+    ],
+    [
+     "Frau",
+     "Szene drei."
+    ],
+    [
+     "Herr Kuedes",
+     "Noah, alles in Ordnung?"
+    ],
+    [
+     "Noah",
+     "Nein, nicht so gut. Mein Bauch tut weh. Ich bin krank, glaube ich."
+    ],
+    [
+     "Frau",
+     "Szene vier."
+    ],
+    [
+     "Lina",
+     "Morgen schreiben wir den Test … Ich kann das nicht. Ich bin so nervös."
+    ]
+   ]
+  },
+  "de1-05l": {
+   "titel": "Die Luftballon-Rakete",
+   "art": "lesen",
+   "lektion": 5,
+   "dauer": 65.5,
+   "text": [
+    [
+     "",
+     "Die Luftballon-Rakete"
+    ],
+    [
+     "",
+     "Du brauchst: einen Luftballon, einen Trinkhalm, eine Schnur (3 Meter), Klebeband, zwei Stühle."
+    ],
+    [
+     "",
+     "Schritt 1: Zuerst musst du die Schnur durch den Trinkhalm ziehen."
+    ],
+    [
+     "",
+     "Schritt 2: Dann musst du die Schnur an zwei Stühle binden. Die Schnur muss gerade sein."
+    ],
+    [
+     "",
+     "Schritt 3: Jetzt kannst du den Luftballon aufblasen. Du musst ihn gut festhalten!"
+    ],
+    [
+     "",
+     "Schritt 4: Dann musst du den Luftballon mit Klebeband an den Trinkhalm kleben."
+    ],
+    [
+     "",
+     "Schritt 5: Jetzt kannst du den Luftballon loslassen. Was passiert?"
+    ],
+    [
+     "",
+     "Warum fliegt die Rakete? Die Luft will aus dem Ballon heraus. Sie strömt nach hinten – und der Ballon fliegt nach vorn. So funktioniert auch eine echte Rakete."
+    ],
+    [
+     "",
+     "Du willst einen Wettbewerb machen? Baut zwei Raketen. Welche fliegt schneller?"
+    ]
+   ]
+  },
+  "de1-05h": {
+   "titel": "Achtung, eine Durchsage!",
+   "art": "hoeren",
+   "lektion": 5,
+   "dauer": 61.2,
+   "text": [
+    [
+     "Durchsage",
+     "Guten Morgen, liebe Schülerinnen und Schüler. Hier sind drei wichtige Informationen."
+    ],
+    [
+     "Durchsage",
+     "Erstens: Heute ist die große Turnhalle geschlossen. Die Klassen 7P1 und 7P2 haben Sport in der kleinen Halle."
+    ],
+    [
+     "Durchsage",
+     "Zweitens: Am Freitag ist unser Schulfest. Wir brauchen Hilfe am Kuchenstand. Wer will helfen? Ihr könnt euch bis Mittwoch bei Frau Sommer melden."
+    ],
+    [
+     "Durchsage",
+     "Drittens: Die Bibliothek ist heute Nachmittag geschlossen. Ihr könnt eure Bücher morgen zurückgeben. Danke und einen schönen Tag!"
+    ],
+    [
+     "Sam",
+     "Hast du das gehört? Wir haben Sport in der kleinen Halle."
+    ],
+    [
+     "Amira",
+     "Ja. Und ich will am Kuchenstand helfen! Ich kann gut backen."
+    ],
+    [
+     "Sam",
+     "Cool. Ich kann nicht backen. Aber ich kann Kuchen verkaufen!"
+    ],
+    [
+     "Amira",
+     "Dann müssen wir zu Frau Sommer. Komm, wir gehen in der Pause."
+    ]
+   ]
+  },
+  "de1-06l": {
+   "titel": "Ein Tag mit Nele",
+   "art": "lesen",
+   "lektion": 6,
+   "dauer": 69.9,
+   "text": [
+    [
+     "",
+     "Ein Tag mit Nele"
+    ],
+    [
+     "",
+     "Mein Wecker klingelt um 6:30 Uhr. Ich stehe nicht gern früh auf! Ich ziehe mich an, frühstücke ein Müsli und packe meine Schultasche. Um 7:20 Uhr kommt mein Bus. Der Bus hat eine Rampe für meinen Rollstuhl."
+    ],
+    [
+     "",
+     "Die Schule beginnt um acht Uhr. Am Montag haben wir zuerst Deutsch, dann Mathe. Um Viertel nach zehn ist die große Pause. Ich esse ein Brötchen und rede mit meinen Freundinnen."
+    ],
+    [
+     "",
+     "Um zwölf Uhr gehen wir in die Kantine. Heute gibt es Nudeln mit Tomatensoße – mein Lieblingsessen! Am Nachmittag haben wir noch zwei Stunden. Um Viertel vor vier ist die Schule aus."
+    ],
+    [
+     "",
+     "Am Mittwoch habe ich Training in Mersch. An den anderen Tagen mache ich zu Hause meine Hausaufgaben. Dann chatte ich ein bisschen oder ich lese. Um sieben Uhr essen wir zu Abend."
+    ],
+    [
+     "",
+     "Um halb zehn gehe ich ins Bett. Mein Handy liegt dann in der Küche. So schlafe ich besser!"
+    ]
+   ]
+  },
+  "de1-06h": {
+   "titel": "Was möchtest du?",
+   "art": "hoeren",
+   "lektion": 6,
+   "dauer": 57.4,
+   "text": [
+    [
+     "Herr Becker",
+     "Guten Morgen! Was möchtest du?"
+    ],
+    [
+     "Lina",
+     "Guten Morgen! Ich möchte ein Käsebrötchen, bitte."
+    ],
+    [
+     "Herr Becker",
+     "Gern. Möchtest du auch etwas trinken?"
+    ],
+    [
+     "Lina",
+     "Ja, ein Wasser, bitte. Was kostet das?"
+    ],
+    [
+     "Herr Becker",
+     "Das Brötchen kostet zwei Euro, das Wasser einen Euro. Zusammen drei Euro."
+    ],
+    [
+     "Lina",
+     "Hier, bitte."
+    ],
+    [
+     "Herr Becker",
+     "Danke! Und du?"
+    ],
+    [
+     "Sam",
+     "Ich möchte nur einen Apfel. Ich habe ein Pausenbrot dabei."
+    ],
+    [
+     "Herr Becker",
+     "Ein Apfel kostet fünfzig Cent."
+    ],
+    [
+     "Sam",
+     "Lina, möchtest du auch einen Apfel?"
+    ],
+    [
+     "Lina",
+     "Nein, danke. Ich mag keine Äpfel. Aber danke!"
+    ],
+    [
+     "Sam",
+     "Wie spät ist es? Wann ist die Pause zu Ende?"
+    ],
+    [
+     "Lina",
+     "Es ist zehn Uhr fünfundzwanzig. Die Pause ist um halb elf zu Ende."
+    ],
+    [
+     "Sam",
+     "Oh, dann schnell!"
+    ]
+   ]
+  },
+  "de1-07l": {
+   "titel": "So findest du dich zurecht: das Erdgeschoss",
+   "art": "lesen",
+   "lektion": 7,
+   "dauer": 57.0,
+   "text": [
+    [
+     "",
+     "So findest du dich zurecht: das Erdgeschoss"
+    ],
+    [
+     "",
+     "Herzlich willkommen! Du kommst durch den Eingang. Dann gehst du geradeaus bis zum großen Flur."
+    ],
+    [
+     "",
+     "Links vom Eingang ist die Turnhalle. Rechts vom Eingang ist die Werkstatt. Dort arbeitet ihr mit Holz und Metall. Neben der Werkstatt ist das Lehrerzimmer."
+    ],
+    [
+     "",
+     "Im Flur siehst du ganz links die Kantine. Neben der Kantine ist die Bibliothek. Dort kannst du Bücher ausleihen und in Ruhe lernen."
+    ],
+    [
+     "",
+     "Neben der Bibliothek ist das Sekretariat. Hier bekommst du Hilfe, wenn du Fragen hast. Zwischen dem Sekretariat und den Toiletten ist die Krankenstation."
+    ],
+    [
+     "",
+     "Die Treppe ist rechts am Ende vom Flur. Im ersten Stock sind die Klassenzimmer."
+    ]
+   ]
+  },
+  "de1-07h": {
+   "titel": "Entschuldigung, wo ist …?",
+   "art": "hoeren",
+   "lektion": 7,
+   "dauer": 46.1,
+   "text": [
+    [
+     "Noah",
+     "Entschuldigung, Frau Sommer. Wo ist der Musiksaal, bitte?"
+    ],
+    [
+     "Frau Sommer",
+     "Der Musiksaal? Geh einfach geradeaus, bis zum Ende vom Flur. Er ist ganz links oben, neben Raum 101."
+    ],
+    [
+     "Noah",
+     "Vielen Dank!"
+    ],
+    [
+     "Noah",
+     "Hallo Lea! Weißt du, wo der Computerraum ist?"
+    ],
+    [
+     "Lea",
+     "Ja, klar. Auch am Ende vom Flur, aber auf der anderen Seite. Er ist gegenüber vom Musiksaal."
+    ],
+    [
+     "Noah",
+     "Gegenüber vom Musiksaal. Danke!"
+    ],
+    [
+     "Noah",
+     "Ben, wo ist der Kunstraum?"
+    ],
+    [
+     "Ben",
+     "Der Kunstraum ist neben dem Computerraum. Gegenüber von Raum 101."
+    ],
+    [
+     "Noah",
+     "Super, danke! Jetzt finde ich alles."
+    ]
+   ]
+  },
+  "de1-08l": {
+   "titel": "Amira wird 13!",
+   "art": "lesen",
+   "lektion": 8,
+   "dauer": 59.7,
+   "text": [
+    [
+     "",
+     "Amira wird 13!"
+    ],
+    [
+     "",
+     "🎉 Einladung zu meiner Geburtstagsparty! Liebe Freundinnen, liebe Freunde, ich werde 13 und möchte mit euch feiern! Die Party ist am Samstag, 14. März, von 15 bis 19 Uhr im Jugendhaus Junglinster. Es gibt Pizza, Saft und Musik. Wir tanzen und spielen Spiele. Bitte bringt gute Laune mit – Geschenke sind nicht wichtig! Bitte antwortet bis Mittwoch. Eure Amira"
+    ],
+    [
+     "",
+     "Lina: Hi Amira, danke für die Einladung! Ich komme sehr gern. Soll ich Muffins mitbringen? Ich kann gut backen. 🧁"
+    ],
+    [
+     "",
+     "Yusuf: Liebe Amira, vielen Dank für die Einladung! Leider kann ich nicht kommen. Am Samstag bin ich bei meinem Onkel in Belgien. Ich wünsche dir eine tolle Party! Wir feiern dann am Montag in der Pause, okay?"
+    ]
+   ]
+  },
+  "de1-08h": {
+   "titel": "Alles Gute, Amira!",
+   "art": "hoeren",
+   "lektion": 8,
+   "dauer": 48.2,
+   "text": [
+    [
+     "Amira",
+     "Hallo?"
+    ],
+    [
+     "Ben",
+     "Hallo Amira! Hier ist Ben. Alles Gute zum Geburtstag!"
+    ],
+    [
+     "Amira",
+     "Oh, danke, Ben! Das ist so lieb."
+    ],
+    [
+     "Ben",
+     "Ich komme heute gern zur Party. Was soll ich mitbringen?"
+    ],
+    [
+     "Amira",
+     "Vielleicht Chips? Lina bringt Muffins mit."
+    ],
+    [
+     "Ben",
+     "Okay, ich bringe Chips mit. Bis später!"
+    ],
+    [
+     "Lina",
+     "Hier, Ben, möchtest du einen Muffin? Mit Schokolade!"
+    ],
+    [
+     "Ben",
+     "Ja, gern! Danke, Lina. Hm, lecker!"
+    ],
+    [
+     "Amira",
+     "Möchtest du auch etwas trinken, Ben? Es gibt Orangensaft und Apfelsaft."
+    ],
+    [
+     "Ben",
+     "Einen Apfelsaft, bitte."
+    ],
+    [
+     "Amira",
+     "Danke, dass ihr da seid! Das ist der beste Geburtstag!"
+    ]
+   ]
+  }
+ }
+}

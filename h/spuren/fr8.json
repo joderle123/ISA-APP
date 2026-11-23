@@ -1,0 +1,818 @@
+{
+ "modul": "fr8",
+ "titel": {
+  "de": "Familie und Gesundheit",
+  "fr": "Famille et santé"
+ },
+ "sprache": "fr",
+ "spuren": {
+  "fr8-01l": {
+   "titel": "Samedi, ménage !",
+   "art": "lesen",
+   "lektion": 1,
+   "dauer": 70.5,
+   "text": [
+    [
+     "",
+     "Samedi, ménage !"
+    ],
+    [
+     "",
+     "Samedi, 10 heures. Papa est en train de passer l’aspirateur."
+    ],
+    [
+     "",
+     "Lina ! Lio ! Venez m’aider, s’il vous plaît !"
+    ],
+    [
+     "",
+     "Dans sa chambre, Lina vient de se réveiller."
+    ],
+    [
+     "",
+     "Pas maintenant, Papa… Je viens de me réveiller !"
+    ],
+    [
+     "",
+     "Lio, lui, est sur le point de partir."
+    ],
+    [
+     "",
+     "Désolé, j’ai foot dans dix minutes !"
+    ],
+    [
+     "",
+     "Encore ? Et ta chambre ?"
+    ],
+    [
+     "",
+     "Papa se met en colère."
+    ],
+    [
+     "",
+     "Ça suffit ! Chaque samedi, je fais tout, tout seul !"
+    ],
+    [
+     "",
+     "Ce n’est pas juste ! Moi, je travaille toute la semaine pour l’école !"
+    ],
+    [
+     "",
+     "Lina réfléchit… Puis elle se met à ranger, en écoutant de la musique."
+    ],
+    [
+     "",
+     "Bon… Pardon, Papa. On fait un planning pour toute la famille ?"
+    ],
+    [
+     "",
+     "Le soir, tout le monde est content."
+    ],
+    [
+     "",
+     "Merci ! En travaillant ensemble, on va plus vite."
+    ],
+    [
+     "",
+     "Et demain, c’est moi qui fais la vaisselle !"
+    ]
+   ]
+  },
+  "fr8-01h": {
+   "titel": "Aider à la maison ?",
+   "art": "hoeren",
+   "lektion": 1,
+   "dauer": 61.8,
+   "text": [
+    [
+     "Animateur",
+     "Bonsoir et bienvenue dans « Allô Ados » ! Ce soir, notre question : est-ce que les jeunes doivent aider à la maison ? Premier appel : Jana, quatorze ans."
+    ],
+    [
+     "Jana",
+     "Bonsoir ! Moi, je trouve que oui. Chez nous, tout le monde aide. Je mets la table et je fais la vaisselle en écoutant de la musique. Comme ça, c’est moins ennuyeux !"
+    ],
+    [
+     "Animateur",
+     "Merci, Jana ! Ben, tu es d’accord avec elle ?"
+    ],
+    [
+     "Ben",
+     "Pas vraiment. J’ai beaucoup de devoirs et je fais du foot trois fois par semaine. Le soir, je suis fatigué. Je range ma chambre, mais c’est tout."
+    ],
+    [
+     "Animateur",
+     "Et toi, Nele ?"
+    ],
+    [
+     "Nele",
+     "Avant, on se disputait souvent à cause du ménage. Maintenant, on a un planning sur le frigo. Et le samedi, on se met à ranger tous ensemble pendant une heure. Après, on mange une pizza !"
+    ],
+    [
+     "Animateur",
+     "Bonne idée ! Alors, chers auditeurs : un planning, c’est la solution ? Envoyez-nous vos messages !"
+    ]
+   ]
+  },
+  "fr8-02l": {
+   "titel": "Le portable de la discorde – scène 1",
+   "art": "lesen",
+   "lektion": 2,
+   "dauer": 103.9,
+   "text": [
+    [
+     "",
+     "Le portable de la discorde – scène 1"
+    ],
+    [
+     "",
+     "La cuisine de Mamie, dimanche midi. Chloé est assise. Elle regarde son portable."
+    ],
+    [
+     "",
+     "À table, les enfants ! J’ai fait des lasagnes."
+    ],
+    [
+     "",
+     "Super ! J’ai une faim de loup !"
+    ],
+    [
+     "",
+     "Chloé, tu poses ton portable, s’il te plaît ?"
+    ],
+    [
+     "",
+     "Oui, oui… Une seconde, je suis en train d’écrire à Léa."
+    ],
+    [
+     "",
+     "Elle est toujours en train d’écrire à quelqu’un…"
+    ],
+    [
+     "",
+     "Toi, on ne t’a rien demandé !"
+    ],
+    [
+     "",
+     "Ça suffit, vous deux ! Chloé, chez moi, on mange sans téléphone. C’est la règle."
+    ],
+    [
+     "",
+     "Mais Mamie, c’est important ! Tu ne comprends rien !"
+    ],
+    [
+     "",
+     "Chloé sort sans dire un mot. Silence. Mamie s’assoit lentement."
+    ],
+    [
+     "",
+     "Elle exagère…"
+    ],
+    [
+     "",
+     "Attends, Sami. Elle avait l’air triste, tu ne trouves pas ?"
+    ],
+    [
+     "",
+     "Chloé revient doucement. Elle a les yeux rouges."
+    ],
+    [
+     "",
+     "Pardon, Mamie. Léa vient de se disputer avec sa meilleure amie. Elle pleurait. Je voulais l’aider."
+    ],
+    [
+     "",
+     "Oh, ma chérie… Tu es une bonne copine. La prochaine fois, dis-le-moi, tout simplement !"
+    ],
+    [
+     "",
+     "Tu as raison. J’écris juste à Léa : « Je t’appelle après le repas. » D’accord ?"
+    ],
+    [
+     "",
+     "D’accord. Et après, tous les portables vont dans la corbeille !"
+    ],
+    [
+     "",
+     "Même le tien, Mamie ?"
+    ],
+    [
+     "",
+     "Même le mien ! Allez, bon appétit !"
+    ],
+    [
+     "",
+     "Rideau."
+    ]
+   ]
+  },
+  "fr8-02h": {
+   "titel": "On répète !",
+   "art": "hoeren",
+   "lektion": 2,
+   "dauer": 58.2,
+   "text": [
+    [
+     "Mme Nouvelle",
+     "Bien, on répète la scène du portable. Chloé, tu es prête ?"
+    ],
+    [
+     "Chloé",
+     "Oui, mais je ne sais pas où je dois me mettre."
+    ],
+    [
+     "Mme Nouvelle",
+     "Au début, tu es assise à droite, près de la fenêtre. Tu regardes ton portable, sans regarder Mamie."
+    ],
+    [
+     "Sami",
+     "Et moi ?"
+    ],
+    [
+     "Mme Nouvelle",
+     "Sami, quand tu dis ta réplique « Elle est toujours en train d’écrire », il faut que tu regardes le public. Et lève les yeux au ciel, en faisant un grand geste avec la main."
+    ],
+    [
+     "Sami",
+     "Comme ça ?"
+    ],
+    [
+     "Mme Nouvelle",
+     "Oui, très bien ! On voit que tu es agacé. Chloé, quand tu sors, ne cours pas. Lève-toi brusquement et sors sans dire un mot. Le public doit sentir ta colère."
+    ],
+    [
+     "Chloé",
+     "Et quand je reviens ?"
+    ],
+    [
+     "Mme Nouvelle",
+     "Tu reviens lentement, la tête baissée. Parle doucement, mais assez fort pour le public ! Allez, on reprend depuis le début. Silence… Action !"
+    ]
+   ]
+  },
+  "fr8-03l": {
+   "titel": "Surprise pour Mamie !",
+   "art": "lesen",
+   "lektion": 3,
+   "dauer": 63.7,
+   "text": [
+    [
+     "",
+     "Surprise pour Mamie !"
+    ],
+    [
+     "",
+     "Bonjour à tous ! Samedi, Mamie a 80 ans. On lui fait une fête surprise à la maison ? Il faut que tout soit prêt à 15 heures !"
+    ],
+    [
+     "",
+     "Trop bien ! Je peux faire des crêpes avec sa recette."
+    ],
+    [
+     "",
+     "Merci, Chloé ! Sami, est-ce que tu pourrais décorer le salon ?"
+    ],
+    [
+     "",
+     "D’accord, mais il faut que quelqu’un m’aide à gonfler les ballons…"
+    ],
+    [
+     "",
+     "Je veux bien t’aider ! Et à 14 h 30, je vais chercher Mamie en voiture, sans lui dire pourquoi."
+    ],
+    [
+     "",
+     "Parfait. Mais il y a un problème : nous avons douze invités et seulement huit chaises… Il faut que quelqu’un aille demander des chaises à Mme Dubois, la voisine."
+    ],
+    [
+     "",
+     "Je m’en occupe. Je l’appelle ce soir !"
+    ],
+    [
+     "",
+     "Merci ! Et Sami, il faut que tu fasses tes devoirs vendredi, pas samedi matin !"
+    ],
+    [
+     "",
+     "Oui, oui… Promis !"
+    ],
+    [
+     "",
+     "Vous êtes une super équipe ! Mamie va être tellement contente."
+    ]
+   ]
+  },
+  "fr8-03h": {
+   "titel": "Excusez-moi de vous déranger…",
+   "art": "hoeren",
+   "lektion": 3,
+   "dauer": 68.4,
+   "text": [
+    [
+     "Mme Dubois",
+     "Allô ?"
+    ],
+    [
+     "Chloé",
+     "Bonsoir, Madame Dubois, c’est Chloé, votre voisine. Excusez-moi de vous déranger."
+    ],
+    [
+     "Mme Dubois",
+     "Bonsoir, Chloé ! Tu ne me déranges pas du tout. Qu’est-ce qui se passe ?"
+    ],
+    [
+     "Chloé",
+     "Samedi, nous faisons une fête surprise pour les 80 ans de ma grand-mère. Est-ce que vous pourriez nous prêter quatre chaises ?"
+    ],
+    [
+     "Mme Dubois",
+     "Bien sûr, avec plaisir ! Mais il faut que quelqu’un vienne les chercher. Moi, je ne peux pas les porter, j’ai mal au dos."
+    ],
+    [
+     "Chloé",
+     "Pas de problème. Mon frère et moi, nous venons vendredi soir, vers 18 heures. Ça vous va ?"
+    ],
+    [
+     "Mme Dubois",
+     "Parfait. Et toi, Chloé, est-ce que je peux te demander un petit service ?"
+    ],
+    [
+     "Chloé",
+     "Oui, bien sûr !"
+    ],
+    [
+     "Mme Dubois",
+     "La semaine prochaine, je pars chez ma sœur. Est-ce que tu pourrais arroser mes plantes ?"
+    ],
+    [
+     "Chloé",
+     "Je veux bien ! Il faut que je les arrose tous les jours ?"
+    ],
+    [
+     "Mme Dubois",
+     "Non, deux fois, ça suffit : lundi et jeudi. Merci, tu es un ange !"
+    ],
+    [
+     "Chloé",
+     "Merci à vous ! Bonne soirée, Madame Dubois !"
+    ]
+   ]
+  },
+  "fr8-04l": {
+   "titel": "Manger équilibré ? C’est facile !",
+   "art": "lesen",
+   "lektion": 4,
+   "dauer": 91.7,
+   "text": [
+    [
+     "",
+     "Manger équilibré ? C’est facile !"
+    ],
+    [
+     "",
+     "Cette semaine, c’est la Semaine de la santé à l’école. Mme Moreau, diététicienne, explique la pyramide alimentaire aux élèves de la 7P2."
+    ],
+    [
+     "",
+     "Tout en bas de la pyramide, il y a l’eau. C’est la boisson la plus importante. Il faut en boire environ un litre et demi par jour, et encore plus quand on fait du sport."
+    ],
+    [
+     "",
+     "Juste au-dessus, on trouve les fruits et les légumes. Ils donnent des vitamines. Il faut en manger au moins cinq portions par jour : une pomme à la récré, des carottes à midi… Au milieu, il y a le pain, les pâtes, le riz et les pommes de terre. Ils donnent de l’énergie, alors on en mange à chaque repas."
+    ],
+    [
+     "",
+     "Plus haut, il y a les produits laitiers : le lait, le yaourt, le fromage. Ils sont bons pour les os. Encore plus haut, on trouve la viande, le poisson, les œufs – ou le tofu et les lentilles. On en mange une portion par jour."
+    ],
+    [
+     "",
+     "Et tout en haut ? Les sucreries et les graisses : les bonbons, les chips, le soda… « Ce n’est pas interdit ! dit Mme Moreau. Un petit plaisir, c’est bon pour le moral. Mais on en mange un peu, pas tous les jours. »"
+    ],
+    [
+     "",
+     "Son dernier conseil : « Mangez lentement, avec des copains, et sans écran. Manger, c’est aussi un moment de plaisir ! »"
+    ]
+   ]
+  },
+  "fr8-04h": {
+   "titel": "Il n’y en a plus !",
+   "art": "hoeren",
+   "lektion": 4,
+   "dauer": 52.0,
+   "text": [
+    [
+     "Cuisinier",
+     "Bonjour ! Aujourd’hui, il y a du poisson ou du poulet, avec du riz ou des frites."
+    ],
+    [
+     "Finn",
+     "Je voudrais du poulet avec des frites, s’il vous plaît."
+    ],
+    [
+     "Cuisinier",
+     "Et des légumes ? Il y a des haricots verts."
+    ],
+    [
+     "Finn",
+     "Non merci, je n’en veux pas. Je n’aime pas les haricots."
+    ],
+    [
+     "Amira",
+     "Moi, j’en prends ! Et du poisson avec du riz, s’il vous plaît."
+    ],
+    [
+     "Cuisinier",
+     "Voilà. Les desserts sont au bout."
+    ],
+    [
+     "Finn",
+     "Il y a encore de la mousse au chocolat ?"
+    ],
+    [
+     "Cuisinier",
+     "Non, désolé, il n’y en a plus. Il reste des pommes et des yaourts."
+    ],
+    [
+     "Finn",
+     "Bon… Je prends un yaourt."
+    ],
+    [
+     "Amira",
+     "Et moi, une pomme. Tu sais, Finn, la diététicienne a dit qu’il faut manger au moins cinq fruits et légumes par jour !"
+    ],
+    [
+     "Finn",
+     "Je sais, je sais… J’en mange ce soir, promis !"
+    ]
+   ]
+  },
+  "fr8-05l": {
+   "titel": "Les crêpes de Mamie (pour 4 personnes)",
+   "art": "lesen",
+   "lektion": 5,
+   "dauer": 83.9,
+   "text": [
+    [
+     "",
+     "Les crêpes de Mamie (pour 4 personnes)"
+    ],
+    [
+     "",
+     "Il te faut : 250 g de farine, 4 œufs, un demi-litre de lait, 2 cuillères à soupe de sucre, une pincée de sel, 50 g de beurre fondu."
+    ],
+    [
+     "",
+     "Étape 1: Avant de commencer, lave-toi les mains. Prépare un grand saladier et un fouet."
+    ],
+    [
+     "",
+     "Étape 2: Mets la farine, le sucre et le sel dans le saladier. Fais un trou au milieu pour ajouter les œufs."
+    ],
+    [
+     "",
+     "Étape 3: Casse les œufs dans le trou. Mélange doucement avec le fouet."
+    ],
+    [
+     "",
+     "Étape 4: Verse le lait petit à petit pour éviter les grumeaux. Ajoute le beurre fondu."
+    ],
+    [
+     "",
+     "Étape 5: Après le mélange, laisse reposer la pâte une heure avant de faire cuire les crêpes."
+    ],
+    [
+     "",
+     "Étape 6: Fais chauffer une poêle avec un peu de beurre. Verse une petite louche de pâte. Après une minute, retourne la crêpe. Attention : un adulte doit être là !"
+    ],
+    [
+     "",
+     "Le secret de Mamie : « Chaque fois que je fais des crêpes, j’ajoute un peu de vanille. Et si la pâte est trop épaisse, j’ajoute un peu de lait. »"
+    ],
+    [
+     "",
+     "Avec de la confiture, du sucre ou du chocolat : c’est délicieux ! Pour 4 personnes, on fait environ 15 crêpes."
+    ]
+   ]
+  },
+  "fr8-05h": {
+   "titel": "Vous en voulez combien ?",
+   "art": "hoeren",
+   "lektion": 5,
+   "dauer": 57.6,
+   "text": [
+    [
+     "Épicière",
+     "Bonjour ! Qu’est-ce que je vous sers ?"
+    ],
+    [
+     "Chloé",
+     "Bonjour ! Je voudrais des œufs, s’il vous plaît."
+    ],
+    [
+     "Épicière",
+     "Vous en voulez combien ? Une boîte de six ou de douze ?"
+    ],
+    [
+     "Chloé",
+     "Une boîte de six, ça suffit. Et un paquet de sucre."
+    ],
+    [
+     "Épicière",
+     "Voilà. Et avec ça ?"
+    ],
+    [
+     "Chloé",
+     "Il me faut aussi du beurre. Une plaquette de 250 grammes."
+    ],
+    [
+     "Épicière",
+     "Désolée, je n’en ai plus en 250 grammes. J’en ai en 500 grammes."
+    ],
+    [
+     "Chloé",
+     "Bon, je prends 500 grammes. Ah, et vous avez de la confiture de fraises ?"
+    ],
+    [
+     "Épicière",
+     "Oui, voilà un pot. C’est tout ?"
+    ],
+    [
+     "Chloé",
+     "Oui, c’est tout. Ça fait combien ?"
+    ],
+    [
+     "Épicière",
+     "Alors… les œufs, le sucre, le beurre et la confiture… Ça fait 9,80 €."
+    ],
+    [
+     "Chloé",
+     "Voilà 10 euros."
+    ],
+    [
+     "Épicière",
+     "Et voilà 20 centimes. Bonne journée !"
+    ]
+   ]
+  },
+  "fr8-06l": {
+   "titel": "Échauffement : 5 minutes pour être en forme",
+   "art": "lesen",
+   "lektion": 6,
+   "dauer": 71.7,
+   "text": [
+    [
+     "",
+     "Échauffement : 5 minutes pour être en forme"
+    ],
+    [
+     "",
+     "Il te faut : des baskets, une bouteille d’eau, de la bonne humeur."
+    ],
+    [
+     "",
+     "Étape 1: Marche tranquillement sur place pendant 30 secondes. Respire profondément."
+    ],
+    [
+     "",
+     "Étape 2: Cours lentement autour du terrain. Petit à petit, cours un peu plus vite."
+    ],
+    [
+     "",
+     "Étape 3: Fais des cercles avec les bras, en respirant calmement : dix fois en avant, dix fois en arrière."
+    ],
+    [
+     "",
+     "Étape 4: Cours sur place en levant les genoux, puis en touchant tes fesses avec tes talons."
+    ],
+    [
+     "",
+     "Étape 5: Plie doucement les jambes, le dos bien droit, sans lever les talons. Tends les bras devant toi. Dix fois."
+    ],
+    [
+     "",
+     "Étape 6: Bravo, tu viens de finir ton échauffement ! Bois un peu d’eau. Maintenant, tu peux te mettre à jouer."
+    ],
+    [
+     "",
+     "Pourquoi s’échauffer ? Le cœur se met à battre plus vite et les muscles se réchauffent. Comme ça, on risque moins de se blesser."
+    ],
+    [
+     "",
+     "Attention : si tu as mal, arrête-toi et parle à ton prof."
+    ]
+   ]
+  },
+  "fr8-06h": {
+   "titel": "C’est clair ?",
+   "art": "hoeren",
+   "lektion": 6,
+   "dauer": 71.7,
+   "text": [
+    [
+     "Mme Sabli",
+     "Bon, vous venez de faire l’échauffement. Maintenant, on passe à un nouvel exercice : la planche. Écoutez bien."
+    ],
+    [
+     "Mme Sabli",
+     "Allongez-vous sur le ventre. Posez les avant-bras par terre, sous les épaules. Levez le corps en poussant sur les pieds. Le dos reste bien droit, comme une planche ! Restez comme ça pendant vingt secondes, en respirant normalement. C’est clair ?"
+    ],
+    [
+     "Noah",
+     "Euh… pas vraiment. On pose les mains ou les bras ?"
+    ],
+    [
+     "Mme Sabli",
+     "Les avant-bras, Noah. De la main jusqu’au coude. Tu vois ce que je veux dire ?"
+    ],
+    [
+     "Noah",
+     "Ah oui, d’accord !"
+    ],
+    [
+     "Mme Sabli",
+     "Léa, tu peux répéter ce que je viens de dire ?"
+    ],
+    [
+     "Léa",
+     "On s’allonge sur le ventre, on pose les avant-bras par terre, on lève le corps et on reste droit pendant vingt secondes."
+    ],
+    [
+     "Mme Sabli",
+     "Parfait ! Et on respire tranquillement. Vous avez des questions ? Non ? Alors… Prêts ? Partez !"
+    ],
+    [
+     "Mme Sabli",
+     "Dix secondes… Très bien, Noah, tu es en train de réussir ! Encore cinq secondes… Et stop ! Bravo à tous !"
+    ]
+   ]
+  },
+  "fr8-07l": {
+   "titel": "Quelle veste pour la classe de neige ?",
+   "art": "lesen",
+   "lektion": 7,
+   "dauer": 69.7,
+   "text": [
+    [
+     "",
+     "Quelle veste pour la classe de neige ?"
+    ],
+    [
+     "",
+     "Modèle A · Veste de pluie. Veste en nylon, à capuche. Légère et imperméable, mais pas très chaude. Prix : 35 €."
+    ],
+    [
+     "",
+     "Modèle B · Doudoune. Veste en polyester, à fermeture éclair. Très chaude, mais pas imperméable. Prix : 59 €."
+    ],
+    [
+     "",
+     "Modèle C · Veste de ski. Veste en tissu technique, à capuche et à poches. Chaude et imperméable. Garantie deux ans. Prix :  65 € (en soldes cette semaine)."
+    ],
+    [
+     "",
+     "Avis de Lou · 4 étoiles sur 5. J’ai acheté le modèle C parce qu’il est chaud et imperméable. Grâce à la capuche, je n’ai jamais froid aux oreilles. Par contre, il est un peu lourd."
+    ],
+    [
+     "",
+     "Avis de Max · 2 étoiles sur 5. J’ai pris le modèle A car il n’était pas cher. Pourtant, je le regrette : à la montagne, j’avais froid, donc j’ai dû mettre deux pulls !"
+    ]
+   ]
+  },
+  "fr8-07h": {
+   "titel": "Vous les avez en 42 ?",
+   "art": "hoeren",
+   "lektion": 7,
+   "dauer": 59.0,
+   "text": [
+    [
+     "Vendeuse",
+     "Bonjour ! Je peux vous aider ?"
+    ],
+    [
+     "Sami",
+     "Oui, je cherche des chaussures de montagne pour la classe de neige."
+    ],
+    [
+     "Vendeuse",
+     "Alors, regardez ces chaussures en cuir, à lacets. Elles sont très solides."
+    ],
+    [
+     "Sami",
+     "Elles coûtent combien ?"
+    ],
+    [
+     "Vendeuse",
+     "85 €."
+    ],
+    [
+     "Sami",
+     "Ah, c’est trop cher pour moi. Vous en avez des moins chères ?"
+    ],
+    [
+     "Vendeuse",
+     "Oui, ce modèle en tissu, à 45 €. Il est moins solide. Par contre, il est imperméable et très léger."
+    ],
+    [
+     "Sami",
+     "Je peux les essayer ?"
+    ],
+    [
+     "Vendeuse",
+     "Bien sûr. Vous faites quelle pointure ?"
+    ],
+    [
+     "Sami",
+     "Du 41."
+    ],
+    [
+     "Vendeuse",
+     "Voilà… Alors ?"
+    ],
+    [
+     "Sami",
+     "Elles sont un peu petites. Vous les avez en 42 ?"
+    ],
+    [
+     "Vendeuse",
+     "Oui, attendez… Voilà."
+    ],
+    [
+     "Sami",
+     "Parfait, elles sont confortables. Je les prends ! Comme ça, j’aurai les pieds au sec."
+    ]
+   ]
+  },
+  "fr8-08l": {
+   "titel": "Que faire ce week-end ?",
+   "art": "lesen",
+   "lektion": 8,
+   "dauer": 63.8,
+   "text": [
+    [
+     "",
+     "Que faire ce week-end ?"
+    ],
+    [
+     "",
+     "Cinéma · « Cap sur l’île aux Brumes » · aventure · à partir de 12 ans · samedi 20 h. Trois amis partent en bateau pour retrouver un grand-père disparu. Mais une tempête arrive… Beaucoup de suspense et des images magnifiques."
+    ],
+    [
+     "",
+     "Cinéma · « Un robot à la cave » · comédie · tous publics · dimanche 15 h. Léo, 12 ans, trouve un vieux robot dans la cave. Le robot veut aider la famille… mais il fait tout de travers ! Très drôle."
+    ],
+    [
+     "",
+     "Théâtre · « Le portable de la discorde » · club théâtre de la 7P2 · vendredi 18 h · entrée libre. Une grand-mère, deux ados et un portable : une comédie sur la vie de famille… et sur les écrans."
+    ],
+    [
+     "",
+     "Télévision · « Mystères des grands fonds » · documentaire · samedi 19 h, chaîne 3. Comment vivent les animaux au fond de la mer ? Un voyage incroyable avec des images jamais vues."
+    ]
+   ]
+  },
+  "fr8-08h": {
+   "titel": "Ça parle de quoi ?",
+   "art": "hoeren",
+   "lektion": 8,
+   "dauer": 61.0,
+   "text": [
+    [
+     "Léa",
+     "Samedi, je suis allée voir « Cap sur l’île aux Brumes » !"
+    ],
+    [
+     "Noah",
+     "Ah oui ? Ça parle de quoi ?"
+    ],
+    [
+     "Léa",
+     "Au début, trois amis trouvent une vieille carte dans un grenier. Sur la carte, il y a une île mystérieuse. Ensuite, ils partent en bateau pour chercher le grand-père de Tim, qui a disparu là-bas. Mais en pleine mer, une tempête se met à souffler…"
+    ],
+    [
+     "Noah",
+     "Et à la fin ? Ils le retrouvent ?"
+    ],
+    [
+     "Léa",
+     "Je ne te dis pas la fin ! Mais c’était génial. Ce qui m’a plu, c’est le suspense. Et les images de la mer sont magnifiques."
+    ],
+    [
+     "Noah",
+     "Moi aussi, je l’ai vu, avec mon cousin. Mais je ne suis pas d’accord avec toi : je trouve que c’était trop long. Le début est vraiment lent."
+    ],
+    [
+     "Léa",
+     "Trop long ? Tu exagères ! Par contre, tu as raison : le début est un peu lent."
+    ],
+    [
+     "Noah",
+     "Bon. « Un robot à la cave » passe encore dimanche prochain. Tu viens ? Il paraît que c’est très drôle."
+    ],
+    [
+     "Léa",
+     "D’accord, bonne idée !"
+    ]
+   ]
+  }
+ }
+}

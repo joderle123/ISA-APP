@@ -1,0 +1,498 @@
+{
+ "modul": "sp2",
+ "titel": {
+  "de": "Ballspiele",
+  "fr": "Jeux de balle"
+ },
+ "sprache": "de",
+ "spuren": {
+  "sp2-01l": {
+   "titel": "Fangen und drei Pässe",
+   "art": "lesen",
+   "lektion": 1,
+   "dauer": 69.9,
+   "text": [
+    [
+     "",
+     "Fangen und drei Pässe"
+    ],
+    [
+     "",
+     "Fangen."
+    ],
+    [
+     "",
+     "Schau den Ball an, bis er in deinen Händen ist. Streck die Arme dem Ball entgegen. Die Hände bilden ein Körbchen: Daumen und Zeigefinger formen ein Dreieck. Wenn der Ball kommt, gib mit den Armen etwas nach – wie ein Kissen. Dann prallt er nicht ab."
+    ],
+    [
+     "",
+     "Der Brustpass."
+    ],
+    [
+     "",
+     "Halte den Ball vor der Brust, die Ellenbogen locker. Mach einen Schritt nach vorn und stoße den Ball mit beiden Händen gerade zum Partner. Am Ende zeigen die Daumen nach unten. Ziel ist die Brust des Partners."
+    ],
+    [
+     "",
+     "Der Bodenpass."
+    ],
+    [
+     "",
+     "Wie der Brustpass, aber der Ball springt einmal auf dem Boden auf – etwa zwei Drittel des Weges zum Partner. Gut, wenn ein Gegner die Arme oben hat."
+    ],
+    [
+     "",
+     "Der Überkopfpass."
+    ],
+    [
+     "",
+     "Halte den Ball mit beiden Händen über dem Kopf und wirf ihn mit einer schnellen Bewegung der Unterarme. Gut für weite Pässe über einen Gegner hinweg."
+    ]
+   ]
+  },
+  "sp2-01h": {
+   "titel": "Pass-Training zu zweit",
+   "art": "hoeren",
+   "lektion": 1,
+   "dauer": 56.7,
+   "text": [
+    [
+     "Frau Diallo",
+     "Jedes Paar nimmt einen Ball. Stellt euch drei Meter auseinander gegenüber – das sind ungefähr vier große Schritte."
+    ],
+    [
+     "Frau Diallo",
+     "Wir fangen mit dem Brustpass an. Zehnmal hin und her. Denkt an das Körbchen beim Fangen."
+    ],
+    [
+     "Frau Diallo",
+     "Gut. Jetzt Bodenpass. Der Ball springt näher beim Partner auf, nicht in der Mitte. Zehnmal."
+    ],
+    [
+     "Frau Diallo",
+     "Und jetzt der Überkopfpass. Geht dafür zwei Schritte weiter auseinander. Zehnmal."
+    ],
+    [
+     "Frau Diallo",
+     "Letzte Übung: Ich rufe einen Pass, ihr spielt ihn sofort. Brust! … Boden! … Überkopf! … Boden! … Brust!"
+    ],
+    [
+     "Frau Diallo",
+     "Super. Wer im Rollstuhl spielt, macht genau dieselben Pässe – nur im Sitzen. Nele, deine Bodenpässe sind richtig gut!"
+    ]
+   ]
+  },
+  "sp2-02l": {
+   "titel": "So dribbelst du richtig",
+   "art": "lesen",
+   "lektion": 2,
+   "dauer": 66.4,
+   "text": [
+    [
+     "",
+     "So dribbelst du richtig"
+    ],
+    [
+     "",
+     "Du brauchst: ein Basketball, Hütchen für den Parcours."
+    ],
+    [
+     "",
+     "Schritt 1: Fingerkuppen: Drück den Ball mit den Fingern, nicht mit der flachen Hand. Nicht schlagen – schieben."
+    ],
+    [
+     "",
+     "Schritt 2: Höhe: Der Ball springt etwa bis zur Hüfte. Knie leicht gebeugt."
+    ],
+    [
+     "",
+     "Schritt 3: Seite: Prell den Ball neben dem Körper, nicht vor den Füßen. So stolperst du nicht darüber."
+    ],
+    [
+     "",
+     "Schritt 4: Blick hoch: Schau nach vorn, nicht auf den Ball. So siehst du Mitspieler und Gegner."
+    ],
+    [
+     "",
+     "Schritt 5: Hand wechseln: Übe mit beiden Händen. Die Hand, die weiter vom Gegner weg ist, dribbelt."
+    ],
+    [
+     "",
+     "Wichtig im Basketball: Wenn du aufhörst zu dribbeln und den Ball fängst, darfst du nicht noch einmal losdribbeln. Das heißt Doppeldribbling. Dann musst du passen oder werfen."
+    ]
+   ]
+  },
+  "sp2-02h": {
+   "titel": "Hütchen, Hütchen, Hütchen",
+   "art": "hoeren",
+   "lektion": 2,
+   "dauer": 52.8,
+   "text": [
+    [
+     "Yusuf",
+     "Der Ball springt mir immer weg! Bei jedem Hütchen."
+    ],
+    [
+     "Frau Diallo",
+     "Zeig mal. … Ah, ich sehe es. Du schlägst den Ball mit der flachen Hand. Versuch, ihn mit den Fingern zu drücken."
+    ],
+    [
+     "Yusuf",
+     "Okay … So?"
+    ],
+    [
+     "Frau Diallo",
+     "Besser. Und du prellst ihn sehr hoch – bis zur Brust. Geh etwas in die Knie. Dann ist der Weg kürzer und du hast mehr Kontrolle."
+    ],
+    [
+     "Yusuf",
+     "Und an den Hütchen?"
+    ],
+    [
+     "Frau Diallo",
+     "Wenn das Hütchen rechts ist, nimmst du die linke Hand. Dein Körper schützt den Ball."
+    ],
+    [
+     "Yusuf",
+     "Puh, mit links ist das schwer."
+    ],
+    [
+     "Frau Diallo",
+     "Am Anfang ja. Übe jeden Tag zwei Minuten mit links. In zwei Wochen merkst du den Unterschied."
+    ],
+    [
+     "Yusuf",
+     "Noch einmal! … Ha, diesmal ohne Fehler!"
+    ]
+   ]
+  },
+  "sp2-03l": {
+   "titel": "Die wichtigsten Basketball-Regeln",
+   "art": "lesen",
+   "lektion": 3,
+   "dauer": 58.5,
+   "text": [
+    [
+     "",
+     "Die wichtigsten Basketball-Regeln"
+    ],
+    [
+     "",
+     "Zwei Mannschaften mit je fünf Spielern auf dem Feld versuchen, den Ball in den gegnerischen Korb zu werfen."
+    ],
+    [
+     "",
+     "Punkte: Ein Korb aus dem Spiel zählt zwei Punkte. Wirft man von hinter der Dreipunktlinie, gibt es drei Punkte. Ein Freiwurf zählt einen Punkt."
+    ],
+    [
+     "",
+     "Schrittfehler: Mit dem Ball in der Hand darf man höchstens zwei Schritte machen. Wer mehr läuft, ohne zu dribbeln, macht einen Schrittfehler. Der Ball geht an die andere Mannschaft."
+    ],
+    [
+     "",
+     "Doppeldribbling: Wer aufhört zu dribbeln, darf nicht noch einmal anfangen."
+    ],
+    [
+     "",
+     "Foul: Stoßen, Festhalten, Schlagen auf den Arm – Basketball ist ein Spiel ohne harten Körperkontakt. Bei einem Foul beim Wurf gibt es Freiwürfe."
+    ],
+    [
+     "",
+     "Aus: Berührt der Ball die Linie oder den Boden außerhalb, ist er im Aus. Die andere Mannschaft wirft ein."
+    ],
+    [
+     "",
+     "Mit dem Fuß darf man den Ball nicht absichtlich spielen."
+    ]
+   ]
+  },
+  "sp2-03h": {
+   "titel": "Chloé pfeift",
+   "art": "hoeren",
+   "lektion": 3,
+   "dauer": 55.3,
+   "text": [
+    [
+     "Chloé",
+     "Pfiff! Ben, Schrittfehler. Du bist mit dem Ball drei Schritte gelaufen."
+    ],
+    [
+     "Ben",
+     "Was? Ich bin doch nur zum Korb gelaufen."
+    ],
+    [
+     "Chloé",
+     "Genau. Ohne zu dribbeln. Höchstens zwei Schritte. Ball für Blau."
+    ],
+    [
+     "Ben",
+     "Okay …"
+    ],
+    [
+     "Chloé",
+     "Pfiff! Foul von Sami. Er hat Ben beim Wurf am Arm festgehalten. Ben, du bekommst zwei Freiwürfe."
+    ],
+    [
+     "Ben",
+     "Na also. Erster Freiwurf … drin! Zweiter … daneben."
+    ],
+    [
+     "Chloé",
+     "Ein Punkt für Rot. Und weiter."
+    ],
+    [
+     "Chloé",
+     "Pfiff! Ben, Doppeldribbling. Du hast aufgehört zu dribbeln und dann wieder gedribbelt."
+    ],
+    [
+     "Ben",
+     "Mann, du pfeifst alles!"
+    ],
+    [
+     "Chloé",
+     "Ich pfeife nur, was in den Regeln steht. Aber deine Freiwürfe waren gut!"
+    ]
+   ]
+  },
+  "sp2-04l": {
+   "titel": "Freilaufen – so geht’s",
+   "art": "lesen",
+   "lektion": 4,
+   "dauer": 53.7,
+   "text": [
+    [
+     "",
+     "Freilaufen – so geht’s"
+    ],
+    [
+     "",
+     "Freilaufen heißt: Du bewegst dich so, dass zwischen dir und dem Ball kein Gegner steht. Dann kann man dir den Ball zuspielen."
+    ],
+    [
+     "",
+     "Raum nutzen: Lauf dorthin, wo Platz ist. Wenn alle beim Ball stehen, ist keiner frei. Verteilt euch über das Feld."
+    ],
+    [
+     "",
+     "Zeigen und rufen: Streck die Hand aus, wo du den Ball haben willst, und ruf den Namen deiner Mitspielerin oder „Hier!“."
+    ],
+    [
+     "",
+     "Abspielen und weiterlaufen: Nach dem Pass bleibst du nicht stehen. Lauf weiter in einen freien Raum. So entsteht ein schnelles Zusammenspiel."
+    ],
+    [
+     "",
+     "Alle einbeziehen: Ein Team ist stark, wenn alle den Ball bekommen – nicht nur die Besten. Wer oft den Ball bekommt, wird auch besser."
+    ]
+   ]
+  },
+  "sp2-04h": {
+   "titel": "Wir müssen reden",
+   "art": "hoeren",
+   "lektion": 4,
+   "dauer": 55.0,
+   "text": [
+    [
+     "Amira",
+     "Okay, alle mal her. Wir liegen sechs Punkte hinten. Was läuft schief?"
+    ],
+    [
+     "Tom",
+     "Ich bekomme nie den Ball. Ich stehe die ganze Zeit da und keiner passt zu mir."
+    ],
+    [
+     "Amira",
+     "Du stehst aber immer hinter deinem Gegner. Dann kann ich dich nicht anspielen."
+    ],
+    [
+     "Lio",
+     "Und wir laufen alle zum Ball. Dann stehen wir uns gegenseitig im Weg."
+    ],
+    [
+     "Amira",
+     "Genau. Neuer Plan: Wir verteilen uns. Tom links, Lio rechts, ich in der Mitte. Wer frei ist, streckt die Hand hoch und ruft."
+    ],
+    [
+     "Tom",
+     "Und wenn ich den Ball habe?"
+    ],
+    [
+     "Amira",
+     "Dann passt du schnell und läufst sofort weiter. Nicht stehen bleiben."
+    ],
+    [
+     "Lio",
+     "Und noch was: Wir spielen auch Tom an. Er wirft gut, wenn er frei ist."
+    ],
+    [
+     "Amira",
+     "Abgemacht. Hände in die Mitte: Eins, zwei, drei – Rot!"
+    ]
+   ]
+  },
+  "sp2-05l": {
+   "titel": "Zwei kleine Spiele",
+   "art": "lesen",
+   "lektion": 5,
+   "dauer": 62.8,
+   "text": [
+    [
+     "",
+     "Zwei kleine Spiele"
+    ],
+    [
+     "",
+     "Parteiball."
+    ],
+    [
+     "",
+     "Ziel: Dein Team spielt sich den Ball zehnmal hintereinander zu, ohne dass das andere Team ihn abfängt. Dann gibt es einen Punkt."
+    ],
+    [
+     "",
+     "Regeln: Mit dem Ball darf man höchstens drei Schritte machen. Man darf den Ball nicht direkt an die Person zurückspielen, von der man ihn bekommen hat. Kein Körperkontakt – den Ball darf man nur abfangen, nicht aus der Hand reißen. Alle zählen laut mit."
+    ],
+    [
+     "",
+     "Brennball."
+    ],
+    [
+     "",
+     "Ziel: Das Lauf-Team läuft um die Matten und sammelt Punkte. Das Feld-Team versucht, die Läufer zu „verbrennen“."
+    ],
+    [
+     "",
+     "Regeln: Ein Läufer wirft den Ball weit ins Feld und läuft los, von Matte zu Matte. Das Feld-Team holt den Ball und bringt ihn so schnell wie möglich zum Brennmal, zum Beispiel einem Reifen. Dann ruft es „Verbrannt!“. Wer jetzt zwischen zwei Matten ist, ist verbrannt und muss zurück. Wer auf einer Matte steht, ist sicher. Wer einmal ganz herumkommt, holt einen Punkt. Nach einer Zeit wechseln die Teams."
+    ]
+   ]
+  },
+  "sp2-05h": {
+   "titel": "Noah erklärt Brennball",
+   "art": "hoeren",
+   "lektion": 5,
+   "dauer": 54.8,
+   "text": [
+    [
+     "Noah",
+     "Wir spielen Brennball. Hier sind vier Matten in den Ecken. Da drüben steht der Reifen – das ist das Brennmal."
+    ],
+    [
+     "Noah",
+     "Mein Team läuft zuerst. Ihr seid das Feld-Team und verteilt euch in der Halle."
+    ],
+    [
+     "Mia",
+     "Und wie fängt es an?"
+    ],
+    [
+     "Noah",
+     "Der erste Läufer wirft den Ball weit ins Feld und rennt los zur ersten Matte. Ihr holt den Ball, passt ihn euch zu und legt ihn in den Reifen. Dann ruft ihr ganz laut: Verbrannt!"
+    ],
+    [
+     "Mia",
+     "Und was passiert dann?"
+    ],
+    [
+     "Noah",
+     "Wer dann zwischen zwei Matten ist, ist verbrannt und muss zurück zum Start. Wer auf einer Matte steht, ist sicher."
+    ],
+    [
+     "Mia",
+     "Dürfen mehrere Leute auf einer Matte stehen?"
+    ],
+    [
+     "Noah",
+     "Ja, so viele, wie draufpassen. Aber nicht drängeln!"
+    ],
+    [
+     "Mia",
+     "Und wann wechseln wir?"
+    ],
+    [
+     "Noah",
+     "Nach fünf Minuten. Dann seid ihr dran mit Laufen. Das Team mit den meisten Punkten gewinnt."
+    ]
+   ]
+  },
+  "sp2-06l": {
+   "titel": "In fünf Schritten zum eigenen Spiel",
+   "art": "lesen",
+   "lektion": 6,
+   "dauer": 75.6,
+   "text": [
+    [
+     "",
+     "In fünf Schritten zum eigenen Spiel"
+    ],
+    [
+     "",
+     "Du brauchst: Bälle, Hütchen, Reifen, Matten, Leibchen, Spielkarte zum Ausfüllen."
+    ],
+    [
+     "",
+     "Schritt 1: Idee und Ziel: Was soll man erreichen? Einen Ball in ein Ziel bringen, Punkte sammeln, eine Strecke schaffen?"
+    ],
+    [
+     "",
+     "Schritt 2: Feld und Material: Wie groß ist das Feld? Was braucht ihr? Zeichnet einen Plan."
+    ],
+    [
+     "",
+     "Schritt 3: Regeln: Höchstens fünf einfache Regeln. Was ist erlaubt, was verboten? Wie bekommt man Punkte?"
+    ],
+    [
+     "",
+     "Schritt 4: Sicherheit und alle dabei: Kann sich jemand verletzen? Können alle mitspielen – auch wer im Rollstuhl sitzt oder langsamer ist?"
+    ],
+    [
+     "",
+     "Schritt 5: Testen und verbessern: Spielt das Spiel fünf Minuten mit der Klasse. Fragt danach: Was war gut? Was war unklar? Ändert die Regeln."
+    ],
+    [
+     "",
+     "Die besten Spiele haben einfache Regeln, die man in einer Minute erklären kann. Und bei ihnen hat jeder eine Chance."
+    ]
+   ]
+  },
+  "sp2-06h": {
+   "titel": "Hütchen-Jagd",
+   "art": "hoeren",
+   "lektion": 6,
+   "dauer": 57.7,
+   "text": [
+    [
+     "Lea",
+     "Unser Spiel heißt Hütchen-Jagd. Jedes Team hat fünf Hütchen in seiner Hälfte. Ziel ist es, mit einem Softball die Hütchen des anderen Teams umzuwerfen."
+    ],
+    [
+     "Sami",
+     "Die Regeln: Man darf nicht über die Mittellinie. Man wirft nur von unten oder mit Bodenpass, nicht hart. Wer den Ball fängt, darf sofort werfen."
+    ],
+    [
+     "Lea",
+     "Und jedes Team hat einen Hütchen-Wächter, der die eigenen Hütchen schützt. Der Wächter wechselt nach jedem Treffer."
+    ],
+    [
+     "Frau Diallo",
+     "Gut, wir testen fünf Minuten. Los!"
+    ],
+    [
+     "Frau Diallo",
+     "Stopp. Rückmeldungen?"
+    ],
+    [
+     "Sami",
+     "Ein Problem: Manche haben den Ball nie bekommen, weil immer die Gleichen geworfen haben."
+    ],
+    [
+     "Lea",
+     "Verbesserung: Jeder darf nur zweimal hintereinander werfen, dann muss er abgeben."
+    ],
+    [
+     "Frau Diallo",
+     "Sehr gut. Und die Regel mit dem Wächter-Wechsel war super – so war jeder einmal dran."
+    ]
+   ]
+  }
+ }
+}

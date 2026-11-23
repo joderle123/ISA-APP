@@ -1,0 +1,574 @@
+{
+ "modul": "cg6",
+ "titel": {
+  "de": "Europa entdecken – Natur und Technik verstehen",
+  "fr": "Découvrir l’Europe – comprendre la nature et la technique"
+ },
+ "sprache": "de",
+ "spuren": {
+  "cg6-01l": {
+   "titel": "Unser Kontinent",
+   "art": "lesen",
+   "lektion": 1,
+   "dauer": 69.8,
+   "text": [
+    [
+     "",
+     "Unser Kontinent"
+    ],
+    [
+     "",
+     "Europa ist einer der sieben Kontinente. Er ist ziemlich klein, aber hier leben viele Menschen auf engem Raum. Europa hat über 40 Staaten – große wie Frankreich und kleine wie Luxemburg, Malta oder Liechtenstein. Im Osten reicht Europa bis zum Uralgebirge in Russland."
+    ],
+    [
+     "",
+     "Meere, Gebirge, Flüsse."
+    ],
+    [
+     "",
+     "Europa ist auf drei Seiten von Wasser umgeben: im Westen der Atlantische Ozean, im Norden das Nordpolarmeer, die Nordsee und die Ostsee, im Süden das Mittelmeer. Das bekannteste Gebirge sind die Alpen. Ihr höchster Berg ist der Mont Blanc mit etwa 4800 Metern. Lange Flüsse sind der Rhein, der in die Nordsee fließt, und die Donau: Sie fließt durch zehn Länder bis ins Schwarze Meer."
+    ],
+    [
+     "",
+     "Viele Sprachen."
+    ],
+    [
+     "",
+     "In Europa spricht man sehr viele Sprachen. Darum sind Menschen, die mehrere Sprachen können, in Europa sehr gefragt – so wie viele in Luxemburg!"
+    ]
+   ]
+  },
+  "cg6-01h": {
+   "titel": "Hallo aus Europa!",
+   "art": "hoeren",
+   "lektion": 1,
+   "dauer": 51.0,
+   "text": [
+    [
+     "Inês",
+     "Olá! Ich heiße Inês und wohne in Lissabon, der Hauptstadt von Portugal. Lissabon liegt am Atlantik. Hier ist es fast immer warm. Am Wochenende gehe ich gern surfen. Unser Lieblingsessen ist Fisch mit Kartoffeln."
+    ],
+    [
+     "Kuba",
+     "Cześć! Ich bin Kuba aus Krakau in Polen. Krakau ist nicht die Hauptstadt – das ist Warschau. Bei uns ist es im Winter manchmal minus zehn Grad! Ich spiele Handball. Mein Onkel arbeitet übrigens in Luxemburg."
+    ],
+    [
+     "Elsa",
+     "Hej! Ich bin Elsa aus Schweden. Ich wohne in der Nähe von Stockholm, der Hauptstadt. Im Sommer ist es hier fast die ganze Nacht hell, im Winter ist es schon um drei Uhr nachmittags dunkel. Ich fahre gern Ski und schwimme in den Seen."
+    ]
+   ]
+  },
+  "cg6-02l": {
+   "titel": "Vom Krieg zur Zusammenarbeit",
+   "art": "lesen",
+   "lektion": 2,
+   "dauer": 80.0,
+   "text": [
+    [
+     "",
+     "Vom Krieg zur Zusammenarbeit"
+    ],
+    [
+     "",
+     "Nach dem Zweiten Weltkrieg war Europa zerstört. Viele Menschen wollten: Nie wieder Krieg! Am 9. Mai 1950 schlug der französische Außenminister Robert Schuman vor, dass Länder ihre Kohle und ihren Stahl gemeinsam verwalten. Schuman war übrigens 1886 in Luxemburg geboren. Der 9. Mai ist heute der Europatag."
+    ],
+    [
+     "",
+     "Sechs Länder fangen an."
+    ],
+    [
+     "",
+     "1951 gründeten sechs Länder die Gemeinschaft für Kohle und Stahl. Ihre wichtigste Behörde hatte ihren Sitz in Luxemburg. 1957 unterschrieben dieselben sechs Länder in Rom die Römischen Verträge: Belgien, Deutschland, Frankreich, Italien, Luxemburg und die Niederlande. Daraus wurde später die Europäische Union (EU)."
+    ],
+    [
+     "",
+     "Die EU heute."
+    ],
+    [
+     "",
+     "Heute hat die EU 27 Mitgliedsländer mit rund 450 Millionen Menschen (Stand 2026). Die Menschen dürfen in allen EU-Ländern reisen, wohnen, arbeiten und studieren. In über 20 Ländern bezahlt man mit dem Euro. In Luxemburg arbeiten wichtige EU-Einrichtungen, zum Beispiel der Gerichtshof der EU auf dem Kirchberg."
+    ]
+   ]
+  },
+  "cg6-02h": {
+   "titel": "Europa vor der Haustür",
+   "art": "hoeren",
+   "lektion": 2,
+   "dauer": 62.1,
+   "text": [
+    [
+     "Führerin",
+     "Willkommen auf dem Kirchberg! Hier vor euch steht der Gerichtshof der Europäischen Union. Er sorgt dafür, dass alle Länder die Regeln der EU gleich anwenden."
+    ],
+    [
+     "Finn",
+     "Und die goldenen Türme?"
+    ],
+    [
+     "Führerin",
+     "Darin arbeiten Übersetzerinnen und Übersetzer. Viele Urteile werden in die Amtssprachen der EU übersetzt – das sind vierundzwanzig Sprachen!"
+    ],
+    [
+     "Amira",
+     "Arbeiten hier nur Richter?"
+    ],
+    [
+     "Führerin",
+     "Nein. Auf dem Kirchberg arbeiten auch die Europäische Investitionsbank, der Europäische Rechnungshof, der prüft, ob das Geld der EU richtig ausgegeben wird, und viele Menschen für das Europäische Parlament. Und dreimal im Jahr treffen sich hier die Ministerinnen und Minister aller EU-Länder."
+    ],
+    [
+     "Finn",
+     "Dann ist Luxemburg ja eine richtige Europa-Hauptstadt!"
+    ],
+    [
+     "Führerin",
+     "Genau. Neben Brüssel und Straßburg ist Luxemburg eine der drei wichtigsten Städte der EU."
+    ]
+   ]
+  },
+  "cg6-03l": {
+   "titel": "Wie Magnete wirken",
+   "art": "lesen",
+   "lektion": 3,
+   "dauer": 63.5,
+   "text": [
+    [
+     "",
+     "Wie Magnete wirken"
+    ],
+    [
+     "",
+     "Ein Magnet zieht bestimmte Dinge an – sogar durch Papier, Holz oder Wasser hindurch. Die Kraft ist unsichtbar. Man nennt sie Magnetismus. Magnete ziehen vor allem Dinge aus Eisen an (auch Stahl), außerdem Nickel und Kobalt. Andere Metalle wie Aluminium, Kupfer, Gold oder Silber werden nicht angezogen."
+    ],
+    [
+     "",
+     "Nordpol und Südpol."
+    ],
+    [
+     "",
+     "Jeder Magnet hat zwei Pole: einen Nordpol und einen Südpol. Dort ist die Kraft am stärksten. Bringt man zwei Magnete zusammen, gilt: Gleiche Pole stoßen sich ab, ungleiche Pole ziehen sich an."
+    ],
+    [
+     "",
+     "Die Erde ist ein Magnet."
+    ],
+    [
+     "",
+     "Auch die Erde verhält sich wie ein riesiger Magnet. Darum richtet sich eine frei drehbare Magnetnadel immer in Nord-Süd-Richtung aus. So funktioniert ein Kompass. Seeleute nutzen ihn seit vielen Hundert Jahren."
+    ]
+   ]
+  },
+  "cg6-03h": {
+   "titel": "Ein Kompass aus einer Nadel",
+   "art": "hoeren",
+   "lektion": 3,
+   "dauer": 49.3,
+   "text": [
+    [
+     "Mme Rantini",
+     "Du brauchst eine Nähnadel, einen Magneten, eine flache Korkscheibe und eine Schale mit Wasser."
+    ],
+    [
+     "Lio",
+     "Und jetzt?"
+    ],
+    [
+     "Mme Rantini",
+     "Streich mit einem Pol des Magneten etwa dreißigmal über die Nadel. Immer in dieselbe Richtung, vom Öhr zur Spitze. Dann wird die Nadel selbst ein kleiner Magnet."
+    ],
+    [
+     "Lio",
+     "Fertig. Sie zieht sogar eine Büroklammer an!"
+    ],
+    [
+     "Mme Rantini",
+     "Prima. Leg die Nadel jetzt vorsichtig auf den Korken und lass ihn auf dem Wasser schwimmen."
+    ],
+    [
+     "Lio",
+     "Er dreht sich … und jetzt bleibt er stehen!"
+    ],
+    [
+     "Mme Rantini",
+     "Die Nadel zeigt jetzt in Nord-Süd-Richtung. Vergleich mit dem Kompass auf dem Handy. Aber Achtung: Halte keinen Magneten und kein Handy zu nah daran, sonst wird die Nadel abgelenkt."
+    ]
+   ]
+  },
+  "cg6-04l": {
+   "titel": "Nicht nur das Gewicht zählt",
+   "art": "lesen",
+   "lektion": 4,
+   "dauer": 73.7,
+   "text": [
+    [
+     "",
+     "Nicht nur das Gewicht zählt"
+    ],
+    [
+     "",
+     "Ob etwas schwimmt, hängt nicht nur davon ab, wie schwer es ist. Ein großer Holzstamm schwimmt, ein kleiner Nagel geht unter. Wichtig ist: Ist ein Gegenstand leichter oder schwerer als die gleiche Menge Wasser? Ein Stück Holz ist leichter als gleich viel Wasser – es schwimmt. Ein Stück Eisen ist viel schwerer – es sinkt. Forscher sagen dazu: Es kommt auf die Dichte an."
+    ],
+    [
+     "",
+     "Warum Schiffe schwimmen."
+    ],
+    [
+     "",
+     "Ein Schiff aus Stahl ist innen hohl und voller Luft. Es verdrängt viel Wasser, also schiebt es viel Wasser zur Seite. Das Wasser drückt von unten gegen das Schiff. Diese Kraft heißt Auftrieb. Mit einer Kugel aus Knete kannst du es ausprobieren: Die Kugel sinkt. Formst du aus derselben Knete ein Boot, schwimmt es."
+    ],
+    [
+     "",
+     "Salzwasser trägt besser."
+    ],
+    [
+     "",
+     "Im Meer schwimmt man leichter als im Schwimmbad, denn Salzwasser ist schwerer als Süßwasser und hat mehr Auftrieb. Im sehr salzigen Toten Meer kann man sogar auf dem Wasser liegen und lesen."
+    ]
+   ]
+  },
+  "cg6-04h": {
+   "titel": "Die Kapitänin erklärt",
+   "art": "hoeren",
+   "lektion": 4,
+   "dauer": 51.9,
+   "text": [
+    [
+     "Mia",
+     "Wie schwer ist dieses Schiff?"
+    ],
+    [
+     "Kapitänin",
+     "Ungefähr dreihundert Tonnen. So schwer wie zweihundert Autos."
+    ],
+    [
+     "Noah",
+     "Und warum geht es dann nicht unter?"
+    ],
+    [
+     "Kapitänin",
+     "Weil es so breit ist und innen viel Luft hat. Es drückt sehr viel Wasser zur Seite. Und das Wasser drückt mit derselben Kraft von unten zurück. Das ist der Auftrieb."
+    ],
+    [
+     "Mia",
+     "Was ist, wenn ein Loch im Rumpf ist?"
+    ],
+    [
+     "Kapitänin",
+     "Dann läuft Wasser hinein, und die Luft wird verdrängt. Darum hat das Schiff mehrere dichte Räume. Wenn einer voll Wasser läuft, schwimmt es trotzdem weiter."
+    ],
+    [
+     "Noah",
+     "Warum tragen wir Schwimmwesten?"
+    ],
+    [
+     "Kapitänin",
+     "Die Weste ist mit Schaumstoff oder Luft gefüllt. Sie ist viel leichter als Wasser und hält deinen Kopf über Wasser. Sicherheit geht vor!"
+    ]
+   ]
+  },
+  "cg6-05l": {
+   "titel": "Energie geht nicht verloren",
+   "art": "lesen",
+   "lektion": 5,
+   "dauer": 80.7,
+   "text": [
+    [
+     "",
+     "Energie geht nicht verloren"
+    ],
+    [
+     "",
+     "Ohne Energie passiert nichts: Nichts bewegt sich, nichts wird warm oder hell. Energie gibt es in verschiedenen Formen: Bewegungsenergie, Wärme, Licht, elektrische Energie (Strom) und chemische Energie, die zum Beispiel in Essen, Holz, Benzin oder Batterien steckt."
+    ],
+    [
+     "",
+     "Energie geht nie verloren, sie wird nur umgewandelt. Beim Fahrrad-Dynamo wird Bewegungsenergie zu Strom und dann zu Licht. Im Körper wird die chemische Energie aus dem Essen zu Bewegung und Wärme."
+    ],
+    [
+     "",
+     "Erneuerbar oder nicht."
+    ],
+    [
+     "",
+     "Kohle, Erdöl und Erdgas sind vor Millionen Jahren entstanden. Wenn sie verbraucht sind, sind sie weg, und beim Verbrennen entsteht viel CO₂. Erneuerbare Energien gehen nicht aus: Sonne, Wind, Wasser und Holz oder Pflanzenreste (Biomasse)."
+    ],
+    [
+     "",
+     "Ein Riesen-Akku in Vianden."
+    ],
+    [
+     "",
+     "Luxemburg kauft den größten Teil seines Stroms im Ausland. Im Norden, bei Vianden, steht ein Pumpspeicherwerk – eines der größten in Europa. Wenn viel Strom übrig ist, wird Wasser aus der Our in ein hohes Becken auf dem Berg gepumpt. Wenn viel Strom gebraucht wird, fließt das Wasser durch Rohre hinunter und treibt Turbinen an. Diese erzeugen Strom."
+    ]
+   ]
+  },
+  "cg6-05h": {
+   "titel": "Im Berg",
+   "art": "hoeren",
+   "lektion": 5,
+   "dauer": 52.8,
+   "text": [
+    [
+     "Techniker",
+     "Wir stehen jetzt in einer riesigen Halle mitten im Berg. Hier drehen sich die Maschinen."
+    ],
+    [
+     "Lea",
+     "Ist das hier ein normales Kraftwerk?"
+    ],
+    [
+     "Techniker",
+     "Nein, es ist wie ein großer Akku. Nachts, wenn der Wind stark weht oder mittags viel Sonne scheint, gibt es oft mehr Strom, als gebraucht wird. Dann pumpen wir Wasser aus dem Stausee unten hinauf ins Oberbecken."
+    ],
+    [
+     "Tom",
+     "Und wann kommt der Strom wieder raus?"
+    ],
+    [
+     "Techniker",
+     "Wenn alle gleichzeitig kochen, waschen oder die Fabriken laufen. Dann lassen wir das Wasser hinunterfließen. Es dreht die Turbinen, und die Generatoren machen Strom. Das geht in wenigen Minuten."
+    ],
+    [
+     "Lea",
+     "Ist das gut für die Umwelt?"
+    ],
+    [
+     "Techniker",
+     "Es hilft, Strom aus Wind und Sonne zu speichern. Die scheinen und wehen ja nicht immer dann, wenn wir Strom brauchen. Aber das Pumpen kostet auch Energie: Wir bekommen nur etwa drei Viertel davon zurück."
+    ]
+   ]
+  },
+  "cg6-06l": {
+   "titel": "Wo kein Licht hinkommt",
+   "art": "lesen",
+   "lektion": 6,
+   "dauer": 79.3,
+   "text": [
+    [
+     "",
+     "Wo kein Licht hinkommt"
+    ],
+    [
+     "",
+     "Licht kommt von Lichtquellen wie der Sonne, einer Lampe oder einer Kerze. Es breitet sich in geraden Linien aus, den Lichtstrahlen. Licht ist unglaublich schnell: etwa 300 000 Kilometer in einer Sekunde. Von der Sonne bis zu uns braucht es nur etwa 8 Minuten."
+    ],
+    [
+     "",
+     "So entsteht ein Schatten."
+    ],
+    [
+     "",
+     "Trifft das Licht auf einen Gegenstand, der kein Licht durchlässt, kommt es hinter ihm nicht weiter. Dort entsteht ein dunkler Bereich: der Schatten. Der Schatten hat die Form des Gegenstands."
+    ],
+    [
+     "",
+     "Durchsichtig, durchscheinend, undurchsichtig."
+    ],
+    [
+     "",
+     "Glas ist durchsichtig: Fast alles Licht geht hindurch. Butterbrotpapier ist durchscheinend: Etwas Licht kommt hindurch, aber man sieht nicht klar. Holz und Karton sind undurchsichtig: Sie werfen einen dunklen Schatten."
+    ],
+    [
+     "",
+     "Groß oder klein."
+    ],
+    [
+     "",
+     "Je näher ein Gegenstand an der Lampe ist, desto größer wird sein Schatten. Je weiter er weg ist, desto kleiner. Draußen ist der Schatten mittags am kürzesten, weil die Sonne dann am höchsten steht."
+    ]
+   ]
+  },
+  "cg6-06h": {
+   "titel": "Der Drache wird größer",
+   "art": "hoeren",
+   "lektion": 6,
+   "dauer": 47.8,
+   "text": [
+    [
+     "Lehrerin",
+     "Okay, Licht aus! Die Lampe steht hinter dem weißen Tuch. Chloé, du hast den Drachen aus Karton."
+    ],
+    [
+     "Chloé",
+     "Der Drache soll am Ende riesig werden. Wie mache ich das?"
+    ],
+    [
+     "Lehrerin",
+     "Geh mit dem Drachen langsam näher zur Lampe. Je näher er am Licht ist, desto größer wird der Schatten auf dem Tuch."
+    ],
+    [
+     "Sami",
+     "Wow, jetzt ist er so groß wie das ganze Tuch!"
+    ],
+    [
+     "Lehrerin",
+     "Genau. Und wenn er klein und weit weg sein soll, gehst du mit ihm nah ans Tuch."
+    ],
+    [
+     "Sami",
+     "Kann ich das Feuer farbig machen?"
+    ],
+    [
+     "Lehrerin",
+     "Ja! Schneide eine Flamme in den Karton und klebe rotes Transparentpapier dahinter. Das ist durchscheinend: Ein bisschen rotes Licht kommt durch."
+    ]
+   ]
+  },
+  "cg6-07l": {
+   "titel": "Die Tricks der Werbung",
+   "art": "lesen",
+   "lektion": 7,
+   "dauer": 89.8,
+   "text": [
+    [
+     "",
+     "Die Tricks der Werbung"
+    ],
+    [
+     "",
+     "Werbung will, dass wir etwas kaufen oder gut finden. Firmen geben dafür sehr viel Geld aus. Jugendliche sind eine wichtige Zielgruppe, weil sie viel Zeit am Handy verbringen und gern zeigen, was gerade „in“ ist."
+    ],
+    [
+     "",
+     "Typische Tricks."
+    ],
+    [
+     "",
+     "Berühmte Personen: Ein Star oder Influencer zeigt das Produkt. Wir denken: Wenn ich das kaufe, bin ich ein bisschen wie sie. Gefühle: Schöne Musik, glückliche Freunde, Sonne. Das Produkt soll mit guter Laune verbunden werden. Zeitdruck: „Nur heute!“, „Nur noch 3 Stück!“ So denkt man weniger nach. Alle haben das: Wer es nicht hat, soll sich ausgeschlossen fühlen. Schöne Bilder: Essen in der Werbung ist oft gestylt, Fotos sind bearbeitet."
+    ],
+    [
+     "",
+     "Versteckte Werbung."
+    ],
+    [
+     "",
+     "Manchmal sieht Werbung nicht wie Werbung aus: ein Getränk im Video, ein Schuh in der Serie. In der EU müssen Influencer bezahlte Werbung kennzeichnen, zum Beispiel mit „Werbung“, „Anzeige“ oder „#ad“. Wenn sie Geld oder Produkte bekommen, müssen sie das sagen."
+    ],
+    [
+     "",
+     "Gute Fragen vor dem Kaufen: Brauche ich das wirklich? Was kostet es? Was steht im Kleingedruckten? Würde ich es auch ohne die Werbung wollen?"
+    ]
+   ]
+  },
+  "cg6-07h": {
+   "titel": "„Jojo testet“",
+   "art": "hoeren",
+   "lektion": 7,
+   "dauer": 61.2,
+   "text": [
+    [
+     "Jojo",
+     "Hey Leute, willkommen zurück! Heute zeige ich euch meine neuen Lieblingsschuhe: die „Cloud Runner X“! Schaut mal, wie die leuchten! Ehrlich, die sind der Wahnsinn. Ich trag nichts anderes mehr!"
+    ],
+    [
+     "Jojo",
+     "Und das Beste: Mit meinem Code JOJO15 bekommt ihr fünfzehn Prozent Rabatt – aber nur bis Sonntag! Also schnell sein! Link ist unten!"
+    ],
+    [
+     "Yusuf",
+     "Die sind echt cool. Ich will die!"
+    ],
+    [
+     "Jana",
+     "Moment. Hast du gesehen? Oben links stand ganz klein: „Werbung“."
+    ],
+    [
+     "Yusuf",
+     "Ja und?"
+    ],
+    [
+     "Jana",
+     "Dann bekommt er Geld dafür. Und mit dem Code verdient er bestimmt noch mal an jedem Paar mit. Natürlich sagt er, dass sie toll sind."
+    ],
+    [
+     "Yusuf",
+     "Hm. Und „nur bis Sonntag“ ist auch so ein Trick, oder?"
+    ],
+    [
+     "Jana",
+     "Genau. Wir können ja mal echte Tests lesen. Und schauen, ob deine alten Schuhe nicht noch gut sind."
+    ]
+   ]
+  },
+  "cg6-08l": {
+   "titel": "Gratis – oder doch nicht?",
+   "art": "lesen",
+   "lektion": 8,
+   "dauer": 88.8,
+   "text": [
+    [
+     "",
+     "Gratis – oder doch nicht?"
+    ],
+    [
+     "",
+     "Persönliche Daten sind Angaben über dich: dein Name, deine Adresse, dein Geburtstag, deine Telefonnummer, Fotos, dein Standort, aber auch, was du anklickst und magst."
+    ],
+    [
+     "",
+     "Bezahlen mit Daten."
+    ],
+    [
+     "",
+     "Viele Apps sind gratis. Trotzdem verdienen die Firmen Geld – oft mit Werbung, die genau zu dir passt. Dafür sammeln sie Daten: Was schaust du an? Wo bist du? Wie lange? Darum sagt man: Wenn eine App nichts kostet, bezahlst du oft mit deinen Daten."
+    ],
+    [
+     "",
+     "Berechtigungen."
+    ],
+    [
+     "",
+     "Beim Installieren fragen Apps nach Berechtigungen: Zugriff auf Kamera, Mikrofon, Kontakte oder Standort. Frag dich: Braucht die App das wirklich? Eine Taschenlampen-App braucht keinen Zugriff auf deine Kontakte."
+    ],
+    [
+     "",
+     "Deine Rechte."
+    ],
+    [
+     "",
+     "In der EU schützt die Datenschutz-Grundverordnung deine Daten. Viele Apps sind laut ihren eigenen Regeln erst ab 13 Jahren erlaubt. In Luxemburg dürfen Jugendliche ab 16 Jahren selbst zustimmen, dass Apps ihre Daten nutzen; Jüngere brauchen dafür die Erlaubnis der Eltern. Und: Fotos von anderen darfst du nur mit ihrer Erlaubnis posten. Hilfe gibt es bei der BEE SECURE Helpline: 8002 1234."
+    ]
+   ]
+  },
+  "cg6-08h": {
+   "titel": "Warum will die Lampe meine Kontakte?",
+   "art": "hoeren",
+   "lektion": 8,
+   "dauer": 53.5,
+   "text": [
+    [
+     "Ben",
+     "Ich lade mir eine Taschenlampen-App runter. Die ist gratis und hat ganz viele Farben."
+    ],
+    [
+     "Lea",
+     "Zeig mal. … Warte, die App will Zugriff auf deine Kontakte, deinen Standort und dein Mikrofon."
+    ],
+    [
+     "Ben",
+     "Ich klick einfach auf „Erlauben“, dann geht’s schneller."
+    ],
+    [
+     "Lea",
+     "Lieber nicht. Wozu braucht eine Lampe dein Mikrofon? Vielleicht verkaufen die deine Daten weiter."
+    ],
+    [
+     "Ben",
+     "Hm. Aber mein Handy hat doch schon eine Lampe eingebaut, oder?"
+    ],
+    [
+     "Lea",
+     "Genau, oben im Menü. Du brauchst die App gar nicht. Und schau mal in die Einstellungen: Da kannst du sehen, welche Apps deinen Standort benutzen."
+    ],
+    [
+     "Ben",
+     "Oh, die Wetter-App, die Karte … und ein Spiel! Warum braucht ein Spiel meinen Standort?"
+    ],
+    [
+     "Lea",
+     "Gute Frage. Das kannst du ausschalten."
+    ]
+   ]
+  }
+ }
+}

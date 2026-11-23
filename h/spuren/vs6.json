@@ -1,0 +1,650 @@
+{
+ "modul": "vs6",
+ "titel": {
+  "de": "Eine Welt",
+  "fr": "Un seul monde"
+ },
+ "sprache": "de",
+ "spuren": {
+  "vs6-01l": {
+   "titel": "Was ist Armut?",
+   "art": "lesen",
+   "lektion": 1,
+   "dauer": 83.1,
+   "text": [
+    [
+     "",
+     "Was ist Armut?"
+    ],
+    [
+     "",
+     "Arm ist, wer nicht genug hat, um gut zu leben. Man unterscheidet zwei Arten von Armut."
+    ],
+    [
+     "",
+     "Extreme Armut."
+    ],
+    [
+     "",
+     "Menschen in extremer Armut haben nicht genug für das Nötigste: Essen, sauberes Wasser, ein Dach über dem Kopf, eine Ärztin. Die Weltbank zählt dazu alle, die weniger als 3 US-Dollar pro Tag (umgerechnet auf die Preise im eigenen Land) haben – etwa jeder zehnte Mensch auf der Welt, die meisten in Afrika südlich der Sahara."
+    ],
+    [
+     "",
+     "Relative Armut."
+    ],
+    [
+     "",
+     "In reichen Ländern wie Luxemburg muss kaum jemand hungern. Trotzdem gibt es Armut: Wer viel weniger hat als die meisten anderen, kann oft nicht mithalten – bei Kleidung, Ausflügen und Hobbys. Das ist relative Armut. In Luxemburg gilt fast jeder fünfte Mensch als armutsgefährdet, vor allem weil Wohnen so teuer ist."
+    ],
+    [
+     "",
+     "Armut ist keine Schande."
+    ],
+    [
+     "",
+     "Armut hat viele Ursachen: Krankheit, Arbeitslosigkeit, Trennung, Krieg, schlechte Bildungschancen, hohe Mieten. Niemand ist „selbst schuld“, nur weil er arm ist. Darum lacht man niemanden aus, der sich etwas nicht leisten kann."
+    ],
+    [
+     "",
+     "Was hilft."
+    ],
+    [
+     "",
+     "In Luxemburg hilft der Staat zum Beispiel mit einem Mindesteinkommen (REVIS), Kindergeld und Wohnhilfen. Vereine betreiben Épiceries sociales: Läden mit günstigen Lebensmitteln."
+    ]
+   ]
+  },
+  "vs6-01h": {
+   "titel": "Das kann jedem passieren",
+   "art": "hoeren",
+   "lektion": 1,
+   "dauer": 64.3,
+   "text": [
+    [
+     "Yusuf",
+     "Frau Morel, wer kauft bei Ihnen ein?"
+    ],
+    [
+     "Frau Morel",
+     "Ganz verschiedene Menschen. Eine Mutter, die allein drei Kinder großzieht. Ein Mann, der krank wurde und seine Arbeit verloren hat. Eine Studentin. Rentner, deren Rente nicht reicht."
+    ],
+    [
+     "Yusuf",
+     "Was ist anders als im Supermarkt?"
+    ],
+    [
+     "Frau Morel",
+     "Die Lebensmittel kosten viel weniger, oft nur etwa ein Drittel. Man braucht dafür eine Karte vom Sozialamt der Gemeinde. Und bei uns gibt es eine Kaffee-Ecke. Viele kommen auch, um einfach zu reden."
+    ],
+    [
+     "Yusuf",
+     "Schämen sich die Leute?"
+    ],
+    [
+     "Frau Morel",
+     "Am Anfang oft. Ein Mann hat mir gesagt: „Ich habe dreißig Jahre gearbeitet, und jetzt stehe ich hier.“ Ich habe geantwortet: „Das kann jedem passieren. Gut, dass Sie gekommen sind.“"
+    ],
+    [
+     "Yusuf",
+     "Was wünschen Sie sich von uns Jugendlichen?"
+    ],
+    [
+     "Frau Morel",
+     "Dass ihr niemanden auslacht, der keine teuren Sachen hat. Man sieht nie, was jemand gerade erlebt."
+    ]
+   ]
+  },
+  "vs6-02l": {
+   "titel": "Eine Welt – eng verbunden",
+   "art": "lesen",
+   "lektion": 2,
+   "dauer": 81.8,
+   "text": [
+    [
+     "",
+     "Eine Welt – eng verbunden"
+    ],
+    [
+     "",
+     "Ein Kakao am Morgen, eine Banane in der Pause: Vieles, was wir jeden Tag essen, kommt von weit her. Länder auf der ganzen Welt handeln miteinander, Firmen produzieren dort, wo es am günstigsten ist, und Schiffe bringen die Waren über die Meere. Das nennt man Globalisierung."
+    ],
+    [
+     "",
+     "Gewinner."
+    ],
+    [
+     "",
+     "Durch die Globalisierung gibt es mehr Auswahl und viele Dinge sind billiger. In manchen Ländern sind neue Arbeitsplätze entstanden, und viele Menschen sind dort weniger arm als früher. Ideen, Musik und Wissen verbreiten sich schnell um die Welt."
+    ],
+    [
+     "",
+     "Verlierer."
+    ],
+    [
+     "",
+     "Aber nicht alle gewinnen. Viele Menschen, die unsere Lebensmittel anbauen, verdienen sehr wenig. Manchmal arbeiten sogar Kinder mit. Lange Transportwege schaden dem Klima. Und wenn eine Fabrik in ein billigeres Land umzieht, verlieren Menschen ihre Arbeit."
+    ],
+    [
+     "",
+     "Was heißt das für uns."
+    ],
+    [
+     "",
+     "Wir sind mit Menschen auf der ganzen Welt verbunden – auch mit denen, die wir nie treffen. Darum fragen sich viele: Unter welchen Bedingungen wurde das hergestellt? Ist der Preis gerecht?"
+    ]
+   ]
+  },
+  "vs6-02h": {
+   "titel": "Gut oder schlecht?",
+   "art": "hoeren",
+   "lektion": 2,
+   "dauer": 55.9,
+   "text": [
+    [
+     "Ben",
+     "Ich verstehe das Problem nicht. Wenn alles billiger ist, ist das doch gut."
+    ],
+    [
+     "Lea",
+     "Für uns schon. Aber wenn die Schokolade so billig ist, wer bezahlt dann den Preis? Die Kakaobauern bekommen fast nichts."
+    ],
+    [
+     "Ben",
+     "Aber ohne den Handel hätten sie gar keine Arbeit."
+    ],
+    [
+     "Lea",
+     "Stimmt. Das hat unser Lehrer ja auch gesagt: In manchen Ländern hat die Globalisierung Millionen Menschen aus der Armut geholfen."
+    ],
+    [
+     "Ben",
+     "Also ist sie gut?"
+    ],
+    [
+     "Lea",
+     "Ich glaube, sie ist nicht einfach gut oder schlecht. Es kommt darauf an, ob die Regeln gerecht sind."
+    ],
+    [
+     "Ben",
+     "Und was können wir da machen? Wir sind doch nur zwei Schüler."
+    ],
+    [
+     "Lea",
+     "Wir können fragen, woher Sachen kommen. Fair gehandelte Produkte kaufen, wenn es geht. Und weniger wegwerfen. Viele kleine Schritte sind auch Schritte."
+    ]
+   ]
+  },
+  "vs6-03l": {
+   "titel": "Bitter für die einen, süß für die anderen",
+   "art": "lesen",
+   "lektion": 3,
+   "dauer": 82.4,
+   "text": [
+    [
+     "",
+     "Bitter für die einen, süß für die anderen"
+    ],
+    [
+     "",
+     "Der meiste Kakao der Welt wächst in Westafrika, vor allem in der Elfenbeinküste und in Ghana. Millionen kleiner Bauernfamilien ernten dort die Kakaofrüchte von Hand."
+    ],
+    [
+     "",
+     "Ein kleines Stück vom Kuchen."
+    ],
+    [
+     "",
+     "Vom Preis einer Tafel Schokolade bekommen die Kakaobauern nach Schätzungen weniger als ein Zehntel. Viele verdienen so wenig, dass es kaum zum Leben reicht. Darum müssen oft auch die Kinder mitarbeiten. Schätzungen zufolge arbeiten in Ghana und der Elfenbeinküste über eine Million Kinder auf Kakaofeldern, oft mit gefährlichen Werkzeugen. Viele können deshalb nicht regelmäßig zur Schule gehen."
+    ],
+    [
+     "",
+     "Fairer Handel."
+    ],
+    [
+     "",
+     "Beim fairen Handel bekommen die Bauern einen festen Mindestpreis, auch wenn der Weltmarktpreis sinkt. Dazu gibt es eine Prämie für die Gemeinschaft, zum Beispiel für einen Brunnen oder eine Schule. Ausbeuterische Kinderarbeit ist verboten, und die Umwelt wird geschützt."
+    ],
+    [
+     "",
+     "Woran erkenne ich das."
+    ],
+    [
+     "",
+     "Fair gehandelte Produkte tragen ein Siegel für fairen Handel. Sie kosten oft etwas mehr – dafür kommt mehr bei den Menschen an, die sie angebaut haben."
+    ]
+   ]
+  },
+  "vs6-03h": {
+   "titel": "Ein Brunnen aus Schokolade",
+   "art": "hoeren",
+   "lektion": 3,
+   "dauer": 56.4,
+   "text": [
+    [
+     "Lea",
+     "Guten Tag, Herr Mensah! Wie sieht Ihr Arbeitstag aus?"
+    ],
+    [
+     "Herr Mensah",
+     "Ich stehe früh auf, bevor es zu heiß wird. Ich schneide die Kakaofrüchte vom Baum, öffne sie und hole die Bohnen heraus. Dann lassen wir die Bohnen etwa eine Woche unter Bananenblättern gären. Danach trocknen sie in der Sonne."
+    ],
+    [
+     "Mia",
+     "Haben Sie schon einmal Schokolade gegessen?"
+    ],
+    [
+     "Herr Mensah",
+     "Ja, aber erst als Erwachsener. Viele Bauern hier haben noch nie Schokolade probiert. Sie ist für uns teuer."
+    ],
+    [
+     "Lea",
+     "Was hat sich durch den fairen Handel verändert?"
+    ],
+    [
+     "Herr Mensah",
+     "Wir bekommen einen sicheren Mindestpreis. Und mit der Prämie hat unsere Genossenschaft einen Brunnen gebaut. Früher mussten die Mädchen jeden Morgen weit laufen, um Wasser zu holen. Jetzt gehen sie in die Schule."
+    ],
+    [
+     "Mia",
+     "Und Ihre Kinder?"
+    ],
+    [
+     "Herr Mensah",
+     "Meine Tochter will Ärztin werden. Wenn ihr fair gehandelte Schokolade kauft, helft ihr ein kleines bisschen mit."
+    ]
+   ]
+  },
+  "vs6-04l": {
+   "titel": "Ein Klima für alle",
+   "art": "lesen",
+   "lektion": 4,
+   "dauer": 79.5,
+   "text": [
+    [
+     "",
+     "Ein Klima für alle"
+    ],
+    [
+     "",
+     "Treibhausgase wie CO₂ kennen keine Grenzen. Ganz egal, wo sie ausgestoßen werden: Sie erwärmen die ganze Erde. Darum kann kein Land das Klima allein schützen."
+    ],
+    [
+     "",
+     "Das Pariser Abkommen."
+    ],
+    [
+     "",
+     "Im Jahr 2015 haben sich fast alle Länder der Welt in Paris auf ein Ziel geeinigt: Die Erwärmung soll deutlich unter 2 Grad bleiben, möglichst bei 1,5 Grad. Jedes Land muss sagen, wie viel CO₂ es einsparen will. Auch die Europäische Union und Luxemburg haben sich Ziele gesetzt."
+    ],
+    [
+     "",
+     "Ist das gerecht."
+    ],
+    [
+     "",
+     "Die Menschen in einem reichen Land wie Luxemburg stoßen pro Kopf etwa 10 Tonnen CO₂ im Jahr aus – auch, weil viele hier tanken, die gar nicht hier wohnen. In Bangladesch ist es weniger als eine Tonne. Doch gerade arme Länder wie Bangladesch leiden besonders unter Überschwemmungen und Stürmen. Darum sprechen viele von Klimagerechtigkeit: Wer mehr verursacht und mehr Geld hat, soll mehr tun und anderen helfen."
+    ],
+    [
+     "",
+     "Viele Ebenen."
+    ],
+    [
+     "",
+     "Die Welt schließt Abkommen. Der Staat macht Gesetze, zum Beispiel eine Steuer auf CO₂. Die Gemeinde baut Radwege und Solaranlagen. Die Schule kann Energie sparen. Und jeder Einzelne entscheidet, wie er sich bewegt, was er isst und kauft."
+    ]
+   ]
+  },
+  "vs6-04h": {
+   "titel": "Bringt das überhaupt etwas?",
+   "art": "hoeren",
+   "lektion": 4,
+   "dauer": 57.1,
+   "text": [
+    [
+     "Finn",
+     "Ehrlich, was bringt das, wenn ich das Licht ausmache? Luxemburg ist winzig. Die großen Länder müssen etwas tun."
+    ],
+    [
+     "Lea",
+     "Aber wir stoßen pro Kopf viel mehr aus als die meisten Menschen auf der Welt."
+    ],
+    [
+     "Finn",
+     "Trotzdem. Ein Mensch allein kann das Klima nicht retten."
+    ],
+    [
+     "Lehrer",
+     "Da hast du recht, Finn. Allein nicht. Aber stell dir eine Wahl vor: Eine einzelne Stimme entscheidet auch nichts. Wenn aber alle denken „Meine Stimme bringt nichts“, dann geht niemand wählen."
+    ],
+    [
+     "Lea",
+     "Und wenn viele etwas ändern, merken das auch die Politiker und die Firmen."
+    ],
+    [
+     "Lehrer",
+     "Genau. Es braucht beides: große Regeln und viele kleine Schritte. Was könnten wir hier an der Schule tun?"
+    ],
+    [
+     "Finn",
+     "Okay … vielleicht dafür sorgen, dass die Heizung nicht läuft, wenn die Fenster offen sind. Das nervt mich sowieso."
+    ],
+    [
+     "Lea",
+     "Und ein Fahrradständer mit Dach! Dann kommen mehr mit dem Rad."
+    ]
+   ]
+  },
+  "vs6-05l": {
+   "titel": "Mehr als ein Bild",
+   "art": "lesen",
+   "lektion": 5,
+   "dauer": 86.1,
+   "text": [
+    [
+     "",
+     "Mehr als ein Bild"
+    ],
+    [
+     "",
+     "Ein Symbol ist ein Zeichen, das für etwas Größeres steht. Ein Herz ist nicht nur eine Form – es steht für Liebe. Eine Taube mit einem Zweig steht für Frieden. Symbole sprechen ohne Worte und werden oft auf der ganzen Welt verstanden."
+    ],
+    [
+     "",
+     "Zeichen der Religionen."
+    ],
+    [
+     "",
+     "Auch Religionen haben Zeichen. Das Kreuz erinnert Christen an Jesus. Der Davidstern ist ein Zeichen des Judentums. Halbmond und Stern werden oft für den Islam verwendet, auch wenn der Islam kein offizielles Zeichen hat. Das Om ist ein heiliger Klang im Hinduismus. Das Rad der Lehre mit acht Speichen steht im Buddhismus für den Weg, den Buddha gelehrt hat. Yin und Yang aus dem Daoismus zeigen, dass Gegensätze zusammengehören."
+    ],
+    [
+     "",
+     "Zeichen zeigen Zugehörigkeit."
+    ],
+    [
+     "",
+     "Menschen tragen Zeichen als Kette, als Anstecker oder auf der Kleidung. Sie zeigen damit: Das ist mir wichtig, da gehöre ich dazu. Das gilt auch für Vereinswappen, Flaggen oder Bänder."
+    ],
+    [
+     "",
+     "Mit Respekt."
+    ],
+    [
+     "",
+     "Für viele Menschen sind religiöse Zeichen heilig. Darum macht man sich nicht über sie lustig und beschädigt sie nicht – auch wenn man selbst nicht daran glaubt."
+    ]
+   ]
+  },
+  "vs6-05h": {
+   "titel": "Mein Zeichen",
+   "art": "hoeren",
+   "lektion": 5,
+   "dauer": 60.2,
+   "text": [
+    [
+     "Mia",
+     "Das ist meine Kette mit einem kleinen Kreuz. Die habe ich zur Kommunion bekommen. Ich bin nicht jeden Sonntag in der Kirche, aber das Kreuz erinnert mich daran, dass ich nicht allein bin."
+    ],
+    [
+     "Sami",
+     "Das ist eine Gebetskette, eine Tasbih. Sie hat dreiunddreißig Perlen. Mein Opa hat sie mir geschenkt. Muslime sprechen damit Lobpreisungen Gottes. Ich nehme sie oft in die Hand, wenn ich nervös bin. Dann werde ich ruhiger."
+    ],
+    [
+     "Jana",
+     "Mein Zeichen ist ein Regenbogen-Anstecker. Für mich heißt er: Alle Menschen sind willkommen, egal wen sie lieben oder wie sie sind."
+    ],
+    [
+     "Ben",
+     "Ich habe das Friedenszeichen auf meinem Rucksack. Es wurde 1958 in England erfunden, für Demonstrationen gegen Atomwaffen. Ich finde es gut, weil es zeigt: Ich bin gegen Krieg."
+    ],
+    [
+     "Mia",
+     "Lustig. Wir haben ganz verschiedene Zeichen, aber alle sagen irgendwie: Das gibt mir Halt."
+    ]
+   ]
+  },
+  "vs6-06l": {
+   "titel": "Kleider machen Leute?",
+   "art": "lesen",
+   "lektion": 6,
+   "dauer": 85.7,
+   "text": [
+    [
+     "",
+     "Kleider machen Leute?"
+    ],
+    [
+     "",
+     "Ein altes Sprichwort sagt: „Kleider machen Leute.“ Gemeint ist: Andere beurteilen uns oft nach unserer Kleidung. Kleidung schützt uns vor Kälte und Sonne. Aber sie sagt auch etwas."
+    ],
+    [
+     "",
+     "Zugehörigkeit."
+    ],
+    [
+     "",
+     "Fußballfans tragen das Trikot ihres Vereins. Feuerwehrleute, Köche und Pflegekräfte tragen Berufskleidung. Jugendliche einer Gruppe ziehen sich oft ähnlich an. Kleidung zeigt: Ich gehöre dazu."
+    ],
+    [
+     "",
+     "Religion."
+    ],
+    [
+     "",
+     "Manche Menschen zeigen mit ihrer Kleidung ihren Glauben. Viele jüdische Männer tragen beim Beten oder im Alltag eine Kippa, eine kleine Kappe. Manche muslimische Frauen tragen ein Kopftuch. Sikh-Männer tragen oft einen Turban. Ordensschwestern und Mönche tragen eine Ordenstracht. Wichtig ist: Jeder Mensch soll selbst entscheiden dürfen, was er trägt."
+    ],
+    [
+     "",
+     "Mode und Druck."
+    ],
+    [
+     "",
+     "Mode macht Spaß, und man kann mit ihr zeigen, wer man ist. Aber manchmal entsteht Druck: Wer nicht die „richtigen“ Marken trägt, wird ausgelacht. Dabei sagt der Preis eines Pullis nichts darüber, ob jemand ein guter Mensch oder ein guter Freund ist."
+    ]
+   ]
+  },
+  "vs6-06h": {
+   "titel": "Meine Entscheidung",
+   "art": "hoeren",
+   "lektion": 6,
+   "dauer": 54.9,
+   "text": [
+    [
+     "Chloé",
+     "Darf ich dich was fragen? Warum trägst du seit den Ferien ein Kopftuch? Haben deine Eltern das gesagt?"
+    ],
+    [
+     "Amira",
+     "Nein. Meine Mutter trägt gar keins. Ich habe es selbst entschieden. Ich habe viel darüber gelesen und mit meiner Tante geredet."
+    ],
+    [
+     "Chloé",
+     "Und warum?"
+    ],
+    [
+     "Amira",
+     "Für mich ist es ein Zeichen für meinen Glauben. Es fühlt sich an, als würde ich zeigen, wer ich bin."
+    ],
+    [
+     "Chloé",
+     "Nervt es nicht, wenn Leute komisch schauen?"
+    ],
+    [
+     "Amira",
+     "Manchmal schon. Im Bus hat mal jemand gesagt, ich soll „zurück in mein Land“. Ich bin in Esch geboren!"
+    ],
+    [
+     "Chloé",
+     "Das ist gemein. Tut mir leid."
+    ],
+    [
+     "Amira",
+     "Danke. Am meisten freue ich mich, wenn Leute einfach fragen, so wie du. Fragen ist viel besser als vermuten."
+    ]
+   ]
+  },
+  "vs6-07l": {
+   "titel": "Drei Arten, etwas für wahr zu halten",
+   "art": "lesen",
+   "lektion": 7,
+   "dauer": 71.0,
+   "text": [
+    [
+     "",
+     "Drei Arten, etwas für wahr zu halten"
+    ],
+    [
+     "",
+     "Wissen."
+    ],
+    [
+     "",
+     "Wissen kann man überprüfen: durch Beobachten, Messen, Experimente oder sichere Quellen. „Die Erde dreht sich um die Sonne“ ist Wissen. Jeder kann es nachprüfen – und alle kommen zum gleichen Ergebnis. Wissen kann sich aber auch ändern, wenn man Neues entdeckt."
+    ],
+    [
+     "",
+     "Meinen."
+    ],
+    [
+     "",
+     "Eine Meinung ist eine persönliche Sicht: „Mathe ist langweilig.“ „Die Band ist die beste.“ Meinungen können verschieden sein, ohne dass jemand „falsch“ liegt. Gute Meinungen haben Gründe."
+    ],
+    [
+     "",
+     "Glauben."
+    ],
+    [
+     "",
+     "Das Wort „glauben“ hat zwei Bedeutungen. Im Alltag heißt es oft vermuten: „Ich glaube, der Bus kommt gleich.“ In der Religion bedeutet glauben vertrauen: „Ich glaube an Gott.“ Solche Glaubenssätze kann man nicht mit einem Experiment beweisen – aber auch nicht widerlegen. Für Gläubige sind sie trotzdem sehr wichtig. Sie geben Halt und Orientierung."
+    ],
+    [
+     "",
+     "Warum ist der Unterschied wichtig."
+    ],
+    [
+     "",
+     "Wer Wissen und Meinung verwechselt, streitet oft unnötig. Und wer versteht, was Glaube ist, kann mit Menschen anderer Religionen und mit Menschen ohne Religion respektvoll sprechen."
+    ]
+   ]
+  },
+  "vs6-07h": {
+   "titel": "Kann man Gott beweisen?",
+   "art": "hoeren",
+   "lektion": 7,
+   "dauer": 54.4,
+   "text": [
+    [
+     "Ben",
+     "Ich glaube nur, was man beweisen kann. Und Gott kann man nicht beweisen."
+    ],
+    [
+     "Amira",
+     "Man kann aber auch nicht beweisen, dass es ihn nicht gibt."
+    ],
+    [
+     "Lehrer",
+     "Ihr habt beide recht. Mit einem Experiment kann man weder das eine noch das andere zeigen. Darum spricht man hier von Glauben und nicht von Wissen."
+    ],
+    [
+     "Ben",
+     "Aber warum glaubt man dann daran?"
+    ],
+    [
+     "Amira",
+     "Für mich ist es wie Vertrauen. Ich kann nicht beweisen, dass meine beste Freundin mich mag. Aber ich vertraue ihr. Mein Glaube gibt mir Halt, wenn es schwierig ist."
+    ],
+    [
+     "Ben",
+     "Hm. Ich verlasse mich lieber auf das, was man messen kann. Aber ich finde es okay, dass du glaubst."
+    ],
+    [
+     "Lehrer",
+     "Und genau so kann man gut miteinander reden: zuhören, nachfragen, die eigene Sicht begründen – und die andere Sicht stehen lassen."
+    ]
+   ]
+  },
+  "vs6-08l": {
+   "titel": "Streit oder Freundschaft?",
+   "art": "lesen",
+   "lektion": 8,
+   "dauer": 117.3,
+   "text": [
+    [
+     "",
+     "Streit oder Freundschaft?"
+    ],
+    [
+     "",
+     "Galileo Galilei."
+    ],
+    [
+     "",
+     "Früher dachten die meisten Menschen, die Sonne dreht sich um die Erde. Im 17. Jahrhundert machte der italienische Forscher Galileo Galilei mit seinem Fernrohr Beobachtungen, die dafür sprachen, dass die Erde sich um die Sonne dreht. 1633 wurde er von einem Kirchengericht verurteilt: Er musste widerrufen und lebte bis zu seinem Tod unter Hausarrest. Erst 1992 gab ein Papst zu, dass die Kirche damals einen Fehler gemacht hatte."
+    ],
+    [
+     "",
+     "Georges Lemaître."
+    ],
+    [
+     "",
+     "Es gibt aber auch andere Geschichten. Der belgische Priester und Physiker Georges Lemaître zeigte 1927, dass sich das Weltall ausdehnt. 1931 schlug er vor, dass es einen Anfang hatte. Daraus wurde später die Theorie vom Urknall. Für ihn waren Glaube und Wissenschaft kein Widerspruch."
+    ],
+    [
+     "",
+     "Zwei Arten von Fragen."
+    ],
+    [
+     "",
+     "Die Naturwissenschaft fragt: Wie funktioniert die Welt? Sie misst, beobachtet und prüft. Religionen und Philosophie fragen oft: Warum gibt es die Welt? Wozu lebe ich? Viele Menschen sehen darin keinen Widerspruch. Andere finden, dass die Wissenschaft allein reicht. Beide Sichtweisen kann man respektieren."
+    ],
+    [
+     "",
+     "Vier große Fragen."
+    ],
+    [
+     "",
+     "Der Philosoph Immanuel Kant hat vor über 200 Jahren vier große Fragen gestellt: Was kann ich wissen? Was soll ich tun? Was darf ich hoffen? Was ist der Mensch? Bis heute denken Menschen darüber nach – in der Wissenschaft, in den Religionen und in der Philosophie."
+    ]
+   ]
+  },
+  "vs6-08h": {
+   "titel": "Was darf ich hoffen?",
+   "art": "hoeren",
+   "lektion": 8,
+   "dauer": 56.5,
+   "text": [
+    [
+     "Leiterin",
+     "Heute fragen wir: Was darf ich hoffen? Lina, worauf hoffst du?"
+    ],
+    [
+     "Lina",
+     "Dass es irgendwann keinen Krieg mehr gibt. Ich weiß, das klingt naiv."
+    ],
+    [
+     "Leiterin",
+     "Ist das ein Wunsch oder eine Hoffnung?"
+    ],
+    [
+     "Lina",
+     "Hm. Ein Wunsch ist, wenn ich etwas will. Hoffnung ist … wenn ich glaube, dass es gut werden kann, auch wenn ich es nicht sicher weiß."
+    ],
+    [
+     "Tom",
+     "Ich hoffe, dass ich die Lehrstelle als Mechatroniker bekomme. Und dafür tue ich auch etwas. Ich übe für das Vorstellungsgespräch."
+    ],
+    [
+     "Leiterin",
+     "Das ist ein wichtiger Gedanke: Hoffnung heißt nicht nur warten. Man kann selbst etwas dafür tun."
+    ],
+    [
+     "Lina",
+     "Und wenn es nicht klappt?"
+    ],
+    [
+     "Leiterin",
+     "Dann ist Hoffnung die Kraft, es wieder zu versuchen. Viele Menschen finden diese Kraft im Glauben, andere bei Freunden, in der Natur oder in der Musik."
+    ]
+   ]
+  }
+ }
+}

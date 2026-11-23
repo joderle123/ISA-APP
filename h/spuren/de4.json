@@ -1,0 +1,594 @@
+{
+ "modul": "de4",
+ "titel": {
+  "de": "Kaufen, Mode und Taschengeld",
+  "fr": "Acheter, mode et argent de poche"
+ },
+ "sprache": "de",
+ "spuren": {
+  "de4-01l": {
+   "titel": "Was macht ihr mit eurem Taschengeld?",
+   "art": "lesen",
+   "lektion": 1,
+   "dauer": 57.5,
+   "text": [
+    [
+     "",
+     "Was macht ihr mit eurem Taschengeld?"
+    ],
+    [
+     "",
+     "Ich bekomme 20 € im Monat. Das meiste gebe ich für Snacks aus, weil ich nach dem Training immer Hunger habe. 😅 Am Ende vom Monat habe ich nichts mehr."
+    ],
+    [
+     "",
+     "Ich spare fast alles, denn ich will mir im Sommer ein Fahrrad kaufen. Ich habe schon 150 € gespart! Manchmal ist es schwer, nichts zu kaufen."
+    ],
+    [
+     "",
+     "Ich bekomme kein festes Taschengeld. Ich helfe meinem Nachbarn im Garten und verdiene so ein bisschen Geld. Das finde ich gut, weil ich es selbst verdient habe."
+    ],
+    [
+     "",
+     "Mein Tipp: Schreibt eure Ausgaben eine Woche lang auf! Ich war geschockt – 9 € nur für Getränke am Automaten. Jetzt nehme ich eine Wasserflasche von zu Hause mit."
+    ],
+    [
+     "",
+     "Gute Idee, Nele! Das mache ich auch. 👍"
+    ]
+   ]
+  },
+  "de4-01h": {
+   "titel": "Kannst du mir 10 € vorstrecken?",
+   "art": "hoeren",
+   "lektion": 1,
+   "dauer": 50.9,
+   "text": [
+    [
+     "Ben",
+     "Tante Sara, hast du kurz Zeit? Ich habe eine Frage."
+    ],
+    [
+     "Tante",
+     "Klar, was ist los?"
+    ],
+    [
+     "Ben",
+     "Morgen gehen alle ins Kino. Aber mein Taschengeld ist schon weg. Kannst du mir bitte zehn Euro vorstrecken?"
+    ],
+    [
+     "Tante",
+     "Hm. Warum ist dein Geld schon weg? Es ist doch erst der zwanzigste."
+    ],
+    [
+     "Ben",
+     "Weil ich Pommes und Getränke gekauft habe … und ein Spiel fürs Handy."
+    ],
+    [
+     "Tante",
+     "Okay. Ich gebe dir das Geld. Aber nächsten Monat bekommst du zehn Euro weniger. Einverstanden?"
+    ],
+    [
+     "Ben",
+     "Einverstanden! Danke! Und ich helfe dir dafür am Sonntag beim Einkaufen."
+    ],
+    [
+     "Tante",
+     "Das ist ein Angebot! Und schreib mal auf, wofür du dein Geld ausgibst, ja?"
+    ]
+   ]
+  },
+  "de4-02l": {
+   "titel": "Fundbüro: Wer vermisst etwas?",
+   "art": "lesen",
+   "lektion": 2,
+   "dauer": 52.9,
+   "text": [
+    [
+     "",
+     "Fundbüro: Wer vermisst etwas?"
+    ],
+    [
+     "",
+     "📦 Gefunden in dieser Woche. 1 · eine blaue Regenjacke, Größe M, mit einem Schlüssel in der Tasche (Turnhalle, Montag). 2 · eine runde Brille mit rotem Rahmen, in einem grünen Etui (Kantine, Dienstag). 3 · ein weißes Ladekabel mit einem Sticker: ein kleiner Dino (Bibliothek, Mittwoch). 4 · eine Trinkflasche aus Metall, silber, mit dem Namen „Jo“ (Pausenhof, Donnerstag)."
+    ],
+    [
+     "",
+     "So bekommst du deine Sachen zurück. Komm in der Pause ins Sekretariat. Beschreib deinen Gegenstand genau: Farbe, Größe, besondere Merkmale. Dann bekommst du ihn zurück. Nach den Ferien spenden wir alles, was niemand abgeholt hat."
+    ]
+   ]
+  },
+  "de4-02h": {
+   "titel": "Kannst du mir deins leihen?",
+   "art": "hoeren",
+   "lektion": 2,
+   "dauer": 44.8,
+   "text": [
+    [
+     "Lio",
+     "Jana, mein Taschenrechner ist zu Hause. Kannst du mir deinen leihen?"
+    ],
+    [
+     "Jana",
+     "Tut mir leid, ich brauche meinen selbst. Aber frag Finn, er hat zwei."
+    ],
+    [
+     "Lio",
+     "Finn, kannst du mir einen Taschenrechner leihen? Nur für die Stunde."
+    ],
+    [
+     "Finn",
+     "Klar. Hier, nimm meinen alten. Aber bitte gib ihn mir nach der Stunde zurück."
+    ],
+    [
+     "Lio",
+     "Danke! Ach, und mein Lineal … ich habe auch kein Lineal."
+    ],
+    [
+     "Jana",
+     "Hier, du kannst meins haben. Ich habe heute zwei dabei."
+    ],
+    [
+     "Lio",
+     "Ihr seid super! Morgen bringe ich euch zwei Kekse mit."
+    ],
+    [
+     "Finn",
+     "Und morgen bringst du deine eigenen Sachen mit, okay?"
+    ],
+    [
+     "Lio",
+     "Versprochen!"
+    ]
+   ]
+  },
+  "de4-03l": {
+   "titel": "So kaufst du deine Fahrkarte",
+   "art": "lesen",
+   "lektion": 3,
+   "dauer": 63.5,
+   "text": [
+    [
+     "",
+     "So kaufst du deine Fahrkarte"
+    ],
+    [
+     "",
+     "Du brauchst: Bargeld (Münzen oder Scheine) oder eine Bankkarte, dein Fahrziel."
+    ],
+    [
+     "",
+     "Schritt 1: Tippe auf den Bildschirm. Wähle die Sprache: Deutsch, Français oder English."
+    ],
+    [
+     "",
+     "Schritt 2: Gib dein Ziel ein, zum Beispiel „Luxembourg“. Wähle „einfache Fahrt“ oder „Hin- und Rückfahrt“."
+    ],
+    [
+     "",
+     "Schritt 3: Wähle die Personen: Erwachsene oder Kinder/Jugendliche. Jugendliche bezahlen oft weniger."
+    ],
+    [
+     "",
+     "Schritt 4: Bezahle mit Münzen, Scheinen oder Karte. Der Automat zeigt den Preis, zum Beispiel 8,40 €."
+    ],
+    [
+     "",
+     "Schritt 5: Nimm deine Fahrkarte und dein Wechselgeld unten heraus. Vergiss deine Karte nicht!"
+    ],
+    [
+     "",
+     "Achtung: Bei Problemen drückst du den Knopf „Hilfe“. Gib deine Bankkarte und deinen PIN-Code nie fremden Personen!"
+    ]
+   ]
+  },
+  "de4-03h": {
+   "titel": "Große Eröffnung – tolle Angebote!",
+   "art": "hoeren",
+   "lektion": 3,
+   "dauer": 43.4,
+   "text": [
+    [
+     "Durchsage",
+     "Herzlich willkommen im neuen Kaufhaus Zentrum! Heute, zur Eröffnung, haben wir tolle Angebote für Sie."
+    ],
+    [
+     "Durchsage",
+     "Im Erdgeschoss: Kopfhörer für nur neunzehn Euro neunzig – statt neunundzwanzig Euro."
+    ],
+    [
+     "Durchsage",
+     "Im ersten Stock: alle Turnschuhe zwanzig Prozent billiger!"
+    ],
+    [
+     "Durchsage",
+     "Und im Café im zweiten Stock: ein Kakao und ein Muffin zusammen für nur drei Euro fünfzig."
+    ],
+    [
+     "Durchsage",
+     "Um fünfzehn Uhr gibt es eine Modenschau mit Jugendmode. Viel Spaß beim Einkaufen!"
+    ],
+    [
+     "Chloe",
+     "Ben, hast du gehört? Die Kopfhörer kosten nur neunzehn neunzig!"
+    ],
+    [
+     "Ben",
+     "Ja, aber zuerst gehen wir ins Café. Kakao und Muffin für drei fünfzig – das ist ein Schnäppchen!"
+    ]
+   ]
+  },
+  "de4-04l": {
+   "titel": "Mode ist wie ein Kreis – Gespräch mit der Designerin Rosa Lenz",
+   "art": "lesen",
+   "lektion": 4,
+   "dauer": 70.4,
+   "text": [
+    [
+     "",
+     "Mode ist wie ein Kreis – Gespräch mit der Designerin Rosa Lenz"
+    ],
+    [
+     "",
+     "Frau Lenz, Sie machen seit vierzig Jahren Mode. Wie hat alles angefangen?"
+    ],
+    [
+     "",
+     "Als Kind nähte ich Kleider für meine Puppen. Meine Mutter zeigte mir die Nähmaschine. Mit 16 machte ich mein erstes eigenes Kleid."
+    ],
+    [
+     "",
+     "Wie war die Mode in Ihrer Jugend?"
+    ],
+    [
+     "",
+     "In den Achtzigern war alles bunt! Wir trugen Neonfarben und große Schulterpolster. Viele Jugendliche färbten ihre Haare. Unsere Eltern fanden das schrecklich."
+    ],
+    [
+     "",
+     "Und heute?"
+    ],
+    [
+     "",
+     "Heute kommt vieles zurück: weite Hosen, alte Turnschuhe, Vintage-Jacken. Mode ist wie ein Kreis. Aber eins ist neu: Viele Jugendliche kaufen gebraucht, auf Flohmärkten oder online. Das finde ich super."
+    ],
+    [
+     "",
+     "Haben Sie einen Tipp für unsere Leser?"
+    ],
+    [
+     "",
+     "Ja: Tragt, was euch gefällt – nicht, was alle tragen. Stil hat nichts mit dem Preis zu tun."
+    ]
+   ]
+  },
+  "de4-04h": {
+   "titel": "Ausstellung: 100 Jahre Jugendmode",
+   "art": "hoeren",
+   "lektion": 4,
+   "dauer": 46.9,
+   "text": [
+    [
+     "Sprecherin",
+     "Unser Tipp für das Wochenende: Im Stadtmuseum gibt es eine neue Ausstellung: „100 Jahre Jugendmode“."
+    ],
+    [
+     "Sprecherin",
+     "Sie zeigt Kleidung von Jugendlichen aus zehn Jahrzehnten – von der Schuluniform bis zum Kapuzenpulli."
+    ],
+    [
+     "Sprecherin",
+     "Besonders spannend: In einem Raum dürft ihr alte Kleidung selbst anprobieren und Fotos machen."
+    ],
+    [
+     "Sprecherin",
+     "Die Ausstellung ist von Dienstag bis Sonntag von zehn bis achtzehn Uhr geöffnet. Montags ist das Museum geschlossen."
+    ],
+    [
+     "Sprecherin",
+     "Der Eintritt kostet für Erwachsene acht Euro. Für Jugendliche unter achtzehn ist er gratis!"
+    ],
+    [
+     "Sprecherin",
+     "Am Samstag um vierzehn Uhr gibt es eine kleine Modenschau mit Schülerinnen und Schülern. Viel Spaß!"
+    ]
+   ]
+  },
+  "de4-05l": {
+   "titel": "Die Turnschuhe",
+   "art": "lesen",
+   "lektion": 5,
+   "dauer": 71.3,
+   "text": [
+    [
+     "",
+     "Die Turnschuhe"
+    ],
+    [
+     "",
+     "Am Montag kam Finn mit neuen Turnschuhen in die Schule. Sie waren weiß und blau. Er war stolz, denn er hatte sie selbst ausgesucht."
+    ],
+    [
+     "",
+     "In der Pause zeigte Tom auf die Schuhe. „Was sind das denn für Schuhe?“, rief er laut. „Die sind ja No-Name! Hat deine Familie kein Geld?“ Ein paar Jungen lachten."
+    ],
+    [
+     "",
+     "Finn sagte nichts. Er wurde rot und ging weg. Am Dienstag kam er in seinen alten Schuhen. Und am Mittwoch wollte er nicht mehr in die Pause gehen."
+    ],
+    [
+     "",
+     "Nele hatte alles gesehen. Sie fuhr zu Finn und sagte: „Deine Schuhe sind cool. Und Tom war gemein.“ Dann sprach sie mit Frau Sommer."
+    ],
+    [
+     "",
+     "Frau Sommer redete in der Klassenstunde mit allen. Sie fragte: „Wie fühlt man sich, wenn alle lachen?“ Am Ende sagte Tom leise: „Es tut mir leid, Finn.“"
+    ],
+    [
+     "",
+     "Finn sagt heute: „Nele hat mir sehr geholfen. Man muss nicht allein bleiben, wenn so etwas passiert.“"
+    ]
+   ]
+  },
+  "de4-05h": {
+   "titel": "Was hättest du gemacht?",
+   "art": "hoeren",
+   "lektion": 5,
+   "dauer": 46.9,
+   "text": [
+    [
+     "Lina",
+     "Hast du die Geschichte mit den Turnschuhen gelesen?"
+    ],
+    [
+     "Yusuf",
+     "Ja. Das war wirklich gemein von Tom."
+    ],
+    [
+     "Lina",
+     "Ich finde Marken nicht so wichtig. Meine Jacke ist vom Flohmarkt, und ich mag sie total."
+    ],
+    [
+     "Yusuf",
+     "Ich habe früher auch nur Marken gewollt. Aber ehrlich: Die Sachen sind oft nur teurer, nicht besser."
+    ],
+    [
+     "Lina",
+     "Was hättest du gemacht, wenn du dabei gewesen wärst?"
+    ],
+    [
+     "Yusuf",
+     "Ich glaube, ich hätte gesagt: „Hör auf, das ist nicht lustig.“ Aber das ist schwer, wenn alle lachen."
+    ],
+    [
+     "Lina",
+     "Ja. Man kann auch später etwas tun. Mit der Person reden. Oder mit einer Lehrerin."
+    ],
+    [
+     "Yusuf",
+     "Und es gibt das Kinder- und Jugendtelefon. Die Nummer ist eins eins sechs, eins eins eins. Das ist kostenlos."
+    ]
+   ]
+  },
+  "de4-06l": {
+   "titel": "Ein Samstag in Luxemburg-Stadt",
+   "art": "lesen",
+   "lektion": 6,
+   "dauer": 59.0,
+   "text": [
+    [
+     "",
+     "Ein Samstag in Luxemburg-Stadt"
+    ],
+    [
+     "",
+     "Letzten Samstag sind Chloe und ich mit dem Bus nach Luxemburg-Stadt gefahren. Wir wollten ein Geburtstagsgeschenk für Mia kaufen, denn sie wird nächste Woche 14."
+    ],
+    [
+     "",
+     "Zuerst sind wir in eine Buchhandlung gegangen, weil Mia Mangas liebt. Leider gab es den neuen Band noch nicht. Dann haben wir einen Laden für Bastelsachen gefunden."
+    ],
+    [
+     "",
+     "Dort hat uns eine Verkäuferin beraten. Wir haben ein Set für Armbänder gekauft – mit bunten Perlen. Es war billiger als ein Manga und viel kreativer!"
+    ],
+    [
+     "",
+     "Danach hatten wir Hunger. Wir haben auf dem Markt Waffeln gegessen und Musik von einer Straßenband gehört. Am Ende sind wir um 17 Uhr müde, aber glücklich nach Hause gefahren."
+    ],
+    [
+     "",
+     "Mein Tipp: Macht vorher eine Liste und legt einen Betrag fest. Sonst kauft man zu viel!"
+    ]
+   ]
+  },
+  "de4-06h": {
+   "titel": "Können Sie uns beraten?",
+   "art": "hoeren",
+   "lektion": 6,
+   "dauer": 53.4,
+   "text": [
+    [
+     "Verkäuferin",
+     "Hallo ihr zwei! Sucht ihr etwas Bestimmtes?"
+    ],
+    [
+     "Amira",
+     "Ja, ein Geschenk für eine Freundin. Sie wird 14. Können Sie uns beraten?"
+    ],
+    [
+     "Verkäuferin",
+     "Gern. Was macht sie gern?"
+    ],
+    [
+     "Chloe",
+     "Sie liest gern und sie ist sehr kreativ. Sie zeichnet viel."
+    ],
+    [
+     "Verkäuferin",
+     "Wie viel möchtet ihr ausgeben?"
+    ],
+    [
+     "Amira",
+     "Höchstens zwanzig Euro."
+    ],
+    [
+     "Verkäuferin",
+     "Dann habe ich zwei Ideen: ein Skizzenbuch mit Stiften für achtzehn Euro oder ein Set für Armbänder für fünfzehn Euro."
+    ],
+    [
+     "Chloe",
+     "Was ist beliebter?"
+    ],
+    [
+     "Verkäuferin",
+     "Das Armband-Set. Damit kann man auch Armbänder für Freunde machen."
+    ],
+    [
+     "Amira",
+     "Super, das nehmen wir. Können Sie es als Geschenk einpacken?"
+    ],
+    [
+     "Verkäuferin",
+     "Natürlich, das ist gratis."
+    ]
+   ]
+  },
+  "de4-07l": {
+   "titel": "Kaufen – Verkaufen – Tauschen",
+   "art": "lesen",
+   "lektion": 7,
+   "dauer": 72.5,
+   "text": [
+    [
+     "",
+     "Kaufen – Verkaufen – Tauschen"
+    ],
+    [
+     "",
+     "Skateboard zu verkaufen. Gebr. Skateboard, 80 cm, schwarz, sehr guter Zustand. Ist mir zu klein geworden. NP 90 €, jetzt 35 € VB. Lio, Tel. über das Jugendhaus-Team."
+    ],
+    [
+     "",
+     "Suche: Fahrradhelm. Suche einen Fahrradhelm, Größe M, gern in Rot oder Blau. Zahle bis 15 €. Melde dich bei Jana (7P1) oder schreib einen Zettel ins Fach."
+    ],
+    [
+     "",
+     "Tausche Comics. Ich habe 12 Comics (Abenteuer, Fantasy) und möchte sie gegen andere Comics oder Mangas tauschen. Kein Geld nötig! Ben, 7P2."
+    ],
+    [
+     "",
+     "🛡️ Sicher kaufen und verkaufen. Trefft euch an einem öffentlichen Ort, zum Beispiel im Jugendhaus. Nehmt eine erwachsene Person mit. Gebt keine Adresse und kein Geld im Voraus. Und: Seht euch die Sache genau an, bevor ihr bezahlt."
+    ]
+   ]
+  },
+  "de4-07h": {
+   "titel": "Ist das Skateboard noch da?",
+   "art": "hoeren",
+   "lektion": 7,
+   "dauer": 48.6,
+   "text": [
+    [
+     "Tom",
+     "Hi Lio! Ist das Skateboard aus deiner Anzeige noch da?"
+    ],
+    [
+     "Lio",
+     "Ja! Hier ist es. Schau es dir an."
+    ],
+    [
+     "Tom",
+     "Es sieht gut aus. Die Rollen sind fast neu. Aber hier ist ein Kratzer."
+    ],
+    [
+     "Lio",
+     "Ja, der ist klein. Man sieht ihn kaum."
+    ],
+    [
+     "Tom",
+     "Du schreibst fünfunddreißig Euro VB. Würdest du es für dreißig verkaufen?"
+    ],
+    [
+     "Lio",
+     "Hm … zweiunddreißig. Und ich gebe dir noch neue Griptape-Streifen dazu."
+    ],
+    [
+     "Tom",
+     "Abgemacht! Ich habe das Geld dabei."
+    ],
+    [
+     "Betreuerin",
+     "Super, dass ihr das hier im Jugendhaus macht. Gebt euch die Hand – dann ist der Kauf fair."
+    ],
+    [
+     "Lio",
+     "Danke, Tom. Viel Spaß damit!"
+    ],
+    [
+     "Tom",
+     "Danke! Ich probiere es gleich draußen aus."
+    ]
+   ]
+  },
+  "de4-08l": {
+   "titel": "Kauf mich! – Drei Werbungen",
+   "art": "lesen",
+   "lektion": 8,
+   "dauer": 45.5,
+   "text": [
+    [
+     "",
+     "Kauf mich! – Drei Werbungen"
+    ],
+    [
+     "",
+     "⚡ ZAPP Energy – NUR HEUTE 2 für 1! Mehr Power für Schule und Sport! Alle coolen Leute trinken ZAPP. Kauf jetzt – morgen ist das Angebot weg!"
+    ],
+    [
+     "",
+     "📱 Handyhülle „Glitzer“ – 9,99 €. Deine Hülle schützt dein Handy und macht es zum Star. GRATIS dazu: ein Glitzer-Sticker. Nur solange der Vorrat reicht!"
+    ],
+    [
+     "",
+     "🍎 Apfelchips „Knusper“ Aus Äpfeln aus Luxemburg, ohne Zucker. 100 g kosten 2,50 €. Schmecken knusprig – und sind ein guter Snack für die Pause."
+    ]
+   ]
+  },
+  "de4-08h": {
+   "titel": "Jetzt kommt Werbung!",
+   "art": "hoeren",
+   "lektion": 8,
+   "dauer": 51.4,
+   "text": [
+    [
+     "Werbung1",
+     "Du willst der Star im Team sein? Dann brauchst du die neuen Turnschuhe „Blitz“! Nur diese Woche zwanzig Prozent billiger. Lauf los – bevor sie weg sind!"
+    ],
+    [
+     "Werbung2",
+     "Fahrradladen Mersch: Wir reparieren dein Fahrrad schnell und günstig. Ein Check kostet zehn Euro. Montag bis Samstag geöffnet."
+    ],
+    [
+     "Werbung3",
+     "Spiele das neue Handyspiel „Drachenland“ – gratis! Für noch mehr Spaß: Kauf dir Edelsteine im Spiel!"
+    ],
+    [
+     "Sam",
+     "Das Spiel ist gratis? Cool!"
+    ],
+    [
+     "Lea",
+     "Gratis zum Herunterladen. Aber dann soll man Edelsteine kaufen. Das kann teuer werden."
+    ],
+    [
+     "Sam",
+     "Stimmt. Und die Turnschuhe – „Star im Team“, haha. Mit Schuhen wird man nicht besser."
+    ],
+    [
+     "Lea",
+     "Am ehrlichsten war der Fahrradladen. Preis, Öffnungszeiten, fertig."
+    ]
+   ]
+  }
+ }
+}

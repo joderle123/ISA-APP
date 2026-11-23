@@ -1,0 +1,486 @@
+{
+ "modul": "sp5",
+ "titel": {
+  "de": "Rückschlagspiele",
+  "fr": "Sports de raquette"
+ },
+ "sprache": "de",
+ "spuren": {
+  "sp5-01l": {
+   "titel": "Griff und Grundschläge",
+   "art": "lesen",
+   "lektion": 1,
+   "dauer": 72.6,
+   "text": [
+    [
+     "",
+     "Griff und Grundschläge"
+    ],
+    [
+     "",
+     "Der Griff."
+    ],
+    [
+     "",
+     "Halte den Schläger so, als ob du jemandem die Hand gibst. Die Schlägerfläche steht senkrecht zum Boden. Halte ihn locker – nicht festklammern. Erst im Moment des Schlags drückst du fester zu."
+    ],
+    [
+     "",
+     "Die Grundschläge."
+    ],
+    [
+     "",
+     "Clear: ein hoher, weiter Schlag bis ganz nach hinten ins gegnerische Feld. Damit gewinnst du Zeit. Drop: ein kurzer, weicher Schlag, der knapp hinter dem Netz herunterfällt. Smash: der Schmetterball – von oben, hart und steil nach unten. Gut, wenn der Ball hoch und nah am Netz ist."
+    ],
+    [
+     "",
+     "Vorhand und Rückhand."
+    ],
+    [
+     "",
+     "Auf der Seite deiner Schlaghand spielst du Vorhand, auf der anderen Seite Rückhand. Bei der Rückhand zeigt der Daumen am Griff nach oben, das gibt mehr Kraft."
+    ],
+    [
+     "",
+     "Die Bereitschaftsstellung."
+    ],
+    [
+     "",
+     "Zwischen den Schlägen gehst du zurück in die Mitte deines Feldes. Knie leicht gebeugt, Schläger vor dem Körper. So kommst du an jeden Ball."
+    ]
+   ]
+  },
+  "sp5-01h": {
+   "titel": "Zu zweit am Netz",
+   "art": "hoeren",
+   "lektion": 1,
+   "dauer": 62.6,
+   "text": [
+    [
+     "Frau Diallo",
+     "Jedes Paar hat einen Schläger pro Person und einen Federball. Prüft zuerst den Griff: Hand geben, locker halten."
+    ],
+    [
+     "Frau Diallo",
+     "Erste Übung: Ihr spielt euch den Federball über das Netz zu, ganz ruhig und hoch. Ziel: zehnmal hin und her, ohne dass er auf den Boden fällt."
+    ],
+    [
+     "Lio",
+     "Wir haben nur vier geschafft."
+    ],
+    [
+     "Frau Diallo",
+     "Schlag nicht so fest, Lio. Lieber hoch als hart. Und nach jedem Schlag: zurück in die Mitte."
+    ],
+    [
+     "Frau Diallo",
+     "Zweite Übung: Einer spielt einen hohen Clear nach hinten, der andere läuft zurück und spielt ihn wieder hoch. Fünfmal, dann wechseln."
+    ],
+    [
+     "Frau Diallo",
+     "Dritte Übung: Drop. Ganz weich, knapp hinter das Netz. Der Partner läuft nach vorn."
+    ],
+    [
+     "Lio",
+     "Jetzt hat es achtmal geklappt!"
+    ],
+    [
+     "Frau Diallo",
+     "Super. Nele, du spielst im Rollstuhl im hinteren Feld. Deine Partnerin spielt dir die Bälle so, dass du gut herankommst."
+    ]
+   ]
+  },
+  "sp5-02l": {
+   "titel": "Die wichtigsten Regeln",
+   "art": "lesen",
+   "lektion": 2,
+   "dauer": 68.6,
+   "text": [
+    [
+     "",
+     "Die wichtigsten Regeln"
+    ],
+    [
+     "",
+     "Zählweise: Jeder Ballwechsel bringt einen Punkt – egal, wer aufgeschlagen hat. Ein Satz geht bis 21 Punkte. Steht es 20 : 20, muss man mit zwei Punkten Vorsprung gewinnen – höchstens bis 30. Meistens spielt man zwei Gewinnsätze."
+    ],
+    [
+     "",
+     "Aufschlag: Man schlägt diagonal ins gegenüberliegende Feld. Der Federball wird von unten getroffen, unterhalb der Hüfte. Im Wettkampf muss er beim Treffen tiefer als 1,15 Meter sein. Ist der eigene Punktestand gerade, zum Beispiel 0, 2 oder 4, schlägt man vom rechten Feld auf, bei ungerader Zahl vom linken."
+    ],
+    [
+     "",
+     "Einzel und Doppel: Beim Einzel ist das Feld schmal und lang: Die äußeren Seitenlinien zählen nicht. Beim Doppel ist es breit: Die äußeren Seitenlinien gelten. Beim Doppel-Aufschlag ist aber hinten schon die hintere Aufschlaglinie das Ende."
+    ],
+    [
+     "",
+     "Fehler: Der Federball landet im Aus, fällt auf die eigene Seite, geht unter dem Netz durch, oder ein Spieler berührt das Netz mit dem Schläger oder dem Körper."
+    ],
+    [
+     "",
+     "Der Ball auf der Linie ist gut – also im Feld."
+    ]
+   ]
+  },
+  "sp5-02h": {
+   "titel": "Wo stehe ich?",
+   "art": "hoeren",
+   "lektion": 2,
+   "dauer": 57.5,
+   "text": [
+    [
+     "Sami",
+     "Wo muss ich hin zum Aufschlag? Es steht null zu null."
+    ],
+    [
+     "Chloé",
+     "Null ist gerade. Also stellst du dich ins rechte Feld und schlägst diagonal in mein rechtes Feld."
+    ],
+    [
+     "Sami",
+     "Okay. Und wie hoch darf ich den Ball treffen?"
+    ],
+    [
+     "Chloé",
+     "Unterhalb der Hüfte. Von unten nach oben."
+    ],
+    [
+     "Sami",
+     "Punkt für mich! Eins zu null."
+    ],
+    [
+     "Chloé",
+     "Jetzt hast du einen Punkt, das ist ungerade. Also schlägst du vom linken Feld auf."
+    ],
+    [
+     "Sami",
+     "Dein Ball eben war ganz außen. War der drin oder im Aus?"
+    ],
+    [
+     "Chloé",
+     "Im Einzel zählt die innere Seitenlinie. Der Ball war zwischen den zwei Linien, also im Aus. Punkt für dich – zwei zu null."
+    ],
+    [
+     "Sami",
+     "Puh, so viele Linien. Und im Doppel ist alles anders?"
+    ],
+    [
+     "Chloé",
+     "Fast. Im Doppel ist das Feld breiter. Das lernen wir nächste Woche."
+    ]
+   ]
+  },
+  "sp5-03l": {
+   "titel": "Die wichtigsten Regeln",
+   "art": "lesen",
+   "lektion": 3,
+   "dauer": 68.2,
+   "text": [
+    [
+     "",
+     "Die wichtigsten Regeln"
+    ],
+    [
+     "",
+     "Die Platte ist 2,74 Meter lang und in der Mitte durch ein Netz geteilt. Die weiße Mittellinie braucht man nur im Doppel."
+    ],
+    [
+     "",
+     "Der Aufschlag: Der Ball liegt ruhig auf der flachen, offenen Hand. Man wirft ihn senkrecht mindestens 16 Zentimeter hoch und schlägt ihn, wenn er wieder herunterfällt – hinter der Grundlinie. Der Ball muss zuerst auf der eigenen Seite aufspringen und dann über das Netz auf die andere Seite."
+    ],
+    [
+     "",
+     "Berührt der Ball beim Aufschlag das Netz und springt trotzdem richtig auf, wird der Aufschlag wiederholt."
+    ],
+    [
+     "",
+     "Zählen: Jeder Ballwechsel bringt einen Punkt. Ein Satz geht bis 11 Punkte. Nach zwei Punkten wechselt der Aufschlag. Steht es 10 : 10, wechselt der Aufschlag nach jedem Punkt, und man braucht zwei Punkte Vorsprung."
+    ],
+    [
+     "",
+     "Im Spiel darf der Ball auf jeder Seite nur einmal aufspringen. Man darf ihn nicht direkt aus der Luft schlagen, bevor er auf der eigenen Seite aufgesprungen ist."
+    ]
+   ]
+  },
+  "sp5-03h": {
+   "titel": "Zehn zu zehn",
+   "art": "hoeren",
+   "lektion": 3,
+   "dauer": 68.6,
+   "text": [
+    [
+     "Tom",
+     "Neun zu zehn. Du führst. Ich habe Aufschlag."
+    ],
+    [
+     "Amira",
+     "Achtung, Tom, du hast den Ball nicht hochgeworfen. Der muss senkrecht von der flachen Hand nach oben. Eigentlich wäre das ein Punkt für mich – aber du darfst noch mal."
+    ],
+    [
+     "Tom",
+     "Danke, das ist fair. … Punkt für mich! Zehn zu zehn."
+    ],
+    [
+     "Amira",
+     "Jetzt wird es spannend. Ab zehn zu zehn wechselt der Aufschlag nach jedem Punkt. Ich bin dran."
+    ],
+    [
+     "Amira",
+     "Oh, Netz! Aber er ist richtig drüben aufgesprungen."
+    ],
+    [
+     "Tom",
+     "Beim Aufschlag heißt das: Wiederholung."
+    ],
+    [
+     "Amira",
+     "Gut. … Punkt für mich. Elf zu zehn."
+    ],
+    [
+     "Tom",
+     "Aber du hast noch nicht gewonnen. Du brauchst zwei Punkte Vorsprung. Mein Aufschlag. … Elf zu elf!"
+    ],
+    [
+     "Amira",
+     "Puh! Mein Aufschlag. … Zwölf zu elf. … Und jetzt du, Tom."
+    ],
+    [
+     "Tom",
+     "Daneben. Dreizehn zu elf. Glückwunsch, Amira – das war ein gutes Spiel!"
+    ]
+   ]
+  },
+  "sp5-04l": {
+   "titel": "Fünf Taktik-Regeln",
+   "art": "lesen",
+   "lektion": 4,
+   "dauer": 44.4,
+   "text": [
+    [
+     "",
+     "Fünf Taktik-Regeln"
+    ],
+    [
+     "",
+     "Spiel in die freie Ecke. Schau, wo dein Gegner steht, und spiel den Ball dorthin, wo er nicht ist."
+    ],
+    [
+     "",
+     "Lass den Gegner laufen. Wechsle ab: einmal vorn, einmal hinten, einmal links, einmal rechts. So wird er müde und macht Fehler."
+    ],
+    [
+     "",
+     "Zurück in die Mitte. Nach jedem Schlag gehst du zurück in deine Grundposition. Von dort erreichst du jeden Ball."
+    ],
+    [
+     "",
+     "Sicher statt riskant. Wenn du in Not bist, spiel lieber einen sicheren, hohen Ball. Den harten Schlag hebst du dir für leichte Bälle auf."
+    ],
+    [
+     "",
+     "Ruhig bleiben. Nach einem Fehler kurz durchatmen und an den nächsten Punkt denken. Wer sich ärgert, macht oft gleich den nächsten Fehler."
+    ]
+   ]
+  },
+  "sp5-04h": {
+   "titel": "Satzpause",
+   "art": "hoeren",
+   "lektion": 4,
+   "dauer": 55.0,
+   "text": [
+    [
+     "Yusuf",
+     "Ich verliere nur. Sie ist einfach besser."
+    ],
+    [
+     "Lina",
+     "Warte. Ich habe zugeschaut. Fällt dir etwas auf? Wo steht sie die ganze Zeit?"
+    ],
+    [
+     "Yusuf",
+     "Hm … ziemlich weit hinten."
+    ],
+    [
+     "Lina",
+     "Genau. Und du spielst fast immer hohe Bälle nach hinten. Direkt zu ihr."
+    ],
+    [
+     "Yusuf",
+     "Weil die am sichersten sind."
+    ],
+    [
+     "Lina",
+     "Versuch mal kurze Drops, knapp hinter das Netz. Dann muss sie nach vorn rennen. Und danach wieder einen hohen Ball nach hinten."
+    ],
+    [
+     "Yusuf",
+     "Sie laufen lassen."
+    ],
+    [
+     "Lina",
+     "Und noch etwas: Nach jedem Schlag bleibst du stehen und schaust dem Ball nach. Geh sofort zurück in die Mitte."
+    ],
+    [
+     "Yusuf",
+     "Okay. Drops, laufen lassen, zurück in die Mitte."
+    ],
+    [
+     "Lina",
+     "Und atme durch, wenn ein Punkt danebengeht. Los, du schaffst das!"
+    ]
+   ]
+  },
+  "sp5-05l": {
+   "titel": "Drei Turnierformen",
+   "art": "lesen",
+   "lektion": 5,
+   "dauer": 72.1,
+   "text": [
+    [
+     "",
+     "Drei Turnierformen"
+    ],
+    [
+     "",
+     "Rundlauf."
+    ],
+    [
+     "",
+     "Alle stellen sich in zwei Gruppen an die beiden Enden der Tischtennisplatte. Wer den Ball geschlagen hat, läuft um die Platte auf die andere Seite und stellt sich hinten an. Wer einen Fehler macht, verliert ein Leben. Nach drei Fehlern ist man draußen – oder macht eine Zusatzaufgabe und darf wieder mitspielen."
+    ],
+    [
+     "",
+     "Das Kaiserspiel."
+    ],
+    [
+     "",
+     "Es gibt mehrere Platten oder Felder, von „Kaiser“ bis zum letzten Feld. Man spielt kurze Spiele, zum Beispiel drei Minuten. Wer gewinnt, geht ein Feld nach oben, wer verliert, ein Feld nach unten. So spielen bald alle gegen Gleichstarke."
+    ],
+    [
+     "",
+     "Jeder gegen jeden."
+    ],
+    [
+     "",
+     "Jeder spielt einmal gegen jeden anderen. Für einen Sieg gibt es zwei Punkte, für ein Unentschieden einen. Die Ergebnisse trägt man in eine Tabelle ein. Bei vier Personen gibt es sechs Spiele, bei fünf schon zehn."
+    ],
+    [
+     "",
+     "Bei allen Formen gilt: ehrlich zählen, Ergebnisse gleich aufschreiben, und nach dem Spiel die Hand geben."
+    ]
+   ]
+  },
+  "sp5-05h": {
+   "titel": "Das Kaiserturnier",
+   "art": "hoeren",
+   "lektion": 5,
+   "dauer": 49.7,
+   "text": [
+    [
+     "Noah",
+     "Wir haben fünf Platten. Platte eins ist die Kaiserplatte, Platte fünf ist ganz unten."
+    ],
+    [
+     "Mia",
+     "Jeder spielt drei Minuten. Wer nach drei Minuten mehr Punkte hat, gewinnt."
+    ],
+    [
+     "Noah",
+     "Der Gewinner geht eine Platte nach oben, Richtung Kaiser. Der Verlierer geht eine Platte nach unten."
+    ],
+    [
+     "Mia",
+     "Wer auf der Kaiserplatte gewinnt, bleibt dort. Wer auf Platte fünf verliert, bleibt auch dort."
+    ],
+    [
+     "Noah",
+     "Ich pfeife den Start und das Ende. Steht es unentschieden, entscheidet der nächste Punkt."
+    ],
+    [
+     "Mia",
+     "Und ganz wichtig: Ihr zählt selbst und ehrlich. Bei Streit holt ihr uns."
+    ],
+    [
+     "Noah",
+     "Wer am Ende auf der Kaiserplatte steht, ist Kaiser oder Kaiserin des Tages."
+    ],
+    [
+     "Mia",
+     "Achtung, alle an ihre Platten … und los!"
+    ]
+   ]
+  },
+  "sp5-06l": {
+   "titel": "Para-Badminton und Para-Tischtennis",
+   "art": "lesen",
+   "lektion": 6,
+   "dauer": 54.6,
+   "text": [
+    [
+     "",
+     "Para-Badminton und Para-Tischtennis"
+    ],
+    [
+     "",
+     "Bei den Paralympics treten Sportlerinnen und Sportler mit Behinderungen an. Tischtennis ist dort schon lange dabei, Badminton seit den Spielen von Tokio 2020, die 2021 stattfanden."
+    ],
+    [
+     "",
+     "Beim Para-Badminton im Rollstuhl ist das Feld kleiner: Man spielt im Einzel nur auf einer Hälfte der Breite, und der vordere Teil am Netz zählt nicht. Bei manchen Klassen spielen Menschen stehend, zum Beispiel mit einer Prothese."
+    ],
+    [
+     "",
+     "Beim Para-Tischtennis im Rollstuhl gelten fast die gleichen Regeln. Eine Besonderheit: Beim Aufschlag muss der Ball über die Grundlinie der anderen Seite gehen, nicht über die Seitenlinie."
+    ],
+    [
+     "",
+     "Für ein Schulturnier kann man eigene Regeln erfinden: zum Beispiel ein kleineres Feld, mehr Zeit, einen größeren Ball oder ein Team aus zwei Personen. Wichtig ist, dass das Spiel für alle spannend bleibt."
+    ]
+   ]
+  },
+  "sp5-06h": {
+   "titel": "Wie spielen alle mit?",
+   "art": "hoeren",
+   "lektion": 6,
+   "dauer": 61.8,
+   "text": [
+    [
+     "Lio",
+     "Wir machen ein Doppel-Turnier. Jedes Team hat zwei Personen. Was brauchen wir?"
+    ],
+    [
+     "Nele",
+     "Erst mal Regeln, damit ich mitspielen kann. Im Rollstuhl komme ich schlecht an Bälle ganz vorn am Netz."
+    ],
+    [
+     "Lio",
+     "Wie beim Para-Badminton? Der vordere Teil zählt in deiner Hälfte nicht?"
+    ],
+    [
+     "Nele",
+     "Genau. Und mein Partner deckt vorn ab. Dann ist es für alle fair."
+    ],
+    [
+     "Lio",
+     "Gut. Wie viele Teams haben wir?"
+    ],
+    [
+     "Nele",
+     "Zwölf Leute, also sechs Teams. Bei „Jeder gegen jeden“ wären das fünfzehn Spiele. Zu viele für eine Doppelstunde."
+    ],
+    [
+     "Lio",
+     "Dann machen wir zwei Gruppen mit je drei Teams. Das sind drei Spiele pro Gruppe. Danach spielen die Gruppensieger das Finale."
+    ],
+    [
+     "Nele",
+     "Super. Und wir brauchen Schiedsrichter, eine Ergebnistafel und jemanden, der die Zeit nimmt."
+    ],
+    [
+     "Lio",
+     "Die Teams, die gerade nicht spielen, übernehmen das. Ich mache die Tabelle."
+    ]
+   ]
+  }
+ }
+}

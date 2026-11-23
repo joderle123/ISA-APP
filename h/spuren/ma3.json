@@ -1,0 +1,614 @@
+{
+ "modul": "ma3",
+ "titel": {
+  "de": "Dezimalzahlen, Fläche, Temperatur und Statistik",
+  "fr": "Nombres décimaux, aire, température et statistique"
+ },
+ "sprache": "de",
+ "spuren": {
+  "ma3-01l": {
+   "titel": "Ungefähr wie viel?",
+   "art": "lesen",
+   "lektion": 1,
+   "dauer": 100.4,
+   "text": [
+    [
+     "",
+     "Ungefähr wie viel?"
+    ],
+    [
+     "",
+     "Runden. Runden heißt, eine Zahl durch eine nahe, glatte Zahl zu ersetzen. Entscheidend ist die erste Ziffer, die wegfällt: 0, 1, 2, 3, 4 → abrunden (die Stelle bleibt); 5, 6, 7, 8, 9 → aufrunden (die Stelle wird um 1 größer)."
+    ],
+    [
+     "",
+     "1. Auf welche Stelle runden?. „Auf die Einheit runden\" heißt: bis zur ganzen Zahl. Alles hinter dem Komma fällt weg. Beispiel: 7,4 → gerundet auf die Einheit wird eine ganze Zahl (7 oder 8)."
+    ],
+    [
+     "",
+     "2. Die entscheidende Ziffer. Schau nur auf die erste Ziffer nach dem Komma. Sie sagt, ob du auf- oder abrundest. Beispiel: In 7,4 ist die entscheidende Ziffer die 4."
+    ],
+    [
+     "",
+     "3. Die Regel: 0–4 ab, 5–9 auf. Ist die entscheidende Ziffer 0 bis 4 → abrunden. Ist sie 5 bis 9 → aufrunden. Beispiel: 7,4 ≈ 7 (4 → ab). 7,6 ≈ 8 (6 → auf). Die 5 rundet immer auf: 7,5 ≈ 8."
+    ],
+    [
+     "",
+     "4. Das Zeichen ≈. Beim Runden ist das Ergebnis nicht genau gleich, sondern ungefähr. Deshalb schreibt man ≈ statt =. Beispiel: 4,87 ≈ 5."
+    ]
+   ]
+  },
+  "ma3-01h": {
+   "titel": "Reichen 20 Euro?",
+   "art": "hoeren",
+   "lektion": 1,
+   "dauer": 48.0,
+   "text": [
+    [
+     "Ben",
+     "Ich habe Brot für 4,87 Euro, Käse für 2,35 Euro, Obst für 6,49 Euro und Saft für 3,60 Euro."
+    ],
+    [
+     "Kassiererin",
+     "Hast du genug Geld dabei?"
+    ],
+    [
+     "Ben",
+     "Ich runde schnell: 4,87 sind ungefähr 5 Euro. 2,35 ungefähr 2 Euro. 6,49 ungefähr 6 Euro. Und 3,60 ungefähr 4 Euro."
+    ],
+    [
+     "Kassiererin",
+     "Und zusammen?"
+    ],
+    [
+     "Ben",
+     "5 plus 2 plus 6 plus 4 … ungefähr 17 Euro. Das reicht!"
+    ],
+    [
+     "Kassiererin",
+     "Richtig. Genau sind es 17,31 Euro. Du bekommst 2,69 Euro zurück."
+    ]
+   ]
+  },
+  "ma3-02l": {
+   "titel": "Mehrmals dasselbe",
+   "art": "lesen",
+   "lektion": 2,
+   "dauer": 91.7,
+   "text": [
+    [
+     "",
+     "Mehrmals dasselbe"
+    ],
+    [
+     "",
+     "Dezimalzahl · ganze Zahl. Man rechnet zuerst ohne Komma – wie mit ganzen Zahlen. Danach bekommt das Ergebnis genauso viele Nachkommastellen, wie die Dezimalzahl hatte. Die Anzahl der Stellen hinter dem Komma bleibt gleich."
+    ],
+    [
+     "",
+     "1. Erst ohne Komma rechnen. Lass das Komma weg und multipliziere wie bei ganzen Zahlen. Beispiel: Für 2,4 · 3 rechnest du zuerst 24 · 3 = 72."
+    ],
+    [
+     "",
+     "2. Nachkommastellen zählen. Zähle, wie viele Ziffern in der Dezimalzahl hinter dem Komma stehen. Beispiel: 2,4 hat 1 Nachkommastelle. 2,30 hat 2."
+    ],
+    [
+     "",
+     "3. Komma setzen. Setze im Ergebnis das Komma so, dass es genauso viele Nachkommastellen hat – von rechts abgezählt. Beispiel: 72 mit 1 Nachkommastelle → 7,2. Also 2,4 · 3 = 7,2."
+    ],
+    [
+     "",
+     "4. Überschlag zur Kontrolle. Runde die Dezimalzahl und prüfe, ob das Ergebnis passt. Beispiel: 2,4 ≈ 2; 2 · 3 = 6. Ergebnis 7,2 liegt in der Nähe → passt."
+    ]
+   ]
+  },
+  "ma3-02h": {
+   "titel": "Sechs Eintrittskarten",
+   "art": "hoeren",
+   "lektion": 2,
+   "dauer": 62.9,
+   "text": [
+    [
+     "Kassiererin",
+     "Hallo! Eine Karte für Jugendliche kostet 4,50 Euro."
+    ],
+    [
+     "Jana",
+     "Wir sind sechs. 4,50 mal 6 … zuerst ohne Komma: 450 mal 6 sind 2.700. Dann zwei Stellen nach dem Komma: 27,00. Also 27 Euro."
+    ],
+    [
+     "Kassiererin",
+     "Super gerechnet. Möchtet ihr auch Schwimmnudeln? Eine kostet 1,25 Euro."
+    ],
+    [
+     "Jana",
+     "Drei Stück, bitte. 1,25 mal 3 … 125 mal 3 sind 375, mit zwei Stellen nach dem Komma: 3,75 Euro."
+    ],
+    [
+     "Kassiererin",
+     "Genau. Zusammen sind das 30,75 Euro."
+    ],
+    [
+     "Jana",
+     "Hier sind 35 Euro."
+    ],
+    [
+     "Kassiererin",
+     "Und 4,25 Euro zurück. Viel Spaß!"
+    ]
+   ]
+  },
+  "ma3-03l": {
+   "titel": "Gerecht aufteilen",
+   "art": "lesen",
+   "lektion": 3,
+   "dauer": 92.0,
+   "text": [
+    [
+     "",
+     "Gerecht aufteilen"
+    ],
+    [
+     "",
+     "Dezimalzahl ÷ ganze Zahl. Man teilt wie bei ganzen Zahlen, von links nach rechts. Sobald man beim Teilen das Komma erreicht (also von den Ganzen zu den Zehnteln übergeht), setzt man es an genau dieser Stelle auch im Ergebnis."
+    ],
+    [
+     "",
+     "1. Von links teilen. Beginne wie beim Teilen ganzer Zahlen mit der ersten Ziffer links. Beispiel: 6,9 ÷ 3: zuerst 6 ÷ 3 = 2."
+    ],
+    [
+     "",
+     "2. Komma mitnehmen. Erreichst du im Dividenden das Komma, setzt du es sofort auch oben im Ergebnis. Beispiel: Nach der 6 kommt das Komma – also Komma ins Ergebnis, dann 9 ÷ 3 = 3 → 2,3."
+    ],
+    [
+     "",
+     "3. Rest? Null anhängen. Bleibt ein Rest, hängst du eine 0 an und teilst weiter (das Komma steht ja schon). Beispiel: 4,50 ÷ 3: 4 ÷ 3 = 1 Rest 1; mit der 5 wird es 15 (Zehntel) ÷ 3 = 5; dann 0 ÷ 3 = 0."
+    ],
+    [
+     "",
+     "4. Probe. Multipliziere das Ergebnis wieder mit dem Teiler – es muss der Dividend herauskommen. Beispiel: 1,5 · 3 = 4,5 ✓."
+    ]
+   ]
+  },
+  "ma3-03h": {
+   "titel": "Jeder zahlt gleich viel",
+   "art": "hoeren",
+   "lektion": 3,
+   "dauer": 47.8,
+   "text": [
+    [
+     "Noah",
+     "Die Rechnung ist 38,60 Euro. Wir sind vier."
+    ],
+    [
+     "Mia",
+     "Ich teile: 38 geteilt durch 4 ist 9, Rest 2. Jetzt kommt das Komma. Dann 26 geteilt durch 4 ist 6, Rest 2. Dann 20 geteilt durch 4 ist 5."
+    ],
+    [
+     "Noah",
+     "Also 9,65 Euro für jeden."
+    ],
+    [
+     "Mia",
+     "Probe: 9,65 mal 4 … das sind 38,60. Stimmt!"
+    ],
+    [
+     "Noah",
+     "Und das Wasser für 4,50 Euro teilen nur wir drei, Lea hat Saft getrunken."
+    ],
+    [
+     "Mia",
+     "4,50 geteilt durch 3 sind 1,50 Euro pro Person."
+    ]
+   ]
+  },
+  "ma3-04l": {
+   "titel": "Wie viel Platz?",
+   "art": "lesen",
+   "lektion": 4,
+   "dauer": 115.6,
+   "text": [
+    [
+     "",
+     "Wie viel Platz?"
+    ],
+    [
+     "",
+     "Flächeninhalt. Der Flächeninhalt sagt, wie viel Fläche eine Figur bedeckt – gemessen in Einheitsquadraten (z. B. cm²). Beim Rechteck gilt: Flächeninhalt = Länge · Breite. Beim Quadrat sind alle Seiten gleich: Flächeninhalt = Seite · Seite."
+    ],
+    [
+     "",
+     "1. Fläche ist das Innere. Der Umfang läuft am Rand entlang, der Flächeninhalt füllt das Innere aus. Beispiel: Zaun = Umfang. Rasen im Garten = Fläche."
+    ],
+    [
+     "",
+     "2. Einheitsquadrate zählen. Legt man ein Rechteck mit 1-cm-Kästchen aus, zählt man die Kästchen. Das geht schneller mit der Formel. Beispiel: 6 Kästchen pro Reihe, 4 Reihen → 6 · 4 = 24 Kästchen."
+    ],
+    [
+     "",
+     "3. Die Formel Rechteck. Flächeninhalt eines Rechtecks = Länge · Breite (A = L · B). Beispiel: L = 6 cm, B = 4 cm → A = 6 · 4 = 24 cm²."
+    ],
+    [
+     "",
+     "4. Der Sonderfall Quadrat. Ein Quadrat hat vier gleich lange Seiten. Also: A = Seite · Seite. Beispiel: Seite 5 cm → A = 5 · 5 = 25 cm²."
+    ],
+    [
+     "",
+     "5. Die Einheit cm². Weil man zwei Längen malnimmt, ist die Einheit ein Quadrat: Quadratzentimeter (cm²), Quadratmeter (m²) … Beispiel: cm · cm = cm²."
+    ]
+   ]
+  },
+  "ma3-04h": {
+   "titel": "Wie viele Teppichfliesen?",
+   "art": "hoeren",
+   "lektion": 4,
+   "dauer": 51.5,
+   "text": [
+    [
+     "Herr Becker",
+     "Der Raum ist 6 Meter lang und 4 Meter breit. Wie groß ist die Fläche?"
+    ],
+    [
+     "Lina",
+     "Länge mal Breite: 6 mal 4 sind 24 Quadratmeter."
+    ],
+    [
+     "Herr Becker",
+     "Eine Teppichfliese ist ein Quadrat mit 1 Meter Seitenlänge. Wie viele brauchen wir?"
+    ],
+    [
+     "Lina",
+     "Eine Fliese ist 1 Quadratmeter. Also brauchen wir 24 Fliesen."
+    ],
+    [
+     "Herr Becker",
+     "Eine Fliese kostet 12 Euro."
+    ],
+    [
+     "Lina",
+     "24 mal 12 … das sind 288 Euro."
+    ],
+    [
+     "Herr Becker",
+     "Und die Ecke mit dem Sofa ist ein Quadrat von 2 mal 2 Metern. Da legen wir einen weichen Teppich."
+    ],
+    [
+     "Lina",
+     "2 mal 2 sind 4 Quadratmeter. Dann brauchen wir für den Rest nur 20 Fliesen!"
+    ]
+   ]
+  },
+  "ma3-05l": {
+   "titel": "Von klein bis riesig",
+   "art": "lesen",
+   "lektion": 5,
+   "dauer": 118.7,
+   "text": [
+    [
+     "",
+     "Von klein bis riesig"
+    ],
+    [
+     "",
+     "Flächeneinheiten. Flächen misst man in Quadrat-Einheiten: mm², cm², dm², m² und für große Flächen a (Ar), ha (Hektar), km². Von einer Einheit zur benachbarten ändert sich der Wert immer um den Faktor 100, weil man Länge UND Breite umrechnet."
+    ],
+    [
+     "",
+     "1. Die Leiter der Einheiten. Von klein nach groß: mm² – cm² – dm² – m² – a – ha – km². Beispiel: 1 a (Ar) = 100 m², 1 ha (Hektar) = 100 a."
+    ],
+    [
+     "",
+     "2. Warum · 100 und nicht · 10?. 1 dm sind 10 cm. Ein Quadrat mit 1 dm Seite ist also 10 cm lang UND 10 cm breit: 10 · 10 = 100 kleine Quadrate. Beispiel: 1 dm² = 100 cm²."
+    ],
+    [
+     "",
+     "3. Groß → klein: mal 100. Von einer großen zur benachbarten kleineren Einheit multiplizierst du mit 100. Beispiel: 3 m² = 3 · 100 = 300 dm²."
+    ],
+    [
+     "",
+     "4. Klein → groß: geteilt durch 100. Von klein nach groß teilst du durch 100. Beispiel: 200 cm² = 200 ÷ 100 = 2 dm²."
+    ],
+    [
+     "",
+     "5. Ar und Hektar für Grundstücke. Große Flächen nennt man in Ar und Hektar. Beispiel: 1 ha = 100 a = 10.000 m²."
+    ]
+   ]
+  },
+  "ma3-05h": {
+   "titel": "Zwei Hektar Weizen",
+   "art": "hoeren",
+   "lektion": 5,
+   "dauer": 36.0,
+   "text": [
+    [
+     "Bauer",
+     "Dieses Weizenfeld ist 2 Hektar groß."
+    ],
+    [
+     "Finn",
+     "Wie viele Quadratmeter sind das?"
+    ],
+    [
+     "Bauer",
+     "Ein Hektar sind 10.000 Quadratmeter. Also hat das Feld 20.000 Quadratmeter."
+    ],
+    [
+     "Finn",
+     "Wow! Und der Gemüsegarten?"
+    ],
+    [
+     "Bauer",
+     "Er ist 3 Ar groß. Ein Ar sind 100 Quadratmeter."
+    ],
+    [
+     "Finn",
+     "Dann sind das 300 Quadratmeter."
+    ],
+    [
+     "Bauer",
+     "Richtig. Und der Hühnerstall hat 25 Quadratmeter."
+    ],
+    [
+     "Finn",
+     "Das ist ein Viertel von einem Ar!"
+    ]
+   ]
+  },
+  "ma3-06l": {
+   "titel": "Wärmer oder kälter?",
+   "art": "lesen",
+   "lektion": 6,
+   "dauer": 91.6,
+   "text": [
+    [
+     "",
+     "Wärmer oder kälter?"
+    ],
+    [
+     "",
+     "Temperatur (°C). Die Temperatur misst man in Grad Celsius (°C) mit dem Thermometer. Über null ist es warm (positive Zahlen), unter null kalt (Minusgrade, negative Zahlen). Die 0 °C ist die Grenze – dort gefriert Wasser."
+    ],
+    [
+     "",
+     "1. Das Thermometer als Zahlenstrahl. Die Skala ist ein senkrechter Zahlenstrahl. Oben (über 0) die Plusgrade, unten (unter 0) die Minusgrade. Beispiel: +5 °C liegt über der 0, −3 °C darunter."
+    ],
+    [
+     "",
+     "2. Minusgrade vergleichen. Je tiefer eine Zahl unter 0, desto kälter. −2 °C ist wärmer als −7 °C. Beispiel: −1 °C ist wärmer als −6 °C."
+    ],
+    [
+     "",
+     "3. Temperaturänderung = Schritte. Die Änderung ist die Anzahl der Schritte von der einen zur anderen Temperatur. Wärmer → plus, kälter → minus. Beispiel: Von 4 °C auf 9 °C sind es +5 °C."
+    ],
+    [
+     "",
+     "4. Über die 0 in zwei Teilen. Geht der Weg über die 0, zählst du erst bis 0, dann weiter. Beispiel: Von −3 bis +5: 3 Schritte bis 0, dann 5 → zusammen 8."
+    ]
+   ]
+  },
+  "ma3-06h": {
+   "titel": "Frostig am Morgen",
+   "art": "hoeren",
+   "lektion": 6,
+   "dauer": 31.1,
+   "text": [
+    [
+     "Wettersprecher",
+     "Guten Morgen, hier ist das Wetter für heute. Im Norden ist es frostig: In Clervaux haben wir jetzt minus 4 Grad. Am Mittag steigt die Temperatur auf plus 3 Grad."
+    ],
+    [
+     "Wettersprecher",
+     "In Luxemburg-Stadt ist es jetzt minus 1 Grad. Mittags wird es 5 Grad warm."
+    ],
+    [
+     "Wettersprecher",
+     "Im Süden, in Remich an der Mosel, haben wir jetzt 0 Grad. Am Mittag sind es angenehme 7 Grad."
+    ],
+    [
+     "Wettersprecher",
+     "Heute Nacht wird es wieder kalt: In Clervaux sinkt die Temperatur auf minus 6 Grad. Fahren Sie vorsichtig!"
+    ]
+   ]
+  },
+  "ma3-07l": {
+   "titel": "Ein Bild statt vieler Zahlen",
+   "art": "lesen",
+   "lektion": 7,
+   "dauer": 76.1,
+   "text": [
+    [
+     "",
+     "Ein Bild statt vieler Zahlen"
+    ],
+    [
+     "",
+     "Balkendiagramm. Ein Balkendiagramm zeigt Daten als Balken: je höher der Balken, desto größer der Wert. Die waagerechte Achse nennt die Kategorien (was gezählt wird), die senkrechte Achse die Anzahl (Häufigkeit)."
+    ],
+    [
+     "",
+     "1. Die zwei Achsen. Unten (waagerecht) stehen die Kategorien, links (senkrecht) die Anzahl. Beispiel: Unten „Apfel, Banane …\", links 0, 1, 2, 3 …"
+    ],
+    [
+     "",
+     "2. Einen Wert ablesen. Suche die Kategorie, folge dem Balken nach oben und lies an der Anzahl-Achse ab. Beispiel: Der Balken „Apfel\" reicht bis 6 → 6 Kinder."
+    ],
+    [
+     "",
+     "3. Vergleichen. Der höchste Balken ist am größten, der niedrigste am kleinsten. Beispiel: Apfel (6) ist am beliebtesten, Birne (2) am wenigsten."
+    ],
+    [
+     "",
+     "4. Die Gesamtzahl. Zählt man alle Balken zusammen, erhält man die Gesamtzahl. Beispiel: 6 + 4 + 2 + 5 = 17 Kinder insgesamt."
+    ]
+   ]
+  },
+  "ma3-07h": {
+   "titel": "Welcher Sport?",
+   "art": "hoeren",
+   "lektion": 7,
+   "dauer": 31.1,
+   "text": [
+    [
+     "Yusuf",
+     "Ich habe 24 Schüler gefragt: Welchen Sport machst du am liebsten?"
+    ],
+    [
+     "Yusuf",
+     "Fußball haben 8 Schüler gewählt. Basketball 5 Schüler. Schwimmen 3 Schüler."
+    ],
+    [
+     "Frau Kremer",
+     "Und Tanzen?"
+    ],
+    [
+     "Yusuf",
+     "Tanzen haben 6 Schüler gewählt. Und 2 Schüler fahren am liebsten Skateboard."
+    ],
+    [
+     "Frau Kremer",
+     "Danke, Yusuf. Was ist also der beliebteste Sport?"
+    ],
+    [
+     "Yusuf",
+     "Fußball, mit 8 Stimmen. Am wenigsten beliebt ist Skateboard mit 2 Stimmen."
+    ]
+   ]
+  },
+  "ma3-08l": {
+   "titel": "Ordentlich zählen",
+   "art": "lesen",
+   "lektion": 8,
+   "dauer": 81.7,
+   "text": [
+    [
+     "",
+     "Ordentlich zählen"
+    ],
+    [
+     "",
+     "Häufigkeit und Strichliste. Die Häufigkeit sagt, wie oft ein Wert vorkommt. Mit einer Strichliste zählt man ordentlich: für jeden Fall ein Strich, jeder fünfte Strich quer durch die vier davor (Bündel zu 5). So behält man den Überblick."
+    ],
+    [
+     "",
+     "1. Für jeden Fall ein Strich. Jedes Mal, wenn ein Wert vorkommt, machst du einen Strich in seine Zeile. Beispiel: Würfelst du eine 3, kommt ein Strich in die Zeile „3\"."
+    ],
+    [
+     "",
+     "2. Bündel zu 5. Den fünften Strich ziehst du quer über die vier davor. So bildest du Fünferpakete, die man leicht zählt. Beispiel: ||||̶ = 5."
+    ],
+    [
+     "",
+     "3. Häufigkeit ablesen. Die Häufigkeit ist die Anzahl der Striche in einer Zeile. Beispiel: Ein Fünferbündel und 2 Striche → Häufigkeit 7."
+    ],
+    [
+     "",
+     "4. Kontrolle: alle zusammen. Alle Häufigkeiten addiert ergeben die Gesamtzahl der Daten. Beispiel: 3 + 5 + 2 + 4 + 3 + 3 = 20 Würfe."
+    ]
+   ]
+  },
+  "ma3-08h": {
+   "titel": "Autos, Busse, Fahrräder",
+   "art": "hoeren",
+   "lektion": 8,
+   "dauer": 35.0,
+   "text": [
+    [
+     "Sami",
+     "Bei den Autos haben wir vier Fünferbündel und drei einzelne Striche."
+    ],
+    [
+     "Nele",
+     "Das sind 4 mal 5 plus 3, also 23 Autos."
+    ],
+    [
+     "Sami",
+     "Bei den Bussen: ein Fünferbündel und ein Strich."
+    ],
+    [
+     "Nele",
+     "Also 6 Busse. Bei den Fahrrädern haben wir zwei Bündel und vier Striche."
+    ],
+    [
+     "Sami",
+     "Das sind 14 Fahrräder! Und Lastwagen: nur zwei Striche."
+    ],
+    [
+     "Nele",
+     "Zusammen sind es 23 plus 6 plus 14 plus 2 … 45 Fahrzeuge in 15 Minuten."
+    ]
+   ]
+  },
+  "ma3-09l": {
+   "titel": "Gerecht ausgleichen",
+   "art": "lesen",
+   "lektion": 9,
+   "dauer": 70.5,
+   "text": [
+    [
+     "",
+     "Gerecht ausgleichen"
+    ],
+    [
+     "",
+     "Mittelwert (Durchschnitt). Der Mittelwert verteilt alle Werte gleichmäßig – als ob jeder gleich viel hätte. Man rechnet: alle Werte addieren (Summe), dann durch die Anzahl der Werte teilen."
+    ],
+    [
+     "",
+     "1. Die Idee: ausgleichen. Der Mittelwert ist die Zahl, die jeder hätte, wenn man alles gleichmäßig verteilt. Beispiel: 4, 6, 8 → gerecht verteilt je 6."
+    ],
+    [
+     "",
+     "2. Schritt 1: addieren. Zähle alle Werte zusammen zur Summe. Beispiel: 4 + 6 + 8 = 18."
+    ],
+    [
+     "",
+     "3. Schritt 2: durch die Anzahl teilen. Teile die Summe durch die Anzahl der Werte. Beispiel: 3 Werte → 18 ÷ 3 = 6."
+    ],
+    [
+     "",
+     "4. Kontrolle. Der Mittelwert liegt immer zwischen dem kleinsten und dem größten Wert. Beispiel: 6 liegt zwischen 4 und 8 → passt."
+    ]
+   ]
+  },
+  "ma3-09h": {
+   "titel": "Im Durchschnitt 11 Punkte",
+   "art": "hoeren",
+   "lektion": 9,
+   "dauer": 41.7,
+   "text": [
+    [
+     "Trainer",
+     "Amira, du hast in vier Spielen so viele Punkte gemacht: 12, 8, 15 und 9."
+    ],
+    [
+     "Amira",
+     "Wie viele Punkte mache ich im Durchschnitt?"
+    ],
+    [
+     "Trainer",
+     "Zuerst addieren wir: 12 plus 8 plus 15 plus 9."
+    ],
+    [
+     "Amira",
+     "Das sind 44 Punkte."
+    ],
+    [
+     "Trainer",
+     "Dann teilen wir durch die Anzahl der Spiele, also durch 4."
+    ],
+    [
+     "Amira",
+     "44 geteilt durch 4 sind 11. Im Durchschnitt mache ich 11 Punkte pro Spiel!"
+    ],
+    [
+     "Trainer",
+     "Genau. Und wenn du im nächsten Spiel 16 Punkte machst?"
+    ],
+    [
+     "Amira",
+     "Dann sind es 60 Punkte in 5 Spielen, also 12 im Durchschnitt."
+    ]
+   ]
+  }
+ }
+}

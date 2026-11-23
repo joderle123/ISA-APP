@@ -1,0 +1,58 @@
+{
+ "modul": "tbkk",
+ "titel": {
+  "de": "Toolbox · Arbeitsblätter KK",
+  "fr": "Toolbox · fiches KK"
+ },
+ "sprache": "de",
+ "spuren": {
+  "tbkk-09a": {
+   "titel": "KK-09 · Ich finde es im Text – Im Park",
+   "art": "lesen",
+   "lektion": 9,
+   "dauer": 17.7,
+   "text": [
+    [
+     "",
+     "Im Park"
+    ],
+    [
+     "",
+     "Lina geht mit ihrem Hund Bello in den Park. Dort trifft sie ihren Freund Tom. Tom hat einen roten Ball dabei. Die Kinder werfen den Ball. Bello holt ihn immer wieder zurück."
+    ]
+   ]
+  },
+  "tbkk-10a": {
+   "titel": "KK-10 · Die Einladung – Einladung",
+   "art": "lesen",
+   "lektion": 10,
+   "dauer": 20.0,
+   "text": [
+    [
+     "",
+     "Einladung"
+    ],
+    [
+     "",
+     "Liebe Mia, ich lade dich zu meinem Geburtstag ein. Wir feiern am Samstag um 15 Uhr. Die Feier ist bei mir zu Hause, Gartenweg 4. Bitte bring Hausschuhe mit. Dein Ben"
+    ]
+   ]
+  },
+  "tbkk-11a": {
+   "titel": "KK-11 · Meine Lesehilfen – Am Kiosk",
+   "art": "lesen",
+   "lektion": 11,
+   "dauer": 15.2,
+   "text": [
+    [
+     "",
+     "Am Kiosk"
+    ],
+    [
+     "",
+     "Heute kaufe ich mir ein Eis. Ich nehme Schokolade und Zitrone. Das Eis kostet zwei Euro. Es schmeckt sehr lecker."
+    ]
+   ]
+  }
+ }
+}

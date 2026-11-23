@@ -1,0 +1,546 @@
+{
+ "modul": "fr3",
+ "titel": {
+  "de": "Wohlfühlen und Ferien",
+  "fr": "Bien-être et vacances"
+ },
+ "sprache": "fr",
+ "spuren": {
+  "fr3-01l": {
+   "titel": "Qu’est-ce qu’on fait cette année ?",
+   "art": "lesen",
+   "lektion": 1,
+   "dauer": 59.5,
+   "text": [
+    [
+     "",
+     "Qu’est-ce qu’on fait cette année ?"
+    ],
+    [
+     "",
+     "Maison des jeunes – Nos activités de l’année. Basket : mardi, de 17 h à 18 h 30, au gymnase. Danse hip-hop : mercredi, de 14 h à 15 h 30, salle 2. Échecs : jeudi, de 16 h à 17 h, à la bibliothèque. Pour débutants. Atelier vidéo : samedi, de 10 h à 12 h. On fait de petits films. Inscription gratuite à l’accueil · Tél. 23 45 67."
+    ],
+    [
+     "",
+     "Message de Sami à Inès. Salut ! Tu as vu le programme ? Moi, je vais faire de la danse hip-hop le mercredi. Tu viens avec moi ? Ou tu préfères les échecs ?"
+    ],
+    [
+     "",
+     "Réponse d’Inès. Bonne idée, mais le mercredi, je fais de la natation au club. Je préfère l’atelier vidéo le samedi. J’adore faire des films avec mon portable !"
+    ]
+   ]
+  },
+  "fr3-01h": {
+   "titel": "Et toi, qu’est-ce que tu fais ?",
+   "art": "hoeren",
+   "lektion": 1,
+   "dauer": 47.6,
+   "text": [
+    [
+     "Chloé",
+     "Bonjour ! Aujourd’hui, on parle des loisirs. Luca, tu fais quel sport ?"
+    ],
+    [
+     "Luca",
+     "Je fais de l’escalade. Je vais à la salle d’escalade deux fois par semaine, le lundi et le vendredi."
+    ],
+    [
+     "Chloé",
+     "Ce n’est pas trop difficile ?"
+    ],
+    [
+     "Luca",
+     "Si, un peu ! Mais j’adore ça."
+    ],
+    [
+     "Chloé",
+     "Et toi, Mia ?"
+    ],
+    [
+     "Mia",
+     "Moi, je ne fais pas de sport. Je joue du piano et je lis beaucoup. Le week-end, je lis des bandes dessinées dans mon lit !"
+    ],
+    [
+     "Chloé",
+     "Et toi, Yusuf, où est-ce que tu joues au foot ?"
+    ],
+    [
+     "Yusuf",
+     "Je joue au club de Differdange. On s’entraîne le mercredi et on a des matchs le dimanche."
+    ],
+    [
+     "Chloé",
+     "Merci à vous ! Et vous, chers auditeurs, quel est votre loisir préféré ?"
+    ]
+   ]
+  },
+  "fr3-02l": {
+   "titel": "Ce soir à la télé",
+   "art": "lesen",
+   "lektion": 2,
+   "dauer": 53.0,
+   "text": [
+    [
+     "",
+     "Ce soir à la télé"
+    ],
+    [
+     "",
+     "Ce soir à la télé – vendredi. 18 h 30 · TV Jeunes : « Les Petits Pirates », dessin animé. 19 h 00 · Info 24 : le journal télévisé. 19 h 30 · Monde Nature : « La vie des loups », documentaire. 20 h 15 · TV Jeunes : « Qui sera le champion ? », jeu. 20 h 30 · Ciné Soir : « Le Phare des étoiles », film d’aventure, à partir de 10 ans."
+    ],
+    [
+     "",
+     "Courrier des lecteurs – l’avis de Léa. J’ai vu « Le Phare des étoiles » au cinéma. C’est l’histoire de deux enfants qui cherchent un trésor. Le film est passionnant et un peu triste à la fin. Les images sont magnifiques ! Je le conseille à tout le monde. Ma note : 4 étoiles sur 5."
+    ]
+   ]
+  },
+  "fr3-02h": {
+   "titel": "Tu préfères quelle émission ?",
+   "art": "hoeren",
+   "lektion": 2,
+   "dauer": 46.4,
+   "text": [
+    [
+     "Chloé",
+     "Alors, on regarde quoi ce soir ?"
+    ],
+    [
+     "Ben",
+     "Il y a un documentaire sur les loups à sept heures et demie. J’adore les animaux !"
+    ],
+    [
+     "Mia",
+     "Bof, les documentaires, c’est ennuyeux. Moi, je préfère les jeux. « Qui sera le champion ? », c’est drôle !"
+    ],
+    [
+     "Chloé",
+     "Et le film, « Le Phare des étoiles » ? Léa dit qu’il est passionnant."
+    ],
+    [
+     "Ben",
+     "Il commence à quelle heure ?"
+    ],
+    [
+     "Chloé",
+     "À huit heures et demie."
+    ],
+    [
+     "Mia",
+     "D’accord, mais je ne veux pas regarder un film qui fait peur !"
+    ],
+    [
+     "Chloé",
+     "Non, ce n’est pas un film d’horreur. C’est un film d’aventure."
+    ],
+    [
+     "Ben",
+     "Alors, on regarde le documentaire, et après, le film ?"
+    ],
+    [
+     "Mia",
+     "D’accord ! Et on fait du pop-corn !"
+    ]
+   ]
+  },
+  "fr3-03l": {
+   "titel": "J’ai souvent mal à la tête",
+   "art": "lesen",
+   "lektion": 3,
+   "dauer": 43.4,
+   "text": [
+    [
+     "",
+     "J’ai souvent mal à la tête"
+    ],
+    [
+     "",
+     "Question de Nina, 12 ans. Bonjour ! J’ai souvent mal à la tête, surtout le soir. Et je suis souvent fatiguée à l’école. Qu’est-ce que je dois faire ?"
+    ],
+    [
+     "",
+     "La réponse de l’infirmière, Mme Morel. Chère Nina, le mal de tête a beaucoup de causes. Voici quelques conseils. Bois assez d’eau pendant la journée. Dors environ neuf heures par nuit. Le soir, ne regarde pas trop ton portable. Fais des pauses et bouge : marche, cours, fais du vélo. Si tu as souvent mal, parle à un adulte de confiance et va chez le médecin."
+    ]
+   ]
+  },
+  "fr3-03h": {
+   "titel": "Où est-ce que tu as mal ?",
+   "art": "hoeren",
+   "lektion": 3,
+   "dauer": 47.8,
+   "text": [
+    [
+     "Sami",
+     "Bonjour, Madame. Mon copain est tombé pendant le basket."
+    ],
+    [
+     "Mme Morel",
+     "Oh ! Assieds-toi ici. Qu’est-ce qui ne va pas ? Où est-ce que tu as mal ?"
+    ],
+    [
+     "Yusuf",
+     "J’ai mal au genou. Et un peu à la main."
+    ],
+    [
+     "Mme Morel",
+     "Tu peux bouger la jambe ? Plie le genou… doucement."
+    ],
+    [
+     "Yusuf",
+     "Aïe ! Ça fait mal, mais ça va."
+    ],
+    [
+     "Mme Morel",
+     "Bon, ce n’est pas grave. Je mets de la glace sur ton genou. Reste assis quinze minutes."
+    ],
+    [
+     "Yusuf",
+     "Et le match de vendredi ?"
+    ],
+    [
+     "Mme Morel",
+     "Tu dois te reposer deux ou trois jours. Pas de sport cette semaine ! Et si tu as encore mal, va chez le médecin."
+    ],
+    [
+     "Sami",
+     "Je préviens le professeur de sport !"
+    ],
+    [
+     "Yusuf",
+     "Merci, Sami."
+    ]
+   ]
+  },
+  "fr3-04l": {
+   "titel": "Nos habitudes",
+   "art": "lesen",
+   "lektion": 4,
+   "dauer": 41.2,
+   "text": [
+    [
+     "",
+     "Nos habitudes"
+    ],
+    [
+     "",
+     "Sondage de la classe 7P2 – 22 élèves. Le sommeil : 9 élèves dorment assez, 13 élèves ne dorment pas assez. Le sport : 15 élèves font du sport une fois par semaine ou plus. Les écrans : 5 élèves passent plus de trois heures par jour devant un écran. L’eau : beaucoup d’élèves boivent peu d’eau à l’école."
+    ],
+    [
+     "",
+     "Le conseil de la semaine. Avant de dormir, éteins ton portable : la lumière de l’écran réveille ton cerveau. Après l’école, bouge un peu : une demi-heure de vélo ou de marche, c’est super ! Et n’oublie pas ta bouteille d’eau."
+    ]
+   ]
+  },
+  "fr3-04h": {
+   "titel": "Tu dois dormir plus !",
+   "art": "hoeren",
+   "lektion": 4,
+   "dauer": 54.5,
+   "text": [
+    [
+     "Inès",
+     "Salut Tom ! Ça va ? Tu as l’air fatigué."
+    ],
+    [
+     "Tom",
+     "Je suis super fatigué. Hier, je me suis couché à minuit."
+    ],
+    [
+     "Inès",
+     "À minuit ? Pourquoi ?"
+    ],
+    [
+     "Tom",
+     "Je joue en ligne avec mes copains. Après le dîner, je joue deux ou trois heures."
+    ],
+    [
+     "Inès",
+     "C’est trop ! Tu dois dormir plus. Il faut environ neuf heures de sommeil."
+    ],
+    [
+     "Tom",
+     "Oui, je sais… Mais c’est difficile d’arrêter."
+    ],
+    [
+     "Inès",
+     "Moi, avant de dormir, je laisse mon portable dans la cuisine. Et je lis un peu."
+    ],
+    [
+     "Tom",
+     "Dans la cuisine ? Bonne idée… Et le matin, je n’ai pas faim. Je ne mange rien."
+    ],
+    [
+     "Inès",
+     "Il faut prendre un petit-déjeuner ! Un fruit, du pain… Et après l’école, viens au basket avec moi. Ça fait du bien !"
+    ],
+    [
+     "Tom",
+     "D’accord. Je vais essayer."
+    ]
+   ]
+  },
+  "fr3-05l": {
+   "titel": "Le matin de Luca",
+   "art": "lesen",
+   "lektion": 5,
+   "dauer": 53.7,
+   "text": [
+    [
+     "",
+     "Le matin de Luca"
+    ],
+    [
+     "",
+     "Le réveil sonne à six heures et demie. Luca se réveille, mais il ne se lève pas. Il est trop fatigué. « Encore cinq minutes… », pense-t-il."
+    ],
+    [
+     "",
+     "À sept heures, Luca ouvre les yeux. Oh non ! Il est en retard ! Il se lève très vite. Il se lave en deux minutes et il s’habille. Mais il met son pull à l’envers !"
+    ],
+    [
+     "",
+     "D’abord, il cherche son sac. Ensuite, il boit un verre de jus dans la cuisine. Il n’a pas le temps de se brosser les dents… alors il mâche un chewing-gum."
+    ],
+    [
+     "",
+     "À sept heures vingt, il court à l’arrêt de bus. Le bus part… sans lui ! Luca s’assoit sur le banc et soupire."
+    ],
+    [
+     "",
+     "Ce soir, il se couche à neuf heures. Et demain, il se lève à la première sonnerie. Promis !"
+    ]
+   ]
+  },
+  "fr3-05h": {
+   "titel": "Debout, tout le monde !",
+   "art": "hoeren",
+   "lektion": 5,
+   "dauer": 46.8,
+   "text": [
+    [
+     "M. Laurent",
+     "Bonjour, les garçons ! Debout ! Il est sept heures !"
+    ],
+    [
+     "Tom",
+     "Encore cinq minutes, s’il vous plaît…"
+    ],
+    [
+     "M. Laurent",
+     "Non, Tom ! Tu te lèves maintenant. Le petit-déjeuner est à sept heures et demie."
+    ],
+    [
+     "Sami",
+     "Je me lève ! Je vais à la salle de bains en premier."
+    ],
+    [
+     "M. Laurent",
+     "D’accord. D’abord, vous vous lavez. Ensuite, vous vous habillez. Et n’oubliez pas : vous vous brossez les dents !"
+    ],
+    [
+     "Tom",
+     "On s’habille comment ? Il fait froid dehors ?"
+    ],
+    [
+     "M. Laurent",
+     "Oui, il fait froid. Mettez un pull et des chaussures de marche. Aujourd’hui, on fait une randonnée de dix kilomètres."
+    ],
+    [
+     "Sami",
+     "Dix kilomètres ? Waouh !"
+    ],
+    [
+     "M. Laurent",
+     "Et ce soir, tout le monde se couche à neuf heures et demie !"
+    ]
+   ]
+  },
+  "fr3-06l": {
+   "titel": "Où partir cet été ?",
+   "art": "lesen",
+   "lektion": 6,
+   "dauer": 52.2,
+   "text": [
+    [
+     "",
+     "Où partir cet été ?"
+    ],
+    [
+     "",
+     "Camps d’été pour les 11–14 ans. Camp nature dans les Ardennes · du 15 au 22 juillet. On dort sous la tente, on fait du kayak et des randonnées. Départ en bus de Luxembourg. Stage de voile en Bretagne (France) · du 1er au 8 août. On apprend à faire de la voile sur la mer. Voyage en train. Semaine sport et jeux à Luxembourg-Ville · du 18 au 22 août, de 9 h à 17 h. Foot, basket, escalade. Le soir, on rentre à la maison."
+    ],
+    [
+     "",
+     "Message d’Inès à Léa. Coucou ! En août, je vais aller au Portugal en avion. Mais avant, je vais faire le camp nature dans les Ardennes ! Tu viens avec moi ? On va dormir sous la tente !"
+    ]
+   ]
+  },
+  "fr3-06h": {
+   "titel": "Qu’est-ce que tu vas faire cet été ?",
+   "art": "hoeren",
+   "lektion": 6,
+   "dauer": 46.1,
+   "text": [
+    [
+     "Léa",
+     "Enfin les vacances ! Yusuf, qu’est-ce que tu vas faire cet été ?"
+    ],
+    [
+     "Yusuf",
+     "Je vais aller en Turquie, chez mes grands-parents. On va partir en voiture. C’est très long : trois jours de voyage !"
+    ],
+    [
+     "Léa",
+     "Trois jours ? Waouh ! Et toi, Ben ?"
+    ],
+    [
+     "Ben",
+     "Moi, je reste au Luxembourg. Je vais faire la semaine sport et jeux. Et je vais aller à la piscine avec mes copains."
+    ],
+    [
+     "Léa",
+     "C’est cool aussi ! Moi, je vais faire le camp nature dans les Ardennes avec Inès. On va dormir sous la tente et faire du kayak."
+    ],
+    [
+     "Ben",
+     "Sous la tente ? Et s’il pleut ?"
+    ],
+    [
+     "Léa",
+     "Ce n’est pas grave. On va prendre des imperméables !"
+    ],
+    [
+     "Yusuf",
+     "Bonnes vacances à tous ! On s’envoie des photos !"
+    ]
+   ]
+  },
+  "fr3-07l": {
+   "titel": "Bienvenue au camping !",
+   "art": "lesen",
+   "lektion": 7,
+   "dauer": 31.1,
+   "text": [
+    [
+     "",
+     "Bienvenue au camping !"
+    ],
+    [
+     "",
+     "Camping Les Trois Sapins. Notre camping est un endroit où on se repose, au bord de la Sûre, près du village. L’accueil est à l’entrée, à côté du parking. La piscine est entre l’accueil et le restaurant. Derrière la piscine, il y a le terrain de jeux. Les tentes sont près de la rivière, loin de la route. Les douches sont à côté des tentes, juste derrière le terrain de jeux."
+    ]
+   ]
+  },
+  "fr3-07h": {
+   "titel": "Tu la vois ?",
+   "art": "hoeren",
+   "lektion": 7,
+   "dauer": 46.5,
+   "text": [
+    [
+     "Léa",
+     "Chloé, tu vois ma lampe de poche ? Je la cherche partout !"
+    ],
+    [
+     "Chloé",
+     "Elle n’est pas dans ton sac ?"
+    ],
+    [
+     "Léa",
+     "Non… Et elle n’est pas sous mon sac de couchage."
+    ],
+    [
+     "Chloé",
+     "Attends… Ah, je la vois ! Elle est sur la table, devant la tente, à côté des assiettes."
+    ],
+    [
+     "Léa",
+     "Super, merci ! Et mes chaussures de marche ? Tu les vois ?"
+    ],
+    [
+     "Chloé",
+     "Tes chaussures ? Elles sont derrière la tente. Il pleut un peu, prends-les !"
+    ],
+    [
+     "Léa",
+     "Oh non, elles sont mouillées ! Et mon livre ? Je le mets où ?"
+    ],
+    [
+     "Chloé",
+     "Mets-le dans la tente, entre nos sacs."
+    ],
+    [
+     "Léa",
+     "D’accord. Bon, on va aux douches ? Elles sont près de la rivière."
+    ],
+    [
+     "Chloé",
+     "Oui, on y va !"
+    ]
+   ]
+  },
+  "fr3-08l": {
+   "titel": "Nouvelles de vacances",
+   "art": "lesen",
+   "lektion": 8,
+   "dauer": 44.0,
+   "text": [
+    [
+     "",
+     "Nouvelles de vacances"
+    ],
+    [
+     "",
+     "Carte de Léa – au camp, le 18 juillet. Coucou Ben ! Je suis au camp nature dans les Ardennes. Il fait beau. Aujourd’hui, nous faisons du kayak sur la rivière. Le soir, nous chantons autour du feu. C’est super ! Bisous, Léa."
+    ],
+    [
+     "",
+     "Carte d’Amira – le 10 août. Salut la classe ! Je suis rentrée de Bretagne hier. La semaine dernière, j’ai fait un stage de voile. Le premier jour, je suis tombée dans l’eau ! Jeudi, nous avons vu des dauphins. Et vendredi, j’ai mangé des crêpes au caramel. C’était génial ! À bientôt, Amira."
+    ]
+   ]
+  },
+  "fr3-08h": {
+   "titel": "Tu as passé de bonnes vacances ?",
+   "art": "hoeren",
+   "lektion": 8,
+   "dauer": 51.4,
+   "text": [
+    [
+     "Sami",
+     "Salut Amira ! Tu as passé de bonnes vacances ?"
+    ],
+    [
+     "Amira",
+     "Oui, super ! J’ai fait un stage de voile en Bretagne. Je suis tombée dans l’eau le premier jour !"
+    ],
+    [
+     "Sami",
+     "Ha ha ! Et l’eau était froide ?"
+    ],
+    [
+     "Amira",
+     "Très froide ! Mais après, j’ai appris à faire de la voile. Et toi, qu’est-ce que tu as fait ?"
+    ],
+    [
+     "Sami",
+     "Moi, je suis resté au Luxembourg. J’ai joué au foot tous les jours. Et en août, je suis allé à Paris en train avec mon oncle."
+    ],
+    [
+     "Amira",
+     "À Paris ? Qu’est-ce que vous avez visité ?"
+    ],
+    [
+     "Sami",
+     "Nous avons vu la tour Eiffel et nous avons mangé dans un petit restaurant. Le soir, nous avons pris un bateau sur la Seine."
+    ],
+    [
+     "Amira",
+     "Génial ! Et maintenant… l’école recommence !"
+    ],
+    [
+     "Sami",
+     "Oui… Mais je suis content de te voir !"
+    ]
+   ]
+  }
+ }
+}

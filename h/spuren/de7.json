@@ -1,0 +1,558 @@
+{
+ "modul": "de7",
+ "titel": {
+  "de": "Medien und Werbung",
+  "fr": "Médias et publicité"
+ },
+ "sprache": "de",
+ "spuren": {
+  "de7-01l": {
+   "titel": "Wir und die Bildschirme",
+   "art": "lesen",
+   "lektion": 1,
+   "dauer": 65.6,
+   "text": [
+    [
+     "",
+     "Wir und die Bildschirme"
+    ],
+    [
+     "",
+     "Wir haben in unserer Klasse eine Umfrage gemacht: Wie nutzen wir Handy, Computer und Fernseher? Alle 24 haben ein Handy. Niemand liest die Zeitung auf Papier."
+    ],
+    [
+     "",
+     "Die größte Gruppe ist jeden Tag 2 bis 4 Stunden am Bildschirm. Einige sagen: „Am Wochenende ist es mehr.“ Manche schauen abends im Bett noch Videos – und sind morgens müde."
+    ],
+    [
+     "",
+     "Am liebsten schauen wir Videos. Danach kommen Chatten und Spiele. Fernsehen ist für viele nicht mehr wichtig: Serien schauen wir lieber auf dem Handy."
+    ],
+    [
+     "",
+     "Fast alle finden: Ohne Handy geht es nicht. Aber einige haben schon eine Pause gemacht. „Eine Woche ohne Handy war am Anfang schwer, dann eigentlich ganz entspannt“, schreibt jemand auf seinen Zettel."
+    ],
+    [
+     "",
+     "Unser Fazit: Bildschirme sind praktisch und machen Spaß. Aber jeder sollte darauf achten, dass genug Zeit für Schlaf, Sport und Freunde bleibt."
+    ]
+   ]
+  },
+  "de7-01h": {
+   "titel": "Und wie sieht deine Zukunft aus?",
+   "art": "hoeren",
+   "lektion": 1,
+   "dauer": 65.4,
+   "text": [
+    [
+     "Moderatorin",
+     "Hallo und willkommen bei „Junge Stimmen“! Heute im Studio: Noah und Amira. Noah, wie viel Zeit verbringst du am Handy?"
+    ],
+    [
+     "Noah",
+     "Ehrlich? Etwa drei Stunden am Tag. Meistens schaue ich Videos über Fußball und Technik."
+    ],
+    [
+     "Moderatorin",
+     "Und du, Amira?"
+    ],
+    [
+     "Amira",
+     "Bei mir ist es weniger. Ich zeichne viel, und das mache ich lieber auf Papier. Aber manchmal zeige ich meine Bilder online."
+    ],
+    [
+     "Moderatorin",
+     "Was meint ihr: Wie werden wir in zehn Jahren Medien nutzen?"
+    ],
+    [
+     "Noah",
+     "Ich glaube, dass vieles mit künstlicher Intelligenz passiert. Vielleicht hat dann jeder einen digitalen Assistenten."
+    ],
+    [
+     "Amira",
+     "Das finde ich ein bisschen unheimlich. Ich hoffe, dass sich die Menschen trotzdem noch treffen und miteinander reden."
+    ],
+    [
+     "Moderatorin",
+     "Und eure Pläne für die Zukunft?"
+    ],
+    [
+     "Amira",
+     "Ich möchte Grafikdesignerin werden. Dafür brauche ich beides: Papier und Computer."
+    ],
+    [
+     "Noah",
+     "Ich will Elektroniker werden und später vielleicht Roboter bauen."
+    ]
+   ]
+  },
+  "de7-02l": {
+   "titel": "Was steht drauf?",
+   "art": "lesen",
+   "lektion": 2,
+   "dauer": 61.9,
+   "text": [
+    [
+     "",
+     "Was steht drauf?"
+    ],
+    [
+     "",
+     "Fertigpizza Margherita. Zubereitung: Backofen auf 220 °C vorheizen. Folie entfernen. Pizza auf dem Rost in der Mitte 12 bis 14 Minuten backen. Lagerung: tiefgekühlt bei minus 18 °C. Nach dem Auftauen nicht wieder einfrieren. Zutaten: Weizenmehl, Tomaten, Käse (Milch), Olivenöl, Salz, Hefe."
+    ],
+    [
+     "",
+     "Halstabletten mit Honig und Salbei. Anwendung: Erwachsene und Jugendliche ab 12 Jahren: alle 2 bis 3 Stunden 1 Tablette langsam im Mund zergehen lassen. Höchstens 6 Tabletten pro Tag. Kinder von 6 bis 11 Jahren: höchstens 3 Tabletten pro Tag. Nicht für Kinder unter 6 Jahren. Wenn die Beschwerden länger als 3 Tage dauern oder Sie Fieber bekommen, fragen Sie Ihre Ärztin, Ihren Arzt oder in der Apotheke. Für Kinder unzugänglich aufbewahren."
+    ]
+   ]
+  },
+  "de7-02h": {
+   "titel": "Liebe Kundinnen und Kunden …",
+   "art": "hoeren",
+   "lektion": 2,
+   "dauer": 64.9,
+   "text": [
+    [
+     "Durchsage",
+     "Liebe Kundinnen und Kunden! Heute im Angebot: frische Erdbeeren aus der Region, die Schale für nur zwei Euro neunundneunzig. Sie finden sie am Eingang."
+    ],
+    [
+     "Durchsage",
+     "Eine Information: Wegen einer Reparatur ist die Kasse drei geschlossen. Bitte benutzen Sie die Kassen eins und zwei oder die Selbstbedienungskassen. Vielen Dank für Ihr Verständnis."
+    ],
+    [
+     "Lina",
+     "Entschuldigung, können Sie mir helfen? Ich suche Kekse ohne Nüsse. Meine Freundin hat eine Allergie."
+    ],
+    [
+     "Verkäuferin",
+     "Gern. Schau immer auf die Zutatenliste. Hier steht zum Beispiel: „Kann Spuren von Nüssen enthalten.“ Die sind also nicht sicher."
+    ],
+    [
+     "Lina",
+     "Oh, das wusste ich nicht. Und diese hier?"
+    ],
+    [
+     "Verkäuferin",
+     "Die sind nussfrei. Das steht hier vorne, neben dem durchgestrichenen Nuss-Symbol."
+    ],
+    [
+     "Lina",
+     "Super, danke! Und bis wann sind die haltbar?"
+    ],
+    [
+     "Verkäuferin",
+     "Mindestens bis März nächsten Jahres. Das Datum steht unten auf der Packung."
+    ]
+   ]
+  },
+  "de7-03l": {
+   "titel": "Sturm in der Nacht: Bäume auf den Straßen",
+   "art": "lesen",
+   "lektion": 3,
+   "dauer": 48.2,
+   "text": [
+    [
+     "",
+     "Sturm in der Nacht: Bäume auf den Straßen"
+    ],
+    [
+     "",
+     "Junglinster/Echternach. In der Nacht auf Mittwoch ist ein starker Sturm über den Osten Luxemburgs gezogen. Der Wind erreichte bis zu 110 Kilometer pro Stunde."
+    ],
+    [
+     "",
+     "Viele Bäume wurden umgerissen. Die Feuerwehr wurde mehr als 80-mal gerufen und arbeitete die ganze Nacht. Verletzt wurde niemand."
+    ],
+    [
+     "",
+     "Die Straße zwischen Junglinster und Echternach wurde am Morgen gesperrt, weil zwei große Bäume auf der Fahrbahn lagen. Die Busse fuhren deshalb mit Verspätung."
+    ],
+    [
+     "",
+     "In einigen Dörfern gab es bis 9 Uhr keinen Strom. Zwei Schulen blieben am Vormittag geschlossen."
+    ],
+    [
+     "",
+     "Der Wetterdienst sagt: Am Wochenende wird es ruhiger. Trotzdem soll man bei Sturm nicht in den Wald gehen."
+    ]
+   ]
+  },
+  "de7-03h": {
+   "titel": "Es ist sieben Uhr – die Nachrichten",
+   "art": "hoeren",
+   "lektion": 3,
+   "dauer": 51.8,
+   "text": [
+    [
+     "Sprecherin",
+     "Es ist sieben Uhr. Die Nachrichten. Nach dem Sturm in der Nacht räumt die Feuerwehr im Osten des Landes noch viele Straßen frei. Verletzt wurde niemand."
+    ],
+    [
+     "Sprecher",
+     "Und jetzt der Verkehr. Auf der A7 Richtung Ettelbrück gibt es nach einem Unfall drei Kilometer Stau. Ein Fahrstreifen ist gesperrt."
+    ],
+    [
+     "Sprecher",
+     "Die Straße zwischen Junglinster und Echternach bleibt bis zehn Uhr gesperrt. Die Busse fahren eine Umleitung und haben etwa zwanzig Minuten Verspätung."
+    ],
+    [
+     "Sprecherin",
+     "Das Wetter: Heute ist es zuerst noch windig, am Nachmittag wird es freundlicher. Die Temperaturen liegen bei zwölf Grad."
+    ],
+    [
+     "Ben",
+     "Opa, hast du gehört? Mein Bus hat zwanzig Minuten Verspätung."
+    ],
+    [
+     "Opa",
+     "Dann hast du ja noch Zeit für ein Frühstück. Aber schreib deiner Lehrerin, dass du später kommst."
+    ]
+   ]
+  },
+  "de7-04l": {
+   "titel": "Mias Reisetagebuch",
+   "art": "lesen",
+   "lektion": 4,
+   "dauer": 70.2,
+   "text": [
+    [
+     "",
+     "Mias Reisetagebuch"
+    ],
+    [
+     "",
+     "Tag 1 – Montag: Endlich in Köln! Um 8 Uhr sind wir mit dem Jugendhaus in Luxemburg in den Zug gestiegen. In Koblenz mussten wir umsteigen. Nach etwa vier Stunden waren wir in Köln. Wenn man aus dem Bahnhof kommt, sieht man sofort den riesigen Dom! Unsere Jugendherberge liegt direkt am Rhein."
+    ],
+    [
+     "",
+     "Tag 2 – Dienstag: 533 Stufen. Heute sind wir auf den Südturm des Doms gestiegen: 533 Stufen! Oben war ich total kaputt, aber die Aussicht war es wert. Am Nachmittag waren wir im Schokoladenmuseum. Dort sieht man, wie Schokolade gemacht wird – und man darf probieren."
+    ],
+    [
+     "",
+     "Tag 3 – Mittwoch: Regen und Rhein. Leider hat es den ganzen Tag geregnet. Trotzdem haben wir eine Schifffahrt auf dem Rhein gemacht. Abends haben wir in der Jugendherberge Spiele gespielt. Übermorgen fahren wir schon zurück. Hat jemand einen Tipp, wo man in Köln gut und günstig essen kann?"
+    ]
+   ]
+  },
+  "de7-04h": {
+   "titel": "Weißt du, ob es noch Plätze gibt?",
+   "art": "hoeren",
+   "lektion": 4,
+   "dauer": 46.0,
+   "text": [
+    [
+     "Sami",
+     "Hey Ben, hast du kurz Zeit? Ich habe auf der Seite vom Jugendhaus etwas Cooles gesehen."
+    ],
+    [
+     "Ben",
+     "Klar. Was denn?"
+    ],
+    [
+     "Sami",
+     "Im Mai gibt es eine Fahrt zum Kletterpark. Weißt du, ob du da Zeit hast?"
+    ],
+    [
+     "Ben",
+     "Das klingt super! Kannst du mir sagen, an welchem Tag das ist?"
+    ],
+    [
+     "Sami",
+     "Am Samstag, dem fünfzehnten Mai. Abfahrt ist um acht Uhr am Jugendhaus."
+    ],
+    [
+     "Ben",
+     "Und weißt du, wie viel das kostet?"
+    ],
+    [
+     "Sami",
+     "Fünfzehn Euro, mit Mittagessen. Ich weiß aber nicht, ob es noch Plätze gibt."
+    ],
+    [
+     "Ben",
+     "Dann frag doch mal nach, wie viele Plätze noch frei sind. Ich frage zu Hause, ob ich mitfahren darf."
+    ],
+    [
+     "Sami",
+     "Mach ich. Ich schreibe dir gleich eine Nachricht. Bis dann!"
+    ]
+   ]
+  },
+  "de7-05l": {
+   "titel": "Netiquette: 7 Regeln für unseren Klassenchat",
+   "art": "lesen",
+   "lektion": 5,
+   "dauer": 62.4,
+   "text": [
+    [
+     "",
+     "Netiquette: 7 Regeln für unseren Klassenchat"
+    ],
+    [
+     "",
+     "Wir sind freundlich. Hinter jedem Namen sitzt ein Mensch. Was man nicht ins Gesicht sagen würde, schreibt man auch nicht."
+    ],
+    [
+     "",
+     "Wir posten keine Fotos oder Videos von anderen ohne Erlaubnis. Jeder entscheidet selbst über sein Bild."
+    ],
+    [
+     "",
+     "Wir leiten keine privaten Nachrichten und keine Screenshots weiter. Was jemand nur dir schreibt, bleibt bei dir."
+    ],
+    [
+     "",
+     "Der Chat ist für die Schule. Hausaufgaben, Termine, Fragen – ja. Kettenbriefe und Werbung – nein."
+    ],
+    [
+     "",
+     "Nach 21 Uhr ist Ruhe. Niemand muss nachts antworten."
+    ],
+    [
+     "",
+     "Wir schreiben nicht alles in Großbuchstaben. Das wirkt wie Schreien."
+    ],
+    [
+     "",
+     "Wenn jemand verletzt wird, sagen wir es einer erwachsenen Person. Das ist kein Petzen, sondern Hilfe."
+    ]
+   ]
+  },
+  "de7-05h": {
+   "titel": "Das Foto ist überall",
+   "art": "hoeren",
+   "lektion": 5,
+   "dauer": 60.1,
+   "text": [
+    [
+     "Yusuf",
+     "Frau Sommer, haben Sie kurz Zeit? Gestern hat jemand ein Foto von mir in den Klassenchat gestellt. Ich bin beim Sport hingefallen. Alle lachen darüber."
+    ],
+    [
+     "Frau Sommer",
+     "Danke, dass du zu mir kommst, Yusuf. Das war mutig. Wie geht es dir damit?"
+    ],
+    [
+     "Yusuf",
+     "Nicht gut. Ich will morgen gar nicht in die Schule."
+    ],
+    [
+     "Frau Sommer",
+     "Das verstehe ich. Wir lösen das zusammen. Hast du schon geantwortet?"
+    ],
+    [
+     "Yusuf",
+     "Nein. Ich wollte erst etwas Gemeines zurückschreiben, aber dann habe ich es gelassen."
+    ],
+    [
+     "Frau Sommer",
+     "Sehr gut. Mach bitte Screenshots als Beweis. Dann bitten wir die Person, das Foto zu löschen. Ich spreche auch mit der Klasse über eure Chat-Regeln."
+    ],
+    [
+     "Yusuf",
+     "Und wenn das Foto schon woanders ist?"
+    ],
+    [
+     "Frau Sommer",
+     "Dann kann man es bei der Plattform melden. Und die BEE SECURE Helpline berät dich kostenlos. Du musst das nicht allein schaffen."
+    ]
+   ]
+  },
+  "de7-06l": {
+   "titel": "Werbung überall",
+   "art": "lesen",
+   "lektion": 6,
+   "dauer": 58.4,
+   "text": [
+    [
+     "",
+     "Werbung überall"
+    ],
+    [
+     "",
+     "AIRSTEP X – Schweben statt Laufen! Die leichtesten Sportschuhe aller Zeiten. Unglaublich bequem, unschlagbar schnell. Profis tragen sie. Und du? Nur diese Woche: 20 % Rabatt!"
+    ],
+    [
+     "",
+     "Handytarif SURF FREE. Unbegrenzt surfen für nur 9,99 €* im Monat! Jetzt wechseln und gratis Kopfhörer sichern! *in den ersten 3 Monaten, danach 29,99 € im Monat. Mindestlaufzeit 24 Monate."
+    ],
+    [
+     "",
+     "@lena.glow · #Anzeige. Ihr fragt mich ständig, warum meine Haut so strahlt. Mein Geheimnis: die neue Glow-Creme! Ich benutze sie jeden Morgen. Mit meinem Code LENA15 bekommt ihr 15 % Rabatt. Link in meinem Profil!"
+    ]
+   ]
+  },
+  "de7-06h": {
+   "titel": "Und jetzt: Werbung!",
+   "art": "hoeren",
+   "lektion": 6,
+   "dauer": 52.1,
+   "text": [
+    [
+     "Werbesprecher",
+     "Hör deine Gegner, bevor sie dich hören! Das neue Headset „Ultra 7“. Kristallklarer Sound, dreißig Stunden Akku. Jetzt nur neunundvierzig Euro – solange der Vorrat reicht!"
+    ],
+    [
+     "Werbesprecherin",
+     "Familientag im Kino am Markt! Jeden Sonntag zahlen Kinder und Jugendliche bis sechzehn nur fünf Euro. Popcorn gratis dazu. Kommt vorbei!"
+    ],
+    [
+     "Tom",
+     "Das Headset will ich haben! Kristallklarer Sound!"
+    ],
+    [
+     "Amira",
+     "Warte mal. Was heißt denn „kristallklar“? Das sagt doch jede Werbung."
+    ],
+    [
+     "Tom",
+     "Hm, stimmt. Und „solange der Vorrat reicht“ – das soll Druck machen, oder?"
+    ],
+    [
+     "Amira",
+     "Genau. Ich würde zuerst Tests im Internet lesen und Preise vergleichen."
+    ],
+    [
+     "Tom",
+     "Okay, okay. Ich schlafe eine Nacht darüber."
+    ]
+   ]
+  },
+  "de7-07l": {
+   "titel": "Die Nachtfalter: Ein Abend voller Energie",
+   "art": "lesen",
+   "lektion": 7,
+   "dauer": 62.1,
+   "text": [
+    [
+     "",
+     "Die Nachtfalter: Ein Abend voller Energie"
+    ],
+    [
+     "",
+     "Am Freitag spielte die Band Die Nachtfalter im Jugendhaus Mersch. Der Saal, der eigentlich für 150 Leute gedacht ist, war mit über 200 Fans total voll."
+    ],
+    [
+     "",
+     "Die Sängerin Jo, die erst 19 Jahre alt ist, hat eine kraftvolle Stimme. Gitarrist Malik und Schlagzeugerin Ana spielten so laut, dass der Boden vibrierte."
+    ],
+    [
+     "",
+     "Am besten war der Song „Nachtbus“, den die Band zum ersten Mal live spielte. Das Lied erzählt von einer Freundschaft, die auf dem Heimweg im Nachtbus beginnt. Viele sangen schon beim zweiten Refrain mit."
+    ],
+    [
+     "",
+     "Nicht so gut: Der Ton war am Anfang zu leise, und die Pause war mit 30 Minuten zu lang."
+    ],
+    [
+     "",
+     "Unser Fazit: eine junge Band, der man die Freude am Spielen anmerkt. Vier von fünf Sternen!"
+    ]
+   ]
+  },
+  "de7-07h": {
+   "titel": "Zu Gast: Die Nachtfalter",
+   "art": "hoeren",
+   "lektion": 7,
+   "dauer": 54.6,
+   "text": [
+    [
+     "Moderator",
+     "Herzlich willkommen, Jo und Malik! Wie habt ihr euch kennengelernt?"
+    ],
+    [
+     "Jo",
+     "In der Schule! Malik war der Junge, der in der Pause immer Gitarre gespielt hat. Ich habe einfach mitgesungen."
+    ],
+    [
+     "Malik",
+     "Und Ana, die jetzt Schlagzeug spielt, kam ein Jahr später dazu. Sie ist die Schwester von einem Freund."
+    ],
+    [
+     "Moderator",
+     "Euer Song „Nachtbus“ ist gerade sehr beliebt. Worum geht es?"
+    ],
+    [
+     "Jo",
+     "Um zwei Leute, die sich jeden Abend im Nachtbus sehen, aber nie miteinander reden. Bis eines Tages der Bus stehen bleibt."
+    ],
+    [
+     "Moderator",
+     "Und was sind eure Pläne für die Zukunft?"
+    ],
+    [
+     "Malik",
+     "Wir nehmen im Sommer unser erstes Album auf. Und wir möchten einmal in einem richtig großen Saal spielen."
+    ],
+    [
+     "Jo",
+     "Aber zuerst mache ich meine Ausbildung fertig. Musik ist toll, aber ein sicherer Beruf ist auch wichtig."
+    ]
+   ]
+  },
+  "de7-08l": {
+   "titel": "Neues Freizeitzentrum?",
+   "art": "lesen",
+   "lektion": 8,
+   "dauer": 63.5,
+   "text": [
+    [
+     "",
+     "Neues Freizeitzentrum?"
+    ],
+    [
+     "",
+     "Gemeindeblatt: Ihre Meinung ist gefragt! Die Gemeinde plant ein Freizeitzentrum auf der Wiese neben der Schule: mit Skatepark, Musikraum und Jugendcafé. Kosten: etwa 2 Millionen Euro. Was meinen Sie? Schreiben Sie uns!"
+    ],
+    [
+     "",
+     "Leserbrief von Elena (15). Endlich! Bei uns gibt es für Jugendliche fast nichts. Wir treffen uns an der Bushaltestelle, weil wir keinen anderen Ort haben. Ein Freizeitzentrum wäre ein Treffpunkt für alle. Außerdem könnten wir dort Musik machen, statt nur am Handy zu hängen."
+    ],
+    [
+     "",
+     "Leserbrief von Herrn Thill (68). Ich verstehe die Jugendlichen. Trotzdem bin ich dagegen. Erstens wohne ich direkt neben der Wiese, und ein Skatepark ist laut. Zweitens ist die Wiese wichtig für Vögel und Insekten. Warum baut man das Zentrum nicht im alten Feuerwehrhaus, das leer steht?"
+    ]
+   ]
+  },
+  "de7-08h": {
+   "titel": "Wiese oder Feuerwehrhaus?",
+   "art": "hoeren",
+   "lektion": 8,
+   "dauer": 65.7,
+   "text": [
+    [
+     "Bürgermeisterin",
+     "Guten Abend! Heute geht es um eine Frage: Bauen wir das Freizeitzentrum auf der Wiese oder im alten Feuerwehrhaus? Wer möchte anfangen?"
+    ],
+    [
+     "Noah",
+     "Ich bin für die Wiese. Dort ist genug Platz für einen Skatepark. Im Feuerwehrhaus ist es viel zu eng."
+    ],
+    [
+     "Herr Thill",
+     "Einerseits verstehe ich das. Andererseits wird es für die Nachbarn sehr laut, wenn der Skatepark bis spät abends offen ist."
+    ],
+    [
+     "Lina",
+     "Darf ich etwas vorschlagen? Man könnte beides machen: das Café und den Musikraum im Feuerwehrhaus und nur einen kleinen Skatepark auf einem Teil der Wiese."
+    ],
+    [
+     "Bürgermeisterin",
+     "Interessant. Und die Öffnungszeiten?"
+    ],
+    [
+     "Lina",
+     "Der Skatepark könnte um einundzwanzig Uhr schließen. Dann ist es nachts ruhig."
+    ],
+    [
+     "Herr Thill",
+     "Hm. Mit diesen Regeln wäre ich einverstanden. Und der Rest der Wiese bleibt für die Natur?"
+    ],
+    [
+     "Bürgermeisterin",
+     "Das ist ein guter Kompromiss. Wir lassen den Plan prüfen und stellen ihn im nächsten Forum vor."
+    ]
+   ]
+  }
+ }
+}

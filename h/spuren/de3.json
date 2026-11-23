@@ -1,0 +1,634 @@
+{
+ "modul": "de3",
+ "titel": {
+  "de": "Andere Länder, andere Sitten",
+  "fr": "Autres pays, autres mœurs"
+ },
+ "sprache": "de",
+ "spuren": {
+  "de3-01l": {
+   "titel": "Post aus Porto",
+   "art": "lesen",
+   "lektion": 1,
+   "dauer": 68.9,
+   "text": [
+    [
+     "",
+     "Post aus Porto"
+    ],
+    [
+     "",
+     "Von: Rita · An: Klasse 7P2 · Betreff: Mein Geburtstag 🎂 Liebe Mia, liebe 7P2, vielen Dank für euren Brief und die Fotos! Ich habe sie meiner Klasse gezeigt. Alle finden euer Schulgebäude sehr modern. Letzte Woche bin ich 13 geworden. Bei uns in Portugal singt man „Parabéns a você“ – das ist unser Geburtstagslied. Meine Oma hat einen großen Kuchen gebacken, mit Schokolade und Orangen. Am Abend sind meine Cousins gekommen, und wir haben bis Mitternacht gefeiert. Zum Geburtstag habe ich ein Fahrrad bekommen! In Porto ist es jetzt schon warm. Am Wochenende gehen wir oft an den Strand. Das Wasser ist aber noch sehr kalt, brrr! Jetzt habe ich Fragen an euch: Wie feiert ihr Geburtstag in Luxemburg? Was esst ihr gern? Und stimmt es, dass ihr drei Sprachen in der Schule lernt? Schreibt mir bald! Liebe Grüße, eure Rita"
+    ]
+   ]
+  },
+  "de3-01h": {
+   "titel": "Wie lebt man in Montreal?",
+   "art": "hoeren",
+   "lektion": 1,
+   "dauer": 59.1,
+   "text": [
+    [
+     "Moderator",
+     "Hallo Léa! Kannst du mich gut hören?"
+    ],
+    [
+     "Léa",
+     "Ja, sehr gut! Hallo nach Luxemburg!"
+    ],
+    [
+     "Moderator",
+     "Du wohnst in Montreal. Welche Sprache sprichst du dort?"
+    ],
+    [
+     "Léa",
+     "Zu Hause und in der Schule spreche ich Französisch. Aber viele Leute sprechen auch Englisch."
+    ],
+    [
+     "Moderator",
+     "Und was machst du gern in deiner Freizeit?"
+    ],
+    [
+     "Léa",
+     "Im Winter gehe ich Schlittschuh laufen. Hier ist es im Winter sehr kalt – manchmal minus zwanzig Grad!"
+    ],
+    [
+     "Moderator",
+     "Minus zwanzig? Wow! Und was machst du nicht so gern?"
+    ],
+    [
+     "Léa",
+     "Ich mag keine langen Busfahrten. Meine Schule ist weit weg. Ich fahre jeden Tag fünfzig Minuten."
+    ],
+    [
+     "Moderator",
+     "Hast du ein Lieblingsessen?"
+    ],
+    [
+     "Léa",
+     "Ja, Pancakes mit Ahornsirup! Den Sirup macht man hier aus einem Baum."
+    ],
+    [
+     "Moderator",
+     "Lecker! Danke, Léa, und viele Grüße nach Kanada!"
+    ],
+    [
+     "Léa",
+     "Danke! Tschüss!"
+    ]
+   ]
+  },
+  "de3-02l": {
+   "titel": "Frühlings-Angebote!",
+   "art": "lesen",
+   "lektion": 2,
+   "dauer": 59.2,
+   "text": [
+    [
+     "",
+     "Frühlings-Angebote!"
+    ],
+    [
+     "",
+     "🧥 Regenjacke „Wind“ – nur 39 € Leicht, wasserdicht und mit großer Kapuze. In Rot, Gelb und Dunkelblau. Größen S bis XL. Perfekt für den Schulweg!"
+    ],
+    [
+     "",
+     "👖 Jeans „Classic“ – 29 € statt 45 € Bequeme, weite Jeans aus Bio-Baumwolle. Hell- oder Dunkelblau. Nur diese Woche 35 % billiger!"
+    ],
+    [
+     "",
+     "👟 Turnschuhe „Sprint“ – 55 € Weiß mit grünen Streifen. Sehr leicht und gut für Sport. Größen 36 bis 45."
+    ],
+    [
+     "",
+     "ℹ️ Gut zu wissen Umtausch innerhalb von 14 Tagen – nur mit Kassenzettel. Öffnungszeiten: Montag bis Samstag, 9 bis 18 Uhr."
+    ]
+   ]
+  },
+  "de3-02h": {
+   "titel": "Haben Sie die Jacke auch in Gelb?",
+   "art": "hoeren",
+   "lektion": 2,
+   "dauer": 58.5,
+   "text": [
+    [
+     "Verkäuferin",
+     "Guten Tag! Kann ich dir helfen?"
+    ],
+    [
+     "Mia",
+     "Ja, gern. Ich suche eine Regenjacke. Die Jacke „Wind“ aus dem Prospekt."
+    ],
+    [
+     "Verkäuferin",
+     "Ah ja, die ist sehr beliebt. Welche Größe hast du?"
+    ],
+    [
+     "Mia",
+     "Größe S, glaube ich."
+    ],
+    [
+     "Verkäuferin",
+     "Hier ist eine rote Jacke in S."
+    ],
+    [
+     "Mia",
+     "Hm, Rot gefällt mir nicht so. Haben Sie die Jacke auch in Gelb?"
+    ],
+    [
+     "Verkäuferin",
+     "Ja, hier. Möchtest du sie anprobieren? Die Umkleide ist dort hinten."
+    ],
+    [
+     "Mia",
+     "Ja, danke. … Sie ist ein bisschen zu klein. Die Ärmel sind zu kurz."
+    ],
+    [
+     "Verkäuferin",
+     "Dann probier doch die Größe M."
+    ],
+    [
+     "Mia",
+     "Die passt perfekt! Was kostet sie?"
+    ],
+    [
+     "Verkäuferin",
+     "Neununddreißig Euro."
+    ],
+    [
+     "Mia",
+     "Gut, die nehme ich."
+    ]
+   ]
+  },
+  "de3-03l": {
+   "titel": "Wer ist der Champion?",
+   "art": "lesen",
+   "lektion": 3,
+   "dauer": 65.5,
+   "text": [
+    [
+     "",
+     "Wer ist der Champion?"
+    ],
+    [
+     "",
+     "Der Gepard ist das schnellste Landtier. Auf kurzen Strecken läuft er über 100 Kilometer pro Stunde – schneller als ein Auto in der Stadt! Aber er wird schnell müde."
+    ],
+    [
+     "",
+     "Die Giraffe ist das höchste Tier. Sie wird über fünf Meter groß. Mit ihrem langen Hals frisst sie Blätter oben in den Bäumen. Dort kommen andere Tiere nicht hin."
+    ],
+    [
+     "",
+     "Der Elefant ist das schwerste Landtier. Ein Afrikanischer Elefant wiegt so viel wie vier Autos. Er hat größere Ohren als der Asiatische Elefant."
+    ],
+    [
+     "",
+     "Aber der größte Champion lebt im Meer: der Blauwal. Er ist länger als ein Bus und schwerer als jedes andere Tier – auch als die Dinosaurier!"
+    ],
+    [
+     "",
+     "Und das langsamste? Das Faultier. Es schläft viele Stunden am Tag und bewegt sich ganz langsam. Langweilig? Nein, so spart es Energie!"
+    ]
+   ]
+  },
+  "de3-03h": {
+   "titel": "Wo ist es billiger?",
+   "art": "hoeren",
+   "lektion": 3,
+   "dauer": 52.1,
+   "text": [
+    [
+     "Yusuf",
+     "Hi Amira! Ich bin in der Stadt und suche Kopfhörer. Im Elektroladen kosten sie 49 Euro. Im Kaufhaus kosten die gleichen Kopfhörer 45 Euro. Im Kaufhaus sind sie also billiger."
+    ],
+    [
+     "Yusuf",
+     "Aber im Elektroladen bekomme ich eine Tasche dazu. Was meinst du? Wo soll ich sie kaufen?"
+    ],
+    [
+     "Amira",
+     "Hi Yusuf! Schau mal im Internet. Im Online-Shop kosten sie nur 39 Euro – am billigsten!"
+    ],
+    [
+     "Amira",
+     "Aber Achtung: Der Versand kostet 6 Euro. Dann sind es auch 45 Euro, und du musst drei Tage warten."
+    ],
+    [
+     "Amira",
+     "Ich finde: Das Kaufhaus ist am besten. Der Preis ist gut, und du hast die Kopfhörer sofort. Die Tasche brauchst du doch nicht, oder?"
+    ]
+   ]
+  },
+  "de3-04l": {
+   "titel": "Gromperekichelcher (Kartoffelpuffer)",
+   "art": "lesen",
+   "lektion": 4,
+   "dauer": 66.9,
+   "text": [
+    [
+     "",
+     "Gromperekichelcher (Kartoffelpuffer)"
+    ],
+    [
+     "",
+     "Du brauchst: 1 kg Kartoffeln, 2 Zwiebeln, 2 Eier, 3 Esslöffel Mehl, Petersilie, Salz und Pfeffer, Öl zum Braten."
+    ],
+    [
+     "",
+     "Schritt 1: Die Kartoffeln schälen und fein reiben. Die Zwiebeln klein schneiden."
+    ],
+    [
+     "",
+     "Schritt 2: Das Wasser aus den Kartoffeln gut ausdrücken. Sonst werden die Kichelcher nicht knusprig."
+    ],
+    [
+     "",
+     "Schritt 3: Kartoffeln, Zwiebeln, Eier, Mehl und gehackte Petersilie mischen. Mit Salz und Pfeffer würzen."
+    ],
+    [
+     "",
+     "Schritt 4: Viel Öl in einer Pfanne heiß machen. Achtung: Ein Erwachsener muss dabei sein!"
+    ],
+    [
+     "",
+     "Schritt 5: Mit einem Löffel kleine Häufchen in die Pfanne geben und flach drücken. Von beiden Seiten goldbraun braten."
+    ],
+    [
+     "",
+     "Tipp von Opa Jos: In Luxemburg isst man Gromperekichelcher oft mit Apfelmus. Und auf der Schobermesse kann man sie heiß kaufen."
+    ]
+   ]
+  },
+  "de3-04h": {
+   "titel": "Einmal Falafel, bitte!",
+   "art": "hoeren",
+   "lektion": 4,
+   "dauer": 41.8,
+   "text": [
+    [
+     "Verkäufer",
+     "Hallo, was darf es sein?"
+    ],
+    [
+     "Lea",
+     "Ich hätte gern einmal Falafel im Brot, bitte. Ohne Zwiebeln."
+    ],
+    [
+     "Verkäufer",
+     "Gern. Mit scharfer Soße?"
+    ],
+    [
+     "Lea",
+     "Nein, lieber mild, bitte."
+    ],
+    [
+     "Ben",
+     "Und für mich eine Portion Pommes mit Ketchup und ein Wasser."
+    ],
+    [
+     "Verkäufer",
+     "Klein oder groß?"
+    ],
+    [
+     "Ben",
+     "Groß, bitte. Ich habe großen Hunger!"
+    ],
+    [
+     "Verkäufer",
+     "Zum Hier-Essen oder zum Mitnehmen?"
+    ],
+    [
+     "Lea",
+     "Zum Mitnehmen."
+    ],
+    [
+     "Verkäufer",
+     "Das macht zusammen elf Euro fünfzig."
+    ],
+    [
+     "Ben",
+     "Hier, bitte. … Lea, wie schmeckt dein Falafel?"
+    ],
+    [
+     "Lea",
+     "Mmh, super lecker! Viel besser als in der Kantine!"
+    ]
+   ]
+  },
+  "de3-05l": {
+   "titel": "Hausordnung – damit sich alle wohlfühlen",
+   "art": "lesen",
+   "lektion": 5,
+   "dauer": 59.7,
+   "text": [
+    [
+     "",
+     "Hausordnung – damit sich alle wohlfühlen"
+    ],
+    [
+     "",
+     "Das Jugendhaus ist für alle Jugendlichen von 12 bis 18 Jahren offen. Ihr müsst nichts bezahlen und ihr müsst euch nicht anmelden. Kommt einfach vorbei!"
+    ],
+    [
+     "",
+     "Im ganzen Haus darf man nicht rauchen und keinen Alkohol trinken. Das gilt auch draußen vor der Tür."
+    ],
+    [
+     "",
+     "Ihr dürft eure eigene Musik mitbringen. Aber nach 20 Uhr müsst ihr leiser sein – die Nachbarn wollen schlafen."
+    ],
+    [
+     "",
+     "Am Kicker und am Billardtisch darf jede Gruppe 20 Minuten spielen. Dann sind die nächsten dran."
+    ],
+    [
+     "",
+     "Nach dem Kochen müsst ihr die Küche aufräumen. Das Geschirr muss man spülen – die Spülmaschine dürft ihr benutzen."
+    ],
+    [
+     "",
+     "Respekt ist das Wichtigste: Niemand darf andere auslachen, beleidigen oder ausschließen. Bei Problemen könnt ihr immer mit dem Team sprechen."
+    ]
+   ]
+  },
+  "de3-05h": {
+   "titel": "Muss ich das wirklich?",
+   "art": "hoeren",
+   "lektion": 5,
+   "dauer": 63.9,
+   "text": [
+    [
+     "Leonie",
+     "Chloe, muss ich hier eine Schuluniform tragen?"
+    ],
+    [
+     "Chloe",
+     "Nein, du musst keine Uniform tragen. Du kannst anziehen, was du willst."
+    ],
+    [
+     "Leonie",
+     "Super! Und darf ich in der Pause mein Handy benutzen?"
+    ],
+    [
+     "Chloe",
+     "Nein, im Schulgebäude darfst du das Handy nicht benutzen. Es muss im Rucksack bleiben. Hast du das verstanden?"
+    ],
+    [
+     "Leonie",
+     "Ja, verstanden: Handy im Rucksack. Und das Mittagessen? Muss ich in der Kantine essen?"
+    ],
+    [
+     "Chloe",
+     "Nein, das musst du nicht. Du darfst auch dein eigenes Pausenbrot mitbringen."
+    ],
+    [
+     "Leonie",
+     "Wie bitte? Kannst du das wiederholen? Was ist ein Pausenbrot?"
+    ],
+    [
+     "Chloe",
+     "Ein Brot von zu Hause, für die Pause. Verstehst du?"
+    ],
+    [
+     "Leonie",
+     "Ah, ja! Bei uns heißt das auch so. Und muss ich heute die Hausaufgaben machen?"
+    ],
+    [
+     "Chloe",
+     "Du bist Gast – du musst nicht. Aber du darfst natürlich!"
+    ],
+    [
+     "Leonie",
+     "Haha, sehr lustig."
+    ]
+   ]
+  },
+  "de3-06l": {
+   "titel": "Opa Jos, wie war die Schule früher?",
+   "art": "lesen",
+   "lektion": 6,
+   "dauer": 55.8,
+   "text": [
+    [
+     "",
+     "Opa Jos, wie war die Schule früher?"
+    ],
+    [
+     "",
+     "Opa Jos, wann bist du in die Schule gegangen?"
+    ],
+    [
+     "",
+     "Das war vor über sechzig Jahren. Damals musste ich auch am Samstagmorgen in die Schule!"
+    ],
+    [
+     "",
+     "Am Samstag? Echt? Wie war der Unterricht?"
+    ],
+    [
+     "",
+     "Sehr streng. Wir durften nicht sprechen. Wir mussten immer still sitzen und aufstehen, wenn der Lehrer kam."
+    ],
+    [
+     "",
+     "Hattet ihr Computer?"
+    ],
+    [
+     "",
+     "Nein! Wir konnten nur mit Füller und Heft schreiben. Der Lehrer hatte Kreide und eine große Tafel."
+    ],
+    [
+     "",
+     "Und in der Pause?"
+    ],
+    [
+     "",
+     "Da haben wir mit Murmeln gespielt. Ich wollte immer gewinnen – aber meistens hat mein Freund Pierre gewonnen."
+    ],
+    [
+     "",
+     "Was war besser als heute?"
+    ],
+    [
+     "",
+     "Hm … Wir waren viel draußen. Aber heute ist die Schule netter. Ihr dürft Fragen stellen. Das ist gut!"
+    ]
+   ]
+  },
+  "de3-06h": {
+   "titel": "Mein Schultag 1965",
+   "art": "hoeren",
+   "lektion": 6,
+   "dauer": 57.8,
+   "text": [
+    [
+     "Mia",
+     "Oma, wie war dein Schultag, als du zwölf warst?"
+    ],
+    [
+     "Oma",
+     "Oh, das war 1965. Ich musste um sechs Uhr aufstehen. Wir hatten keinen Bus. Ich bin eine halbe Stunde zu Fuß gegangen – auch im Winter, im Schnee."
+    ],
+    [
+     "Oma",
+     "Die Schule hat um acht Uhr begonnen. Wir waren 38 Kinder in einer Klasse! Mädchen und Jungen saßen getrennt."
+    ],
+    [
+     "Mia",
+     "38 Kinder? Das ist ja viel! Was hast du mittags gegessen?"
+    ],
+    [
+     "Oma",
+     "Mittags bin ich nach Hause gegangen. Meine Mutter hat gekocht. Eine Kantine gab es damals nicht."
+    ],
+    [
+     "Oma",
+     "Am Nachmittag musste ich meiner Mutter im Garten helfen. Erst dann konnte ich meine Hausaufgaben machen."
+    ],
+    [
+     "Mia",
+     "Und was wolltest du damals werden?"
+    ],
+    [
+     "Oma",
+     "Lehrerin! Und das bin ich dann auch geworden."
+    ]
+   ]
+  },
+  "de3-07l": {
+   "titel": "Projektwoche „Unsere Schule wird grün“",
+   "art": "lesen",
+   "lektion": 7,
+   "dauer": 63.6,
+   "text": [
+    [
+     "",
+     "Projektwoche „Unsere Schule wird grün“"
+    ],
+    [
+     "",
+     "Lio, 7P2. Vor einer Woche hat die Projektwoche begonnen. Wir haben ein Hochbeet gebaut. Seit Montag wachsen dort Salat und Radieschen. In drei Wochen können wir ernten!"
+    ],
+    [
+     "",
+     "Jana, 7P1. Ich war in der Gruppe „Müll“. Nach dem Mittagessen haben wir jeden Tag den Schulhof sauber gemacht. Seit der Projektwoche gibt es in jeder Klasse drei Mülleimer. Ich finde das super."
+    ],
+    [
+     "",
+     "Tom, 7P3. Wir haben Nistkästen für Vögel gebaut. Am Anfang war ich nicht motiviert. Aber nach zwei Tagen hat es mir Spaß gemacht. Seit gestern wohnt ein Vogel in meinem Kasten!"
+    ],
+    [
+     "",
+     "Nele, 7P2. Meine Gruppe hat ein Video gedreht: „Spart Energie!“ Vor dem Projekt wusste ich nicht, wie viel Strom ein Handy-Ladegerät braucht. In zwei Wochen zeigen wir das Video beim Elternabend."
+    ]
+   ]
+  },
+  "de3-07h": {
+   "titel": "Die Nachrichten für junge Leute",
+   "art": "hoeren",
+   "lektion": 7,
+   "dauer": 49.4,
+   "text": [
+    [
+     "Sprecher",
+     "Hier sind die Nachrichten für junge Leute."
+    ],
+    [
+     "Sprecherin",
+     "Erstens: In Junglinster hat heute ein neuer Skatepark geöffnet. Seit zehn Uhr fahren dort Jugendliche mit Skateboards und Rollern. Der Park ist jeden Tag bis 21 Uhr offen."
+    ],
+    [
+     "Sprecher",
+     "Zweitens: Vor drei Tagen hat in Luxemburg-Stadt ein Mathe-Wettbewerb für Schülerinnen und Schüler stattgefunden. 400 Jugendliche haben mitgemacht."
+    ],
+    [
+     "Sprecherin",
+     "Drittens: Das Wetter. Morgen scheint die Sonne, aber nach dem Mittag kommt Regen. Nehmt einen Regenschirm mit!"
+    ],
+    [
+     "Sprecher",
+     "Und viertens: In zwei Wochen beginnen die Osterferien. Viele Jugendhäuser bieten dann Workshops an. Die Anmeldung läuft seit gestern."
+    ],
+    [
+     "Sprecherin",
+     "Das waren die Nachrichten. Bis morgen!"
+    ]
+   ]
+  },
+  "de3-08l": {
+   "titel": "Unser liebstes Fest",
+   "art": "lesen",
+   "lektion": 8,
+   "dauer": 69.2,
+   "text": [
+    [
+     "",
+     "Unser liebstes Fest"
+    ],
+    [
+     "",
+     "Amira: das Zuckerfest. Im Ramadan essen und trinken viele Muslime nicht, solange die Sonne scheint. Am Ende kommt das Zuckerfest. Wir ziehen neue Kleider an, besuchen die Familie und essen ganz viele Süßigkeiten. Die Kinder bekommen kleine Geschenke."
+    ],
+    [
+     "",
+     "Noah: Chanukka. Chanukka ist ein jüdisches Fest und dauert acht Tage. Jeden Abend zünden wir eine Kerze mehr an. Meine Oma macht Latkes – das sind Kartoffelpuffer, fast wie Gromperekichelcher!"
+    ],
+    [
+     "",
+     "Lina: Weihnachten. Bei uns gibt es am 24. Dezember ein großes Essen mit der Familie. Danach packen wir die Geschenke aus. Das Schönste für mich ist der Weihnachtsbaum mit den Lichtern."
+    ],
+    [
+     "",
+     "Ben: der Nationalfeiertag. Am Abend vor dem 23. Juni gibt es in Luxemburg-Stadt einen Fackelzug und ein großes Feuerwerk. Überall ist Musik. Ich darf mit meinem Onkel hingehen und lange aufbleiben!"
+    ]
+   ]
+  },
+  "de3-08h": {
+   "titel": "Was passiert am Nationalfeiertag?",
+   "art": "hoeren",
+   "lektion": 8,
+   "dauer": 62.2,
+   "text": [
+    [
+     "Finn",
+     "Willkommen zu unserem Podcast! Heute ist Frau Sommer da. Frau Sommer, wann ist der Nationalfeiertag?"
+    ],
+    [
+     "Frau Sommer",
+     "Am 23. Juni. Man feiert den Geburtstag des Großherzogs. Aber die Party beginnt schon am Abend vorher, am 22. Juni."
+    ],
+    [
+     "Finn",
+     "Was passiert am Abend?"
+    ],
+    [
+     "Frau Sommer",
+     "In Luxemburg-Stadt gibt es einen Fackelzug. Danach kommt ein großes Feuerwerk. Viele Leute feiern bis spät in der Nacht auf den Straßen."
+    ],
+    [
+     "Finn",
+     "Und am 23. Juni selbst?"
+    ],
+    [
+     "Frau Sommer",
+     "Am Morgen gibt es eine Feier in der Kathedrale und eine Parade. Für die meisten Leute ist es ein freier Tag – auch für euch!"
+    ],
+    [
+     "Finn",
+     "Super! Feiern auch die Dörfer?"
+    ],
+    [
+     "Frau Sommer",
+     "Ja, viele Gemeinden haben eigene kleine Feste mit Musik."
+    ],
+    [
+     "Finn",
+     "Danke, Frau Sommer! Das war unser Podcast. Bis zum nächsten Mal!"
+    ]
+   ]
+  }
+ }
+}

@@ -1,0 +1,118 @@
+{
+ "modul": "tbaf",
+ "titel": {
+  "de": "Toolbox · Arbeitsblätter A",
+  "fr": "Toolbox · fiches A"
+ },
+ "sprache": "fr",
+ "spuren": {
+  "tbaf-03a": {
+   "titel": "A-03 · Changer d’école – Après les vacances d’été",
+   "art": "lesen",
+   "lektion": 3,
+   "dauer": 30.5,
+   "text": [
+    [
+     "",
+     "Après les vacances d’été"
+    ],
+    [
+     "",
+     "Diogo déménage avec sa famille d’Esch-sur-Alzette à Ettelbruck. Après les vacances, il entre dans une nouvelle école. Il a hâte de découvrir la grande cour de récréation. Mais le soir, dans son lit, il se dit : et si je me perdais ? Et si personne ne jouait avec moi ? Sa grand-mère lui répond : « Ton humour, tu l’emportes avec toi. Et ton ballon de foot aussi. »"
+    ]
+   ]
+  },
+  "tbaf-12a": {
+   "titel": "A-12 · Mon corps change – Dans le vestiaire",
+   "art": "lesen",
+   "lektion": 12,
+   "dauer": 28.8,
+   "text": [
+    [
+     "",
+     "Dans le vestiaire"
+    ],
+    [
+     "",
+     "Nora a grandi de dix centimètres en un an. Maintenant, elle est la plus grande de la classe. Dans le vestiaire, Kim lance : « Hé, la géante, il fait quel temps là-haut ? » Tout le monde rit, Nora aussi. Mais dans son ventre, ça se serre. Mathis est juste à côté. Il est l’un des plus petits et pense : « Quand est-ce que je vais enfin grandir ? »"
+    ]
+   ]
+  },
+  "tbaf-19a": {
+   "titel": "A-19 · Ma batterie d’énergie – Un long lundi",
+   "art": "lesen",
+   "lektion": 19,
+   "dauer": 32.5,
+   "text": [
+    [
+     "",
+     "Un long lundi"
+    ],
+    [
+     "",
+     "Le lundi, Diogo a école jusqu’à 16 h, puis entraînement de foot. Le soir, il joue longtemps sur la tablette et ne s’endort qu’à dix heures. Le mardi, il est déjà fatigué à la première heure. À la récréation, il se dispute avec Luca pour un rien. Après l’école, il va dans la forêt avec son chien. Le soir, il lit une BD et se couche tôt. Le mercredi, il se sent de nouveau en forme."
+    ]
+   ]
+  },
+  "tbaf-24x": {
+   "titel": "A-24 · Faire les courses : pièce par pièce",
+   "art": "lesen",
+   "lektion": 24,
+   "dauer": 14.0,
+   "text": [
+    [
+     "",
+     "Les petites quantités se voient d’un coup d’œil – comme avec un dé. Quand il y a plus d’objets, tu comptes : un objet, un nombre. Ce qui est compté, tu le pousses de côté."
+    ]
+   ]
+  },
+  "tbaf-30x": {
+   "titel": "A-30 · Ma boussole d’avenir",
+   "art": "lesen",
+   "lektion": 30,
+   "dauer": 24.0,
+   "text": [
+    [
+     "",
+     "Tu n’as pas besoin de savoir aujourd’hui ce que tu feras plus tard. Mais cela aide de sentir ce qui te correspond. Une boussole ne te dit pas où aller, seulement où se trouve le nord. Tu cherches ici des directions, pas une réponse. Il n’y a ni bonne ni mauvaise réponse. Personne ne ramasse la feuille, et ce que tu écris peut changer plus tard."
+    ]
+   ]
+  },
+  "tbaf-30y": {
+   "titel": "A-30 · Ma boussole d’avenir",
+   "art": "lesen",
+   "lektion": 30,
+   "dauer": 22.7,
+   "text": [
+    [
+     "",
+     "Deux ou trois directions : qu’est-ce qui correspond à ta boussole ? Un domaine suffit, pas besoin d’un métier – par exemple : animaux, dehors, avec les mains – direction soins aux animaux, agriculture ou forêt. Crée à droite un tableau d’images : images, couleurs, mots – dessiner, coller, écrire."
+    ]
+   ]
+  },
+  "tbaf-31x": {
+   "titel": "A-31 · Mon moi en ligne",
+   "art": "lesen",
+   "lektion": 31,
+   "dauer": 23.5,
+   "text": [
+    [
+     "",
+     "En ligne, tu te montres souvent un peu différemment qu’en classe : plus choisi·e, plus drôle, plus prudent·e. C’est normal ; hors ligne aussi, tu n’es pas la même avec tes grands-parents que dans la cour de récréation. Ici, tu regardes simplement. Il n’y a ni bonne ni mauvaise réponse, ni interdiction."
+    ]
+   ]
+  },
+  "tbaf-32x": {
+   "titel": "A-32 · Je me débrouille seul·e",
+   "art": "lesen",
+   "lektion": 32,
+   "dauer": 22.5,
+   "text": [
+    [
+     "",
+     "Se débrouiller seul·e ne veut pas dire tout faire seul·e. Cela veut dire : savoir ce que tu sais déjà faire. Savoir ce que tu veux apprendre ensuite. Et savoir à qui demander. Peut-être sais-tu déjà bien plus que tu ne le remarques. Il n’y a ni bonne ni mauvaise réponse, et personne ne sait tout faire à 14 ans."
+    ]
+   ]
+  }
+ }
+}

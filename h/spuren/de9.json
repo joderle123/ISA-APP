@@ -1,0 +1,562 @@
+{
+ "modul": "de9",
+ "titel": {
+  "de": "Arbeitswelt und Jugendschutz",
+  "fr": "Monde du travail et protection de la jeunesse"
+ },
+ "sprache": "de",
+ "spuren": {
+  "de9-01l": {
+   "titel": "Welcher Text hilft mir?",
+   "art": "lesen",
+   "lektion": 1,
+   "dauer": 63.8,
+   "text": [
+    [
+     "",
+     "Welcher Text hilft mir?"
+    ],
+    [
+     "",
+     "Text A · Berufsinfo: Kfz-Mechatroniker/in. Aufgaben: Fahrzeuge warten, Fehler suchen, Teile austauschen. Ausbildung: 3 Jahre, im Betrieb und in der Schule. Voraussetzungen: technisches Interesse, gute Noten in Mathe, handwerkliches Geschick. Arbeitszeit: meist tagsüber, manchmal samstags."
+    ],
+    [
+     "",
+     "Text B · Werbung: Autohaus Sonnenberg. Jetzt den neuen Familien-Van probefahren! Riesiger Kofferraum, sparsamer Motor. Nur dieses Wochenende: Kaffee und Kuchen für alle Besucher!"
+    ],
+    [
+     "",
+     "Text C · Erfahrungsbericht von Kevin (17). Ich bin im zweiten Lehrjahr. Am Anfang war es hart: früh aufstehen, schwere Arbeit, kalte Werkstatt im Winter. Aber jetzt darf ich schon allein kleine Reparaturen machen. Mein Tipp: Mach vorher ein Praktikum – dann weißt du, ob der Beruf zu dir passt."
+    ]
+   ]
+  },
+  "de9-01h": {
+   "titel": "Mein Arbeitsplatz: die Werkstatt",
+   "art": "hoeren",
+   "lektion": 1,
+   "dauer": 64.1,
+   "text": [
+    [
+     "Lara",
+     "Hallo zusammen! Ich bin Lara, ich bin neunzehn und im dritten Lehrjahr als Kfz-Mechatronikerin. Ich zeige euch heute meinen Arbeitsplatz."
+    ],
+    [
+     "Lara",
+     "Das hier ist unsere Werkstatt. Wir haben vier Hebebühnen. Damit wird das Auto hochgehoben, und wir können von unten arbeiten."
+    ],
+    [
+     "Lara",
+     "Das wichtigste Werkzeug ist heute der Laptop. Mit dem Diagnosegerät lesen wir die Fehler aus dem Auto aus."
+    ],
+    [
+     "Lara",
+     "Ein normaler Tag beginnt um halb acht. Zuerst besprechen wir im Team die Aufträge. Dann arbeitet jeder an seinem Auto. Um zwölf machen wir eine Stunde Mittagspause."
+    ],
+    [
+     "Lara",
+     "Was ich an meinem Beruf mag? Jeder Tag ist anders. Und wenn ein Kunde mit einem kaputten Auto kommt und mit einem reparierten Auto wegfährt, bin ich stolz."
+    ],
+    [
+     "Schüler",
+     "Ist die Arbeit nicht sehr schmutzig?"
+    ],
+    [
+     "Lara",
+     "Manchmal schon. Aber wir haben gute Arbeitskleidung, Handschuhe und am Ende eine warme Dusche. Das passt!"
+    ]
+   ]
+  },
+  "de9-02l": {
+   "titel": "Gut vorbereitet ist halb gewonnen",
+   "art": "lesen",
+   "lektion": 2,
+   "dauer": 66.1,
+   "text": [
+    [
+     "",
+     "Gut vorbereitet ist halb gewonnen"
+    ],
+    [
+     "",
+     "Vorher informieren: Schau dir die Internetseite des Betriebs an. Was stellt die Firma her? Wie viele Leute arbeiten dort? Wer gut informiert ist, macht einen guten Eindruck."
+    ],
+    [
+     "",
+     "Antworten üben: Typische Fragen sind: „Warum möchten Sie diesen Beruf lernen?“ – „Was sind Ihre Stärken?“ – „Was machen Sie in Ihrer Freizeit?“ Übe die Antworten laut, zum Beispiel mit Freunden."
+    ],
+    [
+     "",
+     "Die richtige Kleidung: Sie muss nicht teuer sein, aber sauber und passend. Für eine Werkstatt ist ein ordentlicher Pullover besser als ein Anzug."
+    ],
+    [
+     "",
+     "Im Gespräch: Begrüße alle freundlich, setz dich erst, wenn man es dir anbietet, und hör gut zu. Wenn du eine Frage nicht verstehst, frag nach."
+    ],
+    [
+     "",
+     "Am Ende: Stell selbst eine oder zwei Fragen, zum Beispiel: „Wie sieht ein normaler Tag in der Ausbildung aus?“ Bedanke dich für das Gespräch."
+    ]
+   ]
+  },
+  "de9-02h": {
+   "titel": "Erzählen Sie mal …",
+   "art": "hoeren",
+   "lektion": 2,
+   "dauer": 59.4,
+   "text": [
+    [
+     "Herr Becker",
+     "Guten Tag, Malik. Schön, dass Sie da sind. Bitte setzen Sie sich. Erzählen Sie mal: Warum möchten Sie Kfz-Mechatroniker werden?"
+    ],
+    [
+     "Malik",
+     "Guten Tag. Ich interessiere mich schon lange für Autos. Nachdem ich letzten Sommer ein Praktikum bei Ihnen gemacht hatte, war ich ganz sicher: Das ist mein Beruf."
+    ],
+    [
+     "Herr Becker",
+     "Was hat Ihnen im Praktikum am besten gefallen?"
+    ],
+    [
+     "Malik",
+     "Die Fehlersuche mit dem Computer. Und dass ich nach zwei Wochen schon allein Reifen wechseln durfte."
+    ],
+    [
+     "Herr Becker",
+     "Was sind Ihre Stärken?"
+    ],
+    [
+     "Malik",
+     "Ich bin pünktlich und arbeite genau. In Mathe bin ich nicht der Beste, aber ich übe jede Woche mit Nachhilfe."
+    ],
+    [
+     "Herr Becker",
+     "Das ist ehrlich, das gefällt mir. Haben Sie noch Fragen an uns?"
+    ],
+    [
+     "Malik",
+     "Ja. Wie viele Tage pro Woche bin ich in der Schule und wie viele im Betrieb?"
+    ],
+    [
+     "Herr Becker",
+     "Am Anfang zwei Tage Schule und drei Tage Betrieb. Wir melden uns bis Ende des Monats bei Ihnen."
+    ]
+   ]
+  },
+  "de9-03l": {
+   "titel": "Kopieren in drei Minuten",
+   "art": "lesen",
+   "lektion": 3,
+   "dauer": 71.4,
+   "text": [
+    [
+     "",
+     "Kopieren in drei Minuten"
+    ],
+    [
+     "",
+     "Du brauchst: deine Schülerkarte, das Original, Papier im Fach (A4)."
+    ],
+    [
+     "",
+     "Schritt 1: Halte deine Schülerkarte an das Lesegerät. Auf dem Bildschirm siehst du, wie viele Kopien du noch machen darfst."
+    ],
+    [
+     "",
+     "Schritt 2: Klappe den Deckel auf und lege das Original mit der Schrift nach unten auf das Glas. Die Ecke muss am Pfeil liegen."
+    ],
+    [
+     "",
+     "Schritt 3: Wähle auf dem Bildschirm aus: Anzahl der Kopien, Farbe oder Schwarz-Weiß, einseitig oder beidseitig."
+    ],
+    [
+     "",
+     "Schritt 4: Drücke die grüne Start-Taste. Warte, bis alle Kopien fertig sind."
+    ],
+    [
+     "",
+     "Schritt 5: Nimm das Original wieder mit und melde dich ab: Taste „Abmelden“ drücken."
+    ],
+    [
+     "",
+     "Papierstau? Der Bildschirm zeigt, welche Klappe man öffnen muss. Zieh das Papier vorsichtig heraus. Greif nie in das Gerät, wenn die Warnung „Heiß!“ erscheint. Im Zweifel: in der Bibliothek Bescheid sagen."
+    ]
+   ]
+  },
+  "de9-03h": {
+   "titel": "Kannst du mich sehen?",
+   "art": "hoeren",
+   "lektion": 3,
+   "dauer": 54.4,
+   "text": [
+    [
+     "Yusuf",
+     "Ben, hilf mir bitte! Morgen habe ich das Gespräch per Video, und die Webcam geht nicht. Das Bild bleibt schwarz."
+    ],
+    [
+     "Ben",
+     "Keine Panik. Zuerst: Ist die Kamera mit dem Laptop verbunden? Schau, ob das Kabel richtig im USB-Anschluss steckt."
+    ],
+    [
+     "Yusuf",
+     "Ja, das Kabel steckt. Das Licht an der Kamera ist aber aus."
+    ],
+    [
+     "Ben",
+     "Okay. Dann zieh das Kabel noch einmal heraus, warte fünf Sekunden und steck es in einen anderen Anschluss."
+    ],
+    [
+     "Yusuf",
+     "Gemacht … Jetzt leuchtet ein grünes Licht!"
+    ],
+    [
+     "Ben",
+     "Sehr gut. Jetzt öffnest du das Videoprogramm. Unten links ist ein Kamera-Symbol. Darauf klickst du und wählst die Webcam aus."
+    ],
+    [
+     "Yusuf",
+     "Ich sehe mich! Aber das Bild ist ganz dunkel."
+    ],
+    [
+     "Ben",
+     "Dann setz dich mit dem Gesicht zum Fenster, nicht mit dem Rücken. Und mach mit mir einen Test, bevor das echte Gespräch beginnt."
+    ]
+   ]
+  },
+  "de9-04l": {
+   "titel": "Gut gesehen – gut geschützt",
+   "art": "lesen",
+   "lektion": 4,
+   "dauer": 68.9,
+   "text": [
+    [
+     "",
+     "Gut gesehen – gut geschützt"
+    ],
+    [
+     "",
+     "Der Helm: Ein gut sitzender Helm schützt den Kopf bei einem Sturz. Er soll fest sitzen, aber nicht drücken. Nach einem schweren Sturz braucht man einen neuen Helm – auch wenn man keinen Schaden sieht."
+    ],
+    [
+     "",
+     "Sehen und gesehen werden: Im Dunkeln braucht das Fahrrad ein weißes Licht vorne und ein rotes Licht hinten. Helle Kleidung und Reflektoren helfen zusätzlich."
+    ],
+    [
+     "",
+     "Der tote Winkel: Fahrer von großen Lastwagen und Bussen können Radfahrer rechts neben dem Fahrzeug oft nicht sehen. Darum: An der Ampel nie rechts neben einem Lastwagen halten, sondern dahinter warten."
+    ],
+    [
+     "",
+     "Kopfhörer und Handy: Wer laute Musik hört oder aufs Handy schaut, bemerkt Gefahren zu spät. Das Handy bleibt beim Fahren in der Tasche!"
+    ],
+    [
+     "",
+     "E-Scooter: Auch hier gilt: Helm tragen, nur eine Person pro Roller, nicht auf dem Gehweg fahren. Die genauen Regeln, zum Beispiel das Mindestalter, sind von Land zu Land verschieden."
+    ]
+   ]
+  },
+  "de9-04h": {
+   "titel": "Bitte schnallen Sie sich an",
+   "art": "hoeren",
+   "lektion": 4,
+   "dauer": 60.6,
+   "text": [
+    [
+     "Flugbegleiterin",
+     "Meine Damen und Herren, liebe Fluggäste, willkommen an Bord. Bitte hören Sie jetzt aufmerksam zu."
+    ],
+    [
+     "Flugbegleiterin",
+     "Zum Schließen des Sicherheitsgurtes stecken Sie die Metallzunge in das Schloss. Ziehen Sie den Gurt fest. Zum Öffnen heben Sie die Lasche an."
+    ],
+    [
+     "Flugbegleiterin",
+     "Die Notausgänge befinden sich vorne, in der Mitte und hinten. Bei Dunkelheit führen Sie Lichtstreifen auf dem Boden zu den Ausgängen."
+    ],
+    [
+     "Flugbegleiterin",
+     "Bei Druckverlust fallen Sauerstoffmasken automatisch herunter. Ziehen Sie eine Maske zu sich und setzen Sie sie über Mund und Nase. Helfen Sie erst danach anderen Personen."
+    ],
+    [
+     "Flugbegleiterin",
+     "Bitte stellen Sie Ihre elektronischen Geräte jetzt in den Flugmodus. Wir wünschen Ihnen einen angenehmen Flug."
+    ],
+    [
+     "Mia",
+     "Noah, warum soll man zuerst sich selbst die Maske aufsetzen?"
+    ],
+    [
+     "Noah",
+     "Weil man ohne Sauerstoff schnell schwach wird. Nur wer selbst Luft bekommt, kann anderen helfen."
+    ]
+   ]
+  },
+  "de9-05l": {
+   "titel": "Unfall an der Werkbank",
+   "art": "lesen",
+   "lektion": 5,
+   "dauer": 46.2,
+   "text": [
+    [
+     "",
+     "Unfall an der Werkbank"
+    ],
+    [
+     "",
+     "Unfallbericht – Schreinerei Lentz. Name: Ben (Praktikant, 15 Jahre) · Datum: Dienstag, 10.15 Uhr · Ort: Werkstatt, Werkbank 2. Was ist passiert? Ben hatte schon eine Stunde Bretter geschliffen. Nachdem er die Schleifmaschine ausgeschaltet hatte, wollte er sofort den Staub wegwischen. Dabei berührte er die Schleifscheibe, die sich noch drehte. Er verletzte sich am Zeigefinger. Erste Hilfe: Der Meister holte sofort den Erste-Hilfe-Kasten. Die Wunde wurde gereinigt und verbunden. Ben wurde danach zur Ärztin gebracht. Was lernen wir daraus? Warten, bis die Maschine ganz stillsteht. Staub nur mit einem Pinsel entfernen, nie mit der Hand."
+    ]
+   ]
+  },
+  "de9-05h": {
+   "titel": "Pause, Eis, Hochlegen",
+   "art": "hoeren",
+   "lektion": 5,
+   "dauer": 53.6,
+   "text": [
+    [
+     "Ärztin",
+     "Gut, Lina. Gebrochen ist zum Glück nichts. Es ist eine Verstauchung. Jetzt hör bitte genau zu."
+    ],
+    [
+     "Ärztin",
+     "In den nächsten drei Tagen: Fuß schonen, also kein Sport und nicht viel laufen."
+    ],
+    [
+     "Ärztin",
+     "Kühle den Knöchel mehrmals am Tag etwa fünfzehn Minuten. Leg das Eis nie direkt auf die Haut, sondern wickle es in ein Tuch."
+    ],
+    [
+     "Ärztin",
+     "Der Verband soll fest sein, aber nicht zu fest. Wenn die Zehen kalt oder blau werden, mach ihn lockerer."
+    ],
+    [
+     "Ärztin",
+     "Und leg den Fuß so oft wie möglich hoch, am besten höher als das Herz."
+    ],
+    [
+     "Lina",
+     "Wann darf ich wieder Basketball spielen? Am Samstag ist ein Turnier."
+    ],
+    [
+     "Ärztin",
+     "Am Samstag leider noch nicht. Komm in einer Woche zur Kontrolle. Wenn der Schmerz stärker wird, komm sofort."
+    ]
+   ]
+  },
+  "de9-06l": {
+   "titel": "Alkohol: Ab wann ist er erlaubt?",
+   "art": "lesen",
+   "lektion": 6,
+   "dauer": 58.1,
+   "text": [
+    [
+     "",
+     "Alkohol: Ab wann ist er erlaubt?"
+    ],
+    [
+     "",
+     "Alkohol ist für Jugendliche besonders gefährlich: Der Körper und das Gehirn wachsen noch. Schon kleine Mengen wirken stärker als bei Erwachsenen. Darum gibt es in vielen Ländern Gesetze zum Jugendschutz."
+    ],
+    [
+     "",
+     "Luxemburg: Es ist untersagt, alkoholische Getränke an Jugendliche unter 16 Jahren zu verkaufen oder auszuschenken."
+    ],
+    [
+     "",
+     "Deutschland: Bier, Wein und Sekt dürfen an Jugendliche ab 16 Jahren verkauft werden. Schnaps und andere starke Getränke sind erst ab 18 erlaubt."
+    ],
+    [
+     "",
+     "Frankreich: Hier ist der Verkauf von Alkohol an alle Minderjährigen verboten – also an alle unter 18."
+    ],
+    [
+     "",
+     "Verkäuferinnen und Verkäufer dürfen nach einem Ausweis fragen. Wer Alkohol an zu junge Menschen verkauft, kann bestraft werden."
+    ]
+   ]
+  },
+  "de9-06h": {
+   "titel": "Alkohol erst ab 18?",
+   "art": "hoeren",
+   "lektion": 6,
+   "dauer": 67.9,
+   "text": [
+    [
+     "Frau Sommer",
+     "Unsere Frage heute: Sollte man Alkohol überall erst ab achtzehn verkaufen dürfen? Noah, du fängst an."
+    ],
+    [
+     "Noah",
+     "Ich bin dafür. Das Gehirn entwickelt sich noch bis über zwanzig. Und eine klare Regel ist einfacher: achtzehn, Punkt. So wie in Frankreich."
+    ],
+    [
+     "Chloe",
+     "Ich sehe das anders. Ein Verbot allein hilft nicht. Wer trinken will, bekommt den Alkohol von Älteren. Wichtiger ist, dass man gut informiert ist."
+    ],
+    [
+     "Amira",
+     "Darf ich etwas ergänzen? Viele Jugendliche trinken gar keinen Alkohol. Das finde ich wichtig: Nein sagen ist völlig normal."
+    ],
+    [
+     "Noah",
+     "Da gebe ich dir recht. Aber ein Gesetz schützt auch vor Gruppendruck. Man kann einfach sagen: Ich darf noch nicht."
+    ],
+    [
+     "Chloe",
+     "Okay, das ist ein gutes Argument. Trotzdem finde ich: Aufklärung in der Schule ist genauso wichtig wie ein Gesetz."
+    ],
+    [
+     "Frau Sommer",
+     "Dann halten wir fest: Gesetz und Aufklärung gehören zusammen. Und wer Hilfe braucht, kann jederzeit mit uns reden."
+    ]
+   ]
+  },
+  "de9-07l": {
+   "titel": "Jung und im Job: Das musst du wissen",
+   "art": "lesen",
+   "lektion": 7,
+   "dauer": 62.4,
+   "text": [
+    [
+     "",
+     "Jung und im Job: Das musst du wissen"
+    ],
+    [
+     "",
+     "In Luxemburg darf man ab 15 Jahren einen Ferienjob machen. Dafür braucht man einen schriftlichen Vertrag. Er regelt, wie lange man arbeitet und wie viel man verdient."
+    ],
+    [
+     "",
+     "Für Jugendliche unter 18 gelten besondere Schutzregeln: Sie dürfen höchstens 8 Stunden am Tag und 40 Stunden in der Woche arbeiten."
+    ],
+    [
+     "",
+     "Pausen sind Pflicht: Wer mehr als viereinhalb Stunden arbeitet, bekommt mindestens 30 Minuten Pause."
+    ],
+    [
+     "",
+     "Nachtarbeit ist für Jugendliche grundsätzlich verboten. Gefährliche Arbeiten, zum Beispiel mit giftigen Stoffen oder an gefährlichen Maschinen, sind ebenfalls nicht erlaubt."
+    ],
+    [
+     "",
+     "Wenn etwas nicht stimmt, kann man sich beraten lassen – zum Beispiel bei der Arbeitsinspektion (ITM) oder bei einer Gewerkschaft. Niemand muss Angst haben, nach seinen Rechten zu fragen."
+    ]
+   ]
+  },
+  "de9-07h": {
+   "titel": "Das ist doch nicht erlaubt!",
+   "art": "hoeren",
+   "lektion": 7,
+   "dauer": 63.1,
+   "text": [
+    [
+     "Sami",
+     "Hey Chloe, hast du kurz Zeit? Ich brauche einen Rat."
+    ],
+    [
+     "Chloe",
+     "Klar. Was ist los?"
+    ],
+    [
+     "Sami",
+     "Ich arbeite doch im Eiscafé am See. Gestern habe ich von zehn Uhr morgens bis acht Uhr abends gearbeitet. Fast ohne Pause."
+    ],
+    [
+     "Chloe",
+     "Zehn Stunden? Moment, ich schreibe mit. Du bist doch erst sechzehn, oder?"
+    ],
+    [
+     "Sami",
+     "Ja. Und einen Vertrag habe ich auch noch nicht bekommen. Der Chef sagt, das machen wir später."
+    ],
+    [
+     "Chloe",
+     "Das ist ein Problem. Für Jugendliche sind höchstens acht Stunden am Tag erlaubt. Und ohne schriftlichen Vertrag bist du nicht gut geschützt."
+    ],
+    [
+     "Sami",
+     "Aber ich will den Job nicht verlieren."
+    ],
+    [
+     "Chloe",
+     "Verstehe ich. Sprich zuerst ruhig mit dem Chef und bitte um den Vertrag. Wenn sich nichts ändert, kannst du dich bei der Arbeitsinspektion beraten lassen. Und erzähl es einer erwachsenen Vertrauensperson."
+    ],
+    [
+     "Sami",
+     "Okay. Danke, dass du mir zuhörst."
+    ]
+   ]
+  },
+  "de9-08l": {
+   "titel": "So wird deine Präsentation gut",
+   "art": "lesen",
+   "lektion": 8,
+   "dauer": 57.4,
+   "text": [
+    [
+     "",
+     "So wird deine Präsentation gut"
+    ],
+    [
+     "",
+     "Der Anfang ist wichtig: Beginne mit einer Frage, einem Bild oder einer überraschenden Zahl. Dann sag kurz, worüber du sprichst."
+    ],
+    [
+     "",
+     "Die Gliederung: höchstens drei bis vier Teile. Zeig sie am Anfang, dann können alle besser folgen."
+    ],
+    [
+     "",
+     "Stichwortkarten statt ganzer Sätze: Schreib nur wichtige Wörter in großer Schrift. So schaust du das Publikum an und liest nicht ab."
+    ],
+    [
+     "",
+     "Die Folien: wenig Text, große Bilder, gut lesbare Schrift. Eine Folie pro Gedanke."
+    ],
+    [
+     "",
+     "Sprechen: langsam, laut und mit Pausen. Nervosität ist normal – atme vor dem Start tief durch."
+    ],
+    [
+     "",
+     "Der Schluss: Fasse das Wichtigste in einem Satz zusammen und frag: „Habt ihr Fragen?“"
+    ]
+   ]
+  },
+  "de9-08h": {
+   "titel": "Gewinne einen Tag im Radiostudio!",
+   "art": "hoeren",
+   "lektion": 8,
+   "dauer": 60.0,
+   "text": [
+    [
+     "Moderatorin",
+     "Achtung, Wettbewerb! Ihr seid zwischen vierzehn und achtzehn und wolltet schon immer wissen, wie Radio funktioniert? Dann gewinnt einen Tag bei uns im Studio!"
+    ],
+    [
+     "Moderatorin",
+     "So geht’s: Nehmt eine Sprachnachricht von höchstens einer Minute auf. Stellt euch vor und sagt, welchen Beruf ihr später machen wollt – und warum."
+    ],
+    [
+     "Moderatorin",
+     "Schickt die Nachricht bis Freitag um achtzehn Uhr über das Formular auf unserer Internetseite. Wichtig: Ihr braucht die Erlaubnis eurer Eltern oder einer anderen erziehungsberechtigten Person."
+    ],
+    [
+     "Moderatorin",
+     "Die drei besten Nachrichten spielen wir nächste Woche im Radio. Viel Glück!"
+    ],
+    [
+     "Lina",
+     "Noah, hast du das gehört? Da mache ich mit!"
+    ],
+    [
+     "Noah",
+     "Cool! Aber denk daran: höchstens eine Minute. Mach dir Stichwortkarten, sonst redest du zu lange."
+    ],
+    [
+     "Lina",
+     "Gute Idee. Nachdem ich die Karten geschrieben habe, übe ich mit dir, okay?"
+    ]
+   ]
+  }
+ }
+}

@@ -1,0 +1,702 @@
+{
+ "modul": "vs8",
+ "titel": {
+  "de": "Mut statt Gewalt",
+  "fr": "Le courage plutôt que la violence"
+ },
+ "sprache": "de",
+ "spuren": {
+  "vs8-01l": {
+   "titel": "Gewalt hat viele Gesichter",
+   "art": "lesen",
+   "lektion": 1,
+   "dauer": 92.2,
+   "text": [
+    [
+     "",
+     "Gewalt hat viele Gesichter"
+    ],
+    [
+     "",
+     "Von Gewalt spricht man, wenn jemand einem anderen Menschen absichtlich schadet – an Körper, Seele oder Eigentum. Gewalt hat viele Formen."
+    ],
+    [
+     "",
+     "Körperliche Gewalt."
+    ],
+    [
+     "",
+     "Schlagen, treten, schubsen, festhalten, mit einer Waffe bedrohen. Körperliche Gewalt sieht man oft, zum Beispiel an blauen Flecken."
+    ],
+    [
+     "",
+     "Seelische Gewalt."
+    ],
+    [
+     "",
+     "Auslachen, beleidigen, drohen, erpressen, ausschließen, Gerüchte verbreiten. Diese Gewalt sieht man nicht – aber sie kann genauso wehtun und lange Spuren hinterlassen."
+    ],
+    [
+     "",
+     "Digitale Gewalt."
+    ],
+    [
+     "",
+     "Gemeine Nachrichten, peinliche Fotos oder Videos teilen, jemanden aus dem Chat werfen, ein falsches Profil anlegen. Das Internet vergisst nicht, und die Gewalt geht bis ins Kinderzimmer."
+    ],
+    [
+     "",
+     "Gewalt gegen Sachen."
+    ],
+    [
+     "",
+     "Etwas absichtlich kaputt machen, zum Beispiel ein Fahrrad oder eine Bushaltestelle."
+    ],
+    [
+     "",
+     "Wichtig."
+    ],
+    [
+     "",
+     "Gewalt ist nie in Ordnung – egal wo, auch nicht zu Hause. Wer Gewalt erlebt, ist nicht schuld. Hilfe gibt es bei Vertrauenspersonen, beim SePAS, beim Kinder- und Jugendtelefon 116 111, bei der BEE SECURE Helpline 8002 1234 und im Notfall bei der Polizei: 113."
+    ]
+   ]
+  },
+  "vs8-01h": {
+   "titel": "Nur Spaß?",
+   "art": "hoeren",
+   "lektion": 1,
+   "dauer": 50.1,
+   "text": [
+    [
+     "Noah",
+     "In meiner Klasse gibt es so ein Spiel. Jeden Tag nehmen ein paar Jungs Kevins Mütze und werfen sie sich zu. Er rennt hinterher, alle lachen."
+    ],
+    [
+     "Jana",
+     "Lacht Kevin auch?"
+    ],
+    [
+     "Noah",
+     "Am Anfang schon. Jetzt nicht mehr. Gestern hat er geweint. Die anderen sagen: „Ist doch nur Spaß.“"
+    ],
+    [
+     "Jana",
+     "Spaß ist es, wenn alle lachen können. Wenn einer weint, ist es kein Spaß mehr."
+    ],
+    [
+     "Noah",
+     "Aber sie schlagen ihn ja nicht."
+    ],
+    [
+     "Jana",
+     "Gewalt ist nicht nur schlagen. Wenn jemand jeden Tag gedemütigt wird, ist das seelische Gewalt."
+    ],
+    [
+     "Noah",
+     "Hm. Was soll ich machen? Ich will nicht, dass sie dann auf mich losgehen."
+    ],
+    [
+     "Jana",
+     "Du musst das nicht allein lösen. Rede mit eurer Klassenlehrerin. Und frag Kevin, ob er in der Pause mit dir abhängen will."
+    ]
+   ]
+  },
+  "vs8-02l": {
+   "titel": "Aggression ist nicht gleich Gewalt",
+   "art": "lesen",
+   "lektion": 2,
+   "dauer": 69.2,
+   "text": [
+    [
+     "",
+     "Aggression ist nicht gleich Gewalt"
+    ],
+    [
+     "",
+     "Aggression ist ein starkes Gefühl, ein innerer Druck: Man ist wütend, will sich wehren oder angreifen. Das kennt jeder Mensch. Aggression kann sogar nützlich sein, zum Beispiel, wenn sie uns Kraft gibt, uns gegen Unrecht zu wehren."
+    ],
+    [
+     "",
+     "Gewalt dagegen ist eine Handlung: Jemand tut einem anderen absichtlich weh. Zwischen Gefühl und Handlung liegt ein kleiner Moment. In diesem Moment kann man entscheiden."
+    ],
+    [
+     "",
+     "Woher kommt Gewalt."
+    ],
+    [
+     "",
+     "Es gibt nie nur einen Grund. Oft kommen mehrere zusammen: Frust und das Gefühl, ungerecht behandelt zu werden. Angst oder Unsicherheit. Gruppendruck: Man will dazugehören oder stark wirken. Eigene Gewalterfahrungen: Wer selbst Gewalt erlebt hat, gibt sie manchmal weiter. Alkohol und Drogen, die die Kontrolle schwächen."
+    ],
+    [
+     "",
+     "Der Wut-Eisberg."
+    ],
+    [
+     "",
+     "Wut ist oft nur die Spitze eines Eisbergs. Unter der Wasseroberfläche liegen andere Gefühle, die man nicht sieht: Angst, Scham, Trauer, Eifersucht, Hilflosigkeit. Wer versteht, was unter seiner Wut liegt, kann besser damit umgehen."
+    ]
+   ]
+  },
+  "vs8-02h": {
+   "titel": "Was hinter der Wut lag",
+   "art": "hoeren",
+   "lektion": 2,
+   "dauer": 56.5,
+   "text": [
+    [
+     "Lehrer",
+     "Finn, du hast Luca so geschubst, dass er hingefallen ist. Was war los?"
+    ],
+    [
+     "Finn",
+     "Er hat mich provoziert! Er hat gesagt, ich bin zu dumm für Mathe."
+    ],
+    [
+     "Lehrer",
+     "Das war gemein von ihm. Aber schubsen ist keine Lösung. Was hast du in dem Moment gefühlt – außer Wut?"
+    ],
+    [
+     "Finn",
+     "Keine Ahnung … Ich hatte gerade die Mathearbeit zurückbekommen. Wieder eine ungenügende Note. Alle haben es gesehen."
+    ],
+    [
+     "Lehrer",
+     "Und wie hat sich das angefühlt?"
+    ],
+    [
+     "Finn",
+     "Peinlich. Ich hatte so viel gelernt. Ich dachte, ich schaffe es nie."
+    ],
+    [
+     "Lehrer",
+     "Dann war unter der Wut vielleicht Scham und Enttäuschung. Das ist verständlich. Die Frage ist: Was machst du nächstes Mal mit so einem Gefühl?"
+    ],
+    [
+     "Finn",
+     "Vielleicht … rausgehen, bevor ich explodiere. Und ich entschuldige mich bei Luca. Aber er soll sich auch entschuldigen."
+    ],
+    [
+     "Lehrer",
+     "Einverstanden. Und für Mathe suchen wir dir einen Lern-Buddy."
+    ]
+   ]
+  },
+  "vs8-03l": {
+   "titel": "Die Wut-Ampel",
+   "art": "lesen",
+   "lektion": 3,
+   "dauer": 87.9,
+   "text": [
+    [
+     "",
+     "Die Wut-Ampel"
+    ],
+    [
+     "",
+     "Wut kommt oft blitzschnell. Damit sie nicht zu Gewalt wird, hilft die Wut-Ampel."
+    ],
+    [
+     "",
+     "Rot: Stopp."
+    ],
+    [
+     "",
+     "Sobald du merkst, dass du wütend wirst – Herzklopfen, heißes Gesicht, Fäuste –, sagst du innerlich: Stopp! Nichts sagen, nichts tun. Atme tief ein und zähle bis vier, halte kurz die Luft an und atme langsam aus. Wiederhole das ein paar Mal."
+    ],
+    [
+     "",
+     "Gelb: Nachdenken."
+    ],
+    [
+     "",
+     "Frag dich: Was fühle ich eigentlich? Was will ich erreichen? Was passiert, wenn ich jetzt zuschlage oder schreie? Wenn es nicht geht, geh kurz raus – zum Beispiel mit den Worten: „Ich brauche eine Pause.“ Das ist keine Schwäche, sondern Stärke."
+    ],
+    [
+     "",
+     "Grün: Handeln."
+    ],
+    [
+     "",
+     "Jetzt, mit etwas Abstand, wählst du eine gute Lösung: sagen, was dich stört (mit einer Ich-Botschaft), Hilfe holen oder später darüber reden."
+    ],
+    [
+     "",
+     "Wut rauslassen – ohne Schaden."
+    ],
+    [
+     "",
+     "Manchmal hilft es, die Energie loszuwerden: rennen, kurz an die frische Luft gehen, laut Musik hören, Wut aufschreiben und das Blatt zerreißen. Jeder Mensch hat andere Strategien. Wichtig ist nur: niemandem schaden – auch nicht sich selbst."
+    ]
+   ]
+  },
+  "vs8-03h": {
+   "titel": "Die rote Karte",
+   "art": "hoeren",
+   "lektion": 3,
+   "dauer": 61.9,
+   "text": [
+    [
+     "Tom",
+     "Gestern beim Spiel hat mich einer von hinten umgetreten. Der Schiri hat nichts gepfiffen. Ich war so wütend, ich wollte auf den Typen los."
+    ],
+    [
+     "Chloé",
+     "Und? Hast du?"
+    ],
+    [
+     "Tom",
+     "Nein. Ich hab an die Ampel gedacht, die wir in Vie et société gemacht haben. Rot: Ich bin stehen geblieben und habe dreimal tief geatmet. Das hat sich komisch angefühlt, mitten auf dem Platz."
+    ],
+    [
+     "Chloé",
+     "Und dann?"
+    ],
+    [
+     "Tom",
+     "Gelb: Ich hab gedacht, wenn ich ihn jetzt schubse, kriege ich die rote Karte und fehle beim Finale. Das wollte der doch nur."
+    ],
+    [
+     "Chloé",
+     "Und Grün?"
+    ],
+    [
+     "Tom",
+     "Ich bin zum Schiri gegangen und habe ganz ruhig gesagt: „Das war ein Foul.“ Er hat sich die Stelle angeschaut und dem anderen Gelb gegeben. Und wir haben gewonnen!"
+    ],
+    [
+     "Chloé",
+     "Respekt. Früher wärst du explodiert."
+    ],
+    [
+     "Tom",
+     "Ich weiß. Ist nicht immer leicht. Aber es fühlt sich besser an, wenn ich entscheide – und nicht meine Wut."
+    ]
+   ]
+  },
+  "vs8-04l": {
+   "titel": "Mut im Alltag",
+   "art": "lesen",
+   "lektion": 4,
+   "dauer": 69.3,
+   "text": [
+    [
+     "",
+     "Mut im Alltag"
+    ],
+    [
+     "",
+     "Zivilcourage heißt: im Alltag Mut zeigen, wenn jemand bedroht, beleidigt oder angegriffen wird – auch wenn man die Person nicht kennt."
+    ],
+    [
+     "",
+     "Der Zuschauereffekt."
+    ],
+    [
+     "",
+     "Forscher haben herausgefunden: Je mehr Menschen etwas beobachten, desto seltener hilft der Einzelne. Jeder denkt: „Ein anderer wird schon etwas tun.“ Darum hilft manchmal niemand – oder erst spät. Wer diesen Effekt kennt, kann ihn durchbrechen."
+    ],
+    [
+     "",
+     "Helfen, ohne sich in Gefahr zu bringen."
+    ],
+    [
+     "",
+     "Zivilcourage heißt nicht, den Helden zu spielen. Niemand muss sich zwischen Menschen stellen, die sich prügeln. Diese Regeln helfen:"
+    ],
+    [
+     "",
+     "Hinsehen und die Lage einschätzen. Andere ansprechen – ganz direkt: „Sie im roten Pulli, bitte rufen Sie die Polizei!“ Den Notruf wählen: 113 (Polizei) oder 112 (Rettung). Laut sein und andere aufmerksam machen. Sich um das Opfer kümmern. Zeugin oder Zeuge sein: sich merken, was passiert ist, und es später erzählen."
+    ],
+    [
+     "",
+     "Auch im Netz kann man Zivilcourage zeigen: Hasskommentare melden, Betroffenen schreiben, nicht weiterleiten."
+    ]
+   ]
+  },
+  "vs8-04h": {
+   "titel": "Sie im grünen Mantel!",
+   "art": "hoeren",
+   "lektion": 4,
+   "dauer": 60.9,
+   "text": [
+    [
+     "Jana",
+     "Gestern im Bus haben zwei ältere Jungs einen Jungen mit Kippa angepöbelt. Sie haben ihm die Kippa vom Kopf gerissen und gelacht."
+    ],
+    [
+     "Ben",
+     "Und keiner hat was gemacht?"
+    ],
+    [
+     "Jana",
+     "Erst nicht. Der Bus war voll, aber alle haben auf ihr Handy geschaut. Ich hatte voll Angst."
+    ],
+    [
+     "Ben",
+     "Was hast du gemacht?"
+    ],
+    [
+     "Jana",
+     "Ich habe an die Regeln gedacht. Ich habe mich nicht mit den Jungs angelegt. Ich habe eine Frau direkt angesprochen: „Sie im grünen Mantel, bitte sagen Sie dem Busfahrer Bescheid!“ Und ich habe laut gesagt: „Hört auf, das ist nicht okay!“"
+    ],
+    [
+     "Ben",
+     "Und dann?"
+    ],
+    [
+     "Jana",
+     "Plötzlich sind drei andere aufgestanden und haben auch was gesagt. Der Busfahrer hat angehalten. Die Jungs sind ausgestiegen. Ich habe mich dann zu dem Jungen gesetzt."
+    ],
+    [
+     "Ben",
+     "Krass. Du warst mutig."
+    ],
+    [
+     "Jana",
+     "Ich war nicht allein mutig. Es brauchte nur eine, die anfängt."
+    ]
+   ]
+  },
+  "vs8-05l": {
+   "titel": "Drei, die Nein sagten",
+   "art": "lesen",
+   "lektion": 5,
+   "dauer": 102.2,
+   "text": [
+    [
+     "",
+     "Drei, die Nein sagten"
+    ],
+    [
+     "",
+     "Mahatma Gandhi."
+    ],
+    [
+     "",
+     "Gandhi wollte, dass Indien von Großbritannien unabhängig wird – aber ohne Gewalt. 1930 lief er mit vielen Menschen fast 400 Kilometer zum Meer, um selbst Salz zu gewinnen. Das war verboten, denn die Briten verdienten am Salz. Tausende wurden verhaftet. 1947 wurde Indien unabhängig."
+    ],
+    [
+     "",
+     "Rosa Parks."
+    ],
+    [
+     "",
+     "In vielen Städten im Süden der USA mussten schwarze Menschen in Bussen hinten sitzen und weißen Fahrgästen Platz machen. Am 1. Dezember 1955 weigerte sich Rosa Parks, ihren Platz aufzugeben. Sie wurde verhaftet. Daraufhin boykottierten schwarze Menschen in ihrer Stadt die Busse: Über ein Jahr lang fuhren sie nicht mehr mit dem Bus – bis die Regel fiel."
+    ],
+    [
+     "",
+     "Martin Luther King."
+    ],
+    [
+     "",
+     "Der Pfarrer Martin Luther King kämpfte gewaltfrei dafür, dass Schwarze die gleichen Rechte bekommen. 1963 sagte er vor über 200 000 Menschen: „Ich habe einen Traum“ – dass seine Kinder nicht nach ihrer Hautfarbe, sondern nach ihrem Charakter beurteilt werden. 1964 bekam er den Friedensnobelpreis."
+    ],
+    [
+     "",
+     "Gewaltfrei heißt nicht schwach."
+    ],
+    [
+     "",
+     "Gewaltfreier Widerstand braucht viel Mut und Ausdauer: Man wehrt sich, ohne zurückzuschlagen. Gerade das zeigt allen, wer im Unrecht ist."
+    ]
+   ]
+  },
+  "vs8-05h": {
+   "titel": "Hätte ich zurückgeschlagen?",
+   "art": "hoeren",
+   "lektion": 5,
+   "dauer": 55.5,
+   "text": [
+    [
+     "Yusuf",
+     "Ehrlich, ich verstehe das nicht ganz. Wenn mich jemand so ungerecht behandelt, will ich mich wehren."
+    ],
+    [
+     "Lea",
+     "Rosa Parks hat sich doch gewehrt. Sie ist einfach sitzen geblieben."
+    ],
+    [
+     "Yusuf",
+     "Ja, aber sie hätte sich auch richtig wehren können."
+    ],
+    [
+     "Lea",
+     "Und dann? Dann hätten alle gesagt: „Seht ihr, die sind gewalttätig.“ Die Polizei hätte einen Grund gehabt, noch härter vorzugehen."
+    ],
+    [
+     "Yusuf",
+     "Hm. So habe ich das noch nicht gesehen. Weil sie ruhig geblieben ist, haben alle gesehen, wer im Unrecht war."
+    ],
+    [
+     "Lea",
+     "Genau. Und es waren Tausende, die mitgemacht haben. Ein Jahr lang zu Fuß zur Arbeit gehen, statt Bus zu fahren! Das ist hart."
+    ],
+    [
+     "Yusuf",
+     "Okay. Gewaltfrei heißt also nicht: alles hinnehmen."
+    ],
+    [
+     "Lea",
+     "Nein. Es heißt: sich wehren – aber klug."
+    ]
+   ]
+  },
+  "vs8-06l": {
+   "titel": "Gleiche Rechte für alle",
+   "art": "lesen",
+   "lektion": 6,
+   "dauer": 70.3,
+   "text": [
+    [
+     "",
+     "Gleiche Rechte für alle"
+    ],
+    [
+     "",
+     "Von Diskriminierung spricht man, wenn ein Mensch schlechter behandelt wird, nur weil er zu einer bestimmten Gruppe gehört – ohne dass es dafür einen sachlichen Grund gibt."
+    ],
+    [
+     "",
+     "Gründe für Diskriminierung."
+    ],
+    [
+     "",
+     "Menschen werden zum Beispiel diskriminiert wegen ihrer Herkunft oder Hautfarbe, ihrer Religion, ihres Geschlechts, einer Behinderung, ihres Alters oder weil sie Menschen des gleichen Geschlechts lieben."
+    ],
+    [
+     "",
+     "Wo passiert das."
+    ],
+    [
+     "",
+     "Bei der Suche nach einer Wohnung oder einer Lehrstelle, am Eingang einer Disco, in der Schule, im Internet. Oft ist es versteckt: Eine Wohnung ist „leider schon vergeben“, wenn ein bestimmter Name am Telefon fällt."
+    ],
+    [
+     "",
+     "Das Gesetz schützt."
+    ],
+    [
+     "",
+     "In Luxemburg und in der ganzen Europäischen Union ist Diskriminierung verboten. Wer diskriminiert wird, kann sich beim Zentrum für Gleichbehandlung (CET) beraten lassen, kostenlos. Auch die Polizei hilft, wenn Menschen beleidigt oder angegriffen werden."
+    ],
+    [
+     "",
+     "Was kann ich tun."
+    ],
+    [
+     "",
+     "Nicht mitmachen. Betroffenen zur Seite stehen. Diskriminierung melden – in der Schule, im Netz, bei der Polizei. Und eigene Vorurteile prüfen."
+    ]
+   ]
+  },
+  "vs8-06h": {
+   "titel": "Leider schon vergeben",
+   "art": "hoeren",
+   "lektion": 6,
+   "dauer": 55.3,
+   "text": [
+    [
+     "Sami",
+     "Guten Tag, mein Name ist Sami Haddad. Ich habe Ihre Anzeige gesehen und möchte mich für die Lehrstelle als Koch bewerben."
+    ],
+    [
+     "Chef",
+     "Ach so … Die Stelle ist leider schon vergeben. Tut mir leid. Auf Wiederhören."
+    ],
+    [
+     "Sami",
+     "Schon wieder. Das ist das dritte Mal."
+    ],
+    [
+     "Lea",
+     "Komisch. Die Anzeige ist von heute Morgen. Weißt du was? Ich rufe an."
+    ],
+    [
+     "Chef",
+     "Restaurant zur Mühle, guten Tag."
+    ],
+    [
+     "Lea",
+     "Guten Tag, Lea Schmit. Ist die Lehrstelle als Köchin noch frei?"
+    ],
+    [
+     "Chef",
+     "Ja, natürlich! Schicken Sie mir Ihre Unterlagen."
+    ],
+    [
+     "Sami",
+     "Siehst du? Es liegt an meinem Namen."
+    ],
+    [
+     "Lea",
+     "Das ist Diskriminierung, Sami. Das ist verboten. Lass uns morgen mit der Beraterin in der Schule reden. Und es gibt eine Stelle, die hilft: das Zentrum für Gleichbehandlung."
+    ]
+   ]
+  },
+  "vs8-07l": {
+   "titel": "Damit es nie wieder geschieht",
+   "art": "lesen",
+   "lektion": 7,
+   "dauer": 95.7,
+   "text": [
+    [
+     "",
+     "Damit es nie wieder geschieht"
+    ],
+    [
+     "",
+     "Die Treppe des Hasses."
+    ],
+    [
+     "",
+     "Verfolgung beginnt nicht von heute auf morgen. Oft steigt Hass Stufe um Stufe: Zuerst gibt es Vorurteile. Dann abwertende Worte und Witze. Dann Diskriminierung: Menschen werden ausgeschlossen. Dann Gewalt. Und am Ende kann Verfolgung stehen, bis hin zum Völkermord. Je früher Menschen sich dagegenstellen, desto leichter lässt sich der Weg nach oben stoppen."
+    ],
+    [
+     "",
+     "Die Shoah."
+    ],
+    [
+     "",
+     "Das schrecklichste Beispiel ist die Shoah, auch Holocaust genannt. Die Nationalsozialisten in Deutschland verbreiteten Hass auf Jüdinnen und Juden. Erst wurden sie beschimpft, dann aus Schulen und Berufen ausgeschlossen, dann ihrer Wohnungen beraubt. Im Zweiten Weltkrieg wurden rund sechs Millionen Jüdinnen und Juden ermordet, auch viele, die in Luxemburg gelebt hatten. Auch Sinti und Roma, Menschen mit Behinderung und viele andere wurden verfolgt und getötet."
+    ],
+    [
+     "",
+     "Verfolgung heute."
+    ],
+    [
+     "",
+     "Auch heute werden in manchen Ländern Menschen wegen ihrer Religion, ihrer Meinung oder ihrer Volksgruppe verfolgt."
+    ],
+    [
+     "",
+     "Das Recht auf Asyl."
+    ],
+    [
+     "",
+     "Wer verfolgt wird, darf nach den Menschenrechten in einem anderen Land Schutz suchen: das Recht auf Asyl. Die Genfer Flüchtlingskonvention von 1951 regelt diesen Schutz."
+    ]
+   ]
+  },
+  "vs8-07h": {
+   "titel": "Warum erinnern wir uns?",
+   "art": "hoeren",
+   "lektion": 7,
+   "dauer": 63.1,
+   "text": [
+    [
+     "Mia",
+     "Ich verstehe nicht, wie Menschen so etwas tun konnten. Das waren doch ganz normale Leute."
+    ],
+    [
+     "Lehrerin",
+     "Ja, das ist das Erschreckende. Viele haben mitgemacht. Noch viel mehr haben weggeschaut."
+    ],
+    [
+     "Mia",
+     "Aber warum müssen wir uns heute noch daran erinnern? Das ist doch so lange her."
+    ],
+    [
+     "Lehrerin",
+     "Weil es wieder passieren kann. Die Shoah hat nicht mit Lagern angefangen, sondern mit Worten, mit Witzen, mit Wegschauen. Wer das weiß, merkt früher, wenn etwas schiefläuft."
+    ],
+    [
+     "Mia",
+     "Wie in der Treppe des Hasses."
+    ],
+    [
+     "Lehrerin",
+     "Genau. Und noch etwas: Die Opfer hatten Namen, Familien, Träume. Wenn wir uns an sie erinnern, geben wir ihnen ein Stück ihrer Würde zurück."
+    ],
+    [
+     "Mia",
+     "In der Ausstellung war ein Brief von einem Mädchen in meinem Alter. Sie wollte Tänzerin werden."
+    ],
+    [
+     "Lehrerin",
+     "Siehst du. Erinnern heißt auch: Wir lassen nicht zu, dass so etwas noch einmal geschieht."
+    ]
+   ]
+  },
+  "vs8-08l": {
+   "titel": "Ein Wort in vielen Sprachen",
+   "art": "lesen",
+   "lektion": 8,
+   "dauer": 73.1,
+   "text": [
+    [
+     "",
+     "Ein Wort in vielen Sprachen"
+    ],
+    [
+     "",
+     "Juden grüßen sich mit „Schalom“, Muslime mit „Salam“. Beide Wörter bedeuten Frieden. Viele Religionen stellen den Frieden in die Mitte."
+    ],
+    [
+     "",
+     "Was Religionen sagen."
+    ],
+    [
+     "",
+     "In der Bibel sagt Jesus: „Selig sind, die Frieden stiften.“ Im Koran heißt es, dass Gott die Menschen verschieden geschaffen hat, damit sie einander kennenlernen. Im Hinduismus und Buddhismus gibt es die Lehre von Ahimsa: keinem Lebewesen Schaden zufügen. Auch Menschen ohne Religion setzen sich für Frieden ein, zum Beispiel mit den Menschenrechten."
+    ],
+    [
+     "",
+     "Und doch: Gewalt im Namen der Religion."
+    ],
+    [
+     "",
+     "Leider haben Menschen auch im Namen von Religionen Kriege geführt und Gewalt ausgeübt. Viele Gläubige sagen: Damit wird die Religion missbraucht. Darum ist es wichtig, dass Religionen miteinander im Gespräch bleiben – auch in Luxemburg."
+    ],
+    [
+     "",
+     "Versöhnung."
+    ],
+    [
+     "",
+     "Frieden braucht oft Versöhnung: Wer Unrecht getan hat, sieht es ein und entschuldigt sich. Er versucht, es wiedergutzumachen. Wer verletzt wurde, kann – wenn er es möchte – verzeihen. Verzeihen heißt nicht vergessen. Aber es kann helfen, wieder frei zu werden."
+    ]
+   ]
+  },
+  "vs8-08h": {
+   "titel": "Es tut mir leid",
+   "art": "hoeren",
+   "lektion": 8,
+   "dauer": 55.2,
+   "text": [
+    [
+     "Ben",
+     "Amira, hast du kurz Zeit? Ich will mich entschuldigen. Wegen des Videos."
+    ],
+    [
+     "Amira",
+     "Ach so. Jetzt, wo es schon alle gesehen haben."
+    ],
+    [
+     "Ben",
+     "Ich weiß. Es war dumm. Ich fand es in dem Moment lustig und habe nicht nachgedacht, wie es für dich ist. Es tut mir wirklich leid."
+    ],
+    [
+     "Amira",
+     "Es war richtig peinlich. Leute, die ich gar nicht kenne, haben mich darauf angesprochen."
+    ],
+    [
+     "Ben",
+     "Ich habe es gelöscht und in den Chat geschrieben, dass alle es löschen sollen. Und dass es meine Schuld war, nicht deine."
+    ],
+    [
+     "Amira",
+     "Echt? Das hast du geschrieben?"
+    ],
+    [
+     "Ben",
+     "Ja. Und wenn noch jemand was sagt, sag mir Bescheid. Dann kläre ich das."
+    ],
+    [
+     "Amira",
+     "Okay. Ich bin noch ein bisschen sauer. Aber … danke, dass du es ehrlich gesagt hast. Das ist nicht so leicht."
+    ]
+   ]
+  }
+ }
+}

@@ -1,0 +1,494 @@
+{
+ "modul": "at6",
+ "titel": {
+  "de": "Garten und Natur",
+  "fr": "Jardin et nature"
+ },
+ "sprache": "de",
+ "spuren": {
+  "at6-01l": {
+   "titel": "Was eine Pflanze zum Leben braucht",
+   "art": "lesen",
+   "lektion": 1,
+   "dauer": 59.0,
+   "text": [
+    [
+     "",
+     "Was eine Pflanze zum Leben braucht"
+    ],
+    [
+     "",
+     "Eine Pflanze braucht Licht, Wasser, Luft, Nährstoffe aus dem Boden und Wärme. Fehlt etwas davon lange, wird sie schwach oder stirbt."
+    ],
+    [
+     "",
+     "Jeder Teil hat eine Aufgabe."
+    ],
+    [
+     "",
+     "Die Wurzeln halten die Pflanze im Boden fest. Sie nehmen Wasser und Nährstoffe auf. Der Stängel trägt die Blätter und Blüten. In ihm fließt das Wasser nach oben – wie in feinen Röhren."
+    ],
+    [
+     "",
+     "Die Blätter sind die Küche der Pflanze. Mit dem Sonnenlicht, mit Wasser und mit Luft machen sie Zucker. Davon lebt und wächst die Pflanze. Dabei geben sie Sauerstoff ab – den brauchen wir zum Atmen."
+    ],
+    [
+     "",
+     "Die Blüte lockt Insekten an. Die Insekten tragen den Blütenstaub von Blüte zu Blüte. Danach entsteht die Frucht mit den Samen. Aus einem Samen kann eine neue Pflanze wachsen."
+    ]
+   ]
+  },
+  "at6-01h": {
+   "titel": "Das Experiment mit der Kresse",
+   "art": "hoeren",
+   "lektion": 1,
+   "dauer": 58.4,
+   "text": [
+    [
+     "Frau Morel",
+     "So, Lina. Schauen wir uns die drei Schalen an. Schale A stand auf der Fensterbank und wurde jeden Tag gegossen."
+    ],
+    [
+     "Lina",
+     "Die ist super! Grün, dicht und schon fünf Zentimeter hoch."
+    ],
+    [
+     "Frau Morel",
+     "Schale B stand auch auf der Fensterbank. Aber sie wurde nie gegossen."
+    ],
+    [
+     "Lina",
+     "Da ist fast nichts. Ein paar Samen sind aufgeplatzt, aber dann vertrocknet."
+    ],
+    [
+     "Frau Morel",
+     "Und Schale C wurde gegossen, stand aber im dunklen Schrank."
+    ],
+    [
+     "Lina",
+     "Komisch! Die Kresse ist sogar lang, aber ganz gelb und dünn. Sie fällt um."
+    ],
+    [
+     "Frau Morel",
+     "Genau. Ohne Licht kann sie keinen Zucker machen und wird nicht grün. Sie wächst lang und dünn, weil sie das Licht sucht."
+    ],
+    [
+     "Lina",
+     "Also braucht Kresse Wasser und Licht. Darf ich Schale A mit nach Hause nehmen? Kresse schmeckt gut auf Brot."
+    ]
+   ]
+  },
+  "at6-02l": {
+   "titel": "Der Kompost – Recycling in der Natur",
+   "art": "lesen",
+   "lektion": 2,
+   "dauer": 66.2,
+   "text": [
+    [
+     "",
+     "Der Kompost – Recycling in der Natur"
+    ],
+    [
+     "",
+     "In einer Handvoll guter Erde leben mehr Lebewesen, als es Menschen auf der Erde gibt: vor allem winzige Bakterien und Pilze, aber auch Würmer, Asseln und Käfer. Sie fressen tote Blätter und Pflanzenreste. Was übrig bleibt, ist dunkle, krümelige Erde: Humus."
+    ],
+    [
+     "",
+     "Was auf den Kompost darf."
+    ],
+    [
+     "",
+     "Obst- und Gemüsereste, Kaffeesatz, Teebeutel ohne Metallklammer, Eierschalen, Laub, Rasenschnitt in dünnen Schichten, kleine Zweige und Blumen."
+    ],
+    [
+     "",
+     "Was nicht auf den Kompost darf."
+    ],
+    [
+     "",
+     "Fleisch, Fisch, Knochen, Käse und gekochte Essensreste – sie locken Ratten an und stinken. Außerdem nicht: Plastik, Glas, Metall, Asche von Grillkohle, Katzenstreu und kranke Pflanzen."
+    ],
+    [
+     "",
+     "So gelingt Kompost."
+    ],
+    [
+     "",
+     "Grobes und Feines mischen, damit Luft hineinkommt. Der Kompost soll feucht sein wie ein ausgedrückter Schwamm – nicht nass. Nach ungefähr sechs bis zwölf Monaten ist der Kompost fertig. Er riecht dann nach Waldboden."
+    ]
+   ]
+  },
+  "at6-02h": {
+   "titel": "Igitt, Würmer!",
+   "art": "hoeren",
+   "lektion": 2,
+   "dauer": 56.0,
+   "text": [
+    [
+     "Mia",
+     "Igitt! Da sind überall Würmer. Ich fasse das nicht an."
+    ],
+    [
+     "Noah",
+     "Musst du auch nicht. Wir haben Handschuhe und die Grabegabel. Und die Würmer sind die Guten."
+    ],
+    [
+     "Mia",
+     "Wieso die Guten?"
+    ],
+    [
+     "Noah",
+     "Die fressen die Reste und machen daraus Erde. Ohne die würde hier alles nur vergammeln."
+    ],
+    [
+     "Mia",
+     "Okay … Und warum müssen wir den Haufen umsetzen?"
+    ],
+    [
+     "Noah",
+     "Damit Luft hineinkommt. Unten ist er schon ganz dunkel und krümelig, schau. Das riecht wie im Wald."
+    ],
+    [
+     "Mia",
+     "Stimmt, das riecht gar nicht schlecht. Aber was ist das hier? Ein Joghurtbecher!"
+    ],
+    [
+     "Noah",
+     "Der gehört nicht hierhin. Plastik verrottet nicht. Den werfen wir in den richtigen Müll."
+    ],
+    [
+     "Mia",
+     "Und die Würmer? Lassen wir die drin?"
+    ],
+    [
+     "Noah",
+     "Klar. Die arbeiten weiter für uns – kostenlos."
+    ]
+   ]
+  },
+  "at6-03l": {
+   "titel": "Was steht auf der Samentüte?",
+   "art": "lesen",
+   "lektion": 3,
+   "dauer": 55.6,
+   "text": [
+    [
+     "",
+     "Was steht auf der Samentüte?"
+    ],
+    [
+     "",
+     "Auf der Rückseite einer Samentüte stehen alle wichtigen Angaben. Lies sie vor dem Säen genau. Die Zeichnung unten zeigt die Tüte für Radieschen."
+    ],
+    [
+     "",
+     "Aussaat sagt dir, in welchen Monaten man säen kann. Saattiefe sagt, wie tief der Samen in die Erde kommt. Eine Faustregel: zwei- bis dreimal so tief, wie der Samen dick ist. Winzige Samen wie Kresse drückt man nur an."
+    ],
+    [
+     "",
+     "Abstand sagt, wie viel Platz jede Pflanze braucht. Stehen die Pflanzen zu eng, bleiben sie klein. Keimung sagt, wann die ersten grünen Spitzen kommen. Ernte sagt, wann du ernten kannst."
+    ],
+    [
+     "",
+     "Im Kalender zeigt Grün die Monate zum Säen und Orange die Monate zum Ernten. Im Winter kannst du Kresse drinnen auf der Fensterbank säen."
+    ]
+   ]
+  },
+  "at6-03h": {
+   "titel": "Wir säen Radieschen",
+   "art": "hoeren",
+   "lektion": 3,
+   "dauer": 64.3,
+   "text": [
+    [
+     "Frau Morel",
+     "Zuerst lockern wir die Erde mit der Harke und machen sie schön fein. Große Steine und Wurzeln sammeln wir heraus."
+    ],
+    [
+     "Frau Morel",
+     "Jetzt spannen wir eine Schnur. So wird die Reihe gerade. Mit dem Stiel der Harke ziehen wir eine kleine Rille, einen Zentimeter tief."
+    ],
+    [
+     "Mia",
+     "So tief wie mein Fingernagel lang ist?"
+    ],
+    [
+     "Frau Morel",
+     "Genau, das passt ungefähr. Jetzt legen wir die Samen hinein – alle drei bis fünf Zentimeter einen. Nicht alle auf einmal hineinschütten!"
+    ],
+    [
+     "Frau Morel",
+     "Dann schieben wir die Erde vorsichtig zurück und drücken sie mit der flachen Hand leicht an."
+    ],
+    [
+     "Frau Morel",
+     "Die nächste Reihe kommt fünfzehn Zentimeter daneben. Am Ende stecken wir ein Schild an jede Reihe: Was ist es, und wann haben wir gesät?"
+    ],
+    [
+     "Mia",
+     "Und gießen?"
+    ],
+    [
+     "Frau Morel",
+     "Ja, zum Schluss. Mit der Brause, ganz sanft, damit die Samen nicht weggeschwemmt werden. Und dann: jeden Tag nachschauen. Die Erde darf nicht austrocknen."
+    ]
+   ]
+  },
+  "at6-04l": {
+   "titel": "Das richtige Werkzeug – und ein gesunder Rücken",
+   "art": "lesen",
+   "lektion": 4,
+   "dauer": 77.0,
+   "text": [
+    [
+     "",
+     "Das richtige Werkzeug – und ein gesunder Rücken"
+    ],
+    [
+     "",
+     "Mit dem Spaten gräbt man den Boden um. Mit der Grabegabel lockert man den Boden, ohne die Regenwürmer zu zerschneiden. Die Harke – man sagt auch Rechen – macht die Erde fein und glatt. Mit der Hacke entfernt man Unkraut zwischen den Pflanzen. Mit der Gartenschere schneidet man Zweige. Die Schubkarre transportiert Erde, Kompost und Steine."
+    ],
+    [
+     "",
+     "Sicher arbeiten."
+    ],
+    [
+     "",
+     "Eine Harke legt man mit den Zinken nach unten auf den Boden oder lehnt sie an die Wand. Tritt man auf die Zinken, kann der Stiel hochschnellen und ins Gesicht schlagen. Tragt Handschuhe und feste Schuhe. Kleine Wunden mit Erde: gut auswaschen und der Lehrperson zeigen."
+    ],
+    [
+     "",
+     "Den Rücken schonen."
+    ],
+    [
+     "",
+     "Schwere Dinge hebt man aus den Knien: in die Hocke gehen, Rücken gerade, Last nah am Körper. Lieber zweimal gehen als einmal zu schwer tragen. Und: Abwechseln zwischen Bücken, Stehen und Gehen."
+    ],
+    [
+     "",
+     "Nach der Arbeit reinigt man das Werkzeug von Erde und hängt es an seinen Platz. Dann rostet es nicht und hält viele Jahre."
+    ]
+   ]
+  },
+  "at6-04h": {
+   "titel": "Aua, mein Rücken!",
+   "art": "hoeren",
+   "lektion": 4,
+   "dauer": 57.4,
+   "text": [
+    [
+     "Noah",
+     "Aua. Der Sack Erde war schwer. Jetzt zieht es im Rücken."
+    ],
+    [
+     "Frau Morel",
+     "Wie hast du ihn hochgehoben?"
+    ],
+    [
+     "Noah",
+     "Na ja, ich habe mich runtergebeugt und gezogen."
+    ],
+    [
+     "Frau Morel",
+     "Mit rundem Rücken und geraden Beinen, oder? Das ist für den Rücken das Schlimmste. Komm, ich zeige es dir."
+    ],
+    [
+     "Frau Morel",
+     "Stell dich nah an den Sack. Füße etwas auseinander. Geh in die Hocke, der Rücken bleibt gerade. Den Sack nah an den Bauch nehmen. Und jetzt mit der Kraft aus den Beinen aufstehen."
+    ],
+    [
+     "Noah",
+     "Oh. Das geht ja viel leichter."
+    ],
+    [
+     "Frau Morel",
+     "Und noch etwas: Beim Tragen nicht verdrehen. Wenn du die Richtung ändern willst, dreh dich mit den Füßen, nicht mit dem Oberkörper."
+    ],
+    [
+     "Noah",
+     "Und die ganz schweren Säcke?"
+    ],
+    [
+     "Frau Morel",
+     "Die nehmen wir mit der Schubkarre. Oder zu zweit. Schlau arbeiten ist besser als stark arbeiten."
+    ]
+   ]
+  },
+  "at6-05l": {
+   "titel": "Richtig pflegen",
+   "art": "lesen",
+   "lektion": 5,
+   "dauer": 66.8,
+   "text": [
+    [
+     "",
+     "Richtig pflegen"
+    ],
+    [
+     "",
+     "Gießen."
+    ],
+    [
+     "",
+     "Am besten gießt man morgens oder abends, wenn es nicht so heiß ist. Man gießt an die Wurzeln, nicht über die Blätter. Lieber seltener und gründlich gießen als jeden Tag ein bisschen. Mit dem Finger prüfen: Ist die Erde zwei Zentimeter tief trocken? Dann gießen."
+    ],
+    [
+     "",
+     "Jäten und mulchen."
+    ],
+    [
+     "",
+     "Jäten heißt: Unkraut mit der Wurzel herausziehen. Sonst nimmt es den Pflanzen Wasser und Licht weg. Beim Mulchen legt man Rasenschnitt oder Laub zwischen die Pflanzen. So bleibt der Boden feucht und es wächst weniger Unkraut."
+    ],
+    [
+     "",
+     "Kräuter ernten."
+    ],
+    [
+     "",
+     "Kräuter schneidet man immer nur ein bisschen ab, nie die ganze Pflanze. Dann wachsen sie nach. Schnittlauch schmeckt nach Zwiebel. Petersilie ist frisch und würzig. Basilikum passt zu Tomaten und Pizza. Minze ist gut für Tee. Rosmarin und Thymian passen zu Kartoffeln und Gemüse vom Blech."
+    ],
+    [
+     "",
+     "Wichtig: Iss nur Pflanzen, die du sicher kennst. Manche Pflanzen sehen harmlos aus, sind aber giftig."
+    ]
+   ]
+  },
+  "at6-05h": {
+   "titel": "Mit verbundenen Augen",
+   "art": "hoeren",
+   "lektion": 5,
+   "dauer": 52.4,
+   "text": [
+    [
+     "Mia",
+     "Nummer eins. Riech mal."
+    ],
+    [
+     "Tom",
+     "Hm … frisch, kalt in der Nase. Wie Kaugummi. Das ist Minze!"
+    ],
+    [
+     "Mia",
+     "Richtig! Nummer zwei."
+    ],
+    [
+     "Tom",
+     "Das riecht nach Zwiebel, aber die Blätter sind dünn wie Gras. Schnittlauch."
+    ],
+    [
+     "Mia",
+     "Super. Nummer drei."
+    ],
+    [
+     "Tom",
+     "Das kenne ich von der Pizza. Süß und ein bisschen wie Pfeffer. Basilikum!"
+    ],
+    [
+     "Mia",
+     "Drei von drei! Jetzt Nummer vier. Fass mal die Blätter an."
+    ],
+    [
+     "Tom",
+     "Die sind ganz hart und schmal, wie kleine Nadeln. Und es riecht ein bisschen nach Wald. Ist das eine Tanne?"
+    ],
+    [
+     "Mia",
+     "Fast! Das ist Rosmarin. Den nimmt man für Kartoffeln aus dem Ofen."
+    ],
+    [
+     "Tom",
+     "Jetzt du! Ich verbinde dir die Augen."
+    ]
+   ]
+  },
+  "at6-06l": {
+   "titel": "Nisthilfe aus einem Holzklotz",
+   "art": "lesen",
+   "lektion": 6,
+   "dauer": 76.2,
+   "text": [
+    [
+     "",
+     "Nisthilfe aus einem Holzklotz"
+    ],
+    [
+     "",
+     "Du brauchst: Klotz aus Hartholz (Buche oder Esche), unbehandelt, Bohrer 3 bis 8 mm, Schleifpapier, Aufhängung."
+    ],
+    [
+     "",
+     "Schritt 1: Holz wählen: Nimm Hartholz, trocken und ohne Lack. Weiches Holz wie Fichte wird faserig – daran verletzen sich die Bienen."
+    ],
+    [
+     "",
+     "Schritt 2: Bohren: Bohre Löcher mit 3 bis 8 mm in die Seite des Klotzes – nicht dort, wo man die Jahresringe sieht, sonst gibt es Risse. Tief bohren, aber nicht ganz durch."
+    ],
+    [
+     "",
+     "Schritt 3: Abstand: Lass zwischen den Löchern etwa 2 cm Platz."
+    ],
+    [
+     "",
+     "Schritt 4: Glätten: Die Ränder müssen glatt sein: schleifen, Späne herausklopfen. Splitter verletzen die Flügel."
+    ],
+    [
+     "",
+     "Schritt 5: Aufhängen: Sonnig und regengeschützt, nach Süden oder Südosten, mindestens 50 cm über dem Boden. Die Nisthilfe muss fest hängen."
+    ],
+    [
+     "",
+     "In der Nähe müssen Blüten wachsen, am besten heimische Wildblumen. Zapfen und Stroh braucht man nicht – sie helfen den Bienen kaum."
+    ]
+   ]
+  },
+  "at6-06h": {
+   "titel": "Fragen an die Bienen-Expertin",
+   "art": "hoeren",
+   "lektion": 6,
+   "dauer": 68.5,
+   "text": [
+    [
+     "Lina",
+     "Frau Schmit, warum brauchen Wildbienen überhaupt unsere Hilfe?"
+    ],
+    [
+     "Frau Schmit",
+     "Viele Wildbienen legen ihre Eier in kleine Löcher in totem Holz oder in hohle Stängel. Solche Plätze gibt es in aufgeräumten Gärten kaum noch."
+    ],
+    [
+     "Noah",
+     "Wie lange wohnt eine Biene in so einem Loch?"
+    ],
+    [
+     "Frau Schmit",
+     "Die Mutter wohnt gar nicht darin. Sie legt Pollen als Futter hinein, dazu ein Ei, und macht die Kammer zu. Die junge Biene schlüpft oft erst im nächsten Frühling."
+    ],
+    [
+     "Lina",
+     "Also darf man die Nisthilfe im Winter nicht wegräumen?"
+    ],
+    [
+     "Frau Schmit",
+     "Genau. Lasst sie draußen hängen. In den verschlossenen Löchern warten die jungen Bienen auf den Frühling."
+    ],
+    [
+     "Noah",
+     "Stechen Wildbienen?"
+    ],
+    [
+     "Frau Schmit",
+     "Fast nie. Ihr könnt ruhig nah herangehen und zuschauen. Wer allergisch auf Insektenstiche ist, sagt es vorher der Lehrperson. Nur nicht hineinpusten oder in die Löcher stochern."
+    ],
+    [
+     "Lina",
+     "Was ist der wichtigste Tipp?"
+    ],
+    [
+     "Frau Schmit",
+     "Blumen! Ein Bienen-Haus ohne Blüten in der Nähe ist wie ein Haus ohne Küche."
+    ]
+   ]
+  }
+ }
+}

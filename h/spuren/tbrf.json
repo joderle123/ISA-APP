@@ -1,0 +1,374 @@
+{
+ "modul": "tbrf",
+ "titel": {
+  "de": "Toolbox · Arbeitsblätter R",
+  "fr": "Toolbox · fiches R"
+ },
+ "sprache": "fr",
+ "spuren": {
+  "tbrf-01x": {
+   "titel": "R-01 · Mes verres de besoins",
+   "art": "lesen",
+   "lektion": 1,
+   "dauer": 27.4,
+   "text": [
+    [
+     "",
+     "Les besoins, c’est ce dont chaque personne a besoin pour vivre et se sentir bien. Par exemple dormir, être en sécurité, avoir des gens sur qui compter, du temps pour soi. Ils n’ont pas la même importance pour tout le monde – et ne sont pas toujours comblés de la même façon. Quand un verre reste presque vide longtemps, on le remarque souvent d’abord à son humeur : irritable, à plat, sans envie."
+    ]
+   ]
+  },
+  "tbrf-02x": {
+   "titel": "R-02 · Ma toile de vie",
+   "art": "lesen",
+   "lektion": 2,
+   "dauer": 20.6,
+   "text": [
+    [
+     "",
+     "Ta vie se joue dans beaucoup de domaines. Il est rare que tout aille bien partout en même temps. Avec les amis, ça va bien en ce moment. Au lycée, c’est plus laborieux. Et le sommeil passe à la trappe. La toile te montre d’un coup d’œil où elle te porte et où elle est fine."
+    ]
+   ]
+  },
+  "tbrf-05a": {
+   "titel": "R-05 · Qu’est-ce qui est entre mes mains ? – Trois soucis en une soirée",
+   "art": "lesen",
+   "lektion": 5,
+   "dauer": 26.1,
+   "text": [
+    [
+     "",
+     "Trois soucis en une soirée"
+    ],
+    [
+     "",
+     "Tiago n’arrive pas à dormir. Demain, il a un contrôle d’allemand et il n’a révisé que la moitié. Ses parents se disputent depuis des semaines, et dans le groupe de classe, on se moque de lui. Tout tourne en même temps dans sa tête. Puis il se rappelle ce que son éducateur lui a dit : « Tous les soucis n’appellent pas la même réponse. »"
+    ]
+   ]
+  },
+  "tbrf-06x": {
+   "titel": "R-06 · Mes verres de valeurs",
+   "art": "lesen",
+   "lektion": 6,
+   "dauer": 19.1,
+   "text": [
+    [
+     "",
+     "Les valeurs sont comme une boussole intérieure : elles montrent ce qui compte pour toi et ce que tu veux défendre. Souvent, on ne les remarque que quand quelque chose va contre elles. Par exemple quand quelqu’un est traité injustement, ou quand on n’a pas été honnête soi-même."
+    ]
+   ]
+  },
+  "tbrf-14x": {
+   "titel": "R-14 · Ce dont j’ai besoin",
+   "art": "lesen",
+   "lektion": 14,
+   "dauer": 18.1,
+   "text": [
+    [
+     "",
+     "Chacun a besoin de certaines choses pour se sentir bien : sommeil, gens autour de soi, calme, plaisir. Quand un verre reste presque vide longtemps, on le remarque souvent à l’humeur : irritable, à plat, sans envie."
+    ]
+   ]
+  },
+  "tbrf-16x": {
+   "titel": "R-16 · Mon point de départ",
+   "art": "lesen",
+   "lektion": 16,
+   "dauer": 16.0,
+   "text": [
+    [
+     "",
+     "Réfléchir à toi n’est pas un test. Il n’y a ni bonne ni mauvaise réponse, seulement toi et tes réponses. Cette page garde la trace de ton point de départ – plus tard, tu verras ce qui a changé."
+    ]
+   ]
+  },
+  "tbrf-17x": {
+   "titel": "R-17 · Ma table de mixage",
+   "art": "lesen",
+   "lektion": 17,
+   "dauer": 17.3,
+   "text": [
+    [
+     "",
+     "Personne n’est seulement discret ou seulement bruyant, seulement prudent ou seulement audacieux. Sur cette table de mixage, tu règles où tu te situes en ce moment – comme on règle le volume. Les deux bouts de chaque ligne sont très bien."
+    ]
+   ]
+  },
+  "tbrf-19x": {
+   "titel": "R-19 · Comment je me vois, comment on me voit",
+   "art": "lesen",
+   "lektion": 19,
+   "dauer": 16.9,
+   "text": [
+    [
+     "",
+     "Tu te connais de l’intérieur, les autres te voient de l’extérieur – et remarquent parfois ce que tu vois à peine toi-même. Les deux regards sont vrais, aucun n’est toute la vérité. Ici, tu les poses côte à côte."
+    ]
+   ]
+  },
+  "tbrf-20x": {
+   "titel": "R-20 · Mon archive de compliments",
+   "art": "lesen",
+   "lektion": 20,
+   "dauer": 19.7,
+   "text": [
+    [
+     "",
+     "Un compliment fait du bien sur le moment. Mais le lendemain, il est souvent déjà oublié. Les mots blessants, eux, restent longtemps. Ici, tu gardes les bons mots pour pouvoir les retrouver. Même les petits comptent – et il n’y a ni bonne ni mauvaise réponse."
+    ]
+   ]
+  },
+  "tbrf-21x": {
+   "titel": "R-21 · Ce que je sais faire – ce qui me coûte",
+   "art": "lesen",
+   "lektion": 21,
+   "dauer": 16.2,
+   "text": [
+    [
+     "",
+     "Chacun sait bien faire certaines choses et en trouve d’autres difficiles. Sur la page 1, tu notes ce que tu sais faire ; sur la page 2, ce qui te coûte et qui t’aide. Il n’y a ni bonne ni mauvaise réponse."
+    ]
+   ]
+  },
+  "tbrf-22x": {
+   "titel": "R-22 · Mes rubans de moments forts",
+   "art": "lesen",
+   "lektion": 22,
+   "dauer": 20.4,
+   "text": [
+    [
+     "",
+     "Il y a plus de beaux moments qu’on ne le remarque au quotidien : une soirée entre amis, un but, une chanson dans le bus, un jour de congé. Sur les rubans, tu rassembles les tiens des derniers mois. Tu en gardes un avec tous tes sens – il deviendra ton ancre pour les jours difficiles."
+    ]
+   ]
+  },
+  "tbrf-23x": {
+   "titel": "R-23 · Trois bonnes choses",
+   "art": "lesen",
+   "lektion": 23,
+   "dauer": 21.0,
+   "text": [
+    [
+     "",
+     "Ce qui va de travers, on le remarque tout de suite. Ce qui va bien, on le laisse facilement filer. Pendant sept soirs, tu regardes volontairement ce qui est bien et tu te demandes comment ça s’est produit. Pas besoin de grandes choses : un petit pain chaud ou un fou rire dans le bus comptent autant."
+    ]
+   ]
+  },
+  "tbrf-24x": {
+   "titel": "R-24 · Deux paires de lunettes",
+   "art": "lesen",
+   "lektion": 24,
+   "dauer": 22.6,
+   "text": [
+    [
+     "",
+     "Deux personnes vivent la même scène et n’en sortent pourtant pas de la même façon. La différence tient souvent à ce qu’elles se disent dans leur tête. Aujourd’hui, tu essaies deux paires de lunettes : une sombre et une bienveillante. Il n’y a ni bonne ni mauvaise réponse – tu regardes simplement ce que chaque paire fait de toi."
+    ]
+   ]
+  },
+  "tbrf-25x": {
+   "titel": "R-25 · Mon critique intérieur",
+   "art": "lesen",
+   "lektion": 25,
+   "dauer": 19.0,
+   "text": [
+    [
+     "",
+     "Presque tout le monde a dans la tête une voix qui commente : « C’était gênant. » « Tu n’y arriveras jamais. » C’est normal. Souvent, elle veut te protéger – des erreurs, de la honte –, même si elle est dure. Ici, tu apprends à la connaître, sans te battre contre elle."
+    ]
+   ]
+  },
+  "tbrf-26x": {
+   "titel": "R-26 · Comme à une bonne amie",
+   "art": "lesen",
+   "lektion": 26,
+   "dauer": 21.8,
+   "text": [
+    [
+     "",
+     "Quand une bonne amie ou un bon ami rate quelque chose, tu ne lui dis pas : « Tu as encore tout gâché. » Tu dis plutôt : « Ça arrive. Allez, on y arrive. » Avec toi-même, tu parles souvent tout autrement. Ici, tu essaies de te traiter comme tu traiterais quelqu’un qui compte pour toi."
+    ]
+   ]
+  },
+  "tbrf-27x": {
+   "titel": "R-27 · Que pensent les autres ?",
+   "art": "lesen",
+   "lektion": 27,
+   "dauer": 19.9,
+   "text": [
+    [
+     "",
+     "Parfois, on a l’impression d’entendre les pensées des autres : « Ils me trouvent bizarre. » Pourtant, personne ne lit dans les pensées – on les imagine, et ce sont souvent les moins sympathiques. Ici, tu rassembles ces nuages de pensées, tu les vérifies et tu vois lesquels peuvent s’en aller."
+    ]
+   ]
+  },
+  "tbrf-28x": {
+   "titel": "R-28 · Mes fils en suspens",
+   "art": "lesen",
+   "lektion": 28,
+   "dauer": 21.4,
+   "text": [
+    [
+     "",
+     "Dans la tête, il y a souvent des fils qui traînent : le message auquel tu voulais encore répondre, la promesse faite à un ami, le projet que tu voulais commencer. Chaque fil prend un peu de place, même quand tu n’y penses pas. Ici, tu les poses tous devant toi une fois pour décider ce qu’ils deviennent."
+    ]
+   ]
+  },
+  "tbrf-29x": {
+   "titel": "R-29 · Ma liste pour me ressourcer",
+   "art": "lesen",
+   "lektion": 29,
+   "dauer": 19.9,
+   "text": [
+    [
+     "",
+     "Les bons jours, tu sais ce qui te fait du bien. Les mauvais jours, on ne trouve souvent rien. Alors tu te fais dès maintenant une liste qui existe avant que tu en aies besoin. Elle est classée par sens : les yeux, les oreilles, le nez et la langue, la peau et le corps."
+    ]
+   ]
+  },
+  "tbrf-30x": {
+   "titel": "R-30 · Quand le stress monte",
+   "art": "lesen",
+   "lektion": 30,
+   "dauer": 22.9,
+   "text": [
+    [
+     "",
+     "Le stress fait partie de la vie : avant un contrôle, lors d’une dispute, quand tout arrive en même temps. Chaque personne a ses façons d’y faire face. Certaines aident tout de suite, d’autres plus tard, et certaines coûtent quelque chose le lendemain. Ici, tu regardes sans jugement ce que tu fais et tu vérifies ce qui t’aide vraiment."
+    ]
+   ]
+  },
+  "tbrf-31x": {
+   "titel": "R-31 · Mon bilan sommeil",
+   "art": "lesen",
+   "lektion": 31,
+   "dauer": 24.3,
+   "text": [
+    [
+     "",
+     "À ton âge, le corps a besoin de beaucoup de sommeil, mais l’horloge interne se décale plus tard que chez les enfants et les adultes. S’y ajoutent les cours qui commencent tôt, le téléphone et les pensées qui deviennent bruyantes le soir. La feuille ne juge pas : pendant une semaine, tu regardes ce qui se passe chez toi et tu changes un petit détail."
+    ]
+   ]
+  },
+  "tbrf-32x": {
+   "titel": "R-32 · Tout ce que mon corps sait faire",
+   "art": "lesen",
+   "lektion": 32,
+   "dauer": 19.1,
+   "text": [
+    [
+     "",
+     "Ton corps travaille toute la journée pour toi, même quand tu n’y penses pas : il te porte, te laisse entendre, rire, courir, t’endormir. Ici, il s’agit de ce qu’il sait faire et de ce qu’il te permet. Les jours faciles comme les jours plus durs."
+    ]
+   ]
+  },
+  "tbrf-33x": {
+   "titel": "R-33 · Mes cercles",
+   "art": "lesen",
+   "lektion": 33,
+   "dauer": 15.6,
+   "text": [
+    [
+     "",
+     "Toutes les personnes de ta vie ne te sont pas aussi proches. Certaines, tu les connais à peine ; avec d’autres, tu peux être tout à fait toi-même. Tes cercles montrent qui se trouve où – et si cela te convient en ce moment."
+    ]
+   ]
+  },
+  "tbrf-34x": {
+   "titel": "R-34 · Trois personnes qui comptent",
+   "art": "lesen",
+   "lektion": 34,
+   "dauer": 21.2,
+   "text": [
+    [
+     "",
+     "Dans ton quotidien, des personnes jouent un rôle sans toujours se faire remarquer : un ami, une entraîneuse, un prof, la voisine d’à côté. Certaines t’accompagnent longtemps, d’autres juste un bout de chemin. Ici, tu en regardes trois de plus près – et ce qu’elles t’ont apporté."
+    ]
+   ]
+  },
+  "tbrf-35x": {
+   "titel": "R-35 · Montrer que j’apprécie quelqu’un",
+   "art": "lesen",
+   "lektion": 35,
+   "dauer": 18.4,
+   "text": [
+    [
+     "",
+     "Les amis montrent de façons très différentes qu’ils t’apprécient. L’une t’écrit « bonne nuit » tard le soir. L’autre t’aide sans dire un mot. Les deux peuvent signifier « je t’aime bien ». Ici, tu découvres à quoi tu le remarques – et comment tu le montres."
+    ]
+   ]
+  },
+  "tbrf-36x": {
+   "titel": "R-36 · Après coup",
+   "art": "lesen",
+   "lektion": 36,
+   "dauer": 14.4,
+   "text": [
+    [
+     "",
+     "Parfois, quelqu’un dit quelque chose et tu réagis avant d’avoir pu réfléchir. Ce n’est que plus tard que tu sais ce que tu voulais vraiment dire. Presque tout le monde connaît ça – et cela s’entraîne."
+    ]
+   ]
+  },
+  "tbrf-37x": {
+   "titel": "R-37 · Une heure en cadeau",
+   "art": "lesen",
+   "lektion": 37,
+   "dauer": 16.8,
+   "text": [
+    [
+     "",
+     "Imagine que la journée compte 25 heures à partir de demain. L’heure en plus n’est qu’à toi : elle n’a pas besoin d’être utile ni raisonnable. Ce que tu choisis montre ce dont tu as besoin en ce moment. Il n’y a ni bonne ni mauvaise réponse."
+    ]
+   ]
+  },
+  "tbrf-38x": {
+   "titel": "R-38 · Une bonne journée – ma journée de rêve",
+   "art": "lesen",
+   "lektion": 38,
+   "dauer": 25.6,
+   "text": [
+    [
+     "",
+     "Toutes les journées ne peuvent pas être de rêve, mais une bonne journée est plus souvent possible qu’on ne le pense. Ici, tu colories deux journées côte à côte. D’abord une bonne journée de lycée, telle qu’elle pourrait vraiment être. Puis une journée de rêve, sans aucune obligation. Ce qui se ressemble et ce qui diffère te montre ce qui compte pour toi."
+    ]
+   ]
+  },
+  "tbrf-39x": {
+   "titel": "R-39 · Apprivoiser mon monstre à tâches",
+   "art": "lesen",
+   "lektion": 39,
+   "dauer": 21.6,
+   "text": [
+    [
+     "",
+     "Un exposé, un examen, le projet de classe, le code de la route : plus la tâche est grosse, plus le monstre grandit dans ta tête. Souvent, le problème n’est pas le travail, mais de ne pas savoir par où commencer. Aujourd’hui, tu découpes ton monstre en morceaux que tu peux faire en une séance."
+    ]
+   ]
+  },
+  "tbrf-40x": {
+   "titel": "R-40 · Mon année en couleurs",
+   "art": "lesen",
+   "lektion": 40,
+   "dauer": 22.0,
+   "text": [
+    [
+     "",
+     "Colorier une case prend une minute. Au bout de quelques semaines, tu vois des motifs que tu ne remarques pas au quotidien. Quels jours brillent ? Lesquels sont gris ? Qu’est-ce qui va ensemble ? Tu décides à quoi servent tes couleurs – l’humeur, le sommeil, le mouvement ou une habitude que tu veux installer."
+    ]
+   ]
+  },
+  "tbrf-41x": {
+   "titel": "R-41 · Mon bilan téléphone",
+   "art": "lesen",
+   "lektion": 41,
+   "dauer": 18.2,
+   "text": [
+    [
+     "",
+     "Ton téléphone est appareil photo, cinéma, messagerie et réveil à la fois. Le temps qu’il prend, on le remarque rarement. Tu estimes d’abord, tu vérifies ensuite et tu décides toi-même ce que tu en fais – sans reproches."
+    ]
+   ]
+  }
+ }
+}

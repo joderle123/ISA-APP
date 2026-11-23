@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hören · Modulheft</title>
+<meta name="robots" content="noindex">
+<style>
+  :root { --f: #6d4bc4; --zart: #f0ebfb; --tinte: #1b2233; --leise: #5a6376; --flaeche: #f5f7fa; --rand: #dde2e9; }
+  :root[data-art="lesen"] { --f: #1f7a99; --zart: #e7f4f8; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: #fff; color: var(--tinte); font: 17px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 560px; margin: 0 auto; padding: max(18px, env(safe-area-inset-top)) 16px 40px; }
+  .kopf { background: var(--zart); border-radius: 22px; padding: 18px 20px 20px; }
+  .fach { font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--f); }
+  h1 { font-size: 26px; line-height: 1.15; margin: 6px 0 4px; }
+  .art { display: inline-flex; align-items: center; gap: 6px; font-weight: 700; color: var(--f); font-size: 15px; }
+  .spieler { margin-top: 18px; display: grid; grid-template-columns: auto 1fr; gap: 16px; align-items: center; }
+  .play { width: 84px; height: 84px; border-radius: 50%; border: 0; background: var(--f); color: #fff; display: grid; place-items: center; cursor: pointer; box-shadow: 0 6px 0 rgba(0,0,0,.12); }
+  .play:active { transform: translateY(2px); box-shadow: 0 3px 0 rgba(0,0,0,.12); }
+  .play svg { width: 38px; height: 38px; }
+  .zeit { font-variant-numeric: tabular-nums; font-size: 14px; color: var(--leise); display: flex; justify-content: space-between; margin-top: 6px; }
+  input[type=range] { width: 100%; accent-color: var(--f); height: 28px; }
+  .knoepfe { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+  .knoepfe button { flex: 1 1 auto; min-height: 48px; border-radius: 14px; border: 2px solid var(--rand); background: #fff; font: inherit; font-weight: 700; color: var(--tinte); cursor: pointer; padding: 6px 12px; }
+  .knoepfe button.an { border-color: var(--f); background: var(--zart); color: var(--f); }
+  .text { margin-top: 22px; }
+  .text > button { width: 100%; min-height: 52px; border-radius: 14px; border: 0; background: var(--flaeche); font: inherit; font-weight: 700; cursor: pointer; }
+  .hinweis { font-size: 14px; color: var(--leise); margin: 8px 2px 0; }
+  .zeilen { margin-top: 14px; display: grid; gap: 10px; }
+  .zeilen p { margin: 0; padding: 10px 14px; border-radius: 14px; background: var(--flaeche); }
+  .zeilen p b { display: block; font-size: 13px; color: var(--f); }
+  .fehler { background: #fdecec; color: #a3261f; border-radius: 14px; padding: 14px 16px; margin-top: 18px; }
+  .liste a { display: block; padding: 12px 14px; border-radius: 14px; background: var(--flaeche); margin: 8px 0; color: var(--tinte); text-decoration: none; }
+  .liste a small { color: var(--leise); }
+  footer { margin-top: 28px; font-size: 12px; color: #8a93a3; }
+</style>
+</head>
+<body>
+<main id="app">
+  <div class="kopf"><div class="fach" id="fach">Modulheft</div><h1 id="titel">Hören</h1><div class="art" id="art"></div>
+    <div class="spieler"><button class="play" id="play" aria-label="Abspielen"></button>
+      <div><input type="range" id="pos" min="0" max="1000" value="0" aria-label="Stelle im Text"><div class="zeit"><span id="jetzt">0:00</span><span id="ganz">–:––</span></div></div></div>
+  </div>
+  <div class="knoepfe">
+    <button id="zurueck">↺ 5 s</button>
+    <button data-tempo="0.75" id="t75">langsam</button>
+    <button data-tempo="1" id="t100" class="an">normal</button>
+    <button id="nochmal">⟲ von vorn</button>
+  </div>
+  <div class="text"><button id="zeige">Text zeigen</button><p class="hinweis" id="hinweis"></p><div class="zeilen" id="zeilen" hidden></div></div>
+  <audio id="ton" preload="auto"></audio>
+  <footer id="fuss">Hörtexte zu den Modulheften · Stimmen: Piper (freie Lizenzen)</footer>
+</main>
+<script>
+(function () {
+  var $ = function (id) { return document.getElementById(id) };
+  var PLAY = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.4-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg>';
+  var PAUSE = '<svg viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="5" width="4.2" height="14" rx="1.2"/><rect x="13.8" y="5" width="4.2" height="14" rx="1.2"/></svg>';
+  var code = (location.search.replace(/^\?/, '').split('&')[0] || location.hash.replace(/^#/, '')).replace(/[^a-z0-9-]/gi, '').toLowerCase();
+  var ton = $('ton'), play = $('play');
+  play.innerHTML = PLAY;
+  var T = { de: { lesen: 'Text anhören', hoeren: 'Hörtext', zeige: 'Text zeigen', verstecke: 'Text verstecken', erst: 'Tipp: Hör zuerst ohne Text. Lies erst danach mit.', langsam: 'langsam', normal: 'normal', vorn: '⟲ von vorn', lektion: 'Lektion', fehlt: 'Diesen Hörtext gibt es (noch) nicht. Prüfe den Code im Heft.', alle: 'Alle Hörtexte' },
+            fr: { lesen: 'Écouter le texte', hoeren: 'Document sonore', zeige: 'Afficher le texte', verstecke: 'Cacher le texte', erst: 'Astuce : écoute d’abord sans le texte. Lis ensuite.', langsam: 'lent', normal: 'normal', vorn: '⟲ du début', lektion: 'Leçon', fehlt: 'Ce document sonore n’existe pas (encore). Vérifie le code dans le cahier.', alle: 'Tous les documents sonores' } };
+  var t = T.de;
+  function zeit(s) { if (!isFinite(s)) return '–:––'; s = Math.round(s); return Math.floor(s / 60) + ':' + ('0' + (s % 60)).slice(-2) }
+  function sprache(sp) { t = T[sp] || T.de; document.documentElement.lang = sp; $('t75').textContent = t.langsam; $('t100').textContent = t.normal; $('nochmal').textContent = t.vorn; $('zeige').textContent = t.zeige }
+  function liste() {
+    fetch('spuren/index.json').then(function (r) { return r.json() }).then(function (ix) {
+      var h = '<div class="liste"><h2>' + t.alle + '</h2>';
+      Promise.all(ix.module.map(function (m) { return fetch('spuren/' + m + '.json').then(function (r) { return r.json() }) })).then(function (ms) {
+        ms.forEach(function (m) { h += '<h3>' + m.titel[m.sprache] + '</h3>'; Object.keys(m.spuren).forEach(function (c) { var s = m.spuren[c]; h += '<a href="?' + c + '">' + s.titel + '<br><small>' + c + ' · ' + (s.art === 'lesen' ? T[m.sprache].lesen : T[m.sprache].hoeren) + '</small></a>' }) });
+        $('app').innerHTML = h + '</div>';
+      });
+    }).catch(function () {});
+  }
+  if (!code) { liste(); return }
+  ton.src = 'a/' + code + '.mp3';
+  ton.addEventListener('error', function () { var f = document.createElement('div'); f.className = 'fehler'; f.textContent = t.fehlt + ' (' + code + ')'; $('app').insertBefore(f, $('app').children[1]) });
+  var modul = code.split('-')[0];
+  fetch('spuren/' + modul + '.json').then(function (r) { return r.json() }).then(function (m) {
+    sprache(m.sprache);
+    var s = m.spuren[code]; if (!s) return;
+    document.documentElement.setAttribute('data-art', s.art);
+    $('fach').textContent = m.titel[m.sprache] + ' · ' + t.lektion + ' ' + s.lektion;
+    $('titel').textContent = s.titel.replace(/\*\*|__|==|\/\//g, '');
+    $('art').textContent = (s.art === 'lesen' ? '📖 ' + t.lesen : '🎧 ' + t.hoeren);
+    document.title = s.titel + ' · ' + code;
+    if (s.art !== 'lesen') $('hinweis').textContent = t.erst;
+    $('zeilen').innerHTML = s.text.map(function (z) { return '<p>' + (z[0] ? '<b>' + z[0] + '</b>' : '') + z[1].replace(/</g, '&lt;') + '</p>' }).join('');
+  }).catch(function () {});
+  play.onclick = function () { if (ton.paused) ton.play(); else ton.pause() };
+  ton.onplay = function () { play.innerHTML = PAUSE; play.setAttribute('aria-label', 'Pause') };
+  ton.onpause = ton.onended = function () { play.innerHTML = PLAY; play.setAttribute('aria-label', 'Abspielen') };
+  ton.ontimeupdate = function () { $('jetzt').textContent = zeit(ton.currentTime); if (ton.duration) $('pos').value = Math.round(ton.currentTime / ton.duration * 1000) };
+  ton.onloadedmetadata = function () { $('ganz').textContent = zeit(ton.duration) };
+  $('pos').oninput = function () { if (ton.duration) ton.currentTime = this.value / 1000 * ton.duration };
+  $('zurueck').onclick = function () { ton.currentTime = Math.max(0, ton.currentTime - 5) };
+  $('nochmal').onclick = function () { ton.currentTime = 0; ton.play() };
+  [$('t75'), $('t100')].forEach(function (b) { b.onclick = function () { ton.playbackRate = Number(b.getAttribute('data-tempo')); if ('preservesPitch' in ton) ton.preservesPitch = true; $('t75').classList.toggle('an', b.id === 't75'); $('t100').classList.toggle('an', b.id === 't100') } });
+  $('zeige').onclick = function () { var z = $('zeilen'); z.hidden = !z.hidden; this.textContent = z.hidden ? t.zeige : t.verstecke };
+})();
+</script>
+</body>
+</html>
