@@ -1,5 +1,7 @@
 // Module (23.11.2026): alle multimodalen Modulhefte der Voie de préparation (Heft + Lösungen) und die Sporthefte.
-// Die PDFs liegen neben der Toolbox (offline/module/ und offline/sport/ → im Hub apps/<toolbox>/module/ und …/sport/).
+// Die Sporthefte liegen neben der Toolbox (offline/sport/ → im Hub apps/sport/). Die Modulhefte (171 MB) liegen im Hub einmal im
+// Ordner „Modulhefte“ neben „Hub-Daten“ (…\Klassebuch\Modulhefte, nicht in jeder Fassung vNN – Auftrag 23.11.2026);
+// außerhalb des Hubs (ISA-App.html mit offline/module/) neben der Toolbox.
 // Die Liste (src/data/modulhefte.json) schreibt `node tools/hefte/module-index.mjs` aus tools/hefte/inhalt/ und offline/sport/.
 // Verweise: #module, #module=<fach> (z. B. #module=deutsch), #sport
 import { useEffect, useState } from 'react'
@@ -55,6 +57,20 @@ function wahlAusHash(): Wahl | null {
 
 const groesse = (mb: number) => (mb ? ` · ${mb.toLocaleString('de-DE')} MB` : '')
 
+/** Wo die Modulhefte liegen: Im Hub steckt die Toolbox in …\Klassebuch\vNN\<Ordner>\apps\toolbox.html – dann im Ordner
+ *  „Modulhefte“ neben den Fassungen (…\Klassebuch\Modulhefte). Sonst neben der Toolbox in „module“. */
+function modulOrt(): { basis: string; imHub: boolean } {
+  try {
+    const teile = decodeURIComponent(location.pathname).split('/')
+    const v = teile.findIndex((t) => /^v\d+$/i.test(t))
+    if (location.protocol === 'file:' && v > 0) return { basis: '../'.repeat(teile.length - 1 - v) + 'Modulhefte/', imHub: true }
+  } catch {
+    /* unlesbare Adresse: neben der Toolbox */
+  }
+  return { basis: 'module/', imHub: false }
+}
+const ORT = modulOrt()
+
 function ModulKarte({ m, fach }: { m: Modul; fach: Fach }) {
   const fr = fach.sprache === 'fr'
   return (
@@ -72,11 +88,11 @@ function ModulKarte({ m, fach }: { m: Modul; fach: Fach }) {
         {m.titelDe && m.titelDe !== m.titel ? <p className="text-[13px] text-muted italic">{m.titelDe}</p> : null}
         <p className="mt-1 line-clamp-2 text-[14px] leading-snug text-ink-2">{m.untertitel}</p>
         <div className="mt-3 flex flex-wrap gap-2">
-          <a className="btn btn-sm btn-primary no-underline" href={`module/${m.heft}.pdf`} target="_blank" rel="noopener" title={`Öffnet das Heft als PDF in einem neuen Tab${groesse(m.mb)}`}>
+          <a className="btn btn-sm btn-primary no-underline" href={`${ORT.basis}${m.heft}.pdf`} target="_blank" rel="noopener" title={`Öffnet das Heft als PDF in einem neuen Tab${groesse(m.mb)}`}>
             <Icon name="file" />
             {fr ? 'Cahier' : 'Heft'}
           </a>
-          <a className="btn btn-sm no-underline" href={`module/${m.loesungen}.pdf`} target="_blank" rel="noopener" title={`Das ganze Heft mit eingetragenen Lösungen${groesse(m.mbLoesungen)}`}>
+          <a className="btn btn-sm no-underline" href={`${ORT.basis}${m.loesungen}.pdf`} target="_blank" rel="noopener" title={`Das ganze Heft mit eingetragenen Lösungen${groesse(m.mbLoesungen)}`}>
             <Icon name="checkCircle" />
             {fr ? 'Solutions' : 'Lösungen'}
           </a>
@@ -166,6 +182,12 @@ export default function Module({ aktiv }: { aktiv: boolean }) {
             <b>So arbeiten Sie damit:</b> Heft öffnen und ausdrucken (A4, beidseitig). In Deutsch und Französisch steht bei den Lese- und Hörtexten ein QR-Code – mit dem Handy scannen,
             dann wird der Text vorgelesen (braucht Internet). Mathe hat in jeder Lektion zusätzliche Beispiele, Übungspäckchen und Wiederholung. Das Lösungsheft ist dasselbe
             Heft mit eingetragenen Lösungen.
+            {ORT.imHub ? (
+              <>
+                {' '}
+                Die Hefte liegen einmal im Ordner <b>Modulhefte</b> neben <b>Hub-Daten</b> – öffnet sich ein Heft nicht, fehlt dieser Ordner.
+              </>
+            ) : null}
           </p>
         </div>
       )}
