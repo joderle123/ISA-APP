@@ -163,8 +163,9 @@ export default function Module({ aktiv }: { aktiv: boolean }) {
         <div className="mb-5 flex items-start gap-3 rounded-[16px] border border-line bg-surface-2 p-4 text-[14px] text-ink-2">
           <Icon name="info" />
           <p>
-            <b>So arbeiten Sie damit:</b> Heft öffnen und ausdrucken (A4, beidseitig). Bei jedem Lese- und Hörtext steht ein QR-Code – mit dem Handy scannen, dann wird der Text vorgelesen (braucht
-            Internet). Das Lösungsheft ist dasselbe Heft mit eingetragenen Lösungen.
+            <b>So arbeiten Sie damit:</b> Heft öffnen und ausdrucken (A4, beidseitig). In Deutsch und Französisch steht bei den Lese- und Hörtexten ein QR-Code – mit dem Handy scannen,
+            dann wird der Text vorgelesen (braucht Internet). Mathe hat in jeder Lektion zusätzliche Beispiele, Übungspäckchen und Wiederholung. Das Lösungsheft ist dasselbe
+            Heft mit eingetragenen Lösungen.
           </p>
         </div>
       )}

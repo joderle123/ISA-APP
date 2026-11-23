@@ -120,13 +120,15 @@ b, strong { font-weight: 700; }
 .teil.sprechen .ic { background: var(--sprechen); } .teil.sprechen h3 { color: var(--sprechen); }
 .teil.start .ic { background: var(--f); } .teil.start h3 { color: var(--f); }
 .teil.check .ic { background: var(--check); } .teil.check h3 { color: var(--check); }
+.teil.fit .ic { background: var(--ueben); } .teil.fit h3 { color: var(--ueben); }
+.teil.wiederholung .ic { background: var(--f); } .teil.wiederholung h3 { color: var(--f); }
 .neue-seite { break-before: page; }
 .marke-seite { position: absolute; font-size: 1pt; color: #fff; }
 section.lektion, section.inhalt { position: relative; }
 
 /* ---------- Lesetext ---------- */
 .lesetext { display: grid; grid-template-columns: minmax(0, 1fr) 50mm; gap: 6mm; margin-bottom: 4mm; break-inside: avoid; }
-.lesetext.breit { grid-template-columns: 1fr; }
+.lesetext.breit { grid-template-columns: minmax(0, 1fr); }
 .lesetext .blatt { border: 0.35mm solid var(--rahmen); border-radius: 4mm; padding: 6mm 7mm 5mm; background: #fff; position: relative; }
 .lesetext .blatt::before { content: ''; position: absolute; left: 0; top: 6mm; bottom: 6mm; width: 1.2mm; border-radius: 0 1mm 1mm 0; background: var(--lesen); }
 .lesetext .quelle { font-family: 'Lexend'; font-weight: 600; font-size: 9pt; letter-spacing: 0.12em; text-transform: uppercase; color: var(--lesen); margin-bottom: 1mm; }
@@ -277,6 +279,12 @@ table.raster.rf td.k { width: 18mm; text-align: center; }
 
 .dialog { display: grid; grid-template-columns: max-content 1fr; gap: 1.6mm 4mm; font-size: 12.4pt; }
 .dialog .wer { font-family: 'Lexend'; font-weight: 700; color: var(--hoeren); }
+/* Szene zum Lesen (Hefte ohne Audio): Karte über die ganze Breite, darunter das Gespräch */
+.hoerkarte.ohne { grid-template-columns: 1fr; }
+.hoerkarte.ohne .szene { min-height: 0; padding-right: 50mm; }
+.hoerkarte.ohne .szene p { max-width: none; }
+.gespraech { border-left: 1.4mm solid var(--hoeren); background: #fff; border-radius: 0 3mm 3mm 0; padding: 3mm 5mm; margin: 0 0 5mm; }
+.gespraech .dialog { line-height: 1.45; }
 
 /* Lösungsheft */
 .nur-loesung { display: none; }
@@ -680,7 +688,8 @@ table.raster.stellen td { padding: 1.5mm 1mm; }
 .bd.drei .figs { height: 46mm; }
 .bd.drei .figs svg { height: 45mm; max-width: 30mm; }
 .bd.drei .cap { min-height: 15mm; }
-.lesetext.breit .rand .woerter { display: grid; grid-template-columns: repeat(6, 1fr); gap: 1mm 3mm; }
+.lesetext.breit .rand .woerter { display: grid; grid-template-columns: repeat(auto-fill, minmax(27mm, 1fr)); gap: 1mm 3mm; }
+.lesetext.breit .rand .woerter .w { min-width: 0; overflow-wrap: anywhere; }
 .lesetext.breit .rand .woerter h5 { grid-column: 1 / -1; margin-bottom: 0.5mm; }
 .bg-karte.quiz { break-inside: auto; }
 .bd .cap.nach { border-bottom: 0; border-top: 0.35mm solid var(--tinte); margin-top: auto; }

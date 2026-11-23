@@ -1,10 +1,12 @@
 // Mathe-Modulhefte (Voie de préparation, Module 1–6) – gemeinsamer Baukasten.
 // Grundlage: das Mathe-Programm des Klassenbuchs (daten/mathe-programm.json, nach dem CNES-Referenzrahmen
 // „Mathématiques – voie préparatoire“). Jede Lektion wird zu: Los geht’s (gemeinsam rechnen) · Verstehen (Erklärung
-// zum Mitlesen und Anhören) · Hören und rechnen (Alltagsszene, eigene Texte je Modul) · Merken (Merksatz, Vorgehen,
-// Musterlösungen) · Üben (Basis, Kern, Plus, Exit-Ticket) · Erklären (Schreibauftrag) · Kurz-Check.
+// zum Mitlesen) · Rechnen im Alltag (Szene zum Lesen) · Merken (Merksatz, Vorgehen, Musterlösungen, weitere Beispiele) ·
+// Üben (Jetzt du, Basis, Kern, Übungspäckchen, Plus, Exit-Ticket) · Erklären · Kurz-Check. Dazu „Fit bleiben“ (Aufgaben
+// von früher) am Anfang und nach jedem Thema eine Wiederholung. Ohne Hörtexte (Auftrag 23.11.2026).
 
 import { readFileSync } from 'node:fs'
+import { erzeuge } from '../mathe-gen.mjs'
 
 export const PROGRAMM = JSON.parse(readFileSync(new URL('../daten/mathe-programm.json', import.meta.url), 'utf8'))
 
@@ -35,8 +37,8 @@ export const MATHE_AUSSPRACHE = {
 }
 
 const ANLEITUNG = [
-  'Jede Lektion hat sechs Teile: **Los geht’s**, **Verstehen**, **Hören und rechnen**, **Merken**, **Üben** und **Erklären**. Am Ende steht ein **Kurz-Check**.',
-  'Neben jeder Erklärung ist ein **QR-Code**. Scanne ihn mit dem Handy: Du hörst die Erklärung. Du kannst lesen und hören – so oft du willst.',
+  'Jede Lektion: **Los geht’s**, **Fit bleiben** (Aufgaben von früher), **Verstehen**, **Rechnen im Alltag**, **Merken** mit vielen **Beispielen**, **Üben** und **Erklären**. Am Ende steht ein **Kurz-Check**, nach jedem Thema eine **Wiederholung**.',
+  'Schau dir die **Beispiele** genau an. Dann rechnest du bei **Jetzt du** genau so. Im **Übungspäckchen** übst du, bis es sitzt.',
   'Die Punkte zeigen das Niveau: ●○○ Basis · ●●○ Kern · ●●● Plus. Fang mit der Basis an. Rechne in den **Kästchen** – dort ist viel Platz.',
   'Die französischen Fachwörter stehen neben jeder Erklärung und hinten in der **Wörterliste**.',
 ]
@@ -56,9 +58,9 @@ export function matheModul(nr, extra) {
     farben: { tief, mittel: mische(tief, 255, 0.55), zart: mische(tief, 255, 0.92), dunkel: mische(tief, 0, 0.35) },
     deckbild: extra.deckbild, blasen: extra.blasen,
     themen: m.themen.map((t, i) => ({ titel: { de: t.titel.replace(/ & /g, ' und '), fr: '' }, icon: extra.themenIcons?.[i] || 'math', lektionen: t.lektionen.length })),
-    anleitung: ANLEITUNG, checkMitSchreiben: true,
-    teile: { lesen: { de: 'Verstehen', icon: 'book' }, hoeren: { de: 'Hören und rechnen', icon: 'headphones' }, regel: { de: 'Merken', icon: 'bulb' }, ueben: { de: 'Üben', icon: 'pencil' }, schreiben: { de: 'Erklären', icon: 'message-2' } },
-    medien: [['book', 'var(--lesen)', 'Verstehen', 'lesen und hören'], ['headphones', 'var(--hoeren)', 'Hören', 'Mathe im Alltag'], ['bulb', 'var(--regel)', 'Merken', 'kurz und klar'], ['pencil', 'var(--schreiben)', 'Üben', 'mit Rechenkästchen']],
+    anleitung: ANLEITUNG, checkMitSchreiben: true, ohneAudio: true,
+    teile: { lesen: { de: 'Verstehen', icon: 'book' }, hoeren: { de: 'Rechnen im Alltag', icon: 'message-dots' }, regel: { de: 'Merken', icon: 'bulb' }, ueben: { de: 'Üben', icon: 'pencil' }, schreiben: { de: 'Erklären', icon: 'message-2' } },
+    medien: [['book', 'var(--lesen)', 'Verstehen', 'Schritt für Schritt'], ['repeat', 'var(--hoeren)', 'Wiederholen', 'Fit bleiben und Päckchen'], ['bulb', 'var(--regel)', 'Merken', 'kurz und klar'], ['pencil', 'var(--schreiben)', 'Üben', 'mit Rechenkästchen']],
     aussprache: { ...MATHE_AUSSPRACHE, ...(extra.aussprache || {}) },
   }
 }
@@ -82,6 +84,62 @@ const merksatzKasten = (punkte) => {
   const n = punkte.findIndex((p) => !/^\d+[.)]\s/.test(p)), k = n < 0 ? punkte.length : n
   if (k < 2 || punkte.slice(k).some((p) => /^\d+[.)]\s/.test(p))) return { titel: 'Merksatz', punkte }
   return { titel: 'Merksatz', nummern: true, punkte: punkte.slice(0, k).map((p) => p.replace(/^\d+[.)]\s+/, '')), text: punkte.slice(k).join(' ') || undefined }
+}
+
+// ---- Mehr Beispiele und mehr Wiederholung (Auftrag 23.11.2026: „mehr Beispiele, nicht genug Wiederholung“) ----
+// Die Aufgaben würfeln die Erzeuger des Klassenbuchs (tools/hefte/mathe-gen.mjs) mit festem Startwert: jedes Mal dieselben,
+// mit gerechneter Lösung. Lektionen ohne Erzeuger im Programm bekommen eigene (mathe-gen-extra.js):
+const GEN_EXTRA = {
+  '1-14': { type: 'symmetrie' }, '2-10': { type: 'streckeMitte' }, '3-7': { type: 'diagrammLesen' }, '3-8': { type: 'strichliste' },
+  '4-15': { type: 'hoeheDreieck' }, '5-4': { type: 'propTabelle' }, '5-5': { type: 'propGraph' }, '5-8': { type: 'koordinaten' },
+  '5-9': { type: 'geraden' }, '5-13': { type: 'zusammengesetzt' }, '6-5': { type: 'termAufstellen' },
+}
+const genVon = (nr, l) => l.gen || GEN_EXTRA[`${nr}-${l.nr}`]
+// alle Lektionen aller Module der Reihe nach – für „Fit bleiben“ auch über die Modulgrenze hinweg
+const ALLE = PROGRAMM.module.flatMap((m, i) => m.themen.flatMap((t) => t.lektionen.map((l) => ({ nr: i + 1, l, gen: genVon(i + 1, l) }))))
+const minusZeichen = (s) => String(s ?? '').replace(/(^|[\s(;=:])-(?=\d)/g, '$1−')
+const gewuerfelt = (gen, n, niveau, seed) => erzeuge(gen, n, niveau, seed).map((x) => ({ a: minusZeichen(x.a), l: minusZeichen(x.l) }))
+const spaltenFuer = (items) => (items.some((it) => String(it.a).length > 75 || String(it.l).length > 60) ? 1 : 2)
+
+function mehrUebung(nr, m, L) {
+  let j = 0
+  for (const t of m.themen) {
+    const imThema = []
+    for (const l of t.lektionen) {
+      const lek = L[j++], gen = genVon(nr, l), s = nr * 1000 + l.nr * 10
+      if (gen) {
+        const basis = gewuerfelt(gen, 13, 'basis', s + 1)
+        const kern = gewuerfelt(gen, 14, 'kern', s + 2).filter((k) => !basis.some((b) => b.a === k.a))
+        const bsp = basis.slice(0, 3), jetzt = basis.slice(3, 7), paeckchen = [...basis.slice(7, 13), ...kern.slice(0, 6)]
+        // drei weitere vorgerechnete Beispiele unter den Musterlösungen
+        lek.regel.reihen.push([{ art: 'beispiel', titel: 'Noch mehr Beispiele', nummern: true, punkte: bsp.map((b) => `${E(b.a)} → **${E(b.l)}**`) }])
+        const ue = lek.ueben
+        ue.unshift({ art: 'rechnen', auftrag: '**Jetzt du** – rechne genau wie in den Beispielen.', stufe: 1, items: jetzt.map(posten), spalten: spaltenFuer(jetzt) })
+        const plus = ue.findIndex((a) => /^\*\*Plus\*\*/.test(a.auftrag || ''))
+        ue.splice(plus < 0 ? ue.length - 1 : plus, 0, { art: 'rechnen', auftrag: '**Übungspäckchen** – übe, bis es sitzt. Erst die leichten, dann die schwereren.', stufe: 2, items: paeckchen.map(posten), spalten: spaltenFuer(paeckchen) })
+      }
+      // Fit bleiben: Aufgaben aus Lektionen von früher (1, 2, 4 und 7 Lektionen zurück – auch aus dem Modul davor)
+      const g = ALLE.findIndex((a) => a.nr === nr && a.l.nr === l.nr)
+      const frueher = [1, 2, 4, 7].map((d) => ALLE[g - d]).filter((a) => a && a.gen)
+      if (frueher.length) {
+        const fit = frueher.flatMap((a, k) => gewuerfelt(a.gen, frueher.length < 3 ? 2 : 1, 'basis', s + 50 + k * 7))
+        lek.fit = [{ art: 'rechnen', auftrag: 'Rechne allein. Das kennst du schon!', stufe: 1, items: fit.map(posten), spalten: spaltenFuer(fit) }]
+        lek.fitWas = 'Aufgaben von früher'
+      }
+      imThema.push({ l, gen })
+    }
+    // Wiederholung am Ende des Themas: gemischte Aufgaben aus allen Lektionen des Themas
+    const mitGen = imThema.filter((x) => x.gen)
+    if (mitGen.length) {
+      const je = Math.max(2, Math.ceil(8 / mitGen.length))
+      const listen = mitGen.map((x) => gewuerfelt(x.gen, je, 'kern', nr * 1000 + x.l.nr * 10 + 9))
+      const gemischt = []
+      for (let r = 0; r < je; r++) listen.forEach((li) => li[r] && gemischt.push(li[r]))
+      const thema = P(t.titel).replace(/ & /g, ' und '), letzte = L[j - 1], auswahl = gemischt.slice(0, 16)
+      letzte.wiederholung = [{ art: 'rechnen', auftrag: `**Gemischt** – Aufgaben aus ${mitGen.length > 1 ? 'allen Lektionen' : 'der Lektion'} zum Thema „${thema}“. Was kannst du schon sicher?`, stufe: 2, items: auswahl.map(posten), spalten: spaltenFuer(auswahl) }]
+      letzte.wiederholungWas = thema
+    }
+  }
 }
 
 export function matheLektionen(nr, extras) {
@@ -121,5 +179,6 @@ export function matheLektionen(nr, extras) {
       foerdertipp: l.foerdertipp, spiel: l.spiel,
     })
   }
+  mehrUebung(nr, m, L)
   return L
 }

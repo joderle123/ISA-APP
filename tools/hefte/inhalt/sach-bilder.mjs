@@ -61,7 +61,7 @@ export function teller({ breite = 70 } = {}) {
 /** Balkendiagramm (HTML), daten: [[Beschriftung, Wert]] */
 export function balken(titel, daten, { einheit = '', max, farbe = 'var(--f)' } = {}) {
   const m = max || Math.max(...daten.map((d) => d[1]))
-  return `<div class="balken"><div class="bt">${titel}</div>${daten.map(([l, v]) => `<div class="bz"><span>${l}</span><div class="bb"><div style="width:${(v / m) * 100}%;background:${farbe}"></div><b>${String(v).replace('.', ',')}${einheit ? ' ' + einheit : ''}</b></div></div>`).join('')}</div>`
+  return `<div class="balken"><div class="bt">${titel}</div>${daten.map(([l, v]) => `<div class="bz"><span>${l}</span><div class="bb"><div style="width:${(v / m) * 78}%;background:${farbe}"></div><b>${String(v).replace('.', ',')}${einheit ? ' ' + einheit : ''}</b></div></div>`).join('')}</div>`
 }
 
 /** Stromkreis: Batterie, Schalter, Lampe (nummeriert) – offen oder geschlossen */

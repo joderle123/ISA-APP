@@ -14,6 +14,8 @@ import { ZeichnungSvg } from '../../src/blatt/ZeichnungSvg'
 import { palette } from '../../src/blatt/zeichnung'
 import { peepZeichnung } from '../../src/blatt/peeps'
 import { URHEBER } from '../../src/lib/urheber'
+// @ts-ignore – reines JavaScript-Modul ohne Typen
+import { ohneAudio } from './ohne-audio.mjs'
 
 const HIER = dirname(fileURLToPath(import.meta.url))
 const ROOT = join(HIER, '..', '..')
@@ -365,6 +367,8 @@ const TEILE: Record<string, { name: Record<string, string>; icon: string }> = {
   sprechen: { name: { de: 'Sprechen', fr: 'Parler' }, icon: 'messages' },
   schreiben: { name: { de: 'Schreiben', fr: 'Écrire' }, icon: 'writing' },
   check: { name: { de: 'Kurz-Check', fr: 'Mini-bilan' }, icon: 'checklist' },
+  fit: { name: { de: 'Fit bleiben', fr: 'Rester en forme' }, icon: 'refresh' },
+  wiederholung: { name: { de: 'Wiederholung', fr: 'Révision' }, icon: 'repeat' },
 }
 let AKTIV: any = null
 function teilKopf(art: string, sp: string, was = ''): string {
@@ -434,7 +438,20 @@ function lesenSprechtext(r: any, sp = 'de'): { wer: string; text: string }[] {
   return t
 }
 
+// Ohne Audio (Mathe, Sachfächer – Auftrag 23.11.2026): dieselbe Szene, aber das Gespräch steht gedruckt im Heft.
+function szeneTeil(L: any, k: Kontext): string {
+  const r = L.hoeren, de = k.sp === 'de'
+  let h = (r.neueSeite ? '<div class="neue-seite"></div>' : '') + '<div class="zusammen">' + teilKopf('hoeren', k.sp, r.was || '')
+  h += `<div class="hoerkarte ohne"><div class="szene"><div class="wo">${esc(r.wo || '')}</div><h4>${inl(r.titel)}</h4><p>${inl(r.situation)}</p>${r.bild ? `<div class="bild">${r.bild.map(bild).join('')}</div>` : ''}</div></div>`
+  const block = (s: string, name: string) => (r[s] || []).map((a: any, i: number) => (i === 0 ? `<div class="zusammen"><div class="schritt">${name}</div>` : '') + aufgabe(a, nrFuer(a, k), a.art === 'sprechen' ? 'in-sprechen' : 'in-hoeren') + (i === 0 ? '</div>' : '')).join('')
+  if (r.vor?.length) h += '</div>' + block('vor', de ? 'Vor dem Lesen' : 'Avant la lecture') + '<div class="zusammen">'
+  h += `<div class="gespraech"><div class="dialog">${r.text.map(([wer, t]: [string, string]) => `<span class="wer">${esc(wer)}</span><span>${inl(t)}</span>`).join('')}</div></div></div>`
+  h += block('beim', de ? 'Beim Lesen' : 'Pendant la lecture') + block('nach', de ? 'Nach dem Lesen' : 'Après la lecture')
+  return h
+}
+
 function hoerenTeil(L: any, k: Kontext): string {
+  if (L.hoeren.lesen) return szeneTeil(L, k)
   const r = L.hoeren, code = `${k.modul.kuerzel}-${String(k.nr).padStart(2, '0')}h`
   k.spuren.push({ code, art: 'hoeren', lektion: k.nr, titel: r.titel, sprache: k.sp, sprecher: r.sprecher, teile: r.text.map(([wer, t]: [string, string]) => ({ wer, text: t })) })
   let h = (r.neueSeite ? '<div class="neue-seite"></div>' : '') + '<div class="zusammen">' + teilKopf('hoeren', k.sp, r.was || '')
@@ -475,6 +492,8 @@ function lektion(L: any, k: Kontext): string {
     L.bild ? `<div class="bild">${L.bild.map(bild).join('')}</div>` : ''}</div>`
   const block = (kopf: string, liste: any[], klasse?: string) => liste.map((a: any, i: number) => (i === 0 ? (a.neueSeite ? '<div class="neue-seite"></div>' : '') + '<div class="zusammen">' + kopf : '') + aufgabe(i === 0 && a.neueSeite ? { ...a, neueSeite: false } : a, nrFuer(a, k), klasse) + (i === 0 ? '</div>' : '')).join('')
   if (L.start) h += block(teilKopf('start', sp, L.start.was || ''), L.start.aufgaben)
+  // Mathe: Aufgaben aus früheren Lektionen (verteilte Wiederholung)
+  if (L.fit?.length) h += block(teilKopf('fit', sp, L.fitWas || ''), L.fit)
   if (L.lesen) h += lesenTeil(L, k)
   if (L.hoeren) h += hoerenTeil(L, k)
   if (L.regel) h += (L.regel.neueSeite ? '<div class="neue-seite"></div>' : '') + regelTeil(L, k)
@@ -486,6 +505,8 @@ function lektion(L: any, k: Kontext): string {
   if (L.check?.length) h += checkTeil(L, k)
   if (L.nachCheck?.length) h += L.nachCheck.map((a: any) => aufgabe(a, nrFuer(a, k))).join('')   // z. B. Logbuch ganz am Ende
   if (zusammenEnde) h += '</div>'
+  // Mathe: am Ende eines Themas gemischte Aufgaben aus allen Lektionen des Themas
+  if (L.wiederholung?.length) h += '<div class="neue-seite"></div>' + block(teilKopf('wiederholung', sp, L.wiederholungWas || ''), L.wiederholung)
   return h + '</section>'
 }
 
@@ -510,7 +531,7 @@ function inhalt(m: any, sp: string, L: any[], seiten: Record<string, number>): s
     h += `<div class="thema">${icon(t.icon || 'bookmark')}${esc(t.titel[sp])}</div>`
     for (let j = 0; j < t.lektionen; j++) {
       const l = L[i++], nr = i
-      const med = [l.lesen && ['book', 'var(--lesen)'], l.hoeren && ['headphones', 'var(--hoeren)'], l.schreiben && ['writing', 'var(--schreiben)']].filter(Boolean) as string[][]
+      const med = [l.lesen && ['book', 'var(--lesen)'], l.hoeren && [m.teile?.hoeren?.icon || 'headphones', 'var(--hoeren)'], l.schreiben && ['writing', 'var(--schreiben)']].filter(Boolean) as string[][]
       h += `<div class="zeile"><span class="nr">${nr}</span><span><span class="t">${inl(l.titel)}</span><span class="medien">${med.map(([ic, f]) => `<span style="background:${f}">${icon(ic)}</span>`).join('')}</span><span class="z">${inl(l.ziel[sp === 'de' ? 'de' : 'fr'])}</span></span><span class="s">${seiten['L' + nr] || ''}</span></div>`
     }
   }
@@ -530,7 +551,7 @@ function anhang(m: any, sp: string, L: any[]): string {
   h += '</table></div></section>'
   h += `<section class="anhang lektion"><span class="marke-seite">§§B§§</span><div class="seitenkopf"><span class="marke">${sp === 'de' ? 'Anhang' : 'Annexe'} B</span><span>${esc(m.fach[sp])} · ${sp === 'de' ? 'Modul' : 'Module'} ${m.nr}</span></div><h2>${sp === 'de' ? 'Mein Lernstand' : 'Où j’en suis'}</h2><p class="klein" style="margin-bottom:4mm">${sp === 'de' ? 'Male am Ende jeder Lektion aus: grün = sicher, gelb = geht so, rot = noch nicht. Was rot ist, übst du noch einmal.' : 'Colorie à la fin de chaque leçon : vert = sûr, jaune = à peu près, rouge = pas encore.'}</p>`
   L.forEach((l, i) => { h += `<div style="margin:3mm 0 1.5mm;font-family:Lexend;font-weight:700;color:var(--f)">${i + 1} · ${inl(l.titel)}</div>` + `<div class="check">${(l.check || []).map((c: string) => `<div class="z" style="grid-template-columns:1fr 12mm 12mm 12mm"><div style="font-size:11pt;padding:1.6mm 3mm">${inl(c)}</div><div class="s"><span class="kaestchen" style="border-color:#2f8a4c"></span></div><div class="s"><span class="kaestchen" style="border-color:#c98a06"></span></div><div class="s"><span class="kaestchen" style="border-color:#d0577b"></span></div></div>`).join('')}</div>` })
-  h += `<p class="klein" style="margin-top:8mm">${esc(URHEBER[sp as 'de' | 'fr'] || '')} · ${sp === 'de' ? 'Alle Texte und Aufgaben sind selbst geschrieben; Personen sind ausgedacht. Stimmen der Hörtexte: Piper (Thorsten, Kerstin – CC0; MLS – CC BY 4.0; SIWIS – CC BY 4.0; UPMC – CC BY-SA 4.0). Schrift: Atkinson Hyperlegible, Lexend (SIL OFL). Figuren: Open Peeps (CC0). Piktogramme: Tabler Icons (MIT).' + (m.quellen ? ' ' + m.quellen : '') : 'Textes et exercices originaux ; personnages inventés. Voix : Piper (CC0 / CC BY 4.0 / CC BY-SA 4.0). Polices : Atkinson Hyperlegible, Lexend (SIL OFL). Figures : Open Peeps (CC0). Pictogrammes : Tabler Icons (MIT).'}</p></section>`
+  h += `<p class="klein" style="margin-top:8mm">${esc(URHEBER[sp as 'de' | 'fr'] || '')} · ${sp === 'de' ? 'Alle Texte und Aufgaben sind selbst geschrieben; Personen sind ausgedacht. ' + (m.ohneAudio ? '' : 'Stimmen der Hörtexte: Piper (Thorsten, Kerstin – CC0; MLS – CC BY 4.0; SIWIS – CC BY 4.0; UPMC – CC BY-SA 4.0). ') + 'Schrift: Atkinson Hyperlegible, Lexend (SIL OFL). Figuren: Open Peeps (CC0). Piktogramme: Tabler Icons (MIT).' + (m.quellen ? ' ' + m.quellen : '') : 'Textes et exercices originaux ; personnages inventés. Voix : Piper (CC0 / CC BY 4.0 / CC BY-SA 4.0). Polices : Atkinson Hyperlegible, Lexend (SIL OFL). Figures : Open Peeps (CC0). Pictogrammes : Tabler Icons (MIT).'}</p></section>`
   return h
 }
 
@@ -602,7 +623,8 @@ print(json.dumps(r))`, pdf]).toString()
 }
 
 async function baue(id: string, browser: any, png: boolean) {
-  const { MODUL, LEKTIONEN } = await import(pathToFileURL(join(HIER, 'inhalt', id + '.mjs')).href)
+  const { MODUL, LEKTIONEN: ROH } = await import(pathToFileURL(join(HIER, 'inhalt', id + '.mjs')).href)
+  const LEKTIONEN = MODUL.ohneAudio ? ROH.map(ohneAudio) : ROH
   FARBEN = { tief: MODUL.farben.tief, mittel: MODUL.farben.mittel, zart: MODUL.farben.zart }
   const ziel = join(ROOT, 'tmp/hefte', id); mkdirSync(ziel, { recursive: true })
   const seite = await browser.newPage()
@@ -627,7 +649,7 @@ async function baue(id: string, browser: any, png: boolean) {
       await seite.pdf({ path: pdf, format: 'A4', printBackground: true, preferCSSPageSize: true })
       if (durchlauf === 0) seiten = seitenFinden(pdf)
       else {
-        if (!loesungen) writeFileSync(join(ziel, 'spuren.json'), JSON.stringify({ modul: MODUL.kuerzel, titel: MODUL.titel, sprache: MODUL.sprache, aussprache: MODUL.aussprache || {}, spuren }, null, 1))
+        if (!loesungen && !MODUL.ohneAudio) writeFileSync(join(ziel, 'spuren.json'), JSON.stringify({ modul: MODUL.kuerzel, titel: MODUL.titel, sprache: MODUL.sprache, aussprache: MODUL.aussprache || {}, spuren }, null, 1))
         const n = execFileSync('python3', ['-I', '-c', 'import pymupdf,sys;print(len(pymupdf.open(sys.argv[1])))', pdf]).toString().trim()
         console.log(`✓ ${pdf} (${n} Seiten)`)
         if (MODUL.ablage && !loesungen) { const ab = join(ROOT, MODUL.ablage, MODUL.dateiname + '.pdf'); copyFileSync(pdf, ab); console.log(`  → ${MODUL.ablage}/${MODUL.dateiname}.pdf (Toolbox)`) }

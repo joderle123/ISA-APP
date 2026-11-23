@@ -25,8 +25,12 @@ const liste: Record<string, Partial<Record<Sprache, Record<string, string>>>> = 
 // falsch); damit die drei Antworten gleich behandelt werden, haben auch A und B keinen QR-Code
 const AUSLASSEN = new Set(['tbs-143a', 'tbs-143b', 'tbs-143c', 'tbsf-143a', 'tbsf-143b', 'tbsf-143c'])
 
+// Ohne Hördateien (Auftrag 23.11.2026: Hörtexte nur in Deutsch und Französisch): Mathe-Blätter und Kernkompetenz Rechnen
+const ohneHoeren = (b: Blatt, kuerzel: string) => kuerzel === 'ma' || b.id.startsWith('mathe-') || /^kk-r\d/.test(b.id)
+
 for (const b of blaetter) {
   const [kuerzel, num] = b.nr.toLowerCase().split('-')
+  if (ohneHoeren(b, kuerzel)) continue
   for (const sprache of ['de', 'fr'] as Sprache[]) {
     const inhalt = b[sprache]
     if (!inhalt) continue

@@ -300,8 +300,8 @@
      "lektionen": 14,
      "heft": "Mathe_Modul-1_Heft",
      "loesungen": "Mathe_Modul-1_Loesungen",
-     "mb": 2.5,
-     "mbLoesungen": 2.6
+     "mb": 3.4,
+     "mbLoesungen": 3.5
     },
     {
      "id": "mathe-m2",
@@ -314,8 +314,8 @@
      "lektionen": 12,
      "heft": "Mathe_Modul-2_Heft",
      "loesungen": "Mathe_Modul-2_Loesungen",
-     "mb": 2.2,
-     "mbLoesungen": 2.2
+     "mb": 3.1,
+     "mbLoesungen": 3.1
     },
     {
      "id": "mathe-m3",
@@ -328,8 +328,8 @@
      "lektionen": 9,
      "heft": "Mathe_Modul-3_Heft",
      "loesungen": "Mathe_Modul-3_Loesungen",
-     "mb": 1.7,
-     "mbLoesungen": 1.7
+     "mb": 2.4,
+     "mbLoesungen": 2.5
     },
     {
      "id": "mathe-m4",
@@ -342,8 +342,8 @@
      "lektionen": 16,
      "heft": "Mathe_Modul-4_Heft",
      "loesungen": "Mathe_Modul-4_Loesungen",
-     "mb": 3.3,
-     "mbLoesungen": 3.3
+     "mb": 4.7,
+     "mbLoesungen": 4.8
     },
     {
      "id": "mathe-m5",
@@ -356,8 +356,8 @@
      "lektionen": 13,
      "heft": "Mathe_Modul-5_Heft",
      "loesungen": "Mathe_Modul-5_Loesungen",
-     "mb": 2.4,
-     "mbLoesungen": 2.4
+     "mb": 3.4,
+     "mbLoesungen": 3.4
     },
     {
      "id": "mathe-m6",
@@ -370,8 +370,8 @@
      "lektionen": 8,
      "heft": "Mathe_Modul-6_Heft",
      "loesungen": "Mathe_Modul-6_Loesungen",
-     "mb": 1.4,
-     "mbLoesungen": 1.4
+     "mb": 2,
+     "mbLoesungen": 2
     }
    ]
   },
@@ -394,8 +394,8 @@
      "lektionen": 8,
      "heft": "Culture-generale_Modul-1_Heft",
      "loesungen": "Culture-generale_Modul-1_Loesungen",
-     "mb": 1.9,
-     "mbLoesungen": 2
+     "mb": 1.7,
+     "mbLoesungen": 1.8
     },
     {
      "id": "culge-m2",
@@ -408,8 +408,8 @@
      "lektionen": 8,
      "heft": "Culture-generale_Modul-2_Heft",
      "loesungen": "Culture-generale_Modul-2_Loesungen",
-     "mb": 1.3,
-     "mbLoesungen": 1.3
+     "mb": 1.2,
+     "mbLoesungen": 1.2
     },
     {
      "id": "culge-m3",
@@ -422,8 +422,8 @@
      "lektionen": 8,
      "heft": "Culture-generale_Modul-3_Heft",
      "loesungen": "Culture-generale_Modul-3_Loesungen",
-     "mb": 1.9,
-     "mbLoesungen": 2
+     "mb": 1.8,
+     "mbLoesungen": 1.8
     },
     {
      "id": "culge-m4",
@@ -436,8 +436,8 @@
      "lektionen": 8,
      "heft": "Culture-generale_Modul-4_Heft",
      "loesungen": "Culture-generale_Modul-4_Loesungen",
-     "mb": 1.4,
-     "mbLoesungen": 1.4
+     "mb": 1.2,
+     "mbLoesungen": 1.3
     },
     {
      "id": "culge-m5",
@@ -450,8 +450,8 @@
      "lektionen": 8,
      "heft": "Culture-generale_Modul-5_Heft",
      "loesungen": "Culture-generale_Modul-5_Loesungen",
-     "mb": 1.2,
-     "mbLoesungen": 1.3
+     "mb": 1.1,
+     "mbLoesungen": 1.1
     },
     {
      "id": "culge-m6",
@@ -464,8 +464,8 @@
      "lektionen": 8,
      "heft": "Culture-generale_Modul-6_Heft",
      "loesungen": "Culture-generale_Modul-6_Loesungen",
-     "mb": 1.5,
-     "mbLoesungen": 1.6
+     "mb": 1.4,
+     "mbLoesungen": 1.5
     },
     {
      "id": "culge-m7",
@@ -478,8 +478,8 @@
      "lektionen": 8,
      "heft": "Culture-generale_Modul-7_Heft",
      "loesungen": "Culture-generale_Modul-7_Loesungen",
-     "mb": 1.3,
-     "mbLoesungen": 1.4
+     "mb": 1.2,
+     "mbLoesungen": 1.3
     },
     {
      "id": "culge-m8",
@@ -492,8 +492,8 @@
      "lektionen": 8,
      "heft": "Culture-generale_Modul-8_Heft",
      "loesungen": "Culture-generale_Modul-8_Loesungen",
-     "mb": 1.5,
-     "mbLoesungen": 1.6
+     "mb": 1.4,
+     "mbLoesungen": 1.4
     },
     {
      "id": "culge-m9",
@@ -506,8 +506,8 @@
      "lektionen": 8,
      "heft": "Culture-generale_Modul-9_Heft",
      "loesungen": "Culture-generale_Modul-9_Loesungen",
-     "mb": 1.5,
-     "mbLoesungen": 1.7
+     "mb": 1.4,
+     "mbLoesungen": 1.5
     }
    ]
   },
@@ -530,8 +530,8 @@
      "lektionen": 8,
      "heft": "Vie-et-societe_Modul-1_Heft",
      "loesungen": "Vie-et-societe_Modul-1_Loesungen",
-     "mb": 1.4,
-     "mbLoesungen": 1.5
+     "mb": 1.3,
+     "mbLoesungen": 1.3
     },
     {
      "id": "vieso-m2",
@@ -544,8 +544,8 @@
      "lektionen": 8,
      "heft": "Vie-et-societe_Modul-2_Heft",
      "loesungen": "Vie-et-societe_Modul-2_Loesungen",
-     "mb": 1.3,
-     "mbLoesungen": 1.4
+     "mb": 1.2,
+     "mbLoesungen": 1.2
     },
     {
      "id": "vieso-m3",
@@ -558,8 +558,8 @@
      "lektionen": 8,
      "heft": "Vie-et-societe_Modul-3_Heft",
      "loesungen": "Vie-et-societe_Modul-3_Loesungen",
-     "mb": 1.4,
-     "mbLoesungen": 1.5
+     "mb": 1.3,
+     "mbLoesungen": 1.3
     },
     {
      "id": "vieso-m4",
@@ -572,8 +572,8 @@
      "lektionen": 8,
      "heft": "Vie-et-societe_Modul-4_Heft",
      "loesungen": "Vie-et-societe_Modul-4_Loesungen",
-     "mb": 1.4,
-     "mbLoesungen": 1.4
+     "mb": 1.2,
+     "mbLoesungen": 1.3
     },
     {
      "id": "vieso-m5",
@@ -586,8 +586,8 @@
      "lektionen": 8,
      "heft": "Vie-et-societe_Modul-5_Heft",
      "loesungen": "Vie-et-societe_Modul-5_Loesungen",
-     "mb": 1.3,
-     "mbLoesungen": 1.4
+     "mb": 1.2,
+     "mbLoesungen": 1.2
     },
     {
      "id": "vieso-m6",
@@ -600,8 +600,8 @@
      "lektionen": 8,
      "heft": "Vie-et-societe_Modul-6_Heft",
      "loesungen": "Vie-et-societe_Modul-6_Loesungen",
-     "mb": 1.4,
-     "mbLoesungen": 1.5
+     "mb": 1.3,
+     "mbLoesungen": 1.4
     },
     {
      "id": "vieso-m7",
@@ -614,8 +614,8 @@
      "lektionen": 8,
      "heft": "Vie-et-societe_Modul-7_Heft",
      "loesungen": "Vie-et-societe_Modul-7_Loesungen",
-     "mb": 1.4,
-     "mbLoesungen": 1.4
+     "mb": 1.2,
+     "mbLoesungen": 1.3
     },
     {
      "id": "vieso-m8",
@@ -628,8 +628,8 @@
      "lektionen": 8,
      "heft": "Vie-et-societe_Modul-8_Heft",
      "loesungen": "Vie-et-societe_Modul-8_Loesungen",
-     "mb": 1.3,
-     "mbLoesungen": 1.3
+     "mb": 1.2,
+     "mbLoesungen": 1.2
     },
     {
      "id": "vieso-m9",
@@ -642,8 +642,8 @@
      "lektionen": 8,
      "heft": "Vie-et-societe_Modul-9_Heft",
      "loesungen": "Vie-et-societe_Modul-9_Loesungen",
-     "mb": 1.3,
-     "mbLoesungen": 1.3
+     "mb": 1.1,
+     "mbLoesungen": 1.2
     }
    ]
   },
@@ -666,8 +666,8 @@
      "lektionen": 6,
      "heft": "Atelier_Modul-1_Heft",
      "loesungen": "Atelier_Modul-1_Loesungen",
-     "mb": 1.1,
-     "mbLoesungen": 1.1
+     "mb": 1,
+     "mbLoesungen": 1
     },
     {
      "id": "atelier-m2",
@@ -680,8 +680,8 @@
      "lektionen": 6,
      "heft": "Atelier_Modul-2_Heft",
      "loesungen": "Atelier_Modul-2_Loesungen",
-     "mb": 1,
-     "mbLoesungen": 1.1
+     "mb": 0.9,
+     "mbLoesungen": 0.9
     },
     {
      "id": "atelier-m3",
@@ -694,8 +694,8 @@
      "lektionen": 6,
      "heft": "Atelier_Modul-3_Heft",
      "loesungen": "Atelier_Modul-3_Loesungen",
-     "mb": 1,
-     "mbLoesungen": 1.1
+     "mb": 0.9,
+     "mbLoesungen": 1
     },
     {
      "id": "atelier-m4",
@@ -708,8 +708,8 @@
      "lektionen": 6,
      "heft": "Atelier_Modul-4_Heft",
      "loesungen": "Atelier_Modul-4_Loesungen",
-     "mb": 1,
-     "mbLoesungen": 1
+     "mb": 0.9,
+     "mbLoesungen": 0.9
     },
     {
      "id": "atelier-m5",
@@ -722,8 +722,8 @@
      "lektionen": 6,
      "heft": "Atelier_Modul-5_Heft",
      "loesungen": "Atelier_Modul-5_Loesungen",
-     "mb": 1,
-     "mbLoesungen": 1
+     "mb": 0.9,
+     "mbLoesungen": 0.9
     },
     {
      "id": "atelier-m6",
@@ -736,8 +736,8 @@
      "lektionen": 6,
      "heft": "Atelier_Modul-6_Heft",
      "loesungen": "Atelier_Modul-6_Loesungen",
-     "mb": 1,
-     "mbLoesungen": 1
+     "mb": 0.9,
+     "mbLoesungen": 0.9
     },
     {
      "id": "atelier-m7",
@@ -750,8 +750,8 @@
      "lektionen": 6,
      "heft": "Atelier_Modul-7_Heft",
      "loesungen": "Atelier_Modul-7_Loesungen",
-     "mb": 1,
-     "mbLoesungen": 1.1
+     "mb": 0.9,
+     "mbLoesungen": 0.9
     },
     {
      "id": "atelier-m8",
@@ -764,8 +764,8 @@
      "lektionen": 6,
      "heft": "Atelier_Modul-8_Heft",
      "loesungen": "Atelier_Modul-8_Loesungen",
-     "mb": 1,
-     "mbLoesungen": 1
+     "mb": 0.9,
+     "mbLoesungen": 0.9
     },
     {
      "id": "atelier-m9",
@@ -778,8 +778,8 @@
      "lektionen": 6,
      "heft": "Atelier_Modul-9_Heft",
      "loesungen": "Atelier_Modul-9_Loesungen",
-     "mb": 1,
-     "mbLoesungen": 1
+     "mb": 0.9,
+     "mbLoesungen": 0.9
     }
    ]
   },
@@ -802,8 +802,8 @@
      "lektionen": 6,
      "heft": "Sport_Modul-1_Heft",
      "loesungen": "Sport_Modul-1_Loesungen",
-     "mb": 1,
-     "mbLoesungen": 1
+     "mb": 0.9,
+     "mbLoesungen": 0.9
     },
     {
      "id": "eduph-m2",
@@ -816,8 +816,8 @@
      "lektionen": 6,
      "heft": "Sport_Modul-2_Heft",
      "loesungen": "Sport_Modul-2_Loesungen",
-     "mb": 1,
-     "mbLoesungen": 1
+     "mb": 0.9,
+     "mbLoesungen": 0.9
     },
     {
      "id": "eduph-m3",
@@ -830,8 +830,8 @@
      "lektionen": 6,
      "heft": "Sport_Modul-3_Heft",
      "loesungen": "Sport_Modul-3_Loesungen",
-     "mb": 1,
-     "mbLoesungen": 1
+     "mb": 0.9,
+     "mbLoesungen": 0.9
     },
     {
      "id": "eduph-m4",
@@ -844,8 +844,8 @@
      "lektionen": 6,
      "heft": "Sport_Modul-4_Heft",
      "loesungen": "Sport_Modul-4_Loesungen",
-     "mb": 1,
-     "mbLoesungen": 1
+     "mb": 0.9,
+     "mbLoesungen": 0.9
     },
     {
      "id": "eduph-m5",
@@ -858,8 +858,8 @@
      "lektionen": 6,
      "heft": "Sport_Modul-5_Heft",
      "loesungen": "Sport_Modul-5_Loesungen",
-     "mb": 0.9,
-     "mbLoesungen": 1
+     "mb": 0.8,
+     "mbLoesungen": 0.9
     },
     {
      "id": "eduph-m6",
@@ -872,8 +872,8 @@
      "lektionen": 6,
      "heft": "Sport_Modul-6_Heft",
      "loesungen": "Sport_Modul-6_Loesungen",
-     "mb": 1,
-     "mbLoesungen": 1.1
+     "mb": 0.9,
+     "mbLoesungen": 0.9
     },
     {
      "id": "eduph-m7",
@@ -886,8 +886,8 @@
      "lektionen": 5,
      "heft": "Sport_Modul-7_Heft",
      "loesungen": "Sport_Modul-7_Loesungen",
-     "mb": 0.8,
-     "mbLoesungen": 0.8
+     "mb": 0.7,
+     "mbLoesungen": 0.7
     },
     {
      "id": "eduph-m8",
@@ -900,8 +900,8 @@
      "lektionen": 5,
      "heft": "Sport_Modul-8_Heft",
      "loesungen": "Sport_Modul-8_Loesungen",
-     "mb": 0.9,
-     "mbLoesungen": 0.9
+     "mb": 0.8,
+     "mbLoesungen": 0.8
     },
     {
      "id": "eduph-m9",
@@ -914,8 +914,8 @@
      "lektionen": 5,
      "heft": "Sport_Modul-9_Heft",
      "loesungen": "Sport_Modul-9_Loesungen",
-     "mb": 0.8,
-     "mbLoesungen": 0.8
+     "mb": 0.7,
+     "mbLoesungen": 0.7
     }
    ]
   }

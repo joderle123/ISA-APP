@@ -32,42 +32,42 @@ export const SACH_AUSSPRACHE = {
 
 const ANLEITUNG = {
   culge: [
-    'Jede Lektion hat diese Teile: **Los geht’s**, **Lesen und verstehen**, **Hören**, **Merken**, **Üben** und **Schreiben**. Am Ende steht ein **Kurz-Check**.',
-    'Neben jedem Lesetext und jedem Hörtext ist ein **QR-Code**. Halte die Kamera deines Handys darauf: Du hörst den Text, auch langsamer.',
+    'Jede Lektion hat diese Teile: **Los geht’s**, **Lesen und verstehen**, **Szene**, **Merken**, **Üben** und **Schreiben**. Am Ende steht ein **Kurz-Check**.',
+    'In der **Szene** sprechen Menschen über das Thema: ein Gespräch, eine Führung oder ein Interview. Ihr könnt sie auch mit verteilten Rollen lesen.',
     'In diesem Fach arbeitest du mit **Karten**, **Zeitleisten**, **Schaubildern** und **Versuchen**. Lies die Legende und schau genau hin.',
     'Die Punkte zeigen die Stufe: ●○○ Basis · ●●○ Kern · ●●● Plus. Die wichtigsten Fachwörter stehen auch auf Französisch.',
   ],
   atelier: [
-    'Jede Lektion hat diese Teile: **Los geht’s**, **Lesen**, **Hören**, **Gut zu wissen**, **Ausprobieren**, **Besprechen** und **Mein Werkstatt-Bericht**.',
-    'Neben jeder Anleitung ist ein **QR-Code**. So hörst du die Schritte, während deine Hände arbeiten – auch langsamer.',
+    'Jede Lektion hat diese Teile: **Los geht’s**, **Lesen**, **Szene**, **Gut zu wissen**, **Ausprobieren**, **Besprechen** und **Mein Werkstatt-Bericht**.',
+    'Lies jede Anleitung **ganz**, bevor du anfängst. Lege das Heft beim Arbeiten offen neben dich und hake jeden Schritt ab.',
     'In der Werkstatt gilt immer: **erst lesen, dann fragen, dann arbeiten**. Die Lehrperson zeigt jedes Werkzeug, bevor du es benutzt.',
     'Die Punkte zeigen die Stufe: ●○○ Basis · ●●○ Kern · ●●● Plus. Die wichtigsten Fachwörter stehen auch auf Französisch.',
   ],
   eduph: [
-    'Jede Lektion hat diese Teile: **Los geht’s**, **Lesen**, **Hören**, **Gut zu wissen**, **In Bewegung**, **Besprechen** und **Mein Sport-Tagebuch**.',
-    'Neben jedem Text ist ein **QR-Code**. Bei manchen Hörtexten sagt dir eine Trainerin oder ein Trainer an, was du tun sollst – Handy hinlegen und mitmachen.',
+    'Jede Lektion hat diese Teile: **Los geht’s**, **Lesen**, **Szene**, **Gut zu wissen**, **In Bewegung**, **Besprechen** und **Mein Sport-Tagebuch**.',
+    'In manchen Szenen sagt eine Trainerin oder ein Trainer an, was zu tun ist: **Eine Person liest vor, alle machen mit.**',
     'Mach nur, was dir guttut. Wenn etwas wehtut oder dir schwindlig wird: **sofort aufhören** und Bescheid sagen. Trinken nicht vergessen!',
     'Die Punkte zeigen die Stufe: ●○○ Basis · ●●○ Kern · ●●● Plus. Jeder Körper ist anders – vergleiche dich mit dir selbst, nicht mit anderen.',
   ],
   vieso: [
-    'Jede Lektion hat diese Teile: **Los geht’s**, **Lesen**, **Hören**, **Gut zu wissen**, **Nachdenken**, **Miteinander reden** und **Meine Gedanken**.',
-    'Neben jedem Text ist ein **QR-Code**. Halte die Kamera deines Handys darauf: Du hörst den Text, auch langsamer.',
+    'Jede Lektion hat diese Teile: **Los geht’s**, **Lesen**, **Szene**, **Gut zu wissen**, **Nachdenken**, **Miteinander reden** und **Meine Gedanken**.',
+    'In der **Szene** sprechen Jugendliche oder Erwachsene über das Thema. Lies genau: Wer sagt was – und warum?',
     'Viele Aufgaben haben **kein Richtig oder Falsch**. Wichtig ist, dass du deine Meinung **begründest** und anderen **zuhörst**.',
     'Persönliches erzählst du nur, wenn du willst. Du darfst immer eine **ausgedachte Person** nehmen. Sorgen? Sprich mit einer Vertrauensperson oder ruf **116 111** an (kostenlos, anonym).',
   ],
 }
 
 const TEILE = {
-  culge: { start: { de: 'Los geht’s', icon: 'rocket' }, lesen: { de: 'Lesen und verstehen', icon: 'book' }, hoeren: { de: 'Hören', icon: 'headphones' }, regel: { de: 'Merken', icon: 'bulb' }, ueben: { de: 'Üben', icon: 'pencil' }, sprechen: { de: 'Austauschen', icon: 'messages' }, schreiben: { de: 'Schreiben', icon: 'writing' } },
-  atelier: { start: { de: 'Los geht’s', icon: 'rocket' }, lesen: { de: 'Lesen', icon: 'book' }, hoeren: { de: 'Hören', icon: 'headphones' }, regel: { de: 'Gut zu wissen', icon: 'bulb' }, ueben: { de: 'Ausprobieren', icon: 'tool' }, sprechen: { de: 'Besprechen', icon: 'messages' }, schreiben: { de: 'Mein Werkstatt-Bericht', icon: 'writing' } },
-  eduph: { start: { de: 'Los geht’s', icon: 'rocket' }, lesen: { de: 'Lesen', icon: 'book' }, hoeren: { de: 'Hören', icon: 'headphones' }, regel: { de: 'Gut zu wissen', icon: 'bulb' }, ueben: { de: 'In Bewegung', icon: 'run' }, sprechen: { de: 'Besprechen', icon: 'messages' }, schreiben: { de: 'Mein Sport-Tagebuch', icon: 'writing' } },
-  vieso: { start: { de: 'Los geht’s', icon: 'rocket' }, lesen: { de: 'Lesen', icon: 'book' }, hoeren: { de: 'Hören', icon: 'headphones' }, regel: { de: 'Gut zu wissen', icon: 'bulb' }, ueben: { de: 'Nachdenken', icon: 'brain' }, sprechen: { de: 'Miteinander reden', icon: 'messages' }, schreiben: { de: 'Meine Gedanken', icon: 'writing' } },
+  culge: { start: { de: 'Los geht’s', icon: 'rocket' }, lesen: { de: 'Lesen und verstehen', icon: 'book' }, hoeren: { de: 'Szene', icon: 'message-dots' }, regel: { de: 'Merken', icon: 'bulb' }, ueben: { de: 'Üben', icon: 'pencil' }, sprechen: { de: 'Austauschen', icon: 'messages' }, schreiben: { de: 'Schreiben', icon: 'writing' } },
+  atelier: { start: { de: 'Los geht’s', icon: 'rocket' }, lesen: { de: 'Lesen', icon: 'book' }, hoeren: { de: 'Szene', icon: 'message-dots' }, regel: { de: 'Gut zu wissen', icon: 'bulb' }, ueben: { de: 'Ausprobieren', icon: 'tool' }, sprechen: { de: 'Besprechen', icon: 'messages' }, schreiben: { de: 'Mein Werkstatt-Bericht', icon: 'writing' } },
+  eduph: { start: { de: 'Los geht’s', icon: 'rocket' }, lesen: { de: 'Lesen', icon: 'book' }, hoeren: { de: 'Szene', icon: 'message-dots' }, regel: { de: 'Gut zu wissen', icon: 'bulb' }, ueben: { de: 'In Bewegung', icon: 'run' }, sprechen: { de: 'Besprechen', icon: 'messages' }, schreiben: { de: 'Mein Sport-Tagebuch', icon: 'writing' } },
+  vieso: { start: { de: 'Los geht’s', icon: 'rocket' }, lesen: { de: 'Lesen', icon: 'book' }, hoeren: { de: 'Szene', icon: 'message-dots' }, regel: { de: 'Gut zu wissen', icon: 'bulb' }, ueben: { de: 'Nachdenken', icon: 'brain' }, sprechen: { de: 'Miteinander reden', icon: 'messages' }, schreiben: { de: 'Meine Gedanken', icon: 'writing' } },
 }
 const MEDIEN = {
-  culge: [['book', 'var(--lesen)', 'Lesen', 'Sachtexte und Quellen'], ['headphones', 'var(--hoeren)', 'Hören', 'QR-Code scannen'], ['map-2', 'var(--regel)', 'Entdecken', 'Karten, Zeitleisten, Versuche'], ['writing', 'var(--schreiben)', 'Schreiben', 'mit viel Platz']],
-  atelier: [['book', 'var(--lesen)', 'Lesen', 'Anleitungen und Pläne'], ['headphones', 'var(--hoeren)', 'Hören', 'Schritte zum Mithören'], ['tool', 'var(--regel)', 'Werkstatt', 'Werkzeug- und Sicherheitskarten'], ['writing', 'var(--schreiben)', 'Bericht', 'planen, prüfen, bewerten']],
-  eduph: [['book', 'var(--lesen)', 'Lesen', 'Regeln und Wissen'], ['headphones', 'var(--hoeren)', 'Hören', 'Trainer-Ansagen'], ['run', 'var(--regel)', 'Bewegung', 'Übungs- und Stationskarten'], ['writing', 'var(--schreiben)', 'Tagebuch', 'Ziele und Fortschritte']],
-  vieso: [['book', 'var(--lesen)', 'Lesen', 'Geschichten und Fragen'], ['headphones', 'var(--hoeren)', 'Hören', 'QR-Code scannen'], ['cards', 'var(--regel)', 'Karten', 'zum Reden und Ausschneiden'], ['messages', 'var(--schreiben)', 'Reden', 'zuhören und begründen']],
+  culge: [['book', 'var(--lesen)', 'Lesen', 'Sachtexte und Quellen'], ['message-dots', 'var(--hoeren)', 'Szenen', 'Gespräche und Interviews'], ['map-2', 'var(--regel)', 'Entdecken', 'Karten, Zeitleisten, Versuche'], ['writing', 'var(--schreiben)', 'Schreiben', 'mit viel Platz']],
+  atelier: [['book', 'var(--lesen)', 'Lesen', 'Anleitungen und Pläne'], ['message-dots', 'var(--hoeren)', 'Szenen', 'aus der Werkstatt'], ['tool', 'var(--regel)', 'Werkstatt', 'Werkzeug- und Sicherheitskarten'], ['writing', 'var(--schreiben)', 'Bericht', 'planen, prüfen, bewerten']],
+  eduph: [['book', 'var(--lesen)', 'Lesen', 'Regeln und Wissen'], ['message-dots', 'var(--hoeren)', 'Szenen', 'Ansagen zum Mitmachen'], ['run', 'var(--regel)', 'Bewegung', 'Übungs- und Stationskarten'], ['writing', 'var(--schreiben)', 'Tagebuch', 'Ziele und Fortschritte']],
+  vieso: [['book', 'var(--lesen)', 'Lesen', 'Geschichten und Fragen'], ['message-dots', 'var(--hoeren)', 'Szenen', 'Gespräche zum Nachdenken'], ['cards', 'var(--regel)', 'Karten', 'zum Reden und Ausschneiden'], ['messages', 'var(--schreiben)', 'Reden', 'zuhören und begründen']],
 }
 const JAHR = ['7P', '7P', '7P', '6P', '6P', '6P', '5P', '5P', '5P']
 
@@ -90,7 +90,7 @@ export function sachModul(fach, nr, o) {
     farben: { tief, mittel: mische(tief, 255, 0.55), zart: mische(tief, 255, 0.92), dunkel: mische(tief, 0, 0.35) },
     deckbild: o.deckbild, blasen: o.blasen,
     themen: o.themen,
-    anleitung: o.anleitung || ANLEITUNG[fach], checkMitSchreiben: true,
+    anleitung: o.anleitung || ANLEITUNG[fach], checkMitSchreiben: true, ohneAudio: true,
     teile: TEILE[fach], medien: MEDIEN[fach],
     quellen: [o.karten ? KARTEN_QUELLE : '', o.quellen || ''].filter(Boolean).join(' '),
     aussprache: { ...SACH_AUSSPRACHE, ...(o.aussprache || {}) },

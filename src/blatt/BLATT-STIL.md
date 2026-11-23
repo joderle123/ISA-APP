@@ -116,6 +116,9 @@ trägt die ELDiB-Ziele dieses Themas.
   Codes: `tb<Kürzel>[f]-<Nr><a…>` für Geschichten, `…<x…>` für Lesetexte (z. B. G-20 → `tbg-20a`). Geänderter Text = neu sprechen.
   Ist ein französischer Text gleich dem deutschen (Deutsch-Blätter), nutzt er die deutsche Hördatei. Ohne Hördatei bleiben Texte, die
   Sprachen mischen (Liste `AUSLASSEN` in `toolbox-spuren.ts`).
+- **Keine Hördateien in Mathe** (Auftrag 23.11.2026): Mathe-Blätter und Kernkompetenz Rechnen bekommen keinen QR-Code
+  (`ohneHoeren` in `toolbox-spuren.ts`). Bei den Modulheften gibt es Hörtexte nur in Deutsch und Französisch; Mathe und die
+  Sachfächer drucken die Szene als Gespräch zum Lesen (`tools/hefte/ohne-audio.mjs`).
 - **Wo der QR-Code steht:** Beginnt ein Magazin-Blatt (C4–ES) mit einem Lesetext, steht sein Code **im Kopf statt des Symbols**
   (36 pt) – das kostet keinen Platz. Sonst steht er oben rechts am Text, und nur die ersten Zeilen laufen daneben; darunter nutzt
   der Text wieder die volle Breite (`TextMitQr` in `bausteine.tsx`, Trennstelle aus den Schriftbreiten in `textbreite.ts`).
