@@ -17,6 +17,7 @@ import { Passgenau } from './seiten/Passgenau'
 import { startAusHash, type PassgenauStart } from './passgenau/ui/hub'
 import { Toaster } from './components/Toaster'
 import Beruf from './seiten/Beruf'
+import Module from './seiten/Module'
 import { Icon, type IconName } from './components/Icon'
 import { teamSync } from './lib/teamSync'
 import { useBewertungen } from './lib/useBewertungen'
@@ -25,8 +26,8 @@ import type { Material } from './types/material'
 import { normaliseEldibCode } from './lib/deeplink'
 import { kursFrei } from './lib/nutzer'
 
-type Seite = 'blaetter' | 'kurs' | 'einheiten' | 'team' | 'passgenau' | 'spiele' | 'beruf'
-type ReiterId = 'passgenau' | 'kurse' | 'bibliothek' | 'kurs' | 'team' | 'spiele' | 'beruf'
+type Seite = 'blaetter' | 'kurs' | 'einheiten' | 'team' | 'passgenau' | 'spiele' | 'beruf' | 'module'
+type ReiterId = 'passgenau' | 'kurse' | 'bibliothek' | 'kurs' | 'team' | 'spiele' | 'beruf' | 'module'
 
 /** Name der Seite – für Dokumenttitel und Menü */
 const SEITENNAME: Record<Seite, string> = {
@@ -37,6 +38,7 @@ const SEITENNAME: Record<Seite, string> = {
   team: 'Team-Material',
   spiele: 'Spiele (CREW)',
   beruf: 'Berufsbegleitung',
+  module: 'Modulhefte',
 }
 
 const WILLKOMMEN_KEY = 'toolbox-willkommen'
@@ -72,6 +74,8 @@ function seiteAusHash(hash: string): Seite | null {
   if (h === 'spiele' || h === 'crew') return 'spiele'
   // Berufsbegleitung (11.11.2026): Talenttest, CCP- und DAP-Berufe, Infoheft
   if (h === 'beruf' || h === 'berufe' || h.startsWith('beruf=')) return 'beruf'
+  // Modulhefte (23.11.2026): alle Module der Voie de préparation (Heft + Lösungen) und die Sporthefte
+  if (h === 'module' || h.startsWith('module=') || h === 'sport') return 'module'
   if (h === 'blaetter') return 'blaetter'
   const p = hashParameter(hash)
   if (p.get('seite') === 'einheiten') return 'einheiten'
@@ -268,6 +272,7 @@ export default function App() {
     // „Skills“ statt „Kurs“: neben dem Reiter „Kurse“ (Kurs-Bibliothek) sonst verwechselbar
     ...(kurs ? [{ id: 'kurs' as const, name: 'Skills', icon: 'stairs' as const }] : []),
     { id: 'spiele', name: 'Spiele', zusatz: 'CREW · RESPAWN · Lycée', icon: 'game' },
+    { id: 'module', name: 'Module', zusatz: 'Hefte · Sport', icon: 'file' },
     { id: 'beruf', name: 'Beruf', zusatz: 'CCP · DAP', icon: 'briefcase' },
     { id: 'team', name: 'Team', icon: 'folder', n: teamMaterial.length },
   ]
@@ -437,6 +442,7 @@ export default function App() {
         {besucht.current.has('team') && <Team aktiv={seite === 'team'} material={teamMaterial} bew={bew} />}
         {besucht.current.has('spiele') && <Spiele aktiv={seite === 'spiele'} />}
         {besucht.current.has('beruf') && <Beruf aktiv={seite === 'beruf'} />}
+        {besucht.current.has('module') && <Module aktiv={seite === 'module'} />}
         {besucht.current.has('passgenau') && <Passgenau aktiv={seite === 'passgenau'} start={pgStart} onHilfeFinden={hilfeFinden} />}
       </div>
 

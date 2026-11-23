@@ -1009,10 +1009,17 @@
   .haupt-reiter button[aria-current='page'] .zusatz {
     color: var(--accent);
   }
-  /* Schmaler als 900 px: ohne das Zusatzwort, damit kein Reiter abgeschnitten wird */
-  @media (max-width: 899.98px) {
+  /* Zusatzwörter nur auf breiten Bildschirmen: mit acht Reitern (seit „Module“, 23.11.2026) passen sie erst ab 1440 px,
+     sonst wäre „Team“ abgeschnitten. Zwischen 900 und 1100 px rücken die Reiter etwas zusammen. */
+  @media (max-width: 1439.98px) {
     .haupt-reiter .zusatz {
       display: none;
+    }
+  }
+  @media (max-width: 1099.98px) {
+    .haupt-reiter button {
+      padding: 7px 8px;
+      gap: 5px;
     }
   }
 
