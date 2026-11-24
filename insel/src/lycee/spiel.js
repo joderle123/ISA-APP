@@ -84,10 +84,10 @@ import { tunN7 } from './story/kapitel7.js';
 import { tunN8 } from './story/kapitel8.js';
 import { tunN9 } from './story/kapitel9.js';
 import { tunN10 } from './story/kapitel10.js';
-import { chronik } from './story/chronik.js';
+import { chronik, GESPRAECH } from './story/chronik.js';
 import { createKorbSpiel } from './korb3d.js';
 import { baerAnhaenger } from './anhaenger.js';
-import { SCHRITTE, GESPRAECHE, LEUTE, STAERKEN, BINGO, GEHEIMNISSE, SPRECHER, KAPITEL } from './geschichte.js';
+import { SCHRITTE, GESPRAECHE, LEUTE, STAERKEN, BINGO, GEHEIMNISSE, SPRECHER, KAPITEL, KAPITEL_MODUL } from './geschichte.js';
 import { ORTE2, CHAT, CHAT5, ichBotschaftThema } from './kapitel2.js';
 import { ORTE3, saegeFolgen } from './kapitel3.js';
 import { ORTE4, IMMER, SCHLICHTEN } from './kapitel4.js';
@@ -1243,7 +1243,18 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         const def = typeof z.def === 'function' ? z.def(S.merke, S) : z.def;
         ui.dialogZu();
         const SZ = { hitze: 'hitzeDuell', chat: 'liveChat', checkin: 'checkIn', namen: 'namenRekord', zwei: 'zweiWahrheiten', blind: 'blindParcours', stempel: 'skillsStempel', tanks: 'tankRaten', meinetanks: 'meineTanks', nachhaken: 'nachhaken', teams: 'teamsWaehlen', pult: 'gefuehlsPult', lesen: 'gesichterLesen', mischpult: 'mischpult', linie: 'linie', staerken: 'staerkenSchenken', sort: 'sortSprint', platz: 'platzwechsel', koerper: 'koerperKarte', synchron: 'synchron', spuren: 'spurenWand', antippen: 'gedankeAntippen', mut: 'mutBalken', thermo: 'thermometer', zonen: 'zonenWette', test: 'mathTest', atem: 'atemSync', koffer: 'koffer', weiche: 'gedankenWeiche', bohnen: 'bohnenWette', waage: 'beweisWaage', satz: 'satzBau', zettel: 'wenRaten', abstand: 'stoppAbstand', stopp: 'stoppBau', treppe: 'treppe', druck: 'druckRunde', buehne: 'buehneKippen', feed: 'feedSim', rucksack: 'rucksack', akku: 'akkuTag', wuerfel: 'gesundWuerfel', kurve: 'jahresKurve', brief: 'briefAnMich' };
-        const r = (await ui[SZ[z.szene] || z.szene](def)) || {};
+        // Nicht durchklicken: Skill-Szenen prüfen, ob sie wirklich gemacht wurden (nie bei Entscheidungen – die haben Folgen, kein Falsch).
+        // Sonst „Noch mal“ mit Tipp, höchstens dreimal; danach geht es weiter, und die Lehrer-Ansicht zeigt es.
+        let r = {};
+        for (let v = 1; ; v++) {
+          r = (await ui[SZ[z.szene] || z.szene](def)) || {};
+          const grund = z.pruefe === false ? null : (z.pruefe || PRUEF[z.szene] || (() => null))(r, def);
+          if (!grund) { if (v > 1) versuchMerken(z, def, v, true); break; }
+          if (v >= 3) { versuchMerken(z, def, v, false); break; }
+          await ui.nochmal({ ...grund, versuch: v + 1, max: 3 });
+        }
+        if (z.szene === 'skillsStunde' && (r.versuche > 1 || r.geschafft === false)) versuchMerken(z, def, r.versuche, r.geschafft !== false);
+        if (z.szene === 'skillsStunde' && r.checkVersuche > 1) versuchMerken(z, def, r.checkVersuche, !!r.check, ': Kann-ich-das-Frage');
         const key = z.ausgang ? z.ausgang(r, S.merke) : 'standard';
         S.szenen = S.szenen || {}; if (z.id) S.szenen[z.id] = key;
         if (r.merkkarte) { S.skillsHeft = S.skillsHeft || []; if (!S.skillsHeft.some((m) => m.titel === r.merkkarte.titel)) S.skillsHeft.push(r.merkkarte); }   // Skills-Heft im Journal
@@ -1981,6 +1992,24 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   // ---------- Schritte ----------
   let busFaehrt = 0;   // 0 steht, 1 fährt los (weg), −1 fährt am Ende ab
   let startet = false;   // solange ein Schritt startet (Tagesrückblick, Teleport), lösen Orte nichts aus
+  // Prüfungen gegen Durchklicken (nur Skill-Szenen). Rückgabe null = gemacht; sonst { sy, t, tipp } für „Noch mal“.
+  const PRUEF = {
+    atem: (r) => (r.gut < 2 ? { sy: '🫁', t: 'Das war noch kein ruhiges Atmen.', tipp: 'Halte, bis der Kreis groß ist (zwei, drei Sekunden). Dann loslassen und lange ausatmen – länger als das Einatmen. Erst dann wieder halten.' } : null),
+    spuren: (r, def) => {
+      const n = (def.spuren || []).length;
+      if (r.gleich) return { sy: '🔎', t: 'Alles an die Wand – oder alles weg – ist keine Spurensuche.', tipp: 'Prüf jede Karte einzeln: Beweist das wirklich etwas? Oder fühlt es sich nur so an?' };
+      if (n && r.schnell >= Math.ceil(n * 0.6) && (r.heringe || 0) + (r.verworfen || 0) >= 1) return { sy: '🔎', t: 'Zu schnell entschieden.', tipp: 'Lies jede Spur ganz, bevor du wählst. Eine Spur zählt nur, wenn sie etwas zeigt – nicht, wenn sie nur passt.' };
+      return null;
+    },
+    nachhaken: (r) => (r.runden && r.schnell >= Math.ceil(r.runden * 0.6) && r.offen < 2 ? { sy: '👂', t: 'Das war zu schnell. Zuhören geht langsamer.', tipp: 'Lies, was die Person sagt. Dann such die Frage, die sie weiterreden lässt – nicht die, die schnell vorbei ist.' } : null),
+    satz: (r) => (r.regeln < 2 ? { sy: '🔧', t: 'Dein Satz trägt noch nicht.', tipp: 'Schau auf die Regeln mit ○. Tausch einen Teil aus, bis mindestens zwei Haken da sind.' } : null),
+  };
+  const SZ_TITEL = { atem: 'Gemeinsam atmen', spuren: 'Spuren-Wand', nachhaken: 'Nachfragen', satz: 'Satz bauen' };
+  function versuchMerken(z, def, n, ok, zusatz = '') {
+    const kap = z.szene === 'skillsStunde' && def && def.kap ? def.kap : (SCHRITTE[S.schritt] || {}).kap || 1;
+    const titel = (z.szene === 'skillsStunde' ? 'Skills-Stunde „' + ((def && def.titel) || '') + '“' : (SZ_TITEL[z.szene] || 'Szene') + (def && def.wo ? ' (' + def.wo + ')' : '')) + zusatz;
+    S.versuche = S.versuche || {}; S.versuche[kap] = { ...(S.versuche[kap] || {}), [titel]: { n, ok } }; sichern();
+  }
   // Reflexionsfrage am Kapitelende (eine offene Frage, kein richtig/falsch – auch als Einstieg fürs Klassengespräch)
   const REFLEXION = { 1: 'Was hat dir am ersten Tag geholfen, dich ein bisschen sicherer zu fühlen?', 2: 'Was kannst du gut – auch wenn es keiner sieht?',
     3: 'Woran merkst du bei anderen, wie es ihnen geht, ohne dass sie es sagen?', 4: 'Was hilft dir, wenn du „bei Rot“ bist?',
@@ -1996,7 +2025,10 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (!art) { S.merke.anzeige = null; ui.anzeige(null); sichern(); return; }
     const alt = S.merke.anzeige && S.merke.anzeige.art === art ? S.merke.anzeige.wert : 0;
     const w = Math.max(0, Math.min(100, wert != null ? wert : alt + (plus || 0)));
-    S.merke.anzeige = { art, wert: w, kap: (SCHRITTE[S.schritt] || {}).kap || 1 }; ui.anzeige(S.merke.anzeige); sichern();
+    S.merke.anzeige = { art, wert: w, kap: (SCHRITTE[S.schritt] || {}).kap || 1 }; ui.anzeige(S.merke.anzeige);
+    { const v = S.merke.anzeigeVerlauf = S.merke.anzeigeVerlauf || {}, k = S.merke.anzeige.kap, a = v[k] && v[k].art === art ? v[k] : { art, max: 0, min: 100 };   // für die Lehrer-Ansicht
+      v[k] = { art, max: Math.max(a.max, w), min: Math.min(a.min, w), ende: w }; }
+    sichern();
   }
   async function starteSchritt(i, mitStart) {
     startet = true;
@@ -2986,6 +3018,29 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     const f = { DEUTSCH: 'deutsch', MATHE: 'mathe', MATHS: 'mathe', FRANCAIS: 'francais', FRANZOESISCH: 'francais', FRANZÖSISCH: 'francais' }[c];
     if (f) { setTimeout(() => fachFreiwillig(f), 50); return FACH_NAME[f] + ': Die Stunde startet.'; }
     return '';
+  };
+  // Lehrer-Ansicht (Code LEHRER) und „Meine Resümees“: die Geschichte in einfachen Sätzen – was entschieden wurde, wo es gehakt hat, eine Frage fürs Gespräch
+  kmApi.geschichteBericht = () => {
+    if (!S) return null;
+    const ch = S.chronik || {}, fertigBis = Math.min(10, Math.max(S.kapitelFertig || 0, ...Object.keys(ch).map(Number), 0));
+    const bis = Math.min(10, Math.max(fertigBis, ...Object.keys(S.versuche || {}).map(Number)));
+    const VW = { anspannung: 'Anspannung', akku: 'Akku' };
+    const kapitel = [];
+    for (let k = 1; k <= bis; k++) {
+      const a = (S.merke.anzeigeVerlauf || {})[k];
+      kapitel.push({ kap: k, titel: KAPITEL[k] || '', thema: KAPITEL_MODUL[k] || '', saetze: k <= fertigBis ? ch[k] || chronik(k, S.merke) : [], gespielt: k <= fertigBis, frage: GESPRAECH[k] || REFLEXION[k] || '',
+        anzeige: a ? VW[a.art] + (a.art === 'akku' ? ': am wenigsten ' + a.min + ', am Ende ' + a.ende : ': höchstens ' + a.max + ', am Ende ' + a.ende) + ' (von 100)' : '',
+        versuche: Object.entries((S.versuche || {})[k] || {}).map(([t, v]) => ({ t, n: typeof v === 'object' ? v.n : v, ok: typeof v === 'object' ? v.ok !== false : true })) });
+    }
+    const ng = SCHRITTE.filter((x) => x.neben === 'geschichte'), gespielt = ng.filter((x) => (S.merke.neben || {})[x.id]);
+    const em = S.merke.endeMit;
+    return {
+      kapitel, laeuft: S.fertig ? 0 : kapJetzt(), fertig: !!S.fertig,
+      freunde: besteFreunde().slice(0, 3).map((id) => LEUTE[id].name),
+      staerken: Object.entries(S.staerken || {}).filter(([k]) => STAERKEN[k]).sort((a, b) => b[1] - a[1]).slice(0, 3).map(([k, n]) => STAERKEN[k].name + ' (' + n + '×)'),
+      ende: em && LEUTE[em] ? LEUTE[em].name + '-Ende' + (S.merke.endeLina ? ' und Lina-Ende' : '') : '',
+      neben: gespielt.map((x) => x.wer + ' „' + x.titel + '“'), nebenVon: ng.length,
+    };
   };
   const km = createKursMissionen({ scene, steuerung, ui, ton, vib, zustand: () => S, sichern: () => sichern(), api: kmApi });
   let kmGeladen = false;

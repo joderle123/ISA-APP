@@ -65,7 +65,30 @@ oder Lina zuerst gewählt (K3) oder Zeichnung nicht Dario gezeigt (K3). Schlussb
 Noah „Nachschreiben“ (ab K5) · Mila „Elf Mal“ (K5) · Ben „Gesehen“ (K2) · Jo „Tag 211“ (K3) · Lina „Drei Sätze“ (K3) ·
 Ayla „Die eine Frage“ (K5) · Chiara „38 von 60“ (K4) · Yusuf „Hey.“ (K6) · Dario „Das Brett“ (K2–K7) · Opa Nik „Moien, Bopa“ (K3).
 
+## Lehrer-Ansicht (Code LEHRER im 🎟-Fenster)
+- Zeigt jetzt auch die **Geschichte**: je Kapitel die eigenen Entscheidungen in einfachen Sätzen (ohne Urteil), das Thema,
+  die Anspannung (K4) oder den Akku (K9), **wo jemand hängen geblieben ist**, und eine Frage fürs Gespräch.
+- Oben: engste Freundschaften, Stärken, welches Ende, wie viele Nebengeschichten.
+- „Alle teilen“ schickt Geschichte und Missions-Resümees als Text (AirDrop, Mail, Nachrichten). Alles bleibt sonst auf dem Gerät.
+- Die Schüler sehen dasselbe unter „Meine Resümees“.
+
+## Nicht durchklicken (seit 24.11.)
+- **Skills-Stunden:** Knöpfe reagieren erst nach kurzer Lesezeit (höchstens 3,5 Sekunden, ein Balken zeigt es).
+  Passt in der Übung weniger als die Hälfte – oder kam die Hälfte der Antworten schneller, als man lesen kann, und es passt
+  nicht genug –, sagt die Lehrperson im Spiel „Stopp“ und die Übung kommt **noch einmal** (auf Wunsch erst die Karten).
+  Höchstens drei Versuche; danach geht es weiter, und die Lehrer-Ansicht zeigt „noch nicht geschafft“.
+- **„Kann ich das?“** am Ende: Bei einer falschen Antwort gibt es einen zweiten Versuch, ohne dass die Lösung verraten wird.
+- **Szenen der Geschichte:** Gemeinsam atmen (es zählen nur echte, ruhige Atemzüge), Spuren-Wand (alles gleich oder blind
+  entschieden), Nachfragen (Fragen nicht gelesen), Satz bauen (weniger als zwei Regeln). Dann kommt „Noch mal“ mit einem Tipp.
+- **Entscheidungen werden nie wiederholt.** Sie haben Folgen, kein Falsch.
+- **Man kann scheitern:** Wer nach drei Versuchen nicht ruhig atmet, schafft es nicht – mit Folgen. K4 Treppe: Noah kommt nicht
+  runter, „Wir bleiben beide“ geht nicht mehr, ihr braucht Hilfe. K4 Kantine: Du gehst doch raus, und die drei Sekunden am
+  Freitag gibt es nicht. K9 Klinke: Dario rutscht an der Wand runter. Die Chronik und die Lehrer-Ansicht zeigen es.
+
 ## Gesprächsfragen für die Klasse (nach dem Spielen)
+- K1: Warum klicken Leute bei so einer Umfrage mit? Was hätte es gebraucht, nicht zu klicken?
+- K2: Warum tut eine Liste weh, auch wenn man gar nicht draufsteht?
+- K3: Was war auf Milas Wand eine echte Spur – und was nur ein Gefühl?
 - K4: Was hat dir geholfen, als die Zahl auf Rot war? Hast du gemerkt, wann sie gestiegen ist?
 - K5: Welcher Gedanke hat sich wie eine Tatsache angefühlt? Was hat die Kamera gezeigt?
 - K6: Warum kann man fair abstimmen und trotzdem unfair sein?

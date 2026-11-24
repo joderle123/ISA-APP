@@ -27,9 +27,10 @@ const KAP = {
   ],
   4: (m) => [
     eins(m, [['kenanGesehen', 'Um 8:31 hast du hochgeschaut. Kenan ging am Glas vorbei.']]),
+    eins(m, [['k4NoahRunter', 'Mit Yusufs Takt habt ihr Noah runtergeatmet.'], ['k4AtemNoahNicht', 'Noah runterzuatmen hat noch nicht geklappt. Ihr habt Hilfe gebraucht.']]),
     eins(m, [['k4BeideGeblieben', 'Auf der Treppe bist du mit Yusuf bei Noah geblieben.'], ['k4YusufGeschickt', 'Auf der Treppe bist du bei Noah geblieben. Yusuf hat Hilfe geholt.'], ['k4LenningGeholt', 'Auf der Treppe hast du Mme Lenning geholt.']]),
     eins(m, [['k4SitzplanRuhig', 'Zu Chiaras Sitzplan hast du ruhig widersprochen.'], ['k4SitzplanLaut', 'Bei Chiaras Sitzplan bist du laut geworden.'], ['k4SitzplanWeg', 'Bei Chiaras Sitzplan bist du gegangen.']]),
-    eins(m, [['k4Explodiert', 'Bei Rot in der Kantine bist du explodiert.'], ['k4Rausgegangen', 'Bei Rot in der Kantine bist du rausgegangen.'], ['k4Geatmet', 'Bei Rot in der Kantine hast du geatmet. Ein. Und aus. Länger aus.']]),
+    eins(m, [['k4Explodiert', 'Bei Rot in der Kantine bist du explodiert.'], ['k4AtemNicht', 'Bei Rot in der Kantine wolltest du atmen. Es hat noch nicht geklappt. Du bist rausgegangen.'], ['k4Rausgegangen', 'Bei Rot in der Kantine bist du rausgegangen.'], ['k4Geatmet', 'Bei Rot in der Kantine hast du geatmet. Ein. Und aus. Länger aus.']]),
     eins(m, [['k4Wut', 'Auf den Screenshot hast du wütend geantwortet.'], ['k4Ruhig', 'Auf den Screenshot hast du einen ruhigen Satz geschrieben.'], ['k4Verlassen', 'Nach dem Screenshot hast du die Gruppe verlassen.'], ['k4Stumm', 'Auf den Screenshot hast du nichts geschrieben.']]),
   ],
   5: (m) => [
@@ -64,6 +65,7 @@ const KAP = {
   9: (m) => [
     eins(m, [['k9MilaGeschrieben', 'In der Nacht hast du Mila geschrieben.']]),
     eins(m, [['k9Versprochen', 'Dario hast du versprochen, nichts zu sagen.'], ['k9NichtVersprochen', 'Dario hast du nichts versprochen.'], ['k9Mitkommen', 'Dario hast du gesagt: „Komm mit zu Herrn Kuedes.“'], ['k9Gegangen', 'Bei Darios Geständnis bist du aufgestanden und gegangen.']]),
+    eins(m, [['k9AtemNicht', 'Vor der Tür zum SePAS hat das gemeinsame Atmen mit Dario noch nicht geklappt.']]),
     eins(m, [['k9Geklopft', 'An der Tür zum SePAS hast du für Dario geklopft.'], ['k9Gewartet', 'An der Tür zum SePAS hast du mit Dario gewartet.'], ['k9Vorgegangen', 'An der Tür zum SePAS bist du vorgegangen.']]),
     eins(m, [['k9LucaRuhig', 'Luca gegenüber bist du ruhig geblieben.'], ['k9LucaHeiss', 'Mit Luca ist es heiß geworden.'], ['k9LucaKnall', 'Mit Luca hat es geknallt.']]),
   ],
@@ -78,3 +80,17 @@ const KAP = {
 };
 
 export const chronik = (kap, m = {}) => ((KAP[kap] || (() => []))(m) || []).filter(Boolean);
+
+// Fragen für das Gespräch mit der Lehrperson oder in der Klasse (offen, kein richtig/falsch). Erst die Entscheidungen ansehen, dann fragen.
+export const GESPRAECH = {
+  1: 'Warum klicken Leute bei so einer Umfrage mit? Was hätte es gebraucht, nicht zu klicken?',
+  2: 'Warum tut eine Liste weh, auch wenn man gar nicht draufsteht? Was kannst du gut, auch wenn es keiner sieht?',
+  3: 'Was war auf Milas Wand eine echte Spur – und was nur ein Gefühl?',
+  4: 'Was hat dir geholfen, als die Zahl auf Rot war? Hast du gemerkt, wann sie gestiegen ist?',
+  5: 'Welcher Gedanke hat sich wie eine Tatsache angefühlt? Was hat die Kamera wirklich gezeigt?',
+  6: 'Warum kann man fair abstimmen und trotzdem unfair sein?',
+  7: 'Was hat es gekostet, sich zu Noah zu setzen? Was hat es gekostet, sitzen zu bleiben?',
+  8: 'Woran hast du den Fake erkannt? Was hat Teilen „zum Prüfen“ trotzdem gemacht?',
+  9: 'Welches Geheimnis darf man brechen? Woran merkst du es?',
+  10: 'Was war „dein Teil“? Was ist eine kleine, echte Wiedergutmachung?',
+};

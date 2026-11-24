@@ -220,15 +220,17 @@ export const GESPRAECHE_N4 = {
     ['erzaehler', 'Oben am Geländer steht kurz jemand. Als du hochschaust, ist niemand mehr da.'],
     { szene: 'atem', id: 'atemNoah', def: { wo: 'Halle · Treppe', wer: F.noah, info: 'Yusufs Hand gibt den Takt. Atme mit – Noah macht mit.', start: 92, ziel: 45,
       saetze: { 92: '(atmet in kurzen Stößen)', 75: 'Alle – haben es gesehen.', 60: '(die Hände zittern weniger)', 45: '(atmet aus. Lang.)' } },
-      ausgang: (r) => (r.gut >= 3 ? 'zusammen' : 'langsam'),
-      folgen: { zusammen: { staerke: 'ruhig', herz: { noah: 2, yusuf: 1 }, merke: 'k4NoahRunter' }, langsam: { herz: { noah: 1 } } } },
+      // Nach drei Versuchen ohne ruhiges Atmen: Es klappt nicht. Kein Drama – aber ohne Hilfe geht es dann nicht.
+      ausgang: (r, m) => (r.gut >= 3 ? 'zusammen' : r.gut >= 2 ? 'langsam' : ((m.k4AtemNoahNicht = true), 'nicht')),
+      folgen: { zusammen: { staerke: 'ruhig', herz: { noah: 2, yusuf: 1 }, merke: 'k4NoahRunter' }, langsam: { herz: { noah: 1 } },
+        nicht: { dann: [['erzaehler', 'Noahs Atem wird nicht langsamer. Deiner auch nicht.'], ['yusuf', 'Okay. Wir zwei schaffen das gerade nicht. Ist nicht schlimm. Dann brauchen wir jemanden.']] } } },
     ['noah', 'Alle haben es gesehen.'],
     ['yusuf', 'Jetzt nicht. Jetzt nur aus.'],
     ['erzaehler', 'Irgendwo fällt eine Dose aus dem Automaten.'],
     { fest: true, wahl: [
       { t: '„Yusuf, holst du Mme Lenning?“', staerke: 'hilfe', herz: { noah: 1 }, merke: 'k4YusufGeschickt', dann: [['erzaehler', 'Yusuf nickt und läuft. Du bleibst. Noahs Atem wird langsamer. Es dauert.']] },
       { t: '„Ich hol sie. Bleib du.“', staerke: 'hilfe', merke: 'k4LenningGeholt', dann: [['erzaehler', 'Du rennst. Mme Lenning ist schneller da, als du denkst.'], ['erzaehler', 'Eine Minute lang sitzt Noah nur mit Yusuf da.']] },
-      { t: '„Wir bleiben beide.“', herz: { noah: 2 }, merke: 'k4BeideGeblieben', dann: [['erzaehler', 'Ihr bleibt. Noahs Atem wird langsamer. Aber es dauert. Lange.'], ['erzaehler', 'Irgendwann kommt Mme Lenning trotzdem. Jemand hat ihr Bescheid gesagt.']] },
+      { t: '„Wir bleiben beide.“', wenn: (m) => !m.k4AtemNoahNicht, herz: { noah: 2 }, merke: 'k4BeideGeblieben', dann: [['erzaehler', 'Ihr bleibt. Noahs Atem wird langsamer. Aber es dauert. Lange.'], ['erzaehler', 'Irgendwann kommt Mme Lenning trotzdem. Jemand hat ihr Bescheid gesagt.']] },
     ] },
     ['erzaehler', 'Noahs Schultern sinken. Ein Stück.'],
     ['noah', 'Ich hab nicht geweint. Auf dem Foto.'],
@@ -319,7 +321,9 @@ export const GESPRAECHE_N4 = {
         { szene: 'atem', id: 'atemAllein', def: { wo: 'Kantine · dein Platz', titel: 'Atmen', allein: true, wer: { name: 'Kopf', farbe: '#5f7d9e' },
           info: 'Niemand muss es sehen. Yusufs Takt: ein. Und aus. Länger aus.', start: 85, ziel: 45,
           saetze: { 85: 'Alle schauen. Alle wissen es.', 70: 'Ein. Und aus. Länger aus.', 55: 'Die Gabel liegt still.', 45: 'Okay. Noch da.' } },
-          ausgang: () => 'standard', folgen: { standard: {} } },
+          // Nicht geschafft (drei Versuche): kein Bonus am Freitag – man ist doch rausgegangen
+          ausgang: (r, m) => { if ((r.gut || 0) < 2) { m.k4Geatmet = false; m.k4AtemNicht = true; m.k4Rausgegangen = true; return 'nicht'; } return 'standard'; },
+          folgen: { standard: {}, nicht: { dann: [['erzaehler', 'Es klappt nicht. Die Zahl bleibt oben. Die Gabel klappert weiter.'], ['erzaehler', 'Du stehst auf und gehst raus. Draußen ist es kalt. Gut kalt.']] } } },
         { tu: 'n4_nachAtem' } ] },
     ] },
   ],
@@ -373,6 +377,7 @@ export const tunN4 = (c) => ({
   n4_gehWeg: () => (c.S.merke.listeGelacht ? [['noah', 'Geh weg.'], ['erzaehler', 'Du gehst nicht. Du bleibst. Einen Meter weiter weg.']] : []),
   n4_spitzname: () => { c.ui.toast('<b>Neuer Spitzname</b><span>„Hinten links“</span>'); return [['erzaehler', 'Ab heute hast du einen Spitznamen. Hinten links.']]; },
   n4_nachAtem: () => {
+    if (c.S.merke.k4AtemNicht) { c.anzeige('anspannung', 70); return [['yusuf', '(später, im Gang) Beim ersten Mal klappt das fast nie. Bei mir auch nicht. Übst du mit mir?']]; }
     const z = ((c.S.sz || {}).atemAllein || {}).zahl;
     c.anzeige('anspannung', z != null ? Math.max(45, z) : 55);
     return [['erzaehler', 'Jo redet weiter. Du hörst es. Es ist nur noch Jo.'], ['yusuf', '(vom Nebentisch, ohne aufzuschauen) Länger aus.']];

@@ -251,9 +251,39 @@ export function createKursMissionen({ scene, steuerung, ui, ton = () => {}, vib 
     ...(e.satz ? ['Mein Satz: „' + e.satz + '“'] : []),
     'Frage für die Gruppe: ' + e.frage,
   ].join('\n');
-  async function teilen(liste) {
+  // Geschichte @annexe.cam für die Lehrer-Ansicht: je Kapitel die eigenen Entscheidungen, wo es gehakt hat, eine Frage fürs Gespräch
+  const bericht = () => (api.geschichteBericht ? api.geschichteBericht() : null);
+  function geschichteHtml(b, lehrer) {
+    if (!b || !b.kapitel.length) return '<h3 class="km-h3">📖 Geschichte „@annexe.cam“</h3><p class="km-leer">Noch kein Kapitel fertig.' + (b && b.laeuft ? ' Gerade in Kapitel ' + b.laeuft + '.' : '') + '</p>';
+    const kopf = [b.freunde.length ? 'Am nächsten: ' + b.freunde.join(', ') : '', b.staerken.length ? 'Stärken: ' + b.staerken.join(', ') : '',
+      b.ende ? 'Ende: ' + b.ende : (b.laeuft ? 'Gerade in Kapitel ' + b.laeuft : ''), b.neben.length ? 'Nebengeschichten: ' + b.neben.length + ' von ' + b.nebenVon : ''].filter(Boolean);
+    const gespielt = b.kapitel.filter((k) => k.gespielt), letztes = (gespielt[gespielt.length - 1] || b.kapitel[0]).kap;
+    const haken = b.kapitel.reduce((n, k) => n + k.versuche.filter((v) => !v.ok).length, 0);
+    return '<h3 class="km-h3">📖 Geschichte „@annexe.cam“ · ' + gespielt.length + ' von 10 Kapiteln</h3>' +
+      (haken ? '<p class="km-gs-hak">⚠️ ' + haken + '× nach drei Versuchen nicht geschafft – unten markiert. Gut zum Nachbesprechen.</p>' : '') +
+      (kopf.length ? '<p class="km-leer">' + kopf.map(esc).join(' · ') + '</p>' : '') +
+      (lehrer ? '<p class="km-leer">Tipp: Ein Kapitel aufklappen, die Sätze gemeinsam lesen, dann die Frage stellen. Es gibt kein richtig oder falsch – nur Folgen.</p>' : '') +
+      '<div class="km-gesch">' + b.kapitel.map((k) => '<details' + (k.kap === letztes ? ' open' : '') + '><summary><span class="km-heft">K' + k.kap + '</span><b>' + esc(k.titel) + '</b><small>' + esc(k.thema) + '</small></summary>' +
+        (k.saetze.length ? '<ul>' + k.saetze.map((t) => '<li>' + esc(t) + '</li>').join('') + '</ul>' : '<p class="km-leer">' + (k.gespielt ? 'Keine großen Entscheidungen gemerkt.' : 'Kapitel noch nicht gespielt – nur die Skills-Stunde.') + '</p>') +
+        (k.anzeige ? '<p class="km-gs-zahl">📈 ' + esc(k.anzeige) + '</p>' : '') +
+        (k.versuche.length ? '<p class="km-gs-hak">🔁 Hängen geblieben: ' + k.versuche.map(versuchText).map(esc).join(' · ') + '</p>' : '') +
+        '<p class="km-gs-frage">💬 ' + esc(k.frage) + '</p></details>').join('') + '</div>';
+  }
+  const versuchText = (v) => v.t + ' (' + v.n + ' Versuche' + (v.ok ? ', dann geschafft' : ', noch nicht geschafft') + ')';
+  const geschichteText = (b, name) => !b || !b.kapitel.length ? '' : [
+    'Annexe – Geschichte „@annexe.cam“' + (name ? ' · ' + name : '') + ' · ' + b.kapitel.filter((k) => k.gespielt).length + ' von 10 Kapiteln',
+    ...(b.freunde.length ? ['Am nächsten: ' + b.freunde.join(', ')] : []), ...(b.staerken.length ? ['Stärken: ' + b.staerken.join(', ')] : []),
+    ...(b.ende ? ['Ende: ' + b.ende] : []),
+    ...b.kapitel.flatMap((k) => ['', 'Kapitel ' + k.kap + ' „' + k.titel + '“ (' + k.thema + ')', ...k.saetze.map((t) => '– ' + t),
+      ...(k.gespielt ? [] : ['(Kapitel noch nicht gespielt)']),
+      ...(k.anzeige ? [k.anzeige] : []), ...(k.versuche.length ? ['Hängen geblieben: ' + k.versuche.map(versuchText).join(' · ')] : []),
+      'Frage: ' + k.frage]),
+  ].join('\n');
+  async function teilen(liste, { geschichte = false } = {}) {
     const name = zustand().name || '';
-    const text = liste.map((e) => alsText(e, name)).join('\n\n———\n\n');
+    const gt = geschichte ? geschichteText(bericht(), name) : '';
+    const text = [gt, ...liste.map((e) => alsText(e, name))].filter(Boolean).join('\n\n———\n\n');
+    if (!text) return;
     try { if (navigator.share) { await navigator.share({ title: 'REAL TALK – Resümee' + (name ? ' von ' + name : ''), text }); return; } } catch (e) { if (e && e.name === 'AbortError') return; }
     try { await navigator.clipboard.writeText(text); ui.toast('<b>📋 Kopiert</b><span>Jetzt in eine Mail oder Nachricht einfügen.</span>'); }
     catch (e) { ui.toast('<b>Teilen geht hier nicht</b><span>Bitte die Lehrer-Ansicht zeigen.</span>'); }
@@ -272,7 +302,7 @@ export function createKursMissionen({ scene, steuerung, ui, ton = () => {}, vib 
       (meldung ? '<p class="km-meldung">' + meldung + '</p>' : '') +
       (lauf ? '<p class="km-laeuft">Läuft gerade: <b>' + esc(infoVon(lauf.code).titel) + '</b> – ' + esc((schritt() || {}).ziel || '') + ' <button type="button" class="ly-link" data-a="pause">pausieren</button></p>' : '') +
       (frei.length ? '<ul class="km-liste">' + frei.map(zeile).join('') + '</ul>' : '<p class="km-leer">Noch keine Mission freigeschaltet.</p>') +
-      '<p class="km-fuss"><button type="button" class="ly-link" data-a="meine">Meine Resümees (' + Object.keys(fertig).length + ')</button>' +
+      '<p class="km-fuss"><button type="button" class="ly-link" data-a="meine">Meine Resümees (' + (Object.keys(fertig).length + ((bericht() || { kapitel: [] }).kapitel.length ? 1 : 0)) + ')</button>' +
       (m.briefe && Object.keys(m.briefe).length ? ' · <button type="button" class="ly-link" data-a="brief">✉️ Brief an mich</button>' : '') + '</p></div>');
     const inp = k.querySelector('input'); inp.addEventListener('keydown', (e) => e.stopPropagation()); setTimeout(() => inp.focus(), 80);
     k.querySelector('.ly-zu').onclick = () => ui.ebeneZu();
@@ -331,14 +361,15 @@ export function createKursMissionen({ scene, steuerung, ui, ton = () => {}, vib 
 
   // ---------- Lehrer-Ansicht (Code LEHRER) und „Meine Resümees“ ----------
   function lehrerAnsicht(lehrer) {
-    const m = M(), alle = Object.values(m.fertig || {}).sort((a, b) => (a.datum < b.datum ? 1 : -1)), name = zustand().name || '';
+    const m = M(), alle = Object.values(m.fertig || {}).sort((a, b) => (a.datum < b.datum ? 1 : -1)), name = zustand().name || '', gb = bericht(), mitG = !!(gb && gb.kapitel.length);
     const k = ui.ebeneAuf('km', '<button type="button" class="ly-zu" aria-label="Schließen">✕</button><div class="km-fenster"><span class="km-kicker">' + (lehrer ? 'Für die Lehrperson' : 'Für dich') + '</span><h2>' + (lehrer ? 'Resümees von ' + esc(name || 'diesem Gerät') : 'Meine Resümees') + '</h2>' +
       (lehrer ? '<p class="km-leer">Alles bleibt auf diesem Gerät. „Alle teilen“ öffnet AirDrop, Mail oder Nachrichten. Gut fürs Gespräch: erst die Entscheidungen ansehen, dann die Frage für die Gruppe.</p>' : '') +
+      geschichteHtml(gb, lehrer) + '<h3 class="km-h3">🎟 Missionen</h3>' +
       (alle.length ? '<ul class="km-liste">' + alle.map((e) => '<li class="fertig"><span class="km-heft">#' + e.heft + '·' + e.nr + '</span><div><b>' + esc(e.titel) + '</b><small>' + new Date(e.datum).toLocaleDateString('de-LU') + ' · Skill ' + e.skillJa + '/' + e.skillVon + (e.satz ? ' · „' + esc(e.satz.slice(0, 40)) + (e.satz.length > 40 ? '…' : '') + '“' : '') + '</small></div><button type="button" class="ly-btn" data-res="' + e.code + '">Ansehen</button></li>').join('') + '</ul>' : '<p class="km-leer">Noch keine Mission abgeschlossen.</p>') +
-      '<div class="km-knoepfe">' + (alle.length ? '<button type="button" class="ly-btn" data-a="teilen">Alle teilen</button>' : '') + '<button type="button" class="ly-btn ly-primaer" data-a="zurueck">Zurück</button></div></div>');
+      '<div class="km-knoepfe">' + (alle.length || mitG ? '<button type="button" class="ly-btn" data-a="teilen">Alle teilen</button>' : '') + '<button type="button" class="ly-btn ly-primaer" data-a="zurueck">Zurück</button></div></div>');
     k.querySelector('.ly-zu').onclick = () => ui.ebeneZu();
     k.querySelector('[data-a="zurueck"]').onclick = () => fenster();
-    const t = k.querySelector('[data-a="teilen"]'); if (t) t.onclick = () => teilen(alle);
+    const t = k.querySelector('[data-a="teilen"]'); if (t) t.onclick = () => teilen(alle, { geschichte: true });
     k.querySelectorAll('[data-res]').forEach((b) => { b.onclick = () => einzeln(m.fertig[b.dataset.res], () => lehrerAnsicht(lehrer)); });
   }
   function einzeln(e, zurueck) {

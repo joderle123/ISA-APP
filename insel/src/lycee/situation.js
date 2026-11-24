@@ -490,13 +490,13 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
       '<div class="sz-leute"><div class="sz-person" style="--f:' + esc(W.farbe) + '"><i class="sz-ava">' + esc(W.name[0]) + '</i><span>' + esc(W.name) + '</span></div><div class="sz-publikum">Steckbrief: <b class="sz-zeilen">0</b> Zeilen</div></div>' +
       '<div class="sz-balken"><div class="sz-balken-f"></div><span>erzählt</span></div><div class="sz-bühne"></div><div class="sz-karten ly-d-optionen"></div></div>');
     const bühne = k.querySelector('.sz-bühne'), karten = k.querySelector('.sz-karten'), fill = k.querySelector('.sz-balken-f'), zeilen = k.querySelector('.sz-zeilen');
-    let offen = def.startOffen || 0, z = 0; const arten = {};
+    let offen = def.startOffen || 0, z = 0, schnell = 0; const arten = {};
     const zeige = () => { fill.style.width = Math.max(4, Math.min(100, offen * 20)) + '%'; fill.style.background = '#5fa0d0'; zeilen.textContent = z; };
     const blase = (wer, text, farbe, ich) => { bühne.insertAdjacentHTML('beforeend', '<div class="sz-blase' + (ich ? ' ich' : '') + '" style="--f:' + farbe + '"><b>' + esc(wer) + '</b>' + esc(ersetze(text)) + '</div>'); while (bühne.children.length > 4) bühne.firstChild.remove(); };
     (async () => {
       zeige(); blase(W.name, def.start, W.farbe); await warte(700);
       for (const r of def.runden) {
-        const opt = typeof r.fragen === 'function' ? r.fragen(offen) : r.fragen;
+        const opt = typeof r.fragen === 'function' ? r.fragen(offen) : r.fragen, t0 = performance.now();
         const i = await new Promise((fertig) => {
           karten.innerHTML = opt.map((f, j) => '<button type="button" data-i="' + j + '"><span>' + esc(ersetze(f.t)) + '</span></button>').join('');
           let aus = false; const ende = (j) => { if (aus) return; aus = true; loesche(); fertig(j); };
@@ -504,13 +504,14 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
           halte((e) => { const m = { Digit1: 0, Digit2: 1, Digit3: 2, Digit4: 3 }[e.code]; if (m != null && m < opt.length) { e.preventDefault(); e.stopPropagation(); ende(m); } else if (e.code === 'KeyE') { e.preventDefault(); e.stopPropagation(); ende(0); } });
         });
         const f = opt[i]; arten[f.art] = (arten[f.art] || 0) + 1;
+        if (performance.now() - t0 < Math.max(1000, opt.map((x) => ersetze(x.t)).join(' ').split(/\s+/).length * 60)) schnell++;   // Fragen nicht gelesen
         karten.innerHTML = '';
         blase('Du', f.t, '#2b3a55', true); await warte(600);
         offen = Math.max(0, offen + (f.offen || 0)); if ((f.offen || 0) > 0) z += f.offen; zeige();
         blase(W.name, typeof f.antwort === 'function' ? f.antwort(offen) : f.antwort, W.farbe); await warte(1500);
       }
       karten.innerHTML = '<div class="sz-sys">' + esc((def.stufen || [])[Math.min((def.stufen || []).length - 1, offen)] || '') + '</div><button type="button" class="sz-weiter" data-a="w">Weiter <kbd>E</kbd></button>';
-      const zu = () => { loesche(); ui.ebeneZu(); ok({ offen, arten, zeilen: z }); };
+      const zu = () => { loesche(); ui.ebeneZu(); ok({ offen, arten, zeilen: z, schnell, runden: def.runden.length }); };
       karten.querySelector('[data-a="w"]').onclick = zu;
       halte((e) => { if (e.code === 'KeyE' || e.code === 'Enter') { e.preventDefault(); e.stopPropagation(); zu(); } });
     })();
@@ -873,18 +874,33 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
   // ---------- Spuren-Wand (Kurs E28: Fakten prüfen, mit falschen Fährten) ----------
   // def: { wo, frage, helfer: { name, farbe }, spuren: [{ id, t, sy, echt, kommentar }], schluesse: [{ key, t, braucht: [ids] }] }
   // → { gepinnt: [ids], heringe: n, schluss: key }
+  // „Noch mal“: Eine Szene wurde durchgeklickt oder nicht geschafft. Kurz sagen, woran es lag, und wie es besser geht.
+  // def: { sy, t, tipp, versuch, max } → Promise (nach „Noch mal versuchen“)
+  ui.nochmal = (def) => new Promise((ok) => {
+    const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">Versuch ' + def.versuch + ' von ' + def.max + '</span><b>🔁 Noch mal</b></div>' +
+      '<div class="sz-nochmal"><div class="sz-nm-sy">' + (def.sy || '🔁') + '</div><h3>' + esc(def.t) + '</h3><p>' + esc(def.tipp || '') + '</p><small>Hängen bleiben gehört dazu. So lernt man es.</small></div>' +
+      '<div class="sz-karten"><button type="button" class="sz-weiter sr-lies" style="--lesen:1800ms" data-a="w">Noch mal versuchen <kbd>E</kbd></button></div></div>');
+    const b = k.querySelector('[data-a="w"]'), ab = performance.now() + 1800; setTimeout(() => b.classList.remove('sr-lies'), 1800);
+    const zu = () => { if (performance.now() < ab) return; loesche(); ui.ebeneZu(); ok(); };
+    b.onclick = zu;
+    halte((e) => { if (e.code === 'KeyE' || e.code === 'Enter') { e.preventDefault(); e.stopPropagation(); if (!e.repeat) zu(); } });
+  });
+
   ui.spurenWand = (def) => new Promise((ok) => {
     const h = def.helfer;
     const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || '') + '</span><b>🧷 Spuren-Wand</b></div>' +
       '<div class="sz-fall" style="--f:' + esc(h.farbe) + '"><p>' + esc(ersetze(def.frage)) + '</p></div><div class="sz-pinnwand"></div>' +
       '<div class="sz-sort-karte sz-spur"></div><div class="sz-bühne"></div><div class="sz-karten ly-d-optionen"></div></div>');
     const wand = k.querySelector('.sz-pinnwand'), spur = k.querySelector('.sz-spur'), bühne = k.querySelector('.sz-bühne'), karten = k.querySelector('.sz-karten');
-    const gepinnt = []; let heringe = 0;
+    const gepinnt = [], wahlen = []; let heringe = 0, verworfen = 0, schnell = 0;
     (async () => {
       for (const s of def.spuren) {
         spur.innerHTML = (s.sy ? '<i>' + s.sy + '</i> ' : '') + esc(ersetze(s.t)); bühne.innerHTML = '';
+        const t0 = performance.now();
         const j = await karteWahl(karten, '<button type="button" data-i="0"><span>📌 An die Wand – das zählt</span></button><button type="button" data-i="1"><span>🗑️ Weg – das beweist nichts</span></button>', 2);
         karten.innerHTML = '';
+        if (performance.now() - t0 < Math.max(1100, ersetze(s.t).split(/\s+/).length * 110)) schnell++;   // schneller, als man die Spur lesen kann
+        wahlen.push(j); if (j === 1 && s.echt) verworfen++;
         if (j === 0) { gepinnt.push(s.id); if (!s.echt) heringe++; wand.insertAdjacentHTML('beforeend', '<span class="sz-zettel' + (s.echt ? '' : ' wackelt') + '">' + (s.sy || '📄') + ' ' + esc(ersetze(s.kurz || s.t)) + '</span>'); }
         const kom = (j === 0) === s.echt ? s.kommentar[0] : s.kommentar[1];
         bühne.innerHTML = blaseHtml(h, kom);
@@ -901,7 +917,8 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
       const sch = moegl[j]; karten.innerHTML = '';
       bühne.innerHTML = '<div class="sz-sys">' + esc(ersetze(sch.t)) + '</div>' + (sch.antwort ? blaseHtml(h, sch.antwort) : '');
       await warte(1500);
-      weiterKnopf(karten, { gepinnt, heringe, schluss: sch.key }, ok);
+      const gemischt = def.spuren.some((x) => x.echt) && def.spuren.some((x) => !x.echt);
+      weiterKnopf(karten, { gepinnt, heringe, verworfen, schnell, gleich: gemischt && def.spuren.length >= 4 && wahlen.every((x) => x === wahlen[0]), schluss: sch.key }, ok);
     })();
   });
 

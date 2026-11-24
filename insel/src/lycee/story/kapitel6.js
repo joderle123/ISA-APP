@@ -325,7 +325,7 @@ export const tunN6 = (c) => ({
   n6_joFolge: () => {
     const m = c.S.merke;
     if (m.k6JoZu) return [['erzaehler', 'Jo wirft weiter. Er trifft nicht mehr.']];
-    return [...(m.k6JoGesagt ? [['jo', '(sehr leise) Ich hab nicht gedacht, dass das einer ernst nimmt.']] : []), ['erzaehler', 'Recht hast du jetzt. Verstanden wirst du vielleicht auch.']];
+    return [...(m.k6JoGesagt ? [['jo', '(sehr leise) Ich hab nicht gedacht, dass das einer ernst nimmt.']] : []), ['erzaehler', 'Jo wirft. Diesmal trifft er. Er freut sich nicht.']];
   },
   n6_kenan: () => (c.S.merke.k6Eingegriffen ? [['kenan', 'Lass, Luca. Reicht.']] : [['erzaehler', 'Kenan sagt nichts. Er schaut weg. Wie alle.']]),
   n6_video: () => (c.S.merke.k6Eingegriffen ? [['erzaehler', 'Das Video gibt es trotzdem. Zehn Sekunden lang.']] : [['erzaehler', 'Das Video gibt es trotzdem. Vierzig Sekunden lang.']]),

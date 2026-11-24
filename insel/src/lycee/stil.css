@@ -1307,3 +1307,28 @@ kbd { display: inline-block; min-width: 1.5em; padding: 0 .35em; margin-right: .
 .ly-e-chronik { margin: 10px 0 12px; padding: 12px 14px; border-radius: 14px; background: rgba(95, 125, 158, .12); text-align: left; }
 .ly-e-chronik h3 { margin: 0 0 6px; font-size: 15px; }
 .ly-e-chronik ul { margin: 0; padding-left: 18px; display: grid; gap: 4px; font-size: 14.5px; line-height: 1.35; }
+/* Lehrer-Ansicht: Geschichte je Kapitel */
+.km-gesch { display: grid; gap: 8px; margin-top: 10px; }
+.km-gesch details { border-radius: 14px; background: #1e1a2c; border: 1px solid #2c2640; padding: 0 12px; }
+.km-gesch details[open] { border-color: #5f7d9e; padding-bottom: 6px; }
+.km-gesch summary { display: flex; align-items: center; gap: 10px; min-height: 48px; cursor: pointer; list-style: none; flex-wrap: wrap; }
+.km-gesch summary::-webkit-details-marker { display: none; }
+.km-gesch summary b { color: #fff; }
+.km-gesch summary small { color: #a59fbd; font-size: 13px; }
+.km-gesch ul { margin: 4px 0 8px; padding-left: 20px; color: #e8e4f6; font-size: 16px; line-height: 1.45; }
+.km-gesch li { margin: 3px 0; }
+.km-gs-zahl, .km-gs-hak { margin: 4px 0 !important; color: #cfc8e8 !important; font-size: 15px !important; }
+.km-gs-hak { color: #f2c38a !important; }
+.km-gs-frage { margin: 8px 0 6px !important; padding: 8px 12px; border-radius: 12px; background: #2a2140; border: 1px solid var(--km, #8a6bd6); color: #fff !important; font-weight: 700; font-size: 16px !important; }
+/* Nicht durchklicken: Knopf reagiert erst nach kurzer Lesezeit (Balken füllt sich) */
+.sr .ly-btn.sr-lies, .sz .sr-lies { position: relative; opacity: .6; cursor: default; overflow: hidden; }
+.sr .ly-btn.sr-lies::after, .sz .sr-lies::after { content: ''; position: absolute; left: 0; bottom: 0; height: 3px; width: 100%; background: currentColor; transform-origin: left; animation: srLies var(--lesen, 1s) linear forwards; }
+@keyframes srLies { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@media (prefers-reduced-motion: reduce) { .sr .ly-btn.sr-lies::after, .sz .sr-lies::after { animation: none; transform: none; opacity: .4; } }
+.sr-nochmal .sr-kicker { display: block; margin-bottom: 8px; color: #b86e12; font-weight: 700; }
+/* Noch mal (Szenen der Geschichte) */
+.sz-nochmal { text-align: center; padding: 8px 4px; }
+.sz-nochmal h3 { margin: 6px 0 4px; font-size: 22px; }
+.sz-nochmal .sz-nm-sy { font-size: 42px; }
+.sz-nochmal p { font-size: 17px; line-height: 1.45; max-width: 34em; margin: 8px auto; }
+.sz-nochmal small { display: block; opacity: .75; margin-top: 6px; }

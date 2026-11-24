@@ -204,7 +204,9 @@ export const GESPRAECHE_N9 = {
     ['erzaehler', 'Darios Hand liegt auf der Klinke.'],
     ['dario', 'Ich kann da nicht rein.'],
     { szene: 'atem', id: 'atemDario', def: { wo: 'Gang vor dem SePAS', wer: F.dario || { name: 'Dario', farbe: '#d9693f' }, info: 'Darios Atem ist kurz. Atme ruhig vor. Er macht mit.', start: 85, ziel: 45,
-      saetze: { 85: '(die Hand zittert auf der Klinke)', 65: 'Okay. Okay.', 50: '(atmet aus. Lang.)' } }, ausgang: () => 'standard', folgen: { standard: {} } },
+      saetze: { 85: '(die Hand zittert auf der Klinke)', 65: 'Okay. Okay.', 50: '(atmet aus. Lang.)' } },
+      ausgang: (r, m) => ((r.gut || 0) >= 2 ? 'standard' : ((m.k9AtemNicht = true), 'nicht')),
+      folgen: { standard: {}, nicht: { dann: [['dario', '(lässt die Klinke los) Es geht nicht. Ich krieg das nicht hin.'], ['erzaehler', 'Er rutscht an der Wand runter. Du setzt dich daneben. Der Gang ist leer.']] } } },
     { szene: 'mut', id: 'mutKlinke', def: MUT_KLINKE, ausgang: (r) => r.key,
       folgen: {
         klopfen: { merke: 'k9Geklopft', dann: [['erzaehler', 'Du klopfst. Dario zuckt zusammen.'], ['kaya', 'Herein.']] },

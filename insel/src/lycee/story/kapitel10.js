@@ -428,6 +428,7 @@ export const tunN10 = (c) => ({
   n10_ende: () => {
     const m = c.S.merke;
     const b = bester(c.S);
+    m.endeMit = b; m.endeLina = linaEnde(m);   // für die Lehrer-Ansicht
     const lina = linaEnde(m) ? [
       { blende: 'Freitag · 16:40' },
       ['erzaehler', 'Dein Handy summt. Die unbekannte Nummer.'],

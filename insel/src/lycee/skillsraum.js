@@ -13,12 +13,22 @@
 //   merk: { titel, punkte: [..] },
 //   check: { frage, optionen: [{ t, ok, warum }] },
 // }
-// → { richtig, gesamt, ich: [..] | null, check: true|false, merkkarte: { kap, titel, punkte } }
+// → { richtig, gesamt, ich: [..] | null, check: true|false, merkkarte: { kap, titel, punkte }, versuche, checkVersuche, geschafft }
+//
+// Nicht durchklicken: Knöpfe reagieren erst nach einer kurzen Lesezeit. Antworten, die schneller kommen, als man den Fall lesen
+// kann, werden gezählt. Passt in der Übung weniger als die Hälfte – oder kam die Hälfte ungelesen und es passt nicht genug –,
+// wird die Übung wiederholt (höchstens dreimal; danach geht es weiter und die Lehrer-Ansicht zeigt es). Beim „Kann ich das?“
+// gibt es einen zweiten Versuch, ohne dass die Lösung vorher verraten wird.
 
 const esc = (s) => String(s == null ? '' : s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const PHASEN = ['Anlass', 'Verstehen', 'Üben', 'Ich', 'Merken'];
 // Antworten mischen: Die richtige steht nicht immer an derselben Stelle (sonst lernt man die Position, nicht den Inhalt)
 const misch = (a) => { const b = a.slice(); for (let i = b.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [b[i], b[j]] = [b[j], b[i]]; } return b; };
+// Mindest-Lesezeit: so schnell kann niemand lesen (etwa 600 Wörter pro Minute). Darunter gilt eine Antwort als „ungelesen“.
+const woerter = (...t) => t.join(' ').split(/\s+/).filter(Boolean).length;
+const minLesen = (...t) => Math.max(900, woerter(...t) * 100);
+// Sperre für „Weiter“: kurz, damit man nicht durch Erklärungen tippt (höchstens 3,5 Sekunden)
+const sperreMs = (...t) => Math.min(3500, Math.max(700, woerter(...t) * 85));
 
 // Körper-Silhouette mit antippbaren Zonen (für Körperkarte)
 const ZONEN = {
@@ -37,22 +47,29 @@ const koerperSvg = (aktiv = [], typisch = []) => '<svg class="sr-koerper" viewBo
 export function installSkillsRaum(ui, { vorlesen = () => {}, ton = () => {} } = {}) {
   ui.skillsStunde = (def) => new Promise((ok) => {
     const L = def.lehrer || { name: 'Herr Kuedes', farbe: '#3fa66b' };
-    const erg = { richtig: 0, gesamt: 0, ich: null, check: false, merkkarte: def.merk ? { kap: def.kap, titel: def.merk.titel, punkte: def.merk.punkte } : null };
+    const erg = { richtig: 0, gesamt: 0, ich: null, check: false, merkkarte: def.merk ? { kap: def.kap, titel: def.merk.titel, punkte: def.merk.punkte } : null, versuche: 1, checkVersuche: 0, geschafft: true };
+    const runde = { antworten: 0, schnell: 0 };   // je Übungs-Durchgang: wie viele Antworten, wie viele davon ungelesen
     const k = ui.ebeneAuf('skills', '<div class="sr"><div class="sr-kopf"><span class="sr-kicker">Skills-Stunde · Kapitel ' + esc(def.kap) + '</span><h2>' + esc(def.titel) + '</h2>' +
       '<ol class="sr-phasen">' + PHASEN.map((p, i) => '<li data-p="' + i + '">' + p + '</li>').join('') + '</ol></div><div class="sr-buehne" aria-live="polite"></div><div class="sr-fuss"></div></div>');
     const buehne = k.querySelector('.sr-buehne'), fuss = k.querySelector('.sr-fuss');
     const phase = (i) => k.querySelectorAll('.sr-phasen li').forEach((li) => { const n = +li.dataset.p; li.className = n < i ? 'fertig' : n === i ? 'jetzt' : ''; });
     const lehrer = (html) => '<div class="sr-lehrer" style="--f:' + esc(L.farbe) + '"><i>' + esc(L.name.replace(/^(Herr|Frau|Mme|M\.)\s*/, '')[0]) + '</i><div><b>' + esc(L.name) + '</b><p>' + html + '</p></div></div>';
-    const knopf = (t, cls = 'ly-primaer') => new Promise((weiter) => {
-      fuss.innerHTML = '<button type="button" class="ly-btn ' + cls + '" data-a="w">' + t + ' <kbd>E</kbd></button>';
-      const b = fuss.querySelector('[data-a="w"]'); let aus = false;
-      const los = () => { if (aus) return; aus = true; document.removeEventListener('keydown', taste, true); fuss.innerHTML = ''; weiter(); };
+    const knopf = (t, cls = 'ly-primaer', lesen = 0) => new Promise((weiter) => {
+      fuss.innerHTML = '<button type="button" class="ly-btn ' + cls + (lesen ? ' sr-lies' : '') + '" data-a="w"' + (lesen ? ' style="--lesen:' + lesen + 'ms"' : '') + '>' + t + ' <kbd>E</kbd></button>';
+      const b = fuss.querySelector('[data-a="w"]'); let aus = false; const ab = performance.now() + lesen;
+      if (lesen) setTimeout(() => b.classList.remove('sr-lies'), lesen);
+      const los = () => { if (aus || performance.now() < ab) return; aus = true; document.removeEventListener('keydown', taste, true); fuss.innerHTML = ''; weiter(); };
       const taste = (e) => { if (e.code === 'KeyE' || e.code === 'Enter' || e.code === 'Space') { e.preventDefault(); e.stopPropagation(); if (!e.repeat) los(); } };
       document.addEventListener('keydown', taste, true); b.onclick = los; setTimeout(() => b.focus(), 50);
     });
-    const wahl = (html, n, tasten = null) => new Promise((fertig) => {   // Knöpfe mit data-i; Ziffern 1–9 wählen; tasten: { Code: index }
-      fuss.innerHTML = html; let aus = false;
-      const los = (i) => { if (aus) return; aus = true; document.removeEventListener('keydown', taste, true); fertig(i); };
+    // Knöpfe mit data-i; Ziffern 1–9 wählen; tasten: { Code: index }; text: was man vorher lesen muss (zählt „ungelesene“ Antworten);
+    // lesen: so lange reagieren die Knöpfe noch nicht (ms)
+    const wahl = (html, n, tasten = null, { text = '', lesen = 0 } = {}) => new Promise((fertig) => {
+      fuss.innerHTML = html; let aus = false; const t0 = performance.now(), ab = t0 + lesen;
+      if (lesen) { fuss.querySelectorAll('[data-i]').forEach((b) => { b.classList.add('sr-lies'); b.style.setProperty('--lesen', lesen + 'ms'); }); setTimeout(() => fuss.querySelectorAll('.sr-lies').forEach((b) => b.classList.remove('sr-lies')), lesen); }
+      const los = (i) => { if (aus || performance.now() < ab) return; aus = true; document.removeEventListener('keydown', taste, true);
+        if (text) { runde.antworten++; if (performance.now() - t0 < minLesen(text)) runde.schnell++; }
+        fertig(i); };
       const taste = (e) => {
         const m = /^Digit([1-9])$/.exec(e.code);
         if (m && +m[1] <= n) { e.preventDefault(); e.stopPropagation(); los(+m[1] - 1); }
@@ -70,7 +87,9 @@ export function installSkillsRaum(ui, { vorlesen = () => {}, ton = () => {} } = 
       buehne.innerHTML = '<div class="sr-anlass">' + lehrer(esc(def.anlass)) + '</div>';
       vor(def.anlass); await knopf('Los geht’s');
 
-      // 2 · Verstehen: Karten, vor- und zurückblättern
+      // 2 · Verstehen: Karten, vor- und zurückblättern (kann vor einer Wiederholung der Übung noch einmal kommen)
+      const gesehenK = {};
+      const verstehen = async () => {
       phase(1);
       for (let i = 0; i < def.karten.length;) {
         const c = def.karten[i];
@@ -79,17 +98,39 @@ export function installSkillsRaum(ui, { vorlesen = () => {}, ton = () => {} } = 
           (c.beispiel ? '<div class="sr-bsp"><b>Beispiel</b> ' + esc(c.beispiel) + '</div>' : '') + (c.gegen ? '<div class="sr-bsp sr-gegen"><b>Nicht verwechseln</b> ' + esc(c.gegen) + '</div>' : '') +
           '<div class="sr-seite">' + (i + 1) + ' / ' + def.karten.length + '</div></div>';
         vor(c.titel + '. ' + c.text);
+        const gesehen = (gesehenK[i] = (gesehenK[i] || 0) + 1) > 1;   // schon einmal gelesen: keine Sperre mehr
         const r = await wahl((i > 0 ? '<button type="button" class="ly-btn" data-i="0">← Zurück</button>' : '<span></span>') + '<button type="button" class="ly-btn ly-primaer" data-i="1">' + (i + 1 < def.karten.length ? 'Weiter →' : 'Verstanden – üben') + ' <kbd>E</kbd></button>', 2,
-          { KeyE: 1, Enter: 1, Space: 1, ArrowRight: 1, ArrowLeft: 0 });
+          { KeyE: 1, Enter: 1, Space: 1, ArrowRight: 1, ArrowLeft: 0 }, { lesen: gesehen ? 0 : sperreMs(c.titel, c.text, ...(c.punkte || []).flat(), c.beispiel || '', c.gegen || '') });
         i += r === 1 ? 1 : -1; if (i < 0) i = 0;
       }
+      };
+      await verstehen();
 
-      // 3 · Üben
-      phase(2);
-      const u = def.uebung;
-      for (const u1 of [].concat(u || [])) {
-        if (u1.einleitung) { buehne.innerHTML = '<div class="sr-anlass">' + lehrer(esc(u1.einleitung)) + '</div>'; vor(u1.einleitung); await knopf('Los'); }
-        await (UEBUNG[u1.art] || (async () => {}))({ u: u1, buehne, fuss, wahl, knopf, lehrer, erg, ton, vor, du });
+      // 3 · Üben – wer durchklickt, macht es noch einmal (höchstens dreimal)
+      const u = def.uebung, MAX = 3;
+      for (let v = 1; ; v++) {
+        phase(2);
+        erg.richtig = 0; erg.gesamt = 0; runde.antworten = 0; runde.schnell = 0; erg.versuche = v;
+        for (const u1 of [].concat(u || [])) {
+          if (u1.einleitung) { buehne.innerHTML = '<div class="sr-anlass">' + lehrer(esc(u1.einleitung)) + '</div>'; vor(u1.einleitung); await knopf(v > 1 ? 'Noch mal, in Ruhe' : 'Los'); }
+          await (UEBUNG[u1.art] || (async () => {}))({ u: u1, buehne, fuss, wahl, knopf, lehrer, erg, ton, vor, du });
+        }
+        if (!erg.gesamt) break;   // Übungen ohne richtig/falsch (Körperkarte, geführt): nichts zu prüfen
+        const quote = erg.richtig / erg.gesamt, ungelesen = runde.antworten ? runde.schnell / runde.antworten : 0;
+        const nochmal = quote < 0.5 || (ungelesen >= 0.5 && quote < 0.8);
+        if (!nochmal) break;
+        if (v >= MAX) {
+          erg.geschafft = false;
+          const t = 'Wir lassen es für heute so. ' + erg.richtig + ' von ' + erg.gesamt + ' haben gepasst. Deine Lehrperson schaut es sich mit dir an – das ist kein Drama, so lernt man.';
+          buehne.innerHTML = '<div class="sr-anlass sr-nochmal">' + lehrer(esc(t)) + '</div>'; vor(t); ton('click');
+          await knopf('Weiter', 'ly-primaer', 1500);
+          break;
+        }
+        const t = (ungelesen >= 0.5 ? 'Stopp. Das ging sehr schnell: ' + runde.schnell + ' von ' + runde.antworten + ' Antworten kamen, bevor man den Text lesen konnte. ' : '') +
+          erg.richtig + ' von ' + erg.gesamt + ' haben gepasst. Das sitzt noch nicht. Wir machen die Übung noch einmal' + (ungelesen >= 0.5 ? ' – lies jeden Fall ganz.' : '. Die Erklärungen nach jeder Antwort helfen.');
+        buehne.innerHTML = '<div class="sr-anlass sr-nochmal"><span class="sr-kicker">🔁 Noch nicht geschafft · Versuch ' + (v + 1) + ' von ' + MAX + '</span>' + lehrer(esc(t)) + '</div>'; vor(t); ton('click');
+        const w = await wahl('<button type="button" class="ly-btn" data-i="0">📖 Erst die Karten noch mal</button><button type="button" class="ly-btn ly-primaer" data-i="1">Übung neu <kbd>E</kbd></button>', 2, { KeyE: 1, Enter: 1 }, { lesen: 1800 });
+        if (w === 0) await verstehen();
       }
 
       // 4 · Ich (freiwillig, ehrlich, privat)
@@ -124,12 +165,21 @@ export function installSkillsRaum(ui, { vorlesen = () => {}, ton = () => {} } = 
         await knopf('Gemerkt');
       }
       if (def.check) {
-        const c = { ...def.check, optionen: misch(def.check.optionen) };
-        buehne.innerHTML = '<div class="sr-check"><span>Kann ich das?</span><h3>' + esc(c.frage) + '</h3></div>';
-        const i = await wahl('<div class="sr-optionen">' + c.optionen.map((o, n) => '<button type="button" class="ly-btn" data-i="' + n + '"><kbd>' + (n + 1) + '</kbd> ' + esc(o.t) + '</button>').join('') + '</div>', c.optionen.length);
-        const o = c.optionen[i], gut = c.optionen.find((x) => x.ok);
+        let c = { ...def.check, optionen: misch(def.check.optionen) }, o = null;
+        const gut = c.optionen.find((x) => x.ok);
+        for (let v = 1; v <= 2; v++) {   // zweiter Versuch: die falsche Antwort fällt weg, die Lösung wird noch nicht verraten
+          erg.checkVersuche = v;
+          buehne.innerHTML = '<div class="sr-check"><span>Kann ich das?' + (v > 1 ? ' · zweiter Versuch' : '') + '</span><h3>' + esc(c.frage) + '</h3></div>';
+          const i = await wahl('<div class="sr-optionen">' + c.optionen.map((x, n) => '<button type="button" class="ly-btn" data-i="' + n + '"><kbd>' + (n + 1) + '</kbd> ' + esc(x.t) + '</button>').join('') + '</div>', c.optionen.length, null, { lesen: v > 1 ? 0 : Math.min(2500, minLesen(c.frage)) });
+          o = c.optionen[i];
+          if (o.ok || v === 2 || c.optionen.length < 3) break;
+          const t = 'Nicht ganz. ' + (o.warum || 'Lies die Frage noch einmal genau.') + ' Versuch es noch einmal.';
+          buehne.innerHTML = '<div class="sr-check nochmal"><span>Fast.</span>' + du(esc(o.t)) + '<p>' + esc(t) + '</p></div>'; vor(t); ton('click');
+          await knopf('Noch ein Versuch', 'ly-primaer', sperreMs(t));
+          c = { ...c, optionen: misch(c.optionen.filter((x) => x !== o)) };
+        }
         erg.check = !!o.ok;
-        buehne.innerHTML = '<div class="sr-check ' + (o.ok ? 'gut' : 'nochmal') + '"><span>' + (o.ok ? '✓ Sitzt.' : 'Fast. Schau noch einmal:') + '</span>' + (o.ok ? '' : du(esc(o.t))) + '<h3>' + esc(gut.t) + '</h3><p>' + esc(o.ok ? o.warum : (o.warum ? o.warum + ' ' : '') + gut.warum) + '</p></div>';
+        buehne.innerHTML = '<div class="sr-check ' + (o.ok ? 'gut' : 'nochmal') + '"><span>' + (o.ok ? (erg.checkVersuche > 1 ? '✓ Im zweiten Versuch.' : '✓ Sitzt.') : 'Noch nicht. Das ist die Antwort:') + '</span>' + (o.ok ? '' : du(esc(o.t))) + '<h3>' + esc(gut.t) + '</h3><p>' + esc(o.ok ? o.warum : (o.warum ? o.warum + ' ' : '') + gut.warum) + '</p></div>';
         vor((o.ok ? 'Sitzt. ' : '') + gut.warum);
         await knopf('Zurück in die Annexe');
       }
@@ -145,24 +195,26 @@ export function installSkillsRaum(ui, { vorlesen = () => {}, ton = () => {} } = 
       for (const [n, f] of u.faelle.entries()) {
         buehne.innerHTML = '<div class="sr-fall"><span class="sr-kicker">' + esc(u.frage) + ' · ' + (n + 1) + '/' + u.faelle.length + '</span>' + (f.wer ? '<b class="sr-wer">' + esc(f.wer) + '</b>' : '') + '<p>' + esc(f.text) + '</p></div>';
         vor(f.text);
-        const i = await wahl('<div class="sr-kat">' + u.kategorien.map((c, j) => '<button type="button" class="ly-btn" data-i="' + j + '" style="--f:' + esc(c.f || '#5b6472') + '"><kbd>' + (j + 1) + '</kbd> ' + (c.sy || '') + ' ' + esc(c.t) + '</button>').join('') + '</div>', u.kategorien.length);
+        const i = await wahl('<div class="sr-kat">' + u.kategorien.map((c, j) => '<button type="button" class="ly-btn" data-i="' + j + '" style="--f:' + esc(c.f || '#5b6472') + '"><kbd>' + (j + 1) + '</kbd> ' + (c.sy || '') + ' ' + esc(c.t) + '</button>').join('') + '</div>', u.kategorien.length, null, { text: f.text });
         const wahlK = u.kategorien[i], ziel = u.kategorien.find((c) => c.id === f.ziel), treffer = wahlK.id === f.ziel;
         erg.gesamt++; if (treffer) erg.richtig++;
         ton(treffer ? 'pling' : 'click');
         const text = (treffer ? '✓ Genau, ' + ziel.t + '. ' : 'Eher ' + ziel.t + '. ') + f.warum + (!treffer && f.wennDu && f.wennDu[wahlK.id] ? ' (' + wahlK.t + ' wäre es, ' + f.wennDu[wahlK.id] + ')' : '');
         buehne.insertAdjacentHTML('beforeend', du((wahlK.sy || '') + ' ' + esc(wahlK.t)) + '<div class="sr-rueck ' + (treffer ? 'gut' : 'eher') + '">' + lehrer(esc(text)) + '</div>');
         vor(text);
+        let zuletzt = text;
         if (f.hilfe) {   // zweiter Schritt: Was würde helfen? (auch diese Wahl wird erklärt)
-          await knopf(u.hilfeFrage || 'Was würde helfen?');
+          await knopf(u.hilfeFrage || 'Was würde helfen?', 'ly-primaer', sperreMs(text));
           buehne.innerHTML = '<div class="sr-fall"><span class="sr-kicker">' + esc(u.hilfeFrage || 'Was würde helfen?') + '</span>' + (f.wer ? '<b class="sr-wer">' + esc(f.wer) + '</b>' : '') + '<p>' + esc(f.text) + '</p></div>';
           const hilfe = misch(f.hilfe);
-          const h = hilfe[await wahl('<div class="sr-optionen">' + hilfe.map((o, j) => '<button type="button" class="ly-btn" data-i="' + j + '"><kbd>' + (j + 1) + '</kbd> ' + esc(o.t) + '</button>').join('') + '</div>', hilfe.length)];
+          const h = hilfe[await wahl('<div class="sr-optionen">' + hilfe.map((o, j) => '<button type="button" class="ly-btn" data-i="' + j + '"><kbd>' + (j + 1) + '</kbd> ' + esc(o.t) + '</button>').join('') + '</div>', hilfe.length, null, { text: hilfe.map((o) => o.t).join(' ') })];
           erg.gesamt++; if (h.gut) erg.richtig++; ton(h.gut ? 'pling' : 'click');
           const t2 = (h.gut ? '✓ ' : '') + h.warum;
           const besser = h.gut ? '' : ' Besser: „' + (f.hilfe.find((x) => x.gut) || {}).t + '“';
           buehne.insertAdjacentHTML('beforeend', du(esc(h.t)) + '<div class="sr-rueck ' + (h.gut ? 'gut' : 'eher') + '">' + lehrer(esc(t2 + besser)) + '</div>'); vor(t2);
+          zuletzt = t2 + besser;
         }
-        await knopf(n + 1 < u.faelle.length ? 'Nächster Fall' : 'Weiter');
+        await knopf(n + 1 < u.faelle.length ? 'Nächster Fall' : 'Weiter', 'ly-primaer', sperreMs(zuletzt));
       }
     },
     // Körperkarte: je Gefühl die eigenen Zonen antippen (oder „weiß nicht“), danach die typischen Orte sehen
@@ -194,11 +246,11 @@ export function installSkillsRaum(ui, { vorlesen = () => {}, ton = () => {} } = 
         for (const l0 of s.luecken) {
           const l = { ...l0, optionen: misch(l0.optionen) };
           buehne.innerHTML = '<div class="sr-fall"><span class="sr-kicker">' + esc(u.frage) + ' · ' + (n + 1) + '/' + u.saetze.length + '</span><p>' + esc(s.situation) + '</p><div class="sr-satz">' + teile.map((t) => '<span>' + esc(t) + '</span>').join(' ') + ' <i>' + esc(l.t) + ' …</i></div></div>';
-          const i = await wahl('<div class="sr-optionen">' + l.optionen.map((o, j) => '<button type="button" class="ly-btn" data-i="' + j + '"><kbd>' + (j + 1) + '</kbd> ' + esc(o.t) + '</button>').join('') + '</div>', l.optionen.length);
+          const i = await wahl('<div class="sr-optionen">' + l.optionen.map((o, j) => '<button type="button" class="ly-btn" data-i="' + j + '"><kbd>' + (j + 1) + '</kbd> ' + esc(o.t) + '</button>').join('') + '</div>', l.optionen.length, null, { text: (teile.length ? '' : s.situation + ' ') + l.optionen.map((o) => o.t).join(' ') });
           const o = l.optionen[i]; teile.push(o.t); erg.gesamt++; if (o.gut) erg.richtig++;
           ton(o.gut ? 'pling' : 'click');
           buehne.insertAdjacentHTML('beforeend', du(esc(o.t)) + '<div class="sr-rueck ' + (o.gut ? 'gut' : 'eher') + '">' + lehrer(esc(o.warum)) + '</div>'); vor(o.warum);
-          await knopf('Weiter');
+          await knopf('Weiter', 'ly-primaer', sperreMs(o.warum));
         }
         buehne.innerHTML = '<div class="sr-merk"><span>Dein Satz</span><h3>„' + esc(teile.join(' ')) + '“</h3><p>' + esc(s.schluss || '') + '</p></div>';
         await knopf(n + 1 < u.saetze.length ? 'Nächste Situation' : 'Weiter');
@@ -212,16 +264,16 @@ export function installSkillsRaum(ui, { vorlesen = () => {}, ton = () => {} } = 
         const r = buehne.querySelector('input'), z = buehne.querySelector('.sr-skala b');
         r.addEventListener('keydown', (e) => e.stopPropagation());
         r.oninput = () => { wert = +r.value; z.textContent = wert; z.style.color = wert < 30 ? '#3fa66b' : wert < 70 ? '#e9a23b' : '#d6452f'; };
-        await knopf('So stark');
+        await knopf('So stark', 'ly-primaer', Math.min(2500, minLesen(f.text)));
         const zone = (v) => (v < 30 ? 'gruen' : v < 70 ? 'gelb' : 'rot'), passt = zone(wert) === zone(f.wert) || Math.abs(wert - f.wert) <= 15;
         erg.gesamt++; if (passt) erg.richtig++;
         const t1 = (passt ? 'Passt gut. ' : 'Viele würden eher etwa ' + f.wert + ' sagen. ') + f.warum;
         buehne.insertAdjacentHTML('beforeend', '<div class="sr-rueck ' + (passt ? 'gut' : 'eher') + '">' + lehrer(esc(t1)) + '</div>'); vor(t1);
         const skills = misch(f.skills);
-        const i = await wahl('<div class="sr-optionen">' + skills.map((s, j) => '<button type="button" class="ly-btn" data-i="' + j + '"><kbd>' + (j + 1) + '</kbd> ' + esc(s.t) + '</button>').join('') + '</div>', skills.length);
+        const i = await wahl('<div class="sr-optionen">' + skills.map((s, j) => '<button type="button" class="ly-btn" data-i="' + j + '"><kbd>' + (j + 1) + '</kbd> ' + esc(s.t) + '</button>').join('') + '</div>', skills.length, null, { text: skills.map((x) => x.t).join(' '), lesen: sperreMs(t1) });
         const s = skills[i]; erg.gesamt++; if (s.gut) erg.richtig++; ton(s.gut ? 'pling' : 'click');
         buehne.insertAdjacentHTML('beforeend', du(esc(s.t)) + '<div class="sr-rueck ' + (s.gut ? 'gut' : 'eher') + '">' + lehrer(esc(s.warum)) + '</div>'); vor(s.warum);
-        await knopf(n + 1 < u.faelle.length ? 'Nächster Fall' : 'Weiter');
+        await knopf(n + 1 < u.faelle.length ? 'Nächster Fall' : 'Weiter', 'ly-primaer', sperreMs(s.warum));
       }
     },
     // Quiz: verschiedene Fragen mit je eigenen Antworten; jede Antwort wird erklärt (Wiederholung, ohne Noten)
@@ -230,12 +282,12 @@ export function installSkillsRaum(ui, { vorlesen = () => {}, ton = () => {} } = 
         const q = { ...q0, optionen: misch(q0.optionen) };
         buehne.innerHTML = '<div class="sr-fall"><span class="sr-kicker">' + esc(u.frage || 'Weißt du noch?') + ' · ' + (n + 1) + '/' + u.fragen.length + (q.kap ? ' · aus Kapitel ' + q.kap : '') + '</span><p>' + esc(q.frage) + '</p></div>';
         vor(q.frage);
-        const o = q.optionen[await wahl('<div class="sr-optionen">' + q.optionen.map((x, j) => '<button type="button" class="ly-btn" data-i="' + j + '"><kbd>' + (j + 1) + '</kbd> ' + esc(x.t) + '</button>').join('') + '</div>', q.optionen.length)];
+        const o = q.optionen[await wahl('<div class="sr-optionen">' + q.optionen.map((x, j) => '<button type="button" class="ly-btn" data-i="' + j + '"><kbd>' + (j + 1) + '</kbd> ' + esc(x.t) + '</button>').join('') + '</div>', q.optionen.length, null, { text: q.frage + ' ' + q.optionen.map((x) => x.t).join(' ') })];
         const gut = q.optionen.find((x) => x.ok);
         erg.gesamt++; if (o.ok) erg.richtig++; ton(o.ok ? 'pling' : 'click');
         const t = (o.ok ? '✓ ' : 'Fast. Richtig ist: „' + gut.t + '“ ') + (o.ok ? o.warum || gut.warum : gut.warum);
         buehne.insertAdjacentHTML('beforeend', du(esc(o.t)) + '<div class="sr-rueck ' + (o.ok ? 'gut' : 'eher') + '">' + lehrer(esc(t)) + '</div>'); vor(t);
-        await knopf(n + 1 < u.fragen.length ? 'Nächste Frage' : 'Weiter');
+        await knopf(n + 1 < u.fragen.length ? 'Nächste Frage' : 'Weiter', 'ly-primaer', sperreMs(t));
       }
     },
     // Geführte Übung (z. B. Bodyscan): Schritte mit ruhigem Atemkreis; läuft von selbst weiter, „Weiter“ geht schneller
