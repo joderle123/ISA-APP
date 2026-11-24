@@ -99,6 +99,8 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
     const flags = {}, gemacht = [], schlange = [];
     let t = 0, zu = false, lacher = 0, letzt = performance.now(), wahlOffen = false;
     const dauer = (def.dauer || 45) * (ui.ruhig ? 1.4 : 1);
+    // klingel: sichtbarer Countdown (Sekunden), danach ist der Chat zu. stillstand: so viele Sekunden steht ab stillstandAb alles still (ohne Hinweis)
+    const klingel = def.klingel ? def.klingel * (ui.ruhig ? 1.4 : 1) : 0, steh = def.stillstand || 0, stehAb = def.stillstandAb || 0; let gestanden = 0;
     const plan = (n, ab) => schlange.push({ ...n, at: ab + (n.nach || 0) });
     def.nachrichten.forEach((n) => plan(n, 0));
     const lach = [];   // Nachrichten mit wachsenden Reaktionen
@@ -155,6 +157,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
     const loop = () => {
       if (zu) return;
       const jetzt = performance.now(), dt = Math.min(0.25, (jetzt - letzt) / 1000); letzt = jetzt; t = (jetzt - beginn) / 1000;   // echte Uhr, auch auf langsamen Geräten
+      if (steh && t >= stehAb && gestanden < steh) { const d = Math.min(dt, steh - gestanden); gestanden += d; beginn += d * 1000; t = (jetzt - beginn) / 1000; k.firstChild.classList.add('steht'); } else if (gestanden) k.firstChild.classList.remove('steht');
       schlange.sort((a, b) => a.at - b.at);
       const n = schlange[0];
       if (n && n.at - 1.1 <= t && !n.system && !n.ich && n.wer && (!n.wenn || flags[n.wenn]) && (!n.wennNicht || !flags[n.wennNicht])) { tippt.hidden = false; tippt.textContent = n.wer + ' tippt …'; tipptBis = t + 0.3; }
@@ -165,8 +168,9 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
         zeig(m); leisteNeu();
       }
       for (const l of lach) { if (l.stopp && [].concat(l.stopp).some((f) => flags[f])) continue; l.n += l.proSek * dt * (1 + lacher); if (l.el) l.el.textContent = '😂 ' + Math.round(l.n); }
-      k.querySelector('.sz-uhr').textContent = 'gesehen von ' + Math.min(def.mitglieder || 19, Math.round(3 + t * 0.6));
-      if (t > dauer && !schlange.length) { fertig(); return; }
+      k.querySelector('.sz-uhr').textContent = (klingel ? '🔔 ' + Math.max(0, Math.ceil(klingel - t)) + ' s · ' : '') + 'gesehen von ' + Math.min(def.mitglieder || 19, Math.round(3 + t * 0.6));
+      if (klingel && t >= klingel) { flags.klingel = true; fertig(); return; }
+      if (!klingel && t > dauer && !schlange.length) { fertig(); return; }
       requestAnimationFrame(loop);
     };
     requestAnimationFrame(loop);
@@ -900,6 +904,56 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
     })();
   });
 
+  // ---------- Gedanken antippen (Kapitel 5): Ein Gedanke fühlt sich an wie eine Tatsache. Antippen = genau hinschauen. ----------
+  // def: { wo, intro, gedanke, gruppen: [ { t, n, farbe, sy } ], schluss, frage, saetze: [ { key, t, antwort? } ], wer? } → { satz: key }
+  ui.gedankeAntippen = (def) => new Promise((ok) => {
+    const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || '') + '</span><b>Ein Gedanke</b></div>' +
+      '<p class="sz-info">' + esc(ersetze(def.intro || '')) + '</p><div class="sz-ged-feld"><button type="button" class="sz-ged-blase">' + esc(ersetze(def.gedanke)) + '<small>antippen</small></button></div>' +
+      '<div class="sz-ged-zaehl"></div><div class="sz-bühne"></div><div class="sz-karten ly-d-optionen"></div></div>');
+    const blase = k.querySelector('.sz-ged-blase'), zaehl = k.querySelector('.sz-ged-zaehl'), bühne = k.querySelector('.sz-bühne'), karten = k.querySelector('.sz-karten');
+    let los = false;
+    const aufloesen = async () => {
+      if (los) return; los = true; loesche(); blase.disabled = true; blase.classList.add('offen');
+      const summe = def.gruppen.reduce((x, g) => x + g.n, 0) || 1;
+      for (const g of def.gruppen) {
+        zaehl.insertAdjacentHTML('beforeend', '<div class="sz-ged-zeile" style="--f:' + esc(g.farbe || '#5b6472') + '"><b>' + g.n + '</b><span>' + (g.sy ? g.sy + ' ' : '') + esc(ersetze(g.t)) + '</span><i style="width:' + Math.round(g.n / summe * 100) + '%"></i></div>');
+        await warte(1150);
+      }
+      if (def.schluss) { bühne.innerHTML = '<div class="sz-sys">' + esc(ersetze(def.schluss)) + '</div>'; await warte(1600); }
+      if (def.frage) bühne.insertAdjacentHTML('beforeend', '<p class="sz-info">' + esc(ersetze(def.frage)) + '</p>');
+      const i = await karteWahl(karten, def.saetze.map((x, j) => '<button type="button" data-i="' + j + '"><span>' + esc(ersetze(x.t)) + '</span></button>').join(''), def.saetze.length);
+      const satz = def.saetze[Math.max(0, i)]; karten.innerHTML = '';
+      bühne.innerHTML = '<div class="sz-sys">„' + esc(ersetze(satz.t)) + '“</div>' + (satz.antwort && def.wer ? blaseHtml(def.wer, satz.antwort) : '');
+      await warte(1300);
+      weiterKnopf(karten, { satz: satz.key }, ok);
+    };
+    blase.onclick = aufloesen;
+    halte((e) => { if (['KeyE', 'Enter', 'Space'].includes(e.code)) { e.preventDefault(); e.stopPropagation(); aufloesen(); } });
+  });
+
+  // ---------- Mut-Balken (Kapitel 6): Er füllt sich, solange du hinschaust. Je länger du bleibst, desto mehr Wege gehen auf. ----------
+  // def: { wo, titel, situation, dauer (s), info, stufen: [ { ab: 0–1, optionen: [ { key, t } ] } ] } → { key, mut }
+  ui.mutBalken = (def) => new Promise((ok) => {
+    const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || '') + '</span><b>' + esc(def.titel || 'Hinschauen') + '</b></div>' +
+      '<div class="sz-fall" style="--f:#2b3a55"><p>' + esc(ersetze(def.situation || '')) + '</p></div>' +
+      '<div class="sz-mut"><span>Mut</span><div><i></i></div></div><p class="sz-info">' + esc(def.info || 'Der Balken füllt sich, solange du hinschaust.') + '</p>' +
+      '<div class="sz-karten ly-d-optionen"></div></div>');
+    const fill = k.querySelector('.sz-mut i'), karten = k.querySelector('.sz-karten');
+    const alle = []; let mut = 0, aus = false, gezeigt = -1;
+    const t0 = performance.now(), ms = (def.dauer || 5) * 1000 * (ui.ruhig ? 1.4 : 1);
+    const zeig = () => {
+      const offen = def.stufen.filter((st) => st.ab <= mut + 1e-6);
+      if (offen.length === gezeigt) return; gezeigt = offen.length;
+      alle.length = 0; offen.forEach((st) => alle.push(...st.optionen));
+      karten.innerHTML = alle.map((o, i) => '<button type="button" data-i="' + i + '"' + (i >= alle.length - (offen[offen.length - 1] || { optionen: [] }).optionen.length && offen.length > 1 ? ' class="neu"' : '') + '><kbd>' + (i + 1) + '</kbd><span>' + esc(ersetze(o.t)) + '</span></button>').join('');
+      karten.querySelectorAll('[data-i]').forEach((b) => { b.onclick = () => ende(+b.dataset.i); });
+    };
+    const ende = (i) => { if (aus || !alle[i]) return; aus = true; loesche(); ui.ebeneZu(); ok({ key: alle[i].key, mut: Math.round(mut * 100) }); };
+    halte((e) => { const m = /^Digit([1-9])$/.exec(e.code); if (m) { e.preventDefault(); e.stopPropagation(); ende(+m[1] - 1); } });
+    const tick = () => { if (aus) return; mut = Math.min(1, (performance.now() - t0) / ms); fill.style.width = (mut * 100).toFixed(1) + '%'; zeig(); if (mut < 1) requestAnimationFrame(tick); };
+    zeig(); requestAnimationFrame(tick);
+  });
+
   // ---------- Kurs Modul 3 (Gefühle regulieren): Anspannung 0–100, drei Zonen ----------
   const ZONE = (z) => (z < 30 ? ['gruen', 'Grün', '#3fa66b'] : z < 70 ? ['gelb', 'Gelb', '#e9a23b'] : ['rot', 'Rot', '#d6452f']);
   const thermoHtml = '<div class="sz-thermo"><div class="sz-thermo-rohr"><i class="sz-thermo-f"></i><b class="sz-thermo-z">0</b></div><div class="sz-thermo-skala"><i style="bottom:100%">100</i><i style="bottom:70%">70</i><i style="bottom:30%">30</i><i style="bottom:0">0</i></div></div>';
@@ -1009,7 +1063,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
       antw.innerHTML = a.a.map((x, i) => '<button type="button" data-i="' + i + '"><span>' + esc(x) + '</span></button>').join('');
       antw.querySelectorAll('[data-i]').forEach((b) => { b.onclick = () => { if (ende || puls >= 90 || performance.now() < sperre) return; const gut = +b.dataset.i === a.r; if (gut) richtig++; else puls = Math.min(100, puls + 6); n++; zeigPuls(); aufgabe(); }; });
     };
-    sk.innerHTML = '<small>Dein Koffer:</small>' + def.skills.map((s) => '<button type="button" data-s="' + esc(s.id) + '">' + (s.sy || '') + ' ' + esc(s.t) + '</button>').join('');
+    sk.innerHTML = '<small>' + esc(def.skillsTitel || 'Dein Koffer:') + '</small>' + def.skills.map((s) => '<button type="button" data-s="' + esc(s.id) + '">' + (s.sy || '') + ' ' + esc(s.t) + '</button>').join('');
     sk.querySelectorAll('[data-s]').forEach((b) => { b.onclick = () => {
       if (ende || b.disabled) return; const s = def.skills.find((x) => x.id === b.dataset.s); b.disabled = true; benutzt.push(s.id);
       sperre = performance.now() + 2500; fuss.innerHTML = '<div class="sz-sys">' + esc(ersetze(s.wie || s.t)) + ' …</div>';
@@ -1049,9 +1103,9 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
   // → { zahl, gut, runden }
   ui.atemSync = (def) => new Promise((ok) => {
     const w = def.wer;
-    const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || '') + '</span><b>Gemeinsam atmen</b></div>' +
-      '<p class="sz-info">' + esc(w.name) + ' atmet sehr schnell. Atme ruhig vor – er macht mit. <b>Halten</b> = normal ein. <b>Loslassen</b> = lange aus.</p>' +
-      '<div class="sz-atem"><div class="sz-atem-ring"></div><div class="sz-atem-ich"></div><div class="sz-atem-er" style="--f:' + esc(w.farbe) + '">' + esc(w.name[0]) + '</div><b class="sz-atem-z"></b></div>' +
+    const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || '') + '</span><b>' + esc(def.titel || 'Gemeinsam atmen') + '</b></div>' +
+      '<p class="sz-info">' + (def.info ? esc(def.info) + ' ' : esc(w.name) + ' atmet sehr schnell. Atme ruhig vor – er macht mit. ') + '<b>Halten</b> = normal ein. <b>Loslassen</b> = lange aus.</p>' +
+      '<div class="sz-atem"><div class="sz-atem-ring"></div><div class="sz-atem-ich"></div><div class="sz-atem-er"' + (def.allein ? ' hidden' : '') + ' style="--f:' + esc(w.farbe) + '">' + esc(w.name[0]) + '</div><b class="sz-atem-z"></b></div>' +
       '<div class="sz-bühne"></div><div class="sz-karten"><button type="button" class="sz-atem-knopf">Halten zum Einatmen <kbd>Leertaste</kbd></button></div></div>');
     const ich = k.querySelector('.sz-atem-ich'), er = k.querySelector('.sz-atem-er'), zEl = k.querySelector('.sz-atem-z'), bühne = k.querySelector('.sz-bühne'), knopf = k.querySelector('.sz-atem-knopf'), karten = k.querySelector('.sz-karten');
     let zahl = def.start || 95, gut = 0, runden = 0, ein = null, aus = null, groesse = 0.3, ende = false; const gesagt = new Set();
@@ -1079,7 +1133,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
       er.style.transform = 'scale(' + (0.75 + 0.2 * Math.sin(t * tempo * 2)).toFixed(3) + ')';
       requestAnimationFrame(anim);
     };
-    function fertig() { if (ende) return; ende = true; loesche(); document.removeEventListener('keyup', los, true); weiterKnopf(karten, { zahl: Math.round(zahl), gut, runden }, ok, '<div class="sz-sys">' + esc(w.name) + ' ist bei ' + Math.round(zahl) + '. ' + (gut >= 3 ? 'Ihr habt zusammen runtergeatmet.' : 'Langsam wird es besser.') + '</div>'); }
+    function fertig() { if (ende) return; ende = true; loesche(); document.removeEventListener('keyup', los, true); weiterKnopf(karten, { zahl: Math.round(zahl), gut, runden }, ok, '<div class="sz-sys">' + (def.allein ? 'Du bist bei ' + Math.round(zahl) + '. ' + (gut >= 3 ? 'Ein. Und aus. Länger aus. Es geht.' : 'Langsam wird es besser.') : esc(w.name) + ' ist bei ' + Math.round(zahl) + '. ' + (gut >= 3 ? 'Ihr habt zusammen runtergeatmet.' : 'Langsam wird es besser.')) + '</div>'); }
     zeig(); sag(); anim();
   });
 

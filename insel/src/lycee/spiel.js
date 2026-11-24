@@ -38,7 +38,7 @@ import landungOgg from './toene/landung.ogg';
 import pfostenOgg from './toene/pfosten.ogg';   // „Rotating Bicycle Bell“, opengameart.org, CC0
 import { createZufall } from './zufall.js';
 // Das Schuljahr vergeht: Monat auf der Zeitkarte (die Kapitel liegen Wochen auseinander, nicht direkt hintereinander)
-const MONAT = { 1: 'September', 2: 'September', 3: 'Oktober', 4: 'November', 5: 'Dezember', 6: 'Februar', 7: 'März', 8: 'April', 9: 'Juni', 10: 'Juli' };
+const MONAT = { 1: 'September', 2: 'November', 3: 'Dezember', 4: 'Dezember', 5: 'Januar', 6: 'Januar', 7: 'Juni', 8: 'Juni', 9: 'Juli', 10: 'Juli' };   // Kalender der Storyline 7e
 import { createInteraktionen } from './interaktion.js';
 import { createKicker3d } from './kicker3d.js';
 import { createBillard } from './billard.js';
@@ -74,7 +74,7 @@ import { situationen } from './situation.js';
 import { FACHLEHRER, PERSONAL } from './story/personal.js';
 import { FR_LEKTIONEN } from './story/fachstunden.js';
 if (!(LEKTIONEN.francais || []).length) LEKTIONEN.francais = FR_LEKTIONEN;   // Französisch fürs Spiel (handgeschrieben, story/fachstunden.js)
-import { tunN2 } from './story/kapitel2.js';
+import { tunN2, ORTE_N2 } from './story/kapitel2.js';
 import { tunN1 } from './story/kapitel1.js';
 import { tunN3, ORTE_N3 } from './story/kapitel3.js';
 import { tunN4 } from './story/kapitel4.js';
@@ -207,7 +207,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   const welt = baueWelt({ material, materialInnen, materialLaub });
   // Nächster echter Sitz (Stuhl, Bank, Kübelrand): Figuren sitzen AUF etwas – mit dessen Höhe und Richtung
   const sitzSuche = (x, z, r = 1.3) => { let best = null, bd = r; for (const q of welt.sitze || []) { const d = Math.hypot(q.x - x, q.z - z); if (d < bd) { bd = d; best = q; } } return best; };
-  Object.assign(welt.orte, ORTE2, ORTE3, ORTE4, ORTE6, ORTE_N3, ORTE_UMLAND);
+  Object.assign(welt.orte, ORTE2, ORTE3, ORTE4, ORTE6, ORTE_N3, ORTE_UMLAND, ORTE_N2);
   let paket = ladePaket();   // Aufgaben der Lehrperson (Phase 2) oder Grundaufgaben
   scene.add(welt.gruppe);
   const sky = createSky({ scene, renderer: rr.renderer, audio, quality: { ...q, shadowSize: Math.min(q.shadowSize || 0, 2048), shadowSpan: 28 }, events });
@@ -1239,7 +1239,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         // Situations-Spiel (situation.js): Ausgang → Folgen (wie eine Wahl: staerke, herz, merke, dann)
         const def = typeof z.def === 'function' ? z.def(S.merke, S) : z.def;
         ui.dialogZu();
-        const SZ = { hitze: 'hitzeDuell', chat: 'liveChat', checkin: 'checkIn', namen: 'namenRekord', zwei: 'zweiWahrheiten', blind: 'blindParcours', stempel: 'skillsStempel', tanks: 'tankRaten', meinetanks: 'meineTanks', nachhaken: 'nachhaken', teams: 'teamsWaehlen', pult: 'gefuehlsPult', lesen: 'gesichterLesen', mischpult: 'mischpult', linie: 'linie', staerken: 'staerkenSchenken', sort: 'sortSprint', platz: 'platzwechsel', koerper: 'koerperKarte', synchron: 'synchron', spuren: 'spurenWand', thermo: 'thermometer', zonen: 'zonenWette', test: 'mathTest', atem: 'atemSync', koffer: 'koffer', weiche: 'gedankenWeiche', bohnen: 'bohnenWette', waage: 'beweisWaage', satz: 'satzBau', zettel: 'wenRaten', abstand: 'stoppAbstand', stopp: 'stoppBau', treppe: 'treppe', druck: 'druckRunde', buehne: 'buehneKippen', feed: 'feedSim', rucksack: 'rucksack', akku: 'akkuTag', wuerfel: 'gesundWuerfel', kurve: 'jahresKurve', brief: 'briefAnMich' };
+        const SZ = { hitze: 'hitzeDuell', chat: 'liveChat', checkin: 'checkIn', namen: 'namenRekord', zwei: 'zweiWahrheiten', blind: 'blindParcours', stempel: 'skillsStempel', tanks: 'tankRaten', meinetanks: 'meineTanks', nachhaken: 'nachhaken', teams: 'teamsWaehlen', pult: 'gefuehlsPult', lesen: 'gesichterLesen', mischpult: 'mischpult', linie: 'linie', staerken: 'staerkenSchenken', sort: 'sortSprint', platz: 'platzwechsel', koerper: 'koerperKarte', synchron: 'synchron', spuren: 'spurenWand', antippen: 'gedankeAntippen', mut: 'mutBalken', thermo: 'thermometer', zonen: 'zonenWette', test: 'mathTest', atem: 'atemSync', koffer: 'koffer', weiche: 'gedankenWeiche', bohnen: 'bohnenWette', waage: 'beweisWaage', satz: 'satzBau', zettel: 'wenRaten', abstand: 'stoppAbstand', stopp: 'stoppBau', treppe: 'treppe', druck: 'druckRunde', buehne: 'buehneKippen', feed: 'feedSim', rucksack: 'rucksack', akku: 'akkuTag', wuerfel: 'gesundWuerfel', kurve: 'jahresKurve', brief: 'briefAnMich' };
         const r = (await ui[SZ[z.szene] || z.szene](def)) || {};
         const key = z.ausgang ? z.ausgang(r, S.merke) : 'standard';
         S.szenen = S.szenen || {}; if (z.id) S.szenen[z.id] = key;
@@ -1251,6 +1251,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         if (f.merke) [].concat(f.merke).forEach((m) => { S.merke[m] = true; });
         sichern();
         if (f.dann && f.dann.length) await spiele(f.dann);
+      } else if ('anzeige' in z) {
+        setzeAnzeige(z.anzeige, z.wert, z.plus);
       } else if (z.blende) {
         ui.dialogZu(); await ui.blende(ersetze(z.blende)); await new Promise((r) => setTimeout(r, 1300)); await ui.blendeAus(300);   // Zeitsprung
       } else if (z.stunde) {
@@ -1296,7 +1298,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     ...tunN1({ get S() { return S; }, ui }),
     ...tunN2({ get S() { return S; }, ui }),
     ...tunN3({ get S() { return S; }, ui }),
-    ...tunN4({ get S() { return S; }, ui }),
+    ...tunN4({ get S() { return S; }, ui, anzeige: (art, wert, plus) => setzeAnzeige(art, wert, plus) }),
     ...tunN5({ get S() { return S; }, ui }),
     ...tunN6({ get S() { return S; }, ui }),
     ...tunN7({ get S() { return S; }, ui }),
@@ -1331,10 +1333,10 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     n1_kunstLina: () => (S.merke.linaTisch ? [['lina', '(leise) Du warst gestern an meinem Tisch.'], ['erzaehler', 'Sie rutscht ein Stück zur Seite. Bei Lina ist das viel.']] : []),
     tablett: () => { ui.toast('🍽 Tablett in der Hand. Jetzt der schwerste Teil: ein Platz.'); },
     gegessen: async () => {   // Spielfigur setzt sich mit an den Tisch (gegenüber)
-      const sitz = S.merke.tisch === 'mila' ? [19.55, -4.9, Math.PI / 2] : S.merke.tisch === 'lina' ? [16.65, -5.9, -Math.PI / 2] : [12.25, -10.1, -Math.PI / 2];
+      const sitz = S.merke.tisch === 'mila' ? [19.55, -4.9, Math.PI / 2] : S.merke.tisch === 'lina' ? [16.65, -5.9, -Math.PI / 2] : S.merke.tisch === 'ben' ? [18.15, -10.1, -Math.PI / 2] : [12.25, -10.1, -Math.PI / 2];
       steuerung.setzen(sitz[0] - Math.sin(sitz[2]) * 0.1, sitz[1] - Math.cos(sitz[2]) * 0.1, sitz[2]);
       await new Promise((r) => setTimeout(r, 1400));
-      await ui.bild('Mittagspause', S.merke.tisch === 'mila' ? 'Mila zeigt dir, wie der Würfel geht. Du schaffst eine Seite. Sie sagt: „Für den Anfang okay.“' : S.merke.tisch === 'lina' ? 'Lina zeichnet weiter. Am Ende schiebt sie dir die Serviette rüber. Die Kantine, von oben. Du bist auch drauf.' : 'Ayla trommelt einen Takt auf das Tablett. Noah versucht mitzuhalten und verschüttet sein Wasser. Alle lachen, Noah auch.', 3);
+      await ui.bild('Mittagspause', S.merke.tisch === 'mila' ? 'Mila zeigt dir, wie der Würfel geht. Du schaffst eine Seite. Sie sagt: „Für den Anfang okay.“' : S.merke.tisch === 'ben' ? 'Ben erzählt von seinem Hund. Jo schaut die ganze Zeit aufs Handy. Einmal lachen alle drei. Du weißt nicht genau, worüber.' : S.merke.tisch === 'noah' ? 'Noah rechnet, wie viele Steine die Turmuhr braucht. Zweimal verrechnet er sich. Beim dritten Mal sagt er: „Zwölf. Wusste ich.“' : S.merke.tisch === 'lina' ? 'Lina zeichnet weiter. Am Ende schiebt sie dir die Serviette rüber. Die Kantine, von oben. Du bist auch drauf.' : 'Ayla trommelt einen Takt auf das Tablett. Noah versucht mitzuhalten und verschüttet sein Wasser. Alle lachen, Noah auch.', 3);
     },
     plakat: async () => {
       const m = S.merke;
@@ -1982,9 +1984,16 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     7: 'Welches Tier bist du im Streit meistens – und welches willst du öfter sein?', 8: 'Was prüfst du, bevor du etwas teilst?',
     9: 'Was lädt deinen Akku wirklich auf?', 10: 'Was nimmst du aus diesem Jahr mit?' };
   // Inhaltshinweise je Kapitel (wie in großen Spielen): kurz, sachlich, mit Weg nach draußen
-  const INHALT = { 2: 'Heimliche Fotos, Auslachen im Klassenchat.', 3: 'Bloßstellen mit Fotos, Wut und Streit.', 4: 'Stress, Prüfungsangst, eine Panik-Situation.',
-    5: 'Ein gefälschter Chat, Gerüchte, harte Gedanken über sich selbst.', 6: 'Angst und kleine Mutproben, Grenzen setzen.', 7: 'Gruppendruck, Streit, Ausgrenzung.',
-    8: 'KI-Fakes, Bloßstellen im Netz, Likes und Selbstwert.', 9: 'Erschöpfung, Schlafmangel, ein Freund in einer Krise.', 10: 'Abschied, Entschuldigung, Versöhnung.' };
+  const INHALT = { 2: 'Eine Ranking-Liste, Auslachen im Klassenchat.', 3: 'Bloßstellen mit Fotos, Gerüchte über jemanden.', 4: 'Prüfungsstress, eine Panikattacke, ein gefälschter Screenshot.',
+    5: 'Verdacht gegen dich, Gerüchte, harte Gedanken über sich selbst.', 6: 'Filmen ohne Erlaubnis, Rauswurf aus dem Klassenchat.', 7: 'Gruppendruck, Mobbing in der Kantine.',
+    8: 'Ein KI-Fake-Video über eine Lehrerin.', 9: 'Schlafmangel, ein schweres Geheimnis, ein Freund in einer Krise.', 10: 'Geständnis, Entschuldigungen, Abschied.' };
+  // Dauer-Anzeige einer Woche (Anspannung 0–100 in Kapitel 4, Akku in Kapitel 9): gilt bis zum Kapitelende
+  function setzeAnzeige(art, wert, plus) {
+    if (!art) { S.merke.anzeige = null; ui.anzeige(null); sichern(); return; }
+    const alt = S.merke.anzeige && S.merke.anzeige.art === art ? S.merke.anzeige.wert : 0;
+    const w = Math.max(0, Math.min(100, wert != null ? wert : alt + (plus || 0)));
+    S.merke.anzeige = { art, wert: w, kap: (SCHRITTE[S.schritt] || {}).kap || 1 }; ui.anzeige(S.merke.anzeige); sichern();
+  }
   async function starteSchritt(i, mitStart) {
     startet = true;
     try { await starteSchrittJetzt(i, mitStart); } finally { startet = false; }
@@ -2016,6 +2025,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (bus) { bus.position.x = st.id === 'ankunft' || st.fertig.ort === 'bus' ? -12 : 300; busFaehrt = 0; }
     ui.auftrag({ kapitel: kapName(st.kap), titel: st.titel, ziel: st.ziel });
     if (st.id === 'bingo') zeigeBingo();
+    { const an = S.merke.anzeige; ui.anzeige(an && an.kap === st.kap ? an : null); }
     if (st.start && st.start.gespraech && mitStart !== false) {
       await gespraech(GESPRAECHE[st.start.gespraech]);
       if (st.id === 'ankunft' && bus) busFaehrt = 1;
@@ -2035,7 +2045,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (f && f.eins) {
       if (st.id === 'pause' && id === 'mila' && !S.merke.pauseMila) { S.merke.pauseMila = true; await gespraech(GESPRAECHE.mila); await nachPause(); return; }
       if (st.id === 'pause' && (id === 'ben' || id === 'yusuf') && !S.merke.pauseKorb) { S.merke.pauseKorb = true; await gespraech(GESPRAECHE.freiwurf); await gespraech(GESPRAECHE.freiwurfDanach); await nachPause(); return; }
-      if (st.id === 'tisch' && (id === 'noah' || id === 'mila' || id === 'lina')) { S.merke.tisch = id; await gespraech(GESPRAECHE['tisch_' + id]); await naechster(); return; }
+      if (st.id === 'tisch' && GESPRAECHE['tisch_' + id] && f.eins.includes(id)) { S.merke.tisch = id; await gespraech(GESPRAECHE['tisch_' + id]); await naechster(); return; }
     }
     // Lernstation: Mme Laurent außerhalb der Geschichte
     if (id === 'laurent') {
@@ -3413,7 +3423,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   const SAISON = { laub: { farbe: 0xd9822b, fall: 0.7, wind: 0.9, groesse: 0.1 }, schnee: { farbe: 0xffffff, fall: 0.55, wind: 0.35, groesse: 0.07 }, blueten: { farbe: 0xf6c1d4, fall: 0.45, wind: 0.8, groesse: 0.07 } };
   let saisonT = 0;
   // Deko je Monat (requisiten.js, plaetze mit saison): Kürbisse im Oktober, Weihnachten im Dezember, Winter bis Februar
-  const DEKO_KAP = { herbst: [3, 4], halloween: [3], weihnacht: [5], winter: [5, 6], fruehling: [7, 8], sommer: [9, 10] };
+  const DEKO_KAP = { herbst: [1, 2], halloween: [], weihnacht: [3, 4], winter: [3, 4, 5, 6], fruehling: [], sommer: [7, 8, 9, 10] };   // Kalender der Storyline 7e
   let dekoKap = -1;
   // Eisbahn auf dem Marktplatz im Winter (Kapitel 5–6): glattes Eis, Bande mit zwei Durchgängen (Weg vom Jugendhaus),
   // Schild, Lichterkette. Darauf rutscht man mit Schwung (steuerung.glatt); die Figur macht Schlittschuh-Bewegungen.
@@ -3532,7 +3542,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   function saisonTick(dt) {
     const kap = (S && SCHRITTE[S.schritt] && SCHRITTE[S.schritt].kap) || 1;
     if (kap !== dekoKap && req.saison) { dekoKap = kap; eisbahnZeigen((DEKO_KAP.winter || []).includes(kap)); laubAn = (DEKO_KAP.herbst || []).includes(kap); fruehlingAn = (DEKO_KAP.fruehling || []).includes(kap); sommerAn = (DEKO_KAP.sommer || []).includes(kap); eiswagen.visible = sommerAn; extraNeu(); if (S && S.merke && S.merke.schneemannBau) schneemann.wiederherstellen(S.merke.schneemannBau); for (const [k, m] of Object.entries(req.saison)) m.visible = (DEKO_KAP[k] || []).includes(kap); try { zeitungNeu(kap); } catch (e) { /* Zeitung */ } }
-    const art = kap <= 4 ? 'laub' : kap <= 6 ? 'schnee' : kap <= 8 ? 'blueten' : null, A = art && SAISON[art];
+    const art = kap === 2 ? 'laub' : kap >= 3 && kap <= 6 ? 'schnee' : null, A = art && SAISON[art];
     const draussen = !welt.raumBei(steuerung.pos.x, steuerung.pos.z);
     const ziel = laeuft && A && draussen && !(sky.night > 0.5) && regenJetzt < 0.1 ? 0.9 : 0;
     saisonMat.opacity = draussen ? saisonMat.opacity + (ziel - saisonMat.opacity) * Math.min(1, dt * 1.2) : 0;

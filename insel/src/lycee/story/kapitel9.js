@@ -1,50 +1,49 @@
-// Drei Jahre Annexe – 7ème, Kapitel 9 „Gesund und stark“ (Kurs Jahr 1, Modul 8: E29 Gesund und stark – Rucksack-Rennen,
-// Stress-Rucksack, Vier Ecken mit Tipp, Gesund-Würfel, Gesund-Plan, Bodyscan). Behutsam: schwere Gefühle → Hilfe-Wege
-// (Herr Kuedes, 116 111). Faden @annexe.cam: Dario kann nicht mehr schlafen. Er erzählt, wie alles angefangen hat.
+// Storyline 7e „@annexe.cam“ (nach der Storyline von Fable) – Kapitel 9 „Haltestelle, früh“, Anfang Juli.
+// Verdecktes Thema: Gesund und stark (Schlaf, Stress, „Akku“, Geheimnisse, die man nicht tragen muss).
+// Wer nicht schläft, hält immer weniger aus. Ein fremdes Geheimnis wiegt auch. Noah sagte im Dezember „Sagt’s keinem“,
+// und das konnte man halten. Dario sagt es jetzt, und es geht nicht. Den Unterschied erklärt niemand – man spürt ihn
+// am eigenen Akku (Anzeige links). Hilfe holen heißt hier: mitgehen, nicht abgeben.
 import { S9_AKKU, S9_BODYSCAN } from './skills-j1.js';
-// Stuhlkreis vorne in der Aula (Mitte −14.5 | −63.4), Lücke im Süden für den Spieler
 const AULA = { noah: [-16.18, -64.48, 1.00], mila: [-12.82, -64.48, -1.00], ben: [-12.50, -63.34, -1.60], jo: [-16.50, -63.34, 1.60], ayla: [-16.17, -62.31, 2.15], lina: [-12.83, -62.31, -2.15], chiara: [-13.56, -61.64, -2.65], yusuf: [-15.44, -61.64, 2.65] };
 const F = { noah: { id: 'noah', name: 'Noah', farbe: '#3f78b8' }, mila: { id: 'mila', name: 'Mila', farbe: '#2fb8a8' }, ben: { id: 'ben', name: 'Ben', farbe: '#d9a21b' }, jo: { id: 'jo', name: 'Jo', farbe: '#c0392b' },
   ayla: { id: 'ayla', name: 'Ayla', farbe: '#e85d75' }, dario: { id: 'dario', name: 'Dario', farbe: '#d9693f' }, yusuf: { id: 'yusuf', name: 'Yusuf', farbe: '#5fa0d0' } };
 
 export const SCHRITTE_N9 = [
-  { id: 'k9_dario', kap: 9, tag: 'Montag', uhr: 7.45, titel: 'Dario', ziel: 'Dario wartet an der Haltestelle. Sehr früh. Sehr müde.', marker: 'dario',
-    start: { teleport: 'busAnkunft', gespraech: 'n9_morgen' },
+  { id: 'k9_frueh', kap: 9, tag: 'Montag', uhr: 6.67, titel: 'Haltestelle, früh', ziel: 'Dario sitzt auf der Bank. T-Shirt.', marker: 'dario',
+    start: { teleport: 'busAnkunft', gespraech: 'n9_nacht' },
     leute: { dario: [-21.5, 41.6, -1.6, 'sitzt'] },
-    fertig: { reden: 'dario', gespraech: 'n9_dario' } },
+    fertig: { reden: 'dario', gespraech: 'n9_beichte' } },
   { id: 'k9_skills', kap: 9, tag: 'Montag', uhr: 9.9, neben: 'skills', titel: 'Skills: Akku leer', ziel: 'Aula. Herr Kuedes hat einen Rucksack voller Steine dabei.', marker: 'kaya',
     start: { teleport: 'eingangHof' },
     leute: { kaya: [-14.50, -65.40, 0.00], mesenberg: [-13.54, -65.16, -0.50], ...AULA },
     fertig: { reden: 'kaya', gespraech: 'n9_skills' } },
-  { id: 'k9_kuedes', kap: 9, tag: 'Dienstag', uhr: 10.0, titel: 'Zu zweit zu Herrn Kuedes', ziel: 'Dario steht vor der Aula. Er geht nicht allein rein.', marker: 'dario',
+  { id: 'k9_klinke', kap: 9, tag: 'Dienstag', uhr: 9.83, titel: 'Die Klinke', ziel: 'Gang vor dem SePAS. Dario steht an der Tür.', marker: 'dario', wenn: (m) => !m.k9Versprochen,
+    start: { teleport: 'halle' },
+    leute: { dario: [-11.2, -9.0, 2.6], kaya: [-12.6, -11.4, 0.6, 'sitzt'] },
+    fertig: { reden: 'dario', gespraech: 'n9_klinke' } },
+  { id: 'k9_tragen', kap: 9, tag: 'Dienstag', uhr: 12.17, titel: 'Tragen', ziel: 'Kantine. Noah hat dir einen Platz freigehalten.', marker: 'noah', wenn: (m) => !!m.k9Versprochen,
+    start: { teleport: 'kantineTuer' },
+    leute: { noah: [10.75, -11.1, Math.PI / 2, 'sitzt'], mila: [16.65, -10.1, Math.PI / 2, 'sitzt'], kremer: [26.8, -9, -Math.PI / 2] },
+    fertig: { reden: 'noah', gespraech: 'n9_tragen' } },
+  { id: 'k9_klinkeDo', kap: 9, tag: 'Donnerstag', uhr: 9.83, titel: 'Die Klinke', ziel: 'Gang vor dem SePAS. Dario steht an der Tür.', marker: 'dario', wenn: (m) => !!m.k9Versprochen,
+    start: { teleport: 'halle' },
+    leute: { dario: [-11.2, -9.0, 2.6], kaya: [-12.6, -11.4, 0.6, 'sitzt'] },
+    fertig: { reden: 'dario', gespraech: 'n9_klinke' } },
+  { id: 'k9_ecke', kap: 9, tag: 'Donnerstag', uhr: 15.67, titel: 'Wenn ich falle', ziel: 'Skate-Ecke. Luca wartet auf dich.', marker: 'luca',
     start: { teleport: 'eingangHof' },
-    leute: { dario: [-13.6, -51.2, Math.PI], kaya: [-14.50, -65.40, 0.00] },
-    fertig: { reden: 'dario', gespraech: 'n9_kuedes' } },
-  { id: 'k9_ben', kap: 9, tag: 'Mittwoch', uhr: 12.4, titel: 'Bens Gesund-Würfel', ziel: 'Ben am Korb. Er hat einen riesigen Würfel aus Pappe gebaut.', marker: 'ben',
-    start: { teleport: 'eingangHof' },
-    leute: { ben: [28.4, 13.6, 2.6], jo: [26.8, 14.6, 1.6], noah: [27.2, 16.2, 0.8] },
-    fertig: { reden: 'ben', gespraech: 'n9_ben' } },
+    leute: { luca: [-34.4, 11.4, 1.9], kenan: [-35.4, 12.6, 1.4] },
+    fertig: { reden: 'luca', gespraech: 'n9_luca' } },
   { id: 'k9_ende', kap: 9, tag: 'Freitag', uhr: 10.0, neben: 'skills', titel: 'Skills: Mein Gesund-Plan', ziel: 'Letzte Skills-Stunde der Woche. Aula.', marker: 'kaya',
     start: { teleport: 'eingangHof' },
-    leute: { kaya: [-14.50, -65.40, 0.00], ...AULA, dario: [-9.8, -55.2, -1.4] },
+    leute: { kaya: [-14.50, -65.40, 0.00], ...AULA, dario: [-14.5, -61.4, 3.14] },
     fertig: { reden: 'kaya', gespraech: 'n9_ende' } },
+  { id: 'k9_freitag', kap: 9, tag: 'Freitag', uhr: 14.0, titel: 'Alle Namen', ziel: 'Hof. Ben steht am Zaun.', marker: 'ben',
+    start: { teleport: 'eingangHof' },
+    leute: { ben: [-6.4, 26.4, 2.8], luca: [6, 10, Math.PI], mesenberg: [7, 10.6, Math.PI] },
+    fertig: { reden: 'ben', gespraech: 'n9_freitag' } },
 ];
 
-// ---------- Darios Rucksack (E29 Stress-Rucksack) ----------
-const DARIOS_RUCKSACK = {
-  wo: 'Haltestelle · mit Dario', titel: 'Darios Rucksack',
-  dinge: [
-    { t: 'Das Geheimnis: Ich hab @annexe.cam angefangen.', sy: '🤐', kg: 6, passt: ['teilen'], warum: '„Wenn ich’s sage, ist es raus. Nicht mehr nur bei mir.“' },
-    { t: 'Luca hat das Passwort. Ich komm nicht mehr rein.', sy: '🔑', kg: 4, passt: ['teilen'], warum: 'Das Passwort zurückholen: Das machen Erwachsene.' },
-    { t: 'Nachts guck ich jede Stunde, was gepostet wird.', sy: '📱', kg: 4, passt: ['warten', 'teilen'], warum: 'Nachts kann man nichts ändern. Das kann bis morgen warten.' },
-    { t: 'Angst, von der Schule zu fliegen.', sy: '😰', kg: 3, passt: ['teilen'], warum: 'Angst wird kleiner, wenn jemand mitträgt. Zum Beispiel Herr Kuedes.' },
-    { t: 'Mathe-Test, zweiter Versuch, am Freitag.', sy: '📐', kg: 2, passt: ['tragen'], warum: 'Das ist echt seins. Aber es ist klein, wenn der Rest leichter ist.' },
-    { t: '„Alle denken, ich bin cool. Ich muss cool bleiben.“', sy: '😎', kg: 3, passt: ['nicht'], warum: '„Cool sein ist anstrengend. Seit Monaten.“' },
-  ],
-};
-
-// ---------- Akku-Abend (E29): Ein Freund kann nicht schlafen und schreibt dir. Euer Akku – seiner UND deiner. ----------
-// Keine „richtigen“ Antworten: Wer hilft, braucht selbst Akku. Grenzen beim Helfen sind erlaubt.
+// Skills-Stunde (freiwillig): Akku-Planer
 const AKKU = {
   wo: 'Aula · Stell dir vor: ein Abend', titel: 'Euer Akku – seiner und deiner', start: 45, nacht: 20,
   stationen: [
@@ -75,67 +74,116 @@ const AKKU = {
 
 
 // ---------- Gesund-Würfel mit Ben (E29) ----------
-const WUERFEL = {
-  wo: 'Hof · Bens Pappwürfel', runden: 3,
-  aufgaben: [
-    { t: '10 Hampelmänner. Jetzt. Tippen!', sy: '🤸', art: 'tippen', n: 10, wer: F.ben, sagt: 'Neun. Zählt fast.' },
-    { t: 'Ein großes Glas Wasser. Austrinken!', sy: '💧', art: 'halten', n: 3, wer: F.noah, sagt: 'Ich hol uns zwei.' },
-    { t: 'Ohne Handy. Nichts anfassen.', sy: '📵', art: 'still', n: 5, wer: F.jo, sagt: 'Drei Minuten. Das ist Folter. … Okay, geht.' },
-    { t: 'Jemandem was Nettes sagen. In echt.', sy: '💬', art: 'wahl', optionen: ['„Ben, du machst jede Pause besser.“', '„Jo, dein Wurf vorhin war krass.“', '„Noah, danke für den Platz im Bus.“'], wer: F.ben, sagt: 'Du hast heute schöne Schuhe. Ich mein’s ernst.' },
-    { t: 'Fünf Körbe. Schnell!', sy: '🏀', art: 'tippen', n: 5, zeit: 5, wer: F.jo, sagt: 'Ich zähl mit. Drei. Respekt.' },
-    { t: 'In den Himmel gucken. Nichts anfassen.', sy: '☁️', art: 'still', n: 5, wer: F.noah, sagt: 'Die Wolke sieht aus wie Gerd.' },
+// ---------- Montag 4:12 ----------
+const DARIO412 = (m) => {
+  const st = m.selbstZuhoeren ? 'du hast gesagt, du kannst zuhören.' : m.selbstMerken ? 'du hast gesagt, du merkst dir sachen. vergiss mich nicht.'
+    : m.selbstLachen ? 'du hast gesagt, du bringst leute zum lachen. heute nicht. aber komm.' : 'du hast gesagt, du weißt noch nicht, was du kannst. ich glaub, das hier.';
+  return {
+    titel: 'Dario', mitglieder: 2, dauer: 20,
+    nachrichten: [
+      { nach: 0.6, wer: 'Dario', text: 'bist du wach' },
+      { nach: 2.4, wer: 'Dario', text: 'kannst du den ersten bus nehmen' },
+      { nach: 4.4, wer: 'Dario', text: 'bitte' },
+      { nach: 7, wer: 'Dario', text: st },
+    ],
+    aktionen: [
+      { id: 'ja', t: '„ja. ich komm.“', symbol: '✍️', setzt: 'ja', ich: 'ja. ich komm.', folgen: [{ nach: 1.5, wer: 'Dario', text: 'danke' }], ende: true },
+      { id: 'was', t: '„was ist los?“', symbol: '❓', setzt: 'was', ich: 'was ist los?', folgen: [{ nach: 2, wer: 'Dario', text: 'sag ich dir dann. bitte.' }] },
+    ],
+  };
+};
+
+// ---------- Die Klinke: Mut-Balken (Entscheidung B) ----------
+const MUT_KLINKE = {
+  wo: 'Gang vor dem SePAS', titel: 'Die Klinke', situation: 'Darios Hand liegt auf der Klinke. Sie bewegt sich nicht.', dauer: 4.5,
+  stufen: [
+    { ab: 0, optionen: [{ key: 'warten', t: '(Warten. Neben ihm.)' }] },
+    { ab: 0.4, optionen: [{ key: 'klopfen', t: '(Für ihn klopfen.)' }] },
+    { ab: 0.75, optionen: [{ key: 'vorgehen', t: '(Vorgehen. Die Tür offen lassen.)' }] },
   ],
 };
 
-export const GESPRAECHE_N9 = {
-  n9_morgen: [
-    ['erzaehler', 'Montag, 7:12. Gestern Nacht hast du geschrieben: „Haltestelle, früh.“'],
-    ['erzaehler', 'Er sitzt schon da. Kapuze auf. Augenringe bis zum Kinn.'],
-    // Jugendwelt heute: eine Serie, die nicht sterben darf – und ein KI-Chat um drei Uhr nachts.
-    ['dario', '(hält das Handy hoch) 214 Tage. Meine Serie mit Luca.'],
-    ['dario', 'Wir reden nicht mehr. Aber ich schick jeden Tag ein schwarzes Bild.'],
-    ['dario', 'Sonst ist die Flamme weg. Dann ist alles weg.'],
-    { wahl: [
-      { t: '„Was passiert, wenn die Flamme ausgeht?“', staerke: 'zuhoeren', herz: { dario: 1 }, merke: 'serieGefragt', dann: [['dario', '… Nichts. Eigentlich nichts.'], ['erzaehler', 'Er drückt nicht auf Senden. Zum ersten Mal.']] },
-      { t: '„214 Tage Bilder schicken. An einen, der nie redet?“', staerke: 'klar', herz: { dario: 1 }, merke: 'serieGefragt', dann: [['dario', 'Weiß ich. Klingt dumm, wenn du’s laut sagst.']] },
-    ] },
-    ['dario', 'Gestern Abend hab ich stundenlang mit so einer KI geschrieben.'],
-    ['dario', 'Sie war nett. Sie hat immer sofort geantwortet.'],
-    ['dario', 'Am Ende schrieb sie: „Rede mit einem Menschen, dem du vertraust.“'],
-    ['dario', 'Darum hab ich dir geschrieben.'],
-    { wahl: [
-      { t: '„Gut, dass du’s gemacht hast. Ich bin da.“', staerke: 'kontakt', herz: { dario: 2 }, merke: 'darioMensch', dann: [['dario', '(nickt. Lange.)']] },
-      { t: '„Eine KI hört zu. Aber sie geht nicht mit zu Herrn Kuedes.“', staerke: 'hilfe', herz: { dario: 1 }, merke: 'darioMensch', dann: [['dario', '… Und du?'], ['erzaehler', 'Du nickst.']] },
-    ] },
+// ---------- Donnerstag 15:40: Luca hat Angst (Hitze-Duell) ----------
+const LUCA9 = (m) => ({
+  gegner: F.luca || { name: 'Luca', farbe: '#7a6fb0' }, wo: 'Skate-Ecke · 15:40', hitze: m.k8LucaDroht ? 55 : 35, zeit: 9, publikum: 'Kenan steht daneben.',
+  runden: [
+    { sagt: 'Wenn ich falle, fallen alle. Du auch, Hinten links.', karten: [
+      { t: '„Dann fall halt.“', hitze: 20, art: 'angriff', antwort: '(lacht nicht) Pass auf.' },
+      { t: '„Ich hab nichts zu verstecken.“', hitze: -5, respekt: 1, art: 'klar', antwort: 'Jeder hat was.' },
+      { t: '(Ruhig bleiben. Hinschauen.)', hitze: -10, art: 'ruhig', antwort: '…' },
+    ], still: { antwort: 'Siehst du. Nichts mehr zu sagen.', hitze: 5 } },
+    { sagt: m.abgestimmt ? 'Du hast im September auch abgestimmt. Ich hab’s gesehen.' : 'Du hast auch zugeschaut. Jeden Tag.', karten: [
+      { t: '„Stimmt. Und?“', hitze: -10, respekt: 2, art: 'klar', antwort: '(blinzelt) …' },
+      { t: '„Halt die Klappe!“', hitze: 25, art: 'angriff', antwort: 'Na also. Da ist sie, die Wut.' },
+      { t: '„Das hat nichts mit dir zu tun.“', hitze: 0, art: 'klar', antwort: 'Alles hat mit mir zu tun.' },
+    ], still: { antwort: '(grinst schief)', hitze: 0 } },
+    { sagt: '(leiser) Die werfen mich raus. Weißt du das?', karten: [
+      { t: '„Ja. Und du bekommst jemanden zum Reden. Jeder hier.“', hitze: -15, respekt: 2, art: 'klar', antwort: '(schaut weg) … Toll.' },
+      { t: '„Verdient.“', hitze: 20, art: 'angriff', antwort: '(tritt gegen die Rampe)' },
+      { t: '(Nichts sagen. Nicht zurückschlagen.)', hitze: -10, art: 'ruhig', antwort: '…' },
+    ], still: { antwort: '…', hitze: -5 } },
   ],
-  n9_dario: [
-    ['dario', 'Danke, dass du kommst.'],
-    ['dario', 'Ich schlaf seit Wochen nicht richtig. Ich muss das loswerden.'],
-    ['dario', 'Ich hab @annexe.cam angefangen. Im Herbst. Ich.'],
-    ['dario', 'Am ersten Tag hab ich dich fotografiert. Luca hat gelacht.'],
-    ['dario', 'Ich war plötzlich wer. Also hab ich weitergemacht.'],
-    ['dario', 'Dann wollte Luca das Passwort. Ich hab’s ihm gegeben.'],
-    ['dario', 'Ab da wurden die Texte gemein. Seine Texte.'],
-    { tu: 'n9_nummer' },
+});
+
+export const GESPRAECHE_N9 = {
+  n9_nacht: [
+    { blende: 'Sonntag · 23:50' },
+    { tu: 'n9_akkuStart' },
+    ['erzaehler', 'Du liegst wach. Das Armband. Immer wieder das Armband.'],
     { wahl: [
-      { t: '„Ich weiß es schon. Der Winkel. Von links unten.“', wenn: (m) => m.spurDario || m.spurDarioAngst || m.spurSkate, staerke: 'lesen', herz: { dario: 1 }, merke: 'spurGeloest', dann: [['dario', '(starrt dich an) … Seit wann?'], ['dario', 'Und du hast es trotzdem nicht gepostet. Krass.']] },
-      { t: '(Zuhören. Nicken. Nichts sagen.)', staerke: 'zuhoeren', herz: { dario: 2 }, dann: [['dario', 'Ich hab nicht gedacht, dass du einfach zuhörst. Nach allem.']] },
-      { t: '„Und das Foto von Noah? War das auch du?“', staerke: 'mut', herz: { dario: 1 }, dann: [['dario', '(nickt) Das erste. Ja. Ohne Text. Den Text hat Luca dazugemacht.'], ['dario', 'Ich schäm mich. Jeden Tag.']] },
-      { t: '„Warum erzählst du das ausgerechnet mir?“', staerke: 'lesen', herz: { dario: 1 }, dann: [['dario', 'Weil du weißt, wie das ist. Gepostet werden.']] },
+      { t: '(Mila schreiben, was du gesehen hast.)', merke: 'k9MilaGeschrieben', dann: [
+        ['erzaehler', 'Du schreibst: „dario hat ein armband. wie auf der zeichnung.“'],
+        ['mila', '(Nachricht) Ein Armband ist ein Hinweis. Kein Beweis. Schlaf.'] ] },
+      { t: '(Liegen bleiben.)', dann: [['erzaehler', 'Die Decke ist zu warm. Dann zu kalt.'], { anzeige: 'akku', plus: -4 }] },
     ] },
-    ['dario', 'Kannst du … das für dich behalten?'],
+    { blende: 'Montag · 4:12' },
+    { anzeige: 'akku', wert: 31 },
+    { szene: 'chat', id: 'dario412', def: (m) => DARIO412(m), ausgang: (r) => (r.flags.ja ? 'ja' : 'still'), folgen: { ja: { herz: { dario: 1 } }, still: {} } },
+    { blende: 'Montag · 6:40' },
+  ],
+  // Montag 6:40 (Fable, Schlüsselszene K9) – Entscheidung A: „Sag’s keinem.“
+  n9_beichte: [
+    ['erzaehler', 'Montag. 6:40. Das Licht ist noch gelb. Die Bank ist trocken.'],
+    ['erzaehler', 'Dario sitzt da. T-Shirt. Das Armband am linken Handgelenk.'],
+    ['dario', 'Du bist gekommen.'],
     { wahl: [
-      { t: '„Für mich behalten, nein. Aber ich geh mit dir zu Herrn Kuedes.“', staerke: 'hilfe', herz: { dario: 2, kaya: 1 }, merke: 'darioBegleiten', dann: [['dario', '… Zusammen? Okay. Morgen. Bevor ich es mir anders überlege.']] },
-      { t: '„Versprochen. Ich sag nichts.“', merke: 'darioVersprochen', dann: [['dario', '(atmet aus) Danke.'], ['erzaehler', 'Du fühlst es sofort: Jetzt trägst du es mit. Allein.']] },
-      { t: '„Das ist zu groß für uns zwei. Wir brauchen einen Erwachsenen.“', staerke: 'hilfe', herz: { dario: 1, kaya: 1 }, merke: 'darioBegleiten', dann: [['dario', 'Herr Kuedes? … Der ist okay. Kommst du mit?']] },
+      { t: '„Du hast ‚bitte‘ geschrieben.“', dann: [] },
+      { t: '„Ich hab das Armband gesehen.“', dann: [] },
+      { t: '(Dich setzen.)', staerke: 'warten', dann: [] },
     ] },
-    ['dario', 'Ich hab so viel im Kopf. Ich weiß nicht mal, was.'],
-    { szene: 'rucksack', id: 'darioRucksack', def: DARIOS_RUCKSACK, ausgang: (r) => (r.geteilt >= 2 ? 'leichter' : 'schwer'),
-      folgen: {
-        leichter: { staerke: 'lesen', herz: { dario: 2 }, merke: 'rucksackLeichter', dann: [['dario', 'Wenn man es so sortiert … ist es weniger. Komisch.']] },
-        schwer: { herz: { dario: 1 }, dann: [['dario', 'Immer noch schwer. Aber jetzt weiß ich, was drin ist.']] },
-      } },
-    { tu: 'n9_hilfe' },
+    ['dario', 'Ich hab das Foto gemacht. Deins. Am ersten Tag.'],
+    ['dario', 'Alle Fotos. Bis Dezember.'],
+    ['erzaehler', 'Er legt das Handy auf die Bank. Display nach unten.'],
+    ['erzaehler', 'Das Glas hat einen Sprung. Unten links.'],
+    { tu: 'n9_sprung' },
+    { wahl: [
+      { t: '„Warum ich?“', dann: [] },
+      { t: '„Warum sagst du es jetzt?“', dann: [] },
+      { t: '(Nichts sagen.)', staerke: 'zuhoeren', dann: [] },
+    ] },
+    ['dario', 'Du warst neu. Dich kannte keiner. Das war einfach.'],
+    ['dario', 'Zweihundert Likes. Ich hatte noch nie zweihundert von irgendwas.'],
+    ['dario', 'Dann wollte Luca das Passwort. Nur mal gucken.'],
+    ['dario', 'Der Fake. Das Video. Das war ich nicht.'],
+    ['dario', 'Aber es ist mein Account.'],
+    ['dario', 'Ich schlaf nicht mehr. Seit dem Foto von Noah.'],
+    ['dario', 'Ich hab jeden Morgen neben dir gesessen.'],
+    ['dario', 'Das ist das Schlimmste, oder?'],
+    ['erzaehler', 'Eine Amsel. Sonst nichts. Kein Auto, kein Bus.'],
+    { tu: 'n9_datei' },
+    ['dario', 'Sag’s keinem. Bitte.'],
+    { fest: true, wahl: [
+      { t: '„Ich sag nichts.“', herz: { dario: 1 }, merke: 'k9Versprochen', dann: [['erzaehler', 'Dario atmet aus. Lange.'], ['erzaehler', 'Jetzt trägst du es.'], { anzeige: 'akku', plus: -6 }] },
+      { t: '„Das kann ich nicht versprechen.“', staerke: 'klar', merke: 'k9NichtVersprochen', dann: [['erzaehler', 'Dario steht auf. Er läuft weg. Das Brett unter dem Arm.']] },
+      { t: '„Komm mit zu Herrn Kuedes.“', staerke: 'hilfe', herz: { dario: 1 }, merke: 'k9Mitkommen', dann: [['dario', 'Jetzt?'], ['du', 'Morgen. Ich geh mit.'], ['dario', '… Erste Pause. Wenn du wirklich mitkommst.']] },
+      { t: '(Aufstehen und gehen.)', merke: 'k9Gegangen', dann: [['erzaehler', 'Du gehst. Er sitzt allein auf der Bank, bis der Bus kommt.']] },
+    ] },
+    ['erzaehler', 'Gerd landet auf dem Mülleimer. Opa Nik ist noch nicht da.'],
+    { blende: 'Montag · 7:25' },
+    ['erzaehler', 'Der normale Bus. Opa Nik setzt sich zwischen euch und die anderen.'],
+    { tu: 'n9_nik' },
+    ['erzaehler', 'Lina geht vorbei. Sie bleibt kurz stehen. Dann geht sie weiter.'],
+    { tu: 'n9_mittag' },
   ],
   n9_skills: [
     ['erzaehler', 'Aula. Herr Mesenberg stellt einen Rucksack auf den Boden. Er klingt nach Steinen.'],
@@ -150,38 +198,77 @@ export const GESPRAECHE_N9 = {
         leer: { merke: 'akkuLeer', dann: [['jo', 'Ich bin bei 12 Prozent. Vom Zuhören allein.'], ['kaya', 'Wer anderen hilft, darf auch an sich denken. Das ist kein Egoismus.']] },
       } },
   ],
-  n9_kuedes: [
-    { tu: 'n9_kuedesStart' },
-    ['kaya', 'Kommt rein. Setzt euch. Wer will anfangen?'],
-    ['erzaehler', 'Dario öffnet den Mund. Nichts kommt raus. Er guckt dich an.'],
-    { wahl: [
-      { t: '„Soll ich anfangen? Du sagst stopp, wenn’s falsch ist.“', staerke: 'einbeziehen', herz: { dario: 2 }, dann: [
-        ['du', 'Dario hat den Account angefangen. Und Luca hat ihn übernommen.'],
-        ['dario', '(leise) … Stimmt. Alles. Und ich will, dass es aufhört.'] ] },
-      { t: '(Hand auf die Lehne neben ihm. Warten.)', staerke: 'warten', herz: { dario: 2 }, dann: [
-        ['dario', '(nach einer langen Minute) Ich bin @annexe.cam. Also … ich war es.'] ] },
-    ] },
-    ['kaya', 'Okay. Gut, dass ihr zu zweit seid.'],
-    ['kaya', 'Das ist ernst. Aber du bist nicht allein damit.'],
-    ['kaya', 'Ich rede mit der Direktion. Und mit deinen Eltern. Mit dir zusammen.'],
-    ['dario', 'Und Luca?'],
-    ['kaya', 'Um Luca kümmern sich auch Erwachsene. Nicht ihr.'],
-    ['kaya', 'Und heute Nacht: Handy aus. Ich bin morgen um acht da.'],
-    { tu: 'n9_kuedesEnde' },
+  // Die Klinke – Entscheidung B. Danach: Herr Kuedes übernimmt. Mitgehen, nicht abgeben.
+  n9_klinke: [
+    { tu: 'n9_klinkeStart' },
+    ['erzaehler', 'Darios Hand liegt auf der Klinke.'],
+    ['dario', 'Ich kann da nicht rein.'],
+    { szene: 'atem', id: 'atemDario', def: { wo: 'Gang vor dem SePAS', wer: F.dario || { name: 'Dario', farbe: '#d9693f' }, info: 'Darios Atem ist kurz. Atme ruhig vor. Er macht mit.', start: 85, ziel: 45,
+      saetze: { 85: '(die Hand zittert auf der Klinke)', 65: 'Okay. Okay.', 50: '(atmet aus. Lang.)' } }, ausgang: () => 'standard', folgen: { standard: {} } },
+    { szene: 'mut', id: 'mutKlinke', def: MUT_KLINKE, ausgang: (r) => r.key,
+      folgen: {
+        klopfen: { merke: 'k9Geklopft', dann: [['erzaehler', 'Du klopfst. Dario zuckt zusammen.'], ['kaya', 'Herein.']] },
+        warten: { staerke: 'warten', merke: 'k9Gewartet', dann: [['erzaehler', 'Ihr wartet. Lange. Die Stunde bei Mme Nouvelle fängt ohne euch an.'], ['erzaehler', 'Dann klopft er. Selbst.']] },
+        vorgehen: { staerke: 'mut', merke: 'k9Vorgegangen', dann: [['erzaehler', 'Du gehst rein. Die Tür bleibt offen.'], ['erzaehler', 'Nach einer Minute steht Dario neben dir.']] },
+      } },
+    ['kaya', 'Bevor du weiterredest: Das kann ich nicht für mich behalten.'],
+    { tu: 'n9_erzaehlt' },
+    ['kaya', 'Hier. 116 111. Kanner- a Jugendtelefon. Zum Reden. Ohne Namen.'],
+    ['kaya', 'Und wie die Klasse es erfährt, entscheidest du mit.'],
+    ['dario', 'Ich will es selber sagen.'],
+    { tu: 'n9_nachKlinke' },
+    { anzeige: 'akku', wert: 55 },
+    ['kaya', '(zu dir) Herr Mesenberg redet mit Luca. Auch er bekommt jemanden.'],
+    { tu: 'n9_kenan' },
   ],
-  n9_ben: [
-    ['ben', 'Gesund-Würfel. Selbst gebaut. Jede Seite eine Aufgabe.'],
-    ['jo', 'Er hat drei Tage dran gebastelt. Statt Hausaufgaben.'],
-    ['ben', 'Das war auch Bewegung. Für die Finger. Würfel!'],
-    { szene: 'wuerfel', id: 'wuerfel', def: WUERFEL, ausgang: () => 'ok', folgen: { ok: { herz: { ben: 1, jo: 1, noah: 1 }, merke: 'wuerfelGespielt' } } },
-    ['noah', 'Das war … schön. Einfach so. Ohne Grund.'],
-    ['erzaehler', 'Dario kommt über den Hof. Allein. Er bleibt stehen.'],
-    ['jo', '(leise) Was will der hier?'],
+  n9_tragen: [
+    { anzeige: 'akku', wert: 25 },
+    ['erzaehler', 'Dienstag. Kantine. Du hast kaum geschlafen. Das Essen schmeckt nach nichts.'],
+    ['noah', 'Du isst nichts. Alles okay?'],
+    ['du', 'Lass mich einfach!'],
+    ['erzaehler', 'Zu laut. Noah zieht den Kopf ein. Am Nebentisch schauen zwei her.'],
     { wahl: [
-      { t: '„Dario. Würfelst du mit?“', staerke: 'einbeziehen', herz: { dario: 1, jo: -1 }, merke: 'darioWuerfel', dann: [['dario', 'Echt? … Eine Runde.'], ['jo', '(schaut weg) Eine. Dann sehen wir.']] },
-      { t: '(Weiterspielen.)', dann: [['erzaehler', 'Dario schaut kurz zu. Dann geht er.']] },
+      { t: '(Dich entschuldigen.)', herz: { noah: 1 }, dann: [['du', 'Sorry. Das war nicht wegen dir.'], ['noah', 'Weiß ich. Wegen wem dann?'], ['erzaehler', 'Du sagst nichts. Du hast es versprochen.']] },
+      { t: '(Nichts sagen.)', herz: { noah: -1 }, merke: 'k9NoahAngefahren', dann: [['erzaehler', 'Noah isst schweigend weiter. Er setzt sich morgen trotzdem wieder hin. Glaubst du.']] },
     ] },
-    { tu: 'n9_cliff' },
+    { blende: 'Mittwoch' },
+    { anzeige: 'akku', wert: 20 },
+    ['mila', 'Du lügst schlecht.'],
+    ['mila', 'Du weißt was. Seit Montag.'],
+    { wahl: [
+      { t: '„Ich hab es versprochen.“', dann: [['mila', 'Versprechen, die einen kaputtmachen, darf man brechen. Steht nirgends. Stimmt trotzdem.']] },
+      { t: '(Schweigen.)', dann: [['mila', 'Okay. Ich frag nicht mehr. Aber ich seh es.']] },
+    ] },
+    ['erzaehler', 'Dario fehlt heute in der Schule.'],
+  ],
+  n9_luca: [
+    { tu: 'n9_lucaStart' },
+    ['luca', '(ruhig) Lowkey mutig von ihm.'],
+    ['luca', 'Weißt du, was in dem Account alles drin ist? Wer was geschickt hat. Wer abgestimmt hat.'],
+    ['erzaehler', 'Kenan steht neben ihm.'],
+    { szene: 'hitze', id: 'luca9', def: (m) => LUCA9(m), ausgang: (r) => (r.knall ? 'knall' : r.hitze <= 40 ? 'ruhig' : 'heiss'),
+      folgen: {
+        ruhig: { staerke: 'ruhig', merke: 'k9LucaRuhig' },
+        heiss: { merke: 'k9LucaHeiss' },
+        knall: { merke: 'k9LucaKnall', dann: [['mesenberg', '(von der Tür) Luca. Mitkommen. Jetzt.']] },
+      } },
+    ['erzaehler', 'Luca hat Angst. Man sieht es an seinen Händen.'],
+    ['kenan', 'Ich bin raus.'],
+    ['erzaehler', 'Er steht nicht mehr neben ihm.'],
+  ],
+  n9_freitag: [
+    ['erzaehler', 'Freitag. 14:00. Luca geht mit Herrn Mesenberg über den Hof. Zur Direktion.'],
+    ['erzaehler', 'Keiner filmt. Zum ersten Mal.'],
+    ['ben', 'Was passiert jetzt mit ihm?'],
+    { wahl: [
+      { t: '„Weiß ich nicht. Das machen jetzt die Erwachsenen.“', dann: [['ben', 'Komisch. Das fühlt sich gut an. Und blöd.']] },
+      { t: '(Zuschauen.)', dann: [] },
+    ] },
+    { blende: 'Freitag · 21:00' },
+    ['erzaehler', '@annexe.cam postet eine schwarze Kachel. Weiße Schrift.'],
+    ['erzaehler', '„sommerfest. freitag. 15:00. alle namen.“'],
+    ['jo', '(Nachricht) ich bin tot'],
+    { tu: 'kapitelEnde' },
   ],
   n9_ende: [
     // Gesund-Plan als Wenn-dann-Plan (Umsetzungs-Absicht) mit Hindernis – und in Kap. 10 fragt jemand nach, ob er gehalten hat.
@@ -206,31 +293,33 @@ export const GESPRAECHE_N9 = {
 };
 
 export const tunN9 = (c) => ({
-  n9_nummer: () => (c.S.merke.spurNummer ? [['dario', 'Die Nachricht mit der 77. „Ich seh alles.“ Auch ich.']] : []),
-  n9_hilfe: () => (c.S.merke.darioVersprochen ? [['erzaehler', 'Abends kannst du nicht schlafen. Das Geheimnis ist jetzt auch in deinem Rucksack.'],
-    { wahl: [
-      { t: '(Dario schreiben: „Zu schwer für mich allein. Gehen wir zu Herrn Kuedes?“)', staerke: 'hilfe', herz: { dario: 1 }, merke: 'darioBegleiten', dann: [['dario', '(Nachricht) … ok. du hast recht. morgen. zusammen.']] },
-      { t: '(Es weiter tragen.)', merke: 'geheimnisGetragen', dann: [['erzaehler', 'Am Dienstag steht Dario trotzdem vor der Aula. Er hat sich allein entschieden.']] },
-    ] }] : []),
-  n9_kuedesStart: () => (c.S.merke.darioBegleiten ? [['dario', 'Du bist gekommen. Okay. Okay. Wir gehen rein.']] : [['dario', 'Ich hab gewartet. Ich dachte, vielleicht kommst du.']]),
-  n9_kuedesEnde: () => [
-    ...(c.S.merke.geheimnisGetragen ? [['kaya', '(zu dir, leise) So was trägt man nicht allein. Du auch nicht.']] : []),
-    ['erzaehler', 'Draußen setzt sich Dario auf die Treppe. Er zittert. Dann lacht er. Kurz.'],
-    ['dario', 'Ich glaub, heute Nacht schlaf ich.'],
-  ],
+  n9_akkuStart: () => {
+    c.anzeige('akku', 38);
+    if (!c.S.merke.akkuGezeigt) { c.S.merke.akkuGezeigt = true; c.ui.toast('<b>Dein Akku · 38 %</b><span>Links. Er bleibt die ganze Woche da.</span>'); }
+    return [];
+  },
+  n9_sprung: () => { c.S.merke.spurSprung = true; c.ui.toast('<b>🔎 Der Kratzer</b><span>Unten links. Auf jedem Foto bis Dezember.</span>', 'ly-t-ent'); return []; },
+  n9_datei: () => (c.S.merke.k6Datei ? [['dario', 'Die Sprachnachricht im Januar. Das war das Einzige, was ich mich getraut hab.']] : []),
+  n9_nik: () => (c.S.merke.k9Gegangen ? [['nik', '(zu Dario) Du siehst aus wie nach einer Nachtschicht, Bub.']] : [['nik', 'Ihr zwei seht aus wie nach einer Nachtschicht.']]),
+  n9_mittag: () => ((c.S.merke.k9NichtVersprochen || c.S.merke.k9Gegangen) ? [
+    { blende: 'Montag · 12:10' },
+    ['dario', '(Nachricht) kommst du mit?'],
+    ['dario', '(Nachricht) morgen. 9:50. sepas.'],
+  ] : []),
+  n9_klinkeStart: () => {
+    const m = c.S.merke;
+    if (m.k9Versprochen) return [['erzaehler', 'Donnerstag. Drei Tage hast du es getragen.'], ['dario', '(schaut dich an) Du siehst aus wie ich.'], ['erzaehler', 'Er ist von selbst gekommen.'], ['erzaehler', 'Mila weiß inzwischen, dass du es seit Montag wusstest.']];
+    if (m.k9Mitkommen) return [['erzaehler', 'Dienstag. 9:50. Erste Pause.'], ['dario', 'Du bist da.']];
+    return [['erzaehler', 'Dienstag. 9:50.'], ['dario', 'Du hast nichts versprochen. Deshalb bist du hier, oder?']];
+  },
+  n9_erzaehlt: () => (c.S.merke.k9Geklopft ? [['erzaehler', 'Dario nickt. Er sagt wenig. Leise.']] : [['erzaehler', 'Dario nickt. Und erzählt. Alles. Vom ersten Tag an.']]),
+  n9_nachKlinke: () => (c.S.merke.k9Geklopft ? [['dario', '(draußen, zu dir) Ich wollte selber.']] : c.S.merke.k9Vorgegangen ? [['dario', '(draußen) Du hast die Tür offen gelassen. Das war gut.']] : []),
+  n9_kenan: () => (c.S.merke.k8KenanDrin ? [['erzaehler', 'Kenan wurde befragt. Er geht dir aus dem Weg.'], ['kenan', '(im Vorbeigehen) Ich war’s nicht. Aber ich weiß, wer da stand.']]
+    : [{ blende: 'Mittwoch' }, ['kenan', '(an der Treppe, leise) Ich war’s nicht. Aber ich weiß, wer da stand.']]),
+  n9_lucaStart: () => (c.S.merke.k8LucaDroht || c.S.merke.k8LucaDrin ? [['erzaehler', 'Seit Mittwoch weiß die halbe Schule, dass Lucas Name in einer Mappe steht. Er weiß es auch.']] : []),
   n9_schluss: () => [
     { szene: 'stempel', def: { modul: 'Modul 8 · Gesund und stark', titel: 'Akku geladen',
       gelernt: ['Ein Stress-Rucksack: tragen, warten, teilen, ablegen', 'Schlaf, Bewegung, Essen und Pausen laden den Akku', 'Macht ein Geheimnis Angst oder schadet es? Dann darfst du es sagen.', 'Kleine Schritte zählen – auch zehn Hampelmänner', 'Hilfe holen: Herr Kuedes, 116 111'],
       mission: 'Dein Gesund-Plan: ein Schritt. Eine Woche. Und einmal den Akku fragen, bevor er leer ist.' }, folgen: {} },
-  ],
-  // Kapitelende (Hauptweg): Herr Kuedes' Zettel zum Sommerfest
-  n9_cliff: () => [
-    { blende: 'Donnerstag · 8:10' },
-    ['erzaehler', 'Herr Kuedes gibt dir einen Zettel. Nur dir.'],
-    ['kaya', '(Zettel) Freitag ist Sommerfest.'],
-    ['kaya', 'Dario will sich entschuldigen. Noah und Mila sind einverstanden.'],
-    ['kaya', 'Vor dem Fest, nur die Klasse. Wer nicht will, muss nicht.'],
-    ['kaya', 'Und du? Sag mir in der Pause, wenn du nicht willst.'],
-    { tu: 'kapitelEnde' },
   ],
 });

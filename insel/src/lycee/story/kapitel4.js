@@ -1,7 +1,8 @@
-// Drei Jahre Annexe – 7ème, Kapitel 4 „Gefühle regulieren“ (Kurs Jahr 1, Modul 3: E11 Anspannungsskala und Zonen,
-// E12 Körper und Atem, E13 Sinne, E14 Kopf-Skills, E15 Skills-Koffer und Notfallkarte).
-// Faden @annexe.cam: Ein Foto aus dem Mathe-Test, gepostet um 8:34 – alle Handys der 7P2 lagen in der Handy-Kiste.
-// Neue Spur: Wer war um 8:34 im Flur? Dario (rausgeflogen) – und Luca. Am Ende: ein gefälschter Screenshot macht DICH zum Admin.
+// Storyline 7e „@annexe.cam“ (nach der Storyline von Fable) – Kapitel 4 „8:34“, Dezember, letzte Woche vor den Ferien.
+// Verdecktes Thema: Gefühle regulieren. Anspannung hat eine Zahl (Anzeige links, die ganze Woche), und sie steigt nicht nur bei Noah.
+// Bei „Rot“ wird der Kopf eng und die Zeit knapp. Länger ausatmen macht nichts gut – es gibt einem drei Sekunden zurück.
+// Das Spiel sagt das nie. Wer am Mittwoch geatmet hat, bekommt am Freitag drei Sekunden, in denen die Uhr steht.
+// Spuren: 8:31 Kenan mit gelbem Zettel am Türglas; Post 8:34 von hinten links, grüner Fleck am Rand (Notausgang-Schild).
 import { S4_REGULIEREN } from './skills-j1.js';
 const pult = (r, c, s) => [-24.25 + r * 2.1, -27.2 + c * 3.4 + s * 0.62, -Math.PI / 2, 'sitzt'];
 const KLASSE = { ayla: pult(0, 0, -1), ben: pult(1, 2, 1), chiara: pult(2, 1, -1), yusuf: pult(1, 0, 1), jo: pult(3, 2, -1), lina: pult(3, 0, 1), noah: pult(0, 1, 1), mila: pult(2, 2, 1) };
@@ -10,90 +11,41 @@ const AULA = { noah: [-16.18, -64.48, 1.00], mila: [-12.82, -64.48, -1.00], ben:
 const F = { noah: { id: 'noah', name: 'Noah', farbe: '#3f78b8' }, mila: { id: 'mila', name: 'Mila', farbe: '#2fb8a8' }, ben: { id: 'ben', name: 'Ben', farbe: '#d9a21b' }, jo: { id: 'jo', name: 'Jo', farbe: '#c0392b' },
   lina: { id: 'lina', name: 'Lina', farbe: '#9b7bc8' }, ayla: { id: 'ayla', name: 'Ayla', farbe: '#e85d75' }, dario: { id: 'dario', name: 'Dario', farbe: '#d9693f' } };
 
+
 export const SCHRITTE_N4 = [
-  { id: 'k4_bus', kap: 4, tag: 'Montag', uhr: 7.52, titel: 'Montagmorgen', ziel: 'Noah steht noch an der Haltestelle.', marker: 'noah',
-    start: { teleport: 'busAnkunft', gespraech: 'n4_bus' },
-    leute: { noah: [-20.5, 42.3, -1.9] },
-    fertig: { reden: 'noah', gespraech: 'n4_noah' } },
+  { id: 'k4_morgen', kap: 4, tag: 'Montag', uhr: 7.42, titel: 'Mathe', ziel: 'Noah steht am Tor. Grau im Gesicht.', marker: 'noah',
+    start: { teleport: 'busAnkunft', gespraech: 'n4_haltestelle' },
+    leute: { dario: [-21.5, 41.6, -1.6, 'sitzt'], noah: [1.4, 36.6, 0.3], fahrer: [-11.2, 44.6, -Math.PI / 2] },
+    fertig: { reden: 'noah', gespraech: 'n4_tor' } },
+  { id: 'k4_test', kap: 4, tag: 'Montag', uhr: 8.0, titel: 'Die Kiste', ziel: 'Saal 1.04. Mme Lenning sammelt die Handys ein.', marker: 'lenning',
+    start: { teleport: 'saal104Tuer' },
+    leute: { lenning: [-27, -24, Math.PI / 2], ...KLASSE },
+    fertig: { reden: 'lenning', gespraech: 'n4_test' } },
+  { id: 'k4_treppe', kap: 4, tag: 'Montag', uhr: 8.92, titel: '8:34', ziel: 'Noah ist weg. Die gesperrte Treppe in der Halle.', marker: 'noah',
+    start: { teleport: 'saal104Tuer', gespraech: 'n4_post' },
+    leute: { noah: [6.4, -3.5, 0, 'sitzt'], yusuf: [3.4, -1.2, -2.2] },
+    fertig: { reden: 'noah', gespraech: 'n4_treppe' } },
   { id: 'k4_skills', kap: 4, tag: 'Montag', uhr: 9.9, neben: 'skills', titel: 'Skills: Deckel weg', ziel: 'Aula. Auf dem Boden klebt eine Linie von 0 bis 100.', marker: 'kaya',
     start: { teleport: 'eingangHof' },
     leute: { kaya: [-14.50, -65.40, 0.00], mesenberg: [-13.54, -65.16, -0.50], ...AULA },
     fertig: { reden: 'kaya', gespraech: 'n4_skills' } },
-  { id: 'k4_test', kap: 4, tag: 'Dienstag', uhr: 8.05, titel: 'Der Test', ziel: 'Saal 1.04. Mme Lenning hat eine Kiste dabei.', marker: 'lenning',
-    start: { teleport: 'saal104Tuer', gespraech: 'n4_morgen' },
-    leute: { lenning: [-27, -24, Math.PI / 2], ...KLASSE },
-    fertig: { reden: 'lenning', gespraech: 'n4_test' } },
-  { id: 'k4_noah', kap: 4, tag: 'Dienstag', uhr: 9.75, titel: 'Rot', ziel: 'Noah ist nach dem Test verschwunden. Hinten am Hof, auf der Bank.', marker: 'noah',
+  { id: 'k4_sitzplan', kap: 4, tag: 'Dienstag', uhr: 10.0, titel: 'Hinten links', ziel: 'Hof. Chiara hat einen Sitzplan gezeichnet.', marker: 'chiara',
     start: { teleport: 'eingangHof' },
-    leute: { noah: [-20, 11.6, Math.PI, 'sitzt'], mila: [-14, 13.6, -2.4], ben: [-13, 12.6, 2.6] },
-    fertig: { reden: 'noah', gespraech: 'n4_noahRot' } },
-  { id: 'k4_dario', kap: 4, tag: 'Mittwoch', uhr: 12.4, titel: 'Wer war im Flur?', ziel: 'Kenan steht an der Skate-Ecke. Er will dir was sagen.', marker: 'kenan',
-    start: { teleport: 'eingangHof' },
-    leute: { kenan: [-34, 9, 1], dario: [-33.4, 12, 1.2, 'redet'], luca: [-36.4, 11.6, 1.9, 'redet'], mila: [-20, 11.6, Math.PI, 'sitzt'] },
-    fertig: { reden: 'kenan', gespraech: 'n4_dario' } },
-  { id: 'k4_ernstfall', kap: 4, tag: 'Freitag', uhr: 8.0, titel: 'Ernstfall', ziel: 'Gang vor Saal 1.04. Mila steht da und bewegt sich nicht.', marker: 'mila',
-    start: { teleport: 'saal104Tuer', gespraech: 'n4_durchsage' },
-    leute: { mila: [-19.4, -14.6, -2.2] },
-    fertig: { reden: 'mila', gespraech: 'n4_ernstfall' } },
+    leute: { chiara: [2.2, 15.6, 2.8, 'redet'], jo: [3.6, 16.8, -2.6], ben: [0.8, 17.4, 2.2], mila: [-1.4, 15.2, 1.4], ayla: [4.6, 14.8, -2.2] },
+    fertig: { reden: 'chiara', gespraech: 'n4_sitzplan' } },
+  { id: 'k4_kantine', kap: 4, tag: 'Mittwoch', uhr: 12.17, titel: 'Rot', ziel: 'Kantine. Ben und Jo sitzen schon an eurem Tisch.', marker: 'ben',
+    start: { teleport: 'kantineTuer' },
+    leute: { ben: [16.65, -11.1, Math.PI / 2, 'sitzt'], jo: [16.65, -10.1, Math.PI / 2, 'sitzt'], yusuf: [10.75, -10.1, Math.PI / 2, 'sitzt'], noah: [10.75, -11.1, Math.PI / 2, 'sitzt'], kremer: [26.8, -9, -Math.PI / 2] },
+    fertig: { reden: 'ben', gespraech: 'n4_kantine' } },
   { id: 'k4_ende', kap: 4, tag: 'Freitag', uhr: 10.0, neben: 'skills', titel: 'Skills: Notfallkarte', ziel: 'Letzte Skills-Stunde der Woche. Aula.', marker: 'kaya',
     start: { teleport: 'eingangHof' },
     leute: { kaya: [-14.50, -65.40, 0.00], ...AULA },
     fertig: { reden: 'kaya', gespraech: 'n4_ende' } },
+  { id: 'k4_ferien', kap: 4, tag: 'Freitag', uhr: 12.0, titel: 'Sechzig Sekunden', ziel: 'Letzte Stunde vor den Ferien. Saal 1.04.', marker: 'hoffmann',
+    start: { teleport: 'saal104Tuer' },
+    leute: { hoffmann: [-27, -24, Math.PI / 2], ...KLASSE },
+    fertig: { reden: 'hoffmann', gespraech: 'n4_ferien' } },
 ];
-
-// ---------- Anspannungs-Leiter: ein Montagmorgen, der schlimmer wird (E11) ----------
-const MORGEN = {
-  wo: 'Haltestelle · Montag', titel: 'Deine Zahl von 0 bis 100', start: 15, zeit: 10,
-  ereignisse: [
-    { t: '7:31. Der Bus fährt los. Du bist zehn Meter zu spät.', plus: 25, karten: [
-      { t: '(Lang ausatmen. Der nächste kommt in 12 Minuten.)', typ: 'koerper', wirkung: -15, antwort: 'Die Schultern gehen ein Stück runter.' },
-      { t: '(Dem Bus hinterherschreien.)', typ: 'gegen', wirkung: 8, antwort: 'Eine Frau mit Hund guckt dich an. Der Bus fährt trotzdem.' },
-      { t: '(Kopfhörer rein. Lieblingssong.)', typ: 'sinne', wirkung: -12, antwort: 'Bass. Schon besser.' },
-    ] },
-    { t: 'Handy: 3 % Akku.', plus: 12, karten: [
-      { t: '„Ist nur ein Handy.“ (Sparmodus an.)', typ: 'kopf', wirkung: -10 },
-      { t: '(Panisch alle Apps zumachen. Nochmal. Nochmal.)', typ: 'gegen', wirkung: 6, antwort: 'Jetzt 2 %.' },
-      { t: '(Füße fest auf den Boden drücken. Zehn Sekunden.)', typ: 'koerper', wirkung: -10 },
-    ] },
-    { t: 'Jo schreibt: „test morgen 💀 lenning sagt der wird brutal. viel glück lol“', plus: 22, karten: [
-      { t: 'Zurückschreiben: „halt die klappe jo“', typ: 'gegen', wirkung: 10, antwort: 'Jo: „???? chill 😭 war nur info“' },
-      { t: '(Handy weg. 5 Dinge sehen, 4 hören, 3 spüren …)', typ: 'sinne', wirkung: -18, antwort: 'Ein Kran. Eine Taube auf dem Dach. Regen auf dem Wartehäuschen.' },
-      { t: '„Das ist morgen. Jetzt ist jetzt.“', typ: 'kopf', wirkung: -14 },
-    ] },
-    { t: '7:44. Regen. Kein Schirm. Der nächste Bus ist voll.', plus: 24, karten: [
-      { t: '(Zügig zur nächsten Haltestelle gehen. Arme schwingen.)', typ: 'koerper', wirkung: -14, antwort: 'Erst klopft das Herz. Dann wird es ruhiger.' },
-      { t: '„Nass ist nur nass. Ich komm an.“', typ: 'kopf', wirkung: -12 },
-      { t: '(Noah schreiben. Vielleicht wartet er auch.)', typ: 'menschen', wirkung: -16, antwort: 'Noah: „Dreh dich um. Ich steh hinter dir. Auch zu spät.“' },
-    ] },
-  ],
-};
-
-// ---------- Ernstfall (Freitag): Raumwechsel ohne Ansage – genau Milas 85 aus der Zonen-Wette ----------
-// Die Karten kommen aus DEINER Notfallkarte (Koffer, Dienstag). Bei Rot kommt der Kopf kaum an; Körper und Sinne wirken.
-const KARTE = {
-  atem: ['(Mit Mila atmen: 4 ein, 6 aus.)', 'koerper'], faust: ['(„Mach Fäuste. Ganz fest. Und los.“)', 'koerper'], fuesse: ['(„Drück die Füße in den Boden. Spürst du ihn?“)', 'koerper'],
-  kalt: ['(Ihr deine kalte Wasserflasche geben.)', 'koerper'], sinne54321: ['(„Nenn mir 5 Dinge, die du siehst.“)', 'sinne'], duft: ['(„Riech mal an deinem Ärmel. Waschmittel.“)', 'sinne'],
-  musik: ['(Ihr einen Kopfhörer geben. Leise Musik.)', 'sinne'], schiff: ['(„Lass den Gedanken wegfahren wie ein Schiff.“)', 'kopf'], satz: ['(„Eins nach dem anderen.“)', 'kopf'],
-  ort: ['(„Denk an deinen sicheren Ort.“)', 'kopf'], freund: ['(„Ich bin da. Ich bleib hier.“)', 'menschen'], kuedes: ['(„Soll ich Herrn Kuedes holen?“)', 'menschen'],
-  blick: ['(Ruhig neben ihr stehen. Kurz in die Augen schauen.)', 'menschen'], korb: ['(„Nachher werfen wir Körbe. Versprochen.“)', 'kopf'], zeichnen: ['(„Zeichne mit dem Finger einen Kreis in die Hand.“)', 'sinne'],
-};
-const ERNSTFALL = (m, S = {}) => {
-  const eigene = (((S.sz || {}).koffer || {}).notfall || []).filter((id) => KARTE[id]);
-  const liste = eigene.length ? eigene : ['satz', 'freund', 'atem'];
-  // Wirkung je nach Lage: oben im Rot fast nur Körper/Sinne/Menschen, später geht auch der Kopf
-  const karten = (rot) => liste.slice(0, 3).map((id) => { const [t, typ] = KARTE[id];
-    const w = typ === 'kopf' ? (rot ? -3 : -12) : typ === 'menschen' ? -14 : -16;
-    return { t, typ, wirkung: w, antwort: typ === 'kopf' && rot ? 'Mila schüttelt den Kopf. Bei Rot kommen Worte kaum an.' : undefined }; });
-  const mehr = eigene.length ? [] : [{ t: '(Einfach neben ihr stehen bleiben.)', typ: 'menschen', wirkung: -8 }];
-  return {
-    wo: 'Gang · Freitag, 8:00', titel: 'Milas Zahl von 0 bis 100', start: 55, zeit: 12,
-    ereignisse: [
-      { t: 'Durchsage: „7P2 – heute Saal 2.11. Sofort.“ Mila bleibt stehen.', plus: 30, karten: karten(true).concat(mehr) },
-      { t: 'Alle laufen an euch vorbei. Jemand rempelt Mila an. „Sorry!“', plus: 12, karten: karten(true).concat(mehr) },
-      { t: 'Mila, leise: „Wo ist 2.11? Ich weiß gar nichts mehr.“', plus: 8, karten: karten(false).concat([{ t: '(„Zweiter Stock. Komm, ich geh mit.“)', typ: 'menschen', wirkung: -18, antwort: 'Mila nickt. Ganz klein.' }]) },
-    ],
-  };
-};
 
 // ---------- Zonen-Wette (E11): gleicher Satz, ganz andere Zahlen ----------
 const ZONEN = {
@@ -127,98 +79,165 @@ const IM_TEST = {
   schiff: { t: 'Gedanken-Schiffchen', sy: '⛵', wirkung: 16, wie: 'Der Gedanke steigt aufs Schiff. Es fährt weg.' }, satz: { t: 'Eins nach dem anderen', sy: '💬', wirkung: 18, wie: 'Nur die nächste Aufgabe. Nur die.' },
   ort: { t: 'Sicherer Ort', sy: '🏝️', wirkung: 14, wie: 'Kurz die Augen zu. Dein Ort.' }, blick: { t: 'Kurzer Blick zu Noah', sy: '🙂', wirkung: 12, wie: 'Noah macht Daumen hoch. Unterm Tisch.' },
 };
+// Mathe-Test am Montag: Anspannung als Zahl. Skills aus dem Koffer – oder, ohne Skills-Stunde, das, was dir einfällt.
 const TEST = (m, S) => {
   const k = ((S.sz || {}).koffer || {}).koffer || [];
   let skills = k.filter((id) => IM_TEST[id]).slice(0, 4).map((id) => ({ id, ...IM_TEST[id] }));
-  if (!skills.length) skills = [{ id: 'atem', ...IM_TEST.atem }];
+  const ohneKoffer = !skills.length;
+  if (ohneKoffer) skills = ['atem', 'fuesse', 'sinne54321'].map((id) => ({ id, ...IM_TEST[id] }));
+  const an = (m.anzeige && m.anzeige.wert) || 65;
   return {
-    wo: 'Saal 1.04 · Mathe-Test', zeit: 80, start: m.thermoRot ? 45 : 35, skills,
+    wo: 'Saal 1.04 · Mathe · 50 Minuten', zeit: 70, start: Math.min(75, an), skills, skillsTitel: ohneKoffer ? 'Was dir einfällt:' : 'Dein Koffer:',
     aufgaben: [
       { f: '7 · 8', a: ['54', '56', '64'], r: 1 }, { f: '45 + 38', a: ['83', '73', '93'], r: 0 }, { f: '100 − 37', a: ['73', '63', '67'], r: 1 },
       { f: '6 · 9', a: ['54', '56', '45'], r: 0 }, { f: 'Die Hälfte von 48', a: ['24', '22', '26'], r: 0 }, { f: '144 : 12', a: ['14', '12', '11'], r: 1 },
-      { f: '9 · 7', a: ['63', '56', '72'], r: 0 }, { f: '250 − 85', a: ['175', '165', '155'], r: 1 },
     ],
-    gedanken: ['Ich kann das eh nicht.', 'Alle sind schneller.', 'Was, wenn ich null Punkte hab?', 'Mme Lenning guckt mich an.', 'Ich hätte lernen sollen.', 'Mein Kopf ist leer.', 'Noah schwitzt schon.'],
+    gedanken: ['Ich kann das eh nicht.', 'Alle sind schneller.', 'Mein Kopf ist leer.', 'Mme Lenning guckt.', 'Was, wenn ich null Punkte hab?', 'Noah atmet so laut.', 'Mein Handy ist in der Kiste. Was, wenn …'],
   };
 };
 
-// ---------- @annexe.cam: ein Foto aus dem Test ----------
-const TEST_POST = {
-  titel: '7P2', mitglieder: 19, dauer: 32,
+// ---------- Montag 8:55: Handys zurück. Ein Post von 8:34. ----------
+const POST_834 = {
+  titel: '@annexe.cam', mitglieder: 0, dauer: 16,
   nachrichten: [
-    { nach: 0.4, system: true, text: '8:34 · @annexe.cam hat ein Foto gepostet. (Du siehst es erst jetzt.)' },
-    { nach: 1.4, wer: '@annexe.cam', bild: 'Saal 1.04 durchs Türfenster, Noah über dem Blatt', text: '7P2 im mathetest 💀 noah schwitzt für die ganze klasse', lacher: { start: 5, proSek: 0.4, stopp: 'gestoppt' } },
-    { nach: 3.2, wer: 'Jo', text: 'warte. unsere handys waren in der kiste. alle' },
-    { nach: 5.0, wer: 'Jo', text: 'ich wars nicht. glaubt ihr mir jetzt?' },
-    { nach: 7.2, wer: 'Ben', text: 'jo hat recht' },
-    { nach: 9.5, wer: 'Mila', text: 'Neue Daten. Der Account postet DOCH im Unterricht. Meine Theorie war falsch.' },
-    { nach: 12, wer: 'Mila', text: 'Das Foto ist durchs Türfenster. Von unten. Jemand war um 8:34 im Flur.' },
-    { nach: 14.5, system: true, text: 'Noah ist offline.' },
-    { nach: 17, wer: 'Luca', text: 'lowkey sieht er echt gestresst aus' },
-    { nach: 19.5, wer: 'Ayla', text: 'luca. ernsthaft. nicht heute', wennNicht: 'gestoppt' },
-    { nach: 22, wer: 'Chiara', text: 'Noah ist nach dem Test sofort raus. Hof, glaub ich.' },
+    { nach: 0.4, system: true, text: 'Neuer Beitrag · 8:34' },
+    { nach: 1.2, wer: '@annexe.cam', bild: 'Euer Saal während des Tests. Von hinten links. In der Mitte: Noah, die Hände vor dem Gesicht.', text: 'prüfungsangst. lowkey süß.', lacher: { start: 9, proSek: 0.6 } },
+    { nach: 4.5, wer: 'jo_7p2', text: 'WIE' },
+    { nach: 6.5, wer: 'unbekannt_04', text: 'die handys waren doch in der kiste??' },
+    { nach: 9, system: true, text: '96 Likes' },
   ],
   aktionen: [
-    { id: 'schreiben', t: 'Schreiben', symbol: '💬', wahl: [
-      { t: '„Schwitzen im Test ist normal. Fotos durchs Fenster nicht.“', setzt: ['gestoppt', 'klartext'], ich: 'schwitzen im test ist normal. fotos durchs fenster nicht', folgen: [{ nach: 1.3, wer: 'Ayla', text: 'danke. genau das' }, { nach: 2.6, wer: 'Ben', text: 'ich schwitz in jedem test' }] },
-      { t: '„Jo, sorry, dass wir dich verdächtigt haben.“', setzt: ['joSorry'], ich: 'jo sorry dass wir dich verdächtigt haben', folgen: [{ nach: 1.4, wer: 'Jo', text: '… ok. danke' }] },
-      { t: '„haha noah 💀“', setzt: 'mitgemacht', ich: 'haha noah 💀', folgen: [{ nach: 1, wer: 'Luca', text: 'endlich sagt es wer' }] },
-    ] },
-    { id: 'privat', t: 'Noah privat schreiben', symbol: '🔒', setzt: 'noahPrivat4', ich: '(privat an Noah) wo bist du? ich komm. kein stress', folgen: [{ nach: 3, wer: 'Noah (privat)', text: 'Bank. Hinten. Ich krieg keine Luft.' }] },
-    { id: 'screenshot', t: 'Screenshot (8:34)', symbol: '📸', setzt: 'beweis834', sys: 'Screenshot gespeichert. Gepostet: 8:34. Mitten im Test.' },
-    { id: 'melden', t: 'Beitrag melden', symbol: '🚩', setzt: 'gemeldet4', sys: 'Gemeldet. Diesmal haben es elf Leute gemeldet.' },
-    { id: 'stumm', t: 'Stummschalten', symbol: '🔕', setzt: 'stumm', sys: 'Stumm.', ende: true },
+    { id: 'zoom', t: 'Foto vergrößern', symbol: '🔍', setzt: 'zoom', sys: 'Am Bildrand: ein grüner Fleck. Unscharf. Wie ein Licht.' },
+    { id: 'noah', t: 'Zu Noah schauen', symbol: '👀', setzt: 'noah', sys: 'Noah steht an der Wand. Er starrt auf sein Display.', ende: true },
   ],
 };
 
-// ---------- Hitze-Duell mit Dario (E11: in Gelb bleiben, wenn der andere Rot ist) ----------
-const DARIO_DUELL = {
-  wo: 'Skate-Ecke', gegner: { name: 'Dario', farbe: '#d9693f' }, publikum: 'Kenan, Luca', hitze: 50, zeit: 7,
-  runden: [
-    { sagt: 'Was guckst du so? Denkst du, ich war das?', warn: 'Dein Kiefer wird fest', skill: '(Ausatmen. Füße auf den Boden.)', skillAntwort: '(wartet) … Was jetzt?',
-      karten: [
-        { t: '„Ich denk gar nix. Ich frag nur.“', stimme: 'kopf', art: 'klar', hitze: -10, respekt: 1, antwort: 'Fragen. Klar. Alle fragen nur.' },
-        { t: '„Wer sonst? Du warst im Flur!“', stimme: 'stolz', art: 'angriff', hitze: 28, antwort: 'BEWEIS es. Los. Beweis es!' },
-        { t: '„Ich geh kurz. Du auch.“', stimme: 'kopf', art: 'rueckzug', hitze: -8, respekt: 0, antwort: '(tritt gegen die Wand) … Geh halt.' },
-      ], still: { hitze: 6, antwort: 'Sagst nix. Heißt ja.' } },
-    { sagt: 'Ich flieg EINMAL raus, und schon bin ich der Böse.', warn: 'Dein Herz klopft schneller', skill: '(Zehn Sekunden. Nichts sagen.)', skillAntwort: '(schnaubt) … Okay.',
-      karten: [
-        { t: '„Kenn ich. Einmal Mist, und alle gucken.“', stimme: 'kopf', art: 'klar', hitze: -16, respekt: 2, antwort: '(überrascht) … Ja. Genau so.' },
-        { t: '„Dann hör halt auf mit den Fotos.“', stimme: 'stolz', art: 'angriff', hitze: 30, antwort: '(steht auf) Sag das nochmal.' },
-        { t: '„Warum bist du rausgeflogen?“', art: 'klar', hitze: -6, respekt: 1, antwort: 'Ich hab Mme Rantini „Mama“ genannt. Aus Versehen. Alle haben gelacht. Ich auch. Zu laut.' },
-      ], still: { hitze: 4, antwort: 'Egal.' } },
-    { sagt: '…', wenn: (z) => z.hitze > 25, warn: 'Deine Hände ballen sich', skill: '(Hände auf. Schultern runter.)', skillAntwort: '(lässt die Schultern auch fallen) … Ich war im Flur. Da waren noch andere.',
-      karten: [
-        { t: '„Okay. Ich glaub dir erstmal.“', stimme: 'kopf', art: 'klar', hitze: -18, respekt: 2, antwort: '… Erstmal. Okay. Fair.' },
-        { t: '„Stopp. Ich geh jetzt. Wir reden später.“', stimme: 'kopf', art: 'klar', hitze: -8, respekt: 1, antwort: 'Später. Okay.' },
-      ], still: { hitze: -6, antwort: '(guckt weg)' } },
+// ---------- Freitag 12:05: Jos Screenshot. Sechzig Sekunden bis zur Klingel. (Entscheidung B) ----------
+// Wer am Mittwoch geatmet hat, bekommt drei Sekunden, in denen die Uhr steht. Ohne Hinweis.
+const SCREENSHOT = (m) => ({
+  titel: '7P2', mitglieder: 22, dauer: 60, klingel: 60, stillstand: m.k4Geatmet ? 3 : 0, stillstandAb: 2.6,
+  nachrichten: [
+    { nach: 0.4, wer: 'Jo', bild: 'Screenshot einer Nachricht. Oben: „{name} 7P2“. Darunter: „poste gleich das von mathe. lowkey das beste bis jetzt.“', text: 'ähm. leute.' },
+    { nach: 2.2, system: true, text: 'gesehen von 21' },
+    { nach: 3.6, wer: 'Chiara', text: 'WAS' },
+    { nach: 5, wer: 'Ben', text: 'nee' },
+    { nach: 5.8, wer: 'Ben', text: 'oder?' },
+    { nach: 7.4, wer: 'tom_7p2', text: 'hinten links 💀💀' },
+    { nach: 9.5, wer: 'Jo', text: 'ich sag nix. ich zeig nur.' },
+    { nach: 12, wer: 'Ayla', text: 'jo woher hast du das' },
+    { nach: 13.6, wer: 'Jo', text: 'egal woher' },
+    { nach: 16, wer: 'sami.lu', text: 'deshalb war der platz leer auf dem foto' },
+    { nach: 19, wer: 'Chiara', text: 'ich hab den sitzplan gemacht. ich sag ja nur.' },
+    { nach: 22, wer: 'tom_7p2', text: 'sag was {name}' },
+    { nach: 26, wer: 'Jo', text: '👀' },
+    { nach: 31, wer: 'sami.lu', text: 'die ganze zeit. krass.' },
+    { nach: 37, wer: 'tom_7p2', text: 'admin von hinten links. passt.' },
+    { nach: 44, wer: 'Chiara', text: 'ich will nur, dass es fair ist' },
+    { nach: 52, wer: 'sami.lu', text: 'schöne ferien euch 🙂' },
   ],
-};
-const darioAusgang = (r) => (r.knall ? 'knall' : r.hitze <= 25 ? 'ruhig' : r.hitze <= 55 ? 'gelb' : 'rot');
+  aktionen: [
+    { id: 'wut', t: '„WER HAT DAS GEBAUT? JO??“', symbol: '😡', setzt: 'wut', ich: 'WER HAT DAS GEBAUT? JO??',
+      folgen: [{ nach: 1.2, wer: 'Jo', text: 'warum schreist du' }, { nach: 2.4, wer: 'tom_7p2', text: 'wer schreit, hat was zu verbergen' }, { nach: 3.8, wer: 'sami.lu', text: 'ok jetzt glaub ichs' }] },
+    { id: 'ruhig', t: '„das bin ich nicht.“', symbol: '✍️', setzt: 'ruhig', ich: 'das bin ich nicht.' },
+    { id: 'beweis', t: '(Screenshot machen. Nichts schreiben.)', symbol: '📸', setzt: 'beweis', sys: 'Screenshot gespeichert.' },
+    { id: 'verlassen', t: '(Gruppe verlassen)', symbol: '🚪', setzt: 'verlassen', sys: '{name} hat die Gruppe verlassen.', ende: true },
+  ],
+});
 
 export const GESPRAECHE_N4 = {
-  n4_bus: [
-    ['erzaehler', 'Montag. Du rennst. Der Bus fährt los. Ohne dich.'],
-    { szene: 'thermo', id: 'morgen', def: MORGEN,
-      ausgang: (r) => (r.rot ? (r.wert < 60 ? 'runter' : 'rot') : 'gelb'),
-      folgen: {
-        runter: { staerke: 'ruhig', merke: ['thermoRot', 'thermoRunter'], dann: [['erzaehler', 'Du warst bei Rot. Jetzt nicht mehr. Der nächste Bus kommt.']] },
-        rot: { merke: 'thermoRot', dann: [['erzaehler', 'Dein Herz klopft noch. Alles ist zu laut. Und es ist erst 8 Uhr.']] },
-        gelb: { staerke: 'ruhig', merke: 'thermoGelb' },
-      } },
+  n4_haltestelle: [
+    ['erzaehler', 'Montag. Frost. Dario sitzt schon auf der Bank.'],
+    ['erzaehler', 'Er schaut dich nicht an. Sein Knie wippt.'],
+    ['dario', 'Schreibt ihr heute?'],
+    ['du', 'Mathe.'],
+    ['dario', 'Viel Glück.'],
+    ['erzaehler', 'Er sagt es zu seinen Schuhen.'],
+    { tu: 'n4_anzeigeStart' },
   ],
-  n4_noah: [
-    ['noah', 'Du auch? Zu spät? … Gut. Also nicht gut.'],
-    ['noah', 'Aber gut, dass ich nicht allein bin.'],
-    ['noah', 'Morgen ist der Test. Beim letzten Test war plötzlich alles weg.'],
-    ['noah', 'Weiß. Wie ein Bildschirm ohne Strom.'],
+  n4_tor: [
+    ['erzaehler', 'Am Tor steht Noah. Grau im Gesicht.'],
+    ['noah', 'Daheim kann ich das alles.'],
+    ['noah', 'Gestern Abend: jede Aufgabe richtig. Jede.'],
     { wahl: [
-      { t: '„Weiß wie ein Bildschirm? Hast du neu gestartet?“', staerke: 'humor', herz: { noah: 1 }, merke: 'blackoutErklaert', dann: [['noah', 'Ich hab’s versucht. Ich hab auf mein Ohr gedrückt.'], ['noah', '(grinst) Hat nicht geholfen. Aber jetzt lach ich.']] },
-      { t: '„Mir passiert das auch.“', staerke: 'zuhoeren', herz: { noah: 2 }, merke: 'auchBlackout', dann: [['noah', 'Echt? Du wirkst immer so … normal.'], ['noah', 'Okay. Dann sind wir das Team Weißer Bildschirm.']] },
-      { t: '„Lern einfach mehr. Dann passiert das nicht.“', herz: { noah: -1 }, dann: [['noah', 'Ich hab gelernt. Drei Tage. Es war trotzdem weg.'], ['erzaehler', 'Noah zieht die Kapuze hoch.']] },
+      { t: '„Dann kannst du es hier auch.“', dann: [['noah', 'Hier ist nicht daheim.'], ['erzaehler', 'Er meint es nicht böse. Es hilft nur nicht.']] },
+      { t: '„Bei mir auch. Daheim ging es.“', staerke: 'zuhoeren', herz: { noah: 1 }, dann: [['noah', '(atmet aus) Okay. Dann sind wir zwei.'], { anzeige: 'anspannung', plus: -5 }] },
+      { t: '(Neben ihm stehen bleiben. Bis es klingelt.)', staerke: 'warten', herz: { noah: 1 }, dann: [['erzaehler', 'Ihr sagt nichts. Es ist trotzdem besser als allein.']] },
     ] },
-    ['noah', 'Herr Kuedes macht heute was mit Zahlen. 0 bis 100.'],
-    ['noah', 'Ich bin gerade bei 70. Mindestens.'],
+    ['erzaehler', 'Alle sind nervös. Keiner sagt es.'],
+  ],
+  n4_test: [
+    ['lenning', 'Handys in die Kiste. Alle.'],
+    ['erzaehler', 'Sie zählt laut. Bei jedem Handy ein Klacken.'],
+    ['lenning', '… zwanzig. Einundzwanzig. Zweiundzwanzig.'],
+    ['erzaehler', 'Das Schloss klickt.'],
+    ['lenning', 'Mathe. 50 Minuten.'],
+    ['erzaehler', 'Dein Stift ist feucht in der Hand.'],
+    { anzeige: 'anspannung', plus: 5 },
+    { szene: 'test', id: 'test4', def: (m, S) => TEST(m, S),
+      ausgang: (r) => (r.max >= 90 ? 'blackout' : r.skills.length ? 'skills' : 'ohne'),
+      folgen: {
+        blackout: { merke: 'testBlackout', dann: [['erzaehler', 'Ein paar Aufgaben sind leer. Weiß. Wie ein Bildschirm ohne Strom.']] },
+        skills: { staerke: 'ruhig', merke: 'testSkills', dann: [['erzaehler', 'Zwischendurch war dein Kopf weg. Dann wieder da.']] },
+        ohne: { merke: 'testOhne' },
+      } },
+    { blende: '8:31' },
+    ['erzaehler', 'Draußen im Flur: Schritte.'],
+    { wahl: [
+      { t: '(Hochschauen.)', merke: 'kenanGesehen', dann: [
+        ['erzaehler', 'Am Türglas geht Kenan vorbei. In der Hand ein gelber Zettel.'],
+        ['erzaehler', 'Er schaut nicht rein. Du schaust zu lange hin.'],
+        ['erzaehler', 'Die letzte Aufgabe bleibt leer.'] ] },
+      { t: '(Weiterschreiben.)', merke: 'weitergeschrieben', dann: [['erzaehler', 'Die Schritte gehen vorbei. Du schreibst. Letzte Aufgabe. Fertig.']] },
+    ] },
+    ['lenning', 'Stifte weg. Danke.'],
+    { anzeige: 'anspannung', wert: 55 },
+  ],
+  n4_post: [
+    ['erzaehler', 'Montag, 8:55. Handys zurück. Zweiundzwanzig Mal vibriert es.'],
+    { szene: 'chat', id: 'post834', def: POST_834,
+      ausgang: (r, m) => { if (r.flags.zoom) m.spurGruen = true; return 'standard'; }, folgen: { standard: {} } },
+    { anzeige: 'anspannung', wert: 80 },
+    { tu: 'n4_gruen' },
+    ['erzaehler', 'Unmöglich. Alle Handys lagen in der Kiste.'],
+    ['erzaehler', 'Alle schauen einander an. Dann Noah.'],
+    ['erzaehler', 'Noah geht.'],
+  ],
+  // Schlüsselszene (Fable, K4 Szene 4) – Entscheidung A. Mit Yusufs Takt: ein, und aus, länger aus.
+  n4_treppe: [
+    ['erzaehler', 'Montag. 9:00. Die gesperrte Treppe in der Halle ist kalt.'],
+    ['erzaehler', 'Noah sitzt hinter dem Absperrband. Er atmet zu schnell.'],
+    { tu: 'n4_gehWeg' },
+    ['noah', 'Meine Hände kribbeln. Ich krieg keine Luft.'],
+    { wahl: [
+      { t: '„Ich bin da.“', herz: { noah: 1 }, dann: [] },
+      { t: '„Ich hol jemanden.“', dann: [['noah', '(schüttelt den Kopf) Nicht – weg.']] },
+      { t: '(Dich neben ihn setzen.)', staerke: 'warten', herz: { noah: 1 }, dann: [] },
+    ] },
+    ['erzaehler', 'Schritte. Yusuf. Er kniet sich vor Noah hin.'],
+    ['yusuf', 'Noah. Guck auf meine Hand.'],
+    ['yusuf', 'Ein. Und aus. Länger aus.'],
+    ['erzaehler', 'Seine Hand geht hoch. Und langsam wieder runter.'],
+    ['erzaehler', 'Oben am Geländer steht kurz jemand. Als du hochschaust, ist niemand mehr da.'],
+    { szene: 'atem', id: 'atemNoah', def: { wo: 'Halle · Treppe', wer: F.noah, info: 'Yusufs Hand gibt den Takt. Atme mit – Noah macht mit.', start: 92, ziel: 45,
+      saetze: { 92: '(atmet in kurzen Stößen)', 75: 'Alle – haben es gesehen.', 60: '(die Hände zittern weniger)', 45: '(atmet aus. Lang.)' } },
+      ausgang: (r) => (r.gut >= 3 ? 'zusammen' : 'langsam'),
+      folgen: { zusammen: { staerke: 'ruhig', herz: { noah: 2, yusuf: 1 }, merke: 'k4NoahRunter' }, langsam: { herz: { noah: 1 } } } },
+    ['noah', 'Alle haben es gesehen.'],
+    ['yusuf', 'Jetzt nicht. Jetzt nur aus.'],
+    ['erzaehler', 'Irgendwo fällt eine Dose aus dem Automaten.'],
+    { fest: true, wahl: [
+      { t: '„Yusuf, holst du Mme Lenning?“', staerke: 'hilfe', herz: { noah: 1 }, merke: 'k4YusufGeschickt', dann: [['erzaehler', 'Yusuf nickt und läuft. Du bleibst. Noahs Atem wird langsamer. Es dauert.']] },
+      { t: '„Ich hol sie. Bleib du.“', staerke: 'hilfe', merke: 'k4LenningGeholt', dann: [['erzaehler', 'Du rennst. Mme Lenning ist schneller da, als du denkst.'], ['erzaehler', 'Eine Minute lang sitzt Noah nur mit Yusuf da.']] },
+      { t: '„Wir bleiben beide.“', herz: { noah: 2 }, merke: 'k4BeideGeblieben', dann: [['erzaehler', 'Ihr bleibt. Noahs Atem wird langsamer. Aber es dauert. Lange.'], ['erzaehler', 'Irgendwann kommt Mme Lenning trotzdem. Jemand hat ihr Bescheid gesagt.']] },
+    ] },
+    ['erzaehler', 'Noahs Schultern sinken. Ein Stück.'],
+    ['noah', 'Ich hab nicht geweint. Auf dem Foto.'],
+    ['noah', 'Ich hab gerechnet. So seh ich aus, wenn ich rechne.'],
+    ['erzaehler', 'Mme Lenning kommt durch die Halle. Sie rennt nicht.'],
+    ['lenning', 'Ich setz mich dazu. Du musst nichts sagen.'],
+    ['erzaehler', 'Sie setzt sich hin. Zwei Stufen tiefer als Noah.'],
+    ['noah', 'Sagt’s keinem. Bitte.'],
+    { anzeige: 'anspannung', plus: -15 },
   ],
   n4_skills: [
     ['erzaehler', 'Aula. Auf dem Boden klebt eine lange Linie. An einem Ende steht 0, am anderen 100.'],
@@ -237,7 +256,7 @@ export const GESPRAECHE_N4 = {
     ['jo', 'Die ist bei 85 wegen einem RAUM.'],
     ['mila', 'Und du bei 90 wegen einem Lachen. Gleichstand.'],
     ['kaya', 'Letzte Übung: Pack deinen Koffer. Was hilft dir bei Rot?'],
-    ['kaya', 'Morgen ist Test. Nehmt den Koffer mit.'],
+    ['kaya', 'Der Koffer kommt mit. In jeden Test. In jede Pause.'],
     { szene: 'koffer', id: 'koffer', def: KOFFER, ausgang: (r) => (r.notfall.some((id) => ['schiff', 'satz', 'ort'].includes(id)) && r.notfall.every((id) => ['schiff', 'satz', 'ort'].includes(id)) ? 'nurKopf' : 'gemischt'),
       folgen: {
         gemischt: { staerke: 'ruhig', merke: 'kofferGepackt' },
@@ -247,101 +266,84 @@ export const GESPRAECHE_N4 = {
     ['mila', 'Ich bin kein Skill. … Okay. Ein bisschen.'],
     { tu: 'n4_milaDanke' },
   ],
-  n4_morgen: [
-    // Jugendwelt heute: Lesebestätigung ohne Antwort – und was der Kopf daraus macht.
-    ['erzaehler', 'Gestern Abend hast du Ben geschrieben: „bist du morgen nervös?“'],
-    ['erzaehler', '„Gesehen 21:04“. Keine Antwort. Bis jetzt.'],
+  // Dienstag 10:00: Die Rechnung klingt logisch. Ab heute hast du einen Spitznamen.
+  n4_sitzplan: [
+    { anzeige: 'anspannung', wert: 55 },
+    ['erzaehler', 'Dienstag. Hof. Chiara hält ein kariertes Blatt. Mit Lineal gezeichnet.'],
+    ['chiara', 'Der Sitzplan vom Test. Ich hab die Leute auf dem Foto gezählt.'],
+    ['chiara', 'Einundzwanzig.'],
+    ['erzaehler', 'Auf ihrem Plan ist ein Platz leer. Hinten links.'],
+    ['erzaehler', 'Deiner.'],
+    ['jo', 'Logisch. Das Foto ist von hinten links.'],
+    ['jo', 'Wer nicht drauf ist, hat’s gemacht.'],
+    { anzeige: 'anspannung', plus: 10 },
     { wahl: [
-      { t: '(Denken: Er findet die Frage bestimmt dumm.)', merke: 'gesehenGruebeln', dann: [['erzaehler', 'Du hast schlecht geschlafen. Wegen zwei Wörtern.']] },
-      { t: '(Denken: Vielleicht war sein Akku leer. Ich frag ihn einfach.)', staerke: 'lesen', merke: 'gesehenPruefen', dann: [['erzaehler', 'Du steckst das Handy weg. Du fragst ihn gleich.']] },
+      { t: '„Wer fotografiert, ist nie drauf. Das heißt nicht, dass ich es war.“', staerke: 'klar', merke: 'k4SitzplanRuhig', dann: [
+        ['chiara', 'Stimmt. Es heißt aber auch nicht, dass du es nicht warst.'],
+        ['erzaehler', 'Die Rechnung klingt logisch. Sie ist es nicht. Aber sie bleibt hängen.'] ] },
+      { t: '„Spinnst du? Mein Handy war in der Kiste!“', merke: 'k4SitzplanLaut', dann: [
+        { anzeige: 'anspannung', plus: 8 },
+        ['jo', 'Chill. Warum so laut, Hinten links?'],
+        ['erzaehler', 'Ein paar lachen. Der Name bleibt hängen.'] ] },
+      { t: '(Nichts sagen. Weggehen.)', merke: 'k4SitzplanWeg', dann: [['jo', '(ruft hinterher) Hinten links haut ab!']] },
     ] },
-    ['ben', '(kommt rein) Sorry! Ab neun müssen alle Handys in die Küche.'], ['ben', 'Hab’s nur kurz gesehen.'],
-    ['ben', 'Und ja. Sehr nervös. Ich hab von Brüchen geträumt.'],
-    ['erzaehler', 'Dienstag. 8:03. Auf dem Pult steht eine Kiste. Darauf: HANDYS.'],
-    ['jo', 'Handy-Gefängnis. Super.'],
+    { tu: 'n4_spitzname' },
+    ['ben', '(leise) Ich hab was anderes gehört. Die Lenning war’s selber.'],
+    ['ben', 'Sie hatte als Einzige ein Handy. Logisch, oder?'],
+    ['mila', '(schreibt etwas in ihr Heft) Zwei Gerüchte. Null Beweise.'],
+    { anzeige: 'anspannung', plus: 5 },
   ],
-  n4_test: [
-    ['lenning', 'Guten Morgen. Handys in die Kiste. Alle. Ausgeschaltet, bitte.'],
-    { wahl: [
-      { t: '(Handy ausschalten. Rein in die Kiste.)', merke: 'handyKiste', dann: [['lenning', 'Danke.']] },
-      { t: '„Ich hab meins heute nicht dabei.“ (Es ist in der Jacke.)', merke: ['handyKiste', 'handyGelogen'], dann: [['lenning', '(guckt kurz) Okay. Dann ist ja alles gut.'], ['erzaehler', 'Die Jacke hängt hinten. Dein Handy ist aus. Du fühlst es trotzdem.']] },
+  // Mittwoch 12:10: Rot. Explodieren, rausgehen – oder Yusufs Takt, diesmal allein.
+  n4_kantine: [
+    { anzeige: 'anspannung', wert: 60 },
+    ['erzaehler', 'Mittwoch. Kantine. Du stellst dein Tablett ab.'],
+    ['erzaehler', 'Am Nebentisch wird geflüstert. Dann am nächsten. Vier Tische.'],
+    ['jemand', '(leise) … hinten links …'],
+    ['erzaehler', 'Deine Hände zittern. Die Gabel klappert auf dem Teller.'],
+    { anzeige: 'anspannung', wert: 85 },
+    ['jo', '(laut, zu Ben) Pass auf, was du isst. Sonst bist du morgen drauf.'],
+    ['erzaehler', 'Ein paar lachen.'],
+    { fest: true, wahl: [
+      { t: '„Halt die Klappe, Jo!“', herz: { jo: -1 }, merke: 'k4Explodiert', dann: [
+        { anzeige: 'anspannung', wert: 95 },
+        ['erzaehler', 'Du bist aufgesprungen. Der Stuhl kippt. Es ist still.'],
+        ['erzaehler', 'Am Nebentisch ist ein Handy oben. Es filmt.'],
+        ['jo', '(hebt die Hände) Okay. Nerv getroffen.'],
+        ['erzaehler', 'Du setzt dich. Dein Herz rennt noch lange.'],
+        { anzeige: 'anspannung', wert: 80 } ] },
+      { t: '(Rausgehen.)', merke: 'k4Rausgegangen', dann: [
+        ['erzaehler', 'Das Tablett bleibt stehen. Draußen ist es kalt. Gut kalt.'],
+        { anzeige: 'anspannung', wert: 70 },
+        ['erzaehler', 'Drinnen reden sie weiter. Du hörst es nicht mehr.'] ] },
+      { t: '(Yusufs Takt. Ein. Und aus. Länger aus.)', staerke: 'ruhig', merke: 'k4Geatmet', dann: [
+        { szene: 'atem', id: 'atemAllein', def: { wo: 'Kantine · dein Platz', titel: 'Atmen', allein: true, wer: { name: 'Kopf', farbe: '#5f7d9e' },
+          info: 'Niemand muss es sehen. Yusufs Takt: ein. Und aus. Länger aus.', start: 85, ziel: 45,
+          saetze: { 85: 'Alle schauen. Alle wissen es.', 70: 'Ein. Und aus. Länger aus.', 55: 'Die Gabel liegt still.', 45: 'Okay. Noch da.' } },
+          ausgang: () => 'standard', folgen: { standard: {} } },
+        { tu: 'n4_nachAtem' } ] },
     ] },
-    ['jo', '(laut) Meins ist DRIN. Alle haben es gesehen. DRIN.'],
-    ['noah', '(flüstert) Ich bin bei 80. Ich schwör.'],
-    { tu: 'n4_testStart' },
-    { szene: 'test', id: 'test', def: (m, S) => TEST(m, S),
-      ausgang: (r) => (r.skills.length >= 2 ? 'skills' : r.max >= 90 ? 'blackout' : r.skills.length ? 'einer' : 'ohne'),
-      folgen: {
-        skills: { staerke: 'ruhig', merke: 'testSkills', dann: [['erzaehler', 'Abgegeben. Dein Kopf war da. Zwischendurch nicht. Dann wieder.']] },
-        blackout: { merke: 'testBlackout', dann: [['erzaehler', 'Abgegeben. Ein paar Aufgaben sind leer. Du weißt jetzt, wie Noahs weißer Bildschirm aussieht.']] },
-        einer: { staerke: 'ruhig', merke: 'testSkills', dann: [['erzaehler', 'Abgegeben. Ein Skill hat gereicht, um wieder reinzukommen.']] },
-        ohne: { merke: 'testOhne', dann: [['erzaehler', 'Abgegeben. Ohne Skill. Nächstes Mal vielleicht mit.']] },
-      } },
-    ['lenning', 'Danke. Die Handys bekommt ihr jetzt zurück. Ruhig, bitte.'],
-    ['erzaehler', 'Zwanzig Handys gehen gleichzeitig an. Zwanzig Mal vibriert es.'],
-    { szene: 'chat', id: 'testPost', def: TEST_POST,
-      ausgang: (r) => (r.flags.noahPrivat4 ? 'privat' : r.flags.klartext ? 'klartext' : r.flags.mitgemacht ? 'mitgemacht' : r.flags.joSorry ? 'jo' : r.flags.beweis834 ? 'beweis' : 'still'),
-      folgen: {
-        privat: { staerke: 'zuhoeren', herz: { noah: 2 }, merke: 'noahPrivat4' },
-        klartext: { staerke: 'mut', herz: { noah: 1, ayla: 1, luca: -1 }, merke: ['testKlartext', 'campFeind'] },
-        mitgemacht: { herz: { noah: -3, luca: 1 }, merke: 'testGelacht' },
-        jo: { staerke: 'einbeziehen', herz: { jo: 3 }, merke: 'joEntschuldigt' },
-        beweis: { staerke: 'lesen', merke: 'beweis834' },
-        still: {},
-      } },
-    { tu: 'n4_handyBilanz' },
   ],
-  n4_noahRot: [
-    ['erzaehler', 'Die Bank. Noah sitzt da, nach vorne gebeugt.'],
-    ['erzaehler', 'Seine Hände zittern. Er atmet schnell. Zu schnell.'],
-    ['noah', 'Alle – haben das – gesehen. Ich krieg – keine Luft.'],
-    { wahl: [
-      { t: '„Ich hol dir Wasser. Bin gleich da.“', merke: 'noahGeredet', dann: [['noah', 'Nicht – weggehen. Bitte. Bleib.'], ['erzaehler', 'Du bleibst. Das Wasser kann warten.']] },
-      { t: '(Hinsetzen.) „Atme mit mir. Ich zähl.“', staerke: 'ruhig', herz: { noah: 1 }, merke: 'noahAtem' },
-      { t: '„Soll ich Herrn Kuedes holen?“', staerke: 'hilfe', herz: { noah: 1, kaya: 1 }, merke: 'kuedesGeholt', dann: [['noah', '(nickt. Schüttelt den Kopf. Nickt.)'], ['erzaehler', 'Ben rennt los. Du bleibst. Bis er kommt, atmet ihr zusammen.']] },
-    ] },
-    { szene: 'atem', id: 'atem', def: { wo: 'Hof · hinten auf der Bank', wer: F.noah, start: 92, ziel: 40,
-      saetze: { 92: '(atmet in kurzen Stößen)', 75: 'Okay – okay. Langsamer.', 60: 'Ich – hör den Regen wieder.', 45: 'Puh. Ich war bei 95. Mindestens.' } },
-      ausgang: (r) => (r.gut >= 3 ? 'zusammen' : 'langsam'),
+  // Freitag 12:00: „Schöne Ferien.“ – 12:05: Jos Screenshot. Entscheidung B. Kapitelende.
+  n4_ferien: [
+    { anzeige: 'anspannung', wert: 45 },
+    ['hoffmann', 'So. Das war’s für dieses Jahr. Schöne Ferien.'],
+    ['erzaehler', 'Stühle kratzen. Jemand summt schief ein Weihnachtslied.'],
+    { blende: 'Freitag · 12:05' },
+    ['erzaehler', 'Alle Handys summen gleichzeitig. Der Klassenchat.'],
+    ['erzaehler', 'Dann drehen sich alle zu dir um.'],
+    { anzeige: 'anspannung', wert: 90 },
+    ['erzaehler', 'Sechzig Sekunden bis zur Klingel.'],
+    { szene: 'chat', id: 'screenshot', def: (m) => SCREENSHOT(m),
+      ausgang: (r, m) => { if (r.flags.beweis) m.k4Beweis = true; return r.flags.verlassen ? 'verlassen' : r.flags.wut ? 'wut' : r.flags.ruhig ? 'ruhig' : r.flags.beweis ? 'beweis' : 'stumm'; },
       folgen: {
-        zusammen: { staerke: 'ruhig', herz: { noah: 3 }, merke: 'noahRunter', dann: [['noah', 'Du hast einfach mitgeatmet. Das hat geholfen. Echt.']] },
-        langsam: { herz: { noah: 1 }, merke: 'noahRunter', dann: [['noah', 'Es wird. Langsam. … Erzähl das keinem, ja?']] },
+        wut: { herz: { jo: -1 }, merke: 'k4Wut', dann: [['erzaehler', 'Deine Großbuchstaben stehen da. Für alle. Wut liest sich wie Schuld.']] },
+        ruhig: { staerke: 'klar', merke: 'k4Ruhig', dann: [['erzaehler', 'Dein Satz steht allein zwischen dreißig Nachrichten. Keiner antwortet darauf. Aber er steht da.']] },
+        beweis: { staerke: 'lesen', merke: 'k4Stumm', dann: [['erzaehler', 'Alles gespeichert. Geschrieben hast du nichts. Für die anderen sieht das aus wie Schweigen.']] },
+        verlassen: { merke: 'k4Verlassen', dann: [['erzaehler', '„{name} hat die Gruppe verlassen.“ Das sehen alle. Manche lesen es wie ein Geständnis.']] },
+        stumm: { merke: 'k4Stumm', dann: [['erzaehler', 'Du schreibst nichts. Unter dem Screenshot stehen dreißig Nachrichten. Keine von dir.']] },
       } },
-    { tu: 'n4_kuedesKommt' },
-    ['mila', '(kommt dazu, außer Atem) Ich hab’s gesehen. Ich bin gerannt. Vierzig Meter.'],
-    ['mila', 'Um 8:34 war fast jeder im Unterricht.'],
-    ['mila', 'Wer im Flur war, steht auf einer kurzen Liste.'],
-  ],
-  n4_dario: [
-    ['kenan', 'Hey. Komm mal kurz.'],
-    ['kenan', 'Du hast das nicht von mir.'],
-    ['kenan', 'Dario ist gestern bei Rantini rausgeflogen. 8:30. Zwanzig Minuten im Flur.'],
-    ['kenan', 'Und Luca war „auf Toilette“. Auch zwanzig Minuten. Lange Toilette.'],
-    { wahl: [
-      { t: '„Warum sagst du mir das?“', staerke: 'lesen', herz: { kenan: 1 }, dann: [['kenan', 'Weil Noah okay ist. Und das nicht.']] },
-      { t: '„Hast du Beweise?“', staerke: 'klar', dann: [['kenan', 'Nee. Nur Augen. Ich sitz neben der Tür.']] },
-    ] },
-    ['erzaehler', 'Dario hat gehört, wie sein Name fällt. Er kommt rüber. Schnell.'],
-    { szene: 'hitze', id: 'darioDuell', def: DARIO_DUELL, ausgang: darioAusgang,
-      folgen: {
-        knall: { herz: { dario: -3, kenan: -1 }, merke: 'darioKnall', dann: [['mesenberg', '(von der Tür) Hey. Ihr zwei. Abstand. Jetzt.'], ['mesenberg', 'Und dann reden wir. Zu dritt.'], ['erzaehler', 'Dario geht. Er dreht sich nicht um.']] },
-        ruhig: { staerke: 'ruhig', herz: { dario: 2 }, merke: ['darioRuhig', 'spurLuca'], dann: [['dario', 'Luca war auch draußen. Mit Handy.'], ['dario', 'Ich sag nur, was ich gesehen hab.'], ['dario', '(leiser) Und ich hab nicht gelacht. Über das Foto.']] },
-        gelb: { staerke: 'ruhig', herz: { dario: 1 }, merke: 'darioGelb', dann: [['dario', 'Okay. Okay. Ich bin nur … sauer. Auf alles.']] },
-        rot: { herz: { dario: -1 }, merke: 'darioRot', dann: [['erzaehler', 'Dario tritt gegen sein Board. Es rollt bis zur Mauer.']] },
-      } },
-    { tu: 'n4_darioBilanz' },
-  ],
-  n4_durchsage: [
-    ['erzaehler', 'Freitag. 7:58. Im Gang rauscht der Lautsprecher.'],
-  ],
-  n4_ernstfall: [
-    { szene: 'thermo', id: 'ernstfall', def: (m, S) => ERNSTFALL(m, S),
-      ausgang: (r) => (r.wert < 50 ? 'runter' : 'schwer'),
-      folgen: {
-        runter: { staerke: 'ruhig', herz: { mila: 3 }, merke: 'ernstfallGut', dann: [['mila', '… Okay. 2.11. Zweiter Stock. Ich weiß es wieder.'], { tu: 'n4_nurKopf' }] },
-        schwer: { herz: { mila: 1 }, merke: 'ernstfallSchwer', dann: [['erzaehler', 'Mila zittert noch. Du holst Mme Rantini aus dem Lehrerzimmer.'], ['rantini', 'Danke. Gut, dass du geblieben bist.'], ['rantini', 'Ich bleib jetzt bei ihr.'], { tu: 'n4_nurKopf' }] },
-      } },
-    { tu: 'n4_cliff' },
+    ['erzaehler', 'Dann klingelt es. Zwei Wochen Ferien.'],
+    { tu: 'kapitelEnde' },
   ],
   n4_ende: [
     ['kaya', 'Letzte Stunde der Woche. Wer will, zeigt seine Notfallkarte.'],
@@ -357,24 +359,30 @@ export const GESPRAECHE_N4 = {
 };
 
 export const tunN4 = (c) => ({
-  // Folge aus Kap. 3 (Saal nach der Pause): Was hast du für Mila getan, als die Kapuze auf war?
-  n4_milaDanke: () => {
-    const m = c.S.merke;
-    if (m.wuerfelZurueck) return [['mila', '(im Rausgehen, leise) Der Würfel. Du hast ihn aufgehoben. Danke.']];
-    if (m.milaZettel) return [['mila', '(im Rausgehen) Dein Zettel. Hab ich noch. Keine Antwort nötig, oder?'], ['mila', '(grinst kurz) Trotzdem: danke.']];
-    if (m.milaRuhe) return [['mila', '(im Rausgehen) Mittwoch hat mich keiner angestarrt.'], ['mila', 'Du auch nicht. Das war gut.']];
-    if (m.milaLaut) return [['mila', '(im Rausgehen) Mittwoch, das „alles okay“ vor allen …'], ['mila', 'War lieb gemeint. Nächstes Mal lieber leise, ja?']];
+  n4_anzeigeStart: () => {
+    c.anzeige('anspannung', 60);
+    if (!c.S.merke.anzeigeGezeigt) { c.S.merke.anzeigeGezeigt = true; c.ui.toast('<b>Anspannung · 0 bis 100</b><span>Links. Sie bleibt die ganze Woche da.</span>'); }
     return [];
   },
-  n4_busRueck: () => (c.S.merke.thermoRot ? [['kaya', 'Wer heute Morgen bei Rot war: Was hat geholfen?'], ['kaya', 'Meistens war es der Körper.']]
-    : c.S.merke.thermoGelb ? [['kaya', 'Wer heute Morgen gelb war und runterkam: Das war ein Skill.']] : []),
-  n4_nurKopf: () => (c.S.merke.kofferNurKopf ? [['erzaehler', 'Auf deiner Karte stand nur Kopf. Bei Rot war der Kopf weg.'], ['erzaehler', 'Du kannst die Karte umpacken. Jederzeit.']] : []),
-  n4_testStart: () => (c.S.merke.kofferGepackt ? [['erzaehler', 'Du denkst an deinen Koffer. Was war noch mal drin?']] : []),
-  n4_handyBilanz: () => (c.S.merke.handyGelogen ? [['erzaehler', 'Dein Handy war in der Jacke. Gelogen. Für nichts.']] : []),
-  n4_kuedesKommt: () => (c.S.merke.kuedesGeholt ? [['kaya', '(kommt mit Ben) Ich bin da. Ben war schneller als beim Sportfest.'], ['kaya', 'Noah, magst du kurz mit in mein Büro? Nur Tee.'], ['noah', '… Okay. Mit Tee.']] : [['mesenberg', '(kommt über den Hof) Noah? Ich bleib bei euch.'], ['mesenberg', 'Gut gemacht, ihr zwei. Jetzt übernehm ich.']]),
-  n4_darioBilanz: () => {
-    const n = ((c.S.sz || {}).darioDuell || {}).bemerkt || 0;
-    return n >= 2 ? [['erzaehler', 'Kiefer. Herz. Hände. Du hast es gemerkt, bevor es kracht. Dario nicht. Noch nicht.']] : [];
+  n4_gruen: () => {
+    if (!c.S.merke.spurGruen) return [];
+    c.ui.toast('<b>🔎 Spur</b><span>Ein grüner Fleck am Rand des Fotos von 8:34.</span>', 'ly-t-ent');
+    return [];
+  },
+  // Wer in Kapitel 2 bei den Lachenden blieb, hört zuerst: „Geh weg.“ Bleiben geht trotzdem.
+  n4_gehWeg: () => (c.S.merke.listeGelacht ? [['noah', 'Geh weg.'], ['erzaehler', 'Du gehst nicht. Du bleibst. Einen Meter weiter weg.']] : []),
+  n4_spitzname: () => { c.ui.toast('<b>Neuer Spitzname</b><span>„Hinten links“</span>'); return [['erzaehler', 'Ab heute hast du einen Spitznamen. Hinten links.']]; },
+  n4_nachAtem: () => {
+    const z = ((c.S.sz || {}).atemAllein || {}).zahl;
+    c.anzeige('anspannung', z != null ? Math.max(45, z) : 55);
+    return [['erzaehler', 'Jo redet weiter. Du hörst es. Es ist nur noch Jo.'], ['yusuf', '(vom Nebentisch, ohne aufzuschauen) Länger aus.']];
+  },
+  n4_busRueck: () => [['kaya', 'Heute Morgen war ein Test. Und dann ein Foto. Wo wart ihr auf der Linie?'], ['kaya', 'Keine Antwort laut. Nur für euch.']],
+  n4_milaDanke: () => {
+    const m = c.S.merke;
+    if (m.milaGesagt) return [['mila', '(im Rausgehen, leise) Der Post im Dezember. Du hast es mir selbst gesagt. Das merk ich mir.']];
+    if (m.wuerfelGefragt) return [['mila', '(im Rausgehen) Der Würfel. Du hast gefragt, wie er geht. Das fragt sonst keiner.']];
+    return [];
   },
   n4_karte: () => {
     const not = ((c.S.sz || {}).koffer || {}).notfall || [];
@@ -389,15 +397,5 @@ export const tunN4 = (c) => ({
     { szene: 'stempel', def: { modul: 'Modul 3 · Gefühle regulieren', titel: 'Runterkommen',
       gelernt: ['Deine Zahl von 0 bis 100', 'Bei Rot: erst Körper, dann Kopf', 'Für jeden ist etwas anderes Rot', 'Mit jemandem runtergeatmet', 'Die Notfallkarte im Ernstfall benutzt'],
       mission: 'Probier einen Skill aus deinem Koffer. Bevor es Rot wird.' }, folgen: {} },
-  ],
-  // Kapitelende (Hauptweg): der gefälschte Screenshot
-  n4_cliff: () => [
-    { blende: 'Freitag · 21:40' },
-    ['erzaehler', 'Eine unbekannte Nummer schickt dir ein Bild.'],
-    ['erzaehler', 'Ein Screenshot. Das Profil von @annexe.cam. Unter „Admin“ steht: {name}.'],
-    ['erzaehler', 'Das bist du. Du warst das nie.'],
-    ['erzaehler', 'Darunter: „Wie lange bleibt das geheim?“'],
-    ['erzaehler', 'Deine Zahl springt auf 90. Dann klingelt das Handy noch mal. Ben: „hast du das auch gekriegt??“'],
-    { tu: 'kapitelEnde' },
   ],
 });

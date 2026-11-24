@@ -1,7 +1,8 @@
-// Drei Jahre Annexe – 7ème, Kapitel 8 „Digitale Welt“ (Kurs Jahr 1, Modul 7: E27 Social Media und ich – Algorithmus,
-// Wenn-dann-Satz; E28 Echt oder fake? KI und Fake News – Bilder-Wette, Teilen-Bremse, Grenz-Linie).
-// Faden @annexe.cam: Ein KI-Video von Mme Tidderich. Der Account verrät sich selbst („lowkey“); Mila und du legt eine
-// Beweis-Mappe an (Fakten rein, Gerüchte und Privates raus) und gebt sie Herrn Kuedes. Kinder ermitteln nicht, niemand ist Köder.
+// Storyline 7e „@annexe.cam“ (nach der Storyline von Fable) – Kapitel 8 „Nicht echt“, Juni, eine Woche später.
+// Verdecktes Thema: Digitale Welt (Fakes, KI, Teilen bremsen, der Feed). Einen Fake erkennt man an Kleinigkeiten,
+// wenn man langsam schaut. Jedes Anschauen und jedes Weiterleiten macht ihn größer, auch das gut gemeinte.
+// Papier kann man nicht teilen. Und ein Beweis taugt nur, wenn er niemanden bloßstellt, der nichts dafür kann.
+// Lösung vom Dezember: Das Foto von 8:34 wurde durch das Türglas gemacht – der grüne Fleck ist das Notausgang-Schild.
 import { S8_KI } from './skills-j1.js';
 const pult = (r, c, s) => [-24.25 + r * 2.1, -27.2 + c * 3.4 + s * 0.62, -Math.PI / 2, 'sitzt'];
 const KLASSE = { ayla: pult(0, 0, -1), ben: pult(1, 2, 1), chiara: pult(2, 1, -1), yusuf: pult(1, 0, 1), jo: pult(3, 2, -1), lina: pult(3, 0, 1), noah: pult(0, 1, 1), mila: pult(2, 2, 1) };
@@ -11,58 +12,82 @@ const F = { noah: { id: 'noah', name: 'Noah', farbe: '#3f78b8' }, mila: { id: 'm
   ayla: { id: 'ayla', name: 'Ayla', farbe: '#e85d75' }, lina: { id: 'lina', name: 'Lina', farbe: '#9b7bc8' } };
 
 export const SCHRITTE_N8 = [
-  { id: 'k8_video', kap: 8, tag: 'Montag', uhr: 7.6, titel: 'Das Video', ziel: 'Mila steht am Eingang. Sie hält ihr Handy hoch.', marker: 'mila',
-    start: { teleport: 'eingangHof', gespraech: 'n8_chat' },
-    leute: { mila: [0.8, 16.6, 0.4], ben: [2.2, 17.2, -0.4] },
+  { id: 'k8_feed', kap: 8, tag: 'Montag', uhr: 7.83, titel: '1.900', ziel: 'Hof. Mila steht am Eingang.', marker: 'mila',
+    start: { teleport: 'eingangHof', gespraech: 'n8_feed' },
+    leute: { mila: [0.8, 16.6, 0.4], ben: [2.2, 17.2, -0.4, 'handy'], jo: [3.4, 15.8, -1.2, 'handy'] },
     fertig: { reden: 'mila', gespraech: 'n8_mila' } },
   { id: 'k8_skills', kap: 8, tag: 'Montag', uhr: 9.9, neben: 'skills', titel: 'Skills: Echt oder KI?', ziel: 'Aula. An der Wand hängen Fotos. Manche sind gar keine.', marker: 'kaya',
     start: { teleport: 'eingangHof' },
     leute: { kaya: [-14.50, -65.40, 0.00], mesenberg: [-13.54, -65.16, -0.50], ...AULA },
     fertig: { reden: 'kaya', gespraech: 'n8_skills' } },
-  { id: 'k8_tidderich', kap: 8, tag: 'Dienstag', uhr: 8.05, titel: 'Mme Tidderich', ziel: 'Saal 1.04. Mme Tidderich ist heute sehr still.', marker: 'hoffmann',
+  { id: 'k8_cdi', kap: 8, tag: 'Montag', uhr: 12.5, titel: 'Langsam schauen', ziel: 'CDI. Mila hat ihr Handy auf den Tisch gelegt.', marker: 'mila',
+    start: { teleport: 'cdi' },
+    leute: { mila: [-6.2, -21.6, 0.4, 'sitzt'] },
+    fertig: { reden: 'mila', gespraech: 'n8_cdi' } },
+  { id: 'k8_glas', kap: 8, tag: 'Dienstag', uhr: 10.0, titel: 'Das Türglas', ziel: 'Flur vor eurem Saal. Mila wartet an der Tür.', marker: 'mila',
     start: { teleport: 'saal104Tuer' },
-    leute: { hoffmann: [-27, -24, Math.PI / 2], mesenberg: [-27, -21.6, Math.PI / 2], ...KLASSE },
+    leute: { mila: [-19.6, -15.0, -2.2] },
+    fertig: { reden: 'mila', gespraech: 'n8_glas' } },
+  { id: 'k8_mappe', kap: 8, tag: 'Mittwoch', uhr: 16.0, titel: 'Die Mappe', ziel: 'Jugendhaus. Chiara hat eine leere Mappe mitgebracht.', marker: 'chiara',
+    start: { teleport: 'jugendhaus' },
+    leute: { chiara: [15.2, 118.4, -1.2], mila: [13.0, 118.8, 1.0], ben: [12.6, 120.4, 2.2], jo: [15.6, 120.6, -2.2] },
+    fertig: { reden: 'chiara', gespraech: 'n8_mappe' } },
+  { id: 'k8_sepas', kap: 8, tag: 'Donnerstag', uhr: 14.0, titel: 'Was soll ich damit machen?', ziel: 'SePAS. Die Tür von Herrn Kuedes steht offen.', marker: 'kaya',
+    start: { teleport: 'halle', gespraech: 'n8_fach' },
+    leute: { kaya: [-12.6, -11.4, 0.6, 'sitzt'], mila: [-10.4, -9.2, -1.6] },
+    fertig: { reden: 'kaya', gespraech: 'n8_sepas' } },
+  { id: 'k8_tidderich', kap: 8, tag: 'Freitag', uhr: 10.0, titel: 'Vier Sätze', ziel: 'Saal 1.04. Mme Tidderich ist zurück.', marker: 'hoffmann',
+    start: { teleport: 'saal104Tuer' },
+    leute: { hoffmann: [-27, -24, Math.PI / 2], ...KLASSE },
     fertig: { reden: 'hoffmann', gespraech: 'n8_tidderich' } },
-  { id: 'k8_falle', kap: 8, tag: 'Mittwoch', uhr: 12.4, titel: 'Die Beweis-Mappe', ziel: 'CDI. Mila hat eine Mappe dabei. Ben hat Kekse.', marker: 'mila',
-    start: { teleport: 'kantineTuer' },
-    leute: { mila: [-6.2, -21.6, 0.4, 'sitzt'], ben: [-4.8, -22.4, -1.2] },
-    fertig: { reden: 'mila', gespraech: 'n8_falle' } },
-  { id: 'k8_freitag', kap: 8, tag: 'Freitag', uhr: 10.0, titel: 'Der Account wird still', ziel: 'Aula. Herr Kuedes will alle sehen. Dein Handy vibriert.', marker: 'kaya',
-    start: { teleport: 'eingangHof', gespraech: 'n8_post' },
-    leute: { kaya: [-14.50, -65.40, 0.00], ...AULA },
-    fertig: { reden: 'kaya', gespraech: 'n8_ende' } },
+  { id: 'k8_armband', kap: 8, tag: 'Freitag', uhr: 15.83, titel: '27 Grad', ziel: 'Haltestelle. Dario sitzt auf der Bank.', marker: 'dario',
+    start: { teleport: 'eingang' },
+    leute: { dario: [-21.5, 41.6, -1.6, 'sitzt'], fahrer: [-11.2, 44.6, -Math.PI / 2] },
+    fertig: { reden: 'dario', gespraech: 'n8_armband' } },
 ];
 
-// ---------- Das KI-Video im Klassenchat (Teilen-Bremse, E28) ----------
-const VIDEO = {
-  titel: '7P2', mitglieder: 18, dauer: 34,
+// ---------- Montag 7:50: Wie groß ist es? Jedes Hinschauen füttert den Feed. ----------
+const FEED8 = (m) => ({
+  titel: 'Dein Feed', mitglieder: 0, dauer: 24,
   nachrichten: [
-    { nach: 0.5, system: true, text: 'Ayla hat dich wieder zur Gruppe hinzugefügt.' },
-    { nach: 1.6, wer: 'Chiara', bild: 'Mme Tidderich am Pult. Ihre Stimme: „Die 7P2 ist meine dümmste Klasse. Ich zähl die Tage.“', text: 'habt ihr das gesehen 😳', lacher: { start: 6, proSek: 0.6, stopp: 'gebremst' } },
-    { nach: 4, wer: 'Jo', text: 'krass. hat sie das echt gesagt??' },
-    { nach: 6, wer: 'Ben', text: 'das ist ki. in 1.04 steht gar kein pult am fenster' },
-    { nach: 8.5, wer: 'Yusuf', text: 'echt jetzt? sieht echt aus' },
-    { nach: 11, system: true, text: 'Das Video wurde 312-mal geteilt.' },
-    { nach: 13.5, wer: 'Lina', text: 'das ist gemein. auch wenn es fake ist.', wennNicht: 'stumm' },
-    { nach: 17, wer: 'Jo', text: '… oh. okay. ich lösch mein ❤️' },
-    { nach: 20, wer: 'Mila', text: 'Das Video ist KI. Mme Tidderich ist echt. Wer teilt, macht mit.' },
-    { nach: 23, wer: 'Ayla', text: 'luca hat samstag in seiner gruppe geschrieben: „video kommt 🎬“' },
+    { nach: 0.4, system: true, text: 'Das Video. Freitag: 400 Aufrufe. Jetzt: 1.900.' },
+    { nach: 2, system: true, text: 'Jo hat es in drei Gruppen gestellt.' },
+    { nach: 4, wer: 'unbekannt_31', text: 'ist das eure lehrerin? 💀' },
+    { nach: 6, system: true, text: 'Es ist an anderen Schulen angekommen.' },
+    ...(m.k7Geteilt ? [{ nach: 8, system: true, text: 'Geteilt: 213. Eine davon bist du.' }] : []),
   ],
   aktionen: [
-    { id: 'teilen', t: 'Teilen', symbol: '↗️', wahl: [
-      { t: '(Trotzdem teilen. Ist doch lustig.)', setzt: 'geteilt', ich: '↗️ geteilt', folgen: [{ nach: 1, system: true, text: 'Geteilt. 313.' }] },
-      { t: '(Bremsen. Nicht teilen.)', setzt: ['gebremst', 'bremse'], sys: 'Nicht geteilt. Die Zahl bleibt bei 312. Wegen dir.' },
-    ] },
-    { id: 'schreiben', t: 'Schreiben', symbol: '💬', wahl: [
-      { t: '„Das ist KI. Und es ist gemein. Hört auf zu teilen.“', setzt: ['gebremst', 'klartext'], ich: 'das ist ki. und es ist gemein. hört auf zu teilen', folgen: [{ nach: 1.4, wer: 'Ayla', text: 'danke. genau' }, { nach: 2.6, wer: 'Yusuf', text: 'oh. ok. gelöscht' }] },
-      { t: '„haha ihr gesicht 💀“', setzt: 'mitgelacht', ich: 'haha ihr gesicht 💀', folgen: [{ nach: 1.1, wer: 'Jo', text: '💀' }, { nach: 2.4, wer: 'Lina', text: 'das ist nicht ihr gesicht. das ist ein programm' }] },
-    ] },
-    { id: 'melden', t: 'Video melden', symbol: '🚩', setzt: ['gemeldet', 'gebremst'], sys: 'Gemeldet als „gefälschter Inhalt“.' },
-    { id: 'stumm', t: 'Stummschalten', symbol: '🔕', setzt: 'stumm', sys: 'Stumm.', ende: true },
+    { id: 'an1', t: 'Noch mal ansehen', symbol: '▶', setzt: 'n1', sys: 'Du schaust es noch mal. In deinem Feed: drei neue Kopien.' },
+    { id: 'an2', t: 'Noch mal ansehen', symbol: '▶', wenn: 'n1', setzt: 'n2', sys: 'Noch mal. Sechs neue Kopien. 2.300 Aufrufe.' },
+    { id: 'an3', t: 'Noch mal ansehen', symbol: '▶', wenn: 'n2', setzt: 'n3', sys: 'Dein ganzer Feed ist jetzt das Video.' },
+    { id: 'melden', t: 'Melden', symbol: '🚩', setzt: 'gemeldet', sys: 'Gemeldet. „Danke. Wir prüfen das.“' },
+  ],
+});
+
+// ---------- Montag 12:30: Echt oder KI? Langsam schauen (Spuren-Wand) ----------
+const KI = {
+  wo: 'CDI · ein Handy auf dem Tisch', helfer: F.mila,
+  frage: 'Das Video läuft. Ohne Ton. Mila: „Was stimmt nicht? Langsam.“',
+  spuren: [
+    { id: 'schrift', sy: '🔤', t: 'Auf dem Plakat hinter ihr steht die Schrift spiegelverkehrt.', kurz: 'Schrift gespiegelt', echt: true,
+      kommentar: ['Fakt. Unser Plakat ist nicht gespiegelt.', 'Doch. Schau noch mal. Spiegelverkehrt.'] },
+    { id: 'ohrring', sy: '💎', t: 'Ihr Ohrring wechselt die Seite. Erst links. Dann rechts.', kurz: 'Ohrring wandert', echt: true,
+      kommentar: ['Fakt. Ohrringe wandern nicht.', 'Doch. Zurückspulen. Links. Dann rechts.'] },
+    { id: 'atem', sy: '🌬️', t: 'Zwischen den Sätzen atmet sie nicht.', kurz: 'kein Atem', echt: true,
+      kommentar: ['Fakt. Menschen atmen. Die Maschine vergisst das.', 'Doch. Hör hin. Kein Atem.'] },
+    { id: 'stimme', sy: '🔊', t: 'Es ist ihre Stimme.', kurz: 'ihre Stimme', echt: false,
+      kommentar: ['Raus. Stimmen kann man nachbauen. Das beweist nichts mehr.', 'Eine Stimme ist kein Beweis mehr. Leider.'] },
+    { id: 'aufrufe', sy: '👁️', t: 'Fast zweitausend Leute haben es gesehen.', kurz: 'viele Aufrufe', echt: false,
+      kommentar: ['Raus. Viele Aufrufe machen nichts echt.', 'Viel ist nicht wahr. Nur viel.'] },
+  ],
+  frageEnde: 'Und?',
+  schluesse: [
+    { key: 'fake', t: 'Nicht echt.', braucht: ['ohrring', 'atem'], antwort: 'Das wissen jetzt genau zwei.' },
+    { key: 'vielleicht', t: 'Vielleicht doch echt.', braucht: ['stimme'], antwort: 'Dann hat die Maschine gewonnen. Schau noch mal. Langsam.' },
+    { key: 'weissnicht', t: 'Ich weiß es nicht.', braucht: [], antwort: 'Dann teil es nicht. Das reicht schon.' },
   ],
 };
 
-// ---------- Feed (E27) ----------
 const FEED = {
   wo: 'Aula · Wer bestimmt deinen Feed?', runden: 10,
   arten: { drama: ['Drama', '#d6452f'], lustig: ['Lustiges', '#f2b134'], freunde: ['Freunde', '#3f78b8'], sport: ['Sport', '#3fa66b'], lernen: ['Wissen', '#8a7bc8'] },
@@ -76,82 +101,18 @@ const FEED = {
 };
 
 
-// ---------- Freitag: Die Mappe liegt bei der Direktion. Der Account wird still. ----------
-const BDAY = {
-  titel: '@annexe.cam · Story', mitglieder: 0, dauer: 18,
-  nachrichten: [
-    { nach: 0.5, system: true, text: 'Freitag, 9:48. @annexe.cam hat eine Story gepostet.' },
-    { nach: 1.8, wer: '@annexe.cam', text: 'bin dann mal weg 👋 war eh nur spaß' },
-    { nach: 4.5, system: true, text: 'Das Profil ist jetzt privat. 0 Beiträge sichtbar.' },
-    { nach: 7, wer: 'Mila (privat)', text: 'Herr Kuedes war gestern mit der Mappe bei der Direktion. Heute früh: das.' },
-    { nach: 10, wer: 'Ben (privat)', text: 'ich hab heute geburtstag und der account ist weg. bestes geschenk 🎂' },
-    { nach: 13, wer: 'Mila (privat)', text: 'Weg heißt nicht gelöscht. Nicht posten. Nicht drohen. Aula.' },
-  ],
-  aktionen: [
-    { id: 'laut', t: 'In den Klassenchat: LUCA IST ES', symbol: '📣', setzt: 'chatLuca', ich: 'LUCA IST ES. beweis kommt', folgen: [{ nach: 1.6, wer: 'Mila (privat)', text: 'Lösch das. Die Direktion ist dran. Sonst bist du jetzt der Pranger.' }] },
-    { id: 'luca', t: 'Luca privat schreiben', symbol: '✉️', setzt: 'lucaPrivat', ich: 'ich weiß, dass du es bist', folgen: [{ nach: 1.6, wer: 'Luca (privat)', text: 'beweis es 😇' }] },
-    { id: 'weg', t: 'Zu Herrn Kuedes', symbol: '🚪', setzt: 'zuKuedes', sys: 'Du steckst das Handy ein. Dein Herz klopft. Aber du weißt, wohin.', ende: true }],
-};
-
-// ---------- Mittwoch: Die Beweis-Mappe mit Mila (Spuren-Wand von Kapitel 3, jetzt mit Privatsphäre) ----------
-const MAPPE = (m) => ({
-  wo: 'CDI · Leseecke', helfer: F.mila,
-  frage: 'Mila legt eine Mappe auf den Tisch. „Nur, was wir belegen können. Und nichts Privates von Leuten, die nichts damit zu tun haben.“',
-  spuren: [
-    { id: 'lowkey', sy: '💬', t: 'Der Account kommentiert selbst: „lowkey stimmt“. Mila hat einen Screenshot mit Uhrzeit.', kurz: '„lowkey“ vom Account', echt: true,
-      kommentar: ['Fakt. Mit Uhrzeit. Allein kein Beweis – „lowkey“ sagen viele.', 'Doch, das kommt rein. Mit Uhrzeit ist es ein Fakt.'] },
-    { id: 'uhr', sy: '🕐', t: 'Der Fake-Screenshot aus dem Herbst zeigt die Uhrzeit 25:14.', kurz: 'Fake: 25:14', echt: true,
-      kommentar: ['Fakt. Die Uhrzeit gibt es nicht. Das Bild ist gebaut.', 'Doch. 25:14 gibt es nicht. Das zeigt: gefälscht.'] },
-    { id: 'geraet', sy: '📱', t: 'Das Video kam per AirDrop. Absender: „Handy von L.“', kurz: '„Handy von L.“', echt: true,
-      kommentar: ['Fakt. Ein Gerätename. Wer L. ist, klärt die Schule.', 'Doch, rein damit. Das ist eine echte Angabe im Bild.'] },
-    { id: 'grinsen', sy: '😏', t: 'Luca grinst immer, wenn jemand über das Video redet.', kurz: 'Luca grinst', echt: false,
-      kommentar: ['Grinsen ist ein Gefühl von uns. Kein Fakt.', 'Raus. Grinsen beweist nichts.'] },
-    { id: 'gehoert', sy: '👂', t: 'Jo hat gehört, dass Luca zu Hause zwei Handys hat.', kurz: 'Jo hat gehört …', echt: false,
-      kommentar: ['Gehört ist Gerücht. Raus.', 'Raus. Das ist Hörensagen.'] },
-    { id: 'privat', sy: '🖼️', t: 'Ben hat ein Foto von Lucas kleinem Bruder. „Für die Mappe?“', kurz: 'Foto vom Bruder', echt: false,
-      kommentar: ['Nein. Der Bruder hat damit nichts zu tun. Privates bleibt raus.', 'Richtig, raus. Unbeteiligte schützen wir. Auch hier.'] },
-  ],
-  frageEnde: 'Drei Blätter in der Mappe. Und jetzt?',
-  schluesse: [
-    { key: 'kuedes', t: 'Die Mappe geht zu Herrn Kuedes. Er und die Direktion entscheiden.', braucht: ['lowkey', 'uhr', 'geraet'], antwort: 'Genau. Wir sammeln. Erwachsene entscheiden. Nicht wir.' },
-    { key: 'chat', t: 'Wir posten die Mappe in den Klassenchat. Dann wissen es alle.', braucht: [], antwort: 'Dann ist es ein Pranger. Auch wenn es stimmt. Nein.' },
-    { key: 'luca', t: 'Wir zeigen sie Luca. Mal sehen, was er sagt.', braucht: [], antwort: 'Dann löscht er alles. Und wir haben nichts mehr.' },
-    { key: 'offen', t: 'Noch nicht genug. Wir warten.', braucht: [], antwort: 'Für ein Urteil ist es nie genug – das machen wir auch nicht. Für einen Erwachsenen reicht es.' },
-  ],
-});
-
 export const GESPRAECHE_N8 = {
-  n8_chat: [
-    ['erzaehler', 'Montag, 7:31. Du bist wieder in der Klassengruppe. Ayla hat dich zurückgeholt.'],
-    { szene: 'chat', id: 'video', def: VIDEO,
-      ausgang: (r) => (r.flags.geteilt ? 'geteilt' : r.flags.klartext ? 'klartext' : r.flags.bremse || r.flags.gemeldet ? 'gebremst' : r.flags.mitgelacht ? 'gelacht' : 'still'),
-      folgen: {
-        geteilt: { herz: { ayla: -1, lina: -1 }, merke: 'videoGeteilt' },
-        klartext: { staerke: 'mut', herz: { ayla: 1, lina: 1, ben: 1 }, merke: 'videoKlartext' },
-        gebremst: { staerke: 'lesen', herz: { mila: 1 }, merke: 'videoGebremst' },
-        gelacht: { herz: { lina: -1 }, merke: 'videoGelacht' },
-        still: {},
-      } },
+  n8_feed: [
+    ['erzaehler', 'Montag. 7:50. Alle schauen auf ihre Handys. Dasselbe Video.'],
+    { szene: 'chat', id: 'feed8', def: (m) => FEED8(m),
+      ausgang: (r, m) => { m.k8Angesehen = r.flags.n3 ? 3 : r.flags.n2 ? 2 : r.flags.n1 ? 1 : 0; if (r.flags.gemeldet) m.k8Gemeldet = true; return 'standard'; }, folgen: { standard: {} } },
+    { tu: 'n8_feedFolge' },
+    ['erzaehler', 'Mme Tidderich fehlt heute. Vertretung.'],
+    ['jemand', 'Sie hat gekündigt. Sicher.'],
   ],
   n8_mila: [
-    ['mila', 'Ich hab das Video Bild für Bild angeschaut. Es ist KI. Eindeutig.'],
-    ['ben', 'Kein Pult am Fenster. Und ihr Mund passt nicht zur Stimme.'],
-    ['mila', 'Und sie sagt nie „dumm“. Zu niemandem. Ich hab drei Monate zugehört.'],
-    { tu: 'n8_milaStart' },
-    // Jugendwelt heute: KI-Angst. Nicht wegreden – etwas tun, das man selbst in der Hand hat.
-    ['noah', '(sehr leise) Wenn die das mit einer Lehrerin können …'],
-    ['noah', '… können die das auch mit meinem Gesicht?'],
-    ['noah', 'Ich hab Fotos online. Von meinem Kirchturm. Mit mir drauf.'],
-    { wahl: [
-      { t: '„Schauen wir nach der Stunde deine Einstellungen an? Zusammen.“', staerke: 'einbeziehen', herz: { noah: 2 }, merke: 'noahProfil', dann: [
-        ['erzaehler', 'Informatikraum. Noah tippt. Du liest vor.'],
-        ['erzaehler', 'Konto auf privat. ✔ Wer darf mich markieren? Niemand. ✔'],
-        ['erzaehler', 'Alte Fotos mit Gesicht: archiviert. Der Kirchturm bleibt. Ohne Noah.'],
-        ['noah', 'Fühlt sich an wie Fenster zumachen. Bei Sturm.']] },
-      { t: '„Können sie. Aber dann ist es deren Schuld. Nicht deine.“', staerke: 'klar', herz: { noah: 1 }, merke: 'noahSchuld', dann: [
-        ['noah', '… Und dann?'], ['mila', 'Screenshot, melden, Herr Kuedes. Und BEE SECURE: 8002 1234.']] },
-      { t: '„Mach dir keinen Kopf. Passiert eh nicht.“', merke: 'noahBeruhigt', dann: [['erzaehler', 'Noah nickt. Er glaubt es nicht.']] },
-    ] },
+    { tu: 'n8_milaPost' },
+    ['mila', 'Schick’s mir nicht. Zeig’s mir. Mittag. CDI.'],
   ],
   n8_skills: [
     ['kaya', 'Wéi geet et? Heute: Was ist echt?'],
@@ -202,71 +163,225 @@ export const GESPRAECHE_N8 = {
       gelernt: ['Echt oder KI? Erst die Quelle prüfen', 'Die Teilen-Bremse: Wer? Echt? Wem schadet es?', 'Der Feed folgt dir – und schubst dich', 'KI: geht klar oder gar nicht', 'Fakes fängt man nicht mit Fakes – Fakten gehören zu Erwachsenen'],
       mission: 'Ein Wenn-dann-Satz für dein Handy. Und einmal bremsen, bevor du teilst.' }, folgen: {} },
   ],
-  n8_tidderich: [
-    ['hoffmann', 'Ça va? Das Video ist gefälscht. Die Schule kümmert sich.'],
-    ['hoffmann', 'Wer es geteilt hat: löschen. Mehr müsst ihr nicht tun.'],
-    ['erzaehler', 'Ihre Stimme ist normal. Ihre Augen nicht ganz. Jo guckt auf seinen Tisch.'],
-    { wahl: [
-      { t: '„Es tut mir leid. Ich hab’s nicht geteilt. Aber gesehen.“', wenn: (m) => !m.videoGeteilt, staerke: 'zuhoeren', herz: { hoffmann: 2 }, dann: [['hoffmann', '(nickt) Sehen ist nicht schlimm. Weiterschicken schon.']] },
-      { t: '„Ich hab’s geteilt. Sorry. Ist gelöscht.“', wenn: (m) => !!m.videoGeteilt, staerke: 'mut', herz: { hoffmann: 2 }, dann: [['hoffmann', '(nickt) Gut. Danke, dass du’s sagst.']] },
-      { t: '„Wir wissen, dass es KI ist. Alle hier.“', staerke: 'klar', herz: { hoffmann: 1 }, dann: [['hoffmann', 'Die hier vielleicht. Die 300 da draußen nicht.']] },
-      { t: '(Nichts sagen. Zuhören.)', staerke: 'warten', herz: { hoffmann: 1 }, dann: [['hoffmann', '(nickt dir zu) Danke, dass ihr zuhört.']] },
-    ] },
-    { tu: 'n8_joSorry' },
-    ['hoffmann', 'Und jetzt machen wir Unterricht. Ganz normal. Das ist mir gerade wichtig.'],
-  ],
-  n8_falle: [
-    ['mila', 'Gestern Abend. Unter dem Video. Der Account hat selbst kommentiert.'],
-    ['mila', '„lowkey stimmt“. Nach 40 Sekunden gelöscht. Ich hab einen Screenshot.'],
-    ['ben', 'Lowkey. Das sagt Luca dauernd.'],
-    ['mila', 'Andere auch. Ein Wort ist kein Beweis. Mehrere Fakten zusammen: vielleicht.'],
-    { wahl: [
-      { t: '„Wir stellen Luca eine Falle.“', merke: 'falleLuege', dann: [['mila', 'Nein. Wir fangen keine Fakes mit Fakes.'], ['mila', 'Und niemand von uns spielt Köder. Auch Ben nicht.']] },
-      { t: '„Wir sammeln, was wir sicher wissen. Und geben es ab.“', staerke: 'lesen', herz: { mila: 1 }, merke: 'falleEhrlich', dann: [['mila', 'Genau das. Eine Mappe. Für Herrn Kuedes.']] },
-      { t: '„Das ist Sache von Herrn Kuedes.“', staerke: 'hilfe', merke: 'falleKuedes', dann: [['mila', 'Ja. Aber er braucht Fakten, keine Gerüchte. Wir sortieren nur. Er entscheidet.']] },
-    ] },
-    { szene: 'spuren', id: 'mappe', def: (m) => MAPPE(m), ausgang: (r) => r.schluss,
+  n8_cdi: [
+    ['mila', 'Ein Handy. Ein Tisch. Keine Weiterleitung.'],
+    { szene: 'spuren', id: 'ki8', def: KI, ausgang: (r) => r.schluss,
       folgen: {
-        kuedes: { staerke: 'hilfe', herz: { mila: 2 }, merke: ['mappeKuedes', 'falleKuedes'], dann: [['erzaehler', 'Nach der Stunde. Ihr klopft an die Bürotür. Herr Kuedes nimmt die Mappe.'], ['kaya', 'Danke. Ab hier ist das meine Aufgabe. Und eure Pause ist eure.']] },
-        chat: { herz: { mila: -1 }, merke: 'mappeChat', dann: [['mila', 'Ich bring sie trotzdem zu Herrn Kuedes. Kommst du mit?'], ['erzaehler', 'Du gehst mit. Die Mappe ist schwerer, als sie aussieht.']] },
-        luca: { herz: { mila: -1 }, merke: 'mappeLuca', dann: [['mila', 'Nein. Herr Kuedes. Heute.'], ['erzaehler', 'Ihr bringt die Mappe ins Büro.']] },
-        offen: { merke: 'mappeOffen', dann: [['mila', 'Ich bring sie trotzdem hin. Er entscheidet, nicht wir.'], ['erzaehler', 'Ihr geht zusammen. Du klopfst.']] },
+        fake: { staerke: 'lesen', herz: { mila: 2 }, merke: ['k8Fake', 'spurKi'] },
+        vielleicht: { herz: { mila: -1 } },
+        weissnicht: { staerke: 'warten', herz: { mila: 1 }, merke: 'k8Gebremst' },
       } },
-    ['ben', 'Übrigens. Freitag hab ich Geburtstag. Die Kekse sind schon Teil davon.'],
+    { tu: 'n8_cdiFolge' },
+    ['erzaehler', 'Auf Milas Display springt die Zahl weiter. 2.600 Aufrufe.'],
+    ['erzaehler', 'Die Wahrheit ist langsamer als das Video.'],
+  ],
+  // Dienstag 10:00: Das Rätsel vom Dezember. Durch das Türglas.
+  n8_glas: [
+    ['erzaehler', 'Dienstag. 10:00. Du stehst vor eurer Tür. Du schaust durch das schmale Glas.'],
+    ['erzaehler', 'Der Saal sieht aus wie auf dem Foto von 8:34.'],
+    ['erzaehler', 'Nur dein Platz neben der Tür ist von hier nicht zu sehen.'],
+    ['erzaehler', 'Über dir hängt das grüne Notausgang-Schild. Es spiegelt sich im Glas.'],
+    { tu: 'n8_gruen' },
+    ['mila', 'Es war keiner von uns.'],
+    ['mila', 'Jemand stand hier. Im Flur. Um 8:34.'],
+    { tu: 'n8_kenanGlas' },
     { wahl: [
-      { t: '„Freitag bring ich was mit.“', herz: { ben: 2 }, merke: 'benGefragt', dann: [['ben', 'Echt jetzt? … Okay. Ich tu so, als wär ich nicht gerührt.']] },
-      { t: '„Wie alt wirst du? Hundert?“', herz: { ben: 1 }, dann: [['ben', 'Innerlich hundert. Außen dreizehn.']] },
+      { t: '„Wer hier stand, ist nicht unsere Sache.“', dann: [['mila', 'Vielleicht. Aber was hier passiert ist, schon.']] },
+      { t: '„Doch. Es ist unsere Sache.“', dann: [['mila', 'Dann schreiben wir es auf. Nur, was stimmt.']] },
+      { t: '„Wir schreiben auf, was wir wissen. Nicht mehr.“', staerke: 'klar', herz: { mila: 1 }, dann: [['mila', 'Genau so.']] },
     ] },
   ],
-  n8_post: [
-    ['erzaehler', 'Freitag. 9:48. Auf dem Weg in die Aula. Dein Handy vibriert.'],
-    { szene: 'chat', id: 'bday', def: BDAY, ausgang: (r) => (r.flags.chatLuca ? 'laut' : r.flags.lucaPrivat ? 'privat' : 'zu'),
-      folgen: { zu: { merke: 'falleZu' }, privat: { merke: ['falleZu', 'lucaPrivat'] }, laut: { merke: ['falleZu', 'chatLuca'], dann: [['mila', '(an der Tür) Lösch es. Jetzt. Die Mappe ist bei Erwachsenen.']] } } },
+  // Mittwoch 16:00: Die Mappe. Drei Streits machen drei Regeln. Entscheidung A (Namen) und B (zwei private Dinge).
+  n8_mappe: [
+    ['erzaehler', 'Mittwoch. 16:00. Jugendhaus. Auf dem Tisch liegt eine leere Mappe.'],
+    ['chiara', 'Papier. Kein Handy. Was auf Papier ist, kann keiner weiterleiten.'],
+    ['mila', 'Du suchst dir zwei Helfer aus. Mehr Leute, mehr Lecks.'],
+    { wahl: [
+      { t: 'Ben.', wenn: (m) => !!(true), herz: { ben: 1 }, merke: 'helfer_ben', dann: [] },
+      { t: 'Jo.', wenn: (m) => !!(true), herz: { jo: 1 }, merke: 'helfer_jo', dann: [] },
+      { t: 'Chiara.', wenn: (m) => !!(true), herz: { chiara: 1 }, merke: 'helfer_chiara', dann: [] },
+      { t: 'Noah.', wenn: (m) => !!(m.k7Gesetzt), herz: { noah: 1 }, merke: 'helfer_noah', dann: [] },
+      { t: 'Ayla.', wenn: (m) => !!(m.k7Gesetzt), herz: { ayla: 1 }, merke: 'helfer_ayla', dann: [] },
+      { t: 'Yusuf.', wenn: (m) => !!(m.k7YusufGehalten), herz: { yusuf: 1 }, merke: 'helfer_yusuf', dann: [] },
+    ] },
+    ['mila', 'Und wer noch?'],
+    { wahl: [
+      { t: 'Ben.', wenn: (m) => !!((true) && !m.helfer_ben), herz: { ben: 1 }, merke: 'helfer_ben', dann: [] },
+      { t: 'Jo.', wenn: (m) => !!((true) && !m.helfer_jo), herz: { jo: 1 }, merke: 'helfer_jo', dann: [] },
+      { t: 'Chiara.', wenn: (m) => !!((true) && !m.helfer_chiara), herz: { chiara: 1 }, merke: 'helfer_chiara', dann: [] },
+      { t: 'Noah.', wenn: (m) => !!((m.k7Gesetzt) && !m.helfer_noah), herz: { noah: 1 }, merke: 'helfer_noah', dann: [] },
+      { t: 'Ayla.', wenn: (m) => !!((m.k7Gesetzt) && !m.helfer_ayla), herz: { ayla: 1 }, merke: 'helfer_ayla', dann: [] },
+      { t: 'Yusuf.', wenn: (m) => !!((m.k7YusufGehalten) && !m.helfer_yusuf), herz: { yusuf: 1 }, merke: 'helfer_yusuf', dann: [] },
+    ] },
+    { tu: 'n8_helferDa' },
+    ['erzaehler', 'Drei Streits. Drei Regeln.'],
+    ['jo', 'Ich hab die Zettel aus der Fragen-Box. Die anonymen. Da steht was über Yusuf drin. Das zeigt, wie fies die Ecke ist.'],
+    { wahl: [
+      { t: '„Nichts Privates. Auch nicht über Yusuf.“', staerke: 'klar', herz: { yusuf: 1 }, dann: [['jo', '… Okay. Fair.']] },
+      { t: '„Leg sie rein. Je mehr, desto besser.“', merke: 'k8PrivatGewollt', dann: [['mila', 'Nein. Dann sind wir wie der Account.']] },
+    ] },
+    { tu: 'n8_regel1' },
+    ['ben', 'Wir posten die Mappe einfach. Dann wissen es alle. Zack.'],
+    { wahl: [
+      { t: '„Kein Pranger. Die Mappe geht zu Erwachsenen.“', staerke: 'klar', dann: [['ben', 'Langweilig. … Aber ja.']] },
+      { t: '„Gute Idee.“', dann: [['chiara', 'Dann machen wir genau das, was uns passiert ist.']] },
+    ] },
+    { tu: 'n8_regel2' },
+    ['erzaehler', 'Mila reißt eine Seite aus ihrem Heft.'],
+    ['mila', 'Ich hab auch eine Liste gemacht. Alle, die „lowkey“ sagen.'],
+    ['mila', 'Das ist ein Gerücht mit Namen. Das kommt nicht rein.'],
+    { tu: 'n8_regel3' },
+    ['jo', 'Schreib Luca rein. Weiß doch jeder.'],
+    { tu: 'n8_kenanWissen' },
+    { fest: true, wahl: [
+      { t: '(Namen hineinschreiben.)', merke: 'k8Namen', dann: [['erzaehler', 'Du schreibst „Luca“. Darunter, kleiner: was alle sagen.']] },
+      { t: '(Nur aufschreiben, was wir gesehen haben. Ohne Deutung.)', staerke: 'lesen', herz: { mila: 1 }, merke: 'k8NurBeobachtung', dann: [['erzaehler', 'Uhrzeiten. Orte. Was zu sehen war. Kein „weil“. Kein „bestimmt“.']] },
+      { t: '(Gar keine Namen.)', merke: 'k8KeineNamen', dann: [['chiara', 'Dann ist es ein Rätsel ohne Lösung.'], ['mila', 'Dann ist es ehrlich.']] },
+    ] },
+    { tu: 'n8_namenFolge' },
+    ['mila', 'Zwei Dinge gehören nicht uns.'],
+    { tu: 'n8_privatJo' },
+    { tu: 'n8_privatNummer' },
+    { blende: 'Mittwoch · 17:40' },
+    ['erzaehler', 'Die anderen sind gegangen. Mila packt die Mappe ein.'],
+    ['mila', 'Noch was. Eine Tatsache. Über mich.'],
+    ['mila', 'Ich hab am ersten Tag abgestimmt. Bei dir.'],
+    ['mila', 'Cringe.'],
+    { wahl: [
+      { t: '„Danke, dass du es sagst.“', herz: { mila: 2 }, dann: [['mila', 'Fakten statt Gerüchte. Gilt auch für mich.']] },
+      { t: '„Ich hab auch abgestimmt. Bei jemand anderem.“', wenn: (m) => !!m.abgestimmt, herz: { mila: 2 }, dann: [['mila', '(fast ein Lächeln) Dann sind wir zwei.']] },
+      { t: '(Nicken.)', herz: { mila: 1 }, dann: [] },
+    ] },
   ],
-  n8_ende: [
-    ['kaya', '(leise zu dir, Ben und Mila) Ich hab’s gesehen.'],
-    ['kaya', 'Danke, dass ihr gekommen seid.'],
-    { tu: 'n8_kuedesFolge' },
-    ['kaya', 'Ab jetzt ist das meine Aufgabe. Mit der Direktion.'],
-    ['kaya', 'Ihr macht jetzt Pause. Wirklich.'],
-    { tu: 'n8_schluss' },
+  n8_fach: [{ tu: 'n8_blatt' }],
+  // Donnerstag 14:00 (Fable, Schlüsselszene K8): die Übergabe
+  n8_sepas: [
+    ['erzaehler', 'Donnerstag. 14:00. Die Tür vom SePAS steht offen.'],
+    ['kaya', 'Kommt rein. Tür auf oder zu?'],
+    { wahl: [
+      { t: '„Zu.“', dann: [] },
+      { t: '„Auf.“', dann: [] },
+      { t: '(Mila anschauen.)', staerke: 'lesen', dann: [['mila', 'Zu.']] },
+    ] },
+    ['erzaehler', 'Mila legt die Mappe hin. Ihre Hand bleibt darauf.'],
+    ['mila', 'Da ist alles drin. Nur Fakten.'],
+    ['kaya', 'Darf ich sie aufmachen?'],
+    ['mila', '… Ja.'],
+    ['erzaehler', 'Er liest. Lange. Draußen quietscht ein Skateboard.'],
+    { tu: 'n8_kuedesLiest' },
+    ['kaya', 'Das ist viel Arbeit. Und es ist schlimm, was da steht.'],
+    ['kaya', 'Was soll ich damit machen? Und was nicht?'],
+    { wahl: [
+      { t: '„Dass das Video verschwindet.“', dann: [] },
+      { t: '„Dass alle wissen: Ich war’s nicht.“', dann: [] },
+      { t: '„Weiß ich nicht.“', dann: [] },
+    ] },
+    ['kaya', 'Das Erste versuche ich. Heute noch.'],
+    ['kaya', 'Das Zweite dauert. Das sag ich dir ehrlich.'],
+    ['mila', 'Und was machen Sie nicht?'],
+    ['kaya', 'Ich sag keinem, von wem die Mappe ist.'],
+    ['kaya', 'Aber für mich behalten kann ich sie nicht.'],
+    ['erzaehler', 'An der Wand hängt ein Zettel. BEE SECURE. 8002 1234.'],
+    ['kaya', 'Die helfen beim Löschen. Ich rufe an. Wollt ihr dabei sein?'],
+    { wahl: [
+      { t: '„Ja.“', staerke: 'hilfe', merke: 'k8Anruf', dann: [['erzaehler', 'Er stellt das Telefon auf laut. Eine ruhige Stimme fragt nach dem Link. Nach sonst nichts.']] },
+      { t: '„Nein. Machen Sie.“', dann: [] },
+      { t: '„Und der, der es war?“', staerke: 'zuhoeren', merke: 'k8FrageTaeter', dann: [] },
+    ] },
+    ['kaya', 'Der bekommt auch jemanden zum Reden. Jeder hier.'],
+    ['erzaehler', 'Mila nimmt die Hand von der Mappe.'],
+  ],
+  n8_tidderich: [
+    ['erzaehler', 'Freitag. 10:00. Mme Tidderich steht vorne. Sie setzt sich nicht.'],
+    ['hoffmann', 'Ich hab das Video gesehen.'],
+    ['hoffmann', 'Es hat wehgetan, obwohl ich wusste, dass es falsch ist.'],
+    ['hoffmann', 'Ich hab zu spät gesehen, was in dieser Klasse los ist.'],
+    ['hoffmann', 'Das tut mir leid.'],
+    ['erzaehler', 'Keiner weiß, wohin er schauen soll.'],
+    { tu: 'n8_joSorry' },
+    ['hoffmann', 'Hefte raus.'],
+  ],
+  n8_armband: [
+    ['erzaehler', 'Freitag. 15:50. Der erste heiße Tag. 27 Grad an der Haltestelle.'],
+    ['erzaehler', 'Dario schiebt die Ärmel hoch.'],
+    ['erzaehler', 'Am linken Handgelenk: ein geflochtenes Armband.'],
+    ['erzaehler', 'Wie auf der Zeichnung.'],
+    { tu: 'n8_blick' },
+    ['dario', 'Schönes Wochenende.'],
+    { tu: 'kapitelEnde' },
   ],
 };
 
 export const tunN8 = (c) => ({
-  n8_kuedesFolge: () => [...(c.S.merke.lucaPrivat ? [['kaya', 'Schreib ihm nicht mehr. Ab jetzt machen wir das.']] : []),
-    ...(c.S.merke.mappeKuedes || c.S.merke.falleKuedes ? [['kaya', 'Eure Mappe von Mittwoch. Sauber. Keine Gerüchte, nichts Privates. Das hat geholfen.']] : [])],
-  n8_milaStart: () => (c.S.merke.videoGeteilt ? [['mila', '(guckt dich an) Du hast es geteilt. Ich hab’s gesehen.'], ['mila', 'Du kannst es noch löschen. Jetzt.']] : []),
-  n8_joSorry: () => (c.S.merke.joIchBotschaft || c.S.merke.joGehoert ? [['jo', '(steht auf) Mme Tidderich … ich hab’s geliked. Sorry. Echt.'], ['hoffmann', 'Okay, Jo. Angekommen.']] : []),
-  n8_schluss: () => [
-    { blende: 'Sonntag · 23:14' },
-    ['erzaehler', 'Eine Nachricht von Dario.'],
-    ['dario', '(Nachricht) bist du wach? ich kann nicht schlafen. seit wochen nicht.'],
-    ['dario', '(Nachricht) kann ich dir was erzählen? morgen? bitte'],
-    { wahl: [
-      { t: '„Morgen früh. Haltestelle. Ich bin da.“', herz: { dario: 1 }, dann: [['dario', '(Nachricht) ok. danke 🙏']] },
-      { t: '„Morgen früh, Haltestelle. Wenn’s jetzt gefährlich ist: 112.“', staerke: 'hilfe', herz: { dario: 1 }, dann: [['dario', '(Nachricht) nicht gefährlich. nur laut im kopf. bis morgen']] },
-    ] },
-    { tu: 'kapitelEnde' },
-  ],
+  n8_feedFolge: () => {
+    const m = c.S.merke, n = m.k8Angesehen || 0;
+    return n ? [['erzaehler', n >= 3 ? 'Dreimal angesehen. Dein Feed zeigt dir jetzt nur noch das.' : 'Jedes Mal, wenn du es anschaust, kommen neue Kopien dazu.']] : [];
+  },
+  n8_milaPost: () => (c.S.merke.milaKommentiert ? [
+    ['mila', 'Weißt du noch? Dezember.'],
+    ['erzaehler', 'Sie zeigt dir den alten Post. Vierzehn Antworten. Alle unter deinem Satz.'],
+    ['mila', 'Du hast es gut gemeint. Es wurde trotzdem größer.'],
+  ] : []),
+  n8_cdiFolge: () => (c.S.merke.k8Fake ? [['du', 'Nicht echt.'], ['mila', 'Das wissen jetzt genau zwei.']] : [['mila', 'Nicht echt. Schrift, Ohrring, Atem.'], ['mila', 'Das wissen jetzt genau zwei.']]),
+  n8_gruen: () => {
+    c.ui.toast('<b>🔎 Gelöst</b><span>Das Foto von 8:34 kam durch das Türglas. Der grüne Fleck ist das Notausgang-Schild.</span>', 'ly-t-ent');
+    c.S.merke.spurGlas = true;
+    return [['erzaehler', c.S.merke.spurGruen ? 'Ein grüner Fleck. Am Rand. Wie auf dem Foto.' : 'Ein grüner Fleck im Glas.']];
+  },
+  n8_kenanGlas: () => (c.S.merke.kenanGesehen ? [['erzaehler', 'Du weißt noch, wer um 8:31 hier vorbeiging. Kenan. Mit einem gelben Zettel.']] : []),
+  n8_helferDa: () => {
+    const m = c.S.merke, n = ['ben', 'jo', 'chiara', 'noah', 'ayla', 'yusuf'].filter((id) => m['helfer_' + id]);
+    const N = { ben: 'Ben', jo: 'Jo', chiara: 'Chiara', noah: 'Noah', ayla: 'Ayla', yusuf: 'Yusuf' };
+    const r = [['erzaehler', 'Am Tisch: Mila, du, ' + n.map((x) => N[x]).join(' und ') + '.']];
+    if (!m.helfer_jo) r.push(['erzaehler', 'Jo kommt trotzdem. Er setzt sich an den Rand.']);
+    if (!m.helfer_ben) r.push(['erzaehler', 'Ben auch. Mit Keksen.']);
+    if (m.helfer_noah) r.push(['noah', 'Ich kann Seiten nummerieren. Das kann ich gut.']);
+    return r;
+  },
+  n8_regel1: () => { c.ui.toast('<b>Regel 1</b><span>Nichts Privates.</span>'); return []; },
+  n8_regel2: () => { c.ui.toast('<b>Regel 2</b><span>Kein Pranger.</span>'); return []; },
+  n8_regel3: () => { c.ui.toast('<b>Regel 3</b><span>Fakten statt Gerüchte.</span>'); return c.S.merke.k6DateiGepostet ? [['mila', 'Und nichts mehr in den Chat. Wie im Januar. Das war ein Fehler. Von uns allen.']] : []; },
+  n8_kenanWissen: () => (c.S.merke.kenanGesehen ? [['erzaehler', 'Und du weißt noch etwas: Kenan ging um 8:31 am Glas vorbei.']] : []),
+  n8_namenFolge: () => {
+    const m = c.S.merke;
+    m.k8KenanDrin = !!(m.kenanGesehen && (m.k8Namen || m.k8NurBeobachtung));
+    m.k8LucaDrin = !!m.k8Namen;
+    return m.k8LucaDrin ? [['jo', '(grinst) Endlich.'], ['erzaehler', 'Jo hat sein Handy schon in der Hand. Am Abend wissen es zwölf Leute.']] : [];
+  },
+  // Entscheidung B: zwei private Dinge – vorher fragen, einfach reinlegen oder weglassen
+  n8_privatJo: () => {
+    const m = c.S.merke;
+    if (!(m.k6Datei || m.k6NurMila || m.k6KuedesDatei || m.k6DateiGepostet)) return [];
+    return [['mila', 'Erstens: Jos Sprachnachricht.'], { fest: true, wahl: [
+      { t: '(Jo vorher fragen.)', staerke: 'einbeziehen', herz: { jo: 2 }, merke: 'k8JoGefragt', dann: [['erzaehler', 'Jo schluckt.'], ['jo', 'Mach. Aber ich will dabei sein, wenn er’s hört.']] },
+      { t: '(Einfach reinlegen.)', herz: { jo: -1 }, merke: 'k8JoReingelegt', dann: [['erzaehler', 'Jo sieht es. Er sagt nichts.']] },
+      { t: '(Weglassen.)', merke: 'k8JoWeg', dann: [] },
+    ] }];
+  },
+  n8_privatNummer: () => {
+    const m = c.S.merke;
+    const was = 'die Zeichnung aus deiner Jacke' + (m.nummerScreenshot || m.nummer7Screenshot ? ' und der Screenshot' : '');
+    const opt = [
+      ...(m.nummerBlockiert ? [] : [{ t: '(Die Nummer vorher fragen.)', staerke: 'einbeziehen', herz: { lina: 2 }, merke: 'k8NummerGefragt', dann: [
+        ['erzaehler', 'Du schreibst: „darf ich deine zeichnung in eine mappe legen? für herrn kuedes.“'],
+        ['erzaehler', 'Lange nichts. Dann:'],
+        ['nummer', 'nein. aber ich geb dir was besseres.'] ] }]),
+      { t: '(Einfach reinlegen.)', merke: 'k8NummerReingelegt', dann: [] },
+      { t: '(Weglassen.)', merke: 'k8NummerWeg', dann: [] },
+    ];
+    return [['mila', 'Zweitens: ' + was + '. Von der Nummer.'], { fest: true, wahl: opt }];
+  },
+  n8_blatt: () => (c.S.merke.k8NummerGefragt ? (() => {
+    c.S.merke.spurNovember = true;
+    c.ui.toast('<b>🔎 Spur</b><span>Zwei an der Haltestelle. Ein Handy zwischen ihnen. November.</span>', 'ly-t-ent');
+    return [['erzaehler', 'Donnerstag. In deinem Fach liegt ein Blatt.'], ['erzaehler', 'Zwei Jungen an der Haltestelle. Von hinten. Ein Handy zwischen ihnen.'], ['erzaehler', 'Unten, klein, ein Datum: 28. November.']];
+  })() : []),
+  n8_kuedesLiest: () => {
+    const m = c.S.merke, r = [];
+    if (m.k8LucaDrin) r.push(['kaya', 'Das hier ist beobachtet. Das hier ist vermutet.'], ['erzaehler', 'Er legt ein Blatt zur Seite. Das mit Lucas Namen.'], ['kaya', 'Vermutungen kann ich nicht benutzen. Beobachtungen schon.']);
+    r.push((m.k5Kuedes || m.k6KuedesDatei || m.k5Tidderich) ? ['kaya', 'Ich kenn die Vorgeschichte. Seit Januar.'] : ['kaya', 'Das ist alles neu für mich. Seit wann geht das so?']);
+    return r;
+  },
+  n8_joSorry: () => ((c.S.merke.k6JoSelbst || c.S.merke.k6JoVerstanden || c.S.merke.k8JoGefragt) ? [['jo', '(steht auf) Mme Tidderich … ich hab’s in drei Gruppen gestellt. Sorry.'], ['hoffmann', 'Danke, Jo. Angekommen.']] : []),
+  n8_blick: () => (c.S.merke.zeichnungDarioGezeigt ? [['erzaehler', 'Er schaut dich dabei an. Er will, dass du es siehst.']] : [['erzaehler', 'Er schaut auf die Straße. Nicht auf dich.']]),
 });

@@ -19,6 +19,7 @@ export function createUI({ root, input, speech }) {
   const bingo = el('div', 'ly-bingo hud-interactive'); bingo.hidden = true; hud.appendChild(bingo);
   const knoepfe = el('div', 'ly-knoepfe', '<button type="button" data-k="mission" title="Stunden und Missionen" aria-label="Stunden und Missionen"><span>🎟</span></button><button type="button" data-k="handy" title="Handy: Nachrichten (N)" aria-label="Handy"><span>📱</span><i class="ly-badge" hidden></i></button><button type="button" data-k="garderobe" title="Garderobe (G)" aria-label="Garderobe"><span>👕</span><i class="ly-badge" hidden></i></button><button type="button" data-k="fahrt" title="Fahren: R = Skateboard, T = Trottinette" aria-label="Fahren">🛹</button><button type="button" data-k="foto" title="Fotomodus (C)" aria-label="Fotomodus">📷</button><button type="button" data-k="raus" title="Kurz raus (P)" aria-label="Kurz raus">⏸</button><button type="button" data-k="journal" title="Journal (Tab)" aria-label="Journal">☰</button>'); hud.appendChild(knoepfe);
   const mutEl = el('div', 'ly-mut'); mutEl.hidden = true; hud.appendChild(mutEl);   // Anspannung während einer Mutprobe
+  const anzEl = el('div', 'ly-anz'); anzEl.hidden = true; hud.appendChild(anzEl);   // Dauer-Anzeige einer Woche (Anspannung, Akku, Mut)
   const skateEl = el('div', 'ly-skate'); skateEl.hidden = true; hud.appendChild(skateEl);   // Skate-Session: Zeit, Punkte, Trick
   const skateKn = el('div', 'ly-skate-knoepfe hud-interactive'); skateKn.hidden = true; hud.appendChild(skateKn);
   const dialog = el('div', 'ly-dialog hud-interactive'); dialog.hidden = true; root.appendChild(dialog);
@@ -46,6 +47,21 @@ export function createUI({ root, input, speech }) {
     document.addEventListener('keydown', taste, true); v.onclick = fertig;
     setTimeout(fertig, 5600);
   });
+  // Dauer-Anzeige über eine ganze Woche (Kapitel): bleibt sichtbar, auch im Gespräch. a = { art: 'anspannung'|'akku'|'mut', wert } | null
+  let anzAlt = null;
+  ui.anzeige = (a) => {
+    if (!a) { anzEl.hidden = true; anzAlt = null; return; }
+    const ART = { anspannung: ['Anspannung', (w) => (w < 30 ? '#3fa66b' : w < 70 ? '#e9a23b' : '#d6452f')], akku: ['Akku', (w) => (w > 60 ? '#3fa66b' : w > 25 ? '#e9a23b' : '#d6452f')], mut: ['Mut', () => '#4f88c8'] };
+    const [titel, farbe] = ART[a.art] || ART.anspannung;
+    const w = Math.max(0, Math.min(100, Math.round(a.wert)));
+    if (anzEl.hidden || anzEl.dataset.art !== a.art) { anzEl.innerHTML = '<small>' + esc(titel) + '</small><div class="ly-anz-rohr"><i></i></div><b></b><em></em>'; anzEl.dataset.art = a.art; }
+    anzEl.hidden = false;
+    const i = anzEl.querySelector('i'), b = anzEl.querySelector('b'), em = anzEl.querySelector('em');
+    i.style.height = w + '%'; i.style.background = farbe(w); b.textContent = w + (a.art === 'akku' ? ' %' : '');
+    anzEl.setAttribute('aria-label', titel + ': ' + w);
+    if (anzAlt && anzAlt.art === a.art && w !== anzAlt.w) { em.textContent = (w > anzAlt.w ? '+' : '−') + Math.abs(w - anzAlt.w); anzEl.classList.remove('puls'); void anzEl.offsetWidth; anzEl.classList.add('puls'); }
+    anzAlt = { art: a.art, w };
+  };
   ui.blendeAus = (ms = 650) => new Promise((ok) => setTimeout(() => { blende.classList.remove('an'); ok(); }, ms));
   // Fotomodus (wie in großen Spielen): HUD weg, Kamera frei um die eigene Figur, Pose, Filter, Unschärfe, Bild speichern
   ui.fotoAn = () => root.classList.contains('ly-foto-an');

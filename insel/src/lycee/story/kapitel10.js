@@ -1,85 +1,67 @@
-// Drei Jahre Annexe – 7ème, Kapitel 10 „Abschluss“ (Kurs Jahr 1, Modul 9: Rückblick, Jahres-Kurve, Brief an mich,
-// Stärken-Rücken, Erden in fünf Sinnen). Faden @annexe.cam wird aufgelöst: Dario sagt es vor allen, Luca trägt Folgen –
-// Verzeihen muss niemand, fair bleiben schon. Vier Enden je nach bester Freundschaft. Ausblick auf die 6ème (die Band).
+// Storyline 7e „@annexe.cam“ (nach der Storyline von Fable) – Kapitel 10 „Hinter der Kamera“, Juli, letzte Schulwoche.
+// Verdecktes Thema: Abschluss (Rückblick, Wiedergutmachung). Zurückschauen heißt, sich auch auf den Blättern zu sehen,
+// auf denen man nicht gut aussieht. Wiedergutmachung ist klein und konkret: eine Kopie löschen, ein Satz ohne „aber“.
+// Wer verzeiht, entscheidet das selbst. Und ganz am Schluss hebt wieder jemand ein Handy. Diesmal stehst du daneben.
+// Fünf Enden: Noah, Mila, Ben oder Jo (höchste Freundschaft) – das Lina-Ende kommt dazu, nicht stattdessen.
 import { S10_RUECKBLICK } from './skills-j1.js';
-// Stuhlkreis vorne in der Aula (Mitte −14.5 | −63.4), Lücke im Süden für den Spieler
+const pult = (r, c, s) => [-24.25 + r * 2.1, -27.2 + c * 3.4 + s * 0.62, -Math.PI / 2, 'sitzt'];
+const KLASSE = { ayla: pult(0, 0, -1), ben: pult(1, 2, 1), chiara: pult(2, 1, -1), yusuf: pult(1, 0, 1), jo: pult(3, 2, -1), lina: pult(3, 0, 1), noah: pult(0, 1, 1), mila: pult(2, 2, 1) };
 const AULA = { noah: [-16.18, -64.48, 1.00], mila: [-12.82, -64.48, -1.00], ben: [-12.50, -63.34, -1.60], jo: [-16.50, -63.34, 1.60], ayla: [-16.17, -62.31, 2.15], lina: [-12.83, -62.31, -2.15], dario: [-13.56, -61.64, -2.65] };
-const FEST = { rantini: [4.5, 19.5, Math.PI], ben: [4, 14, 0.2], jo: [5.2, 15.4, -0.4], ayla: [2.5, 15, 0.3], noah: [7.2, 13.2, -0.6], mila: [3.2, 12.8, 0.1], lina: [1.8, 13.4, 0.4],
-  dario: [5.6, 17.6, Math.PI], kaya: [8.6, 17.2, -2.4], hoffmann: [9.4, 15.8, -2], luca: [11.6, 12.4, -1.2] };
 const F = { noah: { id: 'noah', name: 'Noah', farbe: '#3f78b8' }, mila: { id: 'mila', name: 'Mila', farbe: '#2fb8a8' }, ben: { id: 'ben', name: 'Ben', farbe: '#d9a21b' }, jo: { id: 'jo', name: 'Jo', farbe: '#c0392b' },
   lina: { id: 'lina', name: 'Lina', farbe: '#9b7bc8' }, ayla: { id: 'ayla', name: 'Ayla', farbe: '#e85d75' }, dario: { id: 'dario', name: 'Dario', farbe: '#d9693f' } };
 
+// Sommerfest an der Skate-Ecke: Dario auf der Bank, alle drumherum, die Erwachsenen an der Tür zur Aula
+const FEST = { dario: [-33.4, 12.4, 1.2], ben: [-30.2, 14.2, -2.0], jo: [-31.6, 10.0, -0.6], chiara: [-29.6, 11.6, -1.6], mila: [-30.6, 15.6, -2.4], noah: [-28.8, 13.4, -1.8],
+  lina: [-28.2, 16.8, -2.2], ayla: [-31.8, 16.4, -2.8], yusuf: [-29.0, 9.6, -1.0], kaya: [-24.6, 12.6, -1.6], hoffmann: [-24.4, 14.0, -1.6], mesenberg: [-24.8, 11.2, -1.6] };
+
 export const SCHRITTE_N10 = [
-  { id: 'k10_morgen', kap: 10, tag: 'Montag', uhr: 7.45, titel: 'Zurück im Chat', ziel: 'Letzte Schulwoche. Noah wartet an der Haltestelle.', marker: 'noah',
-    start: { teleport: 'busAnkunft', gespraech: 'n10_chat' },
-    leute: { noah: [-21.5, 41.6, -1.6, 'sitzt'] },
-    fertig: { reden: 'noah', gespraech: 'n10_noah' } },
+  { id: 'k10_mauer', kap: 10, tag: 'Montag', uhr: 7.42, titel: 'Die Mauer', ziel: 'Haltestelle. Dario sitzt auf der Mauer. Nicht auf der Bank.', marker: 'dario',
+    start: { teleport: 'busAnkunft' },
+    leute: { dario: [-23.6, 39.8, -1.2], fahrer: [-11.2, 44.6, -Math.PI / 2] },
+    fertig: { reden: 'dario', gespraech: 'n10_mauer' } },
   { id: 'k10_skills', kap: 10, tag: 'Montag', uhr: 9.9, neben: 'skills', titel: 'Skills: Dein Jahr', ziel: 'Aula. Herr Kuedes hat eine Wäscheleine voller Fotos gespannt.', marker: 'kaya',
     start: { teleport: 'eingangHof' },
     leute: { kaya: [-14.50, -65.40, 0.00], mesenberg: [-13.54, -65.16, -0.50], ...AULA },
     fertig: { reden: 'kaya', gespraech: 'n10_skills' } },
+  { id: 'k10_bote', kap: 10, tag: 'Montag', uhr: 10.0, titel: 'Sag Dario …', ziel: 'Hof. Alle reden über Freitag, 15 Uhr. Ben winkt.', marker: 'ben',
+    start: { teleport: 'eingangHof' },
+    leute: { ben: [2.2, 17.2, -0.4], chiara: [3.6, 15.6, -1.2], jo: [0.6, 15.4, 1.0] },
+    fertig: { reden: 'ben', gespraech: 'n10_bote' } },
+  { id: 'k10_bilder', kap: 10, tag: 'Dienstag', uhr: 14.0, titel: 'Dieses auch?', ziel: 'Aula. Mme Kiesser hängt Zeichnungen auf.', marker: 'kiesser',
+    start: { teleport: 'eingangHof' },
+    leute: { kiesser: [-14.50, -65.40, 0.00], lina: [-13.2, -64.2, -0.6] },
+    fertig: { reden: 'kiesser', gespraech: 'n10_bilder' } },
   { id: 'k10_ruecken', kap: 10, tag: 'Mittwoch', uhr: 9.9, neben: 'skills', titel: 'Skills: Stärken-Rücken', ziel: 'Aula. Alle haben ein weißes Blatt auf dem Rücken.', marker: 'kaya',
     start: { teleport: 'eingangHof' },
     leute: { kaya: [-14.50, -65.40, 0.00], ...AULA },
     fertig: { reden: 'kaya', gespraech: 'n10_ruecken' } },
-  { id: 'k10_luca', kap: 10, tag: 'Donnerstag', uhr: 12.4, titel: 'Luca', ziel: 'Luca sitzt allein in der Skate-Ecke. Ohne Handy.', marker: 'luca',
-    start: { teleport: 'eingangHof' },
-    leute: { luca: [-34, 10.5, 1.2, 'sitzt'] },
-    fertig: { reden: 'luca', gespraech: 'n10_luca' } },
-  { id: 'k10_fest', kap: 10, tag: 'Freitag', uhr: 13.5, titel: 'Sommerfest', ziel: 'Sommerfest im Hof. Lampions. Dario steht neben der Bühne.', marker: 'dario',
-    start: { teleport: 'eingangHof', gespraech: 'n10_festStart' },
+  { id: 'k10_karten', kap: 10, tag: 'Mittwoch', uhr: 10.0, titel: 'Eine Karte für die 5e', ziel: 'Saal 1.04. Mme Tidderich teilt Karten aus.', marker: 'hoffmann',
+    start: { teleport: 'saal104Tuer' },
+    leute: { hoffmann: [-27, -24, Math.PI / 2], ...KLASSE },
+    fertig: { reden: 'hoffmann', gespraech: 'n10_karten' } },
+  { id: 'k10_kantine', kap: 10, tag: 'Mittwoch', uhr: 12.17, titel: 'Löschen', ziel: 'Kantine. Chiara kommt an deinen Tisch.', marker: 'chiara',
+    start: { teleport: 'kantineTuer' },
+    leute: { chiara: [12.4, -12.6, -2.2], noah: [10.75, -11.1, Math.PI / 2, 'sitzt'], mila: [10.75, -10.1, Math.PI / 2, 'sitzt'], ben: [16.65, -11.1, Math.PI / 2, 'sitzt'], jo: [16.65, -10.1, Math.PI / 2, 'sitzt'], ayla: [16.65, -14.1, Math.PI / 2, 'sitzt'] },
+    fertig: { reden: 'chiara', gespraech: 'n10_kantine' } },
+  { id: 'k10_fest', kap: 10, tag: 'Freitag', uhr: 14.87, titel: 'Hinter der Kamera', ziel: 'Sommerfest. Dario steht an der Bank in der Skate-Ecke.', marker: 'dario',
+    start: { teleport: 'eingangHof', gespraech: 'n10_festMorgen' },
     leute: FEST,
     fertig: { reden: 'dario', gespraech: 'n10_fest' } },
 ];
 
-// ---------- Zurück im Klassenchat: die 7P2 gibt sich eigene Chat-Regeln (Abstimmung, eine aus dem Klassenvertrag) ----------
-const ZURUECK = (m) => ({
-  titel: '7P2 ohne Kamera', mitglieder: 19, dauer: 42,
-  nachrichten: [
-    { nach: 0.5, system: true, text: 'Mila hat die Gruppe umbenannt: „7P2 ohne Kamera“.' },
-    { nach: 1.6, wer: 'Ayla', text: 'besserer name. ich hab abgestimmt 💅' },
-    { nach: 3.6, wer: 'Ben', text: 'neuer name. gefällt mir' },
-    { nach: 6.6, wer: 'Mila', text: 'Info: @annexe.cam postet seit 9 Tagen nichts. Ich zähle mit.' },
-    { nach: 9.6, wer: 'Jo', text: 'neuer name, gleiche leute. sorry nochmal wegen der sprachnachricht', setzt: 'joSorry' },
-    { nach: 13, wer: 'Noah', text: 'Bus in 5 Minuten. Platz ist frei. Wie immer.' },
-    { nach: 17, wer: 'Lina', text: '(schickt eine Zeichnung: Gerd die Taube mit Partyhut)' },
-    { nach: 20, wer: 'Mila', text: 'Vorschlag: Wir geben uns Chat-Regeln. Eine pro Person. Abstimmen unten 👇', setzt: 'abstimmung' },
-    { nach: 23, wer: 'Ayla', text: 'meine: keine umfragen über menschen. nie wieder.' },
-    { nach: 26, wer: 'Noah', text: 'Meine: Wer Stopp sagt, wird nicht ausgelacht.' },
-  ],
-  aktionen: [
-    { id: 'jo', t: 'Jo antworten', symbol: '💬', wenn: 'joSorry', wahl: [
-      { t: '„Schon okay. Du hast es ja nicht gepostet.“', setzt: 'joVerziehen', ich: 'schon okay. du hast es ja nicht gepostet', folgen: [{ nach: 1.6, wer: 'Jo', text: 'trotzdem. war dumm 🫡' }] },
-      { t: '„Okay. Aber das war echt nicht cool.“', setzt: 'joEhrlich', ich: 'okay. aber das war echt nicht cool', folgen: [{ nach: 1.6, wer: 'Jo', text: 'weiß ich. deshalb sag ichs ja' }] },
-    ] },
-    { id: 'regel', t: 'Abstimmen: deine Chat-Regel', symbol: '🗳️', wenn: 'abstimmung', wahl: [
-      ...(m.regelPosten ? [{ t: '„Niemand wird ohne Fragen fotografiert.“ (unsere Regel vom ersten Tag)', setzt: 'regelVertrag', ich: 'meine regel: niemand wird ohne fragen fotografiert. stand schon am ersten tag an der tür', folgen: [{ nach: 1.6, wer: 'Mila', text: 'Erster Tag. Du hast dir das gemerkt.' }, { nach: 3.4, system: true, text: 'Mila hat die Regeln oben angepinnt. 17 von 19 haben abgestimmt.' }] }] : []),
-      ...(m.regelLina ? [{ t: '„Keiner lacht, wenn jemand was falsch sagt.“ (Linas Regel)', setzt: 'regelVertrag', ich: 'meine regel: keiner lacht wenn jemand was falsch sagt. linas regel', folgen: [{ nach: 1.6, wer: 'Lina', text: '🤍' }, { nach: 3.4, system: true, text: 'Mila hat die Regeln oben angepinnt. 17 von 19 haben abgestimmt.' }] }] : []),
-      ...(m.regelFotos ? [{ t: '„Keine Fotos von Leuten ohne Ja.“ (aus unserem Klassenvertrag)', setzt: 'regelVertrag', ich: 'meine regel: keine fotos von leuten ohne ja. stand schon im klassenvertrag', folgen: [{ nach: 1.6, wer: 'Mila', text: 'Stimmt! September. Du hast dir das gemerkt.' }, { nach: 3.4, system: true, text: 'Mila hat die Regeln oben angepinnt. 17 von 19 haben abgestimmt.' }] }] : []),
-      ...(m.regelPersoenlich ? [{ t: '„Niemand muss was Persönliches posten.“ (aus unserem Klassenvertrag)', setzt: 'regelVertrag', ich: 'meine regel: niemand muss was persönliches posten. aus dem klassenvertrag', folgen: [{ nach: 1.6, wer: 'Noah', text: 'Danke. Wirklich.' }, { nach: 3.4, system: true, text: 'Mila hat die Regeln oben angepinnt. 17 von 19 haben abgestimmt.' }] }] : []),
-      ...(m.regelVertraulich ? [{ t: '„Privat bleibt privat. Außer bei Gefahr.“ (aus unserem Klassenvertrag)', setzt: 'regelVertrag', ich: 'meine regel: privat bleibt privat. außer bei gefahr. wie im klassenvertrag', folgen: [{ nach: 1.6, wer: 'Lina', text: '🤍' }, { nach: 3.4, system: true, text: 'Mila hat die Regeln oben angepinnt. 17 von 19 haben abgestimmt.' }] }] : []),
-      ...(m.regelKekse ? [{ t: '„Jede Woche Kekse. Pflicht.“ (aus unserem Klassenvertrag)', setzt: 'regelKekse2', ich: 'meine regel: jede woche kekse. steht im vertrag. ist gesetz', folgen: [{ nach: 1.4, wer: 'Ben', text: 'endlich 🍪' }, { nach: 3.4, system: true, text: 'Mila hat die Regeln oben angepinnt. 17 von 19 haben abgestimmt.' }] }] : []),
-      { t: '„Keine Screenshots von privaten Nachrichten ohne Ja.“', setzt: 'regelScreens', ich: 'meine regel: keine screenshots von privaten nachrichten ohne ja', folgen: [{ nach: 1.6, wer: 'Jo', text: 'ok das trifft mich. aber fair 🫡' }, { nach: 3.4, system: true, text: 'Mila hat die Regeln oben angepinnt. 17 von 19 haben abgestimmt.' }] },
-      { t: '„Sprachnachrichten über Leute nur, wenn sie es okay finden.“', setzt: 'regelSprach', ich: 'meine regel: sprachnachrichten über leute nur mit ok', folgen: [{ nach: 1.6, wer: 'Mila', text: 'Notiert. Kommt in die Beschreibung.' }, { nach: 3.4, system: true, text: 'Mila hat die Regeln oben angepinnt. 17 von 19 haben abgestimmt.' }] },
-    ] },
-    { id: 'hallo', t: 'Hallo sagen', symbol: '👋', setzt: 'hallo', ich: 'hi 👋 danke euch', folgen: [{ nach: 1.4, wer: 'Ben', text: 'da bist du ja 🎉' }] },
-    { id: 'weg', t: 'Handy weg, Bus kommt', symbol: '🚌', sys: 'Der Bus kommt. Du lächelst. Ein bisschen.', ende: true },
-  ],
-});
-
-// ---------- Jahres-Kurve ----------
 const KURVE = (m) => ({
   wo: 'Aula · Wäscheleine mit Fotos',
   momente: [
-    { sy: '📸', t: 'Erster Tag. Du landest auf @annexe.cam.', dein: m.fotoGesagt ? 'Du hast es Mme Tidderich gesagt. Vor allen.' : m.noahGerettet ? 'Du hast Noah gesagt: Zweimal Hallo ist okay.' : 'Du hast den Tag überstanden. Immerhin.' },
-    { sy: '📋', t: 'Die Liste. „Top 5 langweiligste Leute.“', dein: m.noahVerteidigt ? 'Du hast im Chat für Noah geschrieben.' : m.staerkenKonkret ? 'Du hast echte Stärken-Karten verschenkt.' : 'Du hast zugesehen. Und viel gemerkt.' },
-    { sy: '🏃', t: 'Sportfest. Und das Foto von Mila.', dein: m.milaGestoppt ? 'Du hast gesagt: Hört auf.' : m.koerperGespuert ? 'Du hast gespürt, wo die Aufregung sitzt.' : 'Ihr wart Letzte. Zusammen.' },
-    { sy: '📐', t: 'Mathe-Test mit Puls 140.', dein: m.testSkills ? 'Du hast deinen Skills-Koffer benutzt.' : m.noahAtem ? 'Du hast mit Noah geatmet.' : 'Blackout. Und danach wieder Luft.' },
-    { sy: '🖼️', t: 'Der Fake-Screenshot. Alle dachten, du warst es.', dein: m.fakeKuedes ? 'Du bist ruhig zu Herrn Kuedes gegangen.' : m.neuerSatz ? 'Du hast einen neuen Satz für dich gefunden.' : 'Die Gedanken waren laut.' },
-    { sy: '✋', t: 'Klassenfoto. Und Luca filmt Mila.', dein: m.stoppKlar ? 'Dein Stopp war klar.' : m.joGehoert ? 'Du hast Jo wirklich zugehört.' : 'Danach: raus aus dem Klassenchat.' },
-    { sy: '🧩', t: 'Allein. Wer bleibt?', dein: m.druckNein ? 'Du hast Nein gesagt. Drei gegen dich.' : m.druckJa ? 'Du hast unter Druck Ja gesagt. Und viel nachgedacht.' : m.buehneGekippt ? 'Du hast die Bühne gekippt. Für Noah.' : 'Ben ist geblieben. Sofort.' },
-    { sy: '🤖', t: 'Das KI-Video von Mme Tidderich.', dein: m.videoGebremst || m.videoKlartext ? 'Du hast nicht geteilt.' : m.mappeKuedes ? 'Ihr habt eine saubere Beweis-Mappe gemacht.' : 'Die Mappe ging zu Herrn Kuedes.' },
-    { sy: '🎒', t: 'Dario an der Haltestelle.', dein: m.darioBegleiten ? 'Du bist mit zu Herrn Kuedes gegangen.' : 'Du hast zugehört.' },
+    { sy: '📸', t: 'Erster Tag. Du landest auf @annexe.cam.', dein: m.abgestimmt ? 'Bei der Umfrage hast du mitgeklickt. Einmal.' : 'Du hast nicht mitgeklickt.' },
+    { sy: '📋', t: 'Die Liste. Platz sechs.', dein: m.listeBeiNoah ? 'Du bist zu Noah gegangen.' : m.listeGelacht ? 'Du hast mitgelacht. Kurz.' : 'Du hast weggeschaut.' },
+    { sy: '🧊', t: 'Der Würfel. Ein Satz über Mila.', dein: m.milaGesagt ? 'Du hast es ihr selbst gesagt.' : m.milaKommentiert ? 'Du hast kommentiert.' : 'Du hast nichts gemacht.' },
+    { sy: '📐', t: '8:34. Noah auf der Treppe.', dein: m.k4BeideGeblieben || m.k4YusufGeschickt ? 'Du bist bei ihm geblieben.' : m.k4LenningGeholt ? 'Du hast Hilfe geholt.' : 'Ihr habt geatmet.' },
+    { sy: '🖼️', t: 'Der Screenshot. „Hinten links“.', dein: m.k4Ruhig ? 'Du hast einen ruhigen Satz geschrieben.' : m.k4Wut ? 'Du hast in Großbuchstaben geschrieben.' : 'Du hast nichts geschrieben.' },
+    { sy: '✋', t: 'Luca filmt Mila.', dein: m.k6Eingegriffen ? 'Du hast etwas getan.' : 'Du hast weggeschaut.' },
+    { sy: '🗳️', t: 'Die Abstimmung.', dein: 'Danach war dein Handy still.' },
+    { sy: '🧩', t: 'Die Tüte in der Kantine.', dein: m.k7Gesetzt ? 'Du hast dich zu Noah gesetzt.' : m.k7Gefilmt ? 'Du hast gefilmt.' : 'Du bist sitzen geblieben.' },
+    { sy: '🤖', t: 'Das KI-Video von Mme Tidderich.', dein: m.k8Fake ? 'Du hast es entlarvt. Langsam.' : 'Es hat sich echt angefühlt.' },
+    { sy: '🎒', t: 'Dario an der Haltestelle.', dein: m.k9Mitkommen ? 'Du bist mitgegangen.' : m.k9Versprochen ? 'Du hast es getragen. Drei Tage.' : 'Du hast nichts versprochen.' },
   ],
 });
 
@@ -104,13 +86,13 @@ const RUECKEN = (m) => ({
   info: 'Alle haben ein Blatt auf dem Rücken. Du schreibst. Lesen dürfen sie erst am Ende.',
   an: [
     { wer: F.noah, karten: [
-      { t: m.buehneGekippt ? 'Du bist in der Kantine sitzen geblieben. Obwohl alle gelacht haben.' : 'Du hältst Plätze frei. Ein ganzes Jahr lang.', konkret: true, antwort: '(liest es) Das kleb ich in mein Buch.' },
+      { t: m.k7Gesetzt ? 'Du hast den Turm wieder aufgebaut. Mit dem grauen Stein.' : 'Du hältst Plätze frei. Ein ganzes Jahr lang.', konkret: true, antwort: '(liest es) Das kleb ich in mein Buch.' },
       { t: 'Du bist voll nett.', antwort: 'Nett. Okay. Nett ist auch was.' } ] },
     { wer: F.mila, karten: [
       { t: 'Du hast die Spur gefunden. Den Winkel, die Uhrzeit, alles.', konkret: true, antwort: 'Das ist präzise. Das hebe ich auf.' },
       { t: 'Du bist schlau.', antwort: '(nickt) Danke.' } ] },
     { wer: F.ben, karten: [
-      { t: 'Du bist geblieben, als alle weg waren. Sofort.', konkret: true, antwort: '(schaut weg) … Danke. Echt.' },
+      { t: m.k5BenGefragt ? 'Du hast im Januar dein Handy gezeigt, als ich gefragt hab. Ehrlich.' : 'Du bringst immer Kekse mit. Für alle.', konkret: true, antwort: '(schaut weg) … Danke. Echt.' },
       { t: 'Du bist lustig.', antwort: 'Weiß ich. Trotzdem danke.' } ] },
     { wer: F.dario, karten: [
       { t: 'Du hast es Herrn Kuedes gesagt. Das war mutiger als alles.', konkret: true, antwort: '(lange Pause) … Danke. Echt.' },
@@ -125,30 +107,37 @@ const RUECKEN = (m) => ({
   ],
 });
 
-export const GESPRAECHE_N10 = {
-  n10_chat: [
-    ['erzaehler', 'Montag, 7:20. Letzte Schulwoche. Dein Handy vibriert.'],
-    { szene: 'chat', id: 'zurueck', def: (m) => ZURUECK(m),
-      // Eigene Regel eingebracht? Zählt mehr als Jo (die Gruppe macht ihre Regeln selbst)
-      ausgang: (r) => (r.flags.regelVertrag || r.flags.regelScreens || r.flags.regelSprach || r.flags.regelKekse2 ? (r.flags.joVerziehen || r.flags.joEhrlich ? 'beides' : 'regel') : r.flags.joVerziehen ? 'verziehen' : r.flags.joEhrlich ? 'ehrlich' : 'still'),
-      folgen: {
-        beides: { staerke: 'einbeziehen', herz: { jo: 1, mila: 1 }, merke: ['chatRegel', 'joVerziehen'] },
-        regel: { staerke: 'einbeziehen', herz: { mila: 1 }, merke: 'chatRegel' },
-        verziehen: { herz: { jo: 1 }, merke: 'joVerziehen' },
-        ehrlich: { staerke: 'klar', herz: { jo: 1 }, merke: 'joEhrlich' },
-        still: {},
-      } },
-  ],
-  n10_noah: [
-    ['noah', 'Letzte Woche. Dann Ferien.'],
-    ['noah', 'Weißt du noch? Erster Tag. Die Bank. Meine Jacke drauf.'],
-    ['noah', 'Hab so getan, als wär der Platz für wen.'],
-    { wahl: [
-      { t: '„War er ja auch.“', staerke: 'kontakt', herz: { noah: 1 }, dann: [['noah', '(guckt weg) … Ja. War er.']] },
-      { t: '„Für wen denn?“', staerke: 'zuhoeren', herz: { noah: 1 }, dann: [['noah', 'Für irgendwen. Dann kamst du. Passt.']] },
-      { t: '(Grinsen. Neben ihn setzen.)', herz: { noah: 1 }, dann: [['noah', '(schiebt dir einen Kopfhörer rüber)']] },
+// ---------- Montag 10:00: Die, die dich rausgewählt haben, brauchen dich jetzt (Druck-Runde) ----------
+const BOTE = {
+  wo: 'Hof · 10:00', gruppe: { a: { id: 'a', name: 'tom', farbe: '#7a7a7a' }, b: { id: 'b', name: 'sami', farbe: '#8a6a5a' }, chiara: { id: 'chiara', name: 'Chiara', farbe: '#3fa66b' } }, zeit: 9,
+  anker: 'Füße auf den Boden. Es ist nicht deine Nachricht.',
+  runden: [
+    { wer: 'a', sagt: 'Du redest doch mit Dario. Sag ihm, er soll’s zurücknehmen.', karten: [
+      { t: '„Sag’s ihm selbst.“', art: 'nein', druck: -6, ich: 12, antwort: 'Ich red nicht mit dem.' },
+      { t: '„Was zurücknehmen?“', art: 'frage', druck: 4, ich: 2, antwort: 'Die Namen! Um drei!' },
     ] },
-    { tu: 'n10_planCheck' },
+    { wer: 'b', sagt: 'Im Januar wolltest du doch auch, dass alle wissen, wer’s war.', karten: [
+      { t: '„Ja. Und jetzt wollt ihr es nicht mehr.“', art: 'nein', druck: -8, ich: 14, antwort: 'Das ist was anderes.' },
+      { t: '„Okay. Ich frag ihn.“', art: 'ja', druck: -10, ich: -18, antwort: 'Danke. Echt.' },
+    ] },
+    { wer: 'chiara', sagt: '(leiser) Ich steh da bestimmt auch drin.', karten: [
+      { t: '„Dann sag es selbst. Vorher.“', art: 'nein', druck: -6, ich: 12, antwort: '(nickt langsam)' },
+      { t: '„Selber schuld.“', art: 'ausrede', druck: 4, ich: 0, antwort: '(dreht sich weg)' },
+    ] },
+  ],
+};
+
+export const GESPRAECHE_N10 = {
+  // Montag 7:25: Er war nett zu dir, und er hat dir das angetan. Beides stimmt.
+  n10_mauer: [
+    ['erzaehler', 'Montag. Dario sitzt auf der Mauer. Nicht auf der Bank.'],
+    ['erzaehler', 'Seine Eltern wissen es jetzt. An der Skate-Ecke redet keiner mehr mit ihm.'],
+    ['dario', 'Ich wusste nicht, ob ich noch neben dir sitzen darf.'],
+    { wahl: [
+      { t: '(Rücken. Platz machen.)', herz: { dario: 1 }, merke: 'k10Rutschen', dann: [['erzaehler', 'Er kommt rüber. Er setzt sich. Ganz an den Rand.']] },
+      { t: '„Heute nicht.“', merke: 'k10HeuteNicht', dann: [['dario', 'Okay.'], ['erzaehler', 'Er bleibt auf der Mauer. Er nickt. Er versteht es.']] },
+      { t: '(Nichts sagen.)', merke: 'k10Schweigen', dann: [['erzaehler', 'Ihr sitzt. Zwei Meter auseinander. Dann kommt der Bus.']] },
+    ] },
   ],
   n10_skills: [
     ['kaya', 'Wéi geet et? Letzte Skills-Stunde mit Fotos.'],
@@ -182,165 +171,293 @@ export const GESPRAECHE_N10 = {
       gelernt: ['Ein Jahr geht rauf und runter – beides ist echt', 'Ein Brief an dich: was du behalten willst', 'Stärken genau sagen, nicht nur „nett“', 'Erden: fünf Dinge sehen, ruhig atmen', 'Wiedergutmachen geht in kleinen Schritten'],
       mission: 'In den Ferien: Lies dein Blatt vom Stärken-Rücken. Einmal pro Woche.' }, folgen: {} },
   ],
-  n10_luca: [
-    ['luca', 'Was willst du? Lachen?'],
+  n10_bote: [
+    ['erzaehler', 'Montag. 10:00. Alle reden über Freitag, 15:00.'],
+    ['ben', 'Ich hab bei ALLEM abgestimmt. Bei allem.'],
+    ['erzaehler', 'Dann kommen sie. Die, die dich im Januar aus dem Chat gewählt haben.'],
+    { szene: 'druck', id: 'bote', def: BOTE, ausgang: (r) => (r.ja ? 'bote' : 'nein'),
+      folgen: {
+        bote: { herz: { dario: -2 }, merke: 'k10Bote', dann: [['erzaehler', 'Du gehst zu Dario. Du sagst es.'], ['dario', '(schaut dich lange an) Von dir hätte ich das nicht gedacht.']] },
+        nein: { staerke: 'klar', merke: 'k10KeinBote' },
+      } },
+    ['erzaehler', 'Luca postet nichts. Luca fehlt.'],
+    ['erzaehler', 'Ab Mittwoch heißt es: Er darf bis zu den Ferien nicht kommen.'],
+  ],
+  n10_bilder: [
+    ['erzaehler', 'Dienstag. 14:00. Aula. Aufbau fürs Sommerfest.'],
+    ['kiesser', 'Lina hat ein Jahr gezeichnet. Wir hängen auf, was sie will. Nur das.'],
+    { tu: 'n10_blaetter' },
     { wahl: [
-      { t: '„Nein. Nur fragen, wie’s dir geht.“', staerke: 'kontakt', herz: { luca: 1 }, merke: 'lucaGefragt', dann: [
-        ['luca', 'Mies. Handy weg bis zu den Ferien. Gespräche mit allen.'],
-        ['luca', 'Jetzt lachen manche über mich. Lustig, oder?'],
-        { tu: 'n10_lucaMehr' } ] },
-      { t: '(Weitergehen. Du musst nicht mit ihm reden.)', staerke: 'klar', merke: 'lucaAbstand', dann: [
-        ['erzaehler', 'Luca guckt dir nach. Er sagt nichts.'] ] },
+      { t: '(Zu Lina: „Danke.“)', herz: { lina: 1 }, dann: [['erzaehler', 'Lina schaut nicht hoch. Aber ihr Stift hält kurz an.']] },
+      { t: '(Nichts sagen. Weiter schauen.)', dann: [] },
     ] },
   ],
-  n10_festStart: [
-    ['erzaehler', 'Freitag. Sommerfest. Lampions über dem Hof. Ben verkauft Kekse.'],
-    ['ben', 'Ein Euro. Für Freunde zwei. Weil Freunde mehr essen.'],
-    ['erzaehler', 'Luca steht bei Frau Kremer am Grill. Ohne Handy.'],
-    ['luca', '(probiert) Zu wenig Salz.'],
-    ['erzaehler', 'Luca stellt Ben einen Kuchen hin. Ohne Kommentar.'],
-    ['luca', 'Zu wenig Zucker. Egal. Nachträglich.'],
-    ['kenan', '(leise, im Vorbeigehen) Jos Sprachnachricht an Mila? Die hab ich weitergeleitet. Hab lange überlegt.'],
-    ['kenan', 'Sag’s keinem.'],
-    ['du', 'Welche Sprachnachricht? Hab nix gehört.'],
+  n10_karten: [
+    ['hoffmann', 'Schreibt euch selbst. Ich geb sie euch in der 5e zurück.'],
+    ['hoffmann', 'Ich les sie nicht. Versprochen.'],
+    { tu: 'n10_kartenWahl' },
+    ['erzaehler', 'Du faltest die Karte. Mme Tidderich steckt sie in einen Umschlag. Ohne zu lesen.'],
+    ['erzaehler', 'Wer du in zwei Jahren bist, weißt du nicht. Die Karte weiß es auch nicht.'],
   ],
+  // Mittwoch 12:10 – Entscheidung A: Wiedergutmachung
+  n10_kantine: [
+    ['chiara', 'Darf ich dich wieder hinzufügen? Du musst nicht.'],
+    { fest: true, wahl: [
+      { t: '„Ja.“', herz: { chiara: 1 }, merke: 'k10GruppeJa', dann: [['erzaehler', '„Chiara hat dich hinzugefügt.“ Das Handy summt. Zum ersten Mal seit Januar.']] },
+      { t: '„Noch nicht.“', merke: 'k10GruppeNochNicht', dann: [['chiara', 'Okay. Die Tür bleibt offen.']] },
+      { t: '„Mach eine neue Gruppe. Mit Ayla.“', herz: { ayla: 1 }, merke: 'k10GruppeNeu', dann: [['chiara', '(überlegt) … Eine ohne Abstimmungen.'], ['ayla', '(vom Nebentisch) Ich bin dabei.']] },
+    ] },
+    ['chiara', 'Und noch was. Wer Kopien hat, löscht sie. Vor der Person, die drauf ist.'],
+    ['erzaehler', 'Sieben Leute stellen sich an. Nicht alle. Manche halten nur das Handy hin.'],
+    ['erzaehler', 'Bei Noah. Bei Mila. Bei dir.'],
+    ['noah', '(nach dem fünften) Reicht. Ich will nicht alle sehen.'],
+    { wahl: [
+      { t: '(Dich selbst anstellen.)', merke: 'k10Angestellt', dann: [{ tu: 'n10_beiWem' }] },
+      { t: '(Sitzen bleiben.)', dann: [] },
+    ] },
+  ],
+  n10_festMorgen: [
+    ['erzaehler', 'Freitag. Am Morgen, vor der Aula. Herr Kuedes redet mit Dario. Du hörst es zufällig.'],
+    ['kaya', 'Alles ist gesichert. Du darfst ihn löschen. Wann, entscheidest du.'],
+    ['dario', 'Um drei. Vor allen.'],
+    { blende: 'Freitag · 14:52' },
+  ],
+  // Freitag 14:52 (Fable, Schlüsselszene K10)
   n10_fest: [
-    ['dario', 'Meine Hände zittern. Mein Kopf ist komplett weg.'],
+    ['erzaehler', 'Freitag. 14:52. Es riecht nach Gromperekichelcher und Sonnencreme.'],
+    ['erzaehler', 'Alle schauen auf ihre Handys. Noch acht Minuten.'],
+    ['erzaehler', 'Herr Kuedes, Herr Mesenberg und Mme Tidderich stehen an der Tür zur Aula.'],
+    ['erzaehler', 'Dario steigt auf die Bank. Seine Knie zittern.'],
+    ['dario', 'Ich muss was sagen. Bevor es drei ist.'],
+    ['jemand', 'Lauter!'],
+    { tu: 'n10_stimme' },
+    ['dario', 'Der Account. Das war ich. Ich hab ihn gemacht.'],
+    ['dario', 'Am Anfang war er lustig. Dann nicht mehr.'],
+    ['dario', 'Und ich war immer noch dabei.'],
+    ['dario', '{name} war es nie. Der Screenshot war gefälscht.'],
+    { tu: 'n10_lina1455' },
+    ['erzaehler', 'Niemand klatscht. Jemand lacht kurz und hört auf.'],
+    ['dario', 'Um drei sollen Namen kommen. Wer was geschickt hat.'],
+    ['dario', 'Meinen kennt ihr jetzt.'],
+    ['erzaehler', 'Stille. Dann räuspert sich Jo.'],
+    ['jo', 'Drei Fotos. Von mir. Und der Witz mit dem Fake.'],
+    ['ben', 'Ich hab das erste weitergeleitet. An alle.'],
+    ['erzaehler', 'Chiara faltet einen Zettel auf. Sie hat es aufgeschrieben.'],
+    ['chiara', 'Ich habe {name} aus der Gruppe entfernt. Das war falsch.'],
     { wahl: [
-      { t: '„Fünf Sachen, die du siehst. Sag sie laut.“', staerke: 'ruhig', herz: { dario: 1 }, dann: [
-        ['dario', 'Die Lampions. Der Grill. Ben. Kekse. … Dein Gesicht.'],
-        ['dario', 'Okay. Ich bin hier. Ich bin hier.'] ] },
-      { t: '„Atmen. Mit mir. Vier rein, vier raus.“', staerke: 'ruhig', herz: { dario: 1 }, dann: [['dario', '(atmet mit dir) … Besser. Ein bisschen.']] },
-      { t: '„Du schaffst das.“', dann: [['dario', 'Sagt man so. … Okay.']] },
+      { t: '(Deinen Teil sagen.)', staerke: 'mut', merke: 'k10Teil', dann: [{ tu: 'n10_meinTeil' }] },
+      { t: '(Nichts sagen.)', dann: [] },
+      { t: '(Dich neben die Bank stellen.)', dann: [{ tu: 'n10_nebenBank' }] },
     ] },
-    ['erzaehler', 'Kurz darauf. Saal 1.04. Die 7P2 im Kreis. Dario steht an der Tür.'],
-    ['dario', 'Ähm. Hallo. Ich bin Dario. Das wisst ihr.'],
-    ['dario', 'Ich hab @annexe.cam angefangen. Im Herbst.'],
-    ['dario', 'Ich wollte dazugehören. Dann konnte ich nicht mehr aufhören.'],
-    ['dario', 'Es tut mir leid. {name}. Noah. Mila. Allen.'],
-    ['dario', 'Und {name} war nie Admin. Der Screenshot war fake.'],
-    ['erzaehler', 'Herr Kuedes hat mit der Direktion das Passwort zurückgeholt. Dario darf das Konto selbst löschen.'],
-    ['erzaehler', 'Dario hält das Handy hoch. Er tippt. Alle sehen zu.'],
-    ['erzaehler', '@annexe.cam – Konto gelöscht.'],
-    ['mila', 'Null Beiträge. Ich hab nachgezählt.'],
-    { tu: 'n10_festDario' },
-    ['dario', 'Ab September mach ich einen Foto-Club. Fotos nur mit Fragen vorher.'],
-    ['erzaehler', 'Stille. Drei Sekunden. Sehr lange drei Sekunden.'],
-    { wahl: [
-      { t: '(Still bleiben. Schauen, was Noah und Mila sagen.)', staerke: 'zuhoeren', herz: { noah: 1, mila: 1 }, dann: [['erzaehler', 'Noah nickt. Mila auch. Sonst nichts. Das reicht.']] },
-      { t: '(Dario kurz zunicken.)', herz: { dario: 2 }, merke: 'darioGenickt', dann: [['erzaehler', 'Dario sieht dich. Er atmet aus.']] },
-      { t: '„Ich nehm deine Entschuldigung an.“', herz: { dario: 2 }, merke: 'darioAngenommen', dann: [['dario', '… Danke. Echt.']] },
-      { t: '„Ich brauch noch Zeit. Heute nicht.“', staerke: 'klar', merke: 'darioZeit', dann: [['dario', 'Okay. Das ist fair.'], ['kaya', '(leise) Beides ist in Ordnung. Verzeihen ist freiwillig.']] },
+    ['erzaehler', 'Dario tippt: „Passwort vergessen“. Sein Handy summt. Ein Code.'],
+    ['erzaehler', '14:58. Auf dem Display: „Konto endgültig löschen?“'],
+    ['dario', 'Jetzt kann er posten, was er will. Ich hab’s schon gesagt.'],
+    ['erzaehler', 'Er drückt. Es wird 15:00. Kein Handy summt.'],
+    { tu: 'n10_geloescht' },
+    // 15:20 – Am Zaun (Entscheidung B)
+    { blende: 'Freitag · 15:20' },
+    ['erzaehler', 'Draußen auf dem Gehweg steht Luca. Er hat nichts gepostet.'],
+    ['erzaehler', 'Kenan ist zu ihm rausgegangen. Dann kommt Herr Mesenberg dazu.'],
+    ['mesenberg', 'Bis zu den Ferien bleibt Luca draußen. Im Herbst gibt es Gespräche. Mit denen, die er gefilmt hat. Nur, wenn die das wollen.'],
+    { tu: 'n10_kenan' },
+    ['erzaehler', 'Jo hebt das Handy.'],
+    ['jo', 'Guck ihn dir an. Das poste ich.'],
+    { fest: true, wahl: [
+      { t: '„Jo. Nicht.“', staerke: 'klar', herz: { jo: 1 }, merke: 'k10JoNicht', dann: [['erzaehler', 'Jo lässt das Handy sinken.'], ['jo', 'War nur …'], ['erzaehler', 'Er sagt den Satz nicht zu Ende.']] },
+      { t: '(Jos Handy runterdrücken.)', herz: { jo: -1 }, merke: 'k10HandyGedrueckt', dann: [['jo', 'Fass mich nicht an.'], ['erzaehler', 'Er steckt es trotzdem weg. Wütend.']] },
+      { t: '(Selbst zum Zaun gehen.)', staerke: 'mut', merke: 'k10Zaun', dann: [['luca', 'Ihr habt alle gelacht. Jeden Tag.'], ['erzaehler', 'Er entschuldigt sich nicht. Er schaut dich an. Dann weg.']] },
+      { t: '(Dich wegdrehen.)', merke: 'k10Weggedreht', dann: [['erzaehler', 'Hinter dir klickt es. Jo hat das Foto gemacht.'], ['erzaehler', 'Ob er es postet, erfährst du im September.']] },
     ] },
-    ['mila', 'Eine Frage, Dario. Wer macht im Foto-Club die Regeln?'],
-    ['dario', '… Du? Bitte du.'],
-    ['mila', 'Regel eins: erst fragen. Regel zwei: Nein heißt löschen.'],
-    ['dario', 'Unterschreib ich.'],
-    ['kaya', '(stellt Kekse in die Mitte) Für alle. Laut Statistik reichen sie nie.'],
-    ['hoffmann', 'Ça va? … Ich hab mit Luca gesprochen. Lange.'],
-    ['hoffmann', 'Das Video ist weg. Und ich bin noch da.'],
-    ['hoffmann', 'Dario, das war mutig. Wieder gut machen dauert aber noch.'],
-    { tu: 'n10_festLuca' },
-    ['lina', '(gibt dir ein Heft: „Gerd ermittelt. Fall gelöst.“)'],
-    ['rantini', 'Klassenfoto. Teil zwei. Alle rücken zusammen.'],
-    ['noah', 'Diesmal frag ich vorher. Darf ich den Arm auf deine Schulter?'],
-    { wahl: [
-      { t: '„Ja. Klar.“', herz: { noah: 1 }, merke: 'fotoArm', dann: [['noah', '(legt den Arm ganz leicht auf deine Schulter)']] },
-      { t: '„Lieber nebeneinander.“', staerke: 'klar', herz: { noah: 1 }, merke: 'fotoNeben', dann: [['noah', 'Okay. Nebeneinander ist auch zusammen.']] },
-    ] },
-    ['rantini', 'Drei, zwei, eins … Käsebrötchen!'],
-    ['ben', 'Wer sagt denn Käsebrötchen?!'],
-    ['erzaehler', 'Klick. Auf dem Foto lachen alle. Sogar Lina. Sogar du.'],
-    // Jugendwelt heute: Wer darf ein Foto posten, auf dem andere sind? Fragen – am Ende des Jahres ganz selbstverständlich.
-    ['ben', '(hat das Handy schon draußen) Das kommt in meine Story. Sofort.'],
-    ['mila', '(guckt aufs Foto) Ich will in keine Story. Nicht nach diesem Jahr.'],
-    { wahl: [
-      { t: '„Ben, frag erst alle. Wer nicht will, kriegt einen Sticker.“', staerke: 'klar', herz: { mila: 2, ben: 1 }, merke: 'fotoZustimmung', dann: [
-        ['ben', '(fragt rum. Drei wollen nicht.) Okay. Drei Gerd-Sticker.'], ['mila', '(lacht) Ich bin eine Taube. Perfekt.']] },
-      { t: '„Nur ins Klassen-Album. Nicht öffentlich.“', staerke: 'abstand', herz: { mila: 1 }, merke: 'fotoZustimmung', dann: [['ben', 'Album. Für uns. Auch gut.']] },
-      { t: '„Ist doch ein schönes Foto. Poste es.“', merke: 'fotoOhneFrage', dann: [
-        ['erzaehler', 'Mila geht ein Stück weg.'], ['ben', '(steckt das Handy ein) … Nee.'], ['ben', 'Mila guckt schon so. Lass mal.']] },
-    ] },
+    { blende: 'Freitag · 16:30' },
     { tu: 'n10_ende' },
   ],
 };
 
+// Enden (Fable): Freitag 16:30 – deine engste Freundschaft bestimmt die letzte Szene
 const bester = (S) => {
-  const h = S.herz || {};
-  const id = ['noah', 'mila', 'ben', 'jo'].sort((a, b) => (h[b] || 0) - (h[a] || 0))[0];
-  return (h[id] || 0) >= 2 ? id : null;
+  const f = S.freund || {}, h = S.herz || {};
+  const wert = (id) => (f[id] != null ? f[id] : (h[id] || 0) * 10);
+  return ['noah', 'mila', 'ben', 'jo'].reduce((a, b) => (wert(b) > wert(a) ? b : a), 'noah');
 };
-
-// Enden als Funktionen: frühere Entscheidungen tauchen sichtbar auf (Kritik Inhalt Runde 1)
 const ENDEN = {
-  noah: (m) => [
-    ['erzaehler', 'Später. Noah öffnet seinen Spind. Er winkt dich her.'],
-    ['erzaehler', 'Innen klebt das Klassenfoto. Das erste Ding in seinem Spind.'],
-    ['noah', m.noahVerteidigt ? 'Die Top-5-Liste. Du hast für mich geschrieben. Ich hab’s gespeichert.' : 'Erster Tag. Du hast zurückgegrüßt. Das war genug.'],
-    ['noah', 'Nächstes Jahr: Bus, dritte Reihe. Ich halt dir den Platz frei.'],
-    ['noah', '(gibt dir einen Kopfhörer) Playlist heißt „Sommer für {name}“.'],
+  noah: () => [
+    ['erzaehler', 'Aula. Der Turm steht. Ein Meter vierzig.'],
+    ['noah', 'Oben fehlt noch die Spitze.'],
+    ['erzaehler', 'Er hält dir einen kleinen Stein hin. Grau.'],
+    { wahl: [
+      { t: '„Dein Turm. Mach du.“', dann: [] },
+      { t: '(Den Stein nehmen.)', dann: [] },
+    ] },
+    ['noah', 'Im Juni lag er in der Kiste. Du warst dabei.'],
+    ['noah', 'Deswegen du.'],
+    ['erzaehler', 'Der Stein klickt. Die Uhr sitzt eine Reihe zu tief.'],
+    ['noah', 'Lass ich so.'],
+    ['noah', 'Nächstes Jahr bau ich die Haltestelle.'],
+    { wahl: [
+      { t: '„Mit Taube?“', dann: [] },
+      { t: '„Mit Bank?“', dann: [] },
+    ] },
+    ['noah', 'Mit allem. Auch mit uns.'],
   ],
-  mila: (m) => [
-    ['erzaehler', 'Später. Mila sitzt auf der Treppe. Der Würfel ist gelöst.'],
-    ['mila', 'Ich hab eine Liste gemacht. Menschen, denen ich vertraue.'],
-    ['mila', 'Du bist Nummer eins. Die Liste ist kurz. Das ist ein Kompliment.'],
-    ['mila', m.stoppKlar ? 'Dein Stopp im CDI. Das vergess ich nicht.' : 'Foto-Club. Ich mach die Regeln. Du testest sie.'],
-    ['mila', '(verdreht ihn dreimal, gibt ihn dir) Für die Ferien. Gelöst zurück.'],
-    ['mila', 'Neuer Rekord übrigens: 29 Sekunden. Du bist Zeuge.'],
+  mila: () => [
+    ['erzaehler', 'Im CDI stehen die Stühle schon auf den Tischen.'],
+    ['mila', 'Das Heft ist voll. Letzte Seite.'],
+    ['erzaehler', 'Ihre Schrift, klein und gerade: „Fakt 112: {name} war es nicht.“'],
+    ['mila', 'Hundertdreizehn sag ich laut. Sonst zählt es nicht.'],
+    ['mila', 'Der Satz vom Dezember stimmt nicht mehr.'],
+    { wahl: [
+      { t: '„Welcher Satz?“', dann: [] },
+      { t: '„Ich weiß.“', dann: [] },
+      { t: '(Nichts sagen.)', dann: [] },
+    ] },
+    ['erzaehler', 'Sie gibt dir den Würfel. Alle Seiten sauber.'],
+    ['mila', 'Mach ihn kaputt.'],
+    ['erzaehler', 'Du drehst. Einmal. Zweimal. Sie schaut zu.'],
+    ['mila', 'Im September zeig ich dir, wie man ihn löst.'],
   ],
-  ben: (m, S = {}) => [
-    ['erzaehler', 'Später. Ben zählt die Keks-Kasse. Es ist mehr als gedacht.'],
-    ['ben', m.benGefragt ? 'Du hast mir was zum Geburtstag mitgebracht. Keiner bringt mir was mit.' : 'Bester Geburtstag. Der Account war weg. Und Kekse.'],
-    ['ben', (S.benSchuld || 0) > (S.benZurueck || 0) ? 'Ich schulde dir noch Geld. Ich zahl in Keksen.' : 'Am ersten Tag hab ich dein Foto weitergeschickt. Ab jetzt frag ich immer. Versprochen.'],
-    ['ben', 'Nächstes Jahr wieder nebeneinander. Hab schon gefragt.'],
+  ben: () => [
+    ['erzaehler', 'Hof. Ben stellt zwei Teller ab. Gromperekichelcher. Zu viel Apfelmus.'],
+    ['ben', 'Ich sag jetzt mal nichts.'],
+    ['erzaehler', 'Drei Sekunden.'],
+    ['ben', 'Okay. Das war lang.'],
+    ['ben', 'Das Foto weiterleiten war blöd.'],
+    ['ben', 'Im Januar still sein war schlimmer.'],
+    { wahl: [
+      { t: '„Ja. War es.“', dann: [] },
+      { t: '„Du bist jetzt da.“', dann: [] },
+      { t: '(Essen.)', dann: [] },
+    ] },
+    ['erzaehler', 'Er holt sein Handy raus. Dein Kontakt: „{name} 7P2“.'],
+    ['ben', 'Nächstes Jahr stimmt das nicht mehr.'],
+    ['erzaehler', 'Er löscht „7P2“. Nur dein Name bleibt.'],
+    ['ben', 'So. Nur noch du.'],
   ],
-  jo: (m) => [
-    ['erzaehler', 'Später. Der Korb im Hof. Jo wirft dir den Ball zu.'],
-    ['jo', 'Eins gegen eins. Und wenn ich verliere, sag ich’s keinem.'],
-    ['jo', '… Okay, ich sag’s allen. Weil du’s verdient hast.'],
-    ['jo', m.treppeFrueh ? 'Am Korb hast du mich rausgeholt. Bei 80. Danke.' : m.treppeKnall ? 'Am Korb hast du zugeguckt. Ich war sauer. Bin ich nicht mehr.' : 'Die Sprachnachricht. Du bist trotzdem geblieben. Danke.'],
-  ],
-  keiner: () => [
-    ['erzaehler', 'Später. Lina setzt sich neben dich. Sie zeichnet.'],
-    ['lina', '(flüstert) Im Comic bist du jetzt Hauptfigur. Ab Seite 40.'],
-    ['lina', 'Nicht reingucken. Erst nächstes Jahr.'],
+  jo: () => [
+    ['erzaehler', 'Jo sitzt auf der Mauer an der Skate-Ecke. Das Handy in beiden Händen.'],
+    ['jo', 'Ich hab ein Foto. Von eben. Du, Dario, die Bank.'],
+    ['jo', 'Es ist gut. Echt gut.'],
+    ['erzaehler', 'Er hält es dir hin. Der Daumen weit weg von „Senden“.'],
+    ['jo', 'Guck erst. Bevor ich’s irgendwem schicke.'],
+    { wahl: [
+      { t: '„Seit wann fragst du?“', dann: [] },
+      { t: '„Schick’s nur mir.“', dann: [] },
+      { t: '„Lösch es.“', dann: [] },
+    ] },
+    ['jo', 'Seit heute. Mal sehen, wie lang.'],
+    ['erzaehler', 'Er grinst. Anders als im September.'],
+    ['jo', 'Wenn du Nein sagst, ist es weg. Deal?'],
   ],
 };
+// Lina-Ende: Nummer nie blockiert, in Kapitel 8 vorher gefragt – und mindestens eins: sanfter Ton (K1), Lina zuerst gewählt (K3),
+// die Zeichnung nicht Dario gezeigt (K3)
+const linaEnde = (m) => !m.nummerBlockiert && !!m.k8NummerGefragt && !!(m.nummerSanft || m.wahlLina || !m.zeichnungDarioGezeigt);
 
 export const tunN10 = (c) => ({
-  // Kap. 9: Hat der Wenn-dann-Plan gehalten? Ehrlich sein darf man – Pläne wackeln, man passt sie an.
-  n10_planCheck: () => {
-    const m = c.S.merke; const plan = m.planSchlaf ? 'schlaf' : m.planPause ? 'pause' : m.planEssen ? 'essen' : null;
-    if (!plan) return [];
-    const frage = { schlaf: ['noah', 'Und? Handy in der Küche? Du siehst ausgeschlafen aus. Bisschen.'], pause: ['noah', 'Ben sagt, du warst jede Pause am Korb. Fast jede.'], essen: ['noah', '(hält ein halbes Brötchen hoch) Hab’s versprochen. Hat dein Plan gehalten?'] }[plan];
-    return [frage, { wahl: [
-      { t: '„Meistens. Vier von fünf Tagen.“', staerke: 'ruhig', merke: 'planGehalten', dann: [['noah', 'Vier von fünf ist super. Ehrlich.']] },
-      { t: '„Nö. Zwei Tage. Dann vergessen.“', merke: 'planGewackelt', dann: m.planHindernisVergessen
-        ? [['noah', 'Du hast gesagt, du vergisst es. Hast du recht gehabt.'], ['noah', 'Soll ich dich erinnern? Ich bin gut im Nerven.']]
-        : [['noah', 'Zwei ist mehr als null. Neuer Versuch nach den Ferien?']] },
-      { t: '„Ich hab ihn geändert. Der alte war zu groß.“', staerke: 'lesen', merke: 'planAngepasst', dann: [['noah', 'Plan ändern ist auch Plan. Sagt Herr Kuedes, glaub ich.']] },
+  n10_blaetter: () => {
+    const m = c.S.merke;
+    const blatt = (t, nickt = true) => [['erzaehler', t], ['kiesser', 'Dieses auch?'], ['erzaehler', nickt ? 'Lina nickt.' : 'Lina schüttelt den Kopf.']];
+    return [
+      ...blatt('Der Hof im September. Ein Kreis aus Handys. ' + (m.abgestimmt ? 'Am Rand: du. Der Daumen auf dem Display.' : 'Am Rand: du. Die Hände in den Taschen.')),
+      ...blatt('Die Treppe. Noah auf der Stufe. Yusufs Hand. ' + (m.k4BeideGeblieben || m.k4YusufGeschickt ? 'Und du daneben.' : 'Und ein leerer Platz.')),
+      ...blatt('Der Würfel. Ein Stein auf der Mauer. ' + (m.k6Eingegriffen ? 'Und jemand, der vor Mila steht.' : 'Und viele Rücken.')),
+      ...blatt(m.k7Gesetzt ? 'Die Kantine. Zwei an einem Tisch. Dann vier.' : m.k7Gefilmt ? 'Die Kantine. Ein Handy, hochgehalten. Die Hand ist deine.' : 'Die Kantine. Ein Tablett mit einer Tüte. Viele Handys.'),
+      ...blatt('Die Bank. Dario. Daneben ein Platz.'),
+      ...blatt('Die Haltestelle im November. Zwei von hinten. Ein Handy zwischen ihnen.', false),
+      ['erzaehler', 'Du gehst an deinem eigenen Jahr vorbei. So, wie jemand anders es gesehen hat.'],
+    ];
+  },
+  n10_kartenWahl: () => {
+    const m = c.S.merke;
+    const satz = m.k5SatzManche ? 'Manche glauben es. Nicht alle.' : m.k5SatzMittwoch ? 'Heute ist Mittwoch. Mehr weiß ich nicht.' : m.k5SatzWissen ? 'Ich weiß, was ich gemacht hab. Und was nicht.' : null;
+    return [{ wahl: [
+      ...(satz ? [{ t: '„' + satz + '“ (dein Satz vom Januar)', merke: 'k10KarteJanuar', dann: [] }] : []),
+      { t: '„Ich hab zugeschaut. Nächstes Jahr nicht mehr.“', merke: 'k10KarteZuschauen', dann: [] },
+      { t: '„Ich weiß jetzt, wer bleibt.“', merke: 'k10KarteBleibt', dann: [] },
     ] }];
   },
-  n10_lucaMehr: () => [
-    ['luca', 'Ich hab’s übertrieben. Mit allem.'],
-    { wahl: [
-      { t: '„Ja. Hast du.“', staerke: 'klar', dann: [['luca', '(nickt) … Ja.']] },
-      { t: '„Dann sag das Noah und Mila. Nicht mir.“', staerke: 'klar', herz: { luca: 1 }, merke: 'lucaSorryNoah', dann: [['luca', 'Morgen. Beim Fest. Wenn ich mich trau.']] },
-      { t: '„Schon gut.“', dann: [['luca', 'Ist es nicht. Weiß ich selber.']] },
-      { t: '„Auslachen ist auch bei dir nicht okay. Sag’s Herrn Kuedes.“', staerke: 'hilfe', herz: { luca: 1 }, dann: [['luca', '(guckt hoch) … Okay. Mach ich.']] },
-    ] },
-  ],
-  n10_festDario: () => (c.S.merke.darioBegleiten
-    ? [['dario', 'Und jemand ist mit mir zu Herrn Kuedes gegangen.'], ['dario', '{name}. Sonst wär ich heute zu Hause geblieben.']]
-    : [['dario', 'Ich hab lange gebraucht. Aber jetzt sag ich es. Selbst.']]),
-  n10_festLuca: () => (c.S.merke.lucaSorryNoah
-    ? [['erzaehler', 'Luca geht zu Noah und Mila. Er guckt auf seine Schuhe.'], ['luca', 'Sorry. Für die Posts. Für alles.'], ['mila', 'Notiert.'], ['noah', '… Okay.'], ['luca', 'Und {name}: der Admin-Fake. War ich. Das war das Mieseste von allem.']]
-    : [['erzaehler', 'Luca steht am Rand. Er sieht zu. Er sagt nichts.']]),
-  n10_ende: () => [
-    ...ENDEN[bester(c.S) || 'keiner'](c.S.merke || {}, c.S),
-    ['erzaehler', 'Ende der 7ème.'],
-    ['ayla', '(Nachricht) nächstes jahr gründen wir eine band. du bist drin. keine widerrede 🎸'],
-    ['ayla', '(Nachricht) bandname: „Kein WLAN“ oder „Gerd und die Zombies“?'],
-    { tu: 'kapitelEnde' },
-  ],
+  n10_beiWem: () => {
+    const m = c.S.merke;
+    const opt = [
+      { id: 'noah', t: '(Bei Noah.)', antwort: [['noah', 'Okay.']], immer: true },
+      { id: 'mila', t: '(Bei Mila.)', antwort: [['mila', 'Notiert.']], immer: true },
+      { id: 'ben', t: '(Bei Ben.)', antwort: [['ben', 'Passt.']], wenn: m.k5BenBeschuldigt || m.k5BenGemieden },
+      { id: 'jo', t: '(Bei Jo.)', antwort: [['jo', '… Danke.']], wenn: m.k6DateiGepostet || m.k8JoReingelegt },
+    ].filter((o) => o.immer || o.wenn);
+    const saetze = ['„Das war nicht okay. Ich lösch es.“', '„Ich hab zugeschaut. Das tut mir leid.“', '„Ich hab mitgemacht. Ich mach das nicht mehr.“', '„Ich wollte dazugehören. Das war es nicht wert.“', '(Nur löschen. Nichts sagen.)'];
+    return [{ wahl: opt.map((o) => ({ t: o.t, herz: { [o.id]: 2 }, merke: 'k10Wieder_' + o.id, dann: [
+      { wahl: saetze.map((s) => ({ t: s, dann: [] })) },
+      ['erzaehler', 'Du löschst, was du hast. Vor den Augen von ' + (o.id === 'noah' ? 'Noah' : o.id === 'mila' ? 'Mila' : o.id === 'ben' ? 'Ben' : 'Jo') + '.'],
+      ...o.antwort,
+      ['erzaehler', 'Ein Blick. Kein Lob. Mehr braucht es nicht.'],
+    ] })) }];
+  },
+  // „Deinen Teil sagen“ setzt ein, was du getan hast. Hast du nichts davon getan: „Ich hab zugeschaut. Jeden Tag.“
+  n10_meinTeil: () => {
+    const m = c.S.merke, r = [];
+    if (m.abgestimmt) r.push(['du', 'Ich hab am ersten Tag abgestimmt.']);
+    if (m.milaKommentiert) r.push(['du', 'Ich hab unter einem Post kommentiert. Es wurde größer.']);
+    if (m.k7Geteilt) r.push(['du', 'Ich hab das Video weitergeleitet. Zum Prüfen. Es war trotzdem eins mehr.']);
+    if (m.k7Gefilmt) r.push(['du', 'Ich hab Noah gefilmt. In der Kantine.']);
+    if (m.k6DateiGepostet) r.push(['du', 'Ich hab Jos Sprachnachricht in den Chat gestellt.']);
+    if (!r.length) r.push(['du', 'Ich hab zugeschaut. Jeden Tag.']);
+    return [...r, ['erzaehler', 'Ein paar schauen zu dir. Dann wieder zu Dario.']];
+  },
+  n10_nebenBank: () => {
+    const m = c.S.merke;
+    if (m.k9Gegangen && !m.k9Mitkommen || m.k10Bote) { m.k10NebenNein = true; return [['erzaehler', 'Dario schaut kurz zu dir. Er schüttelt kaum sichtbar den Kopf. Du bleibst, wo du bist.']]; }
+    m.k10NebenBank = true;
+    return [['erzaehler', 'Du stellst dich neben die Bank. Dario schaut kurz zu dir. Seine Knie zittern weniger.']];
+  },
+  n10_stimme: () => {
+    const m = c.S.merke;
+    if (m.k9Geklopft) return [['erzaehler', 'Seine Stimme ist dünn. Er räuspert sich. Zweimal.']];
+    if (m.k9Vorgegangen || m.k9Gewartet) return [['erzaehler', 'Seine Stimme zittert. Aber sie trägt.']];
+    return [];
+  },
+  n10_lina1455: () => (linaEnde(c.S.merke) ? [
+    ['erzaehler', '14:55. Jemand ruft: „Beweis! Der deckt doch nur {name}!“'],
+    ['erzaehler', 'Am Rand steht Lina. Das Skizzenbuch vor der Brust.'],
+    ['lina', 'Ich hab es gesehen.'],
+    ['erzaehler', 'Leise. Aber alle drehen sich um.'],
+    ['lina', 'Am ersten Tag. In der Kantine. Ich hab es gezeichnet.'],
+    ['erzaehler', 'Sie schlägt das Buch auf. Eine Hand. Ein Handy. Ein Armband.'],
+    ['erzaehler', 'Dario hebt den linken Arm. Er nickt.'],
+  ] : []),
+  n10_geloescht: () => { c.S.merke.accountGeloescht = true; c.ui.toast('<b>@annexe.cam</b><span>Dieses Konto existiert nicht mehr.</span>'); return []; },
+  n10_kenan: () => ((c.S.merke.k6Eingegriffen || c.S.merke.k7NeinBleiben) ? [['kenan', '(im Vorbeigehen, zu dir) Im Januar hast du als Erstes was gesagt. Ich weiß das noch.']] : []),
+  n10_ende: () => {
+    const m = c.S.merke;
+    const b = bester(c.S);
+    const lina = linaEnde(m) ? [
+      { blende: 'Freitag · 16:40' },
+      ['erzaehler', 'Dein Handy summt. Die unbekannte Nummer.'],
+      ['nummer', 'jetzt kannst du mich speichern.'],
+      ['erzaehler', 'Du tippst vier Buchstaben. L. I. N. A.'],
+      ['lina', '(Nachricht) so hast du ausgesehen. am ersten tag.'],
+      ['erzaehler', 'Ein Foto ihrer Zeichnung. Hinten links. Die Hände in den Taschen.'],
+      { wahl: [{ t: '„verloren.“', dann: [] }, { t: '„cringe.“', dann: [] }, { t: '„wie denn?“', dann: [] }] },
+      ['lina', '(Nachricht) neu.'],
+    ] : [];
+    const bank = m.k10NebenBank || (m.k10Rutschen && !m.k10NebenNein) ? 'Dario sitzt neben dir auf der Bank. Wie jeden Morgen. Nur ehrlicher.'
+      : m.k10NebenNein ? 'Dario sitzt auf der Mauer. Er nickt dir zu. Mehr nicht. Noch nicht.'
+      : m.k10HeuteNicht ? 'Dario sitzt auf der Mauer. Morgen vielleicht wieder auf der Bank.' : 'Dario sitzt am anderen Ende der Bank.';
+    const gruppe = m.k10GruppeJa ? 'Du bist wieder im Klassenchat. Er heißt jetzt anders.' : m.k10GruppeNeu ? 'Du bist in einer neuen Gruppe. Mit Ayla. Ohne Abstimmungen.' : 'Du bist noch in keiner Gruppe. Dein Handy ist still. Das ist okay.';
+    const foto = m.k10Weggedreht ? 'Jo hat das Foto von Luca gemacht. Ob es online ist, weißt du nicht.' : 'Es gibt kein Foto von Luca am Zaun.';
+    return [
+      ...ENDEN[b](),
+      ...lina,
+      { blende: 'Freitag · 17:10' },
+      ['erzaehler', 'Haltestelle. Die Bank ist warm.'],
+      ['nik', 'Äddi.'],
+      ['erzaehler', bank],
+      ['erzaehler', gruppe],
+      ['erzaehler', foto],
+      { blende: 'Freitag · Abend' },
+      ['erzaehler', 'An der Tür vom Jugendhaus hängt ein Zettel. Von Ayla.'],
+      ['erzaehler', '„Band sucht: Schlagzeug, Gitarre, Stimme. Proben ab September. Einfach kommen.“'],
+      ['erzaehler', 'Unter „Stimme“ stand schon ein Name. Jemand hat ihn wegradiert. Man sieht noch das L.'],
+      ['erzaehler', 'Ende der 7e.'],
+      { tu: 'kapitelEnde' },
+    ];
+  },
 });
