@@ -71,7 +71,7 @@ import { MATHE, matheBlatt } from './mathe.js';
 import { createSteuerung } from './steuerung.js';
 import { createUI } from './ui.js';
 import { situationen } from './situation.js';
-import { FACHLEHRER } from './story/personal.js';
+import { FACHLEHRER, PERSONAL } from './story/personal.js';
 import { FR_LEKTIONEN } from './story/fachstunden.js';
 if (!(LEKTIONEN.francais || []).length) LEKTIONEN.francais = FR_LEKTIONEN;   // Französisch fürs Spiel (handgeschrieben, story/fachstunden.js)
 import { tunN2 } from './story/kapitel2.js';
@@ -506,6 +506,12 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   }
   // Situationen: wer ist gerade da (Kapitel, Schalter „Schwierige Situationen“, was schon passiert ist)
   const risikoAn = () => !ui.einstellungen || ui.einstellungen().risiko !== false;
+  // Unterricht und Skills-Stunden (Rückmeldung 24.11.): nicht Teil der Hauptgeschichte. Freiwillig (🎟 → Stunden), per Code
+  // oder – wenn die Lehrperson es einschaltet – wieder mitten in der Geschichte (Schritte mit „neben“).
+  const unterrichtAn = () => !!(ui.einstellungen && ui.einstellungen().unterricht);
+  let einstStunde = false;   // freiwillige Fachstunde: die Stunde läuft wirklich, auch wenn der Unterricht in der Geschichte aus ist
+  const imHauptweg = (x) => !!x && !(x.neben && !unterrichtAn()) && !(x.wenn && S && !x.wenn(S.merke));
+  const kapStart = (kap) => { const i = SCHRITTE.findIndex((x) => (x.kap || 1) === kap && imHauptweg(x)); return i >= 0 ? i : SCHRITTE.findIndex((x) => (x.kap || 1) === kap); };
   function sitSichtbarkeit() {
     if (!S) return;
     const kap = (SCHRITTE[S.schritt] || {}).kap || 1;
@@ -1245,8 +1251,16 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         if (f.merke) [].concat(f.merke).forEach((m) => { S.merke[m] = true; });
         sichern();
         if (f.dann && f.dann.length) await spiele(f.dann);
+      } else if (z.blende) {
+        ui.dialogZu(); await ui.blende(ersetze(z.blende)); await new Promise((r) => setTimeout(r, 1300)); await ui.blendeAus(300);   // Zeitsprung
       } else if (z.stunde) {
-        await fachStunde(z.stunde);   // Fachstunde im eigenen Modul (Deutsch, Mathe, Français)
+        // Fachstunde im eigenen Modul (Deutsch, Mathe, Français): nur, wenn der Unterricht eingeschaltet ist – sonst läuft
+        // die Stunde im Hintergrund, und man kann sie freiwillig nachholen (🎟 → Stunden)
+        if (unterrichtAn() || einstStunde) await fachStunde(z.stunde);
+        else {
+          ui.dialogZu(); await ui.blende(z.text || ({ deutsch: 'Deutsch. 50 Minuten.', mathe: 'Mathe. 50 Minuten.', francais: 'Français. 50 minutes.' })[z.stunde] || 'Unterricht.'); await new Promise((r) => setTimeout(r, 1100)); await ui.blendeAus(300);
+          if (!S.merke.stundeTipp) { S.merke.stundeTipp = true; setTimeout(() => ui.toast('<b>📚 Die ganze Stunde spielen?</b><span>Freiwillig, jederzeit: 🎟 → Stunden.</span>'), 900); }
+        }
       } else if (z.tu) {
         const mehr = await TUN[z.tu]?.();
         if (Array.isArray(mehr) && mehr.length) await spiele(mehr);
@@ -1300,9 +1314,9 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     benSchuld4: () => { S.benSchuld = (S.benSchuld || 0) + 4; ui.toast('<b>Ben schuldet dir ' + S.benSchuld + ' €</b><span>Der Zähler im Journal läuft.</span>'); },
     zuSpaet: () => {
       const m = S.merke, z = [];
-      if (m.weberGewartet && m.gewartet) z.push(['hoffmann', 'Zehn Minuten. Am ersten Tag. Rekord.'], ['jo', '(halblaut) Starker Auftritt.']);
-      else if (m.gewartet) z.push(['hoffmann', 'Gerade noch. Setz dich. Schnell.']);
-      if (m.falscherPlan) z.push(['hoffmann', 'Zeig mal deinen Plan … das ist die 7P1.'], ['jo', 'Falsche Klasse. Tür ist da hinten.'], ['erzaehler', 'Gelächter. Mme Tidderich gibt dir ihre Kopie. Mit Kaffeefleck.']);
+      if (m.weberGewartet && m.gewartet) z.push(['hoffmann', 'Zehn Minuten zu spät. Am ersten Tag passiert das. Setz dich.']);
+      else if (m.gewartet) z.push(['hoffmann', 'Gerade noch. Setz dich.']);
+      if (m.falscherPlan) z.push(['hoffmann', 'Zeig mal deinen Plan … Das ist der Plan der 7P1.'], ['erzaehler', 'Ein paar lachen. Mme Tidderich gibt dir ihre eigene Kopie.']);
       return z;
     },
     bingoStart: () => { zeigeBingo(); },
@@ -1310,17 +1324,17 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       input.setEnabled(false);
       const t = await ui.freiwurf();
       S.merke.freiwurf = t; ui.toast('Freiwürfe: ' + t + ' von 5 getroffen');
-      return t >= 4 ? [['yusuf', t + ' von 5. Hm. Respekt.'], ['ben', 'Okay, du zahlst trotzdem nicht.']]
-        : t >= 2 ? [['ben', t + ' von 5. Ich hatte drei. Glaub ich.'], ['yusuf', 'Zwei.']]
-        : [['ben', t + ' von 5. Der Korb ist schief. Ehrlich.'], ['yusuf', 'Ist er nicht.']];
+      return t >= 4 ? [['yusuf', t + ' von 5.'], ['ben', 'Okay. Du spielst nicht zum ersten Mal.']]
+        : t >= 2 ? [['ben', t + ' von 5. Ich hatte drei.'], ['yusuf', 'Zwei.']]
+        : [['ben', t + ' von 5. Der Korb ist schief.'], ['yusuf', 'Ist er nicht.']];
     },
-    n1_kunstLina: () => (S.merke.linaTisch ? [['lina', '(leise) Du. Von der Kantine.'], ['lina', 'Okay. Mit dir geht das.'], ['erzaehler', 'Lina setzt sich ein Stück näher. Das ist bei ihr viel.']] : []),
+    n1_kunstLina: () => (S.merke.linaTisch ? [['lina', '(leise) Du warst gestern an meinem Tisch.'], ['erzaehler', 'Sie rutscht ein Stück zur Seite. Bei Lina ist das viel.']] : []),
     tablett: () => { ui.toast('🍽 Tablett in der Hand. Jetzt der schwerste Teil: ein Platz.'); },
     gegessen: async () => {   // Spielfigur setzt sich mit an den Tisch (gegenüber)
       const sitz = S.merke.tisch === 'mila' ? [19.55, -4.9, Math.PI / 2] : S.merke.tisch === 'lina' ? [16.65, -5.9, -Math.PI / 2] : [12.25, -10.1, -Math.PI / 2];
       steuerung.setzen(sitz[0] - Math.sin(sitz[2]) * 0.1, sitz[1] - Math.cos(sitz[2]) * 0.1, sitz[2]);
       await new Promise((r) => setTimeout(r, 1400));
-      await ui.bild('Mittagspause', S.merke.tisch === 'mila' ? 'Mila zeigt dir einen Würfel-Trick. Du schaffst ihn nicht. Sie lacht fast.' : S.merke.tisch === 'lina' ? 'Lina zeichnet weiter. Am Ende schiebt sie dir die Serviette rüber. Du bist auch drauf. Als Taube.' : 'Ayla trommelt den Takt auf das Tablett. Noah verschluckt sich vor Lachen.', 3);
+      await ui.bild('Mittagspause', S.merke.tisch === 'mila' ? 'Mila zeigt dir, wie der Würfel geht. Du schaffst eine Seite. Sie sagt: „Für den Anfang okay.“' : S.merke.tisch === 'lina' ? 'Lina zeichnet weiter. Am Ende schiebt sie dir die Serviette rüber. Die Kantine, von oben. Du bist auch drauf.' : 'Ayla trommelt einen Takt auf das Tablett. Noah versucht mitzuhalten und verschüttet sein Wasser. Alle lachen, Noah auch.', 3);
     },
     plakat: async () => {
       const m = S.merke;
@@ -1637,16 +1651,16 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     kapitelEnde: async () => {
       busFaehrt = -1;
       await new Promise((r) => setTimeout(r, 1200));
-      const kap = SCHRITTE[S.schritt].kap, weiterIdx = SCHRITTE.findIndex((x) => x.kap === kap + 1), startIdx = SCHRITTE.findIndex((x) => x.kap === kap);
+      const kap = SCHRITTE[S.schritt].kap, weiterIdx = SCHRITTE.some((x) => x.kap === kap + 1) ? kapStart(kap + 1) : -1, startIdx = kapStart(kap);
       S.kapitelFertig = Math.max(S.kapitelFertig || 0, kap);
       if (weiterIdx < 0) S.fertig = true;
       sichern();
       const bf = besteFreunde()[0];
       audio.play('unlock'); setTimeout(() => audio.play('chime'), 350);
-      const wahl = await ui.ende({ ...bilanz(), kap, brief: bf ? { von: LEUTE[bf].name, farbe: LEUTE[bf].farbe, text: nachricht(bf, kap) } : null, ueberschrift: ({ 1: 'Deine ersten Tage', 2: 'Die zweite Woche', 3: 'Die Sportfest-Woche', 4: 'Die Test-Woche', 5: 'Die Fake-Woche', 6: 'Die Woche der Grenzen' , 7: 'Die Woche danach', 8: 'Die KI-Woche' , 9: 'Die Akku-Woche' , 10: 'Das Sommerfest' })[kap] || KAPITEL[kap],
+      const wahl = await ui.ende({ ...bilanz(), kap, brief: bf ? { von: LEUTE[bf].name, farbe: LEUTE[bf].farbe, text: nachricht(bf, kap) } : null, ueberschrift: ({ 1: 'Deine ersten Tage', 2: 'Die Liste', 3: 'Die Sportfest-Woche', 4: 'Die Test-Woche', 5: 'Die Fake-Woche', 6: 'Die Sprachnachricht', 7: 'Die Woche danach', 8: 'Die KI-Woche', 9: 'Darios Woche', 10: 'Das Sommerfest' })[kap] || KAPITEL[kap],
         weiter: weiterIdx >= 0 ? 'Weiter: Kapitel ' + (kap + 1) + ' „' + KAPITEL[kap + 1] + '“' : '',
         // Haken fürs nächste Kapitel (kein Spoiler, nur die Frage)
-        frage: (() => { const sit = Object.entries(SZENEN).find(([id]) => S.merke['sitKap_' + id] === kap && S.merke['sit_' + id]); return sit ? (REFLEXION[kap] ? REFLEXION[kap] + ' · ' : '') + 'Diese Woche: ' + sit[1].titel[1] + '. ' + sit[1].frage : REFLEXION[kap] || ''; })(), vorschau: weiterIdx >= 0 ? ({ 1: 'Montag. Eine Liste. Und Noah ist Platz 1.', 2: 'Sportfest. #3 kommt. Und es trifft jemanden, den du magst.',
+        frage: (() => { const sit = Object.entries(SZENEN).find(([id]) => S.merke['sitKap_' + id] === kap && S.merke['sit_' + id]); return sit ? (REFLEXION[kap] ? REFLEXION[kap] + ' · ' : '') + 'Diese Woche: ' + sit[1].titel[1] + '. ' + sit[1].frage : REFLEXION[kap] || ''; })(), vorschau: weiterIdx >= 0 ? ({ 1: 'Montag. Eine Liste. Fünf Plätze. Wer steht drauf?', 2: 'Sportfest. #3 kommt. Und es trifft jemanden, den du magst.',
           3: 'Ein Test. Ein Fenster. Und ein Foto, das es nicht geben dürfte.', 4: 'Alle denken, du bist @annexe.cam. Wie beweist man das Gegenteil?',
           5: 'Mila hat einen Beweis. Er wird dir nicht gefallen.', 6: 'Luca will reden. Ehrlich, sagt er. Glaubst du ihm?',
           7: 'Ein Video von Mme Tidderich. 300 Herzen. Es ist nicht echt.', 8: 'Dario kann nicht schlafen. Er will dir etwas sagen.',
@@ -2009,7 +2023,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   }
   async function naechster() {
     let i = S.schritt + 1;
-    while (i < SCHRITTE.length && SCHRITTE[i].wenn && !SCHRITTE[i].wenn(S.merke)) i++;   // Szenen, die es nur nach bestimmten Entscheidungen gibt
+    while (i < SCHRITTE.length && !imHauptweg(SCHRITTE[i])) i++;   // Szenen nur nach bestimmten Entscheidungen; Unterricht nur, wenn eingeschaltet
     if (i < SCHRITTE.length) await starteSchritt(i, true);
   }
   // Wen spricht man in diesem Schritt an – und was passiert?
@@ -2886,6 +2900,71 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       else ui.toast('<b>🎟 Mission geschafft</b><span>' + info.belohnung + '</span>', 'ly-t-ent');
     },
   };
+  // ---------- Freiwillige Stunden (🎟 → Stunden): Fachstunden im eigenen Modul und die Skills-Stunden mit der Klasse ----------
+  const FACH_RAUM = { deutsch: 'k1_deutsch', mathe: 'k2_mathe', francais: 'k3_franz' };
+  const FACH_NAME = { deutsch: 'Deutsch', mathe: 'Mathe', francais: 'Français' };
+  const kapJetzt = () => (S && S.fertig ? 10 : (SCHRITTE[S ? S.schritt : 0] || {}).kap || 1);
+  const skillsStunden = () => SCHRITTE.filter((x) => x.neben === 'skills');
+  const stundeFrei = (x) => (x.kap || 1) <= kapJetzt() || !!(S.merke.stundenFrei || {})[x.kap || 1];
+  let nebenLaeuft = false;
+  // Etwas außerhalb der Geschichte spielen: Zeit, Leute und Ort der Stunde – danach genau zurück, wo man war
+  async function ausserhalb(titel, plan, zeilen) {
+    if (!S || imGespraech || nebenLaeuft) return;
+    nebenLaeuft = true; ui.ebeneZu();
+    const haupt = SCHRITTE[S.schritt] || {}, p = steuerung.pos.clone(), yaw = steuerung.yaw;
+    try {
+      await ui.blende(titel);
+      sky.time.setTimeOfDay(plan.uhr || 9); ui.uhr(plan.uhr || 9, plan.tag || haupt.tag); uhrenStellen(plan.uhr || 9, plan.kap || haupt.kap || 1);
+      await stelleLeute(plan.leute || {});
+      const o = plan.ort && welt.orte[plan.ort]; if (o) steuerung.teleport(o.x, o.z, o.yaw);
+      await new Promise((r) => setTimeout(r, 700)); await ui.blendeAus(300);
+      await gespraech(zeilen);
+    } finally {
+      await ui.blende('Zurück zur Geschichte');
+      sky.time.setTimeOfDay(haupt.uhr || 8); ui.uhr(haupt.uhr || 8, haupt.tag); uhrenStellen(haupt.uhr || 8, haupt.kap || 1);
+      await stelleLeute(S.fertig ? {} : haupt.leute || {});
+      steuerung.teleport(p.x, p.z, yaw);
+      await new Promise((r) => setTimeout(r, 500)); await ui.blendeAus(300);
+      nebenLaeuft = false; sichern();
+    }
+  }
+  async function stundeSpielen(id) {
+    const st = SCHRITTE.find((x) => x.id === id); if (!st) return;
+    const f = st.fertig || {};
+    const zeilen = [...((st.start && st.start.gespraech && GESPRAECHE[st.start.gespraech]) || []), ...((f.gespraech && GESPRAECHE[f.gespraech]) || [])].filter((z) => !(z && z.tu === 'kapitelEnde'));
+    S.merke.neben = { ...(S.merke.neben || {}), [id]: (S.merke.neben || {})[id] || 0 };
+    await ausserhalb(st.titel.replace(/^Skills: /, 'Skills-Stunde: '), { uhr: st.uhr, tag: st.tag, kap: st.kap, leute: st.leute, ort: (st.start && st.start.teleport) || 'eingangHof' }, zeilen);
+    S.merke.neben[id] = (S.merke.neben[id] || 0) + 1; sichern();
+  }
+  async function fachFreiwillig(fach) {
+    const st = SCHRITTE.find((x) => x.id === FACH_RAUM[fach]) || {}, lp = FACHLEHRER[fach];
+    const leute = { ...(st.leute || {}) }; for (const k of Object.keys(leute)) if (PERSONAL[k] && k !== lp) delete leute[k];
+    if (lp && !leute[lp]) leute[lp] = [-27, -24, Math.PI / 2];
+    const alt = einstStunde; einstStunde = true;
+    try { await ausserhalb(FACH_NAME[fach] + ' · Modul ' + fachStand(fach).modul, { uhr: st.uhr || 9, tag: st.tag, kap: st.kap, leute, ort: 'saal104' }, [{ stunde: fach }]); } finally { einstStunde = alt; }
+  }
+  kmApi.stundenHtml = () => {
+    if (!S) return '';
+    const sk = skillsStunden(), neben = S.merke.neben || {};
+    const fach = Object.keys(FACH_NAME).map((f) => '<li><span class="km-heft">📚</span><div><b>' + FACH_NAME[f] + '</b><small>Modul ' + fachStand(f).modul + ' · bei ' + esc((LEUTE[FACHLEHRER[f]] || {}).name || '') + '</small></div><button type="button" class="ly-btn" data-fach="' + f + '">Stunde spielen</button></li>').join('');
+    const skills = sk.filter(stundeFrei).map((x) => '<li class="' + (neben[x.id] ? 'fertig' : '') + '"><span class="km-heft">K' + x.kap + '</span><div><b>' + esc(x.titel.replace(/^Skills: /, '')) + '</b><small>Skills-Stunde · ' + (neben[x.id] ? 'gespielt' : 'mit der Klasse') + '</small></div><button type="button" class="ly-btn' + (neben[x.id] ? '' : ' ly-primaer') + '" data-neben="' + x.id + '">' + (neben[x.id] ? 'Nochmal' : 'Spielen') + '</button></li>').join('');
+    const zu = sk.filter((x) => !stundeFrei(x)).length;
+    return '<h3 class="km-h3">📚 Stunden – freiwillig</h3><p class="km-leer">Gehören nicht zur Geschichte. Spiel sie, wann du willst' + (unterrichtAn() ? ' (deine Lehrperson hat sie auch in der Geschichte eingeschaltet).' : '.') + '</p>' +
+      '<ul class="km-liste">' + fach + skills + '</ul>' + (zu ? '<p class="km-leer">' + zu + ' weitere Skills-Stunden kommen mit den nächsten Kapiteln – oder mit einem Code deiner Lehrperson.</p>' : '') + '<h3 class="km-h3">🎟 Missionen</h3>';
+  };
+  kmApi.stundenBinden = (k) => {
+    k.querySelectorAll('[data-fach]').forEach((b) => { b.onclick = () => fachFreiwillig(b.dataset.fach); });
+    k.querySelectorAll('[data-neben]').forEach((b) => { b.onclick = () => stundeSpielen(b.dataset.neben); });
+  };
+  // Codes der Lehrperson: SKILLS-3 schaltet die Skills-Stunden von Kapitel 3 frei; DEUTSCH, MATHE, FRANCAIS öffnen die Fachstunde
+  kmApi.stundenCode = (c) => {
+    if (!S) return '';
+    const m = /^SKILLS-?(\d{1,2})$/.exec(c);
+    if (m && +m[1] >= 1 && +m[1] <= 10) { S.merke.stundenFrei = { ...(S.merke.stundenFrei || {}), [+m[1]]: true }; sichern(); return 'Skills-Stunden aus Kapitel ' + (+m[1]) + ' sind frei. Unten in der Liste.'; }
+    const f = { DEUTSCH: 'deutsch', MATHE: 'mathe', MATHS: 'mathe', FRANCAIS: 'francais', FRANZOESISCH: 'francais', FRANZÖSISCH: 'francais' }[c];
+    if (f) { setTimeout(() => fachFreiwillig(f), 50); return FACH_NAME[f] + ': Die Stunde startet.'; }
+    return '';
+  };
   const km = createKursMissionen({ scene, steuerung, ui, ton, vib, zustand: () => S, sichern: () => sichern(), api: kmApi });
   let kmGeladen = false;
   // ---------- S-K-A-T-E im Skatepark: fünf Buchstaben über den Rampen, nur mit Sprung auf dem Brett ----------
@@ -3538,7 +3617,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   let ruheN = 0, titelT = 0;
   // ---------- Kapitel-Vorspann: Kamerafahrt über die Schule zur Tageszeit des ersten Schritts (ui.vorspann zeigt Titel) ----------
   const VORSPANN = {
-    1: 'Neue Schule. Neue Leute. Und ein Account, der alles sieht.', 2: 'Eine Liste. Fünf Namen. Und Noah ist Platz 1.',
+    1: 'Neue Schule. Neue Leute. Und ein Account, der alles sieht.', 2: 'Eine Liste. Fünf Plätze. Und jemand, den du kennst, steht ganz oben.',
     3: 'Sportfest-Woche. Und jemand hat die Kamera schon an.', 4: 'Ein Test. Ein weißer Bildschirm. Und Zahlen von 0 bis 100.',
     5: 'Ein Screenshot mit deinem Namen. Und alle schauen.', 6: 'Ein Satz kann trennen. Ein Satz kann reparieren.',
     7: 'Zwei Gruppen. Eine Kantine. Und du entscheidest, wo du sitzt.', 8: '300 Herzen für ein Video, das nie passiert ist.',
@@ -3807,7 +3886,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (!S.merke['sit_' + id]) sitStart(id);
   }
   async function los(neu, figur, name, abKap, module) {
-    if (neu) { S = neuerStand(name, figur); if (abKap > 1) S.schritt = Math.max(0, SCHRITTE.findIndex((x) => (x.kap || 1) === abKap)); if (module) for (const [f, n] of Object.entries(module)) if (n >= 1) fachStand(f).modul = n; sichern(); }
+    if (neu) { S = neuerStand(name, figur); if (abKap > 1) S.schritt = Math.max(0, kapStart(abKap)); if (module) for (const [f, n] of Object.entries(module)) if (n >= 1) fachStand(f).modul = n; sichern(); }
     await spielerFigur(S.figur);
     laeuft = true;
     if (S.fertig) {
@@ -3816,7 +3895,9 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       ui.auftrag({ kapitel: kapName(SCHRITTE[SCHRITTE.length - 1].kap), ...FREI });
       return;
     }
-    // weiterspielen: an den Anfang des Schritts (mit Ort, ohne Einleitung)
+    // weiterspielen: an den Anfang des Schritts (mit Ort, ohne Einleitung). Steht man in einer Unterrichtsstunde, die jetzt
+    // ausgeschaltet ist (alter Spielstand), geht es mit der nächsten Szene der Geschichte weiter.
+    if (!neu && SCHRITTE[S.schritt] && SCHRITTE[S.schritt].neben && !unterrichtAn()) { let j = S.schritt; while (j < SCHRITTE.length - 1 && !imHauptweg(SCHRITTE[j])) j++; S.schritt = j; S.schrittId = SCHRITTE[j].id; sichern(); }
     const st = SCHRITTE[S.schritt];
     const ort = welt.orte[(st.start && st.start.teleport) || (S.schritt ? 'halle' : 'busAnkunft')];
     const pause = !neu && S.zuletzt ? Date.now() - S.zuletzt : 0;

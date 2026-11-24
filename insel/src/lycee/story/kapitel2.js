@@ -15,23 +15,23 @@ export const SCHRITTE_N2 = [
     leute: { noah: [-20, 11.6, Math.PI, 'sitzt'], mila: [-14, 11.6, Math.PI, 'sitzt'], ben: [4, 14, 0.6, 'redet'], jo: [5.2, 15.4, -2.4, 'redet'], dario: [-32.6, 10.2, -2], kenan: [-34, 9, 1] },
     fertig: { reden: 'noah', gespraech: 'n2_noah' } },
   // Fachstunde (Rückmeldung der Schüler 24.11.): Mathe im eigenen Modul, zu zweit – Mila rechnet schneller als alle
-  { id: 'k2_mathe', kap: 2, tag: 'Montag', uhr: 8.6, titel: 'Mathe', ziel: 'Saal 1.04. Mathe bei Mme Lenning – heute zu zweit.', marker: 'lenning',
+  { id: 'k2_mathe', kap: 2, tag: 'Montag', uhr: 8.6, neben: 'fach', titel: 'Mathe', ziel: 'Saal 1.04. Mathe bei Mme Lenning – heute zu zweit.', marker: 'lenning',
     start: { teleport: 'saal104Tuer' },
     leute: { lenning: [-27, -24, Math.PI / 2], ...KLASSE },
     fertig: { reden: 'lenning', gespraech: 'n2_mathe' } },
-  { id: 'k2_tanks', kap: 2, tag: 'Montag', uhr: 9.9, titel: 'Skills: Das Glas der Bedürfnisse', ziel: 'Skills-Stunde in der Aula. Herr Kuedes hat sechs Tanks gemalt.', marker: 'kaya',
+  { id: 'k2_tanks', kap: 2, tag: 'Montag', uhr: 9.9, neben: 'skills', titel: 'Skills: Das Glas der Bedürfnisse', ziel: 'Skills-Stunde in der Aula. Herr Kuedes hat sechs Tanks gemalt.', marker: 'kaya',
     start: { teleport: 'eingangHof' },
     leute: { kaya: [-14.50, -65.40, 0.00], ...AULA },
     fertig: { reden: 'kaya', gespraech: 'n2_tanks' } },
-  { id: 'k2_mittag', kap: 2, tag: 'Montag', uhr: 12.3, titel: 'Projekt #3', ziel: 'Kantine. Ben winkt mit beiden Armen.', marker: 'ben',
+  { id: 'k2_mittag', kap: 2, tag: 'Montag', uhr: 12.3, titel: 'Wer ist #3?', ziel: 'Kantine. Ben winkt dich an seinen Tisch.', marker: 'ben',
     start: { teleport: 'kantineTuer', gespraech: 'n2_mittagChat' },
     leute: { ben: [16.65, -11.1, Math.PI / 2, 'sitzt'], ayla: [10.75, -10.1, Math.PI / 2, 'sitzt'], jo: [16.65, -10.1, Math.PI / 2, 'sitzt'], mila: [10.75, -11.1, Math.PI / 2, 'sitzt'], dario: [21.4, -13.2, 0.9], kenan: [21.0, -12.0, 1.2] },
     fertig: { reden: 'ben', gespraech: 'n2_mittag' } },
-  { id: 'k2_ruhm', kap: 2, tag: 'Donnerstag', uhr: 8.1, titel: 'Talenttag', ziel: 'Saal 1.04. Mme Tidderich hat eine „neue Methode“.', marker: 'hoffmann',
+  { id: 'k2_ruhm', kap: 2, tag: 'Donnerstag', uhr: 8.1, titel: 'Die Gegenliste', ziel: 'Saal 1.04. Ben hat einen Plan gegen die Liste.', marker: 'hoffmann',
     start: { teleport: 'saal104Tuer', gespraech: 'n2_morgen' },
     leute: { hoffmann: [-27, -24, Math.PI / 2], ...KLASSE },
     fertig: { reden: 'hoffmann', gespraech: 'n2_ruhm' } },
-  { id: 'k2_linie', kap: 2, tag: 'Donnerstag', uhr: 10.0, titel: 'Skills: Laut und leise', ziel: 'Zurück in die Aula. Auf dem Boden kleben Linien.', marker: 'kaya',
+  { id: 'k2_linie', kap: 2, tag: 'Donnerstag', uhr: 10.0, neben: 'skills', titel: 'Skills: Laut und leise', ziel: 'Zurück in die Aula. Auf dem Boden kleben Linien.', marker: 'kaya',
     start: { teleport: 'eingangHof' },
     leute: { kaya: [-14.50, -65.40, 0.00], mesenberg: [-13.54, -65.16, -0.50], ...AULA },
     fertig: { reden: 'kaya', gespraech: 'n2_linie' } },
@@ -43,31 +43,29 @@ export const SCHRITTE_N2 = [
 
 // ---------- @annexe.cam: Top 5 langweiligste Leute ----------
 const TOP5 = {
-  titel: '7P2 😎 (offiziell)', mitglieder: 19, dauer: 34,
+  titel: '7P2', mitglieder: 19, dauer: 34,
   nachrichten: [
     { nach: 0.5, system: true, text: 'Jo hat einen Beitrag von @annexe.cam geteilt.' },
     { nach: 1.4, wer: '@annexe.cam', bild: 'Noah allein am Tisch, Mila zählt Tauben', text: 'TOP 5 LANGWEILIGSTE LEUTE 7P2 😴  #1 noah  #2 mila  #3 …', lacher: { start: 4, proSek: 0.4, stopp: 'gestoppt' } },
-    { nach: 3.6, wer: 'Jo', text: 'digga 💀💀' },
-    { nach: 5.2, wer: 'Ben', text: 'wer ist #3?? ich hoffe ich. dann bin ich wenigstens auf einer liste' },
+    { nach: 3.6, wer: 'Jo', text: '💀' },
+    { nach: 5.2, wer: 'Ben', text: 'wer ist #3? und wieso nur zwei namen' },
     { nach: 7.4, wer: 'Luca', text: 'lowkey stimmt aber' },
-    { nach: 9.6, wer: 'Mila', text: 'Die Liste hat keine Regeln. Sie ist nichts wert.' },
-    { nach: 11.5, wer: 'Jo', text: 'mila hat sich selbst verteidigt 😭 platz 1 jetzt', wennNicht: 'gestoppt' },
+    { nach: 9.6, wer: 'Mila', text: 'Eine Liste ohne Grund ist keine Liste. Nur eine Meinung von jemandem, der sich versteckt.' },
+    { nach: 11.5, wer: 'Jo', text: 'mila verteidigt sich selbst 😭', wennNicht: 'gestoppt' },
     { nach: 13.2, system: true, text: 'Noah ist online.' },
     { nach: 15.4, system: true, text: 'Noah tippt …', wennNicht: 'gestoppt' },
     { nach: 18.2, system: true, text: 'Noah hat die Gruppe verlassen.', wennNicht: 'gestoppt' },
     { nach: 18.2, wer: 'Noah', text: '… danke', wenn: 'gestoppt' },
     { nach: 21, wer: 'Ayla', text: 'wer auch immer das macht. das ist nicht lustig', wennNicht: 'stumm' },
-    { nach: 22.6, wer: 'Yusuf', text: 'hm.' },
-    { nach: 23.4, wer: 'Yusuf', text: 'hm, nein. das ist mies.' },
-    { nach: 24, wer: 'Dario', text: 'chillt mal. ist nur ne liste' },
-    { nach: 27, wer: 'Chiara', text: 'Plan: Erstens essen. Zweitens Seite 12. Drittens die Liste ignorieren.' },
-    { nach: 27, wer: 'Chiara', text: 'Ich war nicht auf der Liste. Ich weiß nicht, ob ich mich freuen soll.' },
+    { nach: 23.4, wer: 'Yusuf', text: 'das ist mies.' },
+    { nach: 24.6, wer: 'Dario', text: 'chillt mal. ist nur ne liste' },
+    { nach: 27, wer: 'Chiara', text: 'Ich bin nicht drauf. Ich weiß nicht, ob ich erleichtert sein soll oder ob ich die Nächste bin.' },
   ],
   aktionen: [
     { id: 'schreiben', t: 'Schreiben', symbol: '💬', wahl: [
-      { t: '„Noah ist der Einzige, der mir Platz freihält. Langweilig?“', setzt: ['gestoppt', 'noahVerteidigt'], ich: 'noah hält mir jeden tag nen platz frei. langweilig? ok', folgen: [{ nach: 1.3, wer: 'Ben', text: 'stimmt. noah 🫡' }, { nach: 2.6, wer: 'Ayla', text: '❤️' }] },
-      { t: '„Wer so eine Liste macht, hat selbst Langeweile.“', setzt: ['gestoppt', 'konter'], ich: 'wer so ne liste macht hat selbst langeweile', folgen: [{ nach: 1.2, wer: 'Jo', text: 'OHHH wallah' }, { nach: 2.6, wer: 'Dario', text: 'chill bro' }] },
-      { t: '„Ich will auch auf eine Liste. Top 5 mit Hunger.“', setzt: 'witz', ich: 'ich will auch auf ne liste. top 5 mit hunger', folgen: [{ nach: 1.1, wer: 'Ben', text: 'ICH BIN #1 DA' }] },
+      { t: '„Noah hat mir am ersten Tag einen Platz freigehalten. Langweilig ist anders.“', setzt: ['gestoppt', 'noahVerteidigt'], ich: 'noah hat mir am ersten tag nen platz freigehalten. langweilig ist anders', folgen: [{ nach: 1.3, wer: 'Ben', text: 'stimmt' }, { nach: 2.6, wer: 'Ayla', text: '❤️' }] },
+      { t: '„Wer so eine Liste macht, hat selbst ein Problem.“', setzt: ['gestoppt', 'konter'], ich: 'wer so ne liste macht hat selbst ein problem', folgen: [{ nach: 1.2, wer: 'Jo', text: 'ohh' }, { nach: 2.6, wer: 'Dario', text: 'chill' }] },
+      { t: '„Lasst uns das Ding einfach nicht mehr teilen.“', setzt: 'witz', ich: 'lasst uns das ding einfach nicht mehr teilen', folgen: [{ nach: 1.1, wer: 'Ben', text: 'ok. jo?' }, { nach: 2.2, wer: 'Jo', text: 'ja ja' }] },
     ] },
     { id: 'privat', t: 'Noah privat schreiben', symbol: '🔒', setzt: ['noahPrivat'], ich: '(privat an Noah) hey. die liste ist müll. pause zusammen?', folgen: [{ nach: 2.2, wer: 'Noah (privat)', text: 'Ich sitz auf der Bank. Falls du willst.' }] },
     { id: 'lachen', t: 'Mitlachen', symbol: '😂', setzt: 'mitgelacht', ich: '😂', folgen: [{ nach: 1, wer: 'Luca', text: 'siehste. alle lachen' }] },
@@ -95,11 +93,11 @@ const fremdbild = (S) => {
 const staerkenDef = (m) => ({
   an: [
     { wer: F.noah, karten: [
-      { t: m.noahGerettet || m.noahVerteidigt ? 'Du hältst Leuten Plätze frei. Jeden Tag. Das macht sonst keiner.' : 'Du sagst zweimal Hallo. Du meinst es ernst. Das merkt man.', konkret: true, antwort: '(liest es dreimal) … Darf ich die behalten? Für immer?' },
+      { t: m.noahGerettet || m.noahVerteidigt ? 'Du hast mir am ersten Tag einen Platz freigehalten. Das macht sonst keiner.' : 'Du sagst zweimal Hallo. Weil du es ernst meinst.', konkret: true, antwort: '(liest es dreimal) … Darf ich die behalten?' },
       { t: 'Du bist nett.', antwort: 'Danke. Glaub ich.' },
       { t: 'Du bist nicht langweilig.', antwort: 'Also … ein bisschen schon. Oder?' } ] },
     { wer: F.mila, karten: [
-      { t: m.spurDario || m.milaAura ? 'Du merkst Sachen, die keiner merkt. Winkel. Druckfehler. Alles.' : 'Du kannst den Würfel in 41 Sekunden. Und du sagst ehrlich, was du denkst.', konkret: true, antwort: 'Das ist präzise formuliert. Danke.' },
+      { t: m.spurDario || m.milaAura ? 'Du merkst Sachen, die keiner merkt. Uhrzeiten. Winkel. Wer wo stand.' : 'Du sagst ehrlich, was du denkst. Auch wenn es keiner hören will.', konkret: true, antwort: '(Pause) … Danke. Das ist genau.' },
       { t: 'Du bist schlau.', antwort: 'Das sagen alle. Das ist keine Beobachtung.' },
       { t: 'Du bist voll anders.', antwort: 'Anders als wer?' } ] },
     m.blindLina ? { wer: F.lina, karten: [
@@ -107,13 +105,13 @@ const staerkenDef = (m) => ({
       { t: 'Du zeichnest gut.', antwort: '(nickt) Danke.' },
       { t: 'Du bist so ruhig.', antwort: '…' } ] }
       : { wer: F.ben, karten: [
-        { t: 'Du machst, dass die Pause lustig ist. Auch wenn du Hunger hast.', konkret: true, antwort: 'Ich wein nicht. Das ist eine Allergie. Gegen Komplimente.' },
+        { t: 'Du hast dich am ersten Tag bei mir entschuldigt. Ohne dass dich wer gezwungen hat.', konkret: true, antwort: '(guckt weg) … Okay. Das war nicht so schwer, wie du denkst. Doch, war es.' },
         { t: 'Du bist witzig.', antwort: 'Ich weiß. Aber danke.' },
         { t: 'Du bist immer gut drauf.', antwort: 'Nicht immer. Aber danke.' } ] },
   ],
   bekommen: [
     { wer: F.noah, t: m.noahVerteidigt ? 'Du hast im Chat was gesagt. Für mich. Hab’s gesehen.' : 'Du redest mit mir, auch wenn andere gucken.' },
-    { wer: F.ben, t: m.auraWitz ? 'Dein Hobby im Chat: Gruppen stummschalten. Hab gelacht.' : 'Du lachst über meine Witze. Auch über die schlechten.' },
+    { wer: F.ben, t: m.benVerziehen ? 'Du hast gesagt „schon okay“. Obwohl es nicht okay war. Ich hab’s mir gemerkt.' : m.chatFrage ? 'Du hast am ersten Tag gefragt, wer das Foto gemacht hat. Das hat sich keiner getraut.' : 'Du lachst über meine Witze. Auch über die schlechten.' },
     { wer: F.mila, t: m.milaStill ? 'Du kannst still sitzen, ohne dass es komisch wird.' : 'Du stellst Fragen. Echte.' },
   ],
 });
@@ -122,33 +120,33 @@ const staerkenDef = (m) => ({
 const PROJEKT3 = (m) => {
   const raus = !(m.noahVerteidigt || m.campKonter);
   return {
-    titel: 'Projekt #3 🔍', mitglieder: 5, dauer: 36,
+    titel: 'wer ist #3', mitglieder: 5, dauer: 36,
     nachrichten: [
-      { nach: 0.4, system: true, text: 'Ben hat dich zur Gruppe „Projekt #3 🔍“ hinzugefügt.' },
-      { nach: 1.4, wer: 'Ben', text: 'okay team. @annexe.cam sagt: #3 kommt diese woche' },
-      { nach: 3.2, wer: 'Ben', text: 'wir finden raus wer #3 ist BEVOR es kommt. wie detektive. mit nuggets' },
+      { nach: 0.4, system: true, text: 'Ben hat dich zur Gruppe „wer ist #3“ hinzugefügt.' },
+      { nach: 1.4, wer: 'Ben', text: 'ok. #3 kommt diese woche. das steht in der story' },
+      { nach: 3.2, wer: 'Ben', text: 'wir finden raus wer es ist bevor es passiert' },
       { nach: 5.4, wer: 'Ayla', text: 'oder wir finden raus wer den account macht. das wär sinnvoller' },
-      { nach: 7.2, wer: 'Ben', text: 'auch gut. projekt 2' },
-      { nach: 9.4, wer: 'Jo', text: 'ich wette #3 ist chiara. die macht nur hausaufgaben', setzt: 'joRaet' },
-      { nach: 12.6, wer: 'Ayla', text: 'jo. genau SO entstehen solche listen', wennNicht: 'joGestoppt' },
-      { nach: 14.6, wer: 'Jo', text: 'war nur spaß digga 😭', wennNicht: 'joGestoppt' },
+      { nach: 7.2, wer: 'Ben', text: 'ok. beides' },
+      { nach: 9.4, wer: 'Jo', text: 'wette #3 ist chiara. die macht nur hausaufgaben', setzt: 'joRaet' },
+      { nach: 12.6, wer: 'Ayla', text: 'jo. genau so entstehen solche listen', wennNicht: 'joGestoppt' },
+      { nach: 14.6, wer: 'Jo', text: 'war nur spaß', wennNicht: 'joGestoppt' },
       raus ? { nach: 17, wer: 'Ben', text: 'btw noah ist aus dem klassenchat raus. sollen wir ihn wieder adden?', setzt: 'noahFrage' }
-        : { nach: 17, wer: 'Ben', text: 'btw noah hat mir ein foto von seinem bausteine-turm geschickt. MIT GLOCKE' },
-      { nach: 20.5, wer: 'Mila', text: 'Fakt: Das Listen-Foto von Noah ist von links unten. Sitzhöhe.' },
-      { nach: 23.5, wer: 'Mila', text: 'Ich mache eine Tabelle. Niemand verdächtigt jemanden ohne Beweis. Auch Jo nicht.' },
-      { nach: 26, wer: 'Jo', text: 'warum „auch jo nicht“ 💀' },
-      { nach: 29, wer: 'Ben', text: 'ok tabelle. ich mach die nuggets' },
-      { nach: 32, wer: 'Ayla', text: 'off topic: bandname „Kein WLAN“. abstimmung bis freitag 🎸' },
+        : { nach: 17, wer: 'Ben', text: 'noah sitzt übrigens wieder mit uns. hat er gefragt ob er darf. als ob er fragen muss' },
+      { nach: 20.5, wer: 'Mila', text: 'Das Foto von Noah ist wieder von links unten. Sitzhöhe. Dreimal dieselbe Perspektive.' },
+      { nach: 23.5, wer: 'Mila', text: 'Ich mache eine Tabelle. Wer wann wo war. Keiner wird verdächtigt ohne Beweis. Auch Jo nicht.' },
+      { nach: 26, wer: 'Jo', text: 'wieso „auch jo nicht“' },
+      { nach: 29, wer: 'Ayla', text: 'weil du alles teilst, jo' },
+      { nach: 31.5, wer: 'Jo', text: '…' },
     ],
     aktionen: [
-      { id: 'jo', t: 'Jo stoppen', symbol: '✋', wenn: 'joRaet', setzt: 'joGestoppt', ich: 'jo raten wir nicht. so fängt das an', folgen: [{ nach: 1.4, wer: 'Jo', text: 'ok ok. sorry. chiara ist eigentlich lustig' }, { nach: 2.8, wer: 'Ayla', text: '👏' }] },
+      { id: 'jo', t: 'Jo stoppen', symbol: '✋', wenn: 'joRaet', setzt: 'joGestoppt', ich: 'jo raten wir nicht. so fängt das an', folgen: [{ nach: 1.4, wer: 'Jo', text: 'ok. sorry. chiara ist eigentlich okay' }] },
       ...(raus ? [
         { id: 'fragen', t: 'Noah privat fragen', symbol: '🔒', wenn: 'noahFrage', wennNicht: 'noahDrin', setzt: ['noahGefragt', 'noahDrin'], ich: '(privat an Noah) willst du wieder in den klassenchat? nur wenn du willst', folgen: [{ nach: 2.6, wer: 'Noah (privat)', text: 'Wenn ihr da seid … ja. Danke, dass du fragst.' }, { nach: 4.2, system: true, text: 'Ben hat Noah zum Klassenchat hinzugefügt.' }] },
         { id: 'adden', t: 'Einfach adden', symbol: '➕', wenn: 'noahFrage', wennNicht: 'noahDrin', setzt: ['noahGeaddet', 'noahDrin'], sys: 'Du hast Noah zum Klassenchat hinzugefügt.', folgen: [{ nach: 2, wer: 'Noah (privat)', text: '?? wer hat mich geaddet. ok … danke? glaub ich' }] },
       ] : []),
       { id: 'witz', t: 'Schreiben', symbol: '💬', wahl: [
         { t: '„Tabelle ja. Namen raten nein.“', setzt: 'regel', ich: 'tabelle ja. namen raten nein', folgen: [{ nach: 1.2, wer: 'Mila', text: 'Genau meine Regel. Ich übernehme sie.' }] },
-        { t: '„Ich bring Snacks zur Ermittlung.“', setzt: 'snacks', ich: 'ich bring snacks zur ermittlung', folgen: [{ nach: 1.1, wer: 'Ben', text: 'DU BIST BEFÖRDERT' }] },
+        { t: '„Und wenn #3 jemand von uns ist?“', setzt: 'snacks', ich: 'und wenn #3 jemand von uns ist?', folgen: [{ nach: 1.6, wer: 'Ben', text: '…' }, { nach: 2.8, wer: 'Mila', text: 'Dann wissen wir es vorher. Das ist der Punkt.' }] },
       ] },
       { id: 'stumm', t: 'Stummschalten', symbol: '🔕', setzt: 'stumm', sys: 'Stumm. Die Gruppe läuft weiter.', ende: true },
     ],
@@ -162,13 +160,13 @@ const DM_CAM = {
     { nach: 0.6, wer: '@annexe.cam', text: 'hey 👀' },
     { nach: 2.6, wer: '@annexe.cam', text: 'willst du wissen, wer #3 ist?' },
     { nach: 6.5, wer: '@annexe.cam', text: 'tipp: jemand aus deiner klasse 📷', wennNicht: 'blockiert' },
-    { nach: 11, wer: '@annexe.cam', text: 'oder bist du es vielleicht selbst 😈', wennNicht: 'blockiert' },
-    { nach: 16, wer: '@annexe.cam', text: 'gute nacht. ich seh dich morgen. du mich nicht.', wennNicht: 'blockiert' },
+    { nach: 11, wer: '@annexe.cam', text: 'oder bist du es selbst', wennNicht: 'blockiert' },
+    { nach: 16, wer: '@annexe.cam', text: 'gute nacht. ich seh dich morgen. du mich nicht', wennNicht: 'blockiert' },
   ],
   aktionen: [
     { id: 'antworten', t: 'Antworten', symbol: '💬', wahl: [
-      { t: '„wer bist du?“', setzt: 'geantwortet', ich: 'wer bist du?', folgen: [{ nach: 1.6, wer: '@annexe.cam', text: 'jemand, der mehr sieht als du 👀' }] },
-      { t: '„lass mich in ruhe.“', setzt: 'geantwortet', ich: 'lass mich in ruhe', folgen: [{ nach: 1.4, wer: '@annexe.cam', text: 'uh. empfindlich 😂' }] },
+      { t: '„wer bist du?“', setzt: 'geantwortet', ich: 'wer bist du?', folgen: [{ nach: 1.6, wer: '@annexe.cam', text: 'jemand, der mehr sieht als du' }] },
+      { t: '„lass mich in ruhe.“', setzt: 'geantwortet', ich: 'lass mich in ruhe', folgen: [{ nach: 1.4, wer: '@annexe.cam', text: 'ok. für heute' }] },
     ] },
     { id: 'beweis', t: 'Screenshot an Mila', symbol: '📸', setzt: 'beweis', sys: 'Screenshot an Mila geschickt.', folgen: [{ nach: 2, wer: 'Mila (privat)', text: 'Gespeichert. Nicht antworten. Morgen zeigen wir das Herrn Kuedes.' }] },
     { id: 'erwachsen', t: 'Jemandem zeigen, dem du traust', symbol: '🧑‍🏫', setzt: ['beweis', 'erwachsen'], sys: 'Screenshot gemacht. Heute zu Hause zeigen. Morgen Herrn Kuedes.' },
@@ -231,19 +229,19 @@ export const GESPRAECHE_N2 = {
       { t: '„Platz eins? Bisschen verdient.“ (grinsen)', herz: { noah: -2, ben: 1 }, dann: [['noah', '(lacht. Zu lang.) Haha. Ja.'], ['erzaehler', 'Er macht das Buch auf. Seite eins. Er liest nicht.']] },
       { t: '„Die Liste ist Müll. Wer macht so was?“', staerke: 'klar', herz: { noah: 1 }, dann: [
         ['noah', 'Jemand, der mich kennt. Das ist das Schlimme.'],
-        ['noah', 'Ich dachte, ich bin hier neu. Jetzt bin ich langweilig neu.'] ] },
+        ['noah', 'Ich bin seit einer Woche hier. Und schon „der Langweilige“.'] ] },
       { t: '(Hinsetzen. Nichts sagen. Neben ihm.)', staerke: 'warten', herz: { noah: 2 }, merke: 'noahBank', dann: [
         ['erzaehler', 'Eine Minute. Zwei. Eine Taube landet vor euch.'],
         ['noah', 'Mila würde die jetzt zählen.'], ['erzaehler', 'Noah schiebt dir sein halbes Brötchen rüber.'] ] },
       { t: '„Was machst du eigentlich gern?“', staerke: 'zuhoeren', herz: { noah: 2 }, merke: 'noahHobby', dann: [
-        ['noah', 'Ich bau Sachen aus Bausteinen. Riesig. Sag’s keinem.'],
-        ['noah', 'Ich hab den Glockenturm nachgebaut. Mit Glocke.'], ['noah', 'Das klingt langweilig, oder?'],
+        ['noah', 'Ich bau Sachen. Aus Bausteinen. Große Sachen.'],
+        ['noah', 'Gerade den Kirchturm von Junglinster. Mit allem. Sag’s keinem.'], ['noah', 'Das klingt langweilig, oder?'],
         { wahl: [
-          { t: '„Nein. Das klingt nach Talenttag.“', herz: { noah: 2 }, merke: 'noahTalent', dann: [['noah', 'Talenttag? … Oh nein. Oh doch. Vielleicht.']] },
-          { t: '„Ein bisschen. Aber cool langweilig.“', staerke: 'humor', herz: { noah: 1 }, dann: [['noah', 'Cool langweilig. Das schreib ich mir auf.']] },
+          { t: '„Nein. Das klingt nach ziemlich viel Geduld.“', herz: { noah: 2 }, merke: 'noahTalent', dann: [['noah', '(überlegt) Geduld. So hat das noch keiner genannt.']] },
+          { t: '„Ein bisschen. Aber ich würd ihn trotzdem gern sehen.“', staerke: 'humor', herz: { noah: 1 }, dann: [['noah', '(grinst zum ersten Mal heute) Okay. Irgendwann.']] },
         ] } ] },
       { t: '„Komm, wir gehen zu den anderen.“', staerke: 'einbeziehen', herz: { noah: 1, ben: 1 }, dann: [
-        ['noah', 'Zu Ben? Er hat Platz drei geraten. Für sich selbst.'], ['ben', '(von weitem) NOAH! Korb werfen? Die Liste ist Müll!'] ] },
+        ['noah', 'Zu Ben?'], ['erzaehler', 'Ben winkt schon. Mit beiden Armen.'], ['ben', '(von weitem) Noah! Kommst du? Uns fehlt einer!'] ] },
     ] },
   ],
   n2_tanks: [
@@ -270,18 +268,18 @@ export const GESPRAECHE_N2 = {
       } },
   ],
   n2_mittag: [
-    ['ben', '{name}! Setz dich. Wir haben einen Plan. Also: Mila hat einen Plan.'],
-    ['mila', 'Kein Plan. Eine Beobachtung. Wer sitzt beim Essen links von Noah?'],
-    ['erzaehler', 'Am Nachbartisch: Dario, Kenan, Luca. Ein Handy liegt sehr tief.'],
+    ['ben', '{name}. Setz dich. Mila hat was gesehen.'],
+    ['mila', 'Schau mal zum Nachbartisch. Unauffällig.'],
+    ['erzaehler', 'Dario, Kenan, Luca. Darios Handy liegt auf seinem Knie. Die Kamera zeigt nach oben.'],
     { wahl: [
       { t: '(Hinschauen. Nichts sagen. Merken.)', staerke: 'lesen', merke: 'darioTief', dann: [['mila', 'Du hast es auch gesehen. Gut. Kein Wort. Noch nicht.']] },
-      { t: '„Leute, wir starren. Das ist auch komisch.“', staerke: 'klar', herz: { ayla: 1 }, dann: [['ayla', 'Stimmt. Wir sind gerade selbst @annexe.cam. Nur ohne Handy.'], ['ben', '(guckt sofort auf sein Curry)']] },
+      { t: '„Leute, wir starren. Das ist auch komisch.“', staerke: 'klar', herz: { ayla: 1 }, dann: [['ayla', 'Stimmt. Wir machen gerade dasselbe wie der Account. Nur ohne Handy.'], ['erzaehler', 'Ben schaut sofort auf sein Curry.']] },
       { t: '„Dario, was fotografierst du?“ (laut)', staerke: 'mut', herz: { dario: -2, mila: -1 }, merke: 'darioLaut', dann: [
-        ['dario', '(steckt das Handy weg) Mein Essen, bro. Für meine Oma.'], ['mila', '(zischt) Jetzt weiß er, dass wir gucken.'] ] },
+        ['dario', '(steckt das Handy weg) Mein Essen. Für meine Mutter.'], ['mila', '(leise) Jetzt weiß er, dass wir schauen.'] ] },
     ] },
     ['jo', 'Ich sag ja nur: Ich war’s nicht. Falls wer fragt.'],
     ['ben', 'Keiner hat gefragt, Jo.'],
-    ['jo', 'Eben. Darum sag ich’s.'],
+    ['jo', 'Eben. Deshalb sag ich’s.'],
     // Jugendwelt heute: Likes als Zeugnis. Ayla will ihr Video nach sechs Likes löschen.
     ['erzaehler', 'Ayla scrollt. Dann dreht sie das Handy um. Bildschirm nach unten.'],
     ['ayla', 'Mein Bass-Video. Seit einer Stunde online. Sechs Likes.'],
@@ -293,14 +291,35 @@ export const GESPRAECHE_N2 = {
       { t: '„Wenn du dich damit schlecht fühlst: Lösch es.“', staerke: 'zuhoeren', merke: 'aylaPostWeg', dann: [['ayla', '… Ja. Ist besser so.'], ['erzaehler', 'Gelöscht. Ayla isst weiter. Langsamer als vorher.']] },
     ] },
   ],
+  // Donnerstag: Ben will zurückschlagen – mit einer Gegenliste. Gut gemeint. Aber auch eine Liste.
   n2_morgen: [
-    ['erzaehler', 'Donnerstag. An der Tafel steht: „TALENTTAG – 10 Sekunden Ruhm!“'],
-    ['jo', 'Was ist das wieder für eine Methode.'],
+    ['erzaehler', 'Donnerstag, 8:02. Vor Saal 1.04 steht Ben mit dem Handy in der Hand. Er hat bis spät an etwas gebastelt.'],
+    ['ben', 'Hört zu. Die schreiben „langweiligste Leute“. Wir machen eine Gegenliste. Top 5 Talente der 7P2.'],
+    ['ben', 'Mit Fotos. Wir posten sie heute. Dann ist die andere Liste egal.'],
+    ['jo', 'Ich will auf Platz eins.'],
+    ['erzaehler', 'Hinter Ben steht Noah. Er sieht nicht aus, als wollte er auf irgendeine Liste.'],
   ],
   n2_ruhm: [
-    ['hoffmann', 'Neue Methode! Zehn Sekunden Ruhm. Jeder zeigt was. Klein reicht.'],
-    ['hoffmann', 'Kein Applaus-Zwang. Aber Applaus ist erlaubt.'],
-    ['ben', 'Ich kann mit den Ohren wackeln. Nur mit dem linken.'],
+    ['hoffmann', 'Ich hab euch gehört. Bis auf den Gang.'],
+    ['hoffmann', '{name}, du warst schon mal Thema auf so einer Liste. Was sagst du zu Bens Idee?'],
+    { wahl: [
+      { t: '„Gute Idee. Aber wir fragen jeden vorher.“', staerke: 'klar', herz: { ben: 1, noah: 1, hoffmann: 1 }, merke: 'gegenlisteFragen', dann: [
+        ['ben', 'Fragen? … Okay. Fair.'],
+        ['noah', '(leise) Dann sag ich Nein. Ist das okay?'],
+        ['ben', 'Klar ist das okay. Wirklich.'] ] },
+      { t: '„Ja! Wir posten sie heute noch.“', herz: { ben: 1, jo: 1, noah: -1 }, merke: 'gegenlistePost', dann: [
+        ['noah', '(leise) Bitte ohne mich.'],
+        ['ben', 'Aber du wärst bei uns ganz oben!'],
+        ['noah', 'Ich will auf gar keiner Liste sein. Auf keiner.'],
+        ['erzaehler', 'Ben lässt das Handy sinken.'] ] },
+      { t: '„Noch eine Liste? Dann machen wir genau das Gleiche. Nur nett.“', staerke: 'lesen', herz: { ayla: 1, mila: 1 }, merke: 'gegenlisteNein', dann: [
+        ['ayla', 'Stimmt eigentlich.'],
+        ['ben', '(enttäuscht) Und was machen wir dann? Nichts?'] ] },
+    ] },
+    ['hoffmann', 'Hier postet keiner eine Liste. Keine gemeine und keine nette.'],
+    ['hoffmann', 'Aber wenn ihr zeigen wollt, was ihr könnt: Die letzte halbe Stunde gehört euch. Wer will, zeigt was. Wer nicht will, schaut zu.'],
+    { blende: 'Letzte halbe Stunde · Saal 1.04' },
+    ['ben', 'Ich fang an. Ich kann mit den Ohren wackeln. Nur mit dem linken.'],
     { tu: 'n2_noahTalent' },
     ['hoffmann', '{name}? Was zeigst du?'],
     { wahl: [
@@ -308,14 +327,13 @@ export const GESPRAECHE_N2 = {
       { t: 'Ein Beat mit Ayla. (Bandprobe, kurz.)', herz: { ayla: 1 }, merke: 'ruhmBand', dann: [{ tu: 'n2_ruhmBand' }] },
       { t: '„Ich kann gut zuhören.“ (Nichts vorführen.)', staerke: 'klar', merke: 'ruhmZuhoeren', dann: [
         ['hoffmann', 'Wie zeigt man das?'], ['du', 'Jo, erzähl was. Zehn Sekunden.'],
-        ['jo', '… Mein Nachbar hat ein Auto ohne Rückwärtsgang. Er parkt nur vorwärts.'],
-        ['du', 'Also fährt er immer im Kreis um den Block?'], ['jo', 'DIGGA. JA. Du hast zugehört.'] ] },
+        ['jo', '… Mein Opa hat mir Autofahren gezeigt. Auf dem Feldweg. Ich war neun.'],
+        ['du', 'Und deine Mutter weiß es bis heute nicht.'], ['jo', '(Pause) … Woher weißt du das?'], ['du', 'Du hast gerade leiser geredet.'] ] },
       { t: '„Ich zeig nichts.“', merke: 'ruhmNein', dann: [
-        ['hoffmann', 'Darf man. Steht im Vertrag.'], ['ben', 'Mysteriös. Respekt.'] ] },
+        ['hoffmann', 'Darf man. Genau darum ging es.'] ] },
     ] },
-    ['hoffmann', 'Das war … ich hab kein Wort dafür. Ein gutes Zeichen.'],
-    ['mila', 'Nein. Das war ein Talenttag. Mit neun Talenten.'],
-    ['erzaehler', 'Mme Tidderich schreibt es an die Tafel. Und unterstreicht es. Zweimal.'],
+    ['hoffmann', 'Danke. An alle. Auch an die, die nur zugeschaut haben.'],
+    ['mila', '(leise zu dir) Keine Liste. Und trotzdem weiß jetzt jeder, wer was kann.'],
   ],
   n2_linie: [
     ['kaya', 'Das ist Herr Mesenberg. Er ist auch vom SePAS. Heute leitet er.'],
@@ -326,7 +344,7 @@ export const GESPRAECHE_N2 = {
     { szene: 'linie', id: 'linie', def: (m, S) => fremdbild(S),
       ausgang: (r) => (r.abweichung.length >= 3 ? 'ueberrascht' : r.abweichung.length ? 'etwas' : 'gleich'),
       folgen: {
-        ueberrascht: { staerke: 'lesen', dann: [['mesenberg', 'Überrascht? Das geht fast allen so.'], ['ben', 'Ich dachte, ich bin leise. Alle sagen: nein. Hart.']] },
+        ueberrascht: { staerke: 'lesen', dann: [['mesenberg', 'Überrascht? Das geht fast allen so.'], ['ben', 'Ich dachte, ich bin leise. Alle sagen nein.']] },
         etwas: { dann: [['kaya', 'Ein, zwei Punkte anders. Je nach Ort ist man anders.']] },
         gleich: { dann: [['mila', 'Fast alles gleich. Das ist selten. Du kennst dich gut.']] },
       } },
@@ -341,25 +359,28 @@ export const GESPRAECHE_N2 = {
     { tu: 'n2_karteFuerDich' },
     { wahl: [
       { t: '„Danke.“ (Nur das.)', herz: { noah: 1 }, merke: 'komplimentAngenommen', dann: [['noah', '(grinst) Gern. War ernst gemeint.']] },
-      { t: '„Stimmt gar nicht.“', herz: { noah: 1 }, merke: 'komplimentKlein', dann: [['ben', 'Einspruch. Kleinreden gilt nicht. Steht im Vertrag.'], ['noah', 'Ich hab’s aber gesehen. Also stimmt es.']] },
+      { t: '„Stimmt gar nicht.“', herz: { noah: 1 }, merke: 'komplimentKlein', dann: [['noah', 'Ich hab’s aber gesehen. Also stimmt es.']] },
       { t: '„Danke. Du bist auch …“ (Schnell zurückgeben.)', herz: { noah: 1 }, dann: [['noah', 'Stopp. Ich war dran. Du darfst nächste Woche.']] },
     ] },
+    { szene: 'stempel', def: { modul: 'Modul 1 · Wer bin ich?', titel: 'Ich weiß mehr',
+      gelernt: ['Sechs Tanks und ihre Warnlichter', 'Bedürfnis und Wunsch unterschieden', 'Selbstbild und Fremdbild verglichen', 'Stärken-Karten mit drei Teilen verschenkt'],
+      mission: 'Sag jemandem eine Stärke, die du wirklich gesehen hast.' }, folgen: {} },
   ],
   n2_dario: [
-    ['dario', 'Skills-Stunde überlebt? Ich bin fast eingeschlafen.'],
+    ['dario', 'Hey. Ihr hattet heute so eine Talentshow? Hab gehört.'],
     ['dario', 'Guck mal, was ich hab. Lustig, oder?'],
     ['erzaehler', 'Er zeigt dir ein Foto. Noah am Tisch. Von links unten.'],
     ['dario', 'Ging diese Woche in drei Gruppen rum. Auch bei der 7P1.'],
     ['erzaehler', 'Stimmt das? Du kannst es nicht prüfen.'],
     { wahl: [
       { t: '„Wer hat dir das geschickt?“', staerke: 'mut', herz: { dario: -1 }, merke: 'darioGefragt', dann: [
-        ['dario', 'Weiß nicht mehr, bro. Ist doch egal.'], ['erzaehler', 'Kenan guckt zu Dario. Lange. Dario guckt aufs Handy.'] ] },
+        ['dario', 'Weiß nicht mehr. Ist doch egal.'], ['erzaehler', 'Kenan schaut zu Dario. Lange. Dario schaut aufs Handy.'] ] },
       { t: '„Lustig? Noah sitzt seitdem allein.“', staerke: 'klar', herz: { dario: -1, noah: 1 }, merke: 'darioKonfrontiert', dann: [
-        ['dario', '(leiser) … Hab ich nicht gewusst.'], ['dario', 'Ich hab das nicht gepostet. Okay? Real.'] ] },
+        ['dario', '(leiser) … Hab ich nicht gewusst.'], ['dario', 'Ich hab das nicht gepostet. Okay? Ehrlich nicht.'] ] },
       { t: '(Nichts sagen. Merken. Später Mila erzählen.)', staerke: 'lesen', merke: ['spurFoto', 'milaErzaehlen'], dann: [
         ['erzaehler', 'Du nickst. Dario grinst. Sein Daumen zittert ein bisschen.'] ] },
       { t: '„Haha. Schick mal.“', herz: { dario: 2, luca: 1, noah: -2 }, merke: 'fotoGeschickt', dann: [
-        ['dario', 'Safe. Kommt.'], ['erzaehler', 'Jetzt ist es auf deinem Handy. Von links unten.'] ] },
+        ['dario', 'Kommt.'], ['erzaehler', 'Jetzt ist es auf deinem Handy. Von links unten.'] ] },
     ] },
     { tu: 'n2_ende' },
   ],
@@ -384,7 +405,7 @@ export const tunN2 = (c) => ({
     c.S.mission = { kap: 2, tank: b, mal: 0 };
     c.ui.toast('<b>Mission: Tank auffüllen</b><span>' + T[b] + ' – dreimal, je zehn Minuten.</span>', 'ly-t-ent');
   },
-  n2_noahTalent: () => (c.S.merke.noahTalent ? [['noah', '(steht auf) Ich … hab Fotos. Von meinem Glockenturm. Aus Bausteinen.'], ['ben', 'Mit GLOCKE? Noah. Die verkaufen wir. Halbe-halbe.'], ['erzaehler', 'Die Klasse guckt. Wirklich. Noah wird rot. Diesmal gut rot.']]
+  n2_noahTalent: () => (c.S.merke.noahTalent ? [['noah', '(steht auf) Ich … hab Fotos. Von meinem Kirchturm. Aus Bausteinen.'], ['erzaehler', 'Er zeigt sie auf dem Handy. Die Klasse beugt sich vor. Keiner lacht.'], ['ben', 'Noah. Das ist … krass.'], ['erzaehler', 'Noah wird rot. Diesmal die gute Art.']]
     // Ohne Vorbereitung: Noah traut sich nur, wenn man ihn ermutigt – ohne Druck. Druck macht zu.
     : [['erzaehler', 'Noah ist dran. Er guckt auf den Tisch. Sein Bein wippt.'], ['hoffmann', 'Noah? Du darfst auch passen.'],
       { wahl: [
@@ -392,21 +413,19 @@ export const tunN2 = (c) => ({
           ['noah', '(atmet aus) … Okay. Klein.'], ['noah', 'Ich kann das Alphabet rückwärts. In sieben Sekunden.'],
           ['erzaehler', 'Er schafft es in sechs. Ben klatscht als Erster. Dann alle.'], ['noah', '(rot, aber grinst) Hab ich noch nie wem gezeigt.']] },
         { t: '„Los, Noah! Mach einfach! Alle warten!“', merke: 'noahGedraengt', dann: [
-          ['erzaehler', 'Noah wird blass. Jetzt schauen wirklich alle.'], ['noah', '(sehr leise) … Ich pass.'], ['ben', '(zu dir, leise) Bruder. Zu viel Gas.']] },
+          ['erzaehler', 'Noah wird blass. Jetzt schauen wirklich alle.'], ['noah', '(sehr leise) … Ich pass.'], ['ben', '(zu dir, leise) Das war zu viel.']] },
         { t: '(Nichts sagen. Ist seine Sache.)', dann: [['noah', '(schüttelt den Kopf) Pass.'], ['hoffmann', 'Passen ist erlaubt. Danke, Noah.']] },
       ] }]),
   n2_ruhmKorb: async () => {
     const t = await c.ui.freiwurf(); c.S.merke.ruhmTreffer = t;
-    return t >= 3 ? [['ben', t + ' von 5! Vor allen! Ich bin ab heute dein Manager.'], ['jo', 'Okay. Respekt.']] : [['ben', t + ' von 5. Aber mit Stil. Das zählt auch.'], ['hoffmann', 'Zehn Sekunden Ruhm. Erfüllt.']];
+    return t >= 3 ? [['ben', t + ' von 5. Vor allen.'], ['jo', 'Okay. Respekt.']] : [['ben', t + ' von 5. Vor der ganzen Klasse. Das muss man erst mal machen.']];
   },
   n2_ruhmBand: async () => {
     const r = await c.ui.bandprobe(); const pz = Math.round(r.treffer / Math.max(1, r.gesamt) * 100);
-    return pz >= 60 ? [['ayla', 'Okay. Du bist in der Band. Nicht diskutieren.']] : [['ayla', 'Das war kein Takt. Das war Mut. Zählt auch.']];
+    return pz >= 60 ? [['ayla', '(nach dem letzten Ton) Okay. Das machen wir noch mal. Mit Proben.']] : [['ayla', 'Nicht ganz im Takt. Aber du hast dich getraut. Vor allen.']];
   },
-  n2_ende: () => [{ szene: 'stempel', def: { modul: 'Modul 1 · Wer bin ich?', titel: 'Ich weiß mehr',
-      gelernt: ['Sechs Tanks und ihre Warnlichter', 'Bedürfnis und Wunsch unterschieden', 'Selbstbild und Fremdbild verglichen', 'Stärken-Karten mit drei Teilen verschenkt'],
-      mission: 'Sag jemandem eine Stärke, die du wirklich gesehen hast.' }, folgen: {} },
-    ['erzaehler', 'Abends. Kein #3. Nur eine Story von @annexe.cam:'], ['erzaehler', '„#3 kommt, wenn ihr’s nicht erwartet 📷 Sportfest nächsten Freitag 🏃“'],
+  n2_ende: () => [
+    ['erzaehler', 'Abends. Kein #3. Nur eine Story von @annexe.cam:'], ['erzaehler', '„#3 kommt, wenn ihr es nicht erwartet. Sportfest, nächsten Freitag. 📷“'],
     ['erzaehler', '22:14. Eine Nachricht. Nicht im Klassenchat. Privat.'],
     { szene: 'chat', id: 'dmCam', def: DM_CAM,
       ausgang: (r) => (r.flags.erwachsen ? 'erwachsen' : r.flags.beweis ? 'beweis' : r.flags.blockiert ? 'blockiert' : r.flags.geantwortet ? 'geantwortet' : 'ignoriert'),

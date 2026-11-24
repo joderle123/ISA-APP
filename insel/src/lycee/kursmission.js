@@ -265,7 +265,8 @@ export function createKursMissionen({ scene, steuerung, ui, ton = () => {}, vib 
     const frei = INFO_LISTE.filter((x) => m.frei.includes(x.code) || fertig[x.code]);
     const zeile = (x) => '<li class="' + (fertig[x.code] ? 'fertig' : m.aktiv && m.aktiv.code === x.code ? 'aktiv' : '') + '"><span class="km-heft">#' + x.heft + '·' + x.nr + '</span><div><b>' + esc(x.titel) + '</b><small>' + esc(x.skill) + ' · ' + esc(x.ort) + '</small></div>' +
       (fertig[x.code] ? '<button type="button" class="ly-btn" data-res="' + x.code + '">Resümee</button><button type="button" class="ly-btn" data-start="' + x.code + '">Nochmal</button>' : '<button type="button" class="ly-btn ly-primaer" data-start="' + x.code + '">' + (m.aktiv && m.aktiv.code === x.code ? 'Weiter' : 'Starten') + '</button>') + '</li>';
-    const k = ui.ebeneAuf('km', '<button type="button" class="ly-zu" aria-label="Schließen">✕</button><div class="km-fenster"><span class="km-kicker">REAL TALK × Annexe</span><h2>🎟 Missionen</h2>' +
+    const k = ui.ebeneAuf('km', '<button type="button" class="ly-zu" aria-label="Schließen">✕</button><div class="km-fenster"><span class="km-kicker">REAL TALK × Annexe</span><h2>🎟 Stunden und Missionen</h2>' +
+      (api.stundenHtml ? api.stundenHtml() : '') +
       '<p class="km-leer">Den Code findest du am Ende jeder Stunde in deinem REAL-TALK-Heft.</p>' +
       '<form class="km-code"><input type="text" inputmode="text" autocapitalize="characters" autocomplete="off" spellcheck="false" placeholder="z. B. TANK-6" maxlength="24" aria-label="Missions-Code"><button type="submit" class="ly-btn ly-primaer">Los</button></form>' +
       (meldung ? '<p class="km-meldung">' + meldung + '</p>' : '') +
@@ -281,6 +282,7 @@ export function createKursMissionen({ scene, steuerung, ui, ton = () => {}, vib 
     const p = k.querySelector('[data-a="pause"]'); if (p) p.onclick = () => { pausieren(); fenster('Mission pausiert. Du kannst sie jederzeit weiterspielen.'); };
     k.querySelector('[data-a="meine"]').onclick = () => lehrerAnsicht(false);
     const br = k.querySelector('[data-a="brief"]'); if (br) br.onclick = () => brief();
+    if (api.stundenBinden) api.stundenBinden(k, fenster);
   }
   // Brief an mich (ENDE-4): nur für die Person, mit Datum; Löschen möglich
   function brief() {
@@ -295,6 +297,7 @@ export function createKursMissionen({ scene, steuerung, ui, ton = () => {}, vib 
   function codeRein(roh) {
     const c = codeNorm(roh);
     if (c === 'LEHRER') { lehrerAnsicht(true); return; }
+    { const roh2 = String(roh || '').trim().toUpperCase().replace(/\s+/g, '').replace('Ç', 'C'); const r = api.stundenCode && api.stundenCode(roh2); if (r) { ton('pling'); fenster(r); return; } }   // Stunden-Codes (Unterricht, Skills)
     if (!c) { ton('click'); fenster('Diesen Code kenne ich nicht. Schau noch mal ins Heft – zum Beispiel <b>TANK-6</b>.'); return; }
     const m = M(); if (!m.frei.includes(c)) { m.frei.push(c); sichern(); ton('pling'); }
     karte(c);

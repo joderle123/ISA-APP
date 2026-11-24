@@ -383,7 +383,10 @@ Object.assign(LEUTE, PERSONAL);
 SCHRITTE.length = 0;
 SCHRITTE.push(...SCHRITTE_N1, ...SCHRITTE_N2, ...SCHRITTE_N3, ...SCHRITTE_N4, ...SCHRITTE_N5, ...SCHRITTE_N6, ...SCHRITTE_N7, ...SCHRITTE_N8, ...SCHRITTE_N9, ...SCHRITTE_N10);
 Object.assign(GESPRAECHE, GESPRAECHE_N1, GESPRAECHE_N2, GESPRAECHE_N3, GESPRAECHE_N4, GESPRAECHE_N5, GESPRAECHE_N6, GESPRAECHE_N7, GESPRAECHE_N8, GESPRAECHE_N9, GESPRAECHE_N10);
-Object.assign(KAPITEL, { 1: 'Ankommen', 2: 'Wer bin ich?', 3: 'Gefühle verstehen', 4: 'Gefühle regulieren', 5: 'Meine Gedanken', 6: 'Kommunikation und Grenzen', 7: 'Wenn es schwierig wird', 8: 'Digitale Welt', 9: 'Gesund und stark', 10: 'Abschluss' });
+// Kapitel heißen nach der Geschichte, nicht nach dem Kurs-Modul (Rückmeldung 24.11.: Lernen soll man nicht merken).
+// Welches Modul dazu passt, steht in KAPITEL_MODUL (für die Lehrperson und das Stunden-Fenster).
+Object.assign(KAPITEL, { 1: 'Das Foto', 2: 'Die Liste', 3: 'Von links unten', 4: '8:34', 5: 'Admin', 6: 'Die Sprachnachricht', 7: 'Wer bleibt?', 8: 'Nicht echt', 9: 'Haltestelle, früh', 10: 'Hinter der Kamera' });
+export const KAPITEL_MODUL = { 1: 'Ankommen', 2: 'Wer bin ich?', 3: 'Gefühle verstehen', 4: 'Gefühle regulieren', 5: 'Meine Gedanken', 6: 'Kommunikation und Grenzen', 7: 'Wenn es schwierig wird', 8: 'Digitale Welt', 9: 'Gesund und stark', 10: 'Abschluss' };
 Object.assign(STAERKEN, {
   humor: STAERKEN.humor || { name: 'Humor', text: 'Du hast die Lage mit einem Witz entspannt.' },
   mut: STAERKEN.mut || { name: 'Für andere einstehen', text: 'Du hast etwas gesagt, als es unbequem war.' },

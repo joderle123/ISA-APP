@@ -15,7 +15,7 @@ export const SCHRITTE_N8 = [
     start: { teleport: 'eingangHof', gespraech: 'n8_chat' },
     leute: { mila: [0.8, 16.6, 0.4], ben: [2.2, 17.2, -0.4] },
     fertig: { reden: 'mila', gespraech: 'n8_mila' } },
-  { id: 'k8_skills', kap: 8, tag: 'Montag', uhr: 9.9, titel: 'Skills: Echt oder KI?', ziel: 'Aula. An der Wand hängen Fotos. Manche sind gar keine.', marker: 'kaya',
+  { id: 'k8_skills', kap: 8, tag: 'Montag', uhr: 9.9, neben: 'skills', titel: 'Skills: Echt oder KI?', ziel: 'Aula. An der Wand hängen Fotos. Manche sind gar keine.', marker: 'kaya',
     start: { teleport: 'eingangHof' },
     leute: { kaya: [-14.50, -65.40, 0.00], mesenberg: [-13.54, -65.16, -0.50], ...AULA },
     fertig: { reden: 'kaya', gespraech: 'n8_skills' } },
@@ -35,18 +35,18 @@ export const SCHRITTE_N8 = [
 
 // ---------- Das KI-Video im Klassenchat (Teilen-Bremse, E28) ----------
 const VIDEO = {
-  titel: '7P2 😎 (offiziell)', mitglieder: 18, dauer: 34,
+  titel: '7P2', mitglieder: 18, dauer: 34,
   nachrichten: [
     { nach: 0.5, system: true, text: 'Ayla hat dich wieder zur Gruppe hinzugefügt.' },
-    { nach: 1.6, wer: 'Chiara', bild: 'Mme Tidderich tanzt, Enten-Krawatte. KI-Stimme: „7P2 ist meine dümmste Klasse.“', text: 'habt ihr DAS gesehen 😳', lacher: { start: 6, proSek: 0.6, stopp: 'gebremst' } },
-    { nach: 4, wer: 'Jo', text: 'wallah das ist so lustig 💀' },
-    { nach: 6, wer: 'Ben', text: 'DAS IST KI. in 1.04 steht gar kein pult am fenster!!' },
+    { nach: 1.6, wer: 'Chiara', bild: 'Mme Tidderich am Pult. Ihre Stimme: „Die 7P2 ist meine dümmste Klasse. Ich zähl die Tage.“', text: 'habt ihr das gesehen 😳', lacher: { start: 6, proSek: 0.6, stopp: 'gebremst' } },
+    { nach: 4, wer: 'Jo', text: 'krass. hat sie das echt gesagt??' },
+    { nach: 6, wer: 'Ben', text: 'das ist ki. in 1.04 steht gar kein pult am fenster' },
     { nach: 8.5, wer: 'Yusuf', text: 'echt jetzt? sieht echt aus' },
     { nach: 11, system: true, text: 'Das Video wurde 312-mal geteilt.' },
     { nach: 13.5, wer: 'Lina', text: 'das ist gemein. auch wenn es fake ist.', wennNicht: 'stumm' },
     { nach: 17, wer: 'Jo', text: '… oh. okay. ich lösch mein ❤️' },
-    { nach: 20, wer: 'Mila', text: 'Fakt: Das ist KI. Fakt: Sie ist echt. Teilen = mitmachen.' },
-    { nach: 23, wer: 'Ayla', text: 'spionin-bericht: luca schrieb samstag „video kommt 🎬“' },
+    { nach: 20, wer: 'Mila', text: 'Das Video ist KI. Mme Tidderich ist echt. Wer teilt, macht mit.' },
+    { nach: 23, wer: 'Ayla', text: 'luca hat samstag in seiner gruppe geschrieben: „video kommt 🎬“' },
   ],
   aktionen: [
     { id: 'teilen', t: 'Teilen', symbol: '↗️', wahl: [
@@ -55,7 +55,7 @@ const VIDEO = {
     ] },
     { id: 'schreiben', t: 'Schreiben', symbol: '💬', wahl: [
       { t: '„Das ist KI. Und es ist gemein. Hört auf zu teilen.“', setzt: ['gebremst', 'klartext'], ich: 'das ist ki. und es ist gemein. hört auf zu teilen', folgen: [{ nach: 1.4, wer: 'Ayla', text: 'danke. genau' }, { nach: 2.6, wer: 'Yusuf', text: 'oh. ok. gelöscht' }] },
-      { t: '„haha die ente 💀“', setzt: 'mitgelacht', ich: 'haha die ente 💀', folgen: [{ nach: 1.1, wer: 'Jo', text: 'die ENTE' }] },
+      { t: '„haha ihr gesicht 💀“', setzt: 'mitgelacht', ich: 'haha ihr gesicht 💀', folgen: [{ nach: 1.1, wer: 'Jo', text: '💀' }, { nach: 2.4, wer: 'Lina', text: 'das ist nicht ihr gesicht. das ist ein programm' }] },
     ] },
     { id: 'melden', t: 'Video melden', symbol: '🚩', setzt: ['gemeldet', 'gebremst'], sys: 'Gemeldet als „gefälschter Inhalt“.' },
     { id: 'stumm', t: 'Stummschalten', symbol: '🔕', setzt: 'stumm', sys: 'Stumm.', ende: true },
@@ -135,18 +135,18 @@ export const GESPRAECHE_N8 = {
   ],
   n8_mila: [
     ['mila', 'Ich hab das Video Bild für Bild angeschaut. Es ist KI. Eindeutig.'],
-    ['ben', 'Kein Pult am Fenster! Und die Ente blinzelt komisch.'],
-    ['mila', 'Enten blinzeln anders. Aber ja.'],
+    ['ben', 'Kein Pult am Fenster. Und ihr Mund passt nicht zur Stimme.'],
+    ['mila', 'Und sie sagt nie „dumm“. Zu niemandem. Ich hab drei Monate zugehört.'],
     { tu: 'n8_milaStart' },
     // Jugendwelt heute: KI-Angst. Nicht wegreden – etwas tun, das man selbst in der Hand hat.
-    ['noah', '(sehr leise) Wenn die das mit der Ente können …'],
+    ['noah', '(sehr leise) Wenn die das mit einer Lehrerin können …'],
     ['noah', '… können die das auch mit meinem Gesicht?'],
-    ['noah', 'Ich hab Fotos online. Vom Glockenturm. Mit mir drauf.'],
+    ['noah', 'Ich hab Fotos online. Von meinem Kirchturm. Mit mir drauf.'],
     { wahl: [
       { t: '„Schauen wir nach der Stunde deine Einstellungen an? Zusammen.“', staerke: 'einbeziehen', herz: { noah: 2 }, merke: 'noahProfil', dann: [
         ['erzaehler', 'Informatikraum. Noah tippt. Du liest vor.'],
         ['erzaehler', 'Konto auf privat. ✔ Wer darf mich markieren? Niemand. ✔'],
-        ['erzaehler', 'Alte Fotos mit Gesicht: archiviert. Der Glockenturm bleibt. Ohne Noah.'],
+        ['erzaehler', 'Alte Fotos mit Gesicht: archiviert. Der Kirchturm bleibt. Ohne Noah.'],
         ['noah', 'Fühlt sich an wie Fenster zumachen. Bei Sturm.']] },
       { t: '„Können sie. Aber dann ist es deren Schuld. Nicht deine.“', staerke: 'klar', herz: { noah: 1 }, merke: 'noahSchuld', dann: [
         ['noah', '… Und dann?'], ['mila', 'Screenshot, melden, Herr Kuedes. Und BEE SECURE: 8002 1234.']] },
@@ -195,6 +195,12 @@ export const GESPRAECHE_N8 = {
         anders: { merke: 'feedAnders', dann: [['kaya', 'Gut gesteuert. Der Feed folgt dir.'], ['kaya', 'Aber er schubst auch. Merkt euch das.']] },
       } },
     ['kaya', 'Mission: ein Wenn-dann-Satz. „Wenn ich Drama sehe, dann wische ich weiter.“'],
+    ['kaya', 'Zum Schluss macht Herr Mesenberg noch etwas zu KI.'],
+    { szene: 'skillsStunde', id: 's8_ki', def: S8_KI, ausgang: (r) => (r.check ? 'gut' : 'weiter'),
+      folgen: { gut: { staerke: 'klar', merke: 's8Ki' }, weiter: { merke: 's8Ki' } } },
+    { szene: 'stempel', def: { modul: 'Modul 7 · Digitale Welt', titel: 'Erst bremsen',
+      gelernt: ['Echt oder KI? Erst die Quelle prüfen', 'Die Teilen-Bremse: Wer? Echt? Wem schadet es?', 'Der Feed folgt dir – und schubst dich', 'KI: geht klar oder gar nicht', 'Fakes fängt man nicht mit Fakes – Fakten gehören zu Erwachsenen'],
+      mission: 'Ein Wenn-dann-Satz für dein Handy. Und einmal bremsen, bevor du teilst.' }, folgen: {} },
   ],
   n8_tidderich: [
     ['hoffmann', 'Ça va? Das Video ist gefälscht. Die Schule kümmert sich.'],
@@ -207,15 +213,13 @@ export const GESPRAECHE_N8 = {
       { t: '(Nichts sagen. Zuhören.)', staerke: 'warten', herz: { hoffmann: 1 }, dann: [['hoffmann', '(nickt dir zu) Danke, dass ihr zuhört.']] },
     ] },
     { tu: 'n8_joSorry' },
-    ['hoffmann', 'Herr Mesenberg ist heute dabei. Er macht eine Stunde zu KI.'],
-    { szene: 'skillsStunde', id: 's8_ki', def: S8_KI, ausgang: (r) => (r.check ? 'gut' : 'weiter'),
-      folgen: { gut: { staerke: 'klar', merke: 's8Ki' }, weiter: { merke: 's8Ki' } } },
+    ['hoffmann', 'Und jetzt machen wir Unterricht. Ganz normal. Das ist mir gerade wichtig.'],
   ],
   n8_falle: [
     ['mila', 'Gestern Abend. Unter dem Video. Der Account hat selbst kommentiert.'],
     ['mila', '„lowkey stimmt“. Nach 40 Sekunden gelöscht. Ich hab einen Screenshot.'],
-    ['ben', 'Lowkey. Wer sagt lowkey? … Okay, ich sag lowkey. Aber ich war’s nicht.'],
-    ['mila', 'Eben. Ein Wort ist kein Beweis. Mehrere Fakten zusammen: vielleicht.'],
+    ['ben', 'Lowkey. Das sagt Luca dauernd.'],
+    ['mila', 'Andere auch. Ein Wort ist kein Beweis. Mehrere Fakten zusammen: vielleicht.'],
     { wahl: [
       { t: '„Wir stellen Luca eine Falle.“', merke: 'falleLuege', dann: [['mila', 'Nein. Wir fangen keine Fakes mit Fakes.'], ['mila', 'Und niemand von uns spielt Köder. Auch Ben nicht.']] },
       { t: '„Wir sammeln, was wir sicher wissen. Und geben es ab.“', staerke: 'lesen', herz: { mila: 1 }, merke: 'falleEhrlich', dann: [['mila', 'Genau das. Eine Mappe. Für Herrn Kuedes.']] },
@@ -231,7 +235,7 @@ export const GESPRAECHE_N8 = {
     ['ben', 'Übrigens. Freitag hab ich Geburtstag. Die Kekse sind schon Teil davon.'],
     { wahl: [
       { t: '„Freitag bring ich was mit.“', herz: { ben: 2 }, merke: 'benGefragt', dann: [['ben', 'Echt jetzt? … Okay. Ich tu so, als wär ich nicht gerührt.']] },
-      { t: '„Wie alt wirst du? Hundert?“', herz: { ben: 1 }, dann: [['ben', 'Innerlich hundert. Außen dreizehn. Und schuldenfrei. Fast.']] },
+      { t: '„Wie alt wirst du? Hundert?“', herz: { ben: 1 }, dann: [['ben', 'Innerlich hundert. Außen dreizehn.']] },
     ] },
   ],
   n8_post: [
@@ -255,10 +259,8 @@ export const tunN8 = (c) => ({
   n8_milaStart: () => (c.S.merke.videoGeteilt ? [['mila', '(guckt dich an) Du hast es geteilt. Ich hab’s gesehen.'], ['mila', 'Du kannst es noch löschen. Jetzt.']] : []),
   n8_joSorry: () => (c.S.merke.joIchBotschaft || c.S.merke.joGehoert ? [['jo', '(steht auf) Mme Tidderich … ich hab’s geliked. Sorry. Echt.'], ['hoffmann', 'Okay, Jo. Angekommen.']] : []),
   n8_schluss: () => [
-    { szene: 'stempel', def: { modul: 'Modul 7 · Digitale Welt', titel: 'Erst bremsen',
-      gelernt: ['Echt oder KI? Erst die Quelle prüfen', 'Die Teilen-Bremse: Wer? Echt? Wem schadet es?', 'Der Feed folgt dir – und schubst dich', 'KI: geht klar oder gar nicht', 'Fakes fängt man nicht mit Fakes – Fakten gehören zu Erwachsenen'],
-      mission: 'Ein Wenn-dann-Satz für dein Handy. Und einmal bremsen, bevor du teilst.' }, folgen: {} },
-    ['erzaehler', 'Sonntag, 23:14 Uhr. Eine Nachricht von Dario.'],
+    { blende: 'Sonntag · 23:14' },
+    ['erzaehler', 'Eine Nachricht von Dario.'],
     ['dario', '(Nachricht) bist du wach? ich kann nicht schlafen. seit wochen nicht.'],
     ['dario', '(Nachricht) kann ich dir was erzählen? morgen? bitte'],
     { wahl: [

@@ -13,7 +13,7 @@ export const SCHRITTE_N6 = [
     start: { teleport: 'eingangHof', gespraech: 'n6_morgen' },
     leute: { rantini: [4.5, 19.5, Math.PI], ben: [4, 14, 0.2], jo: [5.2, 15.4, -0.4], ayla: [2.5, 15, 0.3], noah: [7.2, 13.2, -0.6], mila: [3.2, 12.8, 0.1], lina: [1.8, 13.4, 0.4], luca: [7.4, 15.6, -0.3] },
     fertig: { reden: 'rantini', gespraech: 'n6_foto' } },
-  { id: 'k6_skills', kap: 6, tag: 'Montag', uhr: 9.9, titel: 'Skills: Wie sag ich’s?', ziel: 'Aula. Herr Kuedes hat ein Ladekabel in der Hand. Warum auch immer.', marker: 'kaya',
+  { id: 'k6_skills', kap: 6, tag: 'Montag', uhr: 9.9, neben: 'skills', titel: 'Skills: Wie sag ich’s?', ziel: 'Aula. Herr Kuedes hat ein Ladekabel in der Hand.', marker: 'kaya',
     start: { teleport: 'eingangHof' },
     leute: { kaya: [-14.50, -65.40, 0.00], mesenberg: [-13.54, -65.16, -0.50], ...AULA },
     fertig: { reden: 'kaya', gespraech: 'n6_skills' } },
@@ -29,7 +29,7 @@ export const SCHRITTE_N6 = [
     start: { teleport: 'kantineTuer' },
     leute: { mila: [-6.2, -21.6, 0.4, 'sitzt'], luca: [-7.6, -20.2, 2.4] },
     fertig: { reden: 'mila', gespraech: 'n6_cdi' } },
-  { id: 'k6_ende', kap: 6, tag: 'Freitag', uhr: 10.0, titel: 'Okay.', ziel: 'Letzte Skills-Stunde der Woche. Aula.', marker: 'kaya',
+  { id: 'k6_ende', kap: 6, tag: 'Freitag', uhr: 10.0, neben: 'skills', titel: 'Skills: Okay.', ziel: 'Letzte Skills-Stunde der Woche. Aula.', marker: 'kaya',
     start: { teleport: 'eingangHof' },
     leute: { kaya: [-14.50, -65.40, 0.00], ...AULA },
     fertig: { reden: 'kaya', gespraech: 'n6_ende' } },
@@ -41,7 +41,7 @@ const ABSTAND = {
   leute: [
     { ...F.ben, okay: 'Okay! Hier bleib ich. Respekt-Abstand.', zuNah: 'Uff, zu nah? Sorry. Ich bin so ein Umarmer.' },
     { ...F.ayla, okay: 'Passt. So stehen Bands auf Fotos.', zuNah: 'Oh. Zu nah? Sag einfach Stopp.' },
-    { ...F.luca, okay: '(bleibt stehen) Chill. Ich wollte nur aufs Foto.', zuNah: '(geht einen Schritt zurück) Okay. Zu nah. Chill.' },
+    { ...F.luca, okay: '(bleibt stehen) Ich wollte nur aufs Foto.', zuNah: '(geht einen Schritt zurück) Okay. Zu nah. Chill.' },
     { ...F.noah, okay: 'Gut. Ich mag auch Abstand.', zuNah: 'Sorry. Ich hätte fragen sollen.' },
   ],
 };
@@ -68,7 +68,7 @@ const BEWEIS = {
     { nach: 4, wer: 'Jo', text: '🎤 Sprachnachricht (0:06)' },
     { nach: 5.5, system: true, text: '▶ Jo: „Mach doch {name} zum Admin, wär lustig, haha.“' },
     { nach: 9, wer: 'Luca', text: 'deal 😈' },
-    { nach: 11.5, wer: 'Jo', text: 'war ein witz digga. mach das nicht' },
+    { nach: 11.5, wer: 'Jo', text: 'war ein witz. mach das nicht' },
     { nach: 14, wer: 'Luca', text: '👍' },
   ],
   aktionen: [{ id: 'stumm', t: 'Handy zurückgeben', symbol: '📱', setzt: 'zurueck', sys: 'Du gibst Mila das Handy zurück.', ende: true }],
@@ -159,7 +159,7 @@ export const GESPRAECHE_N6 = {
     ['jo', 'Luca hat gelacht. Alle haben gelacht. Ich auch.'],
     ['jo', 'Dann war der Satz draußen. Zack. Fehlstart.'],
     { wahl: [
-      { t: '„Wer bei Luca nicht lacht, ist der Nächste. Oder?“', staerke: 'zuhoeren', herz: { jo: 2 }, merke: 'joGehoert', dann: [['jo', '(wirft. Trifft.) … Genau so. Wallah.']] },
+      { t: '„Wer bei Luca nicht lacht, ist der Nächste. Oder?“', staerke: 'zuhoeren', herz: { jo: 2 }, merke: 'joGehoert', dann: [['jo', '(wirft. Trifft.) … Genau so.']] },
       { t: '„Mir egal, warum. Es war mies.“', herz: { jo: -1 }, dann: [['jo', 'Ja. War es. Okay. Ich sag nix mehr.']] },
       { t: '„Ich hätte auch gelacht. Wahrscheinlich.“', staerke: 'zuhoeren', herz: { jo: 1 }, dann: [['jo', 'Echt? … (wirft daneben) Okay. Trotzdem mies von mir.']] },
     ] },
@@ -178,6 +178,7 @@ export const GESPRAECHE_N6 = {
         angriff: { herz: { luca: -2, mila: -1 }, merke: 'stoppAngriff', dann: [['mesenberg', '(kommt rein) Hier wird nicht gefilmt. Luca und du: mitkommen.'], ['mesenberg', 'Mila, alles okay? Du darfst hierbleiben.']] },
       } },
     { tu: 'n6_cdiEnde' },
+    { tu: 'n6_cliff' },
   ],
   n6_ende: [
     { szene: 'skillsStunde', id: 's6_wut', def: S6_WUT_FAMILIE, ausgang: (r) => (r.check ? 'gut' : 'weiter'),
@@ -225,8 +226,12 @@ export const tunN6 = (c) => ({
     { szene: 'stempel', def: { modul: 'Modul 5 · Kommunikation und Grenzen', titel: 'Klar gesagt',
       gelernt: ['Worte, Stimme, Körper – und wem man glaubt', 'Jeder hat einen anderen Wohlfühl-Abstand', 'Ich-Botschaften statt Vorwürfe', 'Zuhören, das wirklich hilft', 'Grenzen setzen in vier Stufen – und ein Stopp annehmen'],
       mission: 'Sag diese Woche einmal deinen Stopp-Satz. Und wenn jemand dir Stopp sagt: „Okay.“ Ohne Diskussion.' }, folgen: {} },
-    ['erzaehler', 'Samstag, 21:40. Dein Handy vibriert.'],
-    ['erzaehler', '„Luca hat dich aus der Gruppe 7P2 😎 (offiziell) entfernt.“'],
+  ],
+  // Kapitelende (Hauptweg): Rauswurf aus dem Klassenchat
+  n6_cliff: () => [
+    { blende: 'Samstag · 21:40' },
+    ['erzaehler', 'Dein Handy vibriert.'],
+    ['erzaehler', '„Luca hat dich aus der Gruppe 7P2 entfernt.“'],
     ['erzaehler', 'Eine Minute später: „Luca hat die Gruppe 7P2 echte 💯 erstellt.“ Du bist nicht drin.'],
     ['erzaehler', 'Dein Handy bleibt still. Lange. Dann vibriert es. Einmal.'],
     { tu: 'kapitelEnde' },

@@ -17,7 +17,7 @@ export function createUI({ root, input, speech }) {
   const hinweis = el('button', 'ly-hinweis'); hinweis.type = 'button'; hinweis.hidden = true; hud.appendChild(hinweis);
   const toastBox = el('div', 'ly-toasts'); hud.appendChild(toastBox);
   const bingo = el('div', 'ly-bingo hud-interactive'); bingo.hidden = true; hud.appendChild(bingo);
-  const knoepfe = el('div', 'ly-knoepfe', '<button type="button" data-k="mission" title="Missionen aus dem Skills-Kurs" aria-label="Missionen"><span>🎟</span></button><button type="button" data-k="handy" title="Handy: Nachrichten (N)" aria-label="Handy"><span>📱</span><i class="ly-badge" hidden></i></button><button type="button" data-k="garderobe" title="Garderobe (G)" aria-label="Garderobe"><span>👕</span><i class="ly-badge" hidden></i></button><button type="button" data-k="fahrt" title="Fahren: R = Skateboard, T = Trottinette" aria-label="Fahren">🛹</button><button type="button" data-k="foto" title="Fotomodus (C)" aria-label="Fotomodus">📷</button><button type="button" data-k="raus" title="Kurz raus (P)" aria-label="Kurz raus">⏸</button><button type="button" data-k="journal" title="Journal (Tab)" aria-label="Journal">☰</button>'); hud.appendChild(knoepfe);
+  const knoepfe = el('div', 'ly-knoepfe', '<button type="button" data-k="mission" title="Stunden und Missionen" aria-label="Stunden und Missionen"><span>🎟</span></button><button type="button" data-k="handy" title="Handy: Nachrichten (N)" aria-label="Handy"><span>📱</span><i class="ly-badge" hidden></i></button><button type="button" data-k="garderobe" title="Garderobe (G)" aria-label="Garderobe"><span>👕</span><i class="ly-badge" hidden></i></button><button type="button" data-k="fahrt" title="Fahren: R = Skateboard, T = Trottinette" aria-label="Fahren">🛹</button><button type="button" data-k="foto" title="Fotomodus (C)" aria-label="Fotomodus">📷</button><button type="button" data-k="raus" title="Kurz raus (P)" aria-label="Kurz raus">⏸</button><button type="button" data-k="journal" title="Journal (Tab)" aria-label="Journal">☰</button>'); hud.appendChild(knoepfe);
   const mutEl = el('div', 'ly-mut'); mutEl.hidden = true; hud.appendChild(mutEl);   // Anspannung während einer Mutprobe
   const skateEl = el('div', 'ly-skate'); skateEl.hidden = true; hud.appendChild(skateEl);   // Skate-Session: Zeit, Punkte, Trick
   const skateKn = el('div', 'ly-skate-knoepfe hud-interactive'); skateKn.hidden = true; hud.appendChild(skateKn);
@@ -142,7 +142,7 @@ export function createUI({ root, input, speech }) {
 
   // ---------- Einstellungen (nur auf diesem Gerät): Textgröße, Vorlesen, weniger Bewegung, Linkshänder, ruhig, Lautstärke ----------
   const EINST = 'lycee.einstellungen';
-  const STANDARD = { text: 'normal', vorlesen: true, bewegung: false, links: false, ruhig: false, leicht: false, vib: true, laut: 0.8, musik: 0.7, effekte: 0.9, umgebung: 0.8, tempo: 1, kontrast: false, lesbar: false, zeitlos: false, grafik: 'auto', risiko: true };
+  const STANDARD = { text: 'normal', vorlesen: true, bewegung: false, links: false, ruhig: false, leicht: false, vib: true, laut: 0.8, musik: 0.7, effekte: 0.9, umgebung: 0.8, tempo: 1, kontrast: false, lesbar: false, zeitlos: false, grafik: 'auto', risiko: true, unterricht: false };
   let einst = { ...STANDARD };
   try { einst = { ...STANDARD, ...JSON.parse(localStorage.getItem(EINST) || '{}') }; } catch (e) { /* egal */ }
   function wendeEinst() {
@@ -170,7 +170,7 @@ export function createUI({ root, input, speech }) {
       schalter([['vorlesen', 'Texte vorlesen'], ['lesbar', 'Gut lesbare Schrift'], ['kontrast', 'Hoher Kontrast']]) + regler('tempo', 'Vorlese-Tempo', 0.6, 1.4) +
       '<h3 class="ly-einst-h">🕹️ Bewegung und Steuerung</h3>' +
       schalter([['bewegung', 'Weniger Bewegung'], ['zeitlos', 'Ohne Zeitdruck'], ['leicht', 'Minispiele leichter'], ['links', 'Linkshändig (Joystick rechts)'], ['vib', 'Vibration (Handy)'], ['ruhig', 'Ruhiger Modus (keine Durchsagen)']]) +
-      '<h3 class="ly-einst-h">🧭 Für Lehrpersonen</h3>' + schalter([['risiko', 'Schwierige Situationen (ab Kapitel 4: Kiffen, Klauen …)']]) +
+      '<h3 class="ly-einst-h">🧭 Für Lehrpersonen</h3>' + schalter([['risiko', 'Schwierige Situationen (ab Kapitel 4: Kiffen, Klauen …)'], ['unterricht', 'Unterricht und Skills-Stunden mitten in der Geschichte (sonst freiwillig: 🎟 → Stunden)']]) +
       '<h3 class="ly-einst-h">🔊 Ton</h3>' + regler('laut', 'Lautstärke') + regler('musik', 'Musik') + regler('effekte', 'Geräusche') + regler('umgebung', 'Umgebung') +
       '<h3 class="ly-einst-h">🖥️ Grafik</h3>' +
       '<div class="ly-einst-grafik">' + [['auto', 'Auto'], ['low', 'Akku sparen'], ['medium', 'Mittel'], ['high', 'Schön']].map(([g, t]) => '<button type="button" data-g="' + g + '" class="' + (einst.grafik === g ? 'an' : '') + '">' + t + '</button>').join('') + '</div>' +

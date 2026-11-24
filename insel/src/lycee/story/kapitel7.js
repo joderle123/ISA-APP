@@ -9,11 +9,11 @@ const F = { noah: { id: 'noah', name: 'Noah', farbe: '#3f78b8' }, mila: { id: 'm
   lina: { id: 'lina', name: 'Lina', farbe: '#9b7bc8' }, chiara: { id: 'chiara', name: 'Chiara', farbe: '#3fa66b' }, yusuf: { id: 'yusuf', name: 'Yusuf', farbe: '#5fa0d0' } };
 
 export const SCHRITTE_N7 = [
-  { id: 'k7_sonntag', kap: 7, tag: 'Montag', uhr: 7.55, titel: 'Wer bleibt?', ziel: 'Ben wartet an der Haltestelle. Mit zwei Brötchen.', marker: 'ben',
+  { id: 'k7_sonntag', kap: 7, tag: 'Montag', uhr: 7.55, titel: 'Wer bleibt?', ziel: 'Ben wartet an der Haltestelle.', marker: 'ben',
     start: { teleport: 'busAnkunft', gespraech: 'n7_chat' },
     leute: { ben: [-20.5, 42.3, -1.9] },
     fertig: { reden: 'ben', gespraech: 'n7_ben' } },
-  { id: 'k7_skills', kap: 7, tag: 'Montag', uhr: 9.9, titel: 'Skills: Welches Tier bist du im Streit?', ziel: 'Aula. Auf dem Boden liegen fünf Tierbilder.', marker: 'kaya',
+  { id: 'k7_skills', kap: 7, tag: 'Montag', uhr: 9.9, neben: 'skills', titel: 'Skills: Welches Tier bist du im Streit?', ziel: 'Aula. Auf dem Boden liegen fünf Tierbilder.', marker: 'kaya',
     start: { teleport: 'eingangHof' },
     leute: { kaya: [-14.50, -65.40, 0.00], mesenberg: [-13.54, -65.16, -0.50], ...AULA },
     fertig: { reden: 'kaya', gespraech: 'n7_skills' } },
@@ -29,7 +29,7 @@ export const SCHRITTE_N7 = [
     start: { teleport: 'kantineTuer' },
     leute: { noah: [10.75, -11.1, Math.PI / 2, 'sitzt'], luca: [12.4, -12.6, -2.2], kenan: [13.6, -12.0, -2.0], ben: [16.65, -11.1, Math.PI / 2, 'sitzt'], ayla: [16.65, -10.1, Math.PI / 2, 'sitzt'], dario: [21.4, -13.2, 0.9] },
     fertig: { reden: 'noah', gespraech: 'n7_kantine' } },
-  { id: 'k7_ende', kap: 7, tag: 'Freitag', uhr: 10.0, titel: 'Spaß, Streit oder Mobbing?', ziel: 'Letzte Skills-Stunde der Woche. Aula.', marker: 'kaya',
+  { id: 'k7_ende', kap: 7, tag: 'Freitag', uhr: 10.0, neben: 'skills', titel: 'Skills: Spaß, Streit oder Mobbing?', ziel: 'Letzte Skills-Stunde der Woche. Aula.', marker: 'kaya',
     start: { teleport: 'eingangHof' },
     leute: { kaya: [-14.50, -65.40, 0.00], ...AULA },
     fertig: { reden: 'kaya', gespraech: 'n7_ende' } },
@@ -68,7 +68,7 @@ const DRUCK = {
   runden: [
     { wer: 'luca', sagt: 'Ganz easy. Du kommst zurück in die Gruppe. Eine Bedingung.', karten: [
       { t: '„Welche?“', art: 'frage', druck: 4, ich: 0, antwort: 'Ein Foto von Noah. Beim Essen. Für die Story. Lustig.' },
-      { t: '„Kein Interesse.“', art: 'nein', druck: -4, ich: 10, antwort: 'Hör doch erstmal zu, bro.' },
+      { t: '„Kein Interesse.“', art: 'nein', druck: -4, ich: 10, antwort: 'Hör doch erstmal zu.' },
     ] },
     { wer: 'kenan', sagt: '(leise, guckt weg) Luca sagt, ist nur ein Foto.', karten: [
       { t: '„Nein. Ich weiß, wie sich das anfühlt.“', art: 'nein', druck: -8, ich: 14, antwort: '(nickt) … Hast recht. Ohne mich, Luca.' },
@@ -152,12 +152,11 @@ export const GESPRAECHE_N7 = {
     ['lina', '(Nachricht) vielleicht verlass ich die Gruppe einfach. 🕊️'],
   ],
   n7_ben: [
-    ['ben', 'Brötchen? Eins für dich. Das andere auch.'],
-    ['ben', 'Ich hab schon gegessen. Zwei.'],
+    ['ben', 'Hey. Ich hab gewartet. Dachte, du willst vielleicht nicht allein reingehen.'],
     { tu: 'n7_benStart' },
-    ['ben', 'Die neue Gruppe hat elf Leute. Die alte hat zwölf. Wir gewinnen.'],
+    ['ben', 'Die neue Gruppe hat elf Leute. Die alte hat zwölf. Ich hab nachgezählt.'],
     { wahl: [
-      { t: '„Danke, dass du geblieben bist.“', herz: { ben: 2 }, dann: [['ben', 'Bruder. Am ersten Tag hast du mir geantwortet. Ehrenschuld.']] },
+      { t: '„Danke, dass du geblieben bist.“', herz: { ben: 2 }, dann: [['ben', 'Am ersten Tag hab ich dein Foto weitergeschickt. Und du hast trotzdem mit mir geredet.'], ['ben', 'Das vergess ich nicht.']] },
       { t: '„Es geht nicht ums Gewinnen.“', staerke: 'klar', herz: { ben: 1 }, dann: [['ben', 'Weiß ich. Aber es fühlt sich besser an, wenn man’s zählt.']] },
     ] },
   ],
@@ -200,6 +199,7 @@ export const GESPRAECHE_N7 = {
         wenig: { herz: { noah: 1 }, merke: 'buehneWenig', dann: [['erzaehler', 'Luca filmt noch kurz. Dann klingelt es.']] },
       } },
     { tu: 'n7_noahDanach' },
+    { tu: 'n7_cliff' },
   ],
   // „Zurückspulen“ (statt Ecken-Lauf): vier Bilder dieser Woche, ohne Namen – was war es, wo standest DU, was tust du nächstes Mal
   n7_ende: [
@@ -277,7 +277,7 @@ export const tunN7 = (c) => ({
       ['kaya', 'Niemand ist ein Tier. Ihr könnt wechseln. Das ist der Trick.'],
     ];
   },
-  n7_benStart: () => (c.S.merke.lucaSorry ? [['ben', 'Du hast Luca „sorry“ geschrieben? Versteh ich. Druck macht das.'], ['ben', 'Du schuldest ihm nix. Gar nix. Nicht mal zwei Euro.']] : []),
+  n7_benStart: () => (c.S.merke.lucaSorry ? [['ben', 'Du hast Luca „sorry“ geschrieben? Versteh ich. Druck macht das.'], ['ben', 'Du schuldest ihm nichts. Gar nichts.']] : []),
   n7_darioDanach: () => (c.S.merke.druckNein ? [['erzaehler', 'Hinter dir Schritte. Dario.'], ['dario', '(leise) Das war … stark. Ich kann das nicht. Nein sagen. Zu ihm.']] : []),
   n7_noahDanach: () => (!c.S.merke.buehneHalb && !c.S.merke.buehneGekippt ? [['noah', '(später, leise) Morgen sitz ich wieder da. Gleicher Tisch.']] : [
     ['noah', '(später, draußen) Du bist gekommen. Zu meinem Tisch.'],
@@ -290,8 +290,13 @@ export const tunN7 = (c) => ({
     { szene: 'stempel', def: { modul: 'Modul 6 · Wenn es schwierig wird', titel: 'Standgehalten',
       gelernt: ['Fünf Tiere im Streit – und welches gerade hilft', 'Die Konflikt-Treppe und ihre Ausstiege', 'Nein sagen, wenn die Gruppe drückt', 'Spaß, Streit und Mobbing unterscheiden', 'Die Bühne kippen: ein Schritt reicht'],
       mission: 'Wenn du diese Woche siehst, dass jemand fertiggemacht wird: einen Schritt machen. Nicht mitlachen zählt auch.' }, folgen: {} },
-    ['erzaehler', 'Samstag. @annexe.cam postet ein Video. Mme Tidderich tanzt. Auf dem Pult. Mit Enten-Krawatte.'],
-    ['erzaehler', 'Es hat schon 300 Herzen. Ben schreibt: „KI. MUND UND STIMME PASSEN NICHT.“'],
+  ],
+  // Kapitelende (Hauptweg): das KI-Video
+  n7_cliff: () => [
+    { blende: 'Samstag · 19:02' },
+    ['erzaehler', '@annexe.cam postet ein Video. Mme Tidderich am Pult. Sie redet über die 7P2.'],
+    ['erzaehler', 'Ihre Stimme. Ihr Gesicht. Sätze, die sie nie gesagt hat.'],
+    ['erzaehler', 'Nach zehn Minuten: 300 Herzen. Ben schreibt dir privat: „das ist ki. oder? sag dass das ki ist.“'],
     { tu: 'kapitelEnde' },
   ],
 });

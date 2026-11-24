@@ -18,7 +18,7 @@ export const SCHRITTE_N5 = [
     start: { teleport: 'saal104Tuer', gespraech: 'n5_tuer' },
     leute: { hoffmann: [-27, -24, Math.PI / 2], ...KLASSE },
     fertig: { reden: 'hoffmann', gespraech: 'n5_saal' } },
-  { id: 'k5_skills', kap: 5, tag: 'Montag', uhr: 9.9, titel: 'Skills: Was ich über mich denke', ziel: 'Aula. Herr Kuedes hat Karten mit Sätzen ausgelegt.', marker: 'kaya',
+  { id: 'k5_skills', kap: 5, tag: 'Montag', uhr: 9.9, neben: 'skills', titel: 'Skills: Was ich über mich denke', ziel: 'Aula. Herr Kuedes hat Karten mit Sätzen ausgelegt.', marker: 'kaya',
     start: { teleport: 'eingangHof' },
     leute: { kaya: [-14.50, -65.40, 0.00], mesenberg: [-13.54, -65.16, -0.50], ...AULA },
     fertig: { reden: 'kaya', gespraech: 'n5_skills' } },
@@ -38,16 +38,16 @@ export const SCHRITTE_N5 = [
 
 // ---------- Klassenchat: der gefälschte Screenshot ----------
 const FAKE = (m) => ({
-  titel: '7P2 😎 (offiziell)', mitglieder: 19, dauer: 38,
+  titel: '7P2', mitglieder: 19, dauer: 38,
   nachrichten: [
     { nach: 0.5, system: true, text: 'Ein neues Konto „7p2.news“ ist der Gruppe beigetreten. Es teilt ein Bild.' },
-    { nach: 1.4, wer: '7p2.news', bild: 'Profil @annexe.cam · Admin: {name}', text: 'wer ist admin?? 👀👀', lacher: { start: 3, proSek: 0.5, stopp: 'gestoppt' } },
-    { nach: 3.4, wer: 'Jo', text: 'NEIN. wallah?? 😳' },
-    { nach: 5.4, wer: 'Luca', text: 'wusst ich’s. lowkey hab ich’s immer gewusst' },
+    { nach: 1.4, wer: '7p2.news', bild: 'Profil @annexe.cam · Admin: {name}', text: 'jetzt wissen wir, wer admin ist 👀', lacher: { start: 3, proSek: 0.5, stopp: 'gestoppt' } },
+    { nach: 3.4, wer: 'Jo', text: 'was?? 😳' },
+    { nach: 5.4, wer: 'Luca', text: 'wusst ich’s. lowkey immer gewusst' },
     { nach: 7.6, wer: 'Ben', text: 'warte. was? 😶', wennNicht: 'benZweifelt' },
     m.testGelacht || m.top5Gelacht ? { nach: 10, wer: 'Noah', text: '…', setzt: 'noahStill' } : { nach: 10, wer: 'Noah', text: 'Ich glaub das nicht. Einfach nicht.' },
     { nach: 12.5, wer: 'Ayla', text: 'leute. erst fragen, dann urteilen' },
-    { nach: 15, wer: 'Luca', text: 'fragen? der screenshot IST die frage 😂', wennNicht: 'gestoppt' },
+    { nach: 15, wer: 'Luca', text: 'fragen? der screenshot ist die antwort 😂', wennNicht: 'gestoppt' },
     { nach: 18, system: true, text: '4 Leute haben das Bild weitergeleitet.' },
     { nach: 21, wer: 'Mila', text: 'Ich prüfe das. Bis dahin: niemand teilt das weiter. Bitte.' },
     { nach: 25, wer: 'Jo', text: 'ok ich hab gelöscht. sorry. war schock' },
@@ -85,13 +85,13 @@ const BOHNEN = {
 const WAAGE = (m) => ({
   wo: 'CDI · mit Mila', satz: 'Mir glaubt eh keiner.', vorher: m.fakeRuhig ? 60 : 80,
   hinweise: [
-    { t: 'Luca hat geschrieben: „wusst ich’s“.', art: 'dafuer', warum: 'Ein Beweis dafür. Aber nur für EINE Person: Luca.' },
+    { t: 'Luca hat geschrieben: „wusst ich’s“.', art: 'dafuer', warum: 'Ein Beweis dafür. Aber nur für eine Person: Luca.' },
     { t: 'Ben schrieb: „warte. was?“', art: 'kein', warum: 'Kein Beweis. Geschockt ist nicht überzeugt.' },
     { t: 'Ayla schrieb: „erst fragen, dann urteilen“.', art: 'dagegen', warum: 'Dagegen. Ayla glaubt den Fake nicht einfach.' },
     { t: 'Jo hat gesagt: „Ich glaub’s nicht. Echt nicht.“', art: 'dagegen', warum: 'Dagegen. Jo glaubt dir.' },
     { t: 'Dein Bauch fühlt sich an wie ein Stein.', art: 'kein', warum: 'Kein Beweis. Ein Gefühl ist echt – aber es ist keine Tatsache.' },
-    { t: 'Luca schrieb: „der screenshot IST die frage“.', art: 'kein', warum: 'Kein Beweis. Nur ein Spruch.' },
-    { t: 'Mme Tidderich hat gesagt: „Ich urteile nicht ohne Fakten.“', art: 'dagegen', warum: 'Dagegen. Eine Erwachsene hält dich NICHT für schuldig.' },
+    { t: 'Luca schrieb: „der screenshot ist die antwort“.', art: 'kein', warum: 'Kein Beweis. Nur ein Spruch.' },
+    { t: 'Mme Tidderich hat gesagt: „Ich urteile nicht ohne Fakten.“', art: 'dagegen', warum: 'Dagegen. Eine Erwachsene hält dich nicht für schuldig.' },
     { t: 'Vier Leute haben das Bild weitergeleitet.', art: 'kein', warum: 'Weiterleiten heißt nicht glauben. Gemein ist es trotzdem.' },
   ],
 });
@@ -121,11 +121,11 @@ const LUCA_DUELL = {
         { t: '„Der Screenshot ist fake. 25:14 gibt’s nicht.“', stimme: 'kopf', art: 'klar', hitze: -10, respekt: 2, antwort: '(zuckt) … Kann ja jeder sagen.' },
         { t: '„Du warst doch selbst im Flur. Um 8:34.“', stimme: 'stolz', art: 'angriff', hitze: 22, antwort: '(wird blass, dann laut) Was soll DAS jetzt heißen?' },
         { t: '(Weggucken. Weiteressen.)', stimme: 'bauch', art: 'rueckzug', hitze: 2, respekt: -1, antwort: 'Siehste. Keine Antwort ist auch eine Antwort.' },
-      ], still: { hitze: 6, antwort: 'Admin sagt nix mehr 😂' } },
+      ], still: { hitze: 6, antwort: 'Admin sagt nix mehr.' } },
     { sagt: 'Jeder sagt, du warst es.', warn: 'Dein Gesicht wird heiß', skill: '(Füße auf den Boden. „Jeder“ ist ein Spruch.)', skillAntwort: '… Okay, nicht jeder.',
       karten: [
         { t: '„Wer ist jeder? Nenn mir drei Namen.“', stimme: 'kopf', art: 'klar', hitze: -12, respekt: 2, antwort: '(sucht) … Leute halt.' },
-        { t: '„Halt einfach die Klappe, Luca.“', stimme: 'stolz', art: 'angriff', hitze: 24, antwort: 'Uhh. Getroffen.' },
+        { t: '„Halt einfach die Klappe, Luca.“', stimme: 'stolz', art: 'angriff', hitze: 24, antwort: 'Oh. Getroffen.' },
         { t: '„Mir egal, was jeder sagt.“', stimme: 'bauch', art: 'rueckzug', hitze: 4, antwort: 'Sieht aber nicht egal aus.' },
       ], still: { hitze: 4, antwort: 'Siehste.' } },
     { sagt: '…', wenn: (z) => z.hitze > 20, warn: 'Deine Hände zittern', skill: '(Ausatmen. Lang.)', skillAntwort: '(dreht sich weg) Egal. Langweilig.',
@@ -151,14 +151,14 @@ export const GESPRAECHE_N5 = {
       } },
   ],
   n5_ben: [
-    ['ben', 'Bruder. Ich hab nix Gutes geschrieben. Ich war baff.'],
+    ['ben', 'Hey. Ich hab heute Morgen nur „warte. was?“ geschrieben. Das war Schock. Nicht, dass ich’s glaub.'],
     { tu: 'n5_benStart' },
     { wahl: [
-      { t: '„Und? Glaubst du’s?“', herz: { ben: 2 }, dann: [['ben', 'Nee. Du bist nicht der Typ für so was.'], ['ben', 'Du bist der Typ für Nuggets.']] },
-      { t: '„Aber was, wenn die anderen es glauben?“', staerke: 'zuhoeren', herz: { ben: 1 }, merke: 'sorgeGesagt', dann: [['ben', 'Welche anderen? Luca? Luca glaubt auch, dass Pizza Gemüse ist.']] },
+      { t: '„Und? Glaubst du’s?“', herz: { ben: 2 }, dann: [['ben', 'Nein. Du bist nicht der Typ für so was.'], ['ben', 'Und wer so was macht, schickt keine Screenshots von sich selbst rum.']] },
+      { t: '„Aber was, wenn die anderen es glauben?“', staerke: 'zuhoeren', herz: { ben: 1 }, merke: 'sorgeGesagt', dann: [['ben', 'Welche anderen? Luca? Der glaubt alles, was ihm gerade passt.']] },
       { t: '„Lass mich. Ich will nicht drüber reden.“', dann: [['ben', 'Okay. Ich lauf trotzdem neben dir. Ohne reden.']] },
     ] },
-    ['jo', '(kommt dazu) Sorry wegen dem „NEIN wallah“. Das war Schock.'],
+    ['jo', '(kommt dazu) Sorry wegen heute Morgen. Ich hab „was??“ geschrieben, bevor ich nachgedacht hab.'],
     ['jo', 'Ich glaub’s nicht. Echt nicht.'],
   ],
   n5_tuer: [
@@ -175,7 +175,7 @@ export const GESPRAECHE_N5 = {
     // „Wohin setzen?“ – nach dem Fake (Montag früh): Körpersprache lesen, Platz wählen. Die Stimmung an der Tür färbt den Blick.
     { tu: 'n5_saalBlick' },
     { wahl: [
-      { t: '(Zu Ben. Er nimmt schon seine Jacke vom Stuhl.)', staerke: 'kontakt', herz: { ben: 1 }, merke: 'saalBen', dann: [['ben', '(leise) Platz für Nuggets-Typen. Reserviert.']] },
+      { t: '(Zu Ben. Er nimmt schon seine Jacke vom Stuhl.)', staerke: 'kontakt', herz: { ben: 1 }, merke: 'saalBen', dann: [['ben', '(leise) Hab ihn für dich freigehalten.']] },
       { t: '(Zu Mila. Sie schiebt dir wortlos ihr Lineal rüber.)', staerke: 'lesen', herz: { mila: 1 }, merke: 'saalMila', dann: [['mila', '(flüstert) Nicht umdrehen. Luca guckt. Lass ihn gucken.']] },
       { t: '(Hinten allein. Rücken zur Wand.)', merke: 'saalHinten', dann: [['erzaehler', 'Von hier siehst du alle. Keiner sieht dich an.'], ['noah', '(dreht sich um, formt mit dem Mund) Alles okay?']] },
       { t: '(Direkt neben Luca. Sollen alle sehen, dass du keine Angst hast.)', wenn: (m) => m.tuerWut || m.tuerKlar, staerke: 'mut', merke: 'saalLuca', dann: [['luca', '(rutscht ein Stück weg) … Was?'], ['erzaehler', 'Er sagt die ganze Stunde nichts mehr.']] },
@@ -200,6 +200,9 @@ export const GESPRAECHE_N5 = {
       folgen: { gut: { staerke: 'lesen', merke: 's5Scham' }, weiter: { merke: 's5Scham' } } },
     ['kaya', 'Mission: Fangt einen Satz ein. Wie eine Fliege.'],
     ['mesenberg', 'Wenn ein Satz sehr laut ist: Bürotür ist offen. Oder 116 111.'],
+    { szene: 'stempel', def: { modul: 'Modul 4 · Meine Gedanken', titel: 'Gedanken geprüft',
+      gelernt: ['Gedanke – Gefühl – Handlung', 'Tatsache und Gedanke unterschieden', 'Vier Denkfallen erkannt', 'Beweise dafür und dagegen gesammelt', 'Einen neuen, echten Satz gebaut'],
+      mission: 'Fang einen fiesen Satz über dich ein. Ist er wahr?' }, folgen: {} },
   ],
   n5_detektiv: [
     ['mila', 'Setz dich. Wir arbeiten wie Detektive. Nur Fakten.'],
@@ -212,7 +215,7 @@ export const GESPRAECHE_N5 = {
       folgen: {
         leichter: { staerke: 'lesen', herz: { mila: 1 }, merke: 'waageLeichter', dann: [['mila', 'Siehst du? Der Satz war lauter als die Beweise.']] },
         etwas: { staerke: 'lesen', herz: { mila: 1 }, dann: [['mila', 'Ein bisschen leichter. Messbar. Reicht.']] },
-        gleich: { herz: { mila: 1 }, dann: [['mila', 'Dein Bauch hört nicht auf Fakten. Typisch Bauch. Er braucht Zeit.']] },
+        gleich: { herz: { mila: 1 }, dann: [['mila', 'Dein Bauch hört noch nicht auf Fakten. Das braucht Zeit. Ist okay.']] },
       } },
     { tu: 'n5_detektivSpur' },
     // Jugendwelt heute: 30 Kommentare fühlen sich an wie „alle“. Mila zählt die Konten.
@@ -225,17 +228,17 @@ export const GESPRAECHE_N5 = {
     ] },
   ],
   n5_satz: [
-    ['noah', 'Platz frei gehalten. Mit einer Banane. Sie hat Respekt.'],
+    ['noah', 'Ich hab dir einen Platz freigehalten. Wie am ersten Tag.'],
     ['noah', 'Kurze Frage. Wenn ICH Admin wär. Was würdest du denken?'],
     { wahl: [
-      { t: '„Du weißt ja nicht mal dein Passwort.“', staerke: 'humor', herz: { noah: 1 }, dann: [['noah', 'Stimmt. Es steht auf meiner Hand.'], ['noah', '(guckt dich an) Bei dir ist das übrigens genauso. Nur so.']] },
+      { t: '„Du weißt ja nicht mal dein eigenes Passwort.“', staerke: 'humor', herz: { noah: 1 }, dann: [['noah', 'Stimmt. Ich hab’s dreimal zurückgesetzt.'], ['noah', '(schaut dich an) Und bei dir denkt das auch keiner. Nur so.']] },
       { t: '„Dass du so was nie machen würdest.“', staerke: 'zuhoeren', herz: { noah: 1 }, dann: [['noah', 'Eben. (guckt dich an) Und bei dir?']] },
     ] },
     ['noah', 'Aber kein „Alles super“-Satz. Den glaubt nicht mal Ben.'],
     { szene: 'satz', id: 'neuerSatz', def: NEUER_SATZ, ausgang: (r) => (r.regeln >= 4 ? 'stark' : r.regeln >= 2 ? 'mittel' : 'schwach'),
       folgen: {
         stark: { staerke: 'ruhig', herz: { noah: 2 }, merke: 'neuerSatz', dann: [['noah', 'Den würde ich glauben. Schreib ihn auf eine Karte.']] },
-        mittel: { herz: { noah: 1 }, merke: 'neuerSatz', dann: [['noah', 'Fast. Das Ende klingt noch nach Luca.']] },
+        mittel: { herz: { noah: 1 }, merke: 'neuerSatz', dann: [['noah', 'Fast. Das Ende klingt noch ein bisschen nach Luca.']] },
         schwach: { merke: 'neuerSatz', dann: [['noah', 'Hm. Das glaubst du selbst nicht. Ich seh’s.']] },
       } },
     { tu: 'n5_satzKarte' },
@@ -246,12 +249,12 @@ export const GESPRAECHE_N5 = {
     { tu: 'n5_kopfSatz' },
   ],
   n5_kantine: [
-    ['ben', 'Hier. Ich hab den Stuhl mit meiner Jacke reserviert. Wie ein Profi.'],
+    ['ben', 'Hier. Setz dich. Der Platz ist für dich.'],
     ['erzaehler', 'Du setzt dich. Ein paar Sekunden ist es still. Dann kommt Luca rüber.'],
     { szene: 'hitze', id: 'lucaDuell', def: LUCA_DUELL, ausgang: lucaAusgang,
       folgen: {
         knall: { herz: { luca: -2, ben: -1 }, merke: 'lucaKnall', dann: [['mesenberg', '(steht plötzlich da) Ihr zwei. Abstand. Luca, du kommst mit.']] },
-        ruhig: { staerke: 'mut', herz: { ben: 2, jo: 1, noah: 1 }, merke: 'lucaRuhig', dann: [['jo', 'Das war ruhig. Wie ein E-Auto. Leise, aber zack.']] },
+        ruhig: { staerke: 'mut', herz: { ben: 2, jo: 1, noah: 1 }, merke: 'lucaRuhig', dann: [['jo', '(leise) Das war ruhig. Und er hatte nichts mehr zu sagen.']] },
         gelb: { staerke: 'ruhig', herz: { ben: 1 }, merke: 'lucaGelb' },
         rot: { herz: { ben: -1 }, merke: 'lucaRot', dann: [['erzaehler', 'Dein Kopf ist laut. Ben schiebt dir wortlos seinen Nachtisch rüber.']] },
       } },
@@ -298,9 +301,6 @@ export const tunN5 = (c) => ({
     ] },
   ],
   n5_ende: () => [
-    { szene: 'stempel', def: { modul: 'Modul 4 · Meine Gedanken', titel: 'Gedanken geprüft',
-      gelernt: ['Gedanke – Gefühl – Handlung', 'Tatsache und Gedanke unterschieden', 'Vier Denkfallen erkannt', 'Beweise dafür und dagegen gesammelt', 'Einen neuen, echten Satz gebaut'],
-      mission: 'Fang einen fiesen Satz über dich ein. Ist er wahr?' }, folgen: {} },
     ['erzaehler', 'Abends. Eine Nachricht von Mila.'],
     ['mila', '(Nachricht) Ich glaube, ich weiß, wer den Fake gebaut hat.'],
     ['mila', '(Nachricht) Es wird dir nicht gefallen.'],

@@ -12,12 +12,12 @@ import { S3_GRUNDGEFUEHLE, S3_ANGST_FAMILIE } from './skills-j1.js';
 export const ORTE_N3 = { sportplatz: { x: -72, z: -6, yaw: -Math.PI / 2 } };
 
 export const SCHRITTE_N3 = [
-  { id: 'k3_pantomime', kap: 3, tag: 'Montag', uhr: 9.9, titel: 'Skills: Sechs Grundgefühle', ziel: 'Aula. Herr Kuedes beginnt mit der Skills-Stunde.', marker: 'kaya',
+  { id: 'k3_pantomime', kap: 3, tag: 'Montag', uhr: 9.9, neben: 'skills', titel: 'Skills: Sechs Grundgefühle', ziel: 'Aula. Herr Kuedes beginnt mit der Skills-Stunde.', marker: 'kaya',
     start: { teleport: 'eingangHof', gespraech: 'n3_checkin' },
     leute: { kaya: [-14.50, -65.40, 0.00], ...AULA },
     fertig: { reden: 'kaya', gespraech: 'n3_pantomime' } },
   // Fachstunde (Rückmeldung der Schüler 24.11.): Französisch im eigenen Modul, Partner-Interview mit Lina
-  { id: 'k3_franz', kap: 3, tag: 'Mittwoch', uhr: 8.1, titel: 'Français', ziel: 'Saal 1.04. Französisch bei Mme Sabli – Interview zu zweit.', marker: 'sabli',
+  { id: 'k3_franz', kap: 3, tag: 'Mittwoch', uhr: 8.1, neben: 'fach', titel: 'Français', ziel: 'Saal 1.04. Französisch bei Mme Sabli – Interview zu zweit.', marker: 'sabli',
     start: { teleport: 'saal104Tuer' },
     leute: { sabli: [-27, -24, Math.PI / 2], ...KLASSE },
     fertig: { reden: 'sabli', gespraech: 'n3_franz' } },
@@ -29,7 +29,7 @@ export const SCHRITTE_N3 = [
     start: { teleport: 'saal104Tuer' },
     leute: { hoffmann: [-27, -24, Math.PI / 2], ...KLASSE },
     fertig: { reden: 'hoffmann', gespraech: 'n3_klasse' } },
-  { id: 'k3_familien', kap: 3, tag: 'Donnerstag', uhr: 9.9, titel: 'Skills: Sorge, Angst, Panik, Verzweiflung', ziel: 'Aula. Zweite Skills-Stunde bei Herrn Kuedes.', marker: 'kaya',
+  { id: 'k3_familien', kap: 3, tag: 'Donnerstag', uhr: 9.9, neben: 'skills', titel: 'Skills: Sorge, Angst, Panik, Verzweiflung', ziel: 'Aula. Zweite Skills-Stunde bei Herrn Kuedes.', marker: 'kaya',
     start: { teleport: 'eingangHof' },
     leute: { kaya: [-14.50, -65.40, 0.00], ...AULA },
     fertig: { reden: 'kaya', gespraech: 'n3_familien' } },
@@ -65,11 +65,11 @@ const SYNCHRON = {
     { wer: F.ayla, gefuehl: 'ekel', regie: 'tief, zieht „Leeetzte“ in die Länge' },
   ],
   reaktion: {
-    freude: [F.ben, 'JA! Letzte mit Stil! Das ist der Geist!'],
+    freude: [F.ben, 'Letzte! Aber zusammen!'],
     trauer: [F.noah, '(nickt) Ja. So fühlt es sich an. Ein bisschen.'],
     wut: [F.jo, 'Siehste. So hab ich’s gemeint. Danke.'],
     angst: [F.mila, 'Angst? Wovor? … Vor Montag. Verstehe. Alle reden darüber.'],
-    ekel: [F.ayla, 'Haha, wie Kantinen-Fisch. Perfekt.'],
+    ekel: [F.ayla, 'Wie Kantinen-Fisch. Genau so.'],
     ueberraschung: [F.mila, 'Überraschung passt nicht. Wir waren immer Letzte.'],
   },
 };
@@ -81,7 +81,7 @@ const SPUREN = (m) => ({
   spuren: [
     { id: 'winkel', sy: '📐', t: 'Alle Fotos sind von links unten gemacht. Sitzhöhe.', kurz: 'Winkel: links unten', echt: true,
       kommentar: ['Fakt. Zweimal derselbe Winkel. Das ist ein Muster.', 'Doch. Das ist das Wichtigste. Zweimal derselbe Winkel.'] },
-    { id: 'jo', sy: '😂', t: 'Jo hat den Sticker mit „wallah“ gefeiert.', kurz: 'Jo hat gelacht', echt: false,
+    { id: 'jo', sy: '😂', t: 'Jo hat über den Sticker gelacht. Laut.', kurz: 'Jo hat gelacht', echt: false,
       kommentar: ['Richtig. Lachen ist mies. Aber Lachen ist nicht Machen.', 'Lachen ist nicht Machen. Das gehört nicht an diese Wand.'] },
     { id: 'skate', sy: '🛹', t: 'Im Fenster auf dem Mila-Foto: ein Stück Skateboard.', kurz: 'Griptape im Fenster', echt: true,
       kommentar: ['Griptape. Skateboard. Gut gesehen.', 'Doch, das zählt. Griptape ist ein Skateboard. Wer hat eins in der Kantine?'] },
@@ -106,11 +106,11 @@ const SPUREN = (m) => ({
 
 // ---------- @annexe.cam: Mila beim Essen ----------
 const MILA_FOTO = {
-  titel: '7P2 😎 (offiziell)', mitglieder: 19, dauer: 34,
+  titel: '7P2', mitglieder: 19, dauer: 34,
   nachrichten: [
     { nach: 0.5, system: true, text: 'Luca hat einen Beitrag von @annexe.cam geteilt.' },
-    { nach: 1.4, wer: '@annexe.cam', bild: 'Mila allein am Kantinentisch, Würfel am Ohr', text: 'mila telefoniert mit ihrem würfel 💀 sticker kommt gleich', lacher: { start: 5, proSek: 0.5, stopp: 'gestoppt' } },
-    { nach: 3.4, wer: 'Jo', text: 'NEIN 😭😭' },
+    { nach: 1.4, wer: '@annexe.cam', bild: 'Mila allein am Kantinentisch, Würfel am Ohr', text: 'mila redet mit ihrem würfel. sticker kommt gleich 💀', lacher: { start: 5, proSek: 0.5, stopp: 'gestoppt' } },
+    { nach: 3.4, wer: 'Jo', text: '😭' },
     { nach: 5.0, wer: 'Ben', text: 'ok das ist bisschen hart' },
     { nach: 6.8, wer: 'Luca', text: 'sticker wann' },
     { nach: 8.6, system: true, text: 'Mila ist online.' },
@@ -118,14 +118,14 @@ const MILA_FOTO = {
     { nach: 13.5, wer: '@annexe.cam', text: '[Sticker] 🍝😵', wennNicht: 'gestoppt' },
     { nach: 13.5, wer: 'Ayla', text: 'stopp jetzt. ernsthaft', wenn: 'gestoppt' },
     { nach: 16, wer: 'Dario', text: 'leute chillt. war nicht so gemeint', wenn: 'gestoppt' },
-    { nach: 16, wer: 'Jo', text: 'der sticker 💀 wallah', wennNicht: 'gestoppt' },
+    { nach: 16, wer: 'Jo', text: 'der sticker 💀', wennNicht: 'gestoppt' },
     { nach: 19, wer: 'Chiara', text: 'Mila ist gerade raus aus der Kantine. Gerannt.' },
     { nach: 22, wer: 'Noah', text: 'Ich hab nicht gelacht. Nur damit ihr es wisst.' },
   ],
   aktionen: [
     { id: 'schreiben', t: 'Schreiben', symbol: '💬', wahl: [
       { t: '„Löscht das. Jetzt. Das ist kein Spaß mehr.“', setzt: ['gestoppt', 'klartext'], ich: 'löscht das. jetzt. das ist kein spaß mehr', folgen: [{ nach: 1.2, wer: 'Ben', text: 'hab den account gemeldet. macht mit' }] },
-      { t: '„Wer das teilt, ist genauso dabei.“', setzt: ['gestoppt', 'teilen'], ich: 'wer das teilt ist genauso dabei', folgen: [{ nach: 1.3, wer: 'Luca', text: 'oha. moralpolizei' }, { nach: 2.6, system: true, text: 'Luca hat den Beitrag gelöscht.' }] },
+      { t: '„Wer das teilt, ist genauso dabei.“', setzt: ['gestoppt', 'teilen'], ich: 'wer das teilt ist genauso dabei', folgen: [{ nach: 1.3, wer: 'Luca', text: 'ok moralpolizei' }, { nach: 2.6, system: true, text: 'Luca hat den Beitrag gelöscht.' }] },
       { t: '„Haha der Sticker“', setzt: 'mitgemacht', ich: 'haha der sticker', folgen: [{ nach: 1, wer: 'Jo', text: 'endlich wer mit humor' }] },
     ] },
     { id: 'privat', t: 'Mila privat schreiben', symbol: '🔒', setzt: 'milaPrivat', ich: '(privat an Mila) wo bist du? ich komm', folgen: [{ nach: 3, wer: 'Mila (privat)', text: 'CDI. Leseecke. Bitte nicht mit der ganzen Klasse.' }] },
@@ -153,7 +153,7 @@ const STAFFEL_PULT = {
     wut: [['du', '(reißt den Stab hoch) MANN! … LAUF, NOAH! LAUF!'], ['erzaehler', 'Ihr rennt wie verrückt. Ihr überholt eine Gruppe.'], ['jo', 'Was war DAS? Weiter!']],
     trauer: [['erzaehler', 'Du hebst den Stab auf. Gehst. Ins Ziel. Als letzte Person.'], ['noah', '(leise) Hey. Ist nur ein Stab.']],
     angst: [['erzaehler', 'Alle gucken. Du willst unsichtbar sein. Du läufst trotzdem.'], ['ben', '(von der Seite) WEITER! WEITER!']],
-    freude: [['du', '(lachst) Okay! Neuer Plan: Wir gewinnen den Stil-Preis!'], ['noah', '(lacht mit) Wir sind so schlecht!'], ['ben', 'Stil-Preis! Ich halt die Rede!']],
+    freude: [['du', '(lachst) Okay! Egal! Lauf einfach!'], ['noah', '(lacht mit, im Laufen) Wir sind so schlecht!'], ['ben', '(von der Seite) Weiter! Weiter!']],
   },
 };
 
@@ -161,7 +161,7 @@ const STAFFEL_PULT = {
 const JO_DUELL = {
   wo: 'Sportplatz · nach der Staffel', gegner: { name: 'Jo', farbe: '#c0392b' }, publikum: 'halbe Klasse', hitze: 45, zeit: 7,
   runden: [
-    { sagt: 'Digga, wegen dir sind wir Letzte.', warn: 'Dein Gesicht wird heiß', skill: '(Weggucken. Ausatmen. Dann reden.)', skillAntwort: '(wartet) … Was?',
+    { sagt: 'Wegen dir sind wir Letzte.', warn: 'Dein Gesicht wird heiß', skill: '(Weggucken. Ausatmen. Dann reden.)', skillAntwort: '(wartet) … Was?',
       karten: [
         { t: '„Ja. Der Stab ist mir runtergefallen. Passiert.“', stimme: 'kopf', art: 'klar', hitze: -8, respekt: 1, antwort: 'Passiert? Das war Sportfest!' },
         { t: '„Wegen MIR? Du bist doch gestolpert!“', stimme: 'stolz', art: 'angriff', hitze: 25, antwort: 'Ich? ICH? Sag das nochmal.' },
@@ -302,9 +302,9 @@ export const GESPRAECHE_N3 = {
   ],
   n3_sportMorgen: [
     ['erzaehler', 'Freitag. Sportfest. Die ganze Annexe auf dem Platz.'],
-    ['ben', 'Staffel, Leute! Wir sind die 7P2! Wir sind … schnell? Hoffentlich.'],
+    ['ben', 'Staffel! 7P2! Wir sind … schnell. Hoffentlich.'],
     ['jo', 'Ich hab trainiert. Die ganze Woche. Wir gewinnen.'],
-    ['noah', 'Ich laufe als Dritter. Meine Knie haben schon gekündigt.'],
+    ['noah', 'Ich laufe als Dritter. Meine Knie zittern jetzt schon.'],
     ['ayla', 'Ich spür’s im Bauch. Wie Bass. Und du?'],
     { szene: 'koerper', id: 'koerper', def: KOERPER_STAFFEL, ausgang: (r) => (r.zonen.includes('nirgends') ? 'unklar' : 'gespuert'),
       folgen: {
@@ -317,6 +317,9 @@ export const GESPRAECHE_N3 = {
     { szene: 'skillsStunde', id: 's3_angst', def: S3_ANGST_FAMILIE, ausgang: (r) => (r.check ? 'gut' : 'weiter'),
       folgen: { gut: { staerke: 'lesen', merke: 's3Angst' }, weiter: { merke: 's3Angst' } } },
     ['kaya', 'Morgen beim Sportfest: Achte darauf, welche Stufe der Leiter passt.'],
+    { szene: 'stempel', def: { modul: 'Modul 2 · Gefühle verstehen', titel: 'Gefühle gelesen',
+      gelernt: ['Sechs Grundgefühle und ihre Botschaft', 'Sorge, Angst, Panik und Verzweiflung unterschieden', 'Eigene Körperkarte gemacht', 'Fakten von Gerüchten getrennt'],
+      mission: 'Merk dir einmal: Wo spürst du Wut?' }, folgen: {} },
   ],
   n3_staffel: [
     ['sommer', '(pfeift) Allez! Staffel 7P2: Jo, Ben, Noah, {name}. Auf die Plätze!'],
@@ -343,12 +346,12 @@ export const GESPRAECHE_N3 = {
     { szene: 'synchron', id: 'synchron', def: SYNCHRON, ausgang: (r) => (r.richtig >= 3 ? 'gut' : 'mittel'),
       folgen: {
         gut: { staerke: 'lesen', herz: { ayla: 1, ben: 1 }, merke: 'synchronGut', dann: [['ayla', 'Du hörst, wie was gesagt wird. Nicht nur was. Band-Ohr.']] },
-        mittel: { herz: { ayla: 1 }, dann: [['ben', 'Stimmen sind schwer. Meine klingt immer nach Hunger.']] },
+        mittel: { herz: { ayla: 1 }, dann: [['ayla', 'Stimmen sind schwer. Man hört erst, wenn man aufhört zu reden.']] },
       } },
     { szene: 'mischpult', id: 'misch', def: (m) => MISCH(m), ausgang: (r) => (r.gemischt ? 'gemischt' : 'eins'),
       folgen: {
-        gemischt: { staerke: 'lesen', herz: { noah: 1 }, dann: [['noah', 'Mehrere Gefühle gleichzeitig. Wie ein Smoothie. Ein komischer.']] },
-        eins: { dann: [['noah', 'Nur eins? Bei mir ist alles gleichzeitig. Wie Ben in der Pause.']] },
+        gemischt: { staerke: 'lesen', herz: { noah: 1 }, dann: [['noah', 'Mehrere Gefühle gleichzeitig. Ich dachte, man darf nur eins haben.']] },
+        eins: { dann: [['noah', 'Nur eins? Bei mir ist gerade alles gleichzeitig.']] },
       } },
     { tu: 'n3_ende' },
     { tu: 'n3_fragen' },
@@ -383,7 +386,7 @@ export const tunN3 = (c) => ({
       ['erzaehler', 'Anonym: „keiner mag dich wirklich“'],
       ['jo', '(lacht zu laut) Haha. Clowns.'],
       { wahl: [
-        { t: '„Anonym heißt: Die trauen sich nicht mit Namen.“', staerke: 'klar', herz: { jo: 2 }, merke: 'joAnonymKlar', dann: [['jo', '(guckt hoch) … Stimmt eigentlich. Feige.'], ['jo', 'Ich lösch den Sticker.']] },
+        { t: '„Anonym heißt: Die trauen sich nicht mit Namen.“', staerke: 'klar', herz: { jo: 2 }, merke: 'joAnonymKlar', dann: [['jo', '(schaut hoch) … Stimmt eigentlich. Feige.'], ['jo', 'Ich lösch das Ding.']] },
         { t: '(leise) „Die zweite ist mies. Trifft dich das?“', staerke: 'zuhoeren', herz: { jo: 2 }, merke: 'joAnonymGefragt', dann: [['jo', '(lange Pause) … Bisschen.'], ['jo', 'Melden geht, oder? Mach ich.']] },
         { t: '(Mitlachen.)', merke: 'joAnonymGelacht', dann: [['erzaehler', 'Jo lacht mit. Dann steckt er das Handy weg.'], ['erzaehler', 'Den Rest der Pause sagt er fast nichts.']] },
       ] },
@@ -401,15 +404,13 @@ export const tunN3 = (c) => ({
     return n >= 2 ? [['erzaehler', 'Du hast deine Warnsignale gemerkt: heißes Gesicht, Fäuste, Herzklopfen. Bevor es kracht.']] : [];
   },
   n3_ende: () => [
-    ['sommer', 'Letzte. Aber mit der lautesten Fankurve. Ben, du bist heiser.'],
+    ['sommer', 'Letzte. Aber ihr seid alle ins Ziel gekommen. Das schaffen nicht alle.'],
     ['erzaehler', 'Mila zieht dich am Ärmel.'],
     ['mila', 'Guck. #3 ist da. Vor fünf Minuten.'],
     ['mila', '„#3 der langweiligsten: die 7P2-Staffel. Letzte. 💀“'],
     ['mila', 'Von links unten. Links von uns standen viele.'],
     ['erzaehler', 'Die Skate-Ecke. Zwei aus der 7P1. Jo mit Handy. Dario.'],
-    { szene: 'stempel', def: { modul: 'Modul 2 · Gefühle verstehen', titel: 'Gefühle gelesen',
-      gelernt: ['Sechs Grundgefühle und ihre Botschaft', 'Sorge, Angst, Panik und Verzweiflung unterschieden', 'Eigene Körperkarte gemacht', 'Fakten von Gerüchten getrennt'],
-      mission: 'Merk dir einmal: Wo spürst du Wut?' }, folgen: {} },
+    ['mila', '(leise) Jetzt sind wir alle drauf. Die ganze Staffel. Auch du.'],
     { tu: 'kapitelEnde' },
   ],
 });
