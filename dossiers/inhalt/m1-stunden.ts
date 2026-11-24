@@ -2,12 +2,17 @@
 // „Detektiv-Fall zu viel und zu schwer, Tank-Spiel zu kompetitiv, Anweisungen zu kompliziert. Es soll der Sweet Spot sein:
 // persönlich, man kann sich damit identifizieren, regt zum Nachdenken an, man kommt leicht ins Gespräch, macht Spaß und ist
 // leicht verständlich.“
+// Am 24.11.2026 noch einmal: „Vergiss Nele komplett … nahbarer, mehr Fragen zum Video“ – Stunde 1 geht vom eigenen Alltag aus.
 // Darum: kurze Fälle mit „Kennst du das?“, wenige Fragen je Station (erst ankreuzen), eine Sprechblase „Redet darüber“ als
 // Gesprächsanstoß, Modelle zum Ausmalen und Verbinden, große Runden ohne Punkte und ohne Teams gegeneinander.
 // Alle Personen und Situationen sind erfunden.
 import type { Stunde } from '../typen'
 
-/* ---------- Stunde 1 · Leerer Tank ---------- */
+/* ---------- Stunde 1 · Leerer Tank ----------
+   Neu am 24.11.2026 (Rückmeldung: „Vergiss Nele komplett, gestalte den Unterricht total um und nahbarer, mehr Fragen zum
+   Video“): Die Stunde geht nicht mehr von einer erfundenen Person aus, sondern vom eigenen Alltag der Jugendlichen –
+   sechs Sätze zum Wiedererkennen („Kennst du das?“), die später den sechs Tanks zugeordnet werden. Der Clip hat Fragen
+   vorher, beim Schauen und danach plus „Stimmt das?“. */
 const tank: Stunde = {
   frage: 'Warum bist du manchmal sauer – obwohl dir keiner etwas getan hat?',
   dauer: 'etwa 90 Minuten',
@@ -26,19 +31,19 @@ const tank: Stunde = {
           ],
         },
         {
-          titel: 'Der Fall: Neles Morgen', zeit: '12 Min.', wie: 'lesen · zu zweit', icon: 'book',
-          leitung: 'Vorlesen oder reihum lesen. Erst ankreuzen, dann die Sprechblase: zwei, drei Meinungen hören. Nicht auflösen – es gibt mehrere gute Antworten.',
+          titel: 'Kennst du das?', zeit: '12 Min.', wie: 'allein · dann alle', icon: 'hand-finger',
+          leitung: 'Erst still ankreuzen. Dann liest die Leitung jeden Satz vor, alle zeigen gleichzeitig den Daumen – Sie auch. Nur zählen, nicht nachfragen. Wer mag, erzählt bei der Sprechblase ein Beispiel.',
           bausteine: [
-            {
-              art: 'fall', bild: 'peep:nele:muede', name: 'Nele, 15',
-              text: 'Dritte Stunde. Die Lehrerin fragt freundlich: „Nele, bist du bei uns?“ Nele knallt das Heft auf den Tisch und geht raus. Auf dem Flur sagt sie: „Keine Ahnung, was mit mir los ist.“ So war ihr Morgen:',
-              zeitleiste: [['23:30', 'Im Klassenchat planen alle den Samstag. Nele wird nicht gefragt.'], ['1:50', 'Sie liegt noch wach und schaut aufs Handy.'], ['6:10', 'Wecker. Vier Stunden Schlaf.'], ['7:05', 'Kein Frühstück. Ein Energydrink auf dem Weg.'], ['10:20', '„Nele, bist du bei uns?“ – Knall.']],
-              fragen: [
-                { f: 'Was war bei Nele los? Kreuz alles an, was passt.', kreuz: ['müde', 'hungrig', 'traurig wegen dem Chat', 'die Lehrerin war gemein'] },
-                { f: 'Kennst du solche Tage?', kreuz: ['oft', 'manchmal', 'nie'] },
-              ],
-            },
-            { art: 'reden', x: ['Was hat Nele am meisten zugesetzt: der Chat, der Schlaf oder das fehlende Frühstück?', 'Was hätte ihr um 23:30 geholfen?'] },
+            { art: 'text', x: ['Sechs Sätze. Kreuz an, was du von dir kennst. Danach liest die Leitung jeden Satz vor – alle zeigen gleichzeitig den Daumen: **hoch** = kenn ich, **runter** = kenn ich nicht.'] },
+            { art: 'fragen', fragen: [{ f: 'Kennst du das?', raster: { spalten: ['kenn ich', 'ein bisschen', 'kenn ich nicht'], zeilen: [
+              'A · Wenn ich Hunger habe, nervt mich alles.',
+              'B · Wenn ich nicht weiß, was morgen passiert, werde ich unruhig.',
+              'C · Wenn alle etwas planen und ich nicht dabei bin, ist mein Tag gelaufen.',
+              'D · Wenn mir keiner zuhört, werde ich laut – oder ich sage gar nichts mehr.',
+              'E · Wenn mir jemand ständig sagt, was ich tun soll, mache ich extra das Gegenteil.',
+              'F · Wenn nichts los ist, mache ich Blödsinn.',
+            ] } }] },
+            { art: 'reden', x: ['Welchen Satz kannten fast alle?', 'Wer mag: Wann war das bei dir zuletzt so?'] },
           ],
         },
       ],
@@ -46,24 +51,41 @@ const tank: Stunde = {
     {
       stationen: [
         {
-          titel: 'Clip: Was die Nacht mit dir macht', zeit: '12 Min.', wie: 'alle', icon: 'player-play',
-          leitung: 'Ausschnitt vorher wählen und selbst ansehen. Erst schätzen, dann schauen.',
+          titel: 'Clip: Was die Nacht mit dir macht', zeit: '15 Min.', wie: 'alle', icon: 'player-play',
+          leitung: 'Ausschnitt vorher ansehen und prüfen, ob „Stimmt das?“ dazu passt. Erst „Vorher“, dann schauen, beim Schauen mitschreiben, danach „Stimmt das?“ gemeinsam auflösen.',
           bausteine: [
             {
               art: 'clip',
-              clip: { titel: 'Mehr als lebenswichtig: Darum schlafen wir!', kanal: 'Quarks', url: 'https://www.youtube.com/watch?v=sdH-fEEh1uY', dauer: 'Ausschnitt, etwa 6 Min.', frage: 'Was macht dein Körper nachts – und was hat Nele am Morgen gefehlt?' },
-              vorher: [{ f: 'Schätz: Wie viele Stunden Schlaf braucht man mit 15?', zahl: ['Stunden'] }],
-              dabei: ['Das hat mich überrascht:'],
-              nachher: [{ f: 'Hilft der Energydrink Nele?', kreuz: ['ja', 'nur kurz', 'nein'] }],
+              clip: { titel: 'Mehr als lebenswichtig: Darum schlafen wir!', kanal: 'Quarks', url: 'https://www.youtube.com/watch?v=sdH-fEEh1uY', dauer: 'Ausschnitt, etwa 6 Min.', frage: 'Was macht dein Körper nachts – und was passiert, wenn du zu wenig schläfst?' },
+              vorher: [
+                { f: 'Schätz: Wie viele Stunden Schlaf braucht man mit 15?', zahl: ['Stunden'] },
+                { f: 'Und du – wie viele Stunden hast du heute Nacht geschlafen?', zahl: ['Stunden'] },
+              ],
+              dabei: ['Das macht der Körper nachts:', 'Das passiert bei zu wenig Schlaf:', 'Das hat mich überrascht:'],
+              nachher: [
+                { f: 'War deine Schätzung richtig?', kreuz: ['ja', 'zu viel', 'zu wenig'] },
+                { f: 'Was machst du ab heute anders?', linien: 1 },
+              ],
             },
+            { art: 'fragen', fragen: [{ f: 'Stimmt das? Kreuz an – danach wird aufgelöst.', raster: { spalten: ['stimmt', 'stimmt nicht'], zeilen: [
+              'Im Schlaf räumt das Gehirn auf und speichert, was du gelernt hast.',
+              'Wer zu wenig schläft, wird schneller gereizt.',
+              'Verpassten Schlaf kann man am Wochenende ganz nachholen.',
+              'Das Handy im Bett hilft beim Einschlafen.',
+              'Ein Energydrink ersetzt eine Stunde Schlaf.',
+            ] } }] },
+            { art: 'reden', x: ['Was hält euch abends am längsten wach?'] },
           ],
         },
+      ],
+    },
+    {
+      stationen: [
         {
           titel: 'Das Modell: deine sechs Tanks', zeit: '12 Min.', wie: 'alle · dann allein', icon: 'gauge',
-          leitung: 'Die sechs Tanks vorlesen, zu jedem ein Beispiel aus der Gruppe. Dann malt jede Person still aus. Niemand muss seine Tanks zeigen.',
+          leitung: 'Die sechs Tanks vorlesen, zu jedem ein Beispiel aus der Gruppe. Dann verbinden und ausmalen – still. Niemand muss seine Tanks zeigen.',
           bausteine: [
-            { art: 'text', x: ['Jeder Mensch hat sechs Tanks – wie die Leisten in einem Game. Ist einer leer, wirst du schneller sauer, müde oder traurig. Was einen Tank wieder füllt, heißt **Tankstelle**.'] },
-            { art: 'fragen', fragen: [{ f: 'Mal in jedem Tank aus: Wie voll ist er bei dir heute?' }] },
+            { art: 'text', x: ['Schlaf ist nur **einer** von sechs Tanks. Jeder Mensch läuft auf ihnen – wie auf den Leisten in einem Game. Ist einer leer, wirst du schneller sauer, müde oder traurig. Was einen Tank wieder füllt, heißt **Tankstelle**.'] },
             {
               art: 'modell', warnTitel: 'Leer? Dann oft', anzeige: 'ich',
               punkte: [
@@ -75,8 +97,11 @@ const tank: Stunde = {
                 { icon: 'confetti', t: 'Spaß und Neues', x: 'Etwas erleben, das neu ist.', warn: 'gelangweilt, zappelig' },
               ],
             },
-            { art: 'fragen', fragen: [{ f: 'Welche Tanks waren bei Nele leer? Kreise die Nummern ein.', kreis: ['1', '2', '3', '4', '5', '6'] }] },
-            { art: 'reden', x: ['Welcher Tank ist bei euch am Montagmorgen am leersten – und welcher am Freitagabend?'] },
+            { art: 'fragen', fragen: [
+              { f: 'Mal in jedem Tank aus: Wie voll ist er bei dir heute?' },
+              { f: 'Die sechs Sätze von Station 2: Welcher Tank ist da jeweils leer? Verbinde.', verbinden: [['A · Hunger', 'B · morgen unklar', 'C · nicht dabei', 'D · keiner hört zu', 'E · ständig gesagt bekommen', 'F · nichts los'], ['Ernst genommen', 'Spaß und Neues', 'Körper', 'Selbst entscheiden', 'Sicherheit', 'Dazugehören']] },
+            ] },
+            { art: 'reden', x: ['Welcher Tank ist bei euch am Montagmorgen am leersten – und welcher am Freitagabend?', 'Was füllt bei euch am schnellsten wieder auf?'] },
           ],
         },
       ],
@@ -174,10 +199,10 @@ const tank: Stunde = {
           ],
         },
         {
-          titel: 'Schluss: ein Satz für Nele', zeit: '5 Min.', wie: 'alle', icon: 'flag',
-          leitung: 'Wer mag, liest seinen Satz vor. In der nächsten Stunde nach den drei Kreuzen fragen.',
+          titel: 'Schluss: dein Tipp', zeit: '5 Min.', wie: 'alle', icon: 'flag',
+          leitung: 'Wer mag, liest seinen Tipp vor. In der nächsten Stunde nach den drei Kreuzen fragen.',
           bausteine: [
-            { art: 'fragen', fragen: [{ f: 'Es ist 23:30. Nele sieht den Chat. Was schreibst du ihr?', linien: 1 }] },
+            { art: 'fragen', fragen: [{ f: 'Dein bester Freund ist seit Tagen schlecht drauf. Welche Frage stellst du ihm?', linien: 1 }] },
             { art: 'merk', x: 'Erst tanken. ==Dann streiten.==' },
             { art: 'woche', x: 'Füll deinen leersten Tank auf – **dreimal diese Woche.** Ein Kreuz pro Mal.', kaestchen: ['1', '2', '3'] },
           ],
@@ -246,10 +271,11 @@ const lautLeise: Stunde = {
             {
               art: 'clip',
               clip: { titel: 'Introvertiert | extrovertiert: Wer ist glücklicher?', kanal: 'Terra Xplore', url: 'https://www.youtube.com/watch?v=x_un3Ojno7Y', dauer: 'die ersten 5 Min.', frage: 'Introvertiert heißt: eher leise. Extrovertiert heißt: eher laut. Wer hat es leichter?' },
-              vorher: [{ f: 'Dein Tipp: Wer ist glücklicher?', kreuz: ['die Lauten', 'die Leisen', 'kein Unterschied'], unter: true }],
-              dabei: ['Das können die Leisen gut:'],
-              nachher: [{ f: 'War dein Tipp richtig?', kreuz: ['ja', 'nein', 'halb'] }],
+              vorher: [{ f: 'Dein Tipp: Wer ist glücklicher?', kreuz: ['die Lauten', 'die Leisen', 'kein Unterschied'], unter: true }, { f: 'Was bist du eher?', kreuz: ['eher laut', 'eher leise', 'beides'] }],
+              dabei: ['Das können die Leisen gut:', 'Das können die Lauten gut:', 'Das hat mich überrascht:'],
+              nachher: [{ f: 'War dein Tipp richtig?', kreuz: ['ja', 'nein', 'halb'] }, { f: 'Was sollte Amiras Lehrer über leise Leute wissen?', linien: 1 }],
             },
+            { art: 'reden', x: ['Erkennt ihr euch im Clip wieder? Wo ja, wo nein?'] },
           ],
         },
       ],
@@ -381,10 +407,11 @@ const kannst: Stunde = {
             {
               art: 'clip',
               clip: { titel: 'Ich bin nichts wert – so steigerst du dein Selbstwertgefühl', kanal: 'BUBBLES', url: 'https://www.youtube.com/watch?v=XZzcGOxqBy8', dauer: 'die ersten 5 Min.', frage: 'Selbstwertgefühl heißt: wie viel du dir selbst wert bist. Woher kommt das?' },
-              vorher: [{ f: 'Was zählt am meisten dafür, wie du über dich denkst?', kreuz: ['Noten', 'was andere sagen', 'was ich selbst denke'], unter: true }],
-              dabei: ['Ein Tipp aus dem Clip:'],
-              nachher: [{ f: 'Welcher Tipp hilft Yusuf?', linien: 1 }],
+              vorher: [{ f: 'Was zählt am meisten dafür, wie du über dich denkst?', kreuz: ['Noten', 'was andere sagen', 'was ich selbst denke'], unter: true }, { f: 'Wie oft redest du dich selbst schlecht?', kreuz: ['oft', 'manchmal', 'selten'] }],
+              dabei: ['Tipp 1 aus dem Clip:', 'Tipp 2 aus dem Clip:', 'Dieser Satz ist hängen geblieben:'],
+              nachher: [{ f: 'Welchen Tipp probierst du diese Woche aus?', linien: 1 }, { f: 'Welcher Tipp hilft Yusuf?', linien: 1 }],
             },
+            { art: 'reden', x: ['Woher kommt es, dass man sich selbst manchmal so wenig zutraut?'] },
           ],
         },
       ],

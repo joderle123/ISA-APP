@@ -141,7 +141,7 @@ function baue(d: Heft): string {
       <div class="tl">${d.tracks.map((e, i) => `<div class="t"><div class="z">${z2(i + 1)}</div><div class="tx"><h3>${t(e.titel)}</h3><p>${t(e.kurz)}</p>${e.stunde && nT < 5 ? `<p style="color:var(--g);margin-top:.5mm;font-size:8.6pt">${stationen(e).map((x) => esc(kurzName(x.s))).join(' → ')}</p>` : ''}</div><div class="s mo">S. ${seiteVon(i)}</div></div>`).join('')}
         <div class="t x"><div class="z">+</div><div class="tx"><h3>${neu ? '' : 'Sessions · '}${d.kino ? 'Kino · ' : ''}${neu ? 'Streitfragen' : 'Hot Takes'} · Code · Karten</h3><p>${neu ? '' : 'Aktionen für die ganze Gruppe, '}${d.kino ? (neu ? 'Der Film des Trimesters, ' : 'der Film des Trimesters, ') : ''}${neu && !d.kino ? 'Streiten' : 'Streiten'} nach Regeln, ein Quiz, Karten für die Tasche.</p></div><div class="s mo">S. ${neu ? S.kino : S.ses}</div></div></div>
       <div class="gr">${tape('users', neu ? 'Die Leute im Heft – alle erfunden' : 'Cast – alle erfunden, alles schon passiert')}
-        <div class="cast">${d.cast.map((c) => `<div class="c"><div class="b"><div class="pk punkt"></div><div class="fig">${figur(c.bild)}</div></div><div class="tx"><h3>${t(c.name)}</h3><p>${t(c.x)}</p></div></div>`).join('')}</div></div>
+        <div class="cast" style="grid-template-columns:repeat(${d.cast.length},1fr)">${d.cast.map((c) => `<div class="c"><div class="b"><div class="pk punkt"></div><div class="fig">${figur(c.bild)}</div></div><div class="tx"><h3>${t(c.name)}</h3><p>${t(c.x)}</p></div></div>`).join('')}</div></div>
       <div class="bx warm"><h3>${t(d.warm.titel)}</h3><p>${t(d.warm.text)}</p>${d.warm.fragen.map(frage).join('')}</div>
     </div></div>`,
   })

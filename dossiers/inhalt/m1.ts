@@ -54,11 +54,6 @@ const d: Heft = {
   },
   "cast": [
     {
-      "bild": "peep:nele:muede",
-      "name": "Nele, 15",
-      "x": "Vier Stunden Schlaf, ein Energydrink. Wundert sich über ihre Laune."
-    },
-    {
       "bild": "peep:sami:aufgeregt",
       "name": "Sami, 14",
       "x": "Der Lauteste im Raum. Zu Hause sagt er kaum ein Wort."
@@ -110,10 +105,10 @@ const d: Heft = {
       "unter": "Jeder Mensch läuft auf sechs Tanks. Ist einer leer, wird es hässlich",
       "kurz": "Was du wirklich brauchst – und was passiert, wenn es fehlt.",
       "szene": {
-        "bild": "peep:nele:muede",
-        "name": "Nele, 15",
-        "text": "Nele hat vier Stunden geschlafen. Zum Frühstück gab es einen Energydrink. In der dritten Stunde fragt die Lehrerin: „Nele, bist du bei uns?“ Nele knallt das Heft auf den Tisch und geht. Auf dem Flur weiß sie selbst nicht, warum sie so sauer ist. Die Lehrerin war es nicht. Der Tank war es: leer seit gestern Abend.",
-        "frage": "Welcher Tank war bei Nele leer?"
+        "bild": "peep:lio:wuetend",
+        "name": "Du, heute",
+        "text": "Kaum geschlafen, kein Frühstück – und dann sagt jemand etwas ganz Normales, und du gehst hoch. Keiner hat dir etwas getan. Trotzdem bist du sauer.",
+        "frage": "Welcher Tank war leer?"
       },
       "faktenTitel": "Sechs Tanks",
       "fakten": [
@@ -842,7 +837,7 @@ const d: Heft = {
     "schluss": "Kino – der Film des Trimesters – als eigener Termin. Hot Takes: zwei Sätze statt „Ankommen“ (5 Min., gleiche Zeit) – oder alle sechs im Stehen am Schluss, „Knack den Code“ als Wiederholung, Karten ausschneiden, Abspann in der Abschlussrunde von Einheit 6.",
     "hilfe": [
       "Szene und Fakten vorlesen oder reihum lesen lassen.",
-      "Die Regler-Skala einmal am Beispiel Nele erklären; danach kreist jede Person still für sich ein.",
+      "Die Tanks einmal an einem Beispiel aus der Gruppe erklären; danach malt jede Person still für sich aus.",
       "Beim Stärken-Check Beispiele aus dem Alltag der Gruppe nennen.",
       "Wer nicht schreiben mag, zeichnet den Baum."
     ],
@@ -894,17 +889,18 @@ d.ansage.so = [
   ['Clip', 'Ein Video per QR-Code – mit Aufträgen für vorher, beim Schauen und danach.'],
   ['Große Runde', 'Eine Aktion für alle, 25 bis 30 Minuten. Die Karten dafür stehen im Heft. Niemand muss etwas vorspielen.'],
 ]
-// Clip zu Stunde 1: Schlaf statt Einsamkeit – passt zum Fall (Nele, vier Stunden Schlaf). Titel und Kanal über oEmbed bestätigt (16.11.2026).
-d.tracks[0].clip = { titel: 'Mehr als lebenswichtig: Darum schlafen wir!', kanal: 'Quarks', url: 'https://www.youtube.com/watch?v=sdH-fEEh1uY', dauer: 'Ausschnitt, etwa 6 Min.', frage: 'Was macht dein Körper nachts – und was hat Nele am Morgen gefehlt?' }
+// Clip zu Stunde 1: Schlaf – der Tank, den alle kennen (seit 24.11.2026 ohne Fall, mit Fragen vorher, beim Schauen, danach und „Stimmt das?“). Titel und Kanal über oEmbed bestätigt (16.11.2026).
+d.tracks[0].clip = { titel: 'Mehr als lebenswichtig: Darum schlafen wir!', kanal: 'Quarks', url: 'https://www.youtube.com/watch?v=sdH-fEEh1uY', dauer: 'Ausschnitt, etwa 6 Min.', frage: 'Was macht dein Körper nachts – und was passiert, wenn du zu wenig schläfst?' }
 d.geprueft = '16.11.2026'
 d.tracks[0].leitung = {
   ...d.tracks[0].leitung,
-  einsatz: 'Leicht und persönlich: Akku ausmalen → Neles Morgen (kurz, mit „Kennst du das?“ und einer Sprechblase zum Reden) → Clip über Schlaf → die sechs Tanks, jede Person malt ihre eigenen aus → große Runde „Kenn ich!“ (Karten ziehen, Daumen zeigen, gemeinsam zu den Tanks legen – ohne Punkte) → eigene Tankstellen → ein Satz für Nele.',
+  einsatz: 'Nah am eigenen Alltag, ohne erfundene Hauptfigur: Akku ausmalen → „Kennst du das?“ (sechs Sätze ankreuzen, dann gleichzeitig Daumen zeigen) → Clip über Schlaf mit Fragen vorher, beim Schauen und danach plus „Stimmt das?“ → die sechs Tanks: eigene Tanks ausmalen und die sechs Sätze verbinden → große Runde „Kenn ich!“ ohne Punkte → eigene Tankstellen → ein Tipp für einen Freund.',
   loesungen: [
-    'Fall: Müde, hungrig und traurig wegen dem Chat passen alle – die Lehrerin war nicht gemein. Es gibt keine einzelne Schuldige. Sprechblase: Viele sagen „der Chat“ – das ist eine gute Spur: Wer sich ausgeschlossen fühlt, schläft schlecht. Um 23:30 hätte geholfen: Handy weg, jemandem schreiben, der guttut.',
-    'Clip: Jugendliche brauchen etwa 8–10 Stunden Schlaf; Nele hatte gut vier. Energydrink: nur kurz – er macht wach, ersetzt aber weder Schlaf noch Essen.',
-    'Modell: Bei Nele waren vor allem 1 Körper und 3 Dazugehören leer; um 10:20 kam 4 Ernst genommen dazu (vor allen angesprochen). Andere Antworten mit Begründung gelten.',
+    'Kennst du das? Kein Richtig oder Falsch. Die Sätze gehören später zu den Tanks: A Körper · B Sicherheit · C Dazugehören · D Ernst genommen · E Selbst entscheiden · F Spaß und Neues.',
+    'Clip: Jugendliche brauchen etwa 8–10 Stunden Schlaf. Stimmt das? – Gehirn räumt auf und speichert: stimmt · schneller gereizt: stimmt · am Wochenende ganz nachholen: stimmt nicht (nur zum Teil) · Handy hilft beim Einschlafen: stimmt nicht (Licht und Inhalte halten wach) · Energydrink ersetzt Schlaf: stimmt nicht (er macht kurz wach, ersetzt nichts). Bitte den Ausschnitt vorher ansehen.',
+    'Modell: A–Körper, B–Sicherheit, C–Dazugehören, D–Ernst genommen, E–Selbst entscheiden, F–Spaß und Neues.',
     'Große Runde: Es gibt keine richtige Lösung. Passen zwei Tanks (z. B. Teamwahl: Dazugehören und Ernst genommen), liegt die Karte dazwischen.',
+    'Schluss: gute Fragen sind offen und ohne Vorwurf: „Was fehlt dir gerade?“, „Wie schläfst du?“, „Soll ich einfach da sein?“',
   ],
   material: '6 Tank-Karten und 18 Situations-Karten (im Heft, ausschneiden), Buntstifte zum Ausmalen, Gerät für den Clip',
   // Hinweise je Station stehen direkt an den Stationen (m1-stunden.ts, Feld leitung)
