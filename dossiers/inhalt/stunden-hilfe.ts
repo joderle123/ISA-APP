@@ -23,6 +23,15 @@ export const stimmt = (f: string, ...aussagen: string[]): Frage => ({ f, raster:
 /** Aufgaben leichter machen: höchstens eine freie Zeile je Frage */
 export const leicht = (l: Frage[]): Frage[] => l.map((f) => (f.linien && f.linien > 1 ? { ...f, linien: 1 } : f))
 
+/** Vertiefung (24.11.2026): Kette ordnen, Theorien prüfen, Verantwortung verteilen, Wörter zuordnen */
+export const kette = (f: string, n: number, ende: string): Frage => ({ f, kette: [...Array.from({ length: n }, () => ''), ende] })
+export const theorien = (f: string, ...t: string[]): Frage => ({ f, preis: { erste: 'Theorie aus der Klasse', kopf: ['ja · halb · nein', 'Beweis: Spur …'], optionen: t } })
+export const verteilen = (f: string, ...namen: string[]): Frage => ({ f, zahl: namen })
+export const wortkasten = (f: string, ...w: string[]): Frage => ({ f, wortkasten: w })
+export const raster = (f: string, spalten: string[], ...zeilen: string[]): Frage => ({ f, raster: { spalten, zeilen } })
+/** Abwägen: je Möglichkeit zwei leere Spalten */
+export const abwaegen = (f: string, kopf: [string, string], ...optionen: string[]): Frage => ({ f, preis: { kopf, optionen } })
+
 /* ---------- Bausteine ---------- */
 export const text = (...x: string[]): Baustein => ({ art: 'text', x })
 export const fragen = (kontext: string | null, ...l: Frage[]): Baustein => ({ art: 'fragen', ...(kontext ? { kontext } : {}), fragen: l })
@@ -33,6 +42,10 @@ export const merk = (x: string): Baustein => ({ art: 'merk', x })
 export const blasen = (...z: [string, string][]): Baustein => ({ art: 'chat', zeilen: z.map(([wer, x]) => (wer === '' ? { wer: '', x, art: 'tut' as const } : wer.startsWith('~') ? { wer: wer.slice(1), x, art: 'denkt' as const } : { wer, x })) })
 
 /* ---------- Stationen ---------- */
+/** Spuren (Beweisstücke) zu einem Fall: [Buchstabe, Icon, Quelle, Text] */
+export const spuren = (l: [string, string, string, string][], ...f: Frage[]): Baustein => ({ art: 'spuren', spuren: l.map(([k, icon, quelle, x]) => ({ k, icon, quelle, x })), ...(f.length ? { fragen: f } : {}) })
+
+
 export const st = (titel: string, zeit: string, wie: string, icon: string, leitung: string, ...bausteine: Baustein[]): Station => ({ titel, zeit, wie, icon, leitung, bausteine })
 /** Ankommen: zwei Fragen nur für dich – die zweite wird am Ende der Stunde wieder gebraucht */
 export const ankommen = (untertitel: string, ...l: Frage[]): Station =>
@@ -42,6 +55,14 @@ export const ankommen = (untertitel: string, ...l: Frage[]): Station =>
 export const fall = (e: Track, titel: string, l: Frage[], opt: { zeit?: string; text?: string; zeitleiste?: [string, string][]; leitung?: string } = {}): Station =>
   st(`Der Fall: ${titel}`, opt.zeit ?? '10 Min.', 'lesen · zu zweit', 'search', opt.leitung ?? 'Vorlesen. Fragen zu zweit (bei 3 oder 5: ein Dreier), dann zwei Antworten hören.',
     { art: 'fall', bild: e.szene.bild, name: e.szene.name, text: opt.text ?? e.szene.text, ...(opt.zeitleiste ? { zeitleiste: opt.zeitleiste } : {}), fragen: leicht(l) })
+/** Ermittlungsfall (24.11.2026): Person und kurze Geschichte, dazu Spuren – das Wichtigste steht nirgends direkt.
+ *  `l` steht direkt unter den Spuren; weitere Fragen auf der nächsten Seite mit `fallWeiter`. */
+export const ermittlung = (e: Track, titel: string, text: string, sp: [string, string, string, string][], l: Frage[], opt: { zeit?: string; leitung?: string; bild?: string } = {}): Station =>
+  st(`Der Fall: ${titel}`, opt.zeit ?? '15 Min.', 'lesen · zu zweit ermitteln', 'search', opt.leitung ?? 'Zu zweit ermitteln lassen, nicht vorsagen. Jede Antwort mit einer Spur begründen lassen.',
+    { art: 'fall', bild: opt.bild ?? e.szene.bild, name: e.szene.name, text }, spuren(sp, ...l))
+/** Fortsetzung eines Falls auf der nächsten Seite (zählt nicht als neue Station) */
+export const fallWeiter = (titel: string, nr: number, kontext: string | null, ...l: Frage[]): Station =>
+  ({ titel: `Der Fall: ${titel}`, zeit: '', wie: `zu Station ${nr}`, icon: 'search', fort: true, bausteine: [fragen(kontext, ...l)] })
 /** Clip des Tracks mit Aufträgen: vorher (Tipp), beim Schauen (zwei Stichwörter), danach (zurück zum Fall) */
 export const clip = (e: Track, titel: string, vorher: Frage[], dabei: string[], nachher: Frage[], zeit = '12 Min.'): Station => {
   if (!e.clip) throw new Error(`Track ${e.nr} „${e.titel}“ hat keinen Clip`)
@@ -49,11 +70,12 @@ export const clip = (e: Track, titel: string, vorher: Frage[], dabei: string[], 
     { art: 'clip', clip: e.clip, vorher, dabei, nachher: leicht(nachher) })
 }
 /** Modell aus den Fakten des Tracks: je Punkt ein Symbol, auf Wunsch ein Warnzeichen */
-export const modell = (e: Track, titel: string, icons: string[], opt: { zeit?: string; intro?: string; warn?: string[]; warnTitel?: string; fragen?: Frage[]; leitung?: string } = {}): Station =>
-  st(`Das Modell: ${titel}`, opt.zeit ?? '10 Min.', 'alle', 'bulb', opt.leitung ?? 'Vorlesen. Zu jedem Punkt ein Beispiel sammeln.',
+export const modell = (e: Track, titel: string, icons: string[], opt: { zeit?: string; intro?: string; warn?: string[]; warnTitel?: string; fragen?: Frage[]; leitung?: string; wie?: string; luecke?: boolean; anzeige?: string; beweis?: string; danach?: Baustein[] } = {}): Station =>
+  st(`Das Modell: ${titel}`, opt.zeit ?? '10 Min.', opt.wie ?? 'alle', 'bulb', opt.leitung ?? 'Vorlesen. Zu jedem Punkt ein Beispiel sammeln.',
     ...(opt.intro ? [text(opt.intro)] : []),
-    { art: 'modell', ...(opt.warnTitel ? { warnTitel: opt.warnTitel } : {}), punkte: e.fakten.map((f, i) => ({ icon: icons[i] ?? 'point', t: f.t, x: f.x, ...(opt.warn?.[i] ? { warn: opt.warn[i] } : {}) })) },
-    ...(opt.fragen ? [fragen(null, ...leicht(opt.fragen))] : []))
+    { art: 'modell', ...(opt.warnTitel ? { warnTitel: opt.warnTitel } : {}), ...(opt.anzeige ? { anzeige: opt.anzeige } : {}), ...(opt.beweis ? { beweis: opt.beweis } : {}),
+      punkte: e.fakten.map((f, i) => ({ icon: icons[i] ?? 'point', t: f.t, x: f.x, ...(opt.warn?.[i] ? { warn: opt.warn[i] } : {}), ...(opt.luecke ? { luecke: true } : {}) })) },
+    ...(opt.fragen ? [fragen(null, ...leicht(opt.fragen))] : []), ...(opt.danach ?? []))
 /** „Stimmt das?“ – die Mythen des Tracks zum Ankreuzen; die Auflösung steht bei den Lösungen der Leitung */
 export const stimmtDas = (e: Track, zeit = '8 Min.'): Station =>
   st('Stimmt das?', zeit, 'allein · dann alle', 'help-circle', 'Erst still ankreuzen, dann auflösen (siehe Lösungen).',
