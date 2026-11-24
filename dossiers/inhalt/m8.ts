@@ -55,8 +55,8 @@ const d: Heft = {
   },
   "cast": [
     {
-      "bild": "peep:nele:muede",
-      "name": "Nele, 15",
+      "bild": "peep:amira:muede",
+      "name": "Amira, 15",
       "x": "Schläft um zwei ein. Der Wecker klingelt um halb sieben."
     },
     {
@@ -100,10 +100,10 @@ const d: Heft = {
       "unter": "Müde ist kein Charakterfehler. Es ist Biologie",
       "kurz": "Warum du nachts wach bist – und was wirklich hilft.",
       "szene": {
-        "bild": "peep:nele:muede",
-        "name": "Nele, 15",
-        "text": "1:50 Uhr. Nele liegt wach. Der Kopf rattert, das Handy leuchtet, „nur noch ein Video“. Um 6:30 Uhr klingelt der Wecker. In der ersten Stunde fällt ihr der Kopf auf den Tisch. Die Lehrerin sagt: „Geh halt früher ins Bett.“ Nele würde ihr gern erklären, dass sie um zehn im Bett war. Sie war nur nicht müde. Stattdessen sagt sie: „Mir doch egal.“",
-        "frage": "Was weiß die Lehrerin nicht über Neles Nacht?"
+        "bild": "peep:amira:muede",
+        "name": "Amira, 15",
+        "text": "1:50 Uhr. Amira liegt wach. Der Kopf rattert, das Handy leuchtet, „nur noch ein Video“. Um 6:30 Uhr klingelt der Wecker. In der ersten Stunde fällt ihr der Kopf auf den Tisch. Die Lehrerin sagt: „Geh halt früher ins Bett.“ Amira würde ihr gern erklären, dass sie um zehn im Bett war. Sie war nur nicht müde. Stattdessen sagt sie: „Mir doch egal.“",
+        "frage": "Was weiß die Lehrerin nicht über Amiras Nacht?"
       },
       "fakten": [
         {
@@ -170,7 +170,7 @@ const d: Heft = {
           ]
         },
         {
-          "titel": "Neles Abend",
+          "titel": "Amiras Abend",
           "wie": "zu zweit",
           "zeit": "6 Min.",
           "fragen": [
@@ -191,7 +191,7 @@ const d: Heft = {
               }
             },
             {
-              "f": "Ein Tipp für Nele, der nicht nach Lehrerin klingt:",
+              "f": "Ein Tipp für Amira, der nicht nach Lehrerin klingt:",
               "linien": 1
             }
           ]
@@ -242,7 +242,7 @@ const d: Heft = {
       "leitung": {
         "einsatz": "Erste Hälfte von Einheit 29. Szene als Einstieg, Move A allein und ohne Vergleich, Move B zu zweit. Der Bodyscan aus der Einheit steht bei den Sessions; die Schlaf-Auktion ist neu und ersetzt bei Bedarf eine Station der „Vier Ecken“.",
         "loesungen": [
-          "Szene: Nele war im Bett, aber ihre innere Uhr stand noch auf „wach“. Dazu kommen Grübeln und Handy. Es ist kein fehlender Wille.",
+          "Szene: Amira war im Bett, aber ihre innere Uhr stand noch auf „wach“. Dazu kommen Grübeln und Handy. Es ist kein fehlender Wille.",
           "Move B: hilft – gleiche Zeit, kühles dunkles Zimmer, Tageslicht am Morgen · schadet – Energy-Drink am späten Nachmittag, Handy im Bett.",
           "Auktion: echt sind z. B. feste Zeiten, Tageslicht am Morgen, kühles Zimmer, Bewegung am Tag, kein Koffein am Nachmittag, Handy außer Reichweite. Mythen: Alkohol macht guten Schlaf; Schlaf kann man auf Vorrat tanken; wer wach liegt, soll liegen bleiben; fünf Stunden reichen."
         ],
