@@ -899,76 +899,46 @@ d.tracks[0].clip = { titel: 'Mehr als lebenswichtig: Darum schlafen wir!', kanal
 d.geprueft = '16.11.2026'
 d.tracks[0].leitung = {
   ...d.tracks[0].leitung,
-  einsatz: 'Die Stunde folgt einem Faden: der eigene Ärger von heute (Ankommen) → Neles Knall als Ermittlungsfall mit sechs Spuren (Kette ordnen, Funke und Fass trennen, Theorien aus der Klasse prüfen) → warum Schlaf zählt (Clip) → Schlaf ist einer von sechs Tanks (Modell zum Mitarbeiten: Warnlichter zuordnen, Neles Tankanzeige ausmalen, Domino) → Warnlichter erkennen in drei Leveln (große Runde, ohne Vorspielen) → zurück zum eigenen Ärger. Am Schluss: Wo hätte man Neles Kette stoppen können?',
+  einsatz: 'Leicht und persönlich: Akku ausmalen → Neles Morgen (kurz, mit „Kennst du das?“ und einer Sprechblase zum Reden) → Clip über Schlaf → die sechs Tanks, jede Person malt ihre eigenen aus → große Runde „Kenn ich!“ (Karten ziehen, Daumen zeigen, gemeinsam zu den Tanks legen – ohne Punkte) → eigene Tankstellen → ein Satz für Nele.',
   loesungen: [
-    'Kette: A → B → C → D → E → Knall; F gehört nicht hinein. Funke: E. Im Fass: A, B, C, D.',
-    'Theorien: „halt so“ – nein (F) · „Lehrerin schuld“ – halb (E ist nur der Funke) · „einfach müde“ – halb (B, aber der Grund ist A) · „kein Bock auf Mathe“ – nein (F). Tiefere Ursache: Der Chat (A) hielt Nele wach – sie gehört nicht dazu (D). Nicht gemerkt hat sie Hunger, Kränkung und Schlafmangel.',
-    'Clip: hängt vom Ausschnitt ab – vorher ansehen. Jugendliche brauchen etwa 8–10 Stunden Schlaf, Nele hatte gut vier. Energydrink: nur kurz. Der Clip erklärt vor allem Spur B.',
-    'Modell – Warnlichter: 1 Konzentration · 2 fragt dreimal · 3 schreibt nachts · 4 wird laut · 5 Gegenteil · 6 Quatsch. Anzeige: Körper (B, C) und Dazugehören (A, D) fast leer. Domino: Dazugehören → Körper. Um 10:20: 4 (auch 2 gilt).',
-    'Große Runde: Die Lösung steht klein auf jeder Karte. Wer einen anderen Tank gut begründet, bekommt den Punkt.',
-    'Schluss: am leichtesten um 23:40 oder 1:50 (Chat stumm, Handy weg) – um 10:20 am schwersten.',
+    'Fall: Müde, hungrig und traurig wegen dem Chat passen alle – die Lehrerin war nicht gemein. Es gibt keine einzelne Schuldige. Sprechblase: Viele sagen „der Chat“ – das ist eine gute Spur: Wer sich ausgeschlossen fühlt, schläft schlecht. Um 23:30 hätte geholfen: Handy weg, jemandem schreiben, der guttut.',
+    'Clip: Jugendliche brauchen etwa 8–10 Stunden Schlaf; Nele hatte gut vier. Energydrink: nur kurz – er macht wach, ersetzt aber weder Schlaf noch Essen.',
+    'Modell: Bei Nele waren vor allem 1 Körper und 3 Dazugehören leer; um 10:20 kam 4 Ernst genommen dazu (vor allen angesprochen). Andere Antworten mit Begründung gelten.',
+    'Große Runde: Es gibt keine richtige Lösung. Passen zwei Tanks (z. B. Teamwahl: Dazugehören und Ernst genommen), liegt die Karte dazwischen.',
   ],
-  material: '18 Karten in drei Leveln (im Heft, ausschneiden oder Seite kopieren), Stoppuhr, Gerät für den Clip, Buntstift zum Ausmalen der Tankanzeige',
-  blaetter: 'Gefühlsrad, Skills-Pass. Die Blätter „Warnlicht-Karten“ und „Meine Tanks“ stehen jetzt im Heft.',
-  stationen: [
-    'Still. Nichts vorlesen lassen – das Stichwort wird bei Station 6 wieder gebraucht.',
-    'Zu zweit ermitteln, nicht vorsagen. Die tiefere Ursache finden die Jugendlichen selbst – höchstens fragen: „Warum war sie so lange wach?“',
-    'Ausschnitt vorher wählen. Erst „Vorher“, dann schauen, „Danach“ zu zweit.',
-    'Erst still, dann zu zweit vergleichen. Den Domino an der Tafel zeigen: Chat → Schlaf → Knall.',
-    'Karten vorher ausschneiden und nach Sternen sortieren. Für Level 3 Zeit zum Begründen lassen.',
-    'Stille Arbeit, niemand zeigt die Regler. Die Tankstelle muss klein sein: zehn Minuten, ohne Überreden.',
-    'Kreuze zählen: Wo stoppt man am leichtesten? Nächste Stunde nach den drei Kreuzen fragen.',
-  ],
+  material: '6 Tank-Karten und 18 Situations-Karten (im Heft, ausschneiden), Buntstifte zum Ausmalen, Gerät für den Clip',
+  // Hinweise je Station stehen direkt an den Stationen (m1-stunden.ts, Feld leitung)
+  stationen: [],
 }
 d.tracks[1].leitung = {
   ...d.tracks[1].leitung,
-  einsatz: 'Diese Stunde beginnt mit einem Experiment: dieselbe Aufgabe einmal laut, einmal leise – meist kommen in der stillen Runde mehr Ideen von mehr Leuten. Die Linie zeigt, wo jede Person steht. Dann der Fall: Ein Projekt geht schief, vier Leute und ein Lehrer sind beteiligt – und es gibt keine einfache Schuldige. Die Jugendlichen verteilen 100 Punkte Verantwortung und begründen. Nach dem Clip erklärt das Modell „sozialer Akku“, warum leise nicht „keinen Bock“ heißt. Die Brücke braucht laute und leise Rollen; am Schluss bekommt die Gruppe einen zweiten Versuch.',
+  einsatz: 'Erst das Experiment (laut und leise), dann die Linie: Wo stehe ich? Der Fall Sami und Amira ist kurz – mit der Frage „Bist du eher wie Sami oder wie Amira?“ und einer Sprechblase zum Reden. Nach dem Clip kreuzt jede Person an, was ihren Akku lädt. Die Brücke ist eine gemeinsame Aufgabe mit lauten und leisen Rollen.',
   loesungen: [
-    'Experiment: Oft bringt A viele Ideen von wenigen, B Ideen von allen. Kommt es anders: Woran lag es?',
-    'Fall: Amira merkt es zuerst. Für die 100 Punkte gibt es keine richtige Lösung – die Begründung zählt. Oft: viel bei Sami und beim Lehrer, ein Teil bei Amira („Passt schon“), wenig bei Tess. Sami hat halb recht: „Alles okay?“ lädt zu „Passt schon“ ein. Besser: „Was ist dein Plan B?“ oder „Schreib’s auf, ich lese es vor.“',
-    'Clip: hängt vom Ausschnitt ab – vorher ansehen.',
-    'Akku: keine richtigen Antworten. Amiras Akku war leer (vier Leute, Zeitdruck); geschont hätte ihn: erst still schreiben, dann reihum lesen.',
-    'Brücke: Die tragende Idee steckt oft in einem Blatt aus der stillen Phase.',
-    'Für dich: laut – wird gehört, eckt an · leise – merkt viel, wird übersehen.',
+    'Experiment: Oft bringt Runde A viele Ideen von wenigen, Runde B Ideen von allen. Kommt es anders, fragen: Woran lag es?',
+    'Fall: Amira hat es gemerkt. Damit sie etwas sagt: sie direkt fragen („Was denkst du?“), erst alle still aufschreiben lassen, reihum reden. Sami kann gut anfangen und Ideen haben.',
+    'Clip: Die Antworten hängen vom Ausschnitt ab – bitte vorher ansehen.',
+    'Akku: keine richtigen Antworten – beide Arten sind normal.',
+    'Brücke: Häufig steckt die tragende Idee (rollen, falten) in einem Blatt aus der stillen Phase.',
   ],
-  material: 'Papier und Stifte für das Experiment, Klebeband für die Linie, 20 Blatt Papier, Klebeband zum Bauen, eine volle Plastikflasche, zwei Stühle, Rollen-Karten (im Heft), Gerät für den Clip; für die Galerie: Blätter, Klebepunkte',
-  blaetter: 'Gefühlsrad, Skills-Pass. Das Blatt „Laut und leise“ steht jetzt im Heft.',
-  stationen: [
-    'Zeit stoppen, Striche an der Tafel. Die Zahlen nicht bewerten – nur vergleichen.',
-    'Erst im Heft. Aufstellen im Raum ist freiwillig.',
-    '100 Punkte erst allein, dann zu zweit vergleichen. Nicht auflösen – Begründungen sammeln.',
-    'Tipp vorher ankreuzen. Danach: Wer hat seinen Tipp geändert? Laute haben im Schnitt etwas mehr gute Laune – kein Urteil über Leise.',
-    'Allein, dann zu zweit. Beide Akkus sind normal, viele Menschen sind gemischt.',
-    'Rollen sind Aufgaben, kein Schauspiel. Stille stoppen, nicht mitbauen, beobachten.',
-    'Stille Arbeit. Die Antworten sind privat.',
-    'Zwei, drei Sätze hören. Wochenaufgabe ansagen.',
-    'Nur mit einer Gruppe, die sich kennt. Auf Kommentare achten.',
-  ],
+  material: 'Papier und Stifte, Klebeband für die Linie, 20 Blatt Papier, Klebeband zum Bauen, eine volle Plastikflasche, zwei Stühle, Rollen-Karten (im Heft), Gerät für den Clip',
+  // Hinweise je Station stehen direkt an den Stationen (m1-stunden.ts, Feld leitung)
+  stationen: [],
 }
 d.tracks[2].leitung = {
   ...d.tracks[2].leitung,
-  einsatz: 'Die Stunde beginnt mit einer Liste zum Ankreuzen: Was steckt in diesem Raum? Dann prüfen die Jugendlichen eine Akte: Neben ihr stehen vier Aussagen von Leuten, die Yusuf kennen – die Stärke steht nicht da, sie muss gefunden werden. Das Modell „Stärke und Schatten“ zeigt, warum in Akten oft nur Schatten stehen; die Jugendlichen übersetzen Akte-Sprache zurück. Nach dem Clip verteilen sie auf dem Stärken-Markt 24 Karten und die Jobs für ein Grillfest – mit Schatten-Check. Der Baum sammelt am Ende, was bleibt.',
+  einsatz: 'Die Stunde beginnt mit einer Liste: Was steckt in diesem Raum? Die Akte Yusuf zeigt, was in Akten fehlt. Im Modell verbinden die Jugendlichen Stärken mit ihrer Kehrseite. Nach dem Clip verschenken alle auf dem Stärken-Markt Karten mit einem Satz. Der Baum sammelt am Ende, was bleibt.',
   loesungen: [
-    'Akte, Seite 2: Schwester – verlässlich · Werkstattmeister – hilfsbereit, geduldig · Mitschüler – mutig, steht für andere ein · Betreuerin – kann sich selbst beruhigen. Sie passt zu „verlässt den Raum“: Dort fehlt, dass er geht, damit es nicht knallt.',
-    '„Nichts Besonderes“: Niemand hat ihm die andere Seite gesagt; was für ihn normal ist, hält er nicht für eine Stärke. Alle Kreuze können stimmen.',
-    'Modell: mutig – leichtsinnig · ehrlich – verletzend · hilfsbereit – kann nie Nein sagen · ruhig – wirkt egal · lustig – nimmt nichts ernst · setzt sich durch – überrollt die anderen. Akte-Sprache: laut – hat Energie, traut sich · Widerworte – sagt seine Meinung.',
-    'Clip: hängt vom Ausschnitt ab – vorher ansehen.',
-    'Markt: Wer wenig Karten hat, bekommt welche von der Leitung. Schatten-Check, z. B. Grill und „mutig“: nicht leichtsinnig mit dem Feuer.',
-    'Baum: Bei den Wurzeln auch Orte, Tiere, Musik und Erinnerungen zulassen.',
+    'Akte: verlässlich, hilfsbereit, treu, geduldig – nur „faul“ passt nicht. „Nichts Besonderes“: Für Yusuf ist das normal, und niemand hat es ihm gesagt. Alle drei Kreuze können stimmen.',
+    'Modell: mutig – leichtsinnig · ehrlich – verletzend · hilfsbereit – kann nie Nein sagen · lustig – nimmt nichts ernst. Laut im Unterricht: alle drei Stärken sind möglich.',
+    'Clip: Die Antworten hängen vom Ausschnitt ab – bitte vorher ansehen.',
+    'Markt: Wer wenig Karten bekommt, bekommt welche von der Leitung.',
+    'Baum: Bei den Wurzeln ausdrücklich auch Orte, Tiere, Musik und Erinnerungen zulassen – nicht nur Menschen.',
   ],
-  material: '24 Stärken-Karten (im Heft, ausschneiden oder Seite kopieren), Stifte, Gerät für den Clip; auf Wunsch A3-Papier für den großen Baum',
-  blaetter: 'Gefühlsrad, „Baum der Stärke“ (A3, große Fassung), Skills-Pass. Die Stärken-Karten stehen jetzt im Heft.',
-  stationen: [
-    'Liste vorlesen, Hände zählen, nicht kommentieren.',
-    'Akte wie ein Amt vorlesen. Erst nach dem Beweis fragen, dann nach dem Wort.',
-    'Wortkasten allein, dann zu zweit. Der eigene Schatten darf leer bleiben.',
-    'Der Titel ist hart – vorher sagen, dass es um die Tipps geht. Ausschnitt vorher wählen.',
-    'Karten vorher ausschneiden; niemand geht leer aus. Am Ende die Schatten-Spalte.',
-    'Stille Arbeit. Wer nicht schreiben mag, zeichnet.',
-    'Wer mag, liest seinen Satz vor. Wochenaufgabe ansagen.',
-  ],
+  material: '24 Stärken-Karten (im Heft, ausschneiden), Stifte, Gerät für den Clip',
+  // Hinweise je Station stehen direkt an den Stationen (m1-stunden.ts, Feld leitung)
+  stationen: [],
 }
-d.leitung.wozu = 'REAL TALK ist das Heft der Jugendlichen zu Modul 1. Jede der drei Einheiten ist eine **zusammenhängende Stunde** mit Stationen: Der Fall vom Anfang kommt bei Clip, Modell und Schluss wieder vor, die große Aktion (25–30 Minuten) hat ihre Karten im Heft, und jede Stunde ist anders gebaut – Stunde 1 geht von einem Ermittlungsfall aus, Stunde 2 von einem Experiment, Stunde 3 von dem, was die Gruppe schon kann. Jede Stunde hat ein **Modell zum Mitarbeiten** (sechs Tanks, sozialer Akku, Stärke und Schatten) mit Übungen im Heft. **Niemand muss etwas vorspielen:** Es wird gelesen, gezeigt, gelegt, gebaut und geschrieben. Leitmotiv dieser Ausgabe: Die Jugendlichen kennen ihre „Akte“ – hier schreiben sie die andere Seite.'
+d.leitung.wozu = 'REAL TALK ist das Heft der Jugendlichen zu Modul 1. Jede der drei Einheiten ist eine **zusammenhängende Stunde** mit Stationen. Gebaut für den Sweet Spot: **persönlich** (Situationen aus dem eigenen Alltag, „Kennst du das?“), **zum Nachdenken** (eine gute Frage statt vieler Aufgaben), **leicht ins Gespräch** (Sprechblase „Redet darüber“ – freiwillig), **Spaß** (ausmalen, legen, bauen – ohne Punkte, ohne Teams gegeneinander) und **leicht verständlich** (kurze Anweisungen, erst ankreuzen). **Niemand muss etwas vorspielen.** Leitmotiv: Die Jugendlichen kennen ihre „Akte“ – hier entdecken sie die andere Seite.'
 d.leitung.start = 'Titel, Ansage (vorlesen – der Ton ist Absicht), „Das kommt“ und die zwei Fragen zum Aufwärmen. Etwa 10 Minuten vor Station 1 von Stunde 01.'
 d.leitung.schluss = 'Kino – der Film des Trimesters – als eigener Termin. Streitfragen: je zwei Sätze als Einstieg in eine Einheit – oder alle sechs im Stehen am Schluss. „Knack den Code“ als Wiederholung, Karten ausschneiden, „Zum Schluss“ in der Abschlussrunde von Einheit 6.'
 d.leitung.fakten = [['Zielgruppe', '12–16 Jahre, 3–6 Jugendliche'], ['Dauer', '3 Stunden à etwa 90 Min. (E4–E6)'], ['Sozialform', 'allein, zu zweit, Teams'], ['Material', 'Schere, Stoppuhr, Papier, Klebeband, Flasche']]

@@ -46,12 +46,12 @@ gesetzt von `stunde-bau.ts`):
 - **Wörter:** Stunde statt Track, „Das kommt“ statt Tracklist, „Zum Aufwärmen“, „Streitfragen“, „Zum Schluss“. Die „Sessions“ entfallen
   (die Aktionen stehen in den Stunden). Die Leitung bekommt eine Seite „Der Ablauf der Stunden“ (Station, Zeit, Form, Seite, worauf es ankommt).
 
-**Vertiefung (Rückmeldung 24.11.2026: „Fall etwas schwerer, Modell interessanter – mit Übung auf dem Blatt, intensiv in jedes
-Thema“):** Einfache Sprache bleibt, das Denken wird schwerer. Fälle sind Ermittlungen mit **Spuren** (Baustein `spuren`: Buchstabe,
-Quelle, kurzer Text; eine Spur spricht gegen eine falsche Erklärung), dazu Kette ordnen (`kette`), Funke und Fass trennen,
-Theorien aus der Klasse prüfen, 100 Punkte Verantwortung verteilen. Die wichtigste Ursache steht nirgends direkt. **Jedes Modell hat
-Übungen im Heft:** Wortkasten (`wortkasten`) zum Zuordnen, leere Linien im Modell (`luecke`), Tankanzeige zum Ausmalen (`anzeige`)
-mit Beweis-Linie (`beweis`). Große Runden haben Level (★ bis ★★★). #01 ist der Pilot (Tanks, sozialer Akku, Stärke und Schatten).
+**Sweet Spot (Rückmeldung 24.11.2026 – ersetzt einen Versuch mit Ermittlungs-Fällen, der „zu viel und zu schwer“ war):**
+Jede Station soll **persönlich** sein (Situationen aus dem eigenen Alltag, „Kennst du das?“), **zum Nachdenken** anregen (eine gute
+Frage statt vieler Aufgaben), **leicht ins Gespräch** führen (Sprechblase „Redet darüber“, Baustein `reden` – freiwillig, ohne
+Schreiben), **Spaß** machen (ausmalen, legen, bauen; Akku zum Ausmalen `akku`, Tankanzeige `anzeige`, Verbinden `verbinden`) und
+**leicht verständlich** sein (kurze Anweisungen mit Verb, erst ankreuzen, höchstens zwei, drei Fragen je Station, ein Beispiel
+„So sieht eine Runde aus“ bei jeder großen Runde). Große Runden **ohne Punkte und ohne Teams gegeneinander**. #01 ist der Pilot.
 
 **So ist es abgelegt:** Die alten Angaben je Track (Szene, Fakten, Moves, Mythen) bleiben in `inhalt/mN.ts` als Quelle. Die Stunden
 stehen in `inhalt/mN-stunden.ts` (`stunden(d)` und `loesungen`); am Ende von `mN.ts` stellt `aufStunden(d, stunden(d), { loesungen })`

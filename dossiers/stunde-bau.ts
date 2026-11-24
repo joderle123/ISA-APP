@@ -85,6 +85,8 @@ export function baueStunde(e: Track, i: number, h: StundenHelfer): string[] {
         return `<table class="sd-tab"${b.breiten ? ` style="--br:${b.breiten}"` : ''}>${b.breiten ? `<colgroup>${b.breiten.split(' ').map((w) => `<col style="width:${w}">`).join('')}</colgroup>` : ''}<tr>${b.kopf.map((x) => `<th>${t(x)}</th>`).join('')}</tr>${b.zeilen.map((z) => `<tr${b.hoehe ? ` style="height:${b.hoehe}mm"` : ''}>${z.map((x) => `<td>${t(x)}</td>`).join('')}</tr>`).join('')}</table>`
       case 'menue':
         return `<div class="sd-menue"><div class="mo kp">${ic('gas-station')}${esc(b.titel)}</div><div class="g">${b.gruppen.map((g) => `<div><b>${t(g.t)}</b>${g.punkte.map((x) => `<span><i></i>${t(x)}</span>`).join('')}</div>`).join('')}</div></div>`
+      case 'reden':
+        return `<div class="sd-reden"><div class="kp mo">${ic('messages')}${esc(b.titel ?? 'Redet darüber')}</div>${b.x.map((x) => `<p>${t(x)}</p>`).join('')}</div>`
       case 'merk':
         return `<div class="merk"><span class="mo">Merk dir</span><div class="mk">${t(b.x)}</div></div>`
       case 'woche':

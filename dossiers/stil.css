@@ -698,3 +698,19 @@ table.t td:first-child { font-weight: 700; white-space: nowrap; }
 .sd-modell .anz > div { width: 6.4mm; border: .45mm solid var(--k); border-radius: 1.2mm 1.2mm .6mm .6mm; display: flex; flex-direction: column; background: #fff; }
 .sd-modell .anz i { height: 4.2mm; border-bottom: .3mm solid var(--l); }
 .sd-modell .anz i:last-child { border-bottom: 0; }
+/* Sweet Spot (24.11.2026): Akku zum Ausmalen, Verbinden, Gesprächsanstoß */
+.akku { display: flex; align-items: center; gap: 2.4mm; margin-top: 1.6mm; }
+.akku .mo { font-size: 6.6pt; color: var(--g); }
+.akku .bat { display: flex; border: .55mm solid var(--k); border-radius: 1.4mm; padding: .7mm; gap: .7mm; position: relative; background: #fff; }
+.akku .bat::after { content: ''; position: absolute; right: -2.2mm; top: 30%; width: 1.5mm; height: 40%; background: var(--k); border-radius: 0 .6mm .6mm 0; }
+.akku .bat i { width: 11mm; height: 7mm; border: .3mm solid var(--l); border-radius: .6mm; }
+.verb { display: grid; grid-template-columns: 1fr 1fr; gap: 16mm; margin-top: 1.6mm; font-size: 9.8pt; }
+.verb > div { display: flex; flex-direction: column; gap: 1.8mm; }
+.verb span { display: flex; align-items: center; gap: 2mm; justify-content: space-between; border-bottom: .3mm dotted #DCDCDC; padding-bottom: .6mm; }
+.verb > div:last-child span { justify-content: flex-start; }
+.verb i { flex: none; width: 2.6mm; height: 2.6mm; border-radius: 50%; background: var(--k); }
+.sd-reden { background: var(--p); border: .45mm solid var(--k); border-radius: 0 4mm 4mm 4mm; padding: 1.8mm 3.2mm 2.2mm; font-size: 10pt; line-height: 1.36; position: relative; }
+.sd-reden .kp { display: flex; align-items: center; gap: 1.4mm; color: var(--g); margin-bottom: .8mm; }
+.sd-reden .kp .ic { width: 3.8mm; height: 3.8mm; color: var(--k); }
+.sd-reden p { font-weight: 600; }
+.sd-reden p + p { margin-top: .6mm; }

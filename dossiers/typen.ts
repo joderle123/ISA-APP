@@ -30,6 +30,10 @@ export interface Frage {
   kette?: string[]
   /** Wörter in einem Kasten, die man zuordnen oder einsetzen soll */
   wortkasten?: string[]
+  /** Akku zum Ausmalen (Beschriftung links), z. B. „Mein Akku heute“ */
+  akku?: string
+  /** Verbinden: links und rechts je eine Spalte mit Punkten, Linien ziehen */
+  verbinden?: [string[], string[]]
 }
 export interface Clip { titel: string; kanal: string; url: string; dauer: string; frage: string }
 export interface Film { titel: string; jahr: number; fsk: number | null; laenge: string; worum: string; achte: string[]; achtung?: string }
@@ -59,6 +63,8 @@ export type Baustein =
   | { art: 'tabelle'; kopf: string[]; zeilen: string[][]; breiten?: string; hoehe?: number }
   /** Auswahl: je Gruppe ein paar Möglichkeiten zum Ankreuzen */
   | { art: 'menue'; titel: string; gruppen: { t: string; punkte: string[] }[] }
+  /** Gesprächsanstoß: Sprechblase „Redet darüber“ mit ein bis drei Fragen (freiwillig, ohne Schreiben) */
+  | { art: 'reden'; x: string[]; titel?: string }
   | { art: 'merk'; x: string }
   | { art: 'woche'; x: string; kaestchen?: string[] }
 export interface Station { titel: string; zeit: string; wie: string; icon: string; /** ein Satz für die Leitung: worauf es bei dieser Station ankommt */ leitung?: string; /** Fortsetzung oder Material zur Station davor (zählt nicht neu) */ fort?: boolean; bausteine: Baustein[] }
