@@ -62,7 +62,7 @@ export default {
           ['malik', 'Weil ich seit zwei Wochen sage: Wir brauchen ein Turnier hier. Und keiner hört zu.'],
           { wahl: [
             { t: '„Dann zeig mir die Turnier-Idee. Ich hör zu.“', log: 'Malik zugehört: Gehört-werden-Tank gefüllt', folge: 'Malik erklärt fünf Minuten lang sein Turnier. Er wirkt plötzlich ruhig.', skill: true, setze: { malikGehoert: true }, dann: [['malik', '(scrollt zu einer Notiz) Kicker, Billard, Tischtennis. Drei Runden. Jeder spielt mit jedem.'], ['du', 'Klingt gut. Warum hast du das nie Herrn Lenz gezeigt?'], ['malik', '… Weil ich dachte, er lacht.']] },
-            { t: '„Poste es. Ist doch lustig.“', log: 'Fake-Tankstelle unterstützt: Video gepostet', folge: 'Viele Likes. Und Herr Lenz redet eine Woche nicht mehr mit Malik.', skill: false, setze: { malikGehoert: false }, dann: [['e', 'Malik tippt. Drei Sekunden später: die ersten Herzen.'], ['lenz', '(kommt rein, schaut aufs Handy, sagt nichts. Geht wieder.)'], ['malik', '… Okay. Das war’s jetzt wohl mit dem Turnier.']] },
+            { t: '„Poste es. Ist doch lustig.“', log: 'Fake-Tankstelle unterstützt: Video gepostet', folge: 'Viele Likes. Herr Lenz sieht es: „Malik, lösch das bitte. Dann reden wir – über das Video und über dein Turnier.“', skill: false, setze: { malikGehoert: false }, dann: [['e', 'Malik tippt. Drei Sekunden später: die ersten Herzen.'], ['lenz', '(kommt rein, schaut aufs Handy, sagt nichts. Geht wieder.)'], ['malik', '… Okay. Das war’s jetzt wohl mit dem Turnier.']] },
             { t: '„Lass mich da raus.“', log: 'Sich rausgehalten', folge: 'Malik zögert. Das Video bleibt erst mal ungepostet.', skill: null, dann: [['malik', '(zögert, steckt das Handy weg) Mal sehen.']] },
           ], frage: 'Was machst du mit Maliks Idee?' },
           { wenn: (f) => f.malikGehoert, dann: [
@@ -91,12 +91,13 @@ export default {
             { t: 'Sicherheit', log: 'Eigener leerster Tank: Sicherheit', privat: true },
             { t: 'Möchte ich nicht sagen', log: 'Eigenen Tank für sich behalten', privat: true },
           ], frage: 'Welcher Tank ist bei dir gerade am leersten? (Nur für dich – kommt nicht ins Resümee.)' },
+          ['lenz', 'Wenn ein Tank lange leer bleibt – vor allem Sicherheit –, sag es jemandem, dem du vertraust. Oder ruf 116 111 an. Kostenlos und anonym.'],
         ],
       },
     ],
     ende: [
-      ['lenz', 'Drei Leute, drei Tanks. Du hast hingeschaut, bevor du geurteilt hast.'],
-      ['lenz', 'Die Kappe gehört dir.'],
+      { wenn: (f) => f.malikGehoert === false, dann: [['lenz', 'Drei Leute, drei Tanks. Heute war nicht alles leicht. Die Kappe ist trotzdem für dich – fürs nächste Hinschauen.']],
+        sonst: [['lenz', 'Drei Leute, drei Tanks. Du hast hingeschaut, bevor du geurteilt hast.'], ['lenz', 'Die Kappe gehört dir.']] },
     ],
     resuemee: { frage: 'Welche Fake-Tankstelle kennt ihr – und warum ist sie so verlockend?', satz: 'Eine echte Tankstelle, die ich diese Woche nutze: …' },
   },
@@ -137,7 +138,7 @@ export default {
           { wahl: [
             { t: '„Ich sag drinnen: Amira hat eine Idee. Erzählen machst du.“', log: 'Angeboten, Amira das Wort zu geben – erzählen darf sie selbst', folge: 'Amira nickt. „Aber du fängst an.“', skill: true, setze: { amiraPlan: 'tuer' } },
             { t: '„Gib mir den Zettel, ich erzähl’s für dich.“', log: 'Angeboten, Amiras Idee selbst vorzutragen', folge: 'Amira gibt dir den Zettel. Es ist jetzt ein bisschen deine Idee.', skill: false, setze: { amiraPlan: 'fuer' } },
-            { t: '„Schreib sie Herrn Lenz doch einfach.“', log: 'Amira geraten, die Idee schriftlich zu geben', folge: 'Amira tippt eine Nachricht. Ob Herr Lenz sie liest?', skill: null, setze: { amiraPlan: 'schreiben' } },
+            { t: '„Schreib sie Herrn Lenz doch einfach.“', log: 'Amira geraten, die Idee schriftlich zu geben', folge: 'Amira tippt eine Nachricht. Ob Herr Lenz sie liest?', skill: true, setze: { amiraPlan: 'schreiben' } },
           ], frage: 'Wie soll die Idee in die Runde kommen?' },
         ],
       },
@@ -161,15 +162,16 @@ export default {
             ['e', 'Amira schaut auf den Tisch.'],
             { wahl: [
               { t: '„Die Idee ist von Amira. Sie soll die Liste machen.“', log: 'Klargestellt: Die Idee ist von Amira', folge: 'Herr Lenz dreht sich zu Amira. Sie bekommt die Filmliste.', skill: true, dann: [['lenz', 'Ach so! Amira, dann bist du die Kino-Chefin.'], ['amira', '(leise) Okay. Gern.']] },
-              { t: 'Die Filmliste übernehmen.', log: 'Die Filmliste selbst übernommen', folge: 'Amira geht früher. Ihre Idee läuft jetzt unter deinem Namen.', skill: false, dann: [['e', 'Amira geht früher. Ohne Tschüss.']] },
+              { t: 'Die Filmliste übernehmen.', log: 'Die Filmliste selbst übernommen', folge: 'Amira geht früher. Ihre Idee läuft jetzt unter deinem Namen.', skill: false, setze: { ideeGenommen: true }, dann: [['e', 'Amira geht früher. Ohne Tschüss.']] },
             ] },
             { moment: 'Herr Lenz hielt die Idee für deine.' },
           ] },
           { wenn: (f) => f.amiraPlan === 'schreiben', dann: [
-            ['lenz', '(schaut aufs Handy) Oh – Amira, du hast mir geschrieben? Kino draußen? Warum sagst du das nicht?'],
-            ['amira', '(zuckt) Weil hier immer alle so laut sind.'],
-            ['malik', '… Sorry. Echt jetzt. Erzähl.'],
-            { moment: 'Herr Lenz las Amiras Nachricht vor allen vor – und plötzlich wurde die Runde leise.' },
+            ['lenz', '(schaut aufs Handy) Amira hat mir eine Idee geschickt. Amira, darf ich sie vorlesen?'],
+            ['amira', '(nickt)'],
+            ['lenz', 'Kino draußen. Im Sommer, auf dem Hof.'],
+            ['malik', '… Gute Idee. Echt jetzt. Erzähl mehr.'],
+            { moment: 'Herr Lenz fragte Amira, ob er ihre Idee vorlesen darf – und plötzlich wurde die Runde leise.' },
           ] },
           ['lenz', 'Letzte Frage: Wie machen wir das, dass beim nächsten Mal alle zu Wort kommen?'],
           { wahl: [
@@ -180,14 +182,15 @@ export default {
         ],
       },
     ],
-    ende: [['lenz', 'Laut ist nicht besser. Leise ist nicht schlechter. Du hast beide reingeholt.']],
+    ende: [{ wenn: (f) => f.ideeGenommen, dann: [['lenz', 'Laut ist nicht besser. Leise ist nicht schlechter. Beim nächsten Mal holst du beide rein – ich glaub dran.']],
+      sonst: [['lenz', 'Laut ist nicht besser. Leise ist nicht schlechter. Du hast beide reingeholt.']] }],
     resuemee: { frage: 'Wer ist bei uns in der Gruppe eher laut, wer eher leise – und wie kommen alle zu Wort?', satz: 'In einer Runde bin ich eher … und ich wünsche mir …' },
   },
 
   // ---------- Stunde 3 · Was du kannst → Stärken-Post ----------
   'STARK-24': {
     start: [
-      ['h:Herr Lenz', 'Kleine Aktion: Stärken-Post. Fünf Leute auf dem Campus. Bei jedem eine echte Stärke finden – mit Beweis.'],
+      ['h:Herr Lenz', 'Kleine Aktion: Stärken-Post. Vier Leute auf dem Campus. Bei jedem eine echte Stärke finden – mit Beweis.'],
       ['h:Herr Lenz', 'Nicht „du bist nett“. Sondern: Was genau kann die Person? Woran hast du es gesehen?'],
     ],
     schritte: [
@@ -197,7 +200,7 @@ export default {
           ['e', 'Lio wirft. Daneben. Holt den Ball. Wirft wieder. Daneben. Wirft wieder.'],
           ['lio', 'Lach ruhig. Ich treff heute nix.'],
           { wahl: [
-            { t: '„Du gibst nicht auf. Achtmal daneben – und du holst den Ball trotzdem.“', log: 'Stärke mit Beweis: Lio gibt nicht auf (acht Würfe)', folge: 'Lio: „So hab ich das nie gesehen.“', skill: true },
+            { t: '„Du gibst nicht auf. Achtmal daneben – und du holst den Ball trotzdem.“', log: 'Stärke mit Beweis: Lio gibt nicht auf (acht Würfe)', folge: 'Lio: „So hab ich das nie gesehen.“', skill: true, setze: { lioStaerke: true } },
             { t: '„Du bist halt sportlich.“', log: 'Stärke ohne Beweis: „sportlich“', folge: 'Lio: „Sportlich? Ich treffe nix.“ Es kommt nicht an.', skill: false },
             { t: '„Echt schlecht heute, ja.“', log: 'Nur die Schwäche gesehen', folge: 'Lio wirft den Ball in die Ecke.', skill: false },
           ], frage: 'Welche Stärke schreibst du Lio auf die Karte?' },
@@ -231,7 +234,7 @@ export default {
           ] },
           ['malik', 'Okay. Und das Schiefe?'],
           { wahl: [
-            { t: '„Planen ist deine Stärke. Sägen übst du noch. Beides darf sein.“', log: 'Stärke und Baustelle nebeneinander gelassen', folge: 'Malik: „Stärke und Kehrseite, wie im Kurs.“', skill: true },
+            { t: '„Planen kannst du. Sägen übst du noch. Passt doch.“', log: 'Stärke und Baustelle nebeneinander gelassen', folge: 'Malik: „Okay. Dann üb ich Sägen. Hilfst du mir?“', skill: true },
             { t: '„Lass das lieber jemand anderes machen.“', log: 'Malik das Sägen abgenommen', folge: 'Malik gibt die Säge weg.', skill: false },
           ] },
         ],
@@ -254,7 +257,7 @@ export default {
         zeilen: [
           ['lenz', 'Post ist da. Wer liest vor?'],
           ['e', 'Du liest deine Karten vor. Lio, Sara, Malik hören zu.'],
-          ['lio', '(leise) „Du gibst nicht auf.“ … Krass.'],
+          { wenn: (f) => f.lioStaerke, dann: [['lio', '(leise) „Du gibst nicht auf.“ … Krass.']], sonst: [['lio', '(liest seine Karte) … Okay.']] },
           ['e', 'Dann legt Herr Lenz eine Karte vor dich. Darauf stehen drei Sätze. Von den anderen.'],
           { wenn: (f) => f.malikGehoert, dann: [['malik', 'Ich hab geschrieben: Du hörst zu, bevor du urteilst. Wie beim Turnier.']], sonst: [['malik', 'Ich hab geschrieben: Du kommst, wenn man dich fragt.']] },
           ['sara', 'Und ich: Du siehst Sachen, die andere übersehen.'],
@@ -266,7 +269,7 @@ export default {
         ],
       },
     ],
-    ende: [['lenz', 'Fünf Stärken, fünf Beweise. Und eine für dich. Die Jacke steht dir.']],
+    ende: [['lenz', 'Vier Stärken, vier Beweise. Und eine Karte für dich. Die Jacke steht dir.']],
     resuemee: { frage: 'Welche Stärke habt ihr diese Woche bei jemandem gesehen – und woran genau?', satz: 'Eine Stärke von mir, mit Beweis: …' },
   },
 };

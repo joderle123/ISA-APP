@@ -1,0 +1,29 @@
+{
+  "name": "Annexe Junglinster",
+  "short_name": "Annexe",
+  "lang": "de",
+  "start_url": "lycee.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "landscape",
+  "background_color": "#1b1830",
+  "theme_color": "#2d3d5c",
+  "icons": [
+    {
+      "src": "lycee-pwa/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "lycee-pwa/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "lycee-pwa/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

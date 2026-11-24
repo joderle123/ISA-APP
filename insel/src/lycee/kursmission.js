@@ -114,10 +114,11 @@ export function createKursMissionen({ scene, steuerung, ui, ton = () => {}, vib 
   const plus = (p) => { const f = F(); for (const [k, n] of Object.entries(p)) f[k] = Math.max(0, Math.min(100, (f[k] || 0) + n)); sichern(); };
   async function spiele(zeilen) {
     for (const z of zeilen || []) {
-      if (Array.isArray(z)) { await api.sag(z[0], z[1]); continue; }
+      if (Array.isArray(z)) { await api.sag(z[0], String(z[1]).replace(/\{f:(\w+)\}/g, (_, k) => F()[k] || '')); continue; }   // {f:key} = Merkzettel-Wert, z. B. der gewählte Satz
       if (z.wahl) {
         const opt = z.wahl.filter((w) => !w.wenn || w.wenn(F()));
-        const i = await ui.waehle(opt.map((w) => api.ersetze(w.t)), z.frage ? api.ersetze(z.frage) : '');
+        const fx = (t) => String(t).replace(/\{f:(\w+)\}/g, (_, k) => F()[k] || '');
+        const i = await ui.waehle(opt.map((w) => api.ersetze(fx(w.t))), z.frage ? api.ersetze(fx(z.frage)) : '');
         const w = opt[i]; vib(10);
         const besser = w.skill === false ? opt.find((o) => o.skill === true) : null;
         if (w.plus) plus(w.plus);

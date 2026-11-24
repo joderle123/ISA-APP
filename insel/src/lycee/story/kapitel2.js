@@ -14,6 +14,11 @@ export const SCHRITTE_N2 = [
     start: { teleport: 'eingangHof', gespraech: 'n2_post' },
     leute: { noah: [-20, 11.6, Math.PI, 'sitzt'], mila: [-14, 11.6, Math.PI, 'sitzt'], ben: [4, 14, 0.6, 'redet'], jo: [5.2, 15.4, -2.4, 'redet'], dario: [-32.6, 10.2, -2], kenan: [-34, 9, 1] },
     fertig: { reden: 'noah', gespraech: 'n2_noah' } },
+  // Fachstunde (Rückmeldung der Schüler 24.11.): Mathe im eigenen Modul, zu zweit – Mila rechnet schneller als alle
+  { id: 'k2_mathe', kap: 2, tag: 'Montag', uhr: 8.6, titel: 'Mathe', ziel: 'Saal 1.04. Mathe bei Mme Lenning – heute zu zweit.', marker: 'lenning',
+    start: { teleport: 'saal104Tuer' },
+    leute: { lenning: [-27, -24, Math.PI / 2], ...KLASSE },
+    fertig: { reden: 'lenning', gespraech: 'n2_mathe' } },
   { id: 'k2_tanks', kap: 2, tag: 'Montag', uhr: 9.9, titel: 'Skills: Das Glas der Bedürfnisse', ziel: 'Skills-Stunde in der Aula. Herr Kuedes hat sechs Tanks gemalt.', marker: 'kaya',
     start: { teleport: 'eingangHof' },
     leute: { kaya: [-14.50, -65.40, 0.00], ...AULA },
@@ -172,6 +177,39 @@ const DM_CAM = {
 };
 
 export const GESPRAECHE_N2 = {
+  // Mathe zu zweit: Wer lässt wen mitdenken? Danach fragt Noah – erklären, nicht vorrechnen.
+  n2_mathe: [
+    ['lenning', 'Guten Morgen. Heute zu zweit. Einer rechnet, einer erklärt. Dann tauschen.'],
+    ['lenning', '{name} und Mila. Ein Blatt, zwei Köpfe.'],
+    ['mila', '(zieht das Blatt schon zu sich) Ich mach das schnell. Dauert drei Minuten.'],
+    { wahl: [
+      { t: '„Lass mich die erste rechnen. Du sagst, wenn ich hänge.“', staerke: 'klar', herz: { mila: 1 }, merke: 'milaPartner', dann: [
+        ['mila', '(Pause) … Okay. Aber ich sag wirklich was.'],
+        ['erzaehler', 'Sie sagt nichts. Sie zeigt nur mit dem Stift auf eine Stelle. Das reicht.'] ] },
+      { t: '(Mila machen lassen.)', merke: 'milaAllein', dann: [
+        ['erzaehler', 'Drei Minuten. Fertig. Du hast zugeschaut.'],
+        ['lenning', '{name}, erklär mir Aufgabe zwei.'],
+        ['erzaehler', 'Du schaust aufs Blatt. Die Zahlen sagen dir nichts.'],
+        ['mila', '(leise) … Sorry. Hätte dich lassen sollen.'] ] },
+      { t: '„Super, dann schreib ich ab.“', herz: { mila: -1 }, merke: 'milaAbgeschrieben', dann: [
+        ['mila', 'Abschreiben ist kein Mathe. Das ist Kopieren.'],
+        ['lenning', 'Mila hat recht. Und ich frage gleich {name}.'] ] },
+    ] },
+    { stunde: 'mathe' },
+    ['erzaehler', 'Noah, am Tisch daneben, starrt auf seine letzte Aufgabe. Er radiert zum dritten Mal.'],
+    ['noah', '(leise) Kannst du mir das erklären? Aber nicht so schnell.'],
+    { wahl: [
+      { t: 'Langsam erklären, Schritt für Schritt – mit einem Beispiel.', staerke: 'hilfe', herz: { noah: 2 }, merke: 'noahErklaert', dann: [
+        ['noah', '… Ah. Und dann einfach dasselbe noch mal?'],
+        ['erzaehler', 'Er rechnet. Allein. Diesmal radiert er nicht.'],
+        ['lenning', 'Wer erklärt, lernt doppelt. Gut gemacht, ihr zwei.'] ] },
+      { t: '(Schnell die Lösung hinschreiben.)', herz: { noah: 1 }, merke: 'noahVorgerechnet', dann: [
+        ['noah', 'Danke. … Ich versteh’s trotzdem nicht.'],
+        ['erzaehler', 'Morgen kommt die nächste Aufgabe. Dann sitzt er wieder da.'] ] },
+      { t: '„Frag Mme Lenning. Ich bin selbst nicht sicher.“', staerke: 'ehrlich', merke: 'noahLenning', dann: [
+        ['lenning', '(kommt) Gute Idee. Fragen ist nicht peinlich. Raten schon eher.'] ] },
+    ] },
+  ],
   n2_post: [
     ['erzaehler', 'Montag, 7:36. Das Handy vibriert, bevor du aus dem Bus bist.'],
     { szene: 'chat', id: 'top5', def: TOP5,

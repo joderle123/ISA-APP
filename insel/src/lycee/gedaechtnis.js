@@ -29,9 +29,21 @@ export const GEDAECHTNIS = [
   { id: 'noahAura', wer: 'noah', ab: 2, bis: 4, wenn: m('noahAura'), g: [
     ['noah', 'Der Screenshot von meinem doppelten Hallo. Hast du den noch?'],
     ['noah', '(hält dir ein Brötchen hin) Ein Drittel. Wie abgemacht.'] ] },
-  { id: 'zettelKrimi', wer: 'ben', ab: 2, bis: 4, wenn: m('zettelGut'), g: [
-    ['ben', 'Der Zettel-Krimi am ersten Tag. Du hast fast alles erraten.'],
-    ['ben', 'Mme Tidderich nennt dich seitdem „Sherlock“. Hab ich gehört.'] ] },
+  // Klassenregeln vom ersten Tag (story/kapitel1.js, n1_hoffmann)
+  { id: 'regelLina', wer: 'lina', ab: 2, bis: 4, wenn: m('regelLina'), g: [
+    ['lina', '(leise) Regel eins hängt noch an der Tür. Jemand hat ein Herz drangemalt.'],
+    ['lina', 'Danke. Für den ersten Tag.'] ] },
+  { id: 'regelHandy', wer: 'ben', ab: 2, bis: 3, wenn: m('regelHandy'), g: [
+    ['ben', 'Handy mit Musik. Abgelehnt, aber mutig. Wir waren Legenden.'] ] },
+  { id: 'linaVertraut', wer: 'lina', ab: 4, bis: 6, wenn: m('linaGeschuetzt'), g: [
+    ['lina', 'Du hast es damals nicht gesagt. Vor allen. Das mit der Angst.'],
+    ['lina', 'Ich hab mich heute gemeldet. Einmal. In Französisch.'] ] },
+  { id: 'linaVerraten', wer: 'lina', ab: 4, bis: 6, wenn: m('linaVerraten'), g: [
+    ['lina', '(kurz) Hallo.'],
+    ['erzaehler', 'Seit Französisch erzählt sie dir nichts mehr. Nur noch Hallo.'] ] },
+  { id: 'benGeschont', wer: 'ben', ab: 2, bis: 4, wenn: m('benGeschont'), g: [
+    ['ben', '„Alles richtig.“ Weißt du noch? Sag’s mir lieber ehrlich.'],
+    ['ben', 'Ich halt das aus. Fehler sind ja erlaubt. Steht an der Tür.'] ] },
   { id: 'kantineKnall', wer: 'ben', ab: 2, bis: 3, wenn: m('kantineKnall'), g: [
     ['ben', 'Erster Tag, Kantine, du gegen Luca. Die halbe Schule redet noch.'],
     { wahl: [

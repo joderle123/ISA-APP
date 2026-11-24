@@ -8,8 +8,8 @@ export default {
     start: [
       ['e', 'Eine Woche, vier Abende. Am Freitag schreibst du einen Test bei Frau Hoss. Dein Ziel: an dem Morgen wach sein.'],
       ['e', 'In deinem Alter geht die innere Uhr später. Abends bist du länger wach, morgens länger müde. Das ist Biologie – keine Faulheit. Aber du kannst ihr helfen.'],
-      { setze: { muede: 45 } },
-      { thermo: 'muede', text: 'Deine Müdigkeit' },
+      { setze: { akku: 55 } },
+      { thermo: 'akku', text: 'Dein Schlaf-Akku', voll: true },
     ],
     schritte: [
       {
@@ -17,18 +17,18 @@ export default {
         zeilen: [
           ['e', 'Licht aus. Du bist hellwach. Das Handy liegt neben dem Kissen.'],
           { wahl: [
-            { t: 'Ein bisschen scrollen. Das macht müde.', log: 'Mythos geglaubt: Handy im Bett macht müde', folge: 'Um 0:40 schaust du noch Clips. Das Licht und die Clips halten den Kopf wach.', skill: false, plus: { muede: 20 } },
-            { t: 'Handy auf den Schreibtisch. Ein Hörbuch, leise.', log: 'Handy weggelegt, ruhiges Hörbuch', folge: 'Nach einer halben Stunde bist du weg.', skill: true, plus: { muede: -10 } },
-            { t: 'Auf die Uhr schauen und rechnen: „Noch sieben Stunden … noch sechs …“', log: 'Mythos: auf die Uhr schauen und rechnen', folge: 'Mit jeder Rechnung wirst du wacher.', skill: false, plus: { muede: 10 } },
+            { t: 'Ein bisschen scrollen. Das macht müde.', log: 'Mythos geglaubt: Handy im Bett macht müde', folge: 'Um 0:40 schaust du noch Clips. Das Licht und die Clips halten den Kopf wach.', skill: false, plus: { akku: -20 } },
+            { t: 'Handy auf den Schreibtisch. Ein Hörbuch, leise.', log: 'Handy weggelegt, ruhiges Hörbuch', folge: 'Nach einer halben Stunde bist du weg.', skill: true, plus: { akku: 10 } },
+            { t: 'Auf die Uhr schauen und rechnen: „Noch sieben Stunden … noch sechs …“', log: 'Mythos: auf die Uhr schauen und rechnen', folge: 'Mit jeder Rechnung wirst du wacher.', skill: false, plus: { akku: -10 } },
           ], frage: 'Was machst du?' },
           ['h:Amira', 'kannst du auch nicht schlafen? 😩 (1:50)'],
-          { wenn: (f) => (f.muede || 0) < 50, dann: [['e', 'Du schläfst schon. Die Nachricht liest du erst morgens.']], sonst: [
+          { wenn: (f) => (f.akku || 0) >= 50, dann: [['e', 'Du schläfst schon. Die Nachricht liest du erst morgens.']], sonst: [
             { wahl: [
-              { t: 'Zurückschreiben. Eine Stunde lang.', log: 'Nachts eine Stunde mit Amira geschrieben', folge: 'Ihr seid beide um drei noch wach.', skill: false, plus: { muede: 15 } },
+              { t: 'Zurückschreiben. Eine Stunde lang.', log: 'Nachts eine Stunde mit Amira geschrieben', folge: 'Ihr seid beide um drei noch wach.', skill: false, plus: { akku: -15 } },
               { t: '„Gute Nacht 🌙 Morgen reden.“ – Handy weg.', log: 'Nachts kurz geantwortet und das Handy weggelegt', folge: 'Amira schickt ein Herz.', skill: true },
             ] },
           ] },
-          { thermo: 'muede', text: 'Deine Müdigkeit' },
+          { thermo: 'akku', text: 'Dein Schlaf-Akku', voll: true },
         ],
       },
       {
@@ -37,8 +37,8 @@ export default {
           ['amira', 'Ich lag um zehn im Bett. Eingeschlafen bin ich um zwei. Ich bin so kaputt.'],
           ['malik', '(hält zwei Dosen hoch) Energy! Macht wach. Eine für dich?'],
           { wahl: [
-            { t: 'Nehmen. Ich brauch das heute.', log: 'Mythos: Energy-Drink gegen Müdigkeit', folge: 'Um neun Rakete. Um elf zittrig. Abends bist du wieder hellwach.', skill: false, plus: { muede: 15 } },
-            { t: '„Nee. Ich geh lieber ein Stück draußen bis zur Schule.“', log: 'Morgenlicht statt Energy-Drink', folge: 'Das Licht draußen stellt die innere Uhr ein Stück nach vorn. Abends wirst du früher müde.', skill: true, plus: { muede: -10 } },
+            { t: 'Nehmen. Ich brauch das heute.', log: 'Energy-Drink statt Schlaf: hilft kurz, kostet die nächste Nacht', folge: 'Um neun Rakete. Um elf zittrig. Abends bist du wieder hellwach.', skill: false, plus: { akku: -15 } },
+            { t: '„Nee. Ich geh lieber ein Stück draußen bis zur Schule.“', log: 'Morgenlicht statt Energy-Drink', folge: 'Das Licht draußen stellt die innere Uhr ein Stück nach vorn. Abends wirst du früher müde.', skill: true, plus: { akku: 10 } },
           ] },
           ['nik', 'Ich geh jeden Morgen eine Runde. Siebzig Jahre lang. Das Licht weckt besser als jede Dose.'],
           { wahl: [
@@ -57,14 +57,14 @@ export default {
         ziel: 'Mittwoch, 16:00. Korbfeld mit Lio.', ort: 'Korbfeld', p: [28.6, 22.4], leute: { lio: [30.2, 21.4, null, 'redet'] },
         zeilen: [
           ['e', 'Eine Stunde Basketball. Bewegung am Nachmittag macht abends müde – im guten Sinn.'],
-          { plus: { muede: -10 } },
+          { plus: { akku: 10 } },
           ['lio', 'Heute Abend Online-Turnier. Bis Mitternacht oder so. Bist du dabei?'],
           { wahl: [
             { t: '„Bis halb zehn. Dann bin ich raus – egal wie es steht.“', log: 'Zusage mit fester Grenze: bis 21:30', folge: 'Lio: „Deal. Ich sag den anderen, dass du um halb zehn gehst.“', skill: true },
-            { t: '„Klar, bis zum Ende!“', log: 'Bis Mitternacht gezockt', folge: 'Ihr gewinnt um 0:15. Einschlafen kannst du erst um eins.', skill: false, plus: { muede: 25 } },
+            { t: '„Klar, bis zum Ende!“', log: 'Bis Mitternacht gezockt', folge: 'Ihr gewinnt um 0:15. Einschlafen kannst du erst um eins.', skill: false, plus: { akku: -25 } },
             { t: '„Heute nicht.“', log: 'Das Turnier abgesagt', folge: 'Lio: „Schade. Nächstes Mal.“', skill: null },
           ] },
-          { thermo: 'muede', text: 'Deine Müdigkeit' },
+          { thermo: 'akku', text: 'Dein Schlaf-Akku', voll: true },
         ],
       },
       {
@@ -73,7 +73,7 @@ export default {
           ['e', 'Sara liegt mit dem Kopf auf dem Tisch. Chloé fragt sie nach einem Stift. Sara fährt sie an: „Lass mich!“'],
           ['sara', '(später) Sorry. Ich brauch eigentlich nur fünf Stunden Schlaf. Echt.'],
           { wahl: [
-            { t: '„In unserem Alter braucht man acht bis zehn. Mit fünf rastet man schneller aus. Wie gerade.“', log: 'Sara den Mythos „fünf Stunden reichen“ erklärt', folge: 'Sara: „… Okay. Das mit Chloé war echt nicht nötig.“', skill: true },
+            { t: '„Ich hab gelernt: In unserem Alter braucht man eher neun Stunden. Mit wenig Schlaf ist man schneller gereizt – geht mir auch so.“', log: 'Sara den Mythos „fünf Stunden reichen“ erklärt', folge: 'Sara: „… Okay. Das mit Chloé war echt nicht nötig.“', skill: true },
             { t: '„Dann ist ja gut.“', log: 'Den Mythos „fünf Stunden reichen“ stehen lassen', skill: null },
           ] },
           ['sara', 'Ich kann nicht schlafen, weil mein Kopf nicht aufhört. Alles für morgen. Alles von heute.'],
@@ -90,8 +90,9 @@ export default {
       {
         ziel: 'Freitag. Test bei Frau Hoss in der Aula.', ort: 'Aula', p: [-14.0, -57.0], leute: { amira: [-12.6, -56.4] },
         zeilen: [
-          { thermo: 'muede', text: 'Deine Müdigkeit am Freitag' },
-          { wenn: (f) => (f.muede || 0) < 50, dann: [
+          ['e', 'Freitagmorgen.'],
+          { thermo: 'akku', text: 'Dein Schlaf-Akku', voll: true },
+          { wenn: (f) => (f.akku || 0) >= 50, dann: [
             ['e', 'Du liest die erste Aufgabe. Und weißt, was zu tun ist. Bei der dritten stockst du – aber du kommst drauf.'],
             { moment: 'Am Freitag war dein Kopf wach. Die Woche hat sich ausgezahlt.' },
           ], sonst: [
@@ -155,11 +156,11 @@ export default {
               { t: 'Kurz stoppen: „Sorry. Ich bin nicht sauer. Ich hab Hunger.“', log: 'Gemerkt: Ich bin nicht sauer, ich bin leer (Hangry)', folge: 'Frau Brandt wirft dir eine Banane zu. Malik grinst: „Hangry. Kenn ich.“', skill: true, plus: { tank: 20 } },
             ] },
           ], sonst: [
-            ['finn', '(blass, setzt sich auf den Rasen) Mir ist komisch. Alles dreht sich.'],
-            { moment: 'Finn hatte nur Energy-Drinks. Nach dem ersten Spiel war sein Tank leer.' },
+            ['finn', '(blass, setzt sich auf den Rasen) Mein Herz rast. Alles dreht sich.'],
+            { moment: 'Finn hatte drei Energy-Drinks und nichts gegessen. Drei Dosen sind für Jugendliche viel zu viel Koffein. Schwindel und Herzrasen heißen: sofort Erwachsene holen.' },
             { wahl: [
-              { t: 'Frau Brandt rufen und Finn dein Wasser und dein Brot geben.', log: 'Finn mit leerem Tank geholfen und Frau Brandt geholt', folge: 'Nach zehn Minuten hat Finn wieder Farbe.', skill: true },
-              { t: '„Selber schuld.“', log: 'Finn mit leerem Tank allein gelassen', folge: 'Frau Brandt kümmert sich. Finn schaut weg.', skill: false },
+              { t: 'Sofort Frau Brandt rufen und bei Finn bleiben.', log: 'Bei Schwindel und Herzrasen sofort eine Erwachsene geholt und bei Finn geblieben', folge: 'Frau Brandt setzt Finn in den Schatten und ruft seine Eltern an. Nach einer Weile geht es ihm besser.', skill: true },
+              { t: '„Trink halt noch einen, dann geht’s wieder.“', log: 'Finn noch einen Energy-Drink empfohlen', folge: 'Finns Hände zittern. Frau Brandt sieht es und kommt sofort.', skill: false },
             ] },
           ] },
         ],
@@ -175,7 +176,7 @@ export default {
           ], frage: 'Dein Mittagessen?' },
           ['chloe', 'Ich krieg nichts runter. Ich bin zu nervös wegen dem Finale.'],
           { wahl: [
-            { t: '„Musst du nicht viel. Willst du ein paar Bissen von meinem Brot? Und trink was.“', log: 'Chloé etwas angeboten – ohne Druck', folge: 'Chloé isst ein halbes Brot. „Hilft echt.“', skill: true },
+            { t: '„Musst du nicht viel. Willst du ein paar Bissen von meinem Teller? Und trink was.“', log: 'Chloé etwas angeboten – ohne Druck', folge: 'Chloé isst ein paar Gabeln. „Hilft echt.“', skill: true },
             { t: '„Du musst jetzt essen! Sonst verlieren wir.“', log: 'Chloé unter Druck gesetzt', folge: 'Chloé schiebt den Teller weg.', skill: false },
           ] },
           { thermo: 'tank', text: 'Dein Tank', voll: true },
@@ -233,7 +234,7 @@ export default {
           { erinnerung: 'BUS-12', sonst: 'Hier hast du am ersten Tag gewartet. Neu. Und nicht sicher, ob du hierher passt.' },
           ['e', 'Heute steht dort jemand aus der 7ème. Allein, die Kapuze tief, schaut aufs Handy, ohne zu tippen.'],
           { wahl: [
-            { t: 'Hingehen: „Neu hier? Der Bus kommt meistens zu spät. Ich zeig dir, wo man wartet.“', log: 'Einen Neuen angesprochen – so, wie man es sich selbst am ersten Tag gewünscht hätte', folge: 'Die Kapuze geht ein Stück hoch.', skill: true },
+            { t: 'Hingehen: „Neu hier? Der Bus kommt meistens zu spät. Ich zeig dir, wo man wartet.“', log: 'Einen Neuen angesprochen – so, wie ich es mir am ersten Tag gewünscht habe', folge: 'Die Kapuze geht ein Stück hoch.', skill: true },
             { t: 'Vorbeigehen.', log: 'Am Neuen vorbeigegangen', skill: null },
           ] },
         ],
@@ -273,7 +274,7 @@ export default {
           { erinnerung: 'GRENZE-3', sonst: 'Auf der Lichtung hast du gemerkt, wo deine Grenze liegt – zuerst im Bauch, dann im Kopf.' },
           ['amira', 'Ich hab letzte Woche vor meiner Cousine geweint. Wegen nichts eigentlich. Total peinlich. Ich dachte, ich bin stärker geworden.'],
           { wahl: [
-            { t: '„Stark heißt nicht hart. Du hast es jemandem gezeigt. Das ist stark.“', log: 'Amira gesagt: Stark heißt nicht hart', folge: 'Amira wischt sich übers Gesicht. „So hab ich das noch nie gesehen.“', skill: true },
+            { t: '„Weinen ist nicht peinlich. Ich find’s eher stark, dass du’s jemandem gezeigt hast.“', log: 'Amira gesagt: Stark heißt nicht hart', folge: 'Amira wischt sich übers Gesicht. „So hab ich das noch nie gesehen.“', skill: true },
             { t: '„Ja, das war schon peinlich.“', log: 'Amira beim Peinlich-Gefühl zugestimmt', folge: 'Amira wird still.', skill: false },
           ] },
         ],
@@ -312,13 +313,13 @@ export default {
         ],
       },
       {
-        ziel: 'Bild 10: der Innenhof.', ort: 'Innenhof', p: [-24.0, -40.0], leute: { lio: [-22.6, -39.4, null, 'redet'], malik: [-25.6, -41.0] },
+        ziel: 'Bild 10: der Innenhof.', ort: 'Innenhof', p: [-24.0, -40.0], leute: { mia: [-22.6, -39.4, null, 'redet'], malik: [-25.6, -41.0] },
         zeilen: [
-          ['e', 'Lio sitzt neben jemandem aus der 7ème und erklärt ihm gerade, wie man bis zehn atmet, bevor man zurückschreibt. Er redet. Mehr als zwei Wörter.'],
-          ['malik', 'Guck dir Lio an. Im Herbst hat der zu niemandem was gesagt.'],
+          ['e', 'Mia sitzt neben jemandem aus der 7ème und erklärt gerade, wie man bis zehn atmet, bevor man zurückschreibt. Ohne Kapuze. Sie lacht sogar.'],
+          ['malik', 'Guck dir Mia an. Im Herbst saß die nur mit Kapuze am Brunnen.'],
           { wahl: [
-            { t: 'Hingehen und es Lio sagen.', log: 'Lio seine Veränderung gezeigt', folge: 'Lio: „Echt? Ich dachte, ich bin noch genauso.“', skill: true },
-            { t: 'Nichts sagen. Merkt er ja selbst.', log: 'Lio seine Veränderung nicht gesagt', folge: 'Lio merkt es nicht. So wie fast niemand.', skill: null },
+            { t: 'Hingehen und es Mia sagen.', log: 'Mia ihre Veränderung gezeigt', folge: 'Mia: „Echt? Ich dachte, ich bin noch genauso.“', skill: true },
+            { t: 'Nichts sagen. Merkt sie ja selbst.', log: 'Mia ihre Veränderung nicht gesagt', folge: 'Mia merkt es nicht. So wie fast niemand.', skill: null },
           ] },
           ['malik', 'Und du übrigens auch. Du bist anders als im September. Ruhiger irgendwie. Und du sagst öfter „Stopp“.'],
           { moment: 'Am Ende hat Malik dir gesagt, wie du dich verändert hast – du selbst hattest es nicht gemerkt.' },
@@ -335,7 +336,7 @@ export default {
   'ENDE-4': {
     start: [
       ['h:Herr Lenz', 'Letzter Tag. Im Innenhof liegen Stärken-Post-Karten. Eine für jede Person, die dir dieses Jahr wichtig war.'],
-      ['e', 'Ein Abschied darf wehtun. Wer ihn überspringt, nimmt oft etwas Offenes mit.'],
+      ['e', 'Ein Abschied darf wehtun. Wer ohne Tschüss geht, bereut es oft später.'],
     ],
     schritte: [
       {
@@ -352,11 +353,14 @@ export default {
         ziel: 'Post für Malik: zur Skate-Ecke.', ort: 'Skate-Ecke', p: [-34.0, 18.6], leute: { malik: [-32.6, 19.6, null, 'redet'] },
         zeilen: [
           { wahl: [
-            { t: '„Du hast das Video gelöscht und bist zu Noor gegangen. Das braucht mehr Mut als jeder Trick.“', log: 'Stärken-Post an Malik: Mut, sich zu entschuldigen', skill: true },
+            { wenn: (f) => f.malikNoor, t: '„Du hast das Video gelöscht und bist zu Noor gegangen. Das braucht mehr Mut als jeder Trick.“', log: 'Stärken-Post an Malik: Mut, sich zu entschuldigen', skill: true },
+            { wenn: (f) => !f.malikNoor && f.malikGeloescht, t: '„Du hast das Video von Noor gelöscht, obwohl alle gelacht haben. Das war nicht leicht.“', log: 'Stärken-Post an Malik: einen Fehler zurückgenommen', skill: true },
+            { wenn: (f) => !f.malikNoor && !f.malikGeloescht, t: '„Du bringst Leute zum Lachen. Und du merkst, wann du mal leise sein willst.“', log: 'Stärken-Post an Malik: genau beschrieben', skill: true },
             { t: '„Du bist witzig.“', log: 'Stärken-Post an Malik: allgemein', skill: null },
           ], frage: 'Was schreibst du Malik?' },
           ['malik', '(liest, schaut weg, grinst) … Okay. Hier. Deine.'],
-          ['e', 'Auf Maliks Karte steht: „Wenn alle lachen und du nicht, merkt man das. Danke dafür.“'],
+          { wenn: (f) => f.anfang, dann: [['e', 'Auf Maliks Karte steht: „Wenn alle lachen und du nicht, merkt man das. Danke dafür.“']],
+            sonst: [['e', 'Auf Maliks Karte steht: „Mit dir kann man auch mal ernst reden. Das können nicht viele.“']] },
           { wahl: [
             { t: '„Danke.“ – und die Karte einstecken.', log: 'Eine Stärke angenommen, einfach mit „Danke“', folge: 'Malik nickt. Fertig. Mehr braucht es nicht.', skill: true },
             { t: '„Ach, Quatsch, stimmt doch gar nicht.“', log: 'Eine Stärke abgewehrt', folge: 'Malik: „Doch. Lies sie später noch mal.“', skill: false },
@@ -371,7 +375,8 @@ export default {
             { t: '„Du bist ruhig.“', log: 'Stärken-Post an Mia: allgemein', skill: null },
           ], frage: 'Was schreibst du Mia?' },
           ['mia', '(liest sie zweimal) Das hat mir noch nie jemand gesagt.'],
-          ['e', 'Auf Mias Karte für dich: „Du hast dich im Herbst zu mir gesetzt und nichts gefragt. Das war genau richtig.“'],
+          { wenn: (f) => f.miaRuhe, dann: [['e', 'Auf Mias Karte für dich: „Du hast dich im Herbst zu mir gesetzt und nichts gefragt. Das war genau richtig.“']],
+            sonst: [['e', 'Auf Mias Karte für dich: „Mit dir ist es leicht, still zu sein. Das mag ich.“']] },
         ],
       },
       {
@@ -380,7 +385,7 @@ export default {
           ['chloe', '(Rucksack auf) Ich hau einfach ab. Abschiede sind nichts für mich. Nach dem Sommer bin ich eh in einer anderen Schule.'],
           { wahl: [
             { t: '„Okay. Dann tschüss.“', log: 'Chloé ohne Abschied gehen lassen', folge: 'Der Bus fährt. Deine Karte für Chloé ist noch in deiner Tasche.', skill: false, setze: { chloeWeg: true } },
-            { t: '„Ein Tschüss darf wehtun. Zwei Minuten? Die anderen haben was für dich.“', log: 'Chloé zu einem Abschied eingeladen – zwei Minuten', folge: 'Chloé bleibt stehen. Lange. Dann nickt sie.', skill: true },
+            { t: '„Warte. Nur zwei Minuten? Die anderen haben was für dich.“', log: 'Chloé zu einem Abschied eingeladen – zwei Minuten', folge: 'Chloé bleibt stehen. Lange. Dann nickt sie.', skill: true },
           ] },
           { wenn: (f) => f.chloeWeg, dann: [
             ['e', 'Abends. Die Karte liegt auf deinem Tisch.'],
@@ -398,9 +403,10 @@ export default {
       {
         ziel: 'Zum Schluss: zurück in den Innenhof. Ein Brief an dich selbst.', ort: 'Innenhof', p: [-24.0, -40.0], leute: { lenz: [-22.6, -39.4] },
         zeilen: [
-          ['lenz', 'Letzte Aufgabe. Schreib einen Brief an dich – an dich in sechs Monaten. Den liest niemand außer dir. Auch ich nicht.'],
+          ['lenz', 'Letzte Aufgabe. Schreib einen Brief an dich – an dich in sechs Monaten. Ich lese ihn nicht, und er kommt in kein Resümee.'],
+          ['e', 'Der Brief bleibt auf diesem Gerät. Wenn ihr Geräte teilt, kann ihn jemand anderes öffnen. Dann schreib nur, was andere lesen dürfen.'],
           { notiz: 'Brief an mich (in sechs Monaten):', platz: 'Hallo ich. Gerade ist … Ich hoffe, du …', privat: true },
-          ['e', 'Der Brief ist gespeichert – nur auf diesem Gerät, nur für dich. Du findest ihn im Missionen-Fenster unter „✉️ Brief an mich“.'],
+          ['e', 'Du findest den Brief im Missionen-Fenster unter „✉️ Brief an mich“. Dort kannst du ihn auch löschen.'],
           { skala: 'Wie schwer fällt dir der Abschied von diesem Jahr?', links: 'leicht', rechts: 'sehr schwer' },
         ],
       },

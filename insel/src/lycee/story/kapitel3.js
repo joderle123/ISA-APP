@@ -16,6 +16,11 @@ export const SCHRITTE_N3 = [
     start: { teleport: 'eingangHof', gespraech: 'n3_checkin' },
     leute: { kaya: [-14.50, -65.40, 0.00], ...AULA },
     fertig: { reden: 'kaya', gespraech: 'n3_pantomime' } },
+  // Fachstunde (Rückmeldung der Schüler 24.11.): Französisch im eigenen Modul, Partner-Interview mit Lina
+  { id: 'k3_franz', kap: 3, tag: 'Mittwoch', uhr: 8.1, titel: 'Français', ziel: 'Saal 1.04. Französisch bei Mme Sabli – Interview zu zweit.', marker: 'sabli',
+    start: { teleport: 'saal104Tuer' },
+    leute: { sabli: [-27, -24, Math.PI / 2], ...KLASSE },
+    fertig: { reden: 'sabli', gespraech: 'n3_franz' } },
   { id: 'k3_foto', kap: 3, tag: 'Mittwoch', uhr: 12.3, titel: 'Mittagspause', ziel: 'Mila ist aus der Kantine gerannt. Such sie.', marker: 'mila',
     start: { teleport: 'kantineTuer', gespraech: 'n3_foto' },
     leute: { mila: [-6.2, -21.6, 0.4, 'sitzt'], noah: [10.75, -11.1, Math.PI / 2, 'sitzt'], ayla: [10.75, -10.1, Math.PI / 2, 'sitzt'], ben: [16.65, -11.1, Math.PI / 2, 'sitzt'], jo: [16.65, -10.1, Math.PI / 2, 'sitzt'], dario: [21.4, -13.2, 0.9], kenan: [21.0, -12.0, 1.2] },
@@ -185,6 +190,25 @@ const MISCH = (m) => ({
 });
 
 export const GESPRAECHE_N3 = {
+  // Französisch: Interview zu zweit. Ein gutes Interview heißt auch: wissen, was man nicht weitersagt.
+  n3_franz: [
+    ['sabli', 'Bonjour la classe ! Aujourd’hui : interview à deux. Danach stellst du deinen Partner vor.'],
+    ['sabli', '{name} avec Lina. Allez !'],
+    ['lina', '(sehr leise) Je … je m’appelle Lina.'],
+    ['erzaehler', 'Sie schaut auf den Tisch. Ihre Hand zittert ein bisschen.'],
+    { wahl: [
+      { t: 'Langsam fragen, nicken, warten: „Et … tu aimes quoi ?“', staerke: 'zuhoeren', herz: { lina: 2 }, merke: 'linaInterview', dann: [
+        ['lina', 'J’aime … la musique. Le piano.'],
+        ['lina', '(noch leiser, auf Deutsch) Ich hab Angst, vor allen zu reden. Sag das nicht.'] ] },
+      { t: 'Schnell alle Fragen runterrattern, damit es vorbei ist.', merke: 'linaGehetzt', dann: [
+        ['lina', '… Musique.'],
+        ['erzaehler', 'Mehr sagt sie nicht. Du schreibst „musique“ auf und sonst nichts.'] ] },
+    ] },
+    { stunde: 'francais' },
+    ['sabli', 'Maintenant : présentez votre partenaire ! {name}, tu commences ?'],
+    { tu: 'n3_vorstellen' },
+    ['sabli', 'Merci. Une bonne interview, c’est aussi savoir ce qu’on ne dit pas.'],
+  ],
   n3_checkin: [
     ['erzaehler', 'Montag. Check-in. Heute will Herr Kuedes das genauere Wort.'],
     { szene: 'checkin', id: 'checkin3', def: { frage: 'Nicht „gut“ oder „schlecht“. Das genauere Wort?', posts: [
@@ -332,6 +356,20 @@ export const GESPRAECHE_N3 = {
 };
 
 export const tunN3 = (c) => ({
+  // Partner vorstellen: Linas Angst ist ihr Satz, nicht deiner
+  n3_vorstellen: () => {
+    if (!c.S.merke.linaInterview) return [
+      ['du', 'Elle s’appelle Lina. Elle aime … la musique.'],
+      ['sabli', 'C’est tout ? Ein Interview heißt: fragen – und warten.'] ];
+    return [{ wahl: [
+      { t: '„Elle s’appelle Lina. Elle aime la musique et le piano.“', staerke: 'vertrauen', herz: { lina: 2, sabli: 1 }, merke: 'linaGeschuetzt', dann: [
+        ['sabli', 'Très bien ! Le piano, Lina ? Super.'],
+        ['erzaehler', 'Lina schaut kurz hoch. Fast ein Lächeln.'] ] },
+      { t: '„… Et elle a peur de parler devant tout le monde.“', herz: { lina: -3 }, merke: 'linaVerraten', dann: [
+        ['erzaehler', 'Stille. Lina schaut dich an. Dann aus dem Fenster.'],
+        ['sabli', '(ruhig) Merci. Ça, c’est à Lina de le dire. Pas à toi.'] ] },
+    ] }];
+  },
   // Jugendwelt heute: anonyme Fragen in der Story. Erst Spaß, dann ein Satz, der trifft.
   n3_fragen: () => {
     const m = c.S.merke;

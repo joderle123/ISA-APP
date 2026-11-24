@@ -39,20 +39,20 @@ export default {
         ],
       },
       {
-        ziel: 'Mittags: zur Kantine.', ort: 'Kantine', p: [17.2, -6.6], leute: { malik: [18.8, -7.4, null, 'redet'] },
+        ziel: 'Mittags: zur Kantine.', ort: 'Kantine', p: [17.2, -6.6], leute: { sara: [18.8, -7.4, null, 'redet'] },
         zeilen: [
-          ['e', 'Lange Schlange. Malik drängelt sich vor dich. Laut, mit Tablett.'],
+          ['e', 'Lange Schlange. Sara drängelt sich vor dich. Laut, mit Tablett.'],
           { plus: { druck: 15 } },
           { thermo: 'druck' },
           { wenn: (f) => (f.druck || 0) >= 70, dann: [
             ['e', 'Du bist im Rot. Deine Hände sind Fäuste. Du merkst es fast nicht.'],
             { wahl: [
               { t: 'Erst raus aus der Schlange. Ans Fenster. Lang ausatmen.', log: 'Im Rot zuerst raus aus der Situation, dann geatmet', folge: 'Nach einer Minute bist du wieder bei Gelb. Druck sinkt um 25.', skill: true, plus: { druck: -25 } },
-              { t: 'Malik das Tablett aus der Hand schlagen.', log: 'Im Rot zugeschlagen: Tablett weggeschlagen', folge: 'Nudeln auf dem Boden. Frau Kremer holt dich raus. Ein Gespräch im Sekretariat.', skill: false, setze: { ausraster: true } },
+              { t: 'Sara das Tablett aus der Hand schlagen.', log: 'Im Rot zugeschlagen: Tablett weggeschlagen', folge: 'Nudeln auf dem Boden. Frau Kremer holt dich raus. Ein Gespräch im Sekretariat.', skill: false, setze: { ausraster: true } },
             ] },
           ], sonst: [
             { wahl: [
-              { t: '„Malik, hinten ist das Ende. Ich warte auch.“ – ruhig, klar.', log: 'Bei Gelb klar und ruhig etwas gesagt', folge: 'Malik grinst schief und stellt sich hinten an. Druck sinkt um 10.', skill: true, plus: { druck: -10 } },
+              { t: '„Sara, hinten ist das Ende. Ich warte auch.“ – ruhig, klar.', log: 'Bei Gelb klar und ruhig etwas gesagt', folge: 'Sara grinst schief und stellt sich hinten an. Druck sinkt um 10.', skill: true, plus: { druck: -10 } },
               { t: 'Nichts sagen, innerlich kochen.', log: 'Bei Gelb geschluckt', folge: 'Druck steigt um 10.', skill: false, plus: { druck: 10 } },
             ] },
           ] },
@@ -78,7 +78,7 @@ export default {
             ['lenz', 'Frau Kremer hat erzählt, was in der Kantine war. Erzähl mal von deinem Tag.'],
             { moment: 'In der Kantine war dein Druck im Rot – und es ist gekracht.' },
             { wahl: [
-              { t: 'Den Tag von vorn erzählen: Schlaf, Frühstück, Kabel, Schlange.', log: 'Den Tag als Kette erzählt', folge: 'Herr Lenz: „Der Tropfen war Malik. Aber das Fass war schon voll.“', skill: true },
+              { t: 'Den Tag von vorn erzählen: Schlaf, Frühstück, Kabel, Schlange.', log: 'Den Tag als Kette erzählt', folge: 'Herr Lenz: „Die Schlange war nur das Letzte. Dein Druck war schon vorher hoch.“', skill: true },
               { t: '„Malik ist schuld. Punkt.“', log: 'Nur den letzten Tropfen gesehen', folge: 'Herr Lenz: „Und was war vorher?“', skill: false },
             ] },
           ], sonst: [
@@ -97,7 +97,7 @@ export default {
         ],
       },
     ],
-    ende: [['lenz', 'Wer seine Zahl kennt, ist nicht schneller ruhig. Aber früher. Hier, die Sneaker – für den nächsten langen Tag.']],
+    ende: [['lenz', 'Wer seine Zahl kennt, merkt früher, wann es Zeit zum Bremsen ist. Hier, die Sneaker – für den nächsten langen Tag.']],
     resuemee: { frage: 'Was treibt bei euch an einem normalen Tag die Zahl am meisten hoch – und wo ist die beste Pause?', satz: 'Meine Zahl steigt vor allem, wenn … Dann mache ich …' },
   },
 
@@ -139,7 +139,7 @@ export default {
           { wenn: (f) => f.malikAtmet, dann: [['malik', '(atmet lang aus) Okay. Vier ein, acht aus. Geht schon.']], sonst: [['malik', '(schlägt gegen den Spind) Toll. Echt toll.']] },
           { wahl: [
             { t: '„Willst du kurz raus an die Luft? Ich komm mit.“', log: 'Malik angeboten, mit rauszugehen', folge: 'Malik nickt. Draußen redet er weiter.', skill: true },
-            { t: '„Selbst schuld.“', log: 'Malik „selbst schuld“ gesagt', folge: 'Malik dreht sich weg.', skill: false },
+            { t: '„Ach, ein Verweis ist doch nicht schlimm.“', log: 'Maliks Sorge kleingeredet', folge: 'Malik: „Für dich vielleicht nicht.“ Er dreht sich weg.', skill: false },
             { t: '„Und was passiert jetzt?“', log: 'Malik gefragt, was jetzt passiert', folge: 'Malik erklärt. Beim Erklären wird er ruhiger.', skill: null },
           ] },
           ['weber', '(von der Tür) Und jetzt du, bitte.'],
@@ -151,23 +151,23 @@ export default {
         ziel: 'Ins Sekretariat. Jetzt bist du dran.', ort: 'Sekretariat', p: [-21.0, -10.2], leute: {},
         zeilen: [
           ['weber', 'Setz dich. Keine Sorge. Herr Lenz hat dich vorgeschlagen.'],
-          ['weber', 'Ab Montag kommt ein Neuer in die Annexe. Lio. Du sollst ihn die erste Woche begleiten. Patenschaft.'],
+          ['weber', 'Ab Montag wechselt Lio aus der Parallelklasse in eure Klasse. Du sollst ihn die erste Woche begleiten. Patenschaft.'],
           { moment: 'Die Überraschung: Du warst nicht in Ärger – du wurdest als Pate oder Patin vorgeschlagen.' },
           { wahl: [
             { t: '„Echt? Ich? Okay. Ja.“', log: 'Die Patenschaft angenommen', folge: 'Mme Weber gibt dir einen Zettel mit Lios Stundenplan.', skill: null, setze: { pate: true } },
             { t: '„Ich weiß nicht, ob ich das kann.“', log: 'Ehrlich gezögert', folge: 'Mme Weber: „Darum fragen wir dich. Du merkst, wenn es jemandem nicht gut geht.“', skill: null, setze: { pate: true } },
           ] },
           { thermo: 'druck', text: 'Dein Druck jetzt' },
-          ['e', 'Dein Kopf hatte vorhin zehn schlimme Gründe. Keiner davon stimmte.'],
+          ['e', 'Falls dein Kopf vorhin schlimme Gründe gesucht hat: Keiner davon stimmte.'],
         ],
       },
       {
         ziel: 'Montag: Lio wartet in der Halle. Er ist nervös.', ort: 'Halle', p: [0.0, -4.0], leute: { lio: [1.6, -4.8, null, 'handy'] },
         zeilen: [
-          ['lio', 'Hi. Du bist mein … Pate? Ich muss gleich ins Sekretariat. Mein Bein hört nicht auf.'],
+          ['lio', 'Hi. Du bist die Person, die mich begleitet? Ich muss gleich ins Sekretariat. Neue Klasse, neuer Plan. Mein Bein hört nicht auf.'],
           { wahl: [
             { t: '„Kenn ich. Komm, wir machen vier ein, acht aus. Zusammen.“', log: 'Lio die Atem-Bremse beigebracht', folge: 'Lio atmet mit. Nach drei Runden steht er ruhiger.', skill: true, dann: [{ atem: true }] },
-            { t: '„Ist nicht schlimm da drin.“', log: 'Lio beruhigt: „nicht schlimm“', folge: 'Lio: „Sagst du so.“ Das Bein wippt weiter.', skill: false },
+            { t: '„Ist nicht schlimm da drin.“', log: 'Lio beruhigt: „nicht schlimm“', folge: 'Lio: „Sagst du so.“ Das Bein wippt weiter.', skill: false, setze: { lioOhneAtem: true } },
           ] },
           ['lio', 'Und wenn sie mich was fragen und ich weiß es nicht?'],
           { wahl: [
@@ -177,7 +177,8 @@ export default {
         ],
       },
     ],
-    ende: [['lio', '(kommt aus dem Sekretariat) War okay. Ich hab geatmet. (zeigt dir ein Armband) Das hab ich am Automaten gezogen. Für dich, Pate.']],
+    ende: [{ wenn: (f) => f.lioOhneAtem, dann: [['lio', '(kommt aus dem Sekretariat) War okay. Irgendwie. (zeigt dir ein Armband) Das hab ich am Automaten gezogen. Für dich. Danke fürs Begleiten.']],
+      sonst: [['lio', '(kommt aus dem Sekretariat) War okay. Ich hab geatmet. (zeigt dir ein Armband) Das hab ich am Automaten gezogen. Für dich. Danke fürs Begleiten.']] }],
     resuemee: { frage: 'Wo wartet ihr ungern – und was macht euer Körper dann?', satz: 'Wenn ich warten muss und mein Kopf das Schlimmste malt, dann …' },
   },
 
@@ -200,12 +201,12 @@ export default {
           { wahl: [
             { t: 'Ein Knetball', log: 'Ins Set: Knetball', skill: true, setze: { knete: true } },
             { t: 'Ein Duft, den du magst (Minz-Balsam)', log: 'Ins Set: Minz-Duft', skill: true, setze: { duft: true } },
-            { t: 'Ein Feuerzeug „zum Spielen“', log: 'Ins Set: Feuerzeug', folge: 'Lisette schüttelt den Kopf: „Gefährlich ist kein Reiz. Gefährlich ist gefährlich.“', skill: false },
+            { t: 'Chips für den Frust', log: 'Ins Set: Chips', folge: 'Lisette: „Lecker. Aber die beruhigen nicht – die füllen nur.“', skill: false },
           ], frage: 'Zweite Sache:' },
           { wahl: [
             { t: 'Kopfhörer mit einem Lied, das runterbringt', log: 'Ins Set: ein ruhiges Lied', skill: true, setze: { musik: true } },
-            { t: 'Ein Gummiband fürs Handgelenk zum Schnalzen', log: 'Ins Set: Gummiband zum Schnalzen', folge: 'Amira: „Das tut weh. Weh tun ist nicht der Trick.“', skill: false },
-            { t: 'Ein Zettel: „Wen kann ich anrufen?“', log: 'Ins Set: ein Zettel mit einer Nummer', skill: true, setze: { zettel: true } },
+            { t: 'Das Handy zum Scrollen', log: 'Ins Set: Handy zum Scrollen', folge: 'Amira: „Das lenkt ab. Aber runter bringt es dich selten.“', skill: false },
+            { t: 'Ein Zettel: „Wen kann ich anrufen?“ – mit 116 111 drauf', log: 'Ins Set: ein Zettel mit Nummern', skill: true, setze: { zettel: true } },
           ], frage: 'Dritte Sache:' },
           ['amira', 'Gut. Jetzt testen. Im echten Leben. Drei Mal.'],
         ],
@@ -221,11 +222,13 @@ export default {
             { t: 'Ein saures Bonbon. Volle Konzentration auf die Säure.', log: 'Test 1: saures Bonbon gegen den Gedankenstrudel', folge: 'Zehn Sekunden nur sauer. Dann ist der Kopf leiser. Druck sinkt um 20.', skill: true, plus: { druck: -20 }, wenn: (f) => f.sauer },
             { t: 'Den Knetball drücken, so fest es geht.', log: 'Test 1: Knetball', folge: 'Die Hände haben zu tun. Druck sinkt um 15.', skill: true, plus: { druck: -15 }, wenn: (f) => f.knete },
             { t: 'Das Lied hören, Augen zu.', log: 'Test 1: Lied', folge: 'Drei Minuten, dann ist es leiser. Druck sinkt um 15.', skill: true, plus: { druck: -15 }, wenn: (f) => f.musik },
+            { t: 'Vier ein, acht aus. Dreimal.', log: 'Test 1: lang ausgeatmet', folge: 'Beim dritten Mal wird der Bauch weicher. Druck sinkt um 15.', skill: true, plus: { druck: -15 } },
+            { t: 'Den Zettel rausholen und Amira schreiben.', log: 'Test 1: jemandem geschrieben', folge: 'Amira: „Blockier die Nummer. Ich bin da.“ Druck sinkt um 15.', skill: true, plus: { druck: -15 }, wenn: (f) => f.zettel },
             { t: 'Zurückschreiben: „Wer bist du überhaupt?!“', log: 'Test 1: zurückgeschrieben', folge: 'Keine Antwort. Du starrst aufs Handy. Druck steigt.', skill: false, plus: { druck: 10 } },
           ], frage: 'Was nimmst du aus dem Set?' },
           { thermo: 'druck' },
           { wahl: [
-            { t: 'Die Nummer blockieren und einen Screenshot machen.', log: 'Die Nummer blockiert, Beweis gesichert', folge: 'Ruhe. Und ein Beweis, falls es weitergeht.', skill: true },
+            { t: 'Die Nummer blockieren und einen Screenshot machen.', log: 'Die Nummer blockiert, Beweis gesichert', folge: 'Ruhe. Und ein Beweis. Wenn es weitergeht: einer erwachsenen Person zeigen oder BEE SECURE anrufen (8002 1234).', skill: true },
             { t: 'Die Nachricht immer wieder lesen.', log: 'Die Nachricht immer wieder gelesen', folge: 'Jedes Mal ein kleiner Stich.', skill: false },
           ] },
         ],
@@ -238,11 +241,12 @@ export default {
             { t: 'Mitmachen. Hände ins kalte Wasser, zählen.', log: 'Test 2: kaltes Wasser ausprobiert', folge: 'Bei zwölf ist der Kopf ganz im Jetzt.', skill: true },
             { t: '„Nee, ist mir zu kalt.“', log: 'Test 2: kaltes Wasser abgelehnt', folge: 'Amira: „Genau darum wirkt es.“', skill: null },
           ] },
-          ['amira', 'Weißt du, was Dex mir mal geraten hat? Faust gegen die Wand. „Das holt dich zurück.“'],
+          ['amira', 'Jemand hat mir mal gesagt, ich soll mir selbst wehtun, wenn es zu viel wird. Damit es aufhört.'],
           { wahl: [
-            { t: '„Das holt dich zurück – mit einer kaputten Hand. Stark ja, schädlich nein.“', log: 'Klar gesagt: schädliche Reize sind keine Skills', folge: 'Amira: „Hab ich auch gedacht. Gut, dass du’s sagst.“', skill: true },
-            { t: '„Wenn’s hilft …“', log: 'Schädlichen Reiz durchgehen lassen', folge: 'Amira schaut dich unsicher an.', skill: false },
+            { t: '„Wehtun ist kein Trick. Kalt, sauer, ein Duft – stark, aber harmlos. Und wenn es oft zu viel ist: Sag’s einer erwachsenen Person.“', log: 'Klar gesagt: Wehtun ist keine Hilfe – Hilfe holen schon', folge: 'Amira: „Hab ich auch gedacht. Gut, dass du’s sagst.“', skill: true },
+            { t: '„Wenn’s hilft …“', log: 'Sich-wehtun durchgehen lassen', folge: 'Amira schaut dich unsicher an.', skill: false },
           ] },
+          ['e', 'Wenn du dir selbst wehtun willst: Sag es einer erwachsenen Person, der du vertraust. Oder ruf 116 111 an – kostenlos und anonym.'],
         ],
       },
       {
@@ -280,7 +284,7 @@ export default {
           ['h:Mia', 'Ich denk immer: Ich verhaspel mich. Alle lachen. Ich werd rot. Und dann noch mal von vorn.'],
           { wahl: [
             { t: '„Denk einfach nicht dran.“', log: 'Mia geraten, nicht dran zu denken', folge: 'Mia: „Jetzt denk ich NUR noch dran.“', skill: false },
-            { t: '„Gib deinem Kopf einen Job: Zähl von 100 in Siebenern runter.“', log: 'Weg 1 vorgeschlagen: den Kopf beschäftigen', folge: 'Mia: „93 … 86 … ey, das ist schwer.“ Zehn Minuten später: „Bin müde.“', skill: true, setze: { weg: 'beschaeftigen' } },
+            { t: '„Gib deinem Kopf einen Job: zu jedem Buchstaben ein Tier. A wie Affe …“', log: 'Weg 1 vorgeschlagen: den Kopf beschäftigen', folge: 'Mia: „B wie Biber … C wie … Chamäleon.“ Zehn Minuten später: „Bin müde.“', skill: true, setze: { weg: 'beschaeftigen' } },
             { t: '„Stell dir vor, jeder Gedanke ist ein Schiff. Du schaust nur zu.“', log: 'Weg 2 vorgeschlagen: Gedanken beobachten', folge: 'Mia: „Da fährt das Lach-Schiff. Ich steig nicht ein.“', skill: true, setze: { weg: 'beobachten' } },
             { t: '„Geh in Gedanken an deinen Ort. Wo ist es ruhig?“', log: 'Weg 3 vorgeschlagen: umschalten zum ruhigen Ort', folge: 'Mia: „Am Weiher. Bei den Enten.“ Dann nichts mehr. Sie schläft.', skill: true, setze: { weg: 'umschalten' } },
           ] },
@@ -291,7 +295,7 @@ export default {
         ziel: 'Morgens: zum Innenhof. Mia sitzt bei der Linde.', ort: 'Innenhof', p: [-24.0, -40.0], leute: { mia: [-22.6, -39.0] },
         zeilen: [
           { wenn: (f) => f.miaWach, dann: [['mia', '(gähnt) Drei Stunden geschlafen. Super Voraussetzung.']], sonst: [['mia', 'Hat irgendwie geklappt. Fünf Stunden Schlaf. Besser als nix.']] },
-          ['mia', 'Zeig mir das mit den Schiffen noch mal. Richtig. Bevor ich reinmuss.'],
+          { wenn: (f) => f.weg === 'beobachten', dann: [['mia', 'Zeig mir das mit den Schiffen noch mal. Richtig. Bevor ich reinmuss.']], sonst: [['mia', 'Kennst du noch einen Trick? Irgendwas mit Schiffen hab ich mal gehört. Zeig mal.']] },
           ['e', 'Ihr sitzt auf der Bank. Mia sagt laut, was kommt. Du sagst: „Schiff.“'],
           ['mia', 'Gedanke: „Ich verhaspel mich.“'],
           { wahl: [
@@ -363,10 +367,11 @@ export default {
             { t: 'Fäuste ballen, loslassen.', log: 'Gelb-Skill gewählt: anspannen und loslassen', setze: { skill: 'anspannen' } },
           ], frage: 'Dein Skill bei Gelb:' },
           { wahl: [
-            { t: 'Herr Lenz', log: 'Rot-Person: Herr Lenz' },
-            { t: 'Herr Kuedes (SePAS)', log: 'Rot-Person: Herr Kuedes' },
-            { t: 'Ein Freund oder eine Freundin', log: 'Rot-Person: Freund oder Freundin' },
-            { t: 'Jemand anderes', log: 'Rot-Person: jemand anderes' },
+            { t: 'Herr Lenz', log: 'Rot-Person: Herr Lenz', setze: { rotPerson: 'Herrn Lenz' } },
+            { t: 'Herr Kuedes (SePAS)', log: 'Rot-Person: Herr Kuedes', setze: { rotPerson: 'Herrn Kuedes' } },
+            { t: 'Ein Freund oder eine Freundin', log: 'Rot-Person: Freund oder Freundin', setze: { rotPerson: 'meiner Person' } },
+            { t: 'Telefon 116 111 (kostenlos, anonym)', log: 'Rot-Person: Telefon 116 111', setze: { rotPerson: 'einem Erwachsenen – und ich ruf 116 111 an' } },
+            { t: 'Jemand anderes', log: 'Rot-Person: jemand anderes', setze: { rotPerson: 'meiner Person' } },
           ], frage: 'Bei Rot gehst du zu:' },
           ['finn', 'Gut. Und bei Grün? Was füllt dich auf?'],
           { notiz: 'Was füllt dich bei Grün auf?', platz: 'zum Beispiel: Sport, Schlaf, Leute …' },
@@ -384,32 +389,40 @@ export default {
         ],
       },
       {
-        ziel: 'Tag 2 (Gelb): Kantine. Jemand macht einen Spruch.', ort: 'Kantine', p: [17.2, -6.6], leute: { malik: [18.8, -7.4, null, 'redet'], finn: [16.2, -5.0] },
+        ziel: 'Tag 2 (Gelb): Kantine. Jemand macht einen Spruch.', ort: 'Kantine', p: [17.2, -6.6], leute: { sara: [18.8, -7.4, null, 'redet'], finn: [16.2, -5.0] },
         zeilen: [
-          ['malik', '(laut, zu allen) Schaut mal, wer da kommt. Der Plan-Profi.'],
+          ['sara', '(laut, zu allen) Schaut mal, wer da kommt. Mit Plan und allem.'],
           { wenn: (f) => f.gruenVoll === false, dann: [['e', 'Du hast vier Stunden geschlafen. Der Spruch trifft härter als sonst.']] },
           { wenn: (f) => f.gelb === 'still', dann: [['e', 'Du wirst still. Dein Gelb-Signal.']] },
           { wenn: (f) => f.gelb === 'laut', dann: [['e', 'Deine Stimme wird schneller. Dein Gelb-Signal.']] },
           { wenn: (f) => f.gelb === 'bauch', dann: [['e', 'Dein Bauch zieht sich zusammen. Dein Gelb-Signal.']] },
           { wenn: (f) => f.gelb === 'weg', dann: [['e', 'Du willst nur noch raus. Dein Gelb-Signal.']] },
           { wahl: [
-            { t: 'Den eigenen Gelb-Skill machen – genau den aus dem Plan.', log: 'Bei Gelb den eigenen Plan benutzt', folge: 'Du bleibst bei Gelb. Malik verliert das Interesse.', skill: true },
-            { t: 'Einen härteren Spruch zurück.', log: 'Bei Gelb zurückgeschossen', folge: 'Jetzt lachen alle über Malik. Er wird rot – und wartet auf seine Chance.', skill: false, setze: { malikSauer: true } },
+            { t: 'Den eigenen Gelb-Skill machen – genau den aus dem Plan.', log: 'Bei Gelb den eigenen Plan benutzt', folge: 'Du bleibst bei Gelb. Sara verliert das Interesse.', skill: true },
+            { t: 'Einen härteren Spruch zurück.', log: 'Bei Gelb zurückgeschossen', folge: 'Jetzt lachen alle über Sara. Sie wird rot – und wartet auf ihre Chance.', skill: false, setze: { saraSauer: true } },
             { t: 'Ignorieren und weiter essen.', log: 'Bei Gelb ignoriert', folge: 'Es geht. Diesmal.', skill: null },
           ] },
-          ['finn', '(leise) Hab’s gesehen. Plan läuft.'],
+          { wenn: (f) => f.saraSauer, dann: [['finn', '(leise) Das war jetzt nicht der Plan, oder?']], sonst: [['finn', '(leise) Hab’s gesehen. Plan läuft.']] },
         ],
       },
       {
-        ziel: 'Tag 3 (Rot): hinter der Turnhalle. Finn schreibt: „Komm schnell.“', ort: 'Hinter der Turnhalle', p: [60.0, -14.4], leute: { finn: [61.6, -13.4, null, 'redet'], malik: [61.2, -15.8, null, 'redet'] },
+        ziel: 'Tag 3 (Rot): hinter der Turnhalle. Finn schreibt: „Komm schnell.“', ort: 'Hinter der Turnhalle', p: [60.0, -14.4], leute: { finn: [61.6, -13.4, null, 'redet'], malik: [61.2, -15.8, null, 'redet'], sara: [59.0, -15.6] },
         zeilen: [
-          { wenn: (f) => f.malikSauer, dann: [['malik', 'Gestern hast du mich vor allen fertiggemacht. Jetzt bin ich dran.']],
-            sonst: [['malik', 'Finn hat mein Handy runtergeworfen. Display kaputt!'], ['finn', 'War keine Absicht! Ey, ich bin bei 90!']] },
           { moment: 'Am dritten Tag stand es auf Rot – genau dafür war der Plan.' },
-          { wahl: [
-            { t: 'Rot-Plan: „Wir gehen jetzt. Beide. Zu Herrn Lenz.“', log: 'Bei Rot raus aus der Situation und zur Rot-Person', folge: 'Herr Lenz hört zu. Das Handy wird über die Versicherung geklärt. Keiner schlägt.', skill: true },
-            { t: 'Zwischen die beiden stellen und laut werden.', log: 'Bei Rot dazwischen gegangen und laut geworden', folge: 'Malik schubst. Finn schubst zurück. Herr Lenz kommt von selbst.', skill: false },
-            { t: 'Mit Finn reden, bis er ruhig ist.', log: 'Bei Rot mit Finn diskutiert', folge: 'Finn hört nichts. Bei Rot hört der Kopf nicht zu.', skill: false },
+          { wenn: (f) => f.saraSauer, dann: [
+            ['sara', '(kommt auf dich zu) Gestern hast du mich vor allen fertiggemacht. Jetzt bin ich dran.'],
+            { wahl: [
+              { t: 'Rot-Plan: „Ich geh jetzt zu {f:rotPerson}. Komm mit, dann klären wir das.“', log: 'Bei Rot raus aus der Situation und zur Rot-Person', folge: 'Sara bleibt stehen. Dann kommt sie mit. Keiner schlägt.', skill: true },
+              { t: '„Komm doch!“', log: 'Bei Rot zurückgedroht', folge: 'Sara schubst dich. Herr Lenz kommt von selbst.', skill: false },
+              { t: 'Wortlos weggehen.', log: 'Bei Rot einfach gegangen', folge: 'Es ist vorbei – für heute. Geklärt ist nichts.', skill: null },
+            ] },
+          ], sonst: [
+            ['malik', 'Finn hat mein Handy runtergeworfen. Display kaputt!'], ['finn', 'War keine Absicht! Ey, ich bin bei 90!'],
+            { wahl: [
+              { t: 'Rot-Plan: „Wir gehen jetzt. Beide. Zu {f:rotPerson}.“', log: 'Bei Rot raus aus der Situation und zur Rot-Person', folge: 'Ihr redet in Ruhe. Das Handy wird über die Versicherung geklärt. Keiner schlägt.', skill: true },
+              { t: 'Zwischen die beiden stellen und laut werden.', log: 'Bei Rot dazwischen gegangen und laut geworden', folge: 'Malik schubst. Finn schubst zurück. Herr Lenz kommt von selbst.', skill: false },
+              { t: 'Mit Finn reden, bis er ruhig ist.', log: 'Bei Rot mit Finn diskutiert', folge: 'Finn hört nichts. Bei Rot hört der Kopf nicht zu.', skill: false },
+            ] },
           ] },
           ['finn', '(später) Bei Rot denkt keiner. Darum war der Plan vorher da.'],
           { skala: 'Wie gut passt dein Plan zu dir?', links: 'gar nicht', rechts: 'genau' },

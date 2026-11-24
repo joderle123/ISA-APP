@@ -7,13 +7,13 @@ const SPUREN = [{ z: 46.4, r: 1 }, { z: 49.6, r: -1 }];   // r = 1: nach Osten (
 const X0 = -104, X1 = 104, TEMPO = 8.3, BLICK = 8;
 
 export function createVerkehr({ scene, geo, stelle, material, steuerung, personen = () => [] }) {
-  const MODELLE = [['auto/sedan', null], ['auto/hatchback-sports', '#e6c8a0'], ['auto/suv', '#c8d6e0'], ['auto/taxi', null], ['auto/van', '#d8d8d8'], ['auto/sedan', '#b8d8c0']].filter(([m]) => geo[m]);
+  const MODELLE = [['auto2/limo-blau', null], ['auto2/kompakt-rot', null], ['auto2/suv-grau', null], ['auto2/taxi', null], ['auto2/bus-weiss', null], ['auto2/kompakt-silber', null]].filter(([m]) => geo[m]);
   const autos = [];
   if (!MODELLE.length) return { tick() {}, autos };
   const plaetze = [[0, -70], [0, 10], [0, 75], [1, -30], [1, 45]];
   plaetze.forEach(([s, x], i) => {
     const [m, farbe] = MODELLE[i % MODELLE.length], sp = SPUREN[s];
-    const g = stelle(geo[m], { x: 0, z: 0, h: m === 'auto/van' ? 2.0 : 1.55, rot: 0, farbe });
+    const g = stelle(geo[m], { x: 0, z: 0, rot: 0, farbe });   // eigene Autos haben schon echte Größe (Meter)
     g.computeBoundingBox(); const bb = g.boundingBox, lang = Math.max(bb.max.x - bb.min.x, bb.max.z - bb.min.z), laengsX = bb.max.x - bb.min.x > bb.max.z - bb.min.z;
     const mesh = new THREE.Mesh(g, material); mesh.castShadow = true; mesh.name = 'auto';
     // Modell zeigt längs z (Kenney) → so drehen, dass es in Fahrtrichtung zeigt

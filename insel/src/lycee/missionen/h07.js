@@ -6,7 +6,7 @@ export default {
   // ---------- Stunde 1 · Wer scrollt wen? ----------
   'SCROLL-1': {
     start: [
-      ['e', 'annexe.cam ist gratis. Trotzdem verdient die App jeden Tag Geld – mit Werbung zwischen den Clips. Je länger du schaust, desto mehr. Du bist nicht der Kunde. Deine Zeit ist das Produkt.'],
+      ['e', 'annexe.cam ist gratis. Trotzdem verdient die App jeden Tag Geld – mit Werbung zwischen den Clips. Je länger du schaust, desto mehr. Die App verkauft deine Zeit an die Werbung.'],
       ['e', 'Heute versucht die App dreimal, dich festzuhalten. Finde die drei Tricks.'],
     ],
     schritte: [
@@ -54,13 +54,12 @@ export default {
           { wahl: [
             { t: 'Schnell ein schwarzes Bild schicken. Dann noch ein bisschen scrollen.', log: 'Für die Flamme ein Bild geschickt und weitergescrollt', folge: 'Es ist 0:20, als du das Handy weglegst.', skill: false, setze: { spaet: true } },
             { t: 'Die Flamme ausgehen lassen. Handy auf den Schreibtisch.', log: 'Die Flamme ausgehen lassen und das Handy weggelegt', folge: 'Komisch, aber du schläfst nach zehn Minuten.', skill: true },
-            { t: 'Malik schreiben: „Lass die Flamme ausgehen? Wir sehen uns eh jeden Tag.“', log: 'Mit Malik über die Flamme geredet', folge: 'Malik: „Ehrlich? Ja. Ich mach das nur noch für die Zahl.“', skill: true },
+            { t: 'Malik schreiben: „Lass die Flamme ausgehen? Wir sehen uns eh jeden Tag.“', log: 'Mit Malik über die Flamme geredet', folge: 'Malik: „Ehrlich? Ja. Ich mach das nur noch für die Zahl.“', skill: true, dann: [{ moment: 'Wendung: Malik hat die Flamme auch nur noch für die Zahl gemacht. Keiner von beiden wollte sie wirklich.' }] },
           ] },
           { wahl: [
             { t: 'Flamme: Die App macht mir Angst, etwas zu verlieren.', log: 'Trick 3 erkannt: Die Flamme macht Angst vor Verlust', skill: true },
             { t: 'Das ist halt Freundschaft.', log: 'Trick 3 nicht erkannt', skill: false },
           ], frage: 'Trick 3: Wie hält dich die App fest?' },
-          { moment: 'Wendung: Malik hat die Flamme auch nur noch für die Zahl gemacht. Keiner von beiden wollte sie wirklich.' },
           ['e', 'Jetzt dein Plan. Ein Wenn-dann für deinen schwierigsten Moment am Handy.'],
           { wahl: [
             { t: 'Wenn ich ins Bett gehe, dann liegt das Handy auf dem Schreibtisch.', log: 'Wenn-dann-Plan: Handy abends auf den Schreibtisch' },
@@ -99,7 +98,7 @@ export default {
           { wahl: [
             { t: 'Antworten. Und weiterschreiben, bis sie zufrieden ist.', log: 'Bis spät in die Nacht geantwortet', folge: 'Um 1:05 schreibt sie noch. Du auch.', skill: false, setze: { nacht: true } },
             { t: 'Gar nicht antworten. Handy umdrehen.', log: 'Nicht geantwortet, ohne etwas zu sagen', folge: 'Am Morgen: 14 Nachrichten.', skill: null },
-            { t: '„Bin müde. Ab 22 Uhr bin ich offline. Morgen in der Pause gern. 💛“', log: 'Freundlich eine Grenze gesetzt und ein Angebot gemacht', folge: 'Amira: „ok“', skill: true },
+            { t: '„Bin müde, ich geh jetzt offline. Ab morgen bin ich ab 22 Uhr weg. In der Pause gern. 💛“', log: 'Freundlich eine Grenze gesetzt und ein Angebot gemacht', folge: 'Amira: „ok“', skill: true },
           ] },
           ['h:Amira', 'Wenn du mich wirklich magst, antwortest du sofort.'],
           { wahl: [
@@ -126,7 +125,7 @@ export default {
           { wahl: [
             { t: '„Wenn ich nicht antworte, heißt das: Ich schlafe. Nicht: Ich bin sauer. Abgemacht?“', log: 'Mit Amira abgemacht, was keine Antwort bedeutet', folge: 'Amira atmet aus. „Abgemacht.“', skill: true, setze: { abgemacht: true } },
             { t: '„Ab jetzt antworte ich immer sofort. Versprochen.“', log: 'Versprochen, immer sofort zu antworten', folge: 'Amira lächelt. Aber du weißt: Das hältst du nicht durch.', skill: false },
-            { t: '„Du bist echt anstrengend.“', log: 'Amira abgewertet', folge: 'Amira steht auf. „Siehst du. Sauer.“', skill: false },
+            { t: '„Ach, ist doch nicht so schlimm.“', log: 'Amiras Sorge kleingeredet', folge: 'Amira nickt. Aber sie fühlt sich nicht verstanden.', skill: false },
           ] },
           { wenn: (f) => f.abgemacht, dann: [
             ['amira', 'Das mit dem „Alle sind sauer“-Gefühl hab ich echt oft.'],
@@ -150,7 +149,15 @@ export default {
               sonst: [['e', 'Ein Screenshot von Amira. Sie hat nachts in die Gruppe geschrieben: „Keiner mag mich.“ Jemand hat ihn rumgeschickt. Mit Lachsmiley.'], { wahl: [
                 { t: 'Nicht weiterleiten. Sara sagen: „Lösch das bitte.“', log: 'Einen fremden Screenshot gestoppt', folge: 'Sara: „Ja … ist eigentlich mies.“ Sie löscht ihn.', skill: true },
                 { t: 'Weiterleiten.', log: 'Einen fremden Screenshot weitergeleitet', folge: 'Jetzt hat ihn eine Gruppe mehr.', skill: false },
-              ] }] },
+              ] },
+              ['e', '„Keiner mag mich“ – wer so etwas nachts schreibt, dem geht es vielleicht richtig schlecht.'],
+              { wahl: [
+                { t: 'Amira privat schreiben: „Ich mag dich. Wie geht’s dir?“ – und Herrn Kuedes Bescheid sagen.', log: 'Amiras Satz ernst genommen: ihr geschrieben und einen Erwachsenen eingeschaltet', folge: 'Amira antwortet erst am Abend: „Danke. Herr Kuedes hat mit mir geredet.“', skill: true },
+                { t: 'Amira privat schreiben: „Ich mag dich. Wie geht’s dir?“', log: 'Amira privat geschrieben', folge: 'Amira: „Geht so.“ Mehr schreibt sie nicht.', skill: null },
+                { t: 'Nichts tun. Ist bestimmt nur Drama.', log: 'Amiras Satz als Drama abgetan', folge: 'Amira ist am nächsten Tag nicht in der Schule.', skill: false },
+              ], frage: 'Was machst du mit dem, was Amira geschrieben hat?' },
+              ['e', 'Wenn jemand schreibt, dass er nicht mehr kann: Erwachsene einschalten. Und es gibt das Kinder- und Jugendtelefon: 116 111.'],
+            ] },
           ] },
           ['e', 'Wenn im Netz etwas schiefgeht, gibt es vier Schritte. Welcher kommt zuerst?'],
           { wahl: [
@@ -168,8 +175,9 @@ export default {
           { wenn: (f) => f.gelaestert || f.weiter, dann: [
             ['jade', 'Ich hab’s gesehen.'],
             { wahl: [
-              { t: '„Ja, das war von mir. Es war unfair. Es tut mir leid. Sag mir lieber direkt, wenn ich nerve – und ich dir.“', log: 'Bei Jade ehrlich entschuldigt, ohne Ausrede', folge: 'Jade schweigt lange. Dann: „Okay. Danke, dass du’s nicht abstreitest.“', skill: true },
-              { t: '„Das war aus dem Zusammenhang gerissen.“', log: 'Sich bei Jade herausgeredet', folge: 'Jade: „Es stand da aber so.“', skill: false },
+              { wenn: (f) => f.gelaestert, t: '„Ja, das war von mir. Es war unfair. Es tut mir leid. Sag mir lieber direkt, wenn ich nerve – und ich dir.“', log: 'Bei Jade ehrlich entschuldigt, ohne Ausrede', folge: 'Jade schweigt lange. Dann: „Okay. Danke, dass du’s nicht abstreitest.“', skill: true },
+              { wenn: (f) => f.weiter, t: '„Ich hab deine Sprachnachricht an Amira geschickt. Das war nicht okay. Es tut mir leid.“', log: 'Bei Jade für die weitergeleitete Sprachnachricht entschuldigt', folge: 'Jade: „Das war privat. … Danke, dass du’s sagst.“', skill: true },
+              { t: '„Das war nicht so gemeint.“', log: 'Sich bei Jade herausgeredet', folge: 'Jade: „Es ist aber so angekommen.“', skill: false },
             ] },
           ], sonst: [
             ['jade', 'Danke, dass du die Sprachnachricht nicht weitergegeben hast. Amira hat mir erzählt, dass sie gefragt hat.'],
@@ -215,12 +223,13 @@ export default {
         ziel: 'Spur 2: Das Foto. Zum Lesesaal – an einen großen Bildschirm.', ort: 'Lesesaal', p: [14.0, -59.0], leute: { chloe: [15.4, -58.4] },
         zeilen: [
           ['chloe', 'Lass mal groß machen. Ich hab in Informatik was über KI-Bilder gelernt.'],
-          ['e', 'Vergrößert: Die Gabel hat fünf Zinken, die ineinanderlaufen. Auf dem Tablett steht ein Logo – aber die Buchstaben sind Kauderwelsch. Und die Teller in der Annexe sind blau, nicht weiß.'],
+          ['e', 'Vergrößert: Die Spitzen der Gabel laufen ineinander. Auf dem Tablett steht ein Logo – aber die Buchstaben ergeben keinen Sinn. Und die Teller in der Annexe sind blau, nicht weiß.'],
           { wahl: [
             { t: 'Wahrscheinlich KI-gemacht. Zu viele Fehler, und es passt nicht zu unserer Kantine.', log: 'Das Foto als wahrscheinlich KI-gemacht eingeschätzt – mit Gründen', skill: true },
             { t: 'Ein Foto lügt nicht.', log: 'Dem Foto geglaubt', folge: 'Chloé: „Früher vielleicht.“', skill: false },
           ] },
-          ['chloe', 'Bild-Rückwärtssuche findet es nirgends. Also hat es keiner vorher fotografiert – oder keiner hat’s je gesehen.'],
+          ['chloe', 'Aber Achtung: Gute KI-Bilder haben oft gar keine Fehler mehr. Darum zählt die Quelle mehr als das Bild.'],
+          ['chloe', 'Die Bild-Rückwärtssuche findet nichts. Das beweist allein noch nichts – auch neue echte Fotos findet sie nicht.'],
         ],
       },
       {
@@ -243,7 +252,7 @@ export default {
           ['finn', '(kleinlaut) Okay. Ich sag’s euch. Das Konto war von mir. Das Bild hab ich mit einer KI-App gemacht. Ich wollte nur sehen, ob’s jemand glaubt.'],
           { wahl: [
             { t: '„Es haben 300 Leute geglaubt. Und die Köchin hat geweint. Lösch es und sag ihr sorry.“', log: 'Finn die Folgen gezeigt und eine Wiedergutmachung vorgeschlagen', folge: 'Finn wird rot. „Kommst du mit zu ihr?“', skill: true },
-            { t: '„Krass, hat ja gut geklappt.“', log: 'Den Fake gefeiert', folge: 'Finn grinst. Zoé nicht.', skill: false },
+            { t: '„Ist doch nur ein Witz. Lösch es halt.“', log: 'Den Fake kleingeredet', folge: 'Finn löscht es. Bei der Köchin entschuldigt sich keiner.', skill: false },
           ] },
           { wenn: (f) => f.geteilt, dann: [
             ['zoe', 'Du hattest es übrigens auch geteilt. Heute früh.'],

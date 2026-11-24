@@ -31,11 +31,13 @@ Aufträge 24.11.2026 (Lehrperson, nach Test mit den Schülern):
 - [x] Spiel: Missions-Engine (Daten, Ablauf an Orten, Entscheidungen, Folgen, Resümee, Lehrer-Ansicht, Teilen, Code eingeben) – Thermometer/Tank, Erinnerungen an frühere Missionen, privater „Brief an mich“
 - [ ] QR-Code direkt in der App scannen (bisher: Code eintippen)
 - [x] Spiel: 33 Missionen geschrieben (eine je Stunde), Test tests/lycee-missionen.mjs
-- [ ] Video-Prüfung (Gemini): Teil 1 eingearbeitet (#00–#02 S2); Teil 2–6 offen; Ersatz für #00 S2, #01 S1, #01 S3
-- [ ] Spiel: Skills-Raum dunkel und spannend (stil.css .ly-ebene[data-art="skills"])
-- [ ] Spiel: schnelle Punkte – Handy langsamer (ui.js:694, tempo), Vorlesen standardmäßig an (ui.js:145), Ben beim Wurf zeigen (korb3d.js:148), Autos neu (verkehr.js, requisiten.js)
-- [ ] Spiel als Web-App (PWA, Service Worker, Home-Bildschirm, Updates) + Spielstand-Code (gibt es: AJ1., ui.js:199)
-- [ ] Unterricht neu (wechselnde Lehrpersonen, Modul je Fach, spielerisch, zwischenmenschlich) + Modul-Anzeige beim Start
+- [x] Zwei unabhängige Prüfungen aller 33 Missionen (Sicherheit, Fakten, Logik, Rollenverteilung, Lesbarkeit) – Hinweise eingearbeitet (24.11.)
+- [ ] Video-Prüfung (Gemini): Teil 1 eingearbeitet (#00–#02 S2); Teil 2–6 offen; Ersatz für #00 S2, #01 S1, #01 S3 · Clip-Fragen auf Beantwortbarkeit geprüft (24.11.: #01 Schlaf, #05, #06 angepasst)
+- [x] REAL TALK #01 auf Französisch (bau.tsx m1-fr, Real-Talk-01-Ich-FR.pdf); Tank-Karten zweisprachig
+- [x] Spiel: Skills-Raum dunkel und spannend (stil.css, Kontrast-Modus bleibt hell)
+- [x] Spiel: schnelle Punkte – Handy langsamer, Vorlesen ab Start an, Ben beim H-O-R-S-E sichtbar, eigene Autos (autos.js: Profil, Scheiben, Felgen, Radkästen, Lichter) (verkehr.js, requisiten.js)
+- [x] Spiel als Web-App (PWA): Manifest, Service Worker (offline, „Neue Version“-Hinweis), Symbol, Speicher-Schutz – wirkt nur über http(s); Veröffentlichung (z. B. GitHub Pages) braucht das OK der Lehrperson · Spielstand-Code gibt es (AJ1., ui.js)
+- [x] Unterricht neu: erste Stunde = Klassenregeln (statt Zettel-Raten, mit Folgen), Fachstunden Deutsch (Mme Nouvelle, K1), Mathe (Mme Lenning, K2), Français (Mme Sabli, K3) im eigenen Modul + Partner-Moment; Modul-Wahl beim Start (story/fachstunden.js, spiel.js fachStunde)
 - [ ] Story tiefer (annexe.cam, Mission aus dem Unterricht heraus)
 - [ ] Nebenquests Modullernen mit Belohnungen
 - [ ] Alle Gebäude betretbar + Interaktionen

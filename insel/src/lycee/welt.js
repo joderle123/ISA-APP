@@ -686,7 +686,7 @@ export function baueWelt({ material, materialInnen, materialLaub }) {
     box(-3.4, -3.3, 0, 1.3, -7.6, -7.5, C.metallDunkel, { art: 'innen', stoss: true }); box(-3.75, -2.95, 1.0, 1.55, -7.62, -7.56, new THREE.Color('#ffffff'), { art: 'innen' });
     const zn = schild('ANNEXE NEWS\nUmfrage der Woche!', 0.78, 0.52, { bg: '#ffffff', fg: '#e85d75', rand: '#e85d75', schrift: 'bold 58px system-ui' }); zn.position.set(-3.35, 1.28, -7.54); schilder.push(zn);
     // Paulos Lieferung am Kücheneingang (Hinterhof)
-    plaetze.push({ m: 'auto/van', x: 32.1, z: -21.5, rot: 0, h: 2.1, fest: true, farbe: '#a8d0b8' });   // Paulos Lieferwagen
+    plaetze.push({ m: 'auto2/bus-gruen', x: 32.1, z: -21.5, rot: 0, fest: true });   // Paulos Lieferwagen (eigenes Modell, autos.js)
     plaetze.push({ m: 'kk/crate_carrots', x: 30.9, z: -12.9, rot: 0.2, h: 0.42, fest: true }, { m: 'kk/crate_tomatoes', x: 30.9, z: -10.0, rot: -0.1, h: 0.42, fest: true }, { m: 'kk/crate_potatoes', x: 30.95, z: -10.05, rot: 0.3, h: 0.4, y: 0.42 });
   }
   // ---- Snackautomat in der Halle (frisst Münzen) ----
@@ -703,10 +703,10 @@ export function baueWelt({ material, materialInnen, materialLaub }) {
   { const g = graffiti(['NO FUTURE?', 'L.', 'chill'], 8, 2.2, 7); g.position.set(58.22, 1.5, -18.5); g.rotation.y = Math.PI / 2; schilder.push(g); }
   { const v = schild('Rauchen und Vapen auf dem Schulgelände verboten', 2.8, 0.42, { bg: '#ffffff', fg: '#c0392b', rand: '#c0392b', schrift: 'bold 66px system-ui' }); v.position.set(58.22, 2.6, -12.4); v.rotation.y = Math.PI / 2; schilder.push(v); }
   P('verkehr/Bus', -12, 46, Math.PI / 2, { h: 3.2, fest: true, id: 'bus' });
-  for (const [x, m] of [[24, 'auto/sedan'], [32, 'auto/hatchback-sports'], [52, 'auto/suv'], [-50, 'auto/van']]) P(m, x, 54.2, -Math.PI / 2, { h: 1.6, fest: true });
+  for (const [x, m] of [[24, 'auto2/limo-weiss'], [32, 'auto2/kompakt-rot'], [52, 'auto2/suv-grau'], [-50, 'auto2/bus-weiss']]) P(m, x, 54.2, -Math.PI / 2, { fest: true });
   // mehr Leben an der Straße (KayKit City Bits): Autos am Parkstreifen in verschiedenen Farben, Richtung gemischt
-  for (const [x, m, f, d] of [[-38, 'kk/car_hatchback', null, 1], [-30, 'kk/car_stationwagon', '#d8e2ea', -1], [12, 'kk/car_sedan', null, 1], [40, 'kk/car_hatchback', '#e6c8a0', -1], [64, 'kk/car_sedan', '#a8c8e8', 1], [-64, 'kk/car_stationwagon', null, 1]])
-    P(m, x, 54.2, d * Math.PI / 2, { s: 4.1, fest: true, ...(f ? { farbe: f } : {}) });
+  for (const [x, m, d] of [[-38, 'auto2/kompakt-blau', 1], [-30, 'auto2/limo-silber', -1], [12, 'auto2/limo-schwarz', 1], [40, 'auto2/kompakt-silber', -1], [64, 'auto2/limo-rot', 1], [-64, 'auto2/suv-sand', 1]])
+    P(m, x, 54.2, d * Math.PI / 2, { fest: true });
   // Hinterhof der Kantine (zwischen Haus und Turnhalle): Container an der Küchentür, Kisten, Mülltonnen
   P('kk/dumpster', 32.6, -8.6, -Math.PI / 2, { s: 2.0, fest: true }); P('kk/dumpster', 32.6, -15.0, -Math.PI / 2, { s: 2.0, fest: true, farbe: '#9fc2a0' });
   P('kk/box_A', 31.0, -14.0, 0.3, { s: 0.6, fest: true }); P('kk/box_A', 31.1, -14.0, 1.1, { s: 0.5, y: 0.6 }); P('kk/trash_A', 31.0, -9.6, 0, { s: 0.6, fest: true });

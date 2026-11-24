@@ -106,7 +106,7 @@ export default {
             { t: 'Weiß ich nicht.', log: 'Herkunft des alten Satzes: unbekannt', privat: true },
             { t: 'Möchte ich nicht sagen.', log: 'Herkunft für sich behalten', privat: true },
           ], frage: 'Woher kommt dein alter Satz? (Nur für dich.)' },
-          ['malik', 'Egal woher. Gelernt ist gelernt. Und was man gelernt hat, kann man umlernen.'],
+          ['malik', 'Egal woher. Der ist halt hängen geblieben. Kriegt man aber auch wieder weg.'],
         ],
       },
       {
@@ -116,7 +116,7 @@ export default {
           ['e', '(Der alte Satz, laut:) „Siehst du. Wusste ich’s doch.“'],
           { wahl: [
             { t: 'Nachmessen, Fehler finden, ein neues Brett zuschneiden.', log: 'Gegen-Beweis 1: Den Fehler gefunden und behoben', folge: 'Das neue Brett passt. Gegen-Beweis Nummer eins.', skill: true, setze: { beweis1: true } },
-            { t: 'Das Brett in die Ecke werfen.', log: 'Nach dem Fehler aufgegeben', folge: 'Der alte Satz hat einen Beweis mehr bekommen.', skill: false },
+            { t: 'Das Brett in die Ecke werfen.', log: 'Nach dem Fehler aufgegeben', folge: 'Der alte Satz hat einen Beweis mehr bekommen.', skill: false, setze: { hingeworfen: true } },
             { t: 'Schief zusammenschrauben. Merkt eh keiner.', log: 'Den Fehler versteckt', folge: 'Das Regal wackelt.', skill: false, setze: { wackelt: true } },
           ] },
           { wenn: (f) => f.beweis1, dann: [{ moment: 'Gegen-Beweis 1: Ein Fehler ist passiert – und du hast ihn repariert.' }] },
@@ -141,12 +141,13 @@ export default {
           { wenn: (f) => f.wackelt, dann: [['lenz', 'Hm. Es wackelt. Was ist passiert?'], { wahl: [
             { t: '„Ich hab falsch gemessen und es versteckt. Ich mach’s neu.“', log: 'Den versteckten Fehler zugegeben', folge: 'Herr Lenz: „Das ist mehr wert als ein gerades Regal.“', skill: true, setze: { beweis1: true } },
             { t: '„Das Holz ist schlecht.“', log: 'Die Schuld aufs Holz geschoben', folge: 'Herr Lenz schaut das Holz an. Das Holz ist gut.', skill: false },
-          ] }], sonst: [['lenz', 'Gerade. Stabil. Wer hat das gebaut?']] },
+          ] }], sonst: [{ wenn: (f) => f.hingeworfen && !f.beweis1, dann: [['lenz', 'Das Regal steht. Malik hat das letzte Brett zugeschnitten. Willst du das nächste Mal selbst?']], sonst: [['lenz', 'Gerade. Stabil. Wer hat das gebaut?']] }] },
           ['jade', '(legt Decken rein) Passt alles. Endlich liegt das Zeug nicht mehr auf dem Boden.'],
           { moment: 'Gegen-Beweis 3: Das Regal wird benutzt. Jeden Kino-Abend.' },
           ['malik', 'Und? Was sagt dein alter Satz jetzt?'],
           { wahl: [
-            { t: '„Er ist leiser. Ich hab drei Beweise dagegen.“', log: 'Den alten Satz mit Gegen-Beweisen geprüft', skill: true },
+            { wenn: (f) => f.beweis1 && f.beweis2, t: '„Er ist leiser. Ich hab drei Beweise dagegen.“', log: 'Den alten Satz mit Gegen-Beweisen geprüft', skill: true },
+            { wenn: (f) => !(f.beweis1 && f.beweis2), t: '„Ein bisschen leiser. Ein, zwei Beweise hab ich schon.“', log: 'Den alten Satz mit ersten Gegen-Beweisen geprüft', skill: true },
             { t: '„Er sagt: Glück gehabt.“', log: 'Die Beweise als Glück abgetan', folge: 'Malik: „Glück? Du hast gemessen, gefragt, gebaut.“', skill: false },
           ] },
           { notiz: 'Dein neuer Satz – wahr, mit etwas, das du tust:', platz: 'zum Beispiel: Ich mache Fehler und repariere sie.' },
@@ -169,7 +170,7 @@ export default {
         zeilen: [
           ['lio', '22 von 60. Da steht’s schwarz auf weiß.'],
           { wahl: [
-            { t: 'Beweis dafür: Man kann es zählen.', log: 'Die 22 Punkte als echten Beweis eingeordnet – aber nur für Mathe', skill: true },
+            { t: 'Ein echter Beweis – aber nur dafür, dass Mathe gerade schwer ist.', log: 'Die 22 Punkte als echten Beweis eingeordnet – aber nur für Mathe', skill: true },
             { t: 'Beweis, dass Lio überhaupt dumm ist.', log: 'Die 22 Punkte als Beweis für „dumm in allem“ genommen', folge: 'Zu groß: Eine Mathearbeit sagt etwas über Mathe. Nicht über alles.', skill: false },
             { t: 'Kein Beweis.', log: 'Die 22 Punkte gar nicht gezählt', folge: 'Doch, sie zählen – für Mathe. Ehrlich bleiben.', skill: false },
           ], frage: 'Was ist die Mathearbeit vor Gericht?' },
@@ -214,6 +215,10 @@ export default {
             { t: '„Darum klingt es so wahr. Weil du es so oft gehört hast.“', log: 'Erklärt: oft gehört ist nicht wahr', folge: 'Lio ist still. Dann: „Krass. Stimmt.“', skill: true },
             { t: '„Dann wird schon was dran sein.“', log: 'Dem Spruch recht gegeben', folge: 'Lio steckt das Handy weg. Ganz klein.', skill: false },
           ] },
+          { wahl: [
+            { t: '„Willst du mal mit Herrn Lenz darüber reden? Ich komm mit.“', log: 'Lio einen Erwachsenen angeboten', folge: 'Lio: „Vielleicht. Wenn du mitkommst.“', skill: true },
+            { t: 'Das Thema wechseln.', log: 'Das Thema gewechselt', skill: null },
+          ], frage: 'Sowas jahrelang zu hören, tut weh. Und jetzt?' },
         ],
       },
       {
@@ -221,7 +226,7 @@ export default {
         zeilen: [
           ['lio', 'Und? Wie lautet das Urteil?'],
           { wahl: [
-            { t: '„Zu grob. So stimmt der Satz nicht.“', log: 'Urteil: Der Satz „Ich bin dumm“ ist zu grob', skill: true },
+            { t: '„Zu groß. Mathe ist gerade schwer – aber dumm bist du nicht.“', log: 'Urteil: Der Satz „Ich bin dumm“ ist zu groß', skill: true },
             { t: '„Stimmt leider.“', log: 'Urteil: Der Satz stimmt', folge: 'Die Beweise sagen etwas anderes.', skill: false },
             { t: '„Stimmt nicht. Du bist ein Genie.“', log: 'Urteil: Lio ist ein Genie', folge: 'Lio: „Na ja. Das glaub ich auch nicht.“ Zu groß in die andere Richtung.', skill: false },
           ] },
@@ -232,7 +237,7 @@ export default {
             { t: '„Irgendwann wird’s schon.“', log: 'Einen passiven Satz gebaut', folge: 'Lio: „Und was mach ich bis irgendwann?“', skill: false },
           ] },
           ['lio', 'Darf ich dich mal was fragen? Hast du auch einen Satz, der vor Gericht müsste?'],
-          { notiz: 'Ein Gedanke über dich, den du gern mal prüfen würdest:', platz: 'zum Beispiel: Ich bin nicht gut im …' },
+          { notiz: 'Ein Gedanke über dich, den du gern mal prüfen würdest:', platz: 'zum Beispiel: Ich bin nicht gut im …', privat: true },
         ],
       },
     ],
@@ -251,12 +256,13 @@ export default {
         zeilen: [
           ['mia', 'Ich hab einen neuen Satz. „Meine Idee zählt genauso.“ Hast du auch einen?'],
           { wahl: [
-            { t: '„Ich darf fragen.“', log: 'Satz des Tages: „Ich darf fragen.“', setze: { satz: 'fragen' } },
-            { t: '„Fehler sind Übung.“', log: 'Satz des Tages: „Fehler sind Übung.“', setze: { satz: 'fehler' } },
-            { t: '„Ich darf Nein sagen.“', log: 'Satz des Tages: „Ich darf Nein sagen.“', setze: { satz: 'nein' } },
-            { t: '„Meine Idee zählt auch.“', log: 'Satz des Tages: „Meine Idee zählt auch.“', setze: { satz: 'idee' } },
+            { t: '„Ich darf fragen.“', log: 'Satz des Tages: „Ich darf fragen.“', setze: { satz: 'fragen', satzText: 'Ich darf fragen.' } },
+            { t: '„Fehler sind Übung.“', log: 'Satz des Tages: „Fehler sind Übung.“', setze: { satz: 'fehler', satzText: 'Fehler sind Übung.' } },
+            { t: '„Ich darf Nein sagen.“', log: 'Satz des Tages: „Ich darf Nein sagen.“', setze: { satz: 'nein', satzText: 'Ich darf Nein sagen.' } },
+            { t: '„Meine Idee zählt auch.“', log: 'Satz des Tages: „Meine Idee zählt auch.“', setze: { satz: 'idee', satzText: 'Meine Idee zählt auch.' } },
           ], frage: 'Dein neuer Satz:' },
           ['mia', 'Gut. Jetzt der Trick: Denken reicht nicht. Du musst ihn erleben. Ein Beweis pro Situation.'],
+          ['e', 'Dein Satz: „{f:satzText}“'],
           ['e', 'Der Bus kommt nicht. Auf der Tafel steht nichts.'],
           { wahl: [
             { t: 'Den Busfahrer gegenüber fragen: „Fährt die 12 heute?“', log: 'Situation 1: einen Fremden gefragt', folge: '„Umleitung, zehn Minuten.“ Ein kleiner Beweis.', skill: true },
@@ -269,7 +275,7 @@ export default {
         zeilen: [
           ['rosa', 'Zwei Euro zurück. Schönen Tag!'],
           ['e', 'Es hätten drei sein müssen. Hinter dir warten fünf Leute.'],
-          ['e', '(Der alte Satz:) „Lass. Ist doch peinlich.“'],
+          ['e', '(Der alte Satz:) „Lass. Ist doch peinlich.“ – (Dein neuer Satz:) „{f:satzText}“'],
           { wahl: [
             { t: '„Entschuldigung, ich bekomme noch einen Euro.“', log: 'Situation 2: freundlich und klar etwas gesagt', folge: 'Rosa: „Oh! Danke, gut aufgepasst.“ Niemand hinter dir hat gelacht.', skill: true },
             { t: 'Nichts sagen und gehen.', log: 'Situation 2: nichts gesagt', folge: 'Ein Euro weg. Und der alte Satz hat recht behalten – scheinbar.', skill: false },
@@ -279,6 +285,7 @@ export default {
       {
         ziel: 'Zum Jugendhaus. Planung fürs Turnier.', ort: 'Jugendhaus', p: [25.6, 118.6], leute: { malik: [23.9, 119.4, null, 'redet'], lenz: [27.2, 119.0, null, 'redet'] },
         zeilen: [
+          ['e', 'Dein Satz: „{f:satzText}“'],
           ['lenz', 'Ideen fürs Turnier? Malik hat schon zehn.'],
           { wahl: [
             { t: 'Die eigene Idee sagen: „Eine Runde für Leute, die noch nie gespielt haben.“', log: 'Situation 3: die eigene Idee gesagt', folge: 'Malik: „Nee, dauert zu lange.“ Die Idee kommt nicht durch.', skill: true, setze: { abgelehnt: true } },
@@ -303,6 +310,11 @@ export default {
             { t: '„Nee. Den ess ich selbst.“ (lächeln)', log: 'Situation 4: freundlich Nein gesagt', folge: 'Finn: „Okay, okay.“ Kein Drama.', skill: true },
             { t: '„Na gut …“', log: 'Situation 4: Ja gesagt, Nein gemeint', folge: 'Finn freut sich. Du guckst ihm beim Essen zu.', skill: false },
           ] },
+          ['e', 'Beim Abräumen rutscht dir das Glas vom Tablett. Es zerspringt. Alle schauen.'],
+          { wahl: [
+            { t: '„Ups. Passiert.“ – und einen Besen holen.', log: 'Situation 5: Einen Fehler ruhig wiedergutgemacht', folge: 'Nach zehn Sekunden schaut keiner mehr. Die Frau an der Ausgabe nickt dir zu.', skill: true },
+            { t: 'Rot werden und schnell rausgehen.', log: 'Situation 5: Vor dem Fehler weggelaufen', folge: 'Draußen pocht dein Herz. Drinnen hat es längst keiner mehr im Kopf.', skill: false },
+          ], frage: 'Und jetzt?' },
           ['mia', '(setzt sich dazu) Und? Wie viele Beweise?'],
           { skala: 'Wie sehr glaubst du deinem neuen Satz jetzt?', links: 'gar nicht', rechts: 'total' },
           { notiz: 'Dein Wenn-dann für morgen:', platz: 'Wenn …, dann sage ich mir … und mache …' },

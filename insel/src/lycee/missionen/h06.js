@@ -37,15 +37,15 @@ export default {
           { thermo: 'wut', text: 'Deine Wut' },
           ['lio', 'Ich hab’s gesehen. War Foul. Ich hab nur nichts gesagt, weil ich keinen Stress wollte.'],
           { wahl: [
-            { t: '„Dann warst du gerade das Chamäleon. Nächstes Mal sag’s – mir hilft das.“', log: 'Lio gesagt, dass ein Wort von ihm geholfen hätte', folge: 'Lio nickt: „Fair.“', skill: true },
-            { t: '„Danke für nix.“', log: 'Lio angeblafft', folge: 'Lio geht zurück aufs Feld.', skill: false },
+            { t: '„Schade. Nächstes Mal sag’s bitte – das hätte mir echt geholfen.“', log: 'Lio gesagt, dass ein Wort von ihm geholfen hätte', folge: 'Lio nickt: „Fair.“', skill: true },
+            { t: '„Passt schon. Ist egal.“', log: 'So getan, als wäre es egal', folge: 'Lio nickt erleichtert. Der Ärger bleibt bei dir.', skill: false },
           ] },
         ],
       },
       {
         ziel: 'Zurück zum Sportplatz. Frau Brandt ist da – und Finn.', ort: 'Sportplatz', p: [-64.4, -3.6], leute: { finn: [-62.8, -2.6], brandt: [-65.8, -2.0, null, 'redet'], lio: [-66.4, -4.8] },
         zeilen: [
-          ['brandt', 'Ich hab gehört, es hat geknallt. Ich löse das nicht für euch. Ich halte nur die Treppe. Stufe 2: Jeder sagt einen Ich-Satz.'],
+          ['brandt', 'Ich hab gehört, es hat geknallt. Ich löse das nicht für euch. Ich helfe nur, dass ihr Stufe für Stufe geht. Stufe 2: Jeder sagt einen Ich-Satz.'],
           { wahl: [
             { t: '„Ich bin sauer, weil mein Knie blutet und du ‚Ball‘ gesagt hast. Ich will, dass du sagst, was war.“', log: 'Stufe 2: Ich-Satz gesagt', skill: true },
             { t: '„Finn foult immer. Der ist so.“', log: 'Stufe 2 übersprungen: über Finn statt über sich geredet', folge: 'Finn verschränkt die Arme.', skill: false },
@@ -60,7 +60,7 @@ export default {
           ['brandt', 'Stufe 4: Lösungen sammeln. Alles darf auf den Tisch. Welche bringst du ein?'],
           { wahl: [
             { t: 'Neue Regel für alle: Grätschen von hinten und Festhalten = Freistoß, egal wer.', log: 'Stufe 4: eine Regel für beide vorgeschlagen (Eule)', folge: 'Lio: „Passt.“ Finn: „Passt.“', skill: true },
-            { t: 'Finn muss eine Runde aussetzen.', log: 'Stufe 4: eine Strafe nur für Finn vorgeschlagen (Hai)', folge: 'Finn: „Und du dann auch, fürs Festhalten.“', skill: false },
+            { t: 'Finn muss eine Runde aussetzen.', log: 'Stufe 4: eine Strafe nur für Finn vorgeschlagen', folge: 'Finn: „Und du dann auch, fürs Festhalten.“ Eine Strafe allein löst den Streit nicht.', skill: null },
             { t: 'Heute schieße ich den Elfer, nächstes Mal er.', log: 'Stufe 4: einen Tausch vorgeschlagen (Fuchs)', folge: 'Geht. Aber das Grätschen bleibt ungeklärt.', skill: null },
           ] },
           ['brandt', 'Stufe 5: einigen. Wer schreibt’s an die Tafel am Platz?'],
@@ -116,11 +116,11 @@ export default {
             { t: 'Einfach gehen.', log: 'Nein-Art gewählt: einfach gehen', setze: { nein: 'gehen' } },
             { t: '„Okay, gib her.“', log: 'Ja gesagt und das Video weitergeleitet', folge: 'Nach zehn Minuten hat es die ganze Stufe.', skill: false, setze: { nein: 'ja' } },
           ], frage: 'Wie sagst du Nein? (Nein-Baukasten)' },
-          { wenn: (f) => f.nein === 'gehen', dann: [['e', 'Du gehst. Hinter dir: „Was hat der denn?“ Nach zehn Schritten ist es egal.']] },
+          { wenn: (f) => f.nein === 'gehen', dann: [['e', 'Du gehst. Hinter dir: „Hä, was ist los?“ Nach zehn Schritten ist es egal.']] },
           { wenn: (f) => f.nein !== 'ja' && f.nein !== 'gehen', dann: [
             ['sara', 'Hast du Schiss oder was?'],
             { wahl: [
-              { t: '„Nee. Mach ich nicht.“ – derselbe Satz, ruhig.', log: 'Beim Drängeln den Satz ruhig wiederholt', folge: 'Sara verdreht die Augen. Aber sie fragt nicht noch mal.', skill: true },
+              { t: '„Nee. Mach ich nicht.“ – ruhig bleiben.', log: 'Beim Drängeln ruhig beim Nein geblieben', folge: 'Sara verdreht die Augen. Aber sie fragt nicht noch mal.', skill: true },
               { t: '„Ich hab keinen Schiss! Ich find’s nur …“ – und dann lange erklären.', log: 'Beim Drängeln in eine lange Erklärung gerutscht', folge: 'Malik findet auf jeden Satz ein Gegenargument. Es wird zäh.', skill: false },
               { t: '„Na gut, dann halt.“', log: 'Beim zweiten Drängeln eingeknickt', folge: 'Das Video geht raus. Mit deinem Namen dran.', skill: false, setze: { nein: 'ja' } },
             ] },
@@ -140,7 +140,8 @@ export default {
           ['noor', 'Kann man das wegmachen?'],
           { wahl: [
             { t: 'Mit Noor zu Herrn Kuedes in die SePAS gehen.', log: 'Mit Noor Hilfe bei einem Erwachsenen geholt', folge: 'Herr Kuedes kümmert sich darum, dass es gelöscht wird.', skill: true },
-            { t: 'Das Video in der App melden.', log: 'Das Video gemeldet', folge: 'Am Abend ist es aus der Gruppe verschwunden.', skill: true },
+            { t: 'Das Video in der App melden.', log: 'Das Video gemeldet', folge: 'Melden ist richtig – aber es dauert. Schneller hilft ein Erwachsener. Oder BEE SECURE: 8002 1234.', skill: true },
+            { wenn: (f) => f.nein === 'ja', t: 'Meine Weiterleitung löschen und in die Gruppe schreiben: „Bitte löscht das.“', log: 'Die eigene Weiterleitung gelöscht und die Gruppe gebeten, es zu löschen', folge: 'Zwei schreiben: „Gelöscht.“ Nicht alle. Aber es ist ein Anfang.', skill: true },
             { t: '„Da kann man nichts machen.“', log: 'Nichts unternommen', folge: 'Noor nickt langsam.', skill: false },
           ] },
         ],
@@ -149,8 +150,9 @@ export default {
         ziel: 'Am nächsten Tag: Innenhof.', ort: 'Innenhof', p: [-24.0, -40.0], leute: { chloe: [-22.6, -39.2], malik: [-25.4, -41.0] },
         zeilen: [
           ['malik', '(leise) Ich hab das Video gelöscht. Gefilmt hab ich’s nicht mal. Ich wollte nur, dass alle lachen.'],
+          { setze: { malikGeloescht: true } },
           { wahl: [
-            { t: '„Dass du’s löschst, ist stark. Sag’s Noor selbst.“', log: 'Malik ermutigt, sich bei Noor zu entschuldigen', folge: 'Malik: „Kommst du mit?“', skill: true },
+            { t: '„Dass du’s löschst, ist stark. Sag’s Noor selbst.“', log: 'Malik ermutigt, sich bei Noor zu entschuldigen', folge: 'Malik: „Kommst du mit?“ Ihr geht zusammen zu Noor.', skill: true, setze: { malikNoor: true } },
             { t: '„Zu spät.“', log: 'Malik abgewiesen', folge: 'Malik zuckt mit den Schultern.', skill: null },
           ] },
           { skala: 'Wie schwer war es heute, anders zu sein als die Gruppe?', links: 'leicht', rechts: 'sehr schwer' },
@@ -158,7 +160,8 @@ export default {
         ],
       },
     ],
-    ende: [['noor', '(Am Freitag, in der Pause) Ich spiele in der Aula. Für alle. Kommst du? … Die Leuchtjacke ist für dich. Damit man dich sieht – so wie du mich gesehen hast.']],
+    ende: [{ wenn: (f) => !f.gelacht && f.nein !== 'ja', dann: [['noor', '(Am Freitag, in der Pause) Ich spiele in der Aula. Für alle. Kommst du? … Die Leuchtjacke ist für dich. Damit man dich sieht – so wie du mich gesehen hast.']],
+      sonst: [['noor', '(Am Freitag, in der Pause) Ich spiel in der Aula. Ich hab’s mir überlegt.'], ['e', 'In deinem Spind liegt eine Leuchtjacke. Ein Zettel: „Für den nächsten ersten Schritt.“']] }],
     resuemee: { frage: 'Warum ist der erste Schritt so schwer – und warum braucht es oft nur eine zweite Person?', satz: 'Wenn alle mitmachen und ich nicht will, sage ich: …' },
   },
 
@@ -170,24 +173,24 @@ export default {
     ],
     schritte: [
       {
-        ziel: 'Zum Bushäuschen in der Rue du Moulin.', ort: 'Bushäuschen', p: [4.7, 85.0], leute: { jade: [3.6, 84.2, null, 'redet'], sara: [5.6, 84.0, null, 'redet'], malik: [6.6, 86.2, null, 'handy'], finn: [2.6, 86.4] },
+        ziel: 'Zum Bushäuschen in der Rue du Moulin.', ort: 'Bushäuschen', p: [4.7, 85.0], leute: { jade: [3.6, 84.2, null, 'redet'], sara: [5.6, 84.0, null, 'redet'], finn: [6.6, 86.2, null, 'handy'] },
         zeilen: [
           ['sara', 'Sag’s mir ins Gesicht! Du hast gesagt, ich bin fake!'],
           ['jade', 'Hab ich nicht! Wer erzählt so was?'],
           ['finn', 'Fight! Fight!'],
-          ['e', 'Malik filmt. Vier aus der 6ème bleiben stehen.'],
+          ['e', 'Finn filmt. Vier aus der 6ème bleiben stehen.'],
           { wahl: [
             { t: 'Spaß', log: 'Eingeschätzt als: Spaß' },
             { t: 'Streit – zwei auf Augenhöhe', log: 'Eingeschätzt als: Streit (zwei auf Augenhöhe)' },
             { t: 'Mobbing', log: 'Eingeschätzt als: Mobbing' },
           ], frage: 'Was ist das gerade?' },
           { wahl: [
-            { t: 'Handy raus und auch filmen.', log: 'Mitgefilmt', folge: 'Jetzt filmen zwei. Sara wird lauter – für die Kamera.', skill: false, setze: { gefilmt: true } },
-            { t: 'Zu Malik: „Mach aus. Mit Kamera wird’s nur schlimmer.“ Und zu Finn: „Lass. Wir gehen.“', log: 'Dem Publikum die Bühne genommen: Kamera aus, Zuschauer weg', folge: 'Malik senkt das Handy. Die 6ème zieht weiter.', skill: true },
+            { t: 'Handy raus und auch filmen.', log: 'Mitgefilmt', folge: 'Jetzt filmen zwei. Sara wird lauter – für die Kamera.', skill: false, setze: { buehneGefilmt: true } },
+            { t: 'Zu Finn: „Mach aus. Mit Kamera wird’s nur schlimmer.“ Und zu den anderen: „Show ist vorbei.“', log: 'Dem Publikum die Bühne genommen: Kamera aus, Zuschauer weg', folge: 'Finn senkt das Handy. Die 6ème zieht weiter.', skill: true },
             { t: 'Laut dazwischen: „Hört sofort auf!“', log: 'Als Held dazwischengegangen', folge: 'Jetzt schauen alle dich an. Sara: „Halt du dich raus!“', skill: false },
             { t: 'Zu Jade: „Komm, dein Bus.“ Und mit ihr ein Stück gehen.', log: 'Jade aus der Show geholt, ohne Szene', folge: 'Jade geht mit. Sara ruft noch was. Aber ohne Gegenüber ist die Show vorbei.', skill: true, setze: { jadeRaus: true } },
           ], frage: 'Wie machst du die Bühne kleiner?' },
-          { wenn: (f) => f.gefilmt, dann: [{ moment: 'Dein Video hat die Show doppelt so groß gemacht.' }] },
+          { wenn: (f) => f.buehneGefilmt, dann: [{ moment: 'Dein Video hat die Show doppelt so groß gemacht.' }] },
         ],
       },
       {
@@ -204,10 +207,10 @@ export default {
       {
         ziel: 'Zwei Tage später: am Handy.', ort: 'Am Handy', p: null, leute: {},
         zeilen: [
-          ['h:Klassen-Chat', '(Maliks Video vom Bushäuschen, neu hochgeladen von jemand anderem) „Jade, die Drama-Queen 👑🤡“'],
+          ['h:Klassen-Chat', '(Finns Video vom Bushäuschen, neu hochgeladen von jemand anderem) „Jade, die Drama-Queen 👑🤡“'],
           ['e', 'Darunter 28 Lachsmileys. Jeden Tag kommt ein neuer Sticker mit Jades Gesicht dazu. Jade schreibt nichts mehr im Chat.'],
           { wahl: [
-            { t: 'Immer noch Streit.', log: 'Zwei Tage später eingeschätzt als: Streit' },
+            { t: 'Immer noch Streit.', log: 'Zwei Tage später eingeschätzt als: Streit', skill: false },
             { t: 'Jetzt Mobbing: jeden Tag, absichtlich, viele gegen eine, sie kann sich allein nicht wehren.', log: 'Zwei Tage später erkannt: Jetzt ist es Mobbing (wiederholt, absichtlich, ungleich, wehrlos)', skill: true },
             { t: 'Nur Spaß.', log: 'Zwei Tage später eingeschätzt als: Spaß', skill: false },
           ], frage: 'Was ist es jetzt?' },
@@ -216,7 +219,7 @@ export default {
             { t: 'Einen Lachsmiley setzen. Machen eh alle.', log: 'Mit einem Lachsmiley verstärkt', folge: 'Smiley Nummer 29.', skill: false },
             { t: 'Nichts tun. Nicht dein Ding.', log: 'Weggeschaut', folge: 'Am nächsten Tag kommt ein neuer Sticker.', skill: false },
             { t: 'Jade privat schreiben: „Ich find das mies. Du bist nicht allein.“', log: 'Jade privat Rückhalt gegeben', folge: 'Jade: „Danke. Echt.“', skill: true, setze: { geschrieben: true } },
-            { t: 'Screenshots machen und Herrn Kuedes zeigen.', log: 'Beweise gesichert und einem Erwachsenen gezeigt', folge: 'Herr Kuedes spricht mit der Klasse. Die Sticker hören auf.', skill: true },
+            { t: 'Screenshots machen und Herrn Kuedes zeigen.', log: 'Beweise gesichert und einem Erwachsenen gezeigt', folge: 'Herr Kuedes spricht mit der Klasse. Die Sticker hören auf.', skill: true, setze: { erwachsen: true } },
           ] },
           { wenn: (f) => !f.geschrieben, dann: [{ wahl: [
             { t: 'Jade zusätzlich privat schreiben.', log: 'Jade außerdem privat geschrieben', folge: 'Jade: „Hätte nicht gedacht, dass das jemand merkt.“', skill: true },
@@ -227,6 +230,14 @@ export default {
       {
         ziel: 'Am Tag danach: Bushaltestelle vor der Schule.', ort: 'Bushaltestelle', p: [-19.6, 42.8], leute: { jade: [-18.2, 43.6], sara: [-21.0, 42.0] },
         zeilen: [
+          { wenn: (f) => !f.erwachsen, dann: [
+            ['e', 'Die Sticker gehen weiter. Jeden Tag ein neuer. Mobbing hört selten von allein auf.'],
+            { wahl: [
+              { t: 'Jetzt Herrn Kuedes die Screenshots zeigen.', log: 'Doch noch einen Erwachsenen eingeschaltet', folge: 'Herr Kuedes spricht mit der Klasse. Die Sticker hören auf.', skill: true },
+              { t: 'Mit Jade zusammen BEE SECURE anrufen: 8002 1234.', log: 'Mit Jade Hilfe bei BEE SECURE geholt', folge: 'Am Telefon erklärt jemand, wie man Beweise sichert und meldet.', skill: true },
+              { t: 'Warten. Hört schon auf.', log: 'Gewartet, dass es von allein aufhört', folge: 'Es hört nicht auf. Jade kommt zwei Tage nicht zur Schule.', skill: false },
+            ], frage: 'Und jetzt?' },
+          ] },
           ['sara', '(zu Jade, leise) Das mit den Stickern war ich nicht. Und das mit dem Lästern … war ein Screenshot ohne Zusammenhang. Sorry.'],
           ['jade', 'Okay.'],
           ['e', 'Kein Publikum. Zwei Sätze. Mehr braucht es manchmal nicht.'],

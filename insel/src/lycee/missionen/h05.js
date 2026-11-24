@@ -19,7 +19,7 @@ export default {
             { t: 'Sie ist sauer auf mich.', log: 'Mia gelesen: sauer auf mich' },
           ], frage: 'Was sagt Mias Körper?' },
           { wahl: [
-            { t: 'In zwei Metern hinsetzen: „Ich sitz nur hier. Du musst nichts sagen.“', log: 'Abstand gelassen und Nähe angeboten', folge: 'Nach einer Weile sagt Mia: „Danke. Ich hab einfach einen miesen Tag.“', skill: true },
+            { t: 'In zwei Metern hinsetzen: „Ich sitz nur hier. Du musst nichts sagen.“', log: 'Abstand gelassen und Nähe angeboten', folge: 'Nach einer Weile sagt Mia: „Danke. Ich hab einfach einen miesen Tag.“', skill: true, setze: { miaRuhe: true } },
             { t: 'Direkt neben sie: „Was ist los? Sag schon.“', log: 'Mia bedrängt: „Sag schon.“', folge: 'Mia steht auf und geht.', skill: false },
             { t: 'Weitergehen.', log: 'Mia in Ruhe gelassen', folge: 'Mia bleibt allein sitzen.', skill: null },
           ] },
@@ -48,7 +48,7 @@ export default {
           ['malik', 'Hey! Komm her, ich zeig dir den Trick!'],
           { wahl: [
             { t: 'Mit Malik reden – und Chloé in Ruhe lassen.', log: 'Malik als „will reden“, Chloé als „will Abstand“ gelesen und danach gehandelt', folge: 'Chloé nickt dir kurz zu. Abstand respektiert.', skill: true },
-            { t: 'Chloé die Kopfhörer runterziehen: „Komm, mach mit!“', log: 'Chloés Abstand übergangen', folge: 'Chloé: „Ey! Ich telefonier gerade!“', skill: false },
+            { t: 'Chloé antippen: „Kommst du auch?“', log: 'Chloé angetippt, obwohl sie Abstand zeigte', folge: 'Chloé zuckt zusammen: „Ey! Ich telefonier gerade!“', skill: false },
           ] },
           ['malik', '(leiser) Weißt du, was komisch ist? Alle denken, ich will immer reden. Manchmal will ich das gar nicht.'],
           { wahl: [
@@ -101,11 +101,11 @@ export default {
         ziel: 'Malik ist zum Marktplatz gegangen. Geh ihm nach.', ort: 'Marktplatz', p: [57.0, 113.2], leute: { malik: [58.6, 112.6] },
         zeilen: [
           ['malik', 'Er ist ein Betrüger. Punkt.'],
-          ['du', 'Und was ist bei dir los? Nicht bei ihm.'],
+          ['du', 'Okay, er nervt dich. Aber was ist bei dir los?'],
           ['malik', '… Ich bin sauer. Ich hatte endlich mal eine Chance zu gewinnen.'],
           ['e', 'Bau mit Malik einen Satz, den Finn hören kann. Ich bin … weil … Ich will, dass …'],
           { wahl: [
-            { t: '„Ich bin sauer, weil ich dachte, ich gewinne gleich.“', log: 'Ich-Satz Teil 1 gebaut: was los ist', skill: true },
+            { t: '„Ich bin sauer, weil ich dachte, ich gewinne gleich.“', log: 'Ich-Satz Teil 1 gebaut: was los ist', skill: true, setze: { malikTeil1: true } },
             { t: '„Du betrügst immer.“', log: 'Mit einem Du-Satz angefangen', folge: 'Ein Angriff. Finn hört da nicht mehr zu.', skill: false },
             { t: '„Ich finde, du bist unfair.“', log: 'Ein versteckter Angriff mit „Ich finde, du bist …“', folge: 'Fängt mit „Ich“ an – ist aber ein Urteil über Finn.', skill: false },
           ], frage: 'Wie fängt Malik an?' },
@@ -131,8 +131,8 @@ export default {
         ziel: 'Am nächsten Tag: Jugendhaus. Malik und Finn sind beide da.', ort: 'Jugendhaus', p: [25.6, 118.6], leute: { malik: [23.9, 119.4, null, 'redet'], finn: [24.4, 120.8], lenz: [27.2, 119.0, null, 'redet'] },
         zeilen: [
           { wenn: (f) => f.finnZu, dann: [['finn', '(kommt doch, mit Händen in den Taschen) Herr Lenz hat gesagt, ich soll kommen.']] },
-          { wenn: (f) => f.malikSatz, dann: [['malik', 'Ich war sauer, weil ich dachte, ich gewinne gleich. Ich will, dass wir die Regel vorher abmachen.']], sonst: [['malik', 'Du hast mich abgezogen.']] },
-          ['finn', 'Bei uns im Verein zählt die Schwarze anders. Ich hab nicht betrogen.'],
+          { wenn: (f) => f.malikSatz && f.malikTeil1, dann: [['malik', 'Ich war sauer, weil ich dachte, ich gewinne gleich. Ich will, dass wir die Regel vorher abmachen.']], sonst: [{ wenn: (f) => f.malikTeil1, dann: [['malik', 'Ich war sauer, weil ich dachte, ich gewinne gleich.']], sonst: [['malik', 'Du hast mich abgezogen.']] }] },
+          ['finn', 'Bei uns im Verein zählt die schwarze Kugel anders. Ich hab nicht betrogen.'],
           ['e', 'Jetzt der schwerste Teil: zuhören, ohne gleich zuzustimmen.'],
           { wahl: [
             { t: 'Zu Malik: „Sag mal mit deinen Worten, was Finn gerade gesagt hat.“', log: 'Malik zusammenfassen lassen, was Finn meint', folge: 'Malik: „In deinem Verein ist die Regel anders. … Okay. Wusste ich nicht.“', skill: true },
@@ -140,7 +140,7 @@ export default {
           ] },
           ['lenz', 'Ich hab einen Vorschlag: Regeltafel an die Wand. Wer hängt sie auf?'],
           { moment: 'Am Ende hing eine Regeltafel am Billardtisch – geschrieben von Malik und Finn zusammen.' },
-          { notiz: 'Ein Ich-Satz für einen Streit, den du gerade hast oder hattest (ohne Namen):', platz: 'Ich bin …, weil … Ich will, dass …' },
+          { notiz: 'Ein Ich-Satz für einen Streit mit Freunden oder in der Klasse (ohne Namen):', platz: 'Ich bin …, weil … Ich will, dass …' },
         ],
       },
     ],
@@ -173,13 +173,13 @@ export default {
         ],
       },
       {
-        ziel: 'Zur Lichtung.', ort: 'Lichtung', p: [-57.8, -97.4], leute: { jade: [-59.4, -96.4], sara: [-56.2, -99.0, null, 'redet'], malik: [-58.6, -99.6, null, 'redet'] },
+        ziel: 'Zur Lichtung.', ort: 'Lichtung', p: [-57.8, -97.4], leute: { jade: [-59.4, -96.4], sara: [-56.2, -99.0, null, 'redet'], malik: [-58.6, -99.6, null, 'redet'], finn: [-55.8, -97.0] },
         zeilen: [
-          ['e', 'Sara und Malik aus der 5ème. Musik aus einer Box. Sara nimmt dir dein Handy aus der Hand.'],
+          ['e', 'Ein paar aus der 5ème, dazu Sara, Malik und Finn. Musik aus einer Box. Sara nimmt dir dein Handy aus der Hand.'],
           ['sara', 'Zeig mal deine Fotos. Hast du was Peinliches?'],
           { wahl: [
             { t: 'Hand hin: „Das geb ich nicht her. Gib’s zurück.“', log: 'Digitale Grenze gezogen: Handy zurückgefordert', folge: 'Sara: „Uuh, okay, okay.“ Sie gibt es zurück.', skill: true },
-            { t: 'Lachen und es geschehen lassen.', log: 'Digitale Grenze überschritten lassen und mitgelacht', folge: 'Sara scrollt durch deine Fotos und zeigt eins herum.', skill: false, setze: { foto: true } },
+            { t: 'Lachen und es geschehen lassen.', log: 'Digitale Grenze überschreiten lassen und mitgelacht', folge: 'Sara scrollt durch deine Fotos und zeigt eins herum.', skill: false, setze: { foto: true } },
           ] },
           ['malik', '(legt dir den Arm um die Schulter) Selfie! Alle zusammen!'],
           { wahl: [
@@ -192,11 +192,12 @@ export default {
             { t: '„Das bleibt bei mir.“', log: 'Innere Grenze gezogen: Persönliches für sich behalten', folge: 'Sara: „Na gut.“ Es geht weiter.', skill: true },
             { t: 'Irgendwas erfinden, damit Ruhe ist.', log: 'Eine Geschichte erfunden', folge: 'Sara fragt nach. Die Lüge wird größer.', skill: false },
           ] },
-          ['malik', '(hält eine Vape hin) Ein Zug? Mango. Merkt keiner.'],
+          ['finn', '(hält eine Vape hin) Ein Zug? Mango. Merkt keiner.'],
           { moment: 'An der Lichtung wurde dir eine Vape angeboten.' },
           { wahl: [
-            { t: '„Nee.“ Und einfach dabeibleiben.', log: 'Nein gesagt und geblieben', folge: 'Malik: „Okay.“ Er fragt nicht noch mal.', skill: true },
-            { t: '„Nee. Jade, wir gehen.“', log: 'Nein gesagt und den abgemachten Ausstieg genutzt', folge: 'Jade steht sofort auf. Erleichtert.', skill: true, setze: { gegangen: true } },
+            { t: '„Nee.“ Und einfach dabeibleiben.', log: 'Nein gesagt und geblieben', folge: 'Finn: „Okay.“ Er fragt nicht noch mal.', skill: true },
+            { wenn: (f) => f.ausstieg, t: '„Nee. Jade, wir gehen.“', log: 'Nein gesagt und den abgemachten Ausstieg genutzt', folge: 'Jade steht sofort auf. Erleichtert.', skill: true, setze: { gegangen: true } },
+            { wenn: (f) => !f.ausstieg, t: '„Nee. Jade, wir gehen.“', log: 'Nein gesagt und mit Jade gegangen', folge: 'Jade steht sofort auf. Erleichtert.', skill: true, setze: { gegangen: true } },
             { t: 'Einen Zug nehmen, damit es nicht komisch wird.', log: 'Einen Zug genommen, um dazuzugehören', folge: 'Es kratzt im Hals. Dir ist kurz schlecht. Jade schaut dich an.', skill: false },
           ] },
         ],
@@ -207,7 +208,7 @@ export default {
           { wenn: (f) => f.gegangen, dann: [['jade', 'Danke, dass du „wir gehen“ gesagt hast. Ich wollte schon lange weg.']], sonst: [['jade', 'Ich hab mich die ganze Zeit komisch gefühlt.']] },
           ['jade', 'Das mit dem Arm fand ich gar nicht schlimm. Aber das Handy – da wär ich ausgerastet.'],
           { wahl: [
-            { t: '„Bei mir ist es umgekehrt. Komisch, wie verschieden das ist.“', log: 'Erkannt: Grenzen liegen bei jedem woanders', folge: 'Jade: „Darum muss man es sagen. Raten geht nicht.“', skill: true },
+            { t: '„Bei mir liegt die Grenze woanders. Komisch, wie verschieden das ist.“', log: 'Erkannt: Grenzen liegen bei jedem woanders', folge: 'Jade: „Darum muss man es sagen. Raten geht nicht.“', skill: true },
             { t: '„Stell dich nicht so an mit dem Handy.“', log: 'Jades Grenze kleingeredet', folge: 'Jade schweigt den Rest des Weges.', skill: false },
           ] },
           { wenn: (f) => f.foto, dann: [
@@ -244,31 +245,31 @@ export default {
           { wahl: [
             { t: '„Nee. Für dich lüg ich nicht. Aber ich komm mit, wenn du’s ihr selbst sagst.“', log: 'Nein gesagt – mit Angebot', folge: 'Finn: „Mann … okay. Kommst du echt mit?“', skill: true },
             { t: '„Ähm … vielleicht … mal sehen.“', log: 'Unklar geantwortet: „vielleicht“', folge: 'Finn hört ein Ja.', skill: false, setze: { finnVerlass: true } },
-            { t: '„Klar.“', log: 'Ja gesagt, obwohl Nein gemeint', folge: 'Am Nachmittag fragt Frau Brandt dich direkt.', skill: false, setze: { finnVerlass: true } },
+            { t: '„Klar.“', log: 'Ja gesagt, obwohl Nein gemeint', folge: 'Finn klopft dir auf die Schulter: „Du bist der Beste.“', skill: false, setze: { finnVerlass: true } },
           ] },
-          { wenn: (f) => f.finnVerlass, dann: [['h:Frau Brandt', 'Kurze Frage: Finn sagt, du weißt, dass er gestern beim Arzt war?'], { wahl: [
+          { wenn: (f) => f.finnVerlass, dann: [['e', 'Am Nachmittag beim Training kommt Frau Brandt zu dir.'], ['brandt', 'Kurze Frage: Finn sagt, du weißt, dass er gestern beim Arzt war?'], { wahl: [
             { t: '„Dazu sag ich nichts. Fragen Sie Finn bitte selbst.“', log: 'Später doch eine klare Grenze gezogen', folge: 'Frau Brandt: „Fair.“', skill: true },
             { t: '„Ja, war er.“', log: 'Für Finn gelogen', folge: 'Frau Brandt notiert es. Du fühlst dich mies.', skill: false },
           ] }] },
         ],
       },
       {
-        ziel: 'Zum Skatepark im Dorf. Malik filmt.', ort: 'Skatepark', p: [90.0, 80.0], leute: { malik: [91.6, 81.0, null, 'handy'] },
+        ziel: 'Zum Skatepark im Dorf. Lio filmt.', ort: 'Skatepark', p: [90.0, 80.0], leute: { lio: [91.6, 81.0, null, 'handy'] },
         zeilen: [
-          ['e', 'Du stürzt bei einem Trick. Malik hat alles gefilmt.'],
-          ['malik', '(lacht) Das wird viral! Ich poste das!'],
+          ['e', 'Du stürzt bei einem Trick. Lio hat alles gefilmt.'],
+          ['lio', '(lacht) Das wird viral! Ich poste das!'],
           { wahl: [
-            { t: '„Haha, lass mal …“ (lächeln)', log: 'Erstes Stopp: lächelnd und unklar', folge: 'Malik tippt weiter: „Klingt nach Ja.“', skill: false, setze: { unklar: true } },
-            { t: 'Gerade hinstellen, Blick ins Gesicht: „Stopp. Das postest du nicht.“', log: 'Klares Stopp: Körper, Stimme, Worte', folge: 'Malik hält inne: „Okay. Schon gut.“', skill: true },
+            { t: '„Haha, lass mal …“ (lächeln)', log: 'Erstes Stopp: lächelnd und unklar', folge: 'Lio tippt weiter: „Klingt nach Ja.“', skill: false, setze: { unklar: true } },
+            { t: 'Gerade hinstellen, Blick ins Gesicht: „Stopp. Das postest du nicht.“', log: 'Klares Stopp: Körper, Stimme, Worte', folge: 'Lio hält inne: „Okay. Schon gut.“', skill: true },
           ] },
           { wenn: (f) => f.unklar, dann: [
-            ['malik', 'Komm, ist doch lustig. Nur in die Gruppe.'],
+            ['lio', 'Komm, ist doch lustig. Nur in die Gruppe.'],
             { wahl: [
-              { t: 'Jetzt klar: Hand hoch. „Nein. Lösch es. Jetzt.“ – ohne Lächeln.', log: 'Zweites Stopp: klar, ohne Lächeln', folge: 'Malik merkt: Das ist ernst. Er löscht es vor deinen Augen.', skill: true },
-              { t: 'Aufgeben. Ist eh egal.', log: 'Das Stopp aufgegeben', folge: 'Am Abend haben es 30 Leute gesehen.', skill: false },
+              { t: 'Jetzt klar: Hand hoch. „Nein. Lösch es. Jetzt.“ – ohne Lächeln.', log: 'Zweites Stopp: klar, ohne Lächeln', folge: 'Lio merkt: Das ist ernst. Er löscht es vor deinen Augen.', skill: true },
+              { t: 'Aufgeben. Ist eh egal.', log: 'Das Stopp aufgegeben', folge: 'Am Abend haben es 30 Leute gesehen.', skill: false, setze: { aufgegeben: true } },
             ] },
+            { moment: 'Ein „haha, lass mal“ hat Lio als Ja gehört. Erst ein klares Stopp kommt an.' },
           ] },
-          { moment: 'Ein „haha, lass mal“ hat Malik als Ja gehört. Erst das klare Stopp kam an.' },
         ],
       },
       {
@@ -277,7 +278,7 @@ export default {
           ['sara', 'Gib mir kurz dein Passwort für das Spiel. Ich mach dir die Daily-Quests. Dann hast du mehr Level!'],
           { wahl: [
             { t: '„Nein. Mein Passwort kriegt keiner. Auch du nicht.“', log: 'Nein zum Passwort – ohne lange Erklärung', folge: 'Sara: „Okay, war nur nett gemeint.“', skill: true },
-            { t: '„Wieso willst du das?“', log: 'Lange diskutiert statt Nein gesagt', folge: 'Sara hat drei gute Gründe. Du wirst unsicher.', skill: false, dann: [['sara', 'Weil ich eh spiele! Weil du sonst nie aufholst! Weil Freunde das machen!'], { wahl: [
+            { t: '„Wieso willst du das?“', log: 'Erst nachgefragt', folge: 'Sara hat drei Gründe. Du wirst unsicher.', skill: null, dann: [['sara', 'Weil ich eh spiele! Weil du sonst nie aufholst! Weil Freunde das machen!'], { wahl: [
               { t: '„Trotzdem nein.“', log: 'Nach Diskussion doch beim Nein geblieben', folge: 'Sara: „Na gut.“', skill: true },
               { t: '„Na gut …“ – und das Passwort sagen.', log: 'Das Passwort herausgegeben', folge: 'Eine Woche später: Dein Konto hat neue Skins gekauft. Nicht von dir.', skill: false },
             ] }] },
@@ -285,7 +286,7 @@ export default {
         ],
       },
       {
-        ziel: 'Zum Jugendhaus. Jetzt bist du derjenige, der fragt.', ort: 'Jugendhaus', p: [25.6, 118.6], leute: { jade: [23.9, 119.4] },
+        ziel: 'Zum Jugendhaus. Jetzt fragst du selbst.', ort: 'Jugendhaus', p: [25.6, 118.6], leute: { jade: [23.9, 119.4] },
         zeilen: [
           ['du', 'Jade, kommst du Samstag mit zum Turnier? Bitte!'],
           ['jade', 'Nein. Ich will am Samstag einfach mal nichts.'],
@@ -299,7 +300,8 @@ export default {
         ],
       },
     ],
-    ende: [['e', 'Abends liegt eine Kappe vor deiner Tür. Rot, mit einer weißen Hand darauf. Von Malik. Daneben ein Zettel: „Hab’s gelöscht.“']],
+    ende: [{ wenn: (f) => f.aufgegeben, dann: [['h:Lio', 'Sorry wegen dem Video. Ich hätte fragen müssen. Ich lösch es jetzt.'], ['e', 'Am nächsten Tag liegt eine rote Kappe mit einer weißen Hand in deinem Spind. Ein Zettel: „Für dein nächstes Stopp.“']],
+      sonst: [['e', 'Abends liegt eine Kappe vor deiner Tür. Rot, mit einer weißen Hand darauf. Von Lio. Daneben ein Zettel: „Hab’s gelöscht.“']] }],
     resuemee: { frage: 'Wann ist euch ein Nein schwergefallen – und wie klang es, als es endlich klar war?', satz: 'Mein klares Nein klingt so: …' },
   },
 };

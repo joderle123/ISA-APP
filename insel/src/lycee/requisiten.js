@@ -4,6 +4,7 @@
 // welt.js legt fest, was wo steht (plaetze: { m, x, z, rot, h | s, y, fest, id }); hier wird jedes Modell auf seine Zielhöhe
 // gebracht, mittig auf den Punkt gestellt und alles Feste zu EINEM Netz mit dem Toon-Material zusammengefasst.
 // fest: true = Grundriss als Kollisionskasten · Zahl = kleiner Kasten dieser halben Breite (Baumstamm) · id = eigenes Netz.
+import { autoKatalog } from './autos.js';
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { MeshoptDecoder } from 'three/examples/jsm/libs/meshopt_decoder.module.js';
@@ -55,7 +56,7 @@ const AUTOFEST = { 'einrichtung/Plant': 0.5, 'strasse/Streetlight_Single': 0.3, 
   'lager/bucket': 0.35, 'strasse/construction-cone': 0.35 };
 
 export function ladeRequisiten() {
-  if (!_alle) _alle = Promise.all([lade(lyceeBin, false), lade(stadtBin, true), lade(kaykitBin, true), lade(skateBin, true), lade(kenney2Bin, true)]).then(([a, b, k, sk, k2]) => ({ ...k2, ...sk, ...k, ...b, ...a }));
+  if (!_alle) _alle = Promise.all([lade(lyceeBin, false), lade(stadtBin, true), lade(kaykitBin, true), lade(skateBin, true), lade(kenney2Bin, true)]).then(([a, b, k, sk, k2]) => ({ ...k2, ...sk, ...k, ...b, ...a, ...autoKatalog() }));
   return _alle;
 }
 

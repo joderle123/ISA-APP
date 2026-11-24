@@ -72,6 +72,8 @@ import { createSteuerung } from './steuerung.js';
 import { createUI } from './ui.js';
 import { situationen } from './situation.js';
 import { FACHLEHRER } from './story/personal.js';
+import { FR_LEKTIONEN } from './story/fachstunden.js';
+if (!(LEKTIONEN.francais || []).length) LEKTIONEN.francais = FR_LEKTIONEN;   // Französisch fürs Spiel (handgeschrieben, story/fachstunden.js)
 import { tunN2 } from './story/kapitel2.js';
 import { tunN1 } from './story/kapitel1.js';
 import { tunN3, ORTE_N3 } from './story/kapitel3.js';
@@ -1243,6 +1245,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         if (f.merke) [].concat(f.merke).forEach((m) => { S.merke[m] = true; });
         sichern();
         if (f.dann && f.dann.length) await spiele(f.dann);
+      } else if (z.stunde) {
+        await fachStunde(z.stunde);   // Fachstunde im eigenen Modul (Deutsch, Mathe, Français)
       } else if (z.tu) {
         const mehr = await TUN[z.tu]?.();
         if (Array.isArray(mehr) && mehr.length) await spiele(mehr);
@@ -2195,7 +2199,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   ui.onJournal = () => {
     if (!S || imGespraech) return;
     const b = bilanz();
-    ui.journal({ muster: muster(S.merke), name: S.name, stundenplan: S.stundenplan, leute: b.leute, freunde: b.freunde, staerken: b.staerken, geheimnisse: GEHEIMNISSE.filter((g) => S.entdeckt.includes(g.id)), gesamt: GEHEIMNISSE.length, lernkarten: S.lernkarten || [], heft: S.skillsHeft || [], erinnerungen: S.erinnerungen || [], stamm: STAMM.map((q) => ({ name: q.name, farbe: q.farbe, ort: stammPlan(q, uhrJetzt).ort || q.ort || '', text: q.steckbrief || '', kennt: !!S.merke['stk_' + q.id], besuche: Object.keys(S.merke).filter((k) => k.startsWith('stb_' + q.id + '_')).length })), leiter: leiterJournal(), zaehler: zaehler(), pass: ABZEICHEN.map((x) => ({ sy: x.sy, t: x.t, hinweis: x.hinweis, hat: (S.pass || []).includes(x.id) })) });
+    ui.journal({ muster: muster(S.merke), name: S.name, stundenplan: S.stundenplan, module: { deutsch: fachStand('deutsch').modul, mathe: fachStand('mathe').modul, francais: fachStand('francais').modul }, regeln: S.klassenregeln || [], leute: b.leute, freunde: b.freunde, staerken: b.staerken, geheimnisse: GEHEIMNISSE.filter((g) => S.entdeckt.includes(g.id)), gesamt: GEHEIMNISSE.length, lernkarten: S.lernkarten || [], heft: S.skillsHeft || [], erinnerungen: S.erinnerungen || [], stamm: STAMM.map((q) => ({ name: q.name, farbe: q.farbe, ort: stammPlan(q, uhrJetzt).ort || q.ort || '', text: q.steckbrief || '', kennt: !!S.merke['stk_' + q.id], besuche: Object.keys(S.merke).filter((k) => k.startsWith('stb_' + q.id + '_')).length })), leiter: leiterJournal(), zaehler: zaehler(), pass: ABZEICHEN.map((x) => ({ sy: x.sy, t: x.t, hinweis: x.hinweis, hat: (S.pass || []).includes(x.id) })) });
   };
   // Running Gags als Zähler im Journal (werden nie kleiner)
   function zaehler() {
@@ -2368,6 +2372,32 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     ui.toast('<b>Lernkarte: ' + esc(l.titel) + '</b><span>' + esc(l.karte) + '</span>', 'ly-t-ent');
     S.merke.lernen = (S.merke.lernen || 0) + 1;
     jetons(alt.mal ? JETON.lektion : JETON.lektionNeu, 'Lektion geschafft');
+  }
+  // Fachstunde in der Geschichte (Rückmeldung der Schüler 24.11.: „wechselnde Lehrpersonen, Fach + Modul spielerisch“):
+  // die nächste Lektion im eigenen Modul (Wahl beim Start). Gibt es im Spiel für das Modul keine Lektion, ein Modul-Blatt
+  // mit Erklärung (Mathe; Deutsch ab Modul 4) oder – Französisch ab Modul 4 – eine Wiederholung, ehrlich angesagt.
+  async function fachStunde(fach) {
+    const fs = fachStand(fach), lp = FACHLEHRER[fach], mods = LEKTIONEN[fach] || [];
+    const m = mods.find((x) => x.nr === fs.modul);
+    if (m) { const l = m.lektionen.find((x) => !(S.lektionen || {})[x.id]) || m.lektionen[0]; await unterricht(fach, m.nr, l.id); return; }
+    const F = FAECHER[fach];
+    if (F) {
+      const mod = F.module.find((x) => x.nr === fs.modul) || F.module[0], b0 = mod.blaetter.find((x) => !fs.stand[x.id]) || mod.blaetter[0];
+      await spiele([[lp, F.name + ', Modul ' + mod.nr + ': „' + mod.titel + '“. Heute: ' + b0.titel + '.']]);
+      ui.dialogZu();
+      const b = F.blatt(mod.nr, b0.id, Date.now()); if (!b) return;
+      const st = SCHRITTE[S.schritt];
+      const r = await ui.arbeitsblatt({ blatt: b, name: S.name, datum: st ? st.tag : '' });
+      const alt = fs.stand[b0.id] || { richtig: 0, gesamt: r.gesamt, mal: 0 };
+      fs.stand[b0.id] = { richtig: Math.max(alt.richtig, r.richtig), gesamt: r.gesamt, mal: (alt.mal || 0) + 1 };
+      if (r.richtig === r.gesamt) staerke('dranbleiben');
+      S.merke.lernen = (S.merke.lernen || 0) + 1; sichern();
+      jetons(r.richtig === r.gesamt ? JETON.runde : JETON.blatt, r.richtig === r.gesamt ? 'Alles richtig' : 'Geübt');
+      await spiele([[lp, r.richtig === r.gesamt ? 'Alles richtig. Notiert.' : r.richtig + ' von ' + r.gesamt + '. Der Rest kommt mit Üben.']]);
+      return;
+    }
+    const w = mods[0];
+    if (w) { await spiele([[lp, 'Heute Wiederholung für alle. Auch für die, die schon weiter sind.']]); await unterricht(fach, w.nr, w.lektionen[0].id); }
   }
   // Wegsuche im Schulhaus: nur nach der gesagten Beschreibung laufen (kein Marker); jede Station gibt die nächste Anweisung
   let wegTick = null;
@@ -3776,8 +3806,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     await new Promise((r) => setTimeout(r, 1500));
     if (!S.merke['sit_' + id]) sitStart(id);
   }
-  async function los(neu, figur, name, abKap) {
-    if (neu) { S = neuerStand(name, figur); if (abKap > 1) S.schritt = Math.max(0, SCHRITTE.findIndex((x) => (x.kap || 1) === abKap)); sichern(); }
+  async function los(neu, figur, name, abKap, module) {
+    if (neu) { S = neuerStand(name, figur); if (abKap > 1) S.schritt = Math.max(0, SCHRITTE.findIndex((x) => (x.kap || 1) === abKap)); if (module) for (const [f, n] of Object.entries(module)) if (n >= 1) fachStand(f).modul = n; sichern(); }
     await spielerFigur(S.figur);
     laeuft = true;
     if (S.fertig) {
@@ -3827,6 +3857,6 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     wechsle: (p) => { platz = p; try { localStorage.setItem('lycee.platz', String(p)); } catch (e) { /* privat */ } S = neuStart(lies()); return !!(S && S.name); } });
   if (w.weiter) await los(false);
   else if (w.situation && SZENEN[w.situation]) await situationProbieren(w);   // Lehrperson: eine schwierige Situation direkt ausprobieren
-  else await los(true, w.figur, w.name, w.kapitel);   // Lehrperson kann direkt in einem Kapitel starten
+  else await los(true, w.figur, w.name, w.kapitel, w.module);   // Lehrperson kann direkt in einem Kapitel starten
   return window.LYCEE;
 }

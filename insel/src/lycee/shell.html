@@ -5,6 +5,33 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
 <meta name="theme-color" content="#2d3d5c">
 <title>Annexe Junglinster</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Annexe">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<script>
+// iPad-App: nur über http(s) (z. B. GitHub Pages). Als Datei geöffnet (file://) passiert hier nichts.
+(function () {
+  if (!/^https?:$/.test(location.protocol)) return;
+  var h = document.head, l = document.createElement('link'); l.rel = 'manifest'; l.href = 'lycee.webmanifest'; h.appendChild(l);
+  var a = document.createElement('link'); a.rel = 'apple-touch-icon'; a.href = 'lycee-pwa/icon-180.png'; h.appendChild(a);
+  try { if (navigator.storage && navigator.storage.persist) navigator.storage.persist().catch(function () {}); } catch (e) { /* egal */ }
+  if (!('serviceWorker' in navigator)) return;
+  window.addEventListener('load', function () { navigator.serviceWorker.register('lycee-sw.js').catch(function () {}); });
+  navigator.serviceWorker.addEventListener('message', function (e) {
+    if (e.data !== 'neu' || document.getElementById('ly-neu')) return;
+    var d = document.createElement('div'); d.id = 'ly-neu';
+    d.setAttribute('style', 'position:fixed;left:50%;bottom:16px;transform:translateX(-50%);z-index:99999;background:#1b1830;color:#fff;border:1px solid #5fd0b0;border-radius:12px;padding:10px 14px;font:15px system-ui,sans-serif;display:flex;gap:10px;align-items:center;box-shadow:0 6px 24px rgba(0,0,0,.4)');
+    d.innerHTML = '<span>Neue Version ist da. Dein Spielstand bleibt.</span>';
+    var neu = document.createElement('button'); neu.type = 'button'; neu.textContent = 'Neu starten';
+    var spaeter = document.createElement('button'); spaeter.type = 'button'; spaeter.textContent = 'Später';
+    [neu, spaeter].forEach(function (b) { b.setAttribute('style', 'font:inherit;border:0;border-radius:8px;padding:6px 12px;cursor:pointer;background:' + (b === neu ? '#5fd0b0;color:#10241f' : '#3a3556;color:#fff')); d.appendChild(b); });
+    neu.onclick = function () { location.reload(); };
+    spaeter.onclick = function () { d.remove(); };
+    document.body.appendChild(d);
+  });
+})();
+</script>
 <style>/*__STYLE__*/</style>
 </head>
 <body>

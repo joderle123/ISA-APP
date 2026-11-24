@@ -180,8 +180,9 @@ export function baueDorf({ B, C, schild, schilder, P = null, R = null }) {
   B.frei.push({ x0: -30, x1: 110, z0: 81, z1: 93 });
   if (P) for (const x of [-12, 12, 60, 84, 104]) P('strasse/Streetlight_Single', x, 82.6, 0, { h: 5.5 });
   // geparkte Autos am Straßenrand (nicht vor Épicerie, Gasse und Bushäuschen)
-  if (P) for (const [x, z, m, f, d] of [[-16, 85.2, 'kk/car_sedan', '#c8d6e0', 1], [18, 88.8, 'auto/sedan', null, -1], [55, 88.8, 'kk/car_hatchback', '#e6c8a0', -1], [76, 85.2, 'kk/car_stationwagon', '#d8e2ea', 1], [94, 88.8, 'auto/suv', null, -1]])
-    P(m, x, z, d * Math.PI / 2, m.startsWith('kk/') ? { s: 4.1, fest: true, ...(f ? { farbe: f } : {}) } : { h: 1.6, fest: true });
+  // eigene Autos (autos.js) in echter Größe – vorher Bausatz-Autos mit blasser Tönung
+  if (P) for (const [x, z, m, d] of [[-16, 85.2, 'auto2/limo-schwarz', 1], [18, 88.8, 'auto2/kompakt-gruen', -1], [55, 88.8, 'auto2/suv-sand', -1], [76, 85.2, 'auto2/limo-weiss', 1], [94, 88.8, 'auto2/kompakt-silber', -1]])
+    P(m, x, z, d * Math.PI / 2, { fest: true });
   // Épicerie „Klenge Buttek“ (x 36 … 48, z 92 … 102): Schaufenster, Markise, Tür in der Mitte, innen Regale, Kasse, Kühlschränke
   { const X0 = 36, X1 = 48, Z0 = 92, Z1 = 102, H = 3.6, PUTZ_L = hex('#efe2b8'), GLAS_L = hex('#9cc3d8');
     const tuer = { von: 41, bis: 43, unten: 0, oben: 2.4 }, f1 = { von: 36.8, bis: 40.4, unten: 0.6, oben: 2.5 }, f2 = { von: 43.6, bis: 47.2, unten: 0.6, oben: 2.5 };

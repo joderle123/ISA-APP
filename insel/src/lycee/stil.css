@@ -969,6 +969,7 @@ kbd { display: inline-block; min-width: 1.5em; padding: 0 .35em; margin-right: .
 .ly-lex dt{font-weight:700;margin-top:.6em}
 .ly-lex dd{margin:.1em 0 0 0;opacity:.85}
 
+.ly-w-module{margin:.2em 0 .7em;text-align:left;font-size:.92em}.ly-w-module>b{display:block}.ly-w-module>small{display:block;opacity:.75;margin:.1em 0 .4em}.ly-w-mreihe{display:flex;align-items:center;gap:.25em;flex-wrap:wrap;margin:.25em 0}.ly-w-mreihe span{min-width:5.2em;font-weight:600}.ly-w-mreihe button{min-width:2.1em;min-height:2.1em;border-radius:8px;border:1px solid rgba(127,127,127,.45);background:transparent;color:inherit;font:inherit;cursor:pointer}.ly-w-mreihe button.an{background:var(--ly-akzent,#2fb8a8);border-color:transparent;color:#fff;font-weight:700}
 .ly-w-kap{margin:.4em 0 .8em;text-align:left;font-size:.9em}.ly-w-kap summary{cursor:pointer;opacity:.8}.ly-w-kap select{display:block;margin:.4em 0;font:inherit;padding:.3em .5em;border-radius:8px}.ly-w-kap small{opacity:.7}
 
 .ly-gespeichert{position:absolute;right:14px;bottom:12px;font:600 12px/1 system-ui;color:#fff;background:rgba(30,40,60,.55);padding:5px 9px;border-radius:99px;opacity:0;pointer-events:none;z-index:30}
