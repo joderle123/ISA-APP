@@ -15,6 +15,9 @@ import { baueAktion } from './aktion-bau'
 import { baueStunde, stationen, kurzName } from './stunde-bau'
 import type { AktionsHeft } from './aktion-typen'
 import type { Solo } from './solo-typen'
+// Skills-Missionen im Annexe-Spiel: eine je Kurs-Stunde, gemeinsame Daten mit dem Spiel (Auftrag 24.11.2026)
+const MISSIONEN: { hefte: Record<string, { code: string; titel: string; ort: string; kurz: string; belohnung: string; skill: string }[]> } =
+  JSON.parse(readFileSync(join(dirname(fileURLToPath(import.meta.url)), '..', 'insel', 'src', 'lycee', 'kurs-missionen.json'), 'utf8'))
 
 const HIER = dirname(fileURLToPath(import.meta.url))
 const fehler: string[] = []
@@ -149,7 +152,7 @@ function baue(d: Heft): string {
   // Doppelseiten je Track
   d.tracks.forEach((e, i) => {
     if (e.stunde) {
-      baueStunde(e, i, { t, esc, figur, ic, qr, kurzlink, linien, frage }).forEach((html) => seiten.push({ e: i, html }))
+      baueStunde(e, i, { t, esc, figur, ic, qr, kurzlink, linien, frage, mission: MISSIONEN.hefte[d.nr]?.[i] }).forEach((html) => seiten.push({ e: i, html }))
       return
     }
     seiten.push({

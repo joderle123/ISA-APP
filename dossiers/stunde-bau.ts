@@ -23,6 +23,8 @@ export interface StundenHelfer {
   kurzlink: (url: string) => string
   linien: (n: number) => string
   frage: (f: Frage, i: number) => string
+  /** Mission im Annexe-Spiel zu dieser Stunde (Ticket am Ende der Stunde) */
+  mission?: { code: string; titel: string; ort: string; kurz: string; belohnung: string; skill: string }
 }
 
 /** Stationen einer Stunde in Reihenfolge (ohne Fortsetzungen) – für Fahrplan, Streifen und die Seiten der Leitung */
@@ -106,12 +108,17 @@ export function baueStunde(e: Track, i: number, h: StundenHelfer): string[] {
   /** Streifen: alle Stationen der Stunde, die dieser Seite hervorgehoben */
   const streifen = (seite: number) => `<div class="sd-weg">${alle.map((x) => `<span class="${x.seite === seite ? 'da' : x.seite < seite ? 'war' : ''}"><i>${x.nr}</i>${esc(kurzName(x.s))}</span>`).join('')}</div>`
 
+  // Missions-Ticket: am Ende der letzten Seite der Stunde – Code und QR (Inhalt ANNEXE:<code>) für die Annexe-App
+  const m = h.mission
+  const ticket = m ? `<div class="sd-mission"><div class="l"><div class="lab mo">${ic('device-gamepad-2')}Im Spiel weiter · Mission</div><h3>${t(m.titel)}</h3><p>${t(m.kurz)}</p>
+    <div class="meta mo"><span>${ic('map-pin')}${esc(m.ort)}</span><span>${ic('gift')}${esc(m.belohnung)}</span></div></div>
+    <div class="r"><div class="qr">${qr('ANNEXE:' + m.code)}</div><div class="code mo">${esc(m.code)}</div><div class="hn mo">In der Annexe-App: Code eingeben</div></div></div>` : ''
   return st.seiten.map((p, k) => {
     const kopf = k === 0
       ? `<div class="th sd-th"><div class="znr">${z2(i + 1)}</div><div class="lab mo">Stunde ${z2(i + 1)} · ${esc(st.dauer)}</div><h1 class="an${e.titel.length > 15 ? ' kl' : ''}">${t(e.titel)}</h1><div class="ut">${t(st.frage)}</div></div>
          <div class="sd-plan"><div class="kann"><span class="mo">Am Ende kannst du</span>${st.kannst.map((x) => `<span>${ic('check')}${t(x)}</span>`).join('')}</div>
            <div class="weg">${alle.map((x) => `<div><i>${x.nr}</i><b>${esc(kurzName(x.s))}</b><span class="mo">${esc(x.s.zeit)}</span></div>`).join('')}</div></div>`
       : `<div class="sd-kopf"><div><span class="mo">Stunde ${z2(i + 1)}</span><b class="an">${t(e.titel)}</b></div>${streifen(k)}</div>`
-    return `<div>${kopf}<div class="inhalt sd${k === 0 ? ' eins' : ''}">${p.stationen.map(station).join('')}</div></div>`
+    return `<div>${kopf}<div class="inhalt sd${k === 0 ? ' eins' : ''}">${p.stationen.map(station).join('')}${k === st.seiten.length - 1 ? ticket : ''}</div></div>`
   })
 }

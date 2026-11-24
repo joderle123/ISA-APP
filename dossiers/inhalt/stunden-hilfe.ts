@@ -32,12 +32,22 @@ export const raster = (f: string, spalten: string[], ...zeilen: string[]): Frage
 /** Abwägen: je Möglichkeit zwei leere Spalten */
 export const abwaegen = (f: string, kopf: [string, string], ...optionen: string[]): Frage => ({ f, preis: { kopf, optionen } })
 
+/** Sweet Spot (24.11.2026): „Kennst du das?“ – Sätze zum Wiedererkennen, drei Spalten zum Ankreuzen */
+export const kennstDu = (f: string, ...saetze: string[]): Frage => ({ f, raster: { spalten: ['kenn ich', 'ein bisschen', 'kenn ich nicht'], zeilen: saetze } })
+export const verbinden = (f: string, links: string[], rechts: string[]): Frage => ({ f, verbinden: [links, rechts] })
+export const akku = (f: string): Frage => ({ f, akku: 'leer' })
+
 /* ---------- Bausteine ---------- */
 export const text = (...x: string[]): Baustein => ({ art: 'text', x })
 export const fragen = (kontext: string | null, ...l: Frage[]): Baustein => ({ art: 'fragen', ...(kontext ? { kontext } : {}), fragen: l })
 export const karten = (spalten: number, hoehe: number, hinweis: string, l: Karte[], wort = false): Baustein => ({ art: 'karten', spalten, hoehe, hinweis, karten: l, ...(wort ? { wort: true } : {}) })
 export const tabelle = (breiten: string, kopf: string[], zeilen: string[][], hoehe?: number): Baustein => ({ art: 'tabelle', breiten, kopf, zeilen, ...(hoehe ? { hoehe } : {}) })
 export const merk = (x: string): Baustein => ({ art: 'merk', x })
+/** Gesprächsanstoß „Redet darüber“ – freiwillig, ohne Schreiben */
+export const reden = (...x: string[]): Baustein => ({ art: 'reden', x })
+export const redenT = (titel: string, ...x: string[]): Baustein => ({ art: 'reden', titel, x })
+/** Beispiel „So sieht eine Runde aus“: [wer, was] – wer '' = Erzählsatz */
+export const beispiel = (titel: string, ...z: [string, string][]): Baustein => ({ art: 'chat', titel, zeilen: z.map(([wer, x]) => (wer === '' ? { wer: '', x, art: 'tut' as const } : { wer, x })) })
 /** Sprechblasen: [wer, was] sagt · ['~wer', was] denkt · ['', was] Erzählsatz */
 export const blasen = (...z: [string, string][]): Baustein => ({ art: 'chat', zeilen: z.map(([wer, x]) => (wer === '' ? { wer: '', x, art: 'tut' as const } : wer.startsWith('~') ? { wer: wer.slice(1), x, art: 'denkt' as const } : { wer, x })) })
 
@@ -60,6 +70,8 @@ export const fall = (e: Track, titel: string, l: Frage[], opt: { zeit?: string; 
 export const ermittlung = (e: Track, titel: string, text: string, sp: [string, string, string, string][], l: Frage[], opt: { zeit?: string; leitung?: string; bild?: string } = {}): Station =>
   st(`Der Fall: ${titel}`, opt.zeit ?? '15 Min.', 'lesen · zu zweit ermitteln', 'search', opt.leitung ?? 'Zu zweit ermitteln lassen, nicht vorsagen. Jede Antwort mit einer Spur begründen lassen.',
     { art: 'fall', bild: opt.bild ?? e.szene.bild, name: e.szene.name, text }, spuren(sp, ...l))
+/** Fortsetzung einer Station (zählt nicht als neue Station) – z. B. eine Sprechblase nach dem Fall */
+export const weiter = (titel: string, nr: number, icon: string, ...bausteine: Baustein[]): Station => ({ titel, zeit: '', wie: `zu Station ${nr}`, icon, fort: true, bausteine })
 /** Fortsetzung eines Falls auf der nächsten Seite (zählt nicht als neue Station) */
 export const fallWeiter = (titel: string, nr: number, kontext: string | null, ...l: Frage[]): Station =>
   ({ titel: `Der Fall: ${titel}`, zeit: '', wie: `zu Station ${nr}`, icon: 'search', fort: true, bausteine: [fragen(kontext, ...l)] })

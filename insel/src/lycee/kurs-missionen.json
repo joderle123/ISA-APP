@@ -1,0 +1,57 @@
+{
+  "stand": "24.11.2026",
+  "hinweis": "Skills-Missionen zum Kurs REAL TALK Jahr 1 – eine Mission je Stunde. Gemeinsame Grundlage für Heft und Spiel: Das Heft druckt am Ende jeder Stunde ein Missions-Ticket mit Code und QR (Inhalt ANNEXE:<code>), das Spiel schaltet die Mission mit demselben Code frei. Belohnungen sind verdient (keine Zufallskisten, kein Geld). Alle Personen erfunden.",
+  "hefte": {
+    "00": [
+      { "code": "REGEL-12", "titel": "Was im Jugendhaus bleibt", "ort": "Jugendhaus", "kurz": "Jo erzählt dir im Jugendhaus etwas Persönliches. Später wollen es drei Leute aus dir herausholen. Bleibst du dicht – ohne zu lügen?", "belohnung": "Schloss-Anstecker für den Rucksack", "skill": "Was hier bleibt" },
+      { "code": "BUS-12", "titel": "Linie 12", "ort": "Bushaltestelle", "kurz": "An der Haltestelle stehen drei Neue. Finde mit guten Fragen heraus, wer sie wirklich sind – dein erster Eindruck wird dreimal auf die Probe gestellt.", "belohnung": "Busfahrer-Kappe", "skill": "Fragen und nachhaken" },
+      { "code": "LOTSE-3", "titel": "Nebel im Wald", "ort": "Waldweg", "kurz": "Mila hat sich im Nebel auf dem Waldweg verlaufen. Lotse sie am Telefon zurück – nur mit deiner Stimme, ehrlich und Schritt für Schritt.", "belohnung": "Stirnlampe", "skill": "Wer führt, trägt" }
+    ],
+    "01": [
+      { "code": "TANK-6", "titel": "Tankwart", "ort": "Dorf und Bäcker", "kurz": "Drei Leute im Dorf sind heute gereizt. Finde heraus, welcher Tank bei wem leer ist – und bring jeder Person eine echte Tankstelle. Achtung: Eine will eine Fake-Tankstelle.", "belohnung": "Tankwart-Kappe", "skill": "Tanks und Tankstellen" },
+      { "code": "LEISE-4", "titel": "Die stille Idee", "ort": "Jugendhaus", "kurz": "Im Jugendhaus wird das Sommerfest geplant. Die beste Idee hat jemand, der nichts sagt. Sorg dafür, dass sie gehört wird.", "belohnung": "Kopfhörer in deiner Farbe", "skill": "Alle kommen zu Wort" },
+      { "code": "STARK-24", "titel": "Stärken-Post", "ort": "Campus", "kurz": "Beobachte fünf Leute auf dem Campus. Finde bei jeder Person eine Stärke mit Beweis – und bring ihr die passende Karte.", "belohnung": "Stärken-Jacke", "skill": "Stärken sehen" }
+    ],
+    "02": [
+      { "code": "WORT-6", "titel": "Mehr als zwei Wörter", "ort": "Schulhof", "kurz": "Auf dem Hof sagen alle nur „gut“ oder „scheiße“. Sammle in echten Gesprächen zehn genaue Gefühlswörter – und finde heraus, was jedes Gefühl melden will.", "belohnung": "Sticker-Set Gefühle", "skill": "Gefühle benennen" },
+      { "code": "STEUER-5", "titel": "Wer fährt?", "ort": "Skate-Ecke", "kurz": "An der Skate-Ecke kippt die Stimmung. Erkenne, welches Gefühl bei wem am Steuer sitzt – bevor es kracht.", "belohnung": "Griptape mit Lenkrad", "skill": "Steuer-Check" },
+      { "code": "ALARM-3", "titel": "Das erste Signal", "ort": "Sportplatz", "kurz": "Beim Elfmeter-Turnier achtest du auf Körpersignale – deine und die der anderen. Wer das erste Signal erkennt, verhindert den Streit.", "belohnung": "Pulsuhr", "skill": "Körpersignale" },
+      { "code": "MISCH-10", "titel": "Das Mischpult", "ort": "Aula", "kurz": "Bei der Probe in der Aula fühlt Lina vier Dinge gleichzeitig. Stell mit ihr am Mischpult ein, was gerade wie laut ist.", "belohnung": "DJ-Mütze", "skill": "Gefühle mischen" }
+    ],
+    "03": [
+      { "code": "ZAHL-100", "titel": "Das Thermometer", "ort": "Campus", "kurz": "Ein ganzer Schultag: Dein Thermometer zeigt, wie der Druck steigt. Bleib unter Rot – mit kleinen Pausen an den richtigen Stellen.", "belohnung": "Thermometer-Anhänger", "skill": "Druck messen" },
+      { "code": "ATEM-48", "titel": "Vier ein, acht aus", "ort": "vor dem Sekretariat", "kurz": "Du wartest vor dem Büro und weißt nicht, warum. Atme mit dem Atem-Kreis, bis dein Bein ruhig ist – dann kommt die Überraschung.", "belohnung": "Atem-Armband", "skill": "Bremse im Körper" },
+      { "code": "KALT-30", "titel": "Das Notfall-Set", "ort": "Épicerie und Brunnen", "kurz": "Stell dein eigenes Set für die Tasche zusammen – stark, aber harmlos. Teste es in drei Druck-Momenten.", "belohnung": "Notfall-Täschchen", "skill": "Sinne nutzen" },
+      { "code": "SCHIFF-7", "titel": "Gedanken-Schiffe", "ort": "Innenhof", "kurz": "Nachts läuft der Film im Kopf. Fang deine Gedanken ein, setz sie auf Schiffe und lass sie den Fluss hinunterfahren.", "belohnung": "Papierschiff-Anhänger", "skill": "Gedanken beobachten" },
+      { "code": "AMPEL-3", "titel": "Dein Ampelplan", "ort": "Campus und Dorf", "kurz": "Drei Tage, drei schwierige Momente. Spiel deinen eigenen Ampelplan durch – Grün, Gelb, Rot.", "belohnung": "Ampel-Sneaker", "skill": "Ampelplan" }
+    ],
+    "04": [
+      { "code": "FILM-1", "titel": "Zwei Filme", "ort": "Kantine", "kurz": "Jemand lacht, als du dein Tablett hinstellst. Spiel zwei Filme durch: Was denkst du – und was passiert dann?", "belohnung": "Regie-Kappe", "skill": "Erst der Gedanke, dann das Gefühl" },
+      { "code": "SATZ-2", "titel": "Der alte Satz", "ort": "Werkstatt", "kurz": "In der Werkstatt flüstert dir ein alter Satz: „Das kannst du eh nicht.“ Sammle drei Gegen-Beweise.", "belohnung": "Werkzeuggürtel", "skill": "Alte Sätze prüfen" },
+      { "code": "BEWEIS-3", "titel": "Gericht im Kopf", "ort": "Lesesaal", "kurz": "Im Lesesaal stellst du einen Gedanken vor Gericht: Beweise dafür, Beweise dagegen – und du fällst das Urteil.", "belohnung": "Richterhammer-Anhänger", "skill": "Gedanken prüfen" },
+      { "code": "NEU-4", "titel": "Neuer Satz, neuer Tag", "ort": "Bushaltestelle", "kurz": "Ein Morgen mit deinem neuen Satz: Probier ihn in vier Situationen aus und schau, was passiert.", "belohnung": "Sonnenaufgang-Shirt", "skill": "Neue Sätze" }
+    ],
+    "05": [
+      { "code": "KOERPER-1", "titel": "Ohne Worte", "ort": "Schulhof", "kurz": "Lies die Körpersprache von fünf Leuten auf dem Hof. Wer will wirklich reden – und wer will Abstand?", "belohnung": "Sonnenbrille", "skill": "Körpersprache lesen" },
+      { "code": "ICH-2", "titel": "Ich statt Du", "ort": "Jugendhaus", "kurz": "Beim Billard gibt es Streit um eine Regel. Bau Ich-Sätze, die den Streit lösen, statt ihn anzuheizen.", "belohnung": "Queue in Gold", "skill": "Ich-Botschaften" },
+      { "code": "GRENZE-3", "titel": "Bauchgefühl", "ort": "Lichtung", "kurz": "Auf der Lichtung wird dir etwas angeboten. Hör auf dein Bauchgefühl und zieh deine Grenze.", "belohnung": "Kompass", "skill": "Grenzen spüren" },
+      { "code": "STOPP-4", "titel": "Nein ist ein Satz", "ort": "Dorf", "kurz": "Drei Leute wollen heute etwas von dir. Sag dreimal Nein – freundlich und klar.", "belohnung": "Stopp-Kappe", "skill": "Nein sagen" }
+    ],
+    "06": [
+      { "code": "EULE-1", "titel": "Hai oder Eule", "ort": "Sportplatz", "kurz": "Beim Fußball wird gefoult. Bleib Eule: erst runter, dann reden.", "belohnung": "Eulen-Hoodie", "skill": "Ruhig bleiben" },
+      { "code": "ANFANG-2", "titel": "Einer fängt an", "ort": "Gang mit Spinden", "kurz": "Alle lachen über ein Video. Finde den Moment, in dem du anfängst, etwas anderes zu tun.", "belohnung": "Leuchtstreifen-Jacke", "skill": "Den Anfang machen" },
+      { "code": "BUEHNE-3", "titel": "Keine Bühne", "ort": "Bushäuschen", "kurz": "Am Bushäuschen startet ein Streit vor Publikum. Nimm ihm die Bühne – ohne selbst den Helden zu spielen.", "belohnung": "Vorhang-Anhänger", "skill": "Kein Publikum" }
+    ],
+    "07": [
+      { "code": "SCROLL-1", "titel": "Wer scrollt wen?", "ort": "dein Zimmer", "kurz": "Dein Handy will dich festhalten. Finde die drei Tricks der App – und schalte sie ab.", "belohnung": "Handyhülle „Ich scrolle selbst“", "skill": "Tricks der Apps" },
+      { "code": "ONLINE-2", "titel": "Gelesen um 23:14", "ort": "annexe.cam", "kurz": "Jemand schreibt dir ständig und will sofort Antworten. Setz eine Grenze, die hält.", "belohnung": "Mond-Anstecker", "skill": "Grenzen im Netz" },
+      { "code": "FAKE-3", "titel": "Die Schlagzeile", "ort": "annexe.cam", "kurz": "Ein Gerücht verbreitet sich auf annexe.cam. Prüf es, bevor du teilst – drei Spuren, ein Urteil.", "belohnung": "Lupen-Anhänger", "skill": "Fakes erkennen" }
+    ],
+    "08": [
+      { "code": "NACHT-8", "titel": "Acht Stunden", "ort": "zu Hause", "kurz": "Eine Woche im Spiel: Plane deine Abende so, dass dein Akku morgens voll ist.", "belohnung": "Schlafmaske", "skill": "Schlaf" },
+      { "code": "FUTTER-2", "titel": "Treibstoff", "ort": "Kantine und Bäcker", "kurz": "Stell dein Essen für einen Turniertag zusammen – und spür im Spiel den Unterschied.", "belohnung": "Trinkflasche", "skill": "Essen und Trinken" },
+      { "code": "BLEIBT-3", "titel": "Das Jahr in Bildern", "ort": "Campus", "kurz": "Finde zehn Orte, an denen dieses Jahr etwas passiert ist, und sammle die Erinnerungen für dein Album.", "belohnung": "Fotoalbum", "skill": "Rückblick" },
+      { "code": "ENDE-4", "titel": "Stärken-Post zum Abschied", "ort": "Innenhof", "kurz": "Verteile zum Schluss Stärken-Post an deine Leute – und bekomm selbst welche.", "belohnung": "Jahrgangs-Jacke", "skill": "Abschied" }
+    ]
+  }
+}
