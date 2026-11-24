@@ -1182,3 +1182,57 @@ kbd { display: inline-block; min-width: 1.5em; padding: 0 .35em; margin-right: .
 .ly-j-muster h3 { margin: 0 0 6px; font-size: 1rem; }
 .ly-j-muster ul { margin: 0 0 6px; padding-left: 1.2em; display: grid; gap: 4px; }
 .ly-j-muster small { color: #7a6a4a; }
+
+/* ---------- Kurs-Missionen (kursmission.js): dunkel, ruhig, REAL-TALK-Akzent ---------- */
+.ly-ebene[data-art="km"] { background: rgba(10, 8, 20, .72); backdrop-filter: blur(4px); }
+.ly-k-km { --km: #a77bff; --km2: #ffd60a; background: #15121f; color: #ece8f6; border: 1px solid #2c2640; width: min(680px, 100%); }
+.ly-k-km h2 { color: #fff; font-size: 28px; letter-spacing: .01em; }
+.ly-k-km h3 { color: var(--km); font-size: 13px; margin-top: 16px; }
+.ly-k-km p, .ly-k-km li { color: #ddd7ee; font-size: 16px; line-height: 1.45; }
+.ly-k-km .ly-zu { background: rgba(255, 255, 255, .08); color: #fff; }
+.ly-k-km .ly-btn { background: #241f35; border-color: #3a3355; color: #fff; }
+.ly-k-km .ly-primaer { background: var(--km); border-color: var(--km); color: #15121f; }
+.ly-k-km .ly-link { background: none; border: 0; color: var(--km); text-decoration: underline; font: inherit; cursor: pointer; padding: 0; }
+.km-kicker { display: inline-block; margin-bottom: 6px; font-size: 12px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--km2); }
+.km-leer { color: #a59fbd !important; font-size: 15px !important; }
+.km-meldung { padding: 10px 14px; border-radius: 12px; background: #2a2140; color: #fff !important; }
+.km-laeuft { padding: 10px 14px; border-radius: 12px; border: 1px dashed var(--km); }
+.km-code { display: flex; gap: 10px; margin: 14px 0 10px; }
+.km-code input { flex: 1; min-width: 0; min-height: 54px; padding: 0 16px; border-radius: 14px; border: 2px solid var(--km); background: #0e0c16; color: #fff; font: 800 22px/1 ui-monospace, Menlo, monospace; letter-spacing: .08em; text-transform: uppercase; }
+.km-liste { list-style: none; margin: 14px 0 0; padding: 0; display: grid; gap: 8px; }
+.km-liste li { display: flex; align-items: center; gap: 12px; padding: 10px 12px; border-radius: 14px; background: #1e1a2c; border: 1px solid #2c2640; }
+.km-liste li div { flex: 1; min-width: 0; }
+.km-liste li b { display: block; color: #fff; }
+.km-liste li small { display: block; color: #a59fbd; font-size: 13px; }
+.km-liste li.fertig { border-color: #3d6b4f; }
+.km-liste li.aktiv { border-color: var(--km); }
+.km-liste .ly-btn { min-height: 42px; padding: 0 14px; font-size: 15px; }
+.km-heft { flex: none; padding: 4px 8px; border-radius: 8px; background: var(--km2); color: #15121f; font: 800 13px ui-monospace, Menlo, monospace; }
+.km-fuss { margin-top: 14px; }
+.km-knoepfe { display: flex; gap: 10px; justify-content: flex-end; flex-wrap: wrap; margin-top: 18px; }
+.km-kurz { font-size: 18px !important; color: #fff !important; }
+.km-fakten { list-style: none; padding: 0; margin: 12px 0 0; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.km-fakten li { padding: 10px 12px; border-radius: 12px; background: #1e1a2c; font-size: 15px; }
+.km-eingabe textarea, .km-satz { width: 100%; box-sizing: border-box; padding: 12px 14px; border-radius: 14px; border: 2px solid #3a3355; background: #0e0c16; color: #fff; font: 17px/1.4 inherit; resize: vertical; }
+.km-skala { display: flex; align-items: center; gap: 12px; margin-top: 10px; }
+.km-skala input { flex: 1; accent-color: var(--km); }
+.km-wert { display: block; text-align: center; font-size: 34px; color: var(--km2); }
+.km-res-kopf { padding-bottom: 6px; border-bottom: 1px solid #2c2640; }
+.km-skill { color: #c9c2dd !important; }
+.km-res section { margin-top: 4px; }
+.km-ent { margin: 0; padding-left: 0; list-style: none; counter-reset: km; display: grid; gap: 8px; }
+.km-ent li { counter-increment: km; position: relative; padding: 10px 12px 10px 44px; border-radius: 12px; background: #1e1a2c; }
+.km-ent li::before { content: counter(km); position: absolute; left: 12px; top: 10px; width: 22px; height: 22px; border-radius: 50%; background: #3a3355; color: #fff; font-size: 13px; font-weight: 800; display: grid; place-items: center; }
+.km-ent li.ja::before { content: '✓'; background: #3fa66b; }
+.km-ent li.nein::before { background: #b7791f; }
+.km-ent li b { color: #fff; }
+.km-ent li span { display: block; color: #c9c2dd; font-size: 15px; margin-top: 2px; }
+.km-mom { margin: 0; padding-left: 20px; }
+.km-sk { padding: 2px 14px 6px; border-radius: 14px; background: #1b2a22; border: 1px solid #2f5a42; }
+.km-sk h3 { color: #6fd39a; }
+.km-gruppe { padding: 2px 14px 8px; border-radius: 14px; background: #2a2140; border: 1px solid var(--km); }
+.km-gruppe p { color: #fff !important; font-size: 18px !important; font-weight: 700; }
+.km-zitat { font-style: italic; color: #fff !important; }
+.km-hinweis { font-size: 13px !important; color: #a59fbd !important; margin-top: 12px; }
+.km-hud { position: fixed; left: max(16px, env(safe-area-inset-left)); z-index: 20; padding: 7px 16px; border-radius: 999px; background: rgba(21, 18, 31, .92); color: #fff; font: 700 15px system-ui, sans-serif; border: 2px solid #a77bff; box-shadow: 0 4px 14px rgba(0, 0, 0, .25); pointer-events: none; max-width: calc(100vw - 32px); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+@media (max-width: 560px) { .km-fakten { grid-template-columns: 1fr; } .ly-k-km h2 { font-size: 23px; } }

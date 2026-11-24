@@ -106,6 +106,12 @@ export function levelVon(gesamt = 0) {
   return { level: l, max: LEVEL_AB.length, naechste, fehlt: naechste == null ? 0 : naechste - gesamt, anteil: naechste == null ? 1 : (gesamt - LEVEL_AB[l - 1]) / (naechste - LEVEL_AB[l - 1]) };
 }
 const lv = (S) => levelVon(S.jetonsGesamt || 0).level;
+// Kurs-Missionen (REAL TALK ↔ Spiel, kursmission.js): jede geschaffte Mission bringt ihr Teil – fest, nicht zufällig
+import KURS from './kurs-missionen.json';
+for (const [heft, liste] of Object.entries(KURS.hefte)) for (const [i, k] of liste.entries()) {
+  GARDEROBE.push({ id: 'km_' + k.code, ...k.item, name: k.belohnung, hinweis: 'Mission „' + k.titel + '“ (REAL TALK #' + heft + ', Stunde ' + (i + 1) + ')',
+    test: (S) => !!(S.merke && S.merke.km && S.merke.km.fertig && S.merke.km.fertig[k.code]) });
+}
 GARDEROBE.push(
   { id: 'l_brett_gold', art: 'fahrt', ziel: 'deck', wert: '#ffd166', sy: '✨', name: 'Brett „Gold“', hinweis: 'Dorf-Level 11', level: 11, test: (S) => lv(S) >= 11 },
   { id: 'l_trotti_eis', art: 'fahrt', ziel: 'trotti', wert: '#9fe3ff', sy: '❄️', name: 'Trottinette „Eisblau“', hinweis: 'Dorf-Level 14', level: 14, test: (S) => lv(S) >= 14 },

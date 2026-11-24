@@ -44,6 +44,7 @@ import { createKicker3d } from './kicker3d.js';
 import { createBillard } from './billard.js';
 import { kevinRennt } from './arcade.js';
 import { createBotengang } from './botengang.js';
+import { createKursMissionen, KM_CREW } from './kursmission.js';
 import { createBuchstaben } from './buchstaben.js';
 import { tanzSpiel } from './tanz.js';
 import { createDosen } from './dosen.js';
@@ -417,6 +418,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   for (const st of STAMM) STATISTEN.push({ ...st.aussehen, steht: [...st.steht], stamm: st.id });
   // Figuren der Situationen (situationen.js): Ältere an der Lichtung, Mika, Mo vor dem Laden, Tante Lisette in der Épicerie
   for (const [id, d] of Object.entries(SIT_LEUTE)) STATISTEN.push({ ...d.aussehen, steht: [...d.steht], sitPerson: id });
+  // Kurs-Missionen (kursmission.js): die Leute aus den REAL-TALK-Heften – unsichtbar, bis eine Mission sie an einen Ort stellt
+  for (const [id, d] of Object.entries(KM_CREW)) STATISTEN.push({ ...d.aussehen, steht: [1e5, 1e5, 0, ''], kmPerson: id });
   let brett = null;
   async function statistenLaden() {
     for (const d of STATISTEN) {
@@ -424,6 +427,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       f.group.add(fussSchatten()); scene.add(f.group);
       if (d.stamm) { const sg = STAMM.find((q) => q.id === d.stamm); if (sg) f.group.add(namensschild(sg.name, sg.farbe)); }
       if (d.sitPerson && !SIT_LEUTE[d.sitPerson].stumm) { const sl = SIT_LEUTE[d.sitPerson]; f.group.add(namensschild(sl.name, sl.farbe)); }
+      if (d.kmPerson) { const kc = KM_CREW[d.kmPerson]; f.group.add(namensschild(kc.name, kc.farbe)); }
       const st = d.steht || (d.skate ? [d.skate[0], d.skate[2], Math.PI / 2] : d.eis ? [d.eis.cx + Math.cos(d.eis.ph) * d.eis.rx, d.eis.cz + Math.sin(d.eis.ph) * d.eis.rz, 0] : null);
       const p = new THREE.Vector3(st ? st[0] : d.weg[0][0], 0, st ? st[1] : d.weg[0][1]);
       const x = { d, f, p, i: 1, warte: Math.random() * 3, h: { x: p.x, z: p.z, r: 0.3 }, richtung: 1 };
@@ -2211,6 +2215,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     return z;
   }
   // Handy (📱 / N): alle Nachrichten aus Gruppen und von Leuten, die du getroffen hast – sie bleiben, bis das Jahr vorbei ist
+  ui.onMission = () => { if (!S || imGespraech || km.imSzene()) return; km.fenster(); };
   ui.onHandy = async () => {
     if (!S || imGespraech || probe) return;
     const log = S.merke.handyLog || [];
@@ -2803,6 +2808,55 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       if (neu && alle && !S.merke.titelBote) { S.merke.titelBote = true; S.trotti = '#ff9f1c'; ui.toast('<b>🛴 Neue Trottinette: Orange</b><span>Alle acht Botengänge geschafft. Das Dorf kennt dich jetzt.</span>', 'ly-t-ent'); }
       if (anzahl === 3) ui.toast('<b>🥐 Rosa</b><span>„Drei Botengänge! Ab jetzt heißt du bei mir: die Rakete.“</span>');
     } });
+  // ---------- Kurs-Missionen (REAL TALK ↔ Spiel): Code aus dem Heft, Wege, Szenen, Resümee, Lehrer-Ansicht ----------
+  function kmFrei(x, z, r = 0.45) { return !welt.kasten.some((k) => (k.y0 || 0) < 1.6 && x + r > k.x0 && x - r < k.x1 && z + r > k.z0 && z - r < k.z1); }
+  function kmPlatz(x, z) {   // nächster freier Punkt (Spirale bis 3 m)
+    if (kmFrei(x, z)) return [x, z];
+    for (let r = 0.4; r <= 3; r += 0.4) for (let a = 0; a < 12; a++) { const nx = x + Math.cos(a * Math.PI / 6) * r, nz = z + Math.sin(a * Math.PI / 6) * r; if (kmFrei(nx, nz)) return [nx, nz]; }
+    return [x, z];
+  }
+  function kmCrew(plan = {}, ziel = null) {
+    for (const x of statisten) {
+      if (!x.d.kmPerson) continue;
+      const st = plan[x.d.kmPerson];
+      if (!st) { x.weg = true; x.f.group.visible = false; x.h.x = x.h.z = 1e5; x.p.set(1e5, 0, 1e5); x.f.group.position.set(1e5, 0, 1e5); continue; }
+      const [px, pz] = kmPlatz(st[0], st[1]), halt = st[3] || '';
+      const yaw = st[2] != null ? st[2] : ziel ? Math.atan2(ziel[0] - px, ziel[1] - pz) : 0;
+      x.p.set(px, 0, pz); x.f.group.position.set(px, 0, pz); x.f.group.rotation.y = yaw; x.h.x = px; x.h.z = pz; x.d.steht = [px, pz, yaw, halt];
+      x.weg = false; x.f.group.visible = true; if (x.f.group.children[0]) x.f.group.children[0].visible = true;
+      if (halt === 'redet') x.f.spiele('Interact', { tempo: 0.35 }); else if (halt === 'handy') x.f.spiele('Idle_Neutral'); else x.f.spiele('Idle');
+    }
+  }
+  const kmApi = {
+    sag: async (wer, t) => {
+      const c = KM_CREW[wer], L = !c && (SIT_LEUTE[wer] || STAMM.find((q) => q.id === wer));
+      const w = /^h:/.test(wer) ? { wer: '📱 ' + wer.slice(2), farbe: '#5b6472' } : c ? { wer: c.name, farbe: c.farbe } : L ? { wer: L.name, farbe: L.farbe } : sprecher(wer === 'du' ? 'du' : wer === 'e' ? 'erzaehler' : wer);
+      const x = statisten.find((q) => q.d.kmPerson === wer && !q.weg) || statisten.find((q) => q.d.stamm === wer && !q.weg && q.f.group.visible && steuerung.pos.distanceTo(q.f.group.position) < 8);
+      if (x) steuerung.fokus = x.f.group.position;
+      steuerung.gegenSchuss = wer === 'du' && !!steuerung.fokus;
+      if (x && x.f.redet) x.f.redet(true);
+      { const g = gesteZu(t), f = wer === 'du' ? spieler : x && x.f; if (g && f && f.geste) setTimeout(() => f.geste(g), 250); }
+      if (spieler && spieler.redet) spieler.redet(wer === 'du');
+      await ui.sprich({ ...w, text: ersetze(t) });
+      if (x && x.f.redet) x.f.redet(false);
+    },
+    sitzung: async (fn, wer) => {
+      if (imGespraech) return false;
+      const x = wer && statisten.find((q) => q.d.kmPerson === wer && !q.weg);
+      await sitGespraech(fn, x ? x.f.group.position : null); return true;
+    },
+    blende: async (t) => { ui.dialogZu(); await ui.blende(t); await new Promise((r) => setTimeout(r, 1400)); await ui.blendeAus(300); },
+    crew: kmCrew,
+    ersetze: (t) => ersetze(t),
+    belohnung: (info) => {
+      jetons(3, 'Mission „' + info.titel + '“');
+      const g = GARDEROBE.find((x) => x.id === 'km_' + info.code);
+      if (g) ui.belohnung({ sy: g.sy, name: g.name, art: 'Mission geschafft', onKnopf: () => gleichAnziehen(g.id) });
+      else ui.toast('<b>🎟 Mission geschafft</b><span>' + info.belohnung + '</span>', 'ly-t-ent');
+    },
+  };
+  const km = createKursMissionen({ scene, steuerung, ui, ton, vib, zustand: () => S, sichern: () => sichern(), api: kmApi });
+  let kmGeladen = false;
   // ---------- S-K-A-T-E im Skatepark: fünf Buchstaben über den Rampen, nur mit Sprung auf dem Brett ----------
   const buchstaben = createBuchstaben({ scene, steuerung, ui, ton, vib, zustand: () => S, sichern: () => sichern(),
     belohnung: (art) => {
@@ -3536,6 +3590,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       if (!S.merke.eisTipp) { S.merke.eisTipp = 1; sichern(); ui.toast('<b>⛸️ Eisbahn!</b><span>Du rutschst mit Schwung. Lenken und Bremsen dauern länger.</span>', 'ly-t-ent'); }
     }
     botengang.tick(dt, { sichtbar: !!(laeuft && S && !imGespraech && !ui.ebeneArt() && !volley.aktiv() && !elfmeter.aktiv() && !kickerAn), faehrt: !!fahrt });
+    if (laeuft && S && !kmGeladen && statisten.length) { kmGeladen = true; km.fortsetzen(); }
+    km.tick(dt, { sichtbar: !!(laeuft && S && !imGespraech && !ui.ebeneArt() && !volley.aktiv() && !elfmeter.aktiv() && !kickerAn && !fahrt) });
     entenTick(dt, performance.now() / 1000);
     fahrerTick(dt, imGespraech || !laeuft);
     if (S && laeuft && !elfmeter.aktiv()) fussball.tick(dt);
@@ -3746,7 +3802,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   // Tests
   window.LYCEE = {
     get zustand() { return S; }, get schritt() { return SCHRITTE[S ? S.schritt : 0].id; }, get imGespraech() { return imGespraech; },
-    welt, steuerung, leute, sky, camera, scene, req, ui, rr,
+    welt, steuerung, leute, sky, camera, scene, req, ui, rr, km,
     springe: async (i) => { await starteSchritt(typeof i === 'number' ? i : SCHRITTE.findIndex((s) => s.id === i), true); },
     sitProbe: (id) => situationProbieren({ situation: id, name: 'Sam', figur: 0 }),   // Test: Situation wie „Für Lehrpersonen“ starten
     teleport: (ort, yaw) => { const o = typeof ort === 'string' ? welt.orte[ort] : ort; steuerung.teleport(o.x, o.z, yaw !== undefined ? yaw : o.yaw); },

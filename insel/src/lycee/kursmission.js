@@ -1,0 +1,330 @@
+// Annexe Junglinster – Kurs-Missionen (REAL TALK Jahr 1 ↔ Spiel, Auftrag 24.11.2026).
+// „Die Missionen sollen nicht undurchdacht, sondern wirklich deep sein, praxisnah, mit Impact – und am Ende ein Resümee,
+// das die Lehrperson sehen kann, damit man darüber reden kann.“
+//
+// Ablauf: Am Ende jeder Kurs-Stunde steht im Heft ein Ticket mit Code (und QR „ANNEXE:<code>“). Im Spiel: 🎟 → Code
+// eingeben → Missionskarte → Haken (warum jetzt?) → Schritte an echten Orten (violetter Lichtstrahl, Pfeil unter den
+// Füßen) → am Ort startet die Szene von selbst → Entscheidungen mit Folgen (auch in späteren Missionen) → Wendung →
+// Abschluss → Resümee (Entscheidungen und Folgen, Skill, ein eigener Satz freiwillig, Frage für die Gruppe) → Belohnung.
+// Lehrer-Ansicht: Code „LEHRER“ im selben Feld → alle Resümees auf diesem Gerät, Teilen (AirDrop, Mail) oder Kopieren.
+//
+// Skript einer Mission (missionen/hNN.js):
+//   { start: [Zeilen], schritte: [{ ziel, ort, p: [x, z], leute: { crewId: [x, z, yaw, haltung] }, zeilen, wenn? }],
+//     ende: [Zeilen], resuemee: { frage, satz } }
+// Zeilen: ['wer', 'Text'] (wer: Crew-Id, 'du', 'e' = Erzähler, 'h:Name' = Nachricht aufs Handy, Stammgast-Id)
+//   { wahl: [{ t, log?, folge?, skill?: true|false, setze?: { k: v }, dann?: [Zeilen] }], frage? }
+//   { wenn: (f) => bool, dann: [Zeilen], sonst?: [Zeilen] } · { setze: { k: v } } · { moment: 'Wendung fürs Resümee' }
+//   { notiz: 'Frage', platz? } (eigener Text, freiwillig) · { skala: 'Frage', links, rechts } (0–10) · { blende: 'Text' }
+// f = Merkzettel über alle Missionen (S.merke.kmf): Entscheidungen wirken in späteren Missionen weiter.
+// Keine echten Namen, keine Familie des Spielers, Hilfe: 116 111 · 112 · BEE SECURE 8002 1234. Belohnungen nur verdient.
+import * as THREE from 'three';
+import INFO from './kurs-missionen.json';
+import H00 from './missionen/h00.js';
+import H01 from './missionen/h01.js';
+import H02 from './missionen/h02.js';
+import H03 from './missionen/h03.js';
+import H04 from './missionen/h04.js';
+import H05 from './missionen/h05.js';
+import H06 from './missionen/h06.js';
+import H07 from './missionen/h07.js';
+import H08 from './missionen/h08.js';
+
+export const SKRIPTE = { ...H00, ...H01, ...H02, ...H03, ...H04, ...H05, ...H06, ...H07, ...H08 };
+
+// Die Leute aus den REAL-TALK-Heften (alle erfunden) – im Spiel treffen die Jugendlichen sie wieder.
+export const KM_CREW = {
+  finn: { name: 'Finn', farbe: '#e0784a', aussehen: { modell: 'menschen', stil: 'Casual2', haut: '#efc9a6', haar: '#7a4a2a', oben: '#e0784a', unten: '#2d3748', schuhe: '#2b2b2b', hoehe: 1.72 } },
+  lio: { name: 'Lio', farbe: '#2fb8a8', aussehen: { modell: 'menschen', stil: 'Casual', haut: '#b98561', haar: '#1b1410', oben: '#2fb8a8', unten: '#3a3f4b', schuhe: '#f2f2f2', hoehe: 1.7, frisur: 'locken' } },
+  amira: { name: 'Amira', farbe: '#c0602a', aussehen: { modell: 'frauen', stil: 'Casual', haut: '#d6a57f', haar: '#2b1d14', oben: '#c0602a', unten: '#2d3748', schuhe: '#f2f2f2', hoehe: 1.62 } },
+  chloe: { name: 'Chloé', farbe: '#e85d75', aussehen: { modell: 'frauen', stil: 'Adventurer', haut: '#f6ddc8', haar: '#c9a15a', oben: '#e85d75', unten: '#3a3f4b', schuhe: '#2b2b2b', hoehe: 1.6 } },
+  mia: { name: 'Mia', farbe: '#7a5af5', aussehen: { modell: 'frauen', stil: 'Casual', haut: '#f2d2b6', haar: '#5a3a24', oben: '#7a5af5', unten: '#2d3748', schuhe: '#ffffff', hoehe: 1.58 } },
+  sara: { name: 'Sara', farbe: '#3fa66b', aussehen: { modell: 'frauen', stil: 'Punk', haut: '#c68e64', haar: '#1b1410', oben: '#3fa66b', unten: '#2b2b33', schuhe: '#2b2b2b', hoehe: 1.64 } },
+  malik: { name: 'Malik', farbe: '#3f78b8', aussehen: { modell: 'menschen', stil: 'Casual', haut: '#9b6a45', haar: '#1b1410', oben: '#3f78b8', unten: '#2d3748', schuhe: '#e9b949', hoehe: 1.78, kopf: 'cap', kopfFarbe: '#2b2b33' } },
+  jade: { name: 'Jade', farbe: '#d9a21b', aussehen: { modell: 'frauen', stil: 'Casual', haut: '#8d5a3b', haar: '#1b1410', oben: '#d9a21b', unten: '#3a3f4b', schuhe: '#f2f2f2', hoehe: 1.66 } },
+  lenz: { name: 'Herr Lenz · Jugendhaus', farbe: '#2f4f45', erwachsen: true, aussehen: { modell: 'menschen', stil: 'Casual', haut: '#e8bf9a', haar: '#6d6d6d', oben: '#2f4f45', unten: '#3a3f4b', schuhe: '#3a2a1c', hoehe: 1.8 } },
+  brandt: { name: 'Frau Brandt · Trainerin', farbe: '#6b4e8a', erwachsen: true, aussehen: { modell: 'frauen', stil: 'Formal', haut: '#f0c9a8', haar: '#8a5a3a', oben: '#6b4e8a', unten: '#2f2f3a', schuhe: '#2b2b2b', hoehe: 1.66 } },
+};
+
+const esc = (s) => String(s == null ? '' : s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const VIOLETT = '#a77bff';
+export const INFO_LISTE = Object.entries(INFO.hefte).flatMap(([heft, l]) => l.map((m, i) => ({ ...m, heft, nr: i + 1 })));
+const infoVon = (code) => INFO_LISTE.find((m) => m.code === code);
+// Code säubern: Groß, ohne Leerzeichen, „ANNEXE:“ vom QR weg, O/0 und Bindestrich großzügig
+export function codeNorm(roh) {
+  let c = String(roh || '').toUpperCase().replace(/^\s*ANNEXE\s*:\s*/, '').replace(/[\s_.]+/g, '').replace(/–|—/g, '-');
+  if (c === 'LEHRER' || c === 'LEHRERIN' || c === 'LEHRPERSON') return 'LEHRER';
+  const treffer = INFO_LISTE.find((m) => m.code === c || m.code.replace('-', '') === c.replace('-', '') || m.code.replace('-', '') === c.replace(/O/g, '0').replace('-', ''));
+  return treffer ? treffer.code : null;
+}
+
+export function createKursMissionen({ scene, steuerung, ui, ton = () => {}, vib = () => {}, zustand, sichern, api }) {
+  const M = () => { const S = zustand(); S.merke.km = S.merke.km || { frei: [], aktiv: null }; S.merke.kmf = S.merke.kmf || {}; return S.merke.km; };
+  const F = () => (zustand().merke.kmf = zustand().merke.kmf || {});
+
+  // ---------- Wegweiser: violetter Lichtstrahl, Ring, Symbol, Pfeil unter den Füßen ----------
+  const mat = (o) => new THREE.MeshBasicMaterial({ color: VIOLETT, transparent: true, depthWrite: false, side: THREE.DoubleSide, toneMapped: false, ...o });
+  const strahl = new THREE.Mesh(new THREE.CylinderGeometry(0.5, 0.5, 30, 16, 1, true), mat({ opacity: 0.3 })); strahl.visible = false; scene.add(strahl);
+  const ring = new THREE.Mesh(new THREE.RingGeometry(1.5, 1.85, 40), mat({ opacity: 0.85 })); ring.rotation.x = -Math.PI / 2; ring.visible = false; scene.add(ring);
+  const cv = document.createElement('canvas'); cv.width = cv.height = 128; const g2 = cv.getContext('2d');
+  g2.fillStyle = VIOLETT; g2.beginPath(); g2.arc(64, 64, 58, 0, 7); g2.fill(); g2.lineWidth = 8; g2.strokeStyle = '#fff'; g2.stroke();
+  g2.font = '64px "Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji",sans-serif'; g2.textAlign = 'center'; g2.textBaseline = 'middle'; g2.fillText('🎟', 64, 70);
+  const tex = new THREE.CanvasTexture(cv); tex.colorSpace = THREE.SRGBColorSpace;
+  const symbol = new THREE.Sprite(new THREE.SpriteMaterial({ map: tex, depthTest: false, transparent: true, toneMapped: false })); symbol.scale.set(1.3, 1.3, 1); symbol.visible = false; symbol.renderOrder = 5; scene.add(symbol);
+  const pf = new THREE.Shape(); pf.moveTo(0, 0.95); pf.lineTo(0.5, 0.25); pf.lineTo(0.18, 0.25); pf.lineTo(0.18, -0.45); pf.lineTo(-0.18, -0.45); pf.lineTo(-0.18, 0.25); pf.lineTo(-0.5, 0.25); pf.closePath();
+  const pfeil = new THREE.Mesh(new THREE.ShapeGeometry(pf), mat({ opacity: 0.9 })); pfeil.geometry.rotateX(-Math.PI / 2); pfeil.visible = false; scene.add(pfeil);
+  const hud = document.createElement('div'); hud.className = 'km-hud'; hud.hidden = true; document.body.appendChild(hud);
+  const verstecken = () => { strahl.visible = ring.visible = symbol.visible = pfeil.visible = false; hud.hidden = true; };
+
+  // ---------- Laufzeit ----------
+  let lauf = null;   // { code, def, i, log: [], momente: [], notizen: [], skalen: [], t0, inSzene }
+  const aktivDef = () => lauf && lauf.def;
+  const schritt = () => lauf && lauf.def.schritte[lauf.i];
+  function crewSetzen() {
+    const st = schritt();
+    api.crew(st ? st.leute || {} : {}, st && st.p);
+  }
+  function zeigeZiel() {
+    const st = schritt(); if (!st) { verstecken(); return; }
+    crewSetzen();
+    if (!st.p) { verstecken(); lauf.warte = 1.2; return; }   // Szene ohne Ort (abends, am Handy): beginnt gleich
+    const [x, z] = st.p;
+    strahl.position.set(x, 15, z); ring.position.set(x, 0.07, z); symbol.position.set(x, 3.3, z);
+    strahl.visible = ring.visible = symbol.visible = true;
+  }
+  // nächster gültiger Schritt (Schritte mit „wenn“ fallen weg, wenn es nicht passt)
+  function weiterZu(i) {
+    while (i < lauf.def.schritte.length && lauf.def.schritte[i].wenn && !lauf.def.schritte[i].wenn(F())) i++;
+    lauf.i = i;
+    const m = M(); m.aktiv = { code: lauf.code, i, log: lauf.log, momente: lauf.momente, notizen: lauf.notizen, skalen: lauf.skalen, t0: lauf.t0 };
+    sichern();
+    if (i >= lauf.def.schritte.length) { abschluss(); return; }
+    zeigeZiel();
+    const st = schritt(); ui.toast('<b>🎟 ' + esc(infoVon(lauf.code).titel) + ' · ' + (i + 1) + '/' + lauf.def.schritte.length + '</b><span>' + esc(st.ziel) + '</span>');
+  }
+
+  // Zeilen abspielen (siehe Kopf). ctx = laufende Mission.
+  async function spiele(zeilen) {
+    for (const z of zeilen || []) {
+      if (Array.isArray(z)) { await api.sag(z[0], z[1]); continue; }
+      if (z.wahl) {
+        const opt = z.wahl.filter((w) => !w.wenn || w.wenn(F()));
+        const i = await ui.waehle(opt.map((w) => api.ersetze(w.t)), z.frage ? api.ersetze(z.frage) : '');
+        const w = opt[i]; vib(10);
+        const besser = w.skill === false ? opt.find((o) => o.skill === true) : null;
+        if (w.privat) { if (w.setze) Object.assign(F(), w.setze); if (w.dann) await spiele(w.dann); continue; }   // nur für die Person selbst: nicht ins Resümee
+        lauf.log.push({ t: api.ersetze(w.log || w.t), folge: w.folge ? api.ersetze(w.folge) : '', skill: w.skill === true ? 1 : w.skill === false ? 0 : null, besser: besser ? api.ersetze(besser.t) : '' });
+        if (w.setze) Object.assign(F(), w.setze);
+        sichern();
+        if (w.dann) await spiele(w.dann);
+        continue;
+      }
+      if (z.wenn) { await spiele(z.wenn(F()) ? z.dann : z.sonst || []); continue; }
+      if (z.setze) { Object.assign(F(), z.setze); sichern(); continue; }
+      if (z.moment) { lauf.momente.push(api.ersetze(z.moment)); continue; }
+      if (z.blende) { await api.blende(api.ersetze(z.blende)); continue; }
+      if (z.notiz) { const t = await eingabe(z.notiz, z.platz || ''); if (t) lauf.notizen.push({ frage: z.notiz, text: t }); continue; }
+      if (z.skala) { const v = await skala(z.skala, z.links || '0', z.rechts || '10'); lauf.skalen.push({ frage: z.skala, wert: v }); continue; }
+    }
+  }
+  // Freitext (freiwillig) – als kleines Feld über dem Dialog
+  function eingabe(frage, platz) {
+    return new Promise((ok) => {
+      ui.dialogZu();
+      const k = ui.ebeneAuf('km', '<div class="km-eingabe"><span class="km-kicker">Freiwillig · steht in deinem Resümee</span><h3>' + esc(frage) + '</h3><textarea rows="3" maxlength="240" placeholder="' + esc(platz) + '"></textarea>' +
+        '<div class="km-knoepfe"><button type="button" class="ly-btn" data-a="nein">Überspringen</button><button type="button" class="ly-btn ly-primaer" data-a="ja">Fertig</button></div></div>');
+      const ta = k.querySelector('textarea'); setTimeout(() => ta.focus(), 60);
+      const zu = (t) => { ui.ebeneZu(); ok(t); };
+      k.querySelector('[data-a="ja"]').onclick = () => zu(ta.value.trim());
+      k.querySelector('[data-a="nein"]').onclick = () => zu('');
+    });
+  }
+  function skala(frage, links, rechts) {
+    return new Promise((ok) => {
+      ui.dialogZu();
+      const k = ui.ebeneAuf('km', '<div class="km-eingabe"><span class="km-kicker">Ehrlich · steht in deinem Resümee</span><h3>' + esc(frage) + '</h3><div class="km-skala"><span>' + esc(links) + '</span><input type="range" min="0" max="10" step="1" value="5"><span>' + esc(rechts) + '</span></div><b class="km-wert">5</b>' +
+        '<div class="km-knoepfe"><button type="button" class="ly-btn ly-primaer" data-a="ja">So ist es</button></div></div>');
+      const r = k.querySelector('input'), w = k.querySelector('.km-wert');
+      r.addEventListener('keydown', (e) => e.stopPropagation()); r.oninput = () => { w.textContent = r.value; };
+      k.querySelector('[data-a="ja"]').onclick = () => { ui.ebeneZu(); ok(+r.value); };
+    });
+  }
+
+  async function szene() {
+    const st = schritt(); if (!st || lauf.inSzene) return;
+    lauf.inSzene = true; verstecken();
+    let ok = false;
+    try { ok = await api.sitzung(async () => { await spiele(st.zeilen); }, st.leute && Object.keys(st.leute)[0]); } finally { if (lauf) lauf.inSzene = false; }
+    if (!ok || !lauf) return;
+    weiterZu(lauf.i + 1);
+  }
+
+  async function abschluss() {
+    const L = lauf, info = infoVon(L.code);
+    verstecken();
+    if (L.def.ende && L.def.ende.length) { lauf.inSzene = true; try { await api.sitzung(() => spiele(L.def.ende)); } finally { lauf.inSzene = false; } }
+    api.crew({});
+    const ja = L.log.filter((x) => x.skill === 1).length, von = L.log.filter((x) => x.skill != null).length;
+    const eintrag = { code: L.code, titel: info.titel, skill: info.skill, heft: info.heft, nr: info.nr, ort: info.ort, datum: new Date().toISOString(), min: Math.max(1, Math.round((Date.now() - L.t0) / 60000)),
+      entscheidungen: L.log, momente: L.momente, notizen: L.notizen, skalen: L.skalen, skillJa: ja, skillVon: von, frage: (L.def.resuemee || {}).frage || '', satz: '' };
+    const m = M(); m.aktiv = null; m.fertig = m.fertig || {};
+    const neu = !m.fertig[L.code];
+    lauf = null;
+    eintrag.satz = await resuemeeZeigen(eintrag, { eigenerSatz: (L.def.resuemee || {}).satz || 'Mein Satz zu dieser Mission:' });
+    m.fertig[L.code] = eintrag; m.verlauf = (m.verlauf || []).concat([{ code: eintrag.code, datum: eintrag.datum }]).slice(-80);
+    sichern();
+    if (neu) api.belohnung(info);
+  }
+
+  // ---------- Resümee ----------
+  const skillText = (e) => !e.skillVon ? 'In dieser Mission ging es vor allem ums Hinschauen.' :
+    e.skillJa === e.skillVon ? 'Du hast den Skill jedes Mal angewendet (' + e.skillJa + ' von ' + e.skillVon + ').' :
+    e.skillJa === 0 ? 'Diesmal hast du den Skill noch nicht eingesetzt. Das ist ein Anfang: Jetzt weißt du, wo er gefehlt hätte.' :
+    'Du hast den Skill ' + e.skillJa + ' von ' + e.skillVon + ' Mal angewendet.';
+  function resuemeeHtml(e, { mitFeld = false, name = '' } = {}) {
+    const d = new Date(e.datum);
+    const gut = e.entscheidungen.filter((x) => x.skill === 1), probier = e.entscheidungen.filter((x) => x.skill === 0 && x.besser);
+    return '<div class="km-res"><div class="km-res-kopf"><span class="km-kicker">Resümee · REAL TALK #' + esc(e.heft) + ' · Stunde ' + e.nr + (name ? ' · ' + esc(name) : '') + '</span><h2>' + esc(e.titel) + '</h2>' +
+      '<p class="km-skill">Skill: <b>' + esc(e.skill) + '</b> · ' + d.toLocaleDateString('de-LU') + ' · ' + e.min + ' Min.</p></div>' +
+      '<section><h3>Was du entschieden hast – und was dann passiert ist</h3><ol class="km-ent">' + e.entscheidungen.map((x) => '<li class="' + (x.skill === 1 ? 'ja' : x.skill === 0 ? 'nein' : '') + '"><b>' + esc(x.t) + '</b>' + (x.folge ? '<span>→ ' + esc(x.folge) + '</span>' : '') + '</li>').join('') + '</ol></section>' +
+      (e.momente.length ? '<section><h3>Die Wendung</h3><ul class="km-mom">' + e.momente.map((t) => '<li>' + esc(t) + '</li>').join('') + '</ul></section>' : '') +
+      '<section class="km-sk"><h3>Dein Skill</h3><p>' + esc(skillText(e)) + '</p>' +
+      (gut.length ? '<p><b>Das lief gut:</b> ' + gut.slice(0, 3).map((x) => esc(x.t)).join(' · ') + '</p>' : '') +
+      (probier.length ? '<p><b>Nächstes Mal probieren:</b> ' + probier.slice(0, 2).map((x) => esc(x.besser)).join(' · ') + '</p>' : '') + '</section>' +
+      (e.skalen.length ? '<section><h3>Deine Einschätzung</h3><ul class="km-mom">' + e.skalen.map((s) => '<li>' + esc(s.frage) + ' <b>' + s.wert + ' / 10</b></li>').join('') + '</ul></section>' : '') +
+      (e.notizen.length ? '<section><h3>Deine Notizen</h3><ul class="km-mom">' + e.notizen.map((n) => '<li>' + esc(n.frage) + ' <i>„' + esc(n.text) + '“</i></li>').join('') + '</ul></section>' : '') +
+      (mitFeld ? '<section><h3>Dein Satz (freiwillig)</h3><textarea class="km-satz" rows="2" maxlength="240" placeholder="' + esc(mitFeld) + '"></textarea></section>' : (e.satz ? '<section><h3>Dein Satz</h3><p class="km-zitat">„' + esc(e.satz) + '“</p></section>' : '')) +
+      '<section class="km-gruppe"><h3>💬 Frage für die Gruppe</h3><p>' + esc(e.frage) + '</p></section></div>';
+  }
+  function resuemeeZeigen(e, { eigenerSatz }) {
+    return new Promise((ok) => {
+      ui.dialogZu();
+      const k = ui.ebeneAuf('km', resuemeeHtml(e, { mitFeld: eigenerSatz, name: zustand().name }) +
+        '<p class="km-hinweis">Gespeichert auf diesem Gerät. Deine Lehrperson kann es sich mit dir ansehen.</p><div class="km-knoepfe"><button type="button" class="ly-btn" data-a="teilen">Teilen</button><button type="button" class="ly-btn ly-primaer" data-a="ok">Fertig</button></div>');
+      ton('melodie2');
+      const satz = () => (k.querySelector('.km-satz') || {}).value || '';
+      k.querySelector('[data-a="teilen"]').onclick = () => teilen([{ ...e, satz: satz().trim() }]);
+      k.querySelector('[data-a="ok"]').onclick = () => { const s = satz().trim(); ui.ebeneZu(); ok(s); };
+    });
+  }
+  const alsText = (e, name) => [
+    'REAL TALK – Mission „' + e.titel + '“ (#' + e.heft + ', Stunde ' + e.nr + ')' + (name ? ' · ' + name : ''),
+    'Skill: ' + e.skill + ' · ' + new Date(e.datum).toLocaleDateString('de-LU') + ' · ' + e.min + ' Min.',
+    'Entscheidungen:', ...e.entscheidungen.map((x, i) => (i + 1) + '. ' + x.t + (x.folge ? ' → ' + x.folge : '') + (x.skill === 1 ? ' ✓' : '')),
+    ...(e.momente.length ? ['Wendung: ' + e.momente.join(' ')] : []),
+    skillText(e),
+    ...(e.skalen.length ? e.skalen.map((s) => s.frage + ' ' + s.wert + '/10') : []),
+    ...(e.notizen.length ? e.notizen.map((n) => n.frage + ' „' + n.text + '“') : []),
+    ...(e.satz ? ['Mein Satz: „' + e.satz + '“'] : []),
+    'Frage für die Gruppe: ' + e.frage,
+  ].join('\n');
+  async function teilen(liste) {
+    const name = zustand().name || '';
+    const text = liste.map((e) => alsText(e, name)).join('\n\n———\n\n');
+    try { if (navigator.share) { await navigator.share({ title: 'REAL TALK – Resümee' + (name ? ' von ' + name : ''), text }); return; } } catch (e) { if (e && e.name === 'AbortError') return; }
+    try { await navigator.clipboard.writeText(text); ui.toast('<b>📋 Kopiert</b><span>Jetzt in eine Mail oder Nachricht einfügen.</span>'); }
+    catch (e) { ui.toast('<b>Teilen geht hier nicht</b><span>Bitte die Lehrer-Ansicht zeigen.</span>'); }
+  }
+
+  // ---------- Missionen-Fenster: Code eingeben, Liste, Resümees ----------
+  function fenster(meldung = '') {
+    const m = M(), fertig = m.fertig || {};
+    const frei = INFO_LISTE.filter((x) => m.frei.includes(x.code) || fertig[x.code]);
+    const zeile = (x) => '<li class="' + (fertig[x.code] ? 'fertig' : m.aktiv && m.aktiv.code === x.code ? 'aktiv' : '') + '"><span class="km-heft">#' + x.heft + '·' + x.nr + '</span><div><b>' + esc(x.titel) + '</b><small>' + esc(x.skill) + ' · ' + esc(x.ort) + '</small></div>' +
+      (fertig[x.code] ? '<button type="button" class="ly-btn" data-res="' + x.code + '">Resümee</button><button type="button" class="ly-btn" data-start="' + x.code + '">Nochmal</button>' : '<button type="button" class="ly-btn ly-primaer" data-start="' + x.code + '">' + (m.aktiv && m.aktiv.code === x.code ? 'Weiter' : 'Starten') + '</button>') + '</li>';
+    const k = ui.ebeneAuf('km', '<button type="button" class="ly-zu" aria-label="Schließen">✕</button><div class="km-fenster"><span class="km-kicker">REAL TALK × Annexe</span><h2>🎟 Missionen</h2>' +
+      '<p class="km-leer">Den Code findest du am Ende jeder Stunde in deinem REAL-TALK-Heft.</p>' +
+      '<form class="km-code"><input type="text" inputmode="text" autocapitalize="characters" autocomplete="off" spellcheck="false" placeholder="z. B. TANK-6" maxlength="24" aria-label="Missions-Code"><button type="submit" class="ly-btn ly-primaer">Los</button></form>' +
+      (meldung ? '<p class="km-meldung">' + meldung + '</p>' : '') +
+      (lauf ? '<p class="km-laeuft">Läuft gerade: <b>' + esc(infoVon(lauf.code).titel) + '</b> – ' + esc((schritt() || {}).ziel || '') + ' <button type="button" class="ly-link" data-a="pause">pausieren</button></p>' : '') +
+      (frei.length ? '<ul class="km-liste">' + frei.map(zeile).join('') + '</ul>' : '<p class="km-leer">Noch keine Mission freigeschaltet.</p>') +
+      '<p class="km-fuss"><button type="button" class="ly-link" data-a="meine">Meine Resümees (' + Object.keys(fertig).length + ')</button></p></div>');
+    const inp = k.querySelector('input'); inp.addEventListener('keydown', (e) => e.stopPropagation()); setTimeout(() => inp.focus(), 80);
+    k.querySelector('.ly-zu').onclick = () => ui.ebeneZu();
+    k.querySelector('form').onsubmit = (e) => { e.preventDefault(); codeRein(inp.value); };
+    k.querySelectorAll('[data-start]').forEach((b) => { b.onclick = () => karte(b.dataset.start); });
+    k.querySelectorAll('[data-res]').forEach((b) => { b.onclick = () => einzeln(fertig[b.dataset.res], () => fenster()); });
+    const p = k.querySelector('[data-a="pause"]'); if (p) p.onclick = () => { pausieren(); fenster('Mission pausiert. Du kannst sie jederzeit weiterspielen.'); };
+    k.querySelector('[data-a="meine"]').onclick = () => lehrerAnsicht(false);
+  }
+  function codeRein(roh) {
+    const c = codeNorm(roh);
+    if (c === 'LEHRER') { lehrerAnsicht(true); return; }
+    if (!c) { ton('click'); fenster('Diesen Code kenne ich nicht. Schau noch mal ins Heft – zum Beispiel <b>TANK-6</b>.'); return; }
+    const m = M(); if (!m.frei.includes(c)) { m.frei.push(c); sichern(); ton('pling'); }
+    karte(c);
+  }
+  // Missionskarte: Titel, Skill, Ort, Haken, Belohnung
+  function karte(code) {
+    const x = infoVon(code), def = SKRIPTE[code];
+    if (!x) return fenster();
+    const k = ui.ebeneAuf('km', '<div class="km-karte"><span class="km-kicker">Mission · REAL TALK #' + x.heft + ' · Stunde ' + x.nr + '</span><h2>' + esc(x.titel) + '</h2>' +
+      '<p class="km-kurz">' + esc(x.kurz) + '</p><ul class="km-fakten"><li>📍 ' + esc(x.ort) + '</li><li>🧠 Skill: ' + esc(x.skill) + '</li><li>🎁 ' + esc(x.belohnung) + '</li><li>⏱ etwa ' + (def ? Math.max(8, def.schritte.length * 3) : 10) + ' Minuten</li></ul>' +
+      (def ? '' : '<p class="km-meldung">Diese Mission ist noch in Arbeit.</p>') +
+      '<div class="km-knoepfe"><button type="button" class="ly-btn" data-a="zurueck">Später</button>' + (def ? '<button type="button" class="ly-btn ly-primaer" data-a="los">Mission starten</button>' : '') + '</div></div>');
+    k.querySelector('[data-a="zurueck"]').onclick = () => fenster();
+    const los = k.querySelector('[data-a="los"]'); if (los) los.onclick = () => { ui.ebeneZu(); start(code); };
+  }
+  function pausieren() { if (!lauf) return; lauf = null; verstecken(); api.crew({}); sichern(); }
+  async function start(code) {
+    const def = SKRIPTE[code]; if (!def) return;
+    if (lauf && lauf.code !== code) pausieren();
+    const m = M();
+    const alt = m.aktiv && m.aktiv.code === code ? m.aktiv : null;
+    lauf = alt ? { code, def, i: alt.i, log: alt.log || [], momente: alt.momente || [], notizen: alt.notizen || [], skalen: alt.skalen || [], t0: alt.t0 || Date.now() }
+      : { code, def, i: 0, log: [], momente: [], notizen: [], skalen: [], t0: Date.now() };
+    if (!m.frei.includes(code)) m.frei.push(code);
+    ton('pling');
+    if (!alt && def.start && def.start.length) { lauf.inSzene = true; try { await api.sitzung(() => spiele(def.start)); } finally { lauf.inSzene = false; } }
+    if (!lauf) return;
+    weiterZu(lauf.i);
+  }
+
+  // ---------- Lehrer-Ansicht (Code LEHRER) und „Meine Resümees“ ----------
+  function lehrerAnsicht(lehrer) {
+    const m = M(), alle = Object.values(m.fertig || {}).sort((a, b) => (a.datum < b.datum ? 1 : -1)), name = zustand().name || '';
+    const k = ui.ebeneAuf('km', '<button type="button" class="ly-zu" aria-label="Schließen">✕</button><div class="km-fenster"><span class="km-kicker">' + (lehrer ? 'Für die Lehrperson' : 'Für dich') + '</span><h2>' + (lehrer ? 'Resümees von ' + esc(name || 'diesem Gerät') : 'Meine Resümees') + '</h2>' +
+      (lehrer ? '<p class="km-leer">Alles bleibt auf diesem Gerät. „Alle teilen“ öffnet AirDrop, Mail oder Nachrichten. Gut fürs Gespräch: erst die Entscheidungen ansehen, dann die Frage für die Gruppe.</p>' : '') +
+      (alle.length ? '<ul class="km-liste">' + alle.map((e) => '<li class="fertig"><span class="km-heft">#' + e.heft + '·' + e.nr + '</span><div><b>' + esc(e.titel) + '</b><small>' + new Date(e.datum).toLocaleDateString('de-LU') + ' · Skill ' + e.skillJa + '/' + e.skillVon + (e.satz ? ' · „' + esc(e.satz.slice(0, 40)) + (e.satz.length > 40 ? '…' : '') + '“' : '') + '</small></div><button type="button" class="ly-btn" data-res="' + e.code + '">Ansehen</button></li>').join('') + '</ul>' : '<p class="km-leer">Noch keine Mission abgeschlossen.</p>') +
+      '<div class="km-knoepfe">' + (alle.length ? '<button type="button" class="ly-btn" data-a="teilen">Alle teilen</button>' : '') + '<button type="button" class="ly-btn ly-primaer" data-a="zurueck">Zurück</button></div></div>');
+    k.querySelector('.ly-zu').onclick = () => ui.ebeneZu();
+    k.querySelector('[data-a="zurueck"]').onclick = () => fenster();
+    const t = k.querySelector('[data-a="teilen"]'); if (t) t.onclick = () => teilen(alle);
+    k.querySelectorAll('[data-res]').forEach((b) => { b.onclick = () => einzeln(m.fertig[b.dataset.res], () => lehrerAnsicht(lehrer)); });
+  }
+  function einzeln(e, zurueck) {
+    if (!e) return;
+    const k = ui.ebeneAuf('km', resuemeeHtml(e, { name: zustand().name }) + '<div class="km-knoepfe"><button type="button" class="ly-btn" data-a="teilen">Teilen</button><button type="button" class="ly-btn ly-primaer" data-a="zurueck">Zurück</button></div>');
+    k.querySelector('[data-a="teilen"]').onclick = () => teilen([e]);
+    k.querySelector('[data-a="zurueck"]').onclick = zurueck;
+  }
+
+  // ---------- jedes Bild: Ziel anzeigen, am Ort die Szene starten ----------
+  let anzeigeUhr = 0;
+  function tick(dt, { sichtbar = true } = {}) {
+    if (!lauf || lauf.inSzene) return;
+    const st = schritt(); if (!st) return;
+    if (!sichtbar) { verstecken(); return; }
+    if (!st.p) { lauf.warte = (lauf.warte || 0) - dt; if (lauf.warte <= 0) szene(); return; }
+    const p = steuerung.pos, [x, z] = st.p, dx = x - p.x, dz = z - p.z, d = Math.hypot(dx, dz);
+    strahl.visible = ring.visible = symbol.visible = true;
+    pfeil.visible = d > 5; pfeil.position.set(p.x, (p.y || 0) + 0.1, p.z); pfeil.rotation.y = Math.atan2(dx, dz);
+    ring.scale.setScalar(1 + Math.sin(performance.now() / 260) * 0.08); symbol.position.y = 3.3 + Math.sin(performance.now() / 400) * 0.15;
+    anzeigeUhr -= dt;
+    if (anzeigeUhr <= 0) {
+      anzeigeUhr = 0.25;
+      const a = document.querySelector('.ly-auftrag'), r = a && a.offsetParent ? a.getBoundingClientRect() : null;
+      hud.style.top = (r && r.height ? Math.round(r.bottom + 46) : 54) + 'px'; hud.hidden = false;
+      hud.textContent = '🎟 ' + infoVon(lauf.code).titel + ' · ' + (lauf.i + 1) + '/' + lauf.def.schritte.length + ': ' + st.ort + (d > 3 ? ' · ' + Math.round(d) + ' m' : '');
+    }
+    if (d < 2.6 && Math.abs(p.y || 0) < 1.5) szene();
+  }
+  // beim Laden: eine angefangene Mission weiterführen (Schritt von vorn)
+  function fortsetzen() {
+    const m = M(); if (!m.aktiv || lauf) return;
+    const def = SKRIPTE[m.aktiv.code]; if (!def) { m.aktiv = null; return; }
+    lauf = { code: m.aktiv.code, def, i: m.aktiv.i, log: m.aktiv.log || [], momente: m.aktiv.momente || [], notizen: m.aktiv.notizen || [], skalen: m.aktiv.skalen || [], t0: m.aktiv.t0 || Date.now() };
+    if (lauf.i >= def.schritte.length) { abschluss(); return; }
+    zeigeZiel();
+  }
+  return { skripte: SKRIPTE, fenster, codeRein, start, tick, pausieren, fortsetzen, aktiv: () => !!lauf, imSzene: () => !!(lauf && lauf.inSzene), get lauf() { return lauf; }, teilen, resuemeeHtml, alsText };
+}

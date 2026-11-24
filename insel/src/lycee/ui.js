@@ -17,7 +17,7 @@ export function createUI({ root, input, speech }) {
   const hinweis = el('button', 'ly-hinweis'); hinweis.type = 'button'; hinweis.hidden = true; hud.appendChild(hinweis);
   const toastBox = el('div', 'ly-toasts'); hud.appendChild(toastBox);
   const bingo = el('div', 'ly-bingo hud-interactive'); bingo.hidden = true; hud.appendChild(bingo);
-  const knoepfe = el('div', 'ly-knoepfe', '<button type="button" data-k="handy" title="Handy: Nachrichten (N)" aria-label="Handy"><span>📱</span><i class="ly-badge" hidden></i></button><button type="button" data-k="garderobe" title="Garderobe (G)" aria-label="Garderobe"><span>👕</span><i class="ly-badge" hidden></i></button><button type="button" data-k="fahrt" title="Fahren: R = Skateboard, T = Trottinette" aria-label="Fahren">🛹</button><button type="button" data-k="foto" title="Fotomodus (C)" aria-label="Fotomodus">📷</button><button type="button" data-k="raus" title="Kurz raus (P)" aria-label="Kurz raus">⏸</button><button type="button" data-k="journal" title="Journal (Tab)" aria-label="Journal">☰</button>'); hud.appendChild(knoepfe);
+  const knoepfe = el('div', 'ly-knoepfe', '<button type="button" data-k="mission" title="Missionen aus dem Skills-Kurs" aria-label="Missionen"><span>🎟</span></button><button type="button" data-k="handy" title="Handy: Nachrichten (N)" aria-label="Handy"><span>📱</span><i class="ly-badge" hidden></i></button><button type="button" data-k="garderobe" title="Garderobe (G)" aria-label="Garderobe"><span>👕</span><i class="ly-badge" hidden></i></button><button type="button" data-k="fahrt" title="Fahren: R = Skateboard, T = Trottinette" aria-label="Fahren">🛹</button><button type="button" data-k="foto" title="Fotomodus (C)" aria-label="Fotomodus">📷</button><button type="button" data-k="raus" title="Kurz raus (P)" aria-label="Kurz raus">⏸</button><button type="button" data-k="journal" title="Journal (Tab)" aria-label="Journal">☰</button>'); hud.appendChild(knoepfe);
   const mutEl = el('div', 'ly-mut'); mutEl.hidden = true; hud.appendChild(mutEl);   // Anspannung während einer Mutprobe
   const skateEl = el('div', 'ly-skate'); skateEl.hidden = true; hud.appendChild(skateEl);   // Skate-Session: Zeit, Punkte, Trick
   const skateKn = el('div', 'ly-skate-knoepfe hud-interactive'); skateKn.hidden = true; hud.appendChild(skateKn);
@@ -291,6 +291,7 @@ export function createUI({ root, input, speech }) {
   }, true);
   dialog.addEventListener('click', (e) => { if (weiterFn && !e.target.closest('button')) weiterFn(); });
   akt.addEventListener('pointerdown', (e) => { e.preventDefault(); e.stopPropagation(); if (weiterFn) weiterFn(); else if (ui.onAktion) ui.onAktion(); });
+  knoepfe.querySelector('[data-k="mission"]').onclick = () => { if (ebene.hidden && !dialogOffen) ui.onMission && ui.onMission(); else if (ebene.dataset.art === 'km') ebeneZu(); };
   knoepfe.querySelector('[data-k="handy"]').onclick = () => { if (ebene.hidden && !dialogOffen) ui.onHandy && ui.onHandy(); };
   // Zähler für neue Nachrichten am Handy-Knopf
   knoepfe.querySelector('[data-k="garderobe"]').onclick = () => { if (ebene.hidden && !dialogOffen) ui.onGarderobe && ui.onGarderobe(); };
