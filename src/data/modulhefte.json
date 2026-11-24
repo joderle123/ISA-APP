@@ -156,8 +156,8 @@
      "lektionen": 8,
      "heft": "Francais_Module-1_Cahier",
      "loesungen": "Francais_Module-1_Solutions",
-     "mb": 1.4,
-     "mbLoesungen": 1.4
+     "mb": 1.7,
+     "mbLoesungen": 1.7
     },
     {
      "id": "franzoesisch-m2",
@@ -171,8 +171,8 @@
      "lektionen": 8,
      "heft": "Francais_Module-2_Cahier",
      "loesungen": "Francais_Module-2_Solutions",
-     "mb": 1.5,
-     "mbLoesungen": 1.5
+     "mb": 1.8,
+     "mbLoesungen": 1.8
     },
     {
      "id": "franzoesisch-m3",
@@ -186,8 +186,8 @@
      "lektionen": 8,
      "heft": "Francais_Module-3_Cahier",
      "loesungen": "Francais_Module-3_Solutions",
-     "mb": 1.4,
-     "mbLoesungen": 1.5
+     "mb": 1.8,
+     "mbLoesungen": 1.8
     },
     {
      "id": "franzoesisch-m4",
@@ -201,8 +201,8 @@
      "lektionen": 8,
      "heft": "Francais_Module-4_Cahier",
      "loesungen": "Francais_Module-4_Solutions",
-     "mb": 1.3,
-     "mbLoesungen": 1.3
+     "mb": 1.6,
+     "mbLoesungen": 1.7
     },
     {
      "id": "franzoesisch-m5",
@@ -216,8 +216,8 @@
      "lektionen": 8,
      "heft": "Francais_Module-5_Cahier",
      "loesungen": "Francais_Module-5_Solutions",
-     "mb": 1.3,
-     "mbLoesungen": 1.4
+     "mb": 1.7,
+     "mbLoesungen": 1.7
     },
     {
      "id": "franzoesisch-m6",
@@ -231,8 +231,8 @@
      "lektionen": 8,
      "heft": "Francais_Module-6_Cahier",
      "loesungen": "Francais_Module-6_Solutions",
-     "mb": 1.3,
-     "mbLoesungen": 1.4
+     "mb": 1.7,
+     "mbLoesungen": 1.8
     },
     {
      "id": "franzoesisch-m7",
@@ -246,8 +246,8 @@
      "lektionen": 8,
      "heft": "Francais_Module-7_Cahier",
      "loesungen": "Francais_Module-7_Solutions",
-     "mb": 1.5,
-     "mbLoesungen": 1.6
+     "mb": 1.9,
+     "mbLoesungen": 2
     },
     {
      "id": "franzoesisch-m8",
@@ -261,8 +261,8 @@
      "lektionen": 8,
      "heft": "Francais_Module-8_Cahier",
      "loesungen": "Francais_Module-8_Solutions",
-     "mb": 1.8,
-     "mbLoesungen": 1.8
+     "mb": 2.1,
+     "mbLoesungen": 2.2
     },
     {
      "id": "franzoesisch-m9",
@@ -276,8 +276,8 @@
      "lektionen": 8,
      "heft": "Francais_Module-9_Cahier",
      "loesungen": "Francais_Module-9_Solutions",
-     "mb": 1.5,
-     "mbLoesungen": 1.5
+     "mb": 1.8,
+     "mbLoesungen": 1.9
     }
    ]
   },
