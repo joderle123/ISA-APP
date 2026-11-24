@@ -180,8 +180,9 @@ export default function Module({ aktiv }: { aktiv: boolean }) {
           <Icon name="info" />
           <p>
             <b>So arbeiten Sie damit:</b> Heft öffnen und ausdrucken (A4, beidseitig). In Deutsch und Französisch steht bei den Lese- und Hörtexten ein QR-Code – mit dem Handy scannen,
-            dann wird der Text vorgelesen (braucht Internet). Mathe hat in jeder Lektion zusätzliche Beispiele, Übungspäckchen und Wiederholung. Das Lösungsheft ist dasselbe
-            Heft mit eingetragenen Lösungen.
+            dann wird der Text vorgelesen (braucht Internet). Mathe hat in jeder Lektion zusätzliche Beispiele, Übungspäckchen und Wiederholung. Französisch zeigt in jeder
+            Lektion den Parcours (Base, Standard, Plus), Punkte je Übung, eine Korrektor-Übung und eine Checkliste fürs Schreiben; am Ende steht das Aide-mémoire mit allen
+            Regeln zum Heraustrennen. Das Lösungsheft ist dasselbe Heft mit eingetragenen Lösungen.
             {ORT.imHub ? (
               <>
                 {' '}

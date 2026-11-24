@@ -274,10 +274,16 @@ function aufgabeKoerper(a: Aufgabe): string {
         .map((i) => `<div style="display:flex;gap:3mm;align-items:center"><span class="feld" style="border:0.35mm solid var(--tinte);border-radius:2mm;width:10mm;height:9mm;display:flex;align-items:center;justify-content:center;flex:none"><span class="l lsg-hand">${i + 1}</span></span><span style="font-size:12.6pt">${inl(a.teile[i])}</span></div>`)
         .join('')}</div>`
     }
+    case 'korrektur': {
+      // Ich lese wie eine Korrektorin: Text mit Fehlern {falsch>richtig}; im Lösungsheft durchgestrichen, Verbesserung gleich dahinter
+      const t = a.text.split(/(\{[^{}]*>[^{}]*\})/).map((x: string) => { const m = /^\{([^{}]*)>([^{}]*)\}$/.exec(x); return m ? `<span class="kf"><span class="kw">${inl(m[1])}</span><span class="kk">${esc(m[2])}</span></span>` : inl(x) }).join('')
+      return `<div class="korrektur">${t}</div>`
+    }
     case 'schreiben': {
       const anf = a.anfaenge ? `<div class="anfaenge">${a.anfaenge.map((x: string) => `<span>${esc(x)}</span>`).join('')}</div>` : ''
+      const krit = a.kriterien ? `<div class="kriterien"><b>${AKTIV?.sprache === 'de' ? 'Meine Checkliste' : 'Ma checklist'}</b>${a.kriterien.map((x: string) => `<span><i class="kaestchen"></i>${inl(x)}</span>`).join('')}</div>` : ''
       const bsp = a.beispiel ? `<div class="nur-loesung" style="font-family:Hand;color:var(--loesung);font-size:14pt;line-height:1.5;margin:1mm 0 2mm">${esc(a.beispiel)}</div>` : ''
-      return anf + bsp + `<div class="nur-heft">${linien(a.zeilen || 6, [], a.zeilenAnfaenge || [])}</div>`
+      return anf + krit + bsp + `<div class="nur-heft">${linien(a.zeilen || 6, [], a.zeilenAnfaenge || [])}</div>`
     }
     case 'steckbrief': {
       return `<div class="steckbrief"><div class="foto">${esc(a.bildText || (a.sp === 'fr' ? 'Dessine ici un symbole pour toi.' : 'Zeichne hier ein Symbol für dich.'))}</div><div class="felder">${a.felder.map((f: string) => `<div class="feld"><span>${esc(f)}</span><span></span></div>`).join('')}</div></div>`
@@ -348,12 +354,26 @@ function aufgabeKoerper(a: Aufgabe): string {
   }
 }
 
+// Punkte je Aufgabe (Fiches-Vorbild 24.11.2026): „…… / n“ für Aufgaben mit zählbaren Antworten – zum Selbstkorrigieren
+function punkteVon(a: any): number {
+  const lu = (t: string) => (String(t).replace(/\\\[|\\\]/g, '').match(/\[[^\]|]*(?:\|\d+)?\]/g) || []).length
+  switch (a.art) {
+    case 'luecken': return a.saetze.reduce((n: number, x: string) => n + lu(x), 0)
+    case 'tabelle': return a.zeilen.reduce((n: number, z: string[]) => n + z.filter((c) => /^\[.*\]$/.test(c)).length, 0)
+    case 'mc': return a.fragen.length
+    case 'rf': case 'wer': case 'abschreiben': return a.saetze.length
+    case 'zuordnen': return a.links.length
+    case 'ordnen': return a.teile.length
+    case 'korrektur': return (String(a.text).match(/\{[^{}]*>[^{}]*\}/g) || []).length
+    default: return 0
+  }
+}
 // Kasten ohne Auftrag (kompakte Hefte) bekommt keine eigene Nummer
 function nrFuer(a: any, k: Kontext): number { return AKTIV?.kompakt && a.art === 'frei' && !a.auftrag ? 0 : ++k.zaehler }
 
 function aufgabe(a: Aufgabe, nr: number, klasse = ''): string {
   const lang = ['schreiben', 'fragen'].includes(a.art) && (a.zeilen || 0) > 12
-  return `${a.neueSeite ? '<div class="neue-seite"></div>' : ''}<div class="aufgabe ${klasse} ${lang ? 'lang' : ''} ${a.art === 'schneidekarten' && !AKTIV?.kompakt ? 'ganz' : ''}">${nr || a.auftrag ? `<div class="kopf">${nr ? `<span class="nr">${nr}</span>` : ''}<span class="auftrag">${inl(a.auftrag || '')}</span>${a.stufe ? stufen(a.stufe) : ''}</div>` : ''}${
+  return `${a.neueSeite ? '<div class="neue-seite"></div>' : ''}<div class="aufgabe ${klasse} ${lang ? 'lang' : ''} ${a.art === 'schneidekarten' && !AKTIV?.kompakt ? 'ganz' : ''}">${nr || a.auftrag ? `<div class="kopf">${nr ? `<span class="nr">${nr}</span>` : ''}<span class="auftrag">${inl(a.auftrag || '')}</span>${a.stufe ? stufen(a.stufe) : ''}${AKTIV?.punkte && punkteVon(a) ? `<span class="pkt">…… / ${punkteVon(a)}</span>` : ''}</div>` : ''}${
     a.hilfe ? `<div class="hilfe">${inl(a.hilfe)}</div>` : ''}<div class="koerper">${aufgabeKoerper(a)}</div></div>`
 }
 
@@ -465,14 +485,18 @@ function hoerenTeil(L: any, k: Kontext): string {
   return h
 }
 
-function regelTeil(L: any, k: Kontext): string {
-  const r = L.regel
-  let h = '<div class="zusammen">' + teilKopf('regel', k.sp, r.was || '')
+function regelReihen(r: any, flach = false): string[] {
   const ic: Record<string, string> = { merke: 'bulb', achtung: 'alert-triangle', tipp: 'sparkles', beispiel: 'pencil' }
   const liste = (x: any) => { const t = x.nummern ? 'ol' : 'ul'; return `<${t}${x.nummern ? ' class="nummern"' : ''}>${x.punkte.map((p: string) => `<li>${inl(p)}</li>`).join('')}</${t}>` }
   const kasten = (x: any) => `<div class="merke ${x.art || ''}"><h4>${icon(ic[x.art || 'merke'])}${inl(x.titel)}</h4>${x.vor ? `<p class="vor">${inl(x.vor)}</p>` : ''}${x.punkte ? liste(x) : ''}${
     x.tabelle ? `<table class="formen"><tr>${x.tabelle.kopf.map((c: string) => `<th>${esc(c)}</th>`).join('')}</tr>${x.tabelle.zeilen.map((z: string[]) => `<tr>${z.map((c) => `<td>${inl(c)}</td>`).join('')}</tr>`).join('')}</table>` : ''}${x.text ? `<p style="margin-top:2mm">${inl(x.text)}</p>` : ''}</div>`
-  r.reihen.forEach((reihe: any[], i: number) => { h += `<div class="regelkasten ${reihe.length === 1 ? 'eins' : ''}">${reihe.map(kasten).join('')}</div>` + (i === 0 ? '</div>' : '') })
+  if (flach) return [`<div class="regelkasten">${r.reihen.flat().map(kasten).join('')}</div>`]   // Aide-mémoire: alle Kästen in einem Raster
+  return r.reihen.map((reihe: any[]) => `<div class="regelkasten ${reihe.length === 1 ? 'eins' : ''}">${reihe.map(kasten).join('')}</div>`)
+}
+function regelTeil(L: any, k: Kontext): string {
+  const r = L.regel
+  let h = '<div class="zusammen">' + teilKopf('regel', k.sp, r.was || '')
+  regelReihen(r).forEach((x, i) => { h += x + (i === 0 ? '</div>' : '') })
   return h
 }
 
@@ -482,6 +506,22 @@ function checkTeil(L: any, k: Kontext): string {
   return '<div class="zusammen">' + teilKopf('check', k.sp) + `<div class="check"><div class="z kopf"><div style="text-align:left;padding-left:4mm">${kopf[0]}</div><div>${kopf[1]}</div><div>${kopf[2]}</div><div>${kopf[3]}</div></div>${L.check
     .map((c: string) => `<div class="z"><div>${inl(c)}</div><div class="s" style="color:#2f8a4c">${smile('mood-happy')}</div><div class="s" style="color:#c98a06">${smile('mood-empty')}</div><div class="s" style="color:#d0577b">${smile('mood-sad')}</div></div>`)
     .join('')}</div></div>`
+}
+
+// Mein Parcours (Fiches-Vorbild 24.11.2026): welche Übungen in „Üben“ und „Schreiben“ für Basis, Standard und Plus.
+// Die Nummern stehen vorab fest (Zähler läuft je Lektion weiter); Stufe fehlt = mittel.
+function parcours(L: any, k: Kontext): string {
+  const liste = [...(L.ueben || []), ...(L.sprechen || []), ...(L.schreiben || [])].map((a: any, i: number) => ({ nr: k.zaehler + 1 + i, s: a.stufe || 2 }))
+  if (liste.length < 3) return ''
+  const n = (f: (x: any) => boolean) => liste.filter(f).map((x) => x.nr)
+  let basis = n((x) => x.s === 1), extra = n((x) => x.s === 2).slice(0, 1)
+  if (!basis.length) { basis = extra; extra = [] }
+  const standard = n((x) => x.s <= 2), plus = n((x) => x.s >= 2)
+  const fr = k.sp !== 'de'
+  const z = (a: number[]) => a.join(', ')
+  return `<div class="parcours"><div class="pc-t">${icon('route')}<b>${fr ? 'Mon parcours' : 'Mein Weg'}</b><span>${fr ? 'Je fais les exercices de mon parcours.' : 'Ich mache die Übungen meines Wegs.'}</span></div>` +
+    `<div class="pc-wege"><span class="pc b">${stufen(1)}<b>${fr ? 'Base' : 'Basis'}</b> ${z(basis)}${extra.length ? ` (+ ${z(extra)})` : ''}</span><span class="pc s">${stufen(2)}<b>Standard</b> ${z(standard)}</span><span class="pc p">${stufen(3)}<b>Plus</b> ${z(plus)}</span></div>` +
+    `<div class="pc-hilfe">${icon('help-circle')}${fr ? 'Bloqué ? Relis d’abord « La règle ». Puis je corrige avec le cahier des solutions, au stylo vert.' : 'Hängst du fest? Lies zuerst „Die Regel“. Dann verbesserst du mit dem Lösungsheft, mit grünem Stift.'}</div></div>`
 }
 
 function lektion(L: any, k: Kontext): string {
@@ -497,7 +537,7 @@ function lektion(L: any, k: Kontext): string {
   if (L.lesen) h += lesenTeil(L, k)
   if (L.hoeren) h += hoerenTeil(L, k)
   if (L.regel) h += (L.regel.neueSeite ? '<div class="neue-seite"></div>' : '') + regelTeil(L, k)
-  if (L.ueben?.length) h += block(teilKopf('ueben', sp), L.ueben)
+  if (L.ueben?.length) h += block(teilKopf('ueben', sp) + (m.parcours ? parcours(L, k) : ''), L.ueben)
   if (L.sprechen?.length) h += block(teilKopf('sprechen', sp), L.sprechen, 'in-sprechen')
   const zusammenEnde = m.checkMitSchreiben && L.schreiben?.length && L.check?.length
   if (zusammenEnde) h += '<div class="zusammen">'
@@ -537,8 +577,19 @@ function inhalt(m: any, sp: string, L: any[], seiten: Record<string, number>): s
   }
   h += `<div class="zeile" style="margin-top:2mm"><span class="nr" style="background:var(--leise)">A</span><span><span class="t">${sp === 'de' ? 'Wörterliste Deutsch – Französisch' : 'Liste de mots'}</span></span><span class="s">${seiten.A || ''}</span></div>`
   h += `<div class="zeile"><span class="nr" style="background:var(--leise)">B</span><span><span class="t">${sp === 'de' ? 'Mein Lernstand' : 'Où j’en suis'}</span></span><span class="s">${seiten.B || ''}</span></div>`
+  if (m.aideMemoire) h += `<div class="zeile"><span class="nr" style="background:var(--leise)">C</span><span><span class="t">${sp === 'de' ? 'Mein Merkheft – alle Regeln' : 'Mon aide-mémoire – toutes les règles'}</span></span><span class="s">${seiten.C || ''}</span></div>`
   h += `<div class="anleitung"><h3>${sp === 'de' ? 'So arbeitest du mit dem Heft' : 'Comment travailler avec ce cahier'}</h3><ul>${(m.anleitung || []).map((x: string) => `<li>${inl(x)}</li>`).join('')}</ul></div></section>`
   return h
+}
+
+// Aide-mémoire (Fiches-Vorbild 24.11.2026): alle Regelkästen des Moduls auf wenigen Seiten – herausnehmen und im Dossier aufbewahren
+function aideMemoire(m: any, sp: string, L: any[]): string {
+  let h = `<section class="anhang lektion aide"><span class="marke-seite">§§C§§</span><div class="seitenkopf"><span class="marke">${sp === 'de' ? 'Anhang' : 'Annexe'} C</span><span>${esc(m.fach[sp])} · ${sp === 'de' ? 'Modul' : 'Module'} ${m.nr}</span></div><h2>${sp === 'de' ? 'Mein Merkheft' : 'Mon aide-mémoire'}</h2><p class="klein" style="margin-bottom:3mm">${sp === 'de' ? 'Alle Regeln dieses Moduls. Trenne die Seiten heraus und lege sie in deinen Ordner.' : 'Toutes les règles de ce module. Détache ces pages et garde-les dans ton classeur.'}</p>`
+  L.forEach((l, i) => {
+    if (!l.regel) return
+    h += `<div class="aide-l"><div class="aide-t"><span>${i + 1}</span>${inl(l.titel)}</div>${regelReihen(l.regel, true).join('')}</div>`
+  })
+  return h + '</section>'
 }
 
 function anhang(m: any, sp: string, L: any[]): string {
@@ -604,7 +655,7 @@ function html(m: any, L: any[], loesungen: boolean, seiten: Record<string, numbe
   let body = deckblatt(m, sp, loesungen, L) + (m.kompakt ? '' : inhalt(m, sp, L, seiten))
   if (m.aktionen) body += m.aktionen.map((a: any, i: number) => aktionSeite(m, a, String(i + 1), `Aktion ${i + 1} von ${m.aktionen.length}`)).join('') + aktionSeite(m, m.woche, '+', 'Für die Woche') + aktionBegleitung(m)
   L.forEach((l, i) => { body += lektion(l, { modul: m, sp, nr: i + 1, zaehler: 0, spuren }) })
-  if (!m.aktionen) body += m.kompakt ? (m.begleitung ? begleitung(m) : '') : anhang(m, sp, L)
+  if (!m.aktionen) body += m.kompakt ? (m.begleitung ? begleitung(m) : '') : anhang(m, sp, L) + (m.aideMemoire ? aideMemoire(m, sp, L) : '')
   // französische Typografie: geschütztes Leerzeichen vor ! ? ; : » und nach «, damit nichts allein umbricht
   if (sp === 'fr') body = body.replace(/>([^<]+)</g, (_: string, t: string) => '>' + t.replace(/ ([!?;:»])/g, '\u00a0$1').replace(/« /g, '«\u00a0') + '<')
   return `<!doctype html><html lang="${sp}"><head><meta charset="utf-8"><title>${esc(m.fach[sp])} ${sp === 'de' ? 'Modul' : 'Module'} ${m.nr}</title><style>${css}
@@ -623,7 +674,10 @@ print(json.dumps(r))`, pdf]).toString()
 }
 
 async function baue(id: string, browser: any, png: boolean) {
-  const { MODUL, LEKTIONEN: ROH } = await import(pathToFileURL(join(HIER, 'inhalt', id + '.mjs')).href)
+  let { MODUL, LEKTIONEN: ROH } = await import(pathToFileURL(join(HIER, 'inhalt', id + '.mjs')).href)
+  // Zusätze je Fach (Französisch: Parcours, Punkte, Korrektor, Checkliste, Aide-mémoire – nach den Beispiel-Fiches, 24.11.2026)
+  const zusatz = join(HIER, 'inhalt', id.replace(/-m\d+$/, '') + '-fiches.mjs')
+  if (existsSync(zusatz)) ({ MODUL, LEKTIONEN: ROH } = (await import(pathToFileURL(zusatz).href)).anwenden(MODUL, ROH))
   const LEKTIONEN = MODUL.ohneAudio ? ROH.map(ohneAudio) : ROH
   FARBEN = { tief: MODUL.farben.tief, mittel: MODUL.farben.mittel, zart: MODUL.farben.zart }
   const ziel = join(ROOT, 'tmp/hefte', id); mkdirSync(ziel, { recursive: true })

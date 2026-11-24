@@ -787,3 +787,47 @@ table.raster.stellen td { padding: 1.5mm 1mm; }
 .ak-ringe { grid-template-columns: 100mm 1fr; } .ak-ringe svg { width: 100mm; height: 100mm; }
 td.vorgabe .emo { width: 5.5mm; height: 5.5mm; vertical-align: -1.4mm; margin-right: 2mm; }
 .ak-comic p { font-size: 10pt; line-height: 1.3; padding: 2mm 2.5mm; }
+
+/* ---- Nach den Beispiel-Fiches (24.11.2026): Parcours, Punkte, Korrektor, Checkliste, Aide-mémoire ---- */
+.aufgabe .kopf .pkt { flex: none; margin-left: 3mm; padding-top: 1mm; font-family: 'Lexend'; font-weight: 700; font-size: 10pt; color: var(--leise); white-space: nowrap; }
+.aufgabe .kopf .stufen + .pkt { margin-left: 2mm; }
+.aufgabe .kopf .auftrag + .pkt { margin-left: auto; }
+.parcours { border: 0.4mm solid var(--f-mittel); border-radius: 3mm; background: var(--f-zart); padding: 2.4mm 3.4mm; margin: 0 0 4mm; break-inside: avoid; }
+.parcours .pc-t { display: flex; align-items: center; gap: 2mm; font-size: 11pt; margin-bottom: 1.8mm; }
+.parcours .pc-t svg { width: 5mm; height: 5mm; color: var(--f); flex: none; }
+.parcours .pc-t b { font-family: 'Lexend'; font-weight: 700; color: var(--f-tief); }
+.parcours .pc-t span { color: var(--leise); }
+.parcours .pc-wege { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2mm; }
+.parcours .pc { display: flex; align-items: center; gap: 1.6mm; flex-wrap: wrap; background: #fff; border-radius: 2mm; padding: 1.4mm 2.4mm; font-size: 11pt; }
+.parcours .pc .stufen i { border-color: var(--f); } .parcours .pc .stufen i.an { background: var(--f); }
+.parcours .pc b { font-family: 'Lexend'; font-weight: 700; }
+.parcours .pc-hilfe { display: flex; align-items: center; gap: 1.6mm; margin-top: 1.8mm; font-size: 10.5pt; color: var(--leise); }
+.parcours .pc-hilfe svg { width: 4.4mm; height: 4.4mm; flex: none; }
+.korrektur { font-family: 'Atkinson'; font-size: 13pt; line-height: 2.5; background: #fffaf3; border: 0.35mm solid #f0dcc3; border-radius: 2.4mm; padding: 1mm 4mm;
+  background-image: repeating-linear-gradient(to bottom, transparent 0, transparent calc(2.5em - 0.3mm), #e6d6c2 calc(2.5em - 0.3mm), #e6d6c2 2.5em); background-position: 0 0.55em; }
+.korrektur .kk { display: none; }
+/* Lösungsheft: Fehler durchgestrichen, die Verbesserung direkt dahinter (über dem Wort ragte sie am Zeilenende hinaus) */
+.loesungen .korrektur .kw { text-decoration: line-through; text-decoration-color: var(--loesung); text-decoration-thickness: 0.4mm; }
+.loesungen .korrektur .kk { display: inline; margin-left: 1.2mm; font-family: 'Hand'; color: var(--loesung); font-size: 14pt; }
+.kriterien { display: flex; flex-wrap: wrap; align-items: center; gap: 1.4mm 3mm; margin: 0 0 2.4mm; padding: 1.8mm 3mm; border: 0.35mm dashed var(--f-mittel); border-radius: 2mm; font-size: 11pt; }
+.kriterien b { font-family: 'Lexend'; font-weight: 700; color: var(--f-tief); margin-right: 1mm; }
+.kriterien span { display: inline-flex; align-items: center; gap: 1.4mm; }
+.kriterien .kaestchen { width: 3.6mm; height: 3.6mm; }
+.aide .aide-l { break-inside: avoid; margin: 0 0 3mm; }
+.aide .aide-t { display: flex; align-items: center; gap: 2mm; font-family: 'Lexend'; font-weight: 700; font-size: 11.5pt; color: var(--f-tief); margin: 2mm 0 1.4mm; }
+.aide .aide-t span { width: 6mm; height: 6mm; border-radius: 50%; background: var(--f); color: #fff; display: inline-flex; align-items: center; justify-content: center; font-size: 9.5pt; }
+/* kompakt: drei Spalten, kleine Schrift – das ganze Modul auf wenigen Seiten */
+.aide .aide-l { break-inside: auto; }
+.aide .aide-t { break-after: avoid; }
+.aide .regelkasten, .aide .regelkasten.eins { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2mm; margin-bottom: 1.6mm; }
+.aide .regelkasten.eins .merke { grid-column: 1 / -1; }
+.aide .merke { padding: 2.2mm 2.8mm; border-radius: 2.4mm; break-inside: avoid; }
+.aide .merke h4 { font-size: 10pt; margin: 0 0 1mm; gap: 1.2mm; }
+.aide .merke h4 svg { width: 3.6mm; height: 3.6mm; }
+.aide .merke ul { padding-left: 3.6mm; }
+.aide .merke li, .aide .merke p, .aide .merke p.vor { font-size: 9.4pt; margin: 0.4mm 0; line-height: 1.32; }
+.aide .merke ol.nummern li { padding-left: 5mm; }
+.aide .merke ol.nummern li::before { width: 3.8mm; height: 3.8mm; font-size: 7.5pt; line-height: 3.8mm; }
+.aide table.formen { font-size: 9.2pt; margin-top: 0.4mm; }
+.aide table.formen th { font-size: 8pt; padding: 0.6mm 1.2mm; }
+.aide table.formen td { padding: 0.55mm 1.2mm; }
