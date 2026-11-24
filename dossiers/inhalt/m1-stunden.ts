@@ -32,7 +32,7 @@ const tank: Stunde = {
         },
         {
           titel: 'Kennst du das?', zeit: '12 Min.', wie: 'allein · dann alle', icon: 'hand-finger',
-          leitung: 'Erst still ankreuzen. Dann liest die Leitung jeden Satz vor, alle zeigen gleichzeitig den Daumen – Sie auch. Nur zählen, nicht nachfragen. Wer mag, erzählt bei der Sprechblase ein Beispiel.',
+          leitung: 'Erst still ankreuzen. Dann jeden Satz vorlesen, alle zeigen gleichzeitig den Daumen – Sie auch. Nur zählen, nicht nachfragen.',
           bausteine: [
             { art: 'text', x: ['Sechs Sätze. Kreuz an, was du von dir kennst. Danach liest die Leitung jeden Satz vor – alle zeigen gleichzeitig den Daumen: **hoch** = kenn ich, **runter** = kenn ich nicht.'] },
             { art: 'fragen', fragen: [{ f: 'Kennst du das?', raster: { spalten: ['kenn ich', 'ein bisschen', 'kenn ich nicht'], zeilen: [
@@ -52,7 +52,7 @@ const tank: Stunde = {
       stationen: [
         {
           titel: 'Clip: Was die Nacht mit dir macht', zeit: '15 Min.', wie: 'alle', icon: 'player-play',
-          leitung: 'Ausschnitt vorher ansehen und prüfen, ob „Stimmt das?“ dazu passt. Erst „Vorher“, dann schauen, beim Schauen mitschreiben, danach „Stimmt das?“ gemeinsam auflösen.',
+          leitung: 'Ausschnitt vorher ansehen und prüfen, ob „Stimmt das?“ dazu passt. Danach gemeinsam auflösen.',
           bausteine: [
             {
               art: 'clip',
@@ -109,7 +109,7 @@ const tank: Stunde = {
     {
       stationen: [
         {
-          titel: 'Die große Runde: Kenn ich!', zeit: '25 Min.', wie: 'alle · am Tisch', icon: 'cards',
+          titel: 'Die große Runde: Kenn ich!', zeit: '20 Min.', wie: 'alle · am Tisch', icon: 'cards',
           leitung: 'Karten vorher ausschneiden. Sie spielen mit. Es gibt keine Punkte – es geht ums Erkennen und Erzählen. Wer nichts sagen will, zeigt nur den Daumen.',
           bausteine: [
             {
@@ -178,11 +178,35 @@ const tank: Stunde = {
     {
       stationen: [
         {
-          titel: 'Für dich: meine Tankstellen', zeit: '10 Min.', wie: 'allein', icon: 'user',
-          leitung: 'Stille Arbeit. Die Tankstelle muss klein sein: höchstens zehn Minuten, ohne jemanden überreden zu müssen.',
+          titel: 'Tanken – aber richtig', zeit: '10 Min.', wie: 'allein · dann alle', icon: 'gas-station',
+          leitung: 'Erst allein, dann auflösen. Nicht moralisieren: Es kommt auf die Menge an. Fragen: Was gibt dir die Fake-Tankstelle – und was nimmt sie dir danach?',
+          bausteine: [
+            { art: 'text', x: ['Ist ein Tank leer, willst du ihn schnell füllen. Aber nicht alles, was sich gut anfühlt, füllt wirklich auf. Manches ist eine **Fake-Tankstelle**: Sie fühlt sich kurz gut an – danach bist du leerer als vorher.', '**Der Tankstellen-Check – drei Fragen:**\n1. Geht es mir danach besser – auch noch in einer Stunde?\n2. Schadet es mir oder anderen?\n3. Kann ich jederzeit aufhören?'] },
+            { art: 'fragen', fragen: [{ f: 'Echte Tankstelle oder Fake? Ein Kreuz pro Zeile.', raster: { spalten: ['echt: füllt auf', 'Fake: nur kurz gut'], zeilen: [
+              'ein Energydrink',
+              'eine Runde um den Block gehen',
+              'bis drei Uhr nachts zocken',
+              'eine Stunde mit Freunden zocken',
+              'jemanden anrufen, der dir guttut',
+              'stundenlang durch Videos scrollen',
+              'dein Lieblingslied laut hören',
+              'Streit anfangen, damit endlich was los ist',
+              'etwas Richtiges essen',
+            ] } }] },
+            { art: 'reden', x: ['Zocken steht zweimal in der Liste. Warum ist es einmal echt und einmal Fake?', 'Welche Fake-Tankstelle kennt ihr von euch selbst – und warum ist sie so verlockend?'] },
+            { art: 'fragen', kontext: 'Nur für dich.', fragen: [{ f: 'Welche Fake-Tankstelle nutzt du manchmal? Und was könntest du stattdessen machen?', satz: ['Meine Fake-Tankstelle:', 'Stattdessen probiere ich:'] }] },
+          ],
+        },
+      ],
+    },
+    {
+      stationen: [
+        {
+          titel: 'Für dich: mein Tank-Plan', zeit: '12 Min.', wie: 'allein · dann alle', icon: 'user',
+          leitung: 'Erst still. Die Tankstelle muss klein sein: höchstens zehn Minuten. Beim Tausch schreiben Sie auch einen Zettel.',
           bausteine: [
             {
-              art: 'menue', titel: 'Schnell-Tankstellen – höchstens zehn Minuten. Kreuz zwei an, die du ausprobieren willst.',
+              art: 'menue', titel: 'Echte Schnell-Tankstellen – höchstens zehn Minuten. Kreuz zwei an, die du ausprobieren willst.',
               gruppen: [
                 { t: 'Körper', punkte: ['etwas Richtiges essen, Wasser trinken', 'zehn Minuten raus an die Luft', 'das Handy um 22 Uhr weglegen'] },
                 { t: 'Sicherheit', punkte: ['nachfragen: „Was passiert morgen?“', 'den Plan für morgen aufschreiben', 'an einen Ort gehen, den du magst'] },
@@ -194,8 +218,10 @@ const tank: Stunde = {
             },
             { art: 'fragen', fragen: [
               { f: 'Blätter zurück zu Station 1: Was hat dich heute genervt? Welcher Tank war da leer?', kreis: ['Körper', 'Sicherheit', 'Dazugehören', 'Ernst genommen', 'Selbst entscheiden', 'Spaß und Neues'] },
-              { f: 'Wenn dieser Tank leer ist, hilft mir:', linien: 1 },
+              { f: 'Dein Tank-Plan. Beispiel: Wenn ich gereizt aus der Schule komme, esse ich zuerst etwas.', satz: ['Wenn ich merke, dass …', 'dann tanke ich so:'] },
             ] },
+            { art: 'reden', titel: 'Tankstellen-Tausch', x: ['Schreib deine beste echte Tankstelle auf einen Zettel. Alle Zettel kommen in die Mitte. Jede Person nimmt sich eine Idee, die sie noch nicht kannte.'] },
+            { art: 'fragen', fragen: [{ f: 'Meine neue Idee aus dem Tausch:', linien: 1 }] },
           ],
         },
         {

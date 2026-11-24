@@ -894,15 +894,16 @@ d.tracks[0].clip = { titel: 'Mehr als lebenswichtig: Darum schlafen wir!', kanal
 d.geprueft = '16.11.2026'
 d.tracks[0].leitung = {
   ...d.tracks[0].leitung,
-  einsatz: 'Nah am eigenen Alltag, ohne erfundene Hauptfigur: Akku ausmalen → „Kennst du das?“ (sechs Sätze ankreuzen, dann gleichzeitig Daumen zeigen) → Clip über Schlaf mit Fragen vorher, beim Schauen und danach plus „Stimmt das?“ → die sechs Tanks: eigene Tanks ausmalen und die sechs Sätze verbinden → große Runde „Kenn ich!“ ohne Punkte → eigene Tankstellen → ein Tipp für einen Freund.',
+  einsatz: 'Nah am eigenen Alltag, ohne erfundene Hauptfigur: Akku ausmalen → „Kennst du das?“ (sechs Sätze ankreuzen, dann gleichzeitig Daumen zeigen) → Clip über Schlaf mit Fragen vorher, beim Schauen und danach plus „Stimmt das?“ → die sechs Tanks: eigene Tanks ausmalen und die sechs Sätze verbinden → große Runde „Kenn ich!“ ohne Punkte → Tanken – aber richtig (echte und Fake-Tankstellen) → mein Tank-Plan mit Tankstellen-Tausch → ein Tipp für einen Freund.',
   loesungen: [
     'Kennst du das? Kein Richtig oder Falsch. Die Sätze gehören später zu den Tanks: A Körper · B Sicherheit · C Dazugehören · D Ernst genommen · E Selbst entscheiden · F Spaß und Neues.',
     'Clip: Jugendliche brauchen etwa 8–10 Stunden Schlaf. Stimmt das? – Gehirn räumt auf und speichert: stimmt · schneller gereizt: stimmt · am Wochenende ganz nachholen: stimmt nicht (nur zum Teil) · Handy hilft beim Einschlafen: stimmt nicht (Licht und Inhalte halten wach) · Energydrink ersetzt Schlaf: stimmt nicht (er macht kurz wach, ersetzt nichts). Bitte den Ausschnitt vorher ansehen.',
     'Modell: A–Körper, B–Sicherheit, C–Dazugehören, D–Ernst genommen, E–Selbst entscheiden, F–Spaß und Neues.',
     'Große Runde: Es gibt keine richtige Lösung. Passen zwei Tanks (z. B. Teamwahl: Dazugehören und Ernst genommen), liegt die Karte dazwischen.',
+    'Tanken – aber richtig: echt – Runde um den Block, eine Stunde mit Freunden zocken, jemanden anrufen, Lieblingslied, etwas Richtiges essen · Fake – Energydrink, bis drei Uhr zocken, stundenlang scrollen, Streit anfangen. Zocken: Die Menge macht den Unterschied – begrenzt und mit Freunden füllt es auf, bis drei Uhr leert es den Körper-Tank.',
     'Schluss: gute Fragen sind offen und ohne Vorwurf: „Was fehlt dir gerade?“, „Wie schläfst du?“, „Soll ich einfach da sein?“',
   ],
-  material: '6 Tank-Karten und 18 Situations-Karten (im Heft, ausschneiden), Buntstifte zum Ausmalen, Gerät für den Clip',
+  material: '6 Tank-Karten und 18 Situations-Karten (im Heft, ausschneiden), Buntstifte zum Ausmalen, Zettel für den Tankstellen-Tausch, Gerät für den Clip',
   // Hinweise je Station stehen direkt an den Stationen (m1-stunden.ts, Feld leitung)
   stationen: [],
 }
