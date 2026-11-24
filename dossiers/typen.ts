@@ -26,6 +26,10 @@ export interface Frage {
   strich?: [string, string]
   /** freies Feld (Höhe in mm) zum Zeichnen oder Schreiben */
   feld?: number
+  /** Kette: Kästchen mit Pfeilen zum Eintragen (leerer Text = leeres Kästchen, sonst fester Text) – z. B. Spuren in Reihenfolge */
+  kette?: string[]
+  /** Wörter in einem Kasten, die man zuordnen oder einsetzen soll */
+  wortkasten?: string[]
 }
 export interface Clip { titel: string; kanal: string; url: string; dauer: string; frage: string }
 export interface Film { titel: string; jahr: number; fsk: number | null; laenge: string; worum: string; achte: string[]; achtung?: string }
@@ -39,8 +43,11 @@ export type Baustein =
   | { art: 'chat'; titel?: string; zeilen: { zeit?: string; wer: string; x: string; art?: 'sagt' | 'denkt' | 'tut' }[]; fragen?: Frage[] }
   /** Ein Dokument (Akte) – und daneben, was nicht drinsteht */
   | { art: 'akte'; titel: string; kopf: string; eintraege: string[]; stempel: string; daneben: { titel: string; punkte: string[] }; fragen?: Frage[] }
-  /** Modell: Punkte mit Erklärung und Warnzeichen */
-  | { art: 'modell'; punkte: { icon: string; t: string; x: string; warn?: string }[]; warnTitel?: string }
+  /** Modell: Punkte mit Erklärung und Warnzeichen. Zum Mitarbeiten (24.11.2026): `luecke` = leere Linie für ein weiteres
+   *  Warnzeichen, `anzeige` = Tankanzeige zum Ausmalen (Beschriftung), `beweis` = kurze Linie unten (z. B. „Spur“) */
+  | { art: 'modell'; punkte: { icon: string; t: string; x: string; warn?: string; luecke?: boolean }[]; warnTitel?: string; anzeige?: string; beweis?: string }
+  /** Spuren (Beweisstücke) zu einem Fall: Buchstabe, Quelle, kurzer Text – Jugendliche ermitteln selbst (24.11.2026) */
+  | { art: 'spuren'; spuren: { k: string; icon: string; quelle: string; x: string }[]; fragen?: Frage[] }
   /** Video mit Aufträgen: vor dem Schauen, beim Schauen, danach */
   | { art: 'clip'; clip: Clip; vorher: Frage[]; dabei: string[]; nachher: Frage[] }
   | { art: 'fragen'; kontext?: string; fragen: Frage[] }

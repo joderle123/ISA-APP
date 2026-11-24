@@ -46,6 +46,13 @@ gesetzt von `stunde-bau.ts`):
 - **Wörter:** Stunde statt Track, „Das kommt“ statt Tracklist, „Zum Aufwärmen“, „Streitfragen“, „Zum Schluss“. Die „Sessions“ entfallen
   (die Aktionen stehen in den Stunden). Die Leitung bekommt eine Seite „Der Ablauf der Stunden“ (Station, Zeit, Form, Seite, worauf es ankommt).
 
+**Vertiefung (Rückmeldung 24.11.2026: „Fall etwas schwerer, Modell interessanter – mit Übung auf dem Blatt, intensiv in jedes
+Thema“):** Einfache Sprache bleibt, das Denken wird schwerer. Fälle sind Ermittlungen mit **Spuren** (Baustein `spuren`: Buchstabe,
+Quelle, kurzer Text; eine Spur spricht gegen eine falsche Erklärung), dazu Kette ordnen (`kette`), Funke und Fass trennen,
+Theorien aus der Klasse prüfen, 100 Punkte Verantwortung verteilen. Die wichtigste Ursache steht nirgends direkt. **Jedes Modell hat
+Übungen im Heft:** Wortkasten (`wortkasten`) zum Zuordnen, leere Linien im Modell (`luecke`), Tankanzeige zum Ausmalen (`anzeige`)
+mit Beweis-Linie (`beweis`). Große Runden haben Level (★ bis ★★★). #01 ist der Pilot (Tanks, sozialer Akku, Stärke und Schatten).
+
 **So ist es abgelegt:** Die alten Angaben je Track (Szene, Fakten, Moves, Mythen) bleiben in `inhalt/mN.ts` als Quelle. Die Stunden
 stehen in `inhalt/mN-stunden.ts` (`stunden(d)` und `loesungen`); am Ende von `mN.ts` stellt `aufStunden(d, stunden(d), { loesungen })`
 die Ausgabe um (Wörter, Einsatz, Material, Lösungen der Leitung). #01 ist von Hand geschrieben (`m1-stunden.ts` + Block am Ende von

@@ -55,9 +55,14 @@ export function baueStunde(e: Track, i: number, h: StundenHelfer): string[] {
         return `<div class="sd-chat${b.zeilen.some((z) => z.zeit) ? '' : ' ohne'}">${b.titel ? `<div class="kp mo">${ic('message-circle')}${esc(b.titel)}</div>` : ''}${b.zeilen.map((z) => `<div class="z ${z.art ?? 'sagt'}">${z.zeit ? `<span class="mo u">${esc(z.zeit)}</span>` : '<span></span>'}<b>${esc(z.wer)}</b><span class="x">${t(z.x)}</span></div>`).join('')}</div>${fragen(b.fragen)}`
       case 'akte':
         return `<div class="sd-akte"><div class="blatt"><div class="kp"><span class="mo">${esc(b.titel)}</span><b>${t(b.kopf)}</b></div><ul>${b.eintraege.map((x) => `<li>${t(x)}</li>`).join('')}</ul><div class="stempel an">${esc(b.stempel)}</div></div>
-          <div class="daneben"><div class="mo">${esc(b.daneben.titel)}</div><ul>${b.daneben.punkte.map((x) => `<li>${t(x)}</li>`).join('')}</ul></div></div>${fragen(b.fragen)}`
-      case 'modell':
-        return `<div class="sd-modell">${b.punkte.map((p, k) => `<div><div class="o"><span class="z">${k + 1}</span>${ic(p.icon)}<h3>${t(p.t)}</h3></div><p>${t(p.x)}</p>${p.warn ? `<p class="w"><b class="mo">${esc(b.warnTitel ?? 'Warnlicht')}</b>${t(p.warn)}</p>` : ''}</div>`).join('')}</div>`
+          <div class="daneben"><div class="mo">${esc(b.daneben.titel)}</div><ul>${b.daneben.punkte.map((x) => `<li><span>${t(x)}</span></li>`).join('')}</ul></div></div>${fragen(b.fragen)}`
+      case 'modell': {
+        // Tankanzeige zum Ausmalen: fünf Felder von leer (unten) bis voll (oben)
+        const anz = b.anzeige ? `<div class="anz"><span class="mo">${esc(b.anzeige)}</span><div>${'<i></i>'.repeat(5)}</div><span class="mo">leer</span></div>` : ''
+        return `<div class="sd-modell${b.anzeige ? ' mit-anz' : ''}">${b.punkte.map((p, k) => `<div>${anz}<div class="tx"><div class="o"><span class="z">${k + 1}</span>${ic(p.icon)}<h3>${t(p.t)}</h3></div><p>${t(p.x)}</p>${p.warn || p.luecke ? `<p class="w"><b class="mo">${esc(b.warnTitel ?? 'Warnlicht')}</b>${p.warn ? t(p.warn) : ''}${p.luecke ? '<span class="lu"></span>' : ''}</p>` : ''}${b.beweis ? `<p class="bw"><b class="mo">${esc(b.beweis)}</b><span class="lu"></span></p>` : ''}</div></div>`).join('')}</div>`
+      }
+      case 'spuren':
+        return `<div class="sd-spuren">${b.spuren.map((s) => `<div><div class="kp"><span class="k">${esc(s.k)}</span>${ic(s.icon)}<span class="mo">${esc(s.quelle)}</span></div><p>${t(s.x)}</p></div>`).join('')}</div>${fragen(b.fragen)}`
       case 'clip':
         return `<div class="sd-clip"><div class="clip"><div class="qr">${qr(b.clip.url)}</div><div class="tx"><div class="lab mo">${ic('player-play')}Clip · ${esc(b.clip.dauer)}</div><h3>${t(b.clip.titel)}</h3><div class="ka mo">${esc(b.clip.kanal)} · ${esc(kurzlink(b.clip.url))}</div><div class="fr2">${t(b.clip.frage)}</div></div></div>
           <div class="drei"><div><div class="lab mo">${ic('eye')}Vorher</div>${b.vorher.map(frage).join('')}</div>

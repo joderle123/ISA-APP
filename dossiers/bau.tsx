@@ -73,6 +73,8 @@ function frage(f: Frage, i: number): string {
   if (f.gitter) a += `<div class="gitter">${f.gitter.map((w) => `<div>${t(w)}</div>`).join('')}</div>`
   if (f.striche) a += `<div class="striche">${f.striche.map((w) => `<span class="mo l">${t(w[0])}</span><div></div><span class="mo">${t(w[1])}</span>`).join('')}</div>`
   if (f.strich) a += `<div class="strich"><span class="mo">${t(f.strich[0])}</span><div></div><span class="mo">${t(f.strich[1])}</span></div>`
+  if (f.wortkasten) a += `<div class="wkasten">${f.wortkasten.map((w) => `<span>${t(w)}</span>`).join('')}</div>`
+  if (f.kette) a += `<div class="kette">${f.kette.map((w) => `<span class="${w ? 'fest mo' : ''}">${t(w)}</span>`).join('<b>→</b>')}</div>`
   if (f.feld) a += `<div class="feld" style="height:${f.feld}mm"></div>`
   if (f.linien) a += linien(f.linien)
   return `<div class="frage"><span class="n">${i + 1}</span><div class="fk2"><div class="ft">${t(f.f)}</div>${a}</div></div>`
