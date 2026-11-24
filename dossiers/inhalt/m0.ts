@@ -289,8 +289,8 @@ const d: Heft = {
         "titel": "So stoppst du dein Schubladendenken – das Sozialexperiment",
         "kanal": "Terra Xplore",
         "url": "https://www.youtube.com/watch?v=e-DBi8d4UAM",
-        "dauer": "die ersten 5 Min.",
-        "frage": "„In eine Schublade stecken“ heißt: nach einem Blick denken, wie jemand ist. In welche Schublade wurdest du schon gesteckt?"
+        "dauer": "00:00 bis 05:10 – vorher selbst ansehen (siehe Leitung)",
+        "frage": "„In eine Schublade stecken“ heißt: nach einem Blick denken, wie jemand ist. Was steckt hinter der Schublade?"
       },
       "mythen": [
         [
@@ -457,7 +457,7 @@ const d: Heft = {
         "titel": "Mobbing-Experiment: So schnell wird man zum Außenseiter",
         "kanal": "Quarks",
         "url": "https://www.youtube.com/watch?v=oG73p5RlKNw",
-        "dauer": "die ersten 5 Min.",
+        "dauer": "ganz, gut 4 Min. (00:00 bis 04:05)",
         "frage": "Wie schnell entsteht ein „Wir“ und ein „Die“ – und was hält dagegen?"
       },
       "mythen": [

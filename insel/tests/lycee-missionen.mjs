@@ -20,6 +20,7 @@ const WAHL = process.env.WAHL || 'zufall';
 
 await page.goto('file://' + DIST + '?test&start=1&figur=1');
 await page.waitForFunction(() => window.LYCEE && LYCEE.zustand && LYCEE.km);
+await L(() => { LYCEE.ui.atemMs = 30; });
 // Einstieg wegklicken, bis frei gelaufen werden kann
 async function klickWeiter(wahl = 'erste') {
   return L((wahl) => {
@@ -72,6 +73,7 @@ for (const code of CODES) {
       if (was === 'res') { res = true; break; }
       await page.waitForTimeout(80); continue;
     }
+    if (art === 'atem') { await L(() => { LYCEE.ui.atemMs = 30; const b = document.querySelector('.ly-ebene [data-a="weiter"]'); if (b && !b.hidden) b.click(); }); await page.waitForTimeout(60); continue; }
     if (art) { await L(() => LYCEE.ui.ebeneZu()); continue; }
     const r = await klickWeiter(WAHL);
     if (r) { await page.waitForTimeout(40); continue; }
@@ -90,6 +92,17 @@ for (const code of CODES) {
   const f = await L((c) => LYCEE.zustand.merke.km.fertig && LYCEE.zustand.merke.km.fertig[c], code);
   check(code + ': gespeichert mit eigenem Satz', !!f && f.satz === 'Ich probiere das diese Woche.', f && f.satz);
   await L(() => { document.querySelectorAll('.ly-beloh-zu').forEach((b) => b.click()); });
+}
+
+// Brief an mich (ENDE-4): privat gespeichert, nicht im Resümee
+if (CODES.includes('ENDE-4')) {
+  const b = await L(() => { const m = LYCEE.zustand.merke.km; const e = (m.fertig || {})['ENDE-4']; return { brief: !!(m.briefe && m.briefe['ENDE-4'] && m.briefe['ENDE-4'].text), imResuemee: !!(e && JSON.stringify(e).includes(m.briefe && m.briefe['ENDE-4'] ? m.briefe['ENDE-4'].text : '§§')) }; });
+  check('ENDE-4: Brief an mich privat gespeichert, nicht im Resümee', b.brief && !b.imResuemee, b);
+}
+// Erinnerungen (BLEIBT-3): frühere Missionen tauchen im Album auf
+if (CODES.includes('BLEIBT-3') && CODES.some((c) => ['ICH-2', 'GRENZE-3', 'EULE-1', 'BUEHNE-3', 'ONLINE-2', 'BUS-12', 'WORT-6', 'ZAHL-100', 'BEWEIS-3'].includes(c) && CODES.indexOf(c) < CODES.indexOf('BLEIBT-3'))) {
+  const n = await L(() => ((LYCEE.zustand.merke.km.fertig['BLEIBT-3'] || {}).momente || []).filter((x) => /^Erinnerung an/.test(x)).length);
+  check('BLEIBT-3: Erinnerungen an eigene frühere Missionen', n >= 1, n);
 }
 
 // Lehrer-Ansicht

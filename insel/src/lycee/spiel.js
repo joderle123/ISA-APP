@@ -2443,7 +2443,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   // ---------- Skateboard fahren (Skate-Ecke): 60 Sekunden, Punkte für Ollies und Sprünge über Rail, Box, Bank ----------
   let skateTick = null;
   // ---------- Basketball direkt am Korb im Hof (korb3d.js) – ersetzt das flache Freiwurf-Fenster ----------
-  const korbSpiel = createKorbSpiel({ scene, camera, steuerung, input, root, ton: (a) => ton(a) });
+  const korbSpiel = createKorbSpiel({ scene, camera, steuerung, input, root, ton: (a) => ton(a), gegnerFigur: (name) => (name === 'Ben' && LEUTE.ben ? person('ben') : null) });
   // ---------- Handschläge (handschlag.js): mit Freundinnen und Freunden ab „Kumpel“ ----------
   const hs = createHandschlag({ steuerung, camera, root, audio, rr, ton: (a) => ton(a), vib });
   // Tischtennis in 3D an der Platte (tt3d.js); das Gegenüber wird als eigene Figur geladen
@@ -2846,6 +2846,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       await sitGespraech(fn, x ? x.f.group.position : null); return true;
     },
     blende: async (t) => { ui.dialogZu(); await ui.blende(t); await new Promise((r) => setTimeout(r, 1400)); await ui.blendeAus(300); },
+    atem: async () => { ui.dialogZu(); await ui.atem(); staerke('atmen'); },
     crew: kmCrew,
     ersetze: (t) => ersetze(t),
     belohnung: (info) => {
@@ -3615,6 +3616,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     ausschnittNeu();
     for (const x of Object.values(leute)) {
       if (!x.f.group.visible) continue;
+      if (x.imSpiel) { x.f.update(dt); continue; }   // z. B. Ben beim H-O-R-S-E: Minispiel steuert Position und Blick
       if (imBild(x.f, x.pos)) x.f.update(dt);
       const d = Math.hypot(x.pos.x - p.x, x.pos.z - p.z);
       const zuMir = ((d < 2.6 && laeuft) || x === gegenueber) && x.haltung !== 'sitzt';

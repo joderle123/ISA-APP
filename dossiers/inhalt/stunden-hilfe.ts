@@ -76,9 +76,9 @@ export const weiter = (titel: string, nr: number, icon: string, ...bausteine: Ba
 export const fallWeiter = (titel: string, nr: number, kontext: string | null, ...l: Frage[]): Station =>
   ({ titel: `Der Fall: ${titel}`, zeit: '', wie: `zu Station ${nr}`, icon: 'search', fort: true, bausteine: [fragen(kontext, ...l)] })
 /** Clip des Tracks mit Aufträgen: vorher (Tipp), beim Schauen (zwei Stichwörter), danach (zurück zum Fall) */
-export const clip = (e: Track, titel: string, vorher: Frage[], dabei: string[], nachher: Frage[], zeit = '12 Min.'): Station => {
+export const clip = (e: Track, titel: string, vorher: Frage[], dabei: string[], nachher: Frage[], zeit = '12 Min.', leitung?: string): Station => {
   if (!e.clip) throw new Error(`Track ${e.nr} „${e.titel}“ hat keinen Clip`)
-  return st(`Clip: ${titel}`, zeit, 'alle', 'player-play', 'Ausschnitt vorher wählen. Erst „Vorher“ ankreuzen.',
+  return st(`Clip: ${titel}`, zeit, 'alle', 'player-play', leitung ?? 'Ausschnitt vorher wählen. Erst „Vorher“ ankreuzen.',
     { art: 'clip', clip: e.clip, vorher, dabei, nachher: leicht(nachher) })
 }
 /** Modell aus den Fakten des Tracks: je Punkt ein Symbol, auf Wunsch ein Warnzeichen */

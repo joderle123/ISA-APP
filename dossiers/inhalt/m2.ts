@@ -146,7 +146,7 @@ const d: Heft = {
         "titel": "Wieso sind Gefühle so wichtig?",
         "kanal": "Die Techniker · Dr. Johannes Wimmer",
         "url": "https://www.youtube.com/watch?v=JhUaiZxaNxI",
-        "dauer": "die ersten 5 Min.",
+        "dauer": "00:00 bis 04:57",
         "frage": "Wozu sind Gefühle da – auch die, die nerven?"
       },
       "merk": "Erst das Gefühl lesen. ==Dann antworten.==",
@@ -667,8 +667,8 @@ const d: Heft = {
         "titel": "Leon Windscheid: Warum wir alle Emotionen brauchen",
         "kanal": "DisneyCentral DE",
         "url": "https://www.youtube.com/watch?v=_TBGkGr-o_E",
-        "dauer": "ganz schauen",
-        "frage": "Welches unangenehme Gefühl verteidigt er – und womit?"
+        "dauer": "02:29 bis 05:58 (3,5 Min.)",
+        "frage": "Gibt es gute und schlechte Gefühle?"
       },
       "merk": "Unter der Wut ==sitzt oft noch wer.==",
       "moveUnter": "Dreh an den Reglern",

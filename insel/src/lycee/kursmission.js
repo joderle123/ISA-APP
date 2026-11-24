@@ -15,6 +15,7 @@
 //   { wahl: [{ t, log?, folge?, skill?: true|false, setze?: { k: v }, dann?: [Zeilen] }], frage? }
 //   { wenn: (f) => bool, dann: [Zeilen], sonst?: [Zeilen] } · { setze: { k: v } } · { moment: 'Wendung fürs Resümee' }
 //   { notiz: 'Frage', platz? } (eigener Text, freiwillig) · { skala: 'Frage', links, rechts } (0–10) · { blende: 'Text' }
+//   { notiz, platz, privat: true } (nur für die Person, z. B. Brief an mich) · { thermo: 'key', text?, voll? } (0–100; voll: true = hoch ist gut, z. B. Tank) · { erinnerung: 'CODE', sonst } (eigene frühere Mission)
 // f = Merkzettel über alle Missionen (S.merke.kmf): Entscheidungen wirken in späteren Missionen weiter.
 // Keine echten Namen, keine Familie des Spielers, Hilfe: 116 111 · 112 · BEE SECURE 8002 1234. Belohnungen nur verdient.
 import * as THREE from 'three';
@@ -55,6 +56,13 @@ export function codeNorm(roh) {
   if (c === 'LEHRER' || c === 'LEHRERIN' || c === 'LEHRPERSON') return 'LEHRER';
   const treffer = INFO_LISTE.find((m) => m.code === c || m.code.replace('-', '') === c.replace('-', '') || m.code.replace('-', '') === c.replace(/O/g, '0').replace('-', ''));
   return treffer ? treffer.code : null;
+}
+
+// alle Merker, die eine Mission selbst setzt (für einen sauberen Neustart)
+function setzKeys(def) {
+  const k = new Set();
+  const lauf = (x) => { if (!x || typeof x !== 'object') return; if (Array.isArray(x)) { x.forEach(lauf); return; } if (x.setze) Object.keys(x.setze).forEach((n) => k.add(n)); for (const v of Object.values(x)) if (typeof v === 'object') lauf(v); };
+  lauf(def); return k;
 }
 
 export function createKursMissionen({ scene, steuerung, ui, ton = () => {}, vib = () => {}, zustand, sichern, api }) {
@@ -103,6 +111,7 @@ export function createKursMissionen({ scene, steuerung, ui, ton = () => {}, vib 
   }
 
   // Zeilen abspielen (siehe Kopf). ctx = laufende Mission.
+  const plus = (p) => { const f = F(); for (const [k, n] of Object.entries(p)) f[k] = Math.max(0, Math.min(100, (f[k] || 0) + n)); sichern(); };
   async function spiele(zeilen) {
     for (const z of zeilen || []) {
       if (Array.isArray(z)) { await api.sag(z[0], z[1]); continue; }
@@ -111,6 +120,7 @@ export function createKursMissionen({ scene, steuerung, ui, ton = () => {}, vib 
         const i = await ui.waehle(opt.map((w) => api.ersetze(w.t)), z.frage ? api.ersetze(z.frage) : '');
         const w = opt[i]; vib(10);
         const besser = w.skill === false ? opt.find((o) => o.skill === true) : null;
+        if (w.plus) plus(w.plus);
         if (w.privat) { if (w.setze) Object.assign(F(), w.setze); if (w.dann) await spiele(w.dann); continue; }   // nur für die Person selbst: nicht ins Resümee
         lauf.log.push({ t: api.ersetze(w.log || w.t), folge: w.folge ? api.ersetze(w.folge) : '', skill: w.skill === true ? 1 : w.skill === false ? 0 : null, besser: besser ? api.ersetze(besser.t) : '' });
         if (w.setze) Object.assign(F(), w.setze);
@@ -120,17 +130,39 @@ export function createKursMissionen({ scene, steuerung, ui, ton = () => {}, vib 
       }
       if (z.wenn) { await spiele(z.wenn(F()) ? z.dann : z.sonst || []); continue; }
       if (z.setze) { Object.assign(F(), z.setze); sichern(); continue; }
+      if (z.plus) { plus(z.plus); continue; }
+      if (z.thermo) { if (typeof lauf.thermo === 'number') lauf.thermo = { name: 'Druck', wert: lauf.thermo };
+        const v = Math.max(0, Math.min(100, F()[z.thermo] || 0)), hoch = z.voll ? 'Grün' : 'Rot', tief = z.voll ? 'Rot' : 'Grün';
+        const zone = v >= 70 ? hoch : v >= 30 ? 'Gelb' : tief, name = (z.text || 'Dein Druck').replace(/^Deine?\s+/, '').replace(/\s+jetzt$/, '');
+        await api.sag('e', (z.voll ? '🔋 ' : '🌡️ ') + (z.text || 'Dein Druck') + ': ' + v + ' von 100 – ' + zone + '.');
+        if (z.voll) lauf.thermo = { name, wert: lauf.thermo && lauf.thermo.voll ? Math.min(lauf.thermo.wert, v) : v, voll: true };
+        else lauf.thermo = { name, wert: Math.max(lauf.thermo ? lauf.thermo.wert : 0, v) };
+        continue; }
+      if (z.erinnerung) {   // eigene frühere Mission: was die Person damals entschieden und geschrieben hat
+        const e = (M().fertig || {})[z.erinnerung];
+        if (!e) { await api.sag('e', api.ersetze(z.sonst || 'Hier war etwas. Du weißt nicht mehr genau, was.')); continue; }
+        const gut = (e.entscheidungen || []).filter((x) => x.skill === 1), d = new Date(e.datum);
+        const wann = isNaN(d) ? 'Damals' : 'Am ' + d.toLocaleDateString('de-LU', { day: 'numeric', month: 'long' });
+        await api.sag('e', '📸 ' + wann + ' – „' + e.titel + '“: ' + (gut.length ? gut[0].t + '.' : (e.entscheidungen && e.entscheidungen[0] ? e.entscheidungen[0].t + '.' : 'Du warst dabei.')));
+        if (e.satz) await api.sag('e', 'Dein Satz von damals: „' + e.satz + '“');
+        lauf.momente.push('Erinnerung an „' + e.titel + '“' + (e.satz ? ' – „' + e.satz + '“' : ''));
+        continue; }
+      if (z.atem) { ui.dialogZu(); await api.atem(); continue; }
       if (z.moment) { lauf.momente.push(api.ersetze(z.moment)); continue; }
       if (z.blende) { await api.blende(api.ersetze(z.blende)); continue; }
+      if (z.notiz && z.privat) {   // nur für die Person selbst (z. B. Brief an mich): nicht ins Resümee, nicht in die Lehrer-Ansicht
+        const t = await eingabe(z.notiz, z.platz || '', true);
+        if (t) { const m = M(); m.briefe = m.briefe || {}; m.briefe[lauf.code] = { frage: z.notiz, text: t, datum: new Date().toISOString() }; sichern(); }
+        continue; }
       if (z.notiz) { const t = await eingabe(z.notiz, z.platz || ''); if (t) lauf.notizen.push({ frage: z.notiz, text: t }); continue; }
       if (z.skala) { const v = await skala(z.skala, z.links || '0', z.rechts || '10'); lauf.skalen.push({ frage: z.skala, wert: v }); continue; }
     }
   }
   // Freitext (freiwillig) – als kleines Feld über dem Dialog
-  function eingabe(frage, platz) {
+  function eingabe(frage, platz, privat = false) {
     return new Promise((ok) => {
       ui.dialogZu();
-      const k = ui.ebeneAuf('km', '<div class="km-eingabe"><span class="km-kicker">Freiwillig · steht in deinem Resümee</span><h3>' + esc(frage) + '</h3><textarea rows="3" maxlength="240" placeholder="' + esc(platz) + '"></textarea>' +
+      const k = ui.ebeneAuf('km', '<div class="km-eingabe"><span class="km-kicker">' + (privat ? 'Nur für dich · kommt in kein Resümee, bleibt auf diesem Gerät' : 'Freiwillig · steht in deinem Resümee') + '</span><h3>' + esc(frage) + '</h3><textarea rows="' + (privat ? 7 : 3) + '" maxlength="' + (privat ? 1500 : 240) + '" placeholder="' + esc(platz) + '"></textarea>' +
         '<div class="km-knoepfe"><button type="button" class="ly-btn" data-a="nein">Überspringen</button><button type="button" class="ly-btn ly-primaer" data-a="ja">Fertig</button></div></div>');
       const ta = k.querySelector('textarea'); setTimeout(() => ta.focus(), 60);
       const zu = (t) => { ui.ebeneZu(); ok(t); };
@@ -163,9 +195,10 @@ export function createKursMissionen({ scene, steuerung, ui, ton = () => {}, vib 
     verstecken();
     if (L.def.ende && L.def.ende.length) { lauf.inSzene = true; try { await api.sitzung(() => spiele(L.def.ende)); } finally { lauf.inSzene = false; } }
     api.crew({});
+    if (typeof L.thermo === 'number') L.thermo = { name: 'Druck', wert: L.thermo };
     const ja = L.log.filter((x) => x.skill === 1).length, von = L.log.filter((x) => x.skill != null).length;
     const eintrag = { code: L.code, titel: info.titel, skill: info.skill, heft: info.heft, nr: info.nr, ort: info.ort, datum: new Date().toISOString(), min: Math.max(1, Math.round((Date.now() - L.t0) / 60000)),
-      entscheidungen: L.log, momente: L.momente, notizen: L.notizen, skalen: L.skalen, skillJa: ja, skillVon: von, frage: (L.def.resuemee || {}).frage || '', satz: '' };
+      entscheidungen: L.log, momente: L.momente, notizen: L.notizen, skalen: L.skalen.concat(L.thermo ? [{ frage: (L.thermo.voll ? 'Niedrigster Stand: ' : 'Höchster Stand: ') + L.thermo.name + ' (0–100 → hier geteilt durch 10)', wert: Math.round(L.thermo.wert / 10) }] : []), skillJa: ja, skillVon: von, frage: (L.def.resuemee || {}).frage || '', satz: '' };
     const m = M(); m.aktiv = null; m.fertig = m.fertig || {};
     const neu = !m.fertig[L.code];
     lauf = null;
@@ -237,7 +270,8 @@ export function createKursMissionen({ scene, steuerung, ui, ton = () => {}, vib 
       (meldung ? '<p class="km-meldung">' + meldung + '</p>' : '') +
       (lauf ? '<p class="km-laeuft">Läuft gerade: <b>' + esc(infoVon(lauf.code).titel) + '</b> – ' + esc((schritt() || {}).ziel || '') + ' <button type="button" class="ly-link" data-a="pause">pausieren</button></p>' : '') +
       (frei.length ? '<ul class="km-liste">' + frei.map(zeile).join('') + '</ul>' : '<p class="km-leer">Noch keine Mission freigeschaltet.</p>') +
-      '<p class="km-fuss"><button type="button" class="ly-link" data-a="meine">Meine Resümees (' + Object.keys(fertig).length + ')</button></p></div>');
+      '<p class="km-fuss"><button type="button" class="ly-link" data-a="meine">Meine Resümees (' + Object.keys(fertig).length + ')</button>' +
+      (m.briefe && Object.keys(m.briefe).length ? ' · <button type="button" class="ly-link" data-a="brief">✉️ Brief an mich</button>' : '') + '</p></div>');
     const inp = k.querySelector('input'); inp.addEventListener('keydown', (e) => e.stopPropagation()); setTimeout(() => inp.focus(), 80);
     k.querySelector('.ly-zu').onclick = () => ui.ebeneZu();
     k.querySelector('form').onsubmit = (e) => { e.preventDefault(); codeRein(inp.value); };
@@ -245,6 +279,17 @@ export function createKursMissionen({ scene, steuerung, ui, ton = () => {}, vib 
     k.querySelectorAll('[data-res]').forEach((b) => { b.onclick = () => einzeln(fertig[b.dataset.res], () => fenster()); });
     const p = k.querySelector('[data-a="pause"]'); if (p) p.onclick = () => { pausieren(); fenster('Mission pausiert. Du kannst sie jederzeit weiterspielen.'); };
     k.querySelector('[data-a="meine"]').onclick = () => lehrerAnsicht(false);
+    const br = k.querySelector('[data-a="brief"]'); if (br) br.onclick = () => brief();
+  }
+  // Brief an mich (ENDE-4): nur für die Person, mit Datum; Löschen möglich
+  function brief() {
+    const m = M(), b = Object.values(m.briefe || {});
+    const k = ui.ebeneAuf('km', '<button type="button" class="ly-zu" aria-label="Schließen">✕</button><div class="km-fenster"><span class="km-kicker">Nur für dich</span><h2>✉️ Brief an mich</h2>' +
+      b.map((x) => '<p class="km-leer">Geschrieben am ' + new Date(x.datum).toLocaleDateString('de-LU') + '</p><p class="km-brief">' + esc(x.text).replace(/\n/g, '<br>') + '</p>').join('') +
+      '<p class="km-fuss"><button type="button" class="ly-link" data-a="weg">Brief löschen</button> · <button type="button" class="ly-link" data-a="zurueck">Zurück</button></p></div>');
+    k.querySelector('.ly-zu').onclick = () => ui.ebeneZu();
+    k.querySelector('[data-a="zurueck"]').onclick = () => fenster();
+    k.querySelector('[data-a="weg"]').onclick = () => { m.briefe = {}; sichern(); fenster('Brief gelöscht.'); };
   }
   function codeRein(roh) {
     const c = codeNorm(roh);
@@ -273,6 +318,7 @@ export function createKursMissionen({ scene, steuerung, ui, ton = () => {}, vib 
     lauf = alt ? { code, def, i: alt.i, log: alt.log || [], momente: alt.momente || [], notizen: alt.notizen || [], skalen: alt.skalen || [], t0: alt.t0 || Date.now() }
       : { code, def, i: 0, log: [], momente: [], notizen: [], skalen: [], t0: Date.now() };
     if (!m.frei.includes(code)) m.frei.push(code);
+    if (!alt) { const f = F(); for (const k of setzKeys(def)) delete f[k]; }   // neu gespielt: eigene Merker von vorn (die anderer Missionen bleiben)
     ton('pling');
     if (!alt && def.start && def.start.length) { lauf.inSzene = true; try { await api.sitzung(() => spiele(def.start)); } finally { lauf.inSzene = false; } }
     if (!lauf) return;

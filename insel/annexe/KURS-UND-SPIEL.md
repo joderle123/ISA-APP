@@ -25,11 +25,13 @@ Aufträge 24.11.2026 (Lehrperson, nach Test mit den Schülern):
 
 ## Reihenfolge und Stand
 - [x] #01 Ich – Sweet Spot (24.11.)
-- [x] #00 Neu hier – Sweet Spot (24.11., noch ohne Ticket)
-- [ ] Missions-Ticket im Heft (alle Hefte)
-- [ ] #02 Gefühle · [ ] #03 Druck · [ ] #04 Gedanken · [ ] #05 Grenzen · [ ] #06 Ärger · [ ] #07 Netz · [ ] #08 Akku
-- [ ] Spiel: Missions-Engine (Daten, Ablauf an Orten, Entscheidungen, Folgen, Resümee, Lehrer-Ansicht, Teilen, Code eingeben, QR in der App)
-- [ ] Spiel: 30 Missionen schreiben (je Heft zusammen mit dem Heft)
+- [x] #00 Neu hier – Sweet Spot (24.11.)
+- [x] Missions-Ticket im Heft (alle Hefte) + Jahresplan-Seite „Das Spiel dazu“
+- [x] #02 Gefühle · [x] #03 Druck · [x] #04 Gedanken · [x] #05 Grenzen · [x] #06 Ärger · [x] #07 Netz · [x] #08 Akku
+- [x] Spiel: Missions-Engine (Daten, Ablauf an Orten, Entscheidungen, Folgen, Resümee, Lehrer-Ansicht, Teilen, Code eingeben) – Thermometer/Tank, Erinnerungen an frühere Missionen, privater „Brief an mich“
+- [ ] QR-Code direkt in der App scannen (bisher: Code eintippen)
+- [x] Spiel: 33 Missionen geschrieben (eine je Stunde), Test tests/lycee-missionen.mjs
+- [ ] Video-Prüfung (Gemini): Teil 1 eingearbeitet (#00–#02 S2); Teil 2–6 offen; Ersatz für #00 S2, #01 S1, #01 S3
 - [ ] Spiel: Skills-Raum dunkel und spannend (stil.css .ly-ebene[data-art="skills"])
 - [ ] Spiel: schnelle Punkte – Handy langsamer (ui.js:694, tempo), Vorlesen standardmäßig an (ui.js:145), Ben beim Wurf zeigen (korb3d.js:148), Autos neu (verkehr.js, requisiten.js)
 - [ ] Spiel als Web-App (PWA, Service Worker, Home-Bildschirm, Updates) + Spielstand-Code (gibt es: AJ1., ui.js:199)

@@ -69,8 +69,9 @@ export function stunden(d: Heft): Stunde[] {
       ankommen('der erste Blick', kreuz('Wie viele Leute hier kennst du schon ein bisschen?', 'keinen', 'einen', 'zwei oder mehr'), zeile('Was denken Leute über dich, wenn sie dich zum ersten Mal sehen? Ein Wort.')),
       clip(wer, 'Schubladen im Kopf',
         [kreuzU('Wie schnell hat dein Kopf einen ersten Eindruck?', 'in Sekunden', 'in Minuten', 'erst nach Tagen'), kreuz('Steckst du andere manchmal in eine Schublade?', 'oft', 'manchmal', 'nie')],
-        ['In diese Schubladen stecken die Leute andere:', 'So kommt man aus der Schublade raus:', 'Das hat mich überrascht:'],
-        [kreuz('Wurdest du schon in eine Schublade gesteckt?', 'oft', 'manchmal', 'nie'), kreuz('Schau auf dein Wort von Station 1: Ist das auch eine Schublade?', 'ja', 'vielleicht', 'nein')]),
+        ['Diese Gruppen stehen am Anfang im Kreis:', 'Bei dieser Frage standen ganz verschiedene Leute zusammen in der Mitte:', 'Das hat mich überrascht:'],
+        [kreuzU('Was zeigt das Experiment?', 'Hinter der Schublade steckt mehr, als man sieht.', 'Die Schubladen stimmen meistens.'), kreuz('Schau auf dein Wort von Station 1: Ist das auch eine Schublade?', 'ja', 'vielleicht', 'nein')], '12 Min.',
+        'Achtung: Im Video kommen schon in den ersten Minuten Fragen zu Pornos, Fremdgehen und Alkohol vor. Vorher selbst ansehen und nur zeigen, wenn es zur Gruppe passt. Ein Ersatz-Video wird gesucht. Ohne Clip: die drei Fakten vorlesen und die Fragen „danach“ direkt stellen.'),
       weiter('Clip: Schubladen im Kopf', 2, 'player-play', reden('Welche Schublade nervt euch am meisten?')),
     ),
     seite(
@@ -150,8 +151,9 @@ export function stunden(d: Heft): Stunde[] {
         danach: [reden('Welche der drei Regeln fehlt in Gruppen am häufigsten?')] }),
       clip(team, 'Wie schnell wird jemand Außenseiter?',
         [kreuzU('Wie schnell entscheidet eine Gruppe, wer dazugehört?', 'in Minuten', 'in Tagen', 'in Wochen'), kreuz('Warst du schon mal der oder die Neue?', 'oft', 'manchmal', 'nie')],
-        ['So wird jemand zum Außenseiter:', 'Das hilft dagegen:', 'Das hat mich überrascht:'],
-        [kreuzU('Was wäre aus Finns Gruppe geworden, wenn er Jana gegen die Bank hätte laufen lassen?', 'ein „Wir“ gegen Jana', 'ein besseres Team', 'nichts'), zeile('Was hält eine Gruppe zusammen?')]),
+        ['So behandelt die Klasse Tim:', 'So reagiert Tim – und was das ändert:', 'Das macht Daniel:'],
+        [kreuzU('Wie viele von 25 setzen sich am Ende zu Tim?', 'einer', 'die Hälfte', 'alle'), kreuzU('Was wäre aus Finns Gruppe geworden, wenn er Jana gegen die Bank hätte laufen lassen?', 'ein „Wir“ gegen Jana', 'ein besseres Team', 'nichts')], '12 Min.',
+        'Ganz zeigen (gut 4 Min.). Vorher sagen: Die Klasse spielt das nur – sie hat den Auftrag, Tim abzuweisen. Danach nach der Gruppe im Video fragen, nicht nach eigenen Mobbing-Erfahrungen.'),
     ),
     seite(
       fuerDich('was ich brauche, was ich gebe', '10 Min.', fragen(null, kreuz('Schau auf Station 1: Hat sich dein Vertrauen seit dem Lotsen verändert?', 'mehr', 'gleich', 'weniger'), satz('Bei Station 1 steht, was du brauchst. Und andersrum:', 'Das kann ich der Gruppe geben:'), { f: 'Wenn diese Gruppe ein Team wäre: Wie heißt es?', linien: 1 })),
@@ -170,7 +172,7 @@ export const loesungen: string[][] = [
     'Modell: die Ausnahme „Jemand ist in Gefahr“ klar benennen.',
   ],
   [
-    'Clip: Die Antworten hängen vom Ausschnitt ab – bitte vorher ansehen.',
+    'Clip: 25 Leute in fünf Kreisen (z. B. Managerinnen, Pflegekräfte, Junge, Alte). Bei harmlosen Fragen (vegetarisch? Tattoo?) stehen plötzlich Leute aus ganz verschiedenen Kreisen zusammen in der Mitte – auch zwei Managerinnen mit Tattoo. Kernsatz: Schubladen sind normal, aber gefährlich. Danach 1: Hinter der Schublade steckt mehr.',
     'Der Fall: 1 – sie schaut erst zu; 2 – alle drei passen.',
     'Modell: gut – Serie, Weg hierher, was man gut kann · zu privat – Eltern, Geld.',
     'Treffer-Jagd: Wichtiger als Bingo ist das Nachhaken („Welche Sprachen?“).',
@@ -179,6 +181,6 @@ export const loesungen: string[][] = [
     'Der Fall: jeweils die erste Antwort.',
     'Blind-Lotse: „Ich habe gelinst“ ist ehrlich, kein Versagen.',
     'Modell: vorrennen → Jeder zählt · Tisch → Wer führt, trägt · „noch kurz“ → Stopp gilt · nie zuspielen → Jeder zählt.',
-    'Clip: nach der Gruppe im Video fragen, nicht nach eigenen Mobbing-Erfahrungen; Danach 1: ein „Wir“ gegen Jana.',
+    'Clip: Die Klasse soll Tim, der den „Neuen“ spielt, abweisend behandeln. Tim wird gereizt – und rutscht so noch mehr nach außen. Die Gruppe spürt ein „Machtgefühl“. Nach 25 Minuten bricht die Vertrauenslehrerin ab. Einer, Daniel, setzt sich als Einziger zu Tim. Danach 1: einer · Danach 2: ein „Wir“ gegen Jana.',
   ],
 ]

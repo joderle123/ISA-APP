@@ -301,7 +301,7 @@ const d: Heft = {
         "titel": "Introvertiert | extrovertiert: Wer ist glücklicher?",
         "kanal": "Terra Xplore",
         "url": "https://www.youtube.com/watch?v=x_un3Ojno7Y",
-        "dauer": "die ersten 5 Min.",
+        "dauer": "04:07 bis 07:45 (gut 3 Min.)",
         "frage": "Was können die Leisen laut Video besser – und was die Lauten?"
       },
       "mythen": [
@@ -467,7 +467,7 @@ const d: Heft = {
         "titel": "Ich bin nichts wert – so steigerst du dein Selbstwertgefühl",
         "kanal": "BUBBLES",
         "url": "https://www.youtube.com/watch?v=XZzcGOxqBy8",
-        "dauer": "die ersten 5 Min.",
+        "dauer": "NUR 02:42 bis 04:42 (2 Min.)",
         "frage": "Welcher Tipp aus dem Video ist machbar – und welcher klingt nur gut?"
       },
       "mythen": [
@@ -890,7 +890,7 @@ d.ansage.so = [
   ['Große Runde', 'Eine Aktion für alle, 25 bis 30 Minuten. Die Karten dafür stehen im Heft. Niemand muss etwas vorspielen.'],
 ]
 // Clip zu Stunde 1: Schlaf – der Tank, den alle kennen (seit 24.11.2026 ohne Fall, mit Fragen vorher, beim Schauen, danach und „Stimmt das?“). Titel und Kanal über oEmbed bestätigt (16.11.2026).
-d.tracks[0].clip = { titel: 'Mehr als lebenswichtig: Darum schlafen wir!', kanal: 'Quarks', url: 'https://www.youtube.com/watch?v=sdH-fEEh1uY', dauer: 'Ausschnitt, etwa 6 Min.', frage: 'Was macht dein Körper nachts – und was passiert, wenn du zu wenig schläfst?' }
+d.tracks[0].clip = { titel: 'Mehr als lebenswichtig: Darum schlafen wir!', kanal: 'Quarks', url: 'https://www.youtube.com/watch?v=sdH-fEEh1uY', dauer: '00:00 bis 05:09 (ganz)', frage: 'Was macht dein Gehirn, während du schläfst?' }
 d.geprueft = '16.11.2026'
 d.tracks[0].leitung = {
   ...d.tracks[0].leitung,

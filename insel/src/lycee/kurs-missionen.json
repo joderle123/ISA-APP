@@ -7,7 +7,7 @@
         "code": "REGEL-12",
         "titel": "Was im Jugendhaus bleibt",
         "ort": "Jugendhaus",
-        "kurz": "Jo erzählt dir im Jugendhaus etwas Persönliches. Später wollen es drei Leute aus dir herausholen. Bleibst du dicht – ohne zu lügen?",
+        "kurz": "Jade erzählt dir im Jugendhaus etwas Persönliches. Später wollen es drei Leute aus dir herausholen. Bleibst du dicht – ohne zu lügen?",
         "belohnung": "Rucksack „Verschwiegen“",
         "skill": "Was hier bleibt",
         "item": {
@@ -35,7 +35,7 @@
         "code": "LOTSE-3",
         "titel": "Nebel im Wald",
         "ort": "Waldweg",
-        "kurz": "Mila hat sich im Nebel auf dem Waldweg verlaufen. Lotse sie am Telefon zurück – nur mit deiner Stimme, ehrlich und Schritt für Schritt.",
+        "kurz": "Mia hat sich im Nebel auf dem Waldweg verlaufen. Lotse sie am Telefon zurück – nur mit deiner Stimme, ehrlich und Schritt für Schritt.",
         "belohnung": "Stirnlampe",
         "skill": "Wer führt, trägt",
         "item": {
@@ -135,7 +135,7 @@
         "code": "MISCH-10",
         "titel": "Das Mischpult",
         "ort": "Aula",
-        "kurz": "Bei der Probe in der Aula fühlt Lina vier Dinge gleichzeitig. Stell mit ihr am Mischpult ein, was gerade wie laut ist.",
+        "kurz": "Bei der Probe in der Aula fühlt Amira vier Dinge gleichzeitig. Stell mit ihr am Mischpult ein, was gerade wie laut ist.",
         "belohnung": "DJ-Mütze",
         "skill": "Gefühle mischen",
         "item": {
@@ -316,7 +316,7 @@
         "code": "STOPP-4",
         "titel": "Nein ist ein Satz",
         "ort": "Dorf",
-        "kurz": "Drei Leute wollen heute etwas von dir. Sag dreimal Nein – freundlich und klar.",
+        "kurz": "Drei Leute wollen heute etwas von dir. Sag dreimal Nein – freundlich und klar. Und dann hörst du selbst eins.",
         "belohnung": "Stopp-Kappe",
         "skill": "Nein sagen",
         "item": {
@@ -373,7 +373,7 @@
       {
         "code": "SCROLL-1",
         "titel": "Wer scrollt wen?",
-        "ort": "dein Zimmer",
+        "ort": "Dorf und zu Hause",
         "kurz": "Dein Handy will dich festhalten. Finde die drei Tricks der App – und schalte sie ab.",
         "belohnung": "Sneaker „Offline“",
         "skill": "Tricks der Apps",
@@ -386,8 +386,8 @@
       {
         "code": "ONLINE-2",
         "titel": "Gelesen um 23:14",
-        "ort": "annexe.cam",
-        "kurz": "Jemand schreibt dir ständig und will sofort Antworten. Setz eine Grenze, die hält.",
+        "ort": "Handy und Campus",
+        "kurz": "Amira schreibt dir nachts ständig und will sofort Antworten. Setz eine Grenze, die hält – und merk, was aus Nachrichten wird, die du abschickst.",
         "belohnung": "Mütze „Mond“",
         "skill": "Grenzen im Netz",
         "item": {
@@ -400,7 +400,7 @@
       {
         "code": "FAKE-3",
         "titel": "Die Schlagzeile",
-        "ort": "annexe.cam",
+        "ort": "annexe.cam und Campus",
         "kurz": "Ein Gerücht verbreitet sich auf annexe.cam. Prüf es, bevor du teilst – drei Spuren, ein Urteil.",
         "belohnung": "Brille „Faktencheck“",
         "skill": "Fakes erkennen",

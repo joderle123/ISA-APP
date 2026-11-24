@@ -24,7 +24,7 @@ function ballTextur() {
   const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; return t;
 }
 
-export function createKorbSpiel({ scene, camera, steuerung, input, root, ton = () => {} }) {
+export function createKorbSpiel({ scene, camera, steuerung, input, root, ton = () => {}, gegnerFigur = null }) {
   // ---------- Ring und Netz an beiden Körben (bleiben immer in der Welt) ----------
   const ringMat = new THREE.MeshLambertMaterial({ color: '#e0522f' }), netzMat = new THREE.LineBasicMaterial({ color: '#f4f4f4', transparent: true, opacity: 0.9 });
   const netze = KOERBE.map((k) => {
@@ -107,11 +107,25 @@ export function createKorbSpiel({ scene, camera, steuerung, input, root, ton = (
       input.setEnabled(false); steuerung.frei = false; steuerung.kameraAus = true;
       let wurf = 0, treffer = 0, serie = 0, halten = null, flug = null, zug = 'ich', ichRein = false, bI = 0, bE = 0, warte = 0.6, msgT = 0;
       lauf = { korb, ki };
+      // Gegner sichtbar (Rückmeldung der Schüler: „Ben wirft …“ ohne Ben): Figur links neben dich, Blick zum Korb
+      let gf = null, gfAlt = null;
+      const gfStellen = () => {
+        if (!gf || !lauf || !lauf.sp) return;
+        const sp = lauf.sp, fx = Math.sin(lauf.yaw), fz = Math.cos(lauf.yaw);
+        const bx = sp.x - fz * 1.45 + fx * 0.35, bz = sp.z + fx * 1.45 + fz * 0.35;
+        gf.f.group.visible = true; gf.f.group.position.set(bx, 0, bz); gf.f.group.rotation.y = Math.atan2(korb.ring.x - bx, korb.ring.z - bz);
+        gf.korbPos = { x: bx, z: bz };
+      };
+      if (HORSE && gegnerFigur) Promise.resolve(gegnerFigur(gegner)).then((p) => {
+        if (!p || !p.f || !lauf) return;
+        gf = p; gfAlt = { vis: p.f.group.visible, pos: p.f.group.position.clone(), rot: p.f.group.rotation.y }; p.imSpiel = true;
+        if (p.f.sitzen) p.f.sitzen(false); p.f.spiele('Idle'); gfStellen();
+      }).catch(() => {});
       const stellen = () => {
         const sp = spots[DREIER ? wurf % spots.length : 0];
         const yaw = Math.atan2(korb.ring.x - sp.x, korb.ring.z - sp.z);
         steuerung.teleport(sp.x, sp.z, yaw); steuerung.kameraAus = true;
-        lauf.sp = sp; lauf.yaw = yaw;
+        lauf.sp = sp; lauf.yaw = yaw; gfStellen();
         const fx = Math.sin(yaw), fz = Math.cos(yaw);
         // Kamera: hinter und etwas rechts über der Schulter, Blick auf den Korb
         const hochkant = window.innerHeight > window.innerWidth, weit = DREIER ? 3.6 : 3.3, seit = hochkant ? 0.35 : 0.9, blick = hochkant ? 0.8 : 0.62;
@@ -138,7 +152,11 @@ export function createKorbSpiel({ scene, camera, steuerung, input, root, ton = (
         wurf++;
       };
       const werfen = (faktor, seit, wer) => {
-        const sp = lauf.sp, fx = Math.sin(lauf.yaw), fz = Math.cos(lauf.yaw);
+        let sp = lauf.sp, fx = Math.sin(lauf.yaw), fz = Math.cos(lauf.yaw);
+        if (wer === 'gegner' && gf && gf.korbPos) {   // der Ball fliegt aus Bens Händen
+          sp = gf.korbPos; const y = Math.atan2(korb.ring.x - sp.x, korb.ring.z - sp.z); fx = Math.sin(y); fz = Math.cos(y);
+          gf.f.spiele('Interact', { tempo: 1.3 }); setTimeout(() => { if (gf) gf.f.spiele('Idle'); }, 900);
+        }
         const P = new THREE.Vector3(sp.x + fx * 0.28, 2.25, sp.z + fz * 0.28);
         const ziel = korb.ring.clone(); ziel.y += 0.02;
         flug = { wer, p: P, v: abwurf(P, ziel, DREIER ? 0.9 : 0.93, faktor, seit), t: 0, ring: 0, brett: false, drin: false, boden: false };
@@ -152,6 +170,7 @@ export function createKorbSpiel({ scene, camera, steuerung, input, root, ton = (
       const ende = () => {
         if (!lauf) return;
         lauf = null; ball.visible = false; hud.remove(); root.classList.remove('ly-wurfmodus');
+        if (gf && gfAlt) { gf.f.group.visible = gfAlt.vis; gf.f.group.position.copy(gfAlt.pos); gf.f.group.rotation.y = gfAlt.rot; gf.f.spiele('Idle'); gf.korbPos = null; gf.imSpiel = false; } gf = null;
         document.removeEventListener('keydown', runter, true); document.removeEventListener('keyup', hoch, true);
         steuerung.kameraAus = false; steuerung.teleport(p0.x, p0.z, yaw0); input.setEnabled(true); steuerung.frei = true;
         if (HORSE) korbSpiel.letzteRunde = { sieg: bE > bI, ich: bI, er: bE };

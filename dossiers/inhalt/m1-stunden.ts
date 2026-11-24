@@ -52,18 +52,18 @@ const tank: Stunde = {
       stationen: [
         {
           titel: 'Clip: Was die Nacht mit dir macht', zeit: '15 Min.', wie: 'alle', icon: 'player-play',
-          leitung: 'Ausschnitt vorher ansehen und prüfen, ob „Stimmt das?“ dazu passt. Danach gemeinsam auflösen.',
+          leitung: 'Eher schwer: vorher „Gedächtnis“ und „Tiefschlaf“ erklären. Zeigt, wie das Gehirn nachts aufräumt – nicht, was Schlafmangel mit der Laune macht (→ „Stimmt das?“).',
           bausteine: [
             {
               art: 'clip',
-              clip: { titel: 'Mehr als lebenswichtig: Darum schlafen wir!', kanal: 'Quarks', url: 'https://www.youtube.com/watch?v=sdH-fEEh1uY', dauer: 'Ausschnitt, etwa 6 Min.', frage: 'Was macht dein Körper nachts – und was passiert, wenn du zu wenig schläfst?' },
+              clip: { titel: 'Mehr als lebenswichtig: Darum schlafen wir!', kanal: 'Quarks', url: 'https://www.youtube.com/watch?v=sdH-fEEh1uY', dauer: '00:00 bis 05:09 (ganz)', frage: 'Was macht dein Gehirn, während du schläfst?' },
               vorher: [
-                { f: 'Schätz: Wie viele Stunden Schlaf braucht man mit 15?', zahl: ['Stunden'] },
-                { f: 'Und du – wie viele Stunden hast du heute Nacht geschlafen?', zahl: ['Stunden'] },
+                { f: 'Dein Tipp: Was macht dein Gehirn, während du schläfst?', kreuz: ['Es ist aus.', 'Es arbeitet weiter.'], unter: true },
+                { f: 'Wie viele Stunden hast du heute Nacht geschlafen – ungefähr?', zahl: ['Stunden'] },
               ],
-              dabei: ['Das macht der Körper nachts:', 'Das passiert bei zu wenig Schlaf:', 'Das hat mich überrascht:'],
+              dabei: ['Das macht das Gehirn nachts:', 'Das Zahlen-Rätsel – so ging es aus:', 'Das hat mich überrascht:'],
               nachher: [
-                { f: 'War deine Schätzung richtig?', kreuz: ['ja', 'zu viel', 'zu wenig'] },
+                { f: 'Wann haben die Leute im Video die versteckte Regel gefunden?', kreuz: ['vor dem Schlafen', 'nach dem Schlafen', 'gar nicht'], unter: true },
                 { f: 'Was machst du ab heute anders?', linien: 1 },
               ],
             },
@@ -292,14 +292,14 @@ const lautLeise: Stunde = {
         },
         {
           titel: 'Clip: laut, leise, glücklich?', zeit: '10 Min.', wie: 'alle', icon: 'player-play',
-          leitung: 'Ausschnitt vorher ansehen. Tipp vorher ankreuzen lassen. Studien finden bei Lauten im Schnitt etwas mehr gute Laune – ein Durchschnitt, kein Urteil über Leise.',
+          leitung: 'Nur 04:07 bis 07:45 (davor ein Kraftausdruck). Kern: Keine Seite ist besser, viele haben beides. Laute haben im Schnitt etwas mehr gute Laune – kein Urteil über Leise.',
           bausteine: [
             {
               art: 'clip',
-              clip: { titel: 'Introvertiert | extrovertiert: Wer ist glücklicher?', kanal: 'Terra Xplore', url: 'https://www.youtube.com/watch?v=x_un3Ojno7Y', dauer: 'die ersten 5 Min.', frage: 'Introvertiert heißt: eher leise. Extrovertiert heißt: eher laut. Wer hat es leichter?' },
-              vorher: [{ f: 'Dein Tipp: Wer ist glücklicher?', kreuz: ['die Lauten', 'die Leisen', 'kein Unterschied'], unter: true }, { f: 'Was bist du eher?', kreuz: ['eher laut', 'eher leise', 'beides'] }],
+              clip: { titel: 'Introvertiert | extrovertiert: Wer ist glücklicher?', kanal: 'Terra Xplore', url: 'https://www.youtube.com/watch?v=x_un3Ojno7Y', dauer: '04:07 bis 07:45 (gut 3 Min.)', frage: 'Introvertiert heißt: eher leise. Extrovertiert heißt: eher laut. Ist eine Seite besser?' },
+              vorher: [{ f: 'Dein Tipp: Ist eine Seite besser?', kreuz: ['die Lauten', 'die Leisen', 'keine'], unter: true }, { f: 'Was bist du eher?', kreuz: ['eher laut', 'eher leise', 'beides'] }],
               dabei: ['Das können die Leisen gut:', 'Das können die Lauten gut:', 'Das hat mich überrascht:'],
-              nachher: [{ f: 'War dein Tipp richtig?', kreuz: ['ja', 'nein', 'halb'] }, { f: 'Was sollte Amiras Lehrer über leise Leute wissen?', linien: 1 }],
+              nachher: [{ f: 'Was sagt die Psychologin: Kann man laut und leise zugleich sein?', kreuz: ['ja', 'nein'], unter: true }, { f: 'Was sollte Amiras Lehrer über leise Leute wissen?', linien: 1 }],
             },
             { art: 'reden', x: ['Erkennt ihr euch im Clip wieder? Wo ja, wo nein?'] },
           ],
@@ -428,13 +428,13 @@ const kannst: Stunde = {
         },
         {
           titel: 'Clip: Was bin ich wert?', zeit: '10 Min.', wie: 'alle', icon: 'player-play',
-          leitung: 'Der Titel ist hart – vorher sagen, dass es um die Tipps geht. Ausschnitt vorher wählen.',
+          leitung: 'Nur 02:42 bis 04:42 – davor und danach: Suizidgedanken, Essstörung. Drei Tipps: mit jemandem reden · kleine Erfolge zählen · Musik. Hilfe: 116 111.',
           bausteine: [
             {
               art: 'clip',
-              clip: { titel: 'Ich bin nichts wert – so steigerst du dein Selbstwertgefühl', kanal: 'BUBBLES', url: 'https://www.youtube.com/watch?v=XZzcGOxqBy8', dauer: 'die ersten 5 Min.', frage: 'Selbstwertgefühl heißt: wie viel du dir selbst wert bist. Woher kommt das?' },
+              clip: { titel: 'Ich bin nichts wert – so steigerst du dein Selbstwertgefühl', kanal: 'BUBBLES', url: 'https://www.youtube.com/watch?v=XZzcGOxqBy8', dauer: 'NUR 02:42 bis 04:42 (2 Min.)', frage: 'Was hilft, wenn man sich selbst wenig zutraut?' },
               vorher: [{ f: 'Was zählt am meisten dafür, wie du über dich denkst?', kreuz: ['Noten', 'was andere sagen', 'was ich selbst denke'], unter: true }, { f: 'Wie oft redest du dich selbst schlecht?', kreuz: ['oft', 'manchmal', 'selten'] }],
-              dabei: ['Tipp 1 aus dem Clip:', 'Tipp 2 aus dem Clip:', 'Dieser Satz ist hängen geblieben:'],
+              dabei: ['Tipp 1 aus dem Clip:', 'Tipp 2 aus dem Clip:', 'Tipp 3 aus dem Clip:'],
               nachher: [{ f: 'Welchen Tipp probierst du diese Woche aus?', linien: 1 }, { f: 'Welcher Tipp hilft Yusuf?', linien: 1 }],
             },
             { art: 'reden', x: ['Woher kommt es, dass man sich selbst manchmal so wenig zutraut?'] },

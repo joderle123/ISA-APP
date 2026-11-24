@@ -142,7 +142,7 @@ export function createUI({ root, input, speech }) {
 
   // ---------- Einstellungen (nur auf diesem Gerät): Textgröße, Vorlesen, weniger Bewegung, Linkshänder, ruhig, Lautstärke ----------
   const EINST = 'lycee.einstellungen';
-  const STANDARD = { text: 'normal', vorlesen: false, bewegung: false, links: false, ruhig: false, leicht: false, vib: true, laut: 0.8, musik: 0.7, effekte: 0.9, umgebung: 0.8, tempo: 1, kontrast: false, lesbar: false, zeitlos: false, grafik: 'auto', risiko: true };
+  const STANDARD = { text: 'normal', vorlesen: true, bewegung: false, links: false, ruhig: false, leicht: false, vib: true, laut: 0.8, musik: 0.7, effekte: 0.9, umgebung: 0.8, tempo: 1, kontrast: false, lesbar: false, zeitlos: false, grafik: 'auto', risiko: true };
   let einst = { ...STANDARD };
   try { einst = { ...STANDARD, ...JSON.parse(localStorage.getItem(EINST) || '{}') }; } catch (e) { /* egal */ }
   function wendeEinst() {
@@ -692,7 +692,7 @@ export function createUI({ root, input, speech }) {
       if (i >= nachrichten.length) { tippt.hidden = true; fuss(); return; }
       const n = nachrichten[i];
       if (!n.system && n.wer) { tippt.hidden = false; tippt.textContent = n.wer + ' tippt …'; }
-      timer = setTimeout(() => { if (zu) return; tippt.hidden = true; verlauf.insertAdjacentHTML('beforeend', msg(n)); i++; verlauf.scrollTop = verlauf.scrollHeight; timer = setTimeout(naechste, 350 * (opts.tempo || 1)); }, (n.system ? 500 : 650 + Math.min(1200, (n.text || '').length * 35)) * (opts.tempo || 1));
+      timer = setTimeout(() => { if (zu) return; tippt.hidden = true; verlauf.insertAdjacentHTML('beforeend', msg(n)); i++; verlauf.scrollTop = verlauf.scrollHeight; timer = setTimeout(naechste, 600 * (opts.tempo || 1)); }, (n.system ? 700 : 900 + Math.min(2200, (n.text || '').length * 45)) * (opts.tempo || 1));   // langsamer: Rückmeldung der Schüler (zu schnell zum Lesen)
     };
     // Erster Druck zeigt den Rest (damit niemand Story-Nachrichten verpasst), zweiter Druck legt das Handy weg
     const fertig = () => {
