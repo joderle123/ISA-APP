@@ -70,8 +70,8 @@ const d: Heft = {
       "x": "Lächelt, wenn sie wütend ist. Seit Jahren."
     },
     {
-      "bild": "peep:nele:verwirrt",
-      "name": "Nele, 15",
+      "bild": "peep:ines:traurig",
+      "name": "Ines, 15",
       "x": "Zieht schon wieder um. Alle sagen: Freu dich doch."
     }
   ],
@@ -630,10 +630,10 @@ const d: Heft = {
       "unter": "Froh und traurig. Wütend und verknallt. Gefühle kommen selten allein",
       "kurz": "Gemischte Gefühle – und wie stark sie sind, von 0 bis 10.",
       "szene": {
-        "bild": "peep:nele:verwirrt",
-        "name": "Nele, 15",
-        "text": "Neles Mutter hat einen neuen Freund. Sie zieht mit Nele zu ihm. Größeres Zimmer, eigener Balkon. Alle sagen: „Freu dich doch!“ Nele freut sich. Ein bisschen. Sie ist auch wütend, weil keiner sie gefragt hat. Traurig wegen ihrer Freundin im alten Haus. Und sie hat Angst, dass ihre Mutter und der Freund sich wieder trennen. Vier Gefühle. Alle echt. Alle gleichzeitig.",
-        "frage": "Welches der vier ist bei Nele wohl am lautesten?"
+        "bild": "peep:ines:traurig",
+        "name": "Ines, 15",
+        "text": "Ines’ Mutter hat einen neuen Freund. Sie zieht mit Ines zu ihm. Größeres Zimmer, eigener Balkon. Alle sagen: „Freu dich doch!“ Ines freut sich. Ein bisschen. Sie ist auch wütend, weil keiner sie gefragt hat. Traurig wegen ihrer Freundin im alten Haus. Und sie hat Angst, dass ihre Mutter und der Freund sich wieder trennen. Vier Gefühle. Alle echt. Alle gleichzeitig.",
+        "frage": "Welches der vier ist bei Ines wohl am lautesten?"
       },
       "fakten": [
         {
@@ -1013,7 +1013,7 @@ const d: Heft = {
       "Seite {K} (Karten) einzeln und einseitig drucken, am besten auf festerem Papier."
     ],
     "hot": "Es gibt keine richtige Position. Nachfragen statt korrigieren: „Was hast du erlebt, dass du dort stehst?“ Take 1 und 2 berühren Bilder von Männlichkeit – Gegenbeispiele aus Sport und Musik helfen mehr als Argumente. Take 4 ernst nehmen: Taubheit ist für manche ein vertrauter Schutz. Nicht bewerten, sondern fragen, was sie kostet. Satz 5: Eifersucht ist ein Gefühl, kein Beweis – Handy kontrollieren und Verbote sind Kontrolle, keine Liebe; Hinweise darauf später unter vier Augen aufgreifen.",
-    "achtung": "Der Fall Nele (Umzug zum neuen Freund der Mutter) kann eigene Erfahrungen berühren. Körper-Labor und Bodyscan sind freiwillig. Die Szene mit Lina (Abwertung in der Familie) nicht auf eigene Familien übertragen lassen.",
+    "achtung": "Der Fall Ines (Umzug zum neuen Freund der Mutter) kann eigene Erfahrungen berühren. Körper-Labor und Bodyscan sind freiwillig. Die Szene mit Lina (Abwertung in der Familie) nicht auf eigene Familien übertragen lassen.",
     "hintergrund": "Gefühle haben eine Signal- und eine Handlungsfunktion (Ekman; Plutchik). Wer Gefühle differenziert benennen kann, reguliert sie leichter – deshalb der Wortschatz vor den Skills. Körperliche Muster von Emotionen sind über Kulturen hinweg ähnlich (Nummenmaa et al.); wer das erste Körpersignal bemerkt, kann eingreifen, bevor die Reaktion voll da ist (vgl. Gross). Gemischte Gefühle kommen häufig vor, besonders bei Abschieden und Übergängen (Larsen et al.). Die Idee, dass hinter Ärger oft verletzlichere Gefühle liegen, ist u. a. im Skillstraining für Jugendliche verbreitet (Rathus & Miller).",
     "quellen": "Ekman (1992) · Plutchik (2001) · Nummenmaa et al. (2014) · Gross (1998) · Larsen, McGraw & Cacioppo (2001) · Rathus & Miller (2015) · Keltner & Ekman (2015). Angaben zu den Einheiten 7–10 in der Toolbox."
   },

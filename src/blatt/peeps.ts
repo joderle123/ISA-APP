@@ -58,6 +58,7 @@ export const PEEPS: Record<string, Peep> = {
   amira: { kopf: 'long-curly', haut: '#D6A57F', kleid: '#C3B1E8', ober: 'shirt-and-coat', stehen: 'shirt-3', sitzen: 'closed-legs-1' },
   tom: { kopf: 'hat-beanie', haut: '#F0CDAD', kleid: '#E9D27A', ober: 'tee-1', stehen: 'walking-3', sitzen: 'mid-1', haar: '#D9705F' },
   lio: { kopf: 'afro', haut: '#B98561', kleid: '#8CCDB8', ober: 'striped-tee', stehen: 'crossed-arms-2', sitzen: 'wheelchair' },
+  ines: { kopf: 'medium-straight', haut: '#C99A74', kleid: '#F2C38F', ober: 'hoodie', stehen: 'shirt-1', sitzen: 'closed-legs-1', haar: '#5B3A29' },
   // Erwachsene
   lehrerin: { kopf: 'bun', haut: '#EFCFB3', kleid: '#E3A9A9', ober: 'button-shirt-1', stehen: 'blazer-1', sitzen: 'closed-legs-2', brille: 'glasses' },
   lehrer: { kopf: 'no-hair-1', haut: '#8C5A3E', kleid: '#A9C0DA', ober: 'blazer-black-tee', stehen: 'shirt-4', sitzen: 'mid-2', bart: 'full-2' },
