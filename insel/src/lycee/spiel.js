@@ -510,7 +510,9 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   // oder – wenn die Lehrperson es einschaltet – wieder mitten in der Geschichte (Schritte mit „neben“).
   const unterrichtAn = () => !!(ui.einstellungen && ui.einstellungen().unterricht);
   let einstStunde = false;   // freiwillige Fachstunde: die Stunde läuft wirklich, auch wenn der Unterricht in der Geschichte aus ist
-  const imHauptweg = (x) => !!x && !(x.neben && !unterrichtAn()) && !(x.wenn && S && !x.wenn(S.merke));
+  // Nebengeschichten (neben: 'geschichte') laufen nie im Hauptweg; Unterricht und Skills-Stunden nur, wenn eingeschaltet
+  const imHauptweg = (x) => !!x && !(x.neben && (x.neben === 'geschichte' || !unterrichtAn())) && !(x.wenn && S && !x.wenn(S.merke));
+  const letzterHaupt = () => { for (let i = SCHRITTE.length - 1; i >= 0; i--) if (!SCHRITTE[i].neben) return i; return SCHRITTE.length - 1; };   // Nebengeschichten stehen hinten
   const kapStart = (kap) => { const i = SCHRITTE.findIndex((x) => (x.kap || 1) === kap && imHauptweg(x)); return i >= 0 ? i : SCHRITTE.findIndex((x) => (x.kap || 1) === kap); };
   function sitSichtbarkeit() {
     if (!S) return;
@@ -1295,16 +1297,16 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   const TUN = {
     kurzRaus: async () => { if (ui.atem) await ui.atem(); else await ui.kurzRaus(); },   // in der SePAS: direkt die Atem-Übung (Kreis)
     sepasBesuch: () => { S.merke.sepasBesuch = (S.merke.sepasBesuch || 0) + 1; sichern(); },
-    ...tunN1({ get S() { return S; }, ui }),
-    ...tunN2({ get S() { return S; }, ui }),
-    ...tunN3({ get S() { return S; }, ui }),
+    ...tunN1({ get S() { return S; }, ui, anzeige: (art, wert, plus) => setzeAnzeige(art, wert, plus) }),
+    ...tunN2({ get S() { return S; }, ui, anzeige: (art, wert, plus) => setzeAnzeige(art, wert, plus) }),
+    ...tunN3({ get S() { return S; }, ui, anzeige: (art, wert, plus) => setzeAnzeige(art, wert, plus) }),
     ...tunN4({ get S() { return S; }, ui, anzeige: (art, wert, plus) => setzeAnzeige(art, wert, plus) }),
-    ...tunN5({ get S() { return S; }, ui }),
-    ...tunN6({ get S() { return S; }, ui }),
-    ...tunN7({ get S() { return S; }, ui }),
-    ...tunN8({ get S() { return S; }, ui }),
-    ...tunN9({ get S() { return S; }, ui }),
-    ...tunN10({ get S() { return S; }, ui }),
+    ...tunN5({ get S() { return S; }, ui, anzeige: (art, wert, plus) => setzeAnzeige(art, wert, plus) }),
+    ...tunN6({ get S() { return S; }, ui, anzeige: (art, wert, plus) => setzeAnzeige(art, wert, plus) }),
+    ...tunN7({ get S() { return S; }, ui, anzeige: (art, wert, plus) => setzeAnzeige(art, wert, plus) }),
+    ...tunN8({ get S() { return S; }, ui, anzeige: (art, wert, plus) => setzeAnzeige(art, wert, plus) }),
+    ...tunN9({ get S() { return S; }, ui, anzeige: (art, wert, plus) => setzeAnzeige(art, wert, plus) }),
+    ...tunN10({ get S() { return S; }, ui, anzeige: (art, wert, plus) => setzeAnzeige(art, wert, plus) }),
     stundenplanTipp: () => { ui.toast('<b>Tipp</b><span>Mit Tab oder ☰ öffnest du dein Journal.</span>'); },
     weberTelefon: () => { const w = leute.weber; if (w) w.f.spiele('Interact', { tempo: 0.5 }); },
     stundenplan: () => { S.stundenplan = true; ui.toast('📄 Stundenplan bekommen – steht im Journal.'); },
@@ -1659,14 +1661,14 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       sichern();
       const bf = besteFreunde()[0];
       audio.play('unlock'); setTimeout(() => audio.play('chime'), 350);
-      const wahl = await ui.ende({ ...bilanz(), kap, brief: bf ? { von: LEUTE[bf].name, farbe: LEUTE[bf].farbe, text: nachricht(bf, kap) } : null, ueberschrift: ({ 1: 'Deine ersten Tage', 2: 'Die Liste', 3: 'Die Sportfest-Woche', 4: 'Die Test-Woche', 5: 'Die Fake-Woche', 6: 'Die Sprachnachricht', 7: 'Die Woche danach', 8: 'Die KI-Woche', 9: 'Darios Woche', 10: 'Das Sommerfest' })[kap] || KAPITEL[kap],
+      const wahl = await ui.ende({ ...bilanz(), kap, brief: bf ? { von: LEUTE[bf].name, farbe: LEUTE[bf].farbe, text: nachricht(bf, kap) } : null, ueberschrift: ({ 1: 'Die erste Woche', 2: 'Die Liste', 3: 'Von links unten', 4: 'Die Woche vor den Ferien', 5: 'Die Admin-Woche', 6: 'Die Sprachnachricht', 7: 'Wer geblieben ist', 8: 'Nicht echt', 9: 'Haltestelle, früh', 10: 'Hinter der Kamera' })[kap] || KAPITEL[kap],
         weiter: weiterIdx >= 0 ? 'Weiter: Kapitel ' + (kap + 1) + ' „' + KAPITEL[kap + 1] + '“' : '',
         // Haken fürs nächste Kapitel (kein Spoiler, nur die Frage)
-        frage: (() => { const sit = Object.entries(SZENEN).find(([id]) => S.merke['sitKap_' + id] === kap && S.merke['sit_' + id]); return sit ? (REFLEXION[kap] ? REFLEXION[kap] + ' · ' : '') + 'Diese Woche: ' + sit[1].titel[1] + '. ' + sit[1].frage : REFLEXION[kap] || ''; })(), vorschau: weiterIdx >= 0 ? ({ 1: 'Montag. Eine Liste. Fünf Plätze. Wer steht drauf?', 2: 'Sportfest. #3 kommt. Und es trifft jemanden, den du magst.',
-          3: 'Ein Test. Ein Fenster. Und ein Foto, das es nicht geben dürfte.', 4: 'Alle denken, du bist @annexe.cam. Wie beweist man das Gegenteil?',
-          5: 'Mila hat einen Beweis. Er wird dir nicht gefallen.', 6: 'Luca will reden. Ehrlich, sagt er. Glaubst du ihm?',
-          7: 'Ein Video von Mme Tidderich. 300 Herzen. Es ist nicht echt.', 8: 'Dario kann nicht schlafen. Er will dir etwas sagen.',
-          9: 'Sommerfest. Ein Kreis. Und jemand muss etwas zugeben.' })[kap] || '' : '' });
+        frage: (() => { const sit = Object.entries(SZENEN).find(([id]) => S.merke['sitKap_' + id] === kap && S.merke['sit_' + id]); return sit ? (REFLEXION[kap] ? REFLEXION[kap] + ' · ' : '') + 'Diese Woche: ' + sit[1].titel[1] + '. ' + sit[1].frage : REFLEXION[kap] || ''; })(), vorschau: weiterIdx >= 0 ? ({ 1: 'Eine Liste. Fünf Plätze. Wer steht drauf?', 2: 'Ein Satz über Mila. Und ein heller Streifen, unten links.',
+          3: 'Montag, 8:34. Alle Handys liegen in der Kiste. Trotzdem kommt ein Foto.', 4: 'Alle glauben, du bist der Account. Eine prüft das.',
+          5: 'Eine Sprachnachricht. Sieben Sekunden. Jos Stimme.', 6: 'Fünf Monate später. Wer ist geblieben?',
+          7: 'Ein Video von Mme Tidderich. Ihre Stimme. Ihr Gesicht.', 8: 'Ein Armband. Wie auf der Zeichnung.',
+          9: 'Sommerfest. Freitag. 15:00. Alle Namen.' })[kap] || '' : '' });
       if (wahl === 'weiter') danach = () => starteSchritt(weiterIdx, true);
       else if (wahl === 'neu') { S.fertig = false; danach = () => starteSchritt(startIdx, true); }
       else ui.auftrag({ kapitel: kapName(kap), ...FREI });
@@ -1981,7 +1983,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   const REFLEXION = { 1: 'Was hat dir am ersten Tag geholfen, dich ein bisschen sicherer zu fühlen?', 2: 'Was kannst du gut – auch wenn es keiner sieht?',
     3: 'Woran merkst du bei anderen, wie es ihnen geht, ohne dass sie es sagen?', 4: 'Was hilft dir, wenn du „bei Rot“ bist?',
     5: 'Welcher Satz über dich selbst ist laut – und stimmt er wirklich?', 6: 'Wann hast du zuletzt klar Stopp gesagt? Wie war das?',
-    7: 'Welches Tier bist du im Streit meistens – und welches willst du öfter sein?', 8: 'Was prüfst du, bevor du etwas teilst?',
+    7: 'Was hättest du gebraucht, um in der Kantine aufzustehen?', 8: 'Was prüfst du, bevor du etwas teilst?',
     9: 'Was lädt deinen Akku wirklich auf?', 10: 'Was nimmst du aus diesem Jahr mit?' };
   // Inhaltshinweise je Kapitel (wie in großen Spielen): kurz, sachlich, mit Weg nach draußen
   const INHALT = { 2: 'Eine Ranking-Liste, Auslachen im Klassenchat.', 3: 'Bloßstellen mit Fotos, Gerüchte über jemanden.', 4: 'Prüfungsstress, eine Panikattacke, ein gefälschter Screenshot.',
@@ -2943,7 +2945,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     const f = st.fertig || {};
     const zeilen = [...((st.start && st.start.gespraech && GESPRAECHE[st.start.gespraech]) || []), ...((f.gespraech && GESPRAECHE[f.gespraech]) || [])].filter((z) => !(z && z.tu === 'kapitelEnde'));
     S.merke.neben = { ...(S.merke.neben || {}), [id]: (S.merke.neben || {})[id] || 0 };
-    await ausserhalb(st.titel.replace(/^Skills: /, 'Skills-Stunde: '), { uhr: st.uhr, tag: st.tag, kap: st.kap, leute: st.leute, ort: (st.start && st.start.teleport) || 'eingangHof' }, zeilen);
+    await ausserhalb(st.neben === 'geschichte' ? st.wer + ' · „' + st.titel + '“' : st.titel.replace(/^Skills: /, 'Skills-Stunde: '), { uhr: st.uhr, tag: st.tag, kap: st.kap, leute: st.leute, ort: (st.start && st.start.teleport) || 'eingangHof' }, zeilen);
     S.merke.neben[id] = (S.merke.neben[id] || 0) + 1; sichern();
   }
   async function fachFreiwillig(fach) {
@@ -2953,6 +2955,14 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     const alt = einstStunde; einstStunde = true;
     try { await ausserhalb(FACH_NAME[fach] + ' · Modul ' + fachStand(fach).modul, { uhr: st.uhr || 9, tag: st.tag, kap: st.kap, leute, ort: 'saal104' }, [{ stunde: fach }]); } finally { einstStunde = alt; }
   }
+  // Zehn Nebengeschichten (Fable): freiwillig, je ein paar Minuten, offen ab einem Kapitel (manche nur bis zu einem Kapitel)
+  const nebenGeschichtenHtml = (neben) => {
+    const k = kapJetzt(), alle = SCHRITTE.filter((x) => x.neben === 'geschichte');
+    const offen = alle.filter((x) => (x.ab || 1) <= k && (!x.bis || k <= x.bis));
+    const li = offen.map((x) => '<li class="' + (neben[x.id] ? 'fertig' : '') + '"><span class="km-heft">📖</span><div><b>' + esc(x.wer) + ' · „' + esc(x.titel) + '“</b><small>' + esc(x.thema || '') + ' · ' + (neben[x.id] ? 'gespielt' : 'ein paar Minuten') + '</small></div><button type="button" class="ly-btn' + (neben[x.id] ? '' : ' ly-primaer') + '" data-neben="' + x.id + '">' + (neben[x.id] ? 'Nochmal' : 'Spielen') + '</button></li>').join('');
+    const spaeter = alle.filter((x) => (x.ab || 1) > k).length;
+    return '<h3 class="km-h3">📖 Nebengeschichten</h3>' + (li ? '<ul class="km-liste">' + li + '</ul>' : '<p class="km-leer">Noch keine. Die erste kommt in Kapitel 2.</p>') + (spaeter ? '<p class="km-leer">' + spaeter + ' weitere kommen mit den nächsten Kapiteln.</p>' : '');
+  };
   kmApi.stundenHtml = () => {
     if (!S) return '';
     const sk = skillsStunden(), neben = S.merke.neben || {};
@@ -2960,7 +2970,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     const skills = sk.filter(stundeFrei).map((x) => '<li class="' + (neben[x.id] ? 'fertig' : '') + '"><span class="km-heft">K' + x.kap + '</span><div><b>' + esc(x.titel.replace(/^Skills: /, '')) + '</b><small>Skills-Stunde · ' + (neben[x.id] ? 'gespielt' : 'mit der Klasse') + '</small></div><button type="button" class="ly-btn' + (neben[x.id] ? '' : ' ly-primaer') + '" data-neben="' + x.id + '">' + (neben[x.id] ? 'Nochmal' : 'Spielen') + '</button></li>').join('');
     const zu = sk.filter((x) => !stundeFrei(x)).length;
     return '<h3 class="km-h3">📚 Stunden – freiwillig</h3><p class="km-leer">Gehören nicht zur Geschichte. Spiel sie, wann du willst' + (unterrichtAn() ? ' (deine Lehrperson hat sie auch in der Geschichte eingeschaltet).' : '.') + '</p>' +
-      '<ul class="km-liste">' + fach + skills + '</ul>' + (zu ? '<p class="km-leer">' + zu + ' weitere Skills-Stunden kommen mit den nächsten Kapiteln – oder mit einem Code deiner Lehrperson.</p>' : '') + '<h3 class="km-h3">🎟 Missionen</h3>';
+      '<ul class="km-liste">' + fach + skills + '</ul>' + (zu ? '<p class="km-leer">' + zu + ' weitere Skills-Stunden kommen mit den nächsten Kapiteln – oder mit einem Code deiner Lehrperson.</p>' : '') + nebenGeschichtenHtml(neben) + '<h3 class="km-h3">🎟 Missionen</h3>';
   };
   kmApi.stundenBinden = (k) => {
     k.querySelectorAll('[data-fach]').forEach((b) => { b.onclick = () => fachFreiwillig(b.dataset.fach); });
@@ -3628,16 +3638,16 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   // ---------- Kapitel-Vorspann: Kamerafahrt über die Schule zur Tageszeit des ersten Schritts (ui.vorspann zeigt Titel) ----------
   const VORSPANN = {
     1: 'Neue Schule. Neue Leute. Und ein Account, der alles sieht.', 2: 'Eine Liste. Fünf Plätze. Und jemand, den du kennst, steht ganz oben.',
-    3: 'Sportfest-Woche. Und jemand hat die Kamera schon an.', 4: 'Ein Test. Ein weißer Bildschirm. Und Zahlen von 0 bis 100.',
-    5: 'Ein Screenshot mit deinem Namen. Und alle schauen.', 6: 'Ein Satz kann trennen. Ein Satz kann reparieren.',
-    7: 'Zwei Gruppen. Eine Kantine. Und du entscheidest, wo du sitzt.', 8: '300 Herzen für ein Video, das nie passiert ist.',
-    9: 'Dario kann nicht schlafen. Er trägt etwas mit sich herum.', 10: 'Letzte Woche. Lampions. Und eine Wahrheit.',
+    3: 'Dezember. Ein Satz über Mila. Und ein heller Streifen, unten links.', 4: 'Die letzte Woche vor den Ferien. Ein Test. Eine Kiste voller Handys.',
+    5: 'Januar. Alle glauben, du bist der Account. Eine prüft das.', 6: 'Sieben Sekunden Sprachnachricht. Und eine Abstimmung über dich.',
+    7: 'Juni. Fünf Monate später. Wer ist geblieben?', 8: 'Ein Video von Mme Tidderich. Ihre Stimme. Ihr Gesicht. Nicht echt.',
+    9: 'Juli. 4:12 Uhr. Eine Nachricht von Dario. „bitte“.', 10: 'Letzte Woche. Sommerfest. Freitag, 15:00. Alle Namen.',
   };
   let kino = null;   // { t, a0 } während des Vorspanns
   async function vorspann(st) {
     sky.time.setTimeOfDay(st.uhr);
     // Wohin die Kamera fährt: meist über die ganze Schule, in manchen Kapiteln zum Ort, um den es geht
-    const ORT = { 3: { x: -72, z: -6, r: 46, h: 20 }, 7: { x: 16, z: -8, r: 52, h: 22 }, 10: { x: 0, z: 18, r: 58, h: 22 } };
+    const ORT = { 7: { x: 16, z: -8, r: 52, h: 22 }, 9: { x: -20, z: 40, r: 46, h: 18 }, 10: { x: -32, z: 12, r: 52, h: 22 } };
     kino = { t: 0, a0: 0.55 * st.kap, ziel: ORT[st.kap] || { x: 0, z: -14, r: 92, h: 26 } };
     try { await ui.vorspann({ nr: st.kap, titel: KAPITEL[st.kap] || kapName(st.kap), zeile: VORSPANN[st.kap] || '', ort: MONAT[st.kap] || '' }); } finally { kino = null; }
   }
@@ -3900,14 +3910,14 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     await spielerFigur(S.figur);
     laeuft = true;
     if (S.fertig) {
-      await starteSchritt(SCHRITTE.length - 1, false);
+      await starteSchritt(letzterHaupt(), false);
       steuerung.teleport(welt.orte.hof.x, welt.orte.hof.z, Math.PI);
-      ui.auftrag({ kapitel: kapName(SCHRITTE[SCHRITTE.length - 1].kap), ...FREI });
+      ui.auftrag({ kapitel: kapName(SCHRITTE[letzterHaupt()].kap), ...FREI });
       return;
     }
     // weiterspielen: an den Anfang des Schritts (mit Ort, ohne Einleitung). Steht man in einer Unterrichtsstunde, die jetzt
     // ausgeschaltet ist (alter Spielstand), geht es mit der nächsten Szene der Geschichte weiter.
-    if (!neu && SCHRITTE[S.schritt] && SCHRITTE[S.schritt].neben && !unterrichtAn()) { let j = S.schritt; while (j < SCHRITTE.length - 1 && !imHauptweg(SCHRITTE[j])) j++; S.schritt = j; S.schrittId = SCHRITTE[j].id; sichern(); }
+    if (!neu && SCHRITTE[S.schritt] && SCHRITTE[S.schritt].neben && !imHauptweg(SCHRITTE[S.schritt])) { let j = S.schritt; while (j < SCHRITTE.length - 1 && !imHauptweg(SCHRITTE[j])) j++; S.schritt = j; S.schrittId = SCHRITTE[j].id; sichern(); }
     const st = SCHRITTE[S.schritt];
     const ort = welt.orte[(st.start && st.start.teleport) || (S.schritt ? 'halle' : 'busAnkunft')];
     const pause = !neu && S.zuletzt ? Date.now() - S.zuletzt : 0;

@@ -38,7 +38,9 @@ Aufträge 24.11.2026 (Lehrperson, nach Test mit den Schülern):
 - [x] Spiel: schnelle Punkte – Handy langsamer, Vorlesen ab Start an, Ben beim H-O-R-S-E sichtbar, eigene Autos (autos.js: Profil, Scheiben, Felgen, Radkästen, Lichter) (verkehr.js, requisiten.js)
 - [x] Spiel als Web-App (PWA): Manifest, Service Worker (offline, „Neue Version“-Hinweis), Symbol, Speicher-Schutz – wirkt nur über http(s); Veröffentlichung (z. B. GitHub Pages) braucht das OK der Lehrperson · Spielstand-Code gibt es (AJ1., ui.js)
 - [x] Unterricht neu: erste Stunde = Klassenregeln (statt Zettel-Raten, mit Folgen), Fachstunden Deutsch (Mme Nouvelle, K1), Mathe (Mme Lenning, K2), Français (Mme Sabli, K3) im eigenen Modul + Partner-Moment; Modul-Wahl beim Start (story/fachstunden.js, spiel.js fachStunde)
-- [ ] Story tiefer (annexe.cam, Mission aus dem Unterricht heraus)
+- [x] Story tiefer: neue Storyline „@annexe.cam“ nach Fable (24.11.) – Kapitel 1–10, Spuren, Folgen über Kapitel, fünf Enden, zehn Nebengeschichten (STORY-FABLE.md)
+- [x] Unterricht und Skills-Stunden nicht mehr Pflicht in der Geschichte: freiwillig (🎟 → Stunden), per Code (SKILLS-n, DEUTSCH, MATHE, FRANCAIS) oder per Schalter der Lehrperson wieder mitten in der Geschichte
+- [ ] Später (geparkt): Man kann scheitern; Skills nicht durchklickbar (bei Zufallsantworten wiederholen); Stunden evtl. als Pflichtteil der Geschichte
 - [ ] Nebenquests Modullernen mit Belohnungen
 - [ ] Alle Gebäude betretbar + Interaktionen
 - [ ] Basketball: Wurf-Animation, Pickup-Spiel mit Bewegung, schwerer (eigene Spielidee, kein bekanntes Spiel kopieren)

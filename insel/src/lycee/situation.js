@@ -711,7 +711,8 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
     halte((e) => { if (e.code === 'KeyE' || e.code === 'Enter') { e.preventDefault(); e.stopPropagation(); zu(); } });
   };
   const pop = (k, sy) => { const el = document.createElement('div'); el.className = 'sz-pop'; el.textContent = sy; (k.closest('.ly-karte') || k).appendChild(el); setTimeout(() => el.remove(), 950); };
-  const lesezeit = (...t) => Math.max(1600, t.join(' ').split(/\s+/).length * 330) * zeitFaktor();
+  // Lesepausen: „Ohne Zeitdruck“ verlängert Zeitlimits, nicht die Pausen (sonst 60-mal so lange warten). Ruhig und große Schrift: etwas länger.
+  const lesezeit = (...t) => Math.max(1600, t.join(' ').split(/\s+/).length * 330) * (ui.ruhig ? 1.8 : 1) * (ui.einstellungen && ui.einstellungen().text !== 'normal' ? 1.3 : 1);
   const blaseHtml = (wer, t, ich = false) => '<div class="sz-blase' + (ich ? ' ich' : '') + '" style="--f:' + esc(wer ? wer.farbe : '#2b3a55') + '"><b>' + esc(wer ? wer.name : 'Du') + '</b>' + esc(ersetze(t)) + '</div>';
 
   // ---------- Sortier-Sprint (Kurs E04 „Bedürfnis oder Wunsch?“, Modul 2 Gefühlswörter) ----------

@@ -50,15 +50,15 @@ export const GRUSS = {
 
 // Nachricht am Ende eines Kapitels (je nach Kapitel)
 const ENDE = {
-  1: 'Tag eins überlebt. Morgen Revanche gegen die Kantine.',
-  2: 'Woche rum. Ich schlaf jetzt bis Montag.',
-  3: 'Sportfest-Woche rum. Meine Beine schlafen schon.',
-  4: 'Test-Woche rum. Kopf leer. Endlich.',
-  5: 'Was für eine Woche. Morgen Basket?',
-  6: 'Wochenende! Schreib, wenn was ist.',
+  1: 'Woche eins überlebt. Montag gleicher Bus?',
+  2: 'Platz sechs ist kein Platz. Ist nur eine Liste. Bis Montag.',
+  3: 'Unten links. Ich seh den Streifen jetzt überall. Gute Nacht.',
+  4: 'Zwei Wochen Ferien. Schreib, wenn was ist. Echt.',
+  5: 'Was für eine Woche. Ich glaub dir. Nur damit du es weißt.',
+  6: 'Dein Handy ist still. Meins nicht. Schreib mir einfach.',
   7: 'Harte Woche. Morgen bitte langweilig.',
-  8: 'KI-Woche rum. Ich glaub nur noch Tauben.',
-  9: 'Handy liegt in der Küche. Schreib trotzdem. Gute Nacht.',
+  8: 'Langsam schauen. Hab ich von dir. Gute Nacht.',
+  9: 'Handy liegt in der Küche. Schlaf. Wirklich.',
   10: 'Ferien! Halt mir im September den Platz frei.',
 };
 const ZUSATZ = { noah: ' (Pizza war übrigens okay.)', mila: ' (Rekord: 38 Sekunden.)', lina: ' (Du bist auf Seite 14.)', jo: ' Kakao steht noch aus.', ben: ' Ich schulde dir noch zwei Euro. Wahrscheinlich.', chiara: ' Plan für Montag steht.', yusuf: '', ayla: ' 🎸', luca: ' Salz war zu wenig. Wie immer.', kenan: '', dario: ' Zombie-Team forever.' };

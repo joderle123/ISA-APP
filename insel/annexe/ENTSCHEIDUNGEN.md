@@ -407,3 +407,13 @@ reparieren, jede Sequenz auf Sinn prüfen, AAA-Funktionen. Grundlage: Kritik all
 - Für Lehrpersonen: beim neuen Spiel direkt in einem Kapitel starten (ein Kapitel = ein Modul des Skills-Kurses).
 - Bildschirm bleibt beim Spielen an (Handy/Tablet).
 - Die Welt redet über die Geschichte: Statisten erwähnen Ereignisse des aktuellen Kapitels (Fake, Sportfest, Serie …).
+
+## Storyline nach Fable (24.11.2026)
+- **Fables Storyline ist besser** (klarere Spuren, echte Folgen über Kapitel, ein Täter mit Grund, keine Bösewichte) → übernommen:
+  Kapitel 1–10 neu, fünf Enden, zehn Nebengeschichten (STORY-FABLE.md). Alte Kapitel-Texte sind ersetzt; die freiwilligen
+  Skills-Stunden und Fachstunden der alten Kapitel bleiben (🎟 → Stunden).
+- **Neue Spiel-Elemente:** Anspannung 0–100 und Akku als Anzeige über eine ganze Woche; Gedanken antippen; Mut-Balken;
+  Klassenchat mit Countdown und unsichtbarem „Stillstand“ als Belohnung fürs Atmen; Abstimmung, die man immer verliert.
+- **Lesepausen** in Situations-Spielen werden mit „Ohne Zeitdruck“ nicht mehr 60-mal so lang (vorher: 96 Sekunden pro Kommentar).
+  Zeitlimits verlängern sich weiter.
+- **Geparkt (Auftraggeber):** Scheitern können, Skills nicht durchklickbar, Stunden als Pflicht in der Geschichte.

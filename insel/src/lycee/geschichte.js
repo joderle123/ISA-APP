@@ -379,10 +379,11 @@ import { SCHRITTE_N7, GESPRAECHE_N7 } from './story/kapitel7.js';
 import { SCHRITTE_N8, GESPRAECHE_N8 } from './story/kapitel8.js';
 import { SCHRITTE_N9, GESPRAECHE_N9 } from './story/kapitel9.js';
 import { SCHRITTE_N10, GESPRAECHE_N10 } from './story/kapitel10.js';
+import { SCHRITTE_NG, GESPRAECHE_NG } from './story/nebengeschichten.js';
 Object.assign(LEUTE, PERSONAL);
 SCHRITTE.length = 0;
-SCHRITTE.push(...SCHRITTE_N1, ...SCHRITTE_N2, ...SCHRITTE_N3, ...SCHRITTE_N4, ...SCHRITTE_N5, ...SCHRITTE_N6, ...SCHRITTE_N7, ...SCHRITTE_N8, ...SCHRITTE_N9, ...SCHRITTE_N10);
-Object.assign(GESPRAECHE, GESPRAECHE_N1, GESPRAECHE_N2, GESPRAECHE_N3, GESPRAECHE_N4, GESPRAECHE_N5, GESPRAECHE_N6, GESPRAECHE_N7, GESPRAECHE_N8, GESPRAECHE_N9, GESPRAECHE_N10);
+SCHRITTE.push(...SCHRITTE_N1, ...SCHRITTE_N2, ...SCHRITTE_N3, ...SCHRITTE_N4, ...SCHRITTE_N5, ...SCHRITTE_N6, ...SCHRITTE_N7, ...SCHRITTE_N8, ...SCHRITTE_N9, ...SCHRITTE_N10, ...SCHRITTE_NG);
+Object.assign(GESPRAECHE, GESPRAECHE_N1, GESPRAECHE_N2, GESPRAECHE_N3, GESPRAECHE_N4, GESPRAECHE_N5, GESPRAECHE_N6, GESPRAECHE_N7, GESPRAECHE_N8, GESPRAECHE_N9, GESPRAECHE_N10, GESPRAECHE_NG);
 // Kapitel heißen nach der Geschichte, nicht nach dem Kurs-Modul (Rückmeldung 24.11.: Lernen soll man nicht merken).
 // Welches Modul dazu passt, steht in KAPITEL_MODUL (für die Lehrperson und das Stunden-Fenster).
 Object.assign(KAPITEL, { 1: 'Das Foto', 2: 'Die Liste', 3: 'Von links unten', 4: '8:34', 5: 'Admin', 6: 'Die Sprachnachricht', 7: 'Wer bleibt?', 8: 'Nicht echt', 9: 'Haltestelle, früh', 10: 'Hinter der Kamera' });
