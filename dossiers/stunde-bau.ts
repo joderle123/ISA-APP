@@ -5,6 +5,7 @@ import type { Baustein, Frage, Station, Track } from './typen'
 import { readFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { L } from './sprache'
 
 // Gefühls-Gesichter (Fluent Emoji, MIT) – nur auf Wort-Karten mit einem Gefühlswort (Auftrag 22.11.2026)
 const EMO_DIR = join(dirname(fileURLToPath(import.meta.url)), '..', 'tools', 'hefte', 'emoji')
@@ -60,27 +61,27 @@ export function baueStunde(e: Track, i: number, h: StundenHelfer): string[] {
           <div class="daneben"><div class="mo">${esc(b.daneben.titel)}</div><ul>${b.daneben.punkte.map((x) => `<li><span>${t(x)}</span></li>`).join('')}</ul></div></div>${fragen(b.fragen)}`
       case 'modell': {
         // Tankanzeige zum Ausmalen: fünf Felder von leer (unten) bis voll (oben)
-        const anz = b.anzeige ? `<div class="anz"><span class="mo">${esc(b.anzeige)}</span><div>${'<i></i>'.repeat(5)}</div><span class="mo">leer</span></div>` : ''
-        return `<div class="sd-modell${b.anzeige ? ' mit-anz' : ''}">${b.punkte.map((p, k) => `<div>${anz}<div class="tx"><div class="o"><span class="z">${k + 1}</span>${ic(p.icon)}<h3>${t(p.t)}</h3></div><p>${t(p.x)}</p>${p.warn || p.luecke ? `<p class="w"><b class="mo">${esc(b.warnTitel ?? 'Warnlicht')}</b>${p.warn ? t(p.warn) : ''}${p.luecke ? '<span class="lu"></span>' : ''}</p>` : ''}${b.beweis ? `<p class="bw"><b class="mo">${esc(b.beweis)}</b><span class="lu"></span></p>` : ''}</div></div>`).join('')}</div>`
+        const anz = b.anzeige ? `<div class="anz"><span class="mo">${esc(b.anzeige)}</span><div>${'<i></i>'.repeat(5)}</div><span class="mo">${L('leer', 'vide')}</span></div>` : ''
+        return `<div class="sd-modell${b.anzeige ? ' mit-anz' : ''}">${b.punkte.map((p, k) => `<div>${anz}<div class="tx"><div class="o"><span class="z">${k + 1}</span>${ic(p.icon)}<h3>${t(p.t)}</h3></div><p>${t(p.x)}</p>${p.warn || p.luecke ? `<p class="w"><b class="mo">${esc(b.warnTitel ?? L('Warnlicht', 'Voyant'))}</b>${p.warn ? t(p.warn) : ''}${p.luecke ? '<span class="lu"></span>' : ''}</p>` : ''}${b.beweis ? `<p class="bw"><b class="mo">${esc(b.beweis)}</b><span class="lu"></span></p>` : ''}</div></div>`).join('')}</div>`
       }
       case 'spuren':
         return `<div class="sd-spuren">${b.spuren.map((s) => `<div><div class="kp"><span class="k">${esc(s.k)}</span>${ic(s.icon)}<span class="mo">${esc(s.quelle)}</span></div><p>${t(s.x)}</p></div>`).join('')}</div>${fragen(b.fragen)}`
       case 'clip':
         return `<div class="sd-clip"><div class="clip"><div class="qr">${qr(b.clip.url)}</div><div class="tx"><div class="lab mo">${ic('player-play')}Clip · ${esc(b.clip.dauer)}</div><h3>${t(b.clip.titel)}</h3><div class="ka mo">${esc(b.clip.kanal)} · ${esc(kurzlink(b.clip.url))}</div><div class="fr2">${t(b.clip.frage)}</div></div></div>
-          <div class="drei"><div><div class="lab mo">${ic('eye')}Vorher</div>${b.vorher.map(frage).join('')}</div>
-            <div><div class="lab mo">${ic('pencil')}Beim Schauen</div><p class="k">Schreib mit – Stichwörter reichen:</p>${b.dabei.map((x) => `<div class="satz"><span>${t(x)}</span></div>${linien(1)}`).join('')}</div>
-            <div><div class="lab mo">${ic('message-circle')}Danach</div>${b.nachher.map(frage).join('')}</div></div></div>`
+          <div class="drei"><div><div class="lab mo">${ic('eye')}${L('Vorher', 'Avant')}</div>${b.vorher.map(frage).join('')}</div>
+            <div><div class="lab mo">${ic('pencil')}${L('Beim Schauen', 'Pendant')}</div><p class="k">${L('Schreib mit – Stichwörter reichen:', 'Note – des mots-clés suffisent :')}</p>${b.dabei.map((x) => `<div class="satz"><span>${t(x)}</span></div>${linien(1)}`).join('')}</div>
+            <div><div class="lab mo">${ic('message-circle')}${L('Danach', 'Après')}</div>${b.nachher.map(frage).join('')}</div></div></div>`
       case 'fragen':
         return `${b.kontext ? `<p class="sd-kon">${t(b.kontext)}</p>` : ''}${fragen(b.fragen)}`
       case 'aktion':
-        return `<div class="sd-akt"><div class="ziel"><span class="mo">Ziel</span><span>${t(b.ziel)}</span></div><div class="ziel"><span class="mo">Material</span><span>${t(b.material)}</span></div>
+        return `<div class="sd-akt"><div class="ziel"><span class="mo">${L('Ziel', 'But')}</span><span>${t(b.ziel)}</span></div><div class="ziel"><span class="mo">${L('Material', 'Matériel')}</span><span>${t(b.material)}</span></div>
           <ol>${b.schritte.map((x) => `<li><span>${t(x)}</span></li>`).join('')}</ol>
           ${b.runden ? `<div class="runden">${b.runden.map((r) => `<div><b class="mo">${esc(r.t)}</b><span>${t(r.x)}</span></div>`).join('')}</div>` : ''}
           ${b.regeln ? `<div class="regeln">${b.regeln.map((x) => `<div>${ic('shield-check')}<span>${t(x)}</span></div>`).join('')}</div>` : ''}
-          ${b.zu3 ? `<p class="z3"><b class="mo">Zu dritt</b> ${t(b.zu3)}</p>` : ''}
+          ${b.zu3 ? `<p class="z3"><b class="mo">${L('Zu dritt', 'À trois')}</b> ${t(b.zu3)}</p>` : ''}
           ${b.wertung ? `<table class="sd-tab wert"><tr>${b.wertung.kopf.map((x) => `<th>${t(x)}</th>`).join('')}</tr>${b.wertung.zeilen.map((z) => `<tr><td>${t(z)}</td>${b.wertung!.kopf.slice(1).map(() => '<td></td>').join('')}</tr>`).join('')}</table>` : ''}
           ${b.notiz ? `<div class="not"><b>${t(b.notiz.titel)}</b>${linien(b.notiz.linien)}</div>` : ''}
-          ${b.auswertung ? `<div class="aus"><div class="mo">${ic('messages')}Auswertung im Kreis</div>${b.auswertung.map((x) => `<p>${t(x)}</p>`).join('')}</div>` : ''}</div>`
+          ${b.auswertung ? `<div class="aus"><div class="mo">${ic('messages')}${L('Auswertung im Kreis', 'Bilan en cercle')}</div>${b.auswertung.map((x) => `<p>${t(x)}</p>`).join('')}</div>` : ''}</div>`
       case 'karten':
         return `${b.hinweis ? `<p class="sd-kon sch">${ic('scissors')}<span>${t(b.hinweis)}</span></p>` : ''}<div class="sd-karten" style="grid-template-columns:repeat(${b.spalten},1fr)${b.hoehe ? `;--kh:${b.hoehe}mm` : ''}">${b.karten.map((k) => `<div class="${b.wort ? 'wort' : ''}">${b.wort ? emoji(k.t) : ''}<b>${t(k.t)}</b>${k.x ? `<span>${t(k.x)}</span>` : ''}${k.marke ? `<i class="mo">${esc(k.marke)}</i>` : ''}</div>`).join('')}</div>`
       case 'tabelle':
@@ -88,11 +89,11 @@ export function baueStunde(e: Track, i: number, h: StundenHelfer): string[] {
       case 'menue':
         return `<div class="sd-menue"><div class="mo kp">${ic('gas-station')}${esc(b.titel)}</div><div class="g">${b.gruppen.map((g) => `<div><b>${t(g.t)}</b>${g.punkte.map((x) => `<span><i></i>${t(x)}</span>`).join('')}</div>`).join('')}</div></div>`
       case 'reden':
-        return `<div class="sd-reden"><div class="kp mo">${ic('messages')}${esc(b.titel ?? 'Redet darüber')}</div>${b.x.map((x) => `<p>${t(x)}</p>`).join('')}</div>`
+        return `<div class="sd-reden"><div class="kp mo">${ic('messages')}${esc(b.titel ?? L('Redet darüber', 'Parlez-en'))}</div>${b.x.map((x) => `<p>${t(x)}</p>`).join('')}</div>`
       case 'merk':
-        return `<div class="merk"><span class="mo">Merk dir</span><div class="mk">${t(b.x)}</div></div>`
+        return `<div class="merk"><span class="mo">${L('Merk dir', 'À retenir')}</span><div class="mk">${t(b.x)}</div></div>`
       case 'woche':
-        return `<div class="wo sd-wo"><span class="mo">Diese Woche</span><span>${t(b.x)}</span>${b.kaestchen ? `<span class="wk2">${b.kaestchen.map((k) => `<span><i></i><b class="mo">${esc(k)}</b></span>`).join('')}</span>` : ''}</div>`
+        return `<div class="wo sd-wo"><span class="mo">${L('Diese Woche', 'Cette semaine')}</span><span>${t(b.x)}</span>${b.kaestchen ? `<span class="wk2">${b.kaestchen.map((k) => `<span><i></i><b class="mo">${esc(k)}</b></span>`).join('')}</span>` : ''}</div>`
     }
   }
 
@@ -101,8 +102,8 @@ export function baueStunde(e: Track, i: number, h: StundenHelfer): string[] {
     if (!s.fort) lauf++
     fn = 0
     // Material gehört zur großen Runde: die Nummer wird hier ausgerechnet, nicht von Hand gepflegt
-    const runde = alle.find((x) => /^Die große Runde/.test(x.s.titel))
-    const wie = s.fort && /^Material/.test(s.titel) && runde ? s.wie.replace(/zu Station \d+/, `zu Station ${runde.nr}`) : s.wie
+    const runde = alle.find((x) => /^(Die große Runde|La grande ronde)/.test(x.s.titel))
+    const wie = s.fort && /^(Material|Matériel)/.test(s.titel) && runde ? s.wie.replace(/zu Station \d+/, `zu Station ${runde.nr}`).replace(/pour la station \d+/, `pour la station ${runde.nr}`) : s.wie
     return `<div class="sd-st${s.fort ? ' fort' : ''}"><div class="kp"><div class="b">${s.fort ? ic(s.icon) : lauf}</div><h3>${t(s.titel)}</h3><div class="me mo"><span>${ic(s.fort ? 'paperclip' : s.icon)}${esc(wie)}</span>${s.zeit ? `<span>${esc(s.zeit)}</span>` : ''}</div></div><div class="kb">${s.bausteine.map(baustein).join('')}</div></div>`
   }
   /** Streifen: alle Stationen der Stunde, die dieser Seite hervorgehoben */
@@ -110,15 +111,15 @@ export function baueStunde(e: Track, i: number, h: StundenHelfer): string[] {
 
   // Missions-Ticket: am Ende der letzten Seite der Stunde – Code und QR (Inhalt ANNEXE:<code>) für die Annexe-App
   const m = h.mission
-  const ticket = m ? `<div class="sd-mission"><div class="l"><div class="lab mo">${ic('device-gamepad-2')}Im Spiel weiter · Mission</div><h3>${t(m.titel)}</h3><p>${t(m.kurz)}</p>
+  const ticket = m ? `<div class="sd-mission"><div class="l"><div class="lab mo">${ic('device-gamepad-2')}${L('Im Spiel weiter · Mission', 'Suite dans le jeu · Mission')}</div><h3>${t(m.titel)}</h3><p>${t(m.kurz)}</p>
     <div class="meta mo"><span>${ic('map-pin')}${esc(m.ort)}</span><span>${ic('gift')}${esc(m.belohnung)}</span></div></div>
-    <div class="r"><div class="qr">${qr('ANNEXE:' + m.code)}</div><div class="code mo">${esc(m.code)}</div><div class="hn mo">In der Annexe-App: Code eingeben</div></div></div>` : ''
+    <div class="r"><div class="qr">${qr('ANNEXE:' + m.code)}</div><div class="code mo">${esc(m.code)}</div><div class="hn mo">${L('In der Annexe-App: Code eingeben', 'Dans l’app Annexe : taper le code')}</div></div></div>` : ''
   return st.seiten.map((p, k) => {
     const kopf = k === 0
-      ? `<div class="th sd-th"><div class="znr">${z2(i + 1)}</div><div class="lab mo">Stunde ${z2(i + 1)} · ${esc(st.dauer)}</div><h1 class="an${e.titel.length > 15 ? ' kl' : ''}">${t(e.titel)}</h1><div class="ut">${t(st.frage)}</div></div>
-         <div class="sd-plan"><div class="kann"><span class="mo">Am Ende kannst du</span>${st.kannst.map((x) => `<span>${ic('check')}${t(x)}</span>`).join('')}</div>
+      ? `<div class="th sd-th"><div class="znr">${z2(i + 1)}</div><div class="lab mo">${L('Stunde', 'Séance')} ${z2(i + 1)} · ${esc(st.dauer)}</div><h1 class="an${e.titel.length > 15 ? ' kl' : ''}">${t(e.titel)}</h1><div class="ut">${t(st.frage)}</div></div>
+         <div class="sd-plan"><div class="kann"><span class="mo">${L('Am Ende kannst du', 'À la fin, tu sais')}</span>${st.kannst.map((x) => `<span>${ic('check')}${t(x)}</span>`).join('')}</div>
            <div class="weg">${alle.map((x) => `<div><i>${x.nr}</i><b>${esc(kurzName(x.s))}</b><span class="mo">${esc(x.s.zeit)}</span></div>`).join('')}</div></div>`
-      : `<div class="sd-kopf"><div><span class="mo">Stunde ${z2(i + 1)}</span><b class="an">${t(e.titel)}</b></div>${streifen(k)}</div>`
+      : `<div class="sd-kopf"><div><span class="mo">${L('Stunde', 'Séance')} ${z2(i + 1)}</span><b class="an">${t(e.titel)}</b></div>${streifen(k)}</div>`
     return `<div>${kopf}<div class="inhalt sd${k === 0 ? ' eins' : ''}">${p.stationen.map(station).join('')}${k === st.seiten.length - 1 ? ticket : ''}</div></div>`
   })
 }

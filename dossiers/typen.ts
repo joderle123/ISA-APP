@@ -122,6 +122,8 @@ export interface Heft {
   karten: { titel: string; icon: string; zeilen: string[]; eigen?: string }[]
   abspann: { saetze: string[]; posten: string[]; /** letzter Satz der Seite (Standard: Hinweis auf die nächste Ausgabe) */ schluss?: string }
   hilfeText?: string
+  /** eigene Missions-Tickets (z. B. französische Fassung); sonst aus insel/src/lycee/kurs-missionen.json */
+  missionen?: { code: string; titel: string; ort: string; kurz: string; belohnung: string; skill: string }[]
   leitung: {
     fakten: [string, string][]; wozu: string; lernziele: string[]; start: string; schluss: string
     hilfe: string[]; forder: string[]; gespraech: string; druck: string[]; hot: string; achtung: string; hintergrund: string; quellen: string

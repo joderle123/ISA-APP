@@ -52,26 +52,26 @@ const tank: Stunde = {
       stationen: [
         {
           titel: 'Clip: Was die Nacht mit dir macht', zeit: '15 Min.', wie: 'alle', icon: 'player-play',
-          leitung: 'Eher schwer: vorher „Gedächtnis“ und „Tiefschlaf“ erklären. Zeigt, wie das Gehirn nachts aufräumt – nicht, was Schlafmangel mit der Laune macht (→ „Stimmt das?“).',
+          leitung: 'Eher schwer: vorher „Gedächtnis“ und „Tiefschlaf“ erklären. Zeigt, wie das Gehirn nachts aufräumt, nicht die Wirkung auf die Laune – bei „Stimmt das?“ wird darum getippt.',
           bausteine: [
             {
               art: 'clip',
               clip: { titel: 'Mehr als lebenswichtig: Darum schlafen wir!', kanal: 'Quarks', url: 'https://www.youtube.com/watch?v=sdH-fEEh1uY', dauer: '00:00 bis 05:09 (ganz)', frage: 'Was macht dein Gehirn, während du schläfst?' },
               vorher: [
                 { f: 'Dein Tipp: Was macht dein Gehirn, während du schläfst?', kreuz: ['Es ist aus.', 'Es arbeitet weiter.'], unter: true },
-                { f: 'Wie viele Stunden hast du heute Nacht geschlafen – ungefähr?', zahl: ['Stunden'] },
+                { f: 'Wie viele Stunden hast du heute Nacht geschlafen – ungefähr? (Nur für dich.)', zahl: ['Stunden'] },
               ],
-              dabei: ['Das macht das Gehirn nachts:', 'Das Zahlen-Rätsel – so ging es aus:', 'Das hat mich überrascht:'],
+              dabei: ['Das macht das Gehirn nachts (eine Sache reicht):', 'Das hat mich überrascht:'],
               nachher: [
-                { f: 'Wann haben die Leute im Video die versteckte Regel gefunden?', kreuz: ['vor dem Schlafen', 'nach dem Schlafen', 'gar nicht'], unter: true },
-                { f: 'Was machst du ab heute anders?', linien: 1 },
+                { f: 'Warum hilft Schlaf vor einem Test?', kreuz: ['Das Gehirn speichert, was du gelernt hast.', 'Man sieht ausgeruht besser aus.', 'Gar nicht.'], unter: true },
+                { f: 'Was probierst du diese Woche aus? (Auch okay: „Nichts – passt schon.“)', linien: 1 },
               ],
             },
-            { art: 'fragen', fragen: [{ f: 'Stimmt das? Kreuz an – danach wird aufgelöst.', raster: { spalten: ['stimmt', 'stimmt nicht'], zeilen: [
+            { art: 'fragen', fragen: [{ f: 'Stimmt das? Manches kommt im Video nicht vor – dann tipp einfach. Danach wird aufgelöst.', raster: { spalten: ['stimmt', 'stimmt nicht'], zeilen: [
               'Im Schlaf räumt das Gehirn auf und speichert, was du gelernt hast.',
               'Wer zu wenig schläft, wird schneller gereizt.',
               'Verpassten Schlaf kann man am Wochenende ganz nachholen.',
-              'Das Handy im Bett hilft beim Einschlafen.',
+              'Das Handy im Bett hilft meistens beim Einschlafen.',
               'Ein Energydrink ersetzt eine Stunde Schlaf.',
             ] } }] },
             { art: 'reden', x: ['Was hält euch abends am längsten wach?'] },
@@ -147,7 +147,10 @@ const tank: Stunde = {
         {
           titel: 'Material: 6 Tanks und 18 Situationen', zeit: '', wie: 'zu Station 5', icon: 'scissors', fort: true,
           bausteine: [
-            { art: 'karten', wort: true, spalten: 6, hoehe: 22, hinweis: 'Die sechs Tanks: ausschneiden und in die Mitte legen.', karten: [{ t: 'Körper' }, { t: 'Sicherheit' }, { t: 'Dazu­gehören' }, { t: 'Ernst genommen' }, { t: 'Selbst ent­scheiden' }, { t: 'Spaß und Neues' }] },
+            // Zweisprachig (Auftrag 24.11.2026): deutsch groß, französisch klein – in der französischen Fassung umgekehrt
+            { art: 'karten', wort: true, spalten: 6, hoehe: 26, hinweis: 'Die sechs Tanks: ausschneiden und in die Mitte legen. Auf Deutsch und Französisch.', karten: [
+              { t: 'Körper', x: 'le corps' }, { t: 'Sicherheit', x: 'la sécurité' }, { t: 'Dazu­gehören', x: 'faire partie' },
+              { t: 'Ernst genommen', x: 'être pris au sérieux' }, { t: 'Selbst ent­scheiden', x: 'décider soi‑même' }, { t: 'Spaß und Neues', x: 'plaisir et nouveauté' }] },
             {
               art: 'karten', spalten: 3, hoehe: 28, hinweis: 'Die Situationen: ausschneiden, mischen, verdeckt stapeln.',
               karten: [

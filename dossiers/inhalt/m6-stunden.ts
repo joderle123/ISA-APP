@@ -87,7 +87,7 @@ export function stunden(d: Heft): Stunde[] {
       ], { leitung: 'Vorlesen. Erst ankreuzen, dann die Sprechblase.' }),
       weiter('Der Fall: Ben und die Kopfhörer', 4, 'search', reden('Was macht es so schwer, in so einem Moment einfach zu gehen?')),
       clip(alle, 'der Linien-Test', [kreuzU('Alle in der Gruppe sagen etwas Falsches. Was machst du?', 'Ich sage, was ich sehe.', 'Ich sage, was alle sagen.', 'weiß nicht'), kreuz('Hast du schon mal gegen die ganze Gruppe geantwortet?', 'ja', 'nein', 'weiß nicht')], ['Das passiert im Test:', 'So viele machen mit:', 'Das hat mich überrascht:'],
-        [kreuz('Hättest du gedacht, dass so viele mitmachen?', 'ja', 'nein'), kreuzU('Was hat im Test geholfen, bei der eigenen Antwort zu bleiben?', 'eine zweite Person, die auch Nein sagt', 'nichts')]),
+        [kreuz('Hättest du gedacht, dass so viele mitmachen?', 'ja', 'nein'), kreuzU('Was macht es leichter, bei der eigenen Antwort zu bleiben? (Denk nach – das muss nicht im Clip vorkommen.)', 'wenn noch jemand dasselbe sagt', 'wenn man leiser spricht', 'nichts')]),
     ),
     seite(
       modell(alle, 'warum die Gruppe zieht', ['users-group', 'flame', 'user-check'], { zeit: '8 Min.', wie: 'alle · dann allein',

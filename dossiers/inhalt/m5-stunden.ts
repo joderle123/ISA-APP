@@ -144,7 +144,7 @@ export function stunden(d: Heft): Stunde[] {
         leitung: 'Vorlesen, dann allein ankreuzen. Manches passt zu zwei Sorten – das ist kein Fehler.',
         fragen: [raster('Welche Grenze ist das? Ein Kreuz pro Zeile.', ['Körper', 'Inneres', 'Digital'], 'Jemand stellt sich ganz dicht hinter dich.', 'Jemand lacht über deinen Lieblingssong.', 'Jemand postet ein Video von dir.', 'Jemand fragt dich vor allen aus.')],
         danach: [reden('Welche Sorte Grenze wird bei Jugendlichen am häufigsten überschritten?')] }),
-      clip(bis, 'Wie viel Nähe ist okay?', [kreuz('Wie nah darf dir ein Fremder kommen?', 'sehr nah', 'eine Armlänge', 'weiter weg'), kreuz('Und eine Freundin oder ein Freund?', 'sehr nah', 'eine Armlänge', 'weiter weg')], ['Das passiert im Experiment:', 'So reagieren die Leute:', 'Das hat mich überrascht:'],
+      clip(bis, 'Wie viel Nähe ist okay?', [kreuz('Wie nah darf dir ein Fremder kommen?', 'sehr nah', 'eine Armlänge', 'weiter weg'), kreuz('Und eine Freundin oder ein Freund?', 'sehr nah', 'eine Armlänge', 'weiter weg')], ['Das passiert im Clip:', 'So reagieren die Leute:', 'Das hat mich überrascht:'],
         [kreuzU('Ist der Abstand bei allen gleich?', 'Nein. Jeder hat seinen.', 'Ja.'), kreuzU('Chloé wurde nicht gefragt. Was hat ihr Körper gemeldet?', 'Der Bauch zieht sich zusammen.', 'nichts')]),
     ),
     seite(

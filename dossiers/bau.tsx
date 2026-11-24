@@ -10,6 +10,7 @@ import { bildZeichnung, bildGueltig, palette } from '../src/blatt/zeichnung'
 import qrcode from 'qrcode-generator'
 import type { Heft, Frage, Track } from './typen'
 import { URHEBER } from '../src/lib/urheber'
+import { L, setzeSprache, sprache } from './sprache'
 import { baueSolo } from './solo-bau'
 import { baueAktion } from './aktion-bau'
 import { baueStunde, stationen, kurzName } from './stunde-bau'
@@ -71,12 +72,12 @@ function frage(f: Frage, i: number): string {
   if (f.regler) a += `<div class="skala reg">${f.regler.map((w) => `<span class="mo">${t(w)}</span><div class="zahlen">${[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((n) => `<span>${n}</span>`).join('')}</div>`).join('')}</div>`
   if (f.satz) a += f.satz.map((w) => `<div class="satz"><span>${t(w)}</span><div class="linie"></div></div>`).join('')
   if (f.raster) a += `<div class="raster" style="grid-template-columns:1fr repeat(${f.raster.spalten.length},auto)"><span></span>${f.raster.spalten.map((w) => `<b class="mo">${t(w)}</b>`).join('')}${f.raster.zeilen.map((z) => `<span>${t(z)}</span>${f.raster!.spalten.map(() => '<i></i>').join('')}`).join('')}</div>`
-  if (f.preis) a += `<div class="preis"><span class="k mo">${t(f.preis.erste ?? 'Möglichkeit')}</span><span class="k mo">${t(f.preis.kopf[0])}</span><span class="k mo">${t(f.preis.kopf[1])}</span>${f.preis.optionen.map((o) => `<span class="o">${t(o)}</span><span></span><span></span>`).join('')}</div>`
+  if (f.preis) a += `<div class="preis"><span class="k mo">${t(f.preis.erste ?? L('Möglichkeit', 'Possibilité'))}</span><span class="k mo">${t(f.preis.kopf[0])}</span><span class="k mo">${t(f.preis.kopf[1])}</span>${f.preis.optionen.map((o) => `<span class="o">${t(o)}</span><span></span><span></span>`).join('')}</div>`
   if (f.zahl) a += `<div class="zahl">${f.zahl.map((w) => `<div><span>${t(w)}</span><i></i></div>`).join('')}</div>`
   if (f.gitter) a += `<div class="gitter">${f.gitter.map((w) => `<div>${t(w)}</div>`).join('')}</div>`
   if (f.striche) a += `<div class="striche">${f.striche.map((w) => `<span class="mo l">${t(w[0])}</span><div></div><span class="mo">${t(w[1])}</span>`).join('')}</div>`
   if (f.strich) a += `<div class="strich"><span class="mo">${t(f.strich[0])}</span><div></div><span class="mo">${t(f.strich[1])}</span></div>`
-  if (f.akku) a += `<div class="akku"><span class="mo">${esc(f.akku)}</span><div class="bat"><i></i><i></i><i></i><i></i><i></i></div><span class="mo">voll</span></div>`
+  if (f.akku) a += `<div class="akku"><span class="mo">${esc(f.akku)}</span><div class="bat"><i></i><i></i><i></i><i></i><i></i></div><span class="mo">${L('voll', 'plein')}</span></div>`
   if (f.verbinden) a += `<div class="verb"><div>${f.verbinden[0].map((w) => `<span>${t(w)}<i></i></span>`).join('')}</div><div>${f.verbinden[1].map((w) => `<span><i></i>${t(w)}</span>`).join('')}</div></div>`
   if (f.wortkasten) a += `<div class="wkasten">${f.wortkasten.map((w) => `<span>${t(w)}</span>`).join('')}</div>`
   if (f.kette) a += `<div class="kette">${f.kette.map((w) => `<span class="${w ? 'fest mo' : ''}">${t(w)}</span>`).join('<b>→</b>')}</div>`
@@ -96,7 +97,8 @@ function baue(d: Heft): string {
   const ersteSeite = 4
   /** Hefte mit Stunden (seit 16.11.2026): die Einheit als Ablauf mit Stationen; die Gruppen-Aktionen stehen dort, nicht mehr als „Sessions“ */
   const neu = d.tracks.every((e) => e.stunde)
-  const einheit = neu ? 'Stunde' : 'Track'
+  const einheit = neu ? L('Stunde', 'Séance') : 'Track'
+  const E = L('E', 'U')   // Einheit / unité
   const nSeiten = (e: Track) => (e.stunde ? e.stunde.seiten.length : 2)
   const seiteVon = (i: number) => ersteSeite + d.tracks.slice(0, i).reduce((x, e) => x + nSeiten(e), 0)
   const nT = d.tracks.length
@@ -106,7 +108,7 @@ function baue(d: Heft): string {
   const nSes = nAkt === 0 ? 0 : nAkt > 8 ? Math.ceil(nAkt / 4) : 2
   const S = { ses: seiteVon(nT), kino: seiteVon(nT) + nSes, hot: seiteVon(nT) + nSes + kk, code: seiteVon(nT) + nSes + 1 + kk, karten: seiteVon(nT) + nSes + 2 + kk, ab: seiteVon(nT) + nSes + 3 + kk }
   /** Seiten „Der Ablauf der Stunden“ für die Leitung: höchstens drei Stunden je Seite, gleichmäßig verteilt */
-  const nAbl = neu ? Math.ceil(nT / 3) : 0
+  const nAbl = neu ? Math.ceil(nT / (sprache() === 'fr' ? 2 : 3)) : 0   // Französisch ist länger: höchstens zwei Stunden je Seite
   /** Text mit Seiten-Platzhaltern: {K} Karten, {J} letzte Seite für Jugendliche, {L} Seiten der Leitung, {S} Sessions */
   const tp = (x: string) => t(x.replace(/\{K\}/g, String(S.karten)).replace(/\{J\}/g, String(S.ab)).replace(/\{L\}/g, `${S.ab + 1}–${S.ab + 3 + nAbl}`).replace(/\{S\}/g, `${S.ses}–${S.ses + nSes - 1}`))
 
@@ -114,36 +116,36 @@ function baue(d: Heft): string {
   seiten.push({
     ohneFuss: true,
     html: `<div class="cv">
-      <div class="top"><div class="mo">Das Heft zum Skills-Kurs<br>Jahr 1 · Ausgabe ${esc(d.nr)}</div><div class="no">#${esc(d.nr)}</div></div>
+      <div class="top"><div class="mo">${L('Das Heft zum Skills-Kurs<br>Jahr 1 · Ausgabe ', 'Le magazine du cours Skills<br>Année 1 · Numéro ')}${esc(d.nr)}</div><div class="no">#${esc(d.nr)}</div></div>
       <div class="logo">Real<br><span>Talk</span></div>
-      <div class="block"><div class="mo">In dieser Ausgabe</div><div class="th2${d.thema.length > 9 ? ' kl' : ''}">${t(d.thema)}</div><div class="hd">${t(d.headline)}</div></div>
+      <div class="block"><div class="mo">${L('In dieser Ausgabe', 'Dans ce numéro')}</div><div class="th2${d.thema.length > 9 ? ' kl' : ''}">${t(d.thema)}</div><div class="hd">${t(d.headline)}</div></div>
       <div class="stk">${t(d.cover.sticker)}</div>
       <div class="figur">${figur(d.cover.bild)}</div>
       <div class="zl">${d.cover.zeilen.map((x) => `<div><span>${t(x)}</span></div>`).join('')}</div>
-      <div class="unten"><div class="ge"><span class="mo">Dieses Heft gehört</span><i></i></div><div class="code"></div><div class="pr mo">Preis:<br>1 ehrliche Antwort</div></div>
+      <div class="unten"><div class="ge"><span class="mo">${L('Dieses Heft gehört', 'Ce magazine appartient à')}</span><i></i></div><div class="code"></div><div class="pr mo">${L('Preis:<br>1 ehrliche Antwort', 'Prix :<br>1 réponse honnête')}</div></div>
     </div>`,
   })
 
   // 2 Ansage
   seiten.push({
-    html: `<div>${kh('Ansage', 'Worum es hier geht – und worum nicht', 'Ohne Predigt')}
+    html: `<div>${kh(L('Ansage', 'Le message'), L('Worum es hier geht – und worum nicht', 'De quoi on parle ici – et de quoi pas'), L('Ohne Predigt', 'Sans sermon'))}
     <div class="inhalt">
       <div class="ansage">${d.ansage.text.map((x) => `<p>${t(x)}</p>`).join('')}<div class="zit">${t(d.ansage.zitat)}</div></div>
-      <div class="gr">${tape('book-2', 'So liest du das Heft')}
+      <div class="gr">${tape('book-2', L('So liest du das Heft', 'Comment lire ce magazine'))}
         <div class="so">${d.ansage.so.map((s) => `<div><b>${t(s[0])}</b><span>${t(s[1])}</span></div>`).join('')}</div></div>
-      <div class="gr">${tape('bolt', 'Drei Regeln. Mehr gibt es nicht.', true)}
+      <div class="gr">${tape('bolt', L('Drei Regeln. Mehr gibt es nicht.', 'Trois règles. Pas une de plus.'), true)}
         <div class="bx p regeln">${d.ansage.regeln.map((r, i) => `<div><b class="z">${i + 1}</b><span>${t(r)}</span></div>`).join('')}</div></div>
-      <div class="hilfe">${ic('phone')}<span>${t(d.hilfeText ?? 'Wenn dich etwas aus dem Heft nicht loslässt: Sprich mit jemandem, dem du vertraust. Kanner-Jugendtelefon **116 111** · Notruf **112**')}</span></div>
+      <div class="hilfe">${ic('phone')}<span>${t(d.hilfeText ?? L('Wenn dich etwas aus dem Heft nicht loslässt: Sprich mit jemandem, dem du vertraust. Kanner-Jugendtelefon **116 111** · Notruf **112**', 'Si quelque chose dans ce magazine te travaille : parles-en à quelqu’un de confiance. Kanner-Jugendtelefon **116 111** · Urgences **112**'))}</span></div>
     </div></div>`,
   })
 
   // 3 Tracklist und Cast
   seiten.push({
-    html: `<div>${neu ? kh('Das kommt', `${['', 'Eine Stunde', 'Zwei Stunden', 'Drei Stunden', 'Vier Stunden', 'Fünf Stunden', 'Sechs Stunden'][d.tracks.length]}, ein Thema: ${d.thema}`) : kh('Tracklist', `${['', 'Ein', 'Zwei', 'Drei', 'Vier', 'Fünf', 'Sechs'][d.tracks.length]} Tracks, ein Thema: ${d.thema}`)}
+    html: `<div>${neu ? kh(L('Das kommt', 'Au programme'), `${(sprache() === 'fr' ? ['', 'Une séance', 'Deux séances', 'Trois séances', 'Quatre séances', 'Cinq séances', 'Six séances'] : ['', 'Eine Stunde', 'Zwei Stunden', 'Drei Stunden', 'Vier Stunden', 'Fünf Stunden', 'Sechs Stunden'])[d.tracks.length]}${L(', ein Thema: ', ', un thème : ')}${d.thema}`) : kh('Tracklist', `${['', 'Ein', 'Zwei', 'Drei', 'Vier', 'Fünf', 'Sechs'][d.tracks.length]} Tracks, ein Thema: ${d.thema}`)}
     <div class="inhalt">
-      <div class="tl">${d.tracks.map((e, i) => `<div class="t"><div class="z">${z2(i + 1)}</div><div class="tx"><h3>${t(e.titel)}</h3><p>${t(e.kurz)}</p>${e.stunde && nT < 5 ? `<p style="color:var(--g);margin-top:.5mm;font-size:8.6pt">${stationen(e).map((x) => esc(kurzName(x.s))).join(' → ')}</p>` : ''}</div><div class="s mo">S. ${seiteVon(i)}</div></div>`).join('')}
-        <div class="t x"><div class="z">+</div><div class="tx"><h3>${neu ? '' : 'Sessions · '}${d.kino ? 'Kino · ' : ''}${neu ? 'Streitfragen' : 'Hot Takes'} · Code · Karten</h3><p>${neu ? '' : 'Aktionen für die ganze Gruppe, '}${d.kino ? (neu ? 'Der Film des Trimesters, ' : 'der Film des Trimesters, ') : ''}${neu && !d.kino ? 'Streiten' : 'Streiten'} nach Regeln, ein Quiz, Karten für die Tasche.</p></div><div class="s mo">S. ${neu ? S.kino : S.ses}</div></div></div>
-      <div class="gr">${tape('users', neu ? 'Die Leute im Heft – alle erfunden' : 'Cast – alle erfunden, alles schon passiert')}
+      <div class="tl">${d.tracks.map((e, i) => `<div class="t"><div class="z">${z2(i + 1)}</div><div class="tx"><h3>${t(e.titel)}</h3><p>${t(e.kurz)}</p>${e.stunde && nT < 5 ? `<p style="color:var(--g);margin-top:.5mm;font-size:8.6pt">${stationen(e).map((x) => esc(kurzName(x.s))).join(' → ')}</p>` : ''}</div><div class="s mo">${L('S.', 'p.')} ${seiteVon(i)}</div></div>`).join('')}
+        <div class="t x"><div class="z">+</div><div class="tx"><h3>${neu ? '' : 'Sessions · '}${d.kino ? L('Kino · ', 'Cinéma · ') : ''}${neu ? L('Streitfragen', 'Débats') : 'Hot Takes'} · Code · ${L('Karten', 'Cartes')}</h3><p>${neu ? '' : 'Aktionen für die ganze Gruppe, '}${d.kino ? (neu ? L('Der Film des Trimesters, ', 'Le film du trimestre, ') : 'der Film des Trimesters, ') : ''}${L('Streiten nach Regeln, ein Quiz, Karten für die Tasche.', 'débattre avec des règles, un quiz, des cartes pour la poche.')}</p></div><div class="s mo">${L('S.', 'p.')} ${neu ? S.kino : S.ses}</div></div></div>
+      <div class="gr">${tape('users', neu ? L('Die Leute im Heft – alle erfunden', 'Les personnes du magazine – toutes inventées') : 'Cast – alle erfunden, alles schon passiert')}
         <div class="cast" style="grid-template-columns:repeat(${d.cast.length},1fr)">${d.cast.map((c) => `<div class="c"><div class="b"><div class="pk punkt"></div><div class="fig">${figur(c.bild)}</div></div><div class="tx"><h3>${t(c.name)}</h3><p>${t(c.x)}</p></div></div>`).join('')}</div></div>
       <div class="bx warm"><h3>${t(d.warm.titel)}</h3><p>${t(d.warm.text)}</p>${d.warm.fragen.map(frage).join('')}</div>
     </div></div>`,
@@ -152,7 +154,7 @@ function baue(d: Heft): string {
   // Doppelseiten je Track
   d.tracks.forEach((e, i) => {
     if (e.stunde) {
-      baueStunde(e, i, { t, esc, figur, ic, qr, kurzlink, linien, frage, mission: MISSIONEN.hefte[d.nr]?.[i] }).forEach((html) => seiten.push({ e: i, html }))
+      baueStunde(e, i, { t, esc, figur, ic, qr, kurzlink, linien, frage, mission: (d.missionen ?? MISSIONEN.hefte[d.nr])?.[i] }).forEach((html) => seiten.push({ e: i, html }))
       return
     }
     seiten.push({
@@ -206,23 +208,23 @@ function baue(d: Heft): string {
   // Kino
   const kino = d.kino
   if (kino) seiten.push({
-    html: `<div>${kh('Kino', kino.filme.length === 1 ? 'Der Film dieses Trimesters' : 'Ein Film für die Gruppe – und einer für danach', 'Popcorn erlaubt')}
+    html: `<div>${kh(L('Kino', 'Cinéma'), kino.filme.length === 1 ? L('Der Film dieses Trimesters', 'Le film de ce trimestre') : L('Ein Film für die Gruppe – und einer für danach', 'Un film pour le groupe – et un pour après'), L('Popcorn erlaubt', 'Pop-corn autorisé'))}
     <div class="inhalt">
-      <div class="filme${kino.filme.length === 1 ? ' eins' : ''}">${kino.filme.map((f, i) => `<div class="film"><div class="ab mo"><span>${i === 0 ? 'Hauptfilm' : 'Noch ein Tipp'}</span><span>${f.jahr} · ${f.fsk === null ? 'FSK prüfen' : 'FSK ' + f.fsk} · ${esc(f.laenge)}</span></div><h3>${t(f.titel)}</h3><p>${t(f.worum)}</p><div class="ach"><span class="mo">Achte auf</span><ul>${f.achte.map((x) => `<li>${t(x)}</li>`).join('')}</ul></div>${f.achtung ? `<div class="warn mo">${ic('alert-triangle')}<span>${t(f.achtung)}</span></div>` : ''}</div>`).join('')}</div>
-      <div class="kz"><div class="gr">${tape('layout-grid', 'Kino-Bingo zum Hauptfilm', true)}
-          <div class="bingo">${kino.bingo.map((x) => `<div>${t(x)}</div>`).join('')}</div><p class="mo" style="color:var(--g)">Entdeckt? Ankreuzen. Drei in einer Reihe: leise „Bingo“.</p></div>
-        <div class="bx nach"><div class="tape mo" style="margin-bottom:2.4mm">${ic('message-circle')}Nach dem Abspann</div>${kino.nachher.map((x, i) => frage({ f: x, linien: 2 }, i)).join('')}</div></div>
-      <div class="vibe"><span class="mo">Meine Wertung: <i></i><i></i><i></i><i></i><i></i> Popcorn</span><span class="mo">Beste Szene: ______________________________</span></div>
+      <div class="filme${kino.filme.length === 1 ? ' eins' : ''}">${kino.filme.map((f, i) => `<div class="film"><div class="ab mo"><span>${i === 0 ? L('Hauptfilm', 'Film principal') : L('Noch ein Tipp', 'Encore une idée')}</span><span>${f.jahr} · ${f.fsk === null ? L('FSK prüfen', 'âge à vérifier') : L('FSK ' + f.fsk, 'dès ' + f.fsk + ' ans')} · ${esc(f.laenge)}</span></div><h3>${t(f.titel)}</h3><p>${t(f.worum)}</p><div class="ach"><span class="mo">${L('Achte auf', 'Fais attention à')}</span><ul>${f.achte.map((x) => `<li>${t(x)}</li>`).join('')}</ul></div>${f.achtung ? `<div class="warn mo">${ic('alert-triangle')}<span>${t(f.achtung)}</span></div>` : ''}</div>`).join('')}</div>
+      <div class="kz"><div class="gr">${tape('layout-grid', L('Kino-Bingo zum Hauptfilm', 'Bingo du film'), true)}
+          <div class="bingo">${kino.bingo.map((x) => `<div>${t(x)}</div>`).join('')}</div><p class="mo" style="color:var(--g)">${L('Entdeckt? Ankreuzen. Drei in einer Reihe: leise „Bingo“.', 'Repéré ? Coche. Trois sur une ligne : « Bingo » à voix basse.')}</p></div>
+        <div class="bx nach"><div class="tape mo" style="margin-bottom:2.4mm">${ic('message-circle')}${L('Nach dem Abspann', 'Après le générique')}</div>${kino.nachher.map((x, i) => frage({ f: x, linien: 2 }, i)).join('')}</div></div>
+      <div class="vibe"><span class="mo">${L('Meine Wertung:', 'Ma note :')} <i></i><i></i><i></i><i></i><i></i> ${L('Popcorn', 'pop-corn')}</span><span class="mo">${L('Beste Szene:', 'Meilleure scène :')} ______________________________</span></div>
     </div></div>`,
   })
 
   // Hot Takes
   seiten.push({
-    html: `<div>${kh(neu ? 'Streitfragen' : 'Hot Takes', d.hot.unter, 'Kein Richtig, kein Falsch')}
+    html: `<div>${kh(neu ? L('Streitfragen', 'Débats') : 'Hot Takes', d.hot.unter, L('Kein Richtig, kein Falsch', 'Ni vrai ni faux'))}
     <div class="inhalt">
-      <p style="font-size:10.8pt">${t(d.hot.regeln)} Seid ihr nur zu dritt: Die Leitung stellt sich mit auf – und bei heiklen Sätzen reicht das Kreuz im Heft.</p>
-      <div>${d.hot.takes.map((x, i) => `<div class="take"><div class="z">${i + 1}</div><div class="s">${t(x)}</div><div class="strich"><span class="mo">stimmt nie</span><div></div><span class="mo">stimmt immer</span></div></div>`).join('')}</div>
-      <div class="bx p"><div class="satz" style="margin-top:0"><span><strong>${neu ? 'Bei diesem Satz' : 'Bei diesem Take'} habe ich meine Meinung geändert:</strong> Nr.</span><div class="linie" style="max-width:20mm"></div><span><strong>– weil</strong></span><div class="linie"></div></div></div>
+      <p style="font-size:10.8pt">${t(d.hot.regeln)} ${L('Seid ihr nur zu dritt: Die Leitung stellt sich mit auf – und bei heiklen Sätzen reicht das Kreuz im Heft.', 'Vous n’êtes que trois ? L’adulte se place aussi – et pour les phrases délicates, la croix dans le magazine suffit.')}</p>
+      <div>${d.hot.takes.map((x, i) => `<div class="take"><div class="z">${i + 1}</div><div class="s">${t(x)}</div><div class="strich"><span class="mo">${L('stimmt nie', 'jamais vrai')}</span><div></div><span class="mo">${L('stimmt immer', 'toujours vrai')}</span></div></div>`).join('')}</div>
+      <div class="bx p"><div class="satz" style="margin-top:0"><span><strong>${neu ? L('Bei diesem Satz habe ich meine Meinung geändert:', 'Pour cette phrase, j’ai changé d’avis :') : 'Bei diesem Take habe ich meine Meinung geändert:'}</strong> ${L('Nr.', 'n°')}</span><div class="linie" style="max-width:20mm"></div><span><strong>${L('– weil', '– parce que')}</strong></span><div class="linie"></div></div></div>
     </div></div>`,
   })
 
@@ -241,34 +243,34 @@ function baue(d: Heft): string {
     return `<div class="q"><span class="n">${i + 1}</span><div><div class="ft">${t(q.f)}</div>${q.o.map((o, k) => `<div class="op"><i>${bs[k]}</i><span>${t(o)}</span></div>`).join('')}</div></div>`
   }).join('')
   seiten.push({
-    html: `<div>${kh('Knack den Code', qz.unter, `${wort.length} Fragen`)}
+    html: `<div>${kh(L('Knack den Code', 'Craque le code'), qz.unter, `${wort.length} ${L('Fragen', 'questions')}`)}
     <div class="inhalt">
       <div class="quiz${qz.fragen.length > 8 ? ' eng' : ''}">${quizHtml}</div>
-      <div class="bx ak code" style="padding-bottom:7mm"><h3>Der Code:</h3><div class="ka">${wort.split('').map((_, i) => `<div><small>${i + 1}</small></div>`).join('')}</div></div>
-      <p class="mo" style="color:var(--g)">Jede richtige Antwort liefert einen Buchstaben. Stimmt der Code, stimmt alles.</p>
+      <div class="bx ak code" style="padding-bottom:7mm"><h3>${L('Der Code:', 'Le code :')}</h3><div class="ka">${wort.split('').map((_, i) => `<div><small>${i + 1}</small></div>`).join('')}</div></div>
+      <p class="mo" style="color:var(--g)">${L('Jede richtige Antwort liefert einen Buchstaben. Stimmt der Code, stimmt alles.', 'Chaque bonne réponse donne une lettre. Si le code est juste, tout est juste.')}</p>
     </div></div>`,
   })
 
   // Karten zum Ausschneiden
   seiten.push({
-    html: `<div>${kh('Für die Tasche', `${d.karten.length === 6 ? 'Sechs' : d.karten.length} Karten. Ausschneiden, einstecken, benutzen.`, 'Zum Ausschneiden')}
+    html: `<div>${kh(L('Für die Tasche', 'Pour la poche'), L(`${d.karten.length === 6 ? 'Sechs' : d.karten.length} Karten. Ausschneiden, einstecken, benutzen.`, `${d.karten.length === 6 ? 'Six' : d.karten.length} cartes. Découpe, glisse dans ta poche, utilise.`), L('Zum Ausschneiden', 'À découper'))}
     <div class="inhalt">
       <div class="kk${d.karten.length > 4 ? ' sechs' : ''}">${d.karten.map((k) => `<div class="karte"><div class="o"><h3>${t(k.titel)}</h3>${ic(k.icon)}</div><div class="m">${k.zeilen.map((x) => (x.startsWith('_') ? `<p class="leer"><b>${esc(x.slice(1))}</b><i></i></p>` : `<div><span>${t(x)}</span></div>`)).join('')}</div>${k.eigen ? `<div class="e"><span><strong>${t(k.eigen)}</strong></span><i></i></div>` : ''}</div>`).join('')}</div>
-      <p class="mo" style="color:var(--g);text-align:center">Passt ins Portemonnaie oder hinter die Handyhülle · ${marke}</p>
+      <p class="mo" style="color:var(--g);text-align:center">${L('Passt ins Portemonnaie oder hinter die Handyhülle', 'Tient dans un portefeuille ou derrière la coque du téléphone')} · ${marke}</p>
     </div></div>`,
   })
 
   // Abspann
   const ab = d.abspann
   seiten.push({
-    html: `<div>${kh(neu ? 'Zum Schluss' : 'Abspann', 'Was bleibt hängen?')}
+    html: `<div>${kh(neu ? L('Zum Schluss', 'Pour finir') : 'Abspann', L('Was bleibt hängen?', 'Qu’est-ce qui reste ?'))}
     <div class="inhalt ab">
-      <div class="bon"><h3>Quittung</h3><div class="ze">${marke} · ${esc(d.thema)} · Danke für deine Zeit</div>
-        ${ab.posten.map((p) => `<div class="po"><span>1× ${esc(p)}</span><span><i></i> kann ich <i></i> übe ich noch</span></div>`).join('')}
-        <div class="su"><span>Summe</span><span>mehr als vorher</span></div></div>
+      <div class="bon"><h3>${L('Quittung', 'Ticket de caisse')}</h3><div class="ze">${marke} · ${esc(d.thema)} · ${L('Danke für deine Zeit', 'Merci pour ton temps')}</div>
+        ${ab.posten.map((p) => `<div class="po"><span>1× ${esc(p)}</span><span><i></i> ${L('kann ich', 'je sais')} <i></i> ${L('übe ich noch', 'je m’entraîne encore')}</span></div>`).join('')}
+        <div class="su"><span>${L('Summe', 'Total')}</span><span>${L('mehr als vorher', 'plus qu’avant')}</span></div></div>
       <div class="bx">${ab.saetze.map((s) => `<div class="satz"><span><strong>${t(s)}</strong></span><div class="linie"></div></div>${linien(1)}`).join('')}</div>
-      <div class="bx ak shout"><h3>Respekt an</h3><p>Wer aus der Gruppe hat dich in diesen Wochen überrascht – und womit? Ein Name muss nicht drauf.</p>${linien(1)}</div>
-      <p class="mk" style="font-size:15pt;text-align:center">${t(ab.schluss ?? 'Nächste Ausgabe: gleicher Ort, neues Thema.')}</p>
+      <div class="bx ak shout"><h3>${L('Respekt an', 'Respect à')}</h3><p>${L('Wer aus der Gruppe hat dich in diesen Wochen überrascht – und womit? Ein Name muss nicht drauf.', 'Qui dans le groupe t’a fait une surprise ces dernières semaines – et laquelle ? Pas besoin d’écrire un nom.')}</p>${linien(1)}</div>
+      <p class="mk" style="font-size:15pt;text-align:center">${t(ab.schluss ?? L('Nächste Ausgabe: gleicher Ort, neues Thema.', 'Prochain numéro : même endroit, nouveau thème.'))}</p>
     </div></div>`,
   })
 
@@ -281,69 +283,69 @@ function baue(d: Heft): string {
     const g = (w: string) => alle2.filter((x) => x.wann === w).map((x) => esc(x.titel)).join(', ')
     return `<span class="abl">${['Start', 'Mitte', 'Schluss'].filter((w) => g(w)).map((w) => `<b>${w}:</b> ${g(w)}`).join(' · ')}</span>`
   }
-  const lkopf = (titel: string) => `<div class="lk"><span class="mark mo">Nur für die Leitung</span><h1>${t(titel)}</h1></div>`
+  const lkopf = (titel: string) => `<div class="lk"><span class="mark mo">${L('Nur für die Leitung', 'Pour l’équipe éducative')}</span><h1>${t(titel)}</h1></div>`
   seiten.push({
     klasse: 'lt eng',
-    html: `<div>${lkopf('Hinweise zum Einsatz')}<div class="inhalt">
+    html: `<div>${lkopf(L('Hinweise zum Einsatz', 'Conseils d’utilisation'))}<div class="inhalt">
       <div class="fakten">${lt.fakten.map((x) => `<div><small>${esc(x[0])}</small><b>${t(x[1])}</b></div>`).join('')}</div>
-      <div><h2>Wozu dieses Heft?</h2><p>${t(lt.wozu)}</p></div>
-      <div><h2>Lernziele</h2><ul>${lt.lernziele.map((x) => `<li>${t(x)}</li>`).join('')}</ul></div>
-      <div><h2>Das Heft in den Einheiten</h2><table class="t"><tr><th>Einheit</th><th>Seiten</th><th>So passt das Heft in die 100 Minuten</th></tr>
-        <tr><td>vor Einheit ${d.tracks[0].nr}</td><td>1–3</td><td>${t(lt.start)}</td></tr>
-        ${d.tracks.map((e, i) => `<tr><td>E${e.nr} · ${einheit} ${z2(i + 1)}</td><td>${seiteVon(i)}–${seiteVon(i) + nSeiten(e) - 1}</td><td>${tp(e.leitung.einsatz)}${ablauf(e)}</td></tr>`).join('')}
-        <tr><td>nach Einheit ${d.tracks[n - 1].nr}</td><td>${S.ses + nSes}–${S.ab}</td><td>${tp(lt.schluss)}</td></tr></table></div>
+      <div><h2>${L('Wozu dieses Heft?', 'Pourquoi ce magazine ?')}</h2><p>${t(lt.wozu)}</p></div>
+      <div><h2>${L('Lernziele', 'Objectifs')}</h2><ul>${lt.lernziele.map((x) => `<li>${t(x)}</li>`).join('')}</ul></div>
+      <div><h2>${L('Das Heft in den Einheiten', 'Le magazine dans les unités')}</h2><table class="t"><tr><th>${L('Einheit', 'Unité')}</th><th>${L('Seiten', 'Pages')}</th><th>${L('So passt das Heft in die 100 Minuten', 'Comment le magazine s’intègre dans les 100 minutes')}</th></tr>
+        <tr><td>${L('vor Einheit', 'avant l’unité')} ${d.tracks[0].nr}</td><td>1–3</td><td>${t(lt.start)}</td></tr>
+        ${d.tracks.map((e, i) => `<tr><td>${E}${e.nr} · ${einheit} ${z2(i + 1)}</td><td>${seiteVon(i)}–${seiteVon(i) + nSeiten(e) - 1}</td><td>${tp(e.leitung.einsatz)}${ablauf(e)}</td></tr>`).join('')}
+        <tr><td>${L('nach Einheit', 'après l’unité')} ${d.tracks[n - 1].nr}</td><td>${S.ses + nSes}–${S.ab}</td><td>${tp(lt.schluss)}</td></tr></table></div>
       ${neu ? '' : `<div><h2>Eine Einheit mit dem Heft</h2><div class="zl">
         <div style="flex:10">Ankommen<small>0–10 · Session zum Start</small></div><div style="flex:6">Brücke<small>10–15</small></div>
         <div class="h" style="flex:30">Hauptteil 1 · Heft<small>15–45 · Szene lesen, Fakten, Move A</small></div><div style="flex:15">Pause<small>45–60</small></div>
         <div class="h" style="flex:25">Hauptteil 2 · Heft<small>60–85 · Challenge, Move B, Session</small></div><div style="flex:11">Skill<small>85–95 · Session zum Schluss</small></div><div class="h" style="flex:9">Schluss<small>Dein Satz</small></div></div></div>`}
-      <div class="sp2"><div class="kasten"><h2>Wenn es schwerfällt</h2><ul>${lt.hilfe.map((x) => `<li>${t(x)}</li>`).join('')}</ul></div>
-        <div class="kasten"><h2>Wenn jemand mehr will</h2><ul>${lt.forder.map((x) => `<li>${t(x)}</li>`).join('')}</ul></div></div>
-      <div class="kasten g"><h2>Wichtig für das Gespräch</h2><p>${t(lt.gespraech)}</p></div>
+      <div class="sp2"><div class="kasten"><h2>${L('Wenn es schwerfällt', 'Quand c’est difficile')}</h2><ul>${lt.hilfe.map((x) => `<li>${t(x)}</li>`).join('')}</ul></div>
+        <div class="kasten"><h2>${L('Wenn jemand mehr will', 'Pour aller plus loin')}</h2><ul>${lt.forder.map((x) => `<li>${t(x)}</li>`).join('')}</ul></div></div>
+      <div class="kasten g"><h2>${L('Wichtig für das Gespräch', 'Important pour l’échange')}</h2><p>${t(lt.gespraech)}</p></div>
     </div></div>`,
   })
   for (let k = 0; k < nAbl; k++) {
     const je = Math.ceil(nT / nAbl), teil = d.tracks.map((e, i) => ({ e, i })).slice(k * je, (k + 1) * je)
     seiten.push({
       klasse: 'lt eng',
-      html: `<div>${lkopf(`Der Ablauf der Stunden${nAbl > 1 ? ` (${k + 1} von ${nAbl})` : ''}`)}<div class="inhalt">
-      ${k > 0 || teil.reduce((x, y) => x + stationen(y.e).length, 0) > 20 ? '' : `<p class="klein">Zeiten sind Richtwerte (100 Minuten mit Pause). Wird es eng: „Für dich“ kürzen, nicht die große Runde. Niemand muss etwas vorspielen.</p>`}
-      ${teil.map(({ e, i }) => `<div><h2>${einheit} ${z2(i + 1)} · ${t(e.titel)} (Einheit ${e.nr}) – ${t(e.stunde!.frage)}</h2>
-        <table class="sd-abl"><colgroup><col style="width:27%"><col style="width:9%"><col style="width:15%"><col style="width:5%"><col></colgroup><tr><th>Station</th><th>Zeit</th><th>Form</th><th>S.</th><th>Darauf kommt es an</th></tr>
+      html: `<div>${lkopf(`${L('Der Ablauf der Stunden', 'Le déroulement des séances')}${nAbl > 1 ? ` (${k + 1} ${L('von', 'sur')} ${nAbl})` : ''}`)}<div class="inhalt">
+      ${k > 0 || teil.reduce((x, y) => x + stationen(y.e).length, 0) > 20 ? '' : `<p class="klein">${L('Zeiten sind Richtwerte (100 Minuten mit Pause). Wird es eng: „Für dich“ kürzen, nicht die große Runde. Niemand muss etwas vorspielen.', 'Les durées sont indicatives (100 minutes avec pause). Si le temps manque : raccourcir « Pour toi », pas la grande ronde. Personne ne doit jouer une scène devant les autres.')}</p>`}
+      ${teil.map(({ e, i }) => `<div><h2>${einheit} ${z2(i + 1)} · ${t(e.titel)} (${L('Einheit', 'unité')} ${e.nr}) – ${t(e.stunde!.frage)}</h2>
+        <table class="sd-abl"><colgroup><col style="width:27%"><col style="width:9%"><col style="width:15%"><col style="width:5%"><col></colgroup><tr><th>Station</th><th>${L('Zeit', 'Durée')}</th><th>${L('Form', 'Forme')}</th><th>${L('S.', 'p.')}</th><th>${L('Darauf kommt es an', 'Ce qui compte')}</th></tr>
         ${stationen(e).map((x) => `<tr><td>${x.nr} ${esc(kurzName(x.s))}</td><td>${esc(x.s.zeit)}</td><td>${esc(x.s.wie)}</td><td>${seiteVon(i) + x.seite}</td><td>${t(x.s.leitung ?? (e.leitung.stationen ?? [])[x.nr - 1] ?? '')}</td></tr>`).join('')}</table></div>`).join('')}
     </div></div>`,
     })
   }
   seiten.push({
     klasse: neu && n > 4 ? 'lt eng' : n > 4 || neu ? 'lt' : 'lt gross',
-    html: `<div>${lkopf('Lösungen und Fragen für die Runde')}<div class="inhalt">
-      <p class="klein">Bei offenen Fragen gibt es kein Richtig oder Falsch. Genannt ist, was häufig kommt und woran sich das Gespräch anknüpfen lässt.${neu ? ' Bei den Clips hängen die Antworten vom gewählten Ausschnitt ab – bitte vorher ansehen.' : ''}</p>
+    html: `<div>${lkopf(L('Lösungen und Fragen für die Runde', 'Solutions et questions pour l’échange'))}<div class="inhalt">
+      <p class="klein">${L('Bei offenen Fragen gibt es kein Richtig oder Falsch. Genannt ist, was häufig kommt und woran sich das Gespräch anknüpfen lässt.', 'Pour les questions ouvertes, il n’y a ni vrai ni faux. On cite ce qui revient souvent et ce qui permet de lancer l’échange.')}${neu ? L(' Bei den Clips hängen die Antworten vom gewählten Ausschnitt ab – bitte vorher ansehen.', ' Pour les clips, les réponses dépendent de l’extrait choisi – à regarder avant.') : ''}</p>
       <div class="${neu ? 'losfluss' : 'sp2'}">${d.tracks.map((e, i) => `<div class="los"><h3>${einheit} ${z2(i + 1)} · ${t(e.titel)}</h3><ul>${e.leitung.loesungen.map((x) => `<li>${t(x)}</li>`).join('')}</ul></div>`).join('')}</div>
-      <div><h2>Fragen für die Runde</h2><table class="t">${d.tracks.map((e, i) => `<tr><td>${einheit} ${z2(i + 1)}</td><td>${e.leitung.impulse.map((x) => t(x)).join('<br>')}</td></tr>`).join('')}</table></div>
-      <div class="sp2"><div class="kasten"><h2>${neu ? 'Streitfragen' : 'Hot Takes'}</h2><p>${t(lt.hot)}</p></div>
-        <div class="kasten"><h2>Knack den Code</h2><p>Code: <strong>${wort}</strong></p><p>${quizLoesung.map(t).join(' · ')}</p></div></div>
+      <div><h2>${L('Fragen für die Runde', 'Questions pour l’échange')}</h2><table class="t">${d.tracks.map((e, i) => `<tr><td>${einheit} ${z2(i + 1)}</td><td>${e.leitung.impulse.map((x) => t(x)).join('<br>')}</td></tr>`).join('')}</table></div>
+      <div class="sp2"><div class="kasten"><h2>${neu ? L('Streitfragen', 'Débats') : 'Hot Takes'}</h2><p>${t(lt.hot)}</p></div>
+        <div class="kasten"><h2>${L('Knack den Code', 'Craque le code')}</h2><p>Code${L(':', ' :')} <strong>${wort}</strong></p><p>${quizLoesung.map(t).join(' · ')}</p></div></div>
     </div></div>`,
   })
   seiten.push({
     klasse: n > 4 ? 'lt eng' : 'lt',
-    html: `<div>${lkopf('Material, Videos, Druck und Hintergrund')}<div class="inhalt">
-      <div><h2>Was Sie je Einheit zusätzlich brauchen</h2><table class="t"><tr><th>Einheit</th><th>Für das Heft</th><th>Aus dem Kurs (Toolbox)</th></tr>
-        ${d.tracks.map((e, i) => `<tr><td>E${e.nr} · ${einheit} ${z2(i + 1)}</td><td>${t(e.leitung.material)}</td><td>${t(e.leitung.blaetter)}</td></tr>`).join('')}</table></div>
-      <div><h2>${kino ? 'Videos und Film' : 'Videos'} (Links geprüft am ${esc(d.geprueft ?? kino?.geprueft ?? '14.11.2026')})</h2><table class="t"><tr><th>Wo</th><th>Titel und Kanal</th><th>Link</th><th>läuft</th></tr>
+    html: `<div>${lkopf(L('Material, Videos, Druck und Hintergrund', 'Matériel, vidéos, impression et contexte'))}<div class="inhalt">
+      <div><h2>${L('Was Sie je Einheit zusätzlich brauchen', 'Ce qu’il faut en plus pour chaque unité')}</h2><table class="t"><tr><th>${L('Einheit', 'Unité')}</th><th>${L('Für das Heft', 'Pour le magazine')}</th><th>${L('Aus dem Kurs (Toolbox)', 'Du cours (Toolbox)')}</th></tr>
+        ${d.tracks.map((e, i) => `<tr><td>${E}${e.nr} · ${einheit} ${z2(i + 1)}</td><td>${t(e.leitung.material)}</td><td>${t(e.leitung.blaetter)}</td></tr>`).join('')}</table></div>
+      <div><h2>${kino ? L('Videos und Film', 'Vidéos et film') : L('Videos', 'Vidéos')} (${L('Links geprüft am', 'liens vérifiés le')} ${esc(d.geprueft ?? kino?.geprueft ?? '14.11.2026')})</h2><table class="t"><tr><th>${L('Wo', 'Où')}</th><th>${L('Titel und Kanal', 'Titre et chaîne')}</th><th>${L('Link', 'Lien')}</th><th>${L('läuft', 'marche')}</th></tr>
         ${d.tracks.filter((e) => e.clip).map((e) => `<tr><td>${einheit} ${z2(d.tracks.indexOf(e) + 1)}</td><td>${t(e.clip!.titel)} – ${esc(e.clip!.kanal)} (${esc(e.clip!.dauer)})</td><td>${esc(kurzlink(e.clip!.url))}</td><td>☐</td></tr>`).join('')}
-        ${(kino?.filme ?? []).map((f) => `<tr><td>Kino</td><td>${t(f.titel)} (${f.jahr}, ${esc(f.laenge)}, ${f.fsk === null ? 'FSK vor dem Einsatz prüfen' : 'FSK ' + f.fsk})${f.achtung ? ' – ' + t(f.achtung) : ''}</td><td>DVD, Mediathek oder Streaming</td><td>☐</td></tr>`).join('')}</table>
-        <p class="klein" style="margin-top:1mm">Videos können verschwinden: vor jeder Einheit kurz öffnen.${kino ? ' Den Film vorher selbst ansehen und die Vorführrechte der Einrichtung beachten.' : ''}</p></div>
-      <div class="sp2"><div class="kasten"><h2>Drucken</h2><ul>${lt.druck.map((x) => `<li>${tp(x)}</li>`).join('')}</ul></div>
-        <div class="kasten g"><h2>Achtung bei dieser Ausgabe</h2><p>${t(lt.achtung)}</p></div></div>
-      <div><h2>Fachlicher Hintergrund in Kürze</h2><p>${t(lt.hintergrund)}</p><p class="klein" style="margin-top:1.5mm">${t(lt.quellen)}</p></div>
-      <p class="klein">Alle Personen und Szenen im Heft sind erfunden. Zeichnungen: Open Peeps (Pablo Stanley, CC0), Tabler Icons (MIT). Schriften: Anton, Space Grotesk (SIL Open Font License), Permanent Marker (Apache-Lizenz 2.0). ${esc(URHEBER.de)} Stand: ${esc(d.stand)}.</p>
+        ${(kino?.filme ?? []).map((f) => `<tr><td>${L('Kino', 'Cinéma')}</td><td>${t(f.titel)} (${f.jahr}, ${esc(f.laenge)}, ${f.fsk === null ? L('FSK vor dem Einsatz prüfen', 'âge à vérifier avant') : L('FSK ' + f.fsk, 'dès ' + f.fsk + ' ans (FSK)')})${f.achtung ? ' – ' + t(f.achtung) : ''}</td><td>${L('DVD, Mediathek oder Streaming', 'DVD, médiathèque ou streaming')}</td><td>☐</td></tr>`).join('')}</table>
+        <p class="klein" style="margin-top:1mm">${L('Videos können verschwinden: vor jeder Einheit kurz öffnen.', 'Les vidéos peuvent disparaître : les ouvrir avant chaque unité.')}${kino ? L(' Den Film vorher selbst ansehen und die Vorführrechte der Einrichtung beachten.', ' Regarder le film avant et respecter les droits de projection de la structure.') : ''}</p></div>
+      <div class="sp2"><div class="kasten"><h2>${L('Drucken', 'Impression')}</h2><ul>${lt.druck.map((x) => `<li>${tp(x)}</li>`).join('')}</ul></div>
+        <div class="kasten g"><h2>${L('Achtung bei dieser Ausgabe', 'Attention pour ce numéro')}</h2><p>${t(lt.achtung)}</p></div></div>
+      <div><h2>${L('Fachlicher Hintergrund in Kürze', 'Le contexte en bref')}</h2><p>${t(lt.hintergrund)}</p><p class="klein" style="margin-top:1.5mm">${t(lt.quellen)}</p></div>
+      <p class="klein">${L('Alle Personen und Szenen im Heft sind erfunden. Zeichnungen: Open Peeps (Pablo Stanley, CC0), Tabler Icons (MIT). Schriften: Anton, Space Grotesk (SIL Open Font License), Permanent Marker (Apache-Lizenz 2.0).', 'Toutes les personnes et scènes du magazine sont inventées. Dessins : Open Peeps (Pablo Stanley, CC0), Tabler Icons (MIT). Polices : Anton, Space Grotesk (SIL Open Font License), Permanent Marker (licence Apache 2.0).')} ${esc(URHEBER[sprache()])} ${L('Stand:', 'État :')} ${esc(d.stand)}.</p>
     </div></div>`,
   })
 
   const body = seiten.map((s, i) => `<section class="seite ${s.klasse ?? ''}" data-nr="${i + 1}">${s.html}${s.ohneFuss ? '' : fuss(i + 1, s.e)}</section>`).join('\n')
-  return huelle(d.datei, `REAL TALK #${d.nr} – ${d.thema}`, d.farbe, body)
+  return huelle(d.datei, `REAL TALK #${d.nr} – ${d.thema}`, d.farbe, body, 'real-talk', sprache())
 }
 
-function huelle(datei: string, titel: string, farbe: string, body: string, ordner = 'real-talk'): string {
+function huelle(datei: string, titel: string, farbe: string, body: string, ordner = 'real-talk', lang = 'de'): string {
   const schrift = (f: string) => readFileSync(join(HIER, 'schrift', f)).toString('base64')
   const face = (fam: string, w: string, f: string, range = '') => `@font-face{font-family:'${fam}';font-weight:${w};src:url(data:font/woff2;base64,${schrift(f)}) format('woff2');${range}}`
   const LAT = 'unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD'
@@ -354,7 +356,7 @@ function huelle(datei: string, titel: string, farbe: string, body: string, ordne
     face('Space Grotesk', '300 700', 'space-grotesk-latin-wght-normal.woff2', LAT), face('Space Grotesk', '300 700', 'space-grotesk-latin-ext-wght-normal.woff2', EXT),
   ].join('\n')
   const css = readFileSync(join(HIER, 'stil.css'), 'utf8')
-  return `<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="datei" content="${esc(datei)}"><meta name="ordner" content="${esc(ordner)}"><title>${esc(titel)}</title><style>${fonts}\n${css}\n:root{--a:${farbe}}</style></head><body>\n${body}\n<script>${SKRIPT}</script></body></html>`
+  return `<!doctype html><html lang="${lang}"><head><meta charset="utf-8"><meta name="datei" content="${esc(datei)}"><meta name="ordner" content="${esc(ordner)}"><title>${esc(titel)}</title><style>${fonts}\n${css}\n:root{--a:${farbe}}</style></head><body>\n${body}\n<script>${SKRIPT}</script></body></html>`
 }
 
 /** Jahresplan für die Leitung: alle Ausgaben, Videos und Filme auf drei Seiten. */
@@ -448,7 +450,9 @@ for (const id of process.argv.slice(2)) {
     html = baueSolo(mod.default, { t, esc, figur, ic, qr, kurzlink, linien, tape, frage, huelle, urheber: URHEBER.de })
   } else {
     const mod = (await import(`./inhalt/${id}.ts`)) as { default: Heft }
+    setzeSprache(/-fr$/.test(id) ? 'fr' : 'de')   // m1-fr → französische Fassung (inhalt/m1-fr.ts)
     html = baue(mod.default)
+    setzeSprache('de')
   }
   writeFileSync(join(ziel, `${id}.html`), html)
   console.log(id, '→', `aus/${id}.html`, Math.round(html.length / 1024), 'KB')
