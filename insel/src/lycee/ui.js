@@ -416,9 +416,10 @@ export function createUI({ root, input, speech }) {
    if (ersterStart) { einstSpeichern(); setTimeout(() => einstPanel(zeigeTitel), 750); } else zeigeTitel();   // nach dem Ausblenden des Ladebilds
   });
 
-  ui.ende = ({ leute, freunde = null, brief = null, staerken, entdeckt, gesamt, kap = 1, ueberschrift = 'Geschafft', weiter = '', vorschau = '', frage = '' }) => new Promise((ok) => {
+  ui.ende = ({ leute, freunde = null, brief = null, staerken, entdeckt, gesamt, kap = 1, ueberschrift = 'Geschafft', weiter = '', vorschau = '', frage = '', chronik = [] }) => new Promise((ok) => {
     const konfetti = ui.wenigBewegung ? '' : '<div class="ly-konfetti" aria-hidden="true">' + Array.from({ length: 24 }, (_, n) => '<i style="left:' + ((n * 41) % 100) + '%;--d:' + (n % 6) * 0.18 + 's;--f:' + ['#e9734a', '#2fb8a8', '#f2b134', '#5fa0d0', '#e85d75', '#8a7bc8'][n % 6] + ';--r:' + (n * 37 % 360) + 'deg"></i>').join('') + '</div>';
     const k = ebeneAuf('ende', konfetti + '<div class="ly-e-stempel">Kapitel ' + kap + ' ✓</div><h2>' + esc(ueberschrift) + '</h2>' +
+      (chronik.length ? '<div class="ly-e-chronik"><h3>Deine Woche – was du entschieden hast</h3><ul>' + chronik.map((t) => '<li>' + esc(t) + '</li>').join('') + '</ul></div>' : '') +
       (brief ? '<div class="ly-e-brief"><span class="ly-j-name" style="--f:' + esc(brief.farbe) + '">' + esc(brief.von) + '</span> schreibt dir: „' + esc(brief.text) + '“</div>' : '') + freundesKreis(freunde) + '<div class="ly-e-spalten"><section><h3>Menschen</h3><ul class="ly-j-leute">' + leute.map((l) => '<li><span class="ly-j-name" style="--f:' + esc(l.farbe) + '">' + esc(l.name) + '</span><span class="ly-herzen">' + '♥'.repeat(Math.max(0, Math.min(5, l.herz))) + '<i>' + '♥'.repeat(5 - Math.max(0, Math.min(5, l.herz))) + '</i></span></li>').join('') + '</ul></section>' +
       '<section><h3>Deine Stärken heute</h3><ul class="ly-j-staerken">' + (staerken.length ? staerken.map((s) => '<li><b>' + esc(s.name) + '</b><small>' + esc(s.text) + '</small></li>').join('') : '<li><small>Heute nix Besonderes. Passiert.</small></li>') + '</ul>' +
       '<p class="ly-leer">Entdeckt: ' + entdeckt + ' von ' + gesamt + ' Orten</p></section></div>' +

@@ -84,6 +84,7 @@ import { tunN7 } from './story/kapitel7.js';
 import { tunN8 } from './story/kapitel8.js';
 import { tunN9 } from './story/kapitel9.js';
 import { tunN10 } from './story/kapitel10.js';
+import { chronik } from './story/chronik.js';
 import { createKorbSpiel } from './korb3d.js';
 import { baerAnhaenger } from './anhaenger.js';
 import { SCHRITTE, GESPRAECHE, LEUTE, STAERKEN, BINGO, GEHEIMNISSE, SPRECHER, KAPITEL } from './geschichte.js';
@@ -1661,7 +1662,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       sichern();
       const bf = besteFreunde()[0];
       audio.play('unlock'); setTimeout(() => audio.play('chime'), 350);
-      const wahl = await ui.ende({ ...bilanz(), kap, brief: bf ? { von: LEUTE[bf].name, farbe: LEUTE[bf].farbe, text: nachricht(bf, kap) } : null, ueberschrift: ({ 1: 'Die erste Woche', 2: 'Die Liste', 3: 'Von links unten', 4: 'Die Woche vor den Ferien', 5: 'Die Admin-Woche', 6: 'Die Sprachnachricht', 7: 'Wer geblieben ist', 8: 'Nicht echt', 9: 'Haltestelle, früh', 10: 'Hinter der Kamera' })[kap] || KAPITEL[kap],
+      const woche = chronik(kap, S.merke); S.chronik = { ...(S.chronik || {}), [kap]: woche }; sichern();
+      const wahl = await ui.ende({ ...bilanz(), kap, chronik: woche, brief: bf ? { von: LEUTE[bf].name, farbe: LEUTE[bf].farbe, text: nachricht(bf, kap) } : null, ueberschrift: ({ 1: 'Die erste Woche', 2: 'Die Liste', 3: 'Von links unten', 4: 'Die Woche vor den Ferien', 5: 'Die Admin-Woche', 6: 'Die Sprachnachricht', 7: 'Wer geblieben ist', 8: 'Nicht echt', 9: 'Haltestelle, früh', 10: 'Hinter der Kamera' })[kap] || KAPITEL[kap],
         weiter: weiterIdx >= 0 ? 'Weiter: Kapitel ' + (kap + 1) + ' „' + KAPITEL[kap + 1] + '“' : '',
         // Haken fürs nächste Kapitel (kein Spoiler, nur die Frage)
         frage: (() => { const sit = Object.entries(SZENEN).find(([id]) => S.merke['sitKap_' + id] === kap && S.merke['sit_' + id]); return sit ? (REFLEXION[kap] ? REFLEXION[kap] + ' · ' : '') + 'Diese Woche: ' + sit[1].titel[1] + '. ' + sit[1].frage : REFLEXION[kap] || ''; })(), vorschau: weiterIdx >= 0 ? ({ 1: 'Eine Liste. Fünf Plätze. Wer steht drauf?', 2: 'Ein Satz über Mila. Und ein heller Streifen, unten links.',

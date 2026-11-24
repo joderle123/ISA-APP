@@ -1,0 +1,80 @@
+// „Deine Woche“: am Kapitelende die wichtigsten eigenen Entscheidungen in einfachen Sätzen – ohne Urteil.
+// Für das Gespräch in der Klasse (Lehrperson und Schüler schauen gemeinsam drauf). Wird auch im Spielstand gemerkt (S.chronik).
+const eins = (m, paare) => { for (const [f, t] of paare) if (typeof f === 'function' ? f(m) : m[f]) return t; return null; };
+
+const KAP = {
+  1: (m) => [
+    eins(m, [['abgestimmt', 'Bei der Umfrage über den Jungen aus dem Bus hast du geklickt.'], ['nichtAbgestimmt', 'Bei der Umfrage hast du nicht geklickt.']]),
+    eins(m, [['kantineNoah', 'In der Kantine hast du dich zu Noah gesetzt.'], ['kantineBen', 'In der Kantine hast du dich zu Ben und Jo gesetzt.']]),
+    eins(m, [['postKlar', 'Auf das Foto von dir hast du klar geantwortet.'], ['postWitz', 'Über das Foto von dir hast du einen Witz gemacht.'], ['postFrage', 'Zum Foto von dir hast du eine Frage gestellt.'],
+      ['postGemeldet', 'Das Foto von dir hast du gemeldet.'], ['postStumm', 'Den Chat hast du stumm geschaltet.'], ['postStill', 'Zum Foto von dir hast du nichts geschrieben.']]),
+    eins(m, [['nummerSanft', 'Der unbekannten Nummer hast du freundlich geantwortet.'], ['nummerFrage', 'Der unbekannten Nummer hast du eine Frage gestellt.'],
+      ['nummerFordernd', 'Bei der unbekannten Nummer hast du Druck gemacht.'], ['nummerBlockiert', 'Die unbekannte Nummer hast du blockiert.'], ['nummerStill', 'Der unbekannten Nummer hast du nicht geantwortet.']]),
+  ],
+  2: (m) => [
+    eins(m, [['selbstZuhoeren', 'Dario hast du gesagt, was du kannst: zuhören.'], ['selbstMerken', 'Dario hast du gesagt, was du kannst: dir Sachen merken.'],
+      ['selbstLachen', 'Dario hast du gesagt, was du kannst: Leute zum Lachen bringen.'], ['selbstOffen', 'Dario hast du gesagt: Was ich kann, weiß ich noch nicht.']]),
+    eins(m, [['listeBeiNoah', 'Als die Liste kam, bist du zu Noah gegangen.'], ['listeGelacht', 'Als die Liste kam, hast du mitgelacht.'], ['listeWeggeschaut', 'Als die Liste kam, hast du weggeschaut.']]),
+    eins(m, [['gegenlisteDabei', 'Bei Bens Gegenliste hast du mitgemacht.'], ['gegenlisteNein', 'Bens Gegenliste hast du gebremst.'], ['gegenlisteFragen', 'Du wolltest erst Noah fragen.'], ['gegenlisteNoahSuchen', 'Du bist Noah suchen gegangen.']]),
+    eins(m, [['lucaWiderspruch', 'An der Skate-Ecke hast du Luca widersprochen.'], ['lucaMitgelacht', 'An der Skate-Ecke hast du mitgelacht.'], ['lucaStehenGelassen', 'An der Skate-Ecke hast du Luca stehen lassen.']]),
+  ],
+  3: (m) => [
+    eins(m, [['zeichnungDarioGezeigt', 'Du hast Dario die Zeichnung gezeigt.'], ['zeichnungBehalten', 'Die Zeichnung hast du für dich behalten.']]),
+    eins(m, [['milaGesagt', 'Den Post über Mila hast du ihr selbst gesagt.'], ['milaKommentiert', 'Unter den Post über Mila hast du kommentiert.'], ['milaGemeldet', 'Den Post über Mila hast du gemeldet.'], ['milaNichts', 'Beim Post über Mila hast du nichts gemacht.']]),
+    eins(m, [['wahlYusuf', 'Beim Turnier hast du zuerst Yusuf gewählt.'], ['wahlBen', 'Beim Turnier hast du zuerst Ben gewählt.'], ['wahlNoah', 'Beim Turnier hast du zuerst Noah gewählt.'], ['wahlLina', 'Beim Turnier hast du zuerst Lina gewählt.']]),
+    eins(m, [['linaNachgegangen', 'Als Lina ging, bist du ihr nachgegangen.'], ['joWiderspruchLina', 'Jo hast du widersprochen: Zeichnen ist nicht fotografieren.']]),
+    eins(m, [['vorschnellLina', 'Auf Milas Wand hast du Lina verdächtigt.'], ['spurHandy', 'Mit Mila hast du festgehalten: ein Handy. Mehr wisst ihr nicht.']]),
+  ],
+  4: (m) => [
+    eins(m, [['kenanGesehen', 'Um 8:31 hast du hochgeschaut. Kenan ging am Glas vorbei.']]),
+    eins(m, [['k4BeideGeblieben', 'Auf der Treppe bist du mit Yusuf bei Noah geblieben.'], ['k4YusufGeschickt', 'Auf der Treppe bist du bei Noah geblieben. Yusuf hat Hilfe geholt.'], ['k4LenningGeholt', 'Auf der Treppe hast du Mme Lenning geholt.']]),
+    eins(m, [['k4SitzplanRuhig', 'Zu Chiaras Sitzplan hast du ruhig widersprochen.'], ['k4SitzplanLaut', 'Bei Chiaras Sitzplan bist du laut geworden.'], ['k4SitzplanWeg', 'Bei Chiaras Sitzplan bist du gegangen.']]),
+    eins(m, [['k4Explodiert', 'Bei Rot in der Kantine bist du explodiert.'], ['k4Rausgegangen', 'Bei Rot in der Kantine bist du rausgegangen.'], ['k4Geatmet', 'Bei Rot in der Kantine hast du geatmet. Ein. Und aus. Länger aus.']]),
+    eins(m, [['k4Wut', 'Auf den Screenshot hast du wütend geantwortet.'], ['k4Ruhig', 'Auf den Screenshot hast du einen ruhigen Satz geschrieben.'], ['k4Verlassen', 'Nach dem Screenshot hast du die Gruppe verlassen.'], ['k4Stumm', 'Auf den Screenshot hast du nichts geschrieben.']]),
+  ],
+  5: (m) => [
+    eins(m, [['tuerAngst', 'Vor der Tür hast du gedacht: „Alle wissen es.“'], ['tuerKlar', 'Vor der Tür hast du gedacht: „Die reden über den Screenshot. Nicht unbedingt über mich.“'], ['tuerWut', 'Vor der Tür hast du gedacht: „Die können mich alle mal.“']]),
+    eins(m, [['spurGebaut', 'Mit Mila hast du gezeigt: Der Screenshot ist gebaut.'], ['spurLowkey', 'Mit Mila hast du ein Wort gefunden: „lowkey“.']]),
+    eins(m, [['k5BenBeschuldigt', 'Ben hast du beschuldigt.'], ['k5BenGefragt', 'Ben hast du offen gefragt. Die Spur führt zur Ecke.'], ['k5BenGemieden', 'Ben bist du aus dem Weg gegangen.']]),
+    eins(m, [['k5SatzManche', 'Dein Satz für die Woche: „Manche glauben es. Nicht alle.“'], ['k5SatzWissen', 'Dein Satz für die Woche: „Ich weiß, was ich gemacht hab. Und was nicht.“'], ['k5SatzMittwoch', 'Dein Satz für die Woche: „Heute ist Mittwoch. Mehr weiß ich nicht.“']]),
+    eins(m, [['k5Kuedes', 'Du bist zu Herrn Kuedes gegangen.'], ['k5Tidderich', 'Du bist zu Mme Tidderich gegangen.'], ['k5Warten', 'Du hast mit Mila gewartet, bis ihr mehr wisst.'], ['k5Niemand', 'Du hast keinem Erwachsenen etwas gesagt.']]),
+  ],
+  6: (m) => [
+    eins(m, [['k6Datei', 'Du hast Dario gedrängt. Er hat dir die Datei geschickt.'], ['k6DarioGeschuetzt', 'Du hast Dario nicht gedrängt.']]),
+    eins(m, [['k6JoVerstanden', 'Jo hast du nachgefragt statt ausgefragt. Er hat alles erzählt.'], ['k6JoGehoert', 'Jo hat dir einen Teil erzählt.'], ['k6JoZu', 'Jo hat dichtgemacht.']]),
+    eins(m, [['k6DateiGepostet', 'Jos Sprachnachricht hast du in den Klassenchat gestellt.'], ['k6JoSelbst', 'Du hast Jo gebeten, es selbst zu schreiben.'], ['k6KuedesDatei', 'Mit der Sprachnachricht bist du zu Herrn Kuedes gegangen.'], ['k6NurMila', 'Du hast es nur Mila gesagt.']]),
+    eins(m, [['k6Stopp', 'Als Luca Mila filmte, hast du Stopp gesagt.'], ['k6Linse', 'Als Luca Mila filmte, hast du dich vor die Linse gestellt.'], ['k6Kenan', 'Als Luca Mila filmte, hast du Kenan angesprochen.'],
+      ['k6Rantini', 'Als Luca Mila filmte, hast du Mme Rantini geholt.'], ['k6Komm', 'Als Luca Mila filmte, hast du gefragt: „Komm?“'], ['k6Arm', 'Als Luca Mila filmte, hast du sie am Arm weggezogen. Ohne zu fragen.'], ['k6Weggeschaut', 'Als Luca Mila filmte, hast du weggeschaut.']]),
+    (m.k6Fuer && m.k6Fuer.length) ? 'Für dich gestimmt: ' + m.k6Fuer.map((id) => id[0].toUpperCase() + id.slice(1)).join(', ') + '. Es hat trotzdem nicht gereicht.' : 'Bei der Abstimmung hat niemand von deinen Leuten für dich gestimmt.',
+  ],
+  7: (m) => [
+    eins(m, [['k7NeinBleiben', 'Zu Lucas Angebot hast du Nein gesagt. Und bist stehen geblieben.'], ['k7Nein', 'Zu Lucas Angebot hast du Nein gesagt.'], ['k7MalSehen', 'Zu Lucas Angebot hast du „Mal sehen“ gesagt.'], ['k7Okay', 'Zu Lucas Angebot hast du „Okay“ gesagt.']]),
+    eins(m, [['k7Gesetzt', 'In der Kantine hast du dich zu Noah gesetzt.'], ['k7Tuete', 'In der Kantine hast du die Tüte weggenommen.'], ['k7Kremer', 'In der Kantine hast du Frau Kremer geholt.'], ['k7Gefilmt', 'In der Kantine hast du gefilmt.'], ['k7Sitzen', 'In der Kantine bist du sitzen geblieben.']]),
+    eins(m, [['k7YusufGehalten', 'Yusuf hast du aufgehalten.'], ['k7YusufRetenue', 'Yusuf hast du gehen lassen. Er hat eine Retenue bekommen.']]),
+    eins(m, [['spurZwei', 'Mit Mila hast du gesehen: Das sind zwei. Oder einer hat aufgehört.']]),
+    eins(m, [['k7Geteilt', 'Das Video von Mme Tidderich hast du weitergeleitet.'], ['k7NichtGeteilt', 'Das Video von Mme Tidderich hast du nicht weitergeleitet.']]),
+  ],
+  8: (m) => [
+    eins(m, [[(x) => x.k8Angesehen >= 2, 'Das Video hast du mehrmals angesehen. Dein Feed zeigte dir mehr davon.'], [(x) => x.k8Angesehen === 1, 'Das Video hast du noch einmal angesehen.'], ['k8Gemeldet', 'Das Video hast du gemeldet.']]),
+    eins(m, [['k8Fake', 'Du hast den Fake erkannt: Schrift, Ohrring, Atem.']]),
+    eins(m, [['k8Namen', 'In die Mappe hast du Namen geschrieben.'], ['k8NurBeobachtung', 'In die Mappe hast du nur geschrieben, was ihr gesehen habt.'], ['k8KeineNamen', 'In die Mappe hast du keine Namen geschrieben.']]),
+    eins(m, [['k8JoGefragt', 'Bevor Jos Sprachnachricht in die Mappe kam, hast du ihn gefragt.'], ['k8JoReingelegt', 'Jos Sprachnachricht hast du ohne zu fragen in die Mappe gelegt.'], ['k8JoWeg', 'Jos Sprachnachricht hast du weggelassen.']]),
+    eins(m, [['k8NummerGefragt', 'Die unbekannte Nummer hast du vorher gefragt.'], ['k8NummerReingelegt', 'Die Zeichnung hast du ohne zu fragen in die Mappe gelegt.'], ['k8NummerWeg', 'Die Zeichnung hast du weggelassen.']]),
+  ],
+  9: (m) => [
+    eins(m, [['k9MilaGeschrieben', 'In der Nacht hast du Mila geschrieben.']]),
+    eins(m, [['k9Versprochen', 'Dario hast du versprochen, nichts zu sagen.'], ['k9NichtVersprochen', 'Dario hast du nichts versprochen.'], ['k9Mitkommen', 'Dario hast du gesagt: „Komm mit zu Herrn Kuedes.“'], ['k9Gegangen', 'Bei Darios Geständnis bist du aufgestanden und gegangen.']]),
+    eins(m, [['k9Geklopft', 'An der Tür zum SePAS hast du für Dario geklopft.'], ['k9Gewartet', 'An der Tür zum SePAS hast du mit Dario gewartet.'], ['k9Vorgegangen', 'An der Tür zum SePAS bist du vorgegangen.']]),
+    eins(m, [['k9LucaRuhig', 'Luca gegenüber bist du ruhig geblieben.'], ['k9LucaHeiss', 'Mit Luca ist es heiß geworden.'], ['k9LucaKnall', 'Mit Luca hat es geknallt.']]),
+  ],
+  10: (m) => [
+    eins(m, [['k10Rutschen', 'An der Haltestelle hast du Dario Platz gemacht.'], ['k10HeuteNicht', 'An der Haltestelle hast du Dario gesagt: „Heute nicht.“'], ['k10Schweigen', 'An der Haltestelle hast du nichts gesagt.']]),
+    eins(m, [['k10Bote', 'Du hast für die anderen mit Dario geredet.'], ['k10KeinBote', 'Du bist nicht zum Boten geworden.']]),
+    eins(m, [['k10GruppeJa', 'Du bist wieder in den Klassenchat gegangen.'], ['k10GruppeNeu', 'Du wolltest eine neue Gruppe. Mit Ayla.'], ['k10GruppeNochNicht', 'In den Klassenchat wolltest du noch nicht zurück.']]),
+    eins(m, [['k10Angestellt', 'Du hast dich zum Löschen angestellt.']]),
+    eins(m, [['k10Teil', 'Beim Sommerfest hast du deinen Teil gesagt.'], ['k10NebenBank', 'Beim Sommerfest hast du dich neben die Bank gestellt.']]),
+    eins(m, [['k10JoNicht', 'Am Zaun hast du gesagt: „Jo. Nicht.“'], ['k10HandyGedrueckt', 'Am Zaun hast du Jos Handy runtergedrückt.'], ['k10Zaun', 'Am Zaun bist du selbst zu Luca gegangen.'], ['k10Weggedreht', 'Am Zaun hast du dich weggedreht.']]),
+  ],
+};
+
+export const chronik = (kap, m = {}) => ((KAP[kap] || (() => []))(m) || []).filter(Boolean);

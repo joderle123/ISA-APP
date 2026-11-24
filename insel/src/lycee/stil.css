@@ -1302,3 +1302,8 @@ kbd { display: inline-block; min-width: 1.5em; padding: 0 .35em; margin-right: .
 .sz-mut div { flex: 1; height: 14px; border-radius: 8px; background: #e8edf3; overflow: hidden; }
 .sz-mut i { display: block; height: 100%; width: 0; background: linear-gradient(90deg, #6fa9d6, #2b6cb0); }
 .sz .ly-d-optionen button.neu { animation: szGedRein .5s ease; }
+
+/* Kapitelende: „Deine Woche“ – eigene Entscheidungen, ohne Urteil (fürs Gespräch in der Klasse) */
+.ly-e-chronik { margin: 10px 0 12px; padding: 12px 14px; border-radius: 14px; background: rgba(95, 125, 158, .12); text-align: left; }
+.ly-e-chronik h3 { margin: 0 0 6px; font-size: 15px; }
+.ly-e-chronik ul { margin: 0; padding-left: 18px; display: grid; gap: 4px; font-size: 14.5px; line-height: 1.35; }
