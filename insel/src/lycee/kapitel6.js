@@ -58,7 +58,7 @@ export const SCHRITTE6 = [
     start: { teleport: 'halle' },
     leute: { jo: [4.6, -12.6, -2.2, 'redet'], ben: [5.6, -11.6, -1.9, 'handy'], luca: [5.4, -13.3, -1.2, 'redet'] },
     fertig: { ort: 'gangLachen', r: 2.4, gespraech: 'k6_lachen' } },
-  { id: 'k6_tafel', kap: 6, tag: 'Mittwoch', uhr: 10.4, titel: 'Drangenommen', ziel: 'Französisch bei M. Hoffmann. Setz dich.', marker: 'meinPlatz',
+  { id: 'k6_tafel', kap: 6, tag: 'Mittwoch', uhr: 10.4, titel: 'Drangenommen', ziel: 'Französisch bei Mme Tidderich. Setz dich.', marker: 'meinPlatz',
     start: { teleport: 'saal104Tuer' },
     leute: { hoffmann: [-27, -24, Math.PI / 2], ...KLASSE_SITZT },
     fertig: { ort: 'meinPlatz', r: 1.1, gespraech: 'k6_tafel' } },
@@ -105,7 +105,7 @@ export const GESPRAECHE6 = {
       { t: 'Am Tor warten, bis der Hof leer ist.', merke: 'torWarten', dann: [
         ['erzaehler', 'Es klingelt. Alle rennen rein.'],
         ['erzaehler', 'Du gehst als Letztes. Niemand schaut.'],
-        ['erzaehler', 'Zwei Minuten zu spät. M. Hoffmann sagt nichts.'] ] },
+        ['erzaehler', 'Zwei Minuten zu spät. Mme Tidderich sagt nichts.'] ] },
       { t: 'Umdrehen. Nach Hause.', merke: 'torHeim', dann: [
         ['erzaehler', 'Zuhause. Bett. Der Bauch wird sofort besser.'],
         ['erzaehler', '14 Uhr. Mila: „Wo bist du?“ Du antwortest nicht.'],
@@ -132,7 +132,7 @@ export const GESPRAECHE6 = {
     ['kaya', 'Und das hier. Eine Karte. Steht „Gleich“ drauf.'],
     ['kaya', 'Leg sie hin, wenn du drankommst und nichts geht.'],
     { wahl: [
-      { t: 'Karte nehmen.', merke: 'karte', dann: [['kaya', 'M. Hoffmann weiß Bescheid. Die anderen nicht.']] },
+      { t: 'Karte nehmen.', merke: 'karte', dann: [['kaya', 'Mme Tidderich weiß Bescheid. Die anderen nicht.']] },
       { t: '„Brauch ich nicht. Ist peinlich.“', merke: 'keineKarte', dann: [['kaya', 'Okay. Sie liegt hier, falls doch.']] },
       { t: 'Nehmen. Sofort in die Tasche.', merke: 'karte', dann: [['kaya', 'Genau da gehört sie hin.']] },
     ] },

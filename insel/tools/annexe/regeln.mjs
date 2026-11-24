@@ -22,7 +22,7 @@ const VERBOTEN = [
   ['sexuell', /(sex|nackt|titten|porno)/iu],
 ];
 // Jugendsprache (Entscheidung 18.11.: ausdrücklich erwünscht – so reden Jugendliche heute). Nur Erwachsene und Erzähler
-// sollen sie nicht benutzen; tun sie es doch, ist es ein Hinweis (kann ein gewollter Witz sein: Hoffmann versucht „Jugendsprache“).
+// sollen sie nicht benutzen; tun sie es doch, ist es ein Hinweis (kann ein gewollter Witz sein: die Klassenlehrerin versucht „Jugendsprache“).
 const SLANG = /(^|[^\p{L}])(digga|diggah|bro|brudi|bruh|cringe|wallah|vallah|yolo|sheesh|lowkey|ehrenmann|ehrenlos|lost|sus|slay|aura|sein vater|ich schwör|safe|goofy|no cap|real talk|wyld|lit|rizz)(?=$|[^\p{L}])/iu;
 const ERWACHSEN = ['hoffmann', 'weber', 'kremer', 'becker', 'sommer', 'laurent', 'kaya', 'fahrer', 'baeckerin', 'erzaehler', 'mesenberg', 'nouvelle', 'kiesser', 'sabli', 'lenning', 'rantini'];
 const THERAPIE = [

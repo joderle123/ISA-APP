@@ -46,7 +46,7 @@ export const SCHRITTE4 = [
     start: { teleport: 'halle' },
     leute: { ben: [4, -16, 1.5, 'redet'], noah: [5.4, -15.4, -1.6, 'redet'] },
     fertig: { ort: 'wc', r: 2.5, gespraech: 'portemonnaie' } },
-  { id: 'k4_hoffmann', kap: 4, tag: 'Donnerstag', uhr: 9.9, titel: 'Bleibt kurz da', ziel: 'M. Hoffmann will mit dir reden. Saal 1.04.', marker: 'hoffmann',
+  { id: 'k4_hoffmann', kap: 4, tag: 'Donnerstag', uhr: 9.9, titel: 'Bleibt kurz da', ziel: 'Mme Tidderich will mit dir reden. Saal 1.04.', marker: 'hoffmann',
     wenn: (m) => m.abgeschrieben,
     start: { teleport: 'saal104Tuer' },
     leute: { hoffmann: [-26.4, -22.6, Math.PI / 2], noah: [-25.85, -20.8, -Math.PI / 2] },
@@ -59,7 +59,7 @@ export const SCHRITTE4 = [
     start: { teleport: 'eingangHof', gespraech: 'k4_fr' },
     leute: { ben: [27.6, 18.4, 1.2, 'redet'], jo: [29.2, 18.9, -1.9, 'redet'], yusuf: [26.2, 21.4, 0.8], lina: [30.8, 21.8, -0.8], sommer: [16, 4, 0.4], mila: [-20, 11.6, Math.PI, 'sitzt'], hoffmann: [22, 14, 0.8], noah: [25, 20.6, -0.4], luca: [31.6, 19.8, -1.6] },
     fertig: { reden: 'ben', gespraech: 'streit' } },
-  { id: 'k4_ziel', kap: 4, tag: 'Freitag', uhr: 13.6, titel: 'Ein Ziel für nächste Woche', ziel: 'M. Hoffmann fragt nach euren Zielen. Sprich mit ihm.', marker: 'hoffmann',
+  { id: 'k4_ziel', kap: 4, tag: 'Freitag', uhr: 13.6, titel: 'Ein Ziel für nächste Woche', ziel: 'Mme Tidderich fragt nach euren Zielen. Sprich mit ihr.', marker: 'hoffmann',
     start: { teleport: 'saal104Tuer' },
     leute: SAAL,
     fertig: { reden: 'hoffmann', gespraech: 'ziel' } },
@@ -75,7 +75,7 @@ export const GESPRAECHE4 = {
   ],
   abschreiben: [
     ['noah', 'Hast du Mathe? Schnell, bitte.'],
-    ['noah', 'Hoffmann sammelt ein. Ich hab schon zwei Striche.'],
+    ['noah', 'Mme Tidderich sammelt ein. Ich hab schon zwei Striche.'],
     { tu: 'noahSchuld' },
     { wahl: [
       { t: '„Hier. Aber änder ein paar Sachen.“', herz: { noah: 2 }, merke: 'abgeschrieben', dann: [

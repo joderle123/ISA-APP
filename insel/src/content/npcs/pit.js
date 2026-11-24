@@ -1,6 +1,6 @@
-// Pit Hoffmann (13, Stein, moosgrün): Moorkind. Fall für den Berater, Probelauf, Ziel im Schatten-Chor: „Ich bin nicht der Witz.“
+// Pit Wagner (13, Stein, moosgrün): Moorkind. Fall für den Berater, Probelauf, Ziel im Schatten-Chor: „Ich bin nicht der Witz.“
 export default {
-  id: 'pit', name: 'Pit', surname: 'Hoffmann', age: 13, renameable: true,
+  id: 'pit', name: 'Pit', surname: 'Wagner', age: 13, renameable: true,
   icon: 'stein', color: '#6fae5a', silhouette: 'gebueckt', introducedIn: 'j1-e16',
   look: { skin: '#f3d3b6', hair: '#c96b2f', hairStyle: 'kurz', top: '#6fae5a', topStyle: 'pullover', bottoms: '#4a3a2a', bottomsStyle: 'lang', shoes: '#2a2a2a', shoesStyle: 'boots', freckles: 2, build: 0.3, height: 0.3 },
   voice: { pitch: 1.1, rate: 0.95 },

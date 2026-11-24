@@ -754,7 +754,7 @@ Höchstens 2 neue Hauptfiguren pro Modul (M0: 3 als Startcrew). Jede hat ein Ico
 | Maëlle Schmit (14, Trommel, magenta) | Trommlerin | gemischte Gefühle, Traumschiff, Postkarten |
 | Luc Reding (16, Windrad, sturmblau) | Erfinder, Sturm-Wut | von „Deckel ab“ zum Experten, der Senait sein Gadget zeigt |
 | Jhemp Weber (~65, Laterne, grau zu gold) | verschwundener Wärter | Scham und Rückzug, gefunden, Nachtüberquerung, Rückkehr |
-| Pit Hoffmann (13, Stein, moosgrün) | Moorkind | Fall für den Berater, Probelauf, Ziel im Schatten-Chor mit Verbündeten: „Ich bin nicht der Witz.“ |
+| Pit Mme Tidderich (13, Stein, moosgrün) | Moorkind | Fall für den Berater, Probelauf, Ziel im Schatten-Chor mit Verbündeten: „Ich bin nicht der Witz.“ |
 | Noor Haddad (14, Spraydose, violett) | Künstlerin | übermaltes Bild, Treppe mit Tiago, Deepfake, malt am Ende das Turmbild mit allen |
 | Oma Lucinda Tavares (~70, Gießkanne) | Gärtnerin, Faktencheck: „Gesehen oder nur gehört?“ | Zeugin, Notfall-Erwachsene |
 | Mika Thill (16, Flamme, schwarz-rot) | Chef der Vulkan-Crew | spielt den Harten wegen der älteren Asche-Crew, erleichtert, dreht sein Publikum, entschuldigt sich |

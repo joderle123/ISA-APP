@@ -133,7 +133,7 @@ Gilt für jede Zeile im Spiel. Alles ist erfunden. Wer hier etwas ändert, ände
 ## Erwachsene
 | Figur | Rolle | Macke / Running Gag | Einwurf |
 |---|---|---|---|
-| M. Hoffmann | Klassenlehrer, erstes Jahr | jede Woche eine „neue Methode“, Krawatte mit Enten | Ça va? |
+| Mme Tidderich | Klassenlehrer, erstes Jahr | jede Woche eine „neue Methode“, Krawatte mit Enten | Ça va? |
 | Mme Weber | Sekretariat | „die Uhr“: 16:00, nicht 16:05; Zettel am Automaten | Moien |
 | Frau Kremer | Kantine | „Zack, zack“, weiß, wer keine Erbsen mag | Gudden Appetit |
 | M. Becker | Werkstatt | „Zweimal messen“, krummes Brett an der Wand, Schutzbrille | Moien |

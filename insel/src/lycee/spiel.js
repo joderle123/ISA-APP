@@ -1898,7 +1898,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       if (m.portiZurueck && m.kantinengeldWeg) return [['ben', 'Hier. Zwei Euro. Diesmal echt.'], ['erzaehler', 'Er gibt sie dir. Dann fragt er nach einem Kaugummi.'], { tu: 'benZahlt' }];
       return [];
     },
-    // Kapitel 5: Hoffmann erinnert sich an den Klassenrat
+    // Kapitel 5: Mme Tidderich erinnert sich an den Klassenrat
     hoffmannGemerkt: () => (S.merke.hoffmannGestoppt ? [['hoffmann', '(im Vorbeigehen) Das mit Mila neulich. Hab’s mir gemerkt. Danke.']] : []),
     // Kapitel 5, Freitag am Bus: was von der Woche bleibt
     k5Folgen: () => {

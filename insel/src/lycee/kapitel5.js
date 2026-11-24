@@ -28,7 +28,7 @@ export const SCHRITTE5 = [
     start: { teleport: 'saal104Tuer', gespraech: 'k5_mi' },
     leute: { hoffmann: [-27, -24, Math.PI / 2], ...KLASSE_SITZT },
     fertig: { ort: 'meinPlatz', r: 1.1, gespraech: 'zuhause' } },
-  { id: 'k5_unfair', kap: 5, tag: 'Donnerstag', uhr: 8.35, titel: 'Raus!', ziel: 'Französisch bei M. Hoffmann. Setz dich.', marker: 'meinPlatz',
+  { id: 'k5_unfair', kap: 5, tag: 'Donnerstag', uhr: 8.35, titel: 'Raus!', ziel: 'Französisch bei Mme Tidderich. Setz dich.', marker: 'meinPlatz',
     start: { teleport: 'saal104Tuer' },
     leute: { hoffmann: [-27, -24, Math.PI / 2], ...KLASSE_SITZT },
     fertig: { ort: 'meinPlatz', r: 1.1, gespraech: 'unfair' } },
@@ -142,7 +142,7 @@ export const GESPRAECHE5 = {
     ['erzaehler', 'Jo schaut in sein Heft. Ganz brav.'],
     ['stolz', 'Das war JO. Sag das. Jetzt.'],
     ['bauch', 'Heiß im Gesicht. Alle gucken.'],
-    ['kopf', 'Hoffmann hat sich schon entschieden. Später ist besser.'],
+    ['kopf', 'Mme Tidderich hat sich schon entschieden. Später ist besser.'],
     { wahl: [
       { t: '„Ich war’s nicht! Echt jetzt!“', herz: { hoffmann: -1 }, merke: 'laut', dann: [
         ['hoffmann', 'Diskutieren kannst du draußen. Raus.'],
@@ -153,7 +153,7 @@ export const GESPRAECHE5 = {
       { t: '(Aufstehen. Rausgehen. Nichts sagen.)', staerke: 'ruhig', herz: { jo: 1 }, merke: 'schuldGeschluckt', dann: [
         ['erzaehler', 'Zehn Minuten im Gang. An der Wand. Spinde zählen.'] ] },
       { t: '„Klar. Ich lach ja auch so laut.“', herz: { hoffmann: -1, ayla: 1 }, merke: 'sarkasmus', dann: [
-        ['erzaehler', 'Ein paar lachen. Hoffmann nicht.'],
+        ['erzaehler', 'Ein paar lachen. Mme Tidderich nicht.'],
         ['hoffmann', 'Jetzt erst recht. Raus.'] ] },
       { t: '„Kann ich nach der Stunde was sagen?“', staerke: 'klar', merke: 'nachDerStunde', dann: [
         ['hoffmann', '… Okay. Aber jetzt raus.'] ] },

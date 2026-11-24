@@ -52,7 +52,7 @@ Format: **[Sprecher]** Text · Antworten als „→“. Zeilennummer in Klammern
 - **[Kenan]** … und Becker sagt: Zweimal messen. Ich so: Hab ich doch. <sub>(172)</sub>
 - → „Darf ich mal durch?“ <sub>(174)</sub>
 - **[Dario]** Oh. Klar. Sorry. <sub>(175)</sub>
-- **[Kenan]** Neu? Hoffmann ist okay. Nur seine Krawatten nicht. <sub>(176)</sub>
+- **[Kenan]** Neu? Mme Tidderich ist okay. Nur seine Krawatten nicht. <sub>(176)</sub>
 - → (Einfach durchdrängeln.) <sub>(177)</sub>
 - **[Kenan]** Ey! Geht’s noch? <sub>(178)</sub>
 - **[Dario]** Lass. Erster Tag. <sub>(179)</sub>
@@ -64,24 +64,24 @@ Format: **[Sprecher]** Text · Antworten als „→“. Zeilennummer in Klammern
 
 ### hoffmann1
 
-- **[Hoffmann]** Guten Morgen! Du bist … (sucht auf der Liste) … {name}! <sub>(188)</sub>
-- **[Hoffmann]** M. Hoffmann. Klassenlehrer. Und heute: mit Methode. <sub>(190)</sub>
-- **[Hoffmann]** Neue Methode: Klassen-Bingo! Vier Felder. Rumfragen! <sub>(191)</sub>
+- **[Mme Tidderich]** Guten Morgen! Du bist … (sucht auf der Liste) … {name}! <sub>(188)</sub>
+- **[Mme Tidderich]** Mme Tidderich. Klassenlehrer. Und heute: mit Methode. <sub>(190)</sub>
+- **[Mme Tidderich]** Neue Methode: Klassen-Bingo! Vier Felder. Rumfragen! <sub>(191)</sub>
 - **[Erzähler]** Die ganze Klasse stöhnt. Jo stöhnt mit Echo. <sub>(192)</sub>
 - → Okay. <sub>(194)</sub>
 - → „Muss das sein?“ <sub>(195)</sub>
 - **[Jo]** Danke. Endlich sagt’s wer. <sub>(196)</sub>
-- **[Hoffmann]** Muss nicht. Darf. Und du liest die Felder vor. Laut. <sub>(197)</sub>
+- **[Mme Tidderich]** Muss nicht. Darf. Und du liest die Felder vor. Laut. <sub>(197)</sub>
 - **[Erzähler]** Alle gucken. Du liest. Deine Stimme klingt fremd. <sub>(198)</sub>
 - → „Muss ich was über mich erzählen?“ <sub>(199)</sub>
-- **[Hoffmann]** Nein. Fragen reicht. <sub>(200)</sub>
+- **[Mme Tidderich]** Nein. Fragen reicht. <sub>(200)</sub>
 - **[Jo]** (äfft nach) „Muss ich was erzählen?“ <sub>(201)</sub>
-- **[Hoffmann]** Jo. Du fängst an. <sub>(202)</sub>
+- **[Mme Tidderich]** Jo. Du fängst an. <sub>(202)</sub>
 
 ### bingoFertig
 
-- **[Hoffmann]** Bingo! Schneller als die 7P1. Das schreib ich an die Tafel. <sub>(207)</sub>
-- **[Hoffmann]** Pause. Und die Methode hat funktioniert. Notiert. <sub>(208)</sub>
+- **[Mme Tidderich]** Bingo! Schneller als die 7P1. Das schreib ich an die Tafel. <sub>(207)</sub>
+- **[Mme Tidderich]** Pause. Und die Methode hat funktioniert. Notiert. <sub>(208)</sub>
 
 ### bingo_ayla
 
@@ -208,7 +208,7 @@ Format: **[Sprecher]** Text · Antworten als „→“. Zeilennummer in Klammern
 
 ### gruppe
 
-- **[Hoffmann]** Neue Methode: Plakat „Unsere Schule“. Ihr drei. 20 Minuten! <sub>(313)</sub>
+- **[Mme Tidderich]** Neue Methode: Plakat „Unsere Schule“. Ihr drei. 20 Minuten! <sub>(313)</sub>
 - **[Jo]** Ich mal das Gebäude. Ihr malt aus. Allez, fertig. <sub>(314)</sub>
 - **[Erzähler]** Lina schiebt dir einen Zettel rüber. <sub>(315)</sub>
 - **[Erzähler]** Darauf steht: „Orte, wo einen keiner nervt?“ <sub>(316)</sub>
@@ -225,7 +225,7 @@ Format: **[Sprecher]** Text · Antworten als „→“. Zeilennummer in Klammern
 - **[Erzähler]** Jo malt das Gebäude. Riesig. <sub>(328)</sub>
 - → (Jo machen lassen. Handy unterm Tisch.) <sub>(329)</sub>
 - **[Erzähler]** 18 Minuten Ruhe. Jo malt. Lina malt aus. Du scrollst. <sub>(330)</sub>
-- **[Hoffmann]** Zeit! Zeigt mal her. <sub>(333)</sub>
+- **[Mme Tidderich]** Zeit! Zeigt mal her. <sub>(333)</sub>
 
 ### heimweg
 
@@ -318,7 +318,7 @@ Format: **[Sprecher]** Text · Antworten als „→“. Zeilennummer in Klammern
 - → „Dann erklär lieber. Ist billiger.“ <sub>(143)</sub>
 - **[Chiara]** (lacht kurz) Okay. Fünf Minuten. <sub>(144)</sub>
 - → „Mathe ist eh für nix gut.“ (Heft zu) <sub>(146)</sub>
-- **[Chiara]** Sag das Hoffmann am Freitag. <sub>(147)</sub>
+- **[Chiara]** Sag das Mme Tidderich am Freitag. <sub>(147)</sub>
 - **[Erzähler]** Du spielst auf dem Handy. Die Pause ist schnell weg. <sub>(148)</sub>
 
 ### ag
@@ -404,7 +404,7 @@ Format: **[Sprecher]** Text · Antworten als „→“. Zeilennummer in Klammern
 - **[Mila]** (leise) Ein Foto. Im Chat. Von mir. <sub>(236)</sub>
 - → „Mila, sag du.“ <sub>(236)</sub>
 - **[Kaya]** Okay. Ich sag euch gleich, wie das läuft. <sub>(239)</sub>
-- **[Kaya]** Das muss ich M. Hoffmann sagen. Nicht nur hier drin. <sub>(240)</sub>
+- **[Kaya]** Das muss ich Mme Tidderich sagen. Nicht nur hier drin. <sub>(240)</sub>
 - **[Mila]** Dann weiß Jo, dass wir’s waren. <sub>(241)</sub>
 - **[Kaya]** Kann sein. Das kann ich nicht verhindern. <sub>(242)</sub>
 - **[Kaya]** Wer hat es geschickt? <sub>(243)</sub>
@@ -422,51 +422,51 @@ Format: **[Sprecher]** Text · Antworten als „→“. Zeilennummer in Klammern
 
 ### test
 
-- **[Hoffmann]** Neue Methode: ein Test. Kennt ihr schon. Handys weg. <sub>(260)</sub>
+- **[Mme Tidderich]** Neue Methode: ein Test. Kennt ihr schon. Handys weg. <sub>(260)</sub>
 - **[Erzähler]** Deine Hände sind kalt. Aufgabe 3: Brüche. <sub>(261)</sub>
 - **[Erzähler]** Chiaras Blatt liegt offen. Sie ist schon bei Aufgabe 4. <sub>(262)</sub>
 - **[Erzähler]** An der Decke klebt ein Kaugummi. Seit Jahren, schätzt du. <sub>(264)</sub>
 - → (Stift hinlegen. Decke anstarren.) <sub>(264)</sub>
 - → (Zu Chiara rüberschauen.) <sub>(265)</sub>
 - **[Erzähler]** Drei Viertel. Du schreibst es hin. <sub>(266)</sub>
-- **[Hoffmann]** {name}. Augen auf dein Blatt. <sub>(267)</sub>
+- **[Mme Tidderich]** {name}. Augen auf dein Blatt. <sub>(267)</sub>
 - **[Erzähler]** Ab jetzt steht er hinter dir. Bis zum Schluss. <sub>(268)</sub>
 - → (Noah zuflüstern: „Aufgabe 3?“) <sub>(269)</sub>
 - **[Noah]** (flüstert) Keine Ahnung. Echt. <sub>(270)</sub>
-- **[Hoffmann]** Ihr zwei. Noch ein Wort, dann null Punkte. <sub>(271)</sub>
+- **[Mme Tidderich]** Ihr zwei. Noch ein Wort, dann null Punkte. <sub>(271)</sub>
 - **[Erzähler]** Aufgabe 1 kennst du. Dann 2. <sub>(272)</sub>
 - → (Mit der leichten anfangen.) <sub>(272)</sub>
-- **[Hoffmann]** Zeit. Ihr bekommt ihn Montag zurück. <sub>(275)</sub>
+- **[Mme Tidderich]** Zeit. Ihr bekommt ihn Montag zurück. <sub>(275)</sub>
 
 ### klassenrat
 
-- **[Hoffmann]** Klassenrat. Erster Punkt: der Klassenchat. <sub>(279)</sub>
+- **[Mme Tidderich]** Klassenrat. Erster Punkt: der Klassenchat. <sub>(279)</sub>
 - **[Erzähler]** Alle schauen zu Mila. Dann zu Jo. <sub>(280)</sub>
-- **[Hoffmann]** Mila. Willst du was sagen? Musst du nicht. <sub>(281)</sub>
+- **[Mme Tidderich]** Mila. Willst du was sagen? Musst du nicht. <sub>(281)</sub>
 - **[Erzähler]** Mila wird rot. Sie sagt nichts. <sub>(282)</sub>
 - → „Muss sie das jetzt vor allen sagen?“ <sub>(284)</sub>
-- **[Hoffmann]** (Pause) … Nein. Muss sie nicht. <sub>(285)</sub>
-- **[Hoffmann]** Dann anders: Was soll im Chat gelten? <sub>(286)</sub>
+- **[Mme Tidderich]** (Pause) … Nein. Muss sie nicht. <sub>(285)</sub>
+- **[Mme Tidderich]** Dann anders: Was soll im Chat gelten? <sub>(286)</sub>
 - → (Auf den Tisch schauen. Abwarten.) <sub>(287)</sub>
 - **[Erzähler]** Zehn lange Sekunden. <sub>(288)</sub>
 - **[Mila]** (leise) War halt nicht so schön. <sub>(289)</sub>
-- **[Hoffmann]** Danke. Was soll im Chat gelten? <sub>(290)</sub>
+- **[Mme Tidderich]** Danke. Was soll im Chat gelten? <sub>(290)</sub>
 - → „Nächster Punkt: die Kantinen-Nudeln.“ <sub>(291)</sub>
 - **[Erzähler]** Die halbe Klasse lacht. Mila atmet aus. <sub>(292)</sub>
-- **[Hoffmann]** {name}. Bitte. <sub>(293)</sub>
-- **[Hoffmann]** … Gut. Was soll im Chat gelten? <sub>(294)</sub>
+- **[Mme Tidderich]** {name}. Bitte. <sub>(293)</sub>
+- **[Mme Tidderich]** … Gut. Was soll im Chat gelten? <sub>(294)</sub>
 - **[Jo]** Ist doch nur ein Chat. Da schickt jeder Zeug. <sub>(296)</sub>
 - → „Dann schick ich mal eins von dir.“ <sub>(298)</sub>
 - **[Ben]** Uuuh. <sub>(299)</sub>
 - **[Jo]** Mach doch. <sub>(299)</sub>
-- **[Hoffmann]** Stopp. Beide. <sub>(299)</sub>
+- **[Mme Tidderich]** Stopp. Beide. <sub>(299)</sub>
 - → „Neue Regel: Jo darf nur Fotos von Jo schicken.“ <sub>(300)</sub>
 - **[Jo]** Oh Mann. Streberalarm. <sub>(301)</sub>
 - **[Ayla]** Nee. Ich bin dafür. <sub>(301)</sub>
-- → (Nichts sagen. Soll Hoffmann machen.) <sub>(302)</sub>
-- **[Hoffmann]** Dann schlag ich was vor: Fotos nur mit Ja. <sub>(303)</sub>
+- → (Nichts sagen. Soll Mme Tidderich machen.) <sub>(302)</sub>
+- **[Mme Tidderich]** Dann schlag ich was vor: Fotos nur mit Ja. <sub>(303)</sub>
 - **[Jo]** (verdreht die Augen) <sub>(303)</sub>
-- **[Hoffmann]** Abstimmung. Hände hoch. <sub>(305)</sub>
+- **[Mme Tidderich]** Abstimmung. Hände hoch. <sub>(305)</sub>
 - **[Erzähler]** Fast alle Hände. Jo hebt seine als Letzter. Halb. <sub>(306)</sub>
 
 ### woche
@@ -524,7 +524,7 @@ Format: **[Sprecher]** Text · Antworten als „→“. Zeilennummer in Klammern
 ### spaet
 
 - **[Erzähler]** Du klopfst. Alle schauen. Noah steht hinter dir. <sub>(77)</sub>
-- **[Hoffmann]** Neue Methode: Schnuppertag! Werkstatt, bei Meister Becker. Viel Glück. <sub>(79)</sub>
+- **[Mme Tidderich]** Neue Methode: Schnuppertag! Werkstatt, bei Meister Becker. Viel Glück. <sub>(79)</sub>
 
 ### regeln
 
@@ -607,23 +607,23 @@ Format: **[Sprecher]** Text · Antworten als „→“. Zeilennummer in Klammern
 - **[Dario]** Ach. Machst du das schon länger? <sub>(151)</sub>
 - → „Ich steh nur. Raucht ihr mal.“ <sub>(152)</sub>
 - **[Kenan]** Okay. Auch gut. <sub>(153)</sub>
-- **[Erzähler]** M. Hoffmann kommt über den Hof. Gelbe Weste. Aufsicht. <sub>(155)</sub>
+- **[Erzähler]** Mme Tidderich kommt über den Hof. Gelbe Weste. Aufsicht. <sub>(155)</sub>
 - **[Dario]** Mist. <sub>(156)</sub>
 - **[Erzähler]** Kenan wirft seine Kippe. Sie landet vor deinen Füßen. <sub>(157)</sub>
-- **[Hoffmann]** So. Wem gehört die? <sub>(158)</sub>
+- **[Mme Tidderich]** So. Wem gehört die? <sub>(158)</sub>
 - → „Mir nicht.“ (Schulterzucken) <sub>(160)</sub>
-- **[Hoffmann]** Aha. Vom Himmel gefallen. <sub>(161)</sub>
-- **[Hoffmann]** Alle drei: Namen. Ich red mit den Klassenlehrern. <sub>(162)</sub>
-- **[Hoffmann]** Bei dir … also mit mir. Toll. <sub>(163)</sub>
+- **[Mme Tidderich]** Aha. Vom Himmel gefallen. <sub>(161)</sub>
+- **[Mme Tidderich]** Alle drei: Namen. Ich red mit den Klassenlehrern. <sub>(162)</sub>
+- **[Mme Tidderich]** Bei dir … also mit mir. Toll. <sub>(163)</sub>
 - → „Die ist von Kenan.“ <sub>(164)</sub>
 - **[Kenan]** (starrt dich an) Wow. <sub>(165)</sub>
-- **[Hoffmann]** Kenan, mitkommen. {name}, rein mit dir. <sub>(166)</sub>
+- **[Mme Tidderich]** Kenan, mitkommen. {name}, rein mit dir. <sub>(166)</sub>
 - → „Meine.“ (Aufheben. Austreten.) <sub>(167)</sub>
-- **[Hoffmann]** Deine. Klar. <sub>(168)</sub>
-- **[Hoffmann]** Eintrag. Und ein Brief nach Hause. <sub>(169)</sub>
+- **[Mme Tidderich]** Deine. Klar. <sub>(168)</sub>
+- **[Mme Tidderich]** Eintrag. Und ein Brief nach Hause. <sub>(169)</sub>
 - **[Kenan]** (leise) Was machst du denn? <sub>(170)</sub>
 - → (Weggehen. Schnell. Nicht rennen.) <sub>(171)</sub>
-- **[Hoffmann]** {name}! Hiergeblieben! <sub>(172)</sub>
+- **[Mme Tidderich]** {name}! Hiergeblieben! <sub>(172)</sub>
 - **[Erzähler]** Zu spät. Du bist schon drinnen. <sub>(173)</sub>
 
 ### k3_ende
@@ -660,7 +660,7 @@ Format: **[Sprecher]** Text · Antworten als „→“. Zeilennummer in Klammern
 ### abschreiben
 
 - **[Noah]** Hast du Mathe? Schnell, bitte. <sub>(77)</sub>
-- **[Noah]** Hoffmann sammelt ein. Ich hab schon zwei Striche. <sub>(78)</sub>
+- **[Noah]** Mme Tidderich sammelt ein. Ich hab schon zwei Striche. <sub>(78)</sub>
 - → „Hier. Aber änder ein paar Sachen.“ <sub>(81)</sub>
 - **[Noah]** Danke. Du rettest mich. <sub>(82)</sub>
 - **[Erzähler]** Er ändert nichts. Keine Zeit. <sub>(83)</sub>
@@ -830,20 +830,20 @@ Format: **[Sprecher]** Text · Antworten als „→“. Zeilennummer in Klammern
 
 ### ziel
 
-- **[Hoffmann]** Neue Methode: das Wochenziel. Eins. Klein. Kein Aufsatz. <sub>(267)</sub>
-- **[Hoffmann]** {name}? Was nimmst du dir vor? Kein Weltfrieden. <sub>(268)</sub>
-- **[Hoffmann]** Notiert. Ich frag Freitag nach. <sub>(270)</sub>
+- **[Mme Tidderich]** Neue Methode: das Wochenziel. Eins. Klein. Kein Aufsatz. <sub>(267)</sub>
+- **[Mme Tidderich]** {name}? Was nimmst du dir vor? Kein Weltfrieden. <sub>(268)</sub>
+- **[Mme Tidderich]** Notiert. Ich frag Freitag nach. <sub>(270)</sub>
 - → Einmal im Unterricht etwas fragen. <sub>(270)</sub>
-- **[Hoffmann]** Notiert. Mutig. Sie zählt jede Portion. <sub>(271)</sub>
+- **[Mme Tidderich]** Notiert. Mutig. Sie zählt jede Portion. <sub>(271)</sub>
 - → Frau Kremer nach Nachschlag fragen. <sub>(271)</sub>
-- **[Hoffmann]** Der 7:35 wartet nicht. Frau Weber auch nicht. <sub>(272)</sub>
+- **[Mme Tidderich]** Der 7:35 wartet nicht. Frau Weber auch nicht. <sub>(272)</sub>
 - → Jeden Tag pünktlich am Bus sein. <sub>(272)</sub>
-- **[Hoffmann]** Mme Laurent freut sich. <sub>(273)</sub>
+- **[Mme Tidderich]** Mme Laurent freut sich. <sub>(273)</sub>
 - → Donnerstags in den Hausaufgaben-Club. <sub>(273)</sub>
-- **[Hoffmann]** (kurzes Lachen) Ehrlich. Nehm ich auch. <sub>(274)</sub>
+- **[Mme Tidderich]** (kurzes Lachen) Ehrlich. Nehm ich auch. <sub>(274)</sub>
 - **[Jo]** Gleiches Ziel. <sub>(274)</sub>
 - → „Weiß nicht. Die Woche überleben.“ <sub>(274)</sub>
-- **[Hoffmann]** Ich schreibe es auf. Nächste Woche schauen wir, wie es lief. <sub>(276)</sub>
+- **[Mme Tidderich]** Ich schreibe es auf. Nächste Woche schauen wir, wie es lief. <sub>(276)</sub>
 
 ### k4_ende
 
@@ -924,53 +924,53 @@ Format: **[Sprecher]** Text · Antworten als „→“. Zeilennummer in Klammern
 
 ### zuhause
 
-- **[Hoffmann]** Ça va? Hausaufgaben auf den Tisch. Ich komm rum. <sub>(106)</sub>
-- **[Hoffmann]** {name}? <sub>(107)</sub>
+- **[Mme Tidderich]** Ça va? Hausaufgaben auf den Tisch. Ich komm rum. <sub>(106)</sub>
+- **[Mme Tidderich]** {name}? <sub>(107)</sub>
 - → „Vergessen.“ <sub>(109)</sub>
-- **[Hoffmann]** Schon wieder. Zettel nach Hause. Unterschrieben zurück. <sub>(110)</sub>
+- **[Mme Tidderich]** Schon wieder. Zettel nach Hause. Unterschrieben zurück. <sub>(110)</sub>
 - → „Zuhause war Stress.“ <sub>(111)</sub>
 - **[Erzähler]** Hinter dir wird es still. Ben dreht sich um. <sub>(112)</sub>
-- **[Hoffmann]** (leiser) Okay. Nach der Stunde kurz? <sub>(113)</sub>
-- **[Hoffmann]** Okay. Dann bis Freitag nachreichen. <sub>(115)</sub>
+- **[Mme Tidderich]** (leiser) Okay. Nach der Stunde kurz? <sub>(113)</sub>
+- **[Mme Tidderich]** Okay. Dann bis Freitag nachreichen. <sub>(115)</sub>
 - → „Nee. Passt schon.“ <sub>(115)</sub>
 - → (Nicken.) <sub>(116)</sub>
 - → „Liegt zuhause. Auf dem Tisch.“ <sub>(118)</sub>
-- **[Hoffmann]** Dann morgen. Ohne Ausrede. <sub>(119)</sub>
+- **[Mme Tidderich]** Dann morgen. Ohne Ausrede. <sub>(119)</sub>
 - **[Erzähler]** Heute Abend also: alte Aufgaben plus neue. <sub>(120)</sub>
 - → (Kopf auf den Tisch. Nichts sagen.) <sub>(121)</sub>
-- **[Hoffmann]** {name}. Hallo. Ich red mit dir. <sub>(122)</sub>
+- **[Mme Tidderich]** {name}. Hallo. Ich red mit dir. <sub>(122)</sub>
 - **[Jo]** Schläft. (Gelächter) <sub>(123)</sub>
 - → „Lass mich einfach.“ <sub>(125)</sub>
-- **[Hoffmann]** Ton. Nach der Stunde bleibst du da. <sub>(126)</sub>
+- **[Mme Tidderich]** Ton. Nach der Stunde bleibst du da. <sub>(126)</sub>
 - → „Sorry. Bin echt müde.“ <sub>(127)</sub>
-- **[Hoffmann]** Seh ich. Geh Wasser holen. Dann zurück. <sub>(128)</sub>
+- **[Mme Tidderich]** Seh ich. Geh Wasser holen. Dann zurück. <sub>(128)</sub>
 - → „Halt die Klappe, Jo.“ <sub>(129)</sub>
 - **[Jo]** Oh, wach. <sub>(130)</sub>
-- **[Hoffmann]** Beide. Ruhe. Jetzt. <sub>(130)</sub>
+- **[Mme Tidderich]** Beide. Ruhe. Jetzt. <sub>(130)</sub>
 
 ### unfair
 
-- **[Hoffmann]** (schreibt an die Tafel) Passé composé. Zum dritten Mal. <sub>(138)</sub>
+- **[Mme Tidderich]** (schreibt an die Tafel) Passé composé. Zum dritten Mal. <sub>(138)</sub>
 - **[Erzähler]** Ein Papierball fliegt. Von Jo. Trifft die Tafel. <sub>(139)</sub>
 - **[Erzähler]** Ayla prustet. Du auch. Kurz. <sub>(140)</sub>
-- **[Hoffmann]** (dreht sich um) {name}. Das reicht. Raus. <sub>(141)</sub>
+- **[Mme Tidderich]** (dreht sich um) {name}. Das reicht. Raus. <sub>(141)</sub>
 - **[Erzähler]** Jo schaut in sein Heft. Ganz brav. <sub>(142)</sub>
 - **[Stolz]** Das war JO. Sag das. Jetzt. <sub>(143)</sub>
 - **[Bauch]** Heiß im Gesicht. Alle gucken. <sub>(144)</sub>
-- **[Kopf]** Hoffmann hat sich schon entschieden. Später ist besser. <sub>(145)</sub>
+- **[Kopf]** Mme Tidderich hat sich schon entschieden. Später ist besser. <sub>(145)</sub>
 - → „Ich war’s nicht! Echt jetzt!“ <sub>(147)</sub>
-- **[Hoffmann]** Diskutieren kannst du draußen. Raus. <sub>(148)</sub>
+- **[Mme Tidderich]** Diskutieren kannst du draußen. Raus. <sub>(148)</sub>
 - **[Erzähler]** Die Tür knallt. Lauter als gewollt. <sub>(149)</sub>
 - → „Das war Jo.“ <sub>(150)</sub>
 - **[Jo]** Spinnst du? Beweis das. <sub>(151)</sub>
-- **[Hoffmann]** Ich hab gesehen, wer lacht. Raus. <sub>(152)</sub>
+- **[Mme Tidderich]** Ich hab gesehen, wer lacht. Raus. <sub>(152)</sub>
 - → (Aufstehen. Rausgehen. Nichts sagen.) <sub>(153)</sub>
 - **[Erzähler]** Zehn Minuten im Gang. An der Wand. Spinde zählen. <sub>(154)</sub>
 - → „Klar. Ich lach ja auch so laut.“ <sub>(155)</sub>
-- **[Erzähler]** Ein paar lachen. Hoffmann nicht. <sub>(156)</sub>
-- **[Hoffmann]** Jetzt erst recht. Raus. <sub>(157)</sub>
+- **[Erzähler]** Ein paar lachen. Mme Tidderich nicht. <sub>(156)</sub>
+- **[Mme Tidderich]** Jetzt erst recht. Raus. <sub>(157)</sub>
 - → „Kann ich nach der Stunde was sagen?“ <sub>(158)</sub>
-- **[Hoffmann]** … Okay. Aber jetzt raus. <sub>(159)</sub>
+- **[Mme Tidderich]** … Okay. Aber jetzt raus. <sub>(159)</sub>
 
 ### k5_ende
 
@@ -1005,7 +1005,7 @@ Format: **[Sprecher]** Text · Antworten als „→“. Zeilennummer in Klammern
 - → Am Tor warten, bis der Hof leer ist. <sub>(105)</sub>
 - **[Erzähler]** Es klingelt. Alle rennen rein. <sub>(106)</sub>
 - **[Erzähler]** Du gehst als Letztes. Niemand schaut. <sub>(107)</sub>
-- **[Erzähler]** Zwei Minuten zu spät. M. Hoffmann sagt nichts. <sub>(108)</sub>
+- **[Erzähler]** Zwei Minuten zu spät. Mme Tidderich sagt nichts. <sub>(108)</sub>
 - → Umdrehen. Nach Hause. <sub>(109)</sub>
 - **[Erzähler]** Zuhause. Bett. Der Bauch wird sofort besser. <sub>(110)</sub>
 - **[Erzähler]** 14 Uhr. Mila: „Wo bist du?“ Du antwortest nicht. <sub>(111)</sub>
@@ -1030,7 +1030,7 @@ Format: **[Sprecher]** Text · Antworten als „→“. Zeilennummer in Klammern
 - **[Kaya]** Geht gar nicht? Dann kleinere Stufe. Kein Drama. <sub>(130)</sub>
 - **[Kaya]** Und das hier. Eine Karte. Steht „Gleich“ drauf. <sub>(132)</sub>
 - **[Kaya]** Leg sie hin, wenn du drankommst und nichts geht. <sub>(133)</sub>
-- **[Kaya]** M. Hoffmann weiß Bescheid. Die anderen nicht. <sub>(135)</sub>
+- **[Kaya]** Mme Tidderich weiß Bescheid. Die anderen nicht. <sub>(135)</sub>
 - → Karte nehmen. <sub>(135)</sub>
 - **[Kaya]** Okay. Sie liegt hier, falls doch. <sub>(136)</sub>
 - → „Brauch ich nicht. Ist peinlich.“ <sub>(136)</sub>
@@ -1078,48 +1078,48 @@ Format: **[Sprecher]** Text · Antworten als „→“. Zeilennummer in Klammern
 
 ### k6_tafel
 
-- **[Hoffmann]** Seite 34. Wer liest Nummer drei? <sub>(188)</sub>
+- **[Mme Tidderich]** Seite 34. Wer liest Nummer drei? <sub>(188)</sub>
 - **[Erzähler]** Keiner meldet sich. <sub>(189)</sub>
-- **[Hoffmann]** {name}. Du. <sub>(190)</sub>
+- **[Mme Tidderich]** {name}. Du. <sub>(190)</sub>
 - **[Erzähler]** Alle drehen sich um. Der Kopf ist leer. <sub>(191)</sub>
 - **[Erzähler]** Das Herz klopft bis in die Ohren. <sub>(192)</sub>
 - → (Nichts sagen. Auf den Tisch starren.) <sub>(194)</sub>
 - **[Erzähler]** Fünf Sekunden. Sehr lange Sekunden. <sub>(195)</sub>
-- **[Hoffmann]** … Okay. Ayla? <sub>(196)</sub>
+- **[Mme Tidderich]** … Okay. Ayla? <sub>(196)</sub>
 - **[Ben]** (flüstert) Roboter. <sub>(197)</sub>
 - **[Erzähler]** Ayla liest. Langsam wird dein Gesicht wieder kühl. <sub>(198)</sub>
 - → „Gleich. Ich brauch kurz.“ <sub>(199)</sub>
-- **[Hoffmann]** Okay. Ich komm zu dir zurück. <sub>(200)</sub>
+- **[Mme Tidderich]** Okay. Ich komm zu dir zurück. <sub>(200)</sub>
 - **[Bauch]** Super. Jetzt wartest du die ganze Stunde darauf. <sub>(201)</sub>
 - **[Erzähler]** Zehn Minuten später. <sub>(202)</sub>
-- **[Hoffmann]** {name}? Nur der erste Satz. <sub>(203)</sub>
+- **[Mme Tidderich]** {name}? Nur der erste Satz. <sub>(203)</sub>
 - → Den ersten Satz lesen. <sub>(205)</sub>
 - **[Erzähler]** „Je m’appelle Léa et j’ai treize ans.“ <sub>(206)</sub>
-- **[Hoffmann]** Danke. <sub>(207)</sub>
+- **[Mme Tidderich]** Danke. <sub>(207)</sub>
 - **[Erzähler]** Das war’s. Fünf Sekunden. <sub>(208)</sub>
-- **[Hoffmann]** Okay. Nächstes Mal. <sub>(209)</sub>
+- **[Mme Tidderich]** Okay. Nächstes Mal. <sub>(209)</sub>
 - → Kopf schütteln. <sub>(209)</sub>
 - → „Keine Ahnung.“ <sub>(211)</sub>
-- **[Hoffmann]** Doch. Steht da. Lies einfach. <sub>(212)</sub>
+- **[Mme Tidderich]** Doch. Steht da. Lies einfach. <sub>(212)</sub>
 - **[Erzähler]** Du liest. Zu leise. Zu schnell. <sub>(213)</sub>
 - **[Jo]** (kichert) <sub>(214)</sub>
-- **[Hoffmann]** Danke. War richtig. <sub>(215)</sub>
+- **[Mme Tidderich]** Danke. War richtig. <sub>(215)</sub>
 - **[Erzähler]** Richtig. Und trotzdem brennen die Ohren. <sub>(216)</sub>
 - → „Darf ich aufs Klo?“ <sub>(217)</sub>
-- **[Hoffmann]** … Geh. <sub>(218)</sub>
+- **[Mme Tidderich]** … Geh. <sub>(218)</sub>
 - **[Erzähler]** Auf dem Klo ist es still. Zwölf Minuten. <sub>(219)</sub>
 - **[Erzähler]** Zurück. Die Stunde ist fast rum. <sub>(220)</sub>
 - **[Bauch]** Geschafft. Fürs Erste. <sub>(221)</sub>
 - **[Erzähler]** Morgen ist wieder Französisch. <sub>(222)</sub>
 - → (Die „Gleich“-Karte hinlegen.) <sub>(223)</sub>
-- **[Hoffmann]** (nickt) Ich komm später zu dir. <sub>(224)</sub>
+- **[Mme Tidderich]** (nickt) Ich komm später zu dir. <sub>(224)</sub>
 - **[Erzähler]** Jo hat’s gesehen. Er sagt nichts. Noch nicht. <sub>(225)</sub>
 - **[Erzähler]** Zehn Minuten später. <sub>(226)</sub>
-- **[Hoffmann]** Nur der erste Satz? <sub>(227)</sub>
+- **[Mme Tidderich]** Nur der erste Satz? <sub>(227)</sub>
 - **[Erzähler]** „Je m’appelle Léa …“ <sub>(229)</sub>
-- **[Hoffmann]** Gut. Danke. <sub>(229)</sub>
+- **[Mme Tidderich]** Gut. Danke. <sub>(229)</sub>
 - → Lesen. <sub>(229)</sub>
-- **[Hoffmann]** Okay. Morgen. <sub>(230)</sub>
+- **[Mme Tidderich]** Okay. Morgen. <sub>(230)</sub>
 - → Nochmal auf die Karte tippen. <sub>(230)</sub>
 
 ### k6_test
@@ -1321,7 +1321,7 @@ Format: **[Sprecher]** Text · Antworten als „→“. Zeilennummer in Klammern
 - **[Erzähler]** Lina klappt ihr Heft zu. Zu spät: ein Lehrer mit Hörnern. <sub>(77)</sub>
 - **[Lina]** … Du sagst es keinem. <sub>(79)</sub>
 - **[Lina]** Dann zeichne ich dich ohne Hörner. <sub>(79)</sub>
-- → War das Hoffmann? Mit Hörnern? <sub>(79)</sub>
+- → War das Mme Tidderich? Mit Hörnern? <sub>(79)</sub>
 - **[Lina]** (macht das Heft ein Stück auf) Gut. Dann siehst du jetzt was. <sub>(80)</sub>
 - → Ich hab nichts gesehen. <sub>(80)</sub>
 - **[Lina]** Nein. <sub>(81)</sub>
@@ -1395,7 +1395,7 @@ Format: **[Sprecher]** Text · Antworten als „→“. Zeilennummer in Klammern
 - **[Ben]** Gut. Dann gehen wir zusammen unter. Wie Helden. <sub>(148)</sub>
 - → Mir ist auch schlecht wegen morgen. <sub>(148)</sub>
 - **[Ben]** Heute im Test hab ich null Witze gemacht. <sub>(152)</sub>
-- **[Ben]** Hoffmann hat gefragt, ob ich krank bin. <sub>(153)</sub>
+- **[Ben]** Mme Tidderich hat gefragt, ob ich krank bin. <sub>(153)</sub>
 - **[Ben]** Ich hab mit der leichten Aufgabe angefangen. Lief. Unheimlich. <sub>(155)</sub>
 - → Und? Lief’s? <sub>(155)</sub>
 - **[Ben]** Endlich versteht mich jemand. <sub>(156)</sub>
@@ -1425,7 +1425,7 @@ Format: **[Sprecher]** Text · Antworten als „→“. Zeilennummer in Klammern
 - → Kann man das verkaufen? <sub>(177)</sub>
 - **[Chiara]** Ich hab was schief abgegeben. Der Kleber war alle. <sub>(181)</sub>
 - **[Chiara]** Drei Stunden auf den Weltuntergang gewartet. Nichts. <sub>(182)</sub>
-- **[Chiara]** Hoffmann hat nur „gut“ gesagt. Nur „gut“. <sub>(184)</sub>
+- **[Chiara]** Mme Tidderich hat nur „gut“ gesagt. Nur „gut“. <sub>(184)</sub>
 - **[Chiara]** Und ich lebe noch. Verrückt. <sub>(184)</sub>
 - → Und? Geht sie unter? <sub>(184)</sub>
 - **[Chiara]** Keine Sorge. Morgen bin ich wieder anstrengend. <sub>(185)</sub>
@@ -1695,21 +1695,21 @@ Format: **[Sprecher]** Text · Antworten als „→“. Zeilennummer in Klammern
 
 ### hoffmann
 
-- **[Hoffmann]** Neue Methode! Lernen mit Bewegung! <sub>(449)</sub>
-- **[Hoffmann]** Kein Tanzen. <sub>(451)</sub>
-- **[Hoffmann]** … Nur ein bisschen Klatschen. <sub>(451)</sub>
+- **[Mme Tidderich]** Neue Methode! Lernen mit Bewegung! <sub>(449)</sub>
+- **[Mme Tidderich]** Kein Tanzen. <sub>(451)</sub>
+- **[Mme Tidderich]** … Nur ein bisschen Klatschen. <sub>(451)</sub>
 - → Bitte nicht wieder Tanzen. <sub>(451)</sub>
-- **[Hoffmann]** Wer antwortet, wirft den Ball weiter. Gut, oder? <sub>(452)</sub>
-- **[Hoffmann]** Sag ehrlich. Besser als Folien? <sub>(452)</sub>
+- **[Mme Tidderich]** Wer antwortet, wirft den Ball weiter. Gut, oder? <sub>(452)</sub>
+- **[Mme Tidderich]** Sag ehrlich. Besser als Folien? <sub>(452)</sub>
 - → Was genau? <sub>(452)</sub>
-- **[Hoffmann]** Heißt Pause. Kommt um zehn. <sub>(453)</sub>
+- **[Mme Tidderich]** Heißt Pause. Kommt um zehn. <sub>(453)</sub>
 - → Gibt’s auch eine Methode ohne Lernen? <sub>(453)</sub>
-- **[Hoffmann]** Was war diese Woche das Beste in meinem Unterricht? <sub>(457)</sub>
-- **[Hoffmann]** Autsch. Aber gut. Weniger Beamer. Notiert. <sub>(459)</sub>
+- **[Mme Tidderich]** Was war diese Woche das Beste in meinem Unterricht? <sub>(457)</sub>
+- **[Mme Tidderich]** Autsch. Aber gut. Weniger Beamer. Notiert. <sub>(459)</sub>
 - → Als der Beamer kaputt war. <sub>(459)</sub>
-- **[Hoffmann]** Dann mehr davon. Danke, {name}. <sub>(460)</sub>
+- **[Mme Tidderich]** Dann mehr davon. Danke, {name}. <sub>(460)</sub>
 - → Die Gruppenarbeit. <sub>(460)</sub>
-- **[Hoffmann]** Die mit den Enten? Die bleibt. <sub>(461)</sub>
+- **[Mme Tidderich]** Die mit den Enten? Die bleibt. <sub>(461)</sub>
 - → Ihre Krawatte am Montag. <sub>(461)</sub>
 
 ## freunde.js
@@ -1782,12 +1782,12 @@ Format: **[Sprecher]** Text · Antworten als „→“. Zeilennummer in Klammern
 
 ### zuSpaet
 
-- **[Hoffmann]** Zehn Minuten. Am ersten Tag. Rekord. <sub>(402)</sub>
+- **[Mme Tidderich]** Zehn Minuten. Am ersten Tag. Rekord. <sub>(402)</sub>
 - **[Jo]** (halblaut) Starker Auftritt. <sub>(402)</sub>
-- **[Hoffmann]** Gerade noch. Setz dich. Schnell. <sub>(403)</sub>
-- **[Hoffmann]** Zeig mal deinen Plan … das ist die 7P1. <sub>(404)</sub>
+- **[Mme Tidderich]** Gerade noch. Setz dich. Schnell. <sub>(403)</sub>
+- **[Mme Tidderich]** Zeig mal deinen Plan … das ist die 7P1. <sub>(404)</sub>
 - **[Jo]** Falsche Klasse. Tür ist da hinten. <sub>(404)</sub>
-- **[Erzähler]** Gelächter. Hoffmann gibt dir seine Kopie. Mit Kaffeefleck. <sub>(404)</sub>
+- **[Erzähler]** Gelächter. Mme Tidderich gibt dir seine Kopie. Mit Kaffeefleck. <sub>(404)</sub>
 
 ### freiwurf
 
@@ -1797,25 +1797,25 @@ Format: **[Sprecher]** Text · Antworten als „→“. Zeilennummer in Klammern
 
 ### plakatEnde
 
-- **[Hoffmann]** (zu dir, trocken) Schräg. Aber pünktlich fertig. <sub>(430)</sub>
+- **[Mme Tidderich]** (zu dir, trocken) Schräg. Aber pünktlich fertig. <sub>(430)</sub>
 
 ### plakatEndeKern
 
-- **[Hoffmann]** Orte, wo einen keiner nervt. Gut. Von wem? <sub>(435)</sub>
-- **[Hoffmann]** Stark, {name}. <sub>(437)</sub>
+- **[Mme Tidderich]** Orte, wo einen keiner nervt. Gut. Von wem? <sub>(435)</sub>
+- **[Mme Tidderich]** Stark, {name}. <sub>(437)</sub>
 - **[Erzähler]** Lina guckt aus dem Fenster. Sehr lange. <sub>(437)</sub>
 - → „Von mir.“ <sub>(437)</sub>
 - **[Jo]** Hä? Du hast doch gesagt … <sub>(438)</sub>
-- **[Hoffmann]** Aha. Dann: gut, Lina. <sub>(438)</sub>
+- **[Mme Tidderich]** Aha. Dann: gut, Lina. <sub>(438)</sub>
 - **[Erzähler]** Unter dem Tisch: ein Zettel. Ein gezeichneter Daumen. <sub>(438)</sub>
 - → „Eigentlich von Lina.“ <sub>(438)</sub>
-- **[Hoffmann]** Orte ohne Nerverei. Wessen Idee? <sub>(440)</sub>
+- **[Mme Tidderich]** Orte ohne Nerverei. Wessen Idee? <sub>(440)</sub>
 - **[Jo]** Linas. Das Gebäude ist von mir. Und der Drache. <sub>(440)</sub>
-- **[Hoffmann]** Schönes Gebäude. Und ihr zwei? <sub>(441)</sub>
+- **[Mme Tidderich]** Schönes Gebäude. Und ihr zwei? <sub>(441)</sub>
 - **[Jo]** Ausgemalt. Und {name} war am Handy. <sub>(441)</sub>
-- **[Hoffmann]** {name}. Handy. Mein Pult. Bis 16 Uhr. <sub>(441)</sub>
+- **[Mme Tidderich]** {name}. Handy. Mein Pult. Bis 16 Uhr. <sub>(441)</sub>
 - **[Weber]** (durch die Tür) 16 Uhr. Nicht 16:05. <sub>(441)</sub>
-- **[Hoffmann]** Schönes Gebäude, Jo. Warum hat es einen Drachen? <sub>(442)</sub>
+- **[Mme Tidderich]** Schönes Gebäude, Jo. Warum hat es einen Drachen? <sub>(442)</sub>
 - **[Jo]** Weil es geht. <sub>(442)</sub>
 - **[Lina]** (ganz leise) … ausgemalt. <sub>(442)</sub>
 
@@ -1834,10 +1834,10 @@ Format: **[Sprecher]** Text · Antworten als „→“. Zeilennummer in Klammern
 - **[Ayla]** Du hast zugehört? Wow. Ich hab eine Band. <sub>(454)</sub>
 - **[Ayla]** Wir haben noch keinen Namen. Und keinen Proberaum. <sub>(454)</sub>
 - **[Erzähler]** Sie erzählt. Die ganze Pause. Noah gähnt. <sub>(454)</sub>
-- → „Ja. Hoffmann ist schräg, oder?“ <sub>(455)</sub>
+- → „Ja. Mme Tidderich ist schräg, oder?“ <sub>(455)</sub>
 - **[Ayla]** (lacht) Total. „Neue Methode!“ <sub>(456)</sub>
 - **[Noah]** (wird blass) Er steht hinter dir. <sub>(456)</sub>
-- **[Hoffmann]** (mit Tablett) Guten Appetit. Schräg grüßt. <sub>(456)</sub>
+- **[Mme Tidderich]** (mit Tablett) Guten Appetit. Schräg grüßt. <sub>(456)</sub>
 - **[Erzähler]** Ayla redet mit Noah weiter. Du isst. Das Curry ist okay. <sub>(457)</sub>
 - → (Nicken. Essen.) <sub>(457)</sub>
 
@@ -1868,31 +1868,31 @@ Format: **[Sprecher]** Text · Antworten als „→“. Zeilennummer in Klammern
 - **[Weber]** Wann seid ihr da? <sub>(476)</sub>
 - → „Äh … hallo? Ich bin’s.“ <sub>(476)</sub>
 - **[Du]** Halb neun. Mit dem nächsten. <sub>(478)</sub>
-- **[Weber]** Ich sag’s M. Hoffmann. <sub>(479)</sub>
+- **[Weber]** Ich sag’s Mme Tidderich. <sub>(479)</sub>
 - **[Noah]** (flüstert) Wie machst du das? <sub>(480)</sub>
 
 ### spaetFolge
 
-- **[Hoffmann]** Unentschuldigt, ihr zwei. Mme Weber hat zuhause angerufen. <sub>(484)</sub>
-- **[Hoffmann]** Zettel. Unterschrieben. Beide. <sub>(486)</sub>
+- **[Mme Tidderich]** Unentschuldigt, ihr zwei. Mme Weber hat zuhause angerufen. <sub>(484)</sub>
+- **[Mme Tidderich]** Zettel. Unterschrieben. Beide. <sub>(486)</sub>
 - **[Noah]** (leise) Das gibt Ärger. Großen. <sub>(486)</sub>
 - → „Wir haben nicht angerufen. Stimmt.“ <sub>(486)</sub>
 - **[Noah]** Was? Das … <sub>(487)</sub>
-- **[Hoffmann]** Noah: Zettel. {name}: setzen. <sub>(487)</sub>
+- **[Mme Tidderich]** Noah: Zettel. {name}: setzen. <sub>(487)</sub>
 - **[Erzähler]** Noah sagt bis Mittag kein Wort. <sub>(487)</sub>
 - → „Noah sollte anrufen.“ <sub>(487)</sub>
-- **[Hoffmann]** Und Noahs auch. Klar. Zettel, beide. <sub>(488)</sub>
+- **[Mme Tidderich]** Und Noahs auch. Klar. Zettel, beide. <sub>(488)</sub>
 - → „Mein Akku war leer.“ <sub>(488)</sub>
-- **[Hoffmann]** Noah ist entschuldigt. Du stehst nicht auf meinem Zettel. <sub>(490)</sub>
+- **[Mme Tidderich]** Noah ist entschuldigt. Du stehst nicht auf meinem Zettel. <sub>(490)</sub>
 - **[Noah]** Sorry! Ich war so nervös. <sub>(492)</sub>
-- **[Hoffmann]** Okay. Ich trag dich nach. <sub>(492)</sub>
+- **[Mme Tidderich]** Okay. Ich trag dich nach. <sub>(492)</sub>
 - → „Ich war mit Noah. Er hat mich vergessen.“ <sub>(492)</sub>
 - **[Jo]** Jetzt? Live? Bitte, ja. <sub>(493)</sub>
-- **[Hoffmann]** Lass. Ich geh in der Pause zu Weber. <sub>(493)</sub>
+- **[Mme Tidderich]** Lass. Ich geh in der Pause zu Weber. <sub>(493)</sub>
 - → „Dann ruf ich jetzt an.“ <sub>(493)</sub>
-- **[Hoffmann]** Dann steht da „unentschuldigt“. <sub>(494)</sub>
+- **[Mme Tidderich]** Dann steht da „unentschuldigt“. <sub>(494)</sub>
 - → (Schulterzucken. Hinsetzen.) <sub>(494)</sub>
-- **[Hoffmann]** Ah, da seid ihr. Mme Weber hat Bescheid gesagt. <sub>(496)</sub>
+- **[Mme Tidderich]** Ah, da seid ihr. Mme Weber hat Bescheid gesagt. <sub>(496)</sub>
 - **[Jo]** Guten Morgen, Hoheit. <sub>(496)</sub>
 - **[Jo]** (grinst) Keine Sekunde. <sub>(498)</sub>
 - → „Morgen, Jo. Hast mich vermisst?“ <sub>(498)</sub>
@@ -1920,7 +1920,7 @@ Format: **[Sprecher]** Text · Antworten als „→“. Zeilennummer in Klammern
 
 ### torGespraech
 
-- **[Hoffmann]** Montag, Tor. Wir reden noch. <sub>(509)</sub>
+- **[Mme Tidderich]** Montag, Tor. Wir reden noch. <sub>(509)</sub>
 
 ### k7Platz
 
@@ -1948,12 +1948,12 @@ Format: **[Sprecher]** Text · Antworten als „→“. Zeilennummer in Klammern
 
 ### k7Unterschrift
 
-- **[Kaya]** Hoffmann hat mir deinen Zettel gezeigt. Von neulich. <sub>(527)</sub>
+- **[Kaya]** Mme Tidderich hat mir deinen Zettel gezeigt. Von neulich. <sub>(527)</sub>
 - **[Kaya]** Die Unterschrift sieht aus wie Noahs Schrift. <sub>(527)</sub>
 - **[Erzähler]** Noah, an der Tür, wird ganz still. <sub>(527)</sub>
 - **[Kaya]** Okay. Dann ruf ich kurz zuhause an. Zum Prüfen. <sub>(529)</sub>
 - → „Die ist echt.“ <sub>(529)</sub>
-- **[Kaya]** Danke. Hoffmann muss ich’s sagen. Nur das. <sub>(530)</sub>
+- **[Kaya]** Danke. Mme Tidderich muss ich’s sagen. Nur das. <sub>(530)</sub>
 - **[Noah]** (leise) Super. Danke. <sub>(530)</sub>
 - → „Hat Noah gemacht. Ich hab ihn gefragt.“ <sub>(530)</sub>
 - **[Noah]** Was?! <sub>(531)</sub>
@@ -1961,7 +1961,7 @@ Format: **[Sprecher]** Text · Antworten als „→“. Zeilennummer in Klammern
 - → „Hat Noah gemacht. Ohne mich zu fragen.“ <sub>(531)</sub>
 - **[Kaya]** Okay. Donnerstag ist Elternabend. Ich frag dort. <sub>(532)</sub>
 - → (Schweigen.) <sub>(532)</sub>
-- **[Kaya]** Hoffmann sagt, dein Zettel ist „verloren“. <sub>(534)</sub>
+- **[Kaya]** Mme Tidderich sagt, dein Zettel ist „verloren“. <sub>(534)</sub>
 - **[Kaya]** Der hier geht nicht verloren. Ja? <sub>(534)</sub>
 - **[Kaya]** Wenn unterschreiben zuhause schwer ist: sag nur das. <sub>(535)</sub>
 - **[Kaya]** Warum, musst du nicht sagen. <sub>(535)</sub>
@@ -2025,13 +2025,13 @@ Format: **[Sprecher]** Text · Antworten als „→“. Zeilennummer in Klammern
 
 ### k7Mila
 
-- **[Mila]** Freitag präsentieren wir zwei. Hat Hoffmann so verteilt. <sub>(574)</sub>
+- **[Mila]** Freitag präsentieren wir zwei. Hat Mme Tidderich so verteilt. <sub>(574)</sub>
 - **[Mila]** Keine Sorge. Ich sag allen, wir sind „niemals“ was. <sub>(575)</sub>
 - **[Mila]** … Ja. War es. <sub>(577)</sub>
 - **[Mila]** Freitag redest du zuerst. <sub>(577)</sub>
 - → „Das in der Kantine war feige.“ <sub>(577)</sub>
 - **[Mila]** Mach. Ich frag nicht für dich. <sub>(578)</sub>
-- → „Ich frag Hoffmann, ob ich allein darf.“ <sub>(578)</sub>
+- → „Ich frag Mme Tidderich, ob ich allein darf.“ <sub>(578)</sub>
 - **[Mila]** Luca hat nicht „niemals“ gesagt. <sub>(579)</sub>
 - → „Luca hat genervt. Mehr war nicht.“ <sub>(579)</sub>
 - **[Mila]** Die fragen immer noch, ob wir … du weißt. <sub>(581)</sub>
@@ -2066,7 +2066,7 @@ Format: **[Sprecher]** Text · Antworten als „→“. Zeilennummer in Klammern
 - **[Kremer]** (lange Pause) Dann heute Tabletts. Morgen sehen wir. <sub>(608)</sub>
 - **[Ben]** … Okay. Wenigstens jetzt. <sub>(608)</sub>
 - → „Ich hab damals Bens Geld genommen.“ <sub>(608)</sub>
-- **[Ben]** Frag Hoffmann. <sub>(609)</sub>
+- **[Ben]** Frag Mme Tidderich. <sub>(609)</sub>
 - **[Kremer]** Ich zähl heute Abend. Auf den Cent. <sub>(609)</sub>
 - → „Ben spinnt. Frag ihn, was er meint.“ <sub>(609)</sub>
 - **[Kremer]** Hm. Dann Tabletts. <sub>(610)</sub>
@@ -2139,11 +2139,11 @@ Format: **[Sprecher]** Text · Antworten als „→“. Zeilennummer in Klammern
 ### tafelFolge
 
 - **[Erzähler]** Nach der Stunde. <sub>(681)</sub>
-- **[Hoffmann]** (packt ein) Vorhin. Blöd gelaufen. <sub>(681)</sub>
-- **[Hoffmann]** Nächstes Mal sag einfach „gleich“. Dann komm ich zurück. <sub>(681)</sub>
+- **[Mme Tidderich]** (packt ein) Vorhin. Blöd gelaufen. <sub>(681)</sub>
+- **[Mme Tidderich]** Nächstes Mal sag einfach „gleich“. Dann komm ich zurück. <sub>(681)</sub>
 - **[Erzähler]** Nach der Stunde. <sub>(682)</sub>
-- **[Hoffmann]** Die Karte darfst du echt benutzen. Ich mein das so. <sub>(682)</sub>
-- **[Erzähler]** Nach der Stunde. M. Hoffmann sagt nichts. Er nickt nur. <sub>(683)</sub>
+- **[Mme Tidderich]** Die Karte darfst du echt benutzen. Ich mein das so. <sub>(682)</sub>
+- **[Erzähler]** Nach der Stunde. Mme Tidderich sagt nichts. Er nickt nur. <sub>(683)</sub>
 
 ### stufeVorschlag
 
@@ -2215,10 +2215,10 @@ Format: **[Sprecher]** Text · Antworten als „→“. Zeilennummer in Klammern
 
 ### ichBotschaft
 
-- **[Hoffmann]** Danke, {name}. Jo? <sub>(792)</sub>
+- **[Mme Tidderich]** Danke, {name}. Jo? <sub>(792)</sub>
 - **[Jo]** (verdreht die Augen) Jaja. Gelöscht. Zufrieden? <sub>(793)</sub>
 - **[Jo]** (verdreht die Augen) Jaja. Ich frag vorher. Zufrieden? <sub>(793)</sub>
-- **[Hoffmann]** Dann schreiben wir das als Klassenregel auf. <sub>(794)</sub>
+- **[Mme Tidderich]** Dann schreiben wir das als Klassenregel auf. <sub>(794)</sub>
 
 ### kenanErinnert
 
@@ -2249,9 +2249,9 @@ Format: **[Sprecher]** Text · Antworten als „→“. Zeilennummer in Klammern
 - → „Weiß ich auch nicht.“ <sub>(821)</sub>
 - **[Kenan]** Okay. Merk ich mir. Echt. <sub>(822)</sub>
 - → „Du schuldest mir was.“ <sub>(822)</sub>
-- **[Kenan]** Abgehauen. Hoffmann hat dich trotzdem erkannt. <sub>(824)</sub>
+- **[Kenan]** Abgehauen. Mme Tidderich hat dich trotzdem erkannt. <sub>(824)</sub>
 - **[Kenan]** Er hat drei Namen. Deiner ist dabei. <sub>(824)</sub>
-- **[Kenan]** Hoffmann kam genau zu uns. Als ob er’s wusste. <sub>(825)</sub>
+- **[Kenan]** Mme Tidderich kam genau zu uns. Als ob er’s wusste. <sub>(825)</sub>
 - **[Kenan]** Hast du vorher was gesagt? <sub>(825)</sub>
 - **[Kenan]** Hm. Okay. <sub>(827)</sub>
 - → „Nein.“ <sub>(827)</sub>
@@ -2263,28 +2263,28 @@ Format: **[Sprecher]** Text · Antworten als „→“. Zeilennummer in Klammern
 
 ### abschreibFolge
 
-- **[Hoffmann]** {name}, Noah. Bleibt kurz da. <sub>(840)</sub>
-- **[Hoffmann]** Gleiche Fehler. Gleiche Reihenfolge. Wer von wem? <sub>(841)</sub>
-- **[Hoffmann]** Beim Test hast du auch schon rübergeschaut. <sub>(842)</sub>
+- **[Mme Tidderich]** {name}, Noah. Bleibt kurz da. <sub>(840)</sub>
+- **[Mme Tidderich]** Gleiche Fehler. Gleiche Reihenfolge. Wer von wem? <sub>(841)</sub>
+- **[Mme Tidderich]** Beim Test hast du auch schon rübergeschaut. <sub>(842)</sub>
 - **[Erzähler]** Noah schaut dich an. <sub>(843)</sub>
 - → „Er hat bei mir. Ich hab’s erlaubt.“ <sub>(845)</sub>
-- **[Hoffmann]** Beide nochmal. Bis Freitag. <sub>(846)</sub>
+- **[Mme Tidderich]** Beide nochmal. Bis Freitag. <sub>(846)</sub>
 - **[Noah]** (draußen) Danke auch. <sub>(846)</sub>
 - → „Wir haben zusammen gelernt.“ <sub>(847)</sub>
-- **[Hoffmann]** Zusammen gelernt. Mit denselben Fehlern. <sub>(848)</sub>
-- **[Hoffmann]** Dann erklärt mir Noah Aufgabe 3. Jetzt. <sub>(849)</sub>
-- **[Erzähler]** Noah kann es nicht. Hoffmann sagt nichts mehr. Er schreibt was auf. <sub>(850)</sub>
+- **[Mme Tidderich]** Zusammen gelernt. Mit denselben Fehlern. <sub>(848)</sub>
+- **[Mme Tidderich]** Dann erklärt mir Noah Aufgabe 3. Jetzt. <sub>(849)</sub>
+- **[Erzähler]** Noah kann es nicht. Mme Tidderich sagt nichts mehr. Er schreibt was auf. <sub>(850)</sub>
 - → (Schweigen.) <sub>(851)</sub>
-- **[Hoffmann]** Okay. Dann beide null Punkte. <sub>(852)</sub>
+- **[Mme Tidderich]** Okay. Dann beide null Punkte. <sub>(852)</sub>
 - **[Noah]** Warte. {name} kann nix dafür. Ich war’s. <sub>(853)</sub>
-- **[Hoffmann]** … Gut. Noah, du machst sie nochmal. <sub>(854)</sub>
+- **[Mme Tidderich]** … Gut. Noah, du machst sie nochmal. <sub>(854)</sub>
 
 ### schwaenzFolge
 
 - **[Erzähler]** Nach der Stunde. Frau Sommer hält ihre Liste hoch. <sub>(857)</sub>
 - **[Sommer]** Unentschuldigt. Steht schon drin. <sub>(858)</sub>
 - **[Sommer]** Vor zwei Wochen schlecht. Heute weg. Interessant. <sub>(859)</sub>
-- **[Sommer]** Hoffmann sagt, du hattest schon eine Fehlstunde. <sub>(860)</sub>
+- **[Sommer]** Mme Tidderich sagt, du hattest schon eine Fehlstunde. <sub>(860)</sub>
 - **[Sommer]** Wo warst du? Und mit wem? <sub>(861)</sub>
 - → „Beim Bäcker. Mit Dario und Luca.“ <sub>(863)</sub>
 - **[Sommer]** Danke. Die zwei hol ich mir. <sub>(864)</sub>
@@ -2310,7 +2310,7 @@ Format: **[Sprecher]** Text · Antworten als „→“. Zeilennummer in Klammern
 
 ### noahWoche
 
-- **[Noah]** Hoffmann hat mich drangenommen. Ich wusste es. Er war geschockt. <sub>(884)</sub>
+- **[Noah]** Mme Tidderich hat mich drangenommen. Ich wusste es. Er war geschockt. <sub>(884)</sub>
 - **[Noah]** Sorry wegen der Hausaufgabe. Das hat dir Ärger gemacht. <sub>(884)</sub>
 - **[Noah]** Schönes Wochenende, {name}. <sub>(884)</sub>
 
@@ -2386,38 +2386,38 @@ Format: **[Sprecher]** Text · Antworten als „→“. Zeilennummer in Klammern
 ### zuhauseFolge
 
 - **[Erzähler]** Nach der Stunde. Alle sind raus. <sub>(941)</sub>
-- **[Hoffmann]** Der Ton gerade. Was war los? <sub>(942)</sub>
-- **[Hoffmann]** Okay. Hausaufgabe bis Freitag. <sub>(944)</sub>
+- **[Mme Tidderich]** Der Ton gerade. Was war los? <sub>(942)</sub>
+- **[Mme Tidderich]** Okay. Hausaufgabe bis Freitag. <sub>(944)</sub>
 - → „Müde.“ <sub>(944)</sub>
-- **[Hoffmann]** Okay. Nichts. <sub>(945)</sub>
+- **[Mme Tidderich]** Okay. Nichts. <sub>(945)</sub>
 - → „Nichts.“ <sub>(945)</sub>
-- **[Hoffmann]** Okay. Geh ruhig. <sub>(946)</sub>
+- **[Mme Tidderich]** Okay. Geh ruhig. <sub>(946)</sub>
 - → (Schweigen.) <sub>(946)</sub>
 - **[Erzähler]** Nach der Stunde. Alle sind raus. <sub>(948)</sub>
-- **[Hoffmann]** Ich frag nicht nach Details. Musst du nicht erzählen. <sub>(949)</sub>
-- **[Hoffmann]** Hausaufgabe bis Freitag. Und wenn’s öfter so ist: Kaya. <sub>(950)</sub>
+- **[Mme Tidderich]** Ich frag nicht nach Details. Musst du nicht erzählen. <sub>(949)</sub>
+- **[Mme Tidderich]** Hausaufgabe bis Freitag. Und wenn’s öfter so ist: Kaya. <sub>(950)</sub>
 - → „Okay.“ <sub>(952)</sub>
-- **[Hoffmann]** Manches muss er. Er sagt dir vorher, was. <sub>(953)</sub>
+- **[Mme Tidderich]** Manches muss er. Er sagt dir vorher, was. <sub>(953)</sub>
 - → „Kaya erzählt eh alles weiter.“ <sub>(953)</sub>
-- **[Hoffmann]** (ruft nach) Freitag, {name}! <sub>(954)</sub>
+- **[Mme Tidderich]** (ruft nach) Freitag, {name}! <sub>(954)</sub>
 - → (Gehen, ohne was zu sagen.) <sub>(954)</sub>
 
 ### unfairDanach
 
 - **[Erzähler]** Nach zehn Minuten geht die Tür auf. <sub>(958)</sub>
-- **[Hoffmann]** Ayla sagt, du warst es nicht. <sub>(959)</sub>
-- **[Hoffmann]** Ich hab mich vertan. Sorry. <sub>(959)</sub>
-- **[Hoffmann]** Komm rein. Und ab jetzt: ruhig. <sub>(960)</sub>
-- **[Hoffmann]** Der Ton steht trotzdem im Klassenbuch. <sub>(961)</sub>
+- **[Mme Tidderich]** Ayla sagt, du warst es nicht. <sub>(959)</sub>
+- **[Mme Tidderich]** Ich hab mich vertan. Sorry. <sub>(959)</sub>
+- **[Mme Tidderich]** Komm rein. Und ab jetzt: ruhig. <sub>(960)</sub>
+- **[Mme Tidderich]** Der Ton steht trotzdem im Klassenbuch. <sub>(961)</sub>
 - **[Erzähler]** In der Pause. Jo steht neben dir. <sub>(962)</sub>
 - **[Jo]** Danke. Ehrlich. Hast was gut. <sub>(962)</sub>
 - **[Erzähler]** Nach der Stunde. <sub>(963)</sub>
-- **[Hoffmann]** Du wolltest was sagen. Zwei Minuten. <sub>(963)</sub>
-- **[Hoffmann]** Ich red mit ihm. Und: War unfair. Sorry. <sub>(964)</sub>
+- **[Mme Tidderich]** Du wolltest was sagen. Zwei Minuten. <sub>(963)</sub>
+- **[Mme Tidderich]** Ich red mit ihm. Und: War unfair. Sorry. <sub>(964)</sub>
 - → „Das war Jo.“ <sub>(964)</sub>
-- **[Hoffmann]** … Kann sein. Ich schau nächstes Mal genauer. <sub>(965)</sub>
+- **[Mme Tidderich]** … Kann sein. Ich schau nächstes Mal genauer. <sub>(965)</sub>
 - → „Sie haben nur mich gesehen.“ <sub>(965)</sub>
-- **[Hoffmann]** Okay. <sub>(966)</sub>
+- **[Mme Tidderich]** Okay. <sub>(966)</sub>
 - → „Schon gut.“ <sub>(966)</sub>
 - **[Jo]** (leise) Das kriegst du zurück. <sub>(968)</sub>
 
@@ -2433,13 +2433,13 @@ Format: **[Sprecher]** Text · Antworten als „→“. Zeilennummer in Klammern
 - **[Ben]** Hm. <sub>(978)</sub>
 - **[Erzähler]** Er schaut dich einen Moment zu lang an. <sub>(978)</sub>
 - → „Keine Ahnung.“ <sub>(978)</sub>
-- **[Hoffmann]** Bens Portemonnaie lag im Müll. Das Geld ist weg. <sub>(980)</sub>
-- **[Hoffmann]** Wer war nach Sport im WC? <sub>(980)</sub>
+- **[Mme Tidderich]** Bens Portemonnaie lag im Müll. Das Geld ist weg. <sub>(980)</sub>
+- **[Mme Tidderich]** Wer war nach Sport im WC? <sub>(980)</sub>
 - **[Noah]** (leise) Ich hab {name} reingehen sehen … <sub>(980)</sub>
-- **[Hoffmann]** Gut, dass du es sagst. Das geht trotzdem nach Hause. <sub>(982)</sub>
+- **[Mme Tidderich]** Gut, dass du es sagst. Das geht trotzdem nach Hause. <sub>(982)</sub>
 - **[Ben]** (sagt nichts mehr) <sub>(982)</sub>
 - → „Ich war’s. Ich geb’s zurück.“ <sub>(982)</sub>
-- **[Hoffmann]** Hm. Ich frag weiter. <sub>(983)</sub>
+- **[Mme Tidderich]** Hm. Ich frag weiter. <sub>(983)</sub>
 - **[Erzähler]** Noah redet in der Pause nicht mit dir. <sub>(983)</sub>
 - → „Da waren viele drin.“ <sub>(983)</sub>
 - **[Noah]** Ich hab nur gesagt, was ich gesehen hab. <sub>(984)</sub>
@@ -2461,7 +2461,7 @@ Format: **[Sprecher]** Text · Antworten als „→“. Zeilennummer in Klammern
 
 ### hoffmannGemerkt
 
-- **[Hoffmann]** (im Vorbeigehen) Das mit Mila neulich. Hab’s mir gemerkt. Danke. <sub>(997)</sub>
+- **[Mme Tidderich]** (im Vorbeigehen) Das mit Mila neulich. Hab’s mir gemerkt. Danke. <sub>(997)</sub>
 
 ### k5Folgen
 
@@ -2470,7 +2470,7 @@ Format: **[Sprecher]** Text · Antworten als „→“. Zeilennummer in Klammern
 - **[Mila]** Jetzt denken alle, wir … egal. <sub>(1002)</sub>
 - **[Mila]** Danke. Glaub ich. <sub>(1002)</sub>
 - **[Lina]** (leise, im Vorbeigehen) Das mit Mila hat Ben rumgeschickt. Nicht Luca. <sub>(1003)</sub>
-- **[Noah]** Hast du den Zettel unterschrieben? Für Hoffmann? <sub>(1004)</sub>
+- **[Noah]** Hast du den Zettel unterschrieben? Für Mme Tidderich? <sub>(1004)</sub>
 - **[Noah]** Ich kann Unterschriften. Gut sogar. <sub>(1004)</sub>
 - **[Erzähler]** Zwei Sekunden. Sieht echt aus. <sub>(1006)</sub>
 - **[Noah]** Montag abgeben. Nicht vorher zeigen. <sub>(1006)</sub>
@@ -2612,9 +2612,9 @@ Format: **[Sprecher]** Text · Antworten als „→“. Zeilennummer in Klammern
 
 ### hoffmann.hoffmann
 
-- *Hoffmann: Äh … du bist … Moment … richtig. Hallo!* <sub>(35)</sub>
-- *Hoffmann: Morgen: neue Methode. Bringt bunte Stifte mit.* <sub>(35)</sub>
-- *Hoffmann: Die Enten-Krawatte bleibt. Diskussion beendet.* <sub>(35)</sub>
+- *Mme Tidderich: Äh … du bist … Moment … richtig. Hallo!* <sub>(35)</sub>
+- *Mme Tidderich: Morgen: neue Methode. Bringt bunte Stifte mit.* <sub>(35)</sub>
+- *Mme Tidderich: Die Enten-Krawatte bleibt. Diskussion beendet.* <sub>(35)</sub>
 
 ### kaya.kaya
 

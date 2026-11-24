@@ -58,7 +58,7 @@ export const SCHRITTE2 = [
     start: { teleport: 'saal104Tuer' },
     leute: { hoffmann: [-27, -24, Math.PI / 2], ...KLASSE_SITZT },
     fertig: { ort: 'meinPlatz', r: 1.1, gespraech: 'test' } },
-  { id: 'fr_rat', kap: 2, tag: 'Freitag', uhr: 13.5, titel: 'Klassenrat', ziel: 'Klassenrat! Sprich mit M. Hoffmann.', marker: 'hoffmann',
+  { id: 'fr_rat', kap: 2, tag: 'Freitag', uhr: 13.5, titel: 'Klassenrat', ziel: 'Klassenrat! Sprich mit Mme Tidderich.', marker: 'hoffmann',
     leute: { hoffmann: [-26.4, -22.6, Math.PI / 2], ...KLASSE_SITZT },
     fertig: { reden: 'hoffmann', gespraech: 'klassenrat' } },
   { id: 'fr_heim', kap: 2, tag: 'Freitag', uhr: 15.5, titel: 'Wochenende!', ziel: 'Geh zur Bushaltestelle.', marker: 'bus',
@@ -144,7 +144,7 @@ export const GESPRAECHE2 = {
             ['chiara', '(lacht kurz) Okay. Fünf Minuten.'] ] },
         ] } ] },
       { t: '„Mathe ist eh für nix gut.“ (Heft zu)', merke: 'matheZu', dann: [
-        ['chiara', 'Sag das Hoffmann am Freitag.'],
+        ['chiara', 'Sag das Mme Tidderich am Freitag.'],
         ['erzaehler', 'Du spielst auf dem Handy. Die Pause ist schnell weg.'] ] },
     ] },
     { tu: 'matheErklaeren' },
@@ -237,7 +237,7 @@ export const GESPRAECHE2 = {
     ] },
     { tu: 'kayaBeweis' },
     ['kaya', 'Okay. Ich sag euch gleich, wie das läuft.'],
-    ['kaya', 'Das muss ich M. Hoffmann sagen. Nicht nur hier drin.'],
+    ['kaya', 'Das muss ich Mme Tidderich sagen. Nicht nur hier drin.'],
     ['mila', 'Dann weiß Jo, dass wir’s waren.'],
     ['kaya', 'Kann sein. Das kann ich nicht verhindern.'],
     ['kaya', 'Wer hat es geschickt?'],
@@ -299,7 +299,7 @@ export const GESPRAECHE2 = {
         ['ben', 'Uuuh.'], ['jo', 'Mach doch.'], ['hoffmann', 'Stopp. Beide.'] ] },
       { t: '„Neue Regel: Jo darf nur Fotos von Jo schicken.“', staerke: 'klar', herz: { hoffmann: 1 }, merke: 'regelVorschlag', dann: [
         ['jo', 'Oh Mann. Streberalarm.'], ['ayla', 'Nee. Ich bin dafür.'] ] },
-      { t: '(Nichts sagen. Soll Hoffmann machen.)', dann: [
+      { t: '(Nichts sagen. Soll Mme Tidderich machen.)', dann: [
         ['hoffmann', 'Dann schlag ich was vor: Fotos nur mit Ja.'], ['jo', '(verdreht die Augen)'] ] },
     ] },
     ['hoffmann', 'Abstimmung. Hände hoch.'],

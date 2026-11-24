@@ -59,16 +59,16 @@ alles zusammenpasst.
 - **Fehler-Rundgang:** automatische Prüfung (Figuren in Wänden, Laufwege, große Dinge ohne Kollision); Stühle,
   Pflanzen, Laternen, Fahrräder, Bushaltestellen-Bank sind jetzt fest. Test: tests/lycee-interaktion.mjs.
 - **„Kurz raus“ (⏸ / P):** jederzeit (außer mitten im Gespräch, aber während einer Mutprobe): Atmen oder 5-4-3-2-1.
-- **Zweite Jugend-Kritik (17.11.2026, Schnitt 3,2):** 15 schwache Szenen neu (Noah am Bus, Sekretariat, Hoffmann, Bingo je Person verschieden, Mila auf der Bank, Kantinentische, Mathe-Test, Wochenende mit Doppel-Zusage, Telefon, zu spät, Werkstatt-Regeln, Sägen, Rückmeldung, Kenan am Bus); Logikfehler behoben (Mila im Klassenrat, Folgen zu früh gefragt,
-  Weggehen bei Mila, Kenan am Bus, Hoffmann und „Zuhause“, Bens Schulden, Nudeln, unsichtbare Sprecher, männliche
+- **Zweite Jugend-Kritik (17.11.2026, Schnitt 3,2):** 15 schwache Szenen neu (Noah am Bus, Sekretariat, Mme Tidderich, Bingo je Person verschieden, Mila auf der Bank, Kantinentische, Mathe-Test, Wochenende mit Doppel-Zusage, Telefon, zu spät, Werkstatt-Regeln, Sägen, Rückmeldung, Kenan am Bus); Logikfehler behoben (Mila im Klassenrat, Folgen zu früh gefragt,
+  Weggehen bei Mila, Kenan am Bus, Mme Tidderich und „Zuhause“, Bens Schulden, Nudeln, unsichtbare Sprecher, männliche
   Anreden). Antworten können jetzt von früheren Entscheidungen abhängen (`wenn` auch je Antwort).
 - **Jugend-Kritik (17.11.2026, Panel K./S./D., Schnitt vorher 1,8 von 5)** umgesetzt: keine Glocke und keine Herzen
   nach jeder Antwort (Tagesrückblick beim Tageswechsel, Stärken still im Journal), Antworten in gemischter
   Reihenfolge, echte Versuchungen (Witz, Handy, Lügen, Decken, Screenshot, Mitlachen, Weggehen), Erwachsene mit
-  Macken und Grenzen (Kaya sagt, was er weitergeben muss; Hoffmann schickt den Falschen raus), Konflikte nicht am
+  Macken und Grenzen (Kaya sagt, was er weitergeben muss; Mme Tidderich schickt den Falschen raus), Konflikte nicht am
   selben Tag gelöst, späte Folgen über `merke` (Kantine → Skate-Ecke, Turnschuhe → Bild im Chat, Abschreiben →
-  Hoffmann, Portemonnaie → Freitag), neue Szenen Raucherecke am Tor, Skate-Ecke, Bäcker ohne Geld, WC-Portemonnaie.
-  Szenen mit `wenn` gibt es nur nach bestimmten Entscheidungen (SePAS, Hoffmann nach dem Abschreiben).
+  Mme Tidderich, Portemonnaie → Freitag), neue Szenen Raucherecke am Tor, Skate-Ecke, Bäcker ohne Geld, WC-Portemonnaie.
+  Szenen mit `wenn` gibt es nur nach bestimmten Entscheidungen (SePAS, Mme Tidderich nach dem Abschreiben).
 - **Phase 2 – eigene Aufgaben** (lernen.js): Auf dem Titelbild „Für Lehrpersonen: eigene Aufgaben“ – Aufgabenpaket
   anlegen (Fach, Frage, 2–4 Antworten, richtige Antwort, Erklärung), als Datei speichern oder laden, auf Wunsch
   „Geschichte geht erst weiter, wenn gelöst“. Gespielt an der Lernstation im CDI (Mme Laurent, immer da) und im

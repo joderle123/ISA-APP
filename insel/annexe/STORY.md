@@ -5,7 +5,7 @@
 Stand 18.11.2026 · ersetzt die alte Kapitel-Folge (Rentrée … Praktikum). Alles erfunden.
 
 ## Der rote Faden
-Ein anonymer Account **@annexe.cam** postet heimlich Fotos aus der Schule. Erst lustig (Hoffmanns Krawatte,
+Ein anonymer Account **@annexe.cam** postet heimlich Fotos aus der Schule. Erst lustig (Mme Tidderichs Krawatte,
 Kevin der Kaktus mit Sonnenbrille), dann gemein. Am ersten Tag landet **ein Foto von dir** drauf.
 Wer steckt dahinter? Du bist mittendrin: erst Zuschauer:in, dann Ziel, dann verdächtig, dann auf Spurensuche.
 Was du in den Situations-Spielen tust, entscheidet, **wer dir vertraut, welche Spuren du hast und wie es endet** (vier Enden).

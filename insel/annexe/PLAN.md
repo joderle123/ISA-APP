@@ -33,14 +33,14 @@ So knüpft eine neue Sitzung an: diese Datei lesen, dann ENTSCHEIDUNGEN.md, dann
   - [~] Kapitel 2–7 überarbeitet (35 Kritik-Stellen + Kopfkino + flache Sätze); Gegenlesen folgt
   - [x] Freundschafts-Gespräche, Plaudern, Grüße, Nachrichten
   - [x] Kopfkino (Kopf, Bauch, Stolz) in Druckmomenten: Kantine, Tor, Schwänzen, Skate, Gerücht, Rauswurf
-  - [x] Ben-Schulden als Zähler (Journal), Automat-Zähler, Webers „16 Uhr, nicht 16:05“, Hoffmanns „Neue Methode“, Busfahrer
+  - [x] Ben-Schulden als Zähler (Journal), Automat-Zähler, Webers „16 Uhr, nicht 16:05“, Mme Tidderichs „Neue Methode“, Busfahrer
   - [x] Knopf „Sagt keiner so“ (lokal `lycee.sagtkeiner`, ohne Namen, im Pausenmenü ⏸ kopierbar)
   - [x] Bank-Momente (9 s neben jemandem sitzen → Toast + Freundschaft, je Kapitel einmal)
   - [x] Welttexte (`welttexte.js`: Pinnwand wechselt, Kritzeleien Bus/Tisch, Durchsagen, Fundkiste)
   - [~] Klassenchat mit Tippen, Reaktionen, „gelesen von“; Kap. 2 Foto und Kap. 5 Rauswurf im Handy. Offen: Handy als Zentrale (Freundes-Nachrichten, Antworten im Chat)
   - [ ] Gegenlesen: drei Rollen per Subagent, Regel-Skript grün, Durchspielen 1–7 grün
 - [ ] **2 Welt** – Tagesablauf je Figur, Szenen ohne Spielfigur, Körpersprache/Comic-Zeichen, Comic-Look, Licht/Wetter/Herbst, Kamera, Ton
-- [~] **3 Lernen und Belohnungen** – erledigt: Jetons fürs Lernen, Einlösen bei Kenan/Lina/Ayla/Chiara, Spind 117 als Ort; offen: Hoffmanns Methoden als Lernform, Stoff in der Welt (Werkstatt messen, Wechselgeld, Fahrplan), Editor (Hauttöne, Kopftuch, Brille), Hilfe-Leiter, Erklären für Noah
+- [~] **3 Lernen und Belohnungen** – erledigt: Jetons fürs Lernen, Einlösen bei Kenan/Lina/Ayla/Chiara, Spind 117 als Ort; offen: Mme Tidderichs Methoden als Lernform, Stoff in der Welt (Werkstatt messen, Wechselgeld, Fahrplan), Editor (Hauttöne, Kopftuch, Brille), Hilfe-Leiter, Erklären für Noah
 - [ ] **4 Soziales Spiel** – Puls, Vertrauen/Reparatur, Gerüchte-Spur, Zuschauer-Momente, Freundschafts-Bögen, Seitenwechsel, Wiederholen, Klassenfoto, Comic
 - [ ] **5 Minispiele** – Skaten (Wischen, Kombos, Grinds, Duell), Korbball, Tischtennis, Bandprobe, Küche, Werkstatt
 - [~] **6 Feinschliff** – erledigt: Einstellungen (Textgröße, Vorlesen aus, weniger Bewegung, Linkshänder, ruhiger Modus, Lautstärke/Musik), Tätigkeitswort auf dem Knopf, Sicherungscode, BEGLEITKARTEN.md; offen: drei Spielstände, Wort-Hilfe, Blips, iPad-Tempo am Gerät

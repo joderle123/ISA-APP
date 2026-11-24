@@ -26,7 +26,7 @@ export const STAERKEN = {
 export const LEUTE = {
   noah: { hoehe: 1.66, frisur: 'locken', name: 'Noah', modell: 'menschen', stil: 'Casual', haut: '#c99a72', haar: '#2b1d14', oben: '#3f78b8', unten: '#3a3f4b', schuhe: '#f2f2f2', farbe: '#3f78b8' },
   weber: { hoehe: 1.66, reich: 3.4, name: 'Mme Weber', modell: 'frauen', stil: 'Formal', haut: '#f0c9a8', haar: '#8a5a3a', oben: '#6b4e8a', unten: '#2f2f3a', schuhe: '#2b2b2b', farbe: '#6b4e8a', erwachsen: true },
-  hoffmann: { hoehe: 1.82, name: 'M. Hoffmann', modell: 'menschen', stil: 'Suit', haut: '#e8bf9a', haar: '#6d6d6d', oben: '#4a5568', unten: '#2d3748', schuhe: '#3a2a1c', farbe: '#4a5568', erwachsen: true },
+  hoffmann: { hoehe: 1.82, name: 'Mme Tidderich', modell: 'menschen', stil: 'Suit', haut: '#e8bf9a', haar: '#6d6d6d', oben: '#4a5568', unten: '#2d3748', schuhe: '#3a2a1c', farbe: '#4a5568', erwachsen: true },
   kenan: { hoehe: 1.8, kopf: 'muetze', kopfFarbe: '#3a3f4b', name: 'Kenan', modell: 'menschen', stil: 'Punk', haut: '#a8754f', haar: '#1b1410', oben: '#2b2b33', unten: '#4a4f5c', schuhe: '#d9523c', farbe: '#2b2b33' },
   dario: { hoehe: 1.77, frisur: 'stachel', name: 'Dario', modell: 'menschen', stil: 'Casual2', haut: '#e0b48c', haar: '#4a3020', oben: '#d9693f', unten: '#2d3748', schuhe: '#ffffff', farbe: '#d9693f' },
   mila: { hoehe: 1.61, name: 'Mila', modell: 'frauen', stil: 'Casual', haut: '#8d5a3b', haar: '#1b1410', oben: '#2fb8a8', unten: '#3a3f4b', schuhe: '#f2f2f2', farbe: '#2fb8a8' },
@@ -92,7 +92,7 @@ export const SCHRITTE = [
   { id: 'gang', uhr: 7.85, titel: 'Der Gang', ziel: 'Geh zu Saal 1.04.', marker: 'saal104Tuer',
     leute: { weber: [-21, -9.4, 0], kenan: [-21.6, -16.2, 0.4, 'redet'], dario: [-20.4, -16.6, -2.4, 'redet'], noah: [-14, -15.6, -1.5] },
     fertig: { ort: 'saal104Tuer', r: 3.0, gespraech: 'gang' } },
-  { id: 'klasse', uhr: 7.95, titel: 'Saal 1.04', ziel: 'Sag M. Hoffmann Hallo.', marker: 'hoffmann',
+  { id: 'klasse', uhr: 7.95, titel: 'Saal 1.04', ziel: 'Sag Mme Tidderich Hallo.', marker: 'hoffmann',
     leute: { hoffmann: [-27, -24, Math.PI / 2], noah: pult(0, 1, 1), ...KLASSE },
     fertig: { reden: 'hoffmann', gespraech: 'hoffmann1' } },
   { id: 'bingo', uhr: 8.3, titel: 'Klassen-Bingo', ziel: 'Finde für jedes Feld jemanden. Frag herum!', marker: 'bingo',
@@ -187,7 +187,7 @@ export const GESPRAECHE = {
   hoffmann1: [
     ['hoffmann', 'Guten Morgen! Du bist … (sucht auf der Liste) … {name}!'],
     { tu: 'zuSpaet' },
-    ['hoffmann', 'M. Hoffmann. Klassenlehrer. Und heute: mit Methode.'],
+    ['hoffmann', 'Mme Tidderich. Klassenlehrerin. Und heute: mit Methode.'],
     ['hoffmann', 'Neue Methode: Klassen-Bingo! Vier Felder. Rumfragen!'],
     ['erzaehler', 'Die ganze Klasse stöhnt. Jo stöhnt mit Echo.'],
     { wahl: [

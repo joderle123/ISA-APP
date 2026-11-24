@@ -38,13 +38,13 @@ Kurz: was, warum, Datum. Neueste unten.
 - **Antwort-Reihenfolge und Wirkungen bleiben**, nur Texte neu. Der Gesamttest wählt Antworten über die Position.
   Einzige Ergänzung: bei Ben nach den Freiwürfen eine dritte, witzige Antwort.
 - **Fünf-Minuten-Maßstab:** Lacher in der ersten Minute (Noah: „Bist du neu, oder guckst du immer so?“, Antwort „Prospekt“),
-  echte Entscheidung vor Minute drei (Mme Weber: warten, stören oder Plan klauen – mit Folgen bei Hoffmann),
+  echte Entscheidung vor Minute drei (Mme Weber: warten, stören oder Plan klauen – mit Folgen bei Mme Tidderich),
   Freischaltung vor Minute fünf (Spind 117 nach dem Sekretariat; vorher ist er zu).
 - **Kopfkino** (Kopf, Bauch, Stolz) zuerst in der Kantine vor Lucas Vordrängeln. Die drei Stimmen widersprechen sich;
   keine ist die „richtige“. Eigene Farben in `SPRECHER`.
 - **Running Gag Ben-Schulden** als Zahl (`S.benSchuld`), steht im Journal unter „Menschen“, wird nie kleiner.
   Dort auch Münzen im Automaten und der Freiwurf-Rekord – nur Dinge, die man selbst geschafft hat.
-- **Einwurf-Fehler** aus Kapitel 2/5/6/7 behoben (Sommer „Allez“, Hoffmann „Ça va?“, Kremer ohne „Moien“).
+- **Einwurf-Fehler** aus Kapitel 2/5/6/7 behoben (Sommer „Allez“, Mme Tidderich „Ça va?“, Kremer ohne „Moien“).
 
 ## Etappe 1, Rest (17./18.11.2026)
 - **„Sagt keiner so“** sitzt in jeder Sprechblase einer Figur (nicht beim Erzähler). Gespeichert nur im Browser
@@ -70,7 +70,7 @@ Kurz: was, warum, Datum. Neueste unten.
 Ein Subagent hat das Drehbuch als (1) 13-jährige Person, die Schule hasst, (2) 16-jährige Person mit sozialer Angst und
 (3) Kinderpsycholog:in gelesen. Umgesetzt (Auswahl):
 - **Sichtbare Therapie-Technik raus:** Kayas Gewöhnungs-Erklärung, „Kann beides sein“ (ausgewogener Gedanke),
-  Atem-Antwort im Test („Vier rein, vier raus“ → „Decke anstarren“), Hoffmanns „Wie war das für dich?“.
+  Atem-Antwort im Test („Vier rein, vier raus“ → „Decke anstarren“), Mme Tidderichs „Wie war das für dich?“.
 - **Erwachsene teilen nichts Persönliches:** Kayas „Kenn ich“ (2×), Laurents Rechtschreib-Geständnis, Sommers „Ich mochte Mathe nie“.
   Kaya schreibt Jugendlichen keine Nachrichten am Wochenende (Grenze) → Zettel.
 - **Keine erkennbar richtige Antwort:** „Fotos nur mit Ja“ → „Jo darf nur Fotos von Jo schicken“ (witzig, gleiche Regel);
@@ -139,7 +139,7 @@ Ziel war ≤ 200 Aufrufe und ≤ 400k Dreiecke – überall erreicht. Was es geb
   Ausgang und Entscheidungen verändern die Geschichte. Fähigkeiten werden still mitgezählt.
 - **Jugendsprache ausdrücklich erwünscht** („wallah“, „sein Vater“, „digga“, „ich schwör“, „lowkey“, „Aura“ …).
   Die alte Regel „keine Jugendsprache“ ist aufgehoben. Jede Figur hat ihren eigenen Slang (FIGUREN.md, „Slang“).
-  Erwachsene reden ohne (Ausnahme: Hoffmann versucht es – als Witz). Derb, sexuell, gegen Herkunft bleibt tabu.
+  Erwachsene reden ohne (Ausnahme: Mme Tidderich versucht es – als Witz). Derb, sexuell, gegen Herkunft bleibt tabu.
 
 ## 18.11. (Nachmittag) – Kapitel 2 und 3 auf rund 30 Minuten, Lese-Ecke, Basketball-Modi
 - **Fünf neue Situations-Spiele**: Sortier-Sprint (Bedürfnis/Wunsch, Gefühlswörter in sechs Ecken), Platzwechsel
@@ -288,7 +288,7 @@ Ziel war ≤ 200 Aufrufe und ≤ 400k Dreiecke – überall erreicht. Was es geb
 ### Runde 3: Neben-Inhalte (Jugend-Panel: Clown, schwache Leserin, Skeptiker)
 - Regelverstöße behoben: echte Buchtitel in der Lese-Ecke durch erfundene ersetzt; Automarke („Golf“) und Plattform-Name
   („YouTube“, „google“) entfernt.
-- Alter Lehrername „M. Hoffmann“ war noch sichtbar (Stundenplan, Pinnwand, Fäden) – jetzt überall Mme Tidderich.
+- Alter Lehrername „Mme Tidderich“ war noch sichtbar (Stundenplan, Pinnwand, Fäden) – jetzt überall Mme Tidderich.
 - Freundschafts-Fäden an Story und Slang angepasst: Linas Comic ist „Gerd die Taube ermittelt“; Jo sagt „digga“ und
   repariert einen Kombi; Ben rechnet in Aura; Kenan sagt „Brudi“; Noah versucht Slang („sus? Sagt man das?“);
   Tidderich tanzt nicht in echt (das Tanz-Video ist der Fake aus Kapitel 8). Weniger Lehrer-Antworten und Therapie-Sätze
