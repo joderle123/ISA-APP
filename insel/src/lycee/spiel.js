@@ -1358,8 +1358,14 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
           if (!S.merke.stundeTipp) { S.merke.stundeTipp = true; setTimeout(() => ui.toast('<b>📚 Die ganze Stunde spielen?</b><span>Freiwillig, jederzeit: 🎟 → Stunden.</span>'), 900); }
         }
       } else if (z.tu) {
-        const mehr = await TUN[z.tu]?.();
+        const mehr = await TUN[z.tu]?.(...(z.mit && LEUTE[z.mit] ? [{ id: z.mit, name: LEUTE[z.mit].name }] : []));   // { tu, mit: 'ayla' }: Mitspieler
         if (Array.isArray(mehr) && mehr.length) await spiele(mehr);
+      } else if (z.hin) {   // Figuren während eines Gesprächs umstellen: { hin: { id: [x, z, yaw, haltung] } }
+        for (const [id, w] of Object.entries(z.hin)) {
+          const p = leute[id]; if (!p) continue; const [x, zz, yaw = 0, h = ''] = w;
+          p.pos.set(x, 0, zz); p.yaw = p.basisYaw = yaw; p.haltung = h; p.f.group.position.copy(p.pos); p.f.group.rotation.y = yaw;
+          p.f.spiele(h === 'redet' ? 'Interact' : h === 'handy' ? 'Idle_Neutral' : 'Idle'); if (p.f.pose) { if (h === 'handy') p.f.pose('handy', 1e6); else if (p.f.poseAktiv === 'handy') p.f.pose(null); }
+        }
       } else if (typeof z.wenn === 'function' && (z.dann || z.sonst)) {   // bedingte Zeilen: { wenn: (merke) => …, dann: [...], sonst: [...] }
         const zs = z.wenn(S.merke, S) ? z.dann : z.sonst;
         if (Array.isArray(zs) && zs.length) await spiele(zs);
@@ -1390,7 +1396,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
 
   // ---------- Besondere Momente ----------
   const TUN = {
-    kurzRaus: async () => { if (ui.atem) await ui.atem(); else await ui.kurzRaus(); },   // in der SePAS: direkt die Atem-Übung (Kreis)
+    kurzRaus: async () => { if (ui.atem) await ui.atem(); else await ui.kurzRaus(); },
+    tt3d: async (pa) => { ui.dialogZu(); if (ttSpiel) await ttSpiel(pa); },   // Tischtennis aus einem Gespräch heraus   // in der SePAS: direkt die Atem-Übung (Kreis)
     sepasBesuch: () => { S.merke.sepasBesuch = (S.merke.sepasBesuch || 0) + 1; sichern(); },
     ...tunN1({ get S() { return S; }, ui, anzeige: (art, wert, plus) => setzeAnzeige(art, wert, plus) }),
     ...tunN2({ get S() { return S; }, ui, anzeige: (art, wert, plus) => setzeAnzeige(art, wert, plus) }),
@@ -3515,6 +3522,13 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     for (let i = 0; i < 9; i++) { const f = new THREE.Mesh(geo, new THREE.MeshBasicMaterial({ color: FARBEN[i % FARBEN.length], transparent: true, opacity: 0.45, toneMapped: false }));
       f.position.set(TANZ.x + ((i % 3) - 1) * 0.9, 0.078, TANZ.z + (Math.floor(i / 3) - 1) * 0.9); f.name = 'tanzfliese'; scene.add(f); tanzFliesen.push(f); } }
   const tanzTakt = (n) => tanzFliesen.forEach((f, i) => { f.material.opacity = (i + n) % 3 === 0 ? 0.95 : 0.3; });
+  // Tischtennis an der Platte (auch aus Gesprächen: { tu: 'tt3d', mit: 'ayla' })
+  const ttSpiel = welt.orte.tischtennis ? async (pa) => { ui.hinweis(null); const STAERKE = { ben: 1.4, jo: 1.6, ayla: 1.3, dario: 1.2, yusuf: 1.1 };
+      // Leute direkt an der Platte gehen kurz zur Seite (sie stehen sonst im Spielfeld)
+      const T = welt.orte.tischtennis, platz = [...statisten.filter((x) => !x.weg), ...Object.values(leute).filter((x) => x.f.group.visible)].filter((x) => Math.hypot(x.f.group.position.x - T.x, x.f.group.position.z - T.z) < 3.6);   // auch Figuren der Geschichte (z. B. Ayla, die gleich die Gegnerin ist)
+      platz.forEach((x) => { x.f.group.visible = false; });
+      try { return await tt3d.spiel({ tisch: T, gegnerId: pa ? pa.id : 'ben', gegnerName: pa ? pa.name : 'Ben', staerke: (pa ? STAERKE[pa.id] || 0.9 : 1.2) * (ui.leicht ? 0.6 : 1), leicht: !!ui.leicht }); }
+      finally { platz.forEach((x) => { if (!x.weg) x.f.group.visible = true; }); } } : null;
   const ia = createInteraktionen({ welt, steuerung, ui, zustand: () => S, sichern: () => sichern(), ton, blattWahl, spindAuf: () => spindAuf(), onKabel: (id) => tiere.kabelWeg(id),
     freiwurf: async (o) => ui.freiwurf(o), skate: () => skaten(), pausenFussball: () => pausenFussball(), elfmeter: async (o) => { if (fahrt) absteigen(); return elfmeter.spiel(o); }, elfmeterAktiv: () => elfmeter.aktiv(), volley: async (o) => { if (fahrt) absteigen(); return volley.spiel(o); }, volleyAktiv: () => volley.aktiv(),
     botengang,
@@ -3535,12 +3549,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     arcade: async (o) => { if (fahrt) absteigen(); ui.hinweis(null); kickerAn = true; try { return await kevinRennt({ ton, ...o }); } finally { kickerAn = false; } },
     billard: async (pa) => { if (fahrt) absteigen(); ui.hinweis(null); input.setEnabled(false); kickerAn = true; const amTisch = statisten.filter((x) => x.d.billardSeite); amTisch.forEach((x) => { x.f.group.visible = false; x.h.x = 1e5; }); const kimZurueck = pa ? () => {} : kimAnDenTisch(27.4, 115.9), kimF = pa ? null : (statisten.find((q) => q.d.stamm === 'kim') || {}).f; try { return await billard.spiel({ gegner: pa ? pa.name : 'Kim', gegnerId: pa ? pa.id : null, figur: kimF && kimF.group.visible ? kimF : null, leicht: !!ui.leicht || (S.merke.billard || 0) - (S.merke.billardSiege || 0) >= 3 }); } finally { kickerAn = false; kimZurueck(); amTisch.forEach((x) => { x.f.group.visible = true; x.h.x = x.p.x; x.h.z = x.p.z; }); input.release('jump'); input.setEnabled(true); } },
     kicker: async (pa) => { if (fahrt) absteigen(); ui.hinweis(null); input.setEnabled(false); kickerAn = true; const amTisch = statisten.filter((x) => x.d.kickerSeite); amTisch.forEach((x) => { x.f.group.visible = false; x.h.x = 1e5; }); const kimZurueck = pa ? () => {} : kimAnDenTisch(20.5, 117.94), kimF = pa ? null : (statisten.find((q) => q.d.stamm === 'kim') || {}).f; try { return await kicker3d.spiel({ gegner: pa ? pa.name : 'Kim', gegnerId: pa ? pa.id : null, figur: kimF && kimF.group.visible ? kimF : null, leicht: !!ui.leicht || (S.merke.kicker || 0) - (S.merke.kickerSiege || 0) >= 3 }); } finally { kickerAn = false; kimZurueck(); amTisch.forEach((x) => { x.f.group.visible = true; x.h.x = x.p.x; x.h.z = x.p.z; }); input.release('jump'); input.setEnabled(true); } },
-    tt3d: welt.orte.tischtennis ? async (pa) => { ui.hinweis(null); const STAERKE = { ben: 1.4, jo: 1.6, ayla: 1.3, dario: 1.2, yusuf: 1.1 };
-      // Leute direkt an der Platte gehen kurz zur Seite (sie stehen sonst im Spielfeld)
-      const T = welt.orte.tischtennis, platz = statisten.filter((x) => !x.weg && Math.hypot(x.f.group.position.x - T.x, x.f.group.position.z - T.z) < 3.6);
-      platz.forEach((x) => { x.f.group.visible = false; });
-      try { return await tt3d.spiel({ tisch: T, gegnerId: pa ? pa.id : 'ben', gegnerName: pa ? pa.name : 'Ben', staerke: (pa ? STAERKE[pa.id] || 0.9 : 1.2) * (ui.leicht ? 0.6 : 1), leicht: !!ui.leicht }); }
-      finally { platz.forEach((x) => { if (!x.weg) x.f.group.visible = true; }); } } : null, freund: (id, n, g) => freund(id, n, g),
+    tt3d: ttSpiel, freund: (id, n, g) => freund(id, n, g),
     bekannte: () => GLEICHALTRIGE.filter((id) => LEUTE[id] && (S.herz[id] || 0) >= 1).sort((a, b) => (S.herz[b] || 0) - (S.herz[a] || 0)).map((id) => ({ id, name: LEUTE[id].name })),
     partner: () => { const b = besteFreunde()[0] || GLEICHALTRIGE.find((id) => S.herz[id] != null); return b ? { id: b, name: LEUTE[b].name } : null; } });
   let iaNah = null;

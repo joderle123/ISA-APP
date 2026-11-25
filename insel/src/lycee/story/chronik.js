@@ -4,11 +4,15 @@ const eins = (m, paare) => { for (const [f, t] of paare) if (typeof f === 'funct
 
 const KAP = {
   1: (m) => [
+    eins(m, [['vertragFoto', 'Beim Klassenvertrag hast du für „Kein Foto ohne Fragen“ gestimmt. Deine Stimme hat entschieden.'], ['vertragEssen', 'Beim Klassenvertrag hast du für „Niemand isst allein“ gestimmt. Deine Stimme hat entschieden.'],
+      ['vertragStopp', 'Beim Klassenvertrag hast du für „Stopp gilt sofort“ gestimmt.'], ['vertragKuchen', 'Beim Klassenvertrag hast du für den Kuchen gestimmt.']]),
     eins(m, [[(x) => x.duPausePlatz === 'noah', 'In der großen Pause hast du bei Noah am Zaun gesessen.'], [(x) => x.duPausePlatz === 'brunnen', 'In der großen Pause warst du am Brunnen.'],
       [(x) => x.duPausePlatz === 'mila', 'In der großen Pause warst du bei Mila auf der Bank.'], [(x) => x.duPausePlatz === 'handy', 'In der großen Pause warst du bei Ben und Jo am Handy.'],
       [(x) => x.duPausePlatz === 'korb', 'In der großen Pause warst du am Korb.'], [(x) => x.duPausePlatz === 'skate', 'In der großen Pause warst du an der Skate-Ecke.'],
-      [(x) => x.duPausePlatz === 'drinnen', 'In der großen Pause warst du drinnen.'], [(x) => x.duPausePlatz === 'allein', 'In der großen Pause warst du allein unterwegs.']]),
-    eins(m, [['selbstAbgestimmt', 'Als das Foto von dir kam, hast du selbst abgestimmt.'], ['fotoWeg', 'Als das Foto von dir kam, hast du das Handy weggesteckt.'], ['fotoBeweis', 'Vom Foto hast du ein Bildschirmfoto gemacht.'],
+      [(x) => x.duPausePlatz === 'drinnen', 'In der großen Pause warst du drinnen.'], [(x) => x.duPausePlatz === 'allein', 'In der großen Pause warst du allein unterwegs.'],
+      [(x) => x.duPausePlatz === 'rundlauf', 'In der großen Pause hast du Tischtennis gespielt.']]),
+    eins(m, [['noahRundlauf', 'Noah hast du leise zum Tischtennis eingeladen. Er ist mitgekommen.'], ['noahVorAllen', 'Noah hast du laut vor allen eingeladen. Er hat Nein gesagt.']]),
+    eins(m, [['fotoRegel', 'Als das Foto kam, hast du an die Regel an der Wand erinnert.'], ['selbstAbgestimmt', 'Als das Foto von dir kam, hast du selbst abgestimmt.'], ['fotoWeg', 'Als das Foto von dir kam, hast du das Handy weggesteckt.'], ['fotoBeweis', 'Vom Foto hast du ein Bildschirmfoto gemacht.'],
       ['fotoLina', 'Als das Foto kam, bist du zu Lina gegangen.'], ['fotoTidderich', 'Das Foto hast du Mme Tidderich gezeigt.']]),
     eins(m, [['abgestimmt', 'Bei der Umfrage über den Jungen aus dem Bus hast du geklickt.'], ['nichtAbgestimmt', 'Bei der Umfrage hast du nicht geklickt.']]),
     eins(m, [['darioFotoGeleugnet', 'Dario gegenüber hast du so getan, als kennst du das Foto nicht.']]),

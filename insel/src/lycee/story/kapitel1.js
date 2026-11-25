@@ -29,13 +29,14 @@ export const SCHRITTE_N1 = [
   // Sehen kann man die Hand nur vom Brunnen und vom Zaun aus. Ab 4:00 sucht Chiara dich mit dem Stundenplan.
   { id: 'pause', kap: 1, tag: 'Montag', uhr: 10.0, titel: 'Große Pause', ziel: 'Fünf Minuten. Ben winkt. Am Brunnen Rafa und Lina. Noah am Zaun. Hinten wird gekorbt.', marker: 'ben',
     start: { teleport: 'eingangHof' },
-    leute: { ben: [4, 14, 0.6, 'redet'], jo: [5.2, 15.4, -2.4, 'handy'], mila: [-20, 11.6, Math.PI, 'sitzt'], noah: [-14, 12.2, 2.6], ayla: [3, 17.6, -2.5, 'redet'], chiara: [2, 18.4, 0.6, 'redet'], rafa: [-6.4, 21.6, 2.2], lina: [-10.6, 15.4, 2.59], yusuf: [27.4, 21.0, -1.2] },
+    leute: { ben: [4, 14, 0.6, 'redet'], jo: [5.2, 15.4, -2.4, 'handy'], mila: [-20, 11.6, Math.PI, 'sitzt'], noah: [-14, 12.2, -0.29], ayla: [-20, 34.3, Math.PI], chiara: [2, 18.4, 0.6, 'handy'], rafa: [-6.4, 21.6, 2.2], lina: [-10.6, 15.4, 2.59], yusuf: [27.4, 21.0, -1.2] },
     frei: { titel: 'Große Pause', dauer: 300,
       faeden: {
         ben: { gespraech: 'n1_umfrage', label: 'Ben und Jo am Handy' },
         rafa: { gespraech: 'n1_rafa', label: 'Junge am Brunnen', bis: 190 },
         lina: { gespraech: 'n1_linaBrunnen', label: 'Lina zeichnet' },
         noah: { gespraech: 'n1_noahZaun', label: 'Noah allein' },
+        ayla: { gespraech: 'n1_rundlauf', label: 'Tischtennis: Ayla sucht einen' },
         yusuf: { gespraech: ['freiwurf', 'freiwurfDanach'], label: 'Basketball' },
         mila: { gespraech: 'mila', label: 'Mila auf der Bank' },
         chiara: { gespraech: 'n1_chiaraPlan', label: 'Chiara sucht dich', ab: 240 },
@@ -45,6 +46,7 @@ export const SCHRITTE_N1 = [
         { t: 200, schnapp: { id: 'duPause', von: [0, -1.2], hoehe: 2.4, abstand: 7, fov: 34, sonst: 'allein', gesehen: 'n1_treppeHand',
           plaetze: [
             { key: 'drinnen', zMax: 1.2, nah: true },
+            { key: 'rundlauf', x: -20, z: 32, r: 5 },
             { key: 'noah', wer: 'noah', r: 3.4, sieht: true },
             { key: 'brunnen', x: -8, z: 18, r: 5.2, sieht: true },
             { key: 'mila', wer: 'mila', r: 3.2 },
@@ -120,11 +122,13 @@ const PAUSE_BILD = {
   noah: 'Du, neben Noah am Zaun. Von schräg oben.', brunnen: 'Du, am Brunnen. Allein. Von schräg oben.', mila: 'Du, bei Mila auf der Bank. Von oben.',
   handy: 'Du, mit Ben und Jo über ein Handy gebeugt. Von oben.', korb: 'Du, am Korb. Mitten im Wurf.', skate: 'Du, an der Skate-Ecke. Von weit weg.',
   drinnen: 'Du, an einer Tür. Von hinten.', allein: 'Du, mitten auf dem Hof. Allein. Von schräg oben.',
+  rundlauf: 'Du, am Tischtennis-Tisch. Mitten im Schlag.',
 };
 const PAUSE_SATZ = {
   noah: 'In der großen Pause hast du bei Noah am Zaun gesessen.', brunnen: 'In der großen Pause warst du am Brunnen.', mila: 'In der großen Pause warst du bei Mila auf der Bank.',
   handy: 'In der großen Pause warst du bei Ben und Jo am Handy.', korb: 'In der großen Pause warst du am Korb.', skate: 'In der großen Pause warst du an der Skate-Ecke.',
   drinnen: 'In der großen Pause warst du drinnen.', allein: 'In der großen Pause warst du allein unterwegs.',
+  rundlauf: 'In der großen Pause hast du Tischtennis gespielt.',
 };
 const NOAH_SIEHT = {
   noah: ['Hinten links. Hat sich in der Pause zu mir gesetzt.', 'Einfach so. Das macht hier keiner.', 'Ich schau nicht hin. Sonst sieht es aus, als würde ich warten.'],
@@ -135,7 +139,10 @@ const NOAH_SIEHT = {
   skate: ['Hinten links war bei den Großen an der Skate-Ecke.', 'Mutig. Oder egal.'],
   drinnen: ['Hinten links war in der Pause drinnen.', 'Wer am ersten Tag reingeht, hat einen Grund.'],
   allein: ['Hinten links ist in der Pause einfach herumgelaufen.', 'Kenn ich. Wenn man nicht weiß, wohin, läuft man.', 'Dann sieht es aus, als hätte man ein Ziel.'],
+  rundlauf: ['Hinten links hat Tischtennis gespielt. Mit Ayla.', 'Ich hab zugeschaut. Vom Zaun aus.', 'Nächstes Mal vielleicht. Wenn mich einer fragt.'],
 };
+const NOAH_MIT = ['Hinten links hat mich zum Tischtennis geholt. Leise. Nicht vor allen.', 'Zwei Runden. Ich hab einen Punkt gemacht.', 'Einen. Aber immerhin.'];
+const NOAH_LAUT = ['„Noah spielt mit!“ Vor allen. Alle haben sich umgedreht.', 'Hinten links wollte nett sein. Glaub ich.', 'Ich hab Nein gesagt. Was sonst.'];
 // Rückblick in Bildern (Gesamtkonzept K1): echte Bilder aus dem eigenen Spiel. „Das war auch“: was man nicht gesehen hat.
 export const RUECKBLICK_N1 = (m, S = {}) => {
   const b = S.bemerkt || {}, platz = m.duPausePlatz;
@@ -306,6 +313,22 @@ export const GESPRAECHE_N1 = {
     { szene: 'chat', id: 'chatNeu', def: CHAT_NEU,
       ausgang: (r) => (r.flags.stumm ? 'stumm' : r.flags.geschrieben ? 'geschrieben' : 'still'),
       folgen: { geschrieben: { staerke: 'kontakt', herz: { ayla: 1, chiara: 1 } }, stumm: { merke: 'gruppeStumm' }, still: { merke: 'nurGelesen' } } },
+    // Gesamtkonzept K1, Szene 3: der Klassenvertrag (Vie et société). Die eigene Regel kann den Ausschlag geben – und gilt dann.
+    ['hoffmann', 'Bevor wir anfangen: unser Klassenvertrag. Sieben Regeln stehen an der Tafel. Vier kommen an die Wand. Für das ganze Jahr.'],
+    ['erzaehler', 'Stopp gilt sofort. · Kein Foto ohne Fragen. · Ausreden lassen. · Handys in der Stunde in die Kiste. · Was hier gesagt wird, bleibt hier, außer bei Gefahr. · Niemand isst allein. · Wer zu spät kommt, bringt Kuchen.'],
+    ['jo', 'Kuchen! Ganz klar Kuchen.'],
+    ['hoffmann', 'Jeder klebt einen Punkt. Nicht die Regel, die gut klingt. Die, die du selbst brauchst.'],
+    { warum: true, wahl: [
+      { t: 'Punkt auf „Kein Foto ohne Fragen“.', merke: ['vertragGewaehlt', 'vertragFoto'], dann: [['erzaehler', 'Ben schaut kurz zu dir rüber. Dann klebt er seinen Punkt woanders hin.']] },
+      { t: 'Punkt auf „Niemand isst allein“.', merke: ['vertragGewaehlt', 'vertragEssen'], dann: [['erzaehler', 'Vorne links nickt Noah. Ganz kurz. Er klebt seinen Punkt daneben.']] },
+      { t: 'Punkt auf „Stopp gilt sofort“.', merke: ['vertragGewaehlt', 'vertragStopp'], dann: [['erzaehler', 'Mila klebt ihren Punkt direkt neben deinen. Ohne dich anzuschauen.']] },
+      { t: 'Punkt auf „Wer zu spät kommt, bringt Kuchen“.', merke: ['vertragGewaehlt', 'vertragKuchen'], herz: { jo: 1 }, dann: [['jo', 'Endlich jemand mit Geschmack.'], ['hoffmann', '(trocken) Notiert, Jo.']] },
+    ] },
+    ['erzaehler', 'Mme Tidderich zählt. Die Punkte hängen eng beieinander.'],
+    { wenn: (m) => m.vertragFoto, dann: [['hoffmann', 'Stopp gilt sofort. Ausreden lassen. Was hier gesagt wird, bleibt hier. Und mit einer Stimme Vorsprung: Kein Foto ohne Fragen.'], ['erzaehler', 'Eine Stimme. Deine.']] },
+    { wenn: (m) => m.vertragEssen, dann: [['hoffmann', 'Stopp gilt sofort. Ausreden lassen. Was hier gesagt wird, bleibt hier. Und mit einer Stimme Vorsprung: Niemand isst allein.'], ['erzaehler', 'Eine Stimme. Deine.']] },
+    { wenn: (m) => m.vertragStopp || m.vertragKuchen, dann: [['hoffmann', 'Stopp gilt sofort. Ausreden lassen. Was hier gesagt wird, bleibt hier. Und: Handys in der Stunde in die Kiste.'], { wenn: (m) => m.vertragKuchen, dann: [['jo', '(leise) Kuchen hat verloren. Skandal.']] }] },
+    ['hoffmann', 'Die vier hängen ab heute hier. Wer sie bricht, muss sie nicht auswendig können. Aber erklären.'],
     { tu: 'n1_deutschRest' },
   ],
   // Fachstunde (nur, wenn eingeschaltet – sonst freiwillig über 🎟 → Stunden)
@@ -399,6 +422,17 @@ export const GESPRAECHE_N1 = {
       { t: '(Danebenstellen. Nichts sagen.)', herz: { lina: 1 }, merke: 'linaDaneben', dann: [['erzaehler', 'Ihr steht da. Sie zeichnet weiter. Einmal schiebt sie das Heft ein Stück zu dir.']] },
     ] },
   ],
+  // Tischtennis: Ayla hat zwei Schläger. Fehlt einer.
+  n1_rundlauf: [
+    { wenn: (m) => m.noahRundlauf, dann: [['ayla', 'Oh, Noah! Endlich mal. Hinten links, du zuerst. Dann er.']],
+      sonst: [['ayla', 'Hinten links! Spielst du? Mir fehlt einer.']] },
+    { wahl: [
+      { t: '„Klar. Eine Runde.“', herz: { ayla: 1 }, merke: 'rundlaufGespielt', dann: [{ tu: 'tt3d', mit: 'ayla' },
+        ['ayla', '(grinst) Okay. Du bist gebucht. Morgen wieder.'],
+        { wenn: (m) => m.noahRundlauf, dann: [['erzaehler', 'Dann ist Noah dran. Er verliert. Er lacht dabei. Einmal, kurz.'], ['noah', '(leise) Hab ich lange nicht gemacht.']] }] },
+      { t: '„Nachher vielleicht.“', dann: [['ayla', 'Okay. Der Tisch läuft nicht weg.']] },
+    ] },
+  ],
   // Um 3:20 – nur vom Brunnen und vom Zaun aus zu sehen
   n1_treppeHand: [
     ['erzaehler', 'Oben auf der Treppe, halb hinter der Säule: eine Hand. Ein Handy. Es zeigt hier rüber.'],
@@ -418,10 +452,22 @@ export const GESPRAECHE_N1 = {
     ] },
   ],
   n1_noahZaun: [
-    ['erzaehler', 'Noah sitzt am Zaun. Ein Buch auf den Knien. Er liest nicht.'],
-    ['noah', '(ohne aufzuschauen) Der Platz ist frei. Falls du fragst.'],
+    ['erzaehler', 'Noah lehnt am Zaun. Ein Buch in der Hand. Er liest nicht.'],
+    { blick: { titel: 'Noah', blicke: 2, text: 'Er hat dich noch nicht bemerkt. Zwei Blicke. Was siehst du?',
+      personen: [{ wer: 'noah', name: 'Noah', signale: [
+        { wo: 'Augen', t: 'Er schaut immer wieder rüber zum Tischtennis-Tisch. Dann schnell zurück ins Buch.', key: 'noahTisch' },
+        { wo: 'Füße', t: 'Ein Fuß wippt. Im Takt vom Ball.' },
+        { wo: 'Hände', t: 'Das Brot liegt eingepackt auf dem Buch. Seit der Pause angefangen hat.' } ] }],
+      uebersehen: [{ key: 'noahTisch', t: 'Noah schaut immer wieder zum Tischtennis-Tisch.' }] } },
+    ['noah', '(ohne aufzuschauen) Die Bank ist frei. Falls du fragst.'],
     { wahl: [
-      { t: 'Hinsetzen. Nichts sagen.', herz: { noah: 1 }, merke: 'pauseNoah', dann: [['erzaehler', 'Ihr sitzt. Zwei Minuten. Es ist nicht komisch.'], ['noah', '(leise) Danke.']] },
+      { t: '(Leise, nur für ihn) „Ayla sucht noch einen fürs Tischtennis. Zwei Runden?“', bemerkt: 'noahTisch', weil: 'Weil du gesehen hast, wohin er schaut.', staerke: 'einbeziehen', herz: { noah: 2 }, merke: ['pauseNoah', 'noahRundlauf'],
+        dann: [['noah', '(schaut hoch) … Zwei Runden.'], ['noah', 'Wenn ich schlecht bin, hörst du auf zu zählen.'], ['erzaehler', 'Er packt das Brot weg. Er kommt mit.'],
+          { hin: { noah: [-21.3, 30.2, 0.25] } }] },
+      { t: '(Laut, damit es alle hören) „Hey, Noah spielt Tischtennis mit!“', bemerkt: 'noahTisch', weil: 'Weil du gesehen hast, wohin er schaut.', merke: 'noahVorAllen',
+        dann: [['erzaehler', 'Ein paar drehen sich um. Jo grinst schon.'], ['noah', '(leise, rot) Nein. Lass.'], ['erzaehler', 'Er schaut wieder ins Buch. Fester als vorher.'],
+          { pult: { g: 'Scham', w: 5 } }, ['erzaehler', 'Du wolltest helfen. Jetzt stehen alle zwei blöd da.']] },
+      { t: '(Auf die Bank setzen. Nichts sagen.)', herz: { noah: 1 }, merke: 'pauseNoah', dann: [['erzaehler', 'Du sitzt. Er lehnt daneben. Zwei Minuten. Es ist nicht komisch.'], ['noah', '(leise) Danke.']] },
       { t: '„Was liest du?“', herz: { noah: 1 }, merke: 'pauseNoah', dann: [['noah', 'Nichts. Ich tu nur so.'], ['noah', 'Dann fragt keiner, warum ich allein bin.']] },
       { t: '„Kommst du mit zu den anderen?“', dann: [['noah', '(schüttelt den Kopf) Die anderen kommen schon klar.']] },
     ] },
@@ -431,16 +477,20 @@ export const GESPRAECHE_N1 = {
     { wenn: (m) => !m.frei_pause_noah, dann: [['erzaehler', 'Noah steht als Letzter auf. Keiner hat ihn heute angesprochen.']] },
     { wenn: (m) => !m.frei_pause_rafa && !m.rafaGezeigt, dann: [['erzaehler', 'Rafa ist schon drin. Die Kapuze auf.']] },
     { wenn: (m) => !m.frei_pause_chiara, dann: [['chiara', '(im Vorbeigehen, knapp) Dein Stundenplan. Hier. Ich hab dich gesucht.'], { tu: 'n1_chiaraKurz' }] },
+    { pult: null },
   ],
   n1_kantine: [
     ['erzaehler', 'Es riecht nach Suppe und nassem Boden.'],
     ['kremer', 'Suppe oder Pasta? … Hier.'],
     { tu: 'tablett' },
     // Andere Sicht (Gesamtkonzept K1, Szene 6): ein paar Sekunden durch Noahs Augen. Was er gesehen hat, hängt davon ab, wo du in der Pause warst.
-    { sicht: (m) => ({ wer: 'noah', name: 'Noah', auf: 'du', gedanken: NOAH_SIEHT[m.duPausePlatz] || NOAH_SIEHT.allein }) },
+    { sicht: (m) => ({ wer: 'noah', name: 'Noah', auf: 'du', gedanken: m.noahRundlauf ? NOAH_MIT : m.noahVorAllen ? NOAH_LAUT : NOAH_SIEHT[m.duPausePlatz] || NOAH_SIEHT.allein }) },
     { wenn: (m) => m.duPausePlatz === 'korb' || m.duPausePlatz === 'handy', dann: [['erzaehler', 'Am Fenster winkt Ben. Du warst heute in seiner Pause. Das zählt hier.']] },
     { wenn: (m) => m.duPausePlatz === 'noah', dann: [['erzaehler', 'Hinten links nimmt Noah seinen Rucksack vom Stuhl neben sich. Ohne aufzuschauen.']] },
-    { wenn: (m) => !['korb', 'handy', 'noah'].includes(m.duPausePlatz), dann: [['erzaehler', 'Keiner winkt. Du stehst mit dem Tablett. Drei Sekunden. Länger nicht.']] },
+    { wenn: (m) => m.duPausePlatz === 'rundlauf' && !m.noahRundlauf, dann: [['erzaehler', 'Am Fenster rückt Ben ein Stück. Ayla hat erzählt, dass du einen fiesen Aufschlag hast.']] },
+    { wenn: (m) => m.noahRundlauf, dann: [['erzaehler', 'Hinten links schiebt Noah den Stuhl neben sich ein Stück raus. Mit dem Fuß. Ohne aufzuschauen.']] },
+    { wenn: (m) => m.vertragEssen && !m.noahRundlauf, dann: [['erzaehler', 'Hinten links sitzt Noah allein. Seit heute Morgen hängt an der Wand: Niemand isst allein. Deine Stimme.']] },
+    { wenn: (m) => !['korb', 'handy', 'noah', 'rundlauf'].includes(m.duPausePlatz) && !m.noahRundlauf, dann: [['erzaehler', 'Keiner winkt. Du stehst mit dem Tablett. Drei Sekunden. Länger nicht.']] },
     ['kremer', '(nickt nach hinten) Hinten links ist frei.'],
   ],
   tisch_noah: [
@@ -481,6 +531,8 @@ export const GESPRAECHE_N1 = {
         dann: [{ pult: { plus: 2 } }, ['erzaehler', 'Klick. 13:31. Du zoomst rein.'], ['erzaehler', 'Von oben aufgenommen. Wer das gemacht hat, stand höher als du.'], ['erzaehler', 'Zwanzig Sekunden starrst du aufs Display. Jo lacht. Über das Foto? Über dich?']] },
       { t: 'Zu Lina gehen.', bemerkt: 'linaBlick', weil: 'Weil du gesehen hast, wohin Lina in der Pause geschaut hat.', merke: 'fotoLina', herz: { lina: 2 }, staerke: 'mut',
         dann: [['jo', '(hinter dir) Läuft weg. Okay.'], ['erzaehler', 'Lina sitzt am Brunnen. Das Heft ist zu.'], ['lina', '(leise) Die Treppe. Oder?'], ['erzaehler', 'Mehr sagt sie nicht. Aber sie rückt ein Stück, damit du dich setzen kannst.']] },
+      { t: '„Kein Foto ohne Fragen. Steht seit heute Morgen an der Wand.“', wenn: (m) => m.vertragFoto, merke: 'fotoRegel', staerke: 'klar', herz: { mila: 1 },
+        dann: [['jo', '(lacht) Der Account war nicht in unserer Klasse.'], ['erzaehler', 'Aber er hört auf zu lachen. Ayla steckt ihr Handy weg.'], ['ayla', 'Stimmt eigentlich.'], { pult: { plus: -2 } }] },
       { t: 'Zu Mme Tidderich gehen und ihr das Handy zeigen.', merke: 'fotoTidderich', staerke: 'hilfe',
         dann: [['hoffmann', '(schaut lange aufs Display) Danke, dass du mir das zeigst.'], ['hoffmann', 'Das ist nicht in Ordnung. Ich kümmere mich. Ohne dich vor allen zu nennen.'], ['jo', '(leise, hinter dir) Petze?'], ['erzaehler', 'Mme Tidderich schreibt sich die Uhrzeit auf. 13:32.']] },
     ] },
