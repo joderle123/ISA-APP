@@ -2,6 +2,7 @@
 gebraucht werden, aber in der Latein-Auswahl fehlen:
 
   U+2190–U+2193  Pfeile ← ↑ → ↓ (in der Strichstärke der Schrift gezeichnet)
+  U+2248, U+2260 ≈ und ≠ (Mathe: Runden, Vergleichen), nach dem „=“ der Schrift
   U+202F         schmales geschütztes Leerzeichen (Französisch vor ; ! ?)
 
 Andika trägt unter der SIL Open Font License den reservierten Namen „Andika“.
@@ -54,6 +55,36 @@ def pfeil(laenge, t):
     return kont
 
 
+def strich_entlang(punkte, t):
+    """Kontur eines Strichs der Dicke t entlang einer Linie (Liste von Punkten)."""
+    h = t / 2
+    oben, unten = [], []
+    for i, (x, y) in enumerate(punkte):
+        a = punkte[max(0, i - 1)]
+        b = punkte[min(len(punkte) - 1, i + 1)]
+        dx, dy = b[0] - a[0], b[1] - a[1]
+        n = math.hypot(dx, dy) or 1
+        nx, ny = -dy / n, dx / n
+        oben.append((x + nx * h, y + ny * h))
+        unten.append((x - nx * h, y - ny * h))
+    return oben + list(reversed(unten))
+
+
+def welle(x0, x1, yc, a, schritte=28):
+    """Tilde: von links unten über einen Berg und ein Tal nach rechts oben."""
+    v0, v1 = -0.17, 1.17
+    return [(x0 + (x1 - x0) * i / schritte, yc + a * math.sin(2 * math.pi * (v0 + (v1 - v0) * i / schritte))) for i in range(schritte + 1)]
+
+
+def konturen_von(glyph, glyf):
+    koord, enden, _ = glyph.getCoordinates(glyf)
+    out, start = [], 0
+    for e in enden:
+        out.append([tuple(koord[i]) for i in range(start, e + 1)])
+        start = e + 1
+    return out
+
+
 def glyph_aus(konturen):
     pen = TTGlyphPen(None)
     for k in konturen:
@@ -93,6 +124,18 @@ def ergaenzen(pfad):
     neu[0x2191] = ('arrowup', verschiebe(hoch, lambda x, y: (senk_breite / 2 - y, x)), senk_breite)
     neu[0x2193] = ('arrowdown', verschiebe(hoch, lambda x, y: (senk_breite / 2 + y, versal - x)), senk_breite)
     neu[0x202F] = ('uni202F', [], round(leer * 0.6))
+    if 0x3D in cmap:                       # „=“: Breite, Lage der Balken und Strichstärke für ≈ und ≠
+        gl = glyf[cmap[0x3D]]
+        konturen_gl = konturen_von(gl, glyf)
+        st = max(0.05 * upm, min(0.12 * upm, (gl.yMax - gl.yMin) * 0.3))
+        y1, y2 = gl.yMin + st / 2, gl.yMax - st / 2
+        abst = y2 - y1
+        a = abst * 0.24
+        vor = hmtx[cmap[0x3D]][0]
+        neu[0x2248] = ('approxequal', [strich_entlang(welle(gl.xMin, gl.xMax, y, a), st) for y in (y1 - a * 0.15, y2 + a * 0.15)], vor)
+        w = gl.xMax - gl.xMin
+        schraeg = strich_entlang([(gl.xMin + w * 0.3, gl.yMin - abst * 0.55), (gl.xMax - w * 0.3, gl.yMax + abst * 0.55)], st)
+        neu[0x2260] = ('notequal', konturen_gl + [schraeg], vor)
 
     reihenfolge = list(f.getGlyphOrder())
     angelegt = []

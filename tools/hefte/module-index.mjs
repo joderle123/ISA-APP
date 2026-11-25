@@ -15,6 +15,9 @@ const nurPruefen = process.argv.includes('--pruefen')
 
 // Reihenfolge der Fächer auf der Seite
 const FAECHER = ['deutsch', 'franzoesisch', 'mathe', 'culge', 'vieso', 'atelier', 'eduph']
+// Module im kompakten Format (alte Toolbox-Hefte + neue Erklärungen): node tools/hefte/mathe-kompakt.mjs <nr>, dann
+// npx tsx --tsconfig tsconfig.scripts.json scripts/modulheft.tsx offline/module --nur=mathe-m<nr>
+const KOMPAKT = new Set(['mathe-m3'])
 const mb = (datei) => Math.round((statSync(datei).size / 1048576) * 10) / 10
 
 const ids = readdirSync(INHALT)
@@ -35,7 +38,8 @@ for (const id of ids) {
   for (const name of [heft, loes]) {
     const quelle = join(ROOT, 'tmp/hefte', id, name + '.pdf')
     const ziel = join(ZIEL, name + '.pdf')
-    if (!nurPruefen && existsSync(quelle)) copyFileSync(quelle, ziel)
+    // Kompakte Mathe-Hefte (Rückmeldung der Mathelehrerin) baut scripts/modulheft.tsx direkt nach offline/module – nicht überschreiben
+    if (!nurPruefen && existsSync(quelle) && !KOMPAKT.has(id)) copyFileSync(quelle, ziel)
     if (existsSync(ziel)) dateien[name] = mb(ziel)
     else fehlt.push(name)
   }

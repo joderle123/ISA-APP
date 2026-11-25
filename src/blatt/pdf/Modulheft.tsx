@@ -17,6 +17,7 @@ import { BlattSeiten, blattInhalt, type HeftAngaben } from './BlattDokument'
 import { MASSE, SCHRIFT, SEITE, typo } from './stil'
 import { URHEBER, URHEBER_NAME } from '../../lib/urheber'
 import { CDSE_LOGO, CDSE_LOGO_SEITEN } from '../../lib/cdse-logo'
+import HEFTSEITEN from '../heftseiten.json'
 
 const SEITE_B = 595.28
 const WARM = '#F2C14E'
@@ -42,18 +43,18 @@ const TX = {
     aufEinenBlick: 'Das lernst du in diesem Heft',
     soArbeitest: 'So arbeitest du mit dem Heft',
     arbeitsweise: [
-      'Jede Lektion hat zwei Seiten: zuerst die Regel mit einem Beispiel, dann die Aufgaben.',
+      'Jede Lektion beginnt auf einer neuen Seite: zuerst die Regel mit Beispielen, dann die Aufgaben.',
       'Die Punkte an der Aufgabennummer zeigen die Stufe: § Basis, §§ Kern, §§§ Plus. Fang mit der Basis an.',
       'Am Ende jeder Lektion steht ein Kurz-Check. Hinten im Heft: der Wortschatz Deutsch – Französisch und dein Lernstand.',
     ],
     gutKann: 'Das kann ich schon gut:',
     hilfe: 'Hier brauche ich noch Hilfe:',
     loesungen: 'Lösungen und Hinweise',
-    loesungenUnter: 'Für die Lehrperson: Ziel, Ablauf, fachlicher Hintergrund und Lösungen zu allen 12 Lektionen.',
+    loesungenUnter: 'Für die Lehrperson: Ziel, Ablauf, fachlicher Hintergrund und Lösungen zu allen {n} Lektionen.',
     lehrerHinweise: [
-      'Das Heft für die Jugendlichen gibt es als eigene Datei. Jede Lektion umfasst dort zwei Seiten.',
-      'Die Punkte an den Aufgaben zeigen die Stufe: 1 = Basis, 2 = Kern, 3 = Plus. Aufgabe 6 ist jeweils für alle, die fertig sind.',
-      'Lektionen 10 und 12 enthalten Messaufgaben: das Heft in Originalgröße (100 %) drucken, nicht „an Seite anpassen“.',
+      'Das Heft für die Jugendlichen gibt es als eigene Datei. Die Seitenzahlen im Inhalt gelten für dieses Lösungsheft.',
+      'Die Punkte an den Aufgaben zeigen die Stufe: 1 = Basis, 2 = Kern, 3 = Plus.',
+      'Für Messaufgaben das Heft in Originalgröße (100 %) drucken, nicht „an Seite anpassen“.',
     ],
     hinweise: 'Hinweise',
   },
@@ -77,18 +78,18 @@ const TX = {
     aufEinenBlick: 'Ce que tu apprends dans ce cahier',
     soArbeitest: 'Comment utiliser ce cahier',
     arbeitsweise: [
-      'Chaque leçon a deux pages : d’abord la règle avec un exemple, puis les exercices.',
+      'Chaque leçon commence sur une nouvelle page : d’abord la règle avec des exemples, puis les exercices.',
       'Les points à côté du numéro indiquent le niveau : § base, §§ standard, §§§ approfondissement. Commence par la base.',
       'Chaque leçon se termine par un petit bilan. À la fin du cahier : le vocabulaire français – allemand et ton bilan.',
     ],
     gutKann: 'Ce que je sais déjà bien faire :',
     hilfe: 'Là où j’ai encore besoin d’aide :',
     loesungen: 'Solutions et conseils',
-    loesungenUnter: 'Pour l’enseignant·e : objectif, déroulement, repères théoriques et solutions des 12 leçons.',
+    loesungenUnter: 'Pour l’enseignant·e : objectif, déroulement, repères théoriques et solutions des {n} leçons.',
     lehrerHinweise: [
-      'Le cahier pour les jeunes existe sous forme de fichier séparé. Chaque leçon y occupe deux pages.',
-      'Les points à côté des exercices indiquent le niveau : 1 = base, 2 = standard, 3 = approfondissement. L’exercice 6 est pour ceux qui ont fini.',
-      'Les leçons 10 et 12 contiennent des mesures : imprimer le cahier en taille réelle (100 %), pas « ajuster à la page ».',
+      'Le cahier pour les jeunes existe sous forme de fichier séparé. Les numéros de page du sommaire valent pour ce cahier de solutions.',
+      'Les points à côté des exercices indiquent le niveau : 1 = base, 2 = standard, 3 = approfondissement.',
+      'Pour les exercices de mesure, imprimer le cahier en taille réelle (100 %), pas « ajuster à la page ».',
     ],
     hinweise: 'Conseils',
   },
@@ -103,13 +104,24 @@ export function modulLektionen(modul: Modul): { id: string; nr: number; thema: n
   return out
 }
 
-/** Seitenzahlen im Heft: Deckblatt 1, Inhalt 2, dann je Lektion zwei Seiten (Lösungsheft: eine), danach der Anhang. */
-export function heftSeiten(modul: Modul, loesungen: boolean) {
+/** Schlüssel für die gemessenen Seiten einer Heft-Fassung (src/blatt/heftseiten.json, schreibt scripts/modulheft.tsx). */
+export function heftSchluessel(modul: Modul, sprache: Sprache, loesungen: boolean): string {
+  return `${modul.id}|${sprache}|${loesungen ? 'loesungen' : 'heft'}`
+}
+
+/** Seitenzahlen im Heft: Deckblatt 1, Inhalt 2, dann je Lektion zwei Seiten (Lösungsheft: eine) oder gemessen, danach der Anhang.
+ *  Längere Lektionen (z. B. Mathe kompakt mit Übungspäckchen) stehen gemessen in heftseiten.json. */
+export function heftSeiten(modul: Modul, loesungen: boolean, sprache: Sprache = 'de') {
   const lektionen = modulLektionen(modul)
   const je = loesungen ? 1 : 2
-  const start = new Map(lektionen.map((l, i) => [l.id, 3 + i * je]))
-  const nachLektionen = 3 + lektionen.length * je
-  return { start, wortschatz: nachLektionen, lernstand: nachLektionen + 1, gesamt: loesungen ? nachLektionen - 1 : nachLektionen + 1 }
+  const gemessen = (HEFTSEITEN as Record<string, Record<string, number>>)[heftSchluessel(modul, sprache, loesungen)] ?? {}
+  const start = new Map<string, number>()
+  let s = 3
+  for (const l of lektionen) {
+    start.set(l.id, s)
+    s += gemessen[l.id] ?? je
+  }
+  return { start, wortschatz: s, lernstand: s + 1, gesamt: loesungen ? s - 1 : s + 1 }
 }
 
 // --- Kopf und Fuß der Heftseiten (wie auf den Blättern) ------------------------------
@@ -390,7 +402,7 @@ function Deckblatt({ modul, sprache, p, loesungen }: { modul: Modul; sprache: Sp
           <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 9.5, letterSpacing: 1.6, color: p.mittel }}>{`${modul.fach[sprache].toUpperCase()} · ${modul.klasse}`}</Text>
           <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 54, lineHeight: 1.05, color: '#FFFFFF', marginTop: 10, letterSpacing: -1 }}>{`${t.modul} ${modul.nr}`}</Text>
           <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 23, lineHeight: 1.18, color: '#FFFFFF', marginTop: 12, letterSpacing: -0.3 }}>{typo(modul.titel[sprache], sprache)}</Text>
-          <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 10.5, lineHeight: 1.5, color: weiss(0.86), marginTop: 14 }}>{typo(loesungen ? t.loesungenUnter : modul.untertitel[sprache], sprache)}</Text>
+          <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 10.5, lineHeight: 1.5, color: weiss(0.86), marginTop: 14 }}>{typo(loesungen ? t.loesungenUnter.replace('{n}', String(modulLektionen(modul).length)) : modul.untertitel[sprache], sprache)}</Text>
           {loesungen ? (
             <View style={{ alignSelf: 'flex-start', marginTop: 16, backgroundColor: WARM, borderRadius: 5, paddingHorizontal: 8, paddingVertical: 4 }}>
               <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 9, letterSpacing: 1, color: '#1F2A44' }}>{t.loesungen.toUpperCase()}</Text>
@@ -468,7 +480,7 @@ function Zeile({ nr, titel, unter, seite, p }: { nr: string | number; titel: str
 
 function InhaltSeite({ modul, blaetter, sprache, p, loesungen }: { modul: Modul; blaetter: Map<string, Blatt>; sprache: Sprache; p: Palette; loesungen: boolean }) {
   const t: Tx = TX[sprache]
-  const seiten = heftSeiten(modul, loesungen)
+  const seiten = heftSeiten(modul, loesungen, sprache)
   const lektionen = modulLektionen(modul)
   const c = ctxFuer(p, sprache)
   const ty = (s: string) => typo(s, sprache)
@@ -624,6 +636,27 @@ function LernstandSeite({ modul, blaetter, sprache, p }: { modul: Modul; blaette
 
 // --- Heft und Lösungsheft ---------------------------------------------------------------------------
 
+function lektionSeiten(modul: Modul, l: { id: string; nr: number; thema: number }, blaetter: Map<string, Blatt>, sprache: Sprache, loesungen: boolean) {
+  const t: Tx = TX[sprache]
+  const b = blaetter.get(l.id)
+  if (!b) return null
+  const thema = modul.themen[l.thema].titel[sprache]
+  const heft: HeftAngaben = {
+    reiter: `${t.lektion} ${l.nr}`,
+    meta: `${modul.fach[sprache]}  ·  ${t.modul} ${modul.nr}  ·  ${typo(thema, sprache)}`,
+    fuss: `${modul.fach[sprache]} · ${t.modul} ${modul.nr} · ${t.lektion} ${l.nr}`,
+    lernziel: modul.lernziele[l.id]?.[sprache],
+    zielWort: t.ziel,
+  }
+  return <BlattSeiten key={l.id} blatt={b} opt={{ sprache, schueler: !loesungen, lehrer: loesungen, heft }} />
+}
+
+/** Eine Lektion allein, genau wie im Heft – zum Zählen ihrer Seiten (scripts/modulheft.tsx). */
+export function LektionDokument({ modul, lektion, blaetter, sprache, loesungen }: { modul: Modul; lektion: string; blaetter: Map<string, Blatt>; sprache: Sprache; loesungen: boolean }) {
+  const l = modulLektionen(modul).find((x) => x.id === lektion)
+  return <Document>{l ? lektionSeiten(modul, l, blaetter, sprache, loesungen) : null}</Document>
+}
+
 export function ModulheftDokument({ modul, blaetter, sprache = 'de', loesungen = false }: { modul: Modul; blaetter: Map<string, Blatt>; sprache?: Sprache; loesungen?: boolean }) {
   const t: Tx = TX[sprache]
   const lektionen = modulLektionen(modul)
@@ -634,19 +667,7 @@ export function ModulheftDokument({ modul, blaetter, sprache = 'de', loesungen =
     <Document title={titel} author={URHEBER_NAME} creator="CDSE Toolbox" producer="CDSE Toolbox" language={sprache === 'fr' ? 'fr' : 'de'}>
       <Deckblatt modul={modul} sprache={sprache} p={p} loesungen={loesungen} />
       <InhaltSeite modul={modul} blaetter={blaetter} sprache={sprache} p={p} loesungen={loesungen} />
-      {lektionen.map((l) => {
-        const b = blaetter.get(l.id)
-        if (!b) return null
-        const thema = modul.themen[l.thema].titel[sprache]
-        const heft: HeftAngaben = {
-          reiter: `${t.lektion} ${l.nr}`,
-          meta: `${modul.fach[sprache]}  ·  ${t.modul} ${modul.nr}  ·  ${typo(thema, sprache)}`,
-          fuss: `${modul.fach[sprache]} · ${t.modul} ${modul.nr} · ${t.lektion} ${l.nr}`,
-          lernziel: modul.lernziele[l.id]?.[sprache],
-          zielWort: t.ziel,
-        }
-        return <BlattSeiten key={l.id} blatt={b} opt={{ sprache, schueler: !loesungen, lehrer: loesungen, heft }} />
-      })}
+      {lektionen.map((l) => lektionSeiten(modul, l, blaetter, sprache, loesungen))}
       {!loesungen ? <WortschatzSeite modul={modul} sprache={sprache} p={p} /> : null}
       {!loesungen ? <LernstandSeite modul={modul} blaetter={blaetter} sprache={sprache} p={p} /> : null}
     </Document>

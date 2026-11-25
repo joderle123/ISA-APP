@@ -1107,9 +1107,15 @@ function Einschaetzung({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'einschae
   const n = b.optionen.length
   const optB = Math.min(64, (c.breite * 0.46) / n)
   return (
-    <View style={{ borderWidth: 0.8, borderColor: NEUTRAL.rahmen, borderRadius: 8 }}>
-      <View wrap={false} style={{ flexDirection: 'row', backgroundColor: c.design ? mischen(c.p.zart, c.p.mittel, 0.5) : c.p.zart, borderTopLeftRadius: 7.2, borderTopRightRadius: 7.2, paddingVertical: 5 }}>
-        <View style={{ flex: 1 }} />
+    <View wrap={!b.titel} style={{ borderWidth: 0.8, borderColor: NEUTRAL.rahmen, borderRadius: 8 }}>
+      <View wrap={false} style={{ flexDirection: 'row', alignItems: 'center', backgroundColor: c.design ? mischen(c.p.zart, c.p.mittel, 0.5) : c.p.zart, borderTopLeftRadius: 7.2, borderTopRightRadius: 7.2, paddingVertical: 5 }}>
+        <View style={{ flex: 1, paddingLeft: 9 }}>
+          {b.titel ? (
+            <Fliess c={c} klein fett farbe={c.p.tief}>
+              {t(c, b.titel)}
+            </Fliess>
+          ) : null}
+        </View>
         {b.optionen.map((o, i) => {
           const farbe = b.kopffarben?.[i]
           return (
@@ -1131,8 +1137,8 @@ function Einschaetzung({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'einschae
             alignItems: 'center',
             borderTopWidth: 0.8,
             borderTopColor: NEUTRAL.haarlinie,
-            paddingTop: 5,
-            paddingBottom: r === b.items.length - 1 ? 7 : 5,
+            paddingTop: b.titel ? 3.5 : 5,
+            paddingBottom: r === b.items.length - 1 ? (b.titel ? 5 : 7) : b.titel ? 3.5 : 5,
             backgroundColor: r % 2 ? '#FBFCFD' : '#FFFFFF',
             // letzte Zeile: Ecken des Rahmens frei lassen
             borderBottomLeftRadius: r === b.items.length - 1 ? 7.2 : 0,
@@ -3013,7 +3019,7 @@ function istFest(b: Baustein, layout: string): boolean {
     case 'einschaetzung':
       return b.items.length <= 9
     case 'schritte':
-      return b.items.length <= 5
+      return !b.teilbar && b.items.length <= 5
     case 'tagesplan':
       return b.zeilen.length + (b.leer ?? 0) <= 8
     case 'dialog':
@@ -3116,7 +3122,7 @@ function abschnittInhalt(c: Ctx, liste: Baustein[], letzterAbschnitt = true, sei
       i++
     } else {
       out.push(
-        <View key={i} id={c.ids?.get(b)} break={umbruch} wrap={!istFest(b, c.m.layout) && !wachs} style={style} minPresenceAhead={b.art === 'aufgabe' ? c.m.zeile * 4 : undefined}>
+        <View key={i} id={c.ids?.get(b)} break={umbruch} wrap={!istFest(b, c.m.layout) && !wachs} style={style} minPresenceAhead={b.art === 'aufgabe' ? c.m.zeile * 4 : b.art === 'text' && b.text.length < 90 && /:\s*$/.test(b.text) ? c.m.zeile * 3 : undefined}>
           <EinBaustein c={c} b={b} grow={wachs} />
         </View>,
       )

@@ -147,7 +147,7 @@ export type Baustein =
   | { art: 'wortspeicher'; titel?: string; items: string[] }
   | { art: 'skala'; frage?: string; von: string; bis: string; stufen?: 5 | 10 | 11; gesichter?: boolean }
   /** `kopffarben`: Farbe je Option im Spaltenkopf (z. B. ['gruen', 'gelb', 'rot']). */
-  | { art: 'einschaetzung'; items: string[]; optionen: string[]; kopffarben?: Farbwort[] }
+  | { art: 'einschaetzung'; items: string[]; optionen: string[]; kopffarben?: Farbwort[]; /** Überschrift links im Tabellenkopf (z. B. „Kurz-Check: Wie sicher bist du?“) – die Tabelle bleibt dann auf einer Seite. */ titel?: string }
   | { art: 'zuordnen'; links: string[]; rechts: string[]; titel?: [string, string] }
   /** `woerter`: eigene Wörter unter den Gesichtern (statt der Standardwörter, z. B. « content » statt « joie »). */
   | { art: 'gefuehle'; gefuehle: Gefuehl[]; modus?: 'benennen' | 'einkreisen' | 'nur'; leer?: number; spalten?: number; woerter?: string[] }
@@ -168,7 +168,7 @@ export type Baustein =
   | { art: 'zielscheibe'; ringe: string[]; mitte?: string; daneben?: boolean }
   | { art: 'hand'; finger?: string[]; mitte?: string }
   | { art: 'mindmap'; mitte: string; aeste?: string[]; anzahl?: number }
-  | { art: 'schritte'; items: Stufentext[]; stil?: 'liste' | 'kette' | 'weg'; linien?: number }
+  | { art: 'schritte'; items: Stufentext[]; stil?: 'liste' | 'kette' | 'weg'; linien?: number; /** Liste darf zwischen zwei Schritten auf die nächste Seite umbrechen (sonst bis 5 Schritte am Stück). */ teilbar?: boolean }
   | { art: 'plan'; ziel?: string; tage?: string[]; zeilen: string[]; symbol?: 'gesicht' | 'kasten' | 'stern' }
   | { art: 'tagesplan'; zeilen: { zeit?: string; text?: string; bild?: BildId }[]; leer?: number }
   | { art: 'atmen'; uebung: 'quadrat' | 'ballon' | 'blume' | 'fuenf-sinne' | 'finger' }

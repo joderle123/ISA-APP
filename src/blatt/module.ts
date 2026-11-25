@@ -136,7 +136,7 @@ export const MATHE_MODUL_3: Modul = {
   wortschatz: [
     { thema: 0, de: 'runden', fr: 'arrondir' },
     { thema: 0, de: 'ungefähr', fr: 'environ' },
-    { thema: 0, de: 'aufrunden, abrunden', fr: 'arrondir à l’unité supérieure, inférieure' },
+    { thema: 0, de: 'aufrunden, abrunden', fr: 'arrondir vers le haut, vers le bas' },
     { thema: 0, de: 'die Einheit (ganze Zahl)', fr: 'l’unité (nombre entier)' },
     { thema: 0, de: 'multiplizieren, malnehmen', fr: 'multiplier' },
     { thema: 0, de: 'die Nachkommastelle', fr: 'la décimale' },
