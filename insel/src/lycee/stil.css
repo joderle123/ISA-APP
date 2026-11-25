@@ -1332,3 +1332,10 @@ kbd { display: inline-block; min-width: 1.5em; padding: 0 .35em; margin-right: .
 .sz-nochmal .sz-nm-sy { font-size: 42px; }
 .sz-nochmal p { font-size: 17px; line-height: 1.45; max-width: 34em; margin: 8px auto; }
 .sz-nochmal small { display: block; opacity: .75; margin-top: 6px; }
+/* Chat: nachlesen, Pause, erste Erklärung */
+.sz-verlauf-wrap { position: relative; }
+.sz-neu { position: absolute; left: 50%; bottom: 8px; transform: translateX(-50%); border: 0; border-radius: 999px; padding: 6px 14px; background: #2d3d5c; color: #fff; font: 600 14px/1.2 inherit; box-shadow: 0 2px 8px rgba(0,0,0,.25); cursor: pointer; }
+.sz-chat-info { margin: 0; padding: 8px 14px; background: #fff8e6; color: #5b4a1f; font-size: 14px; line-height: 1.35; border-top: 1px solid #f1e3bd; }
+.sz-unten .ly-link + .ly-link { margin-left: 12px; }
+.sz-chat.pausiert .sz-verlauf { box-shadow: inset 0 0 0 3px #f2b134; }
+.sz-chat.pausiert .sz-uhr::before { content: '⏸ Pause · '; font-weight: 700; color: #b86e12; }

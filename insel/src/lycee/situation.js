@@ -91,16 +91,25 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
   // def: { titel, mitglieder, dauer, nachrichten: [ { nach: s, wer, text, bild?, id?, wenn?: flag, wennNicht?: flag, lacher?: { start, proSek, stopp?: flag } } ],
   //        aktionen: [ { id, t, symbol, setzt?, ich?: 'Text', folgen?: [nachricht …], wahl?: [ { t, setzt?, ich, folgen? } ] } ] }
   // Rückgabe: { flags: { … }, aktionen: [ids], lacher, weg: bool }
+  const chatErklaert = (setzen) => { try { if (setzen) localStorage.setItem('lycee.chatErklaert', '1'); return localStorage.getItem('lycee.chatErklaert') === '1'; } catch (e) { return true; } };
   ui.liveChat = (def) => new Promise((ok) => {
     const k = ui.ebeneAuf('szene', '<div class="sz sz-chat"><div class="sz-handy"><div class="ly-h-kopf">' + esc(def.titel) + '<small>' + esc(def.mitglieder || '') + ' Mitglieder · online</small></div>' +
-      '<div class="ly-h-verlauf sz-verlauf" aria-live="polite"></div><div class="ly-h-tippt" hidden></div>' +
-      '<div class="sz-aktionen ly-d-optionen"></div><div class="sz-unten"><span class="sz-uhr"></span><button type="button" class="ly-link" data-x="weg">Handy weg <kbd>E</kbd></button></div></div></div>');
-    const verlauf = k.querySelector('.sz-verlauf'), tippt = k.querySelector('.ly-h-tippt'), leiste = k.querySelector('.sz-aktionen');
+      '<div class="sz-verlauf-wrap"><div class="ly-h-verlauf sz-verlauf" aria-live="polite"></div><button type="button" class="sz-neu" hidden>↓ Neue Nachricht</button></div><div class="ly-h-tippt" hidden></div>' +
+      (def.info || !chatErklaert() ? '<p class="sz-chat-info">' + esc(def.info || 'Nachrichten kommen nach und nach. Unten kannst du reagieren – oder nichts tun. Auch das hat Folgen.') + '</p>' : '') +
+      '<div class="sz-aktionen ly-d-optionen"></div><div class="sz-unten"><span class="sz-uhr"></span>' + (def.klingel && !ui.zeitlos ? '' : '<button type="button" class="ly-link" data-x="pause">⏸ Pause</button>') + '<button type="button" class="ly-link" data-x="weg">Handy weg <kbd>Esc</kbd></button></div></div></div>');
+    chatErklaert(true);
+    const verlauf = k.querySelector('.sz-verlauf'), tippt = k.querySelector('.ly-h-tippt'), leiste = k.querySelector('.sz-aktionen'), neuChip = k.querySelector('.sz-neu');
     const flags = {}, gemacht = [], schlange = [];
-    let t = 0, zu = false, lacher = 0, letzt = performance.now(), wahlOffen = false;
+    let t = 0, zu = false, lacher = 0, letzt = performance.now(), wahlOffen = false, pause = false, wartBis = 0;
+    // Lesetempo: die nächste Nachricht kommt frühestens, wenn man die vorige lesen konnte (langsame Leser mitgedacht)
+    const lesedauer = (n) => (0.9 + String(ersetze(n.text || '')).split(/\s+/).filter(Boolean).length * 0.3 + (n.bild ? 1.2 : 0)) * (ui.ruhig ? 1.4 : 1) * (ui.einstellungen && ui.einstellungen().text !== 'normal' ? 1.2 : 1);
+    // Nachlesen: nur nach unten springen, wenn man unten ist – sonst ein Hinweis „Neue Nachricht“
+    const unten = () => verlauf.scrollHeight - verlauf.scrollTop - verlauf.clientHeight < 40;
+    verlauf.addEventListener('scroll', () => { if (unten()) neuChip.hidden = true; });
+    neuChip.onclick = () => { verlauf.scrollTop = verlauf.scrollHeight; neuChip.hidden = true; };
     const dauer = (def.dauer || 45) * (ui.ruhig ? 1.4 : 1);
     // klingel: sichtbarer Countdown (Sekunden), danach ist der Chat zu. stillstand: so viele Sekunden steht ab stillstandAb alles still (ohne Hinweis)
-    const klingel = def.klingel ? def.klingel * (ui.ruhig ? 1.4 : 1) : 0, steh = def.stillstand || 0, stehAb = def.stillstandAb || 0; let gestanden = 0;
+    const klingel = def.klingel ? def.klingel * (ui.ruhig ? 1.4 : 1) * (ui.zeitlos ? 2 : 1) : 0, steh = def.stillstand || 0, stehAb = def.stillstandAb || 0; let gestanden = 0;
     const plan = (n, ab) => schlange.push({ ...n, at: ab + (n.nach || 0) });
     def.nachrichten.forEach((n) => plan(n, 0));
     const lach = [];   // Nachrichten mit wachsenden Reaktionen
@@ -109,7 +118,10 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
       const html = n.system ? '<div class="ly-h-sys">' + esc(ersetze(n.text)) + '</div>'
         : '<div class="ly-h-msg' + (ich ? ' ich' : '') + '"><b>' + esc(ich ? 'Du' : n.wer) + '</b>' + (n.bild ? '<div class="ly-h-bild sz-foto">📷 ' + esc(ersetze(n.bild)) + '</div>' : '') + '<span>' + esc(ersetze(n.text)) + '</span>' +
           (n.lacher ? '<i class="ly-h-reakt" data-l="' + lach.length + '">😂 ' + n.lacher.start + '</i>' : '') + '</div>';
-      verlauf.insertAdjacentHTML('beforeend', html); verlauf.scrollTop = verlauf.scrollHeight;
+      const warUnten = unten() || ich;
+      verlauf.insertAdjacentHTML('beforeend', html);
+      if (warUnten) verlauf.scrollTop = verlauf.scrollHeight; else neuChip.hidden = false;
+      if (!n.system && !ich) wartBis = t + lesedauer(n);
       if (n.lacher) lach.push({ ...n.lacher, n: n.lacher.start, el: verlauf.querySelector('[data-l="' + (lach.length) + '"]') });
       if (n.setzt) { flags[n.setzt] = true; leisteNeu(); }
     };
@@ -149,28 +161,35 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
       if (e.code === 'Escape') { e.preventDefault(); e.stopPropagation(); flags.weg = true; fertig(); return; }
       if (e.code === 'KeyE' || e.code === 'Enter' || e.code === 'Space') { e.preventDefault(); e.stopPropagation();
         const n = schlange.slice().sort((a, b) => a.at - b.at)[0];
+        wartBis = 0; if (pause) pauseUm(false);
         if (n) { if (n.at > t) beginn -= (n.at - t) * 1000; } else fertig(); }
     });
     k.querySelector('[data-x="weg"]').onclick = () => { flags.weg = true; fertig(); };
+    const pk = k.querySelector('[data-x="pause"]');
+    const pauseUm = (an) => { pause = an; k.firstChild.classList.toggle('pausiert', pause); if (pk) pk.textContent = pause ? '▶ Weiter' : '⏸ Pause'; };
+    if (pk) pk.onclick = () => pauseUm(!pause);
     leisteNeu();
     let tipptBis = 0, beginn = performance.now();
     const loop = () => {
       if (zu) return;
-      const jetzt = performance.now(), dt = Math.min(0.25, (jetzt - letzt) / 1000); letzt = jetzt; t = (jetzt - beginn) / 1000;   // echte Uhr, auch auf langsamen Geräten
+      const jetzt = performance.now(), roh = jetzt - letzt, dt = Math.min(0.25, roh / 1000); letzt = jetzt;
+      if (pause) { beginn += roh; requestAnimationFrame(loop); return; }   // Pause: die Uhr steht ganz, nichts kommt dazu
+      t = (jetzt - beginn) / 1000;   // echte Uhr, auch auf langsamen Geräten
       if (steh && t >= stehAb && gestanden < steh) { const d = Math.min(dt, steh - gestanden); gestanden += d; beginn += d * 1000; t = (jetzt - beginn) / 1000; k.firstChild.classList.add('steht'); } else if (gestanden) k.firstChild.classList.remove('steht');
       schlange.sort((a, b) => a.at - b.at);
       const n = schlange[0];
       if (n && n.at - 1.1 <= t && !n.system && !n.ich && n.wer && (!n.wenn || flags[n.wenn]) && (!n.wennNicht || !flags[n.wennNicht])) { tippt.hidden = false; tippt.textContent = n.wer + ' tippt …'; tipptBis = t + 0.3; }
       else if (t > tipptBis) tippt.hidden = true;
       while (schlange.length && schlange[0].at <= t) {
-        const m = schlange.shift();
-        if ((m.wenn && !flags[m.wenn]) || (m.wennNicht && flags[m.wennNicht])) continue;
-        zeig(m); leisteNeu();
+        const m = schlange[0];
+        if ((m.wenn && !flags[m.wenn]) || (m.wennNicht && flags[m.wennNicht])) { schlange.shift(); continue; }
+        if (!m.system && !m.ich && t < wartBis) break;   // erst lesen lassen
+        schlange.shift(); zeig(m); leisteNeu();
       }
       for (const l of lach) { if (l.stopp && [].concat(l.stopp).some((f) => flags[f])) continue; l.n += l.proSek * dt * (1 + lacher); if (l.el) l.el.textContent = '😂 ' + Math.round(l.n); }
       k.querySelector('.sz-uhr').textContent = (klingel ? '🔔 ' + Math.max(0, Math.ceil(klingel - t)) + ' s · ' : '') + 'gesehen von ' + Math.min(def.mitglieder || 19, Math.round(3 + t * 0.6));
       if (klingel && t >= klingel) { flags.klingel = true; fertig(); return; }
-      if (!klingel && t > dauer && !schlange.length) { fertig(); return; }
+      if (!klingel && t > dauer && !schlange.length && t >= wartBis + 1.5) { fertig(); return; }   // die letzte Nachricht noch lesen lassen
       requestAnimationFrame(loop);
     };
     requestAnimationFrame(loop);
