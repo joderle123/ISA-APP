@@ -217,9 +217,14 @@ export const GESPRAECHE_N3 = {
     ['sommer', '(zieht einen Zettel) {name}. Du stellst auf. Fünf Leute.'],
     ['erzaehler', 'Zehn stehen an der Wand. Noah zählt die Linien am Boden. Lina steht halb hinter der Sprossenwand.'],
     ['jo', 'Nimm mich. Ich bin lowkey gut.'],
+    // Kapitel 1, Sport: „Wer führt, trägt.“ Wer Yusuf gut geführt hat, den will er im Team. Wer sein Stopp übergangen hat, den nicht.
+    { wenn: (m) => m.sportGut && !m.sportStoppIgnoriert, dann: [['erzaehler', 'Yusuf steht nicht an der Wand. Er steht schon einen Schritt vor.'], ['yusuf', '(leise) Weißt du noch? Die Hütchen. Ich vertrau dir.']] },
+    { wenn: (m) => m.sportStoppIgnoriert, dann: [['erzaehler', 'Yusuf steht ganz hinten. Er schaut an dir vorbei.'], ['yusuf', '(zu Frau Sommer) Ich spiel lieber im anderen Team.'], ['sommer', '(zuckt mit den Schultern) Dann rüber mit dir.']] },
+    { wenn: (m) => m.sportJoStopp || m.sportNoahHand, dann: [['erzaehler', 'Noah schaut kurz hoch. Zu dir. Er hat die Sache an der Bank nicht vergessen.']] },
+    { wenn: (m) => m.sportGelacht, dann: [['erzaehler', 'Noah schaut auf seine Schuhe. Seit dem Sport in der ersten Woche schaut er dich nicht mehr an.']] },
     ['sommer', 'Deine erste Wahl?'],
     { fest: true, wahl: [
-      { t: 'Yusuf.', herz: { yusuf: 1 }, merke: 'wahlYusuf', dann: [] },
+      { t: 'Yusuf.', wenn: (m) => !m.sportStoppIgnoriert, herz: { yusuf: 1 }, merke: 'wahlYusuf', dann: [] },
       { t: 'Ben.', herz: { ben: 1 }, merke: 'wahlBen', dann: [] },
       { t: 'Noah.', staerke: 'einbeziehen', herz: { noah: 2 }, merke: 'wahlNoah', dann: [] },
       { t: 'Lina.', staerke: 'einbeziehen', herz: { lina: 2 }, merke: 'wahlLina', dann: [] },
@@ -287,7 +292,7 @@ export const tunN3 = (c) => ({
   n3_streifen: () => { c.S.merke.spurStreifen = true; c.ui.toast('<b>🔎 Spur</b><span>Ein heller Streifen unten links. Auf jedem Foto.</span>', 'ly-t-ent'); return []; },
   n3_turnierFolge: () => {
     const m = c.S.merke;
-    if (m.wahlYusuf) return [['erzaehler', 'Ihr gewinnt. Klar. Yusuf ist schnell.'], ['erzaehler', 'Noah bleibt als Letzter an der Wand stehen. Bis Frau Sommer ihn einfach zuteilt.']];
+    if (m.wahlYusuf) return [['erzaehler', 'Ihr gewinnt. Klar. Yusuf ist schnell.'], ...(m.sportGut ? [['erzaehler', 'Einmal passt er dir den Ball, ohne hinzuschauen. Er weiß einfach, wo du stehst.']] : []), ['erzaehler', 'Noah bleibt als Letzter an der Wand stehen. Bis Frau Sommer ihn einfach zuteilt.']];
     if (m.wahlBen) return [['ben', 'Echt jetzt? Mich zuerst?'], ['erzaehler', 'Ihr verliert knapp. Ben schreit trotzdem bei jedem Korb.']];
     if (m.wahlNoah) return [['erzaehler', 'Ihr verliert knapp. Noah trifft einmal. Er schaut sich um, ob es jemand gesehen hat.'], ['ben', '(von der Bank) Echt jetzt? Noah zuerst?']];
     return [['erzaehler', 'Ihr verliert knapp. Lina bleibt auf dem Feld. Die ganze Zeit.'], ['ben', '(von der Bank) Echt jetzt? Lina zuerst?']];

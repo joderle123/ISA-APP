@@ -452,6 +452,20 @@ kbd { display: inline-block; min-width: 1.5em; padding: 0 .35em; margin-right: .
 .sz-steuer { display: grid !important; grid-template-columns: repeat(4, 1fr); gap: 6px; }
 .sz-steuer button { border: 0; border-radius: 12px; background: #2b3a55; color: #fff; font: inherit; font-weight: 900; padding: 12px 4px; cursor: pointer; touch-action: manipulation; }
 .sz-steuer button[data-k="s"] { background: #d6452f; }
+.sz-steuer5 { grid-template-columns: repeat(3, 1fr) !important; }
+.sz-steuer5 button[data-k="s"] { grid-column: span 2; }
+.sz-steuer button[data-k="f"] { background: #5b6472; }
+.sz-stand.sz-stopp { color: #d6452f; }
+/* Geführt werden: Augen zu */
+/* Echtzeit-Szenen: Bild nie so hoch, dass die Steuerung (vor allem ✋ Stopp) unter den Rand rutscht – auch mit offener Hilfe auf dem iPad */
+.sz-dunkel canvas, .sz-lotsen canvas { width: auto; max-width: 100%; max-height: 34vh; align-self: center; }
+.sz-dunkel .sz-info { color: #4b5263; }
+.sz-stimme { min-height: 44px; display: flex; align-items: center; justify-content: center; gap: 8px; flex-wrap: wrap; padding: 8px 12px; border-radius: 12px; background: #11131a; color: #f3f4f7; font-size: 16px; font-weight: 800; text-align: center; transition: background .2s; }
+.sz-stimme b { font-weight: 900; }
+.sz-stimme.sz-st-x { background: #3a3d47; color: #e7e8ec; }
+.sz-stimme.sz-st-x b { color: #b9bcc6; font-size: 13px; }
+.sz-stimme.sz-st-g { background: #1d2a44; color: #cfe0ff; }
+.sz-stimme:empty { visibility: hidden; }
 .sz-kurz { height: auto; min-height: 120px; max-height: 30vh; }
 .sz-wort { display: inline-block; background: var(--f); color: #fff; padding: 2px 10px; border-radius: 999px; font-weight: 900; }
 .sz-rad { padding: 10px 12px 14px; background: #fff; display: flex; flex-direction: column; gap: 6px; }

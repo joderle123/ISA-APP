@@ -16,6 +16,14 @@ const KAP = {
       ['fotoLina', 'Als das Foto kam, bist du zu Lina gegangen.'], ['fotoTidderich', 'Das Foto hast du Mme Tidderich gezeigt.']]),
     eins(m, [['abgestimmt', 'Bei der Umfrage über den Jungen aus dem Bus hast du geklickt.'], ['nichtAbgestimmt', 'Bei der Umfrage hast du nicht geklickt.']]),
     eins(m, [['darioFotoGeleugnet', 'Dario gegenüber hast du so getan, als kennst du das Foto nicht.']]),
+    eins(m, [['sportStoppIgnoriert', 'Im Sport hat Yusuf Stopp gesagt – und du hast weiter angesagt.'], ['sportGut', 'Im Sport hast du Yusuf ruhig durch den Parcours geführt.'],
+      ['sportHektik', 'Im Sport hast du Yusuf zu schnell geführt.'], ['sportKnapp', 'Im Sport hast du Yusuf geführt. Ein paar Hütchen, aber ihr seid angekommen.'], ['sportNicht', 'Im Sport hast du Yusuf geführt. Bis zur Matte hat es nicht gereicht.']]),
+    eins(m, [['sportJoStopp', 'Als Noah fiel, hast du vor allen gesagt: „Er hat Stopp gesagt.“'], ['sportNoahHand', 'Als Noah fiel, bist du zu ihm gegangen.'], ['sportSommer', 'Als Noah fiel, hast du Frau Sommer geholt.'],
+      ['sportJoWas', 'Als Noah fiel, hast du Jo gefragt, was das soll.'], ['sportGelacht', 'Als Noah fiel, hast du mitgelacht.'], ['sportWeg', 'Als Noah fiel, hast du weggeschaut.']]),
+    eins(m, [['sportJoErkannt', 'Mit Tuch vor den Augen hast du nachgefragt, als eine fremde Stimme dazwischenrief.'], ['sportJoGefolgt', 'Mit Tuch vor den Augen bist du einer fremden Stimme gefolgt.']]),
+    eins(m, [['sportSelbstStopp', 'Als du geführt wurdest, hast du selbst Stopp gesagt.']]),
+    eins(m, [['sportSchwerFuehren', 'Am schwersten im Sport fandest du: führen.'], ['sportSchwerGefuehrt', 'Am schwersten im Sport fandest du: geführt werden.'],
+      ['sportSchwerStopp', 'Am schwersten im Sport fandest du: Stopp sagen.'], ['sportSchwerZuschauen', 'Am schwersten im Sport fandest du: zuschauen, wenn es bei anderen schiefgeht.']]),
     eins(m, [['kantineNoah', 'In der Kantine hast du dich zu Noah gesetzt.'], ['kantineBen', 'In der Kantine hast du dich zu Ben und Jo gesetzt.']]),
     eins(m, [['postKlar', 'Auf das Foto von dir hast du klar geantwortet.'], ['postWitz', 'Über das Foto von dir hast du einen Witz gemacht.'], ['postFrage', 'Zum Foto von dir hast du eine Frage gestellt.'],
       ['postGemeldet', 'Das Foto von dir hast du gemeldet.'], ['postStumm', 'Den Chat hast du stumm geschaltet.'], ['postStill', 'Zum Foto von dir hast du nichts geschrieben.']]),
@@ -94,7 +102,7 @@ export const chronik = (kap, m = {}) => ((KAP[kap] || (() => []))(m) || []).filt
 
 // Fragen für das Gespräch mit der Lehrperson oder in der Klasse (offen, kein richtig/falsch). Erst die Entscheidungen ansehen, dann fragen.
 export const GESPRAECH = {
-  1: 'Wo warst du in der großen Pause – und was hast du deshalb nicht gesehen? Warum klicken Leute bei so einer Umfrage mit?',
+  1: 'Wo warst du in der großen Pause – und was hast du deshalb nicht gesehen? Warum klicken Leute bei so einer Umfrage mit? Und im Sport: Was macht es so schwer, „Stopp“ zu sagen – oder es zu hören?',
   2: 'Warum tut eine Liste weh, auch wenn man gar nicht draufsteht? Was kannst du gut, auch wenn es keiner sieht?',
   3: 'Was war auf Milas Wand eine echte Spur – und was nur ein Gefühl?',
   4: 'Was hat dir geholfen, als die Zahl auf Rot war? Hast du gemerkt, wann sie gestiegen ist?',

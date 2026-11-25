@@ -333,19 +333,23 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
   // def: { partner: { id, name, farbe }, ziel: 'Tor' } → { vertrauen 0–100, angekommen, zusammenstoesse, stopps, hektik }
   ui.blindParcours = (def) => new Promise((ok) => {
     const P = def.partner;
-    const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">Hof · Blind-Parcours</span><b>Lotsen</b></div>' +
+    const k = ui.ebeneAuf('szene', '<div class="sz sz-lotsen"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || 'Hof') + ' · Blind-Parcours</span><b>Lotsen</b></div>' +
       '<p class="sz-info">' + esc(P.name) + ' hat die Augen verbunden. Lotse ' + (P.weib ? 'sie' : 'ihn') + ' mit Ansagen bis ins Tor. Zu hektisch? Dann bleibt ' + esc(P.name) + ' stehen.</p>' +
       '<canvas width="520" height="300"></canvas><div class="sz-balken sz-vertrauen"><div class="sz-balken-f"></div><span>Vertrauen</span></div>' +
       '<div class="sz-steuer ly-d-optionen"><button type="button" data-k="l">⬅ Links</button><button type="button" data-k="g">⬆ Geradeaus</button><button type="button" data-k="r">Rechts ➡</button><button type="button" data-k="s">✋ Stopp</button></div><div class="sz-stand"></div></div>');
     const cv = k.querySelector('canvas'), x = cv.getContext('2d'), fill = k.querySelector('.sz-vertrauen .sz-balken-f'), stand = k.querySelector('.sz-stand');
     const HUET = [[150, 90], [170, 210], [260, 140], [300, 60], [330, 240], [390, 160], [220, 270], [240, 30]];
     let px = 40, py = 150, ri = 0, laeuft = false, vertrauen = 70, stoesse = 0, stopps = 0, hektik = 0, fertig = false, sagt = '', sT = 0;
+    // „Stopp gilt sofort“ (def.stoppMoment): einmal sagt die geführte Person selbst Stopp. Wer dann weiter Ansagen macht, übergeht sie.
+    let stoppBis = 0, stoppDa = false, stoppAus = false, stoppIgnoriert = 0, stoppGewartet = false, spielT = 0;
+    cv.__st = () => ({ px, py, ri, laeuft, fertig, stoppAktiv: !!stoppBis && performance.now() < stoppBis });   // nur für Tests
     const ansagen = []; let last = performance.now();
-    const tor = { x: 488, y: 150, r: 34 };
+    const tor = { x: 488, y: 150, r: 34 }, halle = /Turnhalle/.test(def.wo || '');   // Hallenboden statt Rasen
     const zeige = () => { fill.style.width = Math.max(3, vertrauen) + '%'; fill.style.background = vertrauen > 55 ? '#5fb07a' : vertrauen > 30 ? '#e9a23b' : '#d6452f'; };
     const sprech = (t) => { sagt = t; sT = 1.6; };
     const befehl = (b) => {
       if (fertig) return;
+      if (stoppBis && performance.now() < stoppBis && b !== 's') { stoppIgnoriert++; vertrauen -= 14; laeuft = false; sprech('Ich hab Stopp gesagt!'); stand.classList.add('sz-stopp'); zeige(); return; }
       const jetzt = performance.now(); ansagen.push(jetzt); while (ansagen.length && jetzt - ansagen[0] > 1600) ansagen.shift();
       if (ansagen.length > 4) { hektik++; vertrauen -= 8; laeuft = false; sprech('Zu schnell! Stopp. Ich bleib stehen.'); zeige(); return; }
       if (b === 's') { laeuft = false; stopps++; sprech('Okay. Ich steh.'); }
@@ -357,7 +361,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
     halte((e) => { const m = { ArrowLeft: 'l', KeyA: 'l', ArrowUp: 'g', KeyW: 'g', ArrowRight: 'r', KeyD: 'r', Space: 's', KeyS: 's', ArrowDown: 's', KeyE: 'g' }[e.code]; if (m) { e.preventDefault(); e.stopPropagation(); befehl(m); } });
     const schluss = (angekommen) => {
       if (fertig) return; fertig = true;
-      setTimeout(() => { loesche(); ui.ebeneZu(); ok({ vertrauen: Math.max(0, Math.round(vertrauen)), angekommen, zusammenstoesse: stoesse, stopps, hektik }); }, 1500);
+      setTimeout(() => { loesche(); ui.ebeneZu(); ok({ vertrauen: Math.max(0, Math.round(vertrauen)), angekommen, zusammenstoesse: stoesse, stopps, hektik, stoppIgnoriert, stoppGewartet }); }, 1500);
     };
     const t0 = performance.now();
     const draw = (now) => {
@@ -369,19 +373,144 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
         else { px = nx; py = ny; }
         if (Math.hypot(px - tor.x, py - tor.y) < tor.r) { sprech('TOR! Ich hab nichts gesehen und trotzdem!'); schluss(true); }
       }
-      if (!fertig && (now - t0) / 1000 > 75 * zeitFaktor()) { sprech('Ich nehm die Augenbinde ab, okay?'); schluss(false); }
+      if (def.stoppMoment && !stoppDa && !fertig && laeuft && spielT > 8) { stoppDa = true; laeuft = false; stoppBis = now + 3200; sprech('Stopp. Kurz warten. Mein Tuch rutscht.'); }
+      if (stoppBis && !stoppAus && now >= stoppBis) { stoppAus = true; stand.classList.remove('sz-stopp'); if (!stoppIgnoriert) { stoppGewartet = true; vertrauen = Math.min(100, vertrauen + 8); sprech('Okay. Danke fürs Warten. Weiter.'); } else sprech('… Okay. Weiter.'); zeige(); }
+      if (!fertig) spielT += dt;
+      if (!fertig && spielT > 75 * zeitFaktor()) { sprech('Ich nehm die Augenbinde ab, okay?'); schluss(false); }
       if (!fertig && vertrauen <= 0) { sprech('Ich mach nicht mehr mit. Sorry.'); schluss(false); }
-      x.fillStyle = '#7fb36a'; x.fillRect(0, 0, 520, 300);
+      x.fillStyle = halle ? '#d9b47c' : '#7fb36a'; x.fillRect(0, 0, 520, 300);
+      if (halle) { x.strokeStyle = 'rgba(255,255,255,.7)'; x.lineWidth = 2; x.beginPath(); x.moveTo(260, 0); x.lineTo(260, 300); x.stroke(); x.beginPath(); x.arc(260, 150, 44, 0, 7); x.stroke(); }
       x.fillStyle = '#ffffff'; x.fillRect(tor.x + 10, tor.y - 40, 8, 80); x.strokeStyle = '#ffffff'; x.lineWidth = 3; x.strokeRect(tor.x - 6, tor.y - 40, 24, 80);
       for (const [hx, hy] of HUET) { x.fillStyle = '#e9734a'; x.beginPath(); x.moveTo(hx, hy - 14); x.lineTo(hx - 11, hy + 10); x.lineTo(hx + 11, hy + 10); x.closePath(); x.fill(); x.fillStyle = '#fff'; x.fillRect(hx - 7, hy - 2, 14, 3); }
       x.save(); x.translate(px, py); x.rotate(ri);
       x.fillStyle = P.farbe; x.beginPath(); x.arc(0, 0, 13, 0, 7); x.fill(); x.fillStyle = '#1b1d26'; x.fillRect(-4, -11, 8, 22);   // Augenbinde
       x.fillStyle = '#fff'; x.beginPath(); x.moveTo(17, 0); x.lineTo(9, -5); x.lineTo(9, 5); x.fill(); x.restore();
       if (sT > 0) { sT -= dt; x.fillStyle = 'rgba(255,255,255,.92)'; x.font = 'bold 15px system-ui'; const w = x.measureText(sagt).width + 16; const bx = Math.min(520 - w - 4, Math.max(4, px - w / 2)); x.fillRect(bx, py - 48, w, 24); x.fillStyle = '#1b1d26'; x.fillText(sagt, bx + 8, py - 31); }
-      stand.textContent = 'Zusammenstöße: ' + stoesse + ' · Ansagen ruhig halten';
+      stand.textContent = stoppBis && now < stoppBis ? '✋ ' + P.name + ' hat Stopp gesagt. Warte.' : 'Zusammenstöße: ' + stoesse + ' · Ansagen ruhig halten';
       if (!fertig || sT > 0) requestAnimationFrame(draw);
     };
     zeige(); sprech('Ich seh nix. Gar nix. Okay. Los.'); requestAnimationFrame(draw);
+  });
+
+  // ---------- Geführt werden (Sport, Kapitel 1: „Wer führt, trägt“) ----------
+  // Du siehst nichts. Die andere Person sagt an, du drehst, gehst, hältst an. Einmal ruft eine fremde Stimme dazwischen,
+  // einmal rollt ein Ball. Stopp gilt sofort – auch deins. Am Ende siehst du deinen Weg.
+  // def: { partner: { id, name, farbe }, stoerer: { name }, wo } → { angekommen, stoesse, eigeneStopps, nachgefragt, joErkannt, fremdGefolgt, ballGestoppt, ballGetroffen, zeit, bild }
+  ui.gefuehrt = (def) => new Promise((ok) => {
+    const P = def.partner, J = def.stoerer || { name: 'Jemand' };
+    const k = ui.ebeneAuf('szene', '<div class="sz sz-dunkel"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || 'Turnhalle') + ' · Augen zu</span><b>Geführt werden</b></div>' +
+      '<p class="sz-info">Du siehst nichts. ' + esc(P.name) + ' sagt dir, wohin. Zu schnell oder unsicher? ✋ Stopp – das gilt sofort. Nicht sicher, wer gerade spricht? ❓ Nachfragen.</p>' +
+      '<canvas width="520" height="300"></canvas><div class="sz-stimme" aria-live="polite"></div>' +
+      '<div class="sz-steuer sz-steuer5 ly-d-optionen"><button type="button" data-k="l">⬅ Links</button><button type="button" data-k="g">⬆ Gehen</button><button type="button" data-k="r">Rechts ➡</button><button type="button" data-k="s">✋ Stopp</button><button type="button" data-k="f">❓ Nachfragen</button></div><div class="sz-stand"></div></div>');
+    const cv = k.querySelector('canvas'), x = cv.getContext('2d'), stimme = k.querySelector('.sz-stimme'), stand = k.querySelector('.sz-stand'), steuer = k.querySelector('.sz-steuer');
+    const HUET = [[110, 70], [250, 40], [230, 222], [120, 232], [420, 100], [420, 200], [330, 262], [470, 262]];
+    const BANK = { x0: 160, x1: 280, y0: 134, y1: 166 };
+    const WEG = [[120, 150], [190, 80], [300, 80], [370, 150], [496, 150]];
+    const norm = (a) => Math.atan2(Math.sin(a), Math.cos(a));
+    const stoesst = (nx, ny) => HUET.some(([hx, hy]) => Math.hypot(nx - hx, ny - hy) < 18) || (nx > BANK.x0 - 9 && nx < BANK.x1 + 9 && ny > BANK.y0 - 9 && ny < BANK.y1 + 9) || ny < 12 || ny > 288 || nx < 12;
+    let px = 40, py = 150, ri = 0, laeuft = false, wi = 0, fertig = false, stoesse = 0, eigeneStopps = 0, nachgefragt = 0, fremdGefolgt = 0, joErkannt = false;
+    let ballGestoppt = false, ballGetroffen = false, cd = 2.2, still = 0, erwartet = '', letzte = '', jo = 0, ball = 0, ballT = 0, puls = 72, phase = 0;
+    const spur = [[px, py]], treffer = [];
+    let last = performance.now(), spurT = 0, spielT = 0;   // spielT: Spielzeit (langsame Geräte bekommen nicht weniger Zeit)
+    const t0 = last;
+    cv.__st = () => ({ px, py, ri, laeuft, wi, fertig, erwartet, jo, ball });   // nur für Tests
+    const sag = (wer, t, art) => {   // wer: 'p' (Partner), 'x' (fremde Stimme), 'g' (Geräusch)
+      stimme.dataset.wer = wer; stimme.dataset.ansage = art || ''; stimme.dataset.n = (+stimme.dataset.n || 0) + 1; stimme.className = 'sz-stimme sz-st-' + wer;
+      stimme.innerHTML = wer === 'p' ? '<b style="color:' + P.farbe + '">' + esc(P.name) + '</b> ' + esc(t) : wer === 'x' ? '<b>Eine Stimme von rechts</b> ' + esc(t) : '<i>' + esc(t) + '</i>';
+      if (wer === 'p') { letzte = t; erwartet = art || ''; }
+    };
+    const schritt = () => { const [wx, wy] = WEG[wi]; return { d: Math.hypot(wx - px, wy - py), soll: Math.atan2(wy - py, wx - px) }; };
+    const vorne = (dist) => { for (let s = 8; s <= dist; s += 6) if (stoesst(px + Math.cos(ri) * s, py + Math.sin(ri) * s)) return true; return false; };
+    const partner = () => {   // ruhig, eine Ansage nach der anderen
+      let { d, soll } = schritt();
+      if (d < 22 && wi < WEG.length - 1) { wi++; ({ d, soll } = schritt()); }
+      const diff = norm(soll - ri);
+      if (laeuft) {
+        const naechste = wi < WEG.length - 1 && d < 24 && Math.abs(norm(Math.atan2(WEG[wi + 1][1] - WEG[wi][1], WEG[wi + 1][0] - WEG[wi][0]) - ri)) > 0.4;
+        if (vorne(48) || Math.abs(diff) > 0.5 || naechste) { sag('p', erwartet === 's' ? 'STOPP!' : 'Stopp.', 's'); cd = erwartet === 's' ? 0.8 : 1.0; }
+        return;
+      }
+      if (Math.abs(diff) > 0.42) {
+        // Die fremde Stimme: an der dritten Ecke, genau wenn eine Drehung kommt
+        if (wi === 3 && jo === 0) { jo = 1; still = 2.0; sag('x', 'Links! Jetzt links, schnell!'); return; }
+        sag('p', diff < 0 ? 'Links.' : 'Rechts.', diff < 0 ? 'l' : 'r'); cd = 1.3; return;
+      }
+      sag('p', wi === WEG.length - 1 ? 'Geradeaus. Bis zur Matte.' : 'Geradeaus. Geh.', 'g'); cd = 1.5;
+    };
+    const befehl = (b) => {
+      if (fertig) return;
+      if (b === 'f') {   // nachfragen
+        nachgefragt++;
+        if (jo === 1) { joErkannt = true; jo = 2; still = 0.9; sag('p', 'Das war ' + J.name + '. Hör nur auf mich.'); cd = 0.9; return; }
+        sag('p', letzte ? 'Nochmal: ' + letzte.replace(/^Nochmal: /, '') : 'Ich bin hier. Hinter dir.', erwartet); cd = 1.2; return;
+      }
+      if (b === 's') {
+        if (!laeuft) return;
+        laeuft = false;
+        if (ball === 1) { ballGestoppt = true; ball = 2; sag('p', 'Gut, dass du stehst. Da war ein Ball. Jetzt ist er weg.'); cd = 1.6; return; }
+        if (erwartet === 's') { erwartet = ''; cd = 0.7; return; }
+        eigeneStopps++; still = 2.2; sag('p', 'Okay. Ich warte. Sag, wenn’s weitergeht.'); return;
+      }
+      if (jo === 1 && b === 'l') { fremdGefolgt++; jo = 2; ri -= Math.PI / 4; still = 0.6; setTimeout(() => sag('p', 'Nicht links! Das war nicht ich. Das war ' + J.name + '.'), 450); cd = 1.6; return; }
+      if (b === 'g') { laeuft = true; if (erwartet === 'g') erwartet = ''; return; }
+      ri += (b === 'l' ? -1 : 1) * Math.PI / 4; if (erwartet === b) { erwartet = ''; cd = Math.min(cd, 0.9); }
+    };
+    steuer.querySelectorAll('[data-k]').forEach((b) => { b.onclick = () => befehl(b.dataset.k); });
+    halte((e) => { const m = { ArrowLeft: 'l', KeyA: 'l', ArrowUp: 'g', KeyW: 'g', ArrowRight: 'r', KeyD: 'r', Space: 's', KeyS: 's', ArrowDown: 's', KeyQ: 'f', KeyE: 'g' }[e.code]; if (m) { e.preventDefault(); e.stopPropagation(); befehl(m); } });
+    const zeigeWeg = () => {   // Tuch ab: die Halle von oben, dein Weg
+      x.fillStyle = '#d8b27a'; x.fillRect(0, 0, 520, 300);
+      x.strokeStyle = 'rgba(255,255,255,.75)'; x.lineWidth = 2; x.strokeRect(8, 8, 504, 284); x.beginPath(); x.arc(260, 150, 46, 0, 7); x.stroke(); x.beginPath(); x.moveTo(260, 8); x.lineTo(260, 292); x.stroke();
+      x.fillStyle = '#7a5532'; x.fillRect(BANK.x0, BANK.y0, BANK.x1 - BANK.x0, BANK.y1 - BANK.y0);
+      x.fillStyle = '#3c78c8'; x.fillRect(470, 104, 44, 92);
+      for (const [hx, hy] of HUET) { x.fillStyle = '#e9734a'; x.beginPath(); x.moveTo(hx, hy - 12); x.lineTo(hx - 9, hy + 8); x.lineTo(hx + 9, hy + 8); x.closePath(); x.fill(); }
+      x.strokeStyle = P.farbe; x.lineWidth = 4; x.lineJoin = 'round'; x.setLineDash([9, 6]); x.beginPath(); spur.forEach(([a, b2], i) => (i ? x.lineTo(a, b2) : x.moveTo(a, b2))); x.stroke(); x.setLineDash([]);
+      for (const [a, b2] of treffer) { x.strokeStyle = '#d6452f'; x.lineWidth = 4; x.beginPath(); x.moveTo(a - 7, b2 - 7); x.lineTo(a + 7, b2 + 7); x.moveTo(a + 7, b2 - 7); x.lineTo(a - 7, b2 + 7); x.stroke(); }
+      x.fillStyle = '#1b1d26'; x.beginPath(); x.arc(spur[0][0], spur[0][1], 6, 0, 7); x.fill();
+      x.fillStyle = 'rgba(27,29,38,.82)'; x.fillRect(0, 0, 520, 30); x.fillStyle = '#fff'; x.font = 'bold 15px system-ui'; x.fillText('Tuch ab. So bist du gelaufen.', 12, 20);
+    };
+    const schluss = (angekommen) => {
+      if (fertig) return; fertig = true; laeuft = false;
+      setTimeout(() => {
+        zeigeWeg(); let bild = ''; try { bild = cv.toDataURL('image/jpeg', 0.82); } catch (e) { /* egal */ }
+        k.querySelector('.sz').classList.remove('sz-dunkel');
+        stand.textContent = (angekommen ? 'Angekommen. ' : 'Nicht ganz angekommen. ') + 'Zusammenstöße: ' + stoesse + (eigeneStopps ? ' · Du hast ' + eigeneStopps + '× selbst Stopp gesagt.' : '');
+        steuer.innerHTML = '<button type="button" class="sz-weiter" data-a="w">Weiter <kbd>E</kbd></button>'; steuer.classList.remove('sz-steuer', 'sz-steuer5');
+        const zu = () => { loesche(); ui.ebeneZu(); ok({ angekommen, stoesse, eigeneStopps, nachgefragt, joErkannt, fremdGefolgt, ballGestoppt, ballGetroffen, zeit: Math.round((performance.now() - t0) / 1000), bild }); };
+        steuer.querySelector('[data-a="w"]').onclick = zu;
+        loesche(); halte((e) => { if (e.code === 'KeyE' || e.code === 'Enter') { e.preventDefault(); e.stopPropagation(); zu(); } });
+      }, 1400);
+    };
+    const draw = (now) => {
+      const dt = Math.min(0.1, (now - last) / 1000); last = now;
+      if (!fertig) {
+        if (still > 0) { still -= dt; if (still <= 0 && jo === 1) { jo = 2; sag('p', 'Das eben war nicht ich. Nur ich sag an.'); cd = 1.2; } }
+        else if (cd > 0) cd -= dt; else partner();
+        if (laeuft) {
+          const nx = px + Math.cos(ri) * 38 * dt, ny = py + Math.sin(ri) * 38 * dt;
+          if (stoesst(nx, ny)) { laeuft = false; stoesse++; treffer.push([px, py]); puls = 128; sag('p', 'Sorry! Mein Fehler. Alles okay?'); erwartet = ''; cd = 1.4; px -= Math.cos(ri) * 6; py -= Math.sin(ri) * 6; }
+          else { px = nx; py = ny; }
+          spurT += dt; if (spurT > 0.2) { spurT = 0; spur.push([px, py]); }
+          if (wi === 2 && ball === 0 && px > 214) { ball = 1; ballT = 1.7; still = 1.7; sag('g', 'Ein Ball rollt. Ganz nah. ' + P.name + ': „Warte –“'); }
+          if (px >= 468 && Math.abs(py - 150) < 48) { spur.push([px, py]); sag('p', 'Matte. Du bist da. Tuch ab.'); schluss(true); }
+        }
+        if (ball === 1) { ballT -= dt; if (ballT <= 0) { ball = 2; if (laeuft) { ballGetroffen = true; puls = 118; sag('g', 'Der Ball tippt an deinen Fuß. Du zuckst. Nichts passiert.'); } } }
+        spielT += dt; if (spielT > 110 * zeitFaktor()) { sag('p', 'Wir hören hier auf. Du kannst das Tuch abnehmen.'); schluss(false); }
+      }
+      if (!fertig) {
+        // Augen zu: fast schwarz. Nur dein Puls, deine Schritte und die Stimmen.
+        puls += ((laeuft ? 92 : 74) - puls) * dt * 0.6; phase += dt * puls / 60 * Math.PI * 2;
+        x.fillStyle = '#07080c'; x.fillRect(0, 0, 520, 300);
+        const g = x.createRadialGradient(260, 150, 10, 260, 150, 260); g.addColorStop(0, 'rgba(70,24,30,.35)'); g.addColorStop(1, 'rgba(0,0,0,0)'); x.fillStyle = g; x.fillRect(0, 0, 520, 300);
+        const sch = Math.max(0, Math.sin(phase)) ** 6; x.strokeStyle = 'rgba(214,69,47,' + (0.18 + sch * 0.5) + ')'; x.lineWidth = 3; x.beginPath(); x.arc(260, 150, 34 + sch * 14, 0, 7); x.stroke();
+        if (laeuft) { const f = Math.floor(now / 380) % 2; x.fillStyle = 'rgba(255,255,255,.22)'; x.beginPath(); x.ellipse(248 + f * 24, 258 - f * 10, 7, 11, 0, 0, 7); x.fill(); }
+        const st = stimme.dataset.wer, links = st === 'g', rechts = st === 'x';
+        if (st) { x.fillStyle = rechts ? 'rgba(200,200,210,.28)' : links ? 'rgba(160,190,255,.2)' : 'rgba(255,255,255,.12)'; x.beginPath(); x.arc(rechts ? 470 : links ? 50 : 260, rechts || links ? 150 : 268, 26 + Math.sin(now / 90) * 3, 0, 7); x.fill(); }
+        x.fillStyle = 'rgba(255,255,255,.55)'; x.font = '13px system-ui'; x.fillText(laeuft ? 'Du gehst …' : 'Du stehst.', 14, 22);
+        stand.textContent = 'Zusammenstöße: ' + stoesse;
+      }
+      if (!fertig) requestAnimationFrame(draw);
+    };
+    sag('p', 'Ich bin hinter dir. Ich sag an. Erst mal stehen bleiben.'); requestAnimationFrame(draw);
   });
 
   // ---------- Tank-Raten (Kurs E04: Glas der Bedürfnisse, Warnlicht-Raten) ----------

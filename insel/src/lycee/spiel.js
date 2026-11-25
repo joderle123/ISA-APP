@@ -488,6 +488,26 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     return v;
   }
   // Klassenvertrag (K1): vier Regeln hängen ab dem ersten Tag in Saal 1.04 neben der Tafel – mit der Regel, die die eigene Stimme entschieden hat
+  // Sport (Kapitel 1, Dienstag): Hütchen-Parcours, zwei Langbänke und die blaue Matte in der Turnhalle. Nur in dieser Stunde da.
+  // Vier Draw-Calls: Hütchen als InstancedMesh, Bänke und Matte je ein Mesh.
+  let sportGruppe = null;
+  function sportParcours() {
+    const an = !!S && (SCHRITTE[S.schritt] || {}).id === 'k1_sport';
+    if (!an) { if (sportGruppe) sportGruppe.visible = false; return; }
+    if (!sportGruppe) {
+      const g = new THREE.Group(), lam = (c) => new THREE.MeshLambertMaterial({ color: c });
+      const HUET = [[38.5, -21], [40.2, -24.5], [42, -20.6], [43.6, -25.2], [45.4, -22], [47.6, -26], [49.2, -21.2], [51, -24.6], [53, -22.4], [44.8, -27.6], [40, -27.8], [50.6, -28]];
+      const kegel = new THREE.ConeGeometry(0.16, 0.34, 12); kegel.translate(0, 0.17, 0);
+      const im = new THREE.InstancedMesh(kegel, lam('#f0702f'), HUET.length), mx = new THREE.Matrix4();
+      HUET.forEach(([x, z], i) => { mx.makeTranslation(x, 0, z); im.setMatrixAt(i, mx); });
+      im.computeBoundingSphere(); g.add(im);
+      const bank = (x, z, rot) => { const m = new THREE.Mesh(new THREE.BoxGeometry(3.4, 0.3, 0.26), lam('#b98a55')); m.position.set(x, 0.15, z); m.rotation.y = rot; g.add(m); };
+      bank(46.2, -23.4, 0.15); bank(41.4, -22.8, Math.PI / 2 - 0.1);
+      const matte = new THREE.Mesh(new THREE.BoxGeometry(2.2, 0.12, 1.5), lam('#3c78c8')); matte.position.set(55.4, 0.06, -24); g.add(matte);
+      g.name = 'sportParcours'; scene.add(g); sportGruppe = g;
+    }
+    sportGruppe.visible = true;
+  }
   let vertragMesh = null;
   function vertragPlakat() {
     const m = S && S.merke; if (!m || !m.vertragGewaehlt) { if (vertragMesh) vertragMesh.visible = false; return; }
@@ -1359,6 +1379,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         }
         if (z.szene === 'skillsStunde' && (r.versuche > 1 || r.geschafft === false)) versuchMerken(z, def, r.versuche, r.geschafft !== false);
         if (z.szene === 'skillsStunde' && r.checkVersuche > 1) versuchMerken(z, def, r.checkVersuche, !!r.check, ': Kann-ich-das-Frage');
+        if (typeof r.bild === 'string') { if (z.bildId && r.bild) fotoMerken(z.bildId, r.bild); delete r.bild; }   // Bild aus der Szene (z. B. „So bist du gelaufen“) → Rückblick
         const key = z.ausgang ? z.ausgang(r, S.merke) : 'standard';
         S.szenen = S.szenen || {}; if (z.id) S.szenen[z.id] = key;
         if (r.merkkarte) { S.skillsHeft = S.skillsHeft || []; if (!S.skillsHeft.some((m) => m.titel === r.merkkarte.titel)) S.skillsHeft.push(r.merkkarte); }   // Skills-Heft im Journal
@@ -2297,6 +2318,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     kurve: 'Fotos aus deinem Jahr. Sag bei jedem, wie es sich angefühlt hat. Daraus wird deine Kurve.',
     brief: 'Du schreibst einen Brief an dich in einem Jahr. Satz für Satz. Niemand sonst liest ihn.',
     checkin: 'Wie geht es dir heute? Erst das Gefühl, dann das genauere Wort. Es gibt kein Falsch.',
+    blind: 'Du lotst. Die andere Person sieht nichts. Eine Ansage nach der anderen: Links, Rechts, Geradeaus, Stopp. Zu viele Ansagen auf einmal – dann bleibt sie stehen. Und wenn sie selbst Stopp sagt: warten, bis sie weiter will.',
+    gefuehrt: 'Du siehst nichts. Nur eine Person sagt an. Links und Rechts drehen dich, ⬆ geht los, ✋ hält an. Wenn dir etwas zu schnell ist: Stopp – das gilt sofort. Wenn du nicht sicher bist, wer gerade spricht: ❓ Nachfragen.',
   };
   const hilfeGesehen = (art, setzen) => { try { const k = 'lycee.hilfe.' + art; if (setzen) localStorage.setItem(k, '1'); return localStorage.getItem(k) === '1'; } catch (e) { return true; } };
   function hilfeKnopf(art, versuch) {
@@ -2438,7 +2461,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     { const an = S.merke.anzeige; ui.anzeige(an && an.kap === st.kap ? an : null); }
     ui.pult(S.pult && S.pult.kap === st.kap ? S.pult : null);
     freiLauf = null; ui.freiUhr(null);
-    vertragPlakat();
+    vertragPlakat(); sportParcours();
     if (st.frei) freiStart(st);
     if (st.start && st.start.gespraech && mitStart !== false) {
       await gespraech(GESPRAECHE[st.start.gespraech]);

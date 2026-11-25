@@ -9,6 +9,8 @@ const pult = (r, c, s) => [-24.25 + r * 2.1, -27.2 + c * 3.4 + s * 0.62, -Math.P
 const KLASSE = { ayla: pult(0, 0, -1), ben: pult(1, 2, 1), chiara: pult(2, 1, -1), yusuf: pult(1, 0, 1), jo: pult(3, 2, -1), lina: pult(3, 0, 1), noah: pult(0, 1, 1), mila: pult(2, 2, 1) };
 // Haltestelle: Dario steht (Montag) oder sitzt auf der Bank (ab Dienstag), Lina auf der Mauer
 const HALTESTELLE = { dario: [-20.5, 42.3, -1.9], lina: [-25.6, 44.4, 0.8], fahrer: [-11.2, 44.6, -Math.PI / 2], rafa: [-23.2, 41.85, 0, 'schlaeft'] };
+// Sport, Dienstag: Paare stehen beieinander (Yusuf neben dir, Jo mit Noah an der zweiten Bank)
+const SPORT_HALLE = { sommer: [45.2, -12.6, Math.PI], yusuf: [43.2, -15.4, 0.3], jo: [47.7, -21.5, -2.6], noah: [46.6, -22.5, 2.9], ben: [42, -16.6, 0.4], ayla: [50.2, -17.6, -0.3], lina: [51.4, -11.5, -0.8], chiara: [52.2, -16.2, -0.6], mila: [52.4, -14.2, -1.2] };
 const HALTESTELLE_BANK = { dario: [-21.5, 41.6, -1.6, 'sitzt'], lina: [-25.6, 44.4, 0.8], fahrer: [-11.2, 44.6, -Math.PI / 2] };
 
 export const SCHRITTE_N1 = [
@@ -79,6 +81,11 @@ export const SCHRITTE_N1 = [
     start: { teleport: 'busAnkunft' },
     leute: HALTESTELLE_BANK,
     fertig: { reden: 'dario', gespraech: 'n1_darioBank' } },
+  // ---------- Dienstag: Sport. Wer führt, trägt. (Hauptweg) ----------
+  { id: 'k1_sport', kap: 1, tag: 'Dienstag', uhr: 9.92, titel: 'Sport: Wer führt, trägt', ziel: 'Turnhalle. Frau Sommer hat Hütchen und Bänke aufgebaut.', marker: 'sommer',
+    start: { teleport: 'turnhalleTuer' },
+    leute: SPORT_HALLE,
+    fertig: { reden: 'sommer', gespraech: 'n1_sport' } },
   // ---------- Mittwoch: Skills-Stunden (nur, wenn eingeschaltet) ----------
   { id: 'k1_skills', kap: 1, tag: 'Mittwoch', uhr: 9.9, neben: 'skills', titel: 'Skills: Ankommen', ziel: 'Geh in die Aula. Herr Kuedes wartet mit einem Ball.', marker: 'kaya',
     start: { teleport: 'eingangHof', gespraech: 'n1_checkin' },
@@ -154,6 +161,7 @@ export const RUECKBLICK_N1 = (m, S = {}) => {
     { id: 'rafaBank', titel: 'Das erste Foto', text: 'Rafa, eingeschlafen an der Haltestelle. Von heute früh.' },
     auch,
     { id: 'duAbend', titel: 'Nachmittag an der Haltestelle', text: 'Der Bus nach Hause.' },
+    { id: 'sportWeg', titel: 'Dienstag, Sport', text: 'Dein Weg mit Tuch vor den Augen. ' + (m.sportStoppIgnoriert ? 'Frau Sommer hat dich geführt.' : 'Yusuf hat dich geführt.') + (m.sportSelbstStopp ? ' Du hast selbst Stopp gesagt.' : '') },
   ].filter(Boolean);
 };
 
@@ -241,6 +249,17 @@ const KLASSE_NAMEN = [
 const PARTNER = {
   noah: { id: 'noah', name: 'Noah', farbe: '#3f78b8' }, mila: { id: 'mila', name: 'Mila', farbe: '#2fb8a8', weib: true },
   ben: { id: 'ben', name: 'Ben', farbe: '#d9a21b' }, lina: { id: 'lina', name: 'Lina', farbe: '#9b7bc8', weib: true },
+  yusuf: { id: 'yusuf', name: 'Yusuf', farbe: '#5fa0d0' }, sommer: { id: 'sommer', name: 'Frau Sommer', farbe: '#e07b39', weib: true },
+};
+// Noahs Sicht nach dem Sturz an der Bank: was er von dir mitbekommt (Kapitel 1, Sport)
+const NOAH_SPORT = (m) => {
+  const a = 'Dunkel. Die Bank. Meine Hände brennen.';
+  if (m.sportJoStopp) return [a, 'Dann sagt jemand: „Er hat Stopp gesagt.“', 'Jemand hat es gehört. Ich hab es wirklich gesagt.'];
+  if (m.sportNoahHand) return [a, 'Dann ist da eine Hand. Direkt vor mir.', 'Ich nehm sie. Ich weiß nicht mal genau, warum.'];
+  if (m.sportSommer) return [a, 'Frau Sommer ruft alle zusammen. Alle schauen. Auf mich.', 'Gut, dass es jemand gesagt hat. Schlimm, dass alle schauen.'];
+  if (m.sportGelacht) return [a, 'Sie lachen. Ich schau hoch. Du lachst auch.', 'Okay. Dann weiß ich das jetzt.'];
+  if (m.sportJoWas) return [a, '„Jo, was soll das?“ Wenigstens einer.', 'Aber keiner weiß, dass ich Stopp gesagt hab.'];
+  return [a, 'Alle sind beschäftigt. Keiner schaut her.', 'Vielleicht hab ich gar nicht laut genug Stopp gesagt.'];
 };
 const blindFolgen = (id) => ({
   ausgang: (r) => (r.angekommen && r.vertrauen >= 55 ? 'gut' : r.angekommen ? 'knapp' : r.hektik >= 2 ? 'hektik' : 'nicht'),
@@ -662,6 +681,89 @@ export const GESPRAECHE_N1 = {
     ] },
     ['kaya', 'Gut. Unterschreiben. Dann raus auf den Hof.'],
   ],
+  // Dienstag 9:55, Sport. Frau Sommer teilt die Paare ein. Erst führst du Yusuf (er sagt einmal selbst Stopp), dann siehst du Jo und Noah,
+  // dann führt Yusuf dich – und eine fremde Stimme ruft dazwischen. „Wer führt, trägt.“ Kommt beim Hallenturnier (Kapitel 3) zurück.
+  n1_sport: [
+    ['erzaehler', 'Dienstag, 9:55. Turnhalle. Es riecht nach Gummi und Bohnerwachs.'],
+    ['sommer', 'Hütchen, zwei Bänke, hinten die Matte. Zu zweit. Eine Person sieht nichts. Die andere führt.'],
+    ['sommer', 'Die Paare mach ich. Nicht ihr.'],
+    ['jo', 'Ohhh nein.'],
+    ['sommer', '{name} mit Yusuf. Jo mit Noah. Ben mit Ayla. Der Rest kommt zu mir.'],
+    ['erzaehler', 'Yusuf kommt rüber. Ihr habt bis jetzt kein Wort miteinander geredet.'],
+    ['yusuf', '(nimmt das Tuch) Ich zuerst. Bevor ich’s mir anders überleg.'],
+    ['sommer', 'Eine Regel. Nur eine. Wer „Stopp“ sagt, wird nicht überredet. Stopp gilt sofort.'],
+    ['sommer', 'Wer führt, trägt. Los.'],
+    { szene: 'blind', id: 'sportFuehren', def: { partner: PARTNER.yusuf, stoppMoment: true, wo: 'Turnhalle' },
+      ausgang: (r) => (r.stoppIgnoriert ? 'ignoriert' : r.angekommen && r.vertrauen >= 55 ? 'gut' : r.angekommen ? 'knapp' : r.hektik >= 2 ? 'hektik' : 'nicht'),
+      folgen: {
+        gut: { staerke: 'fuehren', herz: { yusuf: 2 }, merke: 'sportGut', dann: [['yusuf', '(nimmt das Tuch ab) Ich hab kein einziges Mal geblinzelt. Ehrlich.']] },
+        knapp: { herz: { yusuf: 1 }, merke: 'sportKnapp', dann: [['yusuf', 'Zwei Hütchen erwischt. Aber angekommen. Passt.']] },
+        hektik: { merke: 'sportHektik', dann: [['yusuf', '(nimmt das Tuch ab) Du redest schneller, als ich gehen kann.']] },
+        nicht: { merke: 'sportNicht', dann: [['yusuf', 'Nicht ganz bis zur Matte. Egal. Ich leb noch.']] },
+        ignoriert: { herz: { yusuf: -2 }, merke: 'sportStoppIgnoriert', dann: [['yusuf', '(zieht das Tuch runter) Ich hab Stopp gesagt.'], ['erzaehler', 'Er sagt es nicht laut. Aber er geht einen Schritt weg von dir.']] },
+      } },
+    ['erzaehler', 'Tausch. Während Yusuf dir das Tuch hinhält, schaust du kurz rüber. Jo und Noah sind an der zweiten Bank.'],
+    { blick: { titel: 'Zweite Bank', blicke: 2, text: 'Noah hat das Tuch auf. Jo führt. Zwei Blicke. Was siehst du?',
+      personen: [
+        { wer: 'noah', name: 'Noah', signale: [
+          { wo: 'Hände', t: 'Beide Hände vorgestreckt. Die Finger gespreizt. Er tastet in die Luft.' },
+          { wo: 'Mund', t: 'Er sagt etwas. Ganz leise. Du verstehst: „Stopp.“', key: 'noahStopp' } ] },
+        { wer: 'jo', name: 'Jo', signale: [
+          { wo: 'Hand', t: 'Jo hat die Hand an Noahs Rücken. Er schiebt. Nicht fest. Aber er schiebt.', key: 'joSchiebt' },
+          { wo: 'Blick', t: 'Jo grinst rüber zu Ben. Er spielt für Publikum.', key: 'joPublikum' } ] },
+        { wer: 'sommer', name: 'Frau Sommer', signale: [
+          { wo: 'Rücken', t: 'Sie kniet hinten an der Matte und zieht ein Hütchen gerade. Sie sieht euch nicht.', key: 'sommerWeg' } ] },
+      ],
+      uebersehen: [{ key: 'noahStopp', t: 'Noah hat leise „Stopp“ gesagt. Bevor er gefallen ist.' }] } },
+    ['jo', 'Da ist nix! Geh einfach!'],
+    ['erzaehler', 'Noah macht einen Schritt. Sein Fuß bleibt an der Bank hängen. Er fällt. Auf beide Hände.'],
+    ['erzaehler', 'Ben lacht. Zwei andere auch. Jo hebt die Arme: „Was? Ich hab doch gesagt, da ist nix.“'],
+    ['erzaehler', 'Noah zieht das Tuch runter. Er schaut niemanden an.'],
+    { pult: { g: 'Ärger', w: 5 } },
+    { warum: true, wahl: [
+      { t: '„Jo. Er hat Stopp gesagt.“', bemerkt: 'noahStopp', weil: 'Weil du gehört hast, was Noah gesagt hat.', staerke: 'klar', herz: { noah: 2, jo: -1 }, merke: 'sportJoStopp', dann: [
+        ['jo', 'Hat er nicht.'], ['noah', '(leise, aber deutlich) Doch. Hab ich.'], ['erzaehler', 'Kurz ist es still. Frau Sommer dreht sich um.'],
+        ['sommer', 'Was war?'], ['jo', '(hebt die Hände) Nichts. Okay. Sorry, Noah.'], ['erzaehler', 'Es klingt nicht ganz ehrlich. Aber er hat es gesagt. Vor allen.']] },
+      { t: '„Jo, was soll das?“', herz: { noah: 1, jo: -1 }, merke: 'sportJoWas', dann: [
+        ['jo', 'Chill. Er ist über eine Bank gestolpert. Passiert.'], ['erzaehler', 'Noah sagt nichts dazu. Was genau passiert ist, weißt du nicht. Nur, dass er am Boden sitzt.']] },
+      { t: '(Zu Noah gehen. Die Hand hinhalten.)', staerke: 'einbeziehen', herz: { noah: 2 }, merke: 'sportNoahHand', dann: [
+        ['erzaehler', 'Du hältst ihm die Hand hin. Er schaut sie an. Dann nimmt er sie.'], ['noah', '(sehr leise) Ich hab Stopp gesagt.'],
+        { wahl: [
+          { t: '„Ich weiß. Ich hab’s gehört.“', bemerkt: 'noahStopp', weil: 'Weil du hingehört hast.', herz: { noah: 1 }, merke: 'sportNoahGeglaubt', dann: [['noah', '(atmet aus) Okay. Dann spinn ich nicht.']] },
+          { t: '„Sag’s Frau Sommer.“', dann: [['noah', 'Nein. Dann bin ich der, der petzt.']] },
+          { t: '„Was machen die Hände?“', dann: [['noah', '(reibt sie an der Hose) Brennen. Geht schon.']] },
+        ] }] },
+      { t: '(Frau Sommer holen.)', herz: { noah: 1, jo: -1 }, merke: 'sportSommer', dann: [
+        ['sommer', '(kommt, schaut sich Noahs Hände an) Alle mal herkommen.'], ['sommer', 'Was hab ich am Anfang gesagt?'],
+        ['ayla', 'Stopp gilt sofort.'], ['sommer', 'Für alle. Auch wenn es von außen lustig aussieht.'],
+        ['jo', '(murmelt) Petze.'], ['erzaehler', 'Er schaut dich dabei nicht an. Aber du weißt, wen er meint.']] },
+      { t: '(Mitlachen. Ist ja nichts passiert.)', herz: { noah: -2, jo: 1 }, merke: 'sportGelacht', dann: [
+        ['erzaehler', 'Du lachst kurz mit. Noah schaut hoch. Genau zu dir.'], ['erzaehler', 'Dann schaut er weg.']] },
+      { t: '(Wegschauen. Gleich hast du selbst das Tuch auf.)', merke: 'sportWeg', dann: [
+        ['erzaehler', 'Du drehst dich zu Yusuf. Hinter dir steht Noah auf. Allein.']] },
+    ] },
+    { pult: null },
+    { sicht: (m) => ({ wer: 'noah', name: 'Noah', auf: 'du', lachen: m.sportGelacht || m.sportWeg ? ['jo', 'ben'] : [], gedanken: NOAH_SPORT(m) }) },
+    ['erzaehler', 'Jetzt du. Das Tuch riecht nach Waschmittel. Dann ist es dunkel.'],
+    { wenn: (m) => m.sportStoppIgnoriert, dann: [['yusuf', '(zu Frau Sommer) Kann ich tauschen? Ich führ nicht.'], ['sommer', '(schaut ihn an, dann dich) Okay. Dann führ ich.']] },
+    { wenn: (m) => m.sportHektik && !m.sportStoppIgnoriert, dann: [['yusuf', 'Ich mach’s langsam. So, wie ich’s gebraucht hätte.']] },
+    { szene: 'gefuehrt', id: 'sportGefuehrt', bildId: 'sportWeg', def: (m) => ({ partner: m.sportStoppIgnoriert ? PARTNER.sommer : PARTNER.yusuf, stoerer: { name: 'Jo' }, wo: 'Turnhalle' }),
+      ausgang: (r) => (r.angekommen ? 'an' : 'nicht'), folgen: { an: { merke: 'sportAngekommen' }, nicht: {} } },
+    { tu: 'n1_sportGefuehrt' },
+    ['sommer', '(pfeift) Alle in den Kreis.'],
+    ['sommer', 'Wer führt, trägt. Die andere Person gibt euch ihre Augen. Das ist viel.'],
+    ['sommer', 'Was war schwerer für dich: führen – oder geführt werden?'],
+    { wahl: [
+      { t: '„Führen. Wenn was passiert, bin ich schuld.“', merke: 'sportSchwerFuehren', dann: [['sommer', 'Genau das meine ich mit tragen. Danke.']] },
+      { t: '„Geführt werden. Ich musste jemandem vertrauen, den ich kaum kenne.“', merke: 'sportSchwerGefuehrt', dann: [['yusuf', '(leise) Ging mir genauso.']] },
+      { t: '„Stopp sagen. Das fühlt sich an wie aufgeben.“', staerke: 'klar', merke: 'sportSchwerStopp', dann: [['sommer', 'Ist es nicht. Stopp heißt: Ich pass auf mich auf. Das Gegenteil von aufgeben.']] },
+      { t: '„Zuschauen, wie es bei anderen schiefgeht.“', merke: 'sportSchwerZuschauen', dann: [['sommer', '(nickt langsam) Das ist vielleicht das Schwerste. Merk dir das.']] },
+    ] },
+    { wenn: (m) => m.sportGut && !m.sportStoppIgnoriert, dann: [['yusuf', '(beim Rausgehen) Irgendwann ist Hallenturnier. Falls du wählen darfst …'], ['yusuf', 'Nur so.']] },
+    { wenn: (m) => m.sportStoppIgnoriert, dann: [['erzaehler', 'Yusuf geht als Erster raus. Ohne dich anzuschauen.']] },
+    { wenn: (m) => m.sportNoahHand || m.sportJoStopp, dann: [['noah', '(an der Tür, ohne dich anzusehen) … Danke. Vorhin.']] },
+    { wenn: (m) => m.sportGelacht, dann: [['erzaehler', 'In der Umkleide sitzt Noah ganz hinten. Er zieht sich schneller um als alle anderen.']] },
+  ],
   n1_blind: [
     ['kaya', 'Blind-Parcours. Eine Person sieht nichts. Die andere lotst.'],
     ['kaya', 'Wer zu hektisch ist, kriegt ein Stopp. Das darf jeder sagen.'],
@@ -693,5 +795,15 @@ export const tunN1 = (c) => ({
   n1_deutschRest: () => ((c.ui.einstellungen && c.ui.einstellungen().unterricht) ? [] : [{ blende: 'Deutsch. 50 Minuten. Dann klingelt es.' }]),
   n1_tischNoah: () => { c.S.merke.kantineNoah = true; return []; },
   n1_chiaraKurz: () => { c.S.merke.chiaraKurz = true; return []; },
+  // Nach „Geführt werden“: was du gemacht hast, sagt die Person, die dich geführt hat (ohne Note)
+  n1_sportGefuehrt: () => {
+    const r = (c.S.sz || {}).sportGefuehrt || {}, m = c.S.merke, p = m.sportStoppIgnoriert ? 'sommer' : 'yusuf', aus = [];
+    if (r.joErkannt) { m.sportJoErkannt = true; aus.push([p, 'Gut, dass du nachgefragt hast. Das „Links“ war Jo.']); }
+    else if (r.fremdGefolgt) { m.sportJoGefolgt = true; aus.push([p, 'Das „Links“ eben war nicht ich. Das war Jo.'], ['erzaehler', 'Eine Stimme, die laut genug ist, klingt im Dunkeln fast wie die richtige.']); }
+    if (r.eigeneStopps) { m.sportSelbstStopp = true; aus.push([p, p === 'sommer' ? 'Du hast Stopp gesagt. Gut so. Das ist nicht feige.' : 'Du hast Stopp gesagt. Und ich hab gewartet. So geht das.']); }
+    if (r.ballGestoppt) aus.push([p, 'Beim Ball bist du sofort stehen geblieben. Ich hab nur „Warte“ gesagt.']);
+    if (!r.angekommen) aus.push(['erzaehler', 'Ihr habt die Matte nicht ganz erreicht. Das Tuch ist trotzdem irgendwann ab.']);
+    c.S.merke = m; return aus;
+  },
   n1_tischBen: () => { c.S.merke.kantineBen = true; return []; },
 });
