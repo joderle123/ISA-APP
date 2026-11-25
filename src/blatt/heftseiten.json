@@ -1,13 +1,14 @@
 {
   "mathe-m3|de|heft": {
-    "mathe-m3-runden": 3,
-    "mathe-m3-mal-ganze-zahl": 3,
-    "mathe-m3-geteilt-ganze-zahl": 3,
-    "mathe-m3-flaecheninhalt": 3,
-    "mathe-m3-flaecheneinheiten": 3,
-    "mathe-m3-temperatur": 3,
-    "mathe-m3-diagramme-lesen": 4,
-    "mathe-m3-mittelwert": 3
+    "mathe-m3-runden": 6,
+    "mathe-m3-mal-ganze-zahl": 6,
+    "mathe-m3-geteilt-ganze-zahl": 6,
+    "mathe-m3-flaecheninhalt": 7,
+    "mathe-m3-flaecheneinheiten": 6,
+    "mathe-m3-temperatur": 6,
+    "mathe-m3-diagramme-lesen": 8,
+    "mathe-m3-strichliste": 6,
+    "mathe-m3-mittelwert": 6
   },
   "mathe-m3|de|loesungen": {
     "mathe-m3-runden": 2,
@@ -15,7 +16,9 @@
     "mathe-m3-geteilt-ganze-zahl": 2,
     "mathe-m3-flaecheninhalt": 2,
     "mathe-m3-flaecheneinheiten": 2,
-    "mathe-m3-diagramme-lesen": 2,
-    "mathe-m3-mittelwert": 2
+    "mathe-m3-temperatur": 2,
+    "mathe-m3-diagramme-lesen": 3,
+    "mathe-m3-strichliste": 2,
+    "mathe-m3-mittelwert": 3
   }
 }
