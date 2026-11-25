@@ -335,9 +335,11 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       if (!w) continue;
       let [x, z, yaw, haltung] = w;
       // „sitzt“: auf dem Stuhl, Blick zum Tisch (Stuhl steht 0,62 m hinter der Tischmitte – Figur etwas nach hinten)
-      const sp = haltung === 'sitzt' ? sitzSuche(x, z) : null;
+      const sitzend = haltung === 'sitzt' || haltung === 'schlaeft';   // „schlaeft“: sitzt, Kopf zur Seite, Augen zu
+      const sp = sitzend ? sitzSuche(x, z) : null;
       if (sp) { x = sp.x; z = sp.z; yaw = sp.rot; }
-      p.f.sitzen(haltung === 'sitzt', sp ? sp.h || 0.47 : 0.47);
+      p.f.sitzen(sitzend, sp ? sp.h || 0.47 : 0.47);
+      if (p.f.schlafen) p.f.schlafen(haltung === 'schlaeft');
       p.pos.set(x, 0, z); p.yaw = yaw; p.basisYaw = yaw; p.haltung = haltung || ''; p.gegruesst = false;
       p.f.group.position.copy(p.pos); p.f.group.rotation.y = yaw;
       p.f.spiele(haltung === 'redet' ? 'Interact' : haltung === 'winkt' ? 'Wave' : 'Idle', { tempo: haltung === 'redet' ? 0.35 : 1 });
@@ -1146,7 +1148,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   }
   function zielPunkte() {
     const st = SCHRITTE[S.schritt]; if (!st || S.fertig) return [];
-    let m = st.marker; if (!m) return [];
+    let m = st.frei && freiLauf ? freiOffen().map((f) => f.id) : st.marker; if (!m) return [];
     if (m === 'bingo') m = Object.keys(GESPRAECHE).filter((k) => k.startsWith('bingo_')).map((k) => k.slice(6)).filter((id) => id !== 'noah' && !S.gefragt.includes(id));
     if (!Array.isArray(m)) m = [m];
     const out = [];
@@ -1233,11 +1235,20 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         await ui.sprich({ ...sprecher(wer), text: ersetze(text) });
         if (redner) { const [a, tp] = haltungAnim(redner); redner.f.spiele(a, { tempo: tp, blende: 0.4 }); }
       } else if (z.wahl) {
-        const opt = z.wahl.filter((w) => !w.wenn || w.wenn(S.merke));   // manche Antworten gibt es nur nach früheren Entscheidungen
+        const opt = z.wahl.filter((w) => (!w.wenn || w.wenn(S.merke)) && (!w.bemerkt || bemerkt(w.bemerkt)));   // manche Antworten gibt es nur nach früheren Entscheidungen – oder nur, wenn man hingeschaut hat
         // Reihenfolge mischen, wenn eine Antwort eine Stärke zeigt – sonst wäre „die erste ist die gute“ zu leicht
         const ord = opt.map((_, k) => k);
         if (opt.some((w) => w.staerke) && !z.fest) for (let k = ord.length - 1; k > 0; k--) { const r = Math.floor(Math.random() * (k + 1)); [ord[k], ord[r]] = [ord[r], ord[k]]; }
-        const i = await ui.waehle(ord.map((k) => ersetze(opt[k].t)), '', { fest: !!z.fest });
+        // Steuerpult auf Rot: ruhige Antworten (ruhig: true) sind zu, bis man runterkommt (Atmen, Abstand, Gedanken prüfen)
+        let i; const versucht = {};
+        for (;;) {
+          const rot = pultRot(), gesperrt = {}, tags = {};
+          ord.forEach((k, pos) => { if (rot && opt[k].ruhig) gesperrt[pos] = 'Zu aufgewühlt. Erst runterkommen.'; else if (opt[k].bemerkt) tags[pos] = opt[k].weil || 'Weil du hingeschaut hast.'; });
+          const extra = Object.keys(gesperrt).length ? PULT_HILFEN.filter((h) => !versucht[h.id]) : [];
+          const r = partnerAn() && z.warum && !extra.length ? await partnerWahl(opt, ord) : await ui.waehle(ord.map((k) => ersetze(opt[k].t)), '', { fest: !!z.fest, gesperrt, tags, extra });
+          if (r && typeof r === 'object' && r.extra) { versucht[r.extra] = true; await pultHilfe(r.extra); continue; }
+          i = r; break;
+        }
         vib(10);
         const w = opt[ord[i]];
         if (w.staerke) staerke(w.staerke);
@@ -1247,16 +1258,34 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         merktSich(w);
         if (z.warum) await warumFrage(w);
         if (w.dann && w.dann.length) await spiele(w.dann);
+      } else if ('pult' in z) {   // Steuerpult: { pult: { g, w } } setzen, { pult: { plus } } ändern, { pult: null } aus
+        pultSetzen(z.pult);
+      } else if ('handy' in z) {   // Handy, das jemand hinhält: { handy: { wer, foto: { von, auf, wer }, text, umfrage } } – { handy: null } weg
+        if (!z.handy) ui.handyBild(null);
+        else ui.handyBild({ ...z.handy, text: ersetze(z.handy.text || ''), bild: z.handy.foto ? fotoAusWelt(z.handy.foto) : z.handy.fotoId ? fotoHolen(z.handy.fotoId) : z.handy.bild || '' });
+      } else if (z.blick) {   // Hinschauen: unten die Leiste, die Kamera geht nah an die gewählte Person
+        ui.dialogZu();
+        const r = await ui.blickSzene(z.blick, { fokus: (w) => { const p = leute[w]; if (p) { steuerung.fokus = p.pos || p.f.group.position; steuerung.gegenSchuss = false; } },
+          vorlesen: (t) => { if (ui.autoVorlesen) ui.vorlesen(t); } });
+        S.bemerkt = S.bemerkt || {}; r.gesehen.forEach((k) => { S.bemerkt[k] = true; });
+        const kap = (SCHRITTE[S.schritt] || {}).kap || 1, alle = z.blick.personen.flatMap((p) => p.signale.filter((x) => x.key).map((x) => x.key));
+        const BL = S.blickLog = S.blickLog || {}; BL[kap] = (BL[kap] || []).concat([{ titel: z.blick.titel || 'Hinschauen', gesehen: r.texte.map((x) => x.t), wichtig: alle.length, bemerkt: r.gesehen.length, uebersehen: (z.blick.uebersehen || []).filter((u) => !r.gesehen.includes(u.key)).map((u) => u.t) }]);
+        steuerung.fokus = null; sichern();
+      } else if (z.sicht) {   // Andere Sicht (Baustein 5): ein paar Sekunden durch die Augen einer anderen Figur
+        await andereSicht(z.sicht);
+      } else if (z.foto) {   // Foto in der Welt aufnehmen (still), später auf einem Handy zeigen: { foto: 'id', wer, von, auf }
+        FOTOS[z.foto] = fotoAusWelt(z); try { sessionStorage.setItem('lycee.foto.' + z.foto, FOTOS[z.foto]); } catch (e) { /* voll */ }
+      } else if (z.bemerke) {   // etwas wurde bemerkt (z. B. im Bus hingeschaut) – öffnet später Antworten mit bemerkt: 'key'
+        [].concat(z.bemerke).forEach((k) => { S.bemerkt = S.bemerkt || {}; S.bemerkt[k] = true; }); sichern();
       } else if (z.szene) {
         // Situations-Spiel (situation.js): Ausgang → Folgen (wie eine Wahl: staerke, herz, merke, dann)
-        const def = mischeKarten(z.szene, typeof z.def === 'function' ? z.def(S.merke, S) : z.def);
+        const def = bilderEinsetzen(mischeKarten(z.szene, typeof z.def === 'function' ? z.def(S.merke, S) : z.def));
         ui.dialogZu();
-        const SZ = { hitze: 'hitzeDuell', chat: 'liveChat', checkin: 'checkIn', namen: 'namenRekord', zwei: 'zweiWahrheiten', blind: 'blindParcours', stempel: 'skillsStempel', tanks: 'tankRaten', meinetanks: 'meineTanks', nachhaken: 'nachhaken', teams: 'teamsWaehlen', pult: 'gefuehlsPult', lesen: 'gesichterLesen', mischpult: 'mischpult', linie: 'linie', staerken: 'staerkenSchenken', sort: 'sortSprint', platz: 'platzwechsel', koerper: 'koerperKarte', synchron: 'synchron', spuren: 'spurenWand', antippen: 'gedankeAntippen', mut: 'mutBalken', thermo: 'thermometer', zonen: 'zonenWette', test: 'mathTest', atem: 'atemSync', koffer: 'koffer', weiche: 'gedankenWeiche', bohnen: 'bohnenWette', waage: 'beweisWaage', satz: 'satzBau', zettel: 'wenRaten', abstand: 'stoppAbstand', stopp: 'stoppBau', treppe: 'treppe', druck: 'druckRunde', buehne: 'buehneKippen', feed: 'feedSim', rucksack: 'rucksack', akku: 'akkuTag', wuerfel: 'gesundWuerfel', kurve: 'jahresKurve', brief: 'briefAnMich' };
         // Nicht durchklicken: Skill-Szenen prüfen, ob sie wirklich gemacht wurden (nie bei Entscheidungen – die haben Folgen, kein Falsch).
         // Sonst „Noch mal“ mit Tipp, höchstens dreimal; danach geht es weiter, und die Lehrer-Ansicht zeigt es.
         let r = {};
         for (let v = 1; ; v++) {
-          const lauf = ui[SZ[z.szene] || z.szene](def);
+          const lauf = ui[SZ_UI[z.szene] || z.szene](def);
           hilfeKnopf(z.szene, v);
           r = (await lauf) || {};
           const grund = z.pruefe === false ? null : (z.pruefe || PRUEF[z.szene] || (() => null))(r, def);
@@ -1298,7 +1327,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (imGespraech) return;
     imGespraech = true; input.setEnabled(false); steuerung.frei = false; ui.hinweis(null);
     try { await spiele(zeilen); } finally {
-      ui.dialogZu(); imGespraech = false; input.setEnabled(true); steuerung.frei = true; steuerung.fokus = null; steuerung.gegenSchuss = false; gegenueber = null; if (sprichtJetzt && leute[sprichtJetzt] && leute[sprichtJetzt].f.redet) leute[sprichtJetzt].f.redet(false); sprichtJetzt = null; if (spieler && spieler.redet) spieler.redet(false); sperreBis = performance.now() + 350; sichern();
+      ui.dialogZu(); ui.handyBild(null); imGespraech = false; input.setEnabled(true); steuerung.frei = true; steuerung.fokus = null; steuerung.gegenSchuss = false; gegenueber = null; if (sprichtJetzt && leute[sprichtJetzt] && leute[sprichtJetzt].f.redet) leute[sprichtJetzt].f.redet(false); sprichtJetzt = null; if (spieler && spieler.redet) spieler.redet(false); sperreBis = performance.now() + 350; sichern();
       if (danach) { const d = danach; danach = null; await d(); }
     }
   }
@@ -2003,6 +2032,126 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   // ---------- Schritte ----------
   let busFaehrt = 0;   // 0 steht, 1 fährt los (weg), −1 fährt am Ende ab
   let startet = false;   // solange ein Schritt startet (Tagesrückblick, Teleport), lösen Orte nichts aus
+  // ---------- Neues Spielsystem (25.11.2026): Steuerpult, Hinschauen, echtes Foto aus der Welt ----------
+  // Steuerpult (Baustein 3): S.pult = { g, w (0–10), kap }. Ab 7 ist Rot – ruhige Antworten sind zu.
+  const pultRot = () => !!(S.pult && S.pult.kap === ((SCHRITTE[S.schritt] || {}).kap || 1) && S.pult.w >= 7);
+  function pultSetzen(p) {
+    const kap = (SCHRITTE[S.schritt] || {}).kap || 1;
+    if (!p) { S.pult = null; ui.pult(null); sichern(); return; }
+    const alt = S.pult && S.pult.kap === kap ? S.pult : { g: p.g || 'Ruhe', w: 2, kap };
+    S.pult = { g: p.g || alt.g, w: Math.max(0, Math.min(10, p.w != null ? p.w : alt.w + (p.plus || 0))), kap };
+    const L = S.pultLog = S.pultLog || {}, l = L[kap] = L[kap] || { max: 0, rot: 0, hilfen: [] };
+    if (S.pult.w >= 7 && !(alt.w >= 7)) l.rot++;
+    l.max = Math.max(l.max, S.pult.w);
+    ui.pult(S.pult); sichern();
+  }
+  const PULT_HILFEN = [{ id: 'atmen', t: '🫁 Atmen' }, { id: 'abstand', t: '🚶 Abstand nehmen' }, { id: 'gedanke', t: '🧠 Gedanken prüfen' }];
+  async function pultHilfe(id) {
+    const kap = (SCHRITTE[S.schritt] || {}).kap || 1, l = (S.pultLog = S.pultLog || {})[kap] = (S.pultLog[kap] || { max: 0, rot: 0, hilfen: [] });
+    ui.dialogZu();
+    let minus = 0;
+    if (id === 'atmen') { await ui.atem(); minus = 3; staerke('atmen'); }
+    else if (id === 'abstand') { await ui.blende('Ein paar Schritte weg. Kurz Luft holen.'); await new Promise((r) => setTimeout(r, 1200)); await ui.blendeAus(300); minus = 2; }
+    else if (id === 'gedanke') {
+      const g = (S.pult && S.pult.gedanke) || 'Alle lachen über mich.';
+      const j = await ui.waehle(['Ja. Ganz sicher.', 'Weiß ich nicht. Ich hab nur ein paar gesehen.'], 'Der Gedanke: „' + g + '“ – stimmt das sicher?', { fest: true });
+      minus = j === 1 ? 2 : 0;
+      if (!minus) ui.toast('<b>🧠 Der Gedanke bleibt laut</b><span>Prüf ihn noch mal: Was weißt du wirklich?</span>');
+    }
+    if (minus) { l.hilfen.push(id); pultSetzen({ plus: -minus }); }
+  }
+  // Hinschauen (Baustein 2): was man bemerkt hat, öffnet später Antworten (bemerkt: 'key')
+  // Chat-Nachrichten mit bildId bekommen das echte Foto (bildUrl); ohne Foto bleibt die Beschreibung
+  const bilderEinsetzen = (def) => (def && Array.isArray(def.nachrichten) ? { ...def, nachrichten: def.nachrichten.map((n) => (n && n.bildId ? { ...n, bildUrl: fotoHolen(n.bildId) } : n)) } : def);
+  // Andere Sicht: Kamera auf Augenhöhe der Figur, Blick auf ein Ziel, langsames Schwenken; Gedanken als Untertitel; Gruppen lachen.
+  // def = { wer, auf: [dx, y, dz] oder Figur-Id, name, gedanken: ['…'], lachen: ['ben', 'jo'], schwenk: Grad }
+  async function andereSicht(def) {
+    const p = leute[def.wer]; if (!p) return;
+    ui.dialogZu();
+    const altFrei = steuerung.frei; steuerung.kameraAus = true; steuerung.frei = false; input.setEnabled(false);
+    const kopf = p.f.group.position.clone().add(new THREE.Vector3(0, (p.def.hoehe || 1.6) * 0.93, 0));
+    const zielP = typeof def.auf === 'string' && leute[def.auf] ? leute[def.auf].f.group.position.clone().add(new THREE.Vector3(0, 1.3, 0))
+      : new THREE.Vector3(kopf.x + (def.auf || [0, 0, 3])[0], (def.auf || [0, 1.4])[1], kopf.z + (def.auf || [0, 0, 3])[2]);
+    const sichtbar = p.f.group.visible; p.f.group.visible = false;   // die eigene Figur nicht im Bild
+    const el = document.createElement('div'); el.className = 'ly-sicht'; el.innerHTML = '<div class="ly-sicht-name">👁 ' + esc((def.name || p.def.name) + 's Sicht') + '</div><div class="ly-sicht-text"></div>';
+    document.body.appendChild(el); requestAnimationFrame(() => el.classList.add('an'));
+    const schwenk = ((def.schwenk || 14) * Math.PI) / 180, t0 = performance.now(), basis = Math.atan2(zielP.x - kopf.x, zielP.z - kopf.z);
+    const dist = Math.hypot(zielP.x - kopf.x, zielP.z - kopf.z);
+    let an = true;
+    const fuehren = () => {   // langsam schwenken, leicht atmen
+      if (!an) return; const t = (performance.now() - t0) / 1000, w = basis + Math.sin(t * 0.35) * schwenk * 0.5;
+      camera.position.set(kopf.x, kopf.y + Math.sin(t * 1.7) * 0.01, kopf.z);
+      camera.lookAt(kopf.x + Math.sin(w) * dist, zielP.y, kopf.z + Math.cos(w) * dist);
+      requestAnimationFrame(fuehren);
+    };
+    fuehren();
+    for (const id of def.lachen || []) { const q = leute[id]; if (q && q.f.geste) { q.f.geste('lachen'); setTimeout(() => q.f.geste && q.f.geste('lachen'), 1800); } }
+    const txt = el.querySelector('.ly-sicht-text');
+    for (const g of def.gedanken || []) { txt.textContent = g; if (ui.autoVorlesen) ui.vorlesen(g); await new Promise((r) => setTimeout(r, Math.max(2600, g.split(/\s+/).length * 420))); }
+    an = false; el.classList.remove('an'); setTimeout(() => el.remove(), 500);
+    p.f.group.visible = sichtbar; steuerung.kameraAus = false; steuerung.frei = altFrei; input.setEnabled(true); steuerung.kamera(0.016, true);
+  }
+  // ---------- Freier Moment (Baustein 1): echte Zeit, mehrere Fäden gleichzeitig, man kann nicht überall sein ----------
+  // Schritt mit frei: { titel, dauer (s), faeden: { id: { gespraech, label, ab, bis, einmal } }, ereignisse: [{ t, gespraech }], ende }
+  let freiLauf = null;
+  const freiOffen = () => { if (!freiLauf) return []; const L = freiLauf, t = L.dauer - L.rest;
+    return Object.entries(L.def.faeden).map(([id, f]) => ({ id, ...f })).filter((f) => !(f.einmal !== false && L.besucht[f.id]) && t >= (f.ab || 0) && t <= (f.bis == null ? 1e9 : f.bis)); };
+  function freiStart(st) {
+    freiLauf = { st, def: st.frei, dauer: st.frei.dauer || 360, rest: st.frei.dauer || 360, besucht: {}, ereignis: 0, ende: false };
+    freiZeigen();
+    ui.toast('<b>⏱ ' + esc(st.frei.titel || 'Freie Zeit') + '</b><span>Du entscheidest, wohin. Du schaffst nicht alles.</span>');
+  }
+  function freiZeigen() {
+    const L = freiLauf; if (!L) { ui.freiUhr(null); return; }
+    const t = L.dauer - L.rest;
+    ui.freiUhr({ titel: L.def.titel || 'Freie Zeit', rest: L.rest, faeden: Object.entries(L.def.faeden).map(([id, f]) => ({ label: f.label || id, besucht: !!L.besucht[id], vorbei: !L.besucht[id] && f.bis != null && t > f.bis })) });
+  }
+  async function freiFaden(id) {
+    const L = freiLauf; if (!L || L.ende) return false;
+    const f = freiOffen().find((x) => x.id === id); if (!f) return false;
+    L.besucht[id] = true; S.merke['frei_' + L.st.id + '_' + id] = true; sichern(); freiZeigen();
+    for (const g of [].concat(f.gespraech)) await gespraech(typeof g === 'string' ? GESPRAECHE[g] : g);
+    return true;
+  }
+  async function freiTick(dt) {
+    const L = freiLauf; if (!L || L.ende || startet) return;
+    if (imGespraech || ui.ebeneArt() || foto) return;   // die Uhr steht, solange man redet oder liest
+    L.rest -= dt * (ui.zeitlos ? 0.5 : 1);
+    if (Math.floor(L.rest) !== L.angezeigt) { L.angezeigt = Math.floor(L.rest); freiZeigen(); }
+    const t = L.dauer - L.rest, e = (L.def.ereignisse || [])[L.ereignis];
+    if (e && t >= e.t) { L.ereignis++; await gespraech(typeof e.gespraech === 'string' ? GESPRAECHE[e.gespraech] : e.gespraech); return; }
+    if (L.rest <= 0) {
+      L.ende = true; ui.freiUhr(null);
+      const kap = L.st.kap || 1, alle = Object.entries(L.def.faeden);
+      const FL = S.freiLog = S.freiLog || {};
+      FL[kap] = (FL[kap] || []).concat([{ titel: L.def.titel || 'Freie Zeit', besucht: alle.filter(([id]) => L.besucht[id]).map(([, f]) => f.label), verpasst: alle.filter(([id]) => !L.besucht[id]).map(([, f]) => f.label) }]);
+      sichern(); try { audio.play('klingel'); } catch (x) { /* kein Ton */ }
+      if (L.def.ende) await gespraech(GESPRAECHE[L.def.ende]);
+      freiLauf = null; await naechster();
+    }
+  }
+  const FOTOS = {};   // Fotos aus der Welt (dataURL), für später: Handy-Karte, Rückblick
+  const fotoHolen = (id) => FOTOS[id] || (() => { try { return sessionStorage.getItem('lycee.foto.' + id) || ''; } catch (e) { return ''; } })();
+  const bemerkt = (k) => [].concat(k).every((x) => !!(S.bemerkt || {})[x]);
+  // Echtes Foto aus der Spielwelt (Baustein 4): Kamera kurz an einen Punkt setzen, ein Bild zeichnen, klein als JPEG.
+  // { wer: Figur, von: [dx, y, dz] relativ zur Figur, auf: [dx, y, dz] } oder absolute Punkte ohne wer. Rückgabe: dataURL oder ''.
+  function fotoAusWelt({ von = [1.6, 1.2, 1.6], auf, wer, fov = 44, w = 480, h = 330, filter = '' } = {}) {
+    try {
+      const canvas = rr.renderer.domElement, b = wer === 'du' && spieler ? spieler.group.position : wer && leute[wer] ? leute[wer].f.group.position : null;
+      const punkt = (v) => new THREE.Vector3(b ? b.x + v[0] : v[0], v[1], b ? b.z + v[2] : v[2]);
+      const p0 = camera.position.clone(), q0 = camera.quaternion.clone(), f0 = camera.fov;
+      camera.position.copy(punkt(von)); camera.fov = fov; camera.updateProjectionMatrix();
+      camera.lookAt(punkt(auf || [0, 1.0, 0])); camera.updateMatrixWorld();
+      rr.render({ night: sky.night, time: loop.time, sun: sky.sunDir, sunColor: sky.colors && sky.colors.light });
+      const c = document.createElement('canvas'); c.width = w; c.height = h; const x = c.getContext('2d');
+      const cw = canvas.width, ch = canvas.height, r = w / h; let sw = cw, sh = cw / r; if (sh > ch) { sh = ch; sw = ch * r; }
+      x.filter = filter || 'saturate(1.08) contrast(1.04)'; x.drawImage(canvas, (cw - sw) / 2, (ch - sh) / 2, sw, sh, 0, 0, w, h); x.filter = 'none';
+      const url = c.toDataURL('image/jpeg', 0.84);
+      camera.position.copy(p0); camera.quaternion.copy(q0); camera.fov = f0; camera.updateProjectionMatrix();
+      return url;
+    } catch (e) { return ''; }
+  }
+  const SZ_UI = { hitze: 'hitzeDuell', chat: 'liveChat', checkin: 'checkIn', namen: 'namenRekord', zwei: 'zweiWahrheiten', blind: 'blindParcours', stempel: 'skillsStempel', tanks: 'tankRaten', meinetanks: 'meineTanks', nachhaken: 'nachhaken', teams: 'teamsWaehlen', pult: 'gefuehlsPult', lesen: 'gesichterLesen', mischpult: 'mischpult', linie: 'linie', staerken: 'staerkenSchenken', sort: 'sortSprint', platz: 'platzwechsel', koerper: 'koerperKarte', synchron: 'synchron', spuren: 'spurenWand', antippen: 'gedankeAntippen', mut: 'mutBalken', thermo: 'thermometer', zonen: 'zonenWette', test: 'mathTest', atem: 'atemSync', koffer: 'koffer', weiche: 'gedankenWeiche', bohnen: 'bohnenWette', waage: 'beweisWaage', satz: 'satzBau', zettel: 'wenRaten', abstand: 'stoppAbstand', stopp: 'stoppBau', treppe: 'treppe', druck: 'druckRunde', buehne: 'buehneKippen', feed: 'feedSim', rucksack: 'rucksack', akku: 'akkuTag', wuerfel: 'gesundWuerfel', kurve: 'jahresKurve', brief: 'briefAnMich' };
   // Prüfungen gegen Durchklicken (nur Skill-Szenen). Rückgabe null = gemacht; sonst { sy, t, tipp } für „Noch mal“.
   const PRUEF = {
     atem: (r) => (r.gut < 2 ? { sy: '🫁', t: 'Das war noch kein ruhiges Atmen.', tipp: 'Halte, bis der Kreis groß ist (zwei, drei Sekunden). Dann loslassen und lange ausatmen – länger als das Einatmen. Erst dann wieder halten.' } : null),
@@ -2059,6 +2208,21 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (art === 'nachhaken') return { ...def, runden: def.runden.map((r) => (Array.isArray(r.fragen) ? { ...r, fragen: misch(r.fragen) } : typeof r.fragen === 'function' ? { ...r, fragen: (o) => misch(r.fragen(o)) } : r)) };
     return def;
   }
+  // Szene für die Kurs-Missionen: dieselben Spiele und dieselben Prüfungen wie in der Geschichte (höchstens drei Versuche),
+  // aber ohne Kapitel-Folgen – die Mission wertet selbst aus. Rückgabe { r, versuche, ok }.
+  async function szeneSpielen(art, defRoh) {
+    const def = mischeKarten(art, defRoh); ui.dialogZu();
+    let r = {}, v = 1;
+    for (; ; v++) {
+      const lauf = ui[SZ_UI[art] || art](def);
+      hilfeKnopf(art, v);
+      r = (await lauf) || {};
+      const grund = (PRUEF[art] || (() => null))(r, def);
+      if (!grund) return { r, versuche: v, ok: true };
+      if (v >= 3) return { r, versuche: v, ok: false };
+      await ui.nochmal({ ...grund, versuch: v + 1, max: 3 });
+    }
+  }
   const SZ_TITEL = { atem: 'Gemeinsam atmen', spuren: 'Spuren-Wand', nachhaken: 'Nachfragen', satz: 'Satz bauen' };
   function versuchMerken(z, def, n, ok, zusatz = '') {
     const kap = z.szene === 'skillsStunde' && def && def.kap ? def.kap : (SCHRITTE[S.schritt] || {}).kap || 1;
@@ -2072,9 +2236,36 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   // der Kern von sozial-emotionalem Lernen. Kein richtig/falsch; die Lehrperson sieht es in der Lehrer-Ansicht.
   const WARUM = ['Ich wollte niemanden verletzen.', 'Ich hatte Angst, selbst dran zu sein.', 'Ich wollte dazugehören.', 'Weil es fair ist.', 'Ich hab nicht lange nachgedacht.', 'Weiß ich nicht.'];
   async function warumFrage(w) {
-    const i = await ui.waehle(WARUM, 'Warum hast du das gemacht? Sei ehrlich – nur du und deine Lehrperson sehen es.', { fest: true });
+    let grund;
+    if (partnerAn()) {   // zu zweit: jede Person sagt ihren eigenen Grund
+      const P = S.partner, gA = WARUM[await ui.waehle(WARUM, P.a + ': Warum? Sei ehrlich.', { fest: true })], gB = WARUM[await ui.waehle(WARUM, P.b + ': Und du? Warum?', { fest: true })];
+      grund = P.a + ': ' + gA + ' · ' + P.b + ': ' + gB;
+    } else grund = WARUM[await ui.waehle(WARUM, 'Warum hast du das gemacht? Sei ehrlich – nur du und deine Lehrperson sehen es.', { fest: true })];
     const kap = (SCHRITTE[S.schritt] || {}).kap || 1;
-    S.gruende = S.gruende || {}; S.gruende[kap] = [...(S.gruende[kap] || []).filter((g) => g.t !== ersetze(w.t)), { t: ersetze(w.t), grund: WARUM[i] }]; sichern();
+    S.gruende = S.gruende || {}; S.gruende[kap] = [...(S.gruende[kap] || []).filter((g) => g.t !== ersetze(w.t)), { t: ersetze(w.t), grund }]; sichern();
+  }
+  // ---------- Zu zweit an einem iPad (ohne Server, ohne Daten im Netz) ----------
+  // Nur bei den wichtigsten Entscheidungen (warum: true): erst wählt jede Person allein, dann wird verglichen. Uneinig → mindestens
+  // 20 Sekunden reden, dann gemeinsam entscheiden. In Minispielen und Szenen mit Zeitdruck gibt es keinen Partner-Modus – dort stört er nur.
+  const partnerAn = () => !!(S && S.partner && S.partner.an && S.partner.a && S.partner.b);
+  ui.partner = () => (partnerAn() ? S.partner : null);
+  async function partnerWahl(opt, ord) {
+    const P = S.partner, texte = ord.map((k) => ersetze(opt[k].t));
+    await ui.partnerKarte({ titel: P.a + ' entscheidet zuerst', text: 'Allein. ' + P.b + ' schaut kurz weg.\nNicht reden – erst danach.', knopf: P.a + ' ist bereit' });
+    const iA = await ui.waehle(texte, P.a + ': Was machst du?', { fest: true, kontext: true });
+    await ui.partnerKarte({ titel: 'Jetzt ' + P.b, text: 'Gib das iPad an ' + P.b + '.\n' + P.a + ', nichts verraten!', knopf: P.b + ' ist bereit' });
+    const ordB = misch(texte.map((_, k) => k));
+    const iB = ordB[await ui.waehle(ordB.map((k) => texte[k]), P.b + ': Was machst du?', { fest: true, kontext: true })];
+    let wahl = iA;
+    const zit = (t) => (/^[„("]/.test(t) ? t : '„' + t + '“');   // Antworten mit eigenen Anführungszeichen nicht doppelt einrahmen
+    if (iA === iB) await ui.partnerKarte({ titel: '🤝 Ihr seid euch einig', text: zit(texte[iA]), knopf: 'Weiter' });
+    else {
+      await ui.partnerKarte({ titel: '💬 Ihr seid euch nicht einig', text: P.a + ': ' + zit(texte[iA]) + '\n' + P.b + ': ' + zit(texte[iB]) + '\n\nRedet kurz: Warum habt ihr so gewählt? Was könnte danach passieren? Dann entscheidet ihr zusammen.', knopf: 'Wir haben geredet', warteMs: 20000 });
+      wahl = (await ui.waehle([texte[iA], texte[iB]], 'Eure gemeinsame Entscheidung:', { fest: true })) === 0 ? iA : iB;
+    }
+    const kap = (SCHRITTE[S.schritt] || {}).kap || 1;
+    S.partnerLog = S.partnerLog || {}; (S.partnerLog[kap] = S.partnerLog[kap] || []).push({ a: texte[iA], b: texte[iB], einig: iA === iB, gemeinsam: texte[wahl] }); sichern();
+    return wahl;
   }
   function merktSich(w) {
     const ms = [].concat(w.merke || []).filter((m) => ECHO.has(m));
@@ -2134,6 +2325,9 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     ui.auftrag({ kapitel: kapName(st.kap), titel: st.titel, ziel: st.ziel });
     if (st.id === 'bingo') zeigeBingo();
     { const an = S.merke.anzeige; ui.anzeige(an && an.kap === st.kap ? an : null); }
+    ui.pult(S.pult && S.pult.kap === st.kap ? S.pult : null);
+    freiLauf = null; ui.freiUhr(null);
+    if (st.frei) freiStart(st);
     if (st.start && st.start.gespraech && mitStart !== false) {
       await gespraech(GESPRAECHE[st.start.gespraech]);
       if (st.id === 'ankunft' && bus) busFaehrt = 1;
@@ -2146,6 +2340,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   }
   // Wen spricht man in diesem Schritt an – und was passiert?
   async function rede(id) {
+    if (freiLauf && await freiFaden(id)) return;
     const st = SCHRITTE[S.schritt];
     const f = st && !S.fertig ? st.fertig : null;
     if (f && f.reden === id) { await gespraech(GESPRAECHE[f.gespraech]); await naechster(); return; }
@@ -3009,6 +3204,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     },
     blende: async (t) => { ui.dialogZu(); await ui.blende(t); await new Promise((r) => setTimeout(r, 1400)); await ui.blendeAus(300); },
     atem: async () => { ui.dialogZu(); await ui.atem(); staerke('atmen'); },
+    szene: (art, def) => szeneSpielen(art, def),
+    vorlesen: (t) => ui.vorlesen && ui.vorlesen(t),
     crew: kmCrew,
     ersetze: (t) => ersetze(t),
     belohnung: (info) => {
@@ -3075,10 +3272,20 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     const fach = Object.keys(FACH_NAME).map((f) => '<li><span class="km-heft">📚</span><div><b>' + FACH_NAME[f] + '</b><small>Modul ' + fachStand(f).modul + ' · bei ' + esc((LEUTE[FACHLEHRER[f]] || {}).name || '') + '</small></div><button type="button" class="ly-btn" data-fach="' + f + '">Stunde spielen</button></li>').join('');
     const skills = sk.filter(stundeFrei).map((x) => '<li class="' + (neben[x.id] ? 'fertig' : '') + '"><span class="km-heft">K' + x.kap + '</span><div><b>' + esc(x.titel.replace(/^Skills: /, '')) + '</b><small>Skills-Stunde · ' + (neben[x.id] ? 'gespielt' : 'mit der Klasse') + '</small></div><button type="button" class="ly-btn' + (neben[x.id] ? '' : ' ly-primaer') + '" data-neben="' + x.id + '">' + (neben[x.id] ? 'Nochmal' : 'Spielen') + '</button></li>').join('');
     const zu = sk.filter((x) => !stundeFrei(x)).length;
-    return '<h3 class="km-h3">📚 Stunden – freiwillig</h3><p class="km-leer">Gehören nicht zur Geschichte. Spiel sie, wann du willst' + (unterrichtAn() ? ' (deine Lehrperson hat sie auch in der Geschichte eingeschaltet).' : '.') + '</p>' +
+    const P = S.partner || {};
+    const zuZweit = '<h3 class="km-h3">👥 Zu zweit an einem iPad</h3><p class="km-leer">Bei den wichtigsten Entscheidungen wählt jede Person zuerst allein. Seid ihr euch nicht einig, redet ihr und entscheidet zusammen. In Skills-Stunden antwortet ihr abwechselnd.</p>' +
+      (partnerAn() ? '<p class="km-leer">Ihr spielt zu zweit: <b>' + esc(P.a) + '</b> und <b>' + esc(P.b) + '</b>. <button type="button" class="ly-link" data-partner="aus">Allein weiterspielen</button></p>'
+        : '<form class="km-code km-partner"><input type="text" maxlength="16" placeholder="Name 1" aria-label="Name 1" value="' + esc(S.name || '') + '"><input type="text" maxlength="16" placeholder="Name 2" aria-label="Name 2"><button type="submit" class="ly-btn">Zu zweit spielen</button></form>');
+    return zuZweit + '<h3 class="km-h3">📚 Stunden – freiwillig</h3><p class="km-leer">Gehören nicht zur Geschichte. Spiel sie, wann du willst' + (unterrichtAn() ? ' (deine Lehrperson hat sie auch in der Geschichte eingeschaltet).' : '.') + '</p>' +
       '<ul class="km-liste">' + fach + skills + '</ul>' + (zu ? '<p class="km-leer">' + zu + ' weitere Skills-Stunden kommen mit den nächsten Kapiteln – oder mit einem Code deiner Lehrperson.</p>' : '') + nebenGeschichtenHtml(neben) + '<h3 class="km-h3">🎟 Missionen</h3>';
   };
-  kmApi.stundenBinden = (k) => {
+  kmApi.stundenBinden = (k, neu) => {
+    const pf = k.querySelector('.km-partner');
+    if (pf) { pf.querySelectorAll('input').forEach((i) => i.addEventListener('keydown', (e) => e.stopPropagation()));
+      pf.onsubmit = (e) => { e.preventDefault(); const [a, b] = [...pf.querySelectorAll('input')].map((i) => i.value.trim().slice(0, 16));
+        if (!a || !b) { ui.toast('<b>Zwei Namen bitte</b><span>Damit das Spiel weiß, wer dran ist.</span>'); return; }
+        S.partner = { a, b, an: true }; sichern(); ui.toast('<b>👥 Zu zweit</b><span>' + esc(a) + ' und ' + esc(b) + '. Bei wichtigen Entscheidungen wählt ihr zuerst allein.</span>'); if (neu) neu(); }; }
+    const pa = k.querySelector('[data-partner="aus"]'); if (pa) pa.onclick = () => { S.partner = { ...(S.partner || {}), an: false }; sichern(); if (neu) neu(); };
     k.querySelectorAll('[data-fach]').forEach((b) => { b.onclick = () => fachFreiwillig(b.dataset.fach); });
     k.querySelectorAll('[data-neben]').forEach((b) => { b.onclick = () => stundeSpielen(b.dataset.neben); });
   };
@@ -3103,12 +3310,13 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       kapitel.push({ kap: k, titel: KAPITEL[k] || '', thema: KAPITEL_MODUL[k] || '', saetze: k <= fertigBis ? ch[k] || chronik(k, S.merke) : [], gespielt: k <= fertigBis, frage: GESPRAECH[k] || REFLEXION[k] || '',
         anzeige: a ? VW[a.art] + (a.art === 'akku' ? ': am wenigsten ' + a.min + ', am Ende ' + a.ende : ': höchstens ' + a.max + ', am Ende ' + a.ende) + ' (von 100)' : '',
         versuche: Object.entries((S.versuche || {})[k] || {}).map(([t, v]) => ({ t, n: typeof v === 'object' ? v.n : v, ok: typeof v === 'object' ? v.ok !== false : true })),
-        gruende: (S.gruende || {})[k] || [] });
+        gruende: (S.gruende || {})[k] || [], partner: (S.partnerLog || {})[k] || [],
+        blick: (S.blickLog || {})[k] || [], pult: (S.pultLog || {})[k] || null, frei: (S.freiLog || {})[k] || [] });
     }
     const ng = SCHRITTE.filter((x) => x.neben === 'geschichte'), gespielt = ng.filter((x) => (S.merke.neben || {})[x.id]);
     const em = S.merke.endeMit;
     return {
-      kapitel, laeuft: S.fertig ? 0 : kapJetzt(), fertig: !!S.fertig,
+      kapitel, laeuft: S.fertig ? 0 : kapJetzt(), fertig: !!S.fertig, zuZweit: S.partner && S.partner.a ? S.partner.a + ' und ' + S.partner.b : '',
       freunde: besteFreunde().slice(0, 3).map((id) => LEUTE[id].name),
       staerken: Object.entries(S.staerken || {}).filter(([k]) => STAERKEN[k]).sort((a, b) => b[1] - a[1]).slice(0, 3).map(([k, n]) => STAERKEN[k].name + ' (' + n + '×)'),
       ende: em && LEUTE[em] ? LEUTE[em].name + '-Ende' + (S.merke.endeLina ? ' und Lina-Ende' : '') : '',
@@ -3323,7 +3531,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       }
       setTimeout(() => missionTank('sitzen'), 0);
     } finally {
-      ui.dialogZu(); imGespraech = false; input.setEnabled(true); steuerung.frei = true; steuerung.fokus = null; sperreBis = performance.now() + 600; sichern();
+      ui.dialogZu(); ui.handyBild(null); imGespraech = false; input.setEnabled(true); steuerung.frei = true; steuerung.fokus = null; sperreBis = performance.now() + 600; sichern();
     }
   }
   // Gespräch mit einem Stammgast: einmal je Kapitel eine neue Szene, sonst ein kurzer Satz
@@ -3355,7 +3563,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (imGespraech) return;
     imGespraech = true; input.setEnabled(false); steuerung.frei = false; ui.hinweis(null); if (gp) steuerung.fokus = gp;
     try { await fn(); } finally {
-      ui.dialogZu(); imGespraech = false; input.setEnabled(true); steuerung.frei = true; steuerung.fokus = null; steuerung.gegenSchuss = false; if (spieler && spieler.redet) spieler.redet(false); sperreBis = performance.now() + 900; sichern(); sitSichtbarkeit();
+      ui.dialogZu(); ui.handyBild(null); imGespraech = false; input.setEnabled(true); steuerung.frei = true; steuerung.fokus = null; steuerung.gegenSchuss = false; if (spieler && spieler.redet) spieler.redet(false); sperreBis = performance.now() + 900; sichern(); sitSichtbarkeit();
     }
   }
   let sitLaeuft = false;
@@ -3869,6 +4077,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     // Mitspielende in Minispielen (Volleyball, Elfmeter, Kicker, Billard) bewegen sich – Tischtennis macht das selbst
     if (!tt3d.aktiv()) for (const f of Object.values(ttFiguren)) if (f.group.parent) f.update(dt);
   }, { order: -50, always: true });
+  loop.add((dt) => { if (freiLauf) freiTick(dt); });
   loop.add((dt, t) => {
     // Menschen: Bewegungen, zum Spieler drehen, Schilder nur nah
     const p = steuerung.pos;

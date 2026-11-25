@@ -154,9 +154,9 @@ export default {
               { wahl: [
                 { t: 'Amira privat schreiben: „Ich mag dich. Wie geht’s dir?“ – und Herrn Kuedes Bescheid sagen.', log: 'Amiras Satz ernst genommen: ihr geschrieben und einen Erwachsenen eingeschaltet', folge: 'Amira antwortet erst am Abend: „Danke. Herr Kuedes hat mit mir geredet.“', skill: true },
                 { t: 'Amira privat schreiben: „Ich mag dich. Wie geht’s dir?“', log: 'Amira privat geschrieben', folge: 'Amira: „Geht so.“ Mehr schreibt sie nicht.', skill: null },
-                { t: 'Nichts tun. Ist bestimmt nur Drama.', log: 'Amiras Satz als Drama abgetan', folge: 'Amira ist am nächsten Tag nicht in der Schule.', skill: false },
+                { t: 'Nichts tun. Ist bestimmt nur Drama.', log: 'Amiras Satz als Drama abgetan', folge: 'Am nächsten Tag fehlt Amira. Herr Kuedes fragt in der Klasse, ob jemand etwas weiß. Du weißt etwas.', skill: false },
               ], frage: 'Was machst du mit dem, was Amira geschrieben hat?' },
-              ['e', 'Wenn jemand schreibt, dass er nicht mehr kann: Erwachsene einschalten. Und es gibt das Kinder- und Jugendtelefon: 116 111.'],
+              ['e', 'Wenn jemand schreibt, dass er nicht mehr kann: Erwachsene einschalten. Ist jemand in Gefahr: 112. Und es gibt das Kanner-Jugendtelefon: 116 111, kostenlos und anonym.'],
             ] },
           ] },
           ['e', 'Wenn im Netz etwas schiefgeht, gibt es vier Schritte. Welcher kommt zuerst?'],

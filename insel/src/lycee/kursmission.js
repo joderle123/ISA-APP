@@ -46,6 +46,7 @@ export const KM_CREW = {
   brandt: { name: 'Frau Brandt · Trainerin', farbe: '#6b4e8a', erwachsen: true, aussehen: { modell: 'frauen', stil: 'Formal', haut: '#f0c9a8', haar: '#8a5a3a', oben: '#6b4e8a', unten: '#2f2f3a', schuhe: '#2b2b2b', hoehe: 1.66 } },
 };
 
+const zit = (t) => (/^[„("]/.test(String(t || '')) ? String(t) : '„' + t + '“');   // Antwort zitieren, ohne doppelte Anführungszeichen
 const esc = (s) => String(s == null ? '' : s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const VIOLETT = '#a77bff';
 export const INFO_LISTE = Object.entries(INFO.hefte).flatMap(([heft, l]) => l.map((m, i) => ({ ...m, heft, nr: i + 1 })));
@@ -111,13 +112,14 @@ export function createKursMissionen({ scene, steuerung, ui, ton = () => {}, vib 
   }
 
   // Zeilen abspielen (siehe Kopf). ctx = laufende Mission.
+  // {f:key} = Merkzettel-Wert (z. B. der gewählte Satz), {f:key|Ersatz} mit Ersatz, wenn leer
+  const fx = (t) => String(t).replace(/\{f:(\w+)(?:\|([^}]*))?\}/g, (_, k, e) => F()[k] || e || '');
   const plus = (p) => { const f = F(); for (const [k, n] of Object.entries(p)) f[k] = Math.max(0, Math.min(100, (f[k] || 0) + n)); sichern(); };
   async function spiele(zeilen) {
     for (const z of zeilen || []) {
-      if (Array.isArray(z)) { await api.sag(z[0], String(z[1]).replace(/\{f:(\w+)\}/g, (_, k) => F()[k] || '')); continue; }   // {f:key} = Merkzettel-Wert, z. B. der gewählte Satz
+      if (Array.isArray(z)) { await api.sag(z[0], fx(z[1])); continue; }
       if (z.wahl) {
         const opt = z.wahl.filter((w) => !w.wenn || w.wenn(F()));
-        const fx = (t) => String(t).replace(/\{f:(\w+)\}/g, (_, k) => F()[k] || '');
         const i = await ui.waehle(opt.map((w) => api.ersetze(fx(w.t))), z.frage ? api.ersetze(fx(z.frage)) : '');
         const w = opt[i]; vib(10);
         const besser = w.skill === false ? opt.find((o) => o.skill === true) : null;
@@ -151,19 +153,29 @@ export function createKursMissionen({ scene, steuerung, ui, ton = () => {}, vib 
       if (z.atem) { ui.dialogZu(); await api.atem(); continue; }
       if (z.moment) { lauf.momente.push(api.ersetze(z.moment)); continue; }
       if (z.blende) { await api.blende(api.ersetze(z.blende)); continue; }
+      if (z.szene) {   // Mini-Spiel aus der Geschichte (satz, spuren, druck, atem …) – dieselben Prüfungen gegen Durchklicken
+        const def = typeof z.def === 'function' ? z.def(F()) : z.def;
+        const { r, versuche, ok } = api.szene ? await api.szene(z.szene, def) : { r: {}, versuche: 1, ok: true };
+        const wert = !ok ? false : z.wertung ? z.wertung(r, F()) : null;
+        if (z.log) lauf.log.push({ t: api.ersetze(fx(typeof z.log === 'function' ? z.log(r, F()) : z.log)), folge: z.folge ? api.ersetze(fx(typeof z.folge === 'function' ? z.folge(r, F()) : z.folge)) : '', skill: wert === true ? 1 : wert === false ? 0 : null, besser: wert === false && z.besser ? z.besser : '' });
+        if (versuche > 1) lauf.momente.push((z.titel || 'Mini-Spiel') + ': ' + versuche + ' Versuche' + (ok ? ', dann geschafft' : ', noch nicht geschafft'));
+        if (z.setze) Object.assign(F(), typeof z.setze === 'function' ? z.setze(r, F()) : z.setze);
+        sichern();
+        await spiele(wert === false ? z.schlecht || z.sonst || [] : z.gut || z.dann || []);
+        continue; }
       if (z.notiz && z.privat) {   // nur für die Person selbst (z. B. Brief an mich): nicht ins Resümee, nicht in die Lehrer-Ansicht
         const t = await eingabe(z.notiz, z.platz || '', true);
         if (t) { const m = M(); m.briefe = m.briefe || {}; m.briefe[lauf.code] = { frage: z.notiz, text: t, datum: new Date().toISOString() }; sichern(); }
         continue; }
-      if (z.notiz) { const t = await eingabe(z.notiz, z.platz || ''); if (t) lauf.notizen.push({ frage: z.notiz, text: t }); continue; }
+      if (z.notiz) { const t = await eingabe(fx(z.notiz), z.platz || '', false, z.heft); if (t) lauf.notizen.push({ frage: (z.heft ? '📓 ' : '') + fx(z.notiz), text: t }); if (z.key) { F()[z.key] = t; sichern(); } continue; }
       if (z.skala) { const v = await skala(z.skala, z.links || '0', z.rechts || '10'); lauf.skalen.push({ frage: z.skala, wert: v }); continue; }
     }
   }
   // Freitext (freiwillig) – als kleines Feld über dem Dialog
-  function eingabe(frage, platz, privat = false) {
+  function eingabe(frage, platz, privat = false, heft = '') {
     return new Promise((ok) => {
       ui.dialogZu();
-      const k = ui.ebeneAuf('km', '<div class="km-eingabe"><span class="km-kicker">' + (privat ? 'Nur für dich · kommt in kein Resümee, bleibt auf diesem Gerät' : 'Freiwillig · steht in deinem Resümee') + '</span><h3>' + esc(frage) + '</h3><textarea rows="' + (privat ? 7 : 3) + '" maxlength="' + (privat ? 1500 : 240) + '" placeholder="' + esc(platz) + '"></textarea>' +
+      const k = ui.ebeneAuf('km', '<div class="km-eingabe' + (heft ? ' km-heftnotiz' : '') + '"><span class="km-kicker">' + (privat ? 'Nur für dich · kommt in kein Resümee, bleibt auf diesem Gerät' : heft ? '📓 Aus deinem REAL-TALK-Heft · ' + esc(heft) : 'Freiwillig · steht in deinem Resümee') + '</span><h3>' + esc(frage) + '</h3>' + (heft ? '<p class="km-heft-tipp">Schlag dein Heft auf und schau nach, was du dort geschrieben hast. Kein Heft dabei? Schreib, was du noch weißt.</p>' : '') + '<textarea rows="' + (privat ? 7 : 3) + '" maxlength="' + (privat ? 1500 : 240) + '" placeholder="' + esc(platz) + '"></textarea>' +
         '<div class="km-knoepfe"><button type="button" class="ly-btn" data-a="nein">Überspringen</button><button type="button" class="ly-btn ly-primaer" data-a="ja">Fertig</button></div></div>');
       const ta = k.querySelector('textarea'); setTimeout(() => ta.focus(), 60);
       const zu = (t) => { ui.ebeneZu(); ok(t); };
@@ -256,7 +268,7 @@ export function createKursMissionen({ scene, steuerung, ui, ton = () => {}, vib 
   function geschichteHtml(b, lehrer) {
     if (!b || !b.kapitel.length) return '<h3 class="km-h3">📖 Geschichte „@annexe.cam“</h3><p class="km-leer">Noch kein Kapitel fertig.' + (b && b.laeuft ? ' Gerade in Kapitel ' + b.laeuft + '.' : '') + '</p>';
     const kopf = [b.freunde.length ? 'Am nächsten: ' + b.freunde.join(', ') : '', b.staerken.length ? 'Stärken: ' + b.staerken.join(', ') : '',
-      b.ende ? 'Ende: ' + b.ende : (b.laeuft ? 'Gerade in Kapitel ' + b.laeuft : ''), b.neben.length ? 'Nebengeschichten: ' + b.neben.length + ' von ' + b.nebenVon : ''].filter(Boolean);
+      b.ende ? 'Ende: ' + b.ende : (b.laeuft ? 'Gerade in Kapitel ' + b.laeuft : ''), b.zuZweit ? 'Zu zweit: ' + b.zuZweit : '', b.neben.length ? 'Nebengeschichten: ' + b.neben.length + ' von ' + b.nebenVon : ''].filter(Boolean);
     const gespielt = b.kapitel.filter((k) => k.gespielt), letztes = (gespielt[gespielt.length - 1] || b.kapitel[0]).kap;
     const haken = b.kapitel.reduce((n, k) => n + k.versuche.filter((v) => !v.ok).length, 0);
     return '<h3 class="km-h3">📖 Geschichte „@annexe.cam“ · ' + gespielt.length + ' von 10 Kapiteln</h3>' +
@@ -265,8 +277,12 @@ export function createKursMissionen({ scene, steuerung, ui, ton = () => {}, vib 
       (lehrer ? '<p class="km-leer">Tipp: Ein Kapitel aufklappen, die Sätze gemeinsam lesen, dann die Frage stellen. Es gibt kein richtig oder falsch – nur Folgen.</p>' : '') +
       '<div class="km-gesch">' + b.kapitel.map((k) => '<details' + (k.kap === letztes ? ' open' : '') + '><summary><span class="km-heft">K' + k.kap + '</span><b>' + esc(k.titel) + '</b><small>' + esc(k.thema) + '</small></summary>' +
         (k.saetze.length ? '<ul>' + k.saetze.map((t) => '<li>' + esc(t) + '</li>').join('') + '</ul>' : '<p class="km-leer">' + (k.gespielt ? 'Keine großen Entscheidungen gemerkt.' : 'Kapitel noch nicht gespielt – nur die Skills-Stunde.') + '</p>') +
-        (k.gruende && k.gruende.length ? k.gruende.map((g) => '<p class="km-gs-warum">🧭 Warum „' + esc(g.t) + '“? <b>' + esc(g.grund) + '</b></p>').join('') : '') +
+        (k.partner && k.partner.length ? k.partner.map((p) => '<p class="km-gs-warum">👥 ' + (p.einig ? 'Einig: ' + esc(zit(p.gemeinsam)) : 'Uneinig (' + esc(zit(p.a)) + ' / ' + esc(zit(p.b)) + ') – gemeinsam: ' + esc(zit(p.gemeinsam))) + '</p>').join('') : '') +
+        (k.gruende && k.gruende.length ? k.gruende.map((g) => '<p class="km-gs-warum">🧭 Warum ' + esc(zit(g.t)) + '? <b>' + esc(g.grund) + '</b></p>').join('') : '') +
         (k.anzeige ? '<p class="km-gs-zahl">📈 ' + esc(k.anzeige) + '</p>' : '') +
+        (k.frei && k.frei.length ? k.frei.map((f) => '<p class="km-gs-warum">⏱ ' + esc(f.titel) + ': bei ' + esc(f.besucht.join(', ') || 'niemandem') + (f.verpasst.length ? ' · verpasst: ' + esc(f.verpasst.join(', ')) : '') + '</p>').join('') : '') +
+        (k.blick && k.blick.length ? k.blick.map((b) => '<p class="km-gs-warum">👁 ' + esc(b.titel) + ': bemerkt ' + b.bemerkt + ' von ' + b.wichtig + ' wichtigen Signalen' + (b.uebersehen && b.uebersehen.length ? ' · übersehen: ' + esc(b.uebersehen.join(' ')) : '') + '</p>').join('') : '') +
+        (k.pult ? '<p class="km-gs-zahl">🎛 Steuerpult: höchstens ' + k.pult.max + ' von 10' + (k.pult.rot ? ', ' + k.pult.rot + '× auf Rot' : '') + (k.pult.hilfen && k.pult.hilfen.length ? ' · geholfen: ' + esc([...new Set(k.pult.hilfen)].map((h) => ({ atmen: 'Atmen', abstand: 'Abstand', gedanke: 'Gedanken prüfen' })[h] || h).join(', ')) : k.pult.rot ? ' · nichts dagegen getan' : '') + '</p>' : '') +
         (k.versuche.length ? '<p class="km-gs-hak">🔁 Hängen geblieben: ' + k.versuche.map(versuchText).map(esc).join(' · ') + '</p>' : '') +
         '<p class="km-gs-frage">💬 ' + esc(k.frage) + '</p></details>').join('') + '</div>';
   }
@@ -277,7 +293,11 @@ export function createKursMissionen({ scene, steuerung, ui, ton = () => {}, vib 
     ...(b.ende ? ['Ende: ' + b.ende] : []),
     ...b.kapitel.flatMap((k) => ['', 'Kapitel ' + k.kap + ' „' + k.titel + '“ (' + k.thema + ')', ...k.saetze.map((t) => '– ' + t),
       ...(k.gespielt ? [] : ['(Kapitel noch nicht gespielt)']),
-      ...((k.gruende || []).map((g) => 'Warum „' + g.t + '“? ' + g.grund)),
+      ...((k.partner || []).map((p) => 'Zu zweit: ' + (p.einig ? 'einig – ' + zit(p.gemeinsam) : 'uneinig (' + zit(p.a) + ' / ' + zit(p.b) + '), gemeinsam: ' + zit(p.gemeinsam)))),
+      ...((k.gruende || []).map((g) => 'Warum ' + zit(g.t) + '? ' + g.grund)),
+      ...((k.frei || []).map((f) => f.titel + ': bei ' + (f.besucht.join(', ') || 'niemandem') + (f.verpasst.length ? ', verpasst: ' + f.verpasst.join(', ') : ''))),
+      ...((k.blick || []).map((b) => 'Hinschauen (' + b.titel + '): ' + b.bemerkt + ' von ' + b.wichtig + ' bemerkt' + (b.uebersehen && b.uebersehen.length ? ', übersehen: ' + b.uebersehen.join(' ') : ''))),
+      ...(k.pult ? ['Steuerpult: höchstens ' + k.pult.max + '/10' + (k.pult.rot ? ', ' + k.pult.rot + '× Rot' : '') + (k.pult.hilfen && k.pult.hilfen.length ? ', geholfen: ' + [...new Set(k.pult.hilfen)].join(', ') : '')] : []),
       ...(k.anzeige ? [k.anzeige] : []), ...(k.versuche.length ? ['Hängen geblieben: ' + k.versuche.map(versuchText).join(' · ')] : []),
       'Frage: ' + k.frage]),
   ].join('\n');

@@ -94,7 +94,7 @@
         "code": "WORT-6",
         "titel": "Mehr als zwei Wörter",
         "ort": "Schulhof",
-        "kurz": "Auf dem Hof sagen alle nur „gut“ oder „scheiße“. Sammle in echten Gesprächen zehn genaue Gefühlswörter – und finde heraus, was jedes Gefühl melden will.",
+        "kurz": "Auf dem Hof sagen alle nur „gut“ oder „scheiße“. Finde in echten Gesprächen die genauen Gefühlswörter – und finde heraus, was jedes Gefühl melden will.",
         "belohnung": "Spur „Gefühle“",
         "skill": "Gefühle benennen",
         "item": {
@@ -261,7 +261,7 @@
         "code": "NEU-4",
         "titel": "Neuer Satz, neuer Tag",
         "ort": "Bushaltestelle",
-        "kurz": "Ein Morgen mit deinem neuen Satz: Probier ihn in vier Situationen aus und schau, was passiert.",
+        "kurz": "Ein Morgen mit deinem neuen Satz: Probier ihn in mehreren Situationen aus und schau, was passiert.",
         "belohnung": "Sonnenaufgang-Shirt",
         "skill": "Neue Sätze",
         "item": {
@@ -316,7 +316,7 @@
         "code": "STOPP-4",
         "titel": "Nein ist ein Satz",
         "ort": "Dorf",
-        "kurz": "Drei Leute wollen heute etwas von dir. Sag dreimal Nein – freundlich und klar. Und dann hörst du selbst eins.",
+        "kurz": "Drei Leute wollen heute etwas von dir. Sag dreimal Nein – ruhig und klar, ohne Entschuldigung. Und dann hörst du selbst eins.",
         "belohnung": "Stopp-Kappe",
         "skill": "Nein sagen",
         "item": {

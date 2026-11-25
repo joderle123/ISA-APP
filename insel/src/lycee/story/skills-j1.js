@@ -557,7 +557,7 @@ export const S9_AKKU = {
   karten: [
     { sy: '🔋', titel: 'Dein Akku', text: 'Dein Körper und dein Kopf haben einen Akku. Manche Dinge laden ihn, andere ziehen Strom. Wenn der Akku leer ist, wird alles schwerer: Lernen, Freundschaften, Gefühle.',
       punkte: [['Laden:', 'Schlaf, Bewegung, regelmäßig essen und trinken, Pausen, Menschen, die dir guttun'], ['Leeren:', 'zu wenig Schlaf, Bildschirm bis spät, Dauerstress, Streit, Sorgen allein tragen']] },
-    { sy: '😴', titel: 'Schlaf ist das Ladekabel', text: 'In deinem Alter braucht der Körper etwa 9 bis 11 Stunden Schlaf. Im Schlaf sortiert das Gehirn, was du gelernt hast, und beruhigt Gefühle.',
+    { sy: '😴', titel: 'Schlaf ist das Ladekabel', text: 'In deinem Alter braucht der Körper etwa 8 bis 10 Stunden Schlaf. Im Schlaf sortiert das Gehirn, was du gelernt hast, und beruhigt Gefühle.',
       beispiel: 'Handy eine halbe bis eine Stunde vor dem Schlafen weglegen. Das Licht und die Spannung vom Bildschirm halten wach.', gegen: 'Wer müde ist, ist schneller gereizt. Weißt du noch: der Körper-Tank aus Kapitel 2.' },
     { sy: '🏃', titel: 'Bewegung und Essen', text: 'Bewegung baut Stress ab – etwa eine Stunde am Tag ist gut, verteilt geht auch: Schulweg, Pause, Sport. Essen und Trinken geben gleichmäßig Energie.',
       punkte: [['Hilft:', 'Frühstück, auch ein kleines; Wasser; regelmäßige Mahlzeiten'], ['Vorsicht:', 'Energy-Drinks haben sehr viel Koffein. Sie sind nicht für Kinder und Jugendliche gedacht. Erst wach, dann leer.']] },
@@ -591,7 +591,7 @@ export const S9_AKKU = {
     antwort: (g) => ({ 'Zu wenig Schlaf': 'Danke. Ein kleiner Schritt: jeden Abend zur gleichen Zeit ins Bett.', 'Handy bis spät': 'Danke. Ein kleiner Schritt: Handy abends in die Küche, Wecker statt Handy.',
       'Stress in der Schule': 'Danke. Denk an Kapitel 4: Zone erkennen, Skill wählen. Und rede mit jemandem darüber.', 'Streit': 'Danke. Denk an die Streit-Treppe: erst runter, dann reden.',
       'Sorgen, die ich allein trage': 'Danke. Teilen macht leichter. Herr Kuedes ist da – oder 116 111, anonym und kostenlos.', 'Zu wenig Bewegung': 'Danke. Ein kleiner Schritt: in jeder großen Pause einmal raus.' }[g[0]] || 'Danke.') },
-  merk: { titel: 'Mein Akku', punkte: ['Laden: Schlaf (9–11 Stunden), Bewegung, Essen und Trinken, Pausen, gute Menschen.', 'Handy eine halbe bis eine Stunde vor dem Schlafen weg.', 'Stress-Rucksack: tragen, warten, teilen, ablegen.', 'Ein schweres Geheimnis darf man erzählen. Das ist kein Verrat.', 'Hilfe: Herr Kuedes, SePAS, 116 111.'] },
+  merk: { titel: 'Mein Akku', punkte: ['Laden: Schlaf (8–10 Stunden), Bewegung, Essen und Trinken, Pausen, gute Menschen.', 'Handy eine halbe bis eine Stunde vor dem Schlafen weg.', 'Stress-Rucksack: tragen, warten, teilen, ablegen.', 'Ein schweres Geheimnis darf man erzählen. Das ist kein Verrat.', 'Hilfe: Herr Kuedes, SePAS, 116 111.'] },
   check: { frage: 'Dario trägt seit Wochen ein Geheimnis, das ihm Angst macht. Er schläft kaum. Was hilft am meisten?',
     optionen: [{ t: 'Mehr Energy-Drinks, damit er wach bleibt.', warum: 'Das leert den Akku noch mehr.' },
       { t: 'Das Geheimnis mit einer erwachsenen Person teilen, der er traut – und jemanden mitnehmen.', ok: true, warum: 'Genau. Ein schweres Geheimnis wird leichter, wenn man es teilt. Mit Begleitung ist der erste Schritt einfacher.' },

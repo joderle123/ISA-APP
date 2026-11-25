@@ -8,7 +8,7 @@ import { S1_ANKOMMEN } from './skills-j1.js';
 const pult = (r, c, s) => [-24.25 + r * 2.1, -27.2 + c * 3.4 + s * 0.62, -Math.PI / 2, 'sitzt'];
 const KLASSE = { ayla: pult(0, 0, -1), ben: pult(1, 2, 1), chiara: pult(2, 1, -1), yusuf: pult(1, 0, 1), jo: pult(3, 2, -1), lina: pult(3, 0, 1), noah: pult(0, 1, 1), mila: pult(2, 2, 1) };
 // Haltestelle: Dario steht (Montag) oder sitzt auf der Bank (ab Dienstag), Lina auf der Mauer
-const HALTESTELLE = { dario: [-20.5, 42.3, -1.9], lina: [-25.6, 44.4, 0.8], fahrer: [-11.2, 44.6, -Math.PI / 2] };
+const HALTESTELLE = { dario: [-20.5, 42.3, -1.9], lina: [-25.6, 44.4, 0.8], fahrer: [-11.2, 44.6, -Math.PI / 2], rafa: [-23.2, 41.85, 0, 'schlaeft'] };
 const HALTESTELLE_BANK = { dario: [-21.5, 41.6, -1.6, 'sitzt'], lina: [-25.6, 44.4, 0.8], fahrer: [-11.2, 44.6, -Math.PI / 2] };
 
 export const SCHRITTE_N1 = [
@@ -24,10 +24,21 @@ export const SCHRITTE_N1 = [
   { id: 'k1_deutsch', kap: 1, tag: 'Montag', uhr: 8.9, neben: 'fach', titel: 'Deutsch', ziel: 'Gleicher Saal. Jetzt Deutsch bei Mme Nouvelle.', marker: 'nouvelle',
     leute: { nouvelle: [-27, -24, Math.PI / 2], ...KLASSE },
     fertig: { reden: 'nouvelle', gespraech: 'n1_deutsch' } },
-  { id: 'pause', kap: 1, tag: 'Montag', uhr: 10.0, titel: 'Cool oder cringe?', ziel: 'Pause. Ben und Jo winken dich zu sich.', marker: 'ben',
+  // Neues Spielsystem (Baustein 1): die große Pause als freier Moment – echte Zeit, mehrere Fäden, man schafft nicht alles
+  { id: 'pause', kap: 1, tag: 'Montag', uhr: 10.0, titel: 'Große Pause', ziel: 'Fünf Minuten. Ben winkt. Rafa steht allein am Brunnen. Noah am Zaun. Hinten wird gekorbt.', marker: 'ben',
     start: { teleport: 'eingangHof' },
-    leute: { ben: [4, 14, 0.6, 'redet'], jo: [5.2, 15.4, -2.4, 'redet'], mila: [-20, 11.6, Math.PI, 'sitzt'], noah: [-14, 12.2, 2.6], ayla: [3, 17.6, -2.5, 'redet'], chiara: [2, 18.4, 0.6, 'redet'] },
-    fertig: { reden: 'ben', gespraech: 'n1_umfrage' } },
+    leute: { ben: [4, 14, 0.6, 'redet'], jo: [5.2, 15.4, -2.4, 'redet'], mila: [-20, 11.6, Math.PI, 'sitzt'], noah: [-14, 12.2, 2.6], ayla: [3, 17.6, -2.5, 'redet'], chiara: [2, 18.4, 0.6, 'redet'], rafa: [-6.4, 21.6, 2.2], yusuf: [27.4, 21.0, -1.2] },
+    frei: { titel: 'Große Pause', dauer: 300,
+      faeden: {
+        ben: { gespraech: 'n1_umfrage', label: 'Ben und Jo am Handy' },
+        rafa: { gespraech: 'n1_rafa', label: 'Junge am Brunnen', bis: 190 },
+        noah: { gespraech: 'n1_noahZaun', label: 'Noah allein' },
+        yusuf: { gespraech: ['freiwurf', 'freiwurfDanach'], label: 'Basketball' },
+        mila: { gespraech: 'mila', label: 'Mila auf der Bank' },
+      },
+      ereignisse: [{ t: 190, gespraech: 'n1_rafaSieht' }],
+      ende: 'n1_pauseEnde' },
+    fertig: { frei: true } },
   { id: 'kantine', kap: 1, tag: 'Montag', uhr: 12.17, titel: 'Mittag', ziel: 'Hol dir ein Essen an der Ausgabe.', marker: 'kremer',
     start: { teleport: 'kantineTuer' },
     leute: { kremer: [26.8, -9, -Math.PI / 2], noah: [10.75, -11.1, Math.PI / 2, 'sitzt'], ben: [16.65, -11.1, Math.PI / 2, 'sitzt'], jo: [16.65, -10.1, Math.PI / 2, 'sitzt'], mila: [21.05, -4.9, -Math.PI / 2, 'sitzt'], dario: [21.4, -13.2, 0.9], kenan: [21.0, -12.0, 1.2] },
@@ -86,7 +97,7 @@ const POST_TABLETT = (m) => ({
   titel: '7P2', mitglieder: 21, dauer: 30,
   nachrichten: [
     { nach: 0.5, system: true, text: 'Ben hat einen Beitrag weitergeleitet.' },
-    { nach: 1.4, wer: '@annexe.cam', bild: 'Du, in der Kantine, mit dem Tablett. Von unten.', text: 'neu in der 7p2. cool oder cringe? 👀', lacher: { start: 3, proSek: 0.35, stopp: ['klar', 'gemeldet'] } },
+    { nach: 1.4, wer: '@annexe.cam', bild: 'Du, in der Kantine, mit dem Tablett. Von unten.', bildId: 'duTablett', text: 'neu in der 7p2. cool oder cringe? 👀', lacher: { start: 3, proSek: 0.35, stopp: ['klar', 'gemeldet'] } },
     { nach: 3.6, wer: 'Jo', text: '61% cringe gerade' },
     { nach: 5.6, wer: 'Mila', text: 'ben. lösch das.' },
     { nach: 7.2, system: true, text: 'gesehen von 17' },
@@ -187,6 +198,21 @@ export const GESPRAECHE_N1 = {
     ['erzaehler', 'Die Bustür geht zu. Du weißt nicht, wohin.'],
     ['erzaehler', 'Ein alter Mann streut Krümel für eine Taube. Auf der Mauer zeichnet jemand.'],
     ['erzaehler', 'Ein Junge mit Skateboard unter dem Arm schaut zu dir rüber.'],
+    ['erzaehler', 'Auf der Bank schläft ein kleiner Junge. Den Kopf am Glas.'],
+    // Neues Spielsystem (Baustein 2): Hinschauen. Nur drei Blicke – man sieht nicht alles. Was man sieht, öffnet in der Pause andere Wege.
+    { blick: { titel: 'Haltestelle', blicke: 3, text: 'Der Bus ist weg. Du hast einen Moment. Wer ist hier – und was ist los?',
+      personen: [
+        { wer: 'rafa', name: 'Junge auf der Bank', signale: [
+          { wo: 'Gesicht', t: 'Augen zu. Der Mund steht ein bisschen offen. Er schläft.', key: 'rafaSchlaeft' },
+          { wo: 'Rucksack', t: 'Am Rucksack hängt ein Schild: „Rafa · 5e“.', key: 'rafaName' },
+          { wo: 'Haltung', t: 'Er hält die Jacke fest, auch im Schlaf. Die Nacht war wohl kurz.' } ] },
+        { wer: 'dario', name: 'Junge mit Skateboard', signale: [
+          { wo: 'Hände', t: 'Er hält das Handy schräg hoch. Richtung Bank. Dann steckt er es weg.', key: 'darioHandy' },
+          { wo: 'Gesicht', t: 'Er grinst kurz. Dann schaut er schnell zu dir.' },
+          { wo: 'Haltung', t: 'Das Brett unterm Arm. Er steht so, dass er alles sieht.' } ] },
+      ],
+      uebersehen: [{ key: 'darioHandy', t: 'Dario hält das Handy Richtung Bank.' }, { key: 'rafaSchlaeft', t: 'Der Junge auf der Bank schläft.' }] } },
+    { foto: 'rafaBank', wer: 'rafa', von: [1.5, 1.05, 1.1], auf: [0, 0.95, 0], fov: 40 },
   ],
   n1_dario: [
     ['dario', 'Moien. Neu?'],
@@ -245,25 +271,75 @@ export const GESPRAECHE_N1 = {
   // Pause: Ben und Jo zeigen @annexe.cam. Es ist wirklich lustig. Das ist das Problem. (Entscheidung A)
   n1_umfrage: [
     ['ben', 'Hinten links! Komm mal. Kennst du den schon?'],
-    ['erzaehler', 'Auf Jos Handy: ein Account. @annexe.cam.'],
-    ['erzaehler', 'Ein Junge aus der 5e, schlafend im Bus. Der Mund offen.'],
-    ['erzaehler', 'Darunter eine Umfrage: cool oder cringe?'],
-    ['jo', '(lacht) Guck den an.'],
-    ['erzaehler', 'Es ist wirklich lustig.'],
-    ['jo', '(hält dir das Handy hin) Stimm ab.'],
-    { warum: true, fest: true, wahl: [
-      { t: '„cool“ (Klick. Ist ja nur Spaß.)', herz: { jo: 1, ben: 1 }, merke: ['abgestimmt', 'abgestimmtCool'], dann: [['jo', 'Cool? Mutig.'], ['erzaehler', 'Ihr steht im Kreis und lacht. Für einen Moment gehörst du dazu.']] },
-      { t: '„cringe“ (Klick. Die anderen auch.)', herz: { jo: 1, ben: 1 }, merke: ['abgestimmt', 'abgestimmtCringe'], dann: [['jo', 'Einundsechzig Prozent cringe. Sag ich doch.'], ['erzaehler', 'Ihr steht im Kreis und lacht. Für einen Moment gehörst du dazu.']] },
-      { t: '„Kenn ich nicht.“', staerke: 'klar', merke: 'nichtAbgestimmt', dann: [['jo', 'Chill. Ist nur ein Klick.'], ['ben', '(zuckt mit den Schultern) Musst ja nicht.']] },
-      { t: '(Handy zurückgeben. Ohne Klick.)', merke: 'nichtAbgestimmt', dann: [['jo', '(nimmt es) Chill. Ist nur ein Klick.']] },
+    ['erzaehler', 'Jo hält dir das Handy hin. Ein Account: @annexe.cam.'],
+    // Neues Spielsystem (Baustein 4): Das Foto ist echt zu sehen – aufgenommen heute früh an der Haltestelle. Die Stimmen steigen live.
+    { handy: { wer: '@annexe.cam', wann: 'vor 2 Std.', fotoId: 'rafaBank', alt: 'Ein Junge schläft an der Haltestelle, den Kopf am Glas',
+      text: 'neu in der 5e. eingepennt an der haltestelle 😴 cool oder cringe?', umfrage: { a: 'cringe', b: 'cool', pa: 61, stimmen: 34, live: true } } },
+    { pult: { g: 'Dazugehören', w: 5 } },
+    ['jo', '(lacht) Guck den an. Der Mund!'],
+    ['erzaehler', 'Es ist wirklich lustig. Das ist das Problem.'],
+    ['jo', 'Stimm ab. Ist nur ein Klick.'],
+    { warum: true, wahl: [
+      { t: 'Abstimmen: „cringe“. Mitlachen.', herz: { jo: 1, ben: 1 }, merke: ['abgestimmt', 'abgestimmtCringe'], dann: [{ pult: { plus: -2 } }, ['jo', 'Siehste. Zweiundsechzig Prozent.'], ['erzaehler', 'Ihr lacht. Für einen Moment gehörst du dazu.']] },
+      { t: 'Abstimmen: „cool“. Ist ja nur Spaß.', herz: { jo: 1 }, merke: ['abgestimmt', 'abgestimmtCool'], dann: [{ pult: { plus: -1 } }, ['jo', 'Cool? Mutig.'], ['erzaehler', 'Ihr lacht. Abgestimmt ist abgestimmt.']] },
+      { t: '„Wer macht so was eigentlich?“', merke: ['nichtAbgestimmt', 'umfrageGefragt'], dann: [['jo', 'Keine Ahnung. Ist halt der Account.'], ['ben', '(leiser) Keiner weiß es. Das ist ja das Krasse.']] },
+      { t: 'Handy zurück. „Spielt ihr nachher Basketball?“', merke: 'nichtAbgestimmt', dann: [['ben', '(grinst) Klar. Du bist dabei.'], ['jo', 'Langweilig. Okay.']] },
+      { t: '„Der steht da drüben am Brunnen. Er weiß es noch nicht.“', bemerkt: 'rafaSchlaeft', weil: 'Weil du ihn heute früh gesehen hast.', merke: ['nichtAbgestimmt', 'rafaGezeigt'], herz: { jo: -1, ben: 1 }, staerke: 'mut',
+        dann: [['jo', '(dreht das Handy weg) Ups.'], ['ben', '(schaut rüber) Oh. Der ist ja winzig.'], ['erzaehler', 'Ben stimmt nicht ab. Jo schon – aber leiser.']] },
+      { t: '„Das Foto ist von heute früh. Ich hab gesehen, wie jemand fotografiert hat.“', bemerkt: 'darioHandy', weil: 'Weil du an der Haltestelle hingeschaut hast.', merke: ['nichtAbgestimmt', 'fotografGesehen'],
+        dann: [['jo', '(sofort) Echt? Wer?'], ['ben', 'Sag schon.'],
+          { wahl: [
+            { t: '„Sag ich nicht. Aber ich find’s nicht okay.“', staerke: 'klar', merke: 'fotografVerschwiegen', dann: [['jo', 'Langweilig.'], ['ben', '(nickt langsam) Okay.']] },
+            { t: '„Einer mit Skateboard. Aus der 7P1, glaub ich.“', merke: 'fotografVerraten', herz: { jo: 1 }, dann: [['jo', '(grinst) Dario? Der? Niemals.'], ['erzaehler', 'Jo tippt schon. In zehn Minuten weiß es der halbe Hof.']] },
+          ] }] },
     ] },
-    ['erzaehler', 'Es klingelt. Der Junge aus der 5e geht an euch vorbei.'],
-    ['erzaehler', 'Er hat das Foto noch nicht gesehen.'],
+    { handy: null },
+    ['erzaehler', 'Jo scrollt weiter. Der nächste Post.'],
+    { wenn: (m) => m.rafaGezeigt, dann: [['erzaehler', 'Ben schaut zum Brunnen. Er sagt nichts. Aber er lacht auch nicht mehr.']] },
+  ],
+  // Pause: Rafa am Brunnen (nur bis kurz vor dem Moment, in dem er das Foto sieht)
+  n1_rafa: [
+    ['erzaehler', 'Rafa wirft eine Münze in den Brunnen. Er schaut hoch.'],
+    ['rafa', 'Was?'],
+    { wahl: [
+      { t: '„Moien. Bist du auch neu?“', herz: { rafa: 1 }, dann: [['rafa', 'Fünfte Woche. Ich schlaf noch im Bus ein. Jeden Tag.'], ['rafa', '(grinst schief) Peinlich, oder?']] },
+      { t: '„Da ist ein Foto von dir. Auf so einem Account.“', bemerkt: 'rafaSchlaeft', weil: 'Weil du ihn heute früh gesehen hast.', merke: 'rafaGewarnt',
+        dann: [['rafa', '(wird rot) Was für ein Foto?'],
+          { wahl: [
+            { t: '„Lieber von mir als von allen. Komm, wir sagen es Herrn Kuedes.“', staerke: 'hilfe', herz: { rafa: 2 }, merke: 'rafaKuedes', dann: [['rafa', '(schluckt) … Kommst du mit?'], ['erzaehler', 'Ihr geht zusammen rein. Am Brunnen ist es plötzlich leer.']] },
+            { t: '„Nicht so schlimm. Die lachen nur kurz.“', merke: 'rafaKleingeredet', dann: [['rafa', '(leise) Alle?'], ['erzaehler', 'Er zieht die Jacke enger.']] },
+          ] }] },
+      { t: '„Alles okay?“', dann: [['rafa', 'Ja. Nur müde.'], ['erzaehler', 'Er lügt nicht. Er weiß es nur noch nicht.']] },
+    ] },
+  ],
+  n1_rafaSieht: [
+    { wenn: (m) => m.rafaKuedes, dann: [['erzaehler', 'Drinnen redet Herr Kuedes mit Rafa. Die Tür bleibt zu.']],
+      sonst: [
+        ['erzaehler', 'Am Brunnen hält jemand Rafa ein Handy hin.'],
+        // Neues Spielsystem (Baustein 5): andere Sicht – ein paar Sekunden durch Rafas Augen
+        { sicht: { wer: 'rafa', name: 'Rafa', auf: 'jo', lachen: ['jo', 'ayla', 'chiara'], gedanken: ['Das bin ich. Mit offenem Mund.', 'Einundsechzig Prozent. Was heißt das?', 'Da drüben lachen sie. Über mich? Bestimmt über mich.'] } },
+        ['erzaehler', 'Rafa steckt die Hände in die Jacke. Er geht rein. Allein.'],
+      ] },
+  ],
+  n1_noahZaun: [
+    ['erzaehler', 'Noah sitzt am Zaun. Ein Buch auf den Knien. Er liest nicht.'],
+    ['noah', '(ohne aufzuschauen) Der Platz ist frei. Falls du fragst.'],
+    { wahl: [
+      { t: 'Hinsetzen. Nichts sagen.', herz: { noah: 1 }, merke: 'pauseNoah', dann: [['erzaehler', 'Ihr sitzt. Zwei Minuten. Es ist nicht komisch.'], ['noah', '(leise) Danke.']] },
+      { t: '„Was liest du?“', herz: { noah: 1 }, merke: 'pauseNoah', dann: [['noah', 'Nichts. Ich tu nur so.'], ['noah', 'Dann fragt keiner, warum ich allein bin.']] },
+      { t: '„Kommst du mit zu den anderen?“', dann: [['noah', '(schüttelt den Kopf) Die anderen kommen schon klar.']] },
+    ] },
+  ],
+  n1_pauseEnde: [
+    ['erzaehler', 'Es klingelt. Die Pause ist vorbei.'],
+    { wenn: (m) => !m.frei_pause_noah, dann: [['erzaehler', 'Noah steht als Letzter auf. Keiner hat ihn heute angesprochen.']] },
+    { wenn: (m) => !m.frei_pause_rafa && !m.rafaGezeigt, dann: [['erzaehler', 'Rafa ist schon drin. Die Kapuze auf.']] },
   ],
   n1_kantine: [
     ['erzaehler', 'Es riecht nach Suppe und nassem Boden.'],
     ['kremer', 'Suppe oder Pasta? … Hier.'],
     { tu: 'tablett' },
+    { foto: 'duTablett', wer: 'du', von: [0.7, 0.45, 1.4], auf: [0, 1.45, 0], fov: 52 },
     ['erzaehler', 'Du stehst mit dem Tablett. Drei Sekunden. Länger nicht.'],
     ['kremer', '(nickt nach hinten) Hinten links ist frei.'],
   ],
@@ -316,7 +392,11 @@ export const GESPRAECHE_N1 = {
     ['erzaehler', 'Dario sitzt schon da. Wie gestern.'],
     ['dario', 'Moien.'],
     ['dario', 'Ich hab’s gesehen. Das Foto.'],
+    // Neues Spielsystem (Baustein 3): Das Steuerpult. Scham auf Rot – die ruhigen Antworten sind zu, bis man runterkommt.
+    { pult: { g: 'Scham', w: 8, gedanke: 'Alle haben über mich gelacht.' } },
+    ['erzaehler', 'Dein Gesicht wird heiß. Das Foto ist wieder da. Im Kopf.'],
     { wahl: [
+      { t: '„Und? Willst du auch noch was dazu sagen?“', merke: 'darioAngefahren', herz: { dario: -1 }, dann: [['dario', '(hebt die Hände) Okay. Okay. Sorry.']] },
       { t: '„Alle haben es gesehen.“', dann: [['dario', '(nickt) Alle. Ich auch.']] },
       { t: '„Welches Foto?“', merke: 'darioFotoGeleugnet', dann: [['dario', '(schaut dich kurz an) Okay. Dann eben nicht.']] },
       { t: '(Nichts sagen.)', dann: [['erzaehler', 'Dario wartet kurz. Dann redet er einfach weiter.']] },
@@ -325,9 +405,10 @@ export const GESPRAECHE_N1 = {
     ['erzaehler', 'Er lacht kurz. Dann nicht mehr.'],
     ['dario', 'Der macht das mit allen. Morgen ist wer anders dran.'],
     { wahl: [
-      { t: '„Woher weißt du das?“', merke: 'darioWoher', dann: [] },
+      { t: '„Woher weißt du das?“', ruhig: true, merke: 'darioWoher', dann: [['erzaehler', 'Dario schaut auf sein Handy. Display nach unten.'], ['dario', 'Sieht man halt. Wenn man hinschaut.']] },
       { t: '„Hoffentlich.“', merke: 'darioHoffentlich', dann: [] },
-      { t: '„Das macht es nicht besser.“', staerke: 'klar', merke: 'darioNichtBesser', dann: [] },
+      { t: '„Das macht es nicht besser.“', ruhig: true, staerke: 'klar', merke: 'darioNichtBesser', dann: [] },
+      { t: '„Mir doch egal.“ (Aufstehen.)', merke: 'darioEgal', dann: [['dario', '(leise) Ist es nicht.']] },
     ] },
     ['dario', 'Ist halt so. Jede Woche einer.'],
     ['erzaehler', 'Sein Handy liegt auf dem Knie. Display nach unten.'],
@@ -343,6 +424,7 @@ export const GESPRAECHE_N1 = {
     ['dario', 'Alle waren in der Kantine.'],
     ['erzaehler', 'Vom Hof her klingelt es. Dario steht nicht auf.'],
     ['dario', 'Geh schon. Ich komm gleich.'],
+    { pult: { plus: -2 } },
   ],
   // Freitag: Mittwoch war jemand anderes dran. Um 23:07 die Nummer (Entscheidung B: Ton und Screenshot)
   n1_freitag: [

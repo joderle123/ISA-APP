@@ -359,6 +359,7 @@ export async function ladePerson(veil, { modell = 'menschen', stil = 'Casual', h
   };
   // ---------- Emotes (Emote-Rad, Auftrag 20.11. „wie bei Fortnite“): prozedurale Posen über die Hand-IK ----------
   // Rahmen aus den Schultern: r = zur rechten Schulter, f = vorn, c = Schultermitte, k = Kopf. Gewicht blendet weich ein/aus.
+  let schlafZiel = 0, schlafW = 0, schlafAn = false; const kopfSchlafVor = new THREE.Quaternion();
   const POSEN = { daumen: 2.2, klatschen: 2.6, herz: 2.8, sieger: 2.4, facepalm: 2.4, verbeugen: 2.4, roboter: 4.2, gitarre: 3.4, denken: 3, winken2: 2.6 };
   let poseArt = null, poseT = 0, poseD = 1, poseLehn = 0;
   const _pr = new THREE.Vector3(), _pc = new THREE.Vector3(), _pk = new THREE.Vector3(), _pz = new THREE.Vector3(), _pd = new THREE.Vector3(), _pf = new THREE.Vector3(), _pp = new THREE.Vector3(), _pq = new THREE.Quaternion();
@@ -478,6 +479,7 @@ export async function ladePerson(veil, { modell = 'menschen', stil = 'Casual', h
     get augen() { return AUGEN ? AUGEN.map((a) => a.idx.length + '@' + a.idx[0] + '=' + a.attr.getX(a.idx[0]).toFixed(2) + ' n' + blinzelIn.toFixed(1)) : null; },
     hand: HAND, armOk: ARMOK,
     lehnen(w) { lehnW = w || 0; },
+    schlafen(v) { schlafZiel = v ? 1 : 0; },   // Kopf zur Seite und nach vorn, Augen zu (Foto „eingeschlafen“, müde Figuren)
     handPos(s, v) { const A = ARM[s]; if (!A || !A.M) return null; return wp(A.M, v); },
     schulter(s, v) { const A = ARM[s]; if (!A || !A.O) return null; return wp(A.O, v); },
     sitzen(v, h) { sitzt = !!v; if (h) sitzH = h; group.position.y = 0; group.position.z = 0; },
@@ -485,6 +487,7 @@ export async function ladePerson(veil, { modell = 'menschen', stil = 'Casual', h
       if (sitzt) BEINE.forEach((b, i) => b.quaternion.copy(ruhe[i]));   // nicht aufaddieren, falls Idle die Beine nicht bewegt
       if (atemAn) BRUST.quaternion.copy(brustVor);
       if (ikVor.size) { for (const [b, q] of ikVor) b.quaternion.copy(q); ikVor.clear(); }   // IK nicht aufaddieren
+      if (schlafAn) KOPF.quaternion.copy(kopfSchlafVor);
       if (redeAn) KOPF.quaternion.copy(kopfRedeVor);
       if (bAktiv) { if (NACKEN) NACKEN.quaternion.copy(nackenVor); KOPF.quaternion.copy(kopfVor); }   // Blick nicht aufaddieren, falls ein Clip den Kopf nicht bewegt
       mixer.update(dt);
@@ -507,8 +510,11 @@ export async function ladePerson(veil, { modell = 'menschen', stil = 'Casual', h
           else if (gesteArt === 'senken') winkel(KOPF, 0.24 * h);
           else if (gesteArt === 'zucken') { _q.setFromAxisAngle(_az, 0.09 * h); KOPF.quaternion.multiply(_q); winkel(KOPF, -0.05 * h); }
         } }
+      schlafW += (schlafZiel - schlafW) * Math.min(1, dt * 2.5); schlafAn = !!KOPF && schlafW > 0.01;
+      if (schlafAn) { kopfSchlafVor.copy(KOPF.quaternion); _q.setFromAxisAngle(_az, 0.42 * schlafW); KOPF.quaternion.multiply(_q); winkel(KOPF, 0.26 * schlafW); }
       if (!AUGEN) augenSuchen();
-      if (AUGEN.length) {
+      if (AUGEN.length && schlafW > 0.5) augenSetzen(true);
+      else if (AUGEN.length) {
         if (lidZu > 0) { lidZu -= dt; if (lidZu <= 0) augenSetzen(false); }
         else if ((blinzelIn -= dt) <= 0) { augenSetzen(true); lidZu = 0.12; blinzelIn = Math.random() < 0.15 ? 0.25 : 2.2 + Math.random() * 4.5; }
       }

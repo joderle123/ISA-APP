@@ -31,7 +31,7 @@ export default {
         ziel: 'Zum Rand des Stade. Runterkommen.', ort: 'Stade', p: [-77.6, -6.0], leute: { lio: [-76.0, -5.0] },
         zeilen: [
           { wenn: (f) => f.hai, dann: [['lio', 'Komm mal mit. Weg von Finn. Bevor das hier richtig knallt.']] },
-          ['e', 'Stufe 1 der Treppe raus: Stopp und runterkommen. Erst wenn die Wut unter 50 ist, denkt der Kopf wieder mit.'],
+          ['e', 'Stufe 1 der Treppe raus: Stopp und runterkommen. Erst wenn die Wut unter 70 ist, denkt der Kopf wieder mit.'],
           { atem: true },
           { plus: { wut: -25 } },
           { thermo: 'wut', text: 'Deine Wut' },
@@ -187,7 +187,7 @@ export default {
           { wahl: [
             { t: 'Handy raus und auch filmen.', log: 'Mitgefilmt', folge: 'Jetzt filmen zwei. Sara wird lauter – für die Kamera.', skill: false, setze: { buehneGefilmt: true } },
             { t: 'Zu Finn: „Mach aus. Mit Kamera wird’s nur schlimmer.“ Und zu den anderen: „Show ist vorbei.“', log: 'Dem Publikum die Bühne genommen: Kamera aus, Zuschauer weg', folge: 'Finn senkt das Handy. Die 6ème zieht weiter.', skill: true },
-            { t: 'Laut dazwischen: „Hört sofort auf!“', log: 'Als Held dazwischengegangen', folge: 'Jetzt schauen alle dich an. Sara: „Halt du dich raus!“', skill: false },
+            { t: 'Laut dazwischen: „Hört sofort auf!“', log: 'Laut und allein dazwischengegangen', folge: 'Jetzt schauen alle dich an. Sara: „Halt du dich raus!“', skill: false },
             { t: 'Zu Jade: „Komm, dein Bus.“ Und mit ihr ein Stück gehen.', log: 'Jade aus der Show geholt, ohne Szene', folge: 'Jade geht mit. Sara ruft noch was. Aber ohne Gegenüber ist die Show vorbei.', skill: true, setze: { jadeRaus: true } },
           ], frage: 'Wie machst du die Bühne kleiner?' },
           { wenn: (f) => f.buehneGefilmt, dann: [{ moment: 'Dein Video hat die Show doppelt so groß gemacht.' }] },

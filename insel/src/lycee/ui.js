@@ -19,7 +19,9 @@ export function createUI({ root, input, speech }) {
   const bingo = el('div', 'ly-bingo hud-interactive'); bingo.hidden = true; hud.appendChild(bingo);
   const knoepfe = el('div', 'ly-knoepfe', '<button type="button" data-k="mission" title="Stunden und Missionen" aria-label="Stunden und Missionen"><span>🎟</span></button><button type="button" data-k="handy" title="Handy: Nachrichten (N)" aria-label="Handy"><span>📱</span><i class="ly-badge" hidden></i></button><button type="button" data-k="garderobe" title="Garderobe (G)" aria-label="Garderobe"><span>👕</span><i class="ly-badge" hidden></i></button><button type="button" data-k="fahrt" title="Fahren: R = Skateboard, T = Trottinette" aria-label="Fahren">🛹</button><button type="button" data-k="foto" title="Fotomodus (C)" aria-label="Fotomodus">📷</button><button type="button" data-k="raus" title="Kurz raus (P)" aria-label="Kurz raus">⏸</button><button type="button" data-k="journal" title="Journal (Tab)" aria-label="Journal">☰</button>'); hud.appendChild(knoepfe);
   const mutEl = el('div', 'ly-mut'); mutEl.hidden = true; hud.appendChild(mutEl);   // Anspannung während einer Mutprobe
-  const anzEl = el('div', 'ly-anz'); anzEl.hidden = true; hud.appendChild(anzEl);   // Dauer-Anzeige einer Woche (Anspannung, Akku, Mut)
+  const anzEl = el('div', 'ly-anz'); anzEl.hidden = true; hud.appendChild(anzEl);
+  const pultEl = el('div', 'ly-pult'); pultEl.hidden = true; hud.appendChild(pultEl);   // Steuerpult: welches Gefühl sitzt am Steuer (0–10)
+  const handyKarte = el('div', 'ly-handykarte'); handyKarte.hidden = true; root.appendChild(handyKarte);   // Handy, das jemand hinhält (echtes Foto aus der Welt)   // Dauer-Anzeige einer Woche (Anspannung, Akku, Mut)
   const skateEl = el('div', 'ly-skate'); skateEl.hidden = true; hud.appendChild(skateEl);   // Skate-Session: Zeit, Punkte, Trick
   const skateKn = el('div', 'ly-skate-knoepfe hud-interactive'); skateKn.hidden = true; hud.appendChild(skateKn);
   const dialog = el('div', 'ly-dialog hud-interactive'); dialog.hidden = true; root.appendChild(dialog);
@@ -62,6 +64,74 @@ export function createUI({ root, input, speech }) {
     if (anzAlt && anzAlt.art === a.art && w !== anzAlt.w) { em.textContent = (w > anzAlt.w ? '+' : '−') + Math.abs(w - anzAlt.w); anzEl.classList.remove('puls'); void anzEl.offsetWidth; anzEl.classList.add('puls'); }
     anzAlt = { art: a.art, w };
   };
+  // Steuerpult (Baustein 3): p = { g: 'Scham', w: 0–10 } | null. Grün bis 3, Gelb 4–6, Rot ab 7 (dann sind ruhige Antworten zu).
+  let pultAlt = null;
+  ui.pult = (p) => {
+    if (!p) { pultEl.hidden = true; pultAlt = null; return; }
+    const w = Math.max(0, Math.min(10, Math.round(p.w))), zone = w >= 7 ? 'rot' : w >= 4 ? 'gelb' : 'gruen';
+    pultEl.hidden = false; pultEl.className = 'ly-pult ' + zone;
+    pultEl.innerHTML = '<small>Am Steuer</small><b>' + esc(p.g || 'Gefühl') + '</b><div class="ly-pult-balken"><i style="left:' + (w * 10) + '%"></i></div><span>' + w + ' von 10 · ' + (zone === 'rot' ? 'Rot' : zone === 'gelb' ? 'Gelb' : 'Grün') + '</span>';
+    pultEl.setAttribute('aria-label', 'Am Steuer: ' + (p.g || '') + ', ' + w + ' von 10');
+    if (pultAlt != null && w !== pultAlt) { pultEl.classList.remove('puls'); void pultEl.offsetWidth; pultEl.classList.add('puls'); }
+    pultAlt = w;
+  };
+  // Handy, das jemand hinhält (Baustein 4): echtes Foto aus der Spielwelt, Text, Umfrage mit Stimmen, die live steigen.
+  // h = { wer, bild (dataURL), text, umfrage: { a, b, pa (Prozent a), stimmen, live } } | null
+  let handyUhr = 0;
+  ui.handyBild = (h) => {
+    clearInterval(handyUhr);
+    if (!h) { handyKarte.hidden = true; handyKarte.innerHTML = ''; return; }
+    const u = h.umfrage;
+    handyKarte.innerHTML = '<div class="ly-hk-kopf"><b>' + esc(h.wer || '') + '</b><span>' + esc(h.wann || 'gerade eben') + '</span></div>' +
+      (h.bild ? '<img alt="' + esc(h.alt || 'Foto') + '" src="' + h.bild + '">' : '<div class="ly-hk-leer">📷</div>') +
+      '<div class="ly-hk-text">' + esc(h.text || '') + '</div>' +
+      (u ? '<div class="ly-hk-umfrage"><div class="ly-hk-bar a"><i></i><span>' + esc(u.a) + ' <b></b></span></div><div class="ly-hk-bar b"><i></i><span>' + esc(u.b) + ' <b></b></span></div><small>' + (u.live ? '<em>● live</em> ' : '') + '<span class="n"></span> Stimmen</small></div>' : '');
+    handyKarte.hidden = false;
+    if (!u) return;
+    let n = u.stimmen || 20, pa = u.pa || 50;
+    const zeig = () => { const qa = Math.round(pa), qb = 100 - qa;
+      handyKarte.querySelector('.a i').style.width = qa + '%'; handyKarte.querySelector('.a b').textContent = qa + ' %';
+      handyKarte.querySelector('.b i').style.width = qb + '%'; handyKarte.querySelector('.b b').textContent = qb + ' %';
+      handyKarte.querySelector('.n').textContent = n; };
+    zeig();
+    if (u.live) handyUhr = setInterval(() => { n += 1 + (Math.random() < 0.4 ? 1 : 0); pa = Math.max(5, Math.min(95, pa + (Math.random() - 0.35) * 1.6)); zeig(); }, 1400);
+  };
+  // Freier Moment (Baustein 1): Uhr und Fäden oben in der Mitte. f = { titel, rest, faeden: [{ label, besucht, vorbei }] } | null
+  const freiEl = el('div', 'ly-frei'); freiEl.hidden = true; hud.appendChild(freiEl);
+  ui.freiUhr = (f) => {
+    if (!f) { freiEl.hidden = true; return; }
+    const r = Math.max(0, Math.ceil(f.rest)), mm = Math.floor(r / 60), ss = String(r % 60).padStart(2, '0');
+    freiEl.hidden = false; freiEl.classList.toggle('knapp', r <= 30);
+    freiEl.innerHTML = '<div class="ly-frei-kopf"><b>' + esc(f.titel) + '</b><span>' + mm + ':' + ss + '</span></div><ul>' +
+      f.faeden.map((x) => '<li class="' + (x.besucht ? 'ja' : x.vorbei ? 'weg' : '') + '">' + (x.besucht ? '✓ ' : x.vorbei ? '– ' : '• ') + esc(x.label) + '</li>').join('') + '</ul>';
+  };
+  // Hinschauen (Baustein 2): unten eine Leiste, die 3D-Welt bleibt sichtbar. Man hat nur wenige Blicke (def.blicke) – man sieht nicht alles.
+  // def = { titel, text, blicke, personen: [{ wer, name, signale: [{ wo: 'Gesicht'|'Hände'|'Haltung'|'Umgebung', t, key }] }] }
+  // cb.fokus(wer): Kamera auf die Person. Rückgabe { gesehen: [keys], texte: [{ wer, t }], uebrig }
+  ui.blickSzene = (def, cb = {}) => new Promise((ok) => {
+    const k = el('div', 'ly-blick hud-interactive'); root.appendChild(k); root.classList.add('ly-im-blick');
+    let blicke = def.blicke || 3, aktiv = null; const gesehen = [], texte = [], offen = {};
+    const fertig = () => { k.remove(); root.classList.remove('ly-im-blick'); document.removeEventListener('keydown', taste, true); ok({ gesehen, texte, uebrig: blicke }); };
+    const taste = (e) => { if (e.code === 'Enter' && blicke <= 0) { e.preventDefault(); fertig(); } };
+    document.addEventListener('keydown', taste, true);
+    const zeichne = () => {
+      const p = aktiv && def.personen.find((x) => x.wer === aktiv);
+      k.innerHTML = '<div class="ly-bl-kopf"><span>👁 Hinschauen' + (def.titel ? ' · ' + esc(def.titel) : '') + '</span><b class="ly-bl-rest">' + '●'.repeat(blicke) + '○'.repeat(Math.max(0, (def.blicke || 3) - blicke)) + ' <small>' + blicke + (blicke === 1 ? ' Blick' : ' Blicke') + ' übrig</small></b></div>' +
+        (def.text ? '<p class="ly-bl-text">' + esc(def.text) + '</p>' : '') +
+        '<div class="ly-bl-leute">' + def.personen.map((x) => '<button type="button" class="ly-btn' + (x.wer === aktiv ? ' an' : '') + '" data-p="' + esc(x.wer) + '">' + esc(x.name) + '</button>').join('') + '</div>' +
+        (p ? '<div class="ly-bl-wo">' + p.signale.map((sg, i) => { const id = p.wer + ':' + i, auf = offen[id];
+          return auf ? '<div class="ly-bl-sig"><small>' + esc(sg.wo) + '</small>' + esc(sg.t) + '</div>' : '<button type="button" class="ly-btn" data-s="' + i + '"' + (blicke <= 0 ? ' disabled' : '') + '>Schau auf: ' + esc(sg.wo) + '</button>'; }).join('') + '</div>' :
+          '<p class="ly-bl-tipp">Wähl eine Person. Die Kamera geht nah heran.</p>') +
+        '<div class="ly-bl-fuss"><button type="button" class="ly-btn ly-primaer" data-a="fertig"' + (gesehen.length + texte.length ? '' : ' disabled') + '>' + (blicke > 0 ? 'Genug gesehen' : 'Weiter') + '</button></div>';
+      k.querySelectorAll('[data-p]').forEach((b) => { b.onclick = () => { aktiv = b.dataset.p; if (cb.fokus) cb.fokus(aktiv); zeichne(); }; });
+      k.querySelectorAll('[data-s]').forEach((b) => { b.onclick = () => {
+        if (blicke <= 0) return; const sg = p.signale[+b.dataset.s]; offen[p.wer + ':' + b.dataset.s] = true; blicke--;
+        texte.push({ wer: p.wer, t: sg.t }); if (sg.key) gesehen.push(sg.key);
+        if (cb.vorlesen) cb.vorlesen(sg.t); zeichne(); }; });
+      k.querySelector('[data-a="fertig"]').onclick = () => { if (gesehen.length + texte.length) fertig(); };
+    };
+    zeichne();
+  });
   ui.blendeAus = (ms = 650) => new Promise((ok) => setTimeout(() => { blende.classList.remove('an'); ok(); }, ms));
   // Fotomodus (wie in großen Spielen): HUD weg, Kamera frei um die eigene Figur, Pose, Filter, Unschärfe, Bild speichern
   ui.fotoAn = () => root.classList.contains('ly-foto-an');
@@ -268,15 +338,21 @@ export function createUI({ root, input, speech }) {
   ui.waehle = (optionen, frage = '', opts = {}) => new Promise((ok) => {   // opts.fest: Reihenfolge nicht mischen (Menüs, Gefühle)
     dialogOffen = true; dialog.hidden = false; root.classList.add('ly-im-dialog'); dialog.className = 'ly-dialog hud-interactive ly-wahl';
     // Damit niemand vergisst, worauf er antwortet: der zuletzt gesagte Satz bleibt klein über den Antworten stehen
-    const zuletzt = !frage && VERLAUF.length ? VERLAUF[VERLAUF.length - 1] : null;
-    dialog.innerHTML = (frage ? '<div class="ly-d-text">' + esc(frage) + '</div>' : (zuletzt ? '<div class="ly-d-kontext">' + (zuletzt.wer ? '<b style="--f:' + esc(zuletzt.farbe) + '">' + esc(zuletzt.wer) + '</b> ' : '') + esc(zuletzt.text) + '</div>' : '') + '<div class="ly-d-frage">Was machst du?</div>') +
+    const zuletzt = (!frage || opts.kontext) && VERLAUF.length ? VERLAUF[VERLAUF.length - 1] : null;
+    const kontext = zuletzt ? '<div class="ly-d-kontext">' + (zuletzt.wer ? '<b style="--f:' + esc(zuletzt.farbe) + '">' + esc(zuletzt.wer) + '</b> ' : '') + esc(zuletzt.text) + '</div>' : '';
+    dialog.innerHTML = (frage ? (opts.kontext ? kontext : '') + '<div class="ly-d-text">' + esc(frage) + '</div>' : (zuletzt ? '<div class="ly-d-kontext">' + (zuletzt.wer ? '<b style="--f:' + esc(zuletzt.farbe) + '">' + esc(zuletzt.wer) + '</b> ' : '') + esc(zuletzt.text) + '</div>' : '') + '<div class="ly-d-frage">Was machst du?</div>') +
       '<div class="ly-d-optionen"></div>';
     // gemischte Reihenfolge: die „vernünftige“ Antwort steht nicht immer oben (Jugend-Kritik). data-i = Platz in den Daten.
     wahlReihe = optionen.map((o, i) => i);
     if (!ui.festeReihenfolge && !opts.fest) for (let i = wahlReihe.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); const t = wahlReihe[i]; wahlReihe[i] = wahlReihe[j]; wahlReihe[j] = t; }
-    dialog.querySelector('.ly-d-optionen').innerHTML = wahlReihe.map((i, pos) => '<button type="button" data-i="' + i + '"><kbd>' + (pos + 1) + '</kbd><span>' + esc(optionen[i]) + '</span></button>').join('');
-    wahlFn = (i) => { if (i < 0 || i >= optionen.length) return; wahlFn = null; ok(i); };
+    // opts.gesperrt: { i: Grund } (Steuerpult auf Rot) · opts.tags: { i: Hinweis } (z. B. „Weil du hingeschaut hast.“) · opts.extra: [{ id, t }] → { extra: id }
+    const zu = opts.gesperrt || {}, tg = opts.tags || {};
+    dialog.querySelector('.ly-d-optionen').innerHTML = wahlReihe.map((i, pos) => '<button type="button" data-i="' + i + '"' + (zu[i] ? ' class="zu" aria-disabled="true"' : '') + '><kbd>' + (pos + 1) + '</kbd><span>' + esc(optionen[i]) +
+      (zu[i] ? '<small class="ly-d-sperre">🔒 ' + esc(zu[i]) + '</small>' : tg[i] ? '<small class="ly-d-neu">👁 ' + esc(tg[i]) + '</small>' : '') + '</span></button>').join('') +
+      (opts.extra && opts.extra.length ? '<div class="ly-d-extra">' + opts.extra.map((x) => '<button type="button" class="ly-btn" data-x="' + esc(x.id) + '">' + esc(x.t) + '</button>').join('') + '</div>' : '');
+    wahlFn = (i) => { if (i < 0 || i >= optionen.length || zu[i]) return; wahlFn = null; ok(i); };
     dialog.querySelectorAll('[data-i]').forEach((b) => { b.onclick = () => wahlFn && wahlFn(+b.dataset.i); });
+    dialog.querySelectorAll('[data-x]').forEach((b) => { b.onclick = () => { if (!wahlFn) return; wahlFn = null; ok({ extra: b.dataset.x }); }; });
     const b0 = dialog.querySelector('[data-i]'); if (b0) setTimeout(() => { try { b0.focus({ preventScroll: true }); } catch (e) { /* egal */ } }, 30);
   });
   ui.dialogVerstecken = (an) => { dialog.style.visibility = an ? 'hidden' : ''; };   // während „Kurz raus“ in einer Situation
@@ -335,6 +411,15 @@ export function createUI({ root, input, speech }) {
   ui.ebeneZu = ebeneZu;
   ui.ebeneAuf = ebeneAuf;
   ui.ebeneArt = () => (ebene.hidden ? '' : ebene.dataset.art || '');
+  // Zu zweit an einem iPad: kurze Karte zwischen den Zügen („Jetzt Mia. Alex schaut weg.“). warteMs: Knopf erst nach dieser Zeit
+  ui.partnerKarte = ({ titel, text, knopf = 'Weiter', warteMs = 0 }) => new Promise((ok) => {
+    const k = ebeneAuf('partner', '<div class="ly-t-kicker">👥 Zu zweit</div><h2>' + esc(titel) + '</h2><p class="ly-partner-text">' + esc(text).replace(/\n/g, '<br>') + '</p>' +
+      '<div class="ly-t-knoepfe"><button type="button" class="ly-btn ly-primaer" data-a="w"' + (warteMs ? ' disabled' : '') + '>' + esc(knopf) + '</button></div>');
+    const b = k.querySelector('[data-a="w"]');
+    if (warteMs) { let rest = Math.ceil(warteMs / 1000); const alt = b.textContent; b.textContent = alt + ' (' + rest + ')';
+      const iv = setInterval(() => { rest--; if (rest <= 0) { clearInterval(iv); b.disabled = false; b.textContent = alt; } else b.textContent = alt + ' (' + rest + ')'; }, 1000); }
+    b.onclick = () => { if (b.disabled) return; ebeneZu(); ok(); };
+  });
 
   // Menschen im Journal: Freundschaft als Balken (0–100) mit Stufe, Typ, Hobby und Gründen; oben dein Freundeskreis und Profil
   const menschenListe = (leute) => '<ul class="ly-j-leute ly-j-freunde">' + leute.map((l) => '<li><span class="ly-j-name" style="--f:' + esc(l.farbe) + '">' + esc(l.name) + (l.typ ? ' <em>' + esc(l.typ) + '</em>' : '') + '</span>' +

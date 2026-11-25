@@ -232,7 +232,7 @@ export default {
           ['h:Mia', 'Akku 3 %.'],
           { moment: 'Mitten im Gespräch ging Mias Akku fast aus.' },
           { wahl: [
-            { t: '„Plan: Du bleibst am roten Schild. Ich komme zu dir. Leg auf und spar Akku.“', log: 'Einen klaren Plan abgemacht: Mia bleibt, du kommst', folge: 'Mia: „Okay. Ich bleib am Schild.“ Tuut.', skill: true, setze: { plan: true } },
+            { t: '„Plan: Du bleibst am roten Schild. Herr Lenz und ich kommen zu dir. Leg auf und spar Akku.“', log: 'Einen klaren Plan abgemacht: Mia bleibt, du kommst mit Herrn Lenz', folge: 'Mia: „Okay. Ich bleib am Schild.“ Tuut.', skill: true, setze: { plan: true } },
             { t: 'Weiterreden, bis der Akku leer ist.', log: 'Ohne Plan weitergeredet', folge: 'Tuut. Weg. Ihr habt nichts abgemacht.', skill: false, setze: { plan: false } },
           ] },
         ],
@@ -241,7 +241,7 @@ export default {
         ziel: 'Zur Lichtung, Richtung rotes Schild.', ort: 'Lichtung', p: [-57.8, -97.4], leute: { mia: [-59.4, -96.4] },
         zeilen: [
           { wenn: (f) => f.plan && !f.miaLaeuft, dann: [['mia', '(springt auf) Da bist du! Ich hab mich nicht bewegt. Echt nicht.']],
-            sonst: [['e', 'Am Schild ist niemand. Du rufst. Von weiter hinten antwortet Mia.'], ['mia', '(kommt angelaufen) Ich bin weitergelaufen! Ich dachte, du kommst nicht!'], { moment: 'Ohne klaren Plan (oder nach dem „Stell dich nicht so an“) ist Mia weitergelaufen – du musstest sie suchen.' }] },
+            sonst: [['e', 'Am Schild ist niemand. Du rufst. Von weiter hinten antwortet Mia.'], ['mia', '(kommt angelaufen) Ich bin weitergelaufen! Ich dachte, du kommst nicht!'], { moment: 'Ohne klaren Plan (oder nach dem „Lauf einfach los“) ist Mia weitergelaufen – du musstest sie suchen.' }] },
           { wenn: (f) => f.bluff, dann: [['mia', 'Du hast gesagt, du weißt genau, wo ich bin. Wusstest du nicht, oder?'], { wahl: [
             { t: '„Nein. Ich wollte dich beruhigen. Das war nicht fair.“', log: 'Den Bluff zugegeben', folge: 'Mia: „Beim nächsten Mal sag einfach ‚glaub ich‘. Das reicht.“', skill: true },
             { t: '„Doch, klar.“', log: 'Beim Bluff geblieben', folge: 'Mia sagt nichts mehr.', skill: false },

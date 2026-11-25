@@ -157,7 +157,7 @@ export default {
             ] },
           ], sonst: [
             ['finn', '(blass, setzt sich auf den Rasen) Mein Herz rast. Alles dreht sich.'],
-            { moment: 'Finn hatte drei Energy-Drinks und nichts gegessen. Drei Dosen sind für Jugendliche viel zu viel Koffein. Schwindel und Herzrasen heißen: sofort Erwachsene holen.' },
+            { moment: 'Finn hatte drei Energy-Drinks und nichts gegessen. Drei Dosen sind für Jugendliche viel zu viel Koffein. Schwindel und Herzrasen heißen: sofort Erwachsene holen. Bei Ohnmacht oder Schmerz in der Brust: 112.' },
             { wahl: [
               { t: 'Sofort Frau Brandt rufen und bei Finn bleiben.', log: 'Bei Schwindel und Herzrasen sofort eine Erwachsene geholt und bei Finn geblieben', folge: 'Frau Brandt setzt Finn in den Schatten und ruft seine Eltern an. Nach einer Weile geht es ihm besser.', skill: true },
               { t: '„Trink halt noch einen, dann geht’s wieder.“', log: 'Finn noch einen Energy-Drink empfohlen', folge: 'Finns Hände zittern. Frau Brandt sieht es und kommt sofort.', skill: false },

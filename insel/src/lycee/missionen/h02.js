@@ -78,7 +78,7 @@ export default {
               { t: 'Kränkung meldet: „Sei nicht so empfindlich.“', log: 'Kränkung als „empfindlich“ abgetan', folge: 'Chloé: „Toll. Danke.“', skill: false },
             ], frage: 'Was meldet Chloés Kränkung?' },
             { wahl: [
-              { t: '„Alles Gute. Komm mit zur Bäckerei, ich lad dich ein.“', log: 'Chloé gratuliert und eingeladen', folge: 'Chloé lacht zum ersten Mal heute.', skill: null, setze: { chloeGeburtstag: true } },
+              { t: '„Alles Gute! Komm mit, wir holen uns was an der Bäckerei.“', log: 'Chloé gratuliert und eingeladen', folge: 'Chloé lacht zum ersten Mal heute.', skill: null, setze: { chloeGeburtstag: true } },
               { t: '„Alles Gute.“ Und los.', log: 'Chloé gratuliert', folge: 'Chloé: „Danke. Echt.“', skill: null },
             ] },
           ] },

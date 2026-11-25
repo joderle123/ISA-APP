@@ -35,7 +35,7 @@ export default {
             { t: 'Weiß ich nicht – ich frag.', log: 'Bei Lio nicht geraten, sondern gefragt' },
           ], frage: 'Was sagt Lios Körper?' },
           { wahl: [
-            { t: '„Du wirkst angespannt. Stimmt das, oder täusch ich mich?“', log: 'Die eigene Deutung als Frage gestellt', folge: 'Lio lacht: „Angespannt? Mir ist arschkalt. Jacke vergessen.“', skill: true },
+            { t: '„Du wirkst angespannt. Stimmt das, oder täusch ich mich?“', log: 'Die eigene Deutung als Frage gestellt', folge: 'Lio lacht: „Angespannt? Mir ist eiskalt. Jacke vergessen.“', skill: true },
             { t: '„Chill mal, warum bist du so sauer?“', log: 'Lio eine Wut unterstellt', folge: 'Lio: „Bin ich nicht! … Jetzt schon.“', skill: false },
           ] },
           { moment: 'Wendung: Lio war nicht wütend. Er hat gefroren. Der Körper gibt Hinweise – sicher wird es erst durch Fragen.' },
@@ -245,7 +245,7 @@ export default {
           { wahl: [
             { t: '„Nee. Für dich lüg ich nicht. Aber ich komm mit, wenn du’s ihr selbst sagst.“', log: 'Nein gesagt – mit Angebot', folge: 'Finn: „Mann … okay. Kommst du echt mit?“', skill: true },
             { t: '„Ähm … vielleicht … mal sehen.“', log: 'Unklar geantwortet: „vielleicht“', folge: 'Finn hört ein Ja.', skill: false, setze: { finnVerlass: true } },
-            { t: '„Klar.“', log: 'Ja gesagt, obwohl Nein gemeint', folge: 'Finn klopft dir auf die Schulter: „Du bist der Beste.“', skill: false, setze: { finnVerlass: true } },
+            { t: '„Klar.“', log: 'Ja gesagt, obwohl Nein gemeint', folge: 'Finn klopft dir auf die Schulter: „Auf dich ist Verlass.“', skill: false, setze: { finnVerlass: true } },
           ] },
           { wenn: (f) => f.finnVerlass, dann: [['e', 'Am Nachmittag beim Training kommt Frau Brandt zu dir.'], ['brandt', 'Kurze Frage: Finn sagt, du weißt, dass er gestern beim Arzt war?'], { wahl: [
             { t: '„Dazu sag ich nichts. Fragen Sie Finn bitte selbst.“', log: 'Später doch eine klare Grenze gezogen', folge: 'Frau Brandt: „Fair.“', skill: true },

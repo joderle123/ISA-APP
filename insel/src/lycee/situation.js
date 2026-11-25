@@ -116,7 +116,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
     const zeig = (n) => {
       const ich = n.ich;
       const html = n.system ? '<div class="ly-h-sys">' + esc(ersetze(n.text)) + '</div>'
-        : '<div class="ly-h-msg' + (ich ? ' ich' : '') + '"><b>' + esc(ich ? 'Du' : n.wer) + '</b>' + (n.bild ? '<div class="ly-h-bild sz-foto">📷 ' + esc(ersetze(n.bild)) + '</div>' : '') + '<span>' + esc(ersetze(n.text)) + '</span>' +
+        : '<div class="ly-h-msg' + (ich ? ' ich' : '') + '"><b>' + esc(ich ? 'Du' : n.wer) + '</b>' + (n.bildUrl ? '<div class="ly-h-bild sz-foto mit-bild"><img alt="' + esc(ersetze(n.bild || 'Foto')) + '" src="' + n.bildUrl + '"></div>' : n.bild ? '<div class="ly-h-bild sz-foto">📷 ' + esc(ersetze(n.bild)) + '</div>' : '') + '<span>' + esc(ersetze(n.text)) + '</span>' +
           (n.lacher ? '<i class="ly-h-reakt" data-l="' + lach.length + '">😂 ' + n.lacher.start + '</i>' : '') + '</div>';
       const warUnten = unten() || ich;
       verlauf.insertAdjacentHTML('beforeend', html);

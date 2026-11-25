@@ -61,7 +61,7 @@ export default {
           ['du', 'Wieso willst du, dass alle über dich reden?'],
           ['malik', 'Weil ich seit zwei Wochen sage: Wir brauchen ein Turnier hier. Und keiner hört zu.'],
           { wahl: [
-            { t: '„Dann zeig mir die Turnier-Idee. Ich hör zu.“', log: 'Malik zugehört: Gehört-werden-Tank gefüllt', folge: 'Malik erklärt fünf Minuten lang sein Turnier. Er wirkt plötzlich ruhig.', skill: true, setze: { malikGehoert: true }, dann: [['malik', '(scrollt zu einer Notiz) Kicker, Billard, Tischtennis. Drei Runden. Jeder spielt mit jedem.'], ['du', 'Klingt gut. Warum hast du das nie Herrn Lenz gezeigt?'], ['malik', '… Weil ich dachte, er lacht.']] },
+            { t: '„Dann zeig mir die Turnier-Idee. Ich hör zu.“', log: 'Malik zugehört: Ernst-genommen-Tank gefüllt', folge: 'Malik erklärt fünf Minuten lang sein Turnier. Er wirkt plötzlich ruhig.', skill: true, setze: { malikGehoert: true }, dann: [['malik', '(scrollt zu einer Notiz) Kicker, Billard, Tischtennis. Drei Runden. Jeder spielt mit jedem.'], ['du', 'Klingt gut. Warum hast du das nie Herrn Lenz gezeigt?'], ['malik', '… Weil ich dachte, er lacht.']] },
             { t: '„Poste es. Ist doch lustig.“', log: 'Fake-Tankstelle unterstützt: Video gepostet', folge: 'Viele Likes. Herr Lenz sieht es: „Malik, lösch das bitte. Dann reden wir – über das Video und über dein Turnier.“', skill: false, setze: { malikGehoert: false }, dann: [['e', 'Malik tippt. Drei Sekunden später: die ersten Herzen.'], ['lenz', '(kommt rein, schaut aufs Handy, sagt nichts. Geht wieder.)'], ['malik', '… Okay. Das war’s jetzt wohl mit dem Turnier.']] },
             { t: '„Lass mich da raus.“', log: 'Sich rausgehalten', folge: 'Malik zögert. Das Video bleibt erst mal ungepostet.', skill: null, dann: [['malik', '(zögert, steckt das Handy weg) Mal sehen.']] },
           ], frage: 'Was machst du mit Maliks Idee?' },
@@ -86,8 +86,9 @@ export default {
           { wahl: [
             { t: 'Körper (Essen, Schlaf)', log: 'Eigener leerster Tank: Körper', privat: true },
             { t: 'Dazugehören', log: 'Eigener leerster Tank: Dazugehören', privat: true },
-            { t: 'Gehört werden', log: 'Eigener leerster Tank: Gehört werden', privat: true },
-            { t: 'Selbst bestimmen', log: 'Eigener leerster Tank: Selbst bestimmen', privat: true },
+            { t: 'Ernst genommen', log: 'Eigener leerster Tank: Ernst genommen', privat: true },
+            { t: 'Selbst entscheiden', log: 'Eigener leerster Tank: Selbst entscheiden', privat: true },
+            { t: 'Spaß und Neues', log: 'Eigener leerster Tank: Spaß und Neues', privat: true },
             { t: 'Sicherheit', log: 'Eigener leerster Tank: Sicherheit', privat: true },
             { t: 'Möchte ich nicht sagen', log: 'Eigenen Tank für sich behalten', privat: true },
           ], frage: 'Welcher Tank ist bei dir gerade am leersten? (Nur für dich – kommt nicht ins Resümee.)' },

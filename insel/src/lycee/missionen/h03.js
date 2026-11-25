@@ -79,7 +79,7 @@ export default {
             { moment: 'In der Kantine war dein Druck im Rot – und es ist gekracht.' },
             { wahl: [
               { t: 'Den Tag von vorn erzählen: Schlaf, Frühstück, Kabel, Schlange.', log: 'Den Tag als Kette erzählt', folge: 'Herr Lenz: „Die Schlange war nur das Letzte. Dein Druck war schon vorher hoch.“', skill: true },
-              { t: '„Malik ist schuld. Punkt.“', log: 'Nur den letzten Tropfen gesehen', folge: 'Herr Lenz: „Und was war vorher?“', skill: false },
+              { t: '„Sara ist schuld. Punkt.“', log: 'Nur den letzten Tropfen gesehen', folge: 'Herr Lenz: „Und was war vorher?“', skill: false },
             ] },
           ], sonst: [
             ['lenz', 'Kurze Frage: Hilfst du morgen beim Aufbau fürs Turnier?'],
@@ -219,7 +219,7 @@ export default {
           { setze: { druck: 65 } },
           { thermo: 'druck' },
           { wahl: [
-            { t: 'Ein saures Bonbon. Volle Konzentration auf die Säure.', log: 'Test 1: saures Bonbon gegen den Gedankenstrudel', folge: 'Zehn Sekunden nur sauer. Dann ist der Kopf leiser. Druck sinkt um 20.', skill: true, plus: { druck: -20 }, wenn: (f) => f.sauer },
+            { t: 'Ein saures Bonbon. Volle Konzentration auf die Säure.', log: 'Test 1: saures Bonbon gegen den Gedankenstrudel', folge: 'Zehn Sekunden nur sauer. Das reißt dich ins Jetzt – sauer macht eher wach als müde. Der Strudel ist weg. Druck sinkt um 20.', skill: true, plus: { druck: -20 }, wenn: (f) => f.sauer },
             { t: 'Den Knetball drücken, so fest es geht.', log: 'Test 1: Knetball', folge: 'Die Hände haben zu tun. Druck sinkt um 15.', skill: true, plus: { druck: -15 }, wenn: (f) => f.knete },
             { t: 'Das Lied hören, Augen zu.', log: 'Test 1: Lied', folge: 'Drei Minuten, dann ist es leiser. Druck sinkt um 15.', skill: true, plus: { druck: -15 }, wenn: (f) => f.musik },
             { t: 'Vier ein, acht aus. Dreimal.', log: 'Test 1: lang ausgeatmet', folge: 'Beim dritten Mal wird der Bauch weicher. Druck sinkt um 15.', skill: true, plus: { druck: -15 } },
@@ -244,7 +244,7 @@ export default {
           ['amira', 'Jemand hat mir mal gesagt, ich soll mir selbst wehtun, wenn es zu viel wird. Damit es aufhört.'],
           { wahl: [
             { t: '„Wehtun ist kein Trick. Kalt, sauer, ein Duft – stark, aber harmlos. Und wenn es oft zu viel ist: Sag’s einer erwachsenen Person.“', log: 'Klar gesagt: Wehtun ist keine Hilfe – Hilfe holen schon', folge: 'Amira: „Hab ich auch gedacht. Gut, dass du’s sagst.“', skill: true },
-            { t: '„Wenn’s hilft …“', log: 'Sich-wehtun durchgehen lassen', folge: 'Amira schaut dich unsicher an.', skill: false },
+            { t: '„Wenn’s hilft …“', log: 'Sich-wehtun durchgehen lassen', folge: 'Amira schaut dich unsicher an.', skill: false, privat: true, dann: [['amira', 'Echt? … Ich weiß nicht.'], ['e', 'Sich wehtun hilft nie. Es macht alles schwerer. Hilfe gibt es: 116 111, kostenlos und anonym.']] },
           ] },
           ['e', 'Wenn du dir selbst wehtun willst: Sag es einer erwachsenen Person, der du vertraust. Oder ruf 116 111 an – kostenlos und anonym.'],
         ],
@@ -369,9 +369,9 @@ export default {
           { wahl: [
             { t: 'Herr Lenz', log: 'Rot-Person: Herr Lenz', setze: { rotPerson: 'Herrn Lenz' } },
             { t: 'Herr Kuedes (SePAS)', log: 'Rot-Person: Herr Kuedes', setze: { rotPerson: 'Herrn Kuedes' } },
-            { t: 'Ein Freund oder eine Freundin', log: 'Rot-Person: Freund oder Freundin', setze: { rotPerson: 'meiner Person' } },
-            { t: 'Telefon 116 111 (kostenlos, anonym)', log: 'Rot-Person: Telefon 116 111', setze: { rotPerson: 'einem Erwachsenen – und ich ruf 116 111 an' } },
-            { t: 'Jemand anderes', log: 'Rot-Person: jemand anderes', setze: { rotPerson: 'meiner Person' } },
+            { t: 'Ein Freund oder eine Freundin', log: 'Rot-Person: Freund oder Freundin', setze: { rotPerson: 'meinem Freund oder meiner Freundin' } },
+            { t: 'Telefon 116 111 (kostenlos, anonym)', log: 'Rot-Person: Telefon 116 111', setze: { rotPerson: 'Herrn Lenz, und ich ruf später 116 111 an' } },
+            { t: 'Jemand anderes', log: 'Rot-Person: jemand anderes', setze: { rotPerson: 'jemandem, dem ich vertraue' } },
           ], frage: 'Bei Rot gehst du zu:' },
           ['finn', 'Gut. Und bei Grün? Was füllt dich auf?'],
           { notiz: 'Was füllt dich bei Grün auf?', platz: 'zum Beispiel: Sport, Schlaf, Leute …' },

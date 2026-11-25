@@ -54,7 +54,19 @@ export function installSkillsRaum(ui, { vorlesen = () => {}, ton = () => {} } = 
     const buehne = k.querySelector('.sr-buehne'), fuss = k.querySelector('.sr-fuss');
     const phase = (i) => k.querySelectorAll('.sr-phasen li').forEach((li) => { const n = +li.dataset.p; li.className = n < i ? 'fertig' : n === i ? 'jetzt' : ''; });
     const lehrer = (html) => '<div class="sr-lehrer" style="--f:' + esc(L.farbe) + '"><i>' + esc(L.name.replace(/^(Herr|Frau|Mme|M\.)\s*/, '')[0]) + '</i><div><b>' + esc(L.name) + '</b><p>' + html + '</p></div></div>';
-    const knopf = (t, cls = 'ly-primaer', lesen = 0) => new Promise((weiter) => {
+    // Zu zweit (ui.partner): in den Übungen abwechselnd antworten; die andere Person sagt danach 👍 oder 👎 (bei 👎 kurz reden)
+    const P = ui.partner ? ui.partner() : null; let zug = 0, nachAntwort = null;
+    const knopf = async (...a) => { if (P && nachAntwort) await partnerCheck(); return knopf0(...a); };
+    const partnerCheck = async () => {
+      const wer = nachAntwort, andere = wer === P.a ? P.b : P.a; nachAntwort = null;
+      const j = await wahl('<p class="sr-zug">' + esc(andere) + ': Hättest du dasselbe gewählt?</p><button type="button" class="ly-btn" data-i="0">👍 Ja</button><button type="button" class="ly-btn" data-i="1">👎 Nein</button>', 2);
+      erg.partner = erg.partner || { einig: 0, uneinig: 0 };
+      if (j === 0) { erg.partner.einig++; return; }
+      erg.partner.uneinig++;
+      buehne.insertAdjacentHTML('beforeend', '<div class="sr-rueck eher">' + lehrer(esc(andere + ', sag ' + wer + ' in einem Satz, warum. Wer hat das bessere Argument?')) + '</div>');
+      await knopf0('Wir haben geredet', 'ly-primaer', 6000);
+    };
+    const knopf0 = (t, cls = 'ly-primaer', lesen = 0) => new Promise((weiter) => {
       fuss.innerHTML = '<button type="button" class="ly-btn ' + cls + (lesen ? ' sr-lies' : '') + '" data-a="w"' + (lesen ? ' style="--lesen:' + lesen + 'ms"' : '') + '>' + t + ' <kbd>E</kbd></button>';
       const b = fuss.querySelector('[data-a="w"]'); let aus = false; const ab = performance.now() + lesen;
       if (lesen) setTimeout(() => b.classList.remove('sr-lies'), lesen);
@@ -66,9 +78,10 @@ export function installSkillsRaum(ui, { vorlesen = () => {}, ton = () => {} } = 
     // lesen: so lange reagieren die Knöpfe noch nicht (ms)
     const wahl = (html, n, tasten = null, { text = '', lesen = 0 } = {}) => new Promise((fertig) => {
       fuss.innerHTML = html; let aus = false; const t0 = performance.now(), ab = t0 + lesen;
+      if (P && text) fuss.insertAdjacentHTML('afterbegin', '<div class="sr-zug">🎤 ' + esc(zug % 2 ? P.b : P.a) + ' antwortet</div>');
       if (lesen) { fuss.querySelectorAll('[data-i]').forEach((b) => { b.classList.add('sr-lies'); b.style.setProperty('--lesen', lesen + 'ms'); }); setTimeout(() => fuss.querySelectorAll('.sr-lies').forEach((b) => b.classList.remove('sr-lies')), lesen); }
       const los = (i) => { if (aus || performance.now() < ab) return; aus = true; document.removeEventListener('keydown', taste, true);
-        if (text) { runde.antworten++; if (performance.now() - t0 < minLesen(text)) runde.schnell++; }
+        if (text) { runde.antworten++; if (performance.now() - t0 < minLesen(text)) runde.schnell++; if (P) { nachAntwort = zug % 2 ? P.b : P.a; zug++; } }
         fertig(i); };
       const taste = (e) => {
         const m = /^Digit([1-9])$/.exec(e.code);

@@ -171,7 +171,7 @@ export default {
           ['lio', '22 von 60. Da steht’s schwarz auf weiß.'],
           { wahl: [
             { t: 'Ein echter Beweis – aber nur dafür, dass Mathe gerade schwer ist.', log: 'Die 22 Punkte als echten Beweis eingeordnet – aber nur für Mathe', skill: true },
-            { t: 'Beweis, dass Lio überhaupt dumm ist.', log: 'Die 22 Punkte als Beweis für „dumm in allem“ genommen', folge: 'Zu groß: Eine Mathearbeit sagt etwas über Mathe. Nicht über alles.', skill: false },
+            { t: 'Beweis, dass Lio überhaupt dumm ist.', log: 'Die 22 Punkte als Beweis für „dumm in allem“ genommen', folge: 'Zu grob: Eine Mathearbeit sagt etwas über Mathe. Nicht über alles.', skill: false },
             { t: 'Kein Beweis.', log: 'Die 22 Punkte gar nicht gezählt', folge: 'Doch, sie zählen – für Mathe. Ehrlich bleiben.', skill: false },
           ], frage: 'Was ist die Mathearbeit vor Gericht?' },
           ['lio', 'Und ich fühl mich dumm. Jeden Tag.'],
@@ -226,14 +226,14 @@ export default {
         zeilen: [
           ['lio', 'Und? Wie lautet das Urteil?'],
           { wahl: [
-            { t: '„Zu groß. Mathe ist gerade schwer – aber dumm bist du nicht.“', log: 'Urteil: Der Satz „Ich bin dumm“ ist zu groß', skill: true },
+            { t: '„Zu grob. Mathe ist gerade schwer – aber dumm bist du nicht.“', log: 'Urteil: Der Satz „Ich bin dumm“ ist zu grob', skill: true },
             { t: '„Stimmt leider.“', log: 'Urteil: Der Satz stimmt', folge: 'Die Beweise sagen etwas anderes.', skill: false },
-            { t: '„Stimmt nicht. Du bist ein Genie.“', log: 'Urteil: Lio ist ein Genie', folge: 'Lio: „Na ja. Das glaub ich auch nicht.“ Zu groß in die andere Richtung.', skill: false },
+            { t: '„Stimmt nicht. Du bist ein Genie.“', log: 'Urteil: Lio ist ein Genie', folge: 'Lio: „Na ja. Das glaub ich auch nicht.“ Zu grob in die andere Richtung.', skill: false },
           ] },
           ['lio', 'Und was sag ich mir stattdessen?'],
           { wahl: [
             { t: '„Mathe fällt mir schwer. Ich bleibe dran. Rechnen kann ich – an der Kasse.“', log: 'Einen neuen Satz gebaut: wahr, aktiv, jetzt', folge: 'Lio schreibt ihn auf die Mathearbeit. Ganz oben.', skill: true },
-            { t: '„Ich bin der Beste.“', log: 'Einen zu großen Satz gebaut', folge: 'Lio: „Den glaub ich mir nicht mal heute.“', skill: false },
+            { t: '„Ich bin der Beste.“', log: 'Einen zu groben Satz gebaut', folge: 'Lio: „Den glaub ich mir nicht mal heute.“', skill: false },
             { t: '„Irgendwann wird’s schon.“', log: 'Einen passiven Satz gebaut', folge: 'Lio: „Und was mach ich bis irgendwann?“', skill: false },
           ] },
           ['lio', 'Darf ich dich mal was fragen? Hast du auch einen Satz, der vor Gericht müsste?'],
@@ -271,14 +271,14 @@ export default {
         ],
       },
       {
-        ziel: 'Zur Bäckerei. Rosa hat sich verrechnet.', ort: 'Bäckerei', p: [0.4, 54.2], leute: {},
+        ziel: 'Zur Bäckerei. Rosa braucht einen Boten.', ort: 'Bäckerei', p: [0.4, 54.2], leute: {},
         zeilen: [
-          ['rosa', 'Zwei Euro zurück. Schönen Tag!'],
-          ['e', 'Es hätten drei sein müssen. Hinter dir warten fünf Leute.'],
+          ['rosa', 'Gut, dass du da bist! Sag Frau Kremer in der Kantine: Lieferung Donnerstag statt Mittwoch, die grünen Kisten zurück, die blauen nicht, außer die mit dem Aufkleber. Danke!'],
+          ['e', 'Du hast die Hälfte verstanden. Hinter dir warten fünf Leute.'],
           ['e', '(Der alte Satz:) „Lass. Ist doch peinlich.“ – (Dein neuer Satz:) „{f:satzText}“'],
           { wahl: [
-            { t: '„Entschuldigung, ich bekomme noch einen Euro.“', log: 'Situation 2: freundlich und klar etwas gesagt', folge: 'Rosa: „Oh! Danke, gut aufgepasst.“ Niemand hinter dir hat gelacht.', skill: true },
-            { t: 'Nichts sagen und gehen.', log: 'Situation 2: nichts gesagt', folge: 'Ein Euro weg. Und der alte Satz hat recht behalten – scheinbar.', skill: false },
+            { t: '„Entschuldigung, das hab ich nicht verstanden. Noch mal langsam?“', log: 'Situation 2: gesagt, dass ich es nicht verstanden habe', folge: 'Rosa: „Klar! Zu schnell, was?“ Sie schreibt es dir auf einen Zettel. Niemand hinter dir hat gelacht.', skill: true },
+            { t: 'Nicken und gehen.', log: 'Situation 2: genickt, obwohl ich es nicht verstanden habe', folge: 'Frau Kremer bekommt die halbe Nachricht. Am Donnerstag fehlen die Kisten. Und der alte Satz hat recht behalten – scheinbar.', skill: false },
           ] },
         ],
       },
