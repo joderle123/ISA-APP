@@ -25,18 +25,36 @@ export const SCHRITTE_N1 = [
     leute: { nouvelle: [-27, -24, Math.PI / 2], ...KLASSE },
     fertig: { reden: 'nouvelle', gespraech: 'n1_deutsch' } },
   // Neues Spielsystem (Baustein 1): die große Pause als freier Moment – echte Zeit, mehrere Fäden, man schafft nicht alles
-  { id: 'pause', kap: 1, tag: 'Montag', uhr: 10.0, titel: 'Große Pause', ziel: 'Fünf Minuten. Ben winkt. Rafa steht allein am Brunnen. Noah am Zaun. Hinten wird gekorbt.', marker: 'ben',
+  // Gesamtkonzept K1, Szene 4: Man kann nicht überall sein. Um 3:20 fotografiert jemand von der Treppe – genau dort, wo du gerade bist.
+  // Sehen kann man die Hand nur vom Brunnen und vom Zaun aus. Ab 4:00 sucht Chiara dich mit dem Stundenplan.
+  { id: 'pause', kap: 1, tag: 'Montag', uhr: 10.0, titel: 'Große Pause', ziel: 'Fünf Minuten. Ben winkt. Am Brunnen Rafa und Lina. Noah am Zaun. Hinten wird gekorbt.', marker: 'ben',
     start: { teleport: 'eingangHof' },
-    leute: { ben: [4, 14, 0.6, 'redet'], jo: [5.2, 15.4, -2.4, 'redet'], mila: [-20, 11.6, Math.PI, 'sitzt'], noah: [-14, 12.2, 2.6], ayla: [3, 17.6, -2.5, 'redet'], chiara: [2, 18.4, 0.6, 'redet'], rafa: [-6.4, 21.6, 2.2], yusuf: [27.4, 21.0, -1.2] },
+    leute: { ben: [4, 14, 0.6, 'redet'], jo: [5.2, 15.4, -2.4, 'redet'], mila: [-20, 11.6, Math.PI, 'sitzt'], noah: [-14, 12.2, 2.6], ayla: [3, 17.6, -2.5, 'redet'], chiara: [2, 18.4, 0.6, 'redet'], rafa: [-6.4, 21.6, 2.2], lina: [-10.6, 15.4, 2.59], yusuf: [27.4, 21.0, -1.2] },
     frei: { titel: 'Große Pause', dauer: 300,
       faeden: {
         ben: { gespraech: 'n1_umfrage', label: 'Ben und Jo am Handy' },
         rafa: { gespraech: 'n1_rafa', label: 'Junge am Brunnen', bis: 190 },
+        lina: { gespraech: 'n1_linaBrunnen', label: 'Lina zeichnet' },
         noah: { gespraech: 'n1_noahZaun', label: 'Noah allein' },
         yusuf: { gespraech: ['freiwurf', 'freiwurfDanach'], label: 'Basketball' },
         mila: { gespraech: 'mila', label: 'Mila auf der Bank' },
+        chiara: { gespraech: 'n1_chiaraPlan', label: 'Chiara sucht dich', ab: 240 },
       },
-      ereignisse: [{ t: 190, gespraech: 'n1_rafaSieht' }],
+      ereignisse: [
+        { t: 190, gespraech: 'n1_rafaSieht' },
+        { t: 200, schnapp: { id: 'duPause', von: [0, -1.2], hoehe: 2.4, abstand: 7, fov: 34, sonst: 'allein', gesehen: 'n1_treppeHand',
+          plaetze: [
+            { key: 'drinnen', zMax: 1.2, nah: true },
+            { key: 'noah', wer: 'noah', r: 3.4, sieht: true },
+            { key: 'brunnen', x: -8, z: 18, r: 5.2, sieht: true },
+            { key: 'mila', wer: 'mila', r: 3.2 },
+            { key: 'handy', wer: 'ben', r: 3.6 },
+            { key: 'korb', x: 29, z: 19, r: 9 },
+            { key: 'skate', x: -36, z: 12, r: 10 },
+          ],
+          auch: [{ id: 'auchNoah', wer: 'noah', von: [1.4, 1.45, -2.1], auf: [0, 1.05, 0], fov: 44 }, { id: 'auchLina', wer: 'lina', von: [-1.2, 1.6, 1.8], auf: [0, 1.25, 0], fov: 42 }] } },
+        { t: 240, toast: '<b>Chiara</b><span>läuft mit einem Zettel über den Hof. Sie sucht jemanden. Dich?</span>' },
+      ],
       ende: 'n1_pauseEnde' },
     fertig: { frei: true } },
   { id: 'kantine', kap: 1, tag: 'Montag', uhr: 12.17, titel: 'Mittag', ziel: 'Hol dir ein Essen an der Ausgabe.', marker: 'kremer',
@@ -46,6 +64,11 @@ export const SCHRITTE_N1 = [
   { id: 'tisch', kap: 1, tag: 'Montag', uhr: 12.25, titel: 'Wohin setzen?', ziel: 'Hinten links sitzt Noah allein. Am Fenster Ben und Jo.', marker: ['noah', 'ben'],
     leute: { kremer: [26.8, -9, -Math.PI / 2], noah: [10.75, -11.1, Math.PI / 2, 'sitzt'], ben: [16.65, -11.1, Math.PI / 2, 'sitzt'], jo: [16.65, -10.1, Math.PI / 2, 'sitzt'], mila: [21.05, -4.9, -Math.PI / 2, 'sitzt'], dario: [21.4, -13.2, 0.9], kenan: [21.0, -12.0, 1.2] },
     fertig: { eins: ['noah', 'ben'] } },
+  // Gesamtkonzept K1, Szene 7: Das Foto kommt. Es zeigt dich so, wie du in der Pause warst. Die Umfrage läuft live.
+  { id: 'k1_foto', kap: 1, tag: 'Montag', uhr: 13.5, titel: 'Das Foto', ziel: 'Mittagspause auf dem Hof. Überall summen die Handys.', marker: 'jo',
+    start: { teleport: 'eingangHof', gespraech: 'n1_foto' },
+    leute: { jo: [3.4, 8.6, 2.8, 'redet'], ben: [4.8, 9.6, -2.3], ayla: [-2.4, 9.8, 2.2, 'redet'], chiara: [-3.8, 9.0, 0.9], lina: [-10.6, 15.4, 2.59], hoffmann: [6.6, 4.6, -1.2], yusuf: [27.4, 21.0, -1.2] },
+    fertig: { nachStart: true } },
   { id: 'heimweg', kap: 1, tag: 'Montag', uhr: 15.5, titel: 'Nach Hause', ziel: 'Geh zum Bus.', marker: 'bus',
     start: { teleport: 'eingang' },
     leute: { fahrer: [-11.2, 44.6, -Math.PI / 2], lina: [-25.6, 44.4, 0.8], ben: [8, 36, 2.6], jo: [9.2, 35.4, -2.2] },
@@ -92,13 +115,49 @@ const CHAT_NEU = {
   ],
 };
 
+// ---------- Wo warst du in der großen Pause? (Schnappschuss) – Bildbeschreibung, Noahs Sicht, Rückblick ----------
+const PAUSE_BILD = {
+  noah: 'Du, neben Noah am Zaun. Von schräg oben.', brunnen: 'Du, am Brunnen. Allein. Von schräg oben.', mila: 'Du, bei Mila auf der Bank. Von oben.',
+  handy: 'Du, mit Ben und Jo über ein Handy gebeugt. Von oben.', korb: 'Du, am Korb. Mitten im Wurf.', skate: 'Du, an der Skate-Ecke. Von weit weg.',
+  drinnen: 'Du, an einer Tür. Von hinten.', allein: 'Du, mitten auf dem Hof. Allein. Von schräg oben.',
+};
+const PAUSE_SATZ = {
+  noah: 'In der großen Pause hast du bei Noah am Zaun gesessen.', brunnen: 'In der großen Pause warst du am Brunnen.', mila: 'In der großen Pause warst du bei Mila auf der Bank.',
+  handy: 'In der großen Pause warst du bei Ben und Jo am Handy.', korb: 'In der großen Pause warst du am Korb.', skate: 'In der großen Pause warst du an der Skate-Ecke.',
+  drinnen: 'In der großen Pause warst du drinnen.', allein: 'In der großen Pause warst du allein unterwegs.',
+};
+const NOAH_SIEHT = {
+  noah: ['Hinten links. Hat sich in der Pause zu mir gesetzt.', 'Einfach so. Das macht hier keiner.', 'Ich schau nicht hin. Sonst sieht es aus, als würde ich warten.'],
+  korb: ['Hinten links war am Korb. Bei Yusuf.', 'Klar. Am ersten Tag geht man dahin, wo es laut ist.', 'Hätte ich auch gemacht. Wenn ich mich trauen würde.'],
+  handy: ['Hinten links stand bei Ben und Jo. Am Handy.', 'Die lachen immer über jemanden.', 'Mal sehen, wann ich dran bin.'],
+  brunnen: ['Hinten links stand am Brunnen. Allein.', 'Ich am Zaun, Hinten links am Brunnen. Zwanzig Meter.', 'Komisch, dass das keiner zusammenzählt.'],
+  mila: ['Hinten links saß bei Mila. Die redet sonst mit keinem.', 'Vielleicht ist Hinten links okay.'],
+  skate: ['Hinten links war bei den Großen an der Skate-Ecke.', 'Mutig. Oder egal.'],
+  drinnen: ['Hinten links war in der Pause drinnen.', 'Wer am ersten Tag reingeht, hat einen Grund.'],
+  allein: ['Hinten links ist in der Pause einfach herumgelaufen.', 'Kenn ich. Wenn man nicht weiß, wohin, läuft man.', 'Dann sieht es aus, als hätte man ein Ziel.'],
+};
+// Rückblick in Bildern (Gesamtkonzept K1): echte Bilder aus dem eigenen Spiel. „Das war auch“: was man nicht gesehen hat.
+export const RUECKBLICK_N1 = (m, S = {}) => {
+  const b = S.bemerkt || {}, platz = m.duPausePlatz;
+  const auch = !m.frei_pause_noah && platz !== 'noah' ? { id: 'auchNoah', titel: 'Das war auch', text: 'Noah am Zaun. Die ganze Pause allein.', auch: true }
+    : !b.linaBlick ? { id: 'auchLina', titel: 'Das war auch', text: 'Lina am Brunnen. Sie schaut immer wieder zur Treppe.', auch: true } : null;
+  return [
+    { id: 'duAnkunft', titel: 'Ankunft', text: 'Montag, 7:25. Die Haltestelle.' },
+    platz ? { id: 'duPause', titel: 'Dein Platz in der Pause', text: (PAUSE_SATZ[platz] || '') + ' Genau dieses Bild hat @annexe.cam gepostet.' } : null,
+    { id: 'rafaBank', titel: 'Das erste Foto', text: 'Rafa, eingeschlafen an der Haltestelle. Von heute früh.' },
+    auch,
+    { id: 'duAbend', titel: 'Nachmittag an der Haltestelle', text: 'Der Bus nach Hause.' },
+  ].filter(Boolean);
+};
+
 // ---------- Live-Chat Montagabend: Ben leitet weiter (Fable K1, Sz. 5) ----------
 const POST_TABLETT = (m) => ({
   titel: '7P2', mitglieder: 21, dauer: 30,
   nachrichten: [
     { nach: 0.5, system: true, text: 'Ben hat einen Beitrag weitergeleitet.' },
-    { nach: 1.4, wer: '@annexe.cam', bild: 'Du, in der Kantine, mit dem Tablett. Von unten.', bildId: 'duTablett', text: 'neu in der 7p2. cool oder cringe? 👀', lacher: { start: 3, proSek: 0.35, stopp: ['klar', 'gemeldet'] } },
-    { nach: 3.6, wer: 'Jo', text: '61% cringe gerade' },
+    { nach: 1.4, wer: '@annexe.cam', bild: PAUSE_BILD[m.duPausePlatz] || PAUSE_BILD.allein, bildId: 'duPause', text: 'neu hier. cool oder cringe? 👀', lacher: { start: 3, proSek: 0.35, stopp: ['klar', 'gemeldet'] } },
+    { nach: 3.6, wer: 'Jo', text: m.selbstAbgestimmt ? 'hinten links hat selbst abgestimmt 😂' : '61% cringe gerade' },
+    ...(m.fotoTidderich ? [{ nach: 4.6, wer: 'Ayla', text: 'tidderich hat heute was von „fotos ohne fragen“ gesagt. zufall?' }] : []),
     { nach: 5.6, wer: 'Mila', text: 'ben. lösch das.' },
     { nach: 7.2, system: true, text: 'gesehen von 17' },
     ...(m.abgestimmt ? [{ nach: 9.4, wer: 'Jo', text: 'heute morgen war der aus dem bus dran. jetzt hinten links' }] : [{ nach: 9.4, wer: 'Jo', text: 'chill. ist nur ein klick' }]),
@@ -224,6 +283,7 @@ export const GESPRAECHE_N1 = {
     ['dario', 'Annexe ist da hoch. Dann links. Die große Tür.'],
     ['erzaehler', 'Die Rollen an seinem Brett glänzen. Wie neu. Sein Handy hat einen Sprung im Glas.'],
     ['dario', 'Dario. 7P1. Ich nehm immer den ersten Bus.'],
+    { foto: 'duAnkunft', wer: 'du', von: [2.0, 1.55, 2.4], auf: [0, 1.15, 0], fov: 46 },
     { tu: 'stundenplanTipp' },
   ],
   n1_klasse: [
@@ -296,6 +356,7 @@ export const GESPRAECHE_N1 = {
     { handy: null },
     ['erzaehler', 'Jo scrollt weiter. Der nächste Post.'],
     { wenn: (m) => m.rafaGezeigt, dann: [['erzaehler', 'Ben schaut zum Brunnen. Er sagt nichts. Aber er lacht auch nicht mehr.']] },
+    { pult: null },
   ],
   // Pause: Rafa am Brunnen (nur bis kurz vor dem Moment, in dem er das Foto sieht)
   n1_rafa: [
@@ -321,6 +382,41 @@ export const GESPRAECHE_N1 = {
         ['erzaehler', 'Rafa steckt die Hände in die Jacke. Er geht rein. Allein.'],
       ] },
   ],
+  // Lina am Brunnen: Hinschauen. Wohin schaut sie? (öffnet später „Zu Lina gehen“)
+  n1_linaBrunnen: [
+    ['erzaehler', 'Lina lehnt am Brunnen. Ein Heft auf dem Knie. Sie zeichnet.'],
+    { blick: { titel: 'Lina', blicke: 2, text: 'Sie hat dich noch nicht bemerkt. Zwei Blicke. Was siehst du?',
+      personen: [{ wer: 'lina', name: 'Lina', signale: [
+        { wo: 'Augen', t: 'Sie schaut immer wieder hoch. Nicht zu dir. Zur Treppe am Eingang.', key: 'linaBlick' },
+        { wo: 'Hände', t: 'Jedes Mal, wenn sie hochschaut, bleibt der Stift stehen.' },
+        { wo: 'Heft', t: 'Der Hof, von oben gezeichnet. Auf der Treppe eine kleine Figur, ganz dunkel schraffiert.', key: 'linaZeichnung' } ] }],
+      uebersehen: [{ key: 'linaBlick', t: 'Lina schaut immer wieder zur Treppe.' }] } },
+    ['lina', '(klappt das Heft halb zu) … Hi.'],
+    { wahl: [
+      { t: '„Was zeichnest du?“', dann: [['lina', 'Nichts. Nur den Hof.'], ['erzaehler', 'Das Heft bleibt halb zu.']] },
+      { t: '„Wen suchst du da oben?“', bemerkt: 'linaBlick', weil: 'Weil du gesehen hast, wohin sie schaut.', herz: { lina: 1 }, merke: 'linaTreppeGefragt',
+        dann: [['lina', '(schaut dich zum ersten Mal an) … Niemand.'], ['lina', 'Da steht manchmal jemand. Bleib kurz hier. Bitte.']] },
+      { t: '(Danebenstellen. Nichts sagen.)', herz: { lina: 1 }, merke: 'linaDaneben', dann: [['erzaehler', 'Ihr steht da. Sie zeichnet weiter. Einmal schiebt sie das Heft ein Stück zu dir.']] },
+    ] },
+  ],
+  // Um 3:20 – nur vom Brunnen und vom Zaun aus zu sehen
+  n1_treppeHand: [
+    ['erzaehler', 'Oben auf der Treppe, halb hinter der Säule: eine Hand. Ein Handy. Es zeigt hier rüber.'],
+    ['erzaehler', 'Auf dich?'],
+    ['erzaehler', 'Dann ist die Hand weg. Die Tür fällt zu.'],
+    { bemerke: 'treppeHand' },
+    { wenn: (m) => m.frei_pause_lina, dann: [['lina', '(leise, ohne aufzuschauen) Du hast es auch gesehen.']] },
+    { wenn: (m) => m.duPausePlatz === 'noah', dann: [['noah', '(leise) Das macht der jeden Tag. Oder die. Keine Ahnung.']] },
+  ],
+  // Ab 4:00: Chiara mit dem Stundenplan
+  n1_chiaraPlan: [
+    ['chiara', 'Da bist du! Ich such dich seit zwei Minuten.'],
+    ['chiara', 'Dein Stundenplan. Von Mme Tidderich. Sport ist Mittwoch, nicht Donnerstag. Im Netz steht es falsch.'],
+    { wahl: [
+      { t: '„Danke. Echt.“', herz: { chiara: 1 }, merke: 'chiaraPlan', dann: [['chiara', 'Gern. Bei Fragen: mich fragen. Nicht Jo.']] },
+      { t: '„Woher weißt du das alles?“', herz: { chiara: 1 }, merke: 'chiaraPlan', dann: [['chiara', '(zuckt mit den Schultern) Einer muss es ja wissen.'], ['erzaehler', 'Sie sagt es wie einen Witz. Es klingt nicht wie einer.']] },
+    ] },
+  ],
   n1_noahZaun: [
     ['erzaehler', 'Noah sitzt am Zaun. Ein Buch auf den Knien. Er liest nicht.'],
     ['noah', '(ohne aufzuschauen) Der Platz ist frei. Falls du fragst.'],
@@ -334,13 +430,17 @@ export const GESPRAECHE_N1 = {
     ['erzaehler', 'Es klingelt. Die Pause ist vorbei.'],
     { wenn: (m) => !m.frei_pause_noah, dann: [['erzaehler', 'Noah steht als Letzter auf. Keiner hat ihn heute angesprochen.']] },
     { wenn: (m) => !m.frei_pause_rafa && !m.rafaGezeigt, dann: [['erzaehler', 'Rafa ist schon drin. Die Kapuze auf.']] },
+    { wenn: (m) => !m.frei_pause_chiara, dann: [['chiara', '(im Vorbeigehen, knapp) Dein Stundenplan. Hier. Ich hab dich gesucht.'], { tu: 'n1_chiaraKurz' }] },
   ],
   n1_kantine: [
     ['erzaehler', 'Es riecht nach Suppe und nassem Boden.'],
     ['kremer', 'Suppe oder Pasta? … Hier.'],
     { tu: 'tablett' },
-    { foto: 'duTablett', wer: 'du', von: [0.7, 0.45, 1.4], auf: [0, 1.45, 0], fov: 52 },
-    ['erzaehler', 'Du stehst mit dem Tablett. Drei Sekunden. Länger nicht.'],
+    // Andere Sicht (Gesamtkonzept K1, Szene 6): ein paar Sekunden durch Noahs Augen. Was er gesehen hat, hängt davon ab, wo du in der Pause warst.
+    { sicht: (m) => ({ wer: 'noah', name: 'Noah', auf: 'du', gedanken: NOAH_SIEHT[m.duPausePlatz] || NOAH_SIEHT.allein }) },
+    { wenn: (m) => m.duPausePlatz === 'korb' || m.duPausePlatz === 'handy', dann: [['erzaehler', 'Am Fenster winkt Ben. Du warst heute in seiner Pause. Das zählt hier.']] },
+    { wenn: (m) => m.duPausePlatz === 'noah', dann: [['erzaehler', 'Hinten links nimmt Noah seinen Rucksack vom Stuhl neben sich. Ohne aufzuschauen.']] },
+    { wenn: (m) => !['korb', 'handy', 'noah'].includes(m.duPausePlatz), dann: [['erzaehler', 'Keiner winkt. Du stehst mit dem Tablett. Drei Sekunden. Länger nicht.']] },
     ['kremer', '(nickt nach hinten) Hinten links ist frei.'],
   ],
   tisch_noah: [
@@ -361,8 +461,41 @@ export const GESPRAECHE_N1 = {
     { tu: 'n1_tischBen' },
     { tu: 'gegessen' },
   ],
+  // Montag 13:30, Hof: Das Foto kommt (Gesamtkonzept K1, Szene 7). Wer sitzt am Steuer? Ein Werkzeug zum Senken gibt es noch nicht.
+  n1_foto: [
+    ['erzaehler', '13:30. Die Sonne ist rausgekommen. Der Hof ist voll.'],
+    ['erzaehler', 'Dann summt es. Bei Jo. Bei Ayla. In deiner Tasche.'],
+    { handy: (m) => ({ wer: '@annexe.cam', wann: 'gerade eben', fotoId: 'duPause', alt: PAUSE_BILD[m.duPausePlatz] || PAUSE_BILD.allein,
+      text: 'neu hier. cool oder cringe? 👀', umfrage: { a: 'cringe', b: 'cool', pa: 57, stimmen: 9, live: true } }) },
+    { pult: { g: 'Scham', w: 6 } },
+    ['jo', '(laut) Hinten links! Bist du das?'],
+    ['erzaehler', 'Um dich herum schauen alle aufs Handy. Dann zu dir. Dann wieder aufs Handy.'],
+    { wenn: (m) => m.duPausePlatz === 'brunnen' || m.duPausePlatz === 'noah', dann: [['erzaehler', 'Von schräg oben. Von der Treppe aus.']] },
+    ['erzaehler', 'Dein Hals wird heiß. Wer sitzt jetzt am Steuer?'],
+    { warum: true, wahl: [
+      { t: 'Selbst abstimmen: „cool“. Mitspielen, bevor es die anderen tun.', merke: 'selbstAbgestimmt', herz: { jo: 1 },
+        dann: [{ pult: { plus: -1 } }, ['jo', '(nickt) Respekt. Selbst abgestimmt.'], ['erzaehler', 'Der Account hat jetzt eine Stimme mehr. Deine.']] },
+      { t: 'Handy wegstecken. Weitermachen, als wär nichts.', merke: 'fotoWeg',
+        dann: [{ pult: { plus: -2 } }, ['erzaehler', 'Das Handy ist in der Tasche. Es summt weiter. Du schaust nicht hin.'], ['erzaehler', 'Innen wird es ruhiger. Wer da schreibt, weißt du nicht.']] },
+      { t: 'Bildschirmfoto. Genau hinschauen.', merke: 'fotoBeweis',
+        dann: [{ pult: { plus: 2 } }, ['erzaehler', 'Klick. 13:31. Du zoomst rein.'], ['erzaehler', 'Von oben aufgenommen. Wer das gemacht hat, stand höher als du.'], ['erzaehler', 'Zwanzig Sekunden starrst du aufs Display. Jo lacht. Über das Foto? Über dich?']] },
+      { t: 'Zu Lina gehen.', bemerkt: 'linaBlick', weil: 'Weil du gesehen hast, wohin Lina in der Pause geschaut hat.', merke: 'fotoLina', herz: { lina: 2 }, staerke: 'mut',
+        dann: [['jo', '(hinter dir) Läuft weg. Okay.'], ['erzaehler', 'Lina sitzt am Brunnen. Das Heft ist zu.'], ['lina', '(leise) Die Treppe. Oder?'], ['erzaehler', 'Mehr sagt sie nicht. Aber sie rückt ein Stück, damit du dich setzen kannst.']] },
+      { t: 'Zu Mme Tidderich gehen und ihr das Handy zeigen.', merke: 'fotoTidderich', staerke: 'hilfe',
+        dann: [['hoffmann', '(schaut lange aufs Display) Danke, dass du mir das zeigst.'], ['hoffmann', 'Das ist nicht in Ordnung. Ich kümmere mich. Ohne dich vor allen zu nennen.'], ['jo', '(leise, hinter dir) Petze?'], ['erzaehler', 'Mme Tidderich schreibt sich die Uhrzeit auf. 13:32.']] },
+    ] },
+    { handy: null },
+    { wenn: (m) => m.chiaraKurz, dann: [['chiara', '(ohne aufzuschauen) Melden geht über die drei Punkte. Steht überall.']] },
+    { wenn: (m) => m.chiaraPlan && !m.fotoTidderich, dann: [['chiara', 'Ich hab es gemeldet. Nur dass du es weißt.']] },
+    ['erzaehler', 'Es klingelt. Die Umfrage läuft weiter. Auch ohne dich.'],
+    { pult: null },
+  ],
   // Montagabend: Jetzt bist du das Foto (Live-Chat), dann Ben privat
   n1_heimweg: [
+    { foto: 'duAbend', wer: 'du', von: [-2.2, 1.6, 2.6], auf: [0, 1.1, 0], fov: 46 },
+    // Andere Sicht (Gesamtkonzept K1, Szene 8): Lina an der Haltestelle. Sie hat mehr gesehen als du.
+    { sicht: (m) => ({ wer: 'lina', name: 'Lina', auf: 'du', gedanken: ['Die Treppe. Eine Hand. Ein Handy.', 'Ich weiß, wer da stand. Glaub ich.',
+      m.fotoLina ? 'Hinten links ist zu mir gekommen. Mitten in der Umfrage.' : 'Wenn ich was sage, bin ich die Nächste.'] }) },
     ['erzaehler', '15:30. Der Bus ist voll. Du stehst.'],
     { blende: 'Montag · 19:30' },
     ['erzaehler', 'Dein Handy summt. Der Klassenchat.'],
@@ -425,6 +558,7 @@ export const GESPRAECHE_N1 = {
     ['erzaehler', 'Vom Hof her klingelt es. Dario steht nicht auf.'],
     ['dario', 'Geh schon. Ich komm gleich.'],
     { pult: { plus: -2 } },
+    { pult: null },
   ],
   // Freitag: Mittwoch war jemand anderes dran. Um 23:07 die Nummer (Entscheidung B: Ton und Screenshot)
   n1_freitag: [
@@ -505,5 +639,6 @@ export const tunN1 = (c) => ({
   // Rest der Deutschstunde: läuft im Hintergrund, außer die Lehrperson hat den Unterricht in der Geschichte eingeschaltet
   n1_deutschRest: () => ((c.ui.einstellungen && c.ui.einstellungen().unterricht) ? [] : [{ blende: 'Deutsch. 50 Minuten. Dann klingelt es.' }]),
   n1_tischNoah: () => { c.S.merke.kantineNoah = true; return []; },
+  n1_chiaraKurz: () => { c.S.merke.chiaraKurz = true; return []; },
   n1_tischBen: () => { c.S.merke.kantineBen = true; return []; },
 });

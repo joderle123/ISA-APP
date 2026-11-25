@@ -4,6 +4,12 @@ const eins = (m, paare) => { for (const [f, t] of paare) if (typeof f === 'funct
 
 const KAP = {
   1: (m) => [
+    eins(m, [[(x) => x.duPausePlatz === 'noah', 'In der großen Pause hast du bei Noah am Zaun gesessen.'], [(x) => x.duPausePlatz === 'brunnen', 'In der großen Pause warst du am Brunnen.'],
+      [(x) => x.duPausePlatz === 'mila', 'In der großen Pause warst du bei Mila auf der Bank.'], [(x) => x.duPausePlatz === 'handy', 'In der großen Pause warst du bei Ben und Jo am Handy.'],
+      [(x) => x.duPausePlatz === 'korb', 'In der großen Pause warst du am Korb.'], [(x) => x.duPausePlatz === 'skate', 'In der großen Pause warst du an der Skate-Ecke.'],
+      [(x) => x.duPausePlatz === 'drinnen', 'In der großen Pause warst du drinnen.'], [(x) => x.duPausePlatz === 'allein', 'In der großen Pause warst du allein unterwegs.']]),
+    eins(m, [['selbstAbgestimmt', 'Als das Foto von dir kam, hast du selbst abgestimmt.'], ['fotoWeg', 'Als das Foto von dir kam, hast du das Handy weggesteckt.'], ['fotoBeweis', 'Vom Foto hast du ein Bildschirmfoto gemacht.'],
+      ['fotoLina', 'Als das Foto kam, bist du zu Lina gegangen.'], ['fotoTidderich', 'Das Foto hast du Mme Tidderich gezeigt.']]),
     eins(m, [['abgestimmt', 'Bei der Umfrage über den Jungen aus dem Bus hast du geklickt.'], ['nichtAbgestimmt', 'Bei der Umfrage hast du nicht geklickt.']]),
     eins(m, [['darioFotoGeleugnet', 'Dario gegenüber hast du so getan, als kennst du das Foto nicht.']]),
     eins(m, [['kantineNoah', 'In der Kantine hast du dich zu Noah gesetzt.'], ['kantineBen', 'In der Kantine hast du dich zu Ben und Jo gesetzt.']]),
@@ -84,7 +90,7 @@ export const chronik = (kap, m = {}) => ((KAP[kap] || (() => []))(m) || []).filt
 
 // Fragen für das Gespräch mit der Lehrperson oder in der Klasse (offen, kein richtig/falsch). Erst die Entscheidungen ansehen, dann fragen.
 export const GESPRAECH = {
-  1: 'Warum klicken Leute bei so einer Umfrage mit? Was hätte es gebraucht, nicht zu klicken?',
+  1: 'Wo warst du in der großen Pause – und was hast du deshalb nicht gesehen? Warum klicken Leute bei so einer Umfrage mit?',
   2: 'Warum tut eine Liste weh, auch wenn man gar nicht draufsteht? Was kannst du gut, auch wenn es keiner sieht?',
   3: 'Was war auf Milas Wand eine echte Spur – und was nur ein Gefühl?',
   4: 'Was hat dir geholfen, als die Zahl auf Rot war? Hast du gemerkt, wann sie gestiegen ist?',

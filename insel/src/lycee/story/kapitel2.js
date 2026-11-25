@@ -293,7 +293,7 @@ export const GESPRAECHE_N2 = {
     { tu: 'n2_noahFreitag' },
     ['erzaehler', 'Freitag, 15:50. Du wartest auf den Bus.'],
     ['erzaehler', 'In deiner Jackentasche ist etwas, das vorher nicht da war. Ein gefaltetes Blatt.'],
-    ['erzaehler', 'Eine Bleistiftzeichnung. Du, mit dem Tablett. Erster Tag.'],
+    ['erzaehler', 'Eine Bleistiftzeichnung. Du, in der großen Pause. Erster Tag. Von oben, von der Treppe aus.'],
     ['erzaehler', 'Am Bildrand eine Hand. Ein Handy. Ein geflochtenes Armband.'],
     ['erzaehler', 'Kein Name.'],
     { tu: 'n2_zeichnung' },

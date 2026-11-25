@@ -75,7 +75,7 @@ import { FACHLEHRER, PERSONAL } from './story/personal.js';
 import { FR_LEKTIONEN } from './story/fachstunden.js';
 if (!(LEKTIONEN.francais || []).length) LEKTIONEN.francais = FR_LEKTIONEN;   // Französisch fürs Spiel (handgeschrieben, story/fachstunden.js)
 import { tunN2, ORTE_N2 } from './story/kapitel2.js';
-import { tunN1 } from './story/kapitel1.js';
+import { tunN1, RUECKBLICK_N1 } from './story/kapitel1.js';
 import { tunN3, ORTE_N3 } from './story/kapitel3.js';
 import { tunN4 } from './story/kapitel4.js';
 import { tunN5 } from './story/kapitel5.js';
@@ -1262,6 +1262,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         pultSetzen(z.pult);
       } else if ('handy' in z) {   // Handy, das jemand hinhält: { handy: { wer, foto: { von, auf, wer }, text, umfrage } } – { handy: null } weg
         if (!z.handy) ui.handyBild(null);
+        else if (typeof z.handy === 'function') { const h = z.handy(S.merke, S); ui.handyBild({ ...h, text: ersetze(h.text || ''), bild: h.fotoId ? fotoHolen(h.fotoId) : h.bild || '' }); }
         else ui.handyBild({ ...z.handy, text: ersetze(z.handy.text || ''), bild: z.handy.foto ? fotoAusWelt(z.handy.foto) : z.handy.fotoId ? fotoHolen(z.handy.fotoId) : z.handy.bild || '' });
       } else if (z.blick) {   // Hinschauen: unten die Leiste, die Kamera geht nah an die gewählte Person
         ui.dialogZu();
@@ -1272,7 +1273,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         const BL = S.blickLog = S.blickLog || {}; BL[kap] = (BL[kap] || []).concat([{ titel: z.blick.titel || 'Hinschauen', gesehen: r.texte.map((x) => x.t), wichtig: alle.length, bemerkt: r.gesehen.length, uebersehen: (z.blick.uebersehen || []).filter((u) => !r.gesehen.includes(u.key)).map((u) => u.t) }]);
         steuerung.fokus = null; sichern();
       } else if (z.sicht) {   // Andere Sicht (Baustein 5): ein paar Sekunden durch die Augen einer anderen Figur
-        await andereSicht(z.sicht);
+        await andereSicht(typeof z.sicht === 'function' ? z.sicht(S.merke, S) : z.sicht);
       } else if (z.foto) {   // Foto in der Welt aufnehmen (still), später auf einem Handy zeigen: { foto: 'id', wer, von, auf }
         FOTOS[z.foto] = fotoAusWelt(z); try { sessionStorage.setItem('lycee.foto.' + z.foto, FOTOS[z.foto]); } catch (e) { /* voll */ }
       } else if (z.bemerke) {   // etwas wurde bemerkt (z. B. im Bus hingeschaut) – öffnet später Antworten mit bemerkt: 'key'
@@ -1320,6 +1321,9 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       } else if (z.tu) {
         const mehr = await TUN[z.tu]?.();
         if (Array.isArray(mehr) && mehr.length) await spiele(mehr);
+      } else if (typeof z.wenn === 'function' && (z.dann || z.sonst)) {   // bedingte Zeilen: { wenn: (merke) => …, dann: [...], sonst: [...] }
+        const zs = z.wenn(S.merke, S) ? z.dann : z.sonst;
+        if (Array.isArray(zs) && zs.length) await spiele(zs);
       }
     }
   }
@@ -1714,7 +1718,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       const bf = besteFreunde()[0];
       audio.play('unlock'); setTimeout(() => audio.play('chime'), 350);
       const woche = chronik(kap, S.merke); S.chronik = { ...(S.chronik || {}), [kap]: woche }; sichern();
-      const wahl = await ui.ende({ ...bilanz(), kap, chronik: woche, brief: bf ? { von: LEUTE[bf].name, farbe: LEUTE[bf].farbe, text: nachricht(bf, kap) } : null, ueberschrift: ({ 1: 'Die erste Woche', 2: 'Die Liste', 3: 'Von links unten', 4: 'Die Woche vor den Ferien', 5: 'Die Admin-Woche', 6: 'Die Sprachnachricht', 7: 'Wer geblieben ist', 8: 'Nicht echt', 9: 'Haltestelle, früh', 10: 'Hinter der Kamera' })[kap] || KAPITEL[kap],
+      const bilder = (RUECKBLICK[kap] ? RUECKBLICK[kap](S.merke, S) : []).map((b) => ({ ...b, url: fotoHolen(b.id) })).filter((b) => b.url);
+      const wahl = await ui.ende({ ...bilanz(), kap, chronik: woche, bilder, brief: bf ? { von: LEUTE[bf].name, farbe: LEUTE[bf].farbe, text: nachricht(bf, kap) } : null, ueberschrift: ({ 1: 'Die erste Woche', 2: 'Die Liste', 3: 'Von links unten', 4: 'Die Woche vor den Ferien', 5: 'Die Admin-Woche', 6: 'Die Sprachnachricht', 7: 'Wer geblieben ist', 8: 'Nicht echt', 9: 'Haltestelle, früh', 10: 'Hinter der Kamera' })[kap] || KAPITEL[kap],
         weiter: weiterIdx >= 0 ? 'Weiter: Kapitel ' + (kap + 1) + ' „' + KAPITEL[kap + 1] + '“' : '',
         // Haken fürs nächste Kapitel (kein Spoiler, nur die Frage)
         frage: (() => { const sit = Object.entries(SZENEN).find(([id]) => S.merke['sitKap_' + id] === kap && S.merke['sit_' + id]); return sit ? (REFLEXION[kap] ? REFLEXION[kap] + ' · ' : '') + 'Diese Woche: ' + sit[1].titel[1] + '. ' + sit[1].frage : REFLEXION[kap] || ''; })(), vorschau: weiterIdx >= 0 ? ({ 1: 'Eine Liste. Fünf Plätze. Wer steht drauf?', 2: 'Ein Satz über Mila. Und ein heller Streifen, unten links.',
@@ -2070,7 +2075,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     ui.dialogZu();
     const altFrei = steuerung.frei; steuerung.kameraAus = true; steuerung.frei = false; input.setEnabled(false);
     const kopf = p.f.group.position.clone().add(new THREE.Vector3(0, (p.def.hoehe || 1.6) * 0.93, 0));
-    const zielP = typeof def.auf === 'string' && leute[def.auf] ? leute[def.auf].f.group.position.clone().add(new THREE.Vector3(0, 1.3, 0))
+    const zielP = def.auf === 'du' && spieler ? spieler.group.position.clone().add(new THREE.Vector3(0, 1.2, 0))
+      : typeof def.auf === 'string' && leute[def.auf] ? leute[def.auf].f.group.position.clone().add(new THREE.Vector3(0, 1.3, 0))
       : new THREE.Vector3(kopf.x + (def.auf || [0, 0, 3])[0], (def.auf || [0, 1.4])[1], kopf.z + (def.auf || [0, 0, 3])[2]);
     const sichtbar = p.f.group.visible; p.f.group.visible = false;   // die eigene Figur nicht im Bild
     const el = document.createElement('div'); el.className = 'ly-sicht'; el.innerHTML = '<div class="ly-sicht-name">👁 ' + esc((def.name || p.def.name) + 's Sicht') + '</div><div class="ly-sicht-text"></div>';
@@ -2104,7 +2110,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   function freiZeigen() {
     const L = freiLauf; if (!L) { ui.freiUhr(null); return; }
     const t = L.dauer - L.rest;
-    ui.freiUhr({ titel: L.def.titel || 'Freie Zeit', rest: L.rest, faeden: Object.entries(L.def.faeden).map(([id, f]) => ({ label: f.label || id, besucht: !!L.besucht[id], vorbei: !L.besucht[id] && f.bis != null && t > f.bis })) });
+    ui.freiUhr({ titel: L.def.titel || 'Freie Zeit', rest: L.rest, faeden: Object.entries(L.def.faeden).filter(([id, f]) => L.besucht[id] || t >= (f.ab || 0)).map(([id, f]) => ({ label: f.label || id, besucht: !!L.besucht[id], vorbei: !L.besucht[id] && f.bis != null && t > f.bis })) });
   }
   async function freiFaden(id) {
     const L = freiLauf; if (!L || L.ende) return false;
@@ -2119,7 +2125,13 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     L.rest -= dt * (ui.zeitlos ? 0.5 : 1);
     if (Math.floor(L.rest) !== L.angezeigt) { L.angezeigt = Math.floor(L.rest); freiZeigen(); }
     const t = L.dauer - L.rest, e = (L.def.ereignisse || [])[L.ereignis];
-    if (e && t >= e.t) { L.ereignis++; await gespraech(typeof e.gespraech === 'string' ? GESPRAECHE[e.gespraech] : e.gespraech); return; }
+    if (e && t >= e.t) {
+      L.ereignis++;
+      if (e.wenn && !e.wenn(S.merke, S)) return;
+      if (e.schnapp) { await schnappschuss(e.schnapp); return; }
+      if (e.toast) { ui.toast(e.toast); return; }
+      await gespraech(typeof e.gespraech === 'string' ? GESPRAECHE[e.gespraech] : e.gespraech); return;
+    }
     if (L.rest <= 0) {
       L.ende = true; ui.freiUhr(null);
       const kap = L.st.kap || 1, alle = Object.entries(L.def.faeden);
@@ -2131,8 +2143,27 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     }
   }
   const FOTOS = {};   // Fotos aus der Welt (dataURL), für später: Handy-Karte, Rückblick
+  const RUECKBLICK = { 1: RUECKBLICK_N1 };   // Rückblick in Bildern je Kapitel: (merke) => [{ id, titel, text }]
   const fotoHolen = (id) => FOTOS[id] || (() => { try { return sessionStorage.getItem('lycee.foto.' + id) || ''; } catch (e) { return ''; } })();
   const bemerkt = (k) => [].concat(k).every((x) => !!(S.bemerkt || {})[x]);
+  const fotoMerken = (id, url) => { if (!url) return; FOTOS[id] = url; try { sessionStorage.setItem('lycee.foto.' + id, url); } catch (e) { /* voll */ } };
+  // Schnappschuss (Gesamtkonzept K1): Jemand fotografiert dich – genau dort, wo du gerade bist. Von einem festen Punkt aus (z. B. der Treppe).
+  // { id, von: [x, z] Kamera-Richtung, plaetze: [{ key, x, z | wer, r, sieht }], sonst, gesehen: Gespräch, wenn man es bemerkt,
+  //   auch: [{ id, wer, von, auf, fov }] – weitere stille Fotos (z. B. „Das war auch“ für den Rückblick) }
+  async function schnappschuss(d) {
+    if (!spieler) return;
+    const p = spieler.group.position;
+    const wo = (q) => (q.wer && leute[q.wer] && leute[q.wer].f.group.visible ? leute[q.wer].f.group.position : q.x != null ? { x: q.x, z: q.z } : null);
+    const pl = (d.plaetze || []).find((q) => { if (q.zMax != null) return p.z < q.zMax; const o = wo(q); return o && Math.hypot(o.x - p.x, o.z - p.z) < (q.r || 3); }) || { key: d.sonst || 'allein' };
+    S.merke[d.id + 'Platz'] = pl.key;
+    const dx = d.von[0] - p.x, dz = d.von[1] - p.z, L = Math.hypot(dx, dz) || 1;
+    const nah = !!pl.nah || L > (d.weit || 45), a = nah ? 2.4 : Math.min(d.abstand || 7, Math.max(2.6, L - 1));
+    const ux = nah ? -Math.sin(spieler.group.rotation.y) : dx / L, uz = nah ? -Math.cos(spieler.group.rotation.y) : dz / L;
+    fotoMerken(d.id, fotoAusWelt({ wer: 'du', von: [ux * a, nah ? 1.7 : d.hoehe || 2.3, uz * a], auf: [0, 1.0, 0], fov: nah ? 50 : d.fov || 36, filter: 'saturate(1.05) contrast(1.06)' }));
+    for (const z of d.auch || []) if (leute[z.wer] && leute[z.wer].f.group.visible) fotoMerken(z.id, fotoAusWelt(z));
+    sichern();
+    if (pl.sieht && d.gesehen) await gespraech(GESPRAECHE[d.gesehen]);
+  }
   // Echtes Foto aus der Spielwelt (Baustein 4): Kamera kurz an einen Punkt setzen, ein Bild zeichnen, klein als JPEG.
   // { wer: Figur, von: [dx, y, dz] relativ zur Figur, auf: [dx, y, dz] } oder absolute Punkte ohne wer. Rückgabe: dataURL oder ''.
   function fotoAusWelt({ von = [1.6, 1.2, 1.6], auf, wer, fov = 44, w = 480, h = 330, filter = '' } = {}) {
@@ -2142,12 +2173,20 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       const p0 = camera.position.clone(), q0 = camera.quaternion.clone(), f0 = camera.fov;
       camera.position.copy(punkt(von)); camera.fov = fov; camera.updateProjectionMatrix();
       camera.lookAt(punkt(auf || [0, 1.0, 0])); camera.updateMatrixWorld();
+      // Figuren, die im Spielbild gerade ausgeblendet sind (Leistung), für das Foto nach dem Foto-Ausschnitt zeigen
+      ausschnittNeu(); const vorher = [];
+      for (const x of [...Object.values(leute), ...statisten]) {
+        const innen = x.f && x.f.group.visible && x.f.group.children[0]; if (!innen) continue;
+        vorher.push([innen, innen.visible]);
+        if (imBild(x.f, x.f.group.position) && !vorher[vorher.length - 1][1] && x.f.update) try { x.f.update(0.05); } catch (e) { /* Haltung später */ }   // nicht animierte Figuren: einmal in ihre Haltung
+      }
       rr.render({ night: sky.night, time: loop.time, sun: sky.sunDir, sunColor: sky.colors && sky.colors.light });
+      for (const [o, v] of vorher) o.visible = v;
       const c = document.createElement('canvas'); c.width = w; c.height = h; const x = c.getContext('2d');
       const cw = canvas.width, ch = canvas.height, r = w / h; let sw = cw, sh = cw / r; if (sh > ch) { sh = ch; sw = ch * r; }
       x.filter = filter || 'saturate(1.08) contrast(1.04)'; x.drawImage(canvas, (cw - sw) / 2, (ch - sh) / 2, sw, sh, 0, 0, w, h); x.filter = 'none';
       const url = c.toDataURL('image/jpeg', 0.84);
-      camera.position.copy(p0); camera.quaternion.copy(q0); camera.fov = f0; camera.updateProjectionMatrix();
+      camera.position.copy(p0); camera.quaternion.copy(q0); camera.fov = f0; camera.updateProjectionMatrix(); ausschnittNeu();
       return url;
     } catch (e) { return ''; }
   }
@@ -2331,6 +2370,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     if (st.start && st.start.gespraech && mitStart !== false) {
       await gespraech(GESPRAECHE[st.start.gespraech]);
       if (st.id === 'ankunft' && bus) busFaehrt = 1;
+      if (st.fertig && st.fertig.nachStart && S.schritt === i) { S.fertig = true; setTimeout(() => { if (S.schritt === i) naechster(); }, 60); }
     }
   }
   async function naechster() {
@@ -4277,6 +4317,9 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     welt, steuerung, leute, sky, camera, scene, req, ui, rr, km,
     springe: async (i) => { await starteSchritt(typeof i === 'number' ? i : SCHRITTE.findIndex((s) => s.id === i), true); },
     sitProbe: (id) => situationProbieren({ situation: id, name: 'Sam', figur: 0 }),   // Test: Situation wie „Für Lehrpersonen“ starten
+    freiZeit: (t) => { if (freiLauf) freiLauf.rest = Math.max(0.05, freiLauf.dauer - t); },   // Test: im freien Moment vorspulen
+    get freiT() { return freiLauf ? freiLauf.dauer - freiLauf.rest : null; },
+    foto: (z) => fotoAusWelt(z),   // Test: ein Foto aus der Welt (dataURL)
     teleport: (ort, yaw) => { const o = typeof ort === 'string' ? welt.orte[ort] : ort; steuerung.teleport(o.x, o.z, yaw !== undefined ? yaw : o.yaw); },
     rede, los, audio, SITZ, input, get spruch() { return { wer: !!spruchWer }; }, get naechste() { return naechste && naechste.id; },
     get probe() { return probe; }, set mutTempo(v) { mutTempo = v; },
