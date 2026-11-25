@@ -11,6 +11,8 @@ const KLASSE = { ayla: pult(0, 0, -1), ben: pult(1, 2, 1), chiara: pult(2, 1, -1
 const HALTESTELLE = { dario: [-20.5, 42.3, -1.9], lina: [-25.6, 44.4, 0.8], fahrer: [-11.2, 44.6, -Math.PI / 2], rafa: [-23.2, 41.85, 0, 'schlaeft'] };
 // Sport, Dienstag: Paare stehen beieinander (Yusuf neben dir, Jo mit Noah an der zweiten Bank)
 const SPORT_HALLE = { sommer: [45.2, -12.6, Math.PI], yusuf: [43.2, -15.4, 0.3], jo: [47.7, -21.5, -2.6], noah: [46.6, -22.5, 2.9], ben: [42, -16.6, 0.4], ayla: [50.2, -17.6, -0.3], lina: [51.4, -11.5, -0.8], chiara: [52.2, -16.2, -0.6], mila: [52.4, -14.2, -1.2] };
+// Montagmorgen im Hof (Szene 2): wer wo ist, bevor es klingelt
+const MORGEN_HOF = { dario: [1.9, 30.3, -2.4], ben: [27.5, 18.2, 1.4], yusuf: [30.4, 20.6, -2.2], jo: [26.2, 20.6, 0.8], noah: [-14, 12.2, -0.29], lina: [-10.6, 15.4, 2.59], chiara: [2.4, 6.5, 0.2, 'handy'] };
 const HALTESTELLE_BANK = { dario: [-21.5, 41.6, -1.6, 'sitzt'], lina: [-25.6, 44.4, 0.8], fahrer: [-11.2, 44.6, -Math.PI / 2] };
 
 export const SCHRITTE_N1 = [
@@ -18,6 +20,24 @@ export const SCHRITTE_N1 = [
     start: { teleport: 'busAnkunft', gespraech: 'n1_intro' },
     leute: HALTESTELLE,
     fertig: { reden: 'dario', gespraech: 'n1_dario' } },
+  // Gesamtkonzept K1, Szene 2: Weg und Hof. Vier Minuten bis zum Klingeln, fünf Dinge zugleich – man schafft nicht alles.
+  { id: 'k1_morgen', kap: 1, tag: 'Montag', uhr: 7.78, titel: 'Vier Minuten bis zum Klingeln', ziel: 'Der Hof. Fünf Dinge auf einmal. Gleich klingelt es.', marker: 'chiara',
+    start: { teleport: 'torInnen', gespraech: 'n1_morgenTor' },
+    leute: MORGEN_HOF,
+    frei: { titel: 'Vor dem Klingeln', dauer: 240,
+      faeden: {
+        noah: { gespraech: 'n1_morgenNoah', label: 'Am Zaun: einer dreht seinen Stundenplan' },
+        chiara: { gespraech: 'n1_morgenChiara', label: 'Chiara verteilt Zettel' },
+        ben: { gespraech: 'n1_morgenKorb', label: 'Korbfeld: Ben sucht einen Gegner' },
+        lina: { gespraech: 'n1_morgenLina', label: 'Am Brunnen: jemand zeichnet' },
+        dario: { gespraech: 'n1_morgenSkate', label: 'Dario an der Skate-Ecke' },
+      },
+      ereignisse: [
+        { t: 140, toast: '<b>Treppe</b><span>Oben auf der Treppe lehnt jemand am Geländer. Kapuze auf. Man sieht nur die Hände.</span>' },
+        { t: 205, toast: '<b>🔔 Gleich</b><span>Noch eine halbe Minute bis zum Klingeln.</span>' },
+      ],
+      ende: 'n1_morgenEnde' },
+    fertig: { frei: true } },
   { id: 'klasse', kap: 1, tag: 'Montag', uhr: 8.08, titel: 'Hinten links', ziel: 'Saal 1.04. Deine Klassenlehrerin wartet.', marker: 'hoffmann',
     start: { teleport: 'saal104Tuer' },
     leute: { hoffmann: [-27, -24, Math.PI / 2], ...KLASSE },
@@ -57,7 +77,7 @@ export const SCHRITTE_N1 = [
             { key: 'skate', x: -36, z: 12, r: 10 },
           ],
           auch: [{ id: 'auchNoah', wer: 'noah', von: [1.4, 1.45, -2.1], auf: [0, 1.05, 0], fov: 44 }, { id: 'auchLina', wer: 'lina', von: [-1.2, 1.6, 1.8], auf: [0, 1.25, 0], fov: 42 }] } },
-        { t: 240, toast: '<b>Chiara</b><span>läuft mit einem Zettel über den Hof. Sie sucht jemanden. Dich?</span>' },
+        { t: 240, wenn: (m) => !m.chiaraMorgen, toast: '<b>Chiara</b><span>läuft mit einem Zettel über den Hof. Sie sucht jemanden. Dich?</span>' },
       ],
       ende: 'n1_pauseEnde' },
     fertig: { frei: true } },
@@ -313,11 +333,69 @@ export const GESPRAECHE_N1 = {
     { foto: 'duAnkunft', wer: 'du', von: [2.0, 1.55, 2.4], auf: [0, 1.15, 0], fov: 46 },
     { tu: 'stundenplanTipp' },
   ],
+  // Montag 7:47: Dario bis zum Tor, dann der Hof (freier Moment, 4 Minuten)
+  n1_morgenTor: [
+    ['erzaehler', 'Dario läuft neben dir den Hügel hoch. Er redet fast die ganze Zeit.'],
+    ['dario', 'Links das Korbfeld. Da sind immer dieselben. Rechts hinten die Skate-Ecke. Da bin ich.'],
+    ['dario', 'Am Brunnen sitzen die, die noch keinen Platz haben.'],
+    ['dario', '(bleibt am Tor stehen) Wir fangen erst um neun an. Ich bin trotzdem immer da.'],
+    { wahl: [
+      { t: '„Warum so früh?“', merke: 'darioFrueh', dann: [['dario', '(zuckt mit den Schultern) Zu Hause ist es morgens … laut.'], ['erzaehler', 'Er sagt es, als wäre es nichts.']] },
+      { t: '„Zeigst du mir die Skate-Ecke?“', herz: { dario: 1 }, dann: [['dario', 'Komm halt rüber. Wenn du Zeit hast.']] },
+      { t: '(Nicken.)', dann: [] },
+    ] },
+    ['dario', 'Vier Minuten bis zum Klingeln. Du schaffst nicht alles. Keiner schafft alles.'],
+    ['erzaehler', 'Er stößt sich ab und rollt rüber zur Skate-Ecke.'],
+    { hin: { dario: [-34.5, 13.2, 1.2] } },
+  ],
+  n1_morgenNoah: [
+    ['erzaehler', 'Am Zaun steht ein Junge und dreht seinen Stundenplan hin und her. Oben, unten, wieder oben.'],
+    ['noah', '(ohne aufzuschauen) Weißt du, wo 1.04 ist?'],
+    { wahl: [
+      { t: '„Da muss ich auch hin. Komm mit.“', staerke: 'einbeziehen', herz: { noah: 2 }, merke: 'morgenNoah', dann: [['noah', '(schaut hoch) … Okay. Noah.'], ['erzaehler', 'Er faltet den Plan zusammen. Ganz klein.']] },
+      { t: '„Keine Ahnung. Bin auch neu.“', herz: { noah: 1 }, merke: 'morgenNoahNeu', dann: [['noah', 'Ah. Okay. Dann sind wir schon zwei.']] },
+      { t: '„Frag die mit den Zetteln.“', dann: [['noah', '(schaut zu Chiara. Dann wieder auf den Plan.) … Ja. Vielleicht.'], ['erzaehler', 'Er geht nicht hin.']] },
+    ] },
+  ],
+  n1_morgenChiara: [
+    ['chiara', 'Du bist {name}? Chiara. Ich mach hier die Listen. Bis jemand anders gewählt wird.'],
+    ['chiara', '(drückt dir einen Zettel in die Hand) Dein Stundenplan. 7P2. Saal 1.04. Spind-Code steht unten.'],
+    { tu: 'stundenplan' }, { tu: 'n1_chiaraMorgen' },
+    ['chiara', 'Wenn was ist: mich fragen. Nicht Jo.'],
+    ['jo', '(vom Korbfeld) Ich hör dich, Chiara!'],
+  ],
+  n1_morgenKorb: [
+    ['ben', 'Hey! Du! Fünf Würfe, bevor es klingelt. Yusuf hat schon vorgelegt.'],
+    { tu: 'freiwurf' },
+    { wenn: (m) => (m.freiwurf || 0) >= 3, dann: [['ben', 'Okay. Mittags, Korbfeld. Du bist dabei.'], { tu: 'n1_benKorb' }],
+      sonst: [['jo', '(grinst) Das Brett ist schief. Sagen alle.']] },
+  ],
+  n1_morgenLina: [
+    ['erzaehler', 'Am Brunnen sitzt ein Mädchen und zeichnet. Den leeren Hof.'],
+    ['erzaehler', 'Als du näher kommst, klappt sie das Heft zu. Nicht böse. Nur schnell.'],
+    ['lina', '(leise) … Morgen.'],
+    { wahl: [
+      { t: '„Darf ich mal sehen?“', merke: 'linaMorgenGefragt', dann: [['lina', 'Ist noch nicht fertig.'], ['erzaehler', 'Sie hält das Heft fest. Aber sie lächelt fast.']] },
+      { t: '„Morgen.“ (Weitergehen.)', herz: { lina: 1 }, merke: 'linaMorgenGelassen', dann: [['erzaehler', 'Als du dich umdrehst, zeichnet sie weiter.']] },
+    ] },
+  ],
+  n1_morgenSkate: [
+    ['erzaehler', 'Dario fährt eine Kurve, springt ab. Das Brett klappert über die Kante.'],
+    ['dario', 'Na, doch gekommen. Wenn du schon da bist: Handschlag. Pass auf.'],
+    { tu: 'handschlag', mit: 'dario' },
+  ],
+  n1_morgenEnde: [
+    ['erzaehler', 'Es klingelt. Alle laufen rein. Auf einmal ist der Hof leer.'],
+    { wenn: (m) => m.morgenNoah, dann: [['erzaehler', 'Noah läuft neben dir die Treppe hoch. Er sagt nichts. Aber er bleibt neben dir.']],
+      sonst: [{ wenn: (m) => !m.frei_k1_morgen_noah, dann: [['erzaehler', 'Am Zaun wartet einer, bis alle drin sind. Dann geht er als Letzter.']] }] },
+    { wenn: (m) => !m.frei_k1_morgen_lina, dann: [['erzaehler', 'Am Brunnen packt jemand ein Skizzenbuch ein. Ganz zum Schluss.']] },
+  ],
   n1_klasse: [
     ['hoffmann', 'Moien. {name}, richtig? Ich bin Mme Tidderich. Deine Klassenlehrerin.'],
     ['hoffmann', 'Hinten links ist frei. Neben der Tür.'],
     ['erzaehler', 'Die Tür hat ein schmales Glas. Man sieht den Flur.'],
-    { tu: 'stundenplan' },
+    { wenn: (m) => m.morgenNoah, dann: [['erzaehler', 'Noah setzt sich zwei Plätze weiter. Er schaut kurz zu dir rüber. Wie zur Kontrolle.']] },
+    { wenn: (m, S) => !S.stundenplan, dann: [{ tu: 'stundenplan' }] },
     { tu: 'spindFrei' },
     ['ben', '(dreht sich um) Moien. Ben. Nummer? Für den Klassenchat.'],
     { wahl: [
@@ -508,7 +586,7 @@ export const GESPRAECHE_N1 = {
         { wo: 'Füße', t: 'Ein Fuß wippt. Im Takt vom Ball.' },
         { wo: 'Hände', t: 'Das Brot liegt eingepackt auf dem Buch. Seit der Pause angefangen hat.' } ] }],
       uebersehen: [{ key: 'noahTisch', t: 'Noah schaut immer wieder zum Tischtennis-Tisch.' }] } },
-    ['noah', '(ohne aufzuschauen) Die Bank ist frei. Falls du fragst.'],
+    { wenn: (m) => m.morgenNoah, dann: [['noah', '(schaut hoch. Fast froh.) Du schon wieder. … Die Bank ist frei.']], sonst: [['noah', '(ohne aufzuschauen) Die Bank ist frei. Falls du fragst.']] },
     { wahl: [
       { t: '(Leise, nur für ihn) „Ayla sucht noch einen fürs Tischtennis. Zwei Runden?“', bemerkt: 'noahTisch', weil: 'Weil du gesehen hast, wohin er schaut.', staerke: 'einbeziehen', herz: { noah: 2 }, merke: ['pauseNoah', 'noahRundlauf'],
         dann: [['noah', '(schaut hoch) … Zwei Runden.'], ['noah', 'Wenn ich schlecht bin, hörst du auf zu zählen.'], ['erzaehler', 'Er packt das Brot weg. Er kommt mit.'],
@@ -525,7 +603,7 @@ export const GESPRAECHE_N1 = {
     ['erzaehler', 'Es klingelt. Die Pause ist vorbei.'],
     { wenn: (m) => !m.frei_pause_noah, dann: [['erzaehler', 'Noah steht als Letzter auf. Keiner hat ihn heute angesprochen.']] },
     { wenn: (m) => !m.frei_pause_rafa && !m.rafaGezeigt, dann: [['erzaehler', 'Rafa ist schon drin. Die Kapuze auf.']] },
-    { wenn: (m) => !m.frei_pause_chiara, dann: [['chiara', '(im Vorbeigehen, knapp) Dein Stundenplan. Hier. Ich hab dich gesucht.'], { tu: 'n1_chiaraKurz' }] },
+    { wenn: (m) => !m.frei_pause_chiara && !m.chiaraMorgen, dann: [['chiara', '(im Vorbeigehen, knapp) Dein Stundenplan. Hier. Ich hab dich gesucht.'], { tu: 'n1_chiaraKurz' }] },
     { pult: null },
   ],
   n1_kantine: [
@@ -829,6 +907,8 @@ export const tunN1 = (c) => ({
   n1_deutschRest: () => ((c.ui.einstellungen && c.ui.einstellungen().unterricht) ? [] : [{ blende: 'Deutsch. 50 Minuten. Dann klingelt es.' }]),
   n1_tischNoah: () => { c.S.merke.kantineNoah = true; return []; },
   n1_chiaraKurz: () => { c.S.merke.chiaraKurz = true; return []; },
+  n1_chiaraMorgen: () => { c.S.merke.chiaraMorgen = true; return []; },
+  n1_benKorb: () => { c.S.merke.benKorbMorgen = true; return []; },
   n1_joSchule: () => { if ((c.S.bemerkt || {}).joVierteSchule) c.S.merke.joSchuleGesehen = true; return []; },
   // Nach „Geführt werden“: was du gemacht hast, sagt die Person, die dich geführt hat (ohne Note)
   n1_sportGefuehrt: () => {

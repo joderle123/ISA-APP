@@ -639,7 +639,7 @@ export function baueWelt({ material, materialInnen, materialLaub }) {
   // Orte (Ziele, Treffpunkte) – Blickrichtung yaw: 0 = nach Süden (+z), π = nach Norden
   const orte = {
     bus: { x: -22, z: 42.2, yaw: Math.PI }, busAnkunft: { x: -15.5, z: 42.4, yaw: -Math.PI / 2 },
-    tor: { x: 0, z: 38, yaw: Math.PI }, eingang: { x: 0, z: 1.5, yaw: 0 }, eingangHof: { x: 0, z: 3.5, yaw: 0 }, halle: { x: 0, z: -6, yaw: Math.PI },
+    tor: { x: 0, z: 38, yaw: Math.PI }, torInnen: { x: 0.6, z: 31.5, yaw: Math.PI }, eingang: { x: 0, z: 1.5, yaw: 0 }, eingangHof: { x: 0, z: 3.5, yaw: 0 }, halle: { x: 0, z: -6, yaw: Math.PI },
     pinnwand: { x: -6.8, z: -9, yaw: -Math.PI / 2 }, sekretariat: { x: -21, z: -12.4, yaw: 0 }, sekretariatTheke: { x: -21, z: -9.6 },
     saal104Tuer: { x: -21, z: -16, yaw: Math.PI }, saal104: { x: -22, z: -24, yaw: -Math.PI / 2 }, cdi: { x: -9, z: -23 },
     kantineTuer: { x: 12, z: -16 }, kantineAusgabe: { x: 24.2, z: -8.8, yaw: Math.PI / 2 }, kantine: { x: 16, z: -8 },

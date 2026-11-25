@@ -1443,6 +1443,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   const TUN = {
     kurzRaus: async () => { if (ui.atem) await ui.atem(); else await ui.kurzRaus(); },
     tt3d: async (pa) => { ui.dialogZu(); if (ttSpiel) await ttSpiel(pa); },   // Tischtennis aus einem Gespräch heraus
+    // Handschlag aus einem Gespräch heraus ({ tu: 'handschlag', mit: 'dario' }): startet, sobald das Gespräch zu ist
+    handschlag: (pa) => { const x = pa && leute[pa.id]; if (!x) return; (async () => { for (let i = 0; i < 80 && (imGespraech || ui.ebeneArt()); i++) await new Promise((r) => setTimeout(r, 250)); await handschlagMit(x); })(); },
     vertragPlakat: () => { vertragPlakat(); },   // in der SePAS: direkt die Atem-Übung (Kreis)
     sepasBesuch: () => { S.merke.sepasBesuch = (S.merke.sepasBesuch || 0) + 1; sichern(); },
     ...tunN1({ get S() { return S; }, ui, anzeige: (art, wert, plus) => setzeAnzeige(art, wert, plus) }),

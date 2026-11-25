@@ -4,6 +4,8 @@ const eins = (m, paare) => { for (const [f, t] of paare) if (typeof f === 'funct
 
 const KAP = {
   1: (m) => [
+    eins(m, [['morgenNoah', 'Am ersten Morgen hast du Noah am Zaun mitgenommen.'], ['morgenNoahNeu', 'Am ersten Morgen hast du Noah gesagt: Ich bin auch neu.'],
+      ['benKorbMorgen', 'Am ersten Morgen hast du am Korbfeld gezeigt, dass du werfen kannst.'], ['chiaraMorgen', 'Am ersten Morgen hast du dir bei Chiara den Stundenplan geholt.']]),
     eins(m, [['vertragFoto', 'Beim Klassenvertrag hast du für „Kein Foto ohne Fragen“ gestimmt. Deine Stimme hat entschieden.'], ['vertragEssen', 'Beim Klassenvertrag hast du für „Niemand isst allein“ gestimmt. Deine Stimme hat entschieden.'],
       ['vertragStopp', 'Beim Klassenvertrag hast du für „Stopp gilt sofort“ gestimmt.'], ['vertragKuchen', 'Beim Klassenvertrag hast du für den Kuchen gestimmt.']]),
     eins(m, [[(x) => x.duPausePlatz === 'noah', 'In der großen Pause hast du bei Noah am Zaun gesessen.'], [(x) => x.duPausePlatz === 'brunnen', 'In der großen Pause warst du am Brunnen.'],
