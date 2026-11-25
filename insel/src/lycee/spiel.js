@@ -241,6 +241,13 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       for (const m of ms) for (const n of m.addedNodes) {
         if (n.nodeType !== 1) continue;
         if (n.querySelector && n.querySelector('.sz-stempel')) { ton('unlock'); continue; }
+        // Chat: jede fremde Nachricht macht leise „pling“ und vibriert kurz; mit „Texte vorlesen“ wird sie vorgelesen (mit Namen)
+        if (n.classList.contains('ly-h-msg') && n.closest('.sz-chat') && !n.classList.contains('ich')) {
+          ton('bubble'); try { if (navigator.vibrate && matchMedia('(pointer: coarse)').matches && !ui.wenigBewegung) navigator.vibrate(12); } catch (e) { /* egal */ }
+          if (ui.autoVorlesen && speech && speech.available) { const w = (n.querySelector('b') || {}).textContent || '', t = (n.querySelector('span') || {}).textContent || ''; if (t) speech.speak((w ? w + ': ' : '') + t, { interrupt: false }); }
+          continue;
+        }
+        if (n.classList.contains('ly-h-sys') && n.closest('.sz-chat')) { lies(n); continue; }
         const blasen = n.classList.contains('sz-blase') ? [n] : n.querySelectorAll ? [...n.querySelectorAll('.sz-blase')] : [];
         if (blasen.length) { ton('bubble'); blasen.forEach(lies); continue; }
         if (n.classList.contains('sz-fall') || (n.querySelector && n.querySelector('.sz-fall p'))) lies(n.classList.contains('sz-fall') ? n : n.querySelector('.sz-fall p'));
@@ -1237,17 +1244,21 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
         if (w.herz) for (const [id, n] of Object.entries(w.herz)) herz(id, n);
         if (w.merke) [].concat(w.merke).forEach((m) => { S.merke[m] = true; });
         sichern();
+        merktSich(w);
+        if (z.warum) await warumFrage(w);
         if (w.dann && w.dann.length) await spiele(w.dann);
       } else if (z.szene) {
         // Situations-Spiel (situation.js): Ausgang → Folgen (wie eine Wahl: staerke, herz, merke, dann)
-        const def = typeof z.def === 'function' ? z.def(S.merke, S) : z.def;
+        const def = mischeKarten(z.szene, typeof z.def === 'function' ? z.def(S.merke, S) : z.def);
         ui.dialogZu();
         const SZ = { hitze: 'hitzeDuell', chat: 'liveChat', checkin: 'checkIn', namen: 'namenRekord', zwei: 'zweiWahrheiten', blind: 'blindParcours', stempel: 'skillsStempel', tanks: 'tankRaten', meinetanks: 'meineTanks', nachhaken: 'nachhaken', teams: 'teamsWaehlen', pult: 'gefuehlsPult', lesen: 'gesichterLesen', mischpult: 'mischpult', linie: 'linie', staerken: 'staerkenSchenken', sort: 'sortSprint', platz: 'platzwechsel', koerper: 'koerperKarte', synchron: 'synchron', spuren: 'spurenWand', antippen: 'gedankeAntippen', mut: 'mutBalken', thermo: 'thermometer', zonen: 'zonenWette', test: 'mathTest', atem: 'atemSync', koffer: 'koffer', weiche: 'gedankenWeiche', bohnen: 'bohnenWette', waage: 'beweisWaage', satz: 'satzBau', zettel: 'wenRaten', abstand: 'stoppAbstand', stopp: 'stoppBau', treppe: 'treppe', druck: 'druckRunde', buehne: 'buehneKippen', feed: 'feedSim', rucksack: 'rucksack', akku: 'akkuTag', wuerfel: 'gesundWuerfel', kurve: 'jahresKurve', brief: 'briefAnMich' };
         // Nicht durchklicken: Skill-Szenen prüfen, ob sie wirklich gemacht wurden (nie bei Entscheidungen – die haben Folgen, kein Falsch).
         // Sonst „Noch mal“ mit Tipp, höchstens dreimal; danach geht es weiter, und die Lehrer-Ansicht zeigt es.
         let r = {};
         for (let v = 1; ; v++) {
-          r = (await ui[SZ[z.szene] || z.szene](def)) || {};
+          const lauf = ui[SZ[z.szene] || z.szene](def);
+          hilfeKnopf(z.szene, v);
+          r = (await lauf) || {};
           const grund = z.pruefe === false ? null : (z.pruefe || PRUEF[z.szene] || (() => null))(r, def);
           if (!grund) { if (v > 1) versuchMerken(z, def, v, true); break; }
           if (v >= 3) { versuchMerken(z, def, v, false); break; }
@@ -2004,11 +2015,72 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     nachhaken: (r) => (r.runden && r.schnell >= Math.ceil(r.runden * 0.6) && r.offen < 2 ? { sy: '👂', t: 'Das war zu schnell. Zuhören geht langsamer.', tipp: 'Lies, was die Person sagt. Dann such die Frage, die sie weiterreden lässt – nicht die, die schnell vorbei ist.' } : null),
     satz: (r) => (r.regeln < 2 ? { sy: '🔧', t: 'Dein Satz trägt noch nicht.', tipp: 'Schau auf die Regeln mit ○. Tausch einen Teil aus, bis mindestens zwei Haken da sind.' } : null),
   };
+  // „❓ Wie geht das?“ in jeder Szene: kurz, einfach, mit Vorlesen. Beim ersten Mal (je Szenen-Art) offen, später auf Tipp.
+  const SZ_HILFE = {
+    spuren: 'Eine Karte nach der anderen. Frag dich: Zeigt das wirklich etwas? Oder fühlt es sich nur so an? 📌 heißt: das zählt. 🗑️ heißt: das beweist nichts. Am Ende ziehst du einen Schluss – nur einen, für den du Spuren hast.',
+    mut: 'Der Balken füllt sich, solange du hinschaust. Je länger du bleibst, desto mehr Wege gehen auf. Du kannst jederzeit wählen. Auch Weggehen ist eine Wahl.',
+    druck: 'Mehrere reden auf dich ein. Oben siehst du zwei Balken: den Druck der Gruppe und dein Ich. Wähl deine Antwort, bevor die Zeit um ist. Einmal darfst du den Anker ⚓ werfen: dann hält die Zeit an.',
+    atem: 'Halte den Knopf (oder die Leertaste) gedrückt: einatmen, zwei, drei Sekunden. Loslassen: lange ausatmen, länger als das Einatmen. Dann wieder halten. Nur ruhige Atemzüge zählen.',
+    nachhaken: 'Du stellst Fragen. Fragen mit „Wie“, „Was“ oder „Warum“ öffnen ein Gespräch. Fragen mit Ja oder Nein machen es oft zu. Der Balken zeigt, wie viel die Person erzählt.',
+    antippen: 'Ein Gedanke ist laut. Tipp ihn an. Dann siehst du, was wirklich dahintersteckt.',
+    weiche: 'Wähl den Gedanken, der zuerst kommt. Der Zug fährt los: Gedanke, Gefühl, Körper, was du tust. Danach kannst du zurückspulen und einen anderen Gedanken ausprobieren.',
+    satz: 'Bau einen Satz aus den Teilen. Tipp in jeder Reihe einen Teil an. Die Haken zeigen, was ein guter Satz braucht. Ändern geht immer.',
+    hitze: 'Jemand provoziert dich. Oben steht die Hitze. Jede Antwort macht sie heißer oder kühler. Wähl, bevor die Zeit um ist. Nichts sagen ist auch eine Antwort.',
+    feed: 'Du wischst durch einen Feed. Was du likest – und wo du länger hinschaust –, bekommst du öfter. Am Ende siehst du, woraus dein Feed geworden ist.',
+    akku: 'Ein Tag von morgens bis nachts. Jede Entscheidung lädt deinen Akku – oder zieht ihn leer. Am Ende siehst du, wie voll du in den nächsten Morgen startest.',
+    test: 'Ein Test. Löse die Aufgaben. Die Anspannung steigt. Gedanken tauchen auf: Tipp sie an, dann ziehen sie weiter. Skills senken die Zahl. Ab Rot verschwimmt alles.',
+    koffer: 'Pack deinen Skills-Koffer: aus jedem Fach bis zu zwei Skills. Dann wählst du drei für die Notfallkarte – für Momente auf Rot.',
+    zonen: 'Wo stehst du auf der Linie? Grün, Gelb oder Rot? Tipp auf die Linie. Dann wettest du, wo die meisten aus der Klasse stehen.',
+    bohnen: 'Du hast fünf Bohnen. Leg sie zu den Sätzen, die du von dir kennst. Niemand sieht, wer was gelegt hat.',
+    staerken: 'Schenk jemandem eine Stärke. Je genauer, desto mehr wirkt sie: nicht „Du bist nett“, sondern was genau die Person gut gemacht hat.',
+    linie: 'Wo stehst du zwischen zwei Seiten? Schieb dich auf die Linie. Danach siehst du, wie andere dich sehen.',
+    kurve: 'Fotos aus deinem Jahr. Sag bei jedem, wie es sich angefühlt hat. Daraus wird deine Kurve.',
+    brief: 'Du schreibst einen Brief an dich in einem Jahr. Satz für Satz. Niemand sonst liest ihn.',
+    checkin: 'Wie geht es dir heute? Erst das Gefühl, dann das genauere Wort. Es gibt kein Falsch.',
+  };
+  const hilfeGesehen = (art, setzen) => { try { const k = 'lycee.hilfe.' + art; if (setzen) localStorage.setItem(k, '1'); return localStorage.getItem(k) === '1'; } catch (e) { return true; } };
+  function hilfeKnopf(art, versuch) {
+    const text = SZ_HILFE[art]; if (!text) return;
+    const kopf = document.querySelector('.ly-ebene:not([hidden]) .sz-kopf'); if (!kopf || kopf.querySelector('.sz-hilfe')) return;
+    const b = document.createElement('button'); b.type = 'button'; b.className = 'sz-hilfe'; b.textContent = '❓ Wie geht das?';
+    const box = document.createElement('div'); box.className = 'sz-hilfe-text'; box.hidden = true;
+    box.innerHTML = '<p></p><button type="button" class="ly-link">🔊 Vorlesen</button>'; box.querySelector('p').textContent = text;
+    box.querySelector('button').onclick = () => ui.vorlesen && ui.vorlesen(text);
+    b.onclick = () => { box.hidden = !box.hidden; };
+    kopf.appendChild(b); kopf.insertAdjacentElement('afterend', box);
+    if (!hilfeGesehen(art) || versuch > 1) { box.hidden = false; hilfeGesehen(art, true); if (ui.autoVorlesen) ui.vorlesen && ui.vorlesen(text); }   // beim ersten Mal und nach „Noch mal“ offen
+  }
+  // Antwort-Karten nicht immer an derselben Stelle (sonst lernt man die Position, nicht den Inhalt): Druck-Runde, Hitze-Duell,
+  // Nachhaken. Kopie – die Geschichte selbst bleibt unverändert, jedes Spielen mischt neu.
+  const misch = (a) => { const b = a.slice(); for (let i = b.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [b[i], b[j]] = [b[j], b[i]]; } return b; };
+  function mischeKarten(art, def) {
+    if (!def || !Array.isArray(def.runden)) return def;
+    if (art === 'druck' || art === 'hitze') return { ...def, runden: def.runden.map((r) => (Array.isArray(r.karten) ? { ...r, karten: misch(r.karten) } : r)) };
+    if (art === 'nachhaken') return { ...def, runden: def.runden.map((r) => (Array.isArray(r.fragen) ? { ...r, fragen: misch(r.fragen) } : typeof r.fragen === 'function' ? { ...r, fragen: (o) => misch(r.fragen(o)) } : r)) };
+    return def;
+  }
   const SZ_TITEL = { atem: 'Gemeinsam atmen', spuren: 'Spuren-Wand', nachhaken: 'Nachfragen', satz: 'Satz bauen' };
   function versuchMerken(z, def, n, ok, zusatz = '') {
     const kap = z.szene === 'skillsStunde' && def && def.kap ? def.kap : (SCHRITTE[S.schritt] || {}).kap || 1;
     const titel = (z.szene === 'skillsStunde' ? 'Skills-Stunde „' + ((def && def.titel) || '') + '“' : (SZ_TITEL[z.szene] || 'Szene') + (def && def.wo ? ' (' + def.wo + ')' : '')) + zusatz;
     S.versuche = S.versuche || {}; S.versuche[kap] = { ...(S.versuche[kap] || {}), [titel]: { n, ok } }; sichern();
+  }
+  // „… wird sich das merken“ (wie in großen Story-Spielen): nur bei Entscheidungen, die später wirklich zurückkommen
+  // (die Merker, die in „Deine Woche“ stehen). Sagt nie, ob es gut oder schlecht war – nur, dass es zählt.
+  const ECHO = (() => { const e = new Set(); const p = new Proxy({}, { get: (t, k) => { if (typeof k === 'string') e.add(k); return undefined; } }); for (let k = 1; k <= 10; k++) { try { chronik(k, p); } catch (x) { /* egal */ } } return e; })();
+  // „Warum hast du das gemacht?“ – einmal je Kapitel, bei der wichtigsten Entscheidung. Über die eigenen Gründe nachdenken ist
+  // der Kern von sozial-emotionalem Lernen. Kein richtig/falsch; die Lehrperson sieht es in der Lehrer-Ansicht.
+  const WARUM = ['Ich wollte niemanden verletzen.', 'Ich hatte Angst, selbst dran zu sein.', 'Ich wollte dazugehören.', 'Weil es fair ist.', 'Ich hab nicht lange nachgedacht.', 'Weiß ich nicht.'];
+  async function warumFrage(w) {
+    const i = await ui.waehle(WARUM, 'Warum hast du das gemacht? Sei ehrlich – nur du und deine Lehrperson sehen es.', { fest: true });
+    const kap = (SCHRITTE[S.schritt] || {}).kap || 1;
+    S.gruende = S.gruende || {}; S.gruende[kap] = [...(S.gruende[kap] || []).filter((g) => g.t !== ersetze(w.t)), { t: ersetze(w.t), grund: WARUM[i] }]; sichern();
+  }
+  function merktSich(w) {
+    const ms = [].concat(w.merke || []).filter((m) => ECHO.has(m));
+    if (!ms.length) return;
+    const wer = Object.keys(w.herz || {}).filter((id) => LEUTE[id] && GLEICHALTRIGE.includes(id))[0] || Object.keys(w.herz || {}).filter((id) => LEUTE[id])[0];
+    setTimeout(() => ui.toast('<b>' + (wer ? esc(LEUTE[wer].name) + ' wird sich das merken.' : 'Das merkt sich die Geschichte.') + '</b>', 'ly-t-merkt'), 350);
   }
   // Reflexionsfrage am Kapitelende (eine offene Frage, kein richtig/falsch – auch als Einstieg fürs Klassengespräch)
   const REFLEXION = { 1: 'Was hat dir am ersten Tag geholfen, dich ein bisschen sicherer zu fühlen?', 2: 'Was kannst du gut – auch wenn es keiner sieht?',
@@ -3030,7 +3102,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
       const a = (S.merke.anzeigeVerlauf || {})[k];
       kapitel.push({ kap: k, titel: KAPITEL[k] || '', thema: KAPITEL_MODUL[k] || '', saetze: k <= fertigBis ? ch[k] || chronik(k, S.merke) : [], gespielt: k <= fertigBis, frage: GESPRAECH[k] || REFLEXION[k] || '',
         anzeige: a ? VW[a.art] + (a.art === 'akku' ? ': am wenigsten ' + a.min + ', am Ende ' + a.ende : ': höchstens ' + a.max + ', am Ende ' + a.ende) + ' (von 100)' : '',
-        versuche: Object.entries((S.versuche || {})[k] || {}).map(([t, v]) => ({ t, n: typeof v === 'object' ? v.n : v, ok: typeof v === 'object' ? v.ok !== false : true })) });
+        versuche: Object.entries((S.versuche || {})[k] || {}).map(([t, v]) => ({ t, n: typeof v === 'object' ? v.n : v, ok: typeof v === 'object' ? v.ok !== false : true })),
+        gruende: (S.gruende || {})[k] || [] });
     }
     const ng = SCHRITTE.filter((x) => x.neben === 'geschichte'), gespielt = ng.filter((x) => (S.merke.neben || {})[x.id]);
     const em = S.merke.endeMit;

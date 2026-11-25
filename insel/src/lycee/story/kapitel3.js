@@ -180,9 +180,9 @@ export const GESPRAECHE_N3 = {
     ['erzaehler', 'Dienstag. 12:30. Im CDI summt nur die Heizung.'],
     ['erzaehler', 'Mila sitzt am Fenster. Der Würfel dreht sich. Schnell.'],
     { wahl: [
-      { t: '„Hast du es gesehen?“', dann: [] },
-      { t: '„Alles okay?“', dann: [] },
-      { t: '(Dich dazusetzen.)', staerke: 'warten', herz: { mila: 1 }, dann: [] },
+      { t: '„Hast du es gesehen?“', dann: [['mila', 'Alle haben es gesehen. Das ist ja der Witz.']] },
+      { t: '„Alles okay?“', dann: [['mila', '(dreht weiter) Frag nicht so. Setz dich.']] },
+      { t: '(Dich dazusetzen.)', staerke: 'warten', herz: { mila: 1 }, dann: [['erzaehler', 'Mila rückt ihren Stuhl ein Stück. Nicht weg. Nur so.']] },
     ] },
     { tu: 'n3_cdiStart' },
     ['mila', 'Vierundachtzig Likes. In zwei Stunden.'],
@@ -191,7 +191,7 @@ export const GESPRAECHE_N3 = {
     ['mila', 'Der Satz stimmt halt.'],
     ['erzaehler', 'Auf dem Display: „wenn der würfel dein einziger freund ist.“'],
     { wahl: [
-      { t: '„Der Satz ist Müll.“', dann: [] },
+      { t: '„Der Satz ist Müll.“', dann: [['mila', '(zuckt) Müll bleibt trotzdem stehen.']] },
       { t: '„Zeig mir, wie der Würfel geht.“', herz: { mila: 2 }, merke: 'wuerfelGefragt', dann: [] },
       { t: '(Sitzen bleiben.)', staerke: 'warten', herz: { mila: 1 }, dann: [] },
     ] },
@@ -200,9 +200,9 @@ export const GESPRAECHE_N3 = {
     ['mila', 'Unten links. Siehst du das?'],
     ['erzaehler', 'Ein heller Streifen. Dünn. Auf jedem Bild an derselben Stelle.'],
     { wahl: [
-      { t: '„Ein Filter?“', dann: [] },
-      { t: '„Dreck auf der Linse?“', staerke: 'lesen', dann: [] },
-      { t: '„Ich seh nichts.“', dann: [] },
+      { t: '„Ein Filter?“', dann: [['mila', 'Filter sind überall. Der hier ist nur unten links.']] },
+      { t: '„Dreck auf der Linse?“', staerke: 'lesen', dann: [['mila', 'Fast.']] },
+      { t: '„Ich seh nichts.“', dann: [['mila', '(hält dir das Handy näher hin) Hier. Und hier. Und hier.'], ['erzaehler', 'Jetzt siehst du ihn auch.']] },
     ] },
     ['mila', 'Kein Filter. Ein Kratzer im Glas.'],
     ['mila', 'Ein Handy. Immer dasselbe.'],
@@ -231,8 +231,8 @@ export const GESPRAECHE_N3 = {
     ['jo', 'Vielleicht macht sie die Fotos. Als Vorlage.'],
     ['erzaehler', 'Du kennst diesen Strich. Wie auf dem Blatt in deiner Tasche.'],
     ['erzaehler', 'Lina klappt das Buch zu. Sie geht.'],
-    { wahl: [
-      { t: '(Lina nachgehen. Nichts fragen. Nur da sein.)', staerke: 'lesen', herz: { lina: 2 }, merke: 'linaNachgegangen', dann: [
+    { warum: true, wahl: [
+      { t: '(Lina nachgehen.)', staerke: 'lesen', herz: { lina: 2 }, merke: 'linaNachgegangen', dann: [
         ['erzaehler', 'Im Gang bleibt sie stehen. Sie schaut dich an. Dann auf deine Tasche.'],
         ['lina', '(sehr leise) … Ich mach keine Fotos.'],
         { wahl: [
@@ -240,7 +240,7 @@ export const GESPRAECHE_N3 = {
           { t: '„Hast du das in meine Jacke gesteckt?“', merke: 'linaGefragtBlatt', dann: [['erzaehler', 'Sie antwortet nicht. Sie geht. Schneller als vorher.']] },
         ] } ] },
       { t: '„Zeichnen ist nicht fotografieren, Jo.“', staerke: 'klar', herz: { lina: 1, jo: -1 }, merke: 'joWiderspruchLina', dann: [['jo', 'Chill. War nur eine Idee.']] },
-      { t: '(Sitzen bleiben. Weiter zuschauen.)', merke: 'linaGerueht', dann: [] },
+      { t: '(Sitzen bleiben. Das Spiel läuft ja noch.)', merke: 'linaGerueht', dann: [['erzaehler', 'Das Spiel geht weiter. Linas Platz auf der Bank bleibt leer.']] },
     ] },
   ],
   // Donnerstag 12:10: Mila sortiert. Ordnen statt raten.
@@ -265,7 +265,7 @@ export const GESPRAECHE_N3 = {
     ['dario', '(fast zu sich selbst) Früher war der Account besser.'],
     { wahl: [
       { t: '„Früher? Wie meinst du das?“', merke: 'darioFrueher', dann: [['dario', '(zuckt) Lustiger halt. Keine Ahnung.'], ['erzaehler', 'Er schaut auf seine Schuhe.']] },
-      { t: '(Nichts sagen.)', dann: [] },
+      { t: '(Nichts sagen.)', dann: [['erzaehler', 'Dario sagt nichts mehr. Der Bus kommt.']] },
     ] },
     { blende: 'Freitag · 21:00' },
     ['erzaehler', '@annexe.cam postet eine schwarze Kachel. Weiße Schrift.'],

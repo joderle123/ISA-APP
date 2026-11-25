@@ -305,7 +305,7 @@ export const GESPRAECHE_N4 = {
     { anzeige: 'anspannung', wert: 85 },
     ['jo', '(laut, zu Ben) Pass auf, was du isst. Sonst bist du morgen drauf.'],
     ['erzaehler', 'Ein paar lachen.'],
-    { fest: true, wahl: [
+    { warum: true, fest: true, wahl: [
       { t: '„Halt die Klappe, Jo!“', herz: { jo: -1 }, merke: 'k4Explodiert', dann: [
         { anzeige: 'anspannung', wert: 95 },
         ['erzaehler', 'Du bist aufgesprungen. Der Stuhl kippt. Es ist still.'],
@@ -313,11 +313,11 @@ export const GESPRAECHE_N4 = {
         ['jo', '(hebt die Hände) Okay. Nerv getroffen.'],
         ['erzaehler', 'Du setzt dich. Dein Herz rennt noch lange.'],
         { anzeige: 'anspannung', wert: 80 } ] },
-      { t: '(Rausgehen.)', merke: 'k4Rausgegangen', dann: [
+      { t: '(Rausgehen. Einfach weg hier.)', merke: 'k4Rausgegangen', dann: [
         ['erzaehler', 'Das Tablett bleibt stehen. Draußen ist es kalt. Gut kalt.'],
         { anzeige: 'anspannung', wert: 70 },
         ['erzaehler', 'Drinnen reden sie weiter. Du hörst es nicht mehr.'] ] },
-      { t: '(Yusufs Takt. Ein. Und aus. Länger aus.)', staerke: 'ruhig', merke: 'k4Geatmet', dann: [
+      { t: '(Atmen. Yusufs Takt.)', staerke: 'ruhig', merke: 'k4Geatmet', dann: [
         { szene: 'atem', id: 'atemAllein', def: { wo: 'Kantine · dein Platz', titel: 'Atmen', allein: true, wer: { name: 'Kopf', farbe: '#5f7d9e' },
           info: 'Niemand muss es sehen. Yusufs Takt: ein. Und aus. Länger aus.', start: 85, ziel: 45,
           saetze: { 85: 'Alle schauen. Alle wissen es.', 70: 'Ein. Und aus. Länger aus.', 55: 'Die Gabel liegt still.', 45: 'Okay. Noch da.' } },

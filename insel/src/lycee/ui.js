@@ -267,7 +267,9 @@ export function createUI({ root, input, speech }) {
   // optionen: [text] → Index
   ui.waehle = (optionen, frage = '', opts = {}) => new Promise((ok) => {   // opts.fest: Reihenfolge nicht mischen (Menüs, Gefühle)
     dialogOffen = true; dialog.hidden = false; root.classList.add('ly-im-dialog'); dialog.className = 'ly-dialog hud-interactive ly-wahl';
-    dialog.innerHTML = (frage ? '<div class="ly-d-text">' + esc(frage) + '</div>' : '<div class="ly-d-frage">Was machst du?</div>') +
+    // Damit niemand vergisst, worauf er antwortet: der zuletzt gesagte Satz bleibt klein über den Antworten stehen
+    const zuletzt = !frage && VERLAUF.length ? VERLAUF[VERLAUF.length - 1] : null;
+    dialog.innerHTML = (frage ? '<div class="ly-d-text">' + esc(frage) + '</div>' : (zuletzt ? '<div class="ly-d-kontext">' + (zuletzt.wer ? '<b style="--f:' + esc(zuletzt.farbe) + '">' + esc(zuletzt.wer) + '</b> ' : '') + esc(zuletzt.text) + '</div>' : '') + '<div class="ly-d-frage">Was machst du?</div>') +
       '<div class="ly-d-optionen"></div>';
     // gemischte Reihenfolge: die „vernünftige“ Antwort steht nicht immer oben (Jugend-Kritik). data-i = Platz in den Daten.
     wahlReihe = optionen.map((o, i) => i);
@@ -280,6 +282,7 @@ export function createUI({ root, input, speech }) {
   ui.dialogVerstecken = (an) => { dialog.style.visibility = an ? 'hidden' : ''; };   // während „Kurz raus“ in einer Situation
   ui.dialogZu = () => { dialogOffen = false; dialog.hidden = true; root.classList.remove('ly-im-dialog'); weiterFn = null; wahlFn = null; if (speech) speech.cancel(); };
   function vorlesen(t) { if (speech && speech.available) speech.speak(t, { interrupt: true }); }
+  ui.vorlesen = (t) => vorlesen(t);
 
   // Tasten: im Gespräch E/Enter/Leertaste = weiter, 1–3 = Antwort; sonst Tab = Journal
   document.addEventListener('keydown', (e) => {

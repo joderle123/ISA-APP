@@ -189,7 +189,7 @@ export const GESPRAECHE_N10 = {
     { tu: 'n10_blaetter' },
     { wahl: [
       { t: '(Zu Lina: „Danke.“)', herz: { lina: 1 }, dann: [['erzaehler', 'Lina schaut nicht hoch. Aber ihr Stift hält kurz an.']] },
-      { t: '(Nichts sagen. Weiter schauen.)', dann: [] },
+      { t: '(Nichts sagen. Weiter schauen.)', dann: [['erzaehler', 'Auf einem Blatt bist du. Hinten links. Du schaust lange hin.']] },
     ] },
   ],
   n10_karten: [
@@ -213,7 +213,7 @@ export const GESPRAECHE_N10 = {
     ['noah', '(nach dem fünften) Reicht. Ich will nicht alle sehen.'],
     { wahl: [
       { t: '(Dich selbst anstellen.)', merke: 'k10Angestellt', dann: [{ tu: 'n10_beiWem' }] },
-      { t: '(Sitzen bleiben.)', dann: [] },
+      { t: '(Sitzen bleiben.)', merke: 'k10Sitzen', dann: [['erzaehler', 'Die Schlange wird kürzer. Dann ist sie weg.']] },
     ] },
   ],
   n10_festMorgen: [
@@ -244,9 +244,9 @@ export const GESPRAECHE_N10 = {
     ['ben', 'Ich hab das erste weitergeleitet. An alle.'],
     ['erzaehler', 'Chiara faltet einen Zettel auf. Sie hat es aufgeschrieben.'],
     ['chiara', 'Ich habe {name} aus der Gruppe entfernt. Das war falsch.'],
-    { wahl: [
+    { warum: true, wahl: [
       { t: '(Deinen Teil sagen.)', staerke: 'mut', merke: 'k10Teil', dann: [{ tu: 'n10_meinTeil' }] },
-      { t: '(Nichts sagen.)', dann: [] },
+      { t: '(Nichts sagen.)', merke: 'k10Geschwiegen', dann: [['erzaehler', 'Du sagst nichts. Dein Teil bleibt bei dir. Für heute.']] },
       { t: '(Dich neben die Bank stellen.)', dann: [{ tu: 'n10_nebenBank' }] },
     ] },
     ['erzaehler', 'Dario tippt: „Passwort vergessen“. Sein Handy summt. Ein Code.'],
@@ -306,9 +306,9 @@ const ENDEN = {
     ['mila', 'Hundertdreizehn sag ich laut. Sonst zählt es nicht.'],
     ['mila', 'Der Satz vom Dezember stimmt nicht mehr.'],
     { wahl: [
-      { t: '„Welcher Satz?“', dann: [] },
-      { t: '„Ich weiß.“', dann: [] },
-      { t: '(Nichts sagen.)', dann: [] },
+      { t: '„Welcher Satz?“', dann: [['mila', '„Wenn der Würfel dein einziger Freund ist.“ Ist er nicht mehr.']] },
+      { t: '„Ich weiß.“', dann: [['mila', '(lächelt. Fast.) Ich weiß, dass du’s weißt.']] },
+      { t: '(Nichts sagen.)', dann: [['erzaehler', 'Mila nickt. Das reicht ihr.']] },
     ] },
     ['erzaehler', 'Sie gibt dir den Würfel. Alle Seiten sauber.'],
     ['mila', 'Mach ihn kaputt.'],

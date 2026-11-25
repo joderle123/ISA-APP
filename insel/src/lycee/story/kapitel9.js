@@ -147,9 +147,9 @@ export const GESPRAECHE_N9 = {
     ['erzaehler', 'Dario sitzt da. T-Shirt. Das Armband am linken Handgelenk.'],
     ['dario', 'Du bist gekommen.'],
     { wahl: [
-      { t: '„Du hast ‚bitte‘ geschrieben.“', dann: [] },
-      { t: '„Ich hab das Armband gesehen.“', dann: [] },
-      { t: '(Dich setzen.)', staerke: 'warten', dann: [] },
+      { t: '„Du hast ‚bitte‘ geschrieben.“', dann: [['dario', '(nickt) Dreimal gelöscht. Dann doch geschickt.']] },
+      { t: '„Ich hab das Armband gesehen.“', dann: [['dario', '(schaut auf sein Handgelenk) Ich weiß. Ich versteck es nicht mehr.']] },
+      { t: '(Dich setzen.)', staerke: 'warten', dann: [['erzaehler', 'Du setzt dich. Nicht zu nah. Er rutscht nicht weg.']] },
     ] },
     ['dario', 'Ich hab das Foto gemacht. Deins. Am ersten Tag.'],
     ['dario', 'Alle Fotos. Bis Dezember.'],
@@ -157,9 +157,9 @@ export const GESPRAECHE_N9 = {
     ['erzaehler', 'Das Glas hat einen Sprung. Unten links.'],
     { tu: 'n9_sprung' },
     { wahl: [
-      { t: '„Warum ich?“', dann: [] },
-      { t: '„Warum sagst du es jetzt?“', dann: [] },
-      { t: '(Nichts sagen.)', staerke: 'zuhoeren', dann: [] },
+      { t: '„Warum ich?“', dann: [['erzaehler', 'Er braucht lange für die Antwort.']] },
+      { t: '„Warum sagst du es jetzt?“', dann: [['dario', 'Weil Freitag Namen kommen. Und weil ich nicht mehr schlafe.'], ['dario', 'Und du willst wissen, warum du. Ich weiß.']] },
+      { t: '(Nichts sagen.)', staerke: 'zuhoeren', dann: [['erzaehler', 'Er wartet, ob du gehst. Du gehst nicht.']] },
     ] },
     ['dario', 'Du warst neu. Dich kannte keiner. Das war einfach.'],
     ['dario', 'Zweihundert Likes. Ich hatte noch nie zweihundert von irgendwas.'],
@@ -172,8 +172,8 @@ export const GESPRAECHE_N9 = {
     ['erzaehler', 'Eine Amsel. Sonst nichts. Kein Auto, kein Bus.'],
     { tu: 'n9_datei' },
     ['dario', 'Sag’s keinem. Bitte.'],
-    { fest: true, wahl: [
-      { t: '„Ich sag nichts.“', herz: { dario: 1 }, merke: 'k9Versprochen', dann: [['erzaehler', 'Dario atmet aus. Lange.'], ['erzaehler', 'Jetzt trägst du es.'], { anzeige: 'akku', plus: -6 }] },
+    { warum: true, fest: true, wahl: [
+      { t: '„Ich sag nichts. Versprochen.“', herz: { dario: 1 }, merke: 'k9Versprochen', dann: [['erzaehler', 'Dario atmet aus. Lange.'], ['erzaehler', 'Jetzt trägst du es.'], { anzeige: 'akku', plus: -6 }] },
       { t: '„Das kann ich nicht versprechen.“', staerke: 'klar', merke: 'k9NichtVersprochen', dann: [['erzaehler', 'Dario steht auf. Er läuft weg. Das Brett unter dem Arm.']] },
       { t: '„Komm mit zu Herrn Kuedes.“', staerke: 'hilfe', herz: { dario: 1 }, merke: 'k9Mitkommen', dann: [['dario', 'Jetzt?'], ['du', 'Morgen. Ich geh mit.'], ['dario', '… Erste Pause. Wenn du wirklich mitkommst.']] },
       { t: '(Aufstehen und gehen.)', merke: 'k9Gegangen', dann: [['erzaehler', 'Du gehst. Er sitzt allein auf der Bank, bis der Bus kommt.']] },

@@ -140,11 +140,11 @@ export const GESPRAECHE_N8 = {
     ] },
     ['erzaehler', 'Post 3: Ein Video, 8 Sekunden. „Lehrerin schreit Schüler an!!“ Ohne Anfang. Ohne Ende.'],
     { wahl: [
-      { t: '(Nachfragen: Wer hat das gefilmt? Was war davor?)', staerke: 'lesen', merke: 'quelleNachgefragt', dann: [
+      { t: '(Erst fragen: Wer hat gefilmt?)', staerke: 'lesen', merke: 'quelleNachgefragt', dann: [
         ['erzaehler', 'Antwort vom Konto: „egal was davor war 😂“.'],
         ['mesenberg', 'Wenn jemand den Anfang nicht zeigen will, gibt es einen Grund.'] ] },
       { t: '(Nicht teilen. Es ist eine echte Person.)', staerke: 'klar', dann: [['mesenberg', 'Genau. Acht Sekunden sind kein Mensch. Und kein Urteil.']] },
-      { t: '(Teilen. Ist doch krass.)', dann: [['mila', 'Krass ist, dass sie das nie wieder löschen kann.'], ['mesenberg', 'Bremsen heißt: erst fragen, wem es schadet.']] },
+      { t: '(Teilen. Die Klasse soll das sehen.)', dann: [['mila', 'Krass ist, dass sie das nie wieder löschen kann.'], ['mesenberg', 'Bremsen heißt: erst fragen, wem es schadet.']] },
     ] },
     ['mesenberg', 'Drei Fragen vor dem Teilen: Wer? Woher? Wem schadet es?'],
     ['mesenberg', 'Fake über euch? BEE SECURE Helpline: 8002 1234. Gratis.'],
@@ -224,7 +224,7 @@ export const GESPRAECHE_N8 = {
     ['ben', 'Wir posten die Mappe einfach. Dann wissen es alle. Zack.'],
     { wahl: [
       { t: '„Kein Pranger. Die Mappe geht zu Erwachsenen.“', staerke: 'klar', dann: [['ben', 'Langweilig. … Aber ja.']] },
-      { t: '„Gute Idee.“', dann: [['chiara', 'Dann machen wir genau das, was uns passiert ist.']] },
+      { t: '„Gute Idee. Dann hört es endlich auf.“', dann: [['chiara', 'Dann machen wir genau das, was uns passiert ist.']] },
     ] },
     { tu: 'n8_regel2' },
     ['erzaehler', 'Mila reißt eine Seite aus ihrem Heft.'],
@@ -233,10 +233,10 @@ export const GESPRAECHE_N8 = {
     { tu: 'n8_regel3' },
     ['jo', 'Schreib Luca rein. Weiß doch jeder.'],
     { tu: 'n8_kenanWissen' },
-    { fest: true, wahl: [
-      { t: '(Namen hineinschreiben.)', merke: 'k8Namen', dann: [['erzaehler', 'Du schreibst „Luca“. Darunter, kleiner: was alle sagen.']] },
-      { t: '(Nur aufschreiben, was wir gesehen haben. Ohne Deutung.)', staerke: 'lesen', herz: { mila: 1 }, merke: 'k8NurBeobachtung', dann: [['erzaehler', 'Uhrzeiten. Orte. Was zu sehen war. Kein „weil“. Kein „bestimmt“.']] },
-      { t: '(Gar keine Namen.)', merke: 'k8KeineNamen', dann: [['chiara', 'Dann ist es ein Rätsel ohne Lösung.'], ['mila', 'Dann ist es ehrlich.']] },
+    { warum: true, fest: true, wahl: [
+      { t: '(Luca reinschreiben. Weiß doch eh jeder.)', merke: 'k8Namen', dann: [['erzaehler', 'Du schreibst „Luca“. Darunter, kleiner: was alle sagen.']] },
+      { t: '(Nur das, was wir gesehen haben.)', staerke: 'lesen', herz: { mila: 1 }, merke: 'k8NurBeobachtung', dann: [['erzaehler', 'Uhrzeiten. Orte. Was zu sehen war. Kein „weil“. Kein „bestimmt“.']] },
+      { t: '(Gar keine Namen. Zu gefährlich.)', merke: 'k8KeineNamen', dann: [['chiara', 'Dann ist es ein Rätsel ohne Lösung.'], ['mila', 'Dann ist es ehrlich.']] },
     ] },
     { tu: 'n8_namenFolge' },
     ['mila', 'Zwei Dinge gehören nicht uns.'],
@@ -259,9 +259,9 @@ export const GESPRAECHE_N8 = {
     ['erzaehler', 'Donnerstag. 14:00. Die Tür vom SePAS steht offen.'],
     ['kaya', 'Kommt rein. Tür auf oder zu?'],
     { wahl: [
-      { t: '„Zu.“', dann: [] },
-      { t: '„Auf.“', dann: [] },
-      { t: '(Mila anschauen.)', staerke: 'lesen', dann: [['mila', 'Zu.']] },
+      { t: '„Zu.“', dann: [['erzaehler', 'Herr Kuedes macht die Tür zu. Draußen wird es leiser.']] },
+      { t: '„Auf.“', dann: [['erzaehler', 'Die Tür bleibt offen. Im Gang lacht jemand. Mila zuckt.']] },
+      { t: '(Mila anschauen.)', staerke: 'lesen', dann: [['mila', 'Zu.'], ['erzaehler', 'Herr Kuedes macht die Tür zu. Mila atmet aus.']] },
     ] },
     ['erzaehler', 'Mila legt die Mappe hin. Ihre Hand bleibt darauf.'],
     ['mila', 'Da ist alles drin. Nur Fakten.'],
@@ -272,12 +272,10 @@ export const GESPRAECHE_N8 = {
     ['kaya', 'Das ist viel Arbeit. Und es ist schlimm, was da steht.'],
     ['kaya', 'Was soll ich damit machen? Und was nicht?'],
     { wahl: [
-      { t: '„Dass das Video verschwindet.“', dann: [] },
-      { t: '„Dass alle wissen: Ich war’s nicht.“', dann: [] },
-      { t: '„Weiß ich nicht.“', dann: [] },
+      { t: '„Dass das Video verschwindet.“', dann: [['kaya', 'Das versuche ich. Heute noch.']] },
+      { t: '„Dass alle wissen: Ich war’s nicht.“', dann: [['kaya', 'Das dauert. Das sag ich dir ehrlich. Löschen geht schneller als Gerüchte.']] },
+      { t: '„Weiß ich nicht.“', dann: [['kaya', 'Das ist okay. Dann fang ich mit dem Video an.']] },
     ] },
-    ['kaya', 'Das Erste versuche ich. Heute noch.'],
-    ['kaya', 'Das Zweite dauert. Das sag ich dir ehrlich.'],
     ['mila', 'Und was machen Sie nicht?'],
     ['kaya', 'Ich sag keinem, von wem die Mappe ist.'],
     ['kaya', 'Aber für mich behalten kann ich sie nicht.'],
@@ -285,7 +283,7 @@ export const GESPRAECHE_N8 = {
     ['kaya', 'Die helfen beim Löschen. Ich rufe an. Wollt ihr dabei sein?'],
     { wahl: [
       { t: '„Ja.“', staerke: 'hilfe', merke: 'k8Anruf', dann: [['erzaehler', 'Er stellt das Telefon auf laut. Eine ruhige Stimme fragt nach dem Link. Nach sonst nichts.']] },
-      { t: '„Nein. Machen Sie.“', dann: [] },
+      { t: '„Nein. Machen Sie.“', dann: [['kaya', 'In Ordnung. Ich sag euch morgen, was rauskommt.']] },
       { t: '„Und der, der es war?“', staerke: 'zuhoeren', merke: 'k8FrageTaeter', dann: [] },
     ] },
     ['kaya', 'Der bekommt auch jemanden zum Reden. Jeder hier.'],

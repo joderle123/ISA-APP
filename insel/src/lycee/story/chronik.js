@@ -5,6 +5,7 @@ const eins = (m, paare) => { for (const [f, t] of paare) if (typeof f === 'funct
 const KAP = {
   1: (m) => [
     eins(m, [['abgestimmt', 'Bei der Umfrage über den Jungen aus dem Bus hast du geklickt.'], ['nichtAbgestimmt', 'Bei der Umfrage hast du nicht geklickt.']]),
+    eins(m, [['darioFotoGeleugnet', 'Dario gegenüber hast du so getan, als kennst du das Foto nicht.']]),
     eins(m, [['kantineNoah', 'In der Kantine hast du dich zu Noah gesetzt.'], ['kantineBen', 'In der Kantine hast du dich zu Ben und Jo gesetzt.']]),
     eins(m, [['postKlar', 'Auf das Foto von dir hast du klar geantwortet.'], ['postWitz', 'Über das Foto von dir hast du einen Witz gemacht.'], ['postFrage', 'Zum Foto von dir hast du eine Frage gestellt.'],
       ['postGemeldet', 'Das Foto von dir hast du gemeldet.'], ['postStumm', 'Den Chat hast du stumm geschaltet.'], ['postStill', 'Zum Foto von dir hast du nichts geschrieben.']]),
@@ -73,8 +74,8 @@ const KAP = {
     eins(m, [['k10Rutschen', 'An der Haltestelle hast du Dario Platz gemacht.'], ['k10HeuteNicht', 'An der Haltestelle hast du Dario gesagt: „Heute nicht.“'], ['k10Schweigen', 'An der Haltestelle hast du nichts gesagt.']]),
     eins(m, [['k10Bote', 'Du hast für die anderen mit Dario geredet.'], ['k10KeinBote', 'Du bist nicht zum Boten geworden.']]),
     eins(m, [['k10GruppeJa', 'Du bist wieder in den Klassenchat gegangen.'], ['k10GruppeNeu', 'Du wolltest eine neue Gruppe. Mit Ayla.'], ['k10GruppeNochNicht', 'In den Klassenchat wolltest du noch nicht zurück.']]),
-    eins(m, [['k10Angestellt', 'Du hast dich zum Löschen angestellt.']]),
-    eins(m, [['k10Teil', 'Beim Sommerfest hast du deinen Teil gesagt.'], ['k10NebenBank', 'Beim Sommerfest hast du dich neben die Bank gestellt.']]),
+    eins(m, [['k10Angestellt', 'Du hast dich zum Löschen angestellt.'], ['k10Sitzen', 'Beim Löschen bist du sitzen geblieben.']]),
+    eins(m, [['k10Teil', 'Beim Sommerfest hast du deinen Teil gesagt.'], ['k10NebenBank', 'Beim Sommerfest hast du dich neben die Bank gestellt.'], ['k10Geschwiegen', 'Beim Sommerfest hast du deinen Teil nicht gesagt.']]),
     eins(m, [['k10JoNicht', 'Am Zaun hast du gesagt: „Jo. Nicht.“'], ['k10HandyGedrueckt', 'Am Zaun hast du Jos Handy runtergedrückt.'], ['k10Zaun', 'Am Zaun bist du selbst zu Luca gegangen.'], ['k10Weggedreht', 'Am Zaun hast du dich weggedreht.']]),
   ],
 };

@@ -268,9 +268,9 @@ export const GESPRAECHE_N6 = {
     ['erzaehler', 'Donnerstag. 8:00. Mme Tidderich macht die Tür zu. Sie bleibt davor stehen.'],
     { tu: 'n6_tidderich' },
     ['chiara', '(in der Pause, laut) Ich mach das jetzt ordentlich. Mit Abstimmung. Dann ist es fair.'],
-    { wahl: [
+    { warum: true, wahl: [
       { t: '„Über Menschen abstimmen ist nicht fair.“', staerke: 'klar', merke: 'k6ChiaraWiderspruch', dann: [['chiara', 'Mehrheit ist fair. So geht Demokratie.'], ['erzaehler', 'Sie sagt es freundlich. Das macht es schlimmer.']] },
-      { t: '(Nichts sagen.)', dann: [['erzaehler', 'Chiara schreibt etwas in ihr Handy. Mit Lineal-Gesicht.']] },
+      { t: '(Nichts sagen. Sonst bist du die nächste Abstimmung.)', dann: [['erzaehler', 'Chiara schreibt etwas in ihr Handy. Mit Lineal-Gesicht.']] },
     ] },
   ],
   // Freitag 12:00: Die Stimmen laufen ein. Jede Nachricht kann eine Stimme kippen oder kosten.

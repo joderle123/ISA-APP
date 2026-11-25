@@ -115,15 +115,15 @@ export const GESPRAECHE_N2 = {
     ['lenning', '{name} und Mila. Ein Blatt, zwei Köpfe.'],
     ['mila', '(zieht das Blatt schon zu sich) Ich mach das schnell. Dauert drei Minuten.'],
     { wahl: [
-      { t: '„Lass mich die erste rechnen. Du sagst, wenn ich hänge.“', staerke: 'klar', herz: { mila: 1 }, merke: 'milaPartner', dann: [
+      { t: '„Lass mich die erste. Sag, wenn ich hänge.“', staerke: 'klar', herz: { mila: 1 }, merke: 'milaPartner', dann: [
         ['mila', '(Pause) … Okay. Aber ich sag wirklich was.'],
         ['erzaehler', 'Sie sagt nichts. Sie zeigt nur mit dem Stift auf eine Stelle. Das reicht.'] ] },
-      { t: '(Mila machen lassen.)', merke: 'milaAllein', dann: [
+      { t: '(Mila machen lassen. Sie ist eh schneller.)', merke: 'milaAllein', dann: [
         ['erzaehler', 'Drei Minuten. Fertig. Du hast zugeschaut.'],
         ['lenning', '{name}, erklär mir Aufgabe zwei.'],
         ['erzaehler', 'Du schaust aufs Blatt. Die Zahlen sagen dir nichts.'],
         ['mila', '(leise) … Sorry. Hätte dich lassen sollen.'] ] },
-      { t: '„Super, dann schreib ich ab.“', herz: { mila: -1 }, merke: 'milaAbgeschrieben', dann: [
+      { t: '„Super. Dann schreib ich ab, okay?“', herz: { mila: -1 }, merke: 'milaAbgeschrieben', dann: [
         ['mila', 'Abschreiben ist kein Mathe. Das ist Kopieren.'],
         ['lenning', 'Mila hat recht. Und ich frage gleich {name}.'] ] },
     ] },
@@ -131,11 +131,11 @@ export const GESPRAECHE_N2 = {
     ['erzaehler', 'Noah, am Tisch daneben, starrt auf seine letzte Aufgabe. Er radiert zum dritten Mal.'],
     ['noah', '(leise) Kannst du mir das erklären? Aber nicht so schnell.'],
     { wahl: [
-      { t: 'Langsam erklären, Schritt für Schritt – mit einem Beispiel.', staerke: 'hilfe', herz: { noah: 2 }, merke: 'noahErklaert', dann: [
+      { t: '(Langsam erklären. Mit einem Beispiel.)', staerke: 'hilfe', herz: { noah: 2 }, merke: 'noahErklaert', dann: [
         ['noah', '… Ah. Und dann einfach dasselbe noch mal?'],
         ['erzaehler', 'Er rechnet. Allein. Diesmal radiert er nicht.'],
         ['lenning', 'Wer erklärt, lernt doppelt. Gut gemacht, ihr zwei.'] ] },
-      { t: '(Schnell die Lösung hinschreiben.)', herz: { noah: 1 }, merke: 'noahVorgerechnet', dann: [
+      { t: '(Schnell die Lösung hinschreiben. Dann hat er sie.)', herz: { noah: 1 }, merke: 'noahVorgerechnet', dann: [
         ['noah', 'Danke. … Ich versteh’s trotzdem nicht.'],
         ['erzaehler', 'Morgen kommt die nächste Aufgabe. Dann sitzt er wieder da.'] ] },
       { t: '„Frag Mme Lenning. Ich bin selbst nicht sicher.“', staerke: 'ehrlich', merke: 'noahLenning', dann: [
@@ -210,7 +210,7 @@ export const GESPRAECHE_N2 = {
     ['erzaehler', 'Bei Platz vier lachen alle. Es ist wirklich lustig.'],
     ['erzaehler', 'Fünf Meter weiter steht Noah. Er liest seinen Namen.'],
     ['erzaehler', 'Er lächelt. Es ist kein Lächeln.'],
-    { fest: true, wahl: [
+    { warum: true, fest: true, wahl: [
       { t: '(Zu Noah gehen.) „Komm, wir gehen rein.“', staerke: 'einbeziehen', herz: { noah: 2 }, merke: 'listeBeiNoah', dann: [
         ['noah', 'Platz eins. Wenigstens gewonnen.'], ['erzaehler', 'Er kommt mit. Hinter euch lacht Jo noch.']] },
       { t: '(Bei den Lachenden stehen bleiben.)', herz: { ben: 1, jo: 1, noah: -2 }, merke: 'listeGelacht', dann: [
@@ -284,8 +284,8 @@ export const GESPRAECHE_N2 = {
     ['jo', '(grinst) Na, Hinten links? Platz sechs?'],
     { wahl: [
       { t: '„Lass es, Jo.“', staerke: 'klar', dann: [['jo', 'Chill. War ein Witz.']] },
-      { t: '(Mitlachen.)', herz: { jo: 1 }, merke: 'joMitgelacht2', dann: [['jo', 'Siehste.']] },
-      { t: '(Gehen.)', merke: 'lucaStehenGelassen', dann: [['luca', '(ruft hinterher) Angebot steht.']] },
+      { t: '(Kurz mitlachen. Dann ist es vorbei.)', herz: { jo: 1 }, merke: 'joMitgelacht2', dann: [['jo', 'Siehste.']] },
+      { t: '(Weggehen. Nicht dein Ding.)', merke: 'lucaStehenGelassen', dann: [['luca', '(ruft hinterher) Angebot steht.']] },
     ] },
   ],
   // Freitag 15:50: ein gefaltetes Blatt in der Jackentasche (Cliffhanger)

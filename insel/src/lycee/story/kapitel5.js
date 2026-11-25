@@ -230,16 +230,16 @@ export const GESPRAECHE_N5 = {
     ['mila', 'Fakt zwei. Im Screenshot steht 8:31.'],
     ['mila', 'Also zweites Handy. Oder Fake. Hast du ein zweites?'],
     { wahl: [
-      { t: '„Nein.“', dann: [] },
-      { t: '„Willst du meine Tasche sehen?“', dann: [] },
-      { t: '(Sie nur anschauen.)', staerke: 'warten', dann: [] },
+      { t: '„Nein.“', dann: [['mila', '(schreibt) „Nein.“ Ist notiert.']] },
+      { t: '„Willst du meine Tasche sehen?“', dann: [['mila', 'Eine Tasche beweist nichts. Handys passen in Socken.']] },
+      { t: '(Sie nur anschauen.)', staerke: 'warten', dann: [['erzaehler', 'Mila hält deinem Blick stand. Dann schaut sie zuerst weg.']] },
     ] },
     ['mila', 'Kann ich nicht prüfen. Also weiter.'],
     ['erzaehler', 'Sie tippt auf ein Wort im Screenshot.'],
     ['mila', '„Lowkey.“ Sagst du das?'],
     { wahl: [
-      { t: '„Nie.“', dann: [] },
-      { t: '„Weiß nicht. Vielleicht mal?“', dann: [] },
+      { t: '„Nie.“', dann: [['mila', '(schreibt) „Nie.“ Ich prüf das.']] },
+      { t: '„Weiß nicht. Vielleicht mal?“', dann: [['mila', 'Ehrlich. Ich prüf es trotzdem.']] },
     ] },
     ['mila', 'Zweihundertzwölf Nachrichten von dir im Klassenchat. Ich hab gezählt.'],
     ['mila', 'Null Mal.'],
@@ -266,7 +266,7 @@ export const GESPRAECHE_N5 = {
     ['kopf', 'Ben war’s. Wer sonst speichert dich so? Name, Klasse.'],
     ['erzaehler', 'Der Gedanke ist so laut, dass er sich wie eine Tatsache anfühlt.'],
     ['ben', 'Hey.'],
-    { fest: true, wahl: [
+    { warum: true, fest: true, wahl: [
       { t: '„Du warst das.“', herz: { ben: -2 }, merke: 'k5BenBeschuldigt', dann: [
         ['ben', 'Ich hab mich ENTSCHULDIGT. Im September.'],
         ['ben', 'Was willst du noch?'],

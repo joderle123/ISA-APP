@@ -265,6 +265,7 @@ export function createKursMissionen({ scene, steuerung, ui, ton = () => {}, vib 
       (lehrer ? '<p class="km-leer">Tipp: Ein Kapitel aufklappen, die Sätze gemeinsam lesen, dann die Frage stellen. Es gibt kein richtig oder falsch – nur Folgen.</p>' : '') +
       '<div class="km-gesch">' + b.kapitel.map((k) => '<details' + (k.kap === letztes ? ' open' : '') + '><summary><span class="km-heft">K' + k.kap + '</span><b>' + esc(k.titel) + '</b><small>' + esc(k.thema) + '</small></summary>' +
         (k.saetze.length ? '<ul>' + k.saetze.map((t) => '<li>' + esc(t) + '</li>').join('') + '</ul>' : '<p class="km-leer">' + (k.gespielt ? 'Keine großen Entscheidungen gemerkt.' : 'Kapitel noch nicht gespielt – nur die Skills-Stunde.') + '</p>') +
+        (k.gruende && k.gruende.length ? k.gruende.map((g) => '<p class="km-gs-warum">🧭 Warum „' + esc(g.t) + '“? <b>' + esc(g.grund) + '</b></p>').join('') : '') +
         (k.anzeige ? '<p class="km-gs-zahl">📈 ' + esc(k.anzeige) + '</p>' : '') +
         (k.versuche.length ? '<p class="km-gs-hak">🔁 Hängen geblieben: ' + k.versuche.map(versuchText).map(esc).join(' · ') + '</p>' : '') +
         '<p class="km-gs-frage">💬 ' + esc(k.frage) + '</p></details>').join('') + '</div>';
@@ -276,6 +277,7 @@ export function createKursMissionen({ scene, steuerung, ui, ton = () => {}, vib 
     ...(b.ende ? ['Ende: ' + b.ende] : []),
     ...b.kapitel.flatMap((k) => ['', 'Kapitel ' + k.kap + ' „' + k.titel + '“ (' + k.thema + ')', ...k.saetze.map((t) => '– ' + t),
       ...(k.gespielt ? [] : ['(Kapitel noch nicht gespielt)']),
+      ...((k.gruende || []).map((g) => 'Warum „' + g.t + '“? ' + g.grund)),
       ...(k.anzeige ? [k.anzeige] : []), ...(k.versuche.length ? ['Hängen geblieben: ' + k.versuche.map(versuchText).join(' · ')] : []),
       'Frage: ' + k.frage]),
   ].join('\n');

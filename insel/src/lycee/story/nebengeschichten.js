@@ -36,7 +36,7 @@ export const GESPRAECHE_NG = {
     ] },
     { wahl: [
       { t: '„Wenn’s eng wird: Yusufs Hand. Ein. Und aus.“', staerke: 'ruhig', herz: { noah: 1 }, merke: 'ngNoahYusuf', dann: [['noah', '(hebt die Hand. Lässt sie langsam sinken.) Länger aus. Weiß ich.']] },
-      { t: '(Nichts mehr sagen.)', dann: [] },
+      { t: '(Nichts mehr sagen. Daumen hoch.)', dann: [['erzaehler', 'Noah nickt. Er hält die Hand kurz an die Tür.']] },
     ] },
     ['erzaehler', 'Die Tür geht zu. Du setzt dich auf den Boden. Der Flur ist leer.'],
     { blende: '50 Minuten später' },
