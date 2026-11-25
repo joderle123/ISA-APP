@@ -328,6 +328,7 @@ export const GESPRAECHE_N1 = {
     { wenn: (m) => m.vertragFoto, dann: [['hoffmann', 'Stopp gilt sofort. Ausreden lassen. Was hier gesagt wird, bleibt hier. Und mit einer Stimme Vorsprung: Kein Foto ohne Fragen.'], ['erzaehler', 'Eine Stimme. Deine.']] },
     { wenn: (m) => m.vertragEssen, dann: [['hoffmann', 'Stopp gilt sofort. Ausreden lassen. Was hier gesagt wird, bleibt hier. Und mit einer Stimme Vorsprung: Niemand isst allein.'], ['erzaehler', 'Eine Stimme. Deine.']] },
     { wenn: (m) => m.vertragStopp || m.vertragKuchen, dann: [['hoffmann', 'Stopp gilt sofort. Ausreden lassen. Was hier gesagt wird, bleibt hier. Und: Handys in der Stunde in die Kiste.'], { wenn: (m) => m.vertragKuchen, dann: [['jo', '(leise) Kuchen hat verloren. Skandal.']] }] },
+    { tu: 'vertragPlakat' },
     ['hoffmann', 'Die vier hängen ab heute hier. Wer sie bricht, muss sie nicht auswendig können. Aber erklären.'],
     { tu: 'n1_deutschRest' },
   ],

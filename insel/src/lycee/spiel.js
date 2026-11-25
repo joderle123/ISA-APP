@@ -487,6 +487,30 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     const fs = f.fussschatten || (f.fussschatten = f.group.children.find((c) => c.name === 'fussschatten') || 0); if (fs && fs.visible !== v) fs.visible = v;   // Fußschatten mit der Figur weg
     return v;
   }
+  // Klassenvertrag (K1): vier Regeln hängen ab dem ersten Tag in Saal 1.04 neben der Tafel – mit der Regel, die die eigene Stimme entschieden hat
+  let vertragMesh = null;
+  function vertragPlakat() {
+    const m = S && S.merke; if (!m || !m.vertragGewaehlt) { if (vertragMesh) vertragMesh.visible = false; return; }
+    const regeln = ['Stopp gilt sofort.', 'Ausreden lassen.', 'Was hier gesagt wird, bleibt hier – außer bei Gefahr.', m.vertragFoto ? 'Kein Foto ohne Fragen.' : m.vertragEssen ? 'Niemand isst allein.' : 'Handys in der Stunde in die Kiste.'];
+    const schluessel = regeln[3];
+    if (vertragMesh && vertragMesh.userData.k === schluessel) { vertragMesh.visible = true; return; }
+    const c = document.createElement('canvas'); c.width = 512; c.height = 400; const g = c.getContext('2d');
+    g.fillStyle = '#f6f1e3'; g.fillRect(0, 0, 512, 400); g.strokeStyle = '#c9b98f'; g.lineWidth = 6; g.strokeRect(3, 3, 506, 394);
+    g.fillStyle = '#2d3d5c'; g.font = 'bold 38px Georgia, serif'; g.textAlign = 'center'; g.fillText('Unser Klassenvertrag', 256, 58);
+    g.font = '22px Georgia, serif'; g.fillStyle = '#7a6a4a'; g.fillText('7P2 · gilt das ganze Jahr', 256, 90);
+    const farben = ['#e9734a', '#2fb8a8', '#8a7bc8', '#f2b134'];
+    g.textAlign = 'left';
+    regeln.forEach((r, i) => {
+      const y = 138 + i * 56 + (i === 3 ? 12 : 0); g.fillStyle = farben[i]; g.beginPath(); g.arc(46, y - 8, 12, 0, Math.PI * 2); g.fill();
+      const [a1, a2] = r.split(' – '); g.fillStyle = '#2b2b33'; g.font = '27px Arial, sans-serif'; g.fillText(a1, 72, y);
+      if (a2) { g.font = 'italic 21px Arial, sans-serif'; g.fillStyle = '#5a5a66'; g.fillText(a2, 72, y + 24); }
+    });
+    g.strokeStyle = '#3f78b8'; g.lineWidth = 2; for (let k = 0; k < 9; k++) { const x = 40 + k * 50, y = 370 + (k % 3) * 6; g.beginPath(); g.moveTo(x, y); g.bezierCurveTo(x + 10, y - 14, x + 22, y + 8, x + 36, y - 6); g.stroke(); }   // Unterschriften
+    const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = 4;
+    if (!vertragMesh) { vertragMesh = new THREE.Mesh(new THREE.PlaneGeometry(1.25, 0.98), new THREE.MeshLambertMaterial({ map: t })); vertragMesh.position.set(-29.6, 1.72, -28.5); vertragMesh.rotation.y = Math.PI / 2; vertragMesh.name = 'klassenvertrag'; scene.add(vertragMesh); }
+    else { vertragMesh.material.map.dispose(); vertragMesh.material.map = t; vertragMesh.material.needsUpdate = true; }
+    vertragMesh.userData.k = schluessel; vertragMesh.visible = true;
+  }
   // Weitsicht (Leistung): kleine, feste Dinge werden ab einer Entfernung nicht mehr gezeichnet – je kleiner, desto früher.
   // Statt .visible (das andere Module selbst schalten) über Layer 1: die Kamera sieht nur Layer 0. Figuren (Skinned) sind ausgenommen,
   // die haben ihre eigene Ausblendung (imBild). Grenze = Radius × Faktor, mindestens „min“, höchstens bis zum Nebel.
@@ -1397,7 +1421,8 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
   // ---------- Besondere Momente ----------
   const TUN = {
     kurzRaus: async () => { if (ui.atem) await ui.atem(); else await ui.kurzRaus(); },
-    tt3d: async (pa) => { ui.dialogZu(); if (ttSpiel) await ttSpiel(pa); },   // Tischtennis aus einem Gespräch heraus   // in der SePAS: direkt die Atem-Übung (Kreis)
+    tt3d: async (pa) => { ui.dialogZu(); if (ttSpiel) await ttSpiel(pa); },   // Tischtennis aus einem Gespräch heraus
+    vertragPlakat: () => { vertragPlakat(); },   // in der SePAS: direkt die Atem-Übung (Kreis)
     sepasBesuch: () => { S.merke.sepasBesuch = (S.merke.sepasBesuch || 0) + 1; sichern(); },
     ...tunN1({ get S() { return S; }, ui, anzeige: (art, wert, plus) => setzeAnzeige(art, wert, plus) }),
     ...tunN2({ get S() { return S; }, ui, anzeige: (art, wert, plus) => setzeAnzeige(art, wert, plus) }),
@@ -2413,6 +2438,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     { const an = S.merke.anzeige; ui.anzeige(an && an.kap === st.kap ? an : null); }
     ui.pult(S.pult && S.pult.kap === st.kap ? S.pult : null);
     freiLauf = null; ui.freiUhr(null);
+    vertragPlakat();
     if (st.frei) freiStart(st);
     if (st.start && st.start.gespraech && mitStart !== false) {
       await gespraech(GESPRAECHE[st.start.gespraech]);
