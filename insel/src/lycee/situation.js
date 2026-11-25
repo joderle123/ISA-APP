@@ -290,7 +290,7 @@ export function situationen(ui, { name = () => 'Du', ersetze = (t) => t, speech 
   // def: { runden: [ { wer: { id, name, farbe }, saetze: [ { t, zeichen } ×3 ], luege: index, aufloesung } ], eigene: [ { t } ], eigeneRater: [ { id, name } ] }
   // → { erraten: [ids], eigeneLuege, reingelegt: [ids] }
   ui.zweiWahrheiten = (def) => new Promise((ok) => {
-    const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">Skills-Stunde · Aula</span><b>Zwei Wahrheiten, eine Lüge</b></div>' +
+    const k = ui.ebeneAuf('szene', '<div class="sz"><div class="sz-kopf"><span class="sz-wo">' + esc(def.wo || 'Skills-Stunde · Aula') + '</span><b>Zwei Wahrheiten, eine Lüge</b></div>' +
       '<p class="sz-info">Ein Kennenlern-Spiel. Lügen sieht man schwer. Rate einfach.</p><div class="sz-bühne"></div><div class="sz-karten ly-d-optionen"></div></div>');
     const bühne = k.querySelector('.sz-bühne'), karten = k.querySelector('.sz-karten');
     const erraten = [], reingelegt = [];

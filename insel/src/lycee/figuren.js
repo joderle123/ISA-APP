@@ -30,6 +30,7 @@ import frauenBin from './modelle/frauen.glb';
 
 const DATEN = { menschen: menschenBin, frauen: frauenBin };
 const cache = new Map();
+const KASTEN = new Map();   // Größe je Modell + Teile-Kombination (ladePerson)
 const puffer = (b) => b.buffer.slice(b.byteOffset, b.byteOffset + b.byteLength);
 const roh = (n) => String(n || '').replace(/\.\d+$/, '');
 const FLAGGE = { Skin: 1, Skin_Darker: 1, Face: 2, Eye: 2, Eyebrows: 2 };
@@ -95,13 +96,23 @@ export async function ladePerson(veil, { modell = 'menschen', stil = 'Casual', h
       for (let i = 0; i < c.count; i++) { const k = c.getX(i).toFixed(2) + ',' + c.getY(i).toFixed(2) + ',' + c.getZ(i).toFixed(2); if (!gruppen.has(k)) gruppen.set(k, []); gruppen.get(k).push(i); }
       let haut = null, hautN = 0; for (const [k, idx] of gruppen) { const [r, g, b] = k.split(',').map(Number); if (r > g && g > b && r > 0.15 && idx.length > hautN) { haut = [r, g, b]; hautN = idx.length; } }
       if (!haut) return;
-      for (const [k, idx] of gruppen) { const [r, g, b] = k.split(',').map(Number); if (r + g + b < 0.2 && idx.length >= 24 && idx.length <= 80) AUGEN.push({ attr: c, idx, auge: [r, g, b], lid: haut.map((v) => v * 0.85) }); }
+      // Augen: ungepackt rund 72 Eckpunkte, gepackt (Index) rund 48–56 – Augenbrauen/Haarsträhnen liegen gepackt bei 80+ und sollen nicht blinzeln
+      const bis = o.geometry.index ? 64 : 80;
+      for (const [k, idx] of gruppen) { const [r, g, b] = k.split(',').map(Number); if (r + g + b < 0.2 && idx.length >= 24 && idx.length <= bis) AUGEN.push({ attr: c, idx, auge: [r, g, b], lid: haut.map((v) => v * 0.85) }); }
     });
   };
   const augenSetzen = (zu) => { for (const A of AUGEN) { const f = zu ? A.lid : A.auge; for (const i of A.idx) A.attr.setXYZ(i, f[0], f[1], f[2]); A.attr.needsUpdate = true; } };
   group.updateMatrixWorld(true);
-  const kasten = new THREE.Box3();
-  for (const t of teile) { t.mesh.computeBoundingBox(); kasten.union(t.mesh.boundingBox.clone().applyMatrix4(t.mesh.matrixWorld)); }
+  // Größe der Figur: SkinnedMesh.computeBoundingBox rechnet jeden Eckpunkt durch die Knochen – teuer. Das Ergebnis hängt nur vom Modell
+  // und den gewählten Teilen ab (nicht von Farben), also je Kombination einmal rechnen und merken.
+  const kastenKey = modell + '|' + teile.map((t) => t.mesh.name + ':' + t.mesh.geometry.attributes.position.count).join(',');
+  let kasten = KASTEN.get(kastenKey);
+  if (kasten) { teile.forEach((t, i) => { t.mesh.boundingBox = kasten.teile[i].clone(); }); kasten = kasten.box.clone(); }
+  else {
+    kasten = new THREE.Box3(); const boxen = [];
+    for (const t of teile) { t.mesh.computeBoundingBox(); boxen.push(t.mesh.boundingBox.clone()); kasten.union(t.mesh.boundingBox.clone().applyMatrix4(t.mesh.matrixWorld)); }
+    KASTEN.set(kastenKey, { box: kasten.clone(), teile: boxen });
+  }
   const h = kasten.max.y - kasten.min.y;
   // Sichtprüfung je Teil: großzügige Kugel um die ganze Figur (Arme, Sitzen, Sprünge passen hinein). Vorher wurden alle
   // Figuren immer gezeichnet – auch hinter der Kamera und in der Schattenkarte.
@@ -162,9 +173,14 @@ export async function ladePerson(veil, { modell = 'menschen', stil = 'Casual', h
     const va = new THREE.Vector3(), vb = new THREE.Vector3();
     for (const gr of gruppen) {
       if (gr.teile.length < 2) continue;
+      // Gepackt zusammenfassen (Index bleibt): kein toNonIndexed mehr – das kostete beim Laden Sekunden und gab dem Grafikchip
+      // drei- bis sechsmal so viele Eckpunkte zum Häuten. Nur wenn ein Teil ungepackt ist, wird wie früher alles entpackt.
+      const gepackt = gr.teile.every((t) => t.mesh.geometry.index);
       const geos = gr.teile.map((t) => {
-        const g = t.mesh.geometry.index ? t.mesh.geometry.toNonIndexed() : t.mesh.geometry.clone();
-        for (const k of Object.keys(g.attributes)) if (!NAMEN.includes(k)) g.deleteAttribute(k);
+        const q = t.mesh.geometry;
+        let g;
+        if (gepackt) { g = new THREE.BufferGeometry(); for (const k of NAMEN) if (q.attributes[k]) g.setAttribute(k, q.attributes[k]); g.setIndex(q.index); }
+        else { g = q.index ? q.toNonIndexed() : q.clone(); for (const k of Object.keys(g.attributes)) if (!NAMEN.includes(k)) g.deleteAttribute(k); }
         if (!NAMEN.every((k) => g.attributes[k])) throw new Error('attr');
         const karte = t.mesh.skeleton.bones.map((b) => gr.idx.get(b));
         const si = g.attributes.skinIndex, neuIdx = new Uint16Array(si.count * 4);
@@ -172,22 +188,23 @@ export async function ladePerson(veil, { modell = 'menschen', stil = 'Casual', h
         g.setAttribute('skinIndex', new THREE.BufferAttribute(neuIdx, 4));
         return g;
       });
-      const ein = mergeGeometries(geos); geos.forEach((g) => g.dispose());
+      const ein = mergeGeometries(geos); if (!gepackt) geos.forEach((g) => g.dispose());   // gepackt: teilen sich die Puffer mit dem Original
       if (!ein) continue;
       const leit = gr.leit.mesh, m = new THREE.SkinnedMesh(ein, mat);
       m.name = 'figur'; m.castShadow = true; m.receiveShadow = false;
       leit.parent.add(m); m.position.copy(leit.position); m.quaternion.copy(leit.quaternion); m.scale.copy(leit.scale);
       m.bind(leit.skeleton, leit.bindMatrix.clone());
       huelle.updateMatrixWorld(true);
-      let off = 0, fehler = 0;
+      let off = 0, offV = 0, fehler = 0;
       for (const t of gr.teile) {
         const ix = t.mesh.geometry.index, nn = ix ? ix.count : t.mesh.geometry.attributes.position.count;
         for (let k = 0; k < nn; k += Math.max(1, Math.floor(nn / 30))) {
-          t.mesh.getVertexPosition(ix ? ix.getX(k) : k, va).applyMatrix4(t.mesh.matrixWorld);
-          m.getVertexPosition(off + k, vb).applyMatrix4(m.matrixWorld);
+          const quelle = ix ? ix.getX(k) : k;
+          t.mesh.getVertexPosition(quelle, va).applyMatrix4(t.mesh.matrixWorld);
+          m.getVertexPosition(gepackt ? offV + quelle : off + k, vb).applyMatrix4(m.matrixWorld);
           fehler = Math.max(fehler, va.distanceTo(vb));
         }
-        off += nn;
+        off += nn; offV += t.mesh.geometry.attributes.position.count;
       }
       if (fehler > 0.01) { m.parent.remove(m); ein.dispose(); continue; }
       ein.computeBoundingSphere(); m.boundingSphere = ein.boundingSphere.clone(); m.boundingSphere.radius *= 1.6;

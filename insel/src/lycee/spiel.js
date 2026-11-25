@@ -2318,6 +2318,7 @@ export async function startLycee({ canvas, root, onProgress = () => {} }) {
     kurve: 'Fotos aus deinem Jahr. Sag bei jedem, wie es sich angefühlt hat. Daraus wird deine Kurve.',
     brief: 'Du schreibst einen Brief an dich in einem Jahr. Satz für Satz. Niemand sonst liest ihn.',
     checkin: 'Wie geht es dir heute? Erst das Gefühl, dann das genauere Wort. Es gibt kein Falsch.',
+    zwei: 'Drei Sätze. Zwei stimmen, einer ist gelogen. Lies auch, WIE die Person es sagt – das steht schräg darunter. Dann tipp auf die Lüge. Danach bist du dran.',
     blind: 'Du lotst. Die andere Person sieht nichts. Eine Ansage nach der anderen: Links, Rechts, Geradeaus, Stopp. Zu viele Ansagen auf einmal – dann bleibt sie stehen. Und wenn sie selbst Stopp sagt: warten, bis sie weiter will.',
     gefuehrt: 'Du siehst nichts. Nur eine Person sagt an. Links und Rechts drehen dich, ⬆ geht los, ✋ hält an. Wenn dir etwas zu schnell ist: Stopp – das gilt sofort. Wenn du nicht sicher bist, wer gerade spricht: ❓ Nachfragen.',
   };

@@ -255,6 +255,7 @@ const PARTNER = {
 const NOAH_SPORT = (m) => {
   const a = 'Dunkel. Die Bank. Meine Hände brennen.';
   if (m.sportJoStopp) return [a, 'Dann sagt jemand: „Er hat Stopp gesagt.“', 'Jemand hat es gehört. Ich hab es wirklich gesagt.'];
+  if (m.sportJoNeu) return [a, 'Dann ist Jos Hand da. Ausgerechnet Jos.', 'Er sagt Sorry. Ich glaub, er meint es. Fast.'];
   if (m.sportNoahHand) return [a, 'Dann ist da eine Hand. Direkt vor mir.', 'Ich nehm sie. Ich weiß nicht mal genau, warum.'];
   if (m.sportSommer) return [a, 'Frau Sommer ruft alle zusammen. Alle schauen. Auf mich.', 'Gut, dass es jemand gesagt hat. Schlimm, dass alle schauen.'];
   if (m.sportGelacht) return [a, 'Sie lachen. Ich schau hoch. Du lachst auch.', 'Okay. Dann weiß ich das jetzt.'];
@@ -332,6 +333,34 @@ export const GESPRAECHE_N1 = {
     { szene: 'chat', id: 'chatNeu', def: CHAT_NEU,
       ausgang: (r) => (r.flags.stumm ? 'stumm' : r.flags.geschrieben ? 'geschrieben' : 'still'),
       folgen: { geschrieben: { staerke: 'kontakt', herz: { ayla: 1, chiara: 1 } }, stumm: { merke: 'gruppeStumm' }, still: { merke: 'nurGelesen' } } },
+    // Kennenlernen: Zwei Wahrheiten, eine Lüge. Jo macht aus etwas Wahrem einen Witz – wer hinschaut, sieht es (kommt im Sport zurück).
+    ['hoffmann', 'Bevor wir Regeln machen: Wer seid ihr eigentlich? Zwei Wahrheiten, eine Lüge. Mila, Jo – dann {name}.'],
+    { szene: 'zwei', id: 'zweiKlasse', def: { wo: 'Saal 104 · Klassenstunde',
+      runden: [
+        { wer: { id: 'mila', name: 'Mila', farbe: '#2fb8a8' }, saetze: [
+          { t: 'Ich hab 214 Bücher. Gezählt.', zeichen: 'sagt es ganz ruhig' },
+          { t: 'Ich kann nicht schwimmen.', zeichen: 'schaut kurz zum Fenster' },
+          { t: 'Ich war schon mal im Fernsehen.', zeichen: 'ein Mundwinkel zuckt' } ], luege: 2,
+          treffer: 'Ja. Nie im Fernsehen. Gut gesehen.', daneben: 'Nein. Das stimmt.', aufloesung: 'Gelogen war: das Fernsehen. Die Bücher hat sie wirklich gezählt.' },
+        { wer: { id: 'jo', name: 'Jo', farbe: '#c0392b' }, saetze: [
+          { t: 'Ich kann mit den Ohren wackeln.', zeichen: 'wackelt sofort – alle lachen' },
+          { t: 'Ich hab einen Hund. Er heißt Pommes.', zeichen: 'grinst breit' },
+          { t: 'Das hier ist meine vierte Schule.', zeichen: 'sagt es schnell und schaut dabei auf den Tisch' } ], luege: 1,
+          treffer: '(zeigt auf dich) Erwischt. Kein Pommes. Leider.', daneben: '(lacht laut) Haha! Nein. Vierte Schule. Echt jetzt.', aufloesung: 'Gelogen war: der Hund. Die vierte Schule stimmt.' },
+      ],
+      eigene: [{ t: 'Ich hab Angst vor Tauben.' }, { t: 'Ich kann einen Zauberwürfel lösen.' }, { t: 'Ich hab mal beim Dosenwerfen einen Riesenteddy gewonnen.' }],
+      eigeneRater: [{ id: 'ben', name: 'Ben', farbe: '#d9a21b', gut: 0.3 }, { id: 'ayla', name: 'Ayla', farbe: '#e85d75', gut: 0.5 }, { id: 'noah', name: 'Noah', farbe: '#3f78b8', gut: 0.7 }] },
+      ausgang: (r) => (r.erraten.includes('jo') ? 'joErwischt' : 'joNicht'), folgen: { joErwischt: { herz: { jo: 1 } }, joNicht: {} } },
+    ['erzaehler', 'Alle lachen über die vierte Schule. Jo lacht am lautesten.'],
+    { blick: { titel: 'Jo', blicke: 1, text: 'Ein Blick. Wohin schaust du?',
+      personen: [
+        { wer: 'jo', name: 'Jo', signale: [
+          { wo: 'Hände', t: 'Er dreht den Stift zwischen den Fingern. Schnell. Immer schneller.', key: 'joVierteSchule' },
+          { wo: 'Mund', t: 'Er lacht noch. Mit offenem Mund. Lauter als alle.' } ] },
+        { wer: 'ben', name: 'Ben', signale: [{ wo: 'Gesicht', t: 'Ben wischt sich Lachtränen weg.' }] },
+      ],
+      uebersehen: [{ key: 'joVierteSchule', t: 'Jo hat danach den Stift gedreht, schnell. Vier Schulen in sieben Jahren sind kein Witz.' }] } },
+    { tu: 'n1_joSchule' },
     // Gesamtkonzept K1, Szene 3: der Klassenvertrag (Vie et société). Die eigene Regel kann den Ausschlag geben – und gilt dann.
     ['hoffmann', 'Bevor wir anfangen: unser Klassenvertrag. Sieben Regeln stehen an der Tafel. Vier kommen an die Wand. Für das ganze Jahr.'],
     ['erzaehler', 'Stopp gilt sofort. · Kein Foto ohne Fragen. · Ausreden lassen. · Handys in der Stunde in die Kiste. · Was hier gesagt wird, bleibt hier, außer bei Gefahr. · Niemand isst allein. · Wer zu spät kommt, bringt Kuchen.'],
@@ -733,6 +762,10 @@ export const GESPRAECHE_N1 = {
           { t: '„Sag’s Frau Sommer.“', dann: [['noah', 'Nein. Dann bin ich der, der petzt.']] },
           { t: '„Was machen die Hände?“', dann: [['noah', '(reibt sie an der Hose) Brennen. Geht schon.']] },
         ] }] },
+      { t: '(Leise, nur zu Jo) „Du warst auch schon oft der Neue. Weißt du noch, wie das ist?“', bemerkt: 'joVierteSchule', weil: 'Weil du am Montag gesehen hast, wie Jo nach seinem Witz den Stift gedreht hat.',
+        staerke: 'lesen', herz: { jo: 1, noah: 1 }, merke: 'sportJoNeu', dann: [
+        ['jo', '(schaut dich an. Lange.) … Was soll das jetzt?'], ['erzaehler', 'Du sagst nichts mehr. Jo schaut zu Noah. Dann auf den Boden.'],
+        ['jo', '(hält Noah die Hand hin) Komm hoch. … Sorry. War blöd.'], ['noah', '(nimmt die Hand. Zögert.) … Okay.']] },
       { t: '(Frau Sommer holen.)', herz: { noah: 1, jo: -1 }, merke: 'sportSommer', dann: [
         ['sommer', '(kommt, schaut sich Noahs Hände an) Alle mal herkommen.'], ['sommer', 'Was hab ich am Anfang gesagt?'],
         ['ayla', 'Stopp gilt sofort.'], ['sommer', 'Für alle. Auch wenn es von außen lustig aussieht.'],
@@ -762,6 +795,7 @@ export const GESPRAECHE_N1 = {
     { wenn: (m) => m.sportGut && !m.sportStoppIgnoriert, dann: [['yusuf', '(beim Rausgehen) Irgendwann ist Hallenturnier. Falls du wählen darfst …'], ['yusuf', 'Nur so.']] },
     { wenn: (m) => m.sportStoppIgnoriert, dann: [['erzaehler', 'Yusuf geht als Erster raus. Ohne dich anzuschauen.']] },
     { wenn: (m) => m.sportNoahHand || m.sportJoStopp, dann: [['noah', '(an der Tür, ohne dich anzusehen) … Danke. Vorhin.']] },
+    { wenn: (m) => m.sportJoNeu, dann: [['jo', '(im Vorbeigehen, leise) Woher wusstest du das mit den Schulen?'], ['erzaehler', 'Er wartet keine Antwort ab.']] },
     { wenn: (m) => m.sportGelacht, dann: [['erzaehler', 'In der Umkleide sitzt Noah ganz hinten. Er zieht sich schneller um als alle anderen.']] },
   ],
   n1_blind: [
@@ -795,6 +829,7 @@ export const tunN1 = (c) => ({
   n1_deutschRest: () => ((c.ui.einstellungen && c.ui.einstellungen().unterricht) ? [] : [{ blende: 'Deutsch. 50 Minuten. Dann klingelt es.' }]),
   n1_tischNoah: () => { c.S.merke.kantineNoah = true; return []; },
   n1_chiaraKurz: () => { c.S.merke.chiaraKurz = true; return []; },
+  n1_joSchule: () => { if ((c.S.bemerkt || {}).joVierteSchule) c.S.merke.joSchuleGesehen = true; return []; },
   // Nach „Geführt werden“: was du gemacht hast, sagt die Person, die dich geführt hat (ohne Note)
   n1_sportGefuehrt: () => {
     const r = (c.S.sz || {}).sportGefuehrt || {}, m = c.S.merke, p = m.sportStoppIgnoriert ? 'sommer' : 'yusuf', aus = [];
